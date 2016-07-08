@@ -31,6 +31,7 @@ Click on the “+” sign to add a new Routing Strategy.
   3.	Press Save button.
 
 Following image shows the method:
+
 <img src="/img/edit-routing.png" alt="edit-routing"/>
 
 #Deleting the Routing Strategy
