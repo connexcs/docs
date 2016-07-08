@@ -5,13 +5,9 @@ The Routing Strategy allows you to route calls of different providers through ro
 #Types of Routing Strategies
 
   #	LCR – Least Cost Route
-  
   #	Random – Routing calls to any random route without any sequence.
-  
   #	Round Robin - System will pick a route calls according to sequence you selected.
-  
   #	Manual - Manual pick by the selected route.
-  
   #	Reverse LCR – Most Expensive route will be picked first.
 
 On the Dashboard, select Management and choose “Routing Strategy” from the drop down menu. 
