@@ -5,13 +5,9 @@ The Routing Strategy allows you to route calls of different providers through ro
 #Types of Routing Strategies
 
   •	LCR – Least Cost Route
-  
   •	Random – Routing calls to any random route without any sequence.
-  
   •	Round Robin - System will pick a route calls according to sequence you selected.
-  
   •	Manual - Manual pick by the selected route.
-  
   •	Reverse LCR – Most Expensive route will be picked first.
 
 On the Dashboard, select Management and choose “Routing Strategy” from the drop down menu. 
@@ -44,6 +40,12 @@ Users can delete the Routing Strategy
 Users can edit the strategy by:
 
 1.	Click on the edit sign of the Routing Strategy you want to edit, from the list, highlightedin orange, in the image given below. 
-  <img src="/img/routing-strategy/routing-strategy.png" alt="routing-strategy"/>
-
+<img src="/img/routing-strategy/routing-strategy.png" alt="routing-strategy"/>
 <img src="/img/routing-strategy/edit-routing.png" alt="edit-routing"/>
+
+2.	Edit the Strategy and press “Save”.
+
+#Adding and Deleting Card
+You can add card by clicking the“+” sign right under the Edit form. Click the “Delete” button next to it, to delete.
+
+
