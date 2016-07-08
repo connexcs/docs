@@ -15,8 +15,7 @@ The Routing Strategy allows you to route calls of different providers through ro
   #	Reverse LCR – Most Expensive route will be picked first.
 
 On the Dashboard, select Management and choose “Routing Strategy” from the drop down menu. 
-
-<img src="/img/edit-routing-strategy.png" alt="edit-routing-strategy"/>
+  <img src="/img/routing-dashboard.png" alt="routing-dashboard"/>
 
 #Users can set and manage their Routing Strategy by:
   1.	Adding New Routing Strategy.
@@ -32,8 +31,8 @@ Click on the “+” sign to add a new Routing Strategy.
   3.	Press Save button.
 
 #Following image shows the method:
-  <img src="/img/routing-dashboard.png" alt="routing-dashboard"/>
-
+  <img src="/img/edit-routing-strategy.png" alt="edit-routing-strategy"/>
+  
 #Deleting the Routing Strategy
 
 Users can delete the Routing Strategy
