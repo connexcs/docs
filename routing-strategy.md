@@ -17,7 +17,7 @@ The Routing Strategy allows you to route calls of different providers through ro
 On the Dashboard, select Management and choose “Routing Strategy” from the drop down menu. 
   <img src="/img/routing-dashboard.png" alt="routing-dashboard"/>
 
-#Users can set and manage their Routing Strategy by:
+Users can set and manage their Routing Strategy by:
   1.	Adding New Routing Strategy.
   2.	Deleting the Routing Strategy.
   3.	Edit the Routing Strategy.
@@ -30,7 +30,7 @@ Click on the “+” sign to add a new Routing Strategy.
   2.	Fill out the details of the dialog box.
   3.	Press Save button.
 
-#Following image shows the method:
+Following image shows the method:
 <img src="/img/edit-routing.png" alt="edit-routing"/>
 
 #Deleting the Routing Strategy
