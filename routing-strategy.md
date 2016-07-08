@@ -42,9 +42,10 @@ Users can delete the Routing Strategy
 #Edit the Routing Strategy
 Users can edit the strategy by:
 
-1.	Click on the edit sign of the Routing Strategy you want to edit, from the list, highlightedin orange, in the image given below. 
-  <img src="/img/routing-strategy.png" alt="routing-strategy"/>
-  <img src="/img/edit-routing-strategy.png" alt="edit-routing-strategy"/>
+1.	Click on the edit sign of the Routing Strategy you want to edit, from the list, highlightedin orange, in the image given below.  
+
+<img src="/img/routing-strategy.png" alt="routing-strategy"/>
+<img src="/img/edit-routing-strategy.png" alt="edit-routing-strategy"/>
 
 2.	Edit the Strategy and press “Save”.
 
