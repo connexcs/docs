@@ -10,9 +10,9 @@ The Routing Strategy allows you to route calls of different providers through ro
   4. Manual - Manual pick by the selected route.
   5. Reverse LCR – Most Expensive route will be picked first.
 
-On the Dashboard, select Management and choose “Routing Strategy” from the drop down menu. 
+On the Dashboard, select Management and choose “Routing Strategy” from the drop down menu.
 
-  <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/routing-dashboard.png" alt="routing-dashboard"/>
+<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/routing-dashboard.png" alt="routing-dashboard"/>
 
 Users can set and manage their Routing Strategy by:
   1.	Adding New Routing Strategy.
