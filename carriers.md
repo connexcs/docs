@@ -67,13 +67,3 @@ In order to edit a Carrier, select a Carrier from the list. A new page will open
 Following figure demonstrates the Edit Carrier button:
 
 <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-dashboard.png" alt="Carrier-Dashboard"/>
-
-
-
-
-
-
-
-
-
-
