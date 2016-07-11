@@ -6,7 +6,7 @@ From the Dashboard, click on the rate card tab in middle of page which or go to 
 
 Users can manage the rate cards by performing following actions.
 
-1.	Adding New Provider Card
+<b>1.	Adding New Provider Card</b>
 2.	Upload File
 3.	Deleting the Provider Card
 
