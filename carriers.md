@@ -71,10 +71,10 @@ Following figure demonstrates the Edit Carrier button:
 #Deleting Carriers
 
 Users can delete the Carriers from the list. 
+
 1.	Select the Carrier from the list by check marking the entire row.
 2.	Click on the Delete button.
 
-Checking the Carrier Status
 
 
 
