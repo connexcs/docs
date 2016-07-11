@@ -18,7 +18,7 @@ Users can add customers by following the simple procedure.
 
 Following figure shows the details of the modal window opened to add a new customer:
 
-<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/customer/add-customer.png" alt="Add-Customer"/>
+<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/add-customer.png" alt="Add-Customer"/>
 
 
 
