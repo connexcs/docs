@@ -8,7 +8,7 @@ From control panel, you can modify customers by clicking on the Customer tab. He
 4. Filter Customers
 5. Search Customers
 
-Add Customer
+#Add Customer
 
 Users can add customers by following the simple procedure.
 
