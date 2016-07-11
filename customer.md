@@ -2,11 +2,11 @@
 
 From control panel, you can modify customers by clicking on the Customer tab. Here, you can perform the following actions:
 
-• Add Customers
-• Edit Customers
-• DeleteCustomers
-• Filter Customers
-• Search Customers
+1. Add Customers
+2. Edit Customers
+3. DeleteCustomers
+4. Filter Customers
+5. Search Customers
 
 Add Customer
 
