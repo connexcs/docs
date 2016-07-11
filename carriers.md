@@ -39,6 +39,19 @@ Pre Ring Timeout and Post Ring Timeout: 	Users will set the â€œPre Ring Timeoutâ
 
 <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carriers-sorting.png" alt="Carriers-Sorting"/>
 
+Users can also check/filter the status of the Carriers. 
+
+1.	Click on the button named Active.
+2.	Select an option from the dropdown menu.
+3.	Results will show up according to the selected option.
+
+#Searching Carrier
+
+Users can search anything about a Carrier by writing the query in the Search text field.
+
+Customizing The View
+
+
 <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-dashboard.png" alt="Carrier-Dashboard"/>
 
 <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carriers.png" alt="Carriers"/>
@@ -59,17 +72,6 @@ Users can delete the Carriers from the list.
 Checking the Carrier Status
 
 
-Users can also check/filter the status of the Carriers. 
-
-1.	Click on the button named Active.
-2.	Select an option from the dropdown menu.
-3.	Results will show up according to the selected option.
-
-#Searching Carrier
-
-Users can search anything about a Carrier by writing the query in the Search text field.
-
-Customizing The View
 
 
 
