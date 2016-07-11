@@ -51,17 +51,22 @@ Users can search anything about a Carrier by writing the query in the Search tex
 
 Customizing The View
 
-
-<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-dashboard.png" alt="Carrier-Dashboard"/>
-
 <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carriers.png" alt="Carriers"/>
 
+You can customize the view of your Carriers page and select the columns which you want to view, only.
+On the extreme right, click on the menu button, and check the columns you want to view.
+
+#Edit Carrier
+
+In order to edit a Carrier, select a Carrier from the list. A new page will open. Follow the procedure given below:
+
+1.	Press the “Edit Carrier” button.
+2.	Edit the details and press “Save” button.
+
+Following figure demonstrates the Edit Carrier button:
 
 
-
-
-
-
+<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-dashboard.png" alt="Carrier-Dashboard"/>
 
 #Deleting Carriers
 
@@ -75,17 +80,6 @@ Checking the Carrier Status
 
 
 
-You can customize the view of your Carriers page and select the columns which you want to view, only.
-On the extreme right, click on the menu button, and check the columns you want to view.
-
-#Edit Carrier
-
-In order to edit a Carrier, select a Carrier from the list. A new page will open. Follow the procedure given below:
-
-1.	Press the “Edit Carrier” button.
-2.	Edit the details and press “Save” button.
-
-Following figure demonstrates the Edit Carrier button:
 
 
 
