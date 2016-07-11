@@ -21,33 +21,20 @@ Following figure shows the dialog box for adding the Carrier:
 The brief description of fields present in the above form, is given below:
 
 Carrier Name    :	Users will add the “Customer Name” in the name text field.
-
 Channels        :	Users will add the “Channels” in the digits, only.
-
 CPS             :	Users will add the “CPS” in the text field but in digits, only.
-
 PayPal Email    :	Users will add the “PayPal Email” of the Carrier.
-
 Website         :	“Website” shall also be added by the users.
-
 Portal URL      :	Portal URL shall be added by the users in the given text field.
-
 Portal Username :	“Portal Username” shall also be written in the text field by the user.
-
 Portal Password	: “Portal Password” will also be a requirement. 
-
-
 Portal Access   :	Users will select the “Portal Access” option from dropdown menu either as Yes or No.
-
 Status          : Users will set/select the “Status” of the Carrier. Status dropdown menu options are:
                   •	Active
                   •	Inactive
                   •	Pending Approval
-
 Currency        :	Users will set the “Currency” from the dropdown menu options.
-
 Address         :	Users will write the “Address” of the Carrier. Users will add two addresses with country and postcode.
-
 Pre Ring Timeout and Post Ring Timeout: 	Users will set the “Pre Ring Timeout” and “Post Ring Timeout” in the given text fields.
 
 <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carriers-sorting.png" alt="Carriers-Sorting"/>
