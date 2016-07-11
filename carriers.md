@@ -2,6 +2,8 @@
 
 On the Dashboard, click on the Carrier icon in middle of page or you can click on “Management” from the side bar and select “Carrier”.
 
+<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-list.png" alt="Carrier-List"/>
+
 <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-dashboard.png" alt="Carrier-Dashboard"/>
 
 <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carriers.png" alt="Carriers"/>
@@ -61,7 +63,7 @@ Users can search anything about a Carrier by writing the query in the Search tex
 
 Customizing The View
 
-<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-list.png" alt="Carrier-List"/>
+
 
 You can customize the view of your Carriers page and select the columns which you want to view, only.
 On the extreme right, click on the menu button, and check the columns you want to view.
