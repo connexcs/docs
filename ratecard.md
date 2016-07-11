@@ -37,7 +37,7 @@ Users will fill out the following text fields:
 •	Users can select the “Force Presentation” from the dropdown menu. The options include: Default, Single Rate, IntER, IntRA etc.
 •	Users can also add “Dialing” information.
 
-<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/other-options.png" alt="other-options"/>
+<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/edit-provider-card.png" alt="edit-provider-card"/>
 
 #Uploading a File
 
@@ -78,6 +78,7 @@ There are several other buttons also present, other than Edit Cards. They includ
 
 Following figure illustrates these buttons:
 
+<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/other-options.png" alt="other-options"/>
 
-<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/edit-provider-card.png" alt="edit-provider-card"/>
+
 
