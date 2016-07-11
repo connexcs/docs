@@ -8,14 +8,6 @@ On the Dashboard, click on the Carrier icon in middle of page or you can click o
 
 #Add a New Carrier
 
-<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-details.png" alt="Carrier-Details"/>
-
-<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-dashboard.png" alt="Carrier-Dashboard"/>
-
-<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carriers.png" alt="Carriers"/>
-
-
-
 Users can add new Carriers by following the simple procedure.
 1.	Click the Add Carrier button.
 2.	Enter the details of the carrier.
@@ -23,7 +15,7 @@ Users can add new Carriers by following the simple procedure.
 
 Following figure shows the dialog box for adding the Carrier:
 
-
+<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-details.png" alt="Carrier-Details"/>
 
 The brief description of fields present in the above form, is given below:
 
@@ -43,6 +35,18 @@ Status          : Users will set/select the “Status” of the Carrier. Status 
 Currency        :	Users will set the “Currency” from the dropdown menu options.
 Address         :	Users will write the “Address” of the Carrier. Users will add two addresses with country and postcode.
 Pre Ring Timeout and Post Ring Timeout: 	Users will set the “Pre Ring Timeout” and “Post Ring Timeout” in the given text fields.
+
+
+<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-dashboard.png" alt="Carrier-Dashboard"/>
+
+<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carriers.png" alt="Carriers"/>
+
+
+
+
+
+
+
 
 #Deleting Carriers
 
