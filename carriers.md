@@ -2,7 +2,7 @@
 
 On the Dashboard, click on the Carrier icon in middle of page or you can click on “Management” from the side bar and select “Carrier”.
 
-<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/Carrier/carrier-dashboard.png" alt="Carrier-Dashboard"/>
+<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-dashboard.png" alt="Carrier-Dashboard"/>
 
 <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carriers.png" alt="Carriers"/>
 
