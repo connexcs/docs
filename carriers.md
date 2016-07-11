@@ -9,6 +9,7 @@ On the Dashboard, click on the Carrier icon in middle of page or you can click o
 #Add a New Carrier
 
 Users can add new Carriers by following the simple procedure.
+
 1.	Click the Add Carrier button.
 2.	Enter the details of the carrier.
 3.	Click the Save button when all the details are entered, properly.
@@ -36,6 +37,7 @@ Currency        :	Users will set the “Currency” from the dropdown menu optio
 Address         :	Users will write the “Address” of the Carrier. Users will add two addresses with country and postcode.
 Pre Ring Timeout and Post Ring Timeout: 	Users will set the “Pre Ring Timeout” and “Post Ring Timeout” in the given text fields.
 
+<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carriers-sorting.png" alt="Carriers-Sorting"/>
 
 <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-dashboard.png" alt="Carrier-Dashboard"/>
 
@@ -56,7 +58,6 @@ Users can delete the Carriers from the list.
 
 Checking the Carrier Status
 
-<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carriers-sorting.png" alt="Carriers-Sorting"/>
 
 Users can also check/filter the status of the Carriers. 
 
