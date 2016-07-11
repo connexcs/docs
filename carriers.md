@@ -2,11 +2,14 @@
 
 On the Dashboard, click on the Carrier icon in middle of page or you can click on “Management” from the side bar and select “Carrier”.
 
+<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/Carrier/carrier-dashboard.png" alt="Carrier-Dashboard"/>
+
 <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carriers.png" alt="Carriers"/>
 
 #Add a New Carrier
 
 <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/add-carriers.png" alt="Add-Carrier"/>
+
 
 Users can add new Carriers by following the simple procedure.
 1.	Click the Add Carrier button.
@@ -72,5 +75,5 @@ In order to edit a Carrier, select a Carrier from the list. A new page will open
 
 Following figure demonstrates the Edit Carrier button:
 
-<img src=""https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/Carrier/carrier-dashboard.png" alt="Carrier-Dashboard"/>
+
 
