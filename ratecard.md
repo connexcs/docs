@@ -18,10 +18,10 @@ Users can add new provider card at both basic and advanced level.
 
 Basic level:
 
-•	Users can add the Name of provider.
-•	Carrier can be selected from the drop down menu.
-•	User can select a currency.
-•	Finally users will press the Save button. 
+1. Users can add the Name of provider.
+2. Carrier can be selected from the drop down menu.
+3. User can select a currency.
+4. Finally users will press the Save button. 
 
 <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/ratecard.png" alt="ratecard"/>
 
@@ -29,13 +29,13 @@ Advanced level:
 
 Users will fill out the following text fields:
 
-•	Name
-•	Tech Prefix
-•	Notes (Private)
-•	Notes (Public)
-•	Users can select Public options from the checklist.
-•	Users can select the “Force Presentation” from the dropdown menu. The options include: Default, Single Rate, IntER, IntRA etc.
-•	Users can also add “Dialing” information.
+1. Name
+2. Tech Prefix
+3. Notes (Private)
+4. Notes (Public)
+5. Users can select Public options from the checklist.
+6. Users can select the “Force Presentation” from the dropdown menu. The options include: Default, Single Rate, IntER, IntRA etc.
+7. Users can also add “Dialing” information.
 
 <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/edit-provider-card.png" alt="edit-provider-card"/>
 
@@ -70,11 +70,11 @@ Users can edit the rate cards saved earlier.  Follow the steps given below:
 
 There are several other buttons also present, other than Edit Cards. They include:
 
-•	Revision
-•	Download CVS 
-•	Delete revision
-•	Upload
-•	View all uploaded files
+1. Revision
+2. Download CVS 
+3. Delete revision
+4. Upload
+5. View all uploaded files
 
 Following figure illustrates these buttons:
 
