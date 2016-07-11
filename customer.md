@@ -20,8 +20,51 @@ Following figure shows the details of the modal window opened to add a new custo
 
 <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/add-customer.png" alt="Add-Customer"/>
 
+Brief description of the fields present in above dialog box is as follows:
+Customer Name
+	Users will add the name of the customer.
+Paypal Email	Users will add Paypal Email of the customers in the text field.
+Website	Users will add website of the customer.
+
+Status	Users canchoose the “Status” of the customer as:
+•	Active
+•	Inactive
+•	Pending Approval
+Debit Limit	“Debit Limit” will be added by the user.
+Tax	“Tax” in percentage will also be added by the user.
+Currency	“Currency”will also be selected from the dropdown menu.
+Portal Access	Users will select the “Portal Access” from the options either Yes or No.
+Address	“Address” of the customers will be filled out by the user. 
+
+#Edit Customers
+
+For a saved customer;
+1.	Click on the name of that particular customer, you wish to edit the details for.
+2.	Click on “Edit Customer” button.
+3.	Edit the details and then Save.
+
+<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/add-Customer1.png" alt="Add-Customer1"/>
+
+#Delete Customers
+
+Details of a customer can also be deleted by following below steps:
+1.	Select a customer from the list.
+2.	Click on trash icon, to delete the customer.
+
+#Filter Customers
+
+Users can filter the customers as per their current status.
+1.	Click thebutton saying “Active”.
+2.	Select an option from the dropdown menu. Either,All, Active, Inactive or Pending Approval.
+3.	The list of customers will show up as per the search criteria.
+
+#Search Customers
+
+The customers that are already saved, can be searched from the search bar.
 
 
-<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/customer/add-Customer1.png" alt="Add-Customer1"/>
-<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/customer/customer-dashboard.png" alt="Customer-Dashboard"/>
-<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/customer/customer-status.png" alt="Customer-Status"/>
+<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/customer-dashboard.png" alt="Customer-Dashboard"/>
+
+
+
+<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/customer-status.png" alt="Customer-Status"/>
