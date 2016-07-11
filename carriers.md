@@ -47,7 +47,7 @@ Users can delete the Carriers from the list.
 
 Checking the Carrier Status
 
-<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/Carrier/carriers-sorting.png" alt="Carriers-Sorting"/>
+<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carriers-sorting.png" alt="Carriers-Sorting"/>
 
 Users can also check/filter the status of the Carriers. 
 
@@ -61,7 +61,7 @@ Users can search anything about a Carrier by writing the query in the Search tex
 
 Customizing The View
 
-<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/Carrier/carrier-list.png" alt="Carrier-List"/>
+<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-list.png" alt="Carrier-List"/>
 
 You can customize the view of your Carriers page and select the columns which you want to view, only.
 On the extreme right, click on the menu button, and check the columns you want to view.
