@@ -4,11 +4,12 @@ On the Dashboard, click on the Carrier icon in middle of page or you can click o
 
 <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-list.png" alt="Carrier-List"/>
 
-<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-dashboard.png" alt="Carrier-Dashboard"/>
-
 <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carriers.png" alt="Carriers"/>
 
 #Add a New Carrier
+
+<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-dashboard.png" alt="Carrier-Dashboard"/>
+
 
 <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/add-carriers.png" alt="Add-Carrier"/>
 
