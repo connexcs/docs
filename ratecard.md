@@ -23,7 +23,7 @@ Basic level:
 •	User can select a currency.
 •	Finally users will press the Save button. 
 
-<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/edit-provider-card.png" alt="edit-provider-card"/>
+<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/ratecard.png" alt="ratecard"/>
 
 Advanced level:
 
@@ -78,5 +78,6 @@ There are several other buttons also present, other than Edit Cards. They includ
 
 Following figure illustrates these buttons:
 
-<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/ratecard.png" alt="ratecard"/>
+
+<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/edit-provider-card.png" alt="edit-provider-card"/>
 
