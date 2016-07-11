@@ -42,7 +42,7 @@ For a saved customer;
 2. Click on “Edit Customer” button.
 3. Edit the details and then Save.
 
-<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/add-Customer1.png" alt="Add-Customer1"/>
+<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/customer-dashboard.png" alt="Customer-Dashboard"/>
 
 #Delete Customers
 
@@ -51,6 +51,8 @@ Details of a customer can also be deleted by following below steps:
 1. Select a customer from the list.
 2. Click on trash icon, to delete the customer.
 
+<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/add-Customer1.png" alt="Add-Customer1"/>
+
 #Filter Customers
 
 Users can filter the customers as per their current status.
@@ -58,10 +60,8 @@ Users can filter the customers as per their current status.
 2. Select an option from the dropdown menu. Either,All, Active, Inactive or Pending Approval.
 3. The list of customers will show up as per the search criteria.
 
+<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/customer-status.png" alt="Customer-Status"/>
+
 #Search Customers
 
 The customers that are already saved, can be searched from the search bar.
-
-<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/customer-dashboard.png" alt="Customer-Dashboard"/>
-
-<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/customer-status.png" alt="Customer-Status"/>
