@@ -1,7 +1,7 @@
- <h1>Rate Compact</h1>
-                    </header>
+#Rate Compact
 
-                    <div class="topic__item topic__item_text"><p>When merging multiple rate cards together the rate compact is the strategy with which unique prefixes are merged. These are Minimum, Maximum and Average. When a collision between two codes happens this rule will govern how the combined rate will be calculated.</p>
+<p>When merging multiple rate cards together the rate compact is the strategy with which unique prefixes are merged. These are Minimum, Maximum and Average. When a collision between two codes happens this rule will govern how the combined rate will be calculated.</p>
+
 <h2><strong>Example</strong></h2>
 <table class="table"><thead><tr><th>Prefix</th>
 <th>Destination</th>
