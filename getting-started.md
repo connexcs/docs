@@ -1,29 +1,105 @@
-Getting Started Guide
+#Getting Started Guide
 
 Initial set-up, will configure a single carrier, single customer and single rate card.
-Prerequisites
+
+#Prerequisites
 
 This guide will assume that you have already created an account with ConnexCS.com . and you are able to login successfully.
-Customer
 
-    Customer Name
-    Switch IP Address or Username / Password
-    Credit / Debit Limit
+#Customer
 
-Carrier
+1. Customer Name
+2. Switch IP Address or Username / Password
+3. Credit / Debit Limit
 
-    Carrier Name
-    Switch IP Address
+#Carrier
 
-Rate Card
+1. Carrier Name
+2. Switch IP Address
 
-    Full Rate Card or List of Codes
-    Profit Margin
+#Rate Card
 
-Video Guide
+1. Full Rate Card or List of Codes
+2. Profit Margin
+
+#Video Guide
 
 To view a video guide of the basic setup please see here.
-Create a Customer
 
-    Click on Management > Customer
-    Click on Add New 
+#Create a Customer
+
+From control panel, you can modify customers by clicking on the Customer tab. Here, you can perform the following actions:
+
+1. Add Customers
+2. Edit Customers
+3. DeleteCustomers
+4. Filter Customers
+5. Search Customers
+
+#Add Customer
+
+Users can add customers by following the simple procedure.
+
+1. Click on the Add Customer button.
+2. Fill out the customer details on the dialog box.
+3. Press Save button to add customers on the list. 
+
+Following figure shows the details of the modal window opened to add a new customer:
+
+<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/add-customer.png" alt="Add-Customer"/>
+
+Brief description of the fields present in above dialog box is as follows:
+
+Customer Name: Users will add the name of the customer.
+
+Paypal Email: Users will add Paypal Email of the customers in the text field.
+
+Website: Users will add website of the customer.
+
+Status:	Users canchoose the “Status” of the customer as:
+	• Active
+	• Inactive
+	• Pending Approval
+
+Debit Limit: “Debit Limit” will be added by the user.
+
+Tax: “Tax” in percentage will also be added by the user.
+
+Currency: “Currency”will also be selected from the dropdown menu.
+
+Portal Access: Users will select the “Portal Access” from the options either Yes or No.
+
+Address: “Address” of the customers will be filled out by the user. 
+
+#Edit Customers
+
+For a saved customer;
+
+1. Click on the name of that particular customer, you wish to edit the details for.
+2. 2. Click on “Edit Customer” button.
+3. Edit the details and then Save.
+
+<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/customer-dashboard.png" alt="Customer-Dashboard"/>
+
+#Delete Customers
+
+Details of a customer can also be deleted by following below steps:
+
+1. Select a customer from the list.
+2. Click on trash icon, to delete the customer.
+
+<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/add-Customer1.png" alt="Add-Customer1"/>
+
+#Filter Customers
+
+Users can filter the customers as per their current status.
+
+1. Click thebutton saying “Active”.
+2. Select an option from the dropdown menu. Either,All, Active, Inactive or Pending Approval.
+3. The list of customers will show up as per the search criteria.
+
+<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/customer-status.png" alt="Customer-Status"/>
+
+#Search Customers
+
+The customers that are already saved, can be searched from the search bar.
