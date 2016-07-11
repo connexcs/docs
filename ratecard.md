@@ -16,7 +16,7 @@ Users can manage the rate cards by performing following actions.
 
 Users can add new provider card at both basic and advanced level. 
 
-Basic level:
+#Basic level:
 
 1. Users can add the Name of provider.
 2. Carrier can be selected from the drop down menu.
@@ -25,7 +25,7 @@ Basic level:
 
 <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/ratecard.png" alt="ratecard"/>
 
-Advanced level:
+#Advanced level:
 
 Users will fill out the following text fields:
 
