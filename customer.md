@@ -12,9 +12,9 @@ From control panel, you can modify customers by clicking on the Customer tab. He
 
 Users can add customers by following the simple procedure.
 
-1.Click on the Add Customerbutton.
-2.Fill out the customer details on the dialog box.
-3.Press Save button to add customers on the list. 
+1. Click on the Add Customer button.
+2. Fill out the customer details on the dialog box.
+3. Press Save button to add customers on the list. 
 
 Following figure shows the details of the modal window opened to add a new customer:
 
