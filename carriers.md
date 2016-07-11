@@ -4,14 +4,16 @@ On the Dashboard, click on the Carrier icon in middle of page or you can click o
 
 <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-list.png" alt="Carrier-List"/>
 
-<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carriers.png" alt="Carriers"/>
+<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/add-carriers.png" alt="Add-Carrier"/>
 
 #Add a New Carrier
 
+<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-details.png" alt="Carrier-Details"/>
+
 <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-dashboard.png" alt="Carrier-Dashboard"/>
 
+<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carriers.png" alt="Carriers"/>
 
-<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/add-carriers.png" alt="Add-Carrier"/>
 
 
 Users can add new Carriers by following the simple procedure.
@@ -21,7 +23,7 @@ Users can add new Carriers by following the simple procedure.
 
 Following figure shows the dialog box for adding the Carrier:
 
-<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-details.png" alt="Carrier-Details"/>
+
 
 The brief description of fields present in the above form, is given below:
 
