@@ -22,18 +22,18 @@ Capacity availability is less dynamic
 This billing strategy is similar, but not exactly the same as how you would get charged by your provider. 
 The amount of seconds that you use will be accumulated daily and combined with the per minute cost then subtracted from your account.
 
-#Advantages
+ #Advantages
 
- Best scalability
- Self scaling costs.
+  Best scalability
+  Self scaling costs.
 
-#Disadvantages
+ #Disadvantages
 
- More expensive if you have regular consistent traffic
- You will have to pay if you want multiple servers.
+  More expensive if you have regular consistent traffic
+  You will have to pay if you want multiple servers.
 
  
-#Minimum Charges
+ #Minimum Charges
 
 All accounts are subject to a minimum spend of $10 / month, this covers the absolute basic costs of keeping your account
 active and prevents ConnexCS loss from stagnant accounts. 
