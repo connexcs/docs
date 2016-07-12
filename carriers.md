@@ -10,9 +10,9 @@ On the Dashboard, click on the Carrier icon in middle of page or you can click o
 
 Users can add new Carriers by following the simple procedure.
 
-        1. Click the Add Carrier button.
-        2. Enter the details of the carrier.
-        3. Click the Save button when all the details are entered, properly.
+1. Click the Add Carrier button.
+2. Enter the details of the carrier.
+3. Click the Save button when all the details are entered, properly.
 
 Following figure shows the dialog box for adding the Carrier:
 
@@ -40,9 +40,9 @@ The brief description of fields present in the above form, is given below:
 
 <b>Status:</b> Users will set/select the “Status” of the Carrier. Status dropdown menu options are:
 
-        1. Active
-        2. Inactive
-        3. Pending Approval
+1. Active
+2. Inactive
+3. Pending Approval
 
 <b>Currency:</b> Users will set the “Currency” from the dropdown menu options.
 
@@ -54,9 +54,9 @@ The brief description of fields present in the above form, is given below:
 
 Users can also check/filter the status of the Carriers. 
 
-        1. Click on the button named Active.
-        2. Select an option from the dropdown menu.
-        3. Results will show up according to the selected option.
+1. Click on the button named Active.
+2. Select an option from the dropdown menu.
+3. Results will show up according to the selected option.
 
 #<h2>Searching Carrier</h2>
 
@@ -73,8 +73,8 @@ On the extreme right, click on the menu button, and check the columns you want t
 
 In order to edit a Carrier, select a Carrier from the list. A new page will open. Follow the procedure given below:
 
-        1. Press the “Edit Carrier” button.
-        2. Edit the details and press “Save” button.
+1. Press the “Edit Carrier” button.
+2. Edit the details and press “Save” button.
 
 Following figure demonstrates the Edit Carrier button:
 
