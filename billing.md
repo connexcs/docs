@@ -8,14 +8,14 @@ This is the traditional approach where you pay for a set number of channels.
 
 <h4><b>&#x25cf; Advantages</b></h4>
 
-Cheaper than per minute billing if you have consistent traffic with high utilisation.
-Servers are provided for free at various tiers.
-Predictable Costs.
+1. Cheaper than per minute billing if you have consistent traffic with high utilisation.
+2. Servers are provided for free at various tiers.
+3. Predictable Costs.
 
 <h4><b>&#x25cf; Disadvantages</b></h4>
 
-More expensive if you have sporadic traffic
-Capacity availability is less dynamic
+1. More expensive if you have sporadic traffic.
+2. Capacity availability is less dynamic.
 
 <h2>ConnexCS Billing per minute</h2>
 
@@ -24,13 +24,13 @@ The amount of seconds that you use will be accumulated daily and combined with t
 
  <h4><b>&#x25cf; Advantages</b></h4>
 
-  Best scalability
-  Self scaling costs.
+  1. Best scalability
+  2. Self scaling costs.
 
  <h4><b>&#x25cf; Disadvantages</b></h4>
 
-  More expensive if you have regular consistent traffic
-  You will have to pay if you want multiple servers.
+  1. More expensive if you have regular consistent traffic
+  2. You will have to pay if you want multiple servers.
 
  
 <h2>Minimum Charges</h2>
