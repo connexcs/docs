@@ -1,4 +1,4 @@
-<h1Customer</h1>
+<h1>Customer</h1>
 
 From control panel, you can modify customers by clicking on the Customer tab. Here, you can perform the following actions:
 
