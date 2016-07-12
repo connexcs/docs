@@ -6,81 +6,46 @@ Near end refers to the UA (User Agent) such as the softphone. Far End refers to 
 
 NAT is the process that allows you to have an internal and external IP address.
 
-<h2>What is Far end Nat Traversal?</h2>
-
-This is required if your UA (User Agent) or your NAT does not rewrite the SIP packets with correct external IP addresses. Thus if our switch does not re-write the data for you, we would end up trying to contact your server’s local IP address.
-
-<h2>What NAT detection methods do you use?</h2>
-
-    Tests if client
-
-SIP Traces
+<h2>SIP Traces</h2>
 
 The ConnexCS system support always on SIP Trace capture. This means that we keep a record of every packet sent and received by your server over the last 7 days. This is enormously useful for debugging problems with customer's / carrier configuration.
 
- 
-Limiting CPS & Channels
+<h2>Limiting CPS & Channels</h2>
 
 The switch can limit CPS and channels in the following areas:
 
-    Your entire ConnexCS account Per Customer Per Customer IP Address Per Carrier Per Carrier IP Address Ingress Routing 
+1. Your entire ConnexCS account 
+2. Per Customer 
+3. Per Customer IP Address 
+4. Per Carrier 
+5. Per Carrier IP Address 
+6. Ingress Routing 
 
- 
-
-What happens when my server reaches capacity?
-
-The standard response is a Request Terminated: Server at max cps/channels. If you have multiple servers you can set it up so that, if the server reaches maximum capacity, is sends a 302 response advising the client of an alternative location to try and complete the call.
-Scaling and Load Balancing
+<h2>Scaling and Load Balancing</h2>
 
 The ConnexCS platform is highly scalable in terms of Channels, CPS and in single / multiple zones.
 
- 
-
 We aim to run all servers at a maximum of 50% their capacity. This enables us to accept unforecast bursts comfortably.
 
- 
-
-Although we benchmark much higher we recommend no more than 1000 channels / 100cps per server. However, this is always subject to traffic profiles.
-
- 
-
-One extra amazing feature of ConnexCS is that no matter how many servers you have or how many zones you have, all your configuration is available through a single control panel and data does not
-Billing
+<h2>Billing</h2>
 
 When you subscribe to ConnexCS you have 2 main tariffs that you can use, either per minute or per channel.
 
- 
-
-ConnexCS Billing per channel
+<h4>ConnexCS Billing per channel</h4>
 
 This is the traditional approach where you pay for a set number of channels.
 
- 
-
-Advantages
-
-    Cheaper than per minute billing if you have consistent traffic with high utilisation. Servers are provided for free at various tiers. Predictable Costs. 
-
- 
-
-Disadvantages
-
-    More expensive if you have sporadic traffic Capacity availability is less dynamic 
-
-ConnexCS Billing per minute
+<h4>ConnexCS Billing per minute</h4>
 
 This billing strategy is similar, but not exactly the same as how you would get charged by your
+
 Credit Control
 
 Pre-pay / Post Pay
 
 The ConnexCS system does not have a distinct setting to differentiate between Pre and Post pay customers. This is simply determined by the debit limit.
 
- 
-
 The debit limit is a value, in denominations of the customer’s currency, which when set will allow spends below 0 of the specified amount before calls are stopped.
-
- 
 
 Pre Pay - Set the debit limit to 0
 
