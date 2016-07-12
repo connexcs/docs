@@ -18,7 +18,7 @@ Following figure shows the dialog box for adding the Carrier:
 
 <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-details.png" alt="Carrier-Details"/>
         
-        The brief description of fields present in the above form, is given below:
+The brief description of fields present in the above form, is given below:
         
         <b>Carrier Name:</b> Users will add the “Customer Name” in the name text field.
         
