@@ -1,23 +1,16 @@
+<h2>Far End NAT Traversal</h2>
 
-Far End NAT Traversal
-
-Pre Text
+<h4>Pre Text</h4>
 
 Near end refers to the UA (User Agent) such as the softphone. Far End refers to the ConnexCS Switch.
 
- 
-
 NAT is the process that allows you to have an internal and external IP address.
 
- 
-
-What is Far end Nat Traversal?
+<h2>What is Far end Nat Traversal?</h2>
 
 This is required if your UA (User Agent) or your NAT does not rewrite the SIP packets with correct external IP addresses. Thus if our switch does not re-write the data for you, we would end up trying to contact your server’s local IP address.
 
- 
-
-What NAT detection methods do you use?
+<h2>What NAT detection methods do you use?</h2>
 
     Tests if client
 
