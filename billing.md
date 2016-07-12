@@ -6,13 +6,13 @@ When you subscribe to ConnexCS you have 2 main tariffs that you can use, either 
 
 This is the traditional approach where you pay for a set number of channels.
 
-<h4><b>Advantages</b></h4>
+<&bull;><h4><b>Advantages</b></h4>
 
 Cheaper than per minute billing if you have consistent traffic with high utilisation.
 Servers are provided for free at various tiers.
 Predictable Costs.
 
-<h4><b>Disadvantages</b></h4>
+<&bull;><h4><b>Disadvantages</b></h4>
 
 More expensive if you have sporadic traffic
 Capacity availability is less dynamic
