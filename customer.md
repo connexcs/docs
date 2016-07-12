@@ -8,7 +8,7 @@ From control panel, you can modify customers by clicking on the Customer tab. He
 <h4><b>&#x25cf; Filter Customers</b></h4>
 <h4><b>&#x25cf; Search Customers</b></h4>
 
-#Add Customer
+#<h2>Add Customer</h2>
 
 Users can add customers by following the simple procedure.
 
@@ -44,7 +44,7 @@ Brief description of the fields present in above dialog box is as follows:
 
 <b>Address:</b>  “Address” of the customers will be filled out by the user. 
 
-#Edit Customers
+#<h2>Edit Customers</h2>
 
 For a saved customer;
 
@@ -54,7 +54,7 @@ For a saved customer;
 
 <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/customer-dashboard.png" alt="Customer-Dashboard"/>
 
-#Delete Customers
+#<h2>Delete Customers</h2>
 
 Details of a customer can also be deleted by following below steps:
 
@@ -63,7 +63,7 @@ Details of a customer can also be deleted by following below steps:
 
 <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/add-Customer1.png" alt="Add-Customer1"/>
 
-#Filter Customers
+#<h2>Filter Customers</h2>
 
 Users can filter the customers as per their current status.
 
@@ -73,6 +73,6 @@ Users can filter the customers as per their current status.
 
 <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/customer-status.png" alt="Customer-Status"/>
 
-#Search Customers
+#<h2>Search Customers</h2>
 
 The customers that are already saved, can be searched from the search bar.
