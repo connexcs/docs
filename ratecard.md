@@ -1,4 +1,4 @@
-#Rate Cards Management
+<h1>Rate Cards Management</h1>
 
 From the Dashboard, click on the rate card tab in middle of page which or go to the Management on left panel and select Rate Cards.
 
@@ -6,17 +6,17 @@ From the Dashboard, click on the rate card tab in middle of page which or go to 
 
 Users can manage the rate cards by performing following actions.
 
-<b>1.	Adding New Provider Card</b></n>
-2.	Upload File
-3.	Deleting the Provider Card
+<b>1.	Adding New Provider Card</b>
+<b>2.	Upload File</b>
+<b>3.	Deleting the Provider Card</b>
 
-#Adding New Provider Card
+#<h2>Adding New Provider Card</h2>
 
 <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/add-new-provider.png" alt="add-new-provider"/>
 
 Users can add new provider card at both basic and advanced level. 
 
-#Basic level:
+<h3>Basic level:</h3>
 
 1. Users can add the Name of provider.
 2. Carrier can be selected from the drop down menu.
@@ -25,7 +25,7 @@ Users can add new provider card at both basic and advanced level.
 
 <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/ratecard.png" alt="ratecard"/>
 
-#Advanced level:
+#<h3>Advanced level:</h3>
 
 Users will fill out the following text fields:
 
@@ -39,7 +39,7 @@ Users will fill out the following text fields:
 
 <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/edit-provider-card.png" alt="edit-provider-card"/>
 
-#Uploading a File
+#<h2>Uploading a File</h2>
 
 Next to the Add New Provider Card button, there is an “Upload File” button. Click on it and a new page will open.
 
@@ -50,14 +50,14 @@ Users can upload a file by following these steps:
 2.	Browse a file from the system. 
 3.	Upload it.
 
-#Deleting a Provider Card
+#<h2>Deleting a Provider Card</h2>
 
 Users can delete the Provider cards that were saved earlier. Just follow the below mentioned steps:
 
 1.	Select the Provider Card by check marking the entire row from the list.
 2.	Press the Delete button which is next to the “Upload File” button.
 
-#Searching the Provider Rate Cards
+#<h2>Searching the Provider Rate Cards</h2>
 
 Users can search the “Provider Rate Cards” from the search text field and get the results, instantly. 
 Edit Rate Cards
