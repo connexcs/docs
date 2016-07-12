@@ -1,8 +1,8 @@
-#Routing Strategy
+<h1>Routing Strategy</h1>
 
 The Routing Strategy allows you to route calls of different providers through the routing engine according to the routing strategy you set. Routing Strategy is an extremely useful feature which allows you to adopt the best routing strategy for your business.
 
-#Types of Routing Strategies
+#<h2>Types of Routing Strategies</h2>
 
   1. LCR – Least Cost Route
   2. Random – Routing calls to any random route without any sequence.
@@ -19,7 +19,7 @@ Users can set and manage their Routing Strategy by:
   2.	Deleting the Routing Strategy.
   3.	Edit the Routing Strategy.
 
-#Adding New Routing Strategy
+#<h2>Adding New Routing Strategy</h2>
 
 Click on the “+” sign to add a new Routing Strategy.
 
@@ -31,13 +31,13 @@ Following image shows the method:
 
 <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/edit-routing.png" alt="edit-routing"/>
 
-#Deleting the Routing Strategy
+#<h2>Deleting the Routing Strategy</h2>
 
 Users can delete the Routing Strategy
   1.	Select the Routing Strategy from the list.
   2.	Press Delete button which is on extreme right, next to “+”.
 
-#Edit the Routing Strategy
+#<h2>Edit the Routing Strategy</h2>
 Users can edit the strategy by:
 
 1.	Click on the edit sign of the Routing Strategy you want to edit from the list, highlighted in orange, in the image given below.  
@@ -48,7 +48,7 @@ Users can edit the strategy by:
 
 2.	Edit the Strategy and press “Save”.
 
-#Adding and Deleting Card
+#<h2>Adding and Deleting Card</h2>
 You can add a card by clicking the “+” sign right under the Edit button. Click the “Delete” button next to it.
 
 
