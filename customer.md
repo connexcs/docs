@@ -2,11 +2,11 @@
 
 From control panel, you can modify customers by clicking on the Customer tab. Here, you can perform the following actions:
 
-<h4><b>&#x25cf;Add Customers</b></h4>
-<h4><b>&#x25cf;Edit Customers</b></h4>
-<h4><b>&#x25cf;Delete Customers</b></h4>
-<h4><b>&#x25cf;Filter Customers</b></h4>
-<h4><b>&#x25cf;Search Customers</b></h4>
+<h4><b>&#x25cf; Add Customers</b></h4>
+<h4><b>&#x25cf; Edit Customers</b></h4>
+<h4><b>&#x25cf; Delete Customers</b></h4>
+<h4><b>&#x25cf; Filter Customers</b></h4>
+<h4><b>&#x25cf; Search Customers</b></h4>
 
 #Add Customer
 
@@ -29,7 +29,6 @@ Brief description of the fields present in above dialog box is as follows:
 <b>Website:</b> Users will add website of the customer.
 
 <b>Status:</b> Users canchoose the “Status” of the customer as:
-
 	&bull; Active
 	&bull; Inactive
 	&bull; Pending Approval
@@ -49,7 +48,7 @@ Brief description of the fields present in above dialog box is as follows:
 For a saved customer;
 
 1. Click on the name of that particular customer, you wish to edit the details for.
-2. 2. Click on “Edit Customer” button.
+2. Click on “Edit Customer” button.
 3. Edit the details and then Save.
 
 <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/customer-dashboard.png" alt="Customer-Dashboard"/>
