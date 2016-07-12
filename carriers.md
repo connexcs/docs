@@ -20,36 +20,36 @@ Following figure shows the dialog box for adding the Carrier:
         
 The brief description of fields present in the above form, is given below:
         
-        <b>Carrier Name:</b> Users will add the “Customer Name” in the name text field.
-        
-        <b>Channels:</b> Users will add the “Channels” in the digits, only.
-        
-        <b>CPS:</b> Users will add the “CPS” in the text field but in digits, only.
-        
-        <b>PayPal Email:</b> Users will add the “PayPal Email” of the Carrier.
-        
-        <b>Website:</b>	“Website” shall also be added by the users.
-        
-        <b>Portal URL:</b> Portal URL shall be added by the users in the given text field.
-        
-        <b>Portal Username:</b> “Portal Username” shall also be written in the text field by the user.
-        
-        <b>Portal Password:</b> “Portal Password” will also be a requirement. 
-        
-        <b>Portal Access:</b> Users will select the “Portal Access” option from dropdown menu either as Yes or No.
-        
-        <b>Status:</b> Users will set/select the “Status” of the Carrier. Status dropdown menu options are:
-        
-                1. Active
-                2. Inactive
-                3. Pending Approval
-        
-        
-        <b>Currency:</b> Users will set the “Currency” from the dropdown menu options.
-        
-        <b>Address:</b>	Users will write the “Address” of the Carrier. Users will add two addresses with country and postcode.
-        
-        <b>Pre Ring Timeout and Post Ring Timeout:</b> Users will set the “Pre Ring Timeout” and “Post Ring Timeout” in the given text fields.
+<b>Carrier Name:</b> Users will add the “Customer Name” in the name text field.
+
+<b>Channels:</b> Users will add the “Channels” in the digits, only.
+
+<b>CPS:</b> Users will add the “CPS” in the text field but in digits, only.
+
+<b>PayPal Email:</b> Users will add the “PayPal Email” of the Carrier.
+
+<b>Website:</b>	“Website” shall also be added by the users.
+
+<b>Portal URL:</b> Portal URL shall be added by the users in the given text field.
+
+<b>Portal Username:</b> “Portal Username” shall also be written in the text field by the user.
+
+<b>Portal Password:</b> “Portal Password” will also be a requirement. 
+
+<b>Portal Access:</b> Users will select the “Portal Access” option from dropdown menu either as Yes or No.
+
+<b>Status:</b> Users will set/select the “Status” of the Carrier. Status dropdown menu options are:
+
+        1. Active
+        2. Inactive
+        3. Pending Approval
+
+
+<b>Currency:</b> Users will set the “Currency” from the dropdown menu options.
+
+<b>Address:</b>	Users will write the “Address” of the Carrier. Users will add two addresses with country and postcode.
+
+<b>Pre Ring Timeout and Post Ring Timeout:</b> Users will set the “Pre Ring Timeout” and “Post Ring Timeout” in the given text fields.
 
 <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carriers-sorting.png" alt="Carriers-Sorting"/>
 
