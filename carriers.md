@@ -1,10 +1,10 @@
-#Carrier Management
+<h1>Carrier Management</h1>
 
 On the Dashboard, click on the Carrier icon in middle of page or you can click on “Management” from the side bar and select “Carrier”.
 
 <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-list.png" alt="Carrier-List"/>
 
-#Add a New Carrier
+<h2>#Add a New Carrier</h2>
 
 <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/add-carriers.png" alt="Add-Carrier"/>
 
@@ -58,7 +58,7 @@ Users can also check/filter the status of the Carriers.
 2.	Select an option from the dropdown menu.
 3.	Results will show up according to the selected option.
 
-#Searching Carrier
+#<h2>Searching Carrier</h2>
 
 Users can search anything about a Carrier by writing the query in the Search text field.
 
