@@ -2,17 +2,17 @@
 
 <h4>Pre Text</h4>
 
-Near end refers to the UA (User Agent) such as the softphone. Far End refers to the ConnexCS Switch.
+ Near end refers to the UA (User Agent) such as the softphone. Far End refers to the ConnexCS Switch.
 
-NAT is the process that allows you to have an internal and external IP address.
+ NAT is the process that allows you to have an internal and external IP address.
 
 <h2>SIP Traces</h2>
 
-The ConnexCS system support always on SIP Trace capture. This means that we keep a record of every packet sent and received by your server over the last 7 days. This is enormously useful for debugging problems with customer's / carrier configuration.
+ The ConnexCS system support always on SIP Trace capture. This means that we keep a record of every packet sent and received by your server over the last 7 days. This is enormously useful for debugging problems with customer's / carrier configuration.
 
 <h2>Limiting CPS & Channels</h2>
 
-The switch can limit CPS and channels in the following areas:
+ The switch can limit CPS and channels in the following areas:
 
 1. Your entire ConnexCS account 
 2. Per Customer 
@@ -23,211 +23,55 @@ The switch can limit CPS and channels in the following areas:
 
 <h2>Scaling and Load Balancing</h2>
 
-The ConnexCS platform is highly scalable in terms of Channels, CPS and in single / multiple zones.
+ The ConnexCS platform is highly scalable in terms of Channels, CPS and in single / multiple zones.
 
-We aim to run all servers at a maximum of 50% their capacity. This enables us to accept unforecast bursts comfortably.
+ We aim to run all servers at a maximum of 50% their capacity. This enables us to accept unforecast bursts comfortably.
 
 <h2>Billing</h2>
 
-When you subscribe to ConnexCS you have 2 main tariffs that you can use, either per minute or per channel.
+ When you subscribe to ConnexCS you have 2 main tariffs that you can use, either per minute or per channel.
 
 <h4>ConnexCS Billing per channel</h4>
 
-This is the traditional approach where you pay for a set number of channels.
+ This is the traditional approach where you pay for a set number of channels.
 
 <h4>ConnexCS Billing per minute</h4>
 
-This billing strategy is similar, but not exactly the same as how you would get charged by your
+ This billing strategy is similar, but not exactly the same as how you would get charged by your
 
-Credit Control
+<h2>Credit Control</h2>
 
-Pre-pay / Post Pay
+<h4>Pre-pay / Post Pay</h4>
 
-The ConnexCS system does not have a distinct setting to differentiate between Pre and Post pay customers. This is simply determined by the debit limit.
+ The ConnexCS system does not have a distinct setting to differentiate between Pre and Post pay customers. This is simply determined by the debit limit.
 
-The debit limit is a value, in denominations of the customer’s currency, which when set will allow spends below 0 of the specified amount before calls are stopped.
+<h2>SBC or Class 4 Softswitch</h2>
 
-Pre Pay - Set the debit limit to 0
-
-Post Pay - Set the debit limit to the maximum credit risk you wish to allow for this customers. This does not affect the payment terms.
-
-Pre Pay with Credit Buffer -
-SBC or Class 4 Softswitch
-
-SBC or Class 4 Softswitch?
+ SBC or Class 4 Softswitch?
 
 We have given it a great deal of thought as to whether to brand our system as a class 4 cloudswitch or a SBC (Session Border Controller). As our platform is delivered OTT (Over The Top), sitting on cloud architecture, the typical Border part of the Session Border Controller is blurred. An SBC is (almost always) a class 4 switch, however a class 4 switch does not have to be a SBC.
 
-This does not mean that you can’t use it as an SBC. You can deploy your class 5 switches or your diallers to
-ConnexCS Media Handling
+<h2>ConnexCS Media Handling</h2>
 
-Why do I see different media IP addresses?
+ Why do I see different media IP addresses?
 
- 
+ When a SIP session is created with your ConnexCS Cloudswitch, the switch decides (or you can choose from ingress routing) a zone to route your media through, e.g USA East, USA West, Europe.
 
-When a SIP session is created with your ConnexCS Cloudswitch, the switch decides (or you can choose from ingress routing) a zone to route your media through, e.g USA East, USA West, Europe.
+<h2>Asynchronous AMQP API</h2>
 
- 
+ Advanced Message Queuing Protocol is an open standard application layer protocol for delivering arbitrary messages.
 
-These zones are specifically broad to encompass (if possible) multiple datacenter and sub-availability zones within the target zone. A zone may contain 10 or more RTP Media Relays, or as few as 2, which are available for all ConnexCS customers.
+ Unlike the RESTful JSON over HTTP interface AMQP has less overhead as a TCP socket remains established, additionally and most importantly the entire message delivery is asynchronous. This means that if you want to perform 1m lookups you can send them to us as fast as we can receive them (10,000+ messages per second is not a problem), then we can respond to them as fast as the underlying system can.
 
- 
+<h2>ScriptForge Routing</h2>
 
-It is important to us that media streams never suffer avoidable packet loss or latency, hence
-Asynchronous AMQP API
+ The Routing class is a helper which gives easy access to the variables associated with routing.
+ It will automatically load the $routing variable and allow safe manipulation 
 
-Advanced Message Queuing Protocol is an open standard application layer protocol for delivering arbitrary messages.
+ 1. getTechPrefix
 
-Unlike the RESTful JSON over HTTP interface AMQP has less overhead as a TCP socket remains established, additionally and most importantly the entire message delivery is asynchronous. This means that if you want to perform 1m lookups you can send them to us as fast as we can receive them (10,000+ messages per second is not a problem), then we can respond to them as fast as the underlying system can.
+ 2. PHP
 
-Drivers are available in almost every language and its very lightweight to implement
-
-Authentication
-ScriptForge Routing
-
-The Routing class is a helper which gives easy access to the variables associated with routing.
-
-It will automatically load the $routing variable and allow safe manipulation 
-
-getTechPrefix
-
-PHP
-
-[code]
-
-Javascript
-
-[code]
-
-getToNumber
-
-PHP
-
-[code]
-
-Javascript
-
-[code]
-
-getCallId
-
-PHP
-
-[code]
-
-Javascript
-
-[code]
-
-getSwitch
-
-PHP
-
-[code]
-
-Javascript
-
-[code]
-
-getFromIp
-
-PHP
-
-[code]
-
-Javascript
-
-[code]
-
-getTimeout
-
-PHP
-
-[code]
-
-Javascript
-
-[code]
-
-getRTP
-
-PHP
-
-[code]
-
-Javascript
-
-[code]
-
-getMaxDuration
-
-PHP
-
-[code]
-
-Javascript
-
-[code]
-
-setMaxDuration
-
-PHP
-
-[code]
-
-Javascript
-
-[code]
-
-getDirection
-
-PHP
-
-[code]
-
-Javascript
-
-[code]
-
-setSIPCode
-
-PHP
-
-[code]
-
-Javascript
-
-[code]
-
-setSIPReason
-
-PHP
-
-[code]
-
-Javascript
-
-[code]
-
-getCardId
-
-PHP
-
-[code]
-
-Javascript
-
-[code]
-
-setCardId
-
-PHP
-
-[code]
-
-Javascript
-
-[code]
 ScriptForge Class Reference
 
     Datastore�
@@ -256,20 +100,15 @@ ScriptForge Class Reference
 
     Lookup
 
-PHP ScriptForge
+<h2>PHP ScriptForge></h2>
 
-The PHP allows your own custom code to be run from within the ConnexCS platform.
+ The PHP allows your own custom code to be run from within the ConnexCS platform.
 
-Usage
+ <h4>Usage</h4>
 
 The PHP ScriptForge, eventually, will allow extended functionality throughout the system, but for the alpha version this will be available in the ScriptForge editor to check the ability of your code to be executed and soon in the routing.
 
-Security Lock-down
-
-Due to the nature of executing arbitrary code on cloud platform certain security limitations have to be put in place. This means that you won't achieve full functionality of PHP. Our security methodology is complete lockdown then opens up as required.
-
-You can
-Datastore
+<h2>Datastore</h2>
 
 The Datastore class gives access to a high speed persistent key value store.
 
@@ -277,24 +116,11 @@ Data is stored on a redundant cluster and is immediately consistent in server zo
 
 Although it is possible to allow application script to have variables that are persistent between requests this should not be used. Application processes are ephemeral and will be terminated when there is no workload. Your application may also run on multiple servers so only variable space in the datastore will be shared between instances.
 
-get
-
-PHP
-
-[code]
-
-Javascript
-
-[code]
-
-set
-
-PHP
-ScriptForge
+<h2>ScriptForge</h2>
 
 The ScriptForge allows you to write your own application which can be run at specific events in the system, currently the following places support scripting functionality:
 
-    Routing Engine (runs in line the call setup process) Post Billing (runs after billing has taken place) 
+ &#x25cf; Routing Engine (runs in line the call setup process) Post Billing (runs after billing has taken place) 
 
 Requests to your application are processed via a messaging bus and will be queued if your application can not process them fast enough. If you run your application in the routing engine you must ensure that it can complete quickly so as not to induce high PDD.
 
