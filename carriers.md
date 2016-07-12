@@ -40,9 +40,9 @@ The brief description of fields present in the above form, is given below:
 
 <b>Status:</b>  Users will set/select the “Status” of the Carrier. Status dropdown menu options are:
 
-                  •	Active
-                  •	Inactive
-                  •	Pending Approval
+        1. Active
+        2. Inactive
+        3. Pending Approval
 
 
 <b>Currency:</b>	Users will set the “Currency” from the dropdown menu options.
