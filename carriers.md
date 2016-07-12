@@ -75,7 +75,7 @@ On the extreme right, click on the menu button, and check the columns you want t
 In order to edit a Carrier, select a Carrier from the list. A new page will open. Follow the procedure given below:
 
         1. Press the “Edit Carrier” button.
-        2. Edit the details and press “Save” button.
+        2. Edit the details and press “Save” button.s
 
 Following figure demonstrates the Edit Carrier button:
 
