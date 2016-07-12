@@ -22,27 +22,27 @@ Following figure shows the details of the modal window opened to add a new custo
 
 Brief description of the fields present in above dialog box is as follows:
 
-Customer Name: Users will add the name of the customer.
+<b>Customer Name:</b> Users will add the name of the customer.
 
-Paypal Email: Users will add Paypal Email of the customers in the text field.
+<b>Paypal Email:</b> Users will add Paypal Email of the customers in the text field.
 
-Website: Users will add website of the customer.
+<b>Website:</b> Users will add website of the customer.
 
-Status:	Users canchoose the “Status” of the customer as:
+<b>Status:</b> Users canchoose the “Status” of the customer as:
 
-	&#x25cf;Active
-	&#x25cf;Inactive
-	&#x25cf;Pending Approval
+	&bull; Active
+	&bull; Inactive
+	&bull; Pending Approval
 
-Debit Limit: “Debit Limit” will be added by the user.
+<b>Debit Limit:</b>  “Debit Limit” will be added by the user.
 
-Tax: “Tax” in percentage will also be added by the user.
+<b>Tax:</b>  “Tax” in percentage will also be added by the user.
 
-Currency: “Currency”will also be selected from the dropdown menu.
+<b>Currency:</b>  “Currency”will also be selected from the dropdown menu.
 
-Portal Access: Users will select the “Portal Access” from the options either Yes or No.
+<b>Portal Access:</b>  Users will select the “Portal Access” from the options either Yes or No.
 
-Address: “Address” of the customers will be filled out by the user. 
+<b>Address:</b>  “Address” of the customers will be filled out by the user. 
 
 #Edit Customers
 
