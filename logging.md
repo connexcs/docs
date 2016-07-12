@@ -47,8 +47,8 @@ Details of the Look up Dialog box
 
 User will have to fill all the fields present in the pop-up window.
 
-•	User will enter the Query in the text field, in the given format (e.g. E164 etc.).
-•	Type will also be selected from the checklist given. (The options include: ASR Plus, HLR, TPS, LRN, and INP).
+1. User will enter the Query in the text field, in the given format (e.g. E164 etc.).
+2. Type will also be selected from the checklist given. (The options include: ASR Plus, HLR, TPS, LRN, and INP).
 
 #<h2>Refreshing the Logs</h2>
 
