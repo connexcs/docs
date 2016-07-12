@@ -4,22 +4,39 @@ ConnexCS offers a wide range of features including Customer Management, Rate Car
 Customer Features
 
 &#x25cf; Unlimited customers with no limitations.
+
 &#x25cf; Prepaid and Postpaid customers.
+
 &#x25cf; IP Authentication & User/Password Authentication.
+
 &#x25cf; Multiple Currency support- USD, GBP, EUR, INR, AUD.
+
 &#x25cf; Alerts - Get notification of a low balance by email.
+
 &#x25cf; Tax Management.
+
 &#x25cf; Live Customer and Vendor balances.
+
 &#x25cf; CLI Restrictions.
+
 &#x25cf; Live Channels graph.
+
 &#x25cf; CPS, ASR, ACD, Ring Time & PDD statistics.
+
 &#x25cf; Latest Calls list on each customer account.
+
 &#x25cf; Customer Portal with balance, CDR, rate cards, graphs:
+
 &#x25cf; ACD Graph
+
 &#x25cf; ASR Graph
+
 &#x25cf; Channel Usage Graph
+
 &#x25cf; CPS Graph
+
 &#x25cf; DTMF Graph
+
 &#x25cf; White label (Paid Subscription Only).
 
 <h2>Carrier Management</h2>
