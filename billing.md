@@ -1,4 +1,4 @@
-#Billing
+<h1>Billing</h1>
 
 When you subscribe to ConnexCS you have 2 main tariffs that you can use, either per minute or per channel.
 
