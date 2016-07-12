@@ -30,9 +30,9 @@ Brief description of the fields present in above dialog box is as follows:
 
 <b>Status:</b> Users canchoose the “Status” of the customer as:
 
-&bull; Active
-&bull; Inactive
-&bull; Pending Approval
+1. Active
+2. Inactive
+3. Pending Approval
 
 <b>Debit Limit:</b>  “Debit Limit” will be added by the user.
 
