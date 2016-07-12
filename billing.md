@@ -2,7 +2,7 @@
 
 When you subscribe to ConnexCS you have 2 main tariffs that you can use, either per minute or per channel.
 
-#ConnexCS Billing per channel
+<h2>ConnexCS Billing per channel</h2>
 
 This is the traditional approach where you pay for a set number of channels.
 
