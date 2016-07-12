@@ -14,13 +14,13 @@ In order for this to work you need to configure certain settings on your ConnexC
 
 Below are the steps to configure IPN (Instant Payment Notification).
 
-Login to your Connex account and from the left menu select “Setup”.
+Login to your Connex account and from the left menu select <b>“Setup”</b>.
 
 1. Click on Add New Setup
-2. Choose “My Account”
+2. Choose <b>“My Account”</b>
 
-Switch to the “API” tab and click on “PayPal IPN”.
-Fill in your settings and copy the URL written beside “IPN URL”.
+Switch to the <b>“API”</b> tab and click on <b>“PayPal IPN”</b>.
+Fill in your settings and copy the URL written beside <b>“IPN URL”</b>.
 
 #<h2>Inserting the IPN URL in your PayPal account:</h2>
 
@@ -28,23 +28,23 @@ Login to your Paypal Business  Account and choose Profile.
 
 <b>Note:</b> you need to have a PayPal business account for performing this task.
 
-From the side bar menu select “My selling tools”.
+From the side bar menu select <b>“My selling tools”</b>.
 Drag down and select“Update” which is beside “Instant payment notification” that is under Getting paid and managing my risk section.
 
-Select “Choose IPN Settings”
-Enter the URL you copied from Connex Account under the Notification URL and click “Save”.ill in the settings & copy the API URL.
+Select <b>“Choose IPN Settings”</b>
+Enter the URL you copied from Connex Account under the Notification URL and click <b>“Save”</b>. fill in the settings & copy the API URL.
 
 #<h2>Inserting credentials in your Connex Account:</h2>
 
-Go back to your Connex account and go to Setup>>My Account. Under the tab of API, select “Add New”.  A new form will open.
+Go back to your Connex account and go to Setup>>My Account. Under the tab of API, select <b>“Add New”</b>.  A new form will open.
 
-Go back to your Paypal account and go to Profile.Select “My selling tools” from the side menu bar.
+Go back to your Paypal account and go to Profile.Select <b>“My selling tools”</b> from the side menu bar.
 
-Click on the button “Update” beside API accesswhich is under “Selling online” section.
-Click on “Request API Credentials” which is under NVP/SOAP API integration
-Select “Request API signature” and click on Agree and Submit button
+Click on the button <b>“Update”</b> beside API accesswhich is under <b>“Selling online”</b> section.
+Click on <b>“Request API Credentials”</b> which is under NVP/SOAP API integration
+Select <b>“Request API signature”</b> and click on Agree and Submit button
 
-A new page will open which says “View or Remove API signature”. Copy the credentials from there and press “Done”.
+A new page will open which says <b>“View or Remove API signature”</b>. Copy the credentials from there and press <b>“Done”</b>.
 Now, go back to your External API form from your Connex account and add the credential you copied from Paypal account to your Exeternal API form. Press Save when you are done.
 
 #<h2>How to add customer PayPal Email address on ConnexCS customer account?</h2>
