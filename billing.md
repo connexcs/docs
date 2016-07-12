@@ -27,7 +27,7 @@ The amount of seconds that you use will be accumulated daily and combined with t
   1. Best scalability
   2. Self scaling costs.
 
- <h4><b>&#x25cf; Disadvantages</b></h4>
+<h4><b>&#x25cf; Disadvantages</b></h4>
 
   1. More expensive if you have regular consistent traffic
   2. You will have to pay if you want multiple servers.
