@@ -73,7 +73,7 @@ Customer Features
     Allows users to take control in highly programmable way.
     Unique applications can be written that will enable you to create your bespoke computational parameters.
     Dramatically expands your customization options.
-    Bridges the gap between off the shelf and customizable switches making it unique to hosted switches. Read more about the
+    Bridges the gap between off the shelf and customizable switches making it unique to hosted switches. 
 
 <h2>Support</h2>
 
