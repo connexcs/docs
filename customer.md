@@ -67,7 +67,7 @@ Details of a customer can also be deleted by following below steps:
 
 Users can filter the customers as per their current status.
 
-1. Click thebutton saying “Active”.
+1. Click the button saying “Active”.
 2. Select an option from the dropdown menu. Either,All, Active, Inactive or Pending Approval.
 3. The list of customers will show up as per the search criteria.
 
