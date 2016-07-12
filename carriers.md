@@ -44,7 +44,6 @@ The brief description of fields present in the above form, is given below:
         2. Inactive
         3. Pending Approval
 
-
 <b>Currency:</b> Users will set the “Currency” from the dropdown menu options.
 
 <b>Address:</b>	Users will write the “Address” of the Carrier. Users will add two addresses with country and postcode.
@@ -75,7 +74,7 @@ On the extreme right, click on the menu button, and check the columns you want t
 In order to edit a Carrier, select a Carrier from the list. A new page will open. Follow the procedure given below:
 
         1. Press the “Edit Carrier” button.
-        2. Edit the details and press “Save” button.s
+        2. Edit the details and press “Save” button.
 
 Following figure demonstrates the Edit Carrier button:
 
