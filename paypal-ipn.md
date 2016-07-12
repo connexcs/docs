@@ -25,6 +25,7 @@ Fill in your settings and copy the URL written beside “IPN URL”.
 #<h2>Inserting the IPN URL in your PayPal account:</h2>
 
 Login to your Paypal Business  Account and choose Profile. 
+
 <b>Note:</b> you need to have a PayPal business account for performing this task.
 
 From the side bar menu select “My selling tools”.
