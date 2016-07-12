@@ -1,12 +1,12 @@
-#Customer
+<h1Customer</h1>
 
 From control panel, you can modify customers by clicking on the Customer tab. Here, you can perform the following actions:
 
-1. Add Customers
-2. Edit Customers
-3. DeleteCustomers
-4. Filter Customers
-5. Search Customers
+<h4><b>&#x25cf;Add Customers</b></h4>
+<h4><b>&#x25cf;Edit Customers</b></h4>
+<h4><b>&#x25cf;Delete Customers</b></h4>
+<h4><b>&#x25cf;Filter Customers</b></h4>
+<h4><b>&#x25cf;Search Customers</b></h4>
 
 #Add Customer
 
@@ -29,9 +29,10 @@ Paypal Email: Users will add Paypal Email of the customers in the text field.
 Website: Users will add website of the customer.
 
 Status:	Users canchoose the “Status” of the customer as:
-	• Active
-	• Inactive
-	• Pending Approval
+
+	&#x25cf;Active
+	&#x25cf;Inactive
+	&#x25cf;Pending Approval
 
 Debit Limit: “Debit Limit” will be added by the user.
 
