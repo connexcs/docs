@@ -29,6 +29,7 @@ Brief description of the fields present in above dialog box is as follows:
 <b>Website:</b> Users will add website of the customer.
 
 <b>Status:</b> Users canchoose the “Status” of the customer as:
+
 	&bull; Active
 	&bull; Inactive
 	&bull; Pending Approval
