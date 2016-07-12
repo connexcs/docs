@@ -1,4 +1,4 @@
-#Getting Started Guide
+<h1>Getting Started Guide</h1>
 
 Initial set-up, will configure a single carrier, single customer and single rate card.
 
@@ -6,27 +6,27 @@ Initial set-up, will configure a single carrier, single customer and single rate
 
 This guide will assume that you have already created an account with ConnexCS.com . and you are able to login successfully.
 
-#Customer
+#<h2>Customer</h2>
 
 1. Customer Name
 2. Switch IP Address or Username / Password
 3. Credit / Debit Limit
 
-#Carrier
+#<h2>Carrier</h2>
 
 1. Carrier Name
 2. Switch IP Address
 
-#Rate Card
+#<h2>Rate Card</h2>
 
 1. Full Rate Card or List of Codes
 2. Profit Margin
 
-#Video Guide
+#<h2>Video Guide</h2>
 
 To view a video guide of the basic setup please see here.
 
-#Create a Customer
+#<h2>Create a Customer</h2>
 
 From control panel, you can modify customers by clicking on the Customer tab. Here, you can perform the following actions:
 
@@ -36,7 +36,7 @@ From control panel, you can modify customers by clicking on the Customer tab. He
 4. Filter Customers
 5. Search Customers
 
-#Add Customer
+#<h2>Add Customer</h2>
 
 Users can add customers by following the simple procedure.
 
