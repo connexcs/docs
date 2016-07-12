@@ -1,7 +1,8 @@
 <h1>Detailed Features - ConnexCS</h1>
 
 ConnexCS offers a wide range of features including Customer Management, Rate Card Management, CDR, Carrier Management, LCR (Least Cost Routing), Sandbox & much more.
-Customer Features
+
+#<h2>Customer Features</h2>
 
 &#x25cf; Unlimited customers with no limitations.
 
@@ -39,7 +40,7 @@ Customer Features
 
 &#x25cf; White label (Paid Subscription Only).
 
-<h2>Carrier Management</h2>
+#<h2>Carrier Management</h2>
 
 &#x25cf; Unlimited carriers.
 
@@ -47,7 +48,7 @@ Customer Features
 
 &#x25cf; Separate CDR section for carriers.
 
-<h2>Rate Card Management</h2>
+#<h2>Rate Card Management</h2>
 
 &#x25cf; Unlimited number of rate cards.
 
@@ -69,7 +70,7 @@ Customer Features
 
 &#x25cf; Revision History.
 
-<h2>CDR Management</h2>
+#<h2>CDR Management</h2>
 
 &#x25cf; Processing of CDR in Real time.
 
@@ -83,7 +84,7 @@ Customer Features
 
 &#x25cf; Detailed statistics of ACD/ASR/NER/PDD on demand.
 
-<h2>Logging</h2>
+#<h2>Logging</h2>
 
 &#x25cf; Real time call attempts to check the status of a call.
 
@@ -93,7 +94,7 @@ Customer Features
 
 &#x25cf; The ability to stimulate a call, before the actual call is processed, to check the validity of the call.
 
-<h2>Server</h2>
+#<h2>Server</h2>
 
 &#x25cf; Multiple servers to reduce latency.
 
@@ -109,7 +110,7 @@ Customer Features
 
 &#x25cf; DNS Management on request.
 
-<h2>ScriptForged</h2>
+#<h2>ScriptForged</h2>
 
 &#x25cf; Lets you execute a customized piece of script per call.
 
@@ -121,7 +122,7 @@ Customer Features
 
 &#x25cf; Bridges the gap between off the shelf and customizable switches making it unique to hosted switches. 
 
-<h2>Support</h2>
+#<h2>Support</h2>
 
 &#x25cf; Professional 1st line tech support resolving 90% of issues.
 
