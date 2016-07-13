@@ -130,10 +130,14 @@ The Routing Strategy lets the routing engine to route calls to various providers
 
 <h4>Type of Strategy</h4>
 
- &#x25cf;  LCR – Least Cost Route 
+ &#x25cf;  LCR – Least Cost Route
+
  &#x25cf;  Random - System will pick a random route without any sequence. 
+ 
  &#x25cf;  Round Robin - System will pick a route by selected Sequence
+ 
  &#x25cf;  Manual - Manual pick by the selected route 
+ 
  &#x25cf;  Reverse LCR - System will pick the most Expensive Route first 
 
 <h2>Rate Compact</h2>
@@ -145,7 +149,9 @@ When merging multiple rate cards together the rate compact is the strategy with 
 Routing in ConnexCS Cloudswitch happens in the following stages
 
  &#x25cf; Incoming call is identified as belonging to a customer, this is checked by source IP or User/Pass Authentication
+ 
  &#x25cf; Ingress Routing will check for prefixes first, then against available rate cards. There can be multiple ingress routes per customer. 
+ 
  &#x25cf; Customer Rate Card is built up from carriers above it, so the call can be presented to any carrier who was the parent of the customer rate card.
 
 <h2>Getting Started Video Guide</h2>
@@ -162,7 +168,9 @@ Manually Create Provider Rate Card (and create Customer Rate Card)
 When a call first lands on the system it hits the routing engine. The routing engine follows the process:
 
  &#x25cf; Authentication.
+ 
  &#x25cf; Ingress Routing.
+ 
  &#x25cf; Egress Routing.
 
 If your SIP Trace shows that an INVITE packet was received by the switch but not sent out to any providers, the fail will be in the ingress routing.
@@ -170,6 +178,7 @@ If your SIP Trace shows that an INVITE packet was received by the switch but not
 <h2>Debugging</h2>
 
  &#x25cf; To debug click on Management > Logging
+ 
  &#x25cf; Click on the call id & check for the error message, alternatively you can also download the pcap traces.
 
 <h2>Username Password Authentication</h2>
@@ -195,8 +204,11 @@ Checking the Force CLI option will let the user to pass the CLI without having t
 All calls through the ConnexCS Platform are billed using rate information kept in the rate card the following features are supported:
 
  &#x25cf; Connection Fees
+ 
  &#x25cf; LRN
+ 
  &#x25cf; Min call cost & Pulse (e.g 1/1, 6/6, 60/60, etc) 
+ 
  &#x25cf; Daily collation of customers records. 
 
 <h2>Server</h2>
@@ -208,12 +220,15 @@ To Access your server follow the below steps
 <h2>How to restert/stop my server?</h2>
 
  &#x25cf; Click on Setup > My Servers Click on the server ip. 
+ 
  &#x25cf; Click on the green drop down menu & click the restart button to restart your server & stop to shutdown your server.
 
 <h2>CDR</h2>
 
  &#x25cf; Click on [Management > Customers > [Customer Name]]> CDR Click on CDR.
+ 
  &#x25cf; Select the date range and click apply.
+ 
  &#x25cf; Click on download.
 
 <h2>Call Orgination</h2>
