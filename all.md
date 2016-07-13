@@ -100,7 +100,7 @@ ScriptForge Class Reference
 
     Lookup
 
-<h2>PHP ScriptForge></h2>
+<h2>PHP ScriptForge</h2>
 
  The PHP allows your own custom code to be run from within the ConnexCS platform.
 
