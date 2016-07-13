@@ -154,95 +154,69 @@ The videos on this page are to show a quick example of how to setup your account
 
 Adding a Customer & Carrier
 
-Your browser does not support the HTML5 video.
-
 Uploading a Provider Rate Card (and create Customer Rate Card)
-
-Your browser does not support the HTML5 video.
-
 Manually Create Provider Rate Card (and create Customer Rate Card)
 
-Your browser does not support the HTML5 video.
-
-Ingress Routing
-
-Your browser does not support the HTML5 video.
-Routing Engine
+<h2>Routing Engine</h2>
 
 When a call first lands on the system it hits the routing engine. The routing engine follows the process:
 
-    Authentication Ingress Routing Egress Routing 
+ &#x25cf; Authentication.
+ &#x25cf; Ingress Routing.
+ &#x25cf; Egress Routing.
 
 If your SIP Trace shows that an INVITE packet was received by the switch but not sent out to any providers, the fail will be in the ingress routing.
 
-[table]
+<h2>Debugging</h2>
 
- 
+ &#x25cf; To debug click on Management > Logging
+ &#x25cf; Click on the call id & check for the error message, alternatively you can also download the pcap traces.
 
-Note: When making changes, although we try to synchronise all endpoints as fast as possible, this is a distributed system it can take up to 60 seconds for any changes to take affect.
-Debugging
-
-    To debug click on Management> Logging Click on the call id & check for the error message, alternatively you can also download the pcap traces.
-
-
-
-Username Password Authentication
+<h2>Username Password Authentication</h2>
 
 ConnexCS supports two varieties of authentication. IP which only checks the originating IP address, and Username / Password Authentication, which allows any IP address to be used and required authentication information to be included in the SIP headers. This is usually done on softphones, but it can be configured on diallers which have dynamic IP addresses.
 
-Setup
-
-    Go to the customer you wish to add an account for [Management > Customers > [Customer Name]] Click on Auth. Click on + under User / Pass Auth Fill in a UNIQUE username, this must be unique across all the accounts on your
-
-Ingress Routing
+<h2>Ingress Routing</h2>
 
 Ingress routing allows incoming attempts to be sent to the correct rate card which in turn egress through the specified provider.
 
 Ingress routing allows for lots of rate cards to be used with or without a prefix. This is checked according to the longest prefix first through to the shortest for a match. If no prefix is matched then it will begin matching the rules of the rate cards. Rate cards with mutually exclusive destinations will route without problems, but rate cards which have prefixes with collisions will have no guarantee which the calls will be sent to.
 
-Tariff
-
-Tariff
-CLI Restriction
+<h2>CLI Restriction</h2>
 
 CLI Restriction enables you to pass a CLI which is presented on the customer's account. Anything without a valid CLI will not be passed through.
 
 Checking the Force CLI option will let the user to pass the CLI without having to set the CLI at customer's end.
 
-Note: If no CLI rules are added just the default CLI which is presented by your end customer will pass through. Also we do support regular expression.
+<b>Note:</b> If no CLI rules are added just the default CLI which is presented by your end customer will pass through. Also we do support regular expression.
 
-CLI = Caller Line Identification
-
-How to add CLI?
-
-    Click on Managment> Customer> [Customer name] Click on Routing
-
-    [image] Click + under CLI. Enter the CLI Number
-
-Billing
-
-Billing
+<h2>Billing</h2>
 
 All calls through the ConnexCS Platform are billed using rate information kept in the rate card the following features are supported:
 
-    Connection Fees LRN Min call cost & Pulse (e.g 1/1, 6/6, 60/60, etc) Daily collation of customers records. 
+ &#x25cf; Connection Fees
+ &#x25cf; LRN
+ &#x25cf; Min call cost & Pulse (e.g 1/1, 6/6, 60/60, etc) 
+ &#x25cf; Daily collation of customers records. 
 
-We do not generate invoices.
-Server
+<h2>Server</h2>
 
 To Access your server follow the below steps
 
-    Click on Setup> My Servers Click on server ip 
+ &#x25cf; Click on Setup > My Servers Click on server ip 
 
-How to restert/stop my server?
+<h2>How to restert/stop my server?</h2>
 
-    Click on Setup> My Servers Click on the server ip. Click on the green drop down menu & click the restart button to restart your server & stop to shutdown your server.
+ &#x25cf; Click on Setup > My Servers Click on the server ip. 
+ &#x25cf; Click on the green drop down menu & click the restart button to restart your server & stop to shutdown your server.
 
-CDR
+<h2>CDR</h2>
 
-    Click on [Management > Customers > [Customer Name]]> CDR Click on CDR. Select the date range and click apply. Click on download.
+ &#x25cf; Click on [Management > Customers > [Customer Name]]> CDR Click on CDR.
+ &#x25cf; Select the date range and click apply.
+ &#x25cf; Click on download.
 
-Call Orgination
+<h2>Call Orgination</h2>
 
 Dial
 
