@@ -124,59 +124,33 @@ The ScriptForge allows you to write your own application which can be run at spe
 
 Requests to your application are processed via a messaging bus and will be queued if your application can not process them fast enough. If you run your application in the routing engine you must ensure that it can complete quickly so as not to induce high PDD.
 
-Design Considerations
-
-Memory
-
-For speed enhancements variables in your application may
-Routing Strategy
+<h2>Routing Strategy</h2>
 
 The Routing Strategy lets the routing engine to route calls to various providers depending upon the strategy you set. Routing Strategy is an optional enhancement to routing and is not required for normal routing.
 
-Type of Strategy
+<h4>Type of Strategy</h4>
 
-    LCR – Least Cost Route Random - System will pick a random route without any sequence. Round Robin - System will pick a route by selected Sequence Manual - Manual pick by the selected route Reverse LCR - System will pick the most Expensive Route first 
+ &#x25cf;  LCR – Least Cost Route 
+ &#x25cf;  Random - System will pick a random route without any sequence. 
+ &#x25cf;  Round Robin - System will pick a route by selected Sequence
+ &#x25cf;  Manual - Manual pick by the selected route 
+ &#x25cf;  Reverse LCR - System will pick the most Expensive Route first 
 
-How to add Routing Strategy?
-
-    Click on Management> Routing Strategy
-
-    [image] Click on Add New. Name the
-
-Rate Compact
+<h2>Rate Compact</h2>
 
 When merging multiple rate cards together the rate compact is the strategy with which unique prefixes are merged. These are Minimum, Maximum and Average. When a collision between two codes happens this rule will govern how the combined rate will be calculated.
 
-Example
-
-[table]
-
-Outputs
-
-If we merged all 3 of the above cards, each with a different Rate Compact, we would end up with the following different rate cards.
-
-Minimum
-
-[table]
-
-Maximum
-
-[table]
-
-Average
-
-[table]
-Routing
+<h2>Routing</h2>
 
 Routing in ConnexCS Cloudswitch happens in the following stages
 
-[image]
+ &#x25cf; Incoming call is identified as belonging to a customer, this is checked by source IP or User/Pass Authentication
+ &#x25cf; Ingress Routing will check for prefixes first, then against available rate cards. There can be multiple ingress routes per customer. 
+ &#x25cf; Customer Rate Card is built up from carriers above it, so the call can be presented to any carrier who was the parent of the customer rate card.
 
-    Incoming call is identified as belonging to a customer, this is checked by source IP or User/Pass Authentication Ingress Routing will check for prefixes first, then against available rate cards. There can be multiple ingress routes per customer Customer Rate Card is built up from carriers above it, so the call can be presented to any carrier who was the parent of the customer rate card. The Carriers Rate Card links into the specific carrier The Carrier selected can have multiple IP addresses, the call will be sent randomly, but
+<h2>Getting Started Video Guide</h2>
 
-Getting Started Video Guide
-
-The videos on this page are to show a quick example of how to setup your account. For more details on please refer to our Getting Started Guide
+The videos on this page are to show a quick example of how to setup your account. For more details on please refer to our <b>Getting Started Guide</b>
 
 Adding a Customer & Carrier
 
