@@ -116,7 +116,7 @@ The Routing Strategy lets the routing engine to route calls to various providers
 
 When merging multiple rate cards together the rate compact is the strategy with which unique prefixes are merged. These are Minimum, Maximum and Average. When a collision between two codes happens this rule will govern how the combined rate will be calculated.
 
-<h2>Routing</h2>
+<h2><a href="http://connexcs-user-docs.readthedocs.io/en/latest/routing-strategy/">Routing</a></h2>
 
 Routing in ConnexCS Cloudswitch happens in the following stages
 
