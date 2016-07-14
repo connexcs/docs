@@ -96,7 +96,7 @@ The ScriptForge allows you to write your own application which can be run at spe
 
 Requests to your application are processed via a messaging bus and will be queued if your application can not process them fast enough. If you run your application in the routing engine you must ensure that it can complete quickly so as not to induce high PDD.
 
-<h2>Routing Strategy</h2>
+<h2><a href="http://connexcs-user-docs.readthedocs.io/en/latest/routing-strategy">Routing Strategy</a></h2>
 
 The Routing Strategy lets the routing engine to route calls to various providers depending upon the strategy you set. Routing Strategy is an optional enhancement to routing and is not required for normal routing.
 
@@ -112,11 +112,11 @@ The Routing Strategy lets the routing engine to route calls to various providers
  
  &#x25cf;  Reverse LCR - System will pick the most Expensive Route first 
 
-<h2>Rate Compact</h2>
+<h2><a href="http://connexcs-user-docs.readthedocs.io/en/latest/rate-compact">Rate Compact</a></h2>
 
 When merging multiple rate cards together the rate compact is the strategy with which unique prefixes are merged. These are Minimum, Maximum and Average. When a collision between two codes happens this rule will govern how the combined rate will be calculated.
 
-<h2><a href="http://connexcs-user-docs.readthedocs.io/en/latest/routing-strategy/">Routing</a></h2>
+<h2>Routing</h2>
 
 Routing in ConnexCS Cloudswitch happens in the following stages
 
@@ -171,7 +171,7 @@ Checking the Force CLI option will let the user to pass the CLI without having t
 
 <b>Note:</b> If no CLI rules are added just the default CLI which is presented by your end customer will pass through. Also we do support regular expression.
 
-<h2>Billing</h2>
+<h2><a href="http://connexcs-user-docs.readthedocs.io/en/latest/billing">Billing</a></h2>
 
 All calls through the ConnexCS Platform are billed using rate information kept in the rate card the following features are supported:
 
@@ -245,7 +245,7 @@ Below are the steps to add a DID.
  
  &#x25cf; Click Save.
 
-<h2>Mass Payments with Paypal IPN</h2>
+<h2><a href="http://connexcs-user-docs.readthedocs.io/en/latest/paypal-ipn">Mass Payments with Paypal IPN</a></h2>
 
 <h4>Mass Payments</h4>
 
