@@ -72,34 +72,6 @@ We have given it a great deal of thought as to whether to brand our system as a 
 
  2. PHP
 
-ScriptForge Class Reference
-
-    Datastore�
-
-    get
-
-    PHP
-
-    [code]
-
-    Javascript
-
-    [code]
-
-    set
-
-    PHP
-
-    [code]
-
-    Javascript
-
-    [code]
-
-     
-
-    Lookup
-
 <h2>PHP ScriptForge</h2>
 
  The PHP allows your own custom code to be run from within the ConnexCS platform.
@@ -306,6 +278,6 @@ We support 2 main methods of authentication for UAC & UAS.
 
 In terms of representation in the SDP payload.
 
-G729, G729a (and G729c):
-number in m= line: 18 a=rtpmap:18 G729/8000 a=fmtp:18 annexb=no (or not present) G729b
-number in m= line: 18 a=rtpmap:18 G729/8000 a=fmtp:18 annexb=yes G729d 
+ &#x25cf; G729, G729a (and G729c):
+ &#x25cf; number in m= line: 18 a=rtpmap:18 G729/8000 a=fmtp:18 annexb=no (or not present) G729b
+ &#x25cf; number in m= line: 18 a=rtpmap:18 G729/8000 a=fmtp:18 annexb=yes G729d 
