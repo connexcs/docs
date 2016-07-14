@@ -253,7 +253,7 @@ Mass Payment is a bulk payment method that allows funds to be sent by uploading 
 
 As there is no direct involvement with the switch when sending this payment we need to use a different strategy to receive notifications about this payments, for that we can link in to PayPal's IPN.
 
-<h2>Detailed Feature List</h2>
+<h2><a href="http://connexcs-user-docs.readthedocs.io/en/latest/feature-list">Detailed Feature List</a></h2>
 
 <h4>Detailed Features - ConnexCS</h4>
 
