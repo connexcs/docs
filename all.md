@@ -279,5 +279,7 @@ We support 2 main methods of authentication for UAC & UAS.
 In terms of representation in the SDP payload.
 
  &#x25cf; G729, G729a (and G729c):
+ 
  &#x25cf; number in m= line: 18 a=rtpmap:18 G729/8000 a=fmtp:18 annexb=no (or not present) G729b
+ 
  &#x25cf; number in m= line: 18 a=rtpmap:18 G729/8000 a=fmtp:18 annexb=yes G729d 
