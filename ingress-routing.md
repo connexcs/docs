@@ -76,7 +76,7 @@ RTP Proxy Modes
 
 When a call is established between customer and provider, there are two ways in which the audio can be set-up.
 <table>
-<tr><td></td>With RTP Proxy<td></td><td>Without RTP Proxy</td></tr>
+<tr><td></td><td>With RTP Proxy</td><td>Without RTP Proxy</td></tr>
 <tr><td>Audio Path</td><td>Indirect</td><td>Direct</td></tr>
 <tr><td>Audio Quality</td><td>Excellent</td><td>Unbeatable</td></tr>
 <tr><td>Latency</td><td>Low</td><td>Lowest</td></tr>
