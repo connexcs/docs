@@ -4,7 +4,7 @@ The Routing class is a helper which gives easy access to the variables associate
 
 It will automatically load the $routing variable and allow safe manipulation 
 
-<b><u>getTechPrefix</u></b>
+<b>getTechPrefix</b>
 
 &#x25cf; PHP
 
