@@ -28,7 +28,7 @@ http://api.connexcs.com/api/[service].[response_format] </code>
 
 Response Format html (default)      
 
-Example
+<b>Example</b>
 
  code:                404
  
@@ -40,8 +40,7 @@ Example
  
  age_days:            11
 
-
-json
+<b>json</b>
 
 {                        
   "code":404,
@@ -55,7 +54,7 @@ json
   "age_days":11
 }
 
-xml
+<b>xml</b>
 
 <?xml version="1.0"?>                        
 
