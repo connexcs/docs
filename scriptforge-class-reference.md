@@ -22,4 +22,3 @@
 
     connex.datastore.set (string key, variant value, integer timeout=3600) returns bool
 
-Lookup
