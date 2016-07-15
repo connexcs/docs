@@ -40,17 +40,22 @@ Go back to your Connex account and go to Setup>>My Account. Under the tab of API
 
 Go back to your Paypal account and go to Profile.Select <b>“My selling tools”</b> from the side menu bar.
 
-Click on the button <b>“Update”</b> beside API accesswhich is under <b>“Selling online”</b> section.
-Click on <b>“Request API Credentials”</b> which is under NVP/SOAP API integration
-Select <b>“Request API signature”</b> and click on Agree and Submit button
+&#x25cf; Click on the button <b>“Update”</b> beside API accesswhich is under <b>“Selling online”</b> section.
+
+&#x25cf; Click on <b>“Request API Credentials”</b> which is under NVP/SOAP API integration
+
+&#x25cf; Select <b>“Request API signature”</b> and click on Agree and Submit button
+
 
 A new page will open which says <b>“View or Remove API signature”</b>. Copy the credentials from there and press <b>“Done”</b>.
 Now, go back to your External API form from your Connex account and add the credential you copied from Paypal account to your Exeternal API form. Press Save when you are done.
 
 #<h4>How to add customer PayPal Email address on ConnexCS customer account?</h4>
 
-Click on Management> Customer> [customer name] > Edit customer
-Enter the PayPal main email address and click save.
-Click on Management> Customer> [customer name] > + under Contact> enter the customer PayPal email id and click save.
+&#x25cf; Click on Management> Customer> [customer name] > Edit customer
 
-With the successful steps above your customer will be able to send/topup their account accordingly.
+&#x25cf; Enter the PayPal main email address and click save.
+
+&#x25cf; Click on Management> Customer> [customer name] > + under Contact> enter the customer PayPal email id and click save.
+
+&#x25cf; With the successful steps above your customer will be able to send/topup their account accordingly.
