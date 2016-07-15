@@ -1,6 +1,6 @@
 <h2>Credit Control</h2>
 
-<h4>Pre-pay / Post Pay</h4>
+<h4><b>Pre-pay / Post Pay</b></h4>
 
 The ConnexCS system does not have a distinct setting to differentiate between Pre and Post pay customers. This is simply determined by the debit limit.
 
