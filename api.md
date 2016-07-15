@@ -31,9 +31,13 @@ Response Format html (default)
 Example
 
  code:                404
+ 
  reason:              Not Found
+ 
  datetime:            1357907962
+ 
  age:                 970150
+ 
  age_days:            11
 
 
@@ -41,20 +45,30 @@ json
 
 {                        
   "code":404,
+ 
   "reason":"Not Found",
+ 
   "datetime":1357907962,
+ 
   "age":970257,
+ 
   "age_days":11
 }
 
 xml
 
 <?xml version="1.0"?>                        
+
 <asrplus>|
+
 "reason":"Not Found",
+
 <datetime>1357907962</datetime>
+
 <age>969167</age>
+
 <age_days>11</age_days>
+
 </asrplus>
 
 #<h4>Error Responses</h4>
