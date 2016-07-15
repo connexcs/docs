@@ -20,20 +20,20 @@ This will impose a limit on how many channels are allowed through this ingress r
 
 Dial string will let only the entered prefixes through, listed as one per line. Note: Both prefix and regular expressions are allowed, for example, if you only wanted to allow UK Landline you could use
 
-<h4><b>Prefix</b></h4>
+<h4>Prefix</h4>
 
-1. 441
-2. 442
+ 1. 441
+ 2. 442
 
-<h4><b>Regular Expression (RegEx)</b></h4>
+<h4>Regular Expression (RegEx)</h4>
 
 44(1|2)
 
-<h4><b>Combination (UK Landline & Canada)</b></h4>
+ <h4>Combination (UK Landline & Canada)</h4>
 
-441
-442
-^1(204|226|236|249|250|289|306|343|403|416|418|438|450|506|514|519|579|581|587|604|613|647|705|709|778|780|807|819|867|902|905)
+ 441
+ 442
+ ^1(204|226|236|249|250|289|306|343|403|416|418|438|450|506|514|519|579|581|587|604|613|647|705|709|778|780|807|819|867|902|905)
 
 <h4><b>Missing BYE Protection</b></h4>
 
