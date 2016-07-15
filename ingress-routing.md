@@ -45,11 +45,11 @@ In the event that a BYE gets missed, the Maximum Duration will be the maximum am
 
 <h4><b>Time-out Methods</b></h4>
 
-&#x25cf; <b>SIP Ping</b>
+&#x25cf; SIP Ping
 
 This sends a SIP packet to the remote end of the conversation roughly every 30 seconds. This helps to check if the other side is still aware of an ongoing conversation. If this is not received back, or is told that the conversation is not active then it shuts off the call.
 
-&#x25cf; <b>RTP Time-out</b>
+&#x25cf; RTP Time-out
 
 Another way to check for an active call is to detect if there is audio passing. If there is no audio passing for a pre-set interval, our RTP array will notify the switch and instruct it to terminate the call.
 
