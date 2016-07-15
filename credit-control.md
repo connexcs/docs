@@ -13,7 +13,7 @@ The debit limit is a value, in denominations of the customer’s currency, which
 <b>Pre Pay with Credit Buffer</b> - Set the debit limit to the NEGATIVE of your buffer value. E.g If you want a float/buffer value in your customer’s account of $5.00, meaning the account will stop dialing when your customer only has $5.00 left in their account you will set the debit limit to -$5.00
 
  
-<h4>Automatic Cut Off (Is it Real time?)</h4>
+<h4><b>Automatic Cut Off (Is it Real time?)</b></h4>
 
 1. Is the automatic cut off real-time.
 2. Partly
