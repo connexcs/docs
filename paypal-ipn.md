@@ -1,12 +1,12 @@
-<h1>Mass Payments with Paypal IPN</h1>
+<h2>Mass Payments with Paypal IPN</h2>
 
-#<h2>Mass Payments</h2>
+#<h4>Mass Payments</h4>
 
 Mass Payment is a bulk payment method that allows funds to be sent by uploading a file to the Paypal site and allows the sender to pay the fee's. Usually lower than standard PayPal sending fee's.
 
 As there is no direct involvement with the switch when sending this payment we need to use a different strategy to receive notifications about this payments, for that we can link in to PayPal's IPN.
 
-#<h2>What is PayPal IPN?</h2>
+#<h4>What is PayPal IPN?</h4>
 
 Instant Payment Notification (IPN) is a message service that notifies you of events related to PayPal transactions. You can use IPN messages to automate back-office and administrative functions such as to top up your customer account. The customer just needs to follow the standard PayPal send money method to make payment.
 
@@ -22,7 +22,7 @@ Login to your Connex account and from the left menu select <b>“Setup”</b>.
 Switch to the <b>“API”</b> tab and click on <b>“PayPal IPN”</b>.
 Fill in your settings and copy the URL written beside <b>“IPN URL”</b>.
 
-#<h2>Inserting the IPN URL in your PayPal account:</h2>
+#<h4>Inserting the IPN URL in your PayPal account:</h4>
 
 Login to your Paypal Business  Account and choose Profile. 
 
@@ -34,7 +34,7 @@ Drag down and select“Update” which is beside “Instant payment notification
 Select <b>“Choose IPN Settings”</b>
 Enter the URL you copied from Connex Account under the Notification URL and click <b>“Save”</b>. fill in the settings & copy the API URL.
 
-#<h2>Inserting credentials in your Connex Account:</h2>
+#<h4>Inserting credentials in your Connex Account:</h4>
 
 Go back to your Connex account and go to Setup>>My Account. Under the tab of API, select <b>“Add New”</b>.  A new form will open.
 
@@ -47,7 +47,7 @@ Select <b>“Request API signature”</b> and click on Agree and Submit button
 A new page will open which says <b>“View or Remove API signature”</b>. Copy the credentials from there and press <b>“Done”</b>.
 Now, go back to your External API form from your Connex account and add the credential you copied from Paypal account to your Exeternal API form. Press Save when you are done.
 
-#<h2>How to add customer PayPal Email address on ConnexCS customer account?</h2>
+#<h4>How to add customer PayPal Email address on ConnexCS customer account?</h4>
 
 Click on Management> Customer> [customer name] > Edit customer
 Enter the PayPal main email address and click save.
