@@ -102,7 +102,7 @@ You could not use an RTP Proxy if:
 
 <h4><b>Options:-</b></h4>
 
-<b>RTP Media Proxy</b>
+&#x25cf; RTP Media Proxy
 
 Selection of which (if any RTP Proxy you want engaged).
 
