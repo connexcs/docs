@@ -1,24 +1,25 @@
 <h2>ScriptForge Class Reference</h2>
 
-    Datastore
-    get
-    PHP
+#<h4>Datastore</h4>
+
+&#x25cf; get
+
+    &#x25cf; PHP
 
     Connex_Datastore::get (string key) returns variant
 
-    Javascript
+&#x25cf; Javascript
 
     connex.datastore.get (string key) returns variant
 
-    set
-    PHP
+&#x25cf; set
+
+    &#x25cf; PHP
 
     Connex_Datastore::set (string key, variant value, integer timeout=3600) returns bool
 
-    Javascript
+    &#x25cf; Javascript
 
     connex.datastore.set (string key, variant value, integer timeout=3600) returns bool
 
-     
-
-    Lookup
+Lookup
