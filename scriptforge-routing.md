@@ -4,7 +4,7 @@ The Routing class is a helper which gives easy access to the variables associate
 
 It will automatically load the $routing variable and allow safe manipulation 
 
-<b>getTechPrefix</b>
+<b><u>getTechPrefix</u></b>
 
 &#x25cf; PHP
 
@@ -30,7 +30,7 @@ connex.routing.getToNumber () returns string
 
 Connex_Routing::getCallId () returns string
 
-Javascript
+&#x25cf; Javascript
 
 connex.routing.getCallId () returns string
 
