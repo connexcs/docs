@@ -8,7 +8,7 @@ In terms of representation in the SDP payload.
 2. a=rtpmap:18 G729/8000
 3. a=fmtp:18 annexb=no (or not present)
 
-&#x25cf;G729b
+&#x25cf; G729b
 
 1. number in m= line: 18
 2. a=rtpmap:18 G729/8000
