@@ -3,6 +3,7 @@
 The ScriptForge allows you to write your own application which can be run at specific events in the system, currently the following places support scripting functionality:
 
 &#x25cf; Routing Engine (runs in line the call setup process)
+
 &#x25cf; Post Billing (runs after billing has taken place)
 
 Requests to your application are processed via a messaging bus and will be queued if your application can not process them fast enough. If you run your application in the routing engine you must ensure that it can complete quickly so as not to induce high PDD.
