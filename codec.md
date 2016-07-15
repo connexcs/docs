@@ -2,37 +2,37 @@
 
 In terms of representation in the SDP payload.
 
-&#x25cf; G729, G729a (and G729c):
+&#x25cf; <b>G729, G729a (and G729c):</b>
 
 1. number in m= line: 18
 2. a=rtpmap:18 G729/8000
 3. a=fmtp:18 annexb=no (or not present)
 
-&#x25cf; G729b
+&#x25cf; <b>G729b</b>
 
 1. number in m= line: 18
 2. a=rtpmap:18 G729/8000
 3. a=fmtp:18 annexb=yes
 
-&#x25cf; G729d
+&#x25cf; <b>G729d</b>
 
 1. number in m= line: n (dynamic)
 2. a=rtpmap:n G729D/8000
 3. a=fmtp:n annexb=no (or not present)
 
-&#x25cf; G729e
+&#x25cf; <b>G729e</b>
 
 1. number in m= line: n (dynamic)
 2. a=rtpmap:n G729E/8000
 3. a=fmtp:n annexb=no (or not present)
 
-&#x25cf; G729f
+&#x25cf; <b>G729f</b>
 
 1. number in m= line: n (dynamic)
 2. a=rtpmap:n G729D/8000
 3. a=fmtp:n annexb=yes
 
-&#x25cf;  G729g
+&#x25cf; <b>G729g</b>
 
 1. number in m= line: n (dynamic)
 2. a=rtpmap:n G729E/8000
