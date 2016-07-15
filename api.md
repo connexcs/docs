@@ -52,7 +52,7 @@ Response Format html (default)
    "age":970257,
  
    "age_days":11
-}
+ }
 
 <b>xml</b>
 
@@ -75,15 +75,10 @@ Response Format html (default)
 Error responses will be nested within the error key for all outputs, these are usually returned with a HTTP fail code as well
 
 {
-
 "error": {
- 
       "code":400, 
- 
-      "reason":"Missing Required Parameter 'number'"
- 
+     "reason":"Missing Required Parameter 'number'"
   }
-
 }
 
 #<h4>Getting Started</h4>
