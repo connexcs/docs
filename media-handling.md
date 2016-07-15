@@ -12,11 +12,14 @@ It is important to us that media streams never suffer avoidable packet loss or l
 
 Although it may seem logical to have both of these running together, it’s actually counter intuitive. Servers processing billions of ephemeral media packets put different stresses on a system than what is required for processing SIP packets. Isolating these gives us the following benefits:
 
-Flexibility for the customer to relay media in different zones.
+&#x25cf; Flexibility for the customer to relay media in different zones.
+
    If your customer and your provider are in the UK but your server is in the USA, you should not  have to bring the audio back to the USA when we have a local media zone
 
-Extra dimension of scaling capabilities.
+&#x25cf; Extra dimension of scaling capabilities.
+
    Separating the two allows us to scale the CPS and Media throughputs independently.
 
-Sharing of Media Servers
-    Allowing multiple customers to share media servers also adds the advantage of reducing hops if multiple parts of the route use go through customers of ConnexCS.
+&#x25cf; Sharing of Media Servers
+
+   Allowing multiple customers to share media servers also adds the advantage of reducing hops if multiple parts of the route use go through customers of ConnexCS.
