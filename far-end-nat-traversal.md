@@ -20,4 +20,4 @@ This is required if your UA (User Agent) or your NAT does not rewrite the SIP pa
 
 &#x25cf; Tests if client has a private IP address (as defined by RFC1918) in the top Via field of the SIP message.
 
-&#x25cf; Tests if client has contacted ConnexCS from an address that is different from the one in the Contact field. Only IP is compared             by this test.
+&#x25cf; Tests if client has contacted ConnexCS from an address that is different from the one in the Contact field. Only IP is compared by this test.
