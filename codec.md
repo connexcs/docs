@@ -40,5 +40,6 @@ In terms of representation in the SDP payload.
 
 Ref: 
 
-http://stackoverflow.com/questions/24136765/ambiguity-in-g729-annexes
-https://en.wikipedia.org/wiki/G.729
+1. http://stackoverflow.com/questions/24136765/ambiguity-in-g729-annexes
+
+2. https://en.wikipedia.org/wiki/G.729
