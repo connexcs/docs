@@ -1,4 +1,4 @@
-<h2>SBC or Class 4 Softswitch</h2
+<h2>SBC or Class 4 Softswitch</h2>
 
 <h4>SBC or Class 4 Softswitch?</h4>
 
