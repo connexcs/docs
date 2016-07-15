@@ -3,26 +3,30 @@
 The Routing class is a helper which gives easy access to the variables associated with routing.
 
 It will automatically load the $routing variable and allow safe manipulation 
-getTechPrefix
-PHP
+
+<b>getTechPrefix</b>
+
+&#x25cf; PHP
 
 Connex_Routing::getTechPrefix () returns string
 
-Javascript
+&#x25cf; Javascript
 
 connex.routing.getTechPrefix () returns string
 
-getToNumber
-PHP
+<b>getToNumber</b>
+
+&#x25cf; PHP
 
 Connex_Routing::getToNumber () returns string
 
-Javascript
+&#x25cf; Javascript
 
 connex.routing.getToNumber () returns string
 
-getCallId
-PHP
+<b>getCallId</b>
+
+&#x25cf; PHP
 
 Connex_Routing::getCallId () returns string
 
@@ -30,101 +34,112 @@ Javascript
 
 connex.routing.getCallId () returns string
 
-getSwitch
-PHP
+<b>getSwitch</b>
+
+&#x25cf; PHP
 
 Connex_Routing::getSwitch () returns string
 
-Javascript
+&#x25cf; Javascript
 
 connex.routing.getSwitch () returns string
 
-getFromIp
-PHP
+<b>getFromIp</b>
+
+&#x25cf; PHP
 
 Connex_Routing::getFromIp () returns string
 
-Javascript
+&#x25cf; Javascript
 
 connex.routing.getFromIp () returns string
 
-getTimeout
-PHP
+<b>getTimeout</b>
+
+&#x25cf; PHP
 
 Connex_Routing::getTimeout () returns string
 
-Javascript
+&#x25cf; Javascript
 
 connex.routing.getTimeout () returns string
 
-getRTP
-PHP
+<b>getRTP</b>
+
+&#x25cf; PHP
 
 Connex_Routing::getRTP () returns string
 
-Javascript
+&#x25cf; Javascript
 
 connex.routing.getRTP () returns string
 
-getMaxDuration
-PHP
+<b>getMaxDuration</b>
+
+&#x25cf; PHP
 
 Connex_Routing::getMaxDuration () returns string
 
-Javascript
+&#x25cf; Javascript
 
 connex.routing.getMaxDuration () returns string
 
-setMaxDuration
-PHP
+<b>setMaxDuration</b>
+
+&#x25cf; PHP
 
 Connex_Routing::setMaxDuration (int duration) returns void
 
-Javascript
+&#x25cf; Javascript
 
 connex.routing.setMaxDuration (int duration) returns void
 
-getDirection
-PHP
+<b>getDirection</b>
+
+&#x25cf; PHP
 
 Connex_Routing::getDirection () returns string
 
-Javascript
+&#x25cf; Javascript
 
 connex.routing.getDirection () returns string
 
-setSIPCode
-PHP
+<b>setSIPCode</b>
+
+&#x25cf; PHP
 
 Connex_Routing::setSIPCode (int code) returns void
 
-Javascript
+&#x25cf; Javascript
 
 connex.routing.setSIPCode (int code) returns void
 
-setSIPReason
-PHP
+<b>setSIPReason</b>
+
+&#x25cf; PHP
 
 Connex_Routing::setSIPReason (string reason) returns void
 
-Javascript
+&#x25cf; Javascript
 
 connex.routing.setSIPReason (string reason) returns void
 
-getCardId
-PHP
+<b>getCardId</b>
+
+&#x25cf; PHP
 
 Connex_Routing::getCardId () returns string
 
-Javascript
+&#x25cf; Javascript
 
 connex.routing.getCardId () returns string
 
-setCardId
-PHP
+<b>setCardId</b>
+
+&#x25cf; PHP
 
 Connex_Routing::setCardId (string card_id) returns void
 
-Javascript
+&#x25cf; Javascript
 
 connex.routing.setCardId (string card_id) returns void
