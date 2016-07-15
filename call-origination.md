@@ -1,12 +1,13 @@
 <h2>Call Orgination</h2>
 
-Dial
-Service Based Call Origination for Dialler Applications
-API URL
+<b>Dial</b>
+<b>Service Based Call Origination for Dialler Applications</b>
+<b>API URL</b>
 
 http://api.connexcs.com/api/dial/dial.[response_format]?trunk=[hostname/ip]&number=[number]&cli=[cli]
 
-Request Parameters
+<h4>Request Parameters</h4>
+
 Param 	Description
 trunk 	Destination of outbound gateway to be dialled, (Hostname or IP Address)
 cli 	CLI/ANI to be presented
@@ -31,6 +32,7 @@ msg_key_[?] 	URL of message to be played when IVR key is pressed
 msg_all 	URL of message to be played when call is answered
 msg_human 	URL of message to be played when AMD detects human
 msg_machine 	URL of message to be played when AMD detects machine
-Response Parameters
+
+<h4>Response Parameters</h4>
 Param 	Example 	Description
 calls 	Array 	Array containing each number dialled and success/fail
