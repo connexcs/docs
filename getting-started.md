@@ -2,31 +2,31 @@
 
 Initial set-up, will configure a single carrier, single customer and single rate card.
 
-#Prerequisites
+#<h4><b>Prerequisites</b></h4>
 
 This guide will assume that you have already created an account with ConnexCS.com . and you are able to login successfully.
 
-#<h2>Customer</h2>
+#<h4><b>Customer</b></h4>
 
 1. Customer Name
 2. Switch IP Address or Username / Password
 3. Credit / Debit Limit
 
-#<h2>Carrier</h2>
+#<h4><b>Carrier</b></h4>
 
 1. Carrier Name
 2. Switch IP Address
 
-#<h2>Rate Card</h2>
+#<h4><b>Rate Card</b></h4>
 
 1. Full Rate Card or List of Codes
 2. Profit Margin
 
-#<h2>Video Guide</h2>
+#<h4><b>Video Guide</b></h4>
 
 To view a video guide of the basic setup please see here.
 
-#<h2>Create a Customer</h2>
+#<h4><b>Create a Customer</b></h4>
 
 From control panel, you can modify customers by clicking on the Customer tab. Here, you can perform the following actions:
 
@@ -36,7 +36,7 @@ From control panel, you can modify customers by clicking on the Customer tab. He
 4. Filter Customers
 5. Search Customers
 
-#<h2>Add Customer</h2>
+#<h4><b>Add Customer</b></h4>
 
 Users can add customers by following the simple procedure.
 
@@ -50,28 +50,29 @@ Following figure shows the details of the modal window opened to add a new custo
 
 Brief description of the fields present in above dialog box is as follows:
 
-Customer Name: Users will add the name of the customer.
+<b>Customer Name:</b> Users will add the name of the customer.
 
-Paypal Email: Users will add Paypal Email of the customers in the text field.
+<b>Paypal Email:</b> Users will add Paypal Email of the customers in the text field.
 
-Website: Users will add website of the customer.
+<b>Website:</b> Users will add website of the customer.
 
-Status:	Users canchoose the “Status” of the customer as:
-	• Active
-	• Inactive
-	• Pending Approval
+<b>Status:</b>	Users canchoose the “Status” of the customer as:
 
-Debit Limit: “Debit Limit” will be added by the user.
+1. Active
+2. Inactive
+3. Pending Approval
 
-Tax: “Tax” in percentage will also be added by the user.
+<b>Debit Limit:</b> “Debit Limit” will be added by the user.
 
-Currency: “Currency”will also be selected from the dropdown menu.
+<b>Tax:</b> “Tax” in percentage will also be added by the user.
 
-Portal Access: Users will select the “Portal Access” from the options either Yes or No.
+<b>Currency:</b> “Currency”will also be selected from the dropdown menu.
 
-Address: “Address” of the customers will be filled out by the user. 
+<b>Portal Access:</b> Users will select the “Portal Access” from the options either Yes or No.
 
-#Edit Customers
+<b>Address:</b> “Address” of the customers will be filled out by the user. 
+
+#<h4><b>Edit Customers</b></h4>
 
 For a saved customer;
 
@@ -81,7 +82,7 @@ For a saved customer;
 
 <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/customer-dashboard.png" alt="Customer-Dashboard"/>
 
-#Delete Customers
+#<h4><b>Delete Customers</b></h4>
 
 Details of a customer can also be deleted by following below steps:
 
@@ -90,7 +91,7 @@ Details of a customer can also be deleted by following below steps:
 
 <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/add-Customer1.png" alt="Add-Customer1"/>
 
-#Filter Customers
+#<h4><b>Filter Customers</b></h4>
 
 Users can filter the customers as per their current status.
 
@@ -100,17 +101,17 @@ Users can filter the customers as per their current status.
 
 <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/customer-status.png" alt="Customer-Status"/>
 
-#Search Customers
+#<h4><b>Search Customers</b></h4>
 
 The customers that are already saved, can be searched from the search bar.
 
-#Carrier Management
+#<h4><b>Carrier Management</b></h4>
 
 On the Dashboard, click on the Carrier icon in middle of page or you can click on “Management” from the side bar and select “Carrier”.
 
 <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-list.png" alt="Carrier-List"/>
 
-#Add a New Carrier
+#<h4><b>Add a New Carrier</b></h4>
 
 <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/add-carriers.png" alt="Add-Carrier"/>
 
@@ -126,61 +127,61 @@ Following figure shows the dialog box for adding the Carrier:
 
 The brief description of fields present in the above form, is given below:
 
-Carrier Name    :	Users will add the “Customer Name” in the name text field.
+<b>Carrier Name:</b> Users will add the “Customer Name” in the name text field.
 
-Channels        :	Users will add the “Channels” in the digits, only.
+<b>Channels:</b> Users will add the “Channels” in the digits, only.
 
-CPS             :	Users will add the “CPS” in the text field but in digits, only.
+<b>CPS:</b> Users will add the “CPS” in the text field but in digits, only.
 
-PayPal Email    :	Users will add the “PayPal Email” of the Carrier.
+<b>PayPal Email:</b> Users will add the “PayPal Email” of the Carrier.
 
-Website         :	“Website” shall also be added by the users.
+<b>Website:</b> “Website” shall also be added by the users.
 
-Portal URL      :	Portal URL shall be added by the users in the given text field.
+<b>Portal URL:</b> Portal URL shall be added by the users in the given text field.
 
-Portal Username :	“Portal Username” shall also be written in the text field by the user.
+<b>Portal Username:</b> “Portal Username” shall also be written in the text field by the user.
 
-Portal Password	: “Portal Password” will also be a requirement. 
+<b>Portal Password:</b> “Portal Password” will also be a requirement. 
 
-Portal Access   :	Users will select the “Portal Access” option from dropdown menu either as Yes or No.
+<b>Portal Access:</b> Users will select the “Portal Access” option from dropdown menu either as Yes or No.
 
-Status          : Users will set/select the “Status” of the Carrier. Status dropdown menu options are:
-                  •	Active
-                  •	Inactive
-                  •	Pending Approval
+<b>Status:</b> Users will set/select the “Status” of the Carrier. Status dropdown menu options are:
 
+1. Active
+2. Inactive
+3. Pending Approval
 
-Currency        :	Users will set the “Currency” from the dropdown menu options.
+<b>Currency:</b> Users will set the “Currency” from the dropdown menu options.
 
-Address         :	Users will write the “Address” of the Carrier. Users will add two addresses with country and postcode.
+<b>Address:</b> Users will write the “Address” of the Carrier. Users will add two addresses with country and postcode.
 
-Pre Ring Timeout and Post Ring Timeout: 	Users will set the “Pre Ring Timeout” and “Post Ring Timeout” in the given text fields.
+<b>Pre Ring Timeout and Post Ring Timeout:</b> Users will set the “Pre Ring Timeout” and “Post Ring Timeout” in the given text fields.
 
 <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carriers-sorting.png" alt="Carriers-Sorting"/>
 
 Users can also check/filter the status of the Carriers. 
 
-1.	Click on the button named Active.
-2.	Select an option from the dropdown menu.
-3.	Results will show up according to the selected option.
+1. Click on the button named Active.
+2. Select an option from the dropdown menu.
+3. Results will show up according to the selected option.
 
-#Searching Carrier
+#<h4><b>Searching Carrier</b></h4>
 
 Users can search anything about a Carrier by writing the query in the Search text field.
 
-Customizing The View
+<h4><b>Customizing The View</b></h4>
 
 <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carriers.png" alt="Carriers"/>
 
 You can customize the view of your Carriers page and select the columns which you want to view, only.
 On the extreme right, click on the menu button, and check the columns you want to view.
 
-#Edit Carrier
+#<h4><b>Edit Carrier</b></h4>
 
 In order to edit a Carrier, select a Carrier from the list. A new page will open. Follow the procedure given below:
 
-1.	Press the “Edit Carrier” button.
-2.	Edit the details and press “Save” button.
+1. Press the “Edit Carrier” button.
+2. Edit the details and press “Save” button.
 
 Following figure demonstrates the Edit Carrier button:
 
