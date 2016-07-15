@@ -38,7 +38,7 @@ In terms of representation in the SDP payload.
 2. a=rtpmap:n G729E/8000
 3. a=fmtp:n annexb=yes
 
-Ref: 
+<b>Ref: </b>
 
 1. http://stackoverflow.com/questions/24136765/ambiguity-in-g729-annexes
 
