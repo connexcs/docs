@@ -77,7 +77,7 @@ Brief description of the fields present in above dialog box is as follows:
 For a saved customer;
 
 1. Click on the name of that particular customer, you wish to edit the details for.
-2. 2. Click on “Edit Customer” button.
+2. Click on “Edit Customer” button.
 3. Edit the details and then Save.
 
 <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/customer-dashboard.png" alt="Customer-Dashboard"/>
