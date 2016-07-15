@@ -8,23 +8,23 @@ In this documentation we will refer to variables that you will replace with your
 
 Our API uses RESTful HTTP request. Requests can be made by passing POST or GET variables to service URL's, we will reply to you using JSON, XML or standard HTML for debugging purposes.
 
-#<h4>Latency</h4>
+#<h4><b>Latency</b></h4>
 
 Our system is designed to always be on, highly available and in the near future distributed. We hope to achieve less than 100ms round trip time for all queries. But we are still young and only want to deploy to data centres where our customers are. So if you feel that the latency between us is too great, let us know and we might be able to replicate closer to you.
 
-#<h4>Requests Per Second</h4>
+#<h4><b>Requests Per Second</b></h4>
 
 Our API's are optimized to work at various speeds, for example ASRPlus and Rate Card Queries are designed to return at < 1ms internally. Other queries such as CDR requests work on best efforts (which we still hope to be pretty quick).
 
 Your account will be limited by volume and throughput to ensure quality of service for everyone. Volume users please enquire with us so we can arrange an account which will reflect the quality that you require.
 
-#<h4>API URL</h4>
+#<h4><b>API URL</b></h4>
 
 You can access our API at the following address
 
 http://api.connexcs.com/api/[service].[response_format] </code>
 
-#<h4>Reply Formats</h4>
+#<h4><b>Reply Formats</b></h4>
 
 Response Format html (default)      
 
@@ -75,10 +75,15 @@ Response Format html (default)
 Error responses will be nested within the error key for all outputs, these are usually returned with a HTTP fail code as well
 
 {
+
 "error": {
+ 
       "code":400, 
+ 
       "reason":"Missing Required Parameter 'number'"
+ 
   }
+
 }
 
 #<h4>Getting Started</h4>
