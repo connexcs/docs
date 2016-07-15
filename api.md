@@ -43,16 +43,15 @@ Response Format html (default)
 <b>json</b>
 
 {                        
-  "code":404,
+   "code":404,
  
-  "reason":"Not Found",
+   "reason":"Not Found",
  
-  "datetime":1357907962,
+   "datetime":1357907962,
  
-  "age":970257,
+   "age":970257,
  
-  "age_days":11
-
+   "age_days":11
 }
 
 <b>xml</b>
