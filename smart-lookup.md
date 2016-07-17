@@ -36,10 +36,15 @@ http://api.connexcs.com/api/lookup/smart.[response_format]?number[]=44123456789,
 Responses will be nested in the number type then the lookup type, for example if we queried the numbers 123456789 and 987654321 with asrplus and range we may get a result in the following structure
 
 &#x25cf; 123456789
+
 &#x25cf; asrplus {...}
+
 &#x25cf; range {...}
+
 &#x25cf; 987654321
+
 &#x25cf; asrplus {...}
+
 &#x25cf; range {...}
 
 <h4>ASRPlus</h4>
