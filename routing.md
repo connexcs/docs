@@ -1,10 +1,8 @@
 <h2>Routing</h2>
 
-<h1>Image missing</h1>
-
 Routing in ConnexCS Cloudswitch happens in the following stages
 
-#<h4>call flow</h4>
+<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/call-flow.jpg" alt="Call-Flow"/>
 
 &#x25cf; Incoming call is identified as belonging to a customer, this is checked by source IP or User/Pass Authentication
 
