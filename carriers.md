@@ -73,7 +73,7 @@ Users can also check/filter the status of the Carriers.
 3. Results will show up according to the selected option.
 
 #<h2>Searching Carrier</h2>
-x
+
 Users can search anything about a Carrier by writing the query in the Search text field.
 
 #<h2>Customizing The View</h2>
