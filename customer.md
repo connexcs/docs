@@ -73,4 +73,4 @@ In order to edit a Customer, select a Customer from the list and a new page will
 
 Following figure demonstrates the Edit Customer button:
 
-<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/customer-dashboard.png" alt="Customer-Dashboard"/>
+<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/edit-customer-new.png" alt="Edit-Customer"/>
