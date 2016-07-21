@@ -1,8 +1,12 @@
 <h1>Rate Cards Management</h1>
 
-From the Dashboard, click on the rate card tab in middle of page which or go to the Management on left panel and select Rate Cards.
+Rate Card is one of the most important feature of Connex and managing rate cards is very easy and convenient.
 
-<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/ratecard1.png" alt="ratecard1"/>
+This tutorial will guide how to manage rate cards
+
+From the Dashboard, click on the tab of rate card, highlighted in the centre of the page, and also you can go to the <b>Management</b> and select <b><i>Rate Cards</i></b>.
+
+<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/ratecard-dashboard-new.png" alt="ratecard1"/>
 
 Users can manage the rate cards by performing following actions.
 
@@ -25,7 +29,7 @@ Users can add new provider card at both basic and advanced level.
 
 <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/ratecard.png" alt="ratecard"/>
 
-#<h3>Advanced level:</h3>
+#<h3>At Advanced level:</h3>
 
 Users will fill out the following text fields:
 
@@ -41,7 +45,7 @@ Users will fill out the following text fields:
 
 #<h2>Uploading a File</h2>
 
-Next to the Add New Provider Card button, there is an “Upload File” button. Click on it and a new page will open.
+Next to the Add New Provider Card button, there is an “Upload File” button. Click on it and a new page will open, showing the files that are already uploaded, if any.
 
 <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/upload-file.png" alt="upload-file"/>
 
