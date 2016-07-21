@@ -1,22 +1,21 @@
-<h1>Customer</h1>
+<h1>Customer Management</h1>
 
-From control panel, you can modify customers by clicking on the Customer tab. Here, you can perform the following actions:
+In Connex, you can create your own Customer and assign them credit, status, channel, last call, ASR, ACD, PDD and CPS to them.
+Managing customers is quite easy with Connex. Follow the procedures given in this tutorial, to learn how to manage customers, efficiently.
 
-<h4><b>&#x25cf; Add Customers</b></h4>
-<h4><b>&#x25cf; Edit Customers</b></h4>
-<h4><b>&#x25cf; Delete Customers</b></h4>
-<h4><b>&#x25cf; Filter Customers</b></h4>
-<h4><b>&#x25cf; Search Customers</b></h4>
+On the Dashboard, click on the tab, highlighted in centre of page, to go to the Customer or you can also click on the Management from the left pane and select “Customer”.
 
-#<h2>Add Customer</h2>
+<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/add-customer.png" alt="Add-Customer"/>
 
-Users can add customers by following the simple procedure.
+#<h2>Adding Customer</h2>
 
-1. Click on the Add Customer button.
-2. Fill out the customer details on the dialog box.
-3. Press Save button to add customers on the list. 
+Users can add new Customers by following the simple procedure.
 
-Following figure shows the details of the modal window opened to add a new customer:
+1. Click on Add Customer button.
+2. Enter the details of the Customer.
+3. Click the Save button, once all the details are entered, properly.
+
+Following figure shows the dialog box for adding the Customer:
 
 <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/add-customer.png" alt="Add-Customer"/>
 
@@ -44,16 +43,6 @@ Brief description of the fields present in above dialog box is as follows:
 
 <b>Address:</b>  “Address” of the customers will be filled out by the user. 
 
-#<h2>Edit Customers</h2>
-
-For a saved customer;
-
-1. Click on the name of that particular customer, you wish to edit the details for.
-2. Click on “Edit Customer” button.
-3. Edit the details and then Save.
-
-<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/customer-dashboard.png" alt="Customer-Dashboard"/>
-
 #<h2>Delete Customers</h2>
 
 Details of a customer can also be deleted by following below steps:
@@ -61,18 +50,27 @@ Details of a customer can also be deleted by following below steps:
 1. Select a customer from the list.
 2. Click on trash icon, to delete the customer.
 
-<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/add-Customer1.png" alt="Add-Customer1"/>
-
-#<h2>Filter Customers</h2>
-
-Users can filter the customers as per their current status.
-
-1. Click the button saying “Active”.
-2. Select an option from the dropdown menu. Either,All, Active, Inactive or Pending Approval.
-3. The list of customers will show up as per the search criteria.
+#<h2>Checking the status</h2>
 
 <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/customer-status.png" alt="Customer-Status"/>
 
-#<h2>Search Customers</h2>
+Users can also check/filter the status of the Customers. 
+
+1.	Click on the button next to the trash bin sign, “Active”.
+2.	Select an option from the dropdown menu, against which you want to filter the customers.
+3.	Results will show up according to the selected option.
+
+#<h2>Searching Customers</h2>
 
 The customers that are already saved, can be searched from the search bar.
+
+#<h2>Edit Customers</h2>
+
+In order to edit a Customer, select a Customer from the list and a new page will open up. Follow the procedure given below to edit a specific customer:
+
+1.	Click the “Edit Customer” button.
+2.	Edit the details and click “Save” button.
+
+Following figure demonstrates the Edit Customer button:
+
+<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/customer-dashboard.png" alt="Customer-Dashboard"/>
