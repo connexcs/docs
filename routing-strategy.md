@@ -1,6 +1,6 @@
 <h1>Routing Strategy</h1>
 
-The Routing Strategy allows you to route calls of different providers through the routing engine according to the routing strategy you set. Routing Strategy is an extremely useful feature which allows you to adopt the best routing strategy for your business.
+The Routing Strategy allows you to route calls of different providers through routing engine according to the routing strategy you set. Routing Strategy is an extremely useful feature which allows you to adopt the routing strategy which suits best to your business need.
 
 #<h2>Types of Routing Strategies</h2>
 
@@ -12,12 +12,13 @@ The Routing Strategy allows you to route calls of different providers through th
 
 On the Dashboard, select Management and choose “Routing Strategy” from the drop down menu.
 
-<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/routing-dashboard.png" alt="routing-dashboard"/>
+<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/routing-dashboard-new.png" alt="routing-dashboard"/>
 
 Users can set and manage their Routing Strategy by:
-  1.	Adding New Routing Strategy.
-  2.	Deleting the Routing Strategy.
-  3.	Edit the Routing Strategy.
+ 
+1. Adding New Routing Strategy.
+2. Deleting the Routing Strategy.
+3. Edit the Routing Strategy.
 
 #<h2>Adding New Routing Strategy</h2>
 
