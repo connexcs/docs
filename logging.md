@@ -2,7 +2,7 @@
 
 From the Dashboard, you can go to Quick Links and click respective logging button, as highlighted in the image below. Or, you can also go to the Management tab from the left panel and click on Logging.
 
-<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/logging-dashboard.png" alt="logging-dashboard"/>
+<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/logging-dashboard-new.png" alt="logging-dashboard"/>
  
 #<h2>Simulating Calls</h2>
 
@@ -54,7 +54,7 @@ User will have to fill all the fields present in the pop-up window.
 
 User can also refresh the lists of logs by clicking on Refresh button, right next to the Look up button. 
 
-<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/attempts.png" alt="attempts"/>
+<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/refresh.png" alt="refresh"/>
  
 #<h2>Searching the Logs</h2>
 
