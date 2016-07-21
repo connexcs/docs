@@ -17,7 +17,7 @@ Users can add new Customers by following the simple procedure.
 
 Following figure shows the dialog box for adding the Customer:
 
-<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/add-customer1.png" alt="Add-Customer"/>
+<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/add-customer-new.png" alt="Add-Customer"/>
 
 Brief description of the fields present in above dialog box is as follows:
 
