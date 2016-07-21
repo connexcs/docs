@@ -5,7 +5,7 @@ Managing customers is quite easy with Connex. Follow the procedures given in thi
 
 On the Dashboard, click on the tab, highlighted in centre of page, to go to the Customer or you can also click on the Management from the left pane and select “Customer”.
 
-<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/add-customer.png" alt="Add-Customer"/>
+<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/customer-dashboard.png" alt="Add-Customer"/>
 
 #<h2>Adding Customer</h2>
 
