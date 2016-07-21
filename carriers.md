@@ -1,6 +1,10 @@
 <h1>Carrier Management</h1>
 
-On the Dashboard, click on the Carrier icon in middle of page or you can click on “Management” from the side bar and select “Carrier”.
+Carriers can be easily and efficiently managed with the help of Connex. It allows you to not only add, edit and delete carriers but also let you view the columns you want to see. 
+
+This tutorial will guide you how to manage carriers.
+
+On the Dashboard, click on the tab. highlighted in the page centre, to go to the Carrier or you can expand the Management tab from the left pane and select “Carrier”.
 
 <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-list.png" alt="Carrier-List"/>
 
@@ -50,6 +54,16 @@ The brief description of fields present in the above form, is given below:
 
 <b>Pre Ring Timeout and Post Ring Timeout:</b> Users will set the “Pre Ring Timeout” and “Post Ring Timeout” in the given text fields.
 
+#<h2>Deleting Carriers</h2>
+
+Users can delete the existing Carriers from the list. 
+
+1. Select the Carrier from the list, by check marking the entire row.
+
+2. Click on the Delete button, i.e. trash icon.
+
+#<h2>Checking The Status</h2>
+
 <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carriers-sorting.png" alt="Carriers-Sorting"/>
 
 Users can also check/filter the status of the Carriers. 
@@ -59,7 +73,7 @@ Users can also check/filter the status of the Carriers.
 3. Results will show up according to the selected option.
 
 #<h2>Searching Carrier</h2>
-
+x
 Users can search anything about a Carrier by writing the query in the Search text field.
 
 #<h2>Customizing The View</h2>
