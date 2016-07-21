@@ -84,5 +84,5 @@ Following figure illustrates these buttons:
 
 <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/other-options.png" alt="other-options"/>
 
-
+User can take any desired action by making use of these options.
 
