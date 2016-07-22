@@ -1,6 +1,6 @@
 <h1>Routing Strategy</h1>
 
-The <b>Routing Strategy.</b> allows you to route calls of different providers through routing engine according to the routing strategy you set. Routing Strategy is an extremely useful feature which allows you to adopt the routing strategy which suits best to your business need.
+The <b>Routing Strategy</b> allows you to route calls of different providers through routing engine according to the routing strategy you set. Routing Strategy is an extremely useful feature which allows you to adopt the routing strategy which suits best to your business need.
 
 #<h2>Types of Routing Strategies</h2>
 
