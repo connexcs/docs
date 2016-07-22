@@ -11,7 +11,9 @@ From the Dashboard, click on the tab of rate card, highlighted in the centre of 
 Users can manage the rate cards by performing following actions.
 
 <b>1.	Adding New Provider Card</b>
+
 <b>2.	Upload File</b>
+
 <b>3.	Deleting the Provider Card</b>
 
 #<h2>Adding New Provider Card</h2>
@@ -20,12 +22,12 @@ Users can manage the rate cards by performing following actions.
 
 Users can add new provider card at both basic and advanced level. 
 
-<h3>Basic level:</h3>
+<h3>At Basic level:</h3>
 
 1. Users can add the Name of provider.
 2. Carrier can be selected from the drop down menu.
 3. User can select a currency.
-4. Finally users will press the Save button. 
+4. Finally users will press the <b>Save</b> button. 
 
 <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/ratecard.png" alt="ratecard"/>
 
@@ -45,12 +47,12 @@ Users will fill out the following text fields:
 
 #<h2>Uploading a File</h2>
 
-Next to the Add New Provider Card button, there is an “Upload File” button. Click on it and a new page will open, showing the files that are already uploaded, if any.
+Next to the <b>Add New Provider Card</b> button, there is an <b>“Upload File”</b> button. Click on it and a new page will open, showing the files that are already uploaded, if any.
 
 <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/upload-file.png" alt="upload-file"/>
 
 Users can upload a file by following these steps:
-1.	Click on Upload file button. 
+1.	Click on <b>Upload</b> file button. 
 2.	Browse a file from the system. 
 3.	Upload it.
 
@@ -59,20 +61,20 @@ Users can upload a file by following these steps:
 Users can delete the Provider cards that were saved earlier. Just follow the below mentioned steps:
 
 1.	Select the Provider Card by check marking the entire row from the list.
-2.	Press the Delete button which is next to the “Upload File” button.
+2.	Press the <b>Delete</b> button which is next to the <b>“Upload File”</b> button.
 
 #<h2>Searching the Provider Rate Cards</h2>
 
-Users can search the “Provider Rate Cards” from the search text field and get the results, instantly. 
+Users can search the <b>“Provider Rate Cards”</b> from the search text field and get the results, instantly. 
 Edit Rate Cards
 
 Users can edit the rate cards saved earlier.  Follow the steps given below:
 
 1.	Select the Provider Card by check marking the entire row from the list.
-2.	Press the Edit Cards button.
+2.	Press the <b>Edit Cards</b> button.
 3.	Edit the Basic or Advanced details.
 
-There are several other buttons also present, other than Edit Cards. They include:
+There are several other buttons also present, other than <b>Edit Cards.</b> They include:
 
 1. Revision
 2. Download CVS 
