@@ -1,13 +1,17 @@
 <h1>Routing Strategy</h1>
 
-The Routing Strategy allows you to route calls of different providers through routing engine according to the routing strategy you set. Routing Strategy is an extremely useful feature which allows you to adopt the routing strategy which suits best to your business need.
+The <b>Routing Strategy.</b> allows you to route calls of different providers through routing engine according to the routing strategy you set. Routing Strategy is an extremely useful feature which allows you to adopt the routing strategy which suits best to your business need.
 
 #<h2>Types of Routing Strategies</h2>
 
   <b>1. LCR</b>– Least Cost Route
+  
   <b>2. Random</b>– Routing calls to any random route without any sequence.
+  
   <b>3. Round Robin</b> - System will pick a route calls according to sequence you selected.
+  
   <b>4. Manual</b> - Manual pick by the selected route.
+  
   <b>5. Reverse LCR</b> – Most Expensive route will be picked first.
 
 On the Dashboard, select <b>Management</b> and choose <b>“Routing Strategy”</b> from the drop down menu.
