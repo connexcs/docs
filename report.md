@@ -1,44 +1,67 @@
-Reports Management
+<h2>Reports Management</h2>
+
 This article will guide how the users can manage the reports section. 
-From the Dashboard,click on the reports icon, highlighted as orange in the Figure 1. Also, users can open the reports from the left pane as follows:
-1.	Click on the Management from the side bar.
+From the <b><i>Dashboard</i></b>,click on the reports icon, highlighted as orange in the <b>Figure 1.</b> Also, users can open the reports from the left pane as follows:
+
+1.	Click on the <b><i>Management</i></b> from the side bar.
+
 2.	Click on the Reports.
-3.	And then click on the Breakout, highlighted as red in the Figure 1.
+
+3.	And then click on the <b><i>Breakout,</i></b> highlighted as red in the <b>Figure 1.</b>
  
 Figure 1
-Breakout
-In the breakout section, users can add multiple customers, providers and destinations. The overall view of the Breakout section is given in Figure 2 for better understanding. 
+
+#<h2>Breakout</h2>
+
+In the <b><i>breakout section</i></b>, users can add multiple customers, providers and destinations. The overall view of the Breakout section is given in <b>Figure 2</b> for better understanding. 
  
 Figure 2
-Selection of Customers, Providers and Destination
+
+<h2>Selection of Customers, Providers and Destination</h2>
+
 Users can manage their report section by selecting the customers, providers and destination at the same time.
-•	By checking the options from the drop down menu,enable the users to select the option of their choice, as shown in Figure 3. 
-•	Users can also uncheck any of them from the options. 
-•	Users can also Select All the options or Select None for all options. And Search text field is also provided. 
+
+&#x25cf; By checking the options from the drop down menu,enable the users to select the option of their choice, as shown in <b>Figure 3.</b> 
+&#x25cf; Users can also uncheck any of them from the options. 
+&#x25cf; Users can also <b>Select All</b> the options or <b>Select None</b> for all options. And Search text field is also provided. 
  
 Figure 3
-Selecting Multiple Customers
+
+#<h2>Selecting Multiple Customers</h2>
+
 Users can select multiple customers from the drop down menu, where the list of all customers is given.
-1.	Click on Select Multiple Customers field.
+
+1.	Click on <b>Select Multiple Customers</b> field.
 2.	Select the number of customers from the customers list.
  
 Figure 4
-Selecting Multiple Providers
+
+#<h2>Selecting Multiple Providers</h2>
+
 Users can also select multiple providers from the list also.
-1.	Click on Select Multiple Providers field.
+
+1.	Click on <b>Select Multiple Providers</b> field.
 2.	Select the providers from the drop down list.
  
 Figure 5
+
 As from the above image, the lists of the providers are given and users can either select all of them or select any of them.
-Selecting Multiple Destinations
+
+#<h2>Selecting Multiple Destinations</h2>
+
 Users can also select multiple destinations.
-1.	Click on the Select Multiple Destinations.
+
+1.	Click on the <b>Select Multiple Destinations.</b>
 2.	Write the name of the destination and select the desired ones.
-Selecting the Range of Dates
+
+#<h2>Selecting the Range of Dates</h2>
+
 Users can also set the range of the dates from the calendar. 
  
 Figure 6
+
 Users can have multiple choices in setting a date which is applicable on the reports.
+
 1.	Users can apply the Current/Today’s date.
 2.	Users can add the Yesterday’s date.
 3.	Users can add Last 7 day’sdates and range of seven days shall be appeared.
