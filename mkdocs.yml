@@ -8,25 +8,25 @@ pages:
 - Getting Started: getting-started.md
 
 - General:
-	- Authentication: authentication.md
+    - Authentication: authentication.md
 
 - Customers:
-	- Customers: customer.md
-	- Payments: customer-payments.md
-	- Ingress Routing: ingress-routing.md
-	- NAT Traversal: far-end-nat-traversal.md
-	- Credit Control: credit-control.md
-	- Billing: billing.md
+    - Customers: customer.md
+    - Payments: customer-payments.md
+    - Ingress Routing: ingress-routing.md
+    - NAT Traversal: far-end-nat-traversal.md
+    - Credit Control: credit-control.md
+    - Billing: billing.md
  
 - Carriers: carriers.md
 
 - Cards:
-	- Overview: ratecard.md
-	- Generating: rate-card-building.md
+    - Overview: ratecard.md
+    - Generating: rate-card-building.md
 
 - Miscellaneous:
-	- Specification: spec.md
-	- Report: report.md
-	- Routing: routing.md
-	- Routing Engine: routing-engine.md
-	- Limiting: limiting-cps.md	
+    - Specification: spec.md
+    - Report: report.md
+    - Routing: routing.md
+    - Routing Engine: routing-engine.md
+    - Limiting: limiting-cps.md	
