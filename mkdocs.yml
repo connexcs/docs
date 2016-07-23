@@ -1,0 +1,12 @@
+site_name: ConnexCS Documentation
+site_url: http://www.connexcs.com
+site_description: Connex Cloud Softswitch
+site_author: ConnexCS Team
+
+pages:
+- Home: index.md
+- Getting Started:
+    - Getting Started: getting-started.md
+    - Feature List: feature-list.md
+- General:
+    - Authentication: authentication.md
