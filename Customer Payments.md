@@ -1,4 +1,4 @@
-<h2>Mass Payments with Paypal IPN</h2>
+#Mass Payments with Paypal IPN
 
 #<h4>Mass Payments</h4>
 
