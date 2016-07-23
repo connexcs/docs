@@ -1,6 +1,8 @@
-<h2>SBC or Class 4 Softswitch</h2>
+# SBC or Class 4 Softswitch
 
-<h4>SBC or Class 4 Softswitch?</h4>
+ConnexCS is a Class 4 Cloud based Softswitch. It is delivered as a service aka. PaaS (Platform as a Service), it provides a way to deploy a massively scalable distributed system over the globe with minimal technical knowledge.
+
+##SBC, Class 4 Softswitch, Proxy?
 
 We have given it a great deal of thought as to whether to brand our system as a class 4 cloudswitch or a SBC (Session Border Controller). 
 As our platform is delivered OTT (Over The Top), sitting on cloud architecture, the typical Border part of the Session Border Controller is blurred. An SBC is (almost always) a class 4 switch, however a class 4 switch does not have to be a SBC.
