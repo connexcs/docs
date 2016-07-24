@@ -7,9 +7,9 @@
     * [Carrier](#prerequisites-carrier)
     * [Rate Card](#prerequisites-rate-card)
   * [Video Guide](#video-guide)
-    * [Adding Customer & Carrier](#adding-a-customer-&-carrier)
-    * [Uploading Provider Card](#uploading-a-provider-rate-card)
-    * [Manually Create Provider Card](#manually-create-provider-rate-card)
+    * [Adding Customer & Carrier](#adding-a-customer-carrier)
+    * [Uploading Provider Card](#uploading-a-provider-rate-card-and-create-customer-rate-card)
+    * [Manually Create Provider Card](#manually-create-provider-rate-card-and-create-customer-rate-card)
     * [Ingress Routing](#ingress-routing)
   * [Customer](#customer)
     * [Add Customers](#add-customers)
@@ -47,10 +47,10 @@ This guide will assumes:
 2. Profit Margin / Plan for customer prices.
 
 ## Video Guide
-To view a video guide of the basic setup please see here.
+
 **Note: Our control panel interface has been updated, however the video references our old site. Functionality is the same however it may look a little different**
 
-The videos on this page are to show a quick example of how to setup your account. For more details on please refer to our <a title="Getting Started Guide" href="i52-getting-started-guide" rel="nofollow"><strong>Getting Started Guide</strong></a></p>
+The videos on this page are to show a quick example of how to setup your account.
 ### Adding a Customer &amp; Carrier
 <video controls="controls" width="320" height="240"><source src="https://www.connexcs.com/wiki_media/customer_carrier_setup.ogv" type="video/ogg; codecs=&quot;theora, vorbis&quot;" /><source src="https://www.connexcs.com/wiki_media/customer_carrier_setup.webm" type="video/webm" /><source src="https://www.connexcs.com/wiki_media/customer_carrier_setup.mp4" type="video/mp4" />Your browser does not support the HTML5 video.</video>
 ### Uploading a Provider Rate Card (and create Customer Rate Card)
@@ -100,7 +100,7 @@ Details of a customer can also be deleted by following below steps:
 1. Select a customer from the list.
 2. Click on trash icon, to delete the customer.
 
-[add-customer1]
+![alt text][add-customer1]
 
 ### Filter Customers
 Users can filter the customers as per their current status.
@@ -108,7 +108,7 @@ Users can filter the customers as per their current status.
 2. Select an option from the dropdown menu. Either,All, Active, Inactive or Pending Approval.
 3. The list of customers will show up as per the search criteria.
 
-[customer-status]
+![alt text][customer-status]
 
 ### Search Customers
 The customers that are already saved, can be searched from the search bar.
@@ -116,12 +116,12 @@ The customers that are already saved, can be searched from the search bar.
 ## Carriers
 On the Dashboard, click on the Carrier icon in middle of page or you can click on "Management" from the side bar and select "Carrier".
 
-[carrier-list]
+![alt text][carrier-list]
 
 
 ### Add Carriers
 
-[add-carrier]
+![alt text][add-carrier]
 
 Users can add new Carriers by following the simple procedure.
 
@@ -131,7 +131,7 @@ Users can add new Carriers by following the simple procedure.
 
 Following figure shows the dialog box for adding the Carrier:
 
-[carrier-details]
+![alt text][carrier-details]
 
 The brief description of fields present in the above form, is given below:
 
@@ -152,9 +152,10 @@ The brief description of fields present in the above form, is given below:
 * Address: Users will write the "Address" of the Carrier. Users will add two addresses with country and postcode.
 * Pre Ring Timeout and Post Ring Timeout: Users will set the "Pre Ring Timeout" and "Post Ring Timeout" in the given text fields.
 
-[carrier-sorting]
+![alt text][carrier-sorting]
 
-Users can also check/filter the status of the Carriers. 
+Users can also check/filter the status of the Carriers:
+
 1. Click on the button named Active.
 2. Select an option from the dropdown menu.
 3. Results will show up according to the selected option.
@@ -167,16 +168,16 @@ In order to edit a Carrier, select a Carrier from the list. A new page will open
 
 Following figure demonstrates the Edit Carrier button:
 
-[carrier-dashboard]
+![alt text][carrier-dashboard]
 
 ### Searching Carriers
 Users can search anything about a Carrier by writing the query in the Search text field.
 #### Customizing The View
 
-[carriers]
+![alt text][carriers]
 
 You can customize the view of your Carriers page and select the columns which you want to view, only.
-On the extreme right, click on the menu button, and check the columns you want to view.
+On the far right, click on the menu button, and check the columns you want to view.
 
 [add-customer]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/add-customer.png "Add Customer"
 [add-dashboard]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/customer-dashboard.png "Customer Dashboard"
