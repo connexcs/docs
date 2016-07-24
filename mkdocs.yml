@@ -30,3 +30,4 @@ pages:
     - Routing: routing.md
     - Routing Engine: routing-engine.md
     - Limiting: limiting-cps.md
+    - API: api.md

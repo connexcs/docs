@@ -1,29 +1,37 @@
-<h1>Getting Started Guide</h1>
+# Table of Contents
 
+## TOC
+* [Table of Contents](#table-of-contents)
+* [Introduction](#introduction)
+  * [Prerequisites](#prerequisites)
+    * [Customer](#prerequisites-customer)
+    * [Carrier](#prerequisites-carrier)
+    * [Rate Card](#prerequisites-rate-card)
+  * [Video Guide](#video-guide)
+
+# Introduction
 Initial set-up, will configure a single carrier, single customer and single rate card.
 
-#<h4><b>Prerequisites</b></h4>
+## Prerequisites
+This guide will assumes:
+1. You have a modern web browser.
+2. You have a basic understanding of Telecoms (Customers, Provider, etc).
+3. You have already created an account with ConnexCS.com.
 
-This guide will assume that you have already created an account with ConnexCS.com . and you are able to login successfully.
-
-#<h4><b>Customer</b></h4>
-
+### Prerequisites Customer
 1. Customer Name
 2. Switch IP Address or Username / Password
 3. Credit / Debit Limit
 
-#<h4><b>Carrier</b></h4>
-
+### Prerequisites Carrier
 1. Carrier Name
 2. Switch IP Address
 
-#<h4><b>Rate Card</b></h4>
-
+### Prerequisites Rate Card
 1. Full Rate Card or List of Codes
-2. Profit Margin
+2. Profit Margin / Plan for customer prices.
 
-#<h4><b>Video Guide</b></h4>
-
+## Video Guide
 To view a video guide of the basic setup please see here.
 
 #<h4><b>Create a Customer</b></h4>
