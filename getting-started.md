@@ -7,6 +7,10 @@
     * [Carrier](#prerequisites-carrier)
     * [Rate Card](#prerequisites-rate-card)
   * [Video Guide](#video-guide)
+    * [Adding Customer & Carrier](#adding-a-customer-&-carrier)
+    * [Uploading Provider Card](#uploading-a-provider-rate-card)
+    * [Manually Create Provider Card](#manually-create-provider-rate-card)
+    * [Ingress Routing](#ingress-routing)
   * [Customer](#customer)
     * [Add Customers](#add-customers)
     * [Edit Customers](#edit-customers)
@@ -44,6 +48,17 @@ This guide will assumes:
 
 ## Video Guide
 To view a video guide of the basic setup please see here.
+**Note: Our control panel interface has been updated, however the video references our old site. Functionality is the same however it may look a little different**
+
+The videos on this page are to show a quick example of how to setup your account. For more details on please refer to our <a title="Getting Started Guide" href="i52-getting-started-guide" rel="nofollow"><strong>Getting Started Guide</strong></a></p>
+### Adding a Customer &amp; Carrier
+<video controls="controls" width="320" height="240"><source src="https://www.connexcs.com/wiki_media/customer_carrier_setup.ogv" type="video/ogg; codecs=&quot;theora, vorbis&quot;" /><source src="https://www.connexcs.com/wiki_media/customer_carrier_setup.webm" type="video/webm" /><source src="https://www.connexcs.com/wiki_media/customer_carrier_setup.mp4" type="video/mp4" />Your browser does not support the HTML5 video.</video>
+### Uploading a Provider Rate Card (and create Customer Rate Card)
+<video controls="controls" width="320" height="240"><source src="https://www.connexcs.com/wiki_media/upload_rate_card.ogv" type="video/ogg; codecs=&quot;theora, vorbis&quot;" /><source src="https://www.connexcs.com/wiki_media/upload_rate_card.webm" type="video/webm" /><source src="https://www.connexcs.com/wiki_media/upload_rate_card.mp4" type="video/mp4" />Your browser does not support the HTML5 video.</video>
+### Manually Create Provider Rate Card (and create Customer Rate Card)
+<video controls="controls" width="320" height="240"><source src="https://www.connexcs.com/wiki_media/manual_rate_card.ogv" type="video/ogg; codecs=&quot;theora, vorbis&quot;" /><source src="https://www.connexcs.com/wiki_media/manual_rate_card.webm" type="video/webm" /><source src="https://www.connexcs.com/wiki_media/manual_rate_card.mp4" type="video/mp4" />Your browser does not support the HTML5 video.</video>
+### Ingress Routing
+<video controls="controls" width="320" height="240"><source src="https://www.connexcs.com/wiki_media/ingress_routing.ogv" type="video/ogg; codecs=&quot;theora, vorbis&quot;" /><source src="https://www.connexcs.com/wiki_media/ingress_routing.webm" type="video/webm" /><source src="https://www.connexcs.com/wiki_media/ingress_routing.mp4" type="video/mp4" />Your browser does not support the HTML5 video.</video>
 
 ## Customer
 ### Add Customers
