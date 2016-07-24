@@ -55,7 +55,7 @@ Users can add customers by following the simple procedure.
 
 Following figure shows the details of the modal window opened to add a new customer:
 
-<img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/add-customer.png" alt="Add-Customer"/>
+![alt text][add-customer]
 
 Brief description of the fields present in above dialog box is as follows:
 * Customer Name: Users will add the name of the customer.
@@ -160,3 +160,5 @@ Users can search anything about a Carrier by writing the query in the Search tex
 
 You can customize the view of your Carriers page and select the columns which you want to view, only.
 On the extreme right, click on the menu button, and check the columns you want to view.
+
+[add-customer]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/add-customer.png "Add Customer" 
