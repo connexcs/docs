@@ -22,19 +22,21 @@ Dial string will let only the entered prefixes through, listed as one per line. 
 
 <h4>Prefix</h4>
 
- 1. 441
- 2. 442
+```
+441
+442
+```
 
 <h4>Regular Expression (RegEx)</h4>
-
+```
 44(1|2)
-
+```
  <h4>Combination (UK Landline & Canada)</h4>
-
- 441
- 442
- ^1(204|226|236|249|250|289|306|343|403|416|418|438|450|506|514|519|579|581|587|604|613|647|705|709|778|780|807|819|867|902|905)
-
+```
+441
+442
+^1(204|226|236|249|250|289|306|343|403|416|418|438|450|506|514|519|579|581|587|604|613|647|705|709|778|780|807|819|867|902|905)
+```
 <h4><b>Missing BYE Protection</b></h4>
 
 A VoIP call is stateful, however its protocol is stateless. This means that both sides of the conversation have to be told when to finish the call. They do this with a BYE message, if the BYE message goes missing, then the call will continue forever, we have the following preventions put in place to stop this happening.
