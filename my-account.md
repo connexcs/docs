@@ -1,4 +1,4 @@
-<h2>My Account</h2>
+#My Account#
 
 This tutorial will guide you what actions you can perform by being into your account.
 
@@ -26,7 +26,7 @@ These functions include:
 
 Let’s discuss each one of the above in more detail.
 
-#<h2>Configuration</h2>
+## Configuration## 
 
 To add/edit the configuration of an account, click on the Config icon, present on top bar.
 
@@ -36,7 +36,7 @@ This function basically involves two types of information:
 
 2.	General Information
 
-#<h2>Company Information</h2>
+## Company Information## 
 
 To add/edit information, users can click on the pencil icon. In Company’s Information, users have to fill out the following details:
  
@@ -50,7 +50,7 @@ To add/edit information, users can click on the pencil icon. In Company’s Info
 
 After filling all the details, click on Save button.
 
-#<h2>General Information</h2>
+## General Information## 
 
 In General Information, users will fill out the following details:
  
@@ -62,7 +62,7 @@ In General Information, users will fill out the following details:
 
 4.	For security and Add-ons, users can check the box and then they’ll receive emails, every time they login.
 
-#<h2>Personal Information</h2>
+## Personal Information## 
 
  Users can also edit their personal information in Current User section. 
 
@@ -92,7 +92,7 @@ Users can also enable “Two factor Authentication”. For this purpose, click o
 
 5.	And click on Save button, once the addition of details have been completed.
 
-#<h2>Users</h2>
+## Users## 
 
 Users can add other users in this section. Names with their emails shall appear in the Users section. Groups can also be made, consisting of different users. 
 
@@ -110,89 +110,142 @@ The details of the dialog box, to add new users, are as follows:
  
 Users will provide the,
 
-•	Name
+* Name
 
-•	Password
+* Password
 
-•	Role (either as User or Administrator)
+* Role (either as User or Administrator)
 
-•	Email of the user
+* Email of the user
 
 Click on Save button, once the details have been filled out. 
 
 To add new groups to the Users section, click on the ‘+’ sign button and further add the details. 
  
-•	Users will write the name in the given text field.
-•	From other options (Customer, Carrier, Card, Cdr, Log, Report etc.), users select the option from dropdown menu as Select, Allow or Deny and press Save button.
-•	Users can also Delete or Refresh the Users and Groups.
+* Users will write the name in the given text field.
+
+* From other options (Customer, Carrier, Card, Cdr, Log, Report etc.), users select the option from dropdown menu as Select, Allow or Deny and press Save button.
+
+* Users can also Delete or Refresh the Users and Groups.
+
 API (Application Programming Interface)
+
 Users can set the APIs also. The overall view of API section is as follows:
  
 Adding New API
+
 Users can add the new API by:
+
 1.	Click on the Add New button, highlighted as orange.
+
 2.	Select either PayPal or Stripe.
+
 3.	Fill out the details of the dialog box and press Save button.
+
 For PayPal:
  
 1.	Users will add the Username.
+
 2.	Users will select the mode from the dropdown menu options, either as test or live.
+
 3.	Users will add the Email and signatures.
+
 For Stripe:
  
 1.	Users will select the mode from the dropdown menu, either as test or live
+
 2.	Users will write the Public Key and Private Key in the respective text fields.
+
 Users can also:
-•	Refresh and Delete the APIs. 
-•	Edit the information regarding API. Click on the name from the list and edit the details.
+
+* Refresh and Delete the APIs. 
+
+* Edit the information regarding API. Click on the name from the list and edit the details.
+
 Domains
+
 Users can add the domains also. 
  
 To add a new domain, simply:
+
 1.	Click on the ‘+’ icon to add new domain.
+
 2.	Pop-up will show up and add the details of the dialog box.
+
 3.	Click on the Save button.
+
 The details of the dialog box are as follows:
- 
+
 1.	Users will write the Domain in the text field.
+
 2.	Users will select the Carrier Signup and Customer Signup from the dropdown menu options.
+
 3.	Users will set the New Customer Debit Limit.
+
 4.	Users will set the New Customer Status either as Active or Pending Approval.
+
 5.	Users Access Area shall also be selected. (Carrier Portal, CDR, Rate Card, Balance etc.). 
+
 Users can also Refresh or Delete the name of the domains.
+
 Users can also edit the Domains.
+
 1.	Click on the Domains from the list.
+
 2.	Edit the details.
+
 3.	Click on Save button.
+
 Payments
+
 Users can make their payments at any time with such ease. All they have to do is:
+
 1.	Click on the Make Payment button.
+
 2.	Fill out the details of pop-up.
+
 3.	Click on Submit Payment.
  
-•	Select the payment mode.
-•	Select the amount.
+4. Select the payment mode.
+
+5. Select the amount.
+
 Packages
+
 Users can check the packages details from the Users section, where users can also refresh the list of the packages.
  
 Adding New Package
+
 Users can add a new package effortlessly. From the left pane, click on Packages, highlighted as orange in the image given below:
  
 To add a new package:
+
 1.	Click on the Add Package button.
+
 2.	Pop-up will show up and fill out the detail of the dialog box as shown in the image below.
+
 3.	Click Save button.
  
-•	Write Name of the package.
-•	Set the Cost and Quantity.
-•	Users will select the Frequency of the package either as daily, weekly or monthly.
-•	Users can also Refresh the list of the packages and can delete any of them from the trash icon.
-•	Users can also edit the details of the package by pressing any package name from the list and edit the details.
+* Write Name of the package.
+
+* Set the Cost and Quantity.
+
+* Users will select the Frequency of the package either as daily, weekly or monthly.
+
+* Users can also Refresh the list of the packages and can delete any of them from the trash icon.
+
+* Users can also edit the details of the package by pressing any package name from the list and edit the details.
+
 My Servers
+
 Users can check all the lists of the servers and also can refresh them.
+
 1.	Go to the Setup, from the left pane and select My Server.
+
 2.	Click on the All Servers button.
+
 3.	List of servers will show up.
+
 4.	Refresh the lists, if needed, by pressing the Refresh button.
  
 
