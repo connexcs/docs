@@ -26,7 +26,7 @@ These functions include:
 
 Let’s discuss each one of the above in more detail.
 
-##Configuration## 
+##Configuration##
 
 To add/edit the configuration of an account, click on the Config icon, present on top bar.
 
@@ -36,7 +36,7 @@ This function basically involves two types of information:
 
 2.	General Information
 
-##Company Information## 
+##Company Information##
 
 To add/edit information, users can click on the pencil icon. In Company’s Information, users have to fill out the following details:
  
@@ -72,7 +72,7 @@ In General Information, users will fill out the following details:
 
 3.	Click on Save button.
 
-	Users can also change the passwords 
+###Users can also change the passwords###
 
 1.	Click on the Change Password button, as shown in the above image.
 
@@ -80,7 +80,7 @@ In General Information, users will fill out the following details:
 
 Users can also enable “Two factor Authentication”. For this purpose, click on the Two factor Authentication and click on Enable the TFA, as shown in the image below:
  
- ##Users can also edit SMTP Details.##
+##Users can also edit SMTP Details.##
  
 1.	Users will set the Address from which the emails will receive.
 
