@@ -26,7 +26,7 @@ These functions include:
 
 Let’s discuss each one of the above in more detail.
 
- ##Configuration## 
+##Configuration## 
 
 To add/edit the configuration of an account, click on the Config icon, present on top bar.
 
@@ -36,7 +36,7 @@ This function basically involves two types of information:
 
 2.	General Information
 
- ## Company Information ## 
+##Company Information## 
 
 To add/edit information, users can click on the pencil icon. In Company’s Information, users have to fill out the following details:
  
@@ -50,7 +50,7 @@ To add/edit information, users can click on the pencil icon. In Company’s Info
 
 After filling all the details, click on Save button.
 
- ## General Information ## 
+##General Information## 
 
 In General Information, users will fill out the following details:
  
@@ -62,7 +62,7 @@ In General Information, users will fill out the following details:
 
 4.	For security and Add-ons, users can check the box and then they’ll receive emails, every time they login.
 
- ## Personal Information ## 
+##Personal Information## 
 
  Users can also edit their personal information in Current User section. 
 
@@ -80,7 +80,7 @@ In General Information, users will fill out the following details:
 
 Users can also enable “Two factor Authentication”. For this purpose, click on the Two factor Authentication and click on Enable the TFA, as shown in the image below:
  
-	Users can also edit SMTP Details. 
+ ##Users can also edit SMTP Details.##
  
 1.	Users will set the Address from which the emails will receive.
 
@@ -92,7 +92,7 @@ Users can also enable “Two factor Authentication”. For this purpose, click o
 
 5.	And click on Save button, once the addition of details have been completed.
 
- ## Users ## 
+##Users## 
 
 Users can add other users in this section. Names with their emails shall appear in the Users section. Groups can also be made, consisting of different users. 
 
@@ -128,11 +128,11 @@ To add new groups to the Users section, click on the ‘+’ sign button and fur
 
 * Users can also Delete or Refresh the Users and Groups.
 
-API (Application Programming Interface)
+##API (Application Programming Interface)##
 
 Users can set the APIs also. The overall view of API section is as follows:
  
-Adding New API
+###Adding New API###
 
 Users can add the new API by:
 
@@ -142,7 +142,7 @@ Users can add the new API by:
 
 3.	Fill out the details of the dialog box and press Save button.
 
-For PayPal:
+###For PayPal:###
  
 1.	Users will add the Username.
 
@@ -162,7 +162,7 @@ Users can also:
 
 * Edit the information regarding API. Click on the name from the list and edit the details.
 
-Domains
+##Domains##
 
 Users can add the domains also. 
  
@@ -196,7 +196,7 @@ Users can also edit the Domains.
 
 3.	Click on Save button.
 
-Payments
+##Payments##
 
 Users can make their payments at any time with such ease. All they have to do is:
 
@@ -210,11 +210,11 @@ Users can make their payments at any time with such ease. All they have to do is
 
 5. Select the amount.
 
-Packages
+##Packages##
 
 Users can check the packages details from the Users section, where users can also refresh the list of the packages.
  
-Adding New Package
+###Adding New Package###
 
 Users can add a new package effortlessly. From the left pane, click on Packages, highlighted as orange in the image given below:
  
@@ -236,7 +236,7 @@ To add a new package:
 
 * Users can also edit the details of the package by pressing any package name from the list and edit the details.
 
-My Servers
+##My Servers##
 
 Users can check all the lists of the servers and also can refresh them.
 
