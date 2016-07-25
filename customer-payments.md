@@ -1,6 +1,6 @@
 # Mass Payments with Paypal IPN
 
-## Mass Payments</h4>
+## Mass Payments
 
 Mass Payment is a bulk payment method that allows funds to be sent by uploading a file to the Paypal site and allows the sender to pay the fee's. Usually lower than standard PayPal sending fee's.
 
@@ -53,5 +53,5 @@ Now, go back to your External API form from your Connex account and add the cred
 
 * Click on Management> Customer> [customer name] > Edit customer
 * Enter the PayPal main email address and click save.
-* Click on Management> Customer> [customer name] > + under Contact> enter the customer PayPal email id and click save.
+* Click on Management> Customer> [customer name] > + under Contact > enter the customer PayPal email id and click save.
 * With the successful steps above your customer will be able to send/topup their account accordingly.
