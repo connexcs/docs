@@ -47,67 +47,40 @@ If you sell NPA-NXX, but you also have a few flat rates (and cherry picking is a
 
 ### Example 3
 
-<table class="table"><thead><tr><th>Prefix</th>
-<th>Destination</th>
-<th>Cost</th>
-</tr></thead><tbody><tr><td><strong>Provider Rate Card A</strong></td>
-<td> </td>
-<td> </td>
-</tr><tr><td>441</td>
-<td>UK Landline</td>
-<td>0.01</td>
-</tr><tr><td>442</td>
-<td>UK Landline</td>
-<td>0.01</td>
-</tr><tr><td><strong>Provider Rate Card B</strong></td>
-<td> </td>
-<td> </td>
-</tr><tr><td>441</td>
-<td>UK Landline</td>
-<td>0.0075</td>
-</tr><tr><td>442</td>
-<td>UK Landline</td>
-<td>0.0075</td>
-</tr><tr><td><strong>Provider Rate Card C</strong></td>
-<td> </td>
-<td> </td>
-</tr><tr><td>441</td>
-<td>UK Landline</td>
-<td>0.02</td>
-</tr><tr><td>442</td>
-<td>UK Landline</td>
-<td>0.02</td>
-</tr></tbody></table>
 
-<h2><strong>Outputs</strong></h2>
-<p>If we merged all 3 of the above cards, each with a different Rate Compact, we would end up with the following different rate cards.</p>
-<h2><strong>Minimum</strong></h2>
-<table class="table"><thead><tr><th>Prefix</th>
-<th>Destination</th>
-<th>Cost</th>
-</tr></thead><tbody><tr><td>441</td>
-<td>UK Landline</td>
-<td>0.0075</td>
-</tr><tr><td>442</td>
-<td>UK Landline</td>
-<td>0.0075</td>
-</tr></tbody></table><h2><strong>Maximum</strong></h2>
-<table class="table"><thead><tr><th>Prefix</th>
-<th>Destination</th>
-<th>Cost</th>
-</tr></thead><tbody><tr><td>441</td>
-<td>UK Landline</td>
-<td>0.02</td>
-</tr><tr><td>442</td>
-<td>UK Landline</td>
-<td>0.02</td>
-</tr></tbody></table><h2><strong>Average</strong></h2>
-<table class="table"><thead><tr><th>Prefix</th>
-<th>Destination</th>
-<th>Cost</th>
-</tr></thead><tbody><tr><td>441</td>
-<td>UK Landline</td>
-<td>0.0125</td>
-</tr><tr><td>442</td>
-<td>UK Landline</td>
-<td>0.0125</td></tr></tbody></table>
+| Prefix  |     Destination     |  Cost |
+|----------|:-------------:|------:|
+| *Provider Rate Card A* |   |  |
+| 441 |    UK Landline |  0.01 |
+| 442 | UK Landline |    0.01 |
+| *Provider Rate Card A* |  |     |
+| 441 | UK Landline |  0.0075 |
+| 442 | UK Landline |   0.0075 |
+| *Provider Rate Card A* |  |  |
+| 441 |  UK Landline |  0.02|
+| 442 |  UK Landline |    0.02 |
+
+### Outputs
+
+If we merged all 3 of the above cards, each with a different Rate Compact, we would end up with the following different rate cards.
+
+#### Minimum
+
+| Prefix  |     Destination     |  Cost |
+|----------|:-------------:|------:|
+| 441 |    UK Landline |  0.0075 |
+| 442 | UK Landline |   0.0075 |
+
+#### Maximum
+
+| Prefix  |     Destination     |  Cost |
+|----------|:-------------:|------:|
+| 441 |    UK Landline |  0.02 |
+| 442 | UK Landline |   0.02 |
+
+#### Average
+
+| Prefix  |     Destination     |  Cost |
+|----------|:-------------:|------:|
+| 441 |    UK Landline |  0.0125 |
+| 442 | UK Landline |   0.0125 |
