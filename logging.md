@@ -66,7 +66,7 @@ Users can search the existing logs by writing in the search text field, highligh
 
 [simulate]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/simulate.png "simulate"
 
-[simulate-call]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/simulate-call.png alt="simulate-call
+[simulate-call]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/simulate-call.png "simulate-call"
 
 [lookup]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/lookup.png "lookup"
 
