@@ -4,7 +4,7 @@ Carriers can be easily and efficiently managed with the help of **Connex.** It a
 
 This tutorial will guide you how to manage carriers.
 
-On the Dashboard, click on the tab. highlighted in the page centre, to go to the **Carrier** or you can expand the **_Management_** tab from the left pane and select **“Carrier”.**
+On the Dashboard, click on the tab. highlighted in the page centre, to go to the **Carrier** or you can expand the **_Management_** tab from the left pane and select **"Carrier".**
 
 ![alt text][carrier-list]
 
@@ -24,35 +24,35 @@ Following figure shows the dialog box for adding the **Carrier.**
         
 The brief description of fields present in the above form, is given below:
         
-**Carrier Name:** Users will add the “Customer Name” in the name text field.
+**Carrier Name:** Users will add the "Customer Name" in the name text field.
 
-**Channels:** Users will add the “Channels” in the digits, only.
+**Channels:** Users will add the "Channels" in the digits, only.
 
-**CPS:** Users will add the “CPS” in the text field but in digits, only.
+**CPS:** Users will add the "CPS" in the text field but in digits, only.
 
-**PayPal Email:** Users will add the “PayPal Email” of the **Carrier.**
+**PayPal Email:** Users will add the "PayPal Email" of the **Carrier.**
 
-**Website:** “Website” shall also be added by the users.
+**Website:** "Website" shall also be added by the users.
 
 **Portal URL:** Portal URL shall be added by the users in the given text field.
 
-**Portal Username:** “Portal Username” shall also be written in the text field by the user.
+**Portal Username:** "Portal Username" shall also be written in the text field by the user.
 
-**Portal Password:** “Portal Password” will also be a requirement. 
+**Portal Password:** "Portal Password" will also be a requirement. 
 
-**Portal Access:** Users will select the “Portal Access” option from dropdown menu either as Yes or No.
+**Portal Access:** Users will select the "Portal Access" option from dropdown menu either as Yes or No.
 
-**Status:** Users will set/select the “Status” of the **Carrier.** Status dropdown menu options are:
+**Status:** Users will set/select the "Status" of the **Carrier.** Status dropdown menu options are:
 
 1. Active
 2. Inactive
 3. Pending Approval
 
-**Currency:** Users will set the “Currency” from the dropdown menu options.
+**Currency:** Users will set the "Currency" from the dropdown menu options.
 
-**Address:** Users will write the “Address” of the **Carrier.** Users will add two addresses with country and postcode.
+**Address:** Users will write the "Address" of the **Carrier.** Users will add two addresses with country and postcode.
 
-**Pre Ring Timeout and Post Ring Timeout:** Users will set the “Pre Ring Timeout” and “Post Ring Timeout” in the given text fields.
+**Pre Ring Timeout and Post Ring Timeout:** Users will set the "Pre Ring Timeout" and "Post Ring Timeout" in the given text fields.
 
 ### Deleting Carriers
 
@@ -87,8 +87,8 @@ On the extreme right, click on the menu button, and check the columns you want t
 
 In order to edit a **Carrier**, select a **Carrier** from the list. A new page will open. Follow the procedure given below:
 
-1. Press the **“Edit Carrier”** button.
-2. Edit the details and press **“Save”** button.
+1. Press the **"Edit Carrier"** button.
+2. Edit the details and press **"Save"** button.
 
 Following figure demonstrates the **Edit Carrier** button:
 
@@ -96,7 +96,7 @@ Following figure demonstrates the **Edit Carrier** button:
 
 [carrier-dashboard]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-dashboard.png "Carrier-Dashboard"
 [carrier-list]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-list.png "Carrier-List"
-[add-carriers]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/add-carriers.png  "Add-Carrier"
+[add-carriers]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/add-carriers.png "Add-Carrier"
 [carrier-details]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-details.png "Carrier-Details"
 [carriers-sorting]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carriers-sorting.png "Carriers-Sorting"
-[carriers]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carriers.png  "Carriers"
+[carriers]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carriers.png "Carriers"
