@@ -8,7 +8,7 @@ On the Dashboard, click on the tab. highlighted in the page centre, to go to the
 
 ![alt text][carrier-list]
 
-### Add a New Carrier
+## Add a New Carrier
 
 ![alt text][add-carriers]
 
@@ -54,7 +54,7 @@ The brief description of fields present in the above form, is given below:
 
 **Pre Ring Timeout and Post Ring Timeout:** Users will set the "Pre Ring Timeout" and "Post Ring Timeout" in the given text fields.
 
-### Deleting Carriers
+## Deleting Carriers
 
 Users can delete the existing **Carriers** from the list. 
 
@@ -62,7 +62,7 @@ Users can delete the existing **Carriers** from the list.
 
 2. Click on the **Delete** button, i.e. trash icon.
 
-### Checking The Status
+## Checking The Status
 
 ![alt text][carriers-sorting]
 
@@ -72,18 +72,18 @@ Users can also check/filter the status of the **Carriers.**
 2. Select an option from the dropdown menu.
 3. Results will show up according to the selected option.
 
-### Searching Carrier
+## Searching Carrier
 
 Users can search anything about a **Carrier** by writing the query in the **Search** text field.
 
-### Customizing The View
+## Customizing The View
 
 ![alt text][carriers]
 
 You can customize the view of your **Carriers** page and select the columns which you want to view, only.
 On the extreme right, click on the menu button, and check the columns you want to view.
 
-### Edit Carrier
+## Edit Carrier
 
 In order to edit a **Carrier**, select a **Carrier** from the list. A new page will open. Follow the procedure given below:
 
