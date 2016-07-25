@@ -25,10 +25,10 @@
 
 
 # Introduction
-Initial set-up, will configure a single carrier, single customer and single rate card.
+Initial set-up will configure a single carrier, single customer and single rate card.
 
 ## Prerequisites
-This guide will assumes:
+This guide will assume:
 1. You have a modern web browser.
 2. You have a basic understanding of Telecoms (Customers, Provider, etc).
 3. You have already created an account with ConnexCS.com.
@@ -48,7 +48,7 @@ This guide will assumes:
 
 ## Video Guide
 
-**Note: Our control panel interface has been updated, however the video references our old site. Functionality is the same however it may look a little different**
+**Note: Our control panel interface has been updated, however the video references our old site. Functionality is the same, however it may look a little different**
 
 The videos on this page are to show a quick example of how to setup your account.
 ### Adding a Customer &amp; Carrier
@@ -63,7 +63,7 @@ The videos on this page are to show a quick example of how to setup your account
 ## Customer
 ### Add Customers
 
-Users can add customers by following the simple procedure.
+Users can add customers by following the simple instructions.
 1. Click on the Add Customer button.
 2. Fill out the customer details on the dialog box.
 3. Press Save button to add customers on the list. 
@@ -72,11 +72,11 @@ Following figure shows the details of the modal window opened to add a new custo
 
 ![alt text][add-customer]
 
-Brief description of the fields present in above dialog box is as follows:
-* Customer Name: Users will add the name of the customer.
+Brief description of the fields present in the above dialog box is as follows:
+* Customer Name: Users will add the name of their customer.
 * Paypal Email: Users will add Paypal Email of the customers in the text field.
 * Website: Users will add website of the customer.
-* Status: Users canchoose the "Status" of the customer as:
+* Status: Users can choose the "Status" of the customer as:
   1. Active
   2. Inactive
   3. Pending Approval
@@ -89,7 +89,7 @@ Brief description of the fields present in above dialog box is as follows:
 
 ### Edit Customers
 For a saved customer;
-1. Click on the name of that particular customer, you wish to edit the details for.
+1. Click on the name of the particular customer you wish to edit the details for.
 2. Click on "Edit Customer" button.
 3. Edit the details and then Save.
 
@@ -104,14 +104,14 @@ Details of a customer can also be deleted by following below steps:
 
 ### Filter Customers
 Users can filter the customers as per their current status.
-1. Click thebutton saying "Active".
-2. Select an option from the dropdown menu. Either,All, Active, Inactive or Pending Approval.
+1. Click the button saying "Active".
+2. Select an option from the dropdown menu. Either: All, Active, Inactive or Pending Approval.
 3. The list of customers will show up as per the search criteria.
 
 ![alt text][customer-status]
 
 ### Search Customers
-The customers that are already saved, can be searched from the search bar.
+The customers that are already saved, can be searched for using the search bar.
 
 ## Carriers
 On the Dashboard, click on the Carrier icon in middle of page or you can click on "Management" from the side bar and select "Carrier".
@@ -127,7 +127,7 @@ Users can add new Carriers by following the simple procedure.
 
 1.	Click the Add Carrier button.
 2.	Enter the details of the carrier.
-3.	Click the Save button when all the details are entered, properly.
+3.	Click the Save button when all the details are entered properly.
 
 Following figure shows the dialog box for adding the Carrier:
 
@@ -142,14 +142,14 @@ The brief description of fields present in the above form, is given below:
 * Website: "Website" shall also be added by the users.
 * Portal URL: Portal URL shall be added by the users in the given text field.
 * Portal Username: "Portal Username" shall also be written in the text field by the user.
-* Portal Password: "Portal Password" will also be a requirement. 
+* Portal Password: "Portal Password" is also required. 
 * Portal Access: Users will select the "Portal Access" option from dropdown menu either as Yes or No.
 * Status: Users will set/select the "Status" of the Carrier. Status dropdown menu options are:
   1. Active
   2. Inactive
   3. Pending Approval
 * Currency: Users will set the "Currency" from the dropdown menu options.
-* Address: Users will write the "Address" of the Carrier. Users will add two addresses with country and postcode.
+* Address: Users will write the "Address" of the Carrier. Users will add two addresses with country and postcode/ZIP code.
 * Pre Ring Timeout and Post Ring Timeout: Users will set the "Pre Ring Timeout" and "Post Ring Timeout" in the given text fields.
 
 ![alt text][carrier-sorting]
