@@ -29,7 +29,7 @@ Brief description of the fields present in above dialog box is as follows:
 
 **Website:** Users will add customer's website.
 
-**Status:** Users can choose the “Status” of the customer as:
+**Status:** Users can choose the "Status" of the customer as:
 
 1. Active
 2. Inactive
