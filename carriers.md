@@ -4,7 +4,7 @@ Carriers can be easily and efficiently managed with the help of **Connex.** It a
 
 This tutorial will guide you how to manage carriers.
 
-On the Dashboard, click on the tab. highlighted in the page centre, to go to the **Carrier** or you can expand the **Management</i>** tab from the left pane and select **“Carrier”.**
+On the Dashboard, click on the tab. highlighted in the page centre, to go to the **Carrier** or you can expand the **_Management_** tab from the left pane and select **“Carrier”.**
 
 <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-list.png" alt="Carrier-List"/>
 
