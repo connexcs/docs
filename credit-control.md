@@ -11,11 +11,13 @@ The debit limit is a value, in denominations of the customer’s currency, which
 * **Pre Pay with Credit Buffer** - Set the debit limit to the NEGATIVE of your buffer value. E.g If you want a float/buffer value in your customer’s account of $5.00, meaning the account will stop dialing when your customer only has $5.00 left in their account you will set the debit limit to -$5.00
 
 ### Automatic Cut Off (Is it Real time?)
-1. Is the automatic cut off real-time.
+1. Is the automatic cut off real-time?
 2. Partly
 
-The credit control can be considered real-time apart from the following considerations.
+The credit control can be considered real-time apart from the following considerations:
+
 1. The credit control is only applicable for new calls. This means that calls in progress will continue to flow even if customers run out of balance.
+
 2. The current account credit is cached by the routing engine for 60 seconds. This means that the live credit can be delayed by 60 seconds.
 
 ### What's the best way to make sure I don't overspend by a single penny?
