@@ -79,13 +79,13 @@ The PHP ScriptForge allows your own custom code to be run from within the Connex
 
 When a call is established between customer and provider, there are two ways in which the audio can be set-up.
 
-<table>
-<tr><td></td><td>**With RTP Proxy**</td><td>**Without RTP Proxy**</td></tr>
-<tr><td>**Audio Path**</td><td>Indirect</td><td>Direct</td></tr>
-<tr><td>**Audio Quality**</td><td>Excellent</td><td>Unbeatable</td></tr>
-<tr><td>**Latency**</td><td>Low</td><td>Lowest</td></tr>
-<tr><td>**Information Leakage**</td><td>No</td><td>Yes*</td></tr>
-</table>
+|  |      **With RTP Proxy**      |  **Without RTP Proxy** |
+|----------|:-------------:|------:|
+| **Audio Path** |  Indirect | Direct |
+| **Audio Quality** |    Excellent  |  Unbeatable|
+| **Latency** | Low |    Lowest |
+| **Information Leakage**| No |   Yes* |
+
  	
 **Note:** It is important to be aware, although its doubtful that any information will be logged in the customer/providers switch where the audio is engaged. It is entirely possible for an engineer to find this information out from a SIP trace, pcap or watching transit locations.
 
