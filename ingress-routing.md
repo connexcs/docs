@@ -1,51 +1,51 @@
-#Ingress Routing#
+# Ingress Routing
 
 Ingress routing allows incoming attempts to be sent to the correct rate card which in turn egress through the specified provider.
 
 Ingress routing allows for lots of rate cards to be used with or without a prefix. This is checked according to the longest prefix first through to the shortest for a match. If no prefix is matched then it will begin matching the rules of the rate cards. Rate cards with mutually exclusive destinations will route without problems, but rate cards which have prefixes with collisions will have no guarantee which the calls will be sent to.
 
-##Tariff##
+## Tariff
 
 Tariff lets you select the rate card to be used on the customer account
 
-##Tech Prefix##
+## Tech Prefix
 
 It is possible for multiple customers to share the same IP address and to be distinguished by Tech Prefix. Multiple rate cards can be separated with the help of a tech prefix
 
-##Channels##
+## Channels
 
 This will impose a limit on how many channels are allowed through this ingress route. This is an independent setting from any customer imposed channel limitations which will still apply.
 
-##Dial string##
+## Dial string
 
 Dial string will let only the entered prefixes through, listed as one per line. Note: Both prefix and regular expressions are allowed, for example, if you only wanted to allow UK Landline you could use
 
-###Prefix###
+### Prefix
 
 ```
 441
 442
 ```
 
-###Regular Expression (RegEx)###
+### Regular Expression (RegEx)
 ```
 44(1|2)
 ```
- ###Combination (UK Landline & Canada)###
+### Combination (UK Landline & Canada)
 ```
 441
 442
 ^1(204|226|236|249|250|289|306|343|403|416|418|438|450|506|514|519|579|581|587|604|613|647|705|709|778|780|807|819|867|902|905)
 ```
-##Missing BYE Protection##
+## Missing BYE Protection
 
 A VoIP call is stateful, however its protocol is stateless. This means that both sides of the conversation have to be told when to finish the call. They do this with a BYE message, if the BYE message goes missing, then the call will continue forever, we have the following preventions put in place to stop this happening.
 
-##Maximum Duration##
+## Maximum Duration
 
 In the event that a BYE gets missed, the Maximum Duration will be the maximum amount of time that the call will be allowed to exist before being terminated.
 
-##Time-out Methods##
+## Time-out Methods
 
 * SIP Ping
 
@@ -57,25 +57,25 @@ Another way to check for an active call is to detect if there is audio passing. 
 
 **Note:** this will not work if RTP Mode is set direct
 
-##Profit Assurance##
+## Profit Assurance
 
 If you wish to check every call to ensure it is profitable you can enable Profit Assurance here. This is very useful for A-Z routes or NPA-NXX rate cards, however if you have a very simple rate card, where you know you will always be profitable on ALL upstream routes, you can disable this.
 
 The default option here is disabled, as Enabled can add additional PDD to the call while the checks take place.
 
-##Lock Parent Card##
+## Lock Parent Card
 
 If you wish to lock a particular rate card from the list of providers you have added, you can choose this option. This will allow only the rate cards which have been selected.
 
-##Exclude Parent Cards:##
+## Exclude Parent Cards
 
 If you wish to access rate cards from all the providers on your list except for one particular rate card that has to be excluded you can choose this option.
 
-##ScriptForge##
+## ScriptForge
 
 The PHP ScriptForge allows your own custom code to be run from within the ConnexCS platform.
 
-##RTP Proxy Modes##
+## RTP Proxy Modes
 
 When a call is established between customer and provider, there are two ways in which the audio can be set-up.
 
@@ -87,7 +87,7 @@ When a call is established between customer and provider, there are two ways in 
 <tr><td>**Information Leakage**</td><td>No</td><td>Yes*</td></tr>
 </table>
  	
-Note: It is important to be aware, although its doubtful that any information will be logged in the customer/providers switch where the audio is engaged. It is entirely possible for an engineer to find this information out from a SIP trace, pcap or watching transit locations.
+**Note:** It is important to be aware, although its doubtful that any information will be logged in the customer/providers switch where the audio is engaged. It is entirely possible for an engineer to find this information out from a SIP trace, pcap or watching transit locations.
 
 Please note DTMF Detection ONLY works when RTP Proxy mode is enabled
 
@@ -102,7 +102,7 @@ You could not use an RTP Proxy if:
 1. You have other equipment in your SIP set-up which will act as a Media Relay.
 2. You want to run a test to see if audio problems are related to the Connex Cloud Switch.
 
-##Options:-##
+## Options:-
 
 * RTP Media Proxy
 
