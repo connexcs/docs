@@ -41,7 +41,7 @@ Users will fill out the following text fields:
 4. Notes (Public)
 5. Users can select Public options from the checklist.
 6. Users can select the “Force Presentation” from the dropdown menu. The options include: Default, Single Rate, IntER, IntRA etc.
-7. Users can also add “Dialing” information.
+7. Users can also add “Dialling” information.
 
 <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/edit-provider-card.png" alt="edit-provider-card"/>
 
@@ -56,9 +56,9 @@ Users can upload a file by following these steps:
 2.	Browse a file from the system. 
 3.	Upload it.
 
-#<h2>Deleting a Provider Card</h2>
+#<h2>Deleting a Provider Rate Card</h2>
 
-Users can delete the Provider cards that were saved earlier. Just follow the below mentioned steps:
+Users can delete the Provider cards that were saved earlier. Just follow the steps mentioned below:
 
 1.	Select the Provider Card by check marking the entire row from the list.
 2.	Press the <b>Delete</b> button which is next to the <b>“Upload File”</b> button.
