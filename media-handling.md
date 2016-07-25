@@ -1,14 +1,16 @@
-#ConnexCS Media Handling#
+# ConnexCS Media Handling
 
-##Why do I see different media IP addresses?##
+## Why do I see different media IP addresses?
 
 When a SIP session is created with your ConnexCS Cloudswitch, the switch decides (or you can choose from ingress routing) a zone to route your media through, e.g USA East, USA West, Europe.
+
 These zones are specifically broad to encompass (if possible) multiple datacenter and sub-availability zones within the target zone. A zone may contain 10 or more RTP Media Relays, or as few as 2, which are available for all ConnexCS customers.
+
 It is important to us that media streams never suffer avoidable packet loss or latency, hence multiple availability zones. We try to keep media servers running at < 50% capacity. If this increases we will deploy additional servers.
 
-##Why do you not run media and signaling together?##
+## Why do you not run media and signaling together?
 
-##Server Specific optimizations##
+## Server Specific optimizations
 
 Although it may seem logical to have both of these running together, it’s actually counter intuitive. Servers processing billions of ephemeral media packets put different stresses on a system than what is required for processing SIP packets. Isolating these gives us the following benefits:
 
