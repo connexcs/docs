@@ -18,9 +18,9 @@ The credit control can be considered real-time apart from the following consider
 1. The credit control is only applicable for new calls. This means that calls in progress will continue to flow even if customers run out of balance.
 2. The current account credit is cached by the routing engine for 60 seconds. This means that the live credit can be delayed by 60 seconds.
 
-### What’s the best way to make sure I don’t overspend by a single penny?
+### What's the best way to make sure I don't overspend by a single penny?
 
-Set a Buffer Credit on the customer’s account as mentioned above.
+Set a Buffer Credit on the customer's account as mentioned above.
 
 ### Is it possible to implement a 100% real-time credit control that stops my account exactly on 0?
 
