@@ -1,8 +1,8 @@
 # Carrier Management
 
-Carriers can be easily and efficiently managed with the help of **Connex.** It allows you to not only add, edit and delete carriers but also let you view the columns you want to see. 
+Carriers can be easily and efficiently managed with the help of **Connex.** It allows you to not only add, edit and delete carriers but also lets you view the columns you want to see. 
 
-This tutorial will guide you how to manage carriers.
+This tutorial will guide you as to how to manage carriers.
 
 On the Dashboard, click on the tab. highlighted in the page centre, to go to the **Carrier** or you can expand the **_Management_** tab from the left pane and select **"Carrier".**
 
@@ -50,7 +50,7 @@ The brief description of fields present in the above form, is given below:
 
 **Currency:** Users will set the "Currency" from the dropdown menu options.
 
-**Address:** Users will write the "Address" of the **Carrier.** Users will add two addresses with country and postcode.
+**Address:** Users will write the "Address" of the **Carrier.** Users will add the address including country and postcode/ZIP code.
 
 **Pre Ring Timeout and Post Ring Timeout:** Users will set the "Pre Ring Timeout" and "Post Ring Timeout" in the given text fields.
 
@@ -58,7 +58,7 @@ The brief description of fields present in the above form, is given below:
 
 Users can delete the existing **Carriers** from the list. 
 
-1. Select the **Carrier** from the list, by check marking the entire row.
+1. Select the **Carrier** from the list by check marking the entire row.
 
 2. Click on the **Delete** button, i.e. trash icon.
 
@@ -80,7 +80,7 @@ Users can search anything about a **Carrier** by writing the query in the **Sear
 
 ![alt text][carriers]
 
-You can customize the view of your **Carriers** page and select the columns which you want to view, only.
+You can customize the view of your **Carriers** page and select only the columns which you want to view.
 On the extreme right, click on the menu button, and check the columns you want to view.
 
 ## Edit Carrier
