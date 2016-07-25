@@ -1,4 +1,4 @@
-#<h2>Limiting CPS & Channels</h2>
+#Limiting CPS & Channels#
 
 The switch can limit CPS and channels in the following areas:
 
@@ -10,7 +10,7 @@ The switch can limit CPS and channels in the following areas:
  6. Ingress Routing
 
  
-<h4>What happens when my server reaches capacity?</h4>
+##What happens when my server reaches capacity?##
 
 The standard response is a Request Terminated: Server at max cps/channels. If you have multiple servers you can set it up so that,
 if the server reaches maximum capacity, is sends a 302 response advising the client of an alternative location to try and complete the call.
