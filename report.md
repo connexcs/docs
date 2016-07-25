@@ -1,65 +1,58 @@
-<h2>Reports Management</h2>
+# Reports Management
 
 This article will guide how the users can manage the reports section. 
-From the <b><i>Dashboard</i></b>,click on the reports icon, highlighted as orange in the <b>Figure 1.</b> Also, users can open the reports from the left pane as follows:
+From the **_Dashboard_**,click on the reports icon, highlighted as orange in the **Figure 1.** Also, users can open the reports from the left pane as follows:
 
-1.	Click on the <b><i>Management</i></b> from the side bar.
-
+1.	Click on the **_Management_** from the side bar.
 2.	Click on the Reports.
-
-3.	And then click on the <b><i>Breakout,</i></b> highlighted as red in the <b>Figure 1.</b>
+3.	And then click on the **_Breakout,_** highlighted as red in the **Figure 1.**
  
 Figure 1
 
-#<h2>Breakout</h2>
+## Breakout
 
-In the <b><i>breakout section</i></b>, users can add multiple customers, providers and destinations. The overall view of the Breakout section is given in <b>Figure 2</b> for better understanding. 
+In the **_breakout section_**, users can add multiple customers, providers and destinations. The overall view of the Breakout section is given in **Figure 2** for better understanding. 
  
 Figure 2
 
-<h2>Selection of Customers, Providers and Destination</h2>
+## Selection of Customers, Providers and Destination 
 
 Users can manage their report section by selecting the customers, providers and destination at the same time.
 
-&#x25cf; By checking the options from the drop down menu,enable the users to select the option of their choice, as shown in <b>Figure 3.</b> 
-
-&#x25cf; Users can also uncheck any of them from the options. 
-
-&#x25cf; Users can also <b>Select All</b> the options or <b>Select None</b> for all options. And Search text field is also provided. 
+* By checking the options from the drop down menu,enable the users to select the option of their choice, as shown in **Figure 3.**
+* Users can also uncheck any of them from the options. 
+* Users can also **Select All** the options or **Select None** for all options. And Search text field is also provided. 
  
 Figure 3
 
-#<h2>Selecting Multiple Customers</h2>
+## Selecting Multiple Customers
 
 Users can select multiple customers from the drop down menu, where the list of all customers is given.
 
-1.	Click on <b>Select Multiple Customers</b> field.
-
+1.	Click on **Select Multiple Customers** field.
 2.	Select the number of customers from the customers list.
  
 Figure 4
 
-#<h2>Selecting Multiple Providers</h2>
+## Selecting Multiple Providers
 
 Users can also select multiple providers from the list also.
 
-1.	Click on <b>Select Multiple Providers</b> field.
-
+1.	Click on **Select Multiple Providers** field.
 2.	Select the providers from the drop down list.
  
 Figure 5
 
 As from the above image, the lists of the providers are given and users can either select all of them or select any of them.
 
-#<h2>Selecting Multiple Destinations</h2>
+## Selecting Multiple Destinations
 
 Users can also select multiple destinations.
 
-1.	Click on the <b>Select Multiple Destinations.</b>
-
+1.	Click on the **Select Multiple Destinations.**
 2.	Write the name of the destination and select the desired ones.
 
-#<h2>Selecting the Range of Dates</h2>
+## Selecting the Range of Dates
 
 Users can also set the range of the dates from the calendar. 
  
@@ -67,18 +60,13 @@ Figure 6
 
 Users can have multiple choices in setting a date which is applicable on the reports.
 
-1.	Users can apply the <b><i>Current/Today’s</i></b> date.
+1. Users can apply the **_Current/Today's_** date.
+2. Users can add the **_Yesterday's_** date.
+3. Users can add **_Last 7 day's_** dates and range of seven days shall be appeared.
+4. Users can also set the **_Last 30 days_** dates
+5. User can also add the range of the dates, for example, the current month is June. So dates from June 01 to June 30 can be set
+6. Or users can also customize the dates of their own choice from the calendar.
 
-2.	Users can add the <b><i>Yesterday’s</i></b> date.
-
-3.	Users can add <b><i>Last 7 day’s</i></b> dates and range of seven days shall be appeared.
-
-4.	Users can also set the <b><i>Last 30 days</i></b> dates
-
-5.	User can also add the range of the dates, for example, the current month is June. So dates from June 01 to June 30 can be set
-
-6.	Or users can also customize the dates of their own choice from the calendar.
-
-After the option has been selected or the range of the dates is decided, click on the <b>Apply</b> button.
+After the option has been selected or the range of the dates is decided, click on the **Apply** button.
  
 Figure 7
