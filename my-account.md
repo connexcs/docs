@@ -26,7 +26,7 @@ These functions include:
 
 Let’s discuss each one of the above in more detail.
 
- ## Configuration ## 
+ ##Configuration## 
 
 To add/edit the configuration of an account, click on the Config icon, present on top bar.
 
