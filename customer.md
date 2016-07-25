@@ -1,6 +1,6 @@
 #Customer Management#
 
-In Connex, you can create your own **Customer** and assign them **credit, status, channel, last call, ASR, ACD, PDD and CPS** to them.
+In Connex, you can create your own **Customer** and assign **credit, status, channel, last call, ASR, ACD, PDD and CPS** to them.
 Managing customers is quite easy with **Connex.** Follow the procedures given in this tutorial, to learn how to manage customers, efficiently.
 
 On the Dashboard, click on the tab, highlighted in centre of page, to go to the **Customer** or you can also click on the **_Management_** from the left pane and select **“Customer”.**
@@ -15,7 +15,7 @@ Users can add new **Customers** by following the simple procedure.
 
 1. Click on **Add Customer** button.
 2. Enter the details of the Customer.
-3. Click the **Save** button, once all the details are entered, properly.
+3. Click the **Save** button, once all the details are entered properly.
 
 Following figure shows the dialog box for adding the **Customer:**
 
