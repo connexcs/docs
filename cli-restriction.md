@@ -1,4 +1,4 @@
-#CLI Restriction#
+# CLI Restriction
 
 CLI Restriction enables you to pass a CLI which is presented on the customer's account. Anything without a valid CLI will not be passed through.
 
@@ -8,18 +8,18 @@ Checking the Force CLI option will let the user to pass the CLI without having t
 
 **CLI = Caller Line Identification**
 
-###How to add CLI?###
+### How to add CLI?
 
-*  Click on Managment > Customer > [Customer name]
+* Click on Managment > Customer > [Customer name]
 
-*  lick on Routing Routing
+* lick on Routing Routing
 
-<h1>Image Needed</h1>
+# Image Needed
 
-*  Click + under CLI.
+* Click + under CLI.
 
-*  Enter the CLI Number in E164 format.
+* Enter the CLI Number in E164 format.
 
-<h1>Image Needed</h1>
+# Image Needed
 
-*  Click Save.
+* Click Save.
