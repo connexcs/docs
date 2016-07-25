@@ -58,6 +58,6 @@ User can also refresh the lists of logs by clicking on **Refresh** button, right
  
 ##Searching the Logs##
 
-Users can search the existing logs by writing in the search text field, highlighted in the image below. The search results will show up, once the search criteria is matched.
+Users can search the existing logs by writing in the search text field, highlighted in the image below. The search results will show up, once the search criteria is matched.test
  
 <img src="https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/attempts1.png" alt="attempts1"/>
