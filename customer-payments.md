@@ -2,9 +2,9 @@
 
 ## Mass Payments
 
-Mass Payment is a bulk payment method that allows funds to be sent by uploading a file to the Paypal site and allows the sender to pay the fee's. Usually lower than standard PayPal sending fee's.
+Mass Payment is a bulk payment method that allows funds to be sent by uploading a file to the Paypal site and allows the sender to pay the fees which are usually lower than standard PayPal sending fees.
 
-As there is no direct involvement with the switch when sending this payment we need to use a different strategy to receive notifications about this payments, for that we can link in to PayPal's IPN.
+As there is no direct involvement with the switch when sending this payment we need to use a different strategy to receive notifications about these payments, and for that we can link into PayPal's IPN.
 
 ## What is PayPal IPN?
 
@@ -27,21 +27,21 @@ Fill in your settings and copy the URL written beside **IPN URL**.
 
 Login to your Paypal Business  Account and choose Profile. 
 
-**Note** you need to have a PayPal business account for performing this task.
+**Note**: You need to have a PayPal business account to perform this task.
 
 From the side bar menu select _My selling tools_.
-Drag down and select“Update” which is beside “Instant payment notification” that is under Getting paid and managing my risk section.
+Drag down and select“Update” which is beside “Instant payment notification” that is under Getting paid and Managing my risk section.
 
 Select _Choose IPN Settings_
-Enter the URL you copied from Connex Account under the Notification URL and click <b>“Save”</b>. fill in the settings & copy the API URL.
+Enter the URL you copied from Connex Account under the Notification URL and click <b>“Save”</b>. Fill in the settings & copy the API URL.
 
 ### Inserting credentials in your Connex Account
 
-Go back to your Connex account and go to Setup>>My Account. Under the tab of API, select _Add New_.  A new form will open.
+Go back to your Connex account and go to Setup>>My Account. Under the tab of API, select _Add New_. A new form will open.
 
-Go back to your Paypal account and go to Profile.Select _My selling tools_ from the side menu bar.
+Go back to your Paypal account and go to Profile. Select _My selling tools_ from the side menu bar.
 
-* Click on the button _Update_ beside API accesswhich is under _Selling online_ section.
+* Click on the button _Update_ beside API access which is under _Selling online_ section.
 * Click on _Request API Credentials_ which is under NVP/SOAP API integration
 * Select _Request API signature_ and click on Agree and Submit button
 
