@@ -26,7 +26,7 @@ These functions include:
 
 Let’s discuss each one of the above in more detail.
 
-## Configuration## 
+## Configuration ## 
 
 To add/edit the configuration of an account, click on the Config icon, present on top bar.
 
@@ -36,7 +36,7 @@ This function basically involves two types of information:
 
 2.	General Information
 
-## Company Information## 
+## Company Information ## 
 
 To add/edit information, users can click on the pencil icon. In Company’s Information, users have to fill out the following details:
  
@@ -50,7 +50,7 @@ To add/edit information, users can click on the pencil icon. In Company’s Info
 
 After filling all the details, click on Save button.
 
-## General Information## 
+## General Information ## 
 
 In General Information, users will fill out the following details:
  
@@ -62,7 +62,7 @@ In General Information, users will fill out the following details:
 
 4.	For security and Add-ons, users can check the box and then they’ll receive emails, every time they login.
 
-## Personal Information## 
+## Personal Information ## 
 
  Users can also edit their personal information in Current User section. 
 
@@ -92,7 +92,7 @@ Users can also enable “Two factor Authentication”. For this purpose, click o
 
 5.	And click on Save button, once the addition of details have been completed.
 
-## Users## 
+## Users ## 
 
 Users can add other users in this section. Names with their emails shall appear in the Users section. Groups can also be made, consisting of different users. 
 
