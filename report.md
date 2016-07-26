@@ -7,17 +7,17 @@ From the **_Dashboard_**,click on the reports icon, highlighted as orange in the
 2.	Click on the Reports.
 3.	And then click on the **_Breakout,_** highlighted as red in the **Figure 1.**
  
-Figure 1
-
 ![alt text][dashboard]
+
+Figure 1
 
 ## Breakout
 
 In the **_breakout section_**, users can add multiple customers, providers and destinations. The overall view of the Breakout section is given in **Figure 2** for better understanding. 
  
-Figure 2
-
 ![alt text][breakout]
+
+Figure 2
 
 ## Selection of Customers, Providers and Destination 
 
@@ -27,9 +27,9 @@ Users can manage their report section by selecting the customers, providers and 
 * Users can also uncheck any of them from the options. 
 * Users can also **Select All** the options or **Select None** for all options. And Search text field is also provided. 
  
-Figure 3
-
 ![alt text][selection]
+
+Figure 3
 
 ## Selecting Multiple Customers
 
@@ -38,9 +38,9 @@ Users can select multiple customers from the drop down menu, where the list of a
 1.	Click on **Select Multiple Customers** field.
 2.	Select the number of customers from the customers list.
  
-Figure 4
-
 ![alt text][multiple-customers]
+
+Figure 4
 
 ## Selecting Multiple Providers
 
@@ -49,9 +49,9 @@ Users can also select multiple providers from the list also.
 1.	Click on **Select Multiple Providers** field.
 2.	Select the providers from the drop down list.
  
-Figure 5
-
 ![alt text][multiple-providers]
+
+Figure 5
 
 As from the above image, the lists of the providers are given and users can either select all of them or select any of them.
 
@@ -66,9 +66,9 @@ Users can also select multiple destinations.
 
 Users can also set the range of the dates from the calendar. 
  
-Figure 6
-
 ![alt text][dates]
+
+Figure 6
 
 Users can have multiple choices in setting a date which is applicable on the reports.
 
@@ -84,7 +84,6 @@ After the option has been selected or the range of the dates is decided, click o
 ![alt text][dates]
 
 Figure 7
-
 
 [dashboard]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/dashboard.png "Dashboard"
 [breakout]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/breakout.png "Breakout"
