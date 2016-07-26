@@ -17,7 +17,7 @@ In order to ensure accuracy it may be required to **normalize** rate cards when 
 #### Between Cards
 If you have multiple carrier cards and you wish to compile them into a single card, you will need to pay attention to the **Rate Compact** variable. This will be the strategy that it will use to output a cost per destination. You could use Min if you are dealing with cost sensitive routing, or Max if you are looking at quality driven prices.
 
-_Note: If you use Min there as default your calls will be routed to the cheapest provider first, but if that provider does not take the call, it will failover to a more expensive provider. There is the possibility that this provider may be higher than your profit margins. You can enable Profit Assurance, but be prepared, Profit Assurance can't protect against different billing pulses OR connection fees._
+_Note: If you use Min as default your calls will be routed to the cheapest provider first, but if that provider does not take the call, it will failover to a more expensive provider. There is the possibility that this provider may be higher than your profit margins. You can enable Profit Assurance, but be prepared, Profit Assurance can't protect against different billing pulses OR connection fees._
 
 #### Different Card Types
 If you wish to transform an NPA-NXX price into a single cost per code, you will need to **collapse** your rate card. This takes similar settings to **Rate Compact** however this rule is used when picking out a single cost per prefix per provider. It is joined with other providers AFTER this process has taken place.
