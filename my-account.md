@@ -7,6 +7,8 @@ In My Account, users can update and manage information of their account, add per
 To open My Account, just click on the Setup from the left pane and then click on the My Account, shown as re highlighted in the image below. 
 
 There are basically seven functions, as blue highlighted in the figure below:
+
+![alt text][my-account]
  
 These functions include:
 
@@ -33,6 +35,8 @@ This function basically involves two types of information:
 
 To add/edit information, users can click on the pencil icon. In Company's Information, users have to fill out the following details:
  
+![alt text][company-info]
+
 1. Users will write their Name in the text field.
 2. Users will add the Email and Company name in the given text fields.
 3. Users will the address as Address Line 1 and Address Line 2. 
@@ -43,6 +47,8 @@ After filling all the details, click on Save button.
 ## General Information
 
 In General Information, users will fill out the following details:
+
+![alt text][general-info]
  
 1. Users will write the Currency. 
 2. Users will select the Date Format from the dropdown options.
@@ -57,14 +63,22 @@ In General Information, users will fill out the following details:
 2. Enter or change the details.
 3. Click on Save button.
 
+![alt text][change-pwd]
+
 ### Users can also change the passwords
 
 1.	Click on the Change Password button, as shown in the above image.
 2.	Fill out the details and click Save button, as shown in the image below
 
+![alt text][change-pwd2]
+
 Users can also enable "Two factor Authentication". For this purpose, click on the Two factor Authentication and click on Enable the TFA, as shown in the image below:
+
+![alt text][tfa]
  
 ### Users can also edit SMTP Details.
+
+![alt text][smtp]
  
 1. Users will set the Address from which the emails will receive.
 2. Users will set the Username and Password
@@ -83,7 +97,11 @@ To add a new user, simply:
 3.	Pop-up will show up and fill out the details of the dialog box.
 4.	Click on Save button.
  
+![alt text][users]
+
 The details of the dialog box, to add new users, are as follows:
+
+![alt text][user-config]
 
 Users will provide the,
 
@@ -95,6 +113,8 @@ Users will provide the,
 Click on Save button, once the details have been filled out. 
 
 To add new groups to the Users section, click on the '+' sign button and further add the details. 
+
+![alt text][group-config]
  
 1. Users will write the name in the given text field.
 2. From other options (Customer, Carrier, Card, Cdr, Log, Report etc.), users select the option from dropdown menu as Select, Allow or Deny and press Save button.
@@ -103,6 +123,8 @@ To add new groups to the Users section, click on the '+' sign button and further
 ## API (Application Programming Interface)
 
 Users can set the APIs also. The overall view of API section is as follows:
+
+![alt text][api]
  
 ### Adding New API
 
@@ -114,11 +136,15 @@ Users can add the new API by:
 
 ### For PayPal:
  
+![alt text][paypal]
+ 
 1.	Users will add the Username.
 2.	Users will select the mode from the dropdown menu options, either as test or live.
 3.	Users will add the Email and signatures.
 
 For Stripe:
+
+![alt text][stripe] 
  
 1.	Users will select the mode from the dropdown menu, either as test or live
 2.	Users will write the Public Key and Private Key in the respective text fields.
@@ -131,7 +157,9 @@ Users can also:
 ## Domains
 
 Users can add the domains also. 
- 
+
+![alt text][domain]
+
 To add a new domain, simply:
 
 1. Click on the '+' icon to add new domain.
@@ -139,6 +167,8 @@ To add a new domain, simply:
 3.	Click on the Save button.
 
 The details of the dialog box are as follows:
+
+![alt text][add-new-domain]
 
 1.	Users will write the Domain in the text field.
 2.	Users will select the Carrier Signup and Customer Signup from the dropdown menu options.
@@ -161,22 +191,32 @@ Users can make their payments at any time with such ease. All they have to do is
 1.	Click on the Make Payment button.
 2.	Fill out the details of pop-up.
 3.	Click on Submit Payment.
+	
+![alt text][payments]
+
 4. Select the payment mode.
 5. Select the amount.
 
 ## Packages
 
 Users can check the packages details from the Users section, where users can also refresh the list of the packages.
+
+![alt text][package-user]
  
 ### Adding New Package
 
 Users can add a new package effortlessly. From the left pane, click on Packages, highlighted as orange in the image given below:
+
+![alt text][package]
  
 To add a new package:
 
 1. Click on the Add Package button.
 2. Pop-up will show up and fill out the detail of the dialog box as shown in the image below.
 3. Click Save button.
+
+![alt text][package-dialog-box]
+
 4. Write Name of the package.
 5. Set the Cost and Quantity.
 6. Users will select the Frequency of the package either as daily, weekly or monthly.
@@ -191,3 +231,26 @@ Users can check all the lists of the servers and also can refresh them.
 2.	Click on the All Servers button.
 3.	List of servers will show up.
 4.	Refresh the lists, if needed, by pressing the Refresh button.
+
+![alt text][my-server]
+
+[my-account]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/my-account.png "My Account"
+[company-info]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/company-info.png "Company-Info"
+[general-info]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/general-info.png "General-Info"
+[change-pwd]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/change-pwd.png "Change-PWD"
+[change-pwd2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/change-pwd2.png "Change-PWD2"
+[tfa]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/tfa.png "TFA"
+[smtp]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/smtp.png "SMTP"
+[users]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/users.png "Users"
+[user-config]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/user-config.png "User-Config"
+[group-config]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/group-config.png "Group-Config"
+[api]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/api.png "API"
+[paypal]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/paypal.png "Paypal"
+[stripe]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/stripe.png "Stripe"
+[domain]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/domain.png "Domain"
+[add-new-domain]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/add-new-domain.png "Add-New-Domain"
+[payments]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/payments.png "Payments"
+[package-user]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/package-user.png "Package-Users"
+[package]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/package.png "Package"
+[package-dialog-box]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/package-dialog-box.png "Package-Dialog-Box"
+[my-server]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/my-server.png "My-Server"
