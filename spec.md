@@ -1,6 +1,6 @@
 # SBC or Class 4 Softswitch
 
-ConnexCS is a Class 4 Cloud based Softswitch. It is delivered as a service aka. PaaS (Platform as a Service), it provides a way to deploy a massively scalable distributed system over the globe with minimal technical knowledge.
+ConnexCS is a Class 4 Cloud based Softswitch. It is delivered as a service aka. PaaS (Platform as a Service). It provides a way to deploy a massively scalable distributed system over the globe with minimal technical knowledge.
 
 ## SBC, Class 4 Softswitch, Proxy?
 
