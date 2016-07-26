@@ -7,8 +7,8 @@ When a call first lands on the system it hits the routing engine. The routing en
 
 If your SIP Trace shows that an INVITE packet was received by the switch but not sent out to any providers, the fail will be in the ingress routing.
 
-| SIP Code |               SIP Reason               |                                                 Details                                                |
-|:--------:|:--------------------------------------:|:------------------------------------------------------------------------------------------------------:|
+| SIP Code | SIP Reason                             | Details                                                                                                |
+|:--------:|----------------------------------------|--------------------------------------------------------------------------------------------------------|
 |    403   | IP Not Authorised                      | The IP Address does not match any account in the system.                                               |
 |    500   | Unidentified Internal Switch           | This is an internal error, you should never see this. If you do please contact us.                     |
 |    500   | Server not accepting calls (Paused)    | Your account with ConnexCS has been disabled or your server has been disabled.                         |
