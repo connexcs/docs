@@ -81,12 +81,14 @@ Users can have multiple choices in setting a date which is applicable on the rep
 
 After the option has been selected or the range of the dates is decided, click on the **Apply** button.
  
+![alt text][dates]
+
 Figure 7
 
 
 [dashboard]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/dashboard.png "Dashboard"
 [breakout]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/breakout.png "Breakout"
-[multiple-carriers]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/multiple.png "Multiple Carriers"
+[multiple-customers]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/multiple.png "Multiple Customers"
 [multiple-providers]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/multiple2.png "Multiple Providers"
 [selection]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/selection.png "Selection"
 [dates]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/dates.png "Dates"
