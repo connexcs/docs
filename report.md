@@ -1,7 +1,7 @@
 # Reports Management
 
 This article will guide how the users can manage the reports section. 
-From the **_Dashboard_**,click on the reports icon, highlighted as orange in the **Figure 1.** Also, users can open the reports from the left pane as follows:
+From the **_Dashboard_**, click on the reports icon, highlighted as orange in **Figure 1.** Also, users can open the reports from the left pane as follows:
 
 1.	Click on the **_Management_** from the side bar.
 2.	Click on the Reports.
@@ -23,7 +23,7 @@ Figure 2
 
 Users can manage their report section by selecting the customers, providers and destination at the same time.
 
-* By checking the options from the drop down menu,enable the users to select the option of their choice, as shown in **Figure 3.**
+* Checking the options from the drop down menu, enables the users to select the option of their choice, as shown in **Figure 3.**
 * Users can also uncheck any of them from the options. 
 * Users can also **Select All** the options or **Select None** for all options. And Search text field is also provided. 
  
@@ -44,7 +44,7 @@ Figure 4
 
 ## Selecting Multiple Providers
 
-Users can also select multiple providers from the list also.
+Users can also select multiple providers from the list.
 
 1.	Click on **Select Multiple Providers** field.
 2.	Select the providers from the drop down list.
@@ -74,9 +74,9 @@ Users can have multiple choices in setting a date which is applicable on the rep
 
 1. Users can apply the **_Current/Today's_** date.
 2. Users can add the **_Yesterday's_** date.
-3. Users can add **_Last 7 day's_** dates and range of seven days shall be appeared.
+3. Users can add **_Last 7 days_** dates and range of seven days shall be appeared.
 4. Users can also set the **_Last 30 days_** dates
-5. User can also add the range of the dates, for example, the current month is June. So dates from June 01 to June 30 can be set
+5. User can also add a range of dates, for example, the current month is June. So dates from June 01 to June 30 can be set
 6. Or users can also customize the dates of their own choice from the calendar.
 
 After the option has been selected or the range of the dates is decided, click on the **Apply** button.
