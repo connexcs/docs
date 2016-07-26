@@ -2,7 +2,7 @@
 
 Rate Card is one of the most important feature of Connex and managing rate cards is very easy and convenient.
 
-This tutorial will guide how to manage rate cards
+This tutorial will guide you on how to manage rate cards
 
 From the Dashboard, click on the tab of rate card, highlighted in the centre of the page, and also you can go to the **Management** and select **_Rate Cards_**.
 
