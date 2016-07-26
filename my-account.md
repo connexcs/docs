@@ -12,13 +12,13 @@ There are basically seven functions, as blue highlighted in the figure below:
  
 These functions include:
 
-1.	Configuration
-2.	Users
-3.	API
-4.	Domains
-5.	Payments
-6.	Usage
-7.	Packages
+1. Configuration
+2. Users
+3. API
+4. Domains
+5. Payments
+6. Usage
+7. Packages
 
 Let's discuss each one of the above in more detail.
 
@@ -28,8 +28,8 @@ To add/edit the configuration of an account, click on the Config icon, present o
 
 This function basically involves two types of information:
 
-1.	Company's Information 
-2.	General Information
+1. Company's Information 
+2. General Information
 
 ## Company Information
 
@@ -57,7 +57,7 @@ In General Information, users will fill out the following details:
 
 ## Personal Information
 
- Users can also edit their personal information in Current User section. 
+Users can also edit their personal information in Current User section. 
 
 1. Click on pencil icon.
 2. Enter or change the details.
@@ -67,8 +67,8 @@ In General Information, users will fill out the following details:
 
 ### Users can also change the passwords
 
-1.	Click on the Change Password button, as shown in the above image.
-2.	Fill out the details and click Save button, as shown in the image below
+1. Click on the Change Password button, as shown in the above image.
+2. Fill out the details and click Save button, as shown in the image below
 
 ![alt text][change-pwd2]
 
@@ -92,10 +92,10 @@ Users can add other users in this section. Names with their emails shall appear 
 
 To add a new user, simply:
 
-1.	Click on the Users section, highlighted as red in the image below.
-2.	Click the '+' icon to add a new user, highlighted as orange in the image below.
-3.	Pop-up will show up and fill out the details of the dialog box.
-4.	Click on Save button.
+1. Click on the Users section, highlighted as red in the image below.
+2. Click the '+' icon to add a new user, highlighted as orange in the image below.
+3. Pop-up will show up and fill out the details of the dialog box.
+4. Click on Save button.
  
 ![alt text][users]
 
@@ -130,24 +130,24 @@ Users can set the APIs also. The overall view of API section is as follows:
 
 Users can add the new API by:
 
-1.	Click on the Add New button, highlighted as orange.
-2.	Select either PayPal or Stripe.
-3.	Fill out the details of the dialog box and press Save button.
+1. Click on the Add New button, highlighted as orange.
+2. Select either PayPal or Stripe.
+3. Fill out the details of the dialog box and press Save button.
 
 ### For PayPal:
  
 ![alt text][paypal]
  
-1.	Users will add the Username.
-2.	Users will select the mode from the dropdown menu options, either as test or live.
-3.	Users will add the Email and signatures.
+1. Users will add the Username.
+2. Users will select the mode from the dropdown menu options, either as test or live.
+3. Users will add the Email and signatures.
 
 For Stripe:
 
 ![alt text][stripe] 
  
-1.	Users will select the mode from the dropdown menu, either as test or live
-2.	Users will write the Public Key and Private Key in the respective text fields.
+1. Users will select the mode from the dropdown menu, either as test or live
+2. Users will write the Public Key and Private Key in the respective text fields.
 
 Users can also:
 
@@ -164,33 +164,33 @@ To add a new domain, simply:
 
 1. Click on the '+' icon to add new domain.
 2. Pop-up will show up and add the details of the dialog box.
-3.	Click on the Save button.
+3. Click on the Save button.
 
 The details of the dialog box are as follows:
 
 ![alt text][add-new-domain]
 
-1.	Users will write the Domain in the text field.
-2.	Users will select the Carrier Signup and Customer Signup from the dropdown menu options.
-3.	Users will set the New Customer Debit Limit.
-4.	Users will set the New Customer Status either as Active or Pending Approval.
-5.	Users Access Area shall also be selected. (Carrier Portal, CDR, Rate Card, Balance etc.). 
+1. Users will write the Domain in the text field.
+2. Users will select the Carrier Signup and Customer Signup from the dropdown menu options.
+3. Users will set the New Customer Debit Limit.
+4. Users will set the New Customer Status either as Active or Pending Approval.
+5. Users Access Area shall also be selected. (Carrier Portal, CDR, Rate Card, Balance etc.). 
 
 Users can also Refresh or Delete the name of the domains.
 
 Users can also edit the Domains.
 
-1.	Click on the Domains from the list.
-2.	Edit the details.
-3.	Click on Save button.
+1. Click on the Domains from the list.
+2. Edit the details.
+3. Click on Save button.
 
 ## Payments
 
 Users can make their payments at any time with such ease. All they have to do is:
 
-1.	Click on the Make Payment button.
-2.	Fill out the details of pop-up.
-3.	Click on Submit Payment.
+1. Click on the Make Payment button.
+2. Fill out the details of pop-up.
+3. Click on Submit Payment.
 	
 ![alt text][payments]
 
@@ -227,10 +227,10 @@ To add a new package:
 
 Users can check all the lists of the servers and also can refresh them.
 
-1.	Go to the Setup, from the left pane and select My Server.
-2.	Click on the All Servers button.
-3.	List of servers will show up.
-4.	Refresh the lists, if needed, by pressing the Refresh button.
+1. Go to the Setup, from the left pane and select My Server.
+2. Click on the All Servers button.
+3. List of servers will show up.
+4. Refresh the lists, if needed, by pressing the Refresh button.
 
 ![alt text][my-server]
 
