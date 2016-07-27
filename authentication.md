@@ -4,7 +4,7 @@
 * [Authentication Methods](#authentication-methods)
    * [UAC](#uac)
       * [Username & Password](#username-&-password)
-  * [IP Authentication](#ip-authentication)
+      * [IP Authentication](#ip-authentication)
       * [Multiple Customers Per IP](#multiple-customers-per-ip)
    * [UAS](#uas)
       * [Username & Password Authentication](#username-&-password-authentication)
