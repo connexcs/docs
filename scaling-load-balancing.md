@@ -2,16 +2,16 @@
 
 * [Table of Contents](#table-of-contents)
 * [Scaling and Load Balancing](#scaling-and-load-balancing)
-  * [What is a zone?](#what-is-a-zone?)
-  * [How can I scale in a Single Zone?](#how-can-i-scale-in-a-single-zone?)
+  * [What is a zone?](#what-is-a-zone)
+  * [How can I scale in a Single Zone?](#how-can-i-scale-in-a-single-zone)
     * [Stage 1](#stage-1)
-    * [stage 2 (Alternative)](#stage-2(alternative))
+    * [stage 2 (Alternative)](#stage-2-alternative)
     * [stage 3](#stage-3)
-  * [How can I scale in Multiple Zones?](#how-can-i-scale-in-multiple-zones?)
+  * [How can I scale in Multiple Zones?](#how-can-i-scale-in-multiple-zones)
   * [Best practices](#best-practices)
-  * [Does using ConnexCS guarantee a HA (High Availability) solution?](#does-using-connexcs-guarantee-a-ha-(high-availability) solution?)
-  * [How quickly could I deploy 5 servers in each zone with load balancers and DNS?](#how-quickly-could-I-deploy-5-servers-in-each-zone-with-load-balancers-and-dns?)
-  * [Can you help me with my DNS requirements?](#can-you-help-me-with-my-dns-requirements?)
+  * [Does using ConnexCS guarantee a HA (High Availability) solution?](#does-using-connexcs-guarantee-a-ha-high-availability-solution?)
+  * [How quickly could I deploy 5 servers in each zone with load balancers and DNS?](#how-quickly-could-I-deploy-5-servers-in-each-zone-with-load-balancers-and-dns)
+  * [Can you help me with my DNS requirements?](#can-you-help-me-with-my-dns-requirements)
 
 
 # Scaling and Load Balancing
