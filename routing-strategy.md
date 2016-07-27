@@ -2,11 +2,11 @@
 
 * [Table of Contents](#table-of-contents)
 * [Routing Strategy](#routing-strategy)
-  * [Types of Routing Strategies](#types-of-routing-strategies)
-  * [Adding New Routing Strategy](#adding-new-routing-strategy)
-  * [Deleting the Routing Strategy](#deleting-the-routing-strategy)
-  * [Edit the Routing Strategy](#edit-the-routing-strategy)
-  * [Adding and Deleting Card](#adding-and-deleting-card)
+    * [Types of Routing Strategies](#types-of-routing-strategies)
+    * [Adding New Routing Strategy](#adding-new-routing-strategy)
+    * [Deleting the Routing Strategy](#deleting-the-routing-strategy)
+    * [Edit the Routing Strategy](#edit-the-routing-strategy)
+    * [Adding and Deleting Card](#adding-and-deleting-card)
 
 
 # Routing Strategy
