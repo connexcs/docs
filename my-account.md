@@ -7,7 +7,7 @@
   * [General Information](#general-information)
   * [Personal Information](#personal-information)
   	* [Users can also change the passwords](#users-can-also-change-the-passwords)
-  	* [Users can also edit SMTP Details.](# users-can-also-edit-smtp-details.)
+  	* [Users can also edit SMTP Details](#users-can-also-edit-smtp-details)
   * [API (Application Programming Interface)](#api-(-application-programming-interface))
   	* [Adding New API](#adding-new-api)
   	* [For PayPal](#for-paypal)
