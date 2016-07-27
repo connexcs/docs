@@ -14,7 +14,6 @@ pages:
     - Ingress Routing: ingress-routing.md
     - NAT Traversal: far-end-nat-traversal.md
     - Credit Control: credit-control.md
-    - Billing: billing.md
     - My Account: my-account.md
     - Routing Strategy: routing-strategy.md
     - CLI Restriction: cli-restriction.md
@@ -38,3 +37,4 @@ pages:
     - Media Handling: media-handling.md
     - Scaling and Load Balancing: scaling-load-balancing.md 
     - Scriptforge: scriptforge.md
+    - Billing: billing.md
