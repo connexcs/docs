@@ -1,3 +1,23 @@
+# Table of Contents
+
+* [Table of Contents](#table-of-contents)
+* [Rate Card Building](#rate-card-building)
+  * [Rate Card Compilation Engine](#rate-card-compilation-engine)
+    * [Different Length Prefixes](#different-length-prefixes)
+     * [Why do I have alot of long prefixes?](#why-do-i-have-alot-of-long-prefixes?)
+    * [Combining](#combining)
+      * [Between Cards](#between-cards)
+      * [Different Card Types](#different-card-types)
+    * [Adding Profits](#adding-profits)
+    * [Why should I use this?](#why-should-i-use-this?)
+      * [Example 1](#example-1)
+      * [Example 2](#example-2)
+      * [Example 3](#example-3)
+    * [Outputs](#outputs)
+      * [Minimum](#minimum)
+      * [maximum](#maximum)
+      * [Average](#average)
+
 # Rate Card Building
 
 It is good practice to base your rate cards around provider cards rather than to just make your own up. This is for many reasons. One of which is code accuracy. 
@@ -10,7 +30,7 @@ Based on how you wish to calculate these it can take the min,max or average valu
 ### Different Length Prefixes
 The ConnexCS rate card engine can deal with arbitrary length prefixes and understand strict rules that are required when merging these together.
 
-#### Why do I have alot of long prefixes
+#### Why do I have alot of long prefixes?
 In order to ensure accuracy it may be required to **normalize** rate cards when combining them. This process makes all the cards comparible and can cause additional prefixes to be added. These changes are safe and are to increase granularity, they will not introduce errors. After the compilation process has taken place additional scripts are run to make the rate card smaller again, however the primary goal of the engine is accuracy.
 
 ### Combining
