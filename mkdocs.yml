@@ -32,7 +32,8 @@ pages:
     - Routing Engine: routing-engine.md
     - Limiting: limiting-cps.md
     - API: api.md
-    - CLI Restriction: cli-restriction.mdcredit-control.md
+    - CLI Restriction: cli-restriction.md
+    - Credit Control: credit-control.md
     - Logging: logging.md
     - Media Handling: media-handling.md
     - Routing Strategy: routing-strategy.md
