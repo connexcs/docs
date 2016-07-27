@@ -10,7 +10,7 @@
   * [Edit Carrier](#edit-carrier)
 
 
-# Carrier Management
+# Carrier Managements
 
 Carriers can be easily and efficiently managed with the help of **Connex.** It allows you to not only add, edit and delete carriers but also lets you view the columns you want to see. 
 
