@@ -1,3 +1,14 @@
+# Table of Contents
+
+* [Table of Contents](#table-of-contents)
+* [Mass Payments with Paypal IPN](#mass-payments-with-paypal-ipn)
+  * [Mass Payments](#mass-payments)
+  * [What is PayPal IPN?](#what-is-paypal-ipn?)
+    * [Inserting the IPN URL in your PayPal account](#inserting-the-ipn-url-in-your-paypal-account)
+    * [Inserting credentials in your Connex Account](#inserting-credentials-in-your-connex-account)
+    * [How to add customer PayPal Email address on ConnexCS customer account](#how-to-add-customer-paypal-email-address-on-connexcs-customer-account)
+
+
 # Mass Payments with Paypal IPN
 
 ## Mass Payments
