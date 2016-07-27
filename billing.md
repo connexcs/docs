@@ -1,3 +1,17 @@
+# Table of Contents
+
+* [Table of Contents](#table-of-contents)
+* [Billing](#billing)
+  * [ConnexCS Billing per channel](#connexcs-billing-per-channel)
+    * [Advantages](#advantages)
+    * [Disadvantages](#disadvantages)
+  * [ConnexCS Billing per minute](#connexcs-billing-per-minute)
+    * [Advantages](#advantages)
+    * [Disadvantages](#disadvantages)
+  * [Minimum Charges](#minimum-charges)
+  * [Capacity Planning](#capacity-planning)
+
+
 # Billing
 
 When you subscribe to ConnexCS you have 2 main tariffs that you can use: either per minute or per channel.
