@@ -1,6 +1,6 @@
-# Table of Content
+# Table of Contents
 
-* [Table of Content](#table-of-content)
+* [Table of Contents](#table-of-contents)
 * [Authentication Methods](#authentication-methods)
    * [UAC](#uac)
       * [Username and Password](#username-and-password)
