@@ -2,12 +2,12 @@
 
 * [Table of Contents](#table-of-contents)
 * [Carrier Management](#carrier-management)
-  * [Add a New Carrier](#add-a-new-carrier)
-  * [Deleting Carriers](#deleting-carriers)
-  * [Checking the Status](#checking-the-status)
-  * [Searching Carrier](#searching-carrier)
-  * [Customizing the View](#customizing-the-view)
-  * [Edit Carrier](#edit-carrier)
+   * [Add a New Carrier](#add-a-new-carrier)
+   * [Deleting Carriers](#deleting-carriers)
+   * [Checking the Status](#checking-the-status)
+   * [Searching Carrier](#searching-carrier)
+   * [Customizing the View](#customizing-the-view)
+   * [Edit Carrier](#edit-carrier)
 
 
 # Carrier Management
