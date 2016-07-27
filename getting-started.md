@@ -77,9 +77,13 @@ Following figure shows the details of the modal window opened to add a new custo
 
 Brief description of the fields present in the above dialog box is as follows:
 
+
 * Customer Name: Users will add the name of their customer.
+
 * Paypal Email: Users will add Paypal Email of the customers in the text field.
+
 * Website: Users will add website of the customer.
+
 * Status: Users can choose the "Status" of the customer as:
 
   1. Active
@@ -87,9 +91,13 @@ Brief description of the fields present in the above dialog box is as follows:
   3. Pending Approval
 
 * Debit Limit: "Debit Limit" will be added by the user.
+
 * Tax: "Tax" in percentage will also be added by the user.
+
 * Currency: "Currency" will also be selected from the dropdown menu.
+
 * Portal Access: Users will select the "Portal Access" from the options either Yes or No.
+
 * Address: "Address" of the customers will be filled out by the user. 
 
 ### Edit Customers
