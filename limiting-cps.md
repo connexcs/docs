@@ -1,3 +1,10 @@
+# Table of Contents
+
+* [Table of Contents](#table-of-contents)
+* [Limiting CPS & Channels](#limiting cps-&-channels)
+  * [What happens when my server reaches capacity?](#what-happens-when-my-server-eaches-capacity?)
+
+
 # Limiting CPS & Channels
 
 The switch can limit CPS and channels in the following areas:
