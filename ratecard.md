@@ -1,3 +1,15 @@
+# Table of Contents
+
+* [Table of Contents](#table-of-contents)
+* [Rate Cards Management](#rate-cards-management)
+  * [Adding New Provider Card](#adding-new-provider-card)
+    * [At Basic level](#at-basic-level)
+    * [At Advanced level](#at-advanced-level)
+  * [Uploading a File](#uploading-a-file)
+  * [Deleting a Provider Rate Card](#deleting-a-provider-rate-card)
+  * [Searching the Provider Rate Cards](#searching-the-provider-rate-cards)
+
+
 # Rate Cards Management
 
 Rate Card is one of the most important feature of Connex and managing rate cards is very easy and convenient.
@@ -20,7 +32,7 @@ Users can manage the rate cards by performing following actions.
 
 Users can add new provider card at both basic and advanced level. 
 
-### At Basic level:
+### At Basic level
 
 1. Users can add the Name of provider.
 2. Carrier can be selected from the drop down menu.
@@ -29,7 +41,7 @@ Users can add new provider card at both basic and advanced level.
 
 ![alt text][ratecard]
 
-### At Advanced level:
+### At Advanced level
 
 Users will fill out the following text fields:
 
@@ -43,7 +55,7 @@ Users will fill out the following text fields:
 
 ![alt text][edit-provider-card]
 
-### Uploading a File
+## Uploading a File
 
 Next to the **Add New Provider Card** button, there is an **"Upload File"** button. Click on it and a new page will open, showing the files that are already uploaded, if any.
 
@@ -54,14 +66,14 @@ Users can upload a file by following these steps:
 2. Browse a file from the system. 
 3. Upload it.
 
-### Deleting a Provider Rate Card
+## Deleting a Provider Rate Card
 
 Users can delete the Provider cards that were saved earlier. Just follow the steps mentioned below:
 
 1. Select the Provider Card by check marking the entire row from the list.
 2. Press the **Delete** button which is next to the **"Upload File"** button.
 
-### Searching the Provider Rate Cards
+## Searching the Provider Rate Cards
 
 Users can search the **"Provider Rate Cards"** from the search text field and get the results, instantly. 
 Edit Rate Cards
