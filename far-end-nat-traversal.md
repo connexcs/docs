@@ -1,3 +1,11 @@
+# Table of Contents
+
+* [Table of Contents](#table-of-contents)
+* [Far End NAT Traversal](#far-end-nat-traversal)
+  * [Pre Text](#pre-text)
+    * [What is Far end Nat Traversal?](#what-is-far-end-nat-traversal?)
+    * [What NAT detection methods does ConnexCS use?](#what-nat-detection-methods-does-connexcs-use?)
+
 # Far End NAT Traversal
 
 ## Pre Text
