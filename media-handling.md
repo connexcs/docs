@@ -1,3 +1,12 @@
+# Table of Contents
+
+* [Table of Contents](#table-of-contents)
+* [ConnexCS Media Handling](#connexcs-media-handling)
+   * [Why do I see different media IP addresses?](#why-do-i-see-different-media-ip-addresses?)
+   * [Why do you not run media and signaling together?](#why-do-you-not-run-media-and-signaling-together?)
+   * [Server Specific optimizations](#server-specific-optimizations)
+
+
 # ConnexCS Media Handling
 
 ## Why do I see different media IP addresses?
