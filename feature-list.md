@@ -8,7 +8,7 @@
   * [CDR Management](#cdr-management)
   * [Logging](#logging)
   * [Server](#server)
-  * [Scriptforge](#scriptforge)
+  * [Scriptforged](#scriptforged)
   * [Support](#support)
 
 
