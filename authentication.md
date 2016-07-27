@@ -47,7 +47,7 @@ IP authentication is supported on the ConnexCS platform. You can allow a custome
     * CLI Prefix to be added to received CLI
     * Force From to modify the `From` Field
 
-#### Multiple Customers Per IP
+### Multiple Customers Per IP
 ConnexCS Supports multiple customers per IP when using IP Authentication. To ensure clear identification between customers sharing the same IP address, a _tech prefix_ is **required**.
 
 ## UAS
