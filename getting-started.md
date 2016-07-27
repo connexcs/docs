@@ -29,8 +29,11 @@ Initial set-up will configure a single carrier, single customer and single rate 
 
 ## Prerequisites
 This guide will assume:
+
 1. You have a modern web browser.
+
 2. You have a basic understanding of Telecoms (Customers, Provider, etc).
+
 3. You have already created an account with ConnexCS.com.
 
 ### Prerequisites Customer
