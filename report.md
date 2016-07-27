@@ -2,12 +2,12 @@
 
 * [Table of Contents](#table-of-contents)
 * [Reports Management](#reports-management)
-  * [Breakout](#breakout)
-  * [Selection of Customers, Providers and Destination](#selection-of-customers,providers-and-destination)
-  * [Selecting Multiple Customers](#selecting-multiple-customers)
-  * [Selecting Multiple Providers](#selecting-multiple-providers)
-  * [Selecting Multiple Destinations](#selecting-multiple-destinations)
-  * [Selecting the Range of Dates](#selecting-the-range-of-dates)
+    * [Breakout](#breakout)
+    * [Selection of Customers, Providers and Destination](#selection-of-customers,providers-and-destination)
+    * [Selecting Multiple Customers](#selecting-multiple-customers)
+    * [Selecting Multiple Providers](#selecting-multiple-providers)
+    * [Selecting Multiple Destinations](#selecting-multiple-destinations)
+    * [Selecting the Range of Dates](#selecting-the-range-of-dates)
 
 # Reports Management
 
