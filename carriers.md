@@ -1,3 +1,15 @@
+# Table of Contents
+
+* [Table of Contents](#table-of-contents)
+* [Carrier Management](#carrier-management)
+  * [Add a New Carrier](#add-a-new-carrier)
+  * [Deleting Carriers](#deleting-carriers)
+  * [Checking the Status](#checking-the-status)
+  * [Searching Carrier](#searching-carrier)
+  * [Customizing the View](#customizing-the-view)
+  * [Edit Carrier](#edit-carrier)
+
+
 # Carrier Management
 
 Carriers can be easily and efficiently managed with the help of **Connex.** It allows you to not only add, edit and delete carriers but also lets you view the columns you want to see. 
