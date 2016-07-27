@@ -29,11 +29,8 @@ Initial set-up will configure a single carrier, single customer and single rate 
 
 ## Prerequisites
 This guide will assume:
-
 1. You have a modern web browser.
-
 2. You have a basic understanding of Telecoms (Customers, Provider, etc).
-
 3. You have already created an account with ConnexCS.com.
 
 ### Prerequisites Customer
@@ -67,8 +64,11 @@ The videos on this page are to show a quick example of how to setup your account
 ### Add Customers
 
 Users can add customers by following the simple instructions.
+
 1. Click on the Add Customer button.
+
 2. Fill out the customer details on the dialog box.
+
 3. Press Save button to add customers on the list. 
 
 Following figure shows the details of the modal window opened to add a new customer:
@@ -76,10 +76,12 @@ Following figure shows the details of the modal window opened to add a new custo
 ![alt text][add-customer]
 
 Brief description of the fields present in the above dialog box is as follows:
+
 * Customer Name: Users will add the name of their customer.
 * Paypal Email: Users will add Paypal Email of the customers in the text field.
 * Website: Users will add website of the customer.
 * Status: Users can choose the "Status" of the customer as:
+
   1. Active
   2. Inactive
   3. Pending Approval
