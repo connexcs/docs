@@ -1,12 +1,12 @@
 # Table of Content
 
-* [Table of Contents](#table-of-contents)
+* [Table of Contents](#table-of-content)
 * [Authentication Methods](#authentication-methods)
    * [UAC](#uac)
       * [Username & Password](#username-&-password)
   * [IP Authentication](#ip-authentication)
       * [Multiple Customers Per IP](#multiple-customers-per-ip)
-   * [UAS](#uaS)
+   * [UAS](#uas)
       * [Username & Password Authentication](#username-&-password-authentication)
    * [ConnexCS Independent Considerations](#connexcs-independenti-considerations)
       * [Additional Security](#additional-security) 
