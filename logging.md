@@ -6,9 +6,6 @@
   * [Look up for Calls](#look-up-for-calls)
   * [Refreshing the Logs](#refreshing-the-logs)
   * [Searching the Logs](#searching-the-logs)
-  * [Customizing the View](#customizing-the-view)
-  * [Edit Carrier](#edit-carrier)
-
 
 # Logging
 
