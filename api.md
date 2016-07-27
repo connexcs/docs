@@ -2,9 +2,9 @@
 
 * [Table of Contents](#table-of-contents)
 * [API](#api)
-* [Switch Administration](#switch-administration)
-* [Customer Administration](#customer-administration)
-* [Lookup Services](#lookup-services)
+  * [Switch Administration](#switch-administration)
+  * [Customer Administration](#customer-administration)
+  * [Lookup Services](#lookup-services)
 
 # API
 ConnexCS has 3 distinct API's each accessible through a different URL but all follow the same specification.
