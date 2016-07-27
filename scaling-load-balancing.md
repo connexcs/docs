@@ -1,4 +1,20 @@
-## Scaling and Load Balancing
+# Table of Contents
+
+* [Table of Contents](#table-of-contents)
+* [Scaling and Load Balancing](#scaling-and-load-balancing)
+  * [What is a zone?](#what-is-a-zone?)
+  * [How can I scale in a Single Zone?](#how-can-i-scale-in-a-single-zone?)
+    * [Stage 1](#stage-1)
+    * [stage 2 (Alternative)](#stage-2(alternative))
+    * [stage 3](#stage-3)
+  * [How can I scale in Multiple Zones?](#how-can-i-scale-in-multiple-zones?)
+  * [Best practices](#best-practices)
+  * [Does using ConnexCS guarantee a HA (High Availability) solution?](#does-using-connexcs-guarantee-a-ha-(high-availability) solution?)
+  * [How quickly could I deploy 5 servers in each zone with load balancers and DNS?](#how-quickly-could-I-deploy-5-servers-in-each-zone-with-load-balancers-and-dns?)
+  * [Can you help me with my DNS requirements?](#can-you-help-me-with-my-dns-requirements?)
+
+
+# Scaling and Load Balancing
 
 The ConnexCS platform is highly scalable in terms of Channels, CPS and in single / multiple zones.
 
@@ -22,7 +38,7 @@ Single Server.
 
 2 Servers: If you wish to scale beyond a server in a single zone the first  recommended method is primary / secondary. This 2 server setup points all calls to a single server which when capacity is reached (on a call by call basis) calls are     passed over to the secondary server.
 
-#### Stage 2 (Alternative).
+#### Stage 2 (Alternative)
 
 If you are using DNS to provide connectivity to your customers, you can setup round robin or, even better, SRV records with your DNS provider to distribute calls on the DNS level. This allows multiple servers to act as the primary server on a call by call basis.
 
