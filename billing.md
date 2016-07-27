@@ -6,8 +6,8 @@
     * [Advantages](#advantages)
     * [Disadvantages](#disadvantages)
   * [ConnexCS Billing per minute](#connexcs-billing-per-minute)
-    * [Advantages](#advantages)
-    * [Disadvantages](#disadvantages)
+    * [Advantages](#advantages_1)
+    * [Disadvantages](#disadvantages_1)
   * [Minimum Charges](#minimum-charges)
   * [Capacity Planning](#capacity-planning)
 
