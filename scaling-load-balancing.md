@@ -9,8 +9,8 @@
     * [Stage 3](#stage-3)
   * [How can I scale in Multiple Zones?](#how-can-i-scale-in-multiple-zones)
   * [Best practices](#best-practices)
-  * [Does using ConnexCS guarantee a HA (High Availability) solution?](#does-using-connexcs-guarantee-a-ha-high-availability-solution?)
-  * [How quickly could I deploy 5 servers in each zone with load balancers and DNS?](#how-quickly-could-I-deploy-5-servers-in-each-zone-with-load-balancers-and-dns)
+  * [Does using ConnexCS guarantee a HA (High Availability) solution?](#does-using-connexcs-guarantee-a-ha-high-availability-solution)
+  * [How quickly could I deploy 5 servers in each zone with load balancers and DNS?](#how-quickly-could-i-deploy-5-servers-in-each-zone-with-load-balancers-and-dns)
   * [Can you help me with my DNS requirements?](#can-you-help-me-with-my-dns-requirements)
 
 
