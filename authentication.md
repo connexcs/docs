@@ -18,7 +18,7 @@ ConnexCS supports 2 methods of authentication including User / Pass in UAS mode.
 ## UAC
 _Authentication from user / customers_
 
-### Username & Password
+### Username and Password
 Username & Password authentication is supported on the ConnexCS platform. You can allow a customer to use this method of authentication with the following steps:
 
 1. Click on customer and select the customer name you wish to add authentication for.
