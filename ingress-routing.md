@@ -122,7 +122,7 @@ You could not use an RTP Proxy if:
 1. You have other equipment in your SIP set-up which will act as a Media Relay.
 2. You want to run a test to see if audio problems are related to the Connex Cloud Switch.
 
-## Options:-
+## Options :-
 
 * RTP Media Proxy
 
