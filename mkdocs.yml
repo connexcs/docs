@@ -16,6 +16,8 @@ pages:
     - Credit Control: credit-control.md
     - Billing: billing.md
     - My Account: my-account.md
+    - Routing Strategy: routing-strategy.md
+    - CLI Restriction: cli-restriction.md
  
 - CARRIERS: 
     - Carriers: carriers.md
@@ -32,11 +34,7 @@ pages:
     - Routing Engine: routing-engine.md
     - Limiting: limiting-cps.md
     - API: api.md
-    - CLI Restriction: cli-restriction.md
-    - Credit Control: credit-control.md
     - Logging: logging.md
     - Media Handling: media-handling.md
-    - Routing Strategy: routing-strategy.md
     - Scaling and Load Balancing: scaling-load-balancing.md 
     - Scriptforge: scriptforge.md
-    - SIP Traces: sip-traces.md
