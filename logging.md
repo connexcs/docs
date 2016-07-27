@@ -1,3 +1,15 @@
+# Table of Contents
+
+* [Table of Contents](#table-of-contents)
+* [Logging](#logging)
+  * [Simulating Calls](#simulating-calls)
+  * [Look up for Calls](#look-up-for-calls)
+  * [Refreshing the Logs](#refreshing-the-logs)
+  * [Searching the Logs](#searching-the-logs)
+  * [Customizing the View](#customizing-the-view)
+  * [Edit Carrier](#edit-carrier)
+
+
 # Logging
 
 From the Dashboard, you can go to Quick Links and click respective logging button, as highlighted in the image below. Or, you can also go to the **Management** tab from the left panel and click on **Logging.**
