@@ -3,7 +3,7 @@
 * [Table of Content](#table-of-content)
 * [Authentication Methods](#authentication-methods)
    * [UAC](#uac)
-      * [Username & Password](#username-&-password)
+      * [Username and Password](#username-and-password)
       * [IP Authentication](#ip-authentication)
       * [Multiple Customers Per IP](#multiple-customers-per-ip)
    * [UAS](#uas)
