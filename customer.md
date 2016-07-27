@@ -1,8 +1,8 @@
 # Table of Contents
 
 * [Table of Contents](#table-of-contents)
-* [Customer Management](#customer -management)
-  * [Add Customer](#add-customer)
+* [Customer Management](#customer-management)
+  * [Adding Customer](#adding-customer)
   * [Delete Customers](#delete-customers)
   * [Checking the Status](#checking-the-status)
   * [Searching Customers](#searching-customers)
