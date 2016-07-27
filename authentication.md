@@ -7,7 +7,7 @@
       * [IP Authentication](#ip-authentication)
       * [Multiple Customers Per IP](#multiple-customers-per-ip)
    * [UAS](#uas)
-      * [Username & Password Authentication](#username-&-password-authentication)
+      * [Username & Password Authentication](#username-and-password-authentication)
    * [ConnexCS Independent Considerations](#connexcs-independenti-considerations)
       * [Additional Security](#additional-security) 
 
@@ -55,7 +55,7 @@ _Authentication from the ConnexCS server against providers_
 
 When sending calls out, as there is no action required on ConnexCS part, IP Authentication will work.
 
-### Username & Password Authentication
+### Username and Password Authentication
 ConnexCS supports Username / Password Authentication against upstream providers. You can add an upstream provider and instruct ConnexCS to respond to `407 Proxy Authentication Required` by using the following method:
 
 1. Click on carrier and select the carrier name you wish to add authentication for.
