@@ -1,3 +1,16 @@
+# Table of Content
+
+* [Table of Contents](#table-of-contents)
+* [Authentication Methods](#authentication-methods)
+   * [UAC](#uac)
+      * [Username & Password](#username-&-password)
+  * [IP Authentication](#ip-authentication)
+      * [Multiple Customers Per IP](#multiple-customers-per-ip)
+   * [UAS](#uaS)
+      * [Username & Password Authentication](#username-&-password-authentication)
+   * [ConnexCS Independent Considerations](#connexcs-independenti-considerations)
+      * [Additional Security](#additional-security) 
+
 # Authentication Methods
 
 ConnexCS supports 2 methods of authentication including User / Pass in UAS mode.
