@@ -1,4 +1,4 @@
-# Table of Content
+# Table of Contents
 
 * [Table of Contents](#table-of-contents)
 * [API](#api)
