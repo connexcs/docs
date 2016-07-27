@@ -1,3 +1,17 @@
+# Table of Contents
+
+* [Table of Contents](#table-of-contents)
+* [ScriptForge](#scriptforge)
+  * [Design Considerations](#design-considerations)
+    * [Memory](#memory)
+    * [CPU (Time Limit)](#cpu-(time-limit))
+    * [Javascript](#javascript)
+    * [PHP](#php)
+    * [Durability](#durability)
+    * [Scalability](#scalability)
+    * [Functionality](#functionality)
+
+
 # ScriptForge
 
 The ScriptForge allows you to write your own application which can be run at specific events in the system, currently the following places support scripting functionality:
