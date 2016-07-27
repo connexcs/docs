@@ -2,11 +2,11 @@
 
 * [Table of Contents](#table-of-contents)
 * [Customer Management](#customer-management)
- * [Adding Customer](#adding-customer)
- * [Delete Customers](#delete-customers)
- * [Checking the Status](#checking-the-status)
- * [Searching Customers](#searching-customers)
- * [Edit Customers](#edit-customers)
+  * [Adding Customer](#adding-customer)
+  * [Delete Customers](#delete-customers)
+  * [Checking the Status](#checking-the-status)
+  * [Searching Customers](#searching-customers)
+  * [Edit Customers](#edit-customers)
 
 
 # Customer Management
