@@ -1,3 +1,23 @@
+# Table of Contents
+
+* [Table of Contents](#table-of-contents)
+* [Ingress Routing](#ingress-routing)
+  * [Tariff](#tariff)
+  * [Tech Prefix](#tech-prefix)
+  * [Channels](#channels)
+  * [Dial String](#dial-string)
+  * [Missing BYE Protection](#missing-bye-protection)
+  * [Maximum Duration](#maximum-duration)
+  * [Time-out Methods](#time-out-methods)
+  * [Profit Assurance](#profit-assurance)
+  * [Lock Parent Card](#lock-parent-card)
+  * [Exclude Parent Cards](#exclude-parent-cards)
+  * [ScriptForge](#scriptforge)
+  * [RTP Proxy Modes](#rtp-proxy-modes)
+  * [Options](#options)
+
+
+
 # Ingress Routing
 
 Ingress routing allows incoming attempts to be sent to the correct rate card which in turn egress through the specified provider.
@@ -20,18 +40,18 @@ This will impose a limit on how many channels are allowed through this ingress r
 
 Dial string will let only the entered prefixes through, listed as one per line. Note: Both prefix and regular expressions are allowed, for example, if you only wanted to allow UK Landline you could use
 
-### Prefix
+* Prefix
 
 ```
 441
 442
 ```
 
-### Regular Expression (RegEx)
+* Regular Expression (RegEx)
 ```
 44(1|2)
 ```
-### Combination (UK Landline & Canada)
+* Combination (UK Landline & Canada)
 ```
 441
 442
