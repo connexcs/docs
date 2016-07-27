@@ -2,7 +2,7 @@
 
 * [Table of Contents](#table-of-contents)
 * [Credit Control](#credit-control)
-  * [Pre-pay / Post Pay](#pre-pay-/-post-pay)
+  * [Pre-pay/Post Pay](#pre-pay-/-post-pay)
     * [Automatic Cut Off (Is it Real time?)](#automatic-cut-off-(is-it-real-time?))
     * [What's the best way to make sure I don't overspend by a single penny?](#what's-the-best-way-to-make-sure-i-don't-overspend-by-a single-penny?)
     * [Is it possible to implement a 100% real-time credit control that stops my account exactly on 0?](#-is-it-possible-to-implement-a-100%-real-time-credit-control-that-stops-my-account-exactly-on-0?)
