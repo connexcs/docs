@@ -1,3 +1,8 @@
+# Table of Contents
+
+* [Table of Contents](#table-of-contents)
+* [Routing](#routing)
+
 # Routing
 
 Routing in ConnexCS Cloudswitch happens in the following stages
