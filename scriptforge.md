@@ -4,7 +4,7 @@
 * [ScriptForge](#scriptforge)
   * [Design Considerations](#design-considerations)
     * [Memory](#memory)
-    * [CPU (Time Limit)](#cpu-(time-limit))
+    * [CPU (Time Limit)](#cpu-time-limit)
     * [Javascript](#javascript)
     * [PHP](#php)
     * [Durability](#durability)
