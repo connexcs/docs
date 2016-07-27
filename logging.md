@@ -2,10 +2,10 @@
 
 * [Table of Contents](#table-of-contents)
 * [Logging](#logging)
-  * [Simulating Calls](#simulating-calls)
-  * [Look up for Calls](#look-up-for-calls)
-  * [Refreshing the Logs](#refreshing-the-logs)
-  * [Searching the Logs](#searching-the-logs)
+    * [Simulating Calls](#simulating-calls)
+    * [Look up for Calls](#look-up-for-calls)
+    * [Refreshing the Logs](#refreshing-the-logs)
+    * [Searching the Logs](#searching-the-logs)
 
 # Logging
 
