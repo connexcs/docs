@@ -6,6 +6,7 @@ site_author: ConnexCS Team
 pages:
 - Home: index.md
 - GETTING STARTED: getting-started.md
+- Feature List: feature-list.md
 
 - CUSTOMERS:
     - Customers: customer.md
@@ -14,6 +15,7 @@ pages:
     - NAT Traversal: far-end-nat-traversal.md
     - Credit Control: credit-control.md
     - Billing: billing.md
+    - My Account: my-account.md
  
 - CARRIERS: 
     - Carriers: carriers.md
@@ -30,3 +32,10 @@ pages:
     - Routing Engine: routing-engine.md
     - Limiting: limiting-cps.md
     - API: api.md
+    - CLI Restriction: cli-restriction.mdcredit-control.md
+    - Logging: logging.md
+    - Media Handling: media-handling.md
+    - Routing Strategy: routing-strategy.md
+    - Scaling and Load Balancing: scaling-load-balancing.md 
+    - Scriptforge: scriptforge.md
+    - SIP Traces: sip-traces.md
