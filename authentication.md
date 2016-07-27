@@ -8,7 +8,7 @@
       * [Multiple Customers Per IP](#multiple-customers-per-ip)
    * [UAS](#uas)
       * [Username and Password Authentication](#username-and-password-authentication)
-   * [ConnexCS Independent Considerations](#connexcs-independenti-considerations)
+   * [ConnexCS Independent Considerations](#connexcs-independent-considerations)
       * [Additional Security](#additional-security) 
 
 # Authentication Methods
