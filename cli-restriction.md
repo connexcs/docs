@@ -1,3 +1,9 @@
+# Table of Contents
+
+* [Table of Contents](#table-of-contents)
+* [CLI Restriction](#cli-restriction)
+  * [How to add CLI](#how-to-add-cli)
+
 # CLI Restriction
 
 CLI Restriction enables you to pass a CLI which is presented on the customer's account. Anything without a valid CLI will not be passed through.
@@ -8,7 +14,7 @@ Checking the Force CLI option will let the user to pass the CLI without having t
 
 **CLI = Caller Line Identification**
 
-### How to add CLI?
+## How to add CLI?
 
 * Click on Managment > Customer > [Customer name]
 
