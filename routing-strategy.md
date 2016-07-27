@@ -1,3 +1,14 @@
+# Table of Contents
+
+* [Table of Contents](#table-of-contents)
+* [Routing Strategy](#routing-strategy)
+  * [Types of Routing Strategies](#types-of-routing-strategies)
+  * [Adding New Routing Strategy](#adding-new-routing-strategy)
+  * [Deleting the Routing Strategy](#deleting-the-routing-strategy)
+  * [Edit the Routing Strategy](#edit-the-routing-strategy)
+  * [Adding and Deleting Card](#adding-and-deleting-card)
+
+
 # Routing Strategy
 
 The **Routing Strategy** allows you to route calls of different providers through routing engine according to the routing strategy you set. Routing Strategy is an extremely useful feature which allows you to adopt the routing strategy which suits best to your business need.
