@@ -100,6 +100,8 @@ User can take any desired action by making use of these options.
 
 ![alt text][using-ratecard]
 
+![alt text][using-ratecard1]
+
 [ratecard-dashboard-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/ratecard-dashboard-new.png "ratecard1"
 
 [add-new-provider]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/add-new-provider.png "add-new-provider"
@@ -113,3 +115,5 @@ User can take any desired action by making use of these options.
 [other-options]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/other-options.png "other-options"
 
 [using-ratecard]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/using-ratecard.png "using-ratecard"
+
+[using-ratecard1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/using-ratecard1.png "using-ratecard1"
