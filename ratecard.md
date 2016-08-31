@@ -100,6 +100,10 @@ User can take any desired action by making use of these options.
 
 ![alt text][using-ratecard1]
 
+In a Customer Rate Card, it is possible to set a routing strategy. At the moment the functionility is basic, you can only select between LCR, Random, Round Robin, Reverse LCR.
+
+This allows you to change the default behaviour of a card, it looses priority against routing strategy, if a rule is set in here routing strategy, it ignores anything set in customer card.
+
 [ratecard-dashboard-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/ratecard-dashboard-new.png "ratecard1"
 
 [add-new-provider]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/add-new-provider.png "add-new-provider"
