@@ -18,7 +18,7 @@ Checking the Force CLI option will let the user to pass the CLI without having t
 
 * Click on Managment > Customer > [Customer name]
 
-* lick on Routing Routing
+* Click on Routing Routing
 
 # Image Needed
 
