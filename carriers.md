@@ -106,6 +106,12 @@ Following figure demonstrates the **Edit Carrier** button:
 
 ![alt text][carrier-dashboard]
 
+##Code Consistency
+
+This measures the changes of response codes on the SAME number that have been returned from the carrier. It is useful for identifying if the carrier is using routes of different quality or generally poor quality overall. Good carriers will have a 100% code consistency.
+
+The metric only takes into account 200 and 404's.
+
 [carrier-dashboard]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-dashboard.png "Carrier-Dashboard"
 [carrier-list]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-list.png "Carrier-List"
 [add-carriers]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/add-carriers.png "Add-Carrier"
