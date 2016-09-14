@@ -1,7 +1,7 @@
 # Table of Contents
 
 * [Table of Contents](#table-of-contents)
-* [CUSTOMER RATE CARD](#customer-rate-card)
+* [Customer Rate Card](#customer-rate-card)
   * [Adding Customer Card](#adding-customer-card)
     * [Basic Level](#basic-level)
     * [Advanced Level](#advanced-level)
@@ -13,7 +13,7 @@
 
 
 
-# CUSTOMER RATE CARD
+# Customer Rate Card
 
 Now the users can also make the rate cards. Rate cards can be accessed from two ways:
 1.	From the dashboard, click on Rate Card icon present, highlighted as orange in the image below. 
