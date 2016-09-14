@@ -1,0 +1,88 @@
+## DID ##
+
+This tutorial will guide about **DID section**, that can be accessed from the side bar. Just click on the *Management*, and go to the **DID** as highlighted in the below image:
+
+![pic1](https://s9.postimg.org/5u8m78j5b/image001.png)
+
+Following 4 actions can be performed in the **DID section**. 
+
+1. Add a DID
+2. Refresh the list
+3. Delete a DID
+4. Provision ON/OFF toggle
+
+### Add a DID ###
+
+To add a new inbound member, follow the below mentioned steps:
+
+ 1. Click on the **Add DID**, as highlighted in the image below.
+
+![pic2](https://s12.postimg.org/829th3tvh/image002.png)
+
+ 2. Fill out the details of the modal.
+
+![pic3](https://s21.postimg.org/i5wk8rfwn/image003.png)
+
+3. Click **Save** button, once the accurate details have been filled out.
+
+
+### Refresh the List###
+
+You can also refresh all the details of the **DID** section, anytime, to get the updated list.
+
+Just give a click on **Refresh** button and list will get updated with latest details saved.
+
+### Delete a DID###
+
+You can also delete a DID from the list.
+
+1. Select a DID that needs to be deleted.
+2. Click the **trash** icon, which is next to *Refresh* button.
+
+ 
+
+### Provision ON/OFF toggle ###
+
+You can also turn the **Provision ON or OFF**. All you need is to click the **Provision** toggle for turning it off or on, as highlighted in the image below:
+
+![pic4](https://s17.postimg.org/kauhbj9v3/image004.png)
+
+Other functions of the DID section includes:
+
+1. Edit DID details
+2. Set the priority of different columns
+3. Set the column list
+4. Searching a DID
+
+### Edit the DID details ###
+
+1. Click on the DID name, from the DID column list.
+
+2. A modal will open with pre-populated data.
+
+3. Edit the desired details.
+
+4. Click the **Save** button.
+
+The edited information will now be SAVED!
+
+### Set the Priority of columns ###
+
+You can also set the priority of any column, by clicking the column name. (E.g. Customer is a column name).
+
+### Set the Column list ###
+
+You also have a choice to set the column lists, by deciding which column shall be shown in the grid. 
+
+1. Click on the button at top right, which is highlighted in the image below:
+
+![pic5](https://s10.postimg.org/j3azf8ert/image005.png)
+
+2. Click on the name of the column, a sign of **“tick”** or **“cross”** will be appeared with the name of the column, accordingly.
+
+### Searching text field ###
+
+You can also search the details related to **DID section** in the text field, that is at the top right of the page.
+
+
+
