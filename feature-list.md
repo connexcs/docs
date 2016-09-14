@@ -8,7 +8,7 @@
     * [CDR Management](#cdr-management)
     * [Logging](#logging)
     * [Server](#server)
-    * [Scriptforged](#scriptforged)
+    * [Scriptforge in](#scriptforge-in)
     * [Support](#support)
 
 
@@ -75,7 +75,7 @@ ConnexCS offers a wide range of features including Customer Management, Rate Car
 * Deploy Single or multiple load balancers to server your switch cluster.
 * DNS Management on request.
 
-## ScriptForged
+## ScriptForge in
 * Lets you execute a customized piece of script per call.
 * Allows users to take control in highly programmable way.
 * Unique applications can be written that will enable you to create your bespoke computational parameters.
