@@ -1,3 +1,18 @@
+# Table of Contents
+
+* [Table of Contents](#table-of-contents)
+* [DID](#did)
+  * [Add a DID](#add-a-did)
+  * [Refresh the List](#refresh-the-list)
+  * [Delete a DID](#delete-a-did)
+  * [Provision ON/OFF toggle](#provision-on/off-toggle)
+  * [Edit the DID details](#edit-the-did-details)
+  * [Set the Priority of columns](#set-the-priority-of-columns)
+  * [Set the Column list](#set-the-column-list)
+  * [Searching text field](#searching-text-field)
+
+
+
 # DID
 
 This tutorial will guide about **DID section**, that can be accessed from the side bar. Just click on the *Management*, and go to the **DID** as highlighted in the below image:
