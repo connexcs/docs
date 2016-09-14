@@ -23,7 +23,7 @@ pages:
     - Carriers: carriers.md
 
 - CARDS:
-    - Overview: ratecard.md
+    - Overview: provider-ratecard.md
     - Generating: rate-card-building.md
 
 - MISCELLANENOUS:
