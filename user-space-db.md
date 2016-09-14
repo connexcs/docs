@@ -1,7 +1,7 @@
 ## User Space Database ##
 This tutorial will guide how to manage User Space Database. You can go to the *Setup* from the left pane and click on the **User Space Database**, as highlighted in an image below:
 
-![pic1](https://s18.postimg.org/3lb7r4ctl/image.png)
+![alt text][user-space-img-1]
 
 You can add a new database and also can refresh the lists in just one click.
 
@@ -10,7 +10,7 @@ A new user space database can be added by following simple steps:
 1. Click on the **Add New** button.
 2.	Pop up will show up.
 
-![pic2](https://s14.postimg.org/424lqv575/image.png)
+![alt text][user-space-img-2]
 
 3.	Fill out the details of the dialogue box.
 4.	Click **Save** once the details have been entered.
@@ -35,4 +35,10 @@ To edit the details of any item, do the following:
 You can search the *Area* and *Key* from the given search text fields.
 Following image depicts both search text fields.
 
-![pic3](https://s12.postimg.org/tqf9h0xf1/image.png)
+![alt text][user-space-img-3]
+
+[user-space-img-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/user-space-img-1.png "user-space-img-1"
+[user-space-img-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/user-space-img-2.png "user-space-img-2"
+[user-space-img-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/user-space-img-3.png "user-space-img-3"
+
+
