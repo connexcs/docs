@@ -1,3 +1,13 @@
+# Table of Contents
+
+* [Table of Contents](#table-of-contents)
+* [My Servers](#my-servers)
+    * [Refresh](#refresh)
+    * [RTP Servers](#rtp-servers)
+    * [Help Icon](#help-icon)
+    * [Server Information](#server-information)
+
+
 # My Servers
 
 You can manage **My Servers** on ConnexCS. This can be accessed from the side bar, as shown in an image below:
