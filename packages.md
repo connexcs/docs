@@ -1,24 +1,40 @@
-PACKAGES
+# PACKAGES
+
 This tutorial will guide you for packages management. Access the packages section from the setup menu, as shown in the screenshot below.
  
- The actions that you can perform in this section are:
+ ![alt text][package-img-1]
+ 
+The actions that you can perform in this section are:
+
 1.	Add a new package
 2.	Edit packages
 3.	Delete packages
 4.	Search packages
+
 Let’s take a look on each of the above.
-ADD PACKAGE
+
+## ADD PACKAGE
+
 Once you are on packages screen, follow the steps mentioned below:
+
 1.	Click on Add Package button.
+
+![alt text][package-img-2]
  
 2.	A new modal window will opens up, allowing you to enter the related information.
  
+![alt text][package-img-3]
+
 3.	Give a name to the package.
 4.	Provide cost and quantity.
 5.	Select frequency plan as daily, weekly, monthly.
 •	When you choose it as weekly, you can select multiple days for it.
- 
+
+![alt text][package-img-4] 
+
 •	When you chose monthly, you can select multiple days of the month.
+ 
+ ![alt text][package-img-5]
  
 6.	Provide the description and then click on Save.
 The newly saved package will now be listed on the main page.
@@ -32,10 +48,12 @@ To delete a package from the list;
 1.	Select a package from the list.
 2.	Click on trash icon.
 
+ ![alt text][package-img-6]
  
 SEARCH PACKAGE
 To search a package from the list, type in the search field and the results will be fetched on run time.
  
+ ![alt text][package-img-7]
 
 
 OTHER FEATURES
@@ -44,4 +62,14 @@ Packages page have some other features too.
 2.	Sort the columns in ascending/descending orders.
 3.	Hide a column.
 All these features can be seen in the screenshot below.
+
+![alt text][package-img-8]
  
+[package-img-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/package-img-1.png "package-img-1"
+[package-img-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/package-img-2.png "package-img-2"
+[package-img-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/package-img-3.png "package-img-3"
+[package-img-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/package-img-4.png "package-img-4"
+[package-img-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/package-img-5.png "package-img-5"
+[package-img-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/package-img-5.png "package-img-6"
+[package-img-7]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/package-img-5.png "package-img-7"
+[package-img-8]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/package-img-5.png "package-img-8"
