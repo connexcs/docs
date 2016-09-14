@@ -8,10 +8,8 @@
   * [Refreshing the list](#refreshing-the-list)
   * [Uploading a file](#uploading-a-file)
   * [Deleting the Customer Rate Card](#deleting-the-customer-rate-card)
-    * [Advantages](#advantages_1)
-    * [Disadvantages](#disadvantages_1)
-  * [Minimum Charges](#minimum-charges)
-  * [Capacity Planning](#capacity-planning)
+  * [Customer Rate Card details](# customer-rate-card-details)
+  * [Searching Text field](#searching-text-field)
 
 
 
