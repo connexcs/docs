@@ -20,7 +20,11 @@ Now the users can also make the rate cards. Rate cards can be accessed from two 
 Or
 2.	Go to the Management from the left pane and click on Rate Card, highlighted as red in an image below:
 
+![alt text][ratecard-dashboard]
+
 After going to the Rate Card, click on the Customer Rate Card option, as shown in an image below:
+
+![alt text][customer-ratecard]
  
 In this section, following actions can be performed.
 
@@ -46,6 +50,8 @@ In this level, following basic information is to be added:
 2.	Users will select the Rate Card from dropdown menu options.
 3.	Users will select the Rate Compact from the dropdown menu options as minimum, average or maximum.
 4.	Users will select the Currency from dropdown menu. 
+
+![alt text][basic]
  
 ### Advanced Level
 
@@ -58,6 +64,8 @@ In advanced level, users are required to fill more details.
 5.	Users will select the dialing options from dropdown menu.
 6.	Users will select the strategy options as LCR, random, round robin or reverse LCR.
 7.	Users will select the Collapse Using and add the Dynamic Routing.
+
+![alt text][advance]
 
 ## Refreshing the list
 
@@ -85,6 +93,8 @@ By clicking on the name of the Customer Rate Card, three options appear.
 •	Main
 •	Profits
 •	Edit
+
+![alt text][card-details]
  
 In Main tab, there are three further options:
 
@@ -99,3 +109,12 @@ In Edit tab, users can edit the details of the card both at basic and advanced l
 ### Searching Text field
 
 Users can also search any details related to Customer Rate Card, by simply writing in the search text field and the results will appear instantly.
+
+
+
+[customer-dashboard]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/ratecard-dashboard.png "Ratecard-Dashboard"
+[customer-ratecard]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/customer-ratecard.png "Customer-Ratecard"
+[abasic]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/basic.png "basic"
+[advance]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/advance.png "advance"
+[card-details]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/card-details.png "Card-Details"
+
