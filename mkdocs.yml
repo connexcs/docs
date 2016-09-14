@@ -17,6 +17,7 @@ pages:
     - My Account: my-account.md
     - Routing Strategy: routing-strategy.md
     - CLI Restriction: cli-restriction.md
+    - Customer Ratecard: customer-rate-card.md
  
 - CARRIERS: 
     - Carriers: carriers.md
@@ -38,3 +39,7 @@ pages:
     - Scaling and Load Balancing: scaling-load-balancing.md 
     - Scriptforge: scriptforge.md
     - Billing: billing.md
+    - DID: did.md
+    - Packages: packages.md
+    - User Space Database: user-space-db.md
+    - My Servers: my-servers.md
