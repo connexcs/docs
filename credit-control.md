@@ -16,11 +16,12 @@ The ConnexCS system does not have a distinct setting to differentiate between Pr
 
 The debit limit is a value, in denominations of the customer’s currency, which when set will allow spends below 0 of the specified amount before calls are stopped.
 
-* **Pre Pay** - Set the debit limit to 0.00
-* **Post Pay** - Set the debit limit to the maximum credit risk you wish to allow for this customers. This does not affect the payment terms.
-* **Pre Pay with Credit Buffer** - Set the debit limit to the NEGATIVE of your buffer value. E.g If you want a float/buffer value in your customer’s account of $5.00, meaning the account will stop dialing when your customer only has $5.00 left in their account you will set the debit limit to -$5.00
+1. **Pre Pay** - Set the debit limit to 0.00
+2. **Post Pay** - Set the debit limit to the maximum credit risk you wish to allow for this customers. This does not affect the payment terms.
+3. **Pre Pay with Credit Buffer** - Set the debit limit to the NEGATIVE of your buffer value. E.g If you want a float/buffer value in your customer’s account of $5.00, meaning the account will stop dialing when your customer only has $5.00 left in their account you will set the debit limit to -$5.00
 
 ### Automatic Cut Off (Is it Real time?)
+
 1. Is the automatic cut off real-time?
 2. Partly
 
