@@ -11,7 +11,7 @@
 
 # Packages
 
-This tutorial will guide you for packages management. Access the packages section from the setup menu, as shown in the screenshot below.
+This tutorial will guide you through managing packages. Access the packages section from the setup menu, as shown in the screenshot below.
  
  ![alt text][package-img-1]
  
@@ -26,13 +26,13 @@ Let’s take a look on each of the above.
 
 ## Add Package
 
-Once you are on packages screen, follow the steps mentioned below:
+Once you are on the packages screen, follow the steps mentioned below:
 
 1.	Click on Add Package button.
 
 ![alt text][package-img-2]
  
-2.	A new modal window will opens up, allowing you to enter the related information.
+2.	A new model window will open up, allowing you to enter the relevant information.
  
 ![alt text][package-img-3]
 
@@ -44,7 +44,7 @@ Once you are on packages screen, follow the steps mentioned below:
 
 ![alt text][package-img-4] 
 
-•	When you chose monthly, you can select multiple days of the month.
+•	When you choose monthly, you can select multiple days of the month.
  
  ![alt text][package-img-5]
  
@@ -60,7 +60,7 @@ To edit a package, do the following:
 2.	Edit the information.
 3.	Click on Save button.
 
-## Delete Package
+## Delete a Package
 
 To delete a package from the list;
 
@@ -69,15 +69,15 @@ To delete a package from the list;
 
  ![alt text][package-img-6]
  
-## Search Package
+## Search for a Package
 
-To search a package from the list, type in the search field and the results will be fetched on run time.
+To search for a package from the list, type the name of the package in the search field. The package should then be displayed. 
  
  ![alt text][package-img-7]
 
 ## Other Features
 
-Packages page have some other features too.
+Packages page has some other features too.
 
 1.	The list can be refreshed from the Refresh button.
 2.	Sort the columns in ascending/descending orders.
