@@ -15,7 +15,7 @@
 
 # DID
 
-This tutorial will guide about **DID section**, that can be accessed from the side bar. Just click on the *Management*, and go to the **DID** as highlighted in the below image:
+This tutorial will guide you through the **DID section**, which can be accessed from the side bar. Just click on the *Management*, and go to **DID** as highlighted in the below image:
 
 ![alt text][did-img-1]
 
@@ -28,24 +28,31 @@ Following 4 actions can be performed in the **DID section**.
 
 ## Add a DID
 
-To add a new inbound member, follow the below mentioned steps:
+To add a new inbound member, follow the steps shown below:
 
  1. Click on the **Add DID**, as highlighted in the image below.
 
 ![alt text][did-img-2]
 
- 2. Fill out the details of the modal.
+ 2. Fill out the details of the DID. You will need to enter the DID number in the DID field.  
 
 ![alt text][did-img-3]
 
-3. Click **Save** button, once the accurate details have been filled out.
-
+3. Enter the SIP destination (you can point the DID to an extension as well - to point the DID to the extension add the SIP extension).
+4. Select the provider from the drop down menu.
+5. Now select the Provider Rate Card from the drop down menu.
+5. Select the customer from the drop down menu.
+6. Select the Customer Rate Card from the drop down menu
+7. Enter the cost.
+8. Enter the retail cost/monthly that you wish to charge your customer.
+9. Click **Save** button, once the details have been filled out.
+ 
 
 ## Refresh the List
 
 You can also refresh all the details of the **DID** section, anytime, to get the updated list.
 
-Just give a click on **Refresh** button and list will get updated with latest details saved.
+Just give a click on **Refresh** button and list will get updated with latest saved details .
 
 ## Delete a DID
 
@@ -56,7 +63,9 @@ You can also delete a DID from the list.
 
 ## Provision ON/OFF toggle
 
-You can also turn the **Provision ON or OFF**. All you need is to click the **Provision** toggle for turning it off or on, as highlighted in the image below:
+The Provision uses the API to communicate with the DID provider. If the DID provider supports API then this can be set under:
+Setup>My Account>API>Add New.
+When you turn on the Provision button and click **Add DID** and the DID gets Provisioned from the DID provider using the API.
 
 ![alt text][did-img-4]
 
@@ -71,7 +80,7 @@ Other functions of the DID section includes:
 
 1. Click on the DID name, from the DID column list.
 
-2. A modal will open with pre-populated data.
+2. A pop up will open with pre-populated data.
 
 3. Edit the desired details.
 
@@ -91,7 +100,7 @@ You also have a choice to set the column lists, by deciding which column shall b
 
 ![alt text][did-img-5]
 
-2. Click on the name of the column, a sign of **“tick”** or **“cross”** will be appeared with the name of the column, accordingly.
+2. Click on the name of the column, a sign of **“tick”** or **“cross”** will appear with the name of the column, accordingly.
 
 ## Searching text field
 
