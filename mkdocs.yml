@@ -26,6 +26,9 @@ pages:
     - Overview: provider-ratecard.md
     - Generating: rate-card-building.md
 
+- DID:
+    - DID: did.md
+
 - MISCELLANENOUS:
     - Specification: spec.md
     - Authentication: authentication.md
@@ -39,7 +42,6 @@ pages:
     - Scaling and Load Balancing: scaling-load-balancing.md 
     - Scriptforge: scriptforge.md
     - Billing: billing.md
-    - DID: did.md
     - Packages: packages.md
     - User Space Database: user-space-db.md
     - My Servers: my-servers.md
