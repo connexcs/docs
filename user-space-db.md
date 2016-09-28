@@ -39,12 +39,14 @@ The list can be refreshed, if needed, by simply pressing the *Refresh* button.
 ## Deleting the Items
 
 To delete an item from the list:
+
 1. Select any name from the *Area* column.
 2. Click the delete icon, which is right next to the *Refresh* button.
 
 ## Edit the Details
 
 To edit the details of any item, do the following:
+
 1. Click on name of the *Area* column that needs to be updated.
 2. Pop up will appear. Edit the details in the dialog box.
 3. Click **Save**, once the details have been edited.
@@ -52,6 +54,7 @@ To edit the details of any item, do the following:
 ## Search Text Fields
 
 You can search the *Area* and *Key* from the given search text fields.
+
 Following image depicts both search text fields.
 
 ![alt text][user-space-img-3]
