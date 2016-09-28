@@ -110,6 +110,35 @@ In Profits tab, users can add a new row by simply clicking on the Add New Row bu
 
 In Edit tab, users can edit the details of the card both at basic and advanced levels.
 
+### Profit
+
+In *_Profit_* tab, there are three main functionalities:
+1. Add new row
+2. Building the card
+3. Applying filtered transformation.
+
+![alt text][profittab]
+
+1. *Adding New Rows*
+
+You can add the new row by simply clicking on the *Add New Row* button. The content of the row can be changed, afterwards.
+
+2. *Building the card*
+
+The generation of a Rate card can be completed, based on these rows, by clicking on *“Build FromCarrier Cards”*, which is next to *“Add New Row”* button. A pop-up would appear, confirming the generation of the rate card.
+
+![alt text][popup]
+
+3. Applying Filtered Transformation
+
+You can apply filtered transformation by clicking on *Filtered* button, which is next to *“Build FromCarrier Cards”* button.
+
+4. Editing the Customer Card information
+
+In *_Edit_* tab, users can edit the details of the card both at basic and advanced levels and press *“Save”* to commit changes.
+
+![alt text][edittab]
+
 ### Searching Text field
 
 Users can also search any details related to Customer Rate Card, by simply writing in the search text field and the results will appear instantly.
@@ -121,4 +150,7 @@ Users can also search any details related to Customer Rate Card, by simply writi
 [basic]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/basic.png "basic"
 [advance]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/advance.png "advance"
 [card-details]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/card-details.png "Card-Details"
+[profittab]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/card-details.png "Profit-Tab"
+[popup]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/card-details.png "Popup"
+[edittab]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/card-details.png "Edit-Tab"
 
