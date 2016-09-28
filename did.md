@@ -34,18 +34,11 @@ To add a new inbound member, follow the steps shown below:
 
 ![alt text][did-img-2]
 
- 2. Fill out the details of the DID. You will need to enter the DID number in the DID field.  
+ 2. Fill out the details of the modal. 
 
 ![alt text][did-img-3]
 
-3. Enter the SIP destination (you can point the DID to an extension as well - to point the DID to the extension add the SIP extension).
-4. Select the provider from the drop down menu.
-5. Now select the Provider Rate Card from the drop down menu.
-5. Select the customer from the drop down menu.
-6. Select the Customer Rate Card from the drop down menu
-7. Enter the cost.
-8. Enter the retail cost/monthly that you wish to charge your customer.
-9. Click **Save** button, once the details have been filled out.
+3. Click Save button, once the accurate details have been filled out.
  
 
 ## Refresh the List
@@ -63,9 +56,7 @@ You can also delete a DID from the list.
 
 ## Provision ON/OFF toggle
 
-The Provision uses the API to communicate with the DID provider. If the DID provider supports API then this can be set under:
-Setup>My Account>API>Add New.
-When you turn on the Provision button and click **Add DID** and the DID gets Provisioned from the DID provider using the API.
+You can also turn the *Provision ON or OFF*. All you need is to click the *Provision* toggle for turning it off or on, as highlighted in the image below:
 
 ![alt text][did-img-4]
 
