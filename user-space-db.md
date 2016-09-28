@@ -21,6 +21,7 @@ You can add a new database and you can also refresh the lists in just one click.
 ## Adding New User Space Database
 
 A new user space database can be added by following simple steps:
+
 1. Click on the **Add New** button.
 2.	Pop up will show up.
 
