@@ -152,6 +152,6 @@ Users can also search any details related to Customer Rate Card, by simply writi
 [advance]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/advance.png "advance"
 [card-details]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/card-details.png "Card-Details"
 [profittab]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/profittab.png "Profit-Tab"
-[popup]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/popup.png "Popup"
+[popup]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/popup.jpg "Popup"
 [edittab]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/edittab.png "Edit-Tab"
 
