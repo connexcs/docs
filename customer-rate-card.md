@@ -8,7 +8,8 @@
   * [Refreshing the list](#refreshing-the-list)
   * [Uploading a file](#uploading-a-file)
   * [Deleting the Customer Rate Card](#deleting-the-customer-rate-card)
-  * [Customer Rate Card details](# customer-rate-card-details)
+  * [Customer Rate Card details](#customer-rate-card-details)
+  * [Profit](#profit)
   * [Searching Text field](#searching-text-field)
 
 
