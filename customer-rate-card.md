@@ -16,9 +16,12 @@
 # Customer Rate Card
 
 Now the users can also make the rate cards. Rate cards can be accessed two ways:
-1.	From the dashboard, click on Rate Card icon as shown highlighted in orange in the image below. 
+
+1. From the dashboard, click on Rate Card icon present, highlighted as orange in the image below. 
+
 Or
-2.	Go to the Management from the left pane and click on Rate Card, highlighted in red in the image below:
+
+2.	Go to the Management from the left pane and click on Rate Card, highlighted as red in an image below:
 
 ![alt text][ratecard-dashboard]
 
