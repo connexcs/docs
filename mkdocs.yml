@@ -3,6 +3,9 @@ site_url: http://www.connexcs.com
 site_description: Connex Cloud Softswitch
 site_author: ConnexCS Team
 
+extra_javascript:
+- extra.js
+
 pages:
 - Home: index.md
 - GETTING STARTED: getting-started.md
