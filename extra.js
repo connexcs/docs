@@ -1,3 +1,6 @@
+$(document).ready(function () {
+	fixSearch();
+});
 function fixSearch() {
 	var target = document.getElementById('rtd-search-form');
 	var config = {attributes: true, childList: true};
