@@ -8,6 +8,7 @@
     * [Searching Carrier](#searching-carrier)
     * [Customizing the View](#customizing-the-view)
     * [Edit Carrier](#edit-carrier)
+    * [Code Consistency](#code-consistency)
 
 
 # Carrier Management
