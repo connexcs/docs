@@ -19,7 +19,7 @@ pages:
     - Credit Control: credit-control.md
     - My Account: my-account.md
     - Routing Strategy: routing-strategy.md
-    - CLI Restriction: cli-restriction.md
+    - CLI : cli.md
     - Customer Ratecard: customer-rate-card.md
  
 - CARRIERS: 
