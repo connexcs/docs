@@ -37,6 +37,7 @@ pages:
     - Authentication: authentication.md
     - Report: report.md
     - Routing: routing.md
+    - Routing USA: routing-usa.md
     - Routing Engine: routing-engine.md
     - Limiting: limiting-cps.md
     - API: api.md
