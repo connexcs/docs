@@ -1,7 +1,10 @@
 $(document).ready(function () {
     var target = document.getElementById('rtd-search-form');
     var config = {attributes: true, childList: true};
-
+    $('#rtd-search-form > input').on('keypress', function(){
+      $('#rtd-search-form').attr('action', 'https://' + window.location.hostname + '/en/latest/search.html');
+    });
+    
     var observer = new MutationObserver(function(mutations) {
       // if it isn't disconnected it'll loop infinitely because the observed element is modified
       observer.disconnect();
