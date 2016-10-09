@@ -21,7 +21,7 @@ Inter/Intra state routing is dependant on the CLI (aka ANI) which is presented i
 
 **Interstate (Inter)** is identified by calls which belong to different states.
 
-**Indeterminate (Indet)** is idenfied by a call which is placed to a NPA-NXX destination which dose not have a matching NPA-NXX Origin (Either International, Non-geographic such as 1800, Unknown or Invalid).
+**Indeterminate (Indet)** is identified by a call which is placed to a NPA-NXX destination which dose not have a matching NPA-NXX Origin (Either International, Non-geographic such as 1800, Unknown or Invalid).
 
 ### Identification Examples
 | Destination / CLI           | UK (441782)   | New York (1212) | New York (1315) | Chicago (224) | Unknown       | Withheld      |
