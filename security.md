@@ -28,7 +28,7 @@ https://www.ssllabs.com/ssltest/analyze.html?d=app.connexcs.com
 All internal traffic travelling between zones traverses our mesh VPN protected by 4096 bit keys and managed by our internal CA Servers.
 
 ## Logins
-Our system uses an expodentially increasing delay on failed attempts and centralised reporting.
+Our system uses an exponentially increasing delay on failed attempts and centralised reporting.
 
 ### Passwords
 All passwords are hashed in our system. The ones required for HTTP login are encrypted by Argon2, the winner of the Password Hashing Competition (PHC) https://github.com/P-H-C/phc-winner-argon2
