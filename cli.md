@@ -24,7 +24,7 @@ If you wish to change the CLI that has been presented for one of your choosing, 
 A CLI may be re-written, for example you can add `123456789` in the CLI box and have it be re-written by adding `987654321` in the re-write CLI box.
 
 ## P-Asserted-ID
-`P-Asserted-Identification` is another SIP Header, its purpose is _NOT_ to be presented but allowing a network only level identifier of the originator by telco's only.
+`P-Asserted-Identification` is another SIP Header. Its purpose is _NOT_ to be presented, but allows a network only level identifier of the originator by telco's only.
 
 A P-Asserted-ID uses the exact same syntax as Replace CLI.
 
