@@ -88,6 +88,83 @@ Following figure demonstrates the **Edit Customer** button:
 
 ![alt text][edit-customer]
 
+### Main 
+
+In Main tab, users can view all his contacts. Users can also check the summary in three different forms i.e. Live/Daily/Monthly as shown in an image above.
+
+Users can also create a new contact on the Main .
+
+1.	Click on the ‘plus sign’ button on the contacts pane.
+2.	Fill out the details.
+3.	Press Save button once the details have been filled out, correctly.
+
+![alt text][main-tab]
+
+### Stats
+
+In Stats tab, create and assign channels to customers. Click on the Channels to make them functional. Users can have record of Calls Per Second (CPS)under the Stats tab and can also check the details of the CPS by the day/month of their choice as highlighted with a yellow rectangle in the image below:
+
+![alt text][stats-tab]
+
+Moreover, in the same tab, Stats, users can check the details of ACD, ACR, Attempts, Codes and PDD.
+
+### Routing
+
+Now, coming towards to the next tab which is Routing, there are basically two types routing as shown in an image below:
+
+1.	Ingress Routing
+2.	CLI
+
+![alt text][routing-tab]
+
+### Ingress Routing
+
+1.	Click on the Add New button.
+2.	Pop up will show up. Fill out the details of the dialogue box. 
+3.	Press Save once the details are filled up, correctly.
+
+The details of the dialogue box can be shown in the image below:
+
+![alt text][ingress-routing-tab]
+
+1.	Users will add the name of the Rate Card and write the Tech Prefix and Capped Rate in digits only.
+2.	Users will select the Sandbox, Profit Assurance and Block Connect Costfrom the dropdown menu options.
+3.	Users will add the Channel and Maximum Duration.
+4.	Users will write the Dial String in the given text field.
+5.	Users can select the Lock Parent Card and Exclude Parent Cards from the dropdown menu option.
+6.	Moreover, other than Route Ingress, users will fill out the details of Proxy Info where users will add the RTP Media Proxy and RTP Proxy Mode.
+7.	Users can also add the Strategy by clicking on the Add Newbutton.
+
+### Adding CLI
+
+1.	Click on the Add new button.
+2.	Popup will show up. Fill out the details of the dialogue box.
+3.	Press Save once the details are correctly entered.
+
+Details of the dialogue box can be in an image below:
+
+![alt text][edit-cli]
+
+1.	Fill out the CLI text field.
+2.	Rewrite the CLI and write the P Asserted ID.
+
+### Authentication
+
+In the Authentication tab, there are two types of authentication as shown in the image below:
+
+![alt text][auth]
+
+1.	IP Authentication
+2.	User/ Password Authentication
+
+#### IP Authentication
+
+1.	Click on the Add new button.
+2.	Popup will show up. Fill out the details of the dialogue box.
+3.	Press Save once the details are correctly entered.
+
+
+
 [customer-dashboard]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/customer-dashboard-new.png "Customer-Dashboard"
 [add-customer-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/add-Customer-new.png "Add-Customer"
 [add-customer]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/add-customer.png "Add-Customer"
