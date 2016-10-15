@@ -18,10 +18,10 @@
       * [Latest Calls](#latest-calls)
       * [Dialogs](#dialogs)
       * [Payments](#payments)
-      * [Alert](#alerts)
-      * [Call Detail Records](#call-detail-records)
+      * [Alerts](#alerts)
+      * [Call Detail Records](#call-detail-record-cdr)
       * [DID](#did)
-      * [Package](#Packages)
+      * [Packages](#Packages)
 
 
 # Customer Management
