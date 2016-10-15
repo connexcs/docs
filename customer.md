@@ -163,6 +163,101 @@ In the Authentication tab, there are two types of authentication as shown in the
 2.	Popup will show up. Fill out the details of the dialogue box.
 3.	Press Save once the details are correctly entered.
 
+![alt text][edit-switch]
+
+1.	Users will add the Codecs
+2.	Users will write the Manufacturer and Version in the respective text field.
+3.	Users will select the options on the Protocol, Port and Dial Pattern.
+4.	Users will add the CLI Prefix.
+5.	Users will write the Tech Prefix, Strip Digits and Bandwidth in digits only.
+6.	Users will write Force Forum in the given text field.
+7.	Users checks one of the options: Ingress or Egress.
+
+#### User/ Password Authentication
+
+Users can set the User/Password authentication.
+
+1.	Click on the Add new button.
+2.	Popup will show up. Fill out the details of the dialogue box.
+3.	Press Save once the details are correctly entered.
+
+![alt text][user-pwd-auth]
+
+### Latest Calls
+
+Users can simulate latest call, look up for calls and refresh the list of simulated calls.
+For simulating the call, 
+
+1.	Click on the Simulate button.
+2.	Popup will show up.
+3.	Fill out the details of the dialogue box like Dialed Number, CLI/ANI, Switch IP and all other as mentioned in an image below:
+4.	Finally press Simulate button.
+
+![alt text][simulate-call]
+
+
+### Dialogs
+
+Dialogs is the tab that shows the active calls on the account. Users can easily find out the Active calls in just one click.
+
+### Payments 
+
+In this tab, users can make a list of all the payments that have been done so far. Users can add new payments by:
+
+1.	Click on the Add New button.
+2.	Fill out the dialogue box as shown in an image below. Users will add the Description of the payment, the total amount in digits and finally selects the status of it whether it’s Completed, Pending or Cancelled.
+3.	Finally press the Save button.
+4.	Users can also take an action after every button to confirm its status. Just click on the Action button which is right next to the Status in the main page of the Payments tab.
+
+![alt text][payments]
+
+
+### Alerts
+
+Users can set the alerts for important notifications. Users can add new alert by:
+
+1.	Click on the ‘plus sign’ button.
+2.	Fill the details of the dialogue box as shown in an image below: Title of the alert, Email/phone number, Area, Operator and Threshold.
+
+![alt text][alerts]
+
+3.	Press Save once the details have been filled out.
+
+### Call Detail Record (CDR)
+
+Users can check the details of the calls by following a simple procedure:
+
+1.	Click on the Recalc CDR button.
+2.	Fill the dialogue box. In the dialogue box, users will select the day, maximum duration and new duration as shown in an image below:
+
+![alt text][recalc]
+
+3.	And finally press Save once the details have been entered correctly.
+4.	Users can also switch the dates from today to any other date and month.
+
+### DID
+
+Users can assign DID in an account by following the simple procedure:
+
+1.	Click on the ‘Plus sign’ button which is at the extreme right of the page.
+2.	Popup will show up. Users will add DID name, set the Destination; select the Provider name, Provider Card, Customer name and Customer Card from the dropdown menu options respectively; Cost in digits and Retail as shown in an image below:
+3.	And Press Save button.
+
+![alt text][edit-did]
+
+### Packages
+
+Users can add the customer package and its quantity for their ease in just one click.
+
+1.	Click on the ‘Plus Sign’ button.
+2.	Fill out the details of the dialogue box which includes: Package name and quantity in digits and also check or uncheck the Auto Decrement Credit as you shown in an image below:
+3.	Press Save button.
+
+![alt text][customer-package]
+
+After adding a new package, users can also take an action by clicking on the Action andset the further details as daily package, weekly package, etc. 
+
+![alt text][customer-package1]
 
 
 [customer-dashboard]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/customer-dashboard-new.png "Customer-Dashboard"
@@ -170,3 +265,21 @@ In the Authentication tab, there are two types of authentication as shown in the
 [add-customer]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/add-customer.png "Add-Customer"
 [customer-status]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/customer-status.png "Customer-Status"
 [edit-customer]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/edit-customer-new.png "Edit-Customer"
+
+[stats-tab]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/stats-tab.png "Stats Tab"
+[main-tab]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/main-tab.png "Main Tab"
+[routing-tab]:  https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/routing-tab.png "Routing Tab"
+[ingress-routing-tab]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/ingress-routing-tab.png "Ingress Routing Tab"
+[edit-cli]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/edit-cli.png "Edit CLI"
+[auth]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/auth.png "Auth"
+[edit-switch]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/edit-switch.png "Edit Switch"
+[user-pwd-auth]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/user-pwd-auth.png "User Pwd Auth"
+[simulate-call]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/simulate-call.png "Simulate Call"
+[payments]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/payments.png "Payments" 
+[alerts]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/alerts.png "Alerts"
+[recalc]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/recalc.png "Recalc"
+[edit-did]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/edit-did.png "Edit-DID"
+[customer-package]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/customer-package.png "Customer-Package"
+[customer-package1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/customer-package1.png "Customer-Package1"
+
+
