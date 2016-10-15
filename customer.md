@@ -163,7 +163,12 @@ In the Authentication tab, there are two types of authentication as shown in the
 2.	Popup will show up. Fill out the details of the dialogue box.
 3.	Press Save once the details are correctly entered.
 
-![alt text][edit-switch]
+![alt text][edit-switch-basic]
+
+In Basic dialogue box, Users will add the IP/Hostname, Channels (In digits only) and Flow Speed (In digits only) as shown in an image above.
+In the image below, there is description of the Advanced dialogue box.
+
+![alt text][edit-switch-advance]
 
 1.	Users will add the Codecs
 2.	Users will write the Manufacturer and Version in the respective text field.
@@ -195,7 +200,6 @@ For simulating the call,
 
 ![alt text][simulate-call]
 
-
 ### Dialogs
 
 Dialogs is the tab that shows the active calls on the account. Users can easily find out the Active calls in just one click.
@@ -219,7 +223,7 @@ Users can set the alerts for important notifications. Users can add new alert by
 1.	Click on the ‘plus sign’ button.
 2.	Fill the details of the dialogue box as shown in an image below: Title of the alert, Email/phone number, Area, Operator and Threshold.
 
-![alt text][alerts]
+![alt text][alert]
 
 3.	Press Save once the details have been filled out.
 
@@ -272,11 +276,12 @@ After adding a new package, users can also take an action by clicking on the Act
 [ingress-routing-tab]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/ingress-routing-tab.png "Ingress Routing Tab"
 [edit-cli]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/edit-cli.png "Edit CLI"
 [auth]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/auth.png "Auth"
-[edit-switch]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/edit-switch.png "Edit Switch"
+[edit-switch-basic]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/edit-switch-basic.png "Edit Switch Basic"
+[edit-switch-advance]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/edit-switch-advance.png "Edit Switch Advance"
 [user-pwd-auth]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/user-pwd-auth.png "User Pwd Auth"
 [simulate-call]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/simulate-call.png "Simulate Call"
 [payments]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/payments-tab.png "Payments Tab" 
-[alerts]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/alerts.png "Alerts"
+[alert]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/alert.png "Alerts"
 [recalc]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/recalc.png "Recalc"
 [edit-did]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/edit-did.png "Edit-DID"
 [customer-package]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/customer-package.png "Customer-Package"
