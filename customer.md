@@ -7,6 +7,13 @@
     * [Checking the Status](#checking-the-status)
     * [Searching Customers](#searching-customers)
     * [Edit Customers](#edit-customers)
+      * [Main Tab](#main)
+      * [Stats Tab](#stats)
+      * [Routing](#routing)
+      * [Ingress Routing](#ingress-routing)
+      * [Adding CLI](#adding-cli)
+      * [Authentication](#authentication)
+      * [IP Authentication](#ip-authentication)
 
 
 # Customer Management
