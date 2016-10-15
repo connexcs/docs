@@ -209,7 +209,7 @@ In this tab, users can make a list of all the payments that have been done so fa
 3.	Finally press the Save button.
 4.	Users can also take an action after every button to confirm its status. Just click on the Action button which is right next to the Status in the main page of the Payments tab.
 
-![alt text][payments]
+![alt text][payments-tab]
 
 
 ### Alerts
@@ -275,7 +275,7 @@ After adding a new package, users can also take an action by clicking on the Act
 [edit-switch]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/edit-switch.png "Edit Switch"
 [user-pwd-auth]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/user-pwd-auth.png "User Pwd Auth"
 [simulate-call]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/simulate-call.png "Simulate Call"
-[payments]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/payments.png "Payments" 
+[payments]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/payments-tab.png "Payments Tab" 
 [alerts]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/alerts.png "Alerts"
 [recalc]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/recalc.png "Recalc"
 [edit-did]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/edit-did.png "Edit-DID"
