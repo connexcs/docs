@@ -14,6 +14,14 @@
       * [Adding CLI](#adding-cli)
       * [Authentication](#authentication)
       * [IP Authentication](#ip-authentication)
+      * [User/Password Authentication](#user-password-authentication)
+      * [Latest Calls](#latest-calls)
+      * [Dialogs](#dialogs)
+      * [Payments](#payments)
+      * [Alert](#alert)
+      * [Call Detail Records](#call-detail-records)
+      * [DID](#did)
+      * [Package](#Package)
 
 
 # Customer Management
