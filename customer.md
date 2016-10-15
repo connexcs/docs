@@ -13,15 +13,15 @@
       * [Ingress Routing](#ingress-routing)
       * [Adding CLI](#adding-cli)
       * [Authentication](#authentication)
-      * [IP Authentication](#ip-authentication)
-      * [User/Password Authentication](#user-password-authentication)
+         * [IP Authentication](#ip-authentication)
+         * [User/Password Authentication](#user-password-authentication)
       * [Latest Calls](#latest-calls)
       * [Dialogs](#dialogs)
       * [Payments](#payments)
       * [Alerts](#alerts)
       * [Call Detail Records](#call-detail-record-cdr)
       * [DID](#did)
-      * [Packages](#Packages)
+      * [Packages](#packages)
 
 
 # Customer Management
