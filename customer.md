@@ -105,7 +105,7 @@ Following figure demonstrates the **Edit Customer** button:
 
 ### Main 
 
-In *Main* tab, users can view all his contacts. Users can also check the summary in three different forms i.e. Live/Daily/Monthly as shown in an image above.
+In **Main** tab, users can view all his contacts. Users can also check the summary in three different forms i.e. Live/Daily/Monthly as shown in an image above.
 
 Users can also create a new contact on the Main .
 
@@ -117,15 +117,15 @@ Users can also create a new contact on the Main .
 
 ### Stats
 
-In *Stats* tab, create and assign channels to customers. Click on the *Channels* to make them functional. Users can have record of *Calls Per Second (CPS)* under the *Stats* tab and can also check the details of the CPS by the day/month of their choice as highlighted with a yellow rectangle in the image below:
+In **Stats** tab, create and assign channels to customers. Click on the **Channels** to make them functional. Users can have record of **Calls Per Second (CPS)** under the **Stats** tab and can also check the details of the CPS by the day/month of their choice as highlighted with a yellow rectangle in the image below:
 
 ![alt text][stats-tab]
 
-Moreover, in the same tab, *Stats*, users can check the details of *ACD, ACR, Attempts, Codes* and *PDD*.
+Moreover, in the same tab, **Stats**, users can check the details of **ACD, ACR, Attempts, Codes** and **PDD**.
 
 ### Routing
 
-Now, coming towards to the next tab which is *Routing*, there are basically two types routing as shown in an image below:
+Now, coming towards to the next tab which is **Routing**, there are basically two types routing as shown in an image below:
 
 1.	Ingress Routing
 2.	CLI
@@ -134,9 +134,9 @@ Now, coming towards to the next tab which is *Routing*, there are basically two 
 
 ### Ingress Routing
 
-1.	Click on the Add New button.
+1.	Click on the **Add New** button.
 2.	Pop up will show up. Fill out the details of the dialogue box. 
-3.	Press *Save* once the details are filled up, correctly.
+3.	Press **Save** once the details are filled up, correctly.
 
 The details of the dialogue box can be shown in the image below:
 
@@ -152,9 +152,9 @@ The details of the dialogue box can be shown in the image below:
 
 ### Adding CLI
 
-1.	Click on the *Add New* button.
+1.	Click on the **Add New** button.
 2.	Popup will show up. Fill out the details of the dialogue box.
-3.	Press *Save* once the details are correctly entered.
+3.	Press **Save** once the details are correctly entered.
 
 Details of the dialogue box can be in an image below:
 
@@ -165,7 +165,7 @@ Details of the dialogue box can be in an image below:
 
 ### Authentication
 
-In the *Authentication* tab, there are two types of authentication as shown in the image below:
+In the **Authentication** tab, there are two types of authentication as shown in the image below:
 
 ![alt text][auth]
 
@@ -174,13 +174,13 @@ In the *Authentication* tab, there are two types of authentication as shown in t
 
 #### IP Authentication
 
-1.	Click on the *Add new* button.
+1.	Click on the **Add new** button.
 2.	Popup will show up. Fill out the details of the dialogue box.
-3.	Press *Save* once the details are correctly entered.
+3.	Press **Save** once the details are correctly entered.
 
 ![alt text][edit-switch-basic]
 
-In *Basic* dialogue box, Users will add the IP/Hostname, Channels (In digits only) and Flow Speed (In digits only) as shown in an image above.
+In **Basic** dialogue box, Users will add the IP/Hostname, Channels (In digits only) and Flow Speed (In digits only) as shown in an image above.
 In the image below, there is description of the Advanced dialogue box.
 
 ![alt text][edit-switch-advance]
@@ -195,72 +195,72 @@ In the image below, there is description of the Advanced dialogue box.
 
 #### User/ Password Authentication
 
-Users can set the *User/Password authentication*.
+Users can set the **User/Password authentication**.
 
-1.	Click on the *Add new* button.
+1.	Click on the **Add new** button.
 2.	Popup will show up. Fill out the details of the dialogue box.
-3.	Press *Save* once the details are correctly entered.
+3.	Press **Save** once the details are correctly entered.
 
 ![alt text][user-pwd-auth]
 
 ### Latest Calls
 
-Users can simulate *latest call*, look up for calls and refresh the list of simulated calls.
+Users can simulate **latest call**, look up for calls and refresh the list of simulated calls.
 For simulating the call, 
 
-1.	Click on the *Simulate* button.
+1.	Click on the **Simulate** button.
 2.	Popup will show up.
-3.	Fill out the details of the dialogue box like *Dialed Number, CLI/ANI, Switch IP* and all other as mentioned in an image below:
-4.	Finally press *Simulate* button.
+3.	Fill out the details of the dialogue box like **Dialed Number, CLI/ANI, Switch IP** and all other as mentioned in an image below:
+4.	Finally press **Simulate** button.
 
 ![alt text][simulate-call]
 
 ### Dialogs
 
-*Dialogs* is the tab that shows the active calls on the account. Users can easily find out the Active calls in just one click.
+**Dialogs** is the tab that shows the active calls on the account. Users can easily find out the Active calls in just one click.
 
 ### Payments 
 
-In this tab, users can make a list of all the *payments* that have been done so far. Users can add new payments by:
+In this tab, users can make a list of all the **payments** that have been done so far. Users can add new payments by:
 
-1.	Click on the *Add New* button.
+1.	Click on the **Add New** button.
 2.	Fill out the dialogue box as shown in an image below. Users will add the Description of the payment, the total amount in digits and finally selects the status of it whether it’s Completed, Pending or Cancelled.
-3.	Finally press the *Save* button.
-4.	Users can also take an action after every button to confirm its status. Just click on the Action button which is right next to the Status in the main page of the *Payments* tab.
+3.	Finally press the **Save** button.
+4.	Users can also take an action after every button to confirm its status. Just click on the Action button which is right next to the Status in the main page of the **Payments** tab.
 
 ![alt text][payments-tab]
 
 
 ### Alerts
 
-Users can set the *Alerts* for important notifications. Users can add new alert by:
+Users can set the **Alerts** for important notifications. Users can add new alert by:
 
-1.	Click on the *‘plus sign’* button.
+1.	Click on the **‘plus sign’** button.
 2.	Fill the details of the dialogue box as shown in an image below: Title of the alert, Email/phone number, Area, Operator and Threshold.
 
 ![alt text][alert]
 
-3.	Press *Save* once the details have been filled out.
+3.	Press **Save** once the details have been filled out.
 
 ### Call Detail Record (CDR)
 
 Users can check the details of the calls by following a simple procedure:
 
-1.	Click on the *Recalc CDR* button.
+1.	Click on the **Recalc CDR** button.
 2.	Fill the dialogue box. In the dialogue box, users will select the day, maximum duration and new duration as shown in an image below:
 
 ![alt text][recalc]
 
-3.	And finally press *Save* once the details have been entered correctly.
+3.	And finally press **Save** once the details have been entered correctly.
 4.	Users can also switch the dates from today to any other date and month.
 
 ### DID
 
-Users can assign *DID* in an account by following the simple procedure:
+Users can assign **DID** in an account by following the simple procedure:
 
-1.	Click on the *‘Plus sign’* button which is at the extreme right of the page.
+1.	Click on the **‘Plus sign’** button which is at the extreme right of the page.
 2.	Popup will show up. Users will add DID name, set the Destination; select the Provider name, Provider Card, Customer name and Customer Card from the dropdown menu options respectively; Cost in digits and Retail as shown in an image below:
-3.	And Press *Save* button.
+3.	And Press **Save** button.
 
 ![alt text][edit-did]
 
@@ -268,9 +268,9 @@ Users can assign *DID* in an account by following the simple procedure:
 
 Users can add the customer package and its quantity for their ease in just one click.
 
-1.	Click on the *‘Plus Sign’* button.
+1.	Click on the **‘Plus Sign’** button.
 2.	Fill out the details of the dialogue box which includes: Package name and quantity in digits and also check or uncheck the Auto Decrement Credit as you shown in an image below:
-3.	Press *Save* button.
+3.	Press **Save** button.
 
 ![alt text][customer-package]
 
