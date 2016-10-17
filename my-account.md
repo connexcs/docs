@@ -204,12 +204,13 @@ Users can also edit the Domains.
 2. Edit the details.
 3. Click on Save button.
 
-#Customer Portal with CNAME record
+# Customer Portal with CNAME record
 
 1. Sign in to your domain's account at your domain host.
 2. Locate the page for updating your domain's DNS records.
 3. The page might be called something like DNS Management, Name Server Management, or Advanced Settings.
 4. Locate the CNAME records for your domain & point it towards *portal.connexcs.com*
+
 ## Payments
 
 Users can make their payments at any time with such ease. All they have to do is:
