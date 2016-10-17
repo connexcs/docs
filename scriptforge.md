@@ -2,26 +2,30 @@
 
 * [Table of Contents](#table-of-contents)
 * [ScriptForge](#scriptforge)
-  * [Design Considerations](#design-considerations)
+    * [Language](#language)
     * [Memory](#memory)
     * [CPU (Time Limit)](#cpu-time-limit)
-    * [Javascript](#javascript)
-    * [PHP](#php)
     * [Durability](#durability)
     * [Scalability](#scalability)
     * [Functionality](#functionality)
-
+    * [API](#examples)
+    * [Examples](#examples)
+        * [Random CLI](#random-cli)
+        * [Checking a DNC List](#checking-a-dnc-list)
+        * [Performing an ASRPlus Lookup](#performing-an-asrplus-lookup)
 
 # ScriptForge
-
 The ScriptForge allows you to write your own application which can be run at specific events in the system, currently the following places support scripting functionality:
 
 * Routing Engine (runs in line the call setup process)
-* Post Billing (runs after billing has taken place)
 
 Requests to your application are processed via a messaging bus and will be queued if your application can not process them fast enough. If you run your application in the routing engine you must ensure that it can complete quickly so as not to induce high PDD.
 
 ## Design Considerations
+
+### Language
+
+ScriptForge currently supports Java script (ECMA6)
 
 ### Memory
 
@@ -33,13 +37,6 @@ There are no hard CPU restrictions on your application, however its run time is 
 
 The first message to be processed can take up to 300ms to instantiate, further messages (in proximity) will be processed near instantaneously.
 
-### Javascript
-
-The exit() function must be called to return the result and mark the message processing as complete. If exit() is not called the process will be terminated at the limited time. Once exit() is called the process will continue to run for x2 the allocated time to finish any asynchronous tasks issued to it. At which point the process is frozen until another message arrives. If it stays frozen with no new messages for 60 seconds the process is terminated.
-
-### PHP
-
-PHP runs as a single-thread non-concurrent process. A PHP process must return a result with the standard return syntax. As there is no concurrency this marks the end of processing the message. The process will remain idle for the next 60 seconds, if there are no messages within this time, the process is terminated.
 
 ### Durability
 
@@ -54,3 +51,60 @@ If your application is intensive and/or you need to scale further please contact
 ### Functionality
 
 Your programming environment is locked down for security reasons, but we provide classes/helpers to achieve greater functionality, you can find out more about them in the Knowledge Base.
+
+## API
+
+Code will start in the `main()` function
+Execution will be marked as complete when the `exit(response)` function is called, response is the variable that will be returned to the instantiating system.
+If you wish to do the equivalent of throwing an exception, you can call the `err();` which takes a single parameter for example `[404, "Not Found"]`
+Variables can be made available through the `vars()` function.
+
+A basic routing application will look something like this:
+```
+function main(){
+  var data = vars();
+  exit(data);
+}
+ ```
+
+ScriptForge as default is designed to process 1 concurrent execution per server. It is therefore important to execute `exit()` as soon as possible as the server will be blocking untill this operation completes. It is also important to ensure that there are no other branches of your code executing after the `exit()` has been called as this will slow down subsequent requests and could also cause unexpected termination & time outs of subsequent requests.
+
+## Examples
+### Random CLI
+```
+function main(){
+  var data = vars();
+  var cliList = ["11111","22222","33333","44444"];
+  data.routing.cli = cliList[Math.floor(Math.random() * cliList.length)];
+  return exit(data);
+}
+ ```
+### Checking a DNC List
+You can upload your own number lists for Do-not-Call, or white lists in the User Space Database inside the main system. You can then query it from Script Forge.
+```
+function main(){
+	var data = vars();
+	if (!data.routing) data.routing = {};
+	api.lookup.userspaceLookup('DNC', data.routing.dest_number).then(function(rData){
+		err([603, "Denied (DNC)"]);
+	}).catch(function(){
+		exit(data.routing);
+	});
+}
+```
+### Performing an ASRPlus Lookup
+ASRPlus is a ConnexCS feature for reducing unecessary attempts and providing faster fails on calls. Its most suitable for agress call-center traffic profiles.
+```
+function main(){
+	var data = vars();
+	if (!data.routing) data.routing = {};
+	api.lookup.asrplus(data.routing.dest_number).then(function(asrplusData){
+		if (asrplusData.status && asrplusData.status =='Invalid'){
+			err([604, "Number not Found (ASRPlus)"]);
+		} else {
+		  	data.routing.asrPlus = asrplusData;
+			exit(data.routing);
+		}
+	});
+}
+```
