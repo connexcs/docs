@@ -65,12 +65,14 @@ function main(){
   var data = vars();
   exit(data);
 }
- ```
+```
 
 ScriptForge as default is designed to process 1 concurrent execution per server. It is therefore important to execute `exit()` as soon as possible as the server will be blocking untill this operation completes. It is also important to ensure that there are no other branches of your code executing after the `exit()` has been called as this will slow down subsequent requests and could also cause unexpected termination & time outs of subsequent requests.
 
 ## Examples
+
 ### Random CLI
+
 ```
 function main(){
   var data = vars();
