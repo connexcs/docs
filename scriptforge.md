@@ -60,6 +60,7 @@ If you wish to do the equivalent of throwing an exception, you can call the `err
 Variables can be made available through the `vars()` function.
 
 A basic routing application will look something like this:
+
 ```
 function main(){
   var data = vars();
@@ -85,6 +86,7 @@ function main(){
 ### Checking a DNC List
 
 You can upload your own number lists for Do-not-Call, or white lists in the User Space Database inside the main system. You can then query it from Script Forge.
+
 ```
 function main(){
 	var data = vars();
@@ -100,6 +102,7 @@ function main(){
 ### Performing an ASRPlus Lookup
 
 ASRPlus is a ConnexCS feature for reducing unecessary attempts and providing faster fails on calls. Its most suitable for agress call-center traffic profiles.
+
 ```
 function main(){
 	var data = vars();
