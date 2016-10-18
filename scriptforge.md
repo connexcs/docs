@@ -81,7 +81,9 @@ function main(){
   return exit(data);
 }
  ```
+ 
 ### Checking a DNC List
+
 You can upload your own number lists for Do-not-Call, or white lists in the User Space Database inside the main system. You can then query it from Script Forge.
 ```
 function main(){
@@ -94,7 +96,9 @@ function main(){
 	});
 }
 ```
+
 ### Performing an ASRPlus Lookup
+
 ASRPlus is a ConnexCS feature for reducing unecessary attempts and providing faster fails on calls. Its most suitable for agress call-center traffic profiles.
 ```
 function main(){
