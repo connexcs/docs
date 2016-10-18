@@ -11,6 +11,7 @@
     * [API](#api)
     * [Libraries](#libraries)
         * [Lookup](#lookup)
+        * [Send](#send)
     * [Examples](#examples)
         * [Random CLI](#random-cli)
         * [Checking a DNC List](#checking-a-dnc-list)
@@ -87,6 +88,15 @@ api.lookup.hlr(number);
 api.lookup.lrn(number);
 api.lookup.ping(number);
 api.lookup.userspaceLookup(number);
+```
+### Send
+A way to send messages from the system
+
+```
+api.send.email(params);
+api.send.sms(params);
+api.send.notify(params);
+api.send.sip(params);
 ```
 
 ## Examples
