@@ -8,7 +8,9 @@
     * [Durability](#durability)
     * [Scalability](#scalability)
     * [Functionality](#functionality)
-    * [API](#examples)
+    * [API](#api)
+    * [Libraries](#libraries)
+        * [Lookup](#lookup)
     * [Examples](#examples)
         * [Random CLI](#random-cli)
         * [Checking a DNC List](#checking-a-dnc-list)
@@ -72,9 +74,10 @@ function main(){
 ScriptForge as default is designed to process 1 concurrent execution per server. It is therefore important to execute `exit()` as soon as possible as the server will be blocking untill this operation completes. It is also important to ensure that there are no other branches of your code executing after the `exit()` has been called as this will slow down subsequent requests and could also cause unexpected termination & time outs of subsequent requests.
 
 ## Libraries
+This section is lightly documented, if you have any questions please ask us.
 
 ### Lookup
-All functions return a promise
+All functions return a promise which contains an object with the same key values pairs as can be found here: https://api2.connexcs.com/
 
 ```
 api.lookup.asrplus(number);
