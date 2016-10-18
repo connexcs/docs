@@ -12,6 +12,8 @@
 
 # User Space Database
 
+The User Space Database allows you to upload a database externally. The file needs to be in excel or CSV format with the relevant columns selected (Area, Key, Value).
+
 This tutorial will guide how to manage User Space Database. You can go to the *Setup* from the left pane and click on the **User Space Database**, as highlighted in the image below:
 
 ![alt text][user-space-img-1]
