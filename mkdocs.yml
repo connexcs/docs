@@ -15,7 +15,7 @@ pages:
 - CUSTOMERS:
     - Customers: customer.md
     - Credit Control: credit-control.md
-    - CLI : cli.md
+    - CLI: cli.md
     - Ingress Routing: ingress-routing.md
     - My Account: my-account.md
     - NAT Traversal: far-end-nat-traversal.md
