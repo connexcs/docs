@@ -16,7 +16,6 @@ pages:
     - Customers: customer.md
     - Credit Control: credit-control.md
     - CLI : cli.md
-    - Customer Ratecard: customer-rate-card.md
     - Ingress Routing: ingress-routing.md
     - My Account: my-account.md
     - NAT Traversal: far-end-nat-traversal.md
@@ -26,7 +25,8 @@ pages:
 - CARRIERS: 
     - Carriers: carriers.md
 
-- CARDS:
+- RATE CARDS:
+    - Customer Ratecard: customer-rate-card.md
     - Generating: rate-card-building.md
     - Overview: provider-ratecard.md
     
