@@ -7,46 +7,47 @@ extra_javascript:
 - extra.js
 
 pages:
-- Home: index.md
-- GETTING STARTED: getting-started.md
 - Feature List: feature-list.md
+- GETTING STARTED: getting-started.md
+- Home: index.md
+
 
 - CUSTOMERS:
     - Customers: customer.md
-    - Payments: customer-payments.md
-    - Ingress Routing: ingress-routing.md
-    - NAT Traversal: far-end-nat-traversal.md
     - Credit Control: credit-control.md
-    - My Account: my-account.md
-    - Routing Strategy: routing-strategy.md
     - CLI : cli.md
     - Customer Ratecard: customer-rate-card.md
+    - Ingress Routing: ingress-routing.md
+    - My Account: my-account.md
+    - NAT Traversal: far-end-nat-traversal.md
+    - Payments: customer-payments.md
+    - Routing Strategy: routing-strategy.md
  
 - CARRIERS: 
     - Carriers: carriers.md
 
 - CARDS:
-    - Overview: provider-ratecard.md
     - Generating: rate-card-building.md
-
+    - Overview: provider-ratecard.md
+    
 - DID:
     - DID: did.md
 
 - MISCELLANENOUS:
-    - Specification: spec.md
+    - API: api.md
     - Authentication: authentication.md
+    - Billing: billing.md
+    - Limiting: limiting-cps.md
+        - Logging: logging.md
+    - Media Handling: media-handling.md
+    - My Servers: my-servers.md
     - Report: report.md
     - Routing: routing.md
     - Routing USA: routing-usa.md
     - Routing Engine: routing-engine.md
-    - Limiting: limiting-cps.md
-    - API: api.md
-    - Logging: logging.md
-    - Media Handling: media-handling.md
-    - Scaling and Load Balancing: scaling-load-balancing.md 
-    - Scriptforge: scriptforge.md
-    - Billing: billing.md
-    - Packages: packages.md
-    - User Space Database: user-space-db.md
-    - My Servers: my-servers.md
+        - Scaling and Load Balancing: scaling-load-balancing.md 
+    - Specification: spec.md
+        - Scriptforge: scriptforge.md
+        - Packages: packages.md
     - Security: security.md
+    - User Space Database: user-space-db.md
