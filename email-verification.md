@@ -17,5 +17,5 @@ Steps to Verify Email Address:
 
 
 [verify-email-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/verify-email-1.png "verify-mobile-1"
-[verify-email-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/verify-email-3.png "verify-mobile-3"
+[verify-email-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/verify-email-2.png "verify-mobile-2"
 
