@@ -22,11 +22,11 @@ Checking the Force CLI option will let the user to pass the CLI without having t
 
 * Click on Routing Routing
 
-![alt text][CLI-2]
-
 * Click + under CLI.
 
 * Enter the CLI Number in E164 format.
+
+![alt text][CLI-2]
 
 * Click Save.
 
@@ -35,5 +35,4 @@ Checking the Force CLI option will let the user to pass the CLI without having t
 
 [CLI-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/CLI-1.png "CLI-1"
 [CLI-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/CLI-2.png "CLI-2"
-[CLI-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/CLI-3.png "CLI-3"
 [CLI-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/CLI-4.png "CLI-4"
