@@ -18,17 +18,15 @@ Checking the Force CLI option will let the user to pass the CLI without having t
 
 * Click on Managment > Customer > [Customer name]
 
+![alt text][CLI-1]
+
 * Click on Routing Routing
 
-![alt text][CLI-1]
+![alt text][CLI-2]
 
 * Click + under CLI.
 
 * Enter the CLI Number in E164 format.
-
-![alt text][CLI-3]
-
-![alt text][CLI-2]
 
 * Click Save.
 
