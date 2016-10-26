@@ -26,15 +26,11 @@ Checking the Force CLI option will let the user to pass the CLI without having t
 
 * Enter the CLI Number in E164 format.
 
+![alt text][CLI-3]
 
 ![alt text][CLI-2]
 
 * Click Save.
-
-
-![alt text][CLI-3]
-
-
 
 ![alt text][CLI-4]
 
