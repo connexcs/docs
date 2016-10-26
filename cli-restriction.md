@@ -18,7 +18,7 @@ Checking the Force CLI option will let the user to pass the CLI without having t
 
 * Click on Managment > Customer > [Customer name]
 
-![alt text][CLI-1]
+![alt text][CLI-0]
 
 * Click on Routing Routing
 
@@ -33,6 +33,6 @@ Checking the Force CLI option will let the user to pass the CLI without having t
 ![alt text][CLI-4]
 
 
-[CLI-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/CLI-1.png "CLI-1"
+[CLI-0]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/CLI-0.png "CLI-0"
 [CLI-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/CLI-2.png "CLI-2"
 [CLI-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/CLI-4.png "CLI-4"
