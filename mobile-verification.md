@@ -14,9 +14,12 @@ Steps to Verify Mobile Number
 
 ![alt text][verify-mobile-1]
 
+![alt text][verify-mobile-3]
+
 ![alt text][verify-mobile-2]
 
 
 
 [verify-mobile-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/verify-mobile-1.png "verify-mobile-1"
+[verify-mobile-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/verify-mobile-3.png "verify-mobile-3"
 [verify-mobile-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/verify-mobile-2.png "verify-mobile-2"
