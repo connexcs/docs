@@ -21,8 +21,8 @@ pages:
     - NAT Traversal: far-end-nat-traversal.md
     - Payments: customer-payments.md
     - Routing Strategy: routing-strategy.md
-    - Verify Email: email-verification.md
-    - Verify Mobile: mobile-verification.md
+    - Email Verification: email-verification.md
+    - Mobile Verification: mobile-verification.md
  
 - CARRIERS: 
     - Carriers: carriers.md
