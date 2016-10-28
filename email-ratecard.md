@@ -22,4 +22,4 @@ With this feature you can email the rate card to your customer's email address a
 
 [email-ratecard-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/email-ratecard-1.png "Email-Ratecard-1"
 [email-ratecard-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/email-ratecard-2.png "Email-Ratecard-2"
-[email-ratecard-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/email-ratecard-3.png "Email-Ratecard-2"
+[email-ratecard-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/email-ratecard-3.png "Email-Ratecard-3"
