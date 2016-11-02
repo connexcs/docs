@@ -110,6 +110,7 @@ Following figure demonstrates the **Edit Carrier** button:
 
 You can view your stats by clicking on the tab “Stats”.  In the image given below, there are no calls placed that’s why the graph is showing a straight line.
  
+![alt text][carrier-stats] 
 
 ### Reply Management
 
@@ -117,12 +118,18 @@ There is a special module in Connex for replying efficiently and that is Reply M
 There are codes on the basis of which action and responses are set. You can customize your responses too.
  
 Choose the “Replace” radio button and then “New Code” and “New Reason” field would appear. Here, choose a code and fill the reason of your choice.
+
+![alt text][carrier-reply] 
  
 ### Authentication
 
 Next to the Reply Management tab there is “Authentication” where you can specify your authenticated IP.
+
+![alt text][carrier-authentication] 
  
 You can also add new IP for authentication, by clicking on the “+” sign on extreme right. 
+
+![alt text][carrier-ip-1] 
  
 Fill Basic and Advanced tab to complete the addition of authenticated IP.
 
