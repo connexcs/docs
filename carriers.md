@@ -139,32 +139,47 @@ Fill Basic and Advanced tab to complete the addition of authenticated IP.
  
 You can simulate a call too by clicking the green button, named “Simulate”.
 
+![alt text][carrier-calls] 
+
 ### Failover
  
  “Failover” are the calls which were not successfully made. A list of failover calls is shown in this tab.
+ 
+![alt text][carrier-failover] 
  
 ### Payment
 
 “Payment” tab would let you see all the payments made so far. You can add a new payment by clicking on the “+” sign.
  
 Fill in the more payment information and click “Save”.
+
+![alt text][carrier-payment] 
  
 
 #### CDR
 
 “CDR” tab let you check all your CDR’s. You can also recalculate a CDR for a specific month by clicking on “Recalc CDR”.
+
+![alt text][carrier-cdr] 
  
 ### DID
 
 “DID” tab let you check the DID.  You can add a new DID clicking on the “+” on the extreme left.
  
 After adding the details, click “Save”.
+
+![alt text][carrier-did]
  
 ### Alerts
 
 “Alerts” tab is right next to the “DID”. It allows you to generate alerts to someone when some specific events are triggered. You can view all your alerts by clicking on Alerts tab.
+
+![alt text][carrier-alert-1]
+
 You can also add a customize alert by clicking on the “+” sign.
- 
+
+![alt text][carrier-alert-2]
+
 After adding the relevant info for a alert, click “Save” and a new alert will be functional.
 
 ================================================================================================
