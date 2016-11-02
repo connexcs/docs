@@ -25,7 +25,7 @@ The **Routing Strategy** allows you to route calls of different providers throug
   
 **5. Reverse LCR** – Most Expensive route will be picked first.
 
-**6. Tiered Routing**  -  "Tier" in routing strategy allows 1 selection per tier. Example
+**6. Tier Routing**  -  "Tier" in routing strategy allows 1 selection per tier. Example
 
 1 [A,B,C] 2 [D,E] 3 [F,G,H]
 
