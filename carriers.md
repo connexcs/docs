@@ -13,13 +13,13 @@
 
 # Carrier Management
 
-Carriers can be easily and efficiently managed with the help of **Connex.** **Connex**allows you to not only add, edit and delete carriers but also lets you view the columns you want to see. 
+Carriers can be easily and efficiently managed with the help of **Connex.** **Connex** allows you to not only add, edit and delete carriers but also lets you view the columns you want to see. 
 
 On the Dashboard, click on the tab. highlighted in the page centre, to go to the **Carrier** or you can expand the **_Management_** tab from the left pane and select **"Carrier".**
 
 ![alt text][carrier-list]
 
-## Add a New Carrier
+## Adding Carrier
 
 ![alt text][add-carriers]
 
@@ -104,6 +104,64 @@ In order to edit a **Carrier**, select a **Carrier** from the list. A new page w
 Following figure demonstrates the **Edit Carrier** button:
 
 ![alt text][carrier-dashboard]
+
+================================================================================================
+
+### Stats
+
+You can view your stats by clicking on the tab “Stats”.  In the image given below, there are no calls placed that’s why the graph is showing a straight line.
+ 
+
+### Reply Management
+
+There is a special module in Connex for replying efficiently and that is Reply Management.
+There are codes on the basis of which action and responses are set. You can customize your responses too.
+ 
+Choose the “Replace” radio button and then “New Code” and “New Reason” field would appear. Here, choose a code and fill the reason of your choice.
+ 
+### Authentication
+
+Next to the Reply Management tab there is “Authentication” where you can specify your authenticated IP.
+ 
+You can also add new IP for authentication, by clicking on the “+” sign on extreme right. 
+ 
+Fill Basic and Advanced tab to complete the addition of authenticated IP.
+
+### Latest Calls
+
+“Latest Calls” is the tab next to Authentication. Where you can find all the calls you have made, lately.
+ 
+You can simulate a call too by clicking the green button, named “Simulate”.
+
+### Failover
+ 
+ “Failover” are the calls which were not successfully made. A list of failover calls is shown in this tab.
+ 
+### Payment
+
+“Payment” tab would let you see all the payments made so far. You can add a new payment by clicking on the “+” sign.
+ 
+Fill in the more payment information and click “Save”.
+ 
+
+#### CDR
+
+“CDR” tab let you check all your CDR’s. You can also recalculate a CDR for a specific month by clicking on “Recalc CDR”.
+ 
+### DID
+
+“DID” tab let you check the DID.  You can add a new DID clicking on the “+” on the extreme left.
+ 
+After adding the details, click “Save”.
+ 
+### Alerts
+
+“Alerts” tab is right next to the “DID”. It allows you to generate alerts to someone when some specific events are triggered. You can view all your alerts by clicking on Alerts tab.
+You can also add a customize alert by clicking on the “+” sign.
+ 
+After adding the relevant info for a alert, click “Save” and a new alert will be functional.
+
+================================================================================================
 
 ##Code Consistency
 
