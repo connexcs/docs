@@ -202,7 +202,7 @@ The metric only takes into account 200 and 404's.
 [carrier-reply]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-reply.png "Carrier Reply"
 [carrier-reply-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-reply-2.png "Carrier Reply 2"
 [carrier-authentication]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-authentication.png "Carrier Authentication"
-[carrier-ip-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-ip-1.png "Carrier IP 1"
+[carrier-ip-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-ip-1.jpg "Carrier IP 1"
 [carrier-calls]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-calls.png "Carrier Calls"
 [carrier-failover]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-failover.png "Carrier Failover"
 [carrier-payment]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-payment.png "Carrier Payment"
