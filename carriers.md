@@ -106,7 +106,6 @@ Following figure demonstrates the **Edit Carrier** button:
 ![alt text][carrier-dashboard]
 
 ================================================================================================
-
 ### Stats
 
 You can view your stats by clicking on the tab “Stats”.  In the image given below, there are no calls placed that’s why the graph is showing a straight line.
@@ -174,4 +173,13 @@ The metric only takes into account 200 and 404's.
 [add-carriers]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/add-carriers.png "Add-Carrier"
 [carrier-details]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-details.png "Carrier-Details"
 [carriers-sorting]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carriers-sorting.png "Carriers-Sorting"
+[carriers]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carriers.png "Carriers"
+
+
+[carrier-stats]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-stats.png "Carrier Stats"
+[carrier-reply]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-reply.png "Carrier Reply"
+[carrier-reply-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-reply-2.png "Carrier Reply 2"
+[carrier-authentication]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-authentication.png "Carrier Authentication"
+[carrier-ip-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-ip-1.png "Carrier IP 1"
+[carrier-calls]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-calls.png "Carrier Calls"
 [carriers]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carriers.png "Carriers"
