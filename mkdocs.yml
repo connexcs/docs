@@ -28,7 +28,7 @@ pages:
     - Carriers: carriers.md
 
 - RATE CARDS:
-    - Customer Ratecard: customer-rate-card.md
+    - Ratecard: customer-rate-card.md
     - Generating: rate-card-building.md
     - Overview: provider-ratecard.md
     
