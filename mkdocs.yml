@@ -33,3 +33,15 @@ pages:
     
 - DID:
     - DID: did.md
+
+- MISCELLANENOUS:
+    - API: api.md
+    - Authentication: authentication.md
+    - Billing: billing.md
+    - Limiting: limiting-cps.md
+        - Logging: logging.md
+    - Media Handling: media-handling.md
+    - My Servers: my-servers.md
+    - Report: report.md
+    - Routing: routing.md
+    - Routing USA: routing-usa.md
