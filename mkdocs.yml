@@ -39,7 +39,7 @@ pages:
     - Authentication: authentication.md
     - Billing: billing.md
     - Limiting: limiting-cps.md
-        - Logging: logging.md
+    - Logging: logging.md
     - Media Handling: media-handling.md
     - My Servers: my-servers.md
     - Report: report.md
