@@ -22,3 +22,14 @@ pages:
     - Routing Strategy: routing-strategy.md
     - Email Verification: email-verification.md
     - Mobile Verification: mobile-verification.md
+    
+- CARRIERS: 
+    - Carriers: carriers.md
+
+- RATE CARDS:
+    - Customer Ratecard: customer-rate-card.md
+    - Generating: rate-card-building.md
+    - Overview: provider-ratecard.md
+    
+- DID:
+    - DID: did.md
