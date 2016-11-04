@@ -11,8 +11,8 @@ pages:
 - GETTING STARTED: getting-started.md
 - Home: index.md
 
-- CUSTOMERS:
-    - Customers: customer.md
+- CUSTOMER:
+    - Customer: customer.md
     - Credit Control: credit-control.md
     - CLI: cli.md
     - Ingress Routing: ingress-routing.md
@@ -23,8 +23,8 @@ pages:
     - Email Verification: email-verification.md
     - Mobile Verification: mobile-verification.md
     
-- CARRIERS: 
-    - Carriers: carriers.md
+- CARRIER: 
+    - Carrier: carrier.md
 
 - RATE CARDS:
     - Customer Ratecard: customer-rate-card.md
