@@ -1,4 +1,4 @@
-#Email Verification: 
+#Email Verification 
 
 We verify email addresses to ensure that they are genuine.
 
@@ -15,7 +15,7 @@ Steps to Verify Email Address:
 ![alt text][verify-email-2]
 
 
-#Mobile Verification: 
+#Mobile Verification 
 
 We verify mobile phone numbers to ensure that they are genuine.
 
