@@ -9,6 +9,7 @@ extra_javascript:
 pages:
 - Feature List: feature-list.md
 - GETTING STARTED: getting-started.md
+- Verification Methods: verification.md
 - Home: index.md
 
 - CUSTOMER:
