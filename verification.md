@@ -1,3 +1,5 @@
+# Table of Contents
+
 * [Table of Contents](#table-of-contents)
 * [Email Verification](#email-verification)
 * [Mobile Verification](#mobile-verification)
