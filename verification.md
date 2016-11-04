@@ -1,3 +1,7 @@
+* [Table of Contents](#table-of-contents)
+* [Email Verification](#email-verification)
+* [Mobile Verification](#mobile-verification)
+
 #Email Verification 
 
 We verify email addresses to ensure that they are genuine.
