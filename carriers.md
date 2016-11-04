@@ -8,6 +8,15 @@
     * [Searching Carrier](#searching-carrier)
     * [Customizing the View](#customizing-the-view)
     * [Edit Carrier](#edit-carrier)
+         * [Stats](#stats)
+         * [Reply-Management](#reply-management)
+         * [Authentication](#authentication)
+         * [Latest Calls](#latest-calls)
+         * [Failover](#failover)
+         * [Payment](#payment)  
+         * [CDR](#cdr)  
+         * [DID](#did)  
+         * [Alerts](#alerts)  
     * [Code Consistency](#code-consistency)
 
 
