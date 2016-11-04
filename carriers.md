@@ -105,7 +105,6 @@ Following figure demonstrates the **Edit Carrier** button:
 
 ![alt text][carrier-dashboard]
 
-================================================================================================
 ### Stats
 
 You can view your stats by clicking on the tab “Stats”.  In the image given below, there are no calls placed that’s why the graph is showing a straight line.
@@ -181,8 +180,6 @@ You can also add a customize alert by clicking on the “+” sign.
 ![alt text][carrier-alert-2]
 
 After adding the relevant info for a alert, click “Save” and a new alert will be functional.
-
-================================================================================================
 
 ##Code Consistency
 
