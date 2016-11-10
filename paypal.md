@@ -5,6 +5,8 @@
 * [Setting the Customer Paypal Email Address into ConnexCS](#setting-the-customer-paypal-email-address-into-connexcs)
 
 
+# Paypal Integration
+
 
 ## Login to ConnexCS account.
 
