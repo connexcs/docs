@@ -9,19 +9,25 @@
 ## Login to ConnexCS account.
 
 1.	Click on Setup> My Account> API
+
 2.	Click on the PayPal IPN button 
 
 ![alt text][paypal-2]
 
 3.	Check IPN Enabled, Verify Transaction
+
 4.	Select Payment Types & Currencies
+
 5.	Copy the IPN URL
 
 ![alt text][paypal-5]
 
 6.	Click Save
+
 7.	Login to your PayPal account.
+
 8.	Click “Profile”
+
 9.	Find the “Instant payment notifications”, click “Update”
 
 ![alt text][paypal-3]
