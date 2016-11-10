@@ -20,6 +20,7 @@ pages:
     - My Account: my-account.md
     - NAT Traversal: far-end-nat-traversal.md
     - Payments: customer-payments.md
+    - Paypal Integration: paypal.md
     - Routing Strategy: routing-strategy.md
     
 - CARRIER: 
