@@ -4,7 +4,6 @@
 1.	Click on Setup> My Account> API
 2.	Click on the PayPal IPN button 
 
-
 ![alt text][paypal-2]
 
 3.	Check IPN Enabled, Verify Transaction
