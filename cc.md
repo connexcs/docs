@@ -151,7 +151,7 @@ Click on 3 horizontal lines to select the columns.
  
 Moreover, every column can be sorted separately, as shown in the image below.
  
-![alt text][cc-18]   
+![alt text][cc-19]   
 
 [cc-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/cc-1.png "CC-1"
 [cc-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/cc-2.png "CC-2"
