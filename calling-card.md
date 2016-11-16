@@ -27,24 +27,3 @@ Inside the application will be a HTML Browser which will connect to your pre-set
 # Make Your Own
 Remember ConnexCS has a full API for both Users and your Customers. If you already have a softphone integration it can be integrated with ConnexCS API with end user credentials.
 
-
-[cc-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/cc-1.png "CC-1"
-[cc-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/cc-2.png "CC-2"
-[cc-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/cc-3.png "CC-3"
-[cc-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/cc-4.png "CC-4"
-[cc-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/cc-5.png "CC-5"
-[cc-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/cc-6.png "CC-6"
-[cc-7]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/cc-7.png "CC-7"
-[cc-8]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/cc-8.png "CC-8"
-[cc-9]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/cc-9.png "CC-9"
-[cc-10]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/cc-10.png "CC-10"
-[cc-11]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/cc-11.png "CC-11"
-[cc-12]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/cc-12.png "CC-12"
-[cc-13]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/cc-13.png "CC-13"
-[cc-14]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/cc-14.png "CC-14"
-[cc-15]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/cc-15.png "CC-15"
-[cc-16]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/cc-16.png "CC-16"
-[cc-17]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/cc-17.png "CC-17"
-[cc-18]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/cc-18.png "CC-18"
-[cc-19]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/cc-19.png "CC-19"
-[cc-20]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/cc-20.png "CC-20"
