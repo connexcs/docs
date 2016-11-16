@@ -2,6 +2,8 @@
 
 From dashboard, expand the Management tab and look for Calling Card. 
  
+![alt text][cc-1]
+ 
 This module allows you to perform following actions:
 1)	Manage calling cards
 2)	Manage SIP devices
@@ -23,8 +25,11 @@ e)	Manage columns
 To generate a new calling card;
 1.	Click on "Generate New" button, as highlighted in the image below.
 
+![alt text][cc-2]
 
 2.	A new modal would open to provide the required info.
+
+![alt text][cc-3]
  
 Here,
 
@@ -40,7 +45,11 @@ You are all set with generating a new card.
 To edit any card; 
 1.	Select any desired row and click on "Edit Selected Rows" button.
  
+![alt text][cc-4]
+
 2.	A new modal would open to edit the desired info.
+
+![alt text][cc-5]
  
 3.	Once you are done with editing, click on "Save" button to let the entries get saved.
 
@@ -51,19 +60,31 @@ Note: Multiple rows can also be selected and edited accordingly, in one run.
 To delete an existing card;
 
 1.	Select the desired row to complete the action and click on trash icon.
+
+![alt text][cc-5]
+
 2.	A confirmation modal would to open to proceed.
+
+![alt text][cc-6]
+
 3.	Confirm to delete the selected record and your entry will be deleted from the list.
 
 ### Refresh List
 
 To refresh the list of calling cards, click on “Refresh” button to get the updated list.
+
+![alt text][cc-7]
  
 ### Manage Columns
 
 Columns settings can be made from three bars present on top right.
+
+![alt text][cc-8]
  
 You can set the list of columns that needs to be shown on the grid.
 Moreover, each column is also sort able and can be hidden, as shown in the image below.
+
+![alt text][cc-9]
  
 ## Manage SIP Devices
 
@@ -79,41 +100,58 @@ f)	Manage columns
 
 To add a new SIP device:
 1)	Click on Add Device button.
+
+![alt text][cc-10]
+
 2)	A form would open. Select the customer for whom the device is to be added, enter the rest of information and click on Save button.
+
+![alt text][cc-11]
 
 A new device for that particular customer would be saved.
 
 ## View and Edit Devive
 
-1)	To view a device, click on the icon under “View Device” column.
+1)	To view a device, click on the icon under "View Device" column.
+
+![alt text][cc-12]
  
 2)	A form would open. Click on Edit button.
+ 
+![alt text][cc-13] 
  
 3)	On this page you can edit device information as well as can add a device line too and save accordingly.
 
 ## DELETE A DEVICE
 
 To delete a device from the list, select any row and click on trash icon.
+
+![alt text][cc-14]
  
 This is how a device will be deleted.
 
 ## SEARCH DEVICE
 
 To search a particular device, type in the search field and results will be filtered out.
+
+![alt text][cc-15]
  
 ## REFRESH DEVICE LIST
 
 To get the most updated list of devices, click on “Refresh” button.
+ 
+![alt text][cc-16] 
  
 ## MANAGE COLUMNS
 
 You can also manage columns and select which columns you want to see in the grid.
 
 Click on 3 horizontal lines to select the columns.
+
+![alt text][cc-17]
  
 Moreover, every column can be sorted separately, as shown in the image below.
  
-   
+![alt text][cc-18]   
 
 [cc-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/cc-1.png "CC-1"
 [cc-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/cc-2.png "CC-2"
