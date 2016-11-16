@@ -147,7 +147,7 @@ You can also manage columns and select which columns you want to see in the grid
 
 Click on 3 horizontal lines to select the columns.
 
-![alt text][cc-17]
+![alt text][cc-18]
  
 Moreover, every column can be sorted separately, as shown in the image below.
  
