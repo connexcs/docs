@@ -45,11 +45,11 @@ You are all set with generating a new card.
 To edit any card; 
 1.	Select any desired row and click on "Edit Selected Rows" button.
  
-![alt text][cc-4]
+![alt text][cc-5]
 
 2.	A new modal would open to edit the desired info.
 
-![alt text][cc-5]
+![alt text][cc-6]
  
 3.	Once you are done with editing, click on "Save" button to let the entries get saved.
 
@@ -61,11 +61,11 @@ To delete an existing card;
 
 1.	Select the desired row to complete the action and click on trash icon.
 
-![alt text][cc-5]
+![alt text][cc-4]
 
 2.	A confirmation modal would to open to proceed.
 
-![alt text][cc-6]
+![alt text][cc-7]
 
 3.	Confirm to delete the selected record and your entry will be deleted from the list.
 
