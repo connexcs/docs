@@ -113,11 +113,11 @@ A new device for that particular customer would be saved.
 
 1)	To view a device, click on the icon under "View Device" column.
 
-![alt text][cc-12]
+![alt text][cc-14]
  
 2)	A form would open. Click on Edit button.
  
-![alt text][cc-13] 
+![alt text][cc-15] 
  
 3)	On this page you can edit device information as well as can add a device line too and save accordingly.
 
@@ -125,7 +125,7 @@ A new device for that particular customer would be saved.
 
 To delete a device from the list, select any row and click on trash icon.
 
-![alt text][cc-14]
+![alt text][cc-16]
  
 This is how a device will be deleted.
 
@@ -133,7 +133,7 @@ This is how a device will be deleted.
 
 To search a particular device, type in the search field and results will be filtered out.
 
-![alt text][cc-15]
+![alt text][cc-17]
  
 ## REFRESH DEVICE LIST
 
