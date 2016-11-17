@@ -101,11 +101,11 @@ f)	Manage columns
 To add a new SIP device:
 1)	Click on Add Device button.
 
-![alt text][cc-11]
+![alt text][cc-12]
 
 2)	A form would open. Select the customer for whom the device is to be added, enter the rest of information and click on Save button.
 
-![alt text][cc-12]
+![alt text][cc-13]
 
 A new device for that particular customer would be saved.
 
@@ -113,11 +113,11 @@ A new device for that particular customer would be saved.
 
 1)	To view a device, click on the icon under "View Device" column.
 
-![alt text][cc-13]
+![alt text][cc-14]
  
 2)	A form would open. Click on Edit button.
  
-![alt text][cc-14] 
+![alt text][cc-15] 
  
 3)	On this page you can edit device information as well as can add a device line too and save accordingly.
 
@@ -125,7 +125,7 @@ A new device for that particular customer would be saved.
 
 To delete a device from the list, select any row and click on trash icon.
 
-![alt text][cc-15]
+![alt text][cc-16]
  
 This is how a device will be deleted.
 
