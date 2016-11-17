@@ -11,18 +11,29 @@
     * [Uploading Provider Card](#uploading-a-provider-rate-card-and-create-customer-rate-card)
     * [Manually Create Provider Card](#manually-create-provider-rate-card-and-create-customer-rate-card)
     * [Ingress Routing](#ingress-routing)
-  * [Customer](#customer)
+  * [Customer Management](#customer)
     * [Add Customers](#add-customers)
     * [Edit Customers](#edit-customers)
     * [Delete Customers](#delete-customers)
     * [Filter Customers](#filter-customers)
     * [Search Customers](#search-customers)
-  * [Carrier](#carrier)
-    * [Add Carriers](#add-carriers)
-    * [Edit Carriers](#edit-carriers)
-    * [Searching Carrier](#searching-carriers)
-      * [Customizing The View](#customizing-the-view)
-
+  * [Carrier Management](#carrier-management)
+    * [Add a New Carrier](#add-a-new-carrier)
+    * [Deleting Carriers](#deleting-carriers)
+    * [Checking the Status](#checking-the-status)
+    * [Searching Carrier](#searching-carrier)
+    * [Customizing the View](#customizing-the-view)
+    * [Edit Carrier](#edit-carrier)
+         * [Stats](#stats)
+         * [Reply-Management](#reply-management)
+         * [Authentication](#authentication)
+         * [Latest Calls](#latest-calls)
+         * [Failover](#failover)
+         * [Payment](#payment)  
+         * [CDR](#cdr)  
+         * [DID](#did)  
+         * [Alerts](#alerts)  
+    * [Code Consistency](#code-consistency)
 
 # Introduction
 Initial set-up will configure a single carrier, single customer and single rate card.
@@ -60,7 +71,7 @@ The videos on this page are to show a quick example of how to setup your account
 ### Ingress Routing
 <video controls="controls" width="320" height="240"><source src="https://www.connexcs.com/wiki_media/ingress_routing.ogv" type="video/ogg; codecs=&quot;theora, vorbis&quot;" /><source src="https://www.connexcs.com/wiki_media/ingress_routing.webm" type="video/webm" /><source src="https://www.connexcs.com/wiki_media/ingress_routing.mp4" type="video/mp4" />Your browser does not support the HTML5 video.</video>
 
-## Customer
+## Customer Management
 ### Add Customers
 
 Users can add customers by following the simple instructions.
@@ -126,7 +137,7 @@ Users can filter the customers as per their current status.
 ### Search Customers
 The customers that are already saved, can be searched for using the search bar.
 
-# Carrier Management
+## Carrier Management
 
 Carriers can be easily and efficiently managed with the help of **Connex.** **Connex** allows you to not only add, edit and delete carriers but also lets you view the columns you want to see. 
 
@@ -134,7 +145,7 @@ On the Dashboard, click on the tab. highlighted in the page centre, to go to the
 
 ![alt text][carrier-list]
 
-## Adding Carrier
+### Adding Carrier
 
 ![alt text][add-carriers]
 
@@ -180,7 +191,7 @@ The brief description of fields present in the above form, is given below:
 
 **Pre Ring Timeout and Post Ring Timeout:** Users will set the "Pre Ring Timeout" and "Post Ring Timeout" in the given text fields.
 
-## Deleting Carriers
+### Deleting Carriers
 
 Users can delete the existing **Carriers** from the list. 
 
@@ -188,7 +199,7 @@ Users can delete the existing **Carriers** from the list.
 
 2. Click on the **Delete** button, i.e. trash icon.
 
-## Checking The Status
+### Checking The Status
 
 ![alt text][carriers-sorting]
 
@@ -198,18 +209,18 @@ Users can also check/filter the status of the **Carriers.**
 2. Select an option from the dropdown menu.
 3. Results will show up according to the selected option.
 
-## Searching Carrier
+### Searching Carrier
 
 Users can search anything about a **Carrier** by writing the query in the **Search** text field.
 
-## Customizing The View
+### Customizing The View
 
 ![alt text][carriers]
 
 You can customize the view of your **Carriers** page and select only the columns which you want to view.
 On the extreme right, click on the menu button, and check the columns you want to view.
 
-## Edit Carrier
+### Edit Carrier
 
 In order to edit a **Carrier**, select a **Carrier** from the list. A new page will open. Follow the procedure given below:
 
@@ -296,7 +307,7 @@ You can also add a customize alert by clicking on the “+” sign.
 
 After adding the relevant info for a alert, click “Save” and a new alert will be functional.
 
-##Code Consistency
+## Code Consistency
 
 This measures the changes of response codes on the SAME number that have been returned from the carrier. It is useful for identifying if the carrier is using routes of different quality or generally poor quality overall. Good carriers will have a 100% code consistency.
 
