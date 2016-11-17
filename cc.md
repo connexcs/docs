@@ -139,7 +139,7 @@ To search a particular device, type in the search field and results will be filt
 
 To get the most updated list of devices, click on “Refresh” button.
  
-![alt text][cc-19]
+![alt text][cc-18]
  
 ## MANAGE COLUMNS
 
