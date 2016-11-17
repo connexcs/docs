@@ -17,7 +17,7 @@
     * [Delete Customers](#delete-customers)
     * [Filter Customers](#filter-customers)
     * [Search Customers](#search-customers)
-  * [Customer](#customer)
+  * [Carrier](#carrier)
     * [Add Carriers](#add-carriers)
     * [Edit Carriers](#edit-carriers)
     * [Searching Carrier](#searching-carriers)
