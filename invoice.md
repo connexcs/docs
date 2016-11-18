@@ -43,4 +43,13 @@ After clicking "Edit" button, a new page would show up, do the required changes 
 
 ![alt text][invoice-4]
  
+[invoice-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/invoice-1.png "Invoice-1"
+[invoice-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/invoice-2.png "Invoice-2"
+[invoice-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/invoice-3.png "Invoice-3"
+[invoice-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/invoice-4.png "Invoice-4"
+[invoice-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/invoice-5.png "Invoice-5"
+[invoice-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/invoice-6.png "Invoice-6"
+[invoice-7]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/invoice-7.png "Invoice-7"
+[invoice-2D]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/invoice-2D.png "Invoice-2D"
+ 
 
