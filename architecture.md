@@ -5,12 +5,6 @@
    * [Switch Administration](#switch-administration)
    * [Customer Administration](#customer-administration)
    * [Lookup Services](#lookup-services)
-   
-   
-   
-# Table of Contents
-
-* [Table of Contents](#table-of-contents)
 * [Security](#security)
   * [SSL Cerficiates](#ssl-certificates)
   * [Inter-zone Communication](#inter-zone-communication)
@@ -23,6 +17,42 @@
     * [SIP / RTP Firewall Block on Default](#sip-rtp-firewall-block-on-default)
     * [IDS / IPS](#ids-ips)
   * [Data Usage](#data-usage)
+  * [ConnexCS Media Handling](#connexcs-media-handling)
+   * [Server Specific optimizations](#server-specific-optimizations)
+  * [Scaling and Load Balancing](#scaling-and-load-balancing)
+  * [What is a zone?](#what-is-a-zone)
+  * [How can I scale in a Single Zone?](#how-can-i-scale-in-a-single-zone)
+    * [Stage 1](#stage-1)
+    * [Stage 2 (Alternative)](#stage-2-alternative)
+    * [Stage 3](#stage-3)
+  * [How can I scale in Multiple Zones?](#how-can-i-scale-in-multiple-zones)
+  * [Best practices](#best-practices)
+  * [Does using ConnexCS guarantee a HA (High Availability) solution?](#does-using-connexcs-guarantee-a-ha-high-availability-solution)
+  * [How quickly could I deploy 5 servers in each zone with load balancers and DNS?](#how-quickly-could-i-deploy-5-servers-in-each-zone-with-load-balancers-and-dns)
+  * [Can you help me with my DNS requirements?](#can-you-help-me-with-my-dns-requirements)
+
+
+
+# API
+ConnexCS has 3 distinct API's each accessible through a different URL but all follow the same specification.
+
+The API is _Restful JSON_ and accessible over HTTPS. It makes distinction around `GET`, `SET`, `PUT` and `DELETE` and follows CRUD. Requests primarly take advantage of request variables however _JSON Documents_ may occasionally be posted where a more complex request is required. A _JSON Document_ will always be returned. Errors are provides on the HTTPS Layer.
+
+## Switch Administration
+The switch API provide **full administrative capabilies**, by this we mean "every function that you can accomplish through our web interface is available through our API".
+
+You can find the API Spec here: <https://docs.connexcs.com>
+
+## Customer Administration
+If your customers wish to be able to talk to your switch and get information such as current balance or CDR's this is the API you need.
+You can find the API Spec here: <https://portal.connexcs.com/docs>
+
+
+## Lookup Services
+ConnexCS Lookup services are hosted seperate from the switch as this is a seperate product and is built to tollerate high requests/second..
+
+You can find the API Spec here: <https://api2.connexcs.com/docs>
+
 
 # Security
 
@@ -76,35 +106,6 @@ We have application level logic that identifies malicious activity which will es
 Connex Carrier Services Worldwide LTD is an independent company, not owned by a parent company or affiliates. All data is retained in ConnexCS on ConnexCS servers and is never passed to any 3rd parties. All staff have to abide by company non-disclosure policies and it is clear that any data breach would be treated with the utmost severity.
 
 
-
-# API
-ConnexCS has 3 distinct API's each accessible through a different URL but all follow the same specification.
-
-The API is _Restful JSON_ and accessible over HTTPS. It makes distinction around `GET`, `SET`, `PUT` and `DELETE` and follows CRUD. Requests primarly take advantage of request variables however _JSON Documents_ may occasionally be posted where a more complex request is required. A _JSON Document_ will always be returned. Errors are provides on the HTTPS Layer.
-
-## Switch Administration
-The switch API provide **full administrative capabilies**, by this we mean "every function that you can accomplish through our web interface is available through our API".
-
-You can find the API Spec here: <https://docs.connexcs.com>
-
-## Customer Administration
-If your customers wish to be able to talk to your switch and get information such as current balance or CDR's this is the API you need.
-You can find the API Spec here: <https://portal.connexcs.com/docs>
-
-
-## Lookup Services
-ConnexCS Lookup services are hosted seperate from the switch as this is a seperate product and is built to tollerate high requests/second..
-
-You can find the API Spec here: <https://api2.connexcs.com/docs>
-
-
-# Table of Contents
-
-* [Table of Contents](#table-of-contents)
-* [ConnexCS Media Handling](#connexcs-media-handling)
-   * [Server Specific optimizations](#server-specific-optimizations)
-
-
 # ConnexCS Media Handling
 
 * **Why do I see different media IP addresses?**
@@ -132,22 +133,6 @@ Although it may seem logical to have both of these running together, it’s actu
 * Sharing of Media Servers
 
    Allowing multiple customers to share media servers also adds the advantage of reducing hops if multiple parts of the route use go through customers of ConnexCS.
-
-# Table of Contents
-
-* [Table of Contents](#table-of-contents)
-* [Scaling and Load Balancing](#scaling-and-load-balancing)
-  * [What is a zone?](#what-is-a-zone)
-  * [How can I scale in a Single Zone?](#how-can-i-scale-in-a-single-zone)
-    * [Stage 1](#stage-1)
-    * [Stage 2 (Alternative)](#stage-2-alternative)
-    * [Stage 3](#stage-3)
-  * [How can I scale in Multiple Zones?](#how-can-i-scale-in-multiple-zones)
-  * [Best practices](#best-practices)
-  * [Does using ConnexCS guarantee a HA (High Availability) solution?](#does-using-connexcs-guarantee-a-ha-high-availability-solution)
-  * [How quickly could I deploy 5 servers in each zone with load balancers and DNS?](#how-quickly-could-i-deploy-5-servers-in-each-zone-with-load-balancers-and-dns)
-  * [Can you help me with my DNS requirements?](#can-you-help-me-with-my-dns-requirements)
-
 
 # Scaling and Load Balancing
 
