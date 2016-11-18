@@ -28,7 +28,6 @@ pages:
 
 - RATE CARDS:
     - Customer Ratecard: customer-rate-card.md
-    - Architecture: architecture.md
     - Generating: rate-card-building.md
     - Overview: provider-ratecard.md
     
@@ -36,20 +35,23 @@ pages:
     - DID: did.md
 
 - MISCELLANENOUS:
-    - API: api.md
     - Authentication: authentication.md
     - Billing: billing.md
     - Limiting: limiting-cps.md
     - Logging: logging.md
-    - Media Handling: media-handling.md
     - My Servers: my-servers.md
     - Report: report.md
     - Routing: routing.md
     - Routing USA: routing-usa.md
     - Routing Engine: routing-engine.md
-    - Scaling and Load Balancing: scaling-load-balancing.md 
     - Specification: spec.md
     - Scriptforge: scriptforge.md
     - Packages: packages.md
-    - Security: security.md
+
     - User Space Database: user-space-db.md
+   
+- Architecture:
+    - API: api.md
+    - Security: security.md
+    - Media Handling: media-handling.md    
+    - Scaling and Load Balancing: scaling-load-balancing.md 
