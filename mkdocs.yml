@@ -47,7 +47,6 @@ pages:
     - Specification: spec.md
     - Scriptforge: scriptforge.md
     - Packages: packages.md
-
     - User Space Database: user-space-db.md
    
 - Architecture:
