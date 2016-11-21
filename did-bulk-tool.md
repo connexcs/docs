@@ -1,7 +1,7 @@
 # Table of Contents
 
 * [Table of Contents](#table-of-contents)
-* [How to perform one action on multiple DID’s in one go?](#billing)
+* [How to perform one action on multiple DID’s in one go?](#how-to-perform-one-action-on-multiple-dids-in-one-go)
 
 
 
