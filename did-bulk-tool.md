@@ -1,3 +1,10 @@
+# Table of Contents
+
+* [Table of Contents](#table-of-contents)
+* [How to perform one action on multiple DID’s in one go?](#billing)
+
+
+
 # How to perform one action on multiple DID’s in one go?
 
 Editing all the DID one by one might feel like a time taking task. That's why Connex has introduced a functionality where you can perform the same action over multiple DID’s in one go.
