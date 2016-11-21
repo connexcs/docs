@@ -117,26 +117,6 @@ For a saved customer;
 2. Click on "Edit Customer" button.
 3. Edit the details and then Save.
 
-![alt text][add-dashboard]
-
-### Delete Customers
-Details of a customer can also be deleted by following below steps:
-1. Select a customer from the list.
-2. Click on trash icon, to delete the customer.
-
-![alt text][add-customer1]
-
-### Filter Customers
-Users can filter the customers as per their current status.
-1. Click the button saying "Active".
-2. Select an option from the dropdown menu. Either: All, Active, Inactive or Pending Approval.
-3. The list of customers will show up as per the search criteria.
-
-![alt text][customer-status]
-
-### Search Customers
-The customers that are already saved, can be searched for using the search bar.
-
 ## Carrier Management
 
 Carriers can be easily and efficiently managed with the help of **Connex.** **Connex** allows you to not only add, edit and delete carriers but also lets you view the columns you want to see. 
@@ -189,47 +169,7 @@ The brief description of fields present in the above form, is given below:
 
 **Address:** Users will write the "Address" of the **Carrier.** Users will add the address including country and postcode/ZIP code.
 
-**Pre Ring Timeout and Post Ring Timeout:** Users will set the "Pre Ring Timeout" and "Post Ring Timeout" in the given text fields.
-
-### Deleting Carriers
-
-Users can delete the existing **Carriers** from the list. 
-
-1. Select the **Carrier** from the list by check marking the entire row.
-
-2. Click on the **Delete** button, i.e. trash icon.
-
-### Checking The Status
-
-![alt text][carriers-sorting]
-
-Users can also check/filter the status of the **Carriers.** 
-
-1. Click on the button named **Active.**
-2. Select an option from the dropdown menu.
-3. Results will show up according to the selected option.
-
-### Searching Carrier
-
-Users can search anything about a **Carrier** by writing the query in the **Search** text field.
-
-### Customizing The View
-
-![alt text][carriers]
-
-You can customize the view of your **Carriers** page and select only the columns which you want to view.
-On the extreme right, click on the menu button, and check the columns you want to view.
-
-### Edit Carrier
-
-In order to edit a **Carrier**, select a **Carrier** from the list. A new page will open. Follow the procedure given below:
-
-1. Press the **"Edit Carrier"** button.
-2. Edit the details and press **"Save"** button.
-
-Following figure demonstrates the **Edit Carrier** button:
-
-![alt text][carrier-dashboard]
+**Pre Ring Timeout and Post Ring Timeout:** Users will set the "Pre Ring Timeout" and "Post Ring Timeout" in the given text fields. The default value for each is 30 Seconds.
 
 ### Stats
 
@@ -252,7 +192,7 @@ Next to the Reply Management tab there is “Authentication” where you can spe
 
 ![alt text][carrier-authentication] 
  
-You can also add new IP for authentication, by clicking on the “+” sign on extreme right. 
+You can add new IP for authentication, by clicking on the “+” sign on extreme right. 
 
 ![alt text][carrier-ip-1] 
  
@@ -306,12 +246,6 @@ You can also add a customize alert by clicking on the “+” sign.
 ![alt text][carrier-alert-2]
 
 After adding the relevant info for a alert, click “Save” and a new alert will be functional.
-
-## Code Consistency
-
-This measures the changes of response codes on the SAME number that have been returned from the carrier. It is useful for identifying if the carrier is using routes of different quality or generally poor quality overall. Good carriers will have a 100% code consistency.
-
-The metric only takes into account 200 and 404's.
 
 [carrier-dashboard]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-dashboard.png "Carrier-Dashboard"
 [carrier-list]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-list.png "Carrier-List"
