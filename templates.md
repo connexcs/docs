@@ -1,6 +1,16 @@
+# Table of Contents
+* [Table of Contents](#table-of-contents)
+* [Templates-Connex](#templates-connex)
+  * [Manage columns](#manage-columns)
+  * [Search Template](#search-template)
+  * [Refresh-list](#refresh-list)
+
+
+
 # Templates-Connex
 
 You can customize the SMS template, according to your business rule or requirement. For this;
+
 1)	Login to your Connex account and from the side menu look for “Template” which is under the “Setup”.
 
 ![alt text][temp-1] 
@@ -36,6 +46,7 @@ You can also manage columns on Templates page, as shown in the figure below:
 Any template can be searched from the list. Just type in the search field and results will be filtered out in run time.
 
 ## Refresh list
+
 The templates list can be refreshed any time to fetch the latest templates. Simply click on Refresh button and you will get the updated list.
 
 ![alt text][temp-6]
