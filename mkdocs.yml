@@ -37,6 +37,7 @@ pages:
 - MISCELLANENOUS:
     - Authentication: authentication.md
     - Billing: billing.md
+    - Calling Card: calling-card.md
     - Limiting: limiting-cps.md
     - Logging: logging.md
     - My Servers: my-servers.md
