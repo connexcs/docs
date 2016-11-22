@@ -13,7 +13,7 @@ Editing all the DID one by one might feel like a time taking task. That's why Co
 
 ![alt text][did-bulk-1]
  
-2)	Click on it and you would be landed on a new page showing you the existing DIDs.![alt text][did-bulk-3]
+2)	Click on it and you would be landed on a new page showing you the existing DIDs.
 
 ![alt text][bulk-did-2]
  
