@@ -1,3 +1,13 @@
+# Table of Contents
+* [Table of Contents](#table-of-contents)
+* [Invoice](#invoice)
+  * [Adding new Invoices](#adding-new-invoices)
+  * [View and Edit Invoices](#view-and-edit-invoices)
+
+
+
+
+
 # Invoice
 
 Login to your Connex account and from the side menu look for "Management" and extend. From the "Management" submenu items, select "Invoice".
