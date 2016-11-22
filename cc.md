@@ -1,3 +1,21 @@
+# Table of Contents
+* [Table of Contents](#table-of-contents)
+* [Calling Card](#calling-card)
+  * [Manage Calling Card](#manage-calling-card)
+     * [Generate New](#generate-new)
+     * [Edit a Card](#edit-a-card)
+     * [Delete a Card](#delete-a-card)
+     * [Refresh List](#refresh-list)
+     * [Manage Columns](#manage-columns)
+  * [Manage SIP Devices](#manage-sip-devices)
+     * [Add Device](#add-device)
+     * [View and Edit Device](#view-and-edit-device)
+     * [Delete a Device](#delete-a-device)
+     * [Search Device](#search-device)
+     * [Refresh Device List](#refresh-device-list)
+     * [Manage Columns](#manage-columns)
+
+
 # Calling Card
 
 From dashboard, expand the Management tab and look for Calling Card. 
@@ -109,7 +127,7 @@ To add a new SIP device:
 
 A new device for that particular customer would be saved.
 
-## View and Edit Devive
+### View and Edit Device
 
 1)	To view a device, click on the icon under "View Device" column.
 
@@ -121,7 +139,7 @@ A new device for that particular customer would be saved.
  
 3)	On this page you can edit device information as well as can add a device line too and save accordingly.
 
-## DELETE A DEVICE
+### Delete a Device
 
 To delete a device from the list, select any row and click on trash icon.
 
@@ -129,19 +147,19 @@ To delete a device from the list, select any row and click on trash icon.
  
 This is how a device will be deleted.
 
-## SEARCH DEVICE
+### Search Device
 
 To search a particular device, type in the search field and results will be filtered out.
 
 ![alt text][cc-17]
  
-## REFRESH DEVICE LIST
+### Refresh Device List
 
 To get the most updated list of devices, click on “Refresh” button.
  
 ![alt text][cc-18]
  
-## MANAGE COLUMNS
+### Manage Columns
 
 You can also manage columns and select which columns you want to see in the grid.
 
