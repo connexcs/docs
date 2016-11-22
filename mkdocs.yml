@@ -32,7 +32,7 @@ pages:
     - Overview: provider-ratecard.md
     
 - DID:
-    - DID: did.md
+    - DID: did-bulk-tool.md
 
 - MISCELLANENOUS:
     - Authentication: authentication.md
