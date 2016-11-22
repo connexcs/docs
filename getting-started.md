@@ -58,8 +58,8 @@
          * [DID](#did)  
          * [Alerts](#alerts)  
     * [Code Consistency](#code-consistency)
-    * [Email Verification](#email-verification)
-    * [Mobile Verification](#mobile-verification)
+ * [Email Verification](#email-verification)
+ * [Mobile Verification](#mobile-verification)
     
 
 # Introduction
