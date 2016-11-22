@@ -13,7 +13,7 @@
      * [Delete a Device](#delete-a-device)
      * [Search Device](#search-device)
      * [Refresh Device List](#refresh-device-list)
-     * [Manage Columns](#manage-columns)
+     * [Manage Columns](#manage-columns-1)
 
 
 # Calling Card
