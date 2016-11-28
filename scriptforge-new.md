@@ -16,6 +16,9 @@
         * [Random CLI](#random-cli)
         * [Checking a DNC List](#checking-a-dnc-list)
         * [Performing an ASRPlus Lookup](#performing-an-asrplus-lookup)
+	* [Creating a New Script](#creating-a-new-script)
+	* [Assigning the Script to a customer](#assigning-the-script-to-a-customer)
+
 
 # ScriptForge
 The ScriptForge allows you to write your own application which can be run at specific events in the system, currently the following places support scripting functionality:
@@ -177,21 +180,21 @@ You can customize your script in the new functionality of Connex and also can as
 In case, the script shows error click the arrow button next to “Run” and add this:
 {"routing":{}}
 
-![alt text][side-1]   
-
 And then run the script again.
 
 ## Assigning the Script to a customer
 
 You can assign the script to a customer by selecting “Customer” from the side menu.
- 
-![alt text][s6]
 
+![alt text][side-1]   
+ 
 Select a specific customer from the list by clicking on the names of customers.
 
-![alt text][s7]  
- 
+![alt text][s6]
+
 Navigate to “Routing” tab and select a rate card from the table.
+
+![alt text][s7]
 
 ![alt text][s8]  
  
