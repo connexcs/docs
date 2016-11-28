@@ -182,6 +182,9 @@ In case, the script shows error click the arrow button next to “Run” and add
 
 And then run the script again.
 
+![alt text][s6]
+
+
 ## Assigning the Script to a customer
 
 You can assign the script to a customer by selecting “Customer” from the side menu.
@@ -190,11 +193,9 @@ You can assign the script to a customer by selecting “Customer” from the sid
  
 Select a specific customer from the list by clicking on the names of customers.
 
-![alt text][s6]
+![alt text][s7]
 
 Navigate to “Routing” tab and select a rate card from the table.
-
-![alt text][s7]
 
 ![alt text][s8]  
  
