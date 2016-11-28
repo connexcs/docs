@@ -142,3 +142,8 @@ Auto will select the least cost path between your customer and provider.
 **Strategy**
 
 Strategy lets you pass the calls based on the routing strategy you set.
+
+
+## CPS limitation 
+
+The Calls Per Second can be limited on Ingress Routing, this means you can set the CPS limitation on each customer card that you assign on the customer account
