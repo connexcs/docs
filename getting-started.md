@@ -513,7 +513,9 @@ User can take any desired action by making use of these options.
 
 ![alt text][using-ratecard1]
 
-**We can delay the release of a downstream BYE message to the carrier be setting the Delay BYE message**
+## Delayed BYE
+
+We can delay the release of a downstream BYE message to the carrier be setting the Delay BYE message.
 
 ## Ingress Routing
 
