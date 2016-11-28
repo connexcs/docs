@@ -6,6 +6,7 @@
     * [RTP Servers](#rtp-servers)
     * [Help Icon](#help-icon)
     * [Server Information](#server-information)
+    * [TCP Additional Ports](#tcp-additional-ports)
 
 
 # My Servers
