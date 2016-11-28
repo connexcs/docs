@@ -181,3 +181,14 @@ Navigate to “Routing” tab and select a rate card from the table.
  
 A form will open named “Route Ingress”, find the “Script Forge” field and select the script you just created. Click on “Save” when you are done.
  
+ 
+ 
+[side]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/side.png "Side"
+[s2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/s2.png "S2"
+[s3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/s3.png "S3"
+[s4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/s4.png "S4"
+[s5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/s5.png "S5"
+[s6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/s6.png "S6"
+[s7]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/s7.png "S7"
+[s8]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/s8.png "S8"
+[s9]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/s9.png "S9"
