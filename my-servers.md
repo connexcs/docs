@@ -54,6 +54,13 @@ You can also view the information of any server.
 
 ![alt text][server-img-4]
 
+
+## TCP Additional Ports
+
+With this feature you can bypass the default UDP port and set any port of your choice, example 5090. 
+
+This can be set under My Servers> [IP Address]> UDP Port
+
 [server-img-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/server-img-1.png "server-img-1"
 [server-img-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/server-img-2.png "server-img-2"
 [server-img-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/server-img-3.png "server-img-3"
