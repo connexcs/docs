@@ -154,7 +154,7 @@ You can customize your script in the new functionality of Connex and also can as
 
 1. Login to your Connex account and from the side menu select “Script Forge”.
 
-![alt text][side]   
+![alt text][side-1]   
  
 2. Now, add your own script by clicking on “Add New” button.
 
