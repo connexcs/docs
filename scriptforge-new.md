@@ -201,6 +201,7 @@ A form will open named “Route Ingress”, find the “Script Forge” field an
  
  
 [side]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/side.png "Side"
+[side-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/side-1.png "Side-1"
 [s2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/s2.png "S2"
 [s3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/s3.png "S3"
 [s4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/s4.png "S4"
