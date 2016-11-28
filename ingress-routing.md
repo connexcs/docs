@@ -15,7 +15,7 @@
     * [ScriptForge](#scriptforge)
     * [RTP Proxy Modes](#rtp-proxy-modes)
     * [Options](#options)
-    * [CPS Limitation ](#cps-limitation )
+    * [CPS Limitation ](#cps-limitation)
 
 
 
