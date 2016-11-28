@@ -100,6 +100,8 @@ User can take any desired action by making use of these options.
 
 ![alt text][using-ratecard1]
 
+*_We can delay the release of a downstream BYE message to the carrier be setting the Delay BYE message_*
+
 [ratecard-dashboard-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/ratecard-dashboard-new.png "ratecard1"
 
 [add-new-provider]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/add-new-provider.png "add-new-provider"
