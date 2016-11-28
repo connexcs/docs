@@ -38,6 +38,7 @@
      * [ScriptForge](#scriptforge)
      * [RTP Proxy Modes](#rtp-proxy-modes)
      * [Options](#options)
+     * [CPS Limitation ](#cps-limitation)
   * [Video Guide](#video-guide)
     * [Adding Customer & Carrier](#adding-a-customer-carrier)
     * [Uploading Provider Card](#uploading-a-provider-rate-card-and-create-customer-rate-card)
@@ -512,6 +513,8 @@ User can take any desired action by making use of these options.
 
 ![alt text][using-ratecard1]
 
+**We can delay the release of a downstream BYE message to the carrier be setting the Delay BYE message**
+
 ## Ingress Routing
 
 Ingress routing allows incoming attempts to be sent to the correct rate card which in turn egress through the specified provider.
@@ -636,6 +639,11 @@ Auto will select the least cost path between your customer and provider.
 **Strategy**
 
 Strategy lets you pass the calls based on the routing strategy you set.
+
+## CPS limitation 
+
+The Calls Per Second can be limited on Ingress Routing, this means you can set the CPS limitation on each customer card that you assign on the customer account
+
 
 ## Email Verification 
 
