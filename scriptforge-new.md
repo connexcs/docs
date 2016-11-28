@@ -154,7 +154,7 @@ You can customize your script in the new functionality of Connex and also can as
 
 1. Login to your Connex account and from the side menu select “Script Forge”.
 
-![alt text][side-1]   
+![alt text][side]   
  
 2. Now, add your own script by clicking on “Add New” button.
 
@@ -177,7 +177,7 @@ You can customize your script in the new functionality of Connex and also can as
 In case, the script shows error click the arrow button next to “Run” and add this:
 {"routing":{}}
 
-![alt text][side]   
+![alt text][side-1]   
 
 And then run the script again.
 
