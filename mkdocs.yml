@@ -45,6 +45,7 @@ pages:
     - Routing: routing.md
     - Routing USA: routing-usa.md
     - Routing Engine: routing-engine.md
+    - Reporting Problems: reporting-problems.md
     - Specification: spec.md
     - Scriptforge: scriptforge.md
     - Packages: packages.md
