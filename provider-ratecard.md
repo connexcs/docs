@@ -8,6 +8,7 @@
   * [Uploading a File](#uploading-a-file)
   * [Deleting a Provider Rate Card](#deleting-a-provider-rate-card)
   * [Searching the Provider Rate Cards](#searching-the-provider-rate-cards)
+  * [Delayed BYE](#delayed-bye)
 
 
 # Rate Cards Management
@@ -100,7 +101,9 @@ User can take any desired action by making use of these options.
 
 ![alt text][using-ratecard1]
 
-**_We can delay the release of a downstream BYE message to the carrier be setting the Delay BYE message_**
+## Delayed BYE
+
+We can delay the release of a downstream BYE message to the carrier be setting the Delay BYE message.
 
 [ratecard-dashboard-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/ratecard-dashboard-new.png "ratecard1"
 
