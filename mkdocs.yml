@@ -50,6 +50,7 @@ pages:
     - Reporting Problems: reporting-problems.md
     - Specification: spec.md
     - Scriptforge: scriptforge.md
+    - Scheduled Breakout Reports: scheduled-breakout-reports.md
     - Packages: packages.md
     - User Space Database: user-space-db.md
    
