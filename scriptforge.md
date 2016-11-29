@@ -60,7 +60,7 @@ Your programming environment is locked down for security reasons, but we provide
 
 ## API
 
-Code will start in the 'main()' function
+Code will start in the `main()` function
 Execution will be marked as complete when the `exit(response)` function is called, response is the variable that will be returned to the instantiating system.
 If you wish to do the equivalent of throwing an exception, you can call the `err();` which takes a single parameter for example `[404, "Not Found"]`
 Variables can be made available through the `vars()` function.
