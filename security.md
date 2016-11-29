@@ -16,12 +16,12 @@
 
 # Security
 
-Security is a topic that we take very seriously and we have utilized many best practices, reliable proven technology and latest ideas to keep everything safe.
+**Security** is a topic that we take very seriously and we have utilized many best practices, reliable proven technology and latest ideas to keep everything safe.
 
-We have compiled a top-level abstract list on how we do some things. This document is *purposely* kept brief in order to limit the exposure of our underlying systems, but please feel free to contact us if you have any specific questions about anything here.
+We have compiled a top-level abstract list on how we do some things. This document is **_purposely_** kept brief in order to limit the exposure of our underlying systems, but please feel free to contact us if you have any specific questions about anything here.
 
 ## SSL Certificates
-For all our HTTPS traffic we use short-lived SHA256bit certificates with 2048bit keys. Reject downgrade attacks such as SSL2,3. We use HSTS, Perfect Forward Secrecy, and OCSP Stapling. You are welcome to see our servers SSL test results here:
+For all our HTTPS traffic we use short-lived **SHA256bit** certificates with 2048bit keys. Reject downgrade attacks such as **SSL2,3**. We use **HSTS, Perfect Forward Secrecy,** and **OCSP Stapling**. You are welcome to see our servers SSL test results here:
 https://www.ssllabs.com/ssltest/analyze.html?d=app.connexcs.com
 
 ### Inter-zone Communication
