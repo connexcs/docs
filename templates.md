@@ -11,7 +11,7 @@
 
 You can customize the SMS template, according to your business rule or requirement. For this;
 
-1)	Login to your Connex account and from the side menu look for “Template” which is under the “Setup”.
+1)	Login to your Connex account and from the side menu look for **"Template"** which is under the **"Setup"**.
 
 ![alt text][temp-1] 
  
@@ -21,17 +21,17 @@ You can customize the SMS template, according to your business rule or requireme
 
 A new page would open.That page would show the SMS body and subject.
 
-3)	Click on the “Edit” button to customize the SMS.
+3)	Click on the **"Edit"** button to customize the SMS.
 
 ![alt text][temp-3]
  
 Under the Subject, SMS, Text and HTML:
 
-a)	Write your brand name in the place of “{{brandName}}”
-b)	Give area that you want to generate the alert about in the place of “{{area}}”
-c)	Give value in “{{value}}” etc.
+a)	Write your brand name in the place of **"{{brandName}}"**
+b)	Give area that you want to generate the alert about in the place of **"{{area}}"**
+c)	Give value in **"{{value}}"** etc.
 You can also apply style to your text via html style panel given under the HTMLtag.
-4)	Click on “Save” when you are done.
+4)	Click on **"Save"** when you are done.
  
 ![alt text][temp-4]
 
