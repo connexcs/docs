@@ -265,7 +265,7 @@ Users can check all the lists of the servers and also can refresh them.
 [company-info]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/company-info.png "Company-Info"
 [general-info]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/general-info.png "General-Info"
 [change-pwd]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/change-pwd.png "Change-PWD"
-[change-pwd2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/change-pwd2.png "Change-PWD2"
+[change-pwd-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/change-pwd-2.png "Change-PWD-2"
 [tfa]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/tfa.png "TFA"
 [smtp]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/smtp.png "SMTP"
 [users]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/users.png "Users"
