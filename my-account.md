@@ -90,7 +90,7 @@ Users can also edit their personal information in Current User section.
 1. Click on the Change Password button, as shown in the above image.
 2. Fill out the details and click Save button, as shown in the image below
 
-![alt text][change-pwd2]
+![alt text][change-pwd-2]
 
 Users can also enable "Two factor Authentication". For this purpose, click on the Two factor Authentication and click on Enable the TFA, as shown in the image below:
 
