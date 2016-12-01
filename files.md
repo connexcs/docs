@@ -1,10 +1,18 @@
+# Table of Contents
+* [Table of Contents](#table-of-contents)
+* [How to upload files in your Connex account?](#how-to-upload-files-in-your-connex-account?)
+     * [Refresh the List](#refresh-the-list)
+     * [Remove Files](#remove-files)
+     * [Cancel Upload](#cancel-upload)
+     * [Bulk Uploading](#bulk-uploading)
+     * [Download the uploaded file](#download-the-uploaded-file)
+
 
 # How to upload files in your Connex account?
 
 This tutorial will guide you how to upload files to your connex account.
 
 1. Login to your Connex account. From the side menu, extend **"Management"**, find **"Files"** and click on it.
-
 
 ![alt text][files-1] 
 
@@ -26,7 +34,7 @@ You can also refresh the list by clicking on **"Refresh"** which is right next t
 
 You can also remove this file by clicking on **"Remove"** button.
 
-## Cancel upload:
+## Cancel upload
 
 You can also cancel the upload of file which is in the queue by clicking on the **"Cancel"** button which is right next to **"Upload"** button.
 
@@ -35,7 +43,7 @@ You can also cancel the upload of file which is in the queue by clicking on the 
 You can also select multiple files from the computer and then upload them all simultaneously, by clicking on **"Upload all"** button.
 Similarly, you can click on **"Cancel all"** and **"Remove all"** for cancelling and removing all uploads, respectively.
 
-## Download the uploaded file:
+## Download the uploaded file
 
 You can also download the file by clicking on **"Download"** button.
 
