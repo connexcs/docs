@@ -3,7 +3,7 @@
 * [How to upload files in your Connex account?](#how-to-upload-files-in-your-connex-account)
      * [Refresh the List](#refresh-the-list)
      * [Remove Files](#remove-files)
-     * [Cancel Upload](#cancel-upload)
+     * [Cancel upload](#cancel-upload)
      * [Bulk Uploading](#bulk-uploading)
      * [Download the uploaded file](#download-the-uploaded-file)
 
