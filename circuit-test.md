@@ -38,5 +38,16 @@ Now, it's time for us to configure the circuit test. What you have to do is:
 8.	A dialog box would open, add a CLI and select the Destination Number which you entered while making DID and press **"Send"**. A confirmation box would appear telling that you have performed test successfully.
 
  
+[circuit-test-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/circuit-test-1.png "Circuit Test 1"
+[circuit-test-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/circuit-test-2.png "Circuit Test 2"
+[circuit-test-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/circuit-test-3.png "Circuit Test 3"
+[circuit-test-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/circuit-test-4.png "Circuit Test 4"
+[circuit-test-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/circuit-test-5.png "Circuit Test 5"
+[circuit-test-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/circuit-test-6.png "Circuit Test 6"
+[circuit-test-did-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/circuit-test-did-1.png "Circuit Test DID 1"
+[circuit-test-did-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/circuit-test-did-2.png "Circuit Test DID 8"
+[circuit-test-did-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/circuit-test-did-3.png "Circuit Test DID 9"
+[circuit-test-did-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/circuit-test-did-4.png "Circuit Test DID 10"
+[circuit-test-ratecard]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/circuit-test-ratecard.png "Circuit Test Ratecard"
 
 
