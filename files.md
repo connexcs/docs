@@ -2,9 +2,9 @@
 * [Table of Contents](#table-of-contents)
 * [How to upload files in your Connex account?](#how-to-upload-files-in-your-connex-account)
      * [Refresh the List](#refresh-the-list)
-     * [Remove Files](#remove-files)
+     * [Remove files](#remove-files)
      * [Cancel upload](#cancel-upload)
-     * [Bulk Uploading](#bulk-uploading)
+     * [Bulk uploading](#bulk-uploading)
      * [Download the uploaded file](#download-the-uploaded-file)
 
 
@@ -38,7 +38,7 @@ You can also remove this file by clicking on **"Remove"** button.
 
 You can also cancel the upload of file which is in the queue by clicking on the **"Cancel"** button which is right next to **"Upload"** button.
 
-## Bulk Uploading
+## Bulk uploading
 
 You can also select multiple files from the computer and then upload them all simultaneously, by clicking on **"Upload all"** button.
 Similarly, you can click on **"Cancel all"** and **"Remove all"** for cancelling and removing all uploads, respectively.
