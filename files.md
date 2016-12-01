@@ -1,6 +1,6 @@
 # Table of Contents
 * [Table of Contents](#table-of-contents)
-* [How to upload files in your Connex account?](#how-to-upload-files-in-your-connex-account?)
+* [How to upload files in your Connex account?](#how-to-upload-files-in-your-connex-account)
      * [Refresh the List](#refresh-the-list)
      * [Remove Files](#remove-files)
      * [Cancel Upload](#cancel-upload)
