@@ -33,7 +33,7 @@ pages:
 
     
 - DID:
-    - DID: did-bulk-tool.md
+    - DID: did.md
 
 - MISCELLANENOUS:
     - Authentication: authentication.md
