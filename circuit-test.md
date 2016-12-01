@@ -41,15 +41,15 @@ Now, it's time for us to configure the circuit test. What you have to do is:
 
 6.	Select the Provider Rate Card, that you added in the DID.
 
- ![alt text][circuit-test-4]  
+![alt text][circuit-test-4]  
  
 7.	A new page would open, go to the **"Circuit Tab"** and click on **"Circuit Test"**. 
 
- ![alt text][circuit-test-5]  
+![alt text][circuit-test-5]  
  
 8.	A dialog box would open, add a CLI and select the Destination Number which you entered while making DID and press **"Send"**. A confirmation box would appear telling that you have performed test successfully.
 
- ![alt text][circuit-test-6]  
+        ![alt text][circuit-test-6]  
  
 [circuit-test-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/circuit-test-1.png "Circuit Test 1"
 [circuit-test-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/circuit-test-2.png "Circuit Test 2"
