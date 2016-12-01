@@ -1,3 +1,8 @@
+# Table of Contents
+* [Table of Contents](#table-of-contents)
+* [How to perform circuit test](#how-to-perform-circuit-test)
+
+
 # How to perform circuit test?
 
 To perform circuit test, follow the below simple steps:
@@ -19,7 +24,6 @@ Fill out rest of the information in the form like add the provider, provider car
 ![alt text][circuit-test-did-4]  
 
 4.	Once you are done click on **"Save"** button.
-
 
 Now, it's time for us to configure the circuit test. What you have to do is:
 
