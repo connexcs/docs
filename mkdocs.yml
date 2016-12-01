@@ -39,6 +39,7 @@ pages:
     - Authentication: authentication.md
     - Billing: billing.md
     - Calling Card: calling-card.md
+    - Files: files.md
     - Limiting: limiting-cps.md
     - Logging: logging.md
     - How to perform circuit test: circuit-test.md
