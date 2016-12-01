@@ -49,7 +49,7 @@ Now, it's time for us to configure the circuit test. What you have to do is:
  
 8.	A dialog box would open, add a CLI and select the Destination Number which you entered while making DID and press **"Send"**. A confirmation box would appear telling that you have performed test successfully.
 
-        ![alt text][circuit-test-6]  
+![alt text][circuit-test-6]  
  
 [circuit-test-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/circuit-test-1.png "Circuit Test 1"
 [circuit-test-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/circuit-test-2.png "Circuit Test 2"
