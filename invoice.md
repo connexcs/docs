@@ -14,7 +14,7 @@ Login to your Connex account and from the side menu look for "Management" and ex
 
 ![alt text][invoice-1]
  
-A new page would open up, showing the existing invoices.
+A new page will open up, showing the existing invoices.
 
 ## Adding new Invoices
 
@@ -24,13 +24,13 @@ To add a new invoice:
 
 ![alt text][invoice-2]
 
-A new page would open which would show an invoice ready to be filled.
+A new page will open which will show an invoice ready to be filled.
 
 2)	Select the customer from the drop down menu where "Required" is written. Invoice would be generated against that customer.
 
 ![alt text][invoice-5]
 
-To add an item into your invoice, select "Add Invoice Item". Fill out the info and select a package; amount would be generated according to the package. You can add multiple items this way.
+To add an item into your invoice, select "Add Invoice Item". Fill out the info and select a package; amount will be generated according to the package. You can add multiple items this way.
  
 ![alt text][invoice-6]
 
@@ -40,7 +40,7 @@ To add an item into your invoice, select "Add Invoice Item". Fill out the info a
 
 ## View and Edit Invoices
 
-You can view and edityour invoices by clicking on the invoice’s ID.
+You can view and edit your invoices by clicking on the invoice’s ID.
  
 ![alt text][invoice-2D] 
  
@@ -49,7 +49,7 @@ The complete invoice would show up. Click on "Edit" to edit that invoice.
 ![alt text][invoice-3]
 
 You can also download PDF version of invoice by clicking on "PDF".
-After clicking "Edit" button, a new page would show up, do the required changes and click on "Save".
+After clicking "Edit" button, a new page will show up, make the required changes and click on "Save".
 
 ![alt text][invoice-4]
  
