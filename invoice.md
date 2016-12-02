@@ -49,7 +49,7 @@ The complete invoice would show up. Click on "Edit" to edit that invoice.
 ![alt text][invoice-3]
 
 You can also download PDF version of invoice by clicking on "PDF".
-After clicking "Edit" button, a new page will show up, make the required changes and click on "Save".
+After clicking "Edit" button, a new page will appear, make the required changes and click on "Save".
 
 ![alt text][invoice-4]
  
