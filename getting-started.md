@@ -198,21 +198,6 @@ The brief description of fields present in the above form, is given below:
 **Address:** Users will write the "Address" of the **Carrier.** Users will add the address including country and postcode/ZIP code.
 
 **Pre Ring Timeout and Post Ring Timeout:** Users will set the "Pre Ring Timeout" and "Post Ring Timeout" in the given text fields. The default value for each is 30 Seconds.
-
-### Stats
-
-You can view your stats by clicking on the tab “Stats”.  In the image given below, there are no calls placed that’s why the graph is showing a straight line.
- 
-![alt text][carrier-stats] 
-
-### Reply Management
-
-There is a special module in Connex for replying efficiently and that is Reply Management.
-There are codes on the basis of which action and responses are set. You can customize your responses too.
- 
-Choose the “Replace” radio button and then “New Code” and “New Reason” field would appear. Here, choose a code and fill the reason of your choice.
-
-![alt text][carrier-reply] 
  
 ### Authentication
 
@@ -226,20 +211,6 @@ You can add new IP for authentication, by clicking on the “+” sign on extrem
  
 Fill Basic and Advanced tab to complete the addition of authenticated IP.
 
-### Latest Calls
-
-“Latest Calls” is the tab next to Authentication. Where you can find all the calls you have made, lately.
- 
-You can simulate a call too by clicking the green button, named “Simulate”.
-
-![alt text][carrier-calls] 
-
-### Failover
- 
- “Failover” are the calls which were not successfully made. A list of failover calls is shown in this tab.
- 
-![alt text][carrier-failover] 
- 
 ### Payment
 
 “Payment” tab would let you see all the payments made so far. You can add a new payment by clicking on the “+” sign.
@@ -248,35 +219,6 @@ Fill in the more payment information and click “Save”.
 
 ![alt text][carrier-payment] 
  
-
-#### CDR
-
-“CDR” tab let you check all your CDR’s. You can also recalculate a CDR for a specific month by clicking on “Recalc CDR”.
-
-![alt text][carrier-cdr] 
- 
-### DID
-
-“DID” tab let you check the DID.  You can add a new DID clicking on the “+” on the extreme left.
- 
-After adding the details, click “Save”.
-
-![alt text][carrier-did]
- 
-### Alerts
-
-“Alerts” tab is right next to the “DID”. It allows you to generate alerts to someone when some specific events are triggered. You can view all your alerts by clicking on Alerts tab.
-
-![alt text][carrier-alert-1]
-
-You can also add a customize alert by clicking on the “+” sign.
-
-![alt text][carrier-alert-2]
-
-After adding the relevant info for a alert, click “Save” and a new alert will be functional.
-
-
-
 ## Customer Rate Card
 
 Now the users can also make the rate cards. Rate cards can be accessed two ways:
