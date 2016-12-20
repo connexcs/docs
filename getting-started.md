@@ -369,8 +369,6 @@ With this feature you can email the rate card to your customer's email address a
 
 ## Provider Rate Card
 
-This tutorial will guide you on how to manage provider rate card.
-
 From the Dashboard, click on the tab of rate card, highlighted in the centre of the page, and also you can go to the **Management** and select **_Rate Cards_**.
 
 ![alt text][ratecard-dashboard-new]
@@ -427,37 +425,6 @@ Users can delete the Provider cards that were saved earlier. Just follow the ste
 
 1. Select the Provider Card by check marking the entire row from the list.
 2. Press the **Delete** button which is next to the **"Upload File"** button.
-
-### Searching the Provider Rate Cards
-
-Users can search the **"Provider Rate Cards"** from the search text field and get the results, instantly. 
-Edit Rate Cards
-
-Users can edit the rate cards saved earlier. Follow the steps given below:
-
-1.	Select the Provider Card by check marking the entire row from the list.
-2.	Press the **Edit Cards** button.
-3.	Edit the Basic or Advanced details.
-
-There are several other buttons also present, other than **Edit Cards.*** They include:
-
-1. Revision
-2. Download CVS 
-3. Delete revision
-4. Upload
-5. View all uploaded files
-
-Following figure illustrates these buttons:
-
-![alt text][other-options]
-
-User can take any desired action by making use of these options.
-
-![alt text][using-ratecard1]
-
-## Delayed BYE
-
-We can delay the release of a downstream BYE message to the carrier be setting the Delay BYE message.
 
 ## Ingress Routing
 
