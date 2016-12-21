@@ -40,6 +40,7 @@ pages:
     - Billing: billing.md
     - Calling Card: calling-card.md
     - Files: files.md
+    - Invoice: invoice.md
     - Limiting: limiting-cps.md
     - Logging: logging.md
     - How to perform circuit test: circuit-test.md
