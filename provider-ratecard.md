@@ -9,6 +9,7 @@
   * [Deleting a Provider Rate Card](#deleting-a-provider-rate-card)
   * [Searching the Provider Rate Cards](#searching-the-provider-rate-cards)
   * [Delayed BYE](#delayed-bye)
+  * [Revision Tab](#revision-tab)  
 
 
 # Rate Cards Management
