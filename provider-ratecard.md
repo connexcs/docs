@@ -105,6 +105,10 @@ User can take any desired action by making use of these options.
 
 We can delay the release of a downstream BYE message to the carrier be setting the Delay BYE message.
 
+## Revision Tab 
+
+The revision tab lets us see the previous changes that's been done on a rate card, example the previous Rule count, Presentation, Currency, date created, Billing.
+
 [ratecard-dashboard-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/ratecard-dashboard-new.png "ratecard1"
 
 [add-new-provider]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/add-new-provider.png "add-new-provider"
