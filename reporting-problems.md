@@ -9,8 +9,8 @@
 
 If you have more than one problem to report we suggest that you either:
 
-1. Raise a seperate ticket for each request.
-2. Inform us about these problems one at a time and allow an adaquate amount of time for us to assess the problem and resolve it.
+1. Raise a separate ticket for each request.
+2. Inform us about these problems one at a time and allow an adequate amount of time for us to assess the problem and resolve it.
 3. Telephone
 
 ## Support Channels
@@ -62,7 +62,7 @@ We recommend the Firefox & Chrome plug-in "Lightshot", this will help doing a sc
 
 ### Problems with Calls
 
-If you are experiencing problems with call flow, the most important thing to provide  is callid's.
+If you are experiencing problems with call flow, the most important thing to provide are callids.
 The Call-ID can be found by going to the logging section, clicking on a call, then copying the ID which appears on the right of panel.
 
 ### Clear and Concise
