@@ -27,7 +27,7 @@ pages:
 - RATE CARDS:
     - Overview: provider-ratecard.md
     - Provider Ratecard: provider-ratecard.md
-    - Customer Ratecard: customer-rate-card.md
+    - Customer Ratecard: customer-ratecard.md
     - Generating: rate-card-building.md
 
     
