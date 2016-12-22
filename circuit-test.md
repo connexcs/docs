@@ -5,7 +5,7 @@
 
 # How to perform circuit test?
 
-To perform circuit test, follow the below simple steps:
+To perform circuit test, follow the simple steps shown below:
 
 1.	Login to your **Connex** account and look for **"DID"** by extending the **"Management"** menu in left pane.
  
@@ -19,7 +19,7 @@ To perform circuit test, follow the below simple steps:
 
 ![alt text][circuit-test-did-3]  
 
-Fill out rest of the information in the form like add the provider, provider card, customer and customer, respectively. 
+Fill out rest of the information in the form like: add the provider, provider card, customer and customer card, respectively. 
 
 ![alt text][circuit-test-did-4]  
 
@@ -31,9 +31,9 @@ Now, it's time for us to configure the circuit test. What you have to do is:
 
 ![alt text][circuit-test-1]  
  
-2.	A form would appear, look for Origination Ingress Address field, click the **"Edit"** button and enter the originations real ingress IP and save.
+2.	A form will appear, look for Origination Ingress Address field, click the **"Edit"** button and enter the originations ingress IP and save.
 
-3.	Now click on **"Edit"** button for Termination Ingress Addressbutton and enter the termination real ingress IP and save.
+3.	Now click on **"Edit"** for Termination Ingress Address button and enter the termination ingress IP and save.
 
 4.	Similarly, for the **"Circuit Test User"**, add the customer rate card that you added while saving the DID.
 
@@ -47,11 +47,11 @@ Now, it's time for us to configure the circuit test. What you have to do is:
 
 ![alt text][circuit-test-4]  
  
-7.	A new page would open, go to the **"Circuit Tab"** and click on **"Circuit Test"**. 
+7.	A new page will open, go to the **"Circuit Tab"** and click on **"Circuit Test"**. 
 
 ![alt text][circuit-test-5]  
  
-8.	A dialog box would open, add a CLI and select the Destination Number which you entered while making DID and press **"Send"**. A confirmation box would appear telling that you have performed test successfully.
+8.	A dialog box will open, add a CLI and select the Destination Number which you entered while making DID and press **"Send"**. A confirmation box will appear telling that you have performed test successfully.
 
 ![alt text][circuit-test-6]  
  
