@@ -16,7 +16,7 @@ This tutorial will guide you how to upload files to your connex account.
 
 ![alt text][files-1] 
 
-2. A new page would open which would show already uploaded files. On the top of the page, look for **"Upload"** button and click on it.
+2. A new page will open which will show already uploaded files. On the top of the page, look for **"Upload"** button and click on it.
 
 ![alt text][files-2]
  
@@ -28,15 +28,15 @@ The file will now upload and can be seen in the list.
 
 ## Refresh the list
 
-You can also refresh the list by clicking on **"Refresh"** which is right next to **"Upload"** button.
+You can refresh the list by clicking on **"Refresh"** which is right next to **"Upload"** button.
 
 ## Remove files
 
-You can also remove this file by clicking on **"Remove"** button.
+You can remove this file by clicking on **"Remove"** button if you need to.
 
 ## Cancel upload
 
-You can also cancel the upload of file which is in the queue by clicking on the **"Cancel"** button which is right next to **"Upload"** button.
+You can also cancel the upload of a file which is in the queue by clicking on the **"Cancel"** button which is right next to **"Upload"** button.
 
 ## Bulk uploading
 
@@ -45,7 +45,7 @@ Similarly, you can click on **"Cancel all"** and **"Remove all"** for cancelling
 
 ## Download the uploaded file
 
-You can also download the file by clicking on **"Download"** button.
+You can download the file by clicking on **"Download"** button.
 
 ![alt text][files-4]
 
