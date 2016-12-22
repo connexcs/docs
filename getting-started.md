@@ -437,27 +437,6 @@ It is possible for multiple customers to share the same IP address and to be dis
 
 This will impose a limit on how many channels are allowed through this ingress route. This is an independent setting from any customer imposed channel limitations which will still apply.
 
-### Dial string
-
-Dial string will let only the entered prefixes through, listed as one per line. Note: Both prefix and regular expressions are allowed, for example, if you only wanted to allow UK Landline you could use
-
-* Prefix
-
-```
-441
-442
-```
-
-* Regular Expression (RegEx)
-```
-44(1|2)
-```
-* Combination (UK Landline & Canada)
-```
-441
-442
-^1(204|226|236|249|250|289|306|343|403|416|418|438|450|506|514|519|579|581|587|604|613|647|705|709|778|780|807|819|867|902|905)
-```
 ### Missing BYE Protection
 
 A VoIP call is stateful, however its protocol is stateless. This means that both sides of the conversation have to be told when to finish the call. They do this with a BYE message, if the BYE message goes missing, then the call will continue forever, we have the following preventions put in place to stop this happening.
@@ -544,6 +523,27 @@ Auto will select the least cost path between your customer and provider.
 
 Strategy lets you pass the calls based on the routing strategy you set.
 
+### Dial string
+
+Dial string will let only the entered prefixes through, listed as one per line. Note: Both prefix and regular expressions are allowed, for example, if you only wanted to allow UK Landline you could use
+
+* Prefix
+
+```
+441
+442
+```
+
+* Regular Expression (RegEx)
+```
+44(1|2)
+```
+* Combination (UK Landline & Canada)
+```
+441
+442
+^1(204|226|236|249|250|289|306|343|403|416|418|438|450|506|514|519|579|581|587|604|613|647|705|709|778|780|807|819|867|902|905)
+```
 ## CPS limitation 
 
 The Calls Per Second can be limited on Ingress Routing, this means you can set the CPS limitation on each customer card that you assign on the customer account
