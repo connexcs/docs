@@ -11,12 +11,12 @@
 
 # Reports Management
 
-This article will guide how the users can manage the reports section. 
+This article will guide how you can manage the reports section. 
 From the **_Dashboard_**, click on the reports icon, highlighted as orange in **Figure 1.** Also, users can open the reports from the left pane as follows:
 
 1.	Click on the **_Management_** from the side bar.
 2.	Click on the Reports.
-3.	And then click on the **_Breakout,_** highlighted as red in the **Figure 1.**
+3.	And then click on the **_Breakout_** highlighted as red in the **Figure 1.**
  
 ![alt text][dashboard]
 
