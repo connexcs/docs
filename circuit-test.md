@@ -35,7 +35,7 @@ Now, it's time for us to configure the circuit test. What you have to do is:
 
 3.	Now click on **"Edit"** for Termination Ingress Address button and enter the termination ingress IP and save.
 
-4.	Similarly, for the **"Circuit Test User"**, add the customer rate card that you added while saving the DID.
+4.	Similarly, for the **"Circuit Test User"**, Select the customer.
 
 ![alt text][circuit-test-2]  
  
@@ -51,7 +51,7 @@ Now, it's time for us to configure the circuit test. What you have to do is:
 
 ![alt text][circuit-test-5]  
  
-8.	A dialog box will open, add a CLI and select the Destination Number which you entered while making DID and press **"Send"**. A confirmation box will appear telling that you have performed test successfully.
+8.	A dialog box will open, enter the CLI number that you wish to present and select the Destination Number which you entered while making DID and press **"Send"**. A confirmation box will appear telling that you have initiated the test, the test result might take a while to appear on the screen.
 
 ![alt text][circuit-test-6]  
  
