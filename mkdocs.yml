@@ -16,7 +16,6 @@ pages:
     - CLI: cli.md
     - Ingress Routing: ingress-routing.md
     - My Account: my-account.md
-    - NAT Traversal: far-end-nat-traversal.md
     - Payments: customer-payments.md
     - Paypal Integration: paypal.md
     - Routing Strategy: routing-strategy.md
@@ -59,6 +58,7 @@ pages:
    
 - Architecture:
     - API: api.md
+    - NAT Traversal: far-end-nat-traversal.md
     - Security: security.md
     - Media Handling: media-handling.md    
     - Scaling and Load Balancing: scaling-load-balancing.md 
