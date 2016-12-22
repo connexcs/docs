@@ -7,9 +7,8 @@ extra_javascript:
 - extra.js
 
 pages:
-- Feature List: feature-list.md
-- GETTING STARTED: getting-started.md
 - Home: index.md
+- GETTING STARTED: getting-started.md
 
 - CUSTOMER:
     - Customer: customer.md
@@ -40,6 +39,7 @@ pages:
     - Billing: billing.md
     - Calling Card: calling-card.md
     - Files: files.md
+    - Feature List: feature-list.md
     - Invoice: invoice.md
     - Limiting: limiting-cps.md
     - Logging: logging.md
