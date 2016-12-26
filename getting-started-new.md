@@ -59,9 +59,14 @@ You can authenticate either using IP to IP or User/Password. Below are the steps
 
 1. Click on Authentication
 2. Click '+' under User / Password Authentication b
+
+![alt text][user-auth-new]
+
 3. Enter the username of your choice
 4. Enter the password
 5. Click Save
+
+![alt text][user-auth-2-new]
 
 ### Customer - Payments
 
