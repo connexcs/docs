@@ -27,10 +27,19 @@ This guide will assume:
 Below are the instructions for basic customer setup, for detailed instruction on customer setup click (here) 
 
 1. Click on Management > Customers
+
+![alt text][customer-dashboard-new]
+
 2. Click on Add New
+
+![alt text][add-customer-new]
+
 3. Enter the Customer name 
+
 4. Select the currency that you wish to setup the account in.
 5. Click Save
+
+![alt text][customer-save-new]
 
 ### Customer - Authentication
 
