@@ -58,3 +58,12 @@ You can authenticate either using IP to IP or User/Password. Below are the steps
 
 
 
+[customer-dashboard-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-dashboard-new.png "customer-dashboard-new"
+[add-customer-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/add-customer-new.png "add-customer-new"
+[customer-save-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-save-new.png "customer-save-new"
+[ip-auth-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/ip-auth-new.png "ip-auth-new"
+[ip-auth-2-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/ip-auth-2-new.png "ip-auth-2-new"
+[user-auth-1-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/user-auth-1-new.png "user-auth-1-new"
+[payment-2-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/payment-2-new.png "ip-auth-new"
+[payment-1-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/payment-1-new.png "payment-1-new"
+
