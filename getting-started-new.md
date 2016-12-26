@@ -72,9 +72,13 @@ You can authenticate either using IP to IP or User/Password. Below are the steps
 
 1. Click on Payments
 2. Click '+' 
+
+![alt text][payment-1-new]
+
 3. Enter the description and the amount in the appropriate field 
 4. Select the Status as complete & click Save
 
+![alt text][payment-2-new]
 
 
 [customer-dashboard-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-dashboard-new.png "customer-dashboard-new"
