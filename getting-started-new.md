@@ -45,8 +45,13 @@ Below are the instructions for basic customer setup, for detailed instruction on
 
 1. Click on Authentication
 2. Click '+' under IP Authentication
+
+![alt text][ip-auth-new]
+
 3. Enter the Origination/customer IP address (We support SRV records & domains too)
 4. Click Save
+
+![alt text][ip-auth-2-new]
 
 ### Customer - User / Password Authentication
 
