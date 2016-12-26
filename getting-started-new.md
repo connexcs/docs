@@ -60,13 +60,13 @@ You can authenticate either using IP to IP or User/Password. Below are the steps
 1. Click on Authentication
 2. Click '+' under User / Password Authentication b
 
-![alt text][user-auth-new]
+![alt text][user-auth-1-new]
 
 3. Enter the username of your choice
 4. Enter the password
 5. Click Save
 
-![alt text][user-auth-1-new]
+![alt text][user-auth-new]
 
 ### Customer - Payments
 
@@ -83,6 +83,7 @@ You can authenticate either using IP to IP or User/Password. Below are the steps
 [ip-auth-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/ip-auth-new.png "ip-auth-new"
 [ip-auth-2-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/ip-auth-2-new.png "ip-auth-2-new"
 [user-auth-1-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/user-auth-1-new.png "user-auth-1-new"
+[user-auth-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/user-auth-new.png "user-auth-new"
 [payment-2-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/payment-2-new.png "ip-auth-new"
 [payment-1-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/payment-1-new.png "payment-1-new"
 
