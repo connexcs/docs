@@ -66,7 +66,7 @@ You can authenticate either using IP to IP or User/Password. Below are the steps
 4. Enter the password
 5. Click Save
 
-![alt text][user-auth-2-new]
+![alt text][user-auth-1-new]
 
 ### Customer - Payments
 
