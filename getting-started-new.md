@@ -31,21 +31,29 @@ This guide will assume:
 Below are the instructions for basic customer setup, for detailed instruction on customer setup click (here) 
 
 1. Click on Management > Customers.
+  
 ![alt text][customer-dashboard-new]
+
 2. Click on Add Customer.
+
 ![alt text][add-customer-new]
+
 3. Enter the Customer name. 
 4. Select the currency that you wish to setup the account in.
 5. Click Save.
+
 ![alt text][customer-save-new]
 
 ### Customer - Authentication
 
 1. Click on Authentication.
 2. Click '+' under IP Authentication. 
+
 ![alt text][ip-auth-new]
+
 3. Enter the Origination/customer IP address (We support SRV records & domains too).
 4. Click Save.
+
 ![alt text][ip-auth-2-new]
 
 ### Customer - User / Password Authentication
@@ -54,19 +62,25 @@ You can authenticate either using IP to IP or User/Password. Below are the steps
 
 1. Click on Authentication.
 2. Click '+' under User / Password Authentication.
+
 ![alt text][user-auth-1-new]
+
 3. Enter the username of your choice.
 4. Enter the password.
 5. Click Save.
+
 ![alt text][user-auth-new]
 
 ### Customer - Payments
 
 1. Click on Payments
 2. Click '+' 
+
 ![alt text][payment-1-new]
+
 3. Enter the description and the amount in the appropriate field 
 4. Select the Status as complete & click Save
+
 ![alt text][payment-2-new]
 
 [customer-dashboard-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-dashboard-new.png "customer-dashboard-new"
