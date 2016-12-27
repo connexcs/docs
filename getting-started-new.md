@@ -15,12 +15,16 @@ This guide will assume:
 1. Customer Name
 2. Switch IP Address or Username / Password
 3. Credit / Debit Limit
-4. Prerequisites Carrier
-5. Carrier Name
-6. Switch IP Address
-7. Prerequisites Rate Card
-8. Full Rate Card or List of Codes
-9. Profit Margin / Plan for customer prices.
+
+## Prerequisites Carrier
+
+1. Carrier Name
+2. Switch IP Address
+
+## Prerequisites Rate Card
+
+1. Full Rate Card or List of Codes
+2. Profit Margin / Plan for customer prices.
 
 ## Customer Setup
 
@@ -30,7 +34,7 @@ Below are the instructions for basic customer setup, for detailed instruction on
 
 ![alt text][customer-dashboard-new]
 
-2. Click on Add New
+2. Click on Add Customer
 
 ![alt text][add-customer-new]
 
