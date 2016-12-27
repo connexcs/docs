@@ -97,12 +97,12 @@ Carriers are your VoIP route providers, below are the instructions to setup carr
 1. Click on Authentication
 2. Click '+' under IP Authentication
 
-![alt text][ip-auth-new]
+![alt text][carrier-auth]
 
 3. Enter the termination IP address (We support SRV records & domains too)
 4. Click Save
 
-![alt text][ip-auth-2-new]
+![alt text][carrier-auth-1]
 
 
 
@@ -115,4 +115,7 @@ Carriers are your VoIP route providers, below are the instructions to setup carr
 [user-auth-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/user-auth-new.png "user-auth-new"
 [payment-2-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/payment-2-new.png "ip-auth-new"
 [payment-1-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/payment-1-new.png "payment-1-new"
+
+[carrier-auth]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/carrier-auth.png "carrier-auth"
+[carrier-auth-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/carrier-auth-1.png "carrier-auth-1"
 
