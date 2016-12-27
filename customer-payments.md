@@ -70,7 +70,6 @@ Now, go back to your External API form from your Connex account and add the cred
 * Click on Management> Customer> [customer name] > + under Contact > enter the customer PayPal email id and click save.
 * With the successful steps above your customer will be able to send/topup their account accordingly.
 
-
 ## Paypal Integration
 
 ### Login to ConnexCS account.
