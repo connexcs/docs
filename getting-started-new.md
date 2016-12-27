@@ -8,7 +8,7 @@
     * [Rate Card](#prerequisites-rate-card)
   * [Customer Setup](#customer-setup)
     * [Customer Authentication](#customer---authentication)
-    * [Customer Payments](##customer---payments)
+    * [Customer Payments](#customer---payments)
   * [Carrier Setup](#carrier-setup)
     * [Carrier - Authentication](#carrier---authentication)
    
