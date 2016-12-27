@@ -88,6 +88,6 @@ If you wish to enable LRN on the provider card you can do so from the Dialling o
 
 Search function: 
 
-    -Active : Enables the account, this will let the customer calls to pass through
-    -Inactive: Disables the account, all calls will be blocked
-    -Pending Approval: When a customer signups it will be listed under pending approval, setting pending approval won't let the calls to pass through.
+Active : Enables the account, this will let the customer calls to pass through
+Inactive: Disables the account, all calls will be blocked
+Pending Approval: When a customer signups it will be listed under pending approval, setting pending approval won't let the calls to pass through.
