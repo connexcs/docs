@@ -1,3 +1,20 @@
+# Table of Contents
+
+* [Table of Contents](#table-of-contents)
+* [Introduction](#introduction)
+  * [Prerequisites](#prerequisites)
+    * [Customer](#prerequisites-customer)
+    * [Carrier](#prerequisites-carrier)
+    * [Rate Card](#prerequisites-rate-card)
+  * [Customer Setup](#customer-setup)
+    * [Customer Authentication](#customer---authentication)
+    * [Customer Payments](##customer---payments)
+  * [Carrier Setup](#carrier-setup)
+    * [Carrier - Authentication](#carrier---authentication)
+   
+
+
+
 # Introduction
 
 Initial set-up will configure a single carrier, single customer and single rate card.
@@ -83,7 +100,7 @@ You can authenticate either using IP to IP or User/Password. Below are the steps
 
     ![alt text][payment-2-new]
 
-## Carrier Management
+## Carrier Setup
 
 Carriers are your VoIP route providers, below are the instructions to setup carrier. for detailed instruction on carrier setup click (here)
 
