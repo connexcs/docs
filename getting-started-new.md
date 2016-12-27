@@ -83,6 +83,29 @@ You can authenticate either using IP to IP or User/Password. Below are the steps
 
 ![alt text][payment-2-new]
 
+## Carrier Management
+
+Carriers are your VoIP route providers, below are the instructions to setup carrier. for detailed instruction on carrier setup click (here)
+
+1. Click on Management> Carrier
+2. Enter the Carrier Name
+3. Select the Carrier currency
+4. Click Save
+
+### Carrier - Authentication
+
+1. Click on Authentication
+2. Click '+' under IP Authentication
+
+![alt text][ip-auth-new]
+
+3. Enter the termination IP address (We support SRV records & domains too)
+4. Click Save
+
+![alt text][ip-auth-2-new]
+
+
+
 [customer-dashboard-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-dashboard-new.png "customer-dashboard-new"
 [add-customer-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/add-customer-new.png "add-customer-new"
 [customer-save-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-save-new.png "customer-save-new"
