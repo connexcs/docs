@@ -52,7 +52,6 @@ Below are the instructions for basic customer setup, for detailed instruction on
 ![alt text][ip-auth-new]
 
 3. Enter the Origination/customer IP address (We support SRV records & domains too).
-
 4. Click Save.
 
 ![alt text][ip-auth-2-new]
@@ -67,9 +66,7 @@ You can authenticate either using IP to IP or User/Password. Below are the steps
 ![alt text][user-auth-1-new]
 
 3. Enter the username of your choice.
-
 4. Enter the password.
-
 5. Click Save.
 
 ![alt text][user-auth-new]
@@ -82,7 +79,6 @@ You can authenticate either using IP to IP or User/Password. Below are the steps
 ![alt text][payment-1-new]
 
 3. Enter the description and the amount in the appropriate field 
-
 4. Select the Status as complete & click Save
 
 ![alt text][payment-2-new]
