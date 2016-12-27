@@ -7,6 +7,9 @@
     * [Inserting the IPN URL in your PayPal account](#inserting-the-ipn-url-in-your-paypal-account)
     * [Inserting credentials in your Connex Account](#inserting-credentials-in-your-connex-account)
     * [How to add customer PayPal Email address on ConnexCS customer account](#how-to-add-customer-paypal-email-address-on-connexcs-customer-account)
+    * [Paypal Integration](#paypal-integration)
+      * [Login to ConnexCS account](#login-to-connexcs-account)
+      * [Setting the Customer Paypal Email Address into ConnexCS](#setting-the-customer-paypal-email-address-into-connexcs)
 
 
 # Mass Payments with Paypal IPN
