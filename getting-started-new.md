@@ -47,12 +47,11 @@ Below are the instructions for basic customer setup, for detailed instruction on
 ### Customer - Authentication
 
 1. Click on Authentication.
-2. Click '+' under IP Authentication.
-
+2. Click '+' under IP Authentication. 
+  
 ![alt text][ip-auth-new]
 
 3. Enter the Origination/customer IP address (We support SRV records & domains too).
-
 4. Click Save.
 
 ![alt text][ip-auth-2-new]
@@ -65,7 +64,6 @@ You can authenticate either using IP to IP or User/Password. Below are the steps
 2. Click '+' under User / Password Authentication.
 
 ![alt text][user-auth-1-new]
-
 
 3. Enter the username of your choice.
 4. Enter the password.
@@ -84,7 +82,6 @@ You can authenticate either using IP to IP or User/Password. Below are the steps
 4. Select the Status as complete & click Save
 
 ![alt text][payment-2-new]
-
 
 [customer-dashboard-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-dashboard-new.png "customer-dashboard-new"
 [add-customer-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/add-customer-new.png "add-customer-new"
