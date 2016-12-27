@@ -104,6 +104,41 @@ Carriers are your VoIP route providers, below are the instructions to setup carr
 
     ![alt text][carrier-auth-1]
 
+## Provider Card
+
+Below are the instructions to setup the provider rate card manually. Basically there are two ways to setup a provider rate card, upload and manually, we will go through the manual setup instructions here, for detailed instructions click (here)
+ 
+1. Click on Management> Rate Card
+2. Click on Add New under Provider Rate Cards
+3. Name the provider card
+4. Select the Carrier from the dropdown list
+5. Select the desired currency for the provider card
+6. Click Save
+7. Click on Add Draft button
+8. Click on Add New Row
+9. Complete the Spreadsheet information, Example Prefix: 441 Name: UK Landline, Cost: 0.006, Billing: 1/1. You can add as many rows as you wish.
+10. Click on Publish button to publish the rate card.
+
+## Customer Card
+
+1. Click on Management> Rate Cards
+2. Click on Add New under Provider Rate Cards
+3. Name the customer card
+4. Select the carrier cards
+5. Select the desired currency & Click Save
+6. Click on Profits tab >Click on Add New Row
+7. Complete the Spreadsheet, Example: Prefix: 441, Cost: 0.007, Profit Type: Absolute, Billing 1/1, Rounding: 1/1, Status: Profit, Apply To: Cost
+8. Click on Build From Carrier Cards button & confirm the build.
+
+## Ingress Routing
+
+1. Click on Management> Customer
+2. Click on the customer name> Routing
+3. Click '+' under Ingress Routing
+4. Select the Customer card from the tariff list & click Save
+
+For details information about ingress routing click (here)
+
 
 
 [customer-dashboard-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-dashboard-new.png "customer-dashboard-new"
