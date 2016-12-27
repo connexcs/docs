@@ -51,9 +51,9 @@ Below are the instructions for basic customer setup, for detailed instruction on
 
 ![alt text][ip-auth-new]
 
-3.Enter the Origination/customer IP address (We support SRV records & domains too).
+3. Enter the Origination/customer IP address (We support SRV records & domains too).
 
-4.Click Save.
+4. Click Save.
 
 ![alt text][ip-auth-2-new]
 
@@ -61,14 +61,15 @@ Below are the instructions for basic customer setup, for detailed instruction on
 
 You can authenticate either using IP to IP or User/Password. Below are the steps to add an SIP extension.
 
-1. Click on Authentication
-2. Click '+' under User / Password Authentication b
+1. Click on Authentication.
+2. Click '+' under User / Password Authentication.
 
 ![alt text][user-auth-1-new]
 
-3. Enter the username of your choice
-4. Enter the password
-5. Click Save
+
+3. Enter the username of your choice.
+4. Enter the password.
+5. Click Save.
 
 ![alt text][user-auth-new]
 
