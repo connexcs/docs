@@ -7,7 +7,7 @@
 5. Select the desired currency
 6. Click Advanced>
 7. Change the Presentation to Inter/Intra/Indet under Force Presentation
-If you wish to enable LRN on the provider card you can do so from the Dialling option
+  If you wish to enable LRN on the provider card you can do so from the Dialling option
 8. Click Save
 9. Click Upload> Upload> browse and select the rate card file
 10. Click on the file name that you just uploaded from the list.
@@ -23,7 +23,7 @@ If you wish to enable LRN on the provider card you can do so from the Dialling o
 5. Select the desired currency
 6. Click Advanced
 7. Change the Presentation to Inter/Intra/Indet under Force Presentation
-If you wish to enable LRN on the provider card you can do so from the Dialling option
+  If you wish to enable LRN on the provider card you can do so from the Dialling option
 8. Click Save
 9. Click Upload> Upload> browse and select the rate card file
 10. Click on the file name that you just uploaded from the list.
@@ -39,7 +39,7 @@ If you wish to enable LRN on the provider card you can do so from the Dialling o
 5. Select the desired currency
 6. Click Advanced
 7. Change the Presentation to Inter/Intra/Indet under Force Presentation
-If you wish to enable LRN on the provider card you can do so from the Dialling option
+  If you wish to enable LRN on the provider card you can do so from the Dialling option
 8. Click Save
 9. Click on Profits tab >Click on Add New Row
 10. Complete the Spreadsheet information, Example Prefix: ^1 Name: USA, Percent: 15, Profit Type: Percent Billing: 6/6, Rounding: 1/1, Status: Profit, Apply To: Inter/Intra/cost
@@ -54,7 +54,7 @@ If you wish to enable LRN on the provider card you can do so from the Dialling o
 5. Select the desired currency
 6. Click Advanced
 7. Change the Presentation to Inter/Intra/Indet under Force Presentation
-If you wish to enable LRN on the provider card you can do so from the Dialling option
+  If you wish to enable LRN on the provider card you can do so from the Dialling option
 8. Click Save
 9. Click Upload> Upload> browse and select the rate card file
 10. Click on the file name that you just uploaded from the list.
@@ -89,5 +89,7 @@ If you wish to enable LRN on the provider card you can do so from the Dialling o
 Search function: 
 
 Active : Enables the account, this will let the customer calls to pass through
+
 Inactive: Disables the account, all calls will be blocked
+
 Pending Approval: When a customer signups it will be listed under pending approval, setting pending approval won't let the calls to pass through.
