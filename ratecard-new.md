@@ -1,14 +1,26 @@
 # NPA-NXX Provider Rate Card Upload
 
 1. Click on Management> Rate Card
+
+![alt text][provider-card-dashbboard] 
+
 2. Click on Add New under Provider Rate Cards
+
+![alt text][provider-ratecard]
+
 3. Name the provider card
+
+![alt text][provider-card-1]
+
 4. Select the Carrier from the dropdown list
 5. Select the desired currency
 6. Click Advanced>
 7. Change the Presentation to Inter/Intra/Indet under Force Presentation
   If you wish to enable LRN on the provider card you can do so from the Dialling option
 8. Click Save
+
+![alt text][provider-card-2]
+
 9. Click Upload> Upload> browse and select the rate card file
 10. Click on the file name that you just uploaded from the list.
 11. Map the rate card fields against the system fields Add GIF here
@@ -91,3 +103,9 @@
 1. Active : Enables the account, this will let the customer calls to pass through
 2. Inactive: Disables the account, all calls will be blocked
 3. Pending Approval: When a customer signups it will be listed under pending approval, setting pending approval won't let the calls to    pass through.
+
+[provider-card-dashbboard]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/provider-card-dashbboard.png "provider-card-dashbboard"
+[provider-ratecard]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/provider-ratecard.png "provider-ratecard"
+[provider-card-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/provider-card-1.png "provider-card-1"
+
+[provider-card2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/provider-card2.png "provider-card2"
