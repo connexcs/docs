@@ -2,15 +2,15 @@
 
 1. Click on Management> Rate Card
 
-![alt text][provider-card-dashbboard] 
+  ![alt text][provider-card-dashbboard] 
 
 2. Click on Add New under Provider Rate Cards
 
-![alt text][provider-ratecard]
+  ![alt text][provider-ratecard]
 
 3. Name the provider card
 
-![alt text][provider-card-1]
+  ![alt text][provider-card-1]
 
 4. Select the Carrier from the dropdown list
 5. Select the desired currency
@@ -19,7 +19,7 @@
   If you wish to enable LRN on the provider card you can do so from the Dialling option
 8. Click Save
 
-![alt text][provider-card-2]
+  ![alt text][provider-card2]
 
 9. Click Upload> Upload> browse and select the rate card file
 10. Click on the file name that you just uploaded from the list.
