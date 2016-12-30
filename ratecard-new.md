@@ -22,9 +22,23 @@
   ![alt text][provider-card-5]
 
 9. Click Upload> Upload> browse and select the rate card file
+
+  ![alt text][provider-card-4]
+  
+  ![alt text][provider-card-6]
+
 10. Click on the file name that you just uploaded from the list.
+
+  ![alt text][provider-card-7]
+
 11. Map the rate card fields against the system fields Add GIF here
+
+
 12. Click on Import to card and select the provider card & click save
+
+  ![alt text][map8]
+
+  ![alt text][map10]
 
 ## NPA-NXX Customer Rate Card Upload
 
@@ -109,3 +123,9 @@
 [provider-card-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/provider-card-1.png "provider-card-1"
 
 [provider-card-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/provider-card-5.png "provider-card-5"
+[provider-card-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/provider-card-4.png "provider-card-5"
+[provider-card-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/provider-card-6.png "provider-card-5"
+[provider-card-7]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/provider-card-7.png "provider-card-5"
+
+[map8]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/map8.png "map8"
+[map10]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/map10.png "map10"
