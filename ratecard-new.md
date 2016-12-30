@@ -43,15 +43,33 @@
 ## NPA-NXX Customer Rate Card Upload
 
 1. Click on Management> Rate Card
+
+  ![alt text][provider-card-dashbboard] 
+
 2. Click on Add New under Customer Rate Cards
+
+  ![alt text][customer-card] 
+
 3. Name the customer card
+
+  ![alt text][customer-card-1] 
+
 4. Select the provider cards from the dropdown list, you can select more than one provider card
 5. Select the desired currency
+
+  ![alt text][customer-card-2] 
+
 6. Click Advanced
 7. Change the Presentation to Inter/Intra/Indet under Force Presentation
   If you wish to enable LRN on the provider card you can do so from the Dialling option
 8. Click Save
+
+  ![alt text][customer-card-3] 
+
 9. Click Upload> Upload> browse and select the rate card file
+
+  ![alt text][customer-card-4] 
+
 10. Click on the file name that you just uploaded from the list.
 11. Map the rate card fields against the system fields Add GIF here
 12. Click on Import to card and select the provider card & click save
@@ -59,17 +77,40 @@
 ## NPA-NXX Customer Rate Card Manual (Generate Profit Internally)
 
 1. Click on Management> Rate Card
+
+ ![alt text][provider-card-dashbboard] 
+
 2. Click on Add New under Customer Rate Cards
+
+   ![alt text][customer-card] 
+
 3. Name the customer card
+
+  ![alt text][customer-card-1] 
+
 4. Select the provider cards from the dropdown list, you can select more than one provider card
 5. Select the desired currency
+
+  ![alt text][customer-card-2] 
+
 6. Click Advanced
 7. Change the Presentation to Inter/Intra/Indet under Force Presentation
   If you wish to enable LRN on the provider card you can do so from the Dialling option
 8. Click Save
+
+  ![alt text][customer-card-3] 
+
 9. Click on Profits tab >Click on Add New Row
+
+  ![alt text][customer-card-4] 
+
 10. Complete the Spreadsheet information, Example Prefix: ^1 Name: USA, Percent: 15, Profit Type: Percent Billing: 6/6, Rounding: 1/1, Status: Profit, Apply To: Inter/Intra/cost
+
+  ![alt text][customer-card-5] 
+
 11. Click Build From Carrier Cards button & confirm the build.
+
+  ![alt text][customer-card-6] 
 
 ## NPA-NXX Customer Rate Card Upload (External)
 
@@ -129,3 +170,13 @@
 
 [map8]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/map8.png "map8"
 [map10]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/map10.png "map10"
+
+[customer-card]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-card.png "customer-card"
+[customer-card-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-card-1.png "customer-card-1"
+[customer-card-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-card-2.png "customer-card-2"
+[customer-card-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-card-3.png "customer-card-3"
+[customer-card-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-card-4.png "customer-card-4"
+[customer-card-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-card-5.png "customer-card-5"
+[customer-card-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-card-6.png "customer-card-6"
+
+
