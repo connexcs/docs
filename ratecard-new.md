@@ -19,7 +19,7 @@
   If you wish to enable LRN on the provider card you can do so from the Dialling option
 8. Click Save
 
-  ![alt text][provider-card2]
+  ![alt text][provider-card-5]
 
 9. Click Upload> Upload> browse and select the rate card file
 10. Click on the file name that you just uploaded from the list.
@@ -108,4 +108,4 @@
 [provider-ratecard]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/provider-ratecard.png "provider-ratecard"
 [provider-card-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/provider-card-1.png "provider-card-1"
 
-[provider-card2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/provider-card2.png "provider-card2"
+[provider-card-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/provider-card-5.png "provider-card-5"
