@@ -68,10 +68,19 @@
 9. Click Upload> Upload> browse and select the rate card file
 
   ![alt text][customer-card-3] 
+  ![alt text][provider-card-4] 
 
 10. Click on the file name that you just uploaded from the list.
+
+  ![alt text][provider-card-5] 
+
 11. Map the rate card fields against the system fields Add GIF here
+
+  ![alt text][map9] 
+  
 12. Click on Import to card and select the provider card & click save
+
+  ![alt text][map11]
 
 ## NPA-NXX Customer Rate Card Manual (Generate Profit Internally)
 
