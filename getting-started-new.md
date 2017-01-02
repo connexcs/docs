@@ -126,11 +126,20 @@ Carriers are your VoIP route providers, below are the instructions to setup carr
 Below are the instructions to setup the provider rate card manually. Basically there are two ways to setup a provider rate card, upload and manually, we will go through the manual setup instructions here, for detailed instructions click (here)
  
 1. Click on Management> Rate Card
+  
+  ![alt text][provider-card-dashbboard] 
+  
 2. Click on Add New under Provider Rate Cards
+
+  ![alt text][provider-ratecard]
+
 3. Name the provider card
 4. Select the Carrier from the dropdown list
 5. Select the desired currency for the provider card
 6. Click Save
+
+ ![alt text][provider-card-1]
+
 7. Click on Add Draft button
 8. Click on Add New Row
 9. Complete the Spreadsheet information, Example Prefix: 441 Name: UK Landline, Cost: 0.006, Billing: 1/1. You can add as many rows as you wish.
@@ -139,14 +148,27 @@ Below are the instructions to setup the provider rate card manually. Basically t
 ## Customer Card
 
 1. Click on Management> Rate Cards
-2. Click on Add New under Provider Rate Cards
+
+   ![alt text][provider-card-dashbboard] 
+
+2. Click on Add New under Customer Rate Cards
+
+ ![alt text][customer-card] 
+
 3. Name the customer card
 4. Select the carrier cards
 5. Select the desired currency & Click Save
+
+ ![alt text][customer-card-1] 
+ 
 6. Click on Profits tab >Click on Add New Row
 7. Complete the Spreadsheet, Example: Prefix: 441, Cost: 0.007, Profit Type: Absolute, Billing 1/1, Rounding: 1/1, Status: Profit, Apply To: Cost
+
+  ![alt text][customer-card-5] 
+
 8. Click on Build From Carrier Cards button & confirm the build.
 
+ ![alt text][customer-card-6] 
 ## Ingress Routing
 
 1. Click on Management> Customer
@@ -170,4 +192,28 @@ For details information about ingress routing click (here)
 
 [carrier-auth]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/carrier-auth.png "carrier-auth"
 [carrier-auth-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/carrier-auth-1.png "carrier-auth-1"
+
+
+
+[provider-card-dashbboard]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/provider-card-dashbboard.png "provider-card-dashbboard"
+[provider-ratecard]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/provider-ratecard.png "provider-ratecard"
+[provider-card-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/provider-card-1.png "provider-card-1"
+
+[provider-card-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/provider-card-5.png "provider-card-5"
+[provider-card-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/provider-card-4.png "provider-card-5"
+[provider-card-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/provider-card-6.png "provider-card-5"
+[provider-card-7]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/provider-card-7.png "provider-card-5"
+
+[map8]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/map8.png "map8"
+[map10]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/map10.png "map10"
+
+[customer-card]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-card.png "customer-card"
+[customer-card-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-card-1.png "customer-card-1"
+[customer-card-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-card-2.png "customer-card-2"
+[customer-card-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-card-3.png "customer-card-3"
+[customer-card-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-card-4.png "customer-card-4"
+[customer-card-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-card-5.png "customer-card-5"
+[customer-card-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-card-6.png "customer-card-6"
+
+
 
