@@ -182,10 +182,10 @@
 
 8. Click on the file name that you just uploaded from the list.
 
+  ![alt text][provider-card-7]
+  
   ![alt text][provider-card-6]
   
-  ![alt text][provider-card-7]
-
 9. Map the rate card fields against the system fields Add GIF here
 
   ![alt text][map-giff]
