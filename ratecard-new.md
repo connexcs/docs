@@ -89,15 +89,12 @@
 
 4. Select the provider cards from the dropdown list, you can select more than one provider card
 5. Select the desired currency
-
-  ![alt text][customer-card-2] 
-
 6. Click Advanced
 7. Change the Presentation to Inter/Intra/Indet under Force Presentation
   If you wish to enable LRN on the provider card you can do so from the Dialling option
 8. Click Save
 
-  ![alt text][customer-card-3] 
+  ![alt text][customer-card-2] 
 
 9. Click on Profits tab >Click on Add New Row
 
