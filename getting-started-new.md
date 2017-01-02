@@ -138,12 +138,21 @@ Below are the instructions to setup the provider rate card manually. Basically t
 5. Select the desired currency for the provider card
 6. Click Save
 
- ![alt text][provider-card-1]
+ ![alt text][add-new-provider]
 
 7. Click on Add Draft button
+
+  ![alt text][add-draft]
+
 8. Click on Add New Row
+
+ ![alt text][add-new-row]
+
 9. Complete the Spreadsheet information, Example Prefix: 441 Name: UK Landline, Cost: 0.006, Billing: 1/1. You can add as many rows as you wish.
 10. Click on Publish button to publish the rate card.
+
+ ![alt text][upload]
+
 
 ## Customer Card
 
@@ -217,3 +226,7 @@ For details information about ingress routing click (here)
 
 
 
+[add-new-provider]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/add-new-provider.png "add-new-provider"
+[add-draft]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/add-draft.png "add-draft"
+[add-new-row]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/add-new-row.png "add-new-row"
+[upload]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/upload.png "upload"
