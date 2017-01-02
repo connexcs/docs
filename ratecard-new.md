@@ -188,14 +188,6 @@
 6. You may enter any information on public notes, this notes will be displayed on the customer portal when logged in. The private notes is limited to display only on the control panel, this notes will not be displayed on the customer portal.
 7. Click Save
 
-## Customer
-
-### Search function: 
-
-1. Active : Enables the account, this will let the customer calls to pass through
-2. Inactive: Disables the account, all calls will be blocked
-3. Pending Approval: When a customer signups it will be listed under pending approval, setting pending approval won't let the calls to    pass through.
-
 [provider-card-dashbboard]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/provider-card-dashbboard.png "provider-card-dashbboard"
 [provider-ratecard]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/provider-ratecard.png "provider-ratecard"
 [provider-card-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/provider-card-1.png "provider-card-1"
