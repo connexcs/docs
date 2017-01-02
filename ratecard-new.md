@@ -115,18 +115,38 @@
 ## NPA-NXX Customer Rate Card Upload (External)
 
 1. Click on Management> Rate Card
+
+  ![alt text][provider-card-dashbboard] 
+
 2. Click on Add New under Customer Rate Cards
+
+  ![alt text][customer-card] 
+
 3. Name the customer card
 4. Select the provider cards from the dropdown list, you can select more than one provider card
 5. Select the desired currency
+
+  ![alt text][customer-card-1] 
+
 6. Click Advanced
 7. Change the Presentation to Inter/Intra/Indet under Force Presentation
   If you wish to enable LRN on the provider card you can do so from the Dialling option
 8. Click Save
+
+  ![alt text][customer-card-2]
+
 9. Click Upload> Upload> browse and select the rate card file
+
+  ![alt text][customer-card-4]
+  
 10. Click on the file name that you just uploaded from the list.
+
+  ![alt text][customer-card-5]
+
 11. Map the rate card fields against the system fields.
 12. Click on Import to card and select the customer card & click save
+
+  ![alt text][customer-card-6]
 
 ## A to Z Rate Card Upload
 
