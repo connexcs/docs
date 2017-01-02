@@ -33,6 +33,7 @@
 
 11. Map the rate card fields against the system fields Add GIF here
 
+  ![alt text][map-giff]
 
 12. Click on Import to card and select the provider card & click save
 
