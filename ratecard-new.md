@@ -167,14 +167,14 @@
 
 2. Click on Add New under Provider Rate Cards
 
-    ![alt text][provider-card-1] 
+  ![alt text][provider-rate-card] 
   
 3. Name the provider card
 4. Select the Carrier from the dropdown list
 5. Select the desired currency
 6. Click Save
-  
-  ![alt text][provider-card-5] 
+ 
+   ![alt text][provider-card-1] 
 
 7. Click Upload> Upload> browse and select the rate card file
 
