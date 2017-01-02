@@ -182,9 +182,17 @@ Below are the instructions to setup the provider rate card manually. Basically t
 ## Ingress Routing
 
 1. Click on Management> Customer
+
+ ![alt text][ingress-1]
+
 2. Click on the customer name> Routing
+
+ ![alt text][ingress-2]
+
 3. Click '+' under Ingress Routing
 4. Select the Customer card from the tariff list & click Save
+
+ ![alt text][ingress-3]
 
 For details information about ingress routing click (here)
 
@@ -236,5 +244,9 @@ For details information about ingress routing click (here)
 [add-new-customer-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/add-new-customer-1.png "add-new-customer-1"
 [add-customer-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/add-customer-2.png "add-customer-2"
 [add-customer-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/add-customer-3.png "add-customer-3"
+
+[ingress-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/ingress-1.png "ingress-1"
+[ingress-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/ingress-2.png "ingress-2"
+[ingress-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/ingress-3.png "ingress-3"
 
 
