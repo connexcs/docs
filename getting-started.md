@@ -194,9 +194,9 @@ Below are the instructions to setup the provider rate card manually. Basically t
 
  ![alt text][ingress-3]
 
-For details information about ingress routing click (here)
+For details information about ingress routing click [here]
 
-
+[here]: <https://docs.connexcs.com/en/latest/ingress-routing/>
 
 [customer-dashboard-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-dashboard-new.png "customer-dashboard-new"
 [add-customer-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/add-customer-new.png "add-customer-new"
