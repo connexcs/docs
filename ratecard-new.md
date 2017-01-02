@@ -134,12 +134,16 @@
 9. Click Upload> Upload> browse and select the rate card file
 
   ![alt text][customer-card-3]
+  ![alt text][provider-card-4]
   
 10. Click on the file name that you just uploaded from the list.
 
-  ![alt text][customer-card-5]
+  ![alt text][provider-card-7]
 
 11. Map the rate card fields against the system fields.
+
+ ![alt text][map-giff]
+
 12. Click on Import to card and select the customer card & click save
 
   ![alt text][customer-card-6]
