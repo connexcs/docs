@@ -167,7 +167,7 @@
 
 2. Click on Add New under Provider Rate Cards
 
-  ![alt text][provider-ratecard-a-z] 
+  ![alt text][provider-card-a-z] 
   
 3. Name the provider card
 4. Select the Carrier from the dropdown list
