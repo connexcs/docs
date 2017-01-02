@@ -57,9 +57,9 @@ Brief description of the fields present in above dialog box is as follows:
 
 **Status:** Users can choose the "Status" of the customer as:
 
-1. Active
-2. Inactive
-3. Pending Approval
+1. Active : Enables the account, this will let the customer calls to pass through
+2. Inactive: Disables the account, all calls will be blocked
+3. Pending Approval: When a customer signups it will be listed under pending approval, setting pending approval won't let the calls to    pass through.
 
 **Debit Limit:**  "Debit Limit" will be added by the user.
 
