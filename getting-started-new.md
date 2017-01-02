@@ -162,22 +162,23 @@ Below are the instructions to setup the provider rate card manually. Basically t
 
 2. Click on Add New under Customer Rate Cards
 
- ![alt text][customer-card] 
+ ![alt text][add-new-customer] 
 
 3. Name the customer card
 4. Select the carrier cards
 5. Select the desired currency & Click Save
 
- ![alt text][customer-card-1] 
+ ![alt text][add-new-customer-1] 
  
 6. Click on Profits tab >Click on Add New Row
 7. Complete the Spreadsheet, Example: Prefix: 441, Cost: 0.007, Profit Type: Absolute, Billing 1/1, Rounding: 1/1, Status: Profit, Apply To: Cost
 
-  ![alt text][customer-card-5] 
+  ![alt text][add-customer-2] 
 
 8. Click on Build From Carrier Cards button & confirm the build.
 
- ![alt text][customer-card-6] 
+![alt text][add-customer-3]
+
 ## Ingress Routing
 
 1. Click on Management> Customer
@@ -230,3 +231,10 @@ For details information about ingress routing click (here)
 [add-draft]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/add-draft.png "add-draft"
 [add-new-row]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/add-new-row.png "add-new-row"
 [upload]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/upload.png "upload"
+
+[add-new-customer]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/add-new-customer.png "add-new-customer"
+[add-new-customer-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/add-new-customer-1.png "add-new-customer-1"
+[add-customer-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/add-customer-2.png "add-customer-2"
+[add-customer-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/add-customer-3.png "add-customer-3"
+
+
