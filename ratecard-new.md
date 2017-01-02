@@ -167,7 +167,7 @@
 
 2. Click on Add New under Provider Rate Cards
 
-  ![alt text][provider-ratecard] 
+  ![alt text][provider-ratecarda-z] 
   
 3. Name the provider card
 4. Select the Carrier from the dropdown list
@@ -239,6 +239,8 @@
 [customer]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer.png "customer"
 [contacts]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/contacts.png "contacts"
 [contacts-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/contacts-2.png "contacts-2"
+
+[provider-card-a-z]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/provider-card-a-z.png "provider-card-a-z"
 
 
 [map-giff]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/map-giff.gif "map-giff"
