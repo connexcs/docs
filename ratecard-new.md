@@ -151,15 +151,32 @@
 ## A to Z Rate Card Upload
 
 1. Click on Management> Rate Card
+
+   ![alt text][provider-card-dashbboard] 
+
 2. Click on Add New under Provider Rate Cards
+
+    ![alt text][provider-card-1] 
+  
 3. Name the provider card
 4. Select the Carrier from the dropdown list
 5. Select the desired currency
 6. Click Save
+  
+  ![alt text][provider-card-5] 
+
 7. Click Upload> Upload> browse and select the rate card file
+
+  ![alt text][provider-card-4]
+
 8. Click on the file name that you just uploaded from the list.
+
+  ![alt text][provider-card-6]
+
 9. Map the rate card fields against the system fields Add GIF here
 10. Click on Import to card button & select the provider card & click save
+
+  ![alt text][provider-card-7]
 
 ## Contacts
 
