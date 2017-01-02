@@ -170,11 +170,16 @@
 8. Click on the file name that you just uploaded from the list.
 
   ![alt text][provider-card-6]
+  
+  ![alt text][provider-card-7]
 
 9. Map the rate card fields against the system fields Add GIF here
+
+  ![alt text][map-giff]
+
 10. Click on Import to card button & select the provider card & click save
 
-  ![alt text][provider-card-7]
+  
 
 ## Contacts
 
@@ -219,3 +224,5 @@
 [contacts]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/contacts.png "contacts"
 [contacts-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/contacts-2.png "contacts-2"
 
+
+[map-giff]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/map-giff.gif "map-giff"
