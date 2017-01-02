@@ -174,8 +174,6 @@
 5. Select the desired currency
 6. Click Save
  
-  ![alt text][provider-card-a-z] 
- 
    ![alt text][provider-card-1] 
 
 7. Click Upload> Upload> browse and select the rate card file
@@ -241,8 +239,5 @@
 [customer]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer.png "customer"
 [contacts]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/contacts.png "contacts"
 [contacts-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/contacts-2.png "contacts-2"
-
-[provider-card-a-z]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/provider-card-a-z.png "provider-card-a-z"
-
 
 [map-giff]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/map-giff.gif "map-giff"
