@@ -63,9 +63,10 @@
 
   ![alt text][customer-card-2]
 
-  ![alt text][customer-card-3] 
 
 9. Click Upload> Upload> browse and select the rate card file
+
+  ![alt text][customer-card-3] 
 
   ![alt text][customer-card-4] 
 
