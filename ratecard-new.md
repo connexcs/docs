@@ -146,7 +146,9 @@
 
 12. Click on Import to card and select the customer card & click save
 
-  ![alt text][customer-card-6]
+  ![alt text][map11]
+
+  ![alt text][map12]
 
 ## A to Z Rate Card Upload
 
@@ -214,6 +216,8 @@
 [map8]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/map8.png "map8"
 [map9]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/map9.png "map9"
 [map10]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/map10.png "map10"
+[map11]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/map11.png "map11"
+[map12]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/map12.png "map12"
 
 [customer-card]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-card.png "customer-card"
 [customer-card-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-card-1.png "customer-card-1"
