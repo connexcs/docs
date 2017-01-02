@@ -7,8 +7,8 @@
     * [Carrier](#prerequisites-carrier)
     * [Rate Card](#prerequisites-rate-card)
   * [Customer Setup](#customer-setup)
-    * [Customer Authentication](#customer---authentication)
-    * [Customer Payments](#customer---payments)
+    * [Authentication](#authentication)
+    * [Payments](#payments)
   * [Carrier Setup](#carrier-setup)
     * [Carrier - Authentication](#carrier---authentication)
    
@@ -61,7 +61,7 @@ Below are the instructions for basic customer setup, for detailed instruction on
 
     ![alt text][customer-save-new]
 
-### Customer - Authentication
+### Authentication
 
 1. Click on Authentication.
 2. Click '+' under IP Authentication. 
@@ -73,7 +73,7 @@ Below are the instructions for basic customer setup, for detailed instruction on
 
     ![alt text][ip-auth-2-new]
 
-### Customer - User / Password Authentication
+### User / Password Authentication
 
 You can authenticate either using IP to IP or User/Password. Below are the steps to add an SIP extension.
 
@@ -88,7 +88,7 @@ You can authenticate either using IP to IP or User/Password. Below are the steps
 
     ![alt text][user-auth-new]
 
-### Customer - Payments
+### Payments
 
 1. Click on Payments
 2. Click '+' 
@@ -109,7 +109,7 @@ Carriers are your VoIP route providers, below are the instructions to setup carr
 3. Select the Carrier currency
 4. Click Save
 
-### Carrier - Authentication
+### Authentication
 
 1. Click on Authentication
 2. Click '+' under IP Authentication
