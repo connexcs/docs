@@ -179,7 +179,7 @@
 
 10. Click on Import to card button & select the provider card & click save
 
-  
+  ![alt text][map8]  
 
 ## Contacts
 
@@ -210,6 +210,7 @@
 [provider-card-7]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/provider-card-7.png "provider-card-5"
 
 [map8]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/map8.png "map8"
+[map9]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/map9.png "map9"
 [map10]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/map10.png "map10"
 
 [customer-card]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-card.png "customer-card"
