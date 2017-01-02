@@ -133,7 +133,7 @@
 
 9. Click Upload> Upload> browse and select the rate card file
 
-  ![alt text][customer-card-4]
+  ![alt text][customer-card-3]
   
 10. Click on the file name that you just uploaded from the list.
 
