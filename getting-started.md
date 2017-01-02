@@ -10,7 +10,7 @@
     * [Authentication](#authentication)
     * [Payments](#payments)
   * [Carrier Setup](#carrier-setup)
-    * [Authentication](#authentication-1)
+    * [Authentication](#authentication_1)
    
 
 
