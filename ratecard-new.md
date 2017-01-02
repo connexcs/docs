@@ -72,11 +72,11 @@
 
 10. Click on the file name that you just uploaded from the list.
 
-  ![alt text][provider-card-5] 
+  ![alt text][provider-card-7] 
 
 11. Map the rate card fields against the system fields Add GIF here
 
-  ![alt text][map9] 
+  ![alt text][map-giff] 
   
 12. Click on Import to card and select the provider card & click save
 
