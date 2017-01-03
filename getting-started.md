@@ -107,9 +107,14 @@ You can authenticate either using IP to IP or User/Password. Below are the steps
 Carriers are your VoIP route providers, below are the instructions to setup carrier. for detailed instruction on carrier setup click (here)
 
 1. Click on Management> Carrier
+ 
+  ![alt text][carrier-1]  
+
 2. Enter the Carrier Name
 3. Select the Carrier currency
 4. Click Save
+
+ ![alt text][carrier-2]
 
 ### Authentication
 
@@ -302,4 +307,6 @@ Steps to Verify Mobile Number
 [verify-email-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/verify-email-1.png "verify-mobile-1"
 [verify-email-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/verify-email-2.png "verify-mobile-2"
 
+[carrier-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/carrier-1.png "carrier-1"
+[carrier-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/carrier-2.png "carrier-2"
 
