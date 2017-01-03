@@ -47,7 +47,7 @@ This guide will assume:
 
 ## Customer Setup
 
-Below are the instructions for basic customer setup, for detailed instruction on customer setup click (here) 
+Below are the instructions for basic customer setup, for detailed instruction on customer setup click on [Customer Setup] 
 
 1. Click on Management > Customers.
   
@@ -104,7 +104,7 @@ You can authenticate either using IP to IP or User/Password. Below are the steps
 
 ## Carrier Setup
 
-Carriers are your VoIP route providers, below are the instructions to setup carrier. for detailed instruction on carrier setup click (here)
+Carriers are your VoIP route providers, below are the instructions to setup carrier. for detailed instruction on carrier setup click on [Carrier Setup]
 
 1. Click on Management> Carrier
  
@@ -130,7 +130,7 @@ Carriers are your VoIP route providers, below are the instructions to setup carr
 
 ## Provider Card
 
-Below are the instructions to setup the provider rate card manually. Basically there are two ways to setup a provider rate card, upload and manually, we will go through the manual setup instructions here, for detailed instructions click (here)
+Below are the instructions to setup the provider rate card manually. Basically there are two ways to setup a provider rate card, upload and manually, we will go through the manual setup instructions here, for detailed instructions click on [Provider Card]
  
 1. Click on Management> Rate Card
   
@@ -201,7 +201,7 @@ Below are the instructions to setup the provider rate card manually. Basically t
 
  ![alt text][ingress-3]
 
-For details information about ingress routing click [here]
+For details information about ingress routing click on [Ingress Routing]
 
 
 ## Email Verification 
@@ -243,9 +243,13 @@ Steps to Verify Mobile Number
 
 
 
+[Carrier Setup]: <https://docs.connexcs.com/en/latest/getting-started/#carrier-setup>
 
+[Customer Setup]: <https://docs.connexcs.com/en/latest/getting-started/#customer-setup>
 
-[here]: <https://docs.connexcs.com/en/latest/ingress-routing/>
+[Provider Card]: <https://docs.connexcs.com/en/latest/provider-ratecard/>
+
+[Ingress Routing]: <https://docs.connexcs.com/en/latest/ingress-routing/>
 
 [customer-dashboard-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-dashboard-new.png "customer-dashboard-new"
 [add-customer-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/add-customer-new.png "add-customer-new"
