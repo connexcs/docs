@@ -13,6 +13,7 @@
     * [Authentication](#authentication_1)
   * [Email Verification](#email-verification)
   * [Mobile Verification](#mobile-verification)
+  * [Deploy Server](#deploy-server)
    
 
 
@@ -240,6 +241,17 @@ Steps to Verify Mobile Number
 ![alt text][verify-mobile-3]
 
 ![alt text][verify-mobile-2]
+
+
+## Deploy Server
+
+Deploying server with connexcs is real quick, once the checklist is complete you will be able to deploy the server.
+
+1. Click on Setup> My Servers
+2. Choose Server Location
+3. Enter the Server Name
+4. Check the confirmation box and click on Confirm button
+
 
 
 
