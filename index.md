@@ -6,4 +6,4 @@ If you are new to ConnexCS we recommend taking a look at the [**Getting Started 
 
 
 
-[Getting Started Guides]:<https://docs.connexcs.com/en/latest/getting-started/>
+[Getting Started Guides]: <https://docs.connexcs.com/en/latest/getting-started/>
