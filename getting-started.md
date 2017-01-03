@@ -248,6 +248,9 @@ Steps to Verify Mobile Number
 Deploying server with connexcs is real quick, once the checklist is complete you will be able to deploy the server.
 
 1. Click on Setup> My Servers
+
+ ![alt text][server]
+
 2. Choose Server Location
 3. Enter the Server Name
 4. Check the confirmation box and click on Confirm button
@@ -325,4 +328,7 @@ Deploying server with connexcs is real quick, once the checklist is complete you
 
 [carrier-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/carrier-1.png "carrier-1"
 [carrier-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/carrier-2.png "carrier-2"
+
+
+[server]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/server.png "server"
 
