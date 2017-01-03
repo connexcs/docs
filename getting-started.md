@@ -243,9 +243,9 @@ Steps to Verify Mobile Number
 
 
 
-[Carrier Setup]: <https://docs.connexcs.com/en/latest/getting-started/#carrier-setup>
+[Carrier Setup]: <https://docs.connexcs.com/en/latest/carrier/>
 
-[Customer Setup]: <https://docs.connexcs.com/en/latest/getting-started/#customer-setup>
+[Customer Setup]: <https://docs.connexcs.com/en/latest/customer/>
 
 [Provider Card]: <https://docs.connexcs.com/en/latest/provider-ratecard/>
 
