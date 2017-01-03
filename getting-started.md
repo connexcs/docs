@@ -255,8 +255,7 @@ Deploying server with connexcs is real quick, once the checklist is complete you
 3. Choose Server Location
 4. Enter the Server Name
 5. Check the confirmation box and click on Confirm button
-
-
+6. The server IP address will be emailed to your registered email address, the ip address can also be found from the server list section.
 
 
 [Carrier Setup]: <https://docs.connexcs.com/en/latest/carrier/>
