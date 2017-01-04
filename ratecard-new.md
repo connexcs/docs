@@ -40,6 +40,8 @@
   ![alt text][map8]
 
   ![alt text][map10]
+  
+13. After the card is sucessfully imported an other notification will be displayed.
 
 ## NPA-NXX Customer Rate Card Upload
 
@@ -59,7 +61,7 @@
 
 6. Click Advanced
 7. Change the Presentation to Inter/Intra/Indet under Force Presentation
-  If you wish to enable LRN on the provider card you can do so from the Dialling option
+  If you wish to enable LRN on the customer card you can do so from the Dialling option
 8. Click Save
 
   ![alt text][customer-card-2]
@@ -100,7 +102,7 @@
 5. Select the desired currency
 6. Click Advanced
 7. Change the Presentation to Inter/Intra/Indet under Force Presentation
-  If you wish to enable LRN on the provider card you can do so from the Dialling option
+  If you wish to enable LRN on the customer card you can do so from the Dialling option
 8. Click Save
 
   ![alt text][customer-card-2] 
@@ -116,6 +118,8 @@
 11. Click Build From Carrier Cards button & confirm the build.
 
   ![alt text][customer-card-6] 
+  
+12. You will be notified when the compile is complete.  
 
 ## NPA-NXX Customer Rate Card Upload (External)
 
@@ -135,21 +139,24 @@
 
 6. Click Advanced
 7. Change the Presentation to Inter/Intra/Indet under Force Presentation
-  If you wish to enable LRN on the provider card you can do so from the Dialling option
-8. Click Save
+  If you wish to enable LRN on the customer card you can do so from the Dialling option
+
+8. Select the provider cards under Dynamic routing, you can select more than one provider. 
+  
+9. Click Save
 
   ![alt text][customer-card-2]
 
-9. Click Upload> Upload> browse and select the rate card file
+10. Click Upload> Upload> browse and select the rate card file
 
   ![alt text][customer-card-3]
   ![alt text][provider-card-4]
   
-10. Click on the file name that you just uploaded from the list.
+11. Click on the file name that you just uploaded from the list.
 
   ![alt text][provider-card-7]
 
-11. Map the rate card fields against the system fields.
+12. Map the rate card fields against the system fields.
 
  ![alt text][map-giff]
 
@@ -158,6 +165,8 @@
   ![alt text][map11]
 
   ![alt text][map12]
+  
+13. You will be notified when the import is complete, Please note Compiling/merging is not required when the rate card is built externally. 
 
 ## A to Z Rate Card Upload
 
