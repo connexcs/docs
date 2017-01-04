@@ -321,7 +321,7 @@ Deploying server with connexcs is real quick, once the checklist is complete you
 
 [verify-mobile-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/verify-mobile-1.png "verify-mobile-1"
 [verify-mobile-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/verify-mobile-3.png "verify-mobile-3"
-[verify-mobile-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/verify-mobile-2.png "verify-mobile-2"
+[verify-mobile-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/verify-mobile-2.png "verify-mobile-2"
 
 
 [verify-email-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/verify-email-1.png "verify-mobile-1"
