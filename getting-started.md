@@ -217,9 +217,9 @@ Steps to Verify Email Address:
 4. Enter the Verification code sent to your email address and click Verify.
 
 
-![alt text][verify-email-1]
+ ![alt text][verify-email-1]
 
-![alt text][verify-email-2]
+ ![alt text][verify-email-2]
 
 
 ## Mobile Verification 
@@ -236,11 +236,11 @@ Steps to Verify Mobile Number
 6. Enter the Verification code sent to your mobile and click Verify.
 
 
-![alt text][verify-mobile-1]
+ ![alt text][verify-mobile-1]
 
-![alt text][verify-mobile-3]
+ ![alt text][verify-mobile-3]
 
-![alt text][verify-mobile-2]
+ ![alt text][verify-mobile-2]
 
 
 ## Deploy Server
@@ -250,7 +250,7 @@ Deploying server with connexcs is real quick, once the checklist is complete you
 1. Click on Setup> My Servers
 2. Click on Add Server
  
- ![alt text][server]
+  ![alt text][server]
 
 3. Choose Server Location
 4. Enter the Server Name
