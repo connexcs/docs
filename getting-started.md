@@ -78,7 +78,7 @@ Below are the instructions for basic customer setup, for detailed instruction on
 
 ### User / Password Authentication
 
-You can authenticate either using IP to IP or User/Password. Below are the steps to add an SIP extension.
+You can authenticate either using IP to IP or User/Password. Below are the steps to add a SIP extension.
 
 1. Click on Authentication.
 2. Click '+' under User / Password Authentication.
@@ -105,7 +105,7 @@ You can authenticate either using IP to IP or User/Password. Below are the steps
 
 ## Carrier Setup
 
-Carriers are your VoIP route providers, below are the instructions to setup carrier. for detailed instruction on carrier setup click on [Carrier Setup]
+Carriers are your VoIP route providers, below are the basic instructions to setup a carrier. For detailed instructions on carrier setup click on [Carrier Setup]
 
 1. Click on Management> Carrier
  
@@ -131,13 +131,13 @@ Carriers are your VoIP route providers, below are the instructions to setup carr
 
 ## Provider Card
 
-Below are the instructions to setup the provider rate card manually. Basically there are two ways to setup a provider rate card, upload and manually, we will go through the manual setup instructions here, for detailed instructions click on [Provider Card]
+Below are the instructions to setup the provider rate card manually. There are two ways to setup a provider rate card, upload and manually, we will go through the manual setup instructions here, for detailed instructions click on [Provider Card]
  
 1. Click on Management> Rate Card
   
   ![alt text][provider-card-dashbboard] 
   
-2. Click on Add New under Provider Rate Cards
+2. Click on Add Provider Card under Provider Rate Cards
 
   ![alt text][provider-ratecard]
 
@@ -156,7 +156,7 @@ Below are the instructions to setup the provider rate card manually. Basically t
 
  ![alt text][add-new-row]
 
-9. Complete the Spreadsheet information, Example Prefix: 441 Name: UK Landline, Cost: 0.006, Billing: 1/1. You can add as many rows as you wish.
+9. Complete the Spreadsheet information, Example: Prefix: 441, Name: UK Landline, Cost: 0.006, Billing: 1/1. You can add as many rows as you wish.
 10. Click on Publish button to publish the rate card.
 
  ![alt text][upload]
@@ -168,7 +168,7 @@ Below are the instructions to setup the provider rate card manually. Basically t
 
    ![alt text][provider-card-dashbboard] 
 
-2. Click on Add New under Customer Rate Cards
+2. Click on Add Customer Card under Customer Rate Cards
 
  ![alt text][add-new-customer] 
 
@@ -202,7 +202,7 @@ Below are the instructions to setup the provider rate card manually. Basically t
 
  ![alt text][ingress-3]
 
-For details information about ingress routing click on [Ingress Routing]
+For detailed information about ingress routing click on [Ingress Routing]
 
 
 ## Email Verification 
@@ -246,7 +246,7 @@ Steps to Verify Mobile Number
 
 ## Deploy Server
 
-Deploying server with connexcs is real quick, once the checklist is complete you will be able to deploy the server.
+Deploying a server with Connexcs is very quick, once the checklist is complete you will be able to deploy the server.
 
 1. Click on Setup> My Servers
 2. Click on Add Server
