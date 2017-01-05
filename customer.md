@@ -29,7 +29,7 @@
 In Connex, you can create your own **Customer** and assign **credit, status, channel, last call, ASR, ACD, PDD and CPS** to them.
 Managing customers is quite easy with **Connex.** Follow the procedures given in this tutorial, to learn how to efficiently manage customers.
 
-On the Dashboard, click on the tab, highlighted in centre of page, to go to the **Customer** or you can also click on  **_Management_** from the left pane and select **"Customer".**
+On the Dashboard, click on the tab, highlighted in the centre of the page, to go to the **Customer** or you can also click on  **_Management_** from the left pane and select **"Customer".**
 
 ![alt text][customer-dashboard]
 
@@ -47,33 +47,33 @@ Following figure shows the dialog box for adding a **Customer:**
 
 ![alt text][add-Customer]
 
-Brief description of the fields present in above dialog box is as follows:
+Brief description, of the fields present in above dialog box, is as follows:
 
-**Customer Name:** Users will add the name of the customer.
+**Customer Name:** Add the name of the customer.
 
-**Paypal Email:** Users will add Paypal Email of the customer in the text field.
+**Paypal Email:** Enter the Paypal Email of the customer in the text field.
 
-**Website:** Users will add customer's website.
+**Website:** Add the customer's website address.
 
 **Status:** Users can choose the "Status" of the customer as:
 
-1. Active : Enables the account, this will let the customer calls to pass through
+1. Active : Enables the account, this will let the customer's calls pass through
 2. Inactive: Disables the account, all calls will be blocked
-3. Pending Approval: When a customer signups it will be listed under pending approval, setting pending approval won't let the calls to    pass through.
+3. Pending Approval: When a customer signs up it will be listed under pending approval, setting pending approval won't let the calls        pass through.
 
 **Debit Limit:**  "Debit Limit" will be added by the user.
 
-**Tax:**  "Tax" in percentage will also be added by the user.
+**Tax:**  "Tax" as a percentage will also be added by the user.
 
-**Currency:** "Currency" will also be selected from the dropdown menu.
+**Currency:** Select the currency from the dropdown menu.
 
 **Portal Access:**  Users will select the "Portal Access" from the options either Yes or No.
 
-**Address:**  "Address" of the customers will be filled out by the user. 
+**Address:** Complete the customer's address.
 
 ## Delete Customers
 
-Users can delete the **Customers** from the list, by following the steps given below. 
+Users can delete **Customers** from the list, by following the steps given below. 
 
 1. Select a **Customer** from the list.
 2.	Click on the **Delete** button.
@@ -90,9 +90,9 @@ Users can also check/filter the status of the **Customers**.
 
 ## Searching Customers
 
-Users can search anything about a **Customers** by writing the query in the **Search** text field.
+Users can search anything about a **Customer** by writing the query in the **Search** text field.
 
-## Edit Customers
+## Editing Customers
 
 In order to edit a **Customer**, select **Customer** from the list and a new page will open up. Follow the procedure given below to edit a specific customer:
 
