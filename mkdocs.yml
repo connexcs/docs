@@ -17,7 +17,6 @@ pages:
     - Ingress Routing: ingress-routing.md
     - My Account: my-account.md
     - Paypal: customer-payments.md
-    - Paypal Integration: paypal.md
     - Routing Strategy: routing-strategy.md
     
 - CARRIER: 
