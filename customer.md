@@ -22,6 +22,7 @@
       * [Call Detail Records](#call-detail-record-cdr)
       * [DID](#did)
       * [Packages](#packages)
+      * [Contacts](#contacts)
 
 
 # Customer Management
@@ -279,6 +280,25 @@ After adding a new package, users can also take an action by clicking on the Act
 ![alt text][customer-package1]
 
 
+## Contacts
+
+1. Click on Management> Customers
+2. Click on the customer name
+
+  ![alt text][customer]
+
+  ![alt text][contacts]
+
+3. Enter the contact name
+4. Enter the Email address, this email address will be used for login
+5. Check the Auto generate password box if you would like the password to be generated online and the generated password will be sent via email. Unchecking the box will let you manually set the password
+6. You may enter any information on public notes, this notes will be displayed on the customer portal when logged in. The private notes is limited to display only on the control panel, this notes will not be displayed on the customer portal.
+7. Click Save
+
+ ![alt text][contacts-2]
+
+
+
 [customer-dashboard]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/customer-dashboard-new.png "Customer-Dashboard"
 [add-customer-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/add-Customer-new.png "Add-Customer"
 [add-customer]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/add-customer.png "Add-Customer"
@@ -302,4 +322,6 @@ After adding a new package, users can also take an action by clicking on the Act
 [customer-package]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/customer-package.png "Customer-Package"
 [customer-package1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/customer-package1.png "Customer-Package1"
 
-
+[customer]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer.png "customer"
+[contacts]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/contacts.png "contacts"
+[contacts-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/contacts-2.png "contacts-2"
