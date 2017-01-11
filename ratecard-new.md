@@ -1,3 +1,15 @@
+# Table of Contents
+
+* [Table of Contents](#table-of-contents)
+* [Rate Cards Management](#rate-cards-management)
+  * [NPA-NXX Provider Rate Card Upload](#npa-nxx-provider-rate-card-upload)
+  * [NPA-NXX Customer Rate Card Upload](#npa-nxx-customer-rate-card-upload)
+  * [NPA-NXX Customer Rate Card Manual (Generate Profit Internally)](#npa-nxx-customer-rate-card-manual-generate-profit-internally)
+  * [NPA-NXX Customer Rate Card Upload (External)](#npa-nxx-customer-rate-card-upload-external)
+  * [A to Z Rate Card Upload](#a-to-z-rate-card-upload)
+
+
+
 # NPA-NXX Provider Rate Card Upload
 
 1. Click on Management> Rate Card
