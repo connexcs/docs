@@ -1,7 +1,6 @@
 # Table of Contents
 
 * [Table of Contents](#table-of-contents)
-* [Rate Cards Management](#rate-cards-management)
   * [NPA-NXX Provider Rate Card Upload](#npa-nxx-provider-rate-card-upload)
   * [NPA-NXX Customer Rate Card Upload](#npa-nxx-customer-rate-card-upload)
   * [NPA-NXX Customer Rate Card Manual (Generate Profit Internally)](#npa-nxx-customer-rate-card-manual-generate-profit-internally)
