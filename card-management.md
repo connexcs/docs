@@ -8,7 +8,6 @@
   * [A to Z Rate Card Upload](#a-to-z-rate-card-upload)
 
 
-
 # NPA-NXX Provider Rate Card Upload
 
 1. Click on Management> Rate Card
