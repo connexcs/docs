@@ -54,8 +54,8 @@ pages:
     - Packages: packages.md
     - User Space Database: user-space-db.md
    
-- Report
-    - Breakout Report: report.md
+- Report:
+    - Breakout Reports: report.md
    
 - Architecture:
     - API: api.md
