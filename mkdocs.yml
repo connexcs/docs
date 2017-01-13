@@ -44,7 +44,6 @@ pages:
     - How to perform circuit test: circuit-test.md
     - My Servers: my-servers.md
     - Rate Card Profit: rate-card-profit.md
-    - Report: report.md
     - Routing: routing.md
     - Routing USA: routing-usa.md
     - Routing Engine: routing-engine.md
@@ -54,6 +53,9 @@ pages:
     - Scheduled Breakout Reports: scheduled-breakout-reports.md
     - Packages: packages.md
     - User Space Database: user-space-db.md
+   
+- Report
+    - Breakout Report: report.md
    
 - Architecture:
     - API: api.md
