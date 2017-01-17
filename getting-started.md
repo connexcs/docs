@@ -250,9 +250,7 @@ Deploying a server with Connexcs is very quick, once the checklist is complete y
 
 1. Click on Setup> My Servers
 2. Click on Add Server
- 
- ![alt text][server]
-
+  ![alt text][server]
 3. Choose Server Location
 4. Enter the Server Name
 5. Check the confirmation box and click on Confirm button
