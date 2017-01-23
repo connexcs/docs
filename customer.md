@@ -28,7 +28,7 @@
 # Customer Management
 
 In Connex, you can create your own **Customer** and assign **credit, status, channel, last call, ASR, ACD, PDD and CPS** to them.
-Managing customers is quite easy with **Connex.** Follow the procedures given in this tutorial, to learn how to efficiently manage customers.
+Managing customers is quite easy with **Connex.** Follow the procedures given in this tutorial, to learn how to efficiently manage your customers.
 
 On the Dashboard, click on the tab, highlighted in the centre of the page, to go to the **Customer** or you can also click on  **_Management_** from the left pane and select **"Customer".**
 
@@ -106,9 +106,9 @@ Following figure demonstrates the **Edit Customer** button:
 
 ### Main 
 
-In **Main** tab, users can view all his contacts. Users can also check the summary in three different forms i.e. Live/Daily/Monthly as shown in an image above.
+In **Main** tab, users can view all their contacts. Users can also check the summary in three different forms i.e. Live/Daily/Monthly as shown in an image above.
 
-Users can also create a new contact on the Main .
+Users can also create a new contact on the Main tab.
 
 1.	Click on the *‘plus sign’* button on the contacts pane.
 2.	Fill out the details.
@@ -116,7 +116,7 @@ Users can also create a new contact on the Main .
 
 ![alt text][main-tab]
 
-### Stats
+### Statistics
 
 In **Stats** tab, create and assign channels to customers. Click on the **Channels** to make them functional. Users can have record of **Calls Per Second (CPS)** under the **Stats** tab and can also check the details of the CPS by the day/month of their choice as highlighted with a yellow rectangle in the image below:
 
@@ -126,7 +126,7 @@ Moreover, in the same tab, **Stats**, users can check the details of **ACD, ACR,
 
 ### Routing
 
-Now, coming towards to the next tab which is **Routing**, there are basically two types routing as shown in an image below:
+Now, moving onwards to the next tab which is **Routing**. There are basically two types of routing as shown in an image below:
 
 1.	Ingress Routing
 2.	CLI
@@ -137,15 +137,15 @@ Now, coming towards to the next tab which is **Routing**, there are basically tw
 
 1.	Click on the **Add New** button.
 2.	Pop up will show up. Fill out the details of the dialogue box. 
-3.	Press **Save** once the details are filled up, correctly.
+3.	Press **Save** once the details are filled in, correctly.
 
 The details of the dialogue box can be shown in the image below:
 
 ![alt text][ingress-routing-tab]
 
 1.	Users will add the name of the Rate Card and write the Tech Prefix and Capped Rate in digits only.
-2.	Users will select the Sandbox, Profit Assurance and Block Connect Costfrom the dropdown menu options.
-3.	Users will add the Channel and Maximum Duration.
+2.	Users will select ScriptForge, Profit Assurance and Block Connect Cost from the dropdown menu options.
+3.	Users will add the Channels and Maximum Duration.
 4.	Users will write the Dial String in the given text field.
 5.	Users can select the Lock Parent Card and Exclude Parent Cards from the dropdown menu option.
 6.	Moreover, other than Route Ingress, users will fill out the details of Proxy Info where users will add the RTP Media Proxy and RTP Proxy Mode.
@@ -154,10 +154,10 @@ The details of the dialogue box can be shown in the image below:
 ### Adding CLI
 
 1.	Click on the **Add New** button.
-2.	Popup will show up. Fill out the details of the dialogue box.
+2.	Popup will appear. Fill out the details in the dialogue box.
 3.	Press **Save** once the details are correctly entered.
 
-Details of the dialogue box can be in an image below:
+Details of the dialogue box can be seen in an image below:
 
 ![alt text][edit-cli]
 
@@ -166,7 +166,7 @@ Details of the dialogue box can be in an image below:
 
 ### Authentication
 
-In the **Authentication** tab, there are two types of authentication as shown in the image below:
+Under the **Authentication** tab, there are two types of authentication as shown in the image below:
 
 ![alt text][auth]
 
@@ -176,12 +176,12 @@ In the **Authentication** tab, there are two types of authentication as shown in
 #### IP Authentication
 
 1.	Click on the **Add new** button.
-2.	Popup will show up. Fill out the details of the dialogue box.
+2.	Popup will appear. Fill out the details of the dialogue box.
 3.	Press **Save** once the details are correctly entered.
 
 ![alt text][edit-switch-basic]
 
-In **Basic** dialogue box, Users will add the IP/Hostname, Channels (In digits only) and Flow Speed (In digits only) as shown in an image above.
+In **Basic** dialogue box, Users will add the IP/Hostname, Channels (in digits only) and Flow Speed (in digits only) as shown in an image above.
 In the image below, there is description of the Advanced dialogue box.
 
 ![alt text][edit-switch-advance]
@@ -199,7 +199,7 @@ In the image below, there is description of the Advanced dialogue box.
 Users can set the **User/Password authentication**.
 
 1.	Click on the **Add new** button.
-2.	Popup will show up. Fill out the details of the dialogue box.
+2.	Popup will appear. Fill out the details of the dialogue box.
 3.	Press **Save** once the details are correctly entered.
 
 ![alt text][user-pwd-auth]
@@ -210,8 +210,8 @@ Users can simulate **latest call**, look up for calls and refresh the list of si
 For simulating the call, 
 
 1.	Click on the **Simulate** button.
-2.	Popup will show up.
-3.	Fill out the details of the dialogue box like **Dialed Number, CLI/ANI, Switch IP** and all other as mentioned in an image below:
+2.	Popup will appear.
+3.	Fill out the details of the dialogue box like **Dialed Number, CLI/ANI, Switch IP** and all other as mentioned in the image below:
 4.	Finally press **Simulate** button.
 
 ![alt text][simulate-call]
@@ -225,9 +225,8 @@ For simulating the call,
 In this tab, users can make a list of all the **payments** that have been done so far. Users can add new payments by:
 
 1.	Click on the **Add New** button.
-2.	Fill out the dialogue box as shown in an image below. Users will add the Description of the payment, the total amount in digits and finally selects the status of it whether it’s Completed, Pending or Cancelled.
+2.	Fill out the dialogue box as shown in an image below. Users will add the Description of the payment, the total amount in digits and finally select the status of it whether it’s Completed, Pending or Cancelled.
 3.	Finally press the **Save** button.
-4.	Users can also take an action after every button to confirm its status. Just click on the Action button which is right next to the Status in the main page of the **Payments** tab.
 
 ![alt text][payments-tab]
 
@@ -257,10 +256,10 @@ Users can check the details of the calls by following a simple procedure:
 
 ### DID
 
-Users can assign **DID** in an account by following the simple procedure:
+Users can assign **DID** in an account by following these steps:
 
 1.	Click on the **‘Plus sign’** button which is at the extreme right of the page.
-2.	Popup will show up. Users will add DID name, set the Destination; select the Provider name, Provider Card, Customer name and Customer Card from the dropdown menu options respectively; Cost in digits and Retail as shown in an image below:
+2.	Popup will appear. Users will add DID name, set the Destination; select the Provider name, Provider Card, Customer name and Customer Card from the dropdown menu options respectively; Cost in digits and Retail as shown in the image below:
 3.	And Press **Save** button.
 
 ![alt text][edit-did]
@@ -275,7 +274,7 @@ Users can add the customer package and its quantity for their ease in just one c
 
 ![alt text][customer-package]
 
-After adding a new package, users can also take an action by clicking on the Action andset the further details as daily package, weekly package, etc. 
+After adding a new package, users can also take an action by clicking on the Action and set the further details as daily package, weekly package, etc. 
 
 ![alt text][customer-package1]
 
