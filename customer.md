@@ -38,7 +38,7 @@ On the Dashboard, click on the tab, highlighted in the centre of the page, to go
 
 ![alt text][add-Customer-new]
 
-Users can add new **Customers** by following the simple procedure.
+You can add new **Customers** by following the simple procedure.
 
 1. Click on **Add Customer** button.
 2. Enter the details of the Customer.
