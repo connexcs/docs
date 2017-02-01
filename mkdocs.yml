@@ -41,7 +41,7 @@ pages:
     - Invoice: invoice.md
     - Limiting: limiting-cps.md
     - Logging: logging.md
-    - How to perform circuit test: circuit-test.md
+    - Circuit Test: circuit-test.md
     - My Servers: my-servers.md
     - Rate Card Profit: rate-card-profit.md
     - Routing: routing.md
