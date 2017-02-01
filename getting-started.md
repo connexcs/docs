@@ -48,7 +48,7 @@ This guide will assume:
 
 ## Customer Setup
 
-Below are the instructions for basic customer setup, for detailed instruction on customer setup click on [Customer Setup] 
+Below are the instructions for basic customer setup, for detailed instruction on customer setup click on [Customer Management] 
 
 1. Click on Management > Customers.
   
@@ -105,7 +105,7 @@ You can authenticate either using IP to IP or User/Password. Below are the steps
 
 ## Carrier Setup
 
-Carriers are your VoIP route providers, below are the basic instructions to setup a carrier. For detailed instructions on carrier setup click on [Carrier Setup]
+Carriers are your VoIP route providers, below are the basic instructions to setup a carrier. For detailed instructions on carrier setup click on [Carrier Management]
 
 1. Click on Management> Carrier
  
@@ -257,9 +257,9 @@ Deploying a server with Connexcs is very quick, once the checklist is complete y
 6. The server IP address will be emailed to your registered email address, the ip address can also be found from the server list section.
 
 
-[Carrier Setup]: <https://docs.connexcs.com/en/latest/carrier/>
+[Carrier Management]: <https://docs.connexcs.com/en/latest/carrier/>
 
-[Customer Setup]: <https://docs.connexcs.com/en/latest/customer/>
+[Customer Management]: <https://docs.connexcs.com/en/latest/customer/>
 
 [Provider Card]: <https://docs.connexcs.com/en/latest/provider-ratecard/>
 
