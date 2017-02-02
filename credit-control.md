@@ -24,8 +24,8 @@ The debit limit is a value, in denominations of the customer’s currency, which
 
 ### Automatic Cut Off (Is it Real time?)
 
-1. Is the automatic cut off real-time?
-2. Partly
+Q. Is the automatic cut off real-time?
+A. Partly
 
 The credit control can be considered real-time apart from the following considerations:
 
