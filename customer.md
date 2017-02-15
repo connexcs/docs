@@ -68,7 +68,7 @@ Brief description, of the fields present in above dialog box, is as follows:
 
 **Currency:** Select the currency from the dropdown menu.
 
-**Note:** You wont be able to change the account currency once the account is created.
+**_Note:_** You wont be able to change the account currency once the account is created.
 
 **Portal Access:**  Users will select the "Portal Access" from the options either Yes or No.
 
