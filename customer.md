@@ -81,6 +81,12 @@ Users can delete **Customers** from the list, by following the steps given below
 1. Select a **Customer** from the list.
 2.	Click on the **Delete** button.
 
+![alt text][del-customer]
+
+![alt text][del-confirm]
+
+![alt text][del-confirm-1]
+
 ## Checking the status
 
 ![alt text][customer-status]
@@ -325,4 +331,10 @@ After adding a new package, users can also take an action by clicking on the Act
 
 [customer]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer.png "customer"
 [contacts]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/contacts.png "contacts"
-[contacts-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/contacts-2.png "contacts-2"
+[contacts-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/contacts-2.png "contacts-2"+
+
+
+
+[del-customer]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/del-customer.png "del-customer"
+[del-confirm]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/del-confirm.png "del-confirm"
+[del-confirm-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/del-confirm-1.png "del-confirm-1"
