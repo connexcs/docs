@@ -23,15 +23,15 @@
 
 Ingress routing allows incoming attempts to be sent to the correct rate card which in turn egress through the specified provider.
 
-Ingress routing allows for lots of rate cards to be used with or without a prefix. This is checked according to the longest prefix first through to the shortest for a match. If no prefix is matched then it will begin matching the rules of the rate cards. Rate cards with mutually exclusive destinations will route without problems, but rate cards which have prefixes with collisions will have no guarantee which the calls will be sent to.
+Ingress routing allows for lots of rate cards to be used with or without a prefix. This is checked according to the longest prefix first through to the shortest for a match. If no prefix is matched then it will begin matching the rules of the rate cards and rate cards with mutually exclusive destinations will route without problems.  If there are multiple rate cards with the same prefixes in ingress routing, you must specify a dial plan of a tech prefix to correctly identify the correct card to be used.
 
 ## Tariff
 
-Tariff lets you select the rate card to be used on the customer account
+Tariff lets you select the rate card to be used on the customer account.
 
 ## Tech Prefix
 
-It is possible for multiple customers to share the same IP address and to be distinguished by Tech Prefix. Multiple rate cards can be separated with the help of a tech prefix
+It is possible for multiple customers to share the same IP address and to be distinguished by Tech Prefix. Multiple rate cards can be separated with the help of a tech prefix.
 
 ## Channels
 
@@ -39,7 +39,7 @@ This will impose a limit on how many channels are allowed through this ingress r
 
 ## Dial string
 
-Dial string will let only the entered prefixes through, listed as one per line. Note: Both prefix and regular expressions are allowed, for example, if you only wanted to allow UK Landline you could use
+A dial string will only let the entered prefixes pass through, listed as one per line. Note: Both prefix and regular expressions are allowed, for example, if you only wanted to allow UK Landline you could use:
 
 * Prefix
 
@@ -60,7 +60,7 @@ Dial string will let only the entered prefixes through, listed as one per line. 
 ```
 ## Missing BYE Protection
 
-A VoIP call is stateful, however its protocol is stateless. This means that both sides of the conversation have to be told when to finish the call. They do this with a BYE message, if the BYE message goes missing, then the call will continue forever, we have the following preventions put in place to stop this happening.
+A VoIP call is stateful, however its protocol is stateless. This means that both sides of the conversation have to be told when to finish the call. They do this with a BYE message, if the BYE message goes missing, then the call will continue forever, we have the following preventions in place to stop this happening.
 
 ## Maximum Duration
 
@@ -76,7 +76,7 @@ This sends a SIP packet to the remote end of the conversation roughly every 30 s
 
 Another way to check for an active call is to detect if there is audio passing. If there is no audio passing for a pre-set interval, our RTP array will notify the switch and instruct it to terminate the call.
 
-**Note:** this will not work if RTP Mode is set direct
+**Note:** this will not work if RTP Mode is set to: direct.
 
 ## Profit Assurance
 
