@@ -107,11 +107,10 @@ api.send.sip(params);
 ### Random CLI
 
 ```
-function main(){
-  var data = vars();
+function main(vars){
   var cliList = ["11111","22222","33333","44444"];
-  data.routing.cli = cliList[Math.floor(Math.random() * cliList.length)];
-  return exit(data);
+  vars.routing.cli = cliList[Math.floor(Math.random() * cliList.length)];
+  return vars;
 }
 ```
  
@@ -120,13 +119,13 @@ function main(){
 You can upload your own number lists for Do-not-Call, or white lists in the User Space Database inside the main system. You can then query it from Script Forge.
 
 ```
-function main(){
-	var data = vars();
-	if (!data.routing) data.routing = {};
-	api.lookup.userspaceLookup('DNC', data.routing.dest_number).then(function(rData){
-		err([603, "Denied (DNC)"]);
-	}).catch(function(){
-		exit(data.routing);
+function main(vars){
+	if (!vars.routing) vars.routing = {};
+	return api.lookup.userspaceLookup('DNC', vars.routing.dest_number).then(function(rData){
+		return Promise.reject([603, "Denied (DNC)"]);
+	}).catch(function(err){
+		if (err[0] == 603) return Promise.reject([603, "Denied (DNC)"]);
+		return Promise.resolve(vars.routing);
 	});
 }
 ```
@@ -136,15 +135,14 @@ function main(){
 ASRPlus is a ConnexCS feature for reducing unecessary attempts and providing faster fails on calls. Its most suitable for agress call-center traffic profiles.
 
 ```
-function main(){
-	var data = vars();
-	if (!data.routing) data.routing = {};
-	api.lookup.asrplus(data.routing.dest_number).then(function(asrplusData){
+function main(vars){
+	if (!vars.routing) vars.routing = {};
+	return api.lookup.asrplus(vars.routing.dest_number).then(function(asrplusData){
 		if (asrplusData.status && asrplusData.status =='Invalid'){
-			err([604, "Number not Found (ASRPlus)"]);
+			return Promise.reject([604, "Number not Found (ASRPlus)"]);
 		} else {
-		  	data.routing.asrPlus = asrplusData;
-			exit(data.routing);
+		  	vars.routing.asrPlus = asrplusData;
+			return Promise.resolve(vars.routing);
 		}
 	});
 }
