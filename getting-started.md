@@ -205,6 +205,35 @@ Below are the instructions to setup the provider rate card manually. There are t
 For detailed information about ingress routing click on [Ingress Routing]
 
 
+## Server Reactivation
+
+1. Click on Setup> My Servers
+2. Click on the server IP
+3. Click on Reactivate to activate your server.
+
+You will only be able to reactivate your server if your account balance is showing a positive amount.
+
+
+## Deploying SSL Certificates 
+
+The SSL certificate can be deployed on your customer portal with a single click.
+
+1. Click on Setup> My Account
+2. Click on Domains
+3. Click on Deploy Certificate
+
+## Load Balancing using DNS (Domain Name System)
+
+When using more than one SIP server, you can load balance the calls without a load balancer server using the DNS method. To configure the DNS please follow the steps below:
+
+1. Click on Setup> My Account
+2. Click  on Domains
+3. Click on + under Server
+4. Enter the domain name under Domain field. Example your company name without spaces.
+5. Select TLD (Top Level Domain) to sip.direct.
+6. Check the records accordingly against the server IP
+7. Click Save.
+
 ## Email Verification 
 
 We verify email addresses to ensure that they are genuine.
