@@ -235,10 +235,10 @@ When using more than one SIP server, you can load balance the calls without a lo
 
 1. Click on Setup> My Account
 2. Click  on Domains
-
-  ![alt text][load-balance]
-
 3. Click on + under Server
+
+   ![alt text][load-balance]
+
 4. Enter the domain name under Domain field. Example your company name without spaces.
 5. Select TLD (Top Level Domain) to sip.direct.
 6. Check the records accordingly against the server IP
