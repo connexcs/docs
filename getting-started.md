@@ -208,8 +208,13 @@ For detailed information about ingress routing click on [Ingress Routing]
 ## Server Reactivation
 
 1. Click on Setup> My Servers
+
+ ![alt text][server-reactivation]
+
 2. Click on the server IP
 3. Click on Reactivate to activate your server.
+
+ ![alt text][server-reactivation-1]
 
 You will only be able to reactivate your server if your account balance is showing a positive amount.
 
@@ -221,6 +226,8 @@ The SSL certificate can be deployed on your customer portal with a single click.
 1. Click on Setup> My Account
 2. Click on Domains
 3. Click on Deploy Certificate
+
+ ![alt text][ssl]
 
 ## Load Balancing using DNS (Domain Name System)
 
@@ -359,4 +366,9 @@ Deploying a server with Connexcs is very quick, once the checklist is complete y
 
 
 [server]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/server.png "server"
+
+[load-balance]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/load-balance.png "load-balance"
+[server-reactivation]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/server-reactivation.png "server-reactivation"
+[server-reactivation-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/server-reactivation-1.png "server-reactivation-1"
+[ssl]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/ssl.png "ssl"
 
