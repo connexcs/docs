@@ -36,7 +36,7 @@ The CLI system uses Regular Expressions to match and replace numbers. Here are a
 | 123456789   |          ^1234 |             |   Allows only numbers starting with 1234 to pass |
 | 123456789   |           789$ |             |      Allows only numbers ending with 789 to pass |
 | 12345678912 | ^[0-9]{11,12}$ |             | Allows only numbers with 11 or 12 digits to pass |
-| +123456789  |   ^\+([0-9]+)$ |          $1 |                                 Remove leading + |
-| 01782123456 |    ^0([1-9]+)$ |        44$1 |             Remove leading 0 and replace with 44 |
+| +123456789  |   ^\+([0-9]+)$ |          \1 |                                 Remove leading + |
+| 01782123456 |    ^0([1-9]+)$ |        44\1 |             Remove leading 0 and replace with 44 |
 
 If you wish to learn or practice writing regular expressions, this is a great site: http://regexr.com/
