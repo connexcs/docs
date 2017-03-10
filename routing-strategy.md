@@ -25,9 +25,15 @@ The **Routing Strategy** allows you to route calls of different providers throug
   
 **5. Reverse LCR** – Most Expensive route will be picked first.
 
-**6. Tier Routing**  -  "Tier" in routing strategy allows 1 selection per tier. Example
+**6. Tier Routing**  -  "Tier" in routing strategy allows 1 selection per tier.
 
-1 [A,B,C] 2 [D,E] 3 [F,G,H]
+Example
+
+1 [A,B,C]
+
+2 [D,E]
+
+3 [F,G,H]
 
 First run may be A,E,G second one may be B,D,F. But never more than 1 from the same Tier would be allowed.
 
@@ -46,16 +52,27 @@ Users can set and manage their Routing Strategy by:
 Click on the **"+"** sign to add a new Routing Strategy.
 
 1. Click on the **Add New** button.  
-2. Fill out the details of the dialog box.
-3. Press **Save** button.
+2. Name the Strategy.
+3. Select the Strategy type
+4. Click + 
+5. Select the card from the drop down list.
+6. Press **Save** button.
 
 Following image shows the method:
 
 ![alt text][edit-routing]
 
+## Setting up Routing Strategy in Customer Account
+
+1. Click on the customer account
+2. Click on Routing
+3. Click on the rate card name under Ingress Routing
+4. Click + under Strategy & select the stratgy that you wish to assign.
+
 ## Deleting the Routing Strategy
 
-Users can delete the **Routing Strategy.**
+If you need to you can delete the **Routing Strategy.**
+
 1. Select the **Routing Strategy.** from the list.
 2. Press **Delete** button which is on extreme right, next to **"+".**
 
