@@ -18,19 +18,49 @@
 
 # Customer Rate Card
 
-Now the users can also make the rate cards. Rate cards can be accessed two ways:
+Customer rate cards let you manage the rates for your customers. There are two ways to build these: 
 
-1. From the dashboard, click on Rate Card icon present, highlighted as orange in the image below. 
+1. Internal: Internal method lets you add a profit to your provider cards or set a flat rate.
+2. External: This is done by uploading the custom rate card & setting up the Dynamic routing
 
-Or
+To use the Internal method please follow the instructions below.
 
-2.	Go to the Management from the left pane and click on Rate Card, highlighted as red in an image below:
+1. Click on Management> Rate Cards> Customer rate card> Add New> Name the card> Select the carrier> Click Save
 
-![alt text][ratecard-dashboard]
+2. Select Profits> Click on Add New Row
 
-After going to the Rate Card, click on the Customer Rate Card option, as shown in the image below:
+3. Enter your required prefix in the prefix field. This will usually be an international country code & not a provider or customer tech    prefix. Adding this symbol ^ on the prefix field will draw all the associated prefixes from the provider card. If you wish to specify    a particular set of prefixes add ^ and prefixes, example: ^441
 
-![alt text][customer-ratecard]
+4. In the cost field add the sell price & in the next column choose ABSOLUTE or RELATIVE.
+   Absolute will set a flat cost, for example your customer will be charged the price you set in the cost field. 
+   Relative costs will be added to the price you entered in cost field. example: provider cost 0.008 Relative cost 0.0006 = 0.0086, this    is the amount that will be billed to your customer.
+   
+5. If you do not wish to use Absolute or Relative, you can instead use a PERCENTAGE markup, Example: You can enter 10 percent in the        Percent field and choose Percent in the Profit Type. Eg: Provider Cost 0.008, 10% markup = 0.0088 Sell cost.
+
+6. Select the billing type, example: 1/1 or 6/6
+
+7. Enter the connection cost if there is one.
+
+8. Select the Rounding method which can be upto 6 decimal places, but is usually 4.
+
+9. Select the status to Profit
+
+10. And Click the Apply To for Cost. If it is a NPA-NXX card you can select Inter/intra/cost
+
+11. Once you complete all these steps now it is time to BUILD the card by clicking on Build from Carrier Card button.
+
+
+To use the External method please follow the instructions below.
+
+1. Click on Management> Rate Cards> Customer rate card> Add New> Name the card> Select the carrier> go to Advanced> Select the providers inside the Dynamic Routing box> Click Save.
+2. Click on the Upload button in centre of the screen.
+3. Click on the blue upload button and browse the file from your device, select the required file and click open, your file will appear on the screen, click on upload again
+4. Once the upload completes click on the file name, Map the rate card fields against the system fields. (Add GIF here)
+5. Click on Import to card button & select the Customer card & click save.
+6. Your rate card file will be imported to your customer rate card & you will be notfied with a popup once the import is complete. the card is now live and ready to use.
+NB. You do not need to BUILD a rate card created in this way.
+
+This can be done in two ways:
  
 In this section, the following actions can be performed.
 
@@ -39,26 +69,6 @@ In this section, the following actions can be performed.
 3.	Uploading a file.
 4.	Deleting the customer rate card.
 
-## Adding Customer Card
-
-Users can add a new customer rate card by following simple steps:
-1.	Click on the Add Customer Card button.
-2.	Pop-up will appear. Fill in the details in the dialogue box.
-3.	Click Save button once the details have been entered.
-
-There are two types of table in the customer rate card. One is of Basic level and the other one is of Advanced level.
-
-### Basic Level
-
-In this level, the following basic information is to be added:
-
-1.	Users will add the Name in the text field.
-2.	Users will select the Rate Card from dropdown menu options.
-3.	Users will select the Rate Compact from the dropdown menu options as minimum, average or maximum.
-4.	Users will select the Currency from dropdown menu. 
-
-![alt text][basic]
- 
 ### Advanced Level
 
 In advanced level, users are required to fill in more details.
@@ -90,57 +100,8 @@ Note: Users can take any help about the Rate Card by clicking on the button with
 
 ## Other functions of the Customer Rate Card section includes:
 
-1.	Customer Rate Card details.
-2.	Searching text field.
-
-### Customer Rate Card details
-
-By clicking on the name of the Customer Rate Card, three options appear. 
-
-•	Main
-•	Profits
-•	Edit
-
-![alt text][card-details]
- 
-In Main tab, there are three further options:
-
-1.	Add Draft (where users can add the draft).
-2.	Upload (where users can upload the Customer Rate Card).
-3.	Build (where users can build or compile the carrier cards).
-
-In Profits tab, users can add a new row by simply clicking on the Add New Row button or they can import it from the parent carrier card by clicking on the Import From Parent Carrier Card button.
-
-In Edit tab, users can edit the details of the card both at basic and advanced levels.
-
-### Profit
-
-In *_Profit_* tab, there are three main functionalities:
-1. Add new row
-2. Building the card
-3. Applying filtered transformation.
-
-![alt text][profittab]
-
-1. *Adding New Rows*
-
-You can add the new row by simply clicking on the *Add New Row* button. The content of the row can be changed, afterwards.
-
-2. *Building the card*
-
-The generation of a Rate card can be completed, based on these rows, by clicking on *“Build FromCarrier Cards”*, which is next to *“Add New Row”* button. A pop-up would appear, confirming the generation of the rate card.
-
-![alt text][popup]
-
-3. Applying Filtered Transformation
-
-You can apply filtered transformation by clicking on *Filtered* button, which is next to *“Build FromCarrier Cards”* button.
-
-4. Editing the Customer Card information
-
-In *_Edit_* tab, users can edit the details of the card both at basic and advanced levels and press *“Save”* to commit changes.
-
-![alt text][edittab]
+1.	Searching text field.
+2. Email Rate Card
 
 ### Searching Text field
 
