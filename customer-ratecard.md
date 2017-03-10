@@ -23,7 +23,7 @@ Customer rate cards let you manage the rates for your customers. There are two w
 1. Internal: Internal method lets you add a profit to your provider cards or set a flat rate.
 2. External: This is done by uploading the custom rate card & setting up the Dynamic routing
 
- # The Internal method 
+## The Internal Method 
 
 Please follow the instructions below.
 
@@ -52,7 +52,7 @@ Please follow the instructions below.
 11. Once you complete all these steps now it is time to BUILD the card by clicking on Build from Carrier Card button.
 
 
-# The External method 
+## The External Method 
 
 Please follow the instructions below.
 
@@ -66,52 +66,15 @@ Please follow the instructions below.
 
 5. Click on Import to card button & select the Customer card & click save.
 
-6. Your rate card file will be imported to your customer rate card & you will be notfied with a popup once the import is complete. the card is now live and ready to use.
+6. Your rate card file will be imported to your customer rate card & you will be notfied with a popup once the import is complete. the      card is now live and ready to use.
 
 NB. You do not need to BUILD a rate card created in this way.
-
-This can be done in two ways:
- 
-In this section, the following actions can be performed.
-
-1.	Adding Customer Card.
-2.	Refreshing the list.
-3.	Uploading a file.
-4.	Deleting the customer rate card.
-
-### Advanced Level
-
-In advanced level, you need to fill in more details.
-
-1.	Users will add the Name that will be public.
-2.	Users can add the notes, both public and private, in the respective fields.
-3.	Users will select the Public Options from the given check-list. 
-4.	Users will select Force Presentation from drop-down menu options as default, single rate or intER/intRA.
-5.	Users will select the dialling type from dropdown menu.
-6.	Users will select the strategy options as LCR, random, round robin or reverse LCR.
-7.	Users will select the Collapse Option.
-8.	User can use the Dynamic Routing when a Custom Rate card is uploaded. You can select the provider rate cards to which you want to send traffic.
-
-![alt text][advance]
-
-## Refreshing the list
-
-The Rate Card list can be refreshed by simply clicking on the Refresh button.
 
 ## Deleting the Customer Rate Card
 
 You can also delete the customer rate card by simply selecting the name from the list and then click the trash icon, which is right next to the Upload File button.
 
-Note: Users get help about the Rate Card by clicking on the button with the “?”. 
-
-## Other functions of the Customer Rate Card section includes:
-
-1.	Searching text field.
-2. Email Rate Card
-
-### Searching Text field
-
-Users can also search any details related to Customer Rate Card, by simply writing in the search text field and the results will appear instantly.
+Note: Clicking on the “?” will show the list of provider cards the are associated with this customer rate card. 
 
 ## Email Rate Card
 
