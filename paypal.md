@@ -29,14 +29,14 @@
  ![alt text][paypal-3]
  
 10.	Go back to ConnexCS Account 
-11.	Click on Setup -> My Account
-12.	API -> Add New> PayPal
+11.	Click on Setup > My Account
+12.	API > Add New> PayPal
 
  ![alt text][paypal-12]
 
  ![alt text][paypal-6]
 
-13.	On the PayPal account Click “Profile”  ->  “API  access   -  update”
+13.	On the PayPal account Click “Profile”  >  “API  access   >  update”
 14.	Select “View API Signature”
  
  ![alt text][paypal-8] 
