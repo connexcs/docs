@@ -76,7 +76,7 @@ You can also delete the customer rate card by simply selecting the name from the
 
 Note: Clicking on the “?” will show the list of provider cards the are associated with this customer rate card. 
 
-## Email Rate Card
+## Email the Rate Card
 
 With this feature you can email the rate card to your customer's email address as an attachment.
 
