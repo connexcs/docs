@@ -23,7 +23,9 @@ Customer rate cards let you manage the rates for your customers. There are two w
 1. Internal: Internal method lets you add a profit to your provider cards or set a flat rate.
 2. External: This is done by uploading the custom rate card & setting up the Dynamic routing
 
-To use the Internal method please follow the instructions below.
+ # The Internal method 
+
+Please follow the instructions below.
 
 1. Click on Management> Rate Cards> Customer rate card> Add New> Name the card> Select the carrier> Click Save
 
@@ -50,14 +52,22 @@ To use the Internal method please follow the instructions below.
 11. Once you complete all these steps now it is time to BUILD the card by clicking on Build from Carrier Card button.
 
 
-To use the External method please follow the instructions below.
+# The External method 
+
+Please follow the instructions below.
 
 1. Click on Management> Rate Cards> Customer rate card> Add New> Name the card> Select the carrier> go to Advanced> Select the providers inside the Dynamic Routing box> Click Save.
+
 2. Click on the Upload button in centre of the screen.
+
 3. Click on the blue upload button and browse the file from your device, select the required file and click open, your file will appear on the screen, click on upload again
+
 4. Once the upload completes click on the file name, Map the rate card fields against the system fields. (Add GIF here)
+
 5. Click on Import to card button & select the Customer card & click save.
+
 6. Your rate card file will be imported to your customer rate card & you will be notfied with a popup once the import is complete. the card is now live and ready to use.
+
 NB. You do not need to BUILD a rate card created in this way.
 
 This can be done in two ways:
@@ -71,7 +81,7 @@ In this section, the following actions can be performed.
 
 ### Advanced Level
 
-In advanced level, users are required to fill in more details.
+In advanced level, you need to fill in more details.
 
 1.	Users will add the Name that will be public.
 2.	Users can add the notes, both public and private, in the respective fields.
@@ -86,17 +96,13 @@ In advanced level, users are required to fill in more details.
 
 ## Refreshing the list
 
-Rate cards list can be refreshed by simply clicking on the Refresh button.
-
-## Uploading a file
-
-Users can upload a file by clicking on the Upload File button and browse the desired file.
+The Rate Card list can be refreshed by simply clicking on the Refresh button.
 
 ## Deleting the Customer Rate Card
 
-Users can also delete the customer rate card by simply selecting the name from the list and then click the trash icon, which is right next to the Upload File button.
+You can also delete the customer rate card by simply selecting the name from the list and then click the trash icon, which is right next to the Upload File button.
 
-Note: Users can take any help about the Rate Card by clicking on the button with the sign of “?”. 
+Note: Users get help about the Rate Card by clicking on the button with the “?”. 
 
 ## Other functions of the Customer Rate Card section includes:
 
@@ -126,7 +132,7 @@ With this feature you can email the rate card to your customer's email address a
 
 ## Revision Tab 
 
-The revision tab lets us see the previous changes that's been done on a rate card, example the previous Rule count, Presentation, Currency, date created, Billing.
+The revision tab lets us see the previous changes that have been made to a rate card, for example the previous Rule count, Presentation, Currency, date created, Billing etc.
 
 [email-ratecard-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/email-ratecard-1.png "Email-Ratecard-1"
 [email-ratecard-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/email-ratecard-2.png "Email-Ratecard-2"
