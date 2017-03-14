@@ -150,4 +150,4 @@ The revision tab lets us see the previous changes that have been made to a rate 
 [customer-ratecard-advance7]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-ratecard-advance7.png "customer-ratecard-advance7"
 [customer-ratecard-advance8]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-ratecard-advance8.png "customer-ratecard-advance8"
 
-[map-giff]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/map-giff.png "map-giff"
+[map-giff]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/map-giff.giff "map-giff"
