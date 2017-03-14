@@ -58,9 +58,15 @@ Please follow the instructions below.
 
 1. Click on Management> Rate Cards> Customer rate card> Add New> Name the card> Select the carrier> go to Advanced> Select the providers inside the Dynamic Routing box> Click Save.
 
+![alt text][customer-ratecard-advance3]
+
 2. Click on the Upload button in centre of the screen.
 
+![alt text][customer-ratecard-advance4]
+
 3. Click on the blue upload button and browse the file from your device, select the required file and click open, your file will appear on the screen, click on upload again
+
+![alt text][customer-ratecard-advance5]
 
 4. Once the upload completes click on the file name, Map the rate card fields against the system fields. (Add GIF here)
 
@@ -111,3 +117,13 @@ The revision tab lets us see the previous changes that have been made to a rate 
 [popup]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/popup.jpg "Popup"
 [edittab]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/edittab.png "Edit-Tab"
 
+
+
+[customer-ratecard-advance1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-ratecard-advance1.png "customer-ratecard-advance1"
+[customer-ratecard-advance2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-ratecard-advance2.png "customer-ratecard-advance2"
+[customer-ratecard-advance3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-ratecard-advance3.png "customer-ratecard-advance3"
+[customer-ratecard-advance4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-ratecard-advance4.png "customer-ratecard-advance4"
+[customer-ratecard-advance5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-ratecard-advance5.png "customer-ratecard-advance5"
+[customer-ratecard-advance6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-ratecard-advance6.png "customer-ratecard-advance6"
+[customer-ratecard-advance7]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-ratecard-advance7.png "customer-ratecard-advance7"
+[customer-ratecard-advance8]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-ratecard-advance8.png "customer-ratecard-advance8"
