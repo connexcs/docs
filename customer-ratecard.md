@@ -70,9 +70,11 @@ Please follow the instructions below.
 
 4. Once the upload completes click on the file name, Map the rate card fields against the system fields. (Add GIF here)
 
+![alt text][map-giff]
+
 5. Click on Import to card button & select the Customer card & click save.
 
-6. Your rate card file will be imported to your customer rate card & you will be notfied with a popup once the import is complete. the      card is now live and ready to use.
+6. Your rate card file will be imported to your customer rate card & you will be notfied with a popup once the import is complete. the  card is now live and ready to use.
 
 NB. You do not need to BUILD a rate card created in this way.
 
@@ -127,3 +129,5 @@ The revision tab lets us see the previous changes that have been made to a rate 
 [customer-ratecard-advance6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-ratecard-advance6.png "customer-ratecard-advance6"
 [customer-ratecard-advance7]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-ratecard-advance7.png "customer-ratecard-advance7"
 [customer-ratecard-advance8]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-ratecard-advance8.png "customer-ratecard-advance8"
+
+[map-giff]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/map-giff.png "map-giff"
