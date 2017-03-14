@@ -29,13 +29,23 @@ Please follow the instructions below.
 
 1. Click on Management> Rate Cards> Customer rate card> Add New> Name the card> Select the carrier> Click Save
 
+![alt text][customer-ratecard1]
+
+![alt text][customer-ratecard2]
+
 2. Select Profits> Click on Add New Row
 
+![alt text][customer-ratecard3]
+
 3. Enter your required prefix in the prefix field. This will usually be an international country code & not a provider or customer tech    prefix. Adding this symbol ^ on the prefix field will draw all the associated prefixes from the provider card. If you wish to specify    a particular set of prefixes add ^ and prefixes, example: ^441
+
+![alt text][customer-ratecard4]
 
 4. In the cost field add the sell price & in the next column choose ABSOLUTE or RELATIVE.
    Absolute will set a flat cost, for example your customer will be charged the price you set in the cost field. 
    Relative costs will be added to the price you entered in cost field. example: provider cost 0.008 Relative cost 0.0006 = 0.0086, this    is the amount that will be billed to your customer.
+   
+   ![alt text][customer-ratecard5]
    
 5. If you do not wish to use Absolute or Relative, you can instead use a PERCENTAGE markup, Example: You can enter 10 percent in the        Percent field and choose Percent in the Profit Type. Eg: Provider Cost 0.008, 10% markup = 0.0088 Sell cost.
 
@@ -50,6 +60,8 @@ Please follow the instructions below.
 10. And Click the Apply To for Cost. If it is a NPA-NXX card you can select Inter/intra/cost
 
 11. Once you complete all these steps now it is time to BUILD the card by clicking on Build from Carrier Card button.
+
+![alt text][customer-ratecard6]
 
 
 ## The External Method 
@@ -118,6 +130,14 @@ The revision tab lets us see the previous changes that have been made to a rate 
 [profittab]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/profittab.png "Profit-Tab"
 [popup]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/popup.jpg "Popup"
 [edittab]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/edittab.png "Edit-Tab"
+
+
+[customer-ratecard1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-ratecard1.png "customer-ratecard1"
+[customer-ratecard2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-ratecard2.png "customer-ratecard2"
+[customer-ratecard3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-ratecard3.png "customer-ratecard3"
+[customer-ratecard4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-ratecard4.png "customer-ratecard4"
+[customer-ratecard5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-ratecard5.png "customer-ratecard5"
+[customer-ratecard6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-ratecard6.png "customer-ratecard6"
 
 
 
