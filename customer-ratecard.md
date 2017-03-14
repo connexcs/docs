@@ -29,27 +29,25 @@ Please follow the instructions below.
 
 1. Click on Management> Rate Cards> Customer rate card> Add New> Name the card> Select the carrier> Click Save
 
-![alt text][customer-ratecard1]
+ ![alt text][customer-ratecard1]
 
-![alt text][customer-ratecard2]
+ ![alt text][customer-ratecard2]
 
 2. Select Profits> Click on Add New Row
 
-![alt text][customer-ratecard3]
+ ![alt text][customer-ratecard3]
 
-3. Enter your required prefix in the prefix field. This will usually be an international country code & not a provider or customer tech    prefix. Adding this symbol ^ on the prefix field will draw all the associated prefixes from the provider card. If you wish to specify    a particular set of prefixes add ^ and prefixes, example: ^441
-
-![alt text][customer-ratecard4]
+3. Enter your required prefix in the prefix field. This will usually be an international country code & not a provider or customer tech    prefix. Adding this symbol ^ on the prefix field will draw all the associated prefixes from the provider card. If you wish to specify   a particular set of prefixes add ^ and prefixes, example: ^441
 
 4. In the cost field add the sell price & in the next column choose ABSOLUTE or RELATIVE.
    Absolute will set a flat cost, for example your customer will be charged the price you set in the cost field. 
    Relative costs will be added to the price you entered in cost field. example: provider cost 0.008 Relative cost 0.0006 = 0.0086, this    is the amount that will be billed to your customer.
    
-   ![alt text][customer-ratecard5]
-   
 5. If you do not wish to use Absolute or Relative, you can instead use a PERCENTAGE markup, Example: You can enter 10 percent in the        Percent field and choose Percent in the Profit Type. Eg: Provider Cost 0.008, 10% markup = 0.0088 Sell cost.
 
 6. Select the billing type, example: 1/1 or 6/6
+
+ ![alt text][customer-ratecard4]
 
 7. Enter the connection cost if there is one.
 
@@ -61,7 +59,9 @@ Please follow the instructions below.
 
 11. Once you complete all these steps now it is time to BUILD the card by clicking on Build from Carrier Card button.
 
-![alt text][customer-ratecard6]
+ ![alt text][customer-ratecard5]
+
+ ![alt text][customer-ratecard6]
 
 
 ## The External Method 
