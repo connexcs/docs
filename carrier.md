@@ -2,7 +2,7 @@
 
 * [Table of Contents](#table-of-contents)
 * [Carrier Management](#carrier-management)
-    * [Add a New Carrier](#add-a-new-carrier)
+    * [Adding New Carrier](#adding-carrier)
     * [Deleting Carriers](#deleting-carriers)
     * [Checking the Status](#checking-the-status)
     * [Searching Carrier](#searching-carrier)
@@ -190,7 +190,7 @@ You can also add a customize alert by clicking on the “+” sign.
 
 After adding the relevant info for a alert, click “Save” and a new alert will be functional.
 
-##Code Consistency
+## Code Consistency
 
 This measures the changes of response codes on the SAME number that have been returned from the carrier. It is useful for identifying if the carrier is using routes of different quality or generally poor quality overall. Good carriers will have a 100% code consistency.
 
