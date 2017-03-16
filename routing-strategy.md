@@ -113,6 +113,8 @@ Users can edit the strategy by:
 
 You can add a card by clicking the **_"+"_** sign right under the Edit button. Click the **"Delete"** button next to it.
 
+![alt text][routing-strategy14]
+
 ## Set Strategy Inside customer rate card
 
 In a Customer Rate Card, it is possible to set a routing strategy. At the moment the functionility is basic, you can only select between LCR, Random, Round Robin, Reverse LCR.
@@ -142,3 +144,4 @@ This allows you to change the default behaviour of a card, it looses priority ag
 [routing-strategy11]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/routing-strategy11.png "routing-strategy11"
 [routing-strategy12]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/routing-strategy12.png "routing-strategy12"
 [routing-strategy13]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/routing-strategy13.png "routing-strategy13"
+[routing-strategy14]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/routing-strategy14.png "routing-strategy14"
