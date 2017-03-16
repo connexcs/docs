@@ -103,14 +103,9 @@ Users can edit the strategy by:
 
 1. Click on the edit sign of the **Routing Strategy.** you want to edit from the list, highlighted in orange, in the image given below.  
 
-
 ![alt text][routing-strategy12]
 
 ![alt text][routing-strategy13]
-
-![alt text][routing-strategy]
-
-![alt text][edit-routing-strategy]
 
 2. Edit the Strategy and press **"Save".**
 
