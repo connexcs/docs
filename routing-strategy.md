@@ -146,4 +146,4 @@ This allows you to change the default behaviour of a card, it looses priority ag
 [routing-strategy10]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/routing-strategy10.png "routing-strategy10"
 [routing-strategy11]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/routing-strategy11.png "routing-strategy11"
 [routing-strategy12]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/routing-strategy12.png "routing-strategy12"
-
+[routing-strategy13]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/routing-strategy13.png "routing-strategy13"
