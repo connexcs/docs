@@ -72,10 +72,6 @@ Click on the **"+"** sign to add a new Routing Strategy.
 
 ![alt text][routing-strategy6]
 
-Following image shows the method:
-
-![alt text][edit-routing]
-
 ## Setting up Routing Strategy in Customer Account
 
 1. Click on the customer account
