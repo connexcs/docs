@@ -52,11 +52,25 @@ Users can set and manage their Routing Strategy by:
 Click on the **"+"** sign to add a new Routing Strategy.
 
 1. Click on the **Add New** button.  
+
+   ![alt text][routing-strategy2]
+
 2. Name the Strategy.
+
+![alt text][routing-strategy3]
+
 3. Select the Strategy type
+
+![alt text][routing-strategy4]
+
 4. Click + 
 5. Select the card from the drop down list.
+
+![alt text][routing-strategy5]
+
 6. Press **Save** button.
+
+![alt text][routing-strategy6]
 
 Following image shows the method:
 
@@ -104,3 +118,11 @@ This allows you to change the default behaviour of a card, it looses priority ag
 [routing-strategy]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/routing-strategy.png "routing-strategy"
 
 [edit-routing-strategy]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/edit-routing-strategy.png "edit-routing-strategy"
+
+
+[routing-strategy1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/routing-strategy1.png "routing-strategy1"
+[routing-strategy2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/routing-strategy2.png "routing-strategy2"
+[routing-strategy3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/routing-strategy3.png "routing-strategy3"
+[routing-strategy4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/routing-strategy4.png "routing-strategy4"
+[routing-strategy5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/routing-strategy5.png "routing-strategy5"
+[routing-strategy6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/routing-strategy6.png "routing-strategy6"
