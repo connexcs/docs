@@ -75,9 +75,17 @@ Click on the **"+"** sign to add a new Routing Strategy.
 ## Setting up Routing Strategy in Customer Account
 
 1. Click on the customer account
+
+![alt text][routing-strategy7]
+
 2. Click on Routing
+
+![alt text][routing-strategy8]
+
 3. Click on the rate card name under Ingress Routing
 4. Click + under Strategy & select the stratgy that you wish to assign.
+
+![alt text][routing-strategy9]
 
 ## Deleting the Routing Strategy
 
@@ -86,10 +94,19 @@ If you need to you can delete the **Routing Strategy.**
 1. Select the **Routing Strategy.** from the list.
 2. Press **Delete** button which is on extreme right, next to **"+".**
 
+![alt text][routing-strategy10]
+
+![alt text][routing-strategy11]
+
 ## Edit the Routing Strategy
 Users can edit the strategy by:
 
 1. Click on the edit sign of the **Routing Strategy.** you want to edit from the list, highlighted in orange, in the image given below.  
+
+
+![alt text][routing-strategy12]
+
+![alt text][routing-strategy13]
 
 ![alt text][routing-strategy]
 
@@ -122,3 +139,11 @@ This allows you to change the default behaviour of a card, it looses priority ag
 [routing-strategy4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/routing-strategy4.png "routing-strategy4"
 [routing-strategy5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/routing-strategy5.png "routing-strategy5"
 [routing-strategy6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/routing-strategy6.png "routing-strategy6"
+
+[routing-strategy7]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/routing-strategy7.png "routing-strategy7"
+[routing-strategy8]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/routing-strategy8.png "routing-strategy8"
+[routing-strategy9]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/routing-strategy9.png "routing-strategy9"
+[routing-strategy10]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/routing-strategy10.png "routing-strategy10"
+[routing-strategy11]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/routing-strategy11.png "routing-strategy11"
+[routing-strategy12]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/routing-strategy12.png "routing-strategy12"
+
