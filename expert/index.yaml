@@ -3,22 +3,8 @@ question: What is the problem that you are having?
 answers:
 - id: call-connect
   text: Calls wont connect
-  question: Can you get a callid or number that was dialled?
-  answers:
-  - text: Yes
-    question: If you search for the call in logging does it appear?
-    answers:
-    - text: Yes
-      goto: call-found-but-wont-connect
-    - text: No
-      answer: There is a strong possibility that the call has not reached the switch. It is best to check the client config to confirm that calls are being sent out. If you are unsure or are unable to confirm that it was sent out, try to obtain a packet capture from the senders side.
-  - text: No
-    question: Try searching for the senders IP address in logging, does the call appear?
-    answers:
-    - text: Yes
-      goto: call-found-but-wont-connect
-    - text: No
-      answer: There is a strong possibility that the call has not reached the switch. It is best to check the client config to confirm that calls are being sent out. If you are unsure or are unable to confirm that it was sent out, try to obtain a packet capture from the senders side.
+  condition: 
+  	find-call: true
 - text: My call is getting disconnected too soon
   condition: 
   	find-call: true
@@ -35,8 +21,6 @@ answers:
       answer: We strongly recommend that you use Chrome or Firefox as these are the ones we test most vigorously.
   - text: No
     question: Go ahead give it a go, see if it will help, push CTRL + F5
-
 - text: ''
 - text: ''
 - text: ''
-    
