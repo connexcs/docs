@@ -20,8 +20,22 @@ answers:
     - text: No
       answer: There is a strong possibility that the call has not reached the switch. It is best to check the client config to confirm that calls are being sent out. If you are unsure or are unable to confirm that it was sent out, try to obtain a packet capture from the senders side.
 - text: My call is getting disconnected too soon
+  condition: 
+  	find-call: true
 - text: My call is not being billed
-- text: The interface is not working
+- text: I am having problems with the interface
+  question: Have you tried pushing CTRL + F5 (or the equilivent for your machine)
+  answers:
+  - text: Yes
+    question: Are you using Firefox or Chrome?
+    answers:
+    - text: Yes
+      goto: report
+    - text: No
+      answer: We strongly recommend that you use Chrome or Firefox as these are the ones we test most vigorously.
+  - text: No
+    question: Go ahead give it a go, see if it will help, push CTRL + F5
+
 - text: ''
 - text: ''
 - text: ''
