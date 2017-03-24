@@ -119,8 +119,7 @@ See below:
 
 ### Stats
 
-You can view your stats by clicking on the tab “Stats”.  In the image given below, there are no calls being placed that’s why the graph is showing a straight line.
- 
+You can view various stats by clicking on the tab “Stats”.
 ![alt text][carrier-stats] 
 
 ### Reply Management
@@ -134,7 +133,7 @@ Choose the “Replace” radio button and then “New Code” and “New Reason�
  
 ### Authentication
 
-Next to the Reply Management tab there is “Authentication” where you can specify your authenticated IP.
+You can add your Carrier IP address in this
 
 ![alt text][carrier-authentication] 
  
