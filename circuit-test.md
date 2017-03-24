@@ -7,47 +7,47 @@
 
 Circuit Test helps you perform a test to determine the quality of the route. This can also help you analyze FAS, RTP quality, MOS, Release reason, jitter, packet loss percentage & answer delay measurement etc. To perform circuit test, follow the steps below:
 
-1.	Login to your **Connex** account and look for **"DID"** by extending the **"Management"** menu in left pane.
+1.	Click on Management> DID> Add DID
+
+2. Enter the DID number and select the destination to Circuit Test
+
+3.	Select the Provider & the Provider Rate Card.
+
+4. Select the Customer & Customer Rate Card
+
+5. Select the RTP Proxy & Media proxy, more information can be found from this article.
+
+6. Optionally you can select the timeouts
+
+7. Enter the per month buy Cost of your DID
+
+8. Enter the per month sell Cost
+
+9. Enter the Max duration, the default value is 3600 Sec & click Save
+
+Now, it's time for us to configure the circuit test:
+
+1. Click on Setup **"My Account"**
+
+2. Click on Settings tab
  
-![alt text][circuit-test-did-1]    
-
-2.	Now, click on **"Add DID"** button to add a new DID.
-
-![alt text][circuit-test-did-2]  
-
-3.	For Destination, select **"Circuit Test"** from the dropdown.
-
-![alt text][circuit-test-did-3]  
-
-Fill out rest of the information in the form like: add the provider, provider card, customer and customer card, respectively. 
-
-![alt text][circuit-test-did-4]  
-
-4.	Once you are done click on **"Save"** button.
-
-Now, it's time for us to configure the circuit test. What you have to do is:
-
-1.	From the side menu, select **"My Account"** which is right under the **"Setup:**
-
-![alt text][circuit-test-1]  
- 
-2.	A form will appear, look for Origination Ingress Address field, click the **"Edit"** button and enter the originations ingress IP and save.
+2.	Click the **"Edit"** button and enter the originations ingress IP and save.
 
 3.	Now click on **"Edit"** for Termination Ingress Address button and enter the termination ingress IP and save.
 
-4.	Similarly, for the **"Circuit Test User"**, Select the customer.
+4.	Similarly, for the **"Circuit Test User"**, Select the customer account.
 
 ![alt text][circuit-test-2]  
  
-5.	Now go to the **"Rate card"** from side menu which is under the **"Management"**.
+5.	Now go to Rate Card under Provider rate card.
 
 ![alt text][circuit-test-ratecard]  
 
-6.	Select the Provider Rate Card, that you added in the DID.
+6.	Click on the Provider Rate Card that you had selected while adding the DID.
 
-![alt text][circuit-test-4]  
- 
-7.	A new page will open, go to the **"Circuit Tab"** and click on **"Circuit Test"**. 
+![alt text][circuit-test-4] 
+
+7. Click on Circuit Test> +Circuit Test
 
 ![alt text][circuit-test-5]  
  
@@ -66,5 +66,4 @@ Now, it's time for us to configure the circuit test. What you have to do is:
 [circuit-test-did-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/circuit-test-did-3.png "Circuit Test DID 9"
 [circuit-test-did-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/circuit-test-did-4.png "Circuit Test DID 10"
 [circuit-test-ratecard]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/circuit-test-ratecard.png "Circuit Test Ratecard"
-
 
