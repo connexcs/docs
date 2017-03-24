@@ -43,7 +43,6 @@ Now, it's time for us to configure the circuit test:
 
 6.	Click on the Provider Rate Card that you had selected while adding the DID.
 
-
 7. Click on Circuit Test> +Circuit Test
 
 ![alt text][circuit-test-5]  
