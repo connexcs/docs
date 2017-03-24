@@ -53,7 +53,7 @@ Click on the **"+"** sign to add a new Routing Strategy.
 
 1. Click on the **Add New** button.  
 
-   ![alt text][routing-strategy2]
+ ![alt text][routing-strategy2]
 
 2. Name the Strategy.
 
