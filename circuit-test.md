@@ -3,9 +3,9 @@
 * [How to perform circuit test](#how-to-perform-circuit-test)
 
 
-# How to perform circuit test?
+# Circuit Test
 
-To perform circuit test, follow the simple steps shown below:
+Circuit Test helps you perform a test to determine the quality of the route. This can also help you analyze FAS, RTP quality, MOS, Release reason, jitter, packet loss percentage & answer delay measurement etc. To perform circuit test, follow the steps below:
 
 1.	Login to your **Connex** account and look for **"DID"** by extending the **"Management"** menu in left pane.
  
