@@ -24,7 +24,7 @@
 
 Carriers can be easily and efficiently managed with the help of **Connex.** **Connex** allows you to not only add, edit and delete carriers but also lets you view the columns you want to see. 
 
-On the Dashboard, click on the tab. highlighted in the page centre, to go to the **Carrier** or you can expand the **_Management_** tab from the left pane and select **"Carrier".**
+On the Dashboard, to go to the **Carrier** click on the tab highlighted in the centre of the page, or you can expand the **_Management_** tab from the left pane and select **"Carrier".**
 
 ![alt text][carrier-list]
 
@@ -32,51 +32,55 @@ On the Dashboard, click on the tab. highlighted in the page centre, to go to the
 
 ![alt text][add-carriers]
 
-Users can add new **Carriers** by following the simple procedure.
+You can add new **Carriers** by following the simple procedure.
 
 1. Click the **Add Carrier** button.
 2. Enter the details of the **carrier.**
-3. Click the **Save** button when all the details are entered, properly.
+3. Click the **Save** button when all the details are entered properly.
 
-Following figure shows the dialog box for adding the **Carrier.**
+Figure: The dialog box for adding the **Carrier.**
 
 ![alt text][carrier-details]
         
 The brief description of fields present in the above form, is given below:
         
-**Carrier Name:** Users will add the "Customer Name" in the name text field.
+**Carrier Name:** Here add the name of your Carrier.
 
-**Channels:** Users will add the "Channels" in the digits, only.
+**Channels:** Please add the number of channels (Ports) required in digits only. Setting this to ZERO will allow unlimited channels.
 
-**CPS:** Users will add the "CPS" in the text field but in digits, only.
+**CPS:** You can add the number of "Calls Per Second" but in digits only.
 
-**PayPal Email:** Users will add the "PayPal Email" of the **Carrier.**
+**PayPal Email:** Please add the "PayPal Email" of your **Carrier.**
 
-**Website:** "Website" shall also be added by the users.
+**Website:** Here add the Website address of your Carrier.
 
-**Portal URL:** Portal URL shall be added by the users in the given text field.
+**Portal URL:** Add the Portal URL for your carrier in this field. eg:portal.yourcarrier.com 
 
-**Portal Username:** "Portal Username" shall also be written in the text field by the user.
+**Portal Username:** Please enter the Portal Username. This could be either your email address or user name.
 
-**Portal Password:** "Portal Password" will also be a requirement. 
+**Portal Password:** Enter the password you use for logging into your carrier portal.
 
-**Portal Access:** Users will select the "Portal Access" option from dropdown menu either as Yes or No.
+**Portal Access:** Here you need to choose either Yes or No from the drop down menu to allow your carrier to access the portal.
 
-**Status:** Users will set/select the "Status" of the **Carrier.** Status dropdown menu options are:
+**Status:** You can set/select the "Status" of the your **Carrier.** here. The Status dropdown menu options are:
 
-1. Active
-2. Inactive
-3. Pending Approval
+1. Active - your carrier is available to process the calls.
+2. Inactive - your carrier is disabled.
+3. Pending Approval - means that you are waiting for acceptance from your carrier at which point they can then be set to either of the      two options.
 
-**Currency:** Users will set the "Currency" from the dropdown menu options.
+**Currency:** Here you need to choose your preferred "Currency" from the dropdown menu options.
 
-**Address:** Users will write the "Address" of the **Carrier.** Users will add the address including country and postcode/ZIP code.
+**Address:** You need to add the "Address" of your **Carrier** including country and postcode/ZIP code.
 
-**Pre Ring Timeout and Post Ring Timeout:** Users will set the "Pre Ring Timeout" and "Post Ring Timeout" in the given text fields.
+**First Reply Timeout:** This is the length of time that you give for the carrier to respond after the **first invite**. Default value     is set to 30 seconds.
+
+**PDD Timeout:** This is the length of time that you give for the carrier to respond to the call. The default value is 5 seconds.
+
+**Ring Timeout:** This is the length of time that the call is allowed to ring before it times out and sends a cancel message. The         default value is 60 seconds.
 
 ## Deleting Carriers
 
-Users can delete the existing **Carriers** from the list. 
+You can also delete the existing **Carriers** from the list if you want to. 
 
 1. Select the **Carrier** from the list by check marking the entire row.
 
@@ -86,7 +90,7 @@ Users can delete the existing **Carriers** from the list.
 
 ![alt text][carriers-sorting]
 
-Users can also check/filter the status of the **Carriers.** 
+If you need to check/alter the status of the **Carriers.** 
 
 1. Click on the button named **Active.**
 2. Select an option from the dropdown menu.
@@ -94,9 +98,9 @@ Users can also check/filter the status of the **Carriers.**
 
 ## Searching Carrier
 
-Users can search anything about a **Carrier** by writing the query in the **Search** text field.
+If you have to search for any information about a **Carrier** you can write a query in the **Search** text field.
 
-## Customizing The View
+## Customising The View
 
 ![alt text][carriers]
 
@@ -109,14 +113,13 @@ In order to edit a **Carrier**, select a **Carrier** from the list. A new page w
 
 1. Press the **"Edit Carrier"** button.
 2. Edit the details and press **"Save"** button.
-
-Following figure demonstrates the **Edit Carrier** button:
+See below:
 
 ![alt text][carrier-dashboard]
 
 ### Stats
 
-You can view your stats by clicking on the tab “Stats”.  In the image given below, there are no calls placed that’s why the graph is showing a straight line.
+You can view your stats by clicking on the tab “Stats”.  In the image given below, there are no calls being placed that’s why the graph is showing a straight line.
  
 ![alt text][carrier-stats] 
 
@@ -135,60 +138,70 @@ Next to the Reply Management tab there is “Authentication” where you can spe
 
 ![alt text][carrier-authentication] 
  
-You can also add new IP for authentication, by clicking on the “+” sign on extreme right. 
+You can also add new IP for authentication, by clicking on the “+” sign on the extreme right. 
 
 ![alt text][carrier-ip-1] 
  
-Fill Basic and Advanced tab to complete the addition of authenticated IP.
+Add the details into the Basic and Advanced tabs to complete the addition of authenticated IP. Then click 'Save'.
 
 ### Latest Calls
 
-“Latest Calls” is the tab next to Authentication. Where you can find all the calls you have made, lately.
+“Latest Calls” is the tab next to Authentication. Here you can find all the calls you have made, lately.
  
-You can simulate a call too by clicking the green button, named “Simulate”.
+You can simulate a call too by clicking the green button, labelled “Simulate”.
 
 ![alt text][carrier-calls] 
 
 ### Failover
  
- “Failover” are the calls which were not successfully made. A list of failover calls is shown in this tab.
+ “Failover” are the calls which were not made successfully. A list of failover calls is shown in this tab.
  
 ![alt text][carrier-failover] 
  
 ### Payment
 
-“Payment” tab would let you see all the payments made so far. You can add a new payment by clicking on the “+” sign.
+“Payment” tab lets you see all the payments made so far. You can add a new payment by clicking on the “+” sign.
  
-Fill in the more payment information and click “Save”.
+Fill in the payment information and click “Save”.
 
 ![alt text][carrier-payment] 
  
 
 #### CDR
 
-“CDR” tab let you check all your CDR’s. You can also recalculate a CDR for a specific month by clicking on “Recalc CDR”.
+“CDR” tab lets you check all your CDRs. You can also recalculate a CDR for a specific month by entering the dates and clicking on “Recalc CDR”.
 
 ![alt text][carrier-cdr] 
  
 ### DID
 
-“DID” tab let you check the DID.  You can add a new DID clicking on the “+” on the extreme left.
+“DID” tab lets you check your list of DIDs.  You can add a new DID by clicking on the “+” on the extreme left.
  
-After adding the details, click “Save”.
+After adding the details, remember to click “Save”.
 
 ![alt text][carrier-did]
  
 ### Alerts
 
-“Alerts” tab is right next to the “DID”. It allows you to generate alerts to someone when some specific events are triggered. You can view all your alerts by clicking on Alerts tab.
+The last tab is the “Alerts” tab. It allows you to generate alerts to your customers when some specific events are triggered. You can view all your alerts by clicking on this tab.
 
 ![alt text][carrier-alert-1]
 
-You can also add a customize alert by clicking on the “+” sign.
+You can also add a customised alert by clicking on the “+” sign.
+
+You need to give the alert a name such as: Low Balance Alert, 
+
+Next select the email address or phone number to whom you wish the alert to go to,
+
+The Area is the place that is being monitored ie Balance, 
+
+The Operator is the comparitor to which the threshold is compared. If the Operator is set to eg >$50 and the Threshold is set to $50 then the Alert will be triggered and sent out to the recipient.
+
+Click “Save” and a new alert will be created.
+
 
 ![alt text][carrier-alert-2]
 
-After adding the relevant info for a alert, click “Save” and a new alert will be functional.
 
 ## Code Consistency
 
