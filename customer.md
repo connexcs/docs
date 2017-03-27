@@ -27,7 +27,8 @@
 
 # Customer Management
 
-In Connex, you can create your own **Customer** and assign **credit, status, channel, last call, ASR, ACD, PDD and CPS** to them.
+In Connex, you can create your own **Customer** and assign **credit, routing, CLI, authentication. Also you can check the Latest calls, channels ASR, ACD, PDD and CPS Stats**
+
 Managing customers is quite easy with **Connex.** Follow the procedures given in this tutorial, to learn how to efficiently manage your customers.
 
 On the Dashboard, click on the tab, highlighted in the centre of the page, to go to the **Customer** or you can also click on  **_Management_** from the left pane and select **"Customer".**
@@ -62,15 +63,15 @@ Brief description, of the fields present in above dialog box, is as follows:
 2. Inactive: Disables the account, all calls will be blocked
 3. Pending Approval: When a customer signs up it will be listed under pending approval, setting pending approval won't let the calls        pass through.
 
-**Debit Limit:**  "Debit Limit" will be added by the user.
+**Debit Limit:**  You can set the debit limit on this field, you usually this is done for postpay customers.
 
-**Tax:**  "Tax" as a percentage will also be added by the user.
+**Tax:**  You can add the Tax as a percentage, this will be calculated on the payment that gets added.
 
 **Currency:** Select the currency from the dropdown menu.
 
 **_Note:_** _You wont be able to change the account currency once the account is created._
 
-**Portal Access:**  Users will select the "Portal Access" from the options either Yes or No.
+**Portal Access:**  Users will select the "Portal Access" from the options either Yes or No, selecting to NO will restrict your users to access your Customer Portal
 
 **Address:** Complete the customer's address.
 
@@ -99,7 +100,7 @@ Users can also check/filter the status of the **Customers**.
 
 ## Searching Customers
 
-Users can search anything about a **Customer** by writing the query in the **Search** text field.
+Users can search anything about a **Customer** by writing the query in the **Search** text field. You can search for a name, IP address, users.
 
 ## Editing Customers
 
