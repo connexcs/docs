@@ -1,8 +1,8 @@
 # Alerts
 
-The last tab is the “Alerts” tab. It allows you to generate alerts to your customers when some specific events are triggered. You can view all your alerts by clicking on this tab.
+The last tab is the "Alerts" tab. It allows you to generate alerts to your customers when some specific events are triggered. You can view all your alerts by clicking on this tab.
 
-You can also add a customised alert by clicking on the “+” sign.
+You can also add a customised alert by clicking on the "+" sign.
 
 ![alt text][carrier-alert-1]
 
