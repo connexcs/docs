@@ -2,6 +2,7 @@
 
 * [Table of Contents](#table-of-contents)
 * [Scaling and Load Balancing](#scaling-and-load-balancing)
+  * [Capacity Failover](#capacity-failover)
   * [What is a zone?](#what-is-a-zone)
   * [How can I scale in a Single Zone?](#how-can-i-scale-in-a-single-zone)
     * [Stage 1](#stage-1)
@@ -23,6 +24,14 @@ We aim to run all servers at a maximum of 50% their capacity. This enables us to
 Although we benchmark much higher we recommend no more than 1000 channels / 100cps per server. However, this is always subject to traffic profiles.
 
 One extra amazing feature of ConnexCS is that no matter how many servers you have or how many zones you have, all your configuration is available through a single control panel and data does not change if you add / remove servers, it's still just as easy to use.
+
+## Capacity Failover
+Capacity Failover, If you have multiple servers in your network Capacity Failover can help to elimiate overload on any single server.
+If that server reaches capacity limitation (CPS or Channels), the server will respond with a 302 (rather than a 500) giving instructions for another server in the cluster to handle the call.
+
+Capacity failover is not the same as load-balancing nor is it mutually exclusive to it. It works very well to allow overflow from any specific zones.
+A tipical example could be: You have 2n infrastructure setup, your primary servers operate in UK and your redundant servers operate in Germany. If your UK servers experience unexpected higher load you can pass on the traffic that those servers are unable to handle to your Germany servers. 
+
 
 ## What is a zone?
 

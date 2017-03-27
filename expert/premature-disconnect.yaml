@@ -1,0 +1,13 @@
+---
+question: What is the release reason of the call.
+answers:
+- text: Upstream BYE
+  answer: This means that the call was ended by the person who ANSWERED the call (The carrier side if this was termination). You will need to follow this one up with the receiving party.
+- text: Downstream BYE
+  answer: This means that the call was ended by the person who MADE the call (The customer side if this was termination). You will need to follow this one up with the sending party.
+- text: MI Timeout
+  question: The call was ended because of max call duration. If you want the call to last longer, increase the max call duration.
+- text: Ping Timeout
+  question: The call was ended due to the sender/receiver not replying to a SIP Ping, these are sent every 30 seconds to keep the call active. Usually the best option is to try disabling 1 side or both for SIP Ping, but becareful of long duration calls.
+- text: RTP Timeout
+  question: The call was ended because of media inactivity, this means that there was no audio flowing through the call.

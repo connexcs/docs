@@ -12,7 +12,15 @@
 
 # User Space Database
 
-The User Space Database allows you to upload a database externally. The file needs to be in excel or CSV format with the relevant columns selected (Area, Key, Value).
+A user database is an flexible datastore which has multiple use cases mainly used in allocations which you can build using ScriptForge. It is also available in 3 different backends each with their own advantages and disadvantages
+
+There are 3 different types of datastore accessible.
+1. High Capacity - This is a key-value pair store which uses eventual consistancy to replicate between zones. This is ideally used for list of numbers for example a DNC list. It should not be used for counters or very high speed writes.
+2. High Speed - This operates as a caching layer is exceptionally fast and is also eventually consistent between zones. It should be considered ephemeral and used like a cache.
+3. Highly Consistant - This datastore benefits from a global truth, it is fast at reads slower on updates and is not designed to hold large quantities of data (< 10,000 records)
+When you create your datastore you can specify what type of datastore will be created.
+Some examples of where datastore can be used.
+Checking a list of numbers (#1), caching external lookups (#2), or creating a stateful application which could allow users X amount of free minutes per month.
 
 This tutorial will guide how to manage User Space Database. You can go to the *Setup* from the left pane and click on the **User Space Database**, as highlighted in the image below:
 

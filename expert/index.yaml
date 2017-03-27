@@ -5,10 +5,16 @@ answers:
   text: Calls wont connect
   condition: 
   	find-call: true
-- text: My call is getting disconnected too soon
+- text: Call is getting disconnected too soon
   condition: 
   	find-call: true
+- text: Call is getting disconnected too late
+  condition: 
+  	find-call: true
+  goto: long-duration-calls
 - text: My call is not being billed
+  condition:
+    find:call-true
 - text: I am having problems with the interface
   question: Have you tried pushing CTRL + F5 (or the equilivent for your machine)
   answers:
@@ -21,6 +27,54 @@ answers:
       answer: We strongly recommend that you use Chrome or Firefox as these are the ones we test most vigorously.
   - text: No
     question: Go ahead give it a go, see if it will help, push CTRL + F5
-- text: ''
-- text: ''
+- text: I am getting bad call quality
+  question: Have you tried changing the RTP Proxy?
+  answers:
+  - text: No
+    answer: Try changing the RTP Proxy to a proxy server near to the customer or the carrier.
+  - text: Yes, that didnt help
+    question: Have you tried changing the RTP Proxy Mode to Direct?
+    answers:
+    - text: No
+      answer: This will send the media directly between customers and carrier (not this is open RTP and leaks information from side-to-side)
+    - text: Yes, that didnt help
+      answer: If the audio is flowing between your customer and carrier directly and there are still audio problems, then the problem is somewhere between your customer and carrier.
+- text: My customer can't login to their portal
+  question:
+  - text: What error do they get?
+    answers:
+    - text: The page does not load at all.
+    - text: Username / Password Problem.
+      question: Have you tried resetting the customers credentials
+      answers:
+      - text: No
+        answer: Try resetting the password yourself, if that does not work, try logging in yourself.
+      - text: Yes
+        goto: report
+    - text: Invalid Secure Certificate.
+      answer: In the domain section of setup, click Deploy Secure Certificate.
+    - text: Other
+      goto: report
+- text: Other
+  question: Have you checked our documentation?
+  answers
+  - text: No
+    answer: This may be a good place to start: http://docs.connexcs.com
+  - text: Yes, that did not help.
+    question: Is it between 10:00am GMT and 20:00 GMT?
+    answers:
+    - text: Yes
+      answer: Come to our online chat, we will be happy to help.
+    - text: No
+      question: Is this a new setup, or an existing one carrying live traffic.
+      answers:
+      - text: New Setup
+        answer: Please contact us during working hours, or send an email to use on support@connexcs.com
+      - text: Existing, with Live Traffic
+        question: Is it a critical issue (Critical means that calls can not flow)
+        answers:
+        - text: Yes its Critical
+          answer: If it is definately important, try to contact us on our Support Chat, if that does not work, please call our number listed on our website.
+		  
+
 - text: ''

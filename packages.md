@@ -2,6 +2,7 @@
 
 * [Table of Contents](#table-of-contents)
 * [Packages](#packages)
+  * [Minimum Spend](#minimum-spend)
   * [Add Package](#add-package)
   * [Edit Package](#edit-package)
   * [Delete Package](#delete-package)
@@ -10,6 +11,12 @@
 
 
 # Packages
+
+A package is a representation of a product/service that you are offing to your customers. It can be a chargable item which is recurring based on your required interval.
+A package is created as a global entity in the system then allocated to each customer as required. You may wish to do this for any MRC such as DID's, rental of a phone system or other hardware.
+
+## Minimum Spend
+If you bill your customers for a minimum spend per month bsed on minutes consumption. You can set a package to have a minimum cost. At the recurrance interval it will calculate the spend of the customer for the previous interval, subtract that from the minimum spend then pass charge that to their account.
 
 This tutorial will guide you through managing packages. Access the packages section from the setup menu, as shown in the screenshot below.
  

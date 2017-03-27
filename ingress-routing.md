@@ -16,6 +16,7 @@
     * [RTP Proxy Modes](#rtp-proxy-modes)
     * [Options](#options)
     * [CPS Limitation ](#cps-limitation)
+	* [SIP Session Timers](#sip-session-timers)
 
 
 
@@ -148,3 +149,9 @@ Strategy lets you pass the calls based on the routing strategy you set.
 ## CPS limitation 
 
 The Calls Per Second can be limited on Ingress Routing, this means you can set the CPS limitation on each customer card that you assign on the customer account
+
+## SIP Session Timers
+Using SIP session timers is a method of ensuring that there are no ghost / long duration calls which are being billed for even though one of both sides have hung up. The way this works is that there is a timer created which when it expires the call will be torn down. The timer can he reset by a RE-INVITE message is sent perodically.
+Passive SST is enabled as default and without changing any settings and RE-INVITES will be propages through the system.
+It is also possible to be proactive about the RE-INVITES instructing the ConnexCS switch to send these, upstream to the carrier, downstream to the customer or in both directions.
+SST is currently the best way to prevent long duration calls and superceeds SIP Ping Timeout.

@@ -18,6 +18,7 @@
         * [Performing an ASRPlus Lookup](#performing-an-asrplus-lookup)
 	* [Creating a New Script](#creating-a-new-script)
 	* [Assigning the Script to a customer](#assigning-the-script-to-a-customer)
+	* [Form Builder](#form-builder)
 
 
 # ScriptForge
@@ -212,3 +213,7 @@ A form will open named “Route Ingress”, find the “Script Forge” field an
 [s7]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/s7.png "S7"
 [s8]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/s8.png "S8"
 [s9]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/s9.png "S9"
+
+# Form Builder
+Form Builder
+Form Builder can be used when you write your own ephemeral scripts in ScriptForge. It allows you to define your own custom user interface by selecting specific input fields. These fields will be passed to variables on the corrisponding application.

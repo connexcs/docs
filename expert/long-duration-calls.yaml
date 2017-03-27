@@ -1,0 +1,34 @@
+---
+question: What is the release reason of the call.
+answers:
+- text: Upstream BYE
+  answer: This means that the call was ended by the person who ANSWERED the call (The carrier side if this was termination). It is most likly a genuine call.
+- text: Downstream BYE
+  answer: This means that the call was ended by the person who MADE the call (The customer side if this was termination). It is most likely a genuine call.
+- text: MI Timeout / Ping Timeout / RTP Timeout
+  question: The call was not disconnected because the switch did not receive a BYE Message. Have you tried enabeling SIP Ping?
+  answers:
+    - text: No
+      answer: Try enabeling this from ingress routing inside the customers account
+    - text: Yes, but it didnt work or causes problems.
+      question: Have you tried enabeling RTP Proxy Timeout?
+      answers:
+      - text: No
+        answer: Try enabeling this from ingress routing inside the customers account
+      - text: Yes, It didnt work or causes problems.
+        question: Have you tried enabeling SST (SIP Session Timers)
+        answers:
+        - text: No:
+          answer: Try enabeling this from ingress routing inside the customers account
+        - text: Yes, It didnt work or causes problems.
+          question: Could you request your customer to enable SIP Session Timers?
+          answers:
+            - text: Yes
+              answer: This may be a good option, you can check for the Min-SE tag in the INVITE from your customer to confirm its switched on.
+            - text: No this is not possible.
+              question: Is your customers server On-Premise or in a datacenter?
+              answers:
+                - text: Datacenter
+                  goto: report
+                - text: On-Premise
+                  answer: Its possible that your customers connection is overloaded and suffering from packet loss, this should be investigated.
