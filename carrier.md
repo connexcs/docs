@@ -209,5 +209,5 @@ The metric only takes into account 200 and 404's.
 [carrier-alert-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-alert-2.png "Carrier Alert-2"
 
 ## Consecutive failures
-The consecutive failures sdystem is a primative wsay of measuring the ability for a carrier to connect calls, once a call connects the counter is reset and once a call fails the counter is incremented by one.
-This can leave to a false positive if the customer is sending alot of missed call traffic or calling bad numbers, however in general the counter is one of the quickest ways to establish when a route is failing.
+The consecutive failures system is a primitive way of measuring the ability of a carrier to connect calls, once a call connects the counter is reset and once a call fails the counter is incremented by one.
+This can lead to a false positive if the customer is sending a lot of missed call traffic or calling bad numbers, however in general the counter is one of the quickest ways to establish when a route is failing.
