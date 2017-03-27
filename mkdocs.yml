@@ -34,6 +34,7 @@ pages:
 
 - MISCELLANENOUS:
     - Authentication: authentication.md
+    - Alerts: alert.md
     - Billing: billing.md
     - Calling Card: calling-card.md
     - Files: files.md
