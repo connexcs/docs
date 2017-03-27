@@ -109,36 +109,35 @@ In order to edit a **Customer**, select **Customer** from the list and a new pag
 1.	Click the **"Edit Customer"** button.
 2.	Edit the details and click **"Save"** button.
 
-Following figure demonstrates the **Edit Customer** button:
+Following demonstrates the various buttons:
 
 ![alt text][edit-customer]
 
 ### Main 
 
-In **Main** tab, users can view all their contacts. Users can also check the summary in three different forms i.e. Live/Daily/Monthly as shown in an image above.
+In **Main** tab, users can view/add the customer contacts. You can also check the summary in three different forms i.e. Live/Daily/Monthly as shown in an image above.
 
-Users can also create a new contact on the Main tab.
+## Contacts
+Steps to create a new contact on the Main tab.
 
 1.	Click on the *‘plus sign’* button on the contacts pane.
-2.	Fill out the details.
+2.	Fill out the details, you can choose to generate password automatically OR set the password manually, the generated password will be emailed. 
 3.	Press *Save* button once the details have been filled out, correctly.
+
+These credentials should be used to login on your customer portal.
 
 ![alt text][main-tab]
 
-### Statistics
+### Stats
 
-In **Stats** tab, create and assign channels to customers. Click on the **Channels** to make them functional. Users can have record of **Calls Per Second (CPS)** under the **Stats** tab and can also check the details of the CPS by the day/month of their choice as highlighted with a yellow rectangle in the image below:
+In **Stats** tab, you can view the Channels, Calls Per Second (CPS), ACD, ASR, Attempts, Codes, PDD stats, you can also filter it by the day/month of your choice.
 
 ![alt text][stats-tab]
 
-Moreover, in the same tab, **Stats**, users can check the details of **ACD, ACR, Attempts, Codes** and **PDD**.
-
 ### Routing
 
-Now, moving onwards to the next tab which is **Routing**. There are basically two types of routing as shown in an image below:
-
-1.	Ingress Routing
-2.	CLI
+#	Ingress Routing
+Under Ingress Routing you can assign a customer rate card to your customer account, the detailed functions are explained [Click Here]: https://docs.connexcs.com/en/latest/ingress-routing/
 
 ![alt text][routing-tab]
 
@@ -152,15 +151,12 @@ The details of the dialogue box can be shown in the image below:
 
 ![alt text][ingress-routing-tab]
 
-1.	Users will add the name of the Rate Card and write the Tech Prefix and Capped Rate in digits only.
-2.	Users will select ScriptForge, Profit Assurance and Block Connect Cost from the dropdown menu options.
-3.	Users will add the Channels and Maximum Duration.
-4.	Users will write the Dial String in the given text field.
-5.	Users can select the Lock Parent Card and Exclude Parent Cards from the dropdown menu option.
-6.	Moreover, other than Route Ingress, users will fill out the details of Proxy Info where users will add the RTP Media Proxy and RTP Proxy Mode.
-7.	Users can also add the Strategy by clicking on the *Add New* button.
+More information about Ingress Routing is explained [here]: https://docs.connexcs.com/en/latest/ingress-routing/
 
 ### Adding CLI
+
+CLI / ANI is the From part of the SIP INVITE message and contains the information about who the call was placed from, more specifically we are refering to the number that is presented to have sent the call. 
+The detailed functions are explained [here]: https://docs.connexcs.com/en/latest/cli/
 
 1.	Click on the **Add New** button.
 2.	Popup will appear. Fill out the details in the dialogue box.
@@ -169,9 +165,6 @@ The details of the dialogue box can be shown in the image below:
 Details of the dialogue box can be seen in an image below:
 
 ![alt text][edit-cli]
-
-1.	Fill out the CLI text field.
-2.	Rewrite the CLI and write the P Asserted ID.
 
 ### Authentication
 
@@ -185,8 +178,7 @@ Under the **Authentication** tab, there are two types of authentication as shown
 #### IP Authentication
 
 1.	Click on the **Add new** button.
-2.	Popup will appear. Fill out the details of the dialogue box.
-3.	Press **Save** once the details are correctly entered.
+2.	Enter the IP address & click save
 
 ![alt text][edit-switch-basic]
 
@@ -195,12 +187,12 @@ In the image below, there is description of the Advanced dialogue box.
 
 ![alt text][edit-switch-advance]
 
-1.	Users will add the Codecs
-2.	Users will write the Manufacturer and Version in the respective text field.
-3.	Users will select the options on the Protocol, Port and Dial Pattern.
-4.	Users will add the CLI Prefix.
-5.	Users will write the Tech Prefix, Strip Digits and Bandwidth in digits only.
-6.	Users will write Force Forum in the given text field.
+1.	You can optionally select the codecs.
+2.	Enter the switch Manufacturer and Version of your customer in the respective text field.
+3.	Select the SIP Protocol, Port and Dial Pattern.
+4.	Optionally you can add CLI Prefix.
+5.	Enter the Tech Prefix, Strip Digits and Bandwidth in digits only.
+6.	You can Force From in the given text field.
 7.	Users checks one of the options: Ingress or Egress.
 
 #### User/ Password Authentication
@@ -208,8 +200,7 @@ In the image below, there is description of the Advanced dialogue box.
 Users can set the **User/Password authentication**.
 
 1.	Click on the **Add new** button.
-2.	Popup will appear. Fill out the details of the dialogue box.
-3.	Press **Save** once the details are correctly entered.
+2. Enter the username & password & click save.
 
 ![alt text][user-pwd-auth]
 
