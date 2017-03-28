@@ -55,14 +55,16 @@ This function basically involves two types of information:
 ## Company Information
 
 To add/edit information, users can click on the pencil icon. In Company's Information, users have to fill out the following details:
- 
-![alt text][company-info]
 
+![alt text][my-account-1]
+ 
 1. Name
 2. Address Line 1 and Address Line 2. 
 3. Country, City, Country, Post Code
 
 After filling all the details, click on Save button.
+
+![alt text][company-info]
 
 ## General Information
 
@@ -146,6 +148,9 @@ Users can add the new API by:
 
 1. Click on the Add New button, highlighted as orange.
 2. Select either PayPal or Stripe.
+
+![alt text][paypal-1]
+
 3. Fill out the details of the dialog box and press Save button.
 
 ### For PayPal:
@@ -226,6 +231,7 @@ If the server has been deployed on your account, you can view/manage from this m
 
 
 [my-account]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/my-account.png "My Account"
+[my-account-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/my-account-1.png "My Account 1"
 [company-info]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/company-info.png "Company-Info"
 [general-info]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/general-info.png "General-Info"
 [change-pwd]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/change-pwd.png "Change-PWD"
@@ -236,6 +242,7 @@ If the server has been deployed on your account, you can view/manage from this m
 [user-config]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/user-config.png "User-Config"
 [group-config]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/group-config.png "Group-Config"
 [api]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/api.png "API"
+[paypal-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/paypal-1.png "Paypal 1"
 [paypal]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/paypal.png "Paypal"
 [stripe]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/stripe.png "Stripe"
 [domain]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/domain.png "Domain"
