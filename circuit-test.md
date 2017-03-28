@@ -11,6 +11,8 @@ Circuit Test helps you perform a test to determine the quality of the route. Thi
 
 ![alt text][circuit-test-1]
 
+![alt text][circuit-test-2]
+
 2. Enter the DID number and select the destination to Circuit Test
 
 3.	Select the Provider & the Provider Rate Card.
@@ -27,7 +29,9 @@ Circuit Test helps you perform a test to determine the quality of the route. Thi
 
 9. Enter the Max duration, the default value is 3600 Sec & click Save
 
-![alt text][circuit-test-2]
+![alt text][circuit-test-3]
+
+![alt text][circuit-test-4]
 
 Now, it's time for us to configure the circuit test:
 
