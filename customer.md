@@ -230,18 +230,6 @@ In this tab, users can make a list of all the **payments** that have been done s
 
 ![alt text][payments-tab]
 
-
-### Alerts
-
-Users can set the **Alerts** for important notifications. Users can add new alert by:
-
-1.	Click on the **‘plus sign’** button.
-2.	Fill the details of the dialogue box as shown in an image below: Title of the alert, Email/phone number, Area, Operator and Threshold.
-
-![alt text][alert]
-
-3.	Press **Save** once the details have been filled out.
-
 ### Call Detail Record (CDR)
 
 Users can check the details of the calls by following a simple procedure:
