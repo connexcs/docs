@@ -6,10 +6,9 @@
   * [Select the recipients and schedule the reports](#select-the-recipients-and-schedule-the-reports)
 
 
-
-
-
 # Scheduled Breakout Reports
+
+With this feature you can schedule an email for a breakout report. The email gets sent over as per the frequency you select.
 
 ## Adding a scheduled breakout report
 
@@ -21,7 +20,7 @@ A new page would open, from the top. Click on the “+” icon that is highlight
 
 ![alt text][sheduled-report-2]
  
-A dialog box would open, fill out the information and click on “Save”.
+A dialog box would open, Enter the Name, email address and select the frequency, click on “Save”.
  
 ![alt text][sheduled-report-3] 
 
