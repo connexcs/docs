@@ -11,23 +11,26 @@
 
 # My Servers
 
-You can manage **My Servers** on ConnexCS. This can be accessed from the side bar, as shown in the image below:
+You can manage your servers from the My server meni. This can be accessed from the side bar, as shown in the image below:
 
 ![alt text][server-img-1]
 
-There are three main actions that can be performed on the main page of **‘My Server’**, as highlighted in the image below:
+1. Click on the server IP to get into the server.
+2. Click on Actions button.
 
- 1. **Refresh**  button
- 2. **RTP Servers**
- 3. **Help**
+# Server Actions Menu:
+1. Install Server: This will install the latest script to your server
+2. Start Server: Lets you start your server.
+3. Stop Server: Lets you stop the server
+4. Restart Server: To restart your server click on Restart server
+5. OS Cycle: This will gracefully shuts your server down.
+6. Power Cycle: This will shut down your server, this is like hard reset.
 
-![alt text][server-img-3] 
-
-## Refresh
-
-With the help of this button, you can refresh all the servers’ lists and their respective information. 
+We dont recommend perforimg any of the actions above as this may interrupt your calls/service.
 
 ## RTP Servers
+
+RTP Servers are responsible to handle the media.
 
 1. Click on the **RTP Servers** button.
 
@@ -35,32 +38,21 @@ With the help of this button, you can refresh all the servers’ lists and their
 
 3. Refresh the lists, if needed, by pressing the *Refresh* button.
 
-Following image shows the list of RTP Servers:
+Following image shows the list of all our RTP Servers:
 
 ![alt text][server-img-3]
 
-## Help Icon **(?)**
-
-1. Click on the question mark icon **(?)**.
-
-2. You can get help for this whole section in just one click.
 
 ## Server Information
-
-You can also view the information of any server.
-
-1. Click on any of the servers in the list and the details will show up. 
-
-2. Users can also do quick actions like *start server*, *stop server*, *restart server* etc., as shown in the image below:
 
 ![alt text][server-img-4]
 
 
-## TCP Additional Ports
+## TCP & UDP Additional Ports
 
 With this feature you can bypass the default UDP port and set any port of your choice, example 5090. 
 
-This can be set under My Servers> [IP Address]> UDP Port
+This can be set under My Servers> [IP Address]>  Port> Enter the port & click save.
 
 [server-img-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/server-img-1.png "server-img-1"
 [server-img-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/server-img-2.png "server-img-2"
