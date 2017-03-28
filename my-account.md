@@ -22,11 +22,11 @@
 
 This tutorial will guide you what actions you can perform by being into your account.
 
-In My Account, users can update and manage information of their account, add personal information like name, mobile number etc.
+In My Account, users can update and manage information of their account, add personal information like name, mobile number, users, groups etc.
 
 To open My Account, just click on the Setup from the left pane and then click on the My Account, shown as re highlighted in the image below. 
 
-There are basically seven functions, as blue highlighted in the figure below:
+There are basically eight functions, as blue highlighted in the figure below:
 
 ![alt text][my-account]
  
@@ -39,6 +39,7 @@ These functions include:
 5. Payments
 6. Usage
 7. Packages
+8. Settings
 
 Let's discuss each one of the above in more detail.
 
@@ -57,10 +58,9 @@ To add/edit information, users can click on the pencil icon. In Company's Inform
  
 ![alt text][company-info]
 
-1. Users will write their Name in the text field.
-2. Users will add the Email and Company name in the given text fields.
-3. Users will the address as Address Line 1 and Address Line 2. 
-4. Users will add the Country, City and Post Code.
+1. Name
+2. Address Line 1 and Address Line 2. 
+3. Country, City, Country, Post Code
 
 After filling all the details, click on Save button.
 
@@ -79,19 +79,12 @@ In General Information, users will fill out the following details:
 
 Users can also edit their personal information in Current User section. 
 
-1. Click on pencil icon.
+1. Click on Edit icon.
 2. Enter or change the details.
 3. Click on Save button.
 
-![alt text][change-pwd]
 
-### Users can also change the passwords
-
-1. Click on the Change Password button, as shown in the above image.
-2. Fill out the details and click Save button, as shown in the image below
-
-![alt text][change-pwd-2]
-
+## Two factor Authentication
 Users can also enable "Two factor Authentication". For this purpose, click on the Two factor Authentication and click on Enable the TFA, as shown in the image below:
 
 ![alt text][tfa]
@@ -100,11 +93,12 @@ Users can also enable "Two factor Authentication". For this purpose, click on th
 
 ![alt text][smtp]
  
-1. Users will set the Address from which the emails will receive.
-2. Users will set the Username and Password
-3. Users can also send email and SMS on their own emails. Just click the Test Email and Test Mobile button, on the extreme right of the SMTP details.
-4. Users will set the Server info and number for SMS from.
-5. click on Save button, once the addition of details have been completed.
+1. Enter the Email Address from which the emails will be sent.
+2. Enter the Username/email address & password.
+3. Enter the server domain.
+4. Enter the  From Mobile number & click save.
+
+You can click the Test Email button to check if your configration is succesful. and Test Mobile button to send a test SMS, on the extreme right of the SMTP details.
 
 ## Users 
 
@@ -138,7 +132,7 @@ To add new groups to the Users section, click on the '+' sign button and further
  
 1. Users will write the name in the given text field.
 2. From other options (Customer, Carrier, Card, Cdr, Log, Report etc.), users select the option from dropdown menu as Select, Allow or Deny and press Save button.
-3. Users can also Delete or Refresh the Users and Groups.
+3. If you wish to delete a user, select the user and hit delete
 
 ## API (Application Programming Interface)
 
@@ -158,16 +152,20 @@ Users can add the new API by:
  
 ![alt text][paypal]
  
-1. Users will add the Username.
-2. Users will select the mode from the dropdown menu options, either as test or live.
-3. Users will add the Email and signatures.
+1. Select the Mode, this needs to be set to live
+2. Enter the Username & Password
+3. Enter the Email and signatures.
+4. Select the currencies that you wish to accept the payment.
+
+You can learn more about the PayPal APi from [here]: https://docs.connexcs.com/en/latest/customer-payments/
 
 For Stripe:
 
 ![alt text][stripe] 
  
-1. Users will select the mode from the dropdown menu, either as test or live
-2. Users will write the Public Key and Private Key in the respective text fields.
+1. Select the Mode,  this needs to be set to live
+2. Enter the Public Key and Private Key in the respective text fields, this can be obtained from your stripe account.
+3.  Select the currencies that you wish to accept the payment.
 
 Users can also:
 
@@ -176,27 +174,18 @@ Users can also:
 
 ## Domains
 
-Users can add the domains also. 
+Domains lets you add a domain/sub domain on your control panel, this will let your customer to use the customer portal. the domain can be whitelablled.
 
 ![alt text][domain]
 
 To add a new domain, simply:
 
-1. Click on the '+' icon to add new domain.
-2. Pop-up will show up and add the details of the dialog box.
+1. Click on the '+' icon under Portal.
+2. Pop-up will show up and add the details in the respective field.
+3. Select the access (Carrier Portal, CDR, Rate Card, Balance etc.) that you wish to allow your customers on customer portal.
 3. Click on the Save button.
 
-The details of the dialog box are as follows:
-
 ![alt text][add-new-domain]
-
-1. Users will write the Domain in the text field.
-2. Users will select the Carrier Signup and Customer Signup from the dropdown menu options.
-3. Users will set the New Customer Debit Limit.
-4. Users will set the New Customer Status either as Active or Pending Approval.
-5. Users Access Area shall also be selected. (Carrier Portal, CDR, Rate Card, Balance etc.). 
-
-Users can also Refresh or Delete the name of the domains.
 
 Users can also edit the Domains.
 
@@ -226,38 +215,14 @@ Users can make their payments at any time with such ease. All they have to do is
 
 ## Packages
 
-Users can check the packages details from the Users section, where users can also refresh the list of the packages.
+These packages lets you access the lookup services offered by us, these can be enabled/disabled from this section.
 
 ![alt text][package-user]
  
-### Adding New Package
-
-Users can add a new package effortlessly. From the left pane, click on Packages, highlighted as orange in the image given below:
-
-![alt text][package]
- 
-To add a new package:
-
-1. Click on the Add Package button.
-2. Pop-up will show up and fill out the detail of the dialog box as shown in the image below.
-3. Click Save button.
-
-![alt text][package-dialog-box]
-
-4. Write Name of the package.
-5. Set the Cost and Quantity.
-6. Users will select the Frequency of the package either as daily, weekly or monthly.
-7. Users can also Refresh the list of the packages and can delete any of them from the trash icon.
-8. Users can also edit the details of the package by pressing any package name from the list and edit the details.
 
 ## My Servers
 
-Users can check all the lists of the servers and also can refresh them.
-
-1. Go to the Setup, from the left pane and select My Server.
-2. Click on the All Servers button.
-3. List of servers will show up.
-4. Refresh the lists, if needed, by pressing the Refresh button.
+You can view your servers from the My server menu. 
 
 ![alt text][my-server]
 
