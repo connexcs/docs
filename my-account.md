@@ -222,9 +222,8 @@ These packages lets you access the lookup services offered by us, these can be e
 
 ## My Servers
 
-You can view your servers from the My server menu. 
+If the server has been deployed on your account, you can view/manage from this menu.
 
-![alt text][my-server]
 
 [my-account]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/my-account.png "My Account"
 [company-info]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/company-info.png "Company-Info"
