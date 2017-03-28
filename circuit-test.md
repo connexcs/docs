@@ -51,18 +51,15 @@ Now, it's time for us to configure the circuit test:
 
 4.	Similarly, for the **"Circuit Test User"**, Select the customer account.
 
-
-
 ![alt text][circuit-test-7]
 
 ![alt text][circuit-test-8]
 
-
-![alt text][circuit-test-9]
-
 5.	Now go to Rate Card under Provider rate card.
 
 6.	Click on the Provider Rate Card that you had selected while adding the DID.
+
+![alt text][circuit-test-9]
 
 7. Click on Circuit Test> +Circuit Test
 
