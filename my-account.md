@@ -162,7 +162,7 @@ Users can add the new API by:
 3. Enter the Email and signatures.
 4. Select the currencies that you wish to accept the payment.
 
-You can learn more about the PayPal APi from here.
+You can learn more about the PayPal APi from [here].
 
 For Stripe:
 
