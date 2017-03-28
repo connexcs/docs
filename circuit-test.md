@@ -37,27 +37,38 @@ Now, it's time for us to configure the circuit test:
 
 1. Click on Setup **"My Account"**
 
+![alt text][circuit-test-5]  
+
 2. Click on Settings tab
+
+![alt text][circuit-test-6]
  
 2.	Click the **"Edit"** button and enter the originations ingress IP and save.
 
+![alt text][circuit-test-7]
+
+![alt text][circuit-test-8]
+
 3.	Now click on **"Edit"** for Termination Ingress Address button and enter the termination ingress IP and save.
 
+![alt text][circuit-test-9]
+
 4.	Similarly, for the **"Circuit Test User"**, Select the customer account.
+
+![alt text][circuit-test-9]
  
 5.	Now go to Rate Card under Provider rate card.
-
-![alt text][circuit-test-ratecard]  
 
 6.	Click on the Provider Rate Card that you had selected while adding the DID.
 
 7. Click on Circuit Test> +Circuit Test
 
-![alt text][circuit-test-5]  
+![alt text][circuit-test-10]  
  
 8.	A dialog box will open, enter the CLI number that you wish to present and select the Destination Number which you entered while making DID and press **"Send"**. A confirmation box will appear telling that you have initiated the test, the test result might take a while to appear on the screen.
 
-![alt text][circuit-test-6]  
+![alt text][circuit-test-11]  
+  
 
 
 [circuit-test-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/circuit-test-1.png "Circuit Test 1"
@@ -65,10 +76,10 @@ Now, it's time for us to configure the circuit test:
 [circuit-test-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/circuit-test-3.png "Circuit Test 3"
 [circuit-test-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/circuit-test-4.png "Circuit Test 4"
 [circuit-test-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/circuit-test-5.png "Circuit Test 5"
-[circuit-test-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/circuit-test-6.png "Circuit Test 6"
-[circuit-test-did-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/circuit-test-did-1.png "Circuit Test DID 1"
-[circuit-test-did-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/circuit-test-did-2.png "Circuit Test DID 8"
-[circuit-test-did-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/circuit-test-did-3.png "Circuit Test DID 9"
-[circuit-test-did-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/circuit-test-did-4.png "Circuit Test DID 10"
-[circuit-test-ratecard]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/circuit-test-ratecard.png "Circuit Test Ratecard"
+[circuit-test-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/circuit-test-6.png "Circuit Test 6"
+[circuit-test-7]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/circuit-test-7.png "Circuit Test 7"
+[circuit-test-8]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/circuit-test-8.png "Circuit Test 8"
+[circuit-test-9]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/circuit-test-9.png "Circuit Test 9"
+[circuit-test-10]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/circuit-test-10.png "Circuit Test 10"
+[circuit-test-11]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/circuit-test-11.png "Circuit Test 11"
 
