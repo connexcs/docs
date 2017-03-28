@@ -22,7 +22,7 @@ To view the SIP traces of a call follow the below steps.
 Users can simulate the calls by following simple procedure:
 
 1. Click on Management> Logging> Simulate
-2. Enter the Dialled number & CLi Number
+2. Enter the Dialled number & CLI/ANI Number
 3. Select the switch IP from the drop down menu.
 4. Enter the IP address.
 5. Optionally add the sip extension user
