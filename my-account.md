@@ -229,7 +229,7 @@ These packages lets you access the lookup services offered by us, these can be e
 
 If the server has been deployed on your account, you can view/manage from this menu.
 
-[here]: https://docs.connexcs.com/en/latest/customer-payments
+[here]: <https://docs.connexcs.com/en/latest/customer-payments>
 [my-account]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/my-account.png "My Account"
 [my-account-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/my-account-1.png "My Account 1"
 [company-info]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/company-info.png "Company-Info"
