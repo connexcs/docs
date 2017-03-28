@@ -1,3 +1,10 @@
+# Table of Contents
+
+* [Table of Contents](#table-of-contents)
+* [Alerts](#alerts)
+    
+
+
 # Alerts
 
 The last tab is the "Alerts" tab. It allows you to generate alerts to your customers when some specific events are triggered. You can view all your alerts by clicking on this tab.
