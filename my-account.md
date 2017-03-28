@@ -210,13 +210,15 @@ Users can also edit the Domains.
 Users can make their payments at any time with such ease. All they have to do is:
 
 1. Click on the Make Payment button.
-2. Fill out the details of pop-up.
-3. Click on Submit Payment.
-	
+
 ![alt text][payments]
 
-4. Select the payment mode.
-5. Select the amount.
+3. Select the payment mode.
+4. Select the amount.
+5. Click on Submit Payment.
+
+![alt text][payments-1]
+
 
 ## Packages
 
@@ -248,6 +250,7 @@ If the server has been deployed on your account, you can view/manage from this m
 [domain]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/domain.png "Domain"
 [add-new-domain]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/add-new-domain.png "Add-New-Domain"
 [payments]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/payments.png "Payments"
+[payments-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/payments-1.png "Payments 1"
 [package-user]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/package-user.png "Package-Users"
 [package]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/package.png "Package"
 [package-dialog-box]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/package-dialog-box.png "Package-Dialog-Box"
