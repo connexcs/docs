@@ -109,7 +109,7 @@ When a call is established between customer and provider, there are two ways in 
 | **Information Leakage**| No |   Yes* |
 
  	
-**Note:** It is important to be aware, although its doubtful that any information will be logged in the customer/providers switch where the audio is engaged. It is entirely possible for an engineer to find this information out from a SIP trace, pcap or watching transit locations.
+**Note:** It is important to be aware, although it's doubtful that any information will be logged in the customer/providers switch where the audio is engaged. It is entirely possible for an engineer to find this information out from a SIP trace, pcap or watching transit locations.
 
 Please note DTMF Detection ONLY works when RTP Proxy mode is enabled
 
@@ -119,7 +119,7 @@ You should use an RTP Proxy if:
 
 You don't want your customers to know your providers.
 
-You could not use an RTP Proxy if:
+You should not use an RTP Proxy if:
 
 1. You have other equipment in your SIP set-up which will act as a Media Relay.
 2. You want to run a test to see if audio problems are related to the Connex Cloud Switch.
@@ -128,16 +128,16 @@ You could not use an RTP Proxy if:
 
 * RTP Media Proxy
 
-Selection of which (if any RTP Proxy you want engaged).
+Selection of which, if any, RTP Proxy you want engaged.
 
 Auto will select the least cost path between your customer and provider.
 
-1. Various countries will be listed, its recommended that you choose a location that is near your provider or your customer.
+1. Various countries will be listed, it's recommended that you choose a location that is near your provider or your customer.
 2. Direct (No RTP Proxy) - This will DISABLE RTP Proxy Engagement.
 
 **RTP Proxy Mode**
 
-1. Strict - This will enforce the proxy engagement, if the proxy cant engage with the call, the call will not be established. Note: Free accounts are limited to how many RTP Proxy channels are enabled, this may prevent calls connecting if you have more channels than our free accounts allow you to have.
+1. Strict - This will enforce the proxy engagement. If the proxy can't engage with the call, the call will not be established. Note: Free accounts are limited to how many RTP Proxy channels are enabled, this may prevent calls connecting if you have more channels than our free accounts allow you to have.
 
 2. Relaxed - This will perform best efforts to engage the RTP Proxy, if it can't be engaged because of either network errors, or because you don't have enough RTP capacity, the calls will connect directly.
 
