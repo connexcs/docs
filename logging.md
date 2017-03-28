@@ -9,55 +9,38 @@
 
 # Logging
 
-From the Dashboard, you can go to Quick Links and click respective logging button, as highlighted in the image below. Or, you can also go to the **Management** tab from the left panel and click on **Logging.**
+The logging is used to check Real time call attempts, SIP traces, routing status & simulate a call.
 
-![alt text][logging-dashboard-new]
+# SIP traces
+To view the SIP traces of a call follow the below steps.
+1. Click on Management> Logging
+2. Click on the call id that you wish to view the SIP traces for
+3. Click on the SIP traces button to view the SIP trace image.
 
 ## Simulating Calls
 
 Users can simulate the calls by following simple procedure:
 
-1. Click on the **Simulate** button.
+1. Click on Management> Logging> Simulate
+2. Enter the Dialled number & CLi Number
+3. Select the switch IP from the drop down menu.
+4. Enter the IP address.
+5. Optionally add the sip extension user
+6. Select the routing engine zone & click simulate
+7. The simulation call result will appear in the logging. The call id will start with a SIM name, click on the call id to view the routing status of that call.
 
 ![alt text][simulate]
 
 2. Pop-up will show up. Enter the details in it.
 
-![alt text][simulate-call]
+## Lookup
 
-3. Click on the **Simulate** button to save the details.
-
-Details of the Dialog Box
-
-To simulate the call, user will fill the following details:
-
-1. User will add the **Dialled Number** in digits only.
-2. User will add **CLI/ANI** which will also be in digits.
-3. User will select the **Switch IP** from the dropdown menu.
-4. The **Customer IP** address will also be added by the user.
-5. Users will write the **Registered User** in the text field.
-6. **Routing Engine Zone** will also be selected from the dropdown menu options either as Europe, USA or Development.
-
-## Look up for Calls
-
-Users can look up for the calls, any time they want. 
+Lookup service helps you to do a query of a number, 
 
 1.	Click the **Look up** button, right next to the Simulate button. 
-
-![alt text][lookup]
-
-2. Enter the details of the look up dialog box.
-
-![alt text][lookup-query]
-
-3. Click on the **Search** button.
-
-Details of the Look up Dialog box 
-
-User will have to fill all the fields present in the pop-up window.
-
-1. User will enter the **Query** in the text field, in the given format (e.g. E164 etc.).
-2. **Type** will also be selected from the checklist given. (The options include: ASR Plus, HLR, TPS, LRN, and INP).
+2. enter the phone number
+3. Select the type and click search
+4. The lookup result will be displayed in the logging page.
 
 ## Refreshing the Logs
 
@@ -67,7 +50,7 @@ User can also refresh the lists of logs by clicking on **Refresh** button, right
 
 ## Searching the Logs
 
-Users can search the existing logs by writing in the search text field, highlighted in the image below. The search results will show up, once the search criteria is matched.
+You can search for a call by a phone number, call id, or with a IP address. To search for a call enter the phone number & hit the search button.
  
 ![alt text][attempts1]
 
