@@ -11,13 +11,9 @@ When a call first lands on the system it hits the routing engine. The routing en
 ## What is Ingress and Egress.
 
 Ingress means inbound and egress means outbound. If this is describing a switch (for IP auth), the direction is relative to the switch
-that you are currently describing. E.g if you add a customers switch that will be sending traffic to terminate with a carrier, the customers
-switch would be considered Egress as it is sending calls out. If it has a DID pointing to it, it would be Ingress as traffic would be flowing
-in to it.
+that you are currently describing. E.g if you add a customer's switch that will be sending traffic to terminate with a carrier, the customer's switch would be considered Egress as it is sending calls out. If it has a DID pointing to it, it would be Ingress as traffic would be flowing into it.
 
-If a call bound for termination comes in the routing engine, after it passes authorisation it will go through ingress routing, this decides
-the profile of the call and where it is passed to next. There is no Egress routing section per se. The egress routing is built into the customers
-rate card as this contains 1 or more carriers and optionally a routing strategy (default LCR).
+If a call bound for termination comes into the routing engine, after it passes authorisation it will go through ingress routing. This decides the profile of the call and where it is passed to next. There is no Egress routing section per se. The egress routing is built into the customer's rate card as this contains 1 or more carriers and, optionally, a routing strategy (default LCR).
 
 
 ## Error Codes
@@ -45,4 +41,4 @@ If your SIP Trace shows that an INVITE packet was received by the switch but not
 |    580   | To (oU) User Missing                   | This is an internal error, you should never see this. If you do please contact us.                     |
 |    580   | To (fU) User Missing                   | This is an internal error, you should never see this. If you do please contact us.                     |
 
-**Note:** When making changes, although we try to synchronise all endpoints as fast as possible, this is a distributed system it can take up to 60 seconds for any changes to take affect.
+**Note:** When making changes, although we try to synchronise all endpoints as fast as possible, as this is a distributed system it can take up to 60 seconds for any changes to take affect.
