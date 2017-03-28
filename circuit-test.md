@@ -31,19 +31,21 @@ Circuit Test helps you perform a test to determine the quality of the route. Thi
 
 ![alt text][circuit-test-3]
 
-![alt text][circuit-test-4]
 
 Now, it's time for us to configure the circuit test:
 
 1. Click on Setup **"My Account"**
 
-![alt text][circuit-test-5]  
+![alt text][circuit-test-4]
 
 2. Click on Settings tab
 
-![alt text][circuit-test-6]
+![alt text][circuit-test-5]  
+
  
 2.	Click the **"Edit"** button and enter the originations ingress IP and save.
+
+![alt text][circuit-test-6]
 
 ![alt text][circuit-test-7]
 
