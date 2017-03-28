@@ -39,26 +39,27 @@ Now, it's time for us to configure the circuit test:
 ![alt text][circuit-test-4]
 
 2. Click on Settings tab
-
-![alt text][circuit-test-5]  
-
  
 2.	Click the **"Edit"** button and enter the originations ingress IP and save.
 
+3.	Now click on **"Edit"** for Termination Ingress Address button and enter the termination ingress IP and save.
+
+![alt text][circuit-test-5]  
+
 ![alt text][circuit-test-6]
+
+
+4.	Similarly, for the **"Circuit Test User"**, Select the customer account.
+
+
 
 ![alt text][circuit-test-7]
 
 ![alt text][circuit-test-8]
 
-3.	Now click on **"Edit"** for Termination Ingress Address button and enter the termination ingress IP and save.
 
 ![alt text][circuit-test-9]
 
-4.	Similarly, for the **"Circuit Test User"**, Select the customer account.
-
-![alt text][circuit-test-9]
- 
 5.	Now go to Rate Card under Provider rate card.
 
 6.	Click on the Provider Rate Card that you had selected while adding the DID.
