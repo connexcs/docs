@@ -14,8 +14,18 @@ The logging is used to check Real time call attempts, SIP traces, routing status
 # SIP traces
 To view the SIP traces of a call follow the below steps.
 1. Click on Management> Logging
+
+![alt text][sip-trace-1]
+
 2. Click on the call id that you wish to view the SIP traces for
+
+![alt text][sip-trace-2]
+
 3. Click on the SIP traces button to view the SIP trace image.
+
+![alt text][sip-trace-3]
+
+![alt text][sip-trace-4]
 
 ## Simulating Calls
 
@@ -65,5 +75,14 @@ You can search for a call by a phone number, call id, or with a IP address. To s
 [lookup-query]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/lookup-query.png "lookup-query"
 
 [refresh]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/refresh.png "refresh"
+
+[sip-trace-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/sip-trace-1.png "sip trace 1"
+
+[sip-trace-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/sip-trace-2.png "sip trace 2"
+
+[sip-trace-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/sip-trace-3.png "sip trace 3"
+
+[sip-trace-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/sip-trace-4.png "sip trace 4"
+
  
 [attempts1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/attempts1.png "attempts1"
