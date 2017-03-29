@@ -2,11 +2,9 @@
 
 * [Table of Contents](#table-of-contents)
 * [My Servers](#my-servers)
-    * [Refresh](#refresh)
     * [RTP Servers](#rtp-servers)
-    * [Help Icon](#help-icon)
     * [Server Information](#server-information)
-    * [TCP Additional Ports](#tcp-additional-ports)
+    * [TCP Additional Ports](##tcp--udp-additional-ports)
 
 
 # My Servers
