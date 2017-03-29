@@ -42,7 +42,6 @@ Following image shows the list of all our RTP Servers:
 
 ![alt text][server-img-3]
 
-
 ## Server Information
 
 ![alt text][server-img-4]
@@ -51,11 +50,14 @@ Following image shows the list of all our RTP Servers:
 ## TCP & UDP Additional Ports
 
 With this feature you can bypass the default UDP port and set any port of your choice, example 5090. 
-
 This can be set under My Servers> [IP Address]>  Port> Enter the port & click save.
+
+![alt text][server-img-5]
+![alt text][server-img-6]
 
 [server-img-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/server-img-1.png "server-img-1"
 [server-img-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/server-img-2.png "server-img-2"
 [server-img-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/server-img-3.png "server-img-3"
 [server-img-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/server-img-4.png "server-img-4"
-
+[server-img-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/server-img-5.png "server-img-5"
+[server-img-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/server-img-6.png "server-img-6"
