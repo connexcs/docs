@@ -11,7 +11,7 @@
 
 # Reports Management
 
-This article will guide how you can manage the reports section. 
+This article will guide how to view/download the reports. 
 From the **_Dashboard_**, click on the reports icon, highlighted as orange in **Figure 1.** Also, users can open the reports from the left pane as follows:
 
 1.	Click on the **_Management_** from the side bar.
@@ -24,7 +24,7 @@ Figure 1
 
 ## Breakout
 
-In the **_breakout section_**, users can add multiple customers, providers and destinations. The overall view of the Breakout section is given in **Figure 2** for better understanding. 
+In the **_breakout section_**, users can filter it by a customers, providers or destinations. The overall view of the Breakout section is given in **Figure 2** for better understanding. 
  
 ![alt text][breakout]
 
@@ -32,10 +32,10 @@ Figure 2
 
 ## Selection of Customers, Providers and Destination 
 
-Users can manage their report section by selecting the customers, providers and destination at the same time.
+You can manage their report section by selecting the customers, providers and destination at the same time.
 
 * Checking the options from the drop down menu, enables the users to select the option of their choice, as shown in **Figure 3.**
-* Users can also uncheck any of them from the options. 
+* You can also uncheck any of them from the options. 
 * Users can also **Select All** the options or **Select None** for all options. And Search text field is also provided. 
  
 ![alt text][selection]
@@ -55,7 +55,7 @@ Figure 4
 
 ## Selecting Multiple Providers
 
-Users can also select multiple providers from the list.
+You can also select multiple providers from the list.
 
 1.	Click on **Select Multiple Providers** field.
 2.	Select the providers from the drop down list.
@@ -81,7 +81,7 @@ Users can also set the range of the dates from the calendar.
 
 Figure 6
 
-Users can have multiple choices in setting a date which is applicable on the reports.
+YOu can have multiple choices in setting a date which is applicable on the reports.
 
 1. Users can apply the **_Current/Today's_** date.
 2. Users can add the **_Yesterday's_** date.
