@@ -4,7 +4,7 @@
 * [My Servers](#my-servers)
     * [RTP Servers](#rtp-servers)
     * [Server Information](#server-information)
-    * [TCP Additional Ports](##tcp--udp-additional-ports)
+    * [TCP & UDP Additional Ports](#tcp--udp-additional-ports)
 
 
 # My Servers
