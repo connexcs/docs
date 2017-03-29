@@ -77,7 +77,7 @@ Brief description, of the fields present in above dialog box, is as follows:
 
 ## Delete Customers
 
-Users can delete **Customers** from the list, by following the steps given below. 
+You can delete **Customers** from the list, by following the steps given below. 
 
 1. Select a **Customer** from the list.
 2.	Click on the **Delete** button.
@@ -92,7 +92,7 @@ Users can delete **Customers** from the list, by following the steps given below
 
 ![alt text][customer-status]
 
-Users can also check/filter the status of the **Customers**. 
+YOu can also check/filter the **Customers** by the status. 
 
 1.	Click on the button, to the right of the trash bin, labelled  **"Active".**
 2.	Select an option from the dropdown menu, against which you want to filter the customers.
@@ -100,7 +100,7 @@ Users can also check/filter the status of the **Customers**.
 
 ## Searching Customers
 
-Users can search anything about a **Customer** by writing the query in the **Search** text field. You can search for a name, IP address, users.
+You can search anything about a **Customer** by writing the query in the **Search** text field. You can search for a name, IP address, users.
 
 ## Editing Customers
 
@@ -144,7 +144,7 @@ Under Ingress Routing you can assign a customer rate card to your customer accou
 ### Ingress Routing
 
 1.	Click on the **Add New** button.
-2.	Pop up will show up. Fill out the details of the dialogue box. 
+2.	Select the customer card & Fill out the details of the dialogue box. 
 3.	Press **Save** once the details are filled in, correctly.
 
 The details of the dialogue box can be shown in the image below:
@@ -206,7 +206,7 @@ Users can set the **User/Password authentication**.
 
 ### Latest Calls
 
-Users can simulate **latest call**, look up for calls and refresh the list of simulated calls.
+Users can check the **latest call** from this tab, look up for calls and refresh the list of simulated calls.
 For simulating the call, 
 
 1.	Click on the **Simulate** button.
@@ -218,7 +218,7 @@ For simulating the call,
 
 ### Dialogs
 
-**Dialogs** is the tab that shows the active calls on the account. Users can easily find out the Active calls in just one click.
+**Dialogs** is the tab that shows the active calls on the account. You can easily find out the Active calls in just one click.
 
 ### Payments 
 
@@ -232,7 +232,14 @@ In this tab, users can make a list of all the **payments** that have been done s
 
 ### Call Detail Record (CDR)
 
-Users can check the details of the calls by following a simple procedure:
+You can check the details of the calls by following a simple procedure:
+
+1. Click on CDR to view the CDR.
+2. You can click on the download CDR buttton to download the CDR.
+
+### Recalculate CDR
+
+This feature lets you recalculate the long duration calls which have been timed out.
 
 1.	Click on the **Recalc CDR** button.
 2.	Fill the dialogue box. In the dialogue box, users will select the day, maximum duration and new duration as shown in an image below:
@@ -240,7 +247,6 @@ Users can check the details of the calls by following a simple procedure:
 ![alt text][recalc]
 
 3.	And finally press **Save** once the details have been entered correctly.
-4.	Users can also switch the dates from today to any other date and month.
 
 ### DID
 
@@ -262,7 +268,7 @@ Users can add the customer package and its quantity for their ease in just one c
 
 ![alt text][customer-package]
 
-After adding a new package, users can also take an action by clicking on the Action and set the further details as daily package, weekly package, etc. 
+After adding a new package, you can also take an action by clicking on the Action and set the further details as daily package, weekly package, etc. 
 
 ![alt text][customer-package1]
 
