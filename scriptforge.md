@@ -24,7 +24,7 @@
 # ScriptForge
 The **ScriptForge** allows you to write your own application which can be run at specific events in the system, currently the following places support scripting functionality:
 
-* Routing Engine (runs in line the call setup process)
+* Routing Engine (runs in line of the call setup process)
 
 Requests to your application are processed via a messaging bus and will be queued if your application can not process them fast enough. If you run your application in the routing engine you must ensure that it can complete quickly so as not to induce high PDD.
 
@@ -36,14 +36,11 @@ ScriptForge currently supports Java script (ECMA6)
 
 ### Memory
 
-For speed enhancements variables in your application may be present between messages, however you should not assume this behaviour. Your application will be automatically distributed across multiple nodes and active variables will not be persistent (If you require persistence across messages you can use the datastore class). The memory of your application may be limited (default to 100MB). You should ensure that you don't try to use more than the allocated amount or your application may crash.
+For speed enhancements variables in your application may be present between messages, however you should not assume this behaviour. Your application will be automatically distributed across multiple nodes and active variables will not be persistent. If you require persistence across messages you can use the datastore class. The memory of your application may be limited (default to 100MB). You should ensure that you don't try to use more than the allocated amount or your application may crash.
 
 ### CPU (Time Limit)
 
 There are no hard CPU restrictions on your application, however its run time is limited (default 2 seconds).
-
-The first message to be processed can take up to 300ms to instantiate, further messages (in proximity) will be processed near instantaneously.
-
 
 ### Durability
 
