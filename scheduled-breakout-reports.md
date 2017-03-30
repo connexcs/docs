@@ -16,11 +16,11 @@ Login to your Connex account.  From the side menu, extend the “Report” and c
  
 ![alt text][sheduled-report-1]
 
-A new page would open, from the top. Click on the “+” icon that is highlighted in the image given below.
+A new page will open, from the top. Click on the “+” icon that is highlighted in the image given below.
 
 ![alt text][sheduled-report-2]
  
-A dialog box would open, Enter the Name, email address and select the frequency, click on “Save”.
+A dialog box should open. Enter the Name, email address and select the frequency, click on “Save”.
  
 ![alt text][sheduled-report-3] 
 
@@ -32,13 +32,13 @@ You can view the reports by clicking on the button “View Schedule Reports” w
 
 ![alt text][sheduled-report-3a]  
 
-A new page would open which would show all the reports created till now.
+A new page will open which will show all the reports created till now.
 
 ![alt text][sheduled-report-4]  
 
 ## Select the recipients and schedule the reports
 
-You can select the recipients by choosing form customers, providers etc.  You can also choose for how much time period you want to schedule the reports.
+You can select the recipients by choosing from customers, providers etc.  You can also choose the time period you want to schedule the reports.
 
 Click on the arrow sign to choose the accurate recipients for the reports. 
 
@@ -48,12 +48,12 @@ Also select the customer’s list, provider’s list and destinations as per add
 
 ![alt text][sheduled-report-6] 
 
-On the extreme right, there is a text box from which you can select the time period to schedule your reports. Just click on the text box and a drop down menu would open from which you can choose the time.
-Select “Custom Range” if you are not able to find the time for which you want to set scheduling.
+On the extreme right, there is a text box from which you can select the time period to schedule your reports. Just click on the text box and a drop down menu should open where you can choose the time.
+Select “Custom Range” if you are not able to find the time that you want to set in scheduling.
 
 ![alt text][sheduled-report-7]  
 
-A new drop down would open, customize the time period and click “Apply”
+A new drop down should open, customize the time period and click “Apply”
 
 ![alt text][sheduled-report-8] 
 
