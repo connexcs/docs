@@ -39,7 +39,7 @@ On every hash we use:
 - High Time, Memory Cost, Parallelism Cost
 
 ### 2FA / TFA
-All admins are required to use Two-factor authentication when signing in to the system. Two Factor Authentication is also avaialble for any user accounts using  RFC 6238 (https://tools.ietf.org/html/rfc6238) style TOTP (Time Based One-time Passwords) using applications such as Google Authenticator or Microsoft Authenticator.
+All admins are required to use Two-factor authentication when signing into the system. Two Factor Authentication is also available for any user accounts using  RFC 6238 (https://tools.ietf.org/html/rfc6238) style TOTP (Time Based One-time Passwords) using applications such as Google Authenticator or Microsoft Authenticator.
 
 ### Server Keys
 Anyone who has direct access to any servers is required to use SSH Keys. All systems where keys are not possible, long multi-symbol passwords are used.
@@ -53,14 +53,14 @@ This does **NOT** mean that we don't monitor activity on either of these, nor do
 IMCP (Internet Message Control Protocol) Ping messages (e.g ping www.connexcs.com). There once was a time when IMCP Ping attacks were common, this was related to the packet size vs available bandwidth. Although IMCP Ping attacks may still happen, it is far more useful to enable IMCP replies to correctly establish the status of a server.
 
 ### SIP / RTP Firewall Block on Default.
-Our SIP Servers only run SIP, nothing else. Our RTP Servers run RTP Nothing else.
+Our SIP Servers only run SIP, nothing else. Our RTP Servers run RTP, nothing else.
 
 This means that you **WILL** see unauthorized traffic hitting your switch, however you will note that the call was blocked because of authentication reasons. This is normal as it is important to see failed traffic as it may be misconfiguration authentication.
 
 5060 is not firewalled, nor are any of our RTP Ports on our RTP Servers.
 
 ## IDS / IPS
-We have application level logic that identifies malicious activity which will escalate issues upwards through to our IDS systems which will in return feedback firewall rules.
+We have application level logic that identifies malicious activity that will escalate issues upwards through to our IDS systems which will in return feedback firewall rules.
 
 # Data Usage
-Connex Carrier Services Worldwide LTD is an independent company, not owned by a parent company or affiliates. All data is retained in ConnexCS on ConnexCS servers and is never passed to any 3rd parties. All staff have to abide by company non-disclosure policies and it is clear that any data breach would be treated with the utmost severity.
+Connex Carrier Services Worldwide LTD is an independent company, not owned by a parent company or affiliates. All data is retained in ConnexCS on ConnexCS servers and is never passed to any 3rd parties. All staff have to abide by company non-disclosure policies and it is made clear that any data breach would be treated with the utmost severity.
