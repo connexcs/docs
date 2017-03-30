@@ -43,8 +43,6 @@ A new user space database can be added by following simple steps:
 
 2.	Pop up will show up.
 
-![alt text][user-space-img-2]
-
 3.	Fill out the details of the dialogue box.
 
 4.	Click **Save** once the details have been entered.
@@ -79,6 +77,8 @@ To edit the details of any item, do the following:
 
 2. Pop up will appear. Edit the details in the dialog box.
 3. Click **Save**, once the details have been edited.
+
+![alt text][user-space-img-2a]
 
 ## Search Text Fields
 
