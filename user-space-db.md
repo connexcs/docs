@@ -12,22 +12,22 @@
 
 # User Space Database
 
-A user database is an flexible datastore which has multiple use cases mainly used in allocations which you can build using ScriptForge. It is also available in 3 different backends each with their own advantages and disadvantages
+A user database is a flexible datastore that has multiple use cases mainly used in allocations which you can build using ScriptForge. It is also available in 3 different backends each with their own advantages and disadvantages
 
 There are 3 different types of datastore accessible.
 
-1. High Capacity - This is a key-value pair store which uses eventual consistancy to replicate between zones. This is ideally used for list of numbers for example a DNC list. It should not be used for counters or very high speed writes.
+1. High Capacity - This is a key-value pair store which uses eventual consistancy to replicate between zones. This is ideally used for lists of numbers for example a DNC list. It should not be used for counters or very high speed writes.
 
-2. High Speed - This operates as a caching layer is exceptionally fast and is also eventually consistent between zones. It should be considered ephemeral and used like a cache.
+2. High Speed - This operates as a caching layer, is exceptionally fast and is also eventually consistent between zones. It should be considered ephemeral and used like a cache.
 
-3. Highly Consistant - This datastore benefits from a global truth, it is fast at reads slower on updates and is not designed to hold large quantities of data (< 10,000 records)
+3. Highly Consistant - This datastore benefits from a global truth, it is fast at reads, slower on updates and is not designed to hold large quantities of data (< 10,000 records)
 
 When you create your datastore you can specify what type of datastore will be created.
 Some examples of where datastore can be used.
 
 Checking a list of numbers (#1), caching external lookups (#2), or creating a stateful application which could allow users X amount of free minutes per month.
 
-This tutorial will guide how to manage User Space Database. You can go to the *Setup* from the left pane and click on the **User Space Database**, as highlighted in the image below:
+This tutorial will guide you on how to manage User Space Database. You can go to the *Setup* from the left pane and click on the **User Space Database**, as highlighted in the image below:
 
 ![alt text][user-space-img-1]
 
@@ -41,9 +41,9 @@ A new user space database can be added by following simple steps:
 
 ![alt text][user-space-img-1a]
 
-2.	Pop up will show up.
+2.	Pop up will appear.
 
-3.	Fill out the details of the dialogue box.
+3.	Fill out the details in the dialogue box.
 
 4.	Click **Save** once the details have been entered.
 
