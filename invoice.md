@@ -52,6 +52,17 @@ You can also download PDF version of invoice by clicking on "PDF".
 After clicking "Edit" button, a new page will appear, make the required changes and click on "Save".
 
 ![alt text][invoice-4]
+
+
+## You can generate Invoice for your customers by following the steps below.
+
+1. Click on Management> Customers
+2. Click on the customer name
+3. On the Main tab click on Dialy under Summary Check the invoice box against the date, you can select multiple dates at one go.
+4. Click on Generate Invoice.
+
+The Invoice will be generated, this invoice is available for download, you also have the option to email the invoice directly to your customer.
+
  
 [invoice-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/invoice-1.png "Invoice-1"
 [invoice-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/invoice-2.png "Invoice-2"
