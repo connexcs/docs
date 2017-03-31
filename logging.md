@@ -34,6 +34,9 @@ To view the SIP traces of a call follow the below steps.
 Users can simulate the calls by following simple procedure:
 
 1. Click on Management> Logging> Simulate
+
+![alt text][simulate]
+
 2. Enter the Dialled number & CLI/ANI Number
 3. Select the switch IP from the drop down menu.
 4. Enter the IP address.
@@ -41,7 +44,7 @@ Users can simulate the calls by following simple procedure:
 6. Select the routing engine zone & click simulate
 7. The simulation call result will appear in the logging. The call id will start with a SIM name, click on the call id to view the routing status of that call.
 
-![alt text][simulate]
+![alt text][simulate-1]
 
 2. Pop-up will show up. Enter the details in it.
 
@@ -50,9 +53,19 @@ Users can simulate the calls by following simple procedure:
 Lookup service helps you to do a query of a number, 
 
 1.	Click the **Look up** button, right next to the Simulate button. 
+
+![alt text][lookup-1]
+
 2. enter the phone number
 3. Select the type and click search
+
+![alt text][lookup-2]
+
 4. The lookup result will be displayed in the logging page.
+
+![alt text][lookup-3]
+
+![alt text][lookup-4]
 
 ## Refreshing the Logs
 
