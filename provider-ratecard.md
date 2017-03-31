@@ -32,7 +32,7 @@ This tutorial will guide you on how to manage rate cards
   
   ![alt text][provider-card-6]
   
-9. Map the rate card fields against the system fields Add GIF here
+9. Map the rate card fields against the system fields.
 
   ![alt text][map-giff]
 
