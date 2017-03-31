@@ -27,6 +27,8 @@ To view the SIP traces of a call follow the below steps.
 
 ![alt text][sip-trace-4]
 
+**Please note the SIP traces are not guaranteed always.**
+
 ## Simulating Calls
 
 Users can simulate the calls by following simple procedure:
