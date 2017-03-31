@@ -2,10 +2,10 @@
 
 Rate Card is one of the most important feature of Connex and managing rate cards is very easy and convenient.
 
-This tutorial will guide you on how to manage rate cards
+This tutorial will guide you on how to manage provider rate cards.
 
 
-## A to Z Rate Card Upload
+## Provider Rate Card Upload.
 
 1. Click on Management> Rate Card
 
