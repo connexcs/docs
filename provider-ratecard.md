@@ -1,125 +1,69 @@
-# Table of Contents
-
-* [Table of Contents](#table-of-contents)
-* [Rate Cards Management](#rate-cards-management)
-  * [Adding New Provider Card](#adding-new-provider-card)
-    * [At Basic level](#at-basic-level)
-    * [At Advanced level](#at-advanced-level)
-  * [Uploading a File](#uploading-a-file)
-  * [Deleting a Provider Rate Card](#deleting-a-provider-rate-card)
-  * [Searching the Provider Rate Cards](#searching-the-provider-rate-cards)
-  * [Delayed BYE](#delayed-bye)
-  * [Revision Tab](#revision-tab)  
-
-
 # Rate Cards Management
 
 Rate Card is one of the most important feature of Connex and managing rate cards is very easy and convenient.
 
 This tutorial will guide you on how to manage rate cards
 
-From the Dashboard, click on the tab of rate card, highlighted in the centre of the page, and also you can go to the **Management** and select **_Rate Cards_**.
 
-![alt text][ratecard-dashboard-new]
+## A to Z Rate Card Upload
 
-Users can manage the rate cards by performing following actions.
+1. Click on Management> Rate Card
 
-1. Adding New Provider Card
-2. Upload File
-3. Deleting the Provider Card
+   ![alt text][provider-card-dashbboard] 
 
-## Adding New Provider Card
+2. Click on Add New under Provider Rate Cards
 
-![alt text][add-new-provider]
+  ![alt text][provider-ratecard] 
+  
+3. Name the provider card
+4. Select the Carrier from the dropdown list
+5. Select the desired currency
+6. Click Save
+ 
+   ![alt text][provider-card-1] 
 
-Users can add new provider card at both basic and advanced level. 
+7. Click Upload> Upload> browse and select the rate card file
 
-### At Basic level
+  ![alt text][provider-card-4]
 
-1. Users can add the Name of provider.
-2. Carrier can be selected from the drop down menu.
-3. User can select a currency.
-4. Finally users will press the **Save** button. 
+8. Click on the file name that you just uploaded from the list.
 
-![alt text][ratecard]
+  ![alt text][provider-card-7]
+  
+  ![alt text][provider-card-6]
+  
+9. Map the rate card fields against the system fields Add GIF here
 
-### At Advanced level
+  ![alt text][map-giff]
 
-Users will fill out the following text fields:
+10. Click on Import to card button & select the provider card & click save
 
-1. Name
-2. Tech Prefix
-3. Notes (Private)
-4. Notes (Public)
-5. Users can select Public options from the checklist.
-6. Users can select the "Force Presentation" from the dropdown menu. The options include: Default, Single Rate, IntER, IntRA etc.
-7. Users can also add "Dialling" information.
+  ![alt text][map8]  
 
-![alt text][edit-provider-card]
 
-## Uploading a File
 
-Next to the **Add New Provider Card** button, there is an **"Upload File"** button. Click on it and a new page will open, showing the files that are already uploaded, if any.
 
-![alt text][upload-file]
+[provider-card-dashbboard]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/provider-card-dashbboard.png "provider-card-dashbboard"
+[provider-ratecard]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/provider-ratecard.png "provider-ratecard"
+[provider-card-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/provider-card-1.png "provider-card-1"
 
-Users can upload a file by following these steps:
-1. Click on **Upload** file button. 
-2. Browse a file from the system. 
-3. Upload it.
+[provider-card-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/provider-card-5.png "provider-card-5"
+[provider-card-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/provider-card-4.png "provider-card-5"
+[provider-card-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/provider-card-6.png "provider-card-5"
+[provider-card-7]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/provider-card-7.png "provider-card-5"
 
-## Deleting a Provider Rate Card
+[map8]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/map8.png "map8"
+[map9]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/map9.png "map9"
+[map10]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/map10.png "map10"
+[map11]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/map11.png "map11"
+[map12]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/map12.png "map12"
 
-Users can delete the Provider cards that were saved earlier. Just follow the steps mentioned below:
+[customer-card]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-card.png "customer-card"
+[customer-card-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-card-1.png "customer-card-1"
+[customer-card-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-card-2.png "customer-card-2"
+[customer-card-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-card-3.png "customer-card-3"
+[customer-card-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-card-4.png "customer-card-4"
+[customer-card-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-card-5.png "customer-card-5"
+[customer-card-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-card-6.png "customer-card-6"
 
-1. Select the Provider Card by check marking the entire row from the list.
-2. Press the **Delete** button which is next to the **"Upload File"** button.
-
-## Searching the Provider Rate Cards
-
-Users can search the **"Provider Rate Cards"** from the search text field and get the results, instantly. 
-Edit Rate Cards
-
-Users can edit the rate cards saved earlier. Follow the steps given below:
-
-1.	Select the Provider Card by check marking the entire row from the list.
-2.	Press the **Edit Cards** button.
-3.	Edit the Basic or Advanced details.
-
-There are several other buttons also present, other than **Edit Cards.*** They include:
-
-1. Revision
-2. Download CVS 
-3. Delete revision
-4. Upload
-5. View all uploaded files
-
-Following figure illustrates these buttons:
-
-![alt text][other-options]
-
-User can take any desired action by making use of these options.
-
-![alt text][using-ratecard1]
-
-## Delayed BYE
-
-We can delay the release of a downstream BYE message to the carrier be setting the Delay BYE message.
-
-## Revision Tab 
-
-The revision tab lets us see the previous changes that's been done on a rate card, example the previous Rule count, Presentation, Currency, date created, Billing.
-
-[ratecard-dashboard-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/ratecard-dashboard-new.png "ratecard1"
-
-[add-new-provider]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/add-new-provider.png "add-new-provider"
-
-[ratecard]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/ratecard.png "ratecard"
-
-[edit-provider-card]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/edit-provider-card.png "edit-provider-card"
-
-[upload-file]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/upload-file.png "upload-file"
-
-[other-options]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/other-options.png "other-options"
-
-[using-ratecard1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/using-ratecard1.png "using-ratecard1"
+[map-giff]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/map-giff.gif "map-giff"
