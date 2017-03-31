@@ -2,17 +2,9 @@
 
 * [Table of Contents](#table-of-contents)
 * [Customer Rate Card](#customer-rate-card)
-  * [Adding Customer Card](#adding-customer-card)
-    * [Basic Level](#basic-level)
-    * [Advanced Level](#advanced-level)
-  * [Refreshing the list](#refreshing-the-list)
-  * [Uploading a file](#uploading-a-file)
-  * [Deleting the Customer Rate Card](#deleting-the-customer-rate-card)
-  * [Customer Rate Card details](#customer-rate-card-details)
-  * [Profit](#profit)
-  * [Searching Text field](#searching-text-field)
-  * [Email Ratecard](#email-rate-card)
-  * [Revision Tab](#revision-tab)  
+   * [The Internal Method](#the-internal-method)
+   * [The External Method](#the-external-method)
+* [Revision Tab](#revision-tab)  
 
 
 
