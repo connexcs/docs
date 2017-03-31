@@ -88,3 +88,9 @@ You can search for a call by a phone number, call id, or with a IP address. To s
 
  
 [attempts1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/attempts1.png "attempts1"
+
+[simulate-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/simulate-1.png "simulate-1"
+[lookup-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/lookup-1.png "lookup-1"
+[lookup-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/lookup-2.png "lookup-2"
+[lookup-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/lookup-3.png "lookup-3"
+[lookup-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/lookup-4.png "lookup-4"
