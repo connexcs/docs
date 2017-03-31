@@ -58,8 +58,13 @@ After clicking "Edit" button, a new page will appear, make the required changes 
 
 1. Click on Management> Customers
 2. Click on the customer name
+
+![alt text][new-inv]
+
 3. On the Main tab click on Dialy under Summary Check the invoice box against the date, you can select multiple dates at one go.
 4. Click on Generate Invoice.
+
+![alt text][new-inv-1]
 
 The Invoice will be generated, this invoice is available for download, you also have the option to email the invoice directly to your customer.
 
@@ -72,5 +77,8 @@ The Invoice will be generated, this invoice is available for download, you also 
 [invoice-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/invoice-6.png "Invoice-6"
 [invoice-7]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/invoice-7.png "Invoice-7"
 [invoice-2D]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/invoice-2D.png "Invoice-2D"
+
+[new-inv]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/new-inv.png "new-inv"
+[new-inv-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/new-inv-1.png "new-inv-1"
  
 
