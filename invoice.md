@@ -8,7 +8,7 @@
 
 # Invoice
 
-## You can generate Invoice for your customers by following the steps below.
+You can generate Invoice for your customers by following the steps below.
 
 1. Click on Management> Customers
 2. Click on the customer name
@@ -20,7 +20,8 @@
 
 ![alt text][new-inv-1]
 
-The Invoice will be generated, this invoice is available for download, you also have the option to email the invoice directly to your customer.
+The Invoice will be generated, this invoice is available for download.
+
 
 
 Login to your Connex account and from the side menu look for "Management" and extend. From the "Management" submenu items, select "Invoice".
