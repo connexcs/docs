@@ -1,6 +1,8 @@
 # Table of Contents
 * [Table of Contents](#table-of-contents)
 * [Invoice](#invoice)
+* [Adding new Invoices](#adding-new-invoices)
+* [View and Edit Invoices](#view-and-edit-invoices)
   
 
 
@@ -66,8 +68,6 @@ After clicking "Edit" button, a new page will appear, make the required changes 
 
 
 
-
- 
 [invoice-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/invoice-1.png "Invoice-1"
 [invoice-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/invoice-2.png "Invoice-2"
 [invoice-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/invoice-3.png "Invoice-3"
