@@ -68,7 +68,8 @@ Please follow the instructions below.
 
 Please follow the instructions below.
 
-1. Click on Management> Rate Cards> Customer rate card> Add New> Name the card> Select the carrier> go to Advanced> Select the providers inside the Dynamic Routing box> Click Save.
+1. Click on Management> Rate Cards> Customer rate card> 
+2. Click on Add New> Name the card> Select the carrier> go to Advanced> Select the providers inside the Dynamic Routing box> Click Save.
 
 ![alt text][customer-ratecard-advance3]
 
@@ -88,7 +89,7 @@ Please follow the instructions below.
 
 6. Your rate card file will be imported to your customer rate card & you will be notfied with a popup once the import is complete. the  card is now live and ready to use.
 
-NB. You do not need to BUILD a rate card created in this way.
+NB. You do not need to **BUILD** a rate card created in this way.
 
 ## Deleting the Customer Rate Card
 
