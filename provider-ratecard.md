@@ -42,11 +42,6 @@ This tutorial will guide you on how to manage provider rate cards.
   
 11. You will be notified with a popup when the import completes.
 
-
-## Delayed BYE
-
-We can delay the release of a downstream BYE message to the carrier be setting the Delay BYE message.
-
 ## Revision Tab 
 
 The revision tab lets us see the previous changes that's been done on a rate card, example the previous Rule count, Presentation, Currency, date created, Billing.
