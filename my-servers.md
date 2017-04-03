@@ -5,6 +5,7 @@
     * [RTP Servers](#rtp-servers)
     * [Server Information](#server-information)
     * [TCP & UDP Additional Ports](#tcp--udp-additional-ports)
+    * [Server Reactivation](#server-reactivation)
 
 
 # My Servers
@@ -53,9 +54,27 @@ This can be set under My Servers> [IP Address]>  Port> Enter the port & click sa
 ![alt text][server-img-5]
 ![alt text][server-img-6]
 
+## Server Reactivation
+
+1. Click on Setup> My Servers
+
+ ![alt text][server-reactivation]
+
+2. Click on the server IP
+3. Click on Reactivate to activate your server.
+
+ ![alt text][server-reactivation-1]
+
+You will only be able to reactivate your server if your account balance is showing a positive amount.
+
+
 [server-img-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/server-img-1.png "server-img-1"
 [server-img-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/server-img-2.png "server-img-2"
 [server-img-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/server-img-3.png "server-img-3"
 [server-img-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/server-img-4.png "server-img-4"
 [server-img-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/server-img-5.png "server-img-5"
 [server-img-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/server-img-6.png "server-img-6"
+
+[server-reactivation]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/server-reactivation.png "server-reactivation"
+[server-reactivation-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/server-reactivation-1.png "server-reactivation-1"
+
