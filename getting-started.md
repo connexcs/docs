@@ -259,17 +259,6 @@ For detailed information about ingress routing click on [Ingress Routing]
 
 You will only be able to reactivate your server if your account balance is showing a positive amount.
 
-
-## Deploying SSL Certificates 
-
-The SSL certificate can be deployed on your customer portal with a single click.
-
-1. Click on Setup> My Account
-2. Click on Domains
-3. Click on Deploy Certificate
-
- ![alt text][ssl]
-
 ## Deploy Server
 
 Deploying a server with Connexcs is very quick, once the checklist is complete you will be able to deploy the server.
