@@ -137,7 +137,8 @@ In **Stats** tab, you can view the Channels, Calls Per Second (CPS), ACD, ASR, A
 ### Routing
 
 #	Ingress Routing
-Under Ingress Routing you can assign a customer rate card to your customer account, the detailed functions are explained [Click Here]: https://docs.connexcs.com/en/latest/ingress-routing/
+
+Under Ingress Routing you can assign a customer rate card to your customer account, the detailed functions are explained on [Ingress Routing]
 
 ![alt text][routing-tab]
 
@@ -151,12 +152,12 @@ The details of the dialogue box can be shown in the image below:
 
 ![alt text][ingress-routing-tab]
 
-More information about Ingress Routing is explained [here]: https://docs.connexcs.com/en/latest/ingress-routing/
+More information about Ingress Routing is explained on [Ingress Routing]
 
 ### Adding CLI
 
 CLI / ANI is the From part of the SIP INVITE message and contains the information about who the call was placed from, more specifically we are refering to the number that is presented to have sent the call. 
-The detailed functions are explained [here]: https://docs.connexcs.com/en/latest/cli/
+The detailed functions are explained on [CLI]
 
 1.	Click on the **Add New** button.
 2.	Popup will appear. Fill out the details in the dialogue box.
@@ -311,8 +312,8 @@ After adding a new package, you can also take an action by clicking on the Actio
 
  ![alt text][contacts-2]
 
-
-
+[CLI]: <https://docs.connexcs.com/en/latest/cli>
+[Ingress Routing]: <https://docs.connexcs.com/en/latest/ingress-routing>
 [customer-dashboard]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/customer-dashboard-new.png "Customer-Dashboard"
 [add-customer-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/add-customer-new.png "Add-Customer"
 [add-customer]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/add-customer.png "Add-Customer"
