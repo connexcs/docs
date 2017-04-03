@@ -13,8 +13,7 @@
     * [Payments](#payments)
   * [Carrier Setup](#carrier-setup)
     * [Authentication](#authentication_1)
-  * [Server Reactivation](#server-reactivation)
-  * [Deploy Server](#deploy-server)
+    * [Deploy Server](#deploy-server)
    
 
 
@@ -243,20 +242,6 @@ Below are the instructions to setup the provider rate card manually. There are t
  ![alt text][ingress-3]
 
 For detailed information about ingress routing click on [Ingress Routing]
-
-
-## Server Reactivation
-
-1. Click on Setup> My Servers
-
- ![alt text][server-reactivation]
-
-2. Click on the server IP
-3. Click on Reactivate to activate your server.
-
- ![alt text][server-reactivation-1]
-
-You will only be able to reactivate your server if your account balance is showing a positive amount.
 
 ## Deploy Server
 
