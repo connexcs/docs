@@ -11,7 +11,6 @@ pages:
 - GETTING STARTED: getting-started.md
 
 - CUSTOMER:
-    - Alerts: alert.md
     - Customer: customer.md
     - Credit Control: credit-control.md
     - CLI: cli.md
@@ -21,7 +20,6 @@ pages:
     - Routing Strategy: routing-strategy.md
     
 - CARRIER: 
-    - Alerts: alert.md
     - Carrier: carrier.md
 
 - RATE CARDS:
