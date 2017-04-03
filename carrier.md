@@ -180,12 +180,38 @@ Fill in the payment information and click “Save”.
 After adding the details, remember to click “Save”.
 
 ![alt text][carrier-did]
- 
+
+### Alerts
+
+The last tab is the "Alerts" tab. It allows you to generate alerts to your customers when some specific events are triggered. You can view all your alerts by clicking on this tab.
+
+You can also add a customised alert by clicking on the "+" sign.
+
+![alt text][carrier-alert-1]
+
+You need to give the alert a name such as: Low Balance Alert,
+
+Next select the email address or phone number to whom you wish the alert to go to,
+
+The Area is the place that is being monitored ie Balance,
+
+The Operator is the comparitor to which the threshold is compared. If the Operator is set to eg >$50 and the Threshold is set to $50 then the Alert will be triggered and sent out to the recipient.
+
+Click "Save" and a new alert will be created.
+
+![alt text][carrier-alert-2]
+
 ## Code Consistency
 
 This measures the changes of response codes on the SAME number that have been returned from the carrier. It is useful for identifying if the carrier is using routes of different quality or generally poor quality overall. Good carriers will have a 100% code consistency.
 
 The metric only takes into account 200 and 404's.
+
+## Consecutive failures
+The consecutive failures system is a primitive way of measuring the ability of a carrier to connect calls, once a call connects the counter is reset and once a call fails the counter is incremented by one.
+This can lead to a false positive if the customer is sending a lot of missed call traffic or calling bad numbers, however in general the counter is one of the quickest ways to establish when a route is failing.
+
+
 
 [carrier-dashboard]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-dashboard.png "Carrier-Dashboard"
 [carrier-list]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-list.png "Carrier-List"
@@ -208,6 +234,3 @@ The metric only takes into account 200 and 404's.
 [carrier-alert-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-alert-1.png "Carrier Alert-1"
 [carrier-alert-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-alert-2.png "Carrier Alert-2"
 
-## Consecutive failures
-The consecutive failures system is a primitive way of measuring the ability of a carrier to connect calls, once a call connects the counter is reset and once a call fails the counter is incremented by one.
-This can lead to a false positive if the customer is sending a lot of missed call traffic or calling bad numbers, however in general the counter is one of the quickest ways to establish when a route is failing.
