@@ -11,6 +11,7 @@ pages:
 - GETTING STARTED: getting-started.md
 
 - CUSTOMER:
+    - Alerts: alert.md
     - Customer: customer.md
     - Credit Control: credit-control.md
     - CLI: cli.md
@@ -20,27 +21,27 @@ pages:
     - Routing Strategy: routing-strategy.md
     
 - CARRIER: 
+    - Alerts: alert.md
     - Carrier: carrier.md
 
 - RATE CARDS:
     - Overview: provider-ratecard.md
     - Provider Ratecard: provider-ratecard.md
     - Customer Ratecard: customer-ratecard.md
-    - Generating: rate-card-building.md
+    - Building: rate-card-building.md
     - Card Management: card-management.md
     
 - DID:
-    - DID: did.md
+    - DID/Origination: did.md
 
 - MISCELLANENOUS:
     - Authentication: authentication.md
-    - Alerts: alert.md
-    - Billing: billing.md
+    - Connex Billing: billing.md
     - Calling Card: calling-card.md
     - Files: files.md
     - Feature List: feature-list.md
     - Invoice: invoice.md
-    - Limiting: limiting-cps.md
+    - Capacity Limiting: limiting-cps.md
     - Logging: logging.md
     - Circuit Test: circuit-test.md
     - My Servers: my-servers.md
