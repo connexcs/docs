@@ -14,7 +14,6 @@
   * [Carrier Setup](#carrier-setup)
     * [Authentication](#authentication_1)
   * [Server Reactivation](#server-reactivation)
-  * [Deploying SSL Certificates](#deploying-ssl-certificates)
   * [Deploy Server](#deploy-server)
    
 
