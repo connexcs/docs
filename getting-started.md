@@ -15,7 +15,6 @@
     * [Authentication](#authentication_1)
   * [Server Reactivation](#server-reactivation)
   * [Deploying SSL Certificates](#deploying-ssl-certificates)
-  * [Load Balancing using DNS (Domain Name System)](#load-balancing-using-dns-domain-name-system)
   * [Deploy Server](#deploy-server)
    
 
@@ -270,21 +269,6 @@ The SSL certificate can be deployed on your customer portal with a single click.
 3. Click on Deploy Certificate
 
  ![alt text][ssl]
-
-## Load Balancing using DNS (Domain Name System)
-
-When using more than one SIP server, you can load balance the calls without a load balancer server using the DNS method. To configure the DNS please follow the steps below:
-
-1. Click on Setup> My Account
-2. Click  on Domains
-3. Click on + under Server
-
-   ![alt text][load-balance]
-
-4. Enter the domain name under Domain field. Example your company name without spaces.
-5. Select TLD (Top Level Domain) to sip.direct.
-6. Check the records accordingly against the server IP
-7. Click Save.
 
 ## Deploy Server
 
