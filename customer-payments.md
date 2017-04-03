@@ -26,15 +26,15 @@ Instant Payment Notification (IPN) is a message service that notifies you of eve
 
 In order for this to work you need to configure certain settings on your ConnexCS control panel and on PayPal.
 
-Difference between Mass Pay & Express Checkout
-Mass Pay
+Difference between **Mass Pay** & **Express Checkout**
+**Mass Pay**
 - Made via a CSV upload to paypal website.
 - Lower Slightly Transaction fee's
 - Sender pays the fee's
 - If I send $100, $100 arrives and sender pays an extra 2% Transaction fee, capped at $1 per payment.
 - Uses Paypal IPN
 
-Express Checkout
+**Express Checkout**
 - Made through customer portal
 - Standard Paypal Fee's - (about 3.4% + $0.30)
 - Receiver pays these fee's
