@@ -13,6 +13,7 @@
     * [SIP / RTP Firewall Block on Default](#sip-rtp-firewall-block-on-default)
     * [IDS / IPS](#ids-ips)
   * [Data Usage](#data-usage)
+  * [Deploying SSL Certificates](#deploying-ssl-certificates)
 
 # Security
 
@@ -64,3 +65,15 @@ We have application level logic that identifies malicious activity that will esc
 
 # Data Usage
 Connex Carrier Services Worldwide LTD is an independent company, not owned by a parent company or affiliates. All data is retained in ConnexCS on ConnexCS servers and is never passed to any 3rd parties. All staff have to abide by company non-disclosure policies and it is made clear that any data breach would be treated with the utmost severity.
+
+## Deploying SSL Certificates 
+
+The SSL certificate can be deployed on your customer portal with a single click.
+
+1. Click on Setup> My Account
+2. Click on Domains
+3. Click on Deploy Certificate
+
+ ![alt text][ssl]
+
+[ssl]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/ssl.png "ssl"
