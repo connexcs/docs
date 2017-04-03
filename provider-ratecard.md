@@ -2,7 +2,7 @@
 
 * [Table of Contents](#table-of-contents)
 * [Rate Card Management](#rate-card-management)
-    * [Provider Rate Card Upload](#provider-rate-rard-upload)
+    * [Provider Rate Card Upload](#provider-rate-card-upload)
     * [Revision Tab](#revision-tab)
 
 
