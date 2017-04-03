@@ -3,6 +3,8 @@
 * [Table of Contents](#table-of-contents)
 * [Introduction](#introduction)
   * [Prerequisites](#prerequisites)
+    * [Email Verification](#email-verification)
+    * [Mobile Verification](#mobile-verification)
     * [Customer](#prerequisites-customer)
     * [Carrier](#prerequisites-carrier)
     * [Rate Card](#prerequisites-rate-card)
@@ -14,8 +16,6 @@
   * [Server Reactivation](#server-reactivation)
   * [Deploying SSL Certificates](#deploying-ssl-certificates)
   * [Load Balancing using DNS (Domain Name System)](#load-balancing-using-dns-domain-name-system)
-  * [Email Verification](#email-verification)
-  * [Mobile Verification](#mobile-verification)
   * [Deploy Server](#deploy-server)
    
 
@@ -32,6 +32,45 @@ This guide will assume:
 1. You have a modern web browser. 
 2. You have a basic understanding of Telecoms (Customers, Provider, etc). 
 3. You have already created an account with ConnexCS.com.
+
+## Email Verification 
+
+We verify email addresses to ensure that they are genuine.
+
+Steps to Verify Email Address: 
+
+1. Click on the Top Left notification button
+2. Click on Verify on Verify Email
+
+  ![alt text][verify-email-1]
+
+3. Click on Send Verification Code
+4. Enter the Verification code sent to your email address and click Verify.
+
+  ![alt text][verify-email-2]
+
+
+## Mobile Verification 
+
+We verify mobile phone numbers to ensure that they are genuine.
+
+Steps to Verify Mobile Number
+
+1. Click on the Top Left notification button
+2. Click on Verify on Verify Mobile
+
+  ![alt text][verify-mobile-1]
+
+3. Click on Edit
+4. Enter the phone number in e.164 format and click save
+
+  ![alt text][verify-mobile-3]
+
+5. Click on Send Verification Code
+6. Enter the Verification code sent to your mobile and click Verify.
+
+  ![alt text][verify-mobile-2]
+
 
 ## Prerequisites Customer
 
@@ -246,45 +285,6 @@ When using more than one SIP server, you can load balance the calls without a lo
 5. Select TLD (Top Level Domain) to sip.direct.
 6. Check the records accordingly against the server IP
 7. Click Save.
-
-## Email Verification 
-
-We verify email addresses to ensure that they are genuine.
-
-Steps to Verify Email Address: 
-
-1. Click on the Top Left notification button
-2. Click on Verify on Verify Email
-
-  ![alt text][verify-email-1]
-
-3. Click on Send Verification Code
-4. Enter the Verification code sent to your email address and click Verify.
-
-  ![alt text][verify-email-2]
-
-
-## Mobile Verification 
-
-We verify mobile phone numbers to ensure that they are genuine.
-
-Steps to Verify Mobile Number
-
-1. Click on the Top Left notification button
-2. Click on Verify on Verify Mobile
-
-  ![alt text][verify-mobile-1]
-
-3. Click on Edit
-4. Enter the phone number in e.164 format and click save
-
-  ![alt text][verify-mobile-3]
-
-5. Click on Send Verification Code
-6. Enter the Verification code sent to your mobile and click Verify.
-
-  ![alt text][verify-mobile-2]
-
 
 ## Deploy Server
 
