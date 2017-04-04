@@ -1,9 +1,10 @@
 # Table of Contents
 * [Table of Contents](#table-of-contents)
-* [How to perform circuit test](#how-to-perform-circuit-test)
+* [Circuit Test](#circuit-test)
 
 
 # Circuit Test
+
 A circuit test works by initiating a call in the switch which will go to one of your termination providers, the call should then pass though the PSTN network and terminate on one of your DID providers, the call will then continue back to the switch and link up with the same dialog.
 
 Circuit Test helps you perform a test to determine the quality of the route. This can also help you analyze FAS, RTP quality, MOS, Release reason, jitter, packet loss percentage & answer delay measurement etc. To perform circuit test, follow the steps below:
