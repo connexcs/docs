@@ -23,7 +23,7 @@ To add a new domain:
 
 1. Click on the '+' icon under Portal.
 
-![alt text][domain]
+   ![alt text][domain]
 
 2. Enter the domain name, example, portal.yourwebsite.com
 3. Select the brand name, this is the name that will be displayed on your customer portal.
@@ -33,7 +33,7 @@ To add a new domain:
 7. Select the access (Carrier Portal, CDR, Rate Card, Balance etc.) that you wish to allow your customers on customer portal.
 8. Click on the Save button.
 
-![alt text][add-new-domain]
+   ![alt text][add-new-domain]
 
 We will now learn how to add Contacts on control panel, basically this is done to grant access to your customers for customer portal, below are the steps.
 
