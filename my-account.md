@@ -87,7 +87,10 @@ Users can also edit their personal information in Current User section.
 
 
 ## Two factor Authentication
-Users can also enable "Two factor Authentication". For this purpose, click on the Two factor Authentication and click on Enable the TFA, as shown in the image below:
+Two-factor authentication (also known as 2FA) is a method of confirming a user's claimed identity by utilizing a combination of two different components.
+You can use the Google Authenticator or a similar app which can generate the security code.
+
+ You can enable "Two factor Authentication". For this purpose, click on the Two factor Authentication and click on Enable the TFA, as shown in the image below:
 
 ![alt text][tfa]
  
