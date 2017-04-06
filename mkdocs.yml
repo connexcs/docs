@@ -22,9 +22,6 @@ pages:
 - CARRIER: 
     - Carrier: carrier.md
     
-- CUSTOMER PORTAL:
-    - Customer Portal: customer-portal.md
-
 - RATE CARDS:
     - Overview: provider-ratecard.md
     - Provider Ratecard: provider-ratecard.md
@@ -34,6 +31,9 @@ pages:
     
 - DID:
     - DID/Origination: did.md
+    
+- CUSTOMER PORTAL:
+    - Customer Portal: customer-portal.md
 
 - MISCELLANENOUS:
     - Authentication: authentication.md
