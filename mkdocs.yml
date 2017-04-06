@@ -21,6 +21,9 @@ pages:
     
 - CARRIER: 
     - Carrier: carrier.md
+    
+- CUSTOMER PORTAL:
+    - Customer Portal: customer-portal.md
 
 - RATE CARDS:
     - Overview: provider-ratecard.md
