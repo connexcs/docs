@@ -67,6 +67,13 @@ After clicking "Edit" button, a new page will appear, make the required changes 
 
 ![alt text][invoice-4]
 
+## Invoice Line grouping
+
+Invoice line grouping lets you group the invoice based on the destination or Day.
+
+This can be set inside the Settings menu under My Account.
+
+
 
 
 [invoice-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/invoice-1.png "Invoice-1"
