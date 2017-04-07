@@ -44,13 +44,14 @@ pages:
     - Authentication: authentication.md
     - Connex Billing: billing.md
     - Calling Card: calling-card.md
+    - Circuit Test: circuit-test.md
+    - Capacity Limiting: limiting-cps.md
     - Files: files.md
     - Feature List: feature-list.md
     - Invoice: invoice.md
-    - Capacity Limiting: limiting-cps.md
     - Logging: logging.md
-    - Circuit Test: circuit-test.md
     - My Servers: my-servers.md
+    - Packages: packages.md
     - Routing: routing.md
     - Routing USA: routing-usa.md
     - Routing Engine: routing-engine.md
@@ -58,7 +59,6 @@ pages:
     - Specification: spec.md
     - Scheduled Breakout Reports: scheduled-breakout-reports.md
     - System Status: system-status.md
-    - Packages: packages.md
      
 - REPORT:
     - Breakout Reports: report.md
