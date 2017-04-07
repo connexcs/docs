@@ -59,7 +59,8 @@ pages:
     - Specification: spec.md
     - Scheduled Breakout Reports: scheduled-breakout-reports.md
     - System Status: system-status.md
-     
+    - Templates: templates.md
+    
 - REPORT:
     - Breakout Reports: report.md
    
