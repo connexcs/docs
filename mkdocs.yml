@@ -36,6 +36,7 @@ pages:
     - Customer Portal: customer-portal.md
 
 - DEVELOPERS:
+    - Form Builder: form-builder.md
     - Scriptforge: scriptforge.md
     - User Space Database: user-space-db.md 
 
