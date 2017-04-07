@@ -22,11 +22,11 @@ Below are the steps to add a form
 
 4. Name the form. 
 5. Select the scriptforge from the drop down menu if you already have one.
+6. Select the placement - This is where the form will be used.
+7. Drag & Drop the desired item from the left section to the grey area.
 
   ![alt text][form-builder-2]
 
-6. Select the placement - This is where the form will be used.
-7. Drag & Drop the desired item from the left section to the grey area.
 8. Complete the form information & click save.
 
   ![alt text][form-builder-3]
