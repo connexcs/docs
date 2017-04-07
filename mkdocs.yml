@@ -35,6 +35,10 @@ pages:
 - CUSTOMER PORTAL:
     - Customer Portal: customer-portal.md
 
+- Developers
+    - Scriptforge: scriptforge.md
+    - User Space Database: user-space-db.md 
+
 - MISCELLANENOUS:
     - Authentication: authentication.md
     - Connex Billing: billing.md
@@ -51,11 +55,9 @@ pages:
     - Routing Engine: routing-engine.md
     - Reporting Problems: reporting-problems.md
     - Specification: spec.md
-    - Scriptforge: scriptforge.md
     - Scheduled Breakout Reports: scheduled-breakout-reports.md
     - Packages: packages.md
-    - User Space Database: user-space-db.md
-   
+     
 - Report:
     - Breakout Reports: report.md
    
@@ -65,3 +67,4 @@ pages:
     - Security: security.md
     - Media Handling: media-handling.md    
     - Scaling and Load Balancing: scaling-load-balancing.md 
+
