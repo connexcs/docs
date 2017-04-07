@@ -35,7 +35,7 @@ pages:
 - CUSTOMER PORTAL:
     - Customer Portal: customer-portal.md
 
-- Developers
+- DEVELOPERS:
     - Scriptforge: scriptforge.md
     - User Space Database: user-space-db.md 
 
@@ -59,10 +59,10 @@ pages:
     - System Status: system-status.md
     - Packages: packages.md
      
-- Report:
+- REPORT:
     - Breakout Reports: report.md
    
-- Architecture:
+- ARCHITECTURE:
     - API: api.md
     - NAT Traversal: far-end-nat-traversal.md
     - Security: security.md
