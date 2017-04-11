@@ -8,7 +8,7 @@
     * [Charges](#charges)
 
 # USA Routing
-USA Routing is somewhat more complicated that international. If you are not familier with conventional (international routing) in ConnexCS please read [Routing](/en/latest/routing/) first.
+USA Routing is somewhat more complicated than international. If you are not familier with conventional (international routing) in ConnexCS please read [Routing](/en/latest/routing/) first.
 
 ## NPA-NXX
 NPA-NXX refers to the first 6 digits of USA numbers excluding the country code, more information can be found here:
@@ -35,7 +35,7 @@ Inter/Intra state routing is dependant on the CLI (aka ANI) which is presented i
 ## LRN/LNP 
 [LRN (Location Routing Number)](https://en.wikipedia.org/wiki/Location_Routing_Number) / [LNP (Local Number Portability)](https://en.wikipedia.org/wiki/Local_number_portability) is a method of allowing USA numbers to be ported between providers whilst allowing the receiving provider to assign their own charge to the number.
 
-A call placed to a number that resolved to a different LRN number _may not_ be charged at the rate is it listed in the NPA-NXX Rate card.
+A call placed to a number that resolved to a different LRN number _may not_ be charged at the rate it is listed in the NPA-NXX Rate card.
 
 The process is as follows
 1. Customer A with CLI (A) places a call to customer B with number (B)
