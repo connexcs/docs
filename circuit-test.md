@@ -5,9 +5,9 @@
 
 # Circuit Test
 
-A circuit test works by initiating a call in the switch which will go to one of your termination providers, the call should then pass though the PSTN network and terminate on one of your DID providers, the call will then continue back to the switch and link up with the same dialog.
+A circuit test works by initiating a call in the switch which will go to one of your termination providers. The call should then pass though the PSTN network and terminate on one of your DID providers, it will then continue back to the switch and link up with the same dialog.
 
-Circuit Test helps you perform a test to determine the quality of the route. This can also help you analyze FAS, RTP quality, MOS, Release reason, jitter, packet loss percentage & answer delay measurement etc. To perform circuit test, follow the steps below:
+Circuit Test helps you perform a test to determine the quality of the route. This can also help you analyse FAS, RTP quality, MOS, Release reason, jitter, packet loss percentage & answer delay measurement etc. To perform circuit test, follow the steps below:
 
 1.	Click on Management> DID> Add DID
 
@@ -29,7 +29,7 @@ Circuit Test helps you perform a test to determine the quality of the route. Thi
 
 8. Enter the per month sell Cost
 
-9. Enter the Max duration, the default value is 3600 Sec & click Save
+9. Enter the Max duration, the default value is 3600 seconds & click Save
 
 ![alt text][circuit-test-3]
 
@@ -42,7 +42,7 @@ Now, it's time for us to configure the circuit test:
 
 2. Click on Settings tab
  
-2.	Click the **"Edit"** button and enter the originations ingress IP and save.
+2.	Click the **"Edit"** button on Origination Ingress Address and enter the origination ingress IP and save.
 
 3.	Now click on **"Edit"** for Termination Ingress Address button and enter the termination ingress IP and save.
 
@@ -51,7 +51,7 @@ Now, it's time for us to configure the circuit test:
 ![alt text][circuit-test-6]
 
 
-4.	Similarly, for the **"Circuit Test User"**, Select the customer account.
+4.	Similarly, for the **"Circuit Test User"**, click **"Edit"** Select the customer account.
 
 ![alt text][circuit-test-7]
 
@@ -59,7 +59,7 @@ Now, it's time for us to configure the circuit test:
 
 5.	Now go to Rate Card under Provider rate card.
 
-6.	Click on the Provider Rate Card that you had selected while adding the DID.
+6.	Click on the Provider Rate Card that you have selected while adding the DID.
 
 ![alt text][circuit-test-9]
 
@@ -67,7 +67,7 @@ Now, it's time for us to configure the circuit test:
 
 ![alt text][circuit-test-10]  
  
-8.	A dialog box will open, enter the CLI number that you wish to present and select the Destination Number which you entered while making DID and press **"Send"**. A confirmation box will appear telling that you have initiated the test, the test result might take a while to appear on the screen.
+8.	A dialog box will open, enter the CLI number that you wish to present and select the Destination Number which you entered while setting the DID and press **"Send"**. A confirmation box will appear telling that you have initiated the test, the test result might take a while to appear on the screen.
 
 ![alt text][circuit-test-11]  
   
