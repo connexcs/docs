@@ -10,7 +10,7 @@
 
 # My Servers
 
-You can manage your servers from the My server meni. This can be accessed from the side bar, as shown in the image below:
+You can manage your servers from the My server menu. This can be accessed from the side bar, as shown in the image below:
 
 ![alt text][server-img-1]
 
@@ -22,10 +22,10 @@ You can manage your servers from the My server meni. This can be accessed from t
 2. Start Server: Lets you start your server.
 3. Stop Server: Lets you stop the server
 4. Restart Server: To restart your server click on Restart server
-5. OS Cycle: This will gracefully shuts your server down.
+5. OS Cycle: This will gracefully shut your server down.
 6. Power Cycle: This will shut down your server, this is like hard reset.
 
-We dont recommend perforimg any of the actions above as this may interrupt your calls/service.
+We don't recommend perforimg any of the actions above as this may interrupt your calls/service.
 
 ## RTP Servers
 
