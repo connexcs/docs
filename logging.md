@@ -9,15 +9,16 @@
 
 # Logging
 
-The logging is used to check Real time call attempts, SIP traces, routing status & simulate a call.
+The logging is used to check Real time call attempts, SIP traces, routing status & to simulate a call.
 
 # SIP traces
-To view the SIP traces of a call follow the below steps.
+To view the SIP traces of a call follow the steps below.
+
 1. Click on Management> Logging
 
 ![alt text][sip-trace-1]
 
-2. Click on the call id that you wish to view the SIP traces for
+2. Click on the call id for which you wish to view the SIP traces.
 
 ![alt text][sip-trace-2]
 
@@ -27,11 +28,11 @@ To view the SIP traces of a call follow the below steps.
 
 ![alt text][sip-trace-4]
 
-**Please note the SIP traces are not guaranteed always.**
+**Please note the SIP traces are not always guaranteed.**
 
 ## Simulating Calls
 
-Users can simulate the calls by following simple procedure:
+Users can simulate the calls by using the following simple procedure:
 
 1. Click on Management> Logging> Simulate
 
@@ -46,7 +47,7 @@ Users can simulate the calls by following simple procedure:
 
 ![alt text][simulate-1]
 
-2. Pop-up will show up. Enter the details in it.
+2. Pop-up will appear. Enter the details in it.
 
 ## Lookup
 
@@ -56,7 +57,7 @@ Lookup service helps you to do a query of a number,
 
 ![alt text][lookup-1]
 
-2. enter the phone number
+2. Enter the phone number
 3. Select the type and click search
 
 ![alt text][lookup-2]
