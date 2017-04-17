@@ -14,11 +14,11 @@ The API is _Restful JSON_ and accessible over HTTPS. It makes distinction around
 ## Switch Administration
 The switch API provides **full administrative capabilities**, by this we mean "every function that you can accomplish through our web interface is available through our API".
 
-You can find the API Spec here: <https://docs.connexcs.com>
+You can find the API Spec here: <https://app.connexcs.com/docs>
 
 ## Customer Administration
 If your customers wish to be able to talk to your switch and get information such as current balance or CDRs this is the API you need.
-You can find the API Spec here: <https://portal.connexcs.com/docs>
+You can find the API Spec here: <https://customer-api.connexcs.com/>
 
 
 ## Lookup Services
