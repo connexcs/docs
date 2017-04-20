@@ -8,23 +8,23 @@
 
 # Invoice
 
-You can generate Invoice for your customers by following the steps below.
+You can generate Invoices for your customers by following the steps below.
 
 1. Click on Management> Customers
 2. Click on the customer name
 
 ![alt text][new-inv]
 
-3. On the Main tab click on Dialy under Summary Check the invoice box against the date, you can select multiple dates at one go.
+3. On the Main tab click on Daily under Summary. Check the invoice box against the date, you can select multiple dates in one go.
 4. Click on Generate Invoice.
 
 ![alt text][new-inv-1]
 
-The Invoice will be generated, this invoice is available for download.
+The Invoice will be generated. This invoice is available for download.
 
 
 
-Login to your Connex account and from the side menu look for "Management" and extend. From the "Management" submenu items, select "Invoice".
+Login to your Connex account and from the side menu look for "Management" and extend. From the "Management" sub-menu items, select "Invoice".
 
 ![alt text][invoice-1]
  
@@ -69,7 +69,7 @@ After clicking "Edit" button, a new page will appear, make the required changes 
 
 ## Invoice Line grouping
 
-Invoice line grouping lets you group the invoice based on the destination or Day.
+Invoice line grouping lets you group the invoice based on the destination or day.
 
 This can be set inside the Settings menu under My Account.
 
