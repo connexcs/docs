@@ -55,7 +55,7 @@ ConnexCS offers a wide range of features including Customer Management, Rate Car
 ## CDR Management
 * Processing of CDR in Real time.
 * Real time data backup on multiple servers with instant access.
-* Unparalleled reliability, redundancy and speed of data access.
+* Unparallelled reliability, redundancy and speed of data access.
 * The ability to compare rate cards to identify discrepancies in billing between customers and providers.
 * Add unlimited columns to capture all your data & unlimited rows to capture all your calls.
 * Detailed statistics of ACD/ASR/NER/PDD on demand.
