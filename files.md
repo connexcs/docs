@@ -10,7 +10,7 @@
 
 # How to upload files in your Connex account?
 
-This tutorial will guide you how to upload files to your connex account.
+This tutorial will guide you on how to upload files to your connex account.
 
 1. Login to your Connex account. From the side menu, extend **"Management"**, find **"Files"** and click on it.
 
