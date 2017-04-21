@@ -15,11 +15,11 @@
 
 ## DID
 
-This tutorial will guide you through the **DID section**, which can be accessed from the side bar. Just click on the *Management*, and go to **DID** as highlighted in the below image:
+This tutorial will guide you through the **DID section**, which can be accessed from the side bar. Just click on *Management*, and go to **DID** as highlighted in the image below:
 
 ![alt text][did-img-1]
 
-Following 4 actions can be performed in the **DID section**. 
+The following 4 actions can be performed in the **DID section**. 
 
 1. Add a DID
 2. Refresh the list
@@ -28,13 +28,13 @@ Following 4 actions can be performed in the **DID section**.
 
 ### Add a DID
 
-To add a new inbound member, follow the steps shown below:
+To add a new inbound number, follow the steps shown below:
 
  1. Click on the **Add DID**, as highlighted in the image below.
 
 ![alt text][did-img-2]
 
- 2. Fill out the details of the modal. 
+ 2. Fill out the details of the popup. 
 
 ![alt text][did-img-3]
 
@@ -45,7 +45,7 @@ To add a new inbound member, follow the steps shown below:
 
 You can also refresh all the details of the **DID** section, anytime, to get the updated list.
 
-Just give a click on **Refresh** button and list will get updated with latest saved details .
+Just give a click on **Refresh** button and the list will get updated with latest saved details .
 
 ### Delete a DID
 
@@ -56,7 +56,7 @@ You can also delete a DID from the list.
 
 ### Provision ON/OFF toggle
 
-You can also turn the *Provision ON or OFF*. All you need is to click the *Provision* toggle for turning it off or on, as highlighted in the image below:
+You can also turn the *Provision ON or OFF*. All you need to do is to click the *Provision* toggle for turning it off or on, as highlighted in the image below:
 
 ![alt text][did-img-4]
 
@@ -85,7 +85,7 @@ You can also set the priority of any column, by clicking the column name. (E.g. 
 
 ### Set the Column list
 
-You also have a choice to set the column lists, by deciding which column shall be shown in the grid. 
+You have a choice to set the column lists, by deciding which column shall be shown in the grid. 
 
 1. Click on the button at top right, which is highlighted in the image below:
 
@@ -99,21 +99,21 @@ You can also search the details related to **DID section** in the text field, th
 
 ## How to perform one action on multiple DID’s in one go?
 
-Editing all the DID one by one might feel like a time taking task. That's why Connex has introduced a functionality where you can perform the same action over multiple DID’s in one go.
+Editing all the DIDs one by one may feel like a tedious task. That's why Connex has introduced a functionality where you can perform the same action over multiple DID’s in one go.
 
-1)	Login to your Connexaccount and from the side menu, extend the "Management" menu item and look for "DID". 
+1)	Login to your Connex account and from the side menu, extend the "Management" menu item and look for "DID". 
 
 ![alt text][did-bulk-1]
  
-2)	Click on it and you would be landed on a new page showing you the existing DIDs.
+2)	Click on it and you will open a new page showing the existing DIDs.
 
 ![alt text][bulk-did-2]
  
-3)	Select all the DIDs, onwhich you want to perform the same action on and click on "Edit Selected Items". 
+3)	Select all the DIDs, on which you want to perform the same action and click on "Edit Selected Items". 
 
 ![alt text][bulk-did-3]
  
-4)	A new form would open, perform the changes and click on "Save".
+4)	A new form will open, perform the changes and click on "Save".
 
 ![alt text][bulk-did-4]
  
