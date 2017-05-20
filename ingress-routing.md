@@ -17,8 +17,7 @@
     * [Options](#options)
     * [CPS Limitation ](#cps-limitation)
 	* [SIP Session Timers](#sip-session-timers)
-
-
+    * [ASR+](#asr-plus)
 
 # Ingress Routing
 
@@ -157,3 +156,25 @@ Passive SST is enabled as default and without changing any settings, all RE-INVI
 It is also possible to be proactive about the RE-INVITES, instructing the ConnexCS switch to send these: upstream to the carrier, downstream to the customer or in both directions.
 
 SST is currently the best way to prevent long duration calls and superceeds SIP Ping Timeout.
+
+## ASR+
+ASR+ is a proprietary technology developed by ConnexCS to help filter known failed non-existant / working numbers between the customer and the carrier for termination.
+
+### Advantages
+- Quick failure of known bad numbers, reduces response time for your customers.
+- Improves the ASR of the traffic that your upstream carrier sees.
+- Highly effective for call center traffic.
+
+### Disadvantages
+- Marginal impact on your NER due to false positive matches. This is usually kept within tolerances of < 0.1%.
+- Does not off improvements over all destinations.
+
+### Settings
+| Value         | Description                | 
+| ------------- |----------------------------| 
+| Off           | ASR+ Disabled              | 
+| ASR+ (Low)    | Active on 30% of calls     | 
+| ASR+ (High)   | Active on 90% of calls     |
+| ASR?          | When ASR+ is enabled on the provider card, Active on 90% of calls |
+| ASR++         | Only known connected calls will be allowed to pass |
+| ASR+?         | When ASR+ is enabled on the provider card, only known connected calls will be allowed to pass  |
