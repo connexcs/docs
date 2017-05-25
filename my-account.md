@@ -20,13 +20,13 @@
 
 # My Account
 
-This tutorial will guide you what actions you can perform by being into your account.
+This tutorial will guide you what actions you can perform by in your account.
 
-In My Account, users can update and manage information of their account, add personal information like name, mobile number, users, groups etc.
+In My Account, users can update and manage information in their account, add personal information like name, mobile number, users, groups etc.
 
-To open My Account, just click on the Setup from the left pane and then click on the My Account, shown as re highlighted in the image below. 
+To open My Account, just click on the Setup from the left pane and then click on My Account, shown highlighted in the image below. 
 
-There are basically eight functions, as blue highlighted in the figure below:
+There are basically eight functions, highlighted in blue in the figure below:
 
 ![alt text][my-account]
  
@@ -54,32 +54,32 @@ This function basically involves two types of information:
 
 ## Company Information
 
-To add/edit information, users can click on the pencil icon. In Company's Information, users have to fill out the following details:
+To add/edit information, you can click on the pencil icon. In Company's Information, the following details are required:
 
 ![alt text][my-account-1]
  
 1. Name
 2. Address Line 1 and Address Line 2. 
-3. Country, City, Country, Post Code
+3. City, County/ State, Country, Post Code/ ZIP code
 
-After filling all the details, click on Save button.
+After filling in all the details, click on Save button.
 
 ![alt text][company-info]
 
 ## General Information
 
-In General Information, users will fill out the following details:
+In General Information, you need to set the following details:
 
 ![alt text][general-info]
  
-1. Users will write the Currency. 
-2. Users will select the Date Format from the dropdown options.
-3. In Contact Information, users will write Phone and Mobile number.
-4. For security and Add-ons, users can check the box and then they'll receive emails, every time they login.
+1. The Currency. 
+2. The Date Format from the dropdown options.
+3. In Contact Information, put the Phone and Mobile number.
+4. For security and Add-ons, you can check the box and then they'll receive emails, every time they login.
 
 ## Personal Information
 
-Users can also edit their personal information in Current User section. 
+You can also edit their personal information in Current User section. 
 
 1. Click on Edit icon.
 2. Enter or change the details.
@@ -90,11 +90,11 @@ Users can also edit their personal information in Current User section.
 Two-factor authentication (also known as 2FA) is a method of confirming a user's claimed identity by utilizing a combination of two different components.
 You can use the Google Authenticator or a similar app which can generate the security code.
 
- You can enable "Two factor Authentication". For this purpose, click on the Two factor Authentication and click on Enable the TFA, as shown in the image below:
+You can enable "Two factor Authentication". For this purpose, click on the Two factor Authentication and click on Enable the TFA, as shown in the image below:
 
 ![alt text][tfa]
  
-### Users can also edit SMTP Details.
+### You can also edit SMTP Details.
 
 ![alt text][smtp]
  
@@ -107,13 +107,13 @@ You can click the Test Email button to check if your configration is succesful. 
 
 ## Users 
 
-Users can add other users in this section. Names with their emails shall appear in the Users section. Groups can also be made, consisting of different users. 
+You can add other users in this section. Names with their emails shall appear in the Users section. Groups can also be made, consisting of different users. 
 
 To add a new user, simply:
 
-1. Click on the Users section, highlighted as red in the image below.
-2. Click the '+' icon to add a new user, highlighted as orange in the image below.
-3. Pop-up will show up and fill out the details of the dialog box.
+1. Click on the Users section, highlighted in red in the image below.
+2. Click the '+' icon to add a new user, highlighted in orange in the image below.
+3. Pop-up will appear and then you need to fill out the details in the dialog box.
 4. Click on Save button.
  
 ![alt text][users]
@@ -122,7 +122,7 @@ The details of the dialog box, to add new users, are as follows:
 
 ![alt text][user-config]
 
-Users will provide the,
+You will provide the,
 
 1. Name
 2. Password
@@ -131,17 +131,17 @@ Users will provide the,
 
 Click on Save button, once the details have been filled out. 
 
-To add new groups to the Users section, click on the '+' sign button and further add the details. 
+To add new groups to the Users section, click on the '+' sign button and add the details. 
 
 ![alt text][group-config]
  
-1. Users will write the name in the given text field.
-2. From other options (Customer, Carrier, Card, Cdr, Log, Report etc.), users select the option from dropdown menu as Select, Allow or Deny and press Save button.
+1. Put the name in the text field.
+2. From other options (Customer, Carrier, Card, Cdr, Log, Report etc.), select the option from dropdown menu as Select, Allow or Deny and press Save button.
 3. If you wish to delete a user, select the user and hit delete
 
 ## API (Application Programming Interface)
 
-Users can set the APIs also. The overall view of API section is as follows:
+You can also set the APIs. The overall view of API section is as follows:
 
 ![alt text][api]
  
@@ -149,12 +149,12 @@ Users can set the APIs also. The overall view of API section is as follows:
 
 Users can add the new API by:
 
-1. Click on the Add New button, highlighted as orange.
+1. Click on the Add New button, highlighted in orange.
 2. Select either PayPal or Stripe.
 
 ![alt text][paypal-1]
 
-3. Fill out the details of the dialog box and press Save button.
+3. Fill out the details in the dialog box and press Save button.
 
 ### For PayPal:
  
@@ -173,16 +173,16 @@ For Stripe:
  
 1. Select the Mode,  this needs to be set to live
 2. Enter the Public Key and Private Key in the respective text fields, this can be obtained from your stripe account.
-3.  Select the currencies that you wish to accept the payment.
+3. Select the currencies that you wish to accept the payment.
 
-Users can also:
+You can also:
 
 1. Refresh and Delete the APIs. 
 2. Edit the information regarding API. Click on the name from the list and edit the details.
 
 ## Domains
 
-Domains lets you add a domain/sub domain on your control panel, this will let your customer to use the customer portal. the domain can be whitelablled.
+Domains lets you add a domain/sub domain on your control panel which will let your customer use the customer portal. The domain can be whitelablled.
 
 ![alt text][domain]
 
@@ -195,7 +195,7 @@ To add a new domain, simply:
 
 ![alt text][add-new-domain]
 
-Users can also edit the Domains.
+Domains can also be edited.
 
 1. Click on the Domains from the list.
 2. Edit the details.
@@ -210,7 +210,7 @@ Users can also edit the Domains.
 
 ## Payments
 
-Users can make their payments at any time with such ease. All they have to do is:
+Payments can be made at any time with ease. All they have to do is:
 
 1. Click on the Make Payment button.
 
@@ -225,7 +225,7 @@ Users can make their payments at any time with such ease. All they have to do is
 
 ## Packages
 
-These packages lets you access the lookup services offered by us, these can be enabled/disabled from this section.
+These packages let you access the lookup services offered by us. These can be enabled/disabled from this section.
 
 ![alt text][package-user]
  
