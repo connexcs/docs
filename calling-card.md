@@ -18,17 +18,17 @@
 
 # Calling Card
 
-A [calling card](https://en.wikipedia.org/wiki/Telephone_card) is a method pre-allocating credit and configuration to a short unique identification method (e.g a PIN Code).
+A [calling card](https://en.wikipedia.org/wiki/Telephone_card) is a way of pre-allocating credit and configuration to a short unique identification method (e.g a PIN Code).
 
-As **ConnexCS** is a class 4 switch it does not have IVR menu's required for access number configuration. Therefor currently calling cards are only available as an OPT application (aka Mobile Phone Application / Mobile Dialler).
+As **ConnexCS** is a class 4 switch it does not have IVR menu's required to access number configuration. Therefore currently calling cards are only available as a Mobile Phone Application.
 
 ## Mobile Application
 In **ConnexCS** calling cards can be created in bulk and assigned with credit and routing configuration.
 
 ### Provisioning Strategy
-The ConnexCS Mobile Dialler application (aka: name pending), can be downloaded from [url] and is white-labeled.
+The ConnexCS Mobile Dialler application (aka: name pending), can be downloaded from [url] and is white-labelled.
 
-Once a provisioning code is entered the app will make a request to our servers to download 2 peices of information:
+Once a provisioning code is entered the app will make a request to our servers to download 2 pieces of information:
 - Branding information for the providing company.
 - Provision information to auto-setup credentials.
 
@@ -48,7 +48,7 @@ This module allows you to perform following actions:
 
 Let’s discuss each one of the above in more detail.
 
-## Manage Calling Card
+## Managing Calling Cards
 
 When you have to manage your calling cards, what you can do is:
 
@@ -71,8 +71,8 @@ To generate a new calling card;
  
 Here,
 
-•	Any customer that exists in database can be selected from the "Customer" dropdown.
-•	While generating the card, its status can be set on the go as available, used, and disabled. Each status has its own assigned color.
+•	Any customer that exists in the database can be selected from the "Customer" dropdown.
+•	While generating the card, its status can be set on the go as available, used, or disabled. Each status has its own assigned colour.
 
 3.	When the required info is provided, click on "Save" button.
 
@@ -85,13 +85,12 @@ To edit any card;
  
 ![alt text][cc-5]
 
-2.	A new modal would open to edit the desired info.
+2.	A new modal will open to edit the desired info.
 
 ![alt text][cc-6]
  
-3.	Once you are done with editing, click on "Save" button to let the entries get saved.
-
-Note: Multiple rows can also be selected and edited accordingly, in one run.
+3.	Once you are done with editing, click on "Save" button to save the entries.
+Note: Multiple rows can also be selected and edited accordingly, in one go.
 
 ### Delete a Card
 
@@ -101,7 +100,7 @@ To delete an existing card;
 
 ![alt text][cc-4]
 
-2.	A confirmation modal would to open to proceed.
+2.	A confirmation modal will open to proceed.
 
 ![alt text][cc-7]
 
@@ -120,13 +119,13 @@ Columns settings can be made from three bars present on top right.
 ![alt text][cc-9]
  
 You can set the list of columns that needs to be shown on the grid.
-Moreover, each column is also sort able and can be hidden, as shown in the image below.
+Moreover, each column can be sorted and can be hidden, as shown in the image below.
 
 ![alt text][cc-10]
  
 ## Manage SIP Devices
 
-To manage SIP devices, following actions can be performed.
+To manage SIP devices, the following actions can be performed.
 a)	Add a device
 b)	View and edit a device
 c)	Delete a device
@@ -141,11 +140,11 @@ To add a new SIP device:
 
 ![alt text][cc-12]
 
-2)	A form would open. Select the customer for whom the device is to be added, enter the rest of information and click on Save button.
+2)	A form will open. Select the customer for whom the device is to be added, enter the rest of information and click on Save button.
 
 ![alt text][cc-13]
 
-A new device for that particular customer would be saved.
+A new device for that particular customer will be saved.
 
 ### View and Edit Device
 
@@ -153,7 +152,7 @@ A new device for that particular customer would be saved.
 
 ![alt text][cc-14]
  
-2)	A form would open. Click on Edit button.
+2)	A form will open. Click on Edit button.
  
 ![alt text][cc-15] 
  
@@ -165,7 +164,6 @@ To delete a device from the list, select any row and click on trash icon.
 
 ![alt text][cc-16]
  
-This is how a device will be deleted.
 
 ### Search Device
 
