@@ -65,21 +65,21 @@ Please follow the instructions below.
 
   ![alt text][customer-ratecard-advance3]
 
-2. Click on the Upload button in centre of the screen.
+3. Click on the Upload button in centre of the screen.
 
   ![alt text][customer-ratecard-advance4]
 
-3. Click on the blue upload button and browse the file from your device, select the required file and click open, your file will appear on the screen, click on upload again
+4. Click on the blue upload button and browse the file from your device, select the required file and click open, your file will appear on the screen, click on upload again
 
   ![alt text][customer-ratecard-advance5]
 
-4. Once the upload completes click on the file name, map the rate card fields against the system fields. (Add GIF here)
+5. Once the upload completes click on the file name, map the rate card fields against the system fields. (Add GIF here)
 
   ![alt text][map-giff]
 
-5. Click on Import to card button & select the Customer card & click save.
+6. Click on Import to card button & select the Customer card & click save.
 
-6. Your rate card file will be imported to your customer rate card & you will be notfied with a popup once the import is complete. The  card is now live and ready to use.
+7. Your rate card file will be imported to your customer rate card & you will be notfied with a popup once the import is complete. The  card is now live and ready to use.
 
 NB. You do not need to **BUILD** a rate card created in this way.
 
