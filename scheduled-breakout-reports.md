@@ -14,15 +14,15 @@ With this feature you can schedule an email for a breakout report. The email get
 
 Login to your Connex account.  From the side menu, extend the “Report” and click on “Breakout”.
  
-![alt text][sheduled-report-1]
+ ![alt text][sheduled-report-1]
 
 A new page will open, from the top. Click on the “+” icon that is highlighted in the image given below.
 
-![alt text][sheduled-report-2]
+ ![alt text][sheduled-report-2]
  
 A dialog box should open. Enter the Name, email address and select the frequency, click on “Save”.
  
-![alt text][sheduled-report-3] 
+ ![alt text][sheduled-report-3] 
 
 A new report has been added.
 
@@ -30,11 +30,11 @@ A new report has been added.
 
 You can view the reports by clicking on the button “View Schedule Reports” which is right next to “+”.
 
-![alt text][sheduled-report-3a]  
+ ![alt text][sheduled-report-3a]  
 
 A new page will open which will show all the reports created till now.
 
-![alt text][sheduled-report-4]  
+ ![alt text][sheduled-report-4]  
 
 ## Select the recipients and schedule the reports
 
@@ -42,20 +42,20 @@ You can select the recipients by choosing from customers, providers etc.  You ca
 
 Click on the arrow sign to choose the accurate recipients for the reports. 
 
-![alt text][sheduled-report-5] 
+ ![alt text][sheduled-report-5] 
  
-Also select the customer’s list, provider’s list and destinations as per added by you in your account.
+Also select the customer’s list, provider’s list and destinations added by you in your account.
 
-![alt text][sheduled-report-6] 
+ ![alt text][sheduled-report-6] 
 
 On the extreme right, there is a text box from which you can select the time period to schedule your reports. Just click on the text box and a drop down menu should open where you can choose the time.
 Select “Custom Range” if you are not able to find the time that you want to set in scheduling.
 
-![alt text][sheduled-report-7]  
+ ![alt text][sheduled-report-7]  
 
 A new drop down should open, customize the time period and click “Apply”
 
-![alt text][sheduled-report-8] 
+ ![alt text][sheduled-report-8] 
 
 [sheduled-report-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/sheduled-report-1.png "Sheduled-Report-1"
 [sheduled-report-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/sheduled-report-2.png "Sheduled-Report-2"
