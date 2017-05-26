@@ -21,13 +21,13 @@ Please follow the instructions below.
 
 1. Click on Management> Rate Cards> Customer rate card> Add New> Name the card> Select the carrier> Click Save
 
- ![alt text][customer-ratecard1]
+  ![alt text][customer-ratecard1]
 
- ![alt text][customer-ratecard2]
+  ![alt text][customer-ratecard2]
 
 2. Select Profits> Click on Add New Row
 
- ![alt text][customer-ratecard3]
+  ![alt text][customer-ratecard3]
 
 3. Enter your required prefix in the prefix field. This will usually be an international country code & not a provider or customer tech    prefix. Adding this symbol ^ on the prefix field will draw all the associated prefixes from the provider card. If you wish to specify   a particular set of prefixes add ^ and prefixes, example: ^441
 
@@ -39,9 +39,9 @@ Please follow the instructions below.
 
 6. Select the billing type, example: 1/1 or 6/6
 
- ![alt text][customer-ratecard4]
+  ![alt text][customer-ratecard4]
 
-7. Enter the connection cost if there is one.
+7. Enter the connection charge if there is one.
 
 8. Select the Rounding method which can be upto 6 decimal places, but is usually 4.
 
@@ -51,9 +51,9 @@ Please follow the instructions below.
 
 11. Once you complete all these steps now it is time to BUILD the card by clicking on Build from Carrier Card button.
 
- ![alt text][customer-ratecard5]
+   ![alt text][customer-ratecard5]
 
- ![alt text][customer-ratecard6]
+   ![alt text][customer-ratecard6]
 
 
 ## The External Method 
@@ -63,23 +63,23 @@ Please follow the instructions below.
 1. Click on Management> Rate Cards> Customer rate card> 
 2. Click on Add New> Name the card> Select the carrier> go to Advanced> Select the providers inside the Dynamic Routing box> Click Save.
 
-![alt text][customer-ratecard-advance3]
+  ![alt text][customer-ratecard-advance3]
 
 2. Click on the Upload button in centre of the screen.
 
-![alt text][customer-ratecard-advance4]
+  ![alt text][customer-ratecard-advance4]
 
 3. Click on the blue upload button and browse the file from your device, select the required file and click open, your file will appear on the screen, click on upload again
 
-![alt text][customer-ratecard-advance5]
+  ![alt text][customer-ratecard-advance5]
 
-4. Once the upload completes click on the file name, Map the rate card fields against the system fields. (Add GIF here)
+4. Once the upload completes click on the file name, map the rate card fields against the system fields. (Add GIF here)
 
-![alt text][map-giff]
+  ![alt text][map-giff]
 
 5. Click on Import to card button & select the Customer card & click save.
 
-6. Your rate card file will be imported to your customer rate card & you will be notfied with a popup once the import is complete. the  card is now live and ready to use.
+6. Your rate card file will be imported to your customer rate card & you will be notfied with a popup once the import is complete. The  card is now live and ready to use.
 
 NB. You do not need to **BUILD** a rate card created in this way.
 
@@ -87,7 +87,7 @@ NB. You do not need to **BUILD** a rate card created in this way.
 
 You can also delete the customer rate card by simply selecting the name from the list and then click the trash icon, which is right next to the Upload File button.
 
-Note: Clicking on the “?” will show the list of provider cards the are associated with this customer rate card. 
+Note: Clicking on the “?” will show the list of provider cards that are associated with this customer rate card. 
 
 ## Email the Rate Card
 
@@ -96,15 +96,15 @@ With this feature you can email the rate card to your customer's email address a
 1. Click on Management> Rate Card> Customer Rate Card
 2. Click on the rate card name
 
-![alt text][email-ratecard-1]
+  ![alt text][email-ratecard-1]
 
 3. Click on Email button
 
-![alt text][email-ratecard-2]
+  ![alt text][email-ratecard-2]
 
 4. Enter the email address and click on send
 
-![alt text][email-ratecard-3]
+  ![alt text][email-ratecard-3]
 
 ## Revision Tab 
 
