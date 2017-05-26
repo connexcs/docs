@@ -22,11 +22,11 @@
 
 
 # ScriptForge
-The **ScriptForge** allows you to write your own application which can be run at specific events in the system, currently the following places support scripting functionality:
+The **ScriptForge** allows you to write your own applications which can be run at specific events in the system, currently the following places support scripting functionality:
 
 * Routing Engine (runs in line of the call setup process)
 
-Requests to your application are processed via a messaging bus and will be queued if your application can not process them fast enough. If you run your application in the routing engine you must ensure that it can complete quickly so as not to induce high PDD.
+Requests to your application are processed via a messaging bus and will be queued if your application cannot process them fast enough. If you run your application in the routing engine you must ensure that it can complete quickly so as not to induce high PDD.
 
 ## Design Considerations
 
@@ -36,7 +36,7 @@ ScriptForge currently supports Java script (ECMA6)
 
 ### Memory
 
-For speed enhancements variables in your application may be present between messages, however you should not assume this behaviour. Your application will be automatically distributed across multiple nodes and active variables will not be persistent. If you require persistence across messages you can use the datastore class. The memory of your application may be limited (default to 100MB). You should ensure that you don't try to use more than the allocated amount or your application may crash.
+For speed enhancement variables in your application may be present between messages, however you should not assume this behaviour. Your application will be automatically distributed across multiple nodes and active variables will not be persistent. If you require persistence across messages you can use the datastore class. The memory of your application may be limited (default to 100MB). You should ensure that you don't try to use more than the allocated amount or your application may crash.
 
 ### CPU (Time Limit)
 
@@ -44,7 +44,7 @@ There are no hard CPU restrictions on your application, however its run time is 
 
 ### Durability
 
-If a message is not processed in time or fails half way through processing, it will be reset to the unconsumed state and will be available for further processing. A message should not ever be lost.
+If a message is not processed in time or fails half way through processing, it will be reset to the unconsumed state and will be available for further processing. A message should never be lost.
 
 ### Scalability
 
@@ -73,7 +73,7 @@ function main(){
 ```
 
 
-ScriptForge as default is designed to process 1 concurrent execution per server. It is therefore important to execute `exit()` as soon as possible as the server will be blocking untill this operation completes. It is also important to ensure that there are no other branches of your code executing after the `exit()` has been called as this will slow down subsequent requests and could also cause unexpected termination & time outs of subsequent requests.
+ScriptForge as default is designed to process 1 concurrent execution per server. It is therefore important to execute `exit()` as soon as possible as the server will be blocked until this operation completes. It is also important to ensure that there are no other branches of your code executing after the `exit()` has been called as this will slow down subsequent requests and could also cause unexpected termination & time outs of subsequent requests.
 
 ## Libraries
 This section is lightly documented, if you have any questions please ask us.
@@ -114,7 +114,7 @@ function main(vars){
  
 ### Checking a DNC List
 
-You can upload your own number lists for Do-not-Call, or white lists in the User Space Database inside the main system. You can then query it from Script Forge.
+You can upload your own number lists for Do-not-Call, or white lists in the User Space Database inside the main system. You can then query it from ScriptForge.
 
 ```
 function main(vars){
@@ -130,7 +130,7 @@ function main(vars){
 
 ### Performing an ASRPlus Lookup
 
-ASRPlus is a ConnexCS feature for reducing unecessary attempts and providing faster fails on calls. Its most suitable for agress call-center traffic profiles.
+ASRPlus is a ConnexCS feature for reducing unecessary attempts and providing faster fails on calls. It's most suitable for agressive call-center traffic profiles.
 
 ```
 function main(vars){
@@ -153,51 +153,51 @@ You can customize your script in the new functionality of Connex and also can as
 
 1. Login to your Connex account and from the side menu select “Script Forge”.
 
-![alt text][side]   
+	![alt text][side]   
  
 2. Now, add your own script by clicking on “Add New” button.
 
-![alt text][s2]   
+	![alt text][s2]   
  
-3. Fill up the name of your script and click on “Save”.
+3. Fill in the name of your script and click on “Save”.
 
-![alt text][s3]   
+	![alt text][s3]   
  
 4. Now, select your script from the list and click on it.
 
-![alt text][s4]   
+	![alt text][s4]   
  
 5. Enter the code of your script and click the arrow next to “Save and Restart”. From the drop down menu, select “Save” and then click on “Start”.
 
-![alt text][s5]   
+	![alt text][s5]   
  
-6. Click the “Run” button on the top. The script would show the result.
+6. Click the “Run” button on the top. The script should show the result.
 
 In case, the script shows error click the arrow button next to “Run” and add this:
 {"routing":{}}
 
 And then run the script again.
 
-![alt text][s6]
+	![alt text][s6]
 
 
 ## Assigning the Script to a customer
 
 You can assign the script to a customer by selecting “Customer” from the side menu.
 
-![alt text][side-1]   
+	![alt text][side-1]   
  
 Select a specific customer from the list by clicking on the names of customers.
 
-![alt text][s7]
+	![alt text][s7]
 
 Navigate to “Routing” tab and select a rate card from the table.
 
-![alt text][s8]  
+	![alt text][s8]  
  
-A form will open named “Route Ingress”, find the “Script Forge” field and select the script you just created. Click on “Save” when you are done.
+A form will open named “Route Ingress”, find the “ScriptForge” field and select the script you just created. Click on “Save” when you are done.
  
-![alt text][s9] 
+	![alt text][s9] 
  
  
 [side]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/side.png "Side"
@@ -213,4 +213,4 @@ A form will open named “Route Ingress”, find the “Script Forge” field an
 
 # Form Builder
 Form Builder
-Form Builder can be used when you write your own ephemeral scripts in ScriptForge. It allows you to define your own custom user interface by selecting specific input fields. These fields will be passed to variables on the corrisponding application.
+Form Builder can be used when you write your own ephemeral scripts in ScriptForge. It allows you to define your own custom user interface by selecting specific input fields. These fields will be passed to variables on the corresponding application.
