@@ -47,7 +47,7 @@ This tutorial will guide you on how to manage your provider rate cards.
 
 10. Click on Import to card button & select the provider card & click save
 
-   ![alt text][map8] 
+      ![alt text][map8] 
   
 11. You will be notified with a popup when the import completes.
 
