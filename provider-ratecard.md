@@ -9,9 +9,9 @@
 
 # Rate Card Management
 
-Rate Card is one of the most important feature of Connex and managing rate cards is very easy and convenient.
+Rate Cards are one of the most important features of Connex and managing rate cards is very easy and convenient.
 
-This tutorial will guide you on how to manage provider rate cards.
+This tutorial will guide you on how to manage your provider rate cards.
 
 
 ## Provider Rate Card Upload.
@@ -33,27 +33,27 @@ This tutorial will guide you on how to manage provider rate cards.
 
 7. Click Upload> Upload> browse and select the rate card file
 
-  ![alt text][provider-card-4]
+   ![alt text][provider-card-4]
 
 8. Click on the file name that you just uploaded from the list.
 
-  ![alt text][provider-card-7]
+   ![alt text][provider-card-7]
   
-  ![alt text][provider-card-6]
+   ![alt text][provider-card-6]
   
 9. Map the rate card fields against the system fields.
 
-  ![alt text][map-giff]
+   ![alt text][map-giff]
 
 10. Click on Import to card button & select the provider card & click save
 
-  ![alt text][map8] 
+   ![alt text][map8] 
   
 11. You will be notified with a popup when the import completes.
 
 ## Revision Tab 
 
-The revision tab lets us see the previous changes that's been done on a rate card, example the previous Rule count, Presentation, Currency, date created, Billing.
+The revision tab lets us see the previous changes that have been made to a rate card, for example the previous Rule count, Presentation, Currency, date created, Billing.
 
 
 
