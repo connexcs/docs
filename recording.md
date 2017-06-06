@@ -50,8 +50,13 @@ With CLI restrict feature you can block calls. The blocked CLI can be added insi
 
 1. Click on Management> Rate Card> 
 2. Click on the provider Rate Card> Edit> Advanced
+
+![alt text][recording-7]
+
 3. Enter the CLI/ANI’s that you wish to block
 4. Click Save.
+
+![alt text][recording-8]
 
 
 [recording-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/recording-1.png "recording-1"
@@ -60,3 +65,5 @@ With CLI restrict feature you can block calls. The blocked CLI can be added insi
 [recording-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/recording-4.png "recording-4"
 [recording-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/recording-5.png "recording-5"
 [recording-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/recording-6.png "recording-6"
+[recording-7]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/recording-7.png "recording-7"
+[recording-8]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/recording-8.png "recording-8"
