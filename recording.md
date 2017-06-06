@@ -16,11 +16,13 @@
 
 ![alt text][recording-2]
 
+![alt text][recording-3]
+
 4. The recorded files can be accessed from the file section
 5. Click on Management> File> Recording
 6. Click on the download button to download the file.
 
-![alt text][recording-3]
+![alt text][recording-4]
 
 ## Blocking Calls
 
@@ -44,3 +46,4 @@ With CLI restrict feature you can block calls. The blocked CLI can be added insi
 [recording-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/recording-1.png "recording-1"
 [recording-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/recording-2.png "recording-2"
 [recording-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/recording-2.png "recording-3"
+[recording-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/recording-4.png "recording-4"
