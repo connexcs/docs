@@ -58,3 +58,5 @@ With CLI restrict feature you can block calls. The blocked CLI can be added insi
 [recording-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/recording-2.png "recording-2"
 [recording-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/recording-2.png "recording-3"
 [recording-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/recording-4.png "recording-4"
+[recording-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/recording-5.png "recording-5"
+[recording-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/recording-6.png "recording-6"
