@@ -1,3 +1,4 @@
+# Table of Contents
 
 * [Table of Contents](#table-of-contents)
 * [Blocking Calls](#blocking-calls)
