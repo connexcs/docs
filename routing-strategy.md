@@ -124,26 +124,26 @@ It is possible with connex switch to block specific call using the Routing Strat
 
 1. Click on Management> Customer
 
-![alt text][Blocking Calls 1]
+![alt text][Blocking-Calls-1]
 
 2. Click on the customer Name> Routing> Rate Card
 
-![alt text][Blocking Calls 2]
+![alt text][Blocking-Calls-2]
 
 3. Under Routing Strategy Click + & add the number that you wish to block and select to drop.
 
-![alt text][Blocking Calls 5]
+![alt text][Blocking-Calls-5]
 
 4. Click Save
 
-![alt text][Blocking Calls 6]
+![alt text][Blocking-Calls-6]
 
 
 
-[blocking-calls-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/recording-1.png "Blocking Calls 1"
-[blocking-calls-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/recording-2.png "Blocking Calls 2"
-[blocking-calls-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/recording-5.png "Blocking Calls 5"
-[blocking-calls-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/recording-6.png "Blocking Calls 6"
+[blocking-calls-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/recording-1.png "Blocking-Calls-1"
+[blocking-calls-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/recording-2.png "Blocking-Calls-2"
+[blocking-calls-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/recording-5.png "Blocking-Calls-5"
+[blocking-calls-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/recording-6.png "Blocking-Calls-6"
 
 [routing-dashboard-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/routing-dashboard-new.png "routing-dashboard"
 [edit-routing]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/edit-routing.png "edit-routing"
