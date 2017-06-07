@@ -9,7 +9,7 @@
 The status feature lets you update the status on your customer portal. This helps you communicate downtime and system outages to your customers.
 
 
-Please follow the below to below instructions to setup status:
+Please follow the instructions below to setup status:
 
 1. Click on Management> Status
 2. Click on + under status component
@@ -29,7 +29,7 @@ To add a New History Follow the below instructions.
 2. Enter the Title
 3. Select the status
 4. Select the visibility
-5. Enter the brief description about the issue 
+5. Enter a brief description about the issue 
 6. Click Save
 
 ![alt text][system-status-3]
