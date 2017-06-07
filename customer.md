@@ -11,6 +11,7 @@
       * [Stats Tab](#stats)
       * [Routing](#routing)
       * [Ingress Routing](#ingress-routing)
+      * [Call Recording](#call-recording)
       * [Adding CLI](#adding-cli)
       * [Authentication](#authentication)
          * [IP Authentication](#ip-authentication)
@@ -23,7 +24,7 @@
       * [DID](#did)
       * [Packages](#packages)
       * [Contacts](#contacts)
-      * [Call Recording](#call-recording)
+      
 
 
 # Customer Management
@@ -142,6 +143,25 @@ The details of the dialogue box can be seen in the image below:
 ![alt text][ingress-routing-tab]
 
 For more information about Ingress Routing click on [Ingress Routing]
+
+### Call Recording
+
+1. Click on Management> Customer
+2. Click on the Customer Name> Routing
+
+![alt text][recording-1]
+
+3. Click on the rate card name> select enable from Recording.
+
+![alt text][recording-2]
+
+![alt text][recording-3]
+
+4. The recorded files can be accessed from the file section
+5. Click on Management> File> Recording
+6. Click on the download button to download the file.
+
+![alt text][recording-4]
 
 ### Adding CLI
 
@@ -301,26 +321,7 @@ You can also choose the package duration, the quantity, the cost and the frequen
 
  ![alt text][contacts-2]
  
-### Call Recording
 
-1. Click on Management> Customer
-2. Click on the Customer Name> Routing
-
-![alt text][recording-1]
-
-3. Click on the rate card name> select enable from Recording.
-
-![alt text][recording-2]
-
-![alt text][recording-3]
-
-4. The recorded files can be accessed from the file section
-5. Click on Management> File> Recording
-6. Click on the download button to download the file.
-
-![alt text][recording-4]
-
- 
  
 [recording-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/recording-1.png "recording-1"
 [recording-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/recording-2.png "recording-2"
