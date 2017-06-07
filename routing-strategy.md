@@ -140,9 +140,9 @@ It is possible with connex switch to block specific call using the Routing Strat
 
 
 
-[blocking-calls-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/recording-1.png "Blocking-calls-1"
-[blocking-calls-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/recording-2.png "Blocking-calls-2"
-[blocking-calls-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/recording-5.png "Blocking-calls-5"
+[blocking-calls-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/recording-1.png "Blocking Calls 1"
+[blocking-calls-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/recording-2.png "Blocking Calls 2"
+[blocking-calls-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/recording-5.png "Blocking Calls 5"
 [blocking-calls-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/recording-6.png "Blocking Calls 6"
 
 [routing-dashboard-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/routing-dashboard-new.png "routing-dashboard"
