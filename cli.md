@@ -3,6 +3,7 @@
 * [CLI](#cli)
   * [Whitelist](#whitelist)
   * [Force CLI](#force-cli)
+  * [CLI Restrict](#cli-restrict)
   * [Replace Specific CLI](#replace-specific-cli)
   * [P-Asserted-ID](#p-asserted-id)
   * [Advanced CLI Match & Manipulation](#advanced-cli-match-manipulation)
@@ -19,6 +20,20 @@ ConnexCS allows you to white list CLI's which are allowed to pass through the sy
 If you wish to change the CLI that has been presented for one of your choosing, you can enter the CLI that you wish to be presented and click the Force CLI box, this will overwrite the CLI with the one you add.
 
 **Note:** You can add a whitelist of CLIs and select Force on a CLI which you wish to be used if none of the others in the whitelist match.
+
+## CLI Restrict
+
+With CLI restrict feature you can block calls. The blocked CLI can be added inside the provider rate card. Below are the steps.
+
+1. Click on Management> Rate Card> 
+2. Click on the provider Rate Card> Edit> Advanced
+
+![alt text][recording-7]
+
+3. Enter the CLI/ANI’s that you wish to block
+4. Click Save.
+
+![alt text][recording-8]
 
 ## Replace Specific CLI
 A CLI may be re-written, for example you can add `123456789` in the CLI box and have it be re-written by adding `987654321` in the re-write CLI box.
@@ -40,3 +55,8 @@ The CLI system uses Regular Expressions to match and replace numbers. Here are a
 | 01782123456 |    ^0([1-9]+)$ |        44\1 |             Remove leading 0 and replace with 44 |
 
 If you wish to learn or practice writing regular expressions, this is a great site: http://regexr.com/
+
+
+[recording-7]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/recording-7.png "recording-7"
+[recording-8]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/recording-8.png "recording-8"
+
