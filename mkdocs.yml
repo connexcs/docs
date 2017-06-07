@@ -18,8 +18,7 @@ pages:
     - My Account: my-account.md
     - Paypal: customer-payments.md
     - Routing Strategy: routing-strategy.md
-    - Call Recording: recording.md
-    
+        
 - CARRIER: 
     - Carrier: carrier.md
     
