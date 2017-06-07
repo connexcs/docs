@@ -7,7 +7,7 @@
     * [Deleting the Routing Strategy](#deleting-the-routing-strategy)
     * [Edit the Routing Strategy](#edit-the-routing-strategy)
     * [Adding and Deleting Card](#adding-and-deleting-card)
-
+    * [Blocking Calls](#blocking-calls)
 
 # Routing Strategy
 
@@ -118,14 +118,37 @@ In a Customer Rate Card, it is possible to set a routing strategy. At the moment
 
 This allows you to change the default behaviour of a card, it loses priority against routing strategy. If a rule is set in here routing strategy, it ignores anything set in customer card.
 
+## Blocking Calls
+
+It is possible with connex switch to block specific call using the Routing Strategy. Below are the steps
+
+1. Click on Management> Customer
+
+![alt text][recording-1]
+
+2. Click on the customer Name> Routing> Rate Card
+
+![alt text][recording-2]
+
+3. Under Routing Strategy Click + & add the number that you wish to block and select to drop.
+
+![alt text][recording-5]
+
+4. Click Save
+
+![alt text][recording-6]
+
+
+
+[recording-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/recording-1.png "recording-1"
+[recording-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/recording-2.png "recording-2"
+[recording-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/recording-5.png "recording-5"
+[recording-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/recording-6.png "recording-6"
+
 [routing-dashboard-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/routing-dashboard-new.png "routing-dashboard"
-
 [edit-routing]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/edit-routing.png "edit-routing"
-
 [routing-strategy]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/routing-strategy.png "routing-strategy"
-
 [edit-routing-strategy]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/edit-routing-strategy.png "edit-routing-strategy"
-
 
 [routing-strategy1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/routing-strategy1.png "routing-strategy1"
 [routing-strategy2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/routing-strategy2.png "routing-strategy2"
