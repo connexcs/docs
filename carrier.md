@@ -18,7 +18,8 @@
          * [DID](#did)  
          * [Alerts](#alerts)  
     * [Code Consistency](#code-consistency)
-	* [Consecutive Failures](#consecutive-failures)
+    * [Consecutive Failures](#consecutive-failures)
+    * [Special Considerations](#special-considerations)
 
 
 # Carrier Management
@@ -210,6 +211,10 @@ The metric only takes into account 200 and 404's.
 ## Consecutive failures
 The consecutive failures system is a primitive way of measuring the ability of a carrier to connect calls, once a call connects the counter is reset and once a call fails the counter is incremented by one.
 This can lead to a false positive if the customer is sending a lot of missed call traffic or calling bad numbers, however in general the counter is one of the quickest ways to establish when a route is failing.
+
+## Special Considerations
+_Bandwidth.com_ have diverged from the SIP spec and expose an internal IP address which is required to be presented in sequential requests. To ensure compatibility set the switch manafacturer to ```bandwidth.com```
+
 
 
 
