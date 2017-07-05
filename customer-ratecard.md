@@ -73,7 +73,7 @@ Please follow the instructions below.
 
   ![alt text][customer-ratecard-advance5]
 
-5. Once the upload completes click on the file name, map the rate card fields against the system fields. (Add GIF here)
+5. Once the upload completes click on the file name, map the rate card fields against the system fields. 
 
   ![alt text][map-giff]
 
