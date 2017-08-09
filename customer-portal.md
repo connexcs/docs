@@ -6,7 +6,7 @@
     
 # Customer Portal
 
-Customer portal lets your customer access to their account with you. The Customer portal can be whitelablled to your brand name, also you can add your own custom domain.
+Customer portal lets your customer access their account with you. The Customer portal can be whitelabelled to your brand name, also you can add your own custom domain.
 
 We will discuss how to add a "add on domain" with your domain provider
 
@@ -14,10 +14,10 @@ We will discuss how to add a "add on domain" with your domain provider
 2. Locate the page for updating your domain's DNS records.
 3. The page might be called something like DNS Management, Name Server Management, or Advanced Settings.
 4. Locate the CNAME records for your domain.
-5. Add a add on domain, something like,portal.yourwebsite.com
-6. Point the doman towards portal.connexcs.com
+5. Add an add on domain, something like, portal.yourwebsite.com
+6. Point the domain towards portal.connexcs.com
 
-Once this is configured with your domain hosting provider you will now have to configure this on your connex control panel, below are the steps.
+Once this is configured with your domain hosting provider you will now have to configure this on your Connex control panel, below are the steps.
 
 To add a new domain:
 
@@ -48,7 +48,7 @@ We will now learn how to add Contacts on control panel, basically this is done t
 3. Enter the contact name
 4. Enter the Email address, this email address will be used for login
 5. Check the Auto generate password box if you would like the password to be generated online and the generated password will be sent via email. Unchecking the box will let you manually set the password
-6. You may enter any information on public notes, this notes will be displayed on the customer portal when logged in. The private notes is limited to display only on the control panel, this notes will not be displayed on the customer portal.
+6. You may enter any information on public notes, these notes will be displayed on the customer portal when logged in. The private notes are limited to display only on the control panel, these notes will not be displayed on the customer portal.
 7. Click Save
 
  ![alt text][contacts-2]
