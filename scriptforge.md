@@ -178,26 +178,25 @@ In case, the script shows error click the arrow button next to “Run” and add
 
 And then run the script again.
 
-	![alt text][s6]
-
+![alt text][s6]
 
 ## Assigning the Script to a customer
 
 You can assign the script to a customer by selecting “Customer” from the side menu.
 
-	![alt text][side-1]   
+![alt text][side-1]   
  
 Select a specific customer from the list by clicking on the names of customers.
 
-	![alt text][s7]
+![alt text][s7]
 
 Navigate to “Routing” tab and select a rate card from the table.
 
-	![alt text][s8]  
+![alt text][s8]  
  
 A form will open named “Route Ingress”, find the “ScriptForge” field and select the script you just created. Click on “Save” when you are done.
  
-	![alt text][s9] 
+![alt text][s9] 
  
  
 [side]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/side.png "side"
