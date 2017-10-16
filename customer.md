@@ -67,7 +67,7 @@ Brief description of the fields present in the dialog box above, as follows:
 
 **Debit Limit:**  You can set the debit limit on this field, this is usually done for postpay customers.
 
-**Minimum Payment** You can set the minimum topup payment from this field. Example $100, this will allow your customer to topup only $100 & above.
+**Minimum Payment** You can set the minimum topup payment from this field. Example $100, this will allow your customer to topup $100 & above from the customer portal.
 
 **Tax:**  You can add the Tax as a percentage, this will be calculated on the payment that gets added.
 
