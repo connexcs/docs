@@ -45,4 +45,4 @@ Its possible to block CLI's by using the follwing regular expression.
 
 Regex: ^(?!(1234|5678)).*$\n
 
-Where 1234 & 5678 are two different CLI's. you can block more than one CLI.
+Where 1234 & 5678 are two different CLI's, you can block more than one CLI.
