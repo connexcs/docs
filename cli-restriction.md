@@ -3,6 +3,7 @@
 * [Table of Contents](#table-of-contents)
 * [CLI Restriction](#cli-restriction)
   * [How to add CLI](#how-to-add-cli)
+* [Block CLI](#Block-CLI's)
 
 # CLI Restriction
 
