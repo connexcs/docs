@@ -43,4 +43,5 @@ Checking the Force CLI option will let the user to pass the CLI without having t
 Its possible to block CLI's by using the follwing regular expression.
 
 Regex: ^(?!(1234|5678)).*$\n
+
 Where 1234 & 5678 are two different CLI's. you can block more than one CLI.
