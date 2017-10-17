@@ -33,6 +33,14 @@ Checking the Force CLI option will let the user to pass the CLI without having t
 ![alt text][CLI-4]
 
 
+
 [CLI-0]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/CLI-0.png "CLI-0"
 [CLI-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/CLI-2.png "CLI-2"
 [CLI-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/CLI-4.png "CLI-4"
+
+* Block CLI's
+
+Its possible to block CLI's by using the follwing regular expression.
+
+Regex: ^(?!(1234|5678)).*$\n
+Where 1234 & 5678 are two different CLI's.
