@@ -18,7 +18,7 @@ You can find the API Spec here: <https://app.connexcs.com/docs>
 
 ## Customer Administration
 If your customers wish to be able to talk to your switch and get information such as current balance or CDRs this is the API you need.
-You can find the API Spec here: https://docs.connexcs.com/customer-api/
+You can find the API Spec here: <https://docs.connexcs.com/customer-api/>
 
 
 
