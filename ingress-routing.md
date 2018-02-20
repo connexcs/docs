@@ -71,7 +71,7 @@ In the event that a BYE gets missed, the Maximum Duration will be the maximum am
 
 * SIP Ping
 
-This sends a SIP packet to the remote end of the conversation roughly every 60 seconds. This helps to check if the other side is still aware of an ongoing conversation. If this is not received back, or is told that the conversation is not active then it shuts off the call. Also please note that any SST < 60 seconds will be rejected
+This sends a SIP packet to the remote end of the conversation roughly every 30 seconds. This helps to check if the other side is still aware of an ongoing conversation. If this is not received back, or is told that the conversation is not active then it shuts off the call. 
 
 * RTP Time-out
 
@@ -163,7 +163,7 @@ SIP session timers is a method of ensuring that there are no ghost or long durat
 Passive SST is enabled as default and without changing any settings, all RE-INVITES will propagate through the system.
 It is also possible to be proactive about the RE-INVITES, instructing the ConnexCS switch to send these: upstream to the carrier, downstream to the customer or in both directions.
 
-SST is currently the best way to prevent long duration calls and superceeds SIP Ping Timeout.
+SST is currently the best way to prevent long duration calls and superceeds SIP Ping Timeout. Also please note that any SST < 60 seconds will be rejected
 
 ## ASR+
 ASR+ is a proprietary technology developed by ConnexCS to help filter known failed non-existant / working numbers between the customer and the carrier for termination.
