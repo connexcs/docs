@@ -71,7 +71,7 @@ In the event that a BYE gets missed, the Maximum Duration will be the maximum am
 
 * SIP Ping
 
-This sends a SIP packet to the remote end of the conversation roughly every 30 seconds. This helps to check if the other side is still aware of an ongoing conversation. If this is not received back, or is told that the conversation is not active then it shuts off the call.
+This sends a SIP packet to the remote end of the conversation roughly every 60 seconds. This helps to check if the other side is still aware of an ongoing conversation. If this is not received back, or is told that the conversation is not active then it shuts off the call. Also please note that any SST < 60 seconds will be rejected
 
 * RTP Time-out
 
