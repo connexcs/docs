@@ -7,7 +7,7 @@
    * [Lookup Services](#lookup-services)
 
 # API
-ConnexCS has 3 distinct API's each accessible through a different URL, but all follow the same specification.
+ConnexCS has 2 distinct API's each accessible through a different URL, but all follow the same specification.
 
 The API is _Restful JSON_ and accessible over HTTPS. It makes distinction around `GET`, `SET`, `PUT` and `DELETE` and follows CRUD. Requests primarly take advantage of request variables however _JSON Documents_ may occasionally be posted where a more complex request is required. A _JSON Document_ will always be returned. Errors are provided on the HTTPS Layer.
 
