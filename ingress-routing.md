@@ -166,6 +166,15 @@ It is also possible to be proactive about the RE-INVITES, instructing the Connex
 
 SST is currently the best way to prevent long duration calls and superceeds SIP Ping Timeout. Also please note that any SST < 60 seconds will be rejected
 
+### Options
+ - Default. No headers are changed and no SST is engaged
+ - Disabled. All ```timer``` headers are removed
+ - Suggest. Session-Expire headers and Min-SE are added to packets sent to carrier encouraging the use of SST.
+ - Enabled Both. ConnexCS will send SIP Session Timers to both legs of the call.
+ - Enabled (Upstream). ConnexCS will use SST with the carrier.
+ - Enabled (Downstream). ConnexCS will use SST with the customer.
+
+
 ## ASR+
 ASR+ is a proprietary technology developed by ConnexCS to help filter known failed non-existant / working numbers between the customer and the carrier for termination.
 
