@@ -72,6 +72,7 @@ In the event that a BYE gets missed, the Maximum Duration will be the maximum am
 * SIP Ping
 
 This sends a SIP packet to the remote end of the conversation roughly every 30 seconds. This helps to check if the other side is still aware of an ongoing conversation. If this is not received back, or is told that the conversation is not active then it shuts off the call. 
+Note: Asterisk does not have SIP Ping (OPTIONS) enabled as default, if your customer / carrier is using Asterisk you may need to disable this if they dont have it enabled on their side as calls will tipically disconnect after 30 seconds. 
 
 * RTP Time-out
 
