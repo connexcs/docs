@@ -265,6 +265,18 @@ Deploying a server with Connexcs is very quick, once the checklist is complete y
 
 [Ingress Routing]: <https://docs.connexcs.com/en/latest/ingress-routing/>
 
+
+[verify-mobile-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/3.png "verify-mobile-1"
+[verify-mobile-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/4.png "verify-mobile-3"
+[verify-mobile-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/5.png "verify-mobile-2"
+
+
+[verify-email-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/images/1.png "verify-mobile-1"
+[verify-email-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/images/2.png "verify-mobile-2"
+
+
+
+
 [customer-dashboard-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-imag/1.png "customer-dashboard-new"
 [add-customer-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/2.png "add-customer-new"
 [customer-save-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/3.png "customer-save-new"
