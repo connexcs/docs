@@ -39,12 +39,12 @@ Steps to Verify Email Address:
 1. Click on the Top Left notification button
 2. Click on Verify on Verify Email
 
-  ![alt text][verify-email-1]
+  
 
 3. Click on Send Verification Code
 4. Either click the link or copy & paste the verification code sent to your email by clicking the button.
 
-  ![alt text][verify-email-2]
+ 
 
 
 ## Mobile Verification 
@@ -58,14 +58,13 @@ Steps to Verify Mobile Number
 3. Click on Edit.
 4. Enter the Phone Number in E.164 format and click Save.
 
-  ![alt text][verify-mobile-1]
-
-  ![alt text][verify-mobile-3]
-
+ 
+ 
+ 
 5. Click on Send Verification Code.
 6. Enter the Verification code sent to your mobile and click Verify.
 
-  ![alt text][verify-mobile-2]
+ 
 
 
 ## Prerequisites Customer
@@ -90,29 +89,29 @@ Below are the instructions for basic customer setup, for detailed instruction on
 
 1. Click on Management > Customers.
   
-    ![alt text][customer-dashboard-new]
+    
 
 2. Click on Add Customer.
 
-    ![alt text][add-customer-new]
+    
 
 3. Enter the Customer name. 
 4. Select the currency that you wish to setup the account in.
 5. Click Save.
 
-    ![alt text][customer-save-new]
+    
 
 ### Authentication
 
 1. Click on Authentication.
 2. Click '+' under IP Authentication. 
 
-    ![alt text][ip-auth-new]
+    
 
 3. Enter the Origination/customer IP address (We support SRV records & domains too).
 4. Click Save.
 
-    ![alt text][ip-auth-2-new]
+    
 
 ### SIP User Authentication
 
@@ -121,25 +120,25 @@ You can authenticate either using IP to IP or User/Password. Below are the steps
 1. Click on Authentication.
 2. Click '+' SIP User Authentication.
 
-    ![alt text][user-auth-1-new]
+    
 
 3. Enter the username of your choice.
 4. Enter the password.
 5. Click Save.
 
-    ![alt text][user-auth-new]
+    
 
 ### Payments
 
 1. Click on Payments
 2. Click '+' 
 
-    ![alt text][payment-1-new]
+   
 
 3. Enter the description and the amount in the appropriate field 
 4. Select the Status as complete & click Save
 
-    ![alt text][payment-2-new]
+    
 
 ## Carrier Setup
 
@@ -147,25 +146,25 @@ Carriers are your VoIP route providers, below are the basic instructions to setu
 
 1. Click on Management> Carrier
  
-  ![alt text][carrier-1]  
+  
 
 2. Enter the Carrier Name
 3. Select the Carrier currency
 4. Click Save
 
- ![alt text][carrier-2]
+ 
 
 ### Authentication
 
 1. Click on Authentication
 2. Click '+' under IP Authentication
 
-    ![alt text][carrier-auth]
+    
 
 3. Enter the termination IP address (We support SRV records & domains too)
 4. Click Save
 
-    ![alt text][carrier-auth-1]
+    
 
 ## Provider Card
 
@@ -173,11 +172,11 @@ Below are the instructions to setup the provider rate card manually. There are t
  
 1. Click on Management> Rate Card
   
-  ![alt text][provider-card-dashbboard] 
+  
   
 2. Click on Add Provider Card under Provider Rate Cards
 
-  ![alt text][provider-ratecard]
+  
 
 3. Name the provider card.
 4. Go to properties.
@@ -185,62 +184,62 @@ Below are the instructions to setup the provider rate card manually. There are t
 6. Select the desired currency for the provider card.
 7. Click Save.
 
- ![alt text][add-new-provider]
+ 
 
 8. Go to provider rate card.
 9. Click on Create Draft button.
 
-  ![alt text][add-draft]
+  
 
 8. Click on Add Row
 
- ![alt text][add-new-row]
+ 
 
 9. Complete the Spreadsheet information, Example: Prefix: 441, Name: UK Landline, Cost: 0.006, Billing: 1/1. You can add as many rows as you wish.
 10. Click on Save button to publish the rate card.
 
- ![alt text][upload]
+ 
 
 
 ## Customer Card
 
 1. Click on Management> Rate Cards
 
-   ![alt text][provider-card-dashbboard] 
+   
 
 2. Click on Add Customer Card under Customer Rate Cards
 
- ![alt text][add-new-customer] 
+ 
 
 3. Name the customer card
 4. Select the multiple carrier cards(By default it will be LCR)
 5. Select the desired currency & Click Save
 
- ![alt text][add-new-customer-1] 
+ 
  
 6. Click on Profits tab >Click on Add New Row
 7. Complete the Spreadsheet, Example: Prefix: 441, Cost: 0.007, Profit Type: Absolute, Billing 1/1, Rounding: 1/1, Status: Profit, Apply To: Cost
 
-  ![alt text][add-customer-2] 
+  
 
 8. Click on Build From Carrier Cards button & confirm the build.
 
-![alt text][add-customer-3]
+
 
 ## Ingress Routing
 
 1. Click on Management> Customer
 
- ![alt text][ingress-1]
+ 
 
 2. Click on the customer name> Routing
 
- ![alt text][ingress-2]
+ 
 
 3. Click '+' under Ingress Routing
 4. Select the Customer card from the tariff list & click Save
 
- ![alt text][ingress-3]
+ 
 
 For detailed information about ingress routing click on [Ingress Routing]
 
@@ -250,7 +249,7 @@ Deploying a server with Connexcs is very quick, once the checklist is complete y
 
 1. Click on Setup> Settings> Servers
 2. Click on Add Server
-  ![alt text][server]
+  
 3. Choose Server Location
 4. Enter the Server Name
 5. Check the confirmation box and deploy the server.
