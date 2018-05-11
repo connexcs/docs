@@ -271,17 +271,13 @@ Deploying a server with Connexcs is very quick, once the checklist is complete y
 [verify-mobile-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/5.png "verify-mobile-2"
 
 
-[verify-email-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/images/1.png "verify-mobile-1"
-[verify-email-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/images/2.png "verify-mobile-2"
+[verify-email-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/1.png "verify-mobile-1"
+[verify-email-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/2.png "verify-mobile-2"
 
 
 
 
-[customer-dashboard-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-imag/1.png "customer-dashboard-new"
-[add-customer-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/2.png "add-customer-new"
-[customer-save-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/3.png "customer-save-new"
-[ip-auth-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/4.png "ip-auth-new"
-[ip-auth-2-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/5.png "ip-auth-2-new"
+
 [user-auth-1-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/6.png "user-auth-1-new"
 [user-auth-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/7.png "user-auth-new"
 [payment-2-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/8.png "ip-auth-new"
