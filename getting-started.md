@@ -42,7 +42,7 @@ Steps to Verify Email Address:
   ![alt text][verify-email-1]
 
 3. Click on Send Verification Code
-4. Enter the Verification code sent to your email address and click Verify.
+4. Either click the link or copy & paste the verification code sent to your email by clicking the button.
 
   ![alt text][verify-email-2]
 
@@ -53,17 +53,16 @@ We verify mobile phone numbers to ensure that they are genuine.
 
 Steps to Verify Mobile Number
 
-1. Click on the Top Left notification button
-2. Click on Verify on Verify Mobile
+1. Click on the Top Left notification button.
+2. Click on Verify on Verify Mobile.
+3. Click on Edit.
+4. Enter the Phone Number in E.164 format and click Save.
 
   ![alt text][verify-mobile-1]
 
-3. Click on Edit
-4. Enter the phone number in e.164 format and click save
-
   ![alt text][verify-mobile-3]
 
-5. Click on Send Verification Code
+5. Click on Send Verification Code.
 6. Enter the Verification code sent to your mobile and click Verify.
 
   ![alt text][verify-mobile-2]
@@ -115,12 +114,12 @@ Below are the instructions for basic customer setup, for detailed instruction on
 
     ![alt text][ip-auth-2-new]
 
-### User / Password Authentication
+### SIP User Authentication
 
 You can authenticate either using IP to IP or User/Password. Below are the steps to add a SIP extension.
 
 1. Click on Authentication.
-2. Click '+' under User / Password Authentication.
+2. Click '+' SIP User Authentication.
 
     ![alt text][user-auth-1-new]
 
@@ -180,23 +179,25 @@ Below are the instructions to setup the provider rate card manually. There are t
 
   ![alt text][provider-ratecard]
 
-3. Name the provider card
-4. Select the Carrier from the dropdown list
-5. Select the desired currency for the provider card
-6. Click Save
+3. Name the provider card.
+4. Go to properties.
+5. Select the Carrier from the dropdown list.
+6. Select the desired currency for the provider card.
+7. Click Save.
 
  ![alt text][add-new-provider]
 
-7. Click on Add Draft button
+8. Go to provider rate card.
+9. Click on Create Draft button.
 
   ![alt text][add-draft]
 
-8. Click on Add New Row
+8. Click on Add Row
 
  ![alt text][add-new-row]
 
 9. Complete the Spreadsheet information, Example: Prefix: 441, Name: UK Landline, Cost: 0.006, Billing: 1/1. You can add as many rows as you wish.
-10. Click on Publish button to publish the rate card.
+10. Click on Save button to publish the rate card.
 
  ![alt text][upload]
 
@@ -212,7 +213,7 @@ Below are the instructions to setup the provider rate card manually. There are t
  ![alt text][add-new-customer] 
 
 3. Name the customer card
-4. Select the carrier cards
+4. Select the multiple carrier cards(By default it will be LCR)
 5. Select the desired currency & Click Save
 
  ![alt text][add-new-customer-1] 
@@ -247,12 +248,12 @@ For detailed information about ingress routing click on [Ingress Routing]
 
 Deploying a server with Connexcs is very quick, once the checklist is complete you will be able to deploy the server.
 
-1. Click on Setup> My Servers
+1. Click on Setup> Settings> Servers
 2. Click on Add Server
   ![alt text][server]
 3. Choose Server Location
 4. Enter the Server Name
-5. Check the confirmation box and click on Confirm button
+5. Check the confirmation box and deploy the server.
 6. The server IP address will be emailed to your registered email address, the ip address can also be found from the server list section.
 
 
