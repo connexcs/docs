@@ -39,12 +39,12 @@ Steps to Verify Email Address:
 1. Click on the Top Left notification button
 2. Click on Verify on Verify Email
 
-  
+    ![alt text][verify-email-1]
 
 3. Click on Send Verification Code
 4. Either click the link or copy & paste the verification code sent to your email by clicking the button.
 
- 
+   ![alt text][verify-email-2]
 
 
 ## Mobile Verification 
@@ -58,13 +58,14 @@ Steps to Verify Mobile Number
 3. Click on Edit.
 4. Enter the Phone Number in E.164 format and click Save.
 
- 
- 
- 
+  ![alt text][verify-mobile-1]
+
+  ![alt text][verify-mobile-3]
+
 5. Click on Send Verification Code.
 6. Enter the Verification code sent to your mobile and click Verify.
 
- 
+ ![alt text][verify-mobile-2]
 
 
 ## Prerequisites Customer
@@ -89,17 +90,17 @@ Below are the instructions for basic customer setup, for detailed instruction on
 
 1. Click on Management > Customers.
   
-    
+      ![alt text][customer-dashboard-new]
 
 2. Click on Add Customer.
 
-    
+      ![alt text][add-customer-new]
 
 3. Enter the Customer name. 
 4. Select the currency that you wish to setup the account in.
 5. Click Save.
 
-    
+      ![alt text][customer-save-new]
 
 ### Authentication
 
@@ -264,74 +265,53 @@ Deploying a server with Connexcs is very quick, once the checklist is complete y
 
 [Ingress Routing]: <https://docs.connexcs.com/en/latest/ingress-routing/>
 
-[customer-dashboard-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-dashboard-new.png "customer-dashboard-new"
-[add-customer-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/add-customer-new.png "add-customer-new"
-[customer-save-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-save-new.png "customer-save-new"
-[ip-auth-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/ip-auth-new.png "ip-auth-new"
-[ip-auth-2-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/ip-auth-2-new.png "ip-auth-2-new"
-[user-auth-1-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/user-auth-1-new.png "user-auth-1-new"
-[user-auth-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/user-auth-new.png "user-auth-new"
-[payment-2-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/payment-2-new.png "ip-auth-new"
-[payment-1-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/payment-1-new.png "payment-1-new"
+[customer-dashboard-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-imag/1.png "customer-dashboard-new"
+[add-customer-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/2.png "add-customer-new"
+[customer-save-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/3.png "customer-save-new"
+[ip-auth-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/4.png "ip-auth-new"
+[ip-auth-2-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/5.png "ip-auth-2-new"
+[user-auth-1-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/6.png "user-auth-1-new"
+[user-auth-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/7.png "user-auth-new"
+[payment-2-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/8.png "ip-auth-new"
+[payment-1-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/9.png "payment-1-new"
 
-[carrier-auth]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/carrier-auth.png "carrier-auth"
-[carrier-auth-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/carrier-auth-1.png "carrier-auth-1"
-
-
-
-[provider-card-dashbboard]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/provider-card-dashbboard.png "provider-card-dashbboard"
-[provider-ratecard]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/provider-ratecard.png "provider-ratecard"
-[provider-card-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/provider-card-1.png "provider-card-1"
-
-[provider-card-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/provider-card-5.png "provider-card-5"
-[provider-card-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/provider-card-4.png "provider-card-5"
-[provider-card-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/provider-card-6.png "provider-card-5"
-[provider-card-7]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/provider-card-7.png "provider-card-5"
-
-[map8]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/map8.png "map8"
-[map10]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/map10.png "map10"
-
-[customer-card]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-card.png "customer-card"
-[customer-card-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-card-1.png "customer-card-1"
-[customer-card-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-card-2.png "customer-card-2"
-[customer-card-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-card-3.png "customer-card-3"
-[customer-card-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-card-4.png "customer-card-4"
-[customer-card-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-card-5.png "customer-card-5"
-[customer-card-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-card-6.png "customer-card-6"
+[carrier-auth]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/10.png "carrier-auth"
+[carrier-auth-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/11.png "carrier-auth-1"
 
 
 
-[add-new-provider]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/add-new-provider.png "add-new-provider"
-[add-draft]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/add-draft.png "add-draft"
-[add-new-row]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/add-new-row.png "add-new-row"
-[upload]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/upload.png "upload"
+[provider-card-dashbboard]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/12png "provider-card-dashbboard"
+[provider-ratecard]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/13.png "provider-ratecard"
+[provider-card-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/14.png "provider-card-1"
 
-[add-new-customer]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/add-new-customer.png "add-new-customer"
-[add-new-customer-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/add-new-customer-1.png "add-new-customer-1"
-[add-customer-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/add-customer-2.png "add-customer-2"
-[add-customer-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/add-customer-3.png "add-customer-3"
+[provider-card-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/15.png "provider-card-5"
+[provider-card-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/16.png "provider-card-5"
+[provider-card-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/17.png "provider-card-5"
+[provider-card-7]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/18.png "provider-card-5"
 
-[ingress-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/ingress-1.png "ingress-1"
-[ingress-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/ingress-2.png "ingress-2"
-[ingress-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/ingress-3.png "ingress-3"
+[map8]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/19.png "map8"
+[map10]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/20.png "map10"
 
-
-[verify-mobile-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/verify-mobile-1.png "verify-mobile-1"
-[verify-mobile-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/verify-mobile-3.png "verify-mobile-3"
-[verify-mobile-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/verify-mobile-2.png "verify-mobile-2"
-
-
-[verify-email-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/verify-email-1.png "verify-mobile-1"
-[verify-email-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/verify-email-2.png "verify-mobile-2"
-
-[carrier-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/carrier-1.png "carrier-1"
-[carrier-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/carrier-2.png "carrier-2"
+[customer-card]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/21.png "customer-card"
+[customer-card-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/22.png "customer-card-1"
+[customer-card-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/23.png "customer-card-2"
+[customer-card-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/24.png "customer-card-3"
+[customer-card-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/25.png "customer-card-4"
+[customer-card-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/26.png "customer-card-5"
+[customer-card-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/27.png "customer-card-6"
 
 
-[server]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/server.png "server"
 
-[load-balance]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/load-balance.png "load-balance"
-[server-reactivation]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/server-reactivation.png "server-reactivation"
-[server-reactivation-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/server-reactivation-1.png "server-reactivation-1"
-[ssl]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/ssl.png "ssl"
+[add-new-provider]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/28.png "add-new-provider"
+[add-draft]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/29.png "add-draft"
+[add-new-row]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/30.png "add-new-row"
+[upload]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/31.png "upload"
 
+[add-new-customer]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/32.png "add-new-customer"
+[add-new-customer-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/33.png "add-new-customer-1"
+[add-customer-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/34.png "add-customer-2"
+[add-customer-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/35.png "add-customer-3"
+
+[ingress-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/36.png "ingress-1"
+[ingress-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/37.png "ingress-2"
+[ingress-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/38.png "ingress-3"
