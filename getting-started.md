@@ -118,7 +118,7 @@ You can authenticate either using IP to IP or User/Password. Below are the steps
 1. Click on Authentication.
 2. Click '+' SIP User Authentication.
 
-   [alt text][sip-user-1]
+   ![alt text][sip-user-1]
 
 3. Enter the username of your choice.
 4. Enter the password.
