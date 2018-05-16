@@ -222,22 +222,22 @@ Below are the instructions to setup the provider rate card manually. There are t
 
 8. Click on Build From Carrier Cards button & confirm the build.
 
-![alt text][customer-card-5]
+ ![alt text][customer-card-5]
 
 ## Ingress Routing
 
 1. Click on Management> Customer
 
- 
+  ![alt text][ingress-1]
 
 2. Click on the customer name> Routing
 
- 
+ ![alt text][ingress-2]
 
 3. Click '+' under Ingress Routing
 4. Select the Customer card from the tariff list & click Save
 
- 
+ ![alt text][ingress-3]
 
 For detailed information about ingress routing click on [Ingress Routing]
 
@@ -303,6 +303,10 @@ Deploying a server with Connexcs is very quick, once the checklist is complete y
 [customer-card-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/26.png "customer-card-6"
 
 
+[ingress-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/28.png "ingress-1"
+[ingress-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/29.png "ingress-2"
+[ingress-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/30.png "ingress-3"
+
 [map8]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/19.png "map8"
 [map10]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/20.png "map10"
 
@@ -320,6 +324,4 @@ Deploying a server with Connexcs is very quick, once the checklist is complete y
 [add-customer-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/34.png "add-customer-2"
 [add-customer-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/35.png "add-customer-3"
 
-[ingress-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/36.png "ingress-1"
-[ingress-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/37.png "ingress-2"
-[ingress-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/38.png "ingress-3"
+
