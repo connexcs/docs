@@ -145,24 +145,25 @@ Carriers are your VoIP route providers, below are the basic instructions to setu
 
 1. Click on Management> Carrier
  
-  
+  ![alt text][carrier-1]
 
 2. Enter the Carrier Name
 3. Select the Carrier currency
 4. Click Save
 
- 
+ ![alt text][carrier-2]
 
 ### Authentication
 
 1. Click on Authentication
 2. Click '+' under IP Authentication
 
-    
+  ![alt text][carrier-auth-1]
 
 3. Enter the termination IP address (We support SRV records & domains too)
 4. Click Save
 
+ ![alt text][carrier-auth-2]
     
 
 ## Provider Card
@@ -280,9 +281,11 @@ Deploying a server with Connexcs is very quick, once the checklist is complete y
 [payment-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/11.png "payment-1"
 [payment-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/12.png "payment-2"
 
+[carrier-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/13.png "carrier-1"
+[carrier-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/14.png "carrier-2"
 
-[carrier-auth]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/13.png "carrier-auth"
-[carrier-auth-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/14.png "carrier-auth-1"
+[carrier-auth-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/15.png "carrier-auth-1"
+[carrier-auth-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/16.png "carrier-auth-2"
 
 
 
