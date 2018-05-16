@@ -274,17 +274,15 @@ Deploying a server with Connexcs is very quick, once the checklist is complete y
 [ip-auth-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/7.png "ip-auth-1"
 [ip-auth-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/8.png "ip-auth-2"
 
-[sip-user-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/8.png "sip-user-1"
-[sip-user-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/9.png "sip-user-2"
+[sip-user-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/9.png "sip-user-1"
+[sip-user-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/10.png "sip-user-2"
 
-[payment-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/10.png "payment-1"
-[payment-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/11.png "payment-2"
-
-
+[payment-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/11.png "payment-1"
+[payment-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/12.png "payment-2"
 
 
-[carrier-auth]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/10.png "carrier-auth"
-[carrier-auth-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/11.png "carrier-auth-1"
+[carrier-auth]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/13.png "carrier-auth"
+[carrier-auth-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/14.png "carrier-auth-1"
 
 
 
