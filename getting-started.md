@@ -64,7 +64,6 @@ Steps to Verify Mobile Number
 6. Enter the Verification code sent to your mobile and click Verify.
 
  
-
 ## Prerequisites Customer
 
 1. Customer Name
@@ -119,12 +118,13 @@ You can authenticate either using IP to IP or User/Password. Below are the steps
 1. Click on Authentication.
 2. Click '+' SIP User Authentication.
 
-    ![alt text][sip-auth-1]
+   [alt text][sip-user-1]
 
 3. Enter the username of your choice.
 4. Enter the password.
 5. Click Save.
 
+ ![alt text][sip-user-2]
     
 
 ### Payments
@@ -132,12 +132,12 @@ You can authenticate either using IP to IP or User/Password. Below are the steps
 1. Click on Payments
 2. Click '+' 
 
-   
+   ![alt text][payment-1]
 
 3. Enter the description and the amount in the appropriate field 
 4. Select the Status as complete & click Save
 
-    
+    ![alt text][payment-2]
 
 ## Carrier Setup
 
