@@ -104,7 +104,8 @@ Below are the instructions for basic customer setup, for detailed instruction on
 1. Click on Authentication.
 2. Click '+' under IP Authentication. 
 
-    
+    ![alt text][user-auth-1-new]
+    ![alt text][user-auth-new]
 
 3. Enter the Origination/customer IP address (We support SRV records & domains too).
 4. Click Save.
@@ -272,8 +273,10 @@ Deploying a server with Connexcs is very quick, once the checklist is complete y
 
 
 
-[user-auth-1-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/6.png "user-auth-1-new"
-[user-auth-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/7.png "user-auth-new"
+[user-auth-1-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/7.png "user-auth-1-new"
+[user-auth-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/8.png "user-auth-new"
+
+
 [payment-2-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/8.png "ip-auth-new"
 [payment-1-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/9.png "payment-1-new"
 
