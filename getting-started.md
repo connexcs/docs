@@ -16,8 +16,6 @@
     * [Deploy Server](#deploy-server)
    
 
-
-
 # Introduction
 
 Initial set-up will configure a single carrier, single customer and single rate card.
@@ -287,25 +285,28 @@ Deploying a server with Connexcs is very quick, once the checklist is complete y
 [carrier-auth-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/15.png "carrier-auth-1"
 [carrier-auth-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/16.png "carrier-auth-2"
 
-[provider-card-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/17.png "provider-card-dashbboard"
-[provider-card-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/18.png "provider-ratecard"
-[provider-card-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/19.png "provider-card-1"
+[provider-card-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/17.png "provider-card-1"
+[provider-card-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/18.png "provider-card-2"
+[provider-card-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/19.png "provider-card-3"
 
-[provider-card-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/20.png "provider-card-5"
+[provider-card-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/20.png "provider-card-4"
 [provider-card-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/21.png "provider-card-5"
-[provider-card-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/22.png "provider-card-5"
-[provider-card-7]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/18.png "provider-card-5"
+[provider-card-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/22.png "provider-card-6"
+[provider-card-7]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/18.png "provider-card-7"
+
+[customer-card]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/23.png "customer-card"
+[customer-card-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/24.png "customer-card-1"
+[customer-card-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/25.png "customer-card-2"
+[customer-card-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/26.png "customer-card-3"
+[customer-card-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/27.png "customer-card-4"
+[customer-card-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/25.png "customer-card-5"
+[customer-card-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/26.png "customer-card-6"
+
 
 [map8]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/19.png "map8"
 [map10]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/20.png "map10"
 
-[customer-card]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/21.png "customer-card"
-[customer-card-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/22.png "customer-card-1"
-[customer-card-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/23.png "customer-card-2"
-[customer-card-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/24.png "customer-card-3"
-[customer-card-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/25.png "customer-card-4"
-[customer-card-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/26.png "customer-card-5"
-[customer-card-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/27.png "customer-card-6"
+
 
 
 
