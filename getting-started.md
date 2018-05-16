@@ -266,7 +266,7 @@ Deploying a server with Connexcs is very quick, once the checklist is complete y
 [verify-email-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/2.png "verify-email-2"
 [verify-mobile-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/3.png "verify-mobile-1"
 
-[customer-dashboard-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-imag/4.png "customer-dashboard-new"
+[customer-dashboard-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/4.png "customer-dashboard-new"
 [add-customer-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/5.png "add-customer-new"
 [customer-save-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/6.png "customer-save-new"
 
