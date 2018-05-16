@@ -248,11 +248,14 @@ Deploying a server with Connexcs is very quick, once the checklist is complete y
 1. Click on Setup> Settings> Servers
 2. Click on Add Server
   
+  ![alt text][server-1]
+  
 3. Choose Server Location
 4. Enter the Server Name
 5. Check the confirmation box and deploy the server.
 6. The server IP address will be emailed to your registered email address, the ip address can also be found from the server list section.
 
+ ![alt text][server-2]
 
 [Carrier Management]: <https://docs.connexcs.com/en/latest/carrier/>
 
@@ -307,21 +310,12 @@ Deploying a server with Connexcs is very quick, once the checklist is complete y
 [ingress-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/29.png "ingress-2"
 [ingress-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/30.png "ingress-3"
 
-[map8]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/19.png "map8"
-[map10]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/20.png "map10"
+[server-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/31.png "server-1"
+[server-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/32.png "server-2"
 
 
 
 
 
-[add-new-provider]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/28.png "add-new-provider"
-[add-draft]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/29.png "add-draft"
-[add-new-row]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/30.png "add-new-row"
-[upload]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/31.png "upload"
-
-[add-new-customer]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/32.png "add-new-customer"
-[add-new-customer-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/33.png "add-new-customer-1"
-[add-customer-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/34.png "add-customer-2"
-[add-customer-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/35.png "add-customer-3"
 
 
