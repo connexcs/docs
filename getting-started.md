@@ -104,14 +104,14 @@ Below are the instructions for basic customer setup, for detailed instruction on
 1. Click on Authentication.
 2. Click '+' under IP Authentication. 
 
-    ![alt text][user-auth-1-new]
-    ![alt text][user-auth-new]
-
+    ![alt text][ip-auth-1]
+  
 3. Enter the Origination/customer IP address (We support SRV records & domains too).
 4. Click Save.
 
-    
+  ![alt text][ip-auth-2]
 
+    
 ### SIP User Authentication
 
 You can authenticate either using IP to IP or User/Password. Below are the steps to add a SIP extension.
@@ -119,7 +119,7 @@ You can authenticate either using IP to IP or User/Password. Below are the steps
 1. Click on Authentication.
 2. Click '+' SIP User Authentication.
 
-    
+    ![alt text][sip-auth-1]
 
 3. Enter the username of your choice.
 4. Enter the password.
@@ -271,14 +271,17 @@ Deploying a server with Connexcs is very quick, once the checklist is complete y
 [add-customer-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/5.png "add-customer-new"
 [customer-save-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/6.png "customer-save-new"
 
+[ip-auth-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/7.png "ip-auth-1"
+[ip-auth-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/8.png "ip-auth-2"
+
+[sip-user-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/8.png "sip-user-1"
+[sip-user-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/9.png "sip-user-2"
+
+[payment-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/10.png "payment-1"
+[payment-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/11.png "payment-2"
 
 
-[user-auth-1-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/7.png "user-auth-1-new"
-[user-auth-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/8.png "user-auth-new"
 
-
-[payment-2-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/8.png "ip-auth-new"
-[payment-1-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/9.png "payment-1-new"
 
 [carrier-auth]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/10.png "carrier-auth"
 [carrier-auth-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/11.png "carrier-auth-1"
