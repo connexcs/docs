@@ -203,26 +203,26 @@ Below are the instructions to setup the provider rate card manually. There are t
 
 1. Click on Management> Rate Cards
 
-   
+   ![alt text][customer-card-1]
 
 2. Click on Add Customer Card under Customer Rate Cards
 
- 
+ ![alt text][customer-card-2]
 
 3. Name the customer card
 4. Select the multiple carrier cards(By default it will be LCR)
 5. Select the desired currency & Click Save
 
- 
+ ![alt text][customer-card-3]
  
 6. Click on Profits tab >Click on Add New Row
 7. Complete the Spreadsheet, Example: Prefix: 441, Cost: 0.007, Profit Type: Absolute, Billing 1/1, Rounding: 1/1, Status: Profit, Apply To: Cost
 
-  
+   ![alt text][customer-card-4]
 
 8. Click on Build From Carrier Cards button & confirm the build.
 
-
+![alt text][customer-card-5]
 
 ## Ingress Routing
 
@@ -294,11 +294,11 @@ Deploying a server with Connexcs is very quick, once the checklist is complete y
 [provider-card-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/22.png "provider-card-6"
 [provider-card-7]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/18.png "provider-card-7"
 
-[customer-card]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/23.png "customer-card"
-[customer-card-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/24.png "customer-card-1"
-[customer-card-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/25.png "customer-card-2"
-[customer-card-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/26.png "customer-card-3"
-[customer-card-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/27.png "customer-card-4"
+[customer-card-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/23.png "customer-card-1"
+[customer-card-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/24.png "customer-card-2"
+[customer-card-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/25.png "customer-card-3"
+[customer-card-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/26.png "customer-card-4"
+[customer-card-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/27.png "customer-card-5"
 [customer-card-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/25.png "customer-card-5"
 [customer-card-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/26.png "customer-card-6"
 
