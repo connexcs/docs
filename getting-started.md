@@ -172,11 +172,11 @@ Below are the instructions to setup the provider rate card manually. There are t
  
 1. Click on Management> Rate Card
   
-  
+   ![alt text][provider-card-1]
   
 2. Click on Add Provider Card under Provider Rate Cards
 
-  
+  ![alt text][provider-card-2]
 
 3. Name the provider card.
 4. Go to properties.
@@ -184,16 +184,16 @@ Below are the instructions to setup the provider rate card manually. There are t
 6. Select the desired currency for the provider card.
 7. Click Save.
 
- 
+  ![alt text][provider-card-3]
 
 8. Go to provider rate card.
 9. Click on Create Draft button.
 
-  
+   ![alt text][provider-card-4]
 
 8. Click on Add Row
 
- 
+  ![alt text][provider-card-5]
 
 9. Complete the Spreadsheet information, Example: Prefix: 441, Name: UK Landline, Cost: 0.006, Billing: 1/1. You can add as many rows as you wish.
 10. Click on Save button to publish the rate card.
@@ -287,15 +287,13 @@ Deploying a server with Connexcs is very quick, once the checklist is complete y
 [carrier-auth-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/15.png "carrier-auth-1"
 [carrier-auth-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/16.png "carrier-auth-2"
 
+[provider-card-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/17.png "provider-card-dashbboard"
+[provider-card-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/18.png "provider-ratecard"
+[provider-card-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/19.png "provider-card-1"
 
-
-[provider-card-dashbboard]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/12png "provider-card-dashbboard"
-[provider-ratecard]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/13.png "provider-ratecard"
-[provider-card-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/14.png "provider-card-1"
-
-[provider-card-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/15.png "provider-card-5"
-[provider-card-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/16.png "provider-card-5"
-[provider-card-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/17.png "provider-card-5"
+[provider-card-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/20.png "provider-card-5"
+[provider-card-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/21.png "provider-card-5"
+[provider-card-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/22.png "provider-card-5"
 [provider-card-7]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/18.png "provider-card-5"
 
 [map8]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/19.png "map8"
