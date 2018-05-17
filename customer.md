@@ -327,7 +327,7 @@ You can also choose the package duration, the quantity, the cost and the frequen
 
 [customer-dashboard]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/33.png "Customer-Dashboard"
 [add-customer-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/34.png "Add-Customer"
-[add-customer]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/35.png "Add-Customer"
+[add-customer]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/35.png "Add-Customer"
 
 [del-customer]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/36.png "del-customer"
 [del-confirm]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/37.png "del-confirm"
