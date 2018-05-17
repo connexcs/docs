@@ -340,11 +340,17 @@ You can also choose the package duration, the quantity, the cost and the frequen
 [stats-tab]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/42.png "Stats Tab"
 [routing-tab]:  https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/43.png "Routing Tab"
 
-[recording-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/recording-1.png "recording-1"
-[recording-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/recording-2.png "recording-2"
-[recording-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/recording-2.png "recording-3"
-[recording-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/recording-4.png "recording-4"
+[recording-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/44.png "recording-1"
+[recording-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/45.png "recording-2"
+[recording-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/46.png "recording-3"
+[recording-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/47.png "recording-4"
  
+ 
+[edit-cli]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/48.png "Edit CLI"
+[auth]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/49.png "Auth"
+[edit-switch-basic]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/50.png "Edit Switch Basic"
+[edit-switch-advance]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/51.png "Edit Switch Advance"
+[user-pwd-auth]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/52.png "User Pwd Auth"
 
 [CLI]: <https://docs.connexcs.com/en/latest/cli>
 [Ingress Routing]: <https://docs.connexcs.com/en/latest/ingress-routing>
@@ -352,11 +358,7 @@ You can also choose the package duration, the quantity, the cost and the frequen
 
 
 [ingress-routing-tab]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/ingress-routing-tab.png "Ingress Routing Tab"
-[edit-cli]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/edit-cli.png "Edit CLI"
-[auth]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/auth.png "Auth"
-[edit-switch-basic]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/edit-switch-basic.png "Edit Switch Basic"
-[edit-switch-advance]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/edit-switch-advance.png "Edit Switch Advance"
-[user-pwd-auth]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/user-pwd-auth.png "User Pwd Auth"
+
 [simulate-call]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/simulate-call.png "Simulate Call"
 [payments-tab]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/payments-tab.png "Payments Tab" 
 [alert]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/alert.png "Alerts"
