@@ -43,7 +43,7 @@ On the Dashboard, click on the tab, highlighted in the centre of the page, to go
 
 You can add new **Customers** by following the simple procedure.
 
-1. Click on **Add Customer** button.
+1. Click on **'+'** button.
 2. Enter the details of the Customer.
 3. Click the **Save** button, once all the details are entered properly.
 
@@ -149,7 +149,7 @@ For more information about Ingress Routing click on [Ingress Routing]
 ### Call Recording
 
 1. Click on Management> Customer
-2. Click on the Customer Name> Routing
+2. Click on the Customer Name> Routing> Proxy Info
 
 ![alt text][recording-1]
 
@@ -170,7 +170,7 @@ For more information about Ingress Routing click on [Ingress Routing]
 CLI / ANI is the From part of the SIP INVITE message and contains the information about who the call was placed from, more specifically we are referring to the number that is presented to have sent the call. 
 The detailed functions are explained on [CLI]
 
-1.	Click on the **Add New** button.
+1.	Click on the **'+'** button.
 2.	Popup will appear. Fill out the details in the dialogue box.
 3.	Press **Save** once the details are correctly entered.
 
@@ -189,7 +189,7 @@ Under the **Authentication** tab, there are two types of authentication as shown
 
 #### IP Authentication
 
-1.	Click on the **Add new** button.
+1.	Click on the **'+'** button.
 2.	Enter the IP address & click save
 
 ![alt text][edit-switch-basic]
@@ -211,7 +211,7 @@ In the image below, there is a description of the **Advanced** dialogue box.
 
 You can set the **User/Password authentication**.
 
-1.	Click on the **Add new** button.
+1.	Click on the **'+'** button.
 2. Enter the username & password & click save.
 
 ![alt text][user-pwd-auth]
@@ -236,7 +236,7 @@ The **Dialogs** tab shows the active calls on the account so you can easily see 
 
 In this tab, you can make a list of all the **payments** that have been made so far and you can also add new payments by:
 
-1.	Click on the **Add New** button.
+1.	Click on the **'+'** button.
 2.	Fill out the dialogue box as shown in the image below. Add the Description of the payment, the total amount in digits and finally        select the status of it whether it’s Completed, Pending or Cancelled.
 3.	Finally press the **Save** button.
 
@@ -285,7 +285,7 @@ This feature lets you recalculate the long duration calls which have been timed 
 
 You can assign **DID** in an account by following these steps:
 
-1.	Click on the **‘Plus sign’** button which is at the extreme right of the page.
+1.	Click on the **‘+’** button which is at the extreme right of the page.
 2.	Popup will appear. Add DID name, set the Destination; select the Provider name, Provider Card, Customer name and Customer Card from the dropdown menu options respectively; Cost in digits and Retail as shown in the image below:
 3.	And Press **Save** button.
 
@@ -295,7 +295,7 @@ You can assign **DID** in an account by following these steps:
 
 You are able to add the customer package and its quantity for their ease in just one click.
 
-1.	Click on the **‘Plus Sign’** button.
+1.	Click on the **‘+’** button.
 2.	Fill out the details of the dialogue box which includes: Package name and quantity in digits and also check or uncheck the Auto Decrement Credit as shown in the image below. Auto decrement will debit the package amount from the customer account depending on the quantity.
 3.	Press **Save** button.
 
@@ -324,24 +324,33 @@ You can also choose the package duration, the quantity, the cost and the frequen
  ![alt text][contacts-2]
  
 
- 
-[recording-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/recording-1.png "recording-1"
-[recording-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/recording-2.png "recording-2"
-[recording-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/recording-2.png "recording-3"
-[recording-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/recording-4.png "recording-4"
+
+[customer-dashboard]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/33.png "Customer-Dashboard"
+[add-customer-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/34.png "Add-Customer"
+[add-customer]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/35.png "Add-Customer"
+
+[del-customer]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/36.png "del-customer"
+[del-confirm]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/37.png "del-confirm"
+[del-confirm-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/38.png "del-confirm-1"
+
+[customer-status]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/39.png "Customer-Status"
+[edit-customer]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/40.png "Edit-Customer"
+
+[main-tab]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/41.png "Main Tab"
+[stats-tab]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/42.png "Stats Tab"
+[routing-tab]:  https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/43.png "Routing Tab"
+
+[recording-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/recording-1.png "recording-1"
+[recording-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/recording-2.png "recording-2"
+[recording-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/recording-2.png "recording-3"
+[recording-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/recording-4.png "recording-4"
  
 
 [CLI]: <https://docs.connexcs.com/en/latest/cli>
 [Ingress Routing]: <https://docs.connexcs.com/en/latest/ingress-routing>
-[customer-dashboard]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/customer-dashboard-new.png "Customer-Dashboard"
-[add-customer-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/add-customer-new.png "Add-Customer"
-[add-customer]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/add-customer.png "Add-Customer"
-[customer-status]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/customer-status.png "Customer-Status"
-[edit-customer]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/edit-customer-new.png "Edit-Customer"
 
-[stats-tab]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/stats-tab.png "Stats Tab"
-[main-tab]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/main-tab.png "Main Tab"
-[routing-tab]:  https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/routing-tab.png "Routing Tab"
+
+
 [ingress-routing-tab]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/ingress-routing-tab.png "Ingress Routing Tab"
 [edit-cli]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/edit-cli.png "Edit CLI"
 [auth]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/auth.png "Auth"
@@ -356,15 +365,13 @@ You can also choose the package duration, the quantity, the cost and the frequen
 [customer-package]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/customer-package.png "Customer-Package"
 [customer-package1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/customer-package1.png "Customer-Package1"
 
-[customer]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer.png "customer"
-[contacts]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/contacts.png "contacts"
-[contacts-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/contacts-2.png "contacts-2"
+[customer]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/customer.png "customer"
+[contacts]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/contacts.png "contacts"
+[contacts-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/contacts-2.png "contacts-2"
 
 
 
-[del-customer]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/del-customer.png "del-customer"
-[del-confirm]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/del-confirm.png "del-confirm"
-[del-confirm-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/del-confirm-1.png "del-confirm-1"
+
 
 [carrier-alert-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-alert-1.png "Carrier Alert-1"
 [carrier-alert-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-alert-2.png "Carrier Alert-2"
