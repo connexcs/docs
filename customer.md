@@ -39,11 +39,12 @@ On the Dashboard, click on the tab, highlighted in the centre of the page, to go
 
 ## Adding Customer
 
-![alt text][add-Customer-new]
-
 You can add new **Customers** by following the simple procedure.
 
 1. Click on **'+'** button.
+
+![alt text][add-Customer-new]
+
 2. Enter the details of the Customer.
 3. Click the **Save** button, once all the details are entered properly.
 
@@ -94,13 +95,13 @@ You can delete **Customers** from the list, by following the steps given below.
 
 ## Checking the status
 
-![alt text][customer-status]
-
 You can also check/filter the **Customers** by the status. 
 
 1.	Click on the button to the right of the trash bin labelled  **"Active".**
 2.	Select an option, from the dropdown menu, against which you want to filter the customers.
 3.	Results will show up according to the selected option.
+
+![alt text][customer-status]
 
 ## Searching Customers
 
@@ -339,25 +340,23 @@ You can also choose the package duration, the quantity, the cost and the frequen
 [main-tab]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/41.png "Main Tab"
 [stats-tab]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/42.png "Stats Tab"
 [routing-tab]:  https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/43.png "Routing Tab"
+[ingress-routing-tab]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/44.png "Ingress Routing Tab"
 
-[recording-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/44.png "recording-1"
-[recording-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/45.png "recording-2"
-[recording-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/46.png "recording-3"
-[recording-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/47.png "recording-4"
+
+[recording-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/45.png "recording-1"
+[recording-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/46.png "recording-2"
+[recording-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/47.png "recording-3"
+[recording-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/48.png "recording-4"
  
  
-[edit-cli]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/48.png "Edit CLI"
-[auth]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/49.png "Auth"
-[edit-switch-basic]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/50.png "Edit Switch Basic"
-[edit-switch-advance]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/51.png "Edit Switch Advance"
-[user-pwd-auth]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/52.png "User Pwd Auth"
+[edit-cli]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/49.png "Edit CLI"
+[auth]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/50.png "Auth"
+[edit-switch-basic]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/51.png "Edit Switch Basic"
+[edit-switch-advance]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/52.png "Edit Switch Advance"
+[user-pwd-auth]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/53.png "User Pwd Auth"
 
 [CLI]: <https://docs.connexcs.com/en/latest/cli>
 [Ingress Routing]: <https://docs.connexcs.com/en/latest/ingress-routing>
-
-
-
-[ingress-routing-tab]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/ingress-routing-tab.png "Ingress Routing Tab"
 
 [simulate-call]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/simulate-call.png "Simulate Call"
 [payments-tab]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/payments-tab.png "Payments Tab" 
