@@ -361,7 +361,7 @@ You can also choose the package duration, the quantity, the cost and the frequen
 [customer-package]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/58.png "Customer-Package"
 [customer-package1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/59.png "Customer-Package1"
 [customer]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/60.png "customer"
-[contacts]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/61contacts.png "contacts"
+[contacts]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/61.png "contacts"
 [contacts-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/62.png "contacts-2"
 
 [alert]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/alert.png "Alerts"
