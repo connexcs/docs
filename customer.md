@@ -151,20 +151,15 @@ For more information about Ingress Routing click on [Ingress Routing]
 
 1. Click on Management> Customer
 2. Click on the Customer Name> Routing> Proxy Info
-
-![alt text][recording-1]
-
 3. Click on the rate card name> select enable from Recording.
 
-![alt text][recording-2]
-
-![alt text][recording-3]
+![alt text][recording-1]
 
 4. The recorded files can be accessed from the file section
 5. Click on Management> File> Recording
 6. Click on the download button to download the file.
 
-![alt text][recording-4]
+![alt text][recording-2]
 
 ### Adding CLI
 
@@ -357,21 +352,26 @@ You can also choose the package duration, the quantity, the cost and the frequen
 [Ingress Routing]: <https://docs.connexcs.com/en/latest/ingress-routing>
 
 [simulate-call]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/52.png "Simulate Call"
-[payments-tab]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/payments-tab.png "Payments Tab" 
-[alert]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/alert.png "Alerts"
-[recalc]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/recalc.png "Recalc"
-[edit-did]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/edit-did.png "Edit-DID"
-[customer-package]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/customer-package.png "Customer-Package"
-[customer-package1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/customer-package1.png "Customer-Package1"
+[payments-tab]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/53.png "Payments Tab" 
 
-[customer]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/customer.png "customer"
-[contacts]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/contacts.png "contacts"
-[contacts-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/contacts-2.png "contacts-2"
+[carrier-alert-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/54.png "Carrier Alert-1"
+[carrier-alert-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/55.png "Carrier Alert-2"
+[recalc]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/56.png "Recalc"
+[edit-did]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/57.png "Edit-DID"
+[customer-package]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/58.png "Customer-Package"
+[customer-package1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/59.png "Customer-Package1"
+[customer]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/60.png "customer"
+[contacts]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/61contacts.png "contacts"
+[contacts-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/62.png "contacts-2"
+
+[alert]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/alert.png "Alerts"
 
 
 
 
 
-[carrier-alert-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-alert-1.png "Carrier Alert-1"
-[carrier-alert-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-alert-2.png "Carrier Alert-2"
+
+
+
+
 
