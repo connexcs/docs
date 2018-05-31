@@ -245,16 +245,18 @@ If the server has been deployed on your account, you can view/manage from this m
 [paypal-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/73.png "Paypal 1"
 [paypal]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/74.png "Paypal"
 [stripe]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/75.png "Stripe"
-
+[domain]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/77.png "Domain"
+[add-new-domain]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/78.png "Add-New-Domain"
+[payments]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/79.png "Payments"
+[payments-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/80.png "Payments 1"
+[package-user]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/81.png "Package-Users"
+[package]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/82.png "Package"
+[package-dialog-box]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/83.png "Package-Dialog-Box"
+[my-server]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/83.png "My-Server"
 
 [change-pwd]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/change-pwd.png "Change-PWD"
 [change-pwd-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/change-pwd-2.png "Change-PWD-2"
 
-[domain]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/domain.png "Domain"
-[add-new-domain]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/add-new-domain.png "Add-New-Domain"
-[payments]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/payments.png "Payments"
-[payments-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/payments-1.png "Payments 1"
-[package-user]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/package-user.png "Package-Users"
-[package]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/package.png "Package"
-[package-dialog-box]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/package-dialog-box.png "Package-Dialog-Box"
-[my-server]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/my-server.png "My-Server"
+
+
+
