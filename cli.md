@@ -27,13 +27,10 @@ With CLI restrict feature you can block calls. The blocked CLI can be added insi
 
 1. Click on Management> Rate Card> 
 2. Click on the provider Rate Card> Edit> Advanced
-
-![alt text][recording-7]
-
 3. Enter the CLI/ANI’s that you wish to block
 4. Click Save.
 
-![alt text][recording-8]
+![alt text][recording-7]
 
 ## Replace Specific CLI
 A CLI may be re-written, for example you can add `123456789` in the CLI box and have it be re-written by adding `987654321` in the re-write CLI box.
