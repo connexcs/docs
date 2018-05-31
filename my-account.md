@@ -242,14 +242,14 @@ If the server has been deployed on your account, you can view/manage from this m
 [user-config]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/70.png "User-Config"
 [group-config]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/71.png "Group-Config"
 [api]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/72.png "API"
-
+[paypal-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/73.png "Paypal 1"
+[paypal]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/74.png "Paypal"
+[stripe]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/75.png "Stripe"
 
 
 [change-pwd]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/change-pwd.png "Change-PWD"
 [change-pwd-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/change-pwd-2.png "Change-PWD-2"
-[paypal-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/paypal-1.png "Paypal 1"
-[paypal]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/paypal.png "Paypal"
-[stripe]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/stripe.png "Stripe"
+
 [domain]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/domain.png "Domain"
 [add-new-domain]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/add-new-domain.png "Add-New-Domain"
 [payments]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/payments.png "Payments"
