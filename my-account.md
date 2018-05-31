@@ -56,8 +56,6 @@ This function basically involves two types of information:
 
 To add/edit information, you can click on the pencil icon. In Company's Information, the following details are required:
 
-![alt text][my-account-1]
- 
 1. Name
 2. Address Line 1 and Address Line 2. 
 3. City, County/ State, Country, Post Code/ ZIP code
@@ -237,16 +235,18 @@ If the server has been deployed on your account, you can view/manage from this m
 [here]: <https://docs.connexcs.com/en/latest/customer-payments>
 [my-account]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/64.png "My Account"
 [my-account-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/65.png "My Account 1"
-[company-info]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/company-info.png "Company-Info"
 [general-info]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/66.png "General-Info"
+[tfa]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/67.png "TFA"
+[smtp]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/68.png "SMTP"
+[users]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/69.png "Users"
+[user-config]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/70.png "User-Config"
+[group-config]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/71.png "Group-Config"
+[api]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/72.png "API"
+
+
+
 [change-pwd]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/change-pwd.png "Change-PWD"
 [change-pwd-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/change-pwd-2.png "Change-PWD-2"
-[tfa]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/tfa.png "TFA"
-[smtp]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/smtp.png "SMTP"
-[users]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/users.png "Users"
-[user-config]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/user-config.png "User-Config"
-[group-config]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/group-config.png "Group-Config"
-[api]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/api.png "API"
 [paypal-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/paypal-1.png "Paypal 1"
 [paypal]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/paypal.png "Paypal"
 [stripe]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/stripe.png "Stripe"
