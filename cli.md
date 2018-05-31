@@ -57,6 +57,6 @@ The CLI system uses Regular Expressions to match and replace numbers. Here are a
 If you wish to learn or practice writing regular expressions, this is a great site: http://regexr.com/
 
 
-[recording-7]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/recording-7.png "recording-7"
+[recording-7]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/63.png "recording-7"
 [recording-8]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/recording-8.png "recording-8"
 
