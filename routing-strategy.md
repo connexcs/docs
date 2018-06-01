@@ -138,30 +138,27 @@ It is possible with connex switch to block specific call using the Routing Strat
 
 ![alt text][Blocking-Calls-6]
 
+[routing-dashboard-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/86.png "routing-dashboard"
+
+[routing-strategy1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/87.png "routing-strategy1"
+[routing-strategy2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/88.png "routing-strategy2"
+[routing-strategy3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/89.png "routing-strategy3"
+[routing-strategy7]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/90.png "routing-strategy7"
+[routing-strategy8]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/91.png "routing-strategy8"
+[routing-strategy9]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/92.png "routing-strategy9"
+[routing-strategy10]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/93.png "routing-strategy10"
+[routing-strategy11]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/94.png "routing-strategy11"
+[routing-strategy12]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/95.png "routing-strategy14"
+[routing-strategy14]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/96.png "routing-strategy14"
 
 
-[blocking-calls-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/recording-1.png "Blocking-Calls-1"
-[blocking-calls-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/recording-2.png "Blocking-Calls-2"
+[blocking-calls-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/97.png "Blocking-Calls-1"
+[blocking-calls-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/98.png "Blocking-Calls-2"
 [blocking-calls-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/recording-5.png "Blocking-Calls-5"
 [blocking-calls-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/recording-6.png "Blocking-Calls-6"
 
-[routing-dashboard-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/routing-dashboard-new.png "routing-dashboard"
+
 [edit-routing]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/edit-routing.png "edit-routing"
 [routing-strategy]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/routing-strategy.png "routing-strategy"
 [edit-routing-strategy]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/edit-routing-strategy.png "edit-routing-strategy"
 
-[routing-strategy1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/routing-strategy1.png "routing-strategy1"
-[routing-strategy2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/routing-strategy2.png "routing-strategy2"
-[routing-strategy3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/routing-strategy3.png "routing-strategy3"
-[routing-strategy4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/routing-strategy4.png "routing-strategy4"
-[routing-strategy5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/routing-strategy5.png "routing-strategy5"
-[routing-strategy6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/routing-strategy6.png "routing-strategy6"
-
-[routing-strategy7]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/routing-strategy7.png "routing-strategy7"
-[routing-strategy8]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/routing-strategy8.png "routing-strategy8"
-[routing-strategy9]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/routing-strategy9.png "routing-strategy9"
-[routing-strategy10]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/routing-strategy10.png "routing-strategy10"
-[routing-strategy11]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/routing-strategy11.png "routing-strategy11"
-[routing-strategy12]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/routing-strategy12.png "routing-strategy12"
-[routing-strategy13]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/routing-strategy13.png "routing-strategy13"
-[routing-strategy14]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/routing-strategy14.png "routing-strategy14"
