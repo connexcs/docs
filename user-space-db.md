@@ -39,7 +39,7 @@ A new user space database can be added by following simple steps:
 
 1. Click on the **Add New** button.
 
-![alt text][user-space-img-1a]
+![alt text][user-space-img-2]
 
 2.	Pop up will appear.
 
@@ -47,7 +47,7 @@ A new user space database can be added by following simple steps:
 
 4.	Click **Save** once the details have been entered.
 
-![alt text][user-space-img-2a]
+![alt text][user-space-img-3]
 
 A new space will now be added.
 
@@ -55,7 +55,7 @@ A new space will now be added.
 
 The list can be refreshed, if needed, by simply pressing the *Refresh* button.
 
-![alt text][user-space-img-4]
+![alt text][user-space-img-1a]
 
 ## Deleting the Items
 
@@ -64,7 +64,7 @@ To delete an item from the list:
 1. Select any name from the *Area* column.
 2. Click the delete icon, which is right next to the *Refresh* button.
 
-![alt text][user-space-img-5]
+![alt text][user-space-img-2a]
 
 
 ## Edit the Details
@@ -73,12 +73,12 @@ To edit the details of any item, do the following:
 
 1. Click on name of the *Area* column that needs to be updated.
 
-![alt text][user-space-img-6]
+![alt text][user-space-img-4]
 
 2. Pop up will appear. Edit the details in the dialog box.
 3. Click **Save**, once the details have been edited.
 
-![alt text][user-space-img-2a]
+![alt text][user-space-img-5]
 
 ## Search Text Fields
 
@@ -86,7 +86,7 @@ You can search the *Area* and *Key* from the given search text fields.
 
 Following image depicts both search text fields.
 
-![alt text][user-space-img-3]
+![alt text][user-space-img-6]
 
 [user-space-img-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/185.png "user-space-img-1"
 [user-space-img-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/186.png "user-space-img-2"
