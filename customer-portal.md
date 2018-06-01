@@ -21,9 +21,13 @@ Once this is configured with your domain hosting provider you will now have to c
 
 To add a new domain:
 
-1. Click on the '+' icon under Portal.
+1. Go to Setup>Integrations then click Domains.
 
    ![alt text][domain]
+
+2. Click on the '+' icon under Portal.
+
+ ![alt text][domain1]
 
 2. Enter the domain name, example, portal.yourwebsite.com
 3. Select the brand name, this is the name that will be displayed on your customer portal.
@@ -46,6 +50,9 @@ We will now learn how to add Contacts on control panel, basically this is done t
    ![alt text][contacts]
 
 3. Enter the contact name
+
+  ![alt text][contacts1]
+  
 4. Enter the Email address, this email address will be used for login
 5. Check the Auto generate password box if you would like the password to be generated online and the generated password will be sent via email. Unchecking the box will let you manually set the password
 6. You may enter any information on public notes, these notes will be displayed on the customer portal when logged in. The private notes are limited to display only on the control panel, these notes will not be displayed on the customer portal.
@@ -56,10 +63,13 @@ We will now learn how to add Contacts on control panel, basically this is done t
 You or your customers can use these credentials to login to the customer portal.
 
 
+[domain]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/168.png "Domain"
+[domain1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/169.png "Domain1"
+[add-new-domain]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/170.png "Add-New-Domain"
+[customer]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/171.png "customer"
+[contacts]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/172.png "contacts"
+[contacts1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/173.png "contacts1"
+[contacts-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/174.png "contacts-2"
 
-[customer]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer.png "customer"
-[contacts]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/contacts.png "contacts"
-[contacts-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/contacts-2.png "contacts-2"
 
-[domain]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/domain.png "Domain"
-[add-new-domain]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/add-new-domain.png "Add-New-Domain"
+
