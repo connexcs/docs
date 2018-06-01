@@ -53,39 +53,32 @@ Click on the **"+"** sign to add a new Routing Strategy.
 
 1. Click on the **Add New** button.
 
-   ![alt text][routing-strategy2]
+   ![alt text][routing-strategy1]
 
 2. Name the Strategy.
-
-   ![alt text][routing-strategy3]
-
 3. Select the Strategy type
-
-   ![alt text][routing-strategy4]
-
 4. Click + 
 5. Select the card from the drop down list.
-
-   ![alt text][routing-strategy5]
-
 6. Press **Save** button.
 
-   ![alt text][routing-strategy6]
+   ![alt text][routing-strategy2]
+   ![alt text][routing-strategy3]
 
+ 
 ## Setting up Routing Strategy in Customer Account
 
 1. Click on the customer account
 
-   ![alt text][routing-strategy7]
+   ![alt text][routing-strategy4]
 
 2. Click on Routing
 
-   ![alt text][routing-strategy8]
+   ![alt text][routing-strategy5]
 
 3. Click on the rate card name under Ingress Routing
 4. Click + under Strategy & select the stratgy that you wish to assign.
 
-   ![alt text][routing-strategy9]
+   ![alt text][routing-strategy6]
 
 ## Deleting the Routing Strategy
 
@@ -143,13 +136,13 @@ It is possible with connex switch to block specific call using the Routing Strat
 [routing-strategy1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/87.png "routing-strategy1"
 [routing-strategy2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/88.png "routing-strategy2"
 [routing-strategy3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/89.png "routing-strategy3"
-[routing-strategy7]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/90.png "routing-strategy7"
-[routing-strategy8]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/91.png "routing-strategy8"
-[routing-strategy9]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/92.png "routing-strategy9"
-[routing-strategy10]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/93.png "routing-strategy10"
-[routing-strategy11]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/94.png "routing-strategy11"
-[routing-strategy12]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/95.png "routing-strategy14"
-[routing-strategy14]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/96.png "routing-strategy14"
+[routing-strategy4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/90.png "routing-strategy7"
+[routing-strategy5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/91.png "routing-strategy8"
+[routing-strategy6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/92.png "routing-strategy9"
+[routing-strategy7]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/93.png "routing-strategy10"
+[routing-strategy8]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/94.png "routing-strategy11"
+[routing-strategy9]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/95.png "routing-strategy14"
+[routing-strategy10]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/96.png "routing-strategy14"
 
 
 [blocking-calls-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/97.png "Blocking-Calls-1"
