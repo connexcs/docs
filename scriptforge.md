@@ -153,23 +153,23 @@ You can customize your script in the new functionality of Connex and also can as
 
 1. Login to your Connex account and from the side menu select “Script Forge”.
 
-	![alt text][side]   
+ ![alt text][side]   
  
 2. Now, add your own script by clicking on “Add New” button.
 
-	![alt text][s2]   
+ ![alt text][s2]   
  
 3. Fill in the name of your script and click on “Save”.
 
-	![alt text][s3]   
+ ![alt text][s3]   
  
 4. Now, select your script from the list and click on it.
 
-	![alt text][s4]   
+ ![alt text][s4]   
  
 5. Enter the code of your script and click the arrow next to “Save and Restart”. From the drop down menu, select “Save” and then click on “Start”.
 
-	![alt text][s5]   
+ ![alt text][s5]   
  
 6. Click the “Run” button on the top. The script should show the result.
 
