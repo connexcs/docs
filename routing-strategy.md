@@ -87,16 +87,16 @@ If you need to you can delete the **Routing Strategy.**
 1. Select the **Routing Strategy.** from the list.
 2. Press **Delete** button which is on extreme right, next to **"+".**
 
-   ![alt text][routing-strategy10]
+   ![alt text][routing-strategy7]
 
-   ![alt text][routing-strategy11]
+   ![alt text][routing-strategy8]
 
 ## Edit the Routing Strategy
 Users can edit the strategy by:
 
 1. Click on the edit sign of the **Routing Strategy.** you want to edit from the list, highlighted in orange, in the image given below. 
-   ![alt text][routing-strategy12]
-   ![alt text][routing-strategy13]
+   ![alt text][routing-strategy9]
+   ![alt text][routing-strategy10]
 2. Edit the Strategy and press **"Save".**
 
 ## Adding and Deleting Card
@@ -136,20 +136,17 @@ It is possible with connex switch to block specific call using the Routing Strat
 [routing-strategy1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/87.png "routing-strategy1"
 [routing-strategy2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/88.png "routing-strategy2"
 [routing-strategy3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/89.png "routing-strategy3"
-[routing-strategy4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/90.png "routing-strategy7"
-[routing-strategy5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/91.png "routing-strategy8"
-[routing-strategy6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/92.png "routing-strategy9"
-[routing-strategy7]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/93.png "routing-strategy10"
-[routing-strategy8]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/94.png "routing-strategy11"
-[routing-strategy9]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/95.png "routing-strategy14"
-[routing-strategy10]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/96.png "routing-strategy14"
+[routing-strategy4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/90.png "routing-strategy4"
+[routing-strategy5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/91.png "routing-strategy5"
+[routing-strategy6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/92.png "routing-strategy6"
+[routing-strategy7]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/93.png "routing-strategy7"
+[routing-strategy8]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/94.png "routing-strategy8"
+[routing-strategy9]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/95.png "routing-strategy9"
+[routing-strategy10]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/96.png "routing-strategy10"
 
 
 [blocking-calls-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/97.png "Blocking-Calls-1"
 [blocking-calls-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/98.png "Blocking-Calls-2"
-[blocking-calls-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/recording-5.png "Blocking-Calls-5"
-[blocking-calls-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/recording-6.png "Blocking-Calls-6"
-
 
 [edit-routing]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/edit-routing.png "edit-routing"
 [routing-strategy]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/routing-strategy.png "routing-strategy"
