@@ -76,4 +76,4 @@ The SSL certificate can be deployed on your customer portal with a single click.
 
  ![alt text][ssl]
 
-[ssl]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/ssl.png "ssl"
+[ssl]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/289.png "ssl"
