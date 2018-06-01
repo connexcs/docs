@@ -138,23 +138,22 @@ f)	Manage columns
 To add a new SIP device:
 1)	Click on Add Device button.
 
-![alt text][cc-12]
+![alt text][cc-9]
 
 2)	A form will open. Select the customer for whom the device is to be added, enter the rest of information and click on Save button.
 
-![alt text][cc-13]
+![alt text][cc-10]
 
 A new device for that particular customer will be saved.
+
+![alt text][cc-12]
 
 ### View and Edit Device
 
 1)	To view a device, click on the icon under "View Device" column.
-
-![alt text][cc-14]
- 
 2)	A form will open. Click on Edit button.
  
-![alt text][cc-15] 
+![alt text][cc-13] 
  
 3)	On this page you can edit device information as well as can add a device line too and save accordingly.
 
@@ -162,20 +161,20 @@ A new device for that particular customer will be saved.
 
 To delete a device from the list, select any row and click on trash icon.
 
-![alt text][cc-16]
+![alt text][cc-14]
  
 
 ### Search Device
 
 To search a particular device, type in the search field and results will be filtered out.
 
-![alt text][cc-17]
+![alt text][cc-15]
  
 ### Refresh Device List
 
 To get the most updated list of devices, click on “Refresh” button.
  
-![alt text][cc-18]
+![alt text][cc-16]
  
 ### Manage Columns
 
@@ -185,28 +184,27 @@ Click on 3 horizontal lines to select the columns.
 
 Moreover, every column can be sorted separately, as shown in the image below.
  
-![alt text][cc-19]   
+![alt text][cc-17]   
 
-[cc-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/cc-1.png "CC-1"
-[cc-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/cc-2.png "CC-2"
-[cc-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/cc-3.png "CC-3"
-[cc-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/cc-4.png "CC-4"
-[cc-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/cc-5.png "CC-5"
-[cc-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/cc-6.png "CC-6"
-[cc-7]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/cc-7.png "CC-7"
-[cc-8]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/cc-8.png "CC-8"
-[cc-9]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/cc-9.png "CC-9"
-[cc-10]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/cc-10.png "CC-10"
-[cc-11]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/cc-11.png "CC-11"
-[cc-12]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/cc-12.png "CC-12"
-[cc-13]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/cc-13.png "CC-13"
-[cc-14]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/cc-14.png "CC-14"
-[cc-15]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/cc-15.png "CC-15"
-[cc-16]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/cc-16.png "CC-16"
-[cc-17]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/cc-17.png "CC-17"
-[cc-18]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/cc-18.png "CC-18"
-[cc-19]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/cc-19.png "CC-19"
-[cc-20]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/cc-20.png "CC-20"
+[cc-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/193.png "CC-1"
+[cc-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/194.png "CC-2"
+[cc-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/195.png "CC-3"
+[cc-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/196.png "CC-4"
+[cc-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/197.png "CC-5"
+[cc-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/198.png "CC-6"
+[cc-7]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/199.png "CC-7"
+[cc-8]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/200.png "CC-8"
+[cc-9]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/201.png "CC-9"
+[cc-10]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/202.png "CC-10"
+[cc-12]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/203.png "CC-12"
+[cc-13]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/204.png "CC-13"
+[cc-14]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/205.png "CC-14"
+[cc-15]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/206.png "CC-15"
+[cc-16]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/207.png "CC-16"
+[cc-17]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/208.png "CC-17"
+[cc-18]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/209.png "CC-18"
+[cc-19]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/210.png "CC-19"
+
 
 
 
