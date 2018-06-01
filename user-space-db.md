@@ -88,12 +88,12 @@ Following image depicts both search text fields.
 
 ![alt text][user-space-img-3]
 
-[user-space-img-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/user-space-img-1.png "user-space-img-1"
-[user-space-img-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/user-space-img-2.png "user-space-img-2"
-[user-space-img-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/user-space-img-3.png "user-space-img-3"
-[user-space-img-1a]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/user-space-img-1a.png "user-space-img-1a"
-[user-space-img-2a]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/user-space-img-2a.png "user-space-img-2a"
-[user-space-img-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/user-space-img-4.png "user-space-img-4"
-[user-space-img-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/user-space-img-5.png "user-space-img-5"
-[user-space-img-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/user-space-img-6.png "user-space-img-6"
+[user-space-img-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/185.png "user-space-img-1"
+[user-space-img-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/186.png "user-space-img-2"
+[user-space-img-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/187.png "user-space-img-3"
+[user-space-img-1a]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/188.png "user-space-img-1a"
+[user-space-img-2a]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/189.png "user-space-img-2a"
+[user-space-img-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/190.png "user-space-img-4"
+[user-space-img-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/191.png "user-space-img-5"
+[user-space-img-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/192.png "user-space-img-6"
 
