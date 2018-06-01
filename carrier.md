@@ -104,8 +104,6 @@ If you have to search for any information about a **Carrier** you can write a qu
 
 ## Customising The View
 
-![alt text][carriers]
-
 You can customize the view of your **Carriers** page and select only the columns which you want to view.
 On the extreme right, click on the menu button, and check the columns you want to view.
 
