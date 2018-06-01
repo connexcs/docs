@@ -49,7 +49,7 @@ You can download the file by clicking on **"Download"** button.
 
 ![alt text][files-4]
 
-[files-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/files-1.png "Files 1"
-[files-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/files-2.png "Files 2"
+[files-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/219.png "Files 1"
+[files-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/220.png "Files 2"
 [files-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/files-3.png "Files 3"
-[files-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/files-4.png "Files 4"
+[files-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/221.png "Files 4"
