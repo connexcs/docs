@@ -33,55 +33,40 @@ Circuit Test helps you perform a test to determine the quality of the route. Thi
 
 ![alt text][circuit-test-3]
 
+![alt text][circuit-test-4]
 
 Now, it's time for us to configure the circuit test:
 
-1. Click on Setup **"My Account"**
+1. Click on Setup
 
-![alt text][circuit-test-4]
+2. Click on Settings>Options
 
-2. Click on Settings tab
+![alt text][circuit-test-5]
  
 2.	Click the **"Edit"** button on Origination Ingress Address and enter the origination ingress IP and save.
 
 3.	Now click on **"Edit"** for Termination Ingress Address button and enter the termination ingress IP and save.
 
-![alt text][circuit-test-5]  
-
-![alt text][circuit-test-6]
-
-
-4.	Similarly, for the **"Circuit Test User"**, click **"Edit"** Select the customer account.
+![alt text][circuit-test-6]  
 
 ![alt text][circuit-test-7]
 
+4.	Similarly, for the **"Circuit Test User"**, click **"Edit"** Select the customer account.
+
 ![alt text][circuit-test-8]
-
-5.	Now go to Rate Card under Provider rate card.
-
-6.	Click on the Provider Rate Card that you have selected while adding the DID.
 
 ![alt text][circuit-test-9]
 
-7. Click on Circuit Test> +Circuit Test
-
-![alt text][circuit-test-10]  
  
-8.	A dialog box will open, enter the CLI number that you wish to present and select the Destination Number which you entered while setting the DID and press **"Send"**. A confirmation box will appear telling that you have initiated the test, the test result might take a while to appear on the screen.
-
-![alt text][circuit-test-11]  
-  
 
 
-[circuit-test-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/circuit-test-1.png "Circuit Test 1"
-[circuit-test-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/circuit-test-2.png "Circuit Test 2"
-[circuit-test-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/circuit-test-3.png "Circuit Test 3"
-[circuit-test-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/circuit-test-4.png "Circuit Test 4"
-[circuit-test-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/circuit-test-5.png "Circuit Test 5"
-[circuit-test-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/circuit-test-6.png "Circuit Test 6"
-[circuit-test-7]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/circuit-test-7.png "Circuit Test 7"
-[circuit-test-8]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/circuit-test-8.png "Circuit Test 8"
-[circuit-test-9]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/circuit-test-9.png "Circuit Test 9"
-[circuit-test-10]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/circuit-test-10.png "Circuit Test 10"
-[circuit-test-11]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/circuit-test-11.png "Circuit Test 11"
-
+[circuit-test-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/209.png "Circuit Test 1"
+[circuit-test-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/210.png "Circuit Test 2"
+[circuit-test-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/211.png "Circuit Test 3"
+[circuit-test-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/212.png "Circuit Test 4"
+[circuit-test-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/213.png "Circuit Test 5"
+[circuit-test-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/214.png "Circuit Test 6"
+[circuit-test-7]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/215.png "Circuit Test 7"
+[circuit-test-8]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/216.png "Circuit Test 8"
+[circuit-test-9]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/217.png "Circuit Test 9"
+[circuit-test-10]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/circuit-test-10.png "Circuit Test 10"
