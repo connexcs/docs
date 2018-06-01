@@ -38,4 +38,4 @@ When using more than one SIP server, you can load balance the calls without a lo
 6. Check the records accordingly against the server IP
 7. Click Save.
 
-[load-balance]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/load-balance.png "load-balance"
+[load-balance]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/218.png "load-balance"
