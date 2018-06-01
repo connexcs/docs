@@ -142,8 +142,8 @@ Now, go back to your External API form from your Connex account and add the cred
 [paypal-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/paypal-6.png "Paypal-6"
 [paypal-8]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/paypal-8.png "Paypal-8"
 [paypal-9]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/paypal-9.png "Paypal-9"
-[paypal-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/paypal-2.png "Paypal-2"
+[paypal-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/84.png "Paypal-2"
 [paypal-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/paypal-5.png "Paypal-5"
 [paypal-12]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/paypal-12.png "Paypal-12"
-[paypal-16]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/paypal-16.png "Paypal-16"
+[paypal-16]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/85.png "Paypal-16"
 
