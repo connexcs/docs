@@ -95,15 +95,16 @@ If you need to you can delete the **Routing Strategy.**
 Users can edit the strategy by:
 
 1. Click on the edit sign of the **Routing Strategy.** you want to edit from the list, highlighted in orange, in the image given below. 
+   
    ![alt text][routing-strategy9]
-   ![alt text][routing-strategy10]
+   
 2. Edit the Strategy and press **"Save".**
 
 ## Adding and Deleting Card
 
 You can add a card by clicking the **_"+"_** sign right under the Edit button. Click the **"Delete"** button next to it.
 
-   ![alt text][routing-strategy14]
+   ![alt text][routing-strategy10]
 
 ## Set Strategy Inside customer rate card
 
@@ -120,16 +121,10 @@ It is possible with connex switch to block specific call using the Routing Strat
 ![alt text][Blocking-Calls-1]
 
 2. Click on the customer Name> Routing> Rate Card
-
-![alt text][Blocking-Calls-2]
-
 3. Under Routing Strategy Click + & add the number that you wish to block and select to drop.
-
-![alt text][Blocking-Calls-5]
-
 4. Click Save
 
-![alt text][Blocking-Calls-6]
+![alt text][Blocking-Calls-2]
 
 [routing-dashboard-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/86.png "routing-dashboard"
 
