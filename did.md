@@ -97,6 +97,8 @@ You have a choice to set the column lists, by deciding which column shall be sho
 
 You can also search the details related to **DID section** in the text field, that is at the top right of the page.
 
+![alt text][did-img-3a]
+
 ## How to perform one action on multiple DID’s in one go?
 
 Editing all the DIDs one by one may feel like a tedious task. That's why Connex has introduced a functionality where you can perform the same action over multiple DID’s in one go.
@@ -120,9 +122,10 @@ Editing all the DIDs one by one may feel like a tedious task. That's why Connex 
 This is how the bulk action on multiple DIDs is performed in one go.
 
 
-[did-img-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/did-img-1.png "did-img-1"
-[did-img-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/did-img-2.png "did-img-2"
-[did-img-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/did-img-3.png "did-img-3"
+[did-img-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/164.png "did-img-1"
+[did-img-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/165.png "did-img-2"
+[did-img-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/166.png "did-img-3"
+[did-img-3a]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/167.png "did-img-3"
 [did-img-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/did-img-4.png "did-img-4"
 [did-img-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/did-img-5.png "did-img-5"
 
