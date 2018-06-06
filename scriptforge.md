@@ -211,5 +211,4 @@ A form will open named “Route Ingress”, find the “ScriptForge” field and
 [s9]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/184.png "s9"
 
 # Form Builder
-Form Builder
 Form Builder can be used when you write your own ephemeral scripts in ScriptForge. It allows you to define your own custom user interface by selecting specific input fields. These fields will be passed to variables on the corresponding application.
