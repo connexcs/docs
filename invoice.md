@@ -52,28 +52,28 @@ To add an item into your invoice, select "Add Invoice Item". Fill out the info a
 
 ![alt text][invoice-7]
 
+![alt text][invoice-8] 
+
 ## View and Edit Invoices
 
 You can view and edit your invoices by clicking on the invoice’s ID.
  
-![alt text][invoice-8] 
+![alt text][invoice-9] 
  
 The complete invoice would show up. Click on "Edit" to edit that invoice.
 
-![alt text][invoice-9]
+![alt text][invoice-10]
 
 You can also download PDF version of invoice by clicking on "PDF".
 After clicking "Edit" button, a new page will appear, make the required changes and click on "Save".
 
-![alt text][invoice-10]
+![alt text][invoice-11]
 
 ## Invoice Line grouping
 
 Invoice line grouping lets you group the invoice based on the destination or day.
 
 This can be set inside the Settings menu under My Account.
-
-
 
 
 [invoice-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/222.png "Invoice-1"
@@ -86,5 +86,6 @@ This can be set inside the Settings menu under My Account.
 [invoice-8]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/229.png "Invoice-8"
 [invoice-9]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/230.png "invoice-9"
 [invoice-10]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/231.png "invoice-10"
+[invoice-11]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/232.png "invoice-11"
  
 
