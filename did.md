@@ -97,7 +97,7 @@ You have a choice to set the column lists, by deciding which column shall be sho
 
 You can also search the details related to **DID section** in the text field, that is at the top right of the page.
 
-![alt text][did-img-3a]
+![alt text][did-img-4]
 
 ## How to perform one action on multiple DID’s in one go?
 
@@ -105,34 +105,17 @@ Editing all the DIDs one by one may feel like a tedious task. That's why Connex 
 
 1)	Login to your Connex account and from the side menu, extend the "Management" menu item and look for "DID". 
 
-![alt text][did-bulk-1]
- 
 2)	Click on it and you will open a new page showing the existing DIDs.
 
-![alt text][bulk-did-2]
- 
 3)	Select all the DIDs, on which you want to perform the same action and click on "Edit Selected Items". 
 
-![alt text][bulk-did-3]
- 
 4)	A new form will open, perform the changes and click on "Save".
 
-![alt text][bulk-did-4]
- 
 This is how the bulk action on multiple DIDs is performed in one go.
 
 
 [did-img-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/164.png "did-img-1"
 [did-img-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/165.png "did-img-2"
 [did-img-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/166.png "did-img-3"
-[did-img-3a]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/167.png "did-img-3"
-[did-img-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/did-img-4.png "did-img-4"
-[did-img-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/did-img-5.png "did-img-5"
-
-[did-bulk-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/did-bulk-1.png "DID-Bulk-1"
-[bulk-did-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/bulk-did-2.png "DID-Bulk-2"
-[bulk-did-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/bulk-did-3.png "DID-Bulk-3"
-[bulk-did-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/bulk-did-4.png "DID-Bulk-4"
-
-
+[did-img-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/167.png "did-img-4"
 
