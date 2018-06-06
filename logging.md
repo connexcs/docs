@@ -16,17 +16,13 @@ To view the SIP traces of a call follow the steps below.
 
 1. Click on Management> Logging
 
-![alt text][sip-trace-1]
+![alt text][logging-1]
 
 2. Click on the call id for which you wish to view the SIP traces.
 
-![alt text][sip-trace-2]
+![alt text][logging-2]
 
 3. Click on the SIP traces button to view the SIP trace image.
-
-![alt text][sip-trace-3]
-
-![alt text][sip-trace-4]
 
 **Please note the SIP traces are not always guaranteed.**
 
@@ -36,7 +32,7 @@ Users can simulate the calls by using the following simple procedure:
 
 1. Click on Management> Logging> Simulate
 
-![alt text][simulate]
+![alt text][logging-3]
 
 2. Enter the Dialled number & CLI/ANI Number
 3. Select the switch IP from the drop down menu.
@@ -45,7 +41,7 @@ Users can simulate the calls by using the following simple procedure:
 6. Select the routing engine zone & click simulate
 7. The simulation call result will appear in the logging. The call id will start with a SIM name, click on the call id to view the routing status of that call.
 
-![alt text][simulate-1]
+![alt text][logging-4]
 
 2. Pop-up will appear. Enter the details in it.
 
@@ -54,31 +50,31 @@ Users can simulate the calls by using the following simple procedure:
 Lookup service helps you to do a query of a number, 
 
 1.	Click the **Look up** button, right next to the Simulate button. 
-
-![alt text][lookup-1]
-
 2. Enter the phone number
 3. Select the type and click search
-
-![alt text][lookup-2]
-
 4. The lookup result will be displayed in the logging page.
-
-![alt text][lookup-3]
-
-![alt text][lookup-4]
 
 ## Refreshing the Logs
 
 User can also refresh the lists of logs by clicking on **Refresh** button, right next to the Look up button. 
 
-![alt text][refresh]
+![alt text][logging-5]
 
 ## Searching the Logs
 
 You can search for a call by a phone number, call id, or with a IP address. To search for a call enter the phone number & hit the search button.
  
-![alt text][attempts1]
+![alt text][logging-6]
+
+
+[logging-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/233.png "logging-1"
+[logging-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/234.png "logging-2"
+[logging-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/235.png "logging-3"
+[logging-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/236.png "logging-4"
+[logging-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/237.png "logging-5"
+[logging-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/238.png "logging-6"
+
+
 
 [logging-dashboard-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/logging-dashboard-new.png "logging-dashboard"
 
