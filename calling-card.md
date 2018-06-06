@@ -202,8 +202,7 @@ Moreover, every column can be sorted separately, as shown in the image below.
 [cc-15]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/206.png "CC-15"
 [cc-16]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/207.png "CC-16"
 [cc-17]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/208.png "CC-17"
-[cc-18]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/209.png "CC-18"
-[cc-19]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/210.png "CC-19"
+
 
 
 
