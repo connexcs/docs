@@ -21,13 +21,13 @@ Please follow the instructions below.
 
 1. Click on Management> Rate Cards> Customer rate card> Add New> Name the card> Select the carrier> Click Save
 
-  ![alt text][customer-ratecard1]
+  ![alt text][customer-card-1]
 
-  ![alt text][customer-ratecard2]
+  ![alt text][customer-card-2]
 
-2. Select Profits> Click on Add New Row
+2. Select Profits> Click on ‘+’ button 
 
-  ![alt text][customer-ratecard3]
+  ![alt text][customer-card-3]
 
 3. Enter your required prefix in the prefix field. This will usually be an international country code & not a provider or customer tech    prefix. Adding this symbol ^ on the prefix field will draw all the associated prefixes from the provider card. If you wish to specify   a particular set of prefixes add ^ and prefixes, example: ^441
 
@@ -39,7 +39,7 @@ Please follow the instructions below.
 
 6. Select the billing type, example: 1/1 or 6/6
 
-  ![alt text][customer-ratecard4]
+ ![alt text][customer-card-4]
 
 7. Enter the connection charge if there is one.
 
@@ -51,9 +51,9 @@ Please follow the instructions below.
 
 11. Once you complete all these steps now it is time to BUILD the card by clicking on Build from Carrier Card button.
 
-   ![alt text][customer-ratecard5]
+   ![alt text][customer-card-5]
 
-   ![alt text][customer-ratecard6]
+   ![alt text][customer-card-6]
 
 
 ## The External Method 
@@ -63,15 +63,15 @@ Please follow the instructions below.
 1. Click on Management> Rate Cards> Customer rate card> 
 2. Click on Add New> Name the card> Select the carrier> go to Advanced> Select the providers inside the Dynamic Routing box> Click Save.
 
-  ![alt text][customer-ratecard-advance3]
+  ![alt text][customer-card-7]
 
 3. Click on the Upload button in centre of the screen.
 
-  ![alt text][customer-ratecard-advance4]
+  ![alt text][customer-card-8]
 
 4. Click on the blue upload button and browse the file from your device, select the required file and click open, your file will appear on the screen, click on upload again
 
-  ![alt text][customer-ratecard-advance5]
+  ![alt text][customer-card-9]
 
 5. Once the upload completes click on the file name, map the rate card fields against the system fields. 
 
@@ -96,19 +96,31 @@ With this feature you can email the rate card to your customer's email address a
 1. Click on Management> Rate Card> Customer Rate Card
 2. Click on the rate card name
 
-  ![alt text][email-ratecard-1]
+  ![alt text][customer-card-10]
 
 3. Click on Email button
-
-  ![alt text][email-ratecard-2]
-
 4. Enter the email address and click on send
 
-  ![alt text][email-ratecard-3]
+  ![alt text][customer-card-11]
 
 ## Revision Tab 
 
 The revision tab lets us see the previous changes that have been made to a rate card, for example the previous Rule count, Presentation, Currency, date created, Billing etc.
+
+
+
+[customer-card-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/121.png "Customer-card-1"
+[customer-card-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/122.png "Customer-card-2"
+[customer-card-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/123.png "Customer-card-3"
+[customer-card-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/124.png "Customer-card-4"
+[customer-card-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/125.png "Customer-card-5"
+[customer-card-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/126.png "Customer-card-6"
+[customer-card-7]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/127.png "Customer-card-7"
+[customer-card-8]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/128.png "Customer-card-8"
+[customer-card-9]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/129.png "Customer-card-9"
+[customer-card-10]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/130.png "Customer-card-10"
+[customer-card-11]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/131.png "Customer-card-11"
+
 
 [email-ratecard-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/email-ratecard-1.png "Email-Ratecard-1"
 [email-ratecard-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/email-ratecard-2.png "Email-Ratecard-2"
