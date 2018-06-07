@@ -18,45 +18,41 @@ This tutorial will guide you on how to manage your provider rate cards.
 
 1. Click on Management> Rate Card
 
-   ![alt text][provider-card-dashbboard] 
+   ![alt text][provider-card-1] 
 
 2. Click on Add New under Provider Rate Cards
 
-  ![alt text][provider-ratecard] 
+  ![alt text][provider-card-2] 
   
 3. Name the provider card
 4. Select the Carrier from the dropdown list
 5. Select the desired currency
 6. Click Save
  
-   ![alt text][provider-card-1] 
+   ![alt text][provider-card-3] 
 
-7. Click Upload> Upload> browse and select the rate card file
+7. Click Upload>browse and select the rate card file
 
    ![alt text][provider-card-4]
 
-8. Click on the file name that you just uploaded from the list.
+8. Map the rate card fields against the system fields.
 
-   ![alt text][provider-card-7]
-  
+   ![alt text][provider-card-5]
+
    ![alt text][provider-card-6]
-  
-9. Map the rate card fields against the system fields.
 
-   ![alt text][map-giff]
-
-10. Click on Import to card button & select the provider card & click save
-
-      ![alt text][map8] 
-  
-11. You will be notified with a popup when the import completes.
-
+9. You will be notified with a popup when the import completes.
+ 
 ## Revision Tab 
 
 The revision tab lets us see the previous changes that have been made to a rate card, for example the previous Rule count, Presentation, Currency, date created, Billing.
 
-
-
+[provider-card-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/115.png "provider-card-1"
+[provider-card-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/116.png "provider-card-2"
+[provider-card-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/117.png "provider-card-3"
+[provider-card-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/118.png "provider-card-4"
+[provider-card-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/119.png "provider-card-5"
+[provider-card-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/120.png "provider-card-6"
 
 [provider-card-dashbboard]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/provider-card-dashbboard.png "provider-card-dashbboard"
 [provider-ratecard]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/provider-ratecard.png "provider-ratecard"
