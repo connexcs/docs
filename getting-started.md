@@ -86,7 +86,7 @@ Below are the instructions for basic customer setup, for detailed instruction on
   
       ![alt text][customer-dashboard-new]
 
-2. Click on Add Customer.
+2. To Add new customer click on '+' button.
 
       ![alt text][add-customer-new]
 
@@ -172,7 +172,7 @@ Below are the instructions to setup the provider rate card manually. There are t
   
    ![alt text][provider-card-1]
   
-2. Click on Add Provider Card under Provider Rate Cards
+2. Click ‘+’ button under Provider Rate Cards
 
   ![alt text][provider-card-2]
 
@@ -203,9 +203,9 @@ Below are the instructions to setup the provider rate card manually. There are t
 
 1. Click on Management> Rate Cards
 
-   ![alt text][customer-card-1]
+  ![alt text][customer-card-1]
 
-2. Click on Add Customer Card under Customer Rate Cards
+2. Click on ‘+’ button under Customer Rate Cards
 
  ![alt text][customer-card-2]
 
