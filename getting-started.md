@@ -177,28 +177,25 @@ Below are the instructions to setup the provider rate card manually. There are t
   ![alt text][provider-card-2]
 
 3. Name the provider card.
-4. Go to properties.
-5. Select the Carrier from the dropdown list.
-6. Select the desired currency for the provider card.
-7. Click Save.
+4. Select the Carrier from the dropdown list.
+5. Select the desired currency for the provider card.
+6. Click Save.
 
   ![alt text][provider-card-3]
 
-8. Go to provider rate card.
-9. Click on Create Draft button.
+7. Go to provider rate card.
+8. Click on Create Draft button.
 
    ![alt text][provider-card-4]
 
-8. Click on Add Row
+9. Click on Add Row
 
   ![alt text][provider-card-5]
 
-9. Complete the Spreadsheet information, Example: Prefix: 441, Name: UK Landline, Cost: 0.006, Billing: 1/1. You can add as many rows as you wish.
-10. Click on Save button to publish the rate card.
+10. Complete the Spreadsheet information, Example: Prefix: 441, Name: UK Landline, Cost: 0.006, Billing: 1/1. You can add as many rows as you wish.
+11. Click on Save button to publish the rate card.
 
  
-
-
 ## Customer Card
 
 1. Click on Management> Rate Cards
