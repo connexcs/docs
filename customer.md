@@ -89,10 +89,6 @@ You can delete **Customers** from the list, by following the steps given below.
 
 ![alt text][del-customer]
 
-![alt text][del-confirm]
-
-![alt text][del-confirm-1]
-
 ## Checking the status
 
 You can also check/filter the **Customers** by the status. 
@@ -114,8 +110,6 @@ In order to edit a **Customer**, select **Customer** from the list and a new pag
 1.	Click the **"Edit Customer"** button.
 2.	Edit the details and click **"Save"** button.
 
-![alt text][edit-customer]
-
 ### Main 
 
 In **Main** tab, users can view/add the customer contacts. You can also check the summary in three different forms i.e. Live/Daily/Monthly as shown in an image above.
@@ -127,17 +121,13 @@ In **Main** tab, users can view/add the customer contacts. You can also check th
 
 In **Stats** tab, you can view the Channels, Calls Per Second (CPS), ACD, ASR, Attempts, Codes, PDD stats, you can also filter it by the day/month of your choice.
 
-![alt text][stats-tab]
-
 ### Routing
 
 ##Ingress Routing
 
 Under Ingress Routing you can assign a customer rate card to your customer account. 
 
-![alt text][routing-tab]
-
-1.	Click on the **Add New** button.
+1.	Click on the **;+'** button.
 2.	Select the customer card & Fill out the details of the dialogue box. 
 3.	Press **Save** once you have completed the details.
 
@@ -309,8 +299,6 @@ You can also choose the package duration, the quantity, the cost and the frequen
 
    ![alt text][customer]
 
-   ![alt text][contacts]
-
 3. Enter the contact name.
 4. Enter the Email address. This email address will be used for login.
 5. Check the Auto generate password box if you would like the password to be generated online and the generated password will be sent via email. Unchecking the box will let you manually set the password.
@@ -326,9 +314,6 @@ You can also choose the package duration, the quantity, the cost and the frequen
 [add-customer]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/35.png "Add-Customer"
 
 [del-customer]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/36.png "del-customer"
-[del-confirm]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/37.png "del-confirm"
-[del-confirm-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/38.png "del-confirm-1"
-
 [customer-status]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/39.png "Customer-Status"
 [edit-customer]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/40.png "Edit-Customer"
 
@@ -365,13 +350,3 @@ You can also choose the package duration, the quantity, the cost and the frequen
 [contacts-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/62.png "contacts-2"
 
 [alert]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/alert.png "Alerts"
-
-
-
-
-
-
-
-
-
-
