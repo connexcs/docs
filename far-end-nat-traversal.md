@@ -10,8 +10,7 @@
 
 ## Pre Text
 
-Near end refers to the UA (User Agent) such as the softphone. Far End refers to the ConnexCS Switch.
-NAT is the process that allows you to have an internal and external IP address.
+Near end refers to the UA (User Agent) such as the softphone. Far End refers to the ConnexCS Switch. NAT is the process that allows you to have an internal and external IP address.
 
 ### What is Far End Nat Traversal?
 
@@ -20,7 +19,8 @@ This is required if your UA (User Agent) or your NAT does not rewrite the SIP pa
 ### What NAT detection methods does ConnexCS use?
 
 * Tests if client has a private IP address (as defined by RFC1918) in the Contact field of the SIP message.
-* Tests if client has contacted ConnexCS from an address that is different from the one in the Via field. 
+* Tests if client has contacted ConnexCS from an address that is different from the one in the Via field.
 * Both the IP and port are compared by this test.
 * Tests if client has a private IP address (as defined by RFC1918) in the top Via field of the SIP message.
 * Tests if client has contacted ConnexCS from an address that is different from the one in the Contact field. Only IP is compared by this test.
+
