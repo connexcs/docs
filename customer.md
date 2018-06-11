@@ -123,7 +123,7 @@ In **Stats** tab, you can view the Channels, Calls Per Second (CPS), ACD, ASR, A
 
 ### Routing
 
-##Ingress Routing
+## Ingress Routing
 
 Under Ingress Routing you can assign a customer rate card to your customer account. 
 
