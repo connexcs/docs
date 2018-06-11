@@ -10,47 +10,40 @@
 
 ## Login to ConnexCS account.
 
-1. Click on Setup> My Account> API.
-2. Click on the PayPal IPN button.
-
- ![alt text][paypal-2]
-
-3. Check IPN Enabled, Verify Transaction.
-4. Select Payment Types & Currencies.
-5.	Copy the IPN URL.
+1. Check IPN Enabled, Verify Transaction.
+2. Select Payment Types & Currencies.
+3.	Copy the IPN URL.
 
  ![alt text][paypal-5]
 
-6.	Click Save.
-7.	Login to your PayPal account.
-8.	Click “Profile”.
-9.	Find the “Instant payment notifications”, click “Update”.
+4.	Click Save.
+5.	Login to your PayPal account.
+6.	Click “Profile”.
+7.	Find the “Instant payment notifications”, click “Update”.
 
  ![alt text][paypal-3]
  
-10.	Go back to ConnexCS Account 
-11.	Click on Setup > My Account
-12.	API > Add New> PayPal
+8.	Go back to ConnexCS Account 
 
  ![alt text][paypal-12]
 
  ![alt text][paypal-6]
 
-13.	On the PayPal account Click “Profile”  >  “API  access   >  update”
-14.	Select “View API Signature”
+9.	On the PayPal account Click “Profile”  >  “API  access   >  update”
+10.	Select “View API Signature”
  
  ![alt text][paypal-8] 
  
-15.	Copy the following credentials
+11.	Copy the following credentials
 “API Username” , “API Password” , “Signature”
  
  ![alt text][paypal-9] 
  
-16.	Paste the above credentials  into the “PayPal API” in ConnexCS Account
+12.	Paste the above credentials  into the “PayPal API” in ConnexCS Account
 
  ![alt text][paypal-16]
 
-17.	Click Save
+13.	Click Save
 
 ## Setting the Customer Paypal Email Address into ConnexCS
 
