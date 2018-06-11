@@ -49,7 +49,7 @@ The amount of seconds that you use will be accumulated daily and combined with t
  
 ## Minimum Charges
 
-All accounts are subject to a minimum spend of $20 / month, this covers the absolute basic costs of keeping your account
+All accounts are subject to a minimum spend of $10 / month, this covers the absolute basic costs of keeping your account
 active and prevents ConnexCS loss from stagnant accounts. 
 
 ## Capacity Planning
