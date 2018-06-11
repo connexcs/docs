@@ -26,7 +26,8 @@
 
 Carriers can be easily and efficiently managed with the help of **Connex.** **Connex** allows you to not only add, edit and delete carriers but also lets you view the columns you want to see. 
 
-On the Dashboard, to go to the **Carrier** click on the tab highlighted in the centre of the page, or you can expand the **_Management_** tab from the left pane and select **"Carrier".**
+To go to the **Carrier**,you can expand the **_Management_** tab from the left pane and select **"Carrier".**
+
 
 ![alt text][carrier-list]
 
