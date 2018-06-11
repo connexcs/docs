@@ -24,31 +24,8 @@ This tutorial will guide you what actions you can perform by in your account.
 
 In My Account, users can update and manage information in their account, add personal information like name, mobile number, users, groups etc.
 
-To open My Account, just click on the Setup from the left pane and then click on My Account, shown highlighted in the image below. 
-
-There are basically eight functions, highlighted in blue in the figure below:
-
 ![alt text][my-account]
  
-These functions include:
-
-1. Configuration
-2. Users
-3. API
-4. Domains
-5. Payments
-6. Usage
-7. Packages
-8. Settings
-
-Let's discuss each one of the above in more detail.
-
-## Configuration
-
-To add/edit the configuration of an account, click on the Config icon, present on top bar.
-
-This function basically involves two types of information:
-
 1. Company's Information 
 2. General Information
 
@@ -139,24 +116,9 @@ To add new groups to the Users section, click on the '+' sign button and add the
 
 ## API (Application Programming Interface)
 
-You can also set the APIs. The overall view of API section is as follows:
-
-![alt text][api]
- 
 ### Adding New API
 
-Users can add the new API by:
-
-1. Click on the Add New button, highlighted in orange.
-2. Select either PayPal or Stripe.
-
-![alt text][paypal-1]
-
-3. Fill out the details in the dialog box and press Save button.
-
 ### For PayPal:
- 
-![alt text][paypal]
  
 1. Select the Mode, this needs to be set to live
 2. Enter the Username & Password
@@ -167,8 +129,6 @@ You can learn more about the PayPal APi from [here].
 
 For Stripe:
 
-![alt text][stripe] 
- 
 1. Select the Mode,  this needs to be set to live
 2. Enter the Public Key and Private Key in the respective text fields, this can be obtained from your stripe account.
 3. Select the currencies that you wish to accept the payment.
@@ -186,9 +146,8 @@ Domains lets you add a domain/sub domain on your control panel which will let yo
 
 To add a new domain, simply:
 
-1. Click on the '+' icon under Portal.
-2. Pop-up will show up and add the details in the respective field.
-3. Select the access (Carrier Portal, CDR, Rate Card, Balance etc.) that you wish to allow your customers on customer portal.
+1. Pop-up will show up and add the details in the respective field.
+2. Select the access (Carrier Portal, CDR, Rate Card, Balance etc.) that you wish to allow your customers on customer portal.
 3. Click on the Save button.
 
 ![alt text][add-new-domain]
@@ -216,17 +175,10 @@ Payments can be made at any time with ease. All they have to do is:
 
 3. Select the payment mode.
 4. Select the amount.
-5. Click on Submit Payment.
-
-![alt text][payments-1]
-
 
 ## Packages
 
 These packages let you access the lookup services offered by us. These can be enabled/disabled from this section.
-
-![alt text][package-user]
- 
 
 ## My Servers
 
