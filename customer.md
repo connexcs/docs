@@ -127,7 +127,7 @@ In **Stats** tab, you can view the Channels, Calls Per Second (CPS), ACD, ASR, A
 
 Under Ingress Routing you can assign a customer rate card to your customer account. 
 
-1.	Click on the **;+'** button.
+1.	Click on the **'+'** button.
 2.	Select the customer card & Fill out the details of the dialogue box. 
 3.	Press **Save** once you have completed the details.
 
