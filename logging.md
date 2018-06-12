@@ -3,7 +3,6 @@
 * [Table of Contents](#table-of-contents)
 * [Logging](#logging)
     * [Simulating Calls](#simulating-calls)
-    * [Look up for Calls](#look-up-for-calls)
     * [Refreshing the Logs](#refreshing-the-logs)
     * [Searching the Logs](#searching-the-logs)
 
@@ -44,15 +43,6 @@ Users can simulate the calls by using the following simple procedure:
 ![alt text][logging-4]
 
 2. Pop-up will appear. Enter the details in it.
-
-## Lookup
-
-Lookup service helps you to do a query of a number, 
-
-1.	Click the **Look up** button, right next to the Simulate button. 
-2. Enter the phone number
-3. Select the type and click search
-4. The lookup result will be displayed in the logging page.
 
 ## Refreshing the Logs
 
