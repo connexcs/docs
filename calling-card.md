@@ -132,19 +132,20 @@ f)	Manage columns
 To add a new SIP device:
 1)	Click on Add Device button.
 
-![alt text][cc-9]
+![alt text][cc-10]
 
 2)	A form will open. Select the customer for whom the device is to be added, enter the rest of information and click on Save button.
 
-![alt text][cc-10]
+![alt text][cc-12]
 
 A new device for that particular customer will be saved.
-
-![alt text][cc-12]
 
 ### View and Edit Device
 
 1)	To view a device, click on the icon under "View Device" column.
+
+![alt text][cc-9]
+
 2)	A form will open. Click on Edit button.
  
 ![alt text][cc-13] 
