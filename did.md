@@ -15,7 +15,7 @@ This tutorial will guide you through the **DID section**, which can be accessed 
 
 ![alt text][did-img-1]
 
-The following 4 actions can be performed in the **DID section**. 
+The following 3 actions can be performed in the **DID section**. 
 
 1. Add a DID
 2. Refresh the list
