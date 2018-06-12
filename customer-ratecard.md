@@ -51,11 +51,6 @@ Please follow the instructions below.
 
 11. Once you complete all these steps now it is time to BUILD the card by clicking on Build from Carrier Card button.
 
-   ![alt text][customer-card-5]
-
-   ![alt text][customer-card-6]
-
-
 ## The External Method 
 
 Please follow the instructions below.
