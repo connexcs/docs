@@ -34,15 +34,13 @@
 
   ![alt text][pcard-5]
   
-10. Click on the file name that you just uploaded from the list
-
   ![alt text][pcard-6]
 
-11. Map the rate card fields against the system fields
+10. Map the rate card fields against the system fields
 
-12. Click on Import to card and select the provider card & click save
+11. Click on Import to card and select the provider card & click save
 
-13. After the card is sucessfully imported another notification will be displayed.
+12. After the card is sucessfully imported another notification will be displayed.
 
 ## NPA-NXX Customer Rate Card Upload
 
