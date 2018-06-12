@@ -136,9 +136,9 @@ A new device for that particular customer will be saved.
 
 1)	To view a device, select any device
 2)	A form will open. Click on Edit button.
- 
-![alt text][cc-12] 
- 
+
+![alt text][cc-13] 
+
 3)	On this page you can edit device information as well as can add a device line too and save accordingly.
 
 ### Delete a Device
