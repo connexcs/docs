@@ -100,12 +100,6 @@ To delete an existing card;
 
 ![alt text][cc-6]
 
-2.	A confirmation modal will open to proceed.
-
-![alt text][cc-7]
-
-3.	Confirm to delete the selected record and your entry will be deleted from the list.
-
 ### Refresh List
 
 To refresh the list of calling cards, click on “Refresh” button to get the updated list.
