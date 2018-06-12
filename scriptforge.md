@@ -183,8 +183,6 @@ And then run the script again.
 
 You can assign the script to a customer by selecting “Customer” from the side menu.
 
-![alt text][s6]   
- 
 Select a specific customer from the list by clicking on the names of customers.
 
 ![alt text][s7]
