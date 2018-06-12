@@ -6,7 +6,6 @@
      * [Edit a Card](#edit-a-card)
      * [Delete a Card](#delete-a-card)
      * [Refresh List](#refresh-list)
-     * [Manage Columns](#manage-columns)
   * [Manage SIP Devices](#manage-sip-devices)
      * [Add Device](#add-device)
      * [View and Edit Device](#view-and-edit-device)
