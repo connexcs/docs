@@ -86,10 +86,10 @@ To edit any card;
 ![alt text][cc-4]
 
 2.	A new modal will open to edit the desired info.
+3.	Once you are done with editing, click on "Save" button to save the entries.
 
 ![alt text][cc-5]
 
-3.	Once you are done with editing, click on "Save" button to save the entries.
 Note: Multiple rows can also be selected and edited accordingly, in one go.
 
 ### Delete a Card
