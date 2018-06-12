@@ -39,8 +39,6 @@ This tutorial will guide you on how to manage your provider rate cards.
 
    ![alt text][provider-card-5]
 
-   ![alt text][provider-card-6]
-
 9. You will be notified with a popup when the import completes.
  
 ## Revision Tab 
