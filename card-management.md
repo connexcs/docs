@@ -42,8 +42,6 @@
 
 12. Click on Import to card and select the provider card & click save
 
- ![alt text][pcard-7]
-
 13. After the card is sucessfully imported another notification will be displayed.
 
 ## NPA-NXX Customer Rate Card Upload
