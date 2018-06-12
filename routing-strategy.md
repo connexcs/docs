@@ -49,9 +49,7 @@ Users can set and manage their Routing Strategy by:
 
 ## Adding New Routing Strategy
 
-Click on the **"+"** sign to add a new Routing Strategy.
-
-1. Click on the **Add New** button.
+1. Click on the **"+"** sign to add a new Routing Strategy.
 
    ![alt text][routing-strategy1]
 
