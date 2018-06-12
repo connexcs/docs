@@ -20,7 +20,6 @@ The following 4 actions can be performed in the **DID section**.
 1. Add a DID
 2. Refresh the list
 3. Delete a DID
-4. Provision ON/OFF toggle
 
 ### Add a DID
 
