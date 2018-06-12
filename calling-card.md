@@ -128,7 +128,7 @@ To add a new SIP device:
 
 3. A form will open. Select the customer for whom the device is to be added, enter the rest of information and click on Save button.
 
-![alt text][cc-11]
+![alt text][cc-12]
 
 A new device for that particular customer will be saved.
 
