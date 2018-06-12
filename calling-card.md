@@ -61,7 +61,7 @@ e)	Manage columns
 ### Generate New
 
 To generate a new calling card;
-1.	Click on "Generate New" button, as highlighted in the image below.
+1.	Click on "'+'" button, as highlighted in the image below.
 
 ![alt text][cc-2]
 
