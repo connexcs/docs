@@ -155,21 +155,21 @@ You can customize your script in the new functionality of Connex and also can as
 
  ![alt text][side]   
  
-2. Now, add your own script by clicking on “Add New” button.
+2. Now, add your own script by clicking on **“+”** button.
 
- ![alt text][s2]   
+ ![alt text][side-1]    
  
 3. Fill in the name of your script and click on “Save”.
 
- ![alt text][s3]   
+ ![alt text][s2]   
  
 4. Now, select your script from the list and click on it.
 
- ![alt text][s4]   
+ ![alt text][s3]   
  
 5. Enter the code of your script and click the arrow next to “Save and Restart”. From the drop down menu, select “Save” and then click on “Start”.
 
- ![alt text][s5]   
+ ![alt text][s4]   
  
 6. Click the “Run” button on the top. The script should show the result.
 
@@ -178,13 +178,13 @@ In case, the script shows error click the arrow button next to “Run” and add
 
 And then run the script again.
 
-![alt text][s6]
+![alt text][s5]
 
 ## Assigning the Script to a customer
 
 You can assign the script to a customer by selecting “Customer” from the side menu.
 
-![alt text][side-1]   
+![alt text][side6]   
  
 Select a specific customer from the list by clicking on the names of customers.
 
