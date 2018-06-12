@@ -86,7 +86,7 @@ To edit any card;
 
 ![alt text][cc-5]
 
-![alt text][cc-6]
+![alt text][cc-4]
  
 3.	Once you are done with editing, click on "Save" button to save the entries.
 Note: Multiple rows can also be selected and edited accordingly, in one go.
@@ -97,7 +97,7 @@ To delete an existing card;
 
 1.	Select the desired row to complete the action and click on trash icon.
 
-![alt text][cc-4]
+![alt text][cc-6]
 
 2.	A confirmation modal will open to proceed.
 
