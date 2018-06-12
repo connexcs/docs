@@ -25,7 +25,7 @@ The following 3 actions can be performed in the **DID section**.
 
 To add a new inbound number, follow the steps shown below:
 
- 1. Click on the **Add DID**, as highlighted in the image below.
+ 1. Click on the **'+'** button.
 
 ![alt text][did-img-2]
 
