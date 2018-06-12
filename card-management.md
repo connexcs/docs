@@ -67,18 +67,16 @@
 
 9. Click Upload> Upload> browse and select the rate card file
 
-   ![alt text][ccard-5] 
-   
-10.Map the rate card fields against the system fields
-
+ ![alt text][ccard-5] 
+  
  ![alt text][ccard-6] 
 
-11. Click on Upload to customer card. 
-12. You will get notification as shown in figure.
+10. Click on Upload to customer card. 
+11. You will get notification as shown in figure.
 
  ![alt text][ccard-7] 
 
-13. After the card is sucessfully imported notification will be displayed.
+12. After the card is sucessfully imported notification will be displayed.
 
 ## NPA-NXX Customer Rate Card Manual (Generate Profit Internally)
 
