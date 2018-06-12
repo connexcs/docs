@@ -27,8 +27,8 @@ if the server reaches maximum capacity, is sends a 302 response advising the cli
 
 When using more than one SIP server, you can load balance the calls without a load balancer server using the DNS method. To configure the DNS please follow the steps below:
 
-1. Click on Setup> My Account
-2. Click  on Domains
+1. Click on Setup> Integrations
+2. Click on Domains
 3. Click on + under Server
 
    ![alt text][load-balance]
