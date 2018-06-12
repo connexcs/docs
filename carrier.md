@@ -37,7 +37,7 @@ To go to the **Carrier**,you can expand the **_Management_** tab from the left p
 
 You can add new **Carriers** by following the simple procedure.
 
-1. Click the **Add Carrier** button.
+1. Click the **'+'** button.
 2. Enter the details of the **carrier.**
 3. Click the **Save** button when all the details are entered properly.
 
