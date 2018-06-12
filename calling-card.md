@@ -82,10 +82,9 @@ You are all set with generating a new card.
 
 To edit any card; 
 1.	Select any desired row and click on "Edit Selected Rows" button.
- 
-![alt text][cc-5]
-
 2.	A new modal will open to edit the desired info.
+
+![alt text][cc-5]
 
 ![alt text][cc-6]
  
