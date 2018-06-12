@@ -106,17 +106,6 @@ To refresh the list of calling cards, click on “Refresh” button to get the u
 
 ![alt text][cc-8]
  
-### Manage Columns
-
-Columns settings can be made from three bars present on top right.
-
-![alt text][cc-9]
- 
-You can set the list of columns that needs to be shown on the grid.
-Moreover, each column can be sorted and can be hidden, as shown in the image below.
-
-![alt text][cc-10]
- 
 ## Manage SIP Devices
 
 To manage SIP devices, the following actions can be performed.
@@ -130,25 +119,26 @@ f)	Manage columns
 ### Add Device
 
 To add a new SIP device:
-1)	Click on Add Device button.
+1)	Click on sip devices button under calling card.
+
+![alt text][cc-9]
+
+2)	Click on ‘+’ button.
 
 ![alt text][cc-10]
 
-2)	A form will open. Select the customer for whom the device is to be added, enter the rest of information and click on Save button.
+3. A form will open. Select the customer for whom the device is to be added, enter the rest of information and click on Save button.
 
-![alt text][cc-12]
+![alt text][cc-11]
 
 A new device for that particular customer will be saved.
 
 ### View and Edit Device
 
-1)	To view a device, click on the icon under "View Device" column.
-
-![alt text][cc-9]
-
+1)	To view a device, select any device
 2)	A form will open. Click on Edit button.
  
-![alt text][cc-13] 
+![alt text][cc-12] 
  
 3)	On this page you can edit device information as well as can add a device line too and save accordingly.
 
