@@ -61,7 +61,7 @@ This can be set under My Servers> [IP Address]>  Port> Enter the port & click sa
 
 ## Server Reactivation
 
-1. Click on Setup> My Servers
+1. Click on Setup>Settings>Servers
 
  ![alt text][server-6]
 
