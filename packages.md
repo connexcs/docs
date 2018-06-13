@@ -41,7 +41,7 @@ Let’s take a look on each of the above.
 
 Once you are on the packages screen, follow the steps shown below:
 
-1.	Click on Add Package button.
+1.	Click on **"+"** button.
 
 ![alt text][package-3]
  
