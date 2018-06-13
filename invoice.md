@@ -34,23 +34,23 @@ A new page will open up, showing the existing invoices.
 
 To add a new invoice:
 
-1)	Click on the "Add Invoice" button from the top.
+1)	Click on the **"+"** button from the top.
 
 ![alt text][invoice-4]
 
 A new page will open which will show an invoice ready to be filled.
 
-2)	Select the customer from the drop down menu where "Required" is written. Invoice would be generated against that customer.
-
 ![alt text][invoice-5]
 
-To add an item into your invoice, select "Add Invoice Item". Fill out the info and select a package; amount will be generated according to the package. You can add multiple items this way.
- 
+2)	Select the customer from the drop down menu where "Required" is written. Invoice would be generated against that customer.
+
 ![alt text][invoice-6]
 
-3)	When you are done working with your invoice, click "Save".
+To add an item into your invoice, select "Add Invoice Item". Fill out the info and select a package; amount will be generated according to the package. You can add multiple items this way.
 
 ![alt text][invoice-7]
+ 
+3)	When you are done working with your invoice, click "Save".
 
 ![alt text][invoice-8] 
 
