@@ -13,16 +13,14 @@ You can generate Invoices for your customers by following the steps below.
 1. Click on Management> Customers
 2. Click on the customer name
 
-![alt text][invoice-1]
+![alt text][invoice-2]
 
 3. On the Main tab click on Daily under Summary. Check the invoice box against the date, you can select multiple dates in one go.
 4. Click on Generate Invoice.
 
-![alt text][invoice-2]
+![alt text][invoice-1]
 
 The Invoice will be generated. This invoice is available for download.
-
-
 
 Login to your Connex account and from the side menu look for "Management" and extend. From the "Management" sub-menu items, select "Invoice".
 
