@@ -1,7 +1,6 @@
 # Table of Contents
 * [Table of Contents](#table-of-contents)
 * [Templates-Connex](#templates-connex)
-  * [Manage columns](#manage-columns)
   * [Search Template](#search-template)
   * [Refresh-list](#refresh-list)
 
