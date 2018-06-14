@@ -45,7 +45,7 @@ Also select the customer’s list, provider’s list and destinations added by y
 
 ![alt text][report-6] 
 
-On the extreme right, there is a text box from which you can select the time period to schedule your reports. Just click on the text box and a drop down menu should open where you can choose the time.
+On the extreme left, there is a text box from which you can select the time period to schedule your reports. Just click on the text box and a drop down menu should open where you can choose the time.
 Select “Custom Range” if you are not able to find the time that you want to set in scheduling.
 
 ![alt text][report-7] 
