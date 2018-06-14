@@ -11,11 +11,12 @@
 
 You can customize the SMS template, according to your business rule or requirement. For this;
 
-1)	Login to your Connex account and from the side menu look for **"Template"** which is under the **"Setup"**.
+1) Login to your Connex account
+2) Go to Setup>click on Config>click Templates
 
 ![alt text][temp-1] 
  
-2)	All the existing templates would show up. Select any template by clicking on its name.  
+3)	All the existing templates would show up. Select any template by clicking on its name.  
 
 ![alt text][temp-2]
 
@@ -35,12 +36,6 @@ You can also apply style to your text via html style panel given under the HTMLt
  
 ![alt text][temp-4]
 
-## Manage columns
-
-You can also manage columns on Templates page, as shown in the figure below:
-
-![alt text][temp-5]
-
 ## Search Template
 
 Any template can be searched from the list. Just type in the search field and results will be filtered out in run time.
@@ -49,11 +44,10 @@ Any template can be searched from the list. Just type in the search field and re
 
 The templates list can be refreshed any time to fetch the latest templates. Simply click on Refresh button and you will get the updated list.
 
-![alt text][temp-6]
+![alt text][temp-5]
  
-[temp-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/temp-1.png "Temp-1"
-[temp-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/temp-2.png "Temp-2"
-[temp-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/temp-3.png "Temp-3"
-[temp-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/temp-4.png "Temp-4"
-[temp-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/temp-5.png "Temp-5"
-[temp-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/temp-6.png "Temp-6"
+[temp-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/270.png "Temp-1"
+[temp-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/271.png "Temp-2"
+[temp-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/272.png "Temp-3"
+[temp-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/273.png "Temp-4"
+[temp-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/274.png "Temp-5"
