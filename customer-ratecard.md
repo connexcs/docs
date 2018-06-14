@@ -72,8 +72,6 @@ Please follow the instructions below.
 
 6. Once the upload completes click on the file name, map the rate card fields against the system fields. 
 
-  ![alt text][map-giff]
-
 7. Click on Import to card button & select the Customer card & click save.
 
 8. Your rate card file will be imported to your customer rate card & you will be notfied with a popup once the import is complete. The  card is now live and ready to use.
