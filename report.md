@@ -16,8 +16,7 @@
 
 # Reports Management
 
-This article will guide how to view/download the reports. 
-From the **_Dashboard_**, click on the reports icon, highlighted as orange in **Figure 1.** Also, users can open the reports from the left pane as follows:
+This article will guide how to view/download the reports.You can open the reports from the left panel as follows:
 
 1.	Click on the **_Management_** from the side bar.
 2.	Click on the Reports.
@@ -25,15 +24,11 @@ From the **_Dashboard_**, click on the reports icon, highlighted as orange in **
  
 ![alt text][report-1]
 
-Figure 1
-
 ## Breakout
 
 In the **_breakout section_**, users can filter it by a customers, providers or destinations. The overall view of the Breakout section is given in figure below for better understanding. 
  
 ![alt text][report-2]
-
-Figure 2
 
 ## Selection of Customers, Providers and Destination 
 
@@ -82,8 +77,10 @@ You can have multiple choices in setting a date which is applicable on the repor
 2. Users can add the **_Yesterday's_** date.
 3. Users can add **_Last 7 days_** dates and range of seven days shall be appeared.
 4. Users can also set the **_Last 30 days_** dates
-5. User can also add a range of dates, for example, the current month is June. So dates from June 01 to June 30 can be set
+5. User can also add a range of dates, for example, the current month is June. So dates from May 01 to May 31 can be set by clicking on    1 and then 31.
 6. Or users can also customize the dates of their own choice from the calendar.
+   After the option has been selected or the range of the dates is decided, click on the OK button.
+
 
 After the option has been selected or the range of the dates is decided, click on the **Apply** button.
  
