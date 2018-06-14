@@ -70,7 +70,7 @@ Connex Carrier Services Worldwide LTD is an independent company, not owned by a 
 
 The SSL certificate can be deployed on your customer portal with a single click.
 
-1. Click on Setup> My Account
+1. Click on Setup> Integrations
 2. Click on Domains
 3. Click on Deploy Certificate
 
