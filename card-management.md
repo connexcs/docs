@@ -30,17 +30,19 @@
 
   ![alt text][pcard-4]
 
-9. Click Upload> Upload> browse and select the rate card file
+9. Click Upload> browse and select the rate card file
 
   ![alt text][pcard-5]
   
-  ![alt text][pcard-6]
-
 10. Map the rate card fields against the system fields
 
-11. Click on Import to card and select the provider card & click save
+  ![alt text][pcard-6]
 
-12. After the card is sucessfully imported another notification will be displayed.
+11. Click on Upload to provider rate card.
+12. You will get notification as shown in figure.
+
+![alt text][pcard-7]
+
 
 ## NPA-NXX Customer Rate Card Upload
 
@@ -58,7 +60,7 @@
 
   ![alt text][ccard-3] 
 
-6. Go to Properties>Config
+6. Click Config
 7. Change the Presentation to Inter/Intra/Indet under Force Presentation.
   If you wish to enable LRN on the customer card you can do so from the Dialling option
 8. Click Save
@@ -94,7 +96,7 @@
         
      ![alt text][ccard-10] 
          
-6. Go to properties>config
+6. Click Config
 7. Change the Presentation to Inter/Intra/Indet under Force Presentation If you wish to enable LRN on the customer card you can do so
    from the Dialling option
 8. Click Save
@@ -133,7 +135,7 @@
 
 ![alt text][ccard-17] 
 
-6. Go to properties>config>Change the Presentation to Inter/Intra/Indet under Force Presentation If you wish to enable LRN on the customer card you can do so from the Dialling option
+6. Click config>config>Change the Presentation to Inter/Intra/Indet under Force Presentation If you wish to enable LRN on the customer card you can do so from the Dialling option
 7. Select the provider cards under Dynamic routing, you can select more than one provider.
 8. Click Save
 
