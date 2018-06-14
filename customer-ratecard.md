@@ -19,62 +19,64 @@ Customer rate cards let you manage the rates for your customers. There are two w
 
 Please follow the instructions below.
 
-1. Click on Management> Rate Cards> Customer rate card> Add New> Name the card> Select the carrier> Click Save
-
+1. Click on Management> Rate Cards> Customer rate card> click on **‘+’** button. 
+2. Name the card> Select the carrier> Click Save.
+ 
   ![alt text][customer-card-1]
 
   ![alt text][customer-card-2]
 
-2. Select Profits> Click on ‘+’ button 
+3. Select Profits> Click on ‘+’ button 
 
   ![alt text][customer-card-3]
 
-3. Enter your required prefix in the prefix field. This will usually be an international country code & not a provider or customer tech    prefix. Adding this symbol ^ on the prefix field will draw all the associated prefixes from the provider card. If you wish to specify   a particular set of prefixes add ^ and prefixes, example: ^441
+4. Enter your required prefix in the prefix field. This will usually be an international country code & not a provider or customer tech    prefix. Adding this symbol ^ on the prefix field will draw all the associated prefixes from the provider card. If you wish to specify   a particular set of prefixes add ^ and prefixes, example: ^441
 
-4. In the cost field add the sell price & in the next column choose ABSOLUTE or RELATIVE.
+5. In the cost field add the sell price & in the next column choose ABSOLUTE or RELATIVE.
    Absolute will set a flat cost, for example your customer will be charged the price you set in the cost field. 
    Relative costs will be added to the price you entered in cost field. example: provider cost 0.008 Relative cost 0.0006 = 0.0086, this    is the amount that will be billed to your customer.
    
-5. If you do not wish to use Absolute or Relative, you can instead use a PERCENTAGE markup, Example: You can enter 10 percent in the        Percent field and choose Percent in the Profit Type. Eg: Provider Cost 0.008, 10% markup = 0.0088 Sell cost.
+6. If you do not wish to use Absolute or Relative, you can instead use a PERCENTAGE markup, Example: You can enter 10 percent in the        Percent field and choose Percent in the Profit Type. Eg: Provider Cost 0.008, 10% markup = 0.0088 Sell cost.
 
-6. Select the billing type, example: 1/1 or 6/6
+7. Select the billing type, example: 1/1 or 6/6
 
  ![alt text][customer-card-4]
 
-7. Enter the connection charge if there is one.
+8. Enter the connection charge if there is one.
 
-8. Select the Rounding method which can be upto 6 decimal places, but is usually 4.
+9. Select the Rounding method which can be upto 6 decimal places, but is usually 4.
 
-9. Select the status to Profit
+10. Select the status to Profit
 
-10. And Click the Apply To for Cost. If it is a NPA-NXX card you can select Inter/intra/cost
+11. And Click the Apply To for Cost. If it is a NPA-NXX card you can select Inter/intra/cost
 
-11. Once you complete all these steps now it is time to BUILD the card by clicking on Build from Carrier Card button.
+12. Once you complete all these steps now it is time to BUILD the card by clicking on Build from Carrier Card button.
 
 ## The External Method 
 
 Please follow the instructions below.
 
 1. Click on Management> Rate Cards> Customer rate card> 
-2. Click on Add New> Name the card> Select the carrier> go to Advanced> Select the providers inside the Dynamic Routing box> Click Save.
+2. Click on ‘+’ button> Name the card> Select the carrier
+3. Go to properties> Advanced> Select the providers inside the Dynamic Routing box> Click Save.
 
-  ![alt text][customer-card-7]
-
-3. Click on the Upload button in centre of the screen.
+ ![alt text][customer-card-7]
+ 
+4. Click on the Upload button.
 
   ![alt text][customer-card-8]
 
-4. Click on the blue upload button and browse the file from your device, select the required file and click open, your file will appear on the screen, click on upload again
+5. Click on the blue upload button and browse the file from your device, select the required file and click open, your file will appear on the screen, click on upload again
 
   ![alt text][customer-card-9]
 
-5. Once the upload completes click on the file name, map the rate card fields against the system fields. 
+6. Once the upload completes click on the file name, map the rate card fields against the system fields. 
 
   ![alt text][map-giff]
 
-6. Click on Import to card button & select the Customer card & click save.
+7. Click on Import to card button & select the Customer card & click save.
 
-7. Your rate card file will be imported to your customer rate card & you will be notfied with a popup once the import is complete. The  card is now live and ready to use.
+8. Your rate card file will be imported to your customer rate card & you will be notfied with a popup once the import is complete. The  card is now live and ready to use.
 
 NB. You do not need to **BUILD** a rate card created in this way.
 
