@@ -24,7 +24,7 @@
 
   ![alt text][pcard-3]
 
-6. Go to properties>Click Config
+6. Click Config
 7. Change the Presentation to Inter/Intra/Indet under Force Presentation. If you wish to enable LRN on the provider card you can do so      from the Dialling option
 8. Click Save
 
