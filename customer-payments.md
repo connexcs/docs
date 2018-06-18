@@ -109,8 +109,9 @@ Now, go back to your External API form from your Connex account and add the cred
  ![alt text][paypal-3]
  
 11.	Go back to ConnexCS Account 
-12.	Click on Setup -> My Account
-13.	API -> Add New> PayPal
+12. Click on Setup -> Integrations
+13. API -> Add> PayPal
+
 
  ![alt text][paypal-12]
 
