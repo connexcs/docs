@@ -87,8 +87,6 @@ If you need to you can delete the **Routing Strategy.**
 
    ![alt text][routing-strategy7]
 
-   ![alt text][routing-strategy8]
-
 ## Edit the Routing Strategy
 Users can edit the strategy by:
 
