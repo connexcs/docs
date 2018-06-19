@@ -99,7 +99,7 @@ Now, go back to your External API form from your Connex account and add the cred
 5. Select Payment Types & Currencies.
 6.	Copy the IPN URL.
 
- ![alt text][paypal-5]
+ ![alt text][paypal-2b]
 
 7.	Click Save.
 8.	Login to your PayPal account.
@@ -148,4 +148,5 @@ Now, go back to your External API form from your Connex account and add the cred
 [paypal-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/paypal-5.png "Paypal-5"
 [paypal-12]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/paypal-12.png "Paypal-12"
 [paypal-16]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/85.png "Paypal-16"
+[paypal-2b]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/84-b.png "Paypal-2b"
 
