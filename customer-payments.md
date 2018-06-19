@@ -43,10 +43,10 @@ Difference between **Mass Pay** & **Express Checkout**
 
 Below are the steps to configure IPN (Instant Payment Notification).
 
-Login to your Connex account and from the left menu select <b>“Setup”</b>.
+Login to your Connex account
 
-1. Click on Add New Setup
-2. Choose _My Account_
+1. Click on Setup
+2. Choose Integrations
 
 Switch to the _API_ tab and click on _PayPal IPN_.
 
