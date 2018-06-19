@@ -86,7 +86,9 @@ You can click the Test Email button to check if your configration is succesful. 
 
 ## Users 
 
-You can add other users in this section. Names with their emails shall appear in the Users section. Groups can also be made, consisting of different users. 
+You can add other users in this section.
+
+1. Go to Setup>Settings>Users.
 
 To add a new user, simply:
 
