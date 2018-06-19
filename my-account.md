@@ -1,7 +1,7 @@
 # Table of Contents
 
 * [Table of Contents](#table-of-contents)
-* [My Account](#my-account)
+* [Account](#my-account)
   * [Configuration](#configuration)
   * [Company Information](#company-information)
   * [General Information](#general-information)
@@ -15,17 +15,21 @@
   * [Payments](#payments)
   * [Packages](#packages)
   	* [Adding New Package](#adding-new-package)
-  * [My Servers](#my-servers)
+  * [Servers](#my-servers)
 
 
-# My Account
+# Account
 
 This tutorial will guide you what actions you can perform by in your account.
 
 In My Account, users can update and manage information in their account, add personal information like name, mobile number, users, groups etc.
 
+To open My Account, just click on the Setup from the left panel and then click on Settings> Account, shown highlighted in the image below.
+
 ![alt text][my-account]
  
+Account Profile basically involves two types of information:
+
 1. Company's Information 
 2. General Information
 
@@ -213,7 +217,7 @@ These packages let you access the lookup services offered by us. These can be en
 ![alt text][package]
 ![alt text][package-dialog-box]
 
-## My Servers
+## Servers
 
 If the server has been deployed on your account, you can view/manage from this menu.
 
