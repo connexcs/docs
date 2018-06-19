@@ -82,7 +82,7 @@ You can have multiple choices in setting a date which is applicable on the repor
    After the option has been selected or the range of the dates is decided, click on the OK button.
 
 
-After the option has been selected or the range of the dates is decided, click on the **Apply** button.
+After the option has been selected or the range of the dates is decided, click on the **OK** button.
  
 ![alt text][report-6]
 
