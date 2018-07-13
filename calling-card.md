@@ -17,7 +17,7 @@
 
 # Calling Card
 
-A [calling card](https://en.wikipedia.org/wiki/Telephone_card) is a way of pre-allocating credit and configuration to a short unique identification method (e.g a PIN Code).
+A [calling card](https://en.wikipedia.org/wiki/Telephone_card) is a way of pre-allocating credit and configuration to a short unique identification method (e.g. a PIN Code).
 
 As **ConnexCS** is a class 4 switch it does not have IVR menu's required to access number configuration. Therefore currently calling cards are only available as a Mobile Phone Application.
 
@@ -37,10 +37,10 @@ Inside the application will be a HTML Browser which will connect to your pre-set
 # Make Your Own
 Remember ConnexCS has a full API for both Users and your Customers. If you already have a softphone integration it can be integrated with ConnexCS API with end user credentials.
 
-From dashboard, expand the Management tab and look for Calling Card. 
- 
+From dashboard, expand the Management tab and look for Calling Card.
+
 ![alt text][cc-1]
- 
+
 This module allows you to perform following actions:
 1)	Manage calling cards
 2)	Manage SIP devices
@@ -67,7 +67,7 @@ To generate a new calling card;
 2.	A new modal would open to provide the required info.
 
 ![alt text][cc-3]
- 
+
 Here,
 
 •	Any customer that exists in the database can be selected from the "Customer" dropdown.
@@ -79,7 +79,7 @@ You are all set with generating a new card.
 
 ### Edit a Card
 
-To edit any card; 
+To edit any card;
 1.	Select any desired row and click on "Edit Selected Rows" button.
 
 ![alt text][cc-4]
@@ -104,7 +104,7 @@ To delete an existing card;
 To refresh the list of calling cards, click on “Refresh” button to get the updated list.
 
 ![alt text][cc-8]
- 
+
 ## Manage SIP Devices
 
 To manage SIP devices, the following actions can be performed.
@@ -137,7 +137,7 @@ A new device for that particular customer will be saved.
 1)	To view a device, select any device
 2)	A form will open. Click on Edit button.
 
-![alt text][cc-13] 
+![alt text][cc-13]
 
 3)	On this page you can edit device information as well as can add a device line too and save accordingly.
 
@@ -146,20 +146,20 @@ A new device for that particular customer will be saved.
 To delete a device from the list, select any row and click on trash icon.
 
 ![alt text][cc-14]
- 
+
 
 ### Search Device
 
 To search a particular device, type in the search field and results will be filtered out.
 
 ![alt text][cc-15]
- 
+
 ### Refresh Device List
 
 To get the most updated list of devices, click on the “Refresh” button.
- 
+
 ![alt text][cc-16]
- 
+
 ### Manage Columns
 
 You can also manage columns and select which columns you want to see in the grid.
@@ -167,7 +167,7 @@ You can also manage columns and select which columns you want to see in the grid
 Click on 3 horizontal lines to select the columns.
 
 Moreover, every column can be sorted separately, as shown in the image below.
- 
+
 ![alt text][cc-17]   
 
 [cc-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/193.png "CC-1"
@@ -186,8 +186,3 @@ Moreover, every column can be sorted separately, as shown in the image below.
 [cc-15]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/206.png "CC-15"
 [cc-16]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/207.png "CC-16"
 [cc-17]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/208.png "CC-17"
-
-
-
-
-
