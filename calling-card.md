@@ -156,7 +156,7 @@ To search a particular device, type in the search field and results will be filt
  
 ### Refresh Device List
 
-To get the most updated list of devices, click on “Refresh” button.
+To get the most updated list of devices, click on the “Refresh” button.
  
 ![alt text][cc-16]
  
