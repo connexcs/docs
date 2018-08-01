@@ -14,54 +14,58 @@
   * [Carrier Setup](#carrier-setup)
     * [Authentication](#authentication_1)
     * [Deploy Server](#deploy-server)
-   
+
 
 # Introduction
 
-Initial set-up will configure a single carrier, single customer and single rate card.
+Initial setup will configure a single carrier, single customer and single rate card.
 
 ## Prerequisites
 
-This guide will assume: 
+This guide will assume:
 
-1. You have a modern web browser. 
-2. You have a basic understanding of Telecoms (Customers, Provider, etc). 
+1. You have a modern web browser.
+2. You have a basic understanding of Telecoms (Customers, Provider, etc).
 3. You have already created an account with ConnexCS.com.
 
-## Email Verification 
+## Verify Personal Details
+Before you can configure you account, you need to verify your email and mobile number. You can do this in the Personal Profile pane.
+To go to the Personal Profile pane, click the Notification icon at the top left of the screen.
+
+
+### Email Verification
 
 We verify email addresses to ensure that they are genuine.
 
-Steps to Verify Email Address: 
+How to verify your email address:
 
-1. Click on the Top Left notification button
-2. Click on Verify on Verify Email
+1. Click on the Notification icon at the top left of the screen.
+2. Click Verify Email.
 
     ![alt text][verify-email-1]
 
-3. Click on Send Verification Code
-4. Either click the link or copy & paste the verification code sent to your email by clicking the button.
+3. In the Personal Profile pane, click on the Verify Email icon.   
+4. An Email Verification Sent popup will be displayed. This means that an email with a verification code has been sent to your email address.
+5. To verify your email, either click the link in the email, or copy & paste the verification code into the Verification Code field and click on the Verify button.
 
    ![alt text][verify-email-2]
 
 
-## Mobile Verification 
+### Mobile Verification
 
 We verify mobile phone numbers to ensure that they are genuine.
 
-Steps to Verify Mobile Number
+> Tip: Before you verify your mobile number, check that the information is correct. To modify or add your mobile number, in the Personal Profile pane, click on the Edit icon, make your changes and click Save. The number must be in E.164 format. E.164 numbers are formatted [+] [country code] [subscriber number including area code] and can have a maximum of fifteen digits.
 
-1. Click on the Top Left notification button.
-2. Click on Verify on Verify Mobile.
-3. Click on Edit.
-4. Enter the Phone Number in E.164 format and click Save.
+How to verify your mobile number:
+
+1. Click on the Notification icon at the top left of the screen.
+2. In the Personal Profile pane, click on the Verify Mobile icon.
+3. A Mobile Verification  popup will be displayed. This means that an email with a verification code has been sent to your email address.
+5. To verify your mobile number, either click the link in the email, or copy & paste the verification code into the Verification Code field and click Verify.
 
  ![alt text][verify-mobile-1]
 
-5. Click on Send Verification Code.
-6. Enter the Verification code sent to your mobile and click Verify.
-
- 
 ## Prerequisites Customer
 
 1. Customer Name
@@ -80,17 +84,17 @@ Steps to Verify Mobile Number
 
 ## Customer Setup
 
-Below are the instructions for basic customer setup, for detailed instruction on customer setup click on [Customer Management] 
+> Tip:  Below are the instructions for basic customer setup. For more detailed instructions, go to [Customer Management].
 
-1. Click on Management > Customers.
-  
+1. Click on Management > Customer.
+
       ![alt text][customer-dashboard-new]
 
-2. To Add new customer click on '+' button.
+2. To add a new customer click on the '+' icon.
 
       ![alt text][add-customer-new]
 
-3. Enter the Customer name. 
+3. Enter the Customer name.
 4. Select the currency that you wish to setup the account in.
 5. Click Save.
 
@@ -99,16 +103,16 @@ Below are the instructions for basic customer setup, for detailed instruction on
 ### Authentication
 
 1. Click on Authentication.
-2. Click '+' under IP Authentication. 
+2. Click '+' under IP Authentication.
 
     ![alt text][ip-auth-1]
-  
+
 3. Enter the Origination/customer IP address (We support SRV records & domains too).
 4. Click Save.
 
   ![alt text][ip-auth-2]
 
-    
+
 ### SIP User Authentication
 
 You can authenticate either using IP to IP or User/Password. Below are the steps to add a SIP extension.
@@ -123,16 +127,16 @@ You can authenticate either using IP to IP or User/Password. Below are the steps
 5. Click Save.
 
  ![alt text][sip-user-2]
-    
+
 
 ### Payments
 
 1. Click on Payments
-2. Click '+' 
+2. Click '+'
 
    ![alt text][payment-1]
 
-3. Enter the description and the amount in the appropriate field 
+3. Enter the description and the amount in the appropriate field
 4. Select the Status as complete & click Save
 
     ![alt text][payment-2]
@@ -142,7 +146,7 @@ You can authenticate either using IP to IP or User/Password. Below are the steps
 Carriers are your VoIP route providers, below are the basic instructions to setup a carrier. For detailed instructions on carrier setup click on [Carrier Management]
 
 1. Click on Management> Carrier
- 
+
   ![alt text][carrier-1]
 
 2. Enter the Carrier Name
@@ -162,16 +166,16 @@ Carriers are your VoIP route providers, below are the basic instructions to setu
 4. Click Save
 
  ![alt text][carrier-auth-2]
-    
+
 
 ## Provider Card
 
 Below are the instructions to setup the provider rate card manually. There are two ways to setup a provider rate card, upload and manually, we will go through the manual setup instructions here, for detailed instructions click on [Provider Card]
- 
+
 1. Click on Management> Rate Card
-  
+
    ![alt text][provider-card-1]
-  
+
 2. Click ‘+’ button under Provider Rate Cards
 
   ![alt text][provider-card-2]
@@ -195,7 +199,7 @@ Below are the instructions to setup the provider rate card manually. There are t
 10. Complete the Spreadsheet information, Example: Prefix: 441, Name: UK Landline, Cost: 0.006, Billing: 1/1. You can add as many rows as you wish.
 11. Click on Save button to publish the rate card.
 
- 
+
 ## Customer Card
 
 1. Click on Management> Rate Cards
@@ -211,7 +215,7 @@ Below are the instructions to setup the provider rate card manually. There are t
 5. Select the desired currency & Click Save
 
  ![alt text][customer-card-3]
- 
+
 6. Click on Profits tab >Click on Add New Row
 7. Complete the Spreadsheet, Example: Prefix: 441, Cost: 0.007, Profit Type: Absolute, Billing 1/1, Rounding: 1/1, Status: Profit, Apply To: Cost
 
@@ -244,9 +248,9 @@ Deploying a server with Connexcs is very quick, once the checklist is complete y
 
 1. Click on Setup> Settings> Servers
 2. Click on Add Server
-  
+
   ![alt text][server-1]
-  
+
 3. Choose Server Location
 4. Enter the Server Name
 5. Check the confirmation box and deploy the server.
@@ -309,10 +313,3 @@ Deploying a server with Connexcs is very quick, once the checklist is complete y
 
 [server-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/31.png "server-1"
 [server-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/32.png "server-2"
-
-
-
-
-
-
-
