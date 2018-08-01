@@ -3,18 +3,18 @@
 * [Table of Contents](#table-of-contents)
 * [Introduction](#introduction)
   * [Prerequisites](#prerequisites)
-    * [Email Verification](#email-verification)
-    * [Mobile Verification](#mobile-verification)
-    * [Customer](#prerequisites-customer)
-    * [Carrier](#prerequisites-carrier)
-    * [Rate Card](#prerequisites-rate-card)
+    - [Verify Personal Details](#verify-personal-details)
+      * [Email Verification](#email-verification)
+      * [Mobile Verification](#mobile-verification)
+    - [Customer](#prerequisites-customer)
+    - [Carrier](#prerequisites-carrier)
+    - [Rate Card](#prerequisites-rate-card)
   * [Customer Setup](#customer-setup)
     * [Authentication](#authentication)
     * [Payments](#payments)
   * [Carrier Setup](#carrier-setup)
     * [Authentication](#authentication_1)
     * [Deploy Server](#deploy-server)
-
 
 # Introduction
 
@@ -30,7 +30,7 @@ This guide will assume:
 
 ## Verify Personal Details
 Before you can configure you account, you need to verify your email and mobile number. You can do this in the Personal Profile pane.
-To go to the Personal Profile pane, click the Notification icon at the top left of the screen.
+To go to the Personal Profile pane, click on the Notification icon at the top left of the screen. ![notification-icon](new-images/notification-icon.png)
 
 
 ### Email Verification
@@ -44,24 +44,24 @@ How to verify your email address:
 
     ![alt text][verify-email-1]
 
-3. In the Personal Profile pane, click on the Verify Email icon.   
+3. In the Personal Profile pane, click on the Verify Email icon.![verification-icon](images/2018/08/verification-icon.png)  
 4. An Email Verification Sent popup will be displayed. This means that an email with a verification code has been sent to your email address.
 5. To verify your email, either click the link in the email, or copy & paste the verification code into the Verification Code field and click on the Verify button.
 
    ![alt text][verify-email-2]
 
-
 ### Mobile Verification
 
 We verify mobile phone numbers to ensure that they are genuine.
 
-> Tip: Before you verify your mobile number, check that the information is correct. To modify or add your mobile number, in the Personal Profile pane, click on the Edit icon, make your changes and click Save. The number must be in E.164 format. E.164 numbers are formatted [+] [country code] [subscriber number including area code] and can have a maximum of fifteen digits.
+> Note: Before you verify your mobile number, check that the information is correct. To modify or add your mobile number, in the Personal Profile pane, click on the Edit icon, make your changes and click Save. The number must be in E.164 format. E.164 numbers are formatted [+] [country code] [subscriber number including area code] and can have a maximum of fifteen digits.
 
 How to verify your mobile number:
 
 1. Click on the Notification icon at the top left of the screen.
-2. In the Personal Profile pane, click on the Verify Mobile icon.
-3. A Mobile Verification  popup will be displayed. This means that an email with a verification code has been sent to your email address.
+2. Click Verify Mobile.
+3. In the Personal Profile pane, click on the Verify Mobile icon.![verification-icon](images/2018/08/verification-icon.png)
+4. A Mobile Verification  popup will be displayed. This means that an email with a verification code has been sent to your email address.
 5. To verify your mobile number, either click the link in the email, or copy & paste the verification code into the Verification Code field and click Verify.
 
  ![alt text][verify-mobile-1]
@@ -84,46 +84,55 @@ How to verify your mobile number:
 
 ## Customer Setup
 
-> Tip:  Below are the instructions for basic customer setup. For more detailed instructions, go to [Customer Management].
+> Note: Below are the instructions for basic customer setup (i.e. mandatory fields you need to complete to create a customer profile) and authentication of their account details, e.g IP address and payment details. After setting up a customer, they will be active in the system. For more detailed instructions about setting up customers, click on [Customer Management].
 
-1. Click on Management > Customer.
+1. Go to Management > Customer.
 
       ![alt text][customer-dashboard-new]
 
-2. To add a new customer click on the '+' icon.
+> Note: On this screen you can modify customer details, add new customers, filter the list of customers and perform bulk actions. To view outstanding actions on a customer, hover over the Warning icon. In the example below, you can see that routing has not been set. Click on the customer's name to update their routing details.
+>
+>![warning-icon](images/2018/08/warning-icon.png)  
+
+2. To add a new customer, click on the '+' icon. ![plus](new-images/plus-icon.png)
 
       ![alt text][add-customer-new]
 
-3. Enter the Customer name.
-4. Select the currency that you wish to setup the account in.
-5. Click Save.
+3. Enter the customer's Name.
+4. Select the Currency that you wish to use for this  account in. {==This field cannot be changed later.==}{>><<}
+5. Add a percentage Tax. This will be calculated on the payment that gets added.
+6. Click Save.
 
       ![alt text][customer-save-new]
 
 ### Authentication
 
-1. Click on Authentication.
-2. Click '+' under IP Authentication.
+1. On the Customers screen, select a customer to authenticate.
+2. Click on the Auth menu item.
+3. Under IP Authentication, click on the '+' icon.
 
     ![alt text][ip-auth-1]
 
-3. Enter the Origination/customer IP address (We support SRV records & domains too).
-4. Click Save.
+4. Enter the Origination/Customer IP address
+> Note: We support SRV (service) records & domains too. A Service record is a specification of data in the Domain Name System defining the location of servers for specified services.).
+5. Click Save.
 
   ![alt text][ip-auth-2]
 
 
 ### SIP User Authentication
 
-You can authenticate either using IP to IP or User/Password. Below are the steps to add a SIP extension.
+You can authenticate a customer using either IP-to-IP or User/Password. Below are the steps to add a SIP extension.
+>Note: Session Initiation Protocol (SIP) uses protocol-to-provision (VoIP) connectivity between an on-premises phone system and the public switched telephone network (PSTN). SIP is used for call establishment and  management.
 
-1. Click on Authentication.
-2. Click '+' SIP User Authentication.
+1. On the Customers screen, select a customer to authenticate.
+2. Click on the Auth menu item.
+2. Under SIP User Authentication, click on the '+' icon.
 
    ![alt text][sip-user-1]
 
-3. Enter the username of your choice.
-4. Enter the password.
+3. Enter a Username.
+4. Enter a Password.
 5. Click Save.
 
  ![alt text][sip-user-2]
@@ -131,13 +140,17 @@ You can authenticate either using IP to IP or User/Password. Below are the steps
 
 ### Payments
 
-1. Click on Payments
-2. Click '+'
+> Note: You can create multiple payment records to cover a customer's invoices and receipts, e.g. the deposit they have made to join ConnexCS.
+>
+1. On the Customers screen, to add payment details, first select a customer.
+1. Click on the Payment menu item
+2. Click on the '+' icon.
 
    ![alt text][payment-1]
 
-3. Enter the description and the amount in the appropriate field
-4. Select the Status as complete & click Save
+3. Enter a Description and Total amount.
+4. Assuming the payment has been made, select the Status as "Complete".
+5. Click Save.
 
     ![alt text][payment-2]
 
