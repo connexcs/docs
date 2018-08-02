@@ -114,7 +114,8 @@ How to verify your mobile number:
     ![alt text][ip-auth-1]
 
 4. Enter the Origination/Customer IP address
-> Note: We support SRV (service) records & domains too. A Service record is a specification of data in the Domain Name System defining the location of servers for specified services.).
+> Note: We support SRV (service) records & domains too. A Service record identifies servers that provide
+special services to a domain, e.g. defining where a SIP service may be found).
 5. Click Save.
 
   ![alt text][ip-auth-2]
@@ -123,7 +124,7 @@ How to verify your mobile number:
 ### SIP User Authentication
 
 You can authenticate a customer using either IP-to-IP or User/Password. Below are the steps to add a SIP extension.
->Note: Session Initiation Protocol (SIP) uses protocol-to-provision (VoIP) connectivity between an on-premises phone system and the public switched telephone network (PSTN). SIP is used for call establishment and  management.
+>Note: Session Initiation Protocol (SIP) is used for call establishment and  management. It enables a very secure authentication process and also centralizes VoIP communication by using a unique number to link all a customer's devices to one address.  
 
 1. On the Customers screen, select a customer to authenticate.
 2. Click on the Auth menu item.
