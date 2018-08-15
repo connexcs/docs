@@ -7,7 +7,7 @@
 **Bulk Upload In Customer And DID** - CSV Upload for Customer's & DID's.
 
 ## 1st August 2018
-**Registarion SIP traces** - To aid in debugging registration problems, you can now see SIP Traces for REGISTER requests.
+**REGISTER SIP traces** - To aid in debugging registration problems, you can now see SIP Traces for REGISTER requests.
 
 ## 30th July 2018
 **Language Menu** - i18n integration for multi-lingual control panel. We also have the ability for you to add your own translations and contribute to the ConnexCS platform.
