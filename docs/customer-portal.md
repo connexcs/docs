@@ -13,7 +13,7 @@ We will discuss how to add a "add on domain" with your domain provider
 1. Sign in to your domain's account at your domain host.
 2. Locate the page for updating your domain's DNS records.
 3. The page might be called something like DNS Management, Name Server Management, or Advanced Settings.
-4. Locate the CNAME records for your domain.
+4. Locate the **CNAME** records for your domain. Don't add an A-record to your switch, your switch does not have a webserver. Don't setup a redirect this wont work either.
 5. Add an add on domain, something like, portal.yourwebsite.com
 6. Point the domain towards portal.connexcs.com
 
