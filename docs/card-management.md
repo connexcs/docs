@@ -1,123 +1,114 @@
 # Table of Contents
 
-* [Table of Contents](#table-of-contents)
-  * [NPA-NXX Provider Rate Card Upload](#npa-nxx-provider-rate-card-upload)
-  * [NPA-NXX Customer Rate Card Upload](#npa-nxx-customer-rate-card-upload)
-  * [NPA-NXX Customer Rate Card Manual (Generate Profit Internally)](#npa-nxx-customer-rate-card-manual-generate-profit-internally)
-  * [NPA-NXX Customer Rate Card Upload (External)](#npa-nxx-customer-rate-card-upload-external)
-  * [A to Z Rate Card Upload](#a-to-z-rate-card-upload)
+- [Table of Contents](#table-of-contents)
+- [NPA-NXX Provider Rate Card Upload](#npa-nxx-provider-rate-card-upload)
+  - [NPA-NXX Customer Rate Card Upload](#npa-nxx-customer-rate-card-upload)
+  - [NPA-NXX Customer Rate Card Manual (Generate Profit Internally)](#npa-nxx-customer-rate-card-manual-generate-profit-internally)
+  - [NPA-NXX Customer Rate Card Upload (External)](#npa-nxx-customer-rate-card-upload-external)
+  - [A to Z Rate Card Upload](#a-to-z-rate-card-upload)
 
 
 # NPA-NXX Provider Rate Card Upload
-
-1. Click on Management> Rate Card
+This function lets you upload **NPA-NXX provider rate cards** from external sources.
+1. Click **Management**>**Rate Card**
 
   ![alt text][pcard-1] 
 
-2. Click on ‘+’ button under Provider Rate Cards
+2. Click the **`+`** button under **Provider Rate Cards**.
 
   ![alt text][pcard-2]
 
-3. Name the provider card
-4. Select the Carrier from the dropdown list
-5. Select the desired currency
-
-  ![alt text][pcard-3]
-
-6. Click Config
-7. Change the Presentation to Inter/Intra/Indet under Force Presentation. If you wish to enable LRN on the provider card you can do so      from the Dialling option
-8. Click Save
+3. Enter a unique name for the provider card.
+4. Select the carrier from the dropdown list.
+5. Select the desired currency.
+6. Click **`Config`**.
+7. Change the presentation to Inter/Intra/Indet under **Force Presentation**. LRN is enabled using the **Dialer** option.
+8. Click **`Save`**.
 
   ![alt text][pcard-4]
 
-9. Click Upload> browse and select the rate card file
+9. Click **Upload>Browse** and select the rate card file.
 
   ![alt text][pcard-5]
   
-10. Map the rate card fields against the system fields
+10. Map the rate card fields against the system fields as you see fit.
 
   ![alt text][pcard-6]
 
-11. Click on Upload to provider rate card.
-12. You will get notification as shown in figure.
+11. Select **Upload**, and you will receive a notification, as shown.
 
 ![alt text][pcard-7]
 
 
 ## NPA-NXX Customer Rate Card Upload
-
-1. Click on Management> Rate Card
+This function lets you upload **NPA-NXX customer rate cards** from external sources.
+1. Click **Management**>**Rate Card**
 
   ![alt text][ccard-1] 
 
-2. Click on ‘+’ button under Customer Rate Cards
+2. Click the  **`+`** button under **Customer Rate Cards**.
 
   ![alt text][ccard-2] 
 
-3. Name the customer card
-4. Select the provider cards from the dropdown list, you can select more than one provider card
-5. Select the desired currency
+3. Create a unique name for the uploaded customer card.
+4. Select the provider card(s) from the dropdown list. The list allows multiple providers to be selected for each customer.
+5. Select the relevant currency.
 
   ![alt text][ccard-3] 
 
-6. Click Config
-7. Change the Presentation to Inter/Intra/Indet under Force Presentation.
+6. Click **Config**
+7. Change the presentation for Inter/Intra/Indet under **Force Presentation**.
   If you wish to enable LRN on the customer card you can do so from the Dialling option
-8. Click Save
+8. Click **`Save`**
 
    ![alt text][ccard-4]
 
-9. Click Upload> Upload> browse and select the rate card file
+9. Click **Upload>Upload>browse** and select the rate card file.
 
  ![alt text][ccard-5] 
   
  ![alt text][ccard-6] 
 
-10. Click on Upload to customer card. 
-11. You will get notification as shown in figure.
+10. Click **Upload to customer card**.  
 
  ![alt text][ccard-7] 
 
-12. After the card is sucessfully imported notification will be displayed.
+11. After the card is sucessfully imported, a notification is displayed:
 
 ## NPA-NXX Customer Rate Card Manual (Generate Profit Internally)
 
-1. Click on Management> Rate Card
+1. Click **Management>Rate Card**
      
      ![alt text][ccard-8] 
 
-2. Click on ‘+’ to add new Customer Rate Cards
+2. Click the **`+`** button to add new customer rate cards
                        
      ![alt text][ccard-9] 
                        
-3. Name the customer card
-4. Select the provider cards from the dropdown list, you can select more than one provider card
-5. Select the desired currency
+3. Add a unique name for the customer card.
+4. Select the provider card(s) from the dropdown list, you can select more than one provider card.
+5. Select the desired currency.
         
      ![alt text][ccard-10] 
          
 6. Click Config
-7. Change the Presentation to Inter/Intra/Indet under Force Presentation If you wish to enable LRN on the customer card you can do so
-   from the Dialling option
+7. Change the presentation to Inter/Intra/Indet under **Force Presentation**. LRN can be enabled from the **Dialing** option screen.
 8. Click Save
    
    ![alt text][ccard-11] 
    
-9. Click on Profits tab >Click on ‘+’ to add new row
+9. Click on **Profits** tab, then the **`+`** button to add a new row.
    
    ![alt text][ccard-12] 
    
-10. Complete the Spreadsheet information, Example Prefix: ^1 Name: USA, Percent: 15, cost: select>Percent Billing: 6/6, Rounding: 1/1,       Status: Profit, Apply To: Inter/Intra/cost
-11. Click Save
+10. Complete the spreadsheet information.
+11. Click **`Save`**
    
    ![alt text][ccard-13] 
    
-12. Click Build button & confirm the build
+12. Click the **`Build`** button and confirm.  A notification will tell you if the build was successful.
     
     ![alt text][ccard-14] 
-
-13. You will be notified when the compile is complete.
-
 
 ## NPA-NXX Customer Rate Card Upload (External)
 
@@ -129,19 +120,19 @@
 
 ![alt text][ccard-16] 
 
-3. Name the customer card
-4. Select the provider cards from the dropdown list, you can select more than one provider card
-5. Select the desired currency
+3. Enter a unique name for the customer card.
+4. Select the provider card(s) from the dropdown list. The list allows multiple providers to be selected for each customer.
+5. Select the relevant currency.
 
 ![alt text][ccard-17] 
 
-6. Click config>config>Change the Presentation to Inter/Intra/Indet under Force Presentation If you wish to enable LRN on the customer card you can do so from the Dialling option
-7. Select the provider cards under Dynamic routing, you can select more than one provider.
-8. Click Save
+6. Click **Config>Config>Change** the Presentation to Inter/Intra/Indet under Force Presentation If you wish to enable LRN on the customer card you can do so from the Dialling option
+7. Select the provider card(s) under **Dynamic routing**; remember, you can select more than one provider.
+8. Click **`Save`**.
 
 ![alt text][ccard-18] 
 
-9. Click Upload> browse and select the rate card file
+9. Click **Upload>Browse** and select the rate card file
 
 ![alt text][ccard-19] 
 
@@ -149,36 +140,35 @@
 
 ![alt text][ccard-20] 
 
-11. Click on Upload to customer card
-12.You will be notified when the import is complete, Please note Compiling/merging is not required when the rate card is built externally.
+11.  Click the **`Upload to Customer Rate Card`** button.
+12. You will be notified when the import is complete. Note: compiling and/or merging is not required if the rate card is built externally.
 
 ## A to Z Rate Card Upload
 
-1. Click on Management> Rate Card
+1. Click on **Management>Rate Card**
 
 ![alt text][ccard-21] 
 
-2. Click on ‘+’ button under Provider Rate Cards
+2. Click the **`+`** button under **Provider Rate Cards**.
 
 ![alt text][ccard-22] 
 
-3. Name the provider card
-4. Select the Carrier from the dropdown list
-5. Select the desired currency
-6. Click Save
+3. Enter a name for the provider card.
+4. Select a carrier from the dropdown list.
+5. Select the relevant currency.
+6. Click **`Save`**.
 
 ![alt text][ccard-23] 
 
-7. Click Upload> browse and select the rate card file
+7. Click **Upload**>**Browse** and select the rate card file.
 
 ![alt text][ccard-24] 
 
-8. Map the rate card fields against the system fields
+8. Map the rate card fields against the system fields.
 
 ![alt text][ccard-25] 
 
-9. Click on upload to povider card button
-10. You will be notified when the import is complete, Please note Compiling/merging is not required when the rate card is built externally
+1. Click the **`Upload to Provider Rate Card`** button.  You will be notified when the import completes.
 
 
 

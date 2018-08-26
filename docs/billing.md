@@ -1,58 +1,54 @@
 # Table of Contents
 
-* [Table of Contents](#table-of-contents)
-* [Billing](#billing)
-  * [ConnexCS Billing per channel](#connexcs-billing-per-channel)
-    * [Advantages](#advantages)
-    * [Disadvantages](#disadvantages)
-  * [ConnexCS Billing per minute](#connexcs-billing-per-minute)
-    * [Advantages](#advantages_1)
-    * [Disadvantages](#disadvantages_1)
-  * [Minimum Charges](#minimum-charges)
-  * [Capacity Planning](#capacity-planning)
+- [Table of Contents](#table-of-contents)
+- [Billing](#billing)
+  - [ConnexCS Billing Per Channel](#connexcs-billing-per-channel)
+    - [Advantages](#advantages)
+    - [Disadvantages](#disadvantages)
+  - [ConnexCS Billing per minute](#connexcs-billing-per-minute)
+    - [Advantages](#advantages)
+    - [Disadvantages](#disadvantages)
+  - [Minimum Charges](#minimum-charges)
+  - [Capacity Planning](#capacity-planning)
 
 
 # Billing
 
-When you subscribe to ConnexCS you have 2 main tariffs that you can use: either per minute or per channel.
+A ConnexCS subscription comes with two main tariffs used for billing: **per minute** and **per channel**.
 
-## ConnexCS Billing per channel
+## ConnexCS Billing Per Channel
 
-This is the traditional approach where you pay for a set number of channels or ports.
+This is the traditional approach, where the consumer pays for a set number of channels or ports. It can be seen as the VoIP equivalent of per-line billing for mobile networks. 
 
 ### Advantages
 
-1. Cheaper than per minute billing if you have consistent traffic with high utilisation.
-2. Servers are provided for free at various tiers.
-3. Predictable Costs.
+1. Cheaper than per minute billing in systems with consistent traffic and high utilization.
+2. Free servers are available for many tiers of service.
+3. Predictable costs allow for more stable billing cycles and simlified cost/benefit analysis.
 
 ### Disadvantages
 
-1. More expensive if you have sporadic traffic.
-2. Capacity availability is less dynamic.
+1. Inconsistent traffic often leads to higher costs
+2. Capacity planning is inherenly less flexible
 
 ## ConnexCS Billing per minute
 
-This billing strategy is similar, but not exactly the same as how you would get charged by your provider. 
-The amount of seconds that you use will be accumulated daily and combined with the per minute cost, then subtracted from your account.
+In per-minute billing, the amount of seconds you use are tallied daily, combined with the per minute cost, and then subtracted from your account
 
 ### Advantages
-
-  1. Best scalability
-  2. Self scaling costs.
+ 
+  1. Channels come with peripheral considerations that make it more challenging to scale a billing unit, but per-minute rates are exact enough to scale with the system
 
 ### Disadvantages
 
-  1. More expensive if you have regular consistent traffic
-  2. You will have to pay if you want multiple servers.
+  1. More expensive with consistent traffic
+  2. Multiple servers are more expensive
 
  
 ## Minimum Charges
 
-All accounts are subject to a minimum spend of $20 / month, this covers the absolute basic costs of keeping your account
-active and prevents ConnexCS loss from stagnant accounts. 
+All accounts must spend a mininum of $20 per month to remain active.  This helps us prevent incurring losses from stagnant accounts. 
 
 ## Capacity Planning
 
-Regardless of which plan you choose, we like to engage in active capacity planning with our customers. 
-This way we can make sure that, when you want to burst to a higher utilisation, everything is in place for the best performance.
+Capacity planning is a way we extend our services to an advisory capacity, to help our consumer choose the setup that works best for their business. Shifting utilization and the growing demands of scalabilty are always a consideration, but there is also the active management of changing traffic.
