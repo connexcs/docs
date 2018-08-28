@@ -1,35 +1,38 @@
 # Table of Contents
-* [Table of Contents](#table-of-contents)
-* [Circuit Test](#circuit-test)
+- [Table of Contents](#table-of-contents)
+- [Circuit Test](#circuit-test)
 
 
 # Circuit Test
 
-A circuit test works by initiating a call in the switch which will go to one of your termination providers. The call should then pass though the PSTN network and terminate on one of your DID providers, it will then continue back to the switch and link up with the same dialog.
+Circuit tests help determine the quality a route. It also helps analyze FAS, RTP quality, MOS, Release reason, jitter, packet loss percentage, and answer delay measurement.
 
-Circuit Test helps you perform a test to determine the quality of the route. This can also help you analyse FAS, RTP quality, MOS, Release reason, jitter, packet loss percentage & answer delay measurement etc. To perform circuit test, follow the steps below:
+A circuit test works by initiating a call in the switch to a termination provider. The call passes though the PSTN network and terminate son one of your DID providers.  It continues back to the switch, and links up with the same dialog.
 
-1.	Click on Management> DID> Add DID
+To perform circuit test:
+
+1.	Click **Management>DID>Add DID**
 
 ![alt text][circuit-test-1]
 
 ![alt text][circuit-test-2]
 
-2. Enter the DID number and select the destination to Circuit Test
+1. Enter the DID number and a destination to circuit test.
 
-3.	Select the Provider & the Provider Rate Card.
+3.	Select the provider and provider rate card.
 
-4. Select the Customer & Customer Rate Card
+1. Select the customer and customer rate card.
 
-5. Select the RTP Proxy & Media proxy, more information can be found from this article.
+2.  Select the RTP Proxy & Media proxy, more information can be found from this article.
 
-6. Optionally you can select the timeouts
+3. Select the timeouts (optional.)
 
-7. Enter the per month buy Cost of your DID
+4. Enter the monthly cost of your DID.
 
-8. Enter the per month sell Cost
+5. Enter the monthly sell cost.
 
-9. Enter the Max duration, the default value is 3600 seconds & click Save
+6. Enter the max duration.  The default value is 3600 seconds.
+7. Click **`Save`**.
 
 ![alt text][circuit-test-3]
 
