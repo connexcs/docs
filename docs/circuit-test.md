@@ -40,21 +40,21 @@ To perform circuit test:
 
 Now, it's time for us to configure the circuit test:
 
-1. Click on Setup
+1. Click **Setup**.
 
-2. Click on Settings>Options
+2. Click on **Settings**>**Options**.
 
 ![alt text][circuit-test-5]
  
-2.	Click the **"Edit"** button on Origination Ingress Address and enter the origination ingress IP and save.
+2.	Click the **`Edit`** button on Origination Ingress Address and enter the origination ingress IP and save.
 
-3.	Now click on **"Edit"** for Termination Ingress Address button and enter the termination ingress IP and save.
+3.	Click **`Edit`** for `Termination Ingress Address` button and enter the termination ingress IP and save.
 
 ![alt text][circuit-test-6]  
 
 ![alt text][circuit-test-7]
 
-4.	Similarly, for the **"Circuit Test User"**, click **"Edit"** Select the customer account.
+4.	Similarly, for the **Circuit Test User**, click **`Edit`**, and then select the customer account.
 
 ![alt text][circuit-test-8]
 

@@ -1,35 +1,32 @@
 # Table of Contents
 
-* [Table of Contents](#table-of-contents)
-* [CLI Restriction](#cli-restriction)
-  * [How to add CLI](#how-to-add-cli)
-* [Block CLI](#Block-CLI's)
+- [Table of Contents](#table-of-contents)
+- [CLI Restriction](#cli-restriction)
+  - [How to add CLI?](#how-to-add-cli)
+  - [Block CLI's](#block-clis)
 
 # CLI Restriction
 
-CLI Restriction enables you to pass a CLI which is presented on the customer's account. Anything without a valid CLI will not be passed through.
+CLI stands for **Caller Line Identification**, a method by which VoIP systems identify incoming calls for sorting purposes.  Essentially, it is the technical term for the mechanism we know as Caller ID. In VoIP systems, CLI is more than just a way to display the number of incoming calls; it doubles as an additional defense against unidentified call attempts and better management of incoming calls in general.
 
-Checking the Force CLI option will let the user to pass the CLI without having to set the CLI at customer's end.
-
-**Note:** If no CLI rules are added just the default CLI which is presented by your end customer will pass through. Also we do support regular expression.
+In ConnexCS, CLI Restriction lets you present CLIs on customer accounts, so that any caller without a valid number is rejected outright.  Enabling Force CLI option lets users pass the CLI without setting it on the customer's end. If no CLI rules were added,  just the default will pass through.  The mechanic also supports regular expressions.
 
 **CLI = Caller Line Identification**
 
 ## How to add CLI?
-
-* Click on Managment > Customer > [Customer name]
+* Click  **Managment**>**Customer**>**[Customer name]**
 
 ![alt text][CLI-0]
 
-* Click on Routing Routing
+* Select **Routing**
 
-* Click + under CLI.
+* Click the **`+`** under CLI.
 
-* Enter the CLI Number in E164 format.
+* Enter a CLI Number in E164 format.
 
 ![alt text][CLI-2]
 
-* Click Save.
+* Click **`Save`**.
 
 ![alt text][CLI-4]
 
@@ -41,8 +38,8 @@ Checking the Force CLI option will let the user to pass the CLI without having t
 
 ## Block CLI's
 
-Its possible to block CLI's by using the follwing regular expression.
+Blocking CLIs is a hand way to instill a call blocking on a system. Use this regular expression to block CLIs:
 
 Regex: ```^(?!(1234|5678)).*$\n```
 
-Where 1234 & 5678 are two different CLI's, you can block more than one CLI.
+**Note** that the 1234 and the 5678 in the expression are two different CLIs. You can separate CLIs with a vertical bar `|` to express as many as needed.

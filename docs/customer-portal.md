@@ -1,45 +1,44 @@
 # Table of Contents
 
-* [Table of Contents](#table-of-contents)
-* [Customer Portal](#customer-portal)
-    * [Adding New Domain](#to-add-a-new-domain)
+- [Table of Contents](#table-of-contents)
+- [Customer Portal](#customer-portal)
+  - [Adding a New Domain](#adding-a-new-domain)
+  - [Adding Contacts to Customer Portal](#adding-contacts-to-customer-portal)
     
 # Customer Portal
 
-Customer portal lets your customer access their account with you. The Customer portal can be whitelabelled to your brand name, also you can add your own custom domain.
+The Customer Portal allows your customers access to information about their account in a fixed domain where you control the flow of data. It can be white-labeled to brand names, and it allows for customized domains.
 
-We will discuss how to add a "add on domain" with your domain provider
+## Adding a New Domain 
+The following will explain how to add a new to domain to your Customer Portal:
+1. Sign in to your domain account at its host.
+2. Locate the page for updating your domain's DNS records. It will likely be called something like DNS Management or Advanced Server Management.
+3. Locate the **CNAME** records for your domain.
+4. Provide an add-on domain, such as portal.yourwebsite.com.
+5. Point the domain toward portal.connexcs.com.
 
-1. Sign in to your domain's account at your domain host.
-2. Locate the page for updating your domain's DNS records.
-3. The page might be called something like DNS Management, Name Server Management, or Advanced Settings.
-4. Locate the CNAME records for your domain.
-5. Add an add on domain, something like, portal.yourwebsite.com
-6. Point the domain towards portal.connexcs.com
+Once the previous steps are completed, return to the Connex control panel, and proceed with the following:
 
-Once this is configured with your domain hosting provider you will now have to configure this on your Connex control panel, below are the steps.
-
-To add a new domain:
-
-1. Go to Setup>Integrations then click Domains.
+1. Go to **Setup**>**Integrations**>**Domains**.
 
    ![alt text][domain]
 
-2. Click on the '+' icon under Portal.
+2. Click the **`+`** button under Portal.
 
  ![alt text][domain1]
 
-2. Enter the domain name, example, portal.yourwebsite.com
-3. Select the brand name, this is the name that will be displayed on your customer portal.
-4. Select the customer signup. If you select this to yes, you are allowing the new customers to signup on your customer portal. The new signup customers will appear on your control panel under customers with a pending approval status.
-5. Select the carrier signup. If you select this to yes, you are allowing the new carriers to signup on your customer portal. The new signup carrier will appear on your control panel under carrier with a pending approval status.
-6. Enter the Customer limit, this is how much credit you wish to allow your new sign up customers.
-7. Select the access (Carrier Portal, CDR, Rate Card, Balance etc.) that you wish to allow your customers on customer portal.
-8. Click on the Save button.
+3. Enter the domain name.
+4. Select the brand name, the name that will be displayed on your portal.
+5. Select the customer signup. Selecting **yes** allows new customers to sign up on your customer portal. They will appear on the control panel under "pending approval".
+6. Select the carrier signup. Setting this to **yes** allows the new carriers to sign up on your customer portal. The new carrier will appear the control panel under "pending approval".
+7. Enter a customer limit, the amount of credit extended to new sign-ups.
+8. Select the level of access--e.g. Carrier Portal, CDR, Rate Card, Balance--you wish to allow customers.
+9. Click the **`Save`** button.
 
    ![alt text][add-new-domain]
 
-We will now learn how to add Contacts on control panel, basically this is done to grant access to your customers for customer portal, below are the steps.
+## Adding Contacts to Customer Portal
+The following are the steps to add contacts in the control panel:
 
 1. Click on Management> Customers
 
@@ -55,12 +54,12 @@ We will now learn how to add Contacts on control panel, basically this is done t
   
 4. Enter the Email address, this email address will be used for login
 5. Check the Auto generate password box if you would like the password to be generated online and the generated password will be sent via email. Unchecking the box will let you manually set the password
-6. You may enter any information on public notes, these notes will be displayed on the customer portal when logged in. The private notes are limited to display only on the control panel, these notes will not be displayed on the customer portal.
-7. Click Save
+6. You may enter any information on public notes here. The notes will be displayed on the customer portal after login. Private notes only display in the control panel.
+7. Click **`Save`**
 
  ![alt text][contacts-2]
 
-You or your customers can use these credentials to login to the customer portal.
+These credentials can be used by providers and customers to log into the Customer Portal.
 
 
 [domain]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/168.png "Domain"
