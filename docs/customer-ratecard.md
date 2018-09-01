@@ -1,106 +1,104 @@
 # Table of Contents
 
-* [Table of Contents](#table-of-contents)
-* [Customer Rate Card](#customer-rate-card)
-   * [The Internal Method](#the-internal-method)
-   * [The External Method](#the-external-method)
-* [Revision Tab](#revision-tab)  
+- [Table of Contents](#table-of-contents)
+- [Customer Rate Card](#customer-rate-card)
+  - [The Internal Method](#the-internal-method)
+  - [The External Method](#the-external-method)
+  - [Deleting the Customer Rate Card](#deleting-the-customer-rate-card)
+  - [Email the Rate Card](#email-the-rate-card)
+  - [Revision Tab](#revision-tab)
 
 
 
 # Customer Rate Card
 
-Customer rate cards let you manage the rates for your customers. There are two ways to build these: 
-
-1. Internal: Internal method lets you add a profit to your provider cards or set a flat rate.
-2. External: This is done by uploading the custom rate card & setting up the Dynamic routing
+Customer Rate Cards let you manage the rates for your customers. There are two types of rate cards: 
+* The **Internal** method lets you add a profit to your provider cards or set a flat rate.
+1. **External** rate cards are completed by uploading the custom rate card, and then setting up dynamic routing.
 
 ## The Internal Method 
 
-Please follow the instructions below.
+The following steps explain how to set up an internal Rate Card in ConnexCS:
 
-1. Click on Management> Rate Cards> Customer rate card> click on **‘+’** button. 
-2. Name the card> Select the carrier> Click Save.
+1. Click **Management**>**Rate Cards**>**Customer Rate Card**.
+2.  Select the **`+`** button. 
+3. Name the card, select a carrier, then click **`Save`**.
  
   ![alt text][customer-card-1]
 
   ![alt text][customer-card-2]
 
-3. Select Profits> Click on ‘+’ button 
+3. Select **Profits**.
+4. Click the **`+`** button. 
 
   ![alt text][customer-card-3]
 
-4. Enter your required prefix in the prefix field. This will usually be an international country code & not a provider or customer tech    prefix. Adding this symbol ^ on the prefix field will draw all the associated prefixes from the provider card. If you wish to specify   a particular set of prefixes add ^ and prefixes, example: ^441
+5. Enter the required prefix in the prefix field, usually an international country code instead of a provider or customer tech  prefix. Adding an up arrow `^` on the prefix draws all associated prefixes from the provider card. To specify a set of prefixes add, ^ and prefixes (e.g. ^441).
 
-5. In the cost field add the sell price & in the next column choose ABSOLUTE or RELATIVE.
-   Absolute will set a flat cost, for example your customer will be charged the price you set in the cost field. 
-   Relative costs will be added to the price you entered in cost field. example: provider cost 0.008 Relative cost 0.0006 = 0.0086, this    is the amount that will be billed to your customer.
-   
-6. If you do not wish to use Absolute or Relative, you can instead use a PERCENTAGE markup, Example: You can enter 10 percent in the        Percent field and choose Percent in the Profit Type. Eg: Provider Cost 0.008, 10% markup = 0.0088 Sell cost.
-
-7. Select the billing type, example: 1/1 or 6/6
+6. In the cost field, add the sell price.
+7. There are three choices for costs:
+   * Absolute sets a flat cost, taken from the cost field. 
+   *  Relative costs are added to the price you entered in cost field. 
+   * Add a percentage (%) to the **percentage** field if you don't want to use an absolute or relative value.  For example, entering a '10' in the box equals a 10% markup.
+8. Select the billing type.
 
  ![alt text][customer-card-4]
 
-8. Enter the connection charge if there is one.
+9. Enter the connection charge, if it applies.
 
-9. Select the Rounding method which can be upto 6 decimal places, but is usually 4.
+10. Select the Rounding method.  It can be up to six decimal places (0.XXXXXX), but is is usually four (0.XXXX).
 
-10. Select the status to Profit
+11. Select **Cost** under the drop-down list for **Apply To**. If it is a NPA-NXX card you can select Inter/intra/cost
+    
+12.  Select **Profit** from the Status drop-down list.
 
-11. And Click the Apply To for Cost. If it is a NPA-NXX card you can select Inter/intra/cost
-
-12. Once you complete all these steps now it is time to BUILD the card by clicking on Build from Carrier Card button.
+13. Select **Build** from Carrier Card button to build the rate card.
 
 ## The External Method 
 
-Please follow the instructions below.
+The following instructions will detail the external method for building Customer Rate Cards. 
 
-1. Click on Management> Rate Cards> Customer rate card> 
-2. Click on ‘+’ button> Name the card> Select the carrier
-3. Go to properties> Advanced> Select the providers inside the Dynamic Routing box> Click Save.
+1. Click **Management**>**Rate Cards**>**Customer rate card**> 
+2. Click the **`+`** button, name the card, and select the carrier.
+3. Go to **Properties**>**Advanced**, and then select the providers inside the Dynamic Routing box. 
+4. Click **`Save`**.
 
  ![alt text][customer-card-7]
  
-4. Click on the Upload button.
+5. Click the **`Upload`** button.  A pop-up window will allow you to upload a file from your local device.
 
   ![alt text][customer-card-8]
 
-5. Click on the blue upload button and browse the file from your device, select the required file and click open, your file will appear on the screen, click on upload again
-
   ![alt text][customer-card-9]
 
-6. Once the upload completes click on the file name, map the rate card fields against the system fields. 
+5. Once the upload completes, select the new file by name.
+6. Map the rate card fields against the system fields. 
+7. Click the **`Import to card`** button and select the customer card.
+8. Click **`Save`**.
 
-7. Click on Import to card button & select the Customer card & click save.
-
-8. Your rate card file will be imported to your customer rate card & you will be notfied with a popup once the import is complete. The  card is now live and ready to use.
-
-NB. You do not need to **BUILD** a rate card created in this way.
+The rate card file is imported the customer rate card, and a notfication will signal its completion.  Unlike the internal alternative, there is no need to build an external rate card.
 
 ## Deleting the Customer Rate Card
 
-You can also delete the customer rate card by simply selecting the name from the list and then click the trash icon, which is right next to the Upload File button.
-
-Note: Clicking on the “?” will show the list of provider cards that are associated with this customer rate card. 
+Delete a customer rate card by selecting its name from the list and then clicking the trash bin icon, next to the Upload File button. Clicking **`?`** will show a list of provider cards associated with the current customer rate card. 
 
 ## Email the Rate Card
 
-With this feature you can email the rate card to your customer's email address as an attachment.
+This feature lets providers email rate cards to customers as attachments.
 
-1. Click on Management> Rate Card> Customer Rate Card
-2. Click on the rate card name
+1. Click **Management**>**Rate Card**>**Customer Rate Card**.
+2. Select the rate card by name.
 
   ![alt text][customer-card-10]
 
-3. Click on Email button
-4. Enter the email address and click on send
+3. Click the **`Email`** button.
+4. Enter the email address, click **Send**.
 
   ![alt text][customer-card-11]
 
 ## Revision Tab 
 
-The revision tab lets us see the previous changes that have been made to a rate card, for example the previous Rule count, Presentation, Currency, date created, Billing etc.
+The revision tab shows previous changes made to rate cards. For example: previous Rule count, Presentation, Currency, date created, and Billing.
 
 
 

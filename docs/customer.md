@@ -1,153 +1,132 @@
 # Table of Contents
 
-* [Table of Contents](#table-of-contents)
-* [Customer Management](#customer-management)
-    * [Adding Customer](#adding-customer)
-    * [Delete Customers](#delete-customers)
-    * [Checking the Status](#checking-the-status)
-    * [Searching Customers](#searching-customers)
-    * [Edit Customers](#edit-customers)
-      * [Main Tab](#main)
-      * [Stats Tab](#stats)
-      * [Routing](#routing)
-      * [Ingress Routing](#ingress-routing)
-      * [Call Recording](#call-recording)
-      * [Adding CLI](#adding-cli)
-      * [Authentication](#authentication)
-         * [IP Authentication](#ip-authentication)
-         * [User/Password Authentication](#user-password-authentication)
-      * [Latest Calls](#latest-calls)
-      * [Dialogs](#dialogs)
-      * [Payments](#payments)
-      * [Alerts](#alerts)
-      * [Call Detail Records](#call-detail-record-cdr)
-      * [DID](#did)
-      * [Packages](#packages)
-      * [Contacts](#contacts)
+- [Table of Contents](#table-of-contents)
+- [Customer Management](#customer-management)
+  - [Adding Customer](#adding-customer)
+  - [Delete Customers](#delete-customers)
+  - [Checking the status](#checking-the-status)
+  - [Searching Customers](#searching-customers)
+  - [Editing Customers](#editing-customers)
+    - [Main](#main)
+    - [Stats](#stats)
+    - [Routing](#routing)
+  - [Ingress Routing](#ingress-routing)
+    - [Call Recording](#call-recording)
+    - [Adding CLI](#adding-cli)
+    - [Authentication](#authentication)
+      - [IP Authentication](#ip-authentication)
+      - [User/ Password Authentication](#user-password-authentication)
+    - [Latest Calls](#latest-calls)
+    - [Dialogs](#dialogs)
+    - [Payments](#payments)
+    - [Alerts](#alerts)
+    - [Call Detail Record (CDR)](#call-detail-record-cdr)
+    - [Recalculate CDR](#recalculate-cdr)
+    - [DID](#did)
+    - [Packages](#packages)
+  - [Contacts](#contacts)
       
 
 
 # Customer Management
 
-In Connex, you can create your own **Customer** and assign **credit, routing, CLI, authentication. Also you can check the Latest calls, channels ASR, ACD, PDD and CPS Stats**
+In Connex, Customers are managed through customer cards. Each card has tabs that hold different management options, which we will explain below.  
 
-Managing customers is quite easy with **Connex.** Follow the procedures given in this tutorial, to learn how to efficiently manage your customers.
-
-On the Dashboard, click on the tab, highlighted in the centre of the page, to go to the **Customer** or you can also click on  **_Management_** from the left pane and select **"Customer".**
+Customer Management is found in the **Management** tab, the four horizontal lines beneath the **Home** icon in the dashboard:
 
 ![alt text][customer-dashboard]
 
 ## Adding Customer
+The following explains how to add new customers using the Customer Management screen:
 
-You can add new **Customers** by following the simple procedure.
-
-1. Click on **'+'** button.
+1. Click the  **`+`** button.
 
 ![alt text][add-Customer-new]
 
-2. Enter the details of the Customer.
-3. Click the **Save** button, once all the details are entered properly.
-
-Following figure shows the dialog box for adding a **Customer:**
+2. Enter relevant details in each text box.
+3. Click the **`Save`** button.
 
 ![alt text][add-Customer]
 
-Brief description of the fields present in the dialog box above, as follows:
+Above is an image of the new customer window.  The following is a descrtption of each entry:
 
-**Customer Name:** Add the name of the customer.
+* **Customer Name:** - A name or unique identifier for each customer.
+* **Paypal Email:** The email address associated witht he customer's PayPal account.
+* **Website:** The customer's website address.
+* **Status:** The customer's status, i.e.:
+  *  Active : The customer is active and allowed to pass calls. 
+  *  Inactive: The account is disabled, and 
+  *  Pending Approval: New signups will be listed as pending approval.  The customer cannot pass calls or become active until this phase is completed. 
+* **Debit Limit:**  Sets the debit limit for postpay customers.
+* **Minimum Payment:** Set the minimum payment to keep accounts active. 
+* **Tax:**  Tax is added as a percentage that is charged on top of costs.
+* **Currency:** Select the currency from the dropdown menu. Note that you wont be able to change the account currency once the account is created.
 
-**Paypal Email:** Enter the Paypal Email of the customer in the text field.
-
-**Website:** Add the customer's website address.
-
-**Status:** Users can choose the "Status" of the customer as:
-
-1. Active : Enables the account, this will let the customer's calls pass through
-2. Inactive: Disables the account, all calls will be blocked
-3. Pending Approval: When a customer signs up it will be listed under pending approval, setting pending approval won't let the calls        pass through.
-
-**Debit Limit:**  You can set the debit limit on this field, this is usually done for postpay customers.
-
-**Minimum Payment** You can set the minimum topup payment from this field. Example $100, this will allow your customer to topup $100 & above from the customer portal.
-
-**Tax:**  You can add the Tax as a percentage, this will be calculated on the payment that gets added.
-
-**Currency:** Select the currency from the dropdown menu.
-
-**_Note:_** _You wont be able to change the account currency once the account is created._
-
-**Portal Access:**  Users will select the "Portal Access" from the options either Yes or No, selecting to NO will restrict your users to access your Customer Portal
-
-**Address:** Complete the customer's address.
+**Portal Access:**  Users can turn **Portal Access** to yes(on) or no(off).  Selecting 'no' will restrict user access to the Customer Portal
+**Address:** Complete the customer's physical address, not to be confused with email addresses.
 
 ## Delete Customers
 
-You can delete **Customers** from the list, by following the steps given below. 
-
-1. Select a **Customer** from the list.
-2.	Click on the **Delete** button.
+You can delete customers from the list by selecting them and pressing the **Delete** button.
 
 ![alt text][del-customer]
 
 ## Checking the status
 
-You can also check/filter the **Customers** by the status. 
+You can also check/filter **Customers** by status:
 
-1.	Click on the button to the right of the trash bin labelled  **"Active".**
-2.	Select an option, from the dropdown menu, against which you want to filter the customers.
-3.	Results will show up according to the selected option.
+1.	Click the button to the right of the trash bin labeled  **`Active`**.
+2.	Select a filter option from the dropdown menu.
+3.	Results will automatically arrange themselves according to the filter.
 
 ![alt text][customer-status]
 
 ## Searching Customers
 
-You can search for anything about a **Customer** by writing the query in the **Search** text field. You can search for a name, IP address, users.
+Search for **Customer** information by adding a query in the **Search** text field and clicking the search icon or pressing `Enter`.
 
 ## Editing Customers
 
-In order to edit a **Customer**, select **Customer** from the list and a new page will open up. Follow the procedure given below to edit a specific customer:
-
-1.	Click the **"Edit Customer"** button.
-2.	Edit the details and click **"Save"** button.
+Editing customers by clicking their name in the customer list, then **Edit Customer**. The screen that opens is similar to the new customer screen, except the details should already be filled.  You can edit these, and click **`Save`**.
 
 ### Main 
 
-In **Main** tab, users can view/add the customer contacts. You can also check the summary in three different forms i.e. Live/Daily/Monthly as shown in an image above.
+In the **Main** tab, users can view or add customer contacts. Summaries are available in live, daily, and monthly formats, as shown above.
 
 
 ![alt text][main-tab]
 
 ### Stats
 
-In **Stats** tab, you can view the Channels, Calls Per Second (CPS), ACD, ASR, Attempts, Codes, PDD stats, you can also filter it by the day/month of your choice.
+In the **Stats** tab, you can view items such as Channels, Calls Per Second (CPS), ACD, ASR, Attempts, Codes, PDD, and filter them by day or month.
 
 ### Routing
 
 ## Ingress Routing
 
-Under Ingress Routing you can assign a customer rate card to your customer account. 
+In **Ingress Routing** you can assign a Customer Rate Card to a customer account. 
 
-1.	Click on the **'+'** button.
-2.	Select the customer card & Fill out the details of the dialogue box. 
-3.	Press **Save** once you have completed the details.
+1.	Click on the **`+`** button.
+2.	Select the customer card and fill in the relevant details.
+3.	Press **`Save`**.
 
 The details of the dialogue box can be seen in the image below:
 
 ![alt text][ingress-routing-tab]
 
-For more information about Ingress Routing click on [Ingress Routing]
+See our [Ingress Routing] page in these for more in-depth information.
 
 ### Call Recording
 
-1. Click on Management> Customer
-2. Click on the Customer Name> Routing> Proxy Info
-3. Click on the rate card name> select enable from Recording.
+1. Click **Management**>**Customer**.
+2. Click the **Customer Name**>**Routing**>**Proxy Info**.
+3. Click the rate card name, and then select **Enable** from Recording.
 
 ![alt text][recording-1]
 
-4. The recorded files can be accessed from the file section
-5. Click on Management> File> Recording
-6. Click on the download button to download the file.
+4. Recorded files are accessed from the file section
+5. Select **Management**>**File**>**Recording**.
+6. Click the **`Download`** button to download the file.
 
 ![alt text][recording-2]
 
@@ -166,27 +145,23 @@ Details of the dialogue box can be seen below:
 
 ### Authentication
 
-Under the **Authentication** tab, there are two types of authentication as shown in the image below:
+Under the **Authentication** tab,  users can choose either IP Authentication or User/Password Authentication.
 
 ![alt text][auth]
 
-1.	IP Authentication
-2.	User/ Password Authentication
-
 #### IP Authentication
-
-1.	Click on the **'+'** button.
-2.	Enter the IP address & click save
+To set 
+1.	Click the **`+`** button.
+2.	Enter the IP address and click save
 
 ![alt text][edit-switch-basic]
 
-In **Basic** dialogue box, Users will add the IP/Hostname, Channels (in digits only) and Flow Speed (in digits only) as shown in an image above.
-In the image below, there is a description of the **Advanced** dialogue box.
+In a **Basic** dialogue box, Users can add the IP/Hostname, Channels, and Flow Speed in numeric digits, as shown in an image above. In the image below, there is a description of the **Advanced** dialogue box.
 
 ![alt text][edit-switch-advance]
 
-1.	You can select the codecs if you wish.
-2.	Enter the switch Manufacturer and Version of your customer in the respective text field.
+1.	Select the codecs.
+2.	Enter the switch manufacturer and Version of your customer in the respective text field.
 3.	Select the SIP Protocol, Port and Dial Pattern.
 4.	Optionally you can add CLI Prefix.
 5.	Enter the Tech Prefix, Strip Digits and Bandwidth in digits only.
@@ -198,7 +173,7 @@ In the image below, there is a description of the **Advanced** dialogue box.
 You can set the **User/Password authentication**.
 
 1.	Click on the **'+'** button.
-2. Enter the username & password & click save.
+1. Enter the username & password & click save.
 
 ![alt text][user-pwd-auth]
 
@@ -281,29 +256,29 @@ You can assign **DID** in an account by following these steps:
 
 You are able to add the customer package and its quantity for their ease in just one click.
 
-1.	Click on the **‘+’** button.
-2.	Fill out the details of the dialogue box which includes: Package name and quantity in digits and also check or uncheck the Auto Decrement Credit as shown in the image below. Auto decrement will debit the package amount from the customer account depending on the quantity.
+1.	Click the **`+`** button.
+2.	Fill in the dialogue box with relevant details.  Checking **Auto Decrement** will debit the package amount from the customer account depending on the quantity.
 3.	Press **Save** button.
 
 ![alt text][customer-package]
 
-You can also choose the package duration, the quantity, the cost and the frequency by clicking on the drop down arrow in the Package box. 
+You can also choose package duration, quantity, cost, and frequency by clicking the drop down arrow in the Package box. 
 
 ![alt text][customer-package1]
 
 
 ## Contacts
 
-1. Click on Management> Customers
-2. Click on the customer name
+1. Click **Management**>**Customers**.
+2. Select a customer from the list.
 
    ![alt text][customer]
 
 3. Enter the contact name.
-4. Enter the Email address. This email address will be used for login.
-5. Check the Auto generate password box if you would like the password to be generated online and the generated password will be sent via email. Unchecking the box will let you manually set the password.
-6. You may enter any information on **public** notes. These notes will be displayed on the customer portal when logged in. The **private** notes will only display on the control panel. These notes will **not** be displayed on the customer portal.
-7. Click Save
+4. Enter the email address used to log in.
+5. Check the **Auto Generate Password** box to have a password generated online and sent via email. Unchecking the box will let you manually set the password.
+6. You may enter any information on **public** notes. These notes will be displayed on the customer portal when logged in. Private notes will display in the control panel. 
+7. Click **`Save`**.
 
  ![alt text][contacts-2]
  
