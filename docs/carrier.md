@@ -1,33 +1,30 @@
 # Table of Contents
 
-* [Table of Contents](#table-of-contents)
-* [Carrier Management](#carrier-management)
-    * [Adding New Carrier](#adding-carrier)
-    * [Deleting Carriers](#deleting-carriers)
-    * [Checking the Status](#checking-the-status)
-    * [Searching Carrier](#searching-carrier)
-    * [Customizing the View](#customizing-the-view)
-    * [Edit Carrier](#edit-carrier)
-         * [Stats](#stats)
-         * [Reply-Management](#reply-management)
-         * [Authentication](#authentication)
-         * [Latest Calls](#latest-calls)
-         * [Failover](#failover)
-         * [Payment](#payment)  
-         * [CDR](#cdr)  
-         * [DID](#did)  
-         * [Alerts](#alerts)  
-    * [Code Consistency](#code-consistency)
-    * [Consecutive Failures](#consecutive-failures)
-    * [Special Considerations](#special-considerations)
+- [Table of Contents](#table-of-contents)
+- [Carrier Management](#carrier-management)
+    - [Adding Carrier](#adding-carrier)
+    - [Deleting Carriers](#deleting-carriers)
+    - [Checking The Status](#checking-the-status)
+    - [Searching Carrier](#searching-carrier)
+    - [Customising The View](#customising-the-view)
+    - [Edit Carrier](#edit-carrier)
+        - [Stats](#stats)
+        - [Reply Management](#reply-management)
+        - [Authentication](#authentication)
+        - [Latest Calls](#latest-calls)
+        - [Failover](#failover)
+        - [Payment](#payment)
+            - [CDR](#cdr)
+        - [DID](#did)
+        - [Alerts](#alerts)
+    - [Code Consistency](#code-consistency)
+    - [Consecutive failures](#consecutive-failures)
+    - [Special Considerations](#special-considerations)
 
 
 # Carrier Management
 
-Carriers can be easily and efficiently managed with the help of **Connex.** **Connex** allows you to not only add, edit and delete carriers but also lets you view the columns you want to see. 
-
-To go to the **Carrier**,you can expand the **_Management_** tab from the left pane and select **"Carrier".**
-
+**ConnexCS** allows for simplified carrier management through the **Carrier Management** tab. Here, you can add, modify, and delete carriers. **Carrier** is found in the **Management** tab, four horizontal lines beneath the **Home** icon in the dashboard:
 
 ![alt text][carrier-list]
 
@@ -35,45 +32,45 @@ To go to the **Carrier**,you can expand the **_Management_** tab from the left p
 
 ![alt text][add-carriers]
 
-You can add new **Carriers** by following the simple procedure.
+To add carriers:
 
 1. Click the **'+'** button.
-2. Enter the details of the **carrier.**
-3. Click the **Save** button when all the details are entered properly.
+2. Enter relevant carrier details.  A description of these atrributes can be found below.
+3. Click **`Save`**.
 
-Figure: The dialog box for adding the **Carrier.**
+Figure: A **Carrier** dialogue box.
 
 ![alt text][carrier-details]
         
-The brief description of fields present in the above form, is given below:
+New carrier fields:
         
-**Carrier Name:** Here add the name of your Carrier.
+**Carrier Name:** Enter a unique name for the carrier.
 
-**Channels:** Please add the number of channels (Ports) required in digits only. Setting this to ZERO will allow unlimited channels.
+**Channels:** Add the number of channels (ports) in numeric digits. Set this to ZERO for unlimited channels.
 
-**CPS:** You can add the number of "Calls Per Second" but in digits only.
+**CPS:** Enter the carrier's max allotted calls-per-second.
 
-**PayPal Email:** Please add the "PayPal Email" of your **Carrier.**
+**PayPal Email:** Enter the PayPal e-mail associated with the carrier's account.
 
-**Website:** Here add the Website address of your Carrier.
+**Website:** Add the carrier's official website.
 
-**Portal URL:** Add the Portal URL for your carrier in this field. eg:portal.yourcarrier.com 
+**Portal URL:** Enter the carrier's portal URL, eg: portal.yourcarrier.com 
 
-**Portal Username:** Please enter the Portal Username. This could be either your email address or user name.
+**Portal Username:** Add a unique name for the portal.
 
-**Portal Password:** Enter the password you use for logging into your carrier portal.
+**Portal Password:** Enter the password used to sign in to the carrier portal.
 
-**Portal Access:** Here you need to choose either Yes or No from the drop down menu to allow your carrier to access the portal.
+**Portal Access:** Decides if the current carrier has access to the portal.
 
-**Status:** You can set/select the "Status" of the your **Carrier.** here. The Status dropdown menu options are:
+**Status:** The carrier's status.  A drop-menu contains the following options:
 
-1. Active - your carrier is available to process the calls.
-2. Inactive - your carrier is disabled.
-3. Pending Approval - means that you are waiting for acceptance from your carrier at which point they can then be set to either of the      two options.
+*  **Active** - carrier available to process calls.
+*  **Inactive** - carrier will not process any calls.
+*  **Pending Approval** - carrier is undergoing a verification process, but their credentials are in the system.  
 
-**Currency:** Here you need to choose your preferred "Currency" from the dropdown menu options.
+**Currency:** Choose the relevant currency for each carrier's country.
 
-**Address:** You need to add the "Address" of your **Carrier** including country and postcode/ZIP code.
+**Address:** Add the carrier's address,  including country and postcode/ZIP code.
 
 **First Reply Timeout:** This is the length of time that you give for the carrier to respond after the **first invite**. Default value     is set to 30 seconds.
 
@@ -83,136 +80,117 @@ The brief description of fields present in the above form, is given below:
 
 ## Deleting Carriers
 
-You can also delete the existing **Carriers** from the list if you want to. 
+The following explains how to delete existing **Carriers**:
 
-1. Select the **Carrier** from the list by check marking the entire row.
+1. Select a carrier from the list using its checkbox.
 
-2. Click on the **Delete** button, i.e. trash icon.
+2. Click the trash bin icon, which is the delete button.
 
 ## Checking The Status
 
 ![alt text][carriers-sorting]
 
-If you need to check/alter the status of the **Carriers.** 
+This screen is for checking carrier information.
 
-1. Click on the button named **Active.**
-2. Select an option from the dropdown menu.
-3. Results will show up according to the selected option.
+1. Click the **`Active`** button.
+2. Select an option from the dropdown menu to filter results.
+3. Display will change automatically according to your selection.
 
 ## Searching Carrier
 
-If you have to search for any information about a **Carrier** you can write a query in the **Search** text field.
+The search box on the Carrier Management screen is for finding specific information among your carrier listings.
 
 ## Customising The View
 
-You can customize the view of your **Carriers** page and select only the columns which you want to view.
-On the extreme right, click on the menu button, and check the columns you want to view.
+The **Carriers** can be customized to display to display certain columns and omit others.  Click the menu button on the extreme right and use the checkboxes to turn columns on or off.
 
 ## Edit Carrier
 
-In order to edit a **Carrier**, select a **Carrier** from the list. A new page will open. Follow the procedure given below:
+To edit **Carriers**, select an entry from the list, and follow the procedure on the next page:
 
-1. Press the **"Edit Carrier"** button.
-2. Edit the details and press **"Save"** button.
-See below:
+1. Press the **`Edit Carrier`** button.
+2. Edit the details as needed, and then press **`Save`**.
 
 ![alt text][carrier-dashboard]
 
 ### Stats
 
-You can view various stats by clicking on the tab “Stats”.
+You can view carrier-related statistic by clicking **Stats** tab.
+
 ![alt text][carrier-stats] 
 
 ### Reply Management
 
-There is a special module in Connex for replying efficiently and that is Reply Management.
-There are codes on the basis of which action and responses are set. You can customize your responses too.
- 
-Choose the “Replace” radio button and then “New Code” and “New Reason” field would appear. Here, choose a code and fill the reason of your choice.
+**Reply Management** is a module that allows for efficient message and response system. Actions and their responses are set according to codes, and these responses can also be customized. 
+
+To edit reply codes, select the **Replace** radio button, prompting the **New Code** and **New Reason** fields to appear. After that, choose a code from the list and enter a reason.
 
 ![alt text][carrier-reply] 
  
 ### Authentication
 
-You can add your Carrier IP address in this
+Carrier authentication uses IP addresses to allow or disallow attemps to access service.
 
 ![alt text][carrier-authentication] 
  
-You can also add new IP for authentication, by clicking on the “+” sign on the extreme right. 
+Add new authorized IP addresses by clicking the **`+`** button on the right.
 
 ![alt text][carrier-ip-1] 
  
-Add the details into the Basic and Advanced tabs to complete the addition of authenticated IP. Then click 'Save'.
+Add details in the **Basic** and **Advanced** tabs to complete the IP's entry. Then click **`Save`**.
 
 ### Latest Calls
 
-“Latest Calls” is the tab next to Authentication. Here you can find all the calls you have made, lately.
- 
-You can simulate a call too by clicking the green button, labelled “Simulate”.
+The **Latest Calls** tab (next to Authentication) is a log of the latest calls to pass through a given system. You can also simulate a call by clicking the green **`Simulate`** button.
 
 ![alt text][carrier-calls] 
 
 ### Failover
  
- “Failover” are the calls which were not made successfully. A list of failover calls is shown in this tab.
- 
+The **Failover** tab lists information about unsuccessful calls.
+
 ![alt text][carrier-failover] 
  
 ### Payment
 
-“Payment” tab lets you see all the payments made so far. You can add a new payment by clicking on the “+” sign.
- 
-Fill in the payment information and click “Save”.
+The **Payment**  tab shows payments made to date. Add a new payment by clicking **`+`**, fill in the payment information,and the click **`Save`**.
 
 ![alt text][carrier-payment] 
  
 
 #### CDR
 
-“CDR” tab lets you check all your CDRs. You can also recalculate a CDR for a specific month by entering the dates and clicking on “Recalc CDR”.
+The **CDR** tab displays call drop rates. Recalculate CDRs for a specific month by entering the dates and clicking **`Recalc CDR`**.
 
 ![alt text][carrier-cdr] 
  
 ### DID
 
-“DID” tab lets you check your list of DIDs.  You can add a new DID by clicking on the “+” on the extreme left.
- 
-After adding the details, remember to click “Save”.
+The **DID** tab displays a list of DIDs.  New entries are added with the **`+`** on the left. After adding details, click **`Save`**.
 
 ![alt text][carrier-did]
 
 ### Alerts
 
-The last tab is the "Alerts" tab. It allows you to generate alerts to your customers when some specific events are triggered. You can view all your alerts by clicking on this tab.
-
-You can also add a customised alert by clicking on the "+" sign.
+The **Alerts**  tab lets you create, manage, and remove alerts that fire when specific events are triggered. See the [Alerts](Alerts.md ) page for details on how to manage them.
 
 ![alt text][carrier-alert-1]
-
-You need to give the alert a name such as: Low Balance Alert,
-
-Next select the email address or phone number to whom you wish the alert to go to,
-
-The Area is the place that is being monitored ie Balance,
-
-The Operator is the comparitor to which the threshold is compared. If the Operator is set to eg >$50 and the Threshold is set to $50 then the Alert will be triggered and sent out to the recipient.
-
-Click "Save" and a new alert will be created.
 
 ![alt text][carrier-alert-2]
 
 ## Code Consistency
 
-This measures the changes of response codes on the SAME number that have been returned from the carrier. It is useful for identifying if the carrier is using routes of different quality or generally poor quality overall. Good carriers will have a 100% code consistency.
+Code consistency measures changes to response codes on numbers returned from the carrier. It is useful for identifying routes of varying or poor quality. Effective carriers try to maintain 100% code consistency.
 
-The metric only takes into account 200 and 404's.
+The metric considers 200 and 404s.
 
 ## Consecutive failures
-The consecutive failures system is a primitive way of measuring the ability of a carrier to connect calls, once a call connects the counter is reset and once a call fails the counter is incremented by one.
-This can lead to a false positive if the customer is sending a lot of missed call traffic or calling bad numbers, however in general the counter is one of the quickest ways to establish when a route is failing.
+Consecutive failures is a primitive way to measure a carrier's ability to connect calls. Once a call connects, the counter resets; if it fails, the counter is increased by one.  
+
+Note that this mechanic can show false positives if the customer sends missed call traffic or calls wrong numbers.  The counter is a quick way to see if a route is failing rather than a comprehensive success monitor.
 
 ## Special Considerations
-_Bandwidth.com_ have diverged from the SIP spec and expose an internal IP address which is required to be presented in sequential requests. To ensure compatibility set the switch manafacturer to ```bandwidth.com```
+**Bandwidth.com** has diverged from the SIP spec and exposed an internal IP address required for sequential requests. To ensure compatibility, set the switch manafacturer to `bandwidth.com`.
 
 
 

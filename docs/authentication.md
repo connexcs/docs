@@ -1,46 +1,47 @@
 # Table of Contents
 
-* [Table of Contents](#table-of-contents)
-* [Authentication Methods](#authentication-methods)
-   * [UAC](#uac)
-      * [Username and Password](#username-and-password)
-      * [IP Authentication](#ip-authentication)
-      * [Multiple Customers Per IP](#multiple-customers-per-ip)
-   * [UAS](#uas)
-      * [Username and Password Authentication](#username-and-password-authentication)
-   * [ConnexCS Independent Considerations](#connexcs-independent-considerations)
-      * [Additional Security](#additional-security) 
+- [Table of Contents](#table-of-contents)
+- [Authentication Methods](#authentication-methods)
+    - [User Acces Control (UAC)](#user-acces-control-uac)
+        - [Username and Password](#username-and-password)
+        - [IP Authentication](#ip-authentication)
+        - [Multiple Customers Per IP](#multiple-customers-per-ip)
+    - [UAS](#uas)
+        - [Username / Password with Upstream Providers](#username--password-with-upstream-providers)
+    - [ConnexCS Independent Considerations](#connexcs-independent-considerations)
+        - [Additional Security](#additional-security)
 
 # Authentication Methods
 
-ConnexCS supports 2 methods of authentication including User / Pass in UAS mode.
+ConnexCS supports two methods of authentication: **Username/Password** in UAS mode and **IP Authentication**.
 
-## UAC
+## User Acces Control (UAC)
 _Authentication from user / customers_
 
 ### Username and Password
-Username & Password authentication is supported on the ConnexCS platform. You can allow a customer to use this method of authentication with the following steps:
+Username & Password authentication is supported on the ConnexCS platform. Follow these steps to allow it for your customers:
 
-1. Click on customer and select the customer name you wish to add authentication for.
-2. Click on the Authentication Tab.
-3. In the right panel in the **User/Password Authentication** click on the blue plus.
-4. Complete the Username & Password Box
-5. Optionally you can also select: 
-    * Channel Limit
-    * CPS Limit
-    * Codec Restriction
-    * Prefix to be added to dialled number
-    * Strip Digits to be removed from dialled number
-    * CLI Prefix to be added to received CLI
+1. Click **customer** and select the customer's name that needs authentication.
+2. Click on the **Authentication** tab.
+3. In the right panel, select the blue `+` (plus icon) in **User/Password Authentication**.
+4. Fill out an original Username and Password in the designated boxes.
+5. Note that in this screen you can also manage:
+    * Channel Limits
+    * CPS Limits
+    * Codec Restrictions
+    * Prefixes
+    * Strip Digits
+    * CLI Prefixes
+
 
 ### IP Authentication
 IP authentication is supported on the ConnexCS platform. You can allow a customer to use this method of authentication with the following steps:
 
-1. Click on customer and select the customer name you wish to add authentication for.
+1. Click **customer** and select the customer name you wish to add authentication for.
 2. Click on the Authentication Tab.
 3. In the left panel in the **IP Authentication** click on the blue plus.
 4. Complete the IP Address Box, you may also enter multiple IP addresses 1 per line
-5. Optionally you can also select: 
+5. Note that in this screen you can also manage: 
     * Channel Limit
     * CPS Limit
     * Codec Restriction
@@ -53,23 +54,22 @@ ConnexCS Supports multiple customers per IP when using IP Authentication. To ens
 ## UAS
 _Authentication from the ConnexCS server against providers_
 
-When sending calls out, as there is no action required on ConnexCS part, IP Authentication will work.
+No action is required on ConnexCS's part for outgoing calls; IP Authentication will work.
 
-### Username and Password Authentication
-ConnexCS supports Username / Password Authentication against upstream providers. You can add an upstream provider and instruct ConnexCS to respond to `407 Proxy Authentication Required` by using the following method:
+### Username / Password with Upstream Providers
+ConnexCS supports Username / Password Authentication against upstream providers. You can add an upstream provider, and instruct ConnexCS to respond to `407 Proxy Authentication Required` using the following method:
 
-1. Click on carrier and select the carrier name you wish to add authentication for.
-2. Click on the Authentication Tab.
-3. In the left panel in the **IP Authentication** click on the blue plus.
-4. Complete the IP Address Box, you may also enter multiple IP addresses 1 per line
-5. Click on Advanced and complete the Username & Password Boxes
+1. Click **carrier**, and select the carrier's name.
+2. Click the **Authentication** Tab.
+3. In the left panel, select the blue `+` (plus icon) for **IP Authentication**.
+4. Type an IP address into the box labeled as such.  Multiple IPs per line is acceptable.
+5. Click **Advanced** and complete the Username and Password Boxes
 
 ## ConnexCS Independent Considerations
 
-Username / Password Authentication is the prefered method of authorisation for end user devices & systems which have dynamic IP addresses.
-IP Authentication is prefered if a static IP is available and with any PBX or other SIP Servers.
+Username / Password Authentication is the prefered authorization method for end-user devices and systems which have dynamic IP addresses. IP Authentication is preferred if a static IP address is available, and with any PBX or other SIP Servers.
 
-When authenticating with Username/Password Authentication the initiating server must first send an attempt without any authorisation headers. This is replied to with a `407 Proxy Authentication Required` (this does not mean that there is an error that needs fixing, this is just part of the SIP protocol). This response that contains a _nonce_, this is a random value which is used as salt with a hash and sent on a second `INVITE`, the server using the same _nonce_ creates its own hash and checks for a match. This process ensures that the username and password are compared without actually exchanging the username and password, the _nonce_ ensures that a repeat attack can't happen. This process causes some overhead as packets (with retransmissions) and additional cache hits. This is why the prefered method of authentication between carriers is by IP.
+Before it authenticates with Username/Password Authentication,the initiating server must send an attempt without any authorization headers. The reply is `407 Proxy Authentication Required`, but this doesn't mean there's an error, as this is part of the SIP protocol. The response that contains a _nonce_ is a random value used as salt with a hash and sent on a second `INVITE`, and the server using the same _nonce_ creates its own hash and checks for a match. The process compares the username and password without actually exchanging them, and the _nonce_ eliminates the possibility of a repeat attack. There will be some overhead in the form of packets with retransmissions and additional cache hits, however, so the prefered method of authorization between carriers is still IP authentication.
 
 ### Additional Security
-Although there are other mechanisms for prevention of this. UDP packets (which SIP uses) can be spoofed. Sometimes a tech prefix is used not only for route disambiguation but also as a private shared identifier for an additional level of security.
+Be warned that the UDP packets that the SIP uses can be spoofed.  ConnexCS used tech prefixes for route disambiguation, and as a private shared identifier for additional security.

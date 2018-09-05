@@ -1,37 +1,36 @@
 # Table of Contents
 
-* [Table of Contents](#table-of-contents)
-* [ScriptForge](#scriptforge)
-    * [Language](#language)
-    * [Memory](#memory)
-    * [CPU (Time Limit)](#cpu-time-limit)
-    * [Durability](#durability)
-    * [Scalability](#scalability)
-    * [Functionality](#functionality)
-    * [API](#api)
-    * [Libraries](#libraries)
-        * [Lookup](#lookup)
-        * [Send](#send)
-    * [Examples](#examples)
-        * [Random CLI](#random-cli)
-        * [Checking a DNC List](#checking-a-dnc-list)
-        * [Performing an ASRPlus Lookup](#performing-an-asrplus-lookup)
-	* [Creating a New Script](#creating-a-new-script)
-	* [Assigning the Script to a customer](#assigning-the-script-to-a-customer)
+- [Table of Contents](#table-of-contents)
+- [ScriptForge](#scriptforge)
+  - [Design Considerations](#design-considerations)
+    - [Language](#language)
+    - [Memory](#memory)
+    - [CPU (Time Limit)](#cpu-time-limit)
+    - [Durability](#durability)
+    - [Scalability](#scalability)
+    - [Functionality](#functionality)
+  - [API](#api)
+  - [Libraries](#libraries)
+    - [Lookup](#lookup)
+    - [Send](#send)
+  - [Examples](#examples)
+    - [Random CLI](#random-cli)
+    - [Checking a DNC List](#checking-a-dnc-list)
+    - [Performing an ASRPlus Lookup](#performing-an-asrplus-lookup)
+  - [Creating a new script](#creating-a-new-script)
+  - [Assigning the Script to a customer](#assigning-the-script-to-a-customer)
 
 
 # ScriptForge
-The **ScriptForge** allows you to write your own applications which can be run at specific events in the system, currently the following places support scripting functionality:
+The **ScriptForge** allows you to write applications that run during specified events in a system. 
 
-* Routing Engine (runs in line of the call setup process)
-
-Requests to your application are processed via a messaging bus and will be queued if your application cannot process them fast enough. If you run your application in the routing engine you must ensure that it can complete quickly so as not to induce high PDD.
+Currently, scripting functionality is supported in the routing engine, where it runs alongside the call setup process.  Requests to your application are handled with a messaging bus, and they will be queued if an application can't process them fast enough.  Applications that run in the routing engine must be completed quickly to avoid high PDD.
 
 ## Design Considerations
 
 ### Language
 
-ScriptForge currently supports Java script (ECMA6)
+ScriptForge currently supports JavaScript ES6 (also known as ECMAScript 6 or ECMA6).  
 
 ### Memory
 
@@ -39,30 +38,27 @@ For speed enhancement variables in your application may be present between messa
 
 ### CPU (Time Limit)
 
-There are no hard CPU restrictions on your application, however its run time is limited (default 2 seconds).
+There are no hardcoded CPU restrictions placed on any applications, though its run time is limited to two seconds by default.
 
 ### Durability
 
-If a message is not processed in time or fails half way through processing, it will be reset to the unconsumed state and will be available for further processing. A message should never be lost.
+If a message is not processed in time or fails duing processing, it will reset to an unconsumed state, making it available for further processing.  This mechanic is in place to eliminate lost messages with redundancy.
 
 ### Scalability
 
-Your application may run across multiple zones (data centres) and by default is allowed 1 process per script.
-
-If your application is intensive and/or you need to scale further please contact us to arrange more resources to be dedicated to your application.
+Applications can run across multiple zones or data centers. By default, one process is allowed per script.  If you find your application is too intensive or having difficulty scaling to business requirements, greater resource allocation may be required.  
 
 ### Functionality
 
-Your programming environment is locked down for security reasons, but we provide classes/helpers to achieve greater functionality, you can find out more about them in the Knowledge Base.
+Programming environments are locked down to preven human error from changing too much, but we provide classes and help agents to assist clients with more specific functionality. Also, the Knowledge Base contains information about leveragingthis availability.
 
 ## API
 
-Code will start in the `main()` function
-Execution will be marked as complete when the `exit(response)` function is called, response is the variable that will be returned to the instantiating system.
-If you wish to do the equivalent of throwing an exception, you can call the `err();` which takes a single parameter for example `[404, "Not Found"]`
-Variables can be made available through the `vars()` function.
+API code starts in the `main()` function, and 
+execution will be marked as complete when `exit(response)`  is called.  Response is the name of the variable that returned to the instantiating system.
 
-A basic routing application will look something like this:
+To perform the equivalent of an exception,  call `err();`, which takes a single parameter, such as `[404, "Not Found"]`.
+Variables are made available through the `vars()` function. This is an example of a basic routing application:
 
 ```
 function main(){
@@ -72,13 +68,13 @@ function main(){
 ```
 
 
-ScriptForge as default is designed to process 1 concurrent execution per server. It is therefore important to execute `exit()` as soon as possible as the server will be blocked until this operation completes. It is also important to ensure that there are no other branches of your code executing after the `exit()` has been called as this will slow down subsequent requests and could also cause unexpected termination & time outs of subsequent requests.
+ScriptForge  is designed to process one concurrent execution per server by default. It is important to execute `exit()` as soon as possible, since the server is blocked until this operation completes. It is also important to make sure there are no other branches of code executing after `exit()`, as this slows down requests, and can causes unexpected termination and time outs for future requests.
 
 ## Libraries
-This section is lightly documented, if you have any questions please ask us.
+As JavaScript libraries are quite extensive and thus outside the scope of this documentation, we have covered only the basics here. More information about intermediate use of libraries is available to our clients on request, however.
 
 ### Lookup
-All functions return a promise which contains an object with the same key values pairs as can be found here: https://api2.connexcs.com/
+All functions return a promise that contains an object with the same key values pairs found here: https://api2.connexcs.com/
 
 ```
 api.lookup.asrplus(number);
@@ -113,7 +109,7 @@ function main(vars){
  
 ### Checking a DNC List
 
-You can upload your own number lists for Do-not-Call, or white lists in the User Space Database inside the main system. You can then query it from ScriptForge.
+You can upload number lists for Do-not-Call or white lists in the User Space Database inside the main system.  These lists can then be queried from ScriptForge.
 
 ```
 function main(vars){
@@ -129,7 +125,7 @@ function main(vars){
 
 ### Performing an ASRPlus Lookup
 
-ASRPlus is a ConnexCS feature for reducing unecessary attempts and providing faster fails on calls. It's most suitable for agressive call-center traffic profiles.
+ASRPlus is a ConnexCS feature for reducing unecessary attempts and providing faster fails on calls. It is most suitable for agressive call-center traffic profiles.
 
 ```
 function main(vars){
@@ -150,48 +146,39 @@ function main(vars){
 
 You can customize your script in the new functionality of Connex and also can assign it to a specific customer. Follow the simple steps to do so.
 
-1. Login to your Connex account and from the side menu select “Script Forge”.
+1. Login to your Connex account, and select  `Script Forge` from the side menu.
 
  ![alt text][side]   
  
-2. Now, add your own script by clicking on **“+”** button.
-
- ![alt text][side-1]    
- 
-3. Fill in the name of your script and click on “Save”.
+2. Add your own script by clicking **`+`**.
+   
+3. Fill in the script's name abd type, then click **`Save`**.
 
  ![alt text][s2]   
  
-4. Now, select your script from the list and click on it.
-
- ![alt text][s3]   
+4. Select your script from the list.
  
-5. Enter the code of your script and click the arrow next to “Save and Restart”. From the drop down menu, select “Save” and then click on “Start”.
+5. Enter the code of your script and click the arrow next to **`Save and Restart`**. From the drop down menu, select **`Save`** and then click **`Start`**.
 
  ![alt text][s4]   
  
-6. Click the “Run” button on the top. The script should show the result.
+6. Select the **`Run`** button at the top and the result will be shown onscreen.
 
-In case, the script shows error click the arrow button next to “Run” and add this:
+If script shows an error, select the arrow button next to **`Run`** and add this:
+```
 {"routing":{}}
-
-And then run the script again.
+```
+Run the script again:
 
 ![alt text][s5]
 
 ## Assigning the Script to a customer
 
-You can assign the script to a customer by selecting “Customer” from the side menu.
-
-Select a specific customer from the list by clicking on the names of customers.
-
-![alt text][s7]
-
-Navigate to “Routing” tab and select a rate card from the table.
+You can assign scripts to customers by selecting **`Customer`** from the side menu.  Select a specific customer from the list by clicking on the names of customers, and navigate to the **Routing** tab and select a rate card from the table:
 
 ![alt text][s8]  
  
-A form will open named “Route Ingress”, find the “ScriptForge” field and select the script you just created. Click on “Save” when you are done.
+A form will opens called **Route Ingress**. Find the **ScriptForge** field, select your custom script from the list, and then **`Save`**.
  
 ![alt text][s9] 
  

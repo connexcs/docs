@@ -1,172 +1,132 @@
 # Table of Contents
-* [Table of Contents](#table-of-contents)
-* [Calling Card](#calling-card)
-  * [Manage Calling Card](#manage-calling-card)
-     * [Generate New](#generate-new)
-     * [Edit a Card](#edit-a-card)
-     * [Delete a Card](#delete-a-card)
-     * [Refresh List](#refresh-list)
-  * [Manage SIP Devices](#manage-sip-devices)
-     * [Add Device](#add-device)
-     * [View and Edit Device](#view-and-edit-device)
-     * [Delete a Device](#delete-a-device)
-     * [Search Device](#search-device)
-     * [Refresh Device List](#refresh-device-list)
-     * [Manage Columns](#manage-columns-1)
+- [Table of Contents](#table-of-contents)
+- [Calling Card](#calling-card)
+  - [Mobile Application](#mobile-application)
+    - [Provisioning Strategy](#provisioning-strategy)
+    - [Top-up](#top-up)
+- [Make Your Own](#make-your-own)
+  - [Managing Calling Cards](#managing-calling-cards)
+    - [Generate New](#generate-new)
+    - [Edit a Card](#edit-a-card)
+    - [Delete a Card](#delete-a-card)
+    - [Refresh List](#refresh-list)
+  - [Manage SIP Devices](#manage-sip-devices)
+    - [Add Device](#add-device)
+    - [View and Edit Device](#view-and-edit-device)
+    - [Delete a Device](#delete-a-device)
+    - [Search Device](#search-device)
+    - [Refresh Device List](#refresh-device-list)
+    - [Manage Columns](#manage-columns)
 
 
 # Calling Card
 
-A [calling card](https://en.wikipedia.org/wiki/Telephone_card) is a way of pre-allocating credit and configuration to a short unique identification method (e.g. a PIN Code).
+A [calling card](https://en.wikipedia.org/wiki/Telephone_card) is a way to pre-allocate credit and configuration data to a short, unique identification method, like a PIN code.
 
-As **ConnexCS** is a class 4 switch it does not have IVR menu's required to access number configuration. Therefore currently calling cards are only available as a Mobile Phone Application.
+**ConnexCS** is a Class 4 switch, so it is without the IVR menu's required to access number configuration. Currently, calling cards are only available as a mobile phone application.
 
 ## Mobile Application
-In **ConnexCS** calling cards can be created in bulk and assigned with credit and routing configuration.
+In **ConnexCS**, calling cards are created in bulk, and then assigned with credit and routing configuration.
 
 ### Provisioning Strategy
-The ConnexCS Mobile Dialler application (aka: name pending), can be downloaded from [url] and is white-labelled.
+The white-labeled ConnexCS Mobile Dialler application can be downloaded from [url]. 
 
-Once a provisioning code is entered the app will make a request to our servers to download 2 pieces of information:
+Once a provisioning code is entered, the app  requests two pieces of information from our servers:
 - Branding information for the providing company.
 - Provision information to auto-setup credentials.
 
 ### Top-up
-Inside the application will be a HTML Browser which will connect to your pre-setup ConnexCS Portal. Here regular payment options will be available for topup.
+In the application, an HTML Browser connects to a pre-setup ConnexCS Portal, where regular payment options are available for top-up.
 
 # Make Your Own
-Remember ConnexCS has a full API for both Users and your Customers. If you already have a softphone integration it can be integrated with ConnexCS API with end user credentials.
+Remember, ConnexCS has a full API for users and customers, and softphone an be integrated with ConnexCS API with end user credentials.
 
-From dashboard, expand the Management tab and look for Calling Card.
+From the dashboard, expand the Management tab and look for Calling Card. This module allows lets you manage calling cards and SIP devices. 
 
 ![alt text][cc-1]
 
-This module allows you to perform following actions:
-1)	Manage calling cards
-2)	Manage SIP devices
-
-Let’s discuss each one of the above in more detail.
-
 ## Managing Calling Cards
 
-When you have to manage your calling cards, what you can do is:
-
-a)	Generate a new card
-b)	Edit a card
-c)	Delete an existing card
-d)	Refresh the list
-e)	Manage columns
+The following is a list of available actions in the calling card management screen, with explanations about how they work.
 
 ### Generate New
 
-To generate a new calling card;
-1.	Click on "'+'" button, as highlighted in the image below.
-
-![alt text][cc-2]
-
-2.	A new modal would open to provide the required info.
+Generates a new calling card.  To begin:
+1.	Click the **`+`** button.  An entry form open as shown below, requesting customer information.
 
 ![alt text][cc-3]
 
-Here,
-
-•	Any customer that exists in the database can be selected from the "Customer" dropdown.
-•	While generating the card, its status can be set on the go as available, used, or disabled. Each status has its own assigned colour.
-
-3.	When the required info is provided, click on "Save" button.
-
-You are all set with generating a new card.
+2.	The **Customer** box is a dropdown windown that lists available customers for the current system. Note the red asterisk that indicates it is the only required field to save a calling card.   
+3. **Credit** is 
+4. The **Count** is 
+5.	A card's **Status** can be set to available, used, or disabled, and each status has its own assigned colour.
+6. Click **`Save`**. 
 
 ### Edit a Card
 
-To edit any card;
-1.	Select any desired row and click on "Edit Selected Rows" button.
-
-![alt text][cc-4]
-
-2.	A new modal will open to edit the desired info.
-3.	Once you are done with editing, click on "Save" button to save the entries.
+Edits existing calling cards.  To edit a calling card:c
+1.	Select a row and click **`Edit Selected Rows`**. An entry form opens to allow parameter edits.  Note that **Count** can no longer be changed.
+3.	Click **`Save`**.
 
 ![alt text][cc-5]
 
-Note: Multiple rows can also be selected and edited accordingly, in one go.
-
 ### Delete a Card
 
-To delete an existing card;
+Deletes an exiting card.  To complete this action:
 
-1.	Select the desired row to complete the action and click on trash icon.
+1.	Select the desired row and click the trash bin icon.
 
 ![alt text][cc-6]
 
 ### Refresh List
 
-To refresh the list of calling cards, click on “Refresh” button to get the updated list.
+Provides an updated list of calling cards, ensuring recent changes are presented.  To enact, simply click **`Refresh`**.
 
 ![alt text][cc-8]
 
 ## Manage SIP Devices
 
-To manage SIP devices, the following actions can be performed.
-a)	Add a device
-b)	View and edit a device
-c)	Delete a device
-d)	Search devices
-e)	Refresh the list
-f)	Manage columns
+The following is a list of available actions in the SIP Device Management screen.
 
 ### Add Device
 
 To add a new SIP device:
-1)	Click on sip devices button under calling card.
-
-![alt text][cc-9]
-
-2)	Click on ‘+’ button.
-
-![alt text][cc-10]
-
-3. A form will open. Select the customer for whom the device is to be added, enter the rest of information and click on Save button.
+1.	Click the **`sip devices`** button.
+2.	Click the **`+`** button.
+1. A form will open. Select a customer and enter relevant information.
+2. Click **`Save`**.
 
 ![alt text][cc-12]
 
-A new device for that particular customer will be saved.
-
 ### View and Edit Device
-
+Lets you view and edit device information, including the addition of device lines.
 1)	To view a device, select any device
-2)	A form will open. Click on Edit button.
+2)	Select the **`Edit`** button from the form that opens.
 
 ![alt text][cc-13]
 
-3)	On this page you can edit device information as well as can add a device line too and save accordingly.
-
 ### Delete a Device
 
-To delete a device from the list, select any row and click on trash icon.
+To delete a device from the list, select any row and click the trash bin icon.
 
 ![alt text][cc-14]
 
 
 ### Search Device
 
-To search a particular device, type in the search field and results will be filtered out.
+To search for a particular device, type its name in the search field to see filtered results.
 
 ![alt text][cc-15]
 
 ### Refresh Device List
 
-To get the most updated list of devices, click on the “Refresh” button.
+For an updated list of devices, click the **`Refresh`** button.
 
 ![alt text][cc-16]
 
 ### Manage Columns
 
-You can also manage columns and select which columns you want to see in the grid.
-
-Click on 3 horizontal lines to select the columns.
-
-Moreover, every column can be sorted separately, as shown in the image below.
+You can also manage columns, and select which columns to show on the grid by selecting the three horizontal lines.  Every column can be sorted separately:
 
 ![alt text][cc-17]   
 

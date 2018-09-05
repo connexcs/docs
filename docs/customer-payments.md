@@ -1,143 +1,139 @@
 # Table of Contents
 
-* [Table of Contents](#table-of-contents)
-* [Mass Payments with Paypal IPN](#mass-payments-with-paypal-ipn)
-  * [Mass Payments](#mass-payments)
-  * [What is PayPal IPN?](#what-is-paypal-ipn)
-    * [Inserting the IPN URL in your PayPal account](#inserting-the-ipn-url-in-your-paypal-account)
-    * [Inserting credentials in your Connex Account](#inserting-credentials-in-your-connex-account)
-    * [How to add customer PayPal Email address on ConnexCS customer account](#how-to-add-customer-paypal-email-address-on-connexcs-customer-account)
-    * [Paypal Integration](#paypal-integration)
-      * [Login to ConnexCS account](#login-to-connexcs-account)
-      * [Setting the Customer Paypal Email Address into ConnexCS](#setting-the-customer-paypal-email-address-into-connexcs)
+- [Table of Contents](#table-of-contents)
+- [Mass Payments with Paypal IPN](#mass-payments-with-paypal-ipn)
+  - [Mass Payments](#mass-payments)
+  - [What is PayPal IPN?](#what-is-paypal-ipn)
+    - [Mass Pay and Express Checkout](#mass-pay-and-express-checkout)
+    - [Configure an IPN](#configure-an-ipn)
+    - [Inserting the IPN URL in your PayPal account](#inserting-the-ipn-url-in-your-paypal-account)
+    - [Inserting credentials in your Connex Account](#inserting-credentials-in-your-connex-account)
+    - [How to add customer PayPal Email address on ConnexCS customer account](#how-to-add-customer-paypal-email-address-on-connexcs-customer-account)
+  - [Paypal Integration](#paypal-integration)
+  - [Setting the Customer Paypal Email Address into ConnexCS](#setting-the-customer-paypal-email-address-into-connexcs)
 
 
 # Mass Payments with Paypal IPN
 
 ## Mass Payments
 
-Mass Payment is a bulk payment method that allows funds to be sent by uploading a file to the Paypal site and allows the sender to pay the fees which are usually lower than standard PayPal sending fees.
-
-As there is no direct involvement with the switch when sending this payment we need to use a different strategy to receive notifications about these payments, and for that we can link into PayPal's IPN.
+Mass Payment is a bulk payment method that sends funds in an uploaded file to Paypal, allowing the sender to pay less than the standard PayPal fees using their bulk order discounts. Since this payment doesn't trigger anything a VoIP sysetem, we link into PayPal's IPN to accomodate notifications and balance sheet updates.
 
 ## What is PayPal IPN?
 
-Instant Payment Notification (IPN) is a message service that notifies you of events related to PayPal transactions. You can use IPN messages to automate back-office and administrative functions such as to top up your customer account. The customer just needs to follow the standard PayPal send money method to make payment.
+Instant Payment Notification (IPN) is a service that provides notifications about PayPal transactions. IPN messages can be used to automate bulk payment processes, where consumers still send PayPal payments as normal. For this to work, settings need to be connected on the ConnexCS control panel as well as PayPal.
 
-In order for this to work you need to configure certain settings on your ConnexCS control panel and on PayPal.
+### Mass Pay and Express Checkout
+The following lists the differences between Mass Pay and Express Checkout with PayPal, to help you decide which to use before you run the setup processes below:
 
-Difference between **Mass Pay** & **Express Checkout**
 **Mass Pay**
-- Made via a CSV upload to paypal website.
-- Lower Slightly Transaction fee's
-- Sender pays the fee's
-- If I send $100, $100 arrives and sender pays an extra 2% Transaction fee, capped at $1 per payment.
+- A CSV is uploaded to PayPal's website.
+- Slightly lower transaction fees.
+- Fees are paid by the sender.
+- Sender pays a 2% transaction fee, capped at $1 per payment.
 - Uses Paypal IPN
 
 **Express Checkout**
-- Made through customer portal
-- Standard Paypal Fee's - (about 3.4% + $0.30)
-- Receiver pays these fee's
-- If I send $100, 94.30 arrives
+- Made through customer portal.
+- Standard Paypal Fee's (about 3.4% + $0.30).
+- Fees are paid by the recipient.
+- Recipient pays fees by recieving less per transaction.
 - Uses Paypal API Signature
 
-Below are the steps to configure IPN (Instant Payment Notification).
+### Configure an IPN
+Below are the steps to configure an IPN:
 
-Login to your Connex account
-
-1. Click on Setup
-2. Choose Integrations
-
-Switch to the _API_ tab and click on _PayPal IPN_.
-
-Fill in your settings and copy the URL written beside **IPN URL**.
+1. Login to your Connex account.
+2. Click **`Setup`**.
+3. Choose **Integrations**.
+4. Switch to the **API** tab 
+5. Cick **PayPal IPN**
+6. Fill in your settings
+7. Copy the URL written beside **IPN URL**.
 
 ### Inserting the IPN URL in your PayPal account
+After you've followed the configuration steps you should have the IPN URL copied as your last item on your OS clipboard. Follow these steps to insert it into a PayPal account.
 
-Login to your Paypal Business  Account and choose Profile. 
-
-**Note**: You need to have a PayPal business account to perform this task.
-
-From the side bar menu select _My selling tools_.
-Drag down and select“Update” which is beside “Instant payment notification” that is under Getting paid and Managing my risk section.
-
-Select _Choose IPN Settings_
-Enter the URL you copied from Connex Account under the Notification URL and click <b>“Save”</b>. Fill in the settings & copy the API URL.
+1. Login to a Paypal Business Account and choose **Profile**. A PayPal Business Account--not to be confused with a regular paypal account--is required to perform this task.
+2.  From the side menu select **my selling tools**.
+3.  Select **Update** from the drop-down list.
+4.  Select **Choose IPN Settings**.
+* Enter the IPN URL under **Notification URL** and click **Save**. 
+* Fill in the settings, and then copy the API URL.
 
 ### Inserting credentials in your Connex Account
-
-Go back to your Connex account and go to Setup>>My Account. Under the tab of API, select _Add New_. A new form will open.
-
-Go back to your Paypal account and go to Profile. Select _My selling tools_ from the side menu bar.
-
-* Click on the button _Update_ beside API access which is under _Selling online_ section.
-* Click on _Request API Credentials_ which is under NVP/SOAP API integration
-* Select _Request API signature_ and click on Agree and Submit button
-
-
-A new page will open which says _View or Remove API signature_. Copy the credentials from there and press _Done_.
-Now, go back to your External API form from your Connex account and add the credential you copied from Paypal account to your Exeternal API form. Press Save when you are done.
+The following are instructions for entering the credentials you created in the previous steps back into your Connex account:
+* Return to Connex and go to **Setup**>**My Account**. 
+* Under the API tab, select **Add New** A form will open.
+* Go back to your Paypal account and go to Profile. 
+* Select **My selling tools** from the side bar.
+* Click the **`Update`** button.
+* Select **Request API Credentials** under **NVP/SOAP API integration**.
+* Select **Request API signature**, then **`Agree and Submit`**.
+* The **View or Remove API signature** page opens. Copy the credentials from this page and press **`Done`**.
+* Return to the External API form from your Connex account, and add the credentials you copied from the Paypal account there.
+* Press **`Save`**.
 
 ### How to add customer PayPal Email address on ConnexCS customer account
-
-* Click on Management> Customer> [customer name] > Edit customer
-* Enter the PayPal main email address and click save.
-* Click on Management> Customer> [customer name] > + under Contact > enter the customer PayPal email id and click save.
-* With the successful steps above your customer will be able to send/topup their account accordingly.
+The following are instructions on how to add a PayPal Email address to a ConnexCS customer account:
+* Click **Management**>**Customer**>**[customer name]**>**Edit customer**.
+* Enter the customer's main PayPal email address and click **`Save`**.
+* Click on **Management**>**Customer**>**[customer name]**>**Contact**.  
+* Enter the customer PayPal email ID and click **`Save`**.
 
 ## Paypal Integration
 
-### Login to ConnexCS account.
+These are the steps to integrate a PayPal account into a ConnexCS account.
 
-1. Click on Setup> Integrations> API.
-2. Click on Add
-3. Select PayPal IPN button.
+1. Login to Connex, then click **Setup**> **Integrations**>**API**.
+2. Click **Add**.
+3. Select the **`PayPal IPN`** button.
 
  ![alt text][paypal-2]
 
-4. Check IPN Enabled, Verify Transaction.
-5. Select Payment Types & Currencies.
+4. Check **IPN Enabled** and **Verify Transaction**.
+5. Select **Payment Types** and **Currencies**.
 6.	Copy the IPN URL.
 
  ![alt text][paypal-2b]
 
-7.	Click Save.
-8.	Login to your PayPal account.
-9.	Click “Profile”.
-10.	Find the “Instant payment notifications”, click “Update”.
+7.	Click **`Save`**.
+8.	Login to PayPal.
+9.	Click **Profile**.
+10.	Find **Instant payment notifications** and click **Update**.
 
  ![alt text][paypal-3]
  
-11.	Go back to ConnexCS Account 
-12. Click on Setup -> Integrations
-13. API -> Add> PayPal
-
+11.	Return to ConnexCS.
+1.  Select **Setup Integrations**.
+2.  Select **API**>**Add**>**PayPal**
 
  ![alt text][paypal-12]
 
  ![alt text][paypal-6]
 
-14.	On the PayPal account Click “Profile”  ->  “API  access   -  update”
-15.	Select “View API Signature”
+14.	In PayPal, select **Profile**>**API**>  **access update**.
+15.	Select **View API Signature**
  
  ![alt text][paypal-8] 
  
-16.	Copy the following credentials
-"API Username" , "API Password" , "Signature"
+16.	Copy the following credentials:
+"API Username" , "API Password" , "Signature".
  
  ![alt text][paypal-9] 
  
-17.	Paste the above credentials  into the “PayPal API” in ConnexCS Account
+17.	Paste these credentials in **PayPal API** in the  ConnexCS Account
 
  ![alt text][paypal-16]
 
-18.	Click Save
+18.	Click **`Save`**.
 
 ## Setting the Customer Paypal Email Address into ConnexCS
-
-1.	Click on Management> Customer> [customer name] > Edit customer
-2.	Enter the PayPal main email address and click save.
-3.	Click on Management> Customer> [customer name] > + under Contact> enter the customer PayPal email id and click save.
+The following steps are to 
+1.	Click **Management**>**Customer**>**[customer name]** >**Edit customer**.
+2.	Enter the customer's main PayPal email address and click **`Save`**.
+3.	Click **Management**> **Customer**>**[customer name]** >**Contact**, and then enter the customer PayPal email ID.
+1. Click **`Save`**.
 
 
 [paypal-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/paypal-3.png "Paypal-3"
