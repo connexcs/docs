@@ -1,23 +1,22 @@
 #Email Rate Card
 
-With this feature you can email the rate card to your customer's email address as an attachment.
+This feature allows providers to email rate cards to your customer's email address as an attachment. It is a convenient way to send customers official information relevant to their accounts.  
 
-1. Click on Management> Rate Card> Customer Rate Card
-2. Click on the rate card name
+To email a rate card:
+1. Click **Management**>**Rate Card**>**Customer Rate Card**.
+2. Click the rate card name.
 
 ![alt text][email-ratecard-1]
 
-3. Click on Email button
+3. Click the **`Email`** button.
 
 
 ![alt text][email-ratecard-2]
 
 
-4. Enter the email address and click on send
+4. Enter the email address and click **`Send`**.
 
 ![alt text][email-ratecard-3]
-
-
 
 
 [email-ratecard-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/email-ratecard-1.png "Email-Ratecard-1"

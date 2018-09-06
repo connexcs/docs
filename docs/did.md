@@ -1,21 +1,23 @@
 # Table of Contents
 
-* [Table of Contents](#table-of-contents)
-* [DID](#did)
-  * [Add a DID](#add-a-did)
-  * [Refresh the List](#refresh-the-list)
-  * [Delete a DID](#delete-a-did)
-  * [Edit the DID details](#edit-the-did-details)
-  * [Searching text field](#searching-text-field)
+- [Table of Contents](#table-of-contents)
+  - [DID](#did)
+    - [Add a DID](#add-a-did)
+    - [Refresh the List](#refresh-the-list)
+    - [Delete a DID](#delete-a-did)
+    - [Edit the DID details](#edit-the-did-details)
+    - [Searching text field](#searching-text-field)
 
 
 ## DID
 
-This tutorial will guide you through the **DID section**, which can be accessed from the side bar. Just click on *Management*, and go to **DID** as highlighted in the image below:
+This tutorial will guide you through the **DID section**, accessed from the dashboard's side bar. DID is short for **Direct Inward Dialing**, a mechanism in phone systems that allows for more effective line management. 
+
+To find it, select **Management**, then **DID**, as highlighted in the image below:
 
 ![alt text][did-img-1]
 
-The following 3 actions can be performed in the **DID section**. 
+In the **DID section**, you can:
 
 1. Add a DID
 2. Refresh the list
@@ -25,45 +27,40 @@ The following 3 actions can be performed in the **DID section**.
 
 To add a new inbound number, follow the steps shown below:
 
- 1. Click on the **'+'** button.
+ 1. Click the **`+`** button.
 
 ![alt text][did-img-2]
 
- 2. Fill out the details of the popup. 
+ 2. Fill in the details of the form.
 
 ![alt text][did-img-3]
 
-3. Click Save button, once the accurate details have been filled out.
+3. Click the **`Save`** button.
  
 
 ### Refresh the List
 
-You can also refresh all the details of the **DID** section, anytime, to get the updated list.
-
-Just give a click on **Refresh** button and the list will get updated with latest saved details .
+You can refresh the details of the **DID** section anytime to see an updated list. To do this, simply click the **`Refresh`** button.
 
 ### Delete a DID
 
-You can also delete a DID from the list.
+To delete a DID from the list:
 
 1. Select a DID that needs to be deleted.
 2. Click the **trash** icon, which is next to *Refresh* button.
 
+[EKS]: <> (Add if true: "**Warning:** deleting records is permanent, and the DID cannot be recovered once it is confirmed)
+
 ### Edit the DID details
+To edit DID details from the DID screen:
 
-1. Click on the DID name, from the DID column list.
-
-2. A pop up will open with pre-populated data.
-
-3. Edit the desired details.
-
-4. Click the **Save** button.
-
-The edited information will now be SAVED!
+1. Select a DID by clicking its name.
+2. A window will open similar to the 'Add a DID' screen where you can alter any of the available details.
+3. Click the **`Save`** button.
 
 ### Searching text field
 
-You can also search the details related to **DID section** in the text field, that is at the top right of the page.
+You can search the details in DID records by entering keywords in the text field at the top-right:
 
 ![alt text][did-img-4]
 
