@@ -1,32 +1,31 @@
 # Table of Contents
 
-* [Table of Contents](#table-of-contents)
+- [Table of Contents](#table-of-contents)
+- [Form Builder](#form-builder)
 
 
 # Form Builder
 
-Form builder is a program for developers to create a document. This can be either used on a customer portal or in ScriptForge. 
-Form builder provides an easy way to generate any type of form, integrate it with your portal, or ScriptForge, and start collecting information.
+Form builder is a program for developers to create customized form documents for use in their VoIP systems, either through a customer portal or in ScriptForge. The tool provides an easy way to generate any type of form, integrate it with your portal, or ScriptForge, and start collecting information.
 
-Below are the steps to add a form
-
-1. Click on Management > Developer
-2. Click on Form Builder
+To set up form builder from the dashboard:
+1. Click **Management**>**Developer**.
+2. Click **Form Builder**.
 
   ![alt text][form-builder]
 
-3. Click the + button
+3. Click the **`+`** button.
 
   ![alt text][form-builder-1]
 
-4. Name the form. 
-5. Select ScriptForge from the drop down menu if you already have one.
-6. Select the placement - this is where the form will be used.
-7. Drag & Drop the desired item from the left section to the grey area.
+4. Enter a name for the form. Consider naming conventions for organizational purposes down the road.
+5. Select **ScriptForge** from the drop down menu.
+6. Select the form's placement, which is where it should be deployed.
+7. Drag the item from the left section to the grey area.
 
   ![alt text][form-builder-2]
 
-8. Complete the form information & click save.
+8. Fill in the form, and click **`Save`**.
 
   ![alt text][form-builder-3]
 

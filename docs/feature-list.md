@@ -13,7 +13,7 @@
 
 
 # Detailed Features - ConnexCS
-The following is a comprehensive list of featires included in the latest stable version of ConnexCS. 
+The following is a comprehensive list of features included in the latest stable version of ConnexCS. 
 
 ## Customer Features
 * Unlimited customers.

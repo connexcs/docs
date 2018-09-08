@@ -1,49 +1,49 @@
 # Table of Contents
-* [Table of Contents](#table-of-contents)
-* [How to upload files in your Connex account?](#how-to-upload-files-in-your-connex-account)
-     * [Refresh the List](#refresh-the-list)
-     * [Remove files](#remove-files)
-     * [Cancel upload](#cancel-upload)
-     * [Bulk uploading](#bulk-uploading)
-     * [Download the uploaded file](#download-the-uploaded-file)
+- [Table of Contents](#table-of-contents)
+- [How to upload files in your Connex account?](#how-to-upload-files-in-your-connex-account)
+    - [Refresh the list](#refresh-the-list)
+    - [Remove files](#remove-files)
+    - [Cancel upload](#cancel-upload)
+    - [Bulk uploading](#bulk-uploading)
+    - [Download the uploaded file](#download-the-uploaded-file)
 
 
 # How to upload files in your Connex account?
 
-This tutorial will guide you on how to upload files to your connex account.
+This tutorial explains how to upload files to your connex account. 
 
-1. Login to your Connex account. From the side menu, extend **"Management"**, find **"File"** and click on it.
+1. Login to your Connex account. From the side menu, extend **`Management`**, and select **`File`**.
 
 ![alt text][files-1] 
 
-2. A new page will open which will show already uploaded files. On the top of the page, look for **"Upload"** button and click on it.
+1. A new page will open showing files you've previously uploaded, if any. Find and click the **`Upload`** button at the top of the page. 
 
 ![alt text][files-2]
  
-3. Now, select the file from your computer and click again on the **"Upload"** button as shown in the image below. 
+1. Select the file from the dialogue window that opens to your computer, and click **`Upload`** again.
 
-The file will now upload and can be seen in the list.
+The file should appear as the next item on the list if the upload is successful. If errors occur, check the settings fo your browser or operating system to see if any defenses are preventing uploads of a certain type.
 
 ## Refresh the list
 
-You can refresh the list by clicking on **"Refresh"** which is right next to **"Upload"** button.
+Update the list items shown in the  by clicking on **"Refresh"** which is right next to **"Upload"** button.
 
 ## Remove files
 
-You can remove this file by clicking on **"Remove"** button if you need to.
+After you've selected a file from the list, remove it by clicking the **`Remove`** button.
 
 ## Cancel upload
 
-You can also cancel the upload of a file which is in the queue by clicking on the **"Cancel"** button which is right next to **"Upload"** button.
+To cancel a file upload in the queue, click the **`Cancel`** button next to the **`Upload`** button.
 
 ## Bulk uploading
 
-You can also select multiple files from the computer and then upload them all simultaneously, by clicking on **"Upload all"** button.
-Similarly, you can click on **"Cancel all"** and **"Remove all"** for cancelling and removing all uploads, respectively.
+Bulk uploading lets yoy aselect multiple files and upload them simultaneously by clicking the **`Upload **All**`** button.
+Similarly, you can click on **`Cancel all`** and **`Remove all`** to perform their corresponding actions.
 
 ## Download the uploaded file
 
-You can download the file by clicking on **"Download"** button.
+You can download a file you've selected with the **`Download`** button. The ensuing action should be to open your browser's 'save as' dialogue. 
 
 ![alt text][files-4]
 

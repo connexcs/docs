@@ -1,46 +1,40 @@
 # Table of Contents
 
-* [Table of Contents](#table-of-contents)
-* [Ingress Routing](#ingress-routing)
-    * [Tariff](#tariff)
-    * [Tech Prefix](#tech-prefix)
-    * [Channels](#channels)
-    * [Dial String](#dial-string)
-    * [Missing BYE Protection](#missing-bye-protection)
-    * [Maximum Duration](#maximum-duration)
-    * [Time-out Methods](#time-out-methods)
-    * [Profit Assurance](#profit-assurance)
-    * [Lock Parent Card](#lock-parent-card)
-    * [Exclude Parent Cards](#exclude-parent-cards)
-    * [ScriptForge](#scriptforge)
-    * [RTP Proxy Modes](#rtp-proxy-modes)
-    * [Options](#options)
-    * [CPS Buffering](#cps-buffering)
-    * [CPS Limitation ](#cps-limitation)
-	* [SIP Session Timers](#sip-session-timers)
-    * [ASR+](#asr-plus)
+- [Table of Contents](#table-of-contents)
+- [Ingress Routing](#ingress-routing)
+    - [Tariff](#tariff)
+    - [Tech Prefix](#tech-prefix)
+    - [Channels](#channels)
+    - [Dial string](#dial-string)
+    - [Missing BYE Protection](#missing-bye-protection)
+    - [Profit Assurance](#profit-assurance)
+    - [Lock Parent Card](#lock-parent-card)
+    - [Exclude Parent Cards](#exclude-parent-cards)
+    - [ScriptForge](#scriptforge)
+    - [RTP Proxy](#rtp-proxy)
+    - [CPS Buffering](#cps-buffering)
+    - [SIP Session Timers (SST)](#sip-session-timers-sst)
+    - [ASR+](#asr)
 
 # Ingress Routing
 
-Ingress routing allows incoming attempts to be sent to the correct rate card which in turn egress through the specified provider.
-
-Ingress routing allows for lots of rate cards to be used with or without a prefix. This is checked according to the longest prefix first through to the shortest for a match. If no prefix is matched then it will begin matching the rules of the rate cards and rate cards with mutually exclusive destinations will route without problems.  If there are multiple rate cards with the same prefixes in ingress routing, you must specify a dial plan of a tech prefix to correctly identify the correct card to be used.
+Ingress routing allocates incoming attempts to designated rate card, which in turn egress through a specified provider. It allows for multiple rate cards to be used with or without a prefix. This is checked according to the longest prefix first, then the shortest for a match. If no prefix is matched, it will match the rate cards with mutually exclusive destinations.  If there are multiple rate cards with the same prefixes, you must set up a dial plan with a tech prefix to identify the correct card.
 
 ## Tariff
 
-Tariff lets you select the rate card to be used on the customer account.
+Tariffs let you select which rate card is used on a customer's account.
 
 ## Tech Prefix
 
-It is possible for multiple customers to share the same IP address and to be distinguished by Tech Prefix. Multiple rate cards can be separated with the help of a tech prefix.
+It is possible for multiple customers to share the same IP address, and to be sorted by Tech Prefix. It allows lets providers separate multiple rate cards.
 
 ## Channels
 
-This will impose a limit on how many channels are allowed through this ingress route. This is an independent setting from any customer imposed channel limitations which will still apply.
+Here you can place  limits on how many channels are allowed through each ingress route. It is an independent setting from any customer imposed channel limitations which will still apply.
 
 ## Dial string
 
-A dial string will only let the entered prefixes pass through, listed as one per line. Note: Both prefix and regular expressions are allowed, for example, if you only wanted to allow UK Landline you could use:
+A dial string will only allow entered prefixes to plass, listed as one per line. Both prefix and regular expressions are allowed. For example, if you only wanted to allow UK Landline you could use:
 
 * Prefix
 
@@ -61,46 +55,35 @@ A dial string will only let the entered prefixes pass through, listed as one per
 ```
 ## Missing BYE Protection
 
-A VoIP call is stateful, however its protocol is stateless. This means that both sides of the conversation have to be told when to finish the call. They do this with a BYE message, if the BYE message goes missing, then the call will continue forever, we have the following preventions in place to stop this happening.
+A VoIP call is stateful, though its protocol is stateless. This means that both sides of the conversation have to be told when to finish the call. They do this with a BYE message. If the BYE message goes missing, the call will continue forever.  The following are the methods we use to stop that from happening.
 
-## Maximum Duration
-
-In the event that a BYE gets missed, the Maximum Duration will be the maximum amount of time that the call will be allowed to exist before being terminated.
-
-## Time-out Methods
-
-* SIP Ping
-
-This sends a SIP packet to the remote end of the conversation roughly every 30 seconds. This helps to check if the other side is still aware of an ongoing conversation. If this is not received back, or is told that the conversation is not active then it shuts off the call. 
+* **Maximum Duration**--If a BYE gets missed, Maximum Duration is the maximum amount of time that the call will be allowed to exist before being terminated.
+* **Time-out Methods**
+    * **SIP Ping:** This sends a SIP packet to the remote end of the conversation roughly every 30 seconds. This helps to check if the other side is still aware of an ongoing conversation. If this is not received back, or is told that the conversation is not active then it shuts off the call. 
 Note: Asterisk does not have SIP Ping (OPTIONS) enabled as default, if your customer / carrier is using Asterisk you may need to disable this if they dont have it enabled on their side as calls will tipically disconnect after 30 seconds. 
-
-* RTP Time-out
-
-Another way to check for an active call is to detect if there is audio passing. If there is no audio passing for a pre-set interval, our RTP array will notify the switch and instruct it to terminate the call.
-
-**Note:** this will not work if RTP Mode is set to: direct.
+    * **RTP Time-out:** Another way to check for an active call is to detect if there is audio passing. If there is no audio passing for a pre-set interval, our RTP array will notify the switch and instruct it to terminate the call.  This won't work if RTP Mode is set to: direct.
 
 ## Profit Assurance
 
-If you wish to check every call to ensure it is profitable you can enable Profit Assurance here. This is very useful for A-Z routes or NPA-NXX rate cards, however if you have a very simple rate card, where you know you will always be profitable on ALL upstream routes, you can disable this.
+To check if calls are profitable, enable Profit Assurance here. It is useful for A-Z routes or NPA-NXX rate cards, however if you have a very simple rate cards that are profitable on ALL upstream routes.
 
-The default option here is disabled, as Enabled can add additional PDD to the call while the checks take place.
+The default option is `Disabled`; note that `Enabled` can add additional PDD to the call.
 
 ## Lock Parent Card
 
-If you wish to lock a particular rate card from the list of providers you have added, you can choose this option. This will allow only the rate cards which have been selected.
+To lock a rate card from the list of providers you have added, choose this option. This allows only the rate cards that have been selected.
 
 ## Exclude Parent Cards
 
-If you wish to access rate cards from all the providers on your list except for one particular rate card that has to be excluded you can choose this option.
+To  exclude access to one or more of the rate cards from providers on your list, choose this option.
 
 ## ScriptForge
 
-The PHP ScriptForge allows your own custom code to be run from within the ConnexCS platform.
+The PHP ScriptForge allows for custom code to run from within the ConnexCS platform.  For more information see the [ScriptForge] page.
 
-## RTP Proxy Modes
+## RTP Proxy 
 
-When a call is established between customer and provider, there are two ways in which the audio can be set-up.
+When a call is established between customer and provider, audio can be set-up in one of two ways:
 
 |  |      **With RTP Proxy**      |  **Without RTP Proxy** |
 |----------|:-------------:|------:|
@@ -110,84 +93,64 @@ When a call is established between customer and provider, there are two ways in 
 | **Information Leakage**| No |   Yes* |
 
  	
-**Note:** It is important to be aware, although it's doubtful that any information will be logged in the customer/providers switch where the audio is engaged. It is entirely possible for an engineer to find this information out from a SIP trace, pcap or watching transit locations.
-
-Please note DTMF Detection ONLY works when RTP Proxy mode is enabled
+While it's doubtful that any information will be logged in the customer/providers switch when the audio is engaged, it is possible for an engineer to learn this information from an SIP trace, pcap, or watching transit locations. DTMF Detection ONLY works when RTP Proxy mode is enabled.
 
 **When should I use with/without RTP Proxy?**
 
-You should use an RTP Proxy if:
+Use an RTP Proxy if you don't want your customers to know your providers.
 
-You don't want your customers to know your providers.
+You should **not** use an RTP Proxy if:
+* You have other equipment in your SIP set-up which will act as a Media Relay.
+* You want to run a test to see if audio problems are related to the Connex Cloud Switch.
 
-You should not use an RTP Proxy if:
+**RTP Options**
 
-1. You have other equipment in your SIP set-up which will act as a Media Relay.
-2. You want to run a test to see if audio problems are related to the Connex Cloud Switch.
+Choose which RTP Proxy you want engaged:  
+* Selecting **Auto** will use the least expensive path between your customer and provider.  You can list various countries, though it is recommended you choose a location near a provider or your customer. 
+* Choosing **Disable** will disable RTP Proxy Engagement.
+* **Strategy** lets you pass the calls based on the routing strategy you set.
 
-## Options
-
-* RTP Media Proxy
-
-Selection of which, if any, RTP Proxy you want engaged.
-
-Auto will select the least cost path between your customer and provider.
-
-1. Various countries will be listed, it's recommended that you choose a location that is near your provider or your customer.
-2. Direct (No RTP Proxy) - This will DISABLE RTP Proxy Engagement.
-
-**RTP Proxy Mode**
-
-1. Strict - This will enforce the proxy engagement. If the proxy can't engage with the call, the call will not be established. Note: Free accounts are limited to how many RTP Proxy channels are enabled, this may prevent calls connecting if you have more channels than our free accounts allow you to have.
-
-2. Relaxed - This will perform best efforts to engage the RTP Proxy, if it can't be engaged because of either network errors, or because you don't have enough RTP capacity, the calls will connect directly.
-
-**Strategy**
-
-Strategy lets you pass the calls based on the routing strategy you set.
+There are two RTP proxy modes:
+* **Strict**-This will enforce the proxy engagement. If the proxy can't engage with the call, the call will not be established. Note: Free accounts are limited to how many RTP Proxy channels are enabled, this may prevent calls connecting if you have more channels than our free accounts allow you to have.
+* **Relaxed**-This will perform best efforts to engage the RTP Proxy, if it can't be engaged because of either network errors, or because you don't have enough RTP capacity, the calls will connect directly.
 
 ## CPS Buffering
 
-CPS Buffering is a process to maximise saturation and increase call completion within a given CPS restriction. It does this by removing spikes and borrow capacity from future seconds.
+CPS Buffering is a process that maximises saturation and increases call completion within a given CPS restriction. It does this by removing spikes and borrowing capacity from future seconds. If incoming traffic exceeds your pre-set CPS, it holds the call for one second then tries again. You can increase the second count in the CPS Spike Buffer field.
 
-If the incoming traffic exceeds your pre-set CPS, it holds the call for 1 second then tries again. It does this for as many seconds as you set in the CPS Spike Buffer field.
+Changing the CPS Buffering value only affects calls that exceed the CPS; no other calls will be affected. The delay will show as increased PDD on the call, each second the system will emit a 100 Trying (High CPS, Buffering) response to indicate the status/progress of the call.
 
-Changing this value only affects calls which exceed the CPS, no other calls will be affected. This delay will show as increased PDD on the call, each second the system will emit a 100 Trying (High CPS, Buffering) response to indicate the status/progress of the call.
+**CPS Limitation** 
 
-## CPS limitation 
+**Calls Per Second** can be limited in Ingress Routing. You can set CPS limitations on each customer card assigned to the customer account
 
-The Calls Per Second can be limited on Ingress Routing. This means you can set the CPS limitation on each customer card that you assign on the customer account
+## SIP Session Timers (SST)
+**SIP Session Timers** ensure there are no ghost or long0duration calls being billed when one or both sides have hung up. A timer is activated when the call starts and refreshes the call every X amount of seconds by sending a RE-INVITE. SST is currently the best way to prevent long-duration calls, superceeding SIP Ping Timeout. Note that any SST less than sixty(60) seconds will be rejected
 
-## SIP Session Timers
-SIP session timers is a method of ensuring that there are no ghost or long duration calls which are being billed, even though one or both sides have hung up. This works by a timer created when the call starts and refreshes the call every X seconds by sending a RE-INVITE.
+Passive SST is enabled by default, and all RE-INVITES will propagate through the system. It is also possible to be proactive about the RE-INVITES, instructing the ConnexCS switch to send upstream to the carrier, downstream to the customer, or in both directions.
 
-Passive SST is enabled as default and without changing any settings, all RE-INVITES will propagate through the system.
-It is also possible to be proactive about the RE-INVITES, instructing the ConnexCS switch to send these: upstream to the carrier, downstream to the customer or in both directions.
-
-SST is currently the best way to prevent long duration calls and superceeds SIP Ping Timeout. Also please note that any SST < 60 seconds will be rejected
-
-### Options
- - Default. No headers are changed and no SST is engaged
- - Disabled. All ```timer``` headers are removed
- - Suggest. Session-Expire headers and Min-SE are added to packets sent to carrier encouraging the use of SST.
- - Enabled Both. ConnexCS will send SIP Session Timers to both legs of the call.
- - Enabled (Upstream). ConnexCS will use SST with the carrier.
- - Enabled (Downstream). ConnexCS will use SST with the customer.
-
+**SST Options**
+ * **Default:** No headers are changed and no SST is engaged
+ * **Disabled:** All ```timer``` headers are removed
+ - **Suggest:** Session-Expire headers and Min-SE are added to packets sent to carrier encouraging the use of SST.
+ - **Enabled Both:** ConnexCS will send SIP Session Timers to both legs of the call.
+ - **Enabled (Upstream(:** ConnexCS will use SST with the carrier.
+ - **Enabled (Downstream):** ConnexCS will use SST with the customer.
 
 ## ASR+
-ASR+ is a proprietary technology developed by ConnexCS to help filter known failed non-existant / working numbers between the customer and the carrier for termination.
+ASR+ is a proprietary technology developed by ConnexCS to filter known failed non-existant / working numbers between the customer and the carrier for termination.
 
-### Advantages
-- Quick failure of known bad numbers, reduces response time for your customers.
-- Improves the ASR of the traffic that your upstream carrier sees.
-- Highly effective for call center traffic.
+**Advantages of ASR**
+* Quick failure of known bad numbers.
+* Reduces response time for your customers.
+* Improves the ASR of the traffic that your upstream carrier sees.
+* Highly effective for call center traffic.
 
-### Disadvantages
-- Marginal impact on your NER due to false positive matches. This is usually kept within tolerances of < 0.1%.
-- Does not off improvements over all destinations.
+**Disadvantages of ASR**
+* Marginal impact on your NER due to false positive matches. This is usually kept within tolerances of < 0.1%.
+* Does not offer improvements for all destinations.
 
-### Settings
+**ASR Settings**
 | Value         | Description                | 
 | ------------- |----------------------------| 
 | Off           | ASR+ Disabled              | 
@@ -197,4 +160,4 @@ ASR+ is a proprietary technology developed by ConnexCS to help filter known fail
 | ASR+?         | When ASR+ is enabled on the provider card, only known connected calls will be allowed to pass to specific provider |
 | ASR++         | Only known connected calls will be allowed to pass (Rarely used as usually too strict) |
 
-* Unless off or otherwise mentioned, ASR+ is active for 90% of calls, this gives the opportunity for the database to be replinished.
+Unless its turn off or customized otherwise, ASR+ is active for 90% of calls, which grants the opportunity for the database to be replenished.
