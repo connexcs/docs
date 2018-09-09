@@ -17,8 +17,6 @@ The following will explain how to add a new to domain to your Customer Portal:
 4. Provide an add-on domain, such as portal.yourwebsite.com.
 5. Point the domain toward portal.connexcs.com.
 
-Once the previous steps are completed, return to the Connex control panel, and proceed with the following:
-
 1. Go to **Setup**>**Integrations**>**Domains**.
 
    ![alt text][domain]

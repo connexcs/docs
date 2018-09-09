@@ -69,4 +69,5 @@ pages:
     - Security: security.md
     - Media Handling: media-handling.md    
     - Scaling and Load Balancing: scaling-load-balancing.md 
+    - Changelog: changelog.md 
 
