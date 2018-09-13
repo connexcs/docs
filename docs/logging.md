@@ -1,61 +1,58 @@
 # Table of Contents
 
-* [Table of Contents](#table-of-contents)
-* [Logging](#logging)
-    * [Simulating Calls](#simulating-calls)
-    * [Refreshing the Logs](#refreshing-the-logs)
-    * [Searching the Logs](#searching-the-logs)
+- [Table of Contents](#table-of-contents)
+- [Logging](#logging)
+- [SIP traces](#sip-traces)
+    - [Simulating Calls](#simulating-calls)
+    - [Refreshing the Logs](#refreshing-the-logs)
+    - [Searching the Logs](#searching-the-logs)
 
 # Logging
 
-The logging is used to check Real time call attempts, SIP traces, routing status & to simulate a call.
+**Logging** is used to check real-time call attempts, SIP traces, routing status, and to simulate a call.
 
 # SIP traces
-To view the SIP traces of a call follow the steps below.
+To view the SIP traces of a call, follow the steps below.
 
-1. Click on Management> Logging
+1. Click **Management**>**Logging**.
 
 ![alt text][logging-1]
 
-2. Click on the call id for which you wish to view the SIP traces.
+1. Click a call ID to view its SIP traces.
 
 ![alt text][logging-2]
 
-3. Click on the SIP traces button to view the SIP trace image.
+1. Click the **`SIP traces`** button to view the SIP trace image.
 
 **Please note the SIP traces are not always guaranteed.**
 
 ## Simulating Calls
-
-Users can simulate the calls by using the following simple procedure:
-
-1. Click on Management> Logging> Simulate
+Simulating calls lets providers test different setups and operations to identify areas of concern, or just to verify functionality.  To simulate calls:
 
 ![alt text][logging-3]
 
-2. Enter the Dialled number & CLI/ANI Number
-3. Select the switch IP from the drop down menu.
-4. Enter the IP address.
-5. Optionally add the sip extension user
-6. Select the routing engine zone & click simulate
-7. The simulation call result will appear in the logging. The call id will start with a SIM name, click on the call id to view the routing status of that call.
+1. Click **Management**>**Logging**>**Simulate**. A form will appear:
 
 ![alt text][logging-4]
 
-2. Pop-up will appear. Enter the details in it.
+2. Enter the dialed number and CLI/ANI number
+3. Select a switch IP from the drop down menu.
+4. Enter the IP address.
+5. Optionally, add the SIP extension user
+6. Select the routing engine zone
+7.  Click **`Simulate`**
+
+The simulation call result will appear in logging. The call id will start with a SIM name. Click the call id to view the call's routing status.
 
 ## Refreshing the Logs
 
-User can also refresh the lists of logs by clicking on **Refresh** button, right next to the Look up button. 
-
-![alt text][logging-5]
+The **`Refresh`** button will reload the logs to show the most recent changes.  Uses this buttone to be sure you're always looking at the most current information.
 
 ## Searching the Logs
 
-You can search for a call by a phone number, call id, or with a IP address. To search for a call enter the phone number & hit the search button.
- 
-![alt text][logging-6]
+You can search for calls by phone number, call ID, or IP address, but entering one of these attributes into the text box at the top-right of the Logging page and clicking the **`Search `** button.
 
+![alt text][logging-6]
 
 [logging-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/233.png "logging-1"
 [logging-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/234.png "logging-2"

@@ -1,34 +1,30 @@
 # Table of Contents
 
-* [Table of Contents](#table-of-contents)
-* [ConnexCS Media Handling](#connexcs-media-handling)
-   * [Server Specific optimizations](#server-specific-optimizations)
+- [Table of Contents](#table-of-contents)
+- [ConnexCS Media Handling](#connexcs-media-handling)
+    - [Server Specific optimizations](#server-specific-optimizations)
 
 
 # ConnexCS Media Handling
 
-* **Why do I see different media IP addresses?**
+When an SIP session is created with the ConnexCS Cloudswitch, the switch decides which zone to route your media through, such as USA East, USA West, or Europe (unless you use ingress routing).
 
-When a SIP session is created with your ConnexCS Cloudswitch, the switch decides (or you can choose from ingress routing) a zone to route your media through, e.g USA East, USA West, Europe.
+These zones are broad enough to encompass multiple data centers and sub-availability zones within the target zone. A zone may contain teb or more RTP Media Relays, or as few as two, but either way these are made available for all ConnexCS customers.
 
-These zones are specifically broad to encompass (if possible) multiple datacentre and sub-availability zones within the target zone. A zone may contain 10 or more RTP Media Relays, or as few as 2, which are available for all ConnexCS customers.
-
-It is important to us that media streams never suffer avoidable packet loss or latency, hence multiple availability zones. We try to keep media servers running at < 50% capacity. If this increases we will deploy additional servers.
-
-* **Why do you not run media and signalling together?**
+We use multiple availability zones because it is important to us that media streams never suffer avoidable packet loss or latency. Ideally, media servers run at less than half-capacity, and we we deploy additional servers if this increases.
 
 ## Server Specific optimizations
 
-Although it may seem logical to have both of these running together, it’s actually counter intuitive. Servers processing billions of ephemeral media packets put different stresses on a system than that which is required for processing SIP packets. Isolating these gives us the following benefits:
+It may seem logical to run media and signaling together, but it's really counter-intuitive. Servers processing billions of media packets put different stresses on a system than processing SIP packets. Isolating these gives us the following benefits:
 
 * Flexibility for the customer to relay media in different zones.
 
-   If your customer and your provider are in the UK but your server is in the USA, you should not  have to bring the audio back to the USA when we have a local media zone
+   If your customer and provider are in the UK, but your server is in the US, you don't need to bring the audio back to the USA when we have a local media zone.
 
-* Extra dimension of scaling capabilities.
+* An extra dimension of scaling capabilities.
 
-   Separating the two allows us to scale the CPS and Media throughputs independently.
+   Separating the two allows us to scale the CPS and Media throughputs independently, without concern over one aspect affecting another.
 
 * Sharing of Media Servers
 
-   Allowing multiple customers to share media servers also adds the advantage of reducing hops if multiple parts of the route used go through customers of ConnexCS.
+   Allowing multiple customers to share media servers reduces hops, if multiple parts of the route go through customers of ConnexCS.

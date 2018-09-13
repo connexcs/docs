@@ -20,7 +20,7 @@ Limiting CPS and Channels is a mechanism that lets providers put caps on their s
  
 ## What happens when my server reaches capacity?
 
-The standard response is: *Request Terminated: Server at max cps/channels*. If you have multiple servers, you can send a 302 response if the server reaches capacity, advising the client of an alternative location to complete the call.
+When a server reaches capacity, the standard response is: *Request Terminated: Server at max cps/channels*. If you have multiple servers, you can send a 302 response if the server reaches capacity, advising the client of an alternative location to complete the call.
 
 ## Load Balancing using DNS (Domain Name System)
 

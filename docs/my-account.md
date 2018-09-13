@@ -1,47 +1,40 @@
 # Table of Contents
 
-* [Table of Contents](#table-of-contents)
-* [Account](#my-account)
-  * [Configuration](#configuration)
-  * [Company Information](#company-information)
-  * [General Information](#general-information)
-  * [Personal Information](#personal-information)
-  	* [Users can also change the passwords](#users-can-also-change-the-passwords)
-  	* [Users can also edit SMTP Details](#users-can-also-edit-smtp-details)
-  * [API (Application Programming Interface)](#api-application-programming-interface)
-  	* [Adding New API](#adding-new-api)
-  	* [For PayPal](#for-paypal)
-  * [Domains](#domains)
-  * [Payments](#payments)
-  * [Packages](#packages)
-  	* [Adding New Package](#adding-new-package)
-  * [Servers](#my-servers)
+- [Table of Contents](#table-of-contents)
+- [My Account](#my-account)
+  - [Company Information](#company-information)
+  - [General Information](#general-information)
+  - [Personal Information](#personal-information)
+  - [Two-factor Authentication](#two-factor-authentication)
+  - [Users](#users)
+  - [API (Application Programming Interface)](#api-application-programming-interface)
+    - [Add New API](#add-new-api)
+  - [Domains](#domains)
+- [Customer Portal with CNAME record](#customer-portal-with-cname-record)
+  - [Payments](#payments)
+  - [Packages](#packages)
+  - [Servers](#servers)
 
 
-# Account
+# My Account
 
-This tutorial will guide you what actions you can perform by in your account.
+This section is an overview of actions that can be performed against each provider account. More specific details about each action exists on the topics' respective pages. 
 
-In My Account, users can update and manage information in their account, add personal information like name, mobile number, users, groups etc.
-
-To open My Account, just click on the Setup from the left panel and then click on Settings> Account, shown highlighted in the image below.
+To open **My Account**, click the **`Setup`** button from the left panel, then **Settings**>**Account**, as highlighted in the image below.
 
 ![alt text][my-account]
  
-Account Profile basically involves two types of information:
-
-1. Company's Information 
-2. General Information
+An account profile contains two types of information, company and general. Details about each type are below.
 
 ## Company Information
 
-To add/edit information, you can click on the pencil icon. In Company's Information, the following details are required:
+To add or edit company information, click the pencil icon. In company Information section, the following details are required:
 
-1. Name
+1. Company Name
 2. Address Line 1 and Address Line 2. 
 3. City, County/ State, Country, Post Code/ ZIP code
 
-After filling in all the details, click on Save button.
+After filling in these details, click the **`Save`** button.
 
 ![alt text][company-info]
 
@@ -51,177 +44,193 @@ In General Information, you need to set the following details:
 
 ![alt text][general-info]
  
-1. The Currency. 
-2. The Date Format from the dropdown options.
-3. In Contact Information, put the Phone and Mobile number.
-4. For security and Add-ons, you can check the box and then they'll receive emails, every time they login.
+1. Type of currency. 
+2. A date Format from the dropdown options.
+3. A phone and mobile number in contact information.
+4. Check the **Security and Add-ons** receive emails on login.
 
 ## Personal Information
 
-You can also edit their personal information in Current User section. 
+Edit individual user information in the **Current User** section. 
 
-1. Click on Edit icon.
-2. Enter or change the details.
-3. Click on Save button.
+1. Click the **`Edit`** icon.
+2. Edit details in each text box, same as creating new account.
+3. Click the **`Save`** button.
 
 
-## Two factor Authentication
-Two-factor authentication (also known as 2FA) is a method of confirming a user's claimed identity by utilizing a combination of two different components.
-You can use the Google Authenticator or a similar app which can generate the security code.
+## Two-factor Authentication
+**Two-factor authentication**, or 2FA, is a way to confirm user identity using a combination of two different measures.
+Use the Google Authenticator or a similar app to generate the security code.
 
-You can enable "Two factor Authentication". For this purpose, click on the Two factor Authentication and click on Enable the TFA, as shown in the image below:
+To enable two-factor authentication, click **`Enable`**, as shown in the image below:
 
 ![alt text][tfa]
  
-### You can also edit SMTP Details.
+You can also edit SMTP Details from the My Accounts screen.
 
 ![alt text][smtp]
  
-1. Enter the Email Address from which the emails will be sent.
-2. Enter the Username/email address & password.
-3. Enter the server domain.
-4. Enter the  From Mobile number & click save.
+1. Enter an email address that will recieve the details.
+2. Enter a username, email address, and password.
+3. Enter a server domain.
+4. Enter a mobile number
+5. Click **`Save`**.
 
-You can click the Test Email button to check if your configration is succesful. and Test Mobile button to send a test SMS, on the extreme right of the SMTP details.
+Click the **`Test Email`** button to test if the configration is succesful, or the **`Test Mobile`** button to send a test SMS.  The buttons are found to the far right of the SMTP details window.
 
 ## Users 
 
-You can add other users in this section.
+This section is for adding new user accounts.  It is found under **Setup**>**Settings**>**Users**.
 
-1. Go to Setup>Settings>Users.
+To add a new user:
 
-To add a new user, simply:
-
-1. Click on the Users section, highlighted in red in the image below.
-2. Click the '+' icon to add a new user, highlighted in orange in the image below.
-3. Pop-up will appear and then you need to fill out the details in the dialog box.
-4. Click on Save button.
+1. Click the **Users** section highlighted in red (see image below).
+2. Click the **`+`** button to add a new user, highlighted in orange.
+3. A window will appear where you can fill out details.
+4. Click the **`Save`** button.
  
 ![alt text][users]
 
-The details of the dialog box, to add new users, are as follows:
+The details of the dialog box are as follows:
 
 ![alt text][user-config]
 
-You will provide the,
+* **Name** - the user's name.
+* **Password** - the password they will use to log in.
+* **Role** - Either user or administrator.
+* **Email** - The user's email address.
 
-1. Name
-2. Password
-3. Role (either as User or Administrator)
-4. Email of the user
+Once the details are entered, remember to click the **`Save`** button.
 
-Click on Save button, once the details have been filled out. 
+**User Groups**
 
-To add new groups to the Users section, click on the '+' sign button and add the details. 
+To add new groups to the **Users** section, click the **`+`** button. A window will appear as shown, where you can enter the following details.  
 
 ![alt text][group-config]
  
-1. Put the name in the text field.
-2. From other options (Customer, Carrier, Card, Cdr, Log, Report etc.), select the option from dropdown menu as Select, Allow or Deny and press Save button.
-3. If you wish to delete a user, select the user and hit delete
+* **Group Name** - A name for the user group.
+* There are several drop-down lists below the group name, each of which allows providers to choose Select , Allow, or Deny the respective service for the group. See their individual pages for details.
+  * [Cusomer]
+  * [Log]
+  * [Carrier]
+  * [Report]
+  * [Card] 
+  * [Data]
+  * [CDR]
+  * [PCAP]
+* When you're finished editing or entering a group, click the **`Save`** button.
+
+**Delete Users**
+
+To delete a user, select the user's name from the user list, and click the **`Delete`** button.
 
 ## API (Application Programming Interface)
 
-1. Go to Setup>Integrations>API
-2. You can also set the APIs.The overall view of API section is as follows:
+Configuring APIs allows for more intricate control over your system, either by customization or the use of third-party applications.  Go to **Setup**>**Integrations**>**API**. 
 
 ![alt text][api]
 
-### Adding New API
+### Add New API
 
-Users can add the new API by:
+To add a new API:
 
-1. Click on the Add button.
+1. Click the **`Add`** button.
 
 ![alt text][paypal-1]
 
-2. Select either PayPal or Stripe.
+2. Select **PayPal** or **Stripe** from the drop-list.
 
 ![alt text][paypal]
 
-3. Fill out the details in the dialog box and press Save button.
+3. Fill in the dialog box and press the **`Save `** button.
 
-
-### For PayPal:
+**For PayPal**:
 
 ![alt text][stripe]
  
-1. Select the Mode, this needs to be set to live
-2. Enter the Username & Password
-3. Enter the Email and signatures.
-4. Select the currencies that you wish to accept the payment.
+1. Select the Mode, between **Test** for testing connections, and **Live** for an active account.
+2. Enter a username and password
+3. Enter an email and signatures.
+4. Select user currency type.
 
-You can learn more about the PayPal APi from [here].
+Lean more about the PayPal APi from [here].
 
-For Stripe:
+**For Stripe**:
 
 ![alt text][stripe1]
 
-1. Select the Mode,  this needs to be set to live
-2. Enter the Public Key and Private Key in the respective text fields, this can be obtained from your stripe account.
-3. Select the currencies that you wish to accept the payment.
+1. Select the Mode, between **Test** for testing connections, and **Live** for an active account.
+2. Enter a **Public Key** and **Private Key** in the respective text fields. These can be obtained from your Stripe account.
+3. Select the user's currency type.
+4. Click the **`Save`** button.
 
-You can also:
+**Edit APIs**
 
-1. Refresh and Delete the APIs. 
-2. Edit the information regarding API. Click on the name from the list and edit the details.
+Edit API information by clicking its name from the list. A window will open similar to the 'Add New' screen where you can edit details.
+
+**Refresh APIs**
+
+Click the **`Refresh`** button to update the current list of APIs on the screen to the most recent. This is to ensure you are working with the most recent information.
+
+**Delete APIs**
+
+To delete an API, select it from the list and click the **`Delete`** button. 
 
 ## Domains
 
-Domains lets you add a domain/sub domain on your control panel which will let your customer use the customer portal. The domain can be whitelablled.
+The **Domains** screen lets you add a domains and sub domain to the control panel, which the customer can access through the customer portal. Domains can also be whitelabeled here.
 
-1.Go to setup>Integrations>Domains
+1. Go to **Setup**>**Integrations**>**Domains**.
 
 ![alt text][domain]
 
-2.To add a new domain, click on the '+' icon under Portal.
-3. Pop-up will show up and add the details in the respective field.
-4. Select the access (Carrier Portal, CDR, Rate Card, Balance etc.) that you wish to allow your customers on customer portal.
-5. Click on the Save button.
+1. Click the **`+`** button under **Portal**.
+2. Enter the details in their respective fields of the ensuing window.
+3. Select the level of access you wish to allow your customers in their customer portal.
+4. Click the **`Save`** button.
 
 ![alt text][add-new-domain]
 
-Domains can also be edited.
+Domains can also be edited here:
 
-1. Click on the Domains from the list.
-2. Edit the details.
-3. Click on Save button.
+1. Click the Domain name from the list.
+2. Edit its details.
+3. Click the **`Save`** button.
 
 # Customer Portal with CNAME record
 
 1. Sign in to your domain's account at your domain host.
-2. Locate the page for updating your domain's DNS records.
-3. The page might be called something like DNS Management, Name Server Management, or Advanced Settings.
-4. Locate the CNAME records for your domain & point it towards *portal.connexcs.com*
+2. Locate the page for updating your domain's DNS records. The page might be called something like DNS Management, Name Server Management, or Advanced Settings.
+3. Locate the CNAME records for your domain, and point it towards *portal.connexcs.com*
 
 ## Payments
 
-Payments can be made at any time with ease. All they have to do is:
+Payments can be made at any time:
 
-1. Go to Setup>Settings>Payments
+1. Go to **Setup**>**Settings**>**Payments**.
 
 ![alt text][payments]
 
-2. Click on the Make Payment button.
+1. Click the **`Make Payment`** button.
 
 ![alt text][payments-1]
 
-3. Select the payment mode.
-4. Select the amount.
-5. Click on Pay button.
+3. Select a payment mode.
+4. Select a payment amount.
+5. Click the **`Pay`** button.
 
 ## Packages
 
-These packages let you access the lookup services offered by us. These can be enabled/disabled from this section.
+**Packages** lets you access our lookup services, which can be enabled or disabled from this section.
 
-1. Go to settings>Connex Packages
+1. Go to **Settings**>**Connex Packages**. A list of availanble packages will appear; the green buttons on the left allow you to turn the packages on or off.
 
 ![alt text][package]
 ![alt text][package-dialog-box]
 
 ## Servers
 
-If the server has been deployed on your account, you can view/manage from this menu.
+If a server has been deployed on your account, you can view and manage from this menu.
 
 [here]: <https://docs.connexcs.com/en/latest/customer-payments>
 [my-account]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/64.png "My Account"
