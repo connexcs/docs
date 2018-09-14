@@ -12,5 +12,5 @@
 
 [EKS]: <> (Add more to PSTN)
 
-**SIP** - Session Initiation Protocol, a TCP/IP-based network protocol used in VoIP telephony to establish connections for telephone calls.
-
+**RTP** - Real-time Transer Protocol, a network protocol used to move media across IP-based systems.   
+**SIP** - Session Initiation Protocol, a TCP/IP-based network protocol used in VoIP telephony to establish connections for telephone calls. 

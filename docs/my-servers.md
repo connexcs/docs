@@ -1,53 +1,54 @@
 # Table of Contents
 
-* [Table of Contents](#table-of-contents)
-* [My Servers](#my-servers)
-    * [RTP Servers](#rtp-servers)
-    * [Server Information](#server-information)
-    * [TCP & UDP Additional Ports](#tcp--udp-additional-ports)
-    * [Server Reactivation](#server-reactivation)
+- [Table of Contents](#table-of-contents)
+- [My Servers](#my-servers)
+- [Server Actions Menu](#server-actions-menu)
+    - [RTP Servers](#rtp-servers)
+    - [Server Information](#server-information)
+    - [TCP & UDP Additional Ports](#tcp--udp-additional-ports)
+    - [Server Reactivation](#server-reactivation)
 
 
 # My Servers
 
-You can manage your servers from the My server menu. This can be accessed from the side bar, as shown in the image below:
+The **My Server** menu is where providers manage servers. It is accessed from the dashboard's side bar, as shown in the image below:
 
-1. Go to Setup>Settings.
-2. Click on Servers
+1. Go to **Setup**>**Settings**.
+2. Click **Servers**.
 
 ![alt text][server-1]
 
-3. Click on the server IP to get into the server.
+1. Click the server's IP address to open it's information screen.
 
 ![alt text][server-2]
 
-4. Click on Actions button.
+4. Click the **`Actions`** button to open the **Server Actions Menu**.
 
-# Server Actions Menu:
-1. Install Server: This will install the latest script to your server
-2. Start Server: Lets you start your server.
-3. Stop Server: Lets you stop the server
-4. Restart Server: To restart your server click on Restart server
-5. OS Cycle: This will gracefully shut your server down.
-6. Power Cycle: This will shut down your server, this is like hard reset.
+# Server Actions Menu
+The following actions are available in the **Server Actions** menu:
+* **Install Server**: installs the latest script to your server.
+*  **Start Server**: Activates the server.
+*  **Stop Server**: Deactivates the server
+*  **Restart Server**: Reboots the server.
+*  **OS Cycle**: Shut down the server using the operating system's mechanisms.
+*  **Power Cycle**: Shut down the server using a hard reset (emulates pressing the power button).
 
-We don't recommend perforimg any of the actions above as this may interrupt your calls/service.
+**Warning:** These actions are listed to inform you of the server page's functionality. Performing any of them could affect services, so we recommend that you avoid tampering with them unless the results are certain.
 
 ## RTP Servers
 
-RTP Servers are responsible to handle the media.
+[RTP Servers] are responsible for handling streaming media. To manage RTP Servers in your system:
 
-1. Click on the **RTP Servers** button.
+1. Click the **`RTP Servers`** button.
+2. A list of your current RTP servers will appear, with columns for IP address, aliases, and zones.
+3. The **`Refresh`** button will reload the page to show the most current changes, if any.
 
-2. A list of all the servers will appear, that includes the columns like IP, Alias and Zone.
-
-3. Refresh the lists, if needed, by pressing the *Refresh* button.
-
-Following image shows the list of all our RTP Servers:
+Below is a list of all our RTP Servers:
 
 ![alt text][server-3]
 
 ## Server Information
+This screen provides more detailed information about servers associated with your acocunt.
 
 ![alt text][server-4]
 
@@ -60,16 +61,15 @@ This can be set under My Servers> [IP Address]>  Port> Enter the port & click sa
 ![alt text][server-5]
 
 ## Server Reactivation
-
-1. Click on Setup>Settings>Servers
+To reactivate a server:
+1. Click **Setup**>**Settings**>**Servers**.
 
  ![alt text][server-6]
 
-2. Click on the server IP
-3. Click on Reactivate to activate your server.
+2. Click the server's IP address.
+3. Click **Reactivate** to activate your server.
 
-You will only be able to reactivate your server if your account balance is showing a positive amount.
-
+**NOTE:** You will **not** be able to reactivate a server if the associated account balance is in the negative.
 
 [server-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/239.png "server-1"
 [server-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/240.png "server-2"
