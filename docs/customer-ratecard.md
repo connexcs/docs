@@ -12,9 +12,9 @@
 
 # Customer Rate Card
 
-Customer Rate Cards let you manage the rates for your customers. There are two types of rate cards: 
+Customer Rate Cards let you manage the rates for your customers, edit customer profiles, and view important information. There are two types of rate cards: 
 * The **Internal** method lets you add a profit to your provider cards or set a flat rate.
-1. **External** rate cards are completed by uploading the custom rate card, and then setting up dynamic routing.
+* **External** rate cards are completed by uploading the custom rate card, and then setting up dynamic routing.
 
 ## The Internal Method 
 

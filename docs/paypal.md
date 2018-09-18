@@ -1,55 +1,68 @@
 # Table of Contents
 
-* [Table of Contents](#table-of-contents)
-* [Login to ConnexCS account](#login-to-connexcs-account)
-* [Setting the Customer Paypal Email Address into ConnexCS](#setting-the-customer-paypal-email-address-into-connexcs)
+- [Table of Contents](#table-of-contents)
+- [Paypal Integration](#paypal-integration)
+- [Add PayPal Integration](#add-paypal-integration)
+    - [Setting the Customer Paypal Email Address into ConnexCS](#setting-the-customer-paypal-email-address-into-connexcs)
 
 
 # Paypal Integration
+ConnexCS integrates the PayPal merchant platform and its API to allow easier transfers between VoIP providers and their associated PayPal accounts.
 
+# Add PayPal Integration
+Integrating PayPal requires admin access to ConnexCS and PayPal settings for provider accounts. Switching between them is noted by the "**Login to [application]**" headers.
 
-## Login to ConnexCS account.
+**Login to ConnexCS**
 
-1. Check IPN Enabled, Verify Transaction.
-2. Select Payment Types & Currencies.
-3.	Copy the IPN URL.
+1. In the dashboard go to **Setup**>**Integrations**
+2. Click the green **`Add`** button in the top right and select **Paypal IPN** from the drop-list, or select an existing **paypal_ipn** from the list.
+3. Copy the IPN URL at the top and leave in your OS's clipboard for now.
+4. Check **Verify Transaction** if to have transactions verified (recommended).
+5. Select a payment type (Mass Pay, Send Money)
+6. Select currency type (USD, GBP, EUR)
 
  ![alt text][paypal-5]
 
-4.	Click Save.
-5.	Login to your PayPal account.
-6.	Click “Profile”.
-7.	Find the “Instant payment notifications”, click “Update”.
+5. Click **`Save`**.
+
+**Log in to PayPal**
+1. Click **Profile**.
+2. Find **Instant payment notifications**. 
+3. Click **Update**.
+4. Click **API  Access**.
+5. Select **View API Signature**.
+6. Copy the API Username, API Password, and Signature. 
+
+We recommend copying each of these one at a time instead of saving them to a single document for convenience, as this places too much sensitive login information in one file. The safest way to move this info is to have ConnexCS and PayPal open in separate browser tabs, where you can perform the three copy/past operations efficiently.
 
  ![alt text][paypal-3]
- 
-8.	Go back to ConnexCS Account 
 
  ![alt text][paypal-12]
 
  ![alt text][paypal-6]
-
-9.	On the PayPal account Click “Profile”  >  “API  access   >  update”
-10.	Select “View API Signature”
  
  ![alt text][paypal-8] 
  
-11.	Copy the following credentials
-“API Username” , “API Password” , “Signature”
- 
  ![alt text][paypal-9] 
  
-12.	Paste the above credentials  into the “PayPal API” in ConnexCS Account
+**Login to ConnexCS**
+
+1. Return to **Setup**>**Integrations**.
+2. Click the green **`Add`** button in the top right and select **Paypal** from the drop-list, or select an existing **paypal** from the list. Note that the system marks the PayPal API as simply "paypal" and the IPN as "paypal_ipn".
+3. Enter the credentials you copied from PayPal (username, password, signature) into their respective fields.
+4. Click **`Save`**.
 
  ![alt text][paypal-16]
 
-13.	Click Save
+
 
 ## Setting the Customer Paypal Email Address into ConnexCS
 
-1.	Click on Management> Customer> [customer name] > Edit customer
-2.	Enter the PayPal main email address and click save.
-3.	Click on Management> Customer> [customer name] > + under Contact> enter the customer PayPal email id and click save.
+1. Click **Management**>**Customer**>[customer name].
+2. Click the green **`Edit`** button in the top-right.
+3. Navigate to the **Config** tab.
+4. Enter the PayPal e-mail into the **PayPal Email** text box.
+5. Click **`Save`**.
 
 
 [paypal-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/paypal-3.png "Paypal-3"

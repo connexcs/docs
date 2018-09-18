@@ -1,37 +1,37 @@
 # Table of Contents
 
-* [Table of Contents](#table-of-contents)
-* [Rate Card Management](#rate-card-management)
-    * [Provider Rate Card Upload](#provider-rate-card-upload)
-    * [Revision Tab](#revision-tab)
+- [Table of Contents](#table-of-contents)
+- [Rate Card Management](#rate-card-management)
+  - [Add New Rate Card](#add-new-rate-card)
+  - [Revision Tab](#revision-tab)
 
 
 
 # Rate Card Management
 
-Rate Cards are one of the most important features of Connex and managing rate cards is very easy and convenient.
+Rate Cards are an important ConnexCS feature, as they are the means by which most information is organized. This page will guide you through managing provider rate cards.
 
-This tutorial will guide you on how to manage your provider rate cards.
+## Add New Rate Card
+To add a new rate card to the list:
 
+1. Click **Management**>**Rate Card**.
 
-## Provider Rate Card Upload.
+   a![alt text][provider-card-1] 
 
-1. Click on Management> Rate Card
-
-   ![alt text][provider-card-1] 
-
-2. Click on Add New under Provider Rate Cards
+2. Click the blue **`+`** button to the top-right of the list.
 
   ![alt text][provider-card-2] 
   
-3. Name the provider card
-4. Select the Carrier from the dropdown list
-5. Select the desired currency
-6. Click Save
+3. Enter a unique name for the rate card.
+4. Select a carrier from the dropdown list.
+5. Select the relevant currency for the customer's region.
+6. Click **`Save`**.
  
    ![alt text][provider-card-3] 
 
-7. Click Upload>browse and select the rate card file
+#Upload a Rate Card
+To upload a rate card from an external file:
+1. Click **Upload>browse and select the rate card file
 
    ![alt text][provider-card-4]
 
