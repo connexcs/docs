@@ -1,28 +1,21 @@
 # Table of Contents
 
-* [Table of Contents](#table-of-contents)
-* [Packages](#packages)
-  * [Minimum Spend](#minimum-spend)
-  * [Add Package](#add-package)
-  * [Edit Package](#edit-package)
-  * [Delete Package](#delete-package)
-  * [Search Package](#search-package)
-  * [Other Features](#other-features)
+- [Table of Contents](#table-of-contents)
+- [Packages](#packages)
+  - [Add Package](#add-package)
+  - [Edit Package](#edit-package)
+  - [Delete a Package](#delete-a-package)
+  - [Search for a Package](#search-for-a-package)
+  - [Other Features](#other-features)
+  - [Minimum Spend](#minimum-spend)
 
 
 # Packages
 
-A package is a representation of a product/service that you are offering to your customers. It can be a chargable item that is recurring based on your required interval.
-A package is created as a global entity in the system, then allocated to each customer as required. You may wish to do this for any MRC such as DIDs, rental of a phone system or other hardware.
+A package represents a product or service offered to customers, often as a recurring charge based on goods delivrered at a required interval. A package is a global entity in the system that is allocated to each customer as required. A package may include incentives for MRC like DIDs, phone system rentals, or other hardware. 
 
-1. Click on setup>config>package
+To find the Packages section, go to **Setup**>**Config**>**Packages** from the dashboard.
 
-## Minimum Spend
-If you bill your customers for a minimum spend per month based on minutes consumption, you can set a package to have a minimum cost. At the recurrance interval it will calculate the spend of the customer for the previous interval, subtract that from the minimum spend and then pass that charge to their account.
-
-This tutorial will guide you through managing packages. Access the packages section from the setup menu, as shown in the screenshot below.
- 
-1. Go to setup>config>Packages 
 
  ![alt text][package-1]
  
@@ -30,77 +23,59 @@ This tutorial will guide you through managing packages. Access the packages sect
  
 The actions that you can perform in this section are:
 
-2.	Add a new package
-3.	Edit packages
-4.	Delete packages
-5.	Search packages
-
-Let’s take a look on each of the above.
-
 ## Add Package
 
-Once you are on the packages screen, follow the steps shown below:
-
-1.	Click on **"+"** button.
+To add a package:
 
 ![alt text][package-3]
- 
-2.	A new model window will open up, allowing you to enter the relevant information.
- 
+
+1.	Click the **`+`** button.
+
 ![alt text][package-4]
 
 3.	Give a name to the package.
 4.	Provide cost and quantity.
-5.	Select frequency plan as daily, weekly, monthly.
+5.	Select frequency plan as daily, weekly, monthly.  Choosing weekly or monthly will allow you to select multiple days for each.  
+6. Provide a description for the package.
+7. Click **`Save`**.
 
 ![alt text][package-5] 
 
-•	When you choose it as weekly, you can select multiple days for it.
-
-![alt text][package-6] 
-
-•	When you choose monthly, you can select multiple days of the month.
- 
- ![alt text][package-7]
- 
-6.	Provide the description and then click on Save.
-
-The newly saved package will now be listed on the main page.
-
 ## Edit Package
 
-To edit a package, do the following:
+To edit a package:
 
-1.	On the packages page, click on the package name that is to be edited.
-2.	Edit the information.
-3.	Click on Save button.
+1.	From the packages list, click the package name.
+2.	Edit the information in the same fashion as creating a new package.
+3.	Click the **`Save`** button.
 
 ## Delete a Package
 
-To delete a package from the list;
+To delete a package:
 
 1.	Select a package from the list.
-2.	Click on trash icon.
+2.	Click the trash icon.
 
  ![alt text][package-8]
  
 ## Search for a Package
 
-To search for a package from the list, type the name of the package in the search field. The package should then be displayed. 
+To search your packages list for titles and keywords, use the search box at the top-right of the page to enter terms, and click the **`Search`** button.
  
  ![alt text][package-9]
 
 ## Other Features
 
-Packages page has some other features too.
-
-1.	The list can be refreshed from the Refresh button.
-2.	Sort the columns in ascending/descending orders.
-3.	Hide a column.
-
-All these features can be seen in the screenshot below.
+* Use the **`Refresh`** button.
+* Sort columns in ascending or descending orders by clicking the headers
+* Hide a column by selecting it and clicking the **`Hide`** button.
 
 ![alt text][package-10]
+
+
+## Minimum Spend
+Use this if you bill your customers for a minimum spend per-month based on minutes consumption. The mechanism will calculate the customer's spend in the previous interval, subtract it from the minimum spend, and then pass that charge to their account.
+
  
 [package-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/245.png "package-1"
 [package-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/246.png "package-2"

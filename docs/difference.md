@@ -5,16 +5,15 @@
 
 # Difference
 
-Having 2 seperate systems synchronised is not trival matter even if the 2 systems are designed for that very purpose.
-It is normal for there to be slight variations between stats and CDR's, but there are acceptable tollerances, this is known in the telecoms
-industry and there is error margin added to profits, etc to compensate.
+Usibg two synchronised systems is not always trivial, even if they are designed for that  purpose. There are normally slight variations between stats and CDRs, so most telecoms allow margins for error to compensate.
 
 ## Channels
-There are many variables that are used in calculating channels and latency in reporting figures from 1 side to the other. Most UI's which
-report channels also have intrinsic latency as the data is passed from the dialog variables to the UI.
+Many variables are used to caclculate channels and latency in reporting figures from one side to the other. Most user interfaces that report on channels also calculate for the inherent latency that will occur as data moves from the system to the UI.
 
-- A ConnexCS Channel represents a bi-directional (2) audio streams.
-- A channel represents ANY dialog state post routing-engine (this includes, pre-ring, ringing, connected and teardown).
-  - There may be a latent affect of comparing this between servers. 
+- A ConnexCS Channel represents a bi-directional (2) audio stream.
+- A channel represents any dialog state post routing-engine, including pre-ring, ringing, connected, and teardown.
+  - There may be additional latency effects between servers. 
   
 ## CDR
+
+[EKS]: <> (Inquire again about what should go here)

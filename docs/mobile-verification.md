@@ -1,24 +1,19 @@
 #Mobile Verification: 
 
-We verify mobile phone numbers to ensure that they are genuine.
-
-Steps to Verify Mobile Number
-
-1. Click on the Top Left notification button
-2. Click on Verify on Verify Mobile
-3. Click on Edit
-4. Enter the phone number in e.164 format and click save
-5. Click on Send Verification Code
-6. Enter the Verification code sent to your mobile and click Verify.
-
+**Mobile Veirification** is the process by which we verify mobile phone numbers to ensure that they are genuine. It is an extension of [e-mail verification]. 
 
 ![alt text][verify-mobile-1]
+
+1. Click the notification button in the top-left of the page.
+2. Click the **`Verify`** button next to **Verify Mobile**.
+3. Click **`Edit`**.
+4. Enter a phone number in e.164 format, and click **`Save`**
+5. Click **`Send Verification Code`**.
+6. Enter the verification code sent to your mobile and click **Verify**.
 
 ![alt text][verify-mobile-3]
 
 ![alt text][verify-mobile-2]
-
-
 
 [verify-mobile-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/verify-mobile-1.png "verify-mobile-1"
 [verify-mobile-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/verify-mobile-3.png "verify-mobile-3"
