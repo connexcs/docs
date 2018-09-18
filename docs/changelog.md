@@ -1,7 +1,10 @@
 # Change Log
 
+## 17th September 2018
+**CANCEL / Connected Race Condition UAC Fix** - If the switch observes a CANCEL after a 200OK, it will end the dialog, this is typically something that should be done by the UAC, however buggy clients dont always properly implement the detection of this.
+
 ## 14th September 2018
-**Real Distributed Channel Limitation** - When using a cluster, any channel limits set will be calculated between all available nodes in the cluster.
+**Real Distributed Channel & Throughput Limitation** - When using a cluster, any channel or CPS limits set will be calculated between all available nodes in the cluster.
 
 ## 13th September 2018
 **Sankey Diagrams on Dashboard** - Sankey diagrams showing channels between customers and providers.
