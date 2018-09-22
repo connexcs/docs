@@ -4,34 +4,30 @@
 * [Reporting a Problem](#reporting-a-problem)
 
 # Reporting a Problem
+This page covers the best practices for reporting problems to ConnexCS support.  We encourage feedback, but want to make sure you have the most efficient means of expressing a problem so there are no holdups.
 
-## One at a time please.
+**One at a time, please**
 
-If you have more than one problem to report we suggest that you either:
+If you have more than one problem to report, we ask:
 
-1. Raise a separate ticket for each request.
-2. Inform us about these problems one at a time and allow an adequate amount of time for us to assess the problem and resolve it.
-3. Telephone
+1. Create a separate ticket for each request.  This so the the individual concerns get routed to the correct staff.
+2. Allow an adequate amount of time for us to assess the problem and resolve it.  We first have to assess if the problems are connected, adding extra time onto finding the roots themselves.
+3. Call instead of emailing.  This is so we can get a concise reading on all concerns quickly and ask follow-up questions on the spot.
 
 ## Support Channels
+Below is a list of channels you can use to reach us.
 
-### Online Chat
+**Online Chat**
 
-If you would like real-time assistance you can use our online chat system available as the blue icon in the bottom left of this page.
+Online chat is real-time assistance that is useful when you're not in a position to call.  The blue help icon at the bottom of this page will lead you to a chat window.  Clicking this button alerts staff, and first person to become available will reply as soon as possible.  We find that most questions get resolved efficiently this way. Please note that thee chat system is for one-on-one communication about a specific problem, not for multiple concerns or system-wide change requests. 
 
-This will alert all of our available staff and the first one available will reply to you. Our chat system also alerts engineers when they are not by their computers to try and increase our availability.
+[placeholder-chat button image]
 
-We regret if we are not able to resolve your problem while we are in the chat, or the right person is not available at any particular time. Over 90% of our chats are answered and resolved.
+**Tickets**
 
-The chat system is NOT intended for you to throw all your problems at us in one go, it is for 1-to-1 communication with a real person who will spend time resolving your issues.
+Support tickets cann be created by clicking the Safety Ring icon in the top-right of the dashboard.
 
-We will make every effort to reply to your chat in a reasonable time frame, however please be prepared to dedicate your time to replying to our responses as we may need additional information to solve the issue.
-
-### Tickets
-
-If you have many problems to report or we are not available via chat, you can raise a support ticket. This is available by clicking on the Safety Ring icon in the top right of our application.
-
-### Phone
+**Phone**
 
 If you wish to speak to a real person you can call our office number listed on our main website. Our support line WILL contact engineers (and wake them up) 24/7. We kindly ask that you only ring this number during 9:00am - 23:00pm GMT, unless there is a CRITICAL issue.
 
@@ -47,34 +43,27 @@ We classify issues into the following categories:
 
 When reporting a problem it is important to provide us with the following information:
 
-### Self-help
+**Documentation**
 
-We have documentation available on this site which you can search through to try and help you resolve your problem.
+Our onsite documentation has a two-fold purpose:
 
-If a call is failing we have provided a rich interface with detailed information in our logging system including data direct from our routing engine and a great SIP Ladder to analyse the communication to your providers.
+* To provide a repository where you can search for information relevant to your problem.
+* To Inform your questions when you contact support.
 
-Please take the time to see if our documentation has a guide on how you can resolve your problem and to investigate all the information available to you.
+Sometimes a complication is just a matter off turning off parameters that aren't compatible.  These are instances where a little troubleshooting might solve it.  There are other times where a bit of help is needed as well, and understanding the documentation will speed our efforts to remedy larger concerns. 
+ 
+**User Interface Issue**
 
-### User Interface Issue
+Including a screenshot along with a clear description of the problem can really help us understand what needs to be resolved.  For an efficient utility to take UI screenshots, we recommend a browser pugin called "Lightshot", or use your OS's buit-in snipping tool.
 
-If the problem is on our control panel or the customer portal, please provide a clear description of the problem and if possible include screenshots.
-We recommend the Firefox & Chrome plug-in "Lightshot", this will help doing a screen capture easily and effectively.
+**Problems with Calls**
 
-### Problems with Calls
+For problems with call flow, the **Call-ID** is how we identify which calls are affected.  It helps us isolate customers, providers, and/or channels that may be affected.  Call-ID is found in the **Logging** section by clicking on a call, and then copying the ID to right of the panel.
 
-If you are experiencing problems with call flow, the most important thing to provide are callids.
-The Call-ID can be found by going to the logging section, clicking on a call, then copying the ID which appears on the right of panel.
+**Clear and Concise**
 
-### Clear and Concise
-
-"Call is not going", without any additional information is not an appropriate problem to report.
-
-We expect users of our system to understand basic telecommunication & VoIP fundamentals.
-
-Not providing the correct information can greatly delay the resolution of your problems.
+All of the above steps contain more ways for you to be able to identify your problem, troubleshoot it, and then communicate the problem(s) clearly in the event of contact.
 
 ## Lastly
 
-We are real people who deal with many enquiries per day and we are all a friendly bunch and will try our best to help you. We are happy to talk with you about wider SIP topics outside of our switch where possible, however we do not tolerate rude behaviour, intimidation or threats.
-
-We are all SSVVP and SSCA qualified. Wherever possible we will cite references and point you to SIP traces for factual information.
+We are also happy to talk with you about wider SIP topics outside of our switch where possible, however we do not tolerate rude behaviour, intimidation or threats.  We are all SSVVP and SSCA qualified, and whenever possible, we will cite references or point you to SIP traces for fact-checking information.

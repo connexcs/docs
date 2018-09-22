@@ -1,88 +1,85 @@
 # Table of Contents
 
-* [Table of Contents](#table-of-contents)
-* [Rate Card Building](#rate-card-building)
-  * [Rate Card Compilation Engine](#rate-card-compilation-engine)
-    * [Different Length Prefixes](#different-length-prefixes)
-       * [Why do I have alot of long prefixes?](#why-do-i-have-alot-of-long-prefixes)
-    * [Combining](#combining)
-        * [Between Cards](#between-cards)
-        * [Different Card Types](#different-card-types)
-    * [Adding Profits](#adding-profits)
-    * [Why should I use this?](#why-should-i-use-this)
-        * [Example 1](#example-1)
-        * [Example 2](#example-2) 
-        * [Example 3](#example-3)
-    * [Outputs](#outputs)
-        * [Minimum](#minimum)
-        * [Maximum](#maximum)
-        * [Average](#average)
+- [Table of Contents](#table-of-contents)
+- [Rate Card Building](#rate-card-building)
+    - [Rate Card Compilation Engine](#rate-card-compilation-engine)
+        - [Different Length Prefixes](#different-length-prefixes)
+            - [Why do I have alot of long prefixes?](#why-do-i-have-alot-of-long-prefixes)
+        - [Combining](#combining)
+            - [Between Cards](#between-cards)
+            - [Different Card Types](#different-card-types)
+        - [Adding Profits](#adding-profits)
+        - [Why should I Use Rate Card Building?](#why-should-i-use-rate-card-building)
+            - [Example 1](#example-1)
+            - [Example 2](#example-2)
+        - [Example 3](#example-3)
+        - [Outputs](#outputs)
+            - [Minimum](#minimum)
+            - [Maximum](#maximum)
+            - [Average](#average)
 
 # Rate Card Building
 
-It is good practice to base your rate cards around provider cards rather than to just make your own up. This is for many reasons. One of which is code accuracy. 
+It is always sound practice to base rate cards on the information in provider cards. Code accuracy is one of these benefits, and perhaps the most important.  In any system with card-based profiles, code accuracy is one of the means to ensure the accuracy of the whole system, and to make all passed or collected data more reliable.
 
 ## Rate Card Compilation Engine
 
-ConnexCS features a very comprehensive rate card building engine. It can ingest multiple rate carrier rate cards (Parent Rate cards) in either NPA-NXX or single cost (column) and output NPA-NXX or single-cost.
-Based on how you wish to calculate these it can take the min,max or average values.
+ConnexCS features a comprehensive rate card building engine., which can ingest multiple rate carrier rate cards (Parent Rate cards) in either NPA-NXX or single-cost (column) and output NPA-NXX or single-cost. These can take the minimum, maximum, or average values.
 
 ### Different Length Prefixes
-The ConnexCS rate card engine can deal with arbitrary length prefixes and understand strict rules that are required when merging these together.
+The ConnexCS rate card engine handles arbitrary length prefixes and understands the strict rules required to merge them.
 
 #### Why do I have alot of long prefixes?
-In order to ensure accuracy it may be required to **normalize** rate cards when combining them. This process makes all the cards comparible and can cause additional prefixes to be added. These changes are safe and are to increase granularity, they will not introduce errors. After the compilation process has taken place additional scripts are run to make the rate card smaller again, however the primary goal of the engine is accuracy.
+To ensure accuracy, it may be necessary to **normalize** rate cards when combining them. The process makes all  cards comparible, and can add additional prefixes. These changes are safe, however, and are included to increase granularity; they won'tintroduce errors. After compilation, additional scripts are run to make the rate card smaller; however, the primary goal of the engine is accuracy.
 
 ### Combining
 #### Between Cards
-If you have multiple carrier cards and you wish to compile them into a single card, you will need to pay attention to the **Rate Compact** variable. This will be the strategy that it will use to output a cost per destination. You could use Min if you are dealing with cost sensitive routing, or Max if you are looking at quality driven prices.
+If you have multiple carrier cards and you want to compile them into a single card, pay attention to the **Rate Compact** variable. It will form the strategy we use to output a cost per destination. For instance, y ou could use Min if you are dealing with cost sensitive routing, or Max if you are looking at quality driven prices.
 
-_Note: If you use Min as default your calls will be routed to the cheapest provider first, but if that provider does not take the call, it will failover to a more expensive provider. There is the possibility that this provider may be higher than your profit margins. You can enable Profit Assurance, but be prepared, Profit Assurance can't protect against different billing pulses OR connection fees._
+**Note**: If you use Min as default, calls will be routed to the cheapest provider first, but if that provider does not take the call, it will failover to a more expensive provider.  Keep in mind that this provider may be higher than your profit margins. You can enable Profit Assurance to help aleviate this, but be prepared, Profit Assurance cannot protect against different billing pulses or connection fees.
 
 #### Different Card Types
 If you wish to transform an NPA-NXX price into a single cost per code, you will need to **collapse** your rate card. This takes similar settings to **Rate Compact** however this rule is used when picking out a single cost per prefix per provider. It is joined with other providers AFTER this process has taken place.
 
 ### Adding Profits
-Once you have combined your rate cards you can add your margins.
+Margins are added once you've combined your rate cards.  They are defined as Regular Expressions or standard prefixes, if numeric only. A rule will match all child rules. For example,  if you add '49,  it will apply the rules to '491', '492', '4912345' or whichever rules were generated by the previous process.
 
-The Margins are defined as Regular Expressions or standard prefixes if numeric only. A rule will match all child rules. e.g if you add '49' it will apply the rules to '491', '492', '4912345' or whatever rules were generated by the previous process.
+There are three strategies used here:
+* **Absolute** -  Uses the value you enter, and disregards any previously set values.
+* **Relative** - Adds the value you enter to the rules generated by the previous process.
+* **Percent** - Calculates your margin as a percentage.
 
-There are 3 strategies used here:
-* **Absolute** - This uses the value that you enter and disregards any previously set values.
-* **Relative** - This adds the value that you enter to the rules generated by the previous process.
-* **Percent** - This calculates your margin as a percentage.
+Using Absolute and Relative can be useful, especially when dealing with large cards as if your providers prices change, as only a single click is needed to regenerate the customer rate cards.
 
-_Using Absolute & Relative can be very useful, especially when dealing with large cards as if your providers prices change, only 1 click is needed to regenerate the customer rate cards._
-
-### Why should I use this?
+### Why should I Use Rate Card Building?
 #### Example 1
 
-You may wish to provide UK Landline to your customers and decide to add `441` in your rate deck. Your carrier may charge more to deliver calls to Gurnsey so they would have a higher cost for `441481`. If you were to build your own card you would not know about this.
+You may want  to provide UK landlines to your customers, and decide to add `441` in your rate deck. Your carrier may charge more to deliver calls to Gurnsey, so they would have a higher cost for `441481`.  Building your own rate cards might make discrepencies like this less apparent.
 
-A possible consequence is that your carrier will charge you more and you may lose money. Profit Assurance can protect you against this in some senarios, but not if your carrier bills on 60/60 and you are selling at 1/1 or if you carrier has connection fees. Also your customer may be expecting to connect calls to prefixes that you didnt include if you rely purely on profit assurance.
+One possible consequence is that your carrier will charge you more in these instance. Profit Assurance can protect you against this in some cases, but not if your carrier bills on 60/60 and you are selling at 1/1, or if your carrier has connection fees. Also,  customers might expect to connect calls to prefixes that aren't included if you rely purely on profit assurance.
 
 #### Example 2
 
-If you sell NPA-NXX, but you also have a few flat rates (and cherry picking is allowed) with just a 1 prefix, you can combine multiple cards together to generate the most competitive pricing. Then place your margins at 20%, once a carrier issues you a new rate card, you can simple click regenerate and the system will deal with all 200K prefixes on each and generate new pricing for you.
+If you sell NPA-NXX, but you also have a few flat rates (and cherry picking is allowed) with just one prefix, you can combine multiple cards to generate the most competitive pricing. Then, you can place the margins at 20% once a carrier issues you a new rate card, click regenerate, and the system will deal with all 200,000 prefixes on each and generate new pricing.
 
 ### Example 3
 
 
 | Prefix  |     Destination     |  Cost |
 |----------|:-------------:|------:|
-| *Provider Rate Card A* |   |  |
+| **Provider Rate Card A**|   |  |
 | 441 |    UK Landline |  0.01 |
 | 442 | UK Landline |    0.01 |
-| *Provider Rate Card A* |  |     |
+| **Provider Rate Card A** |  |     |
 | 441 | UK Landline |  0.0075 |
 | 442 | UK Landline |   0.0075 |
-| *Provider Rate Card A* |  |  |
+| **Provider Rate Card A** |  |  |
 | 441 |  UK Landline |  0.02|
 | 442 |  UK Landline |    0.02 |
 
 ### Outputs
 
-If we merged all 3 of the above cards, each with a different Rate Compact, we would end up with the following different rate cards.
+If we merged all three of the above cards, each with a different Rate Compact, we would end up with the following rate cards.
 
 #### Minimum
 
