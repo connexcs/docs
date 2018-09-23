@@ -1,31 +1,28 @@
 # Table of Contents
 
-* [Table of Contents](#table-of-contents)
-* [Routing Strategy](#routing-strategy)
-    * [Types of Routing Strategies](#types-of-routing-strategies)
-    * [Adding New Routing Strategy](#adding-new-routing-strategy)
-    * [Deleting the Routing Strategy](#deleting-the-routing-strategy)
-    * [Edit the Routing Strategy](#edit-the-routing-strategy)
-    * [Adding and Deleting Card](#adding-and-deleting-card)
-    * [Blocking Calls](#blocking-calls)
+- [Table of Contents](#table-of-contents)
+- [Routing Strategy](#routing-strategy)
+    - [Types of Routing Strategies](#types-of-routing-strategies)
+    - [Adding, Editing, and Deleting Routing Strategies](#adding-editing-and-deleting-routing-strategies)
+    - [Setting up Routing Strategy in Customer Account](#setting-up-routing-strategy-in-customer-account)
+    - [Deleting the Routing Strategy](#deleting-the-routing-strategy)
+    - [Adding and Deleting Card](#adding-and-deleting-card)
+    - [Set Strategy Inside customer rate card](#set-strategy-inside-customer-rate-card)
+    - [Blocking Calls](#blocking-calls)
 
 # Routing Strategy
 
-The **Routing Strategy** allows you to route calls of different providers through the routing engine according to the routing strategy you set. Routing Strategy is an extremely useful feature which allows you to adopt call routing which suits best your business need.
+A **Routing Strategy** lets you route calls for different providers through the routing engine using a specified set of rules. It helps with call routing, a necessary mechanic to match operations with business needs.
 
 ## Types of Routing Strategies
+The following lists the types of routing strategies that can be employed with ConnexCS:
 
-**1. LCR** – Least Cost Route
-
-**2. Random** – Routing calls to any random route without any sequence.
-
-**3. Round Robin** - System will pick a call route according to the sequence you selected.
-  
-**4. Manual** - Manual pick by the selected route.
-  
-**5. Reverse LCR** – Most Expensive route will be chosen first.
-
-**6. Tier Routing**  -  "Tier" in routing strategy allows 1 selection per tier.
+* **LCR** – Least Cost Routing configures parameters to the lowest cost-per-call.
+* **Random** – Routing calls to any random route without any sequence.
+* **Round Robin** - System will pick a call route according to a predetermined sequence.
+* **Manual** - Manually decide how calls are routed.
+* **Reverse LCR** – The most expensive route will be chosen first.
+* **Tier Routing**  -  Tiers in routing strategy allows one selection per tier.
 
 Example
 
@@ -35,46 +32,47 @@ Example
 
 3 [F,G,H]
 
-First run may be A,E,G second one may be B,D,F. But never more than 1 from the same Tier would be allowed.
+The first routing could be A,E,G; the second may be B,D,F; but no more than one from the same tier would be allowed.
 
-On the Dashboard, select **Management** and choose **"Routing Strategy"** from the drop down menu.
+To find **Route Strategy**:
+1. From the Dashboard, select **Management** 
+2. Click **Routing Strategy** from the drop down menu.
 
    ![alt text][routing-dashboard-new]
 
-Users can set and manage their Routing Strategy by:
- 
-1. Adding New **Routing Strategy.**
-2. Deleting the **Routing Strategy.**
-3. Edit the **Routing Strategy.**
+The Routing Strategy screen displays your current strategies in an alphabetical list, which is sorted between ascending and descending with the **Name** column. You can also sort them according to strategy type by clicking the **Strategy** column.
 
-## Adding New Routing Strategy
-
-1. Click on the **"+"** sign to add a new Routing Strategy.
+## Adding, Editing, and Deleting Routing Strategies
+To add a new routing strategy:
+1. Click the **`+`** button to add a new routing strategy.
 
    ![alt text][routing-strategy1]
 
-2. Name the Strategy.
-3. Select the Strategy type
-4. Click + 
-5. Select the card from the drop down list.
-6. Press **Save** button.
+2. Name the strategy.
+3. Select the strategy type
+4. Click the **`+ `** button.
+5. Select a card from the drop down list.
+6. Click the **`Save`** button.
 
    ![alt text][routing-strategy2]
    ![alt text][routing-strategy3]
 
+**Editing and Deleting Strategies
  
 ## Setting up Routing Strategy in Customer Account
-
-1. Click on the customer account
+To set up a routing strategy in a customer's account:
+1. From the dashboard homescreen, select **Management**>**Customer**.
+2. Select the customer account by clicking its name.
 
    ![alt text][routing-strategy4]
 
-2. Click on Routing
+3. On the left side of the customer's card, select **Routing**.  The **Ingress Routing** screen opens.
 
    ![alt text][routing-strategy5]
 
-3. Click on the rate card name under Ingress Routing
-4. Click + under Strategy & select the stratgy that you wish to assign.
+4. Select the rate card you want to edit by clicking its name.  The **Edit Ingress Routing** screen opens.
+5. Click **Strategy**, and then the blue **`+`** in the window that follows.
+6. Selct a strategy from the dropdown list.  Note that you can also add a prefix in this screen.
 
    ![alt text][routing-strategy6]
 
@@ -83,18 +81,11 @@ Users can set and manage their Routing Strategy by:
 If you need to you can delete the **Routing Strategy.**
 
 1. Select the **Routing Strategy.** from the list.
-2. Press **Delete** button which is on extreme right, next to **"+".**
+2. Press **Delete** button which is on extreme right, next to **"+".**  
+3. Selct a strategy from the dropdown list.  Note that you can also add a prefix in this screen.
 
    ![alt text][routing-strategy7]
 
-## Edit the Routing Strategy
-Users can edit the strategy by:
-
-1. Click on the edit sign of the **Routing Strategy.** you want to edit from the list, highlighted in orange, in the image given below. 
-   
-   ![alt text][routing-strategy9]
-   
-2. Edit the Strategy and press **"Save".**
 
 ## Adding and Deleting Card
 
