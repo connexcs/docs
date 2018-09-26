@@ -1,54 +1,53 @@
 # Table of Contents
 
-* [Table of Contents](#table-of-contents)
-* [System Status](#system-status)
+- [Table of Contents](#table-of-contents)
+- [System Status](#system-status)
    
 
 # System Status
 
-The status feature lets you update the status on your customer portal. This helps you communicate downtime and system outages to your customers.
+The **System Statu**s feature updates the status of customer portals, and provides a way to communicate downtime and system outages to your customers.
 
+To setup status:
 
-Please follow the instructions below to setup status:
-
-1. Click on Management> Status
-2. Click on + under status component
+1. Click **Management** > **Status**.
+2. Click  the **`+`** button under status component.
 
 ![alt text][system-status]
 
 ![alt text][system-status-1]
 
-3. Enter the Title, optionally you can enter the description & click save
+1. Enter a title, and a description (optional).
+2. Click the **`Save`** button.
 
 ![alt text][system-status-2]
 
-To add a New History Follow the below instructions.
+To add a new history:
 
-1. Click on + under Report History
+1. Click the **`+`** button under **Report History**.
 
 ![alt text][system-status-3]
 
-2. Enter the Title
-3. Select the status
-4. Select the visibility
-5. Enter a brief description about the issue 
-6. Click Save
+2. Enter a title.
+3. Select a status.
+4. Select visibility.
+5. Enter a brief description.
+6. Click the **`Save`**.
 
 ![alt text][system-status-4]
 
-These statuses will be displayed on your customer portal depending upon the visibility you set.
+Statuses will be displayed on your customer portal, depending upon the visibility you set. To enable status on your customer portal:
 
-To enable status on your customer portal follow the below instructions
-
-1. Click on Setup> Integrations> Domains
+1. Click **Setup** > **Integrations** > **Domains**.
 
 ![alt text][system-status-5]
 
-2. Click on the domain name
+1. Click the domain name.
 
 ![alt text][system-status-6]
 
-3. Under User Access Area enable the status and click save.
+1. Under **User Access Area**, enable the Status.
+2. Click the **`Save`** button.
 
 ![alt text][system-status-7]
 

@@ -1,47 +1,45 @@
 # Table of Contents
-* [Table of Contents](#table-of-contents)
-* [Templates-Connex](#templates-connex)
-  * [Search Template](#search-template)
-  * [Refresh-list](#refresh-list)
+- [Table of Contents](#table-of-contents)
+- [Templates-Connex](#templates-connex)
+  - [Search Template](#search-template)
+  - [Refresh list](#refresh-list)
 
 
 
 # Templates-Connex
 
-You can customize the SMS template, according to your business rule or requirement. For this;
+ConnexCS lets you customize SMS templates according business rules andrequirements. 
 
-1) Login to your Connex account
-2) Go to Setup>click on Config>click Templates
+1) Go to **Setup**.
+2) click on **Config** > **Templates**.
 
 ![alt text][temp-1] 
  
-3)	All the existing templates would show up. Select any template by clicking on its name.  
+3) Select a template by clicking its name. The next window shows the SMS body and subject.
 
 ![alt text][temp-2]
 
-A new page would open.That page would show the SMS body and subject.
-
-3)	Click on the **"Edit"** button to customize the SMS.
+4)	Click  the **`Edit`** button to customize the SMS.
 
 ![alt text][temp-3]
  
 Under the Subject, SMS, Text and HTML:
 
-a)	Write your brand name in the place of **"{{brandName}}"**
-b)	Give area that you want to generate the alert about in the place of **"{{area}}"**
-c)	Give value in **"{{value}}"** etc.
+* Write your brand name in the place of **{{brandName}}**.
+*	Provide the area that coincides with the alert in **{{area}}**
+*	Give value in **{{value}}** etc.
 You can also apply style to your text via html style panel given under the HTMLtag.
-4)	Click on **"Save"** when you are done.
+*	Click **`Save`** .
  
 ![alt text][temp-4]
 
 ## Search Template
 
-Any template can be searched from the list. Just type in the search field and results will be filtered out in run time.
+Any template can be searched from the list using the search field at the top-right of the page. Results will be filtered out in run time.
 
 ## Refresh list
 
-The templates list can be refreshed any time to fetch the latest templates. Simply click on Refresh button and you will get the updated list.
+Click the **`Refresh`** button to ensure the current onscreen list includes all recent changes.
 
 ![alt text][temp-5]
  

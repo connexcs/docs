@@ -1,12 +1,9 @@
 # Table of Contents
 
-* [Table of Contents](#table-of-contents)
-* [User Space Database](#user-space-database)
-    * [Adding New User Space Database](#adding-new-user-space-database)
-    * [Refresh the List](#refresh-the-list)
-    * [Deleting the Items](#deleting-the-items)
-    * [Edit the Details](#edit-the-details)
-    * [Search Text Fields](#search-text-fields)
+- [Table of Contents](#table-of-contents)
+- [User Space Database](#user-space-database)
+    - [Edit the Details](#edit-the-details)
+    - [Searching Text Fields](#searching-text-fields)
  
 
 
@@ -14,77 +11,64 @@
 
 A user database is a flexible datastore that has multiple use cases mainly used in allocations which you can build using ScriptForge. It is also available in 3 different backends each with their own advantages and disadvantages
 
-There are 3 different types of datastore accessible.
+There are three different types of datastores available:
 
-1. High Capacity - This is a key-value pair store which uses eventual consistancy to replicate between zones. This is ideally used for lists of numbers for example a DNC list. It should not be used for counters or very high speed writes.
+1. **High Capacity** - This is a key-value pair store, which uses eventual consistancy to replicate between zones. Ideally, it is used for lists of numbers, such as a DNC list. It should not be used for counters or higher-speed writes.
 
-2. High Speed - This operates as a caching layer, is exceptionally fast and is also eventually consistent between zones. It should be considered ephemeral and used like a cache.
+2. **High Speed** - This operates as a caching layer, is exceptionally fast, and is also eventually consistent between zones. It should be considered ephemeral, and used like a cache.
 
-3. Highly Consistant - This datastore benefits from a global truth, it is fast at reads, slower on updates and is not designed to hold large quantities of data (< 10,000 records)
+3. **Highly Consistant** - This datastore benefits from a global truth, it is fast at reads, slower on updates, and is not designed to hold large quantities of data (less than 10,000 records).
 
-When you create your datastore you can specify what type of datastore will be created.
-Some examples of where datastore can be used.
+When you create your datastore, you can specify which type will be created. Datastores can be used for checking a list of numbers, caching external lookups, or creating stateful applications that allow users a certain amount of free minutes per month.
 
-Checking a list of numbers (#1), caching external lookups (#2), or creating a stateful application which could allow users X amount of free minutes per month.
-
-This tutorial will guide you on how to manage User Space Database. You can go to the *Setup* from the left pane and click on the **User Space Database**, as highlighted in the image below:
+To set up a User Space Database. 
+1. Go to the **Setup** > **User Space Database** from the dashboard. 
 
 ![alt text][user-space-img-1]
 
-You can add a new database and you can also refresh the lists in just one click.
 
-## Adding New User Space Database
-
-A new user space database can be added by following simple steps:
-
-1. Click on the **'+'** button.
+1. Click the **`+`** button.
 
 ![alt text][user-space-img-2]
 
-2.	Pop up will appear.
+3.	Fill in the details in the dialogue box.
 
-3.	Fill out the details in the dialogue box.
-
-4.	Click **Save** once the details have been entered.
+4.	Click the **`Save`** button. A new space will now be added in the list.
 
 ![alt text][user-space-img-3]
 
-A new space will now be added.
+**Refresh the list**
 
-## Refresh the List
-
-The list can be refreshed, if needed, by simply pressing the *Refresh* button.
+Press the **`Refresh`** button to see an updated list of items. This is the best way to make sure you're working with the most recent sets of data.
 
 ![alt text][user-space-img-1a]
 
-## Deleting the Items
+**Deleting Items**
 
 To delete an item from the list:
 
-1. Select any name from the *Area* column.
-2. Click the delete icon, which is right next to the *Refresh* button.
+1. Select any name from the **Area** column.
+2. Click the **`delete`** button, which is right next to the **`Refresh`** button.
 
 ![alt text][user-space-img-2a]
 
 
 ## Edit the Details
 
-To edit the details of any item, do the following:
+To edit the details of any item:
 
-1. Click on name of the *Area* column that needs to be updated.
+1. Click on name of the **Area** column.
 
 ![alt text][user-space-img-4]
 
-2. Pop up will appear. Edit the details in the dialog box.
-3. Click **Save**, once the details have been edited.
+1. Edit the details in the dialog box, same as creating a new datastore.
+2. Click the **`Save`** button.
 
 ![alt text][user-space-img-5]
 
-## Search Text Fields
+## Searching Text Fields
 
-You can search the *Area* and *Key* from the given search text fields.
-
-Following image depicts both search text fields.
+You can search the _Area_ and _Key_ from the given search text fields using the search box at the top right:
 
 ![alt text][user-space-img-6]
 

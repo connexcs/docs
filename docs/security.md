@@ -1,32 +1,32 @@
 # Table of Contents
 
-* [Table of Contents](#table-of-contents)
-* [Security](#security)
-  * [SSL Cerficiates](#ssl-certificates)
-  * [Inter-zone Communication](#inter-zone-communication)
-  * [Logins](#logins)
-    * [Passwords](#passwords)
-    * [2FA / TFA](#2fa-tfa)
-    * [Server Keys](#server-keys)
-  * [Exceptions](#exceptions)
-    * [IMCP Pings](#imcp-pings)
-    * [SIP / RTP Firewall Block on Default](#sip-rtp-firewall-block-on-default)
-    * [IDS / IPS](#ids-ips)
-  * [Data Usage](#data-usage)
-  * [Deploying SSL Certificates](#deploying-ssl-certificates)
+- [Table of Contents](#table-of-contents)
+- [Security](#security)
+  - [SSL Certificates](#ssl-certificates)
+    - [Inter-zone Communication](#inter-zone-communication)
+  - [Logins](#logins)
+    - [Passwords](#passwords)
+    - [2FA / TFA](#2fa--tfa)
+    - [Server Keys](#server-keys)
+  - [Exceptions](#exceptions)
+    - [IMCP Pings](#imcp-pings)
+    - [SIP / RTP Firewall Block on Default.](#sip--rtp-firewall-block-on-default)
+  - [IDS / IPS](#ids--ips)
+- [Data Usage](#data-usage)
+  - [Deploying SSL Certificates](#deploying-ssl-certificates)
 
 # Security
 
-**Security** is a topic that we take very seriously and we have utilized many best practices, reliable proven technology and latest ideas to keep everything safe.
+We take **Security** seriously at ConnexCS, emphasizing the industry's best practices in all our policies and procedures. We use proven technology and the latest ideas to keep your systems safe from threats both external and internal.
 
-We have compiled a top-level abstract list on how we do some things. This document is **_purposely_** kept brief in order to limit the exposure of our underlying systems, but please feel free to contact us if you have any specific questions about anything here.
+Below, we have compiled a top-level abstract list on how we secure our systems. The document is kept brief in to limit exposure to our underlying systems in a public forum, but feel free to contact with specific questions.
 
 ## SSL Certificates
-For all our HTTPS traffic we use short-lived **SHA256bit** certificates with 2048bit keys. Reject downgrade attacks such as **SSL2,3**. We use **HSTS, Perfect Forward Secrecy,** and **OCSP Stapling**. You are welcome to see our servers SSL test results here:
+Our HTTPS traffic uses short-lived **SHA256bit** certificates with 2048bit keys, rejecting downgrade attacks like **SSL2,3**. We use **HSTS, Perfect Forward Secrecy,** and **OCSP Stapling**. You are welcome to see our servers SSL test results here:
 https://www.ssllabs.com/ssltest/analyze.html?d=app.connexcs.com
 
 ### Inter-zone Communication
-All internal traffic travelling between zones traverses our mesh VPN protected by 4096 bit keys and managed by our internal CA Servers.
+All internal traffic travelling between zones traverses our mesh VPN, protected by 4096-bit keys and managed by internal CA Servers.
 
 ## Logins
 Our system uses an exponentially increasing delay on failed attempts and centralised reporting.
@@ -40,40 +40,36 @@ On every hash we use:
 - High Time, Memory Cost, Parallelism Cost
 
 ### 2FA / TFA
-All admins are required to use Two-factor authentication when signing into the system. Two Factor Authentication is also available for any user accounts using  RFC 6238 (https://tools.ietf.org/html/rfc6238) style TOTP (Time Based One-time Passwords) using applications such as Google Authenticator or Microsoft Authenticator.
+All admins are required to use two-factor authentication when signing into the system. Two-Factor Authentication is also available for any user accounts using RFC 6238 (https://tools.ietf.org/html/rfc6238)-style TOTP (Time Based One-time Passwords), using applications such as Google Authenticator or Microsoft Authenticator.
 
 ### Server Keys
-Anyone who has direct access to any servers is required to use SSH Keys. All systems where keys are not possible, long multi-symbol passwords are used.
+Any user with direct access to any servers is required to use SSH Keys. In all systems where keys are not possible, long multi-symbol passwords are used.
 
 ## Exceptions
-We **DON'T** consider the following items insecure. We completely understand the consequences of enabling these systems but we believe that their benefits outweigh the security implications.
+We **do not** consider the following items insecure. We completely understand the consequences of enabling these systems, but we believe their benefits outweigh the security implications.
 
-This does **NOT** mean that we don't monitor activity on either of these, nor does it mean that we don't have automatic reactive systems in place to help ensure uptime in the event of attacks.
+This **does not** mean we don't monitor activity on either of these, nor does it mean that we don't have automatically reactive systems to ensure uptime in the event of an attack.
 
 ### IMCP Pings
-IMCP (Internet Message Control Protocol) Ping messages (e.g ping www.connexcs.com). There once was a time when IMCP Ping attacks were common, this was related to the packet size vs available bandwidth. Although IMCP Ping attacks may still happen, it is far more useful to enable IMCP replies to correctly establish the status of a server.
+IMCP (Internet Message Control Protocol) pings messages (e.g ping www.connexcs.com). IMCP Ping attacks were once common, related to the packet size versus available bandwidth. They still happen, but it is more useful to enable IMCP replies to correctly establish the status of a server.
 
 ### SIP / RTP Firewall Block on Default.
-Our SIP Servers only run SIP, nothing else. Our RTP Servers run RTP, nothing else.
+Our SIP Servers only run SIP, and nothing else. Our RTP Servers run RTP, and nothing else. 5060 is not firewalled, nor are any of our RTP Ports on our RTP Servers.
 
-This means that you **WILL** see unauthorized traffic hitting your switch, however you will note that the call was blocked because of authentication reasons. This is normal as it is important to see failed traffic as it may be misconfiguration authentication.
-
-5060 is not firewalled, nor are any of our RTP Ports on our RTP Servers.
+This means that you will most likely see unauthorized traffic hitting your switch, but you will also see unauthorized calls being blocked for failing authentication. This is normal, as it is still important to see failed traffic to make sure the authentication isn't blocking authorized callers.
 
 ## IDS / IPS
-We have application level logic that identifies malicious activity that will escalate issues upwards through to our IDS systems which will in return feedback firewall rules.
+We have application-level logic that identifies malicious activity, which will escalate issues to our IDS systems, which will enforce feedback firewall rules in return.
 
 # Data Usage
-Connex Carrier Services Worldwide LTD is an independent company, not owned by a parent company or affiliates. All data is retained in ConnexCS on ConnexCS servers and is never passed to any 3rd parties. All staff have to abide by company non-disclosure policies and it is made clear that any data breach would be treated with the utmost severity.
+Connex Carrier Services Worldwide, LTD is an independent company. All data is retained on ConnexCS servers, and **never** passed to third parties. All staff are required to abide by non-disclosure policies that protect user data, and it is made clear any data breach would be treated with severity.
 
 ## Deploying SSL Certificates 
 
 The SSL certificate can be deployed on your customer portal with a single click.
 
-1. Click on Setup> Integrations
-2. Click on Domains
-3. Click on Deploy Certificate
+1. Click  **Setup** > **Integrations**.
+2. Click  **Domains**.
+3. Click **Deploy Certificate**.
 
- ![alt text][ssl]
 
-[ssl]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/289.png "ssl"
