@@ -1,5 +1,8 @@
 # Change Log
 
+## 26th September 2018
+**Destination Server NAT Manual Enabled** - If the destination of a NAT is a UAS (Without registration), the server does not correct its advertised IP address & there is no SIP ALG in the NAT device, this option will allow NAT to be forced on the destination endpoint.
+
 ## 17th September 2018
 **CANCEL / Connected Race Condition UAC Fix** - If the switch observes a CANCEL after a 200OK, it will end the dialog, this is typically something that should be done by the UAC, however buggy clients dont always properly implement the detection of this.
 
