@@ -8,9 +8,9 @@
 # Rate Card Profits
 
 Now, you can manage customer rate card profits by tagging the profits as:
-* **Profit** -
-* **Remove** - 
-* **Blocked** - 
+* **Profit** - the profit applied when a customer rate card is built.
+* **Remove** - remove a profit setup from a rate card.
+* **Blocked** - stops calls from going through a destination.
 
 After logging into the dashboard, click **Rate Card**.
  
