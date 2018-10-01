@@ -1,5 +1,6 @@
 # Send SMS
 
-The **Send SMS** feature allows you to send a text message to your customers whenever you wish to inform them of account balances,
-credit limits, changes or anything else that you wish to let them know.
+The **Send SMS** feature allows you to send text messages to customers.  It can be used as a convenient way to provide account information, balances, and changes.  
+
+
 

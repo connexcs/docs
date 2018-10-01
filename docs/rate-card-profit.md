@@ -1,35 +1,37 @@
 # Table of Contents
 
-* [Table of Contents](#table-of-contents)
-* [Rate Card's Profits](#rate-cards-profits)
+- [Table of Contents](#table-of-contents)
+- [Rate Card Profits](#rate-card-profits)
 
 
 
-# Rate Card's Profits
+# Rate Card Profits
 
-You can now manage your Customer rate card's profits by tagging the profits as "Profit", "Remove" or "Blocked".
+Now, you can manage customer rate card profits by tagging the profits as:
+* **Profit** - the profit applied when a customer rate card is built.
+* **Remove** - remove a profit setup from a rate card.
+* **Blocked** - stops calls from going through a destination.
 
-1)	After logging in, on your dashboard, click on "Rate Card", as shown in the image below.
+After logging into the dashboard, click **Rate Card**.
  
 ![alt text][rate-card-profit-1] 
 
-2)	Switch to the "Customer Rate Cards" which is next to Provider Rate Cards tab.
+2)	Switch to the **Customer Rate Cards** tab.
 
 ![alt text][rate-card-profit-2] 
 
-You would see the customer rate card's list.
+The next screen shows the Rate Cards list.
 
-3)	Select a customer card by clicking on its Name.
+3)	Select a customer card by clicking its name.
 
 ![alt text][rate-card-profit-3] 
- 
-A new page would open.
 
-4)	Switch to "Profits" tab. Check out the Status column. 
+
+4)	In the customer's page, switch to **Profits** tab, and find the **Status** column. 
 
 ![alt text][rate-card-profit-4] 
 
-You can change the status of the profits by clicking on the "Status" column of that specific profit's row and select the status as remove, blocked or profit. You can add a new row and also select the status.
+In the **Status** column of the intended profit's row,  select the status as remove, blocked, or profit. You can also add a new row and select the status from there.
  
 ![alt text][rate-card-profit-5] 
 

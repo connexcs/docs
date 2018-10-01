@@ -1,138 +1,63 @@
 # Table of Contents
 
-* [Table of Contents](#table-of-contents)
-* [Reports Management](#reports-management)
-    * [Breakout](#breakout)
-    * [Selection of Customers, Providers and Destination](#selection-of-customers-providers-and-destination)
-    * [Selecting Multiple Customers](#selecting-multiple-customers)
-    * [Selecting Multiple Providers](#selecting-multiple-providers)
-    * [Selecting Multiple Destinations](#selecting-multiple-destinations)
-    * [Selecting the Range of Dates](#selecting-the-range-of-dates)
-    * [Scheduled Breakout reports](#scheduled-breakout-reports)
-    * [Adding a scheduled breakout report](#adding-a-scheduled-breakout-report)
-    * [View a scheduled breakout report](#view-a-scheduled-breakout-report)
-    * [Select the recipients and schedule the reports](#select-the-recipients-and-schedule-the-reports)
-
-
+- [Table of Contents](#table-of-contents)
+- [Reports Management](#reports-management)
+    - [Breakout](#breakout)
+  
 # Reports Management
 
-This article will guide how to view/download the reports.You can open the reports from the left panel as follows:
+This article explains how to view and download reports in ConnexCS.  To find **Report Management** from the dashboard:
 
-1.	Click on the **_Management_** from the side bar.
-2.	Click on the Reports.
-3.	And then click on the **_Breakout_**.
+1.	Click  **Management** from the side bar.
+2.	Click **Report**.
+3.	And then click **Breakout**.
  
 ![alt text][report-1]
 
 ## Breakout
 
-In the **_breakout section_**, users can filter it by a customers, providers or destinations. The overall view of the Breakout section is given in figure below for better understanding. 
+The **Breakout** section is where filter the display customers, providers, or destinations.
  
 ![alt text][report-2]
 
-## Selection of Customers, Providers and Destination 
 
-You can manage their report section by selecting the customers, providers and destination at the same time.
 
-* Checking the options from the drop down menu, enables the users to select the option of their choice.
-* You can also uncheck any of them from the options. 
-* Users can also **Select All** the options or **Select None** for all options. And Search text field is also provided. 
+* Dates are displayed top-left.  The first is for the start date, the second is for the end date, and entering both establishes a range of dates instead of one day.  Clicking on either will display a selection calendar where you can select dates and times, or you can enter each of these parameters manually.
+* The dropdown menus to the right of the dats is for customers, providers, and groups (if any).  They are in alphabetical order, and you can select more than one group where applicable.  Parameters are removed by clicking the `x` right next to its name.
+* There are also **Select All** and **Select None** options.
+* After you've entered parameters press the refresh button at the top right beneath the section row.  We advise against using the browsers refresh button, as this may also reset the parameters of the report.
  
 ![alt text][report-3]
 
-## Selecting Multiple Customers
 
-Users can select multiple customers from the drop down menu, where the list of all customers is given.
-
-1.	Click on **Select Multiple Customers** field.
-2.	Select the number of customers from the customers list.
  
 ![alt text][report-4]
 
-## Selecting Multiple Providers
+**Selecting Multiples**
 
-You can also select multiple providers from the list.
+To select multiple customers, providers, or groups, simply click more than one from the dropdown list when choosing which to display.  Remember to click the refresh button each time parameters change to ensure you're seeing the most recent selections onscreen.
 
-1.	Click on **Select Multiple Providers** field.
-2.	Select the providers from the drop down list.
- 
-![alt text][report-5]
+**Selecting the Range of Dates**
 
-As from the above image, the lists of the providers are given and users can either select all of them or select any of them.
-
-## Selecting Multiple Destinations
-
-Users can also select multiple destinations.
-
-1.	Click on the **Select Multiple Destinations.**
-2.	Write the name of the destination and select the desired ones.
-
-## Selecting the Range of Dates
-
-Users can also set the range of the dates from the calendar. 
- 
-You can have multiple choices in setting a date which is applicable on the reports.
-
-1. Users can apply the **_Current/Today's_** date.
-2. Users can add the **_Yesterday's_** date.
-3. Users can add **_Last 7 days_** dates and range of seven days shall be appeared.
-4. Users can also set the **_Last 30 days_** dates
-5. User can also add a range of dates, for example, the current month is June. So dates from May 01 to May 31 can be set by clicking on    1 and then 31.
-6. Or users can also customize the dates of their own choice from the calendar.
-   After the option has been selected or the range of the dates is decided, click on the OK button.
-
-
-After the option has been selected or the range of the dates is decided, click on the **OK** button.
+To select a range of dates, enter a date and time in the first and second boxes.  Entering a single date will only display activity for that day.  After the range of dates is selected, click the **`OK`** button.
  
 ![alt text][report-6]
 
-## Scheduled Breakout Reports
+**Scheduled Breakout Reports**
 
-With this feature you can schedule an email for a breakout report. The email gets sent over as per the frequency you select.
+This feature lets administrators schedule breakout report emails at designated intervals.  It is a way to add automation for frequent data requirements.  To schedule a breakout report:
 
-### Adding a scheduled breakout report
+1. From the **Report** menu, select **Schedule Report**.
+2. Click the **`+`** icon.
+3. A dialog box opens.  Here, you can enter all information relevant to the email report, with the same parameters as the reporting screen. The only new parameter is frequency, which determines how often the report is sentg between daily, monthly, and weekly.
+4. Click **`Save`**.
 
-Login to your Connex account.  From the side menu, extend the “Report” and click on “Breakout”.
- 
-![alt text][report-7]
-
-A new page will open, from the top. Click on the “+” icon that is highlighted in the image given below.
-
-![alt text][report-8]
- 
-A dialog box should open. Enter the Name, email address and select the frequency, click on “Save”.
- 
-![alt text][report-9]
-
-A new report has been added.
-
-### View a scheduled breakout report
-
-You can view the reports by clicking on the button “View Schedule Reports” which is right next to “+”.
-
-![alt text][report-10]  
-
-A new page will open which will show all the reports created till now.
+The scheduled reports screen will update to show the report you added once you've saved. 
 
 ![alt text][report-11]
 
-### Select the recipients and schedule the reports
+The schedule screen shows the name of the report, the email recipient(s), and the frequency.  To edit an existing report, click its name and a window similar to the new report screen opens, allowing you to change any of the previous attributes.
 
-You can select the recipients by choosing from customers, providers etc.  You can also choose the time period you want to schedule the reports.
-
-Click on the arrow sign to choose the accurate recipients for the reports. 
-
-![alt text][report-12]
- 
-Also select the customer’s list, provider’s list and destinations as per added by you in your account.
-
-![alt text][report-13]
-
-On the left side, there is a text box from which you can select the time period to schedule your reports. Just click on the text box and a drop down menu should open where you can choose the time. Select “Custom Range” if you are not able to find the time that you want to set in scheduling.
-
-A new drop down should open, customize the time period and click “Ok”
-
-![alt text][report-14] 
 
 [report-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/275.png "Report-1"
 [report-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/276.png "Report-2"

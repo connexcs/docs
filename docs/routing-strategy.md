@@ -1,128 +1,119 @@
 # Table of Contents
 
-* [Table of Contents](#table-of-contents)
-* [Routing Strategy](#routing-strategy)
-    * [Types of Routing Strategies](#types-of-routing-strategies)
-    * [Adding New Routing Strategy](#adding-new-routing-strategy)
-    * [Deleting the Routing Strategy](#deleting-the-routing-strategy)
-    * [Edit the Routing Strategy](#edit-the-routing-strategy)
-    * [Adding and Deleting Card](#adding-and-deleting-card)
-    * [Blocking Calls](#blocking-calls)
+
+- [Table of Contents](#table-of-contents)
+- [Routing Strategy](#routing-strategy)
+    - [Types of Routing Strategies](#types-of-routing-strategies)
+    - [Adding, Editing, and Deleting Routing Strategies](#adding-editing-and-deleting-routing-strategies)
+    - [Setting up Routing Strategy in Customer Account](#setting-up-routing-strategy-in-customer-account)
+    - [Blocking Calls](#blocking-calls)
+
 
 # Routing Strategy
 
-The **Routing Strategy** allows you to route calls of different providers through the routing engine according to the routing strategy you set. Routing Strategy is an extremely useful feature which allows you to adopt call routing which suits best your business need.
+
+A **Routing Strategy** lets you route calls for different providers through the routing engine using a specified set of rules. It helps with call routing, a necessary mechanic to match operations with business needs.
+
 
 ## Types of Routing Strategies
+The following lists the types of routing strategies that can be employed with ConnexCS:
 
-**1. LCR** – Least Cost Route
 
-**2. Random** – Routing calls to any random route without any sequence.
+* **LCR** – Least Cost Routing configures parameters to the lowest cost-per-call.
+* **Random** – Routing calls to any random route without any sequence.
+* **Round Robin** - System will pick a call route according to a predetermined sequence.
+* **Manual** - Manually decide how calls are routed.
+* **Reverse LCR** – The most expensive route will be chosen first.
+* **Tier Routing**  -  Tiers in routing strategy allows one selection per tier.
+	Note that only one type at a time can be chosen from the available options.
 
-**3. Round Robin** - System will pick a call route according to the sequence you selected.
-  
-**4. Manual** - Manual pick by the selected route.
-  
-**5. Reverse LCR** – Most Expensive route will be chosen first.
 
-**6. Tier Routing**  -  "Tier" in routing strategy allows 1 selection per tier.
+To find **Route Strategy**:
+1. From the Dashboard, select **Management** 
+2. Click **Routing Strategy** from the drop down menu.
 
-Example
-
-1 [A,B,C]
-
-2 [D,E]
-
-3 [F,G,H]
-
-First run may be A,E,G second one may be B,D,F. But never more than 1 from the same Tier would be allowed.
-
-On the Dashboard, select **Management** and choose **"Routing Strategy"** from the drop down menu.
 
    ![alt text][routing-dashboard-new]
 
-Users can set and manage their Routing Strategy by:
- 
-1. Adding New **Routing Strategy.**
-2. Deleting the **Routing Strategy.**
-3. Edit the **Routing Strategy.**
 
-## Adding New Routing Strategy
+The Routing Strategy screen displays your current strategies in an alphabetical list, which is sorted between ascending and descending with the **Name** column. You can also sort them according to strategy type by clicking the **Strategy** column.
 
-1. Click on the **"+"** sign to add a new Routing Strategy.
+
+## Adding, Editing, and Deleting Routing Strategies
+To add a new routing strategy:
+1. Click the **`+`** button to add a new routing strategy.
+
 
    ![alt text][routing-strategy1]
 
-2. Name the Strategy.
-3. Select the Strategy type
-4. Click + 
-5. Select the card from the drop down list.
-6. Press **Save** button.
+
+2. Name the strategy.
+3. Select the strategy type
+4. Click the **`+`** button.
+5. Select a card from the drop down list.
+6. Click the **`Save`** button.
+
 
    ![alt text][routing-strategy2]
    ![alt text][routing-strategy3]
 
+
+**Editing and Deleting Strategies
  
 ## Setting up Routing Strategy in Customer Account
+To set up a routing strategy in a customer's account:
+1. From the dashboard homescreen, select **Management**>**Customer**.
+2. Select the customer account by clicking its name.
 
-1. Click on the customer account
 
    ![alt text][routing-strategy4]
 
-2. Click on Routing
+
+3. On the left side of the customer's card, select **Routing**.  The **Ingress Routing** screen opens.
+
 
    ![alt text][routing-strategy5]
 
-3. Click on the rate card name under Ingress Routing
-4. Click + under Strategy & select the stratgy that you wish to assign.
+
+4. Select the rate card you want to edit by clicking its name.  The **Edit Ingress Routing** screen opens.
+5. Click **Strategy**, and then the blue **`+`** in the window that follows.
+6. Select a strategy from the drop-down list.  Note that you can also add a prefix in this screen.
 
    ![alt text][routing-strategy6]
 
-## Deleting the Routing Strategy
+Using a Customer Rate Card, you can select between LCR, Random, Round Robin, and Reverse LCR.
+This allows you to change the default behaviour of a card, but be advised that conflicting parameters set in a routing strategy will override it.
 
-If you need to you can delete the **Routing Strategy.**
+**Editing and Deleting Routing Strategies**
 
-1. Select the **Routing Strategy.** from the list.
-2. Press **Delete** button which is on extreme right, next to **"+".**
+* Editing a Routing Strategy follows the same procedure as adding a new one, except you click on the strategies name to bring up the window where strategies can be changed.  You can also add cards to your strategies in this screen by clicking the **`+`** button at the bottom of the edit window.  Click the **`Save`** button will update your changes.  
+* To delete a routing strategy, select its row from the Routing Strategy screen, and click the **`Delete`** button (the trash bin icon).
 
-   ![alt text][routing-strategy7]
-
-## Edit the Routing Strategy
-Users can edit the strategy by:
-
-1. Click on the edit sign of the **Routing Strategy.** you want to edit from the list, highlighted in orange, in the image given below. 
-   
-   ![alt text][routing-strategy9]
-   
-2. Edit the Strategy and press **"Save".**
-
-## Adding and Deleting Card
-
-You can add a card by clicking the **_"+"_** sign right under the Edit button. Click the **"Delete"** button next to it.
 
    ![alt text][routing-strategy10]
 
-## Set Strategy Inside customer rate card
-
-In a Customer Rate Card, it is possible to set a routing strategy. At the moment the functionility is basic, you can only select between LCR, Random, Round Robin, Reverse LCR.
-
-This allows you to change the default behaviour of a card, it loses priority against routing strategy. If a rule is set in here routing strategy, it ignores anything set in customer card.
 
 ## Blocking Calls
 
-It is possible with connex switch to block specific call using the Routing Strategy. Below are the steps
+Routing Strategy can also be used to block calls. 
 
-1. Click on Management> Customer
+1. Click **Management** > **Customer**.
+
 
 ![alt text][Blocking-Calls-1]
 
-2. Click on the customer Name> Routing> Rate Card
-3. Under Routing Strategy Click + & add the number that you wish to block and select to drop.
-4. Click Save
+
+1. Click a customer **Name** > **Routing** > **Rate Card**
+2. Under **Routing**, click **Strategy**.
+3. Add a number to block, and change the Strategy to **Drop**.
+4. Click **`Save`**.
+
 
 ![alt text][Blocking-Calls-2]
 
+
 [routing-dashboard-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/86.png "routing-dashboard"
+
 
 [routing-strategy1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/87.png "routing-strategy1"
 [routing-strategy2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/88.png "routing-strategy2"
@@ -136,10 +127,19 @@ It is possible with connex switch to block specific call using the Routing Strat
 [routing-strategy10]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/96.png "routing-strategy10"
 
 
+
+
 [blocking-calls-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/97.png "Blocking-Calls-1"
 [blocking-calls-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/98.png "Blocking-Calls-2"
+
 
 [edit-routing]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/edit-routing.png "edit-routing"
 [routing-strategy]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/routing-strategy.png "routing-strategy"
 [edit-routing-strategy]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/edit-routing-strategy.png "edit-routing-strategy"
 
+
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNDY5Nzk2ODU3LDgxNTU5MzYyNywxMDUzNz
+Y4MjcwLC0xNTMyOTI2MjI1LDk4MTYzMzI3MywtMTE1MDY4NjM4
+MiwyNDQ4NDU2OTRdfQ==
+-->

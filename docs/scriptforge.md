@@ -22,9 +22,7 @@
 
 
 # ScriptForge
-The **ScriptForge** allows you to write applications that run during specified events in a system. 
-
-Currently, scripting functionality is supported in the routing engine, where it runs alongside the call setup process.  Requests to your application are handled with a messaging bus, and they will be queued if an application can't process them fast enough.  Applications that run in the routing engine must be completed quickly to avoid high PDD.
+The **ScriptForge** allows you to write applications that run during specific system events. Currently, scripting functionality is supported in the routing engine, where it runs alongside the call setup process.  Requests to your application are handled with a messaging bus, and they will be queued if an application can't process them fast enough.  Applications that run in the routing engine must be completed quickly to avoid high PDD.
 
 ## Design Considerations
 
@@ -66,8 +64,6 @@ function main(){
   exit(data);
 }
 ```
-
-
 ScriptForge  is designed to process one concurrent execution per server by default. It is important to execute `exit()` as soon as possible, since the server is blocked until this operation completes. It is also important to make sure there are no other branches of code executing after `exit()`, as this slows down requests, and can causes unexpected termination and time outs for future requests.
 
 ## Libraries
