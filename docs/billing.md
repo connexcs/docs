@@ -18,7 +18,7 @@ A ConnexCS subscription comes with two main tariffs used for billing: **per minu
 
 ## ConnexCS Billing Per Channel
 
-This is the traditional approach, where the consumer pays for a set number of channels or ports. It can be seen as the VoIP equivalent of per-line billing for mobile networks. 
+Billing per-channel is the traditional approach, where the consumer pays for a set number of channels or ports. It can be seen as the VoIP equivalent of per-line billing in mobile networks. 
 
 ### Advantages
 
