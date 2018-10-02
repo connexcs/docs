@@ -9,7 +9,7 @@
 
 # User Space Database
 
-A user database is a flexible datastore that has multiple use cases mainly used in allocations which you can build using ScriptForge. It is also available in 3 different backends each with their own advantages and disadvantages
+A user database is a flexible datastore that has multiple use cases mainly used in allocations that you can build using ScriptForge. It is also available in 3 different backends each with their own advantages and disadvantages
 
 There are three different types of datastores available:
 

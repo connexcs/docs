@@ -1,5 +1,32 @@
 # Change Log
 
+## 26th September 2018
+**Destination Server NAT Manual Enabled** - If the destination of a NAT is a UAS (Without registration), the server does not correct its advertised IP address & there is no SIP ALG in the NAT device, this option will allow NAT to be forced on the destination endpoint.
+
+## 17th September 2018
+**CANCEL / Connected Race Condition UAC Fix** - If the switch observes a CANCEL after a 200OK, it will end the dialog, this is typically something that should be done by the UAC, however buggy clients dont always properly implement the detection of this.
+
+## 14th September 2018
+**Real Distributed Channel & Throughput Limitation** - When using a cluster, any channel or CPS limits set will be calculated between all available nodes in the cluster.
+
+## 13th September 2018
+**Sankey Diagrams on Dashboard** - Sankey diagrams showing channels between customers and providers.
+
+## 10th September 2018
+**RTP IPv6 Ready** - RTP Servers are now IPv6 Ready, switching layer still pending.
+
+## 01st September 2018
+**User Location Routing & NAT Pinholing** - A User can register to ANY switch (including load balancers) and all calls to that user will be proxied via the registered machine. This eliminated any NAT pinholing issues.
+
+## 31st August 2018
+**Global CDR** - Detailed global CDR view allowing sorting, filtering and checkbox for recalculating specific calls.
+
+## 30th August 2018
+**Global IP & User/Pass** - Global view for IP and Username / Password Authentication.
+
+## 24th August 2018
+**Balance Graph** - Highly requested, balance graph same as our old control panel available in customer stats.
+
 ## 10th August 2018
 **Number Specific Analytics** - Query numbers dialled (Origination / Termination) and display statistics.
 
@@ -34,7 +61,7 @@
 **Data-Retention Feature** - Display information about Data Retention (CDR's)
 
 ## 2nd July 2018
-D**ownloadable SIP Ladder** - Download SIP Ladder (Trace) as a PNG.
+**Downloadable SIP Ladder** - Download SIP Ladder (Trace) as a PNG.
 
 ## 22th June 2018
 **Bulk Edit for DID** - First bulk edit feature, soon to be rolled across the whole site.

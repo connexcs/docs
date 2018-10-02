@@ -39,8 +39,8 @@ A CLI can be re-written. For example, you can add `123456789` in the CLI box, an
 **`P-Asserted-Identification`** is another SIP Header. It is not to be presented, but to allow telephone companies to identify originators on a network-only level. A P-Asserted-ID uses the same syntax as Replace CLI.
 
 ## Advanced CLI Match & Manipulation
-The CLI system uses Regular Expressions to match and replace numbers. Here are a few examples
-:
+The CLI system uses Regular Expressions to match and replace numbers. Here are a few examples:
+
 |             |            CLI | Replace CLI |                                      Description |
 |-------------|---------------:|------------:|-------------------------------------------------:|
 | 123456789   |          ^1234 |             |   Allows only numbers starting with 1234 to pass |
