@@ -16,7 +16,7 @@
 ConnexCS supports two methods of authentication: **Username/Password** in UAS mode and **IP Authentication**.
 
 ## User Acces Control (UAC)
-_Authentication from user / customers_
+The following are the types of user access controls used in ConnexCS.
 
 ### Username and Password
 Username & Password authentication is supported on the ConnexCS platform. Follow these steps to allow it for your customers:
@@ -32,7 +32,6 @@ Username & Password authentication is supported on the ConnexCS platform. Follow
     * Prefixes
     * Strip Digits
     * CLI Prefixes
-
 
 ### IP Authentication
 IP authentication is supported on the ConnexCS platform. You can allow a customer to use this method of authentication with the following steps:
