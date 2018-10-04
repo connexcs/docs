@@ -2,6 +2,7 @@ site_name: ConnexCS Documentation
 site_url: http://www.connexcs.com
 site_description: Connex Cloud Softswitch
 site_author: ConnexCS Team
+theme: readthedocs
 
 extra_javascript:
 - extra.js
