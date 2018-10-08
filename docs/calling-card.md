@@ -21,9 +21,7 @@
 
 # Calling Card
 
-A [calling card](https://en.wikipedia.org/wiki/Telephone_card) is a way to pre-allocate credit and configuration data to a short, unique identification method, like a PIN code.
-
-**ConnexCS** is a Class 4 switch, so it is without the IVR menu's required to access number configuration. Currently, calling cards are only available as a mobile phone application.
+A [calling card](https://en.wikipedia.org/wiki/Telephone_card) is a way to pre-allocate credit and configuration data to a short, unique identification method, like a PIN code. **ConnexCS** is a Class 4 switch, so it is without the IVR menu's required to access number configuration. Currently, calling cards are only available as a mobile phone application.
 
 ## Mobile Application
 In **ConnexCS**, calling cards are created in bulk, and then assigned with credit and routing configuration.
@@ -49,10 +47,11 @@ From the dashboard, expand the Management tab and look for Calling Card. This mo
 
 The following is a list of available actions in the calling card management screen, with explanations about how they work.
 
-### Generate New
+### Generate New Calling Card
 
-Generates a new calling card.  To begin:
-1.	Click the **`+`** button.  An entry form open as shown below, requesting customer information.
+To generate a new calling card:
+1. From the dashboard, select **Management** > **Calling Cards**.
+2. Click the **`+`** button.  An entry form open as shown below, requesting customer information.
 
 ![alt text][cc-3]
 

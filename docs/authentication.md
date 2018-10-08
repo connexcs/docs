@@ -16,7 +16,11 @@
 ConnexCS supports two methods of authentication: **Username/Password** in UAS mode and **IP Authentication**.
 
 ## User Acces Control (UAC)
+<<<<<<< HEAD
 User Access Control is found in the individual customer cards, in the **Authorization** tab. Instructions below start at this tab, which is found by navigating to **Management** > **Customer** > [Customer Name]. 
+=======
+The following are the types of user access controls used in ConnexCS.
+>>>>>>> d0bfe808456f9b545c5b168a9360e98f0410151d
 
 ### Username and Password
 To allow username and password authentication on user accounts:

@@ -29,7 +29,7 @@ The next screen shows the Rate Cards list.
 
 ![alt text][rate-card-profit-4] 
 
-In the **Status** column of the intended profit's row,  select the status as remove, blocked, or profit. You can also add a new row and select the status from there.
+5) In the **Status** column of the intended profit's row,  select the status as remove, blocked, or profit. You can also add a new row and select the status from there.
  
 ![alt text][rate-card-profit-5] 
 
