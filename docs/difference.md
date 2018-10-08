@@ -5,10 +5,10 @@
 
 # Difference
 
-Usibg two synchronised systems is not always trivial, even if they are designed for that  purpose. There are normally slight variations between stats and CDRs, so most telecoms allow margins for error to compensate.
+Using two synchronised systems is not always trivial, even if they are designed for that  purpose. There are normally slight variations between stats and CDRs, so most telecoms allow margins for error to compensate.
 
 ## Channels
-Many variables are used to caclculate channels and latency in reporting figures from one side to the other. Most user interfaces that report on channels also calculate for the inherent latency that will occur as data moves from the system to the UI.
+Many variables are used to calculate channels and latency when reporting figures from one side to the other. Most user interfaces that report on channels also calculate for the inherent latency that will occur as data moves from the system to the UI.
 
 - A ConnexCS Channel represents a bi-directional (2) audio stream.
 - A channel represents any dialog state post routing-engine, including pre-ring, ringing, connected, and teardown.

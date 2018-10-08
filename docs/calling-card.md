@@ -57,8 +57,8 @@ Generates a new calling card.  To begin:
 ![alt text][cc-3]
 
 2.	The **Customer** box is a dropdown windown that lists available customers for the current system. Note the red asterisk that indicates it is the only required field to save a calling card.   
-3. **Credit** is 
-4. The **Count** is 
+3. **Credit** is a way for ConnexCS to pass balances and overage limits in a clean, ID-based operation.
+4. The **Count** is how many calling cards can be created at a time.
 5.	A card's **Status** can be set to available, used, or disabled, and each status has its own assigned colour.
 6. Click **`Save`**. 
 

@@ -13,7 +13,7 @@
   - [Provider Card](#provider-card)
   - [Customer Card](#customer-card)
   - [Ingress Routing](#ingress-routing)
-  - [Deploy Server](#deploy-server)
+  - [Deploying Servers](#deploying-servers)
 
 # Introduction
 
@@ -23,14 +23,14 @@ The initial setup in ConnexCS will configure a single carrier, a single customer
 
 This guide assumes:
 
-1. You have a modern web browser such as Google Chrome, Firefox, Safari, or their equivalent.
-2. You have a basic understanding of Telecoms (Customers, Provider, etc).
-3. You have already created an account with ConnexCS.com.
+* You have a modern web browser such as Google Chrome, Firefox, Safari, or their equivalent.
+* You have a basic understanding of Telecoms--customers, providers, and rates.
+* You have created an account with ConnexCS.com.
 
 ## Verifying Personal Details
-Before you configure you account, you need to verify your email and mobile number. You can do this in the Personal Profile pane.  The Personal Profile pane is found by clicking the notification icon at the top left of the screen. 
+Before you configure you account, you need to verify your email and mobile number. You can do this in the **Personal Profile** pane.  The Personal Profile pane is found by clicking the notification icon at the top left of the screen. 
 
-![notification-icon](new-images/notification-icon.png)
+![notification icon](new-images/notification-icon.png)
 
 
 **Email Verification**
@@ -56,7 +56,7 @@ To verify a mobile number:
 
 1. Select the Notification icon at the top left of the screen.
 2. Select `Verify Mobile`.
-3. In the Personal Profile pane, click on the Verify Mobile icon. ![verification-icon](images/2018/08/verification-icon.png)
+3. In the Personal Profile pane, click on the Verify Mobile icon. 
 4. A **Mobile Verification Sent** popup confirms the email was sent to your email address.
 5. Click the link in the email, or copy & paste the verification code into the Verification Code field and and click the `Verify` button.
 
@@ -186,35 +186,36 @@ Below are the instructions to setup the provider rate card manually. There are t
 9. Complete the spreadsheet information, which works similar to any common office programs.
 10. Click `Save` to publish the rate card.
 
-
 ## Customer Card
+To manage customer cards:
 
-1. Select Management> Rate Cards
+1. Select **Management** > **Rate Cards**.
 
   ![alt text][customer-card-1]
 
-2. Click on ‘+’ button under Customer Rate Cards
+2. Click on **`+`** button under Customer Rate Cards
 
  ![alt text][customer-card-2]
 
-3. Name the customer card
-4. Select the multiple carrier cards (default: LCR)
-5. Select the desired currency and click `Save`
+3. Name the customer card.
+4. Select carrier cards (default: LCR).
+5. Select currency.
+6. Click **`Save`**
 
  ![alt text][customer-card-3]
 
-6. Select the Profits tab, then **Add New Row**
-7. Complete the spreadsheet
+7. Select the **Profits** tab, then **Add New Row**.
+8. Complete the spreadsheet.
 
    ![alt text][customer-card-4]
 
-8. Select `Build From Carrier Cards` and confirm the build.
+9. Select **`Build From Carrier Cards`** and confirm the build.
 
  ![alt text][customer-card-5]
 
 ## Ingress Routing
-
-1. Click on Management> Customer
+To manage ingress routing setups:
+1. Click on **Management** > **Customer**
 
   ![alt text][ingress-1]
 
@@ -229,17 +230,17 @@ Below are the instructions to setup the provider rate card manually. There are t
 
 For detailed information about ingress routing, see [Ingress Routing]
 
-## Deploy Server
+## Deploying Servers
 
 Deploying a server with ConnexCS is an efficient operatation.  You should be able to deploy once you've completed this checklist.
 
-1. Select **Setup> Settings> Servers**
+1. Select **Setup** > **Settings** > **Servers**.
 2. Select **Add Server**
 
   ![alt text][server-1]
 
-3. Choose a server location
-4. Enter a server name
+3. Choose a server location.
+4. Enter a server name.
 5. Check the confirmation box and deploy the server.
 6. The server's IP address will be emailed to your registered email address. It can also be found in the server list section.
 

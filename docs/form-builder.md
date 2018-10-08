@@ -9,7 +9,7 @@
 Form builder is a program for developers to create customized form documents for use in their VoIP systems, either through a customer portal or in ScriptForge. The tool provides an easy way to generate any type of form, integrate it with your portal, or ScriptForge, and start collecting information.
 
 To set up form builder from the dashboard:
-1. Click **Management**>**Developer**.
+1. Click **Management** > **Developer**.
 2. Click **Form Builder**.
 
   ![alt text][form-builder]

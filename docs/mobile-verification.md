@@ -1,4 +1,4 @@
-#Mobile Verification: 
+# Mobile Verification:
 
 **Mobile Veirification** is the process by which we verify mobile phone numbers to ensure that they are genuine. It is an extension of [e-mail verification]. 
 

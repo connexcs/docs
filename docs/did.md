@@ -13,15 +13,9 @@
 
 This tutorial will guide you through the **DID section**, accessed from the dashboard's side bar. DID is short for **Direct Inward Dialing**, a mechanism in phone systems that allows for more effective line management. 
 
-To find it, select **Management**, then **DID**, as highlighted in the image below:
+Select **Management** > **DID**:
 
 ![alt text][did-img-1]
-
-In the **DID section**, you can:
-
-1. Add a DID
-2. Refresh the list
-3. Delete a DID
 
 ### Add a DID
 
