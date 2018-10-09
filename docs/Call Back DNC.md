@@ -1,8 +1,5 @@
  
-In today's society, especially when dialling the UK, it is important that you recognise the Do Not Call Lists (DNC). Calling numbers on
-these lists can result in costly fines and prosecutions. To help you to manage these calls we have created a feature where the numbers 
-can be added to the system and should they be called the caller will receive a message to alert them to the fact that the number is on
-the DNC list. 
+In today's society, especially when dialling the UK, it is important that you recognise the **Do Not Call Lists (DNC).** Calling numbers on these lists can result in costly fines and prosecutions. To help you to manage these calls we have created a feature where the numbers can be added to the system and should they be called the caller will receive a message to alert them to the fact that the number is on the DNC list. 
  
 To set this up please follow the instructions below.
 
@@ -14,7 +11,7 @@ To set this up please follow the instructions below.
 
 # ScriptForge
 
-1) Go to Development> ScriptForge
+1) Go to Development> **ScriptForge**
 2) Add the Script Name
 3) Select the Type> App
 4) Enter the below javascript code
@@ -36,6 +33,7 @@ function main(data) {
         });
 }
 ```````
+
 5. Click Save & Run
 
 
