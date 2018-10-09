@@ -2,7 +2,7 @@
 
 - [Table of Contents](#table-of-contents)
 - [DNC](#dnc)
-- [ScriptForge](#scriptForge) 
+- [ScriptForge](#scriptforge) 
 
 # DNC
 
