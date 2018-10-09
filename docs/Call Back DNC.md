@@ -12,7 +12,6 @@ To set this up please follow the instructions below.
 4. Select Dataset Type, in this case select Key / Value Store
 5. Click Save
 
-
 # ScriptForge
 
 1) Go to Development> ScriptForge
