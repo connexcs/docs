@@ -32,6 +32,9 @@ To set this up please follow the instructions below.
 
 2) Add the Script Name
 3) Select the Type> App
+
+![alt text][dnc-5]
+
 4) Enter the below javascript code
 
 ```
@@ -51,7 +54,7 @@ function main(data){
 
 5. Click Save & Run
 
-![alt text][dnc-5]
+![alt text][dnc-6]
 
 
 
@@ -60,6 +63,7 @@ function main(data){
 [dnc-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/dnc-3.png "DNC-3"
 [dnc-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/dnc-4.png "DNC-4"
 [dnc-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/dnc-5.png "DNC-5"
+[dnc-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/dnc-6.png "DNC-6"
 
 
 
