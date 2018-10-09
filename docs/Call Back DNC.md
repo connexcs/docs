@@ -26,7 +26,7 @@ To set this up please follow the instructions below.
 
 ## ScriptForge
 
-1) Go to Development> **ScriptForge**
+1) Go to Developer> **ScriptForge**
 
 ![alt text][dnc-4]
 
