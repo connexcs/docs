@@ -2,7 +2,7 @@
 
 - [Table of Contents](#table-of-contents)
 - [DNC](#dnc)
-- [ScriptForge](#scriptforge) 
+ - [ScriptForge](#scriptforge) 
 
 # DNC
 
@@ -16,7 +16,7 @@ To set this up please follow the instructions below.
 4. Select Dataset Type, in this case select Key / Value Store
 5. Click Save
 
-# ScriptForge
+## ScriptForge
 
 1) Go to Development> **ScriptForge**
 2) Add the Script Name
