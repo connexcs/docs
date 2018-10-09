@@ -2,7 +2,7 @@
 
 - [Table of Contents](#table-of-contents)
 - [DNC](#dnc)
- - [ScriptForge](#scriptforge) 
+  - [ScriptForge](#scriptforge) 
 
 # DNC
 
@@ -10,7 +10,7 @@ In today's society, especially when dialling the UK, it is important that you re
  
 To set this up please follow the instructions below.
 
-1. Click on Setup> Advanced> User Space Database
+1. Click on Setup> Advanced> **User Space Database**
 2. Click + > name the data store
 3. Select Customer
 4. Select Dataset Type, in this case select Key / Value Store
