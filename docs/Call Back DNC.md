@@ -16,7 +16,7 @@ To set this up please follow the instructions below.
 3) Select the Type> App
 4) Enter the below javascript code
 
-````````
+```
 function main(data) {
     api.rest.auth("api@yourdomain.com").post('setup/userspace/userspacedataname/', {
             key: vars["Caller-Caller-ID-Number"],
@@ -32,7 +32,7 @@ function main(data) {
             return Promise.reject([500, err]);
         });
 }
-```````
+```
 
 5. Click Save & Run
 
