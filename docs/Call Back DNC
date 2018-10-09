@@ -6,14 +6,14 @@ the DNC list.
  
 To set this up please follow the instructions below.
 
-1) Click on Setup> Advanced> User Space Database
-2) Click + > name the data store
-3) Select Customer
-4) Select Dataset Type, in this case select Key / Value Store
-5) Click Save
+1. Click on Setup> Advanced> User Space Database
+2. Click + > name the data store
+3. Select Customer
+4. Select Dataset Type, in this case select Key / Value Store
+5. Click Save
 
 
-#ScriptForge
+# ScriptForge
 
 1) Go to Development> ScriptForge
 2) Add the Script Name
@@ -36,7 +36,7 @@ function main(data) {
         });
 }
 
-5) Click Save & Run
+5. Click Save & Run
 
 
 
