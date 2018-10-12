@@ -32,9 +32,6 @@ To set this up please follow the instructions below.
 
 2) Add the Script Name
 3) Select the Type> App
-
-![alt text][dnc-5]
-
 4) Enter the below javascript code
 
 ```
