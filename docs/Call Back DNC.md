@@ -40,15 +40,20 @@ To set this up please follow the instructions below.
 ```
 const userspace = require('cxUserspace');
 
-function main(data){
-  return userspace.create('userspacedataname', data["Caller-Caller-ID-Number"].replace('+', '').replace(/^0/, '44'), + new Date())
-  .then(() => {
-	if (!data.routing) data.routing = {};
-  	return [{key: "x-tts", value: "Thank you, you have been added to our D N C list you won't be called by us again."}];
-  }).catch(err => {
-	  console.error(err)
-	return Promise.reject([500, err]);
-  });
+function main(data) {
+    api.rest.auth("api@yourdomain.com").post('setup/userspace/userspacedataname/', {
+            key: vars["Caller-Caller-ID-Number"],
+            value: +new Date()
+        })
+        .then(() => {
+            data.routing.headers = [{
+                key: "x-tts",
+                value: "Thank you, you have been added to our D N C list you won't be called by us again."
+            }];
+            return data;
+        }).catch(err => {
+            return Promise.reject([500, err]);
+        });
 }
 ```
 
