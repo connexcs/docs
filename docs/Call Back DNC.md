@@ -56,7 +56,7 @@ function main(data) {
 
 5. Click Save & Run
 
-![alt text][dnc-6]
+
 
 
 
