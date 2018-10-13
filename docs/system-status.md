@@ -6,9 +6,9 @@
 
 # System Status
 
-The **System Statu**s feature updates the status of customer portals, and provides a way to communicate downtime and system outages to your customers.
+The **System Status** feature updates the status of customer portals, and provides a way to communicate downtime and system outages to your customers.
 
-To setup status:
+To setup System Status:
 
 1. Click **Management** > **Status**.
 2. Click  the **`+`** button under status component.
@@ -17,8 +17,8 @@ To setup status:
 
 ![alt text][system-status-1]
 
-1. Enter a title, and a description (optional).
-2. Click the **`Save`** button.
+3. Enter a title, and a description (optional).
+4. Click the **`Save`** button.
 
 ![alt text][system-status-2]
 
@@ -28,29 +28,25 @@ To add a new history:
 
 ![alt text][system-status-3]
 
-2. Enter a title.
-3. Select a status.
-4. Select visibility.
-5. Enter a brief description.
-6. Click the **`Save`**.
+1. Enter a title, status, visibility, and a description.
+2. Click **`Save`**.
 
 ![alt text][system-status-4]
 
-Statuses will be displayed on your customer portal, depending upon the visibility you set. To enable status on your customer portal:
+Statuses are displayed in thecustomer portal, depending upon its visibility settings. To enable status on your customer portal:
 
 1. Click **Setup** > **Integrations** > **Domains**.
 
 ![alt text][system-status-5]
 
-1. Click the domain name.
+2. Click the domain name.
 
 ![alt text][system-status-6]
 
-1. Under **User Access Area**, enable the Status.
-2. Click the **`Save`** button.
+3. Under **User Access Area**, enable the status.
+4. Click the **`Save`** button.
 
 ![alt text][system-status-7]
-
 
 [system-status]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/262.png "system-status"
 [system-status-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/263.png "system-status-1"

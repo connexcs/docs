@@ -21,7 +21,7 @@ We verify email addresses to ensure they are genuine. To verify an email address
 
 # Mobile Verification 
 
-We verify mobile phone numbers to ensure that they are genuine.
+We also verify mobile phone numbers to ensure that they are genuine.
 
 Steps to Verify Mobile Number
 

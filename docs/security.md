@@ -19,7 +19,7 @@
 
 We take **Security** seriously at ConnexCS, emphasizing the industry's best practices in all our policies and procedures. We use proven technology and the latest ideas to keep your systems safe from threats both external and internal.
 
-Below, we have compiled a top-level abstract list on how we secure our systems. The document is kept brief in to limit exposure to our underlying systems in a public forum, but feel free to contact with specific questions.
+Below, we have compiled a top-level abstract list on how we secure our systems. The document is kept brief in to limit exposure to our underlying systems in a public forum, but feel free to contact us with specific questions.
 
 ## SSL Certificates
 Our HTTPS traffic uses short-lived **SHA256bit** certificates with 2048bit keys, rejecting downgrade attacks like **SSL2,3**. We use **HSTS, Perfect Forward Secrecy,** and **OCSP Stapling**. You are welcome to see our servers SSL test results here:

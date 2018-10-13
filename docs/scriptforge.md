@@ -140,25 +140,27 @@ function main(vars){
 
 ## Creating a new script
 
-You can customize your script in the new functionality of Connex and also can assign it to a specific customer. Follow the simple steps to do so.
+You can customize your script in the new functionality of Connex and assign it to a specific customer.
 
-1. Login to your Connex account, and select  `Script Forge` from the side menu.
+1. Select **`Script Forge`** from the side menu.
 
  ![alt text][side]   
  
-2. Add your own script by clicking **`+`**.
+2. Add a script by clicking **`+`**.
    
-3. Fill in the script's name abd type, then click **`Save`**.
+3. Fill in the script's name and type, then click **`Save`**.
 
  ![alt text][s2]   
  
 4. Select your script from the list.
  
-5. Enter the code of your script and click the arrow next to **`Save and Restart`**. From the drop down menu, select **`Save`** and then click **`Start`**.
+5. Enter the code of your script and click the arrow next to **`Save and Restart`**. 
+6. From the drop down menu, select **`Save`** .
+7. Click **`Start`**.
 
  ![alt text][s4]   
  
-6. Select the **`Run`** button at the top and the result will be shown onscreen.
+7. Select the **`Run`** button at the top, and the result will be shown onscreen.
 
 If script shows an error, select the arrow button next to **`Run`** and add this:
 ```
@@ -170,11 +172,16 @@ Run the script again:
 
 ## Assigning the Script to a customer
 
-You can assign scripts to customers by selecting **`Customer`** from the side menu.  Select a specific customer from the list by clicking on the names of customers, and navigate to the **Routing** tab and select a rate card from the table:
+You can assign scripts to customers:
+1. Select **Customer** from the menu. 
+2.  Choos a customer from the list by clicking its name.
+3.  Navigate to the **Routing** tab 
+4.  Select a rate card from the table.
 
 ![alt text][s8]  
  
-A form will opens called **Route Ingress**. Find the **ScriptForge** field, select your custom script from the list, and then **`Save`**.
+5. A form opens called **Route Ingress**. Find the **ScriptForge** field and select your custom script from the list
+6. Click **`Save`**.
  
 ![alt text][s9] 
  

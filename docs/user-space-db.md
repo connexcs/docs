@@ -5,15 +5,11 @@
     - [Edit the Details](#edit-the-details)
     - [Searching Text Fields](#searching-text-fields)
  
-
-
 # User Space Database
 
-A user database is a flexible datastore that has multiple use cases mainly used in allocations that you can build using ScriptForge. It is also available in 3 different backends each with their own advantages and disadvantages
+A user database is a flexible datastore that has multiple use cases mainly used in allocations that you can build using ScriptForge. It is also available in three(3) different backends, each with their own advantages and disadvantages:
 
-There are three different types of datastores available:
-
-1. **High Capacity** - This is a key-value pair store, which uses eventual consistancy to replicate between zones. Ideally, it is used for lists of numbers, such as a DNC list. It should not be used for counters or higher-speed writes.
+1. **High Capacity** - This is a key-value pair store that uses eventual consistency to replicate between zones. Ideally, it is used for lists of numbers, such as DNC lists. It should not be used for counters or higher-speed writes.
 
 2. **High Speed** - This operates as a caching layer, is exceptionally fast, and is also eventually consistent between zones. It should be considered ephemeral, and used like a cache.
 
@@ -22,18 +18,18 @@ There are three different types of datastores available:
 When you create your datastore, you can specify which type will be created. Datastores can be used for checking a list of numbers, caching external lookups, or creating stateful applications that allow users a certain amount of free minutes per month.
 
 To set up a User Space Database. 
-1. Go to the **Setup** > **User Space Database** from the dashboard. 
+1. Go to **Setup** > **User Space Database** from the dashboard. 
 
 ![alt text][user-space-img-1]
 
 
-1. Click the **`+`** button.
+2. Click the **`+`** button.
 
 ![alt text][user-space-img-2]
 
-3.	Fill in the details in the dialogue box.
+3.	Fill the details in the dialogue box.
 
-4.	Click the **`Save`** button. A new space will now be added in the list.
+4.	Click the **`Save`** button. 
 
 ![alt text][user-space-img-3]
 
@@ -48,7 +44,7 @@ Press the **`Refresh`** button to see an updated list of items. This is the best
 To delete an item from the list:
 
 1. Select any name from the **Area** column.
-2. Click the **`delete`** button, which is right next to the **`Refresh`** button.
+2. Click the **`delete`** button.
 
 ![alt text][user-space-img-2a]
 
@@ -61,14 +57,14 @@ To edit the details of any item:
 
 ![alt text][user-space-img-4]
 
-1. Edit the details in the dialog box, same as creating a new datastore.
+1. Edit the details in the dialog box, like creating a new datastore.
 2. Click the **`Save`** button.
 
 ![alt text][user-space-img-5]
 
 ## Searching Text Fields
 
-You can search the _Area_ and _Key_ from the given search text fields using the search box at the top right:
+You can search the _Area_ and _Key_ from the search text fields using the search box at the top right.
 
 ![alt text][user-space-img-6]
 
