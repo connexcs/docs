@@ -26,9 +26,9 @@ When a server reaches capacity, the standard response is: *Request Terminated: S
 
 For multiple SIP servers, you can load balance the calls without a load balancer server using DNS. To configure the DNS, follow these steps:
 
-1. Click **Setup**>**Integrations**.
+1. Click **Setup** > **Integrations**.
 2. Click **Domains**.
-3. Click **`+`** under Server.
+3. Click **`+`** under **Server**.
 
    ![alt text][load-balance]
 

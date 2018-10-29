@@ -21,9 +21,7 @@
 
 # Calling Card
 
-A [calling card](https://en.wikipedia.org/wiki/Telephone_card) is a way to pre-allocate credit and configuration data to a short, unique identification method, like a PIN code.
-
-**ConnexCS** is a Class 4 switch, so it is without the IVR menu's required to access number configuration. Currently, calling cards are only available as a mobile phone application.
+A [calling card](https://en.wikipedia.org/wiki/Telephone_card) is a way to pre-allocate credit and configuration data to a short, unique identification method, like a PIN code. **ConnexCS** is a Class 4 switch, so it is without the IVR menu's required to access number configuration. Currently, calling cards are only available as a mobile phone application.
 
 ## Mobile Application
 In **ConnexCS**, calling cards are created in bulk, and then assigned with credit and routing configuration.
@@ -49,16 +47,17 @@ From the dashboard, expand the Management tab and look for Calling Card. This mo
 
 The following is a list of available actions in the calling card management screen, with explanations about how they work.
 
-### Generate New
+### Generate New Calling Card
 
-Generates a new calling card.  To begin:
-1.	Click the **`+`** button.  An entry form open as shown below, requesting customer information.
+To generate a new calling card:
+1. From the dashboard, select **Management** > **Calling Cards**.
+2. Click the **`+`** button.  An entry form open as shown below, requesting customer information.
 
 ![alt text][cc-3]
 
 2.	The **Customer** box is a dropdown windown that lists available customers for the current system. Note the red asterisk that indicates it is the only required field to save a calling card.   
-3. **Credit** is 
-4. The **Count** is 
+3. **Credit** is a way for ConnexCS to pass balances and overage limits in a clean, ID-based operation.
+4. The **Count** is how many calling cards can be created at a time.
 5.	A card's **Status** can be set to available, used, or disabled, and each status has its own assigned colour.
 6. Click **`Save`**. 
 

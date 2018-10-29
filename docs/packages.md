@@ -14,7 +14,7 @@
 
 A package represents a product or service offered to customers, often as a recurring charge based on goods delivrered at a required interval. A package is a global entity in the system that is allocated to each customer as required. A package may include incentives for MRC like DIDs, phone system rentals, or other hardware. 
 
-To find the Packages section, go to **Setup**>**Config**>**Packages** from the dashboard.
+To find the Packages section, go to **Setup** > **Config** > **Packages** from the dashboard.
 
 
  ![alt text][package-1]
@@ -35,7 +35,7 @@ To add a package:
 
 3.	Give a name to the package.
 4.	Provide cost and quantity.
-5.	Select frequency plan as daily, weekly, monthly.  Choosing weekly or monthly will allow you to select multiple days for each.  
+5.	Select frequency plan as daily, weekly, or monthly.  Choosing weekly or monthly will allow you to select multiple days for each.  
 6. Provide a description for the package.
 7. Click **`Save`**.
 

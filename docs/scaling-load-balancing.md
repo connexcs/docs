@@ -2,20 +2,20 @@
 
 - [Table of Contents](#table-of-contents)
 - [Scaling and Load Balancing](#scaling-and-load-balancing)
-  - [Capacity Failover](#capacity-failover)
-  - [What is a zone?](#what-is-a-zone)
-  - [How can I scale in a Single Zone?](#how-can-i-scale-in-a-single-zone)
-  - [How can I scale in Multiple Zones?](#how-can-i-scale-in-multiple-zones)
-  - [Best practices](#best-practices)
-  - [FAQ - Scaling and Load Balancing](#faq---scaling-and-load-balancing)
+    - [Capacity Failover](#capacity-failover)
+    - [What is a zone?](#what-is-a-zone)
+    - [How can I scale in a Single Zone?](#how-can-i-scale-in-a-single-zone)
+    - [How can I scale in Multiple Zones?](#how-can-i-scale-in-multiple-zones)
+    - [Best practices](#best-practices)
+    - [FAQ - Scaling and Load Balancing](#faq---scaling-and-load-balancing)
 
 
 # Scaling and Load Balancing
 
-The ConnexCS platform is highly scalable in terms of Channels, CPS, and single / multiple zones.  All configurations are available through a single control panel, no matter how many servers or zones you have.  Our goal is to run all servers at a maximum of 50% capacity, which allows us to handle unforeseen bursts of traffic effectively. While we benchmark for much higher limits,  we recommend no more than 1,000 channels / 100 cps per server. This is always subject to traffic profiles, however.
+The ConnexCS platform is highly scalable in terms of Channels, CPS, and single or multiple zones.  All configurations are available through a single control panel, no matter how many servers or zones are present.  Our goal is to run all servers at a maximum of 50% capacity, which allows us to handle unforeseen bursts of traffic effectively. While we benchmark for much higher limits,  we recommend no more than 1,000 channels / 100 cps per server. This is always subject to traffic profiles, however.
 
 ## Capacity Failover
-If you have multiple servers in your network, Capacity Failover helps elimiate overload on any single server. If a server reaches capacity (CPS or Channels), its responds with a 302 instead of a 500,  directing another server in its cluster to handle the call.  Capacity failover is not the same as load-balancing, though, nor is it mutually exclusive. It is a mechantic to allow for some overflow from any specific zones without drops.   
+If you have multiple servers in your network, **Capacity Failover** helps elimiate overload on any single server. If a server reaches capacity (CPS or Channels), it responds with a 302 instead of a 500,  directing another server in its cluster to handle the call.  Capacity failover is not the same as load-balancing, though, nor is it mutually exclusive. It is a mechantic to allow for some overflow from any specific zones without drops.   
 
 ## What is a zone?
 
@@ -30,7 +30,7 @@ Single Server.
 
 **Stage 2**
 
-Two(2) Servers: If you need to scale beyond a server in a single zone, the recommended method is primary / secondary. This two-server setup points all calls to a single server which, that passes calls secondary server when capacity is reached.
+Two(2) Servers: If you need to scale beyond a server in a single zone, the recommended method is primary / secondary. This two-server setup points all calls to a single server which that passes calls secondary server when capacity is reached.
 
 **Stage 2 (Alternative)**
 
@@ -38,7 +38,7 @@ If you use  DNS to provide connectivity, you can set up round robin or SRV recor
 
 **Stage 3**
 
-If your capacity requirements exceed the above, can deploy a load balancer deployed. A load balancer is a server dedicated to spreading calls to other servers equally. The advantage over DNS is that you maintain stricter control of your calls, assuring they are distributed evenly without using your customers' resources to support SRV records. With a Load Balancer, you can exceed well beyond 5,000 CPS before any concerns.
+If your capacity requirements exceed the above, can deploy a load balancer, a server dedicated to spreading calls to other servers equally. The advantage over DNS is that you maintain stricter control of your calls, assuring they are distributed evenly without using your customers' resources to support SRV records. With a Load Balancer, you can exceed well beyond 5,000 CPS before any concerns arise.
 
 ## How can I scale in Multiple Zones?
 
@@ -54,11 +54,11 @@ If you are using multiple zones, use a Global Traffic Redirector on your domain.
 
 **Does using ConnexCS guarantee a High Availability (HA) solution?**
 
-This depens on the specifics of your setup. If you have a single server, the stability of that server will be as good as we can make it. However, a single server can still have faults and data center outages that are beyond our control. If you deploy across multiple zones, however, you can achieve high availability.
+This depends on the specifics of your setup. If you have a single server, the stability of that server will be as good as we can make it. However, a single server can still have faults and data center outages that are beyond our control. If you deploy across multiple zones, however, you can achieve high availability.
 
 **How quickly could I deploy Five(5) servers in each zone with load balancers and DNS?**
 
-At present we can assist you in deploying a top end multi-zone geographically redundant carrier grade solution in less than 24 hours. This will be high throughput and tolerant of failures in multiple zones.
+Currently, we can assist in deploying a top end multi-zone geographically redundant carrier grade solution in less than 24 hours. This will be high throughput and tolerant of failures in multiple zones.
 
 **Can you help me with my DNS requirements?**
 

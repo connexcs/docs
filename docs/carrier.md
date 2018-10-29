@@ -24,7 +24,7 @@
 
 # Carrier Management
 
-**ConnexCS** allows for simplified carrier management through the **Carrier Management** tab. Here, you can add, modify, and delete carriers. **Carrier** is found in the **Management** tab, four horizontal lines beneath the **Home** icon in the dashboard:
+**ConnexCS** allows for simplified carrier management through the **Carrier Management** tab. Here, you can add, modify, and delete carriers. It is found in the **Management** tab, the four horizontal lines beneath the **Home** icon in the dashboard:
 
 ![alt text][carrier-list]
 
@@ -34,67 +34,53 @@
 
 To add carriers:
 
-1. Click the **'+'** button.
-2. Enter relevant carrier details.  A description of these atrributes can be found below.
-3. Click **`Save`**.
+1. Navigate to **Management** > **Carrier**.
+2. Click the **`+`** button.
+3. Enter relevant carrier details.  A description of these atrributes can be found below.
+4. Click **`Save`**.
 
 Figure: A **Carrier** dialogue box.
 
 ![alt text][carrier-details]
         
-New carrier fields:
+**Carrier Fields**
         
-**Carrier Name:** Enter a unique name for the carrier.
-
-**Channels:** Add the number of channels (ports) in numeric digits. Set this to ZERO for unlimited channels.
-
-**CPS:** Enter the carrier's max allotted calls-per-second.
-
-**PayPal Email:** Enter the PayPal e-mail associated with the carrier's account.
-
-**Website:** Add the carrier's official website.
-
-**Portal URL:** Enter the carrier's portal URL, eg: portal.yourcarrier.com 
-
-**Portal Username:** Add a unique name for the portal.
-
-**Portal Password:** Enter the password used to sign in to the carrier portal.
-
-**Portal Access:** Decides if the current carrier has access to the portal.
-
-**Status:** The carrier's status.  A drop-menu contains the following options:
-
+* **Carrier Name:** Enter a unique name for the carrier.
+* **Channels:** Add the number of channels (ports) in numeric digits. Set this to ZERO for unlimited channels.
+* **CPS:** Enter the carrier's max allotted calls-per-second.
+* **PayPal Email:** Enter the PayPal e-mail associated with the carrier's account.
+* **Website:** Add the carrier's official website.
+* **Portal URL:** Enter the carrier's portal URL, eg: portal.yourcarrier.com 
+* **Portal Username:** Add a unique name for the portal.
+* **Portal Password:** Enter the password used to sign in to the carrier portal.
+* **Portal Access:** Decides if the current carrier has access to the portal.
+* **Status:** The carrier's status.  A drop-menu contains the following options:
 *  **Active** - carrier available to process calls.
 *  **Inactive** - carrier will not process any calls.
 *  **Pending Approval** - carrier is undergoing a verification process, but their credentials are in the system.  
-
-**Currency:** Choose the relevant currency for each carrier's country.
-
-**Address:** Add the carrier's address,  including country and postcode/ZIP code.
-
-**First Reply Timeout:** This is the length of time that you give for the carrier to respond after the **first invite**. Default value     is set to 30 seconds.
-
-**PDD Timeout:** This is the length of time that you give for the carrier to respond to the call. The default value is 5 seconds.
-
-**Ring Timeout:** This is the length of time that the call is allowed to ring before it times out and sends a cancel message. The         default value is 60 seconds.
+* **Currency:** Choose the relevant currency for each carrier's country.
+* **Address:** Add the carrier's address,  including country and postcode/ZIP code.
+* **First Reply Timeout:** This is the length of time that you give for the carrier to respond after the **first invite**. Default value     is set to 30 seconds.
+* **PDD Timeout:** This is the length of time that you give for the carrier to respond to the call. The default value is 5 seconds.
+* **Ring Timeout:** This is the length of time that the call is allowed to ring before it times out and sends a cancel message. The         default value is 60 seconds.
 
 ## Deleting Carriers
 
-The following explains how to delete existing **Carriers**:
+To delete existing **Carriers**:
 
 1. Select a carrier from the list using its checkbox.
 
-2. Click the trash bin icon, which is the delete button.
+2. Click the trash bin icon and confirm.
 
 ## Checking The Status
 
 ![alt text][carriers-sorting]
 
-This screen is for checking carrier information.
+The status screen is for checking carrier information. To check status:
 
 1. Click the **`Active`** button.
 2. Select an option from the dropdown menu to filter results.
-3. Display will change automatically according to your selection.
+3. The display will change automatically according to your selection.
 
 ## Searching Carrier
 
@@ -109,13 +95,13 @@ The **Carriers** can be customized to display to display certain columns and omi
 To edit **Carriers**, select an entry from the list, and follow the procedure on the next page:
 
 1. Press the **`Edit Carrier`** button.
-2. Edit the details as needed, and then press **`Save`**.
+2. Change the carrier's details and then press **`Save`**.
 
 ![alt text][carrier-dashboard]
 
 ### Stats
 
-You can view carrier-related statistic by clicking **Stats** tab.
+View carrier-related statistics by clicking **Stats** tab.
 
 ![alt text][carrier-stats] 
 

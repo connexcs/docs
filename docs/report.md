@@ -6,11 +6,7 @@
   
 # Reports Management
 
-This article explains how to view and download reports in ConnexCS.  To find **Report Management** from the dashboard:
-
-1.	Click  **Management** from the side bar.
-2.	Click **Report**.
-3.	And then click **Breakout**.
+This article explains how to view and download reports in ConnexCS.  To find **Report Management** from the dashboard: Click  **Management** > **Report** > **Breakout**.
  
 ![alt text][report-1]
 

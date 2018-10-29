@@ -1,56 +1,54 @@
 # Table of Contents
-* [Table of Contents](#table-of-contents)
-* [Scheduled Breakout reports](#scheduled-breakout-reports)
-  * [Adding a scheduled breakout report](#adding-a-scheduled-breakout-report)
-  * [View a scheduled breakout report](#view-a-scheduled-breakout-report)
-  * [Select the recipients and schedule the reports](#select-the-recipients-and-schedule-the-reports)
+- [Table of Contents](#table-of-contents)
+- [Scheduled Breakout Reports](#scheduled-breakout-reports)
+    - [Adding a scheduled breakout report](#adding-a-scheduled-breakout-report)
+    - [View a scheduled breakout report](#view-a-scheduled-breakout-report)
+    - [Select the recipients and schedule the reports](#select-the-recipients-and-schedule-the-reports)
 
 
 # Scheduled Breakout Reports
 
-With this feature you can schedule an email for a breakout report. The email gets sent over as per the frequency you select.
+With this feature you can schedule an email for a breakout report. The email gets sent over according to the frequency you select.
 
 ## Adding a scheduled breakout report
 
-Login to your Connex account.  From the side menu, extend the “Report” and click on “Breakout”.
+1. Select **Management** >  **Report** > **Breakout**.
  
  ![alt text][report-1]
 
-A new page will open, from the top. Click on the “+” icon that is highlighted in the image given below.
+2. From the new screen, click the **`+`** button.
 
  ![alt text][report-2]
  
-A dialog box should open. Enter the Name, email address and select the frequency, click on “Save”.
+3. Enter the name, email address, and select the frequency, 
+4. Click **Save**.
  
  ![alt text][report-3] 
 
-A new report has been added.
 
 ## View a scheduled breakout report
 
-You can view the reports by clicking on the button “View Schedule Reports” which is right next to “+”.
+View the reports by clicking the **`View Schedule Reports`** button.
 
  ![alt text][report-4]  
-
-A new page will open which will show all the reports created till now.
 
  ![alt text][report-5]  
 
 ## Select the recipients and schedule the reports
 
-You can select the recipients by choosing from customers, providers etc.  You can also choose the time period you want to schedule the reports.
+Select the recipients by choosing from among your customers and providers. You can also choose the time period you want to schedule the reports. To complete this action:
 
-Click on the arrow sign to choose the accurate recipients for the reports. 
-Also select the customer’s list, provider’s list and destinations added by you in your account.
+1. Click the arrow sign to choose report recipients. 
+2. Select the customer’s list, provider’s list, and destinations in your account.
 
 ![alt text][report-6] 
 
-On the left side, there is a text box from which you can select the time period to schedule your reports. Just click on the text box and a drop down menu should open where you can choose the time.
-Select “Custom Range” if you are not able to find the time that you want to set in scheduling.
+3. Click the text box on the left to open a menu where you can select the report's time.
+4. Select **`Custom Range`** to enter a cutomized timeframe.
 
 ![alt text][report-7] 
 
-A new drop down should open, customize the time period and click “Apply”
+5. Click **`Apply`**.
 
 [report-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/255.png "Report-1"
 [report-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/256.png "Report-2"

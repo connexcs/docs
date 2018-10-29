@@ -14,7 +14,7 @@ Integrating PayPal requires admin access to ConnexCS and PayPal settings for pro
 
 **Login to ConnexCS**
 
-1. In the dashboard go to **Setup**>**Integrations**
+1. In the dashboard go to **Setup** > **Integrations**
 2. Click the green **`Add`** button in the top right and select **Paypal IPN** from the drop-list, or select an existing **paypal_ipn** from the list.
 3. Copy the IPN URL at the top and leave in your OS's clipboard for now.
 4. Check **Verify Transaction** if to have transactions verified (recommended).
@@ -58,7 +58,7 @@ We recommend copying each of these one at a time instead of saving them to a sin
 
 ## Setting the Customer Paypal Email Address into ConnexCS
 
-1. Click **Management**>**Customer**>[customer name].
+1. Click **Management** > **Customer** > [customer name].
 2. Click the green **`Edit`** button in the top-right.
 3. Navigate to the **Config** tab.
 4. Enter the PayPal e-mail into the **PayPal Email** text box.

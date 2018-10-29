@@ -2,29 +2,32 @@
 
 - [Table of Contents](#table-of-contents)
 - [Customer Management](#customer-management)
-  - [Adding Customer](#adding-customer)
-  - [Delete Customers](#delete-customers)
-  - [Checking the status](#checking-the-status)
-  - [Searching Customers](#searching-customers)
-  - [Editing Customers](#editing-customers)
+    - [Adding Customers](#adding-customers)
+    - [Delete Customers](#delete-customers)
+    - [Checking Customer Status](#checking-customer-status)
+    - [Searching Customers](#searching-customers)
+    - [Editing Customers](#editing-customers)
+  - [Customer Cards](#customer-cards)
     - [Main](#main)
-    - [Stats](#stats)
-    - [Routing](#routing)
-  - [Ingress Routing](#ingress-routing)
-    - [Call Recording](#call-recording)
-    - [Adding CLI](#adding-cli)
+      - [Contacts](#contacts)
     - [Authentication](#authentication)
       - [IP Authentication](#ip-authentication)
       - [User/ Password Authentication](#user-password-authentication)
+    - [Routing](#routing)
+      - [Ingress Routing](#ingress-routing)
+      - [Call Recording](#call-recording)
+      - [CLI](#cli)
+    - [Stats](#stats)
     - [Latest Calls](#latest-calls)
     - [Dialogs](#dialogs)
     - [Payments](#payments)
     - [Alerts](#alerts)
-    - [Call Detail Record (CDR)](#call-detail-record-cdr)
-    - [Recalculate CDR](#recalculate-cdr)
     - [DID](#did)
+    - [Call Detail Record (CDR)](#call-detail-record-cdr)
+      - [Recalculate CDR](#recalculate-cdr)
     - [Packages](#packages)
-  - [Contacts](#contacts)
+    - [Invoices](#invoices)
+    - [Contracts](#contracts)
       
 
 
@@ -36,19 +39,19 @@ Customer Management is found in the **Management** tab, the four horizontal line
 
 ![alt text][customer-dashboard]
 
-## Adding Customer
-The following explains how to add new customers using the Customer Management screen:
+### Adding Customers
+The following explains how to add new customers using the **Customer Management** screen:
 
 1. Click the  **`+`** button.
 
 ![alt text][add-Customer-new]
 
-2. Enter relevant details in each text box.
+2. Enter the relevant details in each text box.
 3. Click the **`Save`** button.
 
 ![alt text][add-Customer]
 
-Above is an image of the new customer window.  The following is a descrtption of each entry:
+The following is a descrtption of each entry found in the customer window:
 
 * **Customer Name:** - A name or unique identifier for each customer.
 * **Paypal Email:** The email address associated witht he customer's PayPal account.
@@ -61,94 +64,60 @@ Above is an image of the new customer window.  The following is a descrtption of
 * **Minimum Payment:** Set the minimum payment to keep accounts active. 
 * **Tax:**  Tax is added as a percentage that is charged on top of costs.
 * **Currency:** Select the currency from the dropdown menu. Note that you wont be able to change the account currency once the account is created.
+* **Portal Access:**  Users can turn **Portal Access** to yes(on) or no(off).  Selecting 'no' will restrict user access to the Customer Portal
+* **Address:** Complete the customer's physical address, not to be confused with email addresses.
 
-**Portal Access:**  Users can turn **Portal Access** to yes(on) or no(off).  Selecting 'no' will restrict user access to the Customer Portal
-**Address:** Complete the customer's physical address, not to be confused with email addresses.
-
-## Delete Customers
+### Delete Customers
 
 You can delete customers from the list by selecting them and pressing the **Delete** button.
 
 ![alt text][del-customer]
 
-## Checking the status
+### Checking Customer Status
 
-You can also check/filter **Customers** by status:
+You can also check and filter **Customers** by status:
 
 1.	Click the button to the right of the trash bin labeled  **`Active`**.
-2.	Select a filter option from the dropdown menu.
-3.	Results will automatically arrange themselves according to the filter.
+2.	Select a filter option from the drop-down menu.
+3.	Results on the page will automatically arrange themselves according to the filter.
 
 ![alt text][customer-status]
 
-## Searching Customers
+### Searching Customers
 
 Search for **Customer** information by adding a query in the **Search** text field and clicking the search icon or pressing `Enter`.
 
-## Editing Customers
+### Editing Customers
 
-Editing customers by clicking their name in the customer list, then **Edit Customer**. The screen that opens is similar to the new customer screen, except the details should already be filled.  You can edit these, and click **`Save`**.
+Editing customers by clicking their name in the customer list, then **Edit Customer**. The screen that opens is similar to the new customer screen, except the details should already be filled.  You can edit these by entering new information in their place, and click **`Save`**.
 
-### Main 
+## Customer Cards
+Individual customer cards open once you click them by name from the Customer Managment screen.  The following sections detail the tabs lined up on the left side of the customer card, starting at the top.
 
-In the **Main** tab, users can view or add customer contacts. Summaries are available in live, daily, and monthly formats, as shown above.
-
+### Main
+In the **Main** tab, users can view and add customer contacts, block internal numbers, and see summaries of calls live, daily, and monthly formats.
 
 ![alt text][main-tab]
 
-### Stats
+#### Contacts
+**Contacts** are found in the top-left section of the customer card screen.  It shows an overview of contacts associated with the account.  To add new contact:
 
-In the **Stats** tab, you can view items such as Channels, Calls Per Second (CPS), ACD, ASR, Attempts, Codes, PDD, and filter them by day or month.
+1. Click **Management** > **Customers**.
+2. Select a customer from the list.  
+3. Press the **`+`** button to the right of the word **Contacts**.
+4. Enter the contact name and their login email address.
+5. Check the **Auto Generate Password** box to have a password generated online and sent via email. Unchecking the box will let you manually set the password.
+6. You may enter any information on **public** notes. These notes will be displayed on the customer portal when logged in. Private notes will display in the control panel. 
+7. Click **`Save`**.
 
-### Routing
-
-## Ingress Routing
-
-In **Ingress Routing** you can assign a Customer Rate Card to a customer account. 
-
-1.	Click on the **`+`** button.
-2.	Select the customer card and fill in the relevant details.
-3.	Press **`Save`**.
-
-The details of the dialogue box can be seen in the image below:
-
-![alt text][ingress-routing-tab]
-
-See our [Ingress Routing] page in these for more in-depth information.
-
-### Call Recording
-
-1. Click **Management**>**Customer**.
-2. Click the **Customer Name**>**Routing**>**Proxy Info**.
-3. Click the rate card name, and then select **Enable** from Recording.
-
-![alt text][recording-1]
-
-4. Recorded files are accessed from the file section
-5. Select **Management**>**File**>**Recording**.
-6. Click the **`Download`** button to download the file.
-
-![alt text][recording-2]
-
-### Adding CLI
-
-CLI / ANI is the From part of the SIP INVITE message and contains the information about who the call was placed from, more specifically we are referring to the number that is presented to have sent the call. 
-The detailed functions are explained on [CLI]
-
-1.	Click on the **'+'** button.
-2.	Popup will appear. Fill out the details in the dialogue box.
-3.	Press **Save** once the details are correctly entered.
-
-Details of the dialogue box can be seen below:
-
-![alt text][edit-cli]
+ ![alt text][contacts-2]
 
 ### Authentication
 
-Under the **Authentication** tab,  users can choose either IP Authentication or User/Password Authentication.
+Under the authentication tab, labeled **Auth**,  users can choose between IP or User/Password Authentication.
 
 ![alt text][auth]
-
+ 
 #### IP Authentication
 To set 
 1.	Click the **`+`** button.
@@ -177,6 +146,54 @@ You can set the **User/Password authentication**.
 
 ![alt text][user-pwd-auth]
 
+### Routing
+
+#### Ingress Routing
+
+With **Ingress Routing**, you can assign a Customer Rate Card to a customer account. To set up ingress routing:
+
+1.	Click on the **`+`** button.
+2.	Select the customer card and fill in the relevant details.
+3.	Press **`Save`**.
+
+The details of the dialogue box can be seen in the image below:
+
+![alt text][ingress-routing-tab]
+
+See our [Ingress Routing] page in these for more in-depth information.
+
+#### Call Recording
+To enable call recording:
+1. Click **Management** > **Customer**.
+2. Click the **Customer Name** > **Routing** > **Proxy Info**.
+3. Click the rate card name, and then select **Enable** from Recording.
+
+![alt text][recording-1]
+
+4. Recorded files are accessed from the file section
+5. Select **Management** > **File** > **Recording**.
+6. Click the **`Download`** button to download the file.
+
+![alt text][recording-2]
+
+#### CLI
+
+CLI / ANI is the From part of the SIP INVITE message and contains the information about who the call was placed from, more specifically we are referring to the number that is presented to have sent the call. 
+The detailed functions are explained on [CLI]
+
+1.	Click on the **`+`** button.
+2.	Fill out the details in the dialogue box.
+3.	Press **`Save`**.
+
+Details of the dialogue box can be seen below:
+
+![alt text][edit-cli]
+
+
+### Stats
+
+In the **Stats** tab, you can view items such as Channels, Calls Per Second (CPS), ACD, ASR, Attempts, Codes, PDD, and filter them by day or month.
+
 ### Latest Calls
 
 Here you can check the **latest call** from this tab, look up calls and refresh the list of simulated calls.
@@ -191,7 +208,7 @@ For simulating the call:
 
 ### Dialogs
 
-The **Dialogs** tab shows the active calls on the account so you can easily see the Active calls with just one click.
+The **Dialogs** tab shows the active calls on the account so you can easily see active calls with one click.
 
 ### Payments 
 
@@ -203,44 +220,21 @@ In this tab, you can make a list of all the **payments** that have been made so 
 
 ![alt text][payments-tab]
 
-
 ### Alerts
+The **Alerts** tab allows you to generate alerts to your customers when specific events are triggered. You can view all your alerts by clicking on this tab.
 
-The last tab is the "Alerts" tab. It allows you to generate alerts to your customers when some specific events are triggered. You can view all your alerts by clicking on this tab.
-
-You can also add a customised alert by clicking on the "+" sign.
+To add a customised alert from the Alerts screen:
+1. Click the **`+`** button.
 
 ![alt text][carrier-alert-1]
 
-You need to give the alert a name such as: Low Balance Alert
-
-Next select the email address or phone number to whom you wish the alert to go to
-
-The Area is the place that is being monitored ie Balance
-
-The Operator is the comparitor to which the threshold is compared. If the Operator is set to eg >$50 and the Threshold is set to $50 then the Alert will be triggered and sent out to the recipient
-
-Click "Save" and a new alert will be created.
+2. Give the alert a name such as: Low Balance Alert.
+3. Select the email address or phone number to receive the alert.
+4. Area is the place that is being monitored, i.e. Balance. 
+5. The Operator is the comparitor to which the threshold is compared. For example, if the Operator is set to >$50, and the Threshold is set to $50, an Alert will be triggered and sent to the recipient.
+6. Click **`Save`**.
 
 ![alt text][carrier-alert-2]
-
-### Call Detail Record (CDR)
-
-You can check the details of the calls by following a simple procedure:
-
-1. Click on CDR to view the CDR.
-2. You can click on the download CDR buttton to download the CDR.
-
-### Recalculate CDR
-
-This feature lets you recalculate the long duration calls which have been timed out.
-
-1.	Click on the **Recalc CDR** button.
-2.	Fill the dialogue box. Here you can select the day, maximum duration and new duration as shown in an image below:
-
-   ![alt text][recalc]
-
-3.	And finally press **Save** once the details have been entered correctly.
 
 ### DID
 
@@ -252,36 +246,42 @@ You can assign **DID** in an account by following these steps:
 
 ![alt text][edit-did]
 
+### Call Detail Record (CDR)
+
+The **CDR** tab shows a listing of Call Detail Records associated with the selected account.  Selecting the entries will display more detailed information, and pressing the **`download CDR`** buttton will save the record to your hard drive.
+
+#### Recalculate CDR
+
+To recalculate long-duration calls that timed out:
+
+1.	Click the **`Recalc CDR`** button.
+2.	Fill the dialogue box. Here you can select the day, maximum duration:
+
+   ![alt text][recalc]
+
+3.	Click **`Save`**.
+
 ### Packages
 
-You are able to add the customer package and its quantity for their ease in just one click.
+To add tcustomer packages and quantities:
 
 1.	Click the **`+`** button.
 2.	Fill in the dialogue box with relevant details.  Checking **Auto Decrement** will debit the package amount from the customer account depending on the quantity.
-3.	Press **Save** button.
+3.	Click the **`Save`** button.
 
 ![alt text][customer-package]
 
-You can also choose package duration, quantity, cost, and frequency by clicking the drop down arrow in the Package box. 
+To choose package duration, quantity, cost, and frequency, click the drop down arrow in the Package box. 
 
 ![alt text][customer-package1]
 
+### Invoices
 
-## Contacts
+The **Invoices** tab displays a record of invoices sent to the account. Clicking the entries will display more detailed information.
 
-1. Click **Management**>**Customers**.
-2. Select a customer from the list.
-
-   ![alt text][customer]
-
-3. Enter the contact name.
-4. Enter the email address used to log in.
-5. Check the **Auto Generate Password** box to have a password generated online and sent via email. Unchecking the box will let you manually set the password.
-6. You may enter any information on **public** notes. These notes will be displayed on the customer portal when logged in. Private notes will display in the control panel. 
-7. Click **`Save`**.
-
- ![alt text][contacts-2]
+### Contracts
  
+ The **Contracts** tab shows a listing of provider contracts associated with the active customer account. Select the records by clicking their names to see more details.
 
 
 [customer-dashboard]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/33.png "Customer-Dashboard"

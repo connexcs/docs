@@ -1,6 +1,6 @@
 # Table of Contents
 - [Table of Contents](#table-of-contents)
-- [How to upload files in your Connex account?](#how-to-upload-files-in-your-connex-account)
+- [Uploading files to a ConnexCS Account](#uploading-files-to-a-connexcs-account)
     - [Refresh the list](#refresh-the-list)
     - [Remove files](#remove-files)
     - [Cancel upload](#cancel-upload)
@@ -8,7 +8,7 @@
     - [Download the uploaded file](#download-the-uploaded-file)
 
 
-# How to upload files in your Connex account?
+# Uploading files to a ConnexCS Account
 
 This tutorial explains how to upload files to your connex account. 
 
@@ -20,13 +20,13 @@ This tutorial explains how to upload files to your connex account.
 
 ![alt text][files-2]
  
-1. Select the file from the dialogue window that opens to your computer, and click **`Upload`** again.
+1. Select the file from the dialogue window that opens to your computer, and click **`Upload`**.
 
 The file should appear as the next item on the list if the upload is successful. If errors occur, check the settings fo your browser or operating system to see if any defenses are preventing uploads of a certain type.
 
 ## Refresh the list
 
-Update the list items shown in the  by clicking on **"Refresh"** which is right next to **"Upload"** button.
+Update the list items shown in the  by clicking on **`Refresh`** which is right next to **`Upload`** button.
 
 ## Remove files
 
@@ -38,12 +38,12 @@ To cancel a file upload in the queue, click the **`Cancel`** button next to the 
 
 ## Bulk uploading
 
-Bulk uploading lets yoy aselect multiple files and upload them simultaneously by clicking the **`Upload **All**`** button.
+Bulk uploading lets yoy aselect multiple files and upload them simultaneously by clicking the **`Upload All`** button.
 Similarly, you can click on **`Cancel all`** and **`Remove all`** to perform their corresponding actions.
 
 ## Download the uploaded file
 
-You can download a file you've selected with the **`Download`** button. The ensuing action should be to open your browser's 'save as' dialogue. 
+You can download a file you've selected with the **`Download`** button. The ensuing action should be to open your browser's save-as dialogue. 
 
 ![alt text][files-4]
 

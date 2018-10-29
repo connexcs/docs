@@ -1,34 +1,32 @@
 # Table of Contents
 - [Table of Contents](#table-of-contents)
 - [Templates-Connex](#templates-connex)
-  - [Search Template](#search-template)
-  - [Refresh list](#refresh-list)
-
-
+    - [Search Template](#search-template)
+    - [Refresh list](#refresh-list)
 
 # Templates-Connex
 
 ConnexCS lets you customize SMS templates according business rules andrequirements. 
 
-1) Go to **Setup**.
-2) click on **Config** > **Templates**.
+1. Go to **Setup**.
+2. click on **Config** > **Templates**.
 
 ![alt text][temp-1] 
  
-3) Select a template by clicking its name. The next window shows the SMS body and subject.
+3. Select a template by clicking its name. The next window shows the SMS body and subject.
 
 ![alt text][temp-2]
 
-4)	Click  the **`Edit`** button to customize the SMS.
+4.	Click  the **`Edit`** button to customize the SMS.
 
 ![alt text][temp-3]
  
 Under the Subject, SMS, Text and HTML:
 
-* Write your brand name in the place of **{{brandName}}**.
-*	Provide the area that coincides with the alert in **{{area}}**
-*	Give value in **{{value}}** etc.
-You can also apply style to your text via html style panel given under the HTMLtag.
+* Write your brand name in the place of **[brandName]**.
+*	Provide the area that coincides with the alert in **[area]**
+*	Give value in **[value]**. 
+* Apply style to your text via HTML style panel under the HTMLtag.
 *	Click **`Save`** .
  
 ![alt text][temp-4]

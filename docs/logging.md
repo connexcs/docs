@@ -14,15 +14,15 @@
 # SIP traces
 To view the SIP traces of a call, follow the steps below.
 
-1. Click **Management**>**Logging**.
+1. Click **Management** > **Logging**.
 
 ![alt text][logging-1]
 
-1. Click a call ID to view its SIP traces.
+2. Click a call ID to view its SIP traces.
 
 ![alt text][logging-2]
 
-1. Click the **`SIP traces`** button to view the SIP trace image.
+3. Click the **`SIP traces`** button to view the SIP trace image.
 
 **Please note the SIP traces are not always guaranteed.**
 

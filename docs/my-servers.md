@@ -8,17 +8,16 @@
     - [TCP & UDP Additional Ports](#tcp--udp-additional-ports)
     - [Server Reactivation](#server-reactivation)
 
-
 # My Servers
 
 The **My Server** menu is where providers manage servers. It is accessed from the dashboard's side bar, as shown in the image below:
 
-1. Go to **Setup**>**Settings**.
+1. Go to **Setup** > **Settings**.
 2. Click **Servers**.
 
 ![alt text][server-1]
 
-1. Click the server's IP address to open it's information screen.
+1. Click the server's IP address to open its information screen.
 
 ![alt text][server-2]
 

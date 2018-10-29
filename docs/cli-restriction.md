@@ -7,20 +7,20 @@
 
 # CLI Restriction
 
-CLI stands for **Caller Line Identification**, a method by which VoIP systems identify incoming calls for sorting purposes.  Essentially, it is the technical term for the mechanism we know as Caller ID. In VoIP systems, CLI is more than just a way to display the number of incoming calls; it doubles as an additional defense against unidentified call attempts and better management of incoming calls in general.
+CLI stands for **Caller Line Identification**, a method used by VoIP systems to identify incoming calls for sorting and logging.  It is the technical term for the mechanism we know as Caller ID. In VoIP systems, CLI is more than just a way to display the number of incoming calls, however. It doubles as adefense against unidentified call attempts, and provides information to sort incoming calls.
 
-In ConnexCS, CLI Restriction lets you present CLIs on customer accounts, so that any caller without a valid number is rejected outright.  Enabling Force CLI option lets users pass the CLI without setting it on the customer's end. If no CLI rules were added,  just the default will pass through.  The mechanic also supports regular expressions.
-
-**CLI = Caller Line Identification**
+In ConnexCS, CLI Restriction lets you present CLIs on customer accounts, so that any caller without a valid number is rejected outright.  Enabling the **Force CLI** option lets users pass the CLI without setting it on the customer's end. If no CLI rules are added, the defaults are used.  The mechanic also supports regular expressions.
 
 ## How to add CLI?
-* Click  **Managment**>**Customer**>**[Customer name]**
+To add CLI on a customer's account:
+
+* Click  **Managment** > **Customer** > **[Customer name]**.
 
 ![alt text][CLI-0]
 
 * Select **Routing**
 
-* Click the **`+`** under CLI.
+* Click the **`+`** button under **CLI**.
 
 * Enter a CLI Number in E164 format.
 
@@ -38,7 +38,7 @@ In ConnexCS, CLI Restriction lets you present CLIs on customer accounts, so that
 
 ## Block CLI's
 
-Blocking CLIs is a hand way to instill a call blocking on a system. Use this regular expression to block CLIs:
+Blocking CLIs is a means to enforce call blocking on a system. Use this regular expression to block CLIs:
 
 Regex: ```^(?!(1234|5678)).*$\n```
 

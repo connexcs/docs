@@ -6,7 +6,7 @@
 # Reporting a Problem
 This page covers the best practices for reporting problems to ConnexCS support.  We encourage feedback, but want to make sure you have the most efficient means of expressing a problem so there are no holdups.
 
-**One at a time, please**
+**One Problem Policy**
 
 If you have more than one problem to report, we ask:
 
@@ -35,9 +35,9 @@ If you wish to speak to a real person you can call our office number listed on o
 
 We classify issues into the following categories:
 
-1. Trivial - Aesthetic unpleasantries, or things that don't interrupt day to day activities.
-2. Important - Specific settings can't be changed, or set correctly. But not interrupting calls.
-3. Critical - Calls cannot be made, it's seriously affecting call flow.
+1. **Trivial**- Aesthetic unpleasantries, or things that don't interrupt day to day activities.
+2. **Important** - Specific settings can't be changed, or set correctly. But not interrupting calls.
+3. **Critical** - Calls cannot be made, it's seriously affecting call flow.
 
 ## Required Information
 

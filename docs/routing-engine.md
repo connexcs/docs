@@ -1,14 +1,14 @@
 # Table of Contents
 
-* [Table of Contents](#table-of-contents)
-* [Routing Engine](#routing-engine)
-  * [What is Ingress and Egress](#what-is-ingress-and-egress)
-  * [Error Codes](#error-codes)
+- [Table of Contents](#table-of-contents)
+- [Routing Engine](#routing-engine)
+  - [Ingress and Egress.](#ingress-and-egress)
+  - [Error Codes](#error-codes)
 
 # Routing Engine
 When a call first lands on the system it hits the routing engine. The routing engine follows the process:
 
-## What is Ingress and Egress.
+## Ingress and Egress.
 
 Ingress means inbound and egress means outbound. If this is describing a switch (for IP auth), the direction is relative to the switch
 that you are currently describing. E.g if you add a customer's switch that will be sending traffic to terminate with a carrier, the customer's switch would be considered Egress as it is sending calls out. If it has a DID pointing to it, it would be Ingress as traffic would be flowing into it.

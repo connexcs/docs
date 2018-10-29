@@ -6,29 +6,26 @@
     - [Invoice Line grouping](#invoice-line-grouping)
   
 
-
 # Invoice
-ConnexCS allows for straightforward invoice generation for all providers. The tool is another way to eliminate gaps in communication between providers and customers.  To send an invoice, follow these instructions from the dashboard:
+ConnexCS allows for straightforward invoice generation for all providers. The tool is another way to eliminate gaps in communication between providers and customers.  
 
-1. Click **Management**>**Customers**
-2. Click  the customer's name
+To send an invoice, follow these instructions from the dashboard:
+
+1. Click **Management** > **Customers**.
+2. Click the customer's name.
 
 ![alt text][invoice-2]
 
-3. On the Main tab, select **Daily** under Summary. Check the invoice box against the date.  Multiple dates can be selected at a time.
-4. Click **Generate Invoice**.
+3. Select **Generate Invoice**, and the invoice will be available for download.
 
 ![alt text][invoice-1]
 
-The Invoice will be generated and available for download. To find it:
-1. Log in to your Connex account.
-2. From the side menu, select **Mangement** to extend it. 
-3. From the **Management** sub-menu, select **Invoice**. A new page will display your existing invoices.
+To view existing invoices:
+1. Go to **Management** > **Customers**.
+2. Click **Invoices**, and page will display current invoices.
 
 ![alt text][invoice-3]
  
-
-
 ## Adding new Invoices
 
 To add a new invoice:
@@ -41,28 +38,28 @@ A new page will display a blank invoice.
 
 ![alt text][invoice-5]
 
-2.	Select a customer from the drop menu where you see the word **Required**. The invoice will be generated for the highlighted customer.
+2.	Select a customer from the drop menu where you see the word **Required**. An invoice will be generated for the highlighted customer.
 
 ![alt text][invoice-6]
 
-To add an item into your invoice, select **Add Invoice Item**. Fill out the info and select a package. An amount will be generated according to the package.
+3. Select **`Add Invoice Item`**. 
+4. Fill in the corresponding form and select a package.
 
 ![alt text][invoice-7]
 
-1. When you've completed the form, click **`Save`**.
+5. Click **`Save`**.
 
 ![alt text][invoice-8] 
 
 ## View and Edit Invoices
 
-You can view and edit invoices by clicking the invoice’s ID. The complete invoice would show up. Click on "Edit" to edit that invoice.
+You can view and edit invoices by clicking the invoice’s ID.  Click **`Edit`** to edit that invoice.
 
 ![alt text][invoice-9] 
  
 ![alt text][invoice-10]
 
-You can also download PDF version of invoice by clicking on "PDF".
-Click the **`Edit`** button, a new page will appear, make the required changes and click on **`Save`**.
+You can also download PDF version of invoice by clicking on **`PDF`**. Click the **`Edit`** button.  A new page will appear, where you can make changes, then click **`Save`**.
 
 ![alt text][invoice-11]
 

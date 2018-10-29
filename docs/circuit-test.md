@@ -5,34 +5,35 @@
 
 # Circuit Test
 
-Circuit tests help determine the quality a route. It also helps analyze FAS, RTP quality, MOS, Release reason, jitter, packet loss percentage, and answer delay measurement.
+Circuit tests help determine the quality a route. It also helps analyze FAS, RTP quality, MOS, release reason, jitter, packet loss percentage, and answer delay measurement.
 
-A circuit test works by initiating a call in the switch to a termination provider. The call passes though the PSTN network and terminate son one of your DID providers.  It continues back to the switch, and links up with the same dialog.
+A circuit test works by initiating a call in the switch to a termination provider. The call passes though the PSTN network and terminates on one of your DID providers.  It then continues back to the switch and links up with the same dialog.
 
 To perform circuit test:
 
-1.	Click **Management>DID>Add DID**
+1.	Click **Management** > **DID** > **Add DID**.
 
 ![alt text][circuit-test-1]
 
 ![alt text][circuit-test-2]
 
-1. Enter the DID number and a destination to circuit test.
-
+2. Enter the DID number and a destination to circuit test.
+ 
 3.	Select the provider and provider rate card.
 
-1. Select the customer and customer rate card.
+4. Select the customer and customer rate card.
 
-2.  Select the RTP Proxy & Media proxy, more information can be found from this article.
+5.  Select the RTP Proxy & Media proxy, more information can be found from this article.
 
-3. Select the timeouts (optional.)
+6. Select the timeouts (optional).
+   
+7. Enter the monthly cost of your DID.
 
-4. Enter the monthly cost of your DID.
-
-5. Enter the monthly sell cost.
-
-6. Enter the max duration.  The default value is 3600 seconds.
-7. Click **`Save`**.
+8. Enter the monthly sell cost.
+   
+9.  Enter the max duration.  The default value is 3600 seconds.
+    
+10. Click **`Save`**.
 
 ![alt text][circuit-test-3]
 
@@ -42,19 +43,19 @@ Now, it's time for us to configure the circuit test:
 
 1. Click **Setup**.
 
-2. Click on **Settings**>**Options**.
+2. Click on **Settings** > **Options**.
 
 ![alt text][circuit-test-5]
  
-2.	Click the **`Edit`** button on Origination Ingress Address and enter the origination ingress IP and save.
+3.	Click the **`Edit`** button on **Origination Ingress Address**, enter the origination ingress IP, and click **`Save`**.
 
-3.	Click **`Edit`** for `Termination Ingress Address` button and enter the termination ingress IP and save.
+4.	Click **`Edit`** for `Termination Ingress Address` button, enter the termination ingress IP, and click **`Save`**.
 
 ![alt text][circuit-test-6]  
 
 ![alt text][circuit-test-7]
 
-4.	Similarly, for the **Circuit Test User**, click **`Edit`**, and then select the customer account.
+5.	Similarly, for the **Circuit Test User**, click **`Edit`**, and then select the customer account.
 
 ![alt text][circuit-test-8]
 

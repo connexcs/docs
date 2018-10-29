@@ -16,16 +16,18 @@
 ConnexCS supports two methods of authentication: **Username/Password** in UAS mode and **IP Authentication**.
 
 ## User Acces Control (UAC)
-_Authentication from user / customers_
+<<<<<<< HEAD
+User Access Control is found in the individual customer cards, in the **Authorization** tab. Instructions below start at this tab, which is found by navigating to **Management** > **Customer** > [Customer Name]. 
+=======
+The following are the types of user access controls used in ConnexCS.
+>>>>>>> d0bfe808456f9b545c5b168a9360e98f0410151d
 
 ### Username and Password
-Username & Password authentication is supported on the ConnexCS platform. Follow these steps to allow it for your customers:
+To allow username and password authentication on user accounts:
 
-1. Click **customer** and select the customer's name that needs authentication.
-2. Click on the **Authentication** tab.
-3. In the right panel, select the blue `+` (plus icon) in **User/Password Authentication**.
-4. Fill out an original Username and Password in the designated boxes.
-5. Note that in this screen you can also manage:
+1. In the right panel, select the blue `+` (plus icon) in **User/Password Authentication**.
+2. Fill out an original Username and Password in the designated boxes.
+3. Note that in this screen you can also manage:
     * Channel Limits
     * CPS Limits
     * Codec Restrictions
@@ -33,15 +35,13 @@ Username & Password authentication is supported on the ConnexCS platform. Follow
     * Strip Digits
     * CLI Prefixes
 
-
 ### IP Authentication
-IP authentication is supported on the ConnexCS platform. You can allow a customer to use this method of authentication with the following steps:
+Follow these steps to allow IP Authentication on a selected customer:
 
-1. Click **customer** and select the customer name you wish to add authentication for.
-2. Click on the Authentication Tab.
-3. In the left panel in the **IP Authentication** click on the blue plus.
-4. Complete the IP Address Box, you may also enter multiple IP addresses 1 per line
-5. Note that in this screen you can also manage: 
+1. Click the **Auth** tab (authentication).
+2. In the left panel in the **IP Authentication** click on the blue plus.
+3. Complete the IP Address Box. It allows multiple IP addresses per line.
+4. Note that in this screen you can also manage: 
     * Channel Limit
     * CPS Limit
     * Codec Restriction
@@ -49,12 +49,11 @@ IP authentication is supported on the ConnexCS platform. You can allow a custome
     * Force From to modify the `From` Field
 
 ### Multiple Customers Per IP
-ConnexCS Supports multiple customers per IP when using IP Authentication. To ensure clear identification between customers sharing the same IP address, a _tech prefix_ is **required**.
+ConnexCS Supports multiple customers per IP with IP Authentication. To ensure clear identification between customers sharing the same IP address, a _tech prefix_ is required.
 
 ## UAS
-_Authentication from the ConnexCS server against providers_
 
-No action is required on ConnexCS's part for outgoing calls; IP Authentication will work.
+No action is required on ConnexCS's part for outgoing calls. IP Authentication will work.
 
 ### Username / Password with Upstream Providers
 ConnexCS supports Username / Password Authentication against upstream providers. You can add an upstream provider, and instruct ConnexCS to respond to `407 Proxy Authentication Required` using the following method:

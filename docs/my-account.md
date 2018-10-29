@@ -20,11 +20,11 @@
 
 This section is an overview of actions that can be performed against each provider account. More specific details about each action exists on the topics' respective pages. 
 
-To open **My Account**, click the **`Setup`** button from the left panel, then **Settings**>**Account**, as highlighted in the image below.
+To open **My Account**, click the **`Setup`** button from the left panel, then **Settings** > **Account**:
 
 ![alt text][my-account]
  
-An account profile contains two types of information, company and general. Details about each type are below.
+An account profile contains two types of information: company and general. 
 
 ## Company Information
 
@@ -33,8 +33,7 @@ To add or edit company information, click the pencil icon. In company Informatio
 1. Company Name
 2. Address Line 1 and Address Line 2. 
 3. City, County/ State, Country, Post Code/ ZIP code
-
-After filling in these details, click the **`Save`** button.
+4. lick the **`Save`** button.
 
 ![alt text][company-info]
 
@@ -180,7 +179,7 @@ To delete an API, select it from the list and click the **`Delete`** button.
 
 The **Domains** screen lets you add a domains and sub domain to the control panel, which the customer can access through the customer portal. Domains can also be whitelabeled here.
 
-1. Go to **Setup**>**Integrations**>**Domains**.
+1. Go to **Setup** > **Integrations** > **Domains**.
 
 ![alt text][domain]
 
@@ -207,7 +206,7 @@ Domains can also be edited here:
 
 Payments can be made at any time:
 
-1. Go to **Setup**>**Settings**>**Payments**.
+1. Go to **Setup** > **Settings** > **Payments**.
 
 ![alt text][payments]
 
@@ -223,7 +222,7 @@ Payments can be made at any time:
 
 **Packages** lets you access our lookup services, which can be enabled or disabled from this section.
 
-1. Go to **Settings**>**Connex Packages**. A list of availanble packages will appear; the green buttons on the left allow you to turn the packages on or off.
+1. Go to **Settings** > **Connex Packages**. A list of availanble packages will appear. The green buttons on the left allow you to turn the packages on or off.
 
 ![alt text][package]
 ![alt text][package-dialog-box]

@@ -62,7 +62,7 @@ To add a new routing strategy:
  
 ## Setting up Routing Strategy in Customer Account
 To set up a routing strategy in a customer's account:
-1. From the dashboard homescreen, select **Management**>**Customer**.
+1. From the dashboard homescreen, select **Management** > **Customer**.
 2. Select the customer account by clicking its name.
 
 

@@ -5,7 +5,7 @@
   - [NPA-NXX Customer Rate Card Upload](#npa-nxx-customer-rate-card-upload)
   - [NPA-NXX Customer Rate Card Manual (Generate Profit Internally)](#npa-nxx-customer-rate-card-manual-generate-profit-internally)
   - [NPA-NXX Customer Rate Card Upload (External)](#npa-nxx-customer-rate-card-upload-external)
-  - [A to Z Rate Card Upload](#a-to-z-rate-card-upload)
+  - [Rate Card Upload](#rate-card-upload)
 
 
 # NPA-NXX Provider Rate Card Upload
@@ -42,7 +42,7 @@ This function lets you upload **NPA-NXX provider rate cards** from external sour
 
 ## NPA-NXX Customer Rate Card Upload
 This function lets you upload **NPA-NXX customer rate cards** from external sources.
-1. Click **Management**>**Rate Card**
+1. Click **Management** > **Rate Card**
 
   ![alt text][ccard-1] 
 
@@ -58,7 +58,7 @@ This function lets you upload **NPA-NXX customer rate cards** from external sour
 
 6. Click **Config**
 7. Change the presentation for Inter/Intra/Indet under **Force Presentation**.
-  If you wish to enable LRN on the customer card you can do so from the Dialling option
+  If you wish to enable LRN on the customer card, you can do so from the Dialling option
 8. Click **`Save`**
 
    ![alt text][ccard-4]
@@ -69,11 +69,11 @@ This function lets you upload **NPA-NXX customer rate cards** from external sour
   
  ![alt text][ccard-6] 
 
-10. Click **Upload to customer card**.  
+10. Click **Upload to customer card**, and click `Yes` to confirm. 
 
  ![alt text][ccard-7] 
 
-11. After the card is sucessfully imported, a notification is displayed:
+
 
 ## NPA-NXX Customer Rate Card Manual (Generate Profit Internally)
 
@@ -143,9 +143,10 @@ This function lets you upload **NPA-NXX customer rate cards** from external sour
 11.  Click the **`Upload to Customer Rate Card`** button.
 12. You will be notified when the import is complete. Note: compiling and/or merging is not required if the rate card is built externally.
 
-## A to Z Rate Card Upload
+## Rate Card Upload
+The following steps detail how to upload a provider rate card from an external source:
 
-1. Click on **Management>Rate Card**
+1. Click on **Management** > **Rate Card**.
 
 ![alt text][ccard-21] 
 
@@ -160,7 +161,7 @@ This function lets you upload **NPA-NXX customer rate cards** from external sour
 
 ![alt text][ccard-23] 
 
-7. Click **Upload**>**Browse** and select the rate card file.
+7. Click **Upload** > **Browse** and select the rate card file.
 
 ![alt text][ccard-24] 
 
@@ -168,7 +169,7 @@ This function lets you upload **NPA-NXX customer rate cards** from external sour
 
 ![alt text][ccard-25] 
 
-1. Click the **`Upload to Provider Rate Card`** button.  You will be notified when the import completes.
+9. Click the **`Upload to Provider Rate Card`** button.  You will be notified when the import completes.
 
 
 

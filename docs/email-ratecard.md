@@ -1,18 +1,16 @@
 #Email Rate Card
 
-This feature allows providers to email rate cards to your customer's email address as an attachment. It is a convenient way to send customers official information relevant to their accounts.  
+This feature allows providers to email rate cards to customers as an attachment. It is a convenient way to send customers official information relevant to their accounts.  
 
 To email a rate card:
-1. Click **Management**>**Rate Card**>**Customer Rate Card**.
+1. Click **Management** > **Rate Card** > **Customer Rate Card**.
 2. Click the rate card name.
 
 ![alt text][email-ratecard-1]
 
 3. Click the **`Email`** button.
 
-
 ![alt text][email-ratecard-2]
-
 
 4. Enter the email address and click **`Send`**.
 
