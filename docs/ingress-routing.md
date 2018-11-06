@@ -130,8 +130,8 @@ Changing the CPS Buffering value only affects calls that exceed the CPS. The del
 Passive SST is enabled by default, and all RE-INVITES will propagate through the system. It is also possible to be proactive about the RE-INVITES, instructing the ConnexCS switch to send upstream to the carrier, downstream to the customer, or in both directions.
 
 **SST Options**
- * **Default:** No headers are changed and no SST is engaged
- * **Disabled:** All ```timer``` headers are removed
+ - **Default:** No headers are changed and no SST is engaged
+ - **Disabled:** All ```timer``` headers are removed
  - **Suggest:** Session-Expire headers and Min-SE are added to packets sent to carrier encouraging the use of SST.
  - **Enabled Both:** ConnexCS will send SIP Session Timers to both legs of the call.
  - **Enabled (Upstream(:** ConnexCS will use SST with the carrier.
