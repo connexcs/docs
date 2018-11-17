@@ -1,34 +1,32 @@
 # Table of Contents
 
 - [Table of Contents](#table-of-contents)
-- [What is User Location Registration](#what-is-user-location-registration)
-  - [How to add CLI?](#how-to-add-cli)
-  - [Block CLI's](#block-clis)
+- [User Location Registration](#user-location-registration)
+  - [NAT Keep ALives](#nat-keep-alives)
+  - [Single Server](#single-server)
+  - [Server Array](#server-array)
+  - [Server Cluster](#server-cluster)
   
   
 # User Location Registration
 
-When a call is being sent to a server is is a simple case of sending an ```INVITE``` to the remote server. However if you have users connecting from dynamic IP addresses you will need a way to map a known constant address (e.g a username) to a dynamic endpoint (IP address, port, etc).
+A call sent to a server is actually an ```INVITE``` sent to a remote server. However, if users connect from dynamic IP addresses, there must be a a way to map a known constant address, e.g a username, to a dynamic endpoint such as an IP address or port.
 
-This is accomplished by the UAC (User Agent Client) (soft phone / hard phone) connecting to the ConnexCS server with a ```REGISTER``` sending amoungst other things their current location and their username. We will then store that information and make it available as a lookup. So when someone calls user1, it will route the call to their IP address.
+This is accomplished by the User Agent Client (UAC), or a soft phone / hard phone, connecting to the ConnexCS server with a ```REGISTER``` sending their current location and their username, along with additional information. The information is then stored, and made available as a lookup. When someone calls a user, it routes the call to their IP address.
 
 ## NAT Keep Alives
-If a user is registered via UDP via NAT a port mapping is created, however the NAT will timeout this connection is not kept alive by traffic. The Connex Cloud Switch will perodically send keep-alive messages to the registered UAC. This can either be UDP or full SIP ```OPTIONS``` messages. Both will work, however SIP ```OPTIONS``` Ping will reply back to the ConnexCS Server. From this ping we can do 2 things. 1 Monitor the latency of the connection. 2. Know if the NAT has destroyed the rule or the user has gone offline without telling us so.
-
-Once a user is registered (via UDP) we need to ensure that the connection is made
+If a user is registered via UDP via NAT, a port mapping is created. However, the NAT will time out, and this connection is not kept alive by traffic. The Connex Cloud Switch will perodically send keep-alive messages to the registered UAC. This can either be UDP or full SIP ```OPTIONS``` messages. Both are acceptable, though the SIP ```OPTIONS``` ping will reply back to the ConnexCS Server. From this ping, we can monitor the latency of the connection, and also discern if the the NAT has destroyed the rule or if the user has gone offline without notifying the system. Once a user is registered via UDP, the connection is verified once again.
 
 # Single Server
 
-If you have a single server, there is nothing extra that is needed to be configured.
+No additional configuration is needed for a single server.
 
 # Server Array
 
-If you have multiple servers you need to make the decision if you will require users who are registered against _Server A_ to be able to call users on _Server B_. If so you will need to explicitly set the *UAC Location Array Sharing* Option in the servers which you wish to expose the registrations of (in this example _Server B_).
+For multiple servers, decide whether or notusers registered to _Server A_ can call users on _Server B_. If so, set the *UAC Location Array Sharing* Option in the servers to which you wish to expose the registrations, which in this example is _Server B_.
 
-*Note:* Due to design constraints having multiple servers in an array, NAT Keep Alive Pings can be quite intensive. You could *Disable UAC Ping* from the server page, upgrade to a cluster, or only have a single registration server to solve this. We would be happy to discuss the options with you in more detail to make the best architectural decision on your network.
+*Note:* Due to design constraints that occur with multiple servers in an array, NAT Keep Alive Pings can be quite intensive. You could use *Disable UAC Ping* from the server page, upgrade to a cluster, or use a single registration server to solve this. More intricate measures can be arranged on a case-by-case basis.
 
 # Server Cluster
 
-If you join servers together in a cluster they share all user location registrations, this is the best solution to scale into the many 1000's of registrations.
-
-*Limitation:* You will not be able to route calls to any users registered against any servers outside the cluster. Contact us if this is a problem for you.
+Joined servers in a cluster share all user location registrations. This is the best solution to scale into the many 1000's of registrations. Be advised: you will not be able to route calls to users registered against any servers outside the cluster. 
