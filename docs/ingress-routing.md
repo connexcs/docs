@@ -18,7 +18,7 @@
 
 # Ingress Routing
 
-Ingress routing allocates incoming attempts to designated rate card, which in turn egresses through a specified provider. It allows multiple rate cards to be used with or without a prefix. This is checked according to the longest prefix first, then the shortest for a match. If no prefix is matched, it will match the rate cards with mutually exclusive destinations.  If there are multiple rate cards with the same prefixes, you must set up a dial plan with a tech prefix to identify the correct card.
+Ingress routing allocates incoming attempts to a designated rate card, which in turn egresses through a specified provider. It allows multiple rate cards to be used with or without a prefix. This is checked according to the longest prefix first, then the shortest for a match. If no prefix is matched, it will match the rate cards with mutually exclusive destinations.  If there are multiple rate cards with the same prefixes, you must set up a dial plan with a tech prefix to identify the correct card.
 
 ## Tariff
 
@@ -34,7 +34,7 @@ Here you can place limits on how many channels are allowed through each ingress 
 
 ## Dial string
 
-A dial string will only allow entered prefixes to plass, listed as one per line. Both prefix and regular expressions are allowed. For example, if you only wanted to allow UK Landline you could use:
+A dial string will only allow entered prefixes to pass, listed as one per line. Both prefix and regular expressions are allowed. For example, if you only wanted to allow UK Landline you could use:
 
 * Prefix
 
@@ -55,17 +55,17 @@ A dial string will only allow entered prefixes to plass, listed as one per line.
 ```
 ## Missing BYE Protection
 
-A VoIP call is stateful,even though its protocol is stateless. This means that both sides of the conversation have to be told when to finish the call. They do this with a BYE message. If the BYE message goes missing, the call will continue forever.  The following are the methods we use to stop that from happening.
+A VoIP call is stateful, even though its protocol is stateless. This means that both sides of the conversation have to be told when to finish the call. They do this with a BYE message. If the BYE message goes missing, the call will continue forever.  The following are the methods we use to stop that from happening.
 
 * **Maximum Duration**: If a BYE gets missed, Maximum Duration is the maximum amount of time that the call will be allowed to exist before being terminated.
 * **Time-out Methods**
     * **SIP Ping:** This sends a SIP packet to the remote end of the conversation roughly every 30 seconds. This checks to see if the other side is still aware of an ongoing conversation. If this is not received back, or is told that the conversation is not active then it shuts off the call. 
-Note: Asterisk does not have SIP Ping (OPTIONS) enabled as default, if your customer / carrier is using Asterisk you may need to disable this if they dont have it enabled on their side as calls will tipically disconnect after 30 seconds. 
+Note: Asterisk does not have SIP Ping (OPTIONS) enabled as default, if your customer / carrier is using Asterisk you may need to disable this if they don't have it enabled on their side as calls will typically disconnect after 30 seconds. 
     * **RTP Time-out:** Another way to check for an active call is to detect if there is audio passing. If there is no audio passing for a pre-set interval, our RTP array will notify the switch and instruct it to terminate the call.  This won't work if RTP Mode is set to direct.
 
 ## Profit Assurance
 
-To check if calls are profitable, enable **Profit Assurance**. It is useful for A-Z routes or NPA-NXX rate cards. However,if you have a very simple rate cards that are profitable on _all_ upstream routes.
+To check if calls are profitable, enable **Profit Assurance**. It is useful for A-Z routes or NPA-NXX rate cards. 
 
 The default option is `Disabled`, while `Enabled` can add additional PDD to the call.
 
@@ -75,7 +75,7 @@ To lock a rate card from the list of providers you have added, choose this optio
 
 ## Exclude Parent Cards
 
-To  exclude access to one or more of the rate cards from providers on your list, choose this option.
+To exclude access to one or more of the rate cards from providers on your list, choose this option.
 
 ## ScriptForge
 
@@ -93,7 +93,7 @@ When a call is established between customer and provider, audio can be set-up in
 | **Information Leakage**| No |   Yes* |
 
  	
-While it's doubtful that any information will be logged in the customer/providers switch when the audio is engaged, it is possible for an engineer to learn this information from an SIP trace, pcap, or watching transit locations. DTMF Detection ONLY works when RTP Proxy mode is enabled.
+While it's doubtful that any information will be logged in the customer/providers switch when the audio is engaged, it is possible for an engineer to learn this information from a SIP trace, pcap, or by looking at transit locations. DTMF Detection ONLY works when RTP Proxy mode is enabled.
 
 **When should I use with/without RTP Proxy?**
 
@@ -144,7 +144,7 @@ ASR+ is a proprietary technology developed by ConnexCS to filter known failed no
 * Quick failure of known bad numbers.
 * Reduces response time for your customers.
 * Improves the ASR of the traffic that your upstream carrier sees.
-* Highly effective for call center traffic.
+* Highly effective for call centre traffic.
 
 **Disadvantages of ASR**
 * Marginal impact on your NER due to false positive matches. This is usually kept within tolerances of < 0.1%.
@@ -160,4 +160,4 @@ ASR+ is a proprietary technology developed by ConnexCS to filter known failed no
 | ASR+?         | When ASR+ is enabled on the provider card, only known connected calls will be allowed to pass to specific provider |
 | ASR++         | Only known connected calls will be allowed to pass (Rarely used as usually too strict) |
 
-Unless its turn off or customized otherwise, ASR+ is active for 90% of calls, which grants the opportunity for the database to be replenished.
+Unless it's turned off or customized otherwise, ASR+ is active for 90% of calls, which grants the opportunity for the database to be replenished.
