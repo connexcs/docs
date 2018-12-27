@@ -30,14 +30,14 @@ This guide assumes:
 ## Verifying Personal Details
 Before you configure you account, you need to verify your email and mobile number. You can do this in the **Personal Profile** pane.  The Personal Profile pane is found by clicking the notification icon at the top left of the screen. 
 
-![notification icon][notification_icon]
+![notification-icon][notification-icon]
 
 
 **Email Verification**
 
 We verify email addresses to ensure that they are genuine. To verify your email address, select the Notification icon at the top left of the screen, then Verify Email.
 
-    ![alt text][verify-email-1]
+   ![alt text][verify-email-1]
 
 1. In the Personal Profile pane, click the Verify Email icon.
 ![verification-icon](images/2018/08/verification-icon.png)  
@@ -302,6 +302,6 @@ Deploying a server with ConnexCS is an efficient operatation.  You should be abl
 [server-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/31.png "server-1"
 [server-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/32.png "server-2"
 
-[notification icon]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/notification-icon.png "notification icon"
+[notification-icon]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/notification-icon.png "notification icon"
 [server-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/32.png "server-2"
 [server-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/32.png "server-2"
