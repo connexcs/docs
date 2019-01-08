@@ -69,7 +69,7 @@ Below are the instructions for basic customer setup.  It will include the mandat
 
 First, o to Management > Customer:
 
-      ![alt text][customer-dashboard-new]
+  ![alt text][customer-dashboard-new]
 
 
 On this screen, you can modify customer details,filter the list of customers, and perform bulk actions. To view outstanding actions on a customer, hover over the Warning icon. In the example below, you can see that routing has not been set. Click on the customer's name to update their routing details.
