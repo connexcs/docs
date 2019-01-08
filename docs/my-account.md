@@ -234,6 +234,7 @@ If a server has been deployed on your account, you can view and manage from this
 [here]: <https://docs.connexcs.com/en/latest/customer-payments>
 [my-account]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/64.png "My Account"
 [my-account-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/65.png "My Account 1"
+[company-info]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/company-info.png "Company Info"
 [general-info]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/66.png "General-Info"
 [tfa]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/67.png "TFA"
 [smtp]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/68.png "SMTP"
