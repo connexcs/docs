@@ -73,8 +73,8 @@ First, o to Management > Customer:
 
 
 On this screen, you can modify customer details,filter the list of customers, and perform bulk actions. To view outstanding actions on a customer, hover over the Warning icon. In the example below, you can see that routing has not been set. Click on the customer's name to update their routing details.
->
->![warning-icon](images/2018/08/warning-icon.png)  
+
+![alt text][warning-icon]  
 
 1. To add a new customer, click on the `+` icon. 
 
@@ -305,3 +305,5 @@ Deploying a server with ConnexCS is an efficient operatation.  You should be abl
 [notification-icon]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/notification-icon.png "notification icon"
 [server-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/32.png "server-2"
 [server-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/32.png "server-2"
+
+[warning-icon]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/images/2018/08/warning-icon.png "warning-icon"
