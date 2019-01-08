@@ -188,7 +188,7 @@ Note that this mechanic can show false positives if the customer sends missed ca
 [carrier-stats]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/104.png "Carrier Stats"
 [carrier-reply]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/105.png "Carrier Reply"
 [carrier-authentication]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/106.png "Carrier Authentication"
-[carrier-ip-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/107.jpg "Carrier IP 1"
+[carrier-ip-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/107.png "Carrier IP 1"
 [carrier-calls]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/108.png "Carrier Calls"
 [carrier-failover]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/109.png "Carrier Failover"
 [carrier-payment]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/110.png "Carrier Payment"
