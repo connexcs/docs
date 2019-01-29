@@ -17,7 +17,7 @@ You can find the API Spec here: <https://docs.connexcs.com/api>
 
 The API lets you perform customer-facing operations like communicating with the switch, information about current balances, and managing Call Detail Records (CDRs).  
 
-Specifications for the customer-facing API operations are found here: <https://docs.connexcs.com/customer-api-docs>
+Specifications for the customer-facing API operations are found here: <https://docs.connexcs.com/customer-api-docs/>
 
 
 
