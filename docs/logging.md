@@ -6,6 +6,7 @@
     - [Simulating Calls](#simulating-calls)
     - [Refreshing the Logs](#refreshing-the-logs)
     - [Searching the Logs](#searching-the-logs)
+    - [Known Problems](#known-problems)
 
 # Logging
 
