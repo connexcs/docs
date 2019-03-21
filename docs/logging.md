@@ -91,3 +91,10 @@ You can search for calls by phone number, call ID, or IP address, but entering o
 [lookup-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/lookup-2.png "lookup-2"
 [lookup-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/lookup-3.png "lookup-3"
 [lookup-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/lookup-4.png "lookup-4"
+
+### Known issues
+- SIP Traces can be lossy, this is due to the nature of the architecture.
+- If using SIP authentication, because there are 2 requests it is possible that they hit our database out of order. So the logging page may only display the first call attempt.
+
+Neither of the above two problem affect calls and are typically observed in less than 1 in every 50,000 calls.
+
