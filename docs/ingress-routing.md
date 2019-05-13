@@ -151,11 +151,12 @@ ASR+ is a proprietary technology developed by ConnexCS to filter known failed no
 * Does not offer improvements for all destinations.
 
 **ASR Settings**
+
 | Value         | Description                | 
 | ------------- |----------------------------| 
 | Off           | ASR+ Disabled              | 
 | ASR+ (Low)    | Active on 30% of calls     | 
-| ASR+          | Active     |
+| ASR+          | Active                     |
 | ASR?          | When ASR+ is enabled on the provider card |
 | ASR+?         | When ASR+ is enabled on the provider card, only known connected calls will be allowed to pass to specific provider |
 | ASR++         | Only known connected calls will be allowed to pass (Rarely used as usually too strict) |
