@@ -32,7 +32,6 @@ pages:
     - Carrier: carrier.md
     
 - Rate Cards:
-    - Overview: provider-ratecard.md
     - Provider Ratecard: provider-ratecard.md
     - Customer Ratecard: customer-ratecard.md
     - Building: rate-card-building.md
