@@ -52,9 +52,9 @@ To find the **Advanced** tab, select a rate card.  In the rate card's screen, cl
 * **Public Options** - Decide which ways information about the provider can be shared externally by togging check boxes on and off.  You allow the card to be viewed via HTML (on a web page), CSV (a spreadsheet), an API (an external application), and whether or not to list the rate card in the domain portal.
 * **CLI Restrict** - Enable Call Line Identification (CLI) restriction(s) by entering restricted numbers in the text box.
 
-[provider-card-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/115.png "provider-card-1"
-[provider-card-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/116.png "provider-card-2"
-[provider-card-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/117.png "provider-card-3"
-[provider-card-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/118.png "provider-card-4"
-[provider-card-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/119.png "provider-card-5"
-[provider-card-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/120.png "provider-card-6"
+[provider-card-1]: /card/img/115.png "provider-card-1"
+[provider-card-2]: /card/img/116.png "provider-card-2"
+[provider-card-3]: /card/img/117.png "provider-card-3"
+[provider-card-4]: /card/img/118.png "provider-card-4"
+[provider-card-5]: /card/img/119.png "provider-card-5"
+[provider-card-6]: /card/img/120.png "provider-card-6"
