@@ -1,17 +1,3 @@
-# Table of Contents
-
-- [Table of Contents](#table-of-contents)
-- [Billing](#billing)
-  - [ConnexCS Billing Per Channel](#connexcs-billing-per-channel)
-    - [Advantages](#advantages)
-    - [Disadvantages](#disadvantages)
-  - [ConnexCS Billing per minute](#connexcs-billing-per-minute)
-    - [Advantages](#advantages)
-    - [Disadvantages](#disadvantages)
-  - [Minimum Charges](#minimum-charges)
-  - [Capacity Planning](#capacity-planning)
-
-
 # Billing
 
 A ConnexCS subscription comes with two main tariffs used for billing: **per minute** and **per channel**.
@@ -44,7 +30,6 @@ In per-minute billing, the amount of seconds you use are tallied daily, combined
   1. More expensive with consistent traffic
   2. Multiple servers are more expensive
 
- 
 ## Minimum Charges
 
 All accounts must spend a mininum of $20 per month to remain active.  This helps us prevent incurring losses from stagnant accounts. 
