@@ -1,20 +1,3 @@
-# Table of Contents
-
-- [Table of Contents](#table-of-contents)
-- [Introduction](#introduction)
-  - [Prerequisites](#prerequisites)
-  - [Verifying Personal Details](#verifying-personal-details)
-  - [Customer Setup](#customer-setup)
-    - [Authentication](#authentication)
-    - [SIP User Authentication](#sip-user-authentication)
-    - [Payments](#payments)
-  - [Carrier Setup](#carrier-setup)
-    - [Authentication](#authentication)
-  - [Provider Card](#provider-card)
-  - [Customer Card](#customer-card)
-  - [Ingress Routing](#ingress-routing)
-  - [Deploying Servers](#deploying-servers)
-
 # Getting Started
 
 The initial setup in ConnexCS will configure a single carrier, a single customer and a single rate card.
