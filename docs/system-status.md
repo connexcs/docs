@@ -2,7 +2,7 @@
 
 The **System Status** feature updates the status of customer portals, and provides a way to communicate downtime and system outages to your customers.
 
-## Setup System Status:
+## Setup
 
 1. Click **Management** > **Status**.
 2. Click  the **`+`** button under status component.
