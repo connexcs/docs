@@ -26,8 +26,6 @@ pages:
     - Credit Control: credit-control.md
     - CLI: cli.md
     - Ingress Routing: ingress-routing.md
-    - My Account: my-account.md
-    - Paypal: customer-payments.md
     - Routing Strategy: routing-strategy.md
         
 - Carrier: 
@@ -74,6 +72,10 @@ pages:
 - Reports:
     - Breakout Reports: report.md
    
+- Setup:
+    - My Account: my-account.md
+    - Paypal: customer-payments.md
+
 - Archutecture:
     - API: api.md
     - NAT Traversal: far-end-nat-traversal.md
@@ -81,4 +83,6 @@ pages:
     - Media Handling: media-handling.md    
     - Scaling and Load Balancing: scaling-load-balancing.md 
     - Changelog: changelog.md 
+    
+    
 
