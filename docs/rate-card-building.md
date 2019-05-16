@@ -1,23 +1,3 @@
-# Table of Contents
-
-- [Table of Contents](#table-of-contents)
-- [Rate Card Building](#rate-card-building)
-    - [Rate Card Compilation Engine](#rate-card-compilation-engine)
-        - [Different Length Prefixes](#different-length-prefixes)
-            - [Why do I have alot of long prefixes?](#why-do-i-have-alot-of-long-prefixes)
-        - [Combining](#combining)
-            - [Between Cards](#between-cards)
-            - [Different Card Types](#different-card-types)
-        - [Adding Profits](#adding-profits)
-        - [Why should I Use Rate Card Building?](#why-should-i-use-rate-card-building)
-            - [Example 1](#example-1)
-            - [Example 2](#example-2)
-        - [Example 3](#example-3)
-        - [Outputs](#outputs)
-            - [Minimum](#minimum)
-            - [Maximum](#maximum)
-            - [Average](#average)
-
 # Rate Card Building
 
 It is always sound practice to base rate cards on the information in provider cards. Code accuracy is one of these benefits, and perhaps the most important.  In any system with card-based profiles, code accuracy is one of the means to ensure the accuracy of the whole system, and to make all passed or collected data more reliable.
