@@ -1,21 +1,3 @@
-# Table of Contents
-
-- [Table of Contents](#table-of-contents)
-- [My Account](#my-account)
-  - [Company Information](#company-information)
-  - [General Information](#general-information)
-  - [Personal Information](#personal-information)
-  - [Two-factor Authentication](#two-factor-authentication)
-  - [Users](#users)
-  - [API (Application Programming Interface)](#api-application-programming-interface)
-    - [Add New API](#add-new-api)
-  - [Domains](#domains)
-- [Customer Portal with CNAME record](#customer-portal-with-cname-record)
-  - [Payments](#payments)
-  - [Packages](#packages)
-  - [Servers](#servers)
-
-
 # My Account
 
 This section is an overview of actions that can be performed against each provider account. More specific details about each action exists on the topics' respective pages. 
@@ -101,7 +83,7 @@ The details of the dialog box are as follows:
 
 Once the details are entered, remember to click the **`Save`** button.
 
-**User Groups**
+## User Groups
 
 To add new groups to the **Users** section, click the **`+`** button. A window will appear as shown, where you can enter the following details.  
 
@@ -143,7 +125,7 @@ To add a new API:
 
 3. Fill in the dialog box and press the **`Save `** button.
 
-**For PayPal**:
+#### For PayPal
 
 ![alt text][stripe]
  
@@ -154,7 +136,7 @@ To add a new API:
 
 Lean more about the PayPal APi from [here].
 
-**For Stripe**:
+#### For Stripe
 
 ![alt text][stripe1]
 
@@ -163,15 +145,15 @@ Lean more about the PayPal APi from [here].
 3. Select the user's currency type.
 4. Click the **`Save`** button.
 
-**Edit APIs**
+#### Edit APIs
 
 Edit API information by clicking its name from the list. A window will open similar to the 'Add New' screen where you can edit details.
 
-**Refresh APIs**
+#### Refresh APIs
 
 Click the **`Refresh`** button to update the current list of APIs on the screen to the most recent. This is to ensure you are working with the most recent information.
 
-**Delete APIs**
+#### Delete APIs
 
 To delete an API, select it from the list and click the **`Delete`** button. 
 
@@ -257,7 +239,3 @@ If a server has been deployed on your account, you can view and manage from this
 
 [change-pwd]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/change-pwd.png "Change-PWD"
 [change-pwd-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/change-pwd-2.png "Change-PWD-2"
-
-
-
-
