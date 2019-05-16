@@ -55,7 +55,7 @@ To edit the details of any item:
 
 ![alt text][user-space-img-5]
 
-### Searching Text Fields
+## Searching Text Fields
 
 You can search the _Area_ and _Key_ from the search text fields using the search box at the top right.
 
