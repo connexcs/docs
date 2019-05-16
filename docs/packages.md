@@ -1,15 +1,3 @@
-# Table of Contents
-
-- [Table of Contents](#table-of-contents)
-- [Packages](#packages)
-  - [Add Package](#add-package)
-  - [Edit Package](#edit-package)
-  - [Delete a Package](#delete-a-package)
-  - [Search for a Package](#search-for-a-package)
-  - [Other Features](#other-features)
-  - [Minimum Spend](#minimum-spend)
-
-
 # Packages
 
 A package represents a product or service offered to customers, often as a recurring charge based on goods delivrered at a required interval. A package is a global entity in the system that is allocated to each customer as required. A package may include incentives for MRC like DIDs, phone system rentals, or other hardware. 
