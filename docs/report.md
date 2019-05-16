@@ -1,22 +1,14 @@
-# Table of Contents
+# Reports
 
-- [Table of Contents](#table-of-contents)
-- [Reports Management](#reports-management)
-    - [Breakout](#breakout)
-  
-# Reports Management
-
-This article explains how to view and download reports in ConnexCS.  To find **Report Management** from the dashboard: Click  **Management** > **Report** > **Breakout**.
+This article explains how to view and download reports in ConnexCS.  To find **Reports** from the dashboard: Click  **Management** > **Report** > **Breakout**.
  
 ![alt text][report-1]
 
-## Breakout
+## Breakout Report
 
 The **Breakout** section is where filter the display customers, providers, or destinations.
  
 ![alt text][report-2]
-
-
 
 * Dates are displayed top-left.  The first is for the start date, the second is for the end date, and entering both establishes a range of dates instead of one day.  Clicking on either will display a selection calendar where you can select dates and times, or you can enter each of these parameters manually.
 * The dropdown menus to the right of the dats is for customers, providers, and groups (if any).  They are in alphabetical order, and you can select more than one group where applicable.  Parameters are removed by clicking the `x` right next to its name.
@@ -25,21 +17,20 @@ The **Breakout** section is where filter the display customers, providers, or de
  
 ![alt text][report-3]
 
-
  
 ![alt text][report-4]
 
-**Selecting Multiples**
+### Selecting Multiples
 
 To select multiple customers, providers, or groups, simply click more than one from the dropdown list when choosing which to display.  Remember to click the refresh button each time parameters change to ensure you're seeing the most recent selections onscreen.
 
-**Selecting the Range of Dates**
+### Selecting the Range of Dates
 
 To select a range of dates, enter a date and time in the first and second boxes.  Entering a single date will only display activity for that day.  After the range of dates is selected, click the **`OK`** button.
  
 ![alt text][report-6]
 
-**Scheduled Breakout Reports**
+### Scheduled Breakout Reports**
 
 This feature lets administrators schedule breakout report emails at designated intervals.  It is a way to add automation for frequent data requirements.  To schedule a breakout report:
 
