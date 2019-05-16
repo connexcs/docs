@@ -1,26 +1,9 @@
-# Table of Contents
-
-- [Table of Contents](#table-of-contents)
-- [Authentication Methods](#authentication-methods)
-    - [User Acces Control (UAC)](#user-acces-control-uac)
-        - [Username and Password](#username-and-password)
-        - [IP Authentication](#ip-authentication)
-        - [Multiple Customers Per IP](#multiple-customers-per-ip)
-    - [UAS](#uas)
-        - [Username / Password with Upstream Providers](#username--password-with-upstream-providers)
-    - [ConnexCS Independent Considerations](#connexcs-independent-considerations)
-        - [Additional Security](#additional-security)
-
 # Authentication Methods
 
 ConnexCS supports two methods of authentication: **Username/Password** in UAS mode and **IP Authentication**.
 
 ## User Acces Control (UAC)
-<<<<<<< HEAD
 User Access Control is found in the individual customer cards, in the **Authorization** tab. Instructions below start at this tab, which is found by navigating to **Management** > **Customer** > [Customer Name]. 
-=======
-The following are the types of user access controls used in ConnexCS.
->>>>>>> d0bfe808456f9b545c5b168a9360e98f0410151d
 
 ### Username and Password
 To allow username and password authentication on user accounts:
@@ -69,6 +52,3 @@ ConnexCS supports Username / Password Authentication against upstream providers.
 Username / Password Authentication is the prefered authorization method for end-user devices and systems which have dynamic IP addresses. IP Authentication is preferred if a static IP address is available, and with any PBX or other SIP Servers.
 
 Before it authenticates with Username/Password Authentication,the initiating server must send an attempt without any authorization headers. The reply is `407 Proxy Authentication Required`, but this doesn't mean there's an error, as this is part of the SIP protocol. The response that contains a _nonce_ is a random value used as salt with a hash and sent on a second `INVITE`, and the server using the same _nonce_ creates its own hash and checks for a match. The process compares the username and password without actually exchanging them, and the _nonce_ eliminates the possibility of a repeat attack. There will be some overhead in the form of packets with retransmissions and additional cache hits, however, so the prefered method of authorization between carriers is still IP authentication.
-
-### Additional Security
-Be warned that the UDP packets that the SIP uses can be spoofed.  ConnexCS used tech prefixes for route disambiguation, and as a private shared identifier for additional security.
