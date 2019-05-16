@@ -1,14 +1,4 @@
-# Table of Contents
-- [Table of Contents](#table-of-contents)
-- [Uploading files to a ConnexCS Account](#uploading-files-to-a-connexcs-account)
-    - [Refresh the list](#refresh-the-list)
-    - [Remove files](#remove-files)
-    - [Cancel upload](#cancel-upload)
-    - [Bulk uploading](#bulk-uploading)
-    - [Download the uploaded file](#download-the-uploaded-file)
-
-
-# Uploading files to a ConnexCS Account
+# Uploading Files
 
 This tutorial explains how to upload files to your connex account. 
 
