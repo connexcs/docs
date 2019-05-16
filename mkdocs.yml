@@ -7,6 +7,16 @@ theme: material
 extra_javascript:
 - extra.js
 
+markdown_extensions:
+  - admonition
+  - codehilite:
+      linenums: true
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      
 pages:
 - Home: index.md
 - GETTING STARTED: getting-started.md
