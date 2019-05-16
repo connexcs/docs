@@ -1,15 +1,3 @@
-# Table of Contents
-
-- [Table of Contents](#table-of-contents)
-- [Customer Rate Card](#customer-rate-card)
-  - [The Internal Method](#the-internal-method)
-  - [The External Method](#the-external-method)
-  - [Deleting the Customer Rate Card](#deleting-the-customer-rate-card)
-  - [Email the Rate Card](#email-the-rate-card)
-  - [Revision Tab](#revision-tab)
-
-
-
 # Customer Rate Card
 
 Customer Rate Cards let you manage the rates for customers, edit customer profiles, and view important information. There are two types of rate cards: 
