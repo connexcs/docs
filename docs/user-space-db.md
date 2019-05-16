@@ -42,7 +42,7 @@ To delete an item from the list:
 ![alt text][user-space-img-2a]
 
 
-### Edit the Details
+## Edit the Details
 
 To edit the details of any item:
 
