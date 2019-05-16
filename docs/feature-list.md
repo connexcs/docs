@@ -1,18 +1,4 @@
-# Table of Contents
-
-- [Table of Contents](#table-of-contents)
-- [Detailed Features - ConnexCS](#detailed-features---connexcs)
-    - [Customer Features](#customer-features)
-    - [Carrier Management](#carrier-management)
-    - [Rate Card Management](#rate-card-management)
-    - [CDR Management](#cdr-management)
-    - [Logging](#logging)
-    - [Server](#server)
-    - [ScriptForge In](#scriptforge-in)
-    - [Support](#support)
-
-
-# Detailed Features - ConnexCS
+# Detailed Features
 The following is a comprehensive list of features included in the latest stable version of ConnexCS. 
 
 ## Customer Features
