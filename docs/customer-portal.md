@@ -1,10 +1,3 @@
-# Table of Contents
-
-- [Table of Contents](#table-of-contents)
-- [Customer Portal](#customer-portal)
-  - [Adding a New Domain](#adding-a-new-domain)
-  - [Adding Contacts to Customer Portal](#adding-contacts-to-customer-portal)
-    
 # Customer Portal
 
 The Customer Portal grants access to information about customer accounts in a fixed domain, where you can control the flow of data they receive. It can be white-labeled to brand names, and it allows for customized domains.
@@ -55,10 +48,7 @@ To add contacts in the control panel:
 6. You may enter any information on public notes here. The notes will be displayed on the customer portal after login. Private notes only display in the control panel.
 7. Click **`Save`**. These credentials can be used by providers and customers to log into the Customer Portal.
 
- ![alt text][contacts-2]
-
-
-
+![alt text][contacts-2]
 
 [domain]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/168.png "Domain"
 [domain1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/169.png "Domain1"
