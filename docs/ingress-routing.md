@@ -1,24 +1,6 @@
-# Table of Contents
+# Routing
 
-- [Table of Contents](#table-of-contents)
-- [Ingress Routing](#ingress-routing)
-    - [Tariff](#tariff)
-    - [Tech Prefix](#tech-prefix)
-    - [Channels](#channels)
-    - [Dial string](#dial-string)
-    - [Missing BYE Protection](#missing-bye-protection)
-    - [Profit Assurance](#profit-assurance)
-    - [Lock Parent Card](#lock-parent-card)
-    - [Exclude Parent Cards](#exclude-parent-cards)
-    - [ScriptForge](#scriptforge)
-    - [RTP Proxy](#rtp-proxy)
-    - [CPS Buffering](#cps-buffering)
-    - [SIP Session Timers (SST)](#sip-session-timers-sst)
-    - [ASR+](#asr)
-
-# Ingress Routing
-
-Ingress routing allocates incoming attempts to a designated rate card, which in turn egresses through a specified provider. It allows multiple rate cards to be used with or without a prefix. This is checked according to the longest prefix first, then the shortest for a match. If no prefix is matched, it will match the rate cards with mutually exclusive destinations.  If there are multiple rate cards with the same prefixes, you must set up a dial plan with a tech prefix to identify the correct card.
+Routing allocates incoming attempts to a designated rate card, which in turn egresses through a specified provider. It allows multiple rate cards to be used with or without a prefix. This is checked according to the longest prefix first, then the shortest for a match. If no prefix is matched, it will match the rate cards with mutually exclusive destinations.  If there are multiple rate cards with the same prefixes, you must set up a dial plan with a tech prefix to identify the correct card.
 
 ## Tariff
 
@@ -30,7 +12,7 @@ It is possible for multiple customers to share the same IP address, and to be so
 
 ## Channels
 
-Here you can place limits on how many channels are allowed through each ingress route. It is independent of any customer-imposed channel limitations, which still apply.
+Here you can place limits on how many channels are allowed through each route. It is independent of any customer-imposed channel limitations, which still apply.
 
 ## Dial string
 
@@ -85,12 +67,12 @@ The PHP ScriptForge allows for custom code to run from within the ConnexCS platf
 
 When a call is established between customer and provider, audio can be set-up in one of two ways:
 
-|  |      **With RTP Proxy**      |  **Without RTP Proxy** |
-|----------|:-------------:|------:|
-| **Audio Path** |  Indirect | Direct |
-| **Audio Quality** |    Excellent  |  Unbeatable|
-| **Latency** | Low |    Lowest |
-| **Information Leakage**| No |   Yes* |
+|                        | **With RTP Proxy** |  **Without RTP Proxy** |
+|------------------------|:------------------:|-----------------------:|
+| **Audio Path**         | Indirect           | Direct                 |
+| **Audio Quality**      | Excellent          | Unbeatable             |
+| **Latency**            | Low                | Lowest                 |
+| **Information Leakage**| No                 |  Yes*                  |
 
  	
 While it's doubtful that any information will be logged in the customer/providers switch when the audio is engaged, it is possible for an engineer to learn this information from a SIP trace, pcap, or by looking at transit locations. DTMF Detection ONLY works when RTP Proxy mode is enabled.
