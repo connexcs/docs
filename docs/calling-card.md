@@ -1,24 +1,3 @@
-# Table of Contents
-- [Table of Contents](#table-of-contents)
-- [Calling Card](#calling-card)
-  - [Mobile Application](#mobile-application)
-    - [Provisioning Strategy](#provisioning-strategy)
-    - [Top-up](#top-up)
-- [Make Your Own](#make-your-own)
-  - [Managing Calling Cards](#managing-calling-cards)
-    - [Generate New](#generate-new)
-    - [Edit a Card](#edit-a-card)
-    - [Delete a Card](#delete-a-card)
-    - [Refresh List](#refresh-list)
-  - [Manage SIP Devices](#manage-sip-devices)
-    - [Add Device](#add-device)
-    - [View and Edit Device](#view-and-edit-device)
-    - [Delete a Device](#delete-a-device)
-    - [Search Device](#search-device)
-    - [Refresh Device List](#refresh-device-list)
-    - [Manage Columns](#manage-columns)
-
-
 # Calling Card
 
 A [calling card](https://en.wikipedia.org/wiki/Telephone_card) is a way to pre-allocate credit and configuration data to a short, unique identification method, like a PIN code. **ConnexCS** is a Class 4 switch, so it is without the IVR menu's required to access number configuration. Currently, calling cards are only available as a mobile phone application.
@@ -36,7 +15,7 @@ Once a provisioning code is entered, the app  requests two pieces of information
 ### Top-up
 In the application, an HTML Browser connects to a pre-setup ConnexCS Portal, where regular payment options are available for top-up.
 
-# Make Your Own
+## Make Your Own
 Remember, ConnexCS has a full API for users and customers, and softphone an be integrated with ConnexCS API with end user credentials.
 
 From the dashboard, expand the Management tab and look for Calling Card. This module allows lets you manage calling cards and SIP devices. 
