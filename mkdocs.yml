@@ -19,9 +19,9 @@ markdown_extensions:
       
 pages:
 - Home: index.md
-- GETTING STARTED: getting-started.md
+- Getting Started: getting-started.md
 
-- CUSTOMER:
+- Customer:
     - Customer: customer.md
     - Credit Control: credit-control.md
     - CLI: cli.md
@@ -30,10 +30,10 @@ pages:
     - Paypal: customer-payments.md
     - Routing Strategy: routing-strategy.md
         
-- CARRIER: 
+- Carrier: 
     - Carrier: carrier.md
     
-- RATE CARDS:
+- Rate Cards:
     - Overview: provider-ratecard.md
     - Provider Ratecard: provider-ratecard.md
     - Customer Ratecard: customer-ratecard.md
@@ -43,14 +43,14 @@ pages:
 - DID:
     - DID/Origination: did.md
     
-- CUSTOMER PORTAL:
+- Customer Portal:
     - Customer Portal: customer-portal.md
 
-- DEVELOPERS:
+- Developers:
     - Scriptforge: scriptforge.md
     - User Space Database: user-space-db.md 
 
-- MISCELLANENOUS:
+- Micsellanenous:
     - Authentication: authentication.md
     - Connex Billing: billing.md
     - Calling Card: calling-card.md
@@ -71,10 +71,10 @@ pages:
     - System Status: system-status.md
     - Templates: templates.md
     
-- REPORT:
+- Reports:
     - Breakout Reports: report.md
    
-- ARCHITECTURE:
+- Archutecture:
     - API: api.md
     - NAT Traversal: far-end-nat-traversal.md
     - Security: security.md
