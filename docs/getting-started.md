@@ -39,8 +39,7 @@ We verify email addresses to ensure that they are genuine. To verify your email 
 
    ![alt text][verify-email-1]
 
-1. In the Personal Profile pane, click the Verify Email icon.
-![verification-icon](images/2018/08/verification-icon.png)  
+1. In the Personal Profile pane, click the Verify Email icon.![alt text][verification-icon] 
 2. An **Email Verification Sent** popup confirms the email was sent to your address.
 3. Click the link in the email, or copy & paste the verification code into the Verification Code field and and click the `Verify` button.
 
@@ -307,3 +306,5 @@ Deploying a server with ConnexCS is an efficient operatation.  You should be abl
 [server-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/32.png "server-2"
 
 [warning-icon]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/images/2018/08/warning-icon.png "warning-icon"
+[verification-icon]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/images/2018/08/verification-icon.png "verification-icon"
+
