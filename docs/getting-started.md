@@ -6,7 +6,7 @@ The initial setup in ConnexCS will configure a single carrier, a single customer
     IP addresses are deployed *after* you have completed the getting started steps.
     
 !!! note "Need Help?"
-    If you need help we offer free 1:1 training, you can book this at the following link: https://connexcs.youcanbook.me/
+    If you need help we offer free 1:1 training, you can book this at the following link: <https://connexcs.youcanbook.me/>
 
 ## Prerequisites
   * You have a modern web browser such as Google Chrome, Firefox, Safari, or their equivalent.
