@@ -1,11 +1,3 @@
-# Table of Contents
-- [Table of Contents](#table-of-contents)
-- [Invoice](#invoice)
-    - [Adding new Invoices](#adding-new-invoices)
-    - [View and Edit Invoices](#view-and-edit-invoices)
-    - [Invoice Line grouping](#invoice-line-grouping)
-  
-
 # Invoice
 ConnexCS allows for straightforward invoice generation for all providers. The tool is another way to eliminate gaps in communication between providers and customers.  
 
