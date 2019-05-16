@@ -1,13 +1,3 @@
-# Table of Contents
-- [Table of Contents](#table-of-contents)
-- [CLI](#cli)
-  - [Whitelist](#whitelist)
-  - [Force CLI](#force-cli)
-  - [CLI Restrict](#cli-restrict)
-  - [Replace Specific CLI](#replace-specific-cli)
-  - [P-Asserted-ID](#p-asserted-id)
-  - [Advanced CLI Match & Manipulation](#advanced-cli-match--manipulation)
-
 # CLI
 **CLI/ANI** is the `From` part of the `SIP INVITE` message, which contains information about the caller. Specifically, it is the name and number of the person attempting to contact a user in a VoIP system, more commonly known as caller ID in standard phone systems.
 
@@ -52,4 +42,3 @@ To learn more about writing regular expressions, visit http://regexr.com.  There
 
 [recording-7]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/63.png "recording-7"
 [recording-8]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/recording-8.png "recording-8"
-

@@ -1,12 +1,3 @@
-# Table of Contents
-
-- [Table of Contents](#table-of-contents)
-- [Credit Control](#credit-control)
-  - [Pre-pay / Post Pay](#pre-pay--post-pay)
-    - [Automatic Cut-Off](#automatic-cut-off)
-    - [Real-Time Considerations](#real-time-considerations)
-
-
 # Credit Control
 
 ## Pre-pay / Post Pay

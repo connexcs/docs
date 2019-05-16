@@ -1,27 +1,3 @@
-# Table of Contents
-
-- [Table of Contents](#table-of-contents)
-- [Carrier Management](#carrier-management)
-    - [Adding Carrier](#adding-carrier)
-    - [Deleting Carriers](#deleting-carriers)
-    - [Checking The Status](#checking-the-status)
-    - [Searching Carrier](#searching-carrier)
-    - [Customising The View](#customising-the-view)
-    - [Edit Carrier](#edit-carrier)
-        - [Stats](#stats)
-        - [Reply Management](#reply-management)
-        - [Authentication](#authentication)
-        - [Latest Calls](#latest-calls)
-        - [Failover](#failover)
-        - [Payment](#payment)
-            - [CDR](#cdr)
-        - [DID](#did)
-        - [Alerts](#alerts)
-    - [Code Consistency](#code-consistency)
-    - [Consecutive failures](#consecutive-failures)
-    - [Special Considerations](#special-considerations)
-
-
 # Carrier Management
 
 **ConnexCS** allows for simplified carrier management through the **Carrier Management** tab. Here, you can add, modify, and delete carriers. It is found in the **Management** tab, the four horizontal lines beneath the **Home** icon in the dashboard:
@@ -142,7 +118,6 @@ The **Failover** tab lists information about unsuccessful calls.
 The **Payment**  tab shows payments made to date. Add a new payment by clicking **`+`**, fill in the payment information,and the click **`Save`**.
 
 ![alt text][carrier-payment] 
- 
 
 #### CDR
 
@@ -177,8 +152,6 @@ Note that this mechanic can show false positives if the customer sends missed ca
 
 ## Special Considerations
 **Bandwidth.com** has diverged from the SIP spec and exposed an internal IP address required for sequential requests. To ensure compatibility, set the switch manafacturer to `bandwidth.com`.
-
-
 
 [carrier-list]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/99.png "Carrier-List"
 [add-carriers]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/100.png "Add-Carrier"

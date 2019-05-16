@@ -1,43 +1,12 @@
-# Table of Contents
-
-- [Table of Contents](#table-of-contents)
-- [Customer Management](#customer-management)
-    - [Adding Customers](#adding-customers)
-    - [Delete Customers](#delete-customers)
-    - [Checking Customer Status](#checking-customer-status)
-    - [Searching Customers](#searching-customers)
-    - [Editing Customers](#editing-customers)
-  - [Customer Cards](#customer-cards)
-    - [Main](#main)
-      - [Contacts](#contacts)
-    - [Authentication](#authentication)
-      - [IP Authentication](#ip-authentication)
-      - [User/ Password Authentication](#user-password-authentication)
-    - [Routing](#routing)
-      - [Ingress Routing](#ingress-routing)
-      - [Call Recording](#call-recording)
-      - [CLI](#cli)
-    - [Stats](#stats)
-    - [Latest Calls](#latest-calls)
-    - [Dialogs](#dialogs)
-    - [Payments](#payments)
-    - [Alerts](#alerts)
-    - [DID](#did)
-    - [Call Detail Record (CDR)](#call-detail-record-cdr)
-      - [Recalculate CDR](#recalculate-cdr)
-    - [Packages](#packages)
-    - [Invoices](#invoices)
-    - [Contracts](#contracts)
-      
-
-
-# Customer Management
+# Customers
 
 In Connex, Customers are managed through customer cards. Each card has tabs that hold different management options, which we will explain below.  
 
 Customer Management is found in the **Management** tab, the four horizontal lines beneath the **Home** icon in the dashboard:
 
 ![alt text][customer-dashboard]
+
+### Managing Customers
 
 ### Adding Customers
 The following explains how to add new customers using the **Customer Management** screen:
@@ -99,7 +68,7 @@ In the **Main** tab, users can view and add customer contacts, block internal nu
 
 ![alt text][main-tab]
 
-#### Contacts
+### Contacts
 **Contacts** are found in the top-left section of the customer card screen.  It shows an overview of contacts associated with the account.  To add new contact:
 
 1. Click **Management** > **Customers**.
