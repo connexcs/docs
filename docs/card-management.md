@@ -1,13 +1,3 @@
-# Table of Contents
-
-- [Table of Contents](#table-of-contents)
-- [NPA-NXX Provider Rate Card Upload](#npa-nxx-provider-rate-card-upload)
-  - [NPA-NXX Customer Rate Card Upload](#npa-nxx-customer-rate-card-upload)
-  - [NPA-NXX Customer Rate Card Manual (Generate Profit Internally)](#npa-nxx-customer-rate-card-manual-generate-profit-internally)
-  - [NPA-NXX Customer Rate Card Upload (External)](#npa-nxx-customer-rate-card-upload-external)
-  - [Rate Card Upload](#rate-card-upload)
-
-
 # NPA-NXX Provider Rate Card Upload
 This function lets you upload **NPA-NXX provider rate cards** from external sources.
 1. Click **Management**>**Rate Card**
