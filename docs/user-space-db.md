@@ -1,10 +1,3 @@
-# Table of Contents
-
-- [Table of Contents](#table-of-contents)
-- [User Space Database](#user-space-database)
-    - [Edit the Details](#edit-the-details)
-    - [Searching Text Fields](#searching-text-fields)
- 
 # User Space Database
 
 A user database is a flexible datastore that has multiple use cases mainly used in allocations that you can build using ScriptForge. It is also available in three(3) different backends, each with their own advantages and disadvantages:
@@ -49,7 +42,7 @@ To delete an item from the list:
 ![alt text][user-space-img-2a]
 
 
-## Edit the Details
+### Edit the Details
 
 To edit the details of any item:
 
@@ -62,7 +55,7 @@ To edit the details of any item:
 
 ![alt text][user-space-img-5]
 
-## Searching Text Fields
+### Searching Text Fields
 
 You can search the _Area_ and _Key_ from the search text fields using the search box at the top right.
 
