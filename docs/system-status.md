@@ -1,9 +1,3 @@
-# Table of Contents
-
-- [Table of Contents](#table-of-contents)
-- [System Status](#system-status)
-   
-
 # System Status
 
 The **System Status** feature updates the status of customer portals, and provides a way to communicate downtime and system outages to your customers.
