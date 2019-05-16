@@ -196,4 +196,4 @@ Note that this mechanic can show false positives if the customer sends missed ca
 [carrier-did]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/112.png "Carrier DID"
 [carrier-alert-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/113.png "Carrier Alert-1"
 [carrier-alert-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/114.png "Carrier Alert-2"
-[Alerts]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/99.png "Carrier-List"
+[Alerts]: https://github.com/digipigeon/connexcs-user-docs/blob/master/docs/alert.md "Alerts"
