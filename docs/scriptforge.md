@@ -1,26 +1,3 @@
-# Table of Contents
-
-- [Table of Contents](#table-of-contents)
-- [ScriptForge](#scriptforge)
-  - [Design Considerations](#design-considerations)
-    - [Language](#language)
-    - [Memory](#memory)
-    - [CPU (Time Limit)](#cpu-time-limit)
-    - [Durability](#durability)
-    - [Scalability](#scalability)
-    - [Functionality](#functionality)
-  - [API](#api)
-  - [Libraries](#libraries)
-    - [Lookup](#lookup)
-    - [Send](#send)
-  - [Examples](#examples)
-    - [Random CLI](#random-cli)
-    - [Checking a DNC List](#checking-a-dnc-list)
-    - [Performing an ASRPlus Lookup](#performing-an-asrplus-lookup)
-  - [Creating a new script](#creating-a-new-script)
-  - [Assigning the Script to a customer](#assigning-the-script-to-a-customer)
-
-
 # ScriptForge
 The **ScriptForge** allows you to write applications that run during specific system events. Currently, scripting functionality is supported in the routing engine, where it runs alongside the call setup process.  Requests to your application are handled with a messaging bus, and they will be queued if an application can't process them fast enough.  Applications that run in the routing engine must be completed quickly to avoid high PDD.
 
