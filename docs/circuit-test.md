@@ -1,8 +1,3 @@
-# Table of Contents
-- [Table of Contents](#table-of-contents)
-- [Circuit Test](#circuit-test)
-
-
 # Circuit Test
 
 Circuit tests help determine the quality a route. It also helps analyze FAS, RTP quality, MOS, release reason, jitter, packet loss percentage, and answer delay measurement.
