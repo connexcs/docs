@@ -1,10 +1,5 @@
-# Table of Contents
-
-- [Table of Contents](#table-of-contents)
-- [Email Verification](#email-verification)
-- [Mobile Verification](#mobile-verification)
-
-# Email Verification 
+# Verification
+## Email Verification 
 
 We verify email addresses to ensure they are genuine. To verify an email address:
 
@@ -19,7 +14,7 @@ We verify email addresses to ensure they are genuine. To verify an email address
 ![alt text][verify-email-2]
 
 
-# Mobile Verification 
+## Mobile Verification 
 
 We also verify mobile phone numbers to ensure that they are genuine.
 
