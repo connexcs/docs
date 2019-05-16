@@ -1,6 +1,8 @@
-# Templates-Connex
+# Templates
 
 ConnexCS lets you customize SMS templates according business rules andrequirements. 
+
+## Editing 
 
 1. Go to **Setup**.
 2. click on **Config** > **Templates**.
