@@ -1,11 +1,3 @@
-# Table of Contents
-- [Table of Contents](#table-of-contents)
-- [Scheduled Breakout Reports](#scheduled-breakout-reports)
-    - [Adding a scheduled breakout report](#adding-a-scheduled-breakout-report)
-    - [View a scheduled breakout report](#view-a-scheduled-breakout-report)
-    - [Select the recipients and schedule the reports](#select-the-recipients-and-schedule-the-reports)
-
-
 # Scheduled Breakout Reports
 
 With this feature you can schedule an email for a breakout report. The email gets sent over according to the frequency you select.
