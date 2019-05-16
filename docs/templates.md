@@ -1,9 +1,3 @@
-# Table of Contents
-- [Table of Contents](#table-of-contents)
-- [Templates-Connex](#templates-connex)
-    - [Search Template](#search-template)
-    - [Refresh list](#refresh-list)
-
 # Templates-Connex
 
 ConnexCS lets you customize SMS templates according business rules andrequirements. 
