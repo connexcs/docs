@@ -1,11 +1,3 @@
-# Table of Contents
-
-- [Table of Contents](#table-of-contents)
-- [Limiting CPS & Channels](#limiting-cps--channels)
-    - [What happens when my server reaches capacity?](#what-happens-when-my-server-reaches-capacity)
-    - [Load Balancing using DNS (Domain Name System)](#load-balancing-using-dns-domain-name-system)
-
-
 # Limiting CPS & Channels
 
 Limiting CPS and Channels is a mechanism that lets providers put caps on their services. The switch can limit CPS and channels in the following areas:
