@@ -1,13 +1,3 @@
-# Table of Contents
-
-- [Table of Contents](#table-of-contents)
-- [My Servers](#my-servers)
-- [Server Actions Menu](#server-actions-menu)
-    - [RTP Servers](#rtp-servers)
-    - [Server Information](#server-information)
-    - [TCP & UDP Additional Ports](#tcp--udp-additional-ports)
-    - [Server Reactivation](#server-reactivation)
-
 # My Servers
 
 The **My Server** menu is where providers manage servers. It is accessed from the dashboard's side bar, as shown in the image below:
@@ -23,7 +13,7 @@ The **My Server** menu is where providers manage servers. It is accessed from th
 
 4. Click the **`Actions`** button to open the **Server Actions Menu**.
 
-# Server Actions Menu
+## Server Actions Menu
 The following actions are available in the **Server Actions** menu:
 * **Install Server**: installs the latest script to your server.
 *  **Start Server**: Activates the server.
@@ -51,7 +41,6 @@ This screen provides more detailed information about servers associated with you
 
 ![alt text][server-4]
 
-
 ## TCP & UDP Additional Ports
 
 With this feature you can bypass the default UDP port and set any port of your choice, example 5090. 
@@ -68,8 +57,9 @@ To reactivate a server:
 2. Click the server's IP address.
 3. Click **Reactivate** to activate your server.
 
-**NOTE:** You will **not** be able to reactivate a server if the associated account balance is in the negative.
-
+!!! note
+    To deploy a server, you must have $20 (+ $20 X other servers in your account) available balance.
+    
 [server-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/239.png "server-1"
 [server-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/240.png "server-2"
 [server-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/241.png "server-3"
