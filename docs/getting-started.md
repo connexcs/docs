@@ -15,17 +15,20 @@
   - [Ingress Routing](#ingress-routing)
   - [Deploying Servers](#deploying-servers)
 
-# Introduction
+# Getting Started
 
 The initial setup in ConnexCS will configure a single carrier, a single customer and a single rate card.
 
+!!! note "Whats my servers IP Address?"
+    IP addresses are deployed *after* you have completed the getting started steps.
+    
+!!! note "Need Help?"
+    If you need help we offer free 1:1 training, you can book this at the following link: https://connexcs.youcanbook.me/
+
 ## Prerequisites
-
-This guide assumes:
-
-* You have a modern web browser such as Google Chrome, Firefox, Safari, or their equivalent.
-* You have a basic understanding of Telecoms--customers, providers, and rates.
-* You have created an account with ConnexCS.com.
+  * You have a modern web browser such as Google Chrome, Firefox, Safari, or their equivalent.
+  * You have a basic understanding of Telecoms--customers, providers, and rates.
+  * You have created an account with ConnexCS.com.
 
 ## Verifying Personal Details
 Before you configure you account, you need to verify your email and mobile number. You can do this in the **Personal Profile** pane.  The Personal Profile pane is found by clicking the notification icon at the top left of the screen. 
@@ -33,7 +36,7 @@ Before you configure you account, you need to verify your email and mobile numbe
 ![notification-icon][notification-icon]
 
 
-**Email Verification**
+### Email Verification
 
 We verify email addresses to ensure that they are genuine. To verify your email address, select the Notification icon at the top left of the screen, then Verify Email.
 
@@ -45,7 +48,7 @@ We verify email addresses to ensure that they are genuine. To verify your email 
 
    ![alt text][verify-email-2]
 
-**Mobile Verification**
+### Mobile Verification
 
 Mobile verification is to ensure all mobile devices associated with your account are genuine.  Before you verify a mobile number, make sure the information is correct. To modify or add a mobile number, select the Edit icon in the Personal Profile pane, make your changes, and click `Save`. 
 
@@ -180,7 +183,6 @@ Below are the instructions to setup the provider rate card manually. There are t
 7. Go to the provider's rate card, and select the `Create Draft` button.
 
 8. Select **Add Row**
-
 
 9. Complete the spreadsheet information, which works similar to any common office programs.
 10. Click `Save` to publish the rate card.
