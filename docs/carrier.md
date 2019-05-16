@@ -158,7 +158,7 @@ The **DID** tab displays a list of DIDs.  New entries are added with the **`+`**
 
 ### Alerts
 
-The **Alerts**  tab lets you create, manage, and remove alerts that fire when specific events are triggered. See the [Alerts](Alerts.md ) page for details on how to manage them.
+The **Alerts**  tab lets you create, manage, and remove alerts that fire when specific events are triggered. See the [Alerts] page for details on how to manage them.
 
 ![alt text][carrier-alert-1]
 
@@ -196,4 +196,4 @@ Note that this mechanic can show false positives if the customer sends missed ca
 [carrier-did]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/112.png "Carrier DID"
 [carrier-alert-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/113.png "Carrier Alert-1"
 [carrier-alert-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/114.png "Carrier Alert-2"
-[Alerts]: https://docs.connexcs.com/en/latest/alert/ "Alerts"
+[Alerts]: <https://docs.connexcs.com/en/latest/alert/> "Alerts"
