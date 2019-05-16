@@ -1,12 +1,3 @@
-# Table of Contents
-
-- [Table of Contents](#table-of-contents)
-- [Rate Card Management](#rate-card-management)
-  - [Add New Rate Card](#add-new-rate-card)
-- [Upload a Rate Card](#upload-a-rate-card)
-  - [Revision Tab](#revision-tab)
-- [Advanced Rate Card Settings](#advanced-rate-card-settings)
-
 # Rate Card Management
 
 Rate Cards are an important ConnexCS feature, as they are the means by which most information is organized. This page will guide you through managing provider rate cards.  The Rate Card Management screen is found under **Management** > **Rate Card**. 
@@ -67,28 +58,3 @@ To find the **Advanced** tab, select a rate card.  In the rate card's screen, cl
 [provider-card-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/118.png "provider-card-4"
 [provider-card-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/119.png "provider-card-5"
 [provider-card-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/120.png "provider-card-6"
-
-[provider-card-dashbboard]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/provider-card-dashbboard.png "provider-card-dashbboard"
-[provider-ratecard]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/provider-ratecard.png "provider-ratecard"
-[provider-card-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/provider-card-1.png "provider-card-1"
-
-[provider-card-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/provider-card-5.png "provider-card-5"
-[provider-card-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/provider-card-4.png "provider-card-5"
-[provider-card-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/provider-card-6.png "provider-card-5"
-[provider-card-7]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/provider-card-7.png "provider-card-5"
-
-[map8]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/map8.png "map8"
-[map9]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/map9.png "map9"
-[map10]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/map10.png "map10"
-[map11]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/map11.png "map11"
-[map12]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/map12.png "map12"
-
-[customer-card]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-card.png "customer-card"
-[customer-card-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-card-1.png "customer-card-1"
-[customer-card-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-card-2.png "customer-card-2"
-[customer-card-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-card-3.png "customer-card-3"
-[customer-card-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-card-4.png "customer-card-4"
-[customer-card-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-card-5.png "customer-card-5"
-[customer-card-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-card-6.png "customer-card-6"
-
-[map-giff]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/map-giff.gif "map-giff"
