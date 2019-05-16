@@ -1,12 +1,3 @@
-# Table of Contents
-- [Table of Contents](#table-of-contents)
-- [USA Routing](#usa-routing)
-  - [NPA-NXX](#npa-nxx)
-    - [Inter / Intra / Indet](#inter--intra--indet)
-    - [Identification Examples](#identification-examples)
-  - [LRN/LNP](#lrnlnp)
-    - [Charges](#charges)
-
 # USA Routing
 USA Routing is more complicated than international routing. If you are unfamilier with conventional (international) routing in ConnexCS, please see our page about [Routing](/en/latest/routing/) first.
 
