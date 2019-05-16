@@ -1,15 +1,3 @@
-# Table of Contents
-
-- [Table of Contents](#table-of-contents)
-- [Scaling and Load Balancing](#scaling-and-load-balancing)
-    - [Capacity Failover](#capacity-failover)
-    - [What is a zone?](#what-is-a-zone)
-    - [How can I scale in a Single Zone?](#how-can-i-scale-in-a-single-zone)
-    - [How can I scale in Multiple Zones?](#how-can-i-scale-in-multiple-zones)
-    - [Best practices](#best-practices)
-    - [FAQ - Scaling and Load Balancing](#faq---scaling-and-load-balancing)
-
-
 # Scaling and Load Balancing
 
 The ConnexCS platform is highly scalable in terms of Channels, CPS, and single or multiple zones.  All configurations are available through a single control panel, no matter how many servers or zones are present.  Our goal is to run all servers at a maximum of 50% capacity, which allows us to handle unforeseen bursts of traffic effectively. While we benchmark for much higher limits,  we recommend no more than 1,000 channels / 100 cps per server. This is always subject to traffic profiles, however.
