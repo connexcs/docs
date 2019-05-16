@@ -1,11 +1,4 @@
-# Table of Contents
-
-- [Table of Contents](#table-of-contents)
-- [ConnexCS Media Handling](#connexcs-media-handling)
-    - [Server Specific optimizations](#server-specific-optimizations)
-
-
-# ConnexCS Media Handling
+# Media Handling
 
 When an SIP session is created with the ConnexCS Cloudswitch, the switch decides which zone to route your media through, such as USA East, USA West, or Europe (unless you use ingress routing).
 
