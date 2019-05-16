@@ -1,20 +1,3 @@
-# Table of Contents
-
-- [Table of Contents](#table-of-contents)
-- [Security](#security)
-  - [SSL Certificates](#ssl-certificates)
-    - [Inter-zone Communication](#inter-zone-communication)
-  - [Logins](#logins)
-    - [Passwords](#passwords)
-    - [2FA / TFA](#2fa--tfa)
-    - [Server Keys](#server-keys)
-  - [Exceptions](#exceptions)
-    - [IMCP Pings](#imcp-pings)
-    - [SIP / RTP Firewall Block on Default.](#sip--rtp-firewall-block-on-default)
-  - [IDS / IPS](#ids--ips)
-- [Data Usage](#data-usage)
-  - [Deploying SSL Certificates](#deploying-ssl-certificates)
-
 # Security
 
 We take **Security** seriously at ConnexCS, emphasizing the industry's best practices in all our policies and procedures. We use proven technology and the latest ideas to keep your systems safe from threats both external and internal.
