@@ -1,18 +1,8 @@
-# Table of Contents
-
-- [Table of Contents](#table-of-contents)
-- [Logging](#logging)
-- [SIP traces](#sip-traces)
-    - [Simulating Calls](#simulating-calls)
-    - [Refreshing the Logs](#refreshing-the-logs)
-    - [Searching the Logs](#searching-the-logs)
-    - [Known Problems](#known-problems)
-
 # Logging
 
 **Logging** is used to check real-time call attempts, SIP traces, routing status, and to simulate a call.
 
-# SIP traces
+## SIP traces
 To view the SIP traces of a call, follow the steps below.
 
 1. Click **Management** > **Logging**.
