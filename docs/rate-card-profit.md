@@ -1,8 +1,3 @@
-# Table of Contents
-
-- [Table of Contents](#table-of-contents)
-- [Rate Card Profits](#rate-card-profits)
-
 # Rate Card Profits
 
 Now, you can manage customer rate card profits by tagging the profits as:
