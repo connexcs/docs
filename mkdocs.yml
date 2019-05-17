@@ -75,13 +75,13 @@ pages:
     - My Account: my-account.md
     - Paypal: customer-payments.md
 
-- Archutecture:
+- Architecture:
     - API: api.md
     - NAT Traversal: far-end-nat-traversal.md
     - Security: security.md
-    - Media Handling: media-handling.md    
-    - Scaling and Load Balancing: scaling-load-balancing.md 
-    - Changelog: changelog.md 
+    - Media Handling: media-handling.md
+    - Scaling and Load Balancing: scaling-load-balancing.md
+    - Changelog: changelog.md
     
     
 

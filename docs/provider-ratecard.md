@@ -3,13 +3,13 @@
 Rate Cards are an important ConnexCS feature, as they are the means by which most information is organized. This page will guide you through managing provider rate cards.  The Rate Card Management screen is found under **Management** > **Rate Card**. 
 
 You will be presented with a management screen that contains some at-a-glace information about each card.  The actual rate cards are viewds by clicking on the providers name.  The columns are:
-* **Name**- The name of the provider.  Click this link to see the provider's individual rate card and management options.
-* **Direction**- Choose between *Termination* or *Origination*.  Change this setting in the **Advanced** section.
+* **Name** - The name of the provider.  Click this link to see the provider's individual rate card and management options.
+* **Direction** - Choose between *Termination* or *Origination*.  Change this setting in the **Advanced** section.
 * **Company** - The company associated with the rate card. 
 * **Currency** - The currency relative to the provider's region, between USD, EUR, and GBP.
 * **`?`** - Pressing the **`?`** button next to any rate card with give an information overview of that provider.  It includes the name, the card ID, and any dependant children rate cards that could be affected by changes.
 * **ID** - The rate card's ID, a system identifier that acts as a placeholder and prevents confusion between similarly-named items.
-* **Rule Count** - 
+
 
 ## Add New Rate Card
 To add a new rate card to the list:
