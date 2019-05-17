@@ -36,11 +36,10 @@ Steps to Verify Mobile Number
 
 
 
-[verify-mobile-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/verify-mobile-1.png "verify-mobile-1"
-[verify-mobile-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/verify-mobile-3.png "verify-mobile-3"
-[verify-mobile-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/verify-mobile-2.png "verify-mobile-2"
+[verify-mobile-1]: /verification/img/verify-mobile-1.png "verify-mobile-1"
+[verify-mobile-2]: /verification/img/verify-mobile-2.png "verify-mobile-2"
+[verify-mobile-3]: /verification/img/verify-mobile-3.png "verify-mobile-3"
 
-
-[verify-email-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/verify-email-1.png "verify-mobile-1"
-[verify-email-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/verify-email-2.png "verify-mobile-2"
+[verify-email-1]: /verification/img/verify-email-1.png "verify-email-1"
+[verify-email-2]: /verification/img/verify-email-2.png "verify-email-2"
 
