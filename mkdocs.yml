@@ -67,6 +67,7 @@ pages:
     - Scheduled Breakout Reports: scheduled-breakout-reports.md
     - System Status: system-status.md
     - Templates: templates.md
+    - Logging Out: logging-out.md
     
 - Reports:
     - Breakout Reports: report.md
