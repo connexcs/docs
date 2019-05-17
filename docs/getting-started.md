@@ -231,65 +231,59 @@ Deploying a server with ConnexCS is an efficient operatation.  You should be abl
  ![alt text][server-2]
 
 [Carrier Management]: <https://docs.connexcs.com/en/latest/carrier/>
-
 [Customer Management]: <https://docs.connexcs.com/en/latest/customer/>
-
 [Provider Card]: <https://docs.connexcs.com/en/latest/provider-ratecard/>
-
 [Ingress Routing]: <https://docs.connexcs.com/en/latest/ingress-routing/>
 
-[verify-email-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/1.png "verify-mobile-1"
-[verify-email-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/2.png "verify-email-2"
-[verify-mobile-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/3.png "verify-mobile-1"
+[verify-email-1]: /getting-started/img/1.png "verify-mobile-1"
+[verify-email-2]: /getting-started/img/2.png "verify-email-2"
+[verify-mobile-1]: /getting-started/img/3.png "verify-mobile-1"
 
-[customer-dashboard-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/4.png "customer-dashboard-new"
-[add-customer-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/5.png "add-customer-new"
-[customer-save-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/6.png "customer-save-new"
+[customer-dashboard-new]: /getting-started/img/4.png "customer-dashboard-new"
+[add-customer-new]: /getting-started/img/5.png "add-customer-new"
+[customer-save-new]: /getting-started/img/6.png "customer-save-new"
 
-[ip-auth-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/7.png "ip-auth-1"
-[ip-auth-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/8.png "ip-auth-2"
+[ip-auth-1]: /getting-started/img/7.png "ip-auth-1"
+[ip-auth-2]: /getting-started/img/8.png "ip-auth-2"
 
-[sip-user-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/9.png "sip-user-1"
-[sip-user-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/10.png "sip-user-2"
+[sip-user-1]: /getting-started/img/9.png "sip-user-1"
+[sip-user-2]: /getting-started/img/10.png "sip-user-2"
 
-[payment-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/11.png "payment-1"
-[payment-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/12.png "payment-2"
+[payment-1]: /getting-started/img/11.png "payment-1"
+[payment-2]: /getting-started/img/12.png "payment-2"
 
-[carrier-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/13.png "carrier-1"
-[carrier-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/14.png "carrier-2"
+[carrier-1]: /getting-started/img/13.png "carrier-1"
+[carrier-2]: /getting-started/img/14.png "carrier-2"
 
-[carrier-auth-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/15.png "carrier-auth-1"
-[carrier-auth-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/16.png "carrier-auth-2"
+[carrier-auth-1]: /getting-started/img/15.png "carrier-auth-1"
+[carrier-auth-2]: /getting-started/img/16.png "carrier-auth-2"
 
-[provider-card-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/17.png "provider-card-1"
-[provider-card-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/18.png "provider-card-2"
-[provider-card-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/19.png "provider-card-3"
+[provider-card-1]: /getting-started/img/17.png "provider-card-1"
+[provider-card-2]: /getting-started/img/18.png "provider-card-2"
+[provider-card-3]: /getting-started/img/19.png "provider-card-3"
 
-[provider-card-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/20.png "provider-card-4"
-[provider-card-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/21.png "provider-card-5"
-[provider-card-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/22.png "provider-card-6"
-[provider-card-7]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/18.png "provider-card-7"
+[provider-card-4]: /getting-started/img/20.png "provider-card-4"
+[provider-card-5]: /getting-started/img/21.png "provider-card-5"
+[provider-card-6]: /getting-started/img/22.png "provider-card-6"
+[provider-card-7]: /getting-started/img/18.png "provider-card-7"
 
-[customer-card-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/23.png "customer-card-1"
-[customer-card-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/24.png "customer-card-2"
-[customer-card-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/25.png "customer-card-3"
-[customer-card-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/26.png "customer-card-4"
-[customer-card-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/27.png "customer-card-5"
-[customer-card-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/25.png "customer-card-5"
-[customer-card-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/26.png "customer-card-6"
+[customer-card-1]: /getting-started/img/23.png "customer-card-1"
+[customer-card-2]: /getting-started/img/24.png "customer-card-2"
+[customer-card-3]: /getting-started/img/25.png "customer-card-3"
+[customer-card-4]: /getting-started/img/26.png "customer-card-4"
+[customer-card-5]: /getting-started/img/27.png "customer-card-5"
+[customer-card-5]: /getting-started/img/25.png "customer-card-5"
+[customer-card-6]: /getting-started/img/26.png "customer-card-6"
 
 
-[ingress-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/28.png "ingress-1"
-[ingress-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/29.png "ingress-2"
-[ingress-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/30.png "ingress-3"
+[ingress-1]: /getting-started/img/28.png "ingress-1"
+[ingress-2]: /getting-started/img/29.png "ingress-2"
+[ingress-3]: /getting-started/img/30.png "ingress-3"
 
-[server-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/31.png "server-1"
-[server-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/32.png "server-2"
+[server-1]: /getting-started/img/31.png "server-1"
+[server-2]: /getting-started/img/32.png "server-2"
 
-[notification-icon]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/notification-icon.png "notification icon"
-[server-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/32.png "server-2"
-[server-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/32.png "server-2"
-
-[warning-icon]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/images/2018/08/warning-icon.png "warning-icon"
-[verification-icon]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/images/2018/08/verification-icon.png "verification-icon"
+[notification-icon]: /getting-started/img/notification-icon.png "notification icon"
+[warning-icon]: /getting-started/img/warning-icon.png "warning-icon"
+[verification-icon]: /getting-started/img/verification-icon.png "verification-icon"
 

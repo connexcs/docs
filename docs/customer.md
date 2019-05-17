@@ -253,44 +253,44 @@ The **Invoices** tab displays a record of invoices sent to the account. Clicking
  The **Contracts** tab shows a listing of provider contracts associated with the active customer account. Select the records by clicking their names to see more details.
 
 
-[customer-dashboard]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/33.png "Customer-Dashboard"
-[add-customer-new]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/34.png "Add-Customer"
-[add-customer]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/35.png "Add-Customer"
+[customer-dashboard]: /customer/img/33.png "Customer-Dashboard"
+[add-customer-new]: /customer/img/34.png "Add-Customer"
+[add-customer]: /customer/img/35.png "Add-Customer"
 
-[del-customer]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/36.png "del-customer"
-[customer-status]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/39.png "Customer-Status"
-[edit-customer]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/40.png "Edit-Customer"
+[del-customer]: /customer/img/36.png "del-customer"
+[customer-status]: /customer/img/39.png "Customer-Status"
+[edit-customer]: /customer/img/40.png "Edit-Customer"
 
-[main-tab]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/41.png "Main Tab"
-[stats-tab]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/42.png "Stats Tab"
-[routing-tab]:  https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/43.png "Routing Tab"
-[ingress-routing-tab]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/44.png "Ingress Routing Tab"
+[main-tab]: /customer/img/41.png "Main Tab"
+[stats-tab]: /customer/img/42.png "Stats Tab"
+[routing-tab]:  /customer/img/43.png "Routing Tab"
+[ingress-routing-tab]: /customer/img/44.png "Ingress Routing Tab"
 
 
-[recording-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/45.png "recording-1"
-[recording-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/46.png "recording-2"
+[recording-1]: /customer/img/45.png "recording-1"
+[recording-2]: /customer/img/46.png "recording-2"
 
  
-[edit-cli]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/47.png "Edit CLI"
-[auth]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/48.png "Auth"
-[edit-switch-basic]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/49.png "Edit Switch Basic"
-[edit-switch-advance]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/50.png "Edit Switch Advance"
-[user-pwd-auth]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/51.png "User Pwd Auth"
+[edit-cli]: /customer/img/47.png "Edit CLI"
+[auth]: /customer/img/48.png "Auth"
+[edit-switch-basic]: /customer/img/49.png "Edit Switch Basic"
+[edit-switch-advance]: /customer/img/50.png "Edit Switch Advance"
+[user-pwd-auth]: /customer/img/51.png "User Pwd Auth"
 
 [CLI]: <https://docs.connexcs.com/en/latest/cli>
 [Ingress Routing]: <https://docs.connexcs.com/en/latest/ingress-routing>
 
-[simulate-call]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/52.png "Simulate Call"
-[payments-tab]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/53.png "Payments Tab" 
+[simulate-call]: /customer/img/52.png "Simulate Call"
+[payments-tab]: /customer/img/53.png "Payments Tab" 
 
-[carrier-alert-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/54.png "Carrier Alert-1"
-[carrier-alert-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/55.png "Carrier Alert-2"
-[recalc]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/56.png "Recalc"
-[edit-did]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/57.png "Edit-DID"
-[customer-package]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/58.png "Customer-Package"
-[customer-package1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/59.png "Customer-Package1"
-[customer]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/60.png "customer"
-[contacts]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/61.png "contacts"
-[contacts-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/62.png "contacts-2"
+[carrier-alert-1]: /customer/img/54.png "Carrier Alert-1"
+[carrier-alert-2]: /customer/img/55.png "Carrier Alert-2"
+[recalc]: /customer/img/56.png "Recalc"
+[edit-did]: /customer/img/57.png "Edit-DID"
+[customer-package]: /customer/img/58.png "Customer-Package"
+[customer-package1]: /customer/img/59.png "Customer-Package1"
+[customer]: /customer/img/60.png "customer"
+[contacts]: /customer/img/61.png "contacts"
+[contacts-2]: /customer/img/62.png "contacts-2"
 
-[alert]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/alert.png "Alerts"
+[alert]: /customer/img/alert.png "Alerts"
