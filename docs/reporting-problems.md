@@ -5,7 +5,7 @@ This page covers the best practices for reporting problems to ConnexCS support. 
 
 If you have more than one problem to report, we ask:
 
-1. Create a separate ticket for each request.  This so the the individual concerns get routed to the correct staff.
+1. Create a separate ticket for each request.  This so that the individual concerns get routed to the correct staff.
 2. Allow an adequate amount of time for us to assess the problem and resolve it.  We first have to assess if the problems are connected, adding extra time onto finding the roots themselves.
 3. Call instead of emailing.  This is so we can get a concise reading on all concerns quickly and ask follow-up questions on the spot.
 
@@ -14,7 +14,7 @@ Below is a list of channels you can use to reach us.
 
 ### Online Chat
 
-Online chat is real-time assistance that is useful when you're not in a position to call.  The blue help icon at the bottom of this page will lead you to a chat window.  Clicking this button alerts staff, and first person to become available will reply as soon as possible.  We find that most questions get resolved efficiently this way. Please note that thee chat system is for one-on-one communication about a specific problem, not for multiple concerns or system-wide change requests. 
+Online chat is real-time assistance that is useful when you're not in a position to call.  The blue help icon at the bottom of this page will lead you to a chat window.  Clicking this button alerts staff, and the first person to become available will reply as soon as possible.  We find that most questions get resolved efficiently this way. Please note that the chat system is for one-on-one communication about a specific problem, not for multiple concerns or system-wide change requests. 
 
 [placeholder-chat button image]
 
@@ -43,13 +43,13 @@ When reporting a problem it is important to provide us with the following inform
 Our onsite documentation has a two-fold purpose:
 
 * To provide a repository where you can search for information relevant to your problem.
-* To Inform your questions when you contact support.
+* To inform your questions when you contact support.
 
-Sometimes a complication is just a matter off turning off parameters that aren't compatible.  These are instances where a little troubleshooting might solve it.  There are other times where a bit of help is needed as well, and understanding the documentation will speed our efforts to remedy larger concerns. 
+Sometimes a complication is just a matter of turning off parameters that aren't compatible.  These are instances where a little troubleshooting might solve it.  There are other times where a bit of help is needed as well, and understanding the documentation will speed our efforts to remedy larger concerns. 
  
 ### User Interface Issue
 
-Including a screenshot along with a clear description of the problem can really help us understand what needs to be resolved.  For an efficient utility to take UI screenshots, we recommend a browser pugin called "Lightshot", or use your OS's buit-in snipping tool.
+Including a screenshot along with a clear description of the problem can really help us understand what needs to be resolved.  For an efficient utility to take UI screenshots, we recommend a browser pugin called "Lightshot", or use your OS's built-in snipping tool.
 
 ### Problems with Calls
 
