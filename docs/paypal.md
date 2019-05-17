@@ -1,11 +1,3 @@
-# Table of Contents
-
-- [Table of Contents](#table-of-contents)
-- [Paypal Integration](#paypal-integration)
-- [Add PayPal Integration](#add-paypal-integration)
-    - [Setting the Customer Paypal Email Address into ConnexCS](#setting-the-customer-paypal-email-address-into-connexcs)
-
-
 # Paypal Integration
 ConnexCS integrates the PayPal merchant platform and its API to allow easier transfers between VoIP providers and their associated PayPal accounts.
 
