@@ -17,7 +17,8 @@ To change your password:
      *  In the New Password text box, enter the password you want to use.
          !!! note Note: You must enter a password that adheres to the password rules displayed in the Change Password pop-up. ConnexCS portal does not accept a password, if the password does not adhere to the password rules.
      *  In the Confirm New Password text box, enter the password you want to use, again.
-         !!! note Note: If you do not enter identical values in the New Password and Confirm New Password text boxes, you cannot change your password. The following image illustrates how to change your password.
+         !!! note Note: If you do not enter identical values in the New Password and Confirm New Password text boxes, you cannot change your password. 
+         The following image illustrates how to change your password.
      *  Click Update.
          ConnexCS portal confirms that it has changed your password.
          You will also receive an email confirming that your password has changed. 
