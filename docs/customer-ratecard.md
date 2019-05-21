@@ -100,4 +100,3 @@ The revision tab shows previous changes made to rate cards. For example: previou
 [customer-card-9]: /card/img/129.png "Customer-card-9"
 [customer-card-10]: /card/img/130.png "Customer-card-10"
 [customer-card-11]: /card/img/131.png "Customer-card-11"
-[map-giff]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/map-giff.gif "map-giff"
