@@ -37,8 +37,8 @@ Click the **`Refresh`** button to ensure the current onscreen list includes all 
 
 ![alt text][temp-5]
  
-[temp-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/270.png "Temp-1"
-[temp-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/271.png "Temp-2"
-[temp-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/272.png "Temp-3"
-[temp-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/273.png "Temp-4"
-[temp-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/274.png "Temp-5"
+[temp-1]: /misc/img/270.png "Temp-1"
+[temp-2]: /misc/img/271.png "Temp-2"
+[temp-3]: /misc/img/272.png "Temp-3"
+[temp-4]: /misc/img/273.png "Temp-4"
+[temp-5]: /misc/img/274.png "Temp-5"
