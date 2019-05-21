@@ -50,13 +50,10 @@ To add contacts in the control panel:
 
 ![alt text][contacts-2]
 
-[domain]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/168.png "Domain"
-[domain1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/169.png "Domain1"
-[add-new-domain]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/170.png "Add-New-Domain"
-[customer]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/171.png "customer"
-[contacts]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/172.png "contacts"
-[contacts1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/173.png "contacts1"
-[contacts-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/174.png "contacts-2"
-
-
-
+[domain]: /customer-portal/img/168.png "Domain"
+[domain1]: /customer-portal/img/169.png "Domain1"
+[add-new-domain]: /customer-portal/img/170.png "Add-New-Domain"
+[customer]: /customer-portal/img/171.png "customer"
+[contacts]: /customer-portal/img/172.png "contacts"
+[contacts1]: /customer-portal/img/173.png "contacts1"
+[contacts-2]: /customer-portal/img/174.png "contacts-2"
