@@ -29,4 +29,4 @@ For multiple SIP servers, you can load balance the calls without a load balancer
 6. Check the records against the server IP
 7. Click **`Save`**.
 
-[load-balance]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/218.png "load-balance"
+[load-balance]: /misc/img/218.png "load-balance"
