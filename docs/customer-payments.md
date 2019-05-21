@@ -1,18 +1,3 @@
-# Table of Contents
-
-- [Table of Contents](#table-of-contents)
-- [Mass Payments with Paypal IPN](#mass-payments-with-paypal-ipn)
-  - [Mass Payments](#mass-payments)
-  - [What is PayPal IPN?](#what-is-paypal-ipn)
-    - [Mass Pay and Express Checkout](#mass-pay-and-express-checkout)
-    - [Configure an IPN](#configure-an-ipn)
-    - [Inserting the IPN URL in your PayPal account](#inserting-the-ipn-url-in-your-paypal-account)
-    - [Inserting credentials in your Connex Account](#inserting-credentials-in-your-connex-account)
-    - [How to add customer PayPal Email address on ConnexCS customer account](#how-to-add-customer-paypal-email-address-on-connexcs-customer-account)
-  - [Paypal Integration](#paypal-integration)
-  - [Setting the Customer Paypal Email Address into ConnexCS](#setting-the-customer-paypal-email-address-into-connexcs)
-
-
 # Mass Payments with Paypal IPN
 
 ## Mass Payments
@@ -135,14 +120,12 @@ To add a customer PayPal email address:
 3.	Click **Management** > **Customer** > **[customer name]** > **Contact**, and then enter the customer PayPal email ID.
 1. Click **`Save`**.
 
-
-[paypal-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/paypal-3.png "Paypal-3"
-[paypal-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/paypal-6.png "Paypal-6"
-[paypal-8]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/paypal-8.png "Paypal-8"
-[paypal-9]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/paypal-9.png "Paypal-9"
-[paypal-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/84.png "Paypal-2"
-[paypal-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/paypal-5.png "Paypal-5"
-[paypal-12]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/paypal-12.png "Paypal-12"
-[paypal-16]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/85.png "Paypal-16"
-[paypal-2b]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/84-b.png "Paypal-2b"
+[paypal-2]: /setup/img/84.png "Paypal-2"
+[paypal-3]: /setup/img/paypal-3.png "Paypal-3"
+[paypal-6]: /setup/img/paypal-6.png "Paypal-6"
+[paypal-8]: /setup/img/paypal-8.png "Paypal-8"
+[paypal-9]: /setup/img/paypal-9.png "Paypal-9"
+[paypal-12]: /setup/img/paypal-12.png "Paypal-12"
+[paypal-16]: /setup/img/85.png "Paypal-16"
+[paypal-2b]: /setup/img/84-b.png "Paypal-2b"
 
