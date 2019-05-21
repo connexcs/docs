@@ -89,50 +89,15 @@ The revision tab shows previous changes made to rate cards. For example: previou
 
 
 
-[customer-card-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/121.png "Customer-card-1"
-[customer-card-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/122.png "Customer-card-2"
-[customer-card-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/123.png "Customer-card-3"
-[customer-card-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/124.png "Customer-card-4"
-[customer-card-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/125.png "Customer-card-5"
-[customer-card-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/126.png "Customer-card-6"
-[customer-card-7]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/127.png "Customer-card-7"
-[customer-card-8]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/128.png "Customer-card-8"
-[customer-card-9]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/129.png "Customer-card-9"
-[customer-card-10]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/130.png "Customer-card-10"
-[customer-card-11]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/131.png "Customer-card-11"
-
-
-[email-ratecard-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/email-ratecard-1.png "Email-Ratecard-1"
-[email-ratecard-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/email-ratecard-2.png "Email-Ratecard-2"
-[email-ratecard-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/email-ratecard-3.png "Email-Ratecard-3"
-
-
-[ratecard-dashboard]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/ratecard-dashboard.png "Ratecard-Dashboard"
-[customer-ratecard]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/customer-ratecard.png "Customer-Ratecard"
-[basic]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/basic.png "basic"
-[advance]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/advance.png "advance"
-[card-details]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/card-details.png "Card-Details"
-[profittab]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/profittab.png "Profit-Tab"
-[popup]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/popup.jpg "Popup"
-[edittab]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/edittab.png "Edit-Tab"
-
-
-[customer-ratecard1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-ratecard1.png "customer-ratecard1"
-[customer-ratecard2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-ratecard2.png "customer-ratecard2"
-[customer-ratecard3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-ratecard3.png "customer-ratecard3"
-[customer-ratecard4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-ratecard4.png "customer-ratecard4"
-[customer-ratecard5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-ratecard5.png "customer-ratecard5"
-[customer-ratecard6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-ratecard6.png "customer-ratecard6"
-
-
-
-[customer-ratecard-advance1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-ratecard-advance1.png "customer-ratecard-advance1"
-[customer-ratecard-advance2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-ratecard-advance2.png "customer-ratecard-advance2"
-[customer-ratecard-advance3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-ratecard-advance3.png "customer-ratecard-advance3"
-[customer-ratecard-advance4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-ratecard-advance4.png "customer-ratecard-advance4"
-[customer-ratecard-advance5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-ratecard-advance5.png "customer-ratecard-advance5"
-[customer-ratecard-advance6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-ratecard-advance6.png "customer-ratecard-advance6"
-[customer-ratecard-advance7]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-ratecard-advance7.png "customer-ratecard-advance7"
-[customer-ratecard-advance8]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/customer-ratecard-advance8.png "customer-ratecard-advance8"
-
+[customer-card-1]: /card/img/121.png "Customer-card-1"
+[customer-card-2]: /card/img/122.png "Customer-card-2"
+[customer-card-3]: /card/img/123.png "Customer-card-3"
+[customer-card-4]: /card/img/124.png "Customer-card-4"
+[customer-card-5]: /card/img/125.png "Customer-card-5"
+[customer-card-6]: /card/img/126.png "Customer-card-6"
+[customer-card-7]: /card/img/127.png "Customer-card-7"
+[customer-card-8]: /card/img/128.png "Customer-card-8"
+[customer-card-9]: /card/img/129.png "Customer-card-9"
+[customer-card-10]: /card/img/130.png "Customer-card-10"
+[customer-card-11]: /card/img/131.png "Customer-card-11"
 [map-giff]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/map-giff.gif "map-giff"
