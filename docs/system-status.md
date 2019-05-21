@@ -42,13 +42,11 @@ Statuses are displayed in thecustomer portal, depending upon its visibility sett
 
 ![alt text][system-status-7]
 
-[system-status]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/262.png "system-status"
-[system-status-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/263.png "system-status-1"
-[system-status-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/264.png "system-status-2"
-[system-status-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/265.png "system-status-3"
-[system-status-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/266.png "system-status-4"
-[system-status-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/267.png "system-status-5"
-[system-status-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/268.png "system-status-5"
-[system-status-7]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/269.png "system-status-5"
-
-
+[system-status]: /misc/img/262.png "system-status"
+[system-status-1]: /misc/img/263.png "system-status-1"
+[system-status-2]: /misc/img/264.png "system-status-2"
+[system-status-3]: /misc/img/265.png "system-status-3"
+[system-status-4]: /misc/img/266.png "system-status-4"
+[system-status-5]: /misc/img/267.png "system-status-5"
+[system-status-6]: /misc/img/268.png "system-status-6"
+[system-status-7]: /misc/img/269.png "system-status-7"
