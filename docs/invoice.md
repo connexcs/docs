@@ -60,16 +60,14 @@ You can also download PDF version of invoice by clicking on **`PDF`**. Click the
 Invoice line grouping lets you group the invoice based on the destination or day.  It can be set inside the Settings menu under **My Account**.
 
 
-[invoice-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/222.png "Invoice-1"
-[invoice-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/223.png "Invoice-2"
-[invoice-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/224.png "Invoice-3"
-[invoice-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/225.png "Invoice-4"
-[invoice-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/226.png "Invoice-5"
-[invoice-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/227.png "Invoice-6"
-[invoice-7]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/228.png "Invoice-7"
-[invoice-8]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/229.png "Invoice-8"
-[invoice-9]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/230.png "invoice-9"
-[invoice-10]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/231.png "invoice-10"
-[invoice-11]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/232.png "invoice-11"
- 
-
+[invoice-1]: /misc/img/222.png "Invoice-1"
+[invoice-2]: /misc/img/223.png "Invoice-2"
+[invoice-3]: /misc/img/224.png "Invoice-3"
+[invoice-4]: /misc/img/225.png "Invoice-4"
+[invoice-5]: /misc/img/226.png "Invoice-5"
+[invoice-6]: /misc/img/227.png "Invoice-6"
+[invoice-7]: /misc/img/228.png "Invoice-7"
+[invoice-8]: /misc/img/229.png "Invoice-8"
+[invoice-9]: /misc/img/230.png "invoice-9"
+[invoice-10]: /misc/img/231.png "invoice-10"
+[invoice-11]: /misc/img/232.png "invoice-11"
