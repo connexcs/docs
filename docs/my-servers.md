@@ -60,13 +60,9 @@ To reactivate a server:
 !!! note
     To deploy a server, you must have $20 (+ $20 X other servers in your account) available balance.
     
-[server-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/239.png "server-1"
-[server-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/240.png "server-2"
-[server-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/241.png "server-3"
-[server-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/242.png "server-4"
-[server-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/243.png "server-5"
-[server-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/244.png "server-6"
-
-[server-reactivation]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/server-reactivation.png "server-reactivation"
-[server-reactivation-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-img/server-reactivation-1.png "server-reactivation-1"
-
+[server-1]: /misc/img/239.png "server-1"
+[server-2]: /misc/img/240.png "server-2"
+[server-3]: /misc/img/241.png "server-3"
+[server-4]: /misc/img/242.png "server-4"
+[server-5]: /misc/img/243.png "server-5"
+[server-6]: /misc/img/244.png "server-6"
