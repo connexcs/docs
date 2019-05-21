@@ -59,13 +59,12 @@ Now, it's time for us to configure the circuit test:
  
 
 
-[circuit-test-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/209.png "Circuit Test 1"
-[circuit-test-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/210.png "Circuit Test 2"
-[circuit-test-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/211.png "Circuit Test 3"
-[circuit-test-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/212.png "Circuit Test 4"
-[circuit-test-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/213.png "Circuit Test 5"
-[circuit-test-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/214.png "Circuit Test 6"
-[circuit-test-7]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/215.png "Circuit Test 7"
-[circuit-test-8]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/216.png "Circuit Test 8"
-[circuit-test-9]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/217.png "Circuit Test 9"
-[circuit-test-10]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/circuit-test-10.png "Circuit Test 10"
+[circuit-test-1]: /misc/img/209.png "Circuit Test 1"
+[circuit-test-2]: /misc/img/210.png "Circuit Test 2"
+[circuit-test-3]: /misc/img/211.png "Circuit Test 3"
+[circuit-test-4]: /misc/img/212.png "Circuit Test 4"
+[circuit-test-5]: /misc/img/213.png "Circuit Test 5"
+[circuit-test-6]: /misc/img/214.png "Circuit Test 6"
+[circuit-test-7]: /misc/img/215.png "Circuit Test 7"
+[circuit-test-8]: /misc/img/216.png "Circuit Test 8"
+[circuit-test-9]: /misc/img/217.png "Circuit Test 9"
