@@ -28,7 +28,7 @@ To select multiple customers, providers, or groups, simply click more than one f
 
 To select a range of dates, enter a date and time in the first and second boxes.  Entering a single date will only display activity for that day.  After the range of dates is selected, click the **`OK`** button.
  
-![alt text][report-6]
+![alt text][report-5]
 
 ### Scheduled Breakout Reports**
 
@@ -41,22 +41,14 @@ This feature lets administrators schedule breakout report emails at designated i
 
 The scheduled reports screen will update to show the report you added once you've saved. 
 
-![alt text][report-11]
+![alt text][report-6]
 
 The schedule screen shows the name of the report, the email recipient(s), and the frequency.  To edit an existing report, click its name and a window similar to the new report screen opens, allowing you to change any of the previous attributes.
 
 
-[report-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/275.png "Report-1"
-[report-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/276.png "Report-2"
-[report-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/277.png "Report-3"
-[report-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/278.png "Report-4"
-[report-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/279.png "Report-5"
-[report-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/280.png "Report-6"
-[report-7]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/281.png "Report-7"
-[report-8]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/282.png "Report-8"
-[report-9]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/283.png "Report-9"
-[report-10]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/284.png "Report-10"
-[report-11]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/285.png "Report-11"
-[report-12]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/286.png "Report-12"
-[report-13]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/287.png "Report-13"
-[report-14]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/288.png "Report-14"
+[report-1]: /reports/img/275.png "Report-1"
+[report-2]: /reports/img/276.png "Report-2"
+[report-3]: /reports/img/277.png "Report-3"
+[report-4]: /reports/img/278.png "Report-4"
+[report-5]: /reports/img/280.png "Report-5"
+[report-6]: /reports/img/285.png "Report-6"
