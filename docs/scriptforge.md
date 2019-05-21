@@ -163,13 +163,13 @@ You can assign scripts to customers:
 ![alt text][s9] 
  
  
-[side]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/175.png "side"
-[side-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/176.png "side-1"
-[s2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/177.png "s2"
-[s3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/178.png "s3"
-[s4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/179.png "s4"
-[s5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/180.png "s5"
-[s6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/181.png "s6"
-[s7]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/182.png "s7"
-[s8]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/183.png "s8"
-[s9]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/184.png "s9"
+[side]: /developers/img/175.png "side"
+[side-1]: /developers/img/176.png "side-1"
+[s2]: /developers/img/177.png "s2"
+[s3]: /developers/img/178.png "s3"
+[s4]: /developers/img/179.png "s4"
+[s5]: /developers/img/180.png "s5"
+[s6]: /developers/img/181.png "s6"
+[s7]: /developers/img/182.png "s7"
+[s8]: /developers/img/183.png "s8"
+[s9]: /developers/img/184.png "s9"
