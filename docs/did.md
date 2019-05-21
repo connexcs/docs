@@ -47,7 +47,7 @@ You can search the details in DID records by entering keywords in the text field
 
 ![alt text][did-img-4]
 
-[did-img-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/164.png "did-img-1"
-[did-img-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/165.png "did-img-2"
-[did-img-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/166.png "did-img-3"
-[did-img-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/167.png "did-img-4"
+[did-img-1]: /did/img/164.png "did-img-1"
+[did-img-2]: /did/img/165.png "did-img-2"
+[did-img-3]: /did/img/166.png "did-img-3"
+[did-img-4]: /did/img/167.png "did-img-4"
