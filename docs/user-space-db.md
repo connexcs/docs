@@ -61,12 +61,11 @@ You can search the _Area_ and _Key_ from the search text fields using the search
 
 ![alt text][user-space-img-6]
 
-[user-space-img-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/185.png "user-space-img-1"
-[user-space-img-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/186.png "user-space-img-2"
-[user-space-img-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/187.png "user-space-img-3"
-[user-space-img-1a]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/188.png "user-space-img-1a"
-[user-space-img-2a]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/189.png "user-space-img-2a"
-[user-space-img-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/190.png "user-space-img-4"
-[user-space-img-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/191.png "user-space-img-5"
-[user-space-img-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/192.png "user-space-img-6"
-
+[user-space-img-1]: /developers/img/185.png "user-space-img-1"
+[user-space-img-2]: /developers/img/186.png "user-space-img-2"
+[user-space-img-3]: /developers/img/187.png "user-space-img-3"
+[user-space-img-1a]: /developers/img/188.png "user-space-img-1a"
+[user-space-img-2a]: /developers/img/189.png "user-space-img-2a"
+[user-space-img-4]: /developers/img/190.png "user-space-img-4"
+[user-space-img-5]: /developers/img/191.png "user-space-img-5"
+[user-space-img-6]: /developers/img/192.png "user-space-img-6"
