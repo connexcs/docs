@@ -37,7 +37,7 @@ You can download a file you've selected with the **`Download`** button. The ensu
 
 ![alt text][files-4]
 
-[files-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/219.png "Files 1"
-[files-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/220.png "Files 2"
-[files-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/files-3.png "Files 3"
-[files-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/221.png "Files 4"
+[files-1]: /misc/img/219.png "Files 1"
+[files-2]: /misc/img/220.png "Files 2"
+[files-3]: /misc/img/files-3.png "Files 3"
+[files-4]: /misc/img/221.png "Files 4"
