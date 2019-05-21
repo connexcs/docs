@@ -65,13 +65,13 @@ To search your packages list for titles and keywords, use the search box at the 
 Use this if you bill your customers for a minimum spend per-month based on minutes consumption. The mechanism will calculate the customer's spend in the previous interval, subtract it from the minimum spend, and then pass that charge to their account.
 
  
-[package-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/245.png "package-1"
-[package-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/246.png "package-2"
-[package-3]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/247.png "package-3"
-[package-4]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/248.png "package-4"
-[package-5]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/249.png "package-5"
-[package-6]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/250.png "package-6"
-[package-7]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/251.png "package-7"
-[package-8]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/252.png "package-8"
-[package-9]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/253.png "package-9"
-[package-10]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/new-images/254.png "package-10"
+[package-1]: /misc/img/245.png "package-1"
+[package-2]: /misc/img/246.png "package-2"
+[package-3]: /misc/img/247.png "package-3"
+[package-4]: /misc/img/248.png "package-4"
+[package-5]: /misc/img/249.png "package-5"
+[package-6]: /misc/img/250.png "package-6"
+[package-7]: /misc/img/251.png "package-7"
+[package-8]: /misc/img/252.png "package-8"
+[package-9]: /misc/img/253.png "package-9"
+[package-10]: /misc/img/254.png "package-10"
