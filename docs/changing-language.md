@@ -17,7 +17,7 @@ To change the language on the portal's UI:
 5.  Click Update.
     ConnexCS Control Panel immediately displays most of the text in your preferred language, on the UI.
     The following image illustrates how your Control Panel looks if you change the language to Spanish.
-     ![Alt text](/docs/misc/img/change-language-to-spanish.png)
+     ![Alt text](/docs/misc/img/change-language-to-spanish.png "Control Panel in Spanish")
       
       
 
