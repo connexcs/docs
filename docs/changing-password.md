@@ -23,7 +23,8 @@ To change your password:
             If you do not enter identical values in the New Password and Confirm New Password text boxes, you cannot change your password. 
          The following image illustrates how to change your password.
          
-         ![Alt text](/docs/misc/img/change-your-password.png)
+         ![alt text][change-your-password.png]
+         
      *  Click `Update`.
         ConnexCS portal confirms that it has changed your password.
         You will also receive an email confirming that your password has changed. 
