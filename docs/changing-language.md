@@ -15,7 +15,7 @@ To change the language on the portal's UI:
     
     A task menu appears.
     
-3.  Click Change Language.
+3.  Click `Change Language`.
     
     The Change Language pop-up appears.
     
@@ -23,7 +23,7 @@ To change the language on the portal's UI:
     
     You can select one of the following languages: اللغة العربية (Arabic), Deutsch (German) English, Español (Spanish), Francias (French), हिन्दी (Hindi, one of the official languages in India), 日本語 (Japanese), Kanuri (a dialect continuum spoken in Africa), Português (Portuguese), Русский (Russian), తెలుగు (Telugu, a language spoken in some Indian states), اردو (Urdu), and 中文 (Chinese).
     
-5.  Click Update.
+5.  Click `Update`.
     
     ConnexCS Control Panel immediately displays most of the text in your preferred language, on the UI.
     
