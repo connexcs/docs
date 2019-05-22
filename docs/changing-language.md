@@ -1,5 +1,4 @@
 # Changing the Language of Text Displayed on the UI
-
 You can change the language of the text displayed on the ConnexCS Control Panel's UI, if you want to see text in your preferred language.
 
 !!! note "Will this change the language for every word on the UI" 
