@@ -2,6 +2,8 @@
 
 You can change the password for your ConnexCS Control Panel, if your password is compromised or if you want to use a new password.
 
+![alt text][change-your-password]
+
 !!! info "What you need to change your password" 
     Ensure that you remember to keep your current password handy. You must enter your current password, to be able to change your password.
 
@@ -34,7 +36,7 @@ To change your password:
             If you do not enter identical values in the New Password and Confirm New Password text boxes, you cannot change your password. 
          The following image illustrates how to change your password.
          
-         ![alt text][docs/misc/img/change-your-password.png]
+         ![alt text][change-your-password]
          
      *  Click `Update`.
         
