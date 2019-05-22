@@ -2,7 +2,8 @@
 
 You can change the language of the text displayed on the ConnexCS Control Panel's UI, if you want to see text in your preferred language.
 
-!!! note "Will this change the language for every word on the UI" Changing the language on the Control Panel's UI using only this workflow does not change the language for every word you see on the UI. To view more or all words in your preferred language, you must go to Setup > Advanced > Language and enter the non-English equivalents for the words you want to see in your preferred language.
+!!! note "Will this change the language for every word on the UI" 
+Changing the language on the Control Panel's UI using only this workflow does not change the language for every word you see on the UI. To view more or all words in your preferred language, you must go to Setup > Advanced > Language and enter the non-English equivalents for the words you want to see in your preferred language.
 
 To change the language on the portal's UI:
 
@@ -17,7 +18,7 @@ To change the language on the portal's UI:
 5.  Click Update.
     ConnexCS Control Panel immediately displays most of the text in your preferred language, on the UI.
     The following image illustrates how your Control Panel looks if you change the language to Spanish.
-     ![Alt text](/docs/misc/img/change-language-to-spanish.png)
+     ![Alt text][change-language-to-spanish.png]
       
       
 
