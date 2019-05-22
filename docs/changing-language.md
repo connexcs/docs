@@ -29,7 +29,7 @@ To change the language on the Control Panel's UI:
     
     The following image illustrates how your Control Panel looks if you change the language to Spanish.
     
-    ![alt text][change-language-to-spanish.png]
+    ![Control Panel in Spanish][change-language-to-spanish.png]
       
       
 
