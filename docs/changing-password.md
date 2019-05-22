@@ -34,7 +34,7 @@ To change your password:
             If you do not enter identical values in the New Password and Confirm New Password text boxes, you cannot change your password. 
          The following image illustrates how to change your password.
          
-         ![alt text](/change-your-password.png)
+         ![alt text](/change-your-password)
          
      *  Click `Update`.
         
