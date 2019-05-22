@@ -44,3 +44,5 @@ To change your password:
         
 5.  (Optional) To abort changing your password, click `X` located at the top-right corner of the pop-up.
 
+[change-your-password]: /misc/img/change-pwd-2.png "change-your-password"
+
