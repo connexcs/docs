@@ -66,6 +66,8 @@ pages:
     - Specification: spec.md
     - System Status: system-status.md
     - Templates: templates.md
+    - Changing Language: changing-language.md
+    - Changing Password: changing-password.md
     - Logging Out: logging-out.md
     
 - Reports:
