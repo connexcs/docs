@@ -2,7 +2,7 @@
 
 You can change the password for your ConnexCS Control Panel, if your password is compromised or if you want to use a new password.
 
-!!! note Before you Begin: Ensure that you remember to keep your current password handy. You must enter your current password, to be able to change your password.
+!!! note "Before you Begin" Ensure that you remember to keep your current password handy. You must enter your current password, to be able to change your password.
 
 To change your password:
 
@@ -15,9 +15,9 @@ To change your password:
 4.  Do the following to change your password:
      *  In the Old Password text box, enter the password you are using now.
      *  In the New Password text box, enter the password you want to use.
-         !!! note Note: You must enter a password that adheres to the password rules displayed in the Change Password pop-up. ConnexCS portal does not accept a password, if the password does not adhere to the password rules.
+         !!! note "Note:" You must enter a password that adheres to the password rules displayed in the Change Password pop-up. ConnexCS portal does not accept a password, if the password does not adhere to the password rules.
      *  In the Confirm New Password text box, enter the password you want to use, again.
-         !!! note Note: If you do not enter identical values in the New Password and Confirm New Password text boxes, you cannot change your password. 
+         !!! note "Note:" If you do not enter identical values in the New Password and Confirm New Password text boxes, you cannot change your password. 
          The following image illustrates how to change your password.
          ![Alt text](/docs/misc/img/change-your-password.png)
      *  Click Update.
