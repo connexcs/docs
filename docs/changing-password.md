@@ -10,7 +10,7 @@ To change your password:
 1.  Log into the ConnexCS portal.
     ConnexCS displays the page you were on when you logged out of the portal.
 2.  Click the down-arrow next to your name (located at the top-right corner of the page).
-    A task menu appears.
+    A task menu appear.
 3.  Click `Change Password`.
     The Change Password pop-up appears.
 4.  Do the following to change your password:
