@@ -8,7 +8,7 @@ To log out of the ConnexCS Control Panel:
     
     A task menu appears.
     
-2.  Click 'Logout'.
+2.  Click `Logout`.
     
     You are logged out of the Control Panel.
     
