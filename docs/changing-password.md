@@ -33,9 +33,7 @@ To change your password:
         !!! failure "Cannot change my password" 
             If you do not enter identical values in the New Password and Confirm New Password text boxes, you cannot change your password. 
          The following image illustrates how to change your password.
-         
-[change-your-password]: /misc/img/change-your-password.png "change-your-password"
-         
+               
      *  Click `Update`.
         
         ConnexCS Control Panel confirms that it has changed your password.
