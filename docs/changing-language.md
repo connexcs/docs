@@ -31,7 +31,7 @@ To change the language on the Control Panel's UI:
     
     ![alt text][change-language-to-spanish]
     
-[change-language-to-spanish]: /misc/img/change-language-to-spanish.jpg "change-language-to-spanish"
+[change-language-to-spanish]: /misc/img/change-language-to-spanish.png "change-language-to-spanish"
       
       
 
