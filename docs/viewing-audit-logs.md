@@ -55,4 +55,4 @@ To view the audit logs:
   
    ![alt text][view-data-difference-audit-logs]
    
- [view-data-difference-audit-logs]: /misc/img/view-data-difference-audit-logs.png "view-data-difference-audit-logs"
+ [view-data-difference-audit-logs]: /reports/img/view-data-difference-audit-logs.png "view-data-difference-audit-logs"
