@@ -10,7 +10,7 @@ An audit log, also known as an audit trail is a chronological set of records tha
 To view the audit logs:
 
 1. Log into the ConnexCS Control Panel.
-
+   
    ConnexCS Control Panel displays the page you were on when you logged out of the Control Panel.
    
 2. Click 'Setup > Information > Audit Log' in the navigation panel (located at the left of the page).
