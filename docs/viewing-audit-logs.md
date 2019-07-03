@@ -41,13 +41,13 @@ To view the audit logs:
 
 4.  Do the following on this page to view more details about the audit logs:
 
-    * (Optional) To search for a specific set of audit logs by the values in the columns, enter the search criteria in the Search box and press `Enter'.
+    * (Optional) To search for a specific set of audit logs by the values in the columns, enter the search criteria in the Search box and press `Enter`.
 
     * To sort a column by the ascending or descending order of the values in the column, click the column header.
 
     * To filter the audit logs by One or more values of a column, click the 3-lines icon in a column, click the Funnel icon, and select or enter values.
 
-    * To view the complete details of what the user changed during an action, click `View Difference' in the row for the action.
+    * To view the complete details of what the user changed during an action, click `View Difference` in the row for the action.
       
       A View Data Difference pop-up appears.
       
