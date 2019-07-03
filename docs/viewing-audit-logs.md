@@ -15,11 +15,12 @@ To view the audit logs:
    
 2. Click 'Setup > Information > Audit Log' in the navigation panel (located at the left of the page).
 
-	 The Audit Log page appears.
+   The Audit Log page appears.
 
    You can see the audit logs for the actions that users performed on the Control Panel, in a tabular format.
    
-    You can see the following details in the table, as columns:
+   You can see the following details in the table, as columns:
+    
 * User - the name of user, as in the account for the Control Panel
 
 * IP - the IP address of the computer that the user used to access the Control Panel
