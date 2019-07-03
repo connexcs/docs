@@ -9,45 +9,45 @@ An audit log, also known as an audit trail is a chronological set of records tha
 
 To view the audit logs:
 
-1. Log into the ConnexCS Control Panel.
+1.  Log into the ConnexCS Control Panel.
    
-   ConnexCS Control Panel displays the page you were on when you logged out of the Control Panel.
+    ConnexCS Control Panel displays the page you were on when you logged out of the Control Panel.
    
-2. Click 'Setup > Information > Audit Log' in the navigation panel (located at the left of the page).
+2.  Click 'Setup > Information > Audit Log' in the navigation panel (located at the left of the page).
 
-   The Audit Log page appears.
+    The Audit Log page appears.
 
-   You can see the audit logs for the actions that users performed on the Control Panel, in a tabular format.
+    You can see the audit logs for the actions that users performed on the Control Panel, in a tabular format.
    
-   You can see the following details in the table, as columns:
+    You can see the following details in the table, as columns:
     
-* User - the name of user, as in the account for the Control Panel
+    * User - the name of user, as in the account for the Control Panel
 
-* IP - the IP address of the computer that the user used to access the Control Panel
+    * IP - the IP address of the computer that the user used to access the Control Panel
 
-* Date Time - the date and time when the user performed this action
+    * Date Time - the date and time when the user performed this action
 
-* Primary Key - the unique identification number of the record in the database that the user modified with this action
+    * Primary Key - the unique identification number of the record in the database that the user modified with this action
 
-* Action - the type of action the user performed: CREATE, DELETE, GENERATE, LOGIN, POST, PUBLISH, PUT, SEND, or UPDATE.
+    * Action - the type of action the user performed: CREATE, DELETE, GENERATE, LOGIN, POST, PUBLISH, PUT, SEND, or UPDATE.
 
-* Table - the table in the database that the user modified with this action
+    * Table - the table in the database that the user modified with this action
 
-* Message - a simple message that defines what the user did
+    * Message - a simple message that defines what the user did
 
-* Data - the data before the user performed the action and the data after the user performed the action
+    * Data - the data before the user performed the action and the data after the user performed the action
 
-3. (Optional) To avert the impact of data synchronization issues and get the latest set of audit logs, click the Refresh button located at top-right of the table.
+3.  (Optional) To avert the impact of data synchronization issues and get the latest set of audit logs, click the Refresh button located at top-right of the table.
 
-4. Do the following on this page to view more details about the audit logs:
+4.  Do the following on this page to view more details about the audit logs:
 
-* (Optional) To search for a specific set of audit logs by the values in the columns, enter the search criteria in the Search box and press Enter.
+    * (Optional) To search for a specific set of audit logs by the values in the columns, enter the search criteria in the Search box and press Enter.
 
-* To sort a column by the ascending or descending order of the values in the column, click the column header.
+    * To sort a column by the ascending or descending order of the values in the column, click the column header.
 
-* To filter the audit logs by One or more values of a column, click the 3-lines icon in a column, click the Funnel icon, and select or enter values.
+    * To filter the audit logs by One or more values of a column, click the 3-lines icon in a column, click the Funnel icon, and select or enter values.
 
-* To view the complete details of what the user changed during an action, click View Difference in the row for the action. 
+    * To view the complete details of what the user changed during an action, click View Difference in the row for the action. 
 	
   A View Data Difference pop-up appears.
   
