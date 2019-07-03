@@ -72,6 +72,7 @@ pages:
     
 - Reports:
     - Breakout Reports: report.md
+    - Viewing Audit Logs: viewing-audit-logs.md
    
 - Setup:
     - My Account: my-account.md
