@@ -14,7 +14,7 @@ To add non-English equivalents for your preferred language:
 
     ConnexCS displays the page you were on when you logged out of the Control Panel.
     
-2.  Click 'Setup > Advanced > Language' in the navigation panel (located at the left of the page).
+2.  Click `Setup > Advanced > Language` in the navigation panel (located at the left of the page).
     
     The page to add or change the non-English equivalents appears.
     
@@ -24,7 +24,7 @@ To add non-English equivalents for your preferred language:
     
     The Key column displays the English word and the Translation column displays the non-English equivalent.
     
-3.  In the 'Language' sub-menu on the left, click the language to which you want to add the non-English equivalents.
+3.  In the `Language` sub-menu on the left, click the language to which you want to add the non-English equivalents.
 
 4.  Do the following to change the non-English equivalents that the Control Panel adds by default:
 
@@ -34,29 +34,29 @@ To add non-English equivalents for your preferred language:
       
     * Enter new text in the Translation text box.
     
-    * Click 'Save'.
+    * Click `Save`.
       
       The new text, for the word you chose, will be displayed in the Translation column.
 
     * Repeat the Three preceding steps to change the non-English equivalents for more words.
 
-    * (Optional) If you do not see the changes, click Refresh located at the top of page.
+    * (Optional) If you do not see the changes, click `Refresh` located at the top of page.
 
 5.  Do the following to add new non-English equivalents for more words:
 
-    * Click '+' located at the top of the page.
+    * Click `+` located at the top of the page.
       
       A pop-up appears on the right.
     
-    * In the 'Key' text box, enter the English word.
+    * In the `Key` text box, enter the English word.
 
-    * In the 'Translation' text box, enter the non-English equivalent.
+    * In the `Translation` text box, enter the non-English equivalent.
       
       The following image illustrates how to add a new word in Spanish.
       
       ![alt text][adding-words-in-spanish]
       
-     * Click 'Save'.
+     * Click `Save`.
        
        You can see the new word you added, in the table.
 
@@ -65,11 +65,11 @@ To add non-English equivalents for your preferred language:
 
 6.  To delete a non-English equivalent you added or to reset an incorrect change to a default entry:
 
-    * Select the check box for the word and click 'Reset' (located at the top of the page).
+    * Select the check box for the word and click `Reset` (located at the top of the page).
 	
       A Warning pop-up appears.
       
-    * Click 'OK'.
+    * Click `OK`.
 
       The Control Panel deletes the new non-English equivalent or resets the default non-English equivalent to the original translated word.
       
