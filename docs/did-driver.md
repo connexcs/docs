@@ -11,7 +11,7 @@ module.export = {
 	search: async function (vars) { // vars: {number: '1234'}
 		return []; // [{did: '123456789'}]
 	},
-	allocate: async function (vars) { // vars: {did: '123456789'}
+	allocate: async function (vars) { // vars: {did: '123456789'} - optionally can contain extra user specified provisioning data such as {did: '123456789', customer_id: 1, customer_card_id: 'ABCD-1234'}
 		return {}; // The return object will be passed into the DID (POST) request for adding a new DID.
 	},
 	release: async function (vars) { // vars: {did: '123456789'}
