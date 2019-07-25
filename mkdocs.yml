@@ -21,8 +21,6 @@ markdown_extensions:
       
 pages:
   - Cloudswitch:
-    - Getting Started: getting-started.md
-
     - Home: index.md
     - Getting Started: getting-started.md
 
@@ -91,5 +89,6 @@ pages:
         - Media Handling: media-handling.md
         - Scaling and Load Balancing: scaling-load-balancing.md
         - Changelog: changelog.md
-  - Anycast Loadbalancer
+
+- Anycast Loadbalancer:
     - Anycast Loadbalancer: anycast-loadbalancer.md
