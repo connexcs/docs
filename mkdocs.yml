@@ -2,8 +2,10 @@ site_name: ConnexCS Documentation
 site_url: http://www.connexcs.com
 site_description: Connex Cloud Softswitch
 site_author: ConnexCS Team
-theme: material
-
+theme:
+  name: material 
+  feature:
+    tabs: true  
 extra_javascript:
 - extra.js
 
@@ -18,74 +20,75 @@ markdown_extensions:
       custom_checkbox: true
       
 pages:
-- Home: index.md
-- Getting Started: getting-started.md
+- Cloudswitch: index.md
+    - Getting Started: getting-started.md
 
-- Customer:
-    - Customer: customer.md
-    - Credit Control: credit-control.md
-    - CLI: cli.md
-    - Ingress Routing: ingress-routing.md
-    - Routing Strategy: routing-strategy.md
+    - Home: index.md
+    - Getting Started: getting-started.md
+
+    - Customer:
+        - Customer: customer.md
+        - Credit Control: credit-control.md
+        - CLI: cli.md
+        - Ingress Routing: ingress-routing.md
+        - Routing Strategy: routing-strategy.md
+            
+    - Carrier: 
+        - Carrier: carrier.md
         
-- Carrier: 
-    - Carrier: carrier.md
-    
-- Rate Cards:
-    - Provider Ratecard: provider-ratecard.md
-    - Customer Ratecard: customer-ratecard.md
-    - Building: rate-card-building.md
-    - Card Management: card-management.md
-    
-- DID:
-    - DID/Origination: did.md
-    
-- Customer Portal:
-    - Customer Portal: customer-portal.md
+    - Rate Cards:
+        - Provider Ratecard: provider-ratecard.md
+        - Customer Ratecard: customer-ratecard.md
+        - Building: rate-card-building.md
+        - Card Management: card-management.md
+        
+    - DID:
+        - DID/Origination: did.md
+        
+    - Customer Portal:
+        - Customer Portal: customer-portal.md
 
-- Developers:
-    - Scriptforge: scriptforge.md
-    - User Space Database: user-space-db.md 
+    - Developers:
+        - Scriptforge: scriptforge.md
+        - User Space Database: user-space-db.md 
 
-- Micsellanenous:
-    - Authentication: authentication.md
-    - Connex Billing: billing.md
-    - Calling Card: calling-card.md
-    - Circuit Test: circuit-test.md
-    - Capacity Limiting: limiting-cps.md
-    - Files: files.md
-    - Feature List: feature-list.md
-    - Invoice: invoice.md
-    - Logging: logging.md
-    - My Servers: my-servers.md
-    - Packages: packages.md
-    - Routing: routing.md
-    - Routing USA: routing-usa.md
-    - Routing Engine: routing-engine.md
-    - Reporting Problems: reporting-problems.md
-    - Specification: spec.md
-    - System Status: system-status.md
-    - Templates: templates.md
-    - Changing Language: changing-language.md
-    - Adding non-English Equivalents: adding-non-english-equivalents.md
-    - Changing Password: changing-password.md
-    - Logging Out: logging-out.md
-    
-- Reports:
-    - Breakout Reports: report.md
-    - Viewing Audit Logs: viewing-audit-logs.md
-   
-- Setup:
-    - My Account: my-account.md
-    - Paypal: customer-payments.md
+    - Micsellanenous:
+        - Authentication: authentication.md
+        - Connex Billing: billing.md
+        - Calling Card: calling-card.md
+        - Circuit Test: circuit-test.md
+        - Capacity Limiting: limiting-cps.md
+        - Files: files.md
+        - Feature List: feature-list.md
+        - Invoice: invoice.md
+        - Logging: logging.md
+        - My Servers: my-servers.md
+        - Packages: packages.md
+        - Routing: routing.md
+        - Routing USA: routing-usa.md
+        - Routing Engine: routing-engine.md
+        - Reporting Problems: reporting-problems.md
+        - Specification: spec.md
+        - System Status: system-status.md
+        - Templates: templates.md
+        - Changing Language: changing-language.md
+        - Adding non-English Equivalents: adding-non-english-equivalents.md
+        - Changing Password: changing-password.md
+        - Logging Out: logging-out.md
+        
+    - Reports:
+        - Breakout Reports: report.md
+        - Viewing Audit Logs: viewing-audit-logs.md
+       
+    - Setup:
+        - My Account: my-account.md
+        - Paypal: customer-payments.md
 
-- Architecture:
-    - API: api.md
-    - NAT Traversal: far-end-nat-traversal.md
-    - Security: security.md
-    - Media Handling: media-handling.md
-    - Scaling and Load Balancing: scaling-load-balancing.md
-    - Changelog: changelog.md
-    
-    
-
+    - Architecture:
+        - API: api.md
+        - NAT Traversal: far-end-nat-traversal.md
+        - Security: security.md
+        - Media Handling: media-handling.md
+        - Scaling and Load Balancing: scaling-load-balancing.md
+        - Changelog: changelog.md
+- Anycast Loadbalancer: anycast-loadbalancer.md
