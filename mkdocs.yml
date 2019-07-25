@@ -90,5 +90,5 @@ pages:
         - Scaling and Load Balancing: scaling-load-balancing.md
         - Changelog: changelog.md
 
-- Anycast Loadbalancer:
+  - Anycast Loadbalancer:
     - Anycast Loadbalancer: anycast-loadbalancer.md
