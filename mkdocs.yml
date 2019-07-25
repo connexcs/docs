@@ -20,7 +20,7 @@ markdown_extensions:
       custom_checkbox: true
       
 pages:
-  - Cloudswitch
+  - Cloudswitch:
     - Getting Started: getting-started.md
 
     - Home: index.md
