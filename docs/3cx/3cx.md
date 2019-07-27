@@ -2,22 +2,23 @@
 
 ## Getting Started
 
-### 1) Create Users
+### Create Users
 
-#### Create Users, Deploy Apps & IP Phones
+Create Users, Deploy Apps & IP Phones
 
  - [Create Users and Deploy Apps](https://www.3cx.com/docs/manual/creating-users-extensions/)
  - [Configuring a VoIP Gateway](https://www.3cx.com/docs/manual/configuring-ip-phones/)
  - [Supported IP Phones](https://www.3cx.com/sip-phones/)
 
-### 2) SIP Trunks
+### SIP Trunks
 
-Calling – Configuring your providers/trunks
+Calling - Configuring your providers/trunks
+
  - [Configuring a SIP Trunk / VoIP Provider account](https://www.3cx.com/docs/manual/sip-trunks/)
  - [Configuring a VoIP Gateway](https://www.3cx.com/docs/manual/configuring-voip-gateway/)
  - [Call Routing – Inbound Rules](https://www.3cx.com/docs/manual/inbound-did-call-routing/)
 
-### 3) IVR / Call Centre
+### IVR / Call Centre
 
 Build your IVR and Call Centre - Create a professional IVR and build a call centre to boost customer service.
 
@@ -27,7 +28,7 @@ Build your IVR and Call Centre - Create a professional IVR and build a call cent
  - [CRM integration – Know whos calling](https://www.3cx.com/docs/manual/pbx-crm-integration/)
  - [Installing the 3CX Live Chat & Talk plugin](https://www.3cx.com/docs/live-chat-talk-wordpress-plugin/)
 
-### 4) System Management
+### System Management
 
 Phone System Management
 
