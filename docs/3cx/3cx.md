@@ -1,6 +1,22 @@
 # 3CX Documentation
 
+## Why 3CX on ConnexCS?
+We are the experts in Class 4 Cloud Switch, 3CX are the experts in Unified Communications. Our ability to deploy 3cx offers a seamless, fully integrated way for you to deliver both feature rich PBX and Unified communications to your customers.
+
 ## Getting Started
+
+We provide the easiest way to deploy 3cx to your existing customers. Below is a short guide on how to accomplish this:
+
+1. Make sure your customer already exists in the ConnexCS platform.
+    - You can add DID's if required
+- Go to the customer page then the 3CX Tab.
+- Click the blue + button on the right and fill in the form, once completed click "Place Order".
+- We will process your order and deploy a server for you, once deployed all your DID's will be imported  and configured ready to connect to your Class 4 infrastructure.
+
+
+## 3CX Documentation
+
+All the documentation for 3CX is available from their website at [https://www.3cx.com/docs/](https://www.3cx.com/docs/) We have listed some of the most important links below for you.
 
 ### Create Users
 
