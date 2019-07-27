@@ -91,4 +91,7 @@ pages:
         - Changelog: changelog.md
 
   - Anycast Loadbalancer:
-    - Anycast Loadbalancer: anycast-loadbalancer.md
+    - Anycast Loadbalancer: anycast-loadbalancer/anycast-loadbalancer.md
+
+  - 3CX:
+    - Guides: 3cx/3cx.md
