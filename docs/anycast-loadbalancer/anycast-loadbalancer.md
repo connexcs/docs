@@ -10,7 +10,8 @@ The ConnexCS Anycast Loadbalancer the next next generation solution for Edge SIP
  - Outbound Proxy
  - Custom Call Distribution Algorithm, (Weights and Priorities)
 
-<!---
+### Capabilities
+The ConnexCS Anycast Loadbalancer is a high performance application designed for maximum throughput using multiple cores, this combined with our global pop's and detailed metrics mean that even if you have requirements that exceed 10K calls per second we have you covered.
 
 ### Far End NAT Traversal
 
@@ -62,8 +63,79 @@ If you have a pool of multiple servers, you may wish to proxy your communication
 
 Having high availability with registrations mean that you will always have an IP address which is matches the hole punched when the UAC registers. Unlike other high availability, anycast is the only way to ensure that standard NAT hole-punching can work with UAC > UAS calls/messages after the failure of the end point that the UAC connects to.
 
---->
+### SIP Packet Validation
 
+Malformed packets can cause all sorts of problems for your internal network such as buffer overflow attacks, its a good idea to stop these at the edge. We have a number of selectable options when enabeling SIP Packet Validation:
+ - Check the integrity of the SDP body (if it exists).
+ - Check the format and integrity of each header body.
+ - Don't check the Max-Forwards header.
+ - Checks the R-URI and whether the domain contains valid characters.
+ - Checks the URI of the 'From' field and whether the domain contains valid characters.
+ - Checks the URI of the 'To' field and whether the domain contains valid characters.
+ - Checks the URI of the 'Contact' field.
+
+If a packet fails validation, you can choose how this is to be handeled, either with a `400` error or an `X-Validate-Fail` header. The fail reasons are as follows
+ - No SIP message
+ - Header Parsing error
+ - No Call-ID header
+ - No Content-Length header for transports that require it ( eg. TCP )
+ - Invalid Content-Length, other from the size of the actual body
+ - SDP body parsing error.
+ - No Cseq header.
+ - No From header.
+ - No To header.
+ - No Via header.
+ - Request URI parse error.
+ - Bad hostname in R-URI.
+ - No Max-Forwards header.
+ - No Contact header.
+ - Path user for non-Register request.
+ - No allow header in 405 reply.
+ - No Min-Expire header in 423 reply.
+ - No Proxy-Authorize header in 407 reply.
+ - No Unsupported header in 420 reply.
+ - No WWW-Authorize header in 401 reply.
+ - No Content-Type header
+ - To header parse error
+ - From header parse error
+ - Bad hostname in To header
+ - Bad hostname in From header
+ - Contact header parse error
+
+
+### Compaction & Compression
+To in an effort to reduce the size of packets (to prevent fragmentation), you can apply compaction and compression. Compression is using an algorithim such as gzip and compressing the message on the data level. Compaction uses well established short notations for longer headers
+
+
+#### Compaction
+
+To use compaction you need to select "Compact Enabled". You can also whitelist a number of fields should you not wish for them to be compacted. Compaction can be enabled for calls in and/or calls out.
+
+The following short headers are available
+
+ - y - Identity
+ - x - Session-Expires
+ - v - Via
+ - u - Allow-Events
+ - t - To
+ - s - Subject
+ - r - Refer-To
+ - o - Event
+ - m - Contact
+ - l - Content-Length
+ - k - Supported
+ - j - Reject-Contact
+ - i - Call-ID
+ - f - From
+ - e - Content-Encoding
+ - d - Request-Disposition
+ - c - Content-Type
+ - b - Referred-By
+ - a - Accept-Contact
+
+#### Compression
+
+Compression or Decompression can be enabled for Inbound and/or Outbound by selecting either "Compress Enabled (Deflate)", "Compress Enabled GZip" or "Decompress Enabled". There are further flags which control how the compression takes place.
 
 <!---
  * Written by Jonathan Hulme
