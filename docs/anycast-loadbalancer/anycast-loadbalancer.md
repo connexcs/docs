@@ -66,6 +66,7 @@ Having high availability with registrations mean that you will always have an IP
 ### SIP Packet Validation
 
 Malformed packets can cause all sorts of problems for your internal network such as buffer overflow attacks, its a good idea to stop these at the edge. We have a number of selectable options when enabeling SIP Packet Validation:
+
  - Check the integrity of the SDP body (if it exists).
  - Check the format and integrity of each header body.
  - Don't check the Max-Forwards header.
@@ -75,6 +76,7 @@ Malformed packets can cause all sorts of problems for your internal network such
  - Checks the URI of the 'Contact' field.
 
 If a packet fails validation, you can choose how this is to be handeled, either with a `400` error or an `X-Validate-Fail` header. The fail reasons are as follows
+
  - No SIP message
  - Header Parsing error
  - No Call-ID header
