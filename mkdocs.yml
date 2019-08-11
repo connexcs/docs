@@ -47,8 +47,8 @@ pages:
         - Customer Portal: customer-portal.md
         
     - Class 5:
-        - Creating IVR Setup: creating-ivr.md
-        - Creating Conference: creating-conference.md
+        - Creating an IVR Setup: creating-ivr.md
+        - Creating a Conference Call: creating-conference.md
 
     - Developers:
         - Scriptforge: scriptforge.md
