@@ -1,0 +1,39 @@
+# Creating an IVR Setup
+
+You can create an Interactive Voice Response (IVR) setup when you want to let callers call a DID number, press a key on the keypad, and get routed to different SIP addresses, PSTN numbers, internal DIDs, IVRs, conference bridges, groups, and Class 5 applications, based on the key they press.
+
+!!! question "How does the IVR setup route calls?" 
+    When you create an IVR setup, you specify a 1:1 mapping for all the possible keys on the keypad (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, * (asterisk), and # (hash)). When the caller presses a key, the IVR setup analyzes the input provided by the caller, and routes the call to the appropriate destination.
+    
+!!! tip "Before you create an IVR setup" 
+    You must do the following to configure the keypad options for the IVR setup:
+    
+    1. Think of what destinations the keys on the keypad must route to, and create an audio file that greets the customer and explains the keypad options and their destinations. For example, 'press 1 to speak with a sales agent, press 2 to speak with a technical support agent' and so on. 
+    2. Create the audio file in the .pcm or .wav format. 
+    3. Upload this audio file to the ConnexCS Control Panel from the Management > File menu item.
+
+To create an IVR setup:
+
+1.  Log into the ConnexCS Control Panel.
+    
+    ConnexCS Control Panel displays the page you were on when you logged out of the Control Panel.
+    
+2.  Click `Class 5 > IVR` in the navigation panel (located at the left of the page).
+
+    The IVR page appears.
+    
+3.  Click the `+` icon (located at the top-right corner of the page).
+
+  	The IVR pop-up appears.
+    
+4.  Do the following to create an IVR setup:
+
+     *  In the `Name` text box, enter a name for the IVR setup.
+     
+     *  From the `Customer' drop-down list, select the name of a customer who wants to use this IVR setup.
+     
+     *  In the `Destination` text box, enter the DID number that callers must call, to start interacting with the IVR.
+     
+     *  From the Audio File drop-down list, select an audio file that contains the greeting and explains what the options on the keypad do. 
+        The callers hear this interactive audio message when they dial the DID number.
+        
