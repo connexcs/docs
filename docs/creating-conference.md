@@ -48,8 +48,8 @@ To create a conference call:
     * (Optional) If you want all callers, including the moderator of the conference call, to enter a pass code to join the conference call, enter a numeric pass code in the `PIN` text box.
 
     * From the `Quality` drop-down list, select the level of quality (amount of bandwidth) per caller, for this conference call.
-	
-      The options available are: **Narrow Band** (8 KHz), **Wide Band** (16 KHZ), and **Ultra Wide Band** (32 KHz).
+    	
+	The options available are: **Narrow Band** (8 KHz), **Wide Band** (16 KHZ), and **Ultra Wide Band** (32 KHz).
       
     * (Optional) In the `Max Members` text box, enter the maximum number of concurrent callers this conference must allow. 
     
