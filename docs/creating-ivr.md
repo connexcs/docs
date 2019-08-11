@@ -1,6 +1,6 @@
 # Creating an IVR Setup
 
-You can create an Interactive Voice Response (IVR) setup when you want to let callers call a DID number, press a key on the keypad, and get routed to different SIP addresses, PSTN numbers, internal DIDs, IVRs, conference bridges, groups, and Class 5 applications, based on the key they press.
+You can create an Interactive Voice Response (IVR) setup when you want to let callers call an extension number, press a key on the keypad, and get routed to different SIP addresses, PSTN numbers, internal extension numbers, IVRs, conference bridges, groups, and Class 5 applications, based on the key they press.
 
 !!! question "How does the IVR setup route calls?" 
     When you create an IVR setup, you specify a 1:1 mapping for all the possible keys on the keypad (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, * (asterisk), and # (hash)). When the caller presses a key, the IVR setup analyzes the input provided by the caller, and routes the call to the appropriate destination.
@@ -32,10 +32,10 @@ To create an IVR setup:
      
      *  From the `Customer` drop-down list, select the name of a customer who wants to use this IVR setup.
      
-     *  In the `Destination` text box, enter the DID number that callers must call, to start interacting with the IVR.
+     *  In the `Extension` text box, enter the extension number that callers must call, to start interacting with the IVR.
      
      *  From the `Audio File` drop-down list, select an audio file that contains the greeting and explains what the options on the keypad do. 
-        The callers hear this interactive audio message when they dial the DID number.
+        The callers hear this interactive audio message when they dial the extension number.
         
 5.  Next, configure what should happen when the caller presses a key on the numeric keypad (in accordance with the audio file you created for the interactive voice message) that contains numbers 0 to 9, '*' (asterisk) and '#' (hash):
   
@@ -45,16 +45,14 @@ To create an IVR setup:
 	    
         You can route calls to one of the following destinations:
         
-        *   URI - SIP addresses in the sip:<*DID or username*>@<*domain name or IP address*> format;
+        *   **URI** - SIP addresses in the sip:<*extension number or username*>@<*domain name or IP address*> format;
         
-        *   External - PSTN numbers that are outside your Class 5 network;
+        *   **External** - PSTN numbers that are outside your Class 5 network;
 
-        *   Internal - DIDs, IVRs, conference bridges, call queues, and Class 5 applications in your Class 5 network.
+        *   **Internal** - extension numbers, IVRs, conference bridges, call queues, and Class 5 applications in your Class 5 network.
 	        
         The following figure illustrates the Destination pop-up.
-	
-	![alt text][ivr-setup-destination-popup]
-            
+	        
         By design, the URI tab appears. 
 	        
         To route the call to a SIP address do the following:
@@ -77,7 +75,7 @@ To create an IVR setup:
 
         *   In the `Internal` text box, enter the PSTN number.
         
-        *   From the `Internal` drop-down list, select one of the following: DID number, conference, group, or a Class 5 application.
+        *   From the `Internal` drop-down list, select one of the following: extension number, conference, group, or a Class 5 application.
         
     *   To save the routing settings for this key, click `Save`.
     
