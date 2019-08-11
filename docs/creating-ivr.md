@@ -92,6 +92,3 @@ To create an IVR setup:
     You can see an entry for the new IVR setup on the IVR page.
     
 8.  Optional) To abort creating the IVR setup, click `X` located at the top-right corner of the pop-up.
-
-            
-[ivr-setup-destination-popup]: /misc/img/ivr-setup-destination-popup.jpg "ivr-setup-destination-popup"
