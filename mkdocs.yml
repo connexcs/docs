@@ -44,10 +44,10 @@ pages:
         - DID/Origination: did.md
         
     - Customer Portal:
-        - Customer Portal: creating-ivr.md
+        - Customer Portal: customer-portal.md
         
     - Class 5:
-        - Creating IVR Setup: customer-portal.md
+        - Creating IVR Setup: creating-ivr.md
 
     - Developers:
         - Scriptforge: scriptforge.md
