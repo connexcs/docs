@@ -52,6 +52,8 @@ To create an IVR setup:
         *   **Internal** - extension numbers, IVRs, conference bridges, call queues, and Class 5 applications in your Class 5 network.
 	        
         The following figure illustrates the Destination pop-up.
+	
+	![alt text][ivr-destionation-popup]
 	        
         By design, the URI tab appears. 
 	        
@@ -92,3 +94,5 @@ To create an IVR setup:
     You can see an entry for the new IVR setup on the IVR page.
     
 8.  Optional) To abort creating the IVR setup, click `X` located at the top-right corner of the pop-up.
+
+[ivr-destionation-popup]: /class5/img/ivr-destionation-popup.png "ivr-destionation-popup"
