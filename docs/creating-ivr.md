@@ -30,7 +30,7 @@ To create an IVR setup:
 
      *  In the `Name` text box, enter a name for the IVR setup.
      
-     *  From the `Customer' drop-down list, select the name of a customer who wants to use this IVR setup.
+     *  From the `Customer` drop-down list, select the name of a customer who wants to use this IVR setup.
      
      *  In the `Destination` text box, enter the DID number that callers must call, to start interacting with the IVR.
      
@@ -59,19 +59,19 @@ To create an IVR setup:
         
         *   In the `Destination DID` text box, enter the DID or the username for the SIP account.
        
-        *   From the 'Destination URL' drop-down list, select the IP address or the domain name of the SIP address.
+        *   From the `Destination URL` drop-down list, select the IP address or the domain name of the SIP address.
         
             You will see that the ConnexCS Control Panel automatically creates a SIP address in the sip:<DID or userame>@<domain name or IP address> format.
             
         To route the call to an external PSTN number:
         
-        *   Click the 'External' tab.
+        *   Click the `External` tab.
 
         *   In the `External` text box, enter the PSTN number.
 	
         To route the call to an internal resource:
 
-        *   Click the 'Internal' tab.
+        *   Click the `Internal` tab.
 
         *   In the `Internal` text box, enter the PSTN number.
         
