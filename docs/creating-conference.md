@@ -1,4 +1,4 @@
-# Conference Call
+# Creating a Conference Call
 
 You create a conference call when you want to allow multiple callers to communicate with each other over a voice call. The callers who join the call are presided over by a caller known as the 'moderator'. 
 
@@ -14,3 +14,14 @@ You create a conference call when you want to allow multiple callers to communic
     |Keypad option|Result|Description|
     |-------|------|------|
     |0|mute|mute your microphone. The other callers cannot hear you.|
+    |1|vol talk down|decrease the volume (sensitivity) of your microphone, by 1 unit.|
+    |2|vol talk zero|reset the volume (sensitivity) of your microphone to the default value.|
+    |3|vol talk up|increase the volume (sensitivity) of your  microphone by 1 unit. The other callers hear you louder.|
+    |4|vol listen up|increase the volume of the speakers by 1 unit. You hear other callers louder.|
+    |5|vol listen zero|reset the volume of the speakers to the default value.|
+    |6|vol listen down|decrease the volume of the speakers by 1 unit.|
+    |7|energy up|increase the minimum energy threshold by 1 unit. If the background noise is above this threshold, the background noise is bridged into the conference and only when you speak.|
+    |8|energy equal|reset the minimum energy threshold to the default value.|
+    |9|energy down|decrease the minimum energy threshold by 1 unit.|
+    |*|deaf mute|mute your speakers and the microphone, in one action.|
+    |#|hangup|disconnect the call and drop out of the conference.|
