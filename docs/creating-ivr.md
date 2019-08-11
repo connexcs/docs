@@ -52,6 +52,8 @@ To create an IVR setup:
         *   Internal - DIDs, IVRs, conference bridges, call queues, and Class 5 applications in your Class 5 network.
 	        
         The following figure illustrates the Destination pop-up.
+	
+	![alt text][ivr-setup-destination-popup]
             
         By design, the URI tab appears. 
 	        
@@ -94,4 +96,4 @@ To create an IVR setup:
 8.  Optional) To abort creating the IVR setup, click `X` located at the top-right corner of the pop-up.
 
             
-            
+[ivr-setup-destination-popup]: /misc/img/ivr-setup-destination-popup.jpg "ivr-setup-destination-popup"
