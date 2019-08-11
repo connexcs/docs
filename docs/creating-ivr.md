@@ -59,25 +59,23 @@ To create an IVR setup:
 	        
        To route the call to a SIP address do the following:
         
-       *   In the `Destination DID` text box, enter the extension number or the username for the SIP account.
+       a.	In the `Destination DID` text box, enter the extension number or the username for the SIP account.
        
-       *   From the `Destination URL` drop-down list, select the IP address or the domain name of the SIP address.
+       b.	From the `Destination URL` drop-down list, select the IP address or the domain name of the SIP address.
         
             You will see that the ConnexCS Control Panel automatically creates a SIP address in the sip:<extension number or userame>@<domain name or IP address> format.
             
        To route the call to an external PSTN number:
         
-       *   Click the `External` tab.
+       a.	Click the `External` tab.
 
-       *   In the `External` text box, enter the PSTN number.
+       b.	In the `External` text box, enter the PSTN number.
 	
        To route the call to an internal resource:
 
-       *   Click the `Internal` tab.
-
-       *   In the `Internal` text box, enter the PSTN number.
+       a.	Click the `Internal` tab.
         
-       *   From the `Internal` drop-down list, select one of the following: extension number, conference, group, or a Class 5 application.
+       b.	From the `Internal` drop-down list, select one of the following: extension number, conference, group, or a Class 5 application.
         
     *   To save the routing settings for this key, click `Save`.
     
