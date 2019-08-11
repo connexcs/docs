@@ -53,7 +53,7 @@ To create a conference call:
       
     * (Optional) In the `Max Members` text box, enter the maximum number of concurrent callers this conference must allow. 
     
-      By design, the Max Members text box displays '0'. This means an unlimited number of callers can join the conference. 
+    	By design, the Max Members text box displays '0'. This means an unlimited number of callers can join the conference. 
       
     !!! question "What happens if more callers want to join the conference call?"
     	If the maximum number of callers are actively connected to a conference call and there are additional callers waiting to join the conference, the callers who are waiting can join the call when the active callers exit the call.
