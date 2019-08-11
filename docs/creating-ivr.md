@@ -82,6 +82,10 @@ To create an IVR setup:
 
     *   (Optional) To clear the routing settings, click `Reset` and enter new values.
     
+    + `*`, `-` or '+'
+    - 4 spaces or 1 tab
+    - to indent
+    
 6.  Repeat step 5 for all keys that callers can use (in accordance with the audio file you created for the interactive voice message), to reach the different destinations through the IVR setup.
 
 7.  Click `Save`.
