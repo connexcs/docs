@@ -12,4 +12,5 @@ You create a conference call when you want to allow multiple callers to communic
     Use the following keypad options for the conference calls you create on the ConnexCS Control Panel.
     
     |Keypad option|Result|Description|
+    |-------|------|------|
     |0|mute|mute your microphone. The other callers cannot hear you.|
