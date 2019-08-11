@@ -45,7 +45,7 @@ To create an IVR setup:
 	    
         You can route calls to one of the following destinations:
         
-        *   URI - SIP addresses in the sip:<DID>@<domain name or IP address> format;
+        *   URI - SIP addresses in the sip:<*DID or username*>@<*domain name or IP address*> format;
         
         *   External - PSTN numbers that are outside your Class 5 network;
 
