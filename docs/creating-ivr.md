@@ -62,8 +62,8 @@ To create an IVR setup:
        a.	In the `Destination DID` text box, enter the extension number or the username for the SIP account.
        
        b.	From the `Destination URL` drop-down list, select the IP address or the domain name of the SIP address.
-        
-            You will see that the ConnexCS Control Panel automatically creates a SIP address in the sip:<extension number or userame>@<domain name or IP address> format.
+       
+       You will see that the ConnexCS Control Panel automatically creates a SIP address in the sip:<extension number or userame>@<domain name or IP address> format.
             
        To route the call to an external PSTN number:
         
