@@ -55,11 +55,11 @@ To create a conference call:
 	
       By design, the Max Members text box displays '0'. This means an unlimited number of callers can join the conference.
       
-      !!! tip "What password should I use?" 
-          You must enter a password that adheres to the password rules displayed in the Change Password pop-up. ConnexCS Control Panel does not accept a password, if the password does not adhere to the password rules.
+      !!! tip "What password should I use?"
+      	You must enter a password that adheres to the password rules displayed in the Change Password pop-up. ConnexCS Control Panel does not accept a password, if the password does not adhere to the password rules.
 	    
-      !!! question "What happens if more callers want to join the conference call?" 
-      	  If the maximum number of callers are actively connected to a conference call and there are additional callers waiting to join the conference, the callers who are waiting can join the call when the active callers exit the call.
+      !!! question "What happens if more callers want to join the conference call?"
+      	 	  If the maximum number of callers are actively connected to a conference call and there are additional callers waiting to join the conference, the callers who are waiting can join the call when the active callers exit the call.
 	  	
       The following image illustrates the Conference pop-up with some sample values.
       
