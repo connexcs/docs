@@ -52,7 +52,7 @@ To create a conference call:
       The options available are: **Narrow Band** (8 KHz), **Wide Band** (16 KHZ), and **Ultra Wide Band** (32 KHz).
       
     * (Optional) In the `Max Members` text box, enter the maximum number of concurrent callers this conference must allow.
-	
+      
       By design, the Max Members text box displays '0'. This means an unlimited number of callers can join the conference.
       
       !!! tip "What password should I use?"
@@ -63,10 +63,14 @@ To create a conference call:
 	  	
       The following image illustrates the Conference pop-up with some sample values.
       
+      ![alt text][conference-popup]
+      
      * Click `Save`.
 	
        ConnexCS Control Panel confirms that it has created a new conference.
 	    
        You can see an entry for the new conference on the Conference page.
        
-5.	(Optional) To abort creating the new conference, click `X` located at the top-right corner of the pop-up.
+5.    (Optional) To abort creating the new conference, click `X` located at the top-right corner of the pop-up.
+
+[conference-popup]: /misc/img/conference-popup.png "conference-popup"
