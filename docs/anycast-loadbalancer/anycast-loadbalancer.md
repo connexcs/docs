@@ -1,6 +1,6 @@
 # Getting Started
 
-The ConnexCS Anycast Loadbalancer the next next generation solution for Edge SIP.
+The ConnexCS Anycast Loadbalancer is the next generation solution for Edge SIP.
 
 ## Technical Specification
 
@@ -11,107 +11,108 @@ The ConnexCS Anycast Loadbalancer the next next generation solution for Edge SIP
  - Custom Call Distribution Algorithm, (Weights and Priorities)
 
 ### Capabilities
-The ConnexCS Anycast Loadbalancer is a high performance application designed for maximum throughput using multiple cores, this combined with our global pop's and detailed metrics mean that even if you have requirements that exceed 10K calls per second we have you covered.
+The ConnexCS Anycast Loadbalancer is a high performance application designed for maximum throughput using multiple cores. Combined with our global PoPs and detailed metrics, we have you covered even if you have requirements that exceed 10K calls per second.
 
 ### Far End NAT Traversal
 
-NAT (Network Address Translation) is a a technique which intermediates communication between a LAN (Local Area Network) and a WAN (Wide Area Network aka. Internet).
+NAT (Network Address Translation) is a technique which intermediates communication between a LAN (Local Area Network) and a WAN (Wide Area Network aka. Internet).
 
-When a packet traverses a NAT, the UDP packet headers are correctly re-written by your NAT device. However the headers in the SIP packet are often not rewritten. There are 3+ ways in which this can be done.
+When a packet traverses a NAT, the UDP packet headers are correctly re-written by your NAT device. However the headers in the SIP packet are often not rewritten. There are 3 and more ways in which this can be done.
 
-1. Hardcode the external IP Address.
-2. STUN to find the external IP address.
+1. Hardcode the external IP Address
+2. STUN to find the external IP address
 3. SIP ALG
 4. Far End NAT Traversal
 
 We can use any of the following indicators to detect if NAT is present in the UAC.
 
- - Contact header field is searched for occurrence of RFC1918 / RFC6598 addresses.
- - The "received" test is used: address in Via is compared against source IP address of signaling
- - Top Most VIA is searched for occurrence of RFC1918 / RFC6598 addresses
- - SDP is searched for occurrence of RFC1918 / RFC6598 addresses
- - Test if the source port is different from the port in Via
- - Address in Contact is compared against source IP address of signaling
- - Port in Contact is compared against source port of signaling
+ - Search the Contact header field for the occurrences of RFC1918 / RFC6598 addresses
+ - Use the "received" test: "address in Via" is compared against the source IP address used for signaling
+ - Search the top most VIA for the occurrences of RFC1918 / RFC6598 addresses
+ - Search the SDP for the occurrences of RFC1918 / RFC6598 addresses
+ - Test if the source port is different from the "port in Via"
+ - Comapre the "address in Contact" against the source IP address used for signaling
+ - Comapre the "Port in Contact" against the source port used for signaling
 
 ### Metrics
 
-At present we have 2 graphs available in our system
-1. CPS - Calls Per Second.
-2. CPS Breach.
+You can use the following graphs to view the metrics:
 
-The Loadbalancer will have a CPS limit set. You can view both CPS and totals on the amounts of calls which have failed because the CPS was breached.
+1. CPS - Calls Per Second
+2. CPS Breach
+
+The Loadbalancer's CPS limit must be set. You can view both the CPS and the totals on the amounts of calls which have failed because the CPS was breached.
 
 ### Inbound Proxy / Dispatcher / Load Balancer
 
-The primary use case is for the Anycast Loadbalancer to diseminate calls to a pool of SIP Servers. These can be configures by the following call strategies:
+The primary use case for the Anycast Loadbalancer is to diseminate calls to a pool of SIP Servers. These can be configured by the following call strategies:
 
  - Hash over callid
- - Hash over from uri.
- - Hash over to uri.
- - Hash over request-uri.
- - Weighted round-robin (next destination). the destination's weight determines how many times it is chosen before going to the next one
- - Hash over authorization-username (Proxy-Authorization or "normal" authorization). If no username is found, weighted round-robin is used.
- - Random (using rand()).
- - The first entry in set is chosen.
+ - Hash over from uri
+ - Hash over to uri
+ - Hash over request-uri
+ - Weighted round-robin (next destination) - the destination's weight determines how many times it is chosen before going to the next one
+ - Hash over authorization-username (Proxy-Authorization or "normal" authorization) - If a username is not found, weighted round-robin is used.
+ - Random (using rand())
+ - The first entry in set is chosen
 
 ### Outbound Proxy
 
-If you have a pool of multiple servers, you may wish to proxy your communications via the Anycast Load Balancer. This means that you will have a single IP address responsible for communicating with externally.
+If you have a pool of multiple servers, you can proxy your communications via the Anycast Load Balancer. This means that you will have a single IP address to communicate externally.
 
 ### Registration Proxy
 
-Having high availability with registrations mean that you will always have an IP address which is matches the hole punched when the UAC registers. Unlike other high availability, anycast is the only way to ensure that standard NAT hole-punching can work with UAC > UAS calls/messages after the failure of the end point that the UAC connects to.
+Having high availability with registrations ensures that you will always have an IP address which matches the hole punched, when the UAC registers. Unlike other high availability setups, Anycast is the only way to ensure that standard NAT hole-punching can work with UAC > UAS calls/messages after the end point that the UAC connects to, fails.
 
 ### SIP Packet Validation
 
-Malformed packets can cause all sorts of problems for your internal network such as buffer overflow attacks, its a good idea to stop these at the edge. We have a number of selectable options when enabeling SIP Packet Validation:
+Malformed packets can cause all sorts of problems for your internal network, such as, buffer overflow attacks. These problems can be  stopped at the edge by selecting specific options when enabling SIP Packet Validation:
 
- - Check the integrity of the SDP body (if it exists).
- - Check the format and integrity of each header body.
- - Don't check the Max-Forwards header.
- - Checks the R-URI and whether the domain contains valid characters.
- - Checks the URI of the 'From' field and whether the domain contains valid characters.
- - Checks the URI of the 'To' field and whether the domain contains valid characters.
- - Checks the URI of the 'Contact' field.
+ - Check the integrity of the SDP body (if it exists)
+ - Check the format and the integrity of each header body
+ - Don't check the "Max-Forwards" header
+ - Checks the "R-URI" and whether the domain contains valid characters
+ - Checks the URI of the "From" field and whether the domain contains valid characters
+ - Checks the URI of the "To" field and whether the domain contains valid characters
+ - Checks the URI of the "Contact" field
 
-If a packet fails validation, you can choose how this is to be handeled, either with a `400` error or an `X-Validate-Fail` header. The fail reasons are as follows
+If a packet fails to validate, you can choose how this must be handeled. You can handle this with a "400" error or with an "X-Validate-Fail" header. The reasons why a packet fails to validate are:
 
  - No SIP message
  - Header Parsing error
- - No Call-ID header
- - No Content-Length header for transports that require it ( eg. TCP )
- - Invalid Content-Length, other from the size of the actual body
- - SDP body parsing error.
- - No Cseq header.
- - No From header.
- - No To header.
- - No Via header.
- - Request URI parse error.
- - Bad hostname in R-URI.
- - No Max-Forwards header.
- - No Contact header.
- - Path user for non-Register request.
- - No allow header in 405 reply.
- - No Min-Expire header in 423 reply.
- - No Proxy-Authorize header in 407 reply.
- - No Unsupported header in 420 reply.
- - No WWW-Authorize header in 401 reply.
- - No Content-Type header
- - To header parse error
- - From header parse error
- - Bad hostname in To header
- - Bad hostname in From header
- - Contact header parse error
+ - No "Call-ID" header
+ - No "Content-Length" header for transports that require it (for example, TCP )
+ - Invalid Content-Length, different from the size of the actual body
+ - SDP body parsing error
+ - No "Cseq" header
+ - No "From" header
+ - No "To" header
+ - No "Via" header
+ - Request URI parse error
+ - Bad hostname in "R-URI"
+ - No "Max-Forwards" header
+ - No "Contact" header
+ - Path user for non-Register request
+ - No "Allow" header in the 405 reply
+ - No "Min-Expire" header in the 423 reply
+ - No "Proxy-Authorize" header in the 407 reply
+ - No "Unsupported" header in the 420 reply
+ - No "WWW-Authorize" header in 401 reply
+ - No "Content-Type" header
+ - "To" header parse error
+ - "From" header parse error
+ - Bad hostname in the "To" header
+ - Bad hostname in "From" header
+ - "Contact" header parse error
 
 
 ### Compaction & Compression
-To in an effort to reduce the size of packets (to prevent fragmentation), you can apply compaction and compression. Compression is using an algorithim such as gzip and compressing the message on the data level. Compaction uses well established short notations for longer headers
+To reduce the size of packets (to prevent fragmentation), you can apply compaction and compression. Compression uses an algorithim such as "gzip" and compressing the message at the level of the data. Compaction uses well-established short notations for longer headers.
 
 
 #### Compaction
 
-To use compaction you need to select "Compact Enabled". You can also whitelist a number of fields should you not wish for them to be compacted. Compaction can be enabled for calls in and/or calls out.
+To use compaction you need to select "Compact Enabled". You can also whitelist a number of fields if you do not want them to be compacted. Compaction can be enabled for calls in and/or calls out.
 
 The following short headers are available
 
@@ -137,7 +138,7 @@ The following short headers are available
 
 #### Compression
 
-Compression or Decompression can be enabled for Inbound and/or Outbound by selecting either "Compress Enabled (Deflate)", "Compress Enabled GZip" or "Decompress Enabled". There are further flags which control how the compression takes place.
+Compression or Decompression can be enabled for Inbound and/or Outbound by selecting either "Compress Enabled (Deflate)", "Compress Enabled GZip" or "Decompress Enabled". There are additional flags to control how data must be compressed.
 
 <!---
  * Written by Jonathan Hulme
