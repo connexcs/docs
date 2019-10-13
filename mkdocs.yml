@@ -94,8 +94,8 @@ pages:
         - Scaling and Load Balancing: scaling-load-balancing.md
         - Changelog: changelog.md
 
-  - Anycast Loadbalancer:
-    - Anycast Loadbalancer: anycast-loadbalancer/anycast-loadbalancer.md
+  - AnyEdge:
+    - AnyEdge: anyedge/anyedge.md
 
   - 3CX:
     - Guides: 3cx/3cx.md
