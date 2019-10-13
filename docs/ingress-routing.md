@@ -41,6 +41,7 @@ A VoIP call is stateful, even though its protocol is stateless. This means that 
 
 * **Maximum Duration**: If a BYE gets missed, Maximum Duration is the maximum amount of time that the call will be allowed to exist before being terminated.
 * **Time-out Methods**
+
     * **SIP Ping:** This sends a SIP packet to the remote end of the conversation roughly every 30 seconds. This checks to see if the other side is still aware of an ongoing conversation. If this is not received back, or is told that the conversation is not active then it shuts off the call. 
 Note: Asterisk does not have SIP Ping (OPTIONS) enabled as default, if your customer / carrier is using Asterisk you may need to disable this if they don't have it enabled on their side as calls will typically disconnect after 30 seconds. 
     * **RTP Time-out:** Another way to check for an active call is to detect if there is audio passing. If there is no audio passing for a pre-set interval, our RTP array will notify the switch and instruct it to terminate the call.  This won't work if RTP Mode is set to direct.
@@ -82,17 +83,20 @@ While it's doubtful that any information will be logged in the customer/provider
 Use an RTP Proxy if you don't want your customers to know your providers.
 
 You should **not** use an RTP Proxy if:
+
 * You have other equipment in your SIP set-up which will act as a Media Relay.
 * You want to run a test to see if audio problems are related to the Connex Cloud Switch.
 
 **RTP Options**
 
 Choose which RTP Proxy you want engaged:  
+
 * Selecting **Auto** will use the least expensive path between your customer and provider.  You can list various countries, though it is recommended you choose a location near a provider or your customer. 
 * Choosing **Disable** will disable RTP Proxy Engagement.
 * **Strategy** lets you pass the calls based on the routing strategy you set.
 
 There are two RTP proxy modes:
+
 * **Strict**-This will enforce the proxy engagement. If the proxy can't engage with the call, the call will not be established. Note: Free accounts are limited to how many RTP Proxy channels are enabled, this may prevent calls connecting if you have more channels than our free accounts allow you to have.
 * **Relaxed**-This will perform best efforts to engage the RTP Proxy, if it can't be engaged because of either network errors, or because you don't have enough RTP capacity, the calls will connect directly.
 
@@ -124,12 +128,14 @@ Passive SST is enabled by default, and all RE-INVITES will propagate through the
 ASR+ is a proprietary technology developed by ConnexCS to filter known failed non-existant / working numbers between the customer and the carrier for termination.
 
 **Advantages of ASR**
+
 * Quick failure of known bad numbers.
 * Reduces response time for your customers.
 * Improves the ASR of the traffic that your upstream carrier sees.
 * Highly effective for call centre traffic.
 
 **Disadvantages of ASR**
+
 * Marginal impact on your NER due to false positive matches. This is usually kept within tolerances of < 0.1%.
 * Does not offer improvements for all destinations.
 
