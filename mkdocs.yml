@@ -43,9 +43,6 @@ pages:
     - DID:
         - DID/Origination: did.md
         
-    - Customer Portal:
-        - Customer Portal: customer-portal.md
-        
     - Class 5:
         - Creating an IVR Setup: creating-ivr.md
         - Creating a Conference Call: creating-conference.md
@@ -99,3 +96,6 @@ pages:
 
   - 3CX:
     - Guides: 3cx/3cx.md
+
+  - Customer Portal:
+    - Guides: customer-portal/customer-portal.md
