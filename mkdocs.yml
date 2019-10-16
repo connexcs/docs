@@ -99,3 +99,15 @@ pages:
 
   - Customer Portal:
     - Guides: customer-portal/customer-portal.md
+    - Dashboard: customer-portal/dashboard.md
+    - CDR: customer-portal/cdr.md
+    - Breakout: customer-portal/breakout.md
+    - Authentication: customer-portal/authentication.md
+    - DID: customer-portal/did.md
+    - CLI: customer-portal/cli.md
+    - Latest Calls: customer-portal/latest-calls.md
+    - Failover: customer-portal/failover.md
+    - Setup: customer-portal/setup.md
+    - Payment: customer-portal/payment.md
+    - Routes: customer-portal/routes.md
+    - Interconnect: customer-portal/interconnect.md
