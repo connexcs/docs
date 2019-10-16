@@ -2,8 +2,10 @@
 
 The Customer Portal grants access to information about customer accounts in a fixed domain, where you can control the flow of data they receive. It can be white-labeled to brand names, and it allows for customized domains.
 
-## Adding a New Domain 
+## Adding a New Domain
+
 To add a new to domain to your Customer Portal:
+
 1. Sign in to your domain account at its host.
 2. Locate the page for updating your domain's DNS records, i.e. DNS Management or Advanced Server Management.
 3. Locate the **CNAME** records for your domain.
