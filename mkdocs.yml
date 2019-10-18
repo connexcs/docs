@@ -43,14 +43,6 @@ pages:
     - DID:
         - DID/Origination: did.md
         
-    - Class 5:
-        - Creating an IVR Setup: creating-ivr.md
-        - Creating a Conference Call: creating-conference.md
-
-    - Developers:
-        - Scriptforge: scriptforge.md
-        - User Space Database: user-space-db.md 
-
     - Micsellanenous:
         - Authentication: authentication.md
         - Connex Billing: billing.md
@@ -69,16 +61,22 @@ pages:
         - Reporting Problems: reporting-problems.md
         - Specification: spec.md
         - System Status: system-status.md
-        - Templates: templates.md
         - Changing Language: changing-language.md
         - Adding non-English Equivalents: adding-non-english-equivalents.md
         - Changing Password: changing-password.md
         - Logging Out: logging-out.md
-        
-    - Reports:
+        te
         - Breakout Reports: report.md
         - Viewing Audit Logs: viewing-audit-logs.md
+
+    - Class 5:
+        - Creating an IVR Setup: creating-ivr.md
+        - Creating a Conference Call: creating-conference.md
        
+    - Developers:
+        - Scriptforge: scriptforge.md
+        - User Space Database: user-space-db.md 
+
     - Setup:
         - AnyEdge: anyedge/anyedge.md
         - My Account: my-account.md
