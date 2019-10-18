@@ -25,12 +25,29 @@ pages:
     - Getting Started: getting-started.md
 
     - Customer:
-        - Customer: customer.md
-        - Credit Control: credit-control.md
-        - CLI: cli.md
-        - Ingress Routing: ingress-routing.md
-        - Routing Strategy: routing-strategy.md
-            
+        - Main: customer/main.md
+        - Auth: customer/auth.md
+        - Routing: customer/routing.md
+        - CLI: customer/cli.md
+        - Customer: customer/customer.md
+        - Payment: customer/payment.md
+        - Stats: customer/stats.md
+        - Route Stats: customer/route-stats.md 
+        - Latest-Calls: customer/latest-calls.md
+        - Dialogs: customer/dialogs.md
+        - Alert: customer/alerts.md
+        - Did: customer/did.md
+        - Cdr: customer/cdr.md
+        - Package: customer/package.md
+        - Invoice: customer/invoice.md
+        - Contract: customer/contract.md
+        - Document: customer/document.md
+        - 3CX: customer/3cx.md
+        - Class5: customer/class5.md
+
+        - Credit Control: customer/credit-control.md
+        - Routing Strategy: customer/routing-strategy.md
+
     - Carrier: 
         - Carrier: carrier.md
         
