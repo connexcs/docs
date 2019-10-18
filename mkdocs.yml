@@ -80,6 +80,33 @@ pages:
         - Viewing Audit Logs: viewing-audit-logs.md
        
     - Setup:
+        - AnyEdge: anyedge/anyedge.md
+        - Settings:
+            - Account: setup/settings/account.md
+            - Payments: setup/settings/payments.md
+            - Servers: setup/settings/servers.md
+            - DNS: setup/settings/dns.md
+            - User: setup/settings/user.md
+            - Options: setup/settings/options.md
+            - Data Retention: setup/settings/data-retention.md
+        - Config:
+            - Contracts: setup/config/contracts.md
+            - Packages: setup/config/packages.md
+            - Templates: setup/config/templates.md
+            - Analytics: setup/config/analytics.md
+        - Advanced:
+            - User Space Database: setup/advanced/user-space-database.md
+            - Language: setup/language/language.md
+            - Firewall: setup/firewall/firewall.md
+            - Prefix Set: setup/prefix-set/prefix-set.md
+        - Integrations:
+            - API: setup/integrations/api.md
+            - Domains: setup/integrations/domains.md
+        - Information:
+            - Statements: setup/information/statements.md
+            - Dial Code / Destination: setup/information/dial-code-destination.md
+            - Audit Log: setup/information/audit-log.md
+            - Recording: setup/information/recording.md
         - My Account: my-account.md
         - Paypal: customer-payments.md
 
