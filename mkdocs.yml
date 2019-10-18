@@ -81,6 +81,8 @@ pages:
        
     - Setup:
         - AnyEdge: anyedge/anyedge.md
+        - My Account: my-account.md
+        - Paypal: customer-payments.md
         - Settings:
             - Account: setup/settings/account.md
             - Payments: setup/settings/payments.md
@@ -107,8 +109,6 @@ pages:
             - Dial Code / Destination: setup/information/dial-code-destination.md
             - Audit Log: setup/information/audit-log.md
             - Recording: setup/information/recording.md
-        - My Account: my-account.md
-        - Paypal: customer-payments.md
 
     - Architecture:
         - API: api.md
