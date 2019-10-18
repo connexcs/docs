@@ -189,22 +189,6 @@ In this tab, you can make a list of all the **payments** that have been made so 
 
 ![alt text][payments-tab]
 
-### Alerts
-The **Alerts** tab allows you to generate alerts to your customers when specific events are triggered. You can view all your alerts by clicking on this tab.
-
-To add a customised alert from the Alerts screen:
-1. Click the **`+`** button.
-
-![alt text][carrier-alert-1]
-
-2. Give the alert a name such as: Low Balance Alert.
-3. Select the email address or phone number to receive the alert.
-4. Area is the place that is being monitored, i.e. Balance. 
-5. The Operator is the comparitor to which the threshold is compared. For example, if the Operator is set to >$50, and the Threshold is set to $50, an Alert will be triggered and sent to the recipient.
-6. Click **`Save`**.
-
-![alt text][carrier-alert-2]
-
 ### DID
 
 You can assign **DID** in an account by following these steps:
@@ -283,8 +267,6 @@ The **Invoices** tab displays a record of invoices sent to the account. Clicking
 [simulate-call]: /customer/img/52.png "Simulate Call"
 [payments-tab]: /customer/img/53.png "Payments Tab" 
 
-[carrier-alert-1]: /customer/img/54.png "Carrier Alert-1"
-[carrier-alert-2]: /customer/img/55.png "Carrier Alert-2"
 [recalc]: /customer/img/56.png "Recalc"
 [edit-did]: /customer/img/57.png "Edit-DID"
 [customer-package]: /customer/img/58.png "Customer-Package"
@@ -292,5 +274,3 @@ The **Invoices** tab displays a record of invoices sent to the account. Clicking
 [customer]: /customer/img/60.png "customer"
 [contacts]: /customer/img/61.png "contacts"
 [contacts-2]: /customer/img/62.png "contacts-2"
-
-[alert]: /customer/img/alert.png "Alerts"
