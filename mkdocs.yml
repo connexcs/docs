@@ -54,7 +54,6 @@ pages:
         - Invoice: invoice.md
         - Logging: logging.md
         - My Servers: my-servers.md
-        - Packages: packages.md
         - Routing: routing.md
         - Routing USA: routing-usa.md
         - Routing Engine: routing-engine.md
@@ -62,7 +61,6 @@ pages:
         - Specification: spec.md
         - System Status: system-status.md
         - Changing Language: changing-language.md
-        - Adding non-English Equivalents: adding-non-english-equivalents.md
         - Changing Password: changing-password.md
         - Logging Out: logging-out.md
 
