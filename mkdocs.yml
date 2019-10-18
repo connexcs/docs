@@ -65,7 +65,8 @@ pages:
         - Adding non-English Equivalents: adding-non-english-equivalents.md
         - Changing Password: changing-password.md
         - Logging Out: logging-out.md
-        te
+
+    - Reports:
         - Breakout Reports: report.md
         - Viewing Audit Logs: viewing-audit-logs.md
 
