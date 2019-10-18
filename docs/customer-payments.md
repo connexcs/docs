@@ -12,6 +12,7 @@ Instant Payment Notification (IPN) is a service that provides notifications abou
 The following lists the differences between Mass Pay and Express Checkout with PayPal, to help you decide which to use before you run the setup processes below:
 
 **Mass Pay**
+
 - A CSV is uploaded to PayPal's website.
 - Slightly lower transaction fees.
 - Fees are paid by the sender.
@@ -19,6 +20,7 @@ The following lists the differences between Mass Pay and Express Checkout with P
 - Uses Paypal IPN.
 
 **Express Checkout**
+
 - Made through customer portal.
 - Standard Paypal fees (about 3.4% + $0.30).
 - Fees are paid by the recipient.
@@ -48,6 +50,7 @@ After you've followed the configuration steps, you should have the IPN URL copie
 
 ### Inserting credentials in your Connex Account
 The following are instructions for entering the credentials you created in the previous steps back into your Connex account:
+
 * Return to Connex and go to **Setup**>**My Account**. 
 * Under the API tab, select **Add New** A form will open.
 * Go back to your Paypal account and go to Profile. 
@@ -61,6 +64,7 @@ The following are instructions for entering the credentials you created in the p
 
 ### How to add customer PayPal Email address on ConnexCS customer account
 The following are instructions on how to add a PayPal Email address to a ConnexCS customer account:
+
 * Click **Management** > **Customer** >**[customer name]**> **Edit customer**.
 * Enter the customer's main PayPal email address and click **`Save`**.
 * Click on **Management** > **Customer** > **[customer name]**> **Contact**.  
@@ -114,11 +118,12 @@ API Username, API Password , and Signature.
 18.	Click **`Save`**.
 
 ## Setting the Customer Paypal Email Address into ConnexCS
-To add a customer PayPal email address: 
-1.	Click **Management** > **Customer** > **[customer name]** > **Edit customer**.
-2.	Enter the customer's main PayPal email address and click **`Save`**.
-3.	Click **Management** > **Customer** > **[customer name]** > **Contact**, and then enter the customer PayPal email ID.
-1. Click **`Save`**.
+To add a customer PayPal email address:
+
+1. Click **Management** > **Customer** > **[customer name]** > **Edit customer**.
+2. Enter the customer's main PayPal email address and click **`Save`**.
+3. Click **Management** > **Customer** > **[customer name]** > **Contact**, and then enter the customer PayPal email ID.
+4. Click **`Save`**.
 
 [paypal-2]: /setup/img/84.png "Paypal-2"
 [paypal-3]: /setup/img/paypal-3.png "Paypal-3"

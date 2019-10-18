@@ -27,6 +27,7 @@ Inter/Intra state routing depends on the CLI (or ANI) presented in the call. Con
 [LRN (Location Routing Number)](https://en.wikipedia.org/wiki/Location_Routing_Number) / [LNP (Local Number Portability)](https://en.wikipedia.org/wiki/Local_number_portability) is a method to port USA numbers between providers, where the receiving provider can assign additional charges.  This means **a number that resolves to an LRN can be charged differently that what is listed in the NPA-NXX Rate card.**
 
 The process is as follows:
+
 1. Customer A with CLI (A) places a call to customer B with number (B).
 2. ConnexCS establishes if the customer or carrier card is an LRN card. If so, an "LRN DIP" is performed and (C ) is returned. If the number is ported (C ) will be different than (B).
 3. The call is passed to the upstream provider in the same format.

@@ -15,6 +15,7 @@ The **My Server** menu is where providers manage servers. It is accessed from th
 
 ## Server Actions Menu
 The following actions are available in the **Server Actions** menu:
+
 * **Install Server**: installs the latest script to your server.
 *  **Start Server**: Activates the server.
 *  **Stop Server**: Deactivates the server

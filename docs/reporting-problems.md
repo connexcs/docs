@@ -16,8 +16,6 @@ Below is a list of channels you can use to reach us.
 
 Online chat is real-time assistance that is useful when you're not in a position to call.  The blue help icon at the bottom of this page will lead you to a chat window.  Clicking this button alerts staff, and the first person to become available will reply as soon as possible.  We find that most questions get resolved efficiently this way. Please note that the chat system is for one-on-one communication about a specific problem, not for multiple concerns or system-wide change requests. 
 
-[placeholder-chat button image]
-
 ### Tickets
 
 Support tickets cann be created by clicking the Safety Ring icon in the top-right of the dashboard.

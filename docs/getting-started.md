@@ -52,7 +52,7 @@ To verify a mobile number:
 
 Below are the instructions for basic customer setup.  It will include the mandatory fields you need to complete to create a profile, and authenticate account details like IP addresses and payments.  For more detailed instructions about setting up customers, see [Customer Management].
 
-First, o to Management > Customer:
+First, go to Management > Customer:
 
   ![alt text][customer-dashboard-new]
 
