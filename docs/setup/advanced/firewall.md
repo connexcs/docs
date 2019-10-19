@@ -30,3 +30,7 @@ It is important that calls such as these are visible for 2 reasons.
 information as the packets are dropped prior to them being able to be logged.
 2. If we block too soon we loose the ability to ascertain any attack patterns and profiling information on an attack. Having some data allows us to see progressive attacks spanning multiple IP addresses.
 
+<!--
+	Written by Jonathan Hulme on 2019-10-19
+	Approved by [____________] Pending
+-->
