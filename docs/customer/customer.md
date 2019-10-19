@@ -216,7 +216,7 @@ To recalculate long-duration calls that timed out:
 
 ### Packages
 
-To add tcustomer packages and quantities:
+To add customer packages and quantities:
 
 1.	Click the **`+`** button.
 2.	Fill in the dialogue box with relevant details.  Checking **Auto Decrement** will debit the package amount from the customer account depending on the quantity.

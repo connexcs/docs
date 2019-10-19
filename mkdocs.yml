@@ -112,9 +112,9 @@ pages:
             - Analytics: setup/config/analytics.md
         - Advanced:
             - User Space Database: setup/advanced/user-space-database.md
-            - Language: setup/language/language.md
-            - Firewall: setup/firewall/firewall.md
-            - Prefix Set: setup/prefix-set/prefix-set.md
+            - Language: setup/advanced/language.md
+            - Firewall: setup/advanced/firewall.md
+            - Prefix Set: setup/advanced/prefix-set.md
         - Integrations:
             - API: setup/integrations/api.md
             - Domains: setup/integrations/domains.md
