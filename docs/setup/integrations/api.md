@@ -9,7 +9,7 @@ We currently support the following intdegrations:
 
 ## Paypal Instant Checkout
 
-Allows online checkout via the customer portal using a Paypal Account.
+Allows online checkout via the customer portal using a Paypal Account. [More Info](https://www.paypal.com)
 
 ## Paypal IPN
 
@@ -17,16 +17,16 @@ Often your customers may wish to use a feature inside paypal called MassPay, or 
 
 ## Stripe
 
-Possibly the worlds best credit card processor. [https://www.stripe.com] made available on your customer portal to your customers.
+Possibly the worlds best credit card processor. [Stripe](https://www.stripe.com) made available on your customer portal to your customers.
 
 ## Duo Security
 
 With Duo Security we can provide 2FA (2 Factor Authentication) via an out-of-band push notification to your mobile device when you sign in.
-This can then be approved and also benefit from fingerprint authentication.
+This can then be approved and also benefit from fingerprint authentication. [More Info](https://duo.com/)
 
 ## Moneris
 
-Credit Card Processing, more information can be found here [https://www.moneris.com/] made available on your customer portal to your customers.
+Credit Card Processing, more information can be found here [Moneris](https://www.moneris.com/]) made available on your customer portal to your customers.
 
 ## ScriptForge
 
