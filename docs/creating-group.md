@@ -7,17 +7,19 @@ For example, you can gather a team of Technical Support Specialists who will rec
 !!! question "How does the Group feature route calls?" 
     When you create a Group, you specify how calls must be routed to the members of the group. You can use one of the following routing strategies to route calls:
     
-    1. Sequential - This routing strategy routes a call in a sequential order (by the member's extension number).  By default, a call is routed to the member with the highest value of the extension number (for example, 5021). If the member is busy on another call or does not receive the call for a specific time duration, the call is routed to the member with the second highest value of the extension number (for example, 4097). If the member with second highest extension number does not respond, the call is routed to the extension with the third highest value (for example, 4095). This process continues until a member receives the call. 
+    1. Sequential - This routing strategy routes a call in a sequential order (by the member's extension number).  By default, a call is routed to the member with the highest value of the extension number (for example, 5021). 
+    If the member is busy on another call or does not receive the call for a specific time duration, the call is routed to the member with the second highest value of the extension number (for example, 4097). 
+    If the member with second highest extension number does not respond, the call is routed to the extension with the third highest value (for example, 4095). This process continues until a member receives the call. 
     
     2. Parallel - This routing strategy routes a call to all members of the group, at the same time. The members' extensions ring for the length of time you specify. You can assign unique timeout timers for the members.
     
     3. Queue - This routing strategy places the caller in a call queue before routing the call to the next available member. If you use this routing strategy:
     
-    		You can upload audio files that greet the caller and play music when the caller or the member puts the call on hold.
-		
-		You don't need to specify the members of a group. Individuals who want to join the group must dial a specific extension number from their extensions. When individuals want to quit the group, they must dial another, specific extension number. So, a group that uses a Queue routing strategy does not have a fixed number of members. Calls are not routed to members after they quit the group.
-		
-		The call is routed to a member who has been waiting the longest to receive a call.
+    You can upload audio files that greet the caller and play music when the caller or the member puts the call on hold.
+    
+    You don't need to specify the members of a group. Individuals who want to join the group must dial a specific extension number from their extensions. When individuals want to quit the group, they must dial another, specific extension number. So, a group that uses a Queue routing strategy does not have a fixed number of members. Calls are not routed to members after they quit the group.
+    
+    The call is routed to a member who has been waiting the longest to receive a call.
 
 !!! info "Before you begin" 
     You must do the following to use audio files for the group:
