@@ -13,11 +13,11 @@ For example, you can gather a team of Technical Support Specialists who will rec
     
     3. Queue - This routing strategy places the caller in a call queue before routing the call to the next available member. If you use this routing strategy:
     
-    a.You can upload audio files that greet the caller and play music when the caller or the member puts the call on hold.
+    *	You can upload audio files that greet the caller and play music when the caller or the member puts the call on hold.
     
-    b.You don't need to specify the members of a group. Individuals who want to join the group must dial a specific extension number from their extensions. When individuals want to quit the group, they must dial another, specific extension number. So, a group that uses a Queue routing strategy does not have a fixed number of members. Calls are not routed to members after they quit the group. 
+    *	You don't need to specify the members of a group. Individuals who want to join the group must dial a specific extension number from their extensions. When individuals want to quit the group, they must dial another, specific extension number. So, a group that uses a Queue routing strategy does not have a fixed number of members. Calls are not routed to members after they quit the group. 
     
-    c.The call is routed to a member who has been waiting the longest to receive a call.
+    *	The call is routed to a member who has been waiting the longest to receive a call.
     
 Before you begin
     
