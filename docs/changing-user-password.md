@@ -19,11 +19,11 @@ To change a user's password:
     
 3.  Do the following to change a user's password:
 
-      * Click the Change Password link on the right of the user.
+      * Click the `Change Password` link on the right of the user.
       
       The Change Password pop-up appears.
       
-      * In the New Password text box, enter the new password.
+      * In the `New Password` text box, enter the new password.
       
 !!! tip "Tip" 
     Hover over the New Password text box to see the rules to create a password. The ConnexCS Control Panel does not accept a password that does not adhere to the password rules.
@@ -32,12 +32,12 @@ To change a user's password:
     
    ![alt text][password-rules]
     
-   *    In the Confirm New Password text box, enter the new password again.
+   *    In the `Confirm New Password` text box, enter the new password again.
       
-4.  Click Save.
+4.  Click `Save`.
 
     ConnexCS Control Panel confirms that it has changed the user's password.
     
-5.	(Optional) To abort changing the password, click X located at the top-right corner of the Change Password pop-up.
+5.	(Optional) To abort changing the password, click `X` located at the top-right corner of the Change Password pop-up.
 
 [password-rules]: /setup/img/password-rules.png "password-rules"
