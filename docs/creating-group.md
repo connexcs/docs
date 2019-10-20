@@ -70,8 +70,15 @@ To create a conference call:
     	*	`From the Agent Offhook Destination` drop-down list, select an extension number that an individual must dial, to receive calls immediately after joining the group. 
     
     The following figure illustrates the Groups pop-up with the Queue routing strategy and some sample values.
+    
+    ![alt text][groups-popup]
 
 5.	Click Save.
+	
 	ConnexCS Control Panel confirms that it has created a new group.
+	
 	You can see an entry for the new group on the Groups page.
+	
 6.	(Optional) To abort creating the group, click X located at the top-right corner of the pop-up.
+
+[groups-popup]: /class5/img/groups-popup.png "groups-popup"
