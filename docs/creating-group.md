@@ -13,19 +13,18 @@ For example, you can gather a team of Technical Support Specialists who will rec
     
     3. Queue - This routing strategy places the caller in a call queue before routing the call to the next available member. If you use this routing strategy:
     
-    *	You can upload audio files that greet the caller and play music when the caller or the member puts the call on hold.
+    a You can upload audio files that greet the caller and play music when the caller or the member puts the call on hold.
     
-    *	You don't need to specify the members of a group. Individuals who want to join the group must dial a specific extension number from their extensions. When individuals want to quit the group, they must dial another, specific extension number. So, a group that uses a Queue routing strategy does not have a fixed number of members. Calls are not routed to members after they quit the group. 
+    b You don't need to specify the members of a group. Individuals who want to join the group must dial a specific extension number from their extensions. When individuals want to quit the group, they must dial another, specific extension number. So, a group that uses a Queue routing strategy does not have a fixed number of members. Calls are not routed to members after they quit the group. 
     
-    *	The call is routed to a member who has been waiting the longest to receive a call.
-    
-Before you begin
-    
-You must do the following to use audio files for the group:
+    c The call is routed to a member who has been waiting the longest to receive a call.
 
-1.  Download or create the audio files to greet the caller, chime tunes, and the music that must be played while on hold, in the .pcm or .wav format. 
-
-2.  Upload the audio files to the ConnexCS Control Panel from the Management > File menu item.
+!!! info "Before you begin" 
+    You must do the following to use audio files for the group:
+    
+    1.	Download or create the audio files to greet the caller, chime tunes, and the music that must be played while on hold, in the .pcm or .wav format.
+    
+    2.	Upload the audio files to the ConnexCS Control Panel from the `Management > File` menu item
 
 To create a conference call:
 
@@ -43,11 +42,11 @@ To create a conference call:
 
 4.  Do the following to create a group:
 
-    * In the Name text box, enter a name for the group.
+    * In the `Name` text box, enter a name for the group.
     
-    * From the Customer drop-down list, select the name of a customer who wants to use this group.
+    * From the `Customer` drop-down list, select the name of a customer who wants to use this group.
 
-    * From the Extension drop-down list, select the extension number that callers must call, to connect to the group.
+    * From the `Extension` drop-down list, select the extension number that callers must call, to connect to the group.
 
-    * From the Group Type drop-down list, select how the calls must be routed to the members of the group.
+    * From the `Group` Type drop-down list, select how the calls must be routed to the members of the group.
     
