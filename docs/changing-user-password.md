@@ -32,7 +32,7 @@ To change a user's password:
     
    ![alt text][password-rules]
     
-   *    In the `Confirm New Password` text box, enter the new password again.
+        *   In the `Confirm New Password` text box, enter the new password again.
       
 4.  Click `Save`.
     
