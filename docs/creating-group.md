@@ -51,24 +51,27 @@ To create a conference call:
 
     * From the `Group` Type drop-down list, select how the calls must be routed to the members of the group.
       
-      The options available are: 'Parallel'. 'Sequential', and 'Queue' (as detailed above).
+      The options available are: `Parallel`. `Sequential`, and `Queue` (as detailed above).
     
-    * If you select 'Queue', specify the following:
+    * If you select `Queue`, specify the following:
     
-    	*	From the On Hold Music drop-down list, select an audio file that contains the music that the caller and the member must hear, if either of them put the call on hold.
+    	*	From the `On Hold Music` drop-down list, select an audio file that contains the music that the caller and the member must hear, if either of them put the call on hold.
     
-    	*	From the Join Message drop-down list, select an audio file that contains the welcome message that the caller must hear immediately after the caller calls the extension number of the group.
+    	*	From the `Join Message` drop-down list, select an audio file that contains the welcome message that the caller must hear immediately after the caller calls the extension number of the group.
     
-    	*	From the Chime List drop-down list, select a list of audio files that contains the messages that the caller must hear, if all members of the group are on calls and the caller is waiting to be routed to a member of the group.
+    	*	From the `Chime List` drop-down list, select a list of audio files that contains the messages that the caller must hear, if all members of the group are on calls and the caller is waiting to be routed to a member of the group.
     
-    	*	In the Chime Duration text box, enter the time duration between successive chime messages.
+    	*	In the `Chime Duration` text box, enter the time duration between successive chime messages.
     
-    	*	From the Agent Login Destination drop-down list, select an extension number that an individual must dial, to join the group.
+    	*	From the `Agent Login Destination` drop-down list, select an extension number that an individual must dial, to join the group.
     
-    	*	From the Agent Logout Destination drop-down list, select an extension number that an individual must dial, to quit the group. 
+    	*	`From the Agent Logout Destination` drop-down list, select an extension number that an individual must dial, to quit the group. 
     
-    	*	From the Agent Offhook Destination drop-down list, select an extension number that an individual must dial, to receive calls immediately after joining the group. 
+    	*	`From the Agent Offhook Destination` drop-down list, select an extension number that an individual must dial, to receive calls immediately after joining the group. 
     
     The following figure illustrates the Groups pop-up with the Queue routing strategy and some sample values.
-    
-    
+
+5.	Click Save.
+	ConnexCS Control Panel confirms that it has created a new group.
+	You can see an entry for the new group on the Groups page.
+6.	(Optional) To abort creating the group, click X located at the top-right corner of the pop-up.
