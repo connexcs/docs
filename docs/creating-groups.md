@@ -73,12 +73,12 @@ To create a conference call:
     
     ![alt text][groups-popup]
 
-5.	Click Save.
+5.	Click `Save`.
 	
 	ConnexCS Control Panel confirms that it has created a new group.
 	
 	You can see an entry for the new group on the Groups page.
 	
-6.	(Optional) To abort creating the group, click X located at the top-right corner of the pop-up.
+6.	(Optional) To abort creating the group, click `X` located at the top-right corner of the pop-up.
 
 [groups-popup]: /class5/img/groups-popup.png "groups-popup"
