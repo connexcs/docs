@@ -51,7 +51,7 @@ To create a conference call:
     * From the `Extension` drop-down list, select the extension number that callers must call, to connect to the group.
 
     * From the `Group` Type drop-down list, select how the calls must be routed to the members of the group.
-    
+      
       The options available are: 'Parallel'. 'Sequential', and 'Queue' (as detailed above).
     
     * If you select 'Queue', specify the following:
