@@ -25,7 +25,7 @@ To change a user's password:
       
       * In the New Password text box, enter the new password.
       
-      !!! tip "Tip" 
+!!! tip "Tip" 
     Hover over the New Password text box to see the rules to create a password. The ConnexCS Control Panel does not accept a password that does not adhere to the password rules.
     
     The following image illustrates the password rules. 
@@ -40,4 +40,4 @@ To change a user's password:
     
 5.	(Optional) To abort changing the password, click X located at the top-right corner of the Change Password pop-up.
 
-[password-rules]: /class5/img/ivr-password-rules.png "password-rules"
+[password-rules]: /class5/img/password-rules.png "password-rules"
