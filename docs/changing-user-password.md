@@ -24,15 +24,14 @@ To change a user's password:
       The Change Password pop-up appears.
       
       * In the `New Password` text box, enter the new password.
-      
-!!! tip "Tip" 
-    Hover over the New Password text box to see the rules to create a password. The ConnexCS Control Panel does not accept a password that does not adhere to the password rules.
-    
-   The following image illustrates the password rules. 
-    
-   ![alt text][password-rules]
-    
-        *   In the `Confirm New Password` text box, enter the new password again.
+        
+        Hover over the New Password text box to see the rules to create a password. The ConnexCS Control Panel does not accept a password that does not adhere to the password rules.
+        
+        The following image illustrates the password rules. 
+        
+        ![alt text][password-rules]
+        
+       * In the `Confirm New Password` text box, enter the new password again.
       
 4.  Click `Save`.
     
