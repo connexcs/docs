@@ -52,11 +52,11 @@ To create a conference call:
 
     * From the `Group` Type drop-down list, select how the calls must be routed to the members of the group.
     
-    The options available are: 'Parallel'. 'Sequential', and 'Queue' (as detailed above).
+      The options available are: 'Parallel'. 'Sequential', and 'Queue' (as detailed above).
     
     * If you select 'Queue', specify the following:
     
-    	-From the On Hold Music drop-down list, select an audio file that contains the music that the caller and the member must hear, if either of them put the call on hold.
-	-From the Join Message drop-down list, select an audio file that contains the welcome message that the caller must hear immediately after the caller calls the extension number of the group.
+    *	From the On Hold Music drop-down list, select an audio file that contains the music that the caller and the member must hear, if either of them put the call on hold.
+    *	From the Join Message drop-down list, select an audio file that contains the welcome message that the caller must hear immediately after the caller calls the extension number of the group.
 	-From the Chime List drop-down list, select a list of audio files that contains the messages that the caller must hear, if all members of the group are on calls and the caller is waiting to be routed to a member of the group.
     
