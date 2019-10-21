@@ -43,34 +43,34 @@ To create a user account:
       
       We recommend that you instruct the new users to change the default password (that you provide at the time of adding the user account) when they log in for the first time to the ConnexCS Control Panel. This ensures that only the owner of the user account knows the password, and your users' accounts are safe from unauthorised access.
       
-For more information about how to change a password, see <link to Changing the Password topic>. 
+For more information about how to change a password, see link to Changing the Password topic. 
 
-    * From the `Role` drop-down list, select the role of the user.
-    
-	    The options available are: `User` and `Administrator`.
+   * From the `Role` drop-down list, select the role of the user.
+   
+   The options available are: `User` and `Administrator`.
       
-      Note: If you do not select a role, by design, the ConnexCS Control Panel assigns the role of an Administrator. 
+   Note: If you do not select a role, by design, the ConnexCS Control Panel assigns the role of an Administrator. 
 
-    * In the `IP Whitelist` text box, add the list of IP addresses (one below the other) from which the user must be allowed to log in.
+   * In the `IP Whitelist` text box, add the list of IP addresses (one below the other) from which the user must be allowed to log in.
       
-      If you specify an IP Whitelist, the user cannot log in from IP addresses that are not included in the IP Whitelist.
+     If you specify an IP Whitelist, the user cannot log in from IP addresses that are not included in the IP Whitelist.
       
-      You can specify an IP Whitelist in the following ways:
+     You can specify an IP Whitelist in the following ways:
          
-         * single IP address - for example, 1.1.1.1
-         * wildcard for IP addresses  - 3.3.3.*
-         * range of IP address in the CIDR (Classless Inter-Domain Routing) format - 4.4.4.0/31
-       
-       The following figure illustrates the User pop-up with some sample values.
+        * single IP address - for example, 1.1.1.1
+        * wildcard for IP addresses  - 3.3.3.*
+        * range of IP address in the CIDR (Classless Inter-Domain Routing) format - 4.4.4.0/31
+      
+     The following figure illustrates the User pop-up with some sample values.
        
        ![alt text][user-popup]
        
-5.  Click `Save`.
+5.	Click `Save`.
+	
+	ConnexCS Control Panel confirms that it has created a new user account.
+	
+	You can see an entry for the new user account on the Users and Groups page.
     
-    ConnexCS Control Panel confirms that it has created a new user account.
-    
-    You can see an entry for the new user account on the Users and Groups page.
-    
-6.  Optional) To abort creating the user account, click X located at the top-right corner of the pop-up.
+6.	(Optional) To abort creating the user account, click X located at the top-right corner of the pop-up.
 
 [user-popup]: /setup/img/user-popup.png "user-popup"
