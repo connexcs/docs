@@ -45,9 +45,9 @@ To create a user account:
       
 For more information about how to change a password, see link to Changing the Password topic. 
 
-   * 	From the `Role` drop-down list, select the role of the user.
-   
-   	The options available are: `User` and `Administrator`.
+   *	From the `Role` drop-down list, select the role of the user.
+   	
+	The options available are: `User` and `Administrator`.
       
    	If you do not select a role, by design, the ConnexCS Control Panel assigns the role of an Administrator. 
 
