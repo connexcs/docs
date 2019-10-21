@@ -36,8 +36,9 @@ To create a user account:
     
     * (Optional) From the `Groups` drop-down list, select the name of the user group whose permissions this user must have.
       
-      Note: You can repeat this step multiple times, if you want to associate the user with multiple user groups.
-	    For more information about how to create a user group, see <link to user group topic>.
+     	You can repeat this step multiple times, if you want to associate the user with multiple user groups.
+	
+	For more information about how to create a user group, see <link to user group topic>.
       
     * In the `Password` text box, enter a password that the user must use, to log into the ConnexCS Control Panel.
       
@@ -47,22 +48,22 @@ For more information about how to change a password, see link to Changing the Pa
 
    *	From the `Role` drop-down list, select the role of the user.
    	
-		The options available are: `User` and `Administrator`.
+The options available are: `User` and `Administrator`.
 		
-		If you do not select a role, by design, the ConnexCS Control Panel assigns the role of an Administrator. 
+If you do not select a role, by design, the ConnexCS Control Panel assigns the role of an Administrator. 
 
    *	In the `IP Whitelist` text box, add the list of IP addresses (one below the other) from which the user must be allowed to log in.
    		If you specify an IP Whitelist, the user cannot log in from IP addresses that are not included in the IP Whitelist.
 		
-		You can specify an IP Whitelist in the following ways:
+You can specify an IP Whitelist in the following ways:
          
-        a.single IP address - for example, 1.1.1.1
-        b.wildcard for IP addresses  - 3.3.3.*
-        c.range of IP address in the CIDR (Classless Inter-Domain Routing) format - 4.4.4.0/31
-      
-    	The following figure illustrates the User pop-up with some sample values.
+a.single IP address - for example, 1.1.1.1
+b.wildcard for IP addresses  - 3.3.3.*
+c.range of IP address in the CIDR (Classless Inter-Domain Routing) format - 4.4.4.0/31
+
+The following figure illustrates the User pop-up with some sample values.
        
-       ![alt text][user-popup]
+[alt text][user-popup]
        
 5.	Click `Save`.
 	
