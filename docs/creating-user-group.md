@@ -34,7 +34,23 @@ To create a user group:
        
     * 	From the `Default Permission` list box, select the level of global permissions that this group must have.
     
-        The options available are: `Create`, `Update`, `Read`, and `Delete`. By design, all of Create, Update, Read, and Delete permissions are selected. 
+    	The options available are: `Create`, `Update`, `Read`, and `Delete`. By design, all of Create, Update, Read, and Delete permissions are selected. 
+	
+	You can repeat this step multiple times, if you want to associate the user with multiple user groups. For more information about how to create a user group, see <link to user group topic>.
     
-    	You can repeat this step multiple times, if you want to associate the user with multiple user groups. For more information about how to create a user group, see <link to user group topic>.
+    *	(Optional) To delete a permission, click `X` located at the right of a permission. 
+    
+    * 	To add a permission, click the down arrow at the right of the list box and click the permission.
+    
+5.  Click `Save`.
+	
+    ConnexCS Control Panel confirms that it has created a new IVR setup.
+	
+    You can see an entry for the new IVR setup on the IVR page.
+    
+6.  Optional) To abort creating the IVR setup, click `X` located at the top-right corner of the pop-up.
+	
+	
+	
+
 		 
