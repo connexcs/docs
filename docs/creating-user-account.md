@@ -12,7 +12,7 @@ You must create a user account to allow a user to use the features available in 
 !!! question "What if I forget my password?" 
     You must contact the administrator who created your user account for the ConnexCS Control Panel. The administrator can reset the password without needing to know the current password.
     
-For more information about how to reset a forgotten password, see <link to Change Password by administrator>.
+For more information about how to reset a forgotten password, see [Creating a User Group](/creating-user-group/ .
 
 To create a user account:
 
@@ -40,7 +40,7 @@ To create a user account:
 		 
     * 	In the `Password` text box, enter a password that the user must use, to log into the ConnexCS Control Panel.
     
-    	We recommend that you instruct the new users to change the default password (that you provide at the time of adding the user account) when they log in for the first time to the ConnexCS Control Panel. This ensures that only the owner of the user account knows the password, and your users' accounts are safe from unauthorised access.For more information about how to change a password, see link to Changing the Password topic. 
+    	We recommend that you instruct the new users to change the default password (that you provide at the time of adding the user account) when they log in for the first time to the ConnexCS Control Panel. This ensures that only the owner of the user account knows the password, and your users' accounts are safe from unauthorised access.
     
     *	From the `Role` drop-down list, select the role of the user.
     
