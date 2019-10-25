@@ -59,6 +59,12 @@ To create a user account:
 	
 ![alt text][user-popup]
 
+5.  Log into the ConnexCS Control Panel.
+	 
+    ConnexCS displays the page you were on when you logged out of the Control Panel.
+    
+2.  Click `Setup > Settings > User` in the navigation panel (located on the left of the page).
+
 5.	Click `Save`.
 
 	ConnexCS Control Panel confirms that it has created a new user account.
