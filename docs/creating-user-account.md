@@ -59,12 +59,14 @@ To create a user account:
 	
 ![alt text][user-popup]
 
+5.  Log into the ConnexCS Control Panel.
+
 5.  Click `Save`.
 
 	ConnexCS Control Panel confirms that it has created a new user account.
 	
 	You can see an entry for the new user account on the Users and Groups page.
     
-6.  (Optional) To abort creating the user account, click X located at the top-right corner of the pop-up.
+6.  (Optional) To abort creating the user account, click `X` located at the top-right corner of the pop-up.
 
 [user-popup]: /setup/img/user-popup.png "user-popup"
