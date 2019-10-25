@@ -48,8 +48,39 @@ To create a user group:
 	
     You can see an entry for the new IVR setup on the IVR page.
     
-6.  Optional) To abort creating the IVR setup, click `X` located at the top-right corner of the pop-up.
+6.  (Optional) To abort creating the IVR setup, click `X` located at the top-right corner of the pop-up.
+
+4.  Do the following to create a user group:
+    
+    *	Click the name of the user group, on the Users and Groups page. 
+    
+    	The Group pop-up appears. You will see an Add Group Permission table on the pop-up.
+    	
+    *	Click the `+` icon (located on the right of the pop-up).
 	
+	The Group Permission pop-up appears. 
+
+    *	From the `Area` drop-down list, select the functional area of the permission. 
+    
+    	For example, Analytics, Carrier, Circuit-test, DID, Payment and so on. Scroll down the drop-down list to view all the functional areas.
+
+    *	From the `Access` list box, select the permissions you want to assign.
+    
+    *	Click `Save`. 
+    
+    	ConnexCS Control Panel confirms that it has added the permissions.
+	
+	You can see an entry for the new permissions in the Add Group Permission table.	
+	
+	You will see the following details for the permissions:
+	
+	The Group Permission pop-up appears.
+
+		* Path - the path to the functional area's API
+		* Access - the level of permissions
+		* Action - the option to edit the functional area and the permissions
+
+    
 	
 	
 
