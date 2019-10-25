@@ -75,10 +75,10 @@ To create a user group:
 	You will see the following details for the permissions:
 	
 	The Group Permission pop-up appears.
-
-		* 	Path - the path to the functional area's API
-		* 	Access - the level of permissions
-		* 	Action - the option to edit the functional area and the permissions
+	
+	*	Path - the path to the functional area's API
+	*	Access - the level of permissions
+	*Action - the option to edit the functional area and the permissions
     
     *	(Optional) To abort adding the permissions, click `X` located at the top-right corner of the Group Permission pop-up.
 
