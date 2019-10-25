@@ -37,6 +37,8 @@ To create a user account:
     * 	(Optional) From the `Groups` drop-down list, select the name of the user group whose permissions this user must have.
     
     	You can repeat this step multiple times, if you want to associate the user with multiple user groups. For more information about how to create a user group, see ![alt text][creating-user-group].
+	
+	[creating-user-group]: http://docs.connexcs.com/creating-user-group/ "Creating a User Group"
 		 
     * 	In the `Password` text box, enter a password that the user must use, to log into the ConnexCS Control Panel.
     
@@ -69,4 +71,4 @@ To create a user account:
 
 [user-popup]: /setup/img/user-popup.png "user-popup"
 
-[creating-user-group]: http://docs.connexcs.com/creating-user-group/ "Creating a User Group"
+
