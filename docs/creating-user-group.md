@@ -69,9 +69,7 @@ To create a user group:
     *	Click `Save`. 
         	    
     	ConnexCS Control Panel confirms that it has added the permissions.
-	
-	You can see an entry for the new permissions in the Add Group Permission table.	
-	
+	You can see an entry for the new permissions in the Add Group Permission table.
 	You will see the following details for the permissions:
 	
 	*	Path - the path to the functional area's API;
