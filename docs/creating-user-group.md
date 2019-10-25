@@ -50,7 +50,7 @@ To create a user group:
     
 6.  (Optional) To abort creating the IVR setup, click `X` located at the top-right corner of the pop-up.
 
-4.  Do the following to create a user group:
+7.  Do the following to create a user group:
     
     *	Click the name of the user group, on the Users and Groups page. 
     
@@ -82,9 +82,13 @@ To create a user group:
     
     *	(Optional) To abort adding the permissions, click `X` located at the top-right corner of the Group Permission pop-up.
 
-5.  (Optional) Repeat step 7 to add more functional areas and more granular permissions.
+8.  (Optional) Repeat step 7 to add more functional areas and more granular permissions.
 
-	The following figure illustrates the Group pop-up with some granular permissions for the role of a Network Services Engineer.		
+	The following figure illustrates the Group pop-up with some granular permissions for the role of a Network Services Engineer.
+	
+	![alt text][ivr-destionation-popup]
+	
+9.	
 		
 
 		 
