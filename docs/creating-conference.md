@@ -49,7 +49,7 @@ To create a conference call:
 
     * From the `Quality` drop-down list, select the level of quality (amount of bandwidth) per caller, for this conference call.
     	
-	The options available are: **Narrow Band** (8 KHz), **Wide Band** (16 KHZ), and **Ultra Wide Band** (32 KHz).
+	The options available are: `Narrow Band` (8 KHz), `Wide Band1` (16 KHZ), and `Ultra Wide Band` (32 KHz).
       
     * (Optional) In the `Max Members` text box, enter the maximum number of concurrent callers this conference must allow. 
     
