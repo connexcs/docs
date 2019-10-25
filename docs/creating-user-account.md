@@ -51,20 +51,20 @@ To create a user account:
 	
 	You can specify an IP Whitelist in the following ways:
 	
-	* Single IP address - for example, 1.1.1.1
-	* Wildcard for IP addresses  - 3.3.3.
-	* Range of IP address in the CIDR (Classless Inter-Domain Routing) format - 4.4.4.0/31
+	* 	Single IP address - for example, 1.1.1.1
+	* 	Wildcard for IP addresses  - 3.3.3.
+	* 	Range of IP address in the CIDR (Classless Inter-Domain Routing) format - 4.4.4.0/31
 
-The following figure illustrates the User pop-up with some sample values.
+	The following figure illustrates the User pop-up with some sample values.
        
-[alt text][user-popup]
-       
-5.	Click `Save`.
-	
+	[alt text][user-popup]
+
+4.  Click `Save`.
+
 	ConnexCS Control Panel confirms that it has created a new user account.
 	
 	You can see an entry for the new user account on the Users and Groups page.
     
-6.	(Optional) To abort creating the user account, click X located at the top-right corner of the pop-up.
+5.  (Optional) To abort creating the user account, click X located at the top-right corner of the pop-up.
 
 [user-popup]: /setup/img/user-popup.png "user-popup"
