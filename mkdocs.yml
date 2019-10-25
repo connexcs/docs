@@ -107,7 +107,6 @@ pages:
                 - Creating a User Account: creating-user-account.md
                 - Creating a User Group: creating-user-group.md
                 - Changing a User's Password: changing-user-password.md
-                - 
             - Options: setup/settings/options.md
             - Data Retention: setup/settings/data-retention.md
         - Config:
