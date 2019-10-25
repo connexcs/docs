@@ -55,9 +55,7 @@ To create a user account:
 	* 	Wildcard for IP addresses  - 3.3.3.
 	* 	Range of IP address in the CIDR (Classless Inter-Domain Routing) format - 4.4.4.0/31
 
-	The following figure illustrates the User pop-up with some sample values.
-	
-	[alt text][user-popup]
+	The following figure illustrates the User pop-up with some sample values. [alt text][user-popup]
 
 4.  Click `Save`.
 
