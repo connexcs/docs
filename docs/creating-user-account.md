@@ -33,13 +33,10 @@ To create a user account:
 4.  Do the following to create a user account:
     
     * In the `Name` text box, enter the name of the user.
+       
+    * 	(Optional) From the `Groups` drop-down list, select the name of the user group whose permissions this user must have.
     
-    *	From the `Audio File` drop-down list, select an audio file that contains the greeting and explains what the options on the keypad do. 
-        The callers hear this interactive audio message when they dial the extension number.
-    
-    * (Optional) From the `Groups` drop-down list, select the name of the user group whose permissions this user must have.
-    	
-      You can repeat this step multiple times, if you want to associate the user with multiple user groups. For more information about how to create a user group, see <link to user group topic>.
+    	You can repeat this step multiple times, if you want to associate the user with multiple user groups. For more information about how to create a user group, see <link to user group topic>.
 	    
     * In the `Password` text box, enter a password that the user must use, to log into the ConnexCS Control Panel.
     	
