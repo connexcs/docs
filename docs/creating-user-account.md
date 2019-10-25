@@ -57,9 +57,9 @@ To create a user account:
 
 	The following figure illustrates the User pop-up with some sample values.
 	
-![alt text][user-popup]
+	![alt text][user-popup]
 
-5.  Log into the ConnexCS Control Panel.
+5.	Log into the ConnexCS Control Panel.
 	 
     ConnexCS displays the page you were on when you logged out of the Control Panel.
     
