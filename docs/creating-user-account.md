@@ -57,7 +57,7 @@ To create a user account:
 
 	The following figure illustrates the User pop-up with some sample values.
        
-	[alt text][user-popup]
+[alt text][user-popup]
 
 4.  Click `Save`.
 
