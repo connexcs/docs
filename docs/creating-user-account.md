@@ -38,15 +38,13 @@ To create a user account:
     
     	You can repeat this step multiple times, if you want to associate the user with multiple user groups. For more information about how to create a user group, see <link to user group topic>.
 	    
-    * In the `Password` text box, enter a password that the user must use, to log into the ConnexCS Control Panel.
+    * 	In the `Password` text box, enter a password that the user must use, to log into the ConnexCS Control Panel.
     	
-      We recommend that you instruct the new users to change the default password (that you provide at the time of adding the user account) when they log in for the first time to the ConnexCS Control Panel. This ensures that only the owner of the user account knows the password, and your users' accounts are safe from unauthorised access.For more information about how to change a password, see link to Changing the Password topic. 
+	We recommend that you instruct the new users to change the default password (that you provide at the time of adding the user account) when they log in for the first time to the ConnexCS Control Panel. This ensures that only the owner of the user account knows the password, and your users' accounts are safe from unauthorised access.For more information about how to change a password, see link to Changing the Password topic. 
 	
-    * From the `Role` drop-down list, select the role of the user.
+    * 	From the `Role` drop-down list, select the role of the user.
     	
-	The options available are: `User` and `Administrator`.
-	
-	If you do not select a role, by design, the ConnexCS Control Panel assigns the role of an Administrator. 
+	The options available are: `User` and `Administrator`. If you do not select a role, by design, the ConnexCS Control Panel assigns the role of an Administrator. 
 
    *	In the `IP Whitelist` text box, add the list of IP addresses (one below the other) from which the user must be allowed to log in.
    	If you specify an IP Whitelist, the user cannot log in from IP addresses that are not included in the IP Whitelist.
