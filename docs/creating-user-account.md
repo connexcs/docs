@@ -39,8 +39,8 @@ To create a user account:
     	You can repeat this step multiple times, if you want to associate the user with multiple user groups. For more information about how to create a user group, see <link to user group topic>.
 		 
     * 	In the `Password` text box, enter a password that the user must use, to log into the ConnexCS Control Panel.
-    	
-	We recommend that you instruct the new users to change the default password (that you provide at the time of adding the user account) when they log in for the first time to the ConnexCS Control Panel. This ensures that only the owner of the user account knows the password, and your users' accounts are safe from unauthorised access.For more information about how to change a password, see link to Changing the Password topic. 
+    
+    	We recommend that you instruct the new users to change the default password (that you provide at the time of adding the user account) when they log in for the first time to the ConnexCS Control Panel. This ensures that only the owner of the user account knows the password, and your users' accounts are safe from unauthorised access.For more information about how to change a password, see link to Changing the Password topic. 
 	
     * 	From the `Role` drop-down list, select the role of the user.
     	
