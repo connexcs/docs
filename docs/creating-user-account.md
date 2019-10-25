@@ -56,8 +56,8 @@ To create a user account:
 	* 	Range of IP address in the CIDR (Classless Inter-Domain Routing) format - 4.4.4.0/31
 
 	The following figure illustrates the User pop-up with some sample values.
-       
-[alt text][user-popup]
+	
+	[alt text][user-popup]
 
 4.  Click `Save`.
 
