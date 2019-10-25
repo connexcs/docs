@@ -86,9 +86,19 @@ To create a user group:
 
 	The following figure illustrates the Group pop-up with some granular permissions for the role of a Network Services Engineer.
 	
-	![alt text][ivr-destionation-popup]
+	![alt text][groups-popup]
 	
-9.	
+9.	(Optional) To edit a permission, click `Edit`, located in the Action column of the table, and change the `Area` and `Access` values of the permission.
+
+10.	Click `Save`.
+
+	ConnexCS Control Panel confirms that it has created a new IVR setup.
+	
+	You can see an entry for the new IVR setup on the IVR page.
+    
+11.	(Optional) To abort creating the IVR setup, click `X` located at the top-right corner of the pop-up.
+
+[groups-popup]: /class5/img/groups-popup.png "groups-popup"
 		
 
 		 
