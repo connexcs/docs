@@ -37,6 +37,6 @@ To change a user's password:
     
     ConnexCS Control Panel confirms that it has changed the user's password.
     
-5.  Optional) To abort changing the password, click `X` located at the top-right corner of the Change Password pop-up.
+5.  (Optional) To abort changing the password, click `X` located at the top-right corner of the Change Password pop-up.
 
 [password-rules]: /setup/img/password-rules.png "password-rules"
