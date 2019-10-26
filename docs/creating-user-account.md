@@ -10,7 +10,8 @@ You must create a user account to allow a user to use the features available in 
     * The ConnexCS Control Panel sends notifications such as, credit alerts, low balance alerts and so on, to that email address. 
 
 !!! question "What if I forget my password?" 
-    You must contact the administrator who created your user account for the ConnexCS Control Panel. The administrator can reset the password without needing to know the current password.
+    If you forget your password, create a new password on the ConnexCS Control Panel Login page. 
+    If you are unable to change your password from the Login page, contact the administrator who created your user account. The administrator can reset the password without needing to know the current password.
     
 For more information about how to reset a forgotten password, see [Creating a User Group](/creating-user-group/ .
 
