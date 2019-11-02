@@ -4,7 +4,7 @@ ConnexCS has two distinct API's that are accessible through different URLs, but 
 ## Switch Administration
 The switch API provides **full administrative capabilities**.  This means that every function accomplished through our web interface is available through our API.
 
-You can find the API Spec here: <https://docs.connexcs.com/api>
+You can find the API Spec here: <https://docs.connexcs.com/cp-api>
 
 ## Customer Administration
 
