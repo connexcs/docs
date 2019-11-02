@@ -3,3 +3,9 @@ from = "/en/latest*"
 to = "/"
 status = 301
 force = false
+
+[[redirects]]
+from = "/cp-api"
+to = "https://api-docs.connexcs.com/"
+status = 200
+force = true
