@@ -1,23 +1,59 @@
 # Media Handling
 
-When an SIP session is created with the ConnexCS Cloudswitch, the switch decides which zone to route your media through, such as USA East, USA West, or Europe (unless you use ingress routing).
+ConnexCS allows you to route your media through a global array of dedicated media servers. These servers operate independently of your server.
 
-These zones are broad enough to encompass multiple data centers and sub-availability zones within the target zone. A zone may contain teb or more RTP Media Relays, or as few as two, but either way these are made available for all ConnexCS customers.
+Your server may be located in the London, but you can run your media in New York
 
-We use multiple availability zones because it is important to us that media streams never suffer avoidable packet loss or latency. Ideally, media servers run at less than half-capacity, and we we deploy additional servers if this increases.
+!!! tip
+    You should aim to place the media in within the shortest divergance between your customer and carrier.
+	If your customer is in Bangalore and carrier in New York, use either Bangalore or New York as your media proxy.
 
-## Server Specific optimizations
+Each zone encompasses multiple servers, to provide high availability
 
-It may seem logical to run media and signaling together, but it's really counter-intuitive. Servers processing billions of media packets put different stresses on a system than processing SIP packets. Isolating these gives us the following benefits:
+## How to debug media issues.
 
-* Flexibility for the customer to relay media in different zones.
+!!! note
+    We monitor 45+ metrics on each of our 30+ RTP servers. In the unlikely event that we are having media issues, please see here https://status.connexcs.com/
+	
+Below is a few steps which you may follow to debug customer audio issues.
 
-   If your customer and provider are in the UK, but your server is in the US, you don't need to bring the audio back to the USA when we have a local media zone.
-
-* An extra dimension of scaling capabilities.
-
-   Separating the two allows us to scale the CPS and Media throughputs independently, without concern over one aspect affecting another.
-
-* Sharing of Media Servers
-
-   Allowing multiple customers to share media servers reduces hops, if multiple parts of the route go through customers of ConnexCS.
+**1. Check the SIP Headers & SDP Body**
+	If you have 1 way audio check the SDP body for compatible codec's and NAT which may be causing problems.
+**2. Check Firewalls**
+	Are there any firewalls in place that may be blocking the calls. Note that your media does not flow through the same server as your SIP.
+**3. Ensure you have the best media zone**
+	Ensure that the media server you use is close to your customer or carrier.
+**4. Change the media zone**
+	It is possible that there are latent / lossy connections between your customer and our media servers. Try changing the media server (Customer > Routing > Media >Media Proxy).
+**5. Try Sending the media direct**
+	Allow your media to flow from your customer directly to your carrier by setting the media server as direct.
+!!! info
+	If you are sending the media direct, ConnexCS will not participate in the exchange of any audio, it goes between your customer and your carrier directly. If you have audio, but it is poor quality, the problem exists ourside of ConnexCS control.
+!!! warning
+    If your customer (or carrier) is behind a NAT (and you change the media to Direct). ConnexCS will not correctly be able to perform Far-End-NAT Traversal. This means if your customer is behind a NAT it may make the problem worse.
+!!! danger
+	By sending media direct you will be leaking information about who your carrier is to your customer and visa-versa, if the SIP packets and/or RTP endpoints are investigated.
+**6. Echo Test**
+	Use our class 5 features to setup an Echo Test. When dialled all audio spoken will be echoed back. This can be a quick way of checking a customers audio quality.
+**7. RTCP Metrics**
+	If RTCP is enabled on your customer and carrier meta data about the RTP stream (packet counters, round trip time) will be exchanged. This information will be available in the logging page when looking at the call. These graphs can help to identify the problems.
+**8. User Latency**
+	If the UAC is connecting by SIP Auth directly to ConnexCS. It is possible to view latency graphs. For this make sure that SIP Ping is enabled from Customer > Auth > NAT / SIP Ping > Enabled. Also ensure that "Disable UAC Ping" is unticked in your Server.
+**9. Call Recording / Packet Capture**
+	Enable call recording on ConnexCS & capture packets either on the customer or the carrier. Compare the results.
+**10. Modified Ping (Linux)**
+	If the endpoint responds to ping message, you can tweak the regular ping to make it behave a bit more like an RTP Packet. This can help to debug connections further.
+```
+ping 1.2.3.4 -s 160 -t 200 -i 0.02 -f
+-t 200 [allowed round trip time]
+-s 160 [bytes per packet]
+-i 0.02 [how frequently to send packets (50 / second)]
+-f [display output as .]
+```
+These settings are made to roughly simulate SIP packets (ulaw), you can tweak these params as required to achieve your ideal test scenario.
+!!! warning
+    Trace Route (tracert / mtr) are great tools for checking the route. They are not made to analyse packet loss. Additionally intermediate hops DONT prioritize ICMP packets, so lossy intermediate hops are inconsequential results.
+**11. Smokeping / long running pings**
+An additional part of your arsenal for identifying trends outside ConnexCS may be to setup a long standing Ping in your monitoring environment to your customers / carrier equipment. This can identify long term trends in customer / carrier latency. There are also plenty of SaaS ping monitoring systems such as Pingdom.
+**12. ConnexCS Circuit Test**
+	ConnexCS can be setup to perform automated circuit tests, a call is send outbound and can complete a full circuit, as well as testing other metrics, MOS is checked. This is a measure of audio quality a long running test can notice trends even before your customers do.
