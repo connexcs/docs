@@ -13,7 +13,7 @@ Each zone encompasses multiple servers, to provide high availability
 ## How to debug media issues.
 
 !!! note
-    We monitor 45+ metrics on each of our 30+ RTP servers. In the unlikely event that we are having media issues, please see here https://status.connexcs.com/
+    We monitor 45+ metrics on each of our 30+ RTP servers. In the unlikely event that we are having media issues, please see here [our status page](https://status.connexcs.com/)
 	
 Below is a few steps which you may follow to debug customer audio issues:
 
@@ -66,7 +66,7 @@ ping 1.2.3.4 -s 160 -t 200 -i 0.02 -f
 These settings are made to roughly simulate SIP packets (ulaw), you can tweak these params as required to achieve your ideal test scenario.
 
 !!! warning
-    Trace Route (tracert / mtr) are great tools for checking the route. They are not made to analyse packet loss. Additionally intermediate hops DONT prioritize ICMP packets, so lossy intermediate hops are inconsequential results.
+    Trace Route (tracert / mtr) are great tools for checking the IP route. They are not made to analyse RTP packet loss. Additionally intermediate hops DONT prioritize ICMP packets, so lossy intermediate hops are inconsequential results.
 
 **11. Smokeping / long running pings**
 An additional part of your arsenal for identifying trends outside ConnexCS may be to setup a long standing Ping in your monitoring environment to your customers / carrier equipment. This can identify long term trends in customer / carrier latency. There are also plenty of SaaS ping monitoring systems such as Pingdom.
