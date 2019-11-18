@@ -6,8 +6,8 @@ ConnexCS allows you to route your media through a global array of dedicated medi
 
 Your server may be located in London, but you can run your media in New York
 
-!!! tip
-    You should aim to place the media within the shortest divergence between your customer and carrier.
+!!! Tip
+    You should choose a media server that adds the least latency to the call.
 	If your customer is in Bangalore and your carrier in New York, use either Bangalore or New York as your media proxy.
 
 Each zone encompasses multiple servers, to provide high availability
@@ -68,8 +68,7 @@ ping 1.2.3.4 -s 160 -t 200 -i 0.02 -f
 These settings are made to roughly simulate SIP packets (ulaw), you can tweak these parameters as required to achieve your ideal test scenario.
 
 !!! Warning
-    Trace Route (tracert / mtr) are great tools for checking the IP route. They are not made to analyse RTP packet loss. Additionally intermediate hops DON'T prioritize ICMP packets, so lossy intermediate hops are inconsequential results.
-
+    Trace Route (`tracert` / `mtr`) are great tools for checking the IP route. They are not made to analyse RTP packet loss. Additionally intermediate hops DON'T prioritize ICMP packets, and so should not be used as a method of debugging media issues.
 **11. Smokeping / long running pings**
 An additional part of your arsenal for identifying trends outside ConnexCS may be to setup a long standing Ping in your monitoring environment to your customers / carrier equipment. This can identify long term trends in customer / carrier latency. There are also plenty of SaaS ping monitoring systems such as Pingdom.
 
