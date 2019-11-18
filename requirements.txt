@@ -1,3 +1,4 @@
+BeautifulSoup4
 mkdocs
 mkdocs-material
 mkdocs-mermaid-plugin
