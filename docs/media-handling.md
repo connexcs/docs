@@ -1,5 +1,7 @@
 # Media Handling
 
+## ConnexCS Media Servers
+
 ConnexCS allows you to route your media through a global array of dedicated media servers. These servers operate independently of your server.
 
 Your server may be located in the London, but you can run your media in New York
