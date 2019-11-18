@@ -9,9 +9,10 @@ theme:
 extra_javascript:
 - extra.js
 - https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js
+plugins:
+  - markdownmermaid
 
 markdown_extensions:
-  - markdownmermaid
   - admonition
   - codehilite:
       linenums: true
