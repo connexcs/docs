@@ -9,8 +9,11 @@ theme:
 extra_javascript:
 - extra.js
 - https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js
-plugins:
-  - markdownmermaid
+extra_css:
+  - https://unpkg.com/mermaid@7.1.2/dist/mermaid.css
+
+#plugins:
+#  - markdownmermaid
 
 markdown_extensions:
   - admonition
@@ -21,6 +24,11 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.tasklist:
       custom_checkbox: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_div_format
       
 pages:
   - Cloudswitch:
