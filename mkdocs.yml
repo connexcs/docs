@@ -8,8 +8,10 @@ theme:
     tabs: true  
 extra_javascript:
 - extra.js
+- https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js
 
 markdown_extensions:
+  - markdownmermaid
   - admonition
   - codehilite:
       linenums: true
