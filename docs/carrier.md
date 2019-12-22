@@ -87,6 +87,15 @@ View carrier-related statistics by clicking **Stats** tab.
 
 To edit reply codes, select the **Replace** radio button, prompting the **New Code** and **New Reason** fields to appear. After that, choose a code from the list and enter a reason.
 
+#### Failover
+ConnexCS will halt routing on the following codes:
+
+- `3XX` (Re-write to 503)
+- `486`
+- `480`
+- `404`
+
+
 ![alt text][carrier-reply] 
  
 ### Authentication
