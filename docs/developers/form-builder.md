@@ -1,9 +1,3 @@
-# Table of Contents
-
-- [Table of Contents](#table-of-contents)
-- [Form Builder](#form-builder)
-
-
 # Form Builder
 
 Form builder is a program for developers to create customized form documents for use in their VoIP systems, either through a customer portal or in ScriptForge. The tool provides an easy way to generate any type of form, integrate it with your portal, or ScriptForge, and start collecting information.
