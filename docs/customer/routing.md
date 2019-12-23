@@ -14,7 +14,7 @@ It is possible for multiple customers to share the same IP address, and to be so
 
 Here you can place limits on how many channels are allowed through each route. It is independent of any customer-imposed channel limitations, which still apply.
 
-## Dial string
+## Dial string / Dial Pattern
 
 A dial string will only allow entered prefixes to pass, listed as one per line. Both prefix and regular expressions are allowed. For example, if you only wanted to allow UK Landline you could use:
 
