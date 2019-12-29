@@ -13,3 +13,5 @@ It is required if your User Agent or NAT doesn't rewrite SIP packets with the co
 * Both the IP and port are compared.
 * Tests if client has a private IP address (as defined by RFC1918) in the top Via field of the SIP message.
 * Tests if client has contacted ConnexCS from an address that is different from the one in the Contact field. Only IP is compared by this test.
+
+If you want more control over NAT detection capabilities, including to set rules per domain or source IP address, take a look at [AnyEdge Platform](/anyedge/anyedge/)
