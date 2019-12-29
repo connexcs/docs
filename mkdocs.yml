@@ -102,8 +102,9 @@ pages:
         - Creating a Group: creating-group.md
        
     - Developers:
-        - Scriptforge: scriptforge.md
-        - User Space Database: user-space-db.md 
+        - Scriptforge: developers/scriptforge.md
+        - User Space Database: developers/user-space-db.md 
+        - Form Builder: developers/form-builder.md
 
     - Setup:
         - AnyEdge: anyedge/anyedge.md
@@ -126,7 +127,6 @@ pages:
             - Templates: setup/config/templates.md
             - Analytics: setup/config/analytics.md
         - Advanced:
-            - User Space Database: setup/advanced/user-space-database.md
             - Language: setup/advanced/language.md
             - Firewall: setup/advanced/firewall.md
             - Prefix Set: setup/advanced/prefix-set.md
