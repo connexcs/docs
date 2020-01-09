@@ -8,8 +8,8 @@
 ConnexCS comes with Email and SMS included for your customers.
 
 1. Select multiple customers using the tickbox selector on the left side of each row.
-2. Click on "Send" at the top right then choose email email or SMS.
-3. Once completed the message will be send out.
+2. Click on "Send" at the top right then choose email or SMS.
+3. Once completed the message will be sent.
 
 !!! note "Custom Email Servers."
     You can change the Email Server and SMS. Settings from Setup > Settings.
