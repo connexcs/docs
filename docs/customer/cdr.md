@@ -2,11 +2,11 @@ The **CDR (Customer Detail Record)** is an extensive set of information that is 
 
 ## Columns
 The default columns are:
-+ Call Time (when the call was made)
-+ Destination CLI (the desintation telephone number)
-+ Duration (call length)
-+ Retail 
-+ Name
+* Call Time (when the call was made)
+* Destination CLI (the desintation telephone number)
+* Duration (call length)
+* Retail 
+* Name
 
 The columns can be modified by using the Columns tab on the right. Columns can be selected and de-selected. Additionally, you can set Row Groups and aggregate Values by dragging to the boxes at the bottom of the Columns tab.  
 
@@ -25,5 +25,5 @@ CDR records are "hot" (instantly queryable) for the last 3 months guaranteed. Af
 
 
 
-[cdr-c]: https://github.com/digipigeon/connexcs-user-docs/blob/master/docs/customer/img/cdr-c.png "CDR Columns"
-[cdr-f]: https://github.com/digipigeon/connexcs-user-docs/blob/master/docs/customer/img/cdr-f.png "CDR Filters"
+[cdr-c]: /customer/img/cdr-c.png "CDR Columns"
+[cdr-f]: /customer/img/cdr-f.png "CDR Filters"
