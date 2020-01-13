@@ -1,4 +1,4 @@
-The Dashboard provides a summary of active customers and channels as well as some quick functions. For detailed account and customer activities, use the Menu system on the left.  
+The **Dashboard** provides a summary of active customers and channels as well as some quick functions. For detailed account and customer activities, use the Menu system on the left.  
 
 ## Top of Page Icons
 ![alt text][top of page]
@@ -39,7 +39,7 @@ At-a-glance view of Live Channels, Customers, Carriers, and Rate Cards
 **Online Chat**
 ![alt text][chat]
 
-[top of page]: /customer-portal/img/Dashbaord%20top%20of%20page%20icons.png
+[top of page]: /customer-portal/img/topofpage.png
 [dashboard]: /customer-portal/img/dashboard.png
 [alert]: /customer-portal/img/alerts.png
 [profit]: /customer-portal/img/profit.png
