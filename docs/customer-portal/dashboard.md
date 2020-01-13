@@ -33,11 +33,12 @@ At-a-glance view of Live Channels, Customers, Carriers, and Rate Cards
 + Use Daily Profit to determine which days need to be reviewed for profit loss. Use the icons in upper right corner ![alt text][profit] to refresh, select options, or download the data. 
 
 ## Contact Us functions at the bottom
-**Raise a Ticket**
 ![alt text][ticket]
+**Raise a Ticket** 
 
-**Online Chat**
+
 ![alt text][chat]
+**Online Chat**
 
 [top of page]: /customer-portal/img/topofpage.png
 [dashboard]: /customer-portal/img/dashboard.png
