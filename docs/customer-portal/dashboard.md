@@ -17,25 +17,28 @@ The **Dashboard** provides a summary of active customers and channels as well as
 
 
 ## Main Display
+This provides view of Live Channels, Customers, Carriers, and Rate Cards
+
 ![alt text][dashboard]
 
-At-a-glance view of Live Channels, Customers, Carriers, and Rate Cards
-
-**Channels list** Use this area to view and sorty **Channels** or **Carriers** by Customers or Channels in Use (highest and lowest)
+**Channels list** Use this area to view and sort **Channels** or **Carriers** by Customers or Channels in Use (highest and lowest)
 
 **Channels graph (live)** This graph displays all currently active channels 
 
-**Channels Sankey diagram ** *In development*
+**Channels SanKey diagram ** *In development*
 
 **Channels graph (historic)**
-+ View CPS, Daily Spend and Customer/Provider spend (from Sankey Diagram above). 
+Use the icons in upper right corner ![alt text][profit] to refresh, select options, or download the graph. 
 
-+ Use Daily Profit to determine which days need to be reviewed for profit loss. Use the icons in upper right corner ![alt text][profit] to refresh, select options, or download the data. 
++ Channels (historical data)
++ CPS (calls per second)
++ Daily Spend (displayed by customers)
++ Customer/Provider spend (from SanKey Diagram above)
++ Profit (daily stats on profit and loss, good for analysis)
 
 ## Contact Us icons at the bottom
 ![alt text][ticket]
 **Raise a Ticket** 
-
 
 ![alt text][chat]
 **Online Chat**
