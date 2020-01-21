@@ -24,6 +24,7 @@ This provides view of Live Channels, Customers, Carriers, and Rate Cards
 **Channels list** Use this area to view and sort **Channels** or **Carriers** by Customers or Channels in Use (highest and lowest)
 
 **Channels graph (live)** This graph displays all currently active channels 
+Use the icons in upper right corner ![alt text][profit] to refresh, select options, or download the graph. 
 
 **Channels SanKey diagram ** *In development*
 
