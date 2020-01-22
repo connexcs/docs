@@ -6,7 +6,29 @@ Customer Management is found in the **Management** tab, the four horizontal line
 
 ![alt text][customer-dashboard]
 
+
 ### Managing Customers
+From the **Customers** board, you can perform several management operations. 
+
+#### View Modification
+* **Columns** popout on the right allows you to add/remove options, change column order, in some cases you can create row groups and aggregate values for pivot functionality
+* **Filters** popout on the right allows you to filter your customers
+
+#### Bulk Customer Modifications
+* Bulk upload to add multiple customers at a time
+* Bulk edit to modify fields such as Channels, Status, Flow Speed (CPS), and so on
+
+#### Send Email & SMS
+ConnexCS comes with Email and SMS included for your customers.
+1. Select multiple customers using the tickbox selector on the left side of each row.
+2. Click on "Send" at the top right then choose email or SMS.
+3. Fill in Subject line and body details and send. 
+   * Emails are sent FROM the email address populated in Setup > Settings, and TO every email address listed under Contacts for each customer. 
+   * SMS are sent to the Mobile number in each Contact. 
+
+!!! note "Custom Email Servers."
+    You can change the Email Server and SMS. Settings from Setup > Settings. 
+
 
 ### Adding Customers
 The following explains how to add new customers using the **Customer Management** screen:
@@ -26,6 +48,7 @@ The following is a descrtption of each entry found in the customer window:
 * **Paypal Email:** The email address associated witht he customer's PayPal account.
 * **Website:** The customer's website address.
 * **Status:** The customer's status, i.e.:
+
   *  Active : The customer is active and allowed to pass calls. 
   *  Inactive: The account is disabled, and 
   *  Pending Approval: New signups will be listed as pending approval.  The customer cannot pass calls or become active until this phase is completed. 
@@ -64,22 +87,46 @@ Editing customers by clicking their name in the customer list, then **Edit Custo
 Individual customer cards open once you click them by name from the Customer Managment screen.  The following sections detail the tabs lined up on the left side of the customer card, starting at the top.
 
 ### Main
-In the **Main** tab, users can view and add customer contacts, block internal numbers, and see summaries of calls live, daily, and monthly formats.
+In the **Main** tab, users can view customer details (Status, Balance, Debit Limit, and Current in use Channels), manage Customer Contacts, block internal numbers, and see summaries of calls live, daily, and monthly formats.
 
-![alt text][main-tab]
+#### Quick View
+This shows a quick summary of the Status, Balance, Debit Limit, and Current in use Channels
+
+#### Change Password
+To reset a Contact password:
+1. Click the small "key" icon to the right of the Contact
+2. Select to "Auto Generate & Email Password" or enter it manually
+3. Save
+
+#### Internal Number Block
+Used to assign internal customer number ranges which can be used for fuctions such as SIP authentication
+1. Click "+" button
+2. Number block will be assigned
+
+!!! note The Number range parameters must be defined before an Internal Number Block ca be assigned. 
+
+#### Summary
+Summaries of calls in Live, Daily, and Monthly Formats, all in UTC. 
 
 ### Contacts
-**Contacts** are found in the top-left section of the customer card screen.  It shows an overview of contacts associated with the account.  To add new contact:
+**Contacts** are found in the top-left section of the customer card screen.  It shows an overview of contacts associated with the account.  
+
+To add new contact:
 
 1. Click **Management** > **Customers**.
 2. Select a customer from the list.  
 3. Press the **`+`** button to the right of the word **Contacts**.
 4. Enter the contact name and their login email address.
 5. Check the **Auto Generate Password** box to have a password generated online and sent via email. Unchecking the box will let you manually set the password.
-6. You may enter any information on **public** notes. These notes will be displayed on the customer portal when logged in. Private notes will display in the control panel. 
+6. You may enter any information on **public** notes. These notes will be displayed on the customer portal when logged in. Private notes will display in the control panel.
+!!! warning DO NOT save passwords in either of the notes field in the Cotact Details.
 7. Click **`Save`**.
 
- ![alt text][contacts-2]
+![alt text][contacts-2]
+![alt text][main-tab]
+!!! note Check in the Customer Details to confirm the Mobile and Email have been verified. You can modify these in the contact or the customer can do this in the Customer Portal. 
+
+
 
 ### Authentication
 
