@@ -77,7 +77,7 @@ You can also check and filter **Customers** by status:
 
 ### Searching Customers
 
-Search for **Customer** information by adding a query in the **Search** text field and clicking the search icon or pressing `Enter`.
+Search for **Customer** information by adding a query in the **Search** text field and clicking the search icon or pressing **`Enter`**.
 
 ### Editing Customers
 
@@ -94,24 +94,28 @@ This shows a quick summary of the Status, Balance, Debit Limit, and Current in u
 
 #### Change Password
 To reset a Contact password:
-1. Click the small "key" icon to the right of the Contact
+
+1. Click the small **`key`** icon to the right of the Contact
 2. Select to "Auto Generate & Email Password" or enter it manually
 3. Save
 
 #### Internal Number Block
 Used to assign internal customer number ranges which can be used for fuctions such as SIP authentication
-1. Click "+" button
+
+1. Click **`+`** button
 2. Number block will be assigned
 
-!!! note The Number range parameters must be defined before an Internal Number Block ca be assigned. 
+!!! note 
+The Number Range Parameters must be defined before an Internal Number Block can be assigned. 
 
 #### Summary
-Summaries of calls in Live, Daily, and Monthly Formats, all in UTC. 
+The Summaries of calls in Live, Daily, and Monthly Formats, are all displayed in UTC. 
+
 
 ### Contacts
 **Contacts** are found in the top-left section of the customer card screen.  It shows an overview of contacts associated with the account.  
 
-To add new contact:
+To add a new contact:
 
 1. Click **Management** > **Customers**.
 2. Select a customer from the list.  
@@ -119,7 +123,10 @@ To add new contact:
 4. Enter the contact name and their login email address.
 5. Check the **Auto Generate Password** box to have a password generated online and sent via email. Unchecking the box will let you manually set the password.
 6. You may enter any information on **public** notes. These notes will be displayed on the customer portal when logged in. Private notes will display in the control panel.
-!!! warning DO NOT save passwords in either of the notes field in the Cotact Details.
+
+!!! warning 
+DO NOT save passwords in either of the notes field in the Cotact Details.
+
 7. Click **`Save`**.
 
 ![alt text][contacts-2]
