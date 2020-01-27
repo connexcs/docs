@@ -82,29 +82,29 @@ Search for **Customer** information by adding a query in the **Search** text fie
 
 ### Editing Customers
 
-Access the Customer Card by clicking their name in the customer list, then **Edit Customer**. The screen that opens is similar to the new customer screen, except the details should already be filled.  You can edit these by entering new information in their place, and click **`Save`**. See **[Editing Customers](../customer/#editing-customers)** for field details. Additional fields are
+Access the Customer Card by clicking their name in the customer list, then **Edit Customer**. The screen that opens is the same as the New Customer screen, with infomration already populated. Edit any field then click **`Save`**. For all field details, see **[Adding Customers](../customer/#adding-customers)**. Some specific details are below: 
 
-**Basic**
+**Basic** tab
 
-+ Status: For more infomration on Penalty, see **[Alerts](../customer/alerts.md)**
++ Status: For more information on Penalty, see **[Alerts](../customer/alerts.md)**
 
-**Config**
+**Config** tab
 
 + TOML: This is a data storage mechanism for configuration. Similar to INI files, you can create advanced customization to set values, etc, for script forge to reference later. 
 
-**Verification**
+**Verification** tab
 
-+ Select **Email Verification** and/or **Mobile Verification** to force the customer to go to the portal for verification. Important to select when you create a customer manually. If the customer doesn't verify these, they won't be able to dial. 
-+ Select **Approved CLI's Only** to force the customer to log into the Portal and enter their CLI number. This will generate a test call which will play a code to the customer to enter into the portal. Once complete, the CLI will be added to the system. 
++ Select **Email Verification** and/or **Mobile Verification** to force the customer to go to the portal for verification. (This is important to select when you create a customer manually.) If the customer doesn't verify these, they won't be able to dial. 
++ Select **Approved CLI's Only** to force the customer to log into the Portal and enter their CLI number. This generates a test call with a code which the customer enters into the portal. Once complete, their CLI will be added to the system. 
 
 !!! attention
-    Mobile messages will be sent globally, but there are some reports of issues with SMS being delivered to numbers in India. This goes over the Twilio network, so whatever they deliver ConnexCS will deliver. 
+    Mobile messages will be sent globally, but there are some reports of issues with SMS being delivered to numbers in India. These messages are sent on the Twilio network, so whatever they deliver ConnexCS will deliver. 
 
 ## Customer Cards
-Individual customer cards open once you click them by name from the Customer Managment screen.  The following sections detail the tabs lined up on the left side of the customer card, starting at the top.
+Open a Customer Card by clicking their name from the Customer Managment screen.  The following sections detail the tabs lined up on the left side of the customer card, starting at the top.
 
 ### Main
-The **Main** tab shows a quick summary of the Status, Balance, Debit Limit, and Current in use Channels at the top. From here you can manage Customer Contacts, block internal numbers, and see summaries of calls live, daily, and monthly formats.
+The top of the **Main** tab displays a summary of the Status, Balance, Debit Limit, and Current in use Channels. From here you can manage contacts, block internal numbers, and view call summaries.
 
 #### Contacts
 The **Contacts** section shows an overview of contacts associated with the account.  
@@ -115,7 +115,7 @@ To add a new contact:
 2. Select a customer from the list.  
 3. Press the **`+`** button to the right of the word **Contacts**.
 4. Enter the contact name and their login email address.
-5. Check the **Auto Generate Password** box to have a password generated online and sent via email. Unchecking the box will let you manually set the password.
+5. Check the **Auto Generate Password** box to have a password generated online and sent via email. Uncheck the box to enter a password manually.
 6. You may enter any information on **public** notes. These notes will be displayed on the customer portal when logged in. Private notes will display in the control panel.
 
 !!! warning 
@@ -125,7 +125,8 @@ To add a new contact:
 
 ![alt text][contacts-2]
 ![alt text][main-tab]
-!!! note Check in the Customer Details to confirm the Mobile and Email have been verified. You can modify these in the contact or the customer can do this in the Customer Portal. 
+!!! note 
+    Check in the Customer Details to confirm the Mobile and Email have been verified. You can modify these in the contact or the customer can do this in the Customer Portal. 
 
 To reset a Contact password:
 
@@ -143,15 +144,11 @@ Used to assign internal customer number ranges which can be used for fuctions su
     The Number Range Parameters must be defined before an Internal Number Block can be assigned. 
 
 #### Summary
-The Summaries of calls in Live, Daily, and Monthly Formats, are all displayed in UTC. There are several functions that can be performed with this data. 
+The Summaries of calls in Live, Daily, and Monthly Formats, are all displayed in 24-hour UTC. There are several functions that can be performed with this data. 
 + Select multiple cells in a column to get sum and average values (not a true average, but an avergage of averages)
 + Select data from multiple columns and rows, then right click to **`Copy`**, **`Copy wth Headers`**, and **`Export`**
-+ Check the box under the Action column then select **`Generate Invoice`** in the upper right corner. This will create the invoice which can then be queired by a billing system. 
-+ Select **View Audit Log** to see when the customer was created and view any modificaitons that have been made to the account. (View Difference displays data in JSON format.)
-
-
-
-
++ Check the box under the Action column then select **`Generate Invoice`** in the upper right corner. This will create the invoice which can then be queried by a billing system. 
++ Select **View Audit Log** to see when the customer was created and view any modifications that have been made to the account. (View Difference displays data in JSON format.)
 
 
 ### Authentication
