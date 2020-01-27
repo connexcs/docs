@@ -117,11 +117,10 @@ To add a new contact:
 4. Enter the contact name and their login email address.
 5. Check the **Auto Generate Password** box to have a password generated online and sent via email. Uncheck the box to enter a password manually.
 6. You may enter any information on **public** notes. These notes will be displayed on the customer portal when logged in. Private notes will display in the control panel.
+7. Click **`Save`**.
 
 !!! warning 
     DO NOT save passwords in either of the notes field in the Cotact Details.
-
-7. Click **`Save`**.
 
 ![alt text][contacts-2]
 ![alt text][main-tab]
