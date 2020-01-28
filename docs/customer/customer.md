@@ -45,7 +45,7 @@ The following explains how to add new customers using the **Customer Management*
 The following is a descrtption of each entry found in the customer window:
 
 * **Customer Name:** - A name or unique identifier for each customer.
-* **Paypal Email:** The email address associated witht he customer's PayPal account. (This is releveant when using the IPN API. Customer can make payments directly through PayPal instead of using the Customer Portal.) 
+* **Paypal Email:** The email address associated witht he customer's PayPal account. (This is relevant when using the IPN API. Customer can make payments directly through PayPal instead of using the Customer Portal.) 
 * **Website:** The customer's website address.
 * **Status:** The customer's status, i.e.:
 
@@ -82,7 +82,7 @@ Search for **Customer** information by adding a query in the **Search** text fie
 
 ### Editing Customers
 
-Access the Customer Card by clicking their name in the customer list, then **Edit Customer**. The screen that opens is the same as the New Customer screen, with infomration already populated. Edit any field then click **`Save`**. For all field details, see **[Adding Customers](../customer/#adding-customers)**. Some specific details are below: 
+Access the Customer Card by clicking their name in the customer list, then **Edit Customer**. The screen that opens is the same as the New Customer screen, with infomration already populated. Edit any field then click **`Save`**. For all field details, see **[Adding Customers](../customer/#adding-customers)**. Additional details are below: 
 
 **Basic** tab
 
@@ -90,6 +90,7 @@ Access the Customer Card by clicking their name in the customer list, then **Edi
 
 **Config** tab
 
++ Tags: use this to add meta-data
 + TOML: This is a data storage mechanism for configuration. Similar to INI files, you can create advanced customization to set values, etc, for script forge to reference later. 
 
 **Verification** tab
@@ -157,23 +158,36 @@ Under the authentication tab, labeled **Auth**,  users can choose between IP or 
 ![alt text][auth]
  
 #### IP Authentication
-To set 
+To set:
+
 1.	Click the **`+`** button.
-2.	Enter the IP address and click save
+2.	Enter the IP address and click **`Save`##. 
 
-![alt text][edit-switch-basic]
 
-In a **Basic** dialogue box, Users can add the IP/Hostname, Channels, and Flow Speed in numeric digits, as shown in an image above. In the image below, there is a description of the **Advanced** dialogue box.
+**Basic** tab:
+Users can modify the IP address, or set the Channels and Flow Speed in numeric digits. The Ingress and Egress selections are from the perspective of the customer switch (PBX, dialer, etc). 
 
-![alt text][edit-switch-advance]
 
-1.	Select the codecs.
-2.	Enter the switch manufacturer and Version of your customer in the respective text field.
-3.	Select the SIP Protocol, Port and Dial Pattern.
-4.	Optionally you can add CLI Prefix.
-5.	Enter the Tech Prefix, Strip Digits and Bandwidth in digits only.
-6.	You can Force From in the given text field.
-7.	And you need to select one of the options: Ingress or Egress.
+![alt text][ipauth-basic]
+
+
+**Advanced** tab
+There are several options that can be configured:
+
++ Select a codecs (if no codec is selcted, all are supported).
++ Enter the customer switch Manufacturer and Version is desired (these fields are not functional, they are for reference only).
++ Select the SIP Protocol, Port, and Dial Pattern (defaults are the standard for each parameter).
++ These fields are optional: CLI Prefix, Tech Prefix, Strip Digits, and Bandwidth (useful for customers with audio problems caused by slow speeds).
++ When using SIP registration, you can set the Force From, Username, and Password fields
++ Force NAT: switch does NAT (network address translation) by default, 
++ Intercept Reinvite: helpful to use when customer equipment doesn't support reinvites (may correct issues with dropped calls). 
+
+![alt text][ipauth-adv]
+
+**Parameter Rewrite** tab
+
+
+![alt text][ipauth-param]
 
 #### User/ Password Authentication
 
@@ -326,8 +340,9 @@ The **Invoices** tab displays a record of invoices sent to the account. Clicking
  
 [edit-cli]: /customer/img/47.png "Edit CLI"
 [auth]: /customer/img/48.png "Auth"
-[edit-switch-basic]: /customer/img/49.png "Edit Switch Basic"
-[edit-switch-advance]: /customer/img/50.png "Edit Switch Advance"
+[ipauth-basic]: /customer/img/ipauth-basic.png "Edit Switch Basic"
+[ipauth-adv]: /customer/img/ipauth-adv.png "Edit Switch Advance"
+[ipauth-param]: /customer/img/ipauth-param.png "Edit Switch Parameters"
 [user-pwd-auth]: /customer/img/51.png "User Pwd Auth"
 
 [CLI]: <https://docs.connexcs.com/en/latest/cli>
