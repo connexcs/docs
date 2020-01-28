@@ -161,7 +161,7 @@ Under the authentication tab, labeled **Auth**,  users can choose between IP or 
 To set:
 
 1.	Click the **`+`** button.
-2.	Enter the IP address and click **`Save`##. 
+2.	Enter the IP address and click **`Save`**. 
 
 
 **Basic** tab:
@@ -174,8 +174,8 @@ Users can modify the IP address, or set the Channels and Flow Speed in numeric d
 **Advanced** tab
 There are several options that can be configured:
 
-+ Select a codecs (if no codec is selcted, all are supported).
-+ Enter the customer switch Manufacturer and Version is desired (these fields are not functional, they are for reference only).
++ Select a codec (if no codec is selcted, all are supported).
++ Enter the customer switch Manufacturer and Version if desired (these fields are not functional, they are for reference only).
 + Select the SIP Protocol, Port, and Dial Pattern (defaults are the standard for each parameter).
 + These fields are optional: CLI Prefix, Tech Prefix, Strip Digits, and Bandwidth (useful for customers with audio problems caused by slow speeds).
 + When using SIP registration, you can set the Force From, Username, and Password fields
