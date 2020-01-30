@@ -145,6 +145,7 @@ Used to assign internal customer number ranges which can be used for fuctions su
 
 #### Summary
 The Summaries of calls in Live, Daily, and Monthly Formats, are all displayed in 24-hour UTC. There are several functions that can be performed with this data. 
+
 + Select multiple cells in a column to get sum and average values (not a true average, but an avergage of averages)
 + Select data from multiple columns and rows, then right click to **`Copy`**, **`Copy wth Headers`**, and **`Export`**
 + Check the box under the Action column then select **`Generate Invoice`** in the upper right corner. This will create the invoice which can then be queried by a billing system. 
@@ -153,19 +154,18 @@ The Summaries of calls in Live, Daily, and Monthly Formats, are all displayed in
 
 ### Authentication
 
-Under the **Auth** tab users can choose to setup IP or SIP (Username/Password) Authentication.
+Under the **Auth** tab users can choose to setup IP or SIP (Username/Password) Authentication. To set either one, click the **`+`** button.
+ 
  
 #### IP Authentication
-To set, click the **`+`** button.
 
-**Basic** tab:
-Users can set the IP address, Channels, and Flow Speed. The Ingress and Egress selections are from the perspective of the customer switch (PBX, dialer, etc). 
+
+On the **Basic** tab, users can set the IP address, Channels, and Flow Speed. The Ingress and Egress selections are from the perspective of the customer switch (PBX, dialer, etc). 
 
 ![alt text][ipauth-basic]
 
 
-**Advanced** tab
-There are several options that can be configured:
+On the **Advanced** tab, there are several options that can be configured:
 
 + **Codecs**: all codecs are supported un less one is specified here.
 + **Manufacturer and Version**: you can set the customer switch manufacturer and version if desired (these fields are not functional, they are for reference only).
@@ -177,9 +177,7 @@ There are several options that can be configured:
 
 ![alt text][ipauth-adv]
 
-**Parameter Rewrite** tab
-
-Used to create automatic replacements for destination numbers or CLI. 
+The **Parameter Rewrite** tab is used to create automatic replacements for destination numbers or CLI. 
 
 1. Click the **`+`**.
 2. Select the parameter you want to modify.
@@ -192,28 +190,21 @@ Used to create automatic replacements for destination numbers or CLI.
 
 #### SIP User Authentication
 
-**Basic** tab
+The **Basic** tab allows users to to setup **User/Password authentication**:
 
-To setup **User/Password authentication**:
-
-1. Click on the **'+'** button.
-1. Enter the username & password & click save.
-1. These same parameters need to be set on the customer UAC
-
++ If SIP username & password are set, these also need to be configured on the customer UAC
 + NAT/SIP Ping: refers to pings sent from ConnecCS back to the through customer firewall to their UAC. If enabled, they may keep a connection up for longer calls (typically either 1800 or 3600 seconds).
+    Disabled: no pings are sent
+    Enabled: UDP ping
+    Enabled (Timeout): SIP ping (drops connection if ping can't be returned)
 
-   Disabled: no pings are sent
-   Enabled: UDP ping
-   Enabled (Timeout): SIP ping (drops connection if ping can't be returned)
+*For additional field descriptions, see the Advanced tab under IP Authentication above.*
 
 !!! tip
     If either ping type is enabled and the user is saved, an additional tab at the top will be available which measures latency.  This can be helpful for troubleshooting audio problems. 
 
-For additional field descriptions, see the Advanced tab under IP Authentication above. 
 
-**Parameter Rewrite** tab
-
-For instructions, see the Parameter Rewrite tab under IP Authentication above.
+The fields on the **Parameter Rewrite** tab are the same as the ones for IP Authentication above.
 
 **Voice Mail** tab
 
