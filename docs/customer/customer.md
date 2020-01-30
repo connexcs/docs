@@ -153,20 +153,13 @@ The Summaries of calls in Live, Daily, and Monthly Formats, are all displayed in
 
 ### Authentication
 
-Under the authentication tab, labeled **Auth**,  users can choose between IP or User/Password Authentication.
-
-![alt text][auth]
+Under the **Auth** tab users can choose to setup IP or SIP (Username/Password) Authentication.
  
 #### IP Authentication
-To set:
-
-1.	Click the **`+`** button.
-2.	Enter the IP address and click **`Save`**. 
-
+To set, click the **`+`** button.
 
 **Basic** tab:
-Users can modify the IP address, or set the Channels and Flow Speed in numeric digits. The Ingress and Egress selections are from the perspective of the customer switch (PBX, dialer, etc). 
-
+Users can set the IP address, Channels, and Flow Speed. The Ingress and Egress selections are from the perspective of the customer switch (PBX, dialer, etc). 
 
 ![alt text][ipauth-basic]
 
@@ -174,17 +167,18 @@ Users can modify the IP address, or set the Channels and Flow Speed in numeric d
 **Advanced** tab
 There are several options that can be configured:
 
-+ Select a codec (if no codec is selcted, all are supported).
-+ Enter the customer switch Manufacturer and Version if desired (these fields are not functional, they are for reference only).
-+ Select the SIP Protocol, Port, and Dial Pattern (defaults are the standard for each parameter).
-+ These fields are optional: CLI Prefix, Tech Prefix, Strip Digits, and Bandwidth (useful for customers with audio problems caused by slow speeds).
-+ When using SIP registration, you can set the Force From, Username, and Password fields.
-+ Force NAT: forces switch to read switch the IP address the traffic was received on, not the IP in the SIP packet.
-+ Intercept Reinvite: helpful to use when customer equipment doesn't support reinvites (may correct issues with dropped calls). 
++ **Codecs**: all codecs are supported un less one is specified here.
++ **Manufacturer and Version**: you can set the customer switch manufacturer and version if desired (these fields are not functional, they are for reference only).
++ **Protocol, Port, Dial Pattern**: the default selection is the standard for each parameter
++ **CLI Prefix, Tech Prefix, Strip Digits, Bandwidth**: these fields are all optional. Setting Bandwidth may be useful for customers with audio problems caused by slow speeds.
++ **Force From, Username, and Password**: these fields need to be set when using SIP registration
++ **Force NAT**: forces switch to read the IP address the traffic was received from, not the IP in the SIP packet.
++ **Intercept Reinvite**: helpful to use when customer equipment doesn't support reinvites (may correct issues with dropped calls). 
 
 ![alt text][ipauth-adv]
 
 **Parameter Rewrite** tab
+
 Used to create automatic replacements for destination numbers or CLI. 
 
 1. Click the **`+`**.
@@ -199,6 +193,7 @@ Used to create automatic replacements for destination numbers or CLI.
 #### SIP User Authentication
 
 **Basic** tab
+
 To setup **User/Password authentication**:
 
 1. Click on the **'+'** button.
@@ -212,15 +207,17 @@ To setup **User/Password authentication**:
    Enabled (Timeout): SIP ping (drops connection if ping can't be returned)
 
 !!! tip
-If either ping type is enabled and the user is saved, an additional tab at the top will be available which measures latency.  This can be helpful for troubleshooting audio problems. 
+    If either ping type is enabled and the user is saved, an additional tab at the top will be available which measures latency.  This can be helpful for troubleshooting audio problems. 
 
 For additional field descriptions, see the Advanced tab under IP Authentication above. 
 
 **Parameter Rewrite** tab
+
 For instructions, see the Parameter Rewrite tab under IP Authentication above.
 
 **Voice Mail** tab
-If Voice Mail is enabled, you can set the email address to receive messages and the Voicemail Password. You also have the ability to view and delete current messages. 
+
+If Voice Mail is enabled, you can set which email address receives messages, as well as reset the Voicemail Password. You also have the ability to view and delete current messages. 
 
 ![alt text][sip-auth]
 
@@ -365,7 +362,6 @@ The **Invoices** tab displays a record of invoices sent to the account. Clicking
 
  
 [edit-cli]: /customer/img/47.png "Edit CLI"
-[auth]: /customer/img/48.png "Auth"
 [ipauth-basic]: /customer/img/ipauth-basic.png "Edit Switch Basic"
 [ipauth-adv]: /customer/img/ipauth-adv.png "Edit Switch Advance"
 [ipauth-param]: /customer/img/ipauth-param.png "Edit Switch Parameters"
