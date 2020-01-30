@@ -178,25 +178,51 @@ There are several options that can be configured:
 + Enter the customer switch Manufacturer and Version if desired (these fields are not functional, they are for reference only).
 + Select the SIP Protocol, Port, and Dial Pattern (defaults are the standard for each parameter).
 + These fields are optional: CLI Prefix, Tech Prefix, Strip Digits, and Bandwidth (useful for customers with audio problems caused by slow speeds).
-+ When using SIP registration, you can set the Force From, Username, and Password fields
-+ Force NAT: switch does NAT (network address translation) by default, 
++ When using SIP registration, you can set the Force From, Username, and Password fields.
++ Force NAT: forces switch to read switch the IP address the traffic was received on, not the IP in the SIP packet.
 + Intercept Reinvite: helpful to use when customer equipment doesn't support reinvites (may correct issues with dropped calls). 
 
 ![alt text][ipauth-adv]
 
 **Parameter Rewrite** tab
+Used to create automatic replacements for destination numbers or CLI. 
 
+1. Click the **`+`**.
+2. Select the parameter you want to modify.
+3. Current: enter the prefix for the destination number, or the CLI.
+4. New: enter what should replace the current information.
+5. Use Testing to test what replacement will occur.
+6. Click **`Save`** when done. 
 
 ![alt text][ipauth-param]
 
-#### User/ Password Authentication
+#### SIP User Authentication
 
-You can set the **User/Password authentication**.
+**Basic** tab
+To setup **User/Password authentication**:
 
-1.	Click on the **'+'** button.
+1. Click on the **'+'** button.
 1. Enter the username & password & click save.
+1. These same parameters need to be set on the customer UAC
 
-![alt text][user-pwd-auth]
++ NAT/SIP Ping: refers to pings sent from ConnecCS back to the through customer firewall to their UAC. If enabled, they may keep a connection up for longer calls (typically either 1800 or 3600 seconds).
+
+   Disabled: no pings are sent
+   Enabled: UDP ping
+   Enabled (Timeout): SIP ping (drops connection if ping can't be returned)
+
+!!! tip
+If either ping type is enabled and the user is saved, an additional tab at the top will be available which measures latency.  This can be helpful for troubleshooting audio problems. 
+
+For additional field descriptions, see the Advanced tab under IP Authentication above. 
+
+**Parameter Rewrite** tab
+For instructions, see the Parameter Rewrite tab under IP Authentication above.
+
+**Voice Mail** tab
+If Voice Mail is enabled, you can set the email address to receive messages and the Voicemail Password. You also have the ability to view and delete current messages. 
+
+![alt text][sip-auth]
 
 ### Routing
 
@@ -343,7 +369,7 @@ The **Invoices** tab displays a record of invoices sent to the account. Clicking
 [ipauth-basic]: /customer/img/ipauth-basic.png "Edit Switch Basic"
 [ipauth-adv]: /customer/img/ipauth-adv.png "Edit Switch Advance"
 [ipauth-param]: /customer/img/ipauth-param.png "Edit Switch Parameters"
-[user-pwd-auth]: /customer/img/51.png "User Pwd Auth"
+[sip-auth]: /customer/img/sip-auth.png "SIP Auth"
 
 [CLI]: <https://docs.connexcs.com/en/latest/cli>
 [Ingress Routing]: <https://docs.connexcs.com/en/latest/ingress-routing>
