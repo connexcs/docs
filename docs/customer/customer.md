@@ -167,7 +167,7 @@ On the **Basic** tab, users can set the IP address, Channels, and Flow Speed. Th
 
 On the **Advanced** tab, there are several options that can be configured:
 
-+ **Codecs**: all codecs are supported un less one is specified here.
++ **Codecs**: all codecs are supported unless one is specified here.
 + **Manufacturer and Version**: you can set the customer switch manufacturer and version if desired (these fields are not functional, they are for reference only).
 + **Protocol, Port, Dial Pattern**: the default selection is the standard for each parameter
 + **CLI Prefix, Tech Prefix, Strip Digits, Bandwidth**: these fields are all optional. Setting Bandwidth may be useful for customers with audio problems caused by slow speeds.
@@ -190,21 +190,20 @@ The **Parameter Rewrite** tab is used to create automatic replacements for desti
 
 #### SIP User Authentication
 
-The **Basic** tab allows users to to setup **User/Password authentication**:
+The **Basic** tab allows users to to setup **User/Password authentication**. For additional field descriptions, see the Advanced tab under IP Authentication above.
 
-+ If SIP username & password are set, these also need to be configured on the customer UAC
-+ NAT/SIP Ping: refers to pings sent from ConnecCS back to the through customer firewall to their UAC. If enabled, they may keep a connection up for longer calls (typically either 1800 or 3600 seconds).
++ **SIP username & password**: if these are set, they also need to be configured on the customer UAC
++ **NAT/SIP Ping**: refers to pings sent from ConnecCS back to the through customer firewall to their UAC. If enabled, they may keep a connection up for longer calls (typically either 1800 or 3600 seconds).
+    
     Disabled: no pings are sent
     Enabled: UDP ping
     Enabled (Timeout): SIP ping (drops connection if ping can't be returned)
-
-*For additional field descriptions, see the Advanced tab under IP Authentication above.*
 
 !!! tip
     If either ping type is enabled and the user is saved, an additional tab at the top will be available which measures latency.  This can be helpful for troubleshooting audio problems. 
 
 
-The fields on the **Parameter Rewrite** tab are the same as the ones for IP Authentication above.
+The **Parameter Rewrite** tab fields are the same as the ones for IP Authentication above.
 
 **Voice Mail** tab
 
