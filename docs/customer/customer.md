@@ -243,8 +243,9 @@ To enable call recording:
 
 #### CLI
 
-CLI / ANI is the From part of the SIP INVITE message and contains the information about who the call was placed from, more specifically we are referring to the number that is presented to have sent the call. 
-The detailed functions are explained on [CLI]
+For detailed CLI functions and field explnations, see [CLI](/customer/cli). 
+
+To set CLI options
 
 1.	Click on the **`+`** button.
 2.	Fill out the details in the dialogue box.
@@ -254,6 +255,7 @@ Details of the dialogue box can be seen below:
 
 ![alt text][edit-cli]
 
+    
 
 ### Stats
 
@@ -351,7 +353,7 @@ The **Invoices** tab displays a record of invoices sent to the account. Clicking
 [recording-2]: /customer/img/46.png "recording-2"
 
  
-[edit-cli]: /customer/img/47.png "Edit CLI"
+[edit-cli]: /customer/img/edit-cli.png "Edit CLI"
 [ipauth-basic]: /customer/img/ipauth-basic.png "Edit Switch Basic"
 [ipauth-adv]: /customer/img/ipauth-adv.png "Edit Switch Advance"
 [ipauth-param]: /customer/img/ipauth-param.png "Edit Switch Parameters"
