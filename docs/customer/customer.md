@@ -241,8 +241,8 @@ To enable call recording:
 
 ![alt text][recording-2]
 
-#### CLI
 
+#### CLI
 For detailed CLI functions and field explnations, see [CLI](/customer/cli). 
 
 To set CLI options
@@ -251,9 +251,27 @@ To set CLI options
 2.	Fill out the details in the dialogue box.
 3.	Press **`Save`**.
 
-Details of the dialogue box can be seen below:
-
 ![alt text][edit-cli]
+
++ Force CLI: To change the CLI that is presented for another, enter the CLI you wish to present, and click the **`Force CLI`** box.  It will allow you to override the previous number with one that is accepted. You can add a whitelist of CLIs and select Force on a CLI which you wish to be used if none of the others in the whitelist match.
+
++ Rewrite CLI: A CLI can be re-written. For example, you can add `123456789` in the CLI box, and then rewrite by adding `987654321` in the re-write CLI box.
+
++ P-Asserted-ID: **`P-Asserted-Identification`** is another SIP Header. It is not presented, but allows telephone companies to identify originators on a network-only level. A P-Asserted-ID uses the same syntax as Replace CLI.
+
++ Advanced CLI Match & Manipulation
+The CLI system uses Regular Expressions to match and replace numbers. Here are a few examples:
+
+|             |            CLI | Replace CLI |                                      Description |
+|-------------|---------------:|------------:|-------------------------------------------------:|
+| 123456789   |          ^1234 |             |   Allows only numbers starting with 1234 to pass |
+| 123456789   |           789$ |             |      Allows only numbers ending with 789 to pass |
+| 12345678912 | ^[0-9]{11,12}$ |             | Allows only numbers with 11 or 12 digits to pass |
+| +123456789  |   ^\+([0-9]+)$ |          \1 |                                 Remove leading + |
+| 01782123456 |    ^0([1-9]+)$ |        44\1 |             Remove leading 0 and replace with 44 |
+
+To learn more about writing regular expressions, visit http://regexr.com.  There are lots of tutorials and excercises available for all levels of expertise.
+
 
     
 
