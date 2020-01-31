@@ -243,8 +243,6 @@ To enable call recording:
 
 
 #### CLI
-For detailed CLI functions and field explnations, see [CLI](/customer/cli). 
-
 To set CLI options
 
 1.	Click on the **`+`** button.
@@ -272,8 +270,8 @@ The CLI system uses Regular Expressions to match and replace numbers. Here are a
 
 To learn more about writing regular expressions, visit http://regexr.com.  There are lots of tutorials and excercises available for all levels of expertise.
 
-
-    
+!!! note
+    Additional CLI functions and field explnations cna be found at [CLI](/customer/cli). 
 
 ### Stats
 
