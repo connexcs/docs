@@ -48,10 +48,9 @@ The following is a descrtption of each entry found in the customer window:
 * **Paypal Email:** The email address associated witht he customer's PayPal account. (This is relevant when using the IPN API. Customer can make payments directly through PayPal instead of using the Customer Portal.) 
 * **Website:** The customer's website address.
 * **Status:** The customer's status, i.e.:
-
-  *  Active : The customer is active and allowed to pass calls. 
-  *  Inactive: The account is disabled, and 
-  *  Pending Approval: New signups will be listed as pending approval.  The customer cannot pass calls or become active until this phase is completed. 
+  * Active : The customer is active and allowed to pass calls. 
+  * Inactive: The account is disabled, and 
+  * Pending Approval: New signups will be listed as pending approval.  The customer cannot pass calls or become active until this phase is completed. 
 
 * **Debit Limit:**  Sets the debit limit for postpay customers.
 * **Minimum Payment:** Set the minimum payment to keep accounts active. 
@@ -177,7 +176,7 @@ On the **Advanced** tab, there are several options that can be configured:
 
 ![alt text][ipauth-adv]
 
-The **Parameter Rewrite** tab is used to create automatic replacements for destination numbers or CLI. 
+The **Parameter Rewrite** tab is used to create automatic replacements for destination numbers or CLI, so a number is formatted in the ppaorpriate [E164 format](https://www.twilio.com/docs/glossary/what-e164). 
 
 1. Click the **`+`**.
 2. Select the parameter you want to modify.
@@ -229,6 +228,7 @@ For detailed field explanations, see [Routing](../routing).
 
 #### Call Recording
 To enable call recording:
+
 1. Click **Management** > **Customer**.
 2. Click the **Customer Name** > **Routing** > **Proxy Info**.
 3. Click the rate card name, and then select **Enable** from Recording.
