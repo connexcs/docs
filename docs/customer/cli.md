@@ -9,7 +9,7 @@ Whitelisted CLIs are those that allowed to pass through the system. This is adde
 1. Go to **Management** > **Customer**
 1. Click the **[customer]** > **Routing**
 1. Under **CLI**, click on the **`+`** button.
-1. Enter the number in the CLI field then click **`Save~**
+1. Enter the number in the CLI field then click **`Save`**
 
 ## CLI Restrict
 CLI Restrict lets you block calls. The blocked CLI is added in the Provider Rate Card:
