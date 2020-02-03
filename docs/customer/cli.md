@@ -10,11 +10,11 @@ Whitelisted CLIs are those that allowed to pass through the system. Add the CLI 
 CLI Restrict lets you block calls. The blocked CLI is added in the provider rate card:
 
 1. Click **Management** > **Rate Card**. 
-2. Select **Provider Rate Card** > **Edit** > **Advanced**.
-3. Enter the CLI/ANIs you want to block.
+2. Select **Provider Rate Card** (under the Name column).
+1. Select **Properties** > **Advanced**.
+3. Enter the CLI/ANIs you want to block in the **CLI Restrict** box.
 4. Click **`Save`**.
 
 ![alt text][recording-7]
 
 [recording-7]: /customer/img/63.png "recording-7"
-[recording-8]: /customer/img/recording-8.png "recording-8"
