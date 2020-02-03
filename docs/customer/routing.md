@@ -12,26 +12,26 @@ Routing allocates incoming attempts to a designated rate card, which in turn egr
 
 + **Dial String**: Used as an alternative to the predefined dial strings above, setting a dial string (or "dial pattern") here will only allow entered prefixes to pass. There are listed one per line, both prefix and regular expressions are allowed. For example, if you only wanted to allow UK Landline you could use:
 
-* Prefix
+    * Prefix
 
-```
-441
-442
-```
+    ```
+    441
+    442
+    ```
 
-* Regular Expression (RegEx)
+    * Regular Expression (RegEx)
 
-```
-44(1|2)
-```
+    ```
+    44(1|2)
+    ```
 
-* Combination (UK Landline & Canada)
+    * Combination (UK Landline & Canada)
 
-```
-441
-442
-^1(204|226|236|249|250|289|306|343|403|416|418|438|450|506|514|519|579|581|587|604|613|647|705|709|778|780|807|819|867|902|905)
-```
+    ```
+    441
+    442
+    ^1(204|226|236|249|250|289|306|343|403|416|418|438|450|506|514|519|579|581|587|604|613|647|705|709|778|780|807|819|867|902|905)
+    ```
 
 + **Enabled**: The route can be easily enabled and disabled here. 
 
