@@ -225,7 +225,7 @@ The details of the dialogue box can be seen in the image below:
 
 ![alt text][ingress-routing-tab]
 
-See our [Ingress Routing] page in these for more in-depth information.
+For detailed field explanations, see [Routing](../customer/routing).
 
 #### Call Recording
 To enable call recording:
