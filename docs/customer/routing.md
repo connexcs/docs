@@ -41,7 +41,7 @@ Routing allocates incoming attempts to a designated rate card, which in turn egr
 + Set **Capped Rate** and **Provider Capped Rate** to set the maximum cost of a call. 
 
 + **Profit Assurance**: To check if calls are profitable, enable **Profit Assurance**. It is useful for A-Z routes or NPA-NXX rate cards. 
-    + The default option is `Disabled`, while `Enabled` can add additional PDD to the call.
+    + The default option is `Disabled`. While `Enabled`, additional PDD may be added to the call.
 
 + **Block Connect Cost**: When this is enabled, calls that have a connection cost will be blocked. 
 
