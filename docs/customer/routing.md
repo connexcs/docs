@@ -2,21 +2,15 @@
 
 Routing allocates incoming attempts to a designated rate card, which in turn egresses through a specified provider. It allows multiple rate cards to be used with or without a prefix. This is checked according to the longest prefix first, then the shortest for a match. If no prefix is matched, it will match the rate cards with mutually exclusive destinations.  If there are multiple rate cards with the same prefixes, you must set up a dial plan with a tech prefix to identify the correct card.
 
-## Tariff
+## Basic
 
-Tariffs let you select which rate card is used on a customer's account.
++ **Rate Card**: Also known as Tariff, this allows you to select the rate card used on a customer's account.
 
-## Tech Prefix
++ **Tech Prefix**: This is used to determine the routing. When multiple customers share the same IP address, each customer needs an individual tech prefix so the switch can sort them. It lets providers separate multiple rate cards.
 
-It is possible for multiple customers to share the same IP address, and to be sorted by Tech Prefix. It lets providers separate multiple rate cards.
++ **Dial String Prefix Set**: Setting a Dial String Prefix allows deterine routing based on a predefined prefix set (defined under Setup > Advanced > Prefix Set.)
 
-## Channels
-
-Here you can place limits on how many channels are allowed through each route. It is independent of any customer-imposed channel limitations, which still apply.
-
-## Dial string / Dial Pattern
-
-A dial string will only allow entered prefixes to pass, listed as one per line. Both prefix and regular expressions are allowed. For example, if you only wanted to allow UK Landline you could use:
++ **Dial String**: Used as an alternative to the predefined dial strings above, setting a dial string (or "dial pattern") here will only allow entered prefixes to pass. There are listed one per line, both prefix and regular expressions are allowed. For example, if you only wanted to allow UK Landline you could use:
 
 * Prefix
 
@@ -26,45 +20,54 @@ A dial string will only allow entered prefixes to pass, listed as one per line. 
 ```
 
 * Regular Expression (RegEx)
+
 ```
 44(1|2)
 ```
+
 * Combination (UK Landline & Canada)
+
 ```
 441
 442
 ^1(204|226|236|249|250|289|306|343|403|416|418|438|450|506|514|519|579|581|587|604|613|647|705|709|778|780|807|819|867|902|905)
 ```
-## Missing BYE Protection
 
-A VoIP call is stateful, even though its protocol is stateless. This means that both sides of the conversation have to be told when to finish the call. They do this with a BYE message. If the BYE message goes missing, the call will continue forever.  The following are the methods we use to stop that from happening.
++ **Enabled**: The route can be easily enabled and disabled here. 
 
-* **Maximum Duration**: If a BYE gets missed, Maximum Duration is the maximum amount of time that the call will be allowed to exist before being terminated.
-* **Time-out Methods**
 
-    * **SIP Ping:** This sends a SIP packet to the remote end of the conversation roughly every 30 seconds. This checks to see if the other side is still aware of an ongoing conversation. If this is not received back, or is told that the conversation is not active then it shuts off the call. 
+## Price Limits
+
++ Set **Capped Rate** and **Provider Capped Rate** to set the maximum cost of a call. 
+
++ **Profit Assurance**: To check if calls are profitable, enable **Profit Assurance**. It is useful for A-Z routes or NPA-NXX rate cards. 
+    + The default option is `Disabled`, while `Enabled` can add additional PDD to the call.
+
++ **Block Connect Cost**: When this is enabled, calls that have a connection cost will be blocked. 
+
+
+## Capacity Limits
+
++ Set maximum number of **Channels**
+
++ **Max Duration**: If a BYE gets missed, Maximum Duration is the maximum amount of time that the call will be allowed to exist before being terminated. This is one of two methods for setting up **Missing BYE Protection**. A VoIP call is stateful, even though its protocol is stateless. This means that both sides of the conversation have to be told when to finish the call. They do this with a BYE message. If the BYE message goes missing, the call will continue forever. The other method is by using **Time-outs** using a **SIP Ping**. This is set in the Customer Card > Auth > SIP User Authentication.  This sends a SIP packet to the remote end of the conversation roughly every 30 seconds. This checks to see if the other side is still aware of an ongoing conversation. If it is not received back, or is told that the conversation is not active, then it shuts off the call. 
+
 Note: Asterisk does not have SIP Ping (OPTIONS) enabled as default, if your customer / carrier is using Asterisk you may need to disable this if they don't have it enabled on their side as calls will typically disconnect after 30 seconds. 
-    * **RTP Time-out:** Another way to check for an active call is to detect if there is audio passing. If there is no audio passing for a pre-set interval, our RTP array will notify the switch and instruct it to terminate the call.  This won't work if RTP Mode is set to direct.
-
-## Profit Assurance
-
-To check if calls are profitable, enable **Profit Assurance**. It is useful for A-Z routes or NPA-NXX rate cards. 
-
-The default option is `Disabled`, while `Enabled` can add additional PDD to the call.
-
-## Lock Parent Card
-
-To lock a rate card from the list of providers you have added, choose this option. 
-
-## Exclude Parent Cards
-
-To exclude access to one or more of the rate cards from providers on your list, choose this option.
+ 
+ * **RTP Time-out:** Another way to check for an active call is to detect if there is audio passing. If there is no audio passing for a pre-set interval, our RTP array will notify the switch and instruct it to terminate the call.  This won't work if RTP Mode is set to direct.
 
 ## ScriptForge
 
 The PHP ScriptForge allows for custom code to run from within the ConnexCS platform.  For more information, see the [ScriptForge] page.
 
-## RTP Proxy 
+## Locks
+
++ **Lock** Parent Card: Choose this option to lock a rate card from the list of available providers. 
++ **Exclude** Parent Card: Choose this option to exclude access to one or more of the rate cards in the list of available providers.
+
+## Media
+
++ RTP Proxy 
 
 When a call is established between customer and provider, audio can be set-up in one of two ways:
 
