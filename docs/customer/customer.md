@@ -249,6 +249,7 @@ To set CLI options
 2.	Fill out the fields in the dialogue box and **`Save`**.
 
 Field details:
+
 + Force CLI: To change the CLI that is presented for another, enter the CLI you wish to present, and click the **`Force CLI`** box.  It will allow you to override the previous number with one that is accepted. You can add a whitelist of CLIs and select Force on a CLI which you wish to be used if none of the others in the whitelist match.
 
 + Rewrite CLI: A CLI can be re-written. For example, you can add `123456789` in the CLI box, and then rewrite by adding `987654321` in the re-write CLI box. (See **Advanced CLI Match and Manipulation** below.)
@@ -271,7 +272,7 @@ The CLI system uses Regular Expressions to match and replace numbers. Here are a
 *To learn more about writing regular expressions, visit http://regexr.com.  There are lots of tutorials and excercises available for all levels of expertise.*
 
 !!! note
-    Additional CLI functions are at [CLI](/customer/cli). 
+    To Whitelist and Restrict CLIs, see [CLI](/customer/cli). 
 
 ### Stats
 
