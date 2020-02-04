@@ -35,7 +35,7 @@ The following explains how to add new customers using the **Customer Management*
 
 1. Click the  **`+`** button.
 
-![alt text][add-Customer-new]
+    ![alt text][add-Customer-new]
 
 2. Enter the relevant details in each text box.
 3. Click the **`Save`** button.
