@@ -44,7 +44,7 @@ The following explains how to add new customers using the **Customer Management*
 
 The following is a descrtption of each entry found in the customer window:
 
-* **Customer Name:** - A name or unique identifier for each customer.
+* **Customer Name:** A name or unique identifier for each customer.
 * **Paypal Email:** The email address associated witht he customer's PayPal account. (This is relevant when using the IPN API. Customer can make payments directly through PayPal instead of using the Customer Portal.) 
 * **Website:** The customer's website address.
 * **Status:** The customer's status, i.e.:
