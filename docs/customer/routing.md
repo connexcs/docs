@@ -4,13 +4,13 @@ Routing allocates incoming attempts to a designated rate card, which in turn egr
 
 ## Basic
 
-+ **Rate Card**: Also known as Tariff, this allows you to select the rate card used on a customer's account.
+**Rate Card**: Also known as Tariff, this allows you to select the rate card used on a customer's account.
 
-+ **Tech Prefix**: This is used to determine the routing. When multiple customers share the same IP address, each customer needs an individual tech prefix so the switch can sort them. It lets providers separate multiple rate cards.
+**Tech Prefix**: This is used to determine the routing. When multiple customers share the same IP address, each customer needs an individual tech prefix so the switch can sort them. It lets providers separate multiple rate cards.
 
-+ **Dial String Prefix Set**: Setting a Dial String Prefix allows deterine routing based on a predefined prefix set (defined under Setup > Advanced > Prefix Set.)
+**Dial String Prefix Set**: Setting a Dial String Prefix allows deterine routing based on a predefined prefix set (defined under Setup > Advanced > Prefix Set.)
 
-+ **Dial String**: Used as an alternative to the predefined dial strings above, setting a dial string (or "dial pattern") here will only allow entered prefixes to pass. There are listed one per line, both prefix and regular expressions are allowed. For example, if you only wanted to allow UK Landline you could use:
+**Dial String**: Used as an alternative to the predefined dial strings above, setting a dial string (or "dial pattern") here will only allow entered prefixes to pass. There are listed one per line, both prefix and regular expressions are allowed. For example, if you only wanted to allow UK Landline you could use:
 
     Prefix
     ```
@@ -30,7 +30,7 @@ Routing allocates incoming attempts to a designated rate card, which in turn egr
     ^1(204|226|236|249|250|289|306|343|403|416|418|438|450|506|514|519|579|581|587|604|613|647|705|709|778|780|807|819|867|902|905)
     ```
 
-+ **Enabled**: The route can be easily enabled and disabled here. 
+**Enabled**: The route can be easily enabled and disabled here. 
 
 
 ## Price Limits
@@ -94,7 +94,7 @@ Unless it's turned off or customized otherwise, ASR+ is active for 90% of calls,
 The PHP ScriptForge allows for custom code to run from within the ConnexCS platform.  Script are assigned to customers within routing. For more information about setup and operation, see the [ScriptForge](https://docs.connexcs.com/developers/scriptforge/) page.
 
 ## Locks
-
+Used for troublshooting, you can remove carriers from a route and run a quick test.  
 + **Lock** Parent Card: Choose this option to lock a rate card from the list of available providers. 
 + **Exclude** Parent Card: Choose this option to exclude access to one or more of the rate cards in the list of available providers.
 
