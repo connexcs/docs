@@ -203,7 +203,7 @@ You can assign scripts to customers:
 5. In **Edit Route Ingress**, go to **ScriptForge**
 5. Select the script
 6. Set the **Timeout** to specify how long it will run before timing out
-6. The **Timeout Action** is entered manually and must be formatted as **`[sip response code] [sip reponse message]'**. 
+6. The **Timeout Action** is entered manually and must be formatted as **`[sip response code] [sip response message]`**. 
 6. Click **`Save`**.
  
 ![alt text][s9] 
