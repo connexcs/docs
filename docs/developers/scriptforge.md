@@ -194,14 +194,16 @@ Run the script again:
 
 You can assign scripts to customers:
 
-1. Select **Customer** from the menu. 
-2. Choose a customer from the list by clicking its name.
-3. Navigate to the **Routing** tab 
+1. Select **Customer** > [**customer]** 
+3. Navigate to **Routing** >
 4. Select a rate card from the table.
 
     ![alt text][s8]  
  
-5. A form opens called **Route Ingress**. Find the **ScriptForge** field and select your custom script from the list
+5. In **Edit Route Ingress**, go to **ScriptForge**
+5. Select the script
+6. Set the **Timeout** to specify how long it will run before timing out
+6. The **Timeout Action** is entered manually and must be formatted as **`[sip response code] [sip reponse message]'**. 
 6. Click **`Save`**.
  
 ![alt text][s9] 
