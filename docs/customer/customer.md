@@ -191,15 +191,17 @@ The **Parameter Rewrite** tab is used to create automatic replacements for desti
 
 The **Basic** tab allows users to to setup **User/Password authentication**. For additional field descriptions, see the Advanced tab under IP Authentication above.
 
-+ **SIP username & password**: if these are set, they also need to be configured on the customer UAC
-+ **NAT/SIP Ping**: refers to pings sent from ConnecCS back to the through customer firewall to their UAC. If enabled, they may keep a connection up for longer calls (typically either 1800 or 3600 seconds).
++ **SIP username**: This must also be configured on the customer UAC.
++ **NAT/SIP Ping**: refers to pings sent from ConnexCS back to the through customer firewall to their UAC. If enabled, they may keep a connection up for longer calls (typically either 1800 or 3600 seconds).
     
     Disabled: no pings are sent
+    
     Enabled: UDP ping
+    
     Enabled (Timeout): SIP ping (drops connection if ping can't be returned)
 
 !!! tip
-    If either ping type is enabled and the user is saved, an additional tab at the top will be available which measures latency.  This can be helpful for troubleshooting audio problems. 
+    After NAT or SIP pings are enabled and the user is saved, an additional tab at the top will be available which measures latency.         This can be helpful for troubleshooting audio problems. 
 
 
 The **Parameter Rewrite** tab fields are the same as the ones for IP Authentication above.
