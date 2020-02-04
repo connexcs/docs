@@ -195,9 +195,9 @@ Run the script again:
 You can assign scripts to customers:
 
 1. Select **Customer** from the menu. 
-2.  Choos a customer from the list by clicking its name.
-3.  Navigate to the **Routing** tab 
-4.  Select a rate card from the table.
+2. Choose a customer from the list by clicking its name.
+3. Navigate to the **Routing** tab 
+4. Select a rate card from the table.
 
     ![alt text][s8]  
  
