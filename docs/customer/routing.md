@@ -49,11 +49,41 @@ Routing allocates incoming attempts to a designated rate card, which in turn egr
 
 + **Max Duration**: Maximum Duration is the maximum amount of time that the call will be allowed to exist before being terminated, typically in the case of a missed BYE missed. 
 
-!!! info "Determinng call timeouts"
+!!! info "Determining call timeouts"
     A VoIP call is stateful, even though its protocol is stateless. This means that both sides of the conversation have to be told when to finish the call. They do this with a BYE message. If the BYE message goes missing, the call will continue forever. Max Duration is a method for setting up **Missing BYE Protection**. Another method is by using a **SIP Ping** to determine when the connection has timed out. This sends a SIP packet to the remote end of the conversation roughly every 30 seconds. This checks to see if the other side is still aware of an ongoing conversation. If it is not received back, or is told that the conversation is not active, then it shuts off the call. **RTP Time-out:** is another way to check for an active call based on whether audio is passing. If there is no audio passing for a pre-set interval, our RTP array will notify the switch and instruct it to terminate the call.  This won't work if RTP Mode is set to direct.
 
 !!! warning "Asterisk pings"
     Asterisk does not have SIP Ping (OPTIONS) enabled as default, if your customer / carrier is using Asterisk you may need to disable       this if they don't have it enabled on their side as calls will typically disconnect after 30 seconds. 
+
++ Use **Flow Speed (CPS)** and **CPS Spike Buffer** to manage large volumes of calls over short periods of time. Once the buffer limit is reached then the calls per second kicks in, spreading the spike of calls over a longer period of time. 
+
++ **ASR Plus** is a proprietary technology developed by ConnexCS to filter known failed non-existant / working numbers between the customer and the carrier for termination.
+
+**Advantages of ASR**
+
+* Quick failure of known bad numbers.
+* Reduces response time for your customers.
+* Improves the ASR of the traffic that your upstream carrier sees.
+* Highly effective for call centre traffic.
+
+**Disadvantages of ASR**
+
+* Marginal impact on your NER due to false positive matches. This is usually kept within tolerances of < 0.1%.
+* Does not offer improvements for all destinations.
+
+**ASR Settings**
+
+| Value         | Description                | 
+| ------------- |----------------------------| 
+| Off           | ASR+ Disabled              | 
+| ASR+ (Low)    | Active on 30% of calls     | 
+| ASR+          | Active                     |
+| ASR?          | When ASR+ is enabled on the provider card |
+| ASR+?         | When ASR+ is enabled on the provider card, only known connected calls will be allowed to pass to specific provider |
+| ASR++         | Only known connected calls will be allowed to pass (Rarely used as usually too strict) |
+
+Unless it's turned off or customized otherwise, ASR+ is active for 90% of calls, which grants the opportunity for the database to be replenished.
+
 
 ## ScriptForge
 
@@ -126,30 +156,4 @@ Passive SST is enabled by default, and all RE-INVITES will propagate through the
  - **Enabled (Upstream(:** ConnexCS will use SST with the carrier.
  - **Enabled (Downstream):** ConnexCS will use SST with the customer.
 
-## ASR+
-ASR+ is a proprietary technology developed by ConnexCS to filter known failed non-existant / working numbers between the customer and the carrier for termination.
 
-**Advantages of ASR**
-
-* Quick failure of known bad numbers.
-* Reduces response time for your customers.
-* Improves the ASR of the traffic that your upstream carrier sees.
-* Highly effective for call centre traffic.
-
-**Disadvantages of ASR**
-
-* Marginal impact on your NER due to false positive matches. This is usually kept within tolerances of < 0.1%.
-* Does not offer improvements for all destinations.
-
-**ASR Settings**
-
-| Value         | Description                | 
-| ------------- |----------------------------| 
-| Off           | ASR+ Disabled              | 
-| ASR+ (Low)    | Active on 30% of calls     | 
-| ASR+          | Active                     |
-| ASR?          | When ASR+ is enabled on the provider card |
-| ASR+?         | When ASR+ is enabled on the provider card, only known connected calls will be allowed to pass to specific provider |
-| ASR++         | Only known connected calls will be allowed to pass (Rarely used as usually too strict) |
-
-Unless it's turned off or customized otherwise, ASR+ is active for 90% of calls, which grants the opportunity for the database to be replenished.
