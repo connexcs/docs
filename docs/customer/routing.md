@@ -58,11 +58,11 @@ Routing allocates incoming attempts to a designated rate card, which in turn egr
 + Use **Flow Speed (CPS)** and **CPS Spike Buffer** to manage large volumes of calls over short periods of time. Once the buffer limit is reached then the calls per second kicks in, spreading the spike of calls over a longer period of time. 
 
 + **ASR Plus** is a proprietary technology developed by ConnexCS to filter known failed non-existant / working numbers between the customer and the carrier for termination. This is particularly useful with the larger call volumes. 
- + Advantages of ASR
-     + Quick failure of known bad numbers.
-     + Reduces response time for your customers.
-     + Improves the ASR of the traffic that your upstream carrier sees.
-     + Highly effective for call centre traffic.
+!!! success "Advantages of ASR"
++ Quick failure of known bad numbers.
++ Reduces response time for your customers.
++ Improves the ASR of the traffic that your upstream carrier sees.
++ Highly effective for call centre traffic.
 
 **Disadvantages of ASR**
 
