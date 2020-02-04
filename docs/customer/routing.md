@@ -35,7 +35,7 @@ Routing allocates incoming attempts to a designated rate card, which in turn egr
 
 ## Price Limits
 
-+ Set **Capped Rate** and **Provider Capped Rate** to set the maximum cost of a call. 
++ Set **Capped Rate** and **Provider Capped Rate** to set the maximum cost of a call. Calls that exceed the set rate willl not be connected. 
 
 + **Profit Assurance**: To check if calls are profitable, enable **Profit Assurance**. It is useful for A-Z routes or NPA-NXX rate cards. 
     + The default option is `Disabled`. While `Enabled`, additional PDD may be added to the call.
@@ -47,11 +47,13 @@ Routing allocates incoming attempts to a designated rate card, which in turn egr
 
 + Set maximum number of **Channels**
 
-+ **Max Duration**: If a BYE gets missed, Maximum Duration is the maximum amount of time that the call will be allowed to exist before being terminated. This is one of two methods for setting up **Missing BYE Protection**. A VoIP call is stateful, even though its protocol is stateless. This means that both sides of the conversation have to be told when to finish the call. They do this with a BYE message. If the BYE message goes missing, the call will continue forever. The other method is by using **Time-outs** using a **SIP Ping**. This is set in the Customer Card > Auth > SIP User Authentication.  This sends a SIP packet to the remote end of the conversation roughly every 30 seconds. This checks to see if the other side is still aware of an ongoing conversation. If it is not received back, or is told that the conversation is not active, then it shuts off the call. 
++ **Max Duration**: Maximum Duration is the maximum amount of time that the call will be allowed to exist before being terminated, typically in the case of a missed BYE missed. 
 
-Note: Asterisk does not have SIP Ping (OPTIONS) enabled as default, if your customer / carrier is using Asterisk you may need to disable this if they don't have it enabled on their side as calls will typically disconnect after 30 seconds. 
- 
- * **RTP Time-out:** Another way to check for an active call is to detect if there is audio passing. If there is no audio passing for a pre-set interval, our RTP array will notify the switch and instruct it to terminate the call.  This won't work if RTP Mode is set to direct.
+!!! info "Determinng call timeouts"
+    A VoIP call is stateful, even though its protocol is stateless. This means that both sides of the conversation have to be told when to finish the call. They do this with a BYE message. If the BYE message goes missing, the call will continue forever. Max Duration is a method for setting up **Missing BYE Protection**. Another method is by using a **SIP Ping** to determine when the connection has timed out. This sends a SIP packet to the remote end of the conversation roughly every 30 seconds. This checks to see if the other side is still aware of an ongoing conversation. If it is not received back, or is told that the conversation is not active, then it shuts off the call. **RTP Time-out:** is another way to check for an active call based on whether audio is passing. If there is no audio passing for a pre-set interval, our RTP array will notify the switch and instruct it to terminate the call.  This won't work if RTP Mode is set to direct.
+
+!!! warning "Asterisk pings"
+    Asterisk does not have SIP Ping (OPTIONS) enabled as default, if your customer / carrier is using Asterisk you may need to disable       this if they don't have it enabled on their side as calls will typically disconnect after 30 seconds. 
 
 ## ScriptForge
 
