@@ -193,12 +193,13 @@ Run the script again:
 ## Assigning the Script to a customer
 
 You can assign scripts to customers:
+
 1. Select **Customer** from the menu. 
 2.  Choos a customer from the list by clicking its name.
 3.  Navigate to the **Routing** tab 
 4.  Select a rate card from the table.
 
-![alt text][s8]  
+    ![alt text][s8]  
  
 5. A form opens called **Route Ingress**. Find the **ScriptForge** field and select your custom script from the list
 6. Click **`Save`**.
