@@ -67,7 +67,6 @@ Routing allocates incoming attempts to a designated rate card, which in turn egr
       <li>Highly effective for call centre traffic.</li>
     </ul>
 </div>
-
 <div class="admonition failure">
 <p class="admonition-title">Disadvantages of ASR</p>
     <ul>
