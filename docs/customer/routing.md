@@ -35,29 +35,34 @@ Routing allocates incoming attempts to a designated rate card, which in turn egr
 
 ## Price Limits
 
-+ Set **Capped Rate** and **Provider Capped Rate** to set the maximum cost of a call. Calls that exceed the set rate willl not be connected. 
+**Capped Rate** and **Provider Capped Rate** are used to set the maximum cost of a call. Calls that exceed the set rate willl not be connected. 
 
-+ **Profit Assurance**: To check if calls are profitable, enable **Profit Assurance**. It is useful for A-Z routes or NPA-NXX rate cards. 
-    + The default option is `Disabled`. While `Enabled`, additional PDD may be added to the call.
+**Profit Assurance** can be enabled to check if calls are profitable. It is useful for A-Z routes or NPA-NXX rate cards. 
++ The default option is `Disabled`. While `Enabled`, additional PDD may be added to the call.
 
-+ **Block Connect Cost**: When this is enabled, calls that have a connection cost will be blocked. 
+**Block Connect Cost** Enabling this feature will block any call that has a connection cost. 
 
 
 ## Capacity Limits
 
-+ Set maximum number of **Channels**
+**Channels** is used to set the maximum number of channels
 
-+ **Max Duration**: Maximum Duration is the maximum amount of time that the call will be allowed to exist before being terminated, typically in the case of a missed BYE missed. 
+**Max Duration** is the maximum amount of time that the call will be allowed to exist before being terminated, typically in the case of a missed BYE missed. 
 
-!!! info "Determining call timeouts"
+!!! info "Call Timeouts"
     A VoIP call is stateful, even though its protocol is stateless. This means that both sides of the conversation have to be told when to finish the call. They do this with a BYE message. If the BYE message goes missing, the call will continue forever. Max Duration is a method for setting up **Missing BYE Protection**. Another method is by using a **SIP Ping** to determine when the connection has timed out. This sends a SIP packet to the remote end of the conversation roughly every 30 seconds. This checks to see if the other side is still aware of an ongoing conversation. If it is not received back, or is told that the conversation is not active, then it shuts off the call. **RTP Time-out:** is another way to check for an active call based on whether audio is passing. If there is no audio passing for a pre-set interval, our RTP array will notify the switch and instruct it to terminate the call.  This won't work if RTP Mode is set to direct.
 
 !!! warning "Asterisk pings"
     Asterisk does not have SIP Ping (OPTIONS) enabled as default, if your customer / carrier is using Asterisk you may need to disable       this if they don't have it enabled on their side as calls will typically disconnect after 30 seconds. 
 
-+ Use **Flow Speed (CPS)** and **CPS Spike Buffer** to manage large volumes of calls over short periods of time. Once the buffer limit is reached then the calls per second kicks in, spreading the spike of calls over a longer period of time. 
+**Flow Speed (CPS)** limits the calls per second. This must be set for each customer card assigned to the customer account
 
-+ **ASR Plus** is a proprietary technology developed by ConnexCS to filter known failed non-existant / working numbers between the customer and the carrier for termination. This is particularly useful with the larger call volumes. 
+**CPS Spike Buffer** limits a spike in calls per second. are used to manage large volumes of calls over short periods of time. Once the buffer limit is reached then the calls per second kicks in, spreading the spike of calls over a longer period of time. 
+
+!!! note "CPS Buffering"
+    CPS Buffering is used to manage large volumes of calls over a short period of time. This process maximises saturation and increases call completion within a given CPS restriction. It does this by removing spikes and borrowing capacity from future seconds. If incoming traffic exceeds your pre-set CPS, it holds the call for one second, and then tries again. You can increase the second count in the CPS Spike Buffer field. Changing the CPS Buffering value only affects calls that exceed the CPS. The delay will show as increased PDD on the call, each second the system will emit a 100 Trying (High CPS, Buffering) response to indicate the status/progress of the call.
+
+**ASR Plus** is a proprietary technology developed by ConnexCS to filter known failed non-existant / working numbers between the customer and the carrier for termination. This is particularly useful with the larger call volumes. 
 <div class="admonition success">
 <p class="admonition-title">Advantages of ASR</p>
     <ul>
@@ -136,15 +141,7 @@ There are two RTP proxy modes:
 * **Strict**-This will enforce the proxy engagement. If the proxy can't engage with the call, the call will not be established. Note: Free accounts are limited to how many RTP Proxy channels are enabled, this may prevent calls connecting if you have more channels than our free accounts allow you to have.
 * **Relaxed**-This will perform best efforts to engage the RTP Proxy, if it can't be engaged because of either network errors, or because you don't have enough RTP capacity, the calls will connect directly.
 
-## CPS Buffering
 
-CPS Buffering is a process that maximises saturation and increases call completion within a given CPS restriction. It does this by removing spikes and borrowing capacity from future seconds. If incoming traffic exceeds your pre-set CPS, it holds the call for one second, and then tries again. You can increase the second count in the CPS Spike Buffer field.
-
-Changing the CPS Buffering value only affects calls that exceed the CPS. The delay will show as increased PDD on the call, each second the system will emit a 100 Trying (High CPS, Buffering) response to indicate the status/progress of the call.
-
-**CPS Limitation** 
-
-**Calls Per Second** can be limited in Ingress Routing. You can set CPS limitations on each customer card assigned to the customer account
 
 ## SIP Session Timers (SST)
 **SIP Session Timers** ensure there are no ghost or long-duration calls being billed when one or both sides have hung up. A timer is activated when the call starts and refreshes the call every X amount of seconds by sending a RE-INVITE. SST is currently the best way to prevent long-duration calls, superceeding SIP Ping Timeout. Note that any SST less than sixty(60) seconds will be rejected
