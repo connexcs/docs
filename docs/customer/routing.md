@@ -68,10 +68,13 @@ Routing allocates incoming attempts to a designated rate card, which in turn egr
     </ul>
 </div>
 
-**Disadvantages of ASR**
-
-* Marginal impact on your NER due to false positive matches. This is usually kept within tolerances of < 0.1%.
-* Does not offer improvements for all destinations.
+<div class="admonition failure">
+<p class="admonition-title">Disadvantages of ASR</p>
+    <ul>
+      <li>Marginal impact on your NER due to false positive matches. This is usually kept within tolerances of < 0.1%.</li>
+      <li>Does not offer improvements for all destinations.</li>
+    </ul>
+</div>
 
 **ASR Settings**
 
