@@ -87,7 +87,7 @@ Unless it's turned off or customized otherwise, ASR+ is active for 90% of calls,
 
 ## ScriptForge
 
-The PHP ScriptForge allows for custom code to run from within the ConnexCS platform.  For more information, see the [ScriptForge](..developers/scriptforge/) page.
+The PHP ScriptForge allows for custom code to run from within the ConnexCS platform.  Script are assigned to customers within routing. For more information about setup and operation, see the [ScriptForge](..developers/scriptforge/) page.
 
 ## Locks
 
