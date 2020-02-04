@@ -61,10 +61,10 @@ Routing allocates incoming attempts to a designated rate card, which in turn egr
 
    + Advantages of ASR
 
-        * Quick failure of known bad numbers.
-        * Reduces response time for your customers.
-        * Improves the ASR of the traffic that your upstream carrier sees.
-        * Highly effective for call centre traffic.
+        + Quick failure of known bad numbers.
+        + Reduces response time for your customers.
+        + Improves the ASR of the traffic that your upstream carrier sees.
+        + Highly effective for call centre traffic.
 
 **Disadvantages of ASR**
 
@@ -87,7 +87,7 @@ Unless it's turned off or customized otherwise, ASR+ is active for 90% of calls,
 
 ## ScriptForge
 
-The PHP ScriptForge allows for custom code to run from within the ConnexCS platform.  For more information, see the [ScriptForge] page.
+The PHP ScriptForge allows for custom code to run from within the ConnexCS platform.  For more information, see the [ScriptForge](..developers/scriptforge/) page.
 
 ## Locks
 
