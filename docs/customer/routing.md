@@ -105,8 +105,43 @@ Used for troublshooting, you can remove carriers from a route and run a quick te
 
 ## Media
 
-+ RTP Proxy 
+**Transcoding**
+This option is limited. Best use case is for customers in low-bandwidth areas that want to use G.729. Be aware that if you don't have enough transcoding capacity, calls will fail. 
 
+**SIP Ping**
+Sends regular ping to ensure both sides of a call are still up, in case of potential failed ACK. Enabled is the recommended setting. 
+
+**SIP Session Timer (SST)** 
+When enabled, SST ensures there are no ghost or long-duration calls being billed when one or both sides have hung up. A timer is activated when the call starts and refreshes the call every X amount of seconds by sending a RE-INVITE. SST is currently the best way to prevent long-duration calls, superceeding SIP Ping Timeout. Note that any SST less than sixty (60) seconds will be rejected
+
+Passive SST is enabled by default, Enabled is the recommended setting. 
+
+|SST Options              | Result                                                                                           |
+|-------------------------|:------------------------------------------------------------------------------------------------:|
+| **Default**             | No headers are changed and no SST is engaged, all RE-INVITES will propagate through the system   |
+| **Enabled Both**        | ConnexCS will send SIP Session Timers to both legs of the call                                   |
+| **Enabled (Upstream)**  | ConnexCS will use SST with the carrier                                                           |
+| **Enabled (Downstream)**| ConnexCS will use SST with the customer                                                          |
+| **Suggest**             | Session-Expire headers and Min-SE are added to packets sent to carrier encouraging the use of SST|
+| **Disabled**            | All ```timer``` headers are removed                                                              |
+
+
+
+**RTP Media Proxy**
+This defaults to Auto but selecting a zone is the current recommendation. Choose which RTP Proxy you want engaged:  
+
+* **Auto**: uses the least expensive path between your customer and provider.  You can list various countries, though it is recommended you choose a location near a provider or your customer. 
+* **Direct RTP (no proxy)**: media flows directly between the customer and carrier. Direct RTP also means that if there are audio issues, the issue can't be ConnexCS. Since it isn't likely to be the carrier, the issue typically exists on the customer's end. 
+
+
+**RTP Proxy Mode**
+If connection via our service fails, and relaxed is selected, it will failover to backup automatically. 
+
+* **Strict**: This will enforce the proxy engagement. If the proxy can't engage with the call, the call will not be established. Note: Free accounts are limited to how many RTP Proxy channels are enabled, this may prevent calls connecting if you have more channels than our free accounts allow you to have.
+* **Relaxed**: This will perform best efforts to engage the RTP Proxy, if it can't be engaged because of either network errors, or because you don't have enough RTP capacity, the calls will connect directly.
+
+
+**RTP Proxy distinctions**
 When a call is established between customer and provider, audio can be set-up in one of two ways:
 
 |                        | **With RTP Proxy** |  **Without RTP Proxy** |
@@ -116,45 +151,19 @@ When a call is established between customer and provider, audio can be set-up in
 | **Latency**            | Low                | Lowest                 |
 | **Information Leakage**| No                 |  Yes*                  |
 
- 	
-While it's doubtful that any information will be logged in the customer/providers switch when the audio is engaged, it is possible for an engineer to learn this information from a SIP trace, pcap, or by looking at transit locations. DTMF Detection ONLY works when RTP Proxy mode is enabled.
+*While it's doubtful that any information will be logged in the customer/providers switch when the audio is engaged, it is possible for an engineer to learn this information from a SIP trace, pcap, or by looking at transit locations. DTMF Detection ONLY works when RTP Proxy mode is enabled.
 
-**When should I use with/without RTP Proxy?**
 
+!!! info "When should I use RTP Proxy?"
 Use an RTP Proxy if you don't want your customers to know your providers.
 
-You should **not** use an RTP Proxy if:
-
-* You have other equipment in your SIP set-up which will act as a Media Relay.
-* You want to run a test to see if audio problems are related to the Connex Cloud Switch.
-
-**RTP Options**
-
-Choose which RTP Proxy you want engaged:  
-
-* Selecting **Auto** will use the least expensive path between your customer and provider.  You can list various countries, though it is recommended you choose a location near a provider or your customer. 
-* Choosing **Disable** will disable RTP Proxy Engagement.
-* **Strategy** lets you pass the calls based on the routing strategy you set.
-
-There are two RTP proxy modes:
-
-* **Strict**-This will enforce the proxy engagement. If the proxy can't engage with the call, the call will not be established. Note: Free accounts are limited to how many RTP Proxy channels are enabled, this may prevent calls connecting if you have more channels than our free accounts allow you to have.
-* **Relaxed**-This will perform best efforts to engage the RTP Proxy, if it can't be engaged because of either network errors, or because you don't have enough RTP capacity, the calls will connect directly.
+!!! warning "When should I avoid using RTP Proxy?"
+You have other equipment in your SIP set-up which will act as a Media Relay or you want to run a test to see if audio problems are related to the Connex Cloud Switch.
 
 
+**Call Recording**
 
-## SIP Session Timers (SST)
-**SIP Session Timers** ensure there are no ghost or long-duration calls being billed when one or both sides have hung up. A timer is activated when the call starts and refreshes the call every X amount of seconds by sending a RE-INVITE. SST is currently the best way to prevent long-duration calls, superceeding SIP Ping Timeout. Note that any SST less than sixty(60) seconds will be rejected
 
-Passive SST is enabled by default, and all RE-INVITES will propagate through the system. It is also possible to be proactive about the RE-INVITES, instructing the ConnexCS switch to send upstream to the carrier, downstream to the customer, or in both directions.
-
-**SST Options**
-
- - **Default:** No headers are changed and no SST is engaged
- - **Disabled:** All ```timer``` headers are removed
- - **Suggest:** Session-Expire headers and Min-SE are added to packets sent to carrier encouraging the use of SST.
- - **Enabled Both:** ConnexCS will send SIP Session Timers to both legs of the call.
- - **Enabled (Upstream(:** ConnexCS will use SST with the carrier.
- - **Enabled (Downstream):** ConnexCS will use SST with the customer.
-
+## Strategy
+Part of RTP Proxy, calls are passed based on the routing strategy you set.
 
