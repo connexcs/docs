@@ -166,4 +166,3 @@ You have other equipment in your SIP set-up which will act as a Media Relay or y
 
 ## Strategy
 Part of RTP Proxy, calls are passed based on the routing strategy you set.
-
