@@ -1,4 +1,6 @@
-# Customers
+# Customer
+
+
 
 In Connex, Customers are managed through customer cards. Each card has tabs that hold different management options, which we will explain below.  
 
