@@ -8,9 +8,9 @@ Routing allocates incoming attempts to a designated rate card, which in turn egr
 
 **Tech Prefix**: This is used to determine the routing. When multiple customers share the same IP address, each customer needs an individual tech prefix so the switch can sort them. It lets providers separate multiple rate cards.
 
-**Dial String Prefix Set**: Setting a Dial String Prefix allows deterine routing based on a predefined prefix set (defined under Setup > Advanced > Prefix Set.)
+**Dial String Prefix Set**: Setting a Dial String Prefix allows determine routing based on a predefined prefix set (defined under Setup > Advanced > Prefix Set.)
 
-**Dial String**: Used as an alternative to the predefined dial strings above, setting a dial string (or "dial pattern") here will only allow entered prefixes to pass. There are listed one per line, both prefix and regular expressions are allowed. For example, if you only wanted to allow UK Landline you could use:
+**Dial String**: Used as an alternative to the predefined dial strings above, setting a dial string (or "dial pattern") here will only allow entered prefixes to pass. These are listed one per line, both prefix and regular expressions are allowed. For example, if you only wanted to allow UK Landline you could use:
 
     Prefix
     ```
@@ -35,7 +35,7 @@ Routing allocates incoming attempts to a designated rate card, which in turn egr
 
 ## Price Limits
 
-**Capped Rate** and **Provider Capped Rate** are used to set the maximum cost of a call. Calls that exceed the set rate willl not be connected. 
+**Capped Rate** and **Provider Capped Rate** are used to set the maximum cost of a call. Calls that exceed the set rate will not be connected. 
 
 **Profit Assurance** can be enabled to check if calls are profitable. It is useful for A-Z routes or NPA-NXX rate cards. 
 + The default option is `Disabled`. While `Enabled`, additional PDD may be added to the call.
@@ -52,14 +52,14 @@ Routing allocates incoming attempts to a designated rate card, which in turn egr
 !!! info "Call Timeouts"
     A VoIP call is stateful, even though its protocol is stateless. This means that both sides of the conversation have to be told when to finish the call. They do this with a BYE message. If the BYE message goes missing, the call will continue forever. Max Duration is a method for setting up **Missing BYE Protection**. Another method is by using a **SIP Ping** to determine when the connection has timed out. This sends a SIP packet to the remote end of the conversation roughly every 30 seconds. This checks to see if the other side is still aware of an ongoing conversation. If it is not received back, or is told that the conversation is not active, then it shuts off the call. **RTP Time-out:** is another way to check for an active call based on whether audio is passing. If there is no audio passing for a pre-set interval, our RTP array will notify the switch and instruct it to terminate the call.  This won't work if RTP Mode is set to direct.
 
-!!! warning "Asterisk pings"
+!!! Warning "Asterisk pings"
     Asterisk does not have SIP Ping (OPTIONS) enabled as default, if your customer / carrier is using Asterisk you may need to disable       this if they don't have it enabled on their side as calls will typically disconnect after 30 seconds. 
 
 **Flow Speed (CPS)** limits the calls per second. This must be set for each customer card assigned to the customer account
 
-**CPS Spike Buffer** limits a spike in calls per second. are used to manage large volumes of calls over short periods of time. Once the buffer limit is reached then the calls per second kicks in, spreading the spike of calls over a longer period of time. 
+**CPS Spike Buffer** limits a spike in calls per second. Are used to manage large volumes of calls over short periods of time. Once the buffer limit is reached then the calls per second kicks in, spreading the spike of calls over a longer period of time. 
 
-!!! note "CPS Buffering"
+!!! Note "CPS Buffering"
     CPS Buffering is used to manage large volumes of calls over a short period of time. This process maximises saturation and increases call completion within a given CPS restriction. It does this by removing spikes and borrowing capacity from future seconds. If incoming traffic exceeds your pre-set CPS, it holds the call for one second, and then tries again. You can increase the second count in the CPS Spike Buffer field. Changing the CPS Buffering value only affects calls that exceed the CPS. The delay will show as increased PDD on the call, each second the system will emit a 100 Trying (High CPS, Buffering) response to indicate the status/progress of the call.
 
 **ASR Plus** is a proprietary technology developed by ConnexCS to filter known failed non-existant / working numbers between the customer and the carrier for termination. This is particularly useful with the larger call volumes. 
@@ -96,7 +96,7 @@ Unless it's turned off or customized otherwise, ASR+ is active for 90% of calls,
 
 ## ScriptForge
 
-The PHP ScriptForge allows for custom code to run from within the ConnexCS platform.  Script are assigned to customers within routing. For more information about setup and operation, see the [ScriptForge](https://docs.connexcs.com/developers/scriptforge/) page.
+The PHP ScriptForge allows for custom code to run from within the ConnexCS platform.  Script is assigned to customers within routing. For more information about setup and operation, see the [ScriptForge](https://docs.connexcs.com/developers/scriptforge/) page.
 
 ## Locks
 Used for troublshooting, you can remove carriers from a route and run a quick test.  
@@ -154,11 +154,11 @@ When a call is established between customer and provider, audio can be set-up in
 *While it's doubtful that any information will be logged in the customer/providers switch when the audio is engaged, it is possible for an engineer to learn this information from a SIP trace, pcap, or by looking at transit locations. DTMF Detection ONLY works when RTP Proxy mode is enabled.
 
 
-!!! info "When should I use RTP Proxy?"
+!!! Info "When should I use RTP Proxy?"
 Use an RTP Proxy if you don't want your customers to know your providers.
 
-!!! warning "When should I avoid using RTP Proxy?"
-You have other equipment in your SIP set-up which will act as a Media Relay or you want to run a test to see if audio problems are related to the Connex Cloud Switch.
+!!! Warning "When should I avoid using RTP Proxy?"
+You have other equipment in your SIP set-up which will act as a Media Relay or you want to run a test to see if audio problems are related to the ConnexCS Cloud Switch.
 
 
 **Call Recording**
