@@ -155,10 +155,10 @@ When a call is established between customer and provider, audio can be set-up in
 
 
 !!! Info "When should I use RTP Proxy?"
-Use an RTP Proxy if you don't want your customers to know your providers.
+    Use an RTP Proxy if you don't want your customers to know your providers.
 
 !!! Warning "When should I avoid using RTP Proxy?"
-You have other equipment in your SIP set-up which will act as a Media Relay or you want to run a test to see if audio problems are related to the ConnexCS Cloud Switch.
+    You have other equipment in your SIP set-up which will act as a Media Relay or you want to run a test to see if audio problems are related to the ConnexCS Cloud Switch.
 
 
 **Call Recording**
