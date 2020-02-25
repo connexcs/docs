@@ -224,9 +224,13 @@ With **Ingress Routing**, you can assign a Customer Rate Card to a customer acco
 2.	Select the customer card and fill in the relevant details.
 3.	Press **`Save`**.
 
-The details of the dialogue box can be seen in the image below:
+To view and configure existing routes, click on the **Routing** tab in the Customer Card. 
 
 ![alt text][ingress]
+
+!!! warning "Disabled Routes"
+
+Any routes highlighted in red are disabled. To enable them, click on the route name then select **`Enabled`**. 
 
 For detailed field explanations, see [Routing](../routing).
 
