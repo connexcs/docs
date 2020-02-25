@@ -1,5 +1,5 @@
 # USA Routing
-USA Routing is more complicated than international routing. If you are unfamilier with conventional (international) routing in ConnexCS, please see our page about [Routing](/en/latest/routing/) first.
+USA Routing is more complicated than international routing. If you are unfamiliar with conventional (international) routing in ConnexCS, please see our page about [Routing](/en/latest/routing/) first.
 
 ## NPA-NXX
 NPA-NXX refers to the first six(6) digits of USA numbers, excluding the country code. More information can be found here:
@@ -24,7 +24,7 @@ Inter/Intra state routing depends on the CLI (or ANI) presented in the call. Con
 
 
 ## LRN/LNP 
-[LRN (Location Routing Number)](https://en.wikipedia.org/wiki/Location_Routing_Number) / [LNP (Local Number Portability)](https://en.wikipedia.org/wiki/Local_number_portability) is a method to port USA numbers between providers, where the receiving provider can assign additional charges.  This means **a number that resolves to an LRN can be charged differently that what is listed in the NPA-NXX Rate card.**
+[LRN (Location Routing Number)](https://en.wikipedia.org/wiki/Location_Routing_Number) / [LNP (Local Number Portability)](https://en.wikipedia.org/wiki/Local_number_portability) is a method used in the USA to port between providers, where the receiving provider can assign additional charges.  This means **a number that resolves to an LRN can be charged differently that what is listed in the NPA-NXX Rate card.**
 
 The process is as follows:
 
@@ -37,3 +37,6 @@ ConnexCS allows you to have customer cards as non-LRN and provider cards as LRN 
 
 ### Charges
 ConnexCS includes LRN Dips for free under fair use. Fair use means traffic does not exploit our billing strategy.  To send this type of traffic, please contact us, as we do not support external LRNs.
+
+### LRN Database updates
+The ConnexCS LRN database is updated daily at 8:00am UTC. 
