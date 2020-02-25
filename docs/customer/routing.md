@@ -154,7 +154,7 @@ When a call is established between customer and provider, audio can be set-up in
 *While it's doubtful that any information will be logged in the customer/providers switch when the audio is engaged, it is possible for an engineer to learn this information from a SIP trace, pcap, or by looking at transit locations. DTMF Detection ONLY works when RTP Proxy mode is enabled.
 
 
-!!! Info "When should I use RTP Proxy?"
+!!! Success "When should I use RTP Proxy?"
     Use an RTP Proxy if you don't want your customers to know your providers.
 
 !!! Warning "When should I avoid using RTP Proxy?"
