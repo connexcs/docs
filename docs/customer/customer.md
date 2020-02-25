@@ -226,7 +226,7 @@ With **Ingress Routing**, you can assign a Customer Rate Card to a customer acco
 
 The details of the dialogue box can be seen in the image below:
 
-![alt text][ingress-routing-tab]
+![alt text][ingress]
 
 For detailed field explanations, see [Routing](../routing).
 
@@ -367,7 +367,7 @@ The **Invoices** tab displays a record of invoices sent to the account. Clicking
 [main-tab]: /customer/img/41.png "Main Tab"
 [stats-tab]: /customer/img/42.png "Stats Tab"
 [routing-tab]:  /customer/img/43.png "Routing Tab"
-[ingress-routing-tab]: /customer/img/44.png "Ingress Routing Tab"
+[ingress]: /customer/img/ingress.png "Ingress Routing"
 
 
 [recording-1]: /customer/img/45.png "recording-1"
