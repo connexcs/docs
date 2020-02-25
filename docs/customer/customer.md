@@ -229,8 +229,7 @@ To view and configure existing routes, click on the **Routing** tab in the Custo
 ![alt text][ingress]
 
 !!! warning "Disabled Routes"
-
-Any routes highlighted in red are disabled. To enable them, click on the route name then select **`Enabled`**. 
+    Any routes highlighted in red are disabled. To enable them, click on the route name then select **`Enabled`**. 
 
 For detailed field explanations, see [Routing](../routing).
 
@@ -370,7 +369,6 @@ The **Invoices** tab displays a record of invoices sent to the account. Clicking
 
 [main-tab]: /customer/img/41.png "Main Tab"
 [stats-tab]: /customer/img/42.png "Stats Tab"
-[routing-tab]:  /customer/img/43.png "Routing Tab"
 [ingress]: /customer/img/ingress.png "Ingress Routing"
 
 
