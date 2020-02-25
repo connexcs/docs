@@ -13,3 +13,5 @@ Routing in ConnexCS Cloudswitch occurs in the following stages:
 A rate card in **ConnexCS** represents a call path. If the rate card is incoming, it identifies the carrier providing that rate card. The customer rate identifies which carrier rate cards are used in its construction.
 
 [call-flow]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/call-flow.jpg "Call-Flow"
+
+
