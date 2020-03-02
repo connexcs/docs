@@ -303,13 +303,16 @@ The **Dialogs** tab shows the active calls on the account so you can easily see 
 
 ### Payments 
 
-In this tab, you can make a list of all the **payments** that have been made so far and you can also add new payments by:
+In this tab, you can view a list of all the **payments** that have been made so far and you can also add new payments by:
 
 1.	Click on the **'+'** button.
 2.	Fill out the dialogue box as shown in the image below. Add the Description of the payment, the total amount in digits and finally        select the status of it whether it’s Completed, Pending or Cancelled.
 3.	Finally press the **Save** button.
 
 ![alt text][payments-tab]
+
+!!! note
+    When a customer places a payment through their bank, this will show up here with a status of **Pending**. To accept the payment, set it to **Completed** and **`Save`**. 
 
 ### DID
 
