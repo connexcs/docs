@@ -62,7 +62,7 @@ Routing allocates incoming attempts to a designated rate card, which in turn egr
 !!! Note "CPS Buffering"
     CPS Buffering is used to manage large volumes of calls over a short period of time. This process maximises saturation and increases call completion within a given CPS restriction. It does this by removing spikes and borrowing capacity from future seconds. If incoming traffic exceeds your pre-set CPS, it holds the call for one second, and then tries again. You can increase the second count in the CPS Spike Buffer field. Changing the CPS Buffering value only affects calls that exceed the CPS. The delay will show as increased PDD on the call, each second the system will emit a 100 Trying (High CPS, Buffering) response to indicate the status/progress of the call.
 
-**ASR Plus** is a proprietary technology developed by ConnexCS to filter known failed non-existant / working numbers between the customer and the carrier for termination. This is particularly useful with the larger call volumes. 
+**ASR Plus** is a proprietary technology developed by ConnexCS to filter known failed non-existent / working numbers between the customer and the carrier for termination. This is particularly useful with the larger call volumes. 
 <div class="admonition success">
 <p class="admonition-title">Advantages of ASR</p>
     <ul>
@@ -99,7 +99,7 @@ Unless it's turned off or customized otherwise, ASR+ is active for 90% of calls,
 The PHP ScriptForge allows for custom code to run from within the ConnexCS platform.  Script is assigned to customers within routing. For more information about setup and operation, see the [ScriptForge](https://docs.connexcs.com/developers/scriptforge/) page.
 
 ## Locks
-Used for troublshooting, you can remove carriers from a route and run a quick test.  
+Used for troubleshooting, you can remove carriers from a route and run a quick test.  
 + **Lock** Parent Card: Choose this option to lock a rate card from the list of available providers. 
 + **Exclude** Parent Card: Choose this option to exclude access to one or more of the rate cards in the list of available providers.
 
@@ -112,9 +112,9 @@ This option is limited. Best use case is for customers in low-bandwidth areas th
 Sends regular ping to ensure both sides of a call are still up, in case of potential failed ACK. Enabled is the recommended setting. 
 
 **SIP Session Timer (SST)** 
-When enabled, SST ensures there are no ghost or long-duration calls being billed when one or both sides have hung up. A timer is activated when the call starts and refreshes the call every X amount of seconds by sending a RE-INVITE. SST is currently the best way to prevent long-duration calls, superceeding SIP Ping Timeout. Note that any SST less than sixty (60) seconds will be rejected
+When enabled, SST ensures there are no ghost or long-duration calls being billed when one or both sides have hung up. A timer is activated when the call starts and refreshes the call every X number of seconds by sending a RE-INVITE. SST is currently the best way to prevent long-duration calls, superseding SIP Ping Timeout. Note that any SST less than sixty (60) seconds will be rejected
 
-Passive SST is enabled by default, Enabled is the recommended setting. 
+Passive SST is enabled by default, **Enabled** is the recommended setting. 
 
 |SST Options              | Result                                                                                           |
 |-------------------------|:------------------------------------------------------------------------------------------------:|
@@ -151,7 +151,7 @@ When a call is established between customer and provider, audio can be set-up in
 | **Latency**            | Low                | Lowest                 |
 | **Information Leakage**| No                 |  Yes*                  |
 
-*While it's doubtful that any information will be logged in the customer/providers switch when the audio is engaged, it is possible for an engineer to learn this information from a SIP trace, pcap, or by looking at transit locations. DTMF Detection ONLY works when RTP Proxy mode is enabled.
+*While it's doubtful that any information will be logged in the customer/providers switch when the audio is engaged, it is possible for an engineer to learn this information from a SIP trace, PCAP, or by looking at transit locations. DTMF Detection ONLY works when RTP Proxy mode is enabled.
 
 
 !!! Success "When should I use RTP Proxy?"
@@ -162,8 +162,7 @@ When a call is established between customer and provider, audio can be set-up in
 
 
 **Call Recording**
-
+This feature is not currently available. 
 
 ## Strategy
-Part of RTP Proxy, calls are passed based on the routing strategy you set.
-
+Part of RTP Proxy, calls are passed based on the routing strategy you set. For advanced routing, click the **`+`** to select a predefined Routing Strategy, and set the Prefix. 
