@@ -298,10 +298,10 @@ There are several useful graphs which can provide details around usage or help t
 |Balance |Balance Over Time|
 |CPS | Calls per Second over time|
 |Customer Carrier Duration |Click on the carriers to select/deselect individual carriers to view desired stats|
-|DTMF |Dual Tone Frequency Modulation|
-|Codes ||
+|DTMF |Dual Tone Frequency Modulation percentages|
+|Codes |SIP reponse codes ([List of SIP Response Codes](https://en.wikipedia.org/wiki/List_of_SIP_response_codes))|
 |PDD |The lower the Post Dial Delay the better, however typically not viewed as problematic until it gets over 7 seconds|
-|Destinations ||
+|Destinations |Displays all call destinations|
 |CLI ASR |View ASR statistics per CLI|
 |Channel and CPS Breach |This will identify instances when customers have exceed your preset thresholds|
 |Fraud F1 |Internal metric used to identify a customer is potentially dialing many different numbers as opposed to similar/same numbers (may indicate potential fraud situation)|
