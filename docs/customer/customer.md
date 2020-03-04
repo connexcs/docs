@@ -285,6 +285,41 @@ The CLI system uses Regular Expressions to match and replace numbers. Here are a
 
 In the **Stats** tab, you can view items such as Channels, Calls Per Second (CPS), ACD, ASR, Attempts, Codes, PDD, and filter them by day or month.
 
+#### Main
+
+There are several useful graphs which can provide details around usage or help to identify potential issues. 
+
++ Channels: Details channel usage.
++ ACD (Average Call Duration) can be viewed in multiple contexts:
+   - Total
+   - Customer Carrier allows you to isolate traffic on a per carrier basis (click on a customer to remove/add it from the graph); if ACD is lower on one carrier, that is indicative of potential line quality issues
++ ASR (Answer Seisure Ratio) can be viewed in multiple contexts:
+   - Total
+   - Customer Carrier allows you to isolate traffic on a per carrier basis (click on a customer to remove/add it from the graph); if some carriers are lower than others this may indicate an issue
++ Attempts: Useful to compare total connected calls to total attempted calls.
++ Balance
++ Balance over time
++ CPS: Calls per second over time
++ Customer Carrier Duration: Click on the carriers to select/deselect individual carriers to view desired stats.
++ DTMF (Dual-Tone Frequency Modification)
++ Codes
++ PDD (Post Dial Delay): the lower the delay the better, however typically not viewed as problematic until it gets over 7 seconds
++ Destinations
++ CLI ASR: View ASR statistics per CLI
++ Channel and CPS Breach: This will identify instances when customers have exceed your preset thresholds. 
++ Fraud F1: Internal metric used to identify a customer is potentially dialing many different numbers as opposed to similar/same numbers (may indicate potential fraud situation)
+
+### RTP
+
++ MOS (Mean Opinion Score): an average measure of voice quality
++ Rount Trip Time: How long traffic takes to be sent and received
++ Jitter: Variance of packet delivery across the network causes information to arrive out of order. A higher jitter (50+ ms) may point towards potential voice quality issues. 
++ Packet Loss: Loss of packets may cause soe voice quality issues, or it may not be detectable
+
+#### Reports
+View any reports that hve been stup for a customer. 
+
+
 ### Latest Calls
 
 Here you can check the **latest call** from this tab, look up calls and refresh the list of simulated calls.
