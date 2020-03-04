@@ -309,6 +309,7 @@ There are several useful graphs which can provide details around usage or help t
 
 #### RTP
 |Graph|Description |
+|:------------|:-------------------------------------------------|
 |MOS |The Mean Opinion Score is an average measure of voice quality|
 |Round Trip Time |Displays how long traffic takes to be sent and received|
 |Jitter |Variance of packet delivery across the network causes information to arrive out of order. A higher jitter (50+ ms) may point towards potential voice quality issues|
