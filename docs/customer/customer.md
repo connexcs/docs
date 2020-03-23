@@ -13,8 +13,8 @@ Customer Management is found in the **Management** tab, the four horizontal line
 From the **Customers** board, you can perform several management operations. 
 
 #### View Modification
-* **Columns** popout on the right allows you to add/remove options, change column order, in some cases you can create row groups and aggregate values for pivot functionality
-* **Filters** popout on the right allows you to filter your customers
+* **Columns** pop out on the right allows you to add/remove options, change column order, in some cases you can create row groups and aggregate values for pivot functionality
+* **Filters** pop out on the right allows you to filter your customers
 
 #### Bulk Customer Modifications
 * Bulk upload to add multiple customers at a time
@@ -44,10 +44,10 @@ The following explains how to add new customers using the **Customer Management*
 
 ![alt text][add-Customer]
 
-The following is a descrtption of each entry found in the customer window:
+The following is a description of each entry found in the customer window:
 
 * **Customer Name:** A name or unique identifier for each customer.
-* **Paypal Email:** The email address associated witht he customer's PayPal account. (This is relevant when using the IPN API. Customer can make payments directly through PayPal instead of using the Customer Portal.) 
+* **PayPal Email:** The email address associated with the customer's PayPal account. (This is relevant when using the IPN API. Customer can make payments directly through PayPal instead of using the Customer Portal.) 
 * **Website:** The customer's website address.
 * **Status:** The customer's status, i.e.:
   * Active : The customer is active and allowed to pass calls. 
@@ -58,7 +58,7 @@ The following is a descrtption of each entry found in the customer window:
 * **Minimum Payment:** Set the minimum payment to keep accounts active. 
 * **Tax:**  Tax is added as a percentage that is charged on top of costs.
 * **Currency:** Select the currency from the dropdown menu. Note that you wont be able to change the account currency once the account is created.
-* **Portal Access:**  Users can turn **Portal Access** to yes(on) or no(off).  Selecting 'no' will restrict user access to the Customer Portal. Since ereyone uses the portal at this time, this should alayws be set to 'yes'. 
+* **Portal Access:**  Users can turn **Portal Access** to yes(on) or no(off).  Selecting 'no' will restrict user access to the Customer Portal. Since everyone uses the portal at this time, this should always be set to 'yes'. 
 * **Address:** Complete the customer's physical address, not to be confused with email addresses.
 
 ### Delete Customers
@@ -83,7 +83,7 @@ Search for **Customer** information by adding a query in the **Search** text fie
 
 ### Editing Customers
 
-Access the Customer Card by clicking their name in the customer list, then **Edit Customer**. The screen that opens is the same as the New Customer screen, with infomration already populated. Edit any field then click **`Save`**. For all field details, see **[Adding Customers](../customer/#adding-customers)**. Additional details are below: 
+Access the Customer Card by clicking their name in the customer list, then **Edit Customer**. The screen that opens is the same as the New Customer screen, with information already populated. Edit any field then click **`Save`**. For all field details, see **[Adding Customers](../customer/#adding-customers)**. Additional details are below: 
 
 **Basic** tab
 
@@ -103,7 +103,7 @@ Access the Customer Card by clicking their name in the customer list, then **Edi
     Mobile messages will be sent globally, but there are some reports of issues with SMS being delivered to numbers in India. These messages are sent on the Twilio network, so whatever they deliver ConnexCS will deliver. 
 
 ## Customer Cards
-Open a Customer Card by clicking their name from the Customer Managment screen.  The following sections detail the tabs lined up on the left side of the customer card, starting at the top.
+Open a Customer Card by clicking their name from the Customer Management screen.  The following sections detail the tabs lined up on the left side of the customer card, starting at the top.
 
 ### Main
 The top of the **Main** tab displays a summary of the Status, Balance, Debit Limit, and Current in use Channels. From here you can manage contacts, block internal numbers, and view call summaries.
@@ -122,7 +122,7 @@ To add a new contact:
 7. Click **`Save`**.
 
 !!! warning 
-    DO NOT save passwords in either of the notes field in the Cotact Details.
+    DO NOT save passwords in either of the notes field in the Contact Details.
 
 ![alt text][contacts-2]
 ![alt text][main-tab]
@@ -136,7 +136,7 @@ To reset a Contact password:
 3. Save
 
 #### Internal Number Block
-Used to assign internal customer number ranges which can be used for fuctions such as SIP authentication
+Used to assign internal customer number ranges which can be used for functions such as SIP authentication
 
 1. Click **`+`** button
 2. Number block will be assigned
@@ -147,8 +147,8 @@ Used to assign internal customer number ranges which can be used for fuctions su
 #### Summary
 The Summaries of calls in Live, Daily, and Monthly Formats, are all displayed in 24-hour UTC. There are several functions that can be performed with this data. 
 
-+ Select multiple cells in a column to get sum and average values (not a true average, but an avergage of averages)
-+ Select data from multiple columns and rows, then right click to **`Copy`**, **`Copy wth Headers`**, and **`Export`**
++ Select multiple cells in a column to get sum and average values (not a true average, but an average of averages)
++ Select data from multiple columns and rows, then right click to **`Copy`**, **`Copy with Headers`**, and **`Export`**
 + Check the box under the Action column then select **`Generate Invoice`** in the upper right corner. This will create the invoice which can then be queried by a billing system. 
 + Select **View Audit Log** to see when the customer was created and view any modifications that have been made to the account. (View Difference displays data in JSON format.)
 
@@ -178,7 +178,7 @@ On the **Advanced** tab, there are several options that can be configured:
 
 ![alt text][ipauth-adv]
 
-The **Parameter Rewrite** tab is used to create automatic replacements for destination numbers or CLI, so a number is formatted in the ppaorpriate [E164 format](https://www.twilio.com/docs/glossary/what-e164). 
+The **Parameter Rewrite** tab is used to create automatic replacements for destination numbers or CLI, so a number is formatted in the appropriate [E164 format](https://www.twilio.com/docs/glossary/what-e164). 
 
 1. Click the **`+`**.
 2. Select the parameter you want to modify.
@@ -191,7 +191,7 @@ The **Parameter Rewrite** tab is used to create automatic replacements for desti
 
 #### SIP User Authentication
 
-The **Basic** tab allows users to to setup **User/Password authentication**. For additional field descriptions, see the Advanced tab under IP Authentication above.
+The **Basic** tab allows users to setup **User/Password authentication**. For additional field descriptions, see the Advanced tab under IP Authentication above.
 
 + **SIP username**: This must also be configured on the customer UAC.
 + **NAT/SIP Ping**: refers to pings sent from ConnexCS back to the through customer firewall to their UAC. If enabled, they may keep a connection up for longer calls (typically either 1800 or 3600 seconds).
@@ -276,7 +276,7 @@ The CLI system uses Regular Expressions to match and replace numbers. Here are a
 | +123456789  |   ^\+([0-9]+)$ |          \1 |                                 Remove leading + |
 | 01782123456 |    ^0([1-9]+)$ |        44\1 |             Remove leading 0 and replace with 44 |
 
-*To learn more about writing regular expressions, visit http://regexr.com.  There are lots of tutorials and excercises available for all levels of expertise.*
+*To learn more about writing regular expressions, visit http://regexr.com.  There are lots of tutorials and exercises available for all levels of expertise.*
 
 !!! note
     To Whitelist and Restrict CLIs, see [CLI](/customer/cli). 
@@ -299,7 +299,7 @@ There are several useful graphs which can provide details around usage or help t
 |CPS | Calls per Second over time|
 |Customer Carrier Duration |Click on the carriers to select/deselect individual carriers to view desired stats|
 |DTMF |Dual Tone Frequency Modulation percentages|
-|Codes |SIP reponse codes ([List of SIP Response Codes](https://en.wikipedia.org/wiki/List_of_SIP_response_codes))|
+|Codes |SIP response codes ([List of SIP Response Codes](https://en.wikipedia.org/wiki/List_of_SIP_response_codes))|
 |PDD |The lower the Post Dial Delay the better, however typically not viewed as problematic until it gets over 7 seconds|
 |Destinations |Displays all call destinations|
 |CLI ASR |View ASR statistics per CLI|
@@ -313,11 +313,13 @@ There are several useful graphs which can provide details around usage or help t
 |MOS |The Mean Opinion Score is an average measure of voice quality|
 |Round Trip Time |Displays how long traffic takes to be sent and received|
 |Jitter |Variance of packet delivery across the network causes information to arrive out of order. A higher jitter (50+ ms) may point towards potential voice quality issues|
-|Packet Loss |Loss of packets may cause soe voice quality issues, or it may not be detectable|
+|Packet Loss |Loss of packets may cause some voice quality issues, or it may not be detectable|
 
 #### Reports
 View any reports that have been setup for a customer. 
 
+### Route Stats
+**Route Stats** displays Channel, Channel Breach, and CPS Breach data based on individual routes.
 
 ### Latest Calls
 
@@ -334,6 +336,21 @@ For simulating the call:
 ### Dialogs
 
 The **Dialogs** tab shows the active calls on the account so you can easily see active calls with one click.
+
+### Alerts
+
+Create **Alerts** to create alarms and disable accounts autonomously for problematic customers as needed. 
+
+Title: describe what the alert is for
+EmailPhone: apply the alert to this customer
+Area: select the parameter which triggers the alert
+Operator: greater than, less than, or equal to the threshold
+Threshold: the limit to trigger the alert, in units related to the selected Area above
+Reset Threshold: retriggers alert at the new limit 
+Sample Period: how frequent the alert is sent
+Penalty: autonomously disable the account for the selected time frame (system will automatically enable after the time period has elapsed)
+
+![alt text][alerts]
 
 ### Payments 
 
@@ -360,7 +377,7 @@ You can assign **DID** in an account by following these steps:
 
 ### Call Detail Record (CDR)
 
-The **CDR** tab shows a listing of Call Detail Records associated with the selected account.  Selecting the entries will display more detailed information, and pressing the **`download CDR`** buttton will save the record to your hard drive.
+The **CDR** tab shows a listing of Call Detail Records associated with the selected account.  Selecting the entries will display more detailed information. Pressing the **`download CDR`** button will save the record to your hard drive.
 
 #### Recalculate CDR
 
@@ -421,6 +438,8 @@ The **Invoices** tab displays a record of invoices sent to the account. Clicking
 
 [CLI]: <https://docs.connexcs.com/en/latest/cli>
 [Ingress Routing]: <https://docs.connexcs.com/en/latest/ingress-routing>
+
+[alerts]: /customer/img/alerts.png "Alerts"
 
 [simulate-call]: /customer/img/52.png "Simulate Call"
 [payments-tab]: /customer/img/53.png "Payments Tab" 
