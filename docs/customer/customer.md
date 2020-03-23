@@ -341,14 +341,14 @@ The **Dialogs** tab shows the active calls on the account so you can easily see 
 
 Create **Alerts** to create alarms and disable accounts autonomously for problematic customers as needed. 
 
-Title: describe what the alert is for
-EmailPhone: apply the alert to this customer
-Area: select the parameter which triggers the alert
-Operator: greater than, less than, or equal to the threshold
-Threshold: the limit to trigger the alert, in units related to the selected Area above
-Reset Threshold: retriggers alert at the new limit 
-Sample Period: how frequent the alert is sent
-Penalty: autonomously disable the account for the selected time frame (system will automatically enable after the time period has elapsed)
+* **Title**: describe what the alert is for
+* **EmailPhone****: apply the alert to this customer
+* **Area**: select the parameter which triggers the alert
+* **Operator**: greater than, less than, or equal to the threshold
+* **Threshold**: the limit to trigger the alert, in units related to the selected Area above
+* **Reset Threshold**: retriggers alert at the new limit 
+* **Sample Period**: how frequent the alert is sent
+* **Penalty**: autonomously disable the account for the selected time frame (system will automatically enable after the time period has elapsed)
 
 ![alt text][alerts]
 
