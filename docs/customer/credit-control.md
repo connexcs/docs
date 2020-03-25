@@ -13,6 +13,7 @@ The ConnexCS system, the **debit limit**  is used to differentiate between pre-p
 ### Automatic Cut-Off 
 
 The automatic cut-off mechanism is partly real-time, whereas credit control is real-time with these exeptions:
+
 * Credit control only applies to new calls. Calls in progress continue to flow even if customers run out of balance.
 * The current account credit is cached by the routing engine for sixty (60) seconds, which means live credit can be delayed by a minute.
 
