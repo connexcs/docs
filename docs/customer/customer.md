@@ -423,9 +423,9 @@ The **Invoices** tab displays a record of invoices sent to the account. These ca
 
 ### Contracts
  
-The **Contracts** lists provider contracts associated with the active customer account. Select the records by clicking their names to see more details.
+The **Contracts** section lists provider contracts associated with the active customer account. Select the records by clicking their names to see more details.
 
-This is used then you want new customers to agree to certain conditions before they can dial. The Grace Date allows the customer to demo the service until the set date, at which time they will need to agree to the contract to continue using the service. 
+This is used when you want new customers to agree to certain conditions before they can dial. The Grace Date allows the customer to demo the service until the set date, at which time they will need to agree to the contract to continue using the service. 
 
 
 ### Documents
