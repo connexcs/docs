@@ -376,7 +376,7 @@ To assign **DID**:
 3.	Press **`Save`** button.
 
 !!! tip "DID Billing"
-    Recommended to set customers to a Package rather than using the Cost and Retail functions
+    For DID billing (found at Customer > DID > Edit DID> Billing), it is recommended to set customers to a Package rather than using the Cost and Retail functions
    
 
 ### Call Detail Record (CDR)
