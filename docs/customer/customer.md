@@ -35,7 +35,7 @@ ConnexCS comes with Email and SMS included for your customers.
 ### Adding Customers
 The following explains how to add new customers using the **Customer Management** screen:
 
-1. Click the  **`+`** button.
+1. Click the **`+`** button.
 
     ![alt text][add-Customer-new]
 
@@ -57,7 +57,7 @@ The following is a description of each entry found in the customer window:
 * **Debit Limit:**  Sets the debit limit for postpay customers.
 * **Minimum Payment:** Set the minimum payment to keep accounts active. 
 * **Tax:**  Tax is added as a percentage that is charged on top of costs.
-* **Currency:** Select the currency from the dropdown menu. Note that you wont be able to change the account currency once the account is created.
+* **Currency:** Select the currency from the dropdown menu. Note that you won't be able to change the account currency once the account is created.
 * **Portal Access:**  Users can turn **Portal Access** to yes(on) or no(off).  Selecting 'no' will restrict user access to the Customer Portal. Since everyone uses the portal at this time, this should always be set to 'yes'. 
 * **Address:** Complete the customer's physical address, not to be confused with email addresses.
 
@@ -71,7 +71,7 @@ You can delete customers from the list by selecting them and pressing the **Dele
 
 You can also check and filter **Customers** by status:
 
-1.	Click the button to the right of the trash bin labeled  **`Active`**.
+1.	Click the button to the right of the trash bin labeled **`Active`**.
 2.	Select a filter option from the drop-down menu.
 3.	Results on the page will automatically arrange themselves according to the filter.
 
@@ -97,7 +97,7 @@ Access the Customer Card by clicking their name in the customer list, then **Edi
 **Verification** tab
 
 + Select **Email Verification** and/or **Mobile Verification** to force the customer to go to the portal for verification. (This is important to select when you create a customer manually.) If the customer doesn't verify these, they won't be able to dial. 
-+ Select **Approved CLI's Only** to force the customer to log into the Portal and enter their CLI number. This generates a test call with a code which the customer enters into the portal. Once complete, their CLI will be added to the system. 
++ Select **Approved CLI's Only** to force the customer to log into the Portal and enter their CLI number. This generates a test call with a code which the customer must enter into the portal. Once complete, their CLI will be added to the system. 
 
 !!! attention
     Mobile messages will be sent globally, but there are some reports of issues with SMS being delivered to numbers in India. These messages are sent on the Twilio network, so whatever they deliver ConnexCS will deliver. 
@@ -210,7 +210,7 @@ The **Parameter Rewrite** tab fields are the same as the ones for IP Authenticat
 
 **Voice Mail** tab
 
-If Voice Mail is enabled, you can set which email address receives messages, as well as reset the Voicemail Password. You also have the ability to view and delete current messages. 
+If Voice Mail is enabled, you can set which email address receives messages, as well as reset the Voicemail Password. You also can to view and delete current messages. 
 
 ![alt text][sip-auth]
 
@@ -261,7 +261,7 @@ Field details:
 
 + Rewrite CLI: A CLI can be re-written. For example, you can add `123456789` in the CLI box, and then rewrite by adding `987654321` in the re-write CLI box. (See **Advanced CLI Match and Manipulation** below.)
 
-+ P-Asserted-ID: **`P-Asserted-Identification`** is another SIP Header. It is not presented, but allows telephone companies to identify originators on a network-only level. A P-Asserted-ID uses the same syntax as Replace CLI.
++ P-Asserted-ID: **`P-Asserted-Identification`** is another SIP Header. It is not presented but allows telephone companies to identify originators on a network-only level. A P-Asserted-ID uses the same syntax as Replace CLI.
 
 ![alt text][edit-cli]
 
@@ -283,7 +283,7 @@ The CLI system uses Regular Expressions to match and replace numbers. Here are a
 
 ### Stats
 
-In the **Stats** tab, you can view items calling and call quality statistics and reports. All graphs may be filtered by different time segments, and are available to be downloaded. 
+In the **Stats** tab, you can view items calling and call quality statistics and reports. All graphs may be filtered by different time segments and are available to be downloaded. 
 
 #### Main
 
@@ -303,7 +303,7 @@ There are several useful graphs which can provide details around usage or help t
 |PDD |The lower the Post Dial Delay the better, however typically not viewed as problematic until it gets over 7 seconds|
 |Destinations |Displays all call destinations|
 |CLI ASR |View ASR statistics per CLI|
-|Channel and CPS Breach |This will identify instances when customers have exceed your preset thresholds|
+|Channel and CPS Breach |This will identify instances when customers have exceeded your preset thresholds|
 |Fraud F1 |Internal metric used to identify a customer is potentially dialing many different numbers as opposed to similar/same numbers (may indicate potential fraud situation)|
 
 
@@ -376,12 +376,19 @@ To assign **DID**:
 3.	Press **`Save`** button.
 
 !!! tip "DID Billing"
-    For DID billing (found at Customer > DID > Edit DID> Billing), it is recommended to set customers to a Package rather than using the Cost and Retail functions
+    For DID billing (found at Customer > DID > Edit DID > Billing), it is recommended to set customers to a Package rather than using the Cost and Retail functions
    
 
 ### Call Detail Record (CDR)
 
-The **CDR** tab shows a listing of Call Detail Records associated with the selected account.  Selecting the entries will display more detailed information. Pressing the **`download CDR`** button will save the record to your hard drive.
+The **CDR** tab lists Call Detail Records associated with the selected account.  Selecting the entries will display more detailed information. 
+
+#### Manage CDR data
+
+* **Columns**: Additional CDR fields can be enabled on the Columns tab on the right
+* **Column filter/sort**: Displayed entries can be filtered and sorted by clicking the header of each column. 
+* **Query Builder**: Advanced filters can be created using the Query Builder using any of the fields of the record  ![alt text][querybuilder]
+* **Download**: Pressing **`Download`** will save the record to your hard drive. You can also select which columns to include in the download.
 
 #### Recalculate CDR
 
@@ -389,32 +396,41 @@ To recalculate long-duration calls that timed out:
 
 1.	Click the **`Recalc CDR`** button.
 2.	Fill the dialogue box. Here you can select the day, maximum duration:
+3.	Click **`Save`**.
 
    ![alt text][recalc]
 
-3.	Click **`Save`**.
+
+
 
 ### Packages
 
 To add customer packages and quantities:
 
 1.	Click the **`+`** button.
-2.	Fill in the dialogue box with relevant details.  Checking **Auto Decrement** will debit the package amount from the customer account depending on the quantity.
+2.	Select package duration, quantity, cost, and frequency, click the drop down arrow in the Package field. 
+3.  Enter desired Quantity. 
+3.  Enter the Start Date, and End Date if desired. 
+3.  Selecting **Auto Decrement Credit** will debit the package amount from the customer account based on the quantity entered above.
 3.	Click the **`Save`** button.
 
 ![alt text][customer-package]
 
-To choose package duration, quantity, cost, and frequency, click the drop down arrow in the Package box. 
-
-![alt text][customer-package1]
-
 ### Invoices
 
-The **Invoices** tab displays a record of invoices sent to the account. Clicking the entries will display more detailed information.
+The **Invoices** tab displays a record of invoices sent to the account. These can be automatically generated. You can also add extra lines, packages, minutes, and so on. Clicking the entries will display more detailed information.
+
 
 ### Contracts
  
- The **Contracts** tab shows a listing of provider contracts associated with the active customer account. Select the records by clicking their names to see more details.
+The **Contracts** lists provider contracts associated with the active customer account. Select the records by clicking their names to see more details.
+
+This is used then you want new customers to agree to certain conditions before they can dial. The Grace Date allows the customer to demo the service until the set date, at which time they will need to agree to the contract to continue using the service. 
+
+
+### Documents
+
+The **Documents** section is used to collect various files from the customer. Some examples are CLI verification, copy of a phone bill, or some means to verify identity such as a passport. Creating and saving a new entry here will send an alert to the customer letting them know they need to provide the requested document.  This can be uploaded from the customer site, then accessed here for review. 
 
 
 [customer-dashboard]: /customer/img/33.png "Customer-Dashboard"
@@ -448,6 +464,7 @@ The **Invoices** tab displays a record of invoices sent to the account. Clicking
 [simulate-call]: /customer/img/52.png "Simulate Call"
 [payments-tab]: /customer/img/53.png "Payments Tab" 
 
+[querybuilder]: /customer/img/querybuilder.png "Query Builder"
 [recalc]: /customer/img/56.png "Recalc"
 [customer-package]: /customer/img/58.png "Customer-Package"
 [customer-package1]: /customer/img/59.png "Customer-Package1"
