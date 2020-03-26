@@ -377,9 +377,7 @@ To assign **DID**:
 
 !!! tip "DID Billing"
     Recommended to set customers to a Package rather than using the Cost and Retail functions
-    
-
-![alt text][did]
+   
 
 ### Call Detail Record (CDR)
 
@@ -451,7 +449,6 @@ The **Invoices** tab displays a record of invoices sent to the account. Clicking
 [payments-tab]: /customer/img/53.png "Payments Tab" 
 
 [recalc]: /customer/img/56.png "Recalc"
-[did]: /customer/img/did.png "DID"
 [customer-package]: /customer/img/58.png "Customer-Package"
 [customer-package1]: /customer/img/59.png "Customer-Package1"
 [customer]: /customer/img/60.png "customer"
