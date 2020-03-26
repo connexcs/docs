@@ -362,18 +362,24 @@ In this tab, you can view a list of all the **payments** that have been made so 
 
 ![alt text][payments-tab]
 
-!!! note
+!!! tip "Pending Payments"
     When a customer places a payment through their bank, this will show up here with a status of **Pending**. To accept the payment, set it to **Completed** and **`Save`**. 
 
 ### DID
 
-You can assign **DID** in an account by following these steps:
+Navigate to Management > Customer > DID to create and edit **DID (Direct Inward Dial)** parameters. There are buttons for bulk uploads and bulk edits, and you can check the **Per Number Report** via the Stats button. 
 
-1.	Click on the **‘+’** button which is at the extreme right of the page.
-2.	Popup will appear. Add DID name, set the Destination; select the Provider name, Provider Card, Customer name and Customer Card from the dropdown menu options respectively; Cost in digits and Retail as shown in the image below:
-3.	And Press **Save** button.
+To assign **DID**:
 
-![alt text][edit-did]
+1.	Click on the **‘+’** button at the extreme right of the page.
+2.	In the new screen, add Customer and Customer Card, select the Provider and Provider Card, enter the DID, and select Enable. 
+3.	Press **`Save`** button.
+
+!!! tip "DID Billing"
+    Recommended to set customers to a Package rather than using the Cost and Retail functions
+    
+
+![alt text][did]
 
 ### Call Detail Record (CDR)
 
@@ -445,7 +451,7 @@ The **Invoices** tab displays a record of invoices sent to the account. Clicking
 [payments-tab]: /customer/img/53.png "Payments Tab" 
 
 [recalc]: /customer/img/56.png "Recalc"
-[edit-did]: /customer/img/57.png "Edit-DID"
+[did]: /customer/img/did.png "DID"
 [customer-package]: /customer/img/58.png "Customer-Package"
 [customer-package1]: /customer/img/59.png "Customer-Package1"
 [customer]: /customer/img/60.png "customer"
