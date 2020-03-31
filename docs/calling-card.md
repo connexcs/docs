@@ -33,29 +33,28 @@ The following is a list of available actions in the calling card management scre
 ### Generate New Calling Card
 
 To generate a new calling card:
+
 1. From the dashboard, select **Management** > **Calling Cards**.
-2. Click the **`+`** button.  An entry form open as shown below, requesting customer information.
+2. Click the **`+`** button.  Complete the requested customer information:
+* The **Customer** box is a dropdown windown that lists available customers for the current system. Note the red asterisk that indicates it is the only required field to save a calling card.   
+* **Credit** is a way for ConnexCS to pass balances and overage limits in a clean, ID-based operation.
+* The **Count** is how many calling cards can be created at a time.
+* A card's **Status** can be set to available, used, or disabled, and each status has its own assigned colour.
+* Click **`Save`**. 
 
 ![alt text][cc-3]
 
-2.	The **Customer** box is a dropdown windown that lists available customers for the current system. Note the red asterisk that indicates it is the only required field to save a calling card.   
-3. **Credit** is a way for ConnexCS to pass balances and overage limits in a clean, ID-based operation.
-4. The **Count** is how many calling cards can be created at a time.
-5.	A card's **Status** can be set to available, used, or disabled, and each status has its own assigned colour.
-6. Click **`Save`**. 
-
 ### Edit a Card
 
-Edits existing calling cards.  To edit a calling card:c
-1.	Select a row and click **`Edit Selected Rows`**. An entry form opens to allow parameter edits.  Note that **Count** can no longer be changed.
-3.	Click **`Save`**.
+To edit an existing calling card:
+
+1. Select the desired row and click **`Edit Selected Rows`**. An entry form opens to allow parameter edits.  Note that **Count** can no longer be changed.
+3. Click **`Save`**.
 ![alt text][cc-5]
 
 ### Delete a Card
 
-Deletes an exiting card.  To complete this action:
-
-1.	Select the desired row and click the trash bin icon.
+To delete an exiting card, select the desired row and click the trash bin icon.
 
 ![alt text][cc-6]
 
