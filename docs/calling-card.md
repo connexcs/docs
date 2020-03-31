@@ -49,15 +49,29 @@ To generate a new calling card:
 Edits existing calling cards.  To edit a calling card:c
 1.	Select a row and click **`Edit Selected Rows`**. An entry form opens to allow parameter edits.  Note that **Count** can no longer be changed.
 3.	Click **`Save`**.
+![alt text][cc-5]
 
+### Delete a Card
 
-### Setup Pinless Calling Cards
+Deletes an exiting card.  To complete this action:
+
+1.	Select the desired row and click the trash bin icon.
+
+![alt text][cc-6]
+
+### Refresh List
+
+Provides an updated list of calling cards, ensuring recent changes are presented.  To enact, simply click **`Refresh`**.
+
+![alt text][cc-8]
+
+## Setup Pinless Calling Cards
 
 A **Pinless Calling Card** system allows the user to dial in through a DID. Verification is based on their CLI so no PIN is required. The caller is then presented with an IVR message requesting the destination number, and the call is then routed out through their account.
 
 This is not a native feature of ConnexCS, but with 3 simple steps it you can add this functionality to your account.
 
-#### Step 1: [Create a new script in ScriptForge](https://docs.connexcs.com/developers/scriptforge/#creating-a-new-script) with following code: 
+**Step 1: [Create a new script in ScriptForge](https://docs.connexcs.com/developers/scriptforge/#creating-a-new-script) with following code:** 
 ```javascript
 /*
   This function will allow a call that comes in on a "shared", CLI to be sent to the Class 5 system
@@ -88,7 +102,7 @@ async function main(data){
 !!! info 
     This script will look at the CLI of the incoming call and associate it with any accounts which have this CLI whitelisted.
 
-#### Step 2: Create a Class 5 App in the system call 
+**Step 2: Create a Class 5 App in the system call**
 
 1. Navigate to Class 5 > Apps and click the **`+`** button
 2. Set the destination as `calling_card`.
@@ -98,7 +112,7 @@ async function main(data){
 3. Result Variable: `ivr_destination`
 4. Drag Destination to the second slot, set it to external and enter the following: `${ivr_destination}`
 
-#### Step 3: Create a DID in the system
+**Step 3: Create a DID in the system**
 1. Set the new ScriptForge to the new App 
 1. Set the destination to `calling_card`
 6. Verify the origination CLI is whitelisted in the customer account.
@@ -108,22 +122,6 @@ async function main(data){
     If the customer requires unrestricted dialing for non-calling card calls, you can still add `^.*` as a CLI option.
 
 
-![alt text][cc-5]
-
-### Delete a Card
-
-Deletes an exiting card.  To complete this action:
-
-1.	Select the desired row and click the trash bin icon.
-
-![alt text][cc-6]
-
-### Refresh List
-
-Provides an updated list of calling cards, ensuring recent changes are presented.  To enact, simply click **`Refresh`**.
-
-![alt text][cc-8]
-
 
 
 [cc-1]: /misc/img/193.png "CC-1"
@@ -131,4 +129,6 @@ Provides an updated list of calling cards, ensuring recent changes are presented
 [cc-5]: /misc/img/197.png "CC-5"
 [cc-6]: /misc/img/198.png "CC-6"
 [cc-8]: /misc/img/200.png "CC-8"
+
+
 
