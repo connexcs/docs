@@ -3,15 +3,15 @@
 A [calling card](https://en.wikipedia.org/wiki/Telephone_card) allows customers to pre-allocate credit and configuration data based on a unique identification method, such as a PIN code. 
 
 !!! warning "Calling Card restrictions"
-    **ConnexCS** is a Class 4 switch, so it is without the IVR menu's required to access number configuration. Currently, calling cards are only available as a mobile phone application.
+    **ConnexCS** is a Class 4 switch, so does not include the IVR menu required to access number configuration. Currently, calling cards are only available as a mobile phone application.
 
 ## Mobile Application
 In **ConnexCS**, calling cards are created in bulk, and then assigned with credit and routing configuration.
 
 ### Provisioning Strategy
-~~The white-labeled ConnexCS Mobile Dialler application can be downloaded from [url].~~
+~~The white-labeled ConnexCS Mobile Dialer application can be downloaded from [url].~~
 
-Once a provisioning code is entered, the app  requests two pieces of information from our servers:
+Once a provisioning code is entered, the application requires two pieces of information from our servers:
 
 * Branding information for the providing company.
 * Provision information to auto-setup credentials.
@@ -36,11 +36,11 @@ To generate a new calling card:
 
 1. From the dashboard, select **Management** > **Calling Cards**.
 2. Click the **`+`** button.  Complete the requested customer information:
-* The **Customer** box is a dropdown windown that lists available customers for the current system. Note the red asterisk that indicates it is the only required field to save a calling card.   
-* **Credit** is a way for ConnexCS to pass balances and overage limits in a clean, ID-based operation.
-* The **Count** is how many calling cards can be created at a time.
-* A card's **Status** can be set to available, used, or disabled, and each status has its own assigned colour.
-* Click **`Save`**. 
+  * The **Customer** box lists customers available in the current system. Note the red asterisk that indicates it is the only required field to save a calling card.   
+  * **Credit** is a way for ConnexCS to pass balances and overage limits in a clean, ID-based operation.
+  * The **Count** is how many calling cards can be created at a time.
+  * A card's **Status** can be set to available, used, or disabled, and each status has its own assigned colour.
+  * Click **`Save`**. 
 
 ![alt text][cc-3]
 
@@ -54,7 +54,7 @@ To edit an existing calling card:
 
 ### Delete a Card
 
-To delete an exiting card, select the desired row and click the trash bin icon.
+To delete an existing card, select the desired row and click the trash bin icon.
 
 ![alt text][cc-6]
 
