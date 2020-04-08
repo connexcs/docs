@@ -104,9 +104,12 @@ async function main(data){
 **Step 2: Create a Class 5 App in the system call**
 
 1. Navigate to Class 5 > Apps and click the **`+`** button
-2. Set the destination as `calling_card`.
-3. Drag IVR to the first slot
-3. Set the File to "IVR > ivr-please" 
+2. Set **Destination** as `calling_card`.
+3. Drag IVR to the top slot, then Desctination to the next slot down.
+3. Drag IVR to the box on the right, then click the small grey arrow on the far right (see image below)
+    ![alt text][pinless]
+3. Set the File to "IVR > ivr-please".
+3. Click **`Save`**.
 3. Enter the phone number (Min: 11, Max 14)
 3. Result Variable: `ivr_destination`
 4. Drag Destination to the second slot, set it to external and enter the following: `${ivr_destination}`
@@ -128,6 +131,7 @@ async function main(data){
 [cc-5]: /misc/img/197.png "CC-5"
 [cc-6]: /misc/img/198.png "CC-6"
 [cc-8]: /misc/img/200.png "CC-8"
+[pinless]: /misc/img/200.png "Pinless Setup"
 
 
 
