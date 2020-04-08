@@ -133,7 +133,7 @@ async function main(data){
 [cc-5]: /misc/img/197.png "CC-5"
 [cc-6]: /misc/img/198.png "CC-6"
 [cc-8]: /misc/img/200.png "CC-8"
-[pinless]: /misc/img/200.png "Pinless Setup"
+[pinless]: /misc/img/pinless.png "Pinless Setup"
 
 
 
