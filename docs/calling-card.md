@@ -105,8 +105,8 @@ async function main(data){
 
 1. Navigate to Class 5 > Apps and click the **`+`** button
 2. Set **Destination** as `calling_card`.
-3. Drag IVR to the top slot, then Desctination to the next slot down.
-3. Drag IVR to the box on the right, then click the small grey arrow on the far right (see image below)
+3. Drag IVR to the top slot, then Destination to the next slot down.
+3. Drag IVR to the box on the right, then edit by clicking the small grey arrow on the far right (see image below)
 
     ![alt text][pinless]
     
@@ -114,7 +114,8 @@ async function main(data){
 3. Click **`Save`**.
 3. Enter the phone number (Min: 11, Max 14)
 3. Result Variable: `ivr_destination`
-4. Drag Destination to the second slot, set it to external and enter the following: `${ivr_destination}`
+4. Drag Destination to the second slot on the right, then edit
+4. Select External and enter: `${ivr_destination}`
 
 **Step 3: Create a DID in the system**
 1. Set the new ScriptForge to the new App 
