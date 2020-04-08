@@ -107,7 +107,9 @@ async function main(data){
 2. Set **Destination** as `calling_card`.
 3. Drag IVR to the top slot, then Desctination to the next slot down.
 3. Drag IVR to the box on the right, then click the small grey arrow on the far right (see image below)
+
     ![alt text][pinless]
+    
 3. Set the File to "IVR > ivr-please".
 3. Click **`Save`**.
 3. Enter the phone number (Min: 11, Max 14)
