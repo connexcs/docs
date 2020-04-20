@@ -1,8 +1,6 @@
 # Rate Card Management
 
-Rate Cards are an important ConnexCS feature, as they are the means by which most information is organized. This page will guide you through managing provider rate cards.  The Rate Card Management screen is found under **Management** > **Rate Card**. 
-
-You will be presented with a management screen that contains some at-a-glace information about each card.  The actual rate cards are viewds by clicking on the providers name.  The columns are:
+Rate Cards are an important ConnexCS feature as they are the means by which most information is organized. This page will guide you through managing provider rate cards.  The Rate Card Management screen, found under **Management** > **Rate Card**, contains some at-a-glace information about each card.  The actual rate cards are viewed by clicking on the providers name.  The columns are:
 
 * **Name** - The name of the provider.  Click this link to see the provider's individual rate card and management options.
 * **Direction** - Choose between *Termination* or *Origination*.  Change this setting in the **Advanced** section.
@@ -17,11 +15,11 @@ To add a new rate card to the list:
 
 1. Click **Management** > **Rate Card**.
 
-   a![alt text][provider-card-1] 
+    ![alt text][provider-card-1] 
 
 2. Click the blue **`+`** button to the top-right of the list.
 
-  ![alt text][provider-card-2] 
+    ![alt text][provider-card-2] 
   
 3. Enter a unique name for the rate card.
 4. Select a carrier from the dropdown list.
