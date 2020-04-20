@@ -2,14 +2,14 @@
 
 A [calling card](https://en.wikipedia.org/wiki/Telephone_card) allows customers to pre-allocate credit and configuration data based on a unique identification method, such as a PIN code. 
 
-!!! warning "Calling Card restrictions"
-    **ConnexCS** is a Class 4 switch, so does not include the IVR menu required to access number configuration. Currently, calling cards are only available as a mobile phone application.
 
-## Mobile Application
+## Mobile Application 
+*This is not currently available*
+
 In **ConnexCS**, calling cards are created in bulk, and then assigned with credit and routing configuration.
 
 ### Provisioning Strategy
-~~The white-labeled ConnexCS Mobile Dialer application can be downloaded from [url].~~
+*The ConnexCS Mobile Dialer application is not currently available for download.*
 
 Once a provisioning code is entered, the application requires two pieces of information from our servers:
 
@@ -66,11 +66,11 @@ Provides an updated list of calling cards, ensuring recent changes are presented
 
 ## Setup Pinless Calling Cards
 
-A **Pinless Calling Card** system allows the user to dial in through a DID. Verification is based on their CLI so no PIN is required. The caller is then presented with an IVR message requesting the destination number, and the call is then routed out through their account.
+A **Pinless Calling Card** system allows the user to dial in through a DID. Verification is based on their CLI so a PIN is not required. The caller is then presented with an IVR message requesting the destination number, and the call is then routed out through their account.
 
-This is not a native feature of ConnexCS, but with 3 simple steps it you can add this functionality to your account.
+While not a native feature of ConnexCS, this funtionality can be added to your account by with the following 3 steps.
 
-**Step 1: [Create a new script in ScriptForge](https://docs.connexcs.com/developers/scriptforge/#creating-a-new-script) with following code:** 
+**Step 1: [Create a new script in ScriptForge](https://docs.connexcs.com/developers/scriptforge/#creating-a-new-script) with following code** 
 ```javascript
 /*
   This function will allow a call that comes in on a "shared", CLI to be sent to the Class 5 system
@@ -101,27 +101,29 @@ async function main(data){
 !!! info 
     This script will look at the CLI of the incoming call and associate it with any accounts which have this CLI whitelisted.
 
-**Step 2: Create a Class 5 App in the system call**
+**Step 2: Create a Class 5 App**
 
 1. Navigate to Class 5 > Apps and click the **`+`** button
-2. Set **Destination** as `calling_card`.
-3. Drag IVR to the top slot, then Destination to the next slot down.
-3. Drag IVR to the box on the right, then edit by clicking the small grey arrow on the far right (see image below)
+2. Name the App then set **Destination** as `calling_card`.
+3. Drag IVR to the top slot on the right, then edit by clicking the small grey arrow on the far right (see image below)
 
     ![alt text][pinless]
     
 3. Set the File to "IVR > ivr-please".
-3. Click **`Save`**.
-3. Enter the phone number (Min: 11, Max 14)
+3. Enter the phone number Min (11) and Max (14)
 3. Result Variable: `ivr_destination`
+3. Click **`Save`**.
 4. Drag Destination to the second slot on the right, then edit
 4. Select External and enter: `${ivr_destination}`
+4. **`Save`** the Destination
+4. **`Save`** the App
 
 **Step 3: Create a DID in the system**
+
 1. Set the new ScriptForge to the new App 
-1. Set the destination to `calling_card`
-6. Verify the origination CLI is whitelisted in the customer account.
-7. Your customer should be able to dial in, enter their number and the call to be sent out.
+2. Set the destination to `calling_card`
+3. Verify the origination CLI is whitelisted in the customer account.
+4. Your customer should be able to dial in, enter their number and the call to be sent out.
 
 !!! note "Unrestricted dialing"
     If the customer requires unrestricted dialing for non-calling card calls, you can still add `^.*` as a CLI option.
