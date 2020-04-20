@@ -68,7 +68,7 @@ Provides an updated list of calling cards, ensuring recent changes are presented
 
 A **Pinless Calling Card** system allows the user to dial in through a DID. Verification is based on their CLI so a PIN is not required. The caller is then presented with an IVR message requesting the destination number, and the call is then routed out through their account.
 
-While not a native feature of ConnexCS, this funtionality can be added to your account by with the following 3 steps.
+While not a native feature of ConnexCS, this funtionality can be added to your account using the following 3 steps.
 
 **Step 1: [Create a new script in ScriptForge](https://docs.connexcs.com/developers/scriptforge/#creating-a-new-script) with following code** 
 ```javascript
