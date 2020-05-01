@@ -35,6 +35,8 @@ pages:
   - Cloudswitch:
     - Home: index.md
     - Getting Started: getting-started.md
+    - Video Guide: video-guide.md
+
 
     - Customer:
         - Main: customer/main.md
