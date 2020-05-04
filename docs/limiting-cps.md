@@ -1,18 +1,24 @@
-# Limiting CPS & Channels
+# Capacity Limiting
 
-Limiting CPS and Channels is a mechanism that lets providers put caps on their services. The switch can limit CPS and channels in the following areas:
+## Limiting CPS & Channels
 
-*  The entire ConnexCS account
-*   Per Customer
-*   Per Customer IP Address
-*   Per Carrier
-*   Per Carrier IP Address
-*   Ingress Routing
+Limiting CPS and Channels is a mechanism that lets providers put caps on their services. Channels represent the number of active calls while CPS tracks the number of calls made in a given second. 
 
+The switch can limit CPS and Channels on the entire account, or on specific customers or carriers.  
+
+|Type of limit | Location |
+|----|----|
+|The entire ConnexCS account | 
+|Per Customer|Management->Customer->click on customer name->Edit|
+|Per Customer IP Address or SIP user|Under the customer, Routing-> click the name->Capacity Limits.|
+|Per Carrier|Management->Carrier-> Select Carrier name->Edit|
+|Per Carrier IP Address (specific gateway)|Auth-> IP Auth-> click on the IP address|
+|Ingress Routing|
+
+Click [here]( https://docs.connexcs.com/customer/routing/#capacity-limits) for additional details on Capacity Limiting. 
  
-## What happens when my server reaches capacity?
-
-When a server reaches capacity, the standard response is: *Request Terminated: Server at max cps/channels*. If you have multiple servers, you can send a 302 response if the server reaches capacity, advising the client of an alternative location to complete the call.
+!!! info "Server capacity error"
+    When a server reaches capacity, the standard response is: *Request Terminated: Server at max cps/channels*. If you have multiple servers, you can send a 302 response if the server reaches capacity, advising the client of an alternative location to complete the call.
 
 ## Load Balancing using DNS (Domain Name System)
 
