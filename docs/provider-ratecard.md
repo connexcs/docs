@@ -28,7 +28,7 @@ To add a new rate card to the list:
  
    ![alt text][provider-card-3] 
 
-# Upload a Rate Card
+## Upload a Rate Card
 To upload a rate card from an external file:
 
 1. Click **Upload**, then browse to the rate car file on your computer
@@ -45,7 +45,7 @@ To upload a rate card from an external file:
 
 The revision tab lets us see the previous changes that have been made to a rate card, for example the previous Rule count, Presentation, Currency, date created, Billing.
 
-# Advanced Rate Card Settings
+## Advanced Rate Card Settings
 
 The **Advanced** tab, found in a rate card under **Properties** > **Advanced**, is used to manipulate several advanced features:
 
