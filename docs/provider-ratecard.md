@@ -26,7 +26,7 @@ To add a new rate card to the list:
 5. Select the relevant currency for the customer's region.
 6. Click **`Save`**.
  
-   ![alt text][provider-card-3] 
+    ![alt text][provider-card-3] 
 
 ## Upload a Rate Card
 To upload a rate card from an external file:
