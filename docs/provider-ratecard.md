@@ -1,13 +1,13 @@
 # Rate Card Management
 
-Rate Cards are an important ConnexCS feature as they are the means by which most information is organized. This page will guide you through managing provider rate cards.  The Rate Card Management screen, found under **Management** > **Rate Card**, contains some at-a-glace information about each card.  The actual rate cards are viewed by clicking on the providers name.  The columns are:
+Rate Cards are an important ConnexCS feature as they are how most information is organized. This page will guide you through managing provider rate cards.  The Rate Card Management screen, found under **Management** > **Rate Card**, contains some at-a-glance information about each card.  The actual rate cards are viewed by clicking on the providers name.  The columns are:
 
 * **Name** - The name of the provider.  Click this link to see the provider's individual rate card and management options.
 * **Direction** - Choose between *Termination* or *Origination*.  Change this setting in the **Advanced** section.
 * **Company** - The company associated with the rate card. 
 * **Currency** - The currency relative to the provider's region, between USD, EUR, and GBP.
-* **`?`** - Pressing the **`?`** button next to any rate card with give an information overview of that provider.  It includes the name, the card ID, and any dependant children rate cards that could be affected by changes.
-* **ID** - The rate card's ID, a system identifier that acts as a placeholder and prevents confusion between similarly-named items.
+* **`?`** - Pressing the **`?`** button next to any rate card displays an overview of that provider.  It includes the name, the card ID, and any dependent children rate cards that could be affected by changes.
+* **ID** - The rate card's ID is a system identifier that acts as a placeholder and prevents confusion between similarly named items.
 
 
 ## Add New Rate Card
@@ -30,13 +30,14 @@ To add a new rate card to the list:
 
 # Upload a Rate Card
 To upload a rate card from an external file:
-1. Click **Upload**, then browse your computer and select the rate card file
 
-   ![alt text][provider-card-4]
+1. Click **Upload**, then browse to the rate car file on your computer
+
+    ![alt text][provider-card-4]
 
 8. Map the rate card fields against the system fields.
 
-   ![alt text][provider-card-5]
+    ![alt text][provider-card-5]
 
 9. You will be notified with a popup when the import completes.
  
@@ -46,10 +47,11 @@ The revision tab lets us see the previous changes that have been made to a rate 
 
 # Advanced Rate Card Settings
 
-To find the **Advanced** tab, select a rate card.  In the rate card's screen, click **Properties** > **Advanced**. The advanced tab is used to manipulate two options:
+The **Advanced** tab, found in a rate card under **Properties** > **Advanced**, is used to manipulate several advanced features:
 
-* **Public Options** - Decide which ways information about the provider can be shared externally by togging check boxes on and off.  You allow the card to be viewed via HTML (on a web page), CSV (a spreadsheet), an API (an external application), and whether or not to list the rate card in the domain portal.
+* **Public Options** - Display or hide provider information externally by togging check boxes on and off.  You allow the card to be viewed via HTML (on a web page), CSV (a spreadsheet), an API (an external application), and whether to list the rate card in the domain portal.
 * **CLI Restrict** - Enable Call Line Identification (CLI) restriction(s) by entering restricted numbers in the text box.
+* **Delayed Bye** - On termination rate cards, the Delayed Bye feature adds the specified duration (in seconds) to the end of each call. Providers may use this in situations where a commercial contract specifies a minimum duration call. This feature should only be used along with full disclosure to both the customer and carrier.
 
 [provider-card-1]: /card/img/115.png "provider-card-1"
 [provider-card-2]: /card/img/116.png "provider-card-2"
