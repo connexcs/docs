@@ -3,6 +3,7 @@
 ## Limiting CPS & Channels
 
 The ability to Limit CPS (Flow Speed) and Channels allows providers to place caps on specific services. 
+
 * Channels represent the number of active calls on the system
 * CPS (Calls per Second) tracks the number of calls made in a given second
 
