@@ -16,35 +16,46 @@ To add carriers:
 3. Enter relevant carrier details.
 4. Click **`Save`**.
 
-Carrier fields:
+### Carrier fields:
 
-* Basic tab
-   * **Carrier Name:** Enter a unique name for the carrier.
-   * **Channels:** Add the number of channels (ports) in numeric digits. Set this to ZERO for unlimited channels.
-   * **CPS:** Enter the carrier's max allotted calls-per-second.
-   * **Status:** The carrier's status.  A drop-menu contains the following options:
-      *  **Active** - carrier available to process calls.
-      *  **Inactive** - carrier will not process any calls.
-      *  **Pending Approval** - carrier is undergoing a verification process, but their credentials are in the system.  
-   * **Currency:** Choose the relevant currency for each carrier's country.
-* Portal tab
-   * **Portal URL:** Enter the carrier's portal URL, ex: portal.yourcarrier.com 
-   * **Portal Username:** Add a unique name for the portal.
-   * **Portal Password:** Enter the password used to sign into the carrier portal.
-   * **Portal Access:** Decides if the current carrier has access to the portal.
-* Timeout tab
-   * **First Reply Timeout:** Length of time for the carrier to respond after the **first invite**. Default = 30 seconds.
-   * **PDD Timeout:** Length of time for the carrier to respond to the call. Default = 5 seconds.
-   * **Ring Timeout:** Length of time the call may ring before it times out and sends a cancel message. Default = 60 seconds.
-* Config tab    
-   * **PayPal Email:** Enter the PayPal e-mail associated with the carrier's account.
-   * **Website:** Add the carrier's official website.
-   * **P-Asserted-ID:** Select display options for this CLI field
-   * **Consec Fail Backoff:** IF Enabled, when a carrier goes down, the First Reply Timeout is skipped.  
-* Address tab
-   * **Address:** Add the carrier's address, including country and postcode/ZIP code.
-* Verification tab
-   * **Propagate Username:** Used when the customer is sending information in addition to CLI information (ex: Company Name, Username)
+Basic tab
+
+* **Carrier Name:** Enter a unique name for the carrier.
+* **Channels:** Add the number of channels (ports) in numeric digits. Set this to ZERO for unlimited channels.
+* **CPS:** Enter the carrier's max allotted calls-per-second.
+* **Status:** The carrier's status.  A drop-menu contains the following options:
+   *  **Active** - carrier available to process calls.
+   *  **Inactive** - carrier will not process any calls.
+   *  **Pending Approval** - carrier is undergoing a verification process, but their credentials are in the system.  
+* **Currency:** Choose the relevant currency for each carrier's country.
+
+Portal tab
+
+* **Portal URL:** Enter the carrier's portal URL, ex: portal.yourcarrier.com 
+* **Portal Username:** Add a unique name for the portal.
+* **Portal Password:** Enter the password used to sign into the carrier portal.
+* **Portal Access:** Decides if the current carrier has access to the portal.
+
+Timeout tab
+
+* **First Reply Timeout:** Length of time for the carrier to respond after the **first invite**. Default = 30 seconds.
+* **PDD Timeout:** Length of time for the carrier to respond to the call. Default = 5 seconds.
+* **Ring Timeout:** Length of time the call may ring before it times out and sends a cancel message. Default = 60 seconds.
+
+Config tab    
+
+* **PayPal Email:** Enter the PayPal e-mail associated with the carrier's account.
+* **Website:** Add the carrier's official website.
+* **P-Asserted-ID:** Select display options for this CLI field
+* **Consec Fail Backoff:** IF Enabled, when a carrier goes down, the First Reply Timeout is skipped.  
+
+Address tab
+
+* **Address:** Add the carrier's address, including country and postcode/ZIP code.
+
+Verification tab
+
+* **Propagate Username:** Used when the customer is sending information in addition to CLI information (ex: Company Name, Username)
 
 ![alt text][carrier-details]
         
