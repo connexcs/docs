@@ -78,7 +78,7 @@ The **Carriers** view can be customized to display certain columns and filter re
 ## Carrier Configuration
 To edit **Carriers**, select an entry from the list, and follow the procedure on the next page:
 
-1. Press the **`Edit Carrier`** button.
+1. Press the **`Edit`** button.
 2. Change the carrier's details and then press **`Save`**.
 
 ### Code Consistency
@@ -90,6 +90,7 @@ To edit **Carriers**, select an entry from the list, and follow the procedure on
 Customers can use the **Reply Management** tab to customize responses based on the SIP message received from the carrier. This allows for more efficient messaging and system responses. 
 
 To edit Reply Codes:
+
 1) Select **`Edit`** on the right
 2) Select the action
    * Failover- allows the call to try the next carrier
@@ -100,6 +101,7 @@ To edit Reply Codes:
 Carrier **Authentication** uses IP addresses to allow or disallow attempts to access service.
 
 To add a new authorized IP address:
+
 1) Click the **`+`** button on the right.
 2) Add details in the **Basic** and **Advanced** tabs to complete the IP's entry. 
 3) Then click **`Save`**.
@@ -115,8 +117,6 @@ The **Failover** tab lists calls that failed with this carrier but connected wit
     - `486`
     - `480`
     - `404`
-
-![alt text][carrier-reply] 
  
 
 ### Latest Calls
@@ -137,7 +137,7 @@ View carrier-related statistics by clicking **Stats** tab.
 ![alt text][carrier-stats] 
 
 ### Alerts
-The **Alerts** tab lets you create, manage, and remove alerts tied to Balance or Consecutive Failures. These alerts can be sent to an email or phone number. See the [Alerts] page for details on how to manage them.
+Use the **Alerts** tab to manage alerts that are tied to Balance or Consecutive Failures. These alerts can be sent to an email or phone number. See the [Alerts] page for details on how to manage them.
 
 ![alt text][carrier-alert-1]
 
