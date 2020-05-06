@@ -13,9 +13,10 @@ To add carriers:
 
 1. Navigate to **Management** > **Carrier**.
 2. Click the **`+`** button.
-3. Enter relevant carrier details. (See Carrier Configuration below.) 
+3. Enter relevant carrier details.
 4. Click **`Save`**.
 
+Carrier fields:
 * Basic tab
    * **Carrier Name:** Enter a unique name for the carrier.
    * **Channels:** Add the number of channels (ports) in numeric digits. Set this to ZERO for unlimited channels.
