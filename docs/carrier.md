@@ -17,6 +17,7 @@ To add carriers:
 4. Click **`Save`**.
 
 Carrier fields:
+
 * Basic tab
    * **Carrier Name:** Enter a unique name for the carrier.
    * **Channels:** Add the number of channels (ports) in numeric digits. Set this to ZERO for unlimited channels.
