@@ -104,8 +104,8 @@ Customers can use the **Reply Management** tab to customize responses based on t
 
 To edit Reply Codes:
 
-1) Select **`Edit`** on the right
-2) Select the action
+1. Select **`Edit`** on the right
+2. Select the action
    * Failover- allows the call to try the next carrier
    * Replace- enter the New Code and New Reason
 
@@ -115,9 +115,9 @@ Carrier **Authentication** uses IP addresses to allow or disallow attempts to ac
 
 To add a new authorized IP address:
 
-1) Click the **`+`** button on the right.
-2) Add details in the **Basic** and **Advanced** tabs to complete the IP's entry. 
-3) Then click **`Save`**.
+1. Click the **`+`** button on the right.
+2. Add details in the **Basic** and **Advanced** tabs to complete the IP's entry. 
+3. Then click **`Save`**.
 
 !!! info "Outbound Proxy"
     On the Advanced tab, setting the Outbound Proxy and related Weights will route traffic through the specific IP. This reduces management overhead as a customer only needs to authorize the single IP. Additionally, multiple addresses can be load balanced using the AnyEdge system.  
