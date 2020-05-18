@@ -106,8 +106,8 @@ To edit Reply Codes:
 
 1. Select **`Edit`** on the right
 2. Select the action
-   * Failover- allows the call to try the next carrier
-   * Replace- enter the New Code and New Reason
+    * Failover- allows the call to try the next carrier
+    * Replace- enter the New Code and New Reason
 
 
 ### Auth
