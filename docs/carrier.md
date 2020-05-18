@@ -16,7 +16,7 @@ To add carriers:
 3. Enter relevant carrier details.
 4. Click **`Save`**.
 
-### Carrier fields:
+### Carrier fields
 
 Basic tab
 
@@ -66,15 +66,15 @@ To delete existing **Carriers**:
 2. Click the trash bin icon and confirm.
 
 ### Consecutive Failures
-The **Consec Fails (Consecutive Failures)** increments a count of SIP failure responses. (The counter does not include SIP 200 responses for connected calls.) This simplistic measurement can measure a carrier's ability to connect calls: once a call connects, the counter resets; if it fails, the counter is increased by one.  
+The **Consec Fails (Consecutive Failures)** increments a count of SIP failure responses. (The counter does not include SIP 200 responses for connected calls.) This simplistic measurement can measure a carrier's ability to connect calls: a connected call resets the counter, a failed call increments the counter by one.  
 
 !!! note 
-    This mechanism can show false positives if the customer sends missed call traffic or calls wrong numbers.  The counter is a quick way to see if a route is failing rather than a comprehensive success monitor.
+    This mechanism can show false positives if the customer sends missed call traffic or calls wrong numbers.  The counter is a quick way to see if a route is failing but should not be used as a comprehensive success monitor.
     
 ### Sort Carrier by Status
 ![alt text][carriers-sorting]
 
-The status screen is for checking carrier information. To check status:
+To view Carriers based on status:
 
 1. Click the **`Active`** button.
 2. Select an option from the dropdown menu to filter results.
@@ -87,15 +87,17 @@ The search box on the Carrier Management screen is for finding specific informat
 The **Carriers** view can be customized to display certain columns and filter results.  Click the menu buttons on the extreme right and use the checkboxes to modify the view and filter results.
 
 ## Carrier Configuration
-To edit **Carriers**, select an entry from the list, and follow the procedure on the next page:
+To edit **Carriers**, select an entry from the list, then:
 
 1. Press the **`Edit`** button.
 2. Change the carrier's details and then press **`Save`**.
 
-### Code Consistency
-**Code Consistency** measures changes to response codes (specifically 200 and 404s) on numbers returned from the carrier. It is useful for identifying routes of varying or poor quality. Effective carriers try to maintain 100% code consistency.
-
 ![alt text][carrier-dashboard]
+
+### Code Consistency
+**Code Consistency** measures changes to response codes (specifically SIP 200 and 404s) returned from the carrier. It is useful for identifying routes of varying or poor quality. Effective carriers try to maintain 100% code consistency.
+
+![alt text][code-consistency]
 
 ### Reply Management
 Customers can use the **Reply Management** tab to customize responses based on the SIP message received from the carrier. This allows for more efficient messaging and system responses. 
@@ -112,7 +114,6 @@ To edit Reply Codes:
 Carrier **Authentication** uses IP addresses to allow or disallow attempts to access service.
 
 To add a new authorized IP address:
-
 1) Click the **`+`** button on the right.
 2) Add details in the **Basic** and **Advanced** tabs to complete the IP's entry. 
 3) Then click **`Save`**.
@@ -172,7 +173,8 @@ The **CDR** tab displays call drop rates. Recalculate CDRs for a specific month 
 [add-carriers]: /carrier/img/100.png "Add-Carrier"
 [carrier-details]: /carrier/img/101.png "Carrier-Details"
 [carriers-sorting]: /carrier/img/102.png "Carriers-Sorting"
-[carrier-dashboard]: /carrier/img/103.png "Carrier-Dashboard"
+[carrier-dashboard]: /carrier/img/carrier-dashboard.png "Carrier-Dashboard"
+[code-consistency]: /carrier/img/code-consistency.png "Code Consistency"
 [carrier-stats]: /carrier/img/104.png "Carrier Stats"
 [carrier-reply]: /carrier/img/105.png "Carrier Reply"
 [carrier-authentication]: /carrier/img/106.png "Carrier Authentication"
