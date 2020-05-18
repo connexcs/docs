@@ -114,6 +114,7 @@ To edit Reply Codes:
 Carrier **Authentication** uses IP addresses to allow or disallow attempts to access service.
 
 To add a new authorized IP address:
+
 1) Click the **`+`** button on the right.
 2) Add details in the **Basic** and **Advanced** tabs to complete the IP's entry. 
 3) Then click **`Save`**.
