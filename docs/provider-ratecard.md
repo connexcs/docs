@@ -41,6 +41,7 @@ Config:
 * **Force Presentation options** 
 
 |Option|Example|Usage|
+| --- | --- | --- |
 |Single Rate|0.0007|Usually a UK Landline|
 |IntER/IntRA|1 (NPANXX)|Refers to Interstate and Intrastate calling, typically for USA dialing|
 |IntER/IntRA/Indeterminate|1 (NPANXX)|Indeterminate indicates that call is between a USA number and another country|
