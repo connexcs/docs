@@ -28,12 +28,14 @@ These are Customer cards that use the selected rate card. Changes to the Provide
 
 ### Revision Tab 
 The Revision tab displays up to 8 most recent changes made to a rate card (ex: previous Rule count, Presentation, Currency, date created, Billing). The two most recent revisions will be available as Active or Inactive, the rest will be in Archive state. 
+
 1. To activate an earlier version from archive, click Archive next to the Revision. This may take a few minutes. 
 2. To make the previous version Active, click Active. This may take a few minutes. 
 
 ### Properties tab
 
 Config:
+
 * **Name(Public)** - This optional setting allows you to display an alias or pseudonym for the carrier. 
 * **Tech Prefix** - appended to outbound calls
 * **Force Presentation options**
@@ -44,6 +46,7 @@ Config:
 * **Dialing** - In the US, LRN (Local Routing Number) identifies the switch for a number and is used to determine billing for a call.  When a number is ported from one provider to another, the billing may change based on the new carrier. An LRN dip will correct any pricing discrepancies between the original and new carriers. (ConnexCS owns their own database for this, so the response time is quick.) This helps to reduce billing costs. If the customer wants to do single rates they may not want to do the LRN dip. 
 
 Advanced:
+
 * **Billing Precision** - used to round billing on a card to the specified decimal point. 
 * **Public Options** - Display or hide provider information externally by toggling check boxes on and off.  You allow the card to be viewed via HTML (on a web page), CSV (a spreadsheet), an API (an external application), and whether to list the rate card in the domain portal.
 * **CLI Restrict** - Enable Call Line Identification (CLI) restriction(s) to only accept valid number formats by entering restricted numbers in the text box using regular expressions.
