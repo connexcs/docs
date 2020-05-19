@@ -1,6 +1,10 @@
-# Rate Card Management
+# Provider Rate Cards
 
-Rate Cards are an important ConnexCS feature as they are how most information is organized. This page will guide you through managing provider rate cards.  The Rate Card Management screen, found under **Management** > **Rate Card**, contains some at-a-glance information about each card.  The actual rate cards are viewed by clicking on the providers name.  The columns are:
+**Rate Cards** are an important ConnexCS feature as they are how most information is organized. The Rate Card Management screen is found under **Management** > **Rate Card**
+
+![alt text][provider-card-1] 
+
+The Provider Rate Card screen display at-a-glance information for each card:  
 
 * **Name** - The name of the provider.  Click this link to see the provider's individual rate card and management options.
 * **Direction** - Choose between *Termination* or *Origination*.  Change this setting in the **Advanced** section.
@@ -9,53 +13,42 @@ Rate Cards are an important ConnexCS feature as they are how most information is
 * **`?`** - Pressing the **`?`** button next to any rate card displays an overview of that provider.  It includes the name, the card ID, and any dependent children rate cards that could be affected by changes.
 * **ID** - The rate card's ID is a system identifier that acts as a placeholder and prevents confusion between similarly named items.
 
+## Add New Rate Cards
+New Provider Rate Cards may be added manually or by uploading an existing file. 
 
-## Add New Rate Card
-To add a new rate card to the list:
+1. Manual additions: Add a new rate card to an existing carrier by selecting the blue **`+`** button to the top-right of the list, select the appropriate carrier, and set card details manually. 
+2. Bulk Upload: From within the carrier, select **Upload**, select the appropriate file, then map the rate card fields against the system fields. You will be notified with a popup when the import completes.
 
-1. Click **Management** > **Rate Card**.
+![alt text][provider-card-4] 
 
-    ![alt text][provider-card-1] 
+## Manage existing Provider Rate Cards
 
-2. Click the blue **`+`** button to the top-right of the list.
+### Dependent Cards
+These are Customer cards that use the selected rate card. Changes to the Provider Rate Card will be applied to each dependent rate card. 
 
-    ![alt text][provider-card-2] 
-  
-3. Enter a unique name for the rate card.
-4. Select a carrier from the dropdown list.
-5. Select the relevant currency for the customer's region.
-6. Click **`Save`**.
- 
-    ![alt text][provider-card-3] 
+### Revision Tab 
+The Revision tab displays up to 8 most recent changes made to a rate card (ex: previous Rule count, Presentation, Currency, date created, Billing). The two most recent revisions will be available as Active or Inactive, the rest will be in Archive state. 
+1. To activate an earlier version from archive, click Archive next to the Revision. This may take a few minutes. 
+2. To make the previous version Active, click Active. This may take a few minutes. 
 
-## Upload a Rate Card
-To upload a rate card from an external file:
+### Properties tab
 
-1. Click **Upload**, then browse to the rate car file on your computer
+Config:
+* **Name(Public)** - This optional setting allows you to display an alias or pseudonym for the carrier. 
+* **Tech Prefix** - appended to outbound calls
+* **Force Presentation options**
+|Option|Example|Usage|
+|Single Rate|0.0007|Usually a UK Landline|
+|IntER/IntRA|1 (NPANXX)|Refers to Interstate and Intrastate calling, typically for USA dialing|
+|IntER/IntRA/Indeterminate|1 (NPANXX)|Indeterminate indicates that call is between a USA number and another country|
+* **Dialing** - In the US, LRN (Local Routing Number) identifies the switch for a number and is used to determine billing for a call.  When a number is ported from one provider to another, the billing may change based on the new carrier. An LRN dip will correct any pricing discrepancies between the original and new carriers. (ConnexCS owns their own database for this, so the response time is quick.) This helps to reduce billing costs. If the customer wants to do single rates they may not want to do the LRN dip. 
 
-    ![alt text][provider-card-4]
-
-8. Map the rate card fields against the system fields.
-
-    ![alt text][provider-card-5]
-
-9. You will be notified with a popup when the import completes.
- 
-## Revision Tab 
-
-The revision tab lets us see the previous changes that have been made to a rate card, for example the previous Rule count, Presentation, Currency, date created, Billing.
-
-## Advanced Rate Card Settings
-
-The **Advanced** tab, found in a rate card under **Properties** > **Advanced**, is used to manipulate several advanced features:
-
-* **Public Options** - Display or hide provider information externally by togging check boxes on and off.  You allow the card to be viewed via HTML (on a web page), CSV (a spreadsheet), an API (an external application), and whether to list the rate card in the domain portal.
-* **CLI Restrict** - Enable Call Line Identification (CLI) restriction(s) by entering restricted numbers in the text box.
+Advanced:
+* **Billing Precision** - used to round billing on a card to the specified decimal point. 
+* **Public Options** - Display or hide provider information externally by toggling check boxes on and off.  You allow the card to be viewed via HTML (on a web page), CSV (a spreadsheet), an API (an external application), and whether to list the rate card in the domain portal.
+* **CLI Restrict** - Enable Call Line Identification (CLI) restriction(s) to only accept valid number formats by entering restricted numbers in the text box using regular expressions.
+* **Capped Rate** - Blocks any calls above the set price
 * **Delayed Bye** - On termination rate cards, the Delayed Bye feature adds the specified duration (in seconds) to the end of each call. Providers may use this in situations where a commercial contract specifies a minimum duration call. This feature should only be used along with full disclosure to both the customer and carrier.
 
 [provider-card-1]: /card/img/115.png "provider-card-1"
-[provider-card-2]: /card/img/116.png "provider-card-2"
-[provider-card-3]: /card/img/117.png "provider-card-3"
 [provider-card-4]: /card/img/118.png "provider-card-4"
-[provider-card-5]: /card/img/119.png "provider-card-5"
-[provider-card-6]: /card/img/120.png "provider-card-6"
