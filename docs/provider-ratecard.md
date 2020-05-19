@@ -38,11 +38,13 @@ Config:
 
 * **Name(Public)** - This optional setting allows you to display an alias or pseudonym for the carrier. 
 * **Tech Prefix** - appended to outbound calls
-* **Force Presentation options**
+* **Force Presentation options** 
+
 |Option|Example|Usage|
 |Single Rate|0.0007|Usually a UK Landline|
 |IntER/IntRA|1 (NPANXX)|Refers to Interstate and Intrastate calling, typically for USA dialing|
 |IntER/IntRA/Indeterminate|1 (NPANXX)|Indeterminate indicates that call is between a USA number and another country|
+
 * **Dialing** - In the US, LRN (Local Routing Number) identifies the switch for a number and is used to determine billing for a call.  When a number is ported from one provider to another, the billing may change based on the new carrier. An LRN dip will correct any pricing discrepancies between the original and new carriers. (ConnexCS owns their own database for this, so the response time is quick.) This helps to reduce billing costs. If the customer wants to do single rates they may not want to do the LRN dip. 
 
 Advanced:
