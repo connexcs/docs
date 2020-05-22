@@ -40,9 +40,10 @@ To set up an internal Rate Card in ConnexCS:
 7. In the cost field, add the sell price.
 8. There are three choices for costs:
 
-   * **Absolute** sets a flat cost, taken from the cost field, and what is actually charged. 
-   * **Relative** costs are added to the price you entered in cost field. 
-   * **Percent** adds a percentage (%) to the **Percentage** field if you don't want to use an absolute or relative value.  For example, a '10' in the box equals a 10% markup.
+    * **Absolute** sets a flat cost, taken from the cost field, and what is actually charged. 
+    * **Relative** costs are added to the price you entered in cost field. 
+    * **Percent** adds a percentage (%) to the **Percentage** field if you don't want to use an absolute or relative value.  For example, a '10' in the box equals a 10% markup.
+   
 9. Select the billing type.
 
     ![alt text][customer-card-4]
@@ -66,13 +67,13 @@ The following instructions detail the external method for building Customer Rate
 3. Go to **Properties** > **Advanced**, and then select the providers inside the Dynamic Routing box. 
 4. Click **`Save`**.
 
-   ![alt text][customer-card-7]
+    ![alt text][customer-card-7]
  
 5. Click the **`Upload`** button.  A dialog window will allow you to upload a file from your local device.
 
-   ![alt text][customer-card-8]
+    ![alt text][customer-card-8]
 
-   ![alt text][customer-card-9]
+    ![alt text][customer-card-9]
 
 5. Once the upload completes, select the new file by name.
 6. Map the rate card fields against the system fields. 
