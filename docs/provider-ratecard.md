@@ -21,18 +21,16 @@ New Provider Rate Cards may be added manually or by uploading an existing file.
 
 ![alt text][provider-card-4] 
 
-## Manage existing Provider Rate Cards
-
-### Dependent Cards
+## Dependent Cards
 These are Customer cards that use the selected rate card. Changes to the Provider Rate Card will be applied to each dependent rate card. 
 
-### Revision Tab 
+## Revision Tab 
 The Revision tab displays up to 8 most recent changes made to a rate card (ex: previous Rule count, Presentation, Currency, date created, Billing). The two most recent revisions will be available as Active or Inactive, the rest will be in Archive state. 
 
 1. To activate an earlier version from archive, click Archive next to the Revision. This may take a few minutes. 
 2. To make the previous version Active, click Active. This may take a few minutes. 
 
-### Properties tab
+## Properties tab
 
 Config:
 
