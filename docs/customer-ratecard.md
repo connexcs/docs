@@ -21,37 +21,37 @@ There are two types of rate cards:
 * **External** rate cards are completed by uploading a custom rate card and setting up dynamic routing.
 
 ## The Internal Method 
-
 To set up an internal Rate Card in ConnexCS:
 
 1. Click **Management** > **Rate Cards** > **Customer Rate Card**.
 2. Select the **`+`** button. 
 3. Name the card, select a carrier, then click **`Save`**.
  
-   ![alt text][customer-card-1]
+    ![alt text][customer-card-1]
 
-   ![alt text][customer-card-2]
+    ![alt text][customer-card-2]
 
 4. Select **Profits**.
 5. Click the **`+`** button. 
 
-   ![alt text][customer-card-3]
+    ![alt text][customer-card-3]
 
-6. Enter the required prefix in the prefix field, usually an international country code instead of a provider or customer tech  prefix. Adding an up arrow `^` on the prefix draws all associated prefixes from the provider card. To specify a set of prefixes add, `^` and prefixes (e.g. ^441).
+6. Enter the required prefix in the prefix field. This is typically an international country code, not a provider or customer tech prefix. Adding an up arrow `^` on the prefix draws all associated prefixes from the provider card. To specify a set of prefixes add, `^` and prefixes (e.g. ^441).
 7. In the cost field, add the sell price.
 8. There are three choices for costs:
+
    * **Absolute** sets a flat cost, taken from the cost field, and what is actually charged. 
    * **Relative** costs are added to the price you entered in cost field. 
-   * Add a percentage (%) to the **Percentage** field if you don't want to use an absolute or relative value.  For example, a '10' in the box equals a 10% markup.
+   * **Percent** adds a percentage (%) to the **Percentage** field if you don't want to use an absolute or relative value.  For example, a '10' in the box equals a 10% markup.
 9. Select the billing type.
 
-   ![alt text][customer-card-4]
+    ![alt text][customer-card-4]
 
 9. Enter the connection charge, if it applies.
 
-10. Select the Rounding method.  It can be up to six(6) decimal places, but is is usually four(4).
+10. Select the Rounding method.  It can be up to six (6) decimal places, but is usually four (4).
 
-11. Select **Cost** under the drop-down list for **Apply To**. If it is a NPA-NXX card you can select Inter/intra/cost
+11. Select **Cost** under the drop-down list for **Apply To**. If it is an NPA-NXX card you can select Inter/intra/cost
     
 12.  Select **Profit** from the Status drop-down list.
 
@@ -79,7 +79,7 @@ The following instructions detail the external method for building Customer Rate
 7. Click the **`Import to card`** button and select the customer card.
 8. Click **`Save`**.
 
-The rate card file is imported the customer rate card, and a notfication will signal its completion.  Unlike the internal alternative, there is no need to build an external rate card.
+The rate card file is imported the customer rate card, and a notification will signal its completion.  Unlike the internal alternative, there is no need to build an external rate card.
 
 
 ## Main 
@@ -93,9 +93,9 @@ Profits- profit rules
 The revision tab shows previous changes made to rate cards. For example: previous Rule count, Presentation, Currency, date created, and Billing.
 
 ## Properties
- * **Rate Cards** - defines how customer routing is built as well as how customer prices are are derived
+ * **Rate Cards** - defines how customer routing is built as well as how customer prices are derived
  * **Manual Ordering** - allows for granular ordering of specific prefixes and which carriers to send to
- * **Contracts** - specify a default contract that applies to a particular rate card
+ * **Contracts** - specify a default contract that applies to a specific rate card
 
 [customer-card-1]: /card/img/121.png "Customer-card-1"
 [customer-card-2]: /card/img/122.png "Customer-card-2"
