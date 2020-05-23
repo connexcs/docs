@@ -1,4 +1,4 @@
-#Viewing Audit Logs for Actions Performed on the ConnexCS Control Panel
+# Viewing Audit Logs for Actions Performed on the ConnexCS Control Panel
 
 You can view the audit logs, if you want to view the history of actions that users performed on the ConnexCS Control Panel. 
 
