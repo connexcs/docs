@@ -21,6 +21,9 @@ New Provider Rate Cards may be added manually or by uploading an existing file.
 
 ![alt text][provider-card-4] 
 
+!!! info "Detailed Rate Card setup"
+    For a full description of adding new Rate Cards, see "Rate Card Setup" in the ConnexCS [Video Guide](https://docs.connexcs.com/video-guide/). 
+
 ## Dependent Cards
 These are Customer cards that use the selected rate card. Changes to the Provider Rate Card will be applied to each dependent rate card. 
 
