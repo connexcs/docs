@@ -21,6 +21,9 @@ New Provider Rate Cards may be added manually or by uploading an existing file.
 
 ![alt text][provider-card-4] 
 
+!!! note "Bulk Upload file format"
+    The Provider Rate code files must be in CSV format before being uploaded. 
+
 ## Dependent Cards
 These are Customer cards that use the selected rate card. Changes to the Provider Rate Card will be applied to each dependent rate card. 
 
