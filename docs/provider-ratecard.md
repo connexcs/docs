@@ -17,12 +17,9 @@ The Provider Rate Card screen display at-a-glance information for each card:
 New Provider Rate Cards may be added manually or by uploading an existing file. 
 
 1. Manual additions: Add a new rate card to an existing carrier by selecting the blue **`+`** button to the top-right of the list, select the appropriate carrier, and set card details manually. 
-2. Bulk Upload: From within the carrier, select **Upload**, select the appropriate file, then map the rate card fields against the system fields. You will be notified with a popup when the import completes.
+2. Bulk Upload: From within the carrier, select **Upload**, select the appropriate CSV file (must be converted to CSV prior to upload), then map the rate card fields against the system fields. You will be notified with a popup when the import completes.
 
 ![alt text][provider-card-4] 
-
-!!! note "Bulk Upload file format"
-    The Provider Rate code files must be in CSV format before being uploaded. 
 
 ## Dependent Cards
 These are Customer cards that use the selected rate card. Changes to the Provider Rate Card will be applied to each dependent rate card. 
