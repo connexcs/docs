@@ -98,6 +98,16 @@ The revision tab shows previous changes made to rate cards. For example: previou
  * **Manual Ordering** - allows for granular ordering of specific prefixes and which carriers to send to
  * **Contracts** - specify a default contract that applies to a specific rate card
 
+
+## Rounding Methods
+All of the following apply to the n+1 digit (e.g if your card is billed to 4 decimal places, this cares about the 5th digit)
+
+For our example: 0.1234**5** (Rounded to 4 decimal places)
+ * **Full Down** - Rounded down regardless of n+1 digit (0.1234)
+ * **Half Down** - Values 0-5 are rounded down. (0.1234)
+ * **Half Up** - Values 5-9 are rounded up.  (0.1235)
+ * **Full Up** - Rounded up regardless of n+1 digit (0.1235)
+
 [customer-card-1]: /card/img/121.png "Customer-card-1"
 [customer-card-2]: /card/img/122.png "Customer-card-2"
 [customer-card-3]: /card/img/123.png "Customer-card-3"
