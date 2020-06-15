@@ -97,8 +97,18 @@ The revision tab shows previous changes made to rate cards. For example: previou
  * **Rate Cards** - defines how customer routing is built as well as how customer prices are derived
  * **Manual Ordering** - allows for granular ordering of specific prefixes and which carriers to send to
  * **Contracts** - specify a default contract that applies to a specific rate card
+ * **Collapse Using (Properties > Config)** - select how you want to merge data with the carrier cards
+ * **Rate Compacts** - Applied after **Collapse Using**, it calculates the Minimum, Maximum, or Average cost (as selected) based on the Rate Cards selected on the right
 
-## Profit Rules
+## Profits
+The Profit Rules allows you to 
+
+* **Profit Type**
+   * Absolute - actual value charged
+   * Relative - amount entered is added to the cost from the carrier
+   * Percent - cost from the carrier multipled by this percent
+* **Status** - Use Blocked after importing a Carrier Rate Card to disable specific prefixes
+* When MCD (Minimum Call Duartion), Pulse, or Rounding are disabled, that setting will select the worst case scenario as defined by the carrier. 
 
 
 ## Rounding Methods
