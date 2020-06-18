@@ -428,24 +428,6 @@ The **Contracts** section lists provider contracts associated with the active cu
 This is used when you want new customers to agree to certain conditions before they can dial. The Grace Date allows the customer to demo the service until the set date, at which time they will need to agree to the contract to continue using the service. 
 
 
-### Documents
-
-The **Documents** section is used to collect various files from the customer. Some examples are CLI verification, copy of a phone bill, or some means to verify identity such as a passport. Creating and saving a new entry here will send an alert to the customer letting them know they need to provide the requested document.  This can be uploaded from the customer site, then accessed here for review. 
-
-
-### 3CX
-3CX is a next-generation Unified Communications (UC) and PBX service with advanced features including mobile applications and call center functions. 
-
-To add 3CX to a customer account:
-1. Click the "`+`" and complete the form. 
-2. For pricing, select the license and desired channels to get a monthly per channel price as well as the annual subscription price. 
-3. When the form is completed, click "`Place Order`" and the order will be processed by the ConnexCS support team. 
-
-For more detailed information on 3CX deployments, see the [3CX Guide](https://docs.connexcs.com/3cx/3cx/). 
-
-### Class5
-Class5 is the ConnexCS alternative to the 3CX UC service. It allows customers to [setup Conference Calling](https://docs.connexcs.com/creating-conference/), [create IVRs](https://docs.connexcs.com/creating-ivr/), [Group call routing](https://docs.connexcs.com/creating-group/), and remote Voicemail management. 
-
 
 
 [customer-dashboard]: /customer/img/33.png "Customer-Dashboard"
