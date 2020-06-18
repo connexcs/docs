@@ -1,3 +1,3 @@
-!!! bug "Documentation is being written."
-    Thank you for visiting this section. We are busy updating this section of our documentation, please check back soon.
-	If you have any questions please come to our website and have a chat with us.
+# Class5
+
+**Class5** is the ConnexCS alternative to the [3CX Unified Communications](https://docs.connexcs.com/3cx/3cx/) service. It allows customers to [setup Conference Calling](https://docs.connexcs.com/creating-conference/), [create IVRs](https://docs.connexcs.com/creating-ivr/), [manage group call routing](https://docs.connexcs.com/creating-group/), and manage Voicemail remotely. 
