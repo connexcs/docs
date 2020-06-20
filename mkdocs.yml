@@ -50,10 +50,10 @@ pages:
         - Latest-Calls: customer/latest-calls.md
         - Dialogs: customer/dialogs.md
         - Alert: customer/alerts.md
-        - Did: customer/did.md
-        - Cdr: customer/cdr.md
+        - DID: customer/did.md
+        - CDR: customer/cdr.md
         - Package: customer/package.md
-        - Customer Repository: customer/document.md
+        - Customer Repository: customer/repository.md
         - 3CX: customer/3cx.md
         - Class5: customer/class5.md
 
