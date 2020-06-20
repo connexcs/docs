@@ -416,16 +416,7 @@ To add customer packages and quantities:
 
 ![alt text][customer-package]
 
-### Invoices
 
-The **Invoices** tab displays a record of invoices sent to the account. These can be automatically generated. You can also add extra lines, packages, minutes, and so on. Clicking the entries will display more detailed information.
-
-
-### Contracts
- 
-The **Contracts** section lists provider contracts associated with the active customer account. Select the records by clicking their names to see more details.
-
-This is used when you want new customers to agree to certain conditions before they can dial. The Grace Date allows the customer to demo the service until the set date, at which time they will need to agree to the contract to continue using the service. 
 
 
 
