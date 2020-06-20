@@ -379,42 +379,8 @@ To assign **DID**:
     For DID billing (found at Customer > DID > Edit DID > Billing), it is recommended to set customers to a Package rather than using the Cost and Retail functions
    
 
-### Call Detail Record (CDR)
-
-The **CDR** tab lists Call Detail Records associated with the selected account.  Selecting the entries will display more detailed information. 
-
-#### Manage CDR data
-
-* **Columns**: Additional CDR fields can be enabled on the Columns tab on the right
-* **Column filter/sort**: Displayed entries can be filtered and sorted by clicking the header of each column. 
-* **Query Builder**: Advanced filters can be created using the Query Builder using any of the fields of the record  ![alt text][querybuilder]
-* **Download**: Pressing **`Download`** will save the record to your hard drive. You can also select which columns to include in the download.
-
-#### Recalculate CDR
-
-To recalculate long-duration calls that timed out:
-
-1.	Click the **`Recalc CDR`** button.
-2.	Fill the dialogue box. Here you can select the day, maximum duration:
-3.	Click **`Save`**.
-
-   ![alt text][recalc]
 
 
-
-
-### Packages
-
-To add customer packages and quantities:
-
-1.	Click the **`+`** button.
-2.	Select package duration, quantity, cost, and frequency, click the drop down arrow in the Package field. 
-3.  Enter desired Quantity. 
-3.  Enter the Start Date, and End Date if desired. 
-3.  Selecting **Auto Decrement Credit** will debit the package amount from the customer account based on the quantity entered above.
-3.	Click the **`Save`** button.
-
-![alt text][customer-package]
 
 
 
@@ -453,9 +419,8 @@ To add customer packages and quantities:
 [payments-tab]: /customer/img/53.png "Payments Tab" 
 
 [querybuilder]: /customer/img/querybuilder.png "Query Builder"
-[recalc]: /customer/img/56.png "Recalc"
-[customer-package]: /customer/img/58.png "Customer-Package"
-[customer-package1]: /customer/img/59.png "Customer-Package1"
+
+
 [customer]: /customer/img/60.png "customer"
 [contacts]: /customer/img/61.png "contacts"
 [contacts-2]: /customer/img/62.png "contacts-2"
