@@ -381,12 +381,6 @@ To assign **DID**:
 
 
 
-
-
-
-
-
-
 [customer-dashboard]: /customer/img/33.png "Customer-Dashboard"
 [add-customer-new]: /customer/img/34.png "Add-Customer"
 [add-customer]: /customer/img/35.png "Add-Customer"
@@ -417,8 +411,6 @@ To assign **DID**:
 
 [simulate-call]: /customer/img/52.png "Simulate Call"
 [payments-tab]: /customer/img/53.png "Payments Tab" 
-
-[querybuilder]: /customer/img/querybuilder.png "Query Builder"
 
 
 [customer]: /customer/img/60.png "customer"
