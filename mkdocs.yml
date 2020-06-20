@@ -53,9 +53,7 @@ pages:
         - Did: customer/did.md
         - Cdr: customer/cdr.md
         - Package: customer/package.md
-        - Invoice: customer/invoice.md
-        - Contract: customer/contract.md
-        - Document: customer/document.md
+        - Customer Repository: customer/document.md
         - 3CX: customer/3cx.md
         - Class5: customer/class5.md
 
