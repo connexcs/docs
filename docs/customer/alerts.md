@@ -1,18 +1,18 @@
-### Alerts
-The **Alerts** tab allows you to generate alerts to your customers when specific events are triggered. You can view all your alerts by clicking on this tab.
+# Alerts
 
-To add a customised alert from the Alerts screen:
-1. Click the **`+`** button.
+**Alerts** allow you to generate alerts to your customers when specific events are triggered, or to disable accounts autonomously when specificed thresholds are reached. You can view all configured alerts by clicking on this tab.
 
-![alt text][alert-1]
-
-2. Give the alert a name such as: Low Balance Alert.
-3. Select the email address or phone number to receive the alert.
-4. Area is the place that is being monitored, i.e. Balance. 
-5. The Operator is the comparitor to which the threshold is compared. For example, if the Operator is set to >$50, and the Threshold is set to $50, an Alert will be triggered and sent to the recipient.
+To add a customised alert, click the **`+`** button and provide the following:
+1. **Title**: describe what the alert is for
+2. **Email/Phone**: where to send the alert
+3. **Area**: select the parameter which is being monitored
+4. **Operator**: comparitor to Threshold selecte below
+5. **Threshold**: the limit to trigger the alert, in units related to the selected Area above
+6. **Reset Threshold**: retriggers alert at the new limit 
+7. **Sample Period**: how frequent the alert is sent
+8. **Penalty**: autonomously disable the account for the selected time frame (system will automatically enable after the time period has elapsed)
 6. Click **`Save`**.
 
-![alt text][alert-2]
+![alt text][alerts]
 
-[alert-1]: /customer/img/54.png "Carrier Alert-1"
-[alert-2]: /customer/img/55.png "Carrier Alert-2"
+[alerts]: /customer/img/alerts.png "Alerts"
