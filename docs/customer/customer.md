@@ -379,73 +379,6 @@ To assign **DID**:
     For DID billing (found at Customer > DID > Edit DID > Billing), it is recommended to set customers to a Package rather than using the Cost and Retail functions
    
 
-### Call Detail Record (CDR)
-
-The **CDR** tab lists Call Detail Records associated with the selected account.  Selecting the entries will display more detailed information. 
-
-#### Manage CDR data
-
-* **Columns**: Additional CDR fields can be enabled on the Columns tab on the right
-* **Column filter/sort**: Displayed entries can be filtered and sorted by clicking the header of each column. 
-* **Query Builder**: Advanced filters can be created using the Query Builder using any of the fields of the record  ![alt text][querybuilder]
-* **Download**: Pressing **`Download`** will save the record to your hard drive. You can also select which columns to include in the download.
-
-#### Recalculate CDR
-
-To recalculate long-duration calls that timed out:
-
-1.	Click the **`Recalc CDR`** button.
-2.	Fill the dialogue box. Here you can select the day, maximum duration:
-3.	Click **`Save`**.
-
-   ![alt text][recalc]
-
-
-
-
-### Packages
-
-To add customer packages and quantities:
-
-1.	Click the **`+`** button.
-2.	Select package duration, quantity, cost, and frequency, click the drop down arrow in the Package field. 
-3.  Enter desired Quantity. 
-3.  Enter the Start Date, and End Date if desired. 
-3.  Selecting **Auto Decrement Credit** will debit the package amount from the customer account based on the quantity entered above.
-3.	Click the **`Save`** button.
-
-![alt text][customer-package]
-
-### Invoices
-
-The **Invoices** tab displays a record of invoices sent to the account. These can be automatically generated. You can also add extra lines, packages, minutes, and so on. Clicking the entries will display more detailed information.
-
-
-### Contracts
- 
-The **Contracts** section lists provider contracts associated with the active customer account. Select the records by clicking their names to see more details.
-
-This is used when you want new customers to agree to certain conditions before they can dial. The Grace Date allows the customer to demo the service until the set date, at which time they will need to agree to the contract to continue using the service. 
-
-
-### Documents
-
-The **Documents** section is used to collect various files from the customer. Some examples are CLI verification, copy of a phone bill, or some means to verify identity such as a passport. Creating and saving a new entry here will send an alert to the customer letting them know they need to provide the requested document.  This can be uploaded from the customer site, then accessed here for review. 
-
-
-### 3CX
-3CX is a next-generation Unified Communications (UC) and PBX service with advanced features including mobile applications and call center functions. 
-
-To add 3CX to a customer account:
-1. Click the "`+`" and complete the form. 
-2. For pricing, select the license and desired channels to get a monthly per channel price as well as the annual subscription price. 
-3. When the form is completed, click "`Place Order`" and the order will be processed by the ConnexCS support team. 
-
-For more detailed information on 3CX deployments, see the [3CX Guide](https://docs.connexcs.com/3cx/3cx/). 
-
-### Class5
-Class5 is the ConnexCS alternative to the 3CX UC service. It allows customers to [setup Conference Calling](https://docs.connexcs.com/creating-conference/), [create IVRs](https://docs.connexcs.com/creating-ivr/), [Group call routing](https://docs.connexcs.com/creating-group/), and remote Voicemail management. 
-
 
 
 [customer-dashboard]: /customer/img/33.png "Customer-Dashboard"
@@ -479,10 +412,7 @@ Class5 is the ConnexCS alternative to the 3CX UC service. It allows customers to
 [simulate-call]: /customer/img/52.png "Simulate Call"
 [payments-tab]: /customer/img/53.png "Payments Tab" 
 
-[querybuilder]: /customer/img/querybuilder.png "Query Builder"
-[recalc]: /customer/img/56.png "Recalc"
-[customer-package]: /customer/img/58.png "Customer-Package"
-[customer-package1]: /customer/img/59.png "Customer-Package1"
+
 [customer]: /customer/img/60.png "customer"
 [contacts]: /customer/img/61.png "contacts"
 [contacts-2]: /customer/img/62.png "contacts-2"

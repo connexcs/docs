@@ -22,4 +22,9 @@ CLI Restrict lets you block calls. The blocked CLI is added in the Provider Rate
 
 ![alt text][recording-7]
 
+## General Condition 6 (GC6) Compliance
+ConnexCS is GC6 compliant for end users, which "requires Communications Providers (CPs) to provide CLI facilities, and ensure that the CLI Data provided with a call includes a valid, dialable telephone number which uniquely identifies the caller." For details on this General Condition, including guideliens for "valid" and "dialable" numbers, see the Ofcom [Guidance on CLI Facilities](https://www.ofcom.org.uk/__data/assets/pdf_file/0012/113214/statement-guidelines-cli-facilities.pdf).
+
+To configure per customer, set the CLI P-Asserted-ID found in the customer routing configuration. See the [CLI](https://docs.connexcs.com/customer/customer/#cli) section for more detail on Advanced CLI Match and Manulpulation. 
+
 [recording-7]: /customer/img/63.png "recording-7"

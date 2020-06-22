@@ -2,7 +2,7 @@
 
 **Rate Cards** are an important ConnexCS feature as they are how most information is organized. The Rate Card Management screen is found under **Management** > **Rate Card**
 
-![alt text][provider-card-1] 
+
 
 The Provider Rate Card screen display at-a-glance information for each card:  
 
@@ -57,5 +57,5 @@ Advanced:
 * **Capped Rate** - Blocks any calls above the set price
 * **Delayed Bye** - On termination rate cards, the Delayed Bye feature adds the specified duration (in seconds) to the end of each call. Providers may use this in situations where a commercial contract specifies a minimum duration call. This feature should only be used along with full disclosure to both the customer and carrier.
 
-[provider-card-1]: /card/img/115.png "provider-card-1"
+
 [provider-card-4]: /card/img/118.png "provider-card-4"

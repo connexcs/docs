@@ -84,9 +84,9 @@ The rate card file is imported the customer rate card, and a notification will s
 
 
 ## Main 
-Parent Cards- the Provider Cards this card is associated to
-Customer- the customers using this Customer Card
-Profits- profit rules
+* **Parent Cards** are the Provider Rate Cards associated to this card
+* **Customers** lists the specific Customers using this card
+* **Profits** displays configured profit rules
 
 
 ## Revisions  
@@ -97,12 +97,23 @@ The revision tab shows previous changes made to rate cards. For example: previou
  * **Rate Cards** - defines how customer routing is built as well as how customer prices are derived
  * **Manual Ordering** - allows for granular ordering of specific prefixes and which carriers to send to
  * **Contracts** - specify a default contract that applies to a specific rate card
+ * **Collapse Using (Properties > Config)** - select how you want to merge data with the carrier cards
+ * **Rate Compacts** - Applied after **Collapse Using**, it calculates the Minimum, Maximum, or Average cost (as selected) based on the Rate Cards selected on the right
+
+## Profits
+The Profit Rules allows you to 
+
+* **Profit Type**
+   * Absolute - actual value charged
+   * Relative - amount entered is added to the cost from the carrier
+   * Percent - cost from the carrier multipled by this percent
+* **Status** - Use Blocked after importing a Carrier Rate Card to disable specific prefixes
+* When MCD (Minimum Call Duartion), Pulse, or Rounding are disabled, that setting will select the worst case scenario as defined by the carrier. 
 
 
 ## Rounding Methods
-All of the following apply to the n+1 digit (e.g if your card is billed to 4 decimal places, this cares about the 5th digit)
+All of the following apply to the n+1 digit (e.g if your card is billed to 4 decimal places, this cares about the 5th digit). For our example: 0.1234**5** (rounded to 4 decimal places)
 
-For our example: 0.1234**5** (Rounded to 4 decimal places)
  * **Full Down** - Rounded down regardless of n+1 digit (0.1234)
  * **Half Down** - Values 0-5 are rounded down. (0.1234)
  * **Half Up** - Values 5-9 are rounded up.  (0.1235)

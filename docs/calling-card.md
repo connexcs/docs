@@ -118,12 +118,14 @@ async function main(data){
 4. **`Save`** the Destination
 4. **`Save`** the App
 
-**Step 3: Create a DID in the system**
+**Step 3: Setup a DID in the system**
 
+1. [Create a new DID](https://docs.connexcs.com/did/#add-a-did)
 1. Set the new ScriptForge to the new App 
 2. Set the destination to `calling_card`
 3. Verify the origination CLI is whitelisted in the customer account.
-4. Your customer should be able to dial in, enter their number and the call to be sent out.
+
+Your customer should now be able to dial in, enter their number, and the call will be sent out.
 
 !!! note "Unrestricted dialing"
     If the customer requires unrestricted dialing for non-calling card calls, you can still add `^.*` as a CLI option.
