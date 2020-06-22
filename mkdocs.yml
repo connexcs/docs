@@ -64,15 +64,15 @@ pages:
         - Carrier: carrier.md
         
     - Rate Cards:
-        - Provider Ratecard: provider-ratecard.md
-        - Customer Ratecard: customer-ratecard.md
+        - Provider Rate Card: provider-ratecard.md
+        - Customer Rate Card: customer-ratecard.md
         - Building: rate-card-building.md
         - Card Management: card-management.md
         
     - DID:
         - DID/Origination: did.md
         
-    - Micsellanenous:
+    - Miscellaneous:
         - Authentication: authentication.md
         - Connex Billing: billing.md
         - Calling Card: calling-card.md
@@ -103,14 +103,14 @@ pages:
         - Creating a Group: creating-group.md
        
     - Developers:
-        - Scriptforge: developers/scriptforge.md
+        - Script Forge: developers/scriptforge.md
         - User Space Database: developers/user-space-db.md 
         - Form Builder: developers/form-builder.md
 
     - Setup:
         - AnyEdge: anyedge/anyedge.md
         - My Account: my-account.md
-        - Paypal: customer-payments.md
+        - PayPal: customer-payments.md
         - Settings:
             - Account: setup/settings/account.md
             - Payments: setup/settings/payments.md
