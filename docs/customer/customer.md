@@ -337,47 +337,6 @@ For simulating the call:
 
 The **Dialogs** tab shows the active calls on the account so you can easily see active calls with one click.
 
-### Alerts
-
-Create **Alerts** to create alarms and disable accounts autonomously for problematic customers as needed. 
-
-* **Title**: describe what the alert is for
-* **EmailPhone****: apply the alert to this customer
-* **Area**: select the parameter which triggers the alert
-* **Operator**: greater than, less than, or equal to the threshold
-* **Threshold**: the limit to trigger the alert, in units related to the selected Area above
-* **Reset Threshold**: retriggers alert at the new limit 
-* **Sample Period**: how frequent the alert is sent
-* **Penalty**: autonomously disable the account for the selected time frame (system will automatically enable after the time period has elapsed)
-
-![alt text][alerts]
-
-### Payments 
-
-In this tab, you can view a list of all the **payments** that have been made so far and you can also add new payments by:
-
-1.	Click on the **'+'** button.
-2.	Fill out the dialogue box as shown in the image below. Add the Description of the payment, the total amount in digits and finally        select the status of it whether it’s Completed, Pending or Cancelled.
-3.	Finally press the **Save** button.
-
-![alt text][payments-tab]
-
-!!! tip "Pending Payments"
-    When a customer places a payment through their bank, this will show up here with a status of **Pending**. To accept the payment, set it to **Completed** and **`Save`**. 
-
-### DID
-
-Navigate to Management > Customer > DID to create and edit **DID (Direct Inward Dial)** parameters. There are buttons for bulk uploads and bulk edits, and you can check the **Per Number Report** via the Stats button. 
-
-To assign **DID**:
-
-1.	Click on the **‘+’** button at the extreme right of the page.
-2.	In the new screen, add Customer and Customer Card, select the Provider and Provider Card, enter the DID, and select Enable. 
-3.	Press **`Save`** button.
-
-!!! tip "DID Billing"
-    For DID billing (found at Customer > DID > Edit DID > Billing), it is recommended to set customers to a Package rather than using the Cost and Retail functions
-   
 
 
 
@@ -407,11 +366,7 @@ To assign **DID**:
 [CLI]: <https://docs.connexcs.com/en/latest/cli>
 [Ingress Routing]: <https://docs.connexcs.com/en/latest/ingress-routing>
 
-[alerts]: /customer/img/alerts.png "Alerts"
-
 [simulate-call]: /customer/img/52.png "Simulate Call"
-[payments-tab]: /customer/img/53.png "Payments Tab" 
-
 
 [customer]: /customer/img/60.png "customer"
 [contacts]: /customer/img/61.png "contacts"
