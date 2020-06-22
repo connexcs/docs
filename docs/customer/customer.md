@@ -1,26 +1,27 @@
 # Customer
 
-
-
-In Connex, Customers are managed through customer cards. Each card has tabs that hold different management options, which we will explain below.  
-
-Customer Management is found in the **Management** tab, the four horizontal lines beneath the **Home** icon in the dashboard:
+In ConnexCS, Customers are managed through customer cards, under the **Management** tab, the four horizontal lines beneath the **Home** icon in the dashboard.
 
 ![alt text][customer-dashboard]
 
-
-### Managing Customers
+## Customers overview
 From the **Customers** board, you can perform several management operations. 
 
-#### View Modification
+### View Modification
 * **Columns** pop out on the right allows you to add/remove options, change column order, in some cases you can create row groups and aggregate values for pivot functionality
 * **Filters** pop out on the right allows you to filter your customers
 
-#### Bulk Customer Modifications
+### Top of page
+
+#### Bulk Edit
+Modify multiple Customers simultaneously
 * Bulk upload to add multiple customers at a time
 * Bulk edit to modify fields such as Channels, Status, Flow Speed (CPS), and so on
 
-#### Send Email & SMS
+#### Generate Invoice
+**Generate Invoice** to send to one or more customers selected from the list below. 
+
+#### Send 
 ConnexCS comes with Email and SMS included for your customers.
 1. Select multiple customers using the tickbox selector on the left side of each row.
 2. Click on "Send" at the top right then choose email or SMS.
@@ -31,14 +32,13 @@ ConnexCS comes with Email and SMS included for your customers.
 !!! note "Custom Email Servers."
     You can change the Email Server and SMS. Settings from Setup > Settings. 
 
+#### Active
+Filter the customer of customers listed based on account status. 
 
 ### Adding Customers
-The following explains how to add new customers using the **Customer Management** screen:
+The following explains how to add new customers manually:
 
 1. Click the **`+`** button.
-
-    ![alt text][add-Customer-new]
-
 2. Enter the relevant details in each text box.
 3. Click the **`Save`** button.
 
@@ -61,11 +61,7 @@ The following is a description of each entry found in the customer window:
 * **Portal Access:**  Users can turn **Portal Access** to yes(on) or no(off).  Selecting 'no' will restrict user access to the Customer Portal. Since everyone uses the portal at this time, this should always be set to 'yes'. 
 * **Address:** Complete the customer's physical address, not to be confused with email addresses.
 
-### Delete Customers
 
-You can delete customers from the list by selecting them and pressing the **Delete** button.
-
-![alt text][del-customer]
 
 ### Checking Customer Status
 
@@ -82,6 +78,9 @@ You can also check and filter **Customers** by status:
 Search for **Customer** information by adding a query in the **Search** text field and clicking the search icon or pressing **`Enter`**.
 
 ### Editing Customers
+
+## Managing Customers
+Open a Customer Card by clicking their name from the Customer Management screen. 
 
 Access the Customer Card by clicking their name in the customer list, then **Edit Customer**. The screen that opens is the same as the New Customer screen, with information already populated. Edit any field then click **`Save`**. For all field details, see **[Adding Customers](../customer/#adding-customers)**. Additional details are below: 
 
@@ -102,16 +101,14 @@ Access the Customer Card by clicking their name in the customer list, then **Edi
 !!! attention
     Mobile messages will be sent globally, but there are some reports of issues with SMS being delivered to numbers in India. These messages are sent on the Twilio network, so whatever they deliver ConnexCS will deliver. 
 
-## Customer Cards
-Open a Customer Card by clicking their name from the Customer Management screen. 
+
 
 
 
 [customer-dashboard]: /customer/img/33.png "Customer-Dashboard"
-[add-customer-new]: /customer/img/34.png "Add-Customer"
 [add-customer]: /customer/img/35.png "Add-Customer"
 
-[del-customer]: /customer/img/36.png "del-customer"
+
 [customer-status]: /customer/img/39.png "Customer-Status"
 [edit-customer]: /customer/img/40.png "Edit-Customer"
 
