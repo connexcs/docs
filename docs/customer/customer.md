@@ -214,42 +214,10 @@ If Voice Mail is enabled, you can set which email address receives messages, as 
 
 ![alt text][sip-auth]
 
-### Routing
-
-#### Ingress Routing
-
-With **Ingress Routing**, you can assign a Customer Rate Card to a customer account. To set up ingress routing:
-
-1.	Click on the **`+`** button.
-2.	Select the customer card and fill in the relevant details.
-3.	Press **`Save`**.
-
-To view and configure existing routes, click on the **Routing** tab in the Customer Card. 
-
-![alt text][ingress]
-
-!!! warning "Disabled Routes"
-    Any routes highlighted in red are disabled. To enable them, click on the route name then select **Enabled**. 
-
-For detailed field explanations, see [Routing](../routing).
-
-#### Call Recording
-To enable call recording:
-
-1. Click **Management** > **Customer**.
-2. Click the **Customer Name** > **Routing** > **Proxy Info**.
-3. Click the rate card name, and then select **Enable** from Recording.
-
-![alt text][recording-1]
-
-4. Recorded files are accessed from the file section
-5. Select **Management** > **File** > **Recording**.
-6. Click the **`Download`** button to download the file.
-
-![alt text][recording-2]
 
 
-#### CLI
+
+### CLI
 To set CLI options
 
 1.	Click on the **`+`** button.
@@ -292,12 +260,6 @@ The CLI system uses Regular Expressions to match and replace numbers. Here are a
 
 [main-tab]: /customer/img/41.png "Main Tab"
 [stats-tab]: /customer/img/42.png "Stats Tab"
-[ingress]: /customer/img/ingress.png "Ingress Routing"
-
-
-[recording-1]: /customer/img/45.png "recording-1"
-[recording-2]: /customer/img/46.png "recording-2"
-
  
 [edit-cli]: /customer/img/edit-cli.png "Edit CLI"
 [ipauth-basic]: /customer/img/ipauth-basic.png "Edit Switch Basic"
@@ -307,8 +269,6 @@ The CLI system uses Regular Expressions to match and replace numbers. Here are a
 
 [CLI]: <https://docs.connexcs.com/en/latest/cli>
 [Ingress Routing]: <https://docs.connexcs.com/en/latest/ingress-routing>
-
-
 
 [customer]: /customer/img/60.png "customer"
 [contacts]: /customer/img/61.png "contacts"
