@@ -216,40 +216,6 @@ If Voice Mail is enabled, you can set which email address receives messages, as 
 
 
 
-
-### CLI
-To set CLI options
-
-1.	Click on the **`+`** button.
-2.	Fill out the fields in the dialogue box and **`Save`**.
-
-Field details:
-
-+ Force CLI: To change the CLI that is presented for another, enter the CLI you wish to present, and click the **`Force CLI`** box.  It will allow you to override the previous number with one that is accepted. You can add a whitelist of CLIs and select Force on a CLI which you wish to be used if none of the others in the whitelist match.
-
-+ Rewrite CLI: A CLI can be re-written. For example, you can add `123456789` in the CLI box, and then rewrite by adding `987654321` in the re-write CLI box. (See **Advanced CLI Match and Manipulation** below.)
-
-+ P-Asserted-ID: **`P-Asserted-Identification`** is another SIP Header. It is not presented but allows telephone companies to identify originators on a network-only level. A P-Asserted-ID uses the same syntax as Replace CLI.
-
-![alt text][edit-cli]
-
-**Advanced CLI Match & Manipulation**
-The CLI system uses Regular Expressions to match and replace numbers. Here are a few examples:
-
-|             |            CLI | Replace CLI |                                      Description |
-|-------------|---------------:|------------:|-------------------------------------------------:|
-| 123456789   |          ^1234 |             |   Allows only numbers starting with 1234 to pass |
-| 123456789   |           789$ |             |      Allows only numbers ending with 789 to pass |
-| 12345678912 | ^[0-9]{11,12}$ |             | Allows only numbers with 11 or 12 digits to pass |
-| +123456789  |   ^\+([0-9]+)$ |          \1 |                                 Remove leading + |
-| 01782123456 |    ^0([1-9]+)$ |        44\1 |             Remove leading 0 and replace with 44 |
-
-*To learn more about writing regular expressions, visit http://regexr.com.  There are lots of tutorials and exercises available for all levels of expertise.*
-
-!!! note
-    To Whitelist and Restrict CLIs, see [CLI](/customer/cli). 
-
-
 [customer-dashboard]: /customer/img/33.png "Customer-Dashboard"
 [add-customer-new]: /customer/img/34.png "Add-Customer"
 [add-customer]: /customer/img/35.png "Add-Customer"
@@ -261,7 +227,7 @@ The CLI system uses Regular Expressions to match and replace numbers. Here are a
 [main-tab]: /customer/img/41.png "Main Tab"
 [stats-tab]: /customer/img/42.png "Stats Tab"
  
-[edit-cli]: /customer/img/edit-cli.png "Edit CLI"
+
 [ipauth-basic]: /customer/img/ipauth-basic.png "Edit Switch Basic"
 [ipauth-adv]: /customer/img/ipauth-adv.png "Edit Switch Advance"
 [ipauth-param]: /customer/img/ipauth-param.png "Edit Switch Parameters"
