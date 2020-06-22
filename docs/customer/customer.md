@@ -35,7 +35,7 @@ From the **Customers** board, you can perform several management operations.
 
 ![alt text][customer-status]
 
-### Adding Customers
+## Adding Customers
 The following explains how to add new customers manually:
 
 1. Click the **`+`** button.
@@ -80,7 +80,7 @@ Configuration field explanations:
     Mobile messages will be sent globally, but there are some reports of issues with SMS being delivered to numbers in India. These messages are sent on the Twilio network, so whatever they deliver ConnexCS will deliver. 
 
 
-### Managing Customers
+## Managing Customers
 Open a Customer Card by clicking their name from the Customer Management screen, then **Edit**. The screen that opens is the same as the New Customer screen, with information already populated. Edit any field then click **`Save`**. For all field details, see **[Adding Customers](../customer/#adding-customers)** above. 
 
 
