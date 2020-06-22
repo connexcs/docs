@@ -53,6 +53,7 @@ pages:
         - DID: customer/did.md
         - CDR: customer/cdr.md
         - Package: customer/package.md
+        - Monitoring: customer/monitoring.md
         - Customer Repository: customer/repository.md
         - 3CX: customer/3cx.md
         - Class5: customer/class5.md
