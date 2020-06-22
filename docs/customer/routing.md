@@ -2,7 +2,21 @@
 
 Routing allocates incoming attempts to a designated rate card, which in turn egresses through a specified provider. It allows multiple rate cards to be used with or without a prefix. This is checked according to the longest prefix first, then the shortest for a match. If no prefix is matched, it will match the rate cards with mutually exclusive destinations.  If there are multiple rate cards with the same prefixes, you must set up a dial plan with a tech prefix to identify the correct card.
 
-## Basic
+With **Ingress Routing**, you can assign a Customer Rate Card to a customer account. 
+
+
+To view and configure existing routes, click on the **Routing** tab in the Customer Card. 
+
+![alt text][ingress]
+
+!!! warning "Disabled Routes"
+    Any routes highlighted in red are disabled. To enable them, click on the route name then select **Enabled**. 
+    
+
+
+## Advanced Routing configuration
+
+### Basic
 
 **Rate Card**: Also known as Tariff, this allows you to select the rate card used on a customer's account.
 
@@ -33,7 +47,7 @@ Routing allocates incoming attempts to a designated rate card, which in turn egr
 **Enabled**: The route can be easily enabled and disabled here. 
 
 
-## Price Limits
+### Price Limits
 
 **Capped Rate** and **Provider Capped Rate** are used to set the maximum cost of a call. Calls that exceed the set rate will not be connected. 
 
@@ -42,14 +56,16 @@ Routing allocates incoming attempts to a designated rate card, which in turn egr
 **Block Connect Cost** Enabling this feature will block any call that has a connection cost. 
 
 
-## Capacity Limits
+### Capacity Limits
 
 **Channels** is used to set the maximum number of channels
 
 **Max Duration** is the maximum amount of time that the call will be allowed to exist before being terminated, typically in the case of a missed BYE missed. 
 
 !!! info "Call Timeouts"
-    A VoIP call is stateful, even though its protocol is stateless. This means that both sides of the conversation have to be told when to finish the call. They do this with a BYE message. If the BYE message goes missing, the call will continue forever. Max Duration is a method for setting up **Missing BYE Protection**. Another method is by using a **SIP Ping** to determine when the connection has timed out. This sends a SIP packet to the remote end of the conversation roughly every 30 seconds. This checks to see if the other side is still aware of an ongoing conversation. If it is not received back, or is told that the conversation is not active, then it shuts off the call. **RTP Time-out:** is another way to check for an active call based on whether audio is passing. If there is no audio passing for a pre-set interval, our RTP array will notify the switch and instruct it to terminate the call.  This won't work if RTP Mode is set to direct.
+    A VoIP call is stateful, even though its protocol is stateless. This means that both sides of the conversation have to be told when to finish the call. They do this with a BYE message. If the BYE message goes missing, the call will continue forever. 
+    
+Max Duration is a method for setting up **Missing BYE Protection**. Another method is by using a **SIP Ping** to determine when the connection has timed out. This sends a SIP packet to the remote end of the conversation roughly every 30 seconds. This checks to see if the other side is still aware of an ongoing conversation. If it is not received back, or is told that the conversation is not active, then it shuts off the call. **RTP Time-out:** is another way to check for an active call based on whether audio is passing. If there is no audio passing for a pre-set interval, our RTP array will notify the switch and instruct it to terminate the call.  This won't work if RTP Mode is set to direct.
 
 !!! Warning "Asterisk pings"
     Asterisk does not have SIP Ping (OPTIONS) enabled as default, if your customer / carrier is using Asterisk you may need to disable       this if they don't have it enabled on their side as calls will typically disconnect after 30 seconds. 
@@ -93,16 +109,16 @@ Routing allocates incoming attempts to a designated rate card, which in turn egr
 Unless it's turned off or customized otherwise, ASR+ is active for 90% of calls, which grants the opportunity for the database to be replenished.
 
 
-## ScriptForge
+### ScriptForge
 
 The PHP ScriptForge allows for custom code to run from within the ConnexCS platform.  Script is assigned to customers within routing. For more information about setup and operation, see the [ScriptForge](https://docs.connexcs.com/developers/scriptforge/) page.
 
-## Locks
+### Locks
 Used for troubleshooting, you can remove carriers from a route and run a quick test.  
 + **Lock** Parent Card: Choose this option to lock a rate card from the list of available providers. 
 + **Exclude** Parent Card: Choose this option to exclude access to one or more of the rate cards in the list of available providers.
 
-## Media
+### Media
 
 **Transcoding**
 This option is limited. Best use case is for customers in low-bandwidth areas that want to use G.729. Be aware that if you don't have enough transcoding capacity, calls will fail. 
@@ -163,5 +179,26 @@ When a call is established between customer and provider, audio can be set-up in
 **Call Recording**
 This feature is not currently available. 
 
-## Strategy
+### Strategy
 Part of RTP Proxy, calls are passed based on the routing strategy you set. For advanced routing, click the **`+`** to select a predefined Routing Strategy, and set the Prefix. 
+
+
+## Call Recording
+To enable call recording:
+
+1. Click **Management** > **Customer**.
+2. Click the **Customer Name** > **Routing** > **Proxy Info**.
+3. Click the rate card name, and then select **Enable** from Recording.
+
+![alt text][recording-1]
+
+4. Recorded files are accessed from the file section
+5. Select **Management** > **File** > **Recording**.
+6. Click the **`Download`** button to download the file.
+
+![alt text][recording-2]
+
+
+[ingress]: /customer/img/ingress.png "Ingress Routing"
+[recording-1]: /customer/img/45.png "recording-1"
+[recording-2]: /customer/img/46.png "recording-2"
