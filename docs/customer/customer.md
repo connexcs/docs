@@ -281,64 +281,6 @@ The CLI system uses Regular Expressions to match and replace numbers. Here are a
 !!! note
     To Whitelist and Restrict CLIs, see [CLI](/customer/cli). 
 
-### Stats
-
-In the **Stats** tab, you can view items calling and call quality statistics and reports. All graphs may be filtered by different time segments and are available to be downloaded. 
-
-#### Main
-
-There are several useful graphs which can provide details around usage or help to identify potential issues. 
-
-|Graph|Description |
-|:------------|:-------------------------------------------------|
-|Channels |Details channel usage|
-|ACD|Average Call Duration can be viewed as a Total, or you can isolate traffic on a per carrier basis (click on a customer to remove/add it from the graph); if ACD is lower on one carrier, that is indicative of potential line quality issues|
-|ASR |Answer Seisure Ratio can be viewed as a Total, or you can isolate traffic on a per carrier basis (click on a customer to remove/add it from the graph); if some carriers are lower than others this may indicate an issue|
-|Attempts |Useful to compare total connected calls to total attempted calls|
-|Balance |Balance Over Time|
-|CPS | Calls per Second over time|
-|Customer Carrier Duration |Click on the carriers to select/deselect individual carriers to view desired stats|
-|DTMF |Dual Tone Frequency Modulation percentages|
-|Codes |SIP response codes ([List of SIP Response Codes](https://en.wikipedia.org/wiki/List_of_SIP_response_codes))|
-|PDD |The lower the Post Dial Delay the better, however typically not viewed as problematic until it gets over 7 seconds|
-|Destinations |Displays all call destinations|
-|CLI ASR |View ASR statistics per CLI|
-|Channel and CPS Breach |This will identify instances when customers have exceeded your preset thresholds|
-|Fraud F1 |Internal metric used to identify a customer is potentially dialing many different numbers as opposed to similar/same numbers (may indicate potential fraud situation)|
-
-
-#### RTP
-|Graph|Description |
-|:------------|:-------------------------------------------------|
-|MOS |The Mean Opinion Score is an average measure of voice quality|
-|Round Trip Time |Displays how long traffic takes to be sent and received|
-|Jitter |Variance of packet delivery across the network causes information to arrive out of order. A higher jitter (50+ ms) may point towards potential voice quality issues|
-|Packet Loss |Loss of packets may cause some voice quality issues, or it may not be detectable|
-
-#### Reports
-View any reports that have been setup for a customer. 
-
-### Route Stats
-**Route Stats** displays Channel, Channel Breach, and CPS Breach data based on individual routes.
-
-### Latest Calls
-
-Here you can check the **latest call** from this tab, look up calls and refresh the list of simulated calls.
-For simulating the call: 
-
-1.	Click on the **Simulate** button.
-2.	Popup will appear.
-3.	Fill out the details of the dialogue box like **Dialed Number, CLI/ANI, Switch IP** etc., as mentioned in the image below:
-4.	Finally press **Simulate** button.
-
-![alt text][simulate-call]
-
-### Dialogs
-
-The **Dialogs** tab shows the active calls on the account so you can easily see active calls with one click.
-
-
-
 
 [customer-dashboard]: /customer/img/33.png "Customer-Dashboard"
 [add-customer-new]: /customer/img/34.png "Add-Customer"
@@ -366,7 +308,7 @@ The **Dialogs** tab shows the active calls on the account so you can easily see 
 [CLI]: <https://docs.connexcs.com/en/latest/cli>
 [Ingress Routing]: <https://docs.connexcs.com/en/latest/ingress-routing>
 
-[simulate-call]: /customer/img/52.png "Simulate Call"
+
 
 [customer]: /customer/img/60.png "customer"
 [contacts]: /customer/img/61.png "contacts"
