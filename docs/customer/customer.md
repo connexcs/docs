@@ -1,27 +1,27 @@
 # Customer
 
-
-
-In Connex, Customers are managed through customer cards. Each card has tabs that hold different management options, which we will explain below.  
-
-Customer Management is found in the **Management** tab, the four horizontal lines beneath the **Home** icon in the dashboard:
+In ConnexCS, Customers are managed through customer cards, under the **Management** tab, the four horizontal lines beneath the **Home** icon in the dashboard.
 
 ![alt text][customer-dashboard]
 
-
-### Managing Customers
+## Overview
 From the **Customers** board, you can perform several management operations. 
 
-#### View Modification
+### View Modification
 * **Columns** pop out on the right allows you to add/remove options, change column order, in some cases you can create row groups and aggregate values for pivot functionality
 * **Filters** pop out on the right allows you to filter your customers
 
-#### Bulk Customer Modifications
+### Top of page icons
+
+**Bulk Edit**: Modify multiple Customers simultaneously
+
 * Bulk upload to add multiple customers at a time
 * Bulk edit to modify fields such as Channels, Status, Flow Speed (CPS), and so on
 
-#### Send Email & SMS
-ConnexCS comes with Email and SMS included for your customers.
+**Generate Invoice**: Used to send to one or more customers selected from the list below. 
+
+**Send**: ConnexCS comes with Email and SMS included for your customers.
+
 1. Select multiple customers using the tickbox selector on the left side of each row.
 2. Click on "Send" at the top right then choose email or SMS.
 3. Fill in Subject line and body details and send. 
@@ -31,388 +31,71 @@ ConnexCS comes with Email and SMS included for your customers.
 !!! note "Custom Email Servers."
     You can change the Email Server and SMS. Settings from Setup > Settings. 
 
+**Active**: Filter the customer of customers listed based on account status. Results on the page will automatically arrange themselves according to the filter.
 
-### Adding Customers
-The following explains how to add new customers using the **Customer Management** screen:
+![alt text][customer-status]
+
+## Adding Customers
+The following explains how to add new customers manually:
 
 1. Click the **`+`** button.
-
-    ![alt text][add-Customer-new]
-
 2. Enter the relevant details in each text box.
 3. Click the **`Save`** button.
 
 ![alt text][add-Customer]
 
-The following is a description of each entry found in the customer window:
+Configuration field explanations:
+
+**Basic tab**
 
 * **Customer Name:** A name or unique identifier for each customer.
-* **PayPal Email:** The email address associated with the customer's PayPal account. (This is relevant when using the IPN API. Customer can make payments directly through PayPal instead of using the Customer Portal.) 
-* **Website:** The customer's website address.
 * **Status:** The customer's status, i.e.:
   * Active : The customer is active and allowed to pass calls. 
   * Inactive: The account is disabled, and 
   * Pending Approval: New signups will be listed as pending approval.  The customer cannot pass calls or become active until this phase is completed. 
-
 * **Debit Limit:**  Sets the debit limit for postpay customers.
 * **Minimum Payment:** Set the minimum payment to keep accounts active. 
 * **Tax:**  Tax is added as a percentage that is charged on top of costs.
 * **Currency:** Select the currency from the dropdown menu. Note that you won't be able to change the account currency once the account is created.
+
+
+
+**Config tab**
+
+* **PayPal Email:** The email address associated with the customer's PayPal account. (This is relevant when using the IPN API. Customer can make payments directly through PayPal instead of using the Customer Portal.) 
+* **Website:** The customer's website address.
 * **Portal Access:**  Users can turn **Portal Access** to yes(on) or no(off).  Selecting 'no' will restrict user access to the Customer Portal. Since everyone uses the portal at this time, this should always be set to 'yes'. 
+* **Tags**: use this to add meta-data
++ **TOML**: This is a data storage mechanism for configuration. Similar to INI files, you can create advanced customization to set values, etc, for Script Forge to reference later. 
+
+**Address Tab**
 * **Address:** Complete the customer's physical address, not to be confused with email addresses.
 
-### Delete Customers
+**Verification tab**
++ **Approved CLI's Only**: Used to force the customer to log into the Portal and enter their CLI number. This generates a test call with a code which the customer must enter into the portal. Once complete, their CLI will be added to the system. 
++ **Email Verification** and/or **Mobile Verification**: Used to force the customer to go to the portal for verification. (This is important to select when you create a customer manually.) If the customer doesn't verify these, they won't be able to dial. 
 
-You can delete customers from the list by selecting them and pressing the **Delete** button.
-
-![alt text][del-customer]
-
-### Checking Customer Status
-
-You can also check and filter **Customers** by status:
-
-1.	Click the button to the right of the trash bin labeled **`Active`**.
-2.	Select a filter option from the drop-down menu.
-3.	Results on the page will automatically arrange themselves according to the filter.
-
-![alt text][customer-status]
-
-### Searching Customers
-
-Search for **Customer** information by adding a query in the **Search** text field and clicking the search icon or pressing **`Enter`**.
-
-### Editing Customers
-
-Access the Customer Card by clicking their name in the customer list, then **Edit Customer**. The screen that opens is the same as the New Customer screen, with information already populated. Edit any field then click **`Save`**. For all field details, see **[Adding Customers](../customer/#adding-customers)**. Additional details are below: 
-
-**Basic** tab
-
-+ Status: For more information on Penalty, see **[Alerts](../customer/alerts.md)**
-
-**Config** tab
-
-+ Tags: use this to add meta-data
-+ TOML: This is a data storage mechanism for configuration. Similar to INI files, you can create advanced customization to set values, etc, for script forge to reference later. 
-
-**Verification** tab
-
-+ Select **Email Verification** and/or **Mobile Verification** to force the customer to go to the portal for verification. (This is important to select when you create a customer manually.) If the customer doesn't verify these, they won't be able to dial. 
-+ Select **Approved CLI's Only** to force the customer to log into the Portal and enter their CLI number. This generates a test call with a code which the customer must enter into the portal. Once complete, their CLI will be added to the system. 
 
 !!! attention
     Mobile messages will be sent globally, but there are some reports of issues with SMS being delivered to numbers in India. These messages are sent on the Twilio network, so whatever they deliver ConnexCS will deliver. 
 
-## Customer Cards
-Open a Customer Card by clicking their name from the Customer Management screen.  The following sections detail the tabs lined up on the left side of the customer card, starting at the top.
 
-### Main
-The top of the **Main** tab displays a summary of the Status, Balance, Debit Limit, and Current in use Channels. From here you can manage contacts, block internal numbers, and view call summaries.
-
-#### Contacts
-The **Contacts** section shows an overview of contacts associated with the account.  
-
-To add a new contact:
-
-1. Click **Management** > **Customers**.
-2. Select a customer from the list.  
-3. Press the **`+`** button to the right of the word **Contacts**.
-4. Enter the contact name and their login email address.
-5. Check the **Auto Generate Password** box to have a password generated online and sent via email. Uncheck the box to enter a password manually.
-6. You may enter any information on **public** notes. These notes will be displayed on the customer portal when logged in. Private notes will display in the control panel.
-7. Click **`Save`**.
-
-!!! warning 
-    DO NOT save passwords in either of the notes field in the Contact Details.
-
-![alt text][contacts-2]
-![alt text][main-tab]
-!!! note 
-    Check in the Customer Details to confirm the Mobile and Email have been verified. You can modify these in the contact or the customer can do this in the Customer Portal. 
-
-To reset a Contact password:
-
-1. Click the small **`key`** icon to the right of the Contact
-2. Select to "Auto Generate & Email Password" or enter it manually
-3. Save
-
-#### Internal Number Block
-Used to assign internal customer number ranges which can be used for functions such as SIP authentication
-
-1. Click **`+`** button
-2. Number block will be assigned
-
-!!! note 
-    The Number Range Parameters must be defined before an Internal Number Block can be assigned. 
-
-#### Summary
-The Summaries of calls in Live, Daily, and Monthly Formats, are all displayed in 24-hour UTC. There are several functions that can be performed with this data. 
-
-+ Select multiple cells in a column to get sum and average values (not a true average, but an average of averages)
-+ Select data from multiple columns and rows, then right click to **`Copy`**, **`Copy with Headers`**, and **`Export`**
-+ Check the box under the Action column then select **`Generate Invoice`** in the upper right corner. This will create the invoice which can then be queried by a billing system. 
-+ Select **View Audit Log** to see when the customer was created and view any modifications that have been made to the account. (View Difference displays data in JSON format.)
-
-
-### Authentication
-
-Under the **Auth** tab users can choose to setup IP or SIP (Username/Password) Authentication. To set either one, click the **`+`** button.
- 
- 
-#### IP Authentication
-
-
-On the **Basic** tab, users can set the IP address, Channels, and Flow Speed. The Ingress and Egress selections are from the perspective of the customer switch (PBX, dialer, etc). 
-
-![alt text][ipauth-basic]
-
-
-On the **Advanced** tab, there are several options that can be configured:
-
-+ **Codecs**: all codecs are supported unless one is specified here.
-+ **Manufacturer and Version**: you can set the customer switch manufacturer and version if desired (these fields are not functional, they are for reference only).
-+ **Protocol, Port, Dial Pattern**: the default selection is the standard for each parameter
-+ **CLI Prefix, Tech Prefix, Strip Digits, Bandwidth**: these fields are all optional. Setting Bandwidth may be useful for customers with audio problems caused by slow speeds.
-+ **Force From, Username, and Password**: these fields need to be set when using SIP registration
-+ **Force NAT**: forces switch to read the IP address the traffic was received from, not the IP in the SIP packet.
-+ **Intercept Reinvite**: helpful to use when customer equipment doesn't support reinvites (may correct issues with dropped calls). 
-
-![alt text][ipauth-adv]
-
-The **Parameter Rewrite** tab is used to create automatic replacements for destination numbers or CLI, so a number is formatted in the appropriate [E164 format](https://www.twilio.com/docs/glossary/what-e164). 
-
-1. Click the **`+`**.
-2. Select the parameter you want to modify.
-3. Current: enter the prefix for the destination number, or the CLI.
-4. New: enter what should replace the current information.
-5. Use Testing to test what replacement will occur.
-6. Click **`Save`** when done. 
-
-![alt text][ipauth-param]
-
-#### SIP User Authentication
-
-The **Basic** tab allows users to setup **User/Password authentication**. For additional field descriptions, see the Advanced tab under IP Authentication above.
-
-+ **SIP username**: This must also be configured on the customer UAC.
-+ **NAT/SIP Ping**: refers to pings sent from ConnexCS back to the through customer firewall to their UAC. If enabled, they may keep a connection up for longer calls (typically either 1800 or 3600 seconds).
-    
-    Disabled: no pings are sent
-    
-    Enabled: UDP ping
-    
-    Enabled (Timeout): SIP ping (drops connection if ping can't be returned)
-
-!!! tip
-    After NAT or SIP pings are enabled and the user is saved, an additional tab at the top will be available which measures latency.         This can be helpful for troubleshooting audio problems. 
-
-
-The **Parameter Rewrite** tab fields are the same as the ones for IP Authentication above.
-
-**Voice Mail** tab
-
-If Voice Mail is enabled, you can set which email address receives messages, as well as reset the Voicemail Password. You also can to view and delete current messages. 
-
-![alt text][sip-auth]
-
-### Routing
-
-#### Ingress Routing
-
-With **Ingress Routing**, you can assign a Customer Rate Card to a customer account. To set up ingress routing:
-
-1.	Click on the **`+`** button.
-2.	Select the customer card and fill in the relevant details.
-3.	Press **`Save`**.
-
-To view and configure existing routes, click on the **Routing** tab in the Customer Card. 
-
-![alt text][ingress]
-
-!!! warning "Disabled Routes"
-    Any routes highlighted in red are disabled. To enable them, click on the route name then select **Enabled**. 
-
-For detailed field explanations, see [Routing](../routing).
-
-#### Call Recording
-To enable call recording:
-
-1. Click **Management** > **Customer**.
-2. Click the **Customer Name** > **Routing** > **Proxy Info**.
-3. Click the rate card name, and then select **Enable** from Recording.
-
-![alt text][recording-1]
-
-4. Recorded files are accessed from the file section
-5. Select **Management** > **File** > **Recording**.
-6. Click the **`Download`** button to download the file.
-
-![alt text][recording-2]
-
-
-#### CLI
-To set CLI options
-
-1.	Click on the **`+`** button.
-2.	Fill out the fields in the dialogue box and **`Save`**.
-
-Field details:
-
-+ Force CLI: To change the CLI that is presented for another, enter the CLI you wish to present, and click the **`Force CLI`** box.  It will allow you to override the previous number with one that is accepted. You can add a whitelist of CLIs and select Force on a CLI which you wish to be used if none of the others in the whitelist match.
-
-+ Rewrite CLI: A CLI can be re-written. For example, you can add `123456789` in the CLI box, and then rewrite by adding `987654321` in the re-write CLI box. (See **Advanced CLI Match and Manipulation** below.)
-
-+ P-Asserted-ID: **`P-Asserted-Identification`** is another SIP Header. It is not presented but allows telephone companies to identify originators on a network-only level. A P-Asserted-ID uses the same syntax as Replace CLI.
-
-![alt text][edit-cli]
-
-**Advanced CLI Match & Manipulation**
-The CLI system uses Regular Expressions to match and replace numbers. Here are a few examples:
-
-|             |            CLI | Replace CLI |                                      Description |
-|-------------|---------------:|------------:|-------------------------------------------------:|
-| 123456789   |          ^1234 |             |   Allows only numbers starting with 1234 to pass |
-| 123456789   |           789$ |             |      Allows only numbers ending with 789 to pass |
-| 12345678912 | ^[0-9]{11,12}$ |             | Allows only numbers with 11 or 12 digits to pass |
-| +123456789  |   ^\+([0-9]+)$ |          \1 |                                 Remove leading + |
-| 01782123456 |    ^0([1-9]+)$ |        44\1 |             Remove leading 0 and replace with 44 |
-
-*To learn more about writing regular expressions, visit http://regexr.com.  There are lots of tutorials and exercises available for all levels of expertise.*
-
-!!! note
-    To Whitelist and Restrict CLIs, see [CLI](/customer/cli). 
-
-### Stats
-
-In the **Stats** tab, you can view items calling and call quality statistics and reports. All graphs may be filtered by different time segments and are available to be downloaded. 
-
-#### Main
-
-There are several useful graphs which can provide details around usage or help to identify potential issues. 
-
-|Graph|Description |
-|:------------|:-------------------------------------------------|
-|Channels |Details channel usage|
-|ACD|Average Call Duration can be viewed as a Total, or you can isolate traffic on a per carrier basis (click on a customer to remove/add it from the graph); if ACD is lower on one carrier, that is indicative of potential line quality issues|
-|ASR |Answer Seisure Ratio can be viewed as a Total, or you can isolate traffic on a per carrier basis (click on a customer to remove/add it from the graph); if some carriers are lower than others this may indicate an issue|
-|Attempts |Useful to compare total connected calls to total attempted calls|
-|Balance |Balance Over Time|
-|CPS | Calls per Second over time|
-|Customer Carrier Duration |Click on the carriers to select/deselect individual carriers to view desired stats|
-|DTMF |Dual Tone Frequency Modulation percentages|
-|Codes |SIP response codes ([List of SIP Response Codes](https://en.wikipedia.org/wiki/List_of_SIP_response_codes))|
-|PDD |The lower the Post Dial Delay the better, however typically not viewed as problematic until it gets over 7 seconds|
-|Destinations |Displays all call destinations|
-|CLI ASR |View ASR statistics per CLI|
-|Channel and CPS Breach |This will identify instances when customers have exceeded your preset thresholds|
-|Fraud F1 |Internal metric used to identify a customer is potentially dialing many different numbers as opposed to similar/same numbers (may indicate potential fraud situation)|
-
-
-#### RTP
-|Graph|Description |
-|:------------|:-------------------------------------------------|
-|MOS |The Mean Opinion Score is an average measure of voice quality|
-|Round Trip Time |Displays how long traffic takes to be sent and received|
-|Jitter |Variance of packet delivery across the network causes information to arrive out of order. A higher jitter (50+ ms) may point towards potential voice quality issues|
-|Packet Loss |Loss of packets may cause some voice quality issues, or it may not be detectable|
-
-#### Reports
-View any reports that have been setup for a customer. 
-
-### Route Stats
-**Route Stats** displays Channel, Channel Breach, and CPS Breach data based on individual routes.
-
-### Latest Calls
-
-Here you can check the **latest call** from this tab, look up calls and refresh the list of simulated calls.
-For simulating the call: 
-
-1.	Click on the **Simulate** button.
-2.	Popup will appear.
-3.	Fill out the details of the dialogue box like **Dialed Number, CLI/ANI, Switch IP** etc., as mentioned in the image below:
-4.	Finally press **Simulate** button.
-
-![alt text][simulate-call]
-
-### Dialogs
-
-The **Dialogs** tab shows the active calls on the account so you can easily see active calls with one click.
-
-### Alerts
-
-Create **Alerts** to create alarms and disable accounts autonomously for problematic customers as needed. 
-
-* **Title**: describe what the alert is for
-* **EmailPhone****: apply the alert to this customer
-* **Area**: select the parameter which triggers the alert
-* **Operator**: greater than, less than, or equal to the threshold
-* **Threshold**: the limit to trigger the alert, in units related to the selected Area above
-* **Reset Threshold**: retriggers alert at the new limit 
-* **Sample Period**: how frequent the alert is sent
-* **Penalty**: autonomously disable the account for the selected time frame (system will automatically enable after the time period has elapsed)
-
-![alt text][alerts]
-
-### Payments 
-
-In this tab, you can view a list of all the **payments** that have been made so far and you can also add new payments by:
-
-1.	Click on the **'+'** button.
-2.	Fill out the dialogue box as shown in the image below. Add the Description of the payment, the total amount in digits and finally        select the status of it whether it’s Completed, Pending or Cancelled.
-3.	Finally press the **Save** button.
-
-![alt text][payments-tab]
-
-!!! tip "Pending Payments"
-    When a customer places a payment through their bank, this will show up here with a status of **Pending**. To accept the payment, set it to **Completed** and **`Save`**. 
-
-### DID
-
-Navigate to Management > Customer > DID to create and edit **DID (Direct Inward Dial)** parameters. There are buttons for bulk uploads and bulk edits, and you can check the **Per Number Report** via the Stats button. 
-
-To assign **DID**:
-
-1.	Click on the **‘+’** button at the extreme right of the page.
-2.	In the new screen, add Customer and Customer Card, select the Provider and Provider Card, enter the DID, and select Enable. 
-3.	Press **`Save`** button.
-
-!!! tip "DID Billing"
-    For DID billing (found at Customer > DID > Edit DID > Billing), it is recommended to set customers to a Package rather than using the Cost and Retail functions
-   
+## Managing Customers
+Open a Customer Card by clicking their name from the Customer Management screen, then **Edit**. The screen that opens is the same as the New Customer screen, with information already populated. Edit any field then click **`Save`**. For all field details, see **[Adding Customers](../customer/#adding-customers)** above. 
 
 
 
 [customer-dashboard]: /customer/img/33.png "Customer-Dashboard"
-[add-customer-new]: /customer/img/34.png "Add-Customer"
 [add-customer]: /customer/img/35.png "Add-Customer"
 
-[del-customer]: /customer/img/36.png "del-customer"
+
 [customer-status]: /customer/img/39.png "Customer-Status"
 [edit-customer]: /customer/img/40.png "Edit-Customer"
 
-[main-tab]: /customer/img/41.png "Main Tab"
 [stats-tab]: /customer/img/42.png "Stats Tab"
-[ingress]: /customer/img/ingress.png "Ingress Routing"
-
-
-[recording-1]: /customer/img/45.png "recording-1"
-[recording-2]: /customer/img/46.png "recording-2"
-
- 
-[edit-cli]: /customer/img/edit-cli.png "Edit CLI"
-[ipauth-basic]: /customer/img/ipauth-basic.png "Edit Switch Basic"
-[ipauth-adv]: /customer/img/ipauth-adv.png "Edit Switch Advance"
-[ipauth-param]: /customer/img/ipauth-param.png "Edit Switch Parameters"
-[sip-auth]: /customer/img/sip-auth.png "SIP Auth"
 
 [CLI]: <https://docs.connexcs.com/en/latest/cli>
 [Ingress Routing]: <https://docs.connexcs.com/en/latest/ingress-routing>
 
-[alerts]: /customer/img/alerts.png "Alerts"
-
-[simulate-call]: /customer/img/52.png "Simulate Call"
-[payments-tab]: /customer/img/53.png "Payments Tab" 
-
-
 [customer]: /customer/img/60.png "customer"
 [contacts]: /customer/img/61.png "contacts"
-[contacts-2]: /customer/img/62.png "contacts-2"

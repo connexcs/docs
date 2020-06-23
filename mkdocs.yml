@@ -36,7 +36,7 @@ pages:
     - Home: index.md
     - Getting Started: getting-started.md
     - Video Guide: video-guide.md
-
+    - Dashboard : dashboard.md
 
     - Customer:
         - Main: customer/main.md
@@ -45,18 +45,13 @@ pages:
         - CLI: customer/cli.md
         - Customer: customer/customer.md
         - Payment: customer/payment.md
-        - Stats: customer/stats.md
-        - Route Stats: customer/route-stats.md 
-        - Latest-Calls: customer/latest-calls.md
-        - Dialogs: customer/dialogs.md
-        - Alert: customer/alerts.md
         - DID: customer/did.md
         - CDR: customer/cdr.md
         - Package: customer/package.md
+        - Monitoring: customer/monitoring.md
         - Customer Repository: customer/repository.md
         - 3CX: customer/3cx.md
         - Class5: customer/class5.md
-
         - Credit Control: customer/credit-control.md
         - Routing Strategy: customer/routing-strategy.md
 
@@ -64,15 +59,15 @@ pages:
         - Carrier: carrier.md
         
     - Rate Cards:
-        - Provider Ratecard: provider-ratecard.md
-        - Customer Ratecard: customer-ratecard.md
+        - Provider Rate Card: provider-ratecard.md
+        - Customer Rate Card: customer-ratecard.md
         - Building: rate-card-building.md
         - Card Management: card-management.md
         
     - DID:
         - DID/Origination: did.md
         
-    - Micsellanenous:
+    - Miscellaneous:
         - Authentication: authentication.md
         - Connex Billing: billing.md
         - Calling Card: calling-card.md
@@ -103,14 +98,14 @@ pages:
         - Creating a Group: creating-group.md
        
     - Developers:
-        - Scriptforge: developers/scriptforge.md
+        - Script Forge: developers/scriptforge.md
         - User Space Database: developers/user-space-db.md 
         - Form Builder: developers/form-builder.md
 
     - Setup:
         - AnyEdge: anyedge/anyedge.md
         - My Account: my-account.md
-        - Paypal: customer-payments.md
+        - PayPal: customer-payments.md
         - Settings:
             - Account: setup/settings/account.md
             - Payments: setup/settings/payments.md
