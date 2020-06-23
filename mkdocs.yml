@@ -38,7 +38,7 @@ pages:
     - Video Guide: video-guide.md
     - Dashboard : dashboard.md
 
-    - Customer:
+    - Customer Configuration:
         - Main: customer/main.md
         - Auth: customer/auth.md
         - Routing: customer/routing.md
@@ -55,9 +55,12 @@ pages:
         - Credit Control: customer/credit-control.md
         - Routing Strategy: customer/routing-strategy.md
 
-    - Carrier: 
+    - Carrier Configuration: 
         - Carrier: carrier.md
-        
+    
+    - Accounting and Billing: 
+        - PACKAGE
+    
     - Rate Cards:
         - Provider Rate Card: provider-ratecard.md
         - Customer Rate Card: customer-ratecard.md
