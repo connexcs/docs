@@ -99,7 +99,8 @@ pages:
         - Creating a Group: creating-group.md
        
     - Developers:
-        - Script Forge: developers/scriptforge.md
+        - ScriptForge Basics: developers/scriptforge.md
+        - ScriptForge API: developers/scriptforge-api.md        
         - User Space Database: developers/user-space-database.md 
         - Form Builder: developers/form-builder.md
 
