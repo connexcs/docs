@@ -22,26 +22,6 @@ You can find sample scripts in our GitHub repository for [example applications](
 * Time of Day Restrictions
 
 
-### Performing an ASRPlus Lookup
-
-ASRPlus is a ConnexCS feature for reducing unecessary attempts and providing faster fails on calls. It is most suitable for agressive call-center traffic profiles.
-
-```
-function main(vars){
-	if (!vars.routing) vars.routing = {};
-	return api.lookup.asrplus(vars.routing.dest_number).then(function(asrplusData){
-		if (asrplusData.status && asrplusData.status =='Invalid'){
-			return Promise.reject([604, "Number not Found (ASRPlus)"]);
-		} else {
-		  	vars.routing.asrPlus = asrplusData;
-			return Promise.resolve(vars.routing);
-		}
-	});
-}
-```
-
-
-
 ## Basics
 Script & Apps typically start in the `main()` function. The first parameter is typically an object called `data`. Execution will be marked as complete when `exit(response)` is called. Response is the name of the variable that returned to the instantiating system.
 
