@@ -14,7 +14,80 @@ This means that the application has cross-platform functionality, including Wind
 !!! warning "Limitations"
     iOS limits the ability to perform push notifications
 
+## Setup
+
+### Setup Domains
+
+ConnexCS **WebPhone** needs 2 domains to function correctly:
+* **Domain (A)** - This is the location where the phone will be hosted, and needs to be provided to your customers. Create a CNAME on your domain pointing to `portal.connexcs.com.` (yes, this is the same as the customer portal).
+* **Domain (B)** This is the signaling domain, and is attached to your server. 
+
+Our recommended way to setup domains pointing to your server is listed here. In short you should setup a DNS record within ConnexCS, then point a CNAME on your domain to the ConnexCS setup domain.
+
+### Verify Certificates
+
+After the domains are configured, verify the certificates are in the certificate page (Setup > Information > Certificates)
+* If the domain is not listed, click on `Add Certificate`
+* If the certificates are listed but they dont have an issue or expiry date, click on "Refresh Certificates". This may take up to 10 minutes to complete.
+
+### Enable WebRTC
+
+To setup WebRTC on a server
+
+1. Ensure **Domain (B)** (signalling domain from above) points ONLY to the server you will enable WebRTC on. 
+2. Update your server (Setup > Servers > select the server then Edit)
+   * Update the FQDN to the server
+   * Ensure that both **TLS** and **WebRTC** are enabled
+   * Run `Install Server` if any setttings were changed
+
+!!! tip "AnyEdge and WebRTC"
+    If you are using AnyEdge, you can enable WebRTC automatically by adding a domain name to your AnyEdge Domain.
+
+### Add Webphone Domain
+
+Once domains, certificates, and server settings are updated, we can add the WebPhone domain. 
+
+Go to Setup > Integrations > WebPhone
+1. For **Domain**, enter **Domain (A)** 
+2. Set **WebRTC Host** as **Domain (B)**
+3. Click **`Save`**
+
+Your WebPhone should now be working. 
+
+## Config Options
+
+### Basic
+
+* **Brandname** - This is what will Display in the webphone. Your Account name will not be displayed.
+* **Domain** - The URL where the webphone is accessed (**Domain A** from the initial **WebPhone setup**).
+* **WebRTC Host** - The server address that you will be connecting to (**Domain B** from the initial **WebPhone setup**). This is always a domain name and can be pointed directly to a server or to AnyEdge.
+* **Template Customer** - The customer account in the system which can be setup with all the default options created for your new customer.
+* **Register Success HTML** - The contents of this box will be displayed to users after they have completed their signup process.
+
+### Menu
+
+There are 6 spaces at the bottom of the screen for Icons to be displayed, each icon links to a separate page, you can change the position of an icon-page by using the position selector. You can change the label by changing the first column and the actual icon displayed by changing the text in the Icon column, We use "Material Icons" a list of available icons is available \[here\]([https://cdn.materialdesignicons.com/5.2.45/](https://cdn.materialdesignicons.com/5.2.45/))
+
+### Custom Page
+
+A Custom Page allows you to create a dynamically generated page from within ConnexCS. To set this up:
+
+1.  Go to Setup > Config > Templates and click the add button.
+2.  Fill in a name and create the page in the HTML box at the bottom.
+3.  Back in WebPhone goto Menu and Select the template that you have just created at the bottom of the page.
+4.  Choose a Custom Title, Custom Icon and Position, and click save.
+
   
+### Options
+
+* **HIDE\_UUID** - A Unique identifier is available in the side menu which can be passed back to our team should we need to investigate any issues. This option will hide the UUID from being displayed in the menu
+* **Menu Right** - Switch the menu from the left side of the screen to the right
+* **Edit Balance** - Shows the account balance inside the WebPhone
+* **Edit Settings** - As default after deployment settings are not editable directly, Enabling this option will allow the Settings Page to be editable.
+* **Register** - The default config of the WebPhone is to allow existing users to login with a username & password, Enabling this option will allow users who have not registered for any account to create an account all in the WebPhone.
+* **Username as Title** - Replaces the brand name with the username of the provisioned user.
+* **Accept Payment** - When enabled payment gateways which have been configured in the API section will be available in the control panel
+
 
 ## State-level firewalls
 WebRTC is effective for bypassing state-level firewalls by:
