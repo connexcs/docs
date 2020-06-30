@@ -19,8 +19,8 @@ This means that the application has cross-platform functionality, including Wind
 ### Setup Domains
 
 ConnexCS **WebPhone** needs 2 domains to function correctly:
-* **Domain (A)** - This is the location where the phone will be hosted, and needs to be provided to your customers. Create a CNAME on your domain pointing to `portal.connexcs.com.` (yes, this is the same as the customer portal).
-* **Domain (B)** This is the signaling domain, and is attached to your server. 
+* **Domain (A)** - This is the location where the phone will be hosted and needs to be provided to your customers. Create a CNAME on your domain pointing to `portal.connexcs.com.` (yes, this is the same as the customer portal).
+* **Domain (B)** This is the signaling domain and is attached to your server. 
 
 Our recommended way to setup domains pointing to your server is listed here. In short you should setup a DNS record within ConnexCS, then point a CNAME on your domain to the ConnexCS setup domain.
 
@@ -28,7 +28,7 @@ Our recommended way to setup domains pointing to your server is listed here. In 
 
 After the domains are configured, verify the certificates are in the certificate page (Setup > Information > Certificates)
 * If the domain is not listed, click on `Add Certificate`
-* If the certificates are listed but they dont have an issue or expiry date, click on "Refresh Certificates". This may take up to 10 minutes to complete.
+* If the certificates are listed but they don't have an issue or expiry date, click on "Refresh Certificates". This may take up to 10 minutes to complete.
 
 ### Enable WebRTC
 
@@ -38,12 +38,12 @@ To setup WebRTC on a server
 2. Update your server (Setup > Servers > select the server then Edit)
    * Update the FQDN to the server
    * Ensure that both **TLS** and **WebRTC** are enabled
-   * Run `Install Server` if any setttings were changed
+   * Run `Install Server` if any settings were changed
 
 !!! tip "AnyEdge and WebRTC"
     If you are using AnyEdge, you can enable WebRTC automatically by adding a domain name to your AnyEdge Domain.
 
-### Add Webphone Domain
+### Add WebPhone Domain
 
 Once domains, certificates, and server settings are updated, we can add the WebPhone domain. 
 
@@ -58,15 +58,15 @@ Your WebPhone should now be working.
 
 ### Basic
 
-* **Brandname** - This is what will Display in the webphone. Your Account name will not be displayed.
-* **Domain** - The URL where the webphone is accessed (**Domain A** from the initial **WebPhone setup**).
+* **Brandname** - This is what will Display in the WebPhone. Your Account name will not be displayed.
+* **Domain** - The URL where the WebPhone is accessed (**Domain A** from the initial **WebPhone setup**).
 * **WebRTC Host** - The server address that you will be connecting to (**Domain B** from the initial **WebPhone setup**). This is always a domain name and can be pointed directly to a server or to AnyEdge.
 * **Template Customer** - The customer account in the system which can be setup with all the default options created for your new customer.
 * **Register Success HTML** - The contents of this box will be displayed to users after they have completed their signup process.
 
 ### Menu
 
-There are 6 spaces at the bottom of the screen for Icons to be displayed, each icon links to a separate page, you can change the position of an icon-page by using the position selector. You can change the label by changing the first column and the actual icon displayed by changing the text in the Icon column, We use "Material Icons" a list of available icons is available \[here\]([https://cdn.materialdesignicons.com/5.2.45/](https://cdn.materialdesignicons.com/5.2.45/))
+There are 6 spaces at the bottom of the screen for Icons to be displayed, each icon links to a separate page, you can change the position of an icon-page by using the position selector. You can change the label by changing the first column and the actual icon displayed by changing the text in the Icon column, We use "Material Icons" a list of available icons is available [here](https://cdn.materialdesignicons.com/5.2.45/))
 
 ### Custom Page
 
