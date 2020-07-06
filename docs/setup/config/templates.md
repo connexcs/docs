@@ -25,7 +25,7 @@ This will pass ALL of the variables in the current scope to ScriptForge. Whateve
   
 ### Sample RSS Feed Injection into a template
 
-#### ScriptForge
+**ScriptForge**
 
 ```javascript
 const rssParser = require('rss-parser');
@@ -35,7 +35,7 @@ function main (vars) {
 }
 ```
 
-#### Template
+**Template**
 
 ```xml
 <h1>Here is the news</h1>
