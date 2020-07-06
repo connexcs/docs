@@ -9,10 +9,13 @@ Templates are managed under **Setup** > **Config** > **Templates**. Create a new
 In the Subject, SMS, Text and HTML fields:
 
 * Write your brand name in the place of **[brandName]**.
-*	Provide the area that coincides with the alert in **[area]**
-*	Give value in **[value]**. 
+* Provide the area that coincides with the alert in **[area]**
+* Give value in **[value]**. 
 * Apply style to your text via HTML style panel under the HTMLtag.
-*	Click **`Save`** .
+* Click **`Save`**.
+
+!!! note "SMS field"
+    Entering text into the SMS field does not cause the SMS to be sent, but it is available for use when other parts of the system have SMS set. 
  
 ![alt text][addtemp]
 
