@@ -1,23 +1,12 @@
 # Templates
 
-ConnexCS lets you customize SMS templates according business rules andrequirements. 
+Create customized **Templates** which customise content displayed on outbound emails/SMS, the Customer Portal, and WebPhone. ConnexCS Templates use a mustash-compatible template language [Handlebars](https://handlebarsjs.com/guide/)
 
-## Editing 
+## Settings 
 
-1. Go to **Setup**.
-2. click on **Config** > **Templates**.
+Templates are managed under **Setup** > **Config** > **Templates**. Create a new Template by selecting the blue **`+`** or edit an existing Template by clicking on the template name. 
 
-![alt text][temp-1] 
- 
-3. Select a template by clicking its name. The next window shows the SMS body and subject.
-
-![alt text][temp-2]
-
-4.	Click  the **`Edit`** button to customize the SMS.
-
-![alt text][temp-3]
- 
-Under the Subject, SMS, Text and HTML:
+In the Subject, SMS, Text and HTML fields:
 
 * Write your brand name in the place of **[brandName]**.
 *	Provide the area that coincides with the alert in **[area]**
@@ -25,20 +14,38 @@ Under the Subject, SMS, Text and HTML:
 * Apply style to your text via HTML style panel under the HTMLtag.
 *	Click **`Save`** .
  
-![alt text][temp-4]
+![alt text][addtemp]
 
-## Search Template
+## ScriptForge Integration  
 
-Any template can be searched from the list using the search field at the top-right of the page. Results will be filtered out in run time.
+Dynamic Templates are made by including ScriptForge. This is done by using the `scriptforge` tag. Ex: To include a ScriptForge script with ID 1234, use `{{scriptforge 1234}}`. 
 
-## Refresh list
+This will pass ALL of the variables in the current scope to ScriptForge. Whatever ScriptForge returns will then be made available back in the main scope for use with the template system.
 
-Click the **`Refresh`** button to ensure the current onscreen list includes all recent changes.
+  
+### Sample RSS Feed Injection into a template
 
-![alt text][temp-5]
+#### ScriptForge
+
+```javascript
+const rssParser = require('rss-parser');
+const parser = new rssParser();
+function main (vars) {
+	return parser.parseURL('http://feeds.bbci.co.uk/news/rss.xml');
+}
+```
+
+#### Template
+
+```xml
+<h1>Here is the news</h1>
+
+{{scriptforge 1234}}
+<h1>News</h1>
+{{#each items}}
+<h2>{{title}}</h2>
+{{/each}}
+```
+
  
-[temp-1]: /misc/img/270.png "Temp-1"
-[temp-2]: /misc/img/271.png "Temp-2"
-[temp-3]: /misc/img/272.png "Temp-3"
-[temp-4]: /misc/img/273.png "Temp-4"
-[temp-5]: /misc/img/274.png "Temp-5"
+[addtemp]: /misc/img/addtemplate.png "Add Temp"
