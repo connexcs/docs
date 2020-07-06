@@ -4,7 +4,7 @@ ConnexCS **WebPhone** is a WebRTC application using PWA.
 
 **WebRTC** (Real-Time Communications) is a browser protocol which runs on top of an HTTPS connection. ConnexCS **WebPhone** uses WebRTC (HTTPS port 443) for SIP Signaling and WebSockets (random UDP ports) for the Media.
 
-!!! warning "BitDefender and WebSockets
+!!! warning "BitDefender and WebSockets"
     BitDefender blocks WebSockets unless the phone. and webrtc. domains have been whitelisted. 
 
 A [**PWA** (Progressive Web Application)](https://en.wikipedia.org/wiki/Progressive_web_application) is an application written inside the web browser. It uses modern API and has the potential to replace traditional proprietary app-stores.
@@ -14,8 +14,8 @@ The ConnexCS **WebPhone** runs directly from a browser without the need to insta
 This means that the application has cross-platform functionality, including Windows, Mac, Android, iOS, etc.
 
   
-!!! warning "Limitations"
-    iOS limits the ability to perform push notifications
+!!! warning "iOS limitations"
+    iOS limits the ability to perform push notifications.
 
 ## Setup
 
@@ -26,13 +26,13 @@ ConnexCS **WebPhone** needs 2 domains to function correctly:
 * **Domain (A)** - This is the location where the phone will be hosted and needs to be provided to your customers. Create a CNAME on your domain pointing to `portal.connexcs.com.` (yes, this is the same as the customer portal).
 * **Domain (B)** This is the signaling domain and is attached to your server. 
 
-It is recommeded to setup a DNS record within ConnexCS, then point a CNAME on your domain to the ConnexCS setup domain.
+It is recommended to setup a DNS record within ConnexCS, then point a CNAME on your domain to the ConnexCS setup domain.
 
 ### Verify Certificates
 
 After the domains are configured, verify the certificates are in the certificate page under Setup > Information > Certificates:
 
-* If the domain is not listed, click on `Add Certificate`
+* If the domain is not listed, click on `Add Certificate`.
 * If the certificates are listed but they don't have an issue or expiry date, click on "Refresh Certificates". This may take up to 10 minutes to complete.
 
 ### Enable WebRTC
@@ -40,7 +40,7 @@ After the domains are configured, verify the certificates are in the certificate
 To setup WebRTC on a server:
 
 1. Ensure **Domain (B)** (signalling domain from above) points ONLY to the server where you enable WebRTC. 
-2. Update your server at Setup > Servers > select the server then Edit:
+2. Update your server at Setup > Settings > Servers > select the server then Edit:
    * Update the FQDN to the server
    * Ensure that both **TLS** and **WebRTC** are enabled
    * Run `Install Server` if any settings were changed
@@ -71,27 +71,29 @@ Your WebPhone should now be working.
 
 ### Menu
 
-There are 6 spaces at the bottom of the screen for Icons to be displayed, each icon links to a separate page, you can change the position of an icon-page by using the position selector. You can change the label by changing the first column and the actual icon displayed by changing the text in the Icon column, We use "Material Icons" a list of available icons is available [here](https://cdn.materialdesignicons.com/5.2.45/))
+There are 6 spaces at the bottom of the screen for Icons to be displayed, each icon links to a separate page. Icon positions can be changed by using the position selector. You can change the label by changing the first column and the actual icon displayed by changing the text in the Icon column. ConnexCS uses "Material Icons". More icons are available [here](https://cdn.materialdesignicons.com/5.2.45/). 
 
-### Custom Page
+![alt text][webphonemenu] 
+
+### Custom Page using Templates
 
 A Custom Page allows you to create a dynamically generated page from within ConnexCS. To set this up:
 
 1.  Go to Setup > Config > Templates and click the add button.
 2.  Fill in a name and create the page in the HTML box at the bottom.
 3.  Under WebPhone go to Menu and select the template that you have just created at the bottom of the page.
-4.  Choose a Custom Title, Custom Icon and Position, and click save.
+4.  Choose a Custom Title, Custom Icon, and Position, and click **`Save`**.
 
   
-### Options
+### Flags
 
-* **HIDE\_UUID** - A Unique identifier is available in the side menu which can be passed back to our team should we need to investigate any issues. This option will hide the UUID from being displayed in the menu
+* **HIDE\_UUID** - A Unique identifier is available in the side menu which can be passed back to our team should we need to investigate any issues. This option hides the UUID from being displayed in the menu
 * **Menu Right** - Switch the menu from the left side of the screen to the right
-* **Edit Balance** - Shows the account balance inside the WebPhone
+* **Display Balance** - Shows the account balance inside the WebPhone
 * **Edit Settings** - Enabling this option will allow the Settings Page to be editable. (These are not editable by default after deployment.)
-* **Register** - The default config of the WebPhone is to allow existing users to login with a username & password, Enabling this option will allow users who have not registered for any account to create an account all in the WebPhone.
+* **Register** - Enabling this option will require users who have not registered for any account to create an account all in the WebPhone. (WebPhone default allows existing users to login with a username & password.)
 * **Username as Title** - Replaces the brand name with the username of the provisioned user.
-* **Accept Payment** - When enabled payment gateways which have been configured in the API section will be available in the control panel
+* **Accept Payment** - Displays payment gateways (which have been configured in the API section) in the control panel
 
 
 ## State-level firewalls
@@ -110,3 +112,7 @@ MITM (Man-in-the-Middle) attacks actively intercept traffic between endpoints, w
   
 !!! note "TLS 1.3 Support"
     ConnexCS Currently does not support TLS 1.3. This functionality is scheduled to be completed by Q3 2020.
+    
+    
+    
+[webphonemenu]: /misc/img/webphone.png "WebPhone Menu"
