@@ -4,6 +4,9 @@ ConnexCS **WebPhone** is a WebRTC application using PWA.
 
 **WebRTC** (Real-Time Communications) is a browser protocol which runs on top of an HTTPS connection. ConnexCS **WebPhone** uses WebRTC (HTTPS port 443) for SIP Signaling and WebSockets (random UDP ports) for the Media.
 
+!!! warning "BitDefender and WebSockets
+    BitDefender blocks WebSockets unless the phone. and webrtc. domains have been whitelisted. 
+
 A [**PWA** (Progressive Web Application)](https://en.wikipedia.org/wiki/Progressive_web_application) is an application written inside the web browser. It uses modern API and has the potential to replace traditional proprietary app-stores.
 
 The ConnexCS **WebPhone** runs directly from a browser without the need to install anything. If the user wishes to install the application, additional functionality can become available (ex: push notification capabilities while the app is closed).
@@ -19,23 +22,25 @@ This means that the application has cross-platform functionality, including Wind
 ### Setup Domains
 
 ConnexCS **WebPhone** needs 2 domains to function correctly:
+
 * **Domain (A)** - This is the location where the phone will be hosted and needs to be provided to your customers. Create a CNAME on your domain pointing to `portal.connexcs.com.` (yes, this is the same as the customer portal).
 * **Domain (B)** This is the signaling domain and is attached to your server. 
 
-Our recommended way to setup domains pointing to your server is listed here. In short you should setup a DNS record within ConnexCS, then point a CNAME on your domain to the ConnexCS setup domain.
+It is recommeded to setup a DNS record within ConnexCS, then point a CNAME on your domain to the ConnexCS setup domain.
 
 ### Verify Certificates
 
-After the domains are configured, verify the certificates are in the certificate page (Setup > Information > Certificates)
+After the domains are configured, verify the certificates are in the certificate page under Setup > Information > Certificates:
+
 * If the domain is not listed, click on `Add Certificate`
 * If the certificates are listed but they don't have an issue or expiry date, click on "Refresh Certificates". This may take up to 10 minutes to complete.
 
 ### Enable WebRTC
 
-To setup WebRTC on a server
+To setup WebRTC on a server:
 
-1. Ensure **Domain (B)** (signalling domain from above) points ONLY to the server you will enable WebRTC on. 
-2. Update your server (Setup > Servers > select the server then Edit)
+1. Ensure **Domain (B)** (signalling domain from above) points ONLY to the server where you enable WebRTC. 
+2. Update your server at Setup > Servers > select the server then Edit:
    * Update the FQDN to the server
    * Ensure that both **TLS** and **WebRTC** are enabled
    * Run `Install Server` if any settings were changed
@@ -47,7 +52,7 @@ To setup WebRTC on a server
 
 Once domains, certificates, and server settings are updated, we can add the WebPhone domain. 
 
-Go to Setup > Integrations > WebPhone
+1. Go to Setup > Integrations > WebPhone
 1. For **Domain**, enter **Domain (A)** 
 2. Set **WebRTC Host** as **Domain (B)**
 3. Click **`Save`**
