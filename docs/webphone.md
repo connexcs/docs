@@ -71,9 +71,13 @@ Your WebPhone should now be working.
 
 ### Menu
 
-There are 6 spaces at the bottom of the screen for Icons to be displayed, each icon links to a separate page. Icon positions can be changed by using the position selector. You can change the label by changing the first column and the actual icon displayed by changing the text in the Icon column. ConnexCS uses "Material Icons". More icons are available [here](https://cdn.materialdesignicons.com/5.2.45/). 
+There are 6 spaces at the bottom of the screen for Icons to be displayed, each icon links to a separate page. Icon positions can be changed by using the position selector. You can change the label by changing the first column and the actual icon displayed by changing the text in the Icon column. 
 
-![alt text][webphonemenu] 
+![alt text][webphone] 
+
+!!! info "Material Icons"
+    ConnexCS uses "Material Icons". More icons are available [here](https://cdn.materialdesignicons.com/5.2.45/). 
+
 
 ### Custom Page using Templates
 
@@ -115,4 +119,4 @@ MITM (Man-in-the-Middle) attacks actively intercept traffic between endpoints, w
     
     
     
-[webphonemenu]: /misc/img/webphone.png "WebPhone Menu"
+[webphone]: /misc/img/webphone.png "WebPhone Menu"
