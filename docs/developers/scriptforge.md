@@ -41,8 +41,8 @@ Create a customized script and assign it to a specific customer.
 2. Add a script by clicking **`+`**.
 3. Fill in the script's name and type, then click **`Save`**.
 
-   ![alt text][s2]   
- 
+    ![alt text][s2]   
+    
 4. Select your script from the list.
 5. Enter the code of your script
 6. Click the green arrow to **`Save and Run`**. 
