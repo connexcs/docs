@@ -79,7 +79,7 @@ A Custom Page allows you to create a dynamically generated page from within Conn
 
 1.  Go to Setup > Config > Templates and click the add button.
 2.  Fill in a name and create the page in the HTML box at the bottom.
-3.  Back in WebPhone goto Menu and Select the template that you have just created at the bottom of the page.
+3.  Under WebPhone go to Menu and select the template that you have just created at the bottom of the page.
 4.  Choose a Custom Title, Custom Icon and Position, and click save.
 
   
@@ -88,7 +88,7 @@ A Custom Page allows you to create a dynamically generated page from within Conn
 * **HIDE\_UUID** - A Unique identifier is available in the side menu which can be passed back to our team should we need to investigate any issues. This option will hide the UUID from being displayed in the menu
 * **Menu Right** - Switch the menu from the left side of the screen to the right
 * **Edit Balance** - Shows the account balance inside the WebPhone
-* **Edit Settings** - As default after deployment settings are not editable directly, Enabling this option will allow the Settings Page to be editable.
+* **Edit Settings** - Enabling this option will allow the Settings Page to be editable. (These are not editable by default after deployment.)
 * **Register** - The default config of the WebPhone is to allow existing users to login with a username & password, Enabling this option will allow users who have not registered for any account to create an account all in the WebPhone.
 * **Username as Title** - Replaces the brand name with the username of the provisioned user.
 * **Accept Payment** - When enabled payment gateways which have been configured in the API section will be available in the control panel
