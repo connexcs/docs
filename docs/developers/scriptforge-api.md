@@ -114,4 +114,4 @@ module.export = {
 ```
 
 !!! warning "Potential Sync Issues"
-    Ensure that ALL async functions are executed with a wait, otherwise the system will lose the synchronised state with your script and the connection will crash. If not implemented correctly, billing and call stability could be impacted.
+    Ensure that ALL async functions are executed with `await`, otherwise the system will lose the synchronised state with your script and the connection will crash. If not implemented correctly, billing and call stability could be impacted.
