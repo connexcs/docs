@@ -1,5 +1,6 @@
-# ScriptForge
-**ScriptForge** allows you to write applications that run during specific system events. Currently, scripting functionality is supported in the routing engine, where it runs alongside the call setup process.  Requests to your application are handled with a messaging bus, and they will be queued if an application can't process them fast enough.  Applications that run in the routing engine must be completed quickly to avoid high PDD.
+# ScriptForge Basics 
+
+**ScriptForge** allows you to write applications that run during specific system events. Currently, scripting functionality is supported in the routing engine, where it runs alongside the call setup process.  Requests to your application are handled with a messaging bus which will queue applications that can't be processed fast enough.  Applications that run in the routing engine must be completed quickly to avoid high PDD.
 
 !!! note "ScriptForge API"
     See [ScriptForge API](https://staging--connexcs-docs.netlify.app/developers/scriptforge-api.md) for details on scripts and API reference.
@@ -12,7 +13,7 @@ ScriptForge currently supports JavaScript ES6 (also known as ECMAScript 6 or ECM
 
 ### Memory
 
-For speed enhancement, variables in your application may be present between messages, however you should not assume this behaviour. Your application will be automatically distributed across multiple nodes and active variables will not be persistent. If you require persistence across messages you can use the datastore class. The memory of your application may be limited (default to 100MB). Using more than the allocated amount may cause your application to crash.
+For speed enhancement, variables in your application may be present between messages, but don't assume this behaviour. The application is automatically distributed across multiple nodes; active variables are not persistent. Use the datastore class if persistence is required across messages. The memory of your application may be limited (default to 100MB). Using more than the allocated amount may cause your application to crash.
 
 ### CPU (Time Limit)
 
@@ -24,7 +25,7 @@ If a message is not processed in time, or fails during processing, it will reset
 
 ### Scalability
 
-Applications can run across multiple zones or data centers. By default, one process is allowed per script.  If you find your application is too intensive or having difficulty scaling to business requirements, greater resource allocation may be required.  
+Applications can run across multiple zones or data centers. By default, one process is allowed per script.  If you find your application is too intensive or having difficulty scaling to business requirements, greater resource allocation may be required. See [Scaling and Load Balancing](https://docs.connexcs.com/scaling-load-balancing/) for details. 
 
 ### Functionality
 
@@ -40,8 +41,8 @@ Create a customized script and assign it to a specific customer.
 2. Add a script by clicking **`+`**.
 3. Fill in the script's name and type, then click **`Save`**.
 
-   ![alt text][s2]   
- 
+    ![alt text][s2]   
+    
 4. Select your script from the list.
 5. Enter the code of your script
 6. Click the green arrow to **`Save and Run`**. 
@@ -57,7 +58,7 @@ If script shows an error, add this then run the script again:
 To assign scripts to customers:
 
 1. Select **Customer** > [**customer]** 
-3. Navigate to **Routing** >
+3. Navigate to **Routing**
 4. Select a rate card from the table.
 
     ![alt text][s8]  
