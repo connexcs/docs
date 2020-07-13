@@ -13,16 +13,25 @@ Delete a customer rate card by selecting its name from the list and then clickin
 
 A Rate Card configuration may be emailed as an attachment to customers by clicking the **`Email`** button while in the customer rate card.
 
-## The Internal (Manual) setup 
-**Internal** rate cards let you add a profit to your provider cards or set a flat rate. To set up an Internal Rate Card in ConnexCS:
+## Customer Rate Card manual setup (internal profit generation) 
+To set up an Internal Customer Rate Card, and add a profit to your provider cards or set a flat rate:
 
-1. Click **Management** > **Rate Cards** > **Customer Rate Card**.
-2. Select the **`+`** button. 
-3. Name the card, select a carrier, then click **`Save`**.
+2. Select the **`+`** button under **Customer Rate Card**. 
+     ![alt text][ccard-9] 
+3. Name the Card, select Carrier(s), Currency, 
+        
+     ![alt text][ccard-10] 
+         
+6. Click Config
+7. Change the presentation to Inter/Intra/Indet under **Force Presentation**. LRN can be enabled from the **Dialing** option screen.
+7. then click **`Save`**.
+   ![alt text][ccard-11] 
 4. Select **Profits**.
 5. Click the **`+`** button. 
 
     ![alt text][customer-card-3]
+
+10. Fill out Edit Profit screen (configuration details found [here](https://staging--connexcs-docs.netlify.app/customer-ratecard/#profits).
 
 6. Enter the required prefix in the prefix field. This is typically an international country code, not a provider or customer tech prefix. Adding an up arrow `^` on the prefix draws all associated prefixes from the provider card. To specify a set of prefixes add, `^` and prefixes (e.g. ^441).
 7. In the cost field, add the sell price.
@@ -33,9 +42,15 @@ A Rate Card configuration may be emailed as an attachment to customers by clicki
 11. Select **Cost** under the drop-down list for **Apply To**. If it is an NPA-NXX card you can select Inter/intra/cost
 12.  Select **Profit** from the Status drop-down list.
 13. Select **Build** from Carrier Card button to build the rate card.
+   ![alt text][ccard-13] 
+   
+12. Click the **`Build`** button and confirm.  A notification will tell you if the build was successful.
+    
+    ![alt text][ccard-14] 
 
+   
 
-
+    
 ## Rate Card settings
 
 ### Main 
@@ -81,3 +96,10 @@ All of the following apply to the n+1 digit (e.g if your card is billed to 4 dec
 [customer-card-3]: /card/img/123.png "Customer-card-3"
 [customer-card-7]: /card/img/127.png "Customer-card-7"
 
+[ccard-8]: /card/img/146.png "ccard-8"
+[ccard-9]: /card/img/147.png "ccard-9"
+[ccard-10]: /card/img/148.png "ccard-10"
+[ccard-11]: /card/img/149.png "ccard-11"
+[ccard-12]: /card/img/150.png "ccard-12"
+[ccard-13]: /card/img/151.png "ccard-13"
+[ccard-14]: /card/img/152.png "ccard-14"
