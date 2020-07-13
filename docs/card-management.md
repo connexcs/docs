@@ -1,14 +1,10 @@
-# Card Management
+# Import/Upload
 
 ## NPA-NXX Provider Rate Card Upload
 
 To upload **NPA-NXX provider rate cards** from external sources:
 
-1. Click **Management**>**Rate Card**
-
-  ![alt text][pcard-1] 
-
-2. Click the **`+`** button under **Provider Rate Cards**.
+1. Click the **`+`** button under **Provider Rate Cards**.
 
   ![alt text][pcard-2]
 
@@ -16,20 +12,18 @@ To upload **NPA-NXX provider rate cards** from external sources:
 4. Select the carrier from the dropdown list.
 5. Select the desired currency.
 6. Click **`Config`**.
-7. Change the presentation to Inter/Intra/Indet under **Force Presentation**. LRN is enabled using the **Dialer** option.
+7. Set **Force Presentation** to IntER/IntRA/Indeterminate
+7. LRN is enabled using the **Dialer** option.
 8. Click **`Save`**.
-
-  ![alt text][pcard-4]
-
-9. Click **Upload>Browse** and select the rate card file.
+9. Click **Bulk Upload** > **Upload** and select the rate card file.
 
   ![alt text][pcard-5]
   
-10. Map the rate card fields against the system fields as you see fit.
+10. Map the rate card fields against the system fields as needed.
 
   ![alt text][pcard-6]
 
-11. Select **Upload**, and you will receive a notification, as shown.
+9. Click the **`Upload to Provider Rate Card`** button.  You will be notified when the import completes.
 
 ![alt text][pcard-7]
 
@@ -75,40 +69,8 @@ This function lets you upload **NPA-NXX customer rate cards** from external sour
 You will receive notification once the rate card import completes. Unlike the internal alternative, there is no need to build an external rate card.
 
 
-## NPA-NXX Customer Rate Card Manual (Generate Profit Internally)
-
-1. Click **Management>Rate Card**
-     
-     ![alt text][ccard-8] 
-
-2. Click the **`+`** button to add new customer rate cards
-                       
-     ![alt text][ccard-9] 
-                       
-3. Add a unique name for the customer card.
-4. Select the provider card(s) from the dropdown list, you can select more than one provider card.
-5. Select the desired currency.
-        
-     ![alt text][ccard-10] 
-         
-6. Click Config
-7. Change the presentation to Inter/Intra/Indet under **Force Presentation**. LRN can be enabled from the **Dialing** option screen.
-8. Click Save
-   
-   ![alt text][ccard-11] 
-   
-9. Click on **Profits** tab, then the **`+`** button to add a new row.
-   
-   ![alt text][ccard-12] 
-   
-10. Complete the spreadsheet information.
-11. Click **`Save`**
-   
-   ![alt text][ccard-13] 
-   
-12. Click the **`Build`** button and confirm.  A notification will tell you if the build was successful.
     
-    ![alt text][ccard-14] 
+
 
 ## NPA-NXX Customer Rate Card Upload (External)
 
@@ -143,33 +105,6 @@ You will receive notification once the rate card import completes. Unlike the in
 11.  Click the **`Upload to Customer Rate Card`** button.
 12. You will be notified when the import is complete. Note: compiling and/or merging is not required if the rate card is built externally.
 
-## Rate Card Upload
-The following steps detail how to upload a provider rate card from an external source:
-
-1. Click on **Management** > **Rate Card**.
-
-![alt text][ccard-21] 
-
-2. Click the **`+`** button under **Provider Rate Cards**.
-
-![alt text][ccard-22] 
-
-3. Enter a name for the provider card.
-4. Select a carrier from the dropdown list.
-5. Select the relevant currency.
-6. Click **`Save`**.
-
-![alt text][ccard-23] 
-
-7. Click **Upload** > **Browse** and select the rate card file.
-
-![alt text][ccard-24] 
-
-8. Map the rate card fields against the system fields.
-
-![alt text][ccard-25] 
-
-9. Click the **`Upload to Provider Rate Card`** button.  You will be notified when the import completes.
 
 
 
@@ -189,14 +124,6 @@ The following steps detail how to upload a provider rate card from an external s
 [ccard-5]: /card/img/143.png "ccard-5"
 [ccard-6]: /card/img/144.png "ccard-6"
 [ccard-7]: /card/img/145.png "ccard-7"
-
-[ccard-8]: /card/img/146.png "ccard-8"
-[ccard-9]: /card/img/147.png "ccard-9"
-[ccard-10]: /card/img/148.png "ccard-10"
-[ccard-11]: /card/img/149.png "ccard-11"
-[ccard-12]: /card/img/150.png "ccard-12"
-[ccard-13]: /card/img/151.png "ccard-13"
-[ccard-14]: /card/img/152.png "ccard-14"
 
 [ccard-15]: /card/img/153.png "ccard-15"
 [ccard-16]: /card/img/154.png "ccard-16"
