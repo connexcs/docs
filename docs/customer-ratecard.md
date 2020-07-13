@@ -24,21 +24,17 @@ New **Customer Rate Cards** may be added manually or by uploading an existing fi
     * Enable **LRN** using **Dialler**.
 4. Click **`Save`**.
    
-   ![alt text][ccard-11] 
+    ![alt text][ccard-11] 
    
-5. Select **Profits** then click the **`+`** button. 
-
-    ![alt text][customer-card-3]
-
-6. **Edit Profit** field details are found [here](https://staging--connexcs-docs.netlify.app/customer-ratecard/#profits).
-7. Click the **`Build`** button and confirm.  A notification will tell you if the build was successful.
+5. Select **Profits** then click the **`+`** button. **Edit Profit** field details are found [here](https://staging--connexcs-docs.netlify.app/customer-ratecard/#profits).
+6. Click the **`Build`** button and confirm.  A notification will tell you if the build was successful.
     
     ![alt text][ccard-14] 
 
-8. Once complete, the new card will display with the Provider rules and the Profit rules. 
+7. Once complete, the new card will display with the Provider rules and the Profit rules. 
    
-!!! info "Import/Upload Customer Rate Cards"
-    Steps to import/upload Customer Rate Cards can be found [here](). 
+!!! info "Detailed Rate Card setup" 
+    For additional details for adding new Rate Cards, see "Rate Card Setup" in the ConnexCS Video Guide.
     
 ## Customer Rate Card settings
 
