@@ -1,5 +1,9 @@
-# NPA-NXX Provider Rate Card Upload
-This function lets you upload **NPA-NXX provider rate cards** from external sources.
+# Card Management
+
+## NPA-NXX Provider Rate Card Upload
+
+To upload **NPA-NXX provider rate cards** from external sources:
+
 1. Click **Management**>**Rate Card**
 
   ![alt text][pcard-1] 
@@ -31,7 +35,8 @@ This function lets you upload **NPA-NXX provider rate cards** from external sour
 
 
 ## NPA-NXX Customer Rate Card Upload
-This function lets you upload **NPA-NXX customer rate cards** from external sources.
+This function lets you upload **NPA-NXX customer rate cards** from external sources and uses dynamic routing.
+
 1. Click **Management** > **Rate Card**
 
   ![alt text][ccard-1] 
@@ -40,29 +45,34 @@ This function lets you upload **NPA-NXX customer rate cards** from external sour
 
   ![alt text][ccard-2] 
 
-3. Create a unique name for the uploaded customer card.
-4. Select the provider card(s) from the dropdown list. The list allows multiple providers to be selected for each customer.
+2. Name the card, and select the carrier(s).
 5. Select the relevant currency.
 
-  ![alt text][ccard-3] 
+   ![alt text][ccard-3] 
 
 6. Click **Config**
-7. Change the presentation for Inter/Intra/Indet under **Force Presentation**.
-  If you wish to enable LRN on the customer card, you can do so from the Dialling option
+7. Set **Force Presentation** to IntER/IntRA/Indeterminate.
+7. To enable LRN on the customer card, set the **Dialling** option. 
 8. Click **`Save`**
+9. Click into the new customer card. 
 
    ![alt text][ccard-4]
 
-9. Click **Upload>Upload>browse** and select the rate card file.
+9. Click **Bulk Upload > Upload** then browse to and select the rate card file.
 
- ![alt text][ccard-5] 
+   ![alt text][ccard-5] 
   
- ![alt text][ccard-6] 
-
-10. Click **Upload to customer card**, and click `Yes` to confirm. 
+   ![alt text][ccard-6] 
+ 
+5. Click the **`Upload`** button.  
+5. Once the upload completes, select the new file by name.
+6. Map the rate card fields against the system fields. 
+7. Click the **`Import to card`** button and select the customer card.
+8. Click **`Save`**.
 
  ![alt text][ccard-7] 
 
+You will receive notification once the rate card import completes. Unlike the internal alternative, there is no need to build an external rate card.
 
 
 ## NPA-NXX Customer Rate Card Manual (Generate Profit Internally)
