@@ -62,7 +62,7 @@ pages:
         - Provider Rate Card: provider-ratecard.md
         - Customer Rate Card: customer-ratecard.md
         - Building: rate-card-building.md
-        - Card Management: card-management.md
+        - Import/Upload: card-upload.md
         
     - DID:
         - DID/Origination: did.md
