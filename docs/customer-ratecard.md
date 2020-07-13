@@ -3,7 +3,7 @@
 Customer Rate Cards let you manage the rates for customers, edit customer profiles, and view important information. The Rate Card Management screen is found under **Management > Rate Card > Customer Rate Cards**.
 
 ## Compile 
-The Compile column shows which Customer Rate Cards are in sync with the Provider Rate Cards. 
+The **Compile** column shows which Customer Rate Cards are in sync with the Provider Rate Cards. 
 
 ## Delete the Customer Rate Card
 
@@ -62,7 +62,7 @@ You will receive notification once the rate card import completes. Unlike the in
 
 ### Revisions  
 
-The revision tab shows previous changes made to rate cards. For example: previous Rule count, Presentation, Currency, date created, and Billing.
+The revision tab shows previous changes made to rate cards. For example: previous Rule Count, Presentation, Currency, Date Created, and Billing.
 
 ### Properties
  * **Rate Cards** - Define how customer routing is built as well as how customer prices are derived.
