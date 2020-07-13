@@ -58,12 +58,13 @@ The revision tab shows previous changes made to rate cards. For example: previou
 ### Profits
 The Profit Rules allows you to configure:
 
+* **Match** - Define what prefix to match, either a Regular Expression or a standard prefix (numeric only). For example, if you enter '49, it will include '491', '492', '4912345', and so on.
 * **Profit Type**
     * Absolute - actual value charged
     * Relative - amount entered is added to the cost from the carrier
     * Percent - cost from the carrier multipled by this percent
 * **Status** - Use Blocked, here or after importing a Carrier Rate Card, to disable specific prefixes
-* When MCD (Minimum Call Duartion), Pulse, or Rounding are disabled, that setting will select the worst case scenario as defined by the carrier. 
+* When **MCD (Minimum Call Duartion)**, **Pulse**, or **Rounding** are disabled, that setting will select the worst case scenario as defined by the carrier. 
 
 !!! note "Profit Type"
     Using Absolute and Relative can be useful, especially when dealing with large cards and your providers prices change; a single click is all that is needed to regenerate the customer rate cards.
