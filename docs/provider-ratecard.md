@@ -22,7 +22,7 @@ New Provider Rate Cards may be added manually or by uploading an existing file.
 ![alt text][provider-card-4] 
 
 !!! info "Detailed Rate Card setup"
-    For a full description of adding new Rate Cards, see "Rate Card Setup" in the ConnexCS [Video Guide](https://docs.connexcs.com/video-guide/). 
+    For a full description of adding new Rate Cards, see "[Rate Card Setup](https://docs.connexcs.com/video-guide/#rate-card-setup)" in the ConnexCS Video Guide. 
 
 ## Dependent Cards
 These are Customer cards that use the selected rate card. Changes to the Provider Rate Card will be applied to each dependent rate card. 
@@ -35,7 +35,7 @@ The Revision tab displays up to 8 most recent changes made to a rate card (ex: p
 
 ## Properties tab
 
-Config:
+### Config
 
 * **Name(Public)** - This optional setting allows you to display an alias or pseudonym for the carrier. 
 * **Tech Prefix** - appended to outbound calls
@@ -49,13 +49,13 @@ Config:
 
 * **Dialing** - In the US, LRN (Local Routing Number) identifies the switch for a number and is used to determine billing for a call.  When a number is ported from one provider to another, the billing may change based on the new carrier. An LRN dip will correct any pricing discrepancies between the original and new carriers. (ConnexCS owns their own database for this, so the response time is quick.) This helps to reduce billing costs. If the customer wants to do single rates they may not want to do the LRN dip. 
 
-Advanced:
+### Advanced
 
-* **Billing Precision** - used to round billing on a card to the specified decimal point. 
+* **Billing Precision** - Round billing on a card to the specified decimal point. 
 * **Public Options** - Display or hide provider information externally by toggling check boxes on and off.  You allow the card to be viewed via HTML (on a web page), CSV (a spreadsheet), an API (an external application), and whether to list the rate card in the domain portal.
-* **CLI Restrict** - Enable Call Line Identification (CLI) restriction(s) to only accept valid number formats by entering restricted numbers in the text box using regular expressions.
-* **Capped Rate** - Blocks any calls above the set price
-* **Delayed Bye** - On termination rate cards, the Delayed Bye feature adds the specified duration (in seconds) to the end of each call. Providers may use this in situations where a commercial contract specifies a minimum duration call. This feature should only be used along with full disclosure to both the customer and carrier.
+* **CLI Restrict** - Enable Call Line Identification (CLI) restriction(s). Use regular expressions to set valid number formats.
+* **Capped Rate** - Block calls above the set price
+* **Delayed Bye** - On termination rate cards, add the specified duration (in seconds) to the end of each call. Providers may use this in situations where a commercial contract specifies a minimum duration call. This feature should only be used along with full disclosure to both the customer and carrier.
 
 
 [provider-card-4]: /card/img/118.png "provider-card-4"
