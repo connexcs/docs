@@ -34,23 +34,7 @@ A Rate Card configuration may be emailed as an attachment to customers by clicki
 12.  Select **Profit** from the Status drop-down list.
 13. Select **Build** from Carrier Card button to build the rate card.
 
-## The External (Imported) setup 
-**External** rate cards are completed by uploading a custom rate card and setting up dynamic routing. To setup an External Rate Card in ConnexCS:
 
-1. Click **Management** > **Rate Cards** > **Customer rate card**. 
-2. Click the **`+`** button, name the card, and select the carrier.
-3. Go to **Advanced** and select the providers inside the Dynamic Routing box. 
-4. Click **`Save`**.
-
-    ![alt text][customer-card-7]
- 
-5. Click the **`Upload`** button.  A dialog window will allow you to upload a file from your local device.
-5. Once the upload completes, select the new file by name.
-6. Map the rate card fields against the system fields. 
-7. Click the **`Import to card`** button and select the customer card.
-8. Click **`Save`**.
-
-You will receive notification once the rate card import completes. Unlike the internal alternative, there is no need to build an external rate card.
 
 ## Rate Card settings
 
@@ -81,6 +65,8 @@ The Profit Rules allows you to configure:
 * **Status** - Use Blocked, here or after importing a Carrier Rate Card, to disable specific prefixes
 * When MCD (Minimum Call Duartion), Pulse, or Rounding are disabled, that setting will select the worst case scenario as defined by the carrier. 
 
+!!! note "Profit Type"
+    Using Absolute and Relative can be useful, especially when dealing with large cards and your providers prices change; a single click is all that is needed to regenerate the customer rate cards.
 
 ### Rounding Methods
 All of the following apply to the n+1 digit (e.g if your card is billed to 4 decimal places, this cares about the 5th digit). For our example: 0.1234**5** (rounded to 4 decimal places):
