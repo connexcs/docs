@@ -67,10 +67,13 @@ The revision tab shows previous changes made to rate cards. For example: previou
  * **Collapse Using** - Select how you want to merge data with the carrier cards.
  * **Rate Compacts** - Apply after **Collapse Using**, it calculates the Minimum, Maximum, or Average cost (as selected) based on the Rate Cards selected on the right
  * **Rounding Methods** - All of the following apply to the n+1 digit (e.g if your card is billed to 4 decimal places, this cares about the 5th digit). For our example: 0.1234**5** (rounded to 4 decimal places):
-     * **Up** - Rounded up regardless of n+1 digit (0.1235)
-     * **Down** - Rounded down regardless of n+1 digit (0.1234)
-     * **Half-Up** - Values 5-9 are rounded up (0.1235)
-     * **Half-Down** - Values 0-5 are rounded down (0.1234)
+|Method|Explanation|
+| --- | --- |
+|Up|Rounded up regardless of n+1 digit (0.1235)|
+|Down|Rounded down regardless of n+1 digit (0.1234)|
+|Half-Up|Values 5-9 are rounded up (0.1235)|
+|Half-Down|Values 0-5 are rounded down (0.1234)|
+
 
 ### Profits
 The **Profits** section allows you to configure profit rules.
