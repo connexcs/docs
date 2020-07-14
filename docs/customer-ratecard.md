@@ -30,10 +30,10 @@ New **Customer Rate Cards** may be added manually or by uploading an existing fi
     
 7. Once complete, the new card will display with the Provider rules and the Profit rules.
 
-**Manual add**
-To manually add Rate Card rows, select Draft, and add desired rows. 
+### Manual add
+To manually add Rate Card rows, select **Create Draft**, and add desired rows. 
 
-**Bulk Upload**
+### Bulk Upload
 The preferred method for adding a Rate Card is to import/upload it:
 
 1. Click **Bulk Upload** > **Upload**.
