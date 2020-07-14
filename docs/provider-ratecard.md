@@ -18,8 +18,8 @@ New **Provider Rate Cards** may be added manually or by uploading an existing fi
 
 1. Click the **`+`** button under **Provider Rate Cards**.
 3. Enter a unique name for the provider card.
-4. Select the carrier from the dropdown list.
-5. Select the desired currency.
+4. Select the desired carrier(s) from the dropdown list.
+5. Select the currency.
 6. Click **`Config`**.
 7. Set **Force Presentation** to IntER/IntRA/Indeterminate
 7. LRN is enabled using the **Dialer** option.
@@ -30,6 +30,7 @@ New **Provider Rate Cards** may be added manually or by uploading an existing fi
 To manually add Rate Card rows, select Draft, and add desired rows. 
 
 **Bulk Upload**
+
 To import/upload a new Provider Rate Cards
 1. Click **Bulk Upload** > **Upload**.
 2. Browse to and select the rate card file.
@@ -43,7 +44,7 @@ To import/upload a new Provider Rate Cards
 7. Select **Yes** to make this active immediately
 
 
-![alt text][provider-card-4] 
+![alt text][confirm-import] 
 
 !!! info "Detailed Rate Card setup"
     For additional details for adding new Rate Cards, see "[Rate Card Setup](https://docs.connexcs.com/video-guide/#rate-card-setup)" in the ConnexCS Video Guide. 
@@ -51,7 +52,7 @@ To import/upload a new Provider Rate Cards
 ## Provider Rate Card Settings
 
 ### Main tab
-* **Dependent Cards** - These are Customer cards that use the selected rate card. Changes to the Provider Rate Card will be applied to each dependent rate card. 
+**Dependent Cards** - These are Customer cards that use the selected rate card. Changes to the Provider Rate Card will be applied to each dependent rate card. 
 
 ### Revisions tab 
 The Revision tab displays up to 8 most recent changes made to a rate card (ex: previous Rule count, Presentation, Currency, date created, Billing). The two most recent revisions will be available as Active or Inactive, the rest will be in Archive state. 
@@ -84,4 +85,4 @@ The Revision tab displays up to 8 most recent changes made to a rate card (ex: p
 * **Delayed Bye** - On termination rate cards, add the specified duration (in seconds) to the end of each call. Providers may use this in situations where a commercial contract specifies a minimum duration call. This feature should only be used along with full disclosure to both the customer and carrier.
 
 
-[provider-card-4]: /card/img/118.png "provider-card-4"
+[confirm-import]: /card/img/138.png "Confirm Import"
