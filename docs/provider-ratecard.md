@@ -26,12 +26,12 @@ New **Provider Rate Cards** may be added manually or by uploading an existing fi
 8. Click **`Save`**.
 9. From here, you may Manually Add the rate card or perform a Bulk Upload. 
 
-**Manual add**
+### Manual add
 To manually add Rate Card rows, select Draft, and add desired rows. 
 
-**Bulk Upload**
+### Bulk Upload
+The preferred method for adding a Rate Card is to import/upload it:
 
-To import/upload a new Provider Rate Cards
 1. Click **Bulk Upload** > **Upload**.
 2. Browse to and select the rate card file.
 3. This will display the card sent by the Provider in CSV format (if not provided as CSV, must be converted before proceeding)
