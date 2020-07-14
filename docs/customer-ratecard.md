@@ -18,23 +18,37 @@ A Rate Card configuration may be emailed as an attachment to customers by clicki
 New **Customer Rate Cards** may be added manually or by uploading an existing file. 
 
 1. Select the **`+`** button under **Customer Rate Card**. 
-2. Name the Card, select Carrier(s), Currency, 
+2. Name the Card, select Carrier(s), Currency.
 3. Optional settings on the Config tab
     * Set **Force Presentation** to IntER/IntRA/Indeterminate
     * Enable **LRN** using **Dialler**.
 4. Click **`Save`**.
-   
-    ![alt text][ccard-11] 
-   
 5. Select **Profits** then click the **`+`** button. **Edit Profit** field details are found [here](https://staging--connexcs-docs.netlify.app/customer-ratecard/#profits).
 6. Click the **`Build`** button and confirm.  A notification will tell you if the build was successful.
     
     ![alt text][ccard-14] 
+    
+7. Once complete, the new card will display with the Provider rules and the Profit rules.
 
-7. Once complete, the new card will display with the Provider rules and the Profit rules. 
+**Manual add**
+To manually add Rate Card rows, select Draft, and add desired rows. 
+
+**Bulk Upload**
+The preferred method for adding a Rate Card is to import/upload it:
+
+1. Click **Bulk Upload** > **Upload**.
+2. Browse to and select the rate card file.
+3. This will display the card in CSV format (if not provided as CSV, must be converted before proceeding)
+4. Right-click the first row under Desitnation and select "Set Start Row"
+5. Right-click and map all 3 columns
+    * Col 1 - Name
+    * Col 2 - Prefix
+    * Col 3 - Cost
+6. Select **Upload to Sever** and confirm
+7. Select **Yes** to make this active immediately 
    
 !!! info "Detailed Rate Card setup" 
-    For additional details for adding new Rate Cards, see "Rate Card Setup" in the ConnexCS Video Guide.
+    For additional details for adding new Rate Cards, see "[Rate Card Setup](https://staging--connexcs-docs.netlify.app/video-guide/#rate-card-setup)" in the ConnexCS Video Guide.
     
 ## Customer Rate Card settings
 
