@@ -34,7 +34,7 @@ To manually add Rate Card rows, select Draft, and add desired rows.
 To import/upload a new Provider Rate Cards
 1. Click **Bulk Upload** > **Upload**.
 2. Browse to and select the rate card file.
-3. This will display the card sent by the Provider, in CSV format (if not provided as CSV, must be converted before proceeding)
+3. This will display the card sent by the Provider in CSV format (if not provided as CSV, must be converted before proceeding)
 4. Right-click the first row under Desitnation and select "Set Start Row"
 5. Right-click and map all 3 columns
     * Col 1 - Name
@@ -42,7 +42,6 @@ To import/upload a new Provider Rate Cards
     * Col 3 - Cost
 6. Select **Upload to Sever** and confirm
 7. Select **Yes** to make this active immediately
-
 
 ![alt text][confirm-import] 
 
