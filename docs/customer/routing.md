@@ -1,16 +1,15 @@
 # Routing
 
-Routing allocates incoming attempts to a designated rate card, which in turn egresses through a specified provider. It allows multiple rate cards to be used with or without a prefix. This is checked according to the longest prefix first, then the shortest for a match. If no prefix is matched, it will match the rate cards with mutually exclusive destinations.  If there are multiple rate cards with the same prefixes, you must set up a dial plan with a tech prefix to identify the correct card.
-
-With **Ingress Routing**, you can assign a Customer Rate Card to a customer account. 
-
+**Ingress Routing** allocates incoming calls based on the selected Customer Rate Card, which in turn Egresses to a specified provider. It allows multiple rate cards to be used with or without a prefix. This is checked according to the longest prefix first, then the shortest for a match. If no prefix is matched, it will match the rate cards with mutually exclusive destinations.  If there are multiple rate cards with the same prefixes, you must set up a dial plan with a tech prefix to identify the correct card.
 
 To view and configure existing routes, click on the **Routing** tab in the Customer Card. 
 
 ![alt text][ingress]
 
+For more information on Routing, see [Routing Setup](https://docs.connexcs.com/video-guide/#routing-setup) in our Video Guides for a detailed walkthrough, or the [Routing Overview](https://staging--connexcs-docs.netlify.app/routing/) and [Routing Strategy](https://staging--connexcs-docs.netlify.app/routing-strategy/) documentation sections. 
+
 !!! warning "Disabled Routes"
-    Any routes highlighted in red are disabled. To enable them, click on the route name then select **Enabled**. 
+    Any routes highlighted in red are disabled. To enable them, open the route, click **Enabled**, then **`Save`**. 
     
 
 
@@ -147,7 +146,7 @@ This defaults to Auto but selecting a zone is the current recommendation. Choose
 
 * **Auto**: uses the least expensive path between your customer and provider.  You can list various countries, though it is recommended you choose a location near a provider or your customer. 
 * **Direct RTP (no proxy)**: media flows directly between the customer and carrier. Direct RTP also means that if there are audio issues, the issue can't be ConnexCS. Since it isn't likely to be the carrier, the issue typically exists on the customer's end. 
-
+* Temporarily selecting a different region to route media traffic can be helpful in diagnosing call problems. 
 
 **RTP Proxy Mode**
 If connection via our service fails, and relaxed is selected, it will failover to backup automatically. 
