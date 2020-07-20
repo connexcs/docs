@@ -17,7 +17,7 @@
 
 
 ## Routing Engine
-The **Routing Engine** receives all calls when they enter the system, and processes them based on the direction the call is flowing. 
+The **Routing Engine** receives all calls when they enter the system then processes them based on the direction the call is flowing. 
 
 ### Ingress and Egress
 These terms are used to describe the direction or traffic relative to a switch.
@@ -32,14 +32,14 @@ Ex: When a customer's switch has a DID pointing to it, it would be considered **
     A call bound for termination comes into the routing engine, passes authorisation, then goes through **Ingress Routing**. This determines the call profile and where to send it. There is no **Egress Routing** section, per se. The Egress routing is built into the Customer Rate Card which contains 1 or more carriers and, optionally, a routing strategy (default LCR).
 
 ### Error Codes
-If your SIP Trace shows that an INVITE packet was received by the switch but not sent out to any providers, the failure has occured in the **Ingress Routing**.
+If your SIP Trace shows that an INVITE packet was received by the switch but not sent out to any providers, the failure has occurred in the **Ingress Routing**.
 
 
 
 | SIP Code | SIP Reason                             | Details                                                                                                |
 |:--------:|----------------------------------------|--------------------------------------------------------------------------------------------------------|
 |    403   | IP Not Authorised                      | The IP Address does not match any account in the system.                                               |
-|    500   | Unidentified Internal Switch           | This is an internal error, you should never see this. If you do please contact us.                     |
+|    500   | Unidentified Internal Switch           | This is an internal error; you should never see this. If you do please contact us.                     |
 |    500   | Server not accepting calls (Paused)    | Your account with ConnexCS has been disabled or your server has been disabled.                         |
 |    503   | Unknown User                           | Username & Passwords do not match to any known user account.                                           |
 |    503   | Unable to perform LRN                  | You have selected LRN dipping for this route, however it is likely that you don't have credit with us. |
@@ -52,12 +52,12 @@ If your SIP Trace shows that an INVITE packet was received by the switch but not
 |    503   | Dropping Call (Strategy)               | Strategic Routing has dropped the call.                                                                |
 |    503   | Internal Strategic Routing Error       | There is an error with the config of Strategic Routing.                                                |
 |    580   | No Route Available                     | The number dialled does not match any ingress routing profile.                                         |
-|    580   | Switch IP Variable Not Provided        | This is an internal error, you should never see this. If you do please contact us.                     |
-|    580   | To (oU) User Missing                   | This is an internal error, you should never see this. If you do please contact us.                     |
-|    580   | To (fU) User Missing                   | This is an internal error, you should never see this. If you do please contact us.                     |
+|    580   | Switch IP Variable Not Provided        | This is an internal error; you should never see this. If you do please contact us.                     |
+|    580   | To (oU) User Missing                   | This is an internal error; you should never see this. If you do please contact us.                     |
+|    580   | To (fU) User Missing                   | This is an internal error; you should never see this. If you do please contact us.                     |
 
 !!! info "End Point synchronisation"
-    When making changes, although we try to synchronise all endpoints as fast as possible, as this is a distributed system it can take up to 60 seconds for any changes to take affect.
+    When making changes, although we try to synchronise all endpoints as fast as possible, as this is a distributed system it can take up to 60 seconds for any changes to take effect.
 
 
 [call-flow]: https://github.com/digipigeon/connexcs-user-docs/blob/master/img/call-flow.jpg "Call-Flow"
