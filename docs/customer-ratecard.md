@@ -1,130 +1,99 @@
 # Customer Rate Card
 
-Customer Rate Cards let you manage the rates for customers, edit customer profiles, and view important information. The Rate Card Management screen is found under **Management > Rate Card > Customer Rate Cards**.
+Customer Rate Cards let you manage the rates for customers, edit customer profiles, and view important information. 
 
-## Compile 
-The Compile column shows which Customer Rate Cards are in sync with the Provider Rate Cards. 
+## Customer Rate Card Management 
+The Rate Card Management screen is located under **Management > Rate Card > Customer Rate Cards**.
 
-## Delete the Customer Rate Card
+### Compile 
+The **Compile** column shows which Customer Rate Cards are in sync with the Provider Rate Cards. 
 
+### Delete a Customer Rate Card
 Delete a customer rate card by selecting its name from the list and then clicking the trash bin icon. Clicking **`?`** button will show a list of provider cards associated with the current customer rate card. 
 
-## Email the Rate Card
-
+### Email the Rate Card
 A Rate Card configuration may be emailed as an attachment to customers by clicking the **`Email`** button while in the customer rate card.
 
-## Configuring Rate Cards
+## Add new Customer Rate Card (internal profit generation) 
+New **Customer Rate Cards** may be added manually or by uploading an existing file. 
 
-There are two types of rate cards: 
-
-* **Internal** rate cards let you add a profit to your provider cards or set a flat rate.
-* **External** rate cards are completed by uploading a custom rate card and setting up dynamic routing.
-
-## The Internal Method 
-To set up an internal Rate Card in ConnexCS:
-
-1. Click **Management** > **Rate Cards** > **Customer Rate Card**.
-2. Select the **`+`** button. 
-3. Name the card, select a carrier, then click **`Save`**.
- 
-    ![alt text][customer-card-1]
-
-    ![alt text][customer-card-2]
-
-4. Select **Profits**.
-5. Click the **`+`** button. 
-
-    ![alt text][customer-card-3]
-
-6. Enter the required prefix in the prefix field. This is typically an international country code, not a provider or customer tech prefix. Adding an up arrow `^` on the prefix draws all associated prefixes from the provider card. To specify a set of prefixes add, `^` and prefixes (e.g. ^441).
-7. In the cost field, add the sell price.
-8. There are three choices for costs:
-
-    * **Absolute** sets a flat cost, taken from the cost field, and what is actually charged. 
-    * **Relative** costs are added to the price you entered in cost field. 
-    * **Percent** adds a percentage (%) to the **Percentage** field if you don't want to use an absolute or relative value.  For example, a '10' in the box equals a 10% markup.
-   
-9. Select the billing type.
-
-    ![alt text][customer-card-4]
-
-9. Enter the connection charge, if it applies.
-
-10. Select the Rounding method.  It can be up to six (6) decimal places, but is usually four (4).
-
-11. Select **Cost** under the drop-down list for **Apply To**. If it is an NPA-NXX card you can select Inter/intra/cost
-    
-12.  Select **Profit** from the Status drop-down list.
-
-13. Select **Build** from Carrier Card button to build the rate card.
-
-## The External Method 
-
-The following instructions detail the external method for building Customer Rate Cards. 
-
-1. Click **Management** > **Rate Cards** > **Customer rate card**. 
-2. Click the **`+`** button, name the card, and select the carrier.
-3. Go to **Properties** > **Advanced**, and then select the providers inside the Dynamic Routing box. 
+1. Select the **`+`** button under **Customer Rate Card**. 
+2. Name the Card, select Carrier(s), Currency.
+3. Optional settings on the Config tab
+    * Set **Force Presentation** to IntER/IntRA/Indeterminate
+    * Enable **LRN** using **Dialler**.
 4. Click **`Save`**.
+5. Select **Profits** then click the **`+`** button. **Edit Profit** field details are found [here](https://staging--connexcs-docs.netlify.app/customer-ratecard/#profits).
+6. Click the **`Build`** button and confirm.  A notification will tell you if the build was successful.
+    
+    ![alt text][ccard-14] 
+    
+7. Once complete, the new card will display with the Provider rules and the Profit rules.
 
-    ![alt text][customer-card-7]
- 
-5. Click the **`Upload`** button.  A dialog window will allow you to upload a file from your local device.
+### Manual add
+To manually add Rate Card rows, select **Create Draft**, and add desired rows. 
 
-    ![alt text][customer-card-8]
+### Bulk Upload
+The preferred method for adding a Rate Card is to import/upload it:
 
-    ![alt text][customer-card-9]
+1. Click **Bulk Upload** > **Upload**.
+2. Browse to and select the rate card file.
+3. This will display the card in CSV format (if not provided as CSV, must be converted before proceeding)
+4. Right-click the first row under Desitnation and select "Set Start Row"
+5. Right-click and map all 3 columns
+    * Col 1 - Name
+    * Col 2 - Prefix
+    * Col 3 - Cost
+6. Select **Upload to Sever** and confirm
+7. Select **Yes** to make this active immediately 
+   
+!!! info "Detailed Rate Card setup" 
+    For additional details for adding new Rate Cards, see "[Rate Card Setup](https://staging--connexcs-docs.netlify.app/video-guide/#rate-card-setup)" in the ConnexCS Video Guide.
+    
+## Customer Rate Card settings
 
-5. Once the upload completes, select the new file by name.
-6. Map the rate card fields against the system fields. 
-7. Click the **`Import to card`** button and select the customer card.
-8. Click **`Save`**.
-
-The rate card file is imported the customer rate card, and a notification will signal its completion.  Unlike the internal alternative, there is no need to build an external rate card.
-
-
-## Main 
+### Main tab
 * **Parent Cards** are the Provider Rate Cards associated to this card
 * **Customers** lists the specific Customers using this card
 * **Profits** displays configured profit rules
 
+### Revisions tab
+The revision tab shows previous changes made to rate cards. For example: previous Rule Count, Presentation, Currency, Date Created, and Billing.
 
-## Revisions  
+### Properties tab
+ * **Rate Cards** - Define how customer routing is built as well as how customer prices are derived.
+ * **Manual Ordering** - Allow granular ordering of specific prefixes and which carriers to use. 
+ * **Contract** - Specify a default contract that applies to a specific rate card. 
+ * **Collapse Using** - Select how you want to merge data with the carrier cards.
+ * **Rate Compacts** - Apply after **Collapse Using**, it calculates the Minimum, Maximum, or Average cost (as selected) based on the Rate Cards selected on the right
+ * **Rounding Methods** - All of the following apply to the n+1 digit (e.g if your card is billed to 4 decimal places, this cares about the 5th digit). For our example: 0.1234**5** (rounded to 4 decimal places):
+ 
+|Method|Explanation|
+| --- | --- |
+|Up|Rounded up regardless of n+1 digit (0.1235)|
+|Down|Rounded down regardless of n+1 digit (0.1234)|
+|Half-Up|Values 5-9 are rounded up (0.1235)|
+|Half-Down|Values 0-5 are rounded down (0.1234)|
 
-The revision tab shows previous changes made to rate cards. For example: previous Rule count, Presentation, Currency, date created, and Billing.
 
-## Properties
- * **Rate Cards** - defines how customer routing is built as well as how customer prices are derived
- * **Manual Ordering** - allows for granular ordering of specific prefixes and which carriers to send to
- * **Contracts** - specify a default contract that applies to a specific rate card
- * **Collapse Using (Properties > Config)** - select how you want to merge data with the carrier cards
- * **Rate Compacts** - Applied after **Collapse Using**, it calculates the Minimum, Maximum, or Average cost (as selected) based on the Rate Cards selected on the right
+### Profits
+The **Profits** section allows you to configure profit rules.
 
-## Profits
-The Profit Rules allows you to 
-
+* **Match**
+    * Enter the prefix to match, either a Regular Expression or a standard prefix (numeric only, typically an international country code, not a provider or customer tech prefix). 
+    * Adding an up arrow `^` on the prefix draws all associated prefixes from the provider card. For example, if you enter '49, it will include '491', '492', '4912345', and so on.
 * **Profit Type**
-   * Absolute - actual value charged
-   * Relative - amount entered is added to the cost from the carrier
-   * Percent - cost from the carrier multipled by this percent
-* **Status** - Use Blocked after importing a Carrier Rate Card to disable specific prefixes
-* When MCD (Minimum Call Duartion), Pulse, or Rounding are disabled, that setting will select the worst case scenario as defined by the carrier. 
+    * Absolute - actual value charged
+    * Relative - amount entered is added to the cost from the carrier
+    * Percent - cost from the carrier multiplied by this percent
+* **Status** - Use Blocked, here or after importing a Carrier Rate Card, to disable specific prefixes
+* When **MCD (Minimum Call Duration)**, **Pulse**, or **Rounding** are disabled, that setting will select the worst case scenario as defined by the carrier. 
+
+!!! note "Profit Type"
+    Using Absolute and Relative can be useful, especially when dealing with large cards and your providers prices change; a single click is all that is needed to regenerate the customer rate cards.
 
 
-## Rounding Methods
-All of the following apply to the n+1 digit (e.g if your card is billed to 4 decimal places, this cares about the 5th digit). For our example: 0.1234**5** (rounded to 4 decimal places)
-
- * **Full Down** - Rounded down regardless of n+1 digit (0.1234)
- * **Half Down** - Values 0-5 are rounded down. (0.1234)
- * **Half Up** - Values 5-9 are rounded up.  (0.1235)
- * **Full Up** - Rounded up regardless of n+1 digit (0.1235)
-
-[customer-card-1]: /card/img/121.png "Customer-card-1"
-[customer-card-2]: /card/img/122.png "Customer-card-2"
+[ccard-11]: /card/img/149.png "ccard-11"
 [customer-card-3]: /card/img/123.png "Customer-card-3"
-[customer-card-4]: /card/img/124.png "Customer-card-4"
-[customer-card-5]: /card/img/125.png "Customer-card-5"
-[customer-card-6]: /card/img/126.png "Customer-card-6"
-[customer-card-7]: /card/img/127.png "Customer-card-7"
-[customer-card-8]: /card/img/128.png "Customer-card-8"
-[customer-card-9]: /card/img/129.png "Customer-card-9"
+[ccard-14]: /card/img/152.png "ccard-14"
+

@@ -59,10 +59,10 @@ pages:
         - Carrier: carrier.md
         
     - Rate Cards:
+        - Building Cards: rate-card-building.md
         - Provider Rate Card: provider-ratecard.md
         - Customer Rate Card: customer-ratecard.md
-        - Building: rate-card-building.md
-        - Card Management: card-management.md
+
         
     - DID:
         - DID/Origination: did.md
