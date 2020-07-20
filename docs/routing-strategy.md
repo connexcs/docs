@@ -1,6 +1,6 @@
 # Routing Strategy
 
-A **Routing Strategy** lets you route calls for different providers through the routing engine using a specified set of rules. It helps with call routing, a necessary mechanic to match operations with business needs. This can be found in the Dashboard under **Management** > **Routing Strategy**. 
+A **Routing Strategy** lets you route calls for different providers through the routing engine using a specified set of rules. It helps with call routing, a necessary mechanic to match operations with business needs. The **Routing Strategy** screen, located under **Management**, displays existing strategies in an alphabetical list. 
 
 ## Types of Routing Strategies
 There are several types of routing strategies that can be employed with ConnexCS:
@@ -19,7 +19,7 @@ There are several types of routing strategies that can be employed with ConnexCS
 
 
 ## Configuring Routing Strategies
-The **Routing Strategy** screen, located under **Management**, displays existing strategies in an alphabetical list. 
+A new **Routing Strategy** is created then it must be assigned to a customer account. 
 
 **Step 1: Add Routing Strategy**
 
@@ -32,7 +32,7 @@ To add a new routing strategy:
    ![alt text][routing-strategy2]   
 
 4. Click the **`+`** to add a row.
-5. Select a card from the drop down list.
+5. Select a card from the drop-down list.
 6. Click the **`Save`** button.
 
    ![alt text][routing-strategy3]
@@ -60,7 +60,7 @@ Routing Strategy can also be used to block calls.
 1. Click **Management** > **Customer**.
 1. Click a customer **Name** > **Routing** > **Rate Card**
 2. Under **Routing**, click **Strategy**.
-3. Add a number to block, and change the Strategy to **Drop**.
+3. Add the number to block then select **Drop** as the Strategy.
 4. Click **`Save`**.
 
 ![alt text][Blocking-Calls-2]
