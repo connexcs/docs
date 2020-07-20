@@ -215,23 +215,6 @@ Deploying a server with ConnexCS is an efficient operatation.  You should be abl
 [carrier-auth-1]: /getting-started/img/15.png "carrier-auth-1"
 [carrier-auth-2]: /getting-started/img/16.png "carrier-auth-2"
 
-[provider-card-1]: /getting-started/img/17.png "provider-card-1"
-[provider-card-2]: /getting-started/img/18.png "provider-card-2"
-[provider-card-3]: /getting-started/img/19.png "provider-card-3"
-
-[provider-card-4]: /getting-started/img/20.png "provider-card-4"
-[provider-card-5]: /getting-started/img/21.png "provider-card-5"
-[provider-card-6]: /getting-started/img/22.png "provider-card-6"
-[provider-card-7]: /getting-started/img/18.png "provider-card-7"
-
-[customer-card-1]: /getting-started/img/23.png "customer-card-1"
-[customer-card-2]: /getting-started/img/24.png "customer-card-2"
-[customer-card-3]: /getting-started/img/25.png "customer-card-3"
-[customer-card-4]: /getting-started/img/26.png "customer-card-4"
-[customer-card-5]: /getting-started/img/27.png "customer-card-5"
-[customer-card-5]: /getting-started/img/25.png "customer-card-5"
-[customer-card-6]: /getting-started/img/26.png "customer-card-6"
-
 
 [ingress-1]: /getting-started/img/28.png "ingress-1"
 [ingress-2]: /getting-started/img/29.png "ingress-2"
