@@ -13,6 +13,15 @@ The Provider Rate Card screen is found under **Management** > **Rate Card** > **
 * **`?`** - Pressing the **`?`** button next to any rate card displays an overview of that provider.  It includes the name, the card ID, and any dependent children rate cards that could be affected by changes.
 * **ID** - The rate card's ID is a system identifier that acts as a placeholder and prevents confusion between similarly named items.
 
+## Email the Rate Card
+This feature allows providers to email rate cards to customers as an attachment. It is a convenient way to send customers official information relevant to their accounts.  
+
+To email a rate card:
+1. Click **Management** > **Rate Card** > **Provider Rate Card**.
+2. Click the rate card name.
+3. Click the **`Email`** button.
+4. Enter the email address and click **`Send`**.
+
 ## Add New Provider Rate Cards
 New **Provider Rate Cards** may be added manually or by uploading an existing file. 
 
