@@ -7,12 +7,12 @@ There are several types of routing strategies that can be employed with ConnexCS
 
 | Strategy  | Description     |
 |----------|-------------|
-| **LCR** |    Least Cost Routing configures parameters to the lowest cost-per-call. |
+| **LCR** |    Least Cost Routing (LCR) configures parameters to the lowest cost-per-call. |
 | **Random** |    Routing calls to any random route without any sequence. |
 | **Round Robin** |    System will pick a call route according to a predetermined sequence. |
 | **Manual** |    Manually decide how calls are routed.|
 | **Reverse LCR** |    The most expensive route will be chosen first. |
-| **Tier** |    Tiers in routing strategy allows one selection per tier. |
+| **Tier** |    Tiers in routing strategy allows one selection per tier. Several cards may be set to the same tier, |
 
 
 
@@ -33,7 +33,7 @@ To add a new routing strategy:
 5. Select a card from the drop-down list.
 6. Click the **`Save`** button.
 
-   ![alt text][routing-strategy3]
+    ![alt text][routing-strategy3]
 
 **Step 2: Assign Routing Strategy to the Customer Account**
 
@@ -45,7 +45,7 @@ To set up a routing strategy in a customer's account:
 5. Click **Strategy**, and then the blue **`+`** in the window that follows.
 6. Select a strategy from the drop-down list.  Note that you can also add a prefix in this screen.
 
-   ![alt text][routing-strategy6]
+    ![alt text][routing-strategy6]
 
 !!! warning "Default behavior with conflicting Strategies"
     You can set a Customer Rate Card to default to LCR, Random, Round Robin, and Reverse LCR. However, parameters set in a Routing Strategy will override the Customer Rate Card setting if they conflict.
@@ -61,7 +61,7 @@ Routing Strategy can also be used to block calls.
 3. Add the number to block then select **Drop** as the Strategy.
 4. Click **`Save`**.
 
-![alt text][Blocking-Calls-2]
+    ![alt text][Blocking-Calls-2]
 
 [routing-strategy2]: /customer/img/88.png "routing-strategy2"
 [routing-strategy3]: /customer/img/89.png "routing-strategy3"
