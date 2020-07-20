@@ -5,14 +5,18 @@ Customer Rate Cards let you manage the rates for customers, edit customer profil
 ## Customer Rate Card Management 
 The Rate Card Management screen is located under **Management > Rate Card > Customer Rate Cards**.
 
-### Compile 
-The **Compile** column shows which Customer Rate Cards are in sync with the Provider Rate Cards. 
+* **Compile** - Displays which Customer Rate Cards are in sync with the Provider Rate Cards. 
+* **Delete a Customer Rate Card** - Delete a customer rate card by selecting its name from the list and then clicking the trash bin icon. 
+* **`?`** - Shows a list of provider cards associated with the current customer rate card. 
 
-### Delete a Customer Rate Card
-Delete a customer rate card by selecting its name from the list and then clicking the trash bin icon. Clicking **`?`** button will show a list of provider cards associated with the current customer rate card. 
+## Email the Rate Card
+This feature allows providers to email rate cards to customers as an attachment. It is a convenient way to send customers official information relevant to their accounts.  
 
-### Email the Rate Card
-A Rate Card configuration may be emailed as an attachment to customers by clicking the **`Email`** button while in the customer rate card.
+To email a rate card:
+1. Click **Management** > **Rate Card** > **Customer Rate Card**.
+2. Click the rate card name.
+3. Click the **`Email`** button.
+4. Enter the email address and click **`Send`**.
 
 ## Add new Customer Rate Card (internal profit generation) 
 New **Customer Rate Cards** may be added manually or by uploading an existing file. 
