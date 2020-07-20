@@ -83,6 +83,8 @@ The revision tab shows previous changes made to rate cards. For example: previou
 ### Profits
 The **Profits** section allows you to configure profit rules.
 
+![alt text][profit] 
+
 * **Match**
     * Enter the prefix to match, either a Regular Expression or a standard prefix (numeric only, typically an international country code, not a provider or customer tech prefix). 
     * Adding an up arrow `^` on the prefix draws all associated prefixes from the provider card. For example, if you enter '49, it will include '491', '492', '4912345', and so on.
@@ -100,4 +102,6 @@ The **Profits** section allows you to configure profit rules.
 [ccard-11]: /card/img/149.png "ccard-11"
 [customer-card-3]: /card/img/123.png "Customer-card-3"
 [ccard-14]: /card/img/152.png "ccard-14"
+
+[profit]: /card/img/profit.png "Edit Profits"
 
