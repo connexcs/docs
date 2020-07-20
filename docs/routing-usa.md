@@ -1,18 +1,16 @@
 # USA Routing
-USA Routing is more complicated than international routing. If you are unfamiliar with conventional (international) routing in ConnexCS, please see our page about [Routing](/en/latest/routing/) first.
+**USA Routing** is more complicated than international routing. If you are unfamiliar with conventional (international) routing in ConnexCS, please see our page about [Routing](https://docs.connexcs.com/routing/) first.
 
 ## NPA-NXX
-NPA-NXX refers to the first six(6) digits of USA numbers, excluding the country code. More information can be found here:
-https://en.wikipedia.org/wiki/North_American_Numbering_Plan
+**NPA-NXX** refers to the first six (6) digits of USA numbers, excluding the country code. An example number, following the NPA-NXX-xxxx format, might be 202-515-1234. For more information, review the Wikipedia article on [North American Numbering Plan](https://en.wikipedia.org/wiki/North_American_Numbering_Plan).
 
-### Inter / Intra / Indet
-Inter/Intra state routing depends on the CLI (or ANI) presented in the call. ConnexCS calls should be normalized by routing rules into E164 format, without any preceeding plus sign (+). This allows for accurate routing calculations within our system.
 
-**Intrastate (Intra)** are calls that belong to the same state. Traditionally identified by the same NPA-NXX, many USA states have multiple area codes, so these are compared for matching state names.
+### IntER / IntRA / Indet
+Inter/Intra state routing depends on the CLI (or ANI) presented in the call. ConnexCS calls should be normalized by routing rules into E164 format, without any preceding plus sign (+). This allows for accurate routing calculations within our system.
 
-**Interstate (Inter)** are calls that belong to different states.
-
-**Indeterminate (Indet)** is a call placed to a NPA-NXX destination without a matching NPA-NXX Origin--either International, Non-geographic, Unknown or Invalid).
+* **Interstate (IntER)** - Calls routing from one state to another.
+* **Intrastate (IntRA)** - Calls routing within the same state. Originally identified by the same NPA-NXX, many USA states now have multiple area codes, so these are compared for matching state names.
+* **Indeterminate (InDET)** - Calls routed to an NPA-NXX destination without a matching NPA-NXX Origin (either International, Non-geographic, Unknown, or Invalid).
 
 ### Identification Examples
 | Destination / CLI           | UK (441782)   | New York (1212) | New York (1315) | Chicago (224) | Unknown       | Withheld      |
@@ -33,7 +31,7 @@ The process is as follows:
 3. The call is passed to the upstream provider in the same format.
 4. When the call is billed, if the card is LRN it will be charged as if the call was placed to (C ).
 
-ConnexCS allows you to have customer cards as non-LRN and provider cards as LRN and vice versa, both turned off, or both turned on. This means can mix LRN and non-LRN providers, and the LCR will still be routed correctly.  Dynamic Routing is strongly recommened for LRN.
+ConnexCS allows you to have customer cards as non-LRN and provider cards as LRN and vice versa, both turned off, or both turned on. This means you can mix LRN and non-LRN providers, and the LCR will still be routed correctly.  Dynamic Routing is strongly recommended for LRN.
 
 ### Charges
 ConnexCS includes LRN Dips for free under fair use. Fair use means traffic does not exploit our billing strategy.  To send this type of traffic, please contact us, as we do not support external LRNs.
