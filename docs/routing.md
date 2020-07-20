@@ -12,7 +12,7 @@
 4. The Carriers Rate Card links into the specific carrier.
 5. The selected carrier can have multiple IP addresses. The call will be sent randomly, but carrier CPS and Channel limits will be obeyed.
 
-!!! info "Rate Cards and Routing"
+!!! info "Routing and Rate Cards"
     A rate card in **ConnexCS** represents a call path. If the rate card is incoming, it identifies the carrier providing that rate card. The customer rate identifies which carrier rate cards are used in its construction.
 
 
