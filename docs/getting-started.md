@@ -144,58 +144,15 @@ Carriers are your VoIP route providers. Below, we include only the required fiel
  ![alt text][carrier-auth-2]
 
 
-## Provider Card
+## Rate Cards
 
-Below are the instructions to setup the provider rate card manually. There are two ways to setup a provider rate card: via upload and manually.  We cover the manual setup instructions here.  For detailed instructions select [Provider Card].
+**Rate Cards** are an important ConnexCS feature as this is how most information is organized.
 
-1. Click on Management> Rate Card
+Before getting started, we recommend you review [Building Cards](https://docs.connexcs.com/rate-card-building/). You can also watch our [Rate Card Setup video](https://docs.connexcs.com/video-guide/#rate-card-setup). 
 
-   ![alt text][provider-card-1]
+To beging building rate cards, you will first setup your [Provider Rate Card(s)](https://docs.connexcs.com/provider-ratecard/) as customer cards will build off those. 
 
-2. Click `+` button under **Provider Rate Cards**
-
-  ![alt text][provider-card-2]
-
-3. Name the provider card.
-4. Select a carrier from the drop-down list.
-5. Select the currency for the provider card.
-6. Click `Save`.
-
-  ![alt text][provider-card-3]
-
-7. Go to the provider's rate card, and select the `Create Draft` button.
-
-8. Select **Add Row**
-
-9. Complete the spreadsheet information, which works similar to any common office programs.
-10. Click `Save` to publish the rate card.
-
-## Customer Card
-To manage customer cards:
-
-1. Select **Management** > **Rate Cards**.
-
-  ![alt text][customer-card-1]
-
-2. Click on **`+`** button under Customer Rate Cards
-
- ![alt text][customer-card-2]
-
-3. Name the customer card.
-4. Select carrier cards (default: LCR).
-5. Select currency.
-6. Click **`Save`**
-
- ![alt text][customer-card-3]
-
-7. Select the **Profits** tab, then **Add New Row**.
-8. Complete the spreadsheet.
-
-   ![alt text][customer-card-4]
-
-9. Select **`Build From Carrier Cards`** and confirm the build.
-
- ![alt text][customer-card-5]
+Once this is complete, build [Customer Rate Cards](https://docs.connexcs.com/customer-ratecard/) as needed. Make sur eyou review the Building Cards section for 
 
 ## Ingress Routing
 To manage ingress routing setups:
