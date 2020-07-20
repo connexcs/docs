@@ -67,6 +67,7 @@ pages:
         - Routing Overview: routing.md
         - Routing Strategy: routing-strategy.md
         - Routing USA: routing-usa.md
+        - Global Routing: global-routing.md
         
     - DID:
         - DID/Origination: did.md
