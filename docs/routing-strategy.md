@@ -8,7 +8,7 @@ There are several types of routing strategies that can be employed with ConnexCS
 | Strategy  | Description     |
 |----------|-------------|
 | **LCR** |    Least Cost Routing (LCR) configures parameters to the lowest cost-per-call. |
-| **Random** |    Routing calls to any random route without any sequence. |
+| **Random** |    Routing calls to any random route without any sequence, though you can add weighting. |
 | **Round Robin** |    System will pick a call route according to a predetermined sequence. |
 | **Manual** |    Manually decide how calls are routed.|
 | **Reverse LCR** |    The most expensive route will be chosen first. |
