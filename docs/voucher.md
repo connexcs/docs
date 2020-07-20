@@ -1,14 +1,15 @@
 # Vouchers
 
-**Vouchers** allow benefits to be applied when a customer tops-up their account. They are available in both the Customer Portal and in WebPhone. 
+**Vouchers** are similar to calling cards, with the optional benefit of applying additional credits when a customer tops-up their account. **Vouchers** are available in both the Customer Portal and in WebPhone. 
 
 ## Voucher Types
 
 Vouchers may be issues in one of 3 forms:
 
 * **Free Credit** - Once the voucher code is entered credit is applied independently of any other payment
-* **Additional Credit** - Ex: $50 free credit for top-up of $100 or more.
 * **Multiplier Credit** - Ex: Credit doubled for top-up of $50 or more.
+* **Additional Credit** - Ex: $50 free credit for top-up of $100 or more.
+
 
 ## Voucher Setup
 

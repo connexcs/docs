@@ -5,14 +5,18 @@ Customer Rate Cards let you manage the rates for customers, edit customer profil
 ## Customer Rate Card Management 
 The Rate Card Management screen is located under **Management > Rate Card > Customer Rate Cards**.
 
-### Compile 
-The **Compile** column shows which Customer Rate Cards are in sync with the Provider Rate Cards. 
+* **Compile** - Displays which Customer Rate Cards are in sync with the Provider Rate Cards. 
+* **Delete a Customer Rate Card** - Delete a customer rate card by selecting its name from the list and then clicking the trash bin icon. 
+* **`?`** - Shows a list of provider cards associated with the current customer rate card. 
 
-### Delete a Customer Rate Card
-Delete a customer rate card by selecting its name from the list and then clicking the trash bin icon. Clicking **`?`** button will show a list of provider cards associated with the current customer rate card. 
+## Email the Rate Card
+This feature allows providers to email rate cards to customers as an attachment. It is a convenient way to send customers official information relevant to their accounts.  
 
-### Email the Rate Card
-A Rate Card configuration may be emailed as an attachment to customers by clicking the **`Email`** button while in the customer rate card.
+To email a rate card:
+1. Click **Management** > **Rate Card** > **Customer Rate Card**.
+2. Click the rate card name.
+3. Click the **`Email`** button.
+4. Enter the email address and click **`Send`**.
 
 ## Add new Customer Rate Card (internal profit generation) 
 New **Customer Rate Cards** may be added manually or by uploading an existing file. 
@@ -79,6 +83,8 @@ The revision tab shows previous changes made to rate cards. For example: previou
 ### Profits
 The **Profits** section allows you to configure profit rules.
 
+![alt text][profit] 
+
 * **Match**
     * Enter the prefix to match, either a Regular Expression or a standard prefix (numeric only, typically an international country code, not a provider or customer tech prefix). 
     * Adding an up arrow `^` on the prefix draws all associated prefixes from the provider card. For example, if you enter '49, it will include '491', '492', '4912345', and so on.
@@ -96,4 +102,6 @@ The **Profits** section allows you to configure profit rules.
 [ccard-11]: /card/img/149.png "ccard-11"
 [customer-card-3]: /card/img/123.png "Customer-card-3"
 [ccard-14]: /card/img/152.png "ccard-14"
+
+[profit]: /card/img/profit.png "Edit Profits"
 
