@@ -12,14 +12,12 @@ There are several types of routing strategies that can be employed with ConnexCS
 | **Round Robin** |    System will pick a call route according to a predetermined sequence. |
 | **Manual** |    Manually decide how calls are routed.|
 | **Reverse LCR** |    The most expensive route will be chosen first. |
-| **Tier Routing** |    Tiers in routing strategy allows one selection per tier. |
+| **Tier** |    Tiers in routing strategy allows one selection per tier. |
 
-!!! note 
-    Only one Strategy type at a time may be selected from the available options.
 
 
 ## Configuring Routing Strategies
-A new **Routing Strategy** is created then it must be assigned to a customer account. 
+Once a new **Routing Strategy** is created it must be assigned to a customer account. 
 
 **Step 1: Add Routing Strategy**
 
@@ -27,9 +25,9 @@ To add a new routing strategy:
 
 1. Click the **`+`** button in the **Routing Strategy** screen.
 2. Name the strategy.
-3. Select the strategy type (defined above).
+3. Select the strategy type (defined above). 
 
-   ![alt text][routing-strategy2]   
+    ![alt text][routing-strategy2]   
 
 4. Click the **`+`** to add a row.
 5. Select a card from the drop-down list.
@@ -49,8 +47,8 @@ To set up a routing strategy in a customer's account:
 
    ![alt text][routing-strategy6]
 
-!!! warning "Configuring Strategy in a Customer Rate Card"
-    You can set a Customer Rate Card to default to LCR, Random, Round Robin, and Reverse LCR. However, conflicting parameters set in a Routing Strategy will override the Customer Rate Card setting.
+!!! warning "Default behavior with conflicting Strategies"
+    You can set a Customer Rate Card to default to LCR, Random, Round Robin, and Reverse LCR. However, parameters set in a Routing Strategy will override the Customer Rate Card setting if they conflict.
 
 
 ## Blocking Calls
