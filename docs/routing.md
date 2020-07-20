@@ -17,17 +17,22 @@
 
 
 ## Routing Engine
-When a call first lands on the system it hits the routing engine. The routing engine follows the process:
+The **Routing Engine** receives all calls when they enter the system, and processes them based on the direction the call is flowing. 
 
 ### Ingress and Egress
+These terms are used to describe the direction or traffic relative to a switch.
 
-Ingress means inbound and egress means outbound. If this is describing a switch (for IP auth), the direction is relative to the switch
-that you are currently describing. E.g if you add a customer's switch that will be sending traffic to terminate with a carrier, the customer's switch would be considered Egress as it is sending calls out. If it has a DID pointing to it, it would be Ingress as traffic would be flowing into it.
+* **Ingress** refers to inbound calls. 
+* **Egress** refers to outbound calls. 
 
-If a call bound for termination comes into the routing engine, after it passes authorisation it will go through ingress routing. This decides the profile of the call and where it is passed to next. There is no Egress routing section per se. The egress routing is built into the customer's rate card as this contains 1 or more carriers and, optionally, a routing strategy (default LCR).
+Ex: When you add a customer's switch that will send traffic to terminate with a carrier, the customer's switch would be considered **Egress** as it is sending calls out. 
+Ex: When a customer's switch has a DID pointing to it, it would be considered **Ingress** as traffic is coming into the switch. 
+
+!!! note "Ingress Routing vs Egress Routing"
+    A call bound for termination comes into the routing engine, passes authorisation, then goes through **Ingress Routing**. This determines the call profile and where to send it. There is no **Egress Routing** section, per se. The Egress routing is built into the Customer Rate Card which contains 1 or more carriers and, optionally, a routing strategy (default LCR).
 
 ### Error Codes
-If your SIP Trace shows that an INVITE packet was received by the switch but not sent out to any providers, the fail will be in the ingress routing.
+If your SIP Trace shows that an INVITE packet was received by the switch but not sent out to any providers, the failure has occured in the **Ingress Routing**.
 
 
 
