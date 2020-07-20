@@ -65,10 +65,9 @@ pages:
 
     - Routing:
         - Routing Overview: routing.md
-        - Routing USA: routing-usa.md
-        - Routing Engine: routing-engine.md
         - Routing Strategy: routing-strategy.md
-    
+        - Routing USA: routing-usa.md
+        
     - DID:
         - DID/Origination: did.md
         
