@@ -66,7 +66,7 @@ pages:
     - Routing:
         - Routing Overview: routing.md
         - Routing Strategy: routing-strategy.md
-        - Global Routing: global-routing.md
+        - Routing Global: global-routing.md
         - USA Routing: routing-usa.md
 
         
