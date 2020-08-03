@@ -60,5 +60,5 @@ If your SIP Trace shows that an INVITE packet was received by the switch but not
     When making changes, although we try to synchronise all endpoints as fast as possible, as this is a distributed system it can take up to 60 seconds for any changes to take effect.
 
 
-[call-flow]: ../img/call-flow.jpg "Call Flow"
+[call-flow]: /misc/img/call-flow.jpg "Call Flow"
 
