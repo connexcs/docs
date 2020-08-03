@@ -7,7 +7,7 @@ To add a new inbound number, follow the steps shown below:
 
 1. Click the **`+`** button.
 
-    ![alt text][did-img-2]
+    ![alt text][did-updated]
 
 2. Fill in the details of the form.
 3. Click the **`Save`** button.
@@ -39,6 +39,6 @@ You can search the details in DID records by entering keywords in the text field
 ![alt text][did-img-4]
 
 
-[did-img-2]: /did/img/165.png "Add DID"
+[did-updated]: /did/img/did-updated.png "Add DID"
 [did-delete]: /did/img/did-delete.png "Delete DID"
-[did-img-4]: /did/img/167.png "Search DID"
+[did-img-4]: /did/img/did-search.png "Search DID"
