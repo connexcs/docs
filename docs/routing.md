@@ -4,7 +4,7 @@
 
 **Routing** in ConnexCS Cloudswitch occurs in the following stages:
 
-   ![alt text][call-flow]
+![alt text][call-flow]
 
 1. An incoming call is identified as a customer, and is verified by source IP or User/Pass Authentication
 2. Ingress Routing checks for prefixes, then against available rate cards. There can be multiple ingress routes per customer.
@@ -60,5 +60,5 @@ If your SIP Trace shows that an INVITE packet was received by the switch but not
     When making changes, although we try to synchronise all endpoints as fast as possible, as this is a distributed system it can take up to 60 seconds for any changes to take effect.
 
 
-[call-flow]: /img/call-flow.jpg "Call Flow"
+[call-flow]: ../img/call-flow.jpg "Call Flow"
 
