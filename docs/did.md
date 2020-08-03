@@ -1,5 +1,5 @@
 # DID
-**DID (Direct Inward Dialing)** is a mechanism in phone systems that allows for more effective line management. It is found under **Global** > **DID**. **DID** can also be managed through the [ScriptForge API](https://docs.connexcs.com/developers/scriptforge-api/). 
+**DID (Direct Inward Dialing)** is a mechanism in phone systems that allows for more effective line management. It is directly configured under **Global** > **DID** or it can b managed through the [ScriptForge API](https://docs.connexcs.com/developers/scriptforge-api/). 
 
 
 ## Add a DID
