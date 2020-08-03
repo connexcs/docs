@@ -19,11 +19,11 @@ To add a new SIP device:
 ## View and Edit Device
 Allows you to view and edit device information, including the addition of device lines.
 
-1)	To view a device, select any device
-2)	Select the **`Edit`** button from the form that opens.
+1. To view a device, select any device
+2. Select the **`Edit`** button from the form that opens.
 
 
-## Delete a Device
+## Delete Device
 To delete a device from the list, select any row and click the trash bin icon.
 
 
