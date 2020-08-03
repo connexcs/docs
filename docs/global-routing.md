@@ -1,5 +1,5 @@
 # Routing Global
-**Routing Global** allows you to create routing templates that can be applied to multiple customers. This is ideal when all or multiple customers are using the same or same type of route or routing settings. When you need to apply a change to routing for multiple customers, you only need to update the template. 
+**Routing Global** allows you to create routing templates that can be applied to multiple customers. This is ideal when all or multiple customers are using a repeatable configuration, either the same type of route or the same routing settings. When you need to apply a change to routing for multiple customers, you only need to update the template. 
 
 ## Setup
 To setup **Routing Global** template, first create it then apply it to the customer account(s) using the **Tag** field. 
@@ -8,7 +8,7 @@ To setup **Routing Global** template, first create it then apply it to the custo
 
 1. Go to Management > Routing Global
 2. Click the **`+`** to create a new template
-3. Complete the fields (see "Routing Global fields" below)
+3. Complete the fields (see [Advanced Routing configuration](https://staging--connexcs-docs.netlify.app/customer/routing/#advanced-routing-configuration) for details)
 
     ![alt text][routing-global]
 
@@ -25,7 +25,7 @@ For each customer that needs the new template:
 4. Save the customer configuration. 
 
 
-!!! info "Routing Global fields"
-    The [Advanced Routing configuration](https://staging--connexcs-docs.netlify.app/customer/routing/#advanced-routing-configuration) article explains these settings in detail. 
+!!! info "Using Routing Global and Script Forge"
+    Routing Global templates can't be used to set routing details with ScriptForge (Vars box). With appropriate design, these can be configured directly under Customer Routing.
 
 [routing-global]: /misc/img/routing-global1.png "Edit Global Routing"
