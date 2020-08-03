@@ -16,8 +16,8 @@ Create the template:
 5. Select **`Save`**.
 
 Assign the template:
-
 For each customer that needs the new template:
+
 1. Navigate to Management > Customer and select the customer
 2. Select **`Edit`** in the upper right corner
 3. On the config tab, select the new template under **Tags**
