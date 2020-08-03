@@ -4,7 +4,7 @@
 
 **Routing** in ConnexCS Cloudswitch occurs in the following stages:
 
-![alt text][call-flow]
+   ![alt text][call-flow]
 
 1. An incoming call is identified as a customer, and is verified by source IP or User/Pass Authentication
 2. Ingress Routing checks for prefixes, then against available rate cards. There can be multiple ingress routes per customer.
