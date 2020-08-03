@@ -3,7 +3,7 @@
 **Ingress Routing** allocates incoming calls based on the selected Customer Rate Card, which in turn Egresses to a specified provider. It allows multiple rate cards to be used with or without a prefix. This is checked according to the longest prefix first, then the shortest for a match. If no prefix is matched, it will match the rate cards with mutually exclusive destinations.  If there are multiple rate cards with the same prefixes, you must set up a dial plan with a tech prefix to identify the correct card.
 
 !!! info "Routing Templates and more"
-Create templates for customer routing in [Global Routing](https://docs.connexcs.com/global-routing/). For more information on Routing, see [Routing Setup](https://docs.connexcs.com/video-guide/#routing-setup) in our Video Guides for a detailed walkthrough and the [Routing Overview](https://docs.connexcs.com/routing/) and [Routing Strategy](https://docs.connexcs.com/routing-strategy/) documentation sections.
+    Create templates for customer routing in [Global Routing](https://docs.connexcs.com/global-routing/). For more information on Routing, see [Routing Setup](https://docs.connexcs.com/video-guide/#routing-setup) in our Video Guides for a detailed walkthrough and the [Routing Overview](https://docs.connexcs.com/routing/) and [Routing Strategy](https://docs.connexcs.com/routing-strategy/) documentation sections.
 
 
 ## Disabled Routes
