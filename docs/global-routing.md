@@ -5,6 +5,7 @@
 To setup **Routing Global** template, first create it then apply it to the customer account(s) using the **Tag** field. 
 
 Create the template:
+
 1. Go to Management > Routing Global
 2. Click the **`+`** to create a new template
 3. Complete the fields 
@@ -15,6 +16,7 @@ Create the template:
 5. Select **`Save`**.
 
 Assign the template:
+
 For each customer that needs the new template:
 1. Navigate to Management > Customer and select the customer
 2. Select **`Edit`** in the upper right corner
