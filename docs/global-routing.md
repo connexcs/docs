@@ -8,7 +8,7 @@ Create the template:
 
 1. Go to Management > Routing Global
 2. Click the **`+`** to create a new template
-3. Complete the fields 
+3. Complete the fields (see "Routing Global fields" below)
 
     ![alt text][routing-global]
 
@@ -16,6 +16,7 @@ Create the template:
 5. Select **`Save`**.
 
 Assign the template:
+
 For each customer that needs the new template:
 
 1. Navigate to Management > Customer and select the customer
@@ -25,6 +26,6 @@ For each customer that needs the new template:
 
 
 !!! info "Routing Global fields"
-    See [Advanced Routing configuration](https://staging--connexcs-docs.netlify.app/customer/routing/#advanced-routing-configuration) for field details.
+    The [Advanced Routing configuration](https://staging--connexcs-docs.netlify.app/customer/routing/#advanced-routing-configuration) article explains these settings in detail. 
 
 [routing-global]: /misc/img/routing-global1.png "Edit Global Routing"
