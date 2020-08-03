@@ -64,9 +64,9 @@ Routing Strategy can also be used to block calls.
 3. Add the number to block then select **Drop** as the Strategy.
 4. Click **`Save`**.
 
-    ![alt text][edit-routing]
+    ![alt text][routing-drop]
 
 [routing-strategy2]: /customer/img/88.png "routing-strategy2"
 [routing-strategy3]: /customer/img/89.png "routing-strategy3"
 [routing-strategy6]: /customer/img/92.png "routing-strategy6"
-[edit-routing]: /customer/img/edit-routing.png "Blocking Calls"
+[routing-drop]: /customer/img/routing-drop.png "Blocking Calls"
