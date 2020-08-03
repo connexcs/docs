@@ -27,4 +27,4 @@ For each customer that needs the new template:
 !!! info "Routing Global fields"
     See [Advanced Routing configuration](https://staging--connexcs-docs.netlify.app/customer/routing/#advanced-routing-configuration) for field details.
 
-[routing-global]: /img/routing-global.png "Edit Global Routing"
+[routing-global]: /misc/img/routing-global1.png "Edit Global Routing"
