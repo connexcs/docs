@@ -1,70 +1,31 @@
 # Circuit Test
 
-Circuit tests help determine the quality a route. It also helps analyze FAS, RTP quality, MOS, release reason, jitter, packet loss percentage, and answer delay measurement.
+A **Circuit Test** can help troubleshoot the quality of a route by analyzing FAS, RTP quality, MOS, release reason, jitter, packet loss percentage, and answer delay measurement. This is done by initiating a call in the switch using a predefined DID. The call routed to a termination provider, out through the PSTN network and terminates back on the DID.  At this point, it checks DTMF, CLI, FAS, and MOS.
 
-A circuit test works by initiating a call in the switch to a termination provider. The call passes though the PSTN network and terminates on one of your DID providers.  It then continues back to the switch and links up with the same dialog.
+## Configure a Circuit Test
 
-To perform circuit test:
+### Setup DID 
+Navigate to **Global** > **DID** the click on the **`+`**.
+2. **Basic** - Enter the Customer and Provider information, and the DID number
+3. **Destination** - Select a destination to circuit test.
+4. **Media** - Select the RTP Proxy & Media proxy (details found in the [Media section of Routing](https://docs.connexcs.com/customer/routing/#media) article), Timeouts, and Max Duration (default value is 3600 seconds).
+6. Click **`Save`**.
 
-1.	Click **Management** > **DID** > **Add DID**.
+### Configure the route
+Navigate to **Setup** > **Settings** > **Options**. Edit the following parameters:
+* **Origination Ingress Address** - Enter the origination ingress IP, and **`Save`**.
+* **Termination Ingress Address** - Enter the termination ingress IP, and **`Save`**.
+* **Circuit Test User** - Select the customer account, and **`Save`**.
 
-![alt text][circuit-test-1]
+![alt text][circuittest]
 
-![alt text][circuit-test-2]
+## Execute or Schedule the Circuit Test
+Navigate to **Management** > **Circuit Test**
 
-2. Enter the DID number and a destination to circuit test.
- 
-3.	Select the provider and provider rate card.
+### Execute the Circuit Test
+Under **Log**, select **`Run`** to execute the test. If the log entry doesn't appear, you can try refreshing the list. 
 
-4. Select the customer and customer rate card.
+### Schedule the Circuit Test
+Under **Schedule**, click the **`+`** to configure a time for the Circuit Test to be run. Note, most fields under Schedule allow for multiple selections. Ex: you can schedule the test for multiple days of the week. 
 
-5.  Select the RTP Proxy & Media proxy, more information can be found from this article.
-
-6. Select the timeouts (optional).
-   
-7. Enter the monthly cost of your DID.
-
-8. Enter the monthly sell cost.
-   
-9.  Enter the max duration.  The default value is 3600 seconds.
-    
-10. Click **`Save`**.
-
-![alt text][circuit-test-3]
-
-![alt text][circuit-test-4]
-
-Now, it's time for us to configure the circuit test:
-
-1. Click **Setup**.
-
-2. Click on **Settings** > **Options**.
-
-![alt text][circuit-test-5]
- 
-3.	Click the **`Edit`** button on **Origination Ingress Address**, enter the origination ingress IP, and click **`Save`**.
-
-4.	Click **`Edit`** for `Termination Ingress Address` button, enter the termination ingress IP, and click **`Save`**.
-
-![alt text][circuit-test-6]  
-
-![alt text][circuit-test-7]
-
-5.	Similarly, for the **Circuit Test User**, click **`Edit`**, and then select the customer account.
-
-![alt text][circuit-test-8]
-
-![alt text][circuit-test-9]
-
- 
-
-
-[circuit-test-1]: /misc/img/209.png "Circuit Test 1"
-[circuit-test-2]: /misc/img/210.png "Circuit Test 2"
-[circuit-test-3]: /misc/img/211.png "Circuit Test 3"
-[circuit-test-4]: /misc/img/212.png "Circuit Test 4"
-[circuit-test-5]: /misc/img/213.png "Circuit Test 5"
-[circuit-test-6]: /misc/img/214.png "Circuit Test 6"
-[circuit-test-7]: /misc/img/215.png "Circuit Test 7"
-[circuit-test-8]: /misc/img/216.png "Circuit Test 8"
-[circuit-test-9]: /misc/img/217.png "Circuit Test 9"
+[circuittest]: /misc/img/circuittest.png "Circuit Test"
