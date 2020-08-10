@@ -1,5 +1,5 @@
 # Files
-Use the **File** section to upload and store a variety of files, including (but not limited to) audio files for PBX, rate cards, or a logo for your portal. These files are found under **`Management`** > **`File`**.
+The **File** section can store a variety of files, including (but not limited to) audio files for PBX, rate cards, or a logo for your portal. These files are found under **`Management`** > **`File`**.
 
 ## Add new file(s)
 
@@ -10,8 +10,8 @@ Use the **File** section to upload and store a variety of files, including (but 
 !!! error "Upload Errors"
     If an error occurs, check your browser settings and operating system for things like firewalls or pop-up blockers which may prevent uploads of a certain type.
 
-## File type specific functions
-* **Text to Speech** - Under Audio files, select the ![alt text][texttospeech] button. Here you may then enter the text, select the voice, and define the file name. Preview the audio by selecting **`Play Voice`**.
+## Specific file type functions
+* **Text to Speech** - Under Audio files, select the ![alt text][texttospeech] button. Enter the text, select the voice, and define the file name. Preview the audio by selecting **`Play Voice`** button. When the audio is ready, click **`Save`**.
 * **Download** - You can download a file you've selected with the **`Download`** button. 
 
 
