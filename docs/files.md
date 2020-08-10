@@ -1,43 +1,23 @@
-# Uploading Files
+# Files
+Use the **File** section to upload and store a variety of files, including (but not limited to) audio files for PBX, rate cards, or a logo for your portal. These files are found under **`Management`** > **`File`**.
 
-This tutorial explains how to upload files to your connex account. 
+## Add new file(s)
 
-1. Login to your Connex account. From the side menu, extend **`Management`**, and select **`File`**.
+1. Click the **`Bulk Upload`** button at the top of the page. 
+1. Navigate to the desired directory and select one or more files and click **`Open`**.
+1. The file should appear as the next item on the list if the upload is successful. 
 
-![alt text][files-1] 
+!!! error "Upload Errors"
+    If an error occurs, check your browser settings and operating system for things like firewalls or pop-up blockers which may prevent uploads of a certain type.
 
-1. A new page will open showing files you've previously uploaded, if any. Find and click the **`Upload`** button at the top of the page. 
+## File type specific functions
+* **Text to Speech** - Under Audio files, select the ![alt text][texttospeech] button. Here you may then enter the text, select the voice, and define the file name. Preview the audio by selecting **`Play Voice`**.
+* **Download** - You can download a file you've selected with the **`Download`** button. 
 
-![alt text][files-2]
- 
-1. Select the file from the dialogue window that opens to your computer, and click **`Upload`**.
-
-The file should appear as the next item on the list if the upload is successful. If errors occur, check the settings fo your browser or operating system to see if any defenses are preventing uploads of a certain type.
-
-## Refresh the list
-
-Update the list items shown in the  by clicking on **`Refresh`** which is right next to **`Upload`** button.
 
 ## Remove files
+Select a file from the list then click the trashcan button.
 
-After you've selected a file from the list, remove it by clicking the **`Remove`** button.
 
-## Cancel upload
+[texttospeech]: /misc/img/texttospeech.png "Text to Speech"
 
-To cancel a file upload in the queue, click the **`Cancel`** button next to the **`Upload`** button.
-
-## Bulk uploading
-
-Bulk uploading lets yoy aselect multiple files and upload them simultaneously by clicking the **`Upload All`** button.
-Similarly, you can click on **`Cancel all`** and **`Remove all`** to perform their corresponding actions.
-
-## Download the uploaded file
-
-You can download a file you've selected with the **`Download`** button. The ensuing action should be to open your browser's save-as dialogue. 
-
-![alt text][files-4]
-
-[files-1]: /misc/img/219.png "Files 1"
-[files-2]: /misc/img/220.png "Files 2"
-[files-3]: /misc/img/files-3.png "Files 3"
-[files-4]: /misc/img/221.png "Files 4"
