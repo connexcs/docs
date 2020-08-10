@@ -4,8 +4,8 @@ Use the **File** section to upload and store a variety of files, including (but 
 ## Add new file(s)
 
 1. Click the **`Bulk Upload`** button at the top of the page. 
-1. Navigate to the desired directory and select one or more files and click **`Open`**.
-1. The file should appear as the next item on the list if the upload is successful. 
+1. Navigate to the desired directory, select one or more files, then click **`Open`**.
+1. The file should appear as the next item on the list if the upload is successful. (You made need to refresh the list.)
 
 !!! error "Upload Errors"
     If an error occurs, check your browser settings and operating system for things like firewalls or pop-up blockers which may prevent uploads of a certain type.
