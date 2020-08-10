@@ -1,10 +1,11 @@
 # Circuit Test
 
-A **Circuit Test** can help troubleshoot the quality of a route by analyzing FAS, RTP quality, MOS, release reason, jitter, packet loss percentage, and answer delay measurement. This is done by initiating a call in the switch using a predefined DID. The call routed to a termination provider, out through the PSTN network and terminates back on the DID.  At this point, it checks DTMF, CLI, FAS, and MOS.
+A **Circuit Test** can aid troubleshooting by providing  details such as FAS, RTP quality, MOS, release reason, jitter, packet loss percentage, and answer delay measurement. This is done by initiating a call in the switch using a predefined DID. The call routes to a termination provider, out through the PSTN network and then back to the DID.  At this point, it checks DTMF, CLI, FAS, and MOS.
 
 ## Configure a Circuit Test
 
 ### Setup DID 
+
 Navigate to **Global** > **DID** the click on the **`+`**.
 2. **Basic** - Enter the Customer and Provider information, and the DID number
 3. **Destination** - Select a destination to circuit test.
@@ -13,13 +14,14 @@ Navigate to **Global** > **DID** the click on the **`+`**.
 
 ### Configure the route
 Navigate to **Setup** > **Settings** > **Options**. Edit the following parameters:
+
 * **Origination Ingress Address** - Enter the origination ingress IP, and **`Save`**.
 * **Termination Ingress Address** - Enter the termination ingress IP, and **`Save`**.
 * **Circuit Test User** - Select the customer account, and **`Save`**.
 
 ![alt text][circuittest]
 
-## Execute or Schedule the Circuit Test
+## Run the Circuit Test
 Navigate to **Management** > **Circuit Test**
 
 ### Execute the Circuit Test
