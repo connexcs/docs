@@ -40,8 +40,6 @@ This feature emails the Breakout Report at designated intervals. To schedule a b
 4. Click **`Save`**.
 
 
-![alt text][schedulereport]
-
 The **Scheduled Report** screen will update to show the new report. 
 
-[schedulereport]: /reports/img/schedulereport.png "Schedule Reports"
+[schedulereport]: /reports/img/schedulereport1.png "Schedule Reports"
