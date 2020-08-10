@@ -1,10 +1,9 @@
 # Templates
 
-Create customized **Templates** which customise content displayed on outbound emails/SMS, the Customer Portal, and WebPhone. ConnexCS Templates use a mustash-compatible template language [Handlebars](https://handlebarsjs.com/guide/)
+Create your own **Templates** to customise the content displayed on outbound emails/SMS, the Customer Portal, and WebPhone. ConnexCS Templates use a mustash-compatible template language [Handlebars](https://handlebarsjs.com/guide/). Templates are managed under **Setup** > **Config** > **Templates**. 
 
 ## Settings 
-
-Templates are managed under **Setup** > **Config** > **Templates**. Create a new Template by selecting the blue **`+`** or edit an existing Template by clicking on the template name. 
+Create a new Template by selecting the blue **`+`** or edit an existing Template by clicking on the template name. 
 
 In the Subject, SMS, Text and HTML fields:
 
@@ -19,8 +18,10 @@ In the Subject, SMS, Text and HTML fields:
  
 ![alt text][addtemp]
 
-## ScriptForge Integration  
+## Delete Templates
+To delete a **Template**, select one or more boxes for the Templates you would like to delete, then click the **`Reset`** button. 
 
+## ScriptForge Integration  
 Dynamic Templates are made by including ScriptForge. This is done by using the `scriptforge` tag. Ex: To include a ScriptForge script with ID 1234, use `{{scriptforge 1234}}`. 
 
 This will pass ALL of the variables in the current scope to ScriptForge. Whatever ScriptForge returns will then be made available back in the main scope for use with the template system.
