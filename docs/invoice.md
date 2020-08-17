@@ -21,9 +21,11 @@ To add a new invoice:
 
 ## View and Edit Invoices
 **View**
+
 You can download PDF version of on Invoice by clicking on ![alt text][invoice-pdf]. 
 
 **Edit**
+
 Click ![alt text][invoice-edit] to modify the date, then **`Edit Invoice Item`** to modify additional parameters. 
 
 
