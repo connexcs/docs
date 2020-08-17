@@ -47,22 +47,15 @@ To simulate calls:
 6. Select the routing engine zone
 7. Click **`Simulate`**
 
-The simulation call result will appear in logging. The call id will start with a SIM name. Click the call id to view the call's routing status.
+The simulation call result will appear in logging. The Call ID will be prepended with a **`SIM`** tag. Click the Call ID to view the call's routing status.
 
 !!! info "Testing a fixed issue"
     After you have fixed a routing issue with a specific call, you can go into the Call ID and run the Simulate tool to make sure any routing issues are resolved and now pass. 
 
 ## Searching the Logs
 
-You can search for calls by phone number, call ID, or IP address, but entering one of these attributes into the text box at the top-right of the Logging page and clicking the **`Search `** button.
+You can search for calls by phone number, Call ID, or IP address, by entering one of these attributes into the text box at the top-right of the Logging page and clicking the **`Search `** button.
 
 [logging-reg]: /misc/img/logging-reg.png "Register Logging"
 [logging-sip]: /misc/img/logging-sip.png "SIP Traces"
-
-[logging-3]: /misc/img/235.png "logging-3"
 [logging-4]: /misc/img/236.png "logging-4"
-[logging-6]: /misc/img/238.png "logging-6"
-
-
-[logging-1]: /misc/img/233.png "logging-1"
-[logging-2]: /misc/img/234.png "logging-2"
