@@ -4,10 +4,8 @@
 !!! note "Customer and Carrier Alerts"
     Alerts may also be configured within specific Customers or Carriers. All configured Alerts will display under this Global view.
 
-To add a customized alert, click the **`+`** sign.  The individual alert management screen will open, as it is below:
-
-
-## Fields  
+## Create an Alert
+To add a customized alert, click the **`+`** sign. Field details:
 
 * **Company**: Select the Customer or Carrier the Alert will track.
 * **Title**: Must be unique as it is the alert's placeholder in the database.
@@ -26,6 +24,6 @@ Click **`Save`**, and a new alert will be created.
 
 
 !!! info "Benefits of Alerts"
-    **Alerts** are a useful way to track transaction information, especially when your customer lists start to get full.  For example, the same mechanic used to send alerts when a consumer's balance gets below a certain threshold can be used to send alerts when a specified usage parameter gets too high.  In a business pipeline, the recipient e-mail addresses are assigned to relevant department heads, so a process that would have required manual attention is automated. Since the threshold can be used to represent most numeric traits related to VoIP, it can form the foundation for efficient service operations.
+    **Alerts** are a useful way to track transaction information, especially when your customer lists start to get full.  For example, the mechanism used to send Alerts when a customer's balance gets below a certain threshold can also be used to send Alerts when a specified usage parameter gets too high.  In a business pipeline, the recipient e-mail addresses are assigned to relevant department heads, so a process that would have required manual attention is automated. Since the threshold can be used to represent most numeric traits related to VoIP, it can form the foundation for efficient service operations.
 
 [alert-global]: /img/alert-global.png "Global Alerts"
