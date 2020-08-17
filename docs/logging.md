@@ -13,10 +13,10 @@ Click on a specific Call ID to view details and run call tools.
 * **Simulate**: See details below under **Simulating Calls**. 
 * **Refresh**: For Live calls, use the **`Refresh`** button to reload the logs to show the most recent changes. This is necessary as some of the data must be processed through CDR before it will be displayed.
 
-## SIP traces
+## SIP Traces
 **SIP Tracing** is a tool used for phone systems that use the SIP (Session Initiation Protocol) for interactions like trunks and endpoints. Traces give detailed information about calls and call attempts which helps to identify any problem areas for debugging and troubleshooting.
 
-To view the SIP trace of a call:
+To view the SIP Trace of a call:
 
 1. Click a **Call ID** to view its SIP traces.
 3. Click the **`SIP traces`** button to view the SIP trace.
@@ -29,7 +29,7 @@ To view the SIP trace of a call:
 !!! note "Known issues with SIP Traces"
     * Missing SIP data: SIP traces are not always guaranteed. SIP packets are carried by UDP, which may cause the traces to be lossy at times. This is to be expected due to the nature of the architecture.
     * Missed call attempts: If using SIP authentication, because there are 2 requests it is possible that they hit our database out of order. This may cause the logging page to only display the first call attempt.
-    * Neither of the above two problems affect calls and are typically observed in less than 1 in every 50,000 calls
+    * These are considered reporting calls, and do not impact the calls directly. They are both rare, typically observed in less than 1 in every 50,000 calls
 
 ## Simulating Calls
 Simulating calls allows providers to identify areas of concern, or just to verify functionality, by testing in different setups and operational configurations. 
