@@ -69,6 +69,8 @@ pages:
         - Routing Global: global-routing.md
         - USA Routing: routing-usa.md
 
+    - SIP Devices:
+        - SIP Devices: sip-devices.md
         
     - DID:
         - DID/Origination: did.md
