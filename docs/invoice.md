@@ -27,8 +27,8 @@ You can download PDF version of on Invoice by clicking on ![alt text][invoice-pd
 Click ![alt text][invoice-edit] to modify the date, then **`Edit Invoice Item`** to modify additional parameters. 
 
 
-!!! note "Invoice Line grouping"
-    Invoice line grouping lets you group the invoice based on the destination or day.  It can be set inside the Settings menu under **My Account**.
+!!! note "Invoice Line Grouping"
+    Invoice Line Grouping allows you to group the invoice based on the destination or day.  This is setup under **My Account** > **Settings**.
 
 [invoice-6]: /misc/img/227.png "Invoice-6"
 [invoice-8]: /misc/img/229.png "Invoice-8"
