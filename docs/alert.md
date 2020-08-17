@@ -1,27 +1,31 @@
-# Table of Contents
-
-- [Table of Contents](#table-of-contents)
-- [Alerts](#alerts)
-    
 # Alerts
-![alt text][carrier-alert-1]
-The **Alerts** tab allows you to generate specific alerts to customers when certain events are triggered. It provides a list view of all alerts affecting a system, which can be selected to view management screens for their respective entries.
+**Alerts** provides a Global view of all **Alerts**. You can create alerts to track specific Customers or Carriers when certain events are triggered. 
+
+!!! note "Customer and Carrier Alerts"
+    Alerts may also be configured within specific Customers or Carriers. All configured Alerts will display under this Global view.
 
 To add a customized alert, click the **`+`** sign.  The individual alert management screen will open, as it is below:
 
-![alt text][carrier-alert-2]
 
-**Fields**   
-The following is an explanation of the fields shown in the alert managment window shown above:
-* **Title** is a unique name for the alert. It is the only required field, since it is the alert's placeholder in the database without having to fill out all parameters on the spot.
-* **Area** reflects the area of business being monitored, which would be set up naturally when you sign on.  For example, a low balance alert for a given group of customers would fall under the "Balance" area.
-* **Operator** represents the active function operator--e.g. "is equal to" shown by `= `--that is used to test the threshold.  Primarily, the operator tests whether a numeric value pased from a given function is greater than, less than, or equal to a value.  Attached business values will determine how much weight is placed on each alert.
-* **Threshold** represents the triggering value in the alert sequence.  How your system responds to the value depends on which operator is used on it, but the alert itself will trigger as long as the governing conditions are true.
-* **Reset Thresshold** as a numeric value that works with the threshold to prevent alerts from continually firing unintentionally, which is necessary for values that fluctuate. The purpose is two-fold: to allow the threshold function to have a type of range instead of a concrete number; and to provide the alert system with automation for when a system returns to normal on its own.
+## Fields  
+
+* **Company**: Select the Customer or Carrier the Alert will track.
+* **Title**: Must be unique as it is the alert's placeholder in the database.
+* **Email/Phone**: Where the alert will be sent when triggered.
+* **Area**: The aspect of business being monitored. Ex: a low balance alert for a given group of customers would fall under the "Balance" area.
+* **Operator**: The operator tests whether a numeric value is greater than, less than, or equal to the value defined in Threshold below. Attached business values will determine how much weight is placed on each alert. Ex: "=" means "is equal to".
+* **Threshold**: This is the triggering value in the alert sequence.  How your system responds to the value depends on which operator is used on it, but the alert itself will trigger as long as the governing conditions are true.
+* **Reset Threshold**: A numeric value that works with the threshold to prevent alerts from continually firing unintentionally, which is necessary for values that fluctuate. The purpose is two-fold: to allow the threshold function to have a type of range instead of a concrete number; and to provide the alert system with automation for when a system returns to normal on its own.
+* **Penalty**: The alert will Disable the Customer or Carrier for the selected duration of time. 
+* **Template**: This will populate the Alert which is sent. (See [Templates](https://docs.connexcs.com/setup/config/templates/) under **Setup** > **Config** for details.)
+* **Repeat**: How often the Alert will be resent. 
 
 Click **`Save`**, and a new alert will be created.
 
-**Alerts** are a useful way to keep track of transaction information, especially when your customer lists start to get full.  For example, the same mechanic used to send alerts when a consumer's balance gets below a certain threshold can be used to send alerts when a specified usage parameter gets too high.  In a business pipeline, the recipient e-mail addresses are assigned to relevant department heads, so a process that would have equired manual attention is automated. Since the threshold can be used to represent most numeric traits related to VoIP, it can form the foundation for efficient service operations.
+![alt text][alert-global]
 
-[carrier-alert-1]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-alert-1.png "Carrier Alert-1"
-[carrier-alert-2]: https://raw.githubusercontent.com/digipigeon/connexcs-user-docs/master/img/carrier-alert-2.png "Carrier Alert-2"
+
+!!! info "Benefits of Alerts"
+    **Alerts** are a useful way to track transaction information, especially when your customer lists start to get full.  For example, the same mechanic used to send alerts when a consumer's balance gets below a certain threshold can be used to send alerts when a specified usage parameter gets too high.  In a business pipeline, the recipient e-mail addresses are assigned to relevant department heads, so a process that would have required manual attention is automated. Since the threshold can be used to represent most numeric traits related to VoIP, it can form the foundation for efficient service operations.
+
+[alert-global]: /img/alert-global.png "Global Alerts"
