@@ -55,8 +55,7 @@ pages:
         - Credit Control: customer/credit-control.md
 
 
-    - Carrier: 
-        - Carrier: carrier.md
+    - Carrier: carrier.md
         
     - Rate Cards:
         - Building Cards: rate-card-building.md
@@ -69,11 +68,9 @@ pages:
         - Routing Global: global-routing.md
         - USA Routing: routing-usa.md
 
-    - SIP Devices:
-        - SIP Devices: sip-devices.md
+    - SIP Devices: sip-devices.md
         
-    - DID:
-        - DID/Origination: did.md
+    - DID (Origination): did.md
         
     - Miscellaneous:
         - Authentication: authentication.md
@@ -150,11 +147,9 @@ pages:
         - Media Handling: media-handling.md
         - Scaling and Load Balancing: scaling-load-balancing.md
 
-  - AnyEdge:
-    - AnyEdge: anyedge/anyedge.md
+  - AnyEdge: anyedge/anyedge.md
 
-  - 3CX:
-    - Guides: 3cx/3cx.md
+  - 3CX: 3cx/3cx.md
 
   - Customer Portal:
     - Guides: customer-portal/customer-portal.md
