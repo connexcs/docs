@@ -1,59 +1,61 @@
 # Logging
+**Logging** is used to check real-time call attempts, SIP traces, routing status, and to simulate a call. As soon as a call hits the ConnexCS system, it will display in the Logging area. This can be accessed via **Management** > **Logging**.
 
-**Logging** is used to check real-time call attempts, SIP traces, routing status, and to simulate a call.
+## Register Logging
+To view calls that are having issues registering, click **`Register Logging`**, then click on a specific Call ID to view Call Details and SIP Trace.
 
-## SIP traces
-To view the SIP traces of a call, follow the steps below.
+## Call ID Details
+Click on a specific Call ID to view details and run call tools.
 
-1. Click **Management** > **Logging**.
+* **Call Details**: The initial screen shows current details which include Routing Status, Authentication, Induced PDD, RTP, Routing Engine ID, DTMF, as well as several other pieces of information. There are also graphs that show stats such as Jitter and Packet Loss for the call.
+* **Raw Data**: Underlying data that populates for the call. 
+* **SIP Trace**: Visual representation of SIP communications, see details below under **SIP Traces**. 
+* **Simulate**: See details below under **Simulating Calls**. 
+* **Refresh**: For Live calls, use the **`Refresh`** button to reload the logs to show the most recent changes. This is necessary as some of the data must be processed through CDR before it will be displayed.
 
-![alt text][logging-1]
+## SIP Traces
+**SIP Tracing** is a tool used for phone systems that use the SIP (Session Initiation Protocol) for interactions like trunks and endpoints. Traces give detailed information about calls and call attempts which helps to identify any problem areas for debugging and troubleshooting.
 
-2. Click a call ID to view its SIP traces.
+To view the SIP Trace of a call:
 
-![alt text][logging-2]
+1. Click a **Call ID** to view its SIP traces.
+3. Click the **`SIP traces`** button to view the SIP trace.
 
-3. Click the **`SIP traces`** button to view the SIP trace image.
+      ![alt text][logging-sip]
 
-**Please note the SIP traces are not always guaranteed.**
+4. Toggle between Relative Time and Absolute Time for specific time of day
+5. Options to download as Text or an Image
+
+!!! note "Known issues with SIP Traces"
+    * Missing SIP data: SIP traces are not always guaranteed. SIP packets are carried by UDP, which may cause the traces to be lossy at times. This is to be expected due to the nature of the architecture.
+    * Missed call attempts: If using SIP authentication, because there are 2 requests it is possible that they hit our database out of order. This may cause the logging page to only display the first call attempt.
+    * These are considered reporting calls, and do not impact the calls directly. They are both rare, typically observed in less than 1 in every 50,000 calls
 
 ## Simulating Calls
-Simulating calls lets providers test different setups and operations to identify areas of concern, or just to verify functionality.  To simulate calls:
+Simulating calls allows providers to identify areas of concern, or just to verify functionality, by testing in different setups and operational configurations. 
 
-![alt text][logging-3]
+To simulate calls:
 
-1. Click **Management**>**Logging**>**Simulate**. A form will appear:
+1. Click **`Simulate`** either from the **Logging** screen or from within a specific **Call ID**. A form will appear:
 
-![alt text][logging-4]
+    ![alt text][logging-4]
 
 2. Enter the dialed number and CLI/ANI number
-3. Select a switch IP from the drop down menu.
+3. Select a switch IP from the available options.
 4. Enter the IP address.
 5. Optionally, add the SIP extension user
 6. Select the routing engine zone
-7.  Click **`Simulate`**
+7. Click **`Simulate`**
 
-The simulation call result will appear in logging. The call id will start with a SIM name. Click the call id to view the call's routing status.
+The simulation call result will appear in logging. The Call ID will be prepended with a **`SIM`** tag. Click the Call ID to view the call's routing status.
 
-## Refreshing the Logs
-
-The **`Refresh`** button will reload the logs to show the most recent changes.  Uses this buttone to be sure you're always looking at the most current information.
+!!! info "Testing a fixed issue"
+    After you have fixed a routing issue with a specific call, you can go into the Call ID and run the Simulate tool to make sure any routing issues are resolved and now pass. 
 
 ## Searching the Logs
 
-You can search for calls by phone number, call ID, or IP address, but entering one of these attributes into the text box at the top-right of the Logging page and clicking the **`Search `** button.
+You can search for calls by phone number, Call ID, or IP address, by entering one of these attributes into the text box at the top-right of the Logging page and clicking the **`Search `** button.
 
-![alt text][logging-6]
-
-### Known Problems
-- SIP Traces can be lossy, this is due to the nature of the architecture.
-- If using SIP authentication, because there are 2 requests it is possible that they hit our database out of order. So the logging page may only display the first call attempt.
-
-Neither of the above two problem affect calls and are typically observed in less than 1 in every 50,000 calls.
-
-
-[logging-1]: /misc/img/233.png "logging-1"
-[logging-2]: /misc/img/234.png "logging-2"
-[logging-3]: /misc/img/235.png "logging-3"
+[logging-reg]: /misc/img/logging-reg.png "Register Logging"
+[logging-sip]: /misc/img/logging-sip.png "SIP Traces"
 [logging-4]: /misc/img/236.png "logging-4"
-[logging-6]: /misc/img/238.png "logging-6"
