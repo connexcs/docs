@@ -117,6 +117,8 @@ MITM (Man-in-the-Middle) attacks actively intercept traffic between endpoints, w
 !!! note "TLS 1.3 Support"
     ConnexCS Currently does not support TLS 1.3. This functionality is scheduled to be completed by Q3 2020.
     
+!!! tip "Debugging SIP Messages"
+    If you need to debug the webphone and see the SIP messages, you can enter `*#0*#` into the dialpad, this will switch on debugging mode in the browser console.
     
     
 [webphone]: /misc/img/webphone.png "WebPhone Menu"

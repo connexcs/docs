@@ -152,9 +152,7 @@ View carrier-related statistics by clicking **Stats** tab.
 ### Alerts
 Use the **Alerts** tab to manage alerts that are tied to Balance or Consecutive Failures. These alerts can be sent to an email or phone number. See the [Alerts] page for details on how to manage them.
 
-![alt text][carrier-alert-1]
-
-![alt text][carrier-alert-2]
+![alt text][alerts-carrier]
 
 ### DID
 The **DID** tab displays a list of DIDs.  New entries are added with the **`+`** on the left. After adding details, click **`Save`**.
@@ -184,7 +182,6 @@ The **CDR** tab displays call drop rates. Recalculate CDRs for a specific month 
 [carrier-payment]: /carrier/img/110.png "Carrier Payment"
 [carrier-cdr]: /carrier/img/111.png "Carrier CDR"
 [carrier-did]: /carrier/img/112.png "Carrier DID"
-[carrier-alert-1]: /carrier/img/113.png "Carrier Alert-1"
-[carrier-alert-2]: /carrier/img/114.png "Carrier Alert-2"
+[alerts-carrier]: /carrier/img/alerts-carrier.png "Carrier Alert"
 
 [Alerts]: <https://docs.connexcs.com/alert/> "Alerts"
