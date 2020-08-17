@@ -45,9 +45,12 @@ To simulate calls:
 4. Enter the IP address.
 5. Optionally, add the SIP extension user
 6. Select the routing engine zone
-7.  Click **`Simulate`**
+7. Click **`Simulate`**
 
 The simulation call result will appear in logging. The call id will start with a SIM name. Click the call id to view the call's routing status.
+
+!!! info "Testing a fixed issue"
+    After you have fixed a routing issue with a specific call, you can go into the Call ID and run the Simulate tool to make sure any routing issues are resolved and now pass. 
 
 ## Searching the Logs
 
