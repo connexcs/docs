@@ -2,7 +2,7 @@
 **Logging** is used to check real-time call attempts, SIP traces, routing status, and to simulate a call. As soon as a call hits the ConnexCS system, it will display in the Logging area. This can be accessed via **Management** > **Logging**.
 
 ## Register Logging
-To view calls that are having issues registering, click ![alt text][logging-reg], then click on a specific Call ID to view Call Details and SIP Trace.
+To view calls that are having issues registering, click **`Register Logging`**, then click on a specific Call ID to view Call Details and SIP Trace.
 
 ## Call ID Details
 Click on a specific Call ID to view details and run call tools.
@@ -19,7 +19,7 @@ Click on a specific Call ID to view details and run call tools.
 To view the SIP trace of a call:
 
 1. Click a **Call ID** to view its SIP traces.
-3. Click the **`SIP traces`** button to view the SIP trace image.
+3. Click the **`SIP traces`** button to view the SIP trace.
 
       ![alt text][logging-sip]
 
@@ -36,7 +36,7 @@ Simulating calls allows providers to identify areas of concern, or just to verif
 
 To simulate calls:
 
-1. Click ![alt text][logging-simulate] either from the **Logging** screen or from within a specific **Call ID**. A form will appear:
+1. Click **`Simulate`** either from the **Logging** screen or from within a specific **Call ID**. A form will appear:
 
     ![alt text][logging-4]
 
