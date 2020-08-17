@@ -26,4 +26,4 @@ Click **`Save`**, and a new alert will be created.
 !!! info "Benefits of Alerts"
     **Alerts** are a useful way to track transaction information, especially when your customer lists start to get full.  For example, the mechanism used to send Alerts when a customer's balance gets below a certain threshold can also be used to send Alerts when a specified usage parameter gets too high.  In a business pipeline, the recipient e-mail addresses are assigned to relevant department heads, so a process that would have required manual attention is automated. Since the threshold can be used to represent most numeric traits related to VoIP, it can form the foundation for efficient service operations.
 
-[alert-global]: /img/alert-global.png "Global Alerts"
+[alert-global]: misc/img/alert-global.png "Global Alerts"
