@@ -24,7 +24,7 @@ To add a new invoice:
 You can download PDF version of on Invoice by clicking on ![alt text][invoice-pdf]. 
 
 **Edit**
-Click ![alt text][invoice-pdf] to modify the date, then **`Edit Invoice Item`** to modify additional parameters. 
+Click ![alt text][invoice-edit] to modify the date, then **`Edit Invoice Item`** to modify additional parameters. 
 
 
 !!! note "Invoice Line grouping"
@@ -32,3 +32,6 @@ Click ![alt text][invoice-pdf] to modify the date, then **`Edit Invoice Item`** 
 
 [invoice-6]: /misc/img/227.png "Invoice-6"
 [invoice-8]: /misc/img/229.png "Invoice-8"
+
+[invoice-pdf]: /misc/img/invoice-pdf.png "Invoice PDF"
+[invoice-edit]: /misc/img/invoice-edit.png "Edit Invoice"
