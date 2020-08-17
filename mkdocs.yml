@@ -74,7 +74,7 @@ pages:
         
     - Miscellaneous:
         - Authentication: authentication.md
-        - Alerts: alerts.md
+        - Alerts: alert.md
         - Connex Billing: billing.md
         - Calling Card: calling-card.md
         - Circuit Test: circuit-test.md
