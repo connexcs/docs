@@ -37,14 +37,14 @@ The **Parameter Rewrite** tab is used to create automatic replacements for desti
 
 **Basic** configuration: 
 
-+ **Username** and **Password**: Must match configuraiton on the customer UAC.
++ **Username** and **Password**: Must match configuraiton on the customer UAC. The password can be reset by clicking on the **`Password`** button on the **Customer** > **Auth** page. 
 + **NAT/SIP Ping**: refers to pings sent from ConnexCS back to the through customer firewall to their UAC. If enabled, they may keep a connection up for longer calls (typically either 1800 or 3600 seconds).
    + **Disabled**: no pings are sent
    + **Enabled**: UDP ping
    + **Enabled (Timeout)**: SIP ping (drops connection if ping can't be returned)
 
 !!! tip
-    After NAT or SIP pings are enabled and the user is saved, an additional tab at the top will be available which measures latency.         This can be helpful for troubleshooting audio problems. 
+    After NAT or SIP pings are enabled, the Latency tab will be available at the top of the SIP user screen. This can be helpful for troubleshooting audio problems. 
 
 The **Parameter Rewrite** tab field descriptions are the same as for **IP Authentication** above.
 
@@ -52,10 +52,10 @@ The **Parameter Rewrite** tab field descriptions are the same as for **IP Authen
 
 If Voice Mail is enabled, you can set which email address receives messages, as well as reset the Voicemail Password. You also can to view and delete current messages. 
 
-![alt text][sip-auth]
+![alt text][voicemail]
 
 
 [ipauth-basic]: /customer/img/ipauth-basic.png "Edit Switch Basic"
 [ipauth-adv]: /customer/img/ipauth-adv.png "Edit Switch Advance"
 [ipauth-param]: /customer/img/ipauth-param.png "Edit Switch Parameters"
-[sip-auth]: /customer/img/sip-auth.png "SIP Auth"
+[voicemail]: /customer/img/voicemail.png "Voicemail"
