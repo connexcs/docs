@@ -150,8 +150,6 @@ pages:
 
   - AnyEdge: anyedge/anyedge.md
 
-  #- 3CX: 3cx/3cx.md
-
   - Customer Portal:
     - Guides: customer-portal/customer-portal.md
     - Dashboard: customer-portal/dashboard.md
