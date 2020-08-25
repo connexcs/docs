@@ -28,7 +28,13 @@ If you want to use audio files for the group, they will need to be uploaded to t
 3. Select the `Customer` from the drop-down list.
 4. Select the `Extension` that callers will use to connect to this group from the drop-down list.
 5. Select the `Group Type` from drop-down list, (see **Group call routing strategies** above).
-6. If you select `Queue`, specify the following:
+6. For **Parallel** and **Sequential** groups, you will have a Group Members tab: 
+
+    * Click the **`+`** to add a new member
+    * Set the `Ring Timeout`
+    * Click Edit to enter an External number of Internal User, Conference, or Group
+    
+6. If you select **Queue**, you will have the following additional fields:
     
     * `On Hold Music` - the audio file to play to the member and caller when the call is placed on hold.
     * `Join Message` - the audio file that contains the Welcome Message played to the caller after they dial the group extension.
