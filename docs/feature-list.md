@@ -433,13 +433,6 @@ The following is a comprehensive list of features included in the latest stable 
 
 * Global Prefix Sets (Dialstrings / Strategy)
 
-## 3CX as a Service
-
-* Full UC Support with 3CX
-* 2 Click Deployments
-* Fully Managed
-* Auto Import DID & Carrier Settings
-
 ## AnyEdge
 
 **Global AnyCast SIP**, highly scalable, lowest latency worldwide, eliminated SPOF on the edge.
