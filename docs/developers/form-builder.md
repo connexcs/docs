@@ -13,4 +13,4 @@
 
 8. Fill in the form and click **`Save`**.
 
-[edit-formbuilder]: docs/developers/img/edit-formbuilder.png "New Form"
+[edit-formbuilder]: /img/edit-formbuilder.png "New Form"
