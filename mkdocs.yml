@@ -98,11 +98,9 @@ pages:
         - Viewing Audit Logs: viewing-audit-logs.md
 
     - Class 5:
-        - Apps    
         - Conference Calling: creating-conference.md
         - IVRs: creating-ivr.md
         - Groups: creating-group.md
-        - Voicemail
        
     - Developers:
         - Analytics: developers/analytics.md
