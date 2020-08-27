@@ -1,4 +1,4 @@
-# Creating a Conference Call
+# Conference Calls
 Use this feature when you want to allow multiple callers to communicate with each other over a voice call. The Callers join the call and are presided over by a Moderator. This is configured under **Class5** > **Conference**. 
 
 
