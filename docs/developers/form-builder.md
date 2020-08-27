@@ -13,4 +13,4 @@
 
 8. Fill in the form and click **`Save`**.
 
-[edit-formbuilder]: /img/edit-formbuilder.png "New Form"
+[edit-formbuilder]: https://github.com/digipigeon/connexcs-user-docs/tree/master/docs/developers/img "New Form"
