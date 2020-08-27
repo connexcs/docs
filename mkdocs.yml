@@ -98,15 +98,18 @@ pages:
         - Viewing Audit Logs: viewing-audit-logs.md
 
     - Class 5:
-        - Creating an IVR Setup: creating-ivr.md
-        - Creating a Conference Call: creating-conference.md
-        - Creating a Group: creating-group.md
+        - Apps    
+        - Conference Calling: creating-conference.md
+        - IVRs: creating-ivr.md
+        - Groups: creating-group.md
+        - Voicemail
        
     - Developers:
+        - Analytics: developers/analytics.md
+        - Database (users): developers/user-space-database.md 
+        - Form Builder: developers/form-builder.md
         - ScriptForge Basics: developers/scriptforge.md
         - ScriptForge API: developers/scriptforge-api.md        
-        - User Space Database: developers/user-space-database.md 
-        - Form Builder: developers/form-builder.md
 
     - Setup:
         - AnyEdge: anyedge/anyedge.md
