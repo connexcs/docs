@@ -37,25 +37,27 @@ The **Parameter Rewrite** tab is used to create automatic replacements for desti
 
 **Basic** configuration: 
 
-+ **Username** and **Password**: Must match configuraiton on the customer UAC.
++ **Username** and **Password**: Must match configuration on the customer UAC. The password can be reset by clicking on the **`Password`** button on the **Customer** > **Auth** page. 
 + **NAT/SIP Ping**: refers to pings sent from ConnexCS back to the through customer firewall to their UAC. If enabled, they may keep a connection up for longer calls (typically either 1800 or 3600 seconds).
    + **Disabled**: no pings are sent
    + **Enabled**: UDP ping
    + **Enabled (Timeout)**: SIP ping (drops connection if ping can't be returned)
 
-!!! tip
-    After NAT or SIP pings are enabled and the user is saved, an additional tab at the top will be available which measures latency.         This can be helpful for troubleshooting audio problems. 
+!!! warning "SIP Password security"
+    SIP passwords are a requirement of the SIP protocol, but can present security risks for a provider. They must be configured in ConnexCS when SIP authentication is setup, but are not available for providers or customers to retrieve afterwards. Providers should generate a unique SIP password for each SIP user and send that to the customer. This gives the customer the responsibility of keeping track of the password and keeping it safe. Additionally, the unique password will allow for traceability if the customer's system is ever compromised. 
 
 The **Parameter Rewrite** tab field descriptions are the same as for **IP Authentication** above.
 
 **Voice Mail** tab
 
-If Voice Mail is enabled, you can set which email address receives messages, as well as reset the Voicemail Password. You also can to view and delete current messages. 
+If Voice Mail is enabled, you can set which email address receives messages, reset the Voicemail Password, and view and delete current messages. 
 
-![alt text][sip-auth]
+![alt text][voicemail]
 
+!!! tip
+    Once NAT or SIP pings are enabled, the Latency tab will be available at the top of the SIP user screen. This can be helpful for troubleshooting audio problems. 
 
 [ipauth-basic]: /customer/img/ipauth-basic.png "Edit Switch Basic"
 [ipauth-adv]: /customer/img/ipauth-adv.png "Edit Switch Advance"
 [ipauth-param]: /customer/img/ipauth-param.png "Edit Switch Parameters"
-[sip-auth]: /customer/img/sip-auth.png "SIP Auth"
+[voicemail]: /customer/img/voicemail.png "Voicemail"

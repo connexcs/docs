@@ -98,15 +98,16 @@ pages:
         - Viewing Audit Logs: viewing-audit-logs.md
 
     - Class 5:
-        - Creating an IVR Setup: creating-ivr.md
-        - Creating a Conference Call: creating-conference.md
-        - Creating a Group: creating-group.md
+        - Conference Calling: creating-conference.md
+        - IVRs: creating-ivr.md
+        - Groups: creating-group.md
        
     - Developers:
+        - Analytics: developers/analytics.md
+        - Database (users): developers/user-space-database.md 
+        - Form Builder: developers/form-builder.md
         - ScriptForge Basics: developers/scriptforge.md
         - ScriptForge API: developers/scriptforge-api.md        
-        - User Space Database: developers/user-space-database.md 
-        - Form Builder: developers/form-builder.md
 
     - Setup:
         - AnyEdge: anyedge/anyedge.md
@@ -149,8 +150,6 @@ pages:
         - Scaling and Load Balancing: scaling-load-balancing.md
 
   - AnyEdge: anyedge/anyedge.md
-
-  #- 3CX: 3cx/3cx.md
 
   - Customer Portal:
     - Guides: customer-portal/customer-portal.md

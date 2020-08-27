@@ -3,7 +3,7 @@
 **ScriptForge** allows you to write applications that run during specific system events. Currently, scripting functionality is supported in the routing engine, where it runs alongside the call setup process.  Requests to your application are handled with a messaging bus which will queue applications that can't be processed fast enough.  Applications that run in the routing engine must be completed quickly to avoid high PDD.
 
 !!! note "ScriptForge API"
-    See [ScriptForge API](https://staging--connexcs-docs.netlify.app/developers/scriptforge-api.md) for details on scripts and API reference.
+    See [ScriptForge API](https://docs.connexcs.com/developers/scriptforge-api/) for details on scripts and API reference.
 
 ## Design Considerations
 
