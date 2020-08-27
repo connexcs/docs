@@ -2,7 +2,7 @@
 
 An **Interactive Voice Response (IVR)** to allow callers call an extension number, press a key on the keypad, and get routed to different SIP addresses, PSTN numbers, internal extension numbers, IVRs, conference bridges, groups, and Class 5 applications, based on the key they press. When you create an **IVR**, you specify a 1:1 mapping for all the possible keys on the keypad- 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, \* (asterisk), and # (hash). When the caller presses a key, the IVR setup analyzes the input provided by the caller, and routes the call to the appropriate destination. This is managed under **Class5** > **IVR**.
     
-## IRV Planning 
+## IVR Planning 
 Complete the following prior to configuring the **IVR**
     
 1. Plan out the keys and desired destinations
