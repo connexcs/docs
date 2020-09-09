@@ -99,7 +99,7 @@ pages:
 
     - Class 5:
         - Conference Calling: creating-conference.md
-        - IVRs: creating-ivr.md
+        - IVR: creating-ivr.md
         - Groups: creating-group.md
        
     - Developers:
