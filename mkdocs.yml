@@ -110,7 +110,7 @@ pages:
         - ScriptForge API: developers/scriptforge-api.md        
 
     - Setup:
-        - AnyEdge: anyedge/anyedge.md
+        - AnyEdge: anyedge.md
         - My Account: my-account.md
         - PayPal: customer-payments.md
         - Settings:
