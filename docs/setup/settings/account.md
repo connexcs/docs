@@ -1,6 +1,6 @@
 # Account
 
-The **Account** overview allows you to edt Company and General Information, set SMTP Details, and enable Call Recording. Navigate to **Setup** > **Settings** > **Account**.
+The **Account** overview allows you to edit Company and General Information, set SMTP Details, and enable Call Recording. Navigate to **Setup** > **Settings** > **Account**.
 
 ![alt text][accountprofile]
 
@@ -17,7 +17,7 @@ To add or edit SMTP information, click the blue pencil icon.
 
 ![alt text][smtp]
  
-1. **From Address** - Enter an email address that will recieve the details.
+1. **From Address** - Enter an email address that will receive the details.
 2. **Username** and **Password** should match what is configured on your server. 
 3. **Server** - Enter your server domain.
 4. **SMS From** - Enter the mobile number that SMS messages will be sent from
