@@ -133,7 +133,7 @@ pages:
             - Prefix Set: setup/advanced/prefix-set.md
         - Integrations:
             - API: setup/integrations/api.md
-            - Domains: setup/integrations/domains.md
+            - Portal: setup/integrations/portal.md
         - Information:
             - Statements: setup/information/statements.md
             - Dial Code / Destination: setup/information/dial-code-destination.md
