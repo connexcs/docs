@@ -1,6 +1,6 @@
 # Form Builder
 
-**Form Builder** allows developers to create customized forms for their VoIP systems.The tool provides an easy way to automate information gathering and other activities through form building by integrating with your portal and Script Forge. This is configured under **Management** > **Developer** > **Form Builder**.
+**Form Builder** allows developers to create customized forms for their VoIP systems. The tool provides an easy way to automate information gathering and other activities through form building by integrating with your portal and Script Forge. This is configured under **Management** > **Developer** > **Form Builder**.
 
 ## Create a Form
 
