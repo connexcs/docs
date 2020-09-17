@@ -83,7 +83,6 @@ pages:
         - Feature List: feature-list.md
         - Invoice: invoice.md
         - Logging: logging.md
-        - My Servers: my-servers.md
         - Reporting Problems: reporting-problems.md
         - Specification: spec.md
         - Status: system-status.md  
