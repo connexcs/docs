@@ -1,6 +1,6 @@
 # Account
 
-The **Account** overview allows you to edt Company and General Information, set SMTP Details, and enable Call Recording.To configure **Account** settings, navigate to the **Setup** > **Settings** > **Account**
+The **Account** overview allows you to edt Company and General Information, set SMTP Details, and enable Call Recording. Navigate to **Setup** > **Settings** > **Account**.
 
 ![alt text][accountprofile]
 
