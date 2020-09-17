@@ -59,7 +59,7 @@ To reactivate a server:
 2. Click the server's IP address.
 3. Click **Reactivate** to activate your server.
 
-!!! note "Balance needed to deploy server
+!!! note "Balance needed to deploy server"
     To deploy a server, you must have $20 (+ $20 X other servers in your account) available balance.
 
 [rtpserver]: /misc/img/rtpserver.png "RTP Server"
