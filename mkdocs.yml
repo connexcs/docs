@@ -111,7 +111,6 @@ pages:
 
     - Setup:
         - AnyEdge: anyedge.md
-        - My Account: my-account.md
         - PayPal: customer-payments.md
         - Settings:
             - Account: setup/settings/account.md
