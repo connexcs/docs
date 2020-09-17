@@ -1,5 +1,5 @@
 # Servers
-The **Servers** menu is where providers manage their servers. This is accessed via **Setup** > **Settings** > **Servers**.
+The **Servers** section displays current servers. Here providers may configurate servers, including functions such as load balancing. This is accessed via **Setup** > **Settings** > **Servers**.
 
 ## Servers
 Click the server's IP address to view details. 
@@ -11,7 +11,7 @@ Click the server's IP address to view details.
 
 **Switch** - Individual servers
 
-* Capacity Failover- allows you to specify where traffic will go in the event that capacity is reached
+* Capacity Failover- allows you to specify where traffic will go if the server reaches capacity
 * Server Config (click the blue pencil to edit)
     * FQDN- The FQDN (Fully Qualified Domain Name) needs to be set for TLS security to be enabled directly on the server
     * Cluster allows servers to share information such as dialogues and throughput. Ex: if you set CPS to 10, clustered servers will allow 10 CPS, un-clustered servers will allow 10 CPS per server. 
