@@ -35,16 +35,18 @@ If you want to use audio files for the group, they will need to be uploaded to t
     * Click Edit to enter an External number of Internal User, Conference, or Group
     
 6. If you select **Queue**, you will have the following additional fields:
+
+|Field |Description|
+|------|----------------------|
+|`On Hold Music` |The audio file to play to the member and caller when the call is placed on hold.|
+|`Join Message` |The audio file that contains the Welcome Message played to the caller after they dial the group extension.|
+|`Chime List` |A list of audio files with the messages played to the call if no members of the group are available and the caller is waiting to be routed to the next available member.|
+|`Chime Interval` |The time duration between successive chime messages.|
+|`Agent Login Destination` |The extension number an individual must dial to join the group.|
+|`Agent Logout Destination` |The extension number an individual must dial to quit the group. |
+|`Agent Offhook Destination` |An extension number an individual must dial to receive calls immediately after joining the group. |
     
-    * `On Hold Music` - the audio file to play to the member and caller when the call is placed on hold.
-    * `Join Message` - the audio file that contains the Welcome Message played to the caller after they dial the group extension.
-    * `Chime List` - a list of audio files with the messages played to the call if no members of the group are available and the caller is waiting to be routed to the next available member.
-    * `Chime Interval` - enter the time duration between successive chime messages.
-    * `Agent Login Destination` - the extension number an individual must dial to join the group.
-    * `Agent Logout Destination` - the extension number an individual must dial to quit the group. 
-    * `Agent Offhook Destination` - an extension number an individual must dial to receive calls immediately after joining the group. 
     
-    
-    ![alt text][groups-popup]
+![alt text][groups-popup]
 
 [groups-popup]: /class5/img/groups-popup.png "groups-popup"

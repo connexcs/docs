@@ -83,7 +83,6 @@ pages:
         - Feature List: feature-list.md
         - Invoice: invoice.md
         - Logging: logging.md
-        - My Servers: my-servers.md
         - Reporting Problems: reporting-problems.md
         - Specification: spec.md
         - Status: system-status.md  
@@ -99,7 +98,7 @@ pages:
 
     - Class 5:
         - Conference Calling: creating-conference.md
-        - IVRs: creating-ivr.md
+        - IVR: creating-ivr.md
         - Groups: creating-group.md
        
     - Developers:
@@ -110,8 +109,7 @@ pages:
         - ScriptForge API: developers/scriptforge-api.md        
 
     - Setup:
-        - AnyEdge: anyedge/anyedge.md
-        - My Account: my-account.md
+        - AnyEdge: anyedge.md
         - PayPal: customer-payments.md
         - Settings:
             - Account: setup/settings/account.md
