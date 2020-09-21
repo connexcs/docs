@@ -57,6 +57,7 @@ Step 2: Specify Group Permissions
     * Action - allows you to edit the Area and Access permissions
 
    ![alt-text][group-perms]
+   ![alt-text][group-perm]
 
 7. **`Save`** the new permissions.
 
@@ -87,4 +88,5 @@ To change a user's password:
     When you change a user's password, ConnexCS does not send the new password to the user. You must email or text the new password to the user.
 
 [group-perms]: /setup/img/group-perms.png "Group Permissions"
+[group-perm]: /setup/img/group-perm.png "Group Permission"
 [password-rules]: /setup/img/password-rules.png "password-rules"
