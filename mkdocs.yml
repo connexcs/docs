@@ -116,10 +116,7 @@ pages:
             - Payments: setup/settings/payments.md
             - Servers: setup/settings/servers.md
             - DNS: setup/settings/dns.md
-            - User: 
-                - Creating a User Account: creating-user-account.md
-                - Creating a User Group: creating-user-group.md
-                - Changing a User's Password: changing-user-password.md
+            - User: setup/settings/users.md
             - Options: setup/settings/options.md
             - Data Retention: setup/settings/data-retention.md
         - Config:
