@@ -56,6 +56,8 @@ Step 2: Specify Group Permissions
     * Access - the level of permissions
     * Action - allows you to edit the Area and Access permissions
 
+   ![alt-text][group-perms]
+
 7. **`Save`** the new permissions.
 
 !!! question "How does the permissions model work in the ConnexCS Control Panel?" 
@@ -66,14 +68,14 @@ Step 2: Specify Group Permissions
     * If you do not assign granular permissions to a group, the group has permissions to use all features in the ConnexCS Control Panel, depending on the level of global permissions (CRUD). For example, if you assign only Create and Read permissions globally, the group has permissions to create and read data for all features.
 
 ## Default Reseller
-This feature allows you to create a quick default set of permissions suitable for resellers. These can be edited after creation to match your business needs. Simply click on the **`Create Default Reseller`** to create a new Reseller Group. Multiple Reseller Groups can be created. 
+This feature allows you to create a quick default set of permissions suitable for resellers. Simply click on the **`Create Default Reseller`** to create a new Reseller Group. Multiple Reseller Groups can be created, and they can be edited to match your business needs.  
 
 ## Change User Password
 You can change a user's password (used to log into the ConnexCS Control Panel) if the user has forgotten the password. To change the password, you do not need to know the user's current password.
 
 To change a user's password:
 
-1. Click the `Change Password` link on the right of the user.
+1. Click the `Change Password` link to the right of the User.
 2. In the **New Password** text box, enter the new password. Tip: Hover over the New Password text box to see the passwords requirements. 
     
     ![alt text][password-rules]
@@ -84,4 +86,5 @@ To change a user's password:
 !!! question "How should I inform the user about the password change?" 
     When you change a user's password, the ConnexCS Control Panel does not send the new password to the user. You must email or text the new password to the user.
 
+[group-perms]: /setup/img/group-perms.png "Group Permissions"
 [password-rules]: /setup/img/password-rules.png "password-rules"
