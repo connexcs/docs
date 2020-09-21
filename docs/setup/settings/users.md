@@ -58,9 +58,7 @@ Step 2: Specify Group Permissions
 
 7. Make sure you **`Save`** the new permissions.
 
-   ![alt-text][group-perms]
-   
-   ![alt-text][group-perm]
+    ![alt-text][group-perm]
 
 
 
