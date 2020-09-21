@@ -10,8 +10,8 @@ To add a new **User**:
     * **Name** - The user's name.
     * **Groups** (optional) - Select one or more Group(s) to be assigned to the new user. This will define their permission levels. (See below for details on creating Groups.)
     * **Reseller Account** (optional) - Used to restrict resellers. (See below for details on creating Default Resellers.)
-    * **Password** - Enter a password they will use to log into the ConnexCS Control Panel. We recommend agents set a default password then advise the user to reset the password immediately after logging in for the first time. This best practice increases user account security by ensuring only the user knows the password.
-    * **Role** - Select User or Administrator. If no role is assigned, the ConnexCS Control Panel assigns the role of Administrator. 
+    * **Password** - Enter the password they will use to access the Control Panel. We recommend agents set a default password then advise the user to reset the password immediately after logging in for the first time. This best practice increases user account security by ensuring only the user knows the password.
+    * **Role** - Select User or Administrator. If no role is assigned, the ConnexCS assigns the role of Administrator. 
     * **Email** - The user's email address. It is recommended this is an email address that is used often. 
     * **Time Zone** - Select the User's time zone. 
     * **IP Whitelist** - Specify the IP or range of IPs the user can use to connect to the ConnexCS Control Panel. They will not be able to login from any other IP, so be careful with this setup. The IP Whitelist is specified as follows:
@@ -24,8 +24,8 @@ To add a new **User**:
 !!! question "Why should you specify an email address that you use often?" 
     
     * The email address is the username to log into the user account.
-    * The ConnexCS Control Panel sends an email to the email address, to verify that you own the email address.
-    * The ConnexCS Control Panel sends notifications such as credit alerts and low balance alerts to that email address. 
+    * ConnexCS sends an email to the email address, to verify that you own the email address.
+    * ConnexCS sends notifications such as credit alerts and low balance alerts to that email address. 
 
 !!! question "What if I forget my password?" 
     You can reset your password on the ConnexCS Control Panel Login page. If you are unable to do so, contact the administrator who created your user account. 
@@ -61,7 +61,7 @@ Step 2: Specify Group Permissions
 7. **`Save`** the new permissions.
 
 !!! question "How does the permissions model work in the ConnexCS Control Panel?" 
-    The permissions model in the ConnexCS Control Panel consists of Global permissions and Granular permissions.
+    Our permissions model consists of Global permissions and Granular permissions.
     
     * The Global and Granular permissions are categorized as Create, Read, Update, and Delete (CRUD).
     * Granular permissions override and nullify all Global permissions. Ex: if you assign CRUD permissions globally, and assign granular Read permissions to 3 features, the group has permissions to read data for only 3 features. 
@@ -84,7 +84,7 @@ To change a user's password:
 4. Click **`Save`**.
 
 !!! question "How should I inform the user about the password change?" 
-    When you change a user's password, the ConnexCS Control Panel does not send the new password to the user. You must email or text the new password to the user.
+    When you change a user's password, ConnexCS does not send the new password to the user. You must email or text the new password to the user.
 
 [group-perms]: /setup/img/group-perms.png "Group Permissions"
 [password-rules]: /setup/img/password-rules.png "password-rules"
