@@ -1,5 +1,5 @@
 # Users
-Creating and managing **Users** allows for more efficient access to the ConnexCS portal. This is done under **Setup**>**Settings**>**User**. You can see the list of users on the left of the page, and the list of groups on the right of the page.
+Creating and assigning **Users** and **Groups** based on various levels of permissions allows for more efficient management of access to the ConnexCS Control Panel. This is done under **Setup**>**Settings**>**User**. 
 
 ## Create Users
 To add a new **User**:
@@ -7,18 +7,17 @@ To add a new **User**:
 1. Click the **`+`** button in the **Users** section on the left.
 2. Complete the User details:
 
-* **Name** - the user's name.
-* **Groups** (optional) - Select one or more Group(s) to be assigned to the new user. (See below for details on creating Groups.)
-* **Reseller Account** (optional) - Used to restrict resellers. (See below for details on creating Default Resellers.)
-* **Password** - Enter a password that the user must use, to log into the ConnexCS Control Panel. We recommend agents set a default password, then advise the user to reset the password immediately after logging in to the ConnexCS Control Panel for the first time. This best practice ensures that only the owner of the user account knows the password and increases user account security.
-* **Role** - Select User or Administrator. If no role is assigned, the ConnexCS Control Panel assigns the role of Administrator. 
-* **Email** - The user's email address. It is recommended this is an email address that is used often. 
-* **Time Zone** - Select the User's time zone. 
-* **IP Whitelist** - Specify the IP or range of IPs the user can use to connect to the ConnexCS Control Panel. They will not be able to login from any other IP, so be careful with this setup. The IP Whitelist is specified as follows:
-	
-    * Single IP address - Ex: 1.1.1.1
-    * Wildcard for IP addresses - Ex: 1.1.1.
-    * Range of IP address in the CIDR (Classless Inter-Domain Routing) format - Ex: 1.1.1.0/31
+    * **Name** - the user's name.
+    * **Groups** (optional) - Select one or more Group(s) to be assigned to the new user. (See below for details on creating Groups.)
+    * **Reseller Account** (optional) - Used to restrict resellers. (See below for details on creating Default Resellers.)
+    * **Password** - Enter a password that the user must use, to log into the ConnexCS Control Panel. We recommend agents set a default password, then advise the user to reset the password immediately after logging in to the ConnexCS Control Panel for the first time. This best practice ensures that only the owner of the user account knows the password and increases user account security.
+    * **Role** - Select User or Administrator. If no role is assigned, the ConnexCS Control Panel assigns the role of Administrator. 
+    * **Email** - The user's email address. It is recommended this is an email address that is used often. 
+    * **Time Zone** - Select the User's time zone. 
+    * **IP Whitelist** - Specify the IP or range of IPs the user can use to connect to the ConnexCS Control Panel. They will not be able to login from any other IP, so be careful with this setup. The IP Whitelist is specified as follows:
+        * Single IP address - Ex: 1.1.1.1
+        * Wildcard for IP addresses - Ex: 1.1.1.
+        * Range of IP address in the CIDR (Classless Inter-Domain Routing) format - Ex: 1.1.1.0/31
 	
 3. Once the details are entered, click the **`Save`** button.
 
@@ -32,7 +31,7 @@ To add a new **User**:
     If you forget your password, reset your password on the ConnexCS Control Panel Login page. If you are unable to do so, contact the administrator who created your user account. 
     
 
-## Create Group
+## Create Groups
 Use a **Group** to assign a specific set of Control Panel access permissions to multiple users. Typically, you create user groups to assign permissions depending on the roles that the users play in your Carrier Service business model. 
 
 For example, the Network Services Engineers need permissions to set up routing and but should not have access to the customers' billing details. Alternately, the Billing team needs permissions to access and modify the customers' billing details but not to set up routing for customers' calls. 
