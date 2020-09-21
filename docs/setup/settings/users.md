@@ -56,10 +56,13 @@ Step 2: Specify Group Permissions
     * Access - the level of permissions
     * Action - allows you to edit the Area and Access permissions
 
+7. Make sure you **`Save`** the new permissions.
+
    ![alt-text][group-perms]
+   
    ![alt-text][group-perm]
 
-7. **`Save`** the new permissions.
+
 
 !!! question "How does the permissions model work in the ConnexCS Control Panel?" 
     Our permissions model consists of Global permissions and Granular permissions.
