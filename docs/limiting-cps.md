@@ -26,20 +26,3 @@ ConnexCS offers a range of options to limit CPS and Channels across the entire a
     
 !!! warning "CPS on load-balanced servers"
     If you have multiple servers in load balance configuration, it is recommended "Cluster" is enabled. Ex: if you set CPS to 10, clustered servers will allow 10 CPS total, un-clustered servers will allow 10 CPS per server. See [Servers](https://docs.connexcs.com/setup/settings/servers/) for more details. 
-
-## Load Balancing using DNS (Domain Name System)
-
-For multiple SIP servers, you can load balance the calls without a load balancer server using DNS. To configure the DNS, follow these steps:
-
-1. Click **Setup** > **Integrations**.
-2. Click **Domains**.
-3. Click **`+`** under **Server**.
-
-    ![alt text][load-balance]
-
-4. Enter the domain name under the **Domain** field. 
-5. Select Top Level Domain(TLD) to sip.direct.
-6. Check the records against the server IP
-7. Click **`Save`**.
-
-[load-balance]: /misc/img/218.png "load-balance"
