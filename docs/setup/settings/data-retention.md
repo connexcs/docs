@@ -1,3 +1,5 @@
-!!! bug "Documentation is being written."
-    Thank you for visiting this section. We are busy updating this section of our documentation, please check back soon.
-	If you have any questions please come to our website and have a chat with us.
+# Data Retention
+This is your currently stored data in the archive. This data is not currently available for query as it is highly compressed.  
+
+!!! note "Displayed size"
+    The amount displayed in GB is the size of the compressed data. 
