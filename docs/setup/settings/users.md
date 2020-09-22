@@ -1,69 +1,93 @@
-!!! bug "Documentation is being written."
-    Thank you for visiting this section. We are busy updating this section of our documentation, please check back soon.
-	If you have any questions please come to our website and have a chat with us.
+# Users
+Creating and assigning **Users** and **Groups** based on various levels of permissions allows for more efficient management of access to the ConnexCS Control Panel. This is done under **Setup**>**Settings**>**User**. 
+
+## Create Users
+To add a new **User**:
+
+1. Click the **`+`** button in the **Users** section on the left.
+2. Complete the User details:
+
+    * **Name** - The user's name.
+    * **Groups** (optional) - Select one or more Group(s) to be assigned to the new user. This will define their permission levels. (See below for details on creating Groups.)
+    * **Reseller Account** (optional) - Used to restrict resellers. (See below for details on creating Default Resellers.)
+    * **Password** - Enter the password they will use to access the Control Panel. We recommend agents set a default password then advise the user to reset the password immediately after logging in for the first time. This best practice increases user account security by ensuring only the user knows the password.
+    * **Role** - Select User or Administrator. If no role is assigned, the ConnexCS assigns the role of Administrator. 
+    * **Email** - The user's email address. It is recommended this is an email address that is used often. 
+    * **Time Zone** - Select the User's time zone. 
+    * **IP Whitelist** - Specify the IP or range of IPs the user can use to connect to the ConnexCS Control Panel. They will not be able to login from any other IP, so be careful with this setup. The IP Whitelist is specified as follows:
+        * Single IP address - Ex: 1.1.1.1
+        * Wildcard for IP addresses - Ex: 1.1.1.
+        * Range of IP address in the CIDR (Classless Inter-Domain Routing) format - Ex: 1.1.1.0/31
 	
-## Users 
+3. Once the details are entered, click the **`Save`** button.
 
-This section is for adding new user accounts.  It is found under **Setup**>**Settings**>**Users**.
+!!! question "Why should you specify an email address that you use often?" 
+    
+    * The email address is the username to log into the user account.
+    * ConnexCS sends an email to the email address, to verify that you own the email address.
+    * ConnexCS sends notifications such as credit alerts and low balance alerts to that email address. 
 
-To add a new user:
+!!! question "What if I forget my password?" 
+    You can reset your password on the ConnexCS Control Panel Login page. If you are unable to do so, contact the administrator who created your user account. 
+    
 
-1. Click the **Users** section highlighted in red (see image below).
-2. Click the **`+`** button to add a new user, highlighted in orange.
-3. A window will appear where you can fill out details.
-4. Click the **`Save`** button.
- 
-![alt text][users]
+## Create Groups
+Use a **Group** to assign a specific set of Control Panel access permissions to multiple users. Typically, you create user groups to assign permissions depending on the roles that the users play in your Carrier Service business model. 
 
-The details of the dialog box are as follows:
+*For example, the Network Services Engineers need permissions to set up routing and but should not have access to the customers' billing details. Alternately, the Billing team needs permissions to access and modify the customers' billing details but not to set up routing for customers' calls. *
 
-![alt text][user-config]
+Step 1: Create Group
 
-* **Name** - the user's name.
-* **Password** - the password they will use to log in.
-* **Role** - Either user or administrator.
-* **Email** - The user's email address.
+1. Click the **`+`** button in the **Groups** section on the right.
+2. Enter a Group **Name**.
+3. Use **Default Permissions** to select the group's global permissions. The options available are: `Create`, `Update`, `Read`, and `Delete`. All 4 will be selected by default. Click the X to remove a permission. Click the down button on the right to add a permission. 
+4. Click **`Save`**. The new Group will be listed. 
 
-Once the details are entered, remember to click the **`Save`** button.
+Step 2: Specify Group Permissions
 
-## User Groups
-
-To add new groups to the **Users** section, click the **`+`** button. A window will appear as shown, where you can enter the following details.  
-
-![alt text][group-config]
- 
-* **Group Name** - A name for the user group.
-* There are several drop-down lists below the group name, each of which allows providers to choose Select , Allow, or Deny the respective service for the group. See their individual pages for details.
-  * [Cusomer]
-  * [Log]
-  * [Carrier]
-  * [Report]
-  * [Card] 
-  * [Data]
-  * [CDR]
-  * [PCAP]
-* When you're finished editing or entering a group, click the **`Save`** button.
-
-**Delete Users**
-
-To delete a user, select the user's name from the user list, and click the **`Delete`** button.	
+1. Click on the **Group** to view the "Add Group Permission" table. Click the **`+`** next to the table. 
+2. From the **Area** list, select the functional area of the Control Panel for the specific permission. 
+3. **Access** defines the permissions you want to assign.
+4. Select as many Areas and their Access level as needed. 
+5. Once finished, select **`Save`**.
+6. The new permissions will be visible in the Add Group Permission table, with the following fields:
 	
-## Personal Information
+    * Path - the path to the functional area's API
+    * Access - the level of permissions
+    * Action - allows you to edit the Area and Access permissions
 
-Edit individual user information in the **Current User** section. 
+7. Make sure you **`Save`** the new permissions.
 
-1. Click the **`Edit`** icon.
-2. Edit details in each text box, same as creating new account.
-3. Click the **`Save`** button.
-
-
-## Two-factor Authentication
-**Two-factor authentication**, or 2FA, is a way to confirm user identity using a combination of two different measures.
-Use the Google Authenticator or a similar app to generate the security code.
-
-To enable two-factor authentication, click **`Enable`**, as shown in the image below:
-
-![alt text][tfa]
+    ![alt-text][group-perm]
 
 
-[tfa]: /setup/img/67.png "TFA"
+
+!!! question "How does the permissions model work in the ConnexCS Control Panel?" 
+    Our permissions model consists of Global permissions and Granular permissions.
+    
+    * The Global and Granular permissions are categorized as Create, Read, Update, and Delete (CRUD).
+    * Granular permissions override and nullify all Global permissions. Ex: if you assign CRUD permissions globally, and assign granular Read permissions to 3 features, the group has permissions to read data for only 3 features. 
+    * If you do not assign granular permissions to a group, the group has permissions to use all features in the ConnexCS Control Panel, depending on the level of global permissions (CRUD). For example, if you assign only Create and Read permissions globally, the group has permissions to create and read data for all features.
+
+## Default Reseller
+This feature allows you to create a quick default set of permissions suitable for resellers. Simply click on the **`Create Default Reseller`** to create a new Reseller Group. Multiple Reseller Groups can be created, and they can be edited to match your business needs.  
+
+## Change User Password
+You can change a user's password (used to log into the ConnexCS Control Panel) if the user has forgotten the password. To change the password, you do not need to know the user's current password.
+
+To change a user's password:
+
+1. Click the `Change Password` link to the right of the User.
+2. In the **New Password** text box, enter the new password. Tip: Hover over the New Password text box to see the passwords requirements. 
+    
+    ![alt text][password-rules]
+        
+3. **Confirm** the password by entering the same password.
+4. Click **`Save`**.
+
+!!! question "How should I inform the user about the password change?" 
+    When you change a user's password, ConnexCS does not send the new password to the user. You must email or text the new password to the user.
+
+[group-perms]: /setup/img/group-perms.png "Group Permissions"
+[group-perm]: /setup/img/group-perm.png "Group Permission"
+[password-rules]: /setup/img/password-rules.png "password-rules"

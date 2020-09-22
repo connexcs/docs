@@ -62,5 +62,5 @@ To reactivate a server:
 !!! note "Balance needed to deploy server"
     To deploy a server, you must have $20 (+ $20 X other servers in your account) available balance.
 
-[rtpserver]: /misc/img/rtpserver.png "RTP Server"
+[rtpserver]: /misc/img/rtpservers.png "RTP Server"
 [server-6]: /misc/img/244.png "server-6"
