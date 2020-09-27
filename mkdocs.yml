@@ -32,7 +32,10 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_div_format
-      
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
 pages:
   - Cloudswitch:
     - Home: index.md
@@ -137,7 +140,8 @@ pages:
             - Statements: setup/information/statements.md
             - Dial Code / Destination: setup/information/dial-code-destination.md
             - Audit Log: setup/information/audit-log.md
-            - Recording: setup/information/recording.md
+            - Browse Recording: setup/information/recording.md
+            - Jobs: setup/information/jobs.md
 
     - Architecture:
         - API: api.md
