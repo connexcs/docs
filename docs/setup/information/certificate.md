@@ -1,10 +1,10 @@
 # Certificate
 ### Setup :material-mdi-menu-right: Information :material-mdi-menu-right: Certificate
 
-
 Certificate management for public-key cryptography
 
-Certificates ca be used in
+Certificates ca be used in:
+
 * Customer Portal
 * WebPhone
 * TLS SIP
