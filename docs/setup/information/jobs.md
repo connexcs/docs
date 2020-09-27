@@ -1,6 +1,6 @@
 # Dial Code / Destination Database
 
-### Setup :material-mdi-menu-right: Information :material-mdi-menu-right: Job
+### Setup :material-menu-right: Information :material-menu-right: Job
 
 When building rate cards, or making changes to switching configuration certian tasks are processed in the background.
 You may see a toast (an in window popup message) informing you that the task has been completed or had an error, this page shows it to you in more detail.
