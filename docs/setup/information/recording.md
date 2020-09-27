@@ -1,5 +1,4 @@
 # Browse Recording
-
 ### Setup :material-mdi-menu-right: Information :material-mdi-menu-right: Browse Recording
 
 When enabled connexCS provides wholesale call recording.
