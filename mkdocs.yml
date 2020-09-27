@@ -7,7 +7,7 @@ theme:
   name: material 
   features:
     - navigation.instant
-    - navigation.tags
+    - navigation.tabs
 extra_javascript:
 - extra.js
 - https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js
@@ -23,6 +23,7 @@ markdown_extensions:
       linenums: true
   - toc:
       permalink: true
+  - pymdownx.tabbed
   - pymdownx.details
   - pymdownx.tasklist:
       custom_checkbox: true
