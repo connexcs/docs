@@ -7,10 +7,13 @@ The Dial Code database is a quick goto resource to checking international number
 
 Prefix
 :   The leftmost part of the phone number.
+
 Type
 :   Such as Mobile / Landline / Special Services
+
 Operator
 :   The Operator Name / Range Holder of the number (Note numbers can be ported)
+
 Description
 :   Additional information about the number
 
