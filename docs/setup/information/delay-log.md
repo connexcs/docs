@@ -1,5 +1,5 @@
 # Delay Log
-### Setup :material-menu-right: Information :material-menu-right: Delay Log
+Setup :material-menu-right: Information :material-menu-right: Delay Log
 
 A delay event allows you delay the commitment of a record untill a later date/time.
 

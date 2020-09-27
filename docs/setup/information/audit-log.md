@@ -1,5 +1,5 @@
 # Audit Log
-### Setup :material-menu-right: Information :material-menu-right: Audit Log
+Setup :material-menu-right: Information :material-menu-right: Audit Log
 
 All user and API events are recorded in the Audit Log. This includes all activity on the Control Panel & for your customer portal.
 

@@ -1,5 +1,5 @@
 # Statement
-### Setup :material-menu-right: Information :material-menu-right: Statement
+Setup :material-menu-right: Information :material-menu-right: Statement
 
 This page contains a day-by-day account of your spend with ConnexCS.
 

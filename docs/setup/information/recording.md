@@ -1,5 +1,5 @@
 # Browse Recording
-### Setup :material-menu-right: Information :material-menu-right: Browse Recording
+Setup :material-menu-right: Information :material-menu-right: Browse Recording
 
 When enabled connexCS provides wholesale call recording.
 
