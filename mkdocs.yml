@@ -137,6 +137,7 @@ pages:
         - Information:
             - Statements: setup/information/statements.md
             - Dial Code / Destination: setup/information/dial-code-destination.md
+            - Delay Log: setup/information/delay-log.md
             - Audit Log: setup/information/audit-log.md
             - Certificate: setup/information/certificate.md
             - Browse Recording: setup/information/recording.md
