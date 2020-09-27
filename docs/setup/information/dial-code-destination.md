@@ -1,5 +1,5 @@
 # Dial Code / Destination Database
-### Setup :material-mdi-menu-right: Information :material-mdi-menu-right: Dial Code / Destination
+### Setup :material-menu-right: Information :material-menu-right: Dial Code / Destination
 
 The Dial Code database is a quick goto resource to checking international numbering plans.
 

@@ -1,5 +1,5 @@
 # Certificate
-### Setup :material-mdi-menu-right: Information :material-mdi-menu-right: Certificate
+### Setup :material-menu-right: Information :material-menu-right: Certificate
 
 Certificate management for public-key cryptography
 
