@@ -1,9 +1,11 @@
 ## Payments
-The **Payments** view allows you to manage payments to ConnexCS as well as some related functions. This is managed under **Setup** > **Settings** > **Payments**.
+Setup :material-menu-right: Settings :material-menu-right: Payments
+
+The **Payments** view allows you to manage payments to ConnexCS as well as some related functions.
 
 * **Payment Cards**- view and manage stored credit cards
 * **Invoices** - Review invoices
-* **Payments**- View and make Payments as well as apply Vouchers (see Voucher details and setup [here](https://docs.connexcs.com/voucher/)).
+* **Payments**- View and make Payments as well as apply Vouchers.
 
 ![alt text][payments]
 
