@@ -53,6 +53,14 @@ The bottom menu on the webphone is controled here
 
 A Custom page can be used to display custom static & dynamic content. This is generated from a [template](/setup/config/templates/).
 
+!!! tip "Frameless iframe"
+	We have implemented an edge case. If you wish for the custom page to be an `iframe`, you can use the following code to ensure that it fills up all the available space.
+	Replace www.connexcs.com with the page you wish for it to display.
+	```
+	<!-- NO-CONTAINER -->
+	<iframe src="https://www.connexcs.com" style="border: 0px; width: 100%;height: 100%"></iframe>
+	```
+
 ## Flags
 
 * **Hide UUID** - UUID is a unique deploy & version identifier, this is what you should ask your end user for if you need to report a problem to us. It is displayed in the side menu.

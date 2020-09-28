@@ -1,25 +1,26 @@
 # Templates
+Setup :material-menu-right: Config :material-menu-right: Templates
 
-Create your own **Templates** to customise the content displayed on outbound emails/SMS, the Customer Portal, and WebPhone. ConnexCS Templates use a mustash-compatible template language [Handlebars](https://handlebarsjs.com/guide/). Templates are managed under **Setup** > **Config** > **Templates**. 
+Create your own **Templates** to customise the content displayed on outbound emails/SMS, the Customer Portal, and WebPhone.
+ConnexCS Templates use a mustash-compatible template language [Handlebars](https://handlebarsjs.com/guide/).
 
-## Settings 
+## Stock Templates
+
+As default ConnexCS provides standard templates which you are free to customise as you wish.
+To customise a template click on the template name, modify it as you see fit and click save.
+
+!!! note
+    It is important to respect the template syntax, fields such as `{email}` or `{account_name}` need to be left as this otherwise that wont be replace correct when the template is rendered
+
+## Settings
 Create a new Template by selecting the blue **`+`** or edit an existing Template by clicking on the template name. 
 
-In the Subject, SMS, Text and HTML fields:
-
-* Write your brand name in the place of **[brandName]**.
-* Provide the area that coincides with the alert in **[area]**
-* Give value in **[value]**. 
-* Apply style to your text via HTML style panel under the HTMLtag.
-* Click **`Save`**.
+The templating system will replace placeholders with the variable when it gets rendered.
 
 !!! note "SMS field"
     Entering text into the SMS field does not cause the SMS to be sent, but it is available for use when other parts of the system have SMS set. 
  
 ![alt text][addtemp]
-
-## Delete Templates
-To delete a **Template**, select one or more boxes for the Templates you would like to delete, then click the **`Reset`** button. 
 
 ## ScriptForge Integration  
 Dynamic Templates are made by including ScriptForge. This is done by using the `scriptforge` tag. Ex: To include a ScriptForge script with ID 1234, use `{{scriptforge 1234}}`. 
@@ -28,6 +29,8 @@ This will pass ALL of the variables in the current scope to ScriptForge. Whateve
 
   
 ### Sample RSS Feed Injection into a template
+
+This example can be used to provide a custom page in the [WebPhone](/webphone/webphone)
 
 **ScriptForge**
 
@@ -51,5 +54,4 @@ function main (vars) {
 {{/each}}
 ```
 
- 
 [addtemp]: /misc/img/addtemplate.png "Add Temp"
