@@ -1,9 +1,7 @@
 # Firewall
+Setup :material-menu-right: Advanced :material-menu-right: Firewall
 
-!!! warning "Work In Progress (WIP)"
-    This page is work-in-progress. We appologise for any spelling mistakes or broken links. We are working hard to fix these.
-
-The ConnexCS is used in conjunction with our threat detection system to blacklist attackers.
+The ConnexCS uses a threat detection system to blacklist attackers.
 
 ## Threat Detection System
 
@@ -11,12 +9,11 @@ The threat detection is always on and amoungst other key identifiers analyses tr
 It primarly pays attention to authentication failures on both registration and firewall of a particular threshold.
 If certian criteria is exceeded the system will issue a system wide block.
 
-Should this happen to an IP address of your customer / carrier, you can remove it from Setup > Advanced > Firewall.
+Should this happen to an IP address of your customer / carrier, you can remove it by clicking on checkbox by the IP address and clicking on the delete icon.
 
 ### False Positive
 
-If you have a customer or carrier who sends a large volume of unauthorized calls, it is possible that they will be added
-to the block list.
+If you have a customer or carrier who sends a large volume of *unauthorized* calls, it is possible that they will be addedto the block list.
 
 ### False Negatives
 
@@ -30,7 +27,5 @@ It is important that calls such as these are visible for 2 reasons.
 information as the packets are dropped prior to them being able to be logged.
 2. If we block too soon we loose the ability to ascertain any attack patterns and profiling information on an attack. Having some data allows us to see progressive attacks spanning multiple IP addresses.
 
-<!--
-	Written by Jonathan Hulme on 2019-10-19
-	Approved by [____________] Pending
--->
+!!! note
+	It can take a maximum of 15 minutes for an IP address to be removed from the entire platform if you remove it from the block list.

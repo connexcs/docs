@@ -1,5 +1,5 @@
 # Webphone Setup
-##### Setup :material-menu-right: Integrations :material-menu-right: Webphone
+Setup :material-menu-right: Integrations :material-menu-right: Webphone
 
 More information about the WebPhone can be found [here](/webphone)
 
