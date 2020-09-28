@@ -126,7 +126,6 @@ pages:
             - Contracts: setup/config/contracts.md
             - Packages: setup/config/packages.md
             - Templates: setup/config/templates.md
-            - Analytics: setup/config/analytics.md
         - Advanced:
             - Language: setup/advanced/language.md
             - Firewall: setup/advanced/firewall.md
