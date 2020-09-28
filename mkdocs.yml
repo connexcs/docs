@@ -134,6 +134,7 @@ pages:
         - Integrations:
             - API: setup/integrations/api.md
             - Portal: setup/integrations/portal.md
+            - WebPhone: setup/integrations/webphone.md
         - Information:
             - Statements: setup/information/statements.md
             - Dial Code / Destination: setup/information/dial-code-destination.md
@@ -152,7 +153,8 @@ pages:
         - Media Handling: media-handling.md
         - Scaling and Load Balancing: scaling-load-balancing.md
 
-  - AnyEdge: anyedge/anyedge.md
+  - AnyEdge: 
+    - AnyEdge: anyedge/anyedge.md
 
   - Customer Portal:
     - Guides: customer-portal/customer-portal.md
@@ -168,3 +170,6 @@ pages:
     - Payment: customer-portal/payment.md
     - Routes: customer-portal/routes.md
     - Interconnect: customer-portal/interconnect.md
+
+  - WebPhone: 
+    - WebPhone: webphone.md

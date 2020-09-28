@@ -1,5 +1,5 @@
 # Customer Portal Setup
-##### Setup :material-menu-right: Integrations :material-menu-right: Portal
+Setup :material-menu-right: Integrations :material-menu-right: Portal
 
 The **Portal** screen lets you add a domains and sub domain to the control panel, which the customer can access through the customer portal.
 You can provide multiple domains for your customers through different brands, each domain can have different permissions, currencies, default, etc.
@@ -7,24 +7,9 @@ You can provide multiple domains for your customers through different brands, ea
 !!! note
 	Your customer portal will be exposed via a `CNAME` which you setup. This wont work with A records, or pointing directly
 
-1. Go to **Setup** > **Integrations** > **Portal**.
-
 ![alt text][domain]
 
-1. Click the **`+`** button under **Portal**.
-2. Enter the details in their respective fields of the ensuing window.
-3. Select the level of access you wish to allow your customers in their customer portal.
-4. Click the **`Save`** button.
-
-![alt text][add-new-domain]
-
-Domains can also be edited here:
-
-1. Click the Domain name from the list.
-2. Edit its details.
-3. Click the **`Save`** button.
-
-## Customer Portal with CNAME record
+# Setting up CNAME record
 
 1. Sign in to your domain's account at your domain host.
 2. Locate the page for updating your domain's DNS records. The page might be called something like DNS Management, Name Server Management, or Advanced Settings.
@@ -32,7 +17,15 @@ Domains can also be edited here:
 4. Add a new domain record, (such as `portal.yourdomain.com`, where `yourdomain.com` is the domain that you own.
 5. Point it towards `portal.connexcs.com.`
 6. If you get asked for a TTL, we recommend setting this at 300 (seconds) - 5 minutes
-7. Once the domain has been configired with your provider you can add it on ConnexCS. A certificate will be issued for the domain soon afterwards.
+7. Once the domain has been configired with your provider you can add it on ConnexCS.
+
+# Add Domain in ConnexCS
+
+1. Click the **`+`** button under **Portal**.
+2. Enter the details in their respective fields of the ensuing window.
+3. Click the **`Save`** button. A certificate will be issued for the domain soon afterwards
+
+![alt text][add-new-domain]
 
 ## Config Options
 
