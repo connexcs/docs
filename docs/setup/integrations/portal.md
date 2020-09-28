@@ -1,5 +1,5 @@
 # Customer Portal Setup
-Setup :material-menu-right: Integrations :material-menu-right: Portal
+##### Setup :material-menu-right: Integrations :material-menu-right: Portal
 
 The **Portal** screen lets you add a domains and sub domain to the control panel, which the customer can access through the customer portal.
 You can provide multiple domains for your customers through different brands, each domain can have different permissions, currencies, default, etc.
@@ -67,7 +67,7 @@ Choose which sections/features you wish to be displayed to your customers.
 
 !!! note "Override Options"
 	You can override specific customers on this area by going to:
-	Management :material-menu-right: Customer :material-menu-right: [Choose Customer] :material-menu-right: Edit :material-menu-right: Config > Portal Access
+	Management :material-menu-right: Customer :material-menu-right: [Choose Customer] :material-menu-right: Edit :material-menu-right: Config :material-menu-right: Portal Access
 	You can choose anything from the "Show" heading to force the feature to be displated, or hide to stop it from being shown.
 
 ### Breakout
@@ -101,6 +101,7 @@ You can add custom CSS to modify the how various elements are displayed, for exa
 h1 {
   display: block;
   font-size: 2em;
+}
 ```
 
 ### Upload Logo
