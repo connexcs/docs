@@ -131,6 +131,8 @@ pages:
             - Language: setup/advanced/language.md
             - Firewall: setup/advanced/firewall.md
             - Prefix Set: setup/advanced/prefix-set.md
+            - Reseller: setup/advanced/reseller.md
+            - Fraud: setup/advanced/fraud.md
         - Integrations:
             - API: setup/integrations/api.md
             - Portal: setup/integrations/portal.md
