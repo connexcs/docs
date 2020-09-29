@@ -14,13 +14,13 @@ Click the server's IP address to view details.
 
 **Dispatcher** - This is the load balancer
 |Field|Description|
-|------------|---|
+|----------------|---|
 |Add LoadBalancer|Add servers to the cluster|
 |Flush|Force a server update|
 
 **Switch** - Individual servers
 |Field|Description|
-|------------|---|
+|----------------|---|
 |Capacity Failover|Specify where traffic will go if the server reaches capacity|
 |Server Config Options|(click the blue pencil to edit)|
 |FQDN|The FQDN (Fully Qualified Domain Name) needs to be set for TLS security to be enabled directly on the server|
