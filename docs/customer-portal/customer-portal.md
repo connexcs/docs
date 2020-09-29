@@ -7,8 +7,8 @@ The Customer Portal grants access to information about customer accounts in a fi
 To add a new to domain to your Customer Portal:
 
 1. Sign in to your domain account at its host.
-2. Locate the page for updating your domain's DNS records, i.e. DNS Management or Advanced Server Management.
-3. Locate the **CNAME** records for your domain.
+2. Locate the page for updating your domain's **`DNS records`**, i.e. DNS Management or Advanced Server Management.
+3. Locate the **`CNAME`** records for your domain.
 4. Provide an add-on domain, such as portal.yourwebsite.com.
 5. Point the domain toward portal.connexcs.com.
 
