@@ -12,6 +12,6 @@ The **Options** area allows you to set key default behaviors for the system.
 * **Circuit Test User** - Allows system to do full circuit test by selecting which user it comes in on.
 * **Alpha and Beta Feature Previews** - Provides access to new and upcoming features.
 * **Invoice Line Grouping** - Determines whether generated invoices display one line per day or one line per destination.
-* **Internal Number Range Start and Block Size** - Sets the default start and range of number blocks which are assigned to customers (configuration instructions [here](https://staging--connexcs-docs.netlify.app/customer/main/#internal-number-block)). 
+* **Internal Number Range Start and Block Size** - Sets the default start and range of number blocks which are assigned to customers (configuration instructions **[here](https://staging--connexcs-docs.netlify.app/customer/main/#internal-number-block)**). 
 * **Auto Logout** - System will log a user out after timing out.
 * **Hybrid Menu Only** - When ConnexCS is used in Hybrid mode, this option hides unavailable items from the menu.
