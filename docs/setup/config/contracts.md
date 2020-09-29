@@ -1,7 +1,7 @@
 # Contracts
 Setup :material-menu-right: Config :material-menu-right: Contracts
 
-Allowing ConnexCS to manage your contracts increases integration and compliance by only allowing your customers to dial if they have approved a contract.
+Allowing ConnexCS to manage your **Contracts** increases integration and compliance by only allowing your customers to dial if they have approved a contract.
 
 You can also restrict dialling by a customer automatically if they have not approved a contract before the grade period ends.
 
