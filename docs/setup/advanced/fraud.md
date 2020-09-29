@@ -16,6 +16,7 @@ A rule is defined by a prefix and a date/time range
 A call is eligable for fraud detetion is the fraud profile is enabled on the call (by setting it in routing) and if the prefix matches.
 
 The following metrics are monitored and upper limits can be set on each of these
+
 * **CPM** - Calls Per Minute, the amount of calls sent in any single minute
 * **Call Duration** - The duration of the call.
 * **Total Calls** - The duration of the call.

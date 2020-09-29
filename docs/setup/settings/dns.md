@@ -53,6 +53,7 @@ There are many ways to achieve redundancy and mittigate any single-point-of-fail
 6. On each server set 302 redirect to a counter server trying best to avoid any more spof, or hotspots.
 
 This gives you the following advantages
+
 * You customer see's your brand on the endpoint
 * You have the last word when it comes to where your traffic goes to, even if you move away from ConnexCS
 * Your DNS provider does not have a high volume of traffic, so performance or dedicated performance is not needed here.

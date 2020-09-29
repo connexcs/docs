@@ -10,9 +10,16 @@ A prefix set is a 1 or more numbers  which you can add and create into a group t
 	442
 	```
 
-A prefix set may be used in Management :material-menu-right: Customer :material-menu-right: Routing :material-menu-right: Basic :material-menu-right: Dial String Prefix Set
-or in Management :material-menu-right: Global Routing :material-menu-right: Basic :material-menu-right: Dial String Prefix Set. You can also
-use this when bulding rate cards 
+A prefix set may be used in:
+
+Management :material-menu-right: Customer :material-menu-right: Routing :material-menu-right: Basic :material-menu-right: Dial String Prefix Set
+
+or in
+
+Management :material-menu-right: Global Routing :material-menu-right: Basic :material-menu-right: Dial String Prefix Set.
+
+You can also use this when bulding rate cards:
+
 Rate Card :material-menu-right: Customer Rate Card :material-menu-right: Profits :material-plus: Config :material-plus: Prefix Set
 
 ## Adding a new Prefix Set
@@ -26,7 +33,7 @@ The new set will now be available in Ingress Routing.
 
 ## Flags
 
-You can also use Flags to create a *Global CLI Blacklist* or a *Global Dialled Number Blacklist*.
+You can also use Flags to create a *Global CLI Blacklist* or a *Global Dialled Number Blacklist* (Aka Block List)
 This will prevent all calls going through the system which match the prefix set added
 
 !!! warning
