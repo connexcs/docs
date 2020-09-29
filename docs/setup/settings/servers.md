@@ -66,6 +66,7 @@ RTP Servers handle streaming media. To view RTP Servers in your system:
 	only enough credit to cover you for the next day.
 
 To reactivate a server:
+
 1. Click **Setup**>**Settings**>**Servers**.
 
    ![alt text][server-6]
