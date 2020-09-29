@@ -16,7 +16,7 @@ require the customer to sign again.
 4. Click on :fontawesome-plus: button to add a revision.
 5. Paste your contract in plain text.
 
-## Add Contract to a customer
+## Assign Contract to a customer
 
 1. Go to Management :material-menu-right: Customer :material-menu-right: [Your Customer] :material-menu-right: Contracts :fontawesome-plus:
 2. Select a contract (the most recent revision will be chosen automatically)
