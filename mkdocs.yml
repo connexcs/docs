@@ -112,7 +112,7 @@ pages:
         - ScriptForge API: developers/scriptforge-api.md        
 
     - Setup:
-        - AnyEdge: anyedge.md
+        - AnyEdge: anyedge/anyedge.md
         - PayPal: customer-payments.md
         - Settings:
             - Account: setup/settings/account.md
@@ -153,9 +153,6 @@ pages:
         - Security: security.md
         - Media Handling: media-handling.md
         - Scaling and Load Balancing: scaling-load-balancing.md
-
-  - AnyEdge: 
-    - AnyEdge: anyedge/anyedge.md
 
   - Customer Portal:
     - Guides: customer-portal/customer-portal.md
