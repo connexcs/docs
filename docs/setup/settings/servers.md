@@ -13,13 +13,13 @@ After which you will be able to choose a server and and a zone to deploy your se
 Click the server's IP address to view details. 
 
 **Dispatcher** - This is the load balancer
-|Field|Description|
+|'    Field     '|Description|
 |----------------|---|
 |Add LoadBalancer|Add servers to the cluster|
 |Flush|Force a server update|
 
 **Switch** - Individual servers
-|Field|Description|
+|'    Field     '|Description|
 |----------------|---|
 |Capacity Failover|Specify where traffic will go if the server reaches capacity|
 |Server Config Options|(click the blue pencil to edit)|
