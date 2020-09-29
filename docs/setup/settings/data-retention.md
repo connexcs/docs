@@ -11,4 +11,4 @@ The **Data Retention** page displays currently stored data in the archive. Data 
 Data is periodically archived here from the live servers. You may query both live and archive data from the CDR section.
 However your query may not span between live and archived data.
 
-[data-retention] /setup/img/data-retention.png "Data Retention"
+[data-retention]: /setup/img/data-retention.png "Data Retention"
