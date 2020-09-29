@@ -44,7 +44,7 @@ To add a new **User**:
 ## Create Groups
 Use a **Group** to assign a specific set of Control Panel access permissions to multiple users. Typically, you create user groups to assign permissions depending on the roles that the users play in your Carrier Service business model. 
 
-!!! example
+!!! tip "Example Group Roles"
 	The Network Services Engineers need permissions to set up routing and but should not have access to the customers' billing details.
 	Alternately, the Billing team needs permissions to access and modify the customers' billing details but not to set up routing for customers' calls.
 
