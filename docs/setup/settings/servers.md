@@ -5,7 +5,7 @@ The **Servers** section displays current servers. Here providers may configure s
 
 ## Deploy a server
 
-Make sure that you have completed the [Getting Started](/getting-started) checklist in order to be able to deploy your first server.
+Make sure that you have completed the [Getting Started](https://docs.connexcs.com/getting-started/) checklist in order to be able to deploy your first server.
 
 After which you will be able to choose a server and and a zone to deploy your server into. Delivery is within 5 minutes.
 
