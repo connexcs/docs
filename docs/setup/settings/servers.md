@@ -66,13 +66,11 @@ RTP Servers handle streaming media. To view RTP Servers in your system:
 	only enough credit to cover you for the next day.
 
 To reactivate a server:
-
-1. Click **Setup**>**Settings**>**Servers**.
+1. Click the server's IP address.
+2. Click **Reactivate** to activate your server.
 
    ![alt text][server-6]
 
-2. Click the server's IP address.
-3. Click **Reactivate** to activate your server.
 
 !!! note "Balance needed to deploy server"
     To deploy a server, you must have $20 (+ $20 X other servers in your account) available balance.
