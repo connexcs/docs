@@ -1,7 +1,7 @@
 # Browse Recording
 Setup :material-menu-right: Information :material-menu-right: Browse Recording
 
-When enabled connexCS provides wholesale call recording.
+When enabled ConnexCS provides wholesale call recording.
 
 This page provides a file system style access into call recordings
 
