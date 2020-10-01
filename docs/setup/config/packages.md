@@ -1,7 +1,7 @@
 # Packages
 Setup :material-menu-right: Config :material-menu-right: Packages
 
-A **Package** represents a product or service offered to customers, often as a recurring charge based on goods delivrered at a required interval. CoonexCS **Packages** are global entities which are allocated to each customer as required. Each package may include incentives for MRC like DIDs, phone system rentals, or other hardware. 
+A **Package** represents a product or service offered to customers, often as a recurring charge based on goods delivered at a required interval. ConnexCS **Packages** are global entities which are allocated to each customer as required. Each package may include incentives for MRC like DIDs, phone system rentals, or other hardware. 
  
  
 ## Add Package
