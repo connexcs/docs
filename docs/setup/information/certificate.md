@@ -16,7 +16,7 @@ To add a certificate you can click on the :fontawesome-plus: symbol.
 
 ## Let's Encrypt
 
-If you wish for us to manage the certificates for you you must ensure that the DNS records are correctly set to they are pointing to the correct server of ours.
+If you wish for us to manage the certificates for you, you must ensure that the DNS records are correctly set to they are pointing to the correct server of ours.
 After entering the domain name and clicking save our system will provision the certificate for you.
 
 Renewals will be managed automatically.
