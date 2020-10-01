@@ -1,7 +1,7 @@
 # Dial Code / Destination Database
 Setup :material-menu-right: Information :material-menu-right: Dial Code / Destination
 
-The Dial Code database is a quick goto resource to checking international numbering plans.
+The Dial Code database is a quick go to resource to checking international numbering plans.
 
 ### Columns
 | Column Name | Description                                                                 |
