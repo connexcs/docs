@@ -1,7 +1,7 @@
 # API Integrations
-There are several **API Integrations** which can enhance customer administration, including communicating with the switch, information about current balances, and managing Call Detail Records (CDRs).  
+Setup :material-menu-right: Integrations :material-menu-right: API
 
-Specifications for the customer-facing API operations are found here: <https://portal-api-docs.connexcs.com/>
+ConnexCS has an API to allow external services to send requests in. This page is to configure an API for ConnexCS to connect out to.
 
 ## Avalable Integrations
 
@@ -12,11 +12,7 @@ Specifications for the customer-facing API operations are found here: <https://p
 This can then be approved and also benefit from fingerprint authentication. [More Info](https://duo.com/)
 * **Moneris** - Credit Card Processing, more information can be found here [Moneris](https://www.moneris.com/]) made available on your customer portal to your customers.
 * **ScriptForge** - ScriptForge is ConnexCS Javascript Sandbox environment. Using this you can write drivers which intermediate connectivity to a large variety of providers
-
-
-## Configure APIs  
-Navigate to **Setup**>**Integrations**>**API**. 
-
+* **Razor Pay** - A large payment processor from India. [More Info](https://razorpay.com/)
 
 ### Add New API
 
@@ -52,18 +48,15 @@ Lean more about the PayPal API [here]<https://docs.connexcs.com/customer-payment
 3. Select the user's currency type.
 4. Click the **`Save`** button.
 
-#### Edit APIs
+## Inbound API's
 
-Edit API information by clicking its name from the list. A window will open similar to the 'Add New' screen where you can edit details.
+### ConnexCS API
 
-#### Refresh APIs
+If you are looking for the ConnexCS API, please check here <https://api-docs.connexcs.com/>. 
 
-Click the **`Refresh`** button to update the current list of APIs on the screen to the most recent. This is to ensure you are working with the most recent information.
+### ConnexCS Customer API
 
-#### Delete APIs
-
-To delete an API, select it from the list and click the **`Delete`** button. 
-
+If you wish to provide a machine interface with authorization centered around your customer, check here: <https://portal-api-docs.connexcs.com/>
 
 [paypal-1]: /setup/img/73.png "Paypal 1"
 [paypal]: /setup/img/74.png "Paypal"

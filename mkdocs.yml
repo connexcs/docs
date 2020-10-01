@@ -5,16 +5,14 @@ site_author: ConnexCS Team
 google_analytics: ['UA-155210453-1', 'docs.connexcs.com']
 theme:
   name: material 
-  feature:
-    tabs: true  
+  features:
+    - navigation.instant
+    - navigation.tabs
 extra_javascript:
 - extra.js
 - https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js
 extra_css:
   - https://unpkg.com/mermaid@7.1.2/dist/mermaid.css
-
-#plugins:
-#  - markdownmermaid
 
 markdown_extensions:
   - admonition
@@ -22,6 +20,7 @@ markdown_extensions:
       linenums: true
   - toc:
       permalink: true
+  - pymdownx.tabbed
   - pymdownx.details
   - pymdownx.tasklist:
       custom_checkbox: true
@@ -30,7 +29,11 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_div_format
-      
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - def_list
+
 pages:
   - Cloudswitch:
     - Home: index.md
@@ -109,7 +112,7 @@ pages:
         - ScriptForge API: developers/scriptforge-api.md        
 
     - Setup:
-        - AnyEdge: anyedge.md
+        - AnyEdge: anyedge/anyedge.md
         - PayPal: customer-payments.md
         - Settings:
             - Account: setup/settings/account.md
@@ -123,19 +126,26 @@ pages:
             - Contracts: setup/config/contracts.md
             - Packages: setup/config/packages.md
             - Templates: setup/config/templates.md
-            - Analytics: setup/config/analytics.md
         - Advanced:
             - Language: setup/advanced/language.md
             - Firewall: setup/advanced/firewall.md
             - Prefix Set: setup/advanced/prefix-set.md
+            - Reseller: setup/advanced/reseller.md
+            - Fraud: setup/advanced/fraud.md
         - Integrations:
             - API: setup/integrations/api.md
             - Portal: setup/integrations/portal.md
+            - WebPhone: setup/integrations/webphone.md
         - Information:
             - Statements: setup/information/statements.md
             - Dial Code / Destination: setup/information/dial-code-destination.md
+            - Payment Log: setup/information/payment-log.md
+            - Email Log: setup/information/email-log.md
+            - Delay Log: setup/information/delay-log.md
             - Audit Log: setup/information/audit-log.md
-            - Recording: setup/information/recording.md
+            - Certificate: setup/information/certificate.md
+            - Browse Recording: setup/information/recording.md
+            - Jobs: setup/information/jobs.md
 
     - Architecture:
         - API: api.md
@@ -143,8 +153,6 @@ pages:
         - Security: security.md
         - Media Handling: media-handling.md
         - Scaling and Load Balancing: scaling-load-balancing.md
-
-  - AnyEdge: anyedge/anyedge.md
 
   - Customer Portal:
     - Guides: customer-portal/customer-portal.md
@@ -160,3 +168,6 @@ pages:
     - Payment: customer-portal/payment.md
     - Routes: customer-portal/routes.md
     - Interconnect: customer-portal/interconnect.md
+
+  - WebPhone: 
+    - WebPhone: webphone.md

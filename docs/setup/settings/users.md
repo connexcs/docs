@@ -1,5 +1,13 @@
 # Users
-Creating and assigning **Users** and **Groups** based on various levels of permissions allows for more efficient management of access to the ConnexCS Control Panel. This is done under **Setup**>**Settings**>**User**. 
+Setup :material-menu-right: Settings :material-menu-right: Users
+
+Creating and assigning **Users** and **Groups** based on various levels of permissions allows for more efficient management of access to the ConnexCS Control Panel.
+This is done under **Setup** :material-menu-right: **Settings** :material-menu-right: **User**. 
+
+## Design / Concept
+
+Permissions are managed by groups and can be allow or deny. This is granular over every endpoint that is available in the system.
+It is possible for a user to belong to multiple-groups, however in practice it is more easier to manage with a user only having 1 group.
 
 ## Create Users
 To add a new **User**:
@@ -14,10 +22,12 @@ To add a new **User**:
     * **Role** - Select User or Administrator. If no role is assigned, the ConnexCS assigns the role of Administrator. 
     * **Email** - The user's email address. It is recommended this is an email address that is used often. 
     * **Time Zone** - Select the User's time zone. 
+    * **Reseller** - Alpha Feature Only - This allows the user to be able to access only contacts belonging to that reseller.
     * **IP Whitelist** - Specify the IP or range of IPs the user can use to connect to the ConnexCS Control Panel. They will not be able to login from any other IP, so be careful with this setup. The IP Whitelist is specified as follows:
         * Single IP address - Ex: 1.1.1.1
         * Wildcard for IP addresses - Ex: 1.1.1.
         * Range of IP address in the CIDR (Classless Inter-Domain Routing) format - Ex: 1.1.1.0/31
+	* **Shared Ticket** - When enabled tickets raised from the above email address will be visible to all logins within your account.
 	
 3. Once the details are entered, click the **`Save`** button.
 
@@ -34,13 +44,16 @@ To add a new **User**:
 ## Create Groups
 Use a **Group** to assign a specific set of Control Panel access permissions to multiple users. Typically, you create user groups to assign permissions depending on the roles that the users play in your Carrier Service business model. 
 
-*For example, the Network Services Engineers need permissions to set up routing and but should not have access to the customers' billing details. Alternately, the Billing team needs permissions to access and modify the customers' billing details but not to set up routing for customers' calls. *
+!!! tip "Example Group Roles"
+	The Network Services Engineers need permissions to set up routing and but should not have access to the customers' billing details.
+	Alternately, the Billing team needs permissions to access and modify the customers' billing details but not to set up routing for customers' calls.
 
 Step 1: Create Group
 
 1. Click the **`+`** button in the **Groups** section on the right.
 2. Enter a Group **Name**.
-3. Use **Default Permissions** to select the group's global permissions. The options available are: `Create`, `Update`, `Read`, and `Delete`. All 4 will be selected by default. Click the X to remove a permission. Click the down button on the right to add a permission. 
+3. Use **Default Permissions** to select the group's global permissions.
+The options available are: `Create`, `Update`, `Read`, and `Delete`. All 4 will be selected by default. Click the X to remove a permission. Click the down button on the right to add a permission. 
 4. Click **`Save`**. The new Group will be listed. 
 
 Step 2: Specify Group Permissions
@@ -60,8 +73,6 @@ Step 2: Specify Group Permissions
 
     ![alt-text][group-perm]
 
-
-
 !!! question "How does the permissions model work in the ConnexCS Control Panel?" 
     Our permissions model consists of Global permissions and Granular permissions.
     
@@ -69,11 +80,15 @@ Step 2: Specify Group Permissions
     * Granular permissions override and nullify all Global permissions. Ex: if you assign CRUD permissions globally, and assign granular Read permissions to 3 features, the group has permissions to read data for only 3 features. 
     * If you do not assign granular permissions to a group, the group has permissions to use all features in the ConnexCS Control Panel, depending on the level of global permissions (CRUD). For example, if you assign only Create and Read permissions globally, the group has permissions to create and read data for all features.
 
+
 ## Default Reseller
-This feature allows you to create a quick default set of permissions suitable for resellers. Simply click on the **`Create Default Reseller`** to create a new Reseller Group. Multiple Reseller Groups can be created, and they can be edited to match your business needs.  
+This feature allows you to create a quick default set of permissions suitable for resellers.
+Simply click on the **`Create Default Reseller`** to create a new Reseller Group.
+Multiple Reseller Groups can be created, and they can be edited to match your business needs.  
 
 ## Change User Password
-You can change a user's password (used to log into the ConnexCS Control Panel) if the user has forgotten the password. To change the password, you do not need to know the user's current password.
+You can change a user's password (used to log into the ConnexCS Control Panel) if the user has forgotten the password.
+To change the password, you do not need to know the user's current password.
 
 To change a user's password:
 
@@ -87,6 +102,8 @@ To change a user's password:
 
 !!! question "How should I inform the user about the password change?" 
     When you change a user's password, ConnexCS does not send the new password to the user. You must email or text the new password to the user.
+
+
 
 [group-perms]: /setup/img/group-perms.png "Group Permissions"
 [group-perm]: /setup/img/group-perm.png "Group Permission"

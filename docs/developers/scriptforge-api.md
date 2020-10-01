@@ -2,7 +2,7 @@
 
 ConnexCS **ScriptForge** allows you to write ECMAScript 2015 (ES6) (aka JavaScript) which is executed in a secure sandbox on the server. It is designed to be low latency and high throughput.
 
-See [ScriptForge Basics](https://staging--connexcs-docs.netlify.app/developers/scriptforge/) for details on design considerations, as well as basic setup and configuration. 
+See [ScriptForge Basics](https://docs.connexcs.com/developers/scriptforge/) for details on design considerations, as well as basic setup and configuration. 
 
 ## Execution Types
 * **Script** - This is the fastest way to execute custom code and is "synchronous" execution. This should mainly be used for manipulations or calculations. It doesn't use libraries or work with Promises.

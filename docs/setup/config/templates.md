@@ -1,33 +1,36 @@
 # Templates
+Setup :material-menu-right: Config :material-menu-right: Templates
 
-Create your own **Templates** to customise the content displayed on outbound emails/SMS, the Customer Portal, and WebPhone. ConnexCS Templates use a mustash-compatible template language [Handlebars](https://handlebarsjs.com/guide/). Templates are managed under **Setup** > **Config** > **Templates**. 
+Create your own **Templates** to customise the content displayed on outbound emails/SMS, the Customer Portal, and WebPhone. ConnexCS **Templates** use a mustash-compatible template language [Handlebars](https://handlebarsjs.com/guide/).
 
-## Settings 
-Create a new Template by selecting the blue **`+`** or edit an existing Template by clicking on the template name. 
+!!! note "Template Syntax"
+    It is important to follow the template syntax, fields such as `{email}` or `{account_name}` need to be entered exactly otherwise they won't be replaced correctly when the template is rendered. 
 
-In the Subject, SMS, Text and HTML fields:
+## Add Template
 
-* Write your brand name in the place of **[brandName]**.
-* Provide the area that coincides with the alert in **[area]**
-* Give value in **[value]**. 
-* Apply style to your text via HTML style panel under the HTMLtag.
-* Click **`Save`**.
+1. Click the blue **`+`**. 
+2. **Name** the template.
+3. **Subject** for the communication supports variables
+4. Entering text into the **SMS** field does not cause the SMS to be sent, but it is available for use when other parts of the system have SMS set. 
+5. Use **Text** or **HTML** for the content of the communication. 
 
-!!! note "SMS field"
-    Entering text into the SMS field does not cause the SMS to be sent, but it is available for use when other parts of the system have SMS set. 
- 
+*The templating system will replace placeholders with the variable when it is rendered.
+
 ![alt text][addtemp]
 
-## Delete Templates
-To delete a **Template**, select one or more boxes for the Templates you would like to delete, then click the **`Reset`** button. 
+## Stock Templates
+ConnexCS provides standard templates which you are free to customise as you wish. To customise any template, click on the template name, modify as needed, and click save.
+
 
 ## ScriptForge Integration  
-Dynamic Templates are made by including ScriptForge. This is done by using the `scriptforge` tag. Ex: To include a ScriptForge script with ID 1234, use `{{scriptforge 1234}}`. 
+Dynamic Templates are made by including ScriptForge (further details [here](https://docs.connexcs.com/developers/scriptforge/). This is done by using the `scriptforge` tag. Ex: To include a ScriptForge script with ID 1234, use `{{scriptforge 1234}}`. 
 
 This will pass ALL of the variables in the current scope to ScriptForge. Whatever ScriptForge returns will then be made available back in the main scope for use with the template system.
 
   
 ### Sample RSS Feed Injection into a template
+
+This example can be used to provide a custom page in the [WebPhone](/webphone/webphone)
 
 **ScriptForge**
 
@@ -51,5 +54,4 @@ function main (vars) {
 {{/each}}
 ```
 
- 
 [addtemp]: /misc/img/addtemplate.png "Add Temp"

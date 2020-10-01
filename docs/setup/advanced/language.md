@@ -1,4 +1,5 @@
 # Adding Non-English Equivalents for Your Preferred Language
+Setup :material-menu-right: Advanced :material-menu-right: Language
 
 You can add non-English equivalents for words in your preferred language, if you want to view all or most of the words on the Control Panel's UI in your preferred language.
 
