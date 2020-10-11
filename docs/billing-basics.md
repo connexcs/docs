@@ -55,4 +55,28 @@ No - The problem is most likely long duration calls or Late Disconnection FAS.
 5. Can you identify a single call which does not match up correctly.
 Yes - There is an issue with individual call rating.
 
+## How ConnexCS does billing
 
+### Floating Balances
+
+At any time you can check the balance of your customer accounts. The balance that you will read is a floating balance.
+
+Once a call completes it is passed over to the billing engine that will produce a CDR record and update the balance.
+The balance should correlate with the CDR, however there are senarios (such as recalculations, rounding's de-duplication)
+which means that the balance may drift slightly. For this reason the balance gets recalculated from CDR records every 24 hours.
+
+### Breakout Reports
+
+The breakout report calculates:
+* Every hour for the past 3 hours
+* Every day for the past 3 days
+
+The reason for this is to correct for any delayed records or recalculations.
+
+## How to bill
+
+You should NEVER bill based on the balance, or of any delta of this. Equally you should NOT bill based on the breakout report.
+These figures although as correct as possible are NOT the source of truth, both of these are calculated from the CDR's
+
+You should avoid billing for the same day that you are currently on and wherever possible export figures 24 hours after the
+last day that you are billing for.

@@ -106,10 +106,10 @@ pages:
        
     - Developers:
         - Analytics: developers/analytics.md
-        - Database (users): developers/user-space-database.md 
+        - Database: developers/database.md 
         - Form Builder: developers/form-builder.md
+        - Button Builder: developers/button-builder.md
         - ScriptForge Basics: developers/scriptforge.md
-        - ScriptForge API: developers/scriptforge-api.md        
 
     - Setup:
         - AnyEdge: anyedge/anyedge.md
