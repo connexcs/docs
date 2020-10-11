@@ -67,12 +67,6 @@ Feature rich applications which can include a preset (whitelist) of available mo
 ### Driver
 A driver works as an intemediary between ConnexCS and any external system. You can write drivers to bridge the ConnexCS DID provisioning system to a provider of your choice, or built more complicated alerts.
 
-
-**ScriptForge** allows you to write applications that run during specific system events. Currently, scripting functionality is supported in the routing engine, where it runs alongside the call setup process.  Requests to your application are handled with a messaging bus which will queue applications that can't be processed fast enough.  Applications that run in the routing engine must be completed quickly to avoid high PDD.
-
-!!! note "ScriptForge API"
-    See [ScriptForge API](https://docs.connexcs.com/developers/scriptforge-api/) for details on scripts and API reference.
-
 ## Basics
 Script & Apps typically start in the `main()` function and expects a promise to be returned. The first parameter is typically an object called `data`.
 
