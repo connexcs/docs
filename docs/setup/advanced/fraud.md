@@ -24,18 +24,18 @@ The following metrics are monitored for fraud detection.
 * **Channels** - The amount of concurrent calls.
 * **Sequential Calls** - Consecutive calls to the same destination
 
-Each of these metrics has 2 limits: a Warning limit and an Critical limit. The Warning limit is always be lower than the Critical limit. When one of the limits is triggered, the system takes automatic action which is determined by the Mode (defined below).
+Each of these metrics is configured with 2 limits: a Warning limit and a Critical limit. The Warning limit must always be lower than the Critical limit. When one of the limits is triggered, the system takes automatic action which is determined by the Mode (defined below).
 
 ## Modes
 
-Selecting Low or High mode will define the action taken when Warning and Critical thresholds are breached. 
+Selecting Low or High mode will define the action taken when a Warning or Critical threshold is reached. 
 
 | Mode | Warning                            | Critical                             |
 |------|------------------------------------|--------------------------------------|
 | Low  | Call continues, shows in log only. | Call is blocked.                     |
 | High | Call is blocked.                   | Call is blocked, Account is blocked. |
 
-## Setup a Fraud Profile
+## Setup a Fraud Detection
 
 Step 1: Create a Fraud Profile and Rules
 
@@ -54,7 +54,3 @@ Step 2: Apply profile to customer route
 2. Select the **Fraud Profile**.
 3. Select the **Fraud Mode** (as defined above).
 4. Save the route.
-
-
-
-
