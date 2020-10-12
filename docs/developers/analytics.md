@@ -25,7 +25,8 @@ You can create custom reports to help identify your own key metrics. Here are so
 * **Title & Subtitle** - Displays title and subtitle information on the rendered graph / table.
 * **Output** - Graph or Table choose how you want to output to be rendered. You can select both which will of course display a graph and a table together.
 * **Graph Type** - The following graph types are supported.
-|Option|Description|
+
+|Type|Description|
 |---|---|
 |Line|2 Axis of data, one can be temporaral|
 |Bar|2 Axis of data, one can be temporaral|
