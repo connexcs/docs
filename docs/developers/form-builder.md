@@ -10,7 +10,7 @@ Developer :material-menu-right: Form Builder
 * **Customer Portal Call Report** - An integrated call reporting capability. On the customer portal, allows a customer to select 1 or more calls to report, after clicking to report selected calls, the form will appear.
 * **Agent Preview Dialler** - You can design an interface for the agents to view when using the webphone with a campaign. This can be selected from the campaigns in the customer portal.
 
-## Create a Form
+## Create Form
 
 1. Enter a **Name** for the form (consider naming conventions for organizational purposes down the road).
 2. Select the desired **Script Forge** script from the drop-down menu.
