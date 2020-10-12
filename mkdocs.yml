@@ -106,10 +106,10 @@ pages:
        
     - Developers:
         - Analytics: developers/analytics.md
-        - Database (users): developers/user-space-database.md 
+        - Database: developers/database.md 
         - Form Builder: developers/form-builder.md
-        - ScriptForge Basics: developers/scriptforge.md
-        - ScriptForge API: developers/scriptforge-api.md        
+        - Button Builder: developers/button-builder.md
+        - ScriptForge: developers/scriptforge.md
 
     - Setup:
         - AnyEdge: anyedge/anyedge.md
@@ -130,8 +130,8 @@ pages:
             - Language: setup/advanced/language.md
             - Firewall: setup/advanced/firewall.md
             - Prefix Set: setup/advanced/prefix-set.md
-            - Reseller: setup/advanced/reseller.md
-            - Fraud: setup/advanced/fraud.md
+            - Reseller Account: setup/advanced/reseller.md
+            - Fraud Profile: setup/advanced/fraud.md
         - Integrations:
             - API: setup/integrations/api.md
             - Portal: setup/integrations/portal.md
