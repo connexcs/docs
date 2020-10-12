@@ -1,28 +1,22 @@
 # Button Builder
 Developer :material-menu-right: Button Builder
 
-Button builder is used in combination with Forms to allow a button to be placed in existing menu's on the site.
+**Button Builder** is used in combination with [Form Builder](https://docs.connexcs.com/developers/form-builder/) to create a button which can be placed in an existing menu on the site.
 
-An example of its usage is the ability to select 1 or more customers / did's. Suppliment with additional information gathered from a form, then run scriptforge
-to send that data outside or the system, or perform a bulk operations which may need to be repeated.
+!!! example "Example use"
+    Create the ability to select 1 or more customers/DIDs, supplement with additional information gathered from a form, then run Script Forge to either send that data outside the system or perform a bulk operations which may need to be repeated.
 
-### Label
-Choose what lable to appear within the button.
+## Field Explanations
+**Label** - Enter the button label (what it will say).
 
-### Icon
-Choose an icon to be displayed.
+**Icon** - Select an icon to display.
 
-### Type / Colour
-A colour of the button
+**Type / Colour** - Select the button colour.
 
-### Placement
-Where the button is to be displayed
+**Placement** - Select where the button will display.
 
-### ScriptForge
-What scriptforge to run when the button is clicked
+**ScriptForge** - Chose the Script Forge (if any) to run when the button is clicked.
 
-### Forms
-When selected what form to be displayed when the button is clicked, this will then pass the data over to the choosen scriptforge.
+**Forms** - Chose the form (if any) to display when the button is clicked, which will pass the data over to the choosen Script Forge.
 
-### Min / Max Select
-The button can be avaiable when selecting no records, or apply mix/max limits to the selection.
+**Min / Max Select** - No selection means the button is avaiable when selecting no records. Entering limits will set mix/max limits to the selection.
