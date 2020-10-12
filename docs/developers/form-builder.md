@@ -3,9 +3,10 @@ Developer :material-menu-right: Form Builder
 
 **Form Builder** allows developers to create customized input forms on the ConnexCS Platform.
 
-It can be used in the following senarios.
+## Implementation Scenarios
+**Form Builder** can be used in the following scenarios.
 
-* **Customer Portal** - Displayed as a left menu item on the customer portal. This can be used to collect any information from the customer such as number porting requirements, support tickets, investiations, custom reporting, etc.
+* **Customer Portal** - Displayed as a left menu item on the customer portal. This can be used to collect any information from the customer such as number porting requirements, support tickets, investigations, custom reporting, etc.
 * **Customer Portal Call Report** - An integrated call reporting capability. On the customer portal, allows a customer to select 1 or more calls to report, after clicking to report selected calls, the form will appear.
 * **Agent Preview Dialler** - You can design an interface for the agents to view when using the webphone with a campaign. This can be selected from the campaigns in the customer portal.
 
