@@ -10,6 +10,7 @@ Make sure that you have completed the [Getting Started](https://docs.connexcs.co
 Click the server's IP address to view details. 
 
 **Dispatcher** - Load balancer
+
 **Switch** - Cluster member
 
 |Field|Switch type|Description|
