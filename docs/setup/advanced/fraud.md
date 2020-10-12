@@ -3,8 +3,8 @@ Setup :material-menu-right: Advanced :material-menu-right: Fraud Profile
 
 The ConnexCS **Fraud Profile** provides rule-based fraud detection with a high degree of flexibility.
 
-!!! note
-    Currently our fraud detection system prevents new calls, it does not cut off any existing calls.
+!!! note "Will calls trigger fraud detection?"
+    Currently our fraud detection system only prevents new calls, it does not cut off any existing calls.
 
 ## Design / Concept
 
