@@ -1,4 +1,4 @@
-# Resellers
+# Reseller Account
 Setup :material-menu-right: Advanced :material-menu-right: Reseller
 
 !!! danger "Alpha Feature"
