@@ -1,4 +1,4 @@
-# ScriptForge Basics 
+# ScriptForge 
 Developer :material-menu-right: ScriptForge
 
 ConnexCS **ScriptForge** allows you to write ECMAScript 2015 (ES6) (aka JavaScript) which is executed in a secure sandbox on the server. It is designed to be low latency and high throughput.
@@ -7,9 +7,9 @@ It is made for scripts and small applications. Any larger applications are best 
 
 A fair-usage policy applies and your script may not function as expected if there is unecessary resource utilisation or if there are any attempts to break the sandbox.
 
-It is design to work as FaaS - Functions as a Service and auto-scaling your application is handled by our redundant infrastructure
+It is design to work as FaaS (Functions as a Service) and auto-scaling your application is handled by our redundant infrastructure
 
-## Use Cases & Examples
+## Sample Scripts & Use Cases
 You can find sample scripts in our GitHub repository for [example applications](https://github.com/connexcs/scriptforge-examples/). A few examples are included below, however with a Turing Complete language, the possibilities are endless.
 
 * Do Not Call Lists
@@ -131,11 +131,11 @@ module.export = {
 }
 ```
 
-## Getting Started
+## Configuration
 
-### Build the new script
+### Build Script
 
-1. Select **`Script Forge`** from Developer under the side menu.
+1. Select Developer :material-menu-right: ScriptForge
 2. Add a script by clicking **`+`**.
 3. Fill in the script's name and type, then click **`Save`**.
 
@@ -151,11 +151,11 @@ If script shows an error, add this then run the script again:
 {"routing":{}}
 ```
 
-### Assign the Script to a customer
+### Assign the Script to a Customer
 
 To assign scripts to customers:
 
-1. Select **Customer** > [**customer]** 
+1. Select Management :material-menu-right: Customer :material-menu-right: **[customer]** 
 3. Navigate to **Routing**
 4. Select a rate card from the table.
 
