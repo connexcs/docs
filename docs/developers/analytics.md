@@ -41,7 +41,7 @@ You can create custom reports to help identify your own key metrics. Here are so
 
 **Source** - There are multiple sources of data which can be used:
 
-|Type|Description|
+|Source|Description|
 |---|---|
 |Analytics|Big Data multi-vector querying. *Note: Recalcs won't affect this data, and it never should be used for accurate financials.*|
 |G3|Single value time-series data.|
@@ -55,7 +55,7 @@ You can create custom reports to help identify your own key metrics. Here are so
 
 **Interval** 
 
-|Type|Description|
+|Option|Description|
 |---|---|
 |AutoAutomatically choose an appropriate temporal resolution.|
 |Collate|Collapse all the temporal data (EX: When selecting ACD, instead of having an axis for date/time, it will just display a single scalar value).|
