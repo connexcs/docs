@@ -17,7 +17,7 @@ It is possible to bulk upload data and bulk delete data from the datastore. Both
 !!! important
 	Bulk Operations are not audited.
 
-## Create new Database
+## Create Database
 
 1. Click the **`+`** button.
 2. Select the `Customer` and `Dataset Type`.
