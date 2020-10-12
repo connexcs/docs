@@ -1,7 +1,7 @@
 # Resellers
 Setup :material-menu-right: Advanced :material-menu-right: Reseller
 
-!!! danger
+!!! danger "Alpha Feature"
 	Reseller function is *Alpha*, it is not intended for production usage and documentation is limited.
 	
 ConnexCS offers the **Reseller Account** to provide functionality for you as a carrier to resell your services via a reseller or agent.
@@ -17,12 +17,12 @@ You can assign your reseller a customer card. A reseller may have multiple custo
 
 **Reseller mode** - A customer card assigned to the reseller becomes a provider card, which is then used to generate customer cards of their own.
 
-!!! danger
+!!! danger "Moving Reseller accounts"
     Customers should NOT be moved between resellers accounts as it can create unpredicatable billing behaviour.
 	
 ## Create Reseller Account and User
 
-!!! warning
+!!! warning "Verify reseller permissions"
     ALWAYS login to a reseller account yourself to check visibility over what you have allowed them to see. This is NOT currently a production ready feature so it is at your responsibility whether to use it.
 
 1. **Create a Reseller Group** - Go to Setup :material-menu-right: Settings :material-menu-right: User :material-menu-right: Groups :material-plus: Create Default Reseller. This creates the new group with *default permissions* which may be modified as needed. 
@@ -30,5 +30,5 @@ You can assign your reseller a customer card. A reseller may have multiple custo
 3. **Create a Reseller User** - Click **`Users`** from the newly added account then click **`+`**. The desired Group must be selected, either to match the new Reseller Group or an older one.
 5. **Reseller Login** - Your reseller uses the Email and Password defined in the Reseller User to login to their account.
 
-!!! danger
+!!! danger "Potential security risk"
     Failure to select a group will give reseller unlimited access to your master account.
