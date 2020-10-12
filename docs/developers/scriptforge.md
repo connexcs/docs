@@ -9,26 +9,11 @@ A fair-usage policy applies and your script may not function as expected if ther
 
 It is design to work as FaaS (Functions as a Service) and auto-scaling your application is handled by our redundant infrastructure
 
-## Sample Scripts & Use Cases
-You can find sample scripts in our GitHub repository for [example applications](https://github.com/connexcs/scriptforge-examples/). A few examples are included below, however with a Turing Complete language, the possibilities are endless.
-
-* Do Not Call Lists
-* Custom Fraud Detection
-* Internal Automations
-* Capture and Process control panel and customer portal forms
-* Inbound & Outbound Call Filtering
-* Class 5 Programmable Voice Applications
-* DID Drivers
-* Time of Day Restrictions
-
 ## Developer Documentation
-
-ConnexCS provide a number of libraries specifically for use with ConnexCS:
-[Developer Documentation is available here](https://scriptforge-docs.connexcs.com)
+ConnexCS provide a number of libraries specifically for use with ConnexCS. [Developer Documentation is available here](https://scriptforge-docs.connexcs.com). 
 
 ### Available Modules
-You can include some additional modules (from npm), available for applications and drivers only.
-Our objective is to keep the sandbox lightweight and only include modules which are necessary, these are as follows:
+You can include some additional modules (from npm), available for applications and drivers only. Our objective is to keep the sandbox lightweight and only include modules which are necessary:
 
 * axios
 * axios-cookiejar-support
@@ -47,9 +32,30 @@ Our objective is to keep the sandbox lightweight and only include modules which 
 * stripe
 * tough-cookie
 
-## Usage
+### Sample Scripts
+You can find sample scripts in our GitHub repository for [example applications](https://github.com/connexcs/scriptforge-examples/). A few uses cases are included below, however with a Turing Complete language, the possibilities are endless.
 
-ScriptForge was initially designed only to be ran from the routing-engine, however it is available for the following senarios
+* Do Not Call Lists
+* Custom Fraud Detection
+* Internal Automations
+* Capture and Process control panel and customer portal forms
+* Inbound & Outbound Call Filtering
+* Class 5 Programmable Voice Applications
+* DID Drivers
+* Time of Day Restrictions
+
+## Usage
+ScriptForge was initially designed to run from the routing-engine only, however it is available for the following senarios:
+|Scenario|Usage|Location|
+|---|---|---|
+|Class 4 Routing (Termination)|App or Script|Management :material-menu-right: Customer :material-menu-right: [Your Customer] :material-menu-right: Routing :material-menu-right: [Your Route] :material-menu-right: ScriptForge|
+|Class 4 Routing (Origination)|App or Script|Management :material-menu-right: Customer :material-menu-right: [Your Customer] :material-menu-right: DID :material-menu-right: [Your DID] :material-menu-right: ScriptForge|
+|Class 5 Programmable Voice|App Only||
+|Drivers|App Only|Currently available for Alert & DID|
+
+
+## Usage
+ScriptForge was initially designed to run from the routing-engine only, however it is available for the following senarios:
 
 * **Class 4 Routing (Termination)** - (App or Script) Management :material-menu-right: Customer :material-menu-right: [Your Customer] :material-menu-right: Routing :material-menu-right: [Your Route] :material-menu-right: ScriptForge
 * **Class 4 Routing (Origination)** - (App or Script) Management :material-menu-right: Customer :material-menu-right: [Your Customer] :material-menu-right: DID :material-menu-right: [Your DID] :material-menu-right: ScriptForge
@@ -67,7 +73,7 @@ Feature rich applications which can include a preset (whitelist) of available mo
 ### Driver
 A driver works as an intemediary between ConnexCS and any external system. You can write drivers to bridge the ConnexCS DID provisioning system to a provider of your choice, or built more complicated alerts.
 
-## Basics
+## Coding Basics
 Script & Apps typically start in the `main()` function and expects a promise to be returned. The first parameter is typically an object called `data`.
 
 ### Throwing Errors (Class 4)
@@ -155,8 +161,7 @@ If script shows an error, add this then run the script again:
 
 To assign scripts to customers:
 
-1. Select Management :material-menu-right: Customer :material-menu-right: **[customer]** 
-3. Navigate to **Routing**
+1. Select Management :material-menu-right: Customer :material-menu-right: **[customer]** :material-menu-right: Routing
 4. Select a rate card from the table.
 
     ![alt text][s8]  
