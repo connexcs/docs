@@ -4,7 +4,7 @@ Developer :material-menu-right: Analytics
 The **Analytics** section is a powerful tool for gathering, manipulating, and displaying graphical and tabular data. This section allows
 you to build your own reports, source data from various datasources within the system and also from outside 3rd party systems.
 
-You can create custom reports to help identify your own key metrics, some examples of what our customers have build include:
+You can create custom reports to help identify your own key metrics. Here are some examples of what our customers have built:
 
 * **Ticket Count** - Integration with a 3rd party ticket system and display how many tickets a particular customer has open.
 * **FOREX** - Display FOREX data on the dashboard
@@ -12,18 +12,21 @@ You can create custom reports to help identify your own key metrics, some exampl
 * **CLI Stats** - Display stats per CLI
 * **ISO Code Stats** - Display stats ISO Country.
 
-### Path
+## Field Explanations
 
-* **Customer** - Management :material-menu-right: Customer :material-menu-right: Reports
-* **Carrier** - Management :material-menu-right: Carrier :material-menu-right: Reports
-* **Dashboard** - Dashboard on the left menu, displays at the bottom of the dashboard page.
+**Path**
+Select where the data will be displayed.
+
+* **Customer** - Management :material-menu-right: Customer :material-menu-right: Stats
+* **Carrier** - Management :material-menu-right: Carrier :material-menu-right: Stats
+* **Dashboard** - Dashboard :material-menu-right: Displayed at the bottom
 * **Route** - Management :material-menu-right: Customer :material-menu-right: Route Stats
 * **Report** - Management :material-menu-right: Report :material-menu-right: Reports
 
-### Section
+**Section**
 Allows you to group analytic components together when sharing the same name. This may often be collated together in the same tab.
 
-### Title & Subtitle
+**Title & Subtitle**
 Displays title and subtitle information on the rendered graph / table.
 
 ### Output
