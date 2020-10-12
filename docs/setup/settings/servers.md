@@ -13,7 +13,7 @@ Click the server's IP address to view details.
 
 |Field|Description|
 |:----------------:|---|
-|Add LoadBalancer|Add servers to the cluster|
+|Add Load Balancer|Add servers to the cluster|
 |Flush|Force a server update|
 
 **Switch** - Individual servers
