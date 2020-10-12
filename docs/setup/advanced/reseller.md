@@ -1,10 +1,10 @@
 # Reseller Account
 Setup :material-menu-right: Advanced :material-menu-right: Reseller
 
+ConnexCS offers the **Reseller Account** to provide functionality for you as a carrier to resell your services via a reseller or agent.
+
 !!! danger "Alpha Feature"
 	Reseller function is *Alpha*, it is not intended for production usage and documentation is limited.
-	
-ConnexCS offers the **Reseller Account** to provide functionality for you as a carrier to resell your services via a reseller or agent.
 
 ## Concept / Design
 
