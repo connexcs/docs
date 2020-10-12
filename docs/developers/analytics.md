@@ -21,25 +21,19 @@ You can create custom reports to help identify your own key metrics. Here are so
     * **Route** - Management :material-menu-right: Customer :material-menu-right: Route Stats
     * **Report** - Management :material-menu-right: Report :material-menu-right: Reports
 
-**Section**
-Allows you to group analytic components together when sharing the same name. This may often be collated together in the same tab.
-
-**Title & Subtitle**
-Displays title and subtitle information on the rendered graph / table.
-
-### Output
-Graph or Table choose how you want to output to be rendered. You can select both which will of course display a graph and a table together.
-
-### Graph Type
-The following graph types are supported.
-
-* **Line** - 2 Axis of data, one can be temporaral
-* **Bar** - 2 Axis of data, one can be temporaral
-* **Area** - 2 Axis of data, one can be temporaral
-* **Pie** - 1 Axis of data
-* **Scatter** - 2 Axis of data
-* **Radar** - 1 Axis of data
-* **Gague** - 1 Axis of data
+* **Section** - Allows you to group analytic components together when sharing the same name. This may often be collated together in the same tab.
+* **Title & Subtitle** - Displays title and subtitle information on the rendered graph / table.
+* **Output** - Graph or Table choose how you want to output to be rendered. You can select both which will of course display a graph and a table together.
+* **Graph Type** - The following graph types are supported.
+|Option|Description|
+|---|---|
+|Line|2 Axis of data, one can be temporaral|
+|Bar|2 Axis of data, one can be temporaral|
+|Area|2 Axis of data, one can be temporaral|
+|Pie|1 Axis of data|
+|Scatter|2 Axis of data|
+|Radar|1 Axis of data|
+|Gague|1 Axis of data|
 
 ### Source
 There are multiple sources of data which can be used:
