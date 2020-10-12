@@ -14,17 +14,18 @@ You can create custom reports to help identify your own key metrics. Here are so
 
 ## Field Explanations
 
-* **Path** - Select where the data will be displayed.
-    * **Customer** - Management :material-menu-right: Customer :material-menu-right: Stats
-    * **Carrier** - Management :material-menu-right: Carrier :material-menu-right: Stats
-    * **Dashboard** - Dashboard :material-menu-right: Displayed at the bottom
-    * **Route** - Management :material-menu-right: Customer :material-menu-right: Route Stats
-    * **Report** - Management :material-menu-right: Report :material-menu-right: Reports
+**Path** - Select where the data will be displayed.
 
-* **Section** - Allows you to group analytic components together when sharing the same name. This may often be collated together in the same tab.
-* **Title & Subtitle** - Displays title and subtitle information on the rendered graph / table.
-* **Output** - Graph or Table choose how you want to output to be rendered. You can select both which will of course display a graph and a table together.
-* **Graph Type** - The following graph types are supported.
+* **Customer** - Management :material-menu-right: Customer :material-menu-right: Stats
+* **Carrier** - Management :material-menu-right: Carrier :material-menu-right: Stats
+* **Dashboard** - Dashboard :material-menu-right: Displayed at the bottom
+* **Route** - Management :material-menu-right: Customer :material-menu-right: Route Stats
+* **Report** - Management :material-menu-right: Report :material-menu-right: Reports
+
+**Section** - Allows you to group analytic components together when sharing the same name. This may often be collated together in the same tab.
+**Title & Subtitle** - Displays title and subtitle information on the rendered graph / table.
+**Output** - Graph or Table choose how you want to output to be rendered. You can select both which will of course display a graph and a table together.
+**Graph Type** - The following graph types are supported.
 
    |Type|Description|
    |---|---|
