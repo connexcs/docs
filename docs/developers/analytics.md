@@ -14,14 +14,12 @@ You can create custom reports to help identify your own key metrics. Here are so
 
 ## Field Explanations
 
-**Path**
-Select where the data will be displayed.
-
-* **Customer** - Management :material-menu-right: Customer :material-menu-right: Stats
-* **Carrier** - Management :material-menu-right: Carrier :material-menu-right: Stats
-* **Dashboard** - Dashboard :material-menu-right: Displayed at the bottom
-* **Route** - Management :material-menu-right: Customer :material-menu-right: Route Stats
-* **Report** - Management :material-menu-right: Report :material-menu-right: Reports
+* **Path** - Select where the data will be displayed.
+    * **Customer** - Management :material-menu-right: Customer :material-menu-right: Stats
+    * **Carrier** - Management :material-menu-right: Carrier :material-menu-right: Stats
+    * **Dashboard** - Dashboard :material-menu-right: Displayed at the bottom
+    * **Route** - Management :material-menu-right: Customer :material-menu-right: Route Stats
+    * **Report** - Management :material-menu-right: Report :material-menu-right: Reports
 
 **Section**
 Allows you to group analytic components together when sharing the same name. This may often be collated together in the same tab.
