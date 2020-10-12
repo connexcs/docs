@@ -5,7 +5,7 @@ ConnexCS **ScriptForge** allows you to write ECMAScript 2015 (ES6) (aka JavaScri
 
 It is made for scripts and small applications. Any larger applications are best executed on external hardware with Scriptforge intermediating it.
 
-A fair-usage policy applies and your script may not function as expected if there is unecessary resource utilisation or if there are any attempts to break the sandbox.
+A fair-usage policy applies and your script may not function as expected if there is unnecessary resource utilisation or if there are any attempts to break the sandbox.
 
 It is design to work as FaaS (Functions as a Service) and auto-scaling your application is handled by our redundant infrastructure
 
@@ -45,7 +45,7 @@ You can find sample scripts in our GitHub repository for [example applications](
 * Time of Day Restrictions
 
 ## Usage
-ScriptForge was initially designed to run from the routing-engine only, however it is available for the following senarios:
+ScriptForge was initially designed to run from the routing-engine only, however it is available for the following scenarios:
 
 |Scenario|Usage|
 |---|---|
@@ -54,25 +54,16 @@ ScriptForge was initially designed to run from the routing-engine only, however 
 |Class 5 Programmable Voice - (App only)|
 |Drivers - (App only)|Currently available for Alert & DID|
 
-
-## Usage
-ScriptForge was initially designed to run from the routing-engine only, however it is available for the following senarios:
-
-* **Class 4 Routing (Termination)** - (App or Script) Management :material-menu-right: Customer :material-menu-right: [Your Customer] :material-menu-right: Routing :material-menu-right: [Your Route] :material-menu-right: ScriptForge
-* **Class 4 Routing (Origination)** - (App or Script) Management :material-menu-right: Customer :material-menu-right: [Your Customer] :material-menu-right: DID :material-menu-right: [Your DID] :material-menu-right: ScriptForge
-* **Class 5 Programmable Voice** - (App Only)
-* **Drivers** - (App Only) Currently available for Alert & DID
-
 ## Execution Types
 
 ### Script
-This is the fastest way to execute custom code and is "synchronous" execution. This should mainly be used for manipulations or calculations. It can not use libraries or work with Promises.
+This is the fastest way to execute custom code and is "synchronous" execution. This should mainly be used for manipulations or calculations. It can't use libraries or work with Promises.
 
 ### App
 Feature rich applications which can include a preset (whitelist) of available modules, the penalty of the extra features is a slightly higher latency.
 
 ### Driver
-A driver works as an intemediary between ConnexCS and any external system. You can write drivers to bridge the ConnexCS DID provisioning system to a provider of your choice, or built more complicated alerts.
+A driver works as an intermediary between ConnexCS and any external system. You can write drivers to bridge the ConnexCS DID provisioning system to a provider of your choice or build more complicated alerts.
 
 ## Coding Basics
 Script & Apps typically start in the `main()` function and expects a promise to be returned. The first parameter is typically an object called `data`.
@@ -118,7 +109,7 @@ function main (data = {}) {
 ```
 
 ### Driver
-A driver is a module export wihch may contain several pre-defined functions dependent on the integration, flow is an example for DID Driver.
+A driver is a module export which may contain several pre-defined functions dependent on the integration, flow is an example for DID Driver.
 
 ``` js
 module.export = {
@@ -159,8 +150,6 @@ If script shows an error, add this then run the script again:
 ```
 
 ### Assign the Script to a Customer
-
-To assign scripts to customers:
 
 1. Select Management :material-menu-right: Customer :material-menu-right: **[customer]** :material-menu-right: Routing
 4. Select a rate card from the table.
