@@ -46,6 +46,7 @@ You can find sample scripts in our GitHub repository for [example applications](
 
 ## Usage
 ScriptForge was initially designed to run from the routing-engine only, however it is available for the following senarios:
+
 |Scenario|Usage|Location|
 |---|---|---|
 |Class 4 Routing (Termination)|App or Script|Management :material-menu-right: Customer :material-menu-right: [Your Customer] :material-menu-right: Routing :material-menu-right: [Your Route] :material-menu-right: ScriptForge|
