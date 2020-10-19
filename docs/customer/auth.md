@@ -9,10 +9,9 @@ Click each tab to view configuration details.
 
 **Basic** configuration includes IP address, Channels, and Flow Speed. The Ingress and Egress selections are from the perspective of the customer switch (PBX, dialer, etc). 
 
-![alt text][ipauth-basic]
+   ![alt text][ipauth-basic]
 
 === "Advanced"
-
 **Advanced** configuration includes:
 
 + **Codecs**: all codecs are supported unless specific ones are specified here.
@@ -23,11 +22,9 @@ Click each tab to view configuration details.
 + **Force NAT**: forces switch to read the IP address the traffic was received from, not the IP in the SIP packet.
 + **Intercept Reinvite**: helpful to use when customer equipment doesn't support reinvites (may correct issues with dropped calls). 
 
-![alt text][ipauth-adv]
+   ![alt text][ipauth-adv]
 
 === "Parameter Rewrite"
-
-
 The **Parameter Rewrite** tab is used to create automatic replacements for destination numbers or CLI, so a number is formatted in the appropriate [E164 format](https://www.twilio.com/docs/glossary/what-e164). 
 
 1. Click the **`+`**.
