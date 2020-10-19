@@ -1,6 +1,29 @@
 # Auth
 Under the **Auth** tab users can configure IP or SIP (Username/Password) Authentication. To set either one, click the **`+`** button.
- 
+
+=== "g3"
+
+    ```
+    ["account.channel.company.@companyId"]
+    ```
+	
+=== "Analytics / Breakout"
+
+    ```
+	{"customer_id":"@companyId"}
+    ```
+	
+=== "RTP"
+
+    ```
+	{"customer_id":"@companyId", "is_provider":0}
+    ```
+
+=== "ScriptForge"
+
+    ```
+	{"customer_id":"@companyId"}
+    ```
  
 ## IP Authentication
 Click each tab to view configuration details.
