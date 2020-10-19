@@ -16,13 +16,13 @@ Under the **Auth** tab users can configure IP or SIP (Username/Password) Authent
 === "RTP"
 
     ```
-	code indent
+    code unindent
     ```
 
 === "ScriptForge"
 
     ```
-	code indent
+    code unindent
     ```
  
 ## IP Authentication
