@@ -12,12 +12,12 @@ If you have changed the default language, but see missing terms, you can add the
 
 To add non-English equivalents for your preferred language:
 
-1. Make sure you updated the Control Panel's UI to your preferred language. (For details, see [Changing the Language of Text Displayed on the UI.](https://docs.connexcs.com/changing-language/).  
+1. Make sure you updated the Control Panel's UI to your preferred language. (For details, see **[Changing the Language of Text Displayed on the UI.]**(https://docs.connexcs.com/changing-language/))
 3. In the `Language` sub-menu on the left, select the language you are using.
 4. (Optional) Search for the specific word before adding.
 5. Click the **`+`** to create a new entry. 
    
-   * **Key** - English word in the system.
+   * **Key** - English word in the system
    * **Translation** - non-English equivalent
 
 8. Click `Save`.
