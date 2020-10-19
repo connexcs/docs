@@ -1,26 +1,7 @@
 # Auth
 Under the **Auth** tab users can configure IP or SIP (Username/Password) Authentication. To set either one, click the **`+`** button.
 
-=== "g3"
 
-    not code
-    	
-=== "Analytics / Breakout"
-
-    ```
-    code unindent
-    ```
-	
-=== "RTP"
-
-    ```
-    code unindent
-    ```
-
-=== "ScriptForge"
-
-not code unindented
- 
 ## IP Authentication
 Click each tab to view configuration details.
 
@@ -30,23 +11,24 @@ Click each tab to view configuration details.
 
 === "Advanced"
 
-+ **Codecs**: all codecs are supported unless specific ones are specified here.
-+ **Manufacturer and Version**: set the customer switch manufacturer and version if desired (these fields are not functional, they are for reference only).
-+ **Protocol, Port, Dial Pattern**: the default selection is the standard for each parameter
-+ **CLI Prefix, Tech Prefix, Strip Digits, Bandwidth**: these fields are all optional. Setting Bandwidth may be useful for customers with audio problems caused by slow speeds.
-+ **Force From, Username, and Password**: these fields need to be set when using SIP registration
-+ **Force NAT**: forces switch to read the IP address the traffic was received from, not the IP in the SIP packet.
-+ **Intercept Reinvite**: helpful to use when customer equipment doesn't support reinvites (may correct issues with dropped calls). 
+    + **Codecs**: all codecs are supported unless specific ones are specified here.
+    + **Manufacturer and Version**: set the customer switch manufacturer and version if desired (these fields are not functional, they are for reference only).
+    + **Protocol, Port, Dial Pattern**: the default selection is the standard for each parameter
+    + **CLI Prefix, Tech Prefix, Strip Digits, Bandwidth**: these fields are all optional. Setting Bandwidth may be useful for customers with audio problems caused by slow speeds.
+    + **Force From, Username, and Password**: these fields need to be set when using SIP registration
+    + **Force NAT**: forces switch to read the IP address the traffic was received from, not the IP in the SIP packet.
+    + **Intercept Reinvite**: helpful to use when customer equipment doesn't support reinvites (may correct issues with dropped calls). 
 
 === "Parameter Rewrite"
-The **Parameter Rewrite** tab is used to create automatic replacements for destination numbers or CLI, so a number is formatted in the appropriate [E164 format](https://www.twilio.com/docs/glossary/what-e164). 
 
-1. Click the **`+`**.
-2. Select the parameter you want to modify.
-3. Current: enter the prefix for the destination number, or the CLI.
-4. New: enter what should replace the current information.
-5. Use Testing to test what replacement will occur.
-6. Click **`Save`** when done. 
+    The **Parameter Rewrite** tab is used to create automatic replacements for destination numbers or CLI, so a number is formatted in the appropriate [E164 format](https://www.twilio.com/docs/glossary/what-e164). 
+
+    1. Click the **`+`**.
+    2. Select the parameter you want to modify.
+    3. Current: enter the prefix for the destination number, or the CLI.
+    4. New: enter what should replace the current information.
+    5. Use Testing to test what replacement will occur.
+    6. Click **`Save`** when done. 
 
 
 
