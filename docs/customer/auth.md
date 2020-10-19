@@ -4,25 +4,25 @@ Under the **Auth** tab users can configure IP or SIP (Username/Password) Authent
 === "g3"
 
     ```
-    ["account.channel.company.@companyId"]
+    code
     ```
 	
 === "Analytics / Breakout"
 
     ```
-	{"customer_id":"@companyId"}
+	code indent
     ```
 	
 === "RTP"
 
     ```
-	{"customer_id":"@companyId", "is_provider":0}
+	code indent
     ```
 
 === "ScriptForge"
 
     ```
-	{"customer_id":"@companyId"}
+	code indent
     ```
  
 ## IP Authentication
