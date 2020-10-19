@@ -40,7 +40,7 @@ Click each tab to view configuration details.
 
 
 !!! tip "Newly added IP immediately marked as Blocked under IP Authentication"
-    Attempted calls from this IP will not be completed. This occurs because call requests are sent from the new IP before it is authorized. As a result, the ConnexCS fraud detection blocks the unauthorized IP in the firewall. To resolve the blocked IP, go to **Setup :material-menu-right: Advanced :material-menu-right: Firewall**. Selected the blocked IP, then delete it from the firewall. This unblocks the IP, but it will take up to 15 minutes for this change to become active in the switch. See [Threat Detection](https://docs.connexcs.com/setup/advanced/firewall/) for more details. 
+    Attempted calls from this IP will not be completed. This occurs because call requests were sent from the new IP before it is authorized. As a result, ConnexCS fraud detection blocked the unauthorized IP in the firewall. To resolve the blocked IP, go to **Setup :material-menu-right: Advanced :material-menu-right: Firewall**. Select the blocked IP, then delete it from the firewall. This unblocks the IP, but it will take up to 15 minutes for the change to become active in the switch. See [Threat Detection](https://docs.connexcs.com/setup/advanced/firewall/) for more details. 
 
 
 
