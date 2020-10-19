@@ -17,8 +17,6 @@ A **Prefix Set** is 1 or more numbers which you can add and create into a group 
 1. Add desired the prefixes in the Data field. 
 1. Click **`Save`**. 
 
-*The new set will now be available in Ingress Routing.
-
 ## Apply Prefix Set
 Prefix Sets can be applied to the following locations under the Management menu:
 
