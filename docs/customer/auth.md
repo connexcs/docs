@@ -3,10 +3,8 @@ Under the **Auth** tab users can configure IP or SIP (Username/Password) Authent
 
 === "g3"
 
-    ```
-    code
-    ```
-	
+    not code
+    	
 === "Analytics / Breakout"
 
     ```
@@ -21,16 +19,14 @@ Under the **Auth** tab users can configure IP or SIP (Username/Password) Authent
 
 === "ScriptForge"
 
-    ```
-    code unindent
-    ```
+not code unindented
  
 ## IP Authentication
 Click each tab to view configuration details.
 
 === "Basic"
 
-**Basic** configuration includes IP address, Channels, and Flow Speed. The Ingress and Egress selections are from the perspective of the customer switch (PBX, dialer, etc). 
+    **Basic** configuration includes IP address, Channels, and Flow Speed. The Ingress and Egress selections are from the perspective of the customer switch (PBX, dialer, etc). 
 
 === "Advanced"
 
