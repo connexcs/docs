@@ -13,7 +13,6 @@ Click each tab to view configuration details.
 
 === "Advanced"
 
-```
 **Advanced** configuration includes:
 
 + **Codecs**: all codecs are supported unless specific ones are specified here.
@@ -25,12 +24,10 @@ Click each tab to view configuration details.
 + **Intercept Reinvite**: helpful to use when customer equipment doesn't support reinvites (may correct issues with dropped calls). 
 
 ![alt text][ipauth-adv]
-```
-
 
 === "Parameter Rewrite"
 
-```
+
 The **Parameter Rewrite** tab is used to create automatic replacements for destination numbers or CLI, so a number is formatted in the appropriate [E164 format](https://www.twilio.com/docs/glossary/what-e164). 
 
 1. Click the **`+`**.
@@ -41,7 +38,7 @@ The **Parameter Rewrite** tab is used to create automatic replacements for desti
 6. Click **`Save`** when done. 
 
 ![alt text][ipauth-param]
-```
+
 
 
 !!! tip "Newly added IP immediately marked as Blocked under IP Authentication"
