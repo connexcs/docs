@@ -20,6 +20,11 @@ To add non-English equivalents for your preferred language:
 
    ![alt text][adding-words-in-spanish]
 
+
+!!!question "Multiple entries for one Key" 
+	If you add a non-English equivalent for a word, say 'Channel' as 'canal', but there is an existing entry for 'Channel' as 'Canales', the Control Panel replaces the default entry with your new word.
+	
+	
 ## Modify Non-English Equivalents
 To modify existing non-English equivalents that the Control Panel adds by default:
 
@@ -29,9 +34,6 @@ To modify existing non-English equivalents that the Control Panel adds by defaul
 3. Enter the new text in the Translation text box.
 4. Click `Save`.
 5. If you do not see the change, click Refresh located at the top of page.
-
-!!!question "What will happen if I add another entry for a word that Control Panel has translated by default" 
-	If you add a non-English equivalent for a word, say 'Channel' as 'canal'. The Control Panel contains a default entry for 'Channel' as 'Canales'. In such cases, the Control Panel replaces the default entry with your new word.
 
 ## Delete or Reset Non-English Equivalents
 To delete a non-English equivalent you added or to reset an incorrect change to a default entry:
