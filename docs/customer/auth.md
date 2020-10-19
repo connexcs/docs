@@ -9,10 +9,7 @@ Click each tab to view configuration details.
 
 **Basic** configuration includes IP address, Channels, and Flow Speed. The Ingress and Egress selections are from the perspective of the customer switch (PBX, dialer, etc). 
 
-   ![alt text][ipauth-basic]
-
 === "Advanced"
-**Advanced** configuration includes:
 
 + **Codecs**: all codecs are supported unless specific ones are specified here.
 + **Manufacturer and Version**: set the customer switch manufacturer and version if desired (these fields are not functional, they are for reference only).
@@ -21,8 +18,6 @@ Click each tab to view configuration details.
 + **Force From, Username, and Password**: these fields need to be set when using SIP registration
 + **Force NAT**: forces switch to read the IP address the traffic was received from, not the IP in the SIP packet.
 + **Intercept Reinvite**: helpful to use when customer equipment doesn't support reinvites (may correct issues with dropped calls). 
-
-   ![alt text][ipauth-adv]
 
 === "Parameter Rewrite"
 The **Parameter Rewrite** tab is used to create automatic replacements for destination numbers or CLI, so a number is formatted in the appropriate [E164 format](https://www.twilio.com/docs/glossary/what-e164). 
@@ -34,16 +29,17 @@ The **Parameter Rewrite** tab is used to create automatic replacements for desti
 5. Use Testing to test what replacement will occur.
 6. Click **`Save`** when done. 
 
-![alt text][ipauth-param]
+
+
 
 
 
 !!! tip "Newly added IP immediately marked as Blocked under IP Authentication"
     Attempted calls from this IP will not be completed. This occurs because call requests are sent from the new IP before it is authorized. As a result, the ConnexCS fraud detection blocks the unauthorized IP in the firewall. To resolve the blocked IP, go to Setup :material-menu-right: Advanced :material-menu-right: Firewall. Selected the blocked IP, then delete it from the firewall. This unblocks the IP, but it will take up to 15 minutes for this change to become active in the switch 
 
-
-
-
+   ![alt text][ipauth-basic]
+   ![alt text][ipauth-adv]
+![alt text][ipauth-param]
 
 
 
