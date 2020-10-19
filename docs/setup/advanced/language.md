@@ -17,8 +17,8 @@ To add non-English equivalents for your preferred language:
 4. (Optional) Search for the specific word before adding.
 5. Click the **`+`** to create a new entry. 
    
-   * **Key** - English word in the system
-   * **Translation** - non-English equivalent
+    * **Key** - English word in the system
+    * **Translation** - non-English equivalent
 
 8. Click `Save`.
 9. If the new translation is not displayed, click `Refresh` located at the top of page.
