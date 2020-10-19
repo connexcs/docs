@@ -4,6 +4,9 @@ Setup :material-menu-right: Advanced :material-menu-right: Language
 
 Use the **Language** interface to customize your selected interface language. You can add non-English equivalents for words in your preferred language or modify system defaults.
 
+!!!question "Multiple entries for one Key" 
+	If you add a non-English equivalent for a word, say 'Channel' as 'canal', but there is an existing entry for 'Channel' as 'Canales', the Control Panel replaces the default entry with your new word.
+	
 ## Add Non-English Equivalents
 If you have changed the default language, but see missing terms, you can add them in the Language panel. 
 
@@ -13,18 +16,16 @@ To add non-English equivalents for your preferred language:
 3. In the `Language` sub-menu on the left, select the language you are using.
 4. (Optional) Search for the specific word before adding.
 5. Click the **`+`** to create a new entry. 
-6. **Key** - English word in the system.
-7. **Translation** - non-English equivalent
+   
+   * **Key** - English word in the system.
+   * **Translation** - non-English equivalent
+
 8. Click `Save`.
 9. If the new translation is not displayed, click `Refresh` located at the top of page.
 
    ![alt text][adding-words-in-spanish]
 
 
-!!!question "Multiple entries for one Key" 
-	If you add a non-English equivalent for a word, say 'Channel' as 'canal', but there is an existing entry for 'Channel' as 'Canales', the Control Panel replaces the default entry with your new word.
-	
-	
 ## Modify Non-English Equivalents
 To modify existing non-English equivalents that the Control Panel adds by default:
 
