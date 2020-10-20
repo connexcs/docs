@@ -33,7 +33,8 @@ PayPal's **Instant Payment Notification (IPN)** is a service that provides notif
 **Mass Payment** is a bulk payment method that sends funds in an uploaded file to PayPal, allowing the sender to pay less than the standard PayPal fees using their bulk order discounts. Since this payment doesn't trigger anything our VoIP system, we link into PayPal's IPN to accommodate notifications and balance sheet updates.
 
 **Mass Pay vs Express Checkout**
-use this comparison chart listing the differences between Mass Pay and Express Checkout with PayPal to help you decide which to use:
+
+Use this comparison chart listing the differences between Mass Pay and Express Checkout with PayPal to help you decide which to use:
 
 |Mass Pay|Express Checkout|
 |---|---|
@@ -48,6 +49,7 @@ use this comparison chart listing the differences between Mass Pay and Express C
 Below are the steps to configure IPN:
 
 **Step 1: Configure ConnexCS**
+
 1. Navigate to Setup :material-menu-right: Integrations :material-menu-right: API
 2. Click **`Add`**.
 5. Select **PayPal IPN**.
