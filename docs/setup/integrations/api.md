@@ -57,6 +57,7 @@ Below are the steps to configure IPN:
 7. To find the IPN URL (needed later in configuration), open the **`paypal_ipn`** now listed in API.
 
 **Step 2: Identify your IPN listener to PayPal**
+
 After you have configured ConnexCS, add it to your PayPal account. (Copied from PayPal instructions [here](https://developer.paypal.com/docs/api-basics/notifications/ipn/IPNSetup/#).)
 
 1. Login to a PayPal Business Account (A PayPal Business Account--not to be confused with a regular PayPal account--is required to perform this task.)
@@ -67,6 +68,7 @@ After you have configured ConnexCS, add it to your PayPal account. (Copied from 
 6. Fill in the settings, and then copy the API URL.
 
 **Step 3: Insert credentials in your ConnexCS Account**
+
 Enter the new credentials back into your account. (PayPal steps copied from PayPal instructions [here](https://developer.paypal.com/docs/api-basics/notifications/ipn/IPNSetup/#).)
 
 1. Navigate to Setup :material-menu-right: Integrations :material-menu-right: API 
