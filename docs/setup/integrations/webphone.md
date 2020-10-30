@@ -106,7 +106,7 @@ Step 2: Add Domain to Portal
 2. Enter the details in their respective fields of the ensuing window.
 3. Click the **`Save`** button. A certificate will be issued for the domain soon afterwards
 
-## Config Options
+### Config Options
 *Click each tab to view configuration details. 
 
 === "Basic"
@@ -115,13 +115,13 @@ Step 2: Add Domain to Portal
     * **Brandname** - This is what will Display in the WebPhone. Your Account name will not be displayed.
     * **WebRTC Host** - The server address that you will be connecting to (**Domain B** from the initial **WebPhone setup**). This is always a domain name and can be pointed directly to a server or to AnyEdge.
     * **Template Customer** - A pre-configured customer on your account which is used to hold the default values for independently created customers. Available values for this template customer are:
-    * Customer [Fields in the customer itself, such as debit limit]
-    * Routes
-    * Payments
-    * Alerts
-    * Packages
-    * Contracts
-    * **Register Success HTML** - The contents of this box will be displayed to users after they have completed their signup process.
+     * Customer [Fields in the customer itself, such as debit limit]
+     * Routes
+     * Payments
+     * Alerts
+     * Packages
+     * Contracts
+     * **Register Success HTML** - The contents of this box will be displayed to users after they have completed their signup process.
 
     !!! example "Template Customer Example"
     You want to give all of your customers $5.00 credit. Create an account from: Management  Customer. Under Payments for that account, add $5.00. When a new customer creates an account from the Customer Portal, they will see a payment created for $5.00 at the same the time account was created.
@@ -147,14 +147,14 @@ Step 2: Add Domain to Portal
     
 === "Flags"
 
-* **Hide UUID** - UUID is a unique deploy & version identifier, this is what you should ask your end user for if you need to report a problem to us. It is displayed in the side menu.
-* **Menu Right** - Change the normally left menu into a right menu.
-* **Display Balance** - Show the balance of the account.
-* **Edit Settings** - As standard settings are non-editable, if you wish to allow a user to change settings, you can change this.
-* **Register** - Allow registration of new accounts. - Alternatively only existing SIP Username / Passwords can login.
-* **Username as Title** - Change the title of the page to the username logged in.
-* **Accept Payment** - Accept payments on the softphone, similar to on the customer portal.
-* **Auto Answer** - Automatically answer an incoming call.
+    * **Hide UUID** - UUID is a unique deploy & version identifier, this is what you should ask your end user for if you need to report a problem to us. It is displayed in the side menu.
+    * **Menu Right** - Change the normally left menu into a right menu.
+    * **Display Balance** - Show the balance of the account.
+    * **Edit Settings** - As standard settings are non-editable, if you wish to allow a user to change settings, you can change this.
+    * **Register** - Allow registration of new accounts. - Alternatively only existing SIP Username / Passwords can login.
+    * **Username as Title** - Change the title of the page to the username logged in.
+    * **Accept Payment** - Accept payments on the softphone, similar to on the customer portal.
+    * **Auto Answer** - Automatically answer an incoming call.
 
 
 [webphone]: /misc/img/webphone.png "WebPhone Menu"
