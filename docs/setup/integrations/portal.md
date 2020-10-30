@@ -1,24 +1,21 @@
-# Customer Portal Setup
+# Portal
 Setup :material-menu-right: Integrations :material-menu-right: Portal
 
-The **Portal** screen lets you add a domains and sub domain to the control panel, which the customer can access through the customer portal.
-You can provide multiple domains for your customers through different brands, each domain can have different permissions, currencies, default, etc.
+The **Portal** screen lets you add a domains and sub domain to the control panel, which the customer can access through the **Customer Portal**. You can provide multiple domains for your customers through different brands, and each domain can have different permissions, currencies, default, etc.
 
-!!! note
-	Your customer portal will be exposed via a `CNAME` which you setup. This wont work with `A` records, or pointing directly
-
-![alt text][domain]
-
-## Setting up CNAME record
+## Set up CNAME record
 
 1. Sign in to your domain's account at your domain host.
 2. Locate the page for updating your domain's DNS records. The page might be called something like DNS Management, Name Server Management, or Advanced Settings.
 3. Locate the `CNAME` records for your domain.
-4. Add a new domain record, (such as `portal.yourdomain.com`, where `yourdomain.com` is the domain that you own.
+4. Add a new domain record (such as `portal.yourdomain.com`, where `yourdomain.com` is the domain that you own).
 5. Point it towards `portal.connexcs.com.`
-6. If you get asked for a `TTL`, we recommend setting this at 300 (seconds) - 5 minutes
+6. If asked, we recommend setting `TTL` at 300 (seconds), which is 5 minutes.
 7. Once the domain has been configired with your provider you can add it on ConnexCS.
 
+!!! note
+	Your Customer Portal must be exposed via a `CNAME` which you setup. This wont work with `A` records, or pointing directly.
+	
 ## Add Domain in ConnexCS
 
 1. Click the **`+`** button under **Portal**.
@@ -108,5 +105,5 @@ A list of available files will now appear in the "Upload Logo" Box.
 You may enter a text message to be displayed at the bottom of the page, for example _Copyright My Company_
 
 
-[domain]: /setup/img/77.png "Domain"
+
 [add-new-domain]: /setup/img/78.png "Add-New-Domain"
