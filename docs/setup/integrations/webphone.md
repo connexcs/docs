@@ -1,7 +1,7 @@
 # Web Phone
 Setup :material-menu-right: Integrations :material-menu-right: Web Phone
 
-The ConnexCS **WebPhone** runs directly from a browser without the need to install anything. If the user wishes to install the application, additional functionality can become available (ex: push notification capabilities while the app is closed). This means that the application has cross-platform functionality, including Windows, Mac, Android, iOS, etc.
+The ConnexCS **Web Phone** runs directly from a browser without the need to install anything. If the user wishes to install the application, additional functionality can become available (ex: push notification capabilities while the app is closed). This means that the application has cross-platform functionality, including Windows, Mac, Android, iOS, etc.
   
 !!! warning "iOS limitations"
     iOS limits the ability to perform push notifications.
@@ -9,9 +9,9 @@ The ConnexCS **WebPhone** runs directly from a browser without the need to insta
 ## Web Phone Technical Details
 
 ### Application
-ConnexCS **WebPhone** is a WebRTC application using PWA. 
+ConnexCS **Web Phone** is a WebRTC application using PWA. 
 
-**WebRTC** (Real-Time Communications) is a browser protocol which runs on top of an HTTPS connection. ConnexCS **WebPhone** uses WebRTC (HTTPS port 443) for SIP Signaling and WebSockets (random UDP ports) for the Media.
+**WebRTC** (Real-Time Communications) is a browser protocol which runs on top of an HTTPS connection. ConnexCS **Web Phone** uses WebRTC (HTTPS port 443) for SIP Signaling and WebSockets (random UDP ports) for the Media.
 
 !!! warning "BitDefender and WebSockets"
     BitDefender blocks WebSockets unless the phone. and webrtc. domains have been whitelisted. 
@@ -26,7 +26,7 @@ WebRTC is effective for bypassing state-level firewalls by:
 2. Sending all Data (Signaling and Media) over an encrypted connection.
 
 ### Security and Encryption
-ConnexCS **WebPhone** encrypts **all** information (Signaling & Media) between the browser and the ConnexCS platform. This is accomplished by leveraging TLS (Transport Layer Security) protocol support on the underlying browsers. Currently, all modern browsers support TLS 1.0, 1.1, 1.2 & 1.3.
+ConnexCS **Web Phone** encrypts **all** information (Signaling & Media) between the browser and the ConnexCS platform. This is accomplished by leveraging TLS (Transport Layer Security) protocol support on the underlying browsers. Currently, all modern browsers support TLS 1.0, 1.1, 1.2 & 1.3.
 
 MITM (Man-in-the-Middle) attacks actively intercept traffic between endpoints, while still operating within a TLS framework. This type of attack is counteracted with PKI (Public Key Infrastructure), a native HTTPS feature. PKI ensures end-point integrity, so you can be confident the endpoint you connect with is the one you expect without any intermediaries.
   
@@ -41,7 +41,7 @@ MITM (Man-in-the-Middle) attacks actively intercept traffic between endpoints, w
 
 ### Setup Domains
 
-ConnexCS **WebPhone** needs 2 domains to function correctly:
+ConnexCS **Web Phone** needs 2 domains to function correctly:
 
 * **Domain (A)** - This is the location where the phone will be hosted and needs to be provided to your customers. Create a CNAME on your domain pointing to `portal.connexcs.com.` (yes, this is the same as the customer portal).
 * **Domain (B)** This is the signaling domain and is attached to your server. 
@@ -68,11 +68,11 @@ To setup WebRTC on a server:
 !!! tip "AnyEdge and WebRTC"
     If you are using AnyEdge, you can enable WebRTC automatically by adding a domain name to your AnyEdge Domain.
 
-### Add WebPhone Domain
+### Add Web Phone Domain
 
-Once domains, certificates, and server settings are updated, we can add the WebPhone domain. 
+Once domains, certificates, and server settings are updated, we can add the Web Phone domain. 
 
-1. Go to Setup > Integrations > WebPhone
+1. Go to Setup > Integrations > Web Phone
 1. For **Domain**, enter **Domain (A)** 
 2. Set **WebRTC Host** as **Domain (B)**
 3. Click **`Save`**
@@ -96,7 +96,7 @@ Step 1: Set up CNAME record
 	
 Step 2: Add Domain to Portal
 
-1. Click the **`+`** button under **WebPhone**.
+1. Click the **`+`** button under **Web Phone**.
 2. Enter the details in their respective fields of the ensuing window.
 3. Click the **`Save`** button. A certificate will be issued for the domain soon afterwards
 
@@ -105,9 +105,9 @@ Step 2: Add Domain to Portal
 
 === "Basic"
 
-    * **Domain** - The URL where the WebPhone is accessed (**Domain A** from the initial **WebPhone setup**).
-    * **Brand Name** - This is what will Display in the WebPhone. Your Account name will not be displayed.
-    * **WebRTC Host** - The server address that you will be connecting to (**Domain B** from the initial **WebPhone setup**). This is always a domain name and can be pointed directly to a server or to AnyEdge.
+    * **Domain** - The URL where the Web Phone is accessed (**Domain A** from the initial **Web Phone setup**).
+    * **Brand Name** - This is what will Display in the Web Phone. Your Account name will not be displayed.
+    * **WebRTC Host** - The server address that you will be connecting to (**Domain B** from the initial **Web Phone setup**). This is always a domain name and can be pointed directly to a server or to AnyEdge.
     * **Template Customer** - A pre-configured customer on your account which is used to hold the default values for independently created customers. Available values for this template customer are:
        * Customer [Fields in the customer itself, such as debit limit]
        * Routes
