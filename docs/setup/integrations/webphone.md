@@ -107,41 +107,42 @@ Step 2: Add Domain to Portal
 3. Click the **`Save`** button. A certificate will be issued for the domain soon afterwards
 
 ## Config Options
+*Click each tab to view configuration details. 
 
 === "Basic"
 
-* **Domain** - The URL where the WebPhone is accessed (**Domain A** from the initial **WebPhone setup**).
-* **Brandname** - This is what will Display in the WebPhone. Your Account name will not be displayed.
-* **WebRTC Host** - The server address that you will be connecting to (**Domain B** from the initial **WebPhone setup**). This is always a domain name and can be pointed directly to a server or to AnyEdge.
-* **Template Customer** - A pre-configured customer on your account which is used to hold the default values for independently created customers. Available values for this template customer are:
-   * Customer [Fields in the customer itself, such as debit limit]
-   * Routes
-   * Payments
-   * Alerts
-   * Packages
-   * Contracts
-* **Register Success HTML** - The contents of this box will be displayed to users after they have completed their signup process.
+    * **Domain** - The URL where the WebPhone is accessed (**Domain A** from the initial **WebPhone setup**).
+    * **Brandname** - This is what will Display in the WebPhone. Your Account name will not be displayed.
+    * **WebRTC Host** - The server address that you will be connecting to (**Domain B** from the initial **WebPhone setup**). This is always a domain name and can be pointed directly to a server or to AnyEdge.
+    * **Template Customer** - A pre-configured customer on your account which is used to hold the default values for independently created customers. Available values for this template customer are:
+    * Customer [Fields in the customer itself, such as debit limit]
+    * Routes
+    * Payments
+    * Alerts
+    * Packages
+    * Contracts
+    * **Register Success HTML** - The contents of this box will be displayed to users after they have completed their signup process.
 
-!!! example "Template Customer Example"
+    !!! example "Template Customer Example"
     You want to give all of your customers $5.00 credit. Create an account from: Management  Customer. Under Payments for that account, add $5.00. When a new customer creates an account from the Customer Portal, they will see a payment created for $5.00 at the same the time account was created.
 
 === "Menu"
 
-The bottom menu on the webphone is controled here
+    The bottom menu on the webphone is controled here
 
-* **Title** - The label used for this page.
-* **Icon** - The Icon disaplyed in this position. (Web Phone uses Material Design. If you wish to change an icon, you can find a list [here](https://cdn.materialdesignicons.com/5.2.45/).
-* **Position** - Determine Icon position, starting with 1 on the far left. Select Disabled if you don't wish to show this item.
-* **Template** - A Custom page can be used to display custom static & dynamic content. This is generated from a [template](/setup/config/templates/).
+    * **Title** - The label used for this page.
+    * **Icon** - The Icon disaplyed in this position. (Web Phone uses Material Design. If you wish to change an icon, you can find a list [here](https://cdn.materialdesignicons.com/5.2.45/).
+    * **Position** - Determine Icon position, starting with 1 on the far left. Select Disabled if you don't wish to show this item.
+    * **Template** - A Custom page can be used to display custom static & dynamic content. This is generated from a [template](/setup/config/templates/).
 
-!!! tip "Frameless iframe"
+    !!! tip "Frameless iframe"
     We have implemented an edge case. If you wish for the custom page to be an `iframe`, you can use the following code to ensure that it fills up all the available space. Replace www.connexcs.com with the page you wish for it to display.
 	```
 	<!-- NO-CONTAINER -->
 	<iframe src="https://www.connexcs.com" style="border: 0px; width: 100%;height: 100%"></iframe>
         ```	
 
-![alt text][webphone] 
+    ![alt text][webphone] 
 
     
 === "Flags"
