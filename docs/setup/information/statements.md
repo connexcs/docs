@@ -1,7 +1,7 @@
 # Statement
 Setup :material-menu-right: Information :material-menu-right: Statement
 
-**Statement** displays daly spending on your ConnexCS account.
+**Statement** displays daily spending on your ConnexCS account.
 
 ### Columns
 
