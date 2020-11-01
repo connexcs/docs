@@ -1,7 +1,7 @@
 # Audit Log
 Setup :material-menu-right: Information :material-menu-right: Audit Log
 
-All user and API events are recorded in the Audit Log. This includes all activity on the Control Panel & for your customer portal.
+The **Audit Log** displays all recorded user and API events. This includes all activity on the Control Panel as well as your customer portal.
 
 ### Columns
 
@@ -15,7 +15,8 @@ All user and API events are recorded in the Audit Log. This includes all activit
 | Table       | Which type of record was modified              |
 | Data        | Details about the event                        |
 
-In the data column if you click on "View Difference" you will be presented with a popup containing a diff. This shows what the data was before and after the action.
+!!! note "View Difference"
+    In the data column, select "View Difference" to view a popup containing a diff. This shows what the data was before and after the action.
 
 
 
