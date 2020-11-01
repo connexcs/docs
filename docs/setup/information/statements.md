@@ -1,19 +1,20 @@
 # Statement
 Setup :material-menu-right: Information :material-menu-right: Statement
 
-Displays day-by-day spending on your ConnexCS account.
+**Statement** displays daly spending on your ConnexCS account.
 
 ### Columns
 
 | Column Name | Description                                    |
 |-------------|------------------------------------------------|
-| User        | User responsible for the events                |
-| IP          | IP address from which the action was performed |
-| Date / Time | Date / Time which the event was raised         |
-| Primary Key | Unique ID per table related to the event       |
-| Action      | The type of action performed                   |
-| Table       | Which type of record was modified              |
-| Data        | Details about the event                        |
+| Date        | Date of spending                |
+| Minutes     | Total minutes billed |
+| Anyedge Cost| Cost at AnyEdge load balanacer         |
+|Per Channel Cost | Cost for the channel      |
+| Per Minute Cost      | Average cost per minutes                   |
+| Call Record       |              |
+| Topup        | Total topup amount                        |
+| Total        | Total spend for that day                        |
 
 
 
