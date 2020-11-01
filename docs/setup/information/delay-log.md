@@ -1,10 +1,10 @@
 # Delay Log
 Setup :material-menu-right: Information :material-menu-right: Delay Log
 
-A delay event allows you delay the commitment of a record until a later date/time.
+A **Delay Log** event allows you delay the commitment of a record until a later date/time.
 
-You can delay the saving of a record by clicking on the :fontawesome-chevron-down: icon next to the save button and select "Delay Save",
-you can then choose for how long wish for the event to be delayed.
+To delay the saving of a record, click on the :fontawesome-chevron-down: icon next to the Save button and select "Delay Save",
+then select how long to delay the event. 
 
 The Delay Log page shows all the save-events which have been delayed and when they will be expected to be executed.
 
