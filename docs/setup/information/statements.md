@@ -7,19 +7,14 @@ Setup :material-menu-right: Information :material-menu-right: Statement
 
 | Column Name | Description                                    |
 |-------------|------------------------------------------------|
-| Date        | Date of spending                |
-| Minutes     | Total minutes billed |
-| Anyedge Cost| Cost at AnyEdge load balanacer         |
-|Per Channel Cost | Cost for the channel      |
-| Per Minute Cost      | Average cost per minutes                   |
-| Call Record       |              |
-| Topup        | Total topup amount                        |
-| Total        | Total spend for that day                        |
-
-
-
-
-
+| Date        | Date billed.                |
+| Minutes     | Total (Actual) minutes processed by the system on that day.|
+| Anyedge Cost| Costs incurred associated with AnyEdge Usage.         |
+|Per Channel Cost | Costs incurred associated with Cloudswitch usage when billed Per Channel.      |
+| Per Minute Cost      | Costs incurred associated with Cloudswitch usage when billed Per Minutes.                   |
+| Call Recording Cost       |Costs incurred associated with Cloudswitch usage when billed Per Minutes.              |
+| Topup        | Credits to the account from payments made.                        |
+| Total        | Total difference for that day.                        |
 
 
 
