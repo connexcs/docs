@@ -60,7 +60,7 @@ After the domains are configured, verify the certificates are in the certificate
 To setup WebRTC on a server:
 
 1. Ensure **Domain (B)** (signalling domain from above) points ONLY to the server where you enable WebRTC. 
-2. Update your server at Setup > Settings > Servers > select the server then Edit:
+2. Update your server at Setup :material-menu-right: Settings :material-menu-right: Servers :material-menu-right: select the server then Edit:
    * Update the FQDN to the server
    * Ensure that both **TLS** and **WebRTC** are enabled
    * Run `Install Server` if any settings were changed
@@ -72,7 +72,7 @@ To setup WebRTC on a server:
 
 Once domains, certificates, and server settings are updated, we can add the Web Phone domain. 
 
-1. Go to Setup > Integrations > Web Phone
+1. Go to Setup :material-menu-right: Integrations :material-menu-right: Web Phone
 1. For **Domain**, enter **Domain (A)** 
 2. Set **WebRTC Host** as **Domain (B)**
 3. Click **`Save`**
@@ -133,6 +133,7 @@ Step 2: Add Domain to Portal
     
     !!! tip "Frameless iframe"
     We have implemented an edge case. If you wish for the custom page to be an `iframe`, you can use the following code to ensure that it fills up all the available space. Replace www.connexcs.com with the page you wish for it to display.
+	
 	```
 	<!-- NO-CONTAINER -->
 	<iframe src="https://www.connexcs.com" style="border: 0px; width: 100%;height: 100%"></iframe>
