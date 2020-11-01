@@ -60,7 +60,7 @@ After the domains are configured, verify the certificates are in the certificate
 To setup WebRTC on a server:
 
 1. Ensure **Domain (B)** (signalling domain from above) points ONLY to the server where you enable WebRTC. 
-2. Update your server at Setup :material-menu-right: Settings :material-menu-right: Servers :material-menu-right: select the server then Edit:
+2. Navigate to Setup :material-menu-right: Settings :material-menu-right: Servers :material-menu-right: select the server then Edit.
    * Update the FQDN to the server
    * Ensure that both **TLS** and **WebRTC** are enabled
    * Run `Install Server` if any settings were changed
