@@ -2,90 +2,92 @@
 
 The initial setup in ConnexCS will configure a single carrier, a single customer and a single rate card.
 
-!!! note "Whats my servers IP Address?"
+!!! note "What is my server IP Address?"
     IP addresses are deployed *after* you have completed the getting started steps.
     
-!!! note "Need Help?"
-    If you need help we offer free 1:1 training, you can book this at the following link: <https://connexcs.youcanbook.me/>
+!!! help "Need Help?"
+    If you need help we offer free 1:1 training, you can book this at <https://connexcs.youcanbook.me/>
 
 ## Prerequisites
   * You have a modern web browser such as Google Chrome, Firefox, Safari, or their equivalent.
   * You have a basic understanding of Telecoms--customers, providers, and rates.
   * You have created an account with ConnexCS.com.
 
-## Verifying Personal Details
-Before you configure you account, you need to verify your email and mobile number. You can do this in the **Personal Profile** pane.  The Personal Profile pane is found by clicking the notification icon at the top left of the screen. 
+## Verify Contact Details
+Before you configure your account, you need to verify your email and mobile number. You can do this using the Alerts icon at the top left of the screen. 
 
 ![notification-icon][notification-icon]
 
+This will show you all outstanding items necessary to complete initial setup. 
+
+![alt text][verify-mobile-1]
 
 ### Email Verification
+We verify email addresses to ensure that they are genuine. 
 
-We verify email addresses to ensure that they are genuine. To verify your email address, select the Notification icon at the top left of the screen, then Verify Email.
+To verify your email address:
 
-   ![alt text][verify-email-1]
-
-1. In the Personal Profile pane, click the Verify Email icon.![alt text][verification-icon] 
+1. Select `Verify Email`.
 2. An **Email Verification Sent** popup confirms the email was sent to your address.
 3. Click the link in the email, or copy & paste the verification code into the Verification Code field and and click the `Verify` button.
 
-   ![alt text][verify-email-2]
-
 ### Mobile Verification
+Mobile verification ensures all mobile devices associated with your account are genuine.  Before you verify a mobile number, make sure the information is correct. 
 
-Mobile verification is to ensure all mobile devices associated with your account are genuine.  Before you verify a mobile number, make sure the information is correct. To modify or add a mobile number, select the Edit icon in the Personal Profile pane, make your changes, and click `Save`. 
-
->The number must be in E.164 format. E.164 numbers are formatted [+] [country code] [subscriber number including area code] and have a maximum of fifteen digits.
+!!! note "Number Format"
+    The number must be in E.164 format. E.164 numbers are formatted [+] [country code] [subscriber number including area code] and have a maximum of fifteen digits.
 
 To verify a mobile number:
 
-1. Select the Notification icon at the top left of the screen.
-2. Select `Verify Mobile`.
-3. In the Personal Profile pane, click on the Verify Mobile icon. 
-4. A **Mobile Verification Sent** popup confirms the email was sent to your email address.
-5. Click the link in the email, or copy & paste the verification code into the Verification Code field and and click the `Verify` button.
+1. Select `Verify Mobile`.
+2. A **Mobile Verification Sent** popup confirms the verification code was sent to your mobile phone.
+5. Click the link in the SMS, or enter the verification code into the Verification Code field and and click the `Verify` button.
 
- ![alt text][verify-mobile-1]
+## Setup Personal Profile
+While not strictly necessary to configure your Personal Profile to complete basic setup, this is a good time to get it done. This can be found by clicking your name in the upper right corner and selecting `Profile`. 
+
+--- "Basic"
+
+    View account details such as Name, Role, Email and Mobile. Only the Mobile field is editable. 
+    
+    **Two Factor Authentication** - This adds additional security against password guessing and theft, includng brute force attacks (details [here](https://www.ncsc.gov.uk/guidance/multi-factor-authentication-online-services). This is configured on ConnexCS by clicking the `Enable` button and following prompts for QR code. You must install a 2FA/TFA app on your phone. 
+    
+    **Web Auth N / FIDO2** -  This allows you to enable hardware security keys/tokens, which is more secure that basic password protection (details [here](https://www.ncsc.gov.uk/collection/mobile-device-guidance/enterprise-authentication-policy). This is configured on ConnexCS by clicking the `Enroll` button. Once setup, there will be a special button to click/tap upon login to the ConnexCS portal. 
+
+--- "Advanced"
+     
+    Manage your email subscriptions by clicking the blue `Edit` button. 
 
 
 ## Customer Setup
+Below are the instructions for basic customer setup, including the mandatory fields you need to complete to create a profile, and authenticate account details like IP addresses and payments.  For more detailed instructions about setting up customers, see [Customer Management](https://docs.connexcs.com/customer/customer/) and following sections.
 
-Below are the instructions for basic customer setup.  It will include the mandatory fields you need to complete to create a profile, and authenticate account details like IP addresses and payments.  For more detailed instructions about setting up customers, see [Customer Management].
+Navigate to Management :material-menu-right: Customer:
 
-First, go to Management > Customer:
-
-  ![alt text][customer-dashboard-new]
-
-
-On this screen, you can modify customer details,filter the list of customers, and perform bulk actions. To view outstanding actions on a customer, hover over the Warning icon. In the example below, you can see that routing has not been set. Click on the customer's name to update their routing details.
+Here you can modify customer details, filter the customer list, and perform bulk actions. To view outstanding actions on a customer, hover over the Warning icon. In the example below, you can see that routing has not been set. In that case, you would click on the customer's name to update their routing details.
 
 ![alt text][warning-icon]  
 
-1. To add a new customer, click on the `+` icon. 
-
-      ![alt text][add-customer-new]
-
+### Create a new Customer
+1. Click on the `+` icon. 
 2. Enter the customer's Name.
-3. Select the currency to use for this  account. Please note this cannot be changed latger
+3. Select the currency to use for this account. Please note this cannot be changed later.
 4. Add a tax percentage, which will be calculated for each added payment.
 5. Click `Save`.
 
       ![alt text][customer-save-new]
 
-### Authentication
+### Set Authentication
 
-1. On the Customers screen, select a customer to authenticate.
+1. Select the customer to authenticate.
 2. Click on the Auth menu item.
 3. Under IP Authentication, click on the '+' icon.
-
-    ![alt text][ip-auth-1]
-
 4. Enter the Origination/Customer IP address
-> Note: We support SRV (service) records & domains too. A Service record identifies servers that provide
-special services to a domain, e.g. defining where a SIP service may be found).
 5. Click Save.
 
-  ![alt text][ip-auth-2]
+!!! note "Additional Authentication Support"
+    We support SRV (service) records & domains too. A Service record identifies servers that provide
+special services to a domain, e.g. defining where a SIP service may be found.
 
 
 ### SIP User Authentication
@@ -193,7 +195,6 @@ Deploying a server with ConnexCS is an efficient operatation.  You should be abl
 [Ingress Routing]: <https://docs.connexcs.com/en/latest/ingress-routing/>
 
 [verify-email-1]: /getting-started/img/1.png "verify-mobile-1"
-[verify-email-2]: /getting-started/img/2.png "verify-email-2"
 [verify-mobile-1]: /getting-started/img/3.png "verify-mobile-1"
 
 [customer-dashboard-new]: /getting-started/img/4.png "customer-dashboard-new"
@@ -225,5 +226,5 @@ Deploying a server with ConnexCS is an efficient operatation.  You should be abl
 
 [notification-icon]: /getting-started/img/notification-icon.png "notification icon"
 [warning-icon]: /getting-started/img/warning-icon.png "warning-icon"
-[verification-icon]: /getting-started/img/verification-icon.png "verification-icon"
+
 
