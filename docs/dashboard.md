@@ -5,17 +5,17 @@ The **Dashboard** overview provides a summary of active customers and channels a
 ## Top of Page Icons
 ![alt text][top of page]
 
-**Alerts** Quick view of existing Alerts on the Account
+**Checklist** Quick view of outstanding Alerts on the account which should be addressed. Upon initial setup, there will be Alerts to verify email and mobile for the account, as well as reminder to create your customers, setup carriers, and so on. 
 
-**Time Zone** Click on the Date/Time box to select the Time Zone
+**Time Zone** Click on the Date/Time box to select the Time Zone for your site. 
 
-**Docs** Click on the question mark to access the ConnexCS Documentation
+**Documentation** Click on the question mark to access the ConnexCS Documentation.
 
-**Payment** Displays the current switch balance and provides a quick link to make a payment
+**Account Balance** Displays the current account balance and a link to make a payment using a credit card or PayPal. 
 
-**Channel Count** Total Live Channels in use for all customers
+**Channel Count** Total Live Channels currently in use for all customers.
 
-**Account** Use this to Change Password or Language, or to Log Out.
+**Account** Use this to update your Profile, Change Password or Language, or Log Out.
 
 
 ## Overview
