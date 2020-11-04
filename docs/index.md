@@ -1,13 +1,11 @@
 ConnexCS User Documentation
 ========================
 
-Welcome to the Connex Carrier Services User Documentation.  If you are new to ConnexCS we recommend taking a look at the **[Getting Started Guides]**.  They will walk you through the **Dashboard**, our equivalent to the home screen.  
+Welcome to the **Connex Carrier Services User Documentation**.  If you are new to ConnexCS, we recommend beginning with at the **[Getting Started Guides](https://docs.connexcs.com/getting-started/)**. From there, take  quick look at the [**Dashboard** overivew](https://docs.connexcs.com/dashboard/), the equivalent to the ConnexCS home screen.  
 
-For additional walkthroughs, see the [Video Guide](https://docs.connexcs.com/video-guide/) for information on standard funtions on the system. 
+See the [Video Guide](https://docs.connexcs.com/video-guide/) for information additional walkthroughs on standard functions on the system. 
 
-More than a repository for troubleshooting help, our reference documentation helps customers who want to make sure they ask the right questions if a problem warrants a call.  As our system evolves with newer versions and updates, we will continue to update the corresponding documentation. We encourage requests for documentation if a subject needs more attention.
+The remainder of the documentation is not only a repository for troubleshooting help, but also serves as reference documentation to help customers who want to make sure they ask the right questions if a problem warrants a call.  As our system evolves with newer versions and updates, we will continue to update the corresponding documentation. We encourage requests for documentation if a subject needs more attention.
 
 !!! tip "Virtual Training"
     Book an appointment now for online [Training and Advanced Support](https://connexcs.youcanbook.me/). 
-
-[Getting Started Guides]: <https://docs.connexcs.com/>

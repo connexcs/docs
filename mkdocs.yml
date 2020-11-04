@@ -42,12 +42,12 @@ pages:
     - Dashboard : dashboard.md
 
     - Customer:
+        - Customer: customer/customer.md
         - Main: customer/main.md
         - Auth: customer/auth.md
         - Routing: customer/routing.md
-        - CLI: customer/cli.md
-        - Customer: customer/customer.md
         - Payment: customer/payment.md
+        - CLI: customer/cli.md
         - DID: customer/did.md
         - CDR: customer/cdr.md
         - Package: customer/package.md
