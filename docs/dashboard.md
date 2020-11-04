@@ -31,7 +31,7 @@ Upper graphs:
 
 + **Channels** This graph displays all currently active channels 
 Use the icons in upper right corner ![alt text][profit] to refresh, select options, or download the graph. 
-+ **Channels SanKey** *Diagram in development*
++ **Channels SanKey** Shows which calls and carriers are linked together. *Diagram in development*
 
 Lower graphs:
 
