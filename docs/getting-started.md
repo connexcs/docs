@@ -28,8 +28,9 @@ We verify email addresses to ensure that they are genuine.
 To verify your email address:
 
 1. Select `Verify Email`.
-2. An **Email Verification Sent** popup confirms the email was sent to your address.
-3. Click the link in the email or copy & paste the verification code into the Verification Code field
+2. The Personal Profile Screen pops-up
+2. Click the orange `!` next to Email, this will generate a code and send it to the email address. 
+3. Click the link in the email or copy & paste the code into the Verification Code field in the Verify Email pop-up. 
 4. Click `Verify`.
 
 ### Mobile Verification
@@ -41,8 +42,10 @@ Mobile verification ensures all mobile devices associated with your account are 
 To verify a mobile number:
 
 1. Select `Verify Mobile`.
-2. A **Mobile Verification Sent** popup confirms the verification code was sent to your mobile phone.
-5. Click the link in the SMS or enter the verification code into the Verification Code field
+2. The Personal Profile Screen pops-up
+3. Make sure the number is correct and in E.164 format: [+] [country code] [subscriber number including area code] with maximum of fifteen digits.
+2. Click the orange `!` next to Mobile, this will generate a code and send it to mobile number. 
+5. Enter the code into the Verification Code field in the Verify Mobile pop-up. 
 5. Cick `Verify`.
 
 ## Setup Personal Profile
