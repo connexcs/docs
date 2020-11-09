@@ -9,7 +9,7 @@ To create a conference call:
 2. Enter the following parameters
 
     * Enter a **Name** for the conference call.
-    * Select the **Customer** from the drop-down list. By default, the Conference is only available to users in this customer, however routing can be setup to allow other custoemrs to access it.
+    * Select the **Customer** from the drop-down list. By default, the Conference is only available to users in this customer, however routing can be setup to allow other customers to access it.
     * Enter the **Extension** for the callers to call (essentially, the dial-in number)
     * Configure the **PIN** and **Moderator PIN** for additional security 
     * **Quality** sets the amount of bandwidth available per caller
