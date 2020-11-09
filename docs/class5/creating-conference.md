@@ -1,22 +1,22 @@
 # Conference Calls
-Use this feature when you want to allow multiple callers to communicate with each other over a voice call. The Callers join the call and are presided over by a Moderator. This is configured under **Class5** > **Conference**. 
+**Class5** :material-menu-right: **Conference**
+Use this feature when you want to allow multiple callers to communicate with each other over a voice call. The Callers join the call and are presided over by a Moderator. 
 
-
-
-## New Conference Call
+## Create Conference Call
 To create a conference call:
 
 1. Click the `+` icon.
 2. Enter the following parameters
 
-    * Enter a `Name` for the conference call.
-    * Select the `Customer` from the drop-down list
-    * Enter the `Extension` for the callers to call (essentially, the dial-in number)
-    * A 'PIN' may be configured for additional security 
-    * Select the conference `Quality` from the drop-down list. Quality is set by the amount of bandwidth available per caller: `Narrow Band` (8 KHz), `Wide Band1` (16 KHZ), and `Ultra Wide Band` (32 KHz).
-    * Set the `Max Members` to limit the number of concurrent callers this conference must allow. Note: the preset of '0' Max Members allows an unlimited number of callers can join the conference. 
-      
-    ![alt text][conference-popup]
+    * Enter a **Name** for the conference call.
+    * Select the **Customer** from the drop-down list. By default, the Conference is only available to users in this customer, however routing can be setup to allow other custoemrs to access it.
+    * Enter the **Extension** for the callers to call (essentially, the dial-in number)
+    * Configure the **PIN** and **Moderator PIN** for additional security 
+    * **Quality** sets the amount of bandwidth available per caller
+        * `Narrow Band` = 8 KHz (G711)
+        * `Wide Band1` = 16 KHZ
+        * `Ultra Wide Band` = 32 KHz
+    * **Max Members** limits the number of concurrent callers this conference must allow. Note: the preset of '0' Max Members allows an unlimited number of callers can join the conference. 
    
 
 ## Conference Call keypad options
@@ -38,4 +38,3 @@ Callers may use the keypad to control the audio on the conference call.
     |#|hangup|disconnect the call and drop out of the conference.|
 
 
-[conference-popup]: /class5/img/conference-popup.png "conference-popup"
