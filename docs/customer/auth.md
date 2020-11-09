@@ -76,8 +76,8 @@ Under the **Auth** tab, configure IP or SIP (Username/Password) Authentication f
 
     If Voice Mail is enabled, you can set which email address receives messages, reset the Voicemail Password, and view and delete current messages. 
 
-    !!! warning "SIP Password security"
-        SIP passwords are a requirement of the SIP protocol but can present security risks for a provider. They must be configured in ConnexCS when SIP authentication is setup but are not available for providers or customers to retrieve afterwards. Providers should generate a unique SIP password for each SIP user and send that to the customer. This gives the customer the responsibility of keeping track of the password and keeping it safe. Additionally, the unique password will allow for traceability if the customer's system is ever compromised. 
+!!! warning "SIP Password security"
+    SIP passwords are a requirement of the SIP protocol but can present security risks for a provider. They must be configured in ConnexCS when SIP authentication is setup but are not available for providers or customers to retrieve afterwards. Providers should generate a unique SIP password for each SIP user and send that to the customer. This gives the customer the responsibility of keeping track of the password and keeping it safe. Additionally, the unique password will allow for traceability if the customer's system is ever compromised. 
 
 [ipauth-basic]: /customer/img/ipauth-b.png "Edit Switch Basic"
 [ipauth-adv]: /customer/img/ipauth-adv.png "Edit Switch Advance"
