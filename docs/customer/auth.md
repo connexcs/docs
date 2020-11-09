@@ -40,8 +40,8 @@ Under the **Auth** tab, configure IP or SIP (Username/Password) Authentication f
     6. Click **`Save`** when done. 
 
 
-    !!! tip "Newly added IP immediately marked as Blocked under IP Authentication"
-        Attempted calls from this IP will not be completed. This occurs because call requests were sent from the new IP before it is authorized. As a result, ConnexCS fraud detection blocked the unauthorized IP in the firewall. To resolve the blocked IP, go to **Setup :material-menu-right: Advanced :material-menu-right: Firewall**. Select the blocked IP, then delete it from the firewall. This unblocks the IP, but it will take up to 15 minutes for the change to become active in the switch. See [Threat Detection](https://docs.connexcs.com/setup/advanced/firewall/) for more details. 
+!!! tip "Newly added IP immediately marked as Blocked under IP Authentication"
+    Attempted calls from this IP will not be completed. This occurs because call requests were sent from the new IP before it is authorized. As a result, ConnexCS fraud detection blocked the unauthorized IP in the firewall. To resolve the blocked IP, go to **Setup :material-menu-right: Advanced :material-menu-right: Firewall**. Select the blocked IP, then delete it from the firewall. This unblocks the IP, but it will take up to 15 minutes for the change to become active in the switch. See [Threat Detection](https://docs.connexcs.com/setup/advanced/firewall/) for more details. 
 
 
 ## SIP User Authentication
@@ -50,13 +50,10 @@ Under the **Auth** tab, configure IP or SIP (Username/Password) Authentication f
 === "Basic"
 
     + **Username** and **Password**: Must match configuration on the customer UAC. The password can be reset by clicking on the **`Password`** button on the **Customer** > **Auth** page. 
-    + **NAT/SIP Ping**: refers to pings sent from ConnexCS back to the through customer firewall to their UAC. If enabled, they may keep a connection up for longer calls (typically either 1800 or 3600 seconds).
+    + **NAT/SIP Ping**: refers to pings sent from ConnexCS back to the through customer firewall to their UAC. If enabled, they may keep a connection up for longer calls (typically either 1800 or 3600 seconds). Once NAT or SIP pings are enabled, the **Latency** tab will be available at the top of the SIP user screen. This can be helpful for troubleshooting audio problems. 
         + **Disabled**: no pings are sent
         + **Enabled**: UDP ping
         + **Enabled (Timeout)**: SIP ping (drops connection if ping can't be returned)
-
-    !!! warning "SIP Password security"
-    SIP passwords are a requirement of the SIP protocol but can present security risks for a provider. They must be configured in ConnexCS when SIP authentication is setup but are not available for providers or customers to retrieve afterwards. Providers should generate a unique SIP password for each SIP user and send that to the customer. This gives the customer the responsibility of keeping track of the password and keeping it safe. Additionally, the unique password will allow for traceability if the customer's system is ever compromised. 
     
      ![alt text][sip-b]
 
@@ -79,10 +76,8 @@ Under the **Auth** tab, configure IP or SIP (Username/Password) Authentication f
 
     If Voice Mail is enabled, you can set which email address receives messages, reset the Voicemail Password, and view and delete current messages. 
 
-
-
-!!! tip
-    Once NAT or SIP pings are enabled, the Latency tab will be available at the top of the SIP user screen. This can be helpful for troubleshooting audio problems. 
+    !!! warning "SIP Password security"
+    SIP passwords are a requirement of the SIP protocol but can present security risks for a provider. They must be configured in ConnexCS when SIP authentication is setup but are not available for providers or customers to retrieve afterwards. Providers should generate a unique SIP password for each SIP user and send that to the customer. This gives the customer the responsibility of keeping track of the password and keeping it safe. Additionally, the unique password will allow for traceability if the customer's system is ever compromised. 
 
 [ipauth-basic]: /customer/img/ipauth-b.png "Edit Switch Basic"
 [ipauth-adv]: /customer/img/ipauth-adv.png "Edit Switch Advance"
