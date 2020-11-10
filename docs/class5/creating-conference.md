@@ -18,7 +18,10 @@ To create a conference call:
         * `Wide Band1` = 16 KHZ
         * `Ultra Wide Band` = 32 KHz
     * **Max Members** limits the number of concurrent callers this conference must allow. Note: the preset of '0' Max Members allows an unlimited number of callers can join the conference. 
-   
+
+![alt text][conference]
+
+
 
 ## Conference Call keypad options
 Callers may use the keypad to control the audio on the conference call. 
@@ -37,5 +40,7 @@ Callers may use the keypad to control the audio on the conference call.
     |9|energy down|decrease the minimum energy threshold by 1 unit.|
     |*|deaf mute|mute your speakers and the microphone, in one action.|
     |#|hangup|disconnect the call and drop out of the conference.|
+ 
+    
 
-
+[conference]: /class5/img/conference.png "Add Conference"
