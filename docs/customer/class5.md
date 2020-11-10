@@ -1,5 +1,5 @@
 # Class5
-**Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Class5
+**Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Class5**
 
 In **Class5** are the options for the ConnexCS Unified Communications service. While the majority of the ConnexCS system is centered around Class4 routing, this area provides several functions which customers may configure for better user experience.  
 
