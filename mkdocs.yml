@@ -100,9 +100,11 @@ pages:
         - Viewing Audit Logs: viewing-audit-logs.md
 
     - Class 5:
-        - Conference Calling: class5/creating-conference.md
+        - Apps: class5/apps.md
+        - Conference: class5/creating-conference.md
         - IVR: class5/creating-ivr.md
         - Groups: class5/creating-group.md
+        - Voicemail: class5/voicemail.md
        
     - Developers:
         - Analytics: developers/analytics.md
