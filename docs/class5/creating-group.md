@@ -35,8 +35,8 @@ If you want to use audio files for the group, they will need to be uploaded to t
     
 6. If you select **Queue**, you will have the following additional fields:
 
-|Field |Description|
-|------|----------------------|
+|Field   |Description|
+|--------|----------------------|
 |`On Hold Music` |The audio file to play to the member and caller when the call is placed on hold.|
 |`Join Message` |The audio file that contains the Welcome Message played to the caller after they dial the group extension.|
 |`Chime List` |A list of audio files with the messages played to the call if no members of the group are available and the caller is waiting to be routed to the next available member. The message could thank them for waiting, play an advertisement, reference them to online or email support, and so on.|
@@ -44,8 +44,3 @@ If you want to use audio files for the group, they will need to be uploaded to t
 |`Agent Login Destination` |The extension number an individual must dial to join the group.|
 |`Agent Logout Destination` |The extension number an individual must dial to quit the group.|
 |`Agent Offhook Destination` |An extension number an individual must dial to receive calls immediately after joining the group.|
-    
-    
-![alt text][groups-popup]
-
-[groups-popup]: /class5/img/groups-popup.png "groups-popup"
