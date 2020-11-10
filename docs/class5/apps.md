@@ -14,7 +14,7 @@ To create a new App:
 ![alt text][apps]
 
 !!! warning "Using Multile Conditions"
-    Apps are limited to a single Condition per App. Multiple Conditions will cause the App to fail.  
+    Apps are limited to a single Condition. Multiple Conditions in an App will cause it to fail.  
     
 ## Advanced Applications
 To configure advanced applications, ConnexCS offers Class5 [Programmable Voice](https://docs.connexcs.com/developers/scriptforge/#class-5-programmable-voice) which allows to build applications using JavaScript.    
