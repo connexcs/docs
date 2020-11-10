@@ -17,7 +17,7 @@ To create a new App:
     Apps are limited to a single Condition. Multiple Conditions in an App will cause it to fail.  
     
 ## Advanced Applications
-To configure more complex applications, ConnexCS offers Class5 **[Programmable Voice]**(https://docs.connexcs.com/developers/scriptforge/#class-5-programmable-voice) which allows you to build applications using JavaScript.    
+To configure more complex applications, ConnexCS offers Class5 **[Programmable Voice](https://docs.connexcs.com/developers/scriptforge/#class-5-programmable-voice)** which allows you to build applications using JavaScript.    
     
 
 [apps]: /class5/img/apps.png "Add App"
