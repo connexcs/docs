@@ -53,7 +53,6 @@ pages:
         - Package: customer/package.md
         - Monitoring: customer/monitoring.md
         - Customer Repository: customer/repository.md
-        - 3CX: customer/3cx.md
         - Class5: customer/class5.md
         - Credit Control: customer/credit-control.md
 
@@ -100,9 +99,11 @@ pages:
         - Viewing Audit Logs: viewing-audit-logs.md
 
     - Class 5:
-        - Conference Calling: creating-conference.md
-        - IVR: creating-ivr.md
-        - Groups: creating-group.md
+        - Apps: class5/apps.md
+        - Conference: class5/creating-conference.md
+        - IVR: class5/creating-ivr.md
+        - Groups: class5/creating-group.md
+        - Voicemail: class5/voicemail.md
        
     - Developers:
         - Analytics: developers/analytics.md

@@ -1,2 +1,4 @@
-!!! bug "Documentation is being written."
-    Thank you for visiting this section. We are busy updating this section of our documentation, please check back soon.
+# Voicemail
+Class5 :material-menu-right: Voicemail
+
+Displays all **Voicemail** on the system (unlike the other Class5 modules). To view Voicemail for individual customers, navigate to **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Class5 :material-menu-right: Voicemail**.
