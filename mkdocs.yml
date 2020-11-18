@@ -61,7 +61,6 @@ pages:
         - Contracts: customer/contracts.md
         - Documents: customer/documents.md
         - Class5: customer/class5.md
-        - Monitoring: customer/monitoring.md
         - Customer Repository: customer/repository.md
         - Class5: customer/class5.md
         - Credit Control: customer/credit-control.md
@@ -93,6 +92,7 @@ pages:
         - Feature List: feature-list.md
         - Invoice: invoice.md
         - Logging: logging.md
+        - Monitoring Guide: monitoring.md
         - Reporting Problems: reporting-problems.md
         - Number Manipulation: number-manipulation.md
         - Specification: spec.md
