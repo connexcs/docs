@@ -105,6 +105,8 @@ pages:
         - Breakout Reports: report.md
         - Viewing Audit Logs: viewing-audit-logs.md
 
+    - Global: global.md
+    
     - Class 5:
         - Apps: class5/apps.md
         - Conference: class5/creating-conference.md
