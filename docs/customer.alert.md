@@ -1,8 +1,10 @@
 # Alerts
-**Alerts** provides a Global view of all **Alerts**. You can create alerts to track specific Customers or Carriers when certain events are triggered. 
+**Manage :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Alerts**
 
-!!! note "Customer and Carrier Alerts"
-    Alerts may also be configured within specific Customers or Carriers. All configured Alerts will display under this Global view.
+Create **Alerts** to track specific Customers when certain events are triggered. 
+
+!!! note "Global Alerts"
+    Alerts may also be configured for specific Customers or Carriers under **Global :material-menu-right: Alerts**, which displays all configured Alerts.
 
 ## Create an Alert
 To add a customized alert, click the **`+`** sign. Field details:
