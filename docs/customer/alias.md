@@ -1,12 +1,15 @@
 # Alias
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Alias**
 
-Create an **Alias** to associate a number or extension with a user in a customer account. 
+An **Alias** allows you to partially or completely rewrite a number. 
 
-Current = the actual number or extension
-New = set to any user in the customer's account
+## Create Alias
 
-These fields also support regular expressions 
+1. Click the **`+`**
+2. **Current** - current number or script (regex)
+3. **New** - set to another number or script (regex)
+
+
 
 !!! info "Video Guide"
     See walkthrough in [Alias Video Guide](https://staging--connexcs-docs.netlify.app/video-guide/#aliases). 
