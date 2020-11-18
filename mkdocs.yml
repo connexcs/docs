@@ -45,17 +45,26 @@ pages:
         - Customer: customer/customer.md
         - Main: customer/main.md
         - Auth: customer/auth.md
+        - Alias: customer/alias.md
         - Routing: customer/routing.md
-        - Payment: customer/payment.md
         - CLI: customer/cli.md
+        - Payment: customer/payment.md
+        - Stats: customer/stats.md
+        - Route Stats: customer/route-stats.md
+        - Latest Calls: customer/latest-calls.md
+        - Dialogs: customer/dialogs.md
+        - Alerts: customer/alerts.md
         - DID: customer/did.md
         - CDR: customer/cdr.md
-        - Package: customer/package.md
+        - Packages: customer/package.md
+        - Invoices: customer/invoices.md
+        - Contracts: customer/contracts.md
+        - Documents: customer/documents.md
+        - Class5: customer/class5.md
         - Monitoring: customer/monitoring.md
         - Customer Repository: customer/repository.md
         - Class5: customer/class5.md
         - Credit Control: customer/credit-control.md
-
 
     - Carrier: carrier.md
         
