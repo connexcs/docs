@@ -61,8 +61,6 @@ pages:
         - Contracts: customer/contracts.md
         - Documents: customer/documents.md
         - Class5: customer/class5.md
-        - Customer Repository: customer/repository.md
-        - Class5: customer/class5.md
         - Credit Control: customer/credit-control.md
 
     - Carrier: carrier.md
@@ -90,9 +88,9 @@ pages:
         - Capacity Limiting: limiting-cps.md
         - Files: files.md
         - Feature List: feature-list.md
-        - Invoice: invoice.md
         - Logging: logging.md
         - Monitoring Guide: monitoring.md
+        - Customer Documents Guide: doc-guide.md
         - Reporting Problems: reporting-problems.md
         - Number Manipulation: number-manipulation.md
         - Specification: spec.md
