@@ -1,7 +1,10 @@
 # Invoice
-ConnexCS allows for straightforward **Invoice** generation for all providers. The tool is another way to eliminate gaps in communication between providers and customers.  
+**Manage :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Invoice**
 
-An **Invoice** can be created and managed within a customer (**Management** > **Customers** > customer name > **Invoices**) or under **Global** > **Invoices**. 
+ConnexCS allows for straightforward **Invoice** generation for all providers. The tool is another way to eliminate gaps in communication between providers and customers. 
+
+!!! note "Global Invoices"
+    Invoices may also be managed under **Global :material-menu-right: Invoices**.
 
 ## Add new Invoices
 To add a new invoice:
