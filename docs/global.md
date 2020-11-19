@@ -5,7 +5,7 @@ The **Global** section of the ConnexCS Control Panel provides a company-wide ove
 ___
 Alerts: View all the Alerts across the entire account. 
 
-*See **[Alerts](https://docs.connexcs.com/customer/alerts)** for configuration details. 
+See **[Alerts](https://docs.connexcs.com/customer/alerts)** for configuration details. 
 
 Alternate location(s):
 
@@ -14,7 +14,7 @@ Alternate location(s):
 ___
 Contacts: View all Customer Contacts. 
 
-*See **[Contacts](https://docs.connexcs.com/customer/contacts)** for configuration details. 
+*See [Contacts](https://docs.connexcs.com/customer/contacts) for configuration details. 
 
 Alternate location(s):
 
