@@ -2,6 +2,7 @@
 
 The **Global** section of the ConnexCS Control Panel provides a company-wide overview of the same data found under Customer. This data can also be configured and managed from the Global view. 
 
+___
 Alerts: View all the Alerts across the entire account. 
 
 *See **[Alerts](https://docs.connexcs.com/customer/alerts)** for configuration details. 
@@ -10,7 +11,7 @@ Alternate location(s):
 
 * Customer :material-menu-right: [Customer Name] :material-menu-right: Alerts
 * Carrier :material-menu-right: [Carrier Name] :material-menu-right: Alerts
-
+___
 Contacts: View all Customer Contacts. 
 
 *See **[Contacts](https://docs.connexcs.com/customer/contacts)** for configuration details. 
@@ -19,7 +20,7 @@ Alternate location(s):
 
 * Customer :material-menu-right: [Customer Name] :material-menu-right: Main
 * Carrier :material-menu-right: [Carrier Name] :material-menu-right: Main
-
+___
 ## CDR
 View CDRs for all Customers. The Global CDR view also allows you to select specific CDRs for Recalculation. See **[CDR](https://docs.connexcs.com/customer/cdr)** for configuration details. 
 
