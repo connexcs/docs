@@ -32,7 +32,7 @@ Alternate location(s):
 ___
 **Dialogs**: View all active calls across the entire account. 
 
-*See [Dialogs](https://docs.connexcs.com/customer/dialogs) for configuration details. *
+*See [Dialogs](https://docs.connexcs.com/customer/dialogs) for configuration details.*
 
 Alternate location(s):
 
@@ -40,7 +40,7 @@ Alternate location(s):
 ___
 **DID**: View list of all DIDs. 
 
-*See [DID](https://docs.connexcs.com/customer/did) for configuration details. *
+*See [DID](https://docs.connexcs.com/customer/did) for configuration details.*
 
 Alternate location(s):
 
@@ -56,7 +56,7 @@ Unlike the Customer DID section, the Global DID sections groups numbers as follo
 ___
 **IP Authentication**: View all configured IP Authentication. 
 
-*See [IP Authentication](https://docs.connexcs.com/customer/auth/#ip-authentication) for configuration details. *
+*See [IP Authentication](https://docs.connexcs.com/customer/auth/#ip-authentication) for configuration details.*
 
 Alternate location(s):
 
@@ -65,7 +65,7 @@ Alternate location(s):
 ___
 **Invoices**: View all Invoices and allocate payments. 
 
-*See [Invoices](https://docs.connexcs.com/customer/invoices)** for configuration details. *
+*See [Invoices](https://docs.connexcs.com/customer/invoices) for configuration details.*
 
 Alternate location(s):
 
@@ -73,7 +73,7 @@ Alternate location(s):
 ___
 **Payment**: All Payments across the account. 
 
-*See [Payment](https://docs.connexcs.com/customer/payment) for configuration details. *
+*See [Payment](https://docs.connexcs.com/customer/payment) for configuration details.*
 
 Alternate location(s):
 
@@ -81,7 +81,7 @@ Alternate location(s):
 ___
 **SIP Registration**: View currently registered SIP users. 
 
-*There is no configuration or additional documentation for SIP Registration. *
+*There is no configuration or additional documentation for SIP Registration.*
 
 **Inbound Registrations**
 
@@ -94,11 +94,11 @@ ___
 
 **Outbound Registrations**
 
-* ADR: the username and address the ConnexCS switch has conected with
+* ADR: the username and address the ConnexCS switch has connected with
 * Expires: time until expiry
 * State: Current call status
 * Cx Server: Server responsible for outbound connection
-* Last Register Sent: when the last regitration was sent
+* Last Register Sent: when the last registration was sent
 * Register Timeout: when the call is expected to timeout
 
 
@@ -107,7 +107,7 @@ ___
 ___
 **SIP User Authentication**: View status of all SIP Users. 
 
-*See [SIP User Authentication](https://docs.connexcs.com/customer/auth/#ip-authentication) for configuration details.  *
+*See [SIP User Authentication](https://docs.connexcs.com/customer/auth/#sip-user-authentication) for configuration details.*
 
 Alternate location(s):
 
