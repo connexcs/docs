@@ -32,6 +32,15 @@ Click ![alt text][invoice-edit] to modify the date, then **`Edit Invoice Item`**
 
 !!! note "Invoice Line Grouping"
     Invoice Line Grouping allows you to group the invoice based on the destination or day.  This is setup under **My Account** > **Settings**.
+    
+## Allocate Payment
+To allocate customer payments to a specific invoice:
+
+1. Click `View Payments` next for the Invoice.
+2. Click the `+`.
+3. Select the desired payment.
+4. Enter the total paid. 
+5. Click **`Save`**. 
 
 [invoice-6]: /misc/img/227.png "Invoice-6"
 [invoice-8]: /misc/img/229.png "Invoice-8"
