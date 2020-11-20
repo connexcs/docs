@@ -189,7 +189,7 @@ To enable call recording:
 2. Click the **Customer Name** > **Routing** > **Proxy Info**.
 3. Click the rate card name, and then select **Enable** from Recording.
 
-![alt text][recording-1]
+   ![alt text][recording-1]
 
 4. Recorded files are accessed from the file section
 5. Select **Management** > **File** > **Recording**.
