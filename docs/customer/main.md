@@ -19,6 +19,7 @@ To add a new contact:
 
 ![alt text][contacts-2]
 ![alt text][main-tab]
+
 !!! note 
     Check in the Customer Details to confirm the Mobile and Email have been verified. You can modify these in the contact or the customer can do this in the Customer Portal. 
 
@@ -27,6 +28,9 @@ To reset a Contact password:
 1. Click the small **`key`** icon to the right of the Contact
 2. Select to "Auto Generate & Email Password" or enter it manually
 3. Save
+
+!!! note "Global Contacts"
+    Contacts can also be modified under **Global :material-menu-right: Contacts**, which displays all Customer Contacts.
 
 ## Internal Number Block
 Used to assign internal customer number ranges which can be used for functions such as SIP authentication
