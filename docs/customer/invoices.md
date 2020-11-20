@@ -1,7 +1,10 @@
 # Invoice
-ConnexCS allows for straightforward **Invoice** generation for all providers. The tool is another way to eliminate gaps in communication between providers and customers.  
+**Manage :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Invoice**
 
-An **Invoice** can be created and managed within a customer (**Management** > **Customers** > customer name > **Invoices**) or under **Global** > **Invoices**. 
+ConnexCS allows for straightforward **Invoice** generation for all providers. The tool is another way to eliminate gaps in communication between providers and customers. 
+
+!!! note "Global Invoices"
+    Invoices may also be managed under **Global :material-menu-right: Invoices**.
 
 ## Add new Invoices
 To add a new invoice:
@@ -29,6 +32,15 @@ Click ![alt text][invoice-edit] to modify the date, then **`Edit Invoice Item`**
 
 !!! note "Invoice Line Grouping"
     Invoice Line Grouping allows you to group the invoice based on the destination or day.  This is setup under **My Account** > **Settings**.
+    
+## Allocate Payment
+To allocate customer payments to a specific invoice:
+
+1. Click `View Payments` next for the Invoice.
+2. Click the `+`.
+3. Select the desired payment.
+4. Enter the total paid. 
+5. Click **`Save`**. 
 
 [invoice-6]: /misc/img/227.png "Invoice-6"
 [invoice-8]: /misc/img/229.png "Invoice-8"
