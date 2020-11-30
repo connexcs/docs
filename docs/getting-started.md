@@ -114,8 +114,6 @@ You can create multiple payment records to cover a customer's invoices and recei
 4. Enter a Description and Total amount and select `Completed` from the drop-down menu if the payment has been made.
 5. Click `Save`.
 
-    ![alt text][payment-2]
-
 ## Carrier Setup
 **Carriers** are your VoIP route providers. Below, we include only the required fields to set up a carrier.  For detailed instructions on carrier setup, see [Carrier Management](https://docs.connexcs.com/carrier/)
 
@@ -168,5 +166,5 @@ For detailed server configuration, see **[Servers](https://docs.connexcs.com/set
 [verify-mobile]: /getting-started/img/verify-mobile.png "Verify Mobile"
 [warning-icon]: /getting-started/img/warning-icon.png "warning-icon"
 [customer-save-new]: /getting-started/img/6.png "customer-save-new"
-[payment-2]: /getting-started/img/12.png "payment-2"
+
 [carrier-auth-2]: /getting-started/img/16.png "carrier-auth-2"
