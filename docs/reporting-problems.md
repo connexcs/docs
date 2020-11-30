@@ -1,6 +1,9 @@
 # Reporting a Problem
 This page covers the best practices for reporting problems to ConnexCS support.  We encourage feedback, but want to make sure you have the most efficient means of expressing a problem so there are no holdups.
 
+!!! tip "ConnexCS System Status"
+    Before reporting a problem, please check the [ConnexCS System Status Page](https://status.connexcs.com/) for current known issues. 
+
 **One Problem Policy**
 
 If you have more than one problem to report, we ask:
@@ -18,7 +21,7 @@ Online chat is real-time assistance that is useful when you're not in a position
 
 ### Tickets
 
-Support tickets cann be created by clicking the Safety Ring icon in the top-right of the dashboard.
+Support tickets are created by clicking the Safety Ring icon in the top-right of the dashboard.
 
 ### Phone
 
@@ -47,7 +50,7 @@ Sometimes a complication is just a matter of turning off parameters that aren't 
  
 ### User Interface Issue
 
-Including a screenshot along with a clear description of the problem can really help us understand what needs to be resolved.  For an efficient utility to take UI screenshots, we recommend a browser pugin called "Lightshot", or use your OS's built-in snipping tool.
+Including a screenshot along with a clear description of the problem can really help us understand what needs to be resolved.  For an efficient utility to take UI screenshots, we recommend a browser plugin called "Lightshot", or use your OS's built-in snipping tool.
 
 ### Problems with Calls
 
