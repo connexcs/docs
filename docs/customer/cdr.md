@@ -7,6 +7,8 @@ All call records for a customer can be found at Customer > <customer name> > CDR
 !!! info "Archived Records"
     CDR records are "hot" (instantly queryable) for the last 3 months guaranteed. After this they will be moved to our warm storage server where they are highly compressed and available for bulk download.
 
+!!! note "Global CDR"
+    View CDRs for all Customers and Carriers under **Global :material-menu-right: CDR**. Download and Reclaculate selected CDRs across multiple customers.
 
 ## Manage displayed CDRs
 
