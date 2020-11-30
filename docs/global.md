@@ -14,7 +14,7 @@ Alternate location(s):
 ___
 **Contacts**: View all Customer Contacts. 
 
-*See [Contacts](https://docs.connexcs.com/customer/contacts) for configuration details.* 
+*See [Contacts](https://docs.connexcs.com/customer/main) for configuration details.* 
 
 Alternate location(s):
 
