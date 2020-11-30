@@ -14,11 +14,7 @@ The initial setup in ConnexCS will configure a single carrier, a single customer
   * You have created an account with ConnexCS.com.
 
 ## Verify Contact Details
-Before you configure your account, you need to verify your email and mobile number. You can do this using the Alerts icon at the top left of the screen. 
-
-![notification-icon][notification-icon]
-
-This will show you all outstanding items necessary to complete initial setup. 
+Before you configure your account, you need to verify your email and mobile number. Use the Alerts icon at the top left of the screen to view all outstanding items:
 
 ![alt text][verify-email-1]
 
