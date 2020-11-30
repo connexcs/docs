@@ -33,6 +33,8 @@ To verify your email address:
 3. Click the link in the email or copy & paste the code into the Verification Code field in the Verify Email pop-up. 
 4. Click `Verify`.
 
+![alt text][verify-email-2]
+
 ### Mobile Verification
 Mobile verification ensures all mobile devices associated with your account are genuine.  Before you verify a mobile number, make sure the information is correct. 
 
@@ -160,6 +162,7 @@ For detailed server configuration, see **[Servers](https://docs.connexcs.com/set
 
 [notification-icon]: /getting-started/img/notification-icon.png "notification icon"
 [verify-email-1]: /getting-started/img/1.png "Verify"
+[verify-email-2]: /getting-started/img/verify-email.png "Verify Email"
 [warning-icon]: /getting-started/img/warning-icon.png "warning-icon"
 [customer-save-new]: /getting-started/img/6.png "customer-save-new"
 [payment-2]: /getting-started/img/12.png "payment-2"
