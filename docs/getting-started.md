@@ -50,6 +50,8 @@ To verify a mobile number:
 5. Enter the code into the Verification Code field in the Verify Mobile pop-up. 
 5. Cick `Verify`.
 
+![alt text][verify-mobile]
+
 ## Setup Personal Profile
 While not strictly necessary to configure your Personal Profile to complete basic setup, this is a good time to get it done. This can be found by clicking your name in the upper right corner and selecting `Profile`. 
 
@@ -163,6 +165,7 @@ For detailed server configuration, see **[Servers](https://docs.connexcs.com/set
 [notification-icon]: /getting-started/img/notification-icon.png "notification icon"
 [verify-email-1]: /getting-started/img/1.png "Verify"
 [verify-email-2]: /getting-started/img/verify-email.png "Verify Email"
+[verify-mobile]: /getting-started/img/verify-mobile.png "Verify Mobile"
 [warning-icon]: /getting-started/img/warning-icon.png "warning-icon"
 [customer-save-new]: /getting-started/img/6.png "customer-save-new"
 [payment-2]: /getting-started/img/12.png "payment-2"
