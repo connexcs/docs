@@ -52,9 +52,11 @@ Issues are classified based on a combination of Category and Severity. If you ar
 For best results when reporting an issue, please provide us with the following information. This will help our support staff and engineers best address reported problems. 
 
 **Step 1: Check for Outages**
+
 Please check the [ConnexCS System Status Page](https://status.connexcs.com/) for current known issues. 
 
 **Step 2: Check Documentation**
+
 ConnexCS onsite documentation, found at [docs.connexcs.com](https://docs.connexcs.com/), serves multiple functions:
 
 * To provide a repository where you can search for information relevant to your problem.
@@ -62,7 +64,8 @@ ConnexCS onsite documentation, found at [docs.connexcs.com](https://docs.connexc
 
 Sometimes complications are resolved easily by turning off parameters that are not compatible. These are instances where a little troubleshooting might solve it. There are other times where a bit of help is needed as well; understanding the documentation will speed our efforts to remedy larger concerns. Whenever possible please consult the ConnexCS documentation before contacting support. 
 
-**Step 2: Gather data**
+**Step 3: Gather data**
+
 This step helps us understand and resolve your issue as quickly as possible
 
 * **User Interface Issues**: Including a screenshot along with a clear description of the problem can really help us understand what needs to be resolved. For an efficient utility to take UI screenshots, we recommend a browser plugin called "Lightshot", or use your OS's built-in snipping tool.
