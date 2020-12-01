@@ -38,11 +38,15 @@ Severity Levels:
 |P4|Trivial|There is a User Interface problem, or a low impact problem affecting calls.|
 |P5|Trivial|There is a minor UI Bug or a feature enhancement.|
 
+!!! note "Classification usage"
+    These Severity levels are here to assess the impact of a problem but are not followed blindly. We will attempt to answer support requests 24/7, however repeated instances of reporting Critical incidents beyond normal working hours may result in fines on the account or account termination.
+    
 + Platform support for P2+ Issues = 24/7.
 + Operational Support = 8:00am - 8:00pm UTC (regular working hours). Whenever possible, we may provide support outside these times if we are available (best effort). We are a small team, so we request you keep this in mind when reporting issue severity. 
 
-!!! tip "Classification usage"
-    These Severity levels are here to assess the impact of a problem but are not followed blindly. We will attempt to answer support requests 24/7, however repeated instances of reporting Critical incidents beyond normal working hours may result in fines on the account or account termination.
+!!! info "NOC-On-Demand"
+    If you are interested in NOC-on-Demand or Enhanced Support, which would give 24/7 (or to cover their time zone) operational support, please contact us directly to discuss this option. 
+
 
 ## Required Troubleshooting and Information
 For best results when reporting an issue, please provide us with the following information. This will help our support staff and engineers best address reported problems. 
