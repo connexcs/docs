@@ -21,12 +21,12 @@ To speak to a support representative, please call our office number listed at [w
 ## Issue Classification and Response times
 Issues are classified based on a combination of Category and Severity. If you are not able to determine the Category or Severity, we can help with this. 
 
-Categories:
+### Categories
 
 + **Platform**- Refers to the stability of the ConnexCS system (typically outside customer control). Ex: ConnexCS platform is down. 
 + **Operational** - Anything within the customer's control. Ex: configuration issues. 
 
-Severity Levels:
+### Severity Levels
 
 |Level|Severity|Example|
 |---|---|---|
@@ -39,17 +39,22 @@ Severity Levels:
 
 !!! tip "Reporting issues with new interconnects"
     When reporting an issue with a new interconnect that is not working, please be advised that this is not considered a Critical issue. 
-    
+
+### Response Times
+
 + Platform support for P2+ Issues = 24/7.
 + Operational Support = 8:00am - 8:00pm UTC (regular working hours). Whenever possible, we may provide support outside these times if we are available (best effort). We are a small team, so we request you keep this in mind when reporting issue severity. 
 
 !!! note "Classification usage"
     These Severity levels are here to assess the impact of a problem but are not followed blindly. We will attempt to answer support requests 24/7, however repeated instances of reporting Critical incidents beyond normal working hours may result in fines on the account or account termination.
 
-## Required Troubleshooting and Information
+## Requested Troubleshooting and Information
 For best results when reporting an issue, please provide us with the following information. This will help our support staff and engineers best address reported problems. 
 
-Step 1: Check Documentation
+**Step 1: Check for Outages**
+Please check the [ConnexCS System Status Page](https://status.connexcs.com/) for current known issues. 
+
+**Step 2: Check Documentation**
 ConnexCS onsite documentation, found at [docs.connexcs.com](https://docs.connexcs.com/), serves multiple functions:
 
 * To provide a repository where you can search for information relevant to your problem.
@@ -57,7 +62,8 @@ ConnexCS onsite documentation, found at [docs.connexcs.com](https://docs.connexc
 
 Sometimes complications are resolved easily by turning off parameters that are not compatible. These are instances where a little troubleshooting might solve it. There are other times where a bit of help is needed as well; understanding the documentation will speed our efforts to remedy larger concerns. Whenever possible please consult the ConnexCS documentation before contacting support. 
 
-Step 2: Gather data to help us understand and resolve your issue as quickly as possible
+**Step 2: Gather data**
+This step helps us understand and resolve your issue as quickly as possible
 
 * **User Interface Issues**: Including a screenshot along with a clear description of the problem can really help us understand what needs to be resolved. For an efficient utility to take UI screenshots, we recommend a browser plugin called "Lightshot", or use your OS's built-in snipping tool.
 * **Problems with Calls**: For problems with call flow, the **Call-ID** is how we identify which calls are affected. It helps us isolate customers, providers, and/or channels that may be affected. Call-ID is found in the **Logging** section by clicking on a call, and then copying the ID to right of the panel.
