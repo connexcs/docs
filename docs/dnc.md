@@ -42,7 +42,7 @@ Step 3: Add script to Customer
 
 
 ## Add individual customer to DNC
-Add the following to ScriptForge:
+Add the following to Script Forge:
 
 1. Under **Developer :material-menu-right: Script Forge**
 2. Add the Script **Name**.
