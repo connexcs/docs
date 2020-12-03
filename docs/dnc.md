@@ -33,12 +33,12 @@ Step 3: Add script to Customer
 1. Navigate to **Customer :material-menu-right: [Customer Name] :material-menu-right: Edit :material-menu-right: Routing :material-menu-right: Ingress Routing**
 2. On the **Script Forge** tab, enter the following under **Vars**:
 
-   ```
-   [dnc]
-   db="name_from_step1"
-   ```
+    ```
+    [dnc]
+    db="name_from_step1"
+    ```
 
-3. Slick **Save**.
+3. Click **Save**.
 
 
 ## Add individual customer to DNC
