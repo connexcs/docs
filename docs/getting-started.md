@@ -55,9 +55,9 @@ While not strictly necessary to configure your Personal Profile to complete basi
 
     View account details such as Name, Role, Email and Mobile. Only the Mobile field is editable. 
     
-    **Two Factor Authentication** - This adds additional security against password guessing and theft, including brute force attacks (details [here](https://www.ncsc.gov.uk/guidance/multi-factor-authentication-online-services). This is configured on ConnexCS by clicking the `Enable` button and following prompts for QR code. You must install a 2FA/TFA app on your phone. 
+    **Two Factor Authentication** - This adds additional security against password guessing and theft, including brute force attacks (details [here](https://www.ncsc.gov.uk/guidance/multi-factor-authentication-online-services)). This is configured on ConnexCS by clicking the `Enable` button and following prompts for QR code. You must install a 2FA/TFA app on your phone. 
     
-    **Web Auth N / FIDO2** -  This allows you to enable hardware security keys/tokens, which is more secure that basic password protection (details [here](https://www.ncsc.gov.uk/collection/mobile-device-guidance/enterprise-authentication-policy). This is configured on ConnexCS by clicking the `Enroll` button. Once setup, there will be a special button to click/tap upon login to the ConnexCS portal. 
+    **Web Auth N / FIDO2** -  This allows you to enable hardware security keys/tokens, which is more secure that basic password protection (details [here](https://www.ncsc.gov.uk/collection/mobile-device-guidance/enterprise-authentication-policy)). This is configured on ConnexCS by clicking the `Enroll` button. Once setup, there will be a special button to click/tap upon login to the ConnexCS portal. 
 
 === "Advanced"
      
