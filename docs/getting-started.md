@@ -53,7 +53,7 @@ While not strictly necessary to configure your Personal Profile to complete basi
 
 === "Basic"
 
-    View account details such as Name, Role, Email and Mobile. Only the Mobile field is editable. 
+    View account details such as Name, Role, Email and Mobile. Only the Mobile field is editable. To change email or name, contact ConnexCS Support. 
     
     **Two Factor Authentication** - This adds additional security against password guessing and theft, including brute force attacks (details [here](https://www.ncsc.gov.uk/guidance/multi-factor-authentication-online-services)). This is configured on ConnexCS by clicking the `Enable` button and following prompts for QR code. You must install a 2FA/TFA app on your phone. 
     
