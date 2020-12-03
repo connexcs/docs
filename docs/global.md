@@ -1,6 +1,6 @@
 # Global
 
-The **Global** section of the ConnexCS Control Panel provides a company-wide overview of the same data found under **Management :material-menu-right: Customer** or **Carrier**. Some of these sections may also be configured and managed from the Global view. 
+The **Global** section of the ConnexCS Control Panel provides a company-wide overview of some of the same data found under **Management :material-menu-right: Customer** or **Carrier**. Some of these sections may also be configured and managed from the Global view. 
 
 ___
 **Alerts**: View all the Alerts across the entire account. 
