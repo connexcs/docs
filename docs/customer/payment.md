@@ -11,4 +11,7 @@ In this tab, you can view a list of all the **Payments** that have been made so 
 !!! tip "Pending Payments"
     When a customer places a payment through their bank, this will show up here with a status of **Pending**. To accept the payment, set it to **Completed** and **`Save`**. 
     
+!!! note "Global Payments"
+    Payments may also be managed for under **Global :material-menu-right: Payments**, which displays all Payments across the account.
+    
 [payments-tab]: /customer/img/53.png "Payments Tab" 

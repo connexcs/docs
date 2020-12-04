@@ -14,11 +14,7 @@ The initial setup in ConnexCS will configure a single carrier, a single customer
   * You have created an account with ConnexCS.com.
 
 ## Verify Contact Details
-Before you configure your account, you need to verify your email and mobile number. You can do this using the Alerts icon at the top left of the screen. 
-
-![notification-icon][notification-icon]
-
-This will show you all outstanding items necessary to complete initial setup. 
+Before you configure your account, you need to verify your email and mobile number. Use the Alerts icon at the top left of the screen to view all outstanding items:
 
 ![alt text][verify-email-1]
 
@@ -32,6 +28,8 @@ To verify your email address:
 2. Click the orange `!` next to Email, this will generate a code and send it to the email address. 
 3. Click the link in the email or copy & paste the code into the Verification Code field in the Verify Email pop-up. 
 4. Click `Verify`.
+
+![alt text][verify-email-2]
 
 ### Mobile Verification
 Mobile verification ensures all mobile devices associated with your account are genuine.  Before you verify a mobile number, make sure the information is correct. 
@@ -48,16 +46,18 @@ To verify a mobile number:
 5. Enter the code into the Verification Code field in the Verify Mobile pop-up. 
 5. Cick `Verify`.
 
+![alt text][verify-mobile]
+
 ## Setup Personal Profile
 While not strictly necessary to configure your Personal Profile to complete basic setup, this is a good time to get it done. This can be found by clicking your name in the upper right corner and selecting `Profile`. 
 
 === "Basic"
 
-    View account details such as Name, Role, Email and Mobile. Only the Mobile field is editable. 
+    View account details such as Name, Role, Email and Mobile. Only the Mobile field is editable. To change email or name, contact ConnexCS Support. 
     
-    **Two Factor Authentication** - This adds additional security against password guessing and theft, including brute force attacks (details [here](https://www.ncsc.gov.uk/guidance/multi-factor-authentication-online-services). This is configured on ConnexCS by clicking the `Enable` button and following prompts for QR code. You must install a 2FA/TFA app on your phone. 
+    **Two Factor Authentication** - This adds additional security against password guessing and theft, including brute force attacks (details [here](https://www.ncsc.gov.uk/guidance/multi-factor-authentication-online-services)). This is configured on ConnexCS by clicking the `Enable` button and following prompts for QR code. You must install a 2FA/TFA app on your phone. 
     
-    **Web Auth N / FIDO2** -  This allows you to enable hardware security keys/tokens, which is more secure that basic password protection (details [here](https://www.ncsc.gov.uk/collection/mobile-device-guidance/enterprise-authentication-policy). This is configured on ConnexCS by clicking the `Enroll` button. Once setup, there will be a special button to click/tap upon login to the ConnexCS portal. 
+    **Web Auth N / FIDO2** -  This allows you to enable hardware security keys/tokens, which is more secure that basic password protection (details [here](https://www.ncsc.gov.uk/collection/mobile-device-guidance/enterprise-authentication-policy)). This is configured on ConnexCS by clicking the `Enroll` button. Once setup, there will be a special button to click/tap upon login to the ConnexCS portal. 
 
 === "Advanced"
      
@@ -110,8 +110,6 @@ You can create multiple payment records to cover a customer's invoices and recei
 4. Enter a Description and Total amount and select `Completed` from the drop-down menu if the payment has been made.
 5. Click `Save`.
 
-    ![alt text][payment-2]
-
 ## Carrier Setup
 **Carriers** are your VoIP route providers. Below, we include only the required fields to set up a carrier.  For detailed instructions on carrier setup, see [Carrier Management](https://docs.connexcs.com/carrier/)
 
@@ -160,7 +158,9 @@ For detailed server configuration, see **[Servers](https://docs.connexcs.com/set
 
 [notification-icon]: /getting-started/img/notification-icon.png "notification icon"
 [verify-email-1]: /getting-started/img/1.png "Verify"
+[verify-email-2]: /getting-started/img/verify-email.png "Verify Email"
+[verify-mobile]: /getting-started/img/verify-mobile.png "Verify Mobile"
 [warning-icon]: /getting-started/img/warning-icon.png "warning-icon"
 [customer-save-new]: /getting-started/img/6.png "customer-save-new"
-[payment-2]: /getting-started/img/12.png "payment-2"
+
 [carrier-auth-2]: /getting-started/img/16.png "carrier-auth-2"
