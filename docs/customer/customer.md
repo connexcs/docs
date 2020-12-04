@@ -1,7 +1,6 @@
 # Customer
 
-ConnexCS **Customers** are managed through customer cards, under **Management :material-menu-right: Customers**. From the **Customers** page, you can perform several management operations. 
-
+ConnexCS **Customers** are organized through customer cards located under **Management :material-menu-right: Customers**. 
 ![alt text][customers]
 
 ## Customer View Modification
@@ -10,6 +9,8 @@ ConnexCS **Customers** are managed through customer cards, under **Management :m
 * **Filters** pop out on the right allows you to filter your customers
 
 ## Top of Page functions
+From the **Customers** page, you can perform several management operations. 
+
 
 **+**: Add new Customers (see [**Adding Customers**](https://docs.connexcs.com/customer/customer/#adding-customers) below for details.)
 
@@ -46,7 +47,7 @@ ConnexCS **Customers** are managed through customer cards, under **Management :m
 
 *Click each tab for field explanations:*
 
-=== Basic tab
+=== "Basic"
 
     * **Customer Name:** A name or unique identifier for each customer.
     * **Status:** The customer's status, i.e.:
@@ -58,7 +59,7 @@ ConnexCS **Customers** are managed through customer cards, under **Management :m
     * **Tax:**  Tax is added as a percentage that is charged on top of costs.
     * **Currency:** Select the currency from the dropdown menu. Note that you won't be able to change the account currency once the account is created.
 
-=== Config tab
+=== "Config"
 
     * **PayPal Email:** The email address associated with the customer's PayPal account. (This is relevant when using the IPN API. Customer can make payments directly through PayPal instead of using the Customer Portal.) 
     * **Website:** The customer's website address.
@@ -66,22 +67,22 @@ ConnexCS **Customers** are managed through customer cards, under **Management :m
     * **Tags**: use this to add meta-data
     + **TOML**: This is a data storage mechanism for configuration. Similar to INI files, you can create advanced customization to set values, etc, for Script Forge to reference later. 
 
-=== Address Tab
+=== "Address"
     
     * **Address:** Complete the customer's physical address, not to be confused with email addresses.
 
-=== Verification tab
+=== "Verification"
 
     + **Approved CLI's Only**: Used to force the customer to log into the Portal and enter their CLI number. This generates a test call with a code which the customer must enter into the portal. Once complete, their CLI will be added to the system. 
     + **Email Verification** and/or **Mobile Verification**: Used to force the customer to go to the portal for verification. (This is important to select when you create a customer manually.) If the customer doesn't verify these, they won't be able to dial. 
 
 !!! attention
-    Mobile messages will be sent globally, but there are some reports of issues with SMS being delivered to numbers in India. These messages are sent on the Twilio network, so whatever they deliver ConnexCS will deliver. 
+    Mobile messages will be sent globally, but there are some reports of issues with SMS being delivered to numbers in India. These messages are sent on the Twilio network, so ConnexCS can only deliver what they deliver. 
 
 ___
 
 ## Managing Customers
-Open a Customer Card by clicking their name from the Customer Management screen, then **Edit**. The screen that opens is the same as the New Customer screen, with information already populated. Edit any field then click **`Save`**. For all field details, see **[Adding Customers](../customer/#adding-customers)** above. 
+Click an existing customer name from Customer Management screen then **Edit**. For all field details, see **[Adding Customers](../customer/#adding-customers)** above. 
 
 
 
