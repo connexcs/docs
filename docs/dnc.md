@@ -1,9 +1,9 @@
-# Table of Contents
+# Do Not Call (DNC)
+
+In today's society, all modern call carriers should recognise and honor **Do Not Call Lists (DNC).** Calling numbers on these lists can result in costly fines and prosecutions. Use Script Forge to help you to manage these calls by adding the numbers to the system. If a number on the list is dialed, the caller will receive an alert that the number is on the DNC list and the call will not be completed. 
 
 ## DNC Check
 
-In today's society, all modern call carriers should recognise and honor **Do Not Call Lists (DNC).** Calling numbers on these lists can result in costly fines and prosecutions. Use Script Forge to help you to manage these calls by adding the numbers to the system. If a number on thelist is dialed, the caller will receive an alert that the number is on the DNC list and htecall will not be completed. 
- 
 Step 1: Setup the Database
 
 1. Navigate to **Developer :material-menu-right: Database**
