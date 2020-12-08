@@ -1,13 +1,14 @@
 # Customer
 
 ConnexCS **Customers** are organized through customer cards located under **Management :material-menu-right: Customers**. 
+
 ![alt text][customers]
 
 ## Customer View Modification
 
 * **Columns** pop out on the right allows you to add/remove options, change column order, in some cases you can create row groups and aggregate values for pivot functionality
 * **Filters** pop out on the right allows you to filter your customers
-* Column ordering can be changed
+* Adjust Column ordering
 
 ## Top of Page functions
 From the **Customers** page, you can perform several management operations. 
@@ -17,14 +18,14 @@ From the **Customers** page, you can perform several management operations.
 
 **Bulk Upload**: Upload multiple Customers at the same time, by importing a spreadsheet file into ConnexCS. 
 
-1. Click **Bulk Upload** then **Upload**, find your customer file, then click **`Open`**. 
+1. Click `Bulk Upload` then `Upload`, find your customer file, then click **`Open`**. 
 2. Right-click in each column to **Map Columns** to appropriate fields
 3. **Set Start Row** to indicate the first line of data (first row is typically column headers). 
 4. Once all fields are set as needed, then click **`Upload to Server`**. 
 
 **Bulk Edit**: Select multiple customers, then click the **Bulk Edit** button to modify fields such as Channels, Status, Flow Speed (CPS), Portal Access, and Country. 
 
-**Refresh**: Refresh the page, helpful when making edits or looking at real-time changes. Note- the page is built as a web app, so some information will update automatically.  
+**Refresh**: Refresh the page, helpful when making edits or looking at real-time changes. This page is built as a web app so some information will update automatically.  
 
 **Delete**: Delete multiple customers at a time. 
 
@@ -53,7 +54,7 @@ From the **Customers** page, you can perform several management operations.
 
 *Click each tab for field explanations:*
 
-=== **"Basic"**
+=== "**Basic**"
 
     * **Name:** A name or unique identifier for each customer.
     * **Channels:** Set the maximum number of channels (essentially a channel is a live call). 
