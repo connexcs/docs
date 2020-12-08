@@ -54,7 +54,7 @@ From the **Customers** page, you can perform several management operations.
 
 *Click each tab for field explanations:*
 
-=== "**Basic**"
+=== "Basic"
 
     * **Name:** A name or unique identifier for each customer.
     * **Channels:** Set the maximum number of channels (essentially a channel is a live call). 
@@ -63,23 +63,23 @@ From the **Customers** page, you can perform several management operations.
         * Active: The customer is active and allowed to pass calls. 
         * Inactive: The account is disabled, no calls will complete 
         * Pending Approval: New signups are listed as Pending Approval. The customer cannot pass calls or become active until this phase is completed. 
-    * **Debit Limit:** How much the account can do into the negative (typically only relevant for postpay customers).
+    * **Debit Limit:** How much the account can do into the negative (typically only relevant for post-pay customers).
     * **Minimum Payment:** Set the minimum payment a customer can add to recharge the account. 
     * **Tax:** Tax is added as a percentage that is charged on top of costs. (UK = VAT; US = Sales Tax)
     * **Currency:** Select the currency from the dropdown menu. Note that you won't be able to change the account currency once the account is created.
 
-=== **"Config"**
+=== "Config"
 
     * **PayPal Email:** The email address associated with the customer's PayPal account. (This is relevant when using the IPN API which allows customers to make payments directly through PayPal instead of using the Customer Portal. See our API documentation for details on [PayPal IPN](https://docs.connexcs.com/setup/integrations/api/#paypal-ipn-integration).) 
     * **Website:** The customer's website address.
     * **Portal Access:**  Users can turn **Portal Access** to `Yes` (on) or `No` (off). Selecting `No` will restrict user access to the Customer Portal. Since everyone uses the portal at this time, this should always be set to `Yes`. 
     * **Tags**: Use this to add meta-data identifiers to a customer, such as Global Routing.
-    * **TOML**: This is a data storage mechanism for configuration. Similar to INI files, you can create advanced customization to set values, etc, for Script Forge to reference later. 
+    * **TOML**: This is a data storage mechanism for configuration, similar to INI files. It allows you to create advanced customization to set values, etc, for Script Forge to reference later. 
     * **Reseller**: Associate the customer to a preset Reseller Group (see [Create Groups](https://docs.connexcs.com/setup/settings/users/#create-groups) for more details.)
     * **Invoice Schedule**: Specify frequency for invoice generation. 
     * **Invoice Due Days**: Set the allowed number of days past the due date that the invoice can go unpaid. 
 
-=== **"Address"**
+=== "Address"
     
     * **Address:** Complete the customer's physical address.
 
