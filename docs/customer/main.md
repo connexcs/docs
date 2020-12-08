@@ -1,5 +1,5 @@
 # Main
-Management :material-menu-right: Customer :material-menu-right: [Customer Name]
+**Management :material-menu-right: Customer :material-menu-right: [Customer Name]**
 
 The first tab in a Customer account is **Main** which displays a summary of the Status, Balance, Debit Limit, and current Channels in use. From here you can manage contacts, block internal numbers, and view call summaries.
 
