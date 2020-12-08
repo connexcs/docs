@@ -52,7 +52,8 @@ Under the **Auth** tab, configure IP or SIP (Username/Password) Authentication f
 
 === "Basic"
 
-    + **Username** and **Password**: Must match configuration on the customer UAC. The password can be reset by clicking on the **`Password`** button on the **Customer** > **Auth** page. 
+    + **Username**: This will be the Username used for SIP authentication (must match configuration on the customer UAC). If The Customer has [Internal Number Block](https://docs.connexcs.com/customer/main/#internal-number-block) set on the **Main** tab, the Username may only be selected from available extensions. If a Username is already in use on the Account, they will get an error saying "Duplicate User Detected".
+    + **Password**: (must match configuration on the customer UAC) . The password can be reset by clicking on the **`Password`** button on the **Customer** > **Auth** page. 
     + **NAT/SIP Ping**: refers to pings sent from ConnexCS back to the through customer firewall to their UAC. If enabled, they may keep a connection up for longer calls (typically either 1800 or 3600 seconds). Once NAT or SIP pings are enabled, the **Latency** tab will be available at the top of the SIP user screen. This can be helpful for troubleshooting audio problems. 
         + **Disabled**: no pings are sent
         + **Enabled**: UDP ping
