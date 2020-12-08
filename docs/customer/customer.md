@@ -88,15 +88,15 @@ From the **Customers** page, you can perform several management operations.
     + **Approved CLI's Only**: Force the customer to log into the Portal and enter their CLI number (call-from number). This generates a test call with a code which the customer must enter into the portal. Once complete, their CLI will be added to the system. 
     + **Email Verification** and/or **Mobile Verification**: Used to force the customer to go to the portal for verification. (This is important to select when you create a customer manually.) If the customer doesn't verify these, they won't be able to dial. 
 
-!!! attention
-    Mobile messages will be sent globally, but there are some reports of issues with SMS being delivered to numbers in India. These messages are sent on the Twilio network, so ConnexCS can only deliver what they deliver. 
+    !!! attention
+        Mobile messages will be sent globally, but there are some reports of issues with SMS being delivered to numbers in India. These messages are sent on the Twilio network, so ConnexCS can only deliver what they deliver. 
     
 === "Notes"
 
     These are arbitrary notes that can be entered onto an account at your discretion. 
     
 !!! note "Save Options"
-    Select **Save and Continue** to exit the Customer screen. **Save and Stay** is helpful when adding multiple customers at a time. **Delay and Save** allows you to select a time from to elapse before saving the customer and making them available for setup. 
+    Select **Save and Continue** to exit the Customer screen. **Save and Stay** is helpful when adding multiple Customers at a time. **Delay and Save** allows you to select a time from to elapse before saving the Customer and making them available for setup. 
 ___
 
 ## Managing Customers
