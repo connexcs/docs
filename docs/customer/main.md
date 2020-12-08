@@ -6,7 +6,7 @@ The first tab in a Customer account is **Main** which displays a summary of the 
 ## Audit Log
 ![alt text][audit-log]
 
-Select **View Audit Log** to see when the customer was created and view any modifications that have been made to the account. (View Difference displays data in JSON format.)
+Select **View Audit Log** to see when the customer was created and view any modifications that have been made to the account. 
 
 * **User**: User that made the change.
 * **IP**: IP the change came from.
@@ -14,7 +14,7 @@ Select **View Audit Log** to see when the customer was created and view any modi
 * **Action**: Uses HTTP verbs (Put, Post, Get, Delete) to describe the action taken.
 * **Table**: Part of the table that was updated. 
 * **Message**: What was done (Update, New, etc)
-* **Data**: Click `View Difference` to see the fields changed, plus previous and current values. 
+* **Data**: Click `View Difference` to see the fields changed, plus previous and current values. (Data displayed in JSON format.)
 
 ## Contacts
 The **Contacts** section shows an overview of contacts associated with the Customer. Each Customer may have an unlimited number of Contacts.  
@@ -37,11 +37,10 @@ To add a new Contact:
 !!! warning 
     DO NOT save passwords in either of the notes field in the Contact Details.
 
-![alt text][contacts-2]
 ![alt text][main-tab]
 
 !!! note 
-    Check in the Customer Details to confirm the Mobile and Email have been verified. You can modify these in the contact or the customer can do this in the Customer Portal. 
+    Check in the Customer Details to confirm the Mobile and Email have been verified. You can modify these in the Contact or the customer can do this in the Customer Portal. 
 
 To reset a Contact password:
 
@@ -58,7 +57,7 @@ Assign an **Internal Number Block** to define the range of numbers a Customer ca
 1. Click **`+`** button next to **Internal Number Block**.
 2. The Number Block will be assigned.
 
-!!! info "Why Define Internal Number Blocks""
+!!! info "Why Define Internal Number Blocks?"
     Within each Account are multiple Customers, each will likely have more than one Contact. SIP Extensions are unique for the Account, not for individual Customers. Without defined Internal Number Blocks, there is the risk of a Contact attempting to use an extension that is already in use by another Customer or Contact. With Internal Number Blocks defined, each Customer will have a predetermined list of Usernames to select for SIP Authentication. 
 
 !!! note "Number Range parameters"
@@ -78,5 +77,4 @@ There are several functions that can be performed with this data:
     The data found in the Customer Summary section is considered valid for billing purposes. The same data may be found in other parts of the system but should not be used for billing.
 
 [audit-log]: /customer/img/audit-log.png "Audit Log"
-[contacts-2]: /customer/img/62.png "contacts-2"
 [main-tab]: /customer/img/41.png "Main Tab"
