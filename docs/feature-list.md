@@ -12,7 +12,7 @@ The following is a comprehensive list of features included in the latest stable 
 * Email Confirmation on Payments.
 * Minimum payment limit.
 * Customer Level Channel & CPS Limitation
-* Customer Portal
+* Customer Portal (https://docs.connexcs.com/customer-portal/customer-portal/)
 * Tag Support
 * Per Customer Custom Variables
 * Meta Information Storage (Address, etc)
