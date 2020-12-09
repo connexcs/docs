@@ -13,11 +13,14 @@ Select **View Audit Log** to see when the customer was created and view any modi
 * **Date Time**: When the change was made.
 * **Action**: Uses HTTP verbs (Put, Post, Get, Delete) to describe the action taken.
 * **Table**: Part of the table that was updated. 
-* **Message**: What was done (Update, New, etc)
+* **Message**: What was done (Update, New, etc.)
 * **Data**: Click `View Difference` to see the fields changed, plus previous and current values. (Data displayed in JSON format.)
 
 ## Contacts
 The **Contacts** section shows an overview of contacts associated with the Customer. Each Customer may have an unlimited number of Contacts.  
+
+!!! note "Global Contacts"
+    Contacts can also be modified under **Global :material-menu-right: Contacts**, which displays all Customer Contacts.
 
 To add a new Contact:
 
@@ -28,8 +31,10 @@ To add a new Contact:
 5. Check the **Auto Generate Password** box to have a password generated online and sent via email. Uncheck the box to enter a password manually.
 6. You may enter any information on **Public Notes** which are displayed on the Customer Portal when logged in. 
 7. **Private Notes** will display in the control panel.
-7. Manually set whether this Contact's **Mobile Verified** and **Email Verified** status. 
+7. Manually set whether this Contact's **Mobile Verified** and **Email Verified** status. (Check in the Customer Details to confirm the Mobile and Email have been verified. Alternately, the customer can do this in the Customer Portal.
 7. Click **`Save`**.
+
+![alt text][main-tab]
 
 !!! note "Save Options"
     Select **Save and Continue** to exit the Contact screen. **Save and Stay** is helpful when adding multiple Contacts at a time. **Delay and Save** allows you to select a time from to elapse before saving the Contact and making them available for use.
@@ -37,19 +42,17 @@ To add a new Contact:
 !!! warning 
     DO NOT save passwords in either of the notes field in the Contact Details.
 
-![alt text][main-tab]
-
-!!! note 
-    Check in the Customer Details to confirm the Mobile and Email have been verified. You can modify these in the Contact or the customer can do this in the Customer Portal. 
+## Reset Contact Password
 
 To reset a Contact password:
 
-1. Click the small **`key`** icon to the right of the Contact
-2. Select to "Auto Generate & Email Password" or enter it manually
-3. Save
+1. Click the down arrow to the right of the Contact
 
-!!! note "Global Contacts"
-    Contacts can also be modified under **Global :material-menu-right: Contacts**, which displays all Customer Contacts.
+    ![alt text][reset-password]
+
+2. Select "Change Password"
+3. Select "Auto Generate & Email Password" to email the random password to the contact email, or uncheck it and enter the password manually.
+3. **`Save`**.
 
 ## Internal Number Block
 Assign an **Internal Number Block** to define the range of numbers a Customer can use for setting up SIP Extensions (see [SIP Authentication](https://docs.connexcs.com/customer/auth/#sip-user-authentication) for configuration details). 
@@ -71,10 +74,11 @@ There are several functions that can be performed with this data:
 + **Sum and Average**: Select multiple cells in a column to get sum and average values (not a true average, but an average of averages)
 + **Export Data**: Select data from multiple columns and rows, then right click to **`Copy`**, **`Copy with Headers`**, and **`Export`**
 + **Generate Invoice**: Check one or more boxes under Action then select **`Generate Invoice`** in the upper right corner. This will create the invoice based on the Summary time frame (Daily, Weekly, Monthly) which can then be queried by a billing system. 
-+ **Auto Generate Invoice**: When selected, this will generate an invoice based on the setting found in the Customer confiugration (Edit>Config?Invoice Schedule) for any that are missing.  
++ **Auto Generate Invoice**: When selected, this will generate an invoice based on the setting found in the Customer configuration (Edit :material-menu-right: Config :material-menu-right: Invoice Schedule) for any that are missing.  
 
 !!! tip "Data used for billing"
     The data found in the Customer Summary section is considered valid for billing purposes. The same data may be found in other parts of the system but should not be used for billing.
 
 [audit-log]: /customer/img/audit-log.png "Audit Log"
+[reset-password]: /customer/img/reset-password.png "Reset Password"
 [main-tab]: /customer/img/41.png "Main Tab"
