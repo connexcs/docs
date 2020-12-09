@@ -22,7 +22,7 @@ The **Contacts** section shows an overview of contacts associated with the Custo
 !!! note "Global Contacts"
     Contacts can also be modified under **Global :material-menu-right: Contacts**, which displays all Customer Contacts.
 
-To add a new Contact:
+### Add a new Contact:
 
 1. Press the **`+`** button to the right of the word **Contacts**.
 4. Enter the contact **Name** and login **Email** address.
@@ -42,7 +42,7 @@ To add a new Contact:
 !!! warning 
     DO NOT save passwords in either of the notes field in the Contact Details.
 
-## Reset Contact Password
+### Reset Contact Password
 
 To reset a Contact password:
 
@@ -53,6 +53,18 @@ To reset a Contact password:
 2. Select "Change Password"
 3. Select "Auto Generate & Email Password" to email the random password to the contact email, or uncheck it and enter the password manually.
 3. **`Save`**.
+
+### Access Customer Portal
+Sometimes it is necessary to view the Customer's Portal for issues or questions they may have. 
+
+To access the Customer Portal:
+
+1. Click the down arrow to the right of the Contact
+
+    ![alt text][reset-password]
+
+2. Select "Portal Login"
+3. This will load the Customer's Portal. 
 
 ## Internal Number Block
 Assign an **Internal Number Block** to define the range of numbers a Customer can use for setting up SIP Extensions (see [SIP Authentication](https://docs.connexcs.com/customer/auth/#sip-user-authentication) for configuration details). 
