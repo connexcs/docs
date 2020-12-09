@@ -11,25 +11,25 @@ The following is a comprehensive list of features included in the latest stable 
 * Auto Tax (Sales Tax / VAT)
 * Email Confirmation on Payments.
 * Minimum payment limit.
-* Customer Level Channel & CPS Limitation
+* [**Customer Level Channel & CPS Limitation**](https://docs.connexcs.com/limiting-cps/)
 * [**Customer Portal**](https://docs.connexcs.com/customer-portal/customer-portal/)
 * Tag Support
 * Per Customer Custom Variables
 * Meta Information Storage (Address, etc)
 * Approved CLI's Only
-* Email & Mobile Verification
+* [**Email & Mobile Verification**](https://docs.connexcs.com/getting-started/#verify-contact-details)
 * MRC Packages
-* Invoices (See Billing)
+* [**Invoices (See Billing)**](https://docs.connexcs.com/customer/invoices/)
 * Document Management
 * Auto-login to Customer Portal
 * Auto Email Password
 * Internal Number Range Assignment & Management
-* Save Multiple Contacts & Designations
+* [**Save Multiple Contacts & Designations**](https://docs.connexcs.com/customer/main/#contacts)
 * Bulk Email & SMS
 
 ### Contracts
 
-* Contract Management
+* [**Contract Management**](https://docs.connexcs.com/setup/config/contracts/#assign-contract-to-a-customer)
 * Contract Revision Management
 * Grace Period prior to contract approval
 * Auto close route if contract not signed
@@ -39,7 +39,7 @@ The following is a comprehensive list of features included in the latest stable 
 * Multiple Receipients
 * Balance / ACD / ASR / PDD / Consec Failure
 * Send Alert to Email or SMS
-* Test Alert
+* [**Test Alert**](https://docs.connexcs.com/customer/alerts/#test-and-alert)
 * Customizable Reset Threshold
 * Penalty for predefined time.
 
@@ -49,7 +49,7 @@ The following is a comprehensive list of features included in the latest stable 
 
 * Bulk Add IP
 * Duplicate IP Detection & Warning
-* IP Authentication
+* [**IP Authentication**](https://docs.connexcs.com/authentication/#ip-authentication)
 * Direction Selection (Inbound / Outbound Only)
 * Endpoint Level Channel & CPS Limitation
 * Codec Restrictions
