@@ -5,7 +5,7 @@ The following is a comprehensive list of features included in the latest stable 
 ## Customers
 
 * Unlimited Customers
-* Live Channel View.
+* [**Live Channel View**](https://docs.connexcs.com/dashboard/#live-channels)
 * Prepay & Post Pay
 * Approved Payments (e.g Bank Transfers)
 * Auto Tax (Sales Tax / VAT)
@@ -38,9 +38,9 @@ The following is a comprehensive list of features included in the latest stable 
 
 * Multiple Receipients
 * Balance / ACD / ASR / PDD / Consec Failure
-* Send Alert to Email or SMS
+* [**Send Alert to Email or SMS**](https://docs.connexcs.com/customer/alerts/#create-an-alert)
 * [**Test Alert**](https://docs.connexcs.com/customer/alerts/#test-and-alert)
-* Customizable Reset Threshold
+* [**Customizable Reset Threshold**](https://docs.connexcs.com/customer/alerts/#create-an-alert)
 * Penalty for predefined time.
 
 ### Contacts
@@ -55,7 +55,7 @@ The following is a comprehensive list of features included in the latest stable 
 * Codec Restrictions
 * Non Standard Ports
 * Perimiter Normalization (Advanced A & B Number Manipulization to get numbers in E164 format.)
-* SIP Username / Password Authentication
+* [**SIP Username / Password Authentication**](https://docs.connexcs.com/customer/auth/#sip-user-authentication)
 * User Latency Measurement (Graphs)
 * UDP / SIP Pinging
 * IP Whitelist (for User / Password Auth)
@@ -75,7 +75,7 @@ The following is a comprehensive list of features included in the latest stable 
 
 ### Authentication
 
-* Outbound Proxy Support
+* [**Outbound Proxy Support**](https://docs.connexcs.com/anyedge/anyedge/#outbound-proxy)
 * Perimiter De-Normalization (Send in the carriers required format)
 * Codec Restrictions
 * Carrier Username / Password Registration Support
@@ -84,12 +84,12 @@ The following is a comprehensive list of features included in the latest stable 
 
 * Origination / Termination
 * Revisions
-* NPANXX (Intrastate / Interstate / Indeterminate)
+* [**NPANXX (Intrastate / Interstate / Indeterminate**](https://docs.connexcs.com/routing-usa/)
 * LRN & DN
 * Multi-Currency
 * Tech Prefix Per Card
 * Custom Rounding Method and Billing Precision
-* CLI Restriction
+* [**CLI Restriction**](https://docs.connexcs.com/cli-restriction/#cli-restriction)
 * Capped Rate & Block Connect Cost
 * Bulk Upload or Build in Browser
 * Email Rate Card
@@ -134,10 +134,10 @@ The following is a comprehensive list of features included in the latest stable 
 
 ### CLI Management
 
-* CLI Whitelist
-* Force CLI (if not in whitelist)
-* RegEx Rewrite
-* P-Assert-ID
+* [**CLI Whitelist**](https://docs.connexcs.com/customer/cli/#whitelist)
+* [**Force CLI (if not in whitelist)**](https://docs.connexcs.com/customer/cli/#configure-cli)
+* [**RegEx Rewrite**](https://docs.connexcs.com/customer/cli/#advanced-cli-match-manipulation)
+* [**P-Assert-ID**](https://docs.connexcs.com/customer/cli/#configure-cli)
 * Orig / Term Rules
 
 ### Call Distribution
