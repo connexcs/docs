@@ -9,7 +9,12 @@ Under the **Auth** tab, configure IP or SIP (Username/Password) Authentication f
 
 
 ## IP Authentication
-When you setup **IP Authentication**, you associate the IP of a customer switch to their account. This add a layer of security by ensuring the calls are coming from a trusted source. 
+When you enable **IP Authentication**, you associate the IP of a customer switch to their account. This add a layer of security by ensuring the calls are coming from a trusted source. 
+
+!!! error "Newly added IP immediately marked as Blocked under IP Authentication"
+    This occurs because call requests were sent from the new IP before it is authorized. As a result, ConnexCS fraud detection blocked the unauthorized IP in the firewall. Attempted calls from this IP will not be completed. To resolve the blocked IP, go to **Setup :material-menu-right: Advanced :material-menu-right: Firewall**. Select the blocked IP, then delete it from the firewall. This unblocks the IP, but it will take up to 15 minutes for the change to become active in the switch. See [Threat Detection](https://docs.connexcs.com/setup/advanced/firewall/) for more details. 
+
+### Enable IP Authentication 
 
 *Click each tab to view configuration details.*
 
@@ -35,7 +40,7 @@ When you setup **IP Authentication**, you associate the IP of a customer switch 
     + **Username, and Password**: Set when sending calls out (egress switch direction) to a remote system, setting this will allow the ConnexCS switch to operate as a client, or UAC. Not typically recommended unless the customer has a very specialized system. 
     + **Force NAT**: Forces the switch to read the IP address the traffic was received from, not the IP in the SIP packet. (See [**NAT Traversal**](https://docs.connexcs.com/far-end-nat-traversal/) for more details on how ConnexCS handles NAT for SIP.)
     + **Intercept Reinvite**: The only situation where this is recommended is when a customer's equipment doesn't support REINVITES. Enabling this may correct issues with dropped calls by having ConnexCS generate the REINVITES, which can help keep calls up if they are being disconnected by the far-end switch. 
-    + **Flags**: Set CLI Authentication for situations where Accounts are unable to use [Tech Prefix](https://docs.connexcs.com/customer/routing/#basic) to differentiate customers using the same IP. 
+    + **Flags**: Set CLI Authentication for situations where Accounts are unable to use [**Tech Prefix**](https://docs.connexcs.com/customer/routing/#basic) to differentiate customers using the same IP. 
  
 === "Codecs"    
     
@@ -43,7 +48,7 @@ When you setup **IP Authentication**, you associate the IP of a customer switch 
     
 === "Parameter Rewrite"
 
-    The **Parameter Rewrite** tab is used to manipulate data as it comes into the system. It is most useful when you need to create automatic replacements for destination numbers or CLI, so a number is formatted in the appropriate [E164 format](https://www.twilio.com/docs/glossary/what-e164). 
+    The **Parameter Rewrite** tab is used to manipulate data as it comes into the system. It is most useful when you need to create automatic replacements for destination numbers or CLI, so a number is formatted in the appropriate [**E164 format**](https://www.twilio.com/docs/glossary/what-e164). 
 
     1. Click the **`+`**.
     2. Type: Select the parameter to modify.
@@ -61,10 +66,6 @@ ___
 After IP Authentication has been setup, click on the IP to view configuration, and at the top of the page you can click "View Audit Log" to view changes specific to these settings. 
 
 
-!!! error "Newly added IP immediately marked as Blocked under IP Authentication"
-    This occurs because call requests were sent from the new IP before it is authorized. As a result, ConnexCS fraud detection blocked the unauthorized IP in the firewall. Attempted calls from this IP will not be completed. To resolve the blocked IP, go to **Setup :material-menu-right: Advanced :material-menu-right: Firewall**. Select the blocked IP, then delete it from the firewall. This unblocks the IP, but it will take up to 15 minutes for the change to become active in the switch. See [Threat Detection](https://docs.connexcs.com/setup/advanced/firewall/) for more details. 
-
-
 
 ## SIP User Authentication
 When **SIP Authentication** is enabled, ConnexCS will reject the initial SIP INVITE with a "407 Authentication Required", which includes a 'nonce' (a uniquely randomly generated number, which is then hashed). The customer switch will send appropriate authentication information to ConnexCS, which will connect the call. 
@@ -74,7 +75,7 @@ When **SIP Authentication** is enabled, ConnexCS will reject the initial SIP INV
 
 === "Basic"
 
-    + **Username**: This will be the Username used for SIP authentication (must match configuration on the customer UAC). If The Customer has [Internal Number Block](https://docs.connexcs.com/customer/main/#internal-number-block) set on the **Main** tab, the Username may only be selected from available extensions. If a Username is already in use on the Account, they will get an error saying "Duplicate User Detected".
+    + **Username**: This will be the Username used for SIP authentication (must match configuration on the customer UAC). If The Customer has [**Internal Number Block**](https://docs.connexcs.com/customer/main/#internal-number-block) set on the **Main** tab, the Username may only be selected from available extensions. If a Username is already in use on the Account, they will get an error saying "Duplicate User Detected".
     + **Password**: Must match configuration on the customer UAC.
     + **Channels, Flow Speed, Bandwidth**; Do NOT set use these fields. 
     + **Protocol**: This sets the type of signalling protocol for call setup, maintenance, and tear down. ConnexCS uses SIP for signalling, but here you select the transport protocol. (Note: SMPP, for SMS, is not currently supported.)
@@ -95,7 +96,7 @@ When **SIP Authentication** is enabled, ConnexCS will reject the initial SIP INV
 
 === "Parameter Rewrite"
 
-    The **Parameter Rewrite** tab is used to manipulate data as it comes into the system. It is most useful when you need to create automatic replacements for destination numbers or CLI, so a number is formatted in the appropriate [E164 format](https://www.twilio.com/docs/glossary/what-e164). 
+    The **Parameter Rewrite** tab is used to manipulate data as it comes into the system. It is most useful when you need to create automatic replacements for destination numbers or CLI, so a number is formatted in the appropriate [**E164 format**](https://www.twilio.com/docs/glossary/what-e164). 
 
     1. Click the **`+`**.
     2. Type: Select the parameter to modify.
@@ -106,7 +107,7 @@ When **SIP Authentication** is enabled, ConnexCS will reject the initial SIP INV
 
 === "Voice Mail"
 
-    If Voice Mail is enabled, you can set which email address receives messages, reset the Voicemail Password, and view and delete current messages. See [Voicemail](https://docs.connexcs.com/class5/voicemail/) for information on accessing Voicemail. 
+    If Voice Mail is enabled, you can set which email address receives messages, reset the Voicemail Password, and view and delete current messages. See [**Voicemail**](https://docs.connexcs.com/class5/voicemail/) for information on accessing Voicemail. 
     
 === "Latency"
    
