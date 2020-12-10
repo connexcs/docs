@@ -63,6 +63,7 @@ While not strictly necessary to configure your Personal Profile to complete basi
      
     Manage your email subscriptions by clicking the blue `Edit` button. 
 
+___
 
 ## Customer Setup
 These instructions for basic **Customer** setup will help you create a profile and setup account details like IP addresses and payments.  For more detailed instructions about setting up customers, see [Customer Management](https://docs.connexcs.com/customer/customer/) and following sections.
