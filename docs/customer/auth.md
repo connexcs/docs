@@ -38,7 +38,7 @@ When you enable **IP Authentication**, you associate the IP of a customer switch
     + **CLI Prefix, Tech Prefix, Strip Digits**:  Do NOT Use these fields. Use the Parameter Rewrite tab to modify numbers. 
     + **Bandwidth, Force From**: Do NOT Use these fields.
     + **Username, and Password**: Set when sending calls out (egress switch direction) to a remote system, setting this will allow the ConnexCS switch to operate as a client, or UAC. Not typically recommended unless the customer has a very specialized system. 
-    + **Force NAT**: Forces the switch to read the IP address the traffic was received from, not the IP in the SIP packet. (See [**NAT Traversal**](https://docs.connexcs.com/far-end-nat-traversal/) for more details on how ConnexCS handles NAT for SIP.)
+    + **Force NAT**: Forces the switch to read the IP address the traffic was received from, not the IP in the SIP packet. (See [**Far-End NAT Traversal**](https://docs.connexcs.com/far-end-nat-traversal/) for more details on how ConnexCS handles NAT for SIP.)
     + **Intercept Reinvite**: The only situation where this is recommended is when a customer's equipment doesn't support REINVITES. Enabling this may correct issues with dropped calls by having ConnexCS generate the REINVITES, which can help keep calls up if they are being disconnected by the far-end switch. 
     + **Flags**: Set CLI Authentication for situations where Accounts are unable to use [**Tech Prefix**](https://docs.connexcs.com/customer/routing/#basic) to differentiate customers using the same IP. 
  
