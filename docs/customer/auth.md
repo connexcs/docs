@@ -68,7 +68,11 @@ After IP Authentication has been setup, click on the IP to view configuration, a
 
 
 ## SIP User Authentication
-When **SIP Authentication** is enabled, ConnexCS will reject the initial SIP INVITE with a "407 Authentication Required", which includes a 'nonce' (a uniquely randomly generated number, which is then hashed). The customer switch will send appropriate authentication information to ConnexCS, which will connect the call. 
+When **SIP Authentication** is enabled, ConnexCS will reject the initial SIP INVITE with a "407 Authentication Required". This message includes a 'nonce' (a uniquely randomly generated number, which has been hashed). The customer switch will send appropriate authentication information to ConnexCS, which will connect the call. 
+
+Generic SIP Trce showing the Challenge Response:
+
+![alt text][407-trace]
 
 ### Enable SIP User Authentication 
 *Click each tab to view configuration details.*
@@ -147,4 +151,5 @@ Use the `Send` button next to the SIP User to send a SIP message to the end devi
 [ipauth-adv]: /customer/img/ipauth-adv.png "Edit Switch Advance"
 [ipauth-param]: /customer/img/ipauth-param.png "Edit Switch Parameters"
 [sip-b]: /customer/img/sip-b.png "SIP Codecs"
+[407-trace]: /customer/img/407-trace.png "SIP Trace Error 407"
 [voicemail]: /customer/img/voicemail.png "Voicemail"
