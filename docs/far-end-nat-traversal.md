@@ -6,7 +6,7 @@ Not all networking devices (firewalls, gateways, or other NAT devices) support S
 
 There are 3 methods to correct this issue:
 
-1. Client-end configuration ([using **STUN** to replace the private IP with the public IP](https://en.wikipedia.org/wiki/STUN)
+1. Client-end configuration (using[ **STUN**](https://en.wikipedia.org/wiki/STUN) to replace the private IP with the public IP)
 2. NAT device configuration (setup ALG on the device)
 3. Carrier configuration (this is Far-End NAT Traversal)
 
