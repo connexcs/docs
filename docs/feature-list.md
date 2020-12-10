@@ -105,7 +105,7 @@ The following is a comprehensive list of features included in the latest stable 
 
 ## Routing
 
-* Global Routing Profiles
+* [Global Routing Profiles](https://docs.connexcs.com/global-routing/)
 * Tags
 * Temporarly Disable Customer Termination Routes
 * Per Route CPS & Channel Limitations.
