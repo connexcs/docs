@@ -14,7 +14,10 @@ Click on a specific Call ID to view details and run call tools.
 * **Refresh**: For Live calls, use the **`Refresh`** button to reload the logs to show the most recent changes. This is necessary as some of the data must be processed through CDR before it will be displayed.
 
 ## SIP Traces
-**SIP Tracing** is a tool used for phone systems that use the SIP (Session Initiation Protocol) for interactions like trunks and endpoints. Traces give detailed information about calls and call attempts which helps to identify any problem areas for debugging and troubleshooting.
+**SIP Tracing** is a diagnostic tool for phone systems using SIP (Session Initiation Protocol) for interactions across trunks and between endpoints. Traces give detailed information about calls and call attempts when debugging and troubleshooting. Since SIP protocol is used for call setup, maintenance, and tear-down, this tool is typically only used for call connection issues. Call quality issues are usually identified using other methods. (There are always rare exceptions.)
+
+!!! info "SIP Trace Captures"
+    The **ConnexCS** system supports always-on **SIP Trace** capture. We keep a record of every packet sent and received by your server over the last seven (7) days. 
 
 To view the SIP Trace of a call:
 
