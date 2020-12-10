@@ -19,7 +19,7 @@ To view and configure existing routes, click on the **Routing** tab in the Custo
 
 **Rate Card**: Also known as Tariff, this allows you to select the rate card used on a customer's account.
 
-**Tech Prefix**: This is used to determine the routing. When multiple customers share the same IP address, each customer needs an individual tech prefix so the switch can sort them. It lets providers separate multiple rate cards.
+**Tech Prefix**: When multiple customers share the same IP address, each customer needs an individual Tech Prefix so the switch can route calls correctly. It lets providers separate multiple rate cards.
 
 **Dial String Prefix Set**: Setting a Dial String Prefix allows determine routing based on a predefined prefix set (defined under Setup > Advanced > Prefix Set.)
 
