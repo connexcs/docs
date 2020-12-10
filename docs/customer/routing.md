@@ -114,6 +114,7 @@ The ScriptForge allows for custom code to run from within the ConnexCS platform.
 
 ### Locks
 Used for troubleshooting, you can remove carriers from a route and run a quick test.  
+
 + **Lock** Parent Card: Choose this option to lock a rate card from the list of available providers. 
 + **Exclude** Parent Card: Choose this option to exclude access to one or more of the rate cards in the list of available providers.
 
