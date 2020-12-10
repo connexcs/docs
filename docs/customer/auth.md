@@ -17,9 +17,9 @@ When you setup **IP Authentication**, you associate the IP of a customer switch 
 
     + **IP**: Enter the IP of the customer switch.
     + **Switch Direction**: The `Ingress` and `Egress` selections are from the perspective of the customer switch (PBX, dialer, etc), and describe how that switch interacts with the ConnexCS switch. For switches that send and receive calls from ConnexCS, there will need to be separate entries for each direction. 
-        * Ingress: This switch *receieves* calls from ConnexCS. (Note: when selected, this gives the option of using the FQDN rather than the switch IP.)
+        * Ingress: This switch *receives* calls from ConnexCS. (Note: when selected, this gives the option of using the FQDN rather than the switch IP.)
         * Egress: This switch *sends* calls to ConnexCS
-    + **Channels**: Set the maximim number of concurrent calls for this switch. 
+    + **Channels**: Set the maximum number of concurrent calls for this switch. 
     + **Flow Speed**: Set the Calls Per Second (CPS) (0 = unlimited calls).   
     
     ![alt text][ipauth-basic]
@@ -32,18 +32,18 @@ When you setup **IP Authentication**, you associate the IP of a customer switch 
     + **Dial Pattern**: the default selection is the industry standard.
     + **CLI Prefix, Tech Prefix, Strip Digits**:  Do NOT Use these fields. Use the Parameter Rewrite tab to modify numbers. 
     + **Bandwidth, Force From**: Do NOT Use these fields.
-    + **Username, and Password**: Set when sending calls out (egress switch direction) to a remote system, setting this will allow the ConnexCS switch to operate as a client, or UAC. Not typically recommended unless the customer has a very specilized system. 
+    + **Username, and Password**: Set when sending calls out (egress switch direction) to a remote system, setting this will allow the ConnexCS switch to operate as a client, or UAC. Not typically recommended unless the customer has a very specialized system. 
     + **Force NAT**: Forces the switch to read the IP address the traffic was received from, not the IP in the SIP packet. (See [**NAT Traversal**](https://docs.connexcs.com/far-end-nat-traversal/) for more details on how ConnexCS handles NAT for SIP.)
     + **Intercept Reinvite**: The only situation where this is recommended is when a customer's equipment doesn't support REINVITES. Enabling this may correct issues with dropped calls by having ConnexCS generate the REINVITES, which can help keep calls up if they are being disconnected by the far-end switch. 
-    + **Flags**: Set CLI Authetnication for situations where Accounts are unable to use [Tech Prefix]() to differentiate customers using the same IP. 
+    + **Flags**: Set CLI Authentication for situations where Accounts are unable to use [Tech Prefix](https://docs.connexcs.com/customer/routing/#basic) to differentiate customers using the same IP. 
  
-=== "Codec"    
+=== "Codecs"    
     
     All Codecs are supported unless specifically set as "Restricted" here. 
     
 === "Parameter Rewrite"
 
-    The **Parameter Rewrite** tab is used to manipulate data as it comes into the system. It is most usedful when you need to create automatic replacements for destination numbers or CLI, so a number is formatted in the appropriate [E164 format](https://www.twilio.com/docs/glossary/what-e164). 
+    The **Parameter Rewrite** tab is used to manipulate data as it comes into the system. It is most useful when you need to create automatic replacements for destination numbers or CLI, so a number is formatted in the appropriate [E164 format](https://www.twilio.com/docs/glossary/what-e164). 
 
     1. Click the **`+`**.
     2. Type: Select the parameter to modify.
@@ -55,7 +55,7 @@ When you setup **IP Authentication**, you associate the IP of a customer switch 
     Example: International calls coming in with a + should be replaced with a specific country code. 
 
     ![alt text][parameter-rewrite]
-    
+___    
 
 ### IP Authentication Audit Log
 After IP Authentication has been setup, click on the IP to view configuration, and at the top of the page you can click "View Audit Log" to view changes specific to these settings. 
@@ -64,12 +64,12 @@ After IP Authentication has been setup, click on the IP to view configuration, a
 !!! error "Newly added IP immediately marked as Blocked under IP Authentication"
     This occurs because call requests were sent from the new IP before it is authorized. As a result, ConnexCS fraud detection blocked the unauthorized IP in the firewall. Attempted calls from this IP will not be completed. To resolve the blocked IP, go to **Setup :material-menu-right: Advanced :material-menu-right: Firewall**. Select the blocked IP, then delete it from the firewall. This unblocks the IP, but it will take up to 15 minutes for the change to become active in the switch. See [Threat Detection](https://docs.connexcs.com/setup/advanced/firewall/) for more details. 
 
-___
+
 
 ## SIP User Authentication
-When **SIP Authetnication** is enabled, ConnexCS will reject the initial SIP INVITE with a "407 Autehtnication Required", which includes a 'nonce' (a uniquely randomly geenrated number, which is then hashed). The customer switch will send appropriate authentication information to ConnexCS, which will connect the call. 
+When **SIP Authentication** is enabled, ConnexCS will reject the initial SIP INVITE with a "407 Authentication Required", which includes a 'nonce' (a uniquely randomly generated number, which is then hashed). The customer switch will send appropriate authentication information to ConnexCS, which will connect the call. 
 
-### Enable SIP User Authenticaiton 
+### Enable SIP User Authentication 
 *Click each tab to view configuration details.*
 
 === "Basic"
@@ -95,7 +95,7 @@ When **SIP Authetnication** is enabled, ConnexCS will reject the initial SIP INV
 
 === "Parameter Rewrite"
 
-    The **Parameter Rewrite** tab is used to manipulate data as it comes into the system. It is most usedful when you need to create automatic replacements for destination numbers or CLI, so a number is formatted in the appropriate [E164 format](https://www.twilio.com/docs/glossary/what-e164). 
+    The **Parameter Rewrite** tab is used to manipulate data as it comes into the system. It is most useful when you need to create automatic replacements for destination numbers or CLI, so a number is formatted in the appropriate [E164 format](https://www.twilio.com/docs/glossary/what-e164). 
 
     1. Click the **`+`**.
     2. Type: Select the parameter to modify.
@@ -106,17 +106,19 @@ When **SIP Authetnication** is enabled, ConnexCS will reject the initial SIP INV
 
 === "Voice Mail"
 
-    If Voice Mail is enabled, you can set which email address receives messages, reset the Voicemail Password, and view and delete current messages. 
+    If Voice Mail is enabled, you can set which email address receives messages, reset the Voicemail Password, and view and delete current messages. See [Voicemail](https://docs.connexcs.com/class5/voicemail/) for information on accessing Voicemail. 
     
 === "Latency"
    
-    Once NAT/SIP pings are enabled, the **Latency** tab will be available at the top of the SIP user screen. This can be helpful for troubleshooting audio problems. 
+    If NAT/SIP pings are enabled, the **Latency** tab will be available at the top of the SIP user screen, and displays the status of the SIP pings, and latency based on those pings. This can be helpful for troubleshooting audio problems. 
     
-    
+___
+
+
 ### Use Case for NAT/SIP Pings 
 
 **Troubleshooting Scenario**
-The Customer reports they are able to register and make outbound calls, but they are unable to receive inbound calls. 
+The Customer reports they can register and make outbound calls, but they are unable to receive inbound calls. 
 
 **What is happening**
 In a typical configuration, a packet is sent from the customer UAC out through a NAT/firewall, and then the packet is delivered to the UAS: 
@@ -125,8 +127,8 @@ Ex: Customer switch :material-menu-right: NAT/firewall :material-menu-right: Con
     
 + When a packet goes out, a hole is punched in the firewall, and the source port is recorded. When a packet is returned on that port, the firewall knows to deliver back to the UAC.  
 + This works well when using TCP, which sends regular keep-alive packets.
-+ UDP does not send keep alives (no connected state as with TCP). SIP does maintain a connected state, registration, but may have long periods of inactivity. 
-+ Without regular traffic passing between UAS and UAC in the form of keep alives/registration (a normal occurance), NAT will eventualy time out and shut down the connection. 
++ UDP does not send keep-alives (no connected state as with TCP). SIP does maintain a connected state, registration, but may have long periods of inactivity. 
++ Without regular traffic passing between UAS and UAC in the form of keep-alives/registration (a normal occurence), NAT will eventually time out and shut down the connection. 
 + Enabling UDP or SIP pings can demonstrate to the NAT/firewall that the signalling path is still valid and in use. 
 
 ### Reset SIP Password
@@ -137,7 +139,7 @@ Click the `Password` key next to the SIP user to reset the password.
     SIP passwords are a requirement of the SIP protocol but can present security risks for a provider. They must be configured in ConnexCS when SIP authentication is setup but are not available for providers or customers to retrieve afterwards. Providers should generate a unique SIP password for each SIP user and send that to the customer. This gives the customer the responsibility of keeping track of the password and keeping it safe. Additionally, the unique password will allow for traceability if the customer's system is ever compromised. 
     
 ### Send message to SIP Users
-Use the `Send` button next to the SIP User to send a direct message. 
+Use the `Send` button next to the SIP User to send a SIP message to the end device, and will flash on the phone. 
 
 [ipauth-basic]: /customer/img/ipauth-b.png "Edit Switch Basic"
 [parameter-rewrite]: /customer/img/parameter-rewrite.png "Parameter Rewrite"
