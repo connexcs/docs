@@ -1,22 +1,37 @@
 # CLI
 
-The **CLI/ANI** field is the `From` part of the `SIP INVITE` message. This contains specific information about the caller, particularly the name and number of the person attempting to contact a user in a VoIP system. This is more commonly known as "Caller ID" in standard phone systems.
+**Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Routing
+
+**CLI** (Calling Line Identification) refers to the **CLI/ANI** field in the `From` part of the `SIP INVITE` message. This contains specific information about the caller, particularly the name and number of the person attempting to contact a user in a VoIP system. This is more commonly known as "Caller ID" in standard phone systems. CLI may also be referred to as "A-Leg" or "A-Number", where the call originates. The call is then terminated at the Dialled Number, the "B-Leg" or "B-Number".
+
+
 
 ## Configure CLI
 To set CLI options:
 
-1.	Click on the **`+`** button.
+1.	Click on the **`+`** button under **CLI**.
 2.	Fill out the fields in the dialogue box and **`Save`**.
 
 Field details:
 
-+ **Force CLI**: To change the CLI that is presented for another, enter the CLI you wish to present, and click the **`Force CLI`** box.  It will allow you to override the previous number with one that is accepted. You can add a whitelist of CLIs and select Force on a CLI which you wish to be used if none of the others in the whitelist match.
++ **CLI**: 
 
 + **Rewrite CLI**: A CLI can be re-written. For example, you can add `123456789` in the CLI box, and then rewrite by adding `987654321` in the re-write CLI box. (See **Advanced CLI Match and Manipulation** below.)
 
 + **P-Asserted-ID**: **`P-Asserted-Identification`** is another SIP Header. It is not presented but allows telephone companies to identify originators on a network-only level. A P-Asserted-ID uses the same syntax as Replace CLI.
 
++ **Forced**: To change the CLI that is presented for another, enter the CLI you wish to present, and click the **`Force CLI`** box.  It will allow you to override the previous number with one that is accepted. You can add a whitelist of CLIs and select Force on a CLI which you wish to be used if none of the others in the whitelist match.
+
++ **Direction Applied**: 
+
 ![alt text][edit-cli]
+
+## CLI Default Behaviors
+
+|Scenario|Settings|Result|
+|---|---|---|
+|1|No CLIs are configured and "Approved CLI's Only" (under Edit Customer :material-menu-right: Verification) is not selected|All CLIs will come into the system and pass through| |2|No CLIs are configured and "Approved CLI's Only" is selected|No calls will be allowed through|
+|3|Calls made from a CLI which has not been configured|Error: CLI Restriction in effect|
 
 ## Advanced CLI Match & Manipulation
 The CLI system uses Regular Expressions to match and replace numbers. Here are a few examples:
