@@ -382,7 +382,7 @@ The following is a comprehensive list of features included in the latest stable 
 ### Media
 
 * 30+ RTP Servers distributed worldwide.
-* Media Transcoding
+* [Media Transcoding](https://docs.connexcs.com/customer/routing/#media)
 * Direct RTP
 * Wholesale Large Volume Call Recording
 * SRTP Support
