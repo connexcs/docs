@@ -256,16 +256,16 @@ The following is a comprehensive list of features included in the latest stable 
 
 ## Developer
 
-* ScriptForge (Javascript) Applications
+* [ScriptForge (Javascript) Applications](https://docs.connexcs.com/customer/routing/#scriptforge)
     * Routing
     * Class 5 Applications
     * UI Enhancement
     * Batch Processing
-* Form Builder - Place custom data collection forms on Customer and Control Panel
-* Analytics - Build your own Reports
+* [Form Builder] - Place custom data collection forms on Customer and Control Panel(https://docs.connexcs.com/developers/form-builder/)
+* [Analytics - Build your own Reports](https://docs.connexcs.com/developers/analytics/)
 * Userspace Database - Create your own databases
     * Real-time querying with ScriptForge
-* Template Customisation
+* [Template Customisation](https://docs.connexcs.com/setup/config/templates/)
     * Emails
     * Form Submission Messages
     * Integration with ScriptForge
@@ -293,7 +293,7 @@ The following is a comprehensive list of features included in the latest stable 
 * 3 Months minimum history
 * Custom Date Range Selector
 * Channels / ASR / ACD / Attempts / Connected / PDD
-* DTMF Reporting (Count the amount of calls with DTMF passed)
+* [DTMF Reporting] (Count the amount of calls with DTMF passed)(https://docs.connexcs.com/report/#dtmf-report)
 * Failure Report
 * CLI based ASR
 * Provider Report Per Customer
@@ -458,7 +458,7 @@ The following is a comprehensive list of features included in the latest stable 
 
 ## API
 
-* [RESTful Customer Portal API] (Can use your customer credentials to access)(https://docs.connexcs.com/api/)
+* [RESTful Customer Portal API] (Can use your customer credentials to access) (https://docs.connexcs.com/api/)
 * [RESTful Control Panel API](80+ CRUD Endpoints)(https://docs.connexcs.com/api/#customer-administration)
 
 We have done our best to compile a detailed feature list, however our product is growing day-by-day and this should be interpreted as a minimum, as with our powerful customisations, you can accomplish more.
