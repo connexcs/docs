@@ -422,7 +422,7 @@ The following is a comprehensive list of features included in the latest stable 
 
 ## Integrations
 
-* Paypal IPN
+* [Paypal IPN](https://docs.connexcs.com/setup/integrations/api/#paypal-ipn-integration)
 * Paypal Express Checkout
 * Stripe (Credit Card, etc)
 * Duo Security
@@ -438,10 +438,10 @@ The following is a comprehensive list of features included in the latest stable 
 **Global AnyCast SIP**, highly scalable, lowest latency worldwide, eliminated SPOF on the edge.
 
 * Dedicated IP Address
-* SIP Packet Compression / Compaction
-* SIP Packet Validation
-* CPS Limits & CPS Breach Metrics
-* Far End NAT Traversal (Customisable)
+* [SIP Packet Compression / Compaction](https://docs.connexcs.com/anyedge/anyedge/#compaction-compression)
+* [SIP Packet Validation](https://docs.connexcs.com/anyedge/anyedge/#sip-packet-validation)
+* [CPS Limits & CPS Breach Metrics](https://docs.connexcs.com/anyedge/anyedge/#metrics)
+* [Far End NAT Traversal (Customisable)](https://docs.connexcs.com/far-end-nat-traversal/#what-is-far-end-nat-traversal)
 * Globally Redundant
 * UDP / TCP / TLS / WebRTC Connectivity
 * Free TLS Certificate
@@ -450,15 +450,15 @@ The following is a comprehensive list of features included in the latest stable 
 * Multi-domain support & config.
 * 10K+ CPS
 * 10Gbps DDoS Protection
-* Registration Proxy
-* Outbound Proxy
+* [Registration Proxy](https://docs.connexcs.com/anyedge/anyedge/#registration-proxy)
+* [Outbound Proxy](https://docs.connexcs.com/anyedge/anyedge/#outbound-proxy)
 * Multiple Call Distribution Methods
 * BYOD (ConnexCS Class 4 switching not needed)
 * Zone based proximity routing
 
 ## API
 
-* RESTful Customer Portal API (Can use your customer credentials to access)
-* RESTful Control Panel API (80+ CRUD Endpoints)
+* [RESTful Customer Portal API] (Can use your customer credentials to access)(https://docs.connexcs.com/api/)
+* [RESTful Control Panel API](80+ CRUD Endpoints)(https://docs.connexcs.com/api/#customer-administration)
 
 We have done our best to compile a detailed feature list, however our product is growing day-by-day and this should be interpreted as a minimum, as with our powerful customisations, you can accomplish more.
