@@ -1,9 +1,8 @@
 # CLI
 
-**Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Routing
+**Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Routing**
 
-**CLI** (Calling Line Identification) refers to the **CLI/ANI** field in the `From` part of the `SIP INVITE` message. This contains specific information about the caller, particularly the name and number of the person attempting to contact a user in a VoIP system. This is more commonly known as "Caller ID" in standard phone systems. CLI may also be referred to as "A-Leg" or "A-Number", where the call originates. The call is then terminated at the Dialled Number, the "B-Leg" or "B-Number".
-
+**CLI (Calling Line Identification)** refers to the **CLI/ANI** field in the `From` part of the `SIP INVITE` message. This contains specific information about the caller, particularly the name and number of the person initiating the call. Also known as "Caller ID" in standard phone systems, CLI may also be referred to as "A-Leg" or "A-Number", where the call originates. The call is then terminated at the Dialled Number, the "B-Leg" or "B-Number".
 
 
 ## Configure CLI
@@ -14,15 +13,20 @@ To set CLI options:
 
 Field details:
 
-+ **CLI**: 
++ **CLI**: Enter the desired number or a regular expression to match and replace to allow numbers through
 
-+ **Rewrite CLI**: A CLI can be re-written. For example, you can add `123456789` in the CLI box, and then rewrite by adding `987654321` in the re-write CLI box. (See **Advanced CLI Match and Manipulation** below.)
++ **Rewrite CLI**: A CLI can be re-written. For example, you can add `123456789` in the CLI box, and then rewrite by adding `987654321` in the re-write CLI box. (See [**Advanced CLI Match and Manipulation**](https://docs.connexcs.com/customer/cli/#advanced-cli-match-manipulation) below.)
 
-+ **P-Asserted-ID**: **`P-Asserted-Identification`** is another SIP Header. It is not presented but allows telephone companies to identify originators on a network-only level. A P-Asserted-ID uses the same syntax as Replace CLI.
++ **P-Asserted-ID**: **`P-Asserted-Identification`** is a SIP Header similar to the FROM header, but classified as a private, or network-level identifier. Telephone companies use it to identify call originators, but then it is stripped at the call server, so the client end-points only see the FROM field. This is especially helpful when caller's obscure their CLI/FROM information, as the network-level still requires origination details. The **P-Asserted-ID** manipulation uses the same syntax as Replace CLI.
 
-+ **Forced**: To change the CLI that is presented for another, enter the CLI you wish to present, and click the **`Force CLI`** box.  It will allow you to override the previous number with one that is accepted. You can add a whitelist of CLIs and select Force on a CLI which you wish to be used if none of the others in the whitelist match.
+!!! tip "P-Asserted-ID Use Case"
+    If you wanted to allow all calls, but assign a specific number (such as the Main Billable number for the business), you would set CLI as "\*" then enter the desired P-Asserted ID. All calls will then have this number as the P-Asserted-ID. 
+    
 
-+ **Direction Applied**: 
+
++ **Forced**: Enabling this will allow a call if there are no other matching CLIs in the system. This will also replace the CLI that is presented with the CLI entered here. Ex: Create a whitelist of CLIs, then select **Forced** on the CLI to use if none of the others in the white list match. (Best practice is to only have one **Forced** CLI.)
+
++ **Direction Applied**: Select either **Termination** for calls a customer makes out, or **Origination** (also refers to DIDs) for inbound calls made to our customers. Ex: Create a white list that only allows calls to or from the same country.  
 
 ![alt text][edit-cli]
 
@@ -30,8 +34,12 @@ Field details:
 
 |Scenario|Settings|Result|
 |---|---|---|
-|1|No CLIs are configured and "Approved CLI's Only" (under Edit Customer :material-menu-right: Verification) is not selected|All CLIs will come into the system and pass through| |2|No CLIs are configured and "Approved CLI's Only" is selected|No calls will be allowed through|
-|3|Calls made from a CLI which has not been configured|Error: CLI Restriction in effect|
+|1|No CLIs configured and "Approved CLI's Only" is Disabled|All CLIs will be allowed through|
+|2|No CLIs configured and "Approved CLI's Only" is Enabled|No calls will be allowed through|
+|3|"Approved CLI's Only" is enabled and call is made from a CLI which has not been configured|Error: CLI Restriction in effect|
+
+!!! tip "Approved CLIs Only"
+    "Approved CLIs Only" is set under Edit Customer :material-menu-right: Verification
 
 ## Advanced CLI Match & Manipulation
 The CLI system uses Regular Expressions to match and replace numbers. Here are a few examples:
@@ -44,7 +52,7 @@ The CLI system uses Regular Expressions to match and replace numbers. Here are a
 | +123456789  |   ^\+([0-9]+)$ |          \1 |                                 Remove leading + |
 | 01782123456 |    ^0([1-9]+)$ |        44\1 |             Remove leading 0 and replace with 44 |
 
-*To learn more about writing regular expressions, visit http://regexr.com for tutorials and exercises available for all levels of expertise.*
+*To learn more about writing regular expressions, visit [http://regexr.com](http://regexr.com) for tutorials and exercises available for all levels of expertise.*
 
 
 ## Whitelist
@@ -64,15 +72,12 @@ CLI Restrict lets you block calls. The blocked CLI is added in the Provider Rate
 3. Enter the CLI/ANIs you want to block in the **CLI Restrict** box.
 4. Click **`Save`**.
 
-![alt text][recording-7]
-
 ## General Condition 6 (GC6) Compliance
-ConnexCS is GC6 compliant for end users, which 
+ConnexCS is GC6 compliant for end users, which: 
 
-> requires Communications Providers (CPs) to provide CLI facilities, and ensure that the CLI Data provided with a call includes a valid, dialable telephone number which uniquely identifies the caller." For details on this General Condition, including guidelines for "valid" and "dialable" numbers, see Ofcom's [Guidance on CLI Facilities](https://www.ofcom.org.uk/__data/assets/pdf_file/0012/113214/statement-guidelines-cli-facilities.pdf).
+> requires Communications Providers (CPs) to provide CLI facilities, and ensure that the CLI Data provided with a call includes a valid, dialable telephone number which uniquely identifies the caller." For details on this General Condition, including guidelines for "valid" and "dialable" numbers, see OFCOM's [Guidance on CLI Facilities](https://www.ofcom.org.uk/__data/assets/pdf_file/0012/113214/statement-guidelines-cli-facilities.pdf).
 
-To configure per customer, set the CLI P-Asserted-ID found in the customer routing configuration. 
+To configure per customer, set the CLI "P-Asserted-ID" found CLI configuration above. 
 
 
 [edit-cli]: /customer/img/edit-cli.png "Edit CLI"
-[recording-7]: /customer/img/63.png "recording-7"
