@@ -1,9 +1,10 @@
 # Routing
+**Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Routing**
 
-**Ingress Routing** allocates incoming calls based on the selected Customer Rate Card, which in turn Egresses to a specified provider. It allows multiple rate cards to be used with or without a prefix. This is checked according to the longest prefix first, then the shortest for a match. If no prefix is matched, it will match the rate cards with mutually exclusive destinations.  If there are multiple rate cards with the same prefixes, you must set up a dial plan with a tech prefix to identify the correct card.
+The **Routing** section under Customer refers specifically to **Ingress Routing**, which allocates incoming calls (dialed by our customers) based on the assigned Customer Rate Card, which in turn Egresses to a specified provider. This allows multiple rate cards to be used with or without a prefix. First, a check is done for the longest prefix, then shortest prefix is checked for a match. If no prefix is matched, it will match the rate cards with mutually exclusive destinations.  If there are multiple rate cards with the same prefixes, you must set up a dial plan with a Tech Prefix to identify the correct card.
 
 !!! info "Routing Templates and more"
-    Create templates for customer routing in [Routing Global](https://docs.connexcs.com/global-routing/). For more information on Routing, see [Routing Setup](https://docs.connexcs.com/video-guide/#routing-setup) in our Video Guides for a detailed walkthrough and the [Routing Overview](https://docs.connexcs.com/routing/) and [Routing Strategy](https://docs.connexcs.com/routing-strategy/) documentation sections.
+    Create templates for customer routing in [Routing Global](https://docs.connexcs.com/global-routing/). For more information on Routing, see [Routing Setup](https://docs.connexcs.com/video-guide/#routing-setup) in our Video Guides for a detailed walkthrough. Additional documentation can be found in the [Routing Overview](https://docs.connexcs.com/routing/) and [Routing Strategy](https://docs.connexcs.com/routing-strategy/) sections.
 
 
 ## Disabled Routes
@@ -17,13 +18,18 @@ To view and configure existing routes, click on the **Routing** tab in the Custo
 
 ### Basic
 
-**Rate Card**: Also known as Tariff, this allows you to select the rate card used on a customer's account.
+**Rate Card**: Also known as Tariff, this allows you to select the rate card used on a customer's account. Thre are 3 ways these calls can be handled:
 
-**Tech Prefix**: When multiple customers share the same IP address, each customer needs an individual Tech Prefix so the switch can route calls correctly. It lets providers separate multiple rate cards.
++ Internal: Send a call to the ConnexCS Class5 (VoiceMail, IVR, etc). If selected, the "Auto" option becomes available, which will generate dialstrings from all possible internal extentions
++ Extension: (uses SIP users in Customer > Auth configured SIP Users) Send a call to a SIP Authenticated user on the account
++ Customer IP: (uses IPs in Customer > Auth configured IPs) Send a call from an agent back to the customer's PBX, using either the Tech Prefix (Ex: #9) or a Dial String (Ex: `^[0-9](4)$`)
++ To Carriers: select a carrier to send the call to terminate somewhere outside of the ConnexCS system
 
-**Dial String Prefix Set**: Setting a Dial String Prefix allows determine routing based on a predefined prefix set (defined under Setup > Advanced > Prefix Set.)
+**Tech Prefix**: Allows you to distinguish a route from an inbound party. When multiple customers share the same IP address, each customer needs an individual Tech Prefix so the switch can route calls correctly. It lets providers separate multiple rate cards.
 
-**Dial String**: Used as an alternative to the predefined dial strings above, setting a dial string (or "dial pattern") here will only allow entered prefixes to pass. These are listed one per line, both prefix and regular expressions are allowed. For example, if you only wanted to allow UK Landline you could use:
+**Dial String Prefix Set**: Helpful for commonly used sets of prefixes. Rather than entering a complete list of prefixes for UK, for example, you can create a predefined Prefix Set (defined under [Setup > Advanced > Prefix Set](https://docs.connexcs.com/setup/advanced/prefix-set/) and then select it here for approrpiate customers. 
+
+**Dial String**: Only allows a dialed number through if it matches the defined dial string (or "dial pattern"). (If nothing is entered, it will match everything and try to send all calls. This doesn't work if you have more than one Rate Card as the system will not know which one to use.) Each prefix is listed one per line, both prefix and regular expressions are allowed. For example, if you only wanted to allow UK Landline you could use:
 
     Prefix
     ```
@@ -33,7 +39,7 @@ To view and configure existing routes, click on the **Routing** tab in the Custo
 
     Regular Expression (RegEx)
     ```
-    44(1|2)
+    ^44(1|2)
     ```
 
     Combination (UK Landline & Canada)
@@ -44,6 +50,16 @@ To view and configure existing routes, click on the **Routing** tab in the Custo
     ```
 
 **Enabled**: The route can be easily enabled and disabled here. 
+
+!!! tip "Use Case for Tech Prefix"
+    Using Tech Prefix with SIP User "Parameter Rewrites" allows for significant granularity to manage permissions for how users are able to make calls.
+
+    1. Use Parameter Rewrite on the SIP User (found at Customer > Auth > SIP User > Parameter Rewrite) to add a number for calls from this SIP User:
+
+        ![alt text][techprefix-usecase]
+
+    2. Add Tech Prefx for that user in Routing. In this example, it would be 1234. 
+    3. Set how you want those calls routed: Internal to Class5, our to a provider, and so on. 
 
 
 ### Price Limits
@@ -200,5 +216,6 @@ To enable call recording:
 
 
 [ingress]: /customer/img/ingress.png "Ingress Routing"
+[techprefix-usecase]: /customer/img/techprefix-usecase.png "Tech Prefix Use Case"
 [recording-1]: /customer/img/45.png "recording-1"
 [recording-2]: /customer/img/46.png "recording-2"
