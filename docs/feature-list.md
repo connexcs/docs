@@ -305,9 +305,9 @@ The following is a comprehensive list of features included in the latest stable 
 * Customer / Provider Traffic Attribution
 * Per Carrier Failover Report (Identify calls which failed, then succeeded through another carrier)
 * Carrier Code Consistance (Compare Commonality of response codes for similar numbers between carriers)
-* Cost per DTMF
-* Scheduled Reports
-* Per Number Analysis Reports
+* [Cost per DTMF](https://docs.connexcs.com/report/#dtmf-report)
+* [Scheduled Reports](https://docs.connexcs.com/report/#schedule-reports)
+* [Per Number Analysis Reports](https://docs.connexcs.com/report/#per-number)
 * Live SIP Registrations
 
 ## Technical Tools
@@ -334,10 +334,10 @@ The following is a comprehensive list of features included in the latest stable 
 * MRC Packages
   * Start Date & End Dates
   * Auto Decrement Credit
-  * Minimum spend (Bill the customer extra to make up for their min spend)
+  * [Minimum spend] (Bill the customer extra to make up for their min spend)(https://docs.connexcs.com/setup/config/packages/#minimum-spend)
 * Customer & Provider CDR's
 * Invoice Format per destination or per day.
-* Re-rating of calls if incorrectly setup.
+* [Re-rating of calls if incorrectly setup](https://docs.connexcs.com/customer/cdr/#recalculate-cdr)
 
 ### CDR
 
