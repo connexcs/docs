@@ -10,7 +10,7 @@ This page covers the best practices for reporting problems to ConnexCS support. 
 Online chat is real-time assistance that is useful when you are unable to call.  The blue help icon at the bottom of this page will lead you to a chat window.  Clicking this button alerts staff, and the first person to become available will reply as soon as possible.  We find that most questions get resolved efficiently this way. Please note that the chat system is for one-on-one communication about a specific problem, not for multiple concerns or system-wide change requests. 
 
 ### Tickets
-Support tickets are created by clicking the Safety Ring icon in the top-right of the dashboard.
+Support tickets are created by sending an email to support@connexcs.com
 
 ### Phone
 To speak to a support representative, please call our office number listed at [www.connexcs.com](https://www.connexcs.com/). 
