@@ -17,7 +17,7 @@ To add a new payment:
 6. If **Email Confirmation** is enabled, once you save the Payment an email will be generated to the customer to let them know it was received and applied to the account. 
 7. Click **`Save`**.
 
-![alt text][payments-tab]
+    ![alt text][payments-tab]
 
 !!! tip "Pending Payments"
     When a customer places a payment through their bank, this will show up here with a status of **Pending**. To accept the payment, set it to **Completed** and **`Save`**. 
