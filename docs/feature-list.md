@@ -239,8 +239,8 @@ The following is a comprehensive list of features included in the latest stable 
 
 ## Class 5 PBX
 
-* Custom Application Builder (Integration with ScriptForge)
-* Conference (User & Moderator Pin Support)
+* [Custom Application Builder] (Integration with ScriptForge)(https://docs.connexcs.com/setup/config/templates/#scriptforge-integration)
+* [Conference] (User & Moderator Pin Support)(https://docs.connexcs.com/class5/creating-conference/#create-conference-call)
 * [Voicemail to Email](https://docs.connexcs.com/class5/voicemail/)
 * Custom Voicemail Message
 * Voicemail Password
@@ -250,7 +250,7 @@ The following is a comprehensive list of features included in the latest stable 
     * Join Message
     * On Hook Agents
     * Off Hook Agents
-* Parallel & Sequential Ring Groups
+* [Parallel & Sequential Ring Groups](https://docs.connexcs.com/class5/creating-group/#group-call-routing-strategies)
 * Music on Hold
 * [IVR Menus](https://docs.connexcs.com/class5/creating-ivr/#ivr-planning)
 
