@@ -1,7 +1,7 @@
-# Routing
+# Ingress Routing
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Routing**
 
-The **Routing** section under Customer refers specifically to **Ingress Routing**, which allocates incoming calls (dialed by our customers) based on the assigned Customer Rate Card, which in turn Egresses to a specified provider. This allows multiple rate cards to be used with or without a prefix. First, a check is done for the longest prefix, then shortest prefix is checked for a match. If no prefix is matched, it will match the rate cards with mutually exclusive destinations.  If there are multiple rate cards with the same prefixes, you must set up a dial plan with a Tech Prefix to identify the correct card.
+**Ingress Routing** is the process which allocates an incoming call (dialed by our customers) based on the assigned Customer Rate Card, which then Egresses the call to a specified provider. This allows multiple rate cards to be used with or without a prefix. First, a check is done for the longest prefix, then shortest prefix is checked for a match. If no prefix is matched, it will match the rate cards with mutually exclusive destinations.  If there are multiple rate cards with the same prefixes, you must set up a dial plan with a Tech Prefix to identify the correct card.
 
 !!! info "Routing Templates and more"
     Create templates for customer routing in [Routing Global](https://docs.connexcs.com/global-routing/). For more information on Routing, see [Routing Setup](https://docs.connexcs.com/video-guide/#routing-setup) in our Video Guides for a detailed walkthrough. Additional documentation can be found in the [Routing Overview](https://docs.connexcs.com/routing/) and [Routing Strategy](https://docs.connexcs.com/routing-strategy/) sections.
