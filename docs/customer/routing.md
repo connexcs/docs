@@ -147,7 +147,7 @@ Part of RTP Proxy, calls are passed based on the routing strategy you set. For a
 ## Disabled Routes
 Routes highlighted in red on the customer Routing page are disabled. To enable them, open the route, click **Enabled**, then **`Save`**. 
 
-    ![alt text][routing-disabled]
+   ![alt text][routing-disabled]
 
 
 ## Use Case for Tech Prefix
