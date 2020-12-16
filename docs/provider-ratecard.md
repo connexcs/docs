@@ -88,7 +88,7 @@ The Revision tab displays up to 8 most recent changes made to a rate card (ex: p
 
 * **Billing Precision** - Round billing on a card to the specified decimal point. 
 * **Public Options** - Display or hide provider information externally by toggling check boxes on and off.  You allow the card to be viewed via HTML (on a web page), CSV (a spreadsheet), an API (an external application), and whether to list the rate card in the domain portal.
-* **CLI Restrict** - Enable Call Line Identification (CLI) restriction(s). Use regular expressions to set valid number formats.
+* **CLI Restrict** - Enable Call Line Identification (CLI) restriction(s). Use regular expressions to set valid number formats. See [CLI Restrict](https://docs.connexcs.com/customer/cli/#cli-restrict) for configuration details. 
 * **Capped Rate** - Block calls above the set price
 * **Delayed Bye** - On termination rate cards, add the specified duration (in seconds) to the end of each call. Providers may use this in situations where a commercial contract specifies a minimum duration call. This feature should only be used along with full disclosure to both the customer and carrier.
 
