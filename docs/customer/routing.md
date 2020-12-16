@@ -164,7 +164,7 @@ Using Tech Prefix with SIP User "Parameter Rewrites" allows for significant gran
 
 
 ## ASR Plus Details
-**ASR Plus** is a proprietary technology developed by ConnexCS to filter known failed non-existent / working numbers between the customer and the carrier for termination. This is particularly useful with larger call volumes. Unless it's turned off or customized otherwise, ASR+ is active for 90% of calls, which grants the opportunity for the database to be replenished.
+ASR (Answer Seizure Ratio) is the amount of connected calls divided by the total calls (represented as a %). **ASR Plus** is a proprietary ConnexCS technology which filters known failed non-existent / working numbers between the customer and the terminating, or destination, carrier. This is especially useful with larger call volumes. Unless it's turned off or customized otherwise, ASR+ is active for 90% of calls, which grants the opportunity for the database to be replenished.
 
 | Value         | Description                | 
 | ------------- |----------------------------| 
