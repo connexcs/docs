@@ -198,20 +198,20 @@ The following is a comprehensive list of features included in the latest stable 
 * Single control panel for all servers
 * Realtime updates from server
 * Smartphone Compatible
-* Multi-Langauge
+* [Multi-Langauge](https://docs.connexcs.com/changing-language/)
 * Multi-Currency
 * Multi-Timezone
 * Microsoft / Google HMAC OTP
 * YubiKey Hardware Security Token (WebAuthN)
-* Duo Security
-* Full API Support
+* [Duo Security](https://docs.connexcs.com/user-enhanced-security/)
+* [Full API Support](https://docs.connexcs.com/api/)
 * High Quality Data Tables with custom collations & data piviot
 * Bulk Import
 * Bulk Edit / Delete
 * Quick Save
 * Quick Help Buttons
 * Per Page Audit Trails
-* Live Channel Counters & Graphs
+* [Live Channel Counters & Graphs](https://docs.connexcs.com/dashboard/#live-channels)
 * Global Edit (Bulk view for customer components)
 * International Numbering Plan Database
 
@@ -241,7 +241,7 @@ The following is a comprehensive list of features included in the latest stable 
 
 * Custom Application Builder (Integration with ScriptForge)
 * Conference (User & Moderator Pin Support)
-* Voicemail to Email
+* [Voicemail to Email](https://docs.connexcs.com/class5/voicemail/)
 * Custom Voicemail Message
 * Voicemail Password
 * Call Queues
@@ -252,12 +252,12 @@ The following is a comprehensive list of features included in the latest stable 
     * Off Hook Agents
 * Parallel & Sequential Ring Groups
 * Music on Hold
-* IVR Menus
+* [IVR Menus](https://docs.connexcs.com/class5/creating-ivr/#ivr-planning)
 
 ## Developer
 
 * [ScriptForge (Javascript) Applications](https://docs.connexcs.com/customer/routing/#scriptforge)
-    * Routing
+    * [Routing](https://docs.connexcs.com/customer/routing/)
     * Class 5 Applications
     * UI Enhancement
     * Batch Processing
@@ -268,8 +268,8 @@ The following is a comprehensive list of features included in the latest stable 
 * [Template Customisation](https://docs.connexcs.com/setup/config/templates/)
     * Emails
     * Form Submission Messages
-    * Integration with ScriptForge
-* Language Customisation (Enhance the system with your own Languages)
+    * [Integration with ScriptForge](https://docs.connexcs.com/setup/config/templates/#scriptforge-integration)
+* [Language Customisation] (Enhance the system with your own Languages) (https://docs.connexcs.com/changing-language/)
     * English
     * اللغة العربية
     * Deutsch
