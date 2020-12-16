@@ -8,7 +8,7 @@ The **Routing** section under Customer refers specifically to **Ingress Routing*
 
 
 ## Configure Routing
-To view and configure existing routes, click the `+` under **Ingress Routing** in the Customer Card. 
+View and configure existing routes on the Routing tab in the Customer card. Click the `+` under **Ingress Routing** to create a new route. 
 
    ![alt text][ingress-routing]
 
