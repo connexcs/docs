@@ -14,15 +14,15 @@ View and configure existing routes on the Routing tab in the Customer card. Clic
 
 ### Basic
 
-+ **Rate Card**: Also known as Tariff, this allows you to select the rate card used on a customer's account. Thre are 3 ways these calls can be handled:
++ **Rate Card**: Also known as Tariff, this allows you to select the rate card used on a customer's account. There are 3 ways these calls can be handled:
 
-    + Internal: Send a call to the ConnexCS Class5 (VoiceMail, IVR, etc). If selected, the "Auto" option becomes available, which will generate dialstrings from all possible internal extentions
+    + Internal: Send a call to the ConnexCS Class5 (Voice Mail, IVR, etc). If selected, the "Auto" option becomes available, which will generate dial strings from all possible internal extentions
     + Extension: (uses SIP users in Customer > Auth configured SIP Users) Send a call to a SIP Authenticated user on the account
     + Customer IP: (uses IPs in Customer > Auth configured IPs) Send a call from an agent back to the customer's PBX, using either the Tech Prefix (Ex: #9) or a Dial String (Ex: `^[0-9](4)$`)
     + To Carriers: select a carrier to send the call to terminate somewhere outside of the ConnexCS system
 
 + **Tech Prefix**: Allows you to distinguish a route from an inbound party. When multiple customers share the same IP address, each customer needs an individual Tech Prefix so the switch can route calls correctly. It lets providers separate multiple rate cards.
-+ **Dial String Prefix Set**: Helpful for commonly used sets of prefixes. Rather than entering a complete list of prefixes for UK, for example, you can create a predefined Prefix Set (defined under [Setup > Advanced > Prefix Set](https://docs.connexcs.com/setup/advanced/prefix-set/) and then select it here for approrpiate customers. 
++ **Dial String Prefix Set**: Helpful for commonly used sets of prefixes. Rather than entering a complete list of prefixes for UK, for example, you can create a predefined Prefix Set (defined under [Setup > Advanced > Prefix Set](https://docs.connexcs.com/setup/advanced/prefix-set/) and then select it here for appropriate customers. 
 + **Dial String**: Only allows a dialed number through if it matches the defined dial string (or "dial pattern"). (If nothing is entered, it will match everything and try to send all calls. This doesn't work if you have more than one Rate Card as the system will not know which one to use.) Each prefix is listed one per line, both prefix and regular expressions are allowed. For example, if you only wanted to allow UK Landline you could use:
 
     Prefix
@@ -48,7 +48,7 @@ View and configure existing routes on the Routing tab in the Customer card. Clic
 
 ### Price Limits
 
-+ **Capped Rate** and **Provider Capped Rate**: Set the maximum cost of a call. Calls that exceed the set rate will not be connected. Ex: For customer's with flat rate accounts, which are allowed to dial all UK number but premium numbers, you would set the PRovider Capped Rate at 0.01, so any call that the provide might charge over that amount would not be completed. 
++ **Capped Rate** and **Provider Capped Rate**: Set the maximum cost of a call. Calls that exceed the set rate will not be connected. Ex: For customer's with flat rate accounts, which are allowed to dial all UK number but premium numbers, you would set the Provider Capped Rate at 0.01, so any call that the provide might charge over that amount would not be completed. 
 
 + **Profit Assurance**: When `Enabled`, only calls that are profitable will be allowed, any call that costs more than the retail rate will not be allowed to complete. This is particularly useful for A-Z routes or NPA-NXX rate cards. Keep in mind that when this is enabled, additional PDD may be added to the call.
 
@@ -62,7 +62,7 @@ View and configure existing routes on the Routing tab in the Customer card. Clic
 + **Max Duration**: Set the maximum amount of time (in seconds) that the call will be allowed to exist before being terminated, typically in the case of a missed `BYE`. 
 
 !!! info "Call Timeouts"
-    A VoIP call is stateful, even though its protocol is stateless. This means that both sides of the conversation have to be told when to finish the call. They do this with a BYE message. If the BYE message goes missing, the call will continue forever. 
+    A VoIP call is stateful, even though its protocol is stateless. This means that both sides of the conversation must be told when to finish the call. They do this with a BYE message. If the BYE message goes missing, the call will continue forever. 
     Max Duration is a method for setting up **Missing BYE Protection**. Another method is by using a **SIP Ping** to determine when the connection has timed out. This sends a SIP packet to the remote end of the conversation roughly every 30 seconds. This checks to see if the other side is still aware of an ongoing conversation. If it is not received back, or is told that the conversation is not active, then it shuts off the call. **RTP Time-out:** is another way to check for an active call based on whether audio is passing. If there is no audio passing for a pre-set interval, our RTP array will notify the switch and instruct it to terminate the call.  This won't work if RTP Mode is set to direct.
 
 !!! Warning "Asterisk pings"
@@ -70,7 +70,7 @@ View and configure existing routes on the Routing tab in the Customer card. Clic
 
 + **Flow Speed (CPS)**: Limits the calls per second. This must be set for each customer card assigned to the customer account.
 
-+ **CPS Spike Buffer**: Limit a spike of calls by spreading it over a longer period of time. This essentially manages a large volumes of calls over a short period of time. Once the buffer limit is reached then the calls per second kicks in, spreading the spike of calls over a longer period of time. 
++ **CPS Spike Buffer**: Limit a spike of calls by spreading it over a longer period of time. This essentially manages a large volume of calls over a short period of time. Once the buffer limit is reached then the calls per second kicks in, distributing the spike of calls. 
 
 !!! Note "CPS Buffering"
     **CPS Buffering**: Used to manage large volumes of calls over a short period of time. This process maximises saturation and increases call completion within a given CPS restriction. It does this by removing spikes and borrowing capacity from future seconds. If incoming traffic exceeds your pre-set CPS, it holds the call for one second, and then tries again. You can increase the second count in the CPS Spike Buffer field. Changing the CPS Buffering value only affects calls that exceed the CPS. The delay will show as increased PDD on the call, each second the system will emit a 100 Trying (High CPS, Buffering) response to indicate the status/progress of the call.
@@ -84,7 +84,7 @@ View and configure existing routes on the Routing tab in the Customer card. Clic
 
 + **Timeout**: Set how long the script may run.
 
-+ **VARS(TML)**: Set varibales to be passed into the select ScriptForge script. 
++ **VARS(TML)**: Set variables to be passed into the select ScriptForge script. 
 
 ### Locks
 Used for troubleshooting, you can remove carriers from a route and run a quick test.  
@@ -109,11 +109,11 @@ Passive SST is enabled by default, **Enabled** is the recommended setting.
 | **Suggest**             | Session-Expire headers and Min-SE are added to packets sent to carrier encouraging the use of SST|
 | **Disabled**            | All ```timer``` headers are removed                                                              |
 
-+ **RTP Media Proxy**: This defaults to Auto but selecting a zone is the current recommendation. Choose which RTP Proxy you want engaged:  
++ **RTP Media Proxy**: This defaults to Auto, but selecting a zone (by continent) is the current recommendation. The following options allow you to set where RTP media server for this route for this customer:  
 
-    * **Auto**: uses the least expensive path between your customer and provider.  You can list various countries, though it is recommended you choose a location near a provider or your customer. 
-    * **Direct RTP (no proxy)**: media flows directly between the customer and carrier. Direct RTP also means that if there are audio issues, the issue can't be ConnexCS. Since it isn't likely to be the carrier, the issue typically exists on the customer's end. 
-    * Temporarily selecting a different region to route media traffic can be helpful in diagnosing call problems. 
+    * **Auto**: Selects the least expensive path between your customer and provider, however failovers are not automated which is why this option is not recommended.  
+    * **Direct RTP (no proxy)**: Bypass ConnexCS, so media flows directly between the customer and carrier. If the customer is using a firewall or other NAT device incorrectly then media may not flow between carrier and customer. Using this setting also means that if there are audio issues, the issue can't be ConnexCS. Since it isn't likely to be the carrier, the issue would typically exist on the customer's end. 
+    * **Zone**: Select any of the regional servers, however it is recommended you choose a location near a provider or your customer. Temporarily selecting a different region to route media traffic can be helpful in diagnosing call problems. 
 
 + **RTP Proxy Mode**: If connection via our service fails, and relaxed is selected, it will failover to backup automatically. 
 
@@ -138,13 +138,18 @@ When a call is established between customer and provider, audio can be set-up in
     Use an RTP Proxy if you don't want your customers to know your providers.
 
 !!! Warning "When should I avoid using RTP Proxy?"
-    You have other equipment in your SIP set-up which will act as a Media Relay or you want to run a test to see if audio problems are related to the ConnexCS Cloud Switch.
+    You have other equipment in your SIP set-up which will act as a Media Relay or you want to run a test to see if audio problems are related to the ConnexCS switch.
 
 + **Call Recording**
 This feature is not currently available. 
 
 ### Strategy
-Part of RTP Proxy, calls are passed based on the routing strategy you set. For advanced routing, click the **`+`** to select a predefined Routing Strategy, and set the Prefix. 
+For advanced routing, click the **`+`** to select a [Prefix Set](https://docs.connexcs.com/setup/advanced/prefix-set/) and assign a [Routing Strategy](https://docs.connexcs.com/routing-strategy/). This gives you greater control over how routes are selected for a given customer. 
+
+### Notes
+
++ **Public Notes**: Notes entered here are displayed on the Customer Portal when logged in.
++ **Private Notes**: These will display to the customer in the Control Panel.
 
 ## Disabled Routes
 Routes highlighted in red on the customer Routing page are disabled. To enable them, open the route, click **Enabled**, then **`Save`**. 
@@ -153,18 +158,18 @@ Routes highlighted in red on the customer Routing page are disabled. To enable t
 
 
 ## Use Case for Tech Prefix
-Using Tech Prefix with SIP User "Parameter Rewrites" allows for significant granularity to manage permissions for how users are able to make calls.
+Using Tech Prefix with SIP User "Parameter Rewrites" allows for significant granularity to manage permissions for how to connect a user's calls.
 
 1. Use Parameter Rewrite on the SIP User (found at Customer > Auth > SIP User > Parameter Rewrite) to add a number for calls from this SIP User:
 
     ![alt text][techprefix-usecase]
 
-2. Add Tech Prefx for that user in Routing. In this example, it would be 1234. 
-3. Set how you want those calls routed: Internal to Class5, our to a provider, and so on. 
+2. Add Tech Prefix for that user in Routing. In this example, it would be 1234. 
+3. Set how you want those calls routed: Internal to Class5, out to a provider, and so on. 
 
 
 ## ASR Plus Details
-ASR (Answer Seizure Ratio) is the amount of connected calls divided by the total calls (represented as a %). **ASR Plus** is a proprietary ConnexCS technology which filters known failed non-existent / working numbers between the customer and the terminating, or destination, carrier. This is especially useful with larger call volumes. Unless it's turned off or customized otherwise, ASR+ is active for 90% of calls, which grants the opportunity for the database to be replenished.
+ASR (Answer Seizure Ratio) is the number of connected calls divided by the total calls (represented as a %). **ASR Plus** is a proprietary ConnexCS technology which filters known failed non-existent / working numbers between the customer and the terminating, or destination, carrier. This is especially useful with larger call volumes. Unless it's turned off or customized otherwise, ASR+ is active for 90% of calls, which grants the opportunity for the database to be replenished.
 
 | Value         | Description                | 
 | ------------- |----------------------------| 
