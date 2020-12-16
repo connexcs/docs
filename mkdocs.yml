@@ -46,8 +46,9 @@ pages:
         - Main: customer/main.md
         - Auth: customer/auth.md
         - Alias: customer/alias.md
-        - Routing: customer/routing.md
-        - CLI: customer/cli.md
+        - Routing: 
+            - Ingress Routing: customer/routing.md
+            - CLI: customer/cli.md
         - Payment: customer/payment.md
         - Stats: customer/stats.md
         - Route Stats: customer/route-stats.md

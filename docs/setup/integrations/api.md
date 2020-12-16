@@ -6,7 +6,7 @@ Setup :material-menu-right: Integrations :material-menu-right: API
 ## Available Integrations
 
 * **Paypal Instant Checkout** - Allows online checkout via the customer portal using a [Paypal](https://www.paypal.com) Account.
-* **Paypal IPN** - For customers who wish to use a PayPal feature called MassPay, or want send money from the PayPal portal without using your site, IPN can be enabled. This notifies the system of incoming PayPal payments and we can top-up based on that notification. See [PayPal IPN Integration below](/customer-payments/) for specific details and setup. 
+* **Paypal IPN** - For customers who wish to use a PayPal feature called MassPay, or want send money from the PayPal portal without using your site, IPN can be enabled. This notifies the system of incoming PayPal payments and we can top-up based on that notification. See [PayPal IPN Integration](https://docs.connexcs.com/setup/integrations/api/#paypal-ipn-integration) below for specific details and setup. 
 * **Stripe** - Possibly the world's best credit card processor, [Stripe](https://www.stripe.com) can be made available on your customer portal.
 * **Duo Security** - With [Duo Security](https://duo.com/) we can provide 2FA (2 Factor Authentication) via an out-of-band push notification to your mobile device when you sign in. This can then be approved and also benefit from fingerprint authentication. 
 * **Moneris** - A Canadian Credit Card Processing service, [Moneris](https://www.moneris.com/]) can be made available on your customer portal.
