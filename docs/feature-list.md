@@ -187,10 +187,10 @@ The following is a comprehensive list of features included in the latest stable 
 
 ## Status Page
 
-* Integrated to Customer Portal
-* Multiple Components
+* [Integrated to Customer Portal](https://docs.connexcs.com/system-status/#enable-on-customer-portal)
+* [Multiple Components](https://docs.connexcs.com/system-status/#status-component)
 * Rate Card Support
-* Incident History
+* [Incident History](https://docs.connexcs.com/system-status/#report-history)
 * Incident Progression
 
 ## Control Panel
@@ -207,7 +207,7 @@ The following is a comprehensive list of features included in the latest stable 
 * [Full API Support](https://docs.connexcs.com/api/)
 * High Quality Data Tables with custom collations & data piviot
 * Bulk Import
-* Bulk Edit / Delete
+* [Bulk Edit / Delete](https://docs.connexcs.com/video-guide/#bulk-edit)
 * Quick Save
 * Quick Help Buttons
 * Per Page Audit Trails
@@ -218,13 +218,13 @@ The following is a comprehensive list of features included in the latest stable 
 ## Customer / Carrier Portal
 
 * Whitelabel
-* Customer / Carrier Signup
+* [Customer / Carrier Signup](https://docs.connexcs.com/setup/integrations/portal/#configuration-options)
 * Default Template Customer (Set Initial Credit, etc)
 * Multiple Custom Domains Supported (Seperate Branding on each)
 * Custom Permissions (30+ Options)
 * Call Reporting
 * Customisable CDR Downloads
-* Email & Mobile Verification
+* [Email & Mobile Verification](https://docs.connexcs.com/getting-started/#verify-contact-details)
 * Self CLI Verification (via callback)
 * Full API Support
 * Upload your own Logo
@@ -234,7 +234,7 @@ The following is a comprehensive list of features included in the latest stable 
 * Paypal, Stripe & Pending Bank Transfer Support
 * Add Payment Details Text
 * Add your own Javascript & CSS
-* Free SSL Certificate for customer portal
+* [Free SSL Certificate for customer portal](https://docs.connexcs.com/security/#deploying-ssl-certificates)
 
 
 ## Class 5 PBX
@@ -258,7 +258,7 @@ The following is a comprehensive list of features included in the latest stable 
 
 * [ScriptForge (Javascript) Applications](https://docs.connexcs.com/customer/routing/#scriptforge)
     * [Routing](https://docs.connexcs.com/customer/routing/)
-    * Class 5 Applications
+    * [Class 5 Applications](https://docs.connexcs.com/class5/apps/)
     * UI Enhancement
     * Batch Processing
 * [Form Builder] - Place custom data collection forms on Customer and Control Panel(https://docs.connexcs.com/developers/form-builder/)
