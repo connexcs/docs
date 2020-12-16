@@ -6,7 +6,7 @@ The following is a comprehensive list of features included in the latest stable 
 
 * Unlimited Customers
 * [Live Channel View](https://docs.connexcs.com/dashboard/#live-channels)
-* Prepay & Post Pay
+* [Prepay & Post Pay](https://docs.connexcs.com/customer/credit-control/#pre-pay-post-pay)
 * Approved Payments (e.g Bank Transfers)
 * Auto Tax (Sales Tax / VAT)
 * Email Confirmation on Payments.
@@ -20,8 +20,8 @@ The following is a comprehensive list of features included in the latest stable 
 * [Email & Mobile Verification](https://docs.connexcs.com/getting-started/#verify-contact-details)
 * MRC Packages
 * [Invoices (See Billing)](https://docs.connexcs.com/customer/invoices/)
-* Document Management
-* Auto-login to Customer Portal
+* [Document Management](https://docs.connexcs.com/customer/documents/)
+* [Auto-login to Customer Portal](https://docs.connexcs.com/customer/main/#access-customer-portal)
 * Auto Email Password
 * Internal Number Range Assignment & Management
 * [Save Multiple Contacts & Designations](https://docs.connexcs.com/customer/main/#contacts)
@@ -37,11 +37,11 @@ The following is a comprehensive list of features included in the latest stable 
 ### Alerts
 
 * Multiple Receipients
-* Balance / ACD / ASR / PDD / Consec Failure
+* [Balance / ACD / ASR / PDD / Consec Failure](https://docs.connexcs.com/acronyms-and-definitions/)
 * [Send Alert to Email or SMS](https://docs.connexcs.com/customer/alerts/#create-an-alert)
 * [Test Alert](https://docs.connexcs.com/customer/alerts/#test-and-alert)
 * [Customizable Reset Threshold](https://docs.connexcs.com/customer/alerts/#create-an-alert)
-* Penalty for predefined time.
+* [Penalty for predefined time](https://docs.connexcs.com/customer/alerts/#create-an-alert)
 
 ### Contacts
 
@@ -50,25 +50,25 @@ The following is a comprehensive list of features included in the latest stable 
 * Bulk Add IP
 * Duplicate IP Detection & Warning
 * [IP Authentication](https://docs.connexcs.com/authentication/#ip-authentication)
-* Direction Selection (Inbound / Outbound Only)
-* Endpoint Level Channel & CPS Limitation
+* [Direction Selection] (Inbound / Outbound Only) (https://docs.connexcs.com/customer/auth/#enable-ip-authentication)
+* [Endpoint Level Channel & CPS Limitation] (https://docs.connexcs.com/limiting-cps/#limiting-cps-channels)
 * Codec Restrictions
 * Non Standard Ports
 * Perimiter Normalization (Advanced A & B Number Manipulization to get numbers in E164 format.)
 * [SIP Username / Password Authentication](https://docs.connexcs.com/customer/auth/#sip-user-authentication)
 * User Latency Measurement (Graphs)
-* UDP / SIP Pinging
+* [UDP / SIP Pinging] (https://docs.connexcs.com/customer/auth/#use-case-for-natsip-pings)
 * IP Whitelist (for User / Password Auth)
 
 ## Providers
 
-* Per Provider Card Capped Rate (Block calls that exceed a set cost per minute)
-* Block calls with a connection cost
-* Upstream carrier multiple endpoint loadbalancing (with weights)
+* [Per Provider Card Capped Rate] (Block calls that exceed a set cost per minute)(https://docs.connexcs.com/customer/routing/#price-limits)
+* [Block calls with a connection cost](https://docs.connexcs.com/routing-strategy/#blocking-calls)
+* [Upstream carrier multiple endpoint loadbalancing] (with weights)(https://docs.connexcs.com/scaling-load-balancing/)
 * Per Provider Custom Variables
 * SIP Code Rewriting
-* Custom set failover code
-* Alerts (See Customer Alerts)
+* [Custom set failover code](https://docs.connexcs.com/customer-portal/failover/)
+* [Alerts] (See Customer Alerts)(https://docs.connexcs.com/carrier/#alerts)
 * Consecutive Backoff (Reduce sending calls to failing providers)
 * P-Asserted-ID Rules.
 * Propagate Username.
@@ -83,42 +83,42 @@ The following is a comprehensive list of features included in the latest stable 
 ## Rate Cards
 
 * Origination / Termination
-* Revisions
+* [Revisions](https://docs.connexcs.com/provider-ratecard/#revisions-tab)
 * [NPANXX (Intrastate / Interstate / Indeterminate](https://docs.connexcs.com/routing-usa/)
-* LRN & DN
+* [LRN & DN](https://docs.connexcs.com/routing-usa/#lrnlnp)
 * Multi-Currency
-* Tech Prefix Per Card
+* [Tech Prefix Per Card](https://docs.connexcs.com/rate-card-building/#different-length-prefixes)
 * Custom Rounding Method and Billing Precision
 * [CLI Restriction](https://docs.connexcs.com/cli-restriction/#cli-restriction)
-* Capped Rate & Block Connect Cost
-* Bulk Upload or Build in Browser
-* Email Rate Card
+* [Capped Rate & Block Connect Cost](https://docs.connexcs.com/customer/routing/#price-limits)
+* [Bulk Upload or Build in Browser](https://docs.connexcs.com/customer-ratecard/#bulk-upload)
+* [Email Rate Card] (https://docs.connexcs.com/customer-ratecard/#email-the-rate-card)
 
 ### Compile Customer Cards
 
 * From Carrier Cards
 * Manual Ordering
 * Attach Contract to a Customer Card
-* Convert between NPANXX, LRN, Flat Rate, Single Cost, Currencies
-* Auto calculate profits based Absolutely / Relatively / Percentage
+* [Convert between NPANXX, LRN, Flat Rate, Single Cost, Currencies](https://docs.connexcs.com/rate-card-building/#different-card-types)
+* [Auto calculate profits based Absolutely / Relatively / Percentage](https://docs.connexcs.com/customer-ratecard/#profits)
 * RegEx Filter & Build Rules
 
 ## Routing
 
 * [Global Routing Profiles](https://docs.connexcs.com/global-routing/)
-* Tags
+* [Tags](https://docs.connexcs.com/global-routing/#setup)
 * Temporarly Disable Customer Termination Routes
-* Per Route CPS & Channel Limitations.
-* Tech Prefix Support
+* [Per Route CPS & Channel Limitations](https://docs.connexcs.com/customer/routing/#capacity-limits)
+* [Tech Prefix Support](https://docs.connexcs.com/setup/advanced/prefix-set/)
 * Single source IP many customer support.
 * Dialstring Filtering
 * Per Route Capped Rate (Block calls that exceed a set cost per minute)
-* Block calls with a connection cost
-* CPS Buffer (Add PDD to lower CPS Spikes)
-* ASR+ (Cached Connectivity Prediction to lower upstream ASR)
+* [Block calls with a connection cost](https://docs.connexcs.com/routing-strategy/#blocking-calls)
+* [CPS Buffer] (Add PDD to lower CPS Spikes)(https://docs.connexcs.com/customer/routing/#capacity-limits)
+* [ASR+] (Cached Connectivity Prediction to lower upstream ASR)(https://docs.connexcs.com/scriptforge-old/#performing-an-asrplus-lookup)
 * Per Route Scripting with ScriptForge
 * Per Route Custom Variables
-* Temporary Locking & Excluding of Carriers
+* [Temporary Locking & Excluding of Carriers](https://docs.connexcs.com/customer/routing/#locks)
 * P-Assert-ID Management
 
 ### DID Management
@@ -127,10 +127,10 @@ The following is a comprehensive list of features included in the latest stable 
 * Serial Forking (Multiple Failover Destinations)
 * Call Forwarding
 * Route Internally / SIP User / External IP Address
-* Channel and CPS Limitations
+* [Channel and CPS Limitations](https://docs.connexcs.com/limiting-cps/#limiting-cps-channels)
 * Assign Package to DID
 * Tags
-* DID Driver Support (Connect Any Provider API)
+* [DID Driver Support] (Connect Any Provider API)(https://docs.connexcs.com/developers/scriptforge/#driver)
 
 ### CLI Management
 
@@ -156,7 +156,7 @@ The following is a comprehensive list of features included in the latest stable 
 * Bulk Calling Card Generation
 * Write your own calling card system
 * Predefined Credit
-* Topup Vouchers (via Customer Portal)
+* [Topup Vouchers] (via Customer Portal)(https://docs.connexcs.com/voucher/)
 * Customer Template
 
 ## Provision Management
@@ -164,7 +164,7 @@ The following is a comprehensive list of features included in the latest stable 
 * Support for all major phones
 * Phone Book Support
 * Per Line Configuration
-* Package Assignment
+* [Package Assignment](https://docs.connexcs.com/customer/package/)
 * Custom Variables
 * Custom Templating
 * Integrated with Calling Cards for softphone deployments
@@ -384,7 +384,7 @@ The following is a comprehensive list of features included in the latest stable 
 * 30+ RTP Servers distributed worldwide.
 * [Media Transcoding](https://docs.connexcs.com/customer/routing/#media)
 * Direct RTP
-* Wholesale Large Volume Call Recording
+* [Wholesale Large Volume Call Recording](https://docs.connexcs.com/customer/routing/#call-recording)
 * SRTP Support
 * ZRTP Passthrough
 * Video Passthrough
@@ -416,7 +416,7 @@ The following is a comprehensive list of features included in the latest stable 
 
 ### Platform
 
-* Firewall
+* [Firewall](https://docs.connexcs.com/security/#sip-rtp-firewall-block-on-default)
 * Auto Detect & Block Hack Attempts
 * Platform Inteligence
 
