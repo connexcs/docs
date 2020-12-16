@@ -185,10 +185,6 @@ Using Tech Prefix with SIP User "Parameter Rewrites" allows for significant gran
     + Marginal impact on your NER due to false positive matches. This is usually kept within tolerances of < 0.1%.
     + Does not offer improvements for all destinations.
 
+[ingress-routing]: /customer/img/ingress-routing.png "Ingress Routing"
 [routing-disabled]: /customer/img/routing-disabled.png "Disabled Routing"
 [techprefix-usecase]: /customer/img/techprefix-usecase.png "Tech Prefix Use Case"
-[ingress]: /customer/img/ingress-routing.png "Ingress Routing"
-
-[ingress]: /customer/img/ingress.png "Ingress Routing"
-[recording-1]: /customer/img/45.png "recording-1"
-[recording-2]: /customer/img/46.png "recording-2"
