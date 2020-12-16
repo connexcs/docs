@@ -11,7 +11,7 @@ The **Routing** section under Customer refers specifically to **Ingress Routing*
 Routes highlighted in red on the customer Routing page are disabled. To enable them, open the route, click **Enabled**, then **`Save`**. 
 
 
-## Advanced Routing configuration
+## Configure Routing
 To view and configure existing routes, click on the **Routing** tab in the Customer Card. 
 
 ![alt text][ingress]
@@ -89,26 +89,7 @@ To view and configure existing routes, click on the **Routing** tab in the Custo
 !!! Note "CPS Buffering"
     **CPS Buffering**: Used to manage large volumes of calls over a short period of time. This process maximises saturation and increases call completion within a given CPS restriction. It does this by removing spikes and borrowing capacity from future seconds. If incoming traffic exceeds your pre-set CPS, it holds the call for one second, and then tries again. You can increase the second count in the CPS Spike Buffer field. Changing the CPS Buffering value only affects calls that exceed the CPS. The delay will show as increased PDD on the call, each second the system will emit a 100 Trying (High CPS, Buffering) response to indicate the status/progress of the call.
 
-+ **ASR Plus** is a proprietary technology developed by ConnexCS to filter known failed non-existent / working numbers between the customer and the carrier for termination. This is particularly useful with larger call volumes. Unless it's turned off or customized otherwise, ASR+ is active for 90% of calls, which grants the opportunity for the database to be replenished.
-
-| Value         | Description                | 
-| ------------- |----------------------------| 
-| Off           | ASR+ Disabled              | 
-| ASR+ (Low)    | Active on 30% of calls     | 
-| ASR+          | Active                     |
-| ASR?          | When ASR+ is enabled on the provider card |
-| ASR+?         | When ASR+ is enabled on the provider card, only known connected calls will be allowed to pass to specific provider |
-| ASR++         | Only known connected calls will be allowed to pass (Rarely used as usually too strict) |
-
-!!! success "Advantages of ASR"
-    + Quick failure of known bad numbers.
-    + Reduces response time for your customers.
-    + Improves the ASR of the traffic that your upstream carrier sees.
-    + Highly effective for call centre traffic.
-    
-!!! failure "Disadvantages of ASR"
-    + Marginal impact on your NER due to false positive matches. This is usually kept within tolerances of < 0.1%.
-    + Does not offer improvements for all destinations.
++ **ASR Plus** assists capacity management by helping you define how to handle connections to known failed numbers. For information on the ASR Plus options, see [ASR Plus Details](https://docs.connexcs.com/customer/routing/#asr-plus-details) below. 
 
 
 ### ScriptForge
@@ -181,23 +162,30 @@ This feature is not currently available.
 Part of RTP Proxy, calls are passed based on the routing strategy you set. For advanced routing, click the **`+`** to select a predefined Routing Strategy, and set the Prefix. 
 
 
-## Call Recording
-To enable call recording:
+## ASR Plus Details
+**ASR Plus** is a proprietary technology developed by ConnexCS to filter known failed non-existent / working numbers between the customer and the carrier for termination. This is particularly useful with larger call volumes. Unless it's turned off or customized otherwise, ASR+ is active for 90% of calls, which grants the opportunity for the database to be replenished.
 
-1. Click **Management** > **Customer**.
-2. Click the **Customer Name** > **Routing** > **Proxy Info**.
-3. Click the rate card name, and then select **Enable** from Recording.
+| Value         | Description                | 
+| ------------- |----------------------------| 
+| Off           | ASR+ Disabled              | 
+| ASR+ (Low)    | Active on 30% of calls     | 
+| ASR+          | Active                     |
+| ASR?          | When ASR+ is enabled on the provider card |
+| ASR+?         | When ASR+ is enabled on the provider card, only known connected calls will be allowed to pass to specific provider |
+| ASR++         | Only known connected calls will be allowed to pass (Rarely used as usually too strict) |
 
-    ![alt text][recording-1]
-
-4. Recorded files are accessed from the file section
-5. Select **Management** > **File** > **Recording**.
-6. Click the **`Download`** button to download the file.
-
-![alt text][recording-2]
+!!! success "Advantages of ASR"
+    + Quick failure of known bad numbers.
+    + Reduces response time for your customers.
+    + Improves the ASR of the traffic that your upstream carrier sees.
+    + Highly effective for call centre traffic.
+    
+!!! failure "Disadvantages of ASR"
+    + Marginal impact on your NER due to false positive matches. This is usually kept within tolerances of < 0.1%.
+    + Does not offer improvements for all destinations.
 
 
 [ingress]: /customer/img/ingress.png "Ingress Routing"
-[techprefix-usecase]: /customer/img/techprefix-usecase.png "Tech Prefix Use Case"
+[techprefix-usecase]: /customer/img/techprefix-usecase.png "Tech Prefix Use Case" width="100" height="100" 
 [recording-1]: /customer/img/45.png "recording-1"
 [recording-2]: /customer/img/46.png "recording-2"
