@@ -7,14 +7,8 @@ The **Routing** section under Customer refers specifically to **Ingress Routing*
     Create templates for customer routing in [Routing Global](https://docs.connexcs.com/global-routing/). For more information on Routing, see [Routing Setup](https://docs.connexcs.com/video-guide/#routing-setup) in our Video Guides for a detailed walkthrough. Additional documentation can be found in the [Routing Overview](https://docs.connexcs.com/routing/) and [Routing Strategy](https://docs.connexcs.com/routing-strategy/) sections.
 
 
-## Disabled Routes
-Routes highlighted in red on the customer Routing page are disabled. To enable them, open the route, click **Enabled**, then **`Save`**. 
-
-
 ## Configure Routing
-To view and configure existing routes, click on the **Routing** tab in the Customer Card. 
-
-![alt text][ingress]
+To view and configure existing routes, click the `+` under **Ingress Routing** in the Customer Card. 
 
 ### Basic
 
@@ -48,16 +42,6 @@ To view and configure existing routes, click on the **Routing** tab in the Custo
     ```
 
 + **Enabled**: The route can be easily enabled and disabled here. 
-
-!!! tip "Use Case for Tech Prefix"
-    Using Tech Prefix with SIP User "Parameter Rewrites" allows for significant granularity to manage permissions for how users are able to make calls.
-
-    1. Use Parameter Rewrite on the SIP User (found at Customer > Auth > SIP User > Parameter Rewrite) to add a number for calls from this SIP User:
-
-        ![alt text][techprefix-usecase]
-
-    2. Add Tech Prefx for that user in Routing. In this example, it would be 1234. 
-    3. Set how you want those calls routed: Internal to Class5, our to a provider, and so on. 
 
 
 ### Price Limits
@@ -154,12 +138,27 @@ When a call is established between customer and provider, audio can be set-up in
 !!! Warning "When should I avoid using RTP Proxy?"
     You have other equipment in your SIP set-up which will act as a Media Relay or you want to run a test to see if audio problems are related to the ConnexCS Cloud Switch.
 
-
-**Call Recording**
++ **Call Recording**
 This feature is not currently available. 
 
 ### Strategy
 Part of RTP Proxy, calls are passed based on the routing strategy you set. For advanced routing, click the **`+`** to select a predefined Routing Strategy, and set the Prefix. 
+
+## Disabled Routes
+Routes highlighted in red on the customer Routing page are disabled. To enable them, open the route, click **Enabled**, then **`Save`**. 
+
+    ![alt text][routing-disabled]
+
+
+## Use Case for Tech Prefix
+Using Tech Prefix with SIP User "Parameter Rewrites" allows for significant granularity to manage permissions for how users are able to make calls.
+
+1. Use Parameter Rewrite on the SIP User (found at Customer > Auth > SIP User > Parameter Rewrite) to add a number for calls from this SIP User:
+
+    ![alt text][techprefix-usecase]
+
+2. Add Tech Prefx for that user in Routing. In this example, it would be 1234. 
+3. Set how you want those calls routed: Internal to Class5, our to a provider, and so on. 
 
 
 ## ASR Plus Details
@@ -184,8 +183,9 @@ Part of RTP Proxy, calls are passed based on the routing strategy you set. For a
     + Marginal impact on your NER due to false positive matches. This is usually kept within tolerances of < 0.1%.
     + Does not offer improvements for all destinations.
 
+[routing-disabled]: /customer/img/routing-disabled.png "Disabled Routing"
+[techprefix-usecase]: /customer/img/techprefix-usecase.png "Tech Prefix Use Case"
 
 [ingress]: /customer/img/ingress.png "Ingress Routing"
-[techprefix-usecase]: /customer/img/techprefix-usecase.png "Tech Prefix Use Case" width="100" height="100" 
 [recording-1]: /customer/img/45.png "recording-1"
 [recording-2]: /customer/img/46.png "recording-2"
