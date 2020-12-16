@@ -10,6 +10,8 @@ The **Routing** section under Customer refers specifically to **Ingress Routing*
 ## Configure Routing
 To view and configure existing routes, click the `+` under **Ingress Routing** in the Customer Card. 
 
+   ![alt text][ingress-routing]
+
 ### Basic
 
 + **Rate Card**: Also known as Tariff, this allows you to select the rate card used on a customer's account. Thre are 3 ways these calls can be handled:
@@ -185,6 +187,7 @@ Using Tech Prefix with SIP User "Parameter Rewrites" allows for significant gran
 
 [routing-disabled]: /customer/img/routing-disabled.png "Disabled Routing"
 [techprefix-usecase]: /customer/img/techprefix-usecase.png "Tech Prefix Use Case"
+[ingress]: /customer/img/ingress-routing.png "Ingress Routing"
 
 [ingress]: /customer/img/ingress.png "Ingress Routing"
 [recording-1]: /customer/img/45.png "recording-1"
