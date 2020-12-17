@@ -294,7 +294,7 @@ The following is a comprehensive list of features included in the latest stable 
 * Custom Date Range Selector
 * Channels / ASR / ACD / Attempts / Connected / PDD
 * [DTMF Reporting] (Count the amount of calls with DTMF passed)(https://docs.connexcs.com/report/#dtmf-report)
-* Failure Report
+* [Failure Report](https://docs.connexcs.com/reporting-problems/)
 * CLI based ASR
 * Provider Report Per Customer
 * Channel / CPS Breach Graphs (Identify if calls are being blocked because of Channel / CPS Restiction)
@@ -315,22 +315,22 @@ The following is a comprehensive list of features included in the latest stable 
 ### Call Logging
 
 * Realtime call log (prior to CDR generation)
-* SIP Registration Log
-* Always on SIP Trace
+* [SIP Registration Log](https://docs.connexcs.com/logging/#register-logging)
+* [Always on SIP Trace](https://docs.connexcs.com/logging/#sip-traces)
 * SIP Ladder Generation from Always on pcap
 * Real-time calls dialog
-* Call Simulation
+* [Call Simulation](https://docs.connexcs.com/logging/#simulating-calls)
 * Comprehensive Call Information
 * Media Information & Stats
-* Real Time Searching
-    * CallID
+* [Real Time Searching](https://docs.connexcs.com/logging/#searching-the-logs)
+    * [Call ID](https://docs.connexcs.com/logging/#call-id-details)
     * A & B Number
     * With & Without Prefix
     * Source IP
 
 ### Billing
 
-* Invoice Generation
+* [Invoice Generation](https://docs.connexcs.com/customer/invoices/#add-new-invoices)
 * MRC Packages
   * Start Date & End Dates
   * Auto Decrement Credit
@@ -357,12 +357,12 @@ The following is a comprehensive list of features included in the latest stable 
 
 ### Servers
 
-* Deploy Multiple Servers
+* [Deploy Multiple Servers](https://docs.connexcs.com/setup/settings/servers/#deploy-a-server)
 * Deply in Multiple Zones Worldwide
 * Instant Deployment
 * Load Balancers / Dispatchers
 * Custom UDP, TCP, TLS, WebRTC Ports
-* Cluster Capabilities
+* [Cluster Capabilities](https://docs.connexcs.com/setup/settings/servers/#clusters)
     * Share Channel and CPS Allocations Globally
     * Inter call routing
     * Shared User Location Registration
@@ -396,9 +396,9 @@ The following is a comprehensive list of features included in the latest stable 
 * High Volume DNS Service
 * Low TTL
 * A Record Management
-* SRV Record Management
+* [SRV Record Management](https://docs.connexcs.com/setup/settings/dns/#srv-records)
 * Low Latency Changes
-* Failover Automation
+* [Failover Automation](https://docs.connexcs.com/customer-portal/failover/)
 
 ## Security
 
