@@ -38,8 +38,7 @@ Field details:
 |2|No CLIs configured and "Approved CLI's Only" is Enabled|No calls will be allowed through|
 |3|"Approved CLI's Only" is enabled and call is made from a CLI which has not been configured|Error: CLI Restriction in effect|
 
-!!! tip "Approved CLIs Only"
-    "Approved CLIs Only" is set under Edit Customer :material-menu-right: Verification
+*"Approved CLIs Only" is set under Edit Customer :material-menu-right: Verification
 
 ## Advanced CLI Match & Manipulation
 The CLI system uses Regular Expressions to match and replace numbers. Here are a few examples:
