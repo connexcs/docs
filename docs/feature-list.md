@@ -334,7 +334,7 @@ The following is a comprehensive list of features included in the latest stable 
 * MRC Packages
   * Start Date & End Dates
   * Auto Decrement Credit
-  * [Minimum spend] (Bill the customer extra to make up for their min spend)(https://docs.connexcs.com/setup/config/packages/#minimum-spend)
+  * [Minimum spend (Bill the customer extra to make up for their min spend)](https://docs.connexcs.com/setup/config/packages/#minimum-spend)
 * Customer & Provider CDR's
 * Invoice Format per destination or per day.
 * [Re-rating of calls if incorrectly setup](https://docs.connexcs.com/customer/cdr/#recalculate-cdr)
