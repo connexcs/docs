@@ -420,7 +420,7 @@ The following is a comprehensive list of features included in the latest stable 
 * Auto Detect & Block Hack Attempts
 * Platform Inteligence
 
-## Integrations(https://docs.connexcs.com/setup/integrations/api/#available-integrations)
+## Integrations
 
 * [Paypal IPN](https://docs.connexcs.com/setup/integrations/api/#paypal-ipn-integration)
 * [Paypal Express Checkout](https://docs.connexcs.com/setup/integrations/api/#available-integrations)
