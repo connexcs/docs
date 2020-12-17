@@ -420,14 +420,14 @@ The following is a comprehensive list of features included in the latest stable 
 * Auto Detect & Block Hack Attempts
 * Platform Inteligence
 
-## Integrations
+## Integrations(https://docs.connexcs.com/setup/integrations/api/#available-integrations)
 
 * [Paypal IPN](https://docs.connexcs.com/setup/integrations/api/#paypal-ipn-integration)
-* Paypal Express Checkout
-* Stripe (Credit Card, etc)
-* Duo Security
-* Moneris
-* ScriptForge Driver (API Proxy in Javascript)
+* [Paypal Express Checkout](https://docs.connexcs.com/setup/integrations/api/#available-integrations)
+* [Stripe](Credit Card, etc)(https://docs.connexcs.com/setup/integrations/api/#available-integrations)
+* [Duo Security](https://docs.connexcs.com/setup/integrations/api/#available-integrations)
+* [Moneris](https://docs.connexcs.com/setup/integrations/api/#available-integrations)
+* [ScriptForge Driver] (API Proxy in Javascript)(https://docs.connexcs.com/setup/integrations/api/#available-integrations)
 
 ## Advanced Management
 
