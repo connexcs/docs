@@ -48,27 +48,27 @@ The following is a comprehensive list of features included in the latest stable 
 ### Authentication
 
 * Bulk Add IP
-* Duplicate IP Detection & Warning
+* [Duplicate IP Detection & Warning](https://docs.connexcs.com/customer/auth/#enable-sip-user-authentication)
 * [IP Authentication](https://docs.connexcs.com/authentication/#ip-authentication)
-* [Direction Selection] (Inbound / Outbound Only) (https://docs.connexcs.com/customer/auth/#enable-ip-authentication)
-* [Endpoint Level Channel & CPS Limitation] (https://docs.connexcs.com/limiting-cps/#limiting-cps-channels)
+* [Direction Selection (Inbound / Outbound Only)](https://docs.connexcs.com/customer/auth/#enable-ip-authentication)
+* [Endpoint Level Channel & CPS Limitation](https://docs.connexcs.com/limiting-cps/#limiting-cps-channels)
 * Codec Restrictions
 * Non Standard Ports
 * Perimiter Normalization (Advanced A & B Number Manipulization to get numbers in E164 format.)
 * [SIP Username / Password Authentication](https://docs.connexcs.com/customer/auth/#sip-user-authentication)
 * User Latency Measurement (Graphs)
-* [UDP / SIP Pinging] (https://docs.connexcs.com/customer/auth/#use-case-for-natsip-pings)
+* [UDP / SIP Pinging](https://docs.connexcs.com/customer/auth/#use-case-for-natsip-pings)
 * IP Whitelist (for User / Password Auth)
 
 ## Providers
 
-* [Per Provider Card Capped Rate] (Block calls that exceed a set cost per minute)(https://docs.connexcs.com/customer/routing/#price-limits)
+* [Per Provider Card Capped Rate (Block calls that exceed a set cost per minute)](https://docs.connexcs.com/customer/routing/#price-limits)
 * [Block calls with a connection cost](https://docs.connexcs.com/routing-strategy/#blocking-calls)
-* [Upstream carrier multiple endpoint loadbalancing] (with weights)(https://docs.connexcs.com/scaling-load-balancing/)
+* [Upstream carrier multiple endpoint loadbalancing(with weights)](https://docs.connexcs.com/scaling-load-balancing/)
 * Per Provider Custom Variables
 * SIP Code Rewriting
 * [Custom set failover code](https://docs.connexcs.com/customer-portal/failover/)
-* [Alerts] (See Customer Alerts)(https://docs.connexcs.com/carrier/#alerts)
+* [Alerts (See Customer Alerts)](https://docs.connexcs.com/carrier/#alerts)
 * Consecutive Backoff (Reduce sending calls to failing providers)
 * P-Asserted-ID Rules.
 * Propagate Username.
@@ -92,7 +92,7 @@ The following is a comprehensive list of features included in the latest stable 
 * [CLI Restriction](https://docs.connexcs.com/cli-restriction/#cli-restriction)
 * [Capped Rate & Block Connect Cost](https://docs.connexcs.com/customer/routing/#price-limits)
 * [Bulk Upload or Build in Browser](https://docs.connexcs.com/customer-ratecard/#bulk-upload)
-* [Email Rate Card] (https://docs.connexcs.com/customer-ratecard/#email-the-rate-card)
+* [Email Rate Card](https://docs.connexcs.com/customer-ratecard/#email-the-rate-card)
 
 ### Compile Customer Cards
 
@@ -114,8 +114,8 @@ The following is a comprehensive list of features included in the latest stable 
 * Dialstring Filtering
 * Per Route Capped Rate (Block calls that exceed a set cost per minute)
 * [Block calls with a connection cost](https://docs.connexcs.com/routing-strategy/#blocking-calls)
-* [CPS Buffer] (Add PDD to lower CPS Spikes)(https://docs.connexcs.com/customer/routing/#capacity-limits)
-* [ASR+] (Cached Connectivity Prediction to lower upstream ASR)(https://docs.connexcs.com/scriptforge-old/#performing-an-asrplus-lookup)
+* [CPS Buffer (Add PDD to lower CPS Spikes)](https://docs.connexcs.com/customer/routing/#capacity-limits)
+* [ASR+ (Cached Connectivity Prediction to lower upstream ASR)](https://docs.connexcs.com/scriptforge-old/#performing-an-asrplus-lookup)
 * Per Route Scripting with ScriptForge
 * Per Route Custom Variables
 * [Temporary Locking & Excluding of Carriers](https://docs.connexcs.com/customer/routing/#locks)
@@ -130,7 +130,7 @@ The following is a comprehensive list of features included in the latest stable 
 * [Channel and CPS Limitations](https://docs.connexcs.com/limiting-cps/#limiting-cps-channels)
 * Assign Package to DID
 * Tags
-* [DID Driver Support] (Connect Any Provider API)(https://docs.connexcs.com/developers/scriptforge/#driver)
+* [DID Driver Support (Connect Any Provider API)](https://docs.connexcs.com/developers/scriptforge/#driver)
 
 ### CLI Management
 
@@ -156,7 +156,7 @@ The following is a comprehensive list of features included in the latest stable 
 * Bulk Calling Card Generation
 * Write your own calling card system
 * Predefined Credit
-* [Topup Vouchers] (via Customer Portal)(https://docs.connexcs.com/voucher/)
+* [Topup Vouchers (via Customer Portal)](https://docs.connexcs.com/voucher/)
 * Customer Template
 
 ## Provision Management
@@ -204,7 +204,7 @@ The following is a comprehensive list of features included in the latest stable 
 * Microsoft / Google HMAC OTP
 * YubiKey Hardware Security Token (WebAuthN)
 * [Duo Security](https://docs.connexcs.com/user-enhanced-security/)
-* [Full API Support](https://docs.connexcs.com/api/)
+* [Full API Support](https://portal-api-docs.connexcs.com/)
 * High Quality Data Tables with custom collations & data piviot
 * Bulk Import
 * [Bulk Edit / Delete](https://docs.connexcs.com/video-guide/#bulk-edit)
@@ -222,7 +222,7 @@ The following is a comprehensive list of features included in the latest stable 
 * Default Template Customer (Set Initial Credit, etc)
 * Multiple Custom Domains Supported (Seperate Branding on each)
 * Custom Permissions (30+ Options)
-* Call Reporting
+* [Call Reporting](https://docs.connexcs.com/customer-portal/breakout/)
 * Customisable CDR Downloads
 * [Email & Mobile Verification](https://docs.connexcs.com/getting-started/#verify-contact-details)
 * Self CLI Verification (via callback)
@@ -239,8 +239,8 @@ The following is a comprehensive list of features included in the latest stable 
 
 ## Class 5 PBX
 
-* [Custom Application Builder] (Integration with ScriptForge)(https://docs.connexcs.com/setup/config/templates/#scriptforge-integration)
-* [Conference] (User & Moderator Pin Support)(https://docs.connexcs.com/class5/creating-conference/#create-conference-call)
+* [Custom Application Builder (Integration with ScriptForge)](https://docs.connexcs.com/setup/config/templates/#scriptforge-integration)
+* [Conference (User & Moderator Pin Support)](https://docs.connexcs.com/class5/creating-conference/#create-conference-call)
 * [Voicemail to Email](https://docs.connexcs.com/class5/voicemail/)
 * Custom Voicemail Message
 * Voicemail Password
@@ -261,7 +261,7 @@ The following is a comprehensive list of features included in the latest stable 
     * [Class 5 Applications](https://docs.connexcs.com/class5/apps/)
     * UI Enhancement
     * Batch Processing
-* [Form Builder] - Place custom data collection forms on Customer and Control Panel(https://docs.connexcs.com/developers/form-builder/)
+* [Form Builder - Place custom data collection forms on Customer and Control Panel](https://docs.connexcs.com/developers/form-builder/)
 * [Analytics - Build your own Reports](https://docs.connexcs.com/developers/analytics/)
 * Userspace Database - Create your own databases
     * Real-time querying with ScriptForge
@@ -269,7 +269,7 @@ The following is a comprehensive list of features included in the latest stable 
     * Emails
     * Form Submission Messages
     * [Integration with ScriptForge](https://docs.connexcs.com/setup/config/templates/#scriptforge-integration)
-* [Language Customisation] (Enhance the system with your own Languages) (https://docs.connexcs.com/changing-language/)
+* [Language Customisation (Enhance the system with your own Languages)](https://docs.connexcs.com/changing-language/)
     * English
     * اللغة العربية
     * Deutsch
@@ -293,15 +293,15 @@ The following is a comprehensive list of features included in the latest stable 
 * 3 Months minimum history
 * Custom Date Range Selector
 * Channels / ASR / ACD / Attempts / Connected / PDD
-* [DTMF Reporting] (Count the amount of calls with DTMF passed)(https://docs.connexcs.com/report/#dtmf-report)
+* [DTMF Reporting (Count the amount of calls with DTMF passed)](https://docs.connexcs.com/report/#dtmf-report)
 * [Failure Report](https://docs.connexcs.com/reporting-problems/)
 * CLI based ASR
 * Provider Report Per Customer
 * Channel / CPS Breach Graphs (Identify if calls are being blocked because of Channel / CPS Restiction)
 * RTCP Reports (MOS / RTT / Packet Loss / Jitter)
 * Build your own Reports
-* Spend Report
-* Profit Reports
+* [Spend Report](https://docs.connexcs.com/report/#breakout-report)
+* [Profit Reports](https://docs.connexcs.com/report/#breakout-report)
 * Customer / Provider Traffic Attribution
 * Per Carrier Failover Report (Identify calls which failed, then succeeded through another carrier)
 * Carrier Code Consistance (Compare Commonality of response codes for similar numbers between carriers)
@@ -424,10 +424,10 @@ The following is a comprehensive list of features included in the latest stable 
 
 * [Paypal IPN](https://docs.connexcs.com/setup/integrations/api/#paypal-ipn-integration)
 * [Paypal Express Checkout](https://docs.connexcs.com/setup/integrations/api/#available-integrations)
-* [Stripe](Credit Card, etc)(https://docs.connexcs.com/setup/integrations/api/#available-integrations)
+* [Stripe (Credit Card, etc)](https://docs.connexcs.com/setup/integrations/api/#available-integrations)
 * [Duo Security](https://docs.connexcs.com/setup/integrations/api/#available-integrations)
 * [Moneris](https://docs.connexcs.com/setup/integrations/api/#available-integrations)
-* [ScriptForge Driver] (API Proxy in Javascript)(https://docs.connexcs.com/setup/integrations/api/#available-integrations)
+* [ScriptForge Driver (API Proxy in Javascript)](https://docs.connexcs.com/setup/integrations/api/#available-integrations)
 
 ## Advanced Management
 
@@ -458,7 +458,7 @@ The following is a comprehensive list of features included in the latest stable 
 
 ## API
 
-* [RESTful Customer Portal API] (Can use your customer credentials to access) (https://docs.connexcs.com/api/)
-* [RESTful Control Panel API](80+ CRUD Endpoints)(https://docs.connexcs.com/api/#customer-administration)
+* [RESTful Customer Portal API (Can use your customer credentials to access)](https://docs.connexcs.com/api/)
+* [RESTful Control Panel API(80+ CRUD Endpoints)](https://docs.connexcs.com/api/#customer-administration)
 
 We have done our best to compile a detailed feature list, however our product is growing day-by-day and this should be interpreted as a minimum, as with our powerful customisations, you can accomplish more.
