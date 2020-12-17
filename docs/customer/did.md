@@ -5,8 +5,13 @@ A **Direct Inward Dial (DID)** number is one that exists on the public telephone
 
 Create and edit **DID (Direct Inward Dial)** parameters within the individual customer cards, either using bulk uploads and edits or manually. 
 
+!!! tip "Stats Button"
+    Use the **`Stats`** button to view the **Per Number Report** of DIDs.
+    
 !!! note "Global DID"
     DID may also be configured and managed for specific Customers or Carriers under **Global :material-menu-right: DID**, which displays all configured DID.
+    
+
 
 ## Configure DID
 
@@ -60,5 +65,4 @@ Run a custom script on calls to the DID to performs actions such as route based 
 
 See [Script Forge](https://docs.connexcs.com/developers/scriptforge/) for more information. 
 
-!!! tip "Stats Button"
-    Use the **`Stats`** button to view the **Per Number Report**.
+
