@@ -8,4 +8,4 @@ In **Class5** are the options for the ConnexCS Unified Communications service. W
 + [**IVR**](https://docs.connexcs.com/creating-ivr/) presents callers with a menu and options for call routing.
 + [**Groups**](https://docs.connexcs.com/creating-group/) allows you to distribute inbound calls to a predefined team.
 + [**Voicemail**](https://docs.connexcs.com/class5/voicemail/) is managed under specific customers or in a bulk view under **Class5** > **Voicemail**. 
-+ **Phonebook** allows all users to receive the same list of numbers within the customer, essentially a company directory. This is also used in the [Web Phone](https://docs.connexcs.com/setup/integrations/webphone/) configuration. 
++ **Phonebook** allows all users to receive the same list of numbers within the customer, essentially a company directory. This used in the [Web Phone](https://docs.connexcs.com/setup/integrations/webphone/) configuration. Add names, numbers, and extensions for each entry. 
