@@ -1,31 +1,39 @@
 # Call Detail Record (CDR)
+**Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: CDR**
 
 The **CDR (Call Detail Record)** is an extensive set of information that is collected and stored for each call. This is used primarily for billing purposes as it contains details such as call duration and destination number. 
 
-All call records for a customer can be found at Customer > <customer name> > CDR. The Customer **CDR** tab lists Call Detail Records associated with the selected account. Selecting the entries will display more detailed information. 
-
 !!! info "Archived Records"
-    CDR records are "hot" (instantly queryable) for the last 3 months guaranteed. After this they will be moved to our warm storage server where they are highly compressed and available for bulk download.
+    CDR records are "hot" (instantly queries) for the last 3 months guaranteed. After this they will be moved to our warm storage server where they are highly compressed and available for bulk download.
 
 !!! note "Global CDR"
     View CDRs for all Customers and Carriers under **Global :material-menu-right: CDR**. Download and Reclaculate selected CDRs across multiple customers.
 
 ## Manage displayed CDRs
+The Customer **CDR** tab lists Call Detail Records associated with the selected account. Selecting the entries will display more detailed information. These queries are made on the server then displayed in the portal. 
 
 * **Columns**: Additional CDR fields can be enabled on the Columns tab on the right
-* **Column filter/sort**: Displayed entries can be filtered and sorted by clicking the header of each column. 
-* **Query Builder**: Advanced filters can be created using the Query Builder using any of the fields of the record ![alt text][querybuilder]
-* **Download**: Pressing **`Download`** will save the record to your hard drive. You can also select which columns to include in the download.
+* **Column filter/sort**: Displayed entries can be filtered and sorted by clicking the header of each column. Since each call generates a CDR, this function is especially useful for customers with high call volume. 
+* **Download**: Pressing **`Download`** will save the record to your hard drive in CSV format. You can also select which columns to include in the download.
+* **Query Builder**: Create advanced filters using any fields of the record. Quickly select either Origination or Termination, or use the Query Builder to customize the data view.
+    * Match Type: Select "All" or "Any" calls to match.
+    * Select the CDR field from the drop-down, then "Add Rule" to define parameters to match.
+    * Select **Add Rule** to select additional fields and parameters to include in the custom query. 
+    * Use **Add Group** to group sets of queries into a series of groups, creating complex, compound, and multi-vector queries. 
+    
+    ![alt text][querybuilder]
 
-## Recalculate CDR
+!!! warning "Using Query Builder with large amounts of data"
+    Running detailed and complex queries on large amounts of data is not recommended. It is better to write more compact and pared down queries to retrieve this data. Unlike other providers, ConnexCS doesn't use CDRs for debugging. You should be able to do all debugging in the [Logging](https://docs.connexcs.com/logging/) section. 
+    
+* **Recalculate CDR**: Sometimes long-duration calls may have timed out. Use the **`Recalc CDR`** button from within the specific customer to refresh this data. Available fields are dependent on the selected **Operations**. 
 
-Sometimes long-duration calls may have timed out. Use the "Recalc CDR" button from within the specific customer to refresh this data:
+    ![alt text][recalc]
 
-1.	Click the **`Recalc CDR`** button.
-   ![alt text][recalc]
-2.	Fill the dialogue box by selecting day, maximum duration, etc. 
-3.	Click **`Save`**.
-
+!!! danger "Rerating CDRs"
+    If you select either Rerate" option when recalculating CDRs, please be aware this will change your CDRs and is not reversible. Original call durations will be modified according to the criteria selected.
+    
+    
 ## CDR Time Zone
 CDR's are rated and stored in UTC, daily totals are also calculated in UTC. You can change the time zone that individual CDR records are viewed from the time zone selector, however downloads will always be in UTC.
     
