@@ -6,21 +6,22 @@ ConnexCS allows for straightforward **Invoice** generation for all providers. Th
 !!! note "Global Invoices"
     Invoices may also be managed under **Global :material-menu-right: Invoices**.
 
+!!! warning "Invoice Generation"
+        ConnexCS provides basic Invoice functions. Please note there are 3rd party accounting systems (such as [ClearBooks](https://www.clearbooks.co.uk/) or [FreshBooks](https://www.freshbooks.com/)) that are far more robust at functions such as taxes, discounts, and full featured invoice management. 
+
 ## Add new Invoices
 To add a new invoice:
 
-1. Click the **`+`** button at the top of the page (either under Customers or Global).
-2.	If you are creating from Global, you will need to select the customer from the drop menu.
+1. Click the **`+`** button at the top of the page.
+2. Select the customer from the drop menu.
 3. Set an Invoice Date in the bottom right. 
+3. Click **`Edit Invoice Item`**. 
 
-    ![alt text][invoice-6]
+    ![alt text][invoice-8] 
 
-3. Select **`Edit Invoice Item`**. 
-4. The selected a package will auto-complete the Quantity, Unit Price, and Tax.
+4. The selected **Package** will auto-complete the Quantity, Unit Price, and Tax. These may be modified as needed. 
 4. Set a date range.
 5. Click **`Save`**, then **`Save`** the Invoice.
-
-![alt text][invoice-8] 
 
 ## View and Edit Invoices
 **View**
@@ -42,7 +43,8 @@ To allocate customer payments to a specific invoice:
 4. Enter the total paid. 
 5. Click **`Save`**. 
 
-[invoice-6]: /misc/img/227.png "Invoice-6"
+
+
 [invoice-8]: /misc/img/229.png "Invoice-8"
 
 [invoice-pdf]: /misc/img/invoice-pdf.png "Invoice PDF"
