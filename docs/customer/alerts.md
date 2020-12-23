@@ -25,24 +25,16 @@ Field details:
 
 Click **`Save`**, and a new alert will be created.
 
-    ![alt text][alerts]
-
 ## Sample Alerts
 
 **"Low ASR Warning"** (Low ASR may indicate issues with call completion). This will email the customer with a custom template whenever their ASR reaches 30% or below. If it goes above 31% then the Alert is reset.
 
-|Field|Selection|
-|---|---|
-|Title|Low ASR Alert|
-|Email/Phone|Enter as needed|
-|Area|ASR|
-|Operator|<=|
-|Threshold|30|
-|Reset Threshold|31|
-|Template|ASR alert|
+    ![alt text][alerts-sample1]
 
 **ASR Penalty**
-Similarly, you could an ASR Threshold to 15, and enable a penalty of 1 hour. This would disable the customer for 30 minutes whenever their completed calls dropped below 15% of total calls. 
+Similarly, you could set the ASR Threshold to 15, and enable a penalty of 1 hour. This would disable the customer for 30 minutes whenever their completed calls dropped below 15% of total calls. 
+
+    ![alt text][alerts-sample2]
 
 **Daily Balance** For customers who run close to their balance on a regular basis. 
 
@@ -53,6 +45,8 @@ Operator: Always
 Template: balance
 Repeat: Daily
 
+    ![alt text][alerts-sample3]
+
 **Script Forge** 
 When the Area is set to "Script Forge", it will bypass all the other Alerts fields and allow you to select an existing Script Forge script. For example, a script could check CLIs to see if they have been blocked by a carrier, and then send a regular report with that information. 
 
@@ -60,8 +54,9 @@ Script Forge details can be found [here](https://docs.connexcs.com/developers/sc
 
 
 ## Test and Alert
-`In Progress`
+`Feature In Progress`
 
-    
 
-[alerts]: /customer/img/alerts.png "Alerts"
+[alerts-sample1]: /customer/img/alerts-sample1.png "Alert Sample 1"
+[alerts-sample2]: /customer/img/alerts-sample2.png "Alert Sample 2"
+[alerts-sample3]: /customer/img/alerts-sample3.png "Alert Sample 3"
