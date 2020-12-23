@@ -5,11 +5,11 @@
 Configuring a number as a **CLI (Calling Line Identification)** in ConnexCS gives the customer the ability to control which numbers are allowed to initiate calls. Once added, these numbers are essentially a Whitelist. Additional configuration allows you to restrict (Blacklist) or perform other  
 
 !!! info "What does CLI mean?"
-   **CLI** refers to the **CLI/ANI** field in the `From` part of the `SIP INVITE` message. This contains specific information about the caller, particularly the name and number of the person initiating the call. Also known as "Caller ID" in standard phone systems, CLI may also be referred to as "A-Leg" or "A-Number", where the call originates. The call is then terminated at the Dialled Number, the "B-Leg" or "B-Number".
+   **CLI** refers to the **CLI/ANI** field in the `From` part of the `SIP INVITE` message. This contains specific information about the caller, particularly the name and number of the person initiating the call. Also known as "Caller ID" in standard phone systems, CLI may also be referred to as "A-Leg" or "A-Number", where the call originates. The call is then terminated at the Dialed Number, the "B-Leg" or "B-Number".
 
 
 ## Configure CLI
-Any number configured as a CLI is considered part of the Whitelist (unless additional configuraiton is applied to block it). To add a number:
+Any number configured as a CLI is considered part of the Whitelist (unless additional configuration is applied to block it). To add a number:
 
 1.	Click on the **`+`** button under **CLI**.
 2.	Fill out the fields in the dialogue box and **`Save`**.
@@ -34,8 +34,8 @@ Field details:
 ## Advanced CLI Match & Manipulation
 The CLI system uses Regular Expressions to match and replace numbers. Here are a few examples:
 
-|             |            CLI | Replace CLI |                                      Description |
-|-------------|---------------:|------------:|-------------------------------------------------:|
+| Number      |            CLI | Replace CLI |                                      Description |
+|-------------|:--------------:|:-----------:|:-------------------------------------------------|
 | 123456789   |          ^1234 |             |   Allows only numbers starting with 1234 to pass |
 | 123456789   |           789$ |             |      Allows only numbers ending with 789 to pass |
 | 12345678912 | ^[0-9]{11,12}$ |             | Allows only numbers with 11 or 12 digits to pass |
@@ -59,7 +59,7 @@ Scenario 1: No CLIs configured and "Approved CLI's Only" is Disabled ==> All CLI
 Scenario 2: No CLIs configured and "Approved CLI's Only" is Enabled ==> No calls will be allowed through
 Scenario 3: "Approved CLI's Only" is enabled and call is made from a CLI which has not been configured ==> Error: CLI Restriction in effect
 Scenario 4 (Whitelist): Configure a number as a CLI in customer routing
-Scenario 5 (Blacklist): Configure a CLI then add it to CLI Restirct under Provider Rate Cards. 
+Scenario 5 (Blacklist): Configure a CLI then add it to "CLI Restrict" under Provider Rate Cards. 
 
 *"Approved CLIs Only" is set under **Edit Customer :material-menu-right: Verification***
 
