@@ -29,12 +29,12 @@ Click **`Save`**, and a new alert will be created.
 
 **"Low ASR Warning"** (Low ASR may indicate issues with call completion). This will email the customer with a custom template whenever their ASR reaches 30% or below. If it goes above 31% then the Alert is reset.
 
-    ![alt text][alerts-sample1]
+   ![alt text][alerts-sample1]
 
 **ASR Penalty**
 Similarly, you could set the ASR Threshold to 15, and enable a penalty of 1 hour. This would disable the customer for 30 minutes whenever their completed calls dropped below 15% of total calls. 
 
-    ![alt text][alerts-sample2]
+   ![alt text][alerts-sample2]
 
 **Daily Balance** For customers who run close to their balance on a regular basis. 
 
@@ -45,7 +45,7 @@ Operator: Always
 Template: balance
 Repeat: Daily
 
-    ![alt text][alerts-sample3]
+   ![alt text][alerts-sample3]
 
 **Script Forge** 
 When the Area is set to "Script Forge", it will bypass all the other Alerts fields and allow you to select an existing Script Forge script. For example, a script could check CLIs to see if they have been blocked by a carrier, and then send a regular report with that information. 
