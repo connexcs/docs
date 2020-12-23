@@ -26,7 +26,17 @@ The Customer **CDR** tab lists Call Detail Records associated with the selected 
 !!! warning "Using Query Builder with large amounts of data"
     Running detailed and complex queries on large amounts of data is not recommended. It is better to write more compact and pared down queries to retrieve this data. Unlike other providers, ConnexCS doesn't use CDRs for debugging. You should be able to do all debugging in the [Logging](https://docs.connexcs.com/logging/) section. 
     
-* **Recalculate CDR**: Sometimes long-duration calls may have timed out. Use the **`Recalc CDR`** button from within the specific customer to refresh this data. Available fields are dependent on the selected **Operations**. 
+* **Recalculate CDR**: Use the **`Recalc CDR`** button from within the specific customer to refresh CDR data. Available fields are dependent on the selected **Operations**.
+    + **Operations**
+        + Refresh Credit
+        + Refresh Summaries & Credit
+        + Rerate Calls, and Refresh Summaries & Credit
+        + Adjust CAll Duration, Rerate Calls, and Refresh Summaries & Credit
+    + **Date (UTC)**
+    + **Release Reason**
+    + **Min Duration**
+    + **New Duration**
+
 
     ![alt text][recalc]
 
