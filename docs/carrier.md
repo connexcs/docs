@@ -1,7 +1,7 @@
 # Carrier
 **Management :material-menu-right: Carrier **
 
-The **Carrier** section in **ConnexCS** allows for simplified Carrier management where you can add, confiure, and delete carriers. 
+The **Carrier** section in **ConnexCS** allows for simplified Carrier management where you can add, configure, and delete carriers. 
 
 ## Carrier View Modification
 * **Columns** pop out on the right allows you to add/remove options, change column order, in some cases you can create row groups and aggregate values for pivot functionality
@@ -21,15 +21,13 @@ From the **Carriers** page, you can perform several management operations.
 
 **?**: Link to documentation for the current page. 
 
-**Active**: To sort Carriers based on status, click **`Actice`** and select one of the status options. Results on the page will automatically arrange themselves according to the filter.
-
-![alt text][carriers-sorting]
+**Active**: Used to sort Carriers based on the selected status. Results on the page will automatically arrange themselves according to the filter.
 
 **Search**: The search box on the Carrier Management screen is for finding specific information among your carrier listings.
 
 **Audit Log**: Click "View Audit Log" to the right of the Edit button to view changes made to the carrier configuration. 
 
-**Credit column**: Amounts listed here are purely infomrational, calls will still be connected by a carrier even if the amout here is at zero credit.     
+**Credit column**: Amounts listed here are purely informational, calls will still be connected by a carrier even if the amount here is at zero credit.     
 
 
 ## Add Carrier
@@ -79,27 +77,17 @@ From the **Carriers** page, you can perform several management operations.
 === "Verification"
 
     * **Propagate Username:** Used when the customer is sending information in addition to CLI information (ex: Company Name, Username)
-
-    ![alt text][carrier-details]
         
 
 
 ## Configure Carrier
-To configure a **Carrier**, select the Carrier from the list, then configured based on the following options:
-
-1. Press the **`Edit`** button.
-2. Change the carrier's details and then press **`Save`**.
-
-![alt text][carrier-dashboard]
+To configure a **Carrier**, select the Carrier from the list, then configure the following areas:
 
 ### Main
 
 + **Contacts**: Helpful for keeping track of Support contacts for individual carriers
 + **Rates Grid**: Associated rate cards for this provider. See [Provider Rate Cards](https://docs.connexcs.com/provider-ratecard/) for configuration. 
 + **Code Consistency** measures changes to response codes (specifically SIP 200 and 404s) returned from the carrier. It is useful for identifying routes of varying or poor quality. Effective carriers try to maintain 100% code consistency.
-
-    ![alt text][code-consistency]
-
 + **Consecutive Failure**: Shows a count of failed calls based on specific SIP failure responses. (The counter does not include SIP 200 responses for connected calls.) This simplistic measurement can measure a carrier's ability to connect calls or a particular route: a connected call resets the counter, a failed call increments the counter by one. Just a few Fails is not concerning, be on the lookout for higher numbers in the thousands. 
 
 !!! note "Consec fails and false positives"
@@ -111,7 +99,7 @@ To configure a **Carrier**, select the Carrier from the list, then configured ba
     Do not use the "Auto Generate Invoice" under the Carrier. Invoices should be managed via the [Customer Invoice](https://docs.connexcs.com/customer/invoices/) section.  
 
 ### Reply Management
-Customers can use **Reply Management** to customize responses based on the SIP message (100 to 606) received from the carrier . This allows for more efficient messaging and system responses, and can also be used by custoemrs who have switches which require certain SIP code reponses. See the [Wikipedia List of SIP response codes](https://en.wikipedia.org/wiki/List_of_SIP_response_codes) for additional details about each code. 
+Customers can use **Reply Management** to customize responses based on the SIP message (100 to 606) received from the carrier. This allows for more efficient messaging and system responses and can also be used by customers who have switches which require certain SIP code responses. See the [Wikipedia List of SIP response codes](https://en.wikipedia.org/wiki/List_of_SIP_response_codes) for additional details about each code. 
 
 To edit Reply Codes:
 
@@ -121,20 +109,20 @@ To edit Reply Codes:
     * Replace- enter the New Code and New Reason
     
 !!! example "Code Replace use case"
-    Customer switch requires a SIP 180 response (Ringing), but is only receiving the 183 reponse (Session in Progress). The 180 (with SDP) tells the SIP phone to generate ringing locally (the audio is clear sounding since it is local), but with the 183 (no SDP) the ringing is generated at the network (this may play different ringing, perhaps for the local country). In this case, the 183 code can be modified in Reply Management to `Replace` with 180 instead.
+    Customer switch requires a SIP 180 response (Ringing) but is only receiving the 183 response (Session in Progress). The 180 (with SDP) tells the SIP phone to generate ringing locally (the audio is clear sounding since it is local), but with the 183 (no SDP) the ringing is generated at the network (this may play different ringing, perhaps for the local country). In this case, the 183 code can be modified in Reply Management to `Replace` with 180 instead.
     
 !!! example "Code Failover use case"
-    In some situations, carriers may not return SIP failure codes accurately. If the carrier seds a 404 (client side error) the customer equipment may not failover to the next carrier automatically. Use Reply Management to set 404 to `Failover` to the next carrier.
+    In some situations, carriers may not return SIP failure codes accurately. If the carrier sends a 404 (client side error) the customer equipment may not failover to the next carrier automatically. Use Reply Management to set 404 to `Failover` to the next carrier.
 
 ### Auth
 
 1. Carrier **IP Authentication**: This uses IP addresses to allow or disallow attempts to access service. To add authorized IP address(es), click the **`+`** button on the right. These fields are the same as in [Customer Auth](https://docs.connexcs.com/customer/auth/) except that they pertain to Carriers. The only exceptions are:
     
     + **User name and Password**: These are for the call to connect out to the carrier, if server is acting as a UAC
-    + **Oubound Proxy** (for Ingress only switches): Enter an IP of a Proxy server for calls to route to, before being sent to the carrier. This rewrites the UAC IP in the VIA field of the SIP header. This reduces management overhead as a customer only needs to authorize the single IP. Additionally, multiple addresses can be load balanced using the AnyEdge system. 
+    + **Outbound Proxy** (for Ingress only switches): Enter an IP of a Proxy server for calls to route to, before being sent to the carrier. This rewrites the UAC IP in the VIA field of the SIP header. This reduces management overhead as a customer only needs to authorize the single IP. Additionally, multiple addresses can be load balanced using the AnyEdge system. 
     + **Weights**: If multiple switches configured in IP Authentication, this field sets weighting to determine which servers are preferred over others, essentially doing outbound distribution to a single carrier, but through multiple gateways to that carrier. 
 
-2. Carrier **SIP User Authetication** would only be used to allow a carrier to connect into the system, not for outbound connections. Field details can be found under [Customer Auth](https://docs.connexcs.com/customer/auth/).  
+2. Carrier **SIP User Authentication** would only be used to allow a carrier to connect into the system, not for outbound connections. Field details can be found under [Customer Auth](https://docs.connexcs.com/customer/auth/).  
 
 
 ### Failover
@@ -148,7 +136,7 @@ The **Failover** tab lists calls that failed with this carrier but connected wit
  
 
 ### Latest Calls
-The **Latest Calls** tab displays the most recent calls to pass through a given system. View recent calls and their SIP traces, and run simulated calls. See [Logging](https://docs.connexcs.com/logging/) section for details on these functions. To view Latest Calls for all customers, to to the Logging section in ConnexCS. 
+The **Latest Calls** tab displays the most recent calls to pass through a given system. View recent calls and their SIP traces and run simulated calls. See [Logging](https://docs.connexcs.com/logging/) section for details on these functions. To view Latest Calls for all customers, to the Logging section in ConnexCS. 
 
 To simulate a call: 
 
@@ -162,23 +150,14 @@ To simulate a call:
 ### Payment
 The **Payment** tab shows payments made to the carrier. Add a new payment by clicking **`+`**, fill in the payment information, and the click **`Save`**.
 
-![alt text][carrier-payment] 
-
-
 ### Stats
 View carrier-related statistics by clicking **Stats** tab. Descriptions for each of these graphs can be found under [Customer Stats](https://docs.connexcs.com/customer/stats/).
 
-![alt text][carrier-stats] 
-
 ### Alerts
-Use Carrier **Alerts** to contact a selected email address when `Consequctive Failovers` reaches a predetermined limit. See [Customer Alerts](https://docs.connexcs.com/customer/alerts/) for configuration details. 
-
-![alt text][alerts-carrier]
+Use Carrier **Alerts** to contact a selected email address when `Consecutive Failovers` reaches a predetermined limit. See [Customer Alerts](https://docs.connexcs.com/customer/alerts/) for configuration details. 
 
 ### DID
-The **DID** tab displays a list of DIDs that belong to that carrier.  New entries are added with the **`+`** on the left. See [Customer DID](https://docs.connexcs.com/customer/did/) for configuration detials. 
-
-![alt text][carrier-did]
+The **DID** tab displays a list of DIDs that belong to that carrier.  New entries are added with the **`+`** on the left. See [Customer DID](https://docs.connexcs.com/customer/did/) for configuration details. 
 
 ### CDR
 
@@ -194,18 +173,3 @@ The **CDR** tab displays call drop rates. Use **`Recalc CDR`** when CDR records 
 
 
 [add-carriers]: /carrier/img/100.png "Add-Carrier"
-[carrier-details]: /carrier/img/101.png "Carrier-Details"
-[carriers-sorting]: /carrier/img/102.png "Carriers-Sorting"
-[carrier-dashboard]: /carrier/img/carrier-dashboard.png "Carrier-Dashboard"
-[code-consistency]: /carrier/img/code-consistency.png "Code Consistency"
-[carrier-stats]: /carrier/img/104.png "Carrier Stats"
-[carrier-reply]: /carrier/img/105.png "Carrier Reply"
-[carrier-authentication]: /carrier/img/106.png "Carrier Authentication"
-[carrier-ip-1]: /carrier/img/107.png "Carrier IP 1"
-[carrier-calls]: /carrier/img/108.png "Carrier Calls"
-[carrier-payment]: /carrier/img/110.png "Carrier Payment"
-[carrier-cdr]: /carrier/img/111.png "Carrier CDR"
-[carrier-did]: /carrier/img/112.png "Carrier DID"
-[alerts-carrier]: /carrier/img/alerts-carrier.png "Carrier Alert"
-
-[Alerts]: <https://docs.connexcs.com/alert/> "Alerts"
