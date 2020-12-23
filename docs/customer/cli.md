@@ -2,11 +2,14 @@
 
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Routing**
 
-**CLI (Calling Line Identification)** refers to the **CLI/ANI** field in the `From` part of the `SIP INVITE` message. This contains specific information about the caller, particularly the name and number of the person initiating the call. Also known as "Caller ID" in standard phone systems, CLI may also be referred to as "A-Leg" or "A-Number", where the call originates. The call is then terminated at the Dialled Number, the "B-Leg" or "B-Number".
+Configuring a number as a **CLI (Calling Line Identification)** in ConnexCS gives the customer the ability to control which numbers are allowed to initiate calls. Once added, these numbers are essentially a Whitelist. Additional configuration allows you to restrict (Blacklist) or perform other  
+
+!!! info "What does CLI mean?"
+   **CLI** refers to the **CLI/ANI** field in the `From` part of the `SIP INVITE` message. This contains specific information about the caller, particularly the name and number of the person initiating the call. Also known as "Caller ID" in standard phone systems, CLI may also be referred to as "A-Leg" or "A-Number", where the call originates. The call is then terminated at the Dialled Number, the "B-Leg" or "B-Number".
 
 
 ## Configure CLI
-To set CLI options:
+Any number configured as a CLI is considered part of the Whitelist (unless additional configuraiton is applied to block it). To add a number:
 
 1.	Click on the **`+`** button under **CLI**.
 2.	Fill out the fields in the dialogue box and **`Save`**.
@@ -17,28 +20,16 @@ Field details:
 
 + **Rewrite CLI**: A CLI can be re-written. For example, you can add `123456789` in the CLI box, and then rewrite by adding `987654321` in the re-write CLI box. (See [**Advanced CLI Match and Manipulation**](https://docs.connexcs.com/customer/cli/#advanced-cli-match-manipulation) below.)
 
-+ **P-Asserted-ID**: **`P-Asserted-Identification`** is a SIP Header similar to the FROM header, but classified as a private, or network-level identifier. Telephone companies use it to identify call originators, but then it is stripped at the call server, so the client end-points only see the FROM field. This is especially helpful when caller's obscure their CLI/FROM information, as the network-level still requires origination details. The **P-Asserted-ID** manipulation uses the same syntax as Replace CLI.
++ **P-Asserted-ID**: This is a SIP Header similar to the FROM header, but classified as a private, or network-level identifier. Telephone companies use it to identify call originators, but then it is stripped at the call server, so the client end-points only see the FROM field. This is especially helpful when caller's obscure their CLI/FROM information, as the network-level still requires origination details. The **P-Asserted-ID** manipulation uses the same syntax as Replace CLI.
 
 !!! tip "P-Asserted-ID Use Case"
     If you wanted to allow all calls, but assign a specific number (such as the Main Billable number for the business), you would set CLI as "\*" then enter the desired P-Asserted ID. All calls will then have this number as the P-Asserted-ID. 
-    
-
 
 + **Forced**: Enabling this will allow a call if there are no other matching CLIs in the system. This will also replace the CLI that is presented with the CLI entered here. Ex: Create a whitelist of CLIs, then select **Forced** on the CLI to use if none of the others in the white list match. (Best practice is to only have one **Forced** CLI.)
 
 + **Direction Applied**: Select either **Termination** for calls a customer makes out, or **Origination** (also refers to DIDs) for inbound calls made to our customers. Ex: Create a white list that only allows calls to or from the same country.  
 
 ![alt text][edit-cli]
-
-## CLI Default Behaviors
-
-|Scenario|Settings|Result|
-|---|---|---|
-|1|No CLIs configured and "Approved CLI's Only" is Disabled|All CLIs will be allowed through|
-|2|No CLIs configured and "Approved CLI's Only" is Enabled|No calls will be allowed through|
-|3|"Approved CLI's Only" is enabled and call is made from a CLI which has not been configured|Error: CLI Restriction in effect|
-
-*"Approved CLIs Only" is set under Edit Customer :material-menu-right: Verification
 
 ## Advanced CLI Match & Manipulation
 The CLI system uses Regular Expressions to match and replace numbers. Here are a few examples:
@@ -54,22 +45,23 @@ The CLI system uses Regular Expressions to match and replace numbers. Here are a
 *To learn more about writing regular expressions, visit [http://regexr.com](http://regexr.com) for tutorials and exercises available for all levels of expertise.*
 
 
-## Whitelist
-Whitelisted CLIs are those that allowed to pass through the system. This is added in the Customer Card:
-
-1. Go to **Management** > **Customer**
-1. Click the **[customer]** > **Routing**
-1. Under **CLI**, click on the **`+`** button.
-1. Enter the number in the CLI field then click **`Save`**
-
-## CLI Restrict
-CLI Restrict lets you block calls. The blocked CLI is added in the Provider Rate Card:
+## Blacklist numbers
+Using **CLI Restrict** lets you block calls, essentially creating a Blacklist of numbers. To block a configured CLI:
 
 1. Click **Management** > **Rate Card**. 
 2. Select **Provider Rate Card** (under the Name column).
 1. Select **Properties** > **Advanced**.
 3. Enter the CLI/ANIs you want to block in the **CLI Restrict** box.
 4. Click **`Save`**.
+
+## CLI Default Behaviors
+Scenario 1: No CLIs configured and "Approved CLI's Only" is Disabled ==> All CLIs will be allowed through
+Scenario 2: No CLIs configured and "Approved CLI's Only" is Enabled ==> No calls will be allowed through
+Scenario 3: "Approved CLI's Only" is enabled and call is made from a CLI which has not been configured ==> Error: CLI Restriction in effect
+Scenario 4 (Whitelist): Configure a number as a CLI in customer routing
+Scenario 5 (Blacklist): Configure a CLI then add it to CLI Restirct under Provider Rate Cards. 
+
+*"Approved CLIs Only" is set under **Edit Customer :material-menu-right: Verification***
 
 ## General Condition 6 (GC6) Compliance
 ConnexCS is GC6 compliant for end users, which: 
