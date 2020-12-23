@@ -1,103 +1,107 @@
-# Carrier Management
+# Carrier
+**Management :material-menu-right: Carrier **
 
-**ConnexCS** allows for simplified carrier management through the **Carrier** tab. Here, you can add, modify, and delete carriers. It is found in the **Management** tab, the four horizontal lines beneath the **Home** icon in the dashboard:
+The **Carrier** section in **ConnexCS** allows for simplified Carrier management where you can add, confiure, and delete carriers. 
 
-![alt text][carrier-list]
+## Carrier View Modification
+* **Columns** pop out on the right allows you to add/remove options, change column order, in some cases you can create row groups and aggregate values for pivot functionality
+* **Filters** pop out on the right allows you to filter your carriers
+* Adjust Column ordering
 
-## Carrier Overview tab
+## Carrier Management and Functions
+From the **Carriers** page, you can perform several management operations. 
 
-### Add Carrier
+**+**: Add new Carriers (see [**Add Carrier**ADD LINK]() below for details.)
+
+**Refresh**: Refresh the page, helpful when making edits or looking at real-time changes. This page is built as a web app so some information will update automatically.
+
+**Bulk Edit**: Select multiple Carriers, then click the **Bulk Edit** button to modify fields such as Channels Status, Flow Speed (CPS), Portal Access, and Country. 
+
+**Delete**: To delete multiple carriers at a time, select one or more carriers from the list and then click the trash bin icon and confirm.
+
+**?**: Link to documentation for the current page. 
+
+**Active**: To sort Carriers based on status, click **`Actice`** and select one of the status options. Results on the page will automatically arrange themselves according to the filter.
+
+**Search**: The search box on the Carrier Management screen is for finding specific information among your carrier listings.
+
+    
+![alt text][carriers-sorting]
+
+## Add Carrier
 ![alt text][add-carriers]
 
-To add carriers:
-
-1. Navigate to **Management** > **Carrier**.
 2. Click the **`+`** button.
 3. Enter relevant carrier details.
 4. Click **`Save`**.
 
-### Carrier fields
+*Click each tab for field explanations:*
 
-Basic tab
+=== "Basic"
 
-* **Carrier Name:** Enter a unique name for the carrier.
-* **Channels:** Add the number of channels (ports) in numeric digits. Set this to ZERO for unlimited channels.
-* **CPS:** Enter the carrier's max allotted calls-per-second.
-* **Status:** The carrier's status.  A drop-menu contains the following options:
-   *  **Active** - carrier available to process calls.
-   *  **Inactive** - carrier will not process any calls.
-   *  **Pending Approval** - carrier is undergoing a verification process, but their credentials are in the system.  
-* **Currency:** Choose the relevant currency for each carrier's country.
+    * **Carrier Name:** Enter a unique name for the carrier.
+    * **Channels:** Add the number of channels (ports) in numeric digits. Set this to ZERO for unlimited channels.
+    * **CPS:** Enter the carrier's max allotted calls-per-second.
+    * **Status:** The carrier's status.  A drop-menu contains the following options:
+       *  **Active** - carrier available to process calls.
+       *  **Inactive** - carrier will not process any calls.
+       *  **Pending Approval** - carrier is undergoing a verification process, but their credentials are in the system.  
+    * **Currency:** Choose the relevant currency for each carrier's country.
 
-Portal tab
+=== "Portal"
 
-* **Portal URL:** Enter the carrier's portal URL, ex: portal.yourcarrier.com 
-* **Portal Username:** Add a unique name for the portal.
-* **Portal Password:** Enter the password used to sign into the carrier portal.
-* **Portal Access:** Decides if the current carrier has access to the portal.
+    * **Portal URL:** Enter the carrier's portal URL, ex: portal.yourcarrier.com 
+    * **Portal Username:** Add a unique name for the portal.
+    * **Portal Password:** Enter the password used to sign into the carrier portal.
+    * **Portal Access:** Decides if the current carrier has access to the portal.
 
-Timeout tab
+=== "Timeout"
 
-* **First Reply Timeout:** Length of time for the carrier to respond after the **first invite**. Default = 30 seconds.
-* **PDD Timeout:** Length of time for the carrier to respond to the call. Default = 5 seconds.
-* **Ring Timeout:** Length of time the call may ring before it times out and sends a cancel message. Default = 60 seconds.
+    * **First Reply Timeout:** Length of time for the carrier to respond after the **first invite**. Default = 30 seconds.
+    * **PDD Timeout:** Length of time for the carrier to respond to the call. Default = 5 seconds.
+    * **Ring Timeout:** Length of time the call may ring before it times out and sends a cancel message. Default = 60 seconds.
 
-Config tab    
+=== "Config"    
 
-* **PayPal Email:** Enter the PayPal e-mail associated with the carrier's account.
-* **Website:** Add the carrier's official website.
-* **P-Asserted-ID:** Select display options for this CLI field
-* **Consec Fail Backoff:** IF Enabled, when a carrier goes down, the First Reply Timeout is skipped.  
+    * **PayPal Email:** Enter the PayPal e-mail associated with the carrier's account.
+    * **Website:** Add the carrier's official website.
+    * **P-Asserted-ID:** Select display options for this CLI field
+    * **Consec Fail Backoff:** IF Enabled, when a carrier goes down, the First Reply Timeout is skipped.  
 
-Address tab
+=== "Address"
 
-* **Address:** Add the carrier's address, including country and postcode/ZIP code.
+    * **Address:** Add the carrier's address, including country and postcode/ZIP code.
 
-Verification tab
+=== "Verification"
 
-* **Propagate Username:** Used when the customer is sending information in addition to CLI information (ex: Company Name, Username)
+    * **Propagate Username:** Used when the customer is sending information in addition to CLI information (ex: Company Name, Username)
 
-![alt text][carrier-details]
+    ![alt text][carrier-details]
         
-### Delete Carrier
-To delete existing **Carriers**:
 
-1. Select a carrier from the list using its checkbox.
-2. Click the trash bin icon and confirm.
 
-### Consecutive Failures
-The **Consec Fails (Consecutive Failures)** increments a count of SIP failure responses. (The counter does not include SIP 200 responses for connected calls.) This simplistic measurement can measure a carrier's ability to connect calls: a connected call resets the counter, a failed call increments the counter by one.  
-
-!!! note 
-    This mechanism can show false positives if the customer sends missed call traffic or calls wrong numbers.  The counter is a quick way to see if a route is failing but should not be used as a comprehensive success monitor.
-    
-### Sort Carrier by Status
-![alt text][carriers-sorting]
-
-To view Carriers based on status:
-
-1. Click the **`Active`** button.
-2. Select an option from the dropdown menu to filter results.
-3. The display will change automatically according to your selection.
-
-### Searching Carrier
-The search box on the Carrier Management screen is for finding specific information among your carrier listings.
-
-### Customizing The View
-The **Carriers** view can be customized to display certain columns and filter results.  Click the menu buttons on the extreme right and use the checkboxes to modify the view and filter results.
-
-## Carrier Configuration
-To edit **Carriers**, select an entry from the list, then:
+## Configure Carrier
+To configure a **Carrier**, select the Carrier from the list, then configured based on the following options:
 
 1. Press the **`Edit`** button.
 2. Change the carrier's details and then press **`Save`**.
 
 ![alt text][carrier-dashboard]
 
-### Code Consistency
-**Code Consistency** measures changes to response codes (specifically SIP 200 and 404s) returned from the carrier. It is useful for identifying routes of varying or poor quality. Effective carriers try to maintain 100% code consistency.
+### Main
+
++ **Contacts**:
++ **Rate Grid**:
++ **Code Consistency** measures changes to response codes (specifically SIP 200 and 404s) returned from the carrier. It is useful for identifying routes of varying or poor quality. Effective carriers try to maintain 100% code consistency.
 
 ![alt text][code-consistency]
+
++ **Consecutive Failures**: The **Consec Fails (Consecutive Failures)** column increments a count of SIP failure responses. (The counter does not include SIP 200 responses for connected calls.) This simplistic measurement can measure a carrier's ability to connect calls: a connected call resets the counter, a failed call increments the counter by one. 
+
+!!! note "Consec fails and false positives"
+    This mechanism can show false positives if the customer sends missed call traffic or calls wrong numbers.  The counter is a quick way to see if a route is failing but should not be used as a comprehensive success monitor.
+    
++ **Summary**:
 
 ### Reply Management
 Customers can use the **Reply Management** tab to customize responses based on the SIP message received from the carrier. This allows for more efficient messaging and system responses. 
@@ -168,7 +172,7 @@ The **CDR** tab displays call drop rates. Recalculate CDRs for a specific month 
 ## Special Considerations
 **Bandwidth.com** has diverged from the SIP spec and exposed an internal IP address required for sequential requests. To ensure compatibility, set the switch manufacturer to `bandwidth.com`.
 
-[carrier-list]: /carrier/img/99.png "Carrier-List"
+
 [add-carriers]: /carrier/img/100.png "Add-Carrier"
 [carrier-details]: /carrier/img/101.png "Carrier-Details"
 [carriers-sorting]: /carrier/img/102.png "Carriers-Sorting"
