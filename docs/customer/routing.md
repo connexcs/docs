@@ -96,13 +96,11 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 
 + **Transcoding**: This option is limited. Best use case is for customers in low-bandwidth areas that want to use G.729. Be aware that if you don't have enough transcoding capacity, calls will fail. 
 + **SIP Ping**: Send regular pings to ensure both sides of a call are still up, in case of potential failed ACK. Enabled is the recommended setting. 
-+ **SIP Session Timer (SST)**: When enabled, SST ensures there are no ghost or long-duration calls being billed when one or both sides have hung up. A timer is activated when the call starts and refreshes the call every X number of seconds by sending a RE-INVITE. SST is currently the best way to prevent long-duration calls, superseding SIP Ping Timeout. Note that any SST less than sixty (60) seconds will be rejected
++ **SIP Session Timer (SST)**: SST is Passive by default, however **Enabled** is the recommended setting. When enabled, SST ensures there are no ghost or long-duration calls being billed when one or both sides have hung up. A timer is activated when the call starts and refreshes the call every X number of seconds by sending a RE-INVITE. SST is currently the best way to prevent long-duration calls, superseding SIP Ping Timeout. Note that any SST less than sixty (60) seconds will be rejected.
 
-Passive SST is enabled by default, **Enabled** is the recommended setting. 
-
-|SST Options              | Result                                                                                           |
+|SST Option              | Result                                                                                           |
 |-------------------------|:------------------------------------------------------------------------------------------------:|
-| **Default**             | No headers are changed and no SST is engaged, all RE-INVITES will propagate through the system   |
+| **Default**             | Passive SST, No headers are changed and no SST is engaged, all RE-INVITES will propagate through the system   |
 | **Enabled Both**        | ConnexCS will send SIP Session Timers to both legs of the call                                   |
 | **Enabled (Upstream)**  | ConnexCS will use SST with the carrier                                                           |
 | **Enabled (Downstream)**| ConnexCS will use SST with the customer                                                          |
