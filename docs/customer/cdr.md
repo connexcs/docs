@@ -15,16 +15,16 @@ The Customer **CDR** tab lists Call Detail Records associated with the selected 
 * **Columns**: Additional CDR fields can be enabled on the Columns tab on the right
 * **Column filter/sort**: Displayed entries can be filtered and sorted by clicking the header of each column. Since each call generates a CDR, this function is especially useful for customers with high call volume. 
 * **Download**: Pressing **`Download`** will save the record to your hard drive in CSV format. You can also select which columns to include in the download.
-* **Recalculate CDR**: Use the **`Recalc CDR`** button from within the specific customer to refresh CDR data. Available fields are dependent on the selected **Operations**.
+* **Recalculate CDR**: Use the **`Recalc CDR`** button from within the specific customer to refresh CDR data that is inaccurate. 
     + **Operations**
-        + Refresh Credit
+        + Refresh Credit- to recalculate balances
         + Refresh Summaries & Credit
         + Rerate Calls, and Refresh Summaries & Credit
-        + Adjust CAll Duration, Rerate Calls, and Refresh Summaries & Credit
-    + **Date (UTC)**
-    + **Release Reason**
-    + **Min Duration**
-    + **New Duration**
+        + Adjust Call Duration, Rerate Calls, and Refresh Summaries & Credit
+    + **Date (UTC)** (for Refresh operations)- 
+    + **Release Reason** (for Rerate operations)- select the reason the call was ended, multiple selections are allowed. This will modify the amount that was charged for the calls. 
+    + **Min Duration** (for Adjust Call Duration operations)- 
+    + **New Duration** (for Adjust Call Duration operations)- 
 
 
     ![alt text][recalc]
