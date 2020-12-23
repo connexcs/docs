@@ -62,7 +62,7 @@ pages:
         - Contracts: customer/contracts.md
         - Documents: customer/documents.md
         - Class5: customer/class5.md
-        - Credit Control: customer/credit-control.md
+
 
     - Carrier: carrier.md
         
@@ -87,6 +87,7 @@ pages:
         - Calling Card: calling-card.md
         - Circuit Test: circuit-test.md
         - Capacity Limiting: limiting-cps.md
+        - Credit Control: credit-control.md
         - Do Not Call lists: dnc.md
         - Files: files.md
         - Feature List: feature-list.md
