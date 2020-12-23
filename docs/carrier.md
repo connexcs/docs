@@ -11,7 +11,7 @@ The **Carrier** section in **ConnexCS** allows for simplified Carrier management
 ## Carrier Management and Functions
 From the **Carriers** page, you can perform several management operations. 
 
-**+**: Add new Carriers (see [**Add Carrier**ADD LINK]() below for details.)
+**+**: Add new Carriers (see [**Add Carrier**](https://docs.connexcs.com/carrier/#add-carrier) below for details.)
 
 **Refresh**: Refresh the page, helpful when making edits or looking at real-time changes. This page is built as a web app so some information will update automatically.
 
@@ -23,10 +23,12 @@ From the **Carriers** page, you can perform several management operations.
 
 **Active**: To sort Carriers based on status, click **`Actice`** and select one of the status options. Results on the page will automatically arrange themselves according to the filter.
 
+![alt text][carriers-sorting]
+
 **Search**: The search box on the Carrier Management screen is for finding specific information among your carrier listings.
 
-    
-![alt text][carriers-sorting]
+**Credit column**: Amounts listed here are purely infomrational, calls will still be connected by a carrier even if the amout here is at zero credit.     
+
 
 ## Add Carrier
 ![alt text][add-carriers]
@@ -90,29 +92,37 @@ To configure a **Carrier**, select the Carrier from the list, then configured ba
 
 ### Main
 
-+ **Contacts**:
-+ **Rate Grid**:
++ **Contacts**: Helpful for keeping track of Support contacts
++ **Rates Grid**: Associated rate cards for this provider. See [Provider Rate Cards](https://docs.connexcs.com/provider-ratecard/) for configuration. 
 + **Code Consistency** measures changes to response codes (specifically SIP 200 and 404s) returned from the carrier. It is useful for identifying routes of varying or poor quality. Effective carriers try to maintain 100% code consistency.
 
 ![alt text][code-consistency]
 
-+ **Consecutive Failures**: The **Consec Fails (Consecutive Failures)** column increments a count of SIP failure responses. (The counter does not include SIP 200 responses for connected calls.) This simplistic measurement can measure a carrier's ability to connect calls: a connected call resets the counter, a failed call increments the counter by one. 
++ **Consecutive Failure**: Shows a count of failed calls based on specific SIP failure responses. (The counter does not include SIP 200 responses for connected calls.) This simplistic measurement can measure a carrier's ability to connect calls or a particular route: a connected call resets the counter, a failed call increments the counter by one. Just a few Fails is not concerning, be on the lookout for higher numbers in the thousands. 
 
 !!! note "Consec fails and false positives"
     This mechanism can show false positives if the customer sends missed call traffic or calls wrong numbers.  The counter is a quick way to see if a route is failing but should not be used as a comprehensive success monitor.
     
-+ **Summary**:
++ **Summary**: All calls through this carrier, whether in Live (last 24 hours), Daily, or Monthly formats, are all displayed in 24-hour UTC. This data is updated hourly. 
+
+!!! warning "Auto Generate Invoice"
+    Do not use the "Auto Generate Invoice" under the Carrier. Invoices should be managed via the [Customer Invoice](https://docs.connexcs.com/customer/invoices/) section.  
 
 ### Reply Management
-Customers can use the **Reply Management** tab to customize responses based on the SIP message received from the carrier. This allows for more efficient messaging and system responses. 
+Customers can use **Reply Management** to customize responses based on the SIP message (100 to 606) received from the carrier . This allows for more efficient messaging and system responses, and can also be used by custoemrs who have switches which require certain SIP code reponses. See the [Wikipedia List of SIP response codes](https://en.wikipedia.org/wiki/List_of_SIP_response_codes) for additional details about each code. 
 
 To edit Reply Codes:
 
-1. Select **`Edit`** on the right
+1. Select **`Edit`** on the right of the code
 2. Select the action
     * Failover- allows the call to try the next carrier
     * Replace- enter the New Code and New Reason
-
+    
+!!! example "Code Replace use case"
+    Customer switch requires a SIP 180 response (Ringing), but is only receiving the 183 reponse (Session in Progress). The 180 (with SDP) tells the SIP phone to generate ringing locally (the audio is clear sounding since it is local), but with the 183 (no SDP) the ringing is generated at the network (this may play different ringing, perhaps for the local country). In this case, the 183 code can be modified in Reply Management to `Replace` with 180 instead.
+    
+!!! example "Code Failover use case"
+    In some situations, carriers may not return SIP failure codes accurately. If the carrier seds a 404 (client side error) the customer equipment may not failover to the next carrier automatically. Use Reply Management to set 404 to `Failover` to the next carrier.
 
 ### Auth
 Carrier **Authentication** uses IP addresses to allow or disallow attempts to access service.
