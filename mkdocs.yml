@@ -116,6 +116,7 @@ pages:
         - IVR: class5/creating-ivr.md
         - Groups: class5/creating-group.md
         - Voicemail: class5/voicemail.md
+        - Phonebook: class5/phonebook.md        
        
     - Developers:
         - Analytics: developers/analytics.md
