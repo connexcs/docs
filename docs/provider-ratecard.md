@@ -1,6 +1,6 @@
 # Provider Rate Cards
+**Management :material-menu-right: Provider rate Card**
 
-**Rate Cards** are an important ConnexCS feature as this is how most information is organized. 
 
 ## Provider Rate Card Management
 
@@ -8,9 +8,9 @@ The Provider Rate Card screen is found under **Management** > **Rate Card** > **
 
 * **Name** - The name of the provider.  Click this link to see the provider's individual rate card and management options.
 * **Direction** - Choose between *Termination* or *Origination*.  Change this setting in the **Advanced** section.
-* **Company** - The company associated with the rate card. 
-* **Currency** - The currency relative to the provider's region, between USD, EUR, and GBP.
-* **`?`** - Pressing the **`?`** button next to any rate card displays an overview of that provider.  It includes the name, the card ID, and any dependent children rate cards that could be affected by changes.
+* **Company** - Refers to the Provider, or Carrier, that the card will use. 
+* **Currency** - The currency for the provider's region (typically USD, EUR, or GBP).
+* **`?`** - Displays an overview of that provider, including the name, the card ID, and any dependent children (or Customer) rate cards. Child cards will be impacted by any changes made to the parent card. 
 * **ID** - The rate card's ID is a system identifier that acts as a placeholder and prevents confusion between similarly named items.
 
 ## Email the Rate Card
