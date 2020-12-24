@@ -1,4 +1,4 @@
-# Building Rate Cards
+# Rate Card Overview
 
 It is always sound practice to base rate cards on the information in provider cards. Code accuracy is perhaps one of the most important of these benefits. In any system with card-based profiles, code accuracy is one of the means to ensure the accuracy of the whole system, and to make all passed or collected data more reliable.
 
