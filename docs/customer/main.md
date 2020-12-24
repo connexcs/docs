@@ -3,6 +3,8 @@
 
 The first tab in a Customer account is **Main** which displays a summary of the Status, Balance, Debit Limit, and current Channels in use. From here you can manage contacts, block internal numbers, and view call summaries.
 
+![alt text][cust-main]
+
 ## Audit Log
 ![alt text][audit-log]
 
@@ -91,6 +93,7 @@ There are several functions that can be performed with this data:
 !!! tip "Data used for billing"
     The data found in the Customer Summary section is considered valid for billing purposes. The same data may be found in other parts of the system but should not be used for billing.
 
+[cust-main]: /customer/img/cust-main.png "Customer Main"
 [audit-log]: /customer/img/audit-log.png "Audit Log"
 [reset-password]: /customer/img/reset-password.png "Reset Password"
-[main-tab]: /customer/img/41.png "Main Tab"
+[main-tab]: /customer/img/41.png "Contact Details"
