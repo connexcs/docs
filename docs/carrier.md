@@ -3,6 +3,8 @@
 
 The **Carrier** section in **ConnexCS** allows for simplified Carrier management where you can add, configure, and delete carriers. 
 
+![alt text][carriers-main]
+
 ## Carrier View Modification
 * **Columns** pop out on the right allows you to add/remove options, change column order, in some cases you can create row groups and aggregate values for pivot functionality
 * **Filters** pop out on the right allows you to filter your carriers
@@ -84,6 +86,8 @@ From the **Carriers** page, you can perform several management operations.
 To configure a **Carrier**, select the Carrier from the list, then configure the following areas:
 
 ### Main
+
+![alt text][carriers-main]
 
 + **Contacts**: Helpful for keeping track of Support contacts for individual carriers
 + **Rates Grid**: Associated rate cards for this provider. See [Provider Rate Cards](https://docs.connexcs.com/provider-ratecard/) for configuration. 
@@ -171,5 +175,6 @@ The **CDR** tab displays call drop rates. Use **`Recalc CDR`** when CDR records 
 ## Special Considerations
 **Bandwidth.com** has diverged from the SIP spec and exposed an internal IP address required for sequential requests. To ensure compatibility, set the switch manufacturer to `bandwidth.com`.
 
+[carriers-main]: /carrier/img/carriers-main.png "Carrier Main"
 
 [add-carriers]: /carrier/img/100.png "Add-Carrier"
