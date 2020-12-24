@@ -1,5 +1,5 @@
 # Payments 
-**Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Payments
+**Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Payments**
 
 View a list of all the **Payments** that have been made so far. 
 
