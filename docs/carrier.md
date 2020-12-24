@@ -33,7 +33,6 @@ From the **Carriers** page, you can perform several management operations.
 
 
 ## Add Carrier
-![alt text][add-carriers]
 
 2. Click the **`+`** button.
 3. Enter relevant carrier details.
@@ -87,7 +86,7 @@ To configure a **Carrier**, select the Carrier from the list, then configure the
 
 ### Main
 
-![alt text][carriers-main]
+![alt text][carrier]
 
 + **Contacts**: Helpful for keeping track of Support contacts for individual carriers
 + **Rates Grid**: Associated rate cards for this provider. See [Provider Rate Cards](https://docs.connexcs.com/provider-ratecard/) for configuration. 
@@ -175,6 +174,7 @@ The **CDR** tab displays call drop rates. Use **`Recalc CDR`** when CDR records 
 ## Special Considerations
 **Bandwidth.com** has diverged from the SIP spec and exposed an internal IP address required for sequential requests. To ensure compatibility, set the switch manufacturer to `bandwidth.com`.
 
-[carriers-main]: /carrier/img/carriers-main.png "Carrier Main"
+[carriers-main]: /carrier/img/carriers-main.png "Carriers"
+[carrier]: /carrier/img/carrier.png "Carrier Main"
 
-[add-carriers]: /carrier/img/100.png "Add-Carrier"
+
