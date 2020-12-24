@@ -12,4 +12,4 @@ An **Alias** allows you to partially or completely rewrite a number.
 
 
 !!! info "Video Guide"
-    See walkthrough in [Alias Video Guide](https://staging--connexcs-docs.netlify.app/video-guide/#aliases). 
+    See walkthrough in [Alias Video Guide](https://docs.connexcs.com/video-guide/#aliases). 
