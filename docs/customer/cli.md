@@ -5,7 +5,7 @@
 Configuring a number as a **CLI (Calling Line Identification)** in ConnexCS gives the customer the ability to control which numbers are allowed to initiate calls. Once added, these numbers are essentially a Whitelist. Additional configuration allows you to restrict (Blacklist) or perform other  
 
 !!! info "What does CLI mean?"
-   **CLI** refers to the **CLI/ANI** field in the `From` part of the `SIP INVITE` message. This contains specific information about the caller, particularly the name and number of the person initiating the call. Also known as "Caller ID" in standard phone systems, CLI may also be referred to as "A-Leg" or "A-Number", where the call originates. The call is then terminated at the Dialed Number, the "B-Leg" or "B-Number".
+    **CLI** refers to the **CLI/ANI** field in the `From` part of the `SIP INVITE` message. This contains specific information about the caller, particularly the name and number of the person initiating the call. Also known as "Caller ID" in standard phone systems, CLI may also be referred to as "A-Leg" or "A-Number", where the call originates. The call is then terminated at the Dialed Number, the "B-Leg" or "B-Number".
 
 
 ## Configure CLI
