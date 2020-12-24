@@ -1,26 +1,19 @@
 # Provider Rate Cards
+**Management :material-menu-right: Provider rate Card**
 
-**Rate Cards** are an important ConnexCS feature as this is how most information is organized. 
+## Overview
+
+* **Name**: The name of the provider.  Click this link to see the provider's individual rate card and management options.
+* **Direction**: Cards are either *Termination* (calling out to PSTN) or *Origination* (DID numbers receivng calls from PSTN).
+* **Company**: Refers to the Provider, or Carrier, that the card will use. 
+* **Currency**: The currency for the provider's region (typically USD, EUR, or GBP).
+* **`?`**: Displays an overview of that provider, including the name, the card ID, and any dependent children (or Customer) rate cards. Child cards will be impacted by any changes made to the parent card. 
+* **ID**: A system identifier that acts as a placeholder and prevents confusion between similarly named items.
++ **Rule Count**: The number of rows in the card.
 
 ## Provider Rate Card Management
 
-The Provider Rate Card screen is found under **Management** > **Rate Card** > **Provider Rate Cards**.  
-
-* **Name** - The name of the provider.  Click this link to see the provider's individual rate card and management options.
-* **Direction** - Choose between *Termination* or *Origination*.  Change this setting in the **Advanced** section.
-* **Company** - The company associated with the rate card. 
-* **Currency** - The currency relative to the provider's region, between USD, EUR, and GBP.
-* **`?`** - Pressing the **`?`** button next to any rate card displays an overview of that provider.  It includes the name, the card ID, and any dependent children rate cards that could be affected by changes.
-* **ID** - The rate card's ID is a system identifier that acts as a placeholder and prevents confusion between similarly named items.
-
-## Email the Rate Card
-This feature allows providers to email rate cards to customers as an attachment. It is a convenient way to send customers official information relevant to their accounts.  
-
-To email a rate card:
-1. Click **Management** > **Rate Card** > **Provider Rate Card**.
-2. Click the rate card name.
-3. Click the **`Email`** button.
-4. Enter the email address and click **`Send`**.
+**Bulk Edit** Select one or more Provider Cards and click **`Bulk Edit`** to modify multiple cards for settings such as Force Presentation, Dialing, Direction, and Billing Precision.
 
 ## Add New Provider Rate Cards
 New **Provider Rate Cards** may be added manually or by uploading an existing file. 

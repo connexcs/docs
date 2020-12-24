@@ -2,6 +2,9 @@
 Setup :material-menu-right: Config :material-menu-right: Packages
 
 A **Package** represents a product or service offered to customers, often as a recurring charge based on goods delivered at a required interval. ConnexCS **Packages** are global entities which are allocated to each customer as required. Each package may include incentives for MRC like DIDs, phone system rentals, or other hardware. 
+
+!!! note "Assigning Packages"
+    The process below describe how to create a package for the account. Once created, packages are assigned either to the [customer](https://docs.connexcs.com/customer/package/) or directly to a [DID](https://docs.connexcs.com/customer/did/#billing).  
  
  
 ## Add Package

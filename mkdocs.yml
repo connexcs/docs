@@ -62,12 +62,12 @@ pages:
         - Contracts: customer/contracts.md
         - Documents: customer/documents.md
         - Class5: customer/class5.md
-        - Credit Control: customer/credit-control.md
+
 
     - Carrier: carrier.md
         
     - Rate Cards:
-        - Building Cards: rate-card-building.md
+        - Rate Card Overview: rate-card-building.md
         - Provider Rate Card: provider-ratecard.md
         - Customer Rate Card: customer-ratecard.md
 
@@ -87,6 +87,7 @@ pages:
         - Calling Card: calling-card.md
         - Circuit Test: circuit-test.md
         - Capacity Limiting: limiting-cps.md
+        - Credit Control: credit-control.md
         - Do Not Call lists: dnc.md
         - Files: files.md
         - Feature List: feature-list.md
@@ -115,6 +116,7 @@ pages:
         - IVR: class5/creating-ivr.md
         - Groups: class5/creating-group.md
         - Voicemail: class5/voicemail.md
+        - Phonebook: class5/phonebook.md        
        
     - Developers:
         - Analytics: developers/analytics.md

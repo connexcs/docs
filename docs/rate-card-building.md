@@ -1,6 +1,16 @@
-# Building Rate Cards
+# Rate Card Overview
 
-It is always sound practice to base rate cards on the information in provider cards. Code accuracy is perhaps one of the most important of these benefits. In any system with card-based profiles, code accuracy is one of the means to ensure the accuracy of the whole system, and to make all passed or collected data more reliable.
+**Rate Cards** are an important ConnexCS feature as this is how most information is organized. There are several terms in ConnexCS that can be used interchangably when talking about Rate Cards. 
+
+
+Provider = Carrier
+Provider Rate Card = Parent Card 
+Customer Rate Card = Child Rate Card
+
+Customer Cards are built from Provider Cards. 
+
+!!! tip "Code and Billing Accuracy"
+    It is always sound practice to base rate cards on the information in Provider cards. Code accuracy is perhaps one of the most important of these benefits. In any system with card-based profiles, code accuracy is one of the means to ensure the accuracy of the whole system, and to make all passed or collected data more reliable.
 
 ## Rate Card Compilation Engine
 

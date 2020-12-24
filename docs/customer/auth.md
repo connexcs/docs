@@ -20,7 +20,7 @@ When you enable **IP Authentication**, you associate the IP of a customer switch
 
 === "Basic"
 
-    + **IP**: Enter the IP of the customer switch.
+    + **IP**: Enter the IP(s) of the customer switch. (FQDN may be also be used for Ingress only switches.)
     + **Switch Direction**: The `Ingress` and `Egress` selections are from the perspective of the customer switch (PBX, dialer, etc), and describe how that switch interacts with the ConnexCS switch. For switches that send and receive calls from ConnexCS, there will need to be separate entries for each direction. 
         * Ingress: This switch *receives* calls from ConnexCS. (Note: when selected, this gives the option of using the FQDN rather than the switch IP.)
         * Egress: This switch *sends* calls to ConnexCS
@@ -40,6 +40,8 @@ When you enable **IP Authentication**, you associate the IP of a customer switch
     + **Username, and Password**: Set when sending calls out (egress switch direction) to a remote system, setting this will allow the ConnexCS switch to operate as a client, or UAC. Not typically recommended unless the customer has a very specialized system. 
     + **Force NAT**: Forces the switch to read the IP address the traffic was received from, not the IP in the SIP packet. (See [**Far-End NAT Traversal**](https://docs.connexcs.com/far-end-nat-traversal/) for more details on how ConnexCS handles NAT for SIP.)
     + **Intercept Reinvite**: The only situation where this is recommended is when a customer's equipment doesn't support REINVITES. Enabling this may correct issues with dropped calls by having ConnexCS generate the REINVITES, which can help keep calls up if they are being disconnected by the far-end switch. 
+    + **Outbound Proxy**: 
+    + **Oubound Proxy**: Enter an IP of a Proxy server for calls to route to, before being sent to the carrier. This rewrites the UAC IP in the VIA field of the SIP header. This reduces management overhead as a customer only needs to authorize the single IP. Additionally, multiple addresses can be load balanced using the AnyEdge system. 
     + **Flags**: Set CLI Authentication for situations where Accounts are unable to use [**Tech Prefix**](https://docs.connexcs.com/customer/routing/#basic) to differentiate customers using the same IP. 
  
 === "Codecs"    

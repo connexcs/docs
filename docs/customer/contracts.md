@@ -1,8 +1,14 @@
 # Contract
-Manage :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Contract
+**Manage :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Contract**
 
-The **Contracts** section lists provider contracts associated with the active customer account. Select the records by clicking their names to see more details.
+The **Contracts** section lists contracts associated with the customer. **Contracts** are assigned useful when you want new customers to agree to certain conditions before they can dial. Click on each name to view details.
 
-This is used when you want new customers to agree to certain conditions before they can dial. The Grace Date allows the customer to demo the service until the set date, at which time they will need to agree to the contract to continue using the service. 
+## Assign Contracts
+Click the **`+`** and complete the following fields:
 
-For details on Contract setup, see Setup :material-menu-right: Config :material-menu-right: [Contracts](https://docs.connexcs.com/setup/config/contracts/)
++ **Contract**: Select the desired Contract. 
++ **Grace Date**: Allows the customer to demo the service until the selected date, at which time they will need to agree to the contract to continue using the service.
++ **Required**: Enabling this will shut down the account if the Grace Date is passed and the contract still hasn't been signed. 
+
+!!! tip "How to create a Contract"
+    For details on Contract setup, see Setup :material-menu-right: Config :material-menu-right: [Contracts](https://docs.connexcs.com/setup/config/contracts/). Contract Revisions are also available here. 
