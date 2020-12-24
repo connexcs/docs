@@ -40,8 +40,7 @@ When you enable **IP Authentication**, you associate the IP of a customer switch
     + **Username, and Password**: Set when sending calls out (egress switch direction) to a remote system, setting this will allow the ConnexCS switch to operate as a client, or UAC. Not typically recommended unless the customer has a very specialized system. 
     + **Force NAT**: Forces the switch to read the IP address the traffic was received from, not the IP in the SIP packet. (See [**Far-End NAT Traversal**](https://docs.connexcs.com/far-end-nat-traversal/) for more details on how ConnexCS handles NAT for SIP.)
     + **Intercept Reinvite**: The only situation where this is recommended is when a customer's equipment doesn't support REINVITES. Enabling this may correct issues with dropped calls by having ConnexCS generate the REINVITES, which can help keep calls up if they are being disconnected by the far-end switch. 
-    + **Outbound Proxy**: 
-    + **Oubound Proxy**: Enter an IP of a Proxy server for calls to route to, before being sent to the carrier. This rewrites the UAC IP in the VIA field of the SIP header. This reduces management overhead as a customer only needs to authorize the single IP. Additionally, multiple addresses can be load balanced using the AnyEdge system. 
+    + **Outbound Proxy**: Enter an IP of a Proxy server for calls to route to, before being sent to the carrier. This rewrites the UAC IP in the VIA field of the SIP header. This reduces management overhead as a customer only needs to authorize the single IP. Additionally, multiple addresses can be load balanced using the AnyEdge system. 
     + **Flags**: Set CLI Authentication for situations where Accounts are unable to use [**Tech Prefix**](https://docs.connexcs.com/customer/routing/#basic) to differentiate customers using the same IP. 
  
 === "Codecs"    
@@ -72,7 +71,7 @@ After IP Authentication has been setup, click on the IP to view configuration, a
 ## SIP User Authentication
 When **SIP Authentication** is enabled, ConnexCS will reject the initial SIP INVITE with a "407 Authentication Required". This message includes a 'nonce' (a uniquely randomly generated number, which has been hashed). The customer switch will send appropriate authentication information to ConnexCS, which will connect the call. 
 
-Generic SIP Trce showing the Challenge Response:
+Generic SIP Trace showing the Challenge Response:
 
 ![alt text][407-trace]
 
@@ -81,7 +80,7 @@ Generic SIP Trce showing the Challenge Response:
 
 === "Basic"
 
-    + **Username**: This will be the Username used for SIP authentication (must match configuration on the customer UAC). If The Customer has [**Internal Number Block**](https://docs.connexcs.com/customer/main/#internal-number-block) set on the **Main** tab, the Username may only be selected from available extensions. If a Username is already in use on the Account, they will get an error saying "Duplicate User Detected".
+    + **Username**: This will be the Username used for SIP authentication (must match configuration on the customer UAC). If The Customer has [**Internal Number Block**](https://docs.connexcs.com/customer/main/#internal-number-block) set on the **Main** tab, the Username may only be selected from available extensions. If a Username is already in use on the Account, they will get an error "Duplicate User Detected".
     + **Password**: Must match configuration on the customer UAC.
     + **Channels, Flow Speed, Bandwidth**; Do NOT set use these fields. 
     + **Protocol**: This sets the type of signalling protocol for call setup, maintenance, and tear down. ConnexCS uses SIP for signalling, but here you select the transport protocol. (Note: SMPP, for SMS, is not currently supported.)
@@ -135,7 +134,7 @@ Ex: Customer switch :material-menu-right: NAT/firewall :material-menu-right: Con
 + When a packet goes out, a hole is punched in the firewall, and the source port is recorded. When a packet is returned on that port, the firewall knows to deliver back to the UAC.  
 + This works well when using TCP, which sends regular keep-alive packets.
 + UDP does not send keep-alives (no connected state as with TCP). SIP does maintain a connected state, registration, but may have long periods of inactivity. 
-+ Without regular traffic passing between UAS and UAC in the form of keep-alives/registration (a normal occurence), NAT will eventually time out and shut down the connection. 
++ Without regular traffic passing between UAS and UAC in the form of keep-alives/registration (a normal occurance), NAT will eventually time out and shut down the connection. 
 + Enabling UDP or SIP pings can demonstrate to the NAT/firewall that the signalling path is still valid and in use. 
 
 ### Reset SIP Password
@@ -146,7 +145,7 @@ Click the `Password` key next to the SIP user to reset the password.
     SIP passwords are a requirement of the SIP protocol but can present security risks for a provider. They must be configured in ConnexCS when SIP authentication is setup but are not available for providers or customers to retrieve afterwards. Providers should generate a unique SIP password for each SIP user and send that to the customer. This gives the customer the responsibility of keeping track of the password and keeping it safe. Additionally, the unique password will allow for traceability if the customer's system is ever compromised. 
     
 ### Send message to SIP Users
-Use the `Send` button next to the SIP User to send a SIP message to the end device, and will flash on the phone. 
+Use the `Send` button next to the SIP User to send a SIP message to the end device which will flash on the phone. 
 
 [ipauth-basic]: /customer/img/ipauth-b.png "Edit Switch Basic"
 [parameter-rewrite]: /customer/img/parameter-rewrite.png "Parameter Rewrite"
