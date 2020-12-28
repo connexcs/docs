@@ -62,7 +62,7 @@ The preferred method for adding a Rate Card is to import/upload it:
 
 **Intra** and **Inter**: See Force Presentation under [Config](https://docs.connexcs.com/provider-ratecard/#config) below. 
 
-**Billing**: Represents how the call will be billed. The number represents MCD (Minimum Call Duration) divided by the pulse. Each call using this rate card will be rounded up to MCD. If MCD is passed, then the call duration will be rounded up in increments of the pulse. Example:The Provider Rate Card MCD is set to 30 and the Pulse is set to 6. The Billing collumn shows 30/6. 
+**Billing**: Call will be billed based on the MCD (Minimum Call Duration) and Pulse, represented as x/x. Each call using this Rate Card will be rounded up to MCD, then in increments of Pulse. Example: MCD is set to 30 and Pulse is set to 6. The Billing collumn shows 30/6. Call durations will be rounded up basedon these settings, then that new duration is what will be billed.
    
 |Call Duration|MCD?|Pulse|Billed Duration|
 |---|---|---|---|
@@ -70,6 +70,9 @@ The preferred method for adding a Rate Card is to import/upload it:
 |20 sec|>30|n/a|30 sec|
 |30 sec|>30|n/a|30 sec|
 |31 sec|met|6|36 sec|
+|35 sec|met|6|36 sec|
+|36 sec|met|6|36 sec|
+|37 sec|met|6|42 sec|
 
 + **Rate Connect**: 
 + **Status**: 
