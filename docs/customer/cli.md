@@ -2,13 +2,16 @@
 
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Routing**
 
-Configuring a number as a **CLI (Calling Line Identification)** in ConnexCS gives the customer the ability to control which numbers are allowed to initiate calls. Once added, these numbers are essentially a Whitelist. Additional configuration allows you to restrict (Blacklist) or perform other  
+Configuring a number as a **CLI (Calling Line Identification)** in ConnexCS gives the customer the ability to control which numbers are allowed to initiate calls. Once added, these numbers are essentially a Whitelist. 
 
 !!! info "What does CLI mean?"
     **CLI** refers to the **CLI/ANI** field in the `From` part of the `SIP INVITE` message. This contains specific information about the caller, particularly the name and number of the person initiating the call. Also known as "Caller ID" in standard phone systems, CLI may also be referred to as "A-Leg" or "A-Number", where the call originates. The call is then terminated at the Dialed Number, the "B-Leg" or "B-Number".
 
 
 ## Configure CLI
+
+![alt text][cli]
+
 Any number configured as a CLI is considered part of the Whitelist (unless additional configuration is applied to block it). To add a number:
 
 1.	Click on the **`+`** button under **CLI**.
@@ -70,5 +73,5 @@ ConnexCS is GC6 compliant for end users, which:
 
 To configure per customer, set the CLI "P-Asserted-ID" found CLI configuration above. 
 
-
+[cli]: /customer/img/cli.png "CLI Main"
 [edit-cli]: /customer/img/edit-cli.png "Edit CLI"
