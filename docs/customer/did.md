@@ -30,7 +30,7 @@ Select where to deliver calls that come in for the DID:
 + **URI**: Set the Destination DID (number or extension) and IP to forward calls to a specific SIP URI
 + **External**: To send the call back out to the internet, use a prefix (defined in Customer > Routing) to select the outbound route, then the number to send the call to
 + **Internal**: Send internally to an extension, a Class5 feature, or even to another customer
-+ **Circuit Test**: 
++ **Circuit Test**: *in progress*
 
 
 ### Capacity Limits
