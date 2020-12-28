@@ -65,10 +65,15 @@ The preferred method for adding a Rate Card is to import/upload it:
 #### Overview
 
 **Prefix**: The part of the dialed number which will match to trigger use of the card.
+
 **Name**: Optional name for the card.
+
 **Cost** (or Indeterminate): Refers to international calls, Toll Free (800, 888, etc) numbers, or anything else that isn't classified as Inter or Intra. 
-**Intra** (US Only): Refers to **Intra**State dialing (calls between numbers in the same state) and the cost of a call from this prefix to a number in the same state.  
+
+**Intra** (US Only): Refers to **Intra**State dialing (calls between numbers in the same state) and the cost of a call from this prefix to a number in the same state. 
+
 **Inter** (US Only): Refers to **Inter**State dialing (calls between numbers in different states)  and the cost of a call from this prefix to a number in a different state. 
+
 **Billing**: Call will be billed based on the MCD (Minimum Call Duration) and Pulse, represented as x/x. Each call using this Rate Card will be rounded up to MCD, then in increments of Pulse. Example: MCD is set to 30 and Pulse is set to 6. The Billing collumn shows 30/6. Call durations will be rounded up basedon these settings, then that new duration is what will be billed.
    
 |Call Duration|MCD?|Pulse|Billed Duration|
@@ -82,6 +87,7 @@ The preferred method for adding a Rate Card is to import/upload it:
 |37 sec|met|6|42 sec|
 
 **Rate Connect**: One time (per call) charge for connecting the call, triggered when call reaches SIP 200OK and ACK is received. 
+
 **Status**: Indicates a call that has been blocked
 
 **Dependent Cards** - These are Customer cards that use the selected rate card. Changes to the Provider Rate Card will be applied to each dependent rate card. 
