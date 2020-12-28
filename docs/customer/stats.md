@@ -1,12 +1,10 @@
 # Stats
-Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Stats
+**Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Stats**
 
-On the **Stats** tab, view graphs related to calling and call quality statistics and reports. All graphs may be filtered by different time segments and are available to be downloaded. 
-
-Use the selectors at the top to define the time and date range for the graphs. 
+Use **Stats** to view graphs related to calling and call quality statistics and reports. Use the selectors at the top to define the time and date range for the graphs.  
 
 ## Main
-View several useful graphs with details around signalling and call completion.  
+Data realted to SIP signalling and call completion.  
 
 |Graph|Description |
 |:------------|:-------------------------------------------------|
