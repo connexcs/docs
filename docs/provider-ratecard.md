@@ -57,23 +57,24 @@ The preferred method for adding a Rate Card is to import/upload it:
 
 ### Main tab
 
-+ **Prefix**: The part of the dialed number which will match to trigger use of the card.
-+ **Name**: Optional name for the card.
-+ **Intra** and **Inter**: See Force Presentation under [Config](https://docs.connexcs.com/provider-ratecard/#config) below. 
-+ **Billing**: Represents how the call will be billed. The number represents MCD (Minimum Call Duration) divided by the pulse. Each call using this rate card will be rounded up to MCD. If MCD is passed, then the call duration will be rounded up in increments of the pulse. Example: Billing is set to 30/6. A 
+**Prefix**: The part of the dialed number which will match to trigger use of the card.
+**Name**: Optional name for the card.
+
+**Intra** and **Inter**: See Force Presentation under [Config](https://docs.connexcs.com/provider-ratecard/#config) below. 
+
+**Billing**: Represents how the call will be billed. The number represents MCD (Minimum Call Duration) divided by the pulse. Each call using this rate card will be rounded up to MCD. If MCD is passed, then the call duration will be rounded up in increments of the pulse. Example:The Provider Rate Card MCD is set to 30 and the Pulse is set to 6. The Billing collumn shows 30/6. 
+   
+|Call Duration|MCD?|Pulse|Billed Duration|
+|---|---|---|---|
+|1 sec|>30|n/a|30 sec|
+|20 sec|>30|n/a|30 sec|
+|30 sec|>30|n/a|30 sec|
+|31 sec|met|6|36 sec|
+
 + **Rate Connect**: 
 + **Status**: 
 **Dependent Cards** - These are Customer cards that use the selected rate card. Changes to the Provider Rate Card will be applied to each dependent rate card. 
 
-!!! abstract "Billing Example"
-    The Provider Rate Card MCD is 30, and PUlse is 6, so the Billing is 30/6. 
-   
-    |Call Duration|MCD?|Pulse|Billed Duration|
-    |---|---|---|---|
-    |1 sec|>30|n/a|30 sec|
-    |20 sec|>30|n/a|30 sec|
-    |30 sec|>30|n/a|30 sec|
-    |31 sec|met|6|36 sec|
 
 ### Revisions tab 
 The Revision tab displays up to 8 most recent changes made to a rate card (ex: previous Rule count, Presentation, Currency, date created, Billing). The two most recent revisions will be available as Active or Inactive, the rest will be in Archive state. 
