@@ -74,17 +74,20 @@ The preferred method for adding a Rate Card is to import/upload it:
 
 **Inter** (US Only): Refers to **Inter**State dialing (calls between numbers in different states)  and the cost of a call from this prefix to a number in a different state. 
 
-**Billing**: Call will be billed based on the MCD (Minimum Call Duration) and Pulse, represented as x/x. Each call using this Rate Card will be rounded up to MCD, then in increments of Pulse. Example: MCD is set to 30 and Pulse is set to 6. The Billing collumn shows 30/6. Call durations will be rounded up basedon these settings, then that new duration is what will be billed.
+**Billing**: Call will be billed based on the MCD (Minimum Call Duration) and Pulse, represented as x/x. Each call using this Rate Card will be rounded up to MCD, then in increments of Pulse. 
+
+!!! abstract "Billing Example"
+    MCD is set to 30 and Pulse is set to 6. The Billing collumn shows 30/6. Call durations will be rounded up basedon these settings, then that new duration is what will be billed.
    
-|Call Duration|MCD?|Pulse|Billed Duration|
-|---|---|---|---|
-|1 sec|>30|n/a|30 sec|
-|20 sec|>30|n/a|30 sec|
-|30 sec|>30|n/a|30 sec|
-|31 sec|met|6|36 sec|
-|35 sec|met|6|36 sec|
-|36 sec|met|6|36 sec|
-|37 sec|met|6|42 sec|
+    |Call Duration|MCD?|Pulse|Billed Duration|
+    |---|---|---|---|
+    |1 sec|>30|n/a|30 sec|
+    |20 sec|>30|n/a|30 sec|
+    |30 sec|>30|n/a|30 sec|
+    |31 sec|met|6|36 sec|
+    |35 sec|met|6|36 sec|
+    |36 sec|met|6|36 sec|
+    |37 sec|met|6|42 sec|
 
 **Rate Connect**: One time (per call) charge for connecting the call, triggered when call reaches SIP 200OK and ACK is received. 
 
