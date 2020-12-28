@@ -1,6 +1,8 @@
 # Provider Rate Cards
 **Management :material-menu-right: Provider rate Card**
 
+**Provider Rate Cards** determine routing and billing for calls coming from our customers. Before configuring, we suggest you review [Rate Card Overview](https://docs.connexcs.com/rate-card-building/) then "[Rate Card Setup](https://docs.connexcs.com/video-guide/#rate-card-setup)" in the ConnexCS Video Guide. 
+
 ## Overview
 
 * **Name**: The name of the provider.  Click this link to see the provider's individual rate card and management options.
@@ -31,10 +33,10 @@ Once created, new **Provider Rate Cards** are completed by either adding rows ma
 8. Click **`Save`**.
 9. From here, you may Manually Add the rate card or perform a Bulk Upload. 
 
-### Manual add
-To manually add Rate Card rows, select Draft, and add desired rows. 
+**Option 1: Manual add**
+To manually add Rate Card rows, select Draft, and add/modify/delete desired rows. 
 
-### Bulk Upload
+**Option 2: Bulk Upload**
 The preferred method for adding a Rate Card is to import/upload it:
 
 1. Click **Bulk Upload** > **Upload**.
@@ -46,22 +48,27 @@ The preferred method for adding a Rate Card is to import/upload it:
     * Col 2 - Prefix
     * Col 3 - Cost
 6. Select **Upload to Sever** and confirm
-7. Select **Yes** to make this active immediately
+7. Select whether to make this active immediately
 
 ![alt text][confirm-import] 
 
-!!! info "Detailed Rate Card setup"
-    For additional details for adding new Rate Cards, see "[Rate Card Setup](https://docs.connexcs.com/video-guide/#rate-card-setup)" in the ConnexCS Video Guide. 
+
 
 ## Provider Rate Card Settings
 
 ### Main tab
 
+#### Functions
+
+![alt text][prc-func] 
+
+#### Overview
+
 **Prefix**: The part of the dialed number which will match to trigger use of the card.
 **Name**: Optional name for the card.
-
-**Intra** and **Inter**: See Force Presentation under [Config](https://docs.connexcs.com/provider-ratecard/#config) below. 
-
+**Cost** (or Indeterminate): Refers to international calls, Toll Free (800, 888, etc) numbers, or anything else that isn't classified as Inter or Intra. 
+**Intra** (US Only): Refers to **Intra**State dialing (calls between numbers in the same state) and the cost of a call from this prefix to a number in the same state.  
+**Inter** (US Only): Refers to **Inter**State dialing (calls between numbers in different states)  and the cost of a call from this prefix to a number in a different state. 
 **Billing**: Call will be billed based on the MCD (Minimum Call Duration) and Pulse, represented as x/x. Each call using this Rate Card will be rounded up to MCD, then in increments of Pulse. Example: MCD is set to 30 and Pulse is set to 6. The Billing collumn shows 30/6. Call durations will be rounded up basedon these settings, then that new duration is what will be billed.
    
 |Call Duration|MCD?|Pulse|Billed Duration|
@@ -74,8 +81,9 @@ The preferred method for adding a Rate Card is to import/upload it:
 |36 sec|met|6|36 sec|
 |37 sec|met|6|42 sec|
 
-+ **Rate Connect**: 
-+ **Status**: 
+**Rate Connect**: One time (per call) charge for connecting the call, triggered when call reaches SIP 200OK and ACK is received. 
+**Status**: Indicates a call that has been blocked
+
 **Dependent Cards** - These are Customer cards that use the selected rate card. Changes to the Provider Rate Card will be applied to each dependent rate card. 
 
 
@@ -98,7 +106,7 @@ The Revision tab displays up to 8 most recent changes made to a rate card (ex: p
 |Option|Example|Usage|
 | --- | --- | --- |
 |Single Rate|0.0007|Usually a UK Landline|
-|IntER/IntRA|1 (NPANXX)|Refers to Interstate and Intrastate calling, typically for USA dialing|
+|IntER/IntRA|1 (NPANXX)|Refers to Interstate and Intrastate calling for USA dialing|
 |IntER/IntRA/Indeterminate|1 (NPANXX)|Indeterminate indicates that call is between a USA number and another country|
 
 * **Dialing** - In the US, LRN (Local Routing Number) identifies the switch for a number and is used to determine billing for a call.  When a number is ported from one provider to another, the billing may change based on the new carrier. An LRN dip will correct any pricing discrepancies between the original and new carriers. (ConnexCS owns their own database for this, so the response time is quick.) This helps to reduce billing costs. If the customer wants to do single rates they may not want to do the LRN dip. 
@@ -115,3 +123,4 @@ The Revision tab displays up to 8 most recent changes made to a rate card (ex: p
 
 
 [confirm-import]: /card/img/138.png "Confirm Import"
+[prc-func]: /card/img/prc-func.png "Functions"
