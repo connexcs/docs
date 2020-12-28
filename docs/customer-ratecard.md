@@ -1,6 +1,6 @@
 # Customer Rate Card
 
-Customer Rate Cards let you manage the rates for customers, edit customer profiles, and view important information. 
+**Customer Rate Cards** let you manage the rates for customers, edit customer profiles, and view important information. Before configuring, we suggest you review [Rate Card Overview](https://docs.connexcs.com/rate-card-building/) then "[Rate Card Setup](https://docs.connexcs.com/video-guide/#rate-card-setup)" in the ConnexCS Video Guide. You will also want to have at least one [Provider Rate Card](https://docs.connexcs.com/provider-ratecard/) configured. 
 
 ## Customer Rate Card Management 
 The Rate Card Management screen is located under **Management > Rate Card > Customer Rate Cards**.
