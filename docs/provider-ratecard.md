@@ -4,19 +4,22 @@
 ## Overview
 
 * **Name**: The name of the provider.  Click this link to see the provider's individual rate card and management options.
-* **Direction**: Cards are either *Termination* (calling out to PSTN) or *Origination* (DID numbers receivng calls from PSTN).
-* **Company**: Refers to the Provider, or Carrier, that the card will use. 
+* **Direction**: Cards are either *Termination* (calling out to PSTN) or *Origination* (DID numbers receivng calls from PSTN). Termination is the most common type of card used by ConnexCS customers. 
+* **Company**: Refers to the Provider, or Carrier, that the card is configured to use. 
 * **Currency**: The currency for the provider's region (typically USD, EUR, or GBP).
-* **`?`**: Displays an overview of that provider, including the name, the card ID, and any dependent children (or Customer) rate cards. Child cards will be impacted by any changes made to the parent card. 
-* **ID**: A system identifier that acts as a placeholder and prevents confusion between similarly named items.
-+ **Rule Count**: The number of rows in the card.
+* **`?`**: Lists dependent Child (or Customer) Rate Cards, which will be impacted by any changes made to the parent card. Click on the [Child Card](https://docs.connexcs.com/customer-ratecard/) to view the configuration. 
+* **ID**: A system identifier that acts as a placeholder and prevents confusion between similarly named items. 
++ **Rule Count**: The number of rows in the Rate Card.
+
+!!! note "Warnings and Alerts"
+    If a Rate Card name shows a yellow arning or red alert, these will indicate details about the card. It may be stale, or have some sort of error.
 
 ## Provider Rate Card Management
 
 **Bulk Edit** Select one or more Provider Cards and click **`Bulk Edit`** to modify multiple cards for settings such as Force Presentation, Dialing, Direction, and Billing Precision.
 
 ## Add New Provider Rate Cards
-New **Provider Rate Cards** may be added manually or by uploading an existing file. 
+Once created, new **Provider Rate Cards** are completed by either adding rows manually or uploading an existing file. 
 
 1. Click the **`+`** button under **Provider Rate Cards**.
 3. Enter a unique name for the provider card.
@@ -53,7 +56,23 @@ The preferred method for adding a Rate Card is to import/upload it:
 ## Provider Rate Card Settings
 
 ### Main tab
+
++ **Prefix**: The part of the dialed number which will match to trigger use of the card.
++ **Name**: Optional name for the card.
++ **Intra** and **Inter**: See Force Presentation under [Config](https://docs.connexcs.com/provider-ratecard/#config) below. 
++ **Billing**: Represents how the call will be billed. The number represents MCD (Minimum Call Duration) divided by the pulse. Each call using this rate card will be rounded up to MCD. If MCD is passed, then the call duration will be rounded up in increments of the pulse. Example: Billing is set to 30/6. A 
++ **Rate Connect**: 
++ **Status**: 
 **Dependent Cards** - These are Customer cards that use the selected rate card. Changes to the Provider Rate Card will be applied to each dependent rate card. 
+
+!!! abstract "Billing Example"
+   The Provider Rate Card MCD is 30, and PUlse is 6, so the Billing is 30/6. 
+   |Call Duration|MCD?|Pulse|Billed Duration|
+   |---|---|---|---|
+   |1 sec|>30|n/a|30 sec|
+   |20 sec|>30|n/a|30 sec|
+   |30 sec|>30|n/a|30 sec|
+   |31 sec|met|6|36 sec|
 
 ### Revisions tab 
 The Revision tab displays up to 8 most recent changes made to a rate card (ex: previous Rule count, Presentation, Currency, date created, Billing). The two most recent revisions will be available as Active or Inactive, the rest will be in Archive state. 
@@ -62,6 +81,8 @@ The Revision tab displays up to 8 most recent changes made to a rate card (ex: p
 2. To make the previous version Active, click Active. This may take a few minutes. 
 
 ### Properties tab
+
+#### Basic
 
 #### Config
 
@@ -76,6 +97,8 @@ The Revision tab displays up to 8 most recent changes made to a rate card (ex: p
 |IntER/IntRA/Indeterminate|1 (NPANXX)|Indeterminate indicates that call is between a USA number and another country|
 
 * **Dialing** - In the US, LRN (Local Routing Number) identifies the switch for a number and is used to determine billing for a call.  When a number is ported from one provider to another, the billing may change based on the new carrier. An LRN dip will correct any pricing discrepancies between the original and new carriers. (ConnexCS owns their own database for this, so the response time is quick.) This helps to reduce billing costs. If the customer wants to do single rates they may not want to do the LRN dip. 
+
++ **ASR+**: 
 
 #### Advanced
 
