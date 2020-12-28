@@ -67,6 +67,7 @@ The preferred method for adding a Rate Card is to import/upload it:
 
 !!! abstract "Billing Example"
    The Provider Rate Card MCD is 30, and PUlse is 6, so the Billing is 30/6. 
+   
    |Call Duration|MCD?|Pulse|Billed Duration|
    |---|---|---|---|
    |1 sec|>30|n/a|30 sec|
