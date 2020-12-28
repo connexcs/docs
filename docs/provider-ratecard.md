@@ -66,14 +66,14 @@ The preferred method for adding a Rate Card is to import/upload it:
 **Dependent Cards** - These are Customer cards that use the selected rate card. Changes to the Provider Rate Card will be applied to each dependent rate card. 
 
 !!! abstract "Billing Example"
-   The Provider Rate Card MCD is 30, and PUlse is 6, so the Billing is 30/6. 
+    The Provider Rate Card MCD is 30, and PUlse is 6, so the Billing is 30/6. 
    
-   |Call Duration|MCD?|Pulse|Billed Duration|
-   |---|---|---|---|
-   |1 sec|>30|n/a|30 sec|
-   |20 sec|>30|n/a|30 sec|
-   |30 sec|>30|n/a|30 sec|
-   |31 sec|met|6|36 sec|
+    |Call Duration|MCD?|Pulse|Billed Duration|
+    |---|---|---|---|
+    |1 sec|>30|n/a|30 sec|
+    |20 sec|>30|n/a|30 sec|
+    |30 sec|>30|n/a|30 sec|
+    |31 sec|met|6|36 sec|
 
 ### Revisions tab 
 The Revision tab displays up to 8 most recent changes made to a rate card (ex: previous Rule count, Presentation, Currency, date created, Billing). The two most recent revisions will be available as Active or Inactive, the rest will be in Archive state. 
