@@ -1,5 +1,5 @@
 # DID
-**Mangement :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: DID
+**Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: DID**
 
 A **Direct Inward Dial (DID)** number is one that exists on the public telephone network. When dialed, the carrier delivers the call to ConnexCS, which then passes it to the customer based on the settings configured here.  can pass this allow inbound calls to bypass a PBX or other routing to connect directly to the destination number. 
 
@@ -43,7 +43,7 @@ For more details on these fields, see [Media in Customer Routing](https://docs.c
     + Strict: This will enforce the proxy engagement. 
     + Relaxed: This will perform best efforts to engage the RTP Proxy, if it can't then the calls will connect directly.
 
-+  **RTP Media Proxy**: This defaults to Auto, but selecting a zone (by continent) is the current recommendation. The following options allow you to set where RTP media server for this route for this customer:
++  **RTP Media Proxy**: This defaults to Auto but selecting a zone (by continent) is the current recommendation. The following options allow you to set where RTP media server for this route for this customer:
     + Auto: Selects the least expensive path between your customer and provider.
     + Direct RTP (no proxy): Bypass ConnexCS, so media flows directly between the customer and carrier. 
     + Zone (recommended): Select any of the regional servers
