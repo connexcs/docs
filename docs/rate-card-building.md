@@ -1,19 +1,19 @@
 # Rate Card Overview
 
-**Rate Cards** are an important ConnexCS feature as this is how most information is organized. There are several terms in ConnexCS that can be used interchangably when talking about Rate Cards. 
+**Rate Cards** are an important ConnexCS feature as this is how most information is organized. Rate Cards define both how customer calls are routed and also how those calls will be billed. When a dialed number comes in, it hits a customer card first. The Customer Card is assoicated with one or more PRovider Cards, each of which will have different means for routing the calls and billing the call. We can also say that Customer Cards are built from Provider Cards. 
+
+There are several terms in ConnexCS that can be used interchangably when talking about Rate Cards. 
+
++ Provider = Carrier
++ Provider Rate Card = Parent Card 
++ Customer Rate Card = Child Rate Card
 
 
-Provider = Carrier
-Provider Rate Card = Parent Card 
-Customer Rate Card = Child Rate Card
 
-Customer Cards are built from Provider Cards. 
-
-!!! tip "Code and Billing Accuracy"
-    It is always sound practice to base rate cards on the information in Provider cards. Code accuracy is perhaps one of the most important of these benefits. In any system with card-based profiles, code accuracy is one of the means to ensure the accuracy of the whole system, and to make all passed or collected data more reliable.
+## Code and Billing Accuracy
+It is always sound practice to base Rate Cards on the information in Provider cards. Code accuracy is perhaps one of the most important of these benefits. In any system with card-based profiles, code accuracy is one of the means to ensure the accuracy of the whole system, and to make all passed or collected data more reliable.
 
 ## Rate Card Compilation Engine
-
 ConnexCS features a comprehensive rate card building engine which can import multiple rate carrier rate cards (Parent Rate cards) in either NPA-NXX or single-cost (column) and output NPA-NXX or single-cost. These can take the minimum, maximum, or average values.
 
 ### Different Length Prefixes
