@@ -1,5 +1,5 @@
 # Packages
-**Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Packages
+**Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Packages**
 
 Use **Packages** to offer predefined products and services to each customer. 
 
