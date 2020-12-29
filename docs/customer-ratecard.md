@@ -122,7 +122,7 @@ To change Revision status:
 
 * **Direction**: Configure the card as Termination (calling out to PSTN) or Origination (DID numbers receiving calls from PSTN). Termination is most common. 
 * **Billing Precision** - Round billing on a card to the specified decimal point (typically set to 4). 
-* **Rounding Method**: Specify how to handle the the n+1 digit (e.g if your card is billed to 4 decimal places, this cares about the 5th digit). For our example: 0.1234**5** (rounded to 4 decimal places):
+* **Rounding Method**: Specify how to handle the n+1 digit (e.g if your card is billed to 4 decimal places, this cares about the 5th digit). For our example: 0.1234**5** (rounded to 4 decimal places):
  
 |Method|Explanation|
 | --- | --- |
