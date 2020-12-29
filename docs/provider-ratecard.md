@@ -30,7 +30,7 @@
 Once created, new **Provider Rate Cards** are completed by either adding rows manually or uploading an existing file. 
 
 1. Click the **`+`** button.
-3. Complete desired fields. (For details, see Provider [Rate Card Settings](https://docs.connexcs.com/provider-ratecard/#provider-rate-card-settings) below.)
+3. Complete desired fields. (For details, see [Provider Rate Card Settings](https://docs.connexcs.com/provider-ratecard/#provider-rate-card-settings) below.)
 4. Click **`Save`**.
 9. From here, you may add the Provider Rate Card manually or perform a Bulk Upload. 
 
@@ -43,7 +43,7 @@ The preferred method for adding a Rate Card is to import/upload it:
 1. Click **Bulk Upload** > **Upload**.
 2. Select the file, typically sent by the Provider in CSV format (if not provided as CSV, must be converted before proceeding).
 4. Right-click on the first row of data and select "Set Start Row".
-5. Right-click and map the columns. It is important to map all fields based on the Rate Card collumns. For example:
+5. Right-click and map the columns. It is important to map all fields based on the Rate Card columns. For example:
     * Col 1 - Prefix
     * Col 2 - Name
     * Col 3 - Cost
@@ -109,11 +109,11 @@ The preferred method for adding a Rate Card is to import/upload it:
 ### Revisions tab 
 The Revision tab displays up to 8 most recent changes made to a rate card. The two most recent revisions will be available as Active or Inactive, the rest will be in Archive state. 
 
-**Change Revision Status**
+To change Revision status:
 
-+ To activate an earlier version from Archive, click `Archive` next to the Revision. This may take a few minutes. 
-+ To make the previous version Active, click Active. This may take a few minutes. 
-+ To set a future date to make a revision Active, use the "Date Live" function by the Revision to set when it will become active. 
++ Click `Archive` next to the Revision to send it to the Archive. This may take a few minutes. 
++ Click `Inactive` to make that version Active. This may take a few minutes. 
++ Use the "Date Live" function by the Revision to set a future date to make the revision Active. 
 
 ### Properties tab
 
@@ -146,7 +146,7 @@ The Revision tab displays up to 8 most recent changes made to a rate card. The t
 
 * **Direction**: Configure the card as Termination (calling out to PSTN) or Origination (DID numbers receiving calls from PSTN). Termination is most common. 
 * **Billing Precision** - Round billing on a card to the specified decimal point (typically set to 4). 
-* **Rounding Method**: Specify how to handle the the n+1 digit (e.g if your card is billed to 4 decimal places, this cares about the 5th digit). For our example: 0.1234**5** (rounded to 4 decimal places):
+* **Rounding Method**: Specify how to handle the n+1 digit (e.g if your card is billed to 4 decimal places, this cares about the 5th digit). For our example: 0.1234**5** (rounded to 4 decimal places):
  
 |Method|Explanation|
 | --- | --- |
