@@ -1,27 +1,38 @@
 # Customer Rate Card
+**Management :material-menu-right: Customer Rate Cards**
 
 **Customer Rate Cards** let you manage the rates for customers, edit customer profiles, and view important information. Before configuring, we suggest you review [Rate Card Overview](https://docs.connexcs.com/rate-card-building/) then "[Rate Card Setup](https://docs.connexcs.com/video-guide/#rate-card-setup)" in the ConnexCS Video Guide. You will also want to have at least one [Provider Rate Card](https://docs.connexcs.com/provider-ratecard/) configured. 
 
+## Overview
+**Name**: Click the name of the provider to see individual rate card and management options. (If a Rate Card name shows a yellow warning or red alert, these will indicate details about the card. It may be stale or have some sort of error.)
+
+**Direction**: Cards are either *Termination* (calling out to PSTN) or *Origination* (DID numbers receiving calls from PSTN). Termination is the most common type of card used by ConnexCS customers. 
+
+**Currency**: The currency for the provider's region (typically USD, EUR, or GBP).
+
+**?**: Lists the Upstream Providers (parent cards), as well as the total Customers associated to the card (set under Customer > Routing), which will be impacted by any changes made to this card. Click on the Provider ID or CUstomer Name to view the configuration. 
+
+**ID**: A system identifier that acts as a placeholder and prevents confusion between similarly named items. 
+
+**Rule Count**: The number of rows in the Rate Card.
+
+**Compile**: Displays which Customer Rate Cards are in sync with the Provider Rate Cards. 
+
+
 ## Customer Rate Card Management 
-The Rate Card Management screen is located under **Management > Rate Card > Customer Rate Cards**.
 
-* **Compile** - Displays which Customer Rate Cards are in sync with the Provider Rate Cards. 
-* **Delete a Customer Rate Card** - Delete a customer rate card by selecting its name from the list and then clicking the trash bin icon. 
-* **`?`** - Shows a list of provider cards associated with the current customer rate card. 
+**Bulk Build**: 
 
-## Email the Rate Card
-This feature allows providers to email rate cards to customers as an attachment. It is a convenient way to send customers official information relevant to their accounts.  
+**Bulk Edit**: 
 
-To email a rate card:
-1. Click **Management** > **Rate Card** > **Customer Rate Card**.
-2. Click the rate card name.
-3. Click the **`Email`** button.
-4. Enter the email address and click **`Send`**.
+* **Delete**: Delete a customer rate card by selecting its name from the list and then clicking the trash bin icon. 
+
+* **`?`**: Shows a list of provider cards associated with the current customer rate card. 
 
 ## Add new Customer Rate Card (internal profit generation) 
 New **Customer Rate Cards** may be added manually or by uploading an existing file. 
 
-1. Select the **`+`** button under **Customer Rate Card**. 
+1. Select the **`+`** button. 
 2. Name the Card, select Carrier(s), Currency.
 3. Optional settings on the Config tab
     * Set **Force Presentation** to IntER/IntRA/Indeterminate
@@ -60,6 +71,15 @@ The preferred method for adding a Rate Card is to import/upload it:
 * **Parent Cards** are the Provider Rate Cards associated to this card
 * **Customers** lists the specific Customers using this card
 * **Profits** displays configured profit rules
+
+## Email the Rate Card
+This feature allows providers to email rate cards to customers as an attachment. It is a convenient way to send customers official information relevant to their accounts.  
+
+To email a rate card:
+1. Click **Management** > **Rate Card** > **Customer Rate Card**.
+2. Click the rate card name.
+3. Click the **`Email`** button.
+4. Enter the email address and click **`Send`**.
 
 ### Revisions tab
 The revision tab shows previous changes made to rate cards. For example: previous Rule Count, Presentation, Currency, Date Created, and Billing.
