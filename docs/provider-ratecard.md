@@ -1,5 +1,5 @@
 # Provider Rate Cards
-**Management :material-menu-right: Provider rate Card**
+**Management :material-menu-right: Provider Rate Cards**
 
 **Provider Rate Cards** determine routing and billing for calls being placed by customers. Before configuring Provider Rate Cards, we suggest you review [Rate Card Overview](https://docs.connexcs.com/rate-card-building/) then [Rate Card Setup](https://docs.connexcs.com/video-guide/#rate-card-setup) in the ConnexCS Video Guide. 
 
@@ -23,15 +23,14 @@
 
 **Bulk Edit** Select one or more Provider Cards and click **`Bulk Edit`** to modify multiple cards for settings such as Force Presentation, Dialing, Direction, and Billing Precision.
 
-**Email** Enter an email address where the CSV file will be sent. 
+**Delete** - Delete a Provider rate card by selecting its name from the list and then clicking the trash bin icon. 
 
-**Audit Log** Review any changes made to the card settings. 
 
 ## Add New Provider Rate Cards
 Once created, new **Provider Rate Cards** are completed by either adding rows manually or uploading an existing file. 
 
 1. Click the **`+`** button.
-3. Complete desired fields. (For details, see Provider Rate Card Settings() below.)
+3. Complete desired fields. (For details, see Provider [Rate Card Settings](https://docs.connexcs.com/provider-ratecard/#provider-rate-card-settings) below.)
 4. Click **`Save`**.
 9. From here, you may add the Provider Rate Card manually or perform a Bulk Upload. 
 
@@ -57,6 +56,11 @@ The preferred method for adding a Rate Card is to import/upload it:
 ## Provider Rate Card Settings
 
 ### Main tab
+**Bulk Upload** Upload the Provider Rate Card using a CSV file, typically provided by the carrier. 
+
+**Email** Enter an email address where the CSV file will be sent. 
+
+**Audit Log** Review any changes made to the card settings. 
 
 #### Functions
 
