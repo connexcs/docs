@@ -18,9 +18,9 @@
 
 **Compile**: Displays which Customer Rate Cards are in sync with the Provider Rate Cards. 
 
-![alt text][compile1] Stale (needs to be compiled)
+    ![alt text][compile1] Stale (needs to be compiled)
 
-![alt text][compile2] In sync
+    ![alt text][compile2] In sync
 
 
 !!! tip "Compile Example"
@@ -135,12 +135,12 @@ To change Revision status:
 * **Billing Precision** - Round billing on a card to the specified decimal point (typically set to 4). 
 * **Rounding Method**: Specify how to handle the n+1 digit (e.g if your card is billed to 4 decimal places, this cares about the 5th digit). For our example: 0.1234**5** (rounded to 4 decimal places):
  
-|Method|Explanation|
-| --- | --- |
-|Up|Rounded up regardless of n+1 digit (0.1235)|
-|Down|Rounded down regardless of n+1 digit (0.1234)|
-|Half-Up|Values 5-9 are rounded up (0.1235)|
-|Half-Down|Values 0-5 are rounded down (0.1234)|
+   |Method|Explanation|
+   | --- | --- |
+   |Up|Rounded up regardless of n+1 digit (0.1235)|
+   |Down|Rounded down regardless of n+1 digit (0.1234)|
+   |Half-Up|Values 5-9 are rounded up (0.1235)|
+   |Half-Down|Values 0-5 are rounded down (0.1234)|
 
 * **Duration Rounding**: The same rounding options but for the call duration.
 * **Public Options**: Choose what can be done with the card information: viewed via HTML (on a web page), download CSV (a spreadsheet), and whether to list the rate card in the customer portal (customer can view cards not currently on their account and select them for use). (Note: API Querying is no longer available.)
