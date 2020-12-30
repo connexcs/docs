@@ -33,11 +33,11 @@
 
 **Bulk Edit**: Edit multiple cards at a time for some Properties settings. 
 
-* **Delete**: Delete a customer rate card by selecting its name from the list and then clicking the trash bin icon. 
+**Delete**: Delete a customer rate card by selecting its name from the list and then clicking the trash bin icon. 
 
 
 ## Add new Customer Rate Card
-Once created, new **Customer Rate Cards** there are several options to complete the card. 
+Once created, there are several options to complete the card. 
 
 1. Click the **`+`** button. 
 3. Complete desired fields. (For details, see [Customer Rate Card Settings](https://docs.connexcs.com/customer-ratecard/#customer-rate-card-settings) below.)
@@ -192,9 +192,6 @@ This tab will only be available if "Manual Ordering" has been enabled under Prop
 [prc-func]: /card/img/prc-func.png "Functions"
 [crc-func]: /card/img/crc-func.png "Customer Functions"
 
-[ccard-11]: /card/img/149.png "ccard-11"
-[customer-card-3]: /card/img/123.png "Customer-card-3"
-[ccard-14]: /card/img/152.png "ccard-14"
-
 [profit]: /card/img/profit.png "Edit Profits"
+
 
