@@ -45,8 +45,6 @@ To set up a routing strategy in a customer's account:
 5. Click **Strategy**, and then the blue **`+`** in the window that follows.
 6. Select a strategy from the drop-down list.  Note that you can also add a prefix in this screen.
 
-    ![alt text][routing-strategy6]
-
 !!! info "Advanced Customer Routing"
     For additional settings under Customer Routing, see [Advanced Routing Configuration](https://staging--connexcs-docs.netlify.app/customer/routing/#advanced-routing-configuration). 
 
@@ -68,5 +66,4 @@ Routing Strategy can also be used to block calls.
 
 [routing-strategy2]: /customer/img/88.png "routing-strategy2"
 [routing-strategy3]: /customer/img/89.png "routing-strategy3"
-[routing-strategy6]: /customer/img/92.png "routing-strategy6"
 [routing-drop]: /customer/img/routing-drop.png "Blocking Calls"

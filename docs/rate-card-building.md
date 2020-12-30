@@ -1,26 +1,32 @@
 # Rate Card Overview
 
-**Rate Cards** are an important ConnexCS feature as this is how most information is organized. There are several terms in ConnexCS that can be used interchangably when talking about Rate Cards. 
+**Rate Cards** are an important ConnexCS feature as this is how most information is organized. Rate Cards define both how customer calls are routed and also how those calls will be billed. When a dialed number comes in, it hits a customer card first. The Customer Card is assoicated with one or more PRovider Cards, each of which will have different means for routing the calls and billing the call. We can also say that Customer Cards are built from Provider Cards. 
 
+!!! tip "Rate Card Terminology"
+    Several terms in ConnexCS can be used interchangeably when talking about Rate Cards:
 
-Provider = Carrier
-Provider Rate Card = Parent Card 
-Customer Rate Card = Child Rate Card
+    + Provider = Carrier
+    + Provider Rate Card = Parent Card 
+    + Customer Rate Card = Child Rate Card
 
-Customer Cards are built from Provider Cards. 
+There are four sections for Rate Cards in the ConnexCS Control Panel:
 
-!!! tip "Code and Billing Accuracy"
-    It is always sound practice to base rate cards on the information in Provider cards. Code accuracy is perhaps one of the most important of these benefits. In any system with card-based profiles, code accuracy is one of the means to ensure the accuracy of the whole system, and to make all passed or collected data more reliable.
++ **Provider Cards** govern routing and rates based on the carrier. Details found under [Provider Rate Cards](https://docs.connexcs.com/provider-ratecard/). 
++ **Customer Cards** are typically derived from Provider Cards, and allow for additional customer management. Details found under [Customer Rate Cards](https://docs.connexcs.com/customer-ratecard/). 
++ **Routing** gives an overview of the routing for customers, and links to configure customers. 
++ **Global Search** provides a way to search for routes and rates based on the Provider and Direction. 
+
+## Code and Billing Accuracy
+It is always sound practice to base Rate Cards on the information in Provider cards. Code accuracy is perhaps one of the most important of these benefits. In any system with card-based profiles, code accuracy is one of the means to ensure the accuracy of the whole system, and to make all passed or collected data more reliable.
 
 ## Rate Card Compilation Engine
-
 ConnexCS features a comprehensive rate card building engine which can import multiple rate carrier rate cards (Parent Rate cards) in either NPA-NXX or single-cost (column) and output NPA-NXX or single-cost. These can take the minimum, maximum, or average values.
 
 ### Different Length Prefixes
 The ConnexCS rate card engine handles arbitrary length prefixes and understands the strict rules required to merge them.
 
 !!! note "Why do I have so many long prefixes?"
-To ensure accuracy, it may be necessary to **normalize** rate cards when combining them. The process makes may add prefixes to make all cards comparable. (These changes are safe, however, and are included to increase granularity; they won't introduce errors.) After compilation, additional scripts are run to make the rate card smaller; however, the primary goal of the engine is accuracy.
+    To ensure accuracy, it may be necessary to **normalize** rate cards when combining them. The process makes may add prefixes to make all cards comparable. (These changes are safe, however, and are included to increase granularity; they won't introduce errors.) After compilation, additional scripts are run to make the rate card smaller; however, the primary goal of the engine is accuracy.
 
 ### Combining
 #### Between Cards

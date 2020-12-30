@@ -73,7 +73,7 @@ From the **Customers** page, you can perform several management operations.
     * **PayPal Email:** The email address associated with the customer's PayPal account. (This is relevant when using the IPN API which allows customers to make payments directly through PayPal instead of using the Customer Portal. See our API documentation for details on [PayPal IPN](https://docs.connexcs.com/setup/integrations/api/#paypal-ipn-integration).) 
     * **Website:** The customer's website address.
     * **Portal Access:**  Users can turn **Portal Access** to `Yes` (on) or `No` (off). Selecting `No` will restrict user access to the Customer Portal. Since everyone uses the portal at this time, this should always be set to `Yes`. 
-    * **Tags**: Use this to add meta-data identifiers to a customer, such as Global Routing.
+    * **Tags**: Use this to add meta-data identifiers to a customer. If a customer is created using a template from [Global Routing](https://docs.connexcs.com/global-routing/), this will be the tag configured in the template.
     * **TOML**: This is a data storage mechanism for configuration, similar to INI files. It allows you to create advanced customization to set values, etc, for Script Forge to reference later. 
     * **Reseller**: Associate the customer to a preset Reseller Group (see [Create Groups](https://docs.connexcs.com/setup/settings/users/#create-groups) for more details.)
     * **Invoice Schedule**: Specify frequency for invoice generation. 

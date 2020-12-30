@@ -12,7 +12,7 @@ To setup **Routing Global** template, first create it then apply it to the custo
 
     ![alt text][routing-global]
 
-4. The **Tag** field is essentially the name of the template
+4. The **Tag** field is essentially the name of the template. When customer routing is setup using the template, the Tag will be visible in Customer > Edit > Config > Tags.
 5. Select **`Save`**.
 
 **Assign the template**

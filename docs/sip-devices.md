@@ -1,13 +1,15 @@
 # SIP Devices
+**Management :material-menu-right: SIP Devices**
 
-ConnexCS supports a wide range of make and models for customer **SIP Devices**. These are managed under **Management** > **SIP Devices**. 
+**SIP Devices** allows providers the ability to set a config file for a wide range of SIP phone make and models. This is typically only used by MSPs (Managed Service Providers). 
 
 ## Add SIP Device
 To add a new SIP device:
 
-2. Under **SIP Devices**, select the **`+`** button.
-3. Select the customer and enter relevant information.
+2. Click the **`+`** button.
 4. Specify the MAC / IMIE / UUID to provision a customer device directly. 
+3. Select the customer and enter any desired information.
+4. At the bottom of the edit screen, there is a **`Edit Device Item`** button which allows you to configure the Line #, Display Name, CLI, and additional settings. 
 4. Click **`Save`**.
 
 ![alt text][sip-device] 
