@@ -4,7 +4,7 @@
 Use **Stats** to view graphs related to calling and call quality statistics and reports. Use the selectors at the top to define the time and date range for the graphs.  
 
 ## Main
-Data realted to SIP signalling and call completion.  
+Data related to SIP signalling and call completion.  
 
 |Graph|Description |
 |:------------|:-------------------------------------------------|
