@@ -18,12 +18,20 @@
 
 **Compile**: Displays which Customer Rate Cards are in sync with the Provider Rate Cards. 
 
+![alt text][compile1] Stale (needs to be compiled)
+
+![alt text][compile2] In sync
+
+
+!!! tip "Compile Example"
+    Provider updates their rates and the customer uploads the new Provider Rate Card into ConnexCS, which increments the revision. All associated customer cards will be out of sync (orange pause icon). To correct this, select all stale cards, then click **`Bulk Build`** to update the new rates and routes. 
+
 
 ## Customer Rate Card Management 
 
-**Bulk Build**: 
+**Bulk Build**: Select multiple cards to perform build. This is typically done after Properties and Profit are setup, or when you need to Compile multiple customers after a rate change. 
 
-**Bulk Edit**: 
+**Bulk Edit**: Edit multiple cards at a time for some Properties settings. 
 
 * **Delete**: Delete a customer rate card by selecting its name from the list and then clicking the trash bin icon. 
 
@@ -96,14 +104,14 @@ To change Revision status:
 
 + **Name (Private)**: The name of the card, this will only be seen within the ConnexCS Control Panel (not visible to end-customers). 
 + **Rate Cards**: Associate the customer to one or more Provider Cards, this will define how customer routing is built as well as how customer prices are derived.
-* **Rate Compacts**: Apply after **Collapse Using**, it calculates the Minimum, Maximum, or Average cost (as selected) based on the Rate Cards selected on the right
+* **Rate Compacts**: Select how to calculate cost using the Minimum, Maximum, or Average cost, based on the routing and cost rules from the Rate Cards selected on the right. This is applied after **Collapse Using**.
 + **Currency**: The card will be billed with this currency. 
 
 #### Config
 
 * **Name (Public)**: (Optional) Allows you to display an alias or pseudonym for the carrier. 
-* **Collapse Using**: Select how you want to merge data with the carrier cards.
-* **Force Presentation**: Determine how many rows to display for rates: 
+* **Collapse Using**: Select how you want to merge rate data from the carrier cards.
+* **Force Presentation**: Determine how many rows to display for rates, this is visible to the customer: 
 
 |Option|Example|Usage|# of Rows in table|
 | --- | --- | --- |---|
@@ -116,11 +124,10 @@ To change Revision status:
 !!! tip "ConnexCS LRN Database"
     ConnexCS maintains an inhouse LRN database. This ensures a quick response time and the rates are update daily. There are no charges associated with using this service, so customers have unlimited dips into the database. 
 
-+ **Strategy**: For Customer Cards associate with multiple Provider Cards, select how calls will be distriubted across the available carriers. 
-    + LCR (Lowest Cost Route) will always select the cheapest route
-    + Random
-    + Round Robin
-    + Reverse LCR
++ **Strategy**: Manage how calls are distributed across Carriers when a Customer Card is associate with multiple Provider Cards. 
+
+!!! info "Routing Strategy"
+    The Strategy selected in the Customer Card will be overwritten by the global Routing Strategy. For description of each Strategy as well as configuration for a comprehensive Routing Strategy, see [Routing Strategy](https://docs.connexcs.com/routing-strategy/) . 
 
 #### Advanced
 
@@ -137,35 +144,50 @@ To change Revision status:
 
 * **Duration Rounding**: The same rounding options but for the call duration.
 * **Public Options**: Choose what can be done with the card information: viewed via HTML (on a web page), download CSV (a spreadsheet), and whether to list the rate card in the customer portal (customer can view cards not currently on their account and select them for use). (Note: API Querying is no longer available.)
-* **Dynamic Routing**: 
+* **Dynamic Routing**: Cards that were created manually (added via upload or edited in-browser) have the option to use Dynamic Routing to select routes for the card, essentially changing the routing without creating new cards. Customer Cards that were generated from the Provider card use predetermined LCR (Least Cost Routing) based on the Parent card.
 * **Default RTP**: If set, and the customer adds the route themselves, then this will be used. Otherwise, this is an unused setting. 
-* **Manual Ordering** - Allow granular ordering of specific prefixes and which carriers to use. 
-* **Reseller**:
++ **Contract**: Specify a default contract that applies to a specific rate card. This only applies if the customer selects the rate card from the Customer Portal, not when it is added using the Dashboard. 
+* **Manual Ordering** - Allow granular ordering of specific prefixes and which carriers to use. See [Manual Ordering](https://docs.connexcs.com/customer-ratecard/#manual-ordering-tab) below for details. 
+* **Reseller**: Select Resellers who will be associated with this card. When the Reseller logs into the Portal, they see the settings from the perspective of a Provider Card, even though they are configured as a Customer Card. 
 
 #### Notes
+**Notes (Private)**: Only visible in the ConnexCS Control Panel (not visible to the Customer).
 
-
+**Notes (Public)**: These are visible to the Customer in their Portal.
 
 ### Profits
-The **Profits** section allows you to configure profit rules.
+The **Profits** section allows you to configure profit rules. This is most useful on cards with a high number of rules.
 
 ![alt text][profit] 
 
-* **Match**
-    * Enter the prefix to match, either a Regular Expression or a standard prefix (numeric only, typically an international country code, not a provider or customer tech prefix). 
-    * Adding an up arrow `^` on the prefix draws all associated prefixes from the provider card. For example, if you enter '49, it will include '491', '492', '4912345', and so on.
-* **Profit Type**
-    * Absolute - actual value charged
-    * Relative - amount entered is added to the cost from the carrier
-    * Percent - cost from the carrier multiplied by this percent
-* **Status** - Use Blocked, here or after importing a Carrier Rate Card, to disable specific prefixes
-* When **MCD (Minimum Call Duration)**, **Pulse**, or **Rounding** are disabled, that setting will select the worst case scenario as defined by the carrier. 
+*click each tab for configuration details*
+
+=== "Basic"
+    
+    * **Match**: Enter the prefix to match, either as a Regular Expression or a standard prefix (numeric only, typically an international country code, not a provider or customer tech prefix). Adding an up arrow `^` on the prefix draws all associated prefixes from the provider card. For example, if you enter '49, it will include '491', '492', '4912345', and so on.
+    * **Profit Type**: Select how to add profit:
+     * Absolute - actual value charged
+     * Relative - amount entered is added to the cost from the carrier
+     * Percent - cost from the carrier multiplied by this percent
+    + **Apply To** - Setup rules to govern how Profit is applied to different types of calls
+    * **Status** - Use Blocked, here or after importing a Carrier Rate Card, to disable specific prefixes. 
+
+
+=== "Config"
+
+    + **Prefix Set**: Select Prefix Sets (configured [here](https://docs.connexcs.com/setup/advanced/prefix-set/) simplify the Profit configuration. 
+    * When **MCD (Minimum Call Duration)**, **Pulse**, or **Rounding** are disabled, that setting will select the worst case scenario as defined by the carrier. 
+    * **Name**: You may choose to add a name to identify the Profit rule 
+    * **Connect Cost**: one-time fee for connecting the call. 
 
 !!! note "Profit Type"
     Using Absolute and Relative can be useful, especially when dealing with large cards and your providers prices change; a single click is all that is needed to regenerate the customer rate cards.
     
 ### Manual Ordering tab
-This tab will only be available if "Manual Ordering" has been enabled under Properties > Advanced. 
+This tab will only be available if "Manual Ordering" has been enabled under Properties > Advanced. For each Prefix you can manually order the Provider Rate Cards for a high degree of control over how calls are routed. 
+
+[compile1]: /card/img/compile1.png "Paused"
+[compile2]: /card/img/compile2.png "Synced"
 
 [prc-func]: /card/img/prc-func.png "Functions"
 [crc-func]: /card/img/crc-func.png "Customer Functions"
