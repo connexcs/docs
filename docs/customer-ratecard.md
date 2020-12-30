@@ -18,9 +18,9 @@
 
 **Compile**: Displays which Customer Rate Cards are in sync with the Provider Rate Cards. 
 
-    ![alt text][compile1] Stale (needs to be compiled)
+![alt text][compile1] Stale (needs to be compiled)
 
-    ![alt text][compile2] In sync
+![alt text][compile2] In sync
 
 
 !!! tip "Compile Example"
