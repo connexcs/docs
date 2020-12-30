@@ -26,7 +26,7 @@ ConnexCS features a comprehensive rate card building engine which can import mul
 The ConnexCS rate card engine handles arbitrary length prefixes and understands the strict rules required to merge them.
 
 !!! note "Why do I have so many long prefixes?"
-To ensure accuracy, it may be necessary to **normalize** rate cards when combining them. The process makes may add prefixes to make all cards comparable. (These changes are safe, however, and are included to increase granularity; they won't introduce errors.) After compilation, additional scripts are run to make the rate card smaller; however, the primary goal of the engine is accuracy.
+    To ensure accuracy, it may be necessary to **normalize** rate cards when combining them. The process makes may add prefixes to make all cards comparable. (These changes are safe, however, and are included to increase granularity; they won't introduce errors.) After compilation, additional scripts are run to make the rate card smaller; however, the primary goal of the engine is accuracy.
 
 ### Combining
 #### Between Cards
