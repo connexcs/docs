@@ -42,7 +42,7 @@ Once created, there are several options to complete the card.
 1. Click the **`+`** button. 
 3. Complete desired fields. (For details, see [Customer Rate Card Settings](https://docs.connexcs.com/customer-ratecard/#customer-rate-card-settings) below.)
 4. Click **`Save`**.
-5. In the new card, select **Profits** then click the **`+`** button. (For details, see [Profits](https://docs.connexcs.com/customer-ratecard/#profits) below).
+5. In the new card, select **Profits** then click the **`+`** button. (For details, see [Profits](https://docs.connexcs.com/customer-ratecard/#functions) under Functions below).
 
 **Option 1: Build from Provider Card**
 This is the preferred method and requires that a Provider Rate Card was selected in Properties > Basic. Click the **`Build`** button and confirm.  A notification will tell you if the build was successful. You may need to refresh the card to see the new settings. 
@@ -85,9 +85,34 @@ The final method for configuring a Customer Rate Card is to import/upload it:
 
 ![alt text][crc-func] 
 
-* **Parent Cards** are the Provider Rate Cards associated to this card
-* **Customers** lists the specific Customers using this card
-* **Profits** displays configured profit rules
+* **Parent Cards** are the Provider Rate Cards associated to this card.
+* **Customers** lists the specific Customers using this card.
+* **Profits** allows you to configure profit rules. This is most useful on cards with a high number of rules.
+
+![alt text][profit] 
+
+*click each tab for configuration details*
+
+=== "Basic"
+    
+    * **Match**: Enter the prefix to match, either as a Regular Expression or a standard prefix (numeric only, typically an international country code, not a provider or customer tech prefix). Adding an up arrow `^` on the prefix draws all associated prefixes from the provider card. For example, if you enter '49, it will include '491', '492', '4912345', and so on.
+    * **Profit Type**: Select how to add profit:
+     * Absolute - actual value charged
+     * Relative - amount entered is added to the cost from the carrier
+     * Percent - cost from the carrier multiplied by this percent
+    + **Apply To** - Setup rules to govern how Profit is applied to different types of calls
+    * **Status** - Use Blocked, here or after importing a Carrier Rate Card, to disable specific prefixes. 
+
+
+=== "Config"
+
+    + **Prefix Set**: Select Prefix Sets (configured [here](https://docs.connexcs.com/setup/advanced/prefix-set/) simplify the Profit configuration. 
+    * When **MCD (Minimum Call Duration)**, **Pulse**, or **Rounding** are disabled, that setting will select the worst case scenario as defined by the carrier. 
+    * **Name**: You may choose to add a name to identify the Profit rule 
+    * **Connect Cost**: one-time fee for connecting the call. 
+
+!!! note "Profit Type"
+    Using Absolute and Relative can be useful, especially when dealing with large cards and your providers prices change; a single click is all that is needed to regenerate the customer rate cards.
 
 ### Revisions tab
 The Revision tab displays up to 8 most recent changes made to a rate card. The two most recent revisions will be available as Active or Inactive, the rest will be in Archive state. 
@@ -155,36 +180,12 @@ To change Revision status:
 
 **Notes (Public)**: These are visible to the Customer in their Portal.
 
-### Profits
-The **Profits** section allows you to configure profit rules. This is most useful on cards with a high number of rules.
-
-![alt text][profit] 
-
-*click each tab for configuration details*
-
-=== "Basic"
-    
-    * **Match**: Enter the prefix to match, either as a Regular Expression or a standard prefix (numeric only, typically an international country code, not a provider or customer tech prefix). Adding an up arrow `^` on the prefix draws all associated prefixes from the provider card. For example, if you enter '49, it will include '491', '492', '4912345', and so on.
-    * **Profit Type**: Select how to add profit:
-     * Absolute - actual value charged
-     * Relative - amount entered is added to the cost from the carrier
-     * Percent - cost from the carrier multiplied by this percent
-    + **Apply To** - Setup rules to govern how Profit is applied to different types of calls
-    * **Status** - Use Blocked, here or after importing a Carrier Rate Card, to disable specific prefixes. 
-
-
-=== "Config"
-
-    + **Prefix Set**: Select Prefix Sets (configured [here](https://docs.connexcs.com/setup/advanced/prefix-set/) simplify the Profit configuration. 
-    * When **MCD (Minimum Call Duration)**, **Pulse**, or **Rounding** are disabled, that setting will select the worst case scenario as defined by the carrier. 
-    * **Name**: You may choose to add a name to identify the Profit rule 
-    * **Connect Cost**: one-time fee for connecting the call. 
-
-!!! note "Profit Type"
-    Using Absolute and Relative can be useful, especially when dealing with large cards and your providers prices change; a single click is all that is needed to regenerate the customer rate cards.
-    
 ### Manual Ordering tab
 This tab will only be available if "Manual Ordering" has been enabled under Properties > Advanced. For each Prefix you can manually order the Provider Rate Cards for a high degree of control over how calls are routed. 
+
+
+    
+
 
 [compile1]: /card/img/compile1.png "Paused"
 [compile2]: /card/img/compile2.png "Synced"
