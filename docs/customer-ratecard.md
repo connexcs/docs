@@ -95,8 +95,8 @@ To change Revision status:
 #### Basic
 
 + **Name (Private)**: The name of the card, this will only be seen within the ConnexCS Control Panel (not visible to end-customers). 
-+ **Rate Cards** - Associate the customer to one or more Provider Cards, this will define how customer routing is built as well as how customer prices are derived.
-* **Rate Compacts** - Apply after **Collapse Using**, it calculates the Minimum, Maximum, or Average cost (as selected) based on the Rate Cards selected on the right
++ **Rate Cards**: Associate the customer to one or more Provider Cards, this will define how customer routing is built as well as how customer prices are derived.
+* **Rate Compacts**: Apply after **Collapse Using**, it calculates the Minimum, Maximum, or Average cost (as selected) based on the Rate Cards selected on the right
 + **Currency**: The card will be billed with this currency. 
 
 #### Config
@@ -116,7 +116,11 @@ To change Revision status:
 !!! tip "ConnexCS LRN Database"
     ConnexCS maintains an inhouse LRN database. This ensures a quick response time and the rates are update daily. There are no charges associated with using this service, so customers have unlimited dips into the database. 
 
-+ **Strategy**: 
++ **Strategy**: For Customer Cards associate with multiple Provider Cards, select how calls will be distriubted across the available carriers. 
+    + LCR (Lowest Cost Route) will always select the cheapest route
+    + Random
+    + Round Robin
+    + Reverse LCR
 
 #### Advanced
 
@@ -135,7 +139,7 @@ To change Revision status:
 * **Public Options**: Choose what can be done with the card information: viewed via HTML (on a web page), download CSV (a spreadsheet), and whether to list the rate card in the customer portal (customer can view cards not currently on their account and select them for use). (Note: API Querying is no longer available.)
 * **Dynamic Routing**: 
 * **Default RTP**: If set, and the customer adds the route themselves, then this will be used. Otherwise, this is an unused setting. 
- * **Manual Ordering** - Allow granular ordering of specific prefixes and which carriers to use. 
+* **Manual Ordering** - Allow granular ordering of specific prefixes and which carriers to use. 
 * **Reseller**:
 
 #### Notes
@@ -159,6 +163,9 @@ The **Profits** section allows you to configure profit rules.
 
 !!! note "Profit Type"
     Using Absolute and Relative can be useful, especially when dealing with large cards and your providers prices change; a single click is all that is needed to regenerate the customer rate cards.
+    
+### Manual Ordering tab
+This tab will only be available if "Manual Ordering" has been enabled under Properties > Advanced. 
 
 [prc-func]: /card/img/prc-func.png "Functions"
 [crc-func]: /card/img/crc-func.png "Customer Functions"
