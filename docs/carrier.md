@@ -53,23 +53,23 @@ From the **Carriers** page, you can perform several management operations.
 
 === "Portal"
 
-    * **Portal URL:** Enter the carrier's portal URL, ex: portal.yourcarrier.com 
-    * **Portal Username:** Add a unique name for the portal.
-    * **Portal Password:** Enter the password used to sign into the carrier portal.
+    * **URL:** Enter the carrier's portal URL, ex: portal.yourcarrier.com 
+    * **Username:** Add a unique name for the portal.
+    * **Password:** Enter the password used to sign into the carrier portal.
     * **Portal Access:** Decides if the current carrier has access to the portal.
 
 === "Timeout"
 
-    * **First Reply Timeout:** Length of time for the carrier to respond after the **first invite**. Default = 30 seconds.
-    * **PDD Timeout:** Length of time for the carrier to respond to the call. Default = 5 seconds.
-    * **Ring Timeout:** Length of time the call may ring before it times out and sends a cancel message. Default = 60 seconds.
+    * **First Reply Timeout:** Length of time for the carrier to respond after the **first invite**, which is the SIP 100 Trying (could be considered a ping message, regardless if the call completes, this should be received quickly). Default = 3 seconds. Recommended = 1 second.
+    * **PDD Timeout:** Length of time for the carrier to respond to the call. If the carrier does not respond in the time selected, then another carrier will be tried. Default = 5 seconds. Recommended = 6 seconds. 
+    * **Ring Timeout:** Length of time to ring, or the SIP 180/183 - Session in Progress. Default = 60 seconds. (The previous 2 timeouts are before carrier selectiong, this timeout is after carrier selection.)
 
 === "Config"    
 
     * **PayPal Email:** Enter the PayPal e-mail associated with the carrier's account.
     * **Website:** Add the carrier's official website.
-    * **P-Asserted-ID:** Select display options for this CLI field
-    * **Consec Fail Backoff:** IF Enabled, when a carrier goes down, the First Reply Timeout is skipped.  
+    * **P-Asserted-ID:** Considered a network level identifier, you can select display options for this CLI field
+    * **Consec Fail Backoff:** When Enabled, if a carrier goes down, only a fraction of calls will be sent to the carrier until the start to complete again (calls are not completely disabled otherwise there is no way to know when the carrier is back up again). the First Reply Timeout is skipped.  
 
 === "Address"
 
