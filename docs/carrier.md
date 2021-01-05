@@ -62,14 +62,19 @@ From the **Carriers** page, you can perform several management operations.
 
     * **First Reply Timeout:** Length of time for the carrier to respond after the **first invite**, which is the SIP 100 Trying (could be considered a ping message, regardless if the call completes, this should be received quickly). Default = 3 seconds. Recommended = 1 second.
     * **PDD Timeout:** Length of time for the carrier to respond to the call. If the carrier does not respond in the time selected, then another carrier will be tried. Default = 5 seconds. Recommended = 6 seconds. 
-    * **Ring Timeout:** Length of time to ring, or the SIP 180/183 - Session in Progress. Default = 60 seconds. (The previous 2 timeouts are before carrier selectiong, this timeout is after carrier selection.)
+    * **Ring Timeout:** Length of time to ring, or the SIP 180/183 - Session in Progress. Default = 60 seconds. (The previous 2 timeouts are before carrier selection, this timeout is after carrier selection.)
 
 === "Config"    
 
     * **PayPal Email:** Enter the PayPal e-mail associated with the carrier's account.
     * **Website:** Add the carrier's official website.
-    * **P-Asserted-ID:** Considered a network level identifier, you can select display options for this CLI field
+    * **P-Asserted-ID:** Considered a network level identifier, you can select how calls to the provider will be handled based on the PA-ID:
+        + Default- call passed to the provider (no manipulation)
+        + Remove- strips PA-ID before passing the call to the provider
+        + If Available- will add PA-ID if one has been provided, otherwise the call will still be allowed
+        + Required- call will not be delivered to the provider without the PA-ID
     * **Consec Fail Backoff:** When Enabled, if a carrier goes down, only a fraction of calls will be sent to the carrier until the start to complete again (calls are not completely disabled otherwise there is no way to know when the carrier is back up again). the First Reply Timeout is skipped.  
+    * **Tags** and **TOML**: not applicable to carriers
 
 === "Address"
 
@@ -77,7 +82,7 @@ From the **Carriers** page, you can perform several management operations.
 
 === "Verification"
 
-    * **Propagate Username:** Used when the customer is sending information in addition to CLI information (ex: Company Name, Username)
+    * **Propagate Username:** Enabling this will retain the display name of the FROM field in the SIP header (ex: Company Name, Username).
         
 
 
