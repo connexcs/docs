@@ -70,7 +70,9 @@ pages:
         - Rate Card Overview: rate-card-building.md
         - Provider Rate Card: provider-ratecard.md
         - Customer Rate Card: customer-ratecard.md
-
+    
+    - Voucher: voucher.md 
+    
     - Routing:
         - Routing Overview: routing.md
         - Routing Strategy: routing-strategy.md
@@ -78,37 +80,20 @@ pages:
         - USA Routing: routing-usa.md
 
     - SIP Devices: sip-devices.md
-        
-    - DID (Origination): did.md
-        
-    - Miscellaneous:
-        - Authentication: authentication.md
-        - Connex Billing: billing.md
-        - Calling Card: calling-card.md
-        - Circuit Test: circuit-test.md
-        - Capacity Limiting: limiting-cps.md
-        - Credit Control: credit-control.md
-        - Do Not Call lists: dnc.md
-        - Files: files.md
-        - Feature List: feature-list.md
-        - Logging: logging.md
-        - Monitoring Guide: monitoring.md
-        - Customer Documents Guide: doc-guide.md
-        - Reporting Problems: reporting-problems.md
-        - Number Manipulation: number-manipulation.md
-        - Specification: spec.md
-        - Status: system-status.md  
-        - Voucher: voucher.md
-        - WebPhone: webphone.md
-        - Changing Language: changing-language.md
-        - Changing Password: changing-password.md
-        - Logging Out: logging-out.md
-
-    - Reports:
+    
+    - File: files.md
+    
+    - Circuit Test: circuit-test.md
+    
+    - Report:
         - Breakout Reports: report.md
-        - Viewing Audit Logs: viewing-audit-logs.md
+        - Viewing Audit Logs: viewing-audit-logs.md    
+        
+    - Status: system-status.md
 
     - Global: global.md
+    
+    - Logging: logging.md
     
     - Class 5:
         - Apps: class5/apps.md
@@ -118,7 +103,7 @@ pages:
         - Voicemail: class5/voicemail.md
         - Phonebook: class5/phonebook.md        
        
-    - Developers:
+    - Developer:
         - Analytics: developers/analytics.md
         - Database: developers/database.md 
         - Form Builder: developers/form-builder.md
@@ -166,6 +151,24 @@ pages:
         - Security: security.md
         - Media Handling: media-handling.md
         - Scaling and Load Balancing: scaling-load-balancing.md
+
+    - Miscellaneous:
+        - Authentication: authentication.md
+        - Connex Billing: billing.md
+        - Calling Card: calling-card.md       
+        - Capacity Limiting: limiting-cps.md
+        - Credit Control: credit-control.md
+        - Do Not Call lists: dnc.md
+        - Feature List: feature-list.md
+        - Monitoring Guide: monitoring.md
+        - Customer Documents Guide: doc-guide.md
+        - Reporting Problems: reporting-problems.md
+        - Number Manipulation: number-manipulation.md
+        - Specification: spec.md
+        - WebPhone: webphone.md
+        - Changing Language: changing-language.md
+        - Changing Password: changing-password.md
+        - Logging Out: logging-out.md
 
   - Customer Portal:
     - Guides: customer-portal/customer-portal.md
