@@ -1,7 +1,7 @@
 # Circuit Test
 **Management :material-menu-right: Circuit Test**
 
-A **Circuit Test** can aid troubleshooting by providing details such as FAS, RTP quality, MOS, release reason, jitter, packet loss percentage, and answer delay measurement. The test initiaties a call on the switch which is routed out to a termination provider, through the PSTN network, then to an origination provider which routes the call back to ConnexCS and a specific DID provisioned on the system. This is considered active testing (the call is actively placed on the network) as opposed to passive testing such as [Stats](https://docs.connexcs.com/customer/stats/) and [Reports](https://docs.connexcs.com/report/). 
+A **Circuit Test** can aid troubleshooting by providing details such as FAS, RTP quality, MOS, release reason, jitter, packet loss percentage, and answer delay measurement. The test initiates a call on the switch which is routed out to a termination provider, through the PSTN network, then to an origination provider which routes the call back to ConnexCS and a specific DID provisioned on the system. This is considered active testing (the call is actively placed on the network) as opposed to passive testing such as [Stats](https://docs.connexcs.com/customer/stats/) and [Reports](https://docs.connexcs.com/report/). 
 
 ## Circuit Test Log
 View a history of completed circuit tests, including the provider the call routed through, FAS and MOS scores. Troubleshooting examples include:
@@ -20,7 +20,7 @@ View a history of completed circuit tests, including the provider the call route
 To create a *one-time Circuit Test*, go to **Management :material-menu-right: Circuit Test :material-menu-right: Log**:
 
 1. Click the **`Run`**.
-1. Select the **Carrier** and assoicated **Rate Card** to test. 
+1. Select the **Carrier** and associated **Rate Card** to test. 
 2. The **CLI** is any number to send the call to. 
 3. **Destination Number** is a DID in ConnexCS. Toggle the button on the right to select from a list of DID currently configured in the account. (See [Customer DID](https://docs.connexcs.com/customer/did/) for configuration.)
 
