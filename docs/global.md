@@ -1,6 +1,6 @@
 # Global
 
-The **Global** section of the ConnexCS Control Panel provides a company-wide overview of some of the same data found under **Management :material-menu-right: Customer** or **Carrier**. This is can be helpful for troubleshooting issues across customers or for situations where you have something like a DID but don't know which is the assoicate customer account. Some of these sections may also be configured and managed from the Global view. 
+The **Global** section of the ConnexCS Control Panel provides an account-wide overview of many of the same sections found under **Management :material-menu-right: Customer** or **Carrier**. This can be helpful for troubleshooting issues across customers or for situations where you are trying to locate the customer of a specific a DID. Some of these sections may also be configured and managed from the Global view. 
 
 ___
 **Alerts**: View all the Alerts across the entire account. 
@@ -11,6 +11,9 @@ Alternate location(s):
 
 * Customer :material-menu-right: [Customer Name] :material-menu-right: Alerts
 * Carrier :material-menu-right: [Carrier Name] :material-menu-right: Alerts
+
+!!! tip "Testing"
+    Click the **`Test`** button (only available here) to simulate the Alert. 
 ___
 **Contacts**: View all Customer Contacts. 
 
@@ -38,7 +41,7 @@ Alternate location(s):
 
 * Customer :material-menu-right: [Customer Name] :material-menu-right: Dialogs
 ___
-**DID**: View list of all DIDs. 
+**DID**: View list of all DIDs, as well as configuration and editing. 
 
 *See [DID](https://docs.connexcs.com/customer/did) for configuration details.*
 
@@ -50,8 +53,8 @@ Alternate location(s):
 Unlike the Customer DID section, the Global DID sections groups numbers as follows:
 
 * **Assigned**: Numbers currently assigned to accounts.
-* **Inventory**: Unallocated numbers.
-* **Provision**: Uses ConnexCS [ScriptForge](https://docs.connexcs.com/developers/scriptforge/) Drivers to assign numbers.
+* **Inventory**: Unassigned numbers.
+* **Provision**: Uses ConnexCS [ScriptForge](https://docs.connexcs.com/developers/scriptforge/) Drivers interface with DID provider APIs so you can allocate new numbers.
 * **Providers List**: Lists all DIDs and associated providers.
 ___
 **IP Authentication**: View all configured IP Authentication. 
@@ -84,6 +87,7 @@ ___
 *There is no configuration or additional documentation for SIP Registration.*
 
 **Inbound Registrations**
+View active registrations (live calls) of desk phones in to ConnexCS. 
 
 * Username: registered user
 * IP: current IP
@@ -93,6 +97,7 @@ ___
 * Send: click `Message` to send a note (select multiple entries if desired)
 
 **Outbound Registrations**
+View active registrations (live calls)  from ConnexCS out.
 
 * ADR: the username and address the ConnexCS switch has connected with
 * Expires: time until expiry
