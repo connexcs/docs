@@ -86,7 +86,7 @@ pages:
     - Circuit Test: circuit-test.md
     
     - Report:
-        - Breakout Reports: report.md
+        - Reports: report.md
         - Viewing Audit Logs: viewing-audit-logs.md    
         
     - Status: system-status.md
