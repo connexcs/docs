@@ -1,13 +1,13 @@
 # Groups
-**Class5** :material-menu-right: **Group**
+**Class5 :material-menu-right: Group**
 
 A **Group**, or Call Queue, allows you to construct a team of individuals to receive calls placed to a specified number or extension based on the routing strategy you configure. (Ex: Create a number that customers can call which routes them to a team of Technical Support Specialists who can fix the technical issues with their laptop.)
 
 ## Group Call Routing strategies
-When you create a **Group**, you specify how calls will be routed to the members of the group using one of the following routing strategies:
+Each **Group** is configured with a routing strategy which determines how calls will be routed to the members of the group:
 
-* **Parallel** - Rings a call to all members of the group, simultaneously. The members' extensions ring for the length of time you specify. You can assign unique timeout timers for individual members.
-* **Sequential** - Routes a call in a sequential order, based on the order under Group Members.  By default, a call is routed to the member with the highest value of the extension number (for example, 5021).
+* **Parallel** - Rings a call to all members of the group simultaneously. The members' extensions ring for the length of time you specify. You can assign unique timeout timers for individual members. Note: this rings all members, even if they are already on a call. 
+* **Sequential** - Routes a call in a sequential order based on the order under Group Members.  By default, a call is routed to the member with the highest value of the extension number (for example, 5021).
     * If the member is busy on another call or does not receive the call for a specific time duration, the call is routed to the member with the second highest value of the extension number (for example, 4097). 
     * If the member with second highest extension number does not respond, the call is routed to the extension with the third highest value (for example, 4095). This process continues until a member receives the call. 
 * **Queue** - Places the caller in a call queue before routing the call to the next available member (whoever has been waiting longest to receive a call). If you use this routing strategy:
@@ -27,13 +27,14 @@ If you want to use audio files for the group, they will need to be uploaded to t
 3. Select the **Customer** from the drop-down list.
 4. Select the **Extension** that callers will use to connect to this group from the drop-down list.
 5. Select the **Group Type** from the drop-down list (see **Group call routing strategies** above).
-6. For **Parallel** and **Sequential** groups will also have a Group Members tab: 
+6. For **Parallel** and **Sequential** strategies, you will need to select **`Save and Stay`** to configure the Group Members tab: 
 
     * Click the **`+`** to add a new member
-    * Set the `Ring Timeout`. This is especially helpful when calling mobile numbers as you can cancel the call before it hits the voicemail, allowing it to roll to the next Group Member.
+    * Click **`Edit`** to select the Destination (External = non-ConnexCS number, Internal = extension, group, DID, etc). 
+    + Set the `Ring Timeout`. This is especially helpful when calling mobile numbers as you can cancel the call before it hits the voicemail, allowing it to roll to the next Group Member.
     * Click Edit to enter an External number of Internal User, Conference, or Group
     
-6. If you select **Queue**, you will have the following additional fields:
+6. For the **Queue** strategy, you will have the following additional fields:
 
 |Field   |Description|
 |--------|----------------------|
@@ -44,3 +45,5 @@ If you want to use audio files for the group, they will need to be uploaded to t
 |`Agent Login Destination` |The extension number an individual must dial to join the group.|
 |`Agent Logout Destination` |The extension number an individual must dial to quit the group.|
 |`Agent Offhook Destination` |An extension number an individual must dial to receive calls immediately after joining the group.|
+
+7. Once all changes have been made, select **`Save`**. 
