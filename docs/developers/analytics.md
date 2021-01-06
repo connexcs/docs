@@ -1,5 +1,5 @@
 # Analytics
-Developer :material-menu-right: Analytics
+**Developer :material-menu-right: Analytics**
 
 The **Analytics** section is a powerful tool for gathering, manipulating, and displaying graphical and tabular data. You can view and modify a wide range of existing reports or create your own based on various data sources within the system as well as outside 3rd party systems. Data can also be run through Script Forge using processing techniques such as mapreduce and preProcess function. 
 
