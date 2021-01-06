@@ -16,7 +16,7 @@ ConnexCS provide a number of libraries specifically for use with ConnexCS. [Deve
 You can include some additional modules (from npm), available for applications and drivers only. Our objective is to keep the sandbox lightweight and only include modules which are necessary:
 
 |Modules|Modules|Modules|Modules|
-|---|---|---|---\
+|---|---|---|---|
 |axios|axios-cookiejar-support|card-validator|csv-parse/lib/sync|
 |data-forge|decompress-zip|elasticemail-webapiclient|fast-csv|
 |fast-toml|ftp|helpscout-2.0|moment|
