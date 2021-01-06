@@ -1,5 +1,5 @@
 # Database
-Developer :material-menu-right: Database
+**Developer :material-menu-right: Database**
 
 The **Database** allows you to create custom persistent data storage. A datastore can be global (used with any customer), or it can be associated with a single customer.
 The **Database** can be used for activities such as checking a list of numbers, caching external lookups, or creating stateful applications that allow users a certain amount of free minutes per month.
