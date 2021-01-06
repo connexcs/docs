@@ -16,6 +16,7 @@ ConnexCS provide a number of libraries specifically for use with ConnexCS. [Deve
 You can include some additional modules (from npm), available for applications and drivers only. Our objective is to keep the sandbox lightweight and only include modules which are necessary:
 
 |Modules|Modules|Modules|Modules|
+|---|---|---|---\
 |axios|axios-cookiejar-support|card-validator|csv-parse/lib/sync|
 |data-forge|decompress-zip|elasticemail-webapiclient|fast-csv|
 |fast-toml|ftp|helpscout-2.0|moment|
@@ -32,17 +33,6 @@ You can find sample scripts in our GitHub repository for [example applications](
 * Class 5 Programmable Voice Applications
 * DID Drivers
 * Time of Day Restrictions
-
-## Usage
-ScriptForge was initially designed to run from the routing-engine only, however it is available for the following scenarios:
-
-**Class 4 Routing (Termination) - (App or Script)**: Management :material-menu-right: Customer :material-menu-right: [Your Customer] :material-menu-right: Routing :material-menu-right: [Your Route] :material-menu-right: ScriptForge
-
-**Class 4 Routing (Origination) - (App or Script)**: Management :material-menu-right: Customer :material-menu-right: [Your Customer] :material-menu-right: DID :material-menu-right: [Your DID] :material-menu-right: ScriptForge
-
-**Class 5 Programmable Voice - (App only)
-
-**Drivers - (App only)**: Currently available for Alert & DID
 
 ## Coding Basics
 Script & Apps typically start in the `main()` function and expects a promise to be returned. The first parameter is typically an object called `data`.
@@ -136,7 +126,7 @@ If script shows an error, add this then run the script again:
 ### Assign the Script to a Customer
 
 1. Select Management :material-menu-right: Customer :material-menu-right: **[customer]** :material-menu-right: Routing
-4. Select a rate card from the table.
+4. Select a Rate Card from Ingress Routing.
 
     ![alt text][s8]  
  
@@ -145,6 +135,23 @@ If script shows an error, add this then run the script again:
 6. Set the **Timeout** to specify how long it will run before timing out
 6. The **Timeout Action** is entered manually and must be formatted as **`[sip response code] [sip response message]`**. 
 6. Click **`Save`**.
+
+### Assign the script to other functions
+ScriptForge was initially designed to run from the routing-engine only, however it is available for the following scenarios:
+
+**Class 4 Routing (Termination) - (App or Script)**: 
+
++ Navigate to Management :material-menu-right: Customer :material-menu-right: [Your Customer] :material-menu-right: Routing :material-menu-right: [Your Route] :material-menu-right: ScriptForge
+
+**Class 4 Routing (Origination) - (App or Script)**: 
+
++ Navigate to Management :material-menu-right: Customer :material-menu-right: [Your Customer] :material-menu-right: DID :material-menu-right: [Your DID] :material-menu-right: ScriptForge
+
+**Class 5 Programmable Voice - (App only)**
+
+**Drivers - (App only)**: 
+
++ Currently available for Alert & DID
  
 [s2]: /developers/img/176.png "s2"
 [s8]: /developers/img/183.png "s8"
