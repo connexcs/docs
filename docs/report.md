@@ -3,6 +3,9 @@
 
 View and download **Reports** which provide extensive insights on historical data such as by Customers or Provider routes, DTMF Cost, and Per Number metrics. The ability to Schedule reports adds automation for frequent data requirements.  
 
+!!! tip "Creating additional reports"
+    The Develop > [Analytics](https://docs.connexcs.com/developers/analytics/) section of ConnexCS allows providers to manage these reports and create new reports.
+
 ## Breakout
 The **Breakout** report lists account customers with associated profits, and relevant data such as how much each customer costs, how much they have been charged, ASR and ACD, and so on. The information is here is from processed CDR and so is considered "billing accurate", meaning this data can be used to bill customers. 
 
