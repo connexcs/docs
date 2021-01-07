@@ -20,7 +20,7 @@ Step 2: Setup Report History
 
 1. Click the **`+`** button under **Report History**.
 
-   ![alt text][system-status-3]
+    ![alt text][system-status-3]
 
 1. Enter the **Title** of the Report
 2. Select the **Status** based on how much is known about the issue.
