@@ -1,5 +1,5 @@
 # Analytics
-Developer :material-menu-right: Analytics
+**Developer :material-menu-right: Analytics**
 
 The **Analytics** section is a powerful tool for gathering, manipulating, and displaying graphical and tabular data. You can view and modify a wide range of existing reports or create your own based on various data sources within the system as well as outside 3rd party systems. Data can also be run through Script Forge using processing techniques such as mapreduce and preProcess function. 
 
@@ -11,7 +11,8 @@ You can create custom reports to help identify your own key metrics. Here are so
 * **CLI Stats** - Display stats per CLI
 * **ISO Code Stats** - Display stats ISO Country.
 
-## Field Explanations
+## Create new Analytics
+Click the **`+`** to configure the following fields:
 
 **Path** - Select where the data will be displayed.
 
@@ -25,7 +26,7 @@ You can create custom reports to help identify your own key metrics. Here are so
 
 **Title & Subtitle** - Displays title and subtitle information on the rendered graph / table.
 
-**Output** - Graph or Table choose how you want to output to be rendered. You can select both which will of course display a graph and a table together.
+**Output** - Select to render data in either Graph or Table, or both together.
 
 **Graph Type** - The following graph types are supported.
 
@@ -49,7 +50,7 @@ You can create custom reports to help identify your own key metrics. Here are so
 |Breakout|Financially Accurate data available with limited query vectors.|
 |ScriptForge|Custom ScriptForge datasource, can be used to combine other data sources or even import external data in real-time.|
 
-**Fields** - What fields should be displayed in the Graph / Table. This changes per data source.
+**Fields** - What fields should be displayed in the Graph / Table. This changes per above data source.
 
 **Start Offset** - When there is NOT a data-selector on the page, the start offset will represent how far in the past the query will include.
 
@@ -59,13 +60,13 @@ You can create custom reports to help identify your own key metrics. Here are so
 |---|---|
 |AutoAutomatically choose an appropriate temporal resolution.|
 |Collate|Collapse all the temporal data (EX: When selecting ACD, instead of having an axis for date/time, it will just display a single scalar value).|
-|Others|Choose a resolution you wish to group the data into (EX: Selecting hour will display a unique value for each hour).|
+|Others|Choose a resolution you wish to group the data into (Ex: Selecting hour will display a unique value for each hour).|
 
-**Collate / Group** - Choose how the data is to be grouped together. (EX:: Selecting "Customer" would mean that you would get a unique value for each customer.
+**Collate / Group** - Choose how the data is to be grouped together. (Ex: Selecting "Customer" would mean that you would get a unique value for each customer.)
 
 **Limit** - How much collated data you wish to be displayed. Be careful not to include too many values.
 
-**Order By** - Which column you wish to order the data by, this is useful in combination with limit, for example you can display the top 10 customers with the worst ACD.
+**Order By** - Which column you wish to order the data by, this is useful in combination with limit. Ex: display the top 10 customers with the worst ACD.
 
 **Width** - When the graph is rendered on a page with multiple graphs, choose how much of the page the graph takes up.
 

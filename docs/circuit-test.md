@@ -1,33 +1,50 @@
 # Circuit Test
+**Management :material-menu-right: Circuit Test**
 
-A **Circuit Test** can aid troubleshooting by providing  details such as FAS, RTP quality, MOS, release reason, jitter, packet loss percentage, and answer delay measurement. This is done by initiating a call in the switch using a predefined DID. The call routes to a termination provider, out through the PSTN network and then back to the DID.  At this point, it checks DTMF, CLI, FAS, and MOS.
+A **Circuit Test** can aid troubleshooting by providing details such as FAS, RTP quality, MOS, release reason, jitter, packet loss percentage, and answer delay measurement. The test initiates a call on the switch which is routed out to a termination provider, through the PSTN network, then to an origination provider which routes the call back to ConnexCS and a specific DID provisioned on the system. This is considered active testing (the call is actively placed on the network) as opposed to passive testing such as [Stats](https://docs.connexcs.com/customer/stats/) and [Reports](https://docs.connexcs.com/report/). 
 
-## Configure a Circuit Test
+## Circuit Test Log
+View a history of completed circuit tests, including the provider the call routed through, FAS and MOS scores. Troubleshooting examples include:
 
-### Setup DID 
++ View FAS and FAS Time
++ View MOS to determine call quality
++ Compare CLI IN (from customer) and OUT (sent to provider) to ensure parameter rewrite is correct
++ Audio Engagement Delay (includes PDD, ring time and other metrics) can demonstrate how long it takes for a call to be answered
 
-Navigate to **Global** > **DID** the click on the **`+`**.
-2. **Basic** - Enter the Customer and Provider information, and the DID number
-3. **Destination** - Select a destination to circuit test.
-4. **Media** - Select the RTP Proxy & Media proxy (details found in the [Media section of Routing](https://docs.connexcs.com/customer/routing/#media) article), Timeouts, and Max Duration (default value is 3600 seconds).
-6. Click **`Save`**.
+### View Modification
++ **Columns** pop out on the right allows you to add/remove options, change column order, in some cases you can create row groups and aggregate values for pivot functionality
++ **Filters** pop out on the right allows you to filter some of your data
++ Adjust Column ordering
 
-### Configure the route
-Navigate to **Setup** > **Settings** > **Options**. Edit the following parameters:
+### Run Circuit Test
+To create a *one-time Circuit Test*, go to **Management :material-menu-right: Circuit Test :material-menu-right: Log**:
 
-* **Origination Ingress Address** - Enter the origination ingress IP, and **`Save`**.
-* **Termination Ingress Address** - Enter the termination ingress IP, and **`Save`**.
-* **Circuit Test User** - Select the customer account, and **`Save`**.
+1. Click the **`Run`**.
+1. Select the **Carrier** and associated **Rate Card** to test. 
+2. The **CLI** is any number to send the call to. 
+3. **Destination Number** is a DID in ConnexCS. Toggle the button on the right to select from a list of DID currently configured in the account. (See [Customer DID](https://docs.connexcs.com/customer/did/) for configuration.)
 
-![alt text][circuittest]
+## Schedule
+To schedule *recurring Circuit Test*, go to **Management :material-menu-right: Circuit Test :material-menu-right: Schedule**, Click the **`+`** button.
 
-## Run the Circuit Test
-Navigate to **Management** > **Circuit Test**
+*click each tab to view configuration details*:
 
-### Execute the Circuit Test
-Under **Log**, select **`Run`** to execute the test. If the log entry doesn't appear, you can try refreshing the list. 
+=== "Basic"
 
-### Schedule the Circuit Test
-Under **Schedule**, click the **`+`** to configure a time for the Circuit Test to be run. Note, most fields under Schedule allow for multiple selections. Ex: you can schedule the test for multiple days of the week. 
+    + Select the **Carrier** and **Rate Card** to test.
+    + Enter the **CLI** to send the call to.
+    + The **Destination Number** is a DID configured on the system. Toggle the button to select from an available DID. 
+    
+=== "Schedule"
+
+    + Enter a **Name** for the circuit test.
+    + **Minutes** indicates the minute of the hour the test will run. 
+    + **Hours** indicates the hour of the day the test will run (this is denoted in a 24 hour clock, ex: 2:00pm is 14). 
+    + Select which the *Day of the Week* to run the test
+
+When the scheduled test run, the results will be visible on the "Log" tab. 
+
+!!! note "Multiple selections allowed"
+    Most fields under Schedule allow for multiple selections. Ex: you can schedule the test for multiple days of the week. 
 
 [circuittest]: /misc/img/circuittest.png "Circuit Test"

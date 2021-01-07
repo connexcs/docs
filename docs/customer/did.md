@@ -1,7 +1,7 @@
 # DID
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: DID**
 
-A **Direct Inward Dial (DID)** number is one that exists on the public telephone network. When dialed, the carrier delivers the call to ConnexCS, which then passes it to the customer based on the settings configured here.  can pass this allow inbound calls to bypass a PBX or other routing to connect directly to the destination number. 
+A **Direct Inward Dial (DID)** number is one that exists on the public telephone network. When dialed, the carrier delivers the call to ConnexCS, which then passes it to the customer based on the settings configured here, allowing inbound calls to bypass a PBX or other routing to connect directly to the destination number. 
 
 Create and edit **DID (Direct Inward Dial)** parameters within the individual customer cards, either using bulk uploads and edits or manually. 
 
@@ -14,6 +14,7 @@ Create and edit **DID (Direct Inward Dial)** parameters within the individual cu
 
 
 ## Configure DID
+Click the **`+`** to configure a new DID:
 
 ### Basic
 + **Customer**: Assign the number to the customer.

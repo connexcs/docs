@@ -1,7 +1,7 @@
 # IVR
 **Class5** :material-menu-right: **IVR**
 
-An **Interactive Voice Response (IVR)** allows callers to dial in and selection an extension for a specific department or group within the company. These extensions are routed to different SIP addresses, PSTN numbers, internal extension numbers, other IVRs, conference bridges, groups, and Class 5 applications, based on the key they press. When you create an **IVR**, you specify a 1:1 mapping for all the possible keys on the keypad. 
+An **Interactive Voice Response (IVR)**, or phone tree, allows callers to dial in and select an extension for a specific department or group within the company. These extensions can be routed to different SIP addresses, PSTN numbers, internal extension numbers, other IVRs, conference bridges, groups, and Class 5 applications, based on the key they press. When you create an **IVR**, you specify a 1:1 mapping for all the possible keys on the keypad. 
     
 ## IVR Planning 
 Complete the following prior to configuring the **IVR**
@@ -13,13 +13,12 @@ Complete the following prior to configuring the **IVR**
 ## Create an IVR
 
 1. Click the `+` icon (located at the top-right corner of the page).
-2. Configure the **Name** for the IVR.
+2. Enter the **Name** for the IVR.
 3. Select the **Customer** from drop-down list.
 4. Enter the **Extension** that callers must call to start interacting with the IVR.
-5. Select the **Audio File** from the drop-down list (such as the one created in first step above) which plays the greeting and explains the keypad options. 
-6. Once these fields are completed, you will be able to edit each key- numbers 0 to 9, '\*' (asterisk) and '#' (hash) - and configure what happens when the caller presses it.
-7. Click `Edit` next to each key- numbers 0 to 9, '\*' (asterisk) and '#' (hash) - to edit the Destination. (`Edit` is not available until all required fields above are completed.)
+5. Select the **Audio File** from the drop-down list which plays the greeting and explains the keypad options. This could be the file created in first step above or one preloaded into [Files](https://docs.connexcs.com/files/).
+6. Once these fields are completed, select **`Edit`** for each key- numbers 0 to 9, '\*' (asterisk) and '#' (hash) - to configure the Destination (what happens when the caller presses they key). (`Edit` is not available until all required fields above are completed.)
     
-    *   **External** - PSTN numbers that are outside your Class 5 network.
-    *   **Internal** - Use extension numbers, IVRs, conference bridges, and groups.
+    *   **External** - PSTN numbers that are outside your Class 5 network (ex: someone's mobile).
+    *   **Internal** - A number or resource on the ConnexCS platform (ex: extension numbers, IVRs, conference bridges, and groups).
    

@@ -1,36 +1,26 @@
 # ScriptForge 
-Developer :material-menu-right: ScriptForge
+**Developer :material-menu-right: ScriptForge**
 
 ConnexCS **ScriptForge** allows you to write ECMAScript 2015 (ES6) (aka JavaScript) which is executed in a secure sandbox on the server. It is designed to be low latency and high throughput.
 
-It is made for scripts and small applications. Any larger applications are best executed on external hardware with Scriptforge intermediating it.
+It is made for scripts and small applications. Any larger applications are best executed on external hardware with ScriptForge intermediating it.
 
-A fair-usage policy applies and your script may not function as expected if there is unnecessary resource utilisation or if there are any attempts to break the sandbox.
+A fair-usage policy applies, and your script may not function as expected if there is unnecessary resource utilisation or if there are any attempts to break the sandbox.
 
-It is design to work as FaaS (Functions as a Service) and auto-scaling your application is handled by our redundant infrastructure
+It is designed to work as FaaS (Functions as a Service) and auto-scaling your application is handled by our redundant infrastructure
 
 ## Developer Documentation
-ConnexCS provide a number of libraries specifically for use with ConnexCS. [Developer Documentation is available here](https://scriptforge-docs.connexcs.com). 
+ConnexCS provide a number of libraries specifically for use with ConnexCS. [Developer API Documentation is available here](https://scriptforge-docs.connexcs.com). 
 
 ### Available Modules
 You can include some additional modules (from npm), available for applications and drivers only. Our objective is to keep the sandbox lightweight and only include modules which are necessary:
 
-* axios
-* axios-cookiejar-support
-* card-validator
-* csv-parse/lib/sync
-* data-forge
-* decompress-zip
-* elasticemail-webapiclient
-* fast-csv
-* fast-toml
-* ftp
-* helpscout-2.0
-* moment
-* rss-parser
-* soap
-* stripe
-* tough-cookie
+|Modules||||
+|---|---|---|---|
+|axios|axios-cookiejar-support|card-validator|csv-parse/lib/sync|
+|data-forge|decompress-zip|elasticemail-webapiclient|fast-csv|
+|fast-toml|ftp|helpscout-2.0|moment|
+|rss-parser|soap|stripe|tough-cookie|
 
 ### Sample Scripts
 You can find sample scripts in our GitHub repository for [example applications](https://github.com/connexcs/scriptforge-examples/). A few uses cases are included below, however with a Turing Complete language, the possibilities are endless.
@@ -43,27 +33,6 @@ You can find sample scripts in our GitHub repository for [example applications](
 * Class 5 Programmable Voice Applications
 * DID Drivers
 * Time of Day Restrictions
-
-## Usage
-ScriptForge was initially designed to run from the routing-engine only, however it is available for the following scenarios:
-
-|Scenario|Usage|
-|---|---|
-|Class 4 Routing (Termination) - (App or Script)|Management :material-menu-right: Customer :material-menu-right: [Your Customer] :material-menu-right: Routing :material-menu-right: [Your Route] :material-menu-right: ScriptForge|
-|Class 4 Routing (Origination) - (App or Script)|Management :material-menu-right: Customer :material-menu-right: [Your Customer] :material-menu-right: DID :material-menu-right: [Your DID] :material-menu-right: ScriptForge|
-|Class 5 Programmable Voice - (App only)|
-|Drivers - (App only)|Currently available for Alert & DID|
-
-## Execution Types
-
-### Script
-This is the fastest way to execute custom code and is "synchronous" execution. This should mainly be used for manipulations or calculations. It can't use libraries or work with Promises.
-
-### App
-Feature rich applications which can include a preset (whitelist) of available modules, the penalty of the extra features is a slightly higher latency.
-
-### Driver
-A driver works as an intermediary between ConnexCS and any external system. You can write drivers to bridge the ConnexCS DID provisioning system to a provider of your choice or build more complicated alerts.
 
 ## Coding Basics
 Script & Apps typically start in the `main()` function and expects a promise to be returned. The first parameter is typically an object called `data`.
@@ -132,10 +101,15 @@ module.export = {
 ## Configuration
 
 ### Build Script
+1. Add a script by clicking **`+`**.
+2. **Name** the script.
+3. Select the **Type**:
 
-1. Select Developer :material-menu-right: ScriptForge
-2. Add a script by clicking **`+`**.
-3. Fill in the script's name and type, then click **`Save`**.
+    + Script: This is the fastest way to execute custom code and is "synchronous" execution. This should mainly be used for manipulations or calculations. It can't use libraries or work with Promises.
+    + App: Feature rich applications which can include a preset (whitelist) of available modules, the penalty of the extra features is a slightly higher latency. 
+    + Driver: A driver works as an intermediary between ConnexCS and any external system. You can write drivers to bridge the ConnexCS DID provisioning system to a provider of your choice or build more complicated alerts.
+
+3. Click **`Save`**.
 
     ![alt text][s2]   
     
@@ -152,7 +126,7 @@ If script shows an error, add this then run the script again:
 ### Assign the Script to a Customer
 
 1. Select Management :material-menu-right: Customer :material-menu-right: **[customer]** :material-menu-right: Routing
-4. Select a rate card from the table.
+4. Select a Rate Card from Ingress Routing.
 
     ![alt text][s8]  
  
@@ -162,6 +136,22 @@ If script shows an error, add this then run the script again:
 6. The **Timeout Action** is entered manually and must be formatted as **`[sip response code] [sip response message]`**. 
 6. Click **`Save`**.
 
+### Assign the script to other functions
+ScriptForge was initially designed to run from the routing-engine only, however it is available for the following scenarios:
+
+**Class 4 Routing (Termination) - (App or Script)**: 
+
++ Navigate to Management :material-menu-right: Customer :material-menu-right: [Your Customer] :material-menu-right: Routing :material-menu-right: [Your Route] :material-menu-right: ScriptForge
+
+**Class 4 Routing (Origination) - (App or Script)**: 
+
++ Navigate to Management :material-menu-right: Customer :material-menu-right: [Your Customer] :material-menu-right: DID :material-menu-right: [Your DID] :material-menu-right: ScriptForge
+
+**Class 5 Programmable Voice - (App only)**
+
+**Drivers - (App only)**: 
+
++ Currently available for Alert & DID
  
 [s2]: /developers/img/176.png "s2"
 [s8]: /developers/img/183.png "s8"
