@@ -1,5 +1,5 @@
 # Status
-**Management :material-menu-right: Status
+**Management :material-menu-right: Status**
 
 Use **Status** to create Status Pages for your customer portals, typically for reported outages or issues. This automates communications of downtime and system outages to your customers. 
 
@@ -20,7 +20,7 @@ Step 2: Setup Report History
 
 1. Click the **`+`** button under **Report History**.
 
-   ![alt text][system-status-3]
+    ![alt text][system-status-3]
 
 1. Enter the **Title** of the Report
 2. Select the **Status** based on how much is known about the issue.

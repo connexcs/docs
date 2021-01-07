@@ -1,5 +1,7 @@
-# Files
-The **File** section can store a variety of files, including (but not limited to) audio files for PBX, rate cards, or a logo for your portal. These files are found under **`Management`** > **`File`**.
+# File
+**Management :material-menu-right: File**
+
+The **File** section can store a variety of files, including (but not limited to) audio files for PBX, rate cards, or a logo for your portal. 
 
 ## Add new file(s)
 
