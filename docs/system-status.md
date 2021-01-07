@@ -1,5 +1,5 @@
 # Status
-**Management :material-menu-right: Status
+**Management :material-menu-right: Status**
 
 Use **Status** to create Status Pages for your customer portals, typically for reported outages or issues. This automates communications of downtime and system outages to your customers. 
 
