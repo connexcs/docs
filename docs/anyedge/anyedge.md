@@ -20,7 +20,7 @@ Click the **`+`** to set the following:
 + **Secondary Attempts**: (not useful for less than 3 servers) Set the number of attempts before going to a third zone 
 
 ### AnyEdge Domain
-After AnyEdge configuration is complete, click the **`+`** next to Domains to configure a specific domain with same settings as above: customer call distribution, CPS, Validation, and so on. There is also an ability to provide additional TLS configuraiton for SIP protection.
+After AnyEdge configuration is complete, click the **`+`** next to Domains to configure a specific domain with same settings as above: customer call distribution, CPS, Validation, and so on. There is also an ability to provide additional TLS configuration for SIP protection.
 
 ### AnyEdge Destinations
 Click the **`+`** to specify the Destination IP, and one or more Limit (Primary) and Backup (Secondary) Zones.
