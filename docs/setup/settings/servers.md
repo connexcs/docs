@@ -23,7 +23,8 @@ The **Servers** section provides and overview of deployed servers:
 ## Clusters
 To create a **Cluster**, click the **`Cluster`** button, then click **`+`** to name and create a cluster. When a new server is deployed, there will be an option to select one of the configured Clusters. 
 
-!!! info "Benefits of clustering" inline end 
+!!! info inline end 
+    Benefits of clustering
     1. Better control over CPS and Channel load-balancing: If you have multiple servers in load balance configuration, it is recommended "Cluster" is enabled. (Ex: if you set CPS to 10, clustered servers will allow 10 CPS total, un-clustered servers will allow 10 CPS per server, potentially going over the allowed CPS with a particular carrier.)
     2. Shared User Location Information: Un-Clustered servers will have a difficult time 
 
