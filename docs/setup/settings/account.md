@@ -37,7 +37,7 @@ Click the **`Test Email`** or **`Test SMS`** buttons to send a test messages via
 ## Packages
 Below the Company information is a listing of the applied ConnexCS packages, along with Quantity, Name (of the package), and the Cost (in per minute changes). 
 
-Select **Enable Call Recording** to add to the account. This will need to be enables on individual accounts afterward.
+Select **Enable Call Recording** to add to the account. This will need to be enabled on individual accounts afterward.
 
    ![alt text][call-recording]
 
