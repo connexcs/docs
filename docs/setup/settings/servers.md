@@ -1,17 +1,41 @@
 # Servers
-Setup :material-menu-right: Settings :material-menu-right: Servers
+**Setup :material-menu-right: Settings :material-menu-right: Servers**
 
 The **Servers** section displays current servers and allows providers to configure servers, including functions such as load balancing. 
 
 ## Deploy a server
-Make sure that you have completed the [Getting Started](https://docs.connexcs.com/getting-started/) checklist in order to be able to deploy your first server. After which you will be able to choose a server and and a zone to deploy your server into. Delivery is within 5 minutes.
+Before deploying your first server, make sure that you have completed the [Getting Started](https://docs.connexcs.com/getting-started/) checklist. Once this is complete, you will be able to choose a zone and server for deployment. Delivery is within 5 minutes.
+
+!!! note "Available Balance needed for server deployment"
+    To deploy a server, you must have $20 (+ $20 X other servers in your account) available balance.
+
+## Server List
+The **Servers** section provides and overview of deployed servers:
+
++ **IP**: The unique server IP address. To view SIP and ICMP latency, hover over the status icon next to the server IP. 
++ **Type**: Either **Dispatcher** (Load balancer) or **Switch** (cluster member)
++ **Cluster**: Indicates which cluster the server belongs to. 
++ **Channels**: How many of available active calls are in use.
++ **CPS**: Maximum calls per second. 
++ **Expires**: When the test period ends and the server will be disabled. 
++ **Status**: Indicates if the server will be able to process calls. (Ex: if account has not been paid, the Status will list the server as "Expired")
+
+## Clusters
+To create a **Cluster**, click the **`Cluster`** button, then click **`+`** to name and create a cluster. When a new server is deployed, there will be an option to select one of the configured Clusters. 
+
+!!! info "Benefits of clustering" inline end 
+    1. Better control over CPS and Channel load-balancing: If you have multiple servers in load balance configuration, it is recommended "Cluster" is enabled. (Ex: if you set CPS to 10, clustered servers will allow 10 CPS total, un-clustered servers will allow 10 CPS per server, potentially going over the allowed CPS with a particular carrier.)
+    2. Shared User Location Information: Un-Clustered servers will have a difficult time 
+
+## RTP Servers
+RTP Servers handle streaming media. To view RTP Servers in your system:
+
+1. Click the **`RTP Servers`** button.
+2. A list of your current RTP servers will appear, with columns for IP address, aliases, and zones.
+3. The **`Refresh`** button will reload the page to show the most current changes, if any.
 
 ## Server Details
 Click the server's IP address to view details. 
-
-**Dispatcher** - Load balancer
-
-**Switch** - Cluster member
 
 |Field|Switch type|Description|
 |:----------------:|---|---|
@@ -45,16 +69,6 @@ Click the **`Actions`** button to open the **Server Actions Menu**. The followin
 !!! warning "Impact to Services"
     These actions occur real time and performing any of them could affect services. We recommend that you avoid using them unless the results are understood.
 
-## Clusters
-To create a Clusters, click the **`Cluster`** button, then click **`+`** to name and create a cluster. When a new server is deployed, there will be an option to select one of the clusters. 
-
-## RTP Servers
-RTP Servers handle streaming media. To view RTP Servers in your system:
-
-1. Click the **`RTP Servers`** button.
-2. A list of your current RTP servers will appear, with columns for IP address, aliases, and zones.
-3. The **`Refresh`** button will reload the page to show the most current changes, if any.
-
 ## Server Reactivation
 
 !!! warning 
@@ -66,10 +80,6 @@ To reactivate a server:
 2. Click **Reactivate** to activate your server.
 
    ![alt text][server-6]
-
-
-!!! note "Available Balance needed for server deployment"
-    To deploy a server, you must have $20 (+ $20 X other servers in your account) available balance.
 
 [rtpserver]: /misc/img/rtpservers.png "RTP Server"
 [server-6]: /misc/img/244.png "server-6"
