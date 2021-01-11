@@ -12,7 +12,7 @@ To add or edit Company information, click the blue pencil icon. This allows you 
 + Billing Method (toggle between **per channel** and **per minute** billing by clicking on the blue text, this may be changed once per 30 days)
 + Contact Information for the account
 
-    ![alt text][accountprofile]
+   ![alt text][accountprofile]
 
 !!! note "Additional Configuration"
     To modify any other settings, please contact Technical Support. 
@@ -29,7 +29,7 @@ To add or edit SMTP information, click the blue pencil icon to add:
 
 Click the **`Test Email`** or **`Test SMS`** buttons to send a test messages via each method. The buttons are found to the far right of the SMTP details window.
 
-    ![alt text][smtp]
+   ![alt text][smtp]
 
 !!! tip "TLS SMTP"
     To use TLS SMTP, set the Server format as "mail.yourdomain.com:465". If not specified, the system will use the default SMTP port 25. 
@@ -39,12 +39,12 @@ Below the Company information is a listing of the applied ConnexCS packages, alo
 
 Select **Enable Call Recording** to add to the account. This will need to be enables on individual accounts afterward.
 
-    ![alt text][call-recording]
+   ![alt text][call-recording]
 
 ## ConnexCS Service Agreement
 To view the full ConnexCS Service Agreement, click the orange banner at the bottom:
 
-    ![alt text][service-agreement]
+   ![alt text][service-agreement]
 
 
 [accountprofile]: /setup/img/account-profile.png "Account Profile"
