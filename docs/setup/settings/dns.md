@@ -1,7 +1,7 @@
 # DNS
 **Setup :material-menu-right: Settings :material-menu-right: DNS**
 
-ConnexCS provides a managed **DNS (Domain Name System)** platform geared towards VoIP delivery so low TTL's wont overload your DNS provider. We provide a white-labeled `.sip.direct` domain name which you can use directly or setup as a `CNAME`.
+ConnexCS provides a managed **DNS (Domain Name System)** platform geared towards VoIP delivery so low TTL's wont overload your DNS provider. We provide a white-labeled `.sip.direct` domain name which you can use directly or setup as a `CNAME`. 
 
 !!! tip "DNS on Day 1"
     When you setup your first customer or provider interconnect, you should try wherever possible to setup DNS. This means at any point in the future if you deploy a new server, scale up/down, migrate towards or away, you are interupting your customer as little as possible.
@@ -13,18 +13,23 @@ Setting up **DNS** allows you to load balance multiple SIP servers without a loa
 
     ![alt text][dns]
 
-2. Enter the **Domain** name. 
-3. **(TLD) Top Level Domain** is set to sip.direct.
-4. Check the records against the server IP
-5. Setup **Anycast Mirroring** if desired
+2. Enter the desired **Domain** for your company. 
+3. The **(TLD) Top Level Domain** `sip.direct` will be used to create .
+4. Check the records against the server IP.
+5. Select the distribution method with either "A Record' or 'SRV' tiers. 
+6. Select **Anycast Mirroring** if desired.
 7. Click **`Save`**.
 
-### A records
-An `A` record is the most common record in DNS and simply points a domain such as `abc.com` to `13.224.230.90`. When selecting multiple `A` records they are offered to the client performing the query in a round-robin fashion. This is the simplest form of load balancing.
+Example:
+ABCtelco.com is the company
+The DNS then becomes abctelco.sip.direct
+SEtup the CNAME for sip.abctelco.com to point to abctelco.sip.direct, with TTL of 3600 (seconds)
+When a call comes in for sip.abctelco.com, it will be forwarded to the sip.direct address, and all calls for the next hour will be forwarded to this address without doing the lookup
 
-### SRV records
-Unlike `A` records `SRV` records send all the possible options including weights and tiers to the SIP client. The SIP client can then make an informed decision about
-how which servers to try and in which order. ConnexCS keeps things simple, does not offer weight's and allows 3 tiers.
+### Distribution methods
+
++ **A records**: The `A` record (point a domain such as `abc.com` to `13.224.230.90`) is the most common record in DNS and simply. Select multiple `A` records to set a round-robin DNS query. This is the simplest form of load-balancing.
++ **SRV records**: Unlike `A` records, `SRV` records send all the possible options to the SIP client. The SIP client can then make an informed decision about which servers to try and in which order. ConnexCS allows 3 tiers of SRV records.
 
 ### AnyEdge Mirroring
 To make best use of DNS records they should be aware of what is happening on servers which they serve, with AnyEdge Mirroring the SRV Tier will match
@@ -32,7 +37,7 @@ what is set by that AnyEdge setup. This means should there be any failure on the
 what config you have set on AnyEdge.
 
 ## Perfect Redundancy - High Availability
-There are many ways to achieve redundancy and mittigate any single-point-of-failure (SPOF). We our recipe is as follows.
+There are many ways to achieve redundancy and mittigate any single-point-of-failure (SPOF). Here is the ConnexCS recommended setup for HA:
 
 1. Have more than 1 server on ConnexCS in different datacentres inside a cluster.
 2. Use ConnexCS AnyEdge system.
