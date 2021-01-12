@@ -90,16 +90,15 @@ Use this button to update the Channels for the selected server. The update will 
 This only needs to be run when the system indicates "There is a pending update on the server" at the top of the server details. 
 
 ## Server Reactivation
-
-!!! warning "Impact to services"
-    If you are a serious carrier *Never let your account run out of credit*. It should go without saying, but if your account runs out of credit service will be impacted, it may not instantly be restored either. We will not consider any reactivation problems critical if you persistently top-up only enough credit to cover you for the next day.
-
 To reactivate a server:
 
 1. Click the server's IP address.
 2. Click **Reactivate** to activate your server.
 
    ![alt text][server-6]
+
+!!! warning "Impact to services"
+    If you are a serious carrier *Never let your account run out of credit*. It should go without saying, but if your account runs out of credit service will be impacted, it may not instantly be restored either. We will not consider any reactivation problems critical if you persistently top-up only enough credit to cover you for the next day.
    
 ## RTP Servers
 RTP Servers handle streaming media. To view RTP Servers in your system:
