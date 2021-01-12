@@ -36,7 +36,7 @@ These are the same fields found under **Server List** above.
 ### Capacity Failover
 When enabled, we can specify another server in the cluster to route traffic to if the server reaches capacity, based on the allowed CPS and Channels. Ex: CPS or Channels limit is reached, the next call will be blocked unless there is a another server that the call can be routed to. 
 
-## Server Config
+### Server Config
 
 **Dispatcher**
 Click the blue pencil to edit. 
@@ -67,7 +67,7 @@ Click the blue pencil to edit.
 |UDP, TCP, TLS Ports|Specify port(s) for each protocol in addition to the protocol default (ex: to avoid firewall rules or ISP restrictions).|
 
 
-## Server Actions Menu
+### Server Actions Menu
 Click the **`Actions`** button to open the **Server Actions Menu**. The following actions are available:
 
 * **Install Server**: installs the latest script to your server.
@@ -80,16 +80,16 @@ Click the **`Actions`** button to open the **Server Actions Menu**. The followin
 !!! warning "Impact to Services"
     These actions occur real time and performing any of them could affect services. We recommend that you avoid using them unless the results are understood. Keep in mind that the ConnexCS system is designed to run stateless, and actions such as reboots, restarts, and so on, rarely correct the types of issues seen in less sophisticated systems like PBX or common laptops. The only exception to this is the use of **Install Server**, which could be used for a clean installation from a standard image.
 
-## Resize Capacity
+### Resize Capacity
 Use this button to update the Channels for the selected server. The update will be active in 15 minutes.  
 
 !!! warning "Impact to services"
     If you increase Channels to 1001 or more, the server will reboot as soon as you click **`Save`**. All calls will stop, and the server can take up to 10 minutes to finish rebooting and begin services again.   
 
-## Run Server Update
+### Run Server Update
 This only needs to be run when the system indicates "There is a pending update on the server" at the top of the server details. 
 
-## Server Reactivation
+### Server Reactivation
 To reactivate a server:
 
 1. Click the server's IP address.
