@@ -39,6 +39,7 @@ When enabled, we can specify another server in the cluster to route traffic to i
 ## Server Config
 
 **Dispatcher**
+Click the blue pencil to edit. 
 
 |Field|Description|
 |:----------------:|---|
@@ -46,9 +47,9 @@ When enabled, we can specify another server in the cluster to route traffic to i
 |Flush|Force a server update|
 
 **Switch**
+
 |Field|Description|
 |:----------------:|---|
-|Server Config Options|(click the blue pencil to edit)|
 |FQDN|The FQDN (Fully Qualified Domain Name) needs to be set for TLS security to be enabled directly on the server.|
 |Cluster|Group servers to share information such as dialogues and throughput. Ex: if you set CPS to 10, clustered servers will allow 10 CPS, un-clustered servers will allow 10 CPS per server. |
 |Reinvite Ping Interval|*in progress*|
