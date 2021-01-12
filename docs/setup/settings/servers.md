@@ -91,7 +91,7 @@ This only needs to be run when the system indicates "There is a pending update o
 
 ## Server Reactivation
 
-!!! warning 
+!!! warning "Impact to services"
     If you are a serious carrier *Never let your account run out of credit*. It should go without saying, but if your account runs out of credit service will be impacted, it may not instantly be restored either. We will not consider any reactivation problems critical if you persistently top-up only enough credit to cover you for the next day.
 
 To reactivate a server:
