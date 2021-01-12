@@ -27,6 +27,13 @@ If you have multiple servers in a load-balance configuration, it is recommended 
     1. Better control over CPS and Channel load-balancing: If you set CPS to 10, clustered servers will allow 10 CPS total, un-clustered servers will allow 10 CPS per server, potentially going over the allowed CPS with a particular carrier.
     2. Shared User Location Information: Un-Clustered servers will have difficulty sharing registration information. It is possible to select "UAC Location Sharing" for each of the unclustered servers to share this information, but this is not recommended as it requires additional communications (and increases overhead) for each server to connect to the UAC every second to check for new/changed registrations. 
 
+## RTP Servers
+RTP Servers handle streaming media. To view RTP Servers in your system:
+
+1. Click the **`RTP Servers`** button.
+2. A list of your current RTP servers will appear, with columns for IP address, aliases, and zones.
+3. The **`Refresh`** button will reload the page to show the most current changes, if any.
+
 ## Server Details
 Click the server's IP address to view details. 
 
@@ -99,13 +106,6 @@ To reactivate a server:
 
 !!! warning "Impact to services"
     If you are a serious carrier *Never let your account run out of credit*. It should go without saying, but if your account runs out of credit service will be impacted, it may not instantly be restored either. We will not consider any reactivation problems critical if you persistently top-up only enough credit to cover you for the next day.
-   
-## RTP Servers
-RTP Servers handle streaming media. To view RTP Servers in your system:
-
-1. Click the **`RTP Servers`** button.
-2. A list of your current RTP servers will appear, with columns for IP address, aliases, and zones.
-3. The **`Refresh`** button will reload the page to show the most current changes, if any.
 
 [rtpserver]: /misc/img/rtpservers.png "RTP Server"
 [server-6]: /misc/img/244.png "server-6"
