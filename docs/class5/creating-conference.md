@@ -36,10 +36,10 @@ Callers may use the keypad to control the audio on the conference call.
 |4|Vol listen +|Increase the volume of the speakers by 1 unit. You hear other callers louder.|
 |5|Vol listen reset|Reset the volume of the speakers to the default value.|
 |6|Vol listen -|Decrease the volume of the speakers by 1 unit.|
-|7|Energy +|Increase the minimum energy threshold by 1 unit. If the background noise is above this threshold, the background noise is bridged into the conference and only when you speak.|
-|8|Energy equal|Reset the minimum energy threshold to the default value.|
+|7|Energy +|Increase the minimum energy threshold by 1 unit (background noise above this threshold is bridged into the conference and only when you speak).|
+|8|Energy reset|Reset the minimum energy threshold to the default value.|
 |9|Energy -|Decrease the minimum energy threshold by 1 unit.|
-|\*|Deaf + mute|Mute your speakers and the microphone in one action.|
+|\*|Deaf/mute|Mute your speakers and the microphone in one action.|
 |#|Hang up|Disconnect the call and drop out of the conference.|
  
     
