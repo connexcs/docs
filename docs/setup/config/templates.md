@@ -1,7 +1,7 @@
 # Templates
-Setup :material-menu-right: Config :material-menu-right: Templates
+**Setup :material-menu-right: Config :material-menu-right: Templates**
 
-Create your own **Templates** to customise the content displayed on outbound emails/SMS, the Customer Portal, and WebPhone. ConnexCS **Templates** use a mustash-compatible template language [Handlebars](https://handlebarsjs.com/guide/).
+Create your own **Templates** to customise the content displayed on outbound emails/SMS, the Customer Portal, and WebPhone. ConnexCS **Templates** use the mustash-compatible template language [Handlebars](https://handlebarsjs.com/guide/).
 
 !!! note "Template Syntax"
     It is important to follow the template syntax, fields such as `{email}` or `{account_name}` need to be entered exactly otherwise they won't be replaced correctly when the template is rendered. 
@@ -10,8 +10,8 @@ Create your own **Templates** to customise the content displayed on outbound ema
 
 1. Click the blue **`+`**. 
 2. **Name** the template.
-3. **Subject** for the communication supports variables
-4. Entering text into the **SMS** field does not cause the SMS to be sent, but it is available for use when other parts of the system have SMS set. 
+3. **Subject** for the communication (supports variables).
+4. **SMS** field does not cause the SMS to be sent, but it is available for use when other parts of the system have SMS set. 
 5. Use **Text** or **HTML** for the content of the communication. 
 
 *The templating system will replace placeholders with the variable when it is rendered.
@@ -54,4 +54,4 @@ function main (vars) {
 {{/each}}
 ```
 
-[addtemp]: /misc/img/addtemplate.png "Add Temp"
+[addtemp]: /setup/img/addtemplate.png "Add Temp"
