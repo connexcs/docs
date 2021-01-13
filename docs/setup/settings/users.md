@@ -1,15 +1,14 @@
-# Users
-Setup :material-menu-right: Settings :material-menu-right: Users
+# User
+**Setup :material-menu-right: Settings :material-menu-right: User**
 
 Creating and assigning **Users** and **Groups** based on various levels of permissions allows for more efficient management of access to the ConnexCS Control Panel.
-This is done under **Setup** :material-menu-right: **Settings** :material-menu-right: **User**. 
 
 ## Design / Concept
 
 Permissions are managed by groups and can be allow or deny. This is granular over every endpoint that is available in the system.
 It is possible for a user to belong to multiple-groups, however in practice it is more easier to manage with a user only having 1 group.
 
-## Create Users
+## Users
 To add a new **User**:
 
 1. Click the **`+`** button in the **Users** section on the left.
@@ -41,12 +40,12 @@ To add a new **User**:
     You can reset your password on the ConnexCS Control Panel Login page. If you are unable to do so, contact the administrator who created your user account. 
     
 
-## Create Groups
+## Groups
 Use a **Group** to assign a specific set of Control Panel access permissions to multiple users. Typically, you create user groups to assign permissions depending on the roles that the users play in your Carrier Service business model. 
 
 !!! tip "Example Group Roles"
-	The Network Services Engineers need permissions to set up routing and but should not have access to the customers' billing details.
-	Alternately, the Billing team needs permissions to access and modify the customers' billing details but not to set up routing for customers' calls.
+    The Network Services Engineers need permissions to set up routing and but should not have access to the customers' billing details. Alternately, the Billing team needs permissions to access and modify the customers' billing details but not to set up routing for customers' calls.
+
 
 Step 1: Create Group
 
