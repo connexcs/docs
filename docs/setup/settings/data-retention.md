@@ -1,5 +1,5 @@
 # Data Retention
-Setup :material-menu-right: Settings :material-menu-right: Data Retention
+**Setup :material-menu-right: Settings :material-menu-right: Data Retention**
 
 The **Data Retention** page displays currently stored data in the archive. Data is periodically archived here from the live servers. You may query both live and archive data from the CDR section. However, your query may not span between live and archived data. Data may also be downloaded from this page. 
 
@@ -7,7 +7,6 @@ The **Data Retention** page displays currently stored data in the archive. Data 
 
 !!! note "Displayed size"
     Displayed size represents the compressed size. 
-
 
 
 !!! warning "Data storage and removal"
