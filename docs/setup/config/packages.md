@@ -7,7 +7,7 @@ A **Package** represents a product or service offered to customers, often as a r
 
 1. Click the **`+`** button.
 
-![alt text][addpackage]
+    ![alt text][addpackage]
 
 + **Name**: The name of the package.
 + **Cost**: The recurring price which you (the provider) pay for this package (based on Frequency set below).
