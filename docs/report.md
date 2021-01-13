@@ -1,5 +1,5 @@
 # Report
-**Management :material-menu-right: Report**.
+**Management :material-menu-right: Report**
 
 View and download **Reports** which provide extensive insights on historical data such as by Customers or Provider routes, DTMF Cost, and Per Number metrics. The ability to Schedule reports adds automation for frequent data requirements.  
 
