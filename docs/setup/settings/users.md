@@ -58,7 +58,7 @@ To change a user's password:
 Use a **Group** to assign a specific set of Control Panel access permissions to multiple users. Typically, you create user groups to assign permissions depending on the roles that the users play in your Carrier Service business model. 
 
 !!! tip "Example Group Roles"
-    The Network Services Engineers need permissions to set up routing and but should not have access to the customers' billing details. Alternately, the Billing team needs permissions to access and modify the customers' billing details but not to set up routing for customers' calls.
+    Network Services Engineering needs permissions to set up routing but should not have access to customer billing details. Alternately, the Billing team needs permissions to access and modify customer billing details but not to set up routing for customer calls.
 
 
 Step 1: Create Group
@@ -102,7 +102,7 @@ Permissions are determined by level and access:
 This feature allows you to create a quick default set of permissions suitable for resellers. Simply click on the **`Create Default Reseller`** to create a new Reseller Group. Multiple Reseller Groups can be created, and each can be edited to match your business needs.  
 
 !!! warning "Alpha Feature"
-    The Default Reseller feature is still an Alpha Feature in testing, so please use with caution. 
+    The Default Reseller feature is still an Alpha Feature in testing, please use with caution. 
 
 
 [group-perm]: /setup/img/group-perm.png "Group Permission"
