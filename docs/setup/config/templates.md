@@ -14,23 +14,21 @@ Create your own **Templates** to customise the content displayed on outbound ema
 4. **SMS** field does not cause the SMS to be sent, but it is available for use when other parts of the system have SMS set. 
 5. Use **Text** or **HTML** for the content of the communication. 
 
+    ![alt text][addtemp]
+    
 *The templating system will replace placeholders with the variable when it is rendered.
 
-![alt text][addtemp]
-
 ## Stock Templates
-ConnexCS provides standard templates which you are free to customise as you wish. To customise any template, click on the template name, modify as needed, and click save.
-
+ConnexCS provides standard templates which you are free to customise as you wish. To customise any template, click on the template name, modify as needed, and click save. To revert the template to its original configuration, check the box next to the Name and select the **`Reset`** button. 
 
 ## ScriptForge Integration  
-Dynamic Templates are made by including ScriptForge (further details [here](https://docs.connexcs.com/developers/scriptforge/). This is done by using the `scriptforge` tag. Ex: To include a ScriptForge script with ID 1234, use `{{scriptforge 1234}}`. 
+Dynamic Templates with custom variables are made by including ScriptForge (further details [here](https://docs.connexcs.com/developers/scriptforge/). This is done by using the `scriptforge` tag. Ex: To include a ScriptForge script with ID 1234, use `{{scriptforge 1234}}`. 
 
 This will pass ALL of the variables in the current scope to ScriptForge. Whatever ScriptForge returns will then be made available back in the main scope for use with the template system.
-
   
 ### Sample RSS Feed Injection into a template
 
-This example can be used to provide a custom page in the [WebPhone](/webphone/webphone)
+This example can be used to provide a custom page in the [WebPhone](https://docs.connexcs.com/setup/integrations/webphone/)
 
 **ScriptForge**
 
