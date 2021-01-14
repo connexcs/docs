@@ -97,9 +97,9 @@ The final method for configuring a Customer Rate Card is to import/upload it:
     
     * **Match**: Enter the prefix to match, either as a Regular Expression or a standard prefix (numeric only, typically an international country code, not a provider or customer tech prefix). Adding an up arrow `^` on the prefix draws all associated prefixes from the provider card. For example, if you enter '49, it will include '491', '492', '4912345', and so on.
     * **Profit Type**: Select how to add profit:
-     * Absolute - actual value charged
-     * Relative - amount entered is added to the cost from the carrier
-     * Percent - cost from the carrier multiplied by this percent
+        * Absolute - actual value charged
+        * Relative - amount entered is added to the cost from the carrier
+        * Percent - cost from the carrier multiplied by this percent
     + **Apply To** - Setup rules to govern how Profit is applied to different types of calls
     * **Status** - Use Blocked, here or after importing a Carrier Rate Card, to disable specific prefixes. 
 
