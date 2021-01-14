@@ -1,18 +1,16 @@
 # Language
-
-Setup :material-menu-right: Advanced :material-menu-right: Language
+**Setup :material-menu-right: Advanced :material-menu-right: Language**
 
 Use the **Language** interface to customize your selected interface language. You can add non-English equivalents for words in your preferred language or modify system defaults.
 
-!!!question "Multiple entries for one Key" 
-	If you add a non-English equivalent for a word, say 'Channel' as 'canal', but there is an existing entry for 'Channel' as 'Canales', the Control Panel replaces the default entry with your new word.
+!!! info "Multiple entries for one Key" 
+    If you add a non-English equivalent for a word, say 'Channel' as 'canal', but there is an existing entry for 'Channel' as 'Canales', the Control Panel replaces the default entry with your new word.
 	
 ## Add Non-English Equivalents
-If you have changed the default language, but see missing terms, you can add them in the Language panel. 
+If you have changed the default language (see [**Changing the Language of Text Displayed on the UI**.](https://docs.connexcs.com/changing-language/) for details), but see missing terms, you can add them in the Language panel. 
 
 To add non-English equivalents for your preferred language:
 
-1. Make sure you updated the Control Panel's UI to your preferred language. (For details, see [**Changing the Language of Text Displayed on the UI**.](https://docs.connexcs.com/changing-language/))
 3. In the `Language` sub-menu on the left, select the language you are using.
 4. (Optional) Search for the specific word before adding.
 5. Click the **`+`** to create a new entry. 
@@ -45,4 +43,4 @@ To delete a non-English equivalent you added or to reset an incorrect change to 
 !!!note "Note" 
 	You cannot delete default non-English equivalents from this table.
 
-[adding-words-in-spanish]: /misc/img/adding-words-in-spanish.png "adding-words-in-spanish"
+[adding-words-in-spanish]: /setup/img/adding-words-in-spanish.png "adding-words-in-spanish"
