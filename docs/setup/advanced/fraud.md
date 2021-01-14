@@ -1,5 +1,5 @@
 # Fraud Profile
-Setup :material-menu-right: Advanced :material-menu-right: Fraud Profile
+**Setup :material-menu-right: Advanced :material-menu-right: Fraud Profile**
 
 The ConnexCS **Fraud Profile** provides rule-based Fraud Detection with a high degree of flexibility. This feature will not prevent a security breach, but it can serve as detection and mitigation if an account is ever compromised. 
 
@@ -33,9 +33,6 @@ Selecting Low or High mode will define the action taken when a Warning or Critic
 | Low  | Call continues, shows in log only. | Call is blocked.                     |
 | High | Call is blocked.                   | Call is blocked, Account is blocked. |
 
-## Fraud Logging
-To view when Warning or Critical thresholds have been triggered go to Logging :material-menu-right: Fraud Logging
-
 ## Setup a Fraud Detection
 Step 1: Create a Fraud Profile and Rules
 
@@ -54,3 +51,7 @@ Step 2: Apply profile to customer route
 2. Select the **Fraud Profile**.
 3. Select the **Fraud Mode** (as defined above).
 4. Save the route.
+
+
+## Fraud Logging
+To view when Warning or Critical thresholds have been triggered go to **Logging :material-menu-right: Fraud Logging**

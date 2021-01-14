@@ -27,20 +27,20 @@ To create a conference call:
 ## Conference Call keypad options
 Callers may use the keypad to control the audio on the conference call. 
 
-    |Keypad option|Result|Description|
-    |-------|------|------|
-    |0|mute|mute your microphone. The other callers cannot hear you.|
-    |1|vol talk down|decrease the volume (sensitivity) of your microphone, by 1 unit.|
-    |2|vol talk zero|reset the volume (sensitivity) of your microphone to the default value.|
-    |3|vol talk up|increase the volume (sensitivity) of your microphone by 1 unit. The other callers hear you louder.|
-    |4|vol listen up|increase the volume of the speakers by 1 unit. You hear other callers louder.|
-    |5|vol listen zero|reset the volume of the speakers to the default value.|
-    |6|vol listen down|decrease the volume of the speakers by 1 unit.|
-    |7|energy up|increase the minimum energy threshold by 1 unit. If the background noise is above this threshold, the background noise is bridged into the conference and only when you speak.|
-    |8|energy equal|reset the minimum energy threshold to the default value.|
-    |9|energy down|decrease the minimum energy threshold by 1 unit.|
-    |*|deaf mute|mute your speakers and the microphone, in one action.|
-    |#|hangup|disconnect the call and drop out of the conference.|
+|Key|Result|Description|
+|-------|------|------|
+|0|Mute|mute your microphone. The other callers cannot hear you.|
+|1|Vol talk -|Decrease the volume (sensitivity) of your microphone, by 1 unit.|
+|2|Vol talk reset|Reset the volume (sensitivity) of your microphone to the default value.|
+|3|Vol talk +|Increase the volume (sensitivity) of your microphone by 1 unit. The other callers hear you louder.|
+|4|Vol listen +|Increase the volume of the speakers by 1 unit. You hear other callers louder.|
+|5|Vol listen reset|Reset the volume of the speakers to the default value.|
+|6|Vol listen -|Decrease the volume of the speakers by 1 unit.|
+|7|Energy +|Increase the minimum energy threshold by 1 unit (background noise above this threshold is bridged into the conference and only when you speak).|
+|8|Energy reset|Reset the minimum energy threshold to the default value.|
+|9|Energy -|Decrease the minimum energy threshold by 1 unit.|
+|\*|Deaf/mute|Mute your speakers and the microphone in one action.|
+|#|Hang up|Disconnect the call and drop out of the conference.|
  
     
 

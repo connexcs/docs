@@ -13,7 +13,7 @@ Step 1: Setup the Database
 4. Select **Dataset Type**.
 5. Click Save
 
-![alt text][dnc-3]
+    ![alt text][dnc-3]
 
 Step 2: Configure Script Forge
 
