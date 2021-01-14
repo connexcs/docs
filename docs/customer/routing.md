@@ -22,7 +22,7 @@ View and configure existing routes on the Routing tab in the Customer card. Clic
     + To Carriers: select a carrier to send the call to terminate somewhere outside of the ConnexCS system
 
 + **Tech Prefix**: Allows you to distinguish a route from an inbound party. When multiple customers share the same IP address, each customer needs an individual Tech Prefix so the switch can route calls correctly. It lets providers separate multiple rate cards.
-+ **Dial String Prefix Set**: Helpful for commonly used sets of prefixes. Rather than entering a complete list of prefixes for UK, for example, you can create a predefined Prefix Set (defined under [Setup > Advanced > Prefix Set](https://docs.connexcs.com/setup/advanced/prefix-set/) and then select it here for appropriate customers. 
++ **Dial String Prefix Set**: Helpful for commonly used sets of prefixes. Rather than entering a complete list of prefixes for UK, for example, you can create a predefined Prefix Set (defined under [Setup > Advanced > Prefix Set](https://docs.connexcs.com/setup/advanced/prefix-set/)) and then select it here for appropriate customers. 
 + **Dial String**: Only allows a dialed number through if it matches the defined dial string (or "dial pattern"). (If nothing is entered, it will match everything and try to send all calls. This doesn't work if you have more than one Rate Card as the system will not know which one to use.) Each prefix is listed one per line, both prefix and regular expressions are allowed. For example, if you only wanted to allow UK Landline you could use:
 
     Prefix
