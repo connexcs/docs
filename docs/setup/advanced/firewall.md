@@ -12,10 +12,10 @@ Should a valid attempt from your customer or carrier be blocked inadvertently, y
 !!! note "Updating removed IP"
     It can take up to 15 minutes after an IP has been removed from the block list before it is updated across the entire platform.
 
-### False Positive
+## False Positive
 If you have a customer or carrier who sends a large volume of *unauthorized* calls, it is possible that they will be added to the Block list.
 
-### False Negatives
+## False Negatives
 You may see attempts hitting your switch which are not authorized and then fail. These are attempts which our system has successfully declined the call to process. There is no need to take further action to stop these calls.
 
 It is important that calls such as these are visible for 2 reasons.
