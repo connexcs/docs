@@ -8,7 +8,7 @@ To setup **Routing Global** template, first create it then apply it to the custo
 
 1. Go to Management > Routing Global
 2. Click the **`+`** to create a new template
-3. Complete the fields (see [Advanced Routing configuration](https://staging--connexcs-docs.netlify.app/customer/routing/#advanced-routing-configuration) for details)
+3. Complete the fields (see [Customer Advanced Routing configuration](https://docs.connexcs.com/customer/routing/#configure-routing) for details)
 
     ![alt text][routing-global]
 
