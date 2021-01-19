@@ -20,7 +20,7 @@
 
     ![alt text][api]
 
-3. (PayPal Express, Stripe, ScriptForge, Razor Pay only) Select the Mode: 
+3. Select the Mode (PayPal Express, Stripe, ScriptForge, Razor Pay only): 
     + **Test** for testing connections
     + **Live** for an active account
 4. Complete the dialog box and press the **`Save `** button.
