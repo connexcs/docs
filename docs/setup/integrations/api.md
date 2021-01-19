@@ -99,5 +99,8 @@ The following are instructions on how to add a PayPal Email address to a ConnexC
 1. From the customer's main page, select Edit :material-menu-right: Config.
 1. Enter the customer PayPal email ID and click **`Save`**.
 
+### View PayPal IPN Payment Log
+These payments can be viewed under **Setup > Information > Payment Log**. 
+
 [paypal-9]: /setup/img/paypal-9.png "Paypal-9"
 [api]: /setup/img/api.png "API Integration"
