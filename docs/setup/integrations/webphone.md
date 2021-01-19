@@ -6,7 +6,7 @@ The ConnexCS **Web Phone** runs directly from a browser without the need to inst
 !!! warning "iOS limitations"
     iOS limits the ability to perform push notifications.
 
-## Web Phone Technical Details
+## Technical Details
 
 ### Application
 ConnexCS **Web Phone** is a WebRTC application using PWA. **WebRTC** (Real-Time Communications) is a browser protocol which runs on top of an HTTPS connection. ConnexCS **Web Phone** uses WebRTC (HTTPS port 443) for SIP Signaling and WebSockets (random UDP ports) for the Media.
@@ -15,7 +15,6 @@ ConnexCS **Web Phone** is a WebRTC application using PWA. **WebRTC** (Real-Time 
     BitDefender blocks WebSockets unless the phone. and webrtc. domains have been whitelisted. 
 
 A [**PWA** (Progressive Web Application)](https://en.wikipedia.org/wiki/Progressive_web_application) is an application written inside the web browser. It uses modern API and has the potential to replace traditional proprietary app-stores.
-
 
 ### State-level firewalls
 WebRTC is effective for bypassing state-level firewalls by:
@@ -34,7 +33,7 @@ MITM (Man-in-the-Middle) attacks actively intercept traffic between endpoints, w
 !!! tip "Debugging SIP Messages"
     If you need to debug Web Phone and see the SIP messages, you can enter `*#0*#` into the dial pad, this will switch on debugging mode in the browser console.
     
-## Web Phone Navigation
+## Navigation
 Navigate using the following sections in the footer menu at the bottom of Web Phone (see Menu tab under [Config Options](https://docs.connexcs.com/setup/integrations/webphone/#config-options) below to change how these are displayed):
 
 * **Agent**: Preview dialer
@@ -47,67 +46,42 @@ Navigate using the following sections in the footer menu at the bottom of Web Ph
 ## Enable Web Phone 
 
 ### Setup Domains
-
 ConnexCS **Web Phone** needs 2 domains to function correctly:
 
-* **Domain (A)** - This is the location where the phone will be hosted and needs to be provided to your customers. Create a CNAME on your domain pointing to `portal.connexcs.com.` (yes, this is the same as the customer portal).
-* **Domain (B)** This is the signaling domain and is attached to your server. 
+* **Domain (A)** - Create a CNAME on your domain pointing to `portal.connexcs.com` (yes, this is the same as the customer portal). This is the location where the phone will be hosted and needs to be provided to your customers, such as `webphone.yourdomain.com`, where `yourdomain.com` is the domain that you own.
+* **Domain (B)** - This is the signaling domain and is attached to your server. 
 
 It is recommended to setup a DNS record within ConnexCS, then point a CNAME on your domain to the ConnexCS setup domain.
 
-### Verify Certificates
+### Create Certificates
+After the domains are configured, verify the certificates are under **Setup > Information > Certificates**:
 
-After the domains are configured, verify the certificates are in the certificate page under Setup > Information > Certificates:
-
-* If the domain is not listed, click on `Add Certificate`.
+* If the domain is not listed, click on `Add Certificate` and provide your domain name.
 * If the certificates are listed but they don't have an issue or expiry date, click on "Refresh Certificates". This may take up to 10 minutes to complete.
 
-### Enable WebRTC
-
+### Add WebRTC to server
 To setup WebRTC on a server:
 
 1. Ensure **Domain (B)** (signalling domain from above) points ONLY to the server where you enable WebRTC. 
-2. Navigate to Setup :material-menu-right: Settings :material-menu-right: Servers :material-menu-right: select the server then Edit.
-   * Update the FQDN to the server
-   * Ensure that both **TLS** and **WebRTC** are enabled
-   * Run `Install Server` if any settings were changed
+2. Navigate to **Setup :material-menu-right: Settings :material-menu-right: Servers :material-menu-right: select the server then Edit**.
+    * Update the FQDN to the server
+    * Ensure that both **TLS** and **WebRTC** are enabled
+    * Run `Install Server` if any settings were changed
 
 !!! tip "AnyEdge and WebRTC"
     If you are using AnyEdge, you can enable WebRTC automatically by adding a domain name to your AnyEdge Domain.
 
 ### Add Web Phone Domain
-
 Once domains, certificates, and server settings are updated, we can add the Web Phone domain. 
 
-1. Go to Setup :material-menu-right: Integrations :material-menu-right: Web Phone
+1. Go to **Setup :material-menu-right: Integrations :material-menu-right: Web Phone**
 1. For **Domain**, enter **Domain (A)** 
 2. Set **WebRTC Host** as **Domain (B)**
 3. Click **`Save`**
 
-Your Web Phone should now be working. 
+Your Web Phone should now be available. 
 
 ## Configure Web Phone
-
-Step 1: Set up CNAME record
-
-1. Access your domain account at your domain host.
-2. Locate the page for updating your domain's DNS records. The page might be called something like DNS Management, Name Server Management, or Advanced Settings.
-3. Locate the CNAME records for your domain.
-4. Add a new domain record, (such as `webphone.yourdomain.com`, where `yourdomain.com` is the domain that you own.
-5. Point it towards `portal.connexcs.com.`
-6. If you get asked for a TTL, we recommend setting this at 300 (seconds) - 5 minutes
-7. Once the domain has been configured with your provider you can add it on ConnexCS.
-
-!!! note
-	Your Customer Portal must be exposed via a CNAME which you setup. This won't work with A records or pointing directly.
-	
-Step 2: Add Domain to Portal
-
-1. Click the **`+`** button under **Web Phone**.
-2. Enter the details in their respective fields of the ensuing window.
-3. Click the **`Save`** button. A certificate will be issued for the domain soon afterwards
-
-### Config Options
 *Click each tab to view configuration details.* 
 
 === "Basic"
