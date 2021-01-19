@@ -33,10 +33,10 @@ To add a certificate:
     + Start with: `-----BEGIN CERTIFICATE-----`
     + End with: `-----END CERTIFICATE-----`.
 5. Enter your private **Key** 
-    + Starting with: `-----BEGIN PRIVATE KEY-----`
+    + Start with: `-----BEGIN PRIVATE KEY-----`
     + End with: `-----END PRIVATE KEY-----`.
 6. Enter in your **CA(Certificate Authority) Certificate**
-    + Starting with: `-----BEGIN CERTIFICATE-----`
+    + Start with: `-----BEGIN CERTIFICATE-----`
     + End with: `-----END CERTIFICATE-----`.
 
 Renewals for **User Provided** certificates are your responsibility.
