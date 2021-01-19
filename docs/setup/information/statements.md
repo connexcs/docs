@@ -1,7 +1,7 @@
 # Statement
-Setup :material-menu-right: Information :material-menu-right: Statement
+**Setup :material-menu-right: Information :material-menu-right: Statement**
 
-**Statement** displays daily spending on your ConnexCS account.
+**Statement** displays daily spending on your ConnexCS account, typically used when a customer has questions about billing. Use the Columns section on the right to drill down based on Ros and Values for detailed analysis. 
 
 ### Columns
 
@@ -13,7 +13,7 @@ Setup :material-menu-right: Information :material-menu-right: Statement
 |Per Channel Cost | Costs incurred associated with Cloudswitch usage when billed Per Channel.      |
 | Per Minute Cost      | Costs incurred associated with Cloudswitch usage when billed Per Minutes.                   |
 | Call Recording Cost       |Costs incurred associated with Cloudswitch usage when billed Per Minutes.              |
-| Topup        | Credits to the account from payments made.                        |
+| Top-Up        | Credits to the account from payments made.                        |
 | Total        | Total difference for that day.                        |
 
 
