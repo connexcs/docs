@@ -87,5 +87,8 @@ Step 2: Add Domain to Portal
 
     * **Upload Logo** - Upload your logo in `jpg`, `png` or `gif` format (max 350px wide) to **Management :material-menu-right: File :material-menu-right: Public**. A list of available files will now appear in the "Upload Logo" Box.
     * **Footer** - Enter text to display at the bottom of the page, for example _Copyright My Company_
+    
+## User Access
+To configure Users to access the Customer Portal, follow the steps to [Add Contact](https://docs.connexcs.com/customer/main/#contacts). Any Contact configured on the account will be able to login to the Customer Portal. 
 
 [portal]: /setup/img/portal.png "Portal"
