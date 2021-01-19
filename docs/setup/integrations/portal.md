@@ -52,15 +52,15 @@ Step 2: Add Domain to Portal
     Select which sections/features are displayed to your customers.
 
     !!! note "Override Options"
-    To override these options for specific customers, go to Management :material-menu-right: Customer :material-menu-right: [Choose Customer] :material-menu-right: Edit :material-menu-right: Config :material-menu-right: Portal Access. Select items from the "Show" heading to force the feature to be displayed, or from the Hide options to stop it from being shown.
+    To override these options for specific customers, go to **Management :material-menu-right: Customer :material-menu-right: [Choose Customer] :material-menu-right: Edit :material-menu-right: Config :material-menu-right: Portal Access**. Select items from the "Show" heading to force the feature to be displayed, or from the Hide options to stop it from being shown.
 
 === "Breakout"
 
-    Select which columns will display in the Report :material-menu-right: **Breakout Report**.
+    Select which columns will display in the **Report :material-menu-right: Breakout Report**.
 
 === "CDR"
 
-    Select which columns will display in the Management :material-menu-right: Customer :material-menu-right: [Choose Customer] :material-menu-right: **CDR Report**.
+    Select which columns will display in the **Management :material-menu-right: Customer :material-menu-right: [Choose Customer] :material-menu-right: CDR Report**.
 
 === "Advanced"
 
@@ -85,7 +85,7 @@ Step 2: Add Domain to Portal
     }
     ```
 
-    * **Upload Logo** - Upload your logo in `jpg`, `png` or `gif` format (max 350px wide) to Management :material-menu-right: File :material-menu-right: public. A list of available files will now appear in the "Upload Logo" Box.
+    * **Upload Logo** - Upload your logo in `jpg`, `png` or `gif` format (max 350px wide) to **Management :material-menu-right: File :material-menu-right: Public**. A list of available files will now appear in the "Upload Logo" Box.
     * **Footer** - Enter text to display at the bottom of the page, for example _Copyright My Company_
 
 [portal]: /setup/img/portal.png "Portal"
