@@ -24,7 +24,7 @@ The **Contacts** section shows an overview of contacts associated with the Custo
 !!! note "Global Contacts"
     Contacts can also be modified under **Global :material-menu-right: Contacts**, which displays all Customer Contacts.
 
-### Add a new Contact:
+### Add Contact
 
 1. Press the **`+`** button to the right of the word **Contacts**.
 4. Enter the contact **Name** and login **Email** address.
