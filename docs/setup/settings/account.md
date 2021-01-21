@@ -12,7 +12,7 @@ To add or edit Company information, click the blue pencil icon. This allows you 
 + Billing Method (toggle between **per channel** and **per minute** billing by clicking on the blue text, this may be changed once per 30 days)
 + Contact Information for the account
 
-   ![alt text][accountprofile]
+    ![alt text][accountprofile]
 
 !!! note "Additional Configuration"
     To modify any other settings, please contact Technical Support. 
