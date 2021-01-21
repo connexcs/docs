@@ -99,7 +99,7 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 + **SIP Session Timer (SST)**: SST is Passive by default, however **Enabled** is the recommended setting. When enabled, SST ensures there are no ghost or long-duration calls being billed when one or both sides have hung up. A timer is activated when the call starts and refreshes the call every X number of seconds by sending a RE-INVITE. SST is currently the best way to prevent long-duration calls, superseding SIP Ping Timeout. Note that any SST less than sixty (60) seconds will be rejected.
 
     |SST Option              | Result                                                                                           |
-    |-------------------------|:------------------------------------------------------------------------------------------------:|
+    |-------------------------|:------------------------------------------------------------------------------------------------|
     | **Default**             | Passive SST, No headers are changed and no SST is engaged, all RE-INVITES will propagate through the system   |
     | **Enabled Both**        | ConnexCS will send SIP Session Timers to both legs of the call                                   |
     | **Enabled (Upstream)**  | ConnexCS will use SST with the carrier                                                           |
@@ -119,15 +119,14 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
     * **Relaxed**: This will perform best efforts to engage the RTP Proxy, if it can't be engaged because of either network errors, or because you don't have enough RTP capacity, the calls will connect directly.
 
 
-**RTP Proxy distinctions**
-When a call is established between customer and provider, audio can be set-up in one of two ways:
++ **RTP Proxy distinctions**: When a call is established between customer and provider, audio can be set-up in one of two ways:
 
-|                        | **With RTP Proxy** |  **Without RTP Proxy** |
-|------------------------|:------------------:|-----------------------:|
-| **Audio Path**         | Indirect           | Direct                 |
-| **Audio Quality**      | Excellent          | Unbeatable             |
-| **Latency**            | Low                | Lowest                 |
-| **Information Leakage**| No                 |  Yes*                  |
+    |                        | **With RTP Proxy** |  **Without RTP Proxy** |
+    |------------------------|:------------------:|-----------------------:|
+    | **Audio Path**         | Indirect           | Direct                 |
+    | **Audio Quality**      | Excellent          | Unbeatable             |
+    | **Latency**            | Low                | Lowest                 |
+    | **Information Leakage**| No                 |  Yes*                  |
 
 *While it's doubtful that any information will be logged in the customer/providers switch when the audio is engaged, it is possible for an engineer to learn this information from a SIP trace, PCAP, or by looking at transit locations. DTMF Detection ONLY works when RTP Proxy mode is enabled.
 
@@ -138,8 +137,7 @@ When a call is established between customer and provider, audio can be set-up in
 !!! Warning "When should I avoid using RTP Proxy?"
     You have other equipment in your SIP set-up which will act as a Media Relay or you want to run a test to see if audio problems are related to the ConnexCS switch.
 
-+ **Call Recording**
-This feature is not currently available. 
++ **Call Recording**: This allows you to record and store calls, which are then found under **Setup > Information > Browsing Record**. The feature will need to be enabled on the account here. We charge an additional 0.003 on top of any existing fees or charges. 
 
 ### Strategy
 For advanced routing, click the **`+`** to select a [Prefix Set](https://docs.connexcs.com/setup/advanced/prefix-set/) and assign a [Routing Strategy](https://docs.connexcs.com/routing-strategy/). This gives you greater control over how routes are selected for a given customer. 
