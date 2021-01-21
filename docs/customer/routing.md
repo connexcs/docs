@@ -98,14 +98,14 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 + **SIP Ping**: Send regular pings to ensure both sides of a call are still up, in case of potential failed ACK. Enabled is the recommended setting. 
 + **SIP Session Timer (SST)**: SST is Passive by default, however **Enabled** is the recommended setting. When enabled, SST ensures there are no ghost or long-duration calls being billed when one or both sides have hung up. A timer is activated when the call starts and refreshes the call every X number of seconds by sending a RE-INVITE. SST is currently the best way to prevent long-duration calls, superseding SIP Ping Timeout. Note that any SST less than sixty (60) seconds will be rejected.
 
-|SST Option              | Result                                                                                           |
-|-------------------------|:------------------------------------------------------------------------------------------------:|
-| **Default**             | Passive SST, No headers are changed and no SST is engaged, all RE-INVITES will propagate through the system   |
-| **Enabled Both**        | ConnexCS will send SIP Session Timers to both legs of the call                                   |
-| **Enabled (Upstream)**  | ConnexCS will use SST with the carrier                                                           |
-| **Enabled (Downstream)**| ConnexCS will use SST with the customer                                                          |
-| **Suggest**             | Session-Expire headers and Min-SE are added to packets sent to carrier encouraging the use of SST|
-| **Disabled**            | All ```timer``` headers are removed                                                              |
+    |SST Option              | Result                                                                                           |
+    |-------------------------|:------------------------------------------------------------------------------------------------:|
+    | **Default**             | Passive SST, No headers are changed and no SST is engaged, all RE-INVITES will propagate through the system   |
+    | **Enabled Both**        | ConnexCS will send SIP Session Timers to both legs of the call                                   |
+    | **Enabled (Upstream)**  | ConnexCS will use SST with the carrier                                                           |
+    | **Enabled (Downstream)**| ConnexCS will use SST with the customer                                                          |
+    | **Suggest**             | Session-Expire headers and Min-SE are added to packets sent to carrier encouraging the use of SST|
+    | **Disabled**            | All ```timer``` headers are removed                                                              |
 
 + **RTP Media Proxy**: This defaults to Auto, but selecting a zone (by continent) is the current recommendation. The following options allow you to set where RTP media server for this route for this customer:  
 
