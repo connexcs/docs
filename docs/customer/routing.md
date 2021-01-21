@@ -128,7 +128,7 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
     * **Direct RTP (no proxy)**: Bypass ConnexCS, so media flows directly between the customer and carrier. If the customer is using a firewall or other NAT device incorrectly then media may not flow between carrier and customer. Using this setting also means that if there are audio issues, the issue can't be ConnexCS. Since it isn't likely to be the carrier, the issue would typically exist on the customer's end. 
     * **Zone**: Select any of the regional servers, however it is recommended you choose a location near a provider or your customer. Temporarily selecting a different region to route media traffic can be helpful in diagnosing call problems. 
     
-!!!! info "RTP Proxy distinctions"
+!!! info "RTP Proxy distinctions"
     When a call is established between customer and provider, audio can be set-up in one of two ways:
 
     |                        | **With RTP Proxy** |  **Without RTP Proxy** |
