@@ -128,7 +128,7 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
     | **Latency**            | Low                | Lowest                 |
     | **Information Leakage**| No                 |  Yes*                  |
 
-*While it's doubtful that any information will be logged in the customer/providers switch when the audio is engaged, it is possible for an engineer to learn this information from a SIP trace, PCAP, or by looking at transit locations. DTMF Detection ONLY works when RTP Proxy mode is enabled.
+*While it's doubtful that any information will be logged in the customer/providers switch when the audio is engaged, it is possible for an engineer to learn this information from a SIP trace, PCAP, or by looking at transit locations. DTMF Detection ONLY works when RTP Proxy mode is enabled.*
 
 
 !!! Success "When should I use RTP Proxy?"
@@ -137,7 +137,7 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 !!! Warning "When should I avoid using RTP Proxy?"
     You have other equipment in your SIP set-up which will act as a Media Relay or you want to run a test to see if audio problems are related to the ConnexCS switch.
 
-+ **Call Recording**: This allows you to record and store calls, which are then found under **Setup > Information > Browsing Record**. The feature will need to be enabled on the account here. We charge an additional 0.003 on top of any existing fees or charges. 
++ **Call Recording**: This allows you to record and store calls, which are then found under **Setup > Information > [Browsing Record](https://docs.connexcs.com/setup/information/recording/)**. The feature will first need to be enabled on the account under **Setup > Settings > Account > [Packages](https://docs.connexcs.com/setup/settings/account/#packages)** before it can be enabled here for individual customers. There is an additional charge of 0.003 on top of any existing fees or charges. 
 
 ### Strategy
 For advanced routing, click the **`+`** to select a [Prefix Set](https://docs.connexcs.com/setup/advanced/prefix-set/) and assign a [Routing Strategy](https://docs.connexcs.com/routing-strategy/). This gives you greater control over how routes are selected for a given customer. 
