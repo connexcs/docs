@@ -127,14 +127,9 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
     * **Auto**: Selects the least expensive path between your customer and provider, however failovers are not automated which is why this option is not recommended.  
     * **Direct RTP (no proxy)**: Bypass ConnexCS, so media flows directly between the customer and carrier. If the customer is using a firewall or other NAT device incorrectly then media may not flow between carrier and customer. Using this setting also means that if there are audio issues, the issue can't be ConnexCS. Since it isn't likely to be the carrier, the issue would typically exist on the customer's end. 
     * **Zone**: Select any of the regional servers, however it is recommended you choose a location near a provider or your customer. Temporarily selecting a different region to route media traffic can be helpful in diagnosing call problems. 
-
-+ **RTP Proxy Mode**: If connection via our service fails, and relaxed is selected, it will failover to backup automatically. 
-
-    * **Strict**: This will enforce the proxy engagement. If the proxy can't engage with the call, the call will not be established. Note: Free accounts are limited to how many RTP Proxy channels are enabled, this may prevent calls connecting if you have more channels than our free accounts allow you to have.
-    * **Relaxed**: This will perform best efforts to engage the RTP Proxy, if it can't be engaged because of either network errors, or because you don't have enough RTP capacity, the calls will connect directly.
-
-
-+ **RTP Proxy distinctions**: When a call is established between customer and provider, audio can be set-up in one of two ways:
+    
+!!!! info "RTP Proxy distinctions"
+    When a call is established between customer and provider, audio can be set-up in one of two ways:
 
     |                        | **With RTP Proxy** |  **Without RTP Proxy** |
     |------------------------|:------------------:|-----------------------:|
@@ -143,7 +138,12 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
     | **Latency**            | Low                | Lowest                 |
     | **Information Leakage**| No                 |  Yes*                  |
 
-*While it's doubtful that any information will be logged in the customer/providers switch when the audio is engaged, it is possible for an engineer to learn this information from a SIP trace, PCAP, or by looking at transit locations. DTMF Detection ONLY works when RTP Proxy mode is enabled.*
+    *While it's doubtful that any information will be logged in the customer/providers switch when the audio is engaged, it is possible for an engineer to learn this information from a SIP trace, PCAP, or by looking at transit locations. DTMF Detection ONLY works when RTP Proxy mode is enabled.*
+
++ **RTP Proxy Mode**: If connection via our service fails, and relaxed is selected, it will failover to backup automatically. 
+
+    * **Strict**: This will enforce the proxy engagement. If the proxy can't engage with the call, the call will not be established. Note: Free accounts are limited to how many RTP Proxy channels are enabled, this may prevent calls connecting if you have more channels than our free accounts allow you to have.
+    * **Relaxed**: This will perform best efforts to engage the RTP Proxy, if it can't be engaged because of either network errors, or because you don't have enough RTP capacity, the calls will connect directly.
 
 
 !!! Success "When should I use RTP Proxy?"
