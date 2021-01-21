@@ -128,18 +128,6 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
     * **Direct RTP (no proxy)**: Bypass ConnexCS, so media flows directly between the customer and carrier. If the customer is using a firewall or other NAT device incorrectly then media may not flow between carrier and customer. Using this setting also means that if there are audio issues, the issue can't be ConnexCS. Since it isn't likely to be the carrier, the issue would typically exist on the customer's end. 
     * **Zone**: Select any of the regional servers, however it is recommended you choose a location near a provider or your customer. Temporarily selecting a different region to route media traffic can be helpful in diagnosing call problems. 
     
-!!! info "RTP Proxy distinctions"
-    When a call is established between customer and provider, audio can be set-up in one of two ways:
-
-    |                        | **With RTP Proxy** |  **Without RTP Proxy** |
-    |------------------------|:------------------:|-----------------------:|
-    | **Audio Path**         | Indirect           | Direct                 |
-    | **Audio Quality**      | Excellent          | Unbeatable             |
-    | **Latency**            | Low                | Lowest                 |
-    | **Information Leakage**| No                 |  Yes*                  |
-
-    *While it's doubtful that any information will be logged in the customer/providers switch when the audio is engaged, it is possible for an engineer to learn this information from a SIP trace, PCAP, or by looking at transit locations. DTMF Detection ONLY works when RTP Proxy mode is enabled.*
-
 + **RTP Proxy Mode**: If connection via our service fails, and relaxed is selected, it will failover to backup automatically. 
 
     * **Strict**: This will enforce the proxy engagement. If the proxy can't engage with the call, the call will not be established. Note: Free accounts are limited to how many RTP Proxy channels are enabled, this may prevent calls connecting if you have more channels than our free accounts allow you to have.
@@ -151,6 +139,18 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 
 !!! Warning "When should I avoid using RTP Proxy?"
     You have other equipment in your SIP set-up which will act as a Media Relay or you want to run a test to see if audio problems are related to the ConnexCS switch.
+    
+!!! info "RTP Proxy distinctions"
+    When a call is established between customer and provider, audio can be set-up in one of two ways:
+
+    |                        | **With RTP Proxy** |  **Without RTP Proxy** |
+    |------------------------|:------------------:|-----------------------:|
+    | **Audio Path**         | Indirect           | Direct                 |
+    | **Audio Quality**      | Excellent          | Unbeatable             |
+    | **Latency**            | Low                | Lowest                 |
+    | **Information Leakage**| No                 |  Yes*                  |
+
+    *While it's doubtful that any information will be logged in the customer/providers switch when the audio is engaged, it is possible for an engineer to learn this information from a SIP trace, PCAP, or by looking at transit locations. DTMF Detection ONLY works when RTP Proxy mode is enabled.*
 
 + **Call Recording**: This allows you to record and store calls, which are then found under **Setup > Information > [Browsing Record](https://docs.connexcs.com/setup/information/recording/)**. The feature will first need to be enabled on the account under **Setup > Settings > Account > [Packages](https://docs.connexcs.com/setup/settings/account/#packages)** before it can be enabled here for individual customers. There is an additional charge of 0.003 on top of any existing fees or charges. 
 
