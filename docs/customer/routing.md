@@ -89,8 +89,8 @@ View and configure existing routes on the Routing tab in the Customer card. Clic
 ### Locks
 Used for troubleshooting, you can remove carriers from a route and run a quick test.  
 
-+ **Lock**: (Whitelist) Select one or more rate cards from the list of available providers. 
-+ **Exclude**: (Blacklist) Exclude access to one or more rate cards in the list of available providers.
++ **Lock** (Whitelist): Select one or more rate cards from the list of available providers. 
++ **Exclude** (Blacklist): Exclude access to one or more rate cards in the list of available providers.
 
 ### Media
 
