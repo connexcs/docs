@@ -85,7 +85,7 @@ Generic SIP Trace showing the Challenge Response:
     + **Channels, Flow Speed, Bandwidth**; Do NOT set use these fields. 
     + **Protocol**: This sets the type of signalling protocol for call setup, maintenance, and tear down. ConnexCS uses SIP for signalling, but here you select the transport protocol. (Note: SMPP, for SMS, is not currently supported.)
     + **IP Whitelist**: Enter specific IPs, or use CIDR notation to specify an entire subnet. 
-    + **NAT/SIP Ping**: Set behavior of pings sent from ConnexCS back to the through customer firewall to their UAC. 
+    + **NAT/SIP Ping**: Set behavior of pings sent from ConnexCS back to the customer through their firewall to their UAC. This helpful when there are remote agents connecting into the switch. 
         + **Disabled**: No pings are sent
         + **Enabled**: Send UDP ping every 60 seconds, helping to keep some longer calls (1800 or 3600 seconds) up. 
         + **Enabled (Timeout)**: Send UDP ping every 60 seconds and disconnect if the pings aren't returned.
