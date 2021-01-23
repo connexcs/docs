@@ -27,12 +27,11 @@ The ConnexCS User Interface (UI) can be configured for several different languag
 3. Select `Change Language`.
 4. Select a language from the drop-down list.   
 5. Click `Update`.
-    
-The ConnexCS Control Panel UI immediately displays most of the text in your preferred language.
+6. The ConnexCS Control Panel UI immediately displays most of the text in your preferred language.
     
 The following image illustrates how your Control Panel looks if you change the language to Spanish.
     
-    ![alt text][change-language-to-spanish]
+   ![alt text][change-language-to-spanish]
     
 [change-language-to-spanish]: /misc/img/change-language-to-spanish.png "change-language-to-spanish"
       
