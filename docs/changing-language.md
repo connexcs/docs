@@ -2,19 +2,21 @@
 
 The ConnexCS User Interface (UI) can be configured for several different languages:
 
- + اللغة العربية (Arabic)
- + Deutsch (German)
- + English
- + Español (Spanish)
- + Francais (French)
- + हिन्दी (Hindi, one of the official languages in India)
- + 日本語 (Japanese)
- + Kanuri (a dialect continuum spoken in Africa)
- + Português (Portuguese)
- + Русский (Russian)
- + తెలుగు (Telugu, a language spoken in some Indian states)
- + اردو (Urdu)
- + 中文 (Chinese).
+|Language|English Translation|
+|---|---|
+|اللغة العربية|Arabic|
+|Deutsch|German|
+|English|English|
+|Español|Spanish|
+|Francais|French|
+|हिन्दी|Hindi, one of the official languages in India|
+|日本語|Japanese|
+|Kanuri|A dialect continuum spoken in Africa|
+|Português|Portuguese|
+|Русский|Russian|
+|తెలుగు|Telugu, a language spoken in some Indian states|
+|اردو|Urdu|
+|中文|Chinese|
    
 !!! question "Will this change the language for every word on the UI?" 
     Modifying the language here will change most, but not all, of the words in the Control Panel. To modify existing translated words, and to add your own, go to Setup > Advanced > [Language](https://docs.connexcs.com/setup/advanced/language/).
@@ -28,7 +30,7 @@ The ConnexCS User Interface (UI) can be configured for several different languag
     
 The ConnexCS Control Panel UI immediately displays most of the text in your preferred language.
     
-    The following image illustrates how your Control Panel looks if you change the language to Spanish.
+The following image illustrates how your Control Panel looks if you change the language to Spanish.
     
     ![alt text][change-language-to-spanish]
     
