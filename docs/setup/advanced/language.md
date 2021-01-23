@@ -7,7 +7,7 @@ Use the **Language** interface to customize your selected interface language. Yo
     If you add a non-English equivalent for a word, say 'Channel' as 'canal', but there is an existing entry for 'Channel' as 'Canales', the Control Panel replaces the default entry with your new word.
 	
 ## Add Non-English Equivalents
-If you have changed the default language (see [**User Interface Display Language**.](https://docs.connexcs.com/changing-language/) for details), but see missing terms, you can add them in the Language panel. 
+If you have changed the default language (see [**User Interface Display Language**](https://docs.connexcs.com/changing-language/) for details), but see missing terms, you can add them in the Language panel. 
 
 To add non-English equivalents for your preferred language:
 
