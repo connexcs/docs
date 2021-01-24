@@ -49,9 +49,9 @@ Click the **`+`** to configure the following fields:
     |Breakout|Financially Accurate data available with limited query vectors.|
     |ScriptForge|Custom ScriptForge datasource, can be used to combine other data sources or even import external data in real-time.|
 
-**Fields** - What fields should be displayed in the Graph / Table. This changes per above data source.
-**Start Offset** - When there is NOT a data-selector on the page, the start offset will represent how far in the past the query will include.
-**Interval** 
++ **Fields** - What fields should be displayed in the Graph / Table. This changes per above data source.
++ **Start Offset** - When there is NOT a data-selector on the page, the start offset will represent how far in the past the query will include.
++ **Interval** 
 Select how the graph groups data. 
 
     |Option|Description|
@@ -60,12 +60,12 @@ Select how the graph groups data.
     |Collate|Collapse all the temporal data (ex: When selecting ACD, instead of having an axis for date/time, it will just display a single scalar value).|
     |Time-based|Choose how to group the data (ex: Selecting Hour will display a unique value for each hour).|
 
-**Collate / Group** - Choose how the data is to be grouped together. (Ex: Selecting "Customer" would mean that you would get a unique value for each customer.)
-**Limit** - How much collated data you wish to be displayed. Be careful not to include too many values.
-**Order By** - Which column you wish to order the data by, this is useful in combination with limit. Ex: display the top 10 customers with the worst ACD.
-**Width** - When the graph is rendered on a page with multiple graphs, choose how much of the page the graph takes up.
-**Stacked** - When using a line, area or bar chart, each series of data will be plotted offset of the previous series (not from the 0 on that axis)
-**Filter** - A filter is used to automatically filter the information that is displayed based on variables available from where the page is rendered. The format of a filter changes depending on the data source. Select a data source below to view the example:
++ **Collate / Group** - Choose how the data is to be grouped together. (Ex: Selecting "Customer" would mean that you would get a unique value for each customer.)
++ **Limit** - How much collated data you wish to be displayed. Be careful not to include too many values.
++ **Order By** - Which column you wish to order the data by, this is useful in combination with limit. Ex: display the top 10 customers with the worst ACD.
++ **Width** - When the graph is rendered on a page with multiple graphs, choose how much of the page the graph takes up.
++ **Stacked** - When using a line, area or bar chart, each series of data will be plotted offset of the previous series (not from the 0 on that axis)
++ **Filter** - A filter is used to automatically filter the information that is displayed based on variables available from where the page is rendered. The format of a filter changes depending on the data source. Select a data source below to view the example:
 
 === "g3"
 
@@ -91,5 +91,5 @@ Select how the graph groups data.
 	{"customer_id":"@companyId"}
     ```
 
-!!! note
+!!! tip
 	If you want to render a graph in this view for testing, you may need to temporarily hardcode a customer or carrier ID to make it work.
