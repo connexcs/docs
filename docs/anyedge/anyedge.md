@@ -117,32 +117,22 @@ To reduce the size of packets (to prevent fragmentation), you can apply compacti
 #### Compaction
 To use compaction, you need to select "Compact Enabled". You can also whitelist a number of fields if you do not want them to be compacted. Compaction can be enabled for calls in and/or calls out. See the table for availabler headers. 
 
-|Abbreviation|Header|
-|:---:|---|
-|a|Accept-Contact|
-|b|Referred-By|
-|c|Content-Type|
-|d|Request-Disposition|
-|e|Content-Encoding|
-|f|From|
-|i|Call-ID|
-|j|Reject-Contact|
-|k|Supported|
-|l|Content-Length|
-|m|Contact|
-|o|Event|
-|r|Refer-To|
-|s|Subject|
-|t|To|
-|u|Allow-Events|
-|v|Via|
-|x|Session-Expires|
-|y|Identity|
+|Abbreviation|Header|Abbreviation|Header|
+|:---:|---|:---:|---|
+|a|Accept-Contact|m|Contact|
+|b|Referred-By|o|Event|
+|c|Content-Type|r|Refer-To|
+|d|Request-Disposition|s|Subject|
+|e|Content-Encoding|t|To|
+|f|From|u|Allow-Events|
+|i|Call-ID|v|Via|
+|j|Reject-Contact|x|Session-Expires|
+|k|Supported|y|Identity|
+|l|Content-Length|||
+
 
 #### Compression
 Compression or Decompression can be enabled for Inbound and/or Outbound by selecting either "Compress Enabled (Deflate)", "Compress Enabled GZip" or "Decompress Enabled". There are additional flags to control how data must be compressed.
-
-
 
 ### Registration Proxy
 Having high availability with registrations ensures that you will always have an IP address which matches the hole punched when the UAC registers. Unlike other high availability setups, **AnyEdge** ensures that standard NAT hole-punching can work with UAC > UAS calls/messages after the end point that the UAC connects to, fails.
