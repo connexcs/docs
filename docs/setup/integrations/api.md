@@ -20,7 +20,7 @@
 
     ![alt text][api]
 
-3. (PayPal Express, Stripe, ScriptForge, Razor Pay only) Select the Mode: 
+3. Select the Mode (PayPal Express, Stripe, ScriptForge, Razor Pay only): 
     + **Test** for testing connections
     + **Live** for an active account
 4. Complete the dialog box and press the **`Save `** button.
@@ -28,10 +28,7 @@
 !!! info "API Service details"
     Each service requires different details. These can be obtained using your account with the specific provider(s). 
     
-## PayPal IPN Integration
-PayPal's **Instant Payment Notification (IPN)** is a service that provides notifications for PayPal transactions. IPN messages can be used to automate bulk payment processes, where consumers still send PayPal payments as normal. Payments made using this integration will automatically top-up the customer account in ConnexCS. For this to work, settings need to be configured on the ConnexCS control panel as well as PayPal.
-
-### Mass Payments
+## Compare PayPal options
 **Mass Payment** is a bulk payment method that sends funds in an uploaded file to PayPal, allowing the sender to pay less than the standard PayPal fees using their bulk order discounts. Since this payment doesn't trigger anything our VoIP system, we link into PayPal's IPN to accommodate notifications and balance sheet updates.
 
 **Mass Pay vs Express Checkout**
@@ -46,8 +43,10 @@ Use this comparison chart listing the differences between Mass Pay and Express C
 |Sender pays a 2% transaction fee, capped at $1 per payment.|Recipient pays by per-transaction deductions.|
 |Uses PayPal IPN.|Uses PayPal API Signature.|
 
+## PayPal IPN Integration
+PayPal's **Instant Payment Notification (IPN)** is a service that provides notifications for PayPal transactions. IPN messages can be used to automate bulk payment processes, where consumers still send PayPal payments as normal. Payments made using this integration will automatically top-up the customer account in ConnexCS. For this to work, settings need to be configured on the ConnexCS control panel as well as PayPal.
 
-### Integrate PayPal IPN
+### Configure PayPal IPN
 Below are the steps to configure IPN:
 
 **Step 1: Configure ConnexCS**
@@ -90,7 +89,7 @@ Enter the new credentials back into your account. (PayPal steps copied from PayP
 
 1. Press **`Save`**.
 
-### Add customer PayPal Email address to ConnexCS customer account
+### Configure Customer with PayPal Email address
 The following are instructions on how to add a PayPal Email address to a ConnexCS customer account:
 
 1. Navigate to Management :material-menu-right: Customer :material-menu-right: [Customer name] 
@@ -98,6 +97,9 @@ The following are instructions on how to add a PayPal Email address to a ConnexC
 1. Enter the customer's Name and PayPal email address and click **`Save`**.
 1. From the customer's main page, select Edit :material-menu-right: Config.
 1. Enter the customer PayPal email ID and click **`Save`**.
+
+### View PayPal IPN Payment Log
+These payments can be viewed under **Setup > Information > Payment Log**. 
 
 [paypal-9]: /setup/img/paypal-9.png "Paypal-9"
 [api]: /setup/img/api.png "API Integration"

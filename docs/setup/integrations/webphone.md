@@ -1,23 +1,20 @@
 # Web Phone
-Setup :material-menu-right: Integrations :material-menu-right: Web Phone
+**Setup :material-menu-right: Integrations :material-menu-right: Web Phone**
 
-The ConnexCS **Web Phone** runs directly from a browser without the need to install anything. If the user wishes to install the application, additional functionality can become available (ex: push notification capabilities while the app is closed). This means that the application has cross-platform functionality, including Windows, Mac, Android, iOS, etc.
+The ConnexCS **Web Phone** runs directly from a browser without the need to install anything, allowing customers to make calls via the internet using a softphone. If the user wishes to install the application, additional functionality can become available (ex: push notification capabilities while the app is closed). This means that the application has cross-platform functionality, including Windows, Mac, Android, iOS, etc.
   
 !!! warning "iOS limitations"
     iOS limits the ability to perform push notifications.
 
-## Web Phone Technical Details
+## Technical Details
 
 ### Application
-ConnexCS **Web Phone** is a WebRTC application using PWA. 
-
-**WebRTC** (Real-Time Communications) is a browser protocol which runs on top of an HTTPS connection. ConnexCS **Web Phone** uses WebRTC (HTTPS port 443) for SIP Signaling and WebSockets (random UDP ports) for the Media.
+ConnexCS **Web Phone** is a WebRTC application using PWA. **WebRTC** (Real-Time Communications) is a browser protocol which runs on top of an HTTPS connection. ConnexCS **Web Phone** uses WebRTC (HTTPS port 443) for SIP Signaling and WebSockets (random UDP ports) for the Media.
 
 !!! warning "BitDefender and WebSockets"
     BitDefender blocks WebSockets unless the phone. and webrtc. domains have been whitelisted. 
 
 A [**PWA** (Progressive Web Application)](https://en.wikipedia.org/wiki/Progressive_web_application) is an application written inside the web browser. It uses modern API and has the potential to replace traditional proprietary app-stores.
-
 
 ### State-level firewalls
 WebRTC is effective for bypassing state-level firewalls by:
@@ -36,103 +33,87 @@ MITM (Man-in-the-Middle) attacks actively intercept traffic between endpoints, w
 !!! tip "Debugging SIP Messages"
     If you need to debug Web Phone and see the SIP messages, you can enter `*#0*#` into the dial pad, this will switch on debugging mode in the browser console.
     
+## Navigation
+Navigate using the following sections in the footer menu at the bottom of Web Phone (see Menu tab under [Config Options](https://docs.connexcs.com/setup/integrations/webphone/#config-options) below to change how these are displayed):
 
-## Web Phone Setup and Configuration
+* **Agent**: Preview dialer
+* **History**: Previously dialed numbers and extensions
+* **Dialpad**: Dialpad for making and answering calls
+* **Contacts**: This is the same Contacts databased configured under **Class5 :material-menu-right: Phonebook**
+* **Settings**: View the Display Name, SIP information, and WS URL
+
+
+## Enable Web Phone 
 
 ### Setup Domains
-
 ConnexCS **Web Phone** needs 2 domains to function correctly:
 
-* **Domain (A)** - This is the location where the phone will be hosted and needs to be provided to your customers. Create a CNAME on your domain pointing to `portal.connexcs.com.` (yes, this is the same as the customer portal).
-* **Domain (B)** This is the signaling domain and is attached to your server. 
+* **Domain (A)** - Create a CNAME on your domain pointing to `portal.connexcs.com` (yes, this is the same as the customer portal). This is the location where the phone will be hosted and needs to be provided to your customers, such as `webphone.yourdomain.com`, where `yourdomain.com` is the domain that you own.
+* **Domain (B)** - This is the signaling domain and is attached to your server. 
 
 It is recommended to setup a DNS record within ConnexCS, then point a CNAME on your domain to the ConnexCS setup domain.
 
-### Verify Certificates
+### Create Certificates
+After the domains are configured, verify the certificates are under **Setup > Information > Certificates**:
 
-After the domains are configured, verify the certificates are in the certificate page under Setup > Information > Certificates:
-
-* If the domain is not listed, click on `Add Certificate`.
+* If the domain is not listed, click on `Add Certificate` and provide your domain name.
 * If the certificates are listed but they don't have an issue or expiry date, click on "Refresh Certificates". This may take up to 10 minutes to complete.
 
-### Enable WebRTC
-
+### Add WebRTC to server
 To setup WebRTC on a server:
 
 1. Ensure **Domain (B)** (signalling domain from above) points ONLY to the server where you enable WebRTC. 
-2. Navigate to Setup :material-menu-right: Settings :material-menu-right: Servers :material-menu-right: select the server then Edit.
-   * Update the FQDN to the server
-   * Ensure that both **TLS** and **WebRTC** are enabled
-   * Run `Install Server` if any settings were changed
+2. Navigate to **Setup :material-menu-right: Settings :material-menu-right: Servers :material-menu-right: select the server then Edit**.
+    * Update the FQDN to the server
+    * Ensure that both **TLS** and **WebRTC** are enabled
+    * Run `Install Server` if any settings were changed
 
 !!! tip "AnyEdge and WebRTC"
     If you are using AnyEdge, you can enable WebRTC automatically by adding a domain name to your AnyEdge Domain.
 
 ### Add Web Phone Domain
-
 Once domains, certificates, and server settings are updated, we can add the Web Phone domain. 
 
-1. Go to Setup :material-menu-right: Integrations :material-menu-right: Web Phone
+1. Go to **Setup :material-menu-right: Integrations :material-menu-right: Web Phone**
 1. For **Domain**, enter **Domain (A)** 
 2. Set **WebRTC Host** as **Domain (B)**
 3. Click **`Save`**
 
-Your Web Phone should now be working. 
+Your Web Phone should now be available. 
 
-## Web Phone Configuration
-
-Step 1: Set up CNAME record
-
-1. Sign in to your domain's account at your domain host.
-2. Locate the page for updating your domain's DNS records. The page might be called something like DNS Management, Name Server Management, or Advanced Settings.
-3. Locate the CNAME records for your domain.
-4. Add a new domain record, (such as `webphone.yourdomain.com`, where `yourdomain.com` is the domain that you own.
-5. Point it towards `portal.connexcs.com.`
-6. If you get asked for a TTL, we recommend setting this at 300 (seconds) - 5 minutes
-7. Once the domain has been configured with your provider you can add it on ConnexCS.
-
-!!! note
-	Your Customer Portal must be exposed via a CNAME which you setup. This won't work with A records or pointing directly.
-	
-Step 2: Add Domain to Portal
-
-1. Click the **`+`** button under **Web Phone**.
-2. Enter the details in their respective fields of the ensuing window.
-3. Click the **`Save`** button. A certificate will be issued for the domain soon afterwards
-
-### Config Options
+## Configure Web Phone
 *Click each tab to view configuration details.* 
 
 === "Basic"
 
     * **Domain** - The URL where the Web Phone is accessed (**Domain A** from the initial **Web Phone setup**).
-    * **Brand Name** - This is what will Display in the Web Phone. Your Account name will not be displayed.
-    * **WebRTC Host** - The server address that you will be connecting to (**Domain B** from the initial **Web Phone setup**). This is always a domain name and can be pointed directly to a server or to AnyEdge.
+    * **Brand Name** - This is what will display in the Web Phone; your Account name will not be displayed.
+    * **WebRTC Host** - The primary end point (server address) that you will connect to (**Domain B** from the initial **Setup Domains** above). This is always a domain name and can be pointed directly to a server or to AnyEdge.
     * **Template Customer** - A pre-configured customer on your account which is used to hold the default values for independently created customers. Available values for this template customer are:
-       * Customer [Fields in the customer itself, such as debit limit]
-       * Routes
-       * Payments
-       * Alerts
-       * Packages
-       * Contracts
-       * **Register Success HTML** - The contents of this box will be displayed to users after they have completed their signup process.
+        * Customer [Fields in the customer itself, such as debit limit]
+        * Routes
+        * Payments
+        * Alerts
+        * Packages
+        * Contracts
+    * **Register Success HTML** - Customize a message to display to customers once they have completed their signup process.
 
     !!! example "Template Customer Example"
-    You want to give all of your customers $5.00 credit. Create an account from: Management  Customer. Under Payments for that account, add $5.00. When a new customer creates an account from the Customer Portal, they will see a payment created for $5.00 at the same the time account was created.
+    You want to give all of your customers $5.00 credit. Create an account under **Management :material-menu-right: Customer**. Under Payments for that account, add $5.00. When a new customer creates an account from the Customer Portal, they will see a payment created for $5.00 at the same the time account was created.
 
 === "Menu"
 
-    Configure the Web Phone footer menu.
+    Configure the Web Phone footer menu:
 
     * **Title** - The label used for this page.
     * **Icon** - The Icon displayed in this position. (Web Phone uses Material Design. If you wish to change an icon, you can find a list [here](https://cdn.materialdesignicons.com/5.2.45/).
     * **Position** - Determine Icon position, starting with 1 on the far left. Select Disabled if you don't wish to show this item.
-    * **Template** - A Custom page can be used to display custom static & dynamic content. This is generated from a [template](/setup/config/templates/).
+    * **Template** - A Custom page can be used to display custom static & dynamic content. These are pre-built under **Setup :material-menu-right: Config :material-menu-right: Template**.
 
     ![alt text][webphone] 
     
     !!! tip "Frameless iframe"
-    We have implemented an edge case. If you wish for the custom page to be an `iframe`, you can use the following code to ensure that it fills up all the available space. Replace www.connexcs.com with the page you wish for it to display.
+    We have implemented an edge case. If you wish for the custom page to be an `iframe`, you can use the following code to ensure that it fills up all the available space (replace www.connexcs.com with the page you wish to display):
 	
 	```
 	<!-- NO-CONTAINER -->
@@ -147,7 +128,7 @@ Step 2: Add Domain to Portal
     * **Edit Settings** - As standard settings are non-editable, if you wish to allow a user to change settings, you can change this.
     * **Register** - Allow registration of new accounts, or only existing SIP Username / Passwords can login.
     * **Username as Title** - Change the title of the page to the username logged in.
-    * **Accept Payment** - Accept payments on the softphone, similar to on the customer portal.
+    * **Accept Payment** - Accept payments, similar to on the customer portal.
     * **Auto Answer** - Automatically answer an incoming call.
 
-[webphone]: /misc/img/webphone.png "WebPhone Menu"
+[webphone]: /setup/img/webphone.png "WebPhone Menu"

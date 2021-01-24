@@ -9,7 +9,7 @@
 * **LRN** - Locally Routed Number [Wikipedia LRN](https://en.wikipedia.org/wiki/Location_routing_number). A number portability system used to route NPA-NXX calls and allow the receiving carrier to determine the price of the call, not the destination number.
 * **NPA-NXX** - NPA is the Numbering Plan Area; NXX represents the specific office of the NPA.  The number is usually followed by four more identifying digits, making it NPA-NXX-XXXX.  The 'N' in NXX is different because it represents digits from 2-9 instead of 0-9, as it is with 'X'.  
 * **NER** - Network Effectiveness Ratio measures a network's ability to deliver phone calls independent of user actions like a terminal reject.   
-* **PDD** - Post-Dial Delay is the time between the last digit dialed and a ringer or equal action on the other end.  
+* **PDD** - Post-Dial Delay is the time between the last digit dialed and a ringer or equal action on the other end. This is useful to to check to determine if a carrier is slow to connect a call. 
 * **PSTN** - A Public Switched Telephone Network. It is a broad term that encompasses most telephone networks, including telephone lines, mobile networks, and communication satellites.  
 * **RTP** - Real-time Transer Protocol, a network protocol used to move media across IP-based systems.   
 * **SIP** - Session Initiation Protocol, a TCP/IP-based network protocol used in VoIP telephony to establish connections for telephone calls. 

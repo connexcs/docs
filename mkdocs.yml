@@ -85,9 +85,7 @@ pages:
     
     - Circuit Test: circuit-test.md
     
-    - Report:
-        - Reports: report.md
-        - Viewing Audit Logs: viewing-audit-logs.md    
+    - Report: report.md  
         
     - Status: system-status.md
 
@@ -165,7 +163,6 @@ pages:
         - Reporting Problems: reporting-problems.md
         - Number Manipulation: number-manipulation.md
         - Specification: spec.md
-        - WebPhone: webphone.md
         - Changing Language: changing-language.md
         - Changing Password: changing-password.md
         - Logging Out: logging-out.md

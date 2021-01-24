@@ -33,10 +33,10 @@ Selecting Low or High mode will define the action taken when a Warning or Critic
 | Low  | Call continues, shows in log only. | Call is blocked.                     |
 | High | Call is blocked.                   | Call is blocked, Account is blocked. |
 
-## Setup a Fraud Detection
+## Setup Fraud Detection
 Step 1: Create a Fraud Profile and Rules
 
-1. Go to Setup :material-menu-right: Advanced :material-menu-right: Fraud Profile, then click the **`+`**
+1. Click the **`+`**
 2. Enter the Name.
 3. Click **Save**.
 4. To the right of the new Profile, select **`View Rules`**.
@@ -47,7 +47,7 @@ Step 1: Create a Fraud Profile and Rules
 
 Step 2: Apply profile to customer route
 
-1. Go to Management :material-menu-right: Customer :material-menu-right: [your customer] :material-menu-right: Routing :material-menu-right: [select the route] :material-menu-right: Fraud.
+1. Go to **Management :material-menu-right: Customer :material-menu-right: [your customer] :material-menu-right: Routing :material-menu-right: [select the route] :material-menu-right: Fraud**.
 2. Select the **Fraud Profile**.
 3. Select the **Fraud Mode** (as defined above).
 4. Save the route.

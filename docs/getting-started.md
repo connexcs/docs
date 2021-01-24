@@ -2,21 +2,29 @@
 
 The initial setup in ConnexCS will configure a single carrier, a single customer, and a single rate card.
 
+!!! info "Changing UI language"
+    Change the display language for the UI by clicking your name in the upper-right corner and selecting [Change Language](https://docs.connexcs.com/changing-language/). 
+
 !!! note "What is my server IP Address?"
     IP addresses are deployed *after* you have completed the getting started steps.
     
 !!! help "Need Help?"
     If you need help, we offer free 1:1 training, you can book this at <https://connexcs.youcanbook.me/>
 
+___
+
 ## Prerequisites
   * You have a modern web browser such as Google Chrome, Firefox, Safari, or their equivalent.
   * You have a basic understanding of Telecoms--customers, providers, and rates.
   * You have created an account with ConnexCS.com.
 
+___
+
 ## Verify Contact Details
 Before you configure your account, you need to verify your email and mobile number. Use the Alerts icon at the top left of the screen to view all outstanding items:
 
 ![alt text][verify-email-1]
+
 
 ### Email Verification
 We verify email addresses to ensure that they are genuine. 
@@ -29,7 +37,7 @@ To verify your email address:
 3. Click the link in the email or copy & paste the code into the Verification Code field in the Verify Email pop-up. 
 4. Click `Verify`.
 
-![alt text][verify-email-2]
+    ![alt text][verify-email-2]
 
 ### Mobile Verification
 Mobile verification ensures all mobile devices associated with your account are genuine.  Before you verify a mobile number, make sure the information is correct. 
@@ -46,7 +54,9 @@ To verify a mobile number:
 5. Enter the code into the Verification Code field in the Verify Mobile pop-up. 
 5. Cick `Verify`.
 
-![alt text][verify-mobile]
+    ![alt text][verify-mobile]
+
+___
 
 ## Setup Personal Profile
 While not strictly necessary to configure your Personal Profile to complete basic setup, this is a good time to get it done. This can be found by clicking your name in the upper right corner and selecting `Profile`. 
@@ -111,6 +121,8 @@ You can create multiple payment records to cover a customer's invoices and recei
 4. Enter a Description and Total amount and select `Completed` from the drop-down menu if the payment has been made.
 5. Click `Save`.
 
+___
+
 ## Carrier Setup
 **Carriers** are your VoIP route providers. Below, we include only the required fields to set up a carrier.  For detailed instructions on carrier setup, see [Carrier Management](https://docs.connexcs.com/carrier/)
 
@@ -124,7 +136,7 @@ Navigate to Management :material-menu-right: Carrier
 3. Enter the termination IP address. Note: we also support SRV records & domains.
 4. Click `Save`
 
- ![alt text][carrier-auth-2]
+    ![alt text][carrier-auth-2]
 
 
 ## Rate Cards
@@ -133,6 +145,8 @@ Navigate to Management :material-menu-right: Carrier
 1. Before getting started, we recommend you review **[Building Rate Cards](https://docs.connexcs.com/rate-card-building/)**. You can also watch our **[Rate Card Setup video](https://docs.connexcs.com/video-guide/#rate-card-setup)**. 
 2. Setup the [Provider Rate Card(s)](https://docs.connexcs.com/provider-ratecard/) as customer cards will build off those. 
 3. Build the [Customer Rate Cards](https://docs.connexcs.com/customer-ratecard/) as needed.  
+
+___
 
 ## Ingress Routing
 To manage **Ingress Routing**, navigate to **Management** :material-menu-right: **Customer**
@@ -144,6 +158,8 @@ To manage **Ingress Routing**, navigate to **Management** :material-menu-right: 
 5. Click `Save`.
 
 For detailed routing configuration, see [Routing](https://docs.connexcs.com/customer/routing/). 
+
+___
 
 ## Deploy Servers
 **Deploy Servers** quickly using these instructions. Navigate to **Setup** :material-menu-right: **Settings** :material-menu-right: **Servers**:

@@ -43,7 +43,7 @@ We can use any of the following indicators to detect if NAT is present in the UA
 
  - Search the Contact header field for the occurrences of RFC1918 / RFC6598 addresses
  - Use the "received" test: "address in Via" is compared against the source IP address used for signaling
- - Search the top most VIA for the occurrences of RFC1918 / RFC6598 addresses
+ - Search the top-most VIA for the occurrences of RFC1918 / RFC6598 addresses
  - Search the SDP for the occurrences of RFC1918 / RFC6598 addresses
  - Test if the source port is different from the "port in Via"
  - Compare the "address in Contact" against the source IP address used for signaling
@@ -82,9 +82,10 @@ Malformed packets can cause all sorts of problems for your internal network, suc
 
 If a packet fails to validate, you can choose how this must be handled. You can handle this with a "400" error or with an "X-Validate-Fail" header. The reasons why a packet fails to validate are:
 
- - No SIP message
- - Header Parsing error
- - No "Call-ID" header
+> No SIP message
+> Header Parsing error
+> No "Call-ID" header
+
  - No "Content-Length" header for transports that require it (for example, TCP)
  - Invalid Content-Length, different from the size of the actual body
  - SDP body parsing error
@@ -114,34 +115,24 @@ To reduce the size of packets (to prevent fragmentation), you can apply compacti
 
 
 #### Compaction
-To use compaction, you need to select "Compact Enabled". You can also whitelist a number of fields if you do not want them to be compacted. Compaction can be enabled for calls in and/or calls out.
+To use compaction, you need to select "Compact Enabled". You can also whitelist a number of fields if you do not want them to be compacted. Compaction can be enabled for calls in and/or calls out. See the table for available headers. 
 
-The following short headers are available
+|Abbreviation|Header|Abbreviation|Header|
+|:---:|---|:---:|---|
+|a|Accept-Contact|m|Contact|
+|b|Referred-By|o|Event|
+|c|Content-Type|r|Refer-To|
+|d|Request-Disposition|s|Subject|
+|e|Content-Encoding|t|To|
+|f|From|u|Allow-Events|
+|i|Call-ID|v|Via|
+|j|Reject-Contact|x|Session-Expires|
+|k|Supported|y|Identity|
+|l|Content-Length|||
 
- - y - Identity
- - x - Session-Expires
- - v - Via
- - u - Allow-Events
- - t - To
- - s - Subject
- - r - Refer-To
- - o - Event
- - m - Contact
- - l - Content-Length
- - k - Supported
- - j - Reject-Contact
- - i - Call-ID
- - f - From
- - e - Content-Encoding
- - d - Request-Disposition
- - c - Content-Type
- - b - Referred-By
- - a - Accept-Contact
 
 #### Compression
 Compression or Decompression can be enabled for Inbound and/or Outbound by selecting either "Compress Enabled (Deflate)", "Compress Enabled GZip" or "Decompress Enabled". There are additional flags to control how data must be compressed.
-
-
 
 ### Registration Proxy
 Having high availability with registrations ensures that you will always have an IP address which matches the hole punched when the UAC registers. Unlike other high availability setups, **AnyEdge** ensures that standard NAT hole-punching can work with UAC > UAS calls/messages after the end point that the UAC connects to, fails.

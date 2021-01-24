@@ -1,5 +1,5 @@
 # Certificate
-Setup :material-menu-right: Information :material-menu-right: Certificate
+**Setup :material-menu-right: Information :material-menu-right: Certificate**
 
 **Certificate** management for public-key cryptography, such as:
 
@@ -14,7 +14,7 @@ ConnexCS provides certificates free of charge courtesy of **[Let's Encrypt](http
 To add a certificate:
 
 1. Click on the :fontawesome-plus: symbol.
-2. See configuration details below. 
+2. See configuration details below to use either **Let's Encrypt** or a **User Provided** certificate. 
 
 ### Let's Encrypt
 
@@ -22,21 +22,26 @@ To add a certificate:
 2. Set **User Provided** to "No". 
 3. Click **`Save`** and our system will provision the certificate for you.
 
-Let's Encrypt renewals are managed automatically.
+**Let's Encrypt** renewals are managed automatically.
 
 ### User Provided
 
 1. Enter the domain name for this certificate.
 2. Ensure that you have user provided to set to "Yes".
 3. Certificate and keys should be in PEM (base64 format).
-4. Paste your **Certificate** starting with `-----BEGIN CERTIFICATE-----` and ending with `-----END CERTIFICATE-----`.
-5. Paste your private **Key** starting with `-----BEGIN PRIVATE KEY-----` and ending with `-----END PRIVATE KEY-----`.
-6. Paste in your **CA(Certificate Authority) Certificate** starting with `-----BEGIN CERTIFICATE-----` and ending with `-----END CERTIFICATE-----`.
+4. Enter your **Certificate**
+    + Start with: `-----BEGIN CERTIFICATE-----`
+    + End with: `-----END CERTIFICATE-----`.
+5. Enter your private **Key** 
+    + Start with: `-----BEGIN PRIVATE KEY-----`
+    + End with: `-----END PRIVATE KEY-----`.
+6. Enter in your **CA(Certificate Authority) Certificate**
+    + Start with: `-----BEGIN CERTIFICATE-----`
+    + End with: `-----END CERTIFICATE-----`.
 
-Renewals for User Provided certificates are your responsibility.
+Renewals for **User Provided** certificates are your responsibility.
 
 ## Checking Certificates
-
 The Status column contains a :fontawesome-check: representing all checks having passed.
 
 A problem is represented by :fontawesome-exclamation-triangle:. If you hover your mouse you will see a checklist explaining the issue.
