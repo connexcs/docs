@@ -31,24 +31,25 @@ Click the **`+`** to configure the following fields:
     + **Scatter**: 2 Axis of data
     + **Radar**: 1 Axis of data
     + **Gague**: 1 Axis of data
-+ **Source**: There are multiple sources of data which can be used:
-    + **Analytics**: Big Data multi-vector querying. *Note: Recalcs won't affect this data, and it never should be used for accurate financials.*
-    + **G3**: Single value time-series data.
-    + **RTP**: RTCP information.
-    + **Breakout**: Financially Accurate data available with limited query vectors.
-    + **ScriptForge**: Custom ScriptForge datasource, can be used to combine other data sources or even import external data in real-time.
-+ **Fields**: What fields should be displayed in the Graph / Table. This changes per above data source.
-+ **Start Offset**: When there is NOT a data-selector on the page, the start offset will represent how far in the past the query will include.
-+ **Interval**: Select how the graph groups data. 
-    + **Auto**- Automatically choose an appropriate temporal resolution.
-    + **Collate**- Collapse all the temporal data (ex: When selecting ACD, instead of having an axis for date/time, it will just display a single scalar value).
-    + **Time-based**- Choose how to group the data (ex: Selecting Hour will display a unique value for each hour).
-+ **Collate / Group**: Choose how the data is to be grouped together. (Ex: Selecting "Customer" would mean that you would get a unique value for each customer.)
-+ **Limit**: How much collated data you wish to be displayed. Be careful not to include too many values.
-+ **Order By**: Which column you wish to order the data by, this is useful in combination with limit. Ex: display the top 10 customers with the worst ACD.
-+ **Width**: When the graph is rendered on a page with multiple graphs, choose how much of the page the graph takes up.
-+ **Stacked**: When using a line, area or bar chart, each series of data will be plotted offset of the previous series (not from the 0 on that axis)
-+ **Filter**: A filter is used to automatically filter the information that is displayed based on variables available from where the page is rendered. The format of a filter changes depending on the data source. Select a data source below to view the example:
+
+**Source**: There are multiple sources of data which can be used:
++ **Analytics**: Big Data multi-vector querying. *Note: Recalcs won't affect this data, and it never should be used for accurate financials.*
++ **G3**: Single value time-series data.
++ **RTP**: RTCP information.
++ **Breakout**: Financially Accurate data available with limited query vectors.
++ **ScriptForge**: Custom ScriptForge datasource, can be used to combine other data sources or even import external data in real-time.
+**Fields**: What fields should be displayed in the Graph / Table. This changes per above data source.
+**Start Offset**: When there is NOT a data-selector on the page, the start offset will represent how far in the past the query will include.
+**Interval**: Select how the graph groups data. 
++ **Auto**- Automatically choose an appropriate temporal resolution.
++ **Collate**- Collapse all the temporal data (ex: When selecting ACD, instead of having an axis for date/time, it will just display a single scalar value).
++ **Time-based**- Choose how to group the data (ex: Selecting Hour will display a unique value for each hour).
+**Collate / Group**: Choose how the data is to be grouped together. (Ex: Selecting "Customer" would mean that you would get a unique value for each customer.)
+**Limit**: How much collated data you wish to be displayed. Be careful not to include too many values.
+**Order By**: Which column you wish to order the data by, this is useful in combination with limit. Ex: display the top 10 customers with the worst ACD.
+**Width**: When the graph is rendered on a page with multiple graphs, choose how much of the page the graph takes up.
+**Stacked**: When using a line, area or bar chart, each series of data will be plotted offset of the previous series (not from the 0 on that axis)
+**Filter**: A filter is used to automatically filter the information that is displayed based on variables available from where the page is rendered. The format of a filter changes depending on the data source. Select a data source below to view the example:
 
 === "g3"
 
