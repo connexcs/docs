@@ -22,25 +22,25 @@ Click the **`+`** to configure the following fields:
 * **Route:** Management :material-menu-right: Customer :material-menu-right: Route Stats
 * **Report:** Management :material-menu-right: Report :material-menu-right: Reports
 
-**Section** - Allows you to group analytic components together when sharing the same name. This may often be collated together in the same tab.
++ **Section** - Allows you to group analytic components together when sharing the same name. This may often be collated together in the same tab.
 
-**Title & Subtitle** - Displays title and subtitle information on the rendered graph / table.
++ **Title & Subtitle** - Displays title and subtitle information on the rendered graph / table.
 
-**Output** - Select to render data in either Graph or Table, or both together.
++ **Output** - Select to render data in either Graph or Table, or both together.
 
-**Graph Type** - The following graph types are supported.
++ **Graph Type** - The following graph types are supported.
 
-   |Type|Description|
-   |---|---|
-   |Line|2 Axis of data, one can be temporal|
-   |Bar|2 Axis of data, one can be temporal|
-   |Area|2 Axis of data, one can be temporal|
-   |Pie|1 Axis of data|
-   |Scatter|2 Axis of data|
-   |Radar|1 Axis of data|
-   |Gague|1 Axis of data|
+    |Type|Description|
+    |---|---|
+    |Line|2 Axis of data, one can be temporal|
+    |Bar|2 Axis of data, one can be temporal|
+    |Area|2 Axis of data, one can be temporal|
+    |Pie|1 Axis of data|
+    |Scatter|2 Axis of data|
+    |Radar|1 Axis of data|
+    |Gague|1 Axis of data|
 
-**Source** - There are multiple sources of data which can be used:
++ **Source** - There are multiple sources of data which can be used:
 
 |Source|Description|
 |---|---|
@@ -55,12 +55,13 @@ Click the **`+`** to configure the following fields:
 **Start Offset** - When there is NOT a data-selector on the page, the start offset will represent how far in the past the query will include.
 
 **Interval** 
+Select how the graph groups data. 
 
 |Option|Description|
 |---|---|
-|AutoAutomatically choose an appropriate temporal resolution.|
-|Collate|Collapse all the temporal data (EX: When selecting ACD, instead of having an axis for date/time, it will just display a single scalar value).|
-|Others|Choose a resolution you wish to group the data into (Ex: Selecting hour will display a unique value for each hour).|
+|Auto|Automatically choose an appropriate temporal resolution.|
+|Collate|Collapse all the temporal data (ex: When selecting ACD, instead of having an axis for date/time, it will just display a single scalar value).|
+|Time-based|Choose how to group the data (ex: Selecting Hour will display a unique value for each hour).|
 
 **Collate / Group** - Choose how the data is to be grouped together. (Ex: Selecting "Customer" would mean that you would get a unique value for each customer.)
 
