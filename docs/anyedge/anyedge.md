@@ -115,7 +115,7 @@ To reduce the size of packets (to prevent fragmentation), you can apply compacti
 
 
 #### Compaction
-To use compaction, you need to select "Compact Enabled". You can also whitelist a number of fields if you do not want them to be compacted. Compaction can be enabled for calls in and/or calls out. See the table for availabler headers. 
+To use compaction, you need to select "Compact Enabled". You can also whitelist a number of fields if you do not want them to be compacted. Compaction can be enabled for calls in and/or calls out. See the table for available headers. 
 
 |Abbreviation|Header|Abbreviation|Header|
 |:---:|---|:---:|---|
