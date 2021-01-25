@@ -9,6 +9,9 @@ Before deploying your first server, make sure that you have completed the [Getti
 !!! note "Available Balance needed for server deployment"
     To deploy a server, you must have $20 (+ $20 X other servers in your account) available balance.
 
+!!! warning "Impact to services"
+    If you are a serious carrier *Never let your account run out of credit*. It should go without saying, but if your account runs out of credit service will be impacted, it may not instantly be restored either. We will not consider any reactivation problems critical if you persistently top-up only enough credit to cover you for the next day.
+    
 ## Server List
 The **Servers** section provides an overview of deployed servers:
 
@@ -103,9 +106,6 @@ To reactivate a server:
 2. Click **Reactivate** to activate your server.
 
    ![alt text][server-6]
-
-!!! warning "Impact to services"
-    If you are a serious carrier *Never let your account run out of credit*. It should go without saying, but if your account runs out of credit service will be impacted, it may not instantly be restored either. We will not consider any reactivation problems critical if you persistently top-up only enough credit to cover you for the next day.
     
 ## Server Clustering and User Location Registration
 ### User Location Registration
@@ -117,7 +117,7 @@ This is accomplished by the User Agent Client (UAC), or a soft phone / hard phon
 ### NAT Keep Alives
 If a user is registered via UDP via NAT, a port mapping is created. However, the NAT will time out, and this connection is not kept alive by traffic. The Connex Cloud Switch will perodically send keep-alive messages to the registered UAC. This can either be UDP or full SIP ```OPTIONS``` messages. Both are acceptable, though the SIP ```OPTIONS``` ping will reply back to the ConnexCS Server. From this ping, we can monitor the latency of the connection, and also discern if the the NAT has destroyed the rule or if the user has gone offline without notifying the system. Once a user is registered via UDP, the connection is verified once again.
 
-## Deployment Options
+### Deployment Options
 
 1) **Single Server**: No additional configuration is needed for a single server.
 2) **Server Array**: For multiple servers, decide whether or notusers registered to _Server A_ can call users on _Server B_. If so, set the *UAC Location Array Sharing* Option in the servers to which you wish to expose the registrations, which in this example is _Server B_.
