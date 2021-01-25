@@ -58,6 +58,7 @@ Using **CLI Restrict** lets you block calls, essentially creating a Blacklist of
 4. Click **`Save`**.
 
 ## CLI Default Behaviors
+
 Scenario 1: No CLIs configured and "Approved CLI's Only" is Disabled ==> All CLIs will be allowed through
 Scenario 2: No CLIs configured and "Approved CLI's Only" is Enabled ==> No calls will be allowed through
 Scenario 3: "Approved CLI's Only" is enabled and call is made from a CLI which has not been configured ==> Error: CLI Restriction in effect
