@@ -54,7 +54,7 @@ Click the blue pencil to edit.
 + **Add Load Balancer**: Add servers to the cluster.
 + **Flush**: Force a server update.
 
-**Switch**
+**Switch**[create an anchor](#switch)
 
 + **FQDN**: The FQDN (Fully Qualified Domain Name) needs to be set for TLS security to be enabled directly on the server.
 + **Cluster**: Group servers to share information such as dialogues and throughput. Ex: if you set CPS to 10, clustered servers will allow 10 CPS, un-clustered servers will allow 10 CPS per server. 
