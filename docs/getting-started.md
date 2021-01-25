@@ -78,7 +78,7 @@ ___
 ## Customer Setup
 These instructions for basic **Customer** setup will help you create a profile and setup account details like IP addresses and payments.  For more detailed instructions about setting up customers, see [Customer Management](https://docs.connexcs.com/customer/customer/) and following sections.
 
-Navigate to Management :material-menu-right: Customer to modify customer details, filter the customer list, and perform bulk actions. To view outstanding actions on a customer, hover over the Warning icon. In the example below, you can see that routing has not been set. In that case, you would click on the customer's name to update their routing details.
+Navigate to **Management :material-menu-right: Customer** to modify customer details, filter the customer list, and perform bulk actions. To view outstanding actions on a customer, hover over the Warning icon. In the example below, you can see that routing has not been set. In that case, you would click on the customer's name to update their routing details.
 
 ![alt text][warning-icon]  
 
@@ -100,8 +100,7 @@ Navigate to Management :material-menu-right: Customer to modify customer details
 5. Click Save.
 
 !!! note "Additional Authentication Support"
-    We support SRV (service) records & domains too. A Service record identifies servers that provide
-special services to a domain, e.g. defining where a SIP service may be found.
+    We support SRV (service) records & domains too. A Service record identifies servers that provide special services to a domain, e.g. defining where a SIP service may be found.
 
 
 ### Set SIP User Authentication
@@ -126,7 +125,7 @@ ___
 ## Carrier Setup
 **Carriers** are your VoIP route providers. Below, we include only the required fields to set up a carrier.  For detailed instructions on carrier setup, see [Carrier Management](https://docs.connexcs.com/carrier/)
 
-Navigate to Management :material-menu-right: Carrier
+Navigate to **Management :material-menu-right: Carrier**:
 
 2. Enter the Carrier Name
 3. Select the Carrier's currency type, e.g. dollars, pounds, or euros.
@@ -149,7 +148,7 @@ Navigate to Management :material-menu-right: Carrier
 ___
 
 ## Ingress Routing
-To manage **Ingress Routing**, navigate to **Management** :material-menu-right: **Customer**
+To manage **Ingress Routing**, navigate to **Management :material-menu-right: Customer**:
 
 1. Click on the customer's name.
 2. Select **Routing**.
@@ -162,7 +161,7 @@ For detailed routing configuration, see [Routing](https://docs.connexcs.com/cust
 ___
 
 ## Deploy Servers
-**Deploy Servers** quickly using these instructions. Navigate to **Setup** :material-menu-right: **Settings** :material-menu-right: **Servers**:
+**Deploy Servers** quickly using these instructions. Navigate to **Setup :material-menu-right: Settings :material-menu-right: Servers**:
 
 2. Select **Deploy a Server**
 3. Choose a server location.
