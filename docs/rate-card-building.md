@@ -1,6 +1,6 @@
 # Rate Card Overview
 
-**Rate Cards** are an important ConnexCS feature as this is how most information is organized. Rate Cards define both how customer calls are routed and also how those calls will be billed. When a dialed number comes in, it hits a customer card first. The Customer Card is assoicated with one or more PRovider Cards, each of which will have different means for routing the calls and billing the call. We can also say that Customer Cards are built from Provider Cards. 
+**Rate Cards** are an important ConnexCS feature as this is how most information is organized. Rate Cards define both how customer calls are routed and also how those calls will be billed. When a dialed number comes in, it hits a customer card first. The Customer Card is assoicated with one or more Provider Cards, each of which will have different means for routing the calls and billing the call. We can also say that Customer Cards are built from Provider Cards. 
 
 !!! tip "Rate Card Terminology"
     Several terms in ConnexCS can be used interchangeably when talking about Rate Cards:
