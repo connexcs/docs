@@ -12,7 +12,8 @@ ConnexCS uses standard telephony terminology in our Control Panel and documnetat
 |**DTMF**|**Dual-Tone Frequency Modification**||
 |**LCR**|**Least-Cost Route**|The practice of managing traffic in a VoIP network in the least expensive way. 'Expensive' can relate to the actual cost, or it can abstractly refer to time and effort.|
 |**LRN**|**Locally Routed Number**|[Wikipedia LRN](https://en.wikipedia.org/wiki/Location_routing_number). A number portability system used to route NPA-NXX calls and allow the receiving carrier to determine the price of the call, not the destination number.|
-|**NPA-NXX**|**NPA is the Numbering Plan Area; NXX represents the specific office of the NPA**|The number is usually followed by four more identifying digits, making it NPA-NXX-XXXX.  The 'N' in NXX is different because it represents digits from 2-9 instead of 0-9, as it is with 'X'.|  
+|**NPA-NXX**|**NPA=Numbering Plan Area
+NXX=Specific office of the NPA**|The number is usually followed by four more identifying digits, making it NPA-NXX-XXXX.  The 'N' in NXX is different because it represents digits from 2-9 instead of 0-9, as it is with 'X'.|  
 |**NER**|**Network Effectiveness Ratio**|Measures a network's ability to deliver phone calls independent of user actions like a terminal reject.|   
 |**PDD**|**Post-Dial Delay**|The time between the last digit dialed and a ringer or equal action on the other end. This is useful to to check to determine if a carrier is slow to connect a call.| 
 |**PSTN**|**Public Switched Telephone Network**|A broad term that encompasses most telephone networks, including telephone lines, mobile networks, and communication satellites.|  
