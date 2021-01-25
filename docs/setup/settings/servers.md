@@ -10,7 +10,7 @@ Before deploying your first server, make sure that you have completed the [Getti
     To deploy a server, you must have $20 (+ $20 X other servers in your account) available balance.
 
 ## Server List
-The **Servers** section provides and overview of deployed servers:
+The **Servers** section provides an overview of deployed servers:
 
 + **IP**: The unique server IP address. To view SIP and ICMP latency, hover over the status icon next to the server IP. 
 + **Type**: Typically either **Dispatcher** (load-balancer) or **Switch** (cluster member)
@@ -106,6 +106,25 @@ To reactivate a server:
 
 !!! warning "Impact to services"
     If you are a serious carrier *Never let your account run out of credit*. It should go without saying, but if your account runs out of credit service will be impacted, it may not instantly be restored either. We will not consider any reactivation problems critical if you persistently top-up only enough credit to cover you for the next day.
+    
+## Server Clustering and User Location Registration
+### User Location Registration
+
+A call sent to a server is actually an ```INVITE``` sent to a remote server. However, if users connect from dynamic IP addresses, there must be a a way to map a known constant address, e.g a username, to a dynamic endpoint such as an IP address or port.
+
+This is accomplished by the User Agent Client (UAC), or a soft phone / hard phone, connecting to the ConnexCS server with a ```REGISTER``` sending their current location and their username, along with additional information. The information is then stored, and made available as a lookup. When someone calls a user, it routes the call to their IP address.
+
+### NAT Keep Alives
+If a user is registered via UDP via NAT, a port mapping is created. However, the NAT will time out, and this connection is not kept alive by traffic. The Connex Cloud Switch will perodically send keep-alive messages to the registered UAC. This can either be UDP or full SIP ```OPTIONS``` messages. Both are acceptable, though the SIP ```OPTIONS``` ping will reply back to the ConnexCS Server. From this ping, we can monitor the latency of the connection, and also discern if the the NAT has destroyed the rule or if the user has gone offline without notifying the system. Once a user is registered via UDP, the connection is verified once again.
+
+## Deployment Options
+
+1) **Single Server**: No additional configuration is needed for a single server.
+2) **Server Array**: For multiple servers, decide whether or notusers registered to _Server A_ can call users on _Server B_. If so, set the *UAC Location Array Sharing* Option in the servers to which you wish to expose the registrations, which in this example is _Server B_.
+3) **Server Cluster**: Joined servers in a cluster share all user location registrations. This is the best solution to scale into the many 1000's of registrations. Be advised: you will not be able to route calls to users registered against any servers outside the cluster. 
+
+!!! tip "Ping Overhead"
+    Due to design constraints that occur with multiple servers in an array, NAT Keep Alive Pings can be quite intensive. You could use *Disable UAC Ping* from the server page, upgrade to a cluster, or use a single registration server to solve this. More intricate measures can be arranged on a case-by-case basis.
 
 [rtpserver]: /misc/img/rtpservers.png "RTP Server"
 [server-6]: /misc/img/244.png "server-6"
