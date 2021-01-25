@@ -1,7 +1,7 @@
 # Acronyms and Definitions
 ConnexCS uses standard telephony terminology in our Control Panel and documnetation. 
 
-|Acronym|Term|Definition/Explanation|
+|Term|Definition|Explanation|
 |---|---|---|
 |**ACD**|**Average Call Duration**|The average length of calls for a given scenario, ACD can be a marker of how efficient phone systems are at solving problems quickly.|
 |**ALOC**|**Average Length of Call**|See ACD.|
