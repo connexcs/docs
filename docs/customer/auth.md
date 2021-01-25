@@ -90,11 +90,10 @@ Generic SIP Trace showing the Challenge Response:
         + **Enabled**: Send UDP ping every 60 seconds, helping to keep some longer calls (1800 or 3600 seconds) up. 
         + **Enabled (Timeout)**: Send UDP ping every 60 seconds and disconnect if the pings aren't returned.
     + **Retain DID**: When Enabled, this retains the desination number (DID) the call is sent to in the system, rather than the SIP Username. 
-    + **Smart Extension**: Calls are sent to the Class5, not Classs4 infrastructure. This feature is currently in Alpha and is not recommended. 
+    + **Smart Extension**: Calls are sent to the Class5, not Class4 infrastructure. This feature is currently in Alpha and is not recommended. 
 
      ![alt text][sip-b]
      
-
 === "Codecs"
 
     All Codecs are supported for the SIP user unless specifically set as "Restricted" here. 
