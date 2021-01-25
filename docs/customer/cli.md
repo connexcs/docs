@@ -69,7 +69,7 @@ Scenario 4 (Whitelist): Configure a number as a CLI in customer routing.
 
 Scenario 5 (Blacklist): Configure a CLI then add it to "CLI Restrict" under Provider Rate Cards. 
 
-*"Approved CLIs Only" is set under **Edit Customer :material-menu-right: Verification***
+*"Approved CLIs Only" is set under **Edit Customer :material-menu-right: Verification** *
 
 ## General Condition 6 (GC6) Compliance
 ConnexCS is GC6 compliant for end users, which: 
