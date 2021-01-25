@@ -72,7 +72,7 @@ ConnexCS is GC6 compliant for end users, which:
 
 > requires Communications Providers (CPs) to provide CLI facilities, and ensure that the CLI Data provided with a call includes a valid, dialable telephone number which uniquely identifies the caller." For details on this General Condition, including guidelines for "valid" and "dialable" numbers, see OFCOM's [Guidance on CLI Facilities](https://www.ofcom.org.uk/__data/assets/pdf_file/0012/113214/statement-guidelines-cli-facilities.pdf).
 
-To configure per customer, set the CLI "P-Asserted-ID" found CLI configuration above. 
+To set the "P-Asserted-ID" per customer, see [Configure CLI](https://docs.connexcs.com/customer/cli/#configure-cli) above. 
 
 [cli]: /customer/img/cli.png "CLI Main"
 [edit-cli]: /customer/img/edit-cli.png "Edit CLI"
