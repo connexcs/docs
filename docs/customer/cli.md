@@ -32,7 +32,7 @@ Field details:
 
 + **Direction Applied**: Select either **Termination** for calls a customer makes out, or **Origination** (also refers to DIDs) for inbound calls made to our customers. Ex: Create a white list that only allows calls to or from the same country.  
 
-![alt text][edit-cli]
+    ![alt text][edit-cli]
 
 ## Advanced CLI Match & Manipulation
 The CLI system uses Regular Expressions to match and replace numbers. Here are a few examples:
@@ -59,10 +59,14 @@ Using **CLI Restrict** lets you block calls, essentially creating a Blacklist of
 
 ## CLI Default Behaviors
 
-Scenario 1: No CLIs configured and "Approved CLI's Only" is Disabled ==> All CLIs will be allowed through
-Scenario 2: No CLIs configured and "Approved CLI's Only" is Enabled ==> No calls will be allowed through
-Scenario 3: "Approved CLI's Only" is enabled and call is made from a CLI which has not been configured ==> Error: CLI Restriction in effect
-Scenario 4 (Whitelist): Configure a number as a CLI in customer routing
+Scenario 1: No CLIs configured and "Approved CLI's Only" is Disabled ==> All CLIs will be allowed through.
+
+Scenario 2: No CLIs configured and "Approved CLI's Only" is Enabled ==> No calls will be allowed through.
+
+Scenario 3: "Approved CLI's Only" is enabled and call is made from a CLI which has not been configured ==> Error: CLI Restriction in effect.
+
+Scenario 4 (Whitelist): Configure a number as a CLI in customer routing.
+
 Scenario 5 (Blacklist): Configure a CLI then add it to "CLI Restrict" under Provider Rate Cards. 
 
 *"Approved CLIs Only" is set under **Edit Customer :material-menu-right: Verification***
