@@ -11,8 +11,8 @@ ConnexCS uses standard telephony terminology in our Control Panel and documnetat
 |**CPS**|**Calls Per Second**|The volume of calls, usually referring to how many calls can be handled per second, rather than how many a system can recieve.|   
 |**CDR**|**Call Detail Records**|In-depth information about calls that pass through a VoIP exchange.  CDRs are generally a source data for billing and consumer tracking.|
 |**Codec**|**Coder-Decoder**|System data that relates to the bi-lateral conversion between analong analog and digital signals, usually with some form of compression.|
-|**DID**|**Direct Inward Dial**||
-|**DTMF**|**Dual-Tone Frequency Modification**||
+|**DID**|**Direct Inward Dial**|By assigning a public number to an internal location, outside callers can reach a desitation without going through a PBX.|
+|**DTMF**|**Dual-Tone Multi-Frequency**|A signaling system which connects points in the telephony network, typically between telephone equipment, communications devices, and switching centers. See [Wikipedia DTMF]() for more details.|
 |**FAS**|||
 |**Flow Speed**|n/a||
 |**FQDN**|**Fully Qualified Domain Name**||
