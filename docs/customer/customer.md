@@ -4,6 +4,10 @@ ConnexCS **Customers** are organized through customer cards located under **Mana
 
 ![alt text][customers]
 
+!!! question "How many customers can I add?"
+    You can add unlimited customers, and will not be charged per customer, only on their individual usage. 
+
+
 ## Customer View Modification
 
 * **Columns** pop out on the right allows you to add/remove options, change column order, in some cases you can create row groups and aggregate values for pivot functionality
