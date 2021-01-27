@@ -33,8 +33,8 @@ We **do not** consider the following items insecure. We completely understand th
 
 This **does not** mean we don't monitor activity on either of these, nor does it mean that we don't have automatically reactive systems to ensure uptime in the event of an attack.
 
-### IMCP Pings
-IMCP (Internet Message Control Protocol) pings messages (e.g ping www.connexcs.com). IMCP Ping attacks were once common, related to the packet size versus available bandwidth. They still happen, but it is more useful to enable IMCP replies to correctly establish the status of a server.
+### ICMP Pings
+ICMP (Internet Control Message Protocol) pings messages (e.g ping www.connexcs.com). ICMP Ping attacks were once common, related to the packet size versus available bandwidth. They still happen, but it is more useful to enable ICMP replies to correctly establish the status of a server.
 
 ### SIP / RTP Firewall Block on Default.
 Our SIP Servers only run SIP, and nothing else. Our RTP Servers run RTP, and nothing else. 5060 is not firewalled, nor are any of our RTP Ports on our RTP Servers.
