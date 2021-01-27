@@ -3,11 +3,11 @@ ConnexCS uses standard telephony terminology in our Control Panel and documentat
 
 |Term|Definition|Explanation|
 |---|---|---|
-|**ACD**|**Average Call Duration**|The average length of calls for a given scenario, ACD can be a marker of how efficient phone systems are at solving problems quickly.|
-|**ALOC**|**Average Length of Call**|See ACD.|
-|**ASR**|**Answer Seisure Ratio**|The call success rates for a given system, weighing answered calls versus total calls.|  
+|**ACD**|*Average Call Duration*|The average length of calls for a given scenario, ACD can be a marker of how efficient phone systems are at solving problems quickly.|
+|**ALOC**|*Average Length of Call*|See ACD.|
+|**ASR**|*Answer Seisure Ratio*|The call success rates for a given system, weighing answered calls versus total calls.|  
 |**Channel**|n/a|A currently live call on the system. |
-|**CLI**|**Calling Line Identification**|Identifies the caller's telephone number, which is often then displayed to the call recipient in the form of Caller-ID.|
+|**CLI**|*Calling Line Identification*|Identifies the caller's telephone number, which is often then displayed to the call recipient in the form of Caller-ID.|
 |**CPS**|**Calls Per Second**|The volume of calls, usually referring to how many calls can be handled per second, rather than how many a system can receive.|   
 |**CDR**|**Call Detail Records**|In-depth information about calls that pass through a VoIP exchange.  CDRs are generally a source data for billing and consumer tracking.|
 |**Codec**|**Coder-Decoder**|Encodes and decodes data between analog and digital signals, usually with some form of compression.|
