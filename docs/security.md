@@ -71,13 +71,7 @@ In addition to the above ConnexCS security, we also recommend the following prac
     + No knowledge-based authentication (e.g. who was your best friend in high school?)
     + No SMS for 2FA (use a one-time password from an app like Google Authenticator)
 2. Hardware Security Tokens: Yubikey is an example of  hardware security token which can never be digitaly stolen can be used for logins to ConnexCS.
-
-    <div class="video-wrapper">
-      <iframe width="1280" height="720" src="https://www.youtube.com/watch?v=_EqOmhahBQc" frameborder="0" allowfullscreen></iframe>
-    </div>
-
-    <a href="http://www.youtube.com/watch?feature=player_embedded&v=EqOmhahBQc" target="_blank"><img src="http://img.youtube.com/vi/EqOmhahBQc/0.jpg" alt="Yubikey" width="240" height="180" border="10" /></a>
-
+    <a href="https://www.youtube.com/embed/_EqOmhahBQc" target="_blank"><img src="https://www.youtube.com/embed/_EqOmhahBQc" alt="Yubikey" width="240" height="180" border="10" /></a>
 3. Duo Security or Google/Microsoft Authenticator: As per the NIST recommendations above SMS should not be trusted for second factor authentication. We implement both Duo Security and [Time-based One-time Password Algorithm (TOTP; specified in RFC 6238)](https://tools.ietf.org/html/rfc6238),
 which can be used by Google Authenticator or Microsoft Authenticator.
 
