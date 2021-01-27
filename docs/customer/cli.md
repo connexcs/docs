@@ -2,17 +2,18 @@
 
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Routing**
 
-Configuring a number as a **CLI (Calling Line Identification)** in ConnexCS gives the customer the ability to control which numbers are allowed to initiate calls. Once added, these numbers are essentially a Whitelist. 
+**CLI (Caller Line Identification)** is way for VoIP systems to identify incoming calls for sorting and logging. It is the technical term for the mechanism we know as **Caller ID**. In VoIP systems, CLI is more than just a way to display the number of incoming calls, however. It doubles as a defense against unidentified call attempts and provides information to sort incoming calls.
 
-!!! info "What does CLI mean?"
+In ConnexCS, **CLI Restrict** lets you present CLIs on customer accounts, so that any caller without a valid number is rejected outright. Enabling the **Force CLI** option lets users pass the CLI without setting it on the customer's end. If no CLI rules are added, the defaults are used. The mechanic also supports regular expressions.
+
+!!! tip "How is CLI derived?"
     **CLI** refers to the **CLI/ANI** field in the `From` part of the `SIP INVITE` message. This contains specific information about the caller, particularly the name and number of the person initiating the call. Also known as "Caller ID" in standard phone systems, CLI may also be referred to as "A-Leg" or "A-Number", where the call originates. The call is then terminated at the Dialed Number, the "B-Leg" or "B-Number".
-
-
+    
 ## Configure CLI
 
 ![alt text][cli]
 
-Any number configured as a CLI is considered part of the Whitelist (unless additional configuration is applied to block it). To add a number:
+Configuring a number as a **CLI (Calling Line Identification)** in ConnexCS gives the customer the ability to control which numbers are allowed to initiate calls. Any number configured as a CLI is considered part of the Whitelist (unless additional configuration is applied to block it). To add a number:
 
 1.	Click on the **`+`** button under **CLI**.
 2.	Fill out the fields in the dialogue box and **`Save`**.
@@ -28,9 +29,9 @@ Field details:
 !!! tip "P-Asserted-ID Use Case"
     If you wanted to allow all calls, but assign a specific number (such as the Main Billable number for the business), you would set CLI as "\*" then enter the desired P-Asserted ID. All calls will then have this number as the P-Asserted-ID. 
 
-+ **Forced**: Enabling this will allow a call if there are no other matching CLIs in the system. This will also replace the CLI that is presented with the CLI entered here. Ex: Create a whitelist of CLIs, then select **Forced** on the CLI to use if none of the others in the white list match. (Best practice is to only have one **Forced** CLI.)
++ **Forced**: Enabling this will allow a call if there are no other matching CLIs in the system. This will also replace the CLI that is presented with the CLI entered here. Ex: Create a whitelist of CLIs, then select **Forced** on the CLI to use if none of the others in the whitelist match. (Best practice is to only have one **Forced** CLI.)
 
-+ **Direction Applied**: Select either **Termination** for calls a customer makes out, or **Origination** (also refers to DIDs) for inbound calls made to our customers. Ex: Create a white list that only allows calls to or from the same country.  
++ **Direction Applied**: Select either **Termination** for calls a customer makes out, or **Origination** (also refers to DIDs) for inbound calls made to our customers. Ex: Create a whitelist that only allows calls to or from the same country.  
 
     ![alt text][edit-cli]
 
