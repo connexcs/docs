@@ -27,7 +27,7 @@ Before you configure your account, you need to verify your email and mobile numb
 
 
 ### Email Verification
-We verify email addresses to ensure that they are genuine. 
+Email verification is the process by which ConnexCS determines if an email address is genuine. It is a measure against unauthorized users accessing customer accounts. It works similar to most email verification mechanisms. The system sends a verification code to the user's email, which is verified when the user enters the code back into the verification.
 
 To verify your email address:
 
@@ -40,7 +40,7 @@ To verify your email address:
     ![alt text][verify-email-2]
 
 ### Mobile Verification
-Mobile verification ensures all mobile devices associated with your account are genuine.  Before you verify a mobile number, make sure the information is correct. 
+**Mobile Verification** is the process by which we verify mobile phone numbers to ensure that they are genuine, and is an extension of **Email Verification**. Mobile Verification ensures all mobile devices associated with your account are genuine. Before verifying a mobile number, make sure the information is correct. 
 
 !!! note "Number Format"
     The number must be in E.164 format. E.164 numbers are formatted [+] [country code] [subscriber number including area code] and have a maximum of fifteen digits.
