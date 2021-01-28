@@ -24,13 +24,12 @@ This provides a view of Live Channels, Customers, Carriers, and Rate Cards
 ![alt text][dashboard]
 
 ### Channels 
-Quickly view and sort **Customers** or **Carriers** by Channels in Use (highest and lowest).
+Table view of **Customers** and **Carriers** sorted by Channels in Use (highest and lowest).
 
 ### Live Channels
 Upper graphs:
 
-+ **Channels** This graph displays all currently active channels 
-Use the icons in upper right corner ![alt text][profit] to refresh, select options, or download the graph. 
++ **Channels** This graph displays all currently active channels. Use the icons in upper right corner ![alt text][profit] to refresh, select options, or download the graph. 
 + **Channels SanKey** Shows which calls and carriers are linked together. *Diagram in development*
 
 Lower graphs:
@@ -40,8 +39,9 @@ Lower graphs:
 + Daily Spend (displayed by customers)
 + Customer/Provider spend (from SanKey Diagram above)
 + Profit (daily stats on profit and loss, good for analysis)
++ Registration Count (currently registered end-points)
 
 
-[top of page]: /customer-portal/img/topofpage.png
-[dashboard]: /customer-portal/img/dashboard.png
-[profit]: /customer-portal/img/profit.png
+[top of page]: /misc/img/topofpage.png "Top of Page"
+[dashboard]: /misc/img/dashboard.png "Dashboard"
+[profit]: /misc/img/profit.png "Graph Actions"
