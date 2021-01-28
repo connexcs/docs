@@ -84,7 +84,7 @@ Navigate to **Management :material-menu-right: Customer** to modify customer det
 
 ### Create a new Customer
 1. Click on the `+` icon. 
-2. Enter the customer's Name.
+2. Enter the Customer's Name.
 3. Select the currency to use for this account. Please note this cannot be changed later.
 4. Add a tax percentage, which will be calculated for each added payment.
 5. Click `Save`.
@@ -127,6 +127,7 @@ ___
 
 Navigate to **Management :material-menu-right: Carrier**:
 
+1. Click on the `+` icon. 
 2. Enter the Carrier Name
 3. Select the Carrier's currency type, e.g. dollars, pounds, or euros.
 4. Click `Save`
