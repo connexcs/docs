@@ -7,10 +7,10 @@ There are several methods of contacting ConnexCS for assistance outlined below. 
 ## Support Channels
 
 ### Online Chat
-Online chat is real-time assistance that is useful when you are unable to call.  The blue help icon at the bottom of this page will lead you to a chat window.  Clicking this button alerts staff, and the first person to become available will reply as soon as possible.  We find that most questions get resolved efficiently this way. Please note that the chat system is for one-on-one communication about a specific problem, not for multiple concerns or system-wide change requests. 
+**Online chat** is real-time assistance that is useful when you are unable to call.  The blue help icon at the bottom of this page will lead you to a chat window.  Clicking this button alerts staff, and the first person to become available will reply as soon as possible.  We find that most questions get resolved efficiently this way. Please note that the chat system is for one-on-one communication about a specific problem, not for multiple concerns or system-wide change requests. 
 
 ### Support Tickets
-Support tickets are created by sending an email to [support@connexcs.com].
+**Support tickets** are created by sending an email to [support@connexcs.com].
 
 ### Phone
 To speak to a Support Representative, please call our office number listed at [www.connexcs.com](https://www.connexcs.com/). 
@@ -19,15 +19,19 @@ To speak to a Support Representative, please call our office number listed at [w
     Our support line rings directly to our engineers. We kindly ask that you only ring this number during 9:00am - 23:00pm UTC, unless there is a CRITICAL issue.
     
 ### SMS
-Contact us using SMS at the following numbers:
+Contact us using **SMS**:
+
 + UK: +44 7481 346 455
 + USA: +1 408 475 9494
 
 ### Telegram
-Contact us via [Telegram](https://t.me/connexcs_support_bot) using the @connexcs_support_bot. 
+Contact us via **Telegram**:
+
++ https://t.me/connexcs_support_bot
++ @connexcs_support_bot
 
 ### NOC-On-Demand
-If you are interested in NOC-on-Demand or Enhanced Support, which would give 24/7 (or to cover their time zone) operational support, please contact us directly to discuss this option. 
+If you are interested in **NOC-on-Demand** or Enhanced Support, which would give 24/7 (or to cover their time zone) operational support, please contact us directly to discuss this option. 
 
 
 ## Report a Problem
@@ -38,8 +42,8 @@ Issues are classified based on a combination of Category and Severity. If you ar
 
 #### Categories
 
-+ **Platform**- Refers to the stability of the ConnexCS system (typically outside customer control). Ex: ConnexCS platform is down. 
-+ **Operational** - Anything within the customer's control. Ex: configuration issues. 
+**Platform**- Refers to the stability of the ConnexCS system (typically outside customer control). Ex: ConnexCS platform is down. 
+**Operational** - Anything within the customer's control. Ex: Configuration issues. 
 
 #### Severity Levels
 
@@ -58,7 +62,7 @@ Issues are classified based on a combination of Category and Severity. If you ar
 #### Response Times
 
 + Platform support for P2+ Issues = 24/7.
-+ Operational Support = 8:00am - 8:00pm UTC (regular working hours). Whenever possible, we may provide support outside these times if we are available (best effort). We are a small team, so we request you keep this in mind when reporting issue severity. 
++ All other Platform issues and Operational Support = 8:00am - 8:00pm UTC (regular working hours). Whenever possible, we may provide support outside these times if we are available (best effort). We are a small team, so we request you keep this in mind when reporting issue severity. 
 
 !!! note "Classification usage"
     These Severity levels are here to assess the impact of a problem but are not followed blindly. We will attempt to answer support requests 24/7, however repeated instances of reporting Critical incidents beyond normal working hours may result in fines on the account or account termination.
