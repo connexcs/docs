@@ -1,5 +1,5 @@
-# Reporting a Problem
-This page covers the best practices for reporting problems to ConnexCS support.  We encourage feedback but also want to make sure you have the most efficient means of expressing a problem so there are no delays.
+# Customer Support
+There are several methods of contacting ConnexCS for assistance outlined below. If you need to Report a Problem, please make sure you check that section for information on issue classification and response times, and some tips for rerpoting issues so we can best address your needs. 
 
 !!! tip "ConnexCS System Status"
     Before reporting a problem, please check the [ConnexCS System Status Page](https://status.connexcs.com/) for current known issues. 
@@ -9,24 +9,39 @@ This page covers the best practices for reporting problems to ConnexCS support. 
 ### Online Chat
 Online chat is real-time assistance that is useful when you are unable to call.  The blue help icon at the bottom of this page will lead you to a chat window.  Clicking this button alerts staff, and the first person to become available will reply as soon as possible.  We find that most questions get resolved efficiently this way. Please note that the chat system is for one-on-one communication about a specific problem, not for multiple concerns or system-wide change requests. 
 
-### Tickets
-Support tickets are created by sending an email to support@connexcs.com
+### Support Tickets
+Support tickets are created by sending an email to [support@connexcs.com].
 
 ### Phone
-To speak to a support representative, please call our office number listed at [www.connexcs.com](https://www.connexcs.com/). 
+To speak to a Support Representative, please call our office number listed at [www.connexcs.com](https://www.connexcs.com/). 
 
 !!! error "When to call the support number"
     Our support line rings directly to our engineers. We kindly ask that you only ring this number during 9:00am - 23:00pm UTC, unless there is a CRITICAL issue.
+    
+### SMS
+Contact us using SMS at the following numbers:
++ UK: +44 7481 346 455
++ USA: +1 408 475 9494
 
-## Issue Classification and Response times
+### Telegram
+Contact us via [Telegram](https://t.me/connexcs_support_bot) using the @connexcs_support_bot. 
+
+### NOC-On-Demand
+If you are interested in NOC-on-Demand or Enhanced Support, which would give 24/7 (or to cover their time zone) operational support, please contact us directly to discuss this option. 
+
+
+## Report a Problem
+This section covers the best practices for reporting problems to ConnexCS support.  We encourage feedback but also want to make sure you have the most efficient means of expressing a problem so there are no delays.
+
+### Issue Classification and Response times
 Issues are classified based on a combination of Category and Severity. If you are not able to determine the Category or Severity, we can help with this. 
 
-### Categories
+#### Categories
 
 + **Platform**- Refers to the stability of the ConnexCS system (typically outside customer control). Ex: ConnexCS platform is down. 
 + **Operational** - Anything within the customer's control. Ex: configuration issues. 
 
-### Severity Levels
+#### Severity Levels
 
 |Level|Severity|Example|
 |---|---|---|
@@ -40,7 +55,7 @@ Issues are classified based on a combination of Category and Severity. If you ar
 !!! tip "Reporting issues with new interconnects"
     When reporting an issue with a new interconnect that is not working, please be advised that this is not considered a Critical issue. 
 
-### Response Times
+#### Response Times
 
 + Platform support for P2+ Issues = 24/7.
 + Operational Support = 8:00am - 8:00pm UTC (regular working hours). Whenever possible, we may provide support outside these times if we are available (best effort). We are a small team, so we request you keep this in mind when reporting issue severity. 
@@ -48,7 +63,7 @@ Issues are classified based on a combination of Category and Severity. If you ar
 !!! note "Classification usage"
     These Severity levels are here to assess the impact of a problem but are not followed blindly. We will attempt to answer support requests 24/7, however repeated instances of reporting Critical incidents beyond normal working hours may result in fines on the account or account termination.
 
-## Requested Troubleshooting and Information
+### Requested Troubleshooting and Information
 For best results when reporting an issue, please provide us with the following information. This will help our support staff and engineers best address reported problems. 
 
 **Step 1: Check for Outages**
@@ -66,7 +81,7 @@ Sometimes complications are resolved easily by turning off parameters that are n
 
 **Step 3: Gather data**
 
-This step helps us understand and resolve your issue as quickly as possible
+This step helps us understand and resolve your issue as quickly as possible.
 
 * **User Interface Issues**: Including a screenshot along with a clear description of the problem can really help us understand what needs to be resolved. For an efficient utility to take UI screenshots, we recommend a browser plugin called "Lightshot", or use your OS's built-in snipping tool.
 * **Problems with Calls**: For problems with call flow, the **Call-ID** is how we identify which calls are affected. It helps us isolate customers, providers, and/or channels that may be affected. Call-ID is found in the **Logging** section by clicking on a call, and then copying the ID to right of the panel.
@@ -75,13 +90,9 @@ This step helps us understand and resolve your issue as quickly as possible
 !!! failure "Respectful communications"
     We are also happy to talk with you about wider SIP topics outside of our switch where possible. Under no circumstance will we tolerate rude behaviour, intimidation or threats. We are all SSVVP and SSCA qualified, and whenever possible, we will cite references or point you to SIP traces for fact-checking information.
 
-## Reporting Multiple Problems
+### Reporting Multiple Problems
 If you have more than one problem to report, we ask:
 
 1. Create a separate ticket for each request.  This so that the individual concerns get routed to the correct staff.
 2. Allow an adequate amount of time for us to assess the problem and resolve it.  We first have to assess if the problems are connected, adding extra time onto finding the roots themselves.
 3. Call instead of emailing.  This is so we can get a concise reading on all concerns quickly and ask follow-up questions on the spot.
-
-
-## NOC-On-Demand
-If you are interested in NOC-on-Demand or Enhanced Support, which would give 24/7 (or to cover their time zone) operational support, please contact us directly to discuss this option. 
