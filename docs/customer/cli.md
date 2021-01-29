@@ -52,9 +52,9 @@ The CLI system uses Regular Expressions to match and replace numbers. Here are a
 ## Blacklist numbers
 Using **CLI Restrict** lets you block calls, essentially creating a Blacklist of numbers. To block a configured CLI:
 
-1. Click **Management** > **Rate Card**. 
+1. Click **Management :material-menu-right: Rate Card**. 
 2. Select **Provider Rate Card** (under the Name column).
-1. Select **Properties** > **Advanced**.
+1. Select **Properties :material-menu-right: *Advanced**.
 3. Enter the CLI/ANIs you want to block in the **CLI Restrict** box.
 4. Click **`Save`**.
 
