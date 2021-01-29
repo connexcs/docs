@@ -1,4 +1,5 @@
 # Dialogs
+**Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Dialogs**
 
 **Dialogs** displays the currently active calls on the account. Use the Refresh button to get up to date information. 
 
