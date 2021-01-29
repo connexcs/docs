@@ -38,6 +38,7 @@ pages:
   - Cloudswitch:
     - Home: index.md
     - Getting Started: getting-started.md
+    - Customer Support: reporting-problems.md
     - Video Guide: video-guide.md
     - Dashboard : dashboard.md
 
@@ -161,7 +162,6 @@ pages:
         - Feature List: feature-list.md
         - Monitoring Guide: monitoring.md
         - Customer Documents Guide: doc-guide.md
-        - Reporting Problems: reporting-problems.md
         - Number Manipulation: number-manipulation.md
         - Specification: spec.md
         - Changing Language: changing-language.md
