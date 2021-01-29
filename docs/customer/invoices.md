@@ -1,5 +1,5 @@
 # Invoice
-**Manage :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Invoice**
+**Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Invoice**
 
 ConnexCS allows for straightforward **Invoice** generation for all providers. The tool is another way to eliminate gaps in communication between providers and customers. 
 
