@@ -2,7 +2,7 @@
 There are several methods of contacting ConnexCS for assistance outlined below. If you need to Report a Problem, please make sure you check that section for information on issue classification and response times, and some tips for rerpoting issues so we can best address your needs. 
 
 !!! tip "ConnexCS System Status"
-    Before reporting a problem, please check the [ConnexCS System Status Page](https://status.connexcs.com/) for current known issues. 
+    Before reporting a problem, please check the [**ConnexCS System Status Page**](https://status.connexcs.com/) for current known issues. 
 
 ## Support Channels
 
@@ -10,10 +10,10 @@ There are several methods of contacting ConnexCS for assistance outlined below. 
 **Online Chat** allows for real-time assistance. Initial communication is done with a bot. If the bot is unable to help, it will advise you to type "Human" to be connected with a support representative. Clicking this button alerts staff, and the first person to become available will reply as soon as possible.  We find that most questions get resolved efficiently this way. Please note that the chat system is for one-on-one communication about a specific problem, not for multiple concerns or system-wide change requests. 
 
 ### Support Tickets
-**Support Ticket** (found at the bottom of the ConnexCS navigation menu) displays all open tickets for an account. Tickets are created by sending an email to support@connexcs.com.
+**Support Ticket** (found at the bottom of the ConnexCS navigation menu) displays all open tickets for an account. Tickets are created by sending an email to [**support@connexcs.com**].
 
 ### Phone
-To speak to a Support Representative, please call our office number listed at [www.connexcs.com](https://www.connexcs.com/). 
+To speak to a Support Representative, please call our office number listed at [**www.connexcs.com**](https://www.connexcs.com/). 
 
 !!! error "When to call the support number"
     Our support line rings directly to our engineers. We kindly ask that you only ring this number during 9:00am - 23:00pm UTC, unless there is a CRITICAL issue.
@@ -72,11 +72,11 @@ For best results when reporting an issue, please provide us with the following i
 
 **Step 1: Check for Outages**
 
-Please check the [ConnexCS System Status Page](https://status.connexcs.com/) for current known issues. 
+Please check the [**ConnexCS System Status Page**](https://status.connexcs.com/) for current known issues. 
 
 **Step 2: Check Documentation**
 
-ConnexCS onsite documentation, found at [docs.connexcs.com](https://docs.connexcs.com/), serves multiple functions:
+ConnexCS onsite documentation, found at [**docs.connexcs.com**](https://docs.connexcs.com/), serves multiple functions:
 
 * To provide a repository where you can search for information relevant to your problem.
 * To inform your questions when you contact support.
