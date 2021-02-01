@@ -1,4 +1,4 @@
-## Payments
+# Payments
 
 **Setup :material-menu-right: Settings :material-menu-right: Payments**
 
