@@ -60,7 +60,7 @@ When you enable **IP Authentication**, you associate the IP of a customer switch
     
     Example: International calls coming in with a + should be replaced with a specific country code. 
 
-    ![alt text][parameter-rewrite]
+    &emsp; ![alt text][parameter-rewrite]
 ___    
 
 ### IP Authentication Audit Log
