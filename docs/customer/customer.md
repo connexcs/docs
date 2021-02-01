@@ -52,6 +52,7 @@ From the **Customers** page, you can perform several management operations.
 
 &emsp ![alt text][customer-status]
 
+
 ## Adding Customers
 
 1. Click the **`+`** button.
