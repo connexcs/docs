@@ -50,7 +50,7 @@ From the **Customers** page, you can perform several management operations.
 
 **Active**: Filter customer(s) based on account status. Results on the page will automatically arrange themselves according to the filter.
 
-&emsp ![alt text][customer-status]
+&emsp; ![alt text][customer-status]
 
 
 ## Adding Customers
