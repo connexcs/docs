@@ -43,7 +43,7 @@ View and configure existing routes on the Routing tab in the Customer card. Clic
     ^1(204|226|236|249|250|289|306|343|403|416|418|438|450|506|514|519|579|581|587|604|613|647|705|709|778|780|807|819|867|902|905)
     ```
 
-!!! warning "Using Rate Cards for multiple countries"
+&emsp !!! warning "Using Rate Cards for multiple countries"
     Ingress Routing is not independently aware of what type of card you are using, and more specifically the appropriate dial strings it needs to send. So if, for example, you are using both UK and US cards, you need to enter appropriate dial strings in the routes you set up for each card type.
 
 + **Enabled**: The route can be easily enabled and disabled here. 
@@ -152,7 +152,13 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 
     *While it's doubtful that any information will be logged in the customer/providers switch when the audio is engaged, it is possible for an engineer to learn this information from a SIP trace, PCAP, or by looking at transit locations. DTMF Detection ONLY works when RTP Proxy mode is enabled.*
 
-+ **Call Recording**: This allows you to record and store calls, which are then found under **Setup > Information > [Browsing Record](https://docs.connexcs.com/setup/information/recording/)**. The feature will first need to be enabled on the account under **Setup > Settings > Account > [Packages](https://docs.connexcs.com/setup/settings/account/#packages)** before it can be enabled here for individual customers. There is an additional charge of 0.003 on top of any existing fees or charges. 
++ **Call Recording**: This allows you to record and store calls, which are then found under **Setup > Information > [Browsing Record](https://docs.connexcs.com/setup/information/recording/)**. There is an additional charge of 0.003 on top of any existing fees or charges, so choose carefully how many calls to record:
+    + Disabled: no calls are recorded
+    + Sampling: Choose from 1%, 5%, 25 or 50% sample of your calls
+    + Enabled (Always On): Record all calls
+
+!!! tip "The Call Recording setting is disabled"
+    The feature will first need to be enabled on the account under **Setup > Settings > Account > [Packages](https://docs.connexcs.com/setup/settings/account/#packages)** before it can be enabled here for individual customers. 
 
 ### Strategy
 For advanced routing, click the **`+`** to select a [Prefix Set](https://docs.connexcs.com/setup/advanced/prefix-set/) and assign a [Routing Strategy](https://docs.connexcs.com/routing-strategy/). This gives you greater control over how routes are selected for a given customer. 
