@@ -1,12 +1,12 @@
 # Conference Calls
-**Class5 :material-menu-right: Conference**
+**Class 5 :material-menu-right: Conference**
 
 Use this feature when you want to allow multiple callers to communicate with each other over a voice call. The Callers join the call and are presided over by a Moderator. 
 
 ## Create Conference Call
 To create a conference call:
 
-1. Click the `+` icon.
+1. Click the **`+`** icon.
 2. Enter the following parameters
 
     * Enter a **Name** for the conference call.
@@ -22,7 +22,7 @@ To create a conference call:
     ![alt text][conference]
 
 !!! tip "Conference calls for external callers"
-    The standard Conference configuration above can only be used by customers internal to ConnexCS. To allow external numbers to dial into the conference, setup a [Customer DID](https://docs.connexcs.com/customer/did/#configure-did) and set the Destination to Internal, then select the available pre-configured conference. 
+    The standard Conference configuration above can only be used by customers internal to ConnexCS. To allow external numbers to dial into the conference, setup a [**Customer DID**](https://docs.connexcs.com/customer/did/#configure-did) and set the Destination to Internal, then select the available pre-configured conference. 
 
 ## Conference Call keypad options
 Callers may use the keypad to control the audio on the conference call. 
