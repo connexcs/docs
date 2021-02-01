@@ -1,4 +1,6 @@
 # Logging
+**Logging**
+
 **Logging** is used to check real-time call attempts, SIP traces, routing status, and to simulate a call. As soon as a call hits the ConnexCS system, it will display in the Logging area. Most issue debugging occurs in the Logging section. 
 
 ## Register Logging
