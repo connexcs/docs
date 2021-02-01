@@ -24,7 +24,7 @@ ___
 Before you configure your account, you need to verify your email and mobile number. Use the Alerts icon at the top left of the screen to view all outstanding items:
 
 <p align="center">
-![alt text][verify-email-1]
+![alt text](/getting-started/img/1.png "Verify")
 </p>
 
 ### Email Verification
@@ -175,7 +175,7 @@ For detailed server configuration, see **[Servers](https://docs.connexcs.com/set
 
 
 [notification-icon]: /getting-started/img/notification-icon.png "notification icon"
-[verify-email-1]: /getting-started/img/1.png "Verify"
+
 [verify-email-2]: /getting-started/img/verify-email.png "Verify Email"
 [verify-mobile]: /getting-started/img/verify-mobile.png "Verify Mobile"
 [warning-icon]: /getting-started/img/warning-icon.png "warning-icon"
