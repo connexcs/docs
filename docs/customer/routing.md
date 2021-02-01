@@ -179,7 +179,7 @@ For advanced routing, click the **`+`** to select a [Prefix Set](https://docs.co
 ## Disabled Routes
 Routes highlighted in red on the customer Routing page are disabled. To enable them, open the route, click **Enabled**, then **`Save`**. 
 
-   ![alt text][routing-disabled]
+&emsp; ![alt text][routing-disabled]
 
 
 ## Use Case for Tech Prefix
