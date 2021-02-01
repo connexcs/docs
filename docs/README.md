@@ -15,14 +15,17 @@ Sub-Topics match Control Panel Navigation when applicable, many items
 
 ### Logo and Image Guidelines
 
-+ All images have a "connexblue" border
-+ Images should be 
-
 + Use Reference-style: 
 
     ![alt text][logo]
 
-    [logo]: src/common/images/icon48.png "Logo Title Text 2"
+    [logo]: main/images/icon48.png "Logo Title Text 2"
+    
++ All images have a "connexblue" border
++ Images should be indented 4 spaces. This is accomplished in two ways:
+    + If the image appears in or just after a list, enter 4 spaces prior to the "alt text" tag
+    + For images that are not in/after a list, add "&emsp" before the "alt text" tag
+
 
 ### Typography
 - font
@@ -40,14 +43,14 @@ Inline Link Style AND Bold link text in brackets to make the link stand out: [**
     }
     ```
 
-+ "Click on" commands buttons (, Save, Open, Verify, etc): **`Save`** (bookend with back-ticks and bold)
-+ "Select option" action buttons/options (select from a pop-up, enable/disable): `xxx`
++ "Click on" commands buttons (+, Save, Open, Verify, etc) use bookend with back-ticks and bold: **`Save`**
++ "Select option" action buttons/options (select from a pop-up, enable/disable) use back-ticks: `xxx`
 
 
 ### UI Elements
 Many commonly-used elements, such as buttons, icons, navigation, forms, notifications, etc. should be defined with their properties and rules to help create product consistency.
 
-Describing Navigation or location of a document or an area of hte Control panel: entire path is **bold** and each step is separated by \:material-menu-right\:
+Describing Navigation or location of a document or an area of the Control panel: entire path is **bold** and each step is separated by \:material-menu-right\:
 + Ex: **Management :material-menu-right: Customer :material-menu-right: DID**
 
 ### Color Pallette
