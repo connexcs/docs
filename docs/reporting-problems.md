@@ -7,10 +7,10 @@ There are several methods of contacting ConnexCS for assistance outlined below. 
 ## Support Channels
 
 ### Online Chat
-**Online chat** is real-time assistance that is useful when you are unable to call.  The blue help icon at the bottom of this page will lead you to a chat window.  Clicking this button alerts staff, and the first person to become available will reply as soon as possible.  We find that most questions get resolved efficiently this way. Please note that the chat system is for one-on-one communication about a specific problem, not for multiple concerns or system-wide change requests. 
+**Online Chat** allows for real-time assistance. Initial communication is done with a bot. If the bot is unable to help, it will advise you to type "Human" to be connected with a support representative. Clicking this button alerts staff, and the first person to become available will reply as soon as possible.  We find that most questions get resolved efficiently this way. Please note that the chat system is for one-on-one communication about a specific problem, not for multiple concerns or system-wide change requests. 
 
 ### Support Tickets
-**Support tickets** are created by sending an email to [support@connexcs.com].
+**Support Ticket** (found at the bottom of the ConnexCS navigation menu) displays all open tickets for an account. Tickets are created by sending an email to support@connexcs.com.
 
 ### Phone
 To speak to a Support Representative, please call our office number listed at [www.connexcs.com](https://www.connexcs.com/). 
