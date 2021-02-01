@@ -27,7 +27,7 @@ Before you configure your account, you need to verify your email and mobile numb
 
 
 ### Email Verification
-We verify email addresses to ensure that they are genuine. 
+Email verification is the process by which ConnexCS determines if an email address is genuine. It is a measure against unauthorized users accessing customer accounts. It works similar to most email verification mechanisms. The system sends a verification code to the user's email, which is verified when the user enters the code back into the verification.
 
 To verify your email address:
 
@@ -40,7 +40,7 @@ To verify your email address:
     ![alt text][verify-email-2]
 
 ### Mobile Verification
-Mobile verification ensures all mobile devices associated with your account are genuine.  Before you verify a mobile number, make sure the information is correct. 
+**Mobile Verification** is the process by which we verify mobile phone numbers to ensure that they are genuine, and is an extension of **Email Verification**. Mobile Verification ensures all mobile devices associated with your account are genuine. Before verifying a mobile number, make sure the information is correct. 
 
 !!! note "Number Format"
     The number must be in E.164 format. E.164 numbers are formatted [+] [country code] [subscriber number including area code] and have a maximum of fifteen digits.
@@ -78,13 +78,13 @@ ___
 ## Customer Setup
 These instructions for basic **Customer** setup will help you create a profile and setup account details like IP addresses and payments.  For more detailed instructions about setting up customers, see [Customer Management](https://docs.connexcs.com/customer/customer/) and following sections.
 
-Navigate to Management :material-menu-right: Customer to modify customer details, filter the customer list, and perform bulk actions. To view outstanding actions on a customer, hover over the Warning icon. In the example below, you can see that routing has not been set. In that case, you would click on the customer's name to update their routing details.
+Navigate to **Management :material-menu-right: Customer** to modify customer details, filter the customer list, and perform bulk actions. To view outstanding actions on a customer, hover over the Warning icon. In the example below, you can see that routing has not been set. In that case, you would click on the customer's name to update their routing details.
 
 ![alt text][warning-icon]  
 
 ### Create a new Customer
 1. Click on the `+` icon. 
-2. Enter the customer's Name.
+2. Enter the Customer's Name.
 3. Select the currency to use for this account. Please note this cannot be changed later.
 4. Add a tax percentage, which will be calculated for each added payment.
 5. Click `Save`.
@@ -100,8 +100,7 @@ Navigate to Management :material-menu-right: Customer to modify customer details
 5. Click Save.
 
 !!! note "Additional Authentication Support"
-    We support SRV (service) records & domains too. A Service record identifies servers that provide
-special services to a domain, e.g. defining where a SIP service may be found.
+    We support SRV (service) records & domains too. A Service record identifies servers that provide special services to a domain, e.g. defining where a SIP service may be found.
 
 
 ### Set SIP User Authentication
@@ -126,8 +125,9 @@ ___
 ## Carrier Setup
 **Carriers** are your VoIP route providers. Below, we include only the required fields to set up a carrier.  For detailed instructions on carrier setup, see [Carrier Management](https://docs.connexcs.com/carrier/)
 
-Navigate to Management :material-menu-right: Carrier
+Navigate to **Management :material-menu-right: Carrier**:
 
+1. Click on the `+` icon. 
 2. Enter the Carrier Name
 3. Select the Carrier's currency type, e.g. dollars, pounds, or euros.
 4. Click `Save`
@@ -149,7 +149,7 @@ Navigate to Management :material-menu-right: Carrier
 ___
 
 ## Ingress Routing
-To manage **Ingress Routing**, navigate to **Management** :material-menu-right: **Customer**
+To manage **Ingress Routing**, navigate to **Management :material-menu-right: Customer**:
 
 1. Click on the customer's name.
 2. Select **Routing**.
@@ -162,7 +162,7 @@ For detailed routing configuration, see [Routing](https://docs.connexcs.com/cust
 ___
 
 ## Deploy Servers
-**Deploy Servers** quickly using these instructions. Navigate to **Setup** :material-menu-right: **Settings** :material-menu-right: **Servers**:
+**Deploy Servers** quickly using these instructions. Navigate to **Setup :material-menu-right: Settings :material-menu-right: Servers**:
 
 2. Select **Deploy a Server**
 3. Choose a server location.

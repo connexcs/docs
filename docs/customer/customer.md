@@ -1,8 +1,14 @@
 # Customer
 
-ConnexCS **Customers** are organized through customer cards located under **Management :material-menu-right: Customers**. 
+**Management :material-menu-right: Customer**
+
+ConnexCS **Customers** are organized through customer cards.
 
 ![alt text][customers]
+
+!!! question "How many customers can I add?"
+    You can add unlimited customers, and will not be charged per customer, only on their individual usage. 
+
 
 ## Customer View Modification
 
@@ -40,7 +46,7 @@ From the **Customers** page, you can perform several management operations.
    * SMS are sent to the Mobile number in each Contact. 
 
 !!! note "Custom Email Servers"
-    Change the outbound Email Server and SMS origination number in **Setup :material-menu-right: Settings". 
+    Change the outbound Email Server and SMS origination number in **Setup :material-menu-right: Settings**. 
 
 **Active**: Filter customer(s) based on account status. Results on the page will automatically arrange themselves according to the filter.
 
@@ -70,12 +76,12 @@ From the **Customers** page, you can perform several management operations.
 
 === "Config"
 
-    * **PayPal Email:** The email address associated with the customer's PayPal account. (This is relevant when using the IPN API which allows customers to make payments directly through PayPal instead of using the Customer Portal. See our API documentation for details on [PayPal IPN](https://docs.connexcs.com/setup/integrations/api/#paypal-ipn-integration).) 
+    * **PayPal Email:** The email address associated with the customer's PayPal account. (This is relevant when using the IPN API which allows customers to make payments directly through PayPal instead of using the Customer Portal. See our API documentation for details on [**PayPal IPN**](https://docs.connexcs.com/setup/integrations/api/#paypal-ipn-integration).) 
     * **Website:** The customer's website address.
     * **Portal Access:**  Users can turn **Portal Access** to `Yes` (on) or `No` (off). Selecting `No` will restrict user access to the Customer Portal. Since everyone uses the portal at this time, this should always be set to `Yes`. 
-    * **Tags**: Use this to add meta-data identifiers to a customer. If a customer is created using a template from [Global Routing](https://docs.connexcs.com/global-routing/), this will be the tag configured in the template.
+    * **Tags**: Use this to add meta-data identifiers to a customer. If a customer is created using a template from [**Global Routing**](https://docs.connexcs.com/global-routing/), this will be the tag configured in the template.
     * **TOML**: This is a data storage mechanism for configuration, similar to INI files. It allows you to create advanced customization to set values, etc, for Script Forge to reference later. 
-    * **Reseller**: Associate the customer to a preset Reseller Group (see [Create Groups](https://docs.connexcs.com/setup/settings/users/#create-groups) for more details.)
+    * **Reseller**: Associate the customer to a preset Reseller Group (see [**Create Groups**](https://docs.connexcs.com/setup/settings/users/#create-groups) for more details.)
     * **Invoice Schedule**: Specify frequency for invoice generation. 
     * **Invoice Due Days**: Set the allowed number of days past the due date that the invoice can go unpaid. 
 
@@ -96,7 +102,9 @@ From the **Customers** page, you can perform several management operations.
     These are arbitrary notes that can be entered onto an account at your discretion. 
     
 !!! note "Save Options"
-    Select **Save and Continue** to exit the Customer screen. **Save and Stay** is helpful when adding multiple Customers at a time. **Delay and Save** allows you to select a time from to elapse before saving the Customer and making them available for setup. 
+    + **Save and Continue** = Exit the Customer screen
+    + **Save and Stay** = Save the customer, but stay in the screen (helpful when adding multiple Customers at a time)
+    + **Delay and Save** = Select a time to elapse before saving the Customer, delaying the setup or change. 
 ___
 
 ## Managing Customers
@@ -105,16 +113,6 @@ Click an existing customer name from Customer Management screen then **Edit**. F
 
 
 [customers]: /customer/img/customers.png "Customer-Dashboard"
-[add-customer]: /customer/img/35.png "Add-Customer"
-
-
 [customer-status]: /customer/img/39.png "Customer-Status"
-[edit-customer]: /customer/img/40.png "Edit-Customer"
 
-[stats-tab]: /customer/img/42.png "Stats Tab"
 
-[CLI]: <https://docs.connexcs.com/en/latest/cli>
-[Ingress Routing]: <https://docs.connexcs.com/en/latest/ingress-routing>
-
-[customer]: /customer/img/60.png "customer"
-[contacts]: /customer/img/61.png "contacts"

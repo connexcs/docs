@@ -30,16 +30,18 @@ The **Contacts** section shows an overview of contacts associated with the Custo
 4. Enter the contact **Name** and login **Email** address.
 3. Select **Contact Type**.
 4. Enter the **Phone** or **Mobile**. 
-5. Check the **Auto Generate Password** box to have a password generated online and sent via email. Uncheck the box to enter a password manually.
-6. You may enter any information on **Public Notes** which are displayed on the Customer Portal when logged in. 
-7. **Private Notes** will display in the control panel.
-7. Manually set whether this Contact's **Mobile Verified** and **Email Verified** status. (Check in the Customer Details to confirm the Mobile and Email have been verified. Alternately, the customer can do this in the Customer Portal.
+5. **Auto Generate Password** to have a password generated online and sent via email. Uncheck the box to enter a password manually.
+6. **Public Notes** display on the Customer Portal. 
+7. **Private Notes** display in the Control Panel.
+7. Manually set the **Mobile Verified** or **Email Verified** status. Check in the Customer Details to confirm the Mobile and Email have been verified. Alternately, the customer can do this in the Customer Portal.
 7. Click **`Save`**.
 
-![alt text][main-tab]
+    ![alt text][main-tab]
 
 !!! note "Save Options"
-    Select **Save and Continue** to exit the Contact screen. **Save and Stay** is helpful when adding multiple Contacts at a time. **Delay and Save** allows you to select a time from to elapse before saving the Contact and making them available for use.
+    + **Save and Continue** = Exit the Customer screen
+    + **Save and Stay** = Save the customer, but stay in the screen (helpful when adding multiple Customers at a time)
+    + **Delay and Save** = Select a time to elapse before saving the Customer, delaying the setup or change. 
 
 !!! warning 
     DO NOT save passwords in either of the notes field in the Contact Details.
@@ -52,8 +54,8 @@ To reset a Contact password:
 
     ![alt text][reset-password]
 
-2. Select "Change Password"
-3. Select "Auto Generate & Email Password" to email the random password to the contact email, or uncheck it and enter the password manually.
+2. Select `Change Password`.
+3. Select `Auto Generate & Email Password` to email the random password to the contact email, or uncheck it and enter the password manually.
 3. **`Save`**.
 
 ### Access Customer Portal
@@ -65,11 +67,11 @@ To access the Customer Portal:
 
     ![alt text][reset-password]
 
-2. Select "Portal Login"
+2. Select `Portal Login`
 3. This will load the Customer's Portal. 
 
 ## Internal Number Block
-Assign an **Internal Number Block** to define the range of numbers a Customer can use for setting up SIP Extensions (see [SIP Authentication](https://docs.connexcs.com/customer/auth/#sip-user-authentication) for configuration details). 
+Assign an **Internal Number Block** to define the range of numbers a Customer can use for setting up SIP Extensions (see [**SIP Authentication**](https://docs.connexcs.com/customer/auth/#sip-user-authentication) for configuration details). 
 
 1. Click **`+`** button next to **Internal Number Block**.
 2. The Number Block will be assigned.
@@ -78,7 +80,7 @@ Assign an **Internal Number Block** to define the range of numbers a Customer ca
     Within each Account are multiple Customers, each will likely have more than one Contact. SIP Extensions are unique for the Account, not for individual Customers. Without defined Internal Number Blocks, there is the risk of a Contact attempting to use an extension that is already in use by another Customer or Contact. With Internal Number Blocks defined, each Customer will have a predetermined list of Usernames to select for SIP Authentication. 
 
 !!! note "Number Range parameters"
-    The Number Range Start and Block Size must be defined under [Settings :material-menu-right: Options](https://docs.connexcs.com/setup/settings/options/) before an Internal Number Block can be assigned. 
+    The Number Range Start and Block Size must be defined under [**Settings :material-menu-right: Options**](https://docs.connexcs.com/setup/settings/options/) before an Internal Number Block can be assigned. 
     
 ## Summary
 The Summaries of calls in Live (last 24 hours), Daily, and Monthly formats, are all displayed in 24-hour UTC. This data is updated hourly. 
@@ -86,9 +88,9 @@ The Summaries of calls in Live (last 24 hours), Daily, and Monthly formats, are 
 There are several functions that can be performed with this data:
 
 + **Sum and Average**: Select multiple cells in a column to get sum and average values (not a true average, but an average of averages)
-+ **Export Data**: Select data from multiple columns and rows, then right click to **`Copy`**, **`Copy with Headers`**, and **`Export`**
++ **Export Data**: Select data from multiple columns and rows, then right click to `Copy`, `Copy with Headers`, or `Export`.
 + **Generate Invoice**: Check one or more boxes under Action then select **`Generate Invoice`** in the upper right corner. This will create the invoice based on the Summary time frame (Daily, Weekly, Monthly) which can then be queried by a billing system. 
-+ **Auto Generate Invoice**: When selected, this will generate an invoice based on the setting found in the Customer configuration (Edit :material-menu-right: Config :material-menu-right: Invoice Schedule) for any that are missing.  
++ **Auto Generate Invoice**: When selected, this will generate an invoice based on the setting found in the Customer configuration (**Edit :material-menu-right: Config :material-menu-right: Invoice Schedule**) for any that are missing.  
 
 !!! tip "Data used for billing"
     The data found in the Customer Summary section is considered valid for billing purposes. The same data may be found in other parts of the system but should not be used for billing.

@@ -38,6 +38,7 @@ pages:
   - Cloudswitch:
     - Home: index.md
     - Getting Started: getting-started.md
+    - Customer Support: reporting-problems.md
     - Video Guide: video-guide.md
     - Dashboard : dashboard.md
 
@@ -151,6 +152,7 @@ pages:
         - Scaling and Load Balancing: scaling-load-balancing.md
 
     - Miscellaneous:
+        - Acronyms and Definitions: acronyms-and-definitions.md
         - Authentication: authentication.md
         - Connex Billing: billing.md
         - Calling Card: calling-card.md       
@@ -160,7 +162,6 @@ pages:
         - Feature List: feature-list.md
         - Monitoring Guide: monitoring.md
         - Customer Documents Guide: doc-guide.md
-        - Reporting Problems: reporting-problems.md
         - Number Manipulation: number-manipulation.md
         - Specification: spec.md
         - Changing Language: changing-language.md

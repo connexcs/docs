@@ -1,4 +1,5 @@
 # Documents
+**Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Documents**
 
 The **Documents** section is used to collect various files from the customer, part of KYC ("know your customer"). 
 

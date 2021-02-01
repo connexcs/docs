@@ -39,7 +39,7 @@ Click on a specific Call ID to view details and run call tools.
 * **Raw Data**: Underlying data that populates for the call. 
 * **SIP Trace**: Visual representation of SIP communications, see details below under **SIP Traces**. 
 * **Simulate**: See details above for **Simulating Calls**. 
-* **Class5**: If the CLass5 system is used, there will be some additional information such as Request Parameters. 
+* **Class5**: If the Class5 system is used, there will be some additional information such as Request Parameters. 
 * **Refresh**: For Live calls, use the **`Refresh`** button to reload the logs to show the most recent changes. This is necessary as some of the data must be processed through CDR before it will be displayed. 
 
 ### SIP Traces

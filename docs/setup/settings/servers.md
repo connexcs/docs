@@ -9,8 +9,11 @@ Before deploying your first server, make sure that you have completed the [Getti
 !!! note "Available Balance needed for server deployment"
     To deploy a server, you must have $20 (+ $20 X other servers in your account) available balance.
 
+!!! warning "Impact to services"
+    If you are a serious carrier *Never let your account run out of credit*. It should go without saying, but if your account runs out of credit service will be impacted, it may not instantly be restored either. We will not consider any reactivation problems critical if you persistently top-up only enough credit to cover you for the next day.
+    
 ## Server List
-The **Servers** section provides and overview of deployed servers:
+The **Servers** section provides an overview of deployed servers:
 
 + **IP**: The unique server IP address. To view SIP and ICMP latency, hover over the status icon next to the server IP. 
 + **Type**: Typically either **Dispatcher** (load-balancer) or **Switch** (cluster member)
@@ -48,30 +51,29 @@ When enabled, we can specify another server in the cluster to route traffic to i
 **Dispatcher**
 Click the blue pencil to edit. 
 
-|Field|Description|
-|:----------------:|---|
-|Add Load Balancer|Add servers to the cluster.|
-|Flush|Force a server update|
++ **Add Load Balancer**: Add servers to the cluster.
++ **Flush**: Force a server update.
 
 **Switch**
 
-|Field|Description|
-|:----------------:|---|
-|FQDN|The FQDN (Fully Qualified Domain Name) needs to be set for TLS security to be enabled directly on the server.|
-|Cluster|Group servers to share information such as dialogues and throughput. Ex: if you set CPS to 10, clustered servers will allow 10 CPS, un-clustered servers will allow 10 CPS per server. |
-|Reinvite Ping Interval|*in progress*|
-|Interconnect|Where the server is visible routing.|
-|UAC Auth|Enables ConnexCS to register as a UAC (rather than UAS) to upstream providers with a username and password.|
-|WebRTC and TLS|Enabled once the FQDN has been set, these also require a secure certificate. These are required for [WebPhone](https://docs.connexcs.com/setup/integrations/webphone/)|
-|Auto Upgrade|When your server is ready for an upgrade, selecting this box will allow it to be performed when your server is at zero channels.|
-|Disable UAC Ping|UAC Ping automatically sends out ping messages every second to registered UACs, retaining open NAT ports. Select this box to disable that functionality.|
-|UAC Location Array Sharing|By sharing registration information with servers not in the cluster, calls can be connected between two ConnexCS servers. Clustering servers is the recommended method whenever possible. (If using this setting, you can disable UAC Ping above to gain some minor performance enhancements.)|
-|TLS Internals|Requests made to the routing engine are kept in TLS, useful for high security (TLS) environments.|
-|Restrict Direct|If servers are part of AnyEdge, they can't communicate directly, and must be routed through AnyEdge.|
-|TCP SIP Trace|If you want to ensure that ALL of your SIP Traces are captured, you can use TCP instead of UDP. While providing higher reliability, in extremely high-traffic scenarios there may be a decrease in packet processing time.|
-|Use AnyReg Server|This is an experimental platform SIP Registrar, should only be used if you know what you are doing. When used in conjunction with AnyEdge, the AnyEdge server will take the registration information and pass it to AnyReg, avoiding the need to check with customer equipment for registration. This negates the need for the UAC options above.|
-|US, EU|Switch|Servers in the US zone will process data (ex: CDRs, routing engines) at local servers rather than in some remote zone, avoiding server capacity issues due to longer data transit times.|
-|UDP, TCP, TLS Ports|Specify port(s) for each protocol in addition to the protocol default (ex: to avoid firewall rules or ISP restrictions).|
++ **FQDN**: The FQDN (Fully Qualified Domain Name) needs to be set for TLS security to be enabled directly on the server.
++ **Cluster**: Group servers to share information such as dialogues and throughput. Ex: if you set CPS to 10, clustered servers will allow 10 CPS, un-clustered servers will allow 10 CPS per server. 
++ **Reinvite Ping Interval**: *in progress*
++ **Interconnect**: Where the server is visible routing.
++ **UAC Auth**: Enables ConnexCS to register as a UAC (rather than UAS) to upstream providers with a username and password.
++ **WebRTC and TLS**: Enabled once the FQDN has been set, these also require a secure certificate. These are required for [WebPhone](https://docs.connexcs.com/setup/integrations/webphone/).
++ **Auto Upgrade**: When your server is ready for an upgrade, selecting this box will allow it to be performed when your server is at zero channels.
++ **Disable UAC Ping**: UAC Ping automatically sends out ping messages every second to registered UACs, retaining open NAT ports. Select this box to disable that functionality.
++ **UAC Location Array Sharing**: By sharing registration information with servers not in the cluster, calls can be connected between two ConnexCS servers. Clustering servers is the recommended method whenever possible. (If using this setting, you can disable UAC Ping above to gain some minor performance enhancements.)
++ **TLS Internals**: Requests made to the routing engine are kept in TLS, useful for high security (TLS) environments.
++ **Restrict Direct**: If servers are part of AnyEdge, they can't communicate directly, and must be routed through AnyEdge.
++ **TCP SIP Trace**: If you want to ensure that ALL of your SIP Traces are captured, you can use TCP instead of UDP. While providing higher reliability, in extremely high-traffic scenarios there may be a decrease in packet processing time.
++ **Use AnyReg Server**: This is an experimental platform SIP Registrar, should only be used if you know what you are doing. When used in conjunction with AnyEdge, the AnyEdge server will take the registration information and pass it to AnyReg, avoiding the need to check with customer equipment for registration. This negates the need for the UAC options above.
++ **US, EU**: Switch**: Servers in the US zone will process data (ex: CDRs, routing engines) at local servers rather than in some remote zone, avoiding server capacity issues due to longer data transit times.
++ **UDP, TCP, TLS Ports**: Specify port(s) for each protocol in addition to the protocol default (ex: to avoid firewall rules or ISP restrictions).
+
+
+
 
 
 ### Server Actions Menu
@@ -103,9 +105,24 @@ To reactivate a server:
 2. Click **Reactivate** to activate your server.
 
    ![alt text][server-6]
+    
+## Server Clustering and User Location Registration
+### User Location Registration
+When a call is initiated, this generates a SIP `INVITE` which is sent to the remote server. When users connect from dynamic IP addresses, there must be a a way to map a known constant address (ex: a username) to a dynamic endpoint such as an IP address or port.
 
-!!! warning "Impact to services"
-    If you are a serious carrier *Never let your account run out of credit*. It should go without saying, but if your account runs out of credit service will be impacted, it may not instantly be restored either. We will not consider any reactivation problems critical if you persistently top-up only enough credit to cover you for the next day.
+This is accomplished by the User Agent Client (UAC), or a soft phone / hard phone, connecting to the ConnexCS server with a `REGISTER` message which includes their current location and their username, along with additional information. The information is then stored, and made available as a lookup. When someone calls a user, it routes the call to their IP address.
+
+### NAT Keep Alives
+When a user is registers with UDP via NAT, a port mapping is created. However, the NAT will time out (and the call will disconnect) is the connection is not maintained by keep-alive by traffic. ConnexCS will perodically send keep-alive messages to the registered UAC, as either UDP or full SIP `OPTIONS` messages. While both work in this scenario, the SIP ```OPTIONS``` ping will reply back to the ConnexCS Server. From this ping, we can monitor the latency of the connection, and also discern if NAT has destroyed the connection or if the user has gone offline without notifying the system. Once a user is registered via UDP, the connection is verified once again.
+
+### Deployment Options
+
+1) **Single Server**: No additional configuration is needed for a single server.
+2) **Server Array**: For multiple servers, decide whether users registered to _Server A_ can call users on _Server B_. If so, set the **UAC Location Array Sharing** option (found under [Server Config](https://docs.connexcs.com/setup/settings/servers/#server-config)) for the servers which will make the registrations.
+3) **Server Cluster**: Servers in a cluster share all user location registrations. This is the best solution to scale into the many 1000's of registrations. Be advised: you will not be able to route calls to users registered against any servers outside the cluster. 
+
+!!! tip "Ping Overhead"
+    Due to design constraints that occur with multiple servers in an array, NAT Keep Alive Pings can be quite intensive. You could use *Disable UAC Ping* from the server page, upgrade to a cluster, or use a single registration server to solve this. More intricate measures can be arranged on a case-by-case basis.
 
 [rtpserver]: /misc/img/rtpservers.png "RTP Server"
 [server-6]: /misc/img/244.png "server-6"

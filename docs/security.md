@@ -33,8 +33,8 @@ We **do not** consider the following items insecure. We completely understand th
 
 This **does not** mean we don't monitor activity on either of these, nor does it mean that we don't have automatically reactive systems to ensure uptime in the event of an attack.
 
-### IMCP Pings
-IMCP (Internet Message Control Protocol) pings messages (e.g ping www.connexcs.com). IMCP Ping attacks were once common, related to the packet size versus available bandwidth. They still happen, but it is more useful to enable IMCP replies to correctly establish the status of a server.
+### ICMP Pings
+ICMP (Internet Control Message Protocol) pings messages (e.g ping www.connexcs.com). ICMP Ping attacks were once common, related to the packet size versus available bandwidth. They still happen, but it is more useful to enable ICMP replies to correctly establish the status of a server.
 
 ### SIP / RTP Firewall Block on Default.
 Our SIP Servers only run SIP, and nothing else. Our RTP Servers run RTP, and nothing else. 5060 is not firewalled, nor are any of our RTP Ports on our RTP Servers.
@@ -44,15 +44,38 @@ This means that you will most likely see unauthorized traffic hitting your switc
 ## IDS / IPS
 We have application-level logic that identifies malicious activity, which will escalate issues to our IDS systems, which will enforce feedback firewall rules in return.
 
-# Data Usage
-Connex Carrier Services Worldwide, LTD is an independent company. All data is retained on ConnexCS servers, and **never** passed to third parties. All staff are required to abide by non-disclosure policies that protect user data, and it is made clear any data breach would be treated with severity.
+## Data Usage
+**Connex Carrier Services Worldwide, LTD** is an independent company. All data is retained on ConnexCS servers, and **never** passed to third parties. All staff are required to abide by non-disclosure policies that protect user data, and it is made clear any data breach would be treated with severity.
 
-## Deploying SSL Certificates 
-
+## SSL Certificates 
 The SSL certificate can be deployed on your customer portal with a single click.
 
 1. Click  **Setup** > **Integrations**.
 2. Click  **Domains**.
 3. Click **Deploy Certificate**.
+
+## User Enhanced Security
+In addition to the above ConnexCS security, we also recommend the following practices to harden your ConnexCS account.
+
+1. Passwords: we recommend following the NIST guidelines found here [NIST Guidelines](https://pages.nist.gov/800-63-3/sp800-63b.html#sec5):
+    + 8 character minimum when a human sets it
+    + 6 character minimum when set by a system/service
+    + Support at least 64 characters maximum length
+    + All ASCII characters (including space) should be supported
+    + Truncation of the secret (password) shall not be performed when processed
+    + Check chosen password with known password dictionaries
+    + Allow at least 10 password attempts before lockout
+    + No complexity requirements
+    + No password expiration period
+    + No password hints
+    + No knowledge-based authentication (e.g. who was your best friend in high school?)
+    + No SMS for 2FA (use a one-time password from an app like Google Authenticator)
+2. Hardware Security Tokens: Yubikey is an example of  hardware security token which can never be digitaly stolen can be used for logins to ConnexCS.
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/_EqOmhahBQc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+3. Duo Security or Google/Microsoft Authenticator: As per the NIST recommendations above SMS should not be trusted for second factor authentication. We implement both Duo Security and [Time-based One-time Password Algorithm (TOTP; specified in RFC 6238)](https://tools.ietf.org/html/rfc6238),
+which can be used by Google Authenticator or Microsoft Authenticator.
+
 
 
