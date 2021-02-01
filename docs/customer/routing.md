@@ -43,7 +43,7 @@ View and configure existing routes on the Routing tab in the Customer card. Clic
     ^1(204|226|236|249|250|289|306|343|403|416|418|438|450|506|514|519|579|581|587|604|613|647|705|709|778|780|807|819|867|902|905)
     ```
 
-&emsp !!! warning "Using Rate Cards for multiple countries"
+!!! warning "Using Rate Cards for multiple countries"
     Ingress Routing is not independently aware of what type of card you are using, and more specifically the appropriate dial strings it needs to send. So if, for example, you are using both UK and US cards, you need to enter appropriate dial strings in the routes you set up for each card type.
 
 + **Enabled**: The route can be easily enabled and disabled here. 
