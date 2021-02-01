@@ -82,6 +82,7 @@ Navigate to **Management :material-menu-right: Customer** to modify customer det
 
 &emsp; ![alt text][warning-icon]  
 
+
 ### Create a new Customer
 1. Click on the `+` icon. 
 2. Enter the Customer's Name.
