@@ -1,5 +1,7 @@
 # Global
 
+**Global**
+
 The **Global** section of the ConnexCS Control Panel provides an account-wide overview of many of the same sections found under **Management :material-menu-right: Customer** or **Carrier**. This can be helpful for troubleshooting issues across customers or for situations where you are trying to locate the customer of a specific a DID. Some of these sections may also be configured and managed from the Global view. 
 
 ___
