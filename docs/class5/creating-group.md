@@ -3,6 +3,8 @@
 
 A **Group**, or Call Queue, allows you to construct a team of individuals to receive calls placed to a specified number or extension based on the routing strategy you configure. (Ex: Create a number that customers can call which routes them to a team of Technical Support Specialists who can fix the technical issues with their laptop.)
 
+For individual customers, navigate to **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Class5 :material-menu-right: Groups**
+
 ## Group Call Routing strategies
 Each Group is configured with a routing strategy which determines how calls will be routed to the members of the group:
 
