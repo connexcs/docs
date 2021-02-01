@@ -6,7 +6,7 @@ The initial setup in ConnexCS will configure a single carrier, a single customer
     Change the display language for the UI by clicking your name in the upper-right corner and selecting [**Change Language**](https://docs.connexcs.com/changing-language/). 
 
 !!! note "What is my server IP Address?"
-    IP addresses are deployed *after* you have completed the getting started steps.
+    IP addresses are deployed *after* you have completed the Getting Started steps.
     
 !!! help "Need Help?"
     If you need help, we offer free 1:1 training, you can book this at **<https://connexcs.youcanbook.me/>**.
@@ -23,7 +23,7 @@ ___
 ## Verify Contact Details
 Before you configure your account, you need to verify your email and mobile number. Use the Alerts icon at the top left of the screen to view all outstanding items:
 
-![alt text][verify-email-1]
++ ![alt text][verify-email-1]
 
 
 ### Email Verification
