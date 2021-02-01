@@ -1,7 +1,9 @@
 # Conference Calls
 **Class 5 :material-menu-right: Conference**
 
-Use this feature when you want to allow multiple callers to communicate with each other over a voice call. The Callers join the call and are presided over by a Moderator. 
+Use this feature when you want to allow multiple callers to communicate with each other over a voice call. The Callers join the call and are presided over by a Moderator.
+
+For individual customers, navigate to **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Class5 :material-menu-right: Conference**
 
 ## Create Conference Call
 To create a conference call:
