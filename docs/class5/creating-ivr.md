@@ -2,6 +2,8 @@
 **Class 5** :material-menu-right: **IVR**
 
 An **Interactive Voice Response (IVR)**, or phone tree, allows callers to dial in and select an extension for a specific department or group within the company. These extensions can be routed to different SIP addresses, PSTN numbers, internal extension numbers, other IVRs, conference bridges, groups, and Class 5 applications, based on the key they press. When you create an IVR, you specify a 1:1 mapping for all the possible keys on the keypad. 
+
+For individual customers, navigate to **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Class5 :material-menu-right: IVR**
     
 ## IVR Planning 
 Complete the following prior to configuring the IVR
