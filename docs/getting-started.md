@@ -80,7 +80,7 @@ These instructions for basic **Customer** setup will help you create a profile a
 
 Navigate to **Management :material-menu-right: Customer** to modify customer details, filter the customer list, and perform bulk actions. To view outstanding actions on a customer, hover over the Warning icon. In the example below, you can see that routing has not been set. In that case, you would click on the customer's name to update their routing details.
 
-![alt text][warning-icon]  
+&emsp; ![alt text][warning-icon]  
 
 ### Create a new Customer
 1. Click on the `+` icon. 
