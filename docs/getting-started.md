@@ -23,9 +23,8 @@ ___
 ## Verify Contact Details
 Before you configure your account, you need to verify your email and mobile number. Use the Alerts icon at the top left of the screen to view all outstanding items:
 
-<p align="center">
-![alt text](/getting-started/img/1.png "Verify")
-</p>
+&emsp; ![alt text][verify-email-1]
+
 
 ### Email Verification
 Email verification is the process by which ConnexCS determines if an email address is genuine. It is a measure against unauthorized users accessing customer accounts. It works similar to most email verification mechanisms. The system sends a verification code to the user's email, which is verified when the user enters the code back into the verification.
@@ -174,8 +173,8 @@ ___
 For detailed server configuration, see **[Servers](https://docs.connexcs.com/setup/settings/servers/)**.
 
 
-[notification-icon]: /getting-started/img/notification-icon.png "notification icon"
-
+[notification-icon]: /getting-started/img/notification-icon.png "Notification Icon"
+[verify-email-1]: /getting-started/img/1.png "Verify"
 [verify-email-2]: /getting-started/img/verify-email.png "Verify Email"
 [verify-mobile]: /getting-started/img/verify-mobile.png "Verify Mobile"
 [warning-icon]: /getting-started/img/warning-icon.png "warning-icon"
