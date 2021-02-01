@@ -27,7 +27,7 @@ When you enable **IP Authentication**, you associate the IP of a customer switch
     + **Channels**: Set the maximum number of concurrent calls for this switch. 
     + **Flow Speed**: Set the Calls Per Second (CPS) (0 = unlimited calls).   
     
-    ![alt text][ipauth-basic]
+        ![alt text][ipauth-basic]
     
 === "Advanced"
 
@@ -147,7 +147,7 @@ Click the `Password` key next to the SIP user to reset the password.
 Use the `Send` button next to the SIP User to send a SIP message to the end device which will flash on the phone. 
 
 [ipauth-basic]: /customer/img/ipauth-b.png "Edit Switch Basic"
-[parameter-rewrite]: /customer/img/parameter-rewrite.png "Parameter Rewrite"
+[parameter-rewrite]: /customer/img/parameter-rewrite.png "Parameter Rewrite" width="200" height="400"
 [ipauth-adv]: /customer/img/ipauth-adv.png "Edit Switch Advance"
 [ipauth-param]: /customer/img/ipauth-param.png "Edit Switch Parameters"
 [sip-b]: /customer/img/sip-b.png "SIP Codecs"
