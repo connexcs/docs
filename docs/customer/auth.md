@@ -55,7 +55,7 @@ When you enable **IP Authentication**, you associate the IP of a customer switch
     2. Type: Select the parameter to modify.
     3. Current: Enter the prefix for the destination number, or the CLI.
     4. New: enter what should replace the current information.
-    5. Use Testing `Input` field to verify the replacement is working as expected. 
+    5. Use the Testing `Input` field to verify the replacement is working as expected. 
     6. Click **`Save`** when done. 
     
     Example: International calls coming in with a + should be replaced with a specific country code. 
