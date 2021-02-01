@@ -1,4 +1,5 @@
 ## Payments
+
 **Setup :material-menu-right: Settings :material-menu-right: Payments**
 
 The **Payments** view allows you to manage payments to ConnexCS as well as some related functions.
