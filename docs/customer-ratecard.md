@@ -21,8 +21,8 @@
 &emsp; ![alt text][compile1] 
 &emsp; Stale (needs to be compiled)
 
-&emsp;![alt text][compile2] 
-&emsp;In sync
+&emsp; ![alt text][compile2] 
+&emsp; In sync
 
 
 !!! tip "Compile Example"
@@ -77,7 +77,7 @@ The final method for configuring a Customer Rate Card is to import/upload it:
 
 #### Functions
 
-&emsp;![alt text][prc-func] 
+&emsp; ![alt text][prc-func] 
 
 + **Revision**: List all versions of changes on the card. 
 + **Create Draft**: Create a blank revision to manually add all prefixes and rows. This will only contain rows added manually, none of the previous revision is retained. 
@@ -85,13 +85,13 @@ The final method for configuring a Customer Rate Card is to import/upload it:
 + **Delete Revision**: Select a revision to delete. 
 + **Download**: Download a CSV file of the Rate Card.
 
-&emsp;![alt text][crc-func] 
+&emsp; ![alt text][crc-func] 
 
 * **Parent Cards** are the Provider Rate Cards associated to this card.
 * **Customers** lists the specific Customers using this card.
 * **Profits** allows you to configure profit rules. This is most useful on cards with a high number of rules.
 
-&emsp;![alt text][profit] 
+&emsp; ![alt text][profit] 
 
 *click each tab for configuration details*
 
