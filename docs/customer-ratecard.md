@@ -82,7 +82,7 @@ The final method for configuring a Customer Rate Card is to import/upload it:
 + **Delete Revision**: Select a revision to delete. 
 + **Download**: Download a CSV file of the Rate Card.
 
-&emsp; ![alt text][crc-func] 
+    ![alt text][crc-func] 
 
 * **Parent Cards** are the Provider Rate Cards associated to this card.
 * **Customers** lists the specific Customers using this card.
@@ -181,9 +181,6 @@ To change Revision status:
 
 ### Manual Ordering tab
 This tab will only be available if "Manual Ordering" has been enabled under Properties > Advanced. For each Prefix you can manually order the Provider Rate Cards for a high degree of control over how calls are routed. 
-
-
-    
 
 
 [compile1]: /card/img/compile1.png "Paused"
