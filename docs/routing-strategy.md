@@ -64,6 +64,6 @@ Routing Strategy can also be used to block calls.
 
     ![alt text][routing-drop]
 
-[routing-strategy2]: /customer/img/88.png "routing-strategy2"
-[routing-strategy3]: /customer/img/89.png "routing-strategy3"
-[routing-drop]: /customer/img/routing-drop.png "Blocking Calls"
+[routing-strategy2]: /misc/img/routing-1.png "routing-strategy2"
+[routing-strategy3]: /misc/img/routing-1.png "routing-strategy3"
+[routing-drop]: /misc/img/routing-drop.png "Blocking Calls"
