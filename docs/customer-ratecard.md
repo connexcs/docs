@@ -18,11 +18,9 @@
 
 **Compile**: Displays which Customer Rate Cards are in sync with the Provider Rate Cards. 
 
-&emsp; ![alt text][compile1] 
-&emsp;Stale (needs to be compiled)
+&emsp; ![alt text][compile1] Stale (needs to be compiled)
 
-&emsp; ![alt text][compile2] 
-&emsp;In sync
+&emsp; ![alt text][compile2] In sync
 
 
 !!! tip "Compile Example"
@@ -75,9 +73,8 @@ The final method for configuring a Customer Rate Card is to import/upload it:
 
 **Audit Log** Review any changes made to the card settings. 
 
-#### Functions
-
-&emsp;&emsp; ![alt text][prc-func] 
+**Functions**
+&emsp;![alt text][prc-func] 
 
 + **Revision**: List all versions of changes on the card. 
 + **Create Draft**: Create a blank revision to manually add all prefixes and rows. This will only contain rows added manually, none of the previous revision is retained. 
