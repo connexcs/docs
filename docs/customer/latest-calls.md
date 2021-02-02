@@ -6,12 +6,11 @@ The **Latest Calls** tab provides records of incoming and outgoing calls. View r
 ## Simulate Calls
 To simulate a call: 
 
-1. Click on the Call ID.
+1. Click on the `Call ID`.
 2. Click the **`Simulate`** button.
 3. Complete details for **Dialed Number, CLI/ANI, Switch IP** etc.
 4. Select **`Simulate`** button.
 
 ![alt text][simulate-call]
-   
 
 [simulate-call]: /customer/img/52.png "Simulate Call"
