@@ -1,7 +1,7 @@
 # Provider Rate Cards
 **Management :material-menu-right: Provider Rate Cards**
 
-**Provider Rate Cards** determine routing and billing for calls being placed by customers. Before configuring Provider Rate Cards, we suggest you review [Rate Card Overview](https://docs.connexcs.com/rate-card-building/) then [Rate Card Setup](https://docs.connexcs.com/video-guide/#rate-card-setup) in the ConnexCS Video Guide. 
+**Provider Rate Cards** determine routing and billing for calls being placed by customers. Before configuring Provider Rate Cards, we suggest you review [**Rate Card Overview**](https://docs.connexcs.com/rate-card-building/) then [**Rate Card Setup**](https://docs.connexcs.com/video-guide/#rate-card-setup) in the ConnexCS Video Guide. 
 
 ## Overview
 **Name**: Click the name of the provider to see individual rate card and management options. (If a Rate Card name shows a yellow warning or red alert, these will indicate details about the card. It may be stale or have some sort of error.)
@@ -12,7 +12,7 @@
 
 **Currency**: The currency for the provider's region (typically USD, EUR, or GBP).
 
-**?**: Lists dependent Child (or Customer) Rate Cards, which will be impacted by any changes made to the parent card. Click on the [Child Card](https://docs.connexcs.com/customer-ratecard/) to view the configuration. 
+**?**: Lists dependent Child (or Customer) Rate Cards, which will be impacted by any changes made to the parent card. Click on the [**Child Card**](https://docs.connexcs.com/customer-ratecard/) to view the configuration. 
 
 **ID**: A system identifier that acts as a placeholder and prevents confusion between similarly named items. 
 
@@ -30,7 +30,7 @@
 Once created, new **Provider Rate Cards** are completed by either adding rows manually or uploading an existing file. 
 
 1. Click the **`+`** button.
-3. Complete desired fields. (For details, see [Provider Rate Card Settings](https://docs.connexcs.com/provider-ratecard/#provider-rate-card-settings) below.)
+3. Complete desired fields. (For details, see **[Provider Rate Card Settings**](https://docs.connexcs.com/provider-ratecard/#provider-rate-card-settings) below.)
 4. Click **`Save`**.
 9. From here, you may add the Provider Rate Card manually or perform a Bulk Upload. 
 
@@ -64,7 +64,7 @@ The preferred method for adding a Rate Card is to import/upload it:
 
 #### Functions
 
-![alt text][prc-func] 
+&emsp ![alt text][prc-func] 
 
 + **Revision**: List all versions of changes on the card. 
 + **Create Draft**: Create a blank revision to manually add all prefixes and rows. This will only contain rows added manually, none of the previous revision is retained. 
@@ -140,7 +140,7 @@ To change Revision status:
 !!! tip "ConnexCS LRN Database"
     ConnexCS maintains an inhouse LRN database. This ensures a quick response time and the rates are update daily. There are no charges associated with using this service, so customers have unlimited dips into the database. 
 
-+ **ASR+**: Filter known failed non-existent/working numbers. See [ASR Plus Details](https://docs.connexcs.com/customer/routing/#asr-plus-details) for additional information. 
++ **ASR+**: Filter known failed non-existent/working numbers. See [**ASR Plus Details**](https://docs.connexcs.com/customer/routing/#asr-plus-details) for additional information. 
 
 #### Advanced
 
@@ -157,7 +157,7 @@ To change Revision status:
 
 * **Duration Rounding**: The same rounding options but for the call duration.
 * **Public Options**: Choose what can be done with the card information: viewed via HTML (on a web page), download CSV (a spreadsheet), and whether to list the rate card in the customer portal (customer can view cards not currently on their account and select them for use). (Note: API Querying is no longer available.)
-* **CLI Restrict**: Enable Call Line Identification (CLI) restriction(s) using regular expressions to set valid number formats. See [CLI](https://docs.connexcs.com/customer/cli/) for additional details.
+* **CLI Restrict**: Enable Call Line Identification (CLI) restriction(s) using regular expressions to set valid number formats. See [**CLI**](https://docs.connexcs.com/customer/cli/) for additional details.
 * **SMS URL**: *not in use*
 * **Default RTP**: If set, and the customer adds the route themselves, then this will be used. Otherwise, this is an unused setting. 
 * **Capped Rate**: Block calls above the set price. 
