@@ -88,7 +88,7 @@ The final method for configuring a Customer Rate Card is to import/upload it:
 * **Customers** lists the specific Customers using this card.
 * **Profits** allows you to configure profit rules. This is most useful on cards with a high number of rules.
 
-&emsp; ![alt text][profit] 
+    ![alt text][profit] 
 
 *click each tab for configuration details*
 
