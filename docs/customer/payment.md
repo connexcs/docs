@@ -26,4 +26,4 @@ To add a new payment:
     If a customer has made some sort of purchase on the account, this will be shown as a negative amount under Total on the main Payments page. 
 
     
-[payments-tab]: /customer/img/53.png "Payments Tab" width="200" height="400"
+[payments-tab]: /customer/img/53.png "Payment Tab"
