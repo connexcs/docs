@@ -1,7 +1,7 @@
 # Class5
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Class5**
 
-In **Class5** are the options for the ConnexCS Unified Communications service. While the majority of the ConnexCS system is centered around Class4 routing, this area provides several functions which customers may configure for better user experience.  
+**Class5** features are the ConnexCS Unified Communications Service (UCS) package. While the majority of the ConnexCS system is centered around Class4 routing, this area provides several functions for customers to configure for better user experience.  
 
 [**Apps**](https://docs.connexcs.com/class5/apps/) allows customers to configure various features such as Pinless Calling or DNC (Do Not Call) lists with the full functionality of Script Forge. This is configured in **Class5** > **Apps**. 
 
