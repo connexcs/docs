@@ -81,4 +81,4 @@ ConnexCS is GC6 compliant for end users, which:
 To set the "P-Asserted-ID" per customer, see [Configure CLI](https://docs.connexcs.com/customer/cli/#configure-cli) above. 
 
 [cli]: /customer/img/cli.png "CLI Main"
-[edit-cli]: /customer/img/edit-cli.png "Edit CLI" width="200" height="400"
+[edit-cli]: /customer/img/edit-cli.png "Edit CLI"
