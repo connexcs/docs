@@ -5,7 +5,7 @@
 Under the **Auth** tab, configure IP or SIP (Username/Password) Authentication for users. To set either one, click the **`+`** button.
 
 !!! note "Global IP and SIP Authentication"
-    Both IP and SIP Authentication may also be configured and managed for Customers and Carriers under **Global :material-menu-right: IP Authentication or SIP User Authentication**.
+    Both IP and SIP Authentication may also be configured and managed for Customers and Carriers under **Global :material-menu-right: IP Authentication** or **SIP User Authentication**.
 
 
 ## IP Authentication
@@ -73,7 +73,7 @@ When **SIP Authentication** is enabled, ConnexCS will reject the initial SIP INV
 
 Generic SIP Trace showing the Challenge Response:
 
-![alt text][407-trace]
+&emsp; ![alt text][407-trace]
 
 ### Enable SIP User Authentication 
 *Click each tab to view configuration details.*
