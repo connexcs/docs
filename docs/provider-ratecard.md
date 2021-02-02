@@ -62,7 +62,7 @@ The preferred method for adding a Rate Card is to import/upload it:
 
 **Audit Log** Review any changes made to the card settings. 
 
-#### Functions
+**Functions**
 ![alt text][prc-func] 
 
 + **Revision**: List all versions of changes on the card. 
