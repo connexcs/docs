@@ -64,7 +64,7 @@ The preferred method for adding a Rate Card is to import/upload it:
 
 #### Functions
 
-&emsp ![alt text][prc-func] 
+&emsp; ![alt text][prc-func] 
 
 + **Revision**: List all versions of changes on the card. 
 + **Create Draft**: Create a blank revision to manually add all prefixes and rows. This will only contain rows added manually, none of the previous revision is retained. 
