@@ -30,7 +30,7 @@
 Once created, new **Provider Rate Cards** are completed by either adding rows manually or uploading an existing file. 
 
 1. Click the **`+`** button.
-3. Complete desired fields. (For details, see **[Provider Rate Card Settings**](https://docs.connexcs.com/provider-ratecard/#provider-rate-card-settings) below.)
+3. Complete desired fields. (For details, see [**Provider Rate Card Settings**](https://docs.connexcs.com/provider-ratecard/#provider-rate-card-settings) below.)
 4. Click **`Save`**.
 9. From here, you may add the Provider Rate Card manually or perform a Bulk Upload. 
 
@@ -40,14 +40,14 @@ To manually add Rate Card rows, select **`Create Draft`** then add/modify/delete
 **Option 2: Bulk Upload**
 The preferred method for adding a Rate Card is to import/upload it:
 
-1. Click **Bulk Upload** > **Upload**.
+1. Click **`Bulk Upload`** then **`Upload`**.
 2. Select the file, typically sent by the Provider in CSV format (if not provided as CSV, must be converted before proceeding).
 4. Right-click on the first row of data and select "Set Start Row".
 5. Right-click and map the columns. It is important to map all fields based on the Rate Card columns. For example:
     * Col 1 - Prefix
     * Col 2 - Name
     * Col 3 - Cost
-6. Select **Upload to Sever** and confirm upload. 
+6. Select **`Upload to Sever`** and confirm upload. 
 7. Select whether to make this active immediately
 
 !!! danger "Manually generated cards"
@@ -63,7 +63,7 @@ The preferred method for adding a Rate Card is to import/upload it:
 **Audit Log** Review any changes made to the card settings. 
 
 #### Functions
-&emsp; ![alt text][prc-func] 
+![alt text][prc-func] 
 
 + **Revision**: List all versions of changes on the card. 
 + **Create Draft**: Create a blank revision to manually add all prefixes and rows. This will only contain rows added manually, none of the previous revision is retained. 
