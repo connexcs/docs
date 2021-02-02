@@ -1,7 +1,7 @@
 # Carrier
 **Management :material-menu-right: Carrier **
 
-The **Carrier** section in **ConnexCS** allows for simplified Carrier management where you can add, configure, and delete carriers. 
+The **Carrier** section in **ConnexCS** allows for simplified Carrier management where you can add, configure, and delete Carriers. 
 
 ![alt text][carriers-main]
 
@@ -94,7 +94,7 @@ To configure a **Carrier**, select the Carrier from the list, then configure the
 ![alt text][carrier]
 
 + **Contacts**: Helpful for keeping track of Support contacts for individual carriers
-+ **Rates Grid**: Associated rate cards for this provider. See [Provider Rate Cards](https://docs.connexcs.com/provider-ratecard/) for configuration. 
++ **Rates Grid**: Associated rate cards for this provider. See [**Provider Rate Cards**](https://docs.connexcs.com/provider-ratecard/) for configuration. 
 + **Code Consistency** measures changes to response codes (specifically SIP 200 and 404s) returned from the carrier. It is useful for identifying routes of varying or poor quality. Effective carriers try to maintain 100% code consistency.
 + **Consecutive Failure**: Shows a count of failed calls based on specific SIP failure responses. (The counter does not include SIP 200 responses for connected calls.) This simplistic measurement can measure a carrier's ability to connect calls or a particular route: a connected call resets the counter, a failed call increments the counter by one. Just a few Fails is not concerning, be on the lookout for higher numbers in the thousands. 
 
@@ -104,10 +104,10 @@ To configure a **Carrier**, select the Carrier from the list, then configure the
 + **Summary**: All calls through this carrier, whether in Live (last 24 hours), Daily, or Monthly formats, are all displayed in 24-hour UTC. This data is updated hourly. 
 
 !!! warning "Auto Generate Invoice"
-    Do not use the "Auto Generate Invoice" under the Carrier. Invoices should be managed via the [Customer Invoice](https://docs.connexcs.com/customer/invoices/) section.  
+    Do not use the "Auto Generate Invoice" under the Carrier. Invoices should be managed via the [**Customer Invoice**](https://docs.connexcs.com/customer/invoices/) section.  
 
 ### Reply Management
-Customers can use **Reply Management** to customize responses based on the SIP message (100 to 606) received from the carrier. This allows for more efficient messaging and system responses and can also be used by customers who have switches which require certain SIP code responses. See the [Wikipedia List of SIP response codes](https://en.wikipedia.org/wiki/List_of_SIP_response_codes) for additional details about each code. 
+Customers can use **Reply Management** to customize responses based on the SIP message (100 to 606) received from the carrier. This allows for more efficient messaging and system responses and can also be used by customers who have switches which require certain SIP code responses. See the [**Wikipedia List of SIP response codes**](https://en.wikipedia.org/wiki/List_of_SIP_response_codes) for additional details about each code. 
 
 To edit Reply Codes:
 
@@ -124,13 +124,13 @@ To edit Reply Codes:
 
 ### Auth
 
-1. Carrier **IP Authentication**: This uses IP addresses to allow or disallow attempts to access service. To add authorized IP address(es), click the **`+`** button on the right. These fields are the same as in [Customer Auth](https://docs.connexcs.com/customer/auth/) except that they pertain to Carriers. The only exceptions are:
+1. Carrier **IP Authentication**: This uses IP addresses to allow or disallow attempts to access service. To add authorized IP address(es), click the **`+`** button on the right. These fields are the same as in [**Customer Auth**](https://docs.connexcs.com/customer/auth/) except that they pertain to Carriers. The only exceptions are:
     
     + **User name and Password**: These are for the call to connect out to the carrier, if server is acting as a UAC
     + **Outbound Proxy** (for Ingress only switches): Enter an IP of a Proxy server for calls to route to, before being sent to the carrier. This rewrites the UAC IP in the VIA field of the SIP header. This reduces management overhead as a customer only needs to authorize the single IP. Additionally, multiple addresses can be load balanced using the AnyEdge system. 
     + **Weights**: If multiple switches configured in IP Authentication, this field sets weighting to determine which servers are preferred over others, essentially doing outbound distribution to a single carrier, but through multiple gateways to that carrier. 
 
-2. Carrier **SIP User Authentication** would only be used to allow a carrier to connect into the system, not for outbound connections. Field details can be found under [Customer Auth](https://docs.connexcs.com/customer/auth/).  
+2. Carrier **SIP User Authentication** would only be used to allow a carrier to connect into the system, not for outbound connections. Field details can be found under [**Customer Auth**](https://docs.connexcs.com/customer/auth/).  
 
 
 ### Failover
@@ -144,12 +144,12 @@ The **Failover** tab lists calls that failed with this carrier but connected wit
  
 
 ### Latest Calls
-The **Latest Calls** tab displays the most recent calls to pass through a given system. View recent calls and their SIP traces and run simulated calls. See [Logging](https://docs.connexcs.com/logging/) section for details on these functions. To view Latest Calls for all customers, to the Logging section in ConnexCS. 
+The **Latest Calls** tab displays the most recent calls to pass through a given system. View recent calls and their SIP traces and run simulated calls. See [**Logging**](https://docs.connexcs.com/logging/) section for details on these functions. To view Latest Calls for all customers, to the Logging section in ConnexCS. 
 
 To simulate a call: 
 
-1. Click on the Call ID.
-2. Click the **Simulate** button.
+1. Click on the `Call ID`.
+2. Click the **`Simulate`** button.
 3. Complete details for **Dialed Number, CLI/ANI, Switch IP** etc.
 4. Select **`Simulate`** button.
 
@@ -159,23 +159,23 @@ To simulate a call:
 The **Payment** tab shows payments made to the carrier. Add a new payment by clicking **`+`**, fill in the payment information, and the click **`Save`**.
 
 ### Stats
-View carrier-related statistics by clicking **Stats** tab. Descriptions for each of these graphs can be found under [Customer Stats](https://docs.connexcs.com/customer/stats/).
+View carrier-related statistics by clicking **Stats** tab. Descriptions for each of these graphs can be found under [**Customer Stats**](https://docs.connexcs.com/customer/stats/).
 
 ### Alerts
-Use Carrier **Alerts** to contact a selected email address when `Consecutive Failovers` reaches a predetermined limit. See [Customer Alerts](https://docs.connexcs.com/customer/alerts/) for configuration details. 
+Use Carrier **Alerts** to contact a selected email address when `Consecutive Failovers` reaches a predetermined limit. See [**Customer Alerts**](https://docs.connexcs.com/customer/alerts/) for configuration details. 
 
 ### DID
-The **DID** tab displays a list of DIDs that belong to that carrier.  New entries are added with the **`+`** on the left. See [Customer DID](https://docs.connexcs.com/customer/did/) for configuration details. 
+The **DID** tab displays a list of DIDs that belong to that carrier.  New entries are added with the **`+`** on the left. See [**Customer DID**](https://docs.connexcs.com/customer/did/) for configuration details. 
 
 ### CDR
 
-The **CDR** tab displays call drop rates. Use **`Recalc CDR`** when CDR records are not accurate. See [Customer CDR](https://docs.connexcs.com/customer/cdr/#recalculate-cdr) for details. 
+The **CDR** tab displays call drop rates. Use **`Recalc CDR`** when CDR records are not accurate. See [**Customer CDR**](https://docs.connexcs.com/customer/cdr/#recalculate-cdr) for details. 
 
 !!! danger "Rerating CDRs"
     If you select either Rerate" option when recalculating CDRs, please be aware this will change your CDRs and is not reversible. Original call durations will be modified according to the criteria selected.
 
 ## Special Considerations
-**Bandwidth.com** has diverged from the SIP spec and exposed an internal IP address required for sequential requests. To ensure compatibility, set the switch manufacturer to `bandwidth.com`.
+[**Bandwidth.com**] has diverged from the SIP spec and exposed an internal IP address required for sequential requests. To ensure compatibility, set the switch manufacturer to `bandwidth.com`.
 
 [carriers-main]: /carrier/img/carriers-main.png "Carriers"
 [carrier]: /carrier/img/carrier.png "Carrier Main"
