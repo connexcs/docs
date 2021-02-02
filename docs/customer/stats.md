@@ -1,7 +1,7 @@
 # Stats
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Stats**
 
-Use **Stats** to view graphs related to calling and call quality statistics and reports. Use the selectors at the top to define the time and date range for the graphs.  All graphs are managed using the [Analytics](https://docs.connexcs.com/developers/analytics/) section. 
+Use **Stats** to view graphs related to calling and call quality statistics and reports. Use the selectors at the top to define the time and date range for the graphs.  All graphs are managed using the [**Analytics**](https://docs.connexcs.com/developers/analytics/) section. 
 
 ## Main
 Data related to SIP signalling and call completion.  
