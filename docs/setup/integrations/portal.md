@@ -24,7 +24,7 @@ Step 2: Add Domain to Portal
 2. Enter the details in their respective fields of the ensuing window.
 3. Click the **`Save`** button. A certificate will be issued for the domain soon afterwards.
 
-![alt text][portal]
+    ![alt text][portal]
 
 ## Configuration Options
 *Click each tab to view configuration details*
