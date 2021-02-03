@@ -11,7 +11,7 @@ To create a new App:
 3. Click on the function to edit parameters. 
 4. Click **`Save`**. 
 
-![alt text][apps]
+    ![alt text][apps]
 
 !!! warning "Using Multiple Conditions"
     Apps are limited to a single Condition. Multiple Conditions in an App will cause it to fail.  
