@@ -7,7 +7,7 @@
 To view calls that are having issues registering, click **`Register Logging`**, then click on a specific Call ID to view Call Details and SIP Trace.
 
 ## Fraud Logging
-View the log of Fraud events. See [Setup Fraud Detection](https://docs.connexcs.com/setup/advanced/fraud/#setup-a-fraud-detection) for configuration. 
+View the log of Fraud events. See [**Setup Fraud Detection**](https://docs.connexcs.com/setup/advanced/fraud/#setup-a-fraud-detection) for configuration. 
 
 ## Simulating Calls
 Simulating calls allows providers to identify areas of concern, or just to verify functionality, by testing in different setups and operational configurations. 
