@@ -1,7 +1,7 @@
 # Button Builder
 **Developer :material-menu-right: Button Builder**
 
-**Button Builder** is used in combination with [Form Builder](https://docs.connexcs.com/developers/form-builder/) to create a button which can be placed in an existing menu on the site.
+**Button Builder** is used in combination with [**Form Builder**](https://docs.connexcs.com/developers/form-builder/) to create a button which can be placed in an existing menu on the site.
 
 !!! example "Example use"
     Create the ability to select 1 or more customers/DIDs, supplement with additional information gathered from a form, then run Script Forge to either send that data outside the system or perform bulk operations which may need to be repeated.
