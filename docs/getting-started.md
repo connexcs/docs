@@ -124,7 +124,7 @@ You can create multiple payment records to cover a customer's invoices and recei
 ___
 
 ## Carrier Setup
-**Carriers** are your VoIP route providers. Below, we include only the required fields to set up a carrier.  For detailed instructions on carrier setup, see [**Carrier**](https://docs.connexcs.com/carrier/)
+**Carriers** are your VoIP route providers. Below, we include only the required fields to set up a carrier.  For detailed instructions on carrier setup, see [**Carrier**](https://docs.connexcs.com/carrier/).
 
 Navigate to **Management :material-menu-right: Carrier**:
 
@@ -174,11 +174,9 @@ ___
 For detailed server configuration, see **[Servers](https://docs.connexcs.com/setup/settings/servers/)**.
 
 
-[notification-icon]: /getting-started/img/notification-icon.png "Notification Icon"
-[verify-email-1]: /getting-started/img/1.png "Verify"
+[verify-email-1]: /getting-started/img/1.png "Verify Contact"
 [verify-email-2]: /getting-started/img/verify-email.png "Verify Email"
 [verify-mobile]: /getting-started/img/verify-mobile.png "Verify Mobile"
-[warning-icon]: /getting-started/img/warning-icon.png "warning-icon"
-[customer-save-new]: /getting-started/img/6.png "customer-save-new"
-
-[carrier-auth-2]: /getting-started/img/16.png "carrier-auth-2"
+[warning-icon]: /getting-started/img/warning-icon.png "Warning Icon"
+[customer-save-new]: /getting-started/img/6.png "New Customer"
+[carrier-auth-2]: /getting-started/img/16.png "Carrier Setup"
