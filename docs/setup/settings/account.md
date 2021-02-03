@@ -43,7 +43,7 @@ Below the Company information is a listing of the applied ConnexCS packages, alo
 ## ConnexCS Service Agreement
 To view the full ConnexCS Service Agreement, click the orange banner at the bottom:
 
-   ![alt text][service-agreement]
+&emsp;![alt text][service-agreement]
 
 
 [accountprofile]: /setup/img/account-profile.png "Account Profile"
