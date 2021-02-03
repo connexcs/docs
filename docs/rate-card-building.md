@@ -11,8 +11,8 @@
 
 There are four sections for Rate Cards in the ConnexCS Control Panel:
 
-+ **Provider Cards** govern routing and rates based on the carrier. Details found under [Provider Rate Cards](https://docs.connexcs.com/provider-ratecard/). 
-+ **Customer Cards** are typically derived from Provider Cards, and allow for additional customer management. Details found under [Customer Rate Cards](https://docs.connexcs.com/customer-ratecard/). 
++ **Provider Cards** govern routing and rates based on the carrier. Details found under [**Provider Rate Cards**](https://docs.connexcs.com/provider-ratecard/). 
++ **Customer Cards** are typically derived from Provider Cards, and allow for additional customer management. Details found under [**Customer Rate Cards**](https://docs.connexcs.com/customer-ratecard/). 
 + **Routing** gives an overview of the routing for customers, and links to configure customers. 
 + **Global Search** provides a way to search for routes and rates based on the Provider and Direction. 
 
