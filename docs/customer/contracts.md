@@ -11,4 +11,4 @@ Click the **`+`** and complete the following fields:
 + **Required**: Enabling this will shut down the account if the Grace Date is passed and the contract still hasn't been signed. 
 
 !!! tip "How to create a Contract"
-    For details on Contract setup, see Setup :material-menu-right: Config :material-menu-right: [Contracts](https://docs.connexcs.com/setup/config/contracts/). Contract Revisions are also available here. 
+    For details on Contract setup, see **Setup :material-menu-right: Config :material-menu-right: [Contracts](https://docs.connexcs.com/setup/config/contracts/)**. Contract Revisions are also available here. 
