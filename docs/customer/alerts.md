@@ -20,7 +20,7 @@ Field details:
 * **Reset Threshold**: A numeric value that works with the threshold to prevent alerts from continually firing unintentionally, which is necessary for values that fluctuate. The purpose is two-fold: to allow the threshold function to have a type of range instead of a concrete number; and to provide the alert system with automation for when a system returns to normal on its own.
 * **Sample Period**: (only available for certain "Areas") Sample the data over a period of time and use that against the threshold to determine when to trigger the alert. 
 * **Penalty**: The alert will Disable the Customer or Carrier for the selected duration of time. 
-* **Template**: This will populate the Alert which is sent. (See [**Templates**](https://docs.connexcs.com/setup/config/templates/) under **Setup** > **Config** for details.)
+* **Template**: This will populate the Alert which is sent. (See **Setup :material-menu-right: Config** :material-menu-right: [**Templates**](https://docs.connexcs.com/setup/config/templates/) for details.)
 * **Repeat**: How often the Alert will be resent. 
 
 Click **`Save`**, and a new alert will be created.
