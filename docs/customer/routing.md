@@ -4,7 +4,7 @@
 **Ingress Routing** is the process which allocates an incoming call (dialed by our customers) based on the assigned Customer Rate Card, which then Egresses the call to a specified provider. This allows multiple rate cards to be used with or without a prefix. First, a check is done for the longest prefix, then shortest prefix is checked for a match. If no prefix is matched, it will match the rate cards with mutually exclusive destinations.  If there are multiple rate cards with the same prefixes, you must set up a dial plan with a Tech Prefix to identify the correct card.
 
 !!! info "Routing Templates and more"
-    Create templates for customer routing in [Routing Global](https://docs.connexcs.com/global-routing/). For more information on Routing, see [Routing Setup](https://docs.connexcs.com/video-guide/#routing-setup) in our Video Guides for a detailed walkthrough. Additional documentation can be found in the [Routing Overview](https://docs.connexcs.com/routing/) and [Routing Strategy](https://docs.connexcs.com/routing-strategy/) sections.
+    Create templates for customer routing in [**Routing Global**](https://docs.connexcs.com/global-routing/). For more information on Routing, see [**Routing Setup**](https://docs.connexcs.com/video-guide/#routing-setup) in our Video Guides for a detailed walkthrough. Additional documentation can be found in the [**Routing Overview**](https://docs.connexcs.com/routing/) and [**Routing Strategy**](https://docs.connexcs.com/routing-strategy/) sections.
 
 
 ## Configure Routing
@@ -22,7 +22,7 @@ View and configure existing routes on the Routing tab in the Customer card. Clic
     + To Carriers: Select a carrier to send the call to terminate somewhere outside of the ConnexCS system.
 
 + **Tech Prefix**: Allows you to distinguish a route from an inbound party. When multiple customers share the same IP address, each customer needs an individual Tech Prefix so the switch can route calls correctly. It lets providers separate multiple rate cards.
-+ **Dial String Prefix Set**: Helpful for commonly used sets of prefixes. Rather than entering a complete list of prefixes for UK, for example, you can create a predefined Prefix Set (defined under [Setup > Advanced > Prefix Set](https://docs.connexcs.com/setup/advanced/prefix-set/)) and then select it here for appropriate customers. 
++ **Dial String Prefix Set**: Helpful for commonly used sets of prefixes. Rather than entering a complete list of prefixes for UK, for example, you can create a predefined Prefix Set (defined under **Setup :material-menu-right: Advanced :material-menu-right: [Prefix Set]**(https://docs.connexcs.com/setup/advanced/prefix-set/)) and then select it here for appropriate customers. 
 + **Dial String**: Only allows a dialed number through if it matches the defined dial string (or "dial pattern"). (If nothing is entered, it will match everything and try to send all calls. This doesn't work if you have more than one Rate Card as the system will not know which one to use.) Each prefix is listed one per line, both prefix and regular expressions are allowed. For example, if you only wanted to allow UK Landline you could use:
 
     Prefix
@@ -78,12 +78,12 @@ View and configure existing routes on the Routing tab in the Customer card. Clic
 !!! Note "CPS Buffering"
     **CPS Buffering**: Used to manage large volumes of calls over a short period of time. This process maximises saturation and increases call completion within a given CPS restriction. It does this by removing spikes and borrowing capacity from future seconds. If incoming traffic exceeds your pre-set CPS, it holds the call for one second, and then tries again. You can increase the second count in the CPS Spike Buffer field. Changing the CPS Buffering value only affects calls that exceed the CPS. The delay will show as increased PDD on the call, each second the system will emit a 100 Trying (High CPS, Buffering) response to indicate the status/progress of the call.
 
-+ **ASR Plus** assists capacity management by helping you define how to handle connections to known failed numbers. For information on the ASR Plus options, see [ASR Plus Details](https://docs.connexcs.com/customer/routing/#asr-plus-details) below. 
++ **ASR Plus** assists capacity management by helping you define how to handle connections to known failed numbers. For information on the ASR Plus options, see [**ASR Plus Details**](https://docs.connexcs.com/customer/routing/#asr-plus-details) below. 
 
 
 ### ScriptForge
 
-+ **ScriptForge**: Set a custom JavaScript to run from within the ConnexCS platform in-line with the call. Some example operations could be checking a Do Not Call list or forcing a CLI. For more information about setup and operation, see the [ScriptForge](https://docs.connexcs.com/developers/scriptforge/) page.
++ **ScriptForge**: Set a custom JavaScript to run from within the ConnexCS platform in-line with the call. Some example operations could be checking a Do Not Call list or forcing a CLI. For more information about setup and operation, see the [**ScriptForge**](https://docs.connexcs.com/developers/scriptforge/) page.
 
 + **Timeout**: Set how long the script may run.
 
@@ -161,7 +161,7 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
     The feature will first need to be enabled on the account under **Setup > Settings > Account > [Packages](https://docs.connexcs.com/setup/settings/account/#packages)** before it can be enabled here for individual customers. 
 
 ### Strategy
-For advanced routing, click the **`+`** to select a [Prefix Set](https://docs.connexcs.com/setup/advanced/prefix-set/) and assign a [Routing Strategy](https://docs.connexcs.com/routing-strategy/). This gives you greater control over how routes are selected for a given customer. 
+For advanced routing, click the **`+`** to select a [**Prefix Set**](https://docs.connexcs.com/setup/advanced/prefix-set/) and assign a [**Routing Strategy**](https://docs.connexcs.com/routing-strategy/). This gives you greater control over how routes are selected for a given customer. 
 
 ### Notes
 
@@ -171,7 +171,7 @@ For advanced routing, click the **`+`** to select a [Prefix Set](https://docs.co
 ### Fraud
 
 + **Fraud Profile**: Apply one of the Fraud Profiles configured under **Setup > Advanced > [Fraud Profile](https://docs.connexcs.com/setup/advanced/fraud/#setup-fraud-detection)**.
-+ **Fraud Mode**: Specify how strictly the profile will be applied, this is dependent on the [Fraud Mode Thresholds](https://docs.connexcs.com/setup/advanced/fraud/#fraud-mode) configured in the Profile. 
++ **Fraud Mode**: Specify how strictly the profile will be applied, this is dependent on the [**Fraud Mode Thresholds**](https://docs.connexcs.com/setup/advanced/fraud/#fraud-mode) configured in the Profile. 
     + Disabled
     + Low - Alert or Block Calls
     + High - Block Calls or Account
