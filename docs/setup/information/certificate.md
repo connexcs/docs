@@ -29,9 +29,14 @@ To add a certificate:
 1. Enter the domain name for this certificate.
 2. Ensure that you have user provided to set to "Yes".
 3. Certificate and keys should be in PEM (base64 format).
-4. Enter your **Certificate**
-    + Start with: `-----BEGIN CERTIFICATE-----`
-    + End with: `-----END CERTIFICATE-----`.
+4. Enter your **Certificate** with the BEGIN and END tags as follows:
+
+```
+-----BEGIN CERTIFICATE-----
+<enter certificate here>
+ -----END CERTIFICATE-----
+```
+
 5. Enter your private **Key** 
     + Start with: `-----BEGIN PRIVATE KEY-----`
     + End with: `-----END PRIVATE KEY-----`.
