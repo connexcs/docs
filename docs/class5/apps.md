@@ -1,7 +1,7 @@
 # Apps
 **Class 5 :material-menu-right: Apps**
 
-The ConnexCS **Apps** feature allows providers to create small, simple, drag and drop applications. Some examples are [Pinless Calling Cards](https://docs.connexcs.com/calling-card/), Echo Tests, Conferencing, or a Welcome message with an IVR setup and conditions. 
+The ConnexCS **Apps** feature allows providers to create small, simple, drag and drop applications. Some examples are [**Pinless Calling Cards**](https://docs.connexcs.com/calling-card/), Echo Tests, Conferencing, or a Welcome message with an IVR setup and conditions. 
 
 ## Build App
 To create a new App:
