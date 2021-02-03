@@ -19,7 +19,7 @@ To add non-English equivalents for your preferred language:
 8. Click `Save`.
 9. If the new translation is not displayed, click `Refresh` located at the top of page.
 
-   ![alt text][adding-words-in-spanish]
+    ![alt text][adding-words-in-spanish]
 
 
 ## Modify Non-English Equivalents
