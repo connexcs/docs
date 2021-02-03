@@ -64,14 +64,6 @@ Your customer should now be able to dial in, enter their number, and the call wi
 !!! note "Unrestricted dialing"
     If the customer requires unrestricted dialing for non-calling card calls, you can still add `^.*` as a CLI option.
 
-
-
-
-[cc-1]: /misc/img/193.png "CC-1"
-[cc-3]: /misc/img/195.png "CC-3"
-[cc-5]: /misc/img/197.png "CC-5"
-[cc-6]: /misc/img/198.png "CC-6"
-[cc-8]: /misc/img/200.png "CC-8"
 [pinless]: /misc/img/pinless.png "Pinless Setup"
 
 
