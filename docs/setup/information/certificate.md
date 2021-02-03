@@ -31,15 +31,18 @@ To add a certificate:
 3. Certificate and keys should be in PEM (base64 format).
 4. Enter your **Certificate** with the BEGIN and END tags as follows:
 
-```
------BEGIN CERTIFICATE-----
-<enter certificate here>
- -----END CERTIFICATE-----
-```
+    ```
+    -----BEGIN CERTIFICATE-----
+
+    <enter certificate here>
+
+    -----END CERTIFICATE-----
+    ```
 
 5. Enter your private **Key** 
     + Start with: `-----BEGIN PRIVATE KEY-----`
     + End with: `-----END PRIVATE KEY-----`.
+    
 6. Enter in your **CA(Certificate Authority) Certificate**
     + Start with: `-----BEGIN CERTIFICATE-----`
     + End with: `-----END CERTIFICATE-----`.
