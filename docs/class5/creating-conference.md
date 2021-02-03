@@ -20,7 +20,6 @@ To create a conference call:
         * `Wide Band1` = 16 KHZ
         * `Ultra Wide Band` = 32 KHz
     * **Max Members** limits the number of concurrent callers this conference must allow. Note: the preset of '0' Max Members allows an unlimited number of callers can join the conference. 
-
     ![alt text][conference]
 
 !!! tip "Conference calls for external callers"
