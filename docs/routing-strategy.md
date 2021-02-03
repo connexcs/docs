@@ -46,7 +46,7 @@ To set up a routing strategy in a customer's account:
 6. Select a strategy from the drop-down list.  Note that you can also add a prefix in this screen.
 
 !!! info "Advanced Customer Routing"
-    For additional settings under Customer Routing, see [Advanced Routing Configuration](https://staging--connexcs-docs.netlify.app/customer/routing/#advanced-routing-configuration). 
+    For additional settings under Customer Routing, see [**Advanced Routing Configuration**](https://staging--connexcs-docs.netlify.app/customer/routing/#advanced-routing-configuration). 
 
 !!! warning "Default behavior with conflicting Strategies"
     You can set a Customer Rate Card to default to LCR, Random, Round Robin, and Reverse LCR. However, parameters set in a Routing Strategy will override the Customer Rate Card setting if they conflict.
