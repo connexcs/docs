@@ -49,7 +49,7 @@ When you enable **IP Authentication**, you associate the IP of a customer switch
     
 === "Parameter Rewrite"
 
-    The **Parameter Rewrite** tab is used to manipulate data as it comes into the system. It is most useful when you need to create automatic replacements for destination numbers or CLI, so a number is formatted in the appropriate [**E164 format**](https://www.twilio.com/docs/glossary/what-e164). 
+    The **Parameter Rewrite** tab is used to manipulate data as it comes into the system. It is most useful when you need to create automatic replacements for destination numbers or CLI, so a number is formatted in the appropriate [**E164 format**](https://en.wikipedia.org/wiki/E.164). 
 
     1. Click the **`+`**.
     2. Type: Select the parameter to modify.
@@ -100,7 +100,7 @@ Generic SIP Trace showing the Challenge Response:
 
 === "Parameter Rewrite"
 
-    The **Parameter Rewrite** tab is used to manipulate data as it comes into the system. It is most useful when you need to create automatic replacements for destination numbers or CLI, so a number is formatted in the appropriate [**E164 format**](https://www.twilio.com/docs/glossary/what-e164). 
+    The **Parameter Rewrite** tab is used to manipulate data as it comes into the system. It is most useful when you need to create automatic replacements for destination numbers or CLI, so a number is formatted in the appropriate [**E164 format**](https://en.wikipedia.org/wiki/E.164). 
 
     1. Click the **`+`**.
     2. Type: Select the parameter to modify.
