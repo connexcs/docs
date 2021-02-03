@@ -40,8 +40,7 @@ To add a certificate:
     ```
 
 5. Enter your private **Key** 
-    + Start with: `-----BEGIN PRIVATE KEY-----`
-    + End with: `-----END PRIVATE KEY-----`.
+
     ```
     -----BEGIN PRIVATE KEY-----
 
