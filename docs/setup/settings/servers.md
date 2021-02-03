@@ -37,6 +37,8 @@ RTP Servers handle streaming media. To view RTP Servers in your system:
 2. A list of your current RTP servers will appear, with columns for IP address, aliases, and zones.
 3. The **`Refresh`** button will reload the page to show the most current changes, if any.
 
+    ![alt text][rtpserver]
+
 ## Server Details
 Click the server's IP address to view details. 
 
@@ -104,7 +106,7 @@ To reactivate a server:
 1. Click the server's IP address.
 2. Click **Reactivate** to activate your server.
 
-   ![alt text][server-6]
+    ![alt text][server-6]
     
 ## Server Clustering and User Location Registration
 ### User Location Registration
@@ -124,5 +126,5 @@ When a user is registers with UDP via NAT, a port mapping is created. However, t
 !!! tip "Ping Overhead"
     Due to design constraints that occur with multiple servers in an array, NAT Keep Alive Pings can be quite intensive. You could use *Disable UAC Ping* from the server page, upgrade to a cluster, or use a single registration server to solve this. More intricate measures can be arranged on a case-by-case basis.
 
-[rtpserver]: /misc/img/rtpservers.png "RTP Server"
-[server-6]: /misc/img/244.png "server-6"
+[rtpserver]: /setup/img/rtpservers.png "RTP Server"
+[server-6]: /setup/img/reactivateserver.png "Reactivate Server"
