@@ -20,7 +20,9 @@ To create a conference call:
         * `Wide Band1` = 16 KHZ
         * `Ultra Wide Band` = 32 KHz
     * **Max Members** limits the number of concurrent callers this conference must allow. Note: the preset of '0' Max Members allows an unlimited number of callers can join the conference. 
+    
     ![alt text][conference]
+
 
 !!! tip "Conference calls for external callers"
     The standard Conference configuration above can only be used by customers internal to ConnexCS. To allow external numbers to dial into the conference, setup a [**Customer DID**](https://docs.connexcs.com/customer/did/#configure-did) and set the Destination to Internal, then select the available pre-configured conference. 
