@@ -7,8 +7,8 @@ Configure **Options** to set key default behaviors for the system. Click **`Edit
 |---|---|
 |Customer Origination Instructions Page|Provide helpful details or updates when customers login to the Customer Portal.| 
 |Origination and Termination Ingress Addresses|Let customers know where they should be sending calls, typically these should be the same.|
-|Profit Assurance Default|Enable Profit Assurance on all new accounts (found under Customer > Routing > Ingress Routing > [Price Limits](https://docs.connexcs.com/customer/routing/#price-limits)).|
-|Audit Comment|When a change is saved in the Control Panel, a box will appear requesting explanation for the change (visible under Setup > Information > [Audit Log](https://docs.connexcs.com/setup/information/audit-log/)).|
+|Profit Assurance Default|Enable Profit Assurance on all new accounts (found under Customer > Routing > Ingress Routing > [**Price Limits**](https://docs.connexcs.com/customer/routing/#price-limits)).|
+|Audit Comment|When a change is saved in the Control Panel, a box will appear requesting explanation for the change (visible under Setup > Information > [**Audit Log**](https://docs.connexcs.com/setup/information/audit-log/)).|
 |Support URL and Support Phone|Information provided here will be passed to the Customer Portal, so customers know how to contact your support teams.|
 |Payment Details|Allow you to add custom messages and display details such as bank account information, simplifying the payment process. This is for display purposes only.|
 |Payment Description|This is the description that will be displayed for payment methods such as PayPal and Stripe. |
