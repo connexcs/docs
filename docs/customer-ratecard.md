@@ -1,7 +1,7 @@
 # Customer Rate Card
 **Management :material-menu-right: Customer Rate Cards**
 
-**Customer Rate Cards** let you manage the rates for customers, edit customer profiles, and view important information. Before configuring, we suggest you review [Rate Card Overview](https://docs.connexcs.com/rate-card-building/) then "[Rate Card Setup](https://docs.connexcs.com/video-guide/#rate-card-setup)" in the ConnexCS Video Guide. You will also want to have at least one [Provider Rate Card](https://docs.connexcs.com/provider-ratecard/) configured. 
+**Customer Rate Cards** let you manage the rates for customers, edit customer profiles, and view important information. Before configuring, we suggest you review [**Rate Card Overview**](https://docs.connexcs.com/rate-card-building/) then [**Rate Card Setup**](https://docs.connexcs.com/video-guide/#rate-card-setup) in the ConnexCS Video Guide. You will also want to have at least one [**Provider Rate Card**](https://docs.connexcs.com/provider-ratecard/) configured. 
 
 ## Overview
 **Name**: Click the name of the provider to see individual rate card and management options. (If a Rate Card name shows a yellow warning or red alert, these will indicate details about the card. It may be stale or have some sort of error.)
@@ -18,9 +18,9 @@
 
 **Compile**: Displays which Customer Rate Cards are in sync with the Provider Rate Cards. 
 
-![alt text][compile1] Stale (needs to be compiled)
+&emsp; ![alt text][compile1] Stale (needs to be compiled)
 
-![alt text][compile2] In sync
+&emsp; ![alt text][compile2] In sync
 
 
 !!! tip "Compile Example"
@@ -40,9 +40,9 @@
 Once created, there are several options to complete the card. 
 
 1. Click the **`+`** button. 
-3. Complete desired fields. (For details, see [Customer Rate Card Settings](https://docs.connexcs.com/customer-ratecard/#customer-rate-card-settings) below.)
+3. Complete desired fields. (For details, see [**Customer Rate Card Settings**](https://docs.connexcs.com/customer-ratecard/#customer-rate-card-settings) below.)
 4. Click **`Save`**.
-5. In the new card, select **Profits** then click the **`+`** button. (For details, see [Profits](https://docs.connexcs.com/customer-ratecard/#functions) under Functions below).
+5. In the new card, select **Profits** then click the **`+`** button. (For details, see [**Profits**](https://docs.connexcs.com/customer-ratecard/#functions) under Functions below).
 
 **Option 1: Build from Provider Card**
 This is the preferred method and requires that a Provider Rate Card was selected in Properties > Basic. Click the **`Build`** button and confirm.  A notification will tell you if the build was successful. You may need to refresh the card to see the new settings. 
@@ -73,9 +73,8 @@ The final method for configuring a Customer Rate Card is to import/upload it:
 
 **Audit Log** Review any changes made to the card settings. 
 
-#### Functions
-
-![alt text][prc-func] 
+**Functions**
+&emsp;![alt text][prc-func] 
 
 + **Revision**: List all versions of changes on the card. 
 + **Create Draft**: Create a blank revision to manually add all prefixes and rows. This will only contain rows added manually, none of the previous revision is retained. 
@@ -83,13 +82,13 @@ The final method for configuring a Customer Rate Card is to import/upload it:
 + **Delete Revision**: Select a revision to delete. 
 + **Download**: Download a CSV file of the Rate Card.
 
-![alt text][crc-func] 
+    ![alt text][crc-func] 
 
 * **Parent Cards** are the Provider Rate Cards associated to this card.
 * **Customers** lists the specific Customers using this card.
 * **Profits** allows you to configure profit rules. This is most useful on cards with a high number of rules.
 
-![alt text][profit] 
+    ![alt text][profit] 
 
 *click each tab for configuration details*
 
@@ -106,7 +105,7 @@ The final method for configuring a Customer Rate Card is to import/upload it:
 
 === "Config"
 
-    + **Prefix Set**: Select Prefix Sets (configured [here](https://docs.connexcs.com/setup/advanced/prefix-set/) simplify the Profit configuration. 
+    + **Prefix Set**: Select Prefix Sets (check [**here**](https://docs.connexcs.com/setup/advanced/prefix-set/) to simplify the Profit configuration). 
     * When **MCD (Minimum Call Duration)**, **Pulse**, or **Rounding** are disabled, that setting will select the worst case scenario as defined by the carrier. 
     * **Name**: You may choose to add a name to identify the Profit rule 
     * **Connect Cost**: one-time fee for connecting the call. 
@@ -152,7 +151,7 @@ To change Revision status:
 + **Strategy**: Manage how calls are distributed across Carriers when a Customer Card is associate with multiple Provider Cards. 
 
 !!! info "Routing Strategy"
-    The Strategy selected in the Customer Card will be overwritten by the global Routing Strategy. For description of each Strategy as well as configuration for a comprehensive Routing Strategy, see [Routing Strategy](https://docs.connexcs.com/routing-strategy/) . 
+    The Strategy selected in the Customer Card will be overwritten by the global Routing Strategy. For description of each Strategy as well as configuration for a comprehensive Routing Strategy, see [**Routing Strategy**](https://docs.connexcs.com/routing-strategy/) . 
 
 #### Advanced
 
@@ -160,31 +159,28 @@ To change Revision status:
 * **Billing Precision** - Round billing on a card to the specified decimal point (typically set to 4). 
 * **Rounding Method**: Specify how to handle the n+1 digit (e.g if your card is billed to 4 decimal places, this cares about the 5th digit). For our example: 0.1234**5** (rounded to 4 decimal places):
  
-   |Method|Explanation|
-   | --- | --- |
-   |Up|Rounded up regardless of n+1 digit (0.1235)|
-   |Down|Rounded down regardless of n+1 digit (0.1234)|
-   |Half-Up|Values 5-9 are rounded up (0.1235)|
-   |Half-Down|Values 0-5 are rounded down (0.1234)|
+    |Method|Explanation|
+    | --- | --- |
+    |Up|Rounded up regardless of n+1 digit (0.1235)|
+    |Down|Rounded down regardless of n+1 digit (0.1234)|
+    |Half-Up|Values 5-9 are rounded up (0.1235)|
+    |Half-Down|Values 0-5 are rounded down (0.1234)|
 
 * **Duration Rounding**: The same rounding options but for the call duration.
 * **Public Options**: Choose what can be done with the card information: viewed via HTML (on a web page), download CSV (a spreadsheet), and whether to list the rate card in the customer portal (customer can view cards not currently on their account and select them for use). (Note: API Querying is no longer available.)
 * **Dynamic Routing**: Cards that were created manually (added via upload or edited in-browser) have the option to use Dynamic Routing to select routes for the card, essentially changing the routing without creating new cards. Customer Cards that were generated from the Provider card use predetermined LCR (Least Cost Routing) based on the Parent card.
 * **Default RTP**: If set, and the customer adds the route themselves, then this will be used. Otherwise, this is an unused setting. 
 + **Contract**: Specify a default contract that applies to a specific rate card. This only applies if the customer selects the rate card from the Customer Portal, not when it is added using the Dashboard. 
-* **Manual Ordering** - Allow granular ordering of specific prefixes and which carriers to use. See [Manual Ordering](https://docs.connexcs.com/customer-ratecard/#manual-ordering-tab) below for details. 
+* **Manual Ordering** - Allow granular ordering of specific prefixes and which carriers to use. See [**Manual Ordering**](https://docs.connexcs.com/customer-ratecard/#manual-ordering-tab) below for details. 
 * **Reseller**: Select Resellers who will be associated with this card. When the Reseller logs into the Portal, they see the settings from the perspective of a Provider Card, even though they are configured as a Customer Card. 
 
 #### Notes
-**Notes (Private)**: Only visible in the ConnexCS Control Panel (not visible to the Customer).
 
-**Notes (Public)**: These are visible to the Customer in their Portal.
++ **Notes (Private)**: Only visible in the ConnexCS Control Panel (not visible to the Customer).
++ **Notes (Public)**: These are visible to the Customer in their Portal.
 
 ### Manual Ordering tab
-This tab will only be available if "Manual Ordering" has been enabled under Properties > Advanced. For each Prefix you can manually order the Provider Rate Cards for a high degree of control over how calls are routed. 
-
-
-    
+This tab will only be available if "Manual Ordering" has been enabled under **Properties :material-menu-right: Advanced**. For each Prefix you can manually order the Provider Rate Cards for a high degree of control over how calls are routed. 
 
 
 [compile1]: /card/img/compile1.png "Paused"

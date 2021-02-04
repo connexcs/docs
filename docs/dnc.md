@@ -22,11 +22,11 @@ Step 2: Configure Script Forge
 3. Select `App` for the **Type**.
 4. Slick **Save**.
 5. Click the newly created App
-6. Add the JavaScript code [dnc-add.js](https://github.com/connexcs/scriptforge-examples/blob/master/dnc-check.js).
+6. Add the JavaScript code [**dnc-add.js**](https://github.com/connexcs/scriptforge-examples/blob/master/dnc-check.js).
 7. Click the green arrow to `Save and Run`. 
 
 !!! info "More on Script Forge"
-    See [Script Forge](https://docs.connexcs.com/developers/scriptforge/) in our documentation for additional details on using Script Forge.
+    See [**Script Forge**](https://docs.connexcs.com/developers/scriptforge/) in our documentation for additional details on using Script Forge.
     
 Step 3: Add script to Customer
 
@@ -49,7 +49,7 @@ Add the following to Script Forge:
 3. Select `App` for the **Type**.
 4. Slick **Save**.
 5. Click the newly created App
-6. Add the JavaScript code [dnc-add.js](https://github.com/connexcs/scriptforge-examples/blob/master/dnc-add.js).
+6. Add the JavaScript code [**dnc-add.js**](https://github.com/connexcs/scriptforge-examples/blob/master/dnc-add.js).
 7. Click the green arrow to `Save and Run`. 
 
 [dnc-3]: /misc/img/dnc-3.png "DNC-3"

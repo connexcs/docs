@@ -1,5 +1,5 @@
 # Reseller Account
-**Setup :material-menu-right: Advanced :material-menu-right: Reseller**
+**Setup :material-menu-right: Advanced :material-menu-right: Reseller Account**
 
 ConnexCS offers the **Reseller Account** to provide functionality for you as a carrier to resell your services via a reseller or agent.
 

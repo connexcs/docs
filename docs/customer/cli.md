@@ -46,7 +46,7 @@ The CLI system uses Regular Expressions to match and replace numbers. Here are a
 | +123456789  |   ^\+([0-9]+)$ |          \1 |                                 Remove leading + |
 | 01782123456 |    ^0([1-9]+)$ |        44\1 |             Remove leading 0 and replace with 44 |
 
-*To learn more about writing regular expressions, visit [http://regexr.com](http://regexr.com) for tutorials and exercises available for all levels of expertise.*
+*To learn more about writing regular expressions, visit [**http://regexr.com**](http://regexr.com) for tutorials and exercises available for all levels of expertise.*
 
 
 ## Blacklist numbers
@@ -54,7 +54,7 @@ Using **CLI Restrict** lets you block calls, essentially creating a Blacklist of
 
 1. Click **Management :material-menu-right: Rate Card**. 
 2. Select **Provider Rate Card** (under the Name column).
-1. Select **Properties :material-menu-right: *Advanced**.
+1. Select **Properties :material-menu-right: Advanced**.
 3. Enter the CLI/ANIs you want to block in the **CLI Restrict** box.
 4. Click **`Save`**.
 
@@ -76,9 +76,9 @@ Scenario 5 (Blacklist): Configure a CLI then add it to "CLI Restrict" under Prov
 ## General Condition 6 (GC6) Compliance
 ConnexCS is GC6 compliant for end users, which: 
 
-> requires Communications Providers (CPs) to provide CLI facilities, and ensure that the CLI Data provided with a call includes a valid, dialable telephone number which uniquely identifies the caller." For details on this General Condition, including guidelines for "valid" and "dialable" numbers, see OFCOM's [Guidance on CLI Facilities](https://www.ofcom.org.uk/__data/assets/pdf_file/0012/113214/statement-guidelines-cli-facilities.pdf).
+> requires Communications Providers (CPs) to provide CLI facilities, and ensure that the CLI Data provided with a call includes a valid, dialable telephone number which uniquely identifies the caller." For details on this General Condition, including guidelines for "valid" and "dialable" numbers, see OFCOM's [**Guidance on CLI Facilities**](https://www.ofcom.org.uk/__data/assets/pdf_file/0012/113214/statement-guidelines-cli-facilities.pdf).
 
-To set the "P-Asserted-ID" per customer, see [Configure CLI](https://docs.connexcs.com/customer/cli/#configure-cli) above. 
+To set the "P-Asserted-ID" per customer, see [**Configure CLI**](https://docs.connexcs.com/customer/cli/#configure-cli) above. 
 
 [cli]: /customer/img/cli.png "CLI Main"
 [edit-cli]: /customer/img/edit-cli.png "Edit CLI"

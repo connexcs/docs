@@ -6,7 +6,7 @@ All Customer Monitoring can be found in **Management :material-menu-right: Custo
 
 **:material-menu-right: Stats**
 
-> On the **Stats** tab, view graphs related to calling and call quality statistics and reports. All graphs may be filtered by different time segments and are available to be downloaded. Details found [here](https://docs.connexcs.com/customer/stats/). 
+> On the **Stats** tab, view graphs related to calling and call quality statistics and reports. All graphs may be filtered by different time segments and are available to be downloaded. Details found [**here**](https://docs.connexcs.com/customer/stats/). 
 
 **:material-menu-right: Route Stats**
 
@@ -14,7 +14,7 @@ All Customer Monitoring can be found in **Management :material-menu-right: Custo
 
 **:material-menu-right: Latest Calls**
 
-> The **Latest Calls** tab provides records of incoming and outgoing calls. View calls and refresh the list of simulated calls. Configuration details found [here](https://docs.connexcs.com/customer/latest-calls/). 
+> The **Latest Calls** tab provides records of incoming and outgoing calls. View calls and refresh the list of simulated calls. Configuration details found [**here**](https://docs.connexcs.com/customer/latest-calls/). 
 
 **:material-menu-right: Dialogs**
 
@@ -22,7 +22,7 @@ All Customer Monitoring can be found in **Management :material-menu-right: Custo
 
 **:material-menu-right: Alerts**
 
-> **Alerts** allow you to generate alerts to your customers when specific events are triggered, or to disable accounts autonomously when set thresholds are reached. You can view all configured alerts by clicking on this tab. Configuration details found [here](https://docs.connexcs.com/customer/alerts/). 
+> **Alerts** allow you to generate alerts to your customers when specific events are triggered, or to disable accounts autonomously when set thresholds are reached. You can view all configured alerts by clicking on this tab. Configuration details found [**here**](https://docs.connexcs.com/customer/alerts/). 
 
 
 
@@ -31,16 +31,16 @@ All Carrier Monitoring can be found in **Management :material-menu-right: Carrie
 
 **:material-menu-right: Consecutive Failures**
 
-> **Consecutive Failures** (found on the main Carrier tab) is a simplistic way to measure a carrier's ability to connect calls. Details found [here](https://docs.connexcs.com/carrier/#consecutive-failures). 
+> **Consecutive Failures** (found on the main Carrier tab) is a simplistic way to measure a carrier's ability to connect calls. Details found [**here**](https://docs.connexcs.com/carrier/#consecutive-failures). 
 
 **:material-menu-right: Failover**
 
-> **Failover** simplistic way to measure a carrier's ability to connect calls. Configuration details found [here](https://docs.connexcs.com/carrier/#failover). 
+> **Failover** simplistic way to measure a carrier's ability to connect calls. Configuration details found [**here**](https://docs.connexcs.com/carrier/#failover). 
 
 **:material-menu-right: Stats**
 
-> On the **Stats** tab, view carrier-related statistics. Details found [here](https://docs.connexcs.com/carrier/#stats). 
+> On the **Stats** tab, view carrier-related statistics. Details found [**here**](https://docs.connexcs.com/carrier/#stats). 
 
 **:material-menu-right: Alerts**
 
-> View **Alerts** tied to Consecutive Failures. Details found [here](https://docs.connexcs.com/carrier/#alerts). 
+> View **Alerts** tied to Consecutive Failures. Details found [**here**](https://docs.connexcs.com/carrier/#alerts). 

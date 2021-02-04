@@ -4,7 +4,7 @@
 View and download **Reports** which provide extensive insights on historical data such as by Customers or Provider routes, DTMF Cost, and Per Number metrics. The ability to Schedule reports adds automation for frequent data requirements.  
 
 !!! tip "Creating additional reports"
-    The Developer > [Analytics](https://docs.connexcs.com/developers/analytics/) section of ConnexCS allows providers to manage these reports and create new reports.
+    The **Developer :material-menu-right: [Analytics](https://docs.connexcs.com/developers/analytics/)** section of ConnexCS allows providers to manage these reports and create new reports.
 
 ## Breakout
 The **Breakout** report lists account customers with associated profits, and relevant data such as how much each customer costs, how much they have been charged, ASR and ACD, and so on. The information is here is from processed CDR and so is considered "billing accurate", meaning this data can be used to bill customers. 
@@ -27,19 +27,19 @@ Currently this provides the same functionality and options as the individual Bre
 ## Per Number
 This report displays metrics for a specific number. It is particularly useful if you get a complaint about people dialing a specific number. Select the number and define the time frame (max 6 months) to generate a list of all calls for that number, along with call details. Click **`Numbers`** to search for multiple numbers. 
 
-## Schedule Reports
-This feature emails the Breakout Report at designated intervals. To schedule a breakout report, 
+## Schedule Report
+This feature emails the Breakout Report at designated intervals. To schedule a breakout report: 
 
 1. Click the **`+`** icon.
 
     ![alt text][schedulereport]
 
 2. **Name** the report schedule.
-3. Enter the **Email** of the report recipient. 
-4. Use **Group** to select one or more ways to group the data.
-5. Select one or more **Customers**, or leave it blank for all customers. 
-6. Select one or more **Providers**, or leave it blank for all providers. 
-7. Select which **Columns** to include in the report. 
+3. **Email**: The report recipient. 
+4. **Group**: Select one or more ways to group the data.
+5. **Customers**: Select one or more, or leave it blank for all Customers. 
+6. **Providers**: Select one or more, or leave it blank for all Providers. 
+7. **Columns**: Select the columns to include in the report. 
 4. Click **`Save`**.
 
 [schedulereport]: /reports/img/schedulereport1.png "Schedule Reports"

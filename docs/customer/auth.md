@@ -5,7 +5,7 @@
 Under the **Auth** tab, configure IP or SIP (Username/Password) Authentication for users. To set either one, click the **`+`** button.
 
 !!! note "Global IP and SIP Authentication"
-    Both IP and SIP Authentication may also be configured and managed for Customers and Carriers under **Global :material-menu-right: IP Authentication or SIP User Authentication**.
+    Both IP and SIP Authentication may also be configured and managed for Customers and Carriers under **Global :material-menu-right: IP Authentication** or **SIP User Authentication**.
 
 
 ## IP Authentication
@@ -27,7 +27,7 @@ When you enable **IP Authentication**, you associate the IP of a customer switch
     + **Channels**: Set the maximum number of concurrent calls for this switch. 
     + **Flow Speed**: Set the Calls Per Second (CPS) (0 = unlimited calls).   
     
-    ![alt text][ipauth-basic]
+        ![alt text][ipauth-basic]
     
 === "Advanced"
 
@@ -49,18 +49,18 @@ When you enable **IP Authentication**, you associate the IP of a customer switch
     
 === "Parameter Rewrite"
 
-    The **Parameter Rewrite** tab is used to manipulate data as it comes into the system. It is most useful when you need to create automatic replacements for destination numbers or CLI, so a number is formatted in the appropriate [**E164 format**](https://www.twilio.com/docs/glossary/what-e164). 
+    The **Parameter Rewrite** tab is used to manipulate data as it comes into the system. It is most useful when you need to create automatic replacements for destination numbers or CLI, so a number is formatted in the appropriate [**E164 format**](https://en.wikipedia.org/wiki/E.164). 
 
     1. Click the **`+`**.
     2. Type: Select the parameter to modify.
     3. Current: Enter the prefix for the destination number, or the CLI.
     4. New: enter what should replace the current information.
-    5. Use Testing `Input` field to verify the replacement is working as expected. 
+    5. Use the Testing `Input` field to verify the replacement is working as expected. 
     6. Click **`Save`** when done. 
     
     Example: International calls coming in with a + should be replaced with a specific country code. 
 
-    ![alt text][parameter-rewrite]
+    &emsp; ![alt text][parameter-rewrite]
 ___    
 
 ### IP Authentication Audit Log
@@ -73,7 +73,7 @@ When **SIP Authentication** is enabled, ConnexCS will reject the initial SIP INV
 
 Generic SIP Trace showing the Challenge Response:
 
-![alt text][407-trace]
+&emsp; ![alt text][407-trace]
 
 ### Enable SIP User Authentication 
 *Click each tab to view configuration details.*
@@ -92,7 +92,7 @@ Generic SIP Trace showing the Challenge Response:
     + **Retain DID**: When Enabled, this retains the desination number (DID) the call is sent to in the system, rather than the SIP Username. 
     + **Smart Extension**: Calls are sent to the Class5, not Class4 infrastructure. This feature is currently in Alpha and is not recommended. 
 
-     ![alt text][sip-b]
+         ![alt text][sip-b]
      
 === "Codecs"
 
@@ -100,7 +100,7 @@ Generic SIP Trace showing the Challenge Response:
 
 === "Parameter Rewrite"
 
-    The **Parameter Rewrite** tab is used to manipulate data as it comes into the system. It is most useful when you need to create automatic replacements for destination numbers or CLI, so a number is formatted in the appropriate [**E164 format**](https://www.twilio.com/docs/glossary/what-e164). 
+    The **Parameter Rewrite** tab is used to manipulate data as it comes into the system. It is most useful when you need to create automatic replacements for destination numbers or CLI, so a number is formatted in the appropriate [**E164 format**](https://en.wikipedia.org/wiki/E.164). 
 
     1. Click the **`+`**.
     2. Type: Select the parameter to modify.
@@ -147,7 +147,7 @@ Click the `Password` key next to the SIP user to reset the password.
 Use the `Send` button next to the SIP User to send a SIP message to the end device which will flash on the phone. 
 
 [ipauth-basic]: /customer/img/ipauth-b.png "Edit Switch Basic"
-[parameter-rewrite]: /customer/img/parameter-rewrite.png "Parameter Rewrite"
+[parameter-rewrite]: /customer/img/parameter-rewrite.png "Parameter Rewrite" width="200" height="400"
 [ipauth-adv]: /customer/img/ipauth-adv.png "Edit Switch Advance"
 [ipauth-param]: /customer/img/ipauth-param.png "Edit Switch Parameters"
 [sip-b]: /customer/img/sip-b.png "SIP Codecs"

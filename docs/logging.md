@@ -1,11 +1,13 @@
 # Logging
+**Logging**
+
 **Logging** is used to check real-time call attempts, SIP traces, routing status, and to simulate a call. As soon as a call hits the ConnexCS system, it will display in the Logging area. Most issue debugging occurs in the Logging section. 
 
 ## Register Logging
 To view calls that are having issues registering, click **`Register Logging`**, then click on a specific Call ID to view Call Details and SIP Trace.
 
 ## Fraud Logging
-View the log of Fraud events. See [Setup Fraud Detection](https://docs.connexcs.com/setup/advanced/fraud/#setup-a-fraud-detection) for configuration. 
+View the log of Fraud events. See [**Setup Fraud Detection**](https://docs.connexcs.com/setup/advanced/fraud/#setup-a-fraud-detection) for configuration. 
 
 ## Simulating Calls
 Simulating calls allows providers to identify areas of concern, or just to verify functionality, by testing in different setups and operational configurations. 

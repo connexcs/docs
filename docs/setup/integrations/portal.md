@@ -24,7 +24,7 @@ Step 2: Add Domain to Portal
 2. Enter the details in their respective fields of the ensuing window.
 3. Click the **`Save`** button. A certificate will be issued for the domain soon afterwards.
 
-![alt text][portal]
+    ![alt text][portal]
 
 ## Configuration Options
 *Click each tab to view configuration details*
@@ -89,6 +89,6 @@ Step 2: Add Domain to Portal
     * **Footer** - Enter text to display at the bottom of the page, for example _Copyright My Company_
     
 ## User Access
-To configure Users to access the Customer Portal, follow the steps to [Add Contact](https://docs.connexcs.com/customer/main/#contacts). Any Contact configured on the account will be able to login to the Customer Portal. 
+To configure Users to access the Customer Portal, follow the steps to [**Add Contact**](https://docs.connexcs.com/customer/main/#contacts). Any Contact configured on the account will be able to login to the Customer Portal. 
 
 [portal]: /setup/img/portal.png "Portal"

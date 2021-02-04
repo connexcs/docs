@@ -27,9 +27,12 @@ This provides a view of Live Channels, Customers, Carriers, and Rate Cards
 Table view of **Customers** and **Carriers** sorted by Channels in Use (highest and lowest).
 
 ### Live Channels
+
+![alt text][profit] Use the icons in upper right corner to refresh, select options, or download the graph.
+
 Upper graphs:
 
-+ **Channels** This graph displays all currently active channels. Use the icons in upper right corner ![alt text][profit] to refresh, select options, or download the graph. 
++ **Channels** This graph displays all currently active channels.  
 + **Channels SanKey** Shows which calls and carriers are linked together. *Diagram in development*
 
 Lower graphs:

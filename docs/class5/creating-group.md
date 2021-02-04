@@ -1,10 +1,12 @@
 # Groups
-**Class5 :material-menu-right: Group**
+**Class 5 :material-menu-right: Group**
 
 A **Group**, or Call Queue, allows you to construct a team of individuals to receive calls placed to a specified number or extension based on the routing strategy you configure. (Ex: Create a number that customers can call which routes them to a team of Technical Support Specialists who can fix the technical issues with their laptop.)
 
+For individual customers, navigate to **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Class5 :material-menu-right: Groups**
+
 ## Group Call Routing strategies
-Each **Group** is configured with a routing strategy which determines how calls will be routed to the members of the group:
+Each Group is configured with a routing strategy which determines how calls will be routed to the members of the group:
 
 * **Parallel** - Rings a call to all members of the group simultaneously. The members' extensions ring for the length of time you specify. You can assign unique timeout timers for individual members. Note: this rings all members, even if they are already on a call. 
 * **Sequential** - Routes a call in a sequential order based on the order under Group Members.  By default, a call is routed to the member with the highest value of the extension number (for example, 5021).
@@ -18,11 +20,11 @@ Each **Group** is configured with a routing strategy which determines how calls 
 If you want to use audio files for the group, they will need to be uploaded to the system first. 
     
 1. Download or create the audio files to greet the caller, chime tunes, and the music that will be played while on hold, in the .pcm or .wav format.
-2. Upload the audio files to **ConnexCS** under **Management** :material-menu-right: **File**.
+2. Upload the audio files to **Management** :material-menu-right: **File**.
 
 ## Create a Group
 
-1. Click the '+' icon (located at the top-right corner of the page).
+1. Click the **`+`** icon (located at the top-right corner of the page).
 2. Enter a **Name** for the group.
 3. Select the **Customer** from the drop-down list.
 4. Select the **Extension** that callers will use to connect to this group from the drop-down list.

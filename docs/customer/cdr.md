@@ -45,7 +45,7 @@ Create advanced filters using any fields of the record. Quickly select either Or
     ![alt text][querybuilder]
 
 !!! warning "Using Query Builder with large amounts of data"
-    Running detailed and complex queries on large amounts of data is not recommended. It is better to write more compact and pared down queries to retrieve this data. Unlike other providers, ConnexCS doesn't use CDRs for debugging. You should be able to do all debugging in the [Logging](https://docs.connexcs.com/logging/) section. 
+    Running detailed and complex queries on large amounts of data is not recommended. It is better to write more compact and pared down queries to retrieve this data. Unlike other providers, ConnexCS doesn't use CDRs for debugging. You should be able to do all debugging in the [**Logging**](https://docs.connexcs.com/logging/) section. 
     
 ## CDR Time Zone
 CDR's are rated and stored in UTC, daily totals are also calculated in UTC. You can change the time zone that individual CDR records are viewed from the time zone selector, however downloads will always be in UTC.

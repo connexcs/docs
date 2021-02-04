@@ -3,13 +3,13 @@
 The initial setup in ConnexCS will configure a single carrier, a single customer, and a single rate card.
 
 !!! info "Changing UI language"
-    Change the display language for the UI by clicking your name in the upper-right corner and selecting [Change Language](https://docs.connexcs.com/changing-language/). 
+    Change the display language for the UI by clicking your name in the upper-right corner and selecting [**Change Language**](https://docs.connexcs.com/changing-language/). 
 
 !!! note "What is my server IP Address?"
-    IP addresses are deployed *after* you have completed the getting started steps.
+    IP addresses are deployed *after* you have completed the Getting Started steps.
     
 !!! help "Need Help?"
-    If you need help, we offer free 1:1 training, you can book this at <https://connexcs.youcanbook.me/>
+    If you need help, we offer free 1:1 training, you can book this at **<https://connexcs.youcanbook.me/>**.
 
 ___
 
@@ -23,7 +23,7 @@ ___
 ## Verify Contact Details
 Before you configure your account, you need to verify your email and mobile number. Use the Alerts icon at the top left of the screen to view all outstanding items:
 
-![alt text][verify-email-1]
+&emsp; ![alt text][verify-email-1]
 
 
 ### Email Verification
@@ -65,9 +65,9 @@ While not strictly necessary to configure your Personal Profile to complete basi
 
     View account details such as Name, Role, Email and Mobile. Only the Mobile field is editable. To change email or name, contact ConnexCS Support. 
     
-    **Two Factor Authentication** - This adds additional security against password guessing and theft, including brute force attacks (details [here](https://www.ncsc.gov.uk/guidance/multi-factor-authentication-online-services)). This is configured on ConnexCS by clicking the `Enable` button and following prompts for QR code. You must install a 2FA/TFA app on your phone. 
+    **Two Factor Authentication** - This adds additional security against password guessing and theft, including brute force attacks (details [**here**](https://www.ncsc.gov.uk/guidance/multi-factor-authentication-online-services)). This is configured on ConnexCS by clicking the `Enable` button and following prompts for QR code. You must install a 2FA/TFA app on your phone. 
     
-    **Web Auth N / FIDO2** -  This allows you to enable hardware security keys/tokens, which is more secure that basic password protection (details [here](https://www.ncsc.gov.uk/collection/mobile-device-guidance/enterprise-authentication-policy)). This is configured on ConnexCS by clicking the `Enroll` button. Once setup, there will be a special button to click/tap upon login to the ConnexCS portal. 
+    **Web Auth N / FIDO2** -  This allows you to enable hardware security keys/tokens, which is more secure that basic password protection (details [**here**](https://www.ncsc.gov.uk/collection/mobile-device-guidance/enterprise-authentication-policy)). This is configured on ConnexCS by clicking the `Enroll` button. Once setup, there will be a special button to click/tap upon login to the ConnexCS portal. 
 
 === "Advanced"
      
@@ -76,11 +76,12 @@ While not strictly necessary to configure your Personal Profile to complete basi
 ___
 
 ## Customer Setup
-These instructions for basic **Customer** setup will help you create a profile and setup account details like IP addresses and payments.  For more detailed instructions about setting up customers, see [Customer Management](https://docs.connexcs.com/customer/customer/) and following sections.
+These instructions for basic **Customer** setup will help you create a profile and setup account details like IP addresses and payments.  For more detailed instructions about setting up customers, see [**Customer Management**](https://docs.connexcs.com/customer/customer/) and following sections.
 
 Navigate to **Management :material-menu-right: Customer** to modify customer details, filter the customer list, and perform bulk actions. To view outstanding actions on a customer, hover over the Warning icon. In the example below, you can see that routing has not been set. In that case, you would click on the customer's name to update their routing details.
 
-![alt text][warning-icon]  
+&emsp; ![alt text][warning-icon]  
+
 
 ### Create a new Customer
 1. Click on the `+` icon. 
@@ -123,7 +124,7 @@ You can create multiple payment records to cover a customer's invoices and recei
 ___
 
 ## Carrier Setup
-**Carriers** are your VoIP route providers. Below, we include only the required fields to set up a carrier.  For detailed instructions on carrier setup, see [Carrier Management](https://docs.connexcs.com/carrier/)
+**Carriers** are your VoIP route providers. Below, we include only the required fields to set up a carrier.  For detailed instructions on carrier setup, see [**Carrier**](https://docs.connexcs.com/carrier/).
 
 Navigate to **Management :material-menu-right: Carrier**:
 
@@ -143,8 +144,8 @@ Navigate to **Management :material-menu-right: Carrier**:
 **Rate Cards** are an important ConnexCS feature as this is how most information is organized.
 
 1. Before getting started, we recommend you review **[Building Rate Cards](https://docs.connexcs.com/rate-card-building/)**. You can also watch our **[Rate Card Setup video](https://docs.connexcs.com/video-guide/#rate-card-setup)**. 
-2. Setup the [Provider Rate Card(s)](https://docs.connexcs.com/provider-ratecard/) as customer cards will build off those. 
-3. Build the [Customer Rate Cards](https://docs.connexcs.com/customer-ratecard/) as needed.  
+2. Setup the [**Provider Rate Cards**](https://docs.connexcs.com/provider-ratecard/) as customer cards will build off those. 
+3. Build the [**Customer Rate Cards**](https://docs.connexcs.com/customer-ratecard/) as needed.  
 
 ___
 
@@ -157,7 +158,7 @@ To manage **Ingress Routing**, navigate to **Management :material-menu-right: Cu
 4. Select the **Rate Card**.
 5. Click `Save`.
 
-For detailed routing configuration, see [Routing](https://docs.connexcs.com/customer/routing/). 
+For detailed routing configuration, see [**Routing**](https://docs.connexcs.com/customer/routing/). 
 
 ___
 
@@ -173,11 +174,9 @@ ___
 For detailed server configuration, see **[Servers](https://docs.connexcs.com/setup/settings/servers/)**.
 
 
-[notification-icon]: /getting-started/img/notification-icon.png "notification icon"
-[verify-email-1]: /getting-started/img/1.png "Verify"
+[verify-email-1]: /getting-started/img/1.png "Verify Contact"
 [verify-email-2]: /getting-started/img/verify-email.png "Verify Email"
 [verify-mobile]: /getting-started/img/verify-mobile.png "Verify Mobile"
-[warning-icon]: /getting-started/img/warning-icon.png "warning-icon"
-[customer-save-new]: /getting-started/img/6.png "customer-save-new"
-
-[carrier-auth-2]: /getting-started/img/16.png "carrier-auth-2"
+[warning-icon]: /getting-started/img/warning-icon.png "Warning Icon"
+[customer-save-new]: /getting-started/img/6.png "New Customer"
+[carrier-auth-2]: /getting-started/img/16.png "Carrier Setup"

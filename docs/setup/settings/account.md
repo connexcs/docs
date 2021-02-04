@@ -36,14 +36,14 @@ To add or edit SMTP information, click the blue pencil icon to add:
 ## Packages
 Below the Company information is a listing of the applied ConnexCS packages, along with Quantity, Name (of the package), and the Cost (in per minute changes). 
 
-+ Click **Enable Call Recording** to add the feature to the Account. This will need to be enabled on individual accounts under **Management > Customer > [Customer Name] > Routing > Ingress routing > [Media](https://docs.connexcs.com/customer/routing/#media).
++ Click **Enable Call Recording** to add the feature to the Account. This will need to be enabled on individual accounts under **Management > Customer > [Customer Name] > Routing > Ingress routing > [Media](https://docs.connexcs.com/customer/routing/#media)**.
 
     ![alt text][call-recording]
 
 ## ConnexCS Service Agreement
 To view the full ConnexCS Service Agreement, click the orange banner at the bottom:
 
-   ![alt text][service-agreement]
+&emsp;![alt text][service-agreement]
 
 
 [accountprofile]: /setup/img/account-profile.png "Account Profile"

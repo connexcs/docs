@@ -10,7 +10,7 @@ A fair-usage policy applies, and your script may not function as expected if the
 It is designed to work as FaaS (Functions as a Service) and auto-scaling your application is handled by our redundant infrastructure
 
 ## Developer Documentation
-ConnexCS provide a number of libraries specifically for use with ConnexCS. [Developer API Documentation is available here](https://scriptforge-docs.connexcs.com). 
+ConnexCS provide a number of libraries specifically for use with ConnexCS. [**Developer API Documentation is available here**](https://scriptforge-docs.connexcs.com). 
 
 ### Available Modules
 You can include some additional modules (from npm), available for applications and drivers only. Our objective is to keep the sandbox lightweight and only include modules which are necessary:
@@ -23,7 +23,7 @@ You can include some additional modules (from npm), available for applications a
 |rss-parser|soap|stripe|tough-cookie|
 
 ### Sample Scripts
-You can find sample scripts in our GitHub repository for [example applications](https://github.com/connexcs/scriptforge-examples/). A few uses cases are included below, however with a Turing Complete language, the possibilities are endless.
+You can find sample scripts in our GitHub repository for [**example applications**](https://github.com/connexcs/scriptforge-examples/). A few uses cases are included below, however with a Turing Complete language, the possibilities are endless.
 
 * Do Not Call Lists
 * Custom Fraud Detection
@@ -56,7 +56,7 @@ function main (data = {}) {
 ```
 
 ### Class 5 Programmable Voice
-Programmable Voice allows you to write smart voice applications controlled in modern JavaScript. The execution of the Programmable Voice script is done synchronously with the call, simplifying the entire process. This means that (for example) you would initially run an `await answer()`, it would not progress to the next line until our platform has finished executing the operation. See the [ConnexCS ScriptForge documents](https://scriptforge-docs.connexcs.com/ctx.html) for additional JavaScript examples.
+Programmable Voice allows you to write smart voice applications controlled in modern JavaScript. The execution of the Programmable Voice script is done synchronously with the call, simplifying the entire process. This means that (for example) you would initially run an `await answer()`, it would not progress to the next line until our platform has finished executing the operation. See the [**ConnexCS ScriptForge documents**](https://scriptforge-docs.connexcs.com/ctx.html) for additional JavaScript examples.
 
 Second parameter is a ctx object
 ``` js
@@ -125,7 +125,7 @@ If script shows an error, add this then run the script again:
 
 ### Assign the Script to a Customer
 
-1. Select Management :material-menu-right: Customer :material-menu-right: **[customer]** :material-menu-right: Routing
+1. Select **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Routing**
 4. Select a Rate Card from Ingress Routing.
 
     ![alt text][s8]  
@@ -140,18 +140,15 @@ If script shows an error, add this then run the script again:
 ScriptForge was initially designed to run from the routing-engine only, however it is available for the following scenarios:
 
 **Class 4 Routing (Termination) - (App or Script)**: 
-
-+ Navigate to Management :material-menu-right: Customer :material-menu-right: [Your Customer] :material-menu-right: Routing :material-menu-right: [Your Route] :material-menu-right: ScriptForge
+Management :material-menu-right: Customer :material-menu-right: [Your Customer] :material-menu-right: Routing :material-menu-right: [Your Route] :material-menu-right: ScriptForge
 
 **Class 4 Routing (Origination) - (App or Script)**: 
-
-+ Navigate to Management :material-menu-right: Customer :material-menu-right: [Your Customer] :material-menu-right: DID :material-menu-right: [Your DID] :material-menu-right: ScriptForge
+Management :material-menu-right: Customer :material-menu-right: [Your Customer] :material-menu-right: DID :material-menu-right: [Your DID] :material-menu-right: ScriptForge
 
 **Class 5 Programmable Voice - (App only)**
 
 **Drivers - (App only)**: 
-
-+ Currently available for Alert & DID
+Currently available for Alert & DID
  
 [s2]: /developers/img/176.png "s2"
 [s8]: /developers/img/183.png "s8"

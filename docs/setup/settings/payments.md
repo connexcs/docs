@@ -1,4 +1,5 @@
-## Payments
+# Payments
+
 **Setup :material-menu-right: Settings :material-menu-right: Payments**
 
 The **Payments** view allows you to manage payments to ConnexCS as well as some related functions.
@@ -7,6 +8,6 @@ The **Payments** view allows you to manage payments to ConnexCS as well as some 
 * **Invoices** - Review invoices
 * **Payments**- View and make Payments using PayPal or a credit card, as well as apply Vouchers.
 
-![alt text][payments]
+&emsp;![alt text][payments]
 
 [payments]: /setup/img/payments.png "Payment Screen"

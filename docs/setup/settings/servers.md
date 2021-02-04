@@ -4,7 +4,7 @@
 The **Servers** section displays current servers and allows providers to configure servers, including functions such as load balancing. 
 
 ## Deploy a server
-Before deploying your first server, make sure that you have completed the [Getting Started](https://docs.connexcs.com/getting-started/) checklist. Once this is complete, you will be able to choose a zone and server for deployment. Delivery is within 5 minutes.
+Before deploying your first server, make sure that you have completed the [**Getting Started**](https://docs.connexcs.com/getting-started/) checklist. Once this is complete, you will be able to choose a zone and server for deployment. Delivery is within 5 minutes.
 
 !!! note "Available Balance needed for server deployment"
     To deploy a server, you must have $20 (+ $20 X other servers in your account) available balance.
@@ -37,6 +37,8 @@ RTP Servers handle streaming media. To view RTP Servers in your system:
 2. A list of your current RTP servers will appear, with columns for IP address, aliases, and zones.
 3. The **`Refresh`** button will reload the page to show the most current changes, if any.
 
+    ![alt text][rtpserver]
+
 ## Server Details
 Click the server's IP address to view details. 
 
@@ -61,7 +63,7 @@ Click the blue pencil to edit.
 + **Reinvite Ping Interval**: *in progress*
 + **Interconnect**: Where the server is visible routing.
 + **UAC Auth**: Enables ConnexCS to register as a UAC (rather than UAS) to upstream providers with a username and password.
-+ **WebRTC and TLS**: Enabled once the FQDN has been set, these also require a secure certificate. These are required for [WebPhone](https://docs.connexcs.com/setup/integrations/webphone/).
++ **WebRTC and TLS**: Enabled once the FQDN has been set, these also require a secure certificate. These are required for [**WebPhone**](https://docs.connexcs.com/setup/integrations/webphone/).
 + **Auto Upgrade**: When your server is ready for an upgrade, selecting this box will allow it to be performed when your server is at zero channels.
 + **Disable UAC Ping**: UAC Ping automatically sends out ping messages every second to registered UACs, retaining open NAT ports. Select this box to disable that functionality.
 + **UAC Location Array Sharing**: By sharing registration information with servers not in the cluster, calls can be connected between two ConnexCS servers. Clustering servers is the recommended method whenever possible. (If using this setting, you can disable UAC Ping above to gain some minor performance enhancements.)
@@ -104,7 +106,7 @@ To reactivate a server:
 1. Click the server's IP address.
 2. Click **Reactivate** to activate your server.
 
-   ![alt text][server-6]
+    ![alt text][server-6]
     
 ## Server Clustering and User Location Registration
 ### User Location Registration
@@ -118,11 +120,11 @@ When a user is registers with UDP via NAT, a port mapping is created. However, t
 ### Deployment Options
 
 1) **Single Server**: No additional configuration is needed for a single server.
-2) **Server Array**: For multiple servers, decide whether users registered to _Server A_ can call users on _Server B_. If so, set the **UAC Location Array Sharing** option (found under [Server Config](https://docs.connexcs.com/setup/settings/servers/#server-config)) for the servers which will make the registrations.
+2) **Server Array**: For multiple servers, decide whether users registered to _Server A_ can call users on _Server B_. If so, set the **UAC Location Array Sharing** option (found under [**Server Config**](https://docs.connexcs.com/setup/settings/servers/#server-config)) for the servers which will make the registrations.
 3) **Server Cluster**: Servers in a cluster share all user location registrations. This is the best solution to scale into the many 1000's of registrations. Be advised: you will not be able to route calls to users registered against any servers outside the cluster. 
 
 !!! tip "Ping Overhead"
     Due to design constraints that occur with multiple servers in an array, NAT Keep Alive Pings can be quite intensive. You could use *Disable UAC Ping* from the server page, upgrade to a cluster, or use a single registration server to solve this. More intricate measures can be arranged on a case-by-case basis.
 
-[rtpserver]: /misc/img/rtpservers.png "RTP Server"
-[server-6]: /misc/img/244.png "server-6"
+[rtpserver]: /setup/img/rtpservers.png "RTP Server"
+[server-6]: /setup/img/reactivateserver.png "Reactivate Server"

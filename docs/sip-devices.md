@@ -12,7 +12,7 @@ To add a new SIP device:
 4. At the bottom of the edit screen, there is a **`Edit Device Item`** button which allows you to configure the Line #, Display Name, CLI, and additional settings. 
 4. Click **`Save`**.
 
-![alt text][sip-device] 
+    ![alt text][sip-device] 
     
 !!! info "Advanced provisioning"
     Use the Vars field to configure custom parameters such as shared line extensions and the customer Phonebook.

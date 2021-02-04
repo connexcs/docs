@@ -1,7 +1,7 @@
 # Apps
 **Class 5 :material-menu-right: Apps**
 
-The ConnexCS **Apps** feature allows providers to create small, simple, drag and drop applications. Some examples are [Pinless Calling Cards](https://docs.connexcs.com/calling-card/), Echo Tests, Conferencing, or a Welcome message with an IVR setup and conditions. 
+The ConnexCS **Apps** feature allows providers to create small, simple, drag and drop applications. Some examples are [**Pinless Calling Cards**](https://docs.connexcs.com/calling-card/), Echo Tests, Conferencing, or a Welcome message with an IVR setup and conditions. 
 
 ## Build App
 To create a new App:
@@ -11,7 +11,7 @@ To create a new App:
 3. Click on the function to edit parameters. 
 4. Click **`Save`**. 
 
-![alt text][apps]
+    ![alt text][apps]
 
 !!! warning "Using Multiple Conditions"
     Apps are limited to a single Condition. Multiple Conditions in an App will cause it to fail.  

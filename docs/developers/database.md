@@ -23,6 +23,6 @@ It is possible to bulk upload data and bulk delete data from the datastore. Both
 2. Select the `Customer` and `Dataset Type` (see Types above).
 3. Click the **`Save`** button. 
 
-![alt text][user-space-img-3]
+    ![alt text][user-space-img-3]
 
 [user-space-img-3]: /developers/img/187.png "user-space-img-3"

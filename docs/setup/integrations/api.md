@@ -1,17 +1,17 @@
 # API Integrations
 **Setup :material-menu-right: Integrations :material-menu-right: API**
 
-**API Integrations** are configured to allow ConnexCS to connect to external services. For inbound APIs, please see the [API](https://docs.connexcs.com/api/) in the Architecture documentation. 
+**API Integrations** are configured to allow ConnexCS to connect to external services. For inbound APIs, please see the [**API**](https://docs.connexcs.com/api/) in the Architecture documentation. 
 
 ## Available Integrations
 
-* **PayPal Express Checkout** - Allows online checkout via the customer portal using a [PayPal](https://www.paypal.com) Account.
-* **PayPal IPN** - For customers who wish to use a PayPal feature called MassPay, or want send money from the PayPal portal without using your site, IPN can be enabled. This notifies the system of incoming PayPal payments and we can top-up based on that notification. See [PayPal IPN Integration](https://docs.connexcs.com/setup/integrations/api/#paypal-ipn-integration) below for specific details and setup. 
-* **Stripe** - Possibly the world's best credit card processor, [Stripe](https://www.stripe.com) can be made available on your customer portal.
-* **Duo Security** - With [Duo Security](https://duo.com/) we can provide 2FA (2 Factor Authentication) via an out-of-band push notification to your mobile device when you sign in. This can then be approved and also benefit from fingerprint authentication. 
-* **Moneris** - A Canadian Credit Card Processing service, [Moneris](https://www.moneris.com/]) can be made available on your customer portal.
-* **ScriptForge** - [ScriptForge](/developers/scriptforge/) is ConnexCS's Javascript Sandbox environment which you can use to write drivers to intermediate connectivity to a large variety of providers.
-* **Razor Pay** - [Razor Pay](https://razorpay.com/) is a large payment processor from India.
+* **PayPal Express Checkout** - Allows online checkout via the customer portal using a [**PayPal**](https://www.paypal.com) Account.
+* **PayPal IPN** - For customers who wish to use a PayPal feature called MassPay, or want send money from the PayPal portal without using your site, IPN can be enabled. This notifies the system of incoming PayPal payments and we can top-up based on that notification. See [**PayPal IPN Integration**](https://docs.connexcs.com/setup/integrations/api/#paypal-ipn-integration) below for specific details and setup. 
+* **Stripe** - Possibly the world's best credit card processor, [**Stripe**](https://www.stripe.com) can be made available on your customer portal.
+* **Duo Security** - With [**Duo Security**](https://duo.com/) we can provide 2FA (2 Factor Authentication) via an out-of-band push notification to your mobile device when you sign in. This can then be approved and also benefit from fingerprint authentication. 
+* **Moneris** - A Canadian Credit Card Processing service, [**Moneris**](https://www.moneris.com/]) can be made available on your customer portal.
+* **ScriptForge** - [**ScriptForge**](/developers/scriptforge/) is ConnexCS's Javascript Sandbox environment which you can use to write drivers to intermediate connectivity to a large variety of providers.
+* **Razor Pay** - [**Razor Pay**](https://razorpay.com/) is a large payment processor from India.
 
 ## Enable API Integration
 
@@ -63,7 +63,7 @@ Below are the steps to configure IPN:
 
 **Step 2: Identify your IPN listener to PayPal**
 
-After you have configured ConnexCS, add it to your PayPal account. (Copied from PayPal instructions [here](https://developer.paypal.com/docs/api-basics/notifications/ipn/IPNSetup/#).)
+After you have configured ConnexCS, add it to your PayPal account. (Copied from PayPal instructions [**here**](https://developer.paypal.com/docs/api-basics/notifications/ipn/IPNSetup/#).)
 
 1. Login to a PayPal Business Account (A PayPal Business Account--not to be confused with a regular PayPal account--is required to perform this task.)
 2. Navigate to Settings > Account Settings > Notifications
@@ -74,9 +74,9 @@ After you have configured ConnexCS, add it to your PayPal account. (Copied from 
 
 **Step 3: Insert credentials in your ConnexCS Account**
 
-Enter the new credentials back into your account. (PayPal steps copied from PayPal instructions [here](https://developer.paypal.com/docs/api-basics/notifications/ipn/IPNSetup/#).)
+Enter the new credentials back into your account. (PayPal steps copied from PayPal instructions [**here**](https://developer.paypal.com/docs/api-basics/notifications/ipn/IPNSetup/#).)
 
-1. Navigate to Setup :material-menu-right: Integrations :material-menu-right: API 
+1. Navigate to **Setup :material-menu-right: Integrations :material-menu-right: API **
 1. Select Add :material-menu-right: PayPal.
 1. Select the **Mode**: Test for testing connections or Live for an active account
 1. In your PayPal account, navigate to Settings :material-menu-right: Account Settings :material-menu-right: Account Access.
@@ -92,7 +92,7 @@ Enter the new credentials back into your account. (PayPal steps copied from PayP
 ### Configure Customer with PayPal Email address
 The following are instructions on how to add a PayPal Email address to a ConnexCS customer account:
 
-1. Navigate to Management :material-menu-right: Customer :material-menu-right: [Customer name] 
+1. Navigate to **Management :material-menu-right: Customer :material-menu-right: [Customer name] **
 1. Click **`+`** under Contacts
 1. Enter the customer's Name and PayPal email address and click **`Save`**.
 1. From the customer's main page, select Edit :material-menu-right: Config.

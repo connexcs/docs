@@ -19,7 +19,7 @@ The ConnexCS User Interface (UI) can be configured for several different languag
 |中文|Chinese|
    
 !!! question "Will this change the language for every word on the UI?" 
-    Modifying the language here will change most, but not all, of the words in the Control Panel. To modify existing translated words, and to add your own, go to Setup > Advanced > [Language](https://docs.connexcs.com/setup/advanced/language/).
+    Modifying the language here will change most, but not all, of the words in the Control Panel. To modify existing translated words, and to add your own, go to **Setup :material-menu-right: Advanced :material-menu-right: [Language](https://docs.connexcs.com/setup/advanced/language/)**.
 
 ## Change the language on the Control Panel's UI
 

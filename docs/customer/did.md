@@ -18,9 +18,9 @@ Click the **`+`** to configure a new DID:
 
 ### Basic
 + **Customer**: Assign the number to the customer.
-+ **Customer Card**: Select the desired billing (see [Customer Rate Cards](https://docs.connexcs.com/customer-ratecard/) for configuration).
++ **Customer Card**: Select the desired billing (see [**Customer Rate Cards**](https://docs.connexcs.com/customer-ratecard/) for configuration).
 + **Provider**: Select the Carrier desired for routing.
-+ **Provider Card**: Select from Carrier Cards assigned to that Carrier (see [Provider Rate Cards](https://docs.connexcs.com/provider-ratecard/) for configuration).
++ **Provider Card**: Select from Carrier Cards assigned to that Carrier (see [**Provider Rate Cards**](https://docs.connexcs.com/provider-ratecard/) for configuration).
 + **DID**: Enter the specific number. 
 + **Retain Display Name**: If Enabled, it will display the Name in the FROM field of the SIP INVITE. 
 + **Enabled**: Enable or Disable the DID
@@ -38,7 +38,7 @@ Select where to deliver calls that come in for the DID:
 Set maximum number of INBOUND concurrent calls in **Channels**, and Calls Per Second (CPS) in **Flow Speed**. 
 
 ### Media
-For more details on these fields, see [Media in Customer Routing](https://docs.connexcs.com/customer/routing/#media). 
+For more details on these fields, see [**Media in Customer Routing**](https://docs.connexcs.com/customer/routing/#media). 
 
 + **RTP Proxy Mode**: If connection via our service fails, and relaxed is selected, it will failover to backup automatically.
     + Strict: This will enforce the proxy engagement. 
@@ -64,6 +64,6 @@ Select a predefined **Package** to determine costs and billing. This will decrem
 ### Script Forge
 Run a custom script on calls to the DID to performs actions such as route based on time of day or if specific users or numbers are active. 
 
-See [Script Forge](https://docs.connexcs.com/developers/scriptforge/) for more information. 
+See [**Script Forge**](https://docs.connexcs.com/developers/scriptforge/) for more information. 
 
 

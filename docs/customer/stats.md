@@ -1,7 +1,7 @@
 # Stats
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Stats**
 
-Use **Stats** to view graphs related to calling and call quality statistics and reports. Use the selectors at the top to define the time and date range for the graphs.  All graphs are managed using the [Analytics](https://docs.connexcs.com/developers/analytics/) section. 
+Use **Stats** to view graphs related to calling and call quality statistics and reports. Use the selectors at the top to define the time and date range for the graphs.  All graphs are managed using the [**Analytics**](https://docs.connexcs.com/developers/analytics/) section. 
 
 ## Main
 Data related to SIP signalling and call completion.  
@@ -19,7 +19,7 @@ Data related to SIP signalling and call completion.
 |Customer Carrier Duration |Click on the carriers to select/deselect individual carriers to view desired stats|
 |DTMF |DTMF (Dual Tone Modulated Frequency) percentages|
 |Customer Carrier DTMF |DTMF percentages for each carrier|
-|Codes |SIP response codes ([List of SIP Response Codes](https://en.wikipedia.org/wiki/List_of_SIP_response_codes))|
+|Codes |SIP response codes ([**List of SIP Response Codes**](https://en.wikipedia.org/wiki/List_of_SIP_response_codes))|
 |Codes Total|Allows you to see SIP codes as a percentage, helpful to identify potential issues|
 |PDD |The lower the Post Dial Delay the better, however typically not viewed as problematic until it gets over 7 seconds|
 |Destinations |Displays all call destinations|
