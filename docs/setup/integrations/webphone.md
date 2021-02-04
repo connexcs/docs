@@ -114,10 +114,10 @@ Your Web Phone should now be available.
     
     !!! tip "Frameless iframe"
         We have implemented an edge case. If you wish for the custom page to be an `iframe`, you can use the following code to ensure that it fills up all the available space (replace www.connexcs.com with the page you wish to display):
-	```
-	<!-- NO-CONTAINER -->
-	<iframe src="https://www.connexcs.com" style="border: 0px; width: 100%;height: 100%"></iframe>
-        ```	
+	`<!-- NO-CONTAINER -->
+	
+	<iframe src="https://www.connexcs.com" style="border: 0px; width: 100%;height: 100%"></iframe>`
+        	
 
 === "Flags"
 
