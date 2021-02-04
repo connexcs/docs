@@ -28,7 +28,7 @@ If you use  DNS to provide connectivity, you can set up round robin or SRV recor
 
 If your capacity requirements exceed the above, can deploy a load balancer, a server dedicated to spreading calls to other servers equally. The advantage over DNS is that you maintain stricter control of your calls, assuring they are distributed evenly without using your customers' resources to support SRV records. 
 
-We have two options here for you. You can have your dedicated load balancer. Or you can use our [AnyEdge Platform](/anyedge/anyedge/)
+We have two options here for you. You can have your dedicated load balancer. Or you can use our [**AnyEdge Platform**](/anyedge/anyedge/)
 
 Even with a load balancer we recommend using DNS records wherever possible.
 With a Load Balancer, you can exceed well beyond 5,000 CPS before any concerns arise.
