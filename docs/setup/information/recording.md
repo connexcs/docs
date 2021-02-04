@@ -1,7 +1,7 @@
 # Browsing Record
 **Setup :material-menu-right: Information :material-menu-right: Browsing Record**
 
-The **Browsing Record** provides access to recorded calls, if wholesale Call Recording has been enabled (see Call Recording setup [here](https://docs.connexcs.com/customer/routing/#call-recording)). 
+The **Browsing Record** provides access to recorded calls, if wholesale Call Recording has been enabled (see Call Recording setup [**here**](https://docs.connexcs.com/customer/routing/#call-recording)). 
 
 * The initial view presents all accounts which have call recording enabled.
 * Select the account to view dates in YYYY-MM-DD format.
