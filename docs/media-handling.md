@@ -15,7 +15,7 @@ Each zone encompasses multiple servers, to provide high availability
 ## How to debug media issues.
 
 !!! note
-    We monitor 45+ metrics on each of our 30+ RTP servers. In the unlikely event that we are having media issues, please see here [our status page](https://status.connexcs.com/)
+    We monitor 45+ metrics on each of our 30+ RTP servers. In the unlikely event that we are having media issues, please see here [**our status page**](https://status.connexcs.com/)
 	
 Below are a few steps which you may follow to debug customer audio issues:
 
