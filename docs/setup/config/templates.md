@@ -1,7 +1,7 @@
 # Templates
 **Setup :material-menu-right: Config :material-menu-right: Templates**
 
-Create your own **Templates** to customise the content displayed on outbound emails/SMS, the Customer Portal, and WebPhone. ConnexCS **Templates** use the mustash-compatible template language [Handlebars](https://handlebarsjs.com/guide/).
+Create your own **Templates** to customise the content displayed on outbound emails/SMS, the Customer Portal, and WebPhone. ConnexCS **Templates** use the mustash-compatible template language [**Handlebars**](https://handlebarsjs.com/guide/).
 
 !!! note "Template Syntax"
     It is important to follow the template syntax, fields such as `{email}` or `{account_name}` need to be entered exactly otherwise they won't be replaced correctly when the template is rendered. 
@@ -22,13 +22,13 @@ Create your own **Templates** to customise the content displayed on outbound ema
 ConnexCS provides standard templates which you are free to customise as you wish. To customise any template, click on the template name, modify as needed, and click save. To revert the template to its original configuration, check the box next to the Name and select the **`Reset`** button. 
 
 ## ScriptForge Integration  
-Dynamic Templates with custom variables are made by including ScriptForge (further details [here](https://docs.connexcs.com/developers/scriptforge/). This is done by using the `scriptforge` tag. Ex: To include a ScriptForge script with ID 1234, use `{{scriptforge 1234}}`. 
+Dynamic Templates with custom variables are made by including ScriptForge (further details [**here**](https://docs.connexcs.com/developers/scriptforge/). This is done by using the `scriptforge` tag. Ex: To include a ScriptForge script with ID 1234, use `{{scriptforge 1234}}`. 
 
 This will pass ALL of the variables in the current scope to ScriptForge. Whatever ScriptForge returns will then be made available back in the main scope for use with the template system.
   
 ### Sample RSS Feed Injection into a template
 
-This example can be used to provide a custom page in the [WebPhone](https://docs.connexcs.com/setup/integrations/webphone/)
+This example can be used to provide a custom page in the [**WebPhone**](https://docs.connexcs.com/setup/integrations/webphone/)
 
 **ScriptForge**
 
