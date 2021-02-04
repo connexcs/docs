@@ -34,7 +34,7 @@ MITM (Man-in-the-Middle) attacks actively intercept traffic between endpoints, w
     If you need to debug Web Phone and see the SIP messages, you can enter `*#0*#` into the dial pad, this will switch on debugging mode in the browser console.
     
 ## Navigation
-Navigate using the following sections in the footer menu at the bottom of Web Phone (see Menu tab under [Config Options](https://docs.connexcs.com/setup/integrations/webphone/#config-options) below to change how these are displayed):
+Navigate using the following sections in the footer menu at the bottom of Web Phone (see Menu tab under [**Config Options**](https://docs.connexcs.com/setup/integrations/webphone/#config-options) below to change how these are displayed):
 
 * **Agent**: Preview dialer
 * **History**: Previously dialed numbers and extensions
@@ -106,15 +106,14 @@ Your Web Phone should now be available.
     Configure the Web Phone footer menu:
 
     * **Title** - The label used for this page.
-    * **Icon** - The Icon displayed in this position. (Web Phone uses Material Design. If you wish to change an icon, you can find a list [here](https://cdn.materialdesignicons.com/5.2.45/).
+    * **Icon** - The Icon displayed in this position. (Web Phone uses Material Design. If you wish to change an icon, you can find a list [**here**](https://cdn.materialdesignicons.com/5.2.45/).
     * **Position** - Determine Icon position, starting with 1 on the far left. Select Disabled if you don't wish to show this item.
     * **Template** - A Custom page can be used to display custom static & dynamic content. These are pre-built under **Setup :material-menu-right: Config :material-menu-right: Template**.
 
     ![alt text][webphone] 
     
     !!! tip "Frameless iframe"
-    We have implemented an edge case. If you wish for the custom page to be an `iframe`, you can use the following code to ensure that it fills up all the available space (replace www.connexcs.com with the page you wish to display):
-	
+        We have implemented an edge case. If you wish for the custom page to be an `iframe`, you can use the following code to ensure that it fills up all the available space (replace www.connexcs.com with the page you wish to display):
 	```
 	<!-- NO-CONTAINER -->
 	<iframe src="https://www.connexcs.com" style="border: 0px; width: 100%;height: 100%"></iframe>
