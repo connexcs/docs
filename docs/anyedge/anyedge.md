@@ -8,13 +8,13 @@ ConnexCS **AnyEdge**, an anycast load-balancer/dispatcher, is a next-generation 
 ### Configure AnyEdge 
 Click the **`+`** to set the following:
 
-+ **UAC Test (NAT)**: Select which method will be used to detect whether NAT is in use. See [Far-End NAT Traversal](https://docs.connexcs.com/anyedge/anyedge/#far-end-nat-traversal) for details. 
-+ **Algorithm**: How to distribute calls. See [Inbound Proxy / Dispatcher / Load Balancer](https://docs.connexcs.com/anyedge/anyedge/#inbound-proxy-dispatcher-load-balancer) for details.
-+ **CPS**: Total calls per second allowed. See [Metrics](https://docs.connexcs.com/anyedge/anyedge/#metrics) for details.
++ **UAC Test (NAT)**: Select which method will be used to detect whether NAT is in use. See [**Far-End NAT Traversal**](https://docs.connexcs.com/anyedge/anyedge/#far-end-nat-traversal) for details. 
++ **Algorithm**: How to distribute calls. See [**Inbound Proxy / Dispatcher / Load Balancer**](https://docs.connexcs.com/anyedge/anyedge/#inbound-proxy-dispatcher-load-balancer) for details.
++ **CPS**: Total calls per second allowed. See [**Metrics**](https://docs.connexcs.com/anyedge/anyedge/#metrics) for details.
 + **Insertion**: Set whether the server acts 'Stateless' (no reply needed) or 'Transactional' (waits for reply). 
-+ **Validate**: Determine what checks, if any, will be used. For example, a Basic Check will verify all fields are correctly formed, or else the packet is rejected (protects from attacks such as buffer overflow). Select one or more checks to validate those fields. See [SIP Packet Validation](https://docs.connexcs.com/anyedge/anyedge/#sip-packet-validation) for details.
-+ **Compress In**: Select method(s) to compress inbound data, not only for lower bandwidth use, but also avoid UDP fragmentation. See [Compaction & Compression](https://docs.connexcs.com/anyedge/anyedge/#compaction-compression) for details.
-+ **Compress Out**: Particularly helpful when using Outbound Proxy. See [Compaction & Compression](https://docs.connexcs.com/anyedge/anyedge/#compaction-compression) for details.
++ **Validate**: Determine what checks, if any, will be used. For example, a Basic Check will verify all fields are correctly formed, or else the packet is rejected (protects from attacks such as buffer overflow). Select one or more checks to validate those fields. See [**SIP Packet Validation**](https://docs.connexcs.com/anyedge/anyedge/#sip-packet-validation) for details.
++ **Compress In**: Select method(s) to compress inbound data, not only for lower bandwidth use, but also avoid UDP fragmentation. See [**Compaction & Compression**](https://docs.connexcs.com/anyedge/anyedge/#compaction-compression) for details.
++ **Compress Out**: Particularly helpful when using Outbound Proxy. See [**Compaction & Compression**](https://docs.connexcs.com/anyedge/anyedge/#compaction-compression) for details.
 + **Flags**: currently n/a
 + **Primary Attempts**: (not useful for less than 3 servers) Set the number of attempts before going to a second zone
 + **Secondary Attempts**: (not useful for less than 3 servers) Set the number of attempts before going to a third zone 
