@@ -20,6 +20,6 @@ A **Package** represents a product or service offered to customers, often as a r
 + **Minimum Spend**: This calculates the customer spend for the billing period. If spend is below the Retail amount configured above, the spend is subtracted from Retail, and that charge is added to their account. (Ex: Retail is set to 50, but customer only spends 25, an additional 25 will be charged for that billing cycle.)
 
 ## Assign Package
-Once created, packages are assigned either to the [Customer](https://docs.connexcs.com/customer/package/) or directly to a [DID](https://docs.connexcs.com/customer/did/#billing).  
+Once created, packages are assigned either to the [**Customer**](https://docs.connexcs.com/customer/package/) or directly to a [**DID**](https://docs.connexcs.com/customer/did/#billing).  
 
 [addpackage]: /setup/img/addpackage.png "Add Package"
