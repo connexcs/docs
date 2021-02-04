@@ -22,7 +22,7 @@ On every hash we use:
 - High Time, Memory Cost, Parallelism Cost
 
 ### 2FA / TFA
-All admins are required to use two-factor authentication when signing into the system. Two-Factor Authentication is also available for any user accounts using [**RFC 6238**](https://tools.ietf.org/html/rfc6238)-style TOTP (Time Based One-time Passwords), using applications such as Google Authenticator or Microsoft Authenticator.
+All admins are required to use two-factor authentication when signing into the system. Two-Factor Authentication is also available for any user accounts using [**RFC 6238-style TOTP (Time Based One-time Passwords)**](https://tools.ietf.org/html/rfc6238), using applications such as Google Authenticator or Microsoft Authenticator.
 
 ### Server Keys
 Any user with direct access to any servers is required to use SSH Keys. In all systems where keys are not possible, long multi-symbol passwords are used.
