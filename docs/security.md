@@ -5,8 +5,7 @@ We take **Security** seriously at ConnexCS, emphasizing the industry's best prac
 Below, we have compiled a top-level abstract list on how we secure our systems. The document is kept brief in to limit exposure to our underlying systems in a public forum, but feel free to contact us with specific questions.
 
 ## SSL Certificates
-Our HTTPS traffic uses short-lived **SHA256bit** certificates with 2048bit keys, rejecting downgrade attacks like **SSL2,3**. We use **HSTS, Perfect Forward Secrecy,** and **OCSP Stapling**. You are welcome to see our servers SSL test results here:
-https://www.ssllabs.com/ssltest/analyze.html?d=app.connexcs.com
+Our HTTPS traffic uses short-lived **SHA256bit** certificates with 2048bit keys, rejecting downgrade attacks like **SSL2,3**. We use **HSTS, Perfect Forward Secrecy,** and **OCSP Stapling**. You are welcome to see our servers SSL test results [**here**](https://www.ssllabs.com/ssltest/analyze.html?d=app.connexcs.com).
 
 ### Inter-zone Communication
 All internal traffic travelling between zones traverses our mesh VPN, protected by 4096-bit keys and managed by internal CA Servers.
@@ -15,7 +14,7 @@ All internal traffic travelling between zones traverses our mesh VPN, protected 
 Our system uses an exponentially increasing delay on failed attempts and centralised reporting.
 
 ### Passwords
-All passwords are hashed in our system. The ones required for HTTP login are encrypted by Argon2, the winner of the Password Hashing Competition (PHC) https://github.com/P-H-C/phc-winner-argon2
+All passwords are hashed in our system. The ones required for HTTP login are encrypted by Argon2, the winner of the [**Password Hashing Competition (PHC)**](https://github.com/P-H-C/phc-winner-argon2).
 
 On every hash we use:
 - Random Per Password Salt (With email hashed seasoning)
@@ -23,7 +22,7 @@ On every hash we use:
 - High Time, Memory Cost, Parallelism Cost
 
 ### 2FA / TFA
-All admins are required to use two-factor authentication when signing into the system. Two-Factor Authentication is also available for any user accounts using RFC 6238 (https://tools.ietf.org/html/rfc6238)-style TOTP (Time Based One-time Passwords), using applications such as Google Authenticator or Microsoft Authenticator.
+All admins are required to use two-factor authentication when signing into the system. Two-Factor Authentication is also available for any user accounts using [**RFC 6238**](https://tools.ietf.org/html/rfc6238)-style TOTP (Time Based One-time Passwords), using applications such as Google Authenticator or Microsoft Authenticator.
 
 ### Server Keys
 Any user with direct access to any servers is required to use SSH Keys. In all systems where keys are not possible, long multi-symbol passwords are used.
@@ -57,7 +56,7 @@ The SSL certificate can be deployed on your customer portal with a single click.
 ## User Enhanced Security
 In addition to the above ConnexCS security, we also recommend the following practices to harden your ConnexCS account.
 
-1. Passwords: we recommend following the NIST guidelines found here [NIST Guidelines](https://pages.nist.gov/800-63-3/sp800-63b.html#sec5):
+1. Passwords: we recommend following the NIST guidelines found here [**NIST Guidelines**](https://pages.nist.gov/800-63-3/sp800-63b.html#sec5):
     + 8 character minimum when a human sets it
     + 6 character minimum when set by a system/service
     + Support at least 64 characters maximum length
@@ -74,7 +73,7 @@ In addition to the above ConnexCS security, we also recommend the following prac
     
     <iframe width="560" height="315" src="https://www.youtube.com/embed/_EqOmhahBQc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-3. Duo Security or Google/Microsoft Authenticator: As per the NIST recommendations above SMS should not be trusted for second factor authentication. We implement both Duo Security and [Time-based One-time Password Algorithm (TOTP; specified in RFC 6238)](https://tools.ietf.org/html/rfc6238),
+3. Duo Security or Google/Microsoft Authenticator: As per the NIST recommendations above SMS should not be trusted for second factor authentication. We implement both Duo Security and [**Time-based One-time Password Algorithm (TOTP; specified in RFC 6238)**](https://tools.ietf.org/html/rfc6238),
 which can be used by Google Authenticator or Microsoft Authenticator.
 
 
