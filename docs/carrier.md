@@ -9,8 +9,11 @@ The **Carrier** section in **ConnexCS** allows for simplified Carrier management
 From the **Carriers** page, you can perform several management operations. 
 
 **+**:Add new Carriers (see [**Create Carrier**](https://docs.connexcs.com/carrier/#create-carrier) below for details.)
+
 **Refresh** Refresh the page, helpful when making edits or looking at real-time changes. This page is built as a web app so some information will update automatically.
+
 **Bulk Edit** Select multiple Carriers, then click the **Bulk Edit** button to modify fields such as Channels Status, Flow Speed (CPS), Portal Access, and Country. 
+
 **Delete** To delete multiple carriers at a time, select one or more carriers from the list and then click the trash bin icon and confirm.
 
 **?** Link to documentation for the current page. 
