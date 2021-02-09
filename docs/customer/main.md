@@ -27,16 +27,18 @@ The **Contacts** section shows an overview of contacts associated with the Custo
 ### Add Contact
 
 1. Press the **`+`** button to the right of the word **Contacts**.
-4. Enter the contact **Name** and login **Email** address.
-3. Select **Contact Type**.
-4. Enter the **Phone** or **Mobile**. 
-5. **Auto Generate Password** to have a password generated online and sent via email. Uncheck the box to enter a password manually.
-6. **Public Notes** display on the Customer Portal. 
-7. **Private Notes** display in the Control Panel.
-7. Manually set the **Mobile Verified** or **Email Verified** status. Check in the Customer Details to confirm the Mobile and Email have been verified. Alternately, the customer can do this in the Customer Portal.
-7. Click **`Save`**.
+    + **Name**: Contacts real name
+    + **Email**: This will be the login for the contact, as well as a means of reaching them. 
+    + **Contact Type**: This field is for information purposes and organizing only, there is no additional function for it. 
+    + **Phone** or **Mobile**: To reach the contact. 
+    + **Auto Generate Password**: Select this to have a password generated online and sent via email. Uncheck the box to enter a password manually.
+    + **Public Notes**: Display on the Customer Portal. 
+    + **Private Notes**: Display in the Control Panel.
+    + **Mobile Verified** and **Email Verified**:Manually set the status for each. Check in the Customer Details to confirm the Mobile and Email have been verified. Alternately, the customer can do this in the Customer Portal.
 
     ![alt text][main-tab]
+
+2. Click **`Save`**.
 
 !!! note "Save Options"
     + **Save and Continue** = Exit the Customer screen
