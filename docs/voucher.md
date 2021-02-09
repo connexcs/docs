@@ -15,11 +15,11 @@ Vouchers may be issues in one of 3 forms:
 ## Voucher Setup
 
 1. Click on the blue **`Add`** button
-    * **Count**- Enter how many vouchers you wish to create (a voucher may only be used once)
-    * **Minimum Activation** - Enter the minimum amount the customer must spend before the voucher is valid. Set to '0' to give a customer completely free credit. 
-    * **Multiplier** - Enter the amount to multiple the customer's paid balance by. Ex: for a 10% bonus, set the voucher to 1.1.
-    * **Addition** - Enter how much extra credit to be applied to the customer's account. Ex: Set 50 to give them $50, with or without a spend of their own, based on the Minimum Activation.
-    * **Currency Selector** - Select the desired currency
+    * **Count**: Enter how many vouchers you wish to create (a voucher may only be used once)
+    * **Minimum Activation**: Enter the minimum amount the customer must spend before the voucher is valid. Set to '0' to give a customer completely free credit. 
+    * **Multiplier**: Enter the amount to multiple the customer's paid balance by. Ex: for a 10% bonus, set the voucher to 1.1.
+    * **Addition**: Enter how much extra credit to be applied to the customer's account. Ex: Set 50 to give them $50, with or without a spend of their own, based on the Minimum Activation.
+    * **Currency Selector**: Select the desired currency
 3. Select **`Save`** and the system will generate the vouchers.
 
 
