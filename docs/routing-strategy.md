@@ -25,7 +25,7 @@ To add a new routing strategy:
 
 1. Click the **`+`** button in the **Routing Strategy** screen.
 2. Name the strategy.
-3. Select the strategy type (defined above). 
+3. Select the Strategy type (defined above). 
 
     ![alt text][routing-strategy2]   
 
@@ -52,11 +52,10 @@ To set up a routing strategy in a customer's account:
 
 
 ## Blocking Calls
-
 Routing Strategy can also be used to block calls. 
 
 1. Click **Management :material-menu-right: Customer**.
-1. Click a customer **Name :material-menu-right: Routing :material-menu-right: Rate Card**
+1. Click a **[Customer Name] :material-menu-right: Routing :material-menu-right: Rate Card**
 2. Under **Routing**, click **Strategy**.
 3. Add the number to block then select **Drop** as the Strategy.
 4. Click **`Save`**.
