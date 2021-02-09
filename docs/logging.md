@@ -4,26 +4,28 @@
 **Logging** is used to check real-time call attempts, SIP traces, routing status, and to simulate a call. As soon as a call hits the ConnexCS system, it will display in the Logging area. Most issue debugging occurs in the Logging section. 
 
 ## Register Logging
-To view calls that are having issues registering, click **`Register Logging`**, then click on a specific Call ID to view Call Details and SIP Trace.
+To view calls that are having issues registering, click **`Register Logging`**, then click on a specific Call ID to view [**Call Details**}(https://docs.connexcs.com/logging/#call-id-details) and [**SIP Trace**](https://docs.connexcs.com/logging/#sip-traces).
 
 ## Fraud Logging
 View the log of Fraud events. See [**Setup Fraud Detection**](https://docs.connexcs.com/setup/advanced/fraud/#setup-a-fraud-detection) for configuration. 
 
-## Simulating Calls
+## Simulate
 Simulating calls allows providers to identify areas of concern, or just to verify functionality, by testing in different setups and operational configurations. 
 
 To simulate calls:
 
-1. Click **`Simulate`** either from the **Logging** screen or from within a specific **Call ID**. A form will appear:
+1. Click **`Simulate`** either from the **Logging** screen or from within a specific **Call ID**:
 
     ![alt text][logging-4]
 
-2. Enter the dialed number and CLI/ANI number
-3. Select a switch IP from the available options.
-4. Enter the IP address.
-5. Optionally, add the SIP extension user
-6. Select the routing engine zone
-7. Click **`Simulate`**
++ **Dialed Number**: Where the call will terminate (destination). 
++ **CLI/ANI**: Where the call will originate from (configured on ConnexCS). 
++ **Switch IP**: Where the call will traverse.
++ **Customer IP**: The ConnexCS Customer IP address where the call will originate.
++ **Registered User**: (Optional) Enter a SIP extension user.
++ **Routing Engine**: Select the regional zone. 
+
+2. Click **`Simulate`**. 
 
 The simulation call result will appear in logging. The Call ID will be prepended with a **`SIM`** tag. Click the Call ID to view the call's routing status.
 
