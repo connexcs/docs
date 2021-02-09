@@ -14,7 +14,7 @@ Simulating calls allows providers to identify areas of concern, or just to verif
 
 To Simulate Calls:
 
-1. Click **`Simulate`** either from the **Logging** screen or from within a specific **Call ID**:
+Click **`Simulate`** either from the **Logging** screen or from within a specific **Call ID**:
 
 &emsp;![alt text][logging-4]
 
@@ -25,7 +25,7 @@ To Simulate Calls:
 + **Registered User**: (Optional) Enter a SIP extension user.
 + **Routing Engine**: Select the regional zone. 
 
-2. Click **`Simulate`**. 
+Click **`Simulate`**. 
 
 The simulation call result will appear in logging. The Call ID will be prepended with a **`SIM`** tag. Click the Call ID to view the call's routing status.
 
