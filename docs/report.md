@@ -30,7 +30,7 @@ This report displays metrics for a specific number. It is particularly useful if
 ## Schedule Report
 Set a Schedule to email the Breakout Report at designated intervals. To schedule a breakout report, click the **`+`** icon.
 
-    ![alt text][schedulereport]
+&emsp;![alt text][schedulereport]
 
 + **Name** the report schedule.
 + **Email**: The report recipient. 
