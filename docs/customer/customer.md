@@ -102,7 +102,7 @@ From the **Customers** page, you can perform several management operations.
 ___
 
 ## Configure Customers
-Once a customer has been created, click on the customer name to view details and provide additional configuration. Separate documentation can be found for each sub-section in the documents below this one. 
+Once a customer has been created, click on the customer name to view details and provide additional configuration. For documentation on that configuration, navigate to the sub-section on the left: 
 
 &emsp; ![alt text][customersubs]
 
