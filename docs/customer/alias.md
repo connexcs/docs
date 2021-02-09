@@ -6,9 +6,9 @@ An **Alias** allows you to partially or completely rewrite a number.
 ## Create Alias
 
 1. Click the **`+`**
-2. **Current** - current number or script (regex)
-3. **New** - set to another number or script (regex)
-
+    + **Current**: Current number or script (regex).
+    + **New**: Set to another number or script (regex).
+2. Click **`Save`**.
 
 
 !!! info "Video Guide"
