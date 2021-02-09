@@ -10,34 +10,27 @@ ConnexCS **Customers** are organized through customer cards.
     You can add unlimited customers, and will not be charged per customer, only on their individual usage. 
 
 
-## Customer View Modification
-
-* **Columns** pop out on the right allows you to add/remove options, change column order, in some cases you can create row groups and aggregate values for pivot functionality
-* **Filters** pop out on the right allows you to filter your customers
-* Adjust Column ordering
-
-## Top of Page functions
+## Customer functions
 From the **Customers** page, you can perform several management operations. 
 
+**+** Add new Customers (see [**Configure Customers**](https://docs.connexcs.com/customer/customer/#configure-customers) below for details.)
 
-**+**: Add new Customers (see [**Adding Customers**](https://docs.connexcs.com/customer/customer/#adding-customers) below for details.)
-
-**Bulk Upload**: Upload multiple Customers at the same time, by importing a spreadsheet file into ConnexCS. 
+**Bulk Upload** Upload multiple Customers at the same time, by importing a spreadsheet file into ConnexCS. 
 
 1. Click `Bulk Upload` then `Upload`, find your customer file, then click **`Open`**. 
 2. Right-click in each column to **Map Columns** to appropriate fields
 3. **Set Start Row** to indicate the first line of data (first row is typically column headers). 
 4. Once all fields are set as needed, then click **`Upload to Server`**. 
 
-**Bulk Edit**: Select multiple customers, then click the **Bulk Edit** button to modify fields such as Channels, Status, Flow Speed (CPS), Portal Access, and Country. 
+**Bulk Edit** Select multiple customers, then click the **Bulk Edit** button to modify fields such as Channels, Status, Flow Speed (CPS), Portal Access, and Country. 
 
-**Refresh**: Refresh the page, helpful when making edits or looking at real-time changes. This page is built as a web app so some information will update automatically.  
+**Refresh** Refresh the page, helpful when making edits or looking at real-time changes. This page is built as a web app so some information will update automatically.  
 
-**Delete**: Delete multiple customers at a time. 
+**Delete** Delete multiple customers at a time. 
 
-**?**: Link to documentation for the current page. 
+**?** Link to documentation for the current page. 
 
-**Send**: ConnexCS comes with Email and SMS included for your customers.
+**Send** ConnexCS comes with Email and SMS included for your customers.
 
 1. Select multiple customers using the tickbox selector on the left side of each row. (Customers are not visible to each other in the sent message.)
 2. Click on "Send" at the top right then choose email or SMS.
@@ -48,17 +41,17 @@ From the **Customers** page, you can perform several management operations.
 !!! note "Custom Email Servers"
     Change the outbound Email Server and SMS origination number in **Setup :material-menu-right: Settings**. 
 
-**Active**: Filter customer(s) based on account status. Results on the page will automatically arrange themselves according to the filter.
+**Active** Filter customer(s) based on account status. Results on the page will automatically arrange themselves according to the filter.
 
 &emsp; ![alt text][customer-status]
 
+## Customer View Modification
 
-## Adding Customers
+* **Columns** pop out on the right allows you to add/remove options, change column order, in some cases you can create row groups and aggregate values for pivot functionality
+* **Filters** pop out on the right allows you to filter your customers
+* Adjust Column ordering
 
-1. Click the **`+`** button.
-2. Enter the relevant details in each text box.
-3. Click the **`Save`** button.
-
+## Configure Customers
 *Click each tab for field explanations:*
 
 === "Basic"
@@ -109,7 +102,7 @@ From the **Customers** page, you can perform several management operations.
 ___
 
 ## Managing Customers
-Click an existing customer name from Customer Management screen then **Edit**. For all field details, see **[Adding Customers](../customer/#adding-customers)** above. 
+Click an existing customer name from Customer Management screen then **Edit**. For all field details, see **[Configure Customers](../customer/#configure-customers)** above. 
 
 
 
