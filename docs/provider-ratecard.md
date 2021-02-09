@@ -3,34 +3,32 @@
 
 **Provider Rate Cards** determine routing and billing for calls being placed by customers. Before configuring Provider Rate Cards, we suggest you review [**Rate Card Overview**](https://docs.connexcs.com/rate-card-building/) then [**Rate Card Setup**](https://docs.connexcs.com/video-guide/#rate-card-setup) in the ConnexCS Video Guide. 
 
-## Overview
-**Name**: Click the name of the provider to see individual rate card and management options. (If a Rate Card name shows a yellow warning or red alert, these will indicate details about the card. It may be stale or have some sort of error.)
-
-**Direction**: Cards are either *Termination* (calling out to PSTN) or *Origination* (DID numbers receiving calls from PSTN). Termination is the most common type of card used by ConnexCS customers. 
-
-**Company**: Refers to the Provider, or Carrier, that the card is configured to use. 
-
-**Currency**: The currency for the provider's region (typically USD, EUR, or GBP).
-
-**?**: Lists dependent Child (or Customer) Rate Cards, which will be impacted by any changes made to the parent card. Click on the [**Child Card**](https://docs.connexcs.com/customer-ratecard/) to view the configuration. 
-
-**ID**: A system identifier that acts as a placeholder and prevents confusion between similarly named items. 
-
-**Rule Count**: The number of rows in the Rate Card.
-    
-
-## Provider Rate Card Management
+## Provider Rate Card Functions
 
 **Bulk Edit** Select one or more Provider Cards and click **`Bulk Edit`** to modify multiple cards for settings such as Force Presentation, Dialing, Direction, and Billing Precision.
 
-**Delete** - Delete a Provider rate card by selecting its name from the list and then clicking the trash bin icon. 
+**Delete** Delete a Provider rate card by selecting its name from the list and then clicking the trash bin icon. 
 
+## Overview
+**Name** Click the name of the provider to see individual rate card and management options. (If a Rate Card name shows a yellow warning or red alert, these will indicate details about the card. It may be stale or have some sort of error.)
 
-## Add New Provider Rate Cards
+**Direction** Cards are either *Termination* (calling out to PSTN) or *Origination* (DID numbers receiving calls from PSTN). Termination is the most common type of card used by ConnexCS customers. 
+
+**Company** Refers to the Provider, or Carrier, that the card is configured to use. 
+
+**Currency** The currency for the provider's region (typically USD, EUR, or GBP).
+
+**?** Lists dependent Child (or Customer) Rate Cards, which will be impacted by any changes made to the parent card. Click on the [**Child Card**](https://docs.connexcs.com/customer-ratecard/) to view the configuration. 
+
+**ID** A system identifier that acts as a placeholder and prevents confusion between similarly named items. 
+
+**Rule Count** The number of rows in the Rate Card.
+    
+## Create Provider Rate Cards
 Once created, new **Provider Rate Cards** are completed by either adding rows manually or uploading an existing file. 
 
 1. Click the **`+`** button.
-3. Complete desired fields. (For details, see [**Provider Rate Card Settings**](https://docs.connexcs.com/provider-ratecard/#provider-rate-card-settings) below.)
+3. Complete desired fields. (For details, see [**Configure Provider Rate Card**](https://docs.connexcs.com/provider-ratecard/#configure-provider-rate-card) below.)
 4. Click **`Save`**.
 9. From here, you may add the Provider Rate Card manually or perform a Bulk Upload. 
 
@@ -53,7 +51,8 @@ The preferred method for adding a Rate Card is to import/upload it:
 !!! danger "Manually generated cards"
     When users create Provider Rate Card CSV files manually in Excel (rather than generating them from a rate card management system) errors such as empty rows or duplicate prefixes may be introduced which could cause the file upload to error. 
 
-## Provider Rate Card Settings
+## Configure Provider Rate Card
+Once the Provider Rate Card has been created, additional configuration can be accessed by clicking on the Rate Card name. 
 
 ### Main tab
 **Bulk Upload** Upload the Provider Rate Card using a CSV file, typically provided by the carrier. 
@@ -86,7 +85,7 @@ The preferred method for adding a Rate Card is to import/upload it:
 **Billing**: Call will be billed based on the MCD (Minimum Call Duration) and Pulse, represented as x/x. Each call using this Rate Card will be rounded up to MCD, then in increments of Pulse. Call durations will be rounded up based on these settings, then that new duration is what will be billed.
 
 !!! abstract "Billing Example"
-    MCD is set to 30 and Pulse is set to 6. The Billing column shows 30/6. 
+    In our example, MCD is set to 30 and Pulse is set to 6. The Billing column shows 30/6. Calls would be billed as follows:
    
     |Call Duration|MCD?|Pulse|Billed Duration|
     |---|---|---|---|
