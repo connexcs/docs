@@ -5,34 +5,30 @@ The **Carrier** section in **ConnexCS** allows for simplified Carrier management
 
 ![alt text][carriers-main]
 
+## Carrier Functions
+From the **Carriers** page, you can perform several management operations. 
+
+**+**:Add new Carriers (see [**Create Carrier**](https://docs.connexcs.com/carrier/#create-carrier) below for details.)
+**Refresh** Refresh the page, helpful when making edits or looking at real-time changes. This page is built as a web app so some information will update automatically.
+**Bulk Edit** Select multiple Carriers, then click the **Bulk Edit** button to modify fields such as Channels Status, Flow Speed (CPS), Portal Access, and Country. 
+**Delete** To delete multiple carriers at a time, select one or more carriers from the list and then click the trash bin icon and confirm.
+
+**?** Link to documentation for the current page. 
+
+**Active** Used to sort Carriers based on the selected status. Results on the page will automatically arrange themselves according to the filter.
+
+**Search** The search box on the Carrier Management screen is for finding specific information among your carrier listings.
+
+**Audit Log** Click "View Audit Log" to the right of the Edit button to view changes made to the carrier configuration. 
+
+**Credit column** Amounts listed here are purely informational, calls will still be connected by a carrier even if the amount here is at zero credit.     
+
 ## Carrier View Modification
 * **Columns** pop out on the right allows you to add/remove options, change column order, in some cases you can create row groups and aggregate values for pivot functionality
 * **Filters** pop out on the right allows you to filter your carriers
 * Adjust Column ordering
 
-## Carrier Management and Functions
-From the **Carriers** page, you can perform several management operations. 
-
-**+**: Add new Carriers (see [**Add Carrier**](https://docs.connexcs.com/carrier/#add-carrier) below for details.)
-
-**Refresh**: Refresh the page, helpful when making edits or looking at real-time changes. This page is built as a web app so some information will update automatically.
-
-**Bulk Edit**: Select multiple Carriers, then click the **Bulk Edit** button to modify fields such as Channels Status, Flow Speed (CPS), Portal Access, and Country. 
-
-**Delete**: To delete multiple carriers at a time, select one or more carriers from the list and then click the trash bin icon and confirm.
-
-**?**: Link to documentation for the current page. 
-
-**Active**: Used to sort Carriers based on the selected status. Results on the page will automatically arrange themselves according to the filter.
-
-**Search**: The search box on the Carrier Management screen is for finding specific information among your carrier listings.
-
-**Audit Log**: Click "View Audit Log" to the right of the Edit button to view changes made to the carrier configuration. 
-
-**Credit column**: Amounts listed here are purely informational, calls will still be connected by a carrier even if the amount here is at zero credit.     
-
-
-## Add Carrier
+## Create Carrier
 
 2. Click the **`+`** button.
 3. Enter relevant carrier details.
@@ -168,7 +164,6 @@ Use Carrier **Alerts** to contact a selected email address when `Consecutive Fai
 The **DID** tab displays a list of DIDs that belong to that carrier.  New entries are added with the **`+`** on the left. See [**Customer DID**](https://docs.connexcs.com/customer/did/) for configuration details. 
 
 ### CDR
-
 The **CDR** tab displays call drop rates. Use **`Recalc CDR`** when CDR records are not accurate. See [**Customer CDR**](https://docs.connexcs.com/customer/cdr/#recalculate-cdr) for details. 
 
 !!! danger "Rerating CDRs"
