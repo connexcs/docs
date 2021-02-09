@@ -2,7 +2,7 @@
 
 The **Dashboard** overview provides a summary of active customers and channels as well as some quick functions. For detailed account and customer activities, use the Menu system on the left.  
 
-## Top of Page Icons
+## Control Panel Functions
 ![alt text][top of page]
 
 **Checklist** Quick view of outstanding Alerts on the account which should be addressed. Upon initial setup, there will be Alerts to verify email and mobile for the account, as well as reminder to create your customers, setup carriers, and so on. 
@@ -24,7 +24,7 @@ This provides a view of Live Channels, Customers, Carriers, and Rate Cards
 ![alt text][dashboard]
 
 ### Channels 
-Table view of **Customers** and **Carriers** sorted by Channels in Use (highest and lowest).
+Table view of configured **Customers** and **Carriers** sorted by Channels in Use (highest and lowest).
 
 ### Live Channels
 
