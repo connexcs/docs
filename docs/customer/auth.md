@@ -15,8 +15,9 @@ When you enable **IP Authentication**, you associate the IP of a customer switch
     This occurs because call requests were sent from the new IP before it is authorized. As a result, ConnexCS fraud detection blocked the unauthorized IP in the firewall. Attempted calls from this IP will not be completed. To resolve the blocked IP, go to **Setup :material-menu-right: Advanced :material-menu-right: Firewall**. Select the blocked IP, then delete it from the firewall. This unblocks the IP, but it will take up to 15 minutes for the change to become active in the switch. See [Threat Detection](https://docs.connexcs.com/setup/advanced/firewall/) for more details. 
 
 ### Enable IP Authentication 
+To enable, click the **`+`** next to IP Authentication:
 
-*Click each tab to view configuration details.*
+*Click each tab to view configuration details*
 
 === "Basic"
 
@@ -61,6 +62,8 @@ When you enable **IP Authentication**, you associate the IP of a customer switch
     Example: International calls coming in with a + should be replaced with a specific country code. 
 
     &emsp; ![alt text][parameter-rewrite]
+
+Click **`Save`** to add IP Authentication to the IP.
 ___    
 
 ### IP Authentication Audit Log
@@ -76,7 +79,9 @@ Generic SIP Trace showing the Challenge Response:
 &emsp; ![alt text][407-trace]
 
 ### Enable SIP User Authentication 
-*Click each tab to view configuration details.*
+To enable, click the **`+`** next to SIP User Authentication:
+
+*Click each tab to view configuration details*
 
 === "Basic"
 
@@ -116,7 +121,8 @@ Generic SIP Trace showing the Challenge Response:
 === "Latency"
    
     If NAT/SIP pings are enabled, the **Latency** tab will be available at the top of the SIP user screen, and displays the status of the SIP pings, and latency based on those pings. This can be helpful for troubleshooting audio problems. 
-    
+
+Click **`Save`** to add the new SIP User.
 ___
 
 
