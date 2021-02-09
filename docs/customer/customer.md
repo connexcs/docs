@@ -13,7 +13,7 @@ ConnexCS **Customers** are organized through customer cards.
 ## Customer functions
 From the **Customers** page, you can perform several management operations. 
 
-**+** Add new Customers (see [**Configure Customers**](https://docs.connexcs.com/customer/customer/#configure-customers) below for details.)
+**+** Add new Customers (see [**Create Customers**](https://docs.connexcs.com/customer/customer/#create-customers) below for details.)
 
 **Bulk Upload** Upload multiple Customers at the same time, by importing a spreadsheet file into ConnexCS. 
 
@@ -51,7 +51,7 @@ From the **Customers** page, you can perform several management operations.
 * **Filters** pop out on the right allows you to filter your customers
 * Adjust Column ordering
 
-## Configure Customers
+## Create Customer
 *Click each tab for field explanations:*
 
 === "Basic"
@@ -101,12 +101,18 @@ From the **Customers** page, you can perform several management operations.
     + **Delay and Save** = Select a time to elapse before saving the Customer, delaying the setup or change. 
 ___
 
-## Managing Customers
-Click an existing customer name from Customer Management screen then **Edit**. For all field details, see **[Configure Customers](../customer/#configure-customers)** above. 
+## Configure Customers
+Once a customer has been created, click on the customer name to view details and provide additional configuration. Separate documentation can be found for each sub-section in the documents below this one. 
 
+&emsp; ![alt text][customersubs]
 
+___
 
-[customers]: /customer/img/customers.png "Customer-Dashboard"
-[customer-status]: /customer/img/39.png "Customer-Status"
+## Edit Customers
+Click an existing customer name from Customer section, then click **`Edit`**. For all field details, see **[Create Customers](../customer/#create-customers)** above. 
+
+[customers]: /customer/img/customers.png "Customer Dashboard"
+[customer-status]: /customer/img/39.png "Customer Status"
+[customersubs]: /customer/img/customersubs.png "Customer Sub-Sections"
 
 
