@@ -5,7 +5,7 @@ The **Portal** lets you add a domains and sub-domain to the Control Panel, which
 
 ## Portal Setup
 
-Step 1: Set up CNAME record
+**Step 1: Set up CNAME record**
 
 1. Access your domain account at your domain host.
 2. Locate the page for updating your domain's DNS records. The page might be called something like DNS Management, Name Server Management, or Advanced Settings.
@@ -18,7 +18,7 @@ Step 1: Set up CNAME record
 !!! note
     Your Customer Portal must be exposed via a `CNAME` which you setup. This won't work with `A` records or pointing directly.
 	
-Step 2: Add Domain to Portal
+**Step 2: Add Domain to Portal**
 
 1. Click the **`+`** button under **Portal**.
 2. Enter the details in their respective fields of the ensuing window.
