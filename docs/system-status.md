@@ -6,7 +6,7 @@ Use **Status** to create Status Pages for your customer portals, typically for r
 ## Creating Status Reports
 Follow these three steps to allow outage reporting on Customer Portals: 
 
-Step 1: Define Status Component 
+**Step 1: Define Status Component **
 
 1. Click the **`+`** button under **Status Component**.
 2. Enter a **Title** and optional **Description**. 
@@ -16,7 +16,7 @@ Step 1: Define Status Component
 3. Click the **`Save`** button.
 
 
-Step 2: Setup Report History
+**Step 2: Setup Report History**
 
 1. Click the **`+`** button under **Report History**.
 
@@ -29,7 +29,7 @@ Step 2: Setup Report History
 3. Finally, select one or more Status Component(s) affected, and the severity of the issue. 
 2. Click **`Save`**.
 
-Step 3: Enable on customer portal
+**Step 3: Enable on customer portal**
 
 1. Navigate to **Setup** > **Integrations** > **Portal**.
 2. Click the domain name.
