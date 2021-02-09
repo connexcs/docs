@@ -61,14 +61,14 @@ Use a **Group** to assign a specific set of Control Panel access permissions to 
     Network Services Engineering needs permissions to set up routing but should not have access to customer billing details. Alternately, the Billing team needs permissions to access and modify customer billing details but not to set up routing for customer calls.
 
 
-Step 1: Create Group
+**Step 1: Create Group**
 
 1. Click the **`+`** button in the **Groups** section.
 2. Enter a Group **Name** (ex: Engineering, Sales, etc).
 3. Set **Default Permissions** for the group's global permissions: `Create`, `Update`, `Read`, and `Delete`. All 4 will be selected by default. Click the X to remove a permission. Click the down arrow on the right to add a permission. 
 4. Click **`Save`**. The new Group will be listed. 
 
-Step 2: Specify Group Permissions
+**Step 2: Specify Group Permissions**
 
 1. Click on the **Group** to view the "Add Group Permission" table. Click the **`+`** next to the table. 
 2. **Area**: Select the functional area of the Control Panel for the specific permission (ex: Customer, Carrier, Logging, ScriptForge, etc). 
