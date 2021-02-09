@@ -13,12 +13,11 @@ In ConnexCS, **CLI Restrict** lets you present CLIs on customer accounts, so tha
 
 ![alt text][cli]
 
-Configuring a number as a **CLI (Calling Line Identification)** in ConnexCS gives the customer the ability to control which numbers are allowed to initiate calls. Any number configured as a CLI is considered part of the Whitelist (unless additional configuration is applied to block it). To add a number:
+Configuring a number as a **CLI (Calling Line Identification)** in ConnexCS gives the customer the ability to control which numbers are allowed to initiate calls. Any number configured as a CLI is considered part of the Whitelist (unless additional configuration is applied to block it).
 
-1.	Click on the **`+`** button under **CLI**.
-2.	Fill out the fields in the dialogue box and **`Save`**.
+Click on the **`+`** button under **CLI**.
 
-Field details:
+*Field details:*
 
 + **CLI**: Enter the desired number or a regular expression to match and replace to allow numbers through
 
@@ -34,6 +33,8 @@ Field details:
 + **Direction Applied**: Select either **Termination** for calls a customer makes out, or **Origination** (also refers to DIDs) for inbound calls made to our customers. Ex: Create a whitelist that only allows calls to or from the same country.  
 
     ![alt text][edit-cli]
+
+Click **`Save`** to complete the CLI configuration. 
 
 ## Advanced CLI Match & Manipulation
 The CLI system uses Regular Expressions to match and replace numbers. Here are a few examples:
