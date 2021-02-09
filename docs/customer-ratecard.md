@@ -3,6 +3,15 @@
 
 **Customer Rate Cards** let you manage the rates for customers, edit customer profiles, and view important information. Before configuring, we suggest you review [**Rate Card Overview**](https://docs.connexcs.com/rate-card-building/) then [**Rate Card Setup**](https://docs.connexcs.com/video-guide/#rate-card-setup) in the ConnexCS Video Guide. You will also want to have at least one [**Provider Rate Card**](https://docs.connexcs.com/provider-ratecard/) configured. 
 
+## Customer Rate Card Functions 
+
+**Bulk Build**: Select multiple cards to perform build. This is typically done after Properties and Profit are setup, or when you need to Compile multiple customers after a rate change. 
+
+**Bulk Edit**: Edit multiple cards at a time for some Properties settings. 
+
+**Delete**: Delete a customer rate card by selecting its name from the list and then clicking the trash bin icon. 
+
+
 ## Overview
 **Name**: Click the name of the provider to see individual rate card and management options. (If a Rate Card name shows a yellow warning or red alert, these will indicate details about the card. It may be stale or have some sort of error.)
 
@@ -27,20 +36,11 @@
     Provider updates their rates and the customer uploads the new Provider Rate Card into ConnexCS, which increments the revision. All associated customer cards will be out of sync (orange pause icon). To correct this, select all stale cards, then click **`Bulk Build`** to update the new rates and routes. 
 
 
-## Customer Rate Card Management 
-
-**Bulk Build**: Select multiple cards to perform build. This is typically done after Properties and Profit are setup, or when you need to Compile multiple customers after a rate change. 
-
-**Bulk Edit**: Edit multiple cards at a time for some Properties settings. 
-
-**Delete**: Delete a customer rate card by selecting its name from the list and then clicking the trash bin icon. 
-
-
-## Add new Customer Rate Card
+## Create Customer Rate Card
 Once created, there are several options to complete the card. 
 
 1. Click the **`+`** button. 
-3. Complete desired fields. (For details, see [**Customer Rate Card Settings**](https://docs.connexcs.com/customer-ratecard/#customer-rate-card-settings) below.)
+3. Complete desired fields. (For details, see [**Configure Customer Rate Card**](https://docs.connexcs.com/customer-ratecard/#configure-customer-rate-card) below.)
 4. Click **`Save`**.
 5. In the new card, select **Profits** then click the **`+`** button. (For details, see [**Profits**](https://docs.connexcs.com/customer-ratecard/#functions) under Functions below).
 
@@ -65,7 +65,7 @@ The final method for configuring a Customer Rate Card is to import/upload it:
 7. Once complete, the new card will display with the Provider rules and the Profit rules.
    
     
-## Customer Rate Card settings
+## Configure Customer Rate Card
 
 ### Main tab
 
