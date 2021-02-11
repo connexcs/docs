@@ -20,9 +20,11 @@ A **Prefix Set** allows you to group one or more prefixes to be referenced later
 ## Apply Prefix Set
 Prefix Sets can be applied to the following locations under the Management menu:
 
-* Customer :material-menu-right: Routing :material-menu-right: Ingress Routing :material-menu-right: Basic :material-menu-right: [Dial String Prefix Set](https://docs.connexcs.com/customer/routing/#basic)
-* Routing :material-menu-right: Routing Global :material-menu-right: Basic :material-menu-right: Dial String Prefix Set
-* Rate Card :material-menu-right: Customer Rate Cards :material-menu-right: Profits :material-menu-right: Config :material-menu-right: Prefix Set
+Customer :material-menu-right: Routing :material-menu-right: Ingress Routing :material-menu-right: Basic :material-menu-right: [Dial String Prefix Set](https://docs.connexcs.com/customer/routing/#basic)
+
+Routing :material-menu-right: Routing Global :material-menu-right: Basic :material-menu-right: [Dial String Prefix Set](https://docs.connexcs.com/global-routing/)
+
+Rate Card :material-menu-right: Customer Rate Cards :material-menu-right: Profits :material-menu-right: + :material-menu-right: Config :material-menu-right: [Prefix Set](https://docs.connexcs.com/customer-ratecard/#main-tab)
 
 ## Flags
 Use Flags to create a *Global CLI Blacklist* or a *Global Dialled Number Blacklist* (Aka Block List). This will prevent all calls going through the system which match the defined prefix set. 
