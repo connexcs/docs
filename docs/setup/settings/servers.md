@@ -119,9 +119,9 @@ When a user is registers with UDP via NAT, a port mapping is created. However, t
 
 ### Deployment Options
 
-1) **Single Server**: No additional configuration is needed for a single server.
-2) **Server Array**: For multiple servers, decide whether users registered to _Server A_ can call users on _Server B_. If so, set the **UAC Location Array Sharing** option (found under [**Server Config**](https://docs.connexcs.com/setup/settings/servers/#server-config)) for the servers which will make the registrations.
-3) **Server Cluster**: Servers in a cluster share all user location registrations. This is the best solution to scale into the many 1000's of registrations. Be advised: you will not be able to route calls to users registered against any servers outside the cluster. 
+1. **Single Server**: No additional configuration is needed for a single server.
+2. **Server Array**: For multiple servers, decide whether users registered to _Server A_ can call users on _Server B_. If so, set the **UAC Location Array Sharing** option (found under [**Server Config**](https://docs.connexcs.com/setup/settings/servers/#server-config)) for the servers which will make the registrations.
+3. **Server Cluster**: Servers in a cluster share all user location registrations. This is the best solution to scale into the many 1000's of registrations. Be advised: you will not be able to route calls to users registered against any servers outside the cluster. 
 
 !!! tip "Ping Overhead"
     Due to design constraints that occur with multiple servers in an array, NAT Keep Alive Pings can be quite intensive. You could use *Disable UAC Ping* from the server page, upgrade to a cluster, or use a single registration server to solve this. More intricate measures can be arranged on a case-by-case basis.
