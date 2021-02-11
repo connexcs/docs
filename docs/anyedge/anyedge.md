@@ -82,10 +82,11 @@ Malformed packets can cause all sorts of problems for your internal network, suc
 
 If a packet fails to validate, you can choose how this must be handled. You can handle this with a "400" error or with an "X-Validate-Fail" header. The reasons why a packet fails to validate are:
 
-> No SIP message
-> Header Parsing error
-> No "Call-ID" header
-
+```
+No SIP message
+Header Parsing error
+No "Call-ID" header
+```
  - No "Content-Length" header for transports that require it (for example, TCP)
  - Invalid Content-Length, different from the size of the actual body
  - SDP body parsing error
