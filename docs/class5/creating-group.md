@@ -8,13 +8,15 @@ For individual customers, navigate to **Management :material-menu-right: Custome
 ## Group Call Routing strategies
 Each Group is configured with a routing strategy which determines how calls will be routed to the members of the group:
 
-* **Parallel** - Rings a call to all members of the group simultaneously. The members' extensions ring for the length of time you specify. You can assign unique timeout timers for individual members. Note: this rings all members, even if they are already on a call. 
-* **Sequential** - Routes a call in a sequential order based on the order under Group Members.  By default, a call is routed to the member with the highest value of the extension number (for example, 5021).
-    * If the member is busy on another call or does not receive the call for a specific time duration, the call is routed to the member with the second highest value of the extension number (for example, 4097). 
-    * If the member with second highest extension number does not respond, the call is routed to the extension with the third highest value (for example, 4095). This process continues until a member receives the call. 
-* **Queue** - Places the caller in a call queue before routing the call to the next available member (whoever has been waiting longest to receive a call). If you use this routing strategy:
-    * You can upload audio files that greet the caller and play music when the caller or the member puts the call on hold.
-    * You don't need to specify the members of a group. Individuals who want to join the group must dial a specific extension number from their phone. To leave the group, they dial another number from their phone. So, a group that uses a Queue routing strategy does not necessarily have a fixed number of members. 
+**Parallel** Rings a call to all members of the group simultaneously. The members' extensions ring for the length of time you specify. You can assign unique timeout timers for individual members. Note: this rings all members, even if they are already on a call. 
+
+**Sequential** Routes a call in a sequential order based on the order under Group Members.  By default, a call is routed to the member with the highest value of the extension number (for example, 5021).
+* If the member is busy on another call or does not receive the call for a specific time duration, the call is routed to the member with the second highest value of the extension number (for example, 4097). 
+* If the member with second highest extension number does not respond, the call is routed to the extension with the third highest value (for example, 4095). This process continues until a member receives the call. 
+
+**Queue** Places the caller in a call queue before routing the call to the next available member (whoever has been waiting longest to receive a call). If you use this routing strategy:
+* You can upload audio files that greet the caller and play music when the caller or the member puts the call on hold.
+* You don't need to specify the members of a group. Individuals who want to join the group must dial a specific extension number from their phone. To leave the group, they dial another number from their phone. So, a group that uses a Queue routing strategy does not necessarily have a fixed number of members. 
 
 ## Group planning 
 If you want to use audio files for the group, they will need to be uploaded to the system first. 
@@ -23,20 +25,20 @@ If you want to use audio files for the group, they will need to be uploaded to t
 2. Upload the audio files to **Management** :material-menu-right: **File**.
 
 ## Create a Group
+To create a new Group, click the **`+`** icon.
 
-1. Click the **`+`** icon (located at the top-right corner of the page).
-2. Enter a **Name** for the group.
-3. Select the **Customer** from the drop-down list.
-4. Select the **Extension** that callers will use to connect to this group from the drop-down list.
-5. Select the **Group Type** from the drop-down list (see **Group call routing strategies** above).
-6. For **Parallel** and **Sequential** strategies, you will need to select **`Save and Stay`** to configure the Group Members tab: 
++ **Name** for the group.
++ **Customer** from the drop-down list.
++ **Extension** that callers will use to connect to this group from the drop-down list.
++ **Group Type** from the drop-down list (see **Group call routing strategies** above).
++ **Parallel** and **Sequential**: Select **`Save and Stay`** to configure the Group Members tab: 
 
     * Click the **`+`** to add a new member
     * Click **`Edit`** to select the Destination (External = non-ConnexCS number, Internal = extension, group, DID, etc). 
     + Set the `Ring Timeout`. This is especially helpful when calling mobile numbers as you can cancel the call before it hits the voicemail, allowing it to roll to the next Group Member.
     * Click Edit to enter an External number of Internal User, Conference, or Group
     
-6. For the **Queue** strategy, you will have the following additional fields:
++ **Queue** strategy, you will have the following additional fields:
 
     |Field   |Description|
     |--------|----------------------|
@@ -48,4 +50,4 @@ If you want to use audio files for the group, they will need to be uploaded to t
     |`Agent Logout Destination` |The extension number an individual must dial to quit the group.|
     |`Agent Offhook Destination` |An extension number an individual must dial to receive calls immediately after joining the group.|
 
-7. Once all changes have been made, select **`Save`**. 
+Once all changes have been made, select **`Save`**. 
