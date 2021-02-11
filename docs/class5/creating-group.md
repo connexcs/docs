@@ -27,18 +27,16 @@ If you want to use audio files for the group, they will need to be uploaded to t
 ## Create a Group
 To create a new Group, click the **`+`** icon.
 
-+ **Name** for the group.
-+ **Customer** from the drop-down list.
-+ **Extension** that callers will use to connect to this group from the drop-down list.
-+ **Group Type** from the drop-down list (see **Group call routing strategies** above).
-+ **Parallel** and **Sequential**: Select **`Save and Stay`** to configure the Group Members tab: 
-
-    * Click the **`+`** to add a new member
-    * Click **`Edit`** to select the Destination (External = non-ConnexCS number, Internal = extension, group, DID, etc). 
-    + Set the `Ring Timeout`. This is especially helpful when calling mobile numbers as you can cancel the call before it hits the voicemail, allowing it to roll to the next Group Member.
-    * Click Edit to enter an External number of Internal User, Conference, or Group
-    
-+ **Queue** strategy, you will have the following additional fields:
++ **Name**: Enter the name for the group.
++ **Customer**: Select the customer the group will be applied to from the drop-down list.
++ **Extension**: Callers will use this extension to connect to this group from the drop-down list.
++ **Group Type**: See **Group call routing strategies** above.
+    + **Parallel** and **Sequential**: Select **`Save and Stay`** to configure the Group Members tab: 
+        + Click the **`+`** to add a new member
+        + Click **`Edit`** to select the Destination (External = non-ConnexCS number, Internal = extension, group, DID, etc). 
+        + Set the `Ring Timeout`. This is especially helpful when calling mobile numbers as you can cancel the call before it hits the voicemail, allowing it to roll to the next Group Member.
+        + Click Edit to enter an External number of Internal User, Conference, or Group
+    + **Queue** strategy, you will have the following additional fields:
 
     |Field   |Description|
     |--------|----------------------|
