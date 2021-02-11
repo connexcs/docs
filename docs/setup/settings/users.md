@@ -4,11 +4,7 @@
 Create and assign **Users** and **Groups** based on various levels of permissions for more efficient management of access to the ConnexCS Control Panel. Permissions are managed by Groups, and at a Granular level for every endpoint in the system.
 
 ## Users
-
-Having individual User accounts for each person 
-To add a new ConnexCS **User**:
-
-Click the **`+`** button in the **Users** section on the left.
+To add a new ConnexCS **User**, click the **`+`** button in the **Users** section on the left.
 
 *Field descrptions*
 
