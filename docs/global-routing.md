@@ -8,7 +8,7 @@ To setup a **Routing Global** template, first create it then apply it to the cus
 
 **Step 1: Create the template**
 
-2. Click the **`+`** to create a new template
+2. Click the **:material-menu-right:** to create a new template
 3. Complete the fields (see [**Customer Advanced Routing configuration**](https://docs.connexcs.com/customer/routing/#configure-routing) for details)
 
     ![alt text][routing-global]
