@@ -105,9 +105,9 @@ module.export = {
 2. **Name** the script.
 3. Select the **Type**:
 
-    + Script: This is the fastest way to execute custom code and is "synchronous" execution. This should mainly be used for manipulations or calculations. It can't use libraries or work with Promises.
-    + App: Feature rich applications which can include a preset (whitelist) of available modules, the penalty of the extra features is a slightly higher latency. 
-    + Driver: A driver works as an intermediary between ConnexCS and any external system. You can write drivers to bridge the ConnexCS DID provisioning system to a provider of your choice or build more complicated alerts.
+    + `Script`- This is the fastest way to execute custom code and is "synchronous" execution. This should mainly be used for manipulations or calculations. It can't use libraries or work with Promises.
+    + `App`- Feature rich applications which can include a preset (whitelist) of available modules, the penalty of the extra features is a slightly higher latency. 
+    + `Driver`- A driver works as an intermediary between ConnexCS and any external system. You can write drivers to bridge the ConnexCS DID provisioning system to a provider of your choice or build more complicated alerts.
 
 3. Click **`Save`**.
 
