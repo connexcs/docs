@@ -7,8 +7,9 @@ The **Database** can be used for activities such as checking a list of numbers, 
 ## Types
 There are two preset data storage options:
 
-* **Key / Value** - Contains a basic Key / Value Storage.
-* **Lead Set** - Contains the most common fields when using datastore for customer / campaign data which can be used with diallers.
+**Key / Value** - Contains a basic Key / Value Storage.
+
+**Lead Set** - Contains the most common fields when using datastore for customer / campaign data which can be used with diallers.
 
 ## Bulk Upload
 
