@@ -19,14 +19,14 @@ To add or edit Company information, click the blue pencil icon. This allows you 
 
 
 ## SMTP Details
-To add or edit SMTP information, click the blue pencil icon to add: 
+To add or edit SMTP information, click the blue pencil icon to Edit: 
  
-1. **From Address** is the email address that will receive the details.
-2. **Username** and **Password** should match what is configured on your server. 
-3. **Server** is your server domain.
-4. **SMS From** is the mobile number that SMS messages will be sent from.
-5. Click **`Save`**.
-6. The **`Test Email`** or **`Test SMS`** buttons send test messages via each method. The buttons are found to the far right of the SMTP details window.
++ **From Address** is the email address that will receive the details.
++ **Username** and **Password** should match what is configured on your server. 
++ **Server** is your server domain.
++ **SMS From** is the mobile number that SMS messages will be sent from.
++ Click **`Save`**.
++ The **`Test Email`** or **`Test SMS`** buttons send test messages via each method. The buttons are found to the far right of the SMTP details window.
 
     ![alt text][smtp]
 
@@ -36,9 +36,9 @@ To add or edit SMTP information, click the blue pencil icon to add:
 ## Packages
 Below the Company information is a listing of the applied ConnexCS packages, along with Quantity, Name (of the package), and the Cost (in per minute changes). 
 
-+ Click **Enable Call Recording** to add the feature to the Account. This will need to be enabled on individual accounts under **Management > Customer > [Customer Name] > Routing > Ingress routing > [Media](https://docs.connexcs.com/customer/routing/#media)**.
+Click **Enable Call Recording** to add the feature to the Account. First, this will need to be enabled on individual accounts under **Management > Customer > [Customer Name] > Routing > Ingress routing > [Media](https://docs.connexcs.com/customer/routing/#media)**.
 
-    ![alt text][call-recording]
+&emsp;![alt text][call-recording]
 
 ## ConnexCS Service Agreement
 To view the full ConnexCS Service Agreement, click the orange banner at the bottom:
