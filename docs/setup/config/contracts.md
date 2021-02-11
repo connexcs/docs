@@ -18,7 +18,7 @@ Manage **Contracts** using ConnexCS to increase integration and compliance. You 
 
 ## Assign Contract to a customer
 
-1. Go to **Management :material-menu-right: Customer :material-menu-right: [Your Customer] :material-menu-right: Contracts** then click the **`+`** 
+1. Go to **Management :material-menu-right: Customer :material-menu-right: [Your Customer] :material-menu-right: Contracts** then click the **`+`**.
 2. Select the **Contract** (the most recent revision will be chosen automatically).
 3. (Optional) If both the **Grace Date** and **Required** are selected, the customer's account will remain active until the date set. At that point, the contract must be signed or the account will be suspended.
 
