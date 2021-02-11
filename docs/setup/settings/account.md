@@ -26,9 +26,10 @@ To add or edit SMTP information, click the blue pencil icon to Edit:
 + **Server** is your server domain.
 + **SMS From** is the mobile number that SMS messages will be sent from.
 + Click **`Save`**.
-+ The **`Test Email`** or **`Test SMS`** buttons send test messages via each method. The buttons are found to the far right of the SMTP details window.
 
-    ![alt text][smtp]
+**`Test Email`** or **`Test SMS`** buttons send test messages via each method. The buttons are found to the far right of the SMTP details window.
+
+&emsp;![alt text][smtp]
 
 !!! tip "TLS SMTP"
     To use TLS SMTP, set the Server format as "mail.yourdomain.com:465". If not specified, the system will use the default SMTP port 25. 
