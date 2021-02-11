@@ -1,29 +1,28 @@
 # Conference Calls
 **Class 5 :material-menu-right: Conference**
 
-Use this feature when you want to allow multiple callers to communicate with each other over a voice call. The Callers join the call and are presided over by a Moderator.
+Use this feature when you want to allow multiple callers to communicate with each other over a voice call. Once create, callers join the call and are presided over by a Moderator.
 
 For individual customers, navigate to **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Class5 :material-menu-right: Conference**
 
 ## Create Conference Call
-To create a conference call:
+To create a Conference room, click the **`+`** icon.
 
-1. Click the **`+`** icon.
-2. Enter the following parameters
+*Field details:*
 
-    * Enter a **Name** for the conference call.
-    * Select the **Customer** from the drop-down list. By default, the Conference is only available to users in this customer, however routing can be setup to allow other customers to access it.
-    * Enter the **Extension** for the callers to call (essentially, the dial-in number)
-    * Configure the **PIN** and **Moderator PIN** for additional security 
-    * **Quality** sets the amount of bandwidth available per caller
-        * `Narrow Band` = 8 KHz (G711)
-        * `Wide Band1` = 16 KHZ
-        * `Ultra Wide Band` = 32 KHz
-    * **Max Members** limits the number of concurrent callers this conference must allow. Note: the preset of '0' Max Members allows an unlimited number of callers can join the conference. 
+* Enter a **Name** for the conference call.
+* Select the **Customer** from the drop-down list. By default, the Conference is only available to users in this customer, however routing can be setup to allow other customers to access it.
+* Enter the **Extension** for the callers to call (essentially, the dial-in number)
+* Configure the **PIN** and **Moderator PIN** for additional security 
+* **Quality** sets the amount of bandwidth available per caller
+    * `Narrow Band` = 8 KHz (G711)
+    * `Wide Band1` = 16 KHZ
+    * `Ultra Wide Band` = 32 KHz
+* **Max Members** limits the number of concurrent callers this conference must allow. Note: the preset of '0' Max Members allows an unlimited number of callers can join the conference. 
 
     ![alt text][conference]
 
-3. Click **`Save`**. 
+Click **`Save`** and the new conference room is available for use. 
 
 !!! tip "Conference calls for external callers"
     The standard Conference configuration above can only be used by customers internal to ConnexCS. To allow external numbers to dial into the conference, setup a [**Customer DID**](https://docs.connexcs.com/customer/did/#configure-did) and set the Destination to Internal, then select the available pre-configured conference. 
@@ -33,7 +32,7 @@ Callers may use the keypad to control the audio on the conference call.
 
 |Key|Result|Description|
 |-------|------|------|
-|0|Mute|mute your microphone. The other callers cannot hear you.|
+|0|Mute|Mute your microphone. The other callers cannot hear you.|
 |1|Vol talk -|Decrease the volume (sensitivity) of your microphone, by 1 unit.|
 |2|Vol talk reset|Reset the volume (sensitivity) of your microphone to the default value.|
 |3|Vol talk +|Increase the volume (sensitivity) of your microphone by 1 unit. The other callers hear you louder.|
@@ -46,6 +45,5 @@ Callers may use the keypad to control the audio on the conference call.
 |\*|Deaf/mute|Mute your speakers and the microphone in one action.|
 |#|Hang up|Disconnect the call and drop out of the conference.|
  
-    
-
+   
 [conference]: /class5/img/conference.png "Add Conference"
