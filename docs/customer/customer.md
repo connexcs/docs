@@ -58,8 +58,8 @@ From the **Customers** page, you can perform several management operations.
 
     * **Name:** A name or unique identifier for each customer.
     * **Channels:** Set the maximum number of channels (essentially a channel is a live call). 
-    * **Flow Speed:** Set the CPS (Calls Per Second) for the customer
-    * **Status:** The customer's status, i.e.:
+    * **Flow Speed:** Set the CPS (Calls Per Second) for the customer.
+    * **Status:** The customer's status:
         * `Active`: The customer is active and allowed to pass calls. 
         * `Inactive`: The account is disabled, no calls will complete 
         * `Pending Approval`: New signups are listed as Pending Approval. The customer cannot pass calls or become active until this phase is completed. 
