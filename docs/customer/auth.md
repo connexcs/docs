@@ -22,7 +22,7 @@ To enable, click the **`+`** next to IP Authentication:
 === "Basic"
 
     + **IP**: Enter the IP(s) of the customer switch. (FQDN may be also be used for Ingress only switches.)
-    + **Switch Direction**: The `Ingress` and `Egress` selections are from the perspective of the customer switch (PBX, dialer, etc), and describe how that switch interacts with the ConnexCS switch. For switches that send and receive calls from ConnexCS, there will need to be separate entries for each direction. 
+    + **Switch Direction**: The available options are from the perspective of the customer switch (PBX, dialer, etc), and describe how that switch interacts with the ConnexCS switch. For switches that send and receive calls from ConnexCS, there will need to be separate entries for each direction. 
         * `Ingress`: This switch *receives* calls from ConnexCS. (Note: when selected, this gives the option of using the FQDN rather than the switch IP.)
         * `Egress`: This switch *sends* calls to ConnexCS
     + **Channels**: Set the maximum number of concurrent calls for this switch. 
