@@ -4,10 +4,9 @@
 A **Package** represents a product or service offered to customers, often as a recurring charge based on goods delivered at a required interval. ConnexCS **Packages** are global entities which are allocated to each customer as required. Each package may include incentives for MRC like DIDs, phone system rentals, or other hardware. 
 
 ## Add Package
+Click the **`+`** button.
 
-1. Click the **`+`** button.
-
-    ![alt text][addpackage]
+&emsp;![alt text][addpackage]
 
 + **Name**: The name of the package.
 + **Cost**: The recurring price which you (the provider) pay for this package (based on Frequency set below).
@@ -18,6 +17,8 @@ A **Package** represents a product or service offered to customers, often as a r
 + **Description**: Describe the product provided in this package.
 + **ConnexCS Package**: If there is a service that you have from ConnexCS which you then re-brand and sell to your customer, you must select it here to enable that feature on the customer account.
 + **Minimum Spend**: This calculates the customer spend for the billing period. If spend is below the Retail amount configured above, the spend is subtracted from Retail, and that charge is added to their account. (Ex: Retail is set to 50, but customer only spends 25, an additional 25 will be charged for that billing cycle.)
+
+Click **`Save`** to make the Package available to assign to customer accounts. 
 
 ## Assign Package
 Once created, packages are assigned either to the [**Customer**](https://docs.connexcs.com/customer/package/) or directly to a [**DID**](https://docs.connexcs.com/customer/did/#billing).  
