@@ -33,11 +33,11 @@ Click **`Save`**, and a new alert will be created.
 
 **ASR Penalty** Similarly, you could set the ASR Threshold to 15, and enable a penalty of 1 hour. This would disable the customer for 30 minutes whenever their completed calls dropped below 15% of total calls. 
 
-&emsp;!![alt text][alerts-sample2]
+&emsp;![alt text][alerts-sample2]
 
 **Daily Balance** For customers who run close to their balance on a regular basis. 
 
-&emsp;!![alt text][alerts-sample3]
+&emsp;![alt text][alerts-sample3]
 
 **Script Forge**  When the Area is set to "Script Forge", it will bypass all the other Alerts fields and allow you to select an existing Script Forge script. For example, a script could check CLIs to see if they have been blocked by a carrier, and then send a regular report with that information. 
 
