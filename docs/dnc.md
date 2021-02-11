@@ -7,7 +7,7 @@ In today's society, all modern call carriers should recognise and honor **Do Not
 **Step 1: Setup the Database**
 
 1. Navigate to **Developer :material-menu-right: Database**
-2. Click **`+`**.
+2. Click **:material-plus:**.
 3. Enter the **Name**.
 3. Select the **Customer**. 
 4. Select **Dataset Type**.
