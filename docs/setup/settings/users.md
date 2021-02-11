@@ -8,23 +8,24 @@ Create and assign **Users** and **Groups** based on various levels of permission
 Having individual User accounts for each person 
 To add a new ConnexCS **User**:
 
-1. Click the **`+`** button in the **Users** section on the left.
-2. Complete the User details:
+Click the **`+`** button in the **Users** section on the left.
 
-    * **Name** - The user's name.
-    * **Groups** (optional) - Select one or more Group(s) to be assigned to the new user. This will define their permission levels. It is additive, meaning that if a User is in a Read-Only Group as well as a Group that has Edit permissions for a specific area, they will be able to make edits in that area. While it is possible for a user to belong to multiple-groups, it is easier to manage a user with only 1 group. (See details below on creating Groups.)
-    * **Reseller Account** (optional) - Used to restrict Resellers with multiple logins to an account. (See below for details on creating Default Resellers.)
-    * **Password** - Enter the password they will use to access the Control Panel. We recommend agents set a default password then advise the user to reset the password immediately after logging in for the first time. This best practice increases user account security by ensuring only the user knows the password.
-    * **Role** - Select "User" or "Administrator". This is mostly just for informational purposes, as permissions and access will still be handled based on the assigned Group. If no role is assigned, the ConnexCS assigns the role of Administrator. 
-    * **Email** - The user's email address. It is recommended this is an email address that is used often. Note: As a security measured, if the email address is changed the original password will not be saved.
-    * **Time Zone** - Select the User's time zone. 
-    * **IP Whitelist** - Specify the IP or range of IPs this user can use to connect to the ConnexCS Control Panel. They will not be able to login from any other IP, so be careful with this setup. Specify IPs as follows:
-        * Single IP address - Ex: 1.1.1.1
-        * Wildcard for IP addresses - Ex: 1.1.1.
-        * Range of IP address in CIDR (Classless Inter-Domain Routing) format - Ex: 1.1.1.0/31
-    * **Shared Ticket** - If enabled, all Users in the account can view tickets created by this user, based on the email address of this User. 
+*Field descrptions*
+
++ **Name** - The user's name.
++ **Groups** (optional) - Select one or more Group(s) to be assigned to the new user. This will define their permission levels. It is additive, meaning that if a User is in a Read-Only Group as well as a Group that has Edit permissions for a specific area, they will be able to make edits in that area. While it is possible for a user to belong to multiple-groups, it is easier to manage a user with only 1 group. (See details below on creating Groups.)
++ **Reseller Account** (optional) - Used to restrict Resellers with multiple logins to an account. (See below for details on creating Default Resellers.)
++ **Password** - Enter the password they will use to access the Control Panel. We recommend agents set a default password then advise the user to reset the password immediately after logging in for the first time. This best practice increases user account security by ensuring only the user knows the password.
++ **Role** - Select "User" or "Administrator". This is mostly just for informational purposes, as permissions and access will still be handled based on the assigned Group. If no role is assigned, the ConnexCS assigns the role of Administrator. 
++ **Email** - The user's email address. It is recommended this is an email address that is used often. Note: As a security measured, if the email address is changed the original password will not be saved.
++ **Time Zone** - Select the User's time zone. 
++ **IP Whitelist** - Specify the IP or range of IPs this user can use to connect to the ConnexCS Control Panel. They will not be able to login from any other IP, so be careful with this setup. Specify IPs as follows:
+    + Single IP address - Ex: 1.1.1.1
+    + Wildcard for IP addresses - Ex: 1.1.1.
+    + Range of IP address in CIDR (Classless Inter-Domain Routing) format - Ex: 1.1.1.0/31
++ **Shared Ticket** - If enabled, all Users in the account can view tickets created by this user, based on the email address of this User. 
 	
-3. Once the details are entered, click the **`Save`** button.
+Once the details are entered, click the **`Save`** button.
 
 !!! question "Why should you specify an email address that you use often?" 
     
