@@ -18,7 +18,7 @@ Click the blue **`+`** to add a new Template.
  
  Select **`Save`** to complete the configuration. 
 
-!!! tip "Rendering Variables:
+!!! tip "Rendering Variables"
     The templating system will replace placeholders with the variable when it is rendered.
 
 ## Stock Templates
