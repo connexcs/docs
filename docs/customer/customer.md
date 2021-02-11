@@ -60,9 +60,9 @@ From the **Customers** page, you can perform several management operations.
     * **Channels:** Set the maximum number of channels (essentially a channel is a live call). 
     * **Flow Speed:** Set the CPS (Calls Per Second) for the customer
     * **Status:** The customer's status, i.e.:
-        * Active: The customer is active and allowed to pass calls. 
-        * Inactive: The account is disabled, no calls will complete 
-        * Pending Approval: New signups are listed as Pending Approval. The customer cannot pass calls or become active until this phase is completed. 
+        * `Active`: The customer is active and allowed to pass calls. 
+        * `Inactive`: The account is disabled, no calls will complete 
+        * `Pending Approval`: New signups are listed as Pending Approval. The customer cannot pass calls or become active until this phase is completed. 
     * **Debit Limit:** How much the account can do into the negative (typically only relevant for post-pay customers).
     * **Minimum Payment:** Set the minimum payment a customer can add to recharge the account. 
     * **Tax:** Tax is added as a percentage that is charged on top of costs. (UK = VAT; US = Sales Tax)
