@@ -45,9 +45,13 @@ From the **Carriers** page, you can perform several management operations.
     * **Channels:** Add the number of channels (ports) in numeric digits. Set this to ZERO for unlimited channels.
     * **CPS:** Enter the carrier's max allotted calls-per-second.
     * **Status:** The carrier's status.  A drop-menu contains the following options:
-        *  **Active** - carrier available to process calls.
-        *  **Inactive** - carrier will not process any calls.
-        *  **Pending Approval** - carrier is undergoing a verification process, but their credentials are in the system.  
+        
+        :material-menu-right: `Active`- carrier available to process calls.
+        
+        :material-menu-right: `Inactive`- carrier will not process any calls.
+        
+        :material-menu-right: `Pending Approval`- carrier is undergoing a verification process, but their credentials are in the system.  
+    
     * **Currency:** Choose the relevant currency for each carrier's country.
 
 === "Portal"
@@ -68,10 +72,15 @@ From the **Carriers** page, you can perform several management operations.
     * **PayPal Email:** Enter the PayPal e-mail associated with the carrier's account.
     * **Website:** Add the carrier's official website.
     * **P-Asserted-ID:** Considered a network level identifier, you can select how calls to the provider will be handled based on the PA-ID:
-        + Default- call passed to the provider (no manipulation)
-        + Remove- strips PA-ID before passing the call to the provider
-        + If Available- will add PA-ID if one has been provided, otherwise the call will still be allowed
-        + Required- call will not be delivered to the provider without the PA-ID
+    
+        :material-menu-right: `Default`- call passed to the provider (no manipulation)
+        
+        :material-menu-right: `Remove`- strips PA-ID before passing the call to the provider
+        
+        :material-menu-right: `If Available`- will add PA-ID if one has been provided, otherwise the call will still be allowed
+        
+        :material-menu-right: `Required`- call will not be delivered to the provider without the PA-ID
+    
     * **Consec Fail Backoff:** When Enabled, if a carrier goes down, only a fraction of calls will be sent to the carrier until the start to complete again (calls are not completely disabled otherwise there is no way to know when the carrier is back up again). the First Reply Timeout is skipped.  
     * **Tags** and **TOML**: not applicable to carriers
 
