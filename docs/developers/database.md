@@ -20,7 +20,7 @@ It is possible to bulk upload data and bulk delete data from the datastore. Both
 
 ## Create Database
 
-1. Click the **`+`** button.
+1. Click the :material-plus: button.
 2. Select the `Customer` and `Dataset Type` (see Types above).
 3. Click the **`Save`** button. 
 
