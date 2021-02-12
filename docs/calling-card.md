@@ -37,26 +37,26 @@ async function main(data){
 
 **Step 2: Create a Class 5 App**
 
-1. Navigate to Class 5 > Apps and click the **`+`** button
+1. Navigate to **Class 5 :material-menu-right: Apps** and click the :material-plus: button.
 2. Name the App then set **Destination** as `calling_card`.
-3. Drag IVR to the top slot on the right, then edit by clicking the small grey arrow on the far right (see image below)
+3. Drag IVR to the top slot on the right, then edit by clicking the small grey arrow on the far right (see image below).
 
     ![alt text][pinless]
     
 3. Set the File to "IVR > ivr-please".
-3. Enter the phone number Min (11) and Max (14)
-3. Result Variable: `ivr_destination`
+3. Enter the phone number Min (11) and Max (14).
+3. Result Variable: `ivr_destination`.
 3. Click **`Save`**.
-4. Drag Destination to the second slot on the right, then edit
-4. Select External and enter: `${ivr_destination}`
-4. **`Save`** the Destination
-4. **`Save`** the App
+4. Drag Destination to the second slot on the right, then edit.
+4. Select External and enter: `${ivr_destination}`.
+4. **`Save`** the Destination.
+4. **`Save`** the App.
 
 **Step 3: Setup a DID in the system**
 
-1. [**Create a new DID**](https://docs.connexcs.com/did/#add-a-did)
-1. Set the new ScriptForge to the new App 
-2. Set the destination to `calling_card`
+1. [**Create a new DID**](https://docs.connexcs.com/did/#add-a-did).
+1. Set the new ScriptForge to the new App .
+2. Set the destination to `calling_card`.
 3. Verify the origination CLI is whitelisted in the customer account.
 
 Your customer should now be able to dial in, enter their number, and the call will be sent out.
