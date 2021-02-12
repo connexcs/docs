@@ -182,7 +182,7 @@ The **CDR** tab displays call drop rates. Use **`Recalc CDR`** when CDR records 
     If you select either Rerate" option when recalculating CDRs, please be aware this will change your CDRs and is not reversible. Original call durations will be modified according to the criteria selected.
 
 ## Special Considerations
-[**Bandwidth.com**] has diverged from the SIP spec and exposed an internal IP address required for sequential requests. To ensure compatibility, set the switch manufacturer to `bandwidth.com`.
+[**Bandwidth.com**](https://www.bandwidth.com/) has diverged from the SIP spec and exposed an internal IP address required for sequential requests. To ensure compatibility, set the switch manufacturer to `bandwidth.com`.
 
 [carriers-main]: /carrier/img/carriers-main.png "Carriers"
 [carrier]: /carrier/img/carrier.png "Carrier Main"
