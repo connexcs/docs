@@ -67,40 +67,18 @@ Take the following cards, each with a different Rate Compact.
 | 442 |  UK Landline |    0.02 |
 
 
-After merging, we would have the following 3 cards output:
-
-**Minimum**
+After merging the 3 providers, we would have the following 3 cards output:
 
 | Prefix  |     Destination     |  Cost |
 |----------|:-------------:|------:|
+| **Minimum Merge**|   |  |
 | 441 |    UK Landline |  0.0075 |
 | 442 | UK Landline |   0.0075 |
-
-**Maximum**
-
 | Prefix  |     Destination     |  Cost |
-|----------|:-------------:|------:|
+| **Maximum Merge**|   |  |
 | 441 |    UK Landline |  0.02 |
 | 442 | UK Landline |   0.02 |
-
-**Average**
-
 | Prefix  |     Destination     |  Cost |
-|----------|:-------------:|------:|
-| 441 |    UK Landline |  0.0125 |
-| 442 | UK Landline |   0.0125 |
-
-
-
-| Minimum Merge |
-|----------|:-------------:|------:|
-| 441 |    UK Landline |  0.0075 |
-| 442 | UK Landline |   0.0075 |
-| Maximum Merge |
-|----------|:-------------:|------:|
-| 441 |    UK Landline |  0.02 |
-| 442 | UK Landline |   0.02 |
-| Avergage Merge |
-|----------|:-------------:|------:|
+| **Avergage Merge**|   |  |
 | 441 |    UK Landline |  0.0125 |
 | 442 | UK Landline |   0.0125 |
