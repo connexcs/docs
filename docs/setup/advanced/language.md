@@ -13,7 +13,7 @@ To add non-English equivalents for your preferred language:
 
 3. In the `Language` sub-menu on the left, select the language you are using.
 4. (Optional) Search for the specific word before adding.
-5. Click the **`+`** to create a new entry. 
+5. Click the :material-plus: to create a new entry. 
     * **Key** - English word in the system
     * **Translation** - non-English equivalent
 8. Click `Save`.
