@@ -23,13 +23,13 @@ Once a new **Routing Strategy** is created it must be assigned to a customer acc
 **Step 1: Add Routing Strategy**
 To add a new routing strategy:
 
-1. Click the **`+`** button in the **Routing Strategy** screen.
+1. Click the :material-plus: button in the **Routing Strategy** screen.
 2. Name the strategy.
 3. Select the Strategy type (defined above). 
 
     ![alt text][routing-strategy2]   
 
-4. Click the **`+`** to add one or more row(s).
+4. Click the :material-plus: to add one or more row(s).
 5. Select a card from the drop-down list.
 6. Click the **`Save`** button.
 
@@ -41,7 +41,7 @@ To set up a routing strategy in a customer's account:
 1. Navigate to **Management :material-menu-right: Customer**.
 2. Select the customer account.
 3. Select **Routing** and then click on the desired Rate Card. The **Edit Ingress Routing** screen opens.
-5. Click **Strategy**, and then the blue **`+`** in the window that follows.
+5. Click **Strategy**, and then the blue :material-plus: in the window that follows.
 6. Select a strategy from the drop-down list.  Note that you can also add a prefix in this screen.
 
 !!! info "Advanced Customer Routing"
