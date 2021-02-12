@@ -8,7 +8,7 @@ The **Carrier** section in **ConnexCS** allows for simplified Carrier management
 ## Carrier Functions
 From the **Carriers** page, you can perform several management operations. 
 
-**+**:Add new Carriers (see [**Create Carrier**](https://docs.connexcs.com/carrier/#create-carrier) below for details.)
+:material-plus::Add new Carriers (see [**Create Carrier**](https://docs.connexcs.com/carrier/#create-carrier) below for details.)
 
 **Refresh** Refresh the page, helpful when making edits or looking at real-time changes. This page is built as a web app so some information will update automatically.
 
@@ -33,7 +33,7 @@ From the **Carriers** page, you can perform several management operations.
 
 ## Create Carrier
 
-2. Click the **`+`** button.
+2. Click the :material-plus: button.
 3. Enter relevant carrier details.
 4. Click **`Save`**.
 
@@ -132,7 +132,7 @@ To edit Reply Codes:
 
 ### Auth
 
-1. Carrier **IP Authentication**: This uses IP addresses to allow or disallow attempts to access service. To add authorized IP address(es), click the **`+`** button on the right. These fields are the same as in [**Customer Auth**](https://docs.connexcs.com/customer/auth/) except that they pertain to Carriers. The only exceptions are:
+1. Carrier **IP Authentication**: This uses IP addresses to allow or disallow attempts to access service. To add authorized IP address(es), click the :material-plus: button on the right. These fields are the same as in [**Customer Auth**](https://docs.connexcs.com/customer/auth/) except that they pertain to Carriers. The only exceptions are:
     
     + **User name and Password**: These are for the call to connect out to the carrier, if server is acting as a UAC
     + **Outbound Proxy** (for Ingress only switches): Enter an IP of a Proxy server for calls to route to, before being sent to the carrier. This rewrites the UAC IP in the VIA field of the SIP header. This reduces management overhead as a customer only needs to authorize the single IP. Additionally, multiple addresses can be load balanced using the AnyEdge system. 
@@ -164,7 +164,7 @@ To simulate a call:
 
 
 ### Payment
-The **Payment** tab shows payments made to the carrier. Add a new payment by clicking **`+`**, fill in the payment information, and the click **`Save`**.
+The **Payment** tab shows payments made to the carrier. Add a new payment by clicking :material-plus:, fill in the payment information, and the click **`Save`**.
 
 ### Stats
 View carrier-related statistics by clicking **Stats** tab. Descriptions for each of these graphs can be found under [**Customer Stats**](https://docs.connexcs.com/customer/stats/).
@@ -173,7 +173,7 @@ View carrier-related statistics by clicking **Stats** tab. Descriptions for each
 Use Carrier **Alerts** to contact a selected email address when `Consecutive Failovers` reaches a predetermined limit. See [**Customer Alerts**](https://docs.connexcs.com/customer/alerts/) for configuration details. 
 
 ### DID
-The **DID** tab displays a list of DIDs that belong to that carrier.  New entries are added with the **`+`** on the left. See [**Customer DID**](https://docs.connexcs.com/customer/did/) for configuration details. 
+The **DID** tab displays a list of DIDs that belong to that carrier.  New entries are added with the :material-plus: on the left. See [**Customer DID**](https://docs.connexcs.com/customer/did/) for configuration details. 
 
 ### CDR
 The **CDR** tab displays call drop rates. Use **`Recalc CDR`** when CDR records are not accurate. See [**Customer CDR**](https://docs.connexcs.com/customer/cdr/#recalculate-cdr) for details. 
