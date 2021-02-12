@@ -89,3 +89,18 @@ After merging, we would have the following 3 cards output:
 |----------|:-------------:|------:|
 | 441 |    UK Landline |  0.0125 |
 | 442 | UK Landline |   0.0125 |
+
+
+
+| Minimum Merge |
+|----------|:-------------:|------:|
+| 441 |    UK Landline |  0.0075 |
+| 442 | UK Landline |   0.0075 |
+| Maximum Merge |
+|----------|:-------------:|------:|
+| 441 |    UK Landline |  0.02 |
+| 442 | UK Landline |   0.02 |
+| Avergage Merge |
+|----------|:-------------:|------:|
+| 441 |    UK Landline |  0.0125 |
+| 442 | UK Landline |   0.0125 |
