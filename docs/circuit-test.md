@@ -25,7 +25,7 @@ To create a *one-time Circuit Test*, go to **Management :material-menu-right: Ci
 3. **Destination Number** is a DID in ConnexCS. Toggle the button on the right to select from a list of DID currently configured in the account. (See [**Customer DID**](https://docs.connexcs.com/customer/did/) for configuration.)
 
 ## Schedule
-To schedule *recurring Circuit Test*, go to **Management :material-menu-right: Circuit Test :material-menu-right: Schedule**, Click the **`+`** button.
+To schedule *recurring Circuit Test*, go to **Management :material-menu-right: Circuit Test :material-menu-right: Schedule**, Click the :material-plus: button.
 
 *click each tab to view configuration details*:
 
