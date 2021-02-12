@@ -7,7 +7,7 @@
     Create the ability to select 1 or more customers/DIDs, supplement with additional information gathered from a form, then run Script Forge to either send that data outside the system or perform bulk operations which may need to be repeated.
 
 ## Create new Button
-Click the **`+`** and complete the following fields:
+Click the :material-plus: and complete the following fields:
 
 + **Label** - Enter the button label (what it will say).
 + **Icon** - Select an icon to display.
