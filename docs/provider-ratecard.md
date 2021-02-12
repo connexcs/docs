@@ -27,7 +27,7 @@
 ## Create Provider Rate Cards
 Once created, new **Provider Rate Cards** are completed by either adding rows manually or uploading an existing file. 
 
-1. Click the **`+`** button.
+1. Click the :material-plus: button.
 3. Complete desired fields. (For details, see [**Configure Provider Rate Card**](https://docs.connexcs.com/provider-ratecard/#configure-provider-rate-card) below.)
 4. Click **`Save`**.
 9. From here, you may add the Provider Rate Card manually or perform a Bulk Upload. 
