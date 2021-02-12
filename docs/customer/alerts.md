@@ -7,7 +7,7 @@ Create **Alerts** to contact Customers when certain events are triggered. **Aler
     Alerts may also be configured for specific Customers or Carriers under **Global :material-menu-right: Alerts**, which displays all configured Alerts.
 
 ## Create an Alert
-To add a customized alert, click the **`+`** sign. 
+To add a customized alert, click the :material-plus: sign. 
 
 Field details:
 
