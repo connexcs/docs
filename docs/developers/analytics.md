@@ -12,7 +12,7 @@ You can create custom reports to help identify your own key metrics. Here are so
 * **ISO Code Stats** - Display stats ISO Country.
 
 ## Create new Analytics
-Click the **`+`** to configure the following fields:
+Click the :material-plus: to configure the following fields:
 
 + **Path**: Select where the data will be displayed.
     + `Customer`- Management :material-menu-right: Customer :material-menu-right: Stats
