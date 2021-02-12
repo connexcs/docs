@@ -7,7 +7,7 @@ Create your own **Templates** to customise the content displayed on outbound ema
     It is important to follow the template syntax, fields such as `{email}` or `{account_name}` need to be entered exactly otherwise they won't be replaced correctly when the template is rendered. 
 
 ## Add Template
-Click the blue **`+`** to add a new Template. 
+Click the blue :material-plus: to add a new Template. 
 
 + **Name** the template.
 + **Subject** for the communication (supports variables).
