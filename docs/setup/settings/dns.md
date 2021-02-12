@@ -9,7 +9,7 @@ ConnexCS provides a managed **DNS (Domain Name System)** platform geared towards
 ## DNS Setup
 Setting up **DNS** allows you to load balance multiple SIP servers without a load-balancer.
 
-1. Click **`+`** button.
+1. Click :material-plus: button.
 
     ![alt text][dns]
 
