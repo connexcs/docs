@@ -8,7 +8,7 @@ Follow these steps to configure outage reporting on Customer Portals:
 
 **Step 1: Define Status Component**
 
-1. Click the **`+`** button under **Status Component**.
+1. Click the :material-plus: button under **Status Component**.
 2. Enter a **Title** and optional **Description**. 
 
     ![alt text][system-status-2]
@@ -18,7 +18,7 @@ Follow these steps to configure outage reporting on Customer Portals:
 
 **Step 2: Setup Report History**
 
-1. Click the **`+`** button under **Report History**.
+1. Click the :material-plus: button under **Report History**.
 
     ![alt text][system-status-3]
 
