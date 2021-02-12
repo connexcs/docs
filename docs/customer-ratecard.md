@@ -95,7 +95,7 @@ The final method for configuring a Customer Rate Card is to import/upload it:
 === "Basic"
     
     * **Match**: Enter the prefix to match, either as a Regular Expression or a standard prefix (numeric only, typically an international country code, not a provider or customer tech prefix). Adding an up arrow `^` on the prefix draws all associated prefixes from the provider card. For example, if you enter '49, it will include '491', '492', '4912345', and so on.
-    * **Profit Type**: Select how to add profit:
+    + **Profit Type**: Select how to add profit:
         
         :material-menu-right: `Absolute`- actual value charged
         
@@ -103,16 +103,16 @@ The final method for configuring a Customer Rate Card is to import/upload it:
         
         :material-menu-right: `Percent`- cost from the carrier multiplied by this percent
         
-    + **Apply To** - Setup rules to govern how Profit is applied to different types of calls
-    * **Status** - Use Blocked, here or after importing a Carrier Rate Card, to disable specific prefixes. 
+    + **Apply To**: Setup rules to govern how Profit is applied to different types of calls
+    + **Status**: Use Blocked, here or after importing a Carrier Rate Card, to disable specific prefixes. 
 
 
 === "Config"
 
     + **Prefix Set**: Select Prefix Sets (check [**here**](https://docs.connexcs.com/setup/advanced/prefix-set/) to simplify the Profit configuration). 
-    * When **MCD (Minimum Call Duration)**, **Pulse**, or **Rounding** are disabled, that setting will select the worst case scenario as defined by the carrier. 
-    * **Name**: You may choose to add a name to identify the Profit rule 
-    * **Connect Cost**: one-time fee for connecting the call. 
+    + When **MCD (Minimum Call Duration)**, **Pulse**, or **Rounding** are disabled, that setting will select the worst case scenario as defined by the carrier. 
+    + **Name**: You may choose to add a name to identify the Profit rule 
+    + **Connect Cost**: one-time fee for connecting the call. 
 
 !!! note "Profit Type"
     Using Absolute and Relative can be useful, especially when dealing with large cards and your providers prices change; a single click is all that is needed to regenerate the customer rate cards.
