@@ -153,11 +153,11 @@ pages:
         - Specification: spec.md        
 
     - Topical Guides:
-        - ConnexCS Basics: doc-guide.md
-        - Billing: doc-guide.md
+        - ConnexCS Basics: basics-guide.md
+        - Billing: billing-guide.md
         - Customer Documents: doc-guide.md
         - Monitoring: monitoring.md
-        - Troubleshooting: doc-guide.md
+        - Troubleshooting: tshoot-guide.md
         
     - Miscellaneous:
         - Acronyms and Definitions: acronyms-and-definitions.md
