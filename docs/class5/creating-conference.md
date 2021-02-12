@@ -6,7 +6,7 @@ Use this feature when you want to allow multiple callers to communicate with eac
 For individual customers, navigate to **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Class5 :material-menu-right: Conference**
 
 ## Create Conference Call
-To create a Conference room, click the **`+`** icon.
+To create a Conference room, click the :material-plus: icon.
 
 *Field details:*
 
