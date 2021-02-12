@@ -39,10 +39,10 @@
 ## Create Customer Rate Card
 Once created, there are several options to complete the card. 
 
-1. Click the **`+`** button. 
+1. Click the :material-plus: button. 
 3. Complete desired fields. (For details, see [**Configure Customer Rate Card**](https://docs.connexcs.com/customer-ratecard/#configure-customer-rate-card) below.)
 4. Click **`Save`**.
-5. In the new card, select **Profits** then click the **`+`** button. (For details, see [**Profits**](https://docs.connexcs.com/customer-ratecard/#functions) under Functions below).
+5. In the new card, select **Profits** then click the :material-plus: button. (For details, see [**Profits**](https://docs.connexcs.com/customer-ratecard/#functions) under Functions below).
 
 **Option 1: Build from Provider Card**
 This is the preferred method and requires that a Provider Rate Card was selected in Properties > Basic. Click the **`Build`** button and confirm.  A notification will tell you if the build was successful. You may need to refresh the card to see the new settings. 
