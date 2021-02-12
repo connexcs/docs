@@ -15,6 +15,8 @@ Order of Sections:
 6. Configure Details
     + If tabbed at the top, use the tabbed function (ex: === "Basic"); each field is bullet and bold, then ":", description is plaintext (ex: **Field**: Description)
     + If tabbed on the left, use subheaders (for large sections, these may be separate docs, ex: Customers, Carriers), each field is bullet and bold, then ":", description is plaintext (ex: **Field**: Description)
+    + When Field options are listed (ex: Enabled, Disabled, Auto) the sub-bullet is 4 spaces, then material-menu-right and the option is in backticks, followed by a "-"/dash (ex:    :material-menu-right: `Zone`- Select any of the regional servers)
+    + When describing configuration steps, use :material-plus: to desctibe the "+" sign (aka add button)
 7. Related and relevant topics (ex:
 
 #### Left-Hand Navigation
