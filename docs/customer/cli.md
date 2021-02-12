@@ -15,7 +15,7 @@ In ConnexCS, **CLI Restrict** lets you present CLIs on customer accounts, so tha
 
 Configuring a number as a **CLI (Calling Line Identification)** in ConnexCS gives the customer the ability to control which numbers are allowed to initiate calls. Any number configured as a CLI is considered part of the Whitelist (unless additional configuration is applied to block it).
 
-Click on the **`+`** button under **CLI**.
+Click on the :material-plus: button under **CLI**.
 
 *Field details:*
 
