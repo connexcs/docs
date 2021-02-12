@@ -32,12 +32,11 @@ To create a new Group, click the **`+`** icon.
 + **Extension**: Callers will use this extension to connect to this group from the drop-down list.
 + **Group Type**: See **Group call routing strategies** above.
     
-    :material-menu-right: `Parallel` and `Sequential`- Select **`Save and Stay`** to configure the Group Members tab: 
+    :material-menu-right: `Parallel` or `Sequential`- Select **`Save and Stay`** to configure the Group Members tab: 
         
-     + Click the **`+`** to add a new member
-     + Click **`Edit`** to select the Destination (External = non-ConnexCS number, Internal = extension, group, DID, etc). 
-     + Set the `Ring Timeout`. This is especially helpful when calling mobile numbers as you can cancel the call before it hits the voicemail, allowing it to roll to the next Group Member.
-     + Click Edit to enter an External number of Internal User, Conference, or Group
+     + Click the **`+`** to add a new member.
+     + `Ring Timeout`- This is especially helpful when calling mobile numbers as you can cancel the call before it hits the voicemail, allowing it to roll to the next Group Member.
+     + Click **`Edit`** to set the `Destination` as either an External number or Internal (ConnexCS) extension, group, DID, etc. 
     
     :material-menu-right: `Queue`- strategy, you will have the following additional fields:
 
