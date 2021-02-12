@@ -2,7 +2,7 @@
 
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Auth**
 
-Under the **Auth** tab, configure IP or SIP (Username/Password) Authentication for users. To set either one, click the **`+`** button.
+Under the **Auth** tab, configure IP or SIP (Username/Password) Authentication for users. 
 
 !!! note "Global IP and SIP Authentication"
     Both IP and SIP Authentication may also be configured and managed for Customers and Carriers under **Global :material-menu-right: IP Authentication** or **SIP User Authentication**.
@@ -15,7 +15,7 @@ When you enable **IP Authentication**, you associate the IP of a customer switch
     This occurs because call requests were sent from the new IP before it is authorized. As a result, ConnexCS fraud detection blocked the unauthorized IP in the firewall. Attempted calls from this IP will not be completed. To resolve the blocked IP, go to **Setup :material-menu-right: Advanced :material-menu-right: Firewall**. Select the blocked IP, then delete it from the firewall. This unblocks the IP, but it will take up to 15 minutes for the change to become active in the switch. See [Threat Detection](https://docs.connexcs.com/setup/advanced/firewall/) for more details. 
 
 ### Enable IP Authentication 
-To enable, click the **`+`** next to IP Authentication:
+To enable, click the **:material-plus:** next to IP Authentication:
 
 *Click each tab to view configuration details*
 
@@ -82,7 +82,7 @@ Generic SIP Trace showing the Challenge Response:
 &emsp; ![alt text][407-trace]
 
 ### Enable SIP User Authentication 
-To enable, click the **`+`** next to SIP User Authentication:
+To enable, click the **:material-plus:** next to SIP User Authentication:
 
 *Click each tab to view configuration details*
 
