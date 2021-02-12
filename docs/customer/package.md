@@ -5,7 +5,7 @@ Use **Packages** to offer predefined products and services to each customer.
 
 ## Assign Packages
 
-1. Click the **`+`** button.
+1. Click the :material-plus: button.
 2. Select **Package** you want to assign to the customer (Package Details will display below). 
 2. Enter the required **Quantity** and **Start Date**.
 2. Select **End Date** if desired. 
