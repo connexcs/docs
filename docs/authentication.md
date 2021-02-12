@@ -8,7 +8,7 @@ User Access Control is found in the individual customer cards, in the **Authoriz
 ### Username and Password
 To allow username and password authentication on user accounts:
 
-1. In the right panel, select the blue `+` (plus icon) in **User/Password Authentication**.
+1. In the right panel, select the blue :material-plus: in **User/Password Authentication**.
 2. Fill out an original Username and Password in the designated boxes.
 3. Note that in this screen you can also manage:
     * Channel Limits
@@ -43,7 +43,7 @@ ConnexCS supports Username / Password Authentication against upstream providers.
 
 1. Click **carrier**, and select the carrier's name.
 2. Click the **Authentication** Tab.
-3. In the left panel, select the blue `+` (plus icon) for **IP Authentication**.
+3. In the left panel, select the blue :material-plus: for **IP Authentication**.
 4. Type an IP address into the box labeled as such.  Multiple IPs per line is acceptable.
 5. Click **Advanced** and complete the Username and Password Boxes
 
