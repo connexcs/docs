@@ -66,6 +66,7 @@ From the **Customers** page, you can perform several management operations.
         :material-menu-right: `Inactive`: The account is disabled, no calls will complete 
         
         :material-menu-right: `Pending Approval`: New signups are listed as Pending Approval. The customer cannot pass calls or become active until this phase is completed. 
+    
     * **Debit Limit:** How much the account can do into the negative (typically only relevant for post-pay customers).
     * **Minimum Payment:** Set the minimum payment a customer can add to recharge the account. 
     * **Tax:** Tax is added as a percentage that is charged on top of costs. (UK = VAT; US = Sales Tax)
