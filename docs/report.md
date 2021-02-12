@@ -28,7 +28,7 @@ Currently this provides the same functionality and options as the individual Bre
 This report displays metrics for a specific number. It is particularly useful if you get a complaint about people dialing a specific number. Select the number and define the time frame (max 6 months) to generate a list of all calls for that number, along with call details. Click **`Numbers`** to search for multiple numbers. 
 
 ## Schedule Report
-Set a Schedule to email the Breakout Report at designated intervals. To schedule a breakout report, click the **`+`** icon.
+Set a Schedule to email the Breakout Report at designated intervals. To schedule a breakout report, click the :material-plus: icon.
 
 &emsp;![alt text][schedulereport]
 
