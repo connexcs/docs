@@ -101,7 +101,7 @@ module.export = {
 ## Configuration
 
 ### Build Script
-1. Add a script by clicking **`+`**.
+1. Add a script by clicking :material-plus:.
 2. **Name** the script.
 3. Select the **Type**:
 
