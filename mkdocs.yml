@@ -150,6 +150,7 @@ pages:
         - Security: security.md
         - Media Handling: media-handling.md
         - Scaling and Load Balancing: scaling-load-balancing.md
+        - Specification: spec.md        
 
     - Miscellaneous:
         - Acronyms and Definitions: acronyms-and-definitions.md
@@ -163,7 +164,6 @@ pages:
         - Monitoring Guide: monitoring.md
         - Customer Documents Guide: doc-guide.md
         - Number Manipulation: number-manipulation.md
-        - Specification: spec.md
         - Changing Language: changing-language.md
         - Changing Password: changing-password.md
         - Logging Out: logging-out.md
