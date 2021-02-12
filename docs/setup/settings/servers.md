@@ -24,7 +24,7 @@ The **Servers** section provides an overview of deployed servers:
 + **Status**: Indicates if the server will be able to process calls. (Ex: if account has not been paid, the Status will list the server as "Expired")
 
 ## Clusters
-If you have multiple servers in a load-balance configuration, it is recommended they are put into a Cluster. To create a **Cluster**, click the **`Cluster`** button, then click **`+`** to enter the name. When a new server is deployed, there will be an option to select one of the configured Clusters. 
+If you have multiple servers in a load-balance configuration, it is recommended they are put into a Cluster. To create a **Cluster**, click the **`Cluster`** button, then click :material-plus: to enter the name. When a new server is deployed, there will be an option to select one of the configured Clusters. 
 
 !!! info "Benefits of clustering"
     1. Better control over CPS and Channel load-balancing: If you set CPS to 10, clustered servers will allow 10 CPS total, un-clustered servers will allow 10 CPS per server, potentially going over the allowed CPS with a particular carrier.
