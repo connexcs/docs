@@ -4,7 +4,7 @@
 **Form Builder** allows developers to create customized input forms on the ConnexCS control panels.
 
 ## Create Form
-Click the **`+`** and complete the following fields:
+Click :material-plus: and complete the following fields:
 
 + **Name**: Enter a name for the form (consider naming conventions for organizational purposes).
 + **Script Forge**: Select the desired script from the drop-down menu.
