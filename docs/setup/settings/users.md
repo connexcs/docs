@@ -4,7 +4,7 @@
 Create and assign **Users** and **Groups** based on various levels of permissions for more efficient management of access to the ConnexCS Control Panel. Permissions are managed by Groups, and at a Granular level for every endpoint in the system.
 
 ## Users
-To add a new ConnexCS **User**, click the **`+`** button in the **Users** section on the left.
+To add a new ConnexCS **User**, click the :material-plus: button in the **Users** section on the left.
 
 *Field descrptions*
 
@@ -60,14 +60,14 @@ Use a **Group** to assign a specific set of Control Panel access permissions to 
 
 **Step 1: Create Group**
 
-1. Click the **`+`** button in the **Groups** section.
+1. Click the :material-plus: button in the **Groups** section.
 2. Enter a Group **Name** (ex: Engineering, Sales, etc).
 3. Set **Default Permissions** for the group's global permissions: `Create`, `Update`, `Read`, and `Delete`. All 4 will be selected by default. Click the X to remove a permission. Click the down arrow on the right to add a permission. 
 4. Click **`Save`**. The new Group will be listed. 
 
 **Step 2: Specify Group Permissions**
 
-1. Click on the **Group** to view the "Add Group Permission" table. Click the **`+`** next to the table. 
+1. Click on the **Group** to view the "Add Group Permission" table. Click the :material-plus: next to the table. 
 2. **Area**: Select the functional area of the Control Panel for the specific permission (ex: Customer, Carrier, Logging, ScriptForge, etc). 
 3. **Access**: Define the granular permissions for this area. All 4 access options can be selected. If none are selected, then users in this Group will get "Access Denied" when they try to go to the area. 
 4. Set as many Area/Access permissions as needed. 
