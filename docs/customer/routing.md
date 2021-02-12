@@ -8,7 +8,7 @@
 
 
 ## Configure Routing
-View and configure existing routes on the Routing tab in the Customer card. Click the `+` under **Ingress Routing** to create a new route. 
+View and configure existing routes on the Routing tab in the Customer card. Click the :material-plus: under **Ingress Routing** to create a new route. 
 
    ![alt text][ingress-routing]
 
@@ -167,7 +167,7 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
     The feature will first need to be enabled on the account under **Setup > Settings > Account > [Packages](https://docs.connexcs.com/setup/settings/account/#packages)** before it can be enabled here for individual customers. 
 
 ### Strategy
-For advanced routing, click the **`+`** to select a [**Prefix Set**](https://docs.connexcs.com/setup/advanced/prefix-set/) and assign a [**Routing Strategy**](https://docs.connexcs.com/routing-strategy/). This gives you greater control over how routes are selected for a given customer. 
+For advanced routing, click the :material-plus: to select a [**Prefix Set**](https://docs.connexcs.com/setup/advanced/prefix-set/) and assign a [**Routing Strategy**](https://docs.connexcs.com/routing-strategy/). This gives you greater control over how routes are selected for a given customer. 
 
 ### Notes
 
