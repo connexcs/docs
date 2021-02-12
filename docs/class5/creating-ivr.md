@@ -21,6 +21,7 @@ Complete the following prior to configuring the IVR
 5. Select the **Audio File** from the drop-down list which plays the greeting and explains the keypad options. This could be the file created in first step above or one preloaded into [**Files**](https://docs.connexcs.com/files/).
 6. After the above fields are completed, **`Edit`** becomes available for each key- numbers 0 to 9, '\*' (asterisk) and '#' (hash) - to configure the Destination (what happens when the caller presses they key).
     
-    *   **External** - PSTN numbers that are outside your Class 5 network (ex: someone's mobile).
-    *   **Internal** - A number or resource on the ConnexCS platform (ex: extension numbers, IVRs, conference bridges, and groups).
+    :material-menu-right: `External`- PSTN numbers that are outside your Class 5 network (ex: someone's mobile).
+    
+    :material-menu-right: `Internal`- A number or resource on the ConnexCS platform (ex: extension numbers, IVRs, conference bridges, and groups).
    
