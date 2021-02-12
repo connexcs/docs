@@ -5,11 +5,24 @@ Connex Carrier Services User Documentation
 
 ### Visual Style/Layout
 
+Order of Sections:
+1. Control Panel Functions (ex: Checklist/Alerts, Personal Profile)- list as bolded term immediately followed by plaintext (ex: **Checklist** Used to respond to requirments.)
+3. Section (ex: Customers, Carriers) Functions (ex: Bulk Upload, Add, Delete, Search)- list as bolded term immediately followed by plaintext (ex: **Checklist** Used to respond to requirments.)
+4. Overview- this is the Table Columns and Functions
+2. View Modification if applicable (ex: Columns and Filters)- bullet list
+5. Sub-sections (ex: Provider Rate Cards, Customer Rate Cards, Routing, Global Search)
+7. Create New
+6. Configure Details
+    + If tabbed at the top, use the tabbed function (ex: === "Basic"); each field is bullet and bold, then ":", description is plaintext (ex: **Field**: Description)
+    + If tabbed on the left, use subheaders (for large sections, these may be separate docs, ex: Customers, Carriers), each field is bullet and bold, then ":", description is plaintext (ex: **Field**: Description)
+7. Related and relevant topics (ex:
+
 #### Left-Hand Navigation
-Matches navigation found in ConnexCS Control Panel
++ Section navigation matches the order found in ConnexCS Control Panel
 
 #### Right-Hand Navigation
-Sub-Topics match Control Panel Navigation when applicable, many items 
++ Sub-Sections match Control Panel Navigation when applicable
++ Related Topics
 
 #### Admonitions
 
@@ -23,7 +36,7 @@ Sub-Topics match Control Panel Navigation when applicable, many items
     
 + Most Images should be indented 4 spaces (some exceptions are when it begins a section, or a small image is inserted into text). This is accomplished in two ways:
     + If the image appears in or just after a list, enter 4 spaces prior to the "alt text" tag
-    + For images that are not in/after a list, add "&emsp" before the "alt text" tag
+    + For images that are not in/after a list, add "&emsp;" before the "alt text" tag
 + For images that appear too big, you can resize the file on your computer and then upload to replace the existing file (I use Paint for lack of something better, but it works!)
 + All images have a "connexblue" border, 5px in Paint (apply this after resizing for consistency, or it will resize the border as well, which makes the image look different from the others)
 
