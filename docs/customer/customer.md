@@ -13,7 +13,7 @@ ConnexCS **Customers** are organized through customer cards.
 ## Customer functions
 From the **Customers** page, you can perform several management operations. 
 
-**+** Add new Customers (see [**Create Customers**](https://docs.connexcs.com/customer/customer/#create-customers) below for details.)
+**:material-plus:** Add new Customers (see [**Create Customers**](https://docs.connexcs.com/customer/customer/#create-customers) below for details.)
 
 **Bulk Upload** Upload multiple Customers at the same time, by importing a spreadsheet file into ConnexCS. 
 
