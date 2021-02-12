@@ -14,7 +14,7 @@ Create and edit **DID (Direct Inward Dial)** parameters within the individual cu
 
 
 ## Configure DID
-Click the **`+`** to configure a new DID:
+Click the :material-plus: to configure a new DID:
 
 ### Basic
 + **Customer**: Assign the number to the customer.
