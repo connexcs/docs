@@ -5,7 +5,7 @@ An **Alias** allows you to partially or completely rewrite a number.
 
 ## Create Alias
 
-1. Click the **:material-plus:** or :material-plus:
+1. Click the **:material-plus:**.
     + **Current**: Current number or script (regex).
     + **New**: Set to another number or script (regex).
 2. Click **`Save`**.
