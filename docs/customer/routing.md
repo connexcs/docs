@@ -156,9 +156,9 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
     *While it's doubtful that any information will be logged in the customer/providers switch when the audio is engaged, it is possible for an engineer to learn this information from a SIP trace, PCAP, or by looking at transit locations. DTMF Detection ONLY works when RTP Proxy mode is enabled.*
 
 + **Call Recording**: This allows you to record and store calls, which are then found under **Setup > Information > [Browsing Record](https://docs.connexcs.com/setup/information/recording/)**. There is an additional charge of 0.003 on top of any existing fees or charges, so choose carefully how many calls to record:
-    + `Disabled`- no calls are recorded
-    + `Sampling`- Choose from 1%, 5%, 25 or 50% sample of your calls
-    + `Enabled (Always On)`- Record all calls
+    :material-menu-right: `Disabled`- no calls are recorded
+    :material-menu-right: `Sampling`- Choose from 1%, 5%, 25 or 50% sample of your calls
+    :material-menu-right: `Enabled (Always On)`- Record all calls
 
 !!! tip "The Call Recording setting is disabled"
     The feature will first need to be enabled on the account under **Setup > Settings > Account > [Packages](https://docs.connexcs.com/setup/settings/account/#packages)** before it can be enabled here for individual customers. 
@@ -175,9 +175,9 @@ For advanced routing, click the **`+`** to select a [**Prefix Set**](https://doc
 
 + **Fraud Profile**: Apply one of the Fraud Profiles configured under **Setup > Advanced > [Fraud Profile](https://docs.connexcs.com/setup/advanced/fraud/#setup-fraud-detection)**.
 + **Fraud Mode**: Specify how strictly the profile will be applied, this is dependent on the [**Fraud Mode Thresholds**](https://docs.connexcs.com/setup/advanced/fraud/#fraud-mode) configured in the Profile. 
-    + `Disabled`
-    + `Low - Alert or Block Calls`
-    + `High - Block Calls or Account`
+    :material-menu-right: `Disabled`
+    :material-menu-right: `Low - Alert or Block Calls`
+    :material-menu-right: `High - Block Calls or Account`
 
 ## Disabled Routes
 Routes highlighted in red on the customer Routing page are disabled. To enable them, open the route, click **Enabled**, then **`Save`**. 
