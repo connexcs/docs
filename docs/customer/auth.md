@@ -23,8 +23,8 @@ To enable, click the **`+`** next to IP Authentication:
 
     + **IP**: Enter the IP(s) of the customer switch. (FQDN may be also be used for Ingress only switches.)
     + **Switch Direction**: The available options are from the perspective of the customer switch (PBX, dialer, etc), and describe how that switch interacts with the ConnexCS switch. For switches that send and receive calls from ConnexCS, there will need to be separate entries for each direction. 
-        * `Ingress`: This switch *receives* calls from ConnexCS. (Note: when selected, this gives the option of using the FQDN rather than the switch IP.)
-        * `Egress`: This switch *sends* calls to ConnexCS
+        :material-menu-right: `Ingress`: This switch *receives* calls from ConnexCS. (Note: when selected, this gives the option of using the FQDN rather than the switch IP.)
+        :material-menu-right: `Egress`: This switch *sends* calls to ConnexCS
     + **Channels**: Set the maximum number of concurrent calls for this switch. 
     + **Flow Speed**: Set the Calls Per Second (CPS) (0 = unlimited calls).   
     
@@ -91,9 +91,9 @@ To enable, click the **`+`** next to SIP User Authentication:
     + **Protocol**: This sets the type of signalling protocol for call setup, maintenance, and tear down. ConnexCS uses SIP for signalling, but here you select the transport protocol. (Note: SMPP, for SMS, is not currently supported.)
     + **IP Whitelist**: Enter specific IPs, or use CIDR notation to specify an entire subnet. 
     + **NAT/SIP Ping**: Set behavior of pings sent from ConnexCS back to the customer through their firewall to their UAC. This helpful when there are remote agents connecting into the switch. 
-        + **`Disabled`**: No pings are sent
-        + **`Enabled`**: Send UDP ping every 60 seconds, helping to keep some longer calls (1800 or 3600 seconds) up. 
-        + **`Enabled (Timeout)`**: Send UDP ping every 60 seconds and disconnect if the pings aren't returned.
+        :material-menu-right: **`Disabled`**: No pings are sent
+        :material-menu-right: **`Enabled`**: Send UDP ping every 60 seconds, helping to keep some longer calls (1800 or 3600 seconds) up. 
+        :material-menu-right: **`Enabled (Timeout)`**: Send UDP ping every 60 seconds and disconnect if the pings aren't returned.
     + **Retain DID**: When Enabled, this retains the desination number (DID) the call is sent to in the system, rather than the SIP Username. 
     + **Smart Extension**: Calls are sent to the Class5, not Class4 infrastructure. This feature is currently in Alpha and is not recommended. 
 
