@@ -9,7 +9,7 @@ View a list of all the **Payments** that have been made so far.
 ## Add Payment
 To add a new payment
 
-1. Click on the **'+'** button
+1. Click on the :material-plus: button
     + **Description** is the name of the payment. 
     + **Total** is the amount of the payment. 
     + **Payment Fee (Ref Only)** is filled in automatically for payments made using PayPal or another external payment system. 
