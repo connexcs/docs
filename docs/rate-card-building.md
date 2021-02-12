@@ -69,7 +69,7 @@ Take the following cards, each with a different Rate Compact.
 
 After merging the 3 providers, we would have the following 3 cards output:
 
-| Prefix  |     Destination     |  Cost |
+| Prefix  |     Destination     |  Merged Cost |
 |----------|:-------------:|------:|
 | **Minimum Merge**|   |  |
 | 441 |    UK Landline |  0.0075 |
