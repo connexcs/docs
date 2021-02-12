@@ -150,20 +150,24 @@ pages:
         - Security: security.md
         - Media Handling: media-handling.md
         - Scaling and Load Balancing: scaling-load-balancing.md
+        - Specification: spec.md        
 
+    - Topical Guides:
+        - ConnexCS Basics: guides/basics-guide.md
+        - Billing: guides/billing-guide.md
+        - Customer Documents: guides/doc-guide.md
+        - Monitoring: guides/monitoring.md
+        - Troubleshooting: guides/tshoot-guide.md
+        
     - Miscellaneous:
         - Acronyms and Definitions: acronyms-and-definitions.md
-        - Authentication: authentication.md
         - Connex Billing: billing.md
         - Calling Card: calling-card.md       
         - Capacity Limiting: limiting-cps.md
         - Credit Control: credit-control.md
         - Do Not Call lists: dnc.md
         - Feature List: feature-list.md
-        - Monitoring Guide: monitoring.md
-        - Customer Documents Guide: doc-guide.md
         - Number Manipulation: number-manipulation.md
-        - Specification: spec.md
         - Changing Language: changing-language.md
         - Changing Password: changing-password.md
         - Logging Out: logging-out.md

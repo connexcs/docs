@@ -25,18 +25,20 @@ The **Contacts** section shows an overview of contacts associated with the Custo
     Contacts can also be modified under **Global :material-menu-right: Contacts**, which displays all Customer Contacts.
 
 ### Add Contact
+Press the **:material-plus:** button to the right of the word **Contacts**.
 
-1. Press the **`+`** button to the right of the word **Contacts**.
-4. Enter the contact **Name** and login **Email** address.
-3. Select **Contact Type**.
-4. Enter the **Phone** or **Mobile**. 
-5. **Auto Generate Password** to have a password generated online and sent via email. Uncheck the box to enter a password manually.
-6. **Public Notes** display on the Customer Portal. 
-7. **Private Notes** display in the Control Panel.
-7. Manually set the **Mobile Verified** or **Email Verified** status. Check in the Customer Details to confirm the Mobile and Email have been verified. Alternately, the customer can do this in the Customer Portal.
-7. Click **`Save`**.
++ **Name**: Contacts real name
++ **Email**: This will be the login for the contact, as well as a means of reaching them. 
++ **Contact Type**: This field is for information purposes and organizing only, there is no additional function for it. 
++ **Phone** or **Mobile**: To reach the contact. 
++ **Auto Generate Password**: Select this to have a password generated online and sent via email. Uncheck the box to enter a password manually.
++ **Public Notes**: Display on the Customer Portal. 
++ **Private Notes**: Display in the Control Panel.
++ **Mobile Verified** and **Email Verified**:Manually set the status for each. Check in the Customer Details to confirm the Mobile and Email have been verified. Alternately, the customer can do this in the Customer Portal.
 
     ![alt text][main-tab]
+
+Click **`Save`** to add the Contact.
 
 !!! note "Save Options"
     + **Save and Continue** = Exit the Customer screen
@@ -73,7 +75,7 @@ To access the Customer Portal:
 ## Internal Number Block
 Assign an **Internal Number Block** to define the range of numbers a Customer can use for setting up SIP Extensions (see [**SIP Authentication**](https://docs.connexcs.com/customer/auth/#sip-user-authentication) for configuration details). 
 
-1. Click **`+`** button next to **Internal Number Block**.
+1. Click **:material-plus:** button next to **Internal Number Block**.
 2. The Number Block will be assigned.
 
 !!! info "Why Define Internal Number Blocks?"

@@ -6,7 +6,7 @@ The ConnexCS **Apps** feature allows providers to create small, simple, drag and
 ## Build App
 To create a new App:
 
-1. Click the **`+`**.
+1. Click the :material-plus:.
 2. Drag desired functions from the list on the left into the box on the right.
 3. Click on the function to edit parameters. 
 4. Click **`Save`**. 

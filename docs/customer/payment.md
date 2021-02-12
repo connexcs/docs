@@ -7,17 +7,18 @@ View a list of all the **Payments** that have been made so far.
     Payments may also be managed for under **Global :material-menu-right: Payments**, which displays all Payments across the account.
 
 ## Add Payment
-To add a new payment:
+To add a new payment
 
-1. Click on the **'+'** button.
-2. **Description** is the name of the payment. 
-3. **Total** is the amount of the payment. 
-4. **Payment Fee (Ref Only)** is filled in automatically for payments made using PayPal or another external payment system. 
-5. **Status** allows you to set the Payment to Pending, Cancelled or Completed. (Pending and Cancelled will not be included in the balance calculation.)
-6. If **Email Confirmation** is enabled, once you save the Payment an email will be generated to the customer to let them know it was received and applied to the account. 
-7. Click **`Save`**.
+1. Click on the :material-plus: button
+    + **Description** is the name of the payment. 
+    + **Total** is the amount of the payment. 
+    + **Payment Fee (Ref Only)** is filled in automatically for payments made using PayPal or another external payment system. 
+    + **Status** allows you to set the Payment to Pending, Cancelled or Completed. (Pending and Cancelled will not be included in the balance calculation.)
+    + **Email Confirmation**: If enabled, once you save the Payment an email will be generated to the customer to let them know it was received and applied to the account. 
 
     ![alt text][payments-tab]
+
+2. Click **`Save`**.
 
 !!! tip "Pending Payments"
     When a customer places a payment through their bank, this will show up here with a status of **Pending**. To accept the payment, set it to **Completed** and **`Save`**. 

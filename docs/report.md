@@ -28,18 +28,17 @@ Currently this provides the same functionality and options as the individual Bre
 This report displays metrics for a specific number. It is particularly useful if you get a complaint about people dialing a specific number. Select the number and define the time frame (max 6 months) to generate a list of all calls for that number, along with call details. Click **`Numbers`** to search for multiple numbers. 
 
 ## Schedule Report
-This feature emails the Breakout Report at designated intervals. To schedule a breakout report: 
+Set a Schedule to email the Breakout Report at designated intervals. To schedule a breakout report, click the :material-plus: icon.
 
-1. Click the **`+`** icon.
+&emsp;![alt text][schedulereport]
 
-    ![alt text][schedulereport]
++ **Name** the report schedule.
++ **Email**: The report recipient. 
++ **Group**: Select one or more ways to group the data.
++ **Customers**: Select one or more, or leave it blank for all Customers. 
++ **Providers**: Select one or more, or leave it blank for all Providers. 
++ **Columns**: Select the columns to include in the report. 
 
-2. **Name** the report schedule.
-3. **Email**: The report recipient. 
-4. **Group**: Select one or more ways to group the data.
-5. **Customers**: Select one or more, or leave it blank for all Customers. 
-6. **Providers**: Select one or more, or leave it blank for all Providers. 
-7. **Columns**: Select the columns to include in the report. 
-4. Click **`Save`**.
+Click **`Save`** to schedule the Report. 
 
 [schedulereport]: /reports/img/schedulereport1.png "Schedule Reports"

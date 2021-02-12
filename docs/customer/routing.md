@@ -8,7 +8,7 @@
 
 
 ## Configure Routing
-View and configure existing routes on the Routing tab in the Customer card. Click the `+` under **Ingress Routing** to create a new route. 
+View and configure existing routes on the Routing tab in the Customer card. Click the :material-plus: under **Ingress Routing** to create a new route. 
 
    ![alt text][ingress-routing]
 
@@ -124,14 +124,17 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 
 + **RTP Media Proxy**: This defaults to Auto, but selecting a zone (by continent) is the current recommendation. The following options allow you to set where RTP media server for this route for this customer:  
 
-    * **Auto**: Selects the least expensive path between your customer and provider, however failovers are not automated which is why this option is not recommended.  
-    * **Direct RTP (no proxy)**: Bypass ConnexCS, so media flows directly between the customer and carrier. If the customer is using a firewall or other NAT device incorrectly then media may not flow between carrier and customer. Using this setting also means that if there are audio issues, the issue can't be ConnexCS. Since it isn't likely to be the carrier, the issue would typically exist on the customer's end. 
-    * **Zone**: Select any of the regional servers, however it is recommended you choose a location near a provider or your customer. Temporarily selecting a different region to route media traffic can be helpful in diagnosing call problems. 
+    :material-menu-right: `Auto`- Selects the least expensive path between your customer and provider, however failovers are not automated which is why this option is not recommended.  
+
+    :material-menu-right: `Direct RTP (no proxy)`- Bypass ConnexCS, so media flows directly between the customer and carrier. If the customer is using a firewall or other NAT device incorrectly then media may not flow between carrier and customer. Using this setting also means that if there are audio issues, the issue can't be ConnexCS. Since it isn't likely to be the carrier, the issue would typically exist on the customer's end. 
+
+    :material-menu-right: `Zone`- Select any of the regional servers, however it is recommended you choose a location near a provider or your customer. Temporarily selecting a different region to route media traffic can be helpful in diagnosing call problems. 
     
 + **RTP Proxy Mode**: If connection via our service fails, and relaxed is selected, it will failover to backup automatically. 
 
-    * **Strict**: This will enforce the proxy engagement. If the proxy can't engage with the call, the call will not be established. Note: Free accounts are limited to how many RTP Proxy channels are enabled, this may prevent calls connecting if you have more channels than our free accounts allow you to have.
-    * **Relaxed**: This will perform best efforts to engage the RTP Proxy, if it can't be engaged because of either network errors, or because you don't have enough RTP capacity, the calls will connect directly.
+    :material-menu-right: `Strict`- This will enforce the proxy engagement. If the proxy can't engage with the call, the call will not be established. Note: Free accounts are limited to how many RTP Proxy channels are enabled, this may prevent calls connecting if you have more channels than our free accounts allow you to have.
+
+    :material-menu-right: `Relaxed`- This will perform best efforts to engage the RTP Proxy, if it can't be engaged because of either network errors, or because you don't have enough RTP capacity, the calls will connect directly.
 
 
 !!! Success "When should I use RTP Proxy?"
@@ -153,15 +156,18 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
     *While it's doubtful that any information will be logged in the customer/providers switch when the audio is engaged, it is possible for an engineer to learn this information from a SIP trace, PCAP, or by looking at transit locations. DTMF Detection ONLY works when RTP Proxy mode is enabled.*
 
 + **Call Recording**: This allows you to record and store calls, which are then found under **Setup > Information > [Browsing Record](https://docs.connexcs.com/setup/information/recording/)**. There is an additional charge of 0.003 on top of any existing fees or charges, so choose carefully how many calls to record:
-    + Disabled: no calls are recorded
-    + Sampling: Choose from 1%, 5%, 25 or 50% sample of your calls
-    + Enabled (Always On): Record all calls
+    
+    :material-menu-right: `Disabled`- no calls are recorded
+    
+    :material-menu-right: `Sampling`- Choose from 1%, 5%, 25 or 50% sample of your calls
+    
+    :material-menu-right: `Enabled (Always On)`- Record all calls
 
 !!! tip "The Call Recording setting is disabled"
     The feature will first need to be enabled on the account under **Setup > Settings > Account > [Packages](https://docs.connexcs.com/setup/settings/account/#packages)** before it can be enabled here for individual customers. 
 
 ### Strategy
-For advanced routing, click the **`+`** to select a [**Prefix Set**](https://docs.connexcs.com/setup/advanced/prefix-set/) and assign a [**Routing Strategy**](https://docs.connexcs.com/routing-strategy/). This gives you greater control over how routes are selected for a given customer. 
+For advanced routing, click the :material-plus: to select a [**Prefix Set**](https://docs.connexcs.com/setup/advanced/prefix-set/) and assign a [**Routing Strategy**](https://docs.connexcs.com/routing-strategy/). This gives you greater control over how routes are selected for a given customer. 
 
 ### Notes
 
@@ -172,9 +178,12 @@ For advanced routing, click the **`+`** to select a [**Prefix Set**](https://doc
 
 + **Fraud Profile**: Apply one of the Fraud Profiles configured under **Setup > Advanced > [Fraud Profile](https://docs.connexcs.com/setup/advanced/fraud/#setup-fraud-detection)**.
 + **Fraud Mode**: Specify how strictly the profile will be applied, this is dependent on the [**Fraud Mode Thresholds**](https://docs.connexcs.com/setup/advanced/fraud/#fraud-mode) configured in the Profile. 
-    + Disabled
-    + Low - Alert or Block Calls
-    + High - Block Calls or Account
+    
+    :material-menu-right: `Disabled`
+    
+    :material-menu-right: `Low - Alert or Block Calls`
+    
+    :material-menu-right: `High - Block Calls or Account`
 
 ## Disabled Routes
 Routes highlighted in red on the customer Routing page are disabled. To enable them, open the route, click **Enabled**, then **`Save`**. 
@@ -185,7 +194,7 @@ Routes highlighted in red on the customer Routing page are disabled. To enable t
 ## Use Case for Tech Prefix
 Using Tech Prefix with SIP User "Parameter Rewrites" allows for significant granularity to manage permissions for how to connect a user's calls.
 
-1. Use Parameter Rewrite on the SIP User (found at Customer > Auth > SIP User > Parameter Rewrite) to add a number for calls from this SIP User:
+1. Use Parameter Rewrite on the SIP User (found at **Customer :material-menu-right: Auth :material-menu-right: SIP User :material-menu-right: Parameter Rewrite**) to add a number for calls from this SIP User:
 
     ![alt text][techprefix-usecase]
 

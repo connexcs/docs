@@ -6,7 +6,7 @@ ConnexCS **AnyEdge**, an anycast load-balancer/dispatcher, is a next-generation 
 ## AnyEdge setup
 
 ### Configure AnyEdge 
-Click the **`+`** to set the following:
+Click the :material-plus: to set the following:
 
 + **UAC Test (NAT)**: Select which method will be used to detect whether NAT is in use. See [**Far-End NAT Traversal**](https://docs.connexcs.com/anyedge/anyedge/#far-end-nat-traversal) for details. 
 + **Algorithm**: How to distribute calls. See [**Inbound Proxy / Dispatcher / Load Balancer**](https://docs.connexcs.com/anyedge/anyedge/#inbound-proxy-dispatcher-load-balancer) for details.
@@ -20,10 +20,10 @@ Click the **`+`** to set the following:
 + **Secondary Attempts**: (not useful for less than 3 servers) Set the number of attempts before going to a third zone 
 
 ### AnyEdge Domain
-After AnyEdge configuration is complete, click the **`+`** next to Domains to configure a specific domain with same settings as above: customer call distribution, CPS, Validation, and so on. There is also an ability to provide additional TLS configuration for SIP protection.
+After AnyEdge configuration is complete, click the:material-plus: next to Domains to configure a specific domain with same settings as above: customer call distribution, CPS, Validation, and so on. There is also an ability to provide additional TLS configuration for SIP protection.
 
 ### AnyEdge Destinations
-Click the **`+`** to specify the Destination IP, and one or more Limit (Primary) and Backup (Secondary) Zones.
+Click the :material-plus: to specify the Destination IP, and one or more Limit (Primary) and Backup (Secondary) Zones.
 
 
 ## Capabilities
@@ -82,10 +82,11 @@ Malformed packets can cause all sorts of problems for your internal network, suc
 
 If a packet fails to validate, you can choose how this must be handled. You can handle this with a "400" error or with an "X-Validate-Fail" header. The reasons why a packet fails to validate are:
 
-> No SIP message
-> Header Parsing error
-> No "Call-ID" header
-
+```
+No SIP message
+Header Parsing error
+No "Call-ID" header
+```
  - No "Content-Length" header for transports that require it (for example, TCP)
  - Invalid Content-Length, different from the size of the actual body
  - SDP body parsing error

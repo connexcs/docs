@@ -39,7 +39,7 @@ To add a certificate:
     -----END CERTIFICATE-----
     ```
 
-5. Enter your private **Key** 
+5. Enter your private **Key** with the BEGIN and END tags as follows:
 
     ```
     -----BEGIN PRIVATE KEY-----
@@ -49,7 +49,7 @@ To add a certificate:
     -----END PRIVATE KEY-----
     ```
     
-6. Enter in your **CA(Certificate Authority) Certificate**
+6. Enter in your **CA(Certificate Authority) Certificate** with the BEGIN and END tags as follows:
 
     ```
     -----BEGIN CERTIFICATE-----

@@ -7,8 +7,9 @@ The **Database** can be used for activities such as checking a list of numbers, 
 ## Types
 There are two preset data storage options:
 
-* **Key / Value** - Contains a basic Key / Value Storage.
-* **Lead Set** - Contains the most common fields when using datastore for customer / campaign data which can be used with diallers.
+**Key / Value** - Contains a basic Key / Value Storage.
+
+**Lead Set** - Contains the most common fields when using datastore for customer / campaign data which can be used with diallers.
 
 ## Bulk Upload
 
@@ -19,7 +20,7 @@ It is possible to bulk upload data and bulk delete data from the datastore. Both
 
 ## Create Database
 
-1. Click the **`+`** button.
+1. Click the :material-plus: button.
 2. Select the `Customer` and `Dataset Type` (see Types above).
 3. Click the **`Save`** button. 
 

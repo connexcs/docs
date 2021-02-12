@@ -24,7 +24,7 @@ The **Servers** section provides an overview of deployed servers:
 + **Status**: Indicates if the server will be able to process calls. (Ex: if account has not been paid, the Status will list the server as "Expired")
 
 ## Clusters
-If you have multiple servers in a load-balance configuration, it is recommended they are put into a Cluster. To create a **Cluster**, click the **`Cluster`** button, then click **`+`** to enter the name. When a new server is deployed, there will be an option to select one of the configured Clusters. 
+If you have multiple servers in a load-balance configuration, it is recommended they are put into a Cluster. To create a **Cluster**, click the **`Cluster`** button, then click :material-plus: to enter the name. When a new server is deployed, there will be an option to select one of the configured Clusters. 
 
 !!! info "Benefits of clustering"
     1. Better control over CPS and Channel load-balancing: If you set CPS to 10, clustered servers will allow 10 CPS total, un-clustered servers will allow 10 CPS per server, potentially going over the allowed CPS with a particular carrier.
@@ -119,9 +119,9 @@ When a user is registers with UDP via NAT, a port mapping is created. However, t
 
 ### Deployment Options
 
-1) **Single Server**: No additional configuration is needed for a single server.
-2) **Server Array**: For multiple servers, decide whether users registered to _Server A_ can call users on _Server B_. If so, set the **UAC Location Array Sharing** option (found under [**Server Config**](https://docs.connexcs.com/setup/settings/servers/#server-config)) for the servers which will make the registrations.
-3) **Server Cluster**: Servers in a cluster share all user location registrations. This is the best solution to scale into the many 1000's of registrations. Be advised: you will not be able to route calls to users registered against any servers outside the cluster. 
+1. **Single Server**: No additional configuration is needed for a single server.
+2. **Server Array**: For multiple servers, decide whether users registered to _Server A_ can call users on _Server B_. If so, set the **UAC Location Array Sharing** option (found under [**Server Config**](https://docs.connexcs.com/setup/settings/servers/#server-config)) for the servers which will make the registrations.
+3. **Server Cluster**: Servers in a cluster share all user location registrations. This is the best solution to scale into the many 1000's of registrations. Be advised: you will not be able to route calls to users registered against any servers outside the cluster. 
 
 !!! tip "Ping Overhead"
     Due to design constraints that occur with multiple servers in an array, NAT Keep Alive Pings can be quite intensive. You could use *Disable UAC Ping* from the server page, upgrade to a cluster, or use a single registration server to solve this. More intricate measures can be arranged on a case-by-case basis.

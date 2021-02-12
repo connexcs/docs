@@ -10,66 +10,63 @@ ConnexCS **Customers** are organized through customer cards.
     You can add unlimited customers, and will not be charged per customer, only on their individual usage. 
 
 
-## Customer View Modification
-
-* **Columns** pop out on the right allows you to add/remove options, change column order, in some cases you can create row groups and aggregate values for pivot functionality
-* **Filters** pop out on the right allows you to filter your customers
-* Adjust Column ordering
-
-## Top of Page functions
+## Customer functions
 From the **Customers** page, you can perform several management operations. 
 
+**:material-plus:** Add new Customers (see [**Create Customers**](https://docs.connexcs.com/customer/customer/#create-customers) below for details.)
 
-**+**: Add new Customers (see [**Adding Customers**](https://docs.connexcs.com/customer/customer/#adding-customers) below for details.)
-
-**Bulk Upload**: Upload multiple Customers at the same time, by importing a spreadsheet file into ConnexCS. 
+**Bulk Upload** Upload multiple Customers at the same time, by importing a spreadsheet file into ConnexCS. 
 
 1. Click `Bulk Upload` then `Upload`, find your customer file, then click **`Open`**. 
 2. Right-click in each column to **Map Columns** to appropriate fields
 3. **Set Start Row** to indicate the first line of data (first row is typically column headers). 
 4. Once all fields are set as needed, then click **`Upload to Server`**. 
 
-**Bulk Edit**: Select multiple customers, then click the **Bulk Edit** button to modify fields such as Channels, Status, Flow Speed (CPS), Portal Access, and Country. 
+**Bulk Edit** Select multiple customers, then click the **Bulk Edit** button to modify fields such as Channels, Status, Flow Speed (CPS), Portal Access, and Country. 
 
-**Refresh**: Refresh the page, helpful when making edits or looking at real-time changes. This page is built as a web app so some information will update automatically.  
+**Refresh** Refresh the page, helpful when making edits or looking at real-time changes. This page is built as a web app so some information will update automatically.  
 
-**Delete**: Delete multiple customers at a time. 
+**Delete** Delete multiple customers at a time. 
 
-**?**: Link to documentation for the current page. 
+**?** Link to documentation for the current page. 
 
-**Send**: ConnexCS comes with Email and SMS included for your customers.
+**Send** ConnexCS comes with Email and SMS included for your customers.
 
 1. Select multiple customers using the tickbox selector on the left side of each row. (Customers are not visible to each other in the sent message.)
 2. Click on "Send" at the top right then choose email or SMS.
 3. Fill in Subject line and body details and send. 
-   * Emails are sent FROM the email address populated in Setup > Settings, and TO every email address listed under Contacts for each customer. 
-   * SMS are sent to the Mobile number in each Contact. 
+   + Emails are sent FROM the email address populated in Setup > Settings, and TO every email address listed under Contacts for each customer. 
+   + SMS are sent to the Mobile number in each Contact. 
 
 !!! note "Custom Email Servers"
     Change the outbound Email Server and SMS origination number in **Setup :material-menu-right: Settings**. 
 
-**Active**: Filter customer(s) based on account status. Results on the page will automatically arrange themselves according to the filter.
+**Active** Filter customer(s) based on account status. Results on the page will automatically arrange themselves according to the filter.
 
 &emsp; ![alt text][customer-status]
 
+## Customer View Modification
 
-## Adding Customers
++ **Columns** pop out on the right allows you to add/remove options, change column order, in some cases you can create row groups and aggregate values for pivot functionality
++ **Filters** pop out on the right allows you to filter your customers
++ Adjust Column ordering
 
-1. Click the **`+`** button.
-2. Enter the relevant details in each text box.
-3. Click the **`Save`** button.
-
+## Create Customer
 *Click each tab for field explanations:*
 
 === "Basic"
 
     * **Name:** A name or unique identifier for each customer.
     * **Channels:** Set the maximum number of channels (essentially a channel is a live call). 
-    * **Flow Speed:** Set the CPS (Calls Per Second) for the customer
-    * **Status:** The customer's status, i.e.:
-        * Active: The customer is active and allowed to pass calls. 
-        * Inactive: The account is disabled, no calls will complete 
-        * Pending Approval: New signups are listed as Pending Approval. The customer cannot pass calls or become active until this phase is completed. 
+    * **Flow Speed:** Set the CPS (Calls Per Second) for the customer.
+    * **Status:** The customer's status:
+    
+        :material-menu-right: `Active`: The customer is active and allowed to pass calls. 
+        
+        :material-menu-right: `Inactive`: The account is disabled, no calls will complete 
+        
+        :material-menu-right: `Pending Approval`: New signups are listed as Pending Approval. The customer cannot pass calls or become active until this phase is completed. 
+    
     * **Debit Limit:** How much the account can do into the negative (typically only relevant for post-pay customers).
     * **Minimum Payment:** Set the minimum payment a customer can add to recharge the account. 
     * **Tax:** Tax is added as a percentage that is charged on top of costs. (UK = VAT; US = Sales Tax)
@@ -108,12 +105,18 @@ From the **Customers** page, you can perform several management operations.
     + **Delay and Save** = Select a time to elapse before saving the Customer, delaying the setup or change. 
 ___
 
-## Managing Customers
-Click an existing customer name from Customer Management screen then **Edit**. For all field details, see **[Adding Customers](../customer/#adding-customers)** above. 
+## Configure Customers
+Once a customer has been created, click on the customer name to view details and provide additional configuration. For documentation on that configuration, navigate to the sub-section on the left: 
 
+&emsp; ![alt text][customersubs]
 
+___
 
-[customers]: /customer/img/customers.png "Customer-Dashboard"
-[customer-status]: /customer/img/39.png "Customer-Status"
+## Edit Customers
+Click an existing customer name from Customer section, then click **`Edit`**. For all field details, see **[Create Customers](../customer/#create-customers)** above. 
+
+[customers]: /customer/img/customers.png "Customer Dashboard"
+[customer-status]: /customer/img/39.png "Customer Status"
+[customersubs]: /customer/img/customersubs.png "Customer Sub-Sections"
 
 

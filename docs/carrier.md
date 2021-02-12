@@ -5,36 +5,35 @@ The **Carrier** section in **ConnexCS** allows for simplified Carrier management
 
 ![alt text][carriers-main]
 
+## Carrier Functions
+From the **Carriers** page, you can perform several management operations. 
+
+:material-plus::Add new Carriers (see [**Create Carrier**](https://docs.connexcs.com/carrier/#create-carrier) below for details.)
+
+**Refresh** Refresh the page, helpful when making edits or looking at real-time changes. This page is built as a web app so some information will update automatically.
+
+**Bulk Edit** Select multiple Carriers, then click the **Bulk Edit** button to modify fields such as Channels Status, Flow Speed (CPS), Portal Access, and Country. 
+
+**Delete** To delete multiple carriers at a time, select one or more carriers from the list and then click the trash bin icon and confirm.
+
+**?** Link to documentation for the current page. 
+
+**Active** Used to sort Carriers based on the selected status. Results on the page will automatically arrange themselves according to the filter.
+
+**Search** The search box on the Carrier Management screen is for finding specific information among your carrier listings.
+
+**Audit Log** Click "View Audit Log" to the right of the Edit button to view changes made to the carrier configuration. 
+
+**Credit column** Amounts listed here are purely informational, calls will still be connected by a carrier even if the amount here is at zero credit.     
+
 ## Carrier View Modification
 * **Columns** pop out on the right allows you to add/remove options, change column order, in some cases you can create row groups and aggregate values for pivot functionality
 * **Filters** pop out on the right allows you to filter your carriers
 * Adjust Column ordering
 
-## Carrier Management and Functions
-From the **Carriers** page, you can perform several management operations. 
+## Create Carrier
 
-**+**: Add new Carriers (see [**Add Carrier**](https://docs.connexcs.com/carrier/#add-carrier) below for details.)
-
-**Refresh**: Refresh the page, helpful when making edits or looking at real-time changes. This page is built as a web app so some information will update automatically.
-
-**Bulk Edit**: Select multiple Carriers, then click the **Bulk Edit** button to modify fields such as Channels Status, Flow Speed (CPS), Portal Access, and Country. 
-
-**Delete**: To delete multiple carriers at a time, select one or more carriers from the list and then click the trash bin icon and confirm.
-
-**?**: Link to documentation for the current page. 
-
-**Active**: Used to sort Carriers based on the selected status. Results on the page will automatically arrange themselves according to the filter.
-
-**Search**: The search box on the Carrier Management screen is for finding specific information among your carrier listings.
-
-**Audit Log**: Click "View Audit Log" to the right of the Edit button to view changes made to the carrier configuration. 
-
-**Credit column**: Amounts listed here are purely informational, calls will still be connected by a carrier even if the amount here is at zero credit.     
-
-
-## Add Carrier
-
-2. Click the **`+`** button.
+2. Click the :material-plus: button.
 3. Enter relevant carrier details.
 4. Click **`Save`**.
 
@@ -46,9 +45,13 @@ From the **Carriers** page, you can perform several management operations.
     * **Channels:** Add the number of channels (ports) in numeric digits. Set this to ZERO for unlimited channels.
     * **CPS:** Enter the carrier's max allotted calls-per-second.
     * **Status:** The carrier's status.  A drop-menu contains the following options:
-        *  **Active** - carrier available to process calls.
-        *  **Inactive** - carrier will not process any calls.
-        *  **Pending Approval** - carrier is undergoing a verification process, but their credentials are in the system.  
+        
+        :material-menu-right: `Active`- carrier available to process calls.
+        
+        :material-menu-right: `Inactive`- carrier will not process any calls.
+        
+        :material-menu-right: `Pending Approval`- carrier is undergoing a verification process, but their credentials are in the system.  
+    
     * **Currency:** Choose the relevant currency for each carrier's country.
 
 === "Portal"
@@ -69,10 +72,15 @@ From the **Carriers** page, you can perform several management operations.
     * **PayPal Email:** Enter the PayPal e-mail associated with the carrier's account.
     * **Website:** Add the carrier's official website.
     * **P-Asserted-ID:** Considered a network level identifier, you can select how calls to the provider will be handled based on the PA-ID:
-        + Default- call passed to the provider (no manipulation)
-        + Remove- strips PA-ID before passing the call to the provider
-        + If Available- will add PA-ID if one has been provided, otherwise the call will still be allowed
-        + Required- call will not be delivered to the provider without the PA-ID
+    
+        :material-menu-right: `Default`- call passed to the provider (no manipulation)
+        
+        :material-menu-right: `Remove`- strips PA-ID before passing the call to the provider
+        
+        :material-menu-right: `If Available`- will add PA-ID if one has been provided, otherwise the call will still be allowed
+        
+        :material-menu-right: `Required`- call will not be delivered to the provider without the PA-ID
+    
     * **Consec Fail Backoff:** When Enabled, if a carrier goes down, only a fraction of calls will be sent to the carrier until the start to complete again (calls are not completely disabled otherwise there is no way to know when the carrier is back up again). the First Reply Timeout is skipped.  
     * **Tags** and **TOML**: not applicable to carriers
 
@@ -124,7 +132,7 @@ To edit Reply Codes:
 
 ### Auth
 
-1. Carrier **IP Authentication**: This uses IP addresses to allow or disallow attempts to access service. To add authorized IP address(es), click the **`+`** button on the right. These fields are the same as in [**Customer Auth**](https://docs.connexcs.com/customer/auth/) except that they pertain to Carriers. The only exceptions are:
+1. Carrier **IP Authentication**: This uses IP addresses to allow or disallow attempts to access service. To add authorized IP address(es), click the :material-plus: button on the right. These fields are the same as in [**Customer Auth**](https://docs.connexcs.com/customer/auth/) except that they pertain to Carriers. The only exceptions are:
     
     + **User name and Password**: These are for the call to connect out to the carrier, if server is acting as a UAC
     + **Outbound Proxy** (for Ingress only switches): Enter an IP of a Proxy server for calls to route to, before being sent to the carrier. This rewrites the UAC IP in the VIA field of the SIP header. This reduces management overhead as a customer only needs to authorize the single IP. Additionally, multiple addresses can be load balanced using the AnyEdge system. 
@@ -156,7 +164,7 @@ To simulate a call:
 
 
 ### Payment
-The **Payment** tab shows payments made to the carrier. Add a new payment by clicking **`+`**, fill in the payment information, and the click **`Save`**.
+The **Payment** tab shows payments made to the carrier. Add a new payment by clicking :material-plus:, fill in the payment information, and the click **`Save`**.
 
 ### Stats
 View carrier-related statistics by clicking **Stats** tab. Descriptions for each of these graphs can be found under [**Customer Stats**](https://docs.connexcs.com/customer/stats/).
@@ -165,17 +173,16 @@ View carrier-related statistics by clicking **Stats** tab. Descriptions for each
 Use Carrier **Alerts** to contact a selected email address when `Consecutive Failovers` reaches a predetermined limit. See [**Customer Alerts**](https://docs.connexcs.com/customer/alerts/) for configuration details. 
 
 ### DID
-The **DID** tab displays a list of DIDs that belong to that carrier.  New entries are added with the **`+`** on the left. See [**Customer DID**](https://docs.connexcs.com/customer/did/) for configuration details. 
+The **DID** tab displays a list of DIDs that belong to that carrier.  New entries are added with the :material-plus: on the left. See [**Customer DID**](https://docs.connexcs.com/customer/did/) for configuration details. 
 
 ### CDR
-
 The **CDR** tab displays call drop rates. Use **`Recalc CDR`** when CDR records are not accurate. See [**Customer CDR**](https://docs.connexcs.com/customer/cdr/#recalculate-cdr) for details. 
 
 !!! danger "Rerating CDRs"
     If you select either Rerate" option when recalculating CDRs, please be aware this will change your CDRs and is not reversible. Original call durations will be modified according to the criteria selected.
 
 ## Special Considerations
-[**Bandwidth.com**] has diverged from the SIP spec and exposed an internal IP address required for sequential requests. To ensure compatibility, set the switch manufacturer to `bandwidth.com`.
+[**Bandwidth.com**](https://www.bandwidth.com/) has diverged from the SIP spec and exposed an internal IP address required for sequential requests. To ensure compatibility, set the switch manufacturer to `bandwidth.com`.
 
 [carriers-main]: /carrier/img/carriers-main.png "Carriers"
 [carrier]: /carrier/img/carrier.png "Carrier Main"

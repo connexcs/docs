@@ -4,10 +4,10 @@ In today's society, all modern call carriers should recognise and honor **Do Not
 
 ## DNC Check
 
-Step 1: Setup the Database
+**Step 1: Setup the Database**
 
 1. Navigate to **Developer :material-menu-right: Database**
-2. Click **`+`**.
+2. Click **:material-plus:**.
 3. Enter the **Name**.
 3. Select the **Customer**. 
 4. Select **Dataset Type**.
@@ -15,7 +15,7 @@ Step 1: Setup the Database
 
     ![alt text][dnc-3]
 
-Step 2: Configure Script Forge
+**Step 2: Configure Script Forge**
 
 1. Navigate to **Developer :material-menu-right: Script Forge**
 2. Add the Script **Name**.
@@ -28,7 +28,7 @@ Step 2: Configure Script Forge
 !!! info "More on Script Forge"
     See [**Script Forge**](https://docs.connexcs.com/developers/scriptforge/) in our documentation for additional details on using Script Forge.
     
-Step 3: Add script to Customer
+**Step 3: Add script to Customer**
 
 1. Navigate to **Customer :material-menu-right: [Customer Name] :material-menu-right: Edit :material-menu-right: Routing :material-menu-right: Ingress Routing**
 2. On the **Script Forge** tab, enter the following under **Vars**:

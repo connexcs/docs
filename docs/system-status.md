@@ -3,12 +3,12 @@
 
 Use **Status** to create Status Pages for your customer portals, typically for reported outages or issues. This automates communications of downtime and system outages to your customers. 
 
-## Creating Status Reports
-Follow these three steps to allow outage reporting on Customer Portals: 
+## Create Status Report
+Follow these steps to configure outage reporting on Customer Portals: 
 
-Step 1: Define Status Component 
+**Step 1: Define Status Component**
 
-1. Click the **`+`** button under **Status Component**.
+1. Click the :material-plus: button under **Status Component**.
 2. Enter a **Title** and optional **Description**. 
 
     ![alt text][system-status-2]
@@ -16,9 +16,9 @@ Step 1: Define Status Component
 3. Click the **`Save`** button.
 
 
-Step 2: Setup Report History
+**Step 2: Setup Report History**
 
-1. Click the **`+`** button under **Report History**.
+1. Click the :material-plus: button under **Report History**.
 
     ![alt text][system-status-3]
 
@@ -29,9 +29,9 @@ Step 2: Setup Report History
 3. Finally, select one or more Status Component(s) affected, and the severity of the issue. 
 2. Click **`Save`**.
 
-Step 3: Enable on customer portal
+**Step 3: Enable on customer portal**
 
-1. Navigate to **Setup** > **Integrations** > **Portal**.
+1. Navigate to **Setup :material-menu-right: Integrations :material-menu-right: Portal**.
 2. Click the domain name.
 3. Under **User Access Area**, enable **`Status`**.
 4. Click the **`Save`** button.

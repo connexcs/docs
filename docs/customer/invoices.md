@@ -12,7 +12,7 @@ ConnexCS allows for straightforward **Invoice** generation for all providers. Th
 ## Add new Invoices
 To add a new invoice:
 
-1. Click the **`+`** button at the top of the page.
+1. Click the :material-plus: button at the top of the page.
 2. Select the customer from the drop menu.
 3. Set an Invoice Date in the bottom right. 
 3. Click **`Edit Invoice Item`**. 
@@ -38,7 +38,7 @@ Click ![alt text][invoice-edit] to modify the date, then **`Edit Invoice Item`**
 To allocate customer payments to a specific invoice:
 
 1. Click `View Payments` next for the Invoice.
-2. Click the `+`.
+2. Click the :material-plus:.
 3. Select the desired payment.
 4. Enter the total paid. 
 5. Click **`Save`**. 

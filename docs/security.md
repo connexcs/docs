@@ -56,7 +56,7 @@ The SSL certificate can be deployed on your customer portal with a single click.
 ## User Enhanced Security
 In addition to the above ConnexCS security, we also recommend the following practices to harden your ConnexCS account.
 
-1. Passwords: we recommend following the NIST guidelines found here [**NIST Guidelines**](https://pages.nist.gov/800-63-3/sp800-63b.html#sec5):
+1. Passwords (we recommend following the [**NIST guidelines**](https://pages.nist.gov/800-63-3/sp800-63b.html#sec5)):
     + 8 character minimum when a human sets it
     + 6 character minimum when set by a system/service
     + Support at least 64 characters maximum length
@@ -75,6 +75,3 @@ In addition to the above ConnexCS security, we also recommend the following prac
 
 3. Duo Security or Google/Microsoft Authenticator: As per the NIST recommendations above SMS should not be trusted for second factor authentication. We implement both Duo Security and [**Time-based One-time Password Algorithm (TOTP; specified in RFC 6238)**](https://tools.ietf.org/html/rfc6238),
 which can be used by Google Authenticator or Microsoft Authenticator.
-
-
-

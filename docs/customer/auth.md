@@ -2,7 +2,7 @@
 
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Auth**
 
-Under the **Auth** tab, configure IP or SIP (Username/Password) Authentication for users. To set either one, click the **`+`** button.
+Under the **Auth** tab, configure IP or SIP (Username/Password) Authentication for users. 
 
 !!! note "Global IP and SIP Authentication"
     Both IP and SIP Authentication may also be configured and managed for Customers and Carriers under **Global :material-menu-right: IP Authentication** or **SIP User Authentication**.
@@ -15,15 +15,19 @@ When you enable **IP Authentication**, you associate the IP of a customer switch
     This occurs because call requests were sent from the new IP before it is authorized. As a result, ConnexCS fraud detection blocked the unauthorized IP in the firewall. Attempted calls from this IP will not be completed. To resolve the blocked IP, go to **Setup :material-menu-right: Advanced :material-menu-right: Firewall**. Select the blocked IP, then delete it from the firewall. This unblocks the IP, but it will take up to 15 minutes for the change to become active in the switch. See [Threat Detection](https://docs.connexcs.com/setup/advanced/firewall/) for more details. 
 
 ### Enable IP Authentication 
+To enable, click the **:material-plus:** next to IP Authentication:
 
-*Click each tab to view configuration details.*
+*Click each tab to view configuration details*
 
 === "Basic"
 
     + **IP**: Enter the IP(s) of the customer switch. (FQDN may be also be used for Ingress only switches.)
-    + **Switch Direction**: The `Ingress` and `Egress` selections are from the perspective of the customer switch (PBX, dialer, etc), and describe how that switch interacts with the ConnexCS switch. For switches that send and receive calls from ConnexCS, there will need to be separate entries for each direction. 
-        * Ingress: This switch *receives* calls from ConnexCS. (Note: when selected, this gives the option of using the FQDN rather than the switch IP.)
-        * Egress: This switch *sends* calls to ConnexCS
+    + **Switch Direction**: The available options are from the perspective of the customer switch (PBX, dialer, etc), and describe how that switch interacts with the ConnexCS switch. For switches that send and receive calls from ConnexCS, there will need to be separate entries for each direction. 
+        
+        :material-menu-right: `Ingress`: This switch *receives* calls from ConnexCS. (Note: when selected, this gives the option of using the FQDN rather than the switch IP.)
+        
+        :material-menu-right: `Egress`: This switch *sends* calls to ConnexCS.
+        
     + **Channels**: Set the maximum number of concurrent calls for this switch. 
     + **Flow Speed**: Set the Calls Per Second (CPS) (0 = unlimited calls).   
     
@@ -61,6 +65,8 @@ When you enable **IP Authentication**, you associate the IP of a customer switch
     Example: International calls coming in with a + should be replaced with a specific country code. 
 
     &emsp; ![alt text][parameter-rewrite]
+
+Click **`Save`** to add IP Authentication to the IP.
 ___    
 
 ### IP Authentication Audit Log
@@ -76,7 +82,9 @@ Generic SIP Trace showing the Challenge Response:
 &emsp; ![alt text][407-trace]
 
 ### Enable SIP User Authentication 
-*Click each tab to view configuration details.*
+To enable, click the **:material-plus:** next to SIP User Authentication:
+
+*Click each tab to view configuration details*
 
 === "Basic"
 
@@ -86,9 +94,13 @@ Generic SIP Trace showing the Challenge Response:
     + **Protocol**: This sets the type of signalling protocol for call setup, maintenance, and tear down. ConnexCS uses SIP for signalling, but here you select the transport protocol. (Note: SMPP, for SMS, is not currently supported.)
     + **IP Whitelist**: Enter specific IPs, or use CIDR notation to specify an entire subnet. 
     + **NAT/SIP Ping**: Set behavior of pings sent from ConnexCS back to the customer through their firewall to their UAC. This helpful when there are remote agents connecting into the switch. 
-        + **Disabled**: No pings are sent
-        + **Enabled**: Send UDP ping every 60 seconds, helping to keep some longer calls (1800 or 3600 seconds) up. 
-        + **Enabled (Timeout)**: Send UDP ping every 60 seconds and disconnect if the pings aren't returned.
+    
+        :material-menu-right: **`Disabled`**: No pings are sent
+        
+        :material-menu-right: **`Enabled`**: Send UDP ping every 60 seconds, helping to keep some longer calls (1800 or 3600 seconds) up. 
+        
+        :material-menu-right: **`Enabled (Timeout)`**: Send UDP ping every 60 seconds and disconnect if the pings aren't returned.
+    
     + **Retain DID**: When Enabled, this retains the desination number (DID) the call is sent to in the system, rather than the SIP Username. 
     + **Smart Extension**: Calls are sent to the Class5, not Class4 infrastructure. This feature is currently in Alpha and is not recommended. 
 
@@ -116,7 +128,8 @@ Generic SIP Trace showing the Challenge Response:
 === "Latency"
    
     If NAT/SIP pings are enabled, the **Latency** tab will be available at the top of the SIP user screen, and displays the status of the SIP pings, and latency based on those pings. This can be helpful for troubleshooting audio problems. 
-    
+
+Click **`Save`** to add the new SIP User.
 ___
 
 

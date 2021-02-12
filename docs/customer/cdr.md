@@ -24,10 +24,10 @@ Use the **`Recalc CDR`** button from within the specific customer to refresh CDR
     + Refresh Summaries & Credit
     + Rerate Calls, and Refresh Summaries & Credit
     + Adjust Call Duration, Rerate Calls, and Refresh Summaries & Credit
-+ **Date (UTC)** (for Refresh operations)- 
++ **Date (UTC)** (for Refresh operations) 
 + **Release Reason** (for Rerate operations)- select the reason the call was ended, multiple selections are allowed. This will modify the amount that was charged for the calls. 
-+ **Min Duration** (for Adjust Call Duration operations)- 
-+ **New Duration** (for Adjust Call Duration operations)- 
++ **Min Duration** (for Adjust Call Duration operations) 
++ **New Duration** (for Adjust Call Duration operations) 
 
     ![alt text][recalc]
 

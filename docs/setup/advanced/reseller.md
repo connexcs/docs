@@ -25,9 +25,9 @@ You can assign your reseller a customer card. A reseller may have multiple custo
 !!! warning "Verify reseller permissions"
     ALWAYS login to a reseller account yourself to check visibility over what you have allowed them to see. This is NOT currently a production ready feature so it is at your responsibility whether to use it.
 
-1. **Create a Reseller Group** - Go to Setup :material-menu-right: Settings :material-menu-right: User :material-menu-right: Groups :material-plus: Create Default Reseller. This creates the new group with *default permissions* which may be modified as needed. 
-2. **Add Reseller Account** - Go to Setup :material-menu-right: Advanced :material-menu-right: Reseller Account and click the **`+`**. Enter the company Name (a reseller company may have more than one login) and Email. Click **`Save`**.
-3. **Create a Reseller User** - Click **`Users`** from the newly added account then click **`+`**. The desired Group must be selected, either to match the new Reseller Group or an older one.
+1. **Create a Reseller Group** - Go to **Setup :material-menu-right: Settings :material-menu-right: User :material-menu-right: Groups :material-plus: Create Default Reseller**. This creates the new group with *default permissions* which may be modified as needed. 
+2. **Add Reseller Account** - Go to **Setup :material-menu-right: Advanced :material-menu-right: Reseller Account :material-plus:**. Enter the company Name (a reseller company may have more than one login) and Email. Click **`Save`**.
+3. **Create a Reseller User** - Click **`Users`** from the newly added account then click **:material-plus:**. The desired Group must be selected, either to match the new Reseller Group or an older one.
 5. **Reseller Login** - Your reseller uses the Email and Password defined in the Reseller User to login to their account.
 
 !!! danger "Potential security risk"

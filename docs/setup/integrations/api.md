@@ -92,8 +92,8 @@ Enter the new credentials back into your account. (PayPal steps copied from PayP
 ### Configure Customer with PayPal Email address
 The following are instructions on how to add a PayPal Email address to a ConnexCS customer account:
 
-1. Navigate to **Management :material-menu-right: Customer :material-menu-right: [Customer name] **
-1. Click **`+`** under Contacts
+1. Navigate to **Management :material-menu-right: Customer :material-menu-right: [Customer name]**.
+1. Click :material-plus: under Contacts.
 1. Enter the customer's Name and PayPal email address and click **`Save`**.
 1. From the customer's main page, select Edit :material-menu-right: Config.
 1. Enter the customer PayPal email ID and click **`Save`**.

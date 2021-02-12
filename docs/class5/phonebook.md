@@ -7,7 +7,7 @@ For individual customers, navigate to **Management :material-menu-right: Custome
 
 ## Create Entry
 
-1. Click the **`+`**.
+1. Click the :material-plus:.
 2. Add the user's Name and any other data that you wish to capture. 
 3. Click **`Save`**.
 4. The new entry will appear in the Phonebook. 
