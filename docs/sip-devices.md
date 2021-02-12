@@ -6,7 +6,7 @@
 ## Add SIP Device
 To add a new SIP device:
 
-2. Click the **`+`** button.
+2. Click the :material-plus: button.
 4. Specify the MAC / IMIE / UUID to provision a customer device directly. 
 3. Select the customer and enter any desired information.
 4. At the bottom of the edit screen, there is a **`Edit Device Item`** button which allows you to configure the Line #, Display Name, CLI, and additional settings. 
