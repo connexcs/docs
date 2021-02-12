@@ -15,9 +15,13 @@ To create a Conference room, click the **`+`** icon.
 * Enter the **Extension** for the callers to call (essentially, the dial-in number)
 * Configure the **PIN** and **Moderator PIN** for additional security 
 * **Quality** sets the amount of bandwidth available per caller
-    * `Narrow Band` = 8 KHz (G711)
-    * `Wide Band1` = 16 KHZ
-    * `Ultra Wide Band` = 32 KHz
+    
+    :material-menu-right: `Narrow Band`- 8 KHz (G711)
+    
+    :material-menu-right: `Wide Band1`- 16 KHZ
+    
+    :material-menu-right: `Ultra Wide Band`- 32 KHz
+    
 * **Max Members** limits the number of concurrent callers this conference must allow. Note: the preset of '0' Max Members allows an unlimited number of callers can join the conference. 
 
     ![alt text][conference]
