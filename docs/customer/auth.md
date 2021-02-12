@@ -26,7 +26,7 @@ To enable, click the **`+`** next to IP Authentication:
         
         :material-menu-right: `Ingress`: This switch *receives* calls from ConnexCS. (Note: when selected, this gives the option of using the FQDN rather than the switch IP.)
         
-        :material-menu-right: `Egress`: This switch *sends* calls to ConnexCS
+        :material-menu-right: `Egress`: This switch *sends* calls to ConnexCS.
         
     + **Channels**: Set the maximum number of concurrent calls for this switch. 
     + **Flow Speed**: Set the Calls Per Second (CPS) (0 = unlimited calls).   
