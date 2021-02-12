@@ -35,8 +35,8 @@ From the **Customers** page, you can perform several management operations.
 1. Select multiple customers using the tickbox selector on the left side of each row. (Customers are not visible to each other in the sent message.)
 2. Click on "Send" at the top right then choose email or SMS.
 3. Fill in Subject line and body details and send. 
-   * Emails are sent FROM the email address populated in Setup > Settings, and TO every email address listed under Contacts for each customer. 
-   * SMS are sent to the Mobile number in each Contact. 
+   + Emails are sent FROM the email address populated in Setup > Settings, and TO every email address listed under Contacts for each customer. 
+   + SMS are sent to the Mobile number in each Contact. 
 
 !!! note "Custom Email Servers"
     Change the outbound Email Server and SMS origination number in **Setup :material-menu-right: Settings**. 
@@ -47,9 +47,9 @@ From the **Customers** page, you can perform several management operations.
 
 ## Customer View Modification
 
-* **Columns** pop out on the right allows you to add/remove options, change column order, in some cases you can create row groups and aggregate values for pivot functionality
-* **Filters** pop out on the right allows you to filter your customers
-* Adjust Column ordering
++ **Columns** pop out on the right allows you to add/remove options, change column order, in some cases you can create row groups and aggregate values for pivot functionality
++ **Filters** pop out on the right allows you to filter your customers
++ Adjust Column ordering
 
 ## Create Customer
 *Click each tab for field explanations:*
@@ -60,9 +60,9 @@ From the **Customers** page, you can perform several management operations.
     * **Channels:** Set the maximum number of channels (essentially a channel is a live call). 
     * **Flow Speed:** Set the CPS (Calls Per Second) for the customer.
     * **Status:** The customer's status:
-        * `Active`: The customer is active and allowed to pass calls. 
-        * `Inactive`: The account is disabled, no calls will complete 
-        * `Pending Approval`: New signups are listed as Pending Approval. The customer cannot pass calls or become active until this phase is completed. 
+        :material-menu-right: `Active`: The customer is active and allowed to pass calls. 
+        :material-menu-right: `Inactive`: The account is disabled, no calls will complete 
+        :material-menu-right: `Pending Approval`: New signups are listed as Pending Approval. The customer cannot pass calls or become active until this phase is completed. 
     * **Debit Limit:** How much the account can do into the negative (typically only relevant for post-pay customers).
     * **Minimum Payment:** Set the minimum payment a customer can add to recharge the account. 
     * **Tax:** Tax is added as a percentage that is charged on top of costs. (UK = VAT; US = Sales Tax)
