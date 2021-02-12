@@ -20,7 +20,7 @@ The **Portal** lets you add a domains and sub-domain to the Control Panel, which
 	
 **Step 2: Add Domain to Portal**
 
-1. Click the **`+`** button under **Portal**.
+1. Click the :material-plus: button under **Portal**.
 2. Enter the details in their respective fields of the ensuing window.
 3. Click the **`Save`** button. A certificate will be issued for the domain soon afterwards.
 
