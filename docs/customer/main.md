@@ -25,7 +25,7 @@ The **Contacts** section shows an overview of contacts associated with the Custo
     Contacts can also be modified under **Global :material-menu-right: Contacts**, which displays all Customer Contacts.
 
 ### Add Contact
-Press the **`+`** button to the right of the word **Contacts**.
+Press the **:material-plus:** button to the right of the word **Contacts**.
 
 + **Name**: Contacts real name
 + **Email**: This will be the login for the contact, as well as a means of reaching them. 
@@ -75,7 +75,7 @@ To access the Customer Portal:
 ## Internal Number Block
 Assign an **Internal Number Block** to define the range of numbers a Customer can use for setting up SIP Extensions (see [**SIP Authentication**](https://docs.connexcs.com/customer/auth/#sip-user-authentication) for configuration details). 
 
-1. Click **`+`** button next to **Internal Number Block**.
+1. Click **:material-plus:** button next to **Internal Number Block**.
 2. The Number Block will be assigned.
 
 !!! info "Why Define Internal Number Blocks?"
