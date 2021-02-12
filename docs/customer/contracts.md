@@ -4,7 +4,7 @@
 The **Contracts** section lists contracts associated with the customer. **Contracts** are assigned useful when you want new customers to agree to certain conditions before they can dial. Click on each name to view details.
 
 ## Assign Contracts
-Click the **`+`** and complete the following fields:
+Click the :material-plus: and complete the following fields:
 
 + **Contract**: Select the desired Contract. 
 + **Grace Date**: Allows the customer to demo the service until the selected date, at which time they will need to agree to the contract to continue using the service.
