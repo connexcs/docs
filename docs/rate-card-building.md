@@ -71,7 +71,7 @@ After merging the 3 providers, we would have the following 3 cards output:
 
 | Prefix  |     Destination     |  Merged Cost |
 |----------|:-------------:|------:|
-| **Minimum Merge**|   |  |
+| **Minimum Merged Cost**|   |  |
 | 441 |    UK Landline |  0.0075 |
 | 442 | UK Landline |   0.0075 |
 | **Maximum Merge**|   |  |
