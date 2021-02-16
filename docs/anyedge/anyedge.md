@@ -136,11 +136,7 @@ To use compaction, you need to select "Compact Enabled". You can also whitelist 
 Compression or Decompression can be enabled for Inbound and/or Outbound by selecting either "Compress Enabled (Deflate)", "Compress Enabled GZip" or "Decompress Enabled". There are additional flags to control how data must be compressed.
 
 ### Registration Proxy
-Having high availability with registrations ensures that you will always have an IP address which matches the hole punched when the UAC registers. Unlike other high availability setups, **AnyEdge** ensures that standard NAT hole-punching can work with UAC > UAS calls/messages after the end point that the UAC connects to, fails.
+Having High Availability (HA) with registrations ensures that you will always have an IP address which matches the hole punched when the UAC registers. Unlike other HA setups, **AnyEdge** ensures that standard NAT hole-punching can work with UAC > UAS calls/messages even after the end-point connected to the UAC fails.
 
 ### Outbound Proxy
 If you have a pool of multiple servers, you can proxy your communications via **AnyEdge**, allowing for a single IP address to communicate externally.
-
-
-
-
