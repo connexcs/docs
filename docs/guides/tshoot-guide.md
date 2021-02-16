@@ -47,28 +47,34 @@ Call Quality/Media issues are typically related to media handling and related pr
 !!! tip "Check for known issues"
     Before troubleshooting any issue, please check our [**Status Page**](https://status.connexcs.com/). We monitor 45+ metrics on each of our 30+ RTP servers. In the unlikely event that we are having media issues, the issue may already be reported here, saving you and your customer unnecessary work diagnosing the issue. 
 
-### Standard Troubleshooting Steps
-1. **Check the SIP Headers & SDP Body** If you have one-way audio, check the SDP body for compatible codecs and NAT which may be causing problems.
-2. **Check Firewalls** Check to see if there any firewalls in place that may be blocking the calls. It is important to remember that your media does not flow through the same server as your SIP.
-3. **Ensure you have the best media zone** Ensure that the media server you use is close to your customer or carrier.
-4. **Change the media zone** It is possible that there are latent / lossy connections between your customer and our media servers. Try changing the media server (Customer > Routing > Media >Media Proxy).
-5. **Try sending the media direct** Allow your media to flow from your customer directly to your carrier by setting the media server as direct, bypassing ConnexCS. If the issue persists, it is with either the customer or the carrier or the far-end. 
+### Standard Media Troubleshooting
+**Check the SIP Headers & SDP Body** If you have one-way audio, check the SDP body for compatible codecs and NAT which may be causing problems.
 
-    !!! Warning
-        If your customer (or carrier) is behind a NAT (and you change the media to Direct). ConnexCS will not correctly be able to perform Far-End-NAT Traversal, potentially making the problem worse.
+**Check Firewalls** Check to see if there any firewalls in place that may be blocking the calls. It is important to remember that your media does not flow through the same server as your SIP.
 
-    !!! Danger
-	By sending media direct you will be leaking information about who your carrier is to your customer and visa-versa, if the SIP packets and/or RTP endpoints are investigated.
+**Ensure you have the best media zone** Ensure that the media server you use is close to your customer or carrier.
 
-6. **Echo Test** Use our class 5 features to setup an Echo Test. When dialled all audio spoken will be echoed back. This can be a quick way of checking a customer's audio quality.
-7. **RTCP Metrics** If RTCP is enabled on your customer and carrier, meta data about the RTP stream (packet counters, round trip time) will be exchanged. This information will be available in the logging page when looking at the call. These graphs can help to identify the problems.
-8. **User Latency** If the UAC is connecting by SIP Auth directly to ConnexCS. It is possible to view latency graphs. For this make sure that SIP Ping is enabled from Customer > Auth > NAT / SIP Ping > Enabled. Also ensure that "Disable UAC Ping" is unticked in your Server.
+**Change the media zone** It is possible that there are latent / lossy connections between your customer and our media servers. Try changing the media server (Customer > Routing > Media >Media Proxy).
 
-### Advanced Troubleshooting 
+**Try sending the media direct** Allow your media to flow from your customer directly to your carrier by setting the media server as direct, bypassing ConnexCS. If the issue persists, it is with either the customer or the carrier or the far-end. 
+
+!!! Warning
+    If your customer (or carrier) is behind a NAT (and you change the media to Direct). ConnexCS will not correctly be able to perform Far-End-NAT Traversal, potentially making the problem worse.
+
+!!! Danger
+    By sending media direct you will be leaking information about who your carrier is to your customer and visa-versa, if the SIP packets and/or RTP endpoints are investigated.
+
+**Echo Test** Use our class 5 features to setup an Echo Test. When dialled all audio spoken will be echoed back. This can be a quick way of checking a customer's audio quality.
+
+**RTCP Metrics** If RTCP is enabled on your customer and carrier, meta data about the RTP stream (packet counters, round trip time) will be exchanged. This information will be available in the logging page when looking at the call. These graphs can help to identify the problems.
+
+**User Latency** If the UAC is connecting by SIP Auth directly to ConnexCS. It is possible to view latency graphs. For this make sure that SIP Ping is enabled from Customer > Auth > NAT / SIP Ping > Enabled. Also ensure that "Disable UAC Ping" is unticked in your Server.
+
+### Advanced Media Troubleshooting 
 
 **ConnexCS Circuit Test** ConnexCS can be setup to perform automated circuit tests. A call is sent outbound and can complete a full circuit, as well as testing other metrics, MOS is checked. This is a measure of audio quality, a long running test can notice trends even before your customers do.
 
-**Modified Ping (Linux)** If the endpoint responds to the ping message, you can tweak the regular ping to make it behave a bit more like an RTP Packet. This can help to debug connections further.
+**Modified Ping (Linux)** If the endpoint responds to the ping message, you can tweak the regular ping to make it behave a bit more like an RTP Packet. This can help to debug connections further. The following settings are made to roughly simulate SIP packets (ulaw), you can tweak these parameters as required to achieve your ideal test scenario.
 
 ```
 ping 1.2.3.4 -s 160 -t 200 -i 0.02 -f
@@ -77,7 +83,6 @@ ping 1.2.3.4 -s 160 -t 200 -i 0.02 -f
 -i 0.02 [how frequently to send packets (50 / second)]
 -f [display output as .]
 ```
-These settings are made to roughly simulate SIP packets (ulaw), you can tweak these parameters as required to achieve your ideal test scenario.
 
 !!! Warning
     Trace Route (`tracert` / `mtr`) are great tools for checking the IP route. They are not made to analyse RTP packet loss. Additionally intermediate hops DON'T prioritize ICMP packets, and so should not be used as a method of debugging media issues.
