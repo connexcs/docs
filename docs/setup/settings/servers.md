@@ -31,13 +31,18 @@ If you have multiple servers in a load-balance configuration, it is recommended 
     2. Shared User Location Information: Un-Clustered servers will have difficulty sharing registration information. It is possible to select "UAC Location Sharing" for each of the unclustered servers to share this information, but this is not recommended as it requires additional communications (and increases overhead) for each server to connect to the UAC every second to check for new/changed registrations. 
 
 ## RTP Servers
-RTP Servers handle streaming media. To view RTP Servers in your system:
+RTP Servers handle streaming media. ConnexCS allows you to route your media through a global array of dedicated media servers. These servers operate independently of your server. So while your server may be located in London, you can choose to run your media in New York (if, for example, you have customers there). Each regional zone encompasses multiple servers, to provide high availability. 
+
+To view RTP Servers:
 
 1. Click the **`RTP Servers`** button.
 2. A list of your current RTP servers will appear, with columns for IP address, aliases, and zones.
 3. The **`Refresh`** button will reload the page to show the most current changes, if any.
 
     ![alt text][rtpserver]
+
+!!! Tip "Media Server Selection"
+    You should choose a media server that adds the least latency to the call. If your customer is in Bangalore and your carrier in New York, use either Bangalore or New York as your media proxy.
 
 ## Server Details
 Click the server's IP address to view details. 
