@@ -92,5 +92,5 @@ These settings are made to roughly simulate SIP packets (ulaw), you can tweak th
 
 **Call Recording / Packet Capture** Enable call recording on ConnexCS & capture packets either on the customer or the carrier. Compare the results.
 
-### Billing issues
+## Billing issues
 These issues are typically due to an issue with the carrier or with how ConnexCS has been configured by the customer. 
