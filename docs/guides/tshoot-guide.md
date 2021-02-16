@@ -42,35 +42,29 @@ When calls won't connect or stay connected, this is typically related to signall
 + Tear Down issues- customer is billed for call duration in excess of the actual call duration
 
 ## Call Quality Issues
-Call Quality (oe Media) issues are typically related to media handling and related protocols. This could be a result of problems with the customer equipment, the ConnexCS configuration, the carrier, or the far-end. Common issues related to the media stream can include choppy or robotic voice, echo, one-way audio, static, and anything else relating to the quality of a call that is in session. 
+Call Quality/Media issues are typically related to media handling and related protocols. This could be a result of problems with the customer equipment, the ConnexCS configuration, the carrier, or the far-end. Common issues related to the media stream can include choppy or robotic voice, echo, one-way audio, static, and anything else relating to the quality of a call that is in session. 
 
 !!! tip "Check for known issues"
     Before troubleshooting any issue, please check our [**Status Page**](https://status.connexcs.com/). We monitor 45+ metrics on each of our 30+ RTP servers. In the unlikely event that we are having media issues, the issue may already be reported here, saving you and your customer unnecessary work diagnosing the issue. 
 
-#### Standard Troubleshooting Steps
+### Standard Troubleshooting Steps
 1. **Check the SIP Headers & SDP Body** If you have one-way audio, check the SDP body for compatible codecs and NAT which may be causing problems.
 2. **Check Firewalls** Check to see if there any firewalls in place that may be blocking the calls. It is important to remember that your media does not flow through the same server as your SIP.
 3. **Ensure you have the best media zone** Ensure that the media server you use is close to your customer or carrier.
 4. **Change the media zone** It is possible that there are latent / lossy connections between your customer and our media servers. Try changing the media server (Customer > Routing > Media >Media Proxy).
-5. **Try sending the media direct** Allow your media to flow from your customer directly to your carrier by setting the media server as direct.
+5. **Try sending the media direct** Allow your media to flow from your customer directly to your carrier by setting the media server as direct, bypassing ConnexCS. If the issue persists, it is with either the customer or the carrier or the far-end. 
 
-!!! Info
-	If you are sending the media direct, ConnexCS will not participate in the exchange of any audio. It goes between your customer and your carrier directly. If you have audio, but it is poor quality, the problem exists outside of ConnexCS control.
+    !!! Warning
+        If your customer (or carrier) is behind a NAT (and you change the media to Direct). ConnexCS will not correctly be able to perform Far-End-NAT Traversal, potentially making the problem worse.
 
-!!! Warning
-    If your customer (or carrier) is behind a NAT (and you change the media to Direct). ConnexCS will not correctly be able to perform Far-End-NAT Traversal. This means it may make the problem worse.
-
-!!! Danger
+    !!! Danger
 	By sending media direct you will be leaking information about who your carrier is to your customer and visa-versa, if the SIP packets and/or RTP endpoints are investigated.
 
 6. **Echo Test** Use our class 5 features to setup an Echo Test. When dialled all audio spoken will be echoed back. This can be a quick way of checking a customer's audio quality.
 7. **RTCP Metrics** If RTCP is enabled on your customer and carrier, meta data about the RTP stream (packet counters, round trip time) will be exchanged. This information will be available in the logging page when looking at the call. These graphs can help to identify the problems.
 8. **User Latency** If the UAC is connecting by SIP Auth directly to ConnexCS. It is possible to view latency graphs. For this make sure that SIP Ping is enabled from Customer > Auth > NAT / SIP Ping > Enabled. Also ensure that "Disable UAC Ping" is unticked in your Server.
 
-
-
-
-#### Advanced Troubleshooting 
+### Advanced Troubleshooting 
 
 **ConnexCS Circuit Test** ConnexCS can be setup to perform automated circuit tests. A call is sent outbound and can complete a full circuit, as well as testing other metrics, MOS is checked. This is a measure of audio quality, a long running test can notice trends even before your customers do.
 
