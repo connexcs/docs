@@ -25,9 +25,12 @@ Signalling is a general term that decribes how telephony systems setup, maintain
 ### Media
 Media refers to the actual audio payload portion of a call. For more information about ConnexCS media servers, see [**RTP Servers**](https://docs.connexcs.com/setup/settings/servers/#rtp-servers).
 
-**RTP (Real-time Transport Protocol) 
+**RTP (Real-time Transport Protocol)** is the 
 
-**RTCP (RTP Control Protocol)
+!!! info "RTP on Wikipedia"
+    For detailed description of RTP, see the [**Wikipedia Real-time Transport Protocol article**](https://en.wikipedia.org/wiki/Real-time_Transport_Protocol). 
+
+**RTCP (RTP Control Protocol)** does not contribute to call function in any way. RTCP is used to report on media quality statstics after the call is completed. 
 
 ## Call Connectivity Issues
 When calls won't connect or stay connected, this is typically related to signalling (connecting, maintaining, and ending calls) and related protocols. Troubleshooting should focus on the customer equipment, the ConnexCS configuration, the carrier, or the far-end. 
