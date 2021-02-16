@@ -76,22 +76,19 @@ Click the blue pencil to edit.
 + **Restrict Direct**: If servers are part of AnyEdge, they can't communicate directly, and must be routed through AnyEdge.
 + **TCP SIP Trace**: If you want to ensure that ALL of your SIP Traces are captured, you can use TCP instead of UDP. While providing higher reliability, in extremely high-traffic scenarios there may be a decrease in packet processing time.
 + **Use AnyReg Server**: This is an experimental platform SIP Registrar, should only be used if you know what you are doing. When used in conjunction with AnyEdge, the AnyEdge server will take the registration information and pass it to AnyReg, avoiding the need to check with customer equipment for registration. This negates the need for the UAC options above.
-+ **US, EU**: Switch**: Servers in the US zone will process data (ex: CDRs, routing engines) at local servers rather than in some remote zone, avoiding server capacity issues due to longer data transit times.
++ **US, EU**: Servers in the US zone will process data (ex: CDRs, routing engines) at local servers rather than in some remote zone, avoiding server capacity issues due to longer data transit times.
 + **UDP, TCP, TLS Ports**: Specify port(s) for each protocol in addition to the protocol default (ex: to avoid firewall rules or ISP restrictions).
-
-
-
 
 
 ### Server Actions Menu
 Click the **`Actions`** button to open the **Server Actions Menu**. The following actions are available:
 
-* **Install Server**: installs the latest script to your server.
-* **Start Server**: Activates the server.
-* **Stop Server**: Deactivates the server
-* **Restart Server**: Reboots the server.
-* **OS Cycle**: Shut down the server using the operating system's mechanisms.
-* **Power Cycle**: Shut down the server using a hard reset (emulates pressing the power button).
++ **Install Server**: installs the latest script to your server.
++ **Start Server**: Activates the server.
++ **Stop Server**: Deactivates the server
++ **Restart Server**: Reboots the server.
++ **OS Cycle**: Shut down the server using the operating system's mechanisms.
++ **Power Cycle**: Shut down the server using a hard reset (emulates pressing the power button).
 
 !!! warning "Impact to Services"
     These actions occur real time and performing any of them could affect services. We recommend that you avoid using them unless the results are understood. Keep in mind that the ConnexCS system is designed to run stateless, and actions such as reboots, restarts, and so on, rarely correct the types of issues seen in less sophisticated systems like PBX or common laptops. The only exception to this is the use of **Install Server**, which could be used for a clean installation from a standard image.
