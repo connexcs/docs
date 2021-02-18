@@ -1,14 +1,12 @@
 # Troubleshoot Media
 Media refers to the actual audio payload portion of a call. For more information about ConnexCS media servers, see [**RTP Servers**](https://docs.connexcs.com/setup/settings/servers/#rtp-servers).
 
-**RTP (Real-time Transport Protocol)** is the 
+**RTP (Real-time Transport Protocol)**, operating on top of UDP, is a data transport protocol. The RTP session is setup by a signalling protocol such as SIP. One established, audio is streamed across the network. By using UDP, data can be transmitted at higher rates, with the understanding that some loss will occur and can be at least partially mitigated by built in correction mechanisms (versus TCP which runs slower to ensure reliability). 
 
 !!! info "RTP on Wikipedia"
     For detailed description of RTP, see the [**Wikipedia Real-time Transport Protocol article**](https://en.wikipedia.org/wiki/Real-time_Transport_Protocol). 
 
-**RTCP (RTP Control Protocol)** does not contribute to call function in any way. RTCP is used to report on media quality statstics after the call is completed. 
-
-
+**RTCP (RTP Control Protocol)** does not carry any actual data payload, but helps with delivery. RTCP is used to report on media quality statstics after the call is completed. 
 
 ## Call Quality Issues
 Call Quality/Media issues are typically related to media handling and related protocols. This could be a result of problems with the customer equipment, the ConnexCS configuration, the carrier, or the far-end. Common issues related to the media stream can include choppy or robotic voice, echo, one-way audio, static, and anything else relating to the quality of a call that is in session. 
