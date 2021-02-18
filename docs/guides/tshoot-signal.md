@@ -1,5 +1,5 @@
 # Troubleshoot Signalling
-Signalling is the process telephony systems use to manage functions such as device registration, as well as setup, maintainance, and tear-down of calls. While there are many different signalling protocols used for various types of deployments, ConnexCS uses the SIP protocol. 
+Signalling is the process telephony systems use to establish a connection across a network or the internet. This includes functions such as device registration, as well as setup, maintainance, and tear-down of calls. While there are many different signalling protocols used for various types of deployments, ConnexCS uses the SIP protocol. 
 
 **SIP (Session Initiation Protocol)** is used to communicate between the customer's equipment and the ConnexCS platform, and from ConnexCS to the providers/carriers that connect calls to the far-end. Messages are exchanged between each leg of a path, so the elements can agree to commnicate. Once a path is extablished, meaning all the elements between the customer and the far-end agree to carry the call, then the actual audio payload (see Media below) of the call may begin. While the call is up, SIP sends periodic confirmation, maintaining the call. When one end or the other hangs up, SIP then initiates the end of the call, as each point agrees to terminate the connection. 
 
@@ -18,6 +18,9 @@ Signalling is the process telephony systems use to manage functions such as devi
 ## Call Connectivity Issues
 When calls won't connect or stay connected, this is typically related to signalling (connecting, maintaining, and ending calls) and related protocols. Troubleshooting should focus on the customer equipment, the ConnexCS configuration, the carrier, or the far-end. 
 
+!!! tip "Check for known issues"
+    Before troubleshooting any issue, please check our [**Status Page**](https://status.connexcs.com/). We monitor 45+ metrics on each of our 30+ RTP servers. In the unlikely event that we are having media issues, the issue may already be reported here, saving you and your customer unnecessary work diagnosing the issue. 
+    
 ### Calls won't connect
 + Setup Issues- outbound calls don't connect (typically there is an error message), inbound calls are not delivered to the correct desitnation or are not received by the ConnexCS switch at all
 
