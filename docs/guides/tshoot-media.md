@@ -14,7 +14,7 @@ Call Quality/Media issues are typically related to media handling and related pr
 !!! tip "Check for known issues"
     Before troubleshooting any issue, please check our [**Status Page**](https://status.connexcs.com/). We monitor 45+ metrics on each of our 30+ RTP servers. In the unlikely event that we are having media issues, the issue may already be reported here, saving you and your customer unnecessary work diagnosing the issue. 
 
-### Standard Media Troubleshooting
+## Standard Media Troubleshooting
 **Check the SIP Headers & SDP Body** If you have one-way audio, check the SDP body for compatible codecs and NAT which may be causing problems.
 
 **Check Firewalls** Check to see if there any firewalls in place that may be blocking the calls. It is important to remember that your media does not flow through the same server as your SIP.
@@ -37,7 +37,7 @@ Call Quality/Media issues are typically related to media handling and related pr
 
 **User Latency** If the UAC is connecting by SIP Auth directly to ConnexCS. It is possible to view latency graphs. For this make sure that SIP Ping is enabled from Customer > Auth > NAT / SIP Ping > Enabled. Also ensure that "Disable UAC Ping" is unticked in your Server.
 
-### Advanced Media Troubleshooting 
+## Advanced Media Troubleshooting 
 
 **ConnexCS Circuit Test** ConnexCS can be setup to perform automated circuit tests. A call is sent outbound and can complete a full circuit, as well as testing other metrics, MOS is checked. This is a measure of audio quality, a long running test can notice trends even before your customers do.
 
