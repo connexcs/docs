@@ -1,5 +1,5 @@
 # Carrier
-**Management :material-menu-right: Carrier **
+**Management :material-menu-right: Carrier**
 
 The **Carrier** section in **ConnexCS** allows for simplified Carrier management where you can add, configure, and delete Carriers. 
 

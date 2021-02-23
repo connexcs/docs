@@ -36,7 +36,7 @@ To enable, click the **:material-plus:** next to IP Authentication:
 === "Advanced"
 
     + **Manufacturer and Version**: These references fields allow you to enter the customer switch Manufacturer and Version if desired (these fields are not functional; they are informational only).
-    + **Protocol**: This sets the type of signalling protocol for call setup, maintenance, and tear down. ConnexCS uses SIP for signalling, but here you select the transport protocol. (Note: SMPP, for SMS, is not currently supported.)
+    + **Protocol**: This sets the type of signalling protocol for call setup, maintenance, and tear down. ConnexCS uses SIP for signalling, but here you select the transport protocol. (Note: SMPP (used with SMS) is not currently supported.)
     + **Port**: Default = 5060. If using TLS protocol, this should be set to 5061. 
     + **Dial Pattern**: the default selection is the industry standard.
     + **CLI Prefix, Tech Prefix, Strip Digits**:  Do NOT Use these fields. Use the Parameter Rewrite tab to modify numbers. 

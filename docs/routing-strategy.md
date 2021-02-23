@@ -21,7 +21,6 @@ There are several types of routing strategies that can be employed with ConnexCS
 Once a new **Routing Strategy** is created it must be assigned to a customer account. 
 
 **Step 1: Add Routing Strategy**
-To add a new routing strategy:
 
 1. Click the :material-plus: button in the **Routing Strategy** screen.
 2. Name the strategy.
@@ -36,7 +35,6 @@ To add a new routing strategy:
     ![alt text][routing-strategy3]
 
 **Step 2: Assign Routing Strategy to a Customer**
-To set up a routing strategy in a customer's account:
 
 1. Navigate to **Management :material-menu-right: Customer**.
 2. Select the customer account.

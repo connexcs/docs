@@ -125,7 +125,7 @@ The following is a comprehensive list of features included in the latest stable 
 
 * ToS (Disable DID)
 * Serial Forking (Multiple Failover Destinations)
-* Call Forwarding
+* [Call Forwarding](https://docs.connexcs.com/customer/did/#destination)
 * Route Internally / SIP User / External IP Address
 * [Channel and CPS Limitations](https://docs.connexcs.com/limiting-cps/#limiting-cps-channels)
 * Assign Package to DID
@@ -228,10 +228,10 @@ The following is a comprehensive list of features included in the latest stable 
 * Self CLI Verification (via callback)
 * Full API Support
 * Upload your own Logo
-* Customise your Portal
+* [Customise your Portal](https://docs.connexcs.com/setup/integrations/portal/)
 * Custom Forms
 * Custom Origination Details
-* Paypal, Stripe & Pending Bank Transfer Support
+* [Paypal, Stripe & Pending Bank Transfer Support](https://docs.connexcs.com/setup/integrations/api/)
 * Add Payment Details Text
 * Add your own Javascript & CSS
 * [Free SSL Certificate for customer portal](https://docs.connexcs.com/security/#deploying-ssl-certificates)
@@ -244,7 +244,7 @@ The following is a comprehensive list of features included in the latest stable 
 * [Voicemail to Email](https://docs.connexcs.com/class5/voicemail/)
 * Custom Voicemail Message
 * Voicemail Password
-* Call Queues
+* [Call Queues ("Groups")](https://docs.connexcs.com/class5/creating-group/
     * Music on Hold
     * Perodic Announcements
     * Join Message

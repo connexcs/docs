@@ -4,8 +4,9 @@
 
 The **Global** section of the ConnexCS Control Panel provides an account-wide overview of many of the same sections found under **Management :material-menu-right: Customer** or **Carrier**. This can be helpful for troubleshooting issues across customers or for situations where you are trying to locate the customer of a specific a DID. Some of these sections may also be configured and managed from the Global view. 
 
-___
-**Alerts**: View all the Alerts across the entire account. 
+
+## Alerts
+View all the Alerts across the entire account. 
 
 *See [**Alerts**](https://docs.connexcs.com/customer/alerts) for configuration details.*
 
@@ -16,8 +17,9 @@ Alternate location(s):
 
 !!! tip "Testing"
     Click the **`Test`** button (only available here) to simulate the Alert. 
-___
-**Contacts**: View all Customer Contacts. 
+
+## Contacts
+View all Customer Contacts. 
 
 *See [**Contacts**](https://docs.connexcs.com/customer/main) for configuration details.* 
 
@@ -25,8 +27,9 @@ Alternate location(s):
 
 * Customer :material-menu-right: [Customer Name] :material-menu-right: Main
 * Carrier :material-menu-right: [Carrier Name] :material-menu-right: Main
-___
-**CDR**: View CDRs for all Customers. The Global CDR view also allows you to select specific CDRs for Recalculation. 
+
+## CDR
+View CDRs for all Customers. The Global CDR view also allows you to select specific CDRs for Recalculation. 
 
 *See [**CDR**](https://docs.connexcs.com/customer/cdr) for configuration details.*
 
@@ -34,16 +37,18 @@ Alternate location(s):
 
 * Customer :material-menu-right: [Customer Name] :material-menu-right: CDR
 * Carrier :material-menu-right: [Carrier Name] :material-menu-right: CDR
-___
-**Dialogs**: View all active calls across the entire account. 
+
+## Dialogs
+View all active calls across the entire account. 
 
 *See [**Dialogs**](https://docs.connexcs.com/customer/dialogs) for configuration details.*
 
 Alternate location(s):
 
 * Customer :material-menu-right: [Customer Name] :material-menu-right: Dialogs
-___
-**DID**: View list of all DIDs, as well as configuration and editing. 
+
+## DID
+View list of all DIDs, as well as configuration and editing. 
 
 *See [**DID**](https://docs.connexcs.com/customer/did) for configuration details.*
 
@@ -58,8 +63,9 @@ Unlike the Customer DID section, the Global DID sections groups numbers as follo
 * **Inventory**: Unassigned numbers.
 * **Provision**: Uses ConnexCS [**ScriptForge**](https://docs.connexcs.com/developers/scriptforge/) Drivers interface with DID provider APIs so you can allocate new numbers.
 * **Providers List**: Lists all DIDs and associated providers.
-___
-**IP Authentication**: View all configured IP Authentication. 
+
+## IP Authentication
+View all configured IP Authentication. 
 
 *See [**IP Authentication**](https://docs.connexcs.com/customer/auth/#ip-authentication) for configuration details.*
 
@@ -67,24 +73,27 @@ Alternate location(s):
 
 * Customer :material-menu-right: [Customer Name] :material-menu-right: Auth 
 * Carrier :material-menu-right: [Carrier Name] :material-menu-right: Auth 
-___
-**Invoices**: View all Invoices and allocate payments. 
+
+## Invoices
+View all Invoices and allocate payments. 
 
 *See [**Invoices**](https://docs.connexcs.com/customer/invoices) for configuration details.*
 
 Alternate location(s):
 
 * Customer :material-menu-right: [Customer Name] :material-menu-right: Invoices
-___
-**Payment**: All Payments across the account. 
+
+## Payment
+All Payments across the account. 
 
 *See [**Payment**](https://docs.connexcs.com/customer/payment) for configuration details.*
 
 Alternate location(s):
 
 * Customer :material-menu-right: [Customer Name] :material-menu-right: Payment
-___
-**SIP Registration**: View currently registered SIP users. 
+
+## SIP Registration
+View currently registered SIP users. 
 
 *There is no configuration or additional documentation for SIP Registration.*
 
@@ -111,8 +120,9 @@ View active registrations (live calls)  from ConnexCS out.
 
 !!! note "Global View Only"
     This section does not have a corresponding view from within individual Customers. 
-___
-**SIP User Authentication**: View status of all SIP Users. 
+
+## SIP User Authentication
+View status of all SIP Users. 
 
 *See [**SIP User Authentication**](https://docs.connexcs.com/customer/auth/#sip-user-authentication) for configuration details.*
 
