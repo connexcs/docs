@@ -188,4 +188,4 @@ pages:
     - Interconnect: customer-portal/interconnect.md
 
   - WebPhone: 
-    - WebPhone: setup/integrations/webphone.md
+    - WebPhone: webphone.md
