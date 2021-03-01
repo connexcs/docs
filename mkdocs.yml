@@ -132,7 +132,7 @@ pages:
         - Integrations:
             - API: setup/integrations/api.md
             - Portal: setup/integrations/portal.md
-            - WebPhone: setup/integrations/webphone.md
+            - WebPhone: webphone.md
         - Information:
             - Statement: setup/information/statements.md
             - Dial Code / Destination: setup/information/dial-code-destination.md
