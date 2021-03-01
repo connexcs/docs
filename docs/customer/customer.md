@@ -82,7 +82,7 @@ From the **Customers** page, you can perform several management operations.
     + **Reseller**: Associate the customer to a preset Reseller Group (see [**Create Groups**](https://docs.connexcs.com/setup/settings/users/#create-groups) for more details.)
     + **Invoice Schedule**: Specify frequency for invoice generation. 
     + **Invoice Due Days**: Set the allowed number of days past the due date that the invoice can go unpaid. 
-    + **Invoice Template**: Select from a list of existing Templates (these can be created under **Setup :material-menu-right: Config :material-menu-right: [Templates](/setup/config/templates/)**
+    + **Invoice Template**: Select from a list of existing Templates found under **Setup :material-menu-right: Config :material-menu-right: [Templates](/setup/config/templates/)**
 
 === "Address"
     
