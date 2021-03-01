@@ -132,7 +132,7 @@ Your Web Phone should now be available.
     * **Auto Answer** - Automatically answer an incoming call.
 
 ## Web Phone SDK
-The Web Phone SDK (Software Developer Kit) allows developers to integrate WebPhone into your own custom projects. This is available as part of the ConnexCS deployment at no extra charge. The [Web Phone SDK Connector](https://webphone-sdk.connexcs.com/) provides the developer documentation needed to place a call. 
+The **Web Phone SDK (Software Developer Kit)** allows developers to integrate WebPhone into your own custom projects. This is available as part of the ConnexCS deployment at no extra charge. The [**Web Phone SDK Connector**](https://webphone-sdk.connexcs.com/) provides the developer documentation needed to place a call. 
 
 You will need to provide the full URL (ex: http://domain.connexcs.com) and credentials to access Web Phone from within the connector. 
 
