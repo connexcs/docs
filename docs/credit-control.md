@@ -1,7 +1,7 @@
 # Credit Control
 
-## Pre-pay / Post Pay
-ConnexCS uses the **Debit Limit** to differentiate between Pre-Pay and Post-Pay customers. It is a value (in the customer’s currency) that allows the account to drop to a specified amount before calls are stopped.
+## Pre-pay / Post-Pay
+ConnexCS uses the **Debit Limit** to differentiate between Pre-Pay and Post-Pay customers. It is a value (in the customer’s currency) that allows the account to drop to a specified amount before calls are no longer allowed.
 
 1. **Pre-Pay** - Set the Debit Limit to 0.00 for pre-paid customers, indicating their balances should be paid _before_ they are allowed to use services.
 
