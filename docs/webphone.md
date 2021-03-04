@@ -1,7 +1,7 @@
 # Web Phone
 **Setup :material-menu-right: Integrations :material-menu-right: Web Phone**
 
-The ConnexCS **Web Phone** runs directly from a browser without the need to install anything, allowing customers to make calls via the internet using a softphone. If the user wishes to install the application, additional functionality can become available (ex: push notification capabilities while the app is closed). This means that the application has cross-platform functionality, including Windows, Mac, Android, iOS, etc.
+The ConnexCS **Web Phone** runs directly from a browser without the need to install anything, allowing customers to make calls via the internet using a softphone. If the user wishes to install the application, additional functionality can become available (ex: push notification capabilities while the app is closed). With application cross-platform functionality (including Windows, Mac, Android, iOS, etc) this makes it ideal in call center and other similar deployments. 
   
 !!! warning "iOS limitations"
     iOS limits the ability to perform push notifications.
@@ -99,7 +99,7 @@ Your Web Phone should now be available.
     * **Register Success HTML** - Customize a message to display to customers once they have completed their signup process.
 
     !!! example "Template Customer Example"
-    You want to give all of your customers $5.00 credit. Create an account under **Management :material-menu-right: Customer**. Under Payments for that account, add $5.00. When a new customer creates an account from the Customer Portal, they will see a payment created for $5.00 at the same the time account was created.
+        You want to give all of your customers $5.00 credit. Create an account under **Management :material-menu-right: Customer**. Under Payments for that account, add $5.00. When a new customer creates an account from the Customer Portal, they will see a payment created for $5.00 at the same the time account was created.
 
 === "Menu"
 
@@ -130,5 +130,10 @@ Your Web Phone should now be available.
     * **Username as Title** - Change the title of the page to the username logged in.
     * **Accept Payment** - Accept payments, similar to on the customer portal.
     * **Auto Answer** - Automatically answer an incoming call.
+
+## Web Phone SDK
+The **Web Phone SDK (Software Developer Kit)** allows developers to integrate WebPhone into your own custom projects. This is available as part of the ConnexCS deployment at no extra charge. The [**Web Phone SDK Connector**](https://webphone-sdk.connexcs.com/) provides the developer documentation needed to place a call. 
+
+You will need to provide the full URL (ex: http://domain.connexcs.com) and credentials to access Web Phone from within the connector. 
 
 [webphone]: /setup/img/webphone.png "WebPhone Menu"

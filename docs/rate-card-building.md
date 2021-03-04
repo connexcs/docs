@@ -32,7 +32,7 @@ The ConnexCS rate card engine handles arbitrary length prefixes and understands 
 #### Between Cards
 If you have multiple carrier cards and you want to compile them into a single card, pay attention to the **Rate Compact** variable. It will form the strategy we use to output a cost per destination. For instance, use Min if you are dealing with cost sensitive routing, or Max if you are looking at quality driven prices.
 
-!!! note What happens when Min route fails?
+!!! note "What happens when Min route fails?"
     If you use Min as default, calls will be routed to the cheapest provider first, but if that provider does not take the call, it will failover to a more expensive provider.  Keep in mind that this provider may be higher than your profit margins. You can enable Profit Assurance to help alleviate this, but be prepared, Profit Assurance cannot protect against different billing pulses or connection fees.
 
 #### Different Card Types

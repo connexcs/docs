@@ -132,7 +132,7 @@ pages:
         - Integrations:
             - API: setup/integrations/api.md
             - Portal: setup/integrations/portal.md
-            - WebPhone: setup/integrations/webphone.md
+            - WebPhone: webphone.md
         - Information:
             - Statement: setup/information/statements.md
             - Dial Code / Destination: setup/information/dial-code-destination.md
@@ -153,24 +153,24 @@ pages:
         - Specification: spec.md        
 
     - Topical Guides:
-        - ConnexCS Basics: guides/basics-guide.md
-        - Billing: guides/billing-guide.md
+        - ConnexCS Basics: 
+            - Acronyms and Definitions: acronyms-and-definitions.md
+            - Changing Language: changing-language.md
+            - Changing Password: changing-password.md
+            - Logging Out: logging-out.md
+            - Number Manipulation: number-manipulation.md
+        - Billing:
+            - Billing: guides/billing-guide.md
+            - Connex Billing: billing.md
+            - Credit Control: credit-control.md
         - Customer Documents: guides/doc-guide.md
+        - Features:
+            - Feature List: feature-list.md
+            - Do Not Call lists: dnc.md
+            - Calling Card: calling-card.md
+            - Capacity Limiting: limiting-cps.md
         - Monitoring: guides/monitoring.md
         - Troubleshooting: guides/tshoot-guide.md
-        
-    - Miscellaneous:
-        - Acronyms and Definitions: acronyms-and-definitions.md
-        - Connex Billing: billing.md
-        - Calling Card: calling-card.md       
-        - Capacity Limiting: limiting-cps.md
-        - Credit Control: credit-control.md
-        - Do Not Call lists: dnc.md
-        - Feature List: feature-list.md
-        - Number Manipulation: number-manipulation.md
-        - Changing Language: changing-language.md
-        - Changing Password: changing-password.md
-        - Logging Out: logging-out.md
 
   - Customer Portal:
     - Guides: customer-portal/customer-portal.md
@@ -188,4 +188,4 @@ pages:
     - Interconnect: customer-portal/interconnect.md
 
   - WebPhone: 
-    - WebPhone: setup/integrations/webphone.md
+    - WebPhone: webphone.md

@@ -67,7 +67,7 @@ From the **Customers** page, you can perform several management operations.
         
         :material-menu-right: `Pending Approval`: New signups are listed as Pending Approval. The customer cannot pass calls or become active until this phase is completed. 
     
-    * **Debit Limit:** How much the account can do into the negative (typically only relevant for post-pay customers).
+    * **Debit Limit:** How much the account can go into the negative (typically only relevant for post-pay customers). See [**Credit Control**](/credit-control/) for details. 
     * **Minimum Payment:** Set the minimum payment a customer can add to recharge the account. 
     * **Tax:** Tax is added as a percentage that is charged on top of costs. (UK = VAT; US = Sales Tax)
     * **Currency:** Select the currency from the dropdown menu. Note that you won't be able to change the account currency once the account is created.
@@ -82,7 +82,7 @@ From the **Customers** page, you can perform several management operations.
     + **Reseller**: Associate the customer to a preset Reseller Group (see [**Create Groups**](https://docs.connexcs.com/setup/settings/users/#create-groups) for more details.)
     + **Invoice Schedule**: Specify frequency for invoice generation. 
     + **Invoice Due Days**: Set the allowed number of days past the due date that the invoice can go unpaid. 
-    + **Invoice Template**: Select from a list of existing Templates (these can be created under **Setup :material-menu-right: Config :material-menu-right: [Templates](/setup/config/templates/)**
+    + **Invoice Template**: Select from a list of existing Templates found under **Setup :material-menu-right: Config :material-menu-right: [Templates](/setup/config/templates/)**
 
 === "Address"
     

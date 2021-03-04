@@ -132,6 +132,15 @@ To enable, click the **:material-plus:** next to SIP User Authentication:
 Click **`Save`** to add the new SIP User.
 ___
 
+### Reset SIP Password
+
+Click the `Password` key next to the SIP user to reset the password. Optionally, use the `Generate Password` button to generate a random and secure SIP password. Make sure you `Copy Text` and provide this information for configuration as this password can't be retrieved after it has been set. 
+
+!!! warning "SIP Password security"
+    SIP passwords are a requirement of the SIP protocol but can present security risks for a provider. They must be configured in ConnexCS when SIP authentication is setup but are not available for providers or customers to retrieve afterwards. Providers should generate a unique SIP password for each SIP user and send that to the customer. This gives the customer the responsibility of keeping track of the password and keeping it safe. Additionally, the unique password will allow for traceability if the customer's system is ever compromised. 
+    
+### Send message to SIP Users
+Use the `Send` button next to the SIP User to send a SIP message to the end device which will flash on the phone. 
 
 ### Use Case for NAT/SIP Pings 
 
@@ -149,15 +158,6 @@ Ex: Customer switch :material-menu-right: NAT/firewall :material-menu-right: Con
 + Without regular traffic passing between UAS and UAC in the form of keep-alives/registration (a normal occurance), NAT will eventually time out and shut down the connection. 
 + Enabling UDP or SIP pings can demonstrate to the NAT/firewall that the signalling path is still valid and in use. 
 
-### Reset SIP Password
-
-Click the `Password` key next to the SIP user to reset the password. 
-
-!!! warning "SIP Password security"
-    SIP passwords are a requirement of the SIP protocol but can present security risks for a provider. They must be configured in ConnexCS when SIP authentication is setup but are not available for providers or customers to retrieve afterwards. Providers should generate a unique SIP password for each SIP user and send that to the customer. This gives the customer the responsibility of keeping track of the password and keeping it safe. Additionally, the unique password will allow for traceability if the customer's system is ever compromised. 
-    
-### Send message to SIP Users
-Use the `Send` button next to the SIP User to send a SIP message to the end device which will flash on the phone. 
 
 [ipauth-basic]: /customer/img/ipauth-b.png "Edit Switch Basic"
 [parameter-rewrite]: /customer/img/parameter-rewrite.png "Parameter Rewrite" width="200" height="400"

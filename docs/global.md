@@ -122,7 +122,7 @@ View active registrations (live calls)  from ConnexCS out.
     This section does not have a corresponding view from within individual Customers. 
 
 ## SIP User Authentication
-View status of all SIP Users. 
+View status of all SIP Users, reset the SIP Password (including the option to generate one), and send a message to the SIP User. 
 
 *See [**SIP User Authentication**](https://docs.connexcs.com/customer/auth/#sip-user-authentication) for configuration details.*
 
