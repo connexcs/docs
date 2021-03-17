@@ -43,6 +43,24 @@ Use this comparison chart listing the differences between Mass Pay and Express C
 |Sender pays a 2% transaction fee, capped at $1 per payment.|Recipient pays by per-transaction deductions.|
 |Uses PayPal IPN.|Uses PayPal API Signature.|
 
+## PayPal Express Checkout
+Enter the PayPal credentials into your account.
+
+1. Select **`Add`** then **PayPal**.
+1. **Mode**: User `Test` for testing connections or `Live` for an active account.
+1. To find your **Username**, **Password**, and **Signature**:
+    + Access your PayPal account, navigate to **Settings :material-menu-right: Account Settings :material-menu-right: Account Access**.
+    + Click the **`Update`** button for **API Access**.
+    + Select **Manage API Credentials** under **NVP/SOAP API integration (Classic)** section. 
+    + Select **Request API signature**, then **`Agree and Submit`**.
+6. Copy the **API Username**, **API Password**, and **Signature** credentials from this page into the open PayPal form in ConnexCS. 
+    
+    ![alt text][paypal-9] 
+
+1. **Currency**: Select one or more currencies that you will accept. 
+1. **Deduct Payment Fees**: Set whether you will deduct the fees or not.
+1. Click **`Save`**.
+
 ## PayPal IPN Integration
 PayPal's **Instant Payment Notification (IPN)** is a service that provides notifications for PayPal transactions. IPN messages can be used to automate bulk payment processes, where consumers still send PayPal payments as normal. Payments made using this integration will automatically top-up the customer account in ConnexCS. For this to work, settings need to be configured on the ConnexCS control panel as well as PayPal.
 
@@ -51,43 +69,25 @@ Below are the steps to configure IPN:
 
 **Step 1: Configure ConnexCS**
 
-1. Click **`Add`**.
-2. Select **PayPal IPN** and update the following:
+1. Select **`Add`** then **PayPal IPN**.
+2. Update the following:
     + **IPN URL**: This should never be modified, you will need it later to complete the integration.
     + **Payment Type**: Select "Mass Pay" (described above) or "Send Money" (fees may apply).
-    + **Verify Transaction**: ConnexCS will check with PayPal to make sure the transaction is correct
+    + **Verify Transaction**: If selected, ConnexCS will check with PayPal to make sure the transaction is correct
     + **Currency**: Select one or more currencies that you will accept. 
     + **Deduct Payment Fees**: Set whether you will deduct the fees or not.
 3. Click **`Save`**.
 4. To find the IPN URL (needed later in configuration), open the **`paypal_ipn`** now listed in API.
 
 **Step 2: Identify your IPN listener to PayPal**
-
 After you have configured ConnexCS, add it to your PayPal account. (Copied from PayPal instructions [**here**](https://developer.paypal.com/docs/api-basics/notifications/ipn/IPNSetup/#).)
 
 1. Login to a PayPal Business Account (A PayPal Business Account--not to be confused with a regular PayPal account--is required to perform this task.)
-2. Navigate to Settings > Account Settings > Notifications
+2. Navigate to **Settings > Account Settings > Notifications**.
 3. Select **Update** next to **Instant payment notifications**.
 4. Click **Choose IPN Settings**.
 5. Enter the IPN URL under **Notification URL** and select **Receive IPN Messages (Enabled)** click **Save**. 
 6. Fill in the settings, and then copy the API URL.
-
-**Step 3: Insert credentials in your ConnexCS Account**
-
-Enter the new credentials back into your account. (PayPal steps copied from PayPal instructions [**here**](https://developer.paypal.com/docs/api-basics/notifications/ipn/IPNSetup/#).)
-
-1. Navigate to **Setup :material-menu-right: Integrations :material-menu-right: API **
-1. Select Add :material-menu-right: PayPal.
-1. Select the **Mode**: Test for testing connections or Live for an active account
-1. In your PayPal account, navigate to Settings :material-menu-right: Account Settings :material-menu-right: Account Access.
-1. Click the **`Update`** button for **API Access**.
-1. Select **Manage API Credentials** under **NVP/SOAP API integration (Classic)** section. 
-1. Select **Request API signature**, then **`Agree and Submit`**.
-1. Copy the **API Username**, **API Password**, and **Signature** credentials from this page into the open PayPal form in ConnexCS. 
-    
-    ![alt text][paypal-9] 
-
-1. Press **`Save`**.
 
 ### Configure Customer with PayPal Email address
 The following are instructions on how to add a PayPal Email address to a ConnexCS customer account:
@@ -100,6 +100,9 @@ The following are instructions on how to add a PayPal Email address to a ConnexC
 
 ### View PayPal IPN Payment Log
 These payments can be viewed under **Setup > Information > Payment Log**. 
+
+## Stripe
+*In Progress*
 
 [paypal-9]: /setup/img/paypal-9.png "Paypal-9"
 [api]: /setup/img/api.png "API Integration"
