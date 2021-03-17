@@ -9,8 +9,8 @@
 * **PayPal IPN** - For customers who wish to use a PayPal feature called MassPay, or want send money from the PayPal portal without using your site, IPN can be enabled. This notifies the system of incoming PayPal payments and we can top-up based on that notification. See [**PayPal IPN Integration**](https://docs.connexcs.com/setup/integrations/api/#paypal-ipn-integration) below for specific details and setup. 
 * **Stripe** - Possibly the world's best credit card processor, [**Stripe**](https://www.stripe.com) can be made available on your customer portal.
 * **Duo Security** - With [**Duo Security**](https://duo.com/) we can provide 2FA (2 Factor Authentication) via an out-of-band push notification to your mobile device when you sign in. This can then be approved and also benefit from fingerprint authentication. 
-* **Moneris** - A Canadian Credit Card Processing service, [**Moneris**](https://www.moneris.com/]) can be made available on your customer portal.
-* **ScriptForge** - [**ScriptForge**](/developers/scriptforge/) is ConnexCS's Javascript Sandbox environment which you can use to write drivers to intermediate connectivity to a large variety of providers.
+* **Moneris** - A Canadian Credit Card Processing service, [**Moneris**](https://www.moneris.com/) can be made available on your customer portal.
+* **ScriptForge** - [**ScriptForge**](/developers/scriptforge/) is the ConnexCS Javascript Sandbox environment which you can use to write drivers to intermediate connectivity to a large variety of providers.
 * **Razor Pay** - [**Razor Pay**](https://razorpay.com/) is a large payment processor from India.
 
 ## Enable API Integration
@@ -43,11 +43,11 @@ Use this comparison chart listing the differences between Mass Pay and Express C
 |Sender pays a 2% transaction fee, capped at $1 per payment.|Recipient pays by per-transaction deductions.|
 |Uses PayPal IPN.|Uses PayPal API Signature.|
 
-## PayPal Express Checkout
+## PayPal Express Checkout Integration
 Enter the PayPal credentials into your account.
 
 1. Select **`Add`** then **PayPal**.
-1. **Mode**: User `Test` for testing connections or `Live` for an active account.
+1. **Mode**: Use `Test` for testing connections or `Live` for an active account.
 1. To find your **Username**, **Password**, and **Signature**:
     + Access your PayPal account, navigate to **Settings :material-menu-right: Account Settings :material-menu-right: Account Access**.
     + Click the **`Update`** button for **API Access**.
@@ -71,9 +71,9 @@ Below are the steps to configure IPN:
 
 1. Select **`Add`** then **PayPal IPN**.
 2. Update the following:
-    + **IPN URL**: This should never be modified, you will need it later to complete the integration.
+    + **IPN URL**: This should never be modified; you will need it later to complete the integration.
     + **Payment Type**: Select "Mass Pay" (described above) or "Send Money" (fees may apply).
-    + **Verify Transaction**: If selected, ConnexCS will check with PayPal to make sure the transaction is correct
+    + **Verify Transaction**: If selected, ConnexCS will check with PayPal to make sure the transaction is correct.
     + **Currency**: Select one or more currencies that you will accept. 
     + **Deduct Payment Fees**: Set whether you will deduct the fees or not.
 3. Click **`Save`**.
@@ -99,10 +99,44 @@ The following are instructions on how to add a PayPal Email address to a ConnexC
 1. Enter the customer PayPal email ID and click **`Save`**.
 
 ### View PayPal IPN Payment Log
-These payments can be viewed under **Setup > Information > Payment Log**. 
+These payments can be viewed under **Setup :material-menu-right: Information :material-menu-right: Payment Log**. 
 
-## Stripe
-*In Progress*
+## Stripe Integration
+Configure the Stripe API Keys in ConnexCS:
+
+1. Select **`Add`** then **Stripe**.
+1. **Mode**: Use `Test` for testing connections or `Live` for an active account.
+2. **Public Key** (Publishable) and **Private Key** (Secret): Access the [**Stripe Dashboard**](https://dashboard.stripe.com/account/apikeys)(login if necessary) to access your keys (from [**Stripe Support**](https://stripe.com/docs/keys); `Test` keys are also found at that link). 
+4. **Currencies**: Select one or more currencies that you will accept.
+
+## Duo Security Integration
+Configure Duo Security settings in ConnexCS:
+
+1. Select **`Add`** then **Stripe**.
+2. **Integration Key**, **Secret**, and **Host**: Access the [**Duo Admin Panel**](https://admin.duosecurity.com/), locate **`Auth API`**, click `Protect` (from [**Duo Auth support**](https://duo.com/docs/authapi)). Find the **Integration Key**, **Secret Key**, and **API Hostname** to complete setup in ConnexCS. 
+
+## Moneris Integration
+
+1. Select **`Add`** then **Moneris**.
+2. **Store ID**: This can be found in the MRC Welcome emails (contact [**Moneris**](https://www.moneris.com/) for assistance finding this). 
+
+## Scriptforge Integration
+
+1. Select **`Add`** then **Scriptforge**.
+2. **Company**: Select the customer to integrate. 
+3. **Script Forge**: Select the predefined script (details found under [**Developer :material-menu-right: Scriptforge**](/developers/scriptforge/). 
+
+## Razor Pay Integration
+Enter Razorpay settings into ConnexCS:
+
+1. Select **`Add`** then **Razorpay**.
+2. **Mode**: Use `Test` for testing connections or `Live` for an active account.
+3. **Key ID** and **Key Secret**: Access [**Razorpay Dashboard**](http://dashboard.razorpay.com/), go to Settings and Generate Test Key (from [**Razorpay support**](https://knowledgebase.razorpay.com/support/solutions/articles/11000060257-how-do-i-generate-the-api-keys-))
+1. **Currency**: Select one or more currencies that you will accept. 
+1. **Deduct Payment Fees**: Set whether you will deduct the fees or not.
+
+## Xero Integration
+*Coming soon*
 
 [paypal-9]: /setup/img/paypal-9.png "Paypal-9"
 [api]: /setup/img/api.png "API Integration"
