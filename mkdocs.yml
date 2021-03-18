@@ -70,9 +70,7 @@ pages:
     - Rate Cards:
         - Rate Card Overview: rate-card-building.md
         - Provider Rate Card: provider-ratecard.md
-        - Customer Rate Card: customer-ratecard.md
-    
-    - Voucher: voucher.md 
+        - Customer Rate Card: customer-ratecard.md 
     
     - Routing:
         - Routing Overview: routing.md
@@ -82,15 +80,11 @@ pages:
 
     - SIP Devices: sip-devices.md
     
-    - File: files.md
-    
     - Report: report.md  
         
     - Status: system-status.md
 
     - Global: global.md
-    
-    - Logging: logging.md
     
     - Class 5:
         - Apps: class5/apps.md
@@ -161,16 +155,20 @@ pages:
             - Billing: guides/billing-guide.md
             - Connex Billing: billing.md
             - Credit Control: credit-control.md
-        - Customer Documents: guides/doc-guide.md
+            - Voucher: voucher.md
+        - Documents and Files: 
+            - Document Guide: guides/doc-guide.md
+            - File: files.md
         - Features:
-            - Feature List: feature-list.md
             - Do Not Call lists: dnc.md
             - Calling Card: calling-card.md
             - Capacity Limiting: limiting-cps.md
+            - Feature List: feature-list.md
         - Monitoring: guides/monitoring.md
         - Troubleshooting: 
-            - Troubleshooting Guide: guides/tshoot-guide.md
             - Circuit Test: circuit-test.md
+            - Logging: logging.md
+            - Troubleshooting Guide: guides/tshoot-guide.md
 
   - Customer Portal:
     - Guides: customer-portal/customer-portal.md
