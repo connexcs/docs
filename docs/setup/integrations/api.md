@@ -5,31 +5,35 @@
 
 ## Available Integrations
 
-* **PayPal Express Checkout** - Allows online checkout via the customer portal using a [**PayPal**](https://www.paypal.com) Account.
-* **PayPal IPN** - For customers who wish to use a PayPal feature called MassPay, or want send money from the PayPal portal without using your site, IPN can be enabled. This notifies the system of incoming PayPal payments and we can top-up based on that notification. See [**PayPal IPN Integration**](https://docs.connexcs.com/setup/integrations/api/#paypal-ipn-integration) below for specific details and setup. 
-* **Stripe** - Possibly the world's best credit card processor, [**Stripe**](https://www.stripe.com) can be made available on your customer portal.
-* **Duo Security** - With [**Duo Security**](https://duo.com/) we can provide 2FA (2 Factor Authentication) via an out-of-band push notification to your mobile device when you sign in. This can then be approved and also benefit from fingerprint authentication. 
-* **Moneris** - A Canadian Credit Card Processing service, [**Moneris**](https://www.moneris.com/) can be made available on your customer portal.
-* **ScriptForge** - [**ScriptForge**](/developers/scriptforge/) is the ConnexCS Javascript Sandbox environment which you can use to write drivers to intermediate connectivity to a large variety of providers.
-* **Razor Pay** - [**Razor Pay**](https://razorpay.com/) is a large payment processor from India.
+**PayPal Express Checkout** Allows online checkout via the customer portal using a [**PayPal**](https://www.paypal.com) Account. 
+
+**PayPal IPN** Enable IPN to use MassPay or to send money from the PayPal portal without using your site. This also notifies the system of incoming PayPal payments and we can top-up based on that notification.  
+
+**Stripe** Possibly the world's best credit card processor, [**Stripe**](https://www.stripe.com) can be made available on your customer portal.
+
+**Duo Security** With [**Duo Security**](https://duo.com/) we can provide 2FA (2 Factor Authentication) via an out-of-band push notification to your mobile device to approve login. It also provides fingerprint authentication for extra security. 
+
+**Moneris** [**Moneris**](https://www.moneris.com/) is Canadian Credit Card Processing service.
+
+**ScriptForge** [**ScriptForge**](/developers/scriptforge/) is the ConnexCS JavaScript Sandbox environment where you can write drivers to intermediate connectivity to a large variety of providers.
+
+**Razor Pay** [**Razor Pay**](https://razorpay.com/) is a large payment processor from India.
 
 ## Enable API Integration
 
 1. Click the **`Add`** button.
-2. Select the desired service from the drop-list.
+2. Select the desired service from the list.
 
     ![alt text][api]
 
-3. Select the Mode (PayPal Express, Stripe, ScriptForge, Razor Pay only): 
-    + **Test** for testing connections
-    + **Live** for an active account
-4. Complete the dialog box and press the **`Save `** button.
+3. Complete the available fields (see individual API integrations below for details for each provider).
+4. Click the **`Save `** button.
 
 !!! info "API Service details"
     Each service requires different details. These can be obtained using your account with the specific provider(s). 
     
 ## Compare PayPal options
-**Mass Payment** is a bulk payment method that sends funds in an uploaded file to PayPal, allowing the sender to pay less than the standard PayPal fees using their bulk order discounts. Since this payment doesn't trigger anything our VoIP system, we link into PayPal's IPN to accommodate notifications and balance sheet updates.
+**Mass Payment** is a bulk payment method that sends funds in an uploaded file to PayPal, allowing the sender to pay less than the standard PayPal fees using their bulk order discounts. Since this payment does not trigger anything our VoIP system, we link into PayPal's IPN to accommodate notifications and balance sheet updates.
 
 **Mass Pay vs Express Checkout**
 
@@ -80,9 +84,10 @@ Below are the steps to configure IPN:
 4. To find the IPN URL (needed later in configuration), open the **`paypal_ipn`** now listed in API.
 
 **Step 2: Identify your IPN listener to PayPal**
-After you have configured ConnexCS, add it to your PayPal account. (Copied from PayPal instructions [**here**](https://developer.paypal.com/docs/api-basics/notifications/ipn/IPNSetup/#).)
 
-1. Login to a PayPal Business Account (A PayPal Business Account--not to be confused with a regular PayPal account--is required to perform this task.)
+After you have configured ConnexCS, add it to your PayPal account (taken from PayPal support [**here**](https://developer.paypal.com/docs/api-basics/notifications/ipn/IPNSetup/#)).
+
+1. Login to a PayPal Business Account (must be a Business account, not a regular PayPal account).
 2. Navigate to **Settings > Account Settings > Notifications**.
 3. Select **Update** next to **Instant payment notifications**.
 4. Click **Choose IPN Settings**.
@@ -116,6 +121,7 @@ Configure Duo Security settings in ConnexCS:
 2. **Integration Key**, **Secret**, and **Host**: Access the [**Duo Admin Panel**](https://admin.duosecurity.com/), locate **`Auth API`**, click `Protect` (from [**Duo Auth support**](https://duo.com/docs/authapi)). Find the **Integration Key**, **Secret Key**, and **API Hostname** to complete setup in ConnexCS. 
 
 ## Moneris Integration
+Link Moneris to ConnexCS:
 
 1. Select **`Add`** then **Moneris**.
 2. **Store ID**: This can be found in the MRC Welcome emails (contact [**Moneris**](https://www.moneris.com/) for assistance finding this). 
