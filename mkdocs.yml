@@ -76,12 +76,8 @@ pages:
         - Routing Strategy: routing-strategy.md
         - Routing Global: global-routing.md
         - USA Routing: routing-usa.md
-
-    - SIP Devices: sip-devices.md
     
     - Report: report.md  
-        
-    - Status: system-status.md
 
     - Global: global.md
     
@@ -164,6 +160,8 @@ pages:
             - Capacity Limiting: limiting-cps.md
             - Feature List: feature-list.md
         - Monitoring: guides/monitoring.md
+        - SIP Devices: sip-devices.md
+        - Status Page (for Customer Portals): system-status.md
         - Troubleshooting: 
             - Circuit Test: circuit-test.md
             - Logging: logging.md
