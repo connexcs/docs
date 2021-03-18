@@ -39,7 +39,6 @@ pages:
     - Home: index.md
     - Getting Started: getting-started.md
     - Customer Support: reporting-problems.md
-    - Video Guide: video-guide.md
     - Dashboard : dashboard.md
 
     - Customer:
@@ -145,17 +144,17 @@ pages:
         - Specifications: spec.md        
 
     - Topical Guides:
+        - Billing:
+            - Billing: guides/billing-guide.md
+            - Connex Billing: billing.md
+            - Credit Control: credit-control.md
+            - Voucher: voucher.md
         - ConnexCS Basics: 
             - Acronyms and Definitions: acronyms-and-definitions.md
             - Changing Language: changing-language.md
             - Changing Password: changing-password.md
             - Logging Out: logging-out.md
             - Number Manipulation: number-manipulation.md
-        - Billing:
-            - Billing: guides/billing-guide.md
-            - Connex Billing: billing.md
-            - Credit Control: credit-control.md
-            - Voucher: voucher.md
         - Documents and Files: 
             - Document Guide: guides/doc-guide.md
             - File: files.md
@@ -169,6 +168,7 @@ pages:
             - Circuit Test: circuit-test.md
             - Logging: logging.md
             - Troubleshooting Guide: guides/tshoot-guide.md
+        - Video Guide: video-guide.md
 
   - Customer Portal:
     - Guides: customer-portal/customer-portal.md
