@@ -26,7 +26,10 @@ When calls won't connect or stay connected, this is typically related to signall
 + Setup Issues- outbound calls don't connect (typically there is an error message), inbound calls are not delivered to the correct desitnation or are not received by the ConnexCS switch at all
 
 ### Calls disconnect randomly
-+ Maintenance Issues- calls disconnect on their own (neither ends hangs up)
++ Maintenance Issues- calls disconnect on their own (neither ends initiates the hang up, but the call disconnects)
 
 ### Calls don't disconnect after both sides hang up
 + Tear Down issues- customer is billed for call duration in excess of the actual call duration
+
+## Using SIP Traces to diagnose issues
+ConnexCS records and stores SIP trace captures for all calls for 7 days. This data is accessed in [**Logging**](/logging)
