@@ -86,7 +86,7 @@ pages:
 
     - Global: global.md
     
-    - Class 5:
+    - Class 5 (UCS):
         - Apps: class5/apps.md
         - Conference: class5/creating-conference.md
         - IVR: class5/creating-ivr.md
@@ -142,7 +142,7 @@ pages:
         - Security: security.md
         - Media Handling: media-handling.md
         - Scaling and Load Balancing: scaling-load-balancing.md
-        - Specification: spec.md        
+        - Specifications: spec.md        
 
     - Topical Guides:
         - ConnexCS Basics: 
