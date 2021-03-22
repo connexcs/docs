@@ -43,4 +43,4 @@ Calls may fail to connect, whether that is calls placed by our customers or call
 ConnexCS records and stores SIP trace captures for all calls for 7 days. This data is accessed in [**Logging**](/logging)
 
 
-[signal-flow]: /docs/guides/img/signal-flow.png "Troubleshoot Signalling"
+[signal-flow]: /guides/img/signal-flow.png "Troubleshoot Signalling Issues"
