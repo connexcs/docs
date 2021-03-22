@@ -38,7 +38,7 @@ Order of Sections:
     
 + Most Images should be indented 4 spaces (some exceptions are when it begins a section, or a small image is inserted into text). This is accomplished in two ways:
     + If the image appears in or just after a list, enter 4 spaces prior to the "alt text" tag
-    + For images that are not in/after a list, add "&emsp;" before the "alt text" tag
+    + For images that are not in/after a list, add "/&emsp;" before the "alt text" tag
 + For images that appear too big, you can resize the file on your computer and then upload to replace the existing file (I use Paint for lack of something better, but it works!)
 + All images have a "connexblue" border, 5px in Paint (apply this after resizing for consistency, or it will resize the border as well, which makes the image look different from the others)
 
