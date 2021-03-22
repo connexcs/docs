@@ -155,7 +155,7 @@ pages:
             - Document Guide: guides/doc-guide.md
             - File: files.md
         - Features:
-            - 3-Digit Dialing: 3dig-ext.md
+            - 3-Digit Dialing: guides/3dig-ext.md
             - Do Not Call lists: dnc.md
             - Calling Card: calling-card.md
             - Capacity Limiting: limiting-cps.md
