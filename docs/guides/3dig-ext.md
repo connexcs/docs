@@ -2,15 +2,15 @@
 There are numerous ways to setup 3-digit dialing. This is a basic setup for quick deployment. 
 
 
-1. Setup [**Internal Number Block**](/customer/main/#internal-number-block) for customer.
+1. Setup an [**Internal Number Block**](/customer/main/#internal-number-block) for the customer.
 
     ![alt text][3dig-1]
 
-2. Setup an [**Alias**](/customer/alias/) for each extension 
+2. Setup an [**Alias**](/customer/alias/) for each extension.
 
     ![alt text][3dig-2]
 
-3. Document internal extensions in the [**Phonebook**](/class5/phonebook/)(this step is not so much functional as reference)
+3. Document internal extensions in the [**Phonebook**](/class5/phonebook/) (this step is not so much functional as reference).
 
     ![alt text][3dig-2]
 
