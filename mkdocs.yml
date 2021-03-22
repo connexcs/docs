@@ -141,7 +141,7 @@ pages:
 
     - Topical Guides:
         - Billing:
-            - Billing: guides/billing-guide.md
+            - Billing Guide: guides/billing-guide.md
             - Connex Billing: billing.md
             - Credit Control: credit-control.md
             - Voucher: voucher.md
