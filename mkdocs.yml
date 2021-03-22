@@ -39,7 +39,6 @@ pages:
     - Home: index.md
     - Getting Started: getting-started.md
     - Customer Support: reporting-problems.md
-    - Video Guide: video-guide.md
     - Dashboard : dashboard.md
 
     - Customer:
@@ -70,31 +69,19 @@ pages:
     - Rate Cards:
         - Rate Card Overview: rate-card-building.md
         - Provider Rate Card: provider-ratecard.md
-        - Customer Rate Card: customer-ratecard.md
-    
-    - Voucher: voucher.md 
+        - Customer Rate Card: customer-ratecard.md 
     
     - Routing:
         - Routing Overview: routing.md
         - Routing Strategy: routing-strategy.md
         - Routing Global: global-routing.md
         - USA Routing: routing-usa.md
-
-    - SIP Devices: sip-devices.md
-    
-    - File: files.md
-    
-    - Circuit Test: circuit-test.md
     
     - Report: report.md  
-        
-    - Status: system-status.md
 
     - Global: global.md
     
-    - Logging: logging.md
-    
-    - Class 5:
+    - Class 5 (UCS):
         - Apps: class5/apps.md
         - Conference: class5/creating-conference.md
         - IVR: class5/creating-ivr.md
@@ -150,27 +137,36 @@ pages:
         - Security: security.md
         - Media Handling: media-handling.md
         - Scaling and Load Balancing: scaling-load-balancing.md
-        - Specification: spec.md        
+        - Specifications: spec.md        
 
     - Topical Guides:
+        - Billing:
+            - Billing: guides/billing-guide.md
+            - Connex Billing: billing.md
+            - Credit Control: credit-control.md
+            - Voucher: voucher.md
         - ConnexCS Basics: 
             - Acronyms and Definitions: acronyms-and-definitions.md
             - Changing Language: changing-language.md
             - Changing Password: changing-password.md
             - Logging Out: logging-out.md
             - Number Manipulation: number-manipulation.md
-        - Billing:
-            - Billing: guides/billing-guide.md
-            - Connex Billing: billing.md
-            - Credit Control: credit-control.md
-        - Customer Documents: guides/doc-guide.md
+        - Documents and Files: 
+            - Document Guide: guides/doc-guide.md
+            - File: files.md
         - Features:
-            - Feature List: feature-list.md
             - Do Not Call lists: dnc.md
             - Calling Card: calling-card.md
             - Capacity Limiting: limiting-cps.md
+            - Feature List: feature-list.md
         - Monitoring: guides/monitoring.md
-        - Troubleshooting: guides/tshoot-guide.md
+        - SIP Devices: sip-devices.md
+        - Status Page (for Customer Portals): system-status.md
+        - Troubleshooting: 
+            - Circuit Test: circuit-test.md
+            - Logging: logging.md
+            - Troubleshooting Guide: guides/tshoot-guide.md
+        - Video Guide: video-guide.md
 
   - Customer Portal:
     - Guides: customer-portal/customer-portal.md
