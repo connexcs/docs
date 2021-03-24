@@ -27,12 +27,12 @@ Calls may fail to connect, whether that is calls placed by our customers or call
 
 **Outbound calls** When outbound don't connect this could be an issue with the ConnexCS configuration or it could be due to some sort of issue on the platform or with the carrier, or even the far-end/desitnation carrier/customer/configuration. Here is a suggested flow for troubleshooting:
 
-test4
+test5
 
 ```mermaid
 graph TD
-A[Check ConnexCS Status Page.] --> C[Check Register Logging]
 A[Check ConnexCS Status Page.] --> B[[Follow Instructions on Status Page]]
+A[Check ConnexCS Status Page.] --> C[Check Register Logging]
 C --> E{{Check SIP Traces}}    
 C --> D[[Troubleshoot registration.]]
 E --> G{{Simulate call.}}
