@@ -1,5 +1,5 @@
 # Billing Guide
-See [**Connex Billing**](billing) for details on Per Channel and Per Minute models. 
+See [**Connex Billing**](/billing) for details on Per Channel and Per Minute models. 
 
 See [**Credit Control**](/credit-control) for tips on managing customer credit. 
 
