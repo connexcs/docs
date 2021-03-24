@@ -27,6 +27,8 @@ Calls may fail to connect, whether that is calls placed by our customers or call
 
 **Outbound calls** When outbound don't connect this could be an issue with the ConnexCS configuration or it could be due to some sort of issue on the platform or with the carrier, or even the far-end/desitnation carrier/customer/configuration. Here is a suggested flow for troubleshooting:
 
+test
+
 ```mermaid
 graph TD
 A[Check ConnexCS Status Page.]-->|No issue Reported| C{{Check Register Logging}}
@@ -40,11 +42,6 @@ G -->|I need additional assistance| I{Report a problem.}
 B -->|I need additional assistance| I{Report a problem.}
 D -->|I need additional assistance| I{Report a problem.}
 F -->|I need additional assistance| I{Report a problem.}
-click A call callback(https://status.connexcs.com/)
-click C call callback(https://docs.connexcs.com/logging/#register-logging)
-click E call callback(https://docs.connexcs.com/logging/#sip-traces)
-click G call callback(https://docs.connexcs.com/logging/#simulate)
-click I call callback(https://docs.connexcs.com/reporting-problems/#report-a-problem)
 ```
 
 + Inbound calls are not delivered to the correct desitnation or are not received by the ConnexCS switch at all
