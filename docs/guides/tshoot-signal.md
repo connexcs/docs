@@ -27,7 +27,26 @@ Calls may fail to connect, whether that is calls placed by our customers or call
 
 **Outbound calls** When outbound don't connect this could be an issue with the ConnexCS configuration or it could be due to some sort of issue on the platform or with the carrier, or even the far-end/desitnation carrier/customer/configuration. Here is a suggested flow for troubleshooting:
 
-[![SIGF](https://mermaid.ink/img/eyJjb2RlIjoiZ3JhcGggVERcbiAgICBBW0NoZWNrIENvbm5leENTIFN0YXR1cyBQYWdlLl0tLT58Tm8gaXNzdWUgUmVwb3J0ZWR8IEN7e0NoZWNrIFJlZ2lzdGVyIExvZ2dpbmd9fVxuICAgIEFbQ2hlY2sgQ29ubmV4Q1MgU3RhdHVzIFBhZ2UuXS0tPnxLbm93biBJc3N1ZXwgQltbRm9sbG93IEluc3RydWN0aW9ucyBvbiBTdGF0dXMgUGFnZV1dXG4gICAgQyAtLT58Q2FsbCBub3QgZm91bmR8IEV7e0NoZWNrIFNJUCBUcmFjZXN9fSAgICBcbiAgICBDIC0tPnxDYWxsIGlzIGxpc3RlZCB0aGVyZXwgRFtbVHJvdWJsZXNob290IHJlZ2lzdHJhdGlvbi5dXVxuICAgIEUgLS0-fENhbGwgbm90IGZvdW5kfCBHe3tTaW11bGF0ZSBjYWxsLn19XG4gICAgRSAtLT58Q2FsbCBpcyBsaXN0ZWR8IEZbW1Ryb3VibGVzaG9vdCBTSVAgRXJyb3IgQ29kZS5dXVxuICAgIEcgLS0-fEkgY2FuIGZpeCB0aGlzfCBIe0VuZC59XG4gICAgRyAtLT58SSBuZWVkIGFkZGl0aW9uYWwgYXNzaXN0YW5jZXwgSXtSZXBvcnQgYSBwcm9ibGVtLn1cbiAgICBCIC0tPnxJIG5lZWQgYWRkaXRpb25hbCBhc3Npc3RhbmNlfCBJe1JlcG9ydCBhIHByb2JsZW0ufVxuICAgIEQgLS0-fEkgbmVlZCBhZGRpdGlvbmFsIGFzc2lzdGFuY2V8IEl7UmVwb3J0IGEgcHJvYmxlbS59XG4gICAgRiAtLT58SSBuZWVkIGFkZGl0aW9uYWwgYXNzaXN0YW5jZXwgSXtSZXBvcnQgYSBwcm9ibGVtLn1cblxuICAgIGNsaWNrIEEgY2FsbCBjYWxsYmFjayhodHRwczovL3N0YXR1cy5jb25uZXhjcy5jb20vKVxuICAgIGNsaWNrIEMgY2FsbCBjYWxsYmFjayhodHRwczovL2RvY3MuY29ubmV4Y3MuY29tL2xvZ2dpbmcvI3JlZ2lzdGVyLWxvZ2dpbmcpXG4gICAgY2xpY2sgRSBjYWxsIGNhbGxiYWNrKGh0dHBzOi8vZG9jcy5jb25uZXhjcy5jb20vbG9nZ2luZy8jc2lwLXRyYWNlcylcbiAgICBjbGljayBHIGNhbGwgY2FsbGJhY2soaHR0cHM6Ly9kb2NzLmNvbm5leGNzLmNvbS9sb2dnaW5nLyNzaW11bGF0ZSlcbiAgICBjbGljayBJIGNhbGwgY2FsbGJhY2soaHR0cHM6Ly9kb2NzLmNvbm5leGNzLmNvbS9yZXBvcnRpbmctcHJvYmxlbXMvI3JlcG9ydC1hLXByb2JsZW0pXG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6ZmFsc2V9)](https://mermaid-js.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoiZ3JhcGggVERcbiAgICBBW0NoZWNrIENvbm5leENTIFN0YXR1cyBQYWdlLl0tLT58Tm8gaXNzdWUgUmVwb3J0ZWR8IEN7e0NoZWNrIFJlZ2lzdGVyIExvZ2dpbmd9fVxuICAgIEFbQ2hlY2sgQ29ubmV4Q1MgU3RhdHVzIFBhZ2UuXS0tPnxLbm93biBJc3N1ZXwgQltbRm9sbG93IEluc3RydWN0aW9ucyBvbiBTdGF0dXMgUGFnZV1dXG4gICAgQyAtLT58Q2FsbCBub3QgZm91bmR8IEV7e0NoZWNrIFNJUCBUcmFjZXN9fSAgICBcbiAgICBDIC0tPnxDYWxsIGlzIGxpc3RlZCB0aGVyZXwgRFtbVHJvdWJsZXNob290IHJlZ2lzdHJhdGlvbi5dXVxuICAgIEUgLS0-fENhbGwgbm90IGZvdW5kfCBHe3tTaW11bGF0ZSBjYWxsLn19XG4gICAgRSAtLT58Q2FsbCBpcyBsaXN0ZWR8IEZbW1Ryb3VibGVzaG9vdCBTSVAgRXJyb3IgQ29kZS5dXVxuICAgIEcgLS0-fEkgY2FuIGZpeCB0aGlzfCBIe0VuZC59XG4gICAgRyAtLT58SSBuZWVkIGFkZGl0aW9uYWwgYXNzaXN0YW5jZXwgSXtSZXBvcnQgYSBwcm9ibGVtLn1cbiAgICBCIC0tPnxJIG5lZWQgYWRkaXRpb25hbCBhc3Npc3RhbmNlfCBJe1JlcG9ydCBhIHByb2JsZW0ufVxuICAgIEQgLS0-fEkgbmVlZCBhZGRpdGlvbmFsIGFzc2lzdGFuY2V8IEl7UmVwb3J0IGEgcHJvYmxlbS59XG4gICAgRiAtLT58SSBuZWVkIGFkZGl0aW9uYWwgYXNzaXN0YW5jZXwgSXtSZXBvcnQgYSBwcm9ibGVtLn1cblxuICAgIGNsaWNrIEEgY2FsbCBjYWxsYmFjayhodHRwczovL3N0YXR1cy5jb25uZXhjcy5jb20vKVxuICAgIGNsaWNrIEMgY2FsbCBjYWxsYmFjayhodHRwczovL2RvY3MuY29ubmV4Y3MuY29tL2xvZ2dpbmcvI3JlZ2lzdGVyLWxvZ2dpbmcpXG4gICAgY2xpY2sgRSBjYWxsIGNhbGxiYWNrKGh0dHBzOi8vZG9jcy5jb25uZXhjcy5jb20vbG9nZ2luZy8jc2lwLXRyYWNlcylcbiAgICBjbGljayBHIGNhbGwgY2FsbGJhY2soaHR0cHM6Ly9kb2NzLmNvbm5leGNzLmNvbS9sb2dnaW5nLyNzaW11bGF0ZSlcbiAgICBjbGljayBJIGNhbGwgY2FsbGJhY2soaHR0cHM6Ly9kb2NzLmNvbm5leGNzLmNvbS9yZXBvcnRpbmctcHJvYmxlbXMvI3JlcG9ydC1hLXByb2JsZW0pXG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6ZmFsc2V9)
+```mermaid
+graph TD
+    A[Check ConnexCS Status Page.]-->|No issue Reported| C{{Check Register Logging}}
+    A[Check ConnexCS Status Page.]-->|Known Issue| B[[Follow Instructions on Status Page]]
+    C -->|Call not found| E{{Check SIP Traces}}    
+    C -->|Call is listed there| D[[Troubleshoot registration.]]
+    E -->|Call not found| G{{Simulate call.}}
+    E -->|Call is listed| F[[Troubleshoot SIP Error Code.]]
+    G -->|I can fix this| H{End.}
+    G -->|I need additional assistance| I{Report a problem.}
+    B -->|I need additional assistance| I{Report a problem.}
+    D -->|I need additional assistance| I{Report a problem.}
+    F -->|I need additional assistance| I{Report a problem.}
+
+    click A call callback(https://status.connexcs.com/)
+    click C call callback(https://docs.connexcs.com/logging/#register-logging)
+    click E call callback(https://docs.connexcs.com/logging/#sip-traces)
+    click G call callback(https://docs.connexcs.com/logging/#simulate)
+    click I call callback(https://docs.connexcs.com/reporting-problems/#report-a-problem)
+```
 
 + Inbound calls are not delivered to the correct desitnation or are not received by the ConnexCS switch at all
 
