@@ -27,13 +27,21 @@ Calls may fail to connect, whether that is calls placed by our customers or call
 
 **Outbound calls** When outbound don't connect this could be an issue with the ConnexCS configuration or it could be due to some sort of issue on the platform or with the carrier, or even the far-end/desitnation carrier/customer/configuration. Here is a suggested flow for troubleshooting:
 
-test2
+test3
 
 ```mermaid
 graph TD
-A[Client] --> B[Load Balancer]
-B --> C[Server01]
-B --> D[Server02]
+A[Check ConnexCS Status Page.]-->C{{Check Register Logging}}
+A[Check ConnexCS Status Page.]-->B[[Follow Instructions on Status Page]]
+C -->E{{Check SIP Traces}}    
+C -->D[[Troubleshoot registration.]]
+E -->G{{Simulate call.}}
+E -->F[[Troubleshoot SIP Error Code.]]
+G -->H{End.}
+G -->I{Report a problem.}
+B -->I{Report a problem.}
+D -->I{Report a problem.}
+F -->I{Report a problem.}
 ```
 
 + Inbound calls are not delivered to the correct desitnation or are not received by the ConnexCS switch at all
