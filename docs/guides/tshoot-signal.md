@@ -27,15 +27,9 @@ Calls may fail to connect, whether that is calls placed by our customers or call
 
 **Outbound calls** When outbound don't connect this could be an issue with the ConnexCS configuration or it could be due to some sort of issue on the platform or with the carrier, or even the far-end/desitnation carrier/customer/configuration. Here is a suggested flow for troubleshooting:
 
-test6
+*Coming soon!
 
-```mermaid
-graph TD
-A[Check ConnexCS Status Page.] --> B[[Follow Instructions on Status Page]]
-A[Check ConnexCS Status Page.] --> C[Check Register Logging]
-```
-
-+ Inbound calls are not delivered to the correct desitnation or are not received by the ConnexCS switch at all
+**Inbound calls** are not delivered to the correct desitnation or are not received by the ConnexCS switch at all
 
 ### Calls disconnect randomly
 + Maintenance Issues- calls disconnect on their own (neither ends initiates the hang up, but the call disconnects)
