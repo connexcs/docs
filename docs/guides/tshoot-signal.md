@@ -23,7 +23,13 @@ When calls won't connect or stay connected, this is typically related to signall
     Before troubleshooting any issue, please check our [**Status Page**](https://status.connexcs.com/). We monitor 45+ metrics on each of our 30+ RTP servers. In the unlikely event that we are having media issues, the issue may already be reported here, saving you and your customer unnecessary work diagnosing the issue. 
     
 ### Calls won't connect
-+ Setup Issues- outbound calls don't connect (typically there is an error message), inbound calls are not delivered to the correct desitnation or are not received by the ConnexCS switch at all
+Calls may fail to connect, whether that is calls placed by our customers or calls that are routed in to out customers. 
+
+**Outbound calls** When outbound don't connect this could be an issue with the ConnexCS configuration or it could be due to some sort of issue on the platform or with the carrier, or even the far-end/desitnation carrier/customer/configuration. Here is a suggested flow for troubleshooting:
+
+*Coming soon!
+
+**Inbound calls** are not delivered to the correct desitnation or are not received by the ConnexCS switch at all
 
 ### Calls disconnect randomly
 + Maintenance Issues- calls disconnect on their own (neither ends initiates the hang up, but the call disconnects)
@@ -33,3 +39,4 @@ When calls won't connect or stay connected, this is typically related to signall
 
 ## Using SIP Traces to diagnose issues
 ConnexCS records and stores SIP trace captures for all calls for 7 days. This data is accessed in [**Logging**](/logging)
+

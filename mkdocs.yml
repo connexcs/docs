@@ -141,7 +141,7 @@ pages:
 
     - Topical Guides:
         - Billing:
-            - Billing: guides/billing-guide.md
+            - Billing Guide: guides/billing-guide.md
             - Connex Billing: billing.md
             - Credit Control: credit-control.md
             - Voucher: voucher.md
@@ -155,6 +155,7 @@ pages:
             - Document Guide: guides/doc-guide.md
             - File: files.md
         - Features:
+            - 3-Digit Dialing: guides/3dig-ext.md
             - Do Not Call lists: dnc.md
             - Calling Card: calling-card.md
             - Capacity Limiting: limiting-cps.md
