@@ -3,6 +3,16 @@
 ## Route Path
 ![alt text][call-flow]
 
+test
+```mermaid
+graph LR
+A(Incoming Call) --> B[Customer]
+B --> C[Ingress Routing]
+C --> D[Customer Rate Card]
+D --> E[Carrier Rate Card]
+E --> F[Carrier IPS]
+```
+
 **Routing** in ConnexCS Cloudswitch occurs in the following stages:
 
 1. An incoming call is identified as a customer, and is verified by source IP or User/Pass Authentication
