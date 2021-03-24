@@ -1,9 +1,6 @@
 # Routing
 
 ## Route Path
-![alt text][call-flow]
-
-test
 ```mermaid
 graph LR
 A(Incoming Call) --> B[Customer]
