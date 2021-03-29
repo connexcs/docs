@@ -3,14 +3,15 @@
 
 A **Circuit Test** can aid troubleshooting by providing details such as FAS, RTP quality, MOS, release reason, jitter, packet loss percentage, and answer delay measurement. The test initiates a call on the switch which is routed out to a termination provider, through the PSTN network, then to an origination provider which routes the call back to ConnexCS and a specific DID provisioned on the system. This is considered active testing (the call is actively placed on the network) as opposed to passive testing such as [**Stats**](https://docs.connexcs.com/customer/stats/) and [**Reports**](https://docs.connexcs.com/report/). 
 
+Circuit Test Traffic FLow:
 ```mermaid
 graph LR
-ConnexCS --> Carrier --> PSTN --> FarEnd --> PSTN --> Carrier--> ConnexCS -->DID
-style ConnexCS fill:#ECEFF1,stroke:#red,stroke-width:3px
-style Carrier fill:#ECEFF1,stroke:#red,stroke-width:3px
-style PSTN fill:#ECEFF1,stroke:#red,stroke-width:3px
-style FarEnd fill:#ECEFF1,stroke:#red,stroke-width:3px
-style DID fill:#ECEFF1,stroke:#red,stroke-width:3px
+A[ConnexCS] --> B(Carrier) --> C(PSTN) --> D(FarEnd) --> C(PSTN) --> B(Carrier)--> A(ConnexCS) -->E(DID)
+style A fill:#ECEFF1,stroke:#red,stroke-width:3px
+style B fill:#ECEFF1,stroke:#red,stroke-width:3px
+style C fill:#ECEFF1,stroke:#red,stroke-width:3px
+style D fill:#ECEFF1,stroke:#red,stroke-width:3px
+style E fill:#ECEFF1,stroke:#red,stroke-width:3px
 linkStyle 0 stroke:red
 linkStyle 1 stroke:red
 linkStyle 2 stroke:red
