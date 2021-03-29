@@ -6,7 +6,13 @@ A **Circuit Test** can aid troubleshooting by providing details such as FAS, RTP
 Circuit Test Traffic Flow
 ```mermaid
 graph LR
-A[ConnexCS] --> B(Carrier) --> C(PSTN) --> D(FarEnd) --> C(PSTN) --> B(Carrier) --> A(ConnexCS) --> E(DID)
+A[ConnexCS] --> B(Carrier) 
+B --> C(PSTN) 
+C --> D(FarEnd) 
+D --> C(PSTN) 
+C --> B(Carrier) 
+B --> A(ConnexCS) 
+A --> E(DID)
 
 ```
 
