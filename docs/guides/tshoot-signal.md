@@ -27,7 +27,20 @@ Calls may fail to connect, whether that is calls placed by our customers or call
 
 **Outbound calls** When outbound don't connect this could be an issue with the ConnexCS configuration or it could be due to some sort of issue on the platform or with the carrier, or even the far-end/desitnation carrier/customer/configuration. Here is a suggested flow for troubleshooting:
 
-*Coming soon!
+```mermaid
+graph TD
+    A --> C
+    A --> B
+    C --> E    
+    C --> D
+    E --> G
+    E --> F
+    G --> H
+    G --> I
+    B --> I
+    D --> I
+    F --> I
+```
 
 **Inbound calls** are not delivered to the correct desitnation or are not received by the ConnexCS switch at all
 
