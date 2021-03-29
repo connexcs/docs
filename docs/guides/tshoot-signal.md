@@ -35,7 +35,7 @@ graph TD
     A[Check ConnexCS Status Page.]-->|Known Issue| B(Follow Instructions on Status Page)
     C -->|Call not found| E[Check SIP Traces]    
     C -->|Call is listed there| D(Troubleshoot registration.)
-    E -->|Call not found| G[Simulate call.]
+    E -->|Call not found| G(Simulate call.)
     E -->|Call is listed| F(Troubleshoot SIP Error Code.)
     G -->|I need assistance| H{Report a problem.}
     B -->|I need assistance| H{Report a problem.}
