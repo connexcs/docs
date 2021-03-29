@@ -14,7 +14,7 @@ graph LR
     E --> F[Carrier IPS]
     style E fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
     style F fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
-    linkStyle 0 stroke:#ff3,stroke-width:4px,color:red;
+    linkStyle 0 stroke:#4051b5,stroke-width:2px
 ```
 
 **Routing** in ConnexCS Cloudswitch occurs in the following stages:
