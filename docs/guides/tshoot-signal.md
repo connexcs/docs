@@ -27,7 +27,7 @@ Calls may fail to connect, whether that is calls placed by our customers or call
 
 **Outbound calls** When outbound don't connect this could be an issue with the ConnexCS configuration or it could be due to some sort of issue on the platform or with the carrier, or even the far-end/destination carrier/customer/configuration. 
 
-Suggested troubleshooting flow
+Suggested troubleshooting flow:
 
 ```mermaid
 graph TD
@@ -54,7 +54,7 @@ graph TD
     style F fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
     style G fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
     style H fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
-    linkStyle 0 fill:red,stroke-width:2px
+    linkStyle 0 text:red,stroke-width:2px
     linkStyle 1 stroke-width:2px
     linkStyle 2 stroke:#212121,stroke-width:2px
     linkStyle 3 stroke:#212121,stroke-width:2px
