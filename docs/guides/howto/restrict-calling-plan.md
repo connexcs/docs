@@ -1,7 +1,8 @@
 # Restricting individual customers to specific calling plans. 
 There are sometimes instances when a provider will have multiple call plans and would like to restrict certain customers to specific plans. Some of their customers should only dial numbers in the USA, some in the UK, while some customers can dial Globally. ConnexCS solves this by using a temporary prefix in User Auth to tag for appropriate routing, then the tag is stripped when processed in Routing.
 
-For example, the Provider has 3 calling plans, we can define a Tech prefix for each plan
+For example, the Provider has 3 calling plans, we can define a Tech prefix for each plan:
+
 |Calling Plan|Tech Prefix|
 |---|---|
 |USA|\#1#|
