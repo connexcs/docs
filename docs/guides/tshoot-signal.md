@@ -36,10 +36,10 @@ graph TD
     E -->|Call not found| G[Simulate call.]
     E -->|Call is listed| F[Troubleshoot SIP Error Code.]
     G -->|I can fix this| H[End.]
-    G -->|I need additional assistance| I[Report a problem.]
-    B -->|I need additional assistance| I[Report a problem.]
-    D -->|I need additional assistance| I[Report a problem.]
-    F -->|I need additional assistance| I[Report a problem.]
+    G -->|I need assistance| I[Report a problem.]
+    B -->|I need assistance| I[Report a problem.]
+    D -->|I need assistance| I[Report a problem.]
+    F -->|I need assistance| I[Report a problem.]
 ```
 
 **Inbound calls** are not delivered to the correct desitnation or are not received by the ConnexCS switch at all
