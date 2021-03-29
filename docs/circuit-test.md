@@ -3,7 +3,7 @@
 
 A **Circuit Test** can aid troubleshooting by providing details such as FAS, RTP quality, MOS, release reason, jitter, packet loss percentage, and answer delay measurement. The test initiates a call on the switch which is routed out to a termination provider, through the PSTN network, then to an origination provider which routes the call back to ConnexCS and a specific DID provisioned on the system. This is considered active testing (the call is actively placed on the network) as opposed to passive testing such as [**Stats**](https://docs.connexcs.com/customer/stats/) and [**Reports**](https://docs.connexcs.com/report/). 
 
-Circuit Test Traffic Flow
+Circuit Test Traffic Flow:
 ```mermaid
 graph LR
 A[ConnexCS] --> B(Carrier) 
