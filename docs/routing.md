@@ -3,11 +3,11 @@
 ## Route Path
 ```mermaid
 graph LR
-A(Incoming Call) --> B[Customer]
-B --> C[Ingress Routing]
-C --> D[Customer Rate Card]
-D --> E[Carrier Rate Card]
-E --> F[Carrier IPS]
+    A(Incoming Call) --> B[Customer]
+    B --> C[Ingress Routing]
+    C --> D[Customer Rate Card]
+    D --> E[Carrier Rate Card]
+    E --> F[Carrier IPS]
 ```
 
 **Routing** in ConnexCS Cloudswitch occurs in the following stages:
