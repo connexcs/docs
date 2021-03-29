@@ -35,10 +35,10 @@ graph TD
     C -->|Call is listed there| D(Troubleshoot registration.)
     E -->|Call not found| G[Simulate call.]
     E -->|Call is listed| F(Troubleshoot SIP Error Code.)
-    G -->|I need assistance| H([Report a problem.])
-    B -->|I need assistance| H([Report a problem.])
-    D -->|I need assistance| H([Report a problem.])
-    F -->|I need assistance| H([Report a problem.])
+    G -->|I need assistance| H{Report a problem.}
+    B -->|I need assistance| H{Report a problem.}
+    D -->|I need assistance| H{Report a problem.}
+    F -->|I need assistance| H{Report a problem.}
     click A "https://status.connexcs.com/"
     click C "https://docs.connexcs.com/logging/#register-logging"
     click E "https://docs.connexcs.com/logging/#sip-traces"
