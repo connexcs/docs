@@ -35,8 +35,6 @@ graph TD
     C -->|Call is listed there| D[Troubleshoot registration.]
     E -->|Call not found| G[Simulate call.]
     E -->|Call is listed| F[Troubleshoot SIP Error Code.]
-    G -->|I can fix this| H[End.]
-    F -->|I can fix this| J[End.]
     G -->|I need assistance| I[Report a problem.]
     B -->|I need assistance| I[Report a problem.]
     D -->|I need assistance| I[Report a problem.]
