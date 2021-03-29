@@ -7,18 +7,7 @@ Circuit Test Traffic Flow:
 ```mermaid
 graph LR
 A[ConnexCS] --> B(Carrier) --> C(PSTN) --> D(FarEnd) --> C(PSTN) --> B(Carrier) --> A(ConnexCS) -->E(DID)
-style A fill:#ECEFF1,stroke:#red,stroke-width:3px
-style B fill:#ECEFF1,stroke:#red,stroke-width:3px
-style C fill:#ECEFF1,stroke:#red,stroke-width:3px
-style D fill:#ECEFF1,stroke:#red,stroke-width:3px
-style E fill:#ECEFF1,stroke:#red,stroke-width:3px
-linkStyle 0 stroke:red
-linkStyle 1 stroke:red
-linkStyle 2 stroke:red
-linkStyle 3 stroke:blue
-linkStyle 4 stroke:blue
-linkStyle 5 stroke:blue
-linkStyle 6 stroke:orange
+
 ```
 
 ## Circuit Test Log
