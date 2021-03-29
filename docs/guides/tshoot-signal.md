@@ -61,10 +61,6 @@ graph TD
     linkStyle 4 stroke:#212121,stroke-width:2px 
     linkStyle 5 stroke:#212121,stroke-width:2px
     linkStyle 6 stroke:#212121,stroke-width:2px
-    linkStyle 7 stroke:#212121,stroke-width:2px
-    linkStyle 8 stroke:#212121,stroke-width:2px
-    linkStyle 9 stroke:#212121,stroke-width:2px    
-    linkStyle 10 stroke:#212121,stroke-width:2px
 ```
 
 
