@@ -31,16 +31,16 @@ Suggested troubleshooting flow:
 
 ```mermaid
 graph TD
-    A[Check ConnexCS Status Page.]-->|No issue Reported| C[Check Register Logging]
-    A[Check ConnexCS Status Page.]-->|Known Issue| B(Follow Instructions on Status Page)
-    C -->|Call not found| E[Check SIP Traces]    
-    C -->|Call is listed there| D(Troubleshoot registration.)
-    E -->|Call not found| G(Simulate call.)
-    E -->|Call is listed| F(Troubleshoot SIP Error Code.)
-    G -->|I need assistance| H{Report a problem.}
-    B -->|I need assistance| H{Report a problem.}
-    D -->|I need assistance| H{Report a problem.}
-    F -->|I need assistance| H{Report a problem.}
+    A[Check ConnexCS Status Page.]==>|No issue Reported| C[Check Register Logging]
+    A[Check ConnexCS Status Page.]==>|Known Issue| B(Follow Instructions on Status Page)
+    C ==>|Call not found| E[Check SIP Traces]    
+    C ==>|Call is listed there| D(Troubleshoot registration.)
+    E ==>|Call not found| G(Simulate call.)
+    E ==>|Call is listed| F(Troubleshoot SIP Error Code.)
+    G ==>|I need assistance| H{Report a problem.}
+    B ==>|I need assistance| H{Report a problem.}
+    D ==>|I need assistance| H{Report a problem.}
+    F ==>|I need assistance| H{Report a problem.}
     click A "https://status.connexcs.com/"
     click C "https://docs.connexcs.com/logging/#register-logging"
     click E "https://docs.connexcs.com/logging/#sip-traces"
@@ -54,12 +54,6 @@ graph TD
     style F fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
     style G fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
     style H fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
-    linkStyle 0 text:red,stroke-width:2px
-    linkStyle 1 stroke-width:2px
-    linkStyle 2 stroke:#212121,stroke-width:2px
-    linkStyle 3 stroke:#212121,stroke-width:2px
-    linkStyle 4 stroke:#212121,stroke-width:2px 
-    linkStyle 5 stroke:#212121,stroke-width:2px
 ```
 
 
