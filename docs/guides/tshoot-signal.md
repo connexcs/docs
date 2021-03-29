@@ -39,6 +39,11 @@ graph TD
     B -->|I need assistance| I[Report a problem.]
     D -->|I need assistance| I[Report a problem.]
     F -->|I need assistance| I[Report a problem.]
+    click A call callback(https://status.connexcs.com/)
+    click C call callback(https://docs.connexcs.com/logging/#register-logging)
+    click E call callback(https://docs.connexcs.com/logging/#sip-traces)
+    click G call callback(https://docs.connexcs.com/logging/#simulate)
+    click I call callback(https://docs.connexcs.com/reporting-problems/#report-a-problem)
 ```
 
 **Inbound calls** are not delivered to the correct desitnation or are not received by the ConnexCS switch at all
