@@ -25,7 +25,7 @@ When calls won't connect or stay connected, this is typically related to signall
 ### Calls won't connect
 Calls may fail to connect, whether that is calls placed by our customers or calls that are routed in to out customers. 
 
-**Outbound calls** When outbound don't connect this could be an issue with the ConnexCS configuration or it could be due to some sort of issue on the platform or with the carrier, or even the far-end/desitnation carrier/customer/configuration. 
+**Outbound calls** When outbound don't connect this could be an issue with the ConnexCS configuration or it could be due to some sort of issue on the platform or with the carrier, or even the far-end/destination carrier/customer/configuration. 
 
 Suggested troubleshooting flow
 
@@ -54,7 +54,7 @@ graph TD
     style F fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
     style G fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
     style H fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
-    linkStyle 0 stroke-width:2px
+    linkStyle 0 fill:red,stroke-width:2px
     linkStyle 1 stroke-width:2px
     linkStyle 2 stroke:#212121,stroke-width:2px
     linkStyle 3 stroke:#212121,stroke-width:2px
