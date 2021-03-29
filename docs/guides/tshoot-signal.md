@@ -30,20 +30,29 @@ Calls may fail to connect, whether that is calls placed by our customers or call
 ```mermaid
 graph TD
     A[Check ConnexCS Status Page.]-->|No issue Reported| C[Check Register Logging]
-    A[Check ConnexCS Status Page.]-->|Known Issue| B[Follow Instructions on Status Page]
+    A[Check ConnexCS Status Page.]-->|Known Issue| B(Follow Instructions on Status Page)
     C -->|Call not found| E[Check SIP Traces]    
-    C -->|Call is listed there| D[Troubleshoot registration.]
+    C -->|Call is listed there| D(Troubleshoot registration.)
     E -->|Call not found| G[Simulate call.]
-    E -->|Call is listed| F[Troubleshoot SIP Error Code.]
-    G -->|I need assistance| I[Report a problem.]
-    B -->|I need assistance| I[Report a problem.]
-    D -->|I need assistance| I[Report a problem.]
-    F -->|I need assistance| I[Report a problem.]
+    E -->|Call is listed| F(Troubleshoot SIP Error Code.)
+    G -->|I need assistance| I([Report a problem.])
+    B -->|I need assistance| I([Report a problem.])
+    D -->|I need assistance| I([Report a problem.])
+    F -->|I need assistance| I([Report a problem.])
     click A "https://status.connexcs.com/"
     click C "https://docs.connexcs.com/logging/#register-logging"
     click E "https://docs.connexcs.com/logging/#sip-traces"
     click G "https://docs.connexcs.com/logging/#simulate"
     click I "https://docs.connexcs.com/reporting-problems/#report-a-problem"
+    style A fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
+    style B fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
+    style C fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
+    style D fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
+    style E fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
+    style F fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
+    style G fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
+    style H fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
+    style I fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
 ```
 
 
