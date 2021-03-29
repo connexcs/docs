@@ -6,9 +6,14 @@ graph LR
     A(Incoming Call) --> B[Customer]
     style A fill:#CFD8DC,stroke:#4051b5,stroke-width:4px
     B --> C[Ingress Routing]
+    style B fill:#CFD8DC,stroke:#4051b5,stroke-width:4px
     C --> D[Customer Rate Card]
+    style C fill:#CFD8DC,stroke:#4051b5,stroke-width:4px
     D --> E[Carrier Rate Card]
+    style D fill:#CFD8DC,stroke:#4051b5,stroke-width:4px
     E --> F[Carrier IPS]
+    style E fill:#CFD8DC,stroke:#4051b5,stroke-width:4px
+    style F fill:#CFD8DC,stroke:#4051b5,stroke-width:4px
 ```
 
 **Routing** in ConnexCS Cloudswitch occurs in the following stages:
