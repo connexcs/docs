@@ -24,7 +24,7 @@ linkStyle 2 stroke:red
 linkStyle 3 stroke:blue
 linkStyle 4 stroke:blue
 linkStyle 5 stroke:blue
-linkStyle 6 stroke:orange
+linkStyle 6 stroke:blue
 ```
 
 ## Circuit Test Log
