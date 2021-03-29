@@ -11,7 +11,7 @@ graph LR
     style C fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
     D --> E[Carrier Rate Card]
     style D fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
-    E --> F[Carrier IPS]
+    E --> F(Carrier IPS)
     style E fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
     style F fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
     linkStyle 0 stroke:#212121,stroke-width:2px
