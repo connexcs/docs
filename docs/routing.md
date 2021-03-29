@@ -4,7 +4,7 @@
 ```mermaid
 graph LR
     A(Incoming Call) --> B[Customer]
-    style A fill:#f9f,stroke:#4051b5,stroke-width:4px
+    style A fill:#CFD8DC,stroke:#4051b5,stroke-width:4px
     B --> C[Ingress Routing]
     C --> D[Customer Rate Card]
     D --> E[Carrier Rate Card]
