@@ -4,16 +4,16 @@
 ```mermaid
 graph LR
     A(Incoming Call) --> B[Customer]
-    style A fill:#CFD8DC,stroke:#4051b5,stroke-width:4px
+    style A fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
     B --> C[Ingress Routing]
-    style B fill:#CFD8DC,stroke:#4051b5,stroke-width:4px
+    style B fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
     C --> D[Customer Rate Card]
-    style C fill:#CFD8DC,stroke:#4051b5,stroke-width:4px
+    style C fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
     D --> E[Carrier Rate Card]
-    style D fill:#CFD8DC,stroke:#4051b5,stroke-width:4px
+    style D fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
     E --> F[Carrier IPS]
-    style E fill:#CFD8DC,stroke:#4051b5,stroke-width:4px
-    style F fill:#CFD8DC,stroke:#4051b5,stroke-width:4px
+    style E fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
+    style F fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
 ```
 
 **Routing** in ConnexCS Cloudswitch occurs in the following stages:
