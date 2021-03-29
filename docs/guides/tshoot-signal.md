@@ -44,25 +44,6 @@ graph TD
     click E "https://docs.connexcs.com/logging/#sip-traces"
     click G "https://docs.connexcs.com/logging/#simulate"
     click H "https://docs.connexcs.com/reporting-problems/#report-a-problem"
-    style A fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
-    style B fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
-    style C fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
-    style D fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
-    style E fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
-    style F fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
-    style G fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
-    style H fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
-    linkStyle 0 stroke:#212121,stroke-width:2px
-    linkStyle 1 stroke:#212121,stroke-width:2px
-    linkStyle 2 stroke:#212121,stroke-width:2px
-    linkStyle 3 stroke:#212121,stroke-width:2px
-    linkStyle 4 stroke:#212121,stroke-width:2px 
-    linkStyle 5 stroke:#212121,stroke-width:2px
-    linkStyle 6 stroke:#212121,stroke-width:2px
-    linkStyle 7 stroke:#212121,stroke-width:2px
-    linkStyle 8 stroke:#212121,stroke-width:2px
-    linkStyle 9 stroke:#212121,stroke-width:2px    
-    linkStyle 10 stroke:#212121,stroke-width:2px
 ```
 
 
