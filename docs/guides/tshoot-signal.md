@@ -29,17 +29,17 @@ Calls may fail to connect, whether that is calls placed by our customers or call
 
 ```mermaid
 graph TD
-    A[Check ConnexCS Status Page.] --> C{{Check Register Logging}}
-    A[Check ConnexCS Status Page.] --> B[[Follow Instructions on Status Page]]
-    C --> E{{Check SIP Traces}}    
-    C --> D[[Troubleshoot registration.]]
-    E --> G{{Simulate call.}}
-    E --> F[[Troubleshoot SIP Error Code.]]
-    G --> H{End.}
-    G --> I{Report a problem.}
-    B --> I{Report a problem.}
-    D --> I{Report a problem.}
-    F --> I{Report a problem.}
+    A[Check ConnexCS Status Page.] --> C[Check Register Logging]
+    A[Check ConnexCS Status Page.] --> B[Follow Instructions on Status Page]
+    C --> E[Check SIP Traces]
+    C --> D[Troubleshoot registration.]
+    E --> G[Simulate call.]
+    E --> F[Troubleshoot SIP Error Code.]
+    G --> H[End.]
+    G --> I[Report a problem.]
+    B --> I[Report a problem.]
+    D --> I[Report a problem.]
+    F --> I[Report a problem.]
 ```
 
 **Inbound calls** are not delivered to the correct desitnation or are not received by the ConnexCS switch at all
