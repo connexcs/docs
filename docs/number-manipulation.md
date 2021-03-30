@@ -3,7 +3,7 @@
 There are several methods that ConnexCS offers for number manipulation. They are processed in the following order:
 ```mermaid
 graph TD
-A("1st: Parameter Rewrite (add/remove)") ==then==> B("2nd: Alias (modify)") ==then==> C("Routing (modify)")
+A("1st: Parameter Rewrite (add/remove)") ==then==> B("2nd: Alias (modify)") ==then==> C("3rd: Routing (modify)")
 style A fill:#ECEFF1,stroke:#0D47A1,stroke-width:4px
 style B fill:#ECEFF1,stroke:#1976D2,stroke-width:4px
 style C fill:#ECEFF1,stroke:#2196F3,stroke-width:4px
