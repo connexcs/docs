@@ -25,22 +25,37 @@ When calls won't connect or stay connected, this is typically related to signall
 ### Calls won't connect
 Calls may fail to connect, whether that is calls placed by our customers or calls that are routed in to out customers. 
 
-**Outbound calls** When outbound don't connect this could be an issue with the ConnexCS configuration or it could be due to some sort of issue on the platform or with the carrier, or even the far-end/desitnation carrier/customer/configuration. Here is a suggested flow for troubleshooting:
+**Outbound calls** When outbound don't connect this could be an issue with the ConnexCS configuration or it could be due to some sort of issue on the platform or with the carrier, or even the far-end/destination carrier/customer/configuration. 
+
+Suggested troubleshooting flow:
 
 ```mermaid
 graph TD
-    A --> C
-    A --> B
-    C --> E    
-    C --> D
-    E --> G
-    E --> F
-    G --> H
-    G --> I
-    B --> I
-    D --> I
-    F --> I
+    A[Check ConnexCS Status Page.]==>|No issue Reported| C[Check Register Logging]
+    A[Check ConnexCS Status Page.]==>|Known Issue| B(Follow Instructions on Status Page)
+    C ==>|Call not found| E[Check SIP Traces]    
+    C ==>|Call is listed there| D(Troubleshoot registration.)
+    E ==>|Call not found| G(Simulate call.)
+    E ==>|Call is listed| F(Troubleshoot SIP Error Code.)
+    G ==>|I need assistance| H{Report a problem.}
+    B ==>|I need assistance| H{Report a problem.}
+    D ==>|I need assistance| H{Report a problem.}
+    F ==>|I need assistance| H{Report a problem.}
+    click A "https://status.connexcs.com/"
+    click C "https://docs.connexcs.com/logging/#register-logging"
+    click E "https://docs.connexcs.com/logging/#sip-traces"
+    click G "https://docs.connexcs.com/logging/#simulate"
+    click H "https://docs.connexcs.com/reporting-problems/#report-a-problem"
+    style A fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
+    style B fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
+    style C fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
+    style D fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
+    style E fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
+    style F fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
+    style G fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
+    style H fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
 ```
+
 
 **Inbound calls** are not delivered to the correct desitnation or are not received by the ConnexCS switch at all
 
