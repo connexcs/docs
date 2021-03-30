@@ -10,7 +10,7 @@ There are several methods that ConnexCS offers for number manipulation. All meth
 They are processed in the following order:
 ```mermaid
 graph TD
-A(1st: Parameter Rewrite) ==then==> B(2nd: Alias) ==then==> C(3rd: Routing)
+A("1st: Parameter Rewrite") ==then==> B("2nd: Alias") ==then==> C("3rd: Routing")
 style A fill:#ECEFF1,stroke:#0D47A1,stroke-width:4px
 style B fill:#ECEFF1,stroke:#1976D2,stroke-width:4px
 style C fill:#ECEFF1,stroke:#2196F3,stroke-width:4px
