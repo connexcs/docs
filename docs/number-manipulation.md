@@ -11,7 +11,7 @@ linkStyle 0 stroke:#212121,stroke-width:2px
 linkStyle 1 stroke:#212121,stroke-width:2px
 ```
 
-All methods of number maniulation are found under **Management :material-menu-right: Customer**:
+All methods of number maniulation are performed within **Management :material-menu-right: Customer**:
 
 + Parameter Rewrite: **Auth :material-menu-right: [IP or SIP] :material-menu-right: Parameter Rewrite**
 + Alias: **Alias**
