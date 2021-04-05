@@ -116,12 +116,12 @@ Select certificates to apply to the server.
 
 ## Server Clustering and User Location Registration
 ### User Location Registration
-When a call is initiated, this generates a SIP `INVITE` which is sent to the remote server. When users connect from dynamic IP addresses, there must be a a way to map a known constant address (ex: a username) to a dynamic endpoint such as an IP address or port.
+When a call is initiated, this generates a SIP `INVITE` which is sent to the remote server. When users connect from dynamic IP addresses, there must be a way to map a known constant address (ex: a username) to a dynamic endpoint such as an IP address or port.
 
 This is accomplished by the User Agent Client (UAC), or a soft phone / hard phone, connecting to the ConnexCS server with a `REGISTER` message which includes their current location and their username, along with additional information. The information is then stored, and made available as a lookup. When someone calls a user, it routes the call to their IP address.
 
 ### NAT Keep Alives
-When a user is registers with UDP via NAT, a port mapping is created. However, the NAT will time out (and the call will disconnect) is the connection is not maintained by keep-alive by traffic. ConnexCS will perodically send keep-alive messages to the registered UAC, as either UDP or full SIP `OPTIONS` messages. While both work in this scenario, the SIP ```OPTIONS``` ping will reply back to the ConnexCS Server. From this ping, we can monitor the latency of the connection, and also discern if NAT has destroyed the connection or if the user has gone offline without notifying the system. Once a user is registered via UDP, the connection is verified once again.
+When a user endpoint registers with UDP via NAT, a port mapping is created. However, the NAT will time out (and the call will disconnect) if the connection is not maintained by keep-alive by traffic. ConnexCS will periodically send keep-alive messages to the registered UAC, as either UDP or full SIP `OPTIONS` messages. While both work in this scenario, the SIP ```OPTIONS``` ping will reply to the ConnexCS Server. From this ping, we can monitor the latency of the connection and discern if NAT has destroyed the connection or if the user has gone offline without notifying the system. Once a user is registered via UDP, the connection is verified once again.
 
 ### Deployment Options
 
