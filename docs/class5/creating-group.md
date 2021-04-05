@@ -12,19 +12,15 @@ Each Group is configured with a routing strategy which determines how calls will
 
 ```mermaid
 graph TD
-A[Customer] -->|ring| B[Agent 1]
-A[Customer] -->|ring| C[Agent 2]
-A[Customer] -->|ring| D[Agent 3]
-A[Customer] -->|ring| E[Agent 4]
-A[Customer] -->|ring| F[Agent 5]
-A[Customer] -->|ring| G[Agent 6]
+A[Customer] -->|ring| B[Agent 1 is available]
+A[Customer] -->|ring| C[Agent 2 is available]
+A[Customer] -->|ring| D[Agent 3 is busy]
+A[Customer] -->|ring| E[Agent 4 is available]
 style A fill:#ECEFF1,stroke:#4051b5,stroke-width:2px
-style B fill:#ECEFF1,stroke:#4051b5,stroke-width:2px
-style C fill:#ECEFF1,stroke:#4051b5,stroke-width:2px
-style D fill:#ECEFF1,stroke:#4051b5,stroke-width:2px
-style E fill:#ECEFF1,stroke:#4051b5,stroke-width:2px
-style F fill:#ECEFF1,stroke:#4051b5,stroke-width:2px
-style G fill:#ECEFF1,stroke:#4051b5,stroke-width:2px
+style B fill:#ECEFF1,stroke:#16C440,stroke-width:2px
+style C fill:#ECEFF1,stroke:#16C440,stroke-width:2px
+style D fill:#ECEFF1,stroke:#C70039,stroke-width:2px
+style E fill:#ECEFF1,stroke:#16C440,stroke-width:2px
 ```
 
 **Sequential** Routes a call in a sequential order based on the order under Group Members.  By default, a call is routed to the member with the highest value of the extension number (for example, 5021).
