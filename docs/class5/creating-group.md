@@ -33,10 +33,10 @@ style F fill:#ECEFF1,stroke:#4051b5,stroke-width:2px
 ```mermaid
 graph LR
 A[Customer] ---|try 1st| B[Agent 1 is busy]
-B ---|try next| C[Agent 2 doesn't answer]
-C ---|try next| D[Agent 3 is busy]
-D ==>|try next| E[Agent 4 is available]
-E -->F[Call is answered]
+B ---|next| C[Agent 2 doesn't answer]
+C ---|next| D[Agent 3 is busy]
+D ==>|next| E[Agent 4 is available]
+E -->F[Call answered]
 style A fill:#ECEFF1,stroke:#4051b5,stroke-width:2px
 style B fill:#ECEFF1,stroke:#C70039,stroke-width:2px
 style C fill:#ECEFF1,stroke:#C70039,stroke-width:2px
