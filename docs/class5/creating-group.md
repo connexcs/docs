@@ -27,6 +27,7 @@ style E fill:#ECEFF1,stroke:#4051b5,stroke-width:2px
 * If the member is busy on another call or does not receive the call for a specific time duration, the call is routed to the member with the second highest value of the extension number (for example, 4097). 
 * If the member with second highest extension number does not respond, the call is routed to the extension with the third highest value (for example, 4095). This process continues until a member receives the call. 
 
+```mermaid
 graph LR
 A(Customer) --> B[Agent 1]
 B -->|Agent1 is busy| C[Agent 2]
@@ -37,10 +38,24 @@ style B fill:#ECEFF1,stroke:#4051b5,stroke-width:2px
 style C fill:#ECEFF1,stroke:#4051b5,stroke-width:2px
 style D fill:#ECEFF1,stroke:#4051b5,stroke-width:2px
 style E fill:#ECEFF1,stroke:#4051b5,stroke-width:2px
+```
 
 **Queue** Places the caller in a call queue before routing the call to the next available member (whoever has been waiting longest to receive a call). If you use this routing strategy:
 * You can upload audio files that greet the caller and play music when the caller or the member puts the call on hold.
 * You don't need to specify the members of a group. Individuals who want to join the group must dial a specific extension number from their phone. To leave the group, they dial another number from their phone. So, a group that uses a Queue routing strategy does not necessarily have a fixed number of members. 
+
+```mermaid
+graph TD
+A(Customer) x--x B[Agent 1- idle 30 seconds]
+A x--x C[Agent 2- idle 15 seconds]
+A x--x D[Agent 3- idle 45 seconds]
+A ==> E[Agent 4- idle 5 seconds]
+style A fill:#ECEFF1,stroke:#4051b5,stroke-width:2px
+style B fill:#ECEFF1,stroke:#4051b5,stroke-width:2px
+style C fill:#ECEFF1,stroke:#4051b5,stroke-width:2px
+style D fill:#ECEFF1,stroke:#4051b5,stroke-width:2px
+style E fill:#ECEFF1,stroke:#4051b5,stroke-width:2px
+```
 
 ## Group planning 
 If you want to use audio files for the group, they will need to be uploaded to the system first. 
