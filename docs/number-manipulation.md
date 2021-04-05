@@ -12,5 +12,5 @@ All methods of number manipulation are performed within **Management :material-m
 They are processed in the following order:
 ```mermaid
 graph TD
-Parameter Rewrite ==then==> Alias ==then==> Routing
+A("1st: Parameter Rewrite") ===>|then| B("2nd: Alias") ===>|then| C("3rd: Routing")
 ```
