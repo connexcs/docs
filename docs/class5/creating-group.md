@@ -29,7 +29,7 @@ style E fill:#ECEFF1,stroke:#4051b5,stroke-width:2px
 
 ```mermaid
 graph LR
-A(Customer) --> B[Agent 1]
+A[Customer] --> B[Agent 1]
 B -->|Agent1 is busy| C[Agent 2]
 C -->|Agent2 is doesn't answer| D[Agent 3]
 D -->|Agent3 is available| E{{Agent 3 takes call}}
