@@ -12,6 +12,9 @@ All methods of number manipulation are performed within **Management :material-m
 They are processed in the following order:
 ```mermaid
 graph TD
-A[Parameter Rewrite] ==> B[Alias] 
-B ==> C[Routing]
+A("1st: Parameter Rewrite") ==then==> B("2nd: Alias") 
+B ==then==> C("3rd: Routing")
+style A fill:#ECEFF1,stroke:#0D47A1,stroke-width:4px
+style B fill:#ECEFF1,stroke:#1976D2,stroke-width:4px
+style C fill:#ECEFF1,stroke:#2196F3,stroke-width:4px
 ```
