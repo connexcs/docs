@@ -65,7 +65,6 @@ Click the blue pencil to edit.
 
 + **FQDN**: The FQDN (Fully Qualified Domain Name) needs to be set for TLS security to be enabled directly on the server.
 + **Cluster**: Group servers to share information such as dialogues and throughput. Ex: if you set CPS to 10, clustered servers will allow 10 CPS, un-clustered servers will allow 10 CPS per server. 
-+ **Reinvite Ping Interval**: *in progress*
 + **Interconnect**: Where the server is visible routing.
 + **UAC Auth**: Enables ConnexCS to register as a UAC (rather than UAS) to upstream providers with a username and password.
 + **WebRTC and TLS**: Enabled once the FQDN has been set, these also require a secure certificate. These are required for [**WebPhone**](https://docs.connexcs.com/setup/integrations/webphone/).
