@@ -12,10 +12,10 @@ Each Group is configured with a routing strategy which determines how calls will
 
 ```mermaid
 graph TD
-A[Customer] --> B[Agent 1]
-A[Customer] --> C[Agent 2]
-A[Customer] --> D[Agent 3]
-A[Customer] --> E[Agent 4]
+A[Customer] -->|ring| B[Agent 1]
+A[Customer] -->|ring| C[Agent 2]
+A[Customer] -->|ring| D[Agent 3]
+A[Customer] -->|ring| E[Agent 4]
 style A fill:#ECEFF1,stroke:#4051b5,stroke-width:2px
 style B fill:#ECEFF1,stroke:#4051b5,stroke-width:2px
 style C fill:#ECEFF1,stroke:#4051b5,stroke-width:2px
