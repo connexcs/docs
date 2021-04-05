@@ -32,15 +32,17 @@ style F fill:#ECEFF1,stroke:#4051b5,stroke-width:2px
 
 ```mermaid
 graph LR
-A[Customer] --> B[Agent 1 is busy]
-B --> C[Agent 2 doesn't answer]
-C --> D[Agent 3 is available]
-D --> E[Agent 3 takes call]
+A[Customer] ---|try 1st| B[Agent 1 is busy]
+B ---|try next| C[Agent 2 doesn't answer]
+C ---|try next| D[Agent 3 is busy]
+D ==>|try next| E[Agent 4 is available]
+E -->F{{Call is answered}}
 style A fill:#ECEFF1,stroke:#4051b5,stroke-width:2px
 style B fill:#ECEFF1,stroke:#C70039,stroke-width:2px
 style C fill:#ECEFF1,stroke:#C70039,stroke-width:2px
-style D fill:#ECEFF1,stroke:#4051b5,stroke-width:2px
+style D fill:#ECEFF1,stroke:#C70039,stroke-width:2px
 style E fill:#ECEFF1,stroke:#16C440,stroke-width:2px
+style F fill:#ECEFF1,stroke:#4051b5,stroke-width:2px
 ```
 
 **Queue** Places the caller in a call queue before routing the call to the next available member (whoever has been waiting longest to receive a call). If you use this routing strategy:
