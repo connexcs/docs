@@ -24,8 +24,8 @@ style E fill:#ECEFF1,stroke:#4051b5,stroke-width:2px
 ```
 
 **Sequential** Routes a call in a sequential order based on the order under Group Members.  By default, a call is routed to the member with the highest value of the extension number (for example, 5021).
-* If the member is busy on another call or does not receive the call for a specific time duration, the call is routed to the member with the second highest value of the extension number (for example, 4097). 
-* If the member with second highest extension number does not respond, the call is routed to the extension with the third highest value (for example, 4095). This process continues until a member receives the call. 
++ If the member is busy on another call or does not receive the call for a specific time duration, the call is routed to the member with the second highest value of the extension number (for example, 4097). 
++ If the member with second highest extension number does not respond, the call is routed to the extension with the third highest value (for example, 4095). This process continues until a member receives the call. 
 
 ```mermaid
 graph LR
@@ -41,8 +41,9 @@ style E fill:#ECEFF1,stroke:#4051b5,stroke-width:2px
 ```
 
 **Queue** Places the caller in a call queue before routing the call to the next available member (whoever has been waiting longest to receive a call). If you use this routing strategy:
-* You can upload audio files that greet the caller and play music when the caller or the member puts the call on hold.
-* You don't need to specify the members of a group. Individuals who want to join the group must dial a specific extension number from their phone. To leave the group, they dial another number from their phone. So, a group that uses a Queue routing strategy does not necessarily have a fixed number of members. 
+
++ You can upload audio files that greet the caller and play music when the caller or the member puts the call on hold.
++ You don't need to specify the members of a group. Individuals who want to join the group must dial a specific extension number from their phone. To leave the group, they dial another number from their phone. So, a group that uses a Queue routing strategy does not necessarily have a fixed number of members. 
 
 ```mermaid
 graph TD
