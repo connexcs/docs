@@ -11,7 +11,7 @@ Each Group is configured with a routing strategy which determines how calls will
 **Parallel** Rings a call to all members of the group simultaneously. The members' extensions ring for the length of time you specify. You can assign unique timeout timers for individual members. Note: this rings all members, even if they are already on a call. 
 
 ```mermaid
-graph LR
+graph TD
 A[Customer] --> B[Agent 1]
 A[Customer] --> C[Agent 2]
 A[Customer] --> D[Agent 3]
@@ -47,7 +47,7 @@ style E fill:#ECEFF1,stroke:##16C440,stroke-width:2px
 
 ```mermaid
 graph TD
-A(Customer) x--x B[Agent 1- idle 30 seconds]
+A[Customer] x--x B[Agent 1- idle 30 seconds]
 A x--x C[Agent 2- idle 15 seconds]
 A x--x D[Agent 3- idle 45 seconds]
 A ==> E[Agent 4- idle 5 seconds]
