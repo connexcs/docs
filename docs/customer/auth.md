@@ -123,7 +123,7 @@ To enable, click the **:material-plus:** next to SIP User Authentication:
     6. Click **`Save`** when done. 
     7. If a parameter rewrite has already been created, you will have the ability to test it from the main tab. 
 
-    ![alt text][test-rewrite]
+    &emsp;![alt text][test-rewrite]
 
 === "Voice Mail"
 
