@@ -102,6 +102,8 @@ Use this button to update the Channels for the selected server. The update will 
 ### Run Server Update
 This only needs to be run when the system indicates "There is a pending update on the server" at the top of the server details. 
 
+&emsp;![alt text][server-update]
+
 ### Server Reactivation
 To reactivate a server:
 
@@ -109,7 +111,10 @@ To reactivate a server:
 2. Click **Reactivate** to activate your server.
 
     ![alt text][server-6]
-    
+
+## Certificates
+Select certifictes to apply to the server. 
+
 ## Server Clustering and User Location Registration
 ### User Location Registration
 When a call is initiated, this generates a SIP `INVITE` which is sent to the remote server. When users connect from dynamic IP addresses, there must be a a way to map a known constant address (ex: a username) to a dynamic endpoint such as an IP address or port.
@@ -129,4 +134,5 @@ When a user is registers with UDP via NAT, a port mapping is created. However, t
     Due to design constraints that occur with multiple servers in an array, NAT Keep Alive Pings can be quite intensive. You could use *Disable UAC Ping* from the server page, upgrade to a cluster, or use a single registration server to solve this. More intricate measures can be arranged on a case-by-case basis.
 
 [rtpserver]: /setup/img/rtpservers.png "RTP Server"
+[server-update]: /setup/img/server-update.png "Update Server"
 [server-6]: /setup/img/reactivateserver.png "Reactivate Server"
