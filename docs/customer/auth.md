@@ -65,7 +65,7 @@ To enable, click the **:material-plus:** next to IP Authentication:
     
     Example: International calls coming in with a + should be replaced with a specific country code. 
 
-    &emsp; ![alt text][parameter-rewrite]
+    &emsp;![alt text][parameter-rewrite]
 
 
 ___    
