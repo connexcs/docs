@@ -73,7 +73,13 @@ For best results when reporting an issue, please provide us with the following i
 
 ```mermaid
 graph LR
-A[Check for Outages] --> B[Check Documentation] --> C[Gather Data] --> D[Submit Issue]
+A[Check for Outages] --> B[Check Documentation] 
+B --> C[Gather Data] 
+C --> D[Submit Issue]
+style A fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
+style B fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
+style C fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
+style D fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
 ```
 
 **Step 1: Check for Outages**
