@@ -13,7 +13,4 @@ They are processed in the following order:
 ```mermaid
 graph TD
 A(Parameter Rewrite) ==then==> B(Alias) ==then==> C(Routing)
-style A fill:#ECEFF1,stroke:#0D47A1,stroke-width:4px
-style B fill:#ECEFF1,stroke:#1976D2,stroke-width:4px
-style C fill:#ECEFF1,stroke:#2196F3,stroke-width:4px
 ```
