@@ -113,7 +113,7 @@ To reactivate a server:
     ![alt text][server-6]
 
 ## Certificates
-Select certifictes to apply to the server. 
+Select certificates to apply to the server. 
 
 ## Server Clustering and User Location Registration
 ### User Location Registration
