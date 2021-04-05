@@ -48,15 +48,15 @@ style E fill:#ECEFF1,stroke:#16C440,stroke-width:2px
 
 ```mermaid
 graph TD
-A[Customer] x--x B[Agent 1- idle 30 seconds]
-A x--x C[Agent 2- idle 15 seconds]
-A x--x D[Agent 3- idle 45 seconds]
+A[Customer] --- B[Agent 1- idle 30 seconds]
+A[Customer] --- C[Agent 2- idle 15 seconds]
+A[Customer] --- D[Agent 3- idle 45 seconds]
 A ==> E[Agent 4- idle 5 seconds]
 style A fill:#ECEFF1,stroke:#4051b5,stroke-width:2px
-style B fill:#ECEFF1,stroke:#4051b5,stroke-width:2px
-style C fill:#ECEFF1,stroke:#4051b5,stroke-width:2px
-style D fill:#ECEFF1,stroke:#4051b5,stroke-width:2px
-style E fill:#ECEFF1,stroke:#4051b5,stroke-width:2px
+style B fill:#ECEFF1,stroke:#C70039,stroke-width:2px
+style C fill:#ECEFF1,stroke:#C70039,stroke-width:2px
+style D fill:#ECEFF1,stroke:#C70039,stroke-width:2px
+style E fill:#ECEFF1,stroke:#16C440,stroke-width:2px
 ```
 
 ## Group planning 
