@@ -10,6 +10,19 @@ Each Group is configured with a routing strategy which determines how calls will
 
 **Parallel** Rings a call to all members of the group simultaneously. The members' extensions ring for the length of time you specify. You can assign unique timeout timers for individual members. Note: this rings all members, even if they are already on a call. 
 
+```mermaid
+graph LR
+A[Customer] --> B[Agent 1]
+A[Customer] --> C[Agent 2]
+A[Customer] --> D[Agent 3]
+A[Customer] --> E[Agent 4]
+style A fill:#ECEFF1,stroke:#4051b5,stroke-width:2px
+style B fill:#ECEFF1,stroke:#4051b5,stroke-width:2px
+style C fill:#ECEFF1,stroke:#4051b5,stroke-width:2px
+style D fill:#ECEFF1,stroke:#4051b5,stroke-width:2px
+style E fill:#ECEFF1,stroke:#4051b5,stroke-width:2px
+```
+
 **Sequential** Routes a call in a sequential order based on the order under Group Members.  By default, a call is routed to the member with the highest value of the extension number (for example, 5021).
 * If the member is busy on another call or does not receive the call for a specific time duration, the call is routed to the member with the second highest value of the extension number (for example, 4097). 
 * If the member with second highest extension number does not respond, the call is routed to the extension with the third highest value (for example, 4095). This process continues until a member receives the call. 
