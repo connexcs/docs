@@ -112,7 +112,7 @@ To reactivate a server:
     ![alt text][server-6]
 
 ## Certificates
-Select certificates to apply to the server. 
+Select certificates to apply to the server. These certificates are managed under **Setup :material-menu-right: Information :material-menu-right: [Certificate](/setup/information/certificate/)**.
 
 ## Server Clustering and User Location Registration
 ### User Location Registration
