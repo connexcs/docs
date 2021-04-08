@@ -11,7 +11,7 @@ For example, the Provider has 3 calling plans, so we define a Tech prefix for ea
 
 **Step 1: Link each Customer to a Tech Prefix using the Parameter Rewrite function:**
 
-Go to **Customer :material-menu-right: Auth :material-menu-right:** then Select **IP Auth** or **SIP User Auth**, than navigate to **:material-menu-right: Parameter Rewrite**:
+Go to **Customer :material-menu-right: Auth** then Select **IP Auth** or **SIP User Auth**, than navigate to **Parameter Rewrite**:
 
 &emsp;![alt text][restrictcalling1]
 
