@@ -9,7 +9,9 @@ Use the **Documents** section to collect various files from the customer, as par
         + **Notes**: Any details you want to relay regarding the document. 
         + **Customer Notes**: Updates when the customer leaves notes via their portal regarding the document. 
     + **`Save`** the new entry. 
+    
     ![alt text][document]
+    
 3. When the Document is created, the customer receives notice in their Customer Portal that a document has been requested.
 4. The customer selects "Upload A File" and leaves notes in the request. 
 5. You can check periodically in the customer Documents section to see if the file has been added, at which point it can be downloaded for review.  
