@@ -5,7 +5,7 @@ Use the **Documents** section to collect various files from the customer, as par
 
 1. Create a new document. 
     + Click the :material-plus:
-        + **Name**: Name of the requested document (tax ID, receipt, etc)
+        + **Name**: Name of the requested document (see "Document Examples" below).
         + **Notes**: Any details you want to relay regarding the document. 
         + **Customer Notes**: Updates when the customer leaves notes via their portal regarding the document. 
     + **`Save`** the new entry. 
