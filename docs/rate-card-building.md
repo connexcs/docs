@@ -84,4 +84,5 @@ After merging the 3 providers, we would have the following 3 cards output:
 | 442 | UK Landline |   0.0125 |
 
 
-[rc-global]: /img/rc-global.png "Rate Card Global"
+[rc-global]: /misc/img/rc-global.png "Rate Card Global"
+
