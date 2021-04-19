@@ -20,7 +20,7 @@ Complete the following prior to configuring the IVR
 4. Enter the **Extension** that callers must call to start interacting with the IVR.
 5. Select the **Audio File** from the drop-down list which plays the greeting and explains the keypad options. This could be the file created in first step above or one preloaded into [**Files**](https://docs.connexcs.com/files/).
 
-&emsp;![alt text][ivr]
+    ![alt text][ivr]
 
 7. After the above fields are completed, **`Edit`** becomes available for each key- numbers 0 to 9, '\*' (asterisk) and '#' (hash) - to configure the Destination (what happens when the caller presses they key).
     
