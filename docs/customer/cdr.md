@@ -12,15 +12,15 @@ The **CDR (Call Detail Record)** is an extensive set of information that is coll
 ## Manage displayed CDRs
 The Customer **CDR** tab lists Call Detail Records associated with the selected account. Selecting the entries will display more detailed information. These queries are made on the server then displayed in the portal. 
 
-* **Columns**: Additional CDR fields can be enabled on the Columns tab on the right
+* **Columns**: Additional CDR fields can be enabled on the Columns tab on the right.
 * **Column filter/sort**: Displayed entries can be filtered and sorted by clicking the header of each column. Since each call generates a CDR, this function is especially useful for customers with high call volume. 
 * **Download**: Pressing **`Download`** will save the record to your hard drive in CSV format. You can also select which columns to include in the download.
 
 ## Recalculate CDR
-Use the **`Recalc CDR`** button from within the specific customer to refresh CDR data that is inaccurate. The fields available are dependent on the selected Operation. 
+When viewing CDRs for  specific customer, use the **`Recalc CDR`** button to refresh CDR data that may be inaccurate. Each Operation displays different fields. 
 
 + **Operations**
-    + Refresh Credit- to recalculate balances
+    + Refresh Credit (recalculates balances)
     + Refresh Summaries & Credit
     + Rerate Calls, and Refresh Summaries & Credit
     + Adjust Call Duration, Rerate Calls, and Refresh Summaries & Credit
@@ -32,7 +32,7 @@ Use the **`Recalc CDR`** button from within the specific customer to refresh CDR
     ![alt text][recalc]
 
 !!! danger "Rerating CDRs"
-    If you select either Rerate" option when recalculating CDRs, please be aware this will change your CDRs and is not reversible. Original call durations will be modified according to the criteria selected.
+    If you select either "Rerate" option when recalculating CDRs, this will change your CDRs and is not reversible. Original call durations will be modified according to the criteria selected.
     
 ## Query Builder
 Create advanced filters using any fields of the record. Quickly select either Origination or Termination, or use the Query Builder to customize the data view.

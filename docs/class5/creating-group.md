@@ -69,26 +69,33 @@ If you want to use audio files for the group, they will need to be uploaded to t
 To create a new Group, click the :material-plus: icon.
 
 + **Name**: Enter the name for the group.
-+ **Customer**: Select the customer the group will be applied to from the drop-down list.
-+ **Extension**: Callers will use this extension to connect to this group from the drop-down list.
-+ **Group Type**: See **Group call routing strategies** above.
++ **Customer**(only available when adding the Group from Class5, not when in the Customer management area): Select the customer the group will be applied to from the drop-down list.
++ **Extension**: Callers will use this extension to connect to this group.
++ **Group Type** refers to the [**Group call routing strategies**](class5/creating-group/#group-call-routing-strategies) above:
+    + **Parallel** or **Sequential** strategies require Group Member setup:
+        + Select the strategy then **`Save and Stay`**.
+        + Go to the new **Group Members** tab. 
+        + Click the :material-plus: to add a new member.
+        + `Destination`- Click **`Edit`** to enter the Destination as either an External number or Internal (ConnexCS) extension, SIP User, group, DID, etc. 
+        + `Ring Timeout`- This is especially helpful when calling mobile numbers as you can cancel the call before it hits the voicemail, allowing it to roll to the next Group Member.
+   
+        ![alt text][group1]     
     
-    :material-menu-right: `Parallel` or `Sequential`- Select **`Save and Stay`** to configure the Group Members tab: 
-        
-     + Click the :material-plus: to add a new member.
-     + `Ring Timeout`- This is especially helpful when calling mobile numbers as you can cancel the call before it hits the voicemail, allowing it to roll to the next Group Member.
-     + Click **`Edit`** to set the `Destination` as either an External number or Internal (ConnexCS) extension, group, DID, etc. 
-    
-    :material-menu-right: `Queue`- strategy, you will have the following additional fields:
+    + **Queue** strategy requires additional fields (no **Group Members** tab available):
+        + `On Hold Music`- The audio file to play to the member and caller when the call is placed on hold.
+        + `Join Message`- The audio file that contains the Welcome Message played to the caller after they dial the group extension.
+        + `Chime List`- A list of audio files with the messages played to the call if no members of the group are available and the caller is waiting to be routed to the next available member. The message could thank them for waiting, play an advertisement, reference them to online or email support, and so on.
+        + `Chime Interval`- The time duration between successive chime messages. During this interval, the system will play the selected On Hold Music.
+        + `Agent Login Destination`- The extension number an individual must dial to join the group.
+        + `Agent Logout Destination`- The extension number an individual must dial to quit the group.
+        + `Agent Offhook Destination`- An extension number an individual must dial to receive calls immediately after joining the group.
 
-    |Field   |Description|
-    |--------|----------------------|
-    |`On Hold Music` |The audio file to play to the member and caller when the call is placed on hold.|
-    |`Join Message` |The audio file that contains the Welcome Message played to the caller after they dial the group extension.|
-    |`Chime List` |A list of audio files with the messages played to the call if no members of the group are available and the caller is waiting to be routed to the next available member. The message could thank them for waiting, play an advertisement, reference them to online or email support, and so on.|
-    |`Chime Interval` |The time duration between successive chime messages. During this interval, the system will play the selected On Hold Music.|
-    |`Agent Login Destination` |The extension number an individual must dial to join the group.|
-    |`Agent Logout Destination` |The extension number an individual must dial to quit the group.|
-    |`Agent Offhook Destination` |An extension number an individual must dial to receive calls immediately after joining the group.|
+        ![alt text][group2]
+
++ **PBX Server**: Select the desired regional server.
 
 Once all changes have been made, select **`Save`**. 
+
+
+[group1]: /class5/img/group1.png "Group Members Configuration"
+[group2]: /class5/img/group2.png "Group Queue Configuration"

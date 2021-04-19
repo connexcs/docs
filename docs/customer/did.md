@@ -54,7 +54,13 @@ For more details on these fields, see [**Media in Customer Routing**](https://do
     
     :material-menu-right: `Zone (recommended)`- Select any of the regional servers
 
-+ **Call Recording**: disabled
++ **Call Recording**: Select the percent of calls to record for this customer
+    + Disabled- never record calls
+    + 1% Sampling
+    + 5% Sampling
+    + 25% Sampling
+    + 50% Sampling
+    + Enabled (Always On)
 + **Timeout**: Set various options to help with call timeout for missed BYEs.
 + **Max Duration**: Set the maximum amount of time (in seconds) that the call will be allowed to exist before being terminated, typically in the case of a missed BYE.
 

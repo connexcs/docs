@@ -32,9 +32,9 @@ Order of Sections:
 
 + Use Reference-style: 
 
-    ![alt text][logo]
+    \![alt text][logo]
 
-    [logo]: main/images/icon48.png "Logo Title Text 2"
+    \[logo]: main/images/icon48.png "Logo Title Text 2"
     
 + Most Images should be indented 4 spaces (some exceptions are when it begins a section, or a small image is inserted into text). This is accomplished in two ways:
     + If the image appears in or just after a list, enter 4 spaces prior to the "alt text" tag

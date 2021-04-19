@@ -12,5 +12,10 @@ Click the :material-plus: and complete the following fields:
 
 Click **`Save`** to assign the contact to the customer. 
 
+&emsp;![alt text][customer-contracts]
+
 !!! tip "How to create a Contract"
     For details on Contract setup, see **Setup :material-menu-right: Config :material-menu-right: [Contracts](https://docs.connexcs.com/setup/config/contracts/)**. Contract Revisions are also available here. 
+
+   
+[customer-contracts]: /customer/img/customer-contracts.png "Customer Contracts"
