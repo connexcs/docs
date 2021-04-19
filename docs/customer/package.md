@@ -12,7 +12,7 @@ Use **Packages** to offer predefined products and services to each customer.
 3. Selecting **Auto Decrement Credit** will debit the package amount from the customer account based on the Frequency and Frequency Match under Package details.
 3. Click the **`Save`** button.
 
-![alt text][customer-packages]
+&emsp;![alt text][customer-packages]
 
 !!! info "Managing Packages"
     **Packages** are created and managed in Setup > Config > Packages. See **[Packages](https://docs.connexcs.com/setup/config/packages/)** for more information. 
