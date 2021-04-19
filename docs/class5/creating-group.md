@@ -73,17 +73,17 @@ To create a new Group, click the :material-plus: icon.
 + **Extension**: Callers will use this extension to connect to this group.
 + **Group Type** (see [**Group call routing strategies**](class5/creating-group/#group-call-routing-strategies) above.
     
-    :material-menu-right: **Parallel** or **Sequential** strategies require Group Member setup:
+&emsp;:material-menu-right: **Parallel** or **Sequential** strategies require Group Member setup:
     
-     + Select the strategy then **`Save and Stay`**.
-     + Go to the new **Group Members** tab. 
-     + Click the :material-plus: to add a new member.
-     + `Destination`- Click **`Edit`** to enter the Destination as either an External number or Internal (ConnexCS) extension, SIP User, group, DID, etc. 
-     + `Ring Timeout`- This is especially helpful when calling mobile numbers as you can cancel the call before it hits the voicemail, allowing it to roll to the next Group Member.
+    + Select the strategy then **`Save and Stay`**.
+    + Go to the new **Group Members** tab. 
+    + Click the :material-plus: to add a new member.
+    + `Destination`- Click **`Edit`** to enter the Destination as either an External number or Internal (ConnexCS) extension, SIP User, group, DID, etc. 
+    + `Ring Timeout`- This is especially helpful when calling mobile numbers as you can cancel the call before it hits the voicemail, allowing it to roll to the next Group Member.
    
-     ![alt text][group1]     
+&emsp;![alt text][group1]     
     
-    :material-menu-right: **Queue** strategy requires additional fields (no **Group Members** tab available):
+&emsp;:material-menu-right: **Queue** strategy requires additional fields (no **Group Members** tab available):
     
     + `On Hold Music`- The audio file to play to the member and caller when the call is placed on hold.
     + `Join Message`- The audio file that contains the Welcome Message played to the caller after they dial the group extension.
@@ -93,9 +93,7 @@ To create a new Group, click the :material-plus: icon.
     + `Agent Logout Destination`- The extension number an individual must dial to quit the group.
     + `Agent Offhook Destination`- An extension number an individual must dial to receive calls immediately after joining the group.
 
-    ![alt text][group2]
-    
-    ![alt text][group3]
+&emsp;![alt text][group2]
 
 + **PBX Server**: Select the desired regional server.
 
@@ -104,4 +102,3 @@ Once all changes have been made, select **`Save`**.
 
 [group1]: /class5/img/group1.png "Group Members Configuration"
 [group2]: /class5/img/group2.png "Group Queue Configuration"
-[group3]: /class5/img/group3.png "Group Queue Configuration2"
