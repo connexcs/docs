@@ -61,12 +61,13 @@ To enable, click the **:material-plus:** next to IP Authentication:
     4. New: enter what should replace the current information.
     5. Use the Testing `Input` field to verify the replacement is working as expected. 
     6. Click **`Save`** when done. 
+    7. If a parameter rewrite has already been created, you will have the ability to test it from the main tab. 
     
     Example: International calls coming in with a + should be replaced with a specific country code. 
 
-    &emsp; ![alt text][parameter-rewrite]
+    &emsp;![alt text][parameter-rewrite]
 
-Click **`Save`** to add IP Authentication to the IP.
+
 ___    
 
 ### IP Authentication Audit Log
@@ -120,6 +121,9 @@ To enable, click the **:material-plus:** next to SIP User Authentication:
     4. New: enter what should replace the current information.
     5. Use Testing `Input` field to verify the replacement is working as expected. 
     6. Click **`Save`** when done. 
+    7. If a parameter rewrite has already been created, you will have the ability to test it from the main tab. 
+
+    &emsp;![alt text][test-rewrite]
 
 === "Voice Mail"
 
@@ -129,7 +133,7 @@ To enable, click the **:material-plus:** next to SIP User Authentication:
    
     If NAT/SIP pings are enabled, the **Latency** tab will be available at the top of the SIP user screen, and displays the status of the SIP pings, and latency based on those pings. This can be helpful for troubleshooting audio problems. 
 
-Click **`Save`** to add the new SIP User.
+
 ___
 
 ### Reset SIP Password
@@ -164,5 +168,6 @@ Ex: Customer switch :material-menu-right: NAT/firewall :material-menu-right: Con
 [ipauth-adv]: /customer/img/ipauth-adv.png "Edit Switch Advance"
 [ipauth-param]: /customer/img/ipauth-param.png "Edit Switch Parameters"
 [sip-b]: /customer/img/sip-b.png "SIP Codecs"
+[test-rewrite]: /customer/img/test-rewrite.png "Test Parameter Rewrite"
 [407-trace]: /customer/img/407-trace.png "SIP Trace Error 407"
 [voicemail]: /customer/img/voicemail.png "Voicemail"

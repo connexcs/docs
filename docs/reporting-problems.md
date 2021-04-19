@@ -43,6 +43,7 @@ Issues are classified based on a combination of Category and Severity. If you ar
 #### Categories
 
 **Platform**- Refers to the stability of the ConnexCS system (typically outside customer control). Ex: ConnexCS platform is down. 
+
 **Operational** - Anything within the customer's control. Ex: Configuration issues. 
 
 #### Severity Levels
@@ -69,6 +70,17 @@ Issues are classified based on a combination of Category and Severity. If you ar
 
 ### Requested Troubleshooting and Information
 For best results when reporting an issue, please provide us with the following information. This will help our support staff and engineers best address reported problems. 
+
+```mermaid
+graph LR
+A[Check for Outages] ==> B[Check Documentation] 
+B ==> C[Gather Data] 
+C ==> D[Submit Issue]
+style A fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
+style B fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
+style C fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
+style D fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
+```
 
 **Step 1: Check for Outages**
 

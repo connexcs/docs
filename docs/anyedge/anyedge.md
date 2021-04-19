@@ -16,11 +16,11 @@ Click the :material-plus: to set the following:
 + **Compress In**: Select method(s) to compress inbound data, not only for lower bandwidth use, but also avoid UDP fragmentation. See [**Compaction & Compression**](https://docs.connexcs.com/anyedge/anyedge/#compaction-compression) for details.
 + **Compress Out**: Particularly helpful when using Outbound Proxy. See [**Compaction & Compression**](https://docs.connexcs.com/anyedge/anyedge/#compaction-compression) for details.
 + **Flags**: currently n/a
-+ **Primary Attempts**: (not useful for less than 3 servers) Set the number of attempts before going to a second zone
-+ **Secondary Attempts**: (not useful for less than 3 servers) Set the number of attempts before going to a third zone 
++ **Primary Attempts**: (not useful for less than 3 servers) Set the number of attempts before going to a second zone.
++ **Secondary Attempts**: (not useful for less than 3 servers) Set the number of attempts before going to a third zone.
 
 ### AnyEdge Domain
-After AnyEdge configuration is complete, click the:material-plus: next to Domains to configure a specific domain with same settings as above: customer call distribution, CPS, Validation, and so on. There is also an ability to provide additional TLS configuration for SIP protection.
+After AnyEdge configuration is complete, click the :material-plus: next to Domains to configure a specific domain with same settings as above: customer call distribution, CPS, Validation, and so on. There is also an ability to provide additional TLS configuration for SIP protection.
 
 ### AnyEdge Destinations
 Click the :material-plus: to specify the Destination IP, and one or more Limit (Primary) and Backup (Secondary) Zones.
@@ -58,7 +58,7 @@ The primary use case for **AnyEdge** is to disseminate calls to a pool of SIP Se
  - Hash over request-uri
  - Weighted round-robin (next destination) - the destination's weight determines how many times it is chosen before going to the next one
  - Hash over authorization-username (Proxy-Authorization or "normal" authorization) - If a username is not found, weighted round-robin is used.
- - Random (using rand())
+ - Random (using *rand()*)
  - The first entry in set is chosen
 
 ### Metrics
@@ -72,13 +72,13 @@ Use the following graphs to view the metrics:
 ### SIP Packet Validation
 Malformed packets can cause all sorts of problems for your internal network, such as, buffer overflow attacks. These problems can be stopped at the edge by selecting specific options when enabling SIP Packet Validation:
 
- - Check the integrity of the SDP body (if it exists)
- - Check the format and the integrity of each header body
- - Don't check the "Max-Forwards" header
- - Checks the "R-URI" and whether the domain contains valid characters
- - Checks the URI of the "From" field and whether the domain contains valid characters
- - Checks the URI of the "To" field and whether the domain contains valid characters
- - Checks the URI of the "Contact" field
++ Check the integrity of the SDP body (if it exists)
++ Check the format and the integrity of each header body
++ Don't check the "Max-Forwards" header
++ Checks the "R-URI" and whether the domain contains valid characters
++ Checks the URI of the "From" field and whether the domain contains valid characters
++ Checks the URI of the "To" field and whether the domain contains valid characters
++ Checks the URI of the "Contact" field
 
 If a packet fails to validate, you can choose how this must be handled. You can handle this with a "400" error or with an "X-Validate-Fail" header. The reasons why a packet fails to validate are:
 

@@ -75,6 +75,13 @@ ConnexCS Docs banner color ("connexblue")
 
 
 ### Data visuzation
+#### Process Flows and Diagrams
+We use Mermaid for process flows and diagrams. Use [Mermaid Live Editor](https://mermaid-js.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoiZ3JhcGggVERcbiAgICBBW0NocmlzdG1hc10gLS0-fEdldCBtb25leXwgQihHbyBzaG9wcGluZylcbiAgICBCIC0tPiBDe0xldCBtZSB0aGlua31cbiAgICBDIC0tPnxPbmV8IERbTGFwdG9wXVxuICAgIEMgLS0-fFR3b3wgRVtpUGhvbmVdXG4gICAgQyAtLT58VGhyZWV8IEZbZmE6ZmEtY2FyIENhcl0iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOmZhbHNlfQ) and [Mermaid for GitHub](https://mermaid-js.github.io/mermaid/#/) for help 
+
++ Use "\`\`\`mermaid" to start the flow, then  "\`\`\`" to end it. 
++ Nodes style uses the following, unless other colors are needed (reds and greens for accenting): style A fill:#ECEFF1,stroke:#4051b5,stroke-width:2px 
+
+
 
 ### Adminitions (Errors, Alerts, Tips, etc)
 

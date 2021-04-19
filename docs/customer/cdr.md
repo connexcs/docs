@@ -17,7 +17,7 @@ The Customer **CDR** tab lists Call Detail Records associated with the selected 
 * **Download**: Pressing **`Download`** will save the record to your hard drive in CSV format. You can also select which columns to include in the download.
 
 ## Recalculate CDR
-Use the **`Recalc CDR`** button from within the specific customer to refresh CDR data that is inaccurate. 
+Use the **`Recalc CDR`** button from within the specific customer to refresh CDR data that is inaccurate. The fields available are dependent on the selected Operation. 
 
 + **Operations**
     + Refresh Credit- to recalculate balances
@@ -51,4 +51,4 @@ Create advanced filters using any fields of the record. Quickly select either Or
 CDR's are rated and stored in UTC, daily totals are also calculated in UTC. You can change the time zone that individual CDR records are viewed from the time zone selector, however downloads will always be in UTC.
     
 [querybuilder]: /customer/img/querybuilder.png "Query Builder"
-[recalc]: /customer/img/56.png "Recalc"
+[recalc]: /customer/img/recalc.png "Recalculate and Rerate"

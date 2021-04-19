@@ -65,7 +65,6 @@ Click the blue pencil to edit.
 
 + **FQDN**: The FQDN (Fully Qualified Domain Name) needs to be set for TLS security to be enabled directly on the server.
 + **Cluster**: Group servers to share information such as dialogues and throughput. Ex: if you set CPS to 10, clustered servers will allow 10 CPS, un-clustered servers will allow 10 CPS per server. 
-+ **Reinvite Ping Interval**: *in progress*
 + **Interconnect**: Where the server is visible routing.
 + **UAC Auth**: Enables ConnexCS to register as a UAC (rather than UAS) to upstream providers with a username and password.
 + **WebRTC and TLS**: Enabled once the FQDN has been set, these also require a secure certificate. These are required for [**WebPhone**](https://docs.connexcs.com/setup/integrations/webphone/).
@@ -102,6 +101,8 @@ Use this button to update the Channels for the selected server. The update will 
 ### Run Server Update
 This only needs to be run when the system indicates "There is a pending update on the server" at the top of the server details. 
 
+&emsp;![alt text][server-update]
+
 ### Server Reactivation
 To reactivate a server:
 
@@ -109,15 +110,18 @@ To reactivate a server:
 2. Click **Reactivate** to activate your server.
 
     ![alt text][server-6]
-    
+
+## Certificates
+Select certificates to apply to the server. These certificates are managed under **Setup :material-menu-right: Information :material-menu-right: [Certificate](/setup/information/certificate/)**.
+
 ## Server Clustering and User Location Registration
 ### User Location Registration
-When a call is initiated, this generates a SIP `INVITE` which is sent to the remote server. When users connect from dynamic IP addresses, there must be a a way to map a known constant address (ex: a username) to a dynamic endpoint such as an IP address or port.
+When a call is initiated, this generates a SIP `INVITE` which is sent to the remote server. When users connect from dynamic IP addresses, there must be a way to map a known constant address (ex: a username) to a dynamic endpoint such as an IP address or port.
 
 This is accomplished by the User Agent Client (UAC), or a soft phone / hard phone, connecting to the ConnexCS server with a `REGISTER` message which includes their current location and their username, along with additional information. The information is then stored, and made available as a lookup. When someone calls a user, it routes the call to their IP address.
 
 ### NAT Keep Alives
-When a user is registers with UDP via NAT, a port mapping is created. However, the NAT will time out (and the call will disconnect) is the connection is not maintained by keep-alive by traffic. ConnexCS will perodically send keep-alive messages to the registered UAC, as either UDP or full SIP `OPTIONS` messages. While both work in this scenario, the SIP ```OPTIONS``` ping will reply back to the ConnexCS Server. From this ping, we can monitor the latency of the connection, and also discern if NAT has destroyed the connection or if the user has gone offline without notifying the system. Once a user is registered via UDP, the connection is verified once again.
+When a user endpoint registers with UDP via NAT, a port mapping is created. However, the NAT will time out (and the call will disconnect) if the connection is not maintained by keep-alive by traffic. ConnexCS will periodically send keep-alive messages to the registered UAC, as either UDP or full SIP `OPTIONS` messages. While both work in this scenario, the SIP ```OPTIONS``` ping will reply to the ConnexCS Server. From this ping, we can monitor the latency of the connection and discern if NAT has destroyed the connection or if the user has gone offline without notifying the system. Once a user is registered via UDP, the connection is verified once again.
 
 ### Deployment Options
 
@@ -129,4 +133,5 @@ When a user is registers with UDP via NAT, a port mapping is created. However, t
     Due to design constraints that occur with multiple servers in an array, NAT Keep Alive Pings can be quite intensive. You could use *Disable UAC Ping* from the server page, upgrade to a cluster, or use a single registration server to solve this. More intricate measures can be arranged on a case-by-case basis.
 
 [rtpserver]: /setup/img/rtpservers.png "RTP Server"
+[server-update]: /setup/img/server-update.png "Update Server"
 [server-6]: /setup/img/reactivateserver.png "Reactivate Server"

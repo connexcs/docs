@@ -8,6 +8,13 @@ Media refers to the actual audio payload portion of a call. For more information
 
 **RTCP (RTP Control Protocol)** does not carry any actual data payload, but helps with delivery. RTCP is used to report on media quality statstics after the call is completed. 
 
+## ConnexCS Media Servers
+ConnexCS allows you to route your media through a global array of dedicated media servers. Each regional zone encompasses multiple servers, to provide high availability. These servers operate independently of your server, so your server could be located in London your media server runs in New York
+
+!!! tip "Location can impact latency"
+    You should choose a media server that adds the least latency to the call. For example, if your customer is in Bangalore and your carrier in New York, use either Bangalore or New York as your media proxy.
+
+
 ## Call Quality Issues
 Call Quality/Media issues are typically related to media handling and related protocols. This could be a result of problems with the customer equipment, the ConnexCS configuration, the carrier, or the far-end. Common issues related to the media stream can include choppy or robotic voice, echo, one-way audio, static, and anything else relating to the quality of a call that is in session. 
 
