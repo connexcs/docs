@@ -80,15 +80,18 @@ To create a new Group, click the :material-plus: icon.
      + Click **`Edit`** to set the `Destination` as either an External number or Internal (ConnexCS) extension, group, DID, etc. 
     
     :material-menu-right: `Queue`- strategy, you will have the following additional fields:
+    
+    + `On Hold Music`- The audio file to play to the member and caller when the call is placed on hold.
+    + `Join Message`- The audio file that contains the Welcome Message played to the caller after they dial the group extension.
+    + `Chime List`- A list of audio files with the messages played to the call if no members of the group are available and the caller is waiting to be routed to the next available member. The message could thank them for waiting, play an advertisement, reference them to online or email support, and so on.
+    + `Chime Interval`- The time duration between successive chime messages. During this interval, the system will play the selected On Hold Music.
+    + `Agent Login Destination`- The extension number an individual must dial to join the group.
+    + `Agent Logout Destination`- The extension number an individual must dial to quit the group.
+    + `Agent Offhook Destination`- An extension number an individual must dial to receive calls immediately after joining the group.
 
-    |Field   |Description|
-    |--------|----------------------|
-    |`On Hold Music` |The audio file to play to the member and caller when the call is placed on hold.|
-    |`Join Message` |The audio file that contains the Welcome Message played to the caller after they dial the group extension.|
-    |`Chime List` |A list of audio files with the messages played to the call if no members of the group are available and the caller is waiting to be routed to the next available member. The message could thank them for waiting, play an advertisement, reference them to online or email support, and so on.|
-    |`Chime Interval` |The time duration between successive chime messages. During this interval, the system will play the selected On Hold Music.|
-    |`Agent Login Destination` |The extension number an individual must dial to join the group.|
-    |`Agent Logout Destination` |The extension number an individual must dial to quit the group.|
-    |`Agent Offhook Destination` |An extension number an individual must dial to receive calls immediately after joining the group.|
+&emsp;![alt text][group]
 
 Once all changes have been made, select **`Save`**. 
+
+
+[group]: /class5/img/group.png "Group Configuration"
