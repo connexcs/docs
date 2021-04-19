@@ -86,6 +86,9 @@ Use a **Group** to assign a specific set of Control Panel access permissions to 
 
     ![alt-text][group-perm]
 
+!!! tip "Group Permission Access exceptions"
+    The permissions for the **Analytics** and **CDR** Areas are always `Access Denied` (no other permissions are allowed). If **Breakout** is selected, an "Allow Access" box appears. Unchecked will set permissions to `Access Denied`; Checked will set permissions to `Read Create`.  
+
 ### Permissions Model
 The ConnexCS permissions model consists of two levels:
 
