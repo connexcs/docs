@@ -71,7 +71,7 @@ To create a new Group, click the :material-plus: icon.
 + **Name**: Enter the name for the group.
 + **Customer**(only available when adding the Group from Class5, not when in the Customer management area): Select the customer the group will be applied to from the drop-down list.
 + **Extension**: Callers will use this extension to connect to this group.
-+ **Group Type** (see [**Group call routing strategies**](class5/creating-group/#group-call-routing-strategies)) above.
++ **Group Type** refers to the [**Group call routing strategies**](class5/creating-group/#group-call-routing-strategies) above:
     + **Parallel** or **Sequential** strategies require Group Member setup:
         + Select the strategy then **`Save and Stay`**.
         + Go to the new **Group Members** tab. 
