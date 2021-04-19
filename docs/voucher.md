@@ -5,12 +5,13 @@
 
 ## Voucher Types
 
-Vouchers may be issues in one of 3 forms:
+Vouchers are issued in one of 3 forms:
 
 * **Free Credit** - Once the voucher code is entered credit is applied independently of any other payment.
 * **Multiplier Credit** - Ex: Credit doubled for top-up of $50 or more.
 * **Additional Credit** - Ex: $50 free credit for top-up of $100 or more.
 
+&emsp;![alt text][voucher-grid]
 
 ## Voucher Setup
 Click on the blue **`Add`** button.
@@ -21,6 +22,11 @@ Click on the blue **`Add`** button.
 * **Addition**: Enter how much extra credit to be applied to the customer's account. Ex: Set 50 to give them $50, with or without a spend of their own, based on the Minimum Activation.
 * **Currency Selector**: Select the desired currency
 
+&emsp;![alt text][voucher-add]
+    
 Select **`Save`** and the system will generate the vouchers.
+
+[voucher-grid]: /misc/img/voucher-grid.png "Voucher Grid"
+[voucher-add]: /misc/img/voucher-add.png "Add Voucher"
 
 
