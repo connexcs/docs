@@ -79,17 +79,16 @@ To create a new Group, click the :material-plus: icon.
         + `Destination`- Click **`Edit`** to enter the Destination as either an External number or Internal (ConnexCS) extension, SIP User, group, DID, etc. 
         + `Ring Timeout`- This is especially helpful when calling mobile numbers as you can cancel the call before it hits the voicemail, allowing it to roll to the next Group Member.
    
-&emsp;![alt text][group1]     
+    ![alt text][group1]     
     
-&emsp;:material-menu-right: **Queue** strategy requires additional fields (no **Group Members** tab available):
-    
-    + `On Hold Music`- The audio file to play to the member and caller when the call is placed on hold.
-    + `Join Message`- The audio file that contains the Welcome Message played to the caller after they dial the group extension.
-    + `Chime List`- A list of audio files with the messages played to the call if no members of the group are available and the caller is waiting to be routed to the next available member. The message could thank them for waiting, play an advertisement, reference them to online or email support, and so on.
-    + `Chime Interval`- The time duration between successive chime messages. During this interval, the system will play the selected On Hold Music.
-    + `Agent Login Destination`- The extension number an individual must dial to join the group.
-    + `Agent Logout Destination`- The extension number an individual must dial to quit the group.
-    + `Agent Offhook Destination`- An extension number an individual must dial to receive calls immediately after joining the group.
+    + **Queue** strategy requires additional fields (no **Group Members** tab available):
+        + `On Hold Music`- The audio file to play to the member and caller when the call is placed on hold.
+        + `Join Message`- The audio file that contains the Welcome Message played to the caller after they dial the group extension.
+        + `Chime List`- A list of audio files with the messages played to the call if no members of the group are available and the caller is waiting to be routed to the next available member. The message could thank them for waiting, play an advertisement, reference them to online or email support, and so on.
+        + `Chime Interval`- The time duration between successive chime messages. During this interval, the system will play the selected On Hold Music.
+        + `Agent Login Destination`- The extension number an individual must dial to join the group.
+        + `Agent Logout Destination`- The extension number an individual must dial to quit the group.
+        + `Agent Offhook Destination`- An extension number an individual must dial to receive calls immediately after joining the group.
 
 &emsp;![alt text][group2]
 
