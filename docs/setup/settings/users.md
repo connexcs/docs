@@ -6,7 +6,7 @@ Create and assign **Users** and **Groups** based on various levels of permission
 ## Users
 To add a new ConnexCS **User**, click the :material-plus: button in the **Users** section on the left.
 
-*Field descrptions*
+*Field descriptions*
 
 + **Name** - The user's name.
 + **Groups** (optional) - Select one or more Group(s) to be assigned to the new user. This will define their permission levels. It is additive, meaning that if a User is in a Read-Only Group as well as a Group that has Edit permissions for a specific area, they will be able to make edits in that area. While it is possible for a user to belong to multiple-groups, it is easier to manage a user with only 1 group. (See details below on creating Groups.)
@@ -22,6 +22,8 @@ To add a new ConnexCS **User**, click the :material-plus: button in the **Users*
 + **Shared Ticket** - If enabled, all Users in the account can view tickets created by this user, based on the email address of this User. 
 	
 Once the details are entered, click the **`Save`** button.
+
+&emsp;![alt text][user]
 
 !!! question "Why should you specify an email address that you use often?" 
     
@@ -63,20 +65,22 @@ Use a **Group** to assign a specific set of Control Panel access permissions to 
 1. Click the :material-plus: button in the **Groups** section.
 2. Enter a Group **Name** (ex: Engineering, Sales, etc).
 3. Set **Default Permissions** for the group's global permissions: `Create`, `Update`, `Read`, and `Delete`. All 4 will be selected by default. Click the X to remove a permission. Click the down arrow on the right to add a permission. 
-4. Click **`Save`**. The new Group will be listed. 
+4. Click **`Save`**. The new **Group** will be listed. 
 
 **Step 2: Specify Group Permissions**
 
 1. Click on the **Group** to view the "Add Group Permission" table. Click the :material-plus: next to the table. 
-2. **Area**: Select the functional area of the Control Panel for the specific permission (ex: Customer, Carrier, Logging, ScriptForge, etc). 
-3. **Access**: Define the granular permissions for this area. All 4 access options can be selected. If none are selected, then users in this Group will get "Access Denied" when they try to go to the area. 
-4. Set as many Area/Access permissions as needed. 
-5. Once finished, select **`Save`**.
+    + **Area**: Select the functional area of the Control Panel for the specific permission (ex: Customer, Carrier, Logging, ScriptForge, etc). 
+    + **Access**: Define the granular permissions for this area. All 4 access options can be selected. If none are selected, then users in this Group will get "Access Denied" when they try to go to the area.   
+    + Set as many Area/Access permissions as needed. 
+    + Once finished, select **`Save`**.
+
+    ![alt text][add-group-perm]
+
 6. The new permissions will be visible in the Add Group Permission table, with the following fields:
-	
-    * Path - the path to the functional Area's API
-    * Access - the level of permissions
-    * Action - allows you to Edit the Area and Access permissions
+    + `Path` - the path to the functional Area's API
+    + `Access` - the level of permissions
+    + `Action` - allows you to Edit the Area and Access permissions
 
 7. Make sure you **`Save`** the Group with the new permissions.
 
@@ -85,7 +89,7 @@ Use a **Group** to assign a specific set of Control Panel access permissions to 
 ### Permissions Model
 The ConnexCS permissions model consists of two levels:
 
-* Global (Default Permissions) are set for the Group 
+* Global (Default Permissions) are set for the Group. 
 + Granular (Add Group Permission) are set for a specific Area of the ConnexCS Control Panel. 
 
 Permissions are determined by level and access:
@@ -101,6 +105,7 @@ This feature allows you to create a quick default set of permissions suitable fo
 !!! warning "Alpha Feature"
     The Default Reseller feature is still an Alpha Feature in testing, please use with caution. 
 
-
+[user]: /setup/img/user.png "Add User"
+[add-group-perm]: /setup/img/add-group-perm.png "Add Group Permissions"
 [group-perm]: /setup/img/group-perm.png "Group Permission"
 [password-rules]: /setup/img/password-rules.png "password-rules"
