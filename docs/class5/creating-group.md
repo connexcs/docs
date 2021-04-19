@@ -94,6 +94,8 @@ To create a new Group, click the :material-plus: icon.
     + `Agent Offhook Destination`- An extension number an individual must dial to receive calls immediately after joining the group.
 
     ![alt text][group2]
+    
+    ![alt text][group3]
 
 + **PBX Server**: Select the desired regional server.
 
@@ -102,3 +104,4 @@ Once all changes have been made, select **`Save`**.
 
 [group1]: /class5/img/group1.png "Group Members Configuration"
 [group2]: /class5/img/group2.png "Group Queue Configuration"
+[group3]: /class5/img/group3.png "Group Queue Configuration2"
