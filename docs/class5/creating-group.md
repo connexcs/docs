@@ -79,7 +79,7 @@ To create a new Group, click the :material-plus: icon.
         + `Destination`- Click **`Edit`** to enter the Destination as either an External number or Internal (ConnexCS) extension, SIP User, group, DID, etc. 
         + `Ring Timeout`- This is especially helpful when calling mobile numbers as you can cancel the call before it hits the voicemail, allowing it to roll to the next Group Member.
    
-    ![alt text][group1]     
+        ![alt text][group1]     
     
     + **Queue** strategy requires additional fields (no **Group Members** tab available):
         + `On Hold Music`- The audio file to play to the member and caller when the call is placed on hold.
