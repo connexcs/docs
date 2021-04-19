@@ -90,7 +90,7 @@ To create a new Group, click the :material-plus: icon.
         + `Agent Logout Destination`- The extension number an individual must dial to quit the group.
         + `Agent Offhook Destination`- An extension number an individual must dial to receive calls immediately after joining the group.
 
-&emsp;![alt text][group2]
+        ![alt text][group2]
 
 + **PBX Server**: Select the desired regional server.
 
