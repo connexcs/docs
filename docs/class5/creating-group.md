@@ -72,14 +72,12 @@ To create a new Group, click the :material-plus: icon.
 + **Customer**(only available when adding the Group from Class5, not when in the Customer management area): Select the customer the group will be applied to from the drop-down list.
 + **Extension**: Callers will use this extension to connect to this group.
 + **Group Type** (see [**Group call routing strategies**](class5/creating-group/#group-call-routing-strategies)) above.
-    
-:material-menu-right: **Parallel** or **Sequential** strategies require Group Member setup:
-
-   + Select the strategy then **`Save and Stay`**.
-   + Go to the new **Group Members** tab. 
-   + Click the :material-plus: to add a new member.
-   + `Destination`- Click **`Edit`** to enter the Destination as either an External number or Internal (ConnexCS) extension, SIP User, group, DID, etc. 
-   + `Ring Timeout`- This is especially helpful when calling mobile numbers as you can cancel the call before it hits the voicemail, allowing it to roll to the next Group Member.
+    + **Parallel** or **Sequential** strategies require Group Member setup:
+        + Select the strategy then **`Save and Stay`**.
+        + Go to the new **Group Members** tab. 
+        + Click the :material-plus: to add a new member.
+        + `Destination`- Click **`Edit`** to enter the Destination as either an External number or Internal (ConnexCS) extension, SIP User, group, DID, etc. 
+        + `Ring Timeout`- This is especially helpful when calling mobile numbers as you can cancel the call before it hits the voicemail, allowing it to roll to the next Group Member.
    
 &emsp;![alt text][group1]     
     
