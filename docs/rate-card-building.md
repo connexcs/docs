@@ -16,6 +16,8 @@ There are four sections for Rate Cards in the ConnexCS Control Panel:
 + **Routing** gives an overview of the routing for customers, and links to configure customers. 
 + **Global Search** provides a way to search for routes and rates based on the Provider and Direction. 
 
+&emsp;![alt text][rc-global]
+
 ## Code and Billing Accuracy
 It is always sound practice to base Rate Cards on the information in Provider cards. Code accuracy is perhaps one of the most important of these benefits. In any system with card-based profiles, code accuracy is one of the means to ensure the accuracy of the whole system, and to make all passed or collected data more reliable.
 
@@ -80,3 +82,6 @@ After merging the 3 providers, we would have the following 3 cards output:
 | **Merged Cost (avg)**|   |  |
 | 441 |    UK Landline |  0.0125 |
 | 442 | UK Landline |   0.0125 |
+
+
+[rc-global]: /img/rc-global.png "Rate Card Global"
