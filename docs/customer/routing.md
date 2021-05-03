@@ -155,7 +155,7 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 
     *While it's doubtful that any information will be logged in the customer/providers switch when the audio is engaged, it is possible for an engineer to learn this information from a SIP trace, PCAP, or by looking at transit locations. DTMF Detection ONLY works when RTP Proxy mode is enabled.*
 
-+ **Call Recording**: This allows you to record and store calls, which are then found under **Setup > Information > [Browsing Record](https://docs.connexcs.com/setup/information/recording/)**. There is an additional charge of 0.003 on top of any existing fees or charges, so choose carefully how many calls to record:
++ **Call Recording**: This allows you to record and store calls, which are then found under **Setup > Information > [Browsing Record](https://docs.connexcs.com/setup/information/recording/)**. There is an additional charge, per recorded call, of 0.003 in addition to existing fees or charges, so choose carefully how many calls to record:
     
     :material-menu-right: `Disabled`- no calls are recorded
     
