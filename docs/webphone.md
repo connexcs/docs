@@ -14,7 +14,7 @@ ConnexCS **Web Phone** is a WebRTC application using PWA. **WebRTC** (Real-Time 
 !!! warning "BitDefender and WebSockets"
     BitDefender blocks WebSockets unless the phone. and webrtc. domains have been whitelisted. 
 
-A [**PWA** (Progressive Web Application)](https://en.wikipedia.org/wiki/Progressive_web_application) is an application written inside the web browser. It uses modern API and has the potential to replace traditional proprietary app-stores.
+A [**PWA** (Progressive Web Application)](https://en.wikipedia.org/wiki/Progressive_web_application) is an application written inside the web browser, and it uses a modern API.
 
 ### State-level firewalls
 WebRTC is effective for bypassing state-level firewalls by:
@@ -48,13 +48,13 @@ Navigate using the following sections in the footer menu at the bottom of Web Ph
 ### Setup Domains
 ConnexCS **Web Phone** needs 2 domains to function correctly:
 
-* **Domain (A)** - Create a CNAME on your domain pointing to `portal.connexcs.com` (yes, this is the same as the customer portal). This is the location where the phone will be hosted and needs to be provided to your customers, such as `webphone.yourdomain.com`, where `yourdomain.com` is the domain that you own.
-* **Domain (B)** - This is the signaling domain and is attached to your server. 
+1. **Domain (A)** - Create a CNAME on your domain, such as `webphone.yourdomain.com`, and point it to our web server at `portal.connexcs.com` (responsible for web services, and yes, this is the same as the customer portal). This is the location where the phone is hosted and will be provided to your customers.
+2. **Domain (B)** - This is the SIP signaling domain (WebRTC) and is attached to your server. Navigate to **Setup :material-menu-right: Settings :material-menu-right: DNS :material-menu-right:**. Enter the domain (ex: test1), then check the box for the A record for the IP of the server you want to use. 
 
 It is recommended to setup a DNS record within ConnexCS, then point a CNAME on your domain to the ConnexCS setup domain.
 
 ### Create Certificates
-After the domains are configured, verify the certificates are under **Setup > Information > Certificates**:
+After the domains are configured, verify the certificates are under **Setup :material-menu-right: Information :material-menu-right: Certificates :material-menu-right:**:
 
 * If the domain is not listed, click on `Add Certificate` and provide your domain name.
 * If the certificates are listed but they don't have an issue or expiry date, click on "Refresh Certificates". This may take up to 10 minutes to complete.
