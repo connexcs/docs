@@ -100,9 +100,9 @@ To enable, click the **:material-plus:** next to SIP User Authentication:
         
         :material-menu-right: **`Enabled`**: Send UDP ping every 60 seconds, helping to keep some longer calls (1800 or 3600 seconds) up. 
         
-        :material-menu-right: **`Enabled (Timeout)`**: Send UDP ping every 60 seconds and disconnect if the pings aren't returned.
+        :material-menu-right: **`Enabled (Timeout)`**: Send UDP ping every 60 seconds and disconnect the call (terminate registration) if the pings aren't returned.
     
-    + **Retain DID**: When Enabled, this retains the desination number (DID) the call is sent to in the system, rather than the SIP Username. 
+    + **Retain DID**: When Enabled, inbound calls will retain the desination number (DID) the call is sent to in the system, rather than use the SIP Username. 
     + **Smart Extension**: Calls are sent to the Class5, not Class4 infrastructure. This feature is currently in Alpha and is not recommended. 
 
          ![alt text][sip-b]
