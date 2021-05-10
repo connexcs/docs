@@ -154,7 +154,11 @@ The Customer reports they can register and make outbound calls, but they are una
 **What is happening**
 In a typical configuration, a packet is sent from the customer UAC out through a NAT/firewall, and then the packet is delivered to the UAS: 
     
-Ex: Customer switch :material-menu-right: NAT/firewall :material-menu-right: ConnexCS switch
+```mermaid
+graph LR
+A(Customer switch) --> B(NAT/firewall)
+B --> C(ConnexCS switch)
+```
     
 + When a packet goes out, a hole is punched in the firewall, and the source port is recorded. When a packet is returned on that port, the firewall knows to deliver back to the UAC.  
 + This works well when using TCP, which sends regular keep-alive packets.
