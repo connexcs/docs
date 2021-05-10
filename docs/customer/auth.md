@@ -158,6 +158,9 @@ In a typical configuration, a packet is sent from the customer UAC out through a
 graph LR
 A(Customer switch) --> B(NAT/firewall)
 B --> C(ConnexCS switch)
+style A fill:#ECEFF1,stroke:#0D47A1,stroke-width:4px
+style B fill:#ECEFF1,stroke:#1976D2,stroke-width:4px
+style C fill:#ECEFF1,stroke:#2196F3,stroke-width:4px
 ```
     
 + When a packet goes out, a hole is punched in the firewall, and the source port is recorded. When a packet is returned on that port, the firewall knows to deliver back to the UAC.  
