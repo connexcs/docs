@@ -87,6 +87,7 @@ No SIP message
 Header Parsing error
 No "Call-ID" header
 ```
+
  - No "Content-Length" header for transports that require it (for example, TCP)
  - Invalid Content-Length, different from the size of the actual body
  - SDP body parsing error
