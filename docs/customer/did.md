@@ -89,6 +89,7 @@ Step 1: Create the CSV
 
 !!! tip "Tips for creating the CSV file"
     There are several steps you can take to ensure that the next step goes smoothly:
+    
         + The CSV file must contain only one sheet.
         + Include as many fields as you can when creating your columns to leverage the benefits of the bulk upload feature. 
         + Note the number of first and last rows, as these will be the range (minimum and maximum) values in Step 2. 
