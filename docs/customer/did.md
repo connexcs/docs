@@ -110,7 +110,7 @@ Step 2: Upload the CSV to ConnexCS
     + Right-click any value in the DID column and click "Map Column" > "DID".
     + If the rest of the input fields match the Control Panel column headers, then you can upload the DID numbers to the server. If not, the rest of the columns should be mapped by right-clicking then selecting the corresponding headers in "Map Column". 
     + (Optional) If you want to change a value in a column that represents a drop-down list, click the cell and enter an different value in the drop-down list. 
-    + (Optional) If you want to associate an input value in a column that represents a pre-created object such as the name of a customer, right-click the cell and click Map Column > <name of the input field>.
+    + (Optional) If you want to associate an input value in a column that represents a pre-created object such as the name of a customer, right-click the cell and click Map Column > [name of the input field].
     + (Optional) If you want to change a value in a column that accepts free-text or numerical values, click the cell and enter a different value in the drop-down list. 
     + (Optional) Change values for all cells in the columns that represent pre-created objects, drop-down lists, or accept free-text or numerical values, to reduce your operational time to fine-tune the DID numbers' input fields manually one-by-one, later.
 7. Click Upload to Server, confirm the pop-up.
