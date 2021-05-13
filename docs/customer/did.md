@@ -90,12 +90,12 @@ Step 1: Create the CSV
 !!! tip "Tips for creating the CSV file"
     There are several steps you can take to ensure that the next step goes smoothly:
     
-        + The CSV file must contain only one sheet.
-        + Include as many fields as you can when creating your columns to leverage the benefits of the bulk upload feature. 
-        + Note the number of first and last rows, as these will be the range (minimum and maximum) values in Step 2. 
-        + Input fields that correlate to drop-down lists: The entered value must match an existing entry (the Control Panel does not create values from drop-down lists on-the-fly). Ex: "Retain Display Name" only takes Enabled or Disabled; any other value will be rejected. 
-        + Input fields that are pre-created objects (ex: customer names and customer card names): You can enter "dummy" values because you must associate the corresponding cell with the input value to the actual value (name of the pre-defined object) before you upload the DID numbers to the server.
-        + Input fields that use numerical or free-text values: Enter the permissible range of values.
+	+ The CSV file must contain only one sheet.
+	+ Include as many fields as you can when creating your columns to leverage the benefits of the bulk upload feature. 
+	+ Note the number of first and last rows, as these will be the range (minimum and maximum) values in Step 2. 
+	+ Input fields that correlate to drop-down lists: The entered value must match an existing entry (the Control Panel does not create values from drop-down lists on-the-fly). Ex: "Retain Display Name" only takes Enabled or Disabled; any other value will be rejected. 
+	+ Input fields that are pre-created objects (ex: customer names and customer card names): You can enter "dummy" values because you must associate the corresponding cell with the input value to the actual value (name of the pre-defined object) before you upload the DID numbers to the server.
+	+ Input fields that use numerical or free-text values: Enter the permissible range of values.
 	+ Input fields that accept values on-the-fly (ex: tags): Enter any meaningful value.
 	+ Do not include input fields such as check boxes. You must manually select or clear a check box after you upload the DID number to the server.
 	+ Do not include a DID number that already exists on the Control Panel. The entre DID Bulk Upload will fail if Control Panel finds at least one identical DID number.
