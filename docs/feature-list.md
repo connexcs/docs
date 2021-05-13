@@ -244,7 +244,7 @@ The following is a comprehensive list of features included in the latest stable 
 * [Voicemail to Email](https://docs.connexcs.com/class5/voicemail/)
 * Custom Voicemail Message
 * Voicemail Password
-* [Call Queues ("Groups")](https://docs.connexcs.com/class5/creating-group/
+* [Call Queues ("Groups")](https://docs.connexcs.com/class5/creating-group/)
     * Music on Hold
     * Perodic Announcements
     * Join Message

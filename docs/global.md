@@ -6,7 +6,7 @@ The **Global** section of the ConnexCS Control Panel provides an account-wide ov
 
 
 ## Alerts
-View all the Alerts across the entire account. 
+View all the Alerts across the entire account. When creating an Alert from Global, you will need to select the Company that will use the Alert.
 
 *See [**Alerts**](https://docs.connexcs.com/customer/alerts) for configuration details.*
 
@@ -19,7 +19,7 @@ Alternate location(s):
     Click the **`Test`** button (only available here) to simulate the Alert. 
 
 ## Contacts
-View all Customer Contacts. 
+View all Customer Contacts. When creating a Contact from Global, you will need to select the Company where the Contact exists.
 
 *See [**Contacts**](https://docs.connexcs.com/customer/main) for configuration details.* 
 
@@ -50,7 +50,7 @@ Alternate location(s):
 ## DID
 View list of all DIDs, as well as configuration and editing. 
 
-*See [**DID**](https://docs.connexcs.com/customer/did) for configuration details.*
+*See [**DID**](https://docs.connexcs.com/customer/did) for configuration details, including Bulk Upload.*
 
 Alternate location(s):
 

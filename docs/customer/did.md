@@ -14,7 +14,7 @@ Create and edit **DID (Direct Inward Dial)** parameters within the individual cu
 
 
 ## Configure DID
-Click the :material-plus: to configure a new DID:
+To configured individual DIDs, click the :material-plus::
 
 ### Basic
 + **Customer**: Assign the number to the customer.
@@ -73,7 +73,49 @@ Select a predefined **Package** to determine costs and billing. This will decrem
 + **P-Asserted-ID**: Either `Remove` the P-Asserted-ID so it doesn't reach the customer or leave it at `Default` so it is preserved. 
 
 ### Script Forge
-Run a custom script on calls to the DID to performs actions such as route based on time of day or if specific users or numbers are active. 
+Run a custom script on calls to the DID to performs actions such as route based on time of day or if specific users or numbers are active.
+
+## Bulk Upload
+For batches of DIDs, you can use Bulk Upload to add multiple DIDs at one time using a CSV (comma-separated values) file which is then mapped to the correct values in Control Panel during the upload process. This can be performed for individual Customer (**Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: DID**) or Globally (**Global :material-menu-right: DID**).  
+
+!!! Caution "CSV files ONLY"
+    Use only a CSV file to upload DID numbers. If you upload a regular spreadsheet or another file, the Control Panel becomes unresponsive and you must log out and log in to use the Control Panel. 
+
+Step 1: Create the CSV
+
+1. In Microsoft Excel, open a new workbook and save it as a CSV (Comma delimited) file. 
+2. In the first row, add the names of the input fields as column headers. In step 2, you will have a chance to map these fields to the exact fields in ConnexCS, so these don't need to be exact.
+3. From the second row on, add the values of the input fields, one row per DID.
+
+!!! tip "Tips for creating the CSV file"
+    There are several steps you can take to ensure that the next step goes smoothly:
+    
+	+ The CSV file must contain only one sheet.
+	+ Include as many fields as you can when creating your columns to leverage the benefits of the bulk upload feature. 
+	+ Note the number of first and last rows, as these will be the range (minimum and maximum) values in Step 2. 
+	+ Input fields that correlate to drop-down lists: The entered value must match an existing entry (the Control Panel does not create values from drop-down lists on-the-fly). Ex: "Retain Display Name" only takes Enabled or Disabled; any other value will be rejected. 
+	+ Input fields that are pre-created objects (ex: customer names and customer card names): You can enter "dummy" values because you must associate the corresponding cell with the input value to the actual value (name of the pre-defined object) before you upload the DID numbers to the server.
+	+ Input fields that use numerical or free-text values: Enter the permissible range of values.
+	+ Input fields that accept values on-the-fly (ex: tags): Enter any meaningful value.
+	+ Do not include input fields such as check boxes. You must manually select or clear a check box after you upload the DID number to the server.
+	+ Do not include a DID number that already exists on the Control Panel. The entre DID Bulk Upload will fail if Control Panel finds at least one identical DID number.
+
+Step 2: Upload the CSV to ConnexCS
+
+1. Click the Bulk Upload button.
+2. Click Upload and select the CSV file (created in previous step).
+3. The DID page displays the values in the CSV file.
+4. Associate the input fields to the column headers in the CSV file.
+    + Right-click the top row of data and select "Set Start Row".
+    + Right-click any value in the DID column and click "Map Column" > "DID".
+    + If the rest of the input fields match the Control Panel column headers, then you can upload the DID numbers to the server. If not, the rest of the columns should be mapped by right-clicking then selecting the corresponding headers in "Map Column". 
+    + (Optional) If you want to change a value in a column that represents a drop-down list, click the cell and enter an different value in the drop-down list. 
+    + (Optional) If you want to associate an input value in a column that represents a pre-created object such as the name of a customer, right-click the cell and click Map Column > [name of the input field].
+    + (Optional) If you want to change a value in a column that accepts free-text or numerical values, click the cell and enter a different value in the drop-down list. 
+    + (Optional) Change values for all cells in the columns that represent pre-created objects, drop-down lists, or accept free-text or numerical values, to reduce your operational time to fine-tune the DID numbers' input fields manually one-by-one, later.
+7. Click Upload to Server, confirm the pop-up.
+8. At this point, the DIDs and associated values are uploaded to the server. If there are any duplicate DIDs in the system, the entire operation will fail. The Control Panel does not have the ability to indicate which DID is the duplicate, so you will need to review the DIDs independently. 
+
 
 See [**Script Forge**](https://docs.connexcs.com/developers/scriptforge/) for more information. 
 

@@ -31,6 +31,8 @@
 
 &emsp; ![alt text][compile2] In sync
 
+!!! tip "Reasons a card may be marked Stale"
+    A Rate Card will be marked Stale when the information presented is NOT the same as the live/active revision. Some common examples of this are when the customer generates Customer cards from Carrier cards (preferred method) OR they modify a carrier card. In both cases, the cards will be marked Stale and will need to be compiled. 
 
 !!! tip "Compile Example"
     Provider updates their rates and the customer uploads the new Provider Rate Card into ConnexCS, which increments the revision. All associated customer cards will be out of sync (orange pause icon). To correct this, select all stale cards, then click **`Bulk Build`** to update the new rates and routes. 
