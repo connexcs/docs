@@ -50,7 +50,7 @@ Alternate location(s):
 ## DID
 View list of all DIDs, as well as configuration and editing. 
 
-*See [**DID**](https://docs.connexcs.com/customer/did) for configuration details.*
+*See [**DID**](https://docs.connexcs.com/customer/did) for configuration details, including Bulk Upload.*
 
 Alternate location(s):
 
