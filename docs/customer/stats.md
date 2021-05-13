@@ -33,8 +33,8 @@ View call media stats and quality metrics.
 
 |Graph|Description |
 |:------------|:-------------------------------------------------|
-|Round Trip Time |The amount of time it takes for a control packet from the RTP server to do a round trip to the customers equipment and back again; similar to an ICMP Ping. ([Round-trip delay time](https://en.wikipedia.org/wiki/Round-trip_delay_time) from Wikipedia)|
-|Packet Loss |The number of packets lost during transit from the customer side going to our RTP server. Loss of packets may cause some voice quality issues, or it may not be detectable. ([Packet Loss](https://en.wikipedia.org/wiki/Packet_loss) from Wikipedia) |
-|Jitter |The number of packets which arrive in the wrong order; ex: Packet #51 arrives before #50, but was sent after #50.) A higher jitter (50+ ms) may point towards potential voice quality issues. ([Jitter](https://en.wikipedia.org/wiki/Jitter) from Wikipedia)|
-|MOS |The Mean Opinion Score takes into account all the above factors and produces a value which represents overall voice quality; essentially an average measure of RTCP to generate a score for voice quality (ranges from 0 to 6, over 4 is good). ([Mean Opinion Score](https://en.wikipedia.org/wiki/Mean_opinion_score) from Wikipedia)|
+|Round Trip Time |The amount of time it takes for a control packet from the RTP server to do a round trip to the customers equipment and back again; similar to an ICMP Ping. ([**Round-trip delay time**](https://en.wikipedia.org/wiki/Round-trip_delay_time) from Wikipedia)|
+|Packet Loss |The number of packets lost during transit from the customer side going to our RTP server. Loss of packets may cause some voice quality issues, or it may not be detectable. ([**Packet Loss**](https://en.wikipedia.org/wiki/Packet_loss) from Wikipedia) |
+|Jitter |The number of packets which arrive in the wrong order; ex: Packet #51 arrives before #50, but was sent after #50.) A higher jitter (50+ ms) may point towards potential voice quality issues. ([**Jitter**](https://en.wikipedia.org/wiki/Jitter) from Wikipedia)|
+|MOS |The Mean Opinion Score takes into account all the above factors and produces a value which represents overall voice quality; essentially an average measure of RTCP to generate a score for voice quality (ranges from 0 to 6, over 4 is good). ([**Mean Opinion Score**](https://en.wikipedia.org/wiki/Mean_opinion_score) from Wikipedia)|
 
