@@ -14,7 +14,7 @@ You can create custom reports to help identify your own key metrics. Here are so
 ## Create new Analytics
 Click the :material-plus: to configure the following fields:
 
-"&emsp;!"[alt text][analytics]
+&emsp;![alt text][analytics]
 
 + **Path**: Select where the data will be displayed.
     + `Customer`- Management :material-menu-right: Customer :material-menu-right: Stats
