@@ -14,6 +14,8 @@ You can create custom reports to help identify your own key metrics. Here are so
 ## Create new Analytics
 Click the :material-plus: to configure the following fields:
 
+\&emsp;![alt text][analytics]
+
 + **Path**: Select where the data will be displayed.
     + `Customer`- Management :material-menu-right: Customer :material-menu-right: Stats
     + `Carrier`- Management :material-menu-right: Carrier :material-menu-right: Stats
@@ -78,3 +80,6 @@ Click the :material-plus: to configure the following fields:
 
 !!! tip
 	If you want to render a graph in this view for testing, you may need to temporarily hardcode a customer or carrier ID to make it work.
+
+
+[analytics]: /developers/img/analytics.png "Analytics"
