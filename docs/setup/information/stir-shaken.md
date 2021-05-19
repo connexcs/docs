@@ -16,6 +16,6 @@ To add a certificate:
 2. Complete the **Alpha**, **Certificate**, and **Key** fields as provided in the certficate provided by the issuing authority. 
 3. Click **`Save`**. 
 
-![alt text][stirshaken]
+&emsp;![alt text][stirshaken]
 
 [stirshaken]: /setup/img/stirshaken.png "Add Stir-Shaken Cert"
