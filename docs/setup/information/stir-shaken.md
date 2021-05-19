@@ -6,8 +6,7 @@ The **STIR/SHAKEN Cert** is a necessary prerequisite step for call origination p
 The certificate will need to be obtained from a designated authority, such as the FCC or Ofcom. 
 
 !!! info "STIR/SHAKEN background"
-    See Wikipedia [**STIR/SHAKEN**](https://en.wikipedia.org/wiki/STIR/SHAKEN) and FCC [**Report on Selection of Governance Authority and
-Timely Deployment of SHAKEN/STIR**](https://docs.fcc.gov/public/attachments/DOC-350542A1.pdf) for details. 
+    See Wikipedia [**STIR/SHAKEN**](https://en.wikipedia.org/wiki/STIR/SHAKEN) and FCC [**Report on Selection of Governance Authority and Timely Deployment of SHAKEN/STIR**](https://docs.fcc.gov/public/attachments/DOC-350542A1.pdf) for details. 
 
 ## Add STIR/SHAKEN Cert
 To add a certificate:
