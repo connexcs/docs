@@ -17,8 +17,8 @@ To change your password:
     * **New Password**: Enter the new password you want to use.
     * **Confirm New Password**: Enter the same password as the New Password.
 
-!!! failure "Cannot change my password" 
-    If you do not enter identical values in the New Password and Confirm New Password text boxes, you cannot change your password. 
+    !!! failure "Cannot change my password" 
+        If you do not enter identical values in the New Password and Confirm New Password text boxes, you cannot change your password. 
 
                
 3. Click `Update`.     
