@@ -24,7 +24,7 @@ The **Servers** section provides an overview of deployed servers:
 + **Status**: Indicates if the server will be able to process calls. (Ex: if account has not been paid, the Status will list the server as "Expired")
 
 ## Clusters
-If you have multiple servers in a load-balance configuration, it is recommended they are put into a Cluster. To create a **Cluster**, click the **`Cluster`** button, then click :material-plus: to enter the name. When a new server is deployed, there will be an option to select one of the configured Clusters. 
+If you have multiple servers in a load-balance configuration, it is recommended they are put into a Cluster. To create a **Cluster**, click the **`Cluster`** button, then click **:material-plus:** to enter the name. When a new server is deployed, there will be an option to select one of the configured Clusters. 
 
 !!! info "Benefits of clustering"
     1. Better control over CPS and Channel load-balancing: If you set CPS to 10, clustered servers will allow 10 CPS total, un-clustered servers will allow 10 CPS per server, potentially going over the allowed CPS with a particular carrier.
@@ -78,6 +78,20 @@ Click the blue pencil to edit.
 + **US, EU**: Servers in the US zone will process data (ex: CDRs, routing engines) at local servers rather than in some remote zone, avoiding server capacity issues due to longer data transit times.
 + **UDP, TCP, TLS Ports**: Specify port(s) for each protocol in addition to the protocol default (ex: to avoid firewall rules or ISP restrictions).
 
+### Certificates
+Select certificates to apply to the server. 
+
+&emsp;![alt text][server-cert1]
+
+To add a Certificate to a sever:
+
+1. Select server from list.
+2. Open the Certificates section on the right.
+3. Click the :material-plus:.
+4. **Certificate**: Select from a list of Certificates managed under **Setup :material-menu-right: Information :material-menu-right: [Certificate](/setup/information/certificate/)**.
+5. **Type**: select approrpiate type. 
+6. Click **`Save`**. 
+
 
 ### Server Actions Menu
 Click the **`Actions`** button to open the **Server Actions Menu**. The following actions are available:
@@ -111,8 +125,6 @@ To reactivate a server:
 
     ![alt text][server-6]
 
-## Certificates
-Select certificates to apply to the server. These certificates are managed under **Setup :material-menu-right: Information :material-menu-right: [Certificate](/setup/information/certificate/)**.
 
 ## Server Clustering and User Location Registration
 ### User Location Registration
@@ -134,4 +146,5 @@ When a user endpoint registers with UDP via NAT, a port mapping is created. Howe
 
 [rtpserver]: /setup/img/rtpservers.png "RTP Server"
 [server-update]: /setup/img/server-update.png "Update Server"
+[server-cert1]: /setup/img/server-cert1.png "Server Certificates"
 [server-6]: /setup/img/reactivateserver.png "Reactivate Server"
