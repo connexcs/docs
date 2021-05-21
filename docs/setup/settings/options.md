@@ -15,6 +15,6 @@ Configure **Options** to set key default behaviors for the system. Click **`Edit
 |Circuit Test User|Select which account calls will come from for circuit testing.|
 |Alpha and Beta Feature Previews|Provide access to new and upcoming features.|
 |Invoice Line Grouping|Determine whether generated invoices display one line per day or one line per destination.|
-|Internal Number Range Start and Block Size|Set the default start and range of number blocks which are assigned to customers (configuration instructions **[here](https://docs.connexcs.com/customer/main/#internal-number-block)**).|
+|Internal Number Range Start and Block Size|Set the system-wide default start and range of private number blocks, which are then assigned to customers (per configuration instructions **[here](https://docs.connexcs.com/customer/main/#internal-number-block)**).Ex: You can set the Start field to 1000, and the Size to 1000. The first number block assigned to a customer will range from 1000-1999. The next customer will receive the range 2000-2999, and so on.|
 |Auto Logout|System will log a user out after timing out.|
 |Hybrid Menu Only|When ConnexCS is used in Hybrid mode, this option hides unavailable items from the menu.|
