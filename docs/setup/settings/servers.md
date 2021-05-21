@@ -84,8 +84,9 @@ Select certificates to apply to the server.
 &emsp;![alt text][server-cert1]
 
 To add a Certificate to a sever, click the :material-plus:.
+
 + **Certificate**: Select from a list of Certificates managed under **Setup :material-menu-right: Information :material-menu-right: [Certificate](/setup/information/certificate/)**.
-+ **Type**: select approrpiate type. 
++ **Type**: select appropriate type. 
 
 Click **`Save`**. 
 
