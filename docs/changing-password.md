@@ -17,17 +17,19 @@ To change your password:
     * **New Password**: Enter the new password you want to use.
     * **Confirm New Password**: Enter the same password as the New Password.
 
-    ![alt text][change-your-password]
+!!! failure "Cannot change my password" 
+    If you do not enter identical values in the New Password and Confirm New Password text boxes, you cannot change your password. 
+
                
-    *  Click `Update`.
-        
+3. Click `Update`.     
 4. ConnexCS Control Panel confirms that it has changed your password.
-        
+
+    ![alt text][change-your-password]
+    
 !!! info "Password change confirmation email"
     You will also receive an email confirming that your password has changed. 
         
-!!! failure "Cannot change my password" 
-    If you do not enter identical values in the New Password and Confirm New Password text boxes, you cannot change your password. 
+
 
 
 [change-your-password]: /misc/img/change-your-password.jpg "change-your-password"
