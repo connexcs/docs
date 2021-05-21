@@ -21,7 +21,7 @@ To change your password:
         If you do not enter identical values in the New Password and Confirm New Password text boxes, you cannot change your password. 
 
                
-3. Click `Update`.     
+3. Click **`Update`**.     
 4. ConnexCS Control Panel confirms that it has changed your password.
 
     ![alt text][change-your-password]
