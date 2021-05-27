@@ -12,9 +12,11 @@ Click the :material-plus: and complete the following fields:
 + **Label** - Enter the button label (what it will say).
 + **Icon** - Select an icon to display.
 + **Type / Colour** - Select the button colour.
++ **Tooltip** - Include brief description of of what the button does.
 + **Placement** - This selection will display the button at the top of the Customers list, Carriers list, or Invoices.
 + **ScriptForge** - Choose the Script Forge (if any) to run when the button is clicked.
 + **Forms** - Choose the form (if any) to display when the button is clicked, which will pass the data over to the chosen Script Forge.
 + **Min / Max Select** - No selection means the button is available when selecting no records. Entering limits will set mix/max limits to the selection.
++ **Sort Order** - tbd.
 
 Click **`Save`** to make the new Button available for placement. 

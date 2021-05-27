@@ -9,10 +9,12 @@ You can create custom reports to help identify your own key metrics. Here are so
 * **FOREX** - Display FOREX data on the dashboard
 * **603 / 604 Block Report** - Display the top CLI's that have been blocked per customer and per carrier.
 * **CLI Stats** - Display stats per CLI
-* **ISO Code Stats** - Display stats ISO Country.
+* **ISO Code Stats** - Display stats by Country ISO.
 
 ## Create new Analytics
 Click the :material-plus: to configure the following fields:
+
+&emsp;![alt text][analytics]
 
 + **Path**: Select where the data will be displayed.
     + `Customer`- Management :material-menu-right: Customer :material-menu-right: Stats
@@ -78,3 +80,6 @@ Click the :material-plus: to configure the following fields:
 
 !!! tip
 	If you want to render a graph in this view for testing, you may need to temporarily hardcode a customer or carrier ID to make it work.
+
+
+[analytics]: /developers/img/analytics.png "Analytics"

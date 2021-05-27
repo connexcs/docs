@@ -76,7 +76,8 @@ To access the Customer Portal:
 Assign an **Internal Number Block** to define the range of numbers a Customer can use for setting up SIP Extensions (see [**SIP Authentication**](https://docs.connexcs.com/customer/auth/#sip-user-authentication) for configuration details). 
 
 1. Click **:material-plus:** button next to **Internal Number Block**.
-2. The Number Block will be assigned.
+2. The next available **Number Block** will be assigned.
+3. Numbers from the assigned range will now be available under **Customer :material-menu-right: [Auth](/customer/auth/) for IP or SIP users**, and in **Class5 :material-menu-right: [Conference](/class5/creating-conference/)**.
 
 !!! info "Why Define Internal Number Blocks?"
     Within each Account are multiple Customers, each will likely have more than one Contact. SIP Extensions are unique for the Account, not for individual Customers. Without defined Internal Number Blocks, there is the risk of a Contact attempting to use an extension that is already in use by another Customer or Contact. With Internal Number Blocks defined, each Customer will have a predetermined list of Usernames to select for SIP Authentication. 

@@ -48,13 +48,13 @@ Navigate using the following sections in the footer menu at the bottom of Web Ph
 ### Setup Domains
 ConnexCS **Web Phone** needs 2 domains to function correctly:
 
-1. **Domain (A)** - Create a CNAME on your domain, such as `webphone.yourdomain.com`, and point it to our web server at `portal.connexcs.com` (responsible for web services, and yes, this is the same as the customer portal). This is the location where the phone is hosted and will be provided to your customers.
-2. **Domain (B)** - This is the SIP signaling domain (WebRTC) and is attached to your server. Navigate to **Setup :material-menu-right: Settings :material-menu-right: DNS :material-menu-right:**. Enter the domain (ex: test1), then check the box for the A record for the IP of the server you want to use. 
+1. **Web Server (Domain A)** - This is the location where the phone is hosted, and the URL which is provided to your customers. Create a CNAME on your domain, such as `webphone.yourdomain.com`, and point it to our web server at `portal.connexcs.com` (responsible for web services, and yes, this is the same as the customer portal). 
+2. **SIP Switch (Domain B)** - This is the SIP signaling domain (WebRTC) and is attached to your server. Navigate to **Setup :material-menu-right: Settings :material-menu-right: DNS :material-menu-right:**. Enter the domain (ex: test1), then check the box for the A record for the IP of the server you want to use. 
 
 It is recommended to setup a DNS record within ConnexCS, then point a CNAME on your domain to the ConnexCS setup domain.
 
 ### Create Certificates
-After the domains are configured, verify the certificates are under **Setup :material-menu-right: Information :material-menu-right: Certificates :material-menu-right:**:
+After the domains are configured, verify the certificates are under **Setup :material-menu-right: Information :material-menu-right: Certificates:
 
 * If the domain is not listed, click on `Add Certificate` and provide your domain name.
 * If the certificates are listed but they don't have an issue or expiry date, click on "Refresh Certificates". This may take up to 10 minutes to complete.
@@ -62,7 +62,7 @@ After the domains are configured, verify the certificates are under **Setup :mat
 ### Add WebRTC to server
 To setup WebRTC on a server:
 
-1. Ensure **Domain (B)** (signalling domain from above) points ONLY to the server where you enable WebRTC. 
+1. Ensure **Domain (B)** (signaling domain from above) points ONLY to the server where you enable WebRTC. 
 2. Navigate to **Setup :material-menu-right: Settings :material-menu-right: Servers :material-menu-right:** select the server, then Edit.
     * Update the FQDN to the server
     * Ensure that both **TLS** and **WebRTC** are enabled
@@ -71,7 +71,7 @@ To setup WebRTC on a server:
 !!! tip "AnyEdge and WebRTC"
     If you are using AnyEdge, you can enable WebRTC automatically by adding a domain name to your AnyEdge Domain.
 
-### Add Web Phone Domain
+### Setup Web Phone Domain
 Once domains, certificates, and server settings are updated, we can add the Web Phone domain. 
 
 1. Go to **Setup :material-menu-right: Integrations :material-menu-right: Web Phone**
