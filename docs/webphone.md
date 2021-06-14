@@ -98,8 +98,10 @@ Your Web Phone should now be available.
         * Contracts
     * **Register Success HTML** - Customize a message to display to customers once they have completed their signup process.
 
+    ![alt text][webphone-basic]
+    
     !!! example "Template Customer Example"
-        You want to give all of your customers $5.00 credit. Create an account under **Management :material-menu-right: Customer**. Under Payments for that account, add $5.00. When a new customer creates an account from the Customer Portal, they will see a payment created for $5.00 at the same the time account was created.
+        You want to give all your customers $5.00 credit. Create an account under **Management :material-menu-right: Customer**. Under Payments for that account, add $5.00. When a new customer creates an account from the Customer Portal, they will see a payment created for $5.00 at the same the time account was created.
 
 === "Menu"
 
@@ -121,19 +123,25 @@ Your Web Phone should now be available.
 	   ```
         	
 
-=== "Flags"
-    * **Hide UUID** - UUID is a unique deploy & version identifier, this is what you should ask your end user for if you need to report a problem to us. It is displayed in the side menu.
-    * **Menu Right** - Change the normally left menu into a right menu.
-    * **Display Balance** - Show the balance of the account.
-    * **Edit Settings** - As standard settings are non-editable, if you wish to allow a user to change settings, you can change this.
-    * **Register** - Allow registration of new accounts, or only existing SIP Username / Passwords can login.
-    * **Username as Title** - Change the title of the page to the username logged in.
-    * **Accept Payment** - Accept payments, similar to on the customer portal.
-    * **Auto Answer** - Automatically answer an incoming call.
+=== "Advanced"
+    * **Flags**- select the items to display on WebPhone
+        :material-menu-right:`Hide UUID`: UUID is a unique deploy & version identifier, this is what you should ask your end user for if you need to report a problem to us. It is displayed in the side menu.
+        :material-menu-right:`Menu Right`: Change the normally left menu into a right menu.
+        :material-menu-right:`Display Balance`: Show the balance of the account.
+        :material-menu-right:`Edit Settings`: As standard settings are non-editable, if you wish to allow a user to change settings, you can change this.
+        :material-menu-right:`Register`: Allow registration of new accounts, or only existing SIP Username / Passwords can login.
+        :material-menu-right:`Username as Title`: Change the title of the page to the username logged in.
+        :material-menu-right:`Accept Payment`: Accept payments, similar to on the customer portal.
+        :material-menu-right:`Auto Answer`: Automatically answer an incoming call.
+    * **Restrict Customer Login**- in progress
+    
+    ![alt text][webphone-adv] 
 
 ## Web Phone SDK
 The **Web Phone SDK (Software Developer Kit)** allows developers to integrate WebPhone into your own custom projects. This is available as part of the ConnexCS deployment at no extra charge. The [**Web Phone SDK Connector**](https://webphone-sdk.connexcs.com/) provides the developer documentation needed to place a call. 
 
 You will need to provide the full URL (ex: http://domain.connexcs.com) and credentials to access Web Phone from within the connector. 
 
+[webphone-basic]: /setup/img/webphone-basic.png "WebPhone Basic"
 [webphone]: /setup/img/webphone.png "WebPhone Menu"
+[webphone-adv]: /setup/img/webphone-adv.png "WebPhone Advanced"
