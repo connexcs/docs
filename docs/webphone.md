@@ -98,7 +98,7 @@ Your Web Phone should now be available.
         * Contracts
     * **Register Success HTML** - Customize a message to display to customers once they have completed their signup process.
 
-    ![alt text][webphone-basic]
+    &emsp;![alt text][webphone-basic]
     
     !!! example "Template Customer Example"
         You want to give all your customers $5.00 credit. Create an account under **Management :material-menu-right: Customer**. Under Payments for that account, add $5.00. When a new customer creates an account from the Customer Portal, they will see a payment created for $5.00 at the same the time account was created.
@@ -112,7 +112,7 @@ Your Web Phone should now be available.
     * **Position** - Determine Icon position, starting with 1 on the far left. Select Disabled if you don't wish to show this item.
     * **Template** - A Custom page can be used to display custom static & dynamic content. These are pre-built under **Setup :material-menu-right: Config :material-menu-right: Template**.
 
-    ![alt text][webphone] 
+    &emsp;![alt text][webphone] 
     
     !!! tip "Frameless iframe"
         We have implemented an edge case. If you wish for the custom page to be an `iframe`, you can use the following code to ensure that it fills up all the available space (replace www.connexcs.com with the page you wish to display):
@@ -135,7 +135,7 @@ Your Web Phone should now be available.
         :material-menu-right:`Auto Answer`: Automatically answer an incoming call.
     * **Restrict Customer Login**- in progress
     
-    ![alt text][webphone-adv] 
+    &emsp;![alt text][webphone-adv] 
 
 ## Web Phone SDK
 The **Web Phone SDK (Software Developer Kit)** allows developers to integrate WebPhone into your own custom projects. This is available as part of the ConnexCS deployment at no extra charge. The [**Web Phone SDK Connector**](https://webphone-sdk.connexcs.com/) provides the developer documentation needed to place a call. 
