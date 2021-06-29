@@ -124,7 +124,7 @@ Your Web Phone should now be available.
         	
 
 === "Advanced"
-    * **Flags**- Select the items to display on WebPhone
+    * **Flags**- Select display options for WebPhone
         * `Hide UUID`: UUID is a unique deploy & version identifier, this is what you should ask your end user for if you need to report a problem to us. It is displayed in the side menu.
         * `Menu Right`: Change the normally left menu into a right menu.
 	* `Display Balance`: Show the balance of the account.
