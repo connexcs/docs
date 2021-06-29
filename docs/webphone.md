@@ -127,7 +127,7 @@ Your Web Phone should now be available.
     * **Flags**- Select display options for WebPhone
         * `Hide UUID`: UUID is a unique deploy & version identifier, this is what you should ask your end user for if you need to report a problem to us. It is displayed in the side menu.
         * `Menu Right`: Change the normally left menu into a right menu.
-	* `Display Balance`: Show the balance of the account.
+        * `Display Balance`: Show the balance of the account.
         * `Edit Settings`: As standard settings are non-editable, if you wish to allow a user to change settings, you can change this.
         * `Register`: Allow registration of new accounts, or only existing SIP Username / Passwords can login.
         * `Username as Title`: Change the title of the page to the username logged in.
