@@ -126,7 +126,7 @@ Your Web Phone should now be available.
 === "Advanced"
     * **Flags**- Select the items to display on WebPhone
     
-        :material-menu-right:`Hide UUID`: UUID is a unique deploy & version identifier, this is what you should ask your end user for if you need to report a problem to us. It is displayed in the side menu.
+    &emsp;:material-menu-right:`Hide UUID`: UUID is a unique deploy & version identifier, this is what you should ask your end user for if you need to report a problem to us. It is displayed in the side menu.
         
 	:material-menu-right:`Menu Right`: Change the normally left menu into a right menu.
         
@@ -141,6 +141,7 @@ Your Web Phone should now be available.
 	:material-menu-right:`Accept Payment`: Accept payments, similar to on the customer portal.
         
 	:material-menu-right:`Auto Answer`: Automatically answer an incoming call.
+    
     * **Restrict Customer Login**- Select existing Companies from the dropdown to allow them access to WebPhone. If no companies are listed, then all will have access. 
     
     &emsp;![alt text][webphone-adv] 
