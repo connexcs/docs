@@ -31,17 +31,17 @@ The **STI-PA** ([**iconnectiv**](https://iconectiv.com/) is in the U.S.) vets wh
     Once certs have been provided, they can still be revoked if Service Providers misbehave. 
 
 ## Requirements for Voice Service Providers
-From the [**iconnectiv "Secure Telephone Identity (STI) Service
-Provider Methods and Procedures"**](https://authenticate.iconectiv.com/sites/microsites/files/2021-01/STI-PA-US-METHODPROCSP-001%20Issue%205%20Rel%201-5%20-%20Onboarding%20Guide%20for%20SP.pdf), prior to Registering, make sure you have:
+From the **iconnectiv ["Secure Telephone Identity (STI) Service
+Provider Methods and Procedures"**](https://authenticate.iconectiv.com/sites/microsites/files/2021-01/STI-PA-US-METHODPROCSP-001%20Issue%205%20Rel%201-5%20-%20Onboarding%20Guide%20for%20SP.pdf), prior to registering, make sure you have:
 
-1. Your **Operating Company Number (OCN)**. VoIP providers can register with [NECA for an OCN](https://www.neca.org/business-solutions/company-codes), even as an IP Enabled Service Provider (do not need to be a LEC). This is used to verify the SP has access to numbers from NANPA and NPA pools.  
+1. Your **Operating Company Number (OCN)**. VoIP providers can register with [**NECA for an OCN**](https://www.neca.org/business-solutions/company-codes), even as an IP Enabled Service Provider (do not need to be a LEC). This is used to verify the SP has access to numbers from NANPA and NPA pools.  
 2. Current **499-A form** on file with the FCC (filed with the [**Universal Service Administrative Company (USAC)**](https://www.usac.org/service-providers/making-payments/how-to-pay/). You will need to provide a copy of this form during the registration process. Annual Revenues listed here will be used to assess fees.
 3. A certification filed in the [**FCC Robocall Mitigation Database**](https://fccprod.servicenowservices.com/rmd?id=rmd_welcome). 
 
 Once the above 3 are complete, it is time to complete [**Service Provider SHAKEN STI-PA Registration**](https://authenticate.iconectiv.com/service-provider-authenticate). 
 
 ## Robocall Mitigation program
-For small operators or TDM operators that can't implement SHAKEN, Robocall Mitigation is the alternative. While there are no specific instructions or recommendations from the FCC, they have provided some guidelines:
+For small operators or TDM operators that can't implement SHAKEN, **Robocall Mitigation** is the alternative. While there are no specific instructions or recommendations from the FCC, they have provided some guidelines:
 
 + "A robocall mitigation program is sufficient if it includes detailed practices that can reasonably be expected to significantly reduce the origination of illegal robocalls".
 + It must actually be implemented on your network.
@@ -50,7 +50,7 @@ For small operators or TDM operators that can't implement SHAKEN, Robocall Mitig
 
 
 ## Attestation Values
-SHAKEN Attestation Values (as defined in ATIS-1000074 section 5.2.3) define the level of trust that is associated with a call. Attestation Values are set by providers and then the call gets an STI Authentication Token assigned. The information in this token can be used by call analytics engines to determine legitimacy of call. The 3 Attestation Values are:
+SHAKEN **Attestation Values** (as defined in ATIS-1000074 section 5.2.3) define the level of trust that is associated with a call. Attestation Values are set by providers and then the call gets an STI Authentication Token assigned. The information in this token can be used by call analytics engines to determine legitimacy of call. The 3 Attestation Values are:
 
 * **A**: Indicates a trusted relationship between the Service Provider and the calling number and its user (this is service provider level of trust that customers will expect)
 * **B**: Indicates a trusted relationship with the customer, essentially the Service Provider knows the customer at the other end of the trunk, but not the specific numbers. 
@@ -60,29 +60,36 @@ SHAKEN Attestation Values (as defined in ATIS-1000074 section 5.2.3) define the 
     Service Providers are expected to accurately define their Attestation Values. Certifying a call with trust means you take on some responsibility for that traffic. 
 
 ## SHAKEN for TDM
-**TDM (Time Division Multiplexing** is no longer commonly found at the edge of telephony networks but is still very much in use in the core of telephony networks. If not accounted for, then all the meticulously gather and certified SIP SHAKEN info will be lost when it hits TDM segments. The TRACED Act specified that Service Providers must "no later than June 30 2021, take "reasonable measures" to implement an effective Caller-ID authentication framework in the non-IP portions of the their networks". In response to this, the "Out-of-Band PASSporT Transmission Involving TDM Networks" was developed as the industry standard "reasonable measure". Defined by the [**ATIS non-IP Call Authentication Task Force**](https://www.atis.org/committees-forums/ptsc/non-ip-call-authentication-task-force/), it uses out-of-band signaling to extend SHAKEN through TDM networks. 
+**TDM (Time Division Multiplexing** is no longer commonly found at the edge of telephony networks but is still very much in use in the core of telephony networks. If not accounted for, then all the meticulously gather and certified SIP SHAKEN info will be lost when it hits TDM segments. The TRACED Act specified that Service Providers must "no later than June 30 2021, take "reasonable measures" to implement an effective Caller-ID authentication framework in the non-IP portions of the their networks". In response to this, the **Out-of-Band PASSporT Transmission Involving TDM Networks** was developed as the industry standard "reasonable measure". Defined by the [**ATIS non-IP Call Authentication Task Force**](https://www.atis.org/committees-forums/ptsc/non-ip-call-authentication-task-force/), the **PASSport** uses out-of-band signaling to extend SHAKEN through TDM networks. 
 
 
 
 ## FAQ
 
-Q: What are my options if I am a smaller provider?
-A: For providers with more than 100k lines, you *must* implement SHAKEN:
+Question: What are my options if I am a smaller provider?
+
+For providers with more than 100k lines, you *must* implement SHAKEN:
+
 + SHAKEN for SIP
 + Robocall mitigation for TDM interconnects
 
 For providers with less than 100k lines, you have options:
+
 + SHAKEN or Robocall Mitigation for SIP 
 + Robocall mitigation for TDM interconnects
 
-Q: How does this impact calls originating from outside the US? 
-A: This only applies to US calling numbers, even if the carrier is outside the US. If calls are originating outside the US with non-US numbers, none of this applies. US carriers are required to drop calls received from US numbers that are not verified for SHAKEN.
+Question: How does this impact calls originating from outside the US? 
 
-Q: Does ConnexCS provide SHAKEN?
-A: ConnexCS will perform:
+This only applies to US calling numbers, even if the carrier is outside the US. If calls are originating outside the US with non-US numbers, none of this applies. US carriers are required to drop calls received from US numbers that are not verified for SHAKEN.
+
+Question: Does ConnexCS provide SHAKEN?
+
+ConnexCS will perform:
+
 + Certificate Signing of calls (you still need to acquire the certificate and install it in our Control Panel, instructions found [**here**](/setup/information/stir-shaken/)).
 + Attestation checks for inbound calls to DIDs.
 + Attestation values will eventually be available in the Control Panel for our customers to set on a per route basis.
 
-Q: Does ConnexCS provide Robocall Mitigation?
-A: We are in the process of researching an effective solution. 
+Question: Does ConnexCS provide Robocall Mitigation?
+
+We are in the process of researching an effective solution. 
