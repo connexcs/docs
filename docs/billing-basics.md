@@ -56,17 +56,28 @@ Note: We will not entertain unsupported "balances don't match" statements. There
 Balances should be derived from a ledger (your CDR records).
 
 
-## Investigating billing issues
+## Investigating Balance / Billing issues
 
-1. Do the balances ROUGHLY match?
-+ Yes - Its doubtful there is an issue.
-+ No - Move to Step 2.
-2. Do the daily totals costs match?
-+ Yes - Further investigation is needed.
-+ No - *pending*
-3. Do the daily total amount of connections match?
-+ No - There are calls missing somewhere, this is the first thing that needs to be addressed.
-4. Do the daily total durations match?
-+ No - The problem is most likely long duration calls or Late Disconnection FAS.
-5. Can you identify a single call which does not match up correctly.
-+ Yes - There is an issue with individual call rating.
+```mermaid
+graph TD
+    BAL[Balance Mismatch] -->|Investiation Process| QTOTALS
+    QTOTALS{Does the spend match<br/>& Top-ups Match?} --> RECALC
+    RECALC[The floating balance may<br/>have malfunctioned, run a recalc] --> RECALCFIX
+    RECALCFIX{Did this fix it?}
+    RECALCFIX -->| No | REPORT
+    QTOTALS -->| No | INV
+    INV[Compare UTC/Common Daily Totals<br/> on both sides and isolate a day where <br/>the totals have substancial differences] --> QCONN
+    QCONN{Does the connected calls<br/>totals roughly match?}
+    QCONN -->| No | MISSINGCALLISSUE
+    MISSINGCALLISSUE[Some calls are missing,<br/>we need to find them] --> ISOLATEHOUR
+    ISOLATEHOUR[Try to reduce the CDR's on both sides to a smaller<br/>timeframe where a mismatch can be observed] --> DIFFCALLS
+    DIFFCALLS[Run a diff on the smaller dataset to isolate missing calls] --> REPORT
+    QCONN -->| Yes | QDUR[Problem Resolved]
+    QDUR{Does the durations <br/>totals roughly match?}
+    QDUR -->| No | DURATIONISSUE
+    DURATIONISSUE[Duration Issue] --> 1CALL
+    QDUR -->| Yes | RATINGISSUE[Problem Resolved]
+    RATINGISSUE[Rating Issue] --> 1CALL
+    1CALL[Try to isolate a single call,<br/>take a few random samples and<br/>find the one with the biggest difference] --> REPORT
+    REPORT[Report your finding to us<br/>and we can investigate further]
+```
