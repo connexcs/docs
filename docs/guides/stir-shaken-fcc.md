@@ -24,7 +24,10 @@ The FCC has already begun sending cease and desist orders, and fines to operator
 ## SHAKEN Policy Administrator (PA)
 The **Secure Telephone Identity Governance Authority (STI-GA)**, [**launched by ATIS (Alliance for
 Telecommunications Industry Solutions)**](https://www.atis.org/press-releases/secure-telephone-identity-governance-authority-launched-in-major-industry-effort-to-combat-unwanted-robocalling/) in 2018, defines SHAKEN policies. These policies are run by the SHAKEN **Policy Administrator (STI-PA)** which is tasked with policy enforcement.
-    
+
+![alt text][pa] 
+(*Image Credit:TransNexus*)
+
 The **STI-PA** ([**iconnectiv**](https://iconectiv.com/) is in the U.S.) vets which telephone Service Providers are considered trusted as only certified carriers can sign calls. SHAKEN then uses **PKI (Public Key Infrastructure)** for authentication of calls. Only certified **Certificate Authorities (CAs)** can provide SHAKEN certs. Service Provider must have **Service Provider Code (SPC)** token from the **STI-PA** to get a certificate, and a **CA** can only provide certificates to a Service Provider that has a valid **SPC**. 
 
 !!! Warning
@@ -93,3 +96,8 @@ ConnexCS will perform:
 Question: Does ConnexCS provide Robocall Mitigation?
 
 We are in the process of researching an effective solution. 
+
+
+
+
+[pa]: /misc/img/trust-triangle.png "Trust Triangle"
