@@ -98,8 +98,10 @@ Your Web Phone should now be available.
         * Contracts
     * **Register Success HTML** - Customize a message to display to customers once they have completed their signup process.
 
+    &emsp;![alt text][webphone-basic]
+    
     !!! example "Template Customer Example"
-        You want to give all of your customers $5.00 credit. Create an account under **Management :material-menu-right: Customer**. Under Payments for that account, add $5.00. When a new customer creates an account from the Customer Portal, they will see a payment created for $5.00 at the same the time account was created.
+        You want to give all your customers $5.00 credit. Create an account under **Management :material-menu-right: Customer**. Under Payments for that account, add $5.00. When a new customer creates an account from the Customer Portal, they will see a payment created for $5.00 at the same the time account was created.
 
 === "Menu"
 
@@ -110,7 +112,7 @@ Your Web Phone should now be available.
     * **Position** - Determine Icon position, starting with 1 on the far left. Select Disabled if you don't wish to show this item.
     * **Template** - A Custom page can be used to display custom static & dynamic content. These are pre-built under **Setup :material-menu-right: Config :material-menu-right: Template**.
 
-    ![alt text][webphone] 
+    &emsp;![alt text][webphone] 
     
     !!! tip "Frameless iframe"
         We have implemented an edge case. If you wish for the custom page to be an `iframe`, you can use the following code to ensure that it fills up all the available space (replace www.connexcs.com with the page you wish to display):
@@ -121,19 +123,25 @@ Your Web Phone should now be available.
 	   ```
         	
 
-=== "Flags"
-    * **Hide UUID** - UUID is a unique deploy & version identifier, this is what you should ask your end user for if you need to report a problem to us. It is displayed in the side menu.
-    * **Menu Right** - Change the normally left menu into a right menu.
-    * **Display Balance** - Show the balance of the account.
-    * **Edit Settings** - As standard settings are non-editable, if you wish to allow a user to change settings, you can change this.
-    * **Register** - Allow registration of new accounts, or only existing SIP Username / Passwords can login.
-    * **Username as Title** - Change the title of the page to the username logged in.
-    * **Accept Payment** - Accept payments, similar to on the customer portal.
-    * **Auto Answer** - Automatically answer an incoming call.
+=== "Advanced"
+    * **Flags**- Select display options for WebPhone
+        * `Hide UUID`: UUID is a unique deploy & version identifier, this is what you should ask your end user for if you need to report a problem to us. It is displayed in the side menu.
+        * `Menu Right`: Change the normally left menu into a right menu.
+        * `Display Balance`: Show the balance of the account.
+        * `Edit Settings`: As standard settings are non-editable, if you wish to allow a user to change settings, you can change this.
+        * `Register`: Allow registration of new accounts, or only existing SIP Username / Passwords can login.
+        * `Username as Title`: Change the title of the page to the username logged in.
+        * `Accept Payment`: Accept payments, similar to on the customer portal.
+        * `Auto Answer`: Automatically answer an incoming call.
+    * **Restrict Customer Login**- Select existing Companies from the dropdown to allow them access to WebPhone. If no companies are listed, then all will have access. 
+    
+    &emsp;![alt text][webphone-adv] 
 
 ## Web Phone SDK
 The **Web Phone SDK (Software Developer Kit)** allows developers to integrate WebPhone into your own custom projects. This is available as part of the ConnexCS deployment at no extra charge. The [**Web Phone SDK Connector**](https://webphone-sdk.connexcs.com/) provides the developer documentation needed to place a call. 
 
 You will need to provide the full URL (ex: http://domain.connexcs.com) and credentials to access Web Phone from within the connector. 
 
+[webphone-basic]: /setup/img/webphone-basic.png "WebPhone Basic"
 [webphone]: /setup/img/webphone.png "WebPhone Menu"
+[webphone-adv]: /setup/img/webphone-adv.png "WebPhone Advanced"

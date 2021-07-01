@@ -140,6 +140,7 @@ pages:
         - Specifications: spec.md        
 
     - Topical Guides:
+        - NEW FCC Regulations on STIR/SHAKEN : guides/stir-shaken-fcc.md
         - Billing:
             - Billing Guide: guides/billing-guide.md
             - Connex Billing: billing.md
