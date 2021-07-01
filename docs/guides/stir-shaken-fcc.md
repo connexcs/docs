@@ -1,4 +1,4 @@
-# FCC Reglations Regarding Robocalling (TRACED Act)
+# FCC Regulations Regarding Robocalling (TRACED Act)
 
 ## Illegal Robocalling
 Illegal Robocalling has emerged as one of the most problematic activities for telecom providers in recent years. With roughly 4.6 billion robocalls a month in the US alone, somehwere around 2000 unwanted calls per second, this activity impacts everyone in different ways:
