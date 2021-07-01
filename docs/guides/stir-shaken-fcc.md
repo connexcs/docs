@@ -1,7 +1,7 @@
 # FCC Regulations Regarding Robocalling (TRACED Act)
 
 ## Illegal Robocalling
-Illegal Robocalling has emerged as one of the most problematic activities for telecom providers in recent years. With 4.6 billion robocalls a month in the U.S. alone, roughly 2000 unwanted calls per second, this activity impacts everyone in different ways:
+**Illegal Robocalling** has emerged as one of the most problematic activities for telecom providers in recent years. With 4.6 billion robocalls a month in the U.S. alone, roughly 2000 unwanted calls per second, this activity impacts everyone in different ways:
 
 1. Lost time, from unwanted Robocalls, for customers and consumers is estimated to be valued around $3 billion/year (not including losses related to fraud). 
 2. Service providers are handling and managing constant service calls from customer, along with the additional traffic on the networks. 
@@ -9,8 +9,8 @@ Illegal Robocalling has emerged as one of the most problematic activities for te
 
 To address this issue, the U.S. FCC (Federal Communications Commission) has mandated that calls not registered with a tracking database will need to be blocked. 
 
-## TRACED Act overview and Orders
-In December 2019, the U.S. Congress passed the TRACED Act, giving the FCC "new tools to fight unwanted, and often illegal, robocalls, the top consumer complaint reported to the FCC annually" (from **https://www.fcc.gov/TRACEDAct**). This allowed the FCC to place requirements on Voice Providers to implement call authentication technology, and also gave the FCC authority to follow up with enforcements. In March of 2020, the FCC mandated that STIR/SHAKEN be used for this purpose. 
+## TRACED Act
+In December 2019, the U.S. Congress passed the TRACED Act, giving the FCC "new tools to fight unwanted, and often illegal, robocalls, the top consumer complaint reported to the FCC annually" (from [**TRACED Act Implementation**](https://www.fcc.gov/TRACEDAct)). This allowed the FCC to place requirements on Voice Providers to implement call authentication technology, and also gave the FCC authority to follow up with enforcements. In March of 2020, the FCC mandated that STIR/SHAKEN be used for this purpose. 
 
 Several details related to TRACED Act are important to understand:
 
@@ -19,15 +19,7 @@ Several details related to TRACED Act are important to understand:
 + Smaller operators (<100,000 lines) can choose either Robocall Mitigation or SHAKEN option
 + Everyone is responsible for helping to eliminate robocalls. "Service Providers must police their networks". They can't just implement SHAKEN alone, they must be responsible for calls originating on their network. 
 
-The FCC has already begun sending cease and desist orders, and fines to operators. Providers can submit certification to the FCC at https://fccprod.servicenowservices.com/rmd?id=rmd_welcome. 90 days after the deadline for robocall mitigation program certifications (June 2021), Service Providers MUST BLOCK all calls from Service Providers that are not in the FCC database. 
-
-## Robocall Mitigation program
-For small operators or TDM operators that can't implement SHAKEN, Robocall Mitigation is the alternative. While there are no specific instructions or recommendations from the FCC, they have provided some guidelines:
-
-+ "A robocall mitigation program is sufficient if it includes detailed practices that can reasonably be expected to significantly reduce the origination of illegal robocalls".
-+ It must actually be implemented on your network.
-+ It must be public and transparent.
-+ Providers must cooperate with the [**US Telecom Traceback Group**](https://www.ustelecom.org/the-industry-traceback-group-itg/) in a timely manner to produce requested CDRs.
+The FCC has already begun sending cease and desist orders, and fines to operators. Providers can submit certification to the FCC [**Robocall Mitigation Database**](https://fccprod.servicenowservices.com/rmd?id=rmd_welcome). 90 days after the deadline for robocall mitigation program certifications (June 2021), Service Providers MUST BLOCK all calls from Service Providers that are not in the FCC database. 
 
 ## SHAKEN Policy Administrator (PA)
 The **Secure Telephone Identity Governance Authority (STI-GA)**, [**launched by ATIS (Alliance for
@@ -36,7 +28,7 @@ Telecommunications Industry Solutions)**](https://www.atis.org/press-releases/se
 The **STI-PA** ([**iconnectiv**](https://iconectiv.com/) is in the U.S.) vets which telephone Service Providers are considered trusted as only certified carriers can sign calls. SHAKEN then uses **PKI (Public Key Infrastructure)** for authentication of calls. Only certified **Certificate Authorities (CAs)** can provide SHAKEN certs. Service Provider must have **Service Provider Code (SPC)** token from the **STI-PA** to get a certificate, and a **CA** can only provide certificates to a Service Provider that has a valid **SPC**. 
 
 !!! Warning
-   Once certs have been provided, they can still be revoked if Service Providers misbehave. 
+    Once certs have been provided, they can still be revoked if Service Providers misbehave. 
 
 ## Requirements for Voice Service Providers
 From the [**iconnectiv "Secure Telephone Identity (STI) Service
@@ -48,7 +40,13 @@ Provider Methods and Procedures"**](https://authenticate.iconectiv.com/sites/mic
 
 Once the above 3 are complete, it is time to complete [**Service Provider SHAKEN STI-PA Registration**](https://authenticate.iconectiv.com/service-provider-authenticate). 
 
+## Robocall Mitigation program
+For small operators or TDM operators that can't implement SHAKEN, Robocall Mitigation is the alternative. While there are no specific instructions or recommendations from the FCC, they have provided some guidelines:
 
++ "A robocall mitigation program is sufficient if it includes detailed practices that can reasonably be expected to significantly reduce the origination of illegal robocalls".
++ It must actually be implemented on your network.
++ It must be public and transparent.
++ Providers must cooperate with the [**US Telecom Traceback Group**](https://www.ustelecom.org/the-industry-traceback-group-itg/) in a timely manner to produce requested CDRs.
 
 
 ## Attestation Values
