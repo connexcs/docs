@@ -63,7 +63,9 @@ SHAKEN **Attestation Values** (as defined in ATIS-1000074 section 5.2.3) define 
     Service Providers are expected to accurately define their Attestation Values. Certifying a call with trust means you take on some responsibility for that traffic. 
 
 ## SHAKEN for TDM
-**TDM (Time Division Multiplexing** is no longer commonly found at the edge of telephony networks but is still very much in use in the core of telephony networks. If not accounted for, then all the meticulously gather and certified SIP SHAKEN info will be lost when it hits TDM segments. The TRACED Act specified that Service Providers must "no later than June 30 2021, take "reasonable measures" to implement an effective Caller-ID authentication framework in the non-IP portions of the their networks". In response to this, the **Out-of-Band PASSporT Transmission Involving TDM Networks** was developed as the industry standard "reasonable measure". Defined by the [**ATIS non-IP Call Authentication Task Force**](https://www.atis.org/committees-forums/ptsc/non-ip-call-authentication-task-force/), the **PASSport** uses out-of-band signaling to extend SHAKEN through TDM networks. 
+**TDM (Time Division Multiplexing** is no longer commonly found at the edge of telephony networks but is still very much in use in the core of telephony networks. If not accounted for, then all the meticulously gather and certified SIP SHAKEN info will be lost when it hits TDM segments. 
+
+The TRACED Act specified that Service Providers must "no later than June 30 2021, take "reasonable measures" to implement an effective Caller-ID authentication framework in the non-IP portions of the their networks". In response to this, the **Out-of-Band PASSporT Transmission Involving TDM Networks** was developed as the industry standard "reasonable measure". Defined by the [**ATIS non-IP Call Authentication Task Force**](https://www.atis.org/committees-forums/ptsc/non-ip-call-authentication-task-force/), the **PASSport** uses out-of-band signaling to extend SHAKEN through TDM networks. 
 
 
 
