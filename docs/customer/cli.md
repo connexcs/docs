@@ -57,6 +57,7 @@ Configuring a number as a **CLI (Calling Line Identification)** in ConnexCS give
 ### Filter CLI by Number
 
 This example shows how to block all calls from passing apart from those where the CLI is "123456789"
+
 | CLI       | Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  |
 |-----------|-----------------|-------------|-----------------------|--------|----------|
 | `123456789` |                 |             |                       | No     | Disabled |
@@ -77,6 +78,7 @@ If the customer has a number range with which you wish to approve you can use th
 | `^123456` |                 |             |                       | No     | Disabled |
 
 You could also use a more complicated expression to match multiple ranges. In this example the number must start with 123456, followed by 1, 3 or 5, then followed by 1 or 2 numbers
+
 | CLI                     | Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  |
 |-------------------------|-----------------|-------------|-----------------------|--------|----------|
 | `^123456[135][0-9]{1,2}$` |                 |             |                       | No     | Disabled |
@@ -102,6 +104,7 @@ The same is true for Pre-Asserted-Identity as it is with CLI, you can filter by 
 ### Combined CLI and PAID Filter
 
 Filters are `AND` together meaning for a call to pass on this example the CLI would need to be `1122334455` AND the Pre-Asserted-ID would need to be `123456789`
+
 | CLI          | Pre-Asserted-ID           | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  |
 |--------------|---------------------------|-------------|-----------------------|--------|----------|
 | `1122334455` | `123456789`               |             |                       | No     | Disabled |
@@ -112,7 +115,8 @@ We can also completely replace the CLI being sent. Note that if a replacement is
 
 ### Direct Replacement
 
-Replacing a `111111111111` with `222222222222`. 
+Replacing a `111111111111` with `222222222222`.
+
 | CLI            | Pre-Asserted-ID | Rewrite CLI    | Rewrite P-Asserted-ID | Forced | Use DID  |
 |----------------|-----------------|----------------|-----------------------|--------|----------|
 | `111111111111` |                 | `222222222222` |                       | No     | Disabled |
@@ -120,11 +124,13 @@ Replacing a `111111111111` with `222222222222`.
 ### Pattern Replacement
 
 Replace all calls which begin with a `1` with `222222222222`
+
 | CLI            | Pre-Asserted-ID | Rewrite CLI    | Rewrite P-Asserted-ID | Forced | Use DID  |
 |----------------|-----------------|----------------|-----------------------|--------|----------|
 | `^1`           |                 | `222222222222` |                       | No     | Disabled |
 
 ### Force CLI
+
 When choosing Force CLI, **If there is no match present** the CLI marked Force will be used to replace the CLI being sent on a call. In the example below the CLI `111111111111` will be sent regardless of whatever CLI the customer sends.
 
 | CLI            | Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  |
@@ -153,6 +159,7 @@ You may add multiple CLI's which are forced to allow a random CLI to be choosen.
 ### Pick CLI from DID
 
 This example shows how to pick a DID already associated with the customer at random for use as the CLI.
+
 | CLI            | Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  |
 |----------------|-----------------|-------------|-----------------------|--------|----------|
 |                |                 |             |                       | Yes    | Random   |
@@ -218,6 +225,7 @@ If we want to use the CLI in the Pre-Asserted-Identity it is a little easier as 
 | `^(.*)$` |                 |             | `$1`                  | No     | Disabled |
 
 ## Additional Examples
+
 The CLI system uses Regular Expressions to match and replace numbers. Here are a few examples:
 
 | Number      |            CLI | Replace CLI |                                      Description |
@@ -229,7 +237,6 @@ The CLI system uses Regular Expressions to match and replace numbers. Here are a
 | 01782123456 |    ^0([1-9]+)$ |        44\1 |             Remove leading 0 and replace with 44 |
 
 *To learn more about writing regular expressions, visit [**http://regexr.com**](http://regexr.com) for tutorials and exercises available for all levels of expertise.*
-
 
 ## Blacklist numbers per provider
 Using **CLI Restrict** lets you block calls, essentially creating a Blacklist of numbers. To block a configured CLI:
