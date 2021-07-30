@@ -199,11 +199,11 @@ In the Rewrite CLI section `44` is the literal 44 digits `$1` will contain what 
 ### Use Pre-Asserted-Identity as CLI
 You can use all or part of a sent Pre-Asserted-Identity as the CLI. The following example captures all.
 
-| CLI            | Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  |
-|----------------|-----------------|-------------|-----------------------|--------|----------|
-| `.*`           | `^(<paid>.*)$`  | `$<paid>`   |                       | No     | Disabled |
+| CLI            | Pre-Asserted-ID  | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  |
+|----------------|------------------|-------------|-----------------------|--------|----------|
+| `.*`           | `^(?<paid>.*)$`  | `$<paid>`   |                       | No     | Disabled |
 
-In addition to the matched group as above, we have the expression `(<paid>.*)` in here `paid` represents a variable where this information is stored, it is then available in the CLI rewrite scope as `$<paid>`
+In addition to the matched group as above, we have the expression `(?<paid>.*)` in here `paid` represents a variable where this information is stored, it is then available in the CLI rewrite scope as `$<paid>`
 
 !!! tip "Variable Scope"
     Numbered groups (e.g `$1`, `$2`) will only be **read** from the CLI and will be available in CLI rewrite or in Pre-Asserted-Identity Rewrite. Named groups can be ready from and used anywhere.
@@ -212,9 +212,9 @@ In addition to the matched group as above, we have the expression `(<paid>.*)` i
 
 We can manipulate the P-Asserted ID using a similar way to how we did the CLI, but we **must** use named groups. Note we still have to match the CLI to allow the call to pass. As before `9123456789` in the Pre-Asserted-Identity will become `4423456789`.
 
-| CLI  | Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  |
-|------|-----------------|-------------|-----------------------|--------|----------|
-| `.*` | `^9(<paid>.*)$` |             | `44$<paid>`           | No     | Disabled |
+| CLI  | Pre-Asserted-ID  | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  |
+|------|------------------|-------------|-----------------------|--------|----------|
+| `.*` | `^9(?<paid>.*)$` |             | `44$<paid>`           | No     | Disabled |
 
 ### Use CLI
 
