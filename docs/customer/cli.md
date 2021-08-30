@@ -2,9 +2,9 @@
 
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Routing**
 
-**CLI (Caller Line Identification)** aka ANI (Automatic Number Identification) is the _From_ header in SIP and represents the senders number in a telephone call. It is the technical term for the mechanism we know as **Caller ID**. In VoIP systems, CLI is more than just a way to display the number of incoming calls. It can be used as a defense against unidentified call attempts and provides information to sort incoming calls, as well as billing a component of billing.
+**CLI (Caller Line Identification)** aka ANI (Automatic Number Identification) is the _From_ header in SIP and represents the senders number in a telephone call. It is the technical term for the mechanism we know as **Caller ID**. In VoIP systems, CLI is more than just a way to display the number of incoming calls. It is used as a defense against unidentified call attempts, provides information to sort incoming calls, and is an important component of billing.
 
-In ConnexCS, **CLI** found in ***Routing** inside Customers lets you restrict and manipulate CLIs and Pre-Asserted Identity on customer calls, so that any caller without a valid match is rejected outright.
+In ConnexCS, **CLI** (found under **Customer :material-menu-right: [Customer Name] :material-menu-right: Routing**) allows you to restrict and manipulate CLIs and Pre-Asserted Identity on customer calls, so that any caller without a valid match is rejected outright.
 
 !!! tip "How is CLI derived?"
     **CLI** refers to the **CLI/ANI** field in the `From` part of the `SIP INVITE` message. This contains specific information about the caller, particularly the name and number of the person initiating the call. Also known as "Caller ID" in standard phone systems, CLI may also be referred to as "A-Leg" or "A-Number", where the call originates. The call is then terminated at the Dialed Number, the "B-Leg" or "B-Number".
@@ -15,11 +15,11 @@ In ConnexCS, **CLI** found in ***Routing** inside Customers lets you restrict an
 
 As standard a customer account with no CLI records added will be allowed to pass any call through.  If you wish to change this behaviour you can go to Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Edit :material-menu-right: Verification :material-menu-right: Approved CLI's Only.
 
-!!! tip "Note"
-    Once the first CLI rule is entered, the behaviour changes to block all. Regardless of the "Approved CLI's Only" Setting.
+!!! warning "Approve CLI override"
+    Once the first CLI rule is entered, the behaviour changes to block all, regardless of the "Approved CLI's Only" setting.
 
-!!! tip "Approved CLI's Only"
-    In addition to changing the default behaviour to block, it will also allow customers the ability to verify their own CLI's from their control panel through a call back system. A customer can login to their portal enter a phone number which should belong to them. The ConnexCS system will place a call and give speak a code which they will be required to enter back into the portal. If the identical code is entered the CLI will be added.
+!!! tip "CLI verification tool"
+    In addition to changing the default behaviour to block, adding a CLI rule gives customers the ability to verify their own CLI's from their Control Panel through a call back system. A customer can login to their portal and enter a phone number which should belong to them. The ConnexCS system will place a call and give a code which must be entered into the portal. If the codes match the CLI will be added.
 
 ## Creating a Record
 
@@ -27,11 +27,11 @@ Click on the :material-plus: button under **CLI**.
 
 *Field details:*
 
-+ **CLI**: Enter the desired number or a regular expression to match and replace to allow CLI's through
++ **CLI**: To allow CLIs through, enter the desired number or a regular expression (to match and replace).
 
-+ **Pre-Asserted-ID**: Enter the desired number or a regular expression to match and replace to Pre-Asserted-Identities numbers through
++ **Pre-Asserted-ID**: To allow Pre-Asserted-Identities, enter the desired number or a regular expression to match and replace. 
 
-+ **Rewrite CLI**: A CLI can be re-written. For example, you can add `123456789` in the CLI box, and then rewrite by adding `987654321` in the re-write CLI box. (See [**Advanced CLI Match and Manipulation**](https://docs.connexcs.com/customer/cli/#additional-examples) below.)
++ **Rewrite CLI**: A CLI can be re-written. For example, you can add `123456789` in the CLI box, and then rewrite by adding `987654321` in the re-write CLI box. (For more advanced CLI manipulation, see [**Additional Examples**](/customer/cli/#additional-examples) below.)
 
 + **Rewrite P-Asserted-ID**: This is a SIP Header similar to the FROM header, but classified as a private, or network-level identifier. Telephone companies use it to identify call originators, but then it is stripped at the call server, so the client end-points only see the FROM field. This is especially helpful when caller's obscure their CLI/FROM information, as the network-level still requires origination details. The **P-Asserted-ID** manipulation uses the same syntax as Replace CLI.
 
@@ -42,7 +42,7 @@ Click on the :material-plus: button under **CLI**.
 
 + **Direction Applied**: Select either **Termination** for calls a customer makes out, or **Origination** (also refers to DIDs) for inbound calls made to our customers. Ex: Create a whitelist that only allows calls to or from the same country.  
 
-+ **Use DID**: Pull in DID's from the customers account to be used either as a Filter or as a Replacement.  
++ **Use DID**: Pull in DIDs from the customer's account to be used either as a Filter or as a Replacement.  
 
     ![alt text][edit-cli]
 
@@ -56,13 +56,13 @@ Configuring a number as a **CLI (Calling Line Identification)** in ConnexCS give
 
 ### Filter CLI by Number
 
-This example shows how to block all calls from passing apart from those where the CLI is "123456789"
+This example shows how to block all calls that do not have the CLI "123456789".
 
 | CLI       | Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  |
 |-----------|-----------------|-------------|-----------------------|--------|----------|
 | `123456789` |                 |             |                       | No     | Disabled |
 
-If you wish to allow different CLI's to pass you can enter 2 records like this.
+To allow multiple CLIs to pass, enter 2 or more records.
 
 | CLI       | Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  |
 |-----------|-----------------|-------------|-----------------------|--------|----------|
@@ -71,13 +71,13 @@ If you wish to allow different CLI's to pass you can enter 2 records like this.
 
 ### Filter CLI by Pattern
 
-If the customer has a number range with which you wish to approve you can use this as an example. This will allow all calls that start with 123456 to pass regardless of the last digits
+To allow a range of numbers for a customer, use this example. This allows all calls that start with 123456 to pass regardless of the last digits.
 
 | CLI            | Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  |
 |----------------|-----------------|-------------|-----------------------|--------|----------|
 | `^123456` |                 |             |                       | No     | Disabled |
 
-You could also use a more complicated expression to match multiple ranges. In this example the number must start with 123456, followed by 1, 3 or 5, then followed by 1 or 2 numbers
+You could also use a more complicated expression to match multiple ranges. In this example the number must start with 123456, followed by 1, 3 or 5, then followed by 1 or 2 numbers.
 
 | CLI                     | Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  |
 |-------------------------|-----------------|-------------|-----------------------|--------|----------|
@@ -86,15 +86,14 @@ You could also use a more complicated expression to match multiple ranges. In th
 This can be used in combination with number lists as well.
 
 ### Filter CLI by DID
-If your customers do origination as well as termination, they already have a list of DID's. You can choose _Filter_ for "Use DID" and this will automatically read from the list of DID's. Note you can still add additional CLI's along with the DID list.
+If your customers do origination as well as termination, they already have a list of DIDs. Select _Filter_ from "Use DID" to automatically read from the list of DIDs. Note you can still add additional CLIs along with the DID list.
 
 | CLI | Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID |
 |-----|-----------------|-------------|-----------------------|--------|---------|
 |     |                 |             |                       | No     | Filter  |
 
 ### Filter PAID by Number or Pattern
-
-The same is true for Pre-Asserted-Identity as it is with CLI, you can filter by PAID, for example
+The same is true for Pre-Asserted-Identity as it is with CLI, you can filter by PAID, as in this example.
 
 | CLI | Pre-Asserted-ID           | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  |
 |-----|---------------------------|-------------|-----------------------|--------|----------|
@@ -103,7 +102,7 @@ The same is true for Pre-Asserted-Identity as it is with CLI, you can filter by 
 
 ### Combined CLI and PAID Filter
 
-Filters are `AND` together meaning for a call to pass on this example the CLI would need to be `1122334455` AND the Pre-Asserted-ID would need to be `123456789`
+Filters are `AND` together, meaning for a call to pass on this example, the CLI would need to be `1122334455` AND the Pre-Asserted-ID would need to be `123456789`
 
 | CLI          | Pre-Asserted-ID           | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  |
 |--------------|---------------------------|-------------|-----------------------|--------|----------|
@@ -146,15 +145,15 @@ In the following example if the customer send a call with `222222222222` then th
 
 ### Pick CLI at Random
 
-You may add multiple CLI's which are forced to allow a random CLI to be choosen. in this example (roughly) 50% of the calls will be sent with `111111111111` and 50% with `222222222222` (Providing the customer does not send either of those two, otherwise the results would)
+You may add multiple CLIs which are forced to allow a random CLI to be choosen. In this example (roughly) 50% of the calls will be sent with `111111111111` and 50% with `222222222222` (providing the customer does not send either of those two, otherwise the results would).
 
 | CLI            | Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  |
 |----------------|-----------------|-------------|-----------------------|--------|----------|
 | `111111111111` |                 |             |                       | Yes    | Disabled |
 | `222222222222` |                 |             |                       | Yes    | Disabled |
 
-!!! tip "Large Numbers of Random CLI's"
-    Should you wish to either filter or replace calls with a larger amount of CLI's, or perform more complicated rules, you can use scriptforge to write a customer application reading from a database to accomplish much more comprehensive solutions.
+!!! tip "Large Numbers of Random CLIs"
+    To filter or replace calls with a larger amount of CLIs, or to perform more complicated rules, use Scriptforge to write a custom application reading from a database to accomplish much more comprehensive solutions.
 
 ### Pick CLI from DID
 
@@ -166,7 +165,7 @@ This example shows how to pick a DID already associated with the customer at ran
 
 ### Pick CLI from DID with Longest Match
 
-You may wish to do perform CLI Localization, for example if you have the following DID's `123456`, `123567`, `123789` and you are placing a call to `1234987654` the system will find the longest match which would be `123456` and use that as the CLI.
+You may wish to do perform CLI Localization. For example if you have multiple DIDs (in this case `123456`, `123567` and `123789`) and are placing a call to `1234987654`, the system will find the longest match (in this case `123456)` to use as the CLI.
 
 | CLI            | Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID      |
 |----------------|-----------------|-------------|-----------------------|--------|--------------|
@@ -176,8 +175,8 @@ You may wish to do perform CLI Localization, for example if you have the followi
 
 Sometimes it can be useful to retain all or part of the CLI being sent manipulate it when it gets sent out.
 
-!!! tip "Are you Normalizing"
-    Normalizing is the process of using a common number format internally to ConnexCS, this should be international format. You should not be using CLI Manipulation to correct the format or a number, this should be done by Parameter Rewrite.
+!!! tip "Are you Normalizing?"
+    Normalizing is the process of using a common number format. For ConnexCS, this is the international format. You should not be using CLI Manipulation to correct the format or a number, this should be done by Parameter Rewrite (see [Number Manipulation](/number-manipulation/) for details).
 
 ### Regex Pattern Examples
 
@@ -187,30 +186,30 @@ If a customer sends a call where the CLI starts with a 9 we can strip it out and
 |----------------|-----------------|-------------|-----------------------|--------|----------|
 | `^9(.*)$`      |                 | `44$1`      |                       | No     | Disabled |
 
-This may be a little complicated so we can break this down.
+This may be a little complicated so we can break this down:
 
-`^` is a start anchor and it means that we start the match at the very left.
-`9` is the literal digit 9
-`(` and `)` represent a match group, everything matched within it will be placed in the variable `$1`
-`$` is an end anchor and it means that we finish the match at the very right.
++ `^` is a start anchor and it means that we start the match at the very left
++ `9` is the literal digit 9
++ `(` and `)` represent a match group, everything matched within it will be placed in the variable `$1`
++ `$` is an end anchor and it means that we finish the match at the very right
 
-In the Rewrite CLI section `44` is the literal 44 digits `$1` will contain what has been matched in the previous stage.
+In the Rewrite CLI section, `44` is the literal 44 digits, and `$1` will contain what has been matched in the previous stage.
 
 ### Use Pre-Asserted-Identity as CLI
-You can use all or part of a sent Pre-Asserted-Identity as the CLI. The following example captures all.
+You can use all or part of a sent Pre-Asserted-Identity as the CLI. The following example shows how to capture all.
 
 | CLI            | Pre-Asserted-ID  | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  |
 |----------------|------------------|-------------|-----------------------|--------|----------|
 | `.*`           | `^(?<paid>.*)$`  | `$<paid>`   |                       | No     | Disabled |
 
-In addition to the matched group as above, we have the expression `(?<paid>.*)` in here `paid` represents a variable where this information is stored, it is then available in the CLI rewrite scope as `$<paid>`
+In addition to the matched group as above, we have the expression `(?<paid>.*)`. Here, `paid` represents a variable where this information is stored, it is then available in the CLI rewrite scope as `$<paid>`
 
 !!! tip "Variable Scope"
-    Numbered groups (e.g `$1`, `$2`) will only be **read** from the CLI and will be available in CLI rewrite or in Pre-Asserted-Identity Rewrite. Named groups can be ready from and used anywhere.
+    Numbered groups (e.g `$1`, `$2`) will only be **read** from the CLI and will be available in CLI rewrite or in Pre-Asserted-Identity Rewrite. Named groups can be read from, and used, anywhere.
 
 ## Manipulate Pre-Asserted-Identity
 
-We can manipulate the P-Asserted ID using a similar way to how we did the CLI, but we **must** use named groups. Note we still have to match the CLI to allow the call to pass. As before `9123456789` in the Pre-Asserted-Identity will become `4423456789`.
+Manipulate the P-Asserted ID similarly to how we manipulted the CLI. In this case, we **must** use named groups, and still have to match the CLI to allow the call to pass. As before `9123456789` in the Pre-Asserted-Identity will become `4423456789`.
 
 | CLI  | Pre-Asserted-ID  | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  |
 |------|------------------|-------------|-----------------------|--------|----------|
