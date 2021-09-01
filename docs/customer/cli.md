@@ -224,7 +224,7 @@ The CLI system uses Regular Expressions to match and replace numbers. Here are a
 
 *To learn more about writing regular expressions, visit [**RegExr**](http://regexr.com) for tutorials and exercises available for all levels of expertise.*
 
-### Blacklist numbers per provider
+## Blacklist numbers per provider
 Using **CLI Restrict** lets you block calls, essentially creating a Blacklist of numbers. To block a configured CLI:
 
 1. Click **Management :material-menu-right: Rate Card**. 
@@ -233,7 +233,7 @@ Using **CLI Restrict** lets you block calls, essentially creating a Blacklist of
 3. Enter the CLI/ANIs you want to block in the **CLI Restrict** box.
 4. Click **`Save`**.
 
-### General Condition 6 (GC6) Compliance
+## General Condition 6 (GC6) Compliance
 ConnexCS is GC6 compliant for end users, which: 
 
 > requires Communications Providers (CPs) to provide CLI facilities, and ensure that the CLI Data provided with a call includes a valid, dialable telephone number which uniquely identifies the caller." For details on this General Condition, including guidelines for "valid" and "dialable" numbers, see OFCOM's [**Guidance on CLI Facilities**](https://www.ofcom.org.uk/__data/assets/pdf_file/0012/113214/statement-guidelines-cli-facilities.pdf).
