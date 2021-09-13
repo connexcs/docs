@@ -8,19 +8,12 @@ For individual customers, navigate to **Management :material-menu-right: Custome
 ## VoiceMail Dialpad options
 To access Voicemail, dial \*1. The default actions for Voicemail navigation are:
 
-|Graph|Description |
-|:------------|:-------------------------------------------------|
-|Item1|Things|
-|Item 2|Other things|
-|Graph|Description |
-|:------------|:-------------------------------------------------|
-|Item 3|Other things|
-
-**Main Menu**
-+ Play New Message = 1
-+ play_saved_messages_key = 2
-+ config_menu_key = 5
-+ terminator_key = #
+|Menu|Function |Key|
+|:------------|:------------|:-------|
+|Main Menu|Play New Message|1|
+|Main Menu|Play Save Messages|2|
+|Main Menu|Configuration Menu|5|
+|Main Menu|Terminator Key|#|
 
 Control Playback
 + delete_file_key = 7
