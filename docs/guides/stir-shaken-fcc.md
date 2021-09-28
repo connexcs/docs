@@ -52,7 +52,7 @@ The **STI-PA** ([**iconnectiv**](https://iconectiv.com/) is in the U.S.) vets wh
     Once certs have been provided, they can still be revoked if Service Providers misbehave. 
 
 ## Voice Service Providers implementation
-From the **[iconnectiv Secure Telephone Identity (STI) Service
+From the [**iconnectiv Secure Telephone Identity (STI) Service
 Provider Methods and Procedures**](https://authenticate.iconectiv.com/sites/microsites/files/2021-01/STI-PA-US-METHODPROCSP-001%20Issue%205%20Rel%201-5%20-%20Onboarding%20Guide%20for%20SP.pdf), prior to registering, make sure you have:
 
 1. Your **Operating Company Number (OCN)**. VoIP providers can register with [**NECA for an OCN**](https://www.neca.org/business-solutions/company-codes), even as an IP Enabled Service Provider (do not need to be a LEC). This is used to verify the SP has access to numbers from NANPA and NPA pools.  
