@@ -57,7 +57,7 @@ View and configure existing routes on the Routing tab in the Customer card. Clic
 
 + **Block Connect Cost**: Block any call that has a connection fee. 
 
-+ **FTC DNC Report ANI Block (USA)**: When `Enabled`, ConnexCS will take a copy of FTC data (using the [FCC's **Do Not Call (DNC) Reported Calls Data API**(https://www.ftc.gov/developer/api/v0/endpoints/do-not-call-dnc-reported-calls-data-api)]) and add it to the system. We can then block callers from known spammer CLI/ANI's.
++ **FTC DNC Report ANI Block (USA)**: When `Enabled`, ConnexCS will take a copy of FTC data (using the [FCC's **Do Not Call (DNC) Reported Calls Data API**](https://www.ftc.gov/developer/api/v0/endpoints/do-not-call-dnc-reported-calls-data-api)) and add it to the system. We can then block callers from known spammer CLI/ANI's.
 
 
 ### Capacity Limits
