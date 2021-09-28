@@ -21,13 +21,14 @@ To access Voicemail, dial \*1. The default actions for Voicemail navigation are:
 |Listening to VoiceMail|Email|4|
 |Listening to VoiceMail|Fast Forward|6|
 |Listening to VoiceMail|Rewind|4|
+|Listening to VoiceMail|End|#|
 |Control Playback|Pause|0|
 |Control Playback|Restart|1|
-|Listening to VoiceMail|End|#|
 |Configuration Menu|Record Greeting|1|
 |Configuration Menu|Choose Greeting|2|
 |Configuration Menu|Record Name|3|
 |Configuration Menu|Main Menu|0|
+|Configuration Menu|End|#|
 |Recording VoiceMail|Listen to File|1|
 |Recording VoiceMail|Save File|2|
 |Recording VoiceMail|Record File|3|
