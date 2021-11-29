@@ -8,7 +8,7 @@ The **Global** section of the ConnexCS Control Panel provides an account-wide ov
 ## Alerts
 View all the Alerts across the entire account. When creating an Alert from Global, you will need to select the Company that will use the Alert.
 
-*See [**Alerts**](https://docs.connexcs.com/customer/alerts) for configuration details and for some examples of Alerts that can be built.*
+*See [**Alerts**](https://docs.connexcs.com/customer/alerts) for configuration details and examples of Alerts that can be built.*
 
 Alternate location(s):
 
