@@ -13,6 +13,8 @@ ConnexCS uses standard telephony terminology in our Control Panel and documentat
 |**Codec**|*Coder-Decoder*|Encodes and decodes data between analog and digital signals, usually with some form of compression.|
 |**DID**|*Direct Inward Dial*|By assigning a public number to an internal location, outside callers can reach a destination without going through a PBX.|
 |**DTMF**|*Dual-Tone Multi-Frequency*|A signaling system which connects points in the telephony network, typically between telephone equipment, communications devices, and switching centers. See [**Wikipedia DTMF**](https://en.wikipedia.org/wiki/Dual-tone_multi-frequency_signaling) for more details.|
+|**E.123**|*Specific Number Format*|A standard which includes a number format beginning with a + followed by country code and subscriber number.|
+|**E.164**|*Specific Number Format*|As described in by the ITU, the E.164 general format must contain only digits split as follows: Country code (1 to 3 digits) Subscriber number (max 12 digits).|
 |**FAS**|*False Answer Supervision*|A type of billing fraud, a call is billed for a length of time which was longer than the actual call duration.|
 |**Flow Speed**|n/a|The number of allowed calls each second, ConnexCS uses this term and **Calls Per Second (CPS)** interchangeably.|
 |**FQDN**|*Fully Qualified Domain Name*|A domain name, which also includes a hostname, that points to or references an IP. Ex: sip.connexcs.com. |

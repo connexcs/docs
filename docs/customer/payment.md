@@ -11,6 +11,7 @@ To add a new payment
 
 1. Click on the :material-plus: button
     + **Description** is the name of the payment. 
+        If you wish to hide any information on the customer portal please use **#** followed by the text example: PayPal 87878787744XXX #payment from demo.
     + **Total** is the amount of the payment. 
     + **Payment Fee (Ref Only)** is filled in automatically for payments made using PayPal or another external payment system. 
     + **Status** allows you to set the Payment to Pending, Cancelled or Completed. (Pending and Cancelled will not be included in the balance calculation.)
