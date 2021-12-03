@@ -1,15 +1,18 @@
 # Prefix Sets
 **Setup :material-menu-right: Advanced :material-menu-right: Prefix Set**
 
-A **Prefix Set** groups one or more prefixes in a predefined group. When configuring specific customers or users, the predefined group can be used, simplifying the configuration. ConnexCS supports plain text as well as regular expressions when building Prefix Sets for greater flexiblity. 
+A **Prefix Set** groups one or more prefixes together. This set can then be applied to a Customer or Route. Without the ability to use a Prefix Set, each individual Customer or Route would need to be configured manually each time, opening up the possibility of human error. With Prefix Sets, we avoid these errors and reduce configuration time overall. ConnexCS supports plain text as well as regular expressions when building Prefix Sets for greater flexibility. 
 
-## Create Prefix Set
+## Configure Prefix Set
+**Step 1: Create Prefix Set**
+
 1. Click the **:material-plus:**.
 1. **Name** the set. 
-1. **Data** includes the prefixes, one per line (plain-text or regular expressions). 
-1. Click **`Save`**. 
+1. **Data** includes the prefixes, one per line (plain-text or regular expressions). See [**Example Dial Strings for Prefix sets**](/setup/advanced/prefix-set/#example-dial-strings-for-prefix-sets) below. 
+2. **Flags** (optional) is used to setup global blacklists. See [**Flags**](/setup/advanced/prefix-set/#flags) below. 
+3. Click **`Save`**. 
 
-## Apply Prefix Set
+**Step 2: Apply Prefix Set**
 Prefix Sets can be applied to the following locations under the Management menu:
 
 Customer :material-menu-right: Routing :material-menu-right: Ingress Routing :material-menu-right: Basic :material-menu-right: [Dial String Prefix Set](https://docs.connexcs.com/customer/routing/#basic)
@@ -22,7 +25,7 @@ Rate Card :material-menu-right: Customer Rate Cards :material-menu-right: Profit
 Use Flags to create a *Global CLI Blacklist* or a *Global Dialled Number Blacklist* (Aka Block List). This will prevent all calls going through the system which match the defined prefix set. 
 
 !!! warning "Blacklist or Do Not Call list"
-    Flags are used for large amounts of numbers that change infrequently. If you are looking to manage a DNC list, take a look at our [**Do Not Call (DNC)**](https://docs.connexcs.com/dnc/) setup.
+    Flags are used for large amounts of numbers that change infrequently. If you are looking to manage a DNC list, please review our [**Do Not Call (DNC)**](https://docs.connexcs.com/dnc/) setup.
     
  
 ## Example Dial Strings for Prefix sets

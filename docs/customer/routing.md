@@ -161,7 +161,7 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
     
     :material-menu-right: `Disabled`- no calls are recorded
     
-    :material-menu-right: `Sampling`- Choose from 1%, 5%, 25 or 50% sample of your calls
+    :material-menu-right: `Sampling`- Choose from 1%, 5%, 25% or 50% sample of your calls (ex: 1% will record 1 of every 100, 25% records 25 of every 100, and so on)
     
     :material-menu-right: `Enabled (Always On)`- Record all calls
 

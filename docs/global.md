@@ -8,7 +8,7 @@ The **Global** section of the ConnexCS Control Panel provides an account-wide ov
 ## Alerts
 View all the Alerts across the entire account. When creating an Alert from Global, you will need to select the Company that will use the Alert.
 
-*See [**Alerts**](https://docs.connexcs.com/customer/alerts) for configuration details.*
+*See [**Alerts**](https://docs.connexcs.com/customer/alerts) for configuration details and examples of Alerts that can be built.*
 
 Alternate location(s):
 
@@ -75,7 +75,7 @@ Alternate location(s):
 * Carrier :material-menu-right: [Carrier Name] :material-menu-right: Auth 
 
 ## Invoices
-View all Invoices and allocate payments. 
+View all Invoices, access basic invoice functions (such as date range, unit price, tax), and allocate payments.
 
 *See [**Invoices**](https://docs.connexcs.com/customer/invoices) for configuration details.*
 
