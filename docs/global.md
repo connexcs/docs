@@ -2,7 +2,7 @@
 
 **Global**
 
-The **Global** section of the ConnexCS Control Panel provides an account-wide overview of many of the same sections found under **Management :material-menu-right: Customer** or **Carrier**. This can be helpful for troubleshooting issues across customers or for situations where you are trying to locate the customer of a specific a DID. Some of these sections may also be configured and managed from the Global view. 
+The **Global** section of the ConnexCS Control Panel provides an account-wide overview of many of the same sections found under **Management :material-menu-right: Customer** or **Carrier**. This can be helpful for troubleshooting issues across customers or for situations where you are trying to locate the customer of a specific a DID. Some sections may also be configured and managed from the Global view. 
 
 
 ## Alerts
@@ -38,7 +38,7 @@ Alternate location(s):
 * Customer :material-menu-right: [Customer Name] :material-menu-right: CDR
 * Carrier :material-menu-right: [Carrier Name] :material-menu-right: CDR
 
-## Dialogs
+## Dialog
 View all active calls across the entire account. 
 
 *See [**Dialogs**](https://docs.connexcs.com/customer/dialogs) for configuration details.*
@@ -46,6 +46,15 @@ View all active calls across the entire account.
 Alternate location(s):
 
 * Customer :material-menu-right: [Customer Name] :material-menu-right: Dialogs
+
+## Routing
+View overview of configured routes grouped by Customer, Customer Card, Provider Card, as well as all active Channels and current CPS calls per account. 
+
+*See [**Routing Overview**](/routing) and [**Rate Card Overview**](/rate-card-building) for details.*
+
+Alternate location(s):
+
+* Customer :material-menu-right: [Customer Name] :material-menu-right: Routing :material-menu-right: Ingress Routing
 
 ## DID
 View list of all DIDs, as well as configuration and editing. 
