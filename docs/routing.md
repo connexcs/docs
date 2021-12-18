@@ -26,16 +26,26 @@ E --> F(Carrier IPS)
 The **Routing Engine** receives all calls when they enter the system then processes them based on the direction the call is flowing. 
 
 ### Ingress and Egress
-These terms are used to describe the direction or traffic relative to a switch.
+These terms are used to describe the direction of traffic relative to a switch.
 
-* **Ingress** refers to inbound calls. 
-* **Egress** refers to outbound calls. 
+**Ingress** refers to inbound calls destined to terminate with one of our customers (UA, phone, DID, etc). 
 
-Ex: When you add a customer's switch that will send traffic to terminate with a carrier, the customer's switch would be considered **Egress** as it is sending calls out. 
-Ex: When a customer's switch has a DID pointing to it, it would be considered **Ingress** as traffic is coming into the switch. 
+Far End > PSTN > Carrier > ConnexCS switch > Routing Eingine > Authorization > Ingress Routing >
 
-!!! note "Ingress Routing vs Egress Routing"
-    A call bound for termination comes into the routing engine, passes authorisation, then goes through **Ingress Routing**. This determines the call profile and where to send it. There is no **Egress Routing** section, per se. The Egress routing is built into the Customer Rate Card which contains 1 or more carriers and, optionally, a routing strategy (default LCR).
++ A call bound for termination with one of our customers comes into the routing engine, passes authorisation, then goes through **Ingress Routing**. This determines the call profile and where to send it. 
++ !!! example "Ingress Example"
+    When a customer's switch has a DID pointing to it, it would be considered **Ingress** as traffic is coming into the switch. 
+
+**Egress** refers to outbound calls. 
+
+UA -> Customer > Customer Rate Card > Carrier Rate Card -> Carrier -> PSTN -> Far-End
+
+!!! tip "Egress Example"
+    When you add a customer's switch that will send traffic to terminate with a carrier, the customer's switch would be considered **Egress** as it is sending calls out. 
+
+
+
+There is no **Egress Routing** section, per se. The Egress routing is built into the Customer Rate Card which contains 1 or more carriers and, optionally, a routing strategy (default LCR).
 
 ### Error Codes
 If your SIP Trace shows that an INVITE packet was received by the switch but not sent out to any providers, the failure has occurred in the **Ingress Routing**.
