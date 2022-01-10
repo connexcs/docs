@@ -30,7 +30,6 @@ The **Portal** lets you add a domains and sub-domain to the Control Panel, which
 *Click each tab to view configuration details*
 
 === "Basic"
-
     * **Domain** - The URL your customers use to access their portal. 
     * **Brand Name** - The brand which will be displayed on the portal to your customers.
     * **Customer Signup** - Allow customers to sign up independently.
@@ -45,7 +44,6 @@ The **Portal** lets you add a domains and sub-domain to the Control Panel, which
     * **Currencies** - Choose what currencies are available for your customers to choose when they signup.
 
 === "User Access Area"
-
     Select which sections/features are displayed to your customers (see "Override Options" below).
 
 === "Breakout"
