@@ -15,7 +15,7 @@ To add a new payment
     + **Total** is the amount of the payment. 
     + **Payment Fee (Ref Only)** is filled in automatically for payments made using PayPal or another external payment system. 
     + **Status** allows you to set the Payment to Pending, Cancelled or Completed. (Pending and Cancelled will not be included in the balance calculation.)
-    + **Email Confirmation**: If enabled, once you save the Payment an email will be generated to the customer to let them know it was received and applied to the account. 
+    + **Email Confirmation**: If enabled, once you save the Payment, an email will be generated to all Contacts configured on the customer advising the payment was received and applied to the account. 
 
     ![alt text][payments-tab]
 
