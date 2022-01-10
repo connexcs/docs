@@ -170,9 +170,11 @@ Delayed Bye allows a call to be extended by delaying the release of the call. Th
 **This feature bends the rules, if you dont use realistic figures or understand how this is working you will get unexpected results, use with caution**
 
 There are a number of considerations when using Delayed Bye.
+
 * Only works for termination calls.
 * Only BYE messages from Downstream will be delayed.
 * When a message is delayed, a 200OK will be sent Downstream instantly informing that the call has been ended.
+* We only allow extending a call a maximum of 30 seconds.
 * If a Downstream BYE message is delayed and an Upstream BYE interupts:
   * We will instantly inform the upstream carrier that the call has been ended.
   * The charge recorded in the carrier CDR will be the actual call duration + Delay. It will not take into consideration the incoming Upstream BYE.

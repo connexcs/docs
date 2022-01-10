@@ -114,6 +114,13 @@ Large lists of numbers can be managed from our Userspace database. Once the numb
 |------------------|-------------|-----------------------|--------|----------|---------------|
 |                  |             |                       | No     | Disabled | [My Database] |
 
+#### Filter CLI by Number Type
+Filtering by Number Type will block calls which originate from a "type" that you specify, this can be something such as a FIXED, MOBILE, etc.
+
+| Pre-Asserted-ID  | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Block Type  |
+|------------------|-------------|-----------------------|--------|----------|-------------|
+|                  |             |                       | No     | Disabled | FIXED       |
+
 ### Replace Examples
 We can also completely replace the CLI being sent. Note that if a replacement is done it also means that the match is successful and will be allowed to pass though.
 
