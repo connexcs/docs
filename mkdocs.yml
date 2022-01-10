@@ -20,7 +20,8 @@ markdown_extensions:
       linenums: true
   - toc:
       permalink: true
-  - pymdownx.tabbed
+  - pymdownx.tabbed:
+      alternate_style: true 
   - pymdownx.details
   - pymdownx.tasklist:
       custom_checkbox: true
