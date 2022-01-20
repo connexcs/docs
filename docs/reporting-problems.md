@@ -67,25 +67,31 @@ Issues are classified based on a combination of Category and Severity. If you ar
 
 |Level|Severity|Example|
 |---|---|---|
-|P0|Critical|ConnexCS is down, this is affecting all of our customers and no calls are able to be made. Everything is on fire. If we have a P0 incident we will know about it: our monitoring system will be raising alerts to all engineers. All customers will be affected. This is considered Critical. The best thing to do is to monitor https://status.connexcs.com/ and await updates. As we are a small team, we may be focusing on resolving the issue, and although your reply may only take 10 seconds, we will have 100's of customers asking the same thing.
-* Platform Issue
-* Our Monitoring will alert Us
-* Check our status page, ETA's will be issued if we have them available.
-* You can contact us, but please don't expect any detailed replies while we are focused on troubleshooting the issue.
-* 24/7 response incident.|
+|P0|Critical|ConnexCS is down, this is affecting all of our customers and all calls are failing. The best thing to do is to monitor https://status.connexcs.com/ and await updates. As we are a small team, we may be focusing on resolving the issue, and although your reply may only take 10 seconds, we will have 100's of customers asking the same thing.|
 |P1|Critical|A customer of ConnexCS is down and it is affecting all calls.|
 |P2|Critical|A customer of our customers calls are down, or there is a serious User Interface problem.|
-|P3|Important|There is medium impact problem which is affecting some, calls of 1 or more customers. Or there is a serious User Interface Problem.|
-|P4|Trivial|There is a User Interface problem, or a low impact problem affecting calls.|
-|P5|Trivial|There is a minor UI Bug or a feature enhancement.|
+|P3|Important|A partial outage on a customer or carrier, and/or some but not all calls are affected, or there is a serious User Interface Problem.|
+|P4|Trivial|A feature is broken but business can continue (User Interface problem, or a low-impact problem affecting calls).|
+|P5|Trivial|A feature does not work as expected or an enhancement is required.|
 
 !!! tip "Reporting issues with new interconnects"
     When reporting an issue with a new interconnect that is not working, please be advised that this is not considered a Critical issue. 
 
 #### Response Times
 
-+ Platform support for P2+ Issues = 24/7.
-+ All other Platform issues and Operational Support = 8:00am - 8:00pm UTC (regular working hours). Whenever possible, we may provide support outside these times if we are available (best effort). We are a small team, so we request you keep this in mind when reporting issue severity. 
++ Platform for P2+ (Critical) Issues = 24/7 support.
+   * Platform Issue
+   * Our Monitoring will alert Us
+   * Check our status page, ETA's will be issued if we have them available.
+   * You can contact us, but please don't expect any detailed replies while we are focused on troubleshooting the issue.
+   * 24/7 response incident.
+
++ All other Platform (non-Critical) and Operational Issues = 8:00am - 8:00pm UTC business hours support. Whenever possible, we strive to provide best-effort support outside these times if we are available. We are a small team, so we request you keep this in mind when reporting issue severity. 
+   * Operational or Configuration Issue 
+   * Our Monitoring will not alert Us
+   * Our status page wont show this problem
+   * Contact us immediately
+   * Problem will be resolved during working our, or best efforts.
 
 !!! note "Classification usage"
     These Severity levels are here to assess the impact of a problem but are not followed blindly. We will attempt to answer support requests 24/7, however repeated instances of reporting Critical incidents beyond normal working hours may result in fines on the account or account termination.
