@@ -67,9 +67,7 @@ Issues are classified based on a combination of Category and Severity. If you ar
 
 |Level|Severity|Example|
 |---|---|---|
-|P0|Critical|ConnexCS is down, this is affecting all of our customers and no calls are able to be made. Everything is on fire.
-If we have a P0 incident we will know about it: our monitoring system will be raising alerts to all engineers. All customers will be affected. This is considered Critical. The best thing to do is to monitor https://status.connexcs.com/ and await updates. As we are a small team, we may be focusing on resolving the issue, and although your reply may only take 10 seconds, we will have 100's of customers asking the same thing.
-
+|P0|Critical|ConnexCS is down, this is affecting all of our customers and no calls are able to be made. Everything is on fire. If we have a P0 incident we will know about it: our monitoring system will be raising alerts to all engineers. All customers will be affected. This is considered Critical. The best thing to do is to monitor https://status.connexcs.com/ and await updates. As we are a small team, we may be focusing on resolving the issue, and although your reply may only take 10 seconds, we will have 100's of customers asking the same thing.
 * Platform Issue
 * Our Monitoring will alert Us
 * Check our status page, ETA's will be issued if we have them available.
