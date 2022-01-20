@@ -3,7 +3,7 @@ ConnexCS does not charge for support, however there are reasonable level of expe
     
 ## Expectations
 ### ConnexCS Server Provider Obligations
-ConnexCS support engineers make all efforts to fix reported problems within a timeframe deemed approrpiate for the severity of the issue. 
+ConnexCS support engineers make all efforts to fix reported problems within a timeframe deemed approrpriate for the severity of the issue. 
 
 We make best efforts to reply 24/7.
 
@@ -16,13 +16,13 @@ As a customer we expect from you:
 * Problem Isolation (See [**Debugging guide**](/guides/debugging/))
 
 ## Support Channels
-There are several methods of contacting ConnexCS for assistance outlined below. If you need to Report a Problem, please make sure you check that section for information on issue classification and response times, and some tips for rerpoting issues so we can best address your needs. 
+There are several methods of contacting ConnexCS for assistance outlined below. If you need to Report a Problem, please make sure you check that section for information on issue classification and response times, and some tips for reporting issues so we can best address your needs. 
 
 !!! tip "ConnexCS System Status"
     Before reporting a problem, please check the [**ConnexCS System Status Page**](https://status.connexcs.com/) for current known issues. 
 
 ### Online Chat
-**Online Chat** allows for real-time assistance. Initial communication is done with a bot. If the bot is unable to help, it will advise you to type "Human" to be connected with a support representative. Clicking this button alerts staff, and the first person to become available will reply as soon as possible.  We find that most questions get resolved efficiently this way. Please note that the chat system is for one-on-one communication about a specific problem, not for multiple concerns or system-wide change requests. 
+**Online Chat** allows for real-time assistance. Initial communication is done with a bot. If the bot is unable to help, it will advise you to type "Human" to connect with a support representative. Clicking this button alerts staff, and the first person to become available will reply as soon as possible.  We find that most questions get resolved efficiently this way. Please note that the chat system is for one-on-one communication about a specific problem, not for multiple concerns or system-wide change requests. 
 
 ### Support Tickets
 **Support Ticket** (found at the bottom of the ConnexCS navigation menu) displays all open tickets for an account. Tickets are created by sending an email to [**support@connexcs.com**](support@connexcs.com).
@@ -52,9 +52,6 @@ If you are interested in **NOC-on-Demand** or Enhanced Support, which would give
 ## Report a Problem
 This section covers the best practices for reporting problems to ConnexCS support.  We encourage feedback but also want to make sure you have the most efficient means of expressing a problem so there are no delays.
 
-*** Note
-    It is of the discretion of ConnexCS to choose the severity of an issue, however see "Paid Support Escalation" should you wish to have an isue prioritised
-
 ### Issue Classification and Response times
 Issues are classified based on a combination of Category and Severity. If you are not able to determine the Category or Severity, we can help with this. 
 
@@ -67,14 +64,17 @@ Issues are classified based on a combination of Category and Severity. If you ar
 
 |Level|Severity|Example|
 |---|---|---|
-|P0|Critical|ConnexCS is down, this is affecting all of our customers and all calls are failing. The best thing to do is to monitor https://status.connexcs.com/ and await updates. As we are a small team, we may be focusing on resolving the issue, and although your reply may only take 10 seconds, we will have 100's of customers asking the same thing.|
+|P0|Critical|ConnexCS is down, this is affecting all customers and all calls are failing. The best thing to do is to monitor https://status.connexcs.com/ and await updates. As we are a small team, we may be focusing on resolving the issue, and although a reply may only take 10 seconds, we will have 100's of customers asking the same thing.|
 |P1|Critical|A customer of ConnexCS is down and it is affecting all calls.|
 |P2|Critical|A customer of our customers calls are down, or there is a serious User Interface problem.|
 |P3|Important|A partial outage on a customer or carrier, and/or some but not all calls are affected, or there is a serious User Interface Problem.|
 |P4|Trivial|A feature is broken but business can continue (User Interface problem, or a low-impact problem affecting calls).|
 |P5|Trivial|A feature does not work as expected or an enhancement is required.|
 
-!!! note "Classification usage"
+!!! tip "Paid Support Escalation"
+    If you have a P3, P4, we are out of working hours and you have a problem that internally you consider to be critical, you have the option to escalate it. We will charge $150 per hour for our support (min 1 hour). A P5 feature request may be escalated but a project cost may be involved, please discuss this with us if you are considering it.
+
+!!! warning "Classification usage"
     These Severity levels are here to assess the impact of a problem but are not followed blindly. We will attempt to answer support requests 24/7, however repeated instances of misreporting incidents as Critical beyond normal working hours may result in fines on the account or account termination.
     
 
@@ -89,11 +89,11 @@ Issues are classified based on a combination of Category and Severity. If you ar
 
 
 + All other Platform (non-Critical) and Operational Issues = 8:00am - 8:00pm UTC business hours support. Whenever possible, we strive to provide best-effort support outside these times if we are available. We are a small team, so we request you keep this in mind when reporting issue severity. 
-   * Operational or Configuration Issue 
-   * Our Monitoring will not alert Us
-   * Our status page wont show this problem
-   * Contact us immediately
-   * Problem will be resolved during working our, or best efforts.
+    * Operational or Configuration Issue 
+    * Our Monitoring will not alert Us
+    * Our status page won't show this problem
+    * Contact us immediately
+    * Problem will be resolved during working hours or best effort.
 
 !!! tip "Issues with new interconnects"
     Issues encountered when turning up a new interconnect which is not working are not considered Critical. 
@@ -135,14 +135,14 @@ This step helps us understand and resolve your issue as quickly as possible.
 
 * **User Interface Issues**: Including a screenshot along with a clear description of the problem can really help us understand what needs to be resolved. For an efficient utility to take UI screenshots, we recommend a browser plugin called "Lightshot", or use your OS's built-in snipping tool.
 * **Problems with Calls**: For problems with call flow, the **Call-ID** is how we identify which calls are affected. It helps us isolate customers, providers, and/or channels that may be affected. Call-ID is found in the **Logging** section by clicking on a call, and then copying the ID to right of the panel.
-* **Clear and Concise Issue Description**: All of the above steps contain more ways for you to be able to identify your problem, troubleshoot it, and then communicate the problem(s) clearly in the event of contact.
+* **Clear and Concise Issue Description**: The above steps contain more ways for you to be able to identify your problem, troubleshoot it, and then communicate the problem(s) clearly in the event of contact.
 
 !!! failure "Respectful communications"
-    We are also happy to talk with you about wider SIP topics outside of our switch where possible. Under no circumstance will we tolerate rude behaviour, intimidation or threats. We are all SSVVP and SSCA qualified, and whenever possible, we will cite references or point you to SIP traces for fact-checking information.
+    We are also happy to talk with you about wider SIP topics outside of our switch where possible. Under no circumstance will we tolerate rude behaviour, intimidation, or threats. We are all SSVVP and SSCA qualified, and whenever possible, we will cite references or point you to SIP traces for fact-checking information.
 
 ### Reporting Multiple Problems
 If you have more than one problem to report, we ask:
 
 1. Create a separate ticket for each request.  This so that the individual concerns get routed to the correct staff.
-2. Allow an adequate amount of time for us to assess the problem and resolve it.  We first have to assess if the problems are connected, adding extra time onto finding the roots themselves.
+2. Allow an adequate amount of time for us to assess the problem and resolve it.  We first determine if the problems are connected, adding extra time onto finding the roots themselves.
 3. Call instead of emailing.  This is so we can get a concise reading on all concerns quickly and ask follow-up questions on the spot.
