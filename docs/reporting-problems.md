@@ -74,17 +74,19 @@ Issues are classified based on a combination of Category and Severity. If you ar
 |P4|Trivial|A feature is broken but business can continue (User Interface problem, or a low-impact problem affecting calls).|
 |P5|Trivial|A feature does not work as expected or an enhancement is required.|
 
-!!! tip "Reporting issues with new interconnects"
-    When reporting an issue with a new interconnect that is not working, please be advised that this is not considered a Critical issue. 
+!!! note "Classification usage"
+    These Severity levels are here to assess the impact of a problem but are not followed blindly. We will attempt to answer support requests 24/7, however repeated instances of misreporting incidents as Critical beyond normal working hours may result in fines on the account or account termination.
+    
 
 #### Response Times
 
 + Platform for P2+ (Critical) Issues = 24/7 support.
-   * Platform Issue
-   * Our Monitoring will alert Us
-   * Check our status page, ETA's will be issued if we have them available.
-   * You can contact us, but please don't expect any detailed replies while we are focused on troubleshooting the issue.
-   * 24/7 response incident.
+    * Platform Issue
+    * Our Monitoring will alert Us
+    * Check our status page, ETA's will be issued if we have them available.
+    * You can contact us, but please don't expect any detailed replies while we are focused on troubleshooting the issue.
+    * 24/7 response incident.
+
 
 + All other Platform (non-Critical) and Operational Issues = 8:00am - 8:00pm UTC business hours support. Whenever possible, we strive to provide best-effort support outside these times if we are available. We are a small team, so we request you keep this in mind when reporting issue severity. 
    * Operational or Configuration Issue 
@@ -93,8 +95,12 @@ Issues are classified based on a combination of Category and Severity. If you ar
    * Contact us immediately
    * Problem will be resolved during working our, or best efforts.
 
-!!! note "Classification usage"
-    These Severity levels are here to assess the impact of a problem but are not followed blindly. We will attempt to answer support requests 24/7, however repeated instances of reporting Critical incidents beyond normal working hours may result in fines on the account or account termination.
+!!! tip "Issues with new interconnects"
+    Issues encountered when turning up a new interconnect which is not working are not considered Critical. 
+
+!!! tip "Issues when making changes"
+    Issues encountered when you are making a change, testing a new feature, or onboarding a new customer, are not considered Critical. 
+
 
 ### Requested Troubleshooting and Information
 For best results when reporting an issue, please provide us with the following information. This will help our support staff and engineers best address reported problems. 
