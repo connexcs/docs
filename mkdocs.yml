@@ -168,6 +168,7 @@ pages:
         - SIP Devices: sip-devices.md
         - Status Page (for Customer Portals): system-status.md
         - Troubleshooting: 
+            - Debugging: guides/debugging.md
             - Call Connection/Signaling Issues: guides/tshoot-signal.md
             - Call Quality/Media Issues: guides/tshoot-media.md
             - Circuit Test: circuit-test.md
