@@ -1,10 +1,25 @@
 # Customer Support
+ConnexCS does not charge for support, however there are reasonable level of expectations from both parties involved. (Unless you are paying for dedicated support NOC on Demand).
+    
+## Expectations
+### ConnexCS Server Provider Obligations
+ConnexCS support engineers make all efforts to fix reported problems within a timeframe deemed approrpiate for the severity of the issue. 
+
+We make best efforts to reply 24/7.
+
+### Customer Obligations
+As a customer we expect from you:
+* Basic level or above of computer operation.
+* Basic level or above of Telephony.
+* Act as liaison with your customers and carriers.
+* Initial problem investigation.
+* Problem Isolation (See [**Debugging guide**](/guides/debugging/))
+
+## Support Channels
 There are several methods of contacting ConnexCS for assistance outlined below. If you need to Report a Problem, please make sure you check that section for information on issue classification and response times, and some tips for rerpoting issues so we can best address your needs. 
 
 !!! tip "ConnexCS System Status"
     Before reporting a problem, please check the [**ConnexCS System Status Page**](https://status.connexcs.com/) for current known issues. 
-
-## Support Channels
 
 ### Online Chat
 **Online Chat** allows for real-time assistance. Initial communication is done with a bot. If the bot is unable to help, it will advise you to type "Human" to be connected with a support representative. Clicking this button alerts staff, and the first person to become available will reply as soon as possible.  We find that most questions get resolved efficiently this way. Please note that the chat system is for one-on-one communication about a specific problem, not for multiple concerns or system-wide change requests. 
@@ -37,20 +52,29 @@ If you are interested in **NOC-on-Demand** or Enhanced Support, which would give
 ## Report a Problem
 This section covers the best practices for reporting problems to ConnexCS support.  We encourage feedback but also want to make sure you have the most efficient means of expressing a problem so there are no delays.
 
+*** Note
+    It is of the discretion of ConnexCS to choose the severity of an issue, however see "Paid Support Escalation" should you wish to have an isue prioritised
+
 ### Issue Classification and Response times
 Issues are classified based on a combination of Category and Severity. If you are not able to determine the Category or Severity, we can help with this. 
 
 #### Categories
 
-**Platform**- Refers to the stability of the ConnexCS system (typically outside customer control). Ex: ConnexCS platform is down. 
-
-**Operational** - Anything within the customer's control. Ex: Configuration issues. 
+* Platform- Refers to the stability of the ConnexCS system (typically outside customer control). Ex: ConnexCS platform is down. 
+* Operational- Any configuration related issues, which are typically within the customer's control. Ex: Misconfiguration issue. 
 
 #### Severity Levels
 
 |Level|Severity|Example|
 |---|---|---|
-|P0|Critical|ConnexCS is down, this is affecting all of our customers and no calls are able to be made.|
+|P0|Critical|ConnexCS is down, this is affecting all of our customers and no calls are able to be made. Everything is on fire.
+If we have a P0 incident we will know about it: our monitoring system will be raising alerts to all engineers. All customers will be affected. This is considered Critical. The best thing to do is to monitor https://status.connexcs.com/ and await updates. As we are a small team, we may be focusing on resolving the issue, and although your reply may only take 10 seconds, we will have 100's of customers asking the same thing.
+
+* Platform Issue
+* Our Monitoring will alert Us
+* Check our status page, ETA's will be issued if we have them available.
+* You can contact us, but please don't expect any detailed replies while we are focused on troubleshooting the issue.
+* 24/7 response incident.|
 |P1|Critical|A customer of ConnexCS is down and it is affecting all calls.|
 |P2|Critical|A customer of our customers calls are down, or there is a serious User Interface problem.|
 |P3|Important|There is medium impact problem which is affecting some, calls of 1 or more customers. Or there is a serious User Interface Problem.|
