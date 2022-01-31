@@ -3,7 +3,7 @@ ConnexCS does not charge for support, however there are reasonable level of expe
     
 ## Expectations
 ### ConnexCS Server Provider Obligations
-ConnexCS support engineers make all efforts to fix reported problems within a timeframe deemed approrpriate for the severity of the issue. 
+ConnexCS support engineers make all efforts to fix reported problems within a timeframe deemed appropriate for the severity of the issue. 
 
 We make best efforts to reply 24/7.
 
@@ -22,10 +22,10 @@ There are several methods of contacting ConnexCS for assistance outlined below. 
     Before reporting a problem, please check the [**ConnexCS System Status Page**](https://status.connexcs.com/) for current known issues. 
 
 ### Online Chat
-**Online Chat** allows for real-time assistance. Initial communication is done with a bot. If the bot is unable to help, it will advise you to type "Human" to connect with a support representative. Clicking this button alerts staff, and the first person to become available will reply as soon as possible.  We find that most questions get resolved efficiently this way. Please note that the chat system is for one-on-one communication about a specific problem, not for multiple concerns or system-wide change requests. 
+**Online Chat** allows for real-time assistance. Initial communication is with a bot. If the bot is unable to help, it will advise you to type "Human" to connect with a support representative. Clicking this button alerts staff, and the first person to become available will reply as soon as possible. We find that most questions are resolved efficiently this way. Please note that the chat system is for one-on-one communication about a specific problem, not for multiple concerns or system-wide change requests. 
 
 ### Support Tickets
-**Support Ticket** (found at the bottom of the ConnexCS navigation menu) displays all open tickets for an account. Tickets are created by sending an email to [**support@connexcs.com**](support@connexcs.com).
+**Support Ticket** (found at the bottom of the ConnexCS navigation menu) displays all open tickets for an account. Create a ticket by sending an email to [**support@connexcs.com**](support@connexcs.com).
 
 ### Phone
 To speak to a Support Representative, please call our office number listed at [**www.connexcs.com**](https://www.connexcs.com/). 
@@ -53,7 +53,7 @@ If you are interested in **NOC-on-Demand** or Enhanced Support, which would give
 This section covers the best practices for reporting problems to ConnexCS support.  We encourage feedback but also want to make sure you have the most efficient means of expressing a problem so there are no delays.
 
 ### Issue Classification and Response times
-Issues are classified based on a combination of Category and Severity. If you are not able to determine the Category or Severity, we can help with this. 
+ConnexCS classifies issues based on a combination of **Category** and **Severity**. If you are not able to determine the Category or Severity, we can help with this. 
 
 #### Categories
 
@@ -93,7 +93,7 @@ Issues are classified based on a combination of Category and Severity. If you ar
     * Our Monitoring will not alert Us
     * Our status page won't show this problem
     * Contact us immediately
-    * Problem will be resolved during working hours or best effort.
+    * Problem are resolved during working hours or best effort.
 
 !!! tip "Issues with new interconnects"
     Issues encountered when turning up a new interconnect which is not working are not considered Critical. 
@@ -131,10 +131,10 @@ Sometimes complications are resolved easily by turning off parameters that are n
 
 **Step 3: Gather data**
 
-This step helps us understand and resolve your issue as quickly as possible.
+This step helps us understand and resolve your issue as quickly as possible. Whenever possible, we recommend you follow a standardized troubleshooting process, such as our recommended [**Debugging**](/guides/debugging/) steps. 
 
-* **User Interface Issues**: Including a screenshot along with a clear description of the problem can really help us understand what needs to be resolved. For an efficient utility to take UI screenshots, we recommend a browser plugin called "Lightshot", or use your OS's built-in snipping tool.
-* **Problems with Calls**: For problems with call flow, the **Call-ID** is how we identify which calls are affected. It helps us isolate customers, providers, and/or channels that may be affected. Call-ID is found in the **Logging** section by clicking on a call, and then copying the ID to right of the panel.
+* **User Interface Issues**: Including a screenshot along with a clear description of the problem can really help us understand the issue. For an efficient utility to take UI screenshots, we recommend a browser plugin called "Lightshot", or use your OS's built-in snipping tool.
+* **Problems with Calls**: For problems with call flow, the [**Call-ID**](/guides/howto/callid/) is how we identify affected calls. It helps us isolate customers, providers, and/or channels that may be affected. Find a Call-ID in the [**Logging**](/logging/) section by clicking on a call, and then copying the ID to right of the panel.
 * **Clear and Concise Issue Description**: The above steps contain more ways for you to be able to identify your problem, troubleshoot it, and then communicate the problem(s) clearly in the event of contact.
 
 !!! failure "Respectful communications"
@@ -143,6 +143,6 @@ This step helps us understand and resolve your issue as quickly as possible.
 ### Reporting Multiple Problems
 If you have more than one problem to report, we ask:
 
-1. Create a separate ticket for each request.  This so that the individual concerns get routed to the correct staff.
-2. Allow an adequate amount of time for us to assess the problem and resolve it.  We first determine if the problems are connected, adding extra time onto finding the roots themselves.
-3. Call instead of emailing.  This is so we can get a concise reading on all concerns quickly and ask follow-up questions on the spot.
+1. Create a separate ticket for each request sone is routed to the correct staff member.
+2. Allow an adequate amount of time for us to assess the problem and resolve it. We first determine if the problems are connected, adding extra time onto finding the roots themselves.
+3. Call instead of emailing. This is so we can get a concise reading on all concerns quickly and ask follow-up questions on the spot.
