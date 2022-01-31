@@ -46,7 +46,7 @@ Click on a specific Call ID to view details and run call tools.
 * **Class5**: If the Class5 system is used, there will be some additional information such as Request Parameters. 
 * **Refresh**: For Live calls, use the **`Refresh`** button to reload the logs to show the most recent changes. This is necessary as some of the data must be processed through CDR before it will be displayed. 
 
-!!!"More on Call-IDs"
+!!! Tip "More on Call-IDs"
     See [**Call-ID**](/troubleshooting/callid) for further information and troubleshoooting.
 
 ### SIP Traces
