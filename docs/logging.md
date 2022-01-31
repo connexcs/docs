@@ -1,7 +1,7 @@
 # Logging
 **:material-menu-right: Logging**
 
-**Logging** is used to check real-time call attempts, SIP traces, routing status, and to simulate a call. As soon as a call hits the ConnexCS system, it will display in the Logging area. Most issue debugging occurs in the Logging section. 
+The **Logging** function checks real-time call attempts, SIP traces, routing status, and to simulate a call. As soon as a call hits the ConnexCS system, it will display in the Logging area. Most issue debugging occurs in the Logging section. 
 
 ## Register Logging
 To view calls that are having issues registering, click **`Register Logging`**, then click on a specific Call ID to view [**Call Details**](https://docs.connexcs.com/logging/#call-id-details) and [**SIP Trace**](https://docs.connexcs.com/logging/#sip-traces).
@@ -27,7 +27,7 @@ Click **`Simulate`** either from the **Logging** screen or from within a specifi
 
 Click **`Simulate`**. 
 
-The simulation call result will appear in logging. The Call ID will be prepended with a **`SIM`** tag. Click the Call ID to view the call's routing status.
+The simulation call result will appear in logging. The Call ID will begin with a **`SIM`** tag. Click the Call ID to view the call's routing status.
 
 !!! info "Testing a fixed issue"
     After you have fixed a routing issue with a specific call, you can go into the Call ID and run the Simulate tool to make sure any routing issues are resolved and now pass. 
@@ -47,7 +47,7 @@ Click on a specific Call ID to view details and run call tools.
 * **Refresh**: For Live calls, use the **`Refresh`** button to reload the logs to show the most recent changes. This is necessary as some of the data must be processed through CDR before it will be displayed. 
 
 !!! Tip "More on Call-IDs"
-    See [**Call-ID**](/guides/howto/callid) for further information and troubleshoooting.
+    See [**Call-ID**](/guides/howto/callid) for further information and troubleshooting.
 
 ### SIP Traces
 **SIP Tracing** is a diagnostic tool for phone systems using SIP (Session Initiation Protocol) for interactions across trunks and between endpoints. Traces give detailed information about calls and call attempts when debugging and troubleshooting. Since SIP protocol is used for call setup, maintenance, and tear-down, this tool is typically only used for call connection issues. Call quality issues are usually identified using other methods.
