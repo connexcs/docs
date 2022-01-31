@@ -47,7 +47,7 @@ Click on a specific Call ID to view details and run call tools.
 * **Refresh**: For Live calls, use the **`Refresh`** button to reload the logs to show the most recent changes. This is necessary as some of the data must be processed through CDR before it will be displayed. 
 
 !!! Tip "More on Call-IDs"
-    See [**Call-ID**](/troubleshooting/howto/callid) for further information and troubleshoooting.
+    See [**Call-ID**](/guides/howto/callid) for further information and troubleshoooting.
 
 ### SIP Traces
 **SIP Tracing** is a diagnostic tool for phone systems using SIP (Session Initiation Protocol) for interactions across trunks and between endpoints. Traces give detailed information about calls and call attempts when debugging and troubleshooting. Since SIP protocol is used for call setup, maintenance, and tear-down, this tool is typically only used for call connection issues. Call quality issues are usually identified using other methods.
