@@ -1,12 +1,15 @@
 
 # What is a Call-ID?
-A **Call-ID** is a unique identifier that is automatically generated for every call. It is assigned at the origination point when the call is placed and is present in *every* SIP packet which is sent or received. ConnexCS use Topology Hiding which means that the call going out will be different than the call coming in.
+A **Call-ID** is a unique identifier that is automatically generated for every call. It is assigned at the origination point when the call is placed and is present in *every* SIP packet which is sent or received. 
+
+!!! note "Topology Hiding"
+    ConnexCS use **Topology Hiding** which obscures specific infrastructure information for additional security. This essentially means that the Call-ID going out will be different than the Call-ID coming in.
 
 ## Why is the Call-ID important?
-If an issue is reported with a phone number, we may have many examples over different days that we will need to review. We would either have to guess the problem or ask for further clarification. A Call-ID is succinct piece of information with no abmguity. If we have the Call-ID to look for, we can identify the exact call that had the issue. 
+If an issue is reported with a phone number, we may have many examples over several days to review. We would either have to guess at the cause or ask for further clarification. A Call-ID is succinct piece of information with no abmguity. If we have the Call-ID to look for, we can identify the exact call that had the issue and troubleshoot from there. 
 
-## How to find a Call-ID?
-Anyone of these methods may reveal the Call-ID, it is not necessary to perform all of them. 
+## Locating a Call-ID
+The Call-ID may be found using a single one of these methods, it is not necessary to perform all of them. 
 
 1. Since the Call-ID is set at the origination point, it may be possible to extract this from the log file of the hardphone / softphone / dialler. Sometimes it may require more verbose logging to be enabled on the device.
 2. Tools such as `wireshark`, `tshark`, `tcpdump` or `sngrep` can be used to inspect traffic in transit and extract the Call-ID.
