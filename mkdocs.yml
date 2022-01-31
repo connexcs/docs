@@ -163,6 +163,7 @@ pages:
             - Capacity Limiting: limiting-cps.md
             - Feature List: feature-list.md
         - How To:
+            - Locate Call-ID: guides/howto/callid.md
             - Resrict Users to Specific Countries/Routing: guides/howto/restrict-calling-plan.md
         - Monitoring: guides/monitoring.md
         - SIP Devices: sip-devices.md
@@ -171,6 +172,7 @@ pages:
             - Call Connection/Signaling Issues: guides/tshoot-signal.md
             - Call Quality/Media Issues: guides/tshoot-media.md
             - Circuit Test: circuit-test.md
+            - Debugging: guides/debugging.md
             - Logging: logging.md
         - Video Guide: video-guide.md
 

@@ -30,12 +30,11 @@ The **Portal** lets you add a domains and sub-domain to the Control Panel, which
 *Click each tab to view configuration details*
 
 === "Basic"
-
     * **Domain** - The URL your customers use to access their portal. 
     * **Brand Name** - The brand which will be displayed on the portal to your customers.
     * **Customer Signup** - Allow customers to sign up independently.
     * **Carrier Signup** - Allow carriers to sign up independently.
-    * **Template Customer** - Select a pre-configured template customer on your account with preset with default values which will be set when a customer creates their account independently via the portal. Available values for this template are:
+    * **Template Customer** - Select a pre-configured template customer on your account with preset with default values which will be set when a customer creates their account independently via the portal (See "Template Customer example" below). Available values for this template are:
         * Customer [Fields in the customer itself, such as debit limit]
         * Routes
         * Payments
@@ -43,16 +42,9 @@ The **Portal** lets you add a domains and sub-domain to the Control Panel, which
         * Packages
         * Contracts
     * **Currencies** - Choose what currencies are available for your customers to choose when they signup.
-    
-    !!! example "Template Customer example"
-	You want to give all of your customers $5.00 credit. Create an account from: Management :material-menu-right: Customer. Under Payments for that account, add $5.00. When a new customer creates an account from the Customer Portal, they will see a payment created for $5.00 at the same the time account was created.
 
 === "User Access Area"
-
-    Select which sections/features are displayed to your customers.
-
-    !!! note "Override Options"
-    To override these options for specific customers, go to **Management :material-menu-right: Customer :material-menu-right: [Choose Customer] :material-menu-right: Edit :material-menu-right: Config :material-menu-right: Portal Access**. Select items from the "Show" heading to force the feature to be displayed, or from the Hide options to stop it from being shown.
+    Select which sections/features are displayed to your customers (see "Override Options" below).
 
 === "Breakout"
 
@@ -87,7 +79,15 @@ The **Portal** lets you add a domains and sub-domain to the Control Panel, which
 
     * **Upload Logo** - Upload your logo in `jpg`, `png` or `gif` format (max 350px wide) to **Management :material-menu-right: File :material-menu-right: Public**. A list of available files will now appear in the "Upload Logo" Box.
     * **Footer** - Enter text to display at the bottom of the page, for example _Copyright My Company_
-    
+
+
+!!! example "Template Customer example"
+    You want to give all of your customers $5.00 credit. Create an account from: Management :material-menu-right: Customer. Under Payments for that account, add $5.00. When a new customer creates an account from the Customer Portal, they will see a payment created for $5.00 at the same the time account was created.
+	
+!!! note "Override Options"
+    To override these options for specific customers, go to **Management :material-menu-right: Customer :material-menu-right: [Choose Customer] :material-menu-right: Edit :material-menu-right: Config :material-menu-right: Portal Access**. Select items from the "Show" heading to force the feature to be displayed, or from the Hide options to stop it from being shown.	
+
+
 ## User Access
 To configure Users to access the Customer Portal, follow the steps to [**Add Contact**](https://docs.connexcs.com/customer/main/#contacts). Any Contact configured on the account will be able to login to the Customer Portal. 
 
