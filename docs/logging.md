@@ -36,7 +36,7 @@ The simulation call result will appear in logging. The Call ID will be prepended
 
 You can search for calls by phone number, Call ID, or IP address, by entering one of these attributes into the text box at the top-right of the Logging page and clicking the **`Search `** button.
 
-## Call ID Details
+### Call ID Details
 Click on a specific Call ID to view details and run call tools.
 
 * **Call Details**: The initial screen shows current details which include Routing Status, Authentication, Induced PDD, RTP, Routing Engine ID, DTMF, as well as several other pieces of information. At the bottom, view the Providers, Billing details and RTP information such as Jitter and Packet Loss. 
