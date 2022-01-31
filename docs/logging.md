@@ -1,5 +1,5 @@
 # Logging
-**Logging**
+**:material-menu-right: Logging**
 
 **Logging** is used to check real-time call attempts, SIP traces, routing status, and to simulate a call. As soon as a call hits the ConnexCS system, it will display in the Logging area. Most issue debugging occurs in the Logging section. 
 
@@ -37,7 +37,7 @@ The simulation call result will appear in logging. The Call ID will be prepended
 You can search for calls by phone number, Call ID, or IP address, by entering one of these attributes into the text box at the top-right of the Logging page and clicking the **`Search `** button.
 
 ### Call ID Details
-Click on a specific Call ID to view details and run call tools.
+Click on a specific Call ID to view details and run call tools. 
 
 * **Call Details**: The initial screen shows current details which include Routing Status, Authentication, Induced PDD, RTP, Routing Engine ID, DTMF, as well as several other pieces of information. At the bottom, view the Providers, Billing details and RTP information such as Jitter and Packet Loss. 
 * **Raw Data**: Underlying data that populates for the call. 
@@ -45,6 +45,9 @@ Click on a specific Call ID to view details and run call tools.
 * **Simulate**: See details above for **Simulating Calls**. 
 * **Class5**: If the Class5 system is used, there will be some additional information such as Request Parameters. 
 * **Refresh**: For Live calls, use the **`Refresh`** button to reload the logs to show the most recent changes. This is necessary as some of the data must be processed through CDR before it will be displayed. 
+
+!!!"More on Call-IDs"
+    See [**Call-ID**](/troubleshooting/callid) for further information and troubleshoooting.
 
 ### SIP Traces
 **SIP Tracing** is a diagnostic tool for phone systems using SIP (Session Initiation Protocol) for interactions across trunks and between endpoints. Traces give detailed information about calls and call attempts when debugging and troubleshooting. Since SIP protocol is used for call setup, maintenance, and tear-down, this tool is typically only used for call connection issues. Call quality issues are usually identified using other methods.
