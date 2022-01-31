@@ -13,7 +13,7 @@ The Call-ID may be found using a single one of these methods, it is not necessar
 
 1. Since the Call-ID is set at the origination point, it may be possible to extract this from the log file of the hardphone / softphone / dialler. Sometimes it may require more verbose logging to be enabled on the device.
 2. Tools such as `wireshark`, `tshark`, `tcpdump` or `sngrep` can be used to inspect traffic in transit and extract the Call-ID.
-3. You can use our **Logging** page to [**Search the logs**]](/logging/#searching-the-logs) for a call, and then find the Call-ID. You will need the destination number, origination number and/or date/time to locate the correct call. If the call can not be found in the logging page, there are just a few problems that can be causing this:
+3. You can use our **Logging** page to [**Search the logs**](/logging/#searching-the-logs) for a call, and then find the Call-ID. You will need the destination number, origination number and/or date/time to locate the correct call. If the call can not be found in the logging page, there are just a few problems that can be causing this:
    1. The IP address exists in our firewall. You can check this from Setup > Advanced > Firewall.
    2. The call is not reaching our platform. We would request you to check the sender first. If the sender is adamant that the call is being sent correctly we would like evidence of this such as a pcap (See Point 1).
    3. If both of the first two are ok, then we could assume that there is a platform fault. However, unless we have an active known problem on the ConnexCS platform (which would affect all customers), the two above options must be ruled out first.
