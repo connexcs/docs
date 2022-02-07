@@ -185,16 +185,16 @@ To change Revision status:
 * **Delayed Bye Customer Charge**: see [**Delayed Bye**](/provider-ratecard/#delayed-bye) below
 
 #### Delayed Bye
+**Delayed Bye** allows a call to be extended by delaying the release of the call. This is helpful in situations where a contract with a carrier specifies a minimum duration call but you have customers that routinely do very short duration calls. 
 
-Delayed Bye allows a call to be extended by delaying the release of the call. This is helpful in situations where a contract with a carrier specifies a minimum duration call but you have customers that routinely do very short duration calls. This feature should only be used along with full disclosure to both the customer as they will be billed for additional duration. Failing to notify the customer of this is considered Late Disconnection FAS (False Answer Supervision), ConnexCS does not endorce fraudulent activities.
-
-**This feature bends the rules, if you dont use realistic figures or understand how this is working you will get unexpected results, use with caution**
+!!! warning "Use with caution"
+    This feature should only be used along with full disclosure to both the customer as they will be billed for additional duration. Failing to notify the customer of this is considered Late Disconnection FAS (False Answer Supervision), ConnexCS does not endorce fraudulent activities. **This feature bends the rules, if you dont use realistic figures or understand how this is working you will get unexpected results, use with caution.**
 
 There are a number of considerations when using Delayed Bye.
 
 * Only works for termination calls.
 * Only BYE messages from Downstream will be delayed.
-* When a message is delayed, a 200OK will be sent Downstream instantly informing that the call has been ended.
+* When a message is delayed, a `200OK` will be sent Downstream instantly informing that the call has been ended.
 * We only allow extending a call a maximum of 30 seconds.
 * If a Downstream BYE message is delayed and an Upstream BYE interupts:
   * We will instantly inform the upstream carrier that the call has been ended.
@@ -204,7 +204,7 @@ There are a number of considerations when using Delayed Bye.
 
 * **Delayed Bye**: Sets how many seconds the call will be extended by.
 * **Delayed Bye MCD**: Sets a minimum duration for a delta to be calculated. For example if you set the Delayed BYE MCD to 10 seconds and the call last 8 seconds the call will be extended by 2 seconds.
-* **Delayed Bye Customer Charge**: Determines if the customer should be charged for the extended call.0
+* **Delayed Bye Customer Charge**: Determines if the customer should be charged for the extended call.
 
 !!! note "Incorrect Billing"
     Any attempt at artificially adjusting packets may cause billing problems. There are limitations within the protocol, the real world and our implementation. You must understand what you are doing before using this feature.
