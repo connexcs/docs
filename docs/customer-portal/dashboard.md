@@ -30,4 +30,4 @@ There are four default **Graphs** which display current Customer account usage.
     All graphs are managed using the [**Analytics**](/developers/analytics/) section.
 
 
-[cp-dash]: /customer-portal/img/cp-dash.md "Top of Page"
+[cp-dash]: /customer-portal/img/cp-dash.png "Top of Page"
