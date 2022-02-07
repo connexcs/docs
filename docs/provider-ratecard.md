@@ -9,6 +9,9 @@
 
 **Delete** Delete a Provider rate card by selecting its name from the list and then clicking the trash bin icon. 
 
+!!! warning "Before deleting a Provider Rate Card"
+    Before deleting a Provider Rate Card, we need to delete the [**Active Revision**](/provider-ratecard/#revisions-tab).
+
 ## Overview
 **Name** Click the name of the provider to see individual rate card and management options. (If a Rate Card name shows a yellow warning or red alert, these will indicate details about the card. It may be stale or have some sort of error.)
 
@@ -155,13 +158,28 @@ To change Revision status:
 
 * **Duration Rounding**: The same rounding options but for the call duration.
 * **Public Options**: Choose what can be done with the card information: viewed via HTML (on a web page), download CSV (a spreadsheet), and whether to list the rate card in the customer portal (customer can view cards not currently on their account and select them for use). (Note: API Querying is no longer available.)
-* **CLI Restrict**: Enable Call Line Identification (CLI) restriction(s) using regular expressions to set valid number formats. See [**CLI**](https://docs.connexcs.com/customer/cli/) for additional details.
+* **CLI Restrict**: Enable Call Line Identification (CLI) restriction(s) using regular expressions to set valid number formats. See [**CLI**](/customer/cli/) for additional details.
+* **PAID Restrict**: Enable Pre-Asserted-Identity (PAID) restriction(s) using regular expressions to set valid number formats. See [**Filter PAID by Number or Pattern**](/customer/cli/#filter-paid-by-number-or-pattern) for additional details.
 * **SMS URL**: *not in use*
 * **Default RTP**: If set, and the customer adds the route themselves, then this will be used. Otherwise, this is an unused setting. 
 * **Capped Rate**: Block calls above the set price. 
+* **Force RTP**:
+
+    |Option|Explanation|
+    | --- | --- |
+    |Disabled|Selects the least expensive path between your customer and provider.|
+    |Direct RTP (No Proxy)|Bypass ConnexCS, so media flows directly between the customer and carrier.|
+    |Closest (To ConnexCS) Server|Media will use the server geographically closest to ConnexCS|
+    |Closest (Elastic) Server||
+
+* **Block Destination Type**: *pending*
 * **Block Connect Cost**: Disable/enable the per call connection cost across the carrier. 
+* **P-Time**: *pending*
+* **Delayed Bye**: *pending*
 * **Flow Speed (CPS)**: Set the number of Calls Per Second are allowed on this card.
+* **Delayed Bye MCD**: *pending*
 * **Channels**: Set the number of concurrent active calls are allowed on the card. 
+* **Delayed Bye Customer Change**: *pending*
 
 #### Delayed Bye
 
