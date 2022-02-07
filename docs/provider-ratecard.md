@@ -172,14 +172,17 @@ To change Revision status:
     |Closest (To ConnexCS) Server|Media will use the server geographically closest to ConnexCS|
     |Closest (Elastic) Server||
 
-* **Block Destination Type**: *pending*
+* **Block Destination Type**: Block calls one or more types of destination (ex: Mobile, Paging, or Satellite).
 * **Block Connect Cost**: Disable/enable the per call connection cost across the carrier. 
-* **P-Time**: *pending*
-* **Delayed Bye**: *pending*
+* **P-Time**: Packetization time, or P-Time, refers to the length of an SDP packet, based on the media time in milliseconds. 
+   * Default- ?
+   * 20- 20 ms
+   * 30- 30 ms
+* **Delayed Bye**: see [**Delayed Bye**](/provider-ratecard/#delayed-bye) below
 * **Flow Speed (CPS)**: Set the number of Calls Per Second are allowed on this card.
-* **Delayed Bye MCD**: *pending*
+* **Delayed Bye MCD**: see [**Delayed Bye**](/provider-ratecard/#delayed-bye) below
 * **Channels**: Set the number of concurrent active calls are allowed on the card. 
-* **Delayed Bye Customer Change**: *pending*
+* **Delayed Bye Customer Charge**: see [**Delayed Bye**](/provider-ratecard/#delayed-bye) below
 
 #### Delayed Bye
 
