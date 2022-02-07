@@ -32,6 +32,16 @@ These terms are used to describe the direction of traffic relative to a switch.
 
 Far End > PSTN > Carrier > ConnexCS switch > Routing Eingine > Authorization > Ingress Routing >
 
+```mermaid
+graph LR
+A(Far End) --> B[PSTN]
+B --> C[Carrier]
+C --> D[ConnexCS Switch]
+D --> E[Routing Engine]
+E --> F(Authoraization)
+F --> G(Ingress Routing)
+```
+
 + A call bound for termination with one of our customers comes into the routing engine, passes authorisation, then goes through **Ingress Routing**. This determines the call profile and where to send it. 
 + !!! example "Ingress Example"
     When a customer's switch has a DID pointing to it, it would be considered **Ingress** as traffic is coming into the switch. 
