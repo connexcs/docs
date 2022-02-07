@@ -25,9 +25,7 @@ E --> F(Carrier IPS)
 ## Routing Engine
 The **Routing Engine** receives all calls when they enter the system then processes them based on the direction the call is flowing. 
 
-### Ingress and Egress
-These terms are used to describe the direction of traffic relative to a switch.
-
+### Ingress
 **Ingress** refers to inbound calls destined to terminate with one of our customers (UA, phone, DID, etc). A call bound for termination with one of our customers comes into the routing engine, passes authorisation, then goes through **Ingress Routing**. This determines the call profile and where to send it. 
 
 ```mermaid
@@ -43,6 +41,7 @@ F --> G(Ingress Routing)
 !!! example "Ingress Example"
     When a customer's switch has a DID pointing to it, it would be considered **Ingress** as traffic is coming into the switch. 
 
+### Egress
 **Egress** refers to outbound calls. There is no **Egress Routing** section, per se. The Egress routing is built into the Customer Rate Card which contains 1 or more Carriers and, optionally, a routing strategy (such as Default LCR).
 
 UA -> Customer > Customer Rate Card > Carrier Rate Card -> Carrier -> PSTN -> Far-End
