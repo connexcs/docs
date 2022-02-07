@@ -28,9 +28,7 @@ The **Routing Engine** receives all calls when they enter the system then proces
 ### Ingress and Egress
 These terms are used to describe the direction of traffic relative to a switch.
 
-**Ingress** refers to inbound calls destined to terminate with one of our customers (UA, phone, DID, etc). 
-
-Far End > PSTN > Carrier > ConnexCS switch > Routing Eingine > Authorization > Ingress Routing >
+**Ingress** refers to inbound calls destined to terminate with one of our customers (UA, phone, DID, etc). A call bound for termination with one of our customers comes into the routing engine, passes authorisation, then goes through **Ingress Routing**. This determines the call profile and where to send it. 
 
 ```mermaid
 graph LR
@@ -42,13 +40,22 @@ E --> F(Authoraization)
 F --> G(Ingress Routing)
 ```
 
-+ A call bound for termination with one of our customers comes into the routing engine, passes authorisation, then goes through **Ingress Routing**. This determines the call profile and where to send it. 
-+ !!! example "Ingress Example"
+!!! example "Ingress Example"
     When a customer's switch has a DID pointing to it, it would be considered **Ingress** as traffic is coming into the switch. 
 
 **Egress** refers to outbound calls. 
 
 UA -> Customer > Customer Rate Card > Carrier Rate Card -> Carrier -> PSTN -> Far-End
+
+```mermaid
+graph LR
+A(UA) --> B[Customer]
+B --> C[Customer Rate Card]
+C --> D[Carrier Rate Card]
+D --> E[Carrier]
+E --> F(PSTN)
+F --> G(Far-End)
+```
 
 !!! tip "Egress Example"
     When you add a customer's switch that will send traffic to terminate with a carrier, the customer's switch would be considered **Egress** as it is sending calls out. 
