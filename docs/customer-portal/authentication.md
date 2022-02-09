@@ -21,7 +21,7 @@ To enable, click the **:material-plus:** next to IP Authentication:
     + **Channels**: Set the maximum number of concurrent calls for this switch. 
     + **Flow Speed**: Set the Calls Per Second (CPS) (0 = unlimited calls).   
     
-![alt text][cp-ipauth-basic]
+    ![alt text][cp-ipauth-basic]
     
 === "Advanced"
 
@@ -93,8 +93,8 @@ Click the SIP Username, then replace the password and click **`Save`**.
 
 
 
-[cp-ipauth-basic]: /customerportal/img/cp-ipauth-basic.png "Edit IP Auth Basic"
-[407-trace]: /customerportal/img/407-trace.png "SIP Trace Error 407"
-[cp-sipauth]: /customerportal/img/cp-sipauth.png "SIP Auth"
+[cp-ipauth-basic]: /customer-portal/img/cp-ipauth-basic.png "Edit IP Auth Basic"
+[407-trace]: /customer-portal/img/407-trace.png "SIP Trace Error 407"
+[cp-sipauth]: /customer-portal/img/cp-sipauth.png "SIP Auth"
 
 
