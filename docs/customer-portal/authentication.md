@@ -2,7 +2,7 @@
 Under the **Auth** tab, configure IP or SIP (Username/Password) Authentication. 
 
 ## Delete IP or SIP User
-To delete an IP or SIP User Authentication, check the box next to the IP Address or User Name, then click the Trash Can icon for that section. 
+To delete an IP or SIP User Authentication, check the box next to the IP Address or Username, then click the Trash Can icon for that section. 
 
 ## IP Authentication
 When you enable **IP Authentication**, you associate the IP of a customer switch to their account. This add a layer of security by ensuring the calls are coming from a trusted source. 
@@ -21,7 +21,7 @@ To enable, click the **:material-plus:** next to IP Authentication:
     + **Channels**: Set the maximum number of concurrent calls for this switch. 
     + **Flow Speed**: Set the Calls Per Second (CPS) (0 = unlimited calls).   
     
-        ![alt text][cp-ipauth-basic]
+![alt text][cp-ipauth-basic]
     
 === "Advanced"
 
@@ -52,7 +52,7 @@ To enable, click the **:material-plus:** next to IP Authentication:
 ___    
 
 ### IP Authentication Audit Log
-After IP Authentication has been setup, click on the IP to view configuration. At the top of the Authentication page you can click "View Audit Log" to view changes specific to these settings. 
+After IP Authentication has been setup, click on the IP to view configuration. At the top of the Authentication pag, select "View Audit Log" to view changes specific to these settings. 
 
 ## SIP User Authentication
 When **SIP Authentication** is enabled, ConnexCS will reject the initial SIP INVITE with a "407 Authentication Required". This message includes a 'nonce' (a uniquely randomly generated number, which has been hashed). Your switch will send appropriate authentication information to ConnexCS, which will connect the call. 
@@ -64,26 +64,26 @@ Generic SIP Trace showing the Challenge Response:
 ### Enable SIP User Authentication 
 To enable, click the **:material-plus:** next to SIP User Authentication:
 
-    + **Username**: This will be the Username used for SIP authentication (must match configuration on your UAC). 
-    + **Password**: Must match configuration on the your UAC.
-    + **Channels, Flow Speed, Bandwidth**; Do NOT set use these fields. 
-    + **Protocol**: Select the protocol for SIP (call signaling) RTP (transport/audio). 
++ **Username**: This will be the Username used for SIP authentication (must match configuration on your UAC). 
++ **Password**: Must match configuration on your UAC.
++ **Channels, Flow Speed, Bandwidth**; Do NOT set use these fields. 
++ **Protocol**: Select the protocol for SIP (call signaling) RTP (transport/audio). 
     
-        :material-menu-right: **`UDP`**: SIP and RTP are unencrypted and transported over UDP.
+    :material-menu-right: **`UDP`**: SIP and RTP are unencrypted and transported over UDP.
         
-        :material-menu-right: **`TCP`**: SIP is sent over TCP, RTP over UDP. 
+    :material-menu-right: **`TCP`**: SIP is sent over TCP, RTP over UDP. 
         
-        :material-menu-right: **`TLS`**: SIP is sent over TLS (TCP), RTP over UDP. 
+    :material-menu-right: **`TLS`**: SIP is sent over TLS (TCP), RTP over UDP. 
         
-        :material-menu-right: **`TLS & SRTP`**: SIP is sent over TLS (over TCP), RTP is encrypted with SRTP.
+    :material-menu-right: **`TLS & SRTP`**: SIP is sent over TLS (over TCP), RTP is encrypted with SRTP.
         
-        :material-menu-right: **`SMPP`**: SMPP, for SMS, is not currently supported.
+    :material-menu-right: **`SMPP`**: SMPP, for SMS, is not currently supported.
 	
-    + **Dial Pattern**: Default = E164. The default selection is the industry standard.
-    + **Codecs**: All Codecs are supported for the SIP user unless specifically set as "Restricted" here.
-    + **IP Whitelist**: Enter specific IPs, or use CIDR notation to specify an entire subnet. 
++ **Dial Pattern**: Default = E164. The default selection is the industry standard.
++ **Codecs**: All Codecs are supported for the SIP user unless specifically set as "Restricted" here.
++ **IP Whitelist**: Enter specific IPs, or use CIDR notation to specify an entire subnet. 
 
-         ![alt text][cp-sipauth]
+![alt text][cp-sipauth]
      
 
 
@@ -93,7 +93,7 @@ Click the SIP Username, then replace the password and click **`Save`**.
 
 
 
-[cpipauth-basic]: /customerportal/img/cp-ipauth-basic.png "Edit IP Auth Basic"
+[cp-ipauth-basic]: /customerportal/img/cp-ipauth-basic.png "Edit IP Auth Basic"
 [407-trace]: /customerportal/img/407-trace.png "SIP Trace Error 407"
 [cp-sipauth]: /customerportal/img/cp-sipauth.png "SIP Auth"
 
