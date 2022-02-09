@@ -1,9 +1,6 @@
 # Auth
 Under the **Auth** tab, configure IP or SIP (Username/Password) Authentication. 
 
-## Delete IP or SIP User
-To delete an IP or SIP User Authentication, check the box next to the IP Address or Username, then click the Trash Can icon for that section. 
-
 ## IP Authentication
 When you enable **IP Authentication**, you associate the IP of a customer switch to their account. This add a layer of security by ensuring the calls are coming from a trusted source. 
 
@@ -90,7 +87,8 @@ To enable, click the **:material-plus:** next to SIP User Authentication:
 ### Reset SIP Password
 Click the SIP Username, then replace the password and click **`Save`**.   
 
-
+## Delete IP or SIP User
+To delete an IP or SIP User Authentication, check the box next to the IP Address or Username, then click the Trash Can icon for that section. 
 
 
 [cp-ipauth-basic]: /customer-portal/img/cp-ipauth-basic.png "Edit IP Auth Basic"
