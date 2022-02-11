@@ -190,7 +190,7 @@ To change Revision status:
 !!! warning "Use with caution"
     This feature should only be used along with full disclosure to both the customer as they will be billed for additional duration. Failing to notify the customer of this is considered Late Disconnection FAS (False Answer Supervision), ConnexCS does not endorce fraudulent activities. **This feature bends the rules, if you dont use realistic figures or understand how this is working you will get unexpected results, use with caution.**
 
-There are a number of considerations when using Delayed Bye.
+There are a number of considerations when using **Delayed Bye**.
 
 * Only works for termination calls.
 * Only BYE messages from Downstream will be delayed.
