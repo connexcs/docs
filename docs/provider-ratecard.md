@@ -170,12 +170,12 @@ To change Revision status:
     |Disabled|Selects the least expensive path between your customer and provider.|
     |Direct RTP (No Proxy)|Bypass ConnexCS, so media flows directly between the customer and carrier.|
     |Closest (To ConnexCS) Server|Media will use the server geographically closest to ConnexCS|
-    |Closest (Elastic) Server||
+    |Closest (Elastic) Server|This will allow traffic to traverse new servers which may be deployed. Would only cause issues if the customer runs a firewall, in which case the servers would not be authorized.|
 
-* **Block Destination Type**: Block calls one or more types of destination (ex: Mobile, Paging, or Satellite).
+* **Block Destination Type**: Block calls one or more types of destination (ex: Mobile, Paging, or Satellite) using SIP Message `403 Destination Blocked'.
 * **Block Connect Cost**: Disable/enable the per call connection cost across the carrier. 
 * **P-Time**: Packetization time, or P-Time, refers to the length of an SDP packet, based on the media time in milliseconds. 
-   * Default- ?
+   * Default- Use whatever is set in the end-devices firmware (don't change what is sent)
    * 20- 20 ms
    * 30- 30 ms
 * **Delayed Bye**: see [**Delayed Bye**](/provider-ratecard/#delayed-bye) below
