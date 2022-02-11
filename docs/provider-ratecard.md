@@ -175,9 +175,9 @@ To change Revision status:
 * **Block Destination Type**: Block calls one or more types of destination (ex: Mobile, Paging, or Satellite) using SIP Message `403 Destination Blocked'.
 * **Block Connect Cost**: Disable/enable the per call connection cost across the carrier. 
 * **P-Time**: Packetization time, or P-Time, refers to the length of an SDP packet, based on the media time in milliseconds. 
-   * Default- Use whatever is set in the end-devices firmware (don't change what is sent)
-   * 20- 20 ms
-   * 30- 30 ms
+    * Default- Use whatever is set in the end-devices firmware (don't change what is sent)
+    * 20- 20 ms
+    * 30- 30 ms
 * **Delayed Bye**: see [**Delayed Bye**](/provider-ratecard/#delayed-bye) below
 * **Flow Speed (CPS)**: Set the number of Calls Per Second are allowed on this card.
 * **Delayed Bye MCD**: see [**Delayed Bye**](/provider-ratecard/#delayed-bye) below
