@@ -147,7 +147,7 @@ To change Revision status:
 
 * **Direction**: Configure the card as Termination (calling out to PSTN) or Origination (DID numbers receiving calls from PSTN). Termination is most common. 
 * **Billing Precision** - Round billing on a card to the specified decimal point (typically set to 4). 
-* **Rounding Method**: Specify how to handle the n+1 digit (e.g if your card is billed to 4 decimal places, this cares about the 5th digit). For our example: 0.1234**5** (rounded to 4 decimal places):
+* **Rounding Method**: Specify how to handle the n+1 digit (ex: if your card is billed to 4 decimal places, this cares about the 5th digit). For our example: 0.1234**5** (rounded to 4 decimal places):
  
     |Method|Explanation|
     | --- | --- |
@@ -188,7 +188,7 @@ To change Revision status:
 **Delayed Bye** allows a call to be extended by delaying the release of the call. This is helpful in situations where a contract with a carrier specifies a minimum duration call but you have customers that routinely do very short duration calls. 
 
 !!! warning "Use with caution"
-    This feature should only be used along with full disclosure to both the customer as they will be billed for additional duration. Failing to notify the customer of this is considered Late Disconnection FAS (False Answer Supervision), ConnexCS does not endorce fraudulent activities. **This feature bends the rules, if you dont use realistic figures or understand how this is working you will get unexpected results, use with caution.**
+    This feature should only be used along with full disclosure to both the customer as they will be billed for additional duration. Failing to notify the customer of this is considered Late Disconnection FAS (False Answer Supervision), ConnexCS does not endorse fraudulent activities. **This feature bends the rules, if you don't use realistic figures or understand how this is working you will get unexpected results, use with caution.**
 
 There are a number of considerations when using **Delayed Bye**.
 
@@ -197,17 +197,17 @@ There are a number of considerations when using **Delayed Bye**.
 * When a message is delayed, a `200OK` will be sent Downstream instantly informing that the call has been ended.
 * We only allow extending a call a maximum of 30 seconds.
 * If a Downstream BYE message is delayed and an Upstream BYE interupts:
-  * We will instantly inform the upstream carrier that the call has been ended.
-  * The charge recorded in the carrier CDR will be the actual call duration + Delay. It will not take into consideration the incoming Upstream BYE.
+    * We will instantly inform the upstream carrier that the call has been ended.
+    * The charge recorded in the carrier CDR will be the actual call duration + Delay. It will not take into consideration the incoming Upstream BYE.
 
 ##### Fields
 
 * **Delayed Bye**: Sets how many seconds the call will be extended by.
-* **Delayed Bye MCD**: Sets a minimum duration for a delta to be calculated. For example if you set the Delayed BYE MCD to 10 seconds and the call last 8 seconds the call will be extended by 2 seconds.
+* **Delayed Bye MCD**: Sets a minimum duration for a delta to be calculated. For example, if you set the Delayed BYE MCD to 10 seconds and the call last 8 seconds the call will be extended by 2 seconds.
 * **Delayed Bye Customer Charge**: Determines if the customer should be charged for the extended call.
 
 !!! note "Incorrect Billing"
-    Any attempt at artificially adjusting packets may cause billing problems. There are limitations within the protocol, the real world and our implementation. You must understand what you are doing before using this feature.
+    Any attempt at artificially adjusting packets may cause billing problems. There are limitations within the protocol, the real world, and our implementation. You must understand what you are doing before using this feature.
 
 #### Notes
 Private Notes not visible to the end Customer. Not typically used on Provider Rate Cards. 
