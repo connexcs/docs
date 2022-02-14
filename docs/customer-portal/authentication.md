@@ -24,17 +24,7 @@ To enable, click the **:material-plus:** next to IP Authentication:
 
     + **Codecs**: All Codecs are supported unless specifically set as "Restricted" here. 
     + **Manufacturer and Version**: These references fields allow you to enter the switch Manufacturer and Version if desired (these fields are not functional; they are informational only).
-    + **Protocol**: Select the protocol for SIP (call signaling) RTP (transport/audio). 
-    
-        :material-menu-right: **`UDP`**: SIP and RTP are unencrypted and transported over UDP.
-        
-        :material-menu-right: **`TCP`**: SIP is sent over TCP, RTP over UDP. 
-        
-        :material-menu-right: **`TLS`**: SIP is sent over TLS (TCP), RTP over UDP. 
-        
-        :material-menu-right: **`TLS & SRTP`**: SIP is sent over TLS (over TCP), RTP is encrypted with SRTP.
-        
-        :material-menu-right: **`SMPP`**: SMPP, for SMS, is not currently supported.
+    + **Protocol**: Select **SIP (UDP)** for the protocol (**`SMPP`**: SMPP, for SMS, is not currently supported).
     + **Port**: Default = 5060. If using TLS protocol, this should be set to 5061. 
     + **Dial Pattern**: Default = E164. The default selection is the industry standard.
     + **CLI Prefix, Tech Prefix, Strip Digits**:  Do NOT Use these fields. Use the Parameter Rewrite tab to modify numbers. 
