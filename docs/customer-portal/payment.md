@@ -10,8 +10,8 @@ View a list of all the **Payments** that have been made so far.
 To add a new payment, select **`Make Payment`**
 
 1. **Pay via**: (required) 
-    + Bank Transfer: Requires the Payment Amount and Currency to be selected. This will set the Payment Status to Pending until it is processed. 
-    + Voucher: Requires the Voucher number and Currency
+    + **Bank Transfer**: Requires the Payment Amount and Currency to be selected. This will set the Payment Status to Pending until it is processed. 
+    + **Voucher**: Requires the Voucher number and Currency
 2. Click **`Pay`**.
 
    
