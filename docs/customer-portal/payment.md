@@ -7,7 +7,7 @@ View a list of all the **Payments** that have been made so far.
 + **Description**: The name of the payment. 
 
 ## Make Payment
-To add a new payment, select `**Make Payment**`
+To add a new payment, select **`Make Payment`**
 
 1. **Pay via**: (required) 
     + Bank Transfer: Requires the Payment Amount and Currency to be selected. This will set the Payment Status to Pending until it is processed. 
