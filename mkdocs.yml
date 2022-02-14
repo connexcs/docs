@@ -185,10 +185,13 @@ pages:
     - DID: customer-portal/did.md
     - CLI: customer-portal/cli.md
     - Latest Calls: customer-portal/latest-calls.md
-    - Failover: customer-portal/failover.md
+    - PBX: customer-portal/pbx.md
     - Setup: customer-portal/setup.md
     - Payment: customer-portal/payment.md
+    - Package: customer-portal/package.md
     - Routes: customer-portal/routes.md
+    - Forex Checker: customer-portal/forexchecker.md
+    - Status: customer-portal/status.md
     - Interconnect: customer-portal/interconnect.md
 
   - WebPhone: 
