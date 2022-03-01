@@ -186,7 +186,12 @@ pages:
     - DID: customer-portal/did.md
     - CLI: customer-portal/cli.md
     - Latest Calls: customer-portal/latest-calls.md
-    - PBX: customer-portal/pbx.md
+    - PBX: 
+        - Conference: customer-portal/cp-conference.md
+        - IVR: customer-portal/cp-ivr.md
+        - Group: customer-portal/cp-group.md
+        - Queue: customer-portal/cp-queue.md
+        - Audio: customer-portal/cp-audio.md
     - Setup: customer-portal/setup.md
     - Payment: customer-portal/payment.md
     - Package: customer-portal/package.md
