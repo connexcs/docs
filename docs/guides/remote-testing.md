@@ -40,18 +40,18 @@ Next, the customer will need to install Weylon on their Linux machine.
 **Install the application**
 
 
-``
+```
 wget https://app.connexcs.com/files/weylon
 
 chmod +x ./weylon
-``
+```
 
 
 **Execute the test**
 
-``
+```
 ./weylon -i ABCD
-``
+```
 
 ## View Results
 All test results will report back to your Control Panel under **Global :material-menu-right: Weylon**.
