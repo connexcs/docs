@@ -23,7 +23,7 @@ The **IVR (Interactive Voice Response)** (or Phone Tree) presents callers with a
 Click on the **IVR** Name to edit the following fields:
 
 ## Group
-A **Group** (or Call Queue) allows you to create a team of individuals to receive calls placed to a specified number or extension based on the routing strategy you configure. (Ex: Create a number that customers can call which routes them to a team of Technical Support Specialists who can fix the technical issues, or to a Sales group.)
+A **Group** allows you to create a team of individuals to receive calls placed to a specified number or extension based on the routing strategy you configure. (Ex: Create a number that customers can call which routes them to a team of Technical Support Specialists who can fix the technical issues, or to a Sales group.)
 
 + **Name**: Enter the name for the group (ex: Sale, Customer Support, Office, or Garage).
 + **Extension**: The number/extension callers useto connect to this group.
