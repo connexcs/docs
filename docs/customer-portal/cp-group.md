@@ -20,3 +20,6 @@ Click on the Group name, then click **`Edit`** to mofidy:
     ![alt text][sequential]
 
 + **Destination**: Click :material-plus: and `Edit` to enter the Destination (External number or Internal extension, SIP User, group, DID, etc.) and Ring Timeout (how long to let a call ring before moving to next group memeber).
+
+[parallel]: /customer-portal/img/parallel.png "Parallel Group"
+[sequential]: /customer-portal/img/sequential.png "Sequential Group"
