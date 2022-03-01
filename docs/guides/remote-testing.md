@@ -6,9 +6,11 @@
     Reports for data visualization  of test results are currently in development.
     
 ## Provision Test
+
 First, provision the desired test in the ConnexCS Control Panel. Go to **Global :material-menu-right: Weylon**. This will list any existing tests.
 
 **Create Test Configuration**
+
 Click the **:material-plus:** to create a new testing configuration. 
 
 + **Name**: Name the new test, ideally something descriptive so you know what it will test
@@ -16,6 +18,7 @@ Click the **:material-plus:** to create a new testing configuration.
 + **Show Output**: 
 
 **Add Criteria**
+
 Next to **Criteria**, click the **:material-plus:** to specify the test parameters
 
 + **Type**: Select to run Ping, Simulate Media, or Trace Route
@@ -39,6 +42,7 @@ Next, the customer will need to install Weylon on their Linux machine.
 
 ``
 wget https://app.connexcs.com/files/weylon
+
 chmod +x ./weylon
 ``
 
