@@ -2,6 +2,9 @@
 
 **Remote Testing** using the Weylon application allows for increased visibility into customer issues. The process consists of 3 steps.
 
+!!! note "Testing Results"
+    Reports for data visualzation of test results are currently in development.
+    
 ## Provision Test
 First, provision the desired test in the ConnexCS Control Panel. Go to **Global :material-menu-right: Weylon**. This will list any esisting applications.
 
@@ -41,7 +44,8 @@ chmod +x ./weylon
 ## View Results
 All test results will report back to your Control Panel under **Global :material-menu-right: Weylon**.
 
-!!! note "Testing Results"
-    Reports for data visualzation of test results are currently in development. 
+   
+!!! tip "Help with interpreting test results"
+    If you need help reviewing the report data from these test, please reach out to [**ConnexCS Customer Support**](/reporting-problems/) for assistance. 
     
     
