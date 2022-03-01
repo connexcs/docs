@@ -39,7 +39,6 @@ Next, the customer will need to install Weylon on their Linux machine.
 
 ``
 wget https://app.connexcs.com/files/weylon
-
 chmod +x ./weylon
 ``
 
