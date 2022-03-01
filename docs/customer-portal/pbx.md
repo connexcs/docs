@@ -33,18 +33,25 @@ A **Group** (or Call Queue) allows you to create a team of individuals to receiv
 ### Available Group types
 Each Group is configured with a routing strategy which determines how calls will be routed to the members of the group:
 
-1. **Parallel**: Rings a call to all members of the group simultaneously. The members' extensions ring for the length of time you specify. You can assign unique timeout timers for individual members. Note: this rings all members, even if they are already on a call.
+1. **Parallel**: Rings a call to all members of the group simultaneously. The members' extensions ring for the length of time specified. Individual members can have unique timeout timers. Note: this rings all members, even if they are already on a call.
 
-![alt text][parallel]
+    ![alt text][parallel]
 
-3. **Sequential**: Routes a call in a sequential order based on the order under Group Members. By default, a call is routed to the member with the highest value of the extension number (for example, 5021).
+2. **Sequential**: Routes a call in a sequential order based on the order under Group Members. By default, a call is routed to the member with the highest value of the extension number (for example, 5021).
     + If the member is busy on another call or does not receive the call for a specific time duration, the call is routed to the member with the second highest value of the extension number (for example, 4097).
     + If the member with second highest extension number does not respond, the call is routed to the extension with the third highest value (for example, 4095). This process continues until a member receives the call.
 
-![alt text][sequential]
+    ![alt text][sequential]
 
 ## Queue
-The **Queue** 
+The **Queue** places the caller in a call queue before routing the call to the next available member (whoever has been waiting longest to receive a call). If you use this routing strategy:
+
++ You can upload audio files that greet the caller and play music when the caller or the member puts the call on hold.
++ You don't need to specify the members of a group. Individuals who want to join the group must dial a specific extension number from their phone. To leave the group, they dial another number from their phone. So, a group that uses a Queue routing strategy does not necessarily have a fixed number of members. 
+
+    ![alt text][queue]
+
+
 
 ## Audio
 
@@ -56,3 +63,4 @@ Phonebook allows all users to receive the same list of numbers within the custom
 
 [parallel]: /customer-portal/img/parallel.png "Parallel Group"
 [sequential]: /customer-portal/img/sequential.png "Sequential Group"
+[queue]: /customer-portal/img/queue.png "Call Queue"
