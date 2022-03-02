@@ -1,15 +1,15 @@
 # Contracts
 View all **Contracts** associated with your account. 
 
-+**Name**: Name of the assigned Contract.
-+**Created On**: Date the Contract was assigned to your account. 
-+**Approved On**: 
++ **Name**: Name of the assigned Contract.
++ **Created On**: Date the Contract was assigned to your account. 
++ **Approved On**: 
     + A date indicates the date the Contract was approved. 
     + Unapproved Contracts will not show a date.  
-+**Approved By**: 
++ **Approved By**: 
     + A green check and name indicate the Contract has been approved. The name is the approving party. 
     + Unapproved Contracts will show a blue `Approve` button. 
-+**Grace Period**: 
++ **Grace Period**: 
     + Displays the amount of time left on any unapproved contracts
     + If this is blank, there is no associated grace period.
     
