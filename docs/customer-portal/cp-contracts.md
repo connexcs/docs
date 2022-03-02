@@ -19,7 +19,7 @@ View all **Contracts** associated with your account.
 !!! warning "Grace Period"
     If a Grace Period elapses and the Contract is not signed, there will likely be impacts to services. 
     
-## View and Approve Assigned Contracts
+## View and Approve Contracts
 There are 2 places to view and approve assigned **Contracts**.
 
 1. Click on the Contract `Name`
