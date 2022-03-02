@@ -1,3 +1,2 @@
-!!! bug "Documentation is being written."
-    Thank you for visiting this section. We are busy updating this section of our documentation, please check back soon.
-	If you have any questions please come to our website and have a chat with us.
+# Latest Calls
+The **Latest Calls** tab provides records of incoming and outgoing calls. From here, you can view recent calls and their SIP traces, and run simulated calls. 
