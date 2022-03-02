@@ -29,4 +29,4 @@ Both actions will bring up the contract screen. This will display the text of th
 
 If a contract has been approved, only the text will be available on this screen.
 
-[contracts]: /img/cp-contracts.png
+[contracts]: img/cp-contracts.png
