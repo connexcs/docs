@@ -1,14 +1,15 @@
 # Contracts
 View all **Contracts** associated with your account. 
 
+!!! tip "Unapproved Contracts"
+    If Contracts in the left menu displays a red number, it indicates any unapproved Contracts.
+    ![alt-text][contracts]
+
 + **Name**: Name of the assigned Contract.
 + **Created On**: Date the Contract was assigned to your account. 
 + **Approved On**: 
     + A date indicates the date the Contract was approved. 
     + Unapproved Contracts will not show a date. 
-
-&emsp;![alt-text][contracts]
-
 + **Approved By**: 
     + A green check and name indicate the Contract has been approved. The name is the approving party. 
     + Unapproved Contracts will show a blue `Approve` button. 
