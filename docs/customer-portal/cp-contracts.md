@@ -3,6 +3,7 @@ View all **Contracts** associated with your account.
 
 !!! tip "Unapproved Contracts"
     If Contracts in the left menu displays a red number, it indicates any unapproved Contracts.
+    
     ![alt-text][contracts]
 
 + **Name**: Name of the assigned Contract.
