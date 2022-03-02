@@ -5,7 +5,10 @@ View all **Contracts** associated with your account.
 + **Created On**: Date the Contract was assigned to your account. 
 + **Approved On**: 
     + A date indicates the date the Contract was approved. 
-    + Unapproved Contracts will not show a date.  
+    + Unapproved Contracts will not show a date. 
+
+![alt-text][contracts]
+
 + **Approved By**: 
     + A green check and name indicate the Contract has been approved. The name is the approving party. 
     + Unapproved Contracts will show a blue `Approve` button. 
@@ -25,3 +28,5 @@ There are 2 places to view and approve assigned **Contracts**.
 Both actions will bring up the contract screen. This will display the text of the Contract for review. To approve it, enter the text name of the approver, and toggle to "I Agree", then click **`I Approve`**  
 
 If a contract has been approved, only the text will be available on this screen.
+
+[contracts]: /img/cp-contracts.png
