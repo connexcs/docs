@@ -179,13 +179,13 @@ pages:
 
   - Customer Portal:
     - Guides: customer-portal/customer-portal.md
-    - Dashboard: customer-portal/dashboard.md
-    - CDR: customer-portal/cdr.md
-    - Breakout: customer-portal/breakout.md
-    - Authentication: customer-portal/authentication.md
-    - DID: customer-portal/did.md
-    - CLI: customer-portal/cli.md
-    - Latest Calls: customer-portal/latest-calls.md
+    - Dashboard: customer-portal/cp-dashboard.md
+    - CDR: customer-portal/cp-cdr.md
+    - Breakout: customer-portal/cp-breakout.md
+    - Authentication: customer-portal/cp-authentication.md
+    - DID: customer-portal/cp-did.md
+    - CLI: customer-portal/cp-cli.md
+    - Latest Calls: customer-portal/cp-latest-calls.md
     - PBX: 
         - Conference: customer-portal/cp-conference.md
         - IVR: customer-portal/cp-ivr.md
@@ -195,10 +195,10 @@ pages:
     - Setup: 
         - Contracts: customer-portal/cp-contracts.md
         - Documents: customer-portal/cp-documents.md    
-    - Payment: customer-portal/payment.md
-    - Package: customer-portal/package.md
-    - Routes: customer-portal/routes.md
-    - Forex Checker: customer-portal/forexchecker.md
+    - Payment: customer-portal/cp-payment.md
+    - Package: customer-portal/cp-package.md
+    - Routes: customer-portal/cp-routes.md
+    - Forex Checker: customer-portal/cp-forex.md
     - Status: customer-portal/status.md
     - Interconnect: customer-portal/interconnect.md
 
