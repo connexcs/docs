@@ -9,6 +9,9 @@
 
 **Delete** Delete a Provider rate card by selecting its name from the list and then clicking the trash bin icon. 
 
+!!! warning "Before deleting a Provider Rate Card"
+    Before deleting a Provider Rate Card, we need to delete the [**Active Revision**](/provider-ratecard/#revisions-tab).
+
 ## Overview
 **Name** Click the name of the provider to see individual rate card and management options. (If a Rate Card name shows a yellow warning or red alert, these will indicate details about the card. It may be stale or have some sort of error.)
 
@@ -144,7 +147,7 @@ To change Revision status:
 
 * **Direction**: Configure the card as Termination (calling out to PSTN) or Origination (DID numbers receiving calls from PSTN). Termination is most common. 
 * **Billing Precision** - Round billing on a card to the specified decimal point (typically set to 4). 
-* **Rounding Method**: Specify how to handle the n+1 digit (e.g if your card is billed to 4 decimal places, this cares about the 5th digit). For our example: 0.1234**5** (rounded to 4 decimal places):
+* **Rounding Method**: Specify how to handle the n+1 digit (ex: if your card is billed to 4 decimal places, this cares about the 5th digit). For our example: 0.1234**5** (rounded to 4 decimal places):
  
     |Method|Explanation|
     | --- | --- |
@@ -155,38 +158,56 @@ To change Revision status:
 
 * **Duration Rounding**: The same rounding options but for the call duration.
 * **Public Options**: Choose what can be done with the card information: viewed via HTML (on a web page), download CSV (a spreadsheet), and whether to list the rate card in the customer portal (customer can view cards not currently on their account and select them for use). (Note: API Querying is no longer available.)
-* **CLI Restrict**: Enable Call Line Identification (CLI) restriction(s) using regular expressions to set valid number formats. See [**CLI**](https://docs.connexcs.com/customer/cli/) for additional details.
+* **CLI Restrict**: Enable Call Line Identification (CLI) restriction(s) using regular expressions to set valid number formats. See [**CLI**](/customer/cli/) for additional details.
+* **PAID Restrict**: Enable Pre-Asserted-Identity (PAID) restriction(s) using regular expressions to set valid number formats. See [**Filter PAID by Number or Pattern**](/customer/cli/#filter-paid-by-number-or-pattern) for additional details.
 * **SMS URL**: *not in use*
 * **Default RTP**: If set, and the customer adds the route themselves, then this will be used. Otherwise, this is an unused setting. 
 * **Capped Rate**: Block calls above the set price. 
+* **Force RTP**:
+
+    |Option|Explanation|
+    | --- | --- |
+    |Disabled|Selects the least expensive path between your customer and provider.|
+    |Direct RTP (No Proxy)|Bypass ConnexCS, so media flows directly between the customer and carrier.|
+    |Closest (To ConnexCS) Server|Media will use the server geographically closest to ConnexCS|
+    |Closest (Elastic) Server|This will allow traffic to traverse new servers which may be deployed. Would only cause issues if the customer runs a firewall, in which case the servers would not be authorized.|
+
+* **Block Destination Type**: Block calls one or more types of destination (ex: Mobile, Paging, or Satellite) using SIP Message `403 Destination Blocked'.
 * **Block Connect Cost**: Disable/enable the per call connection cost across the carrier. 
+* **P-Time**: Packetization time, or P-Time, refers to the length of an SDP packet, based on the media time in milliseconds. 
+    * Default- Use whatever is set in the end-devices firmware (don't change what is sent)
+    * 20- 20 ms
+    * 30- 30 ms
+* **Delayed Bye**: see [**Delayed Bye**](/provider-ratecard/#delayed-bye) below
 * **Flow Speed (CPS)**: Set the number of Calls Per Second are allowed on this card.
+* **Delayed Bye MCD**: see [**Delayed Bye**](/provider-ratecard/#delayed-bye) below
 * **Channels**: Set the number of concurrent active calls are allowed on the card. 
+* **Delayed Bye Customer Charge**: see [**Delayed Bye**](/provider-ratecard/#delayed-bye) below
 
 #### Delayed Bye
+**Delayed Bye** allows a call to be extended by delaying the release of the call. This is helpful in situations where a contract with a carrier specifies a minimum duration call but you have customers that routinely do very short duration calls. 
 
-Delayed Bye allows a call to be extended by delaying the release of the call. This is helpful in situations where a contract with a carrier specifies a minimum duration call but you have customers that routinely do very short duration calls. This feature should only be used along with full disclosure to both the customer as they will be billed for additional duration. Failing to notify the customer of this is considered Late Disconnection FAS (False Answer Supervision), ConnexCS does not endorce fraudulent activities.
+!!! warning "Use with caution"
+    This feature should only be used along with full disclosure to both the customer as they will be billed for additional duration. Failing to notify the customer of this is considered Late Disconnection FAS (False Answer Supervision), ConnexCS does not endorse fraudulent activities. **This feature bends the rules, if you don't use realistic figures or understand how this is working you will get unexpected results, use with caution.**
 
-**This feature bends the rules, if you dont use realistic figures or understand how this is working you will get unexpected results, use with caution**
-
-There are a number of considerations when using Delayed Bye.
+There are a number of considerations when using **Delayed Bye**.
 
 * Only works for termination calls.
 * Only BYE messages from Downstream will be delayed.
-* When a message is delayed, a 200OK will be sent Downstream instantly informing that the call has been ended.
+* When a message is delayed, a `200OK` will be sent Downstream instantly informing that the call has been ended.
 * We only allow extending a call a maximum of 30 seconds.
 * If a Downstream BYE message is delayed and an Upstream BYE interupts:
-  * We will instantly inform the upstream carrier that the call has been ended.
-  * The charge recorded in the carrier CDR will be the actual call duration + Delay. It will not take into consideration the incoming Upstream BYE.
+    * We will instantly inform the upstream carrier that the call has been ended.
+    * The charge recorded in the carrier CDR will be the actual call duration + Delay. It will not take into consideration the incoming Upstream BYE.
 
 ##### Fields
 
 * **Delayed Bye**: Sets how many seconds the call will be extended by.
-* **Delayed Bye MCD**: Sets a minimum duration for a delta to be calculated. For example if you set the Delayed BYE MCD to 10 seconds and the call last 8 seconds the call will be extended by 2 seconds.
-* **Delayed Bye Customer Charge**: Determines if the customer should be charged for the extended call.0
+* **Delayed Bye MCD**: Sets a minimum duration for a delta to be calculated. For example, if you set the Delayed BYE MCD to 10 seconds and the call last 8 seconds the call will be extended by 2 seconds.
+* **Delayed Bye Customer Charge**: Determines if the customer should be charged for the extended call.
 
 !!! note "Incorrect Billing"
-    Any attempt at artificially adjusting packets may cause billing problems. There are limitations within the protocol, the real world and our implementation. You must understand what you are doing before using this feature.
+    Any attempt at artificially adjusting packets may cause billing problems. There are limitations within the protocol, the real world, and our implementation. You must understand what you are doing before using this feature.
 
 #### Notes
 Private Notes not visible to the end Customer. Not typically used on Provider Rate Cards. 
