@@ -27,7 +27,7 @@ To enable, click the **:material-plus:** next to IP Authentication:
     + **Protocol**: Select **SIP (UDP)** for the protocol (**`SMPP`**: SMPP, for SMS, is not currently supported).
     + **Port**: Default = 5060. If using TLS protocol, this should be set to 5061. 
     + **Dial Pattern**: Default = E164. The default selection is the industry standard.
-    + **CLI Prefix, Tech Prefix, Strip Digits**:  Do NOT Use these fields. Use the Parameter Rewrite tab to modify numbers. 
+    + **CLI Prefix, Tech Prefix, Strip Digits**:  Do NOT Use these fields. Please contact us for assistance if needed. 
     + **Bandwidth, Force From**: Do NOT Use these fields.
     + **Username, and Password**: Set when sending calls out (egress switch direction) to a remote system, setting this will allow the ConnexCS switch to operate as a client, or UAC. Not typically recommended unless you have a very specialized system. 
     + **Switch Direction**: The available options are from the perspective of the customer switch (PBX, dialer, etc), and describe how that switch interacts with the ConnexCS switch. For switches that send and receive calls from ConnexCS, there will need to be separate entries for each direction. 
@@ -53,7 +53,7 @@ To enable, click the **:material-plus:** next to SIP User Authentication:
 
 + **Username**: This will be the Username used for SIP authentication (must match configuration on your UAC). 
 + **Password**: Must match configuration on your UAC.
-+ **Channels, Flow Speed, Bandwidth**; Do NOT set use these fields. 
++ **Channels, Flow Speed, Bandwidth**; Do NOT set use these fields. Please contact us for assistance. 
 + **Protocol**: Select the protocol for SIP (call signaling) RTP (transport/audio). 
     
     :material-menu-right: **`UDP`**: SIP and RTP are unencrypted and transported over UDP.
