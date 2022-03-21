@@ -26,6 +26,18 @@ There are four default **Graphs** which display current Customer account usage.
 |ACD|Average Call Duration can be viewed as a Total, or you can isolate traffic on a per carrier basis (click on a customer to remove/add it from the graph); if ACD is lower on one carrier, that is indicative of potential line quality issues|
 |DTMF |DTMF (Dual Tone Modulated Frequency) percentages|
 
+## Summary 
+The Summaries of calls in Live (last 24 hours), Daily, and Monthly formats, are all displayed in 24-hour UTC. This data is updated hourly. 
+
+There are several functions that can be performed with this data:
+
++ **Sum and Average**: Select multiple cells in a column to get sum and average values (not a true average, but an average of averages)
++ **Export Data**: Select data from multiple columns and rows, then right click to `Copy`, `Copy with Headers`, or `Export`.
++ **Generate Invoice**: Check one or more boxes under Action then select **`Generate Invoice`** in the upper right corner. This will create the invoice based on the Summary time frame (Daily, Weekly, Monthly) which can then be queried by a billing system.  
+
+!!! tip "Data used for billing"
+    The data found in the Customer Summary section is considered valid for billing purposes. The same data may be found in other parts of the system but should not be used for billing.
+
 !!! tip "Managing Graphs displayed on Dashboard"
     All graphs are managed using the [**Analytics**](/developers/analytics/) section.
 
