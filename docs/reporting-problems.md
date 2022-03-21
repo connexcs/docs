@@ -9,6 +9,7 @@ We make best efforts to reply 24/7.
 
 ### Customer Obligations
 As a customer we expect from you:
+
 * Basic level or above of computer operation.
 * Basic level or above of Telephony.
 * Act as liaison with your customers and carriers.
