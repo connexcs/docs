@@ -56,4 +56,4 @@ To Carriers: Select a carrier to send the call to terminate somewhere outside of
     | **Enabled (Downstream Only)**  | SIP Pings sent towards where the call is FROM (originated). |
     | **Enabled (Upstream Only)**    | SIP Pings sent towards where the call is TO (terminated). |
     
- + **Notes** and **Route Notes**: These are notes we have made for a particular route. You don't have the ability to edit these. 
+ + **Notes** and **Route Notes**: These are notes we have made for a particular route. **Notes** are read only, **Route Notes** may be available to edit. If you don't have the ability to edit these, please contact us for assistance. 
