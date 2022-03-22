@@ -11,4 +11,4 @@ The **Recording** area provides an opportunity to listen to recorded calls, prov
 4. Select **`Back`** to go back to the list of dates. 
 
 
-[cp-recording] img/cp-recording.png "Recordings by Date"
+[cp-recording]: img/cp-recording.png "Recordings by Date"
