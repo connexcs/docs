@@ -21,7 +21,7 @@ To enable, click the **:material-plus:** next to IP Authentication:
 
 === "Basic"
 
-    + **IP**: Enter the IP(s) of the customer switch. (FQDN may be also be used for Ingress only switches.)
+    + **IP**: Enter the IP(s) of the customer switch. (FQDN can be used for Ingress only switches.)
     + **Switch Direction**: The available options are from the perspective of the customer switch (PBX, dialer, etc), and describe how that switch interacts with the ConnexCS switch. For switches that send and receive calls from ConnexCS, there will need to be separate entries for each direction. 
         
         :material-menu-right: `Ingress`: This switch *receives* calls from ConnexCS. (Note: when selected, this gives the option of using the FQDN rather than the switch IP.)
@@ -101,7 +101,7 @@ To enable, click the **:material-plus:** next to SIP User Authentication:
 
     + **Username**: This will be the Username used for SIP authentication (must match configuration on the customer UAC). If The Customer has [**Internal Number Block**](https://docs.connexcs.com/customer/main/#internal-number-block) set on the **Main** tab, the Username may only be selected from available extensions. If a Username is already in use on the Account, they will get an error "Duplicate User Detected".
     + **Password**: Must match configuration on the customer UAC.
-    + **Channels, Flow Speed, Bandwidth**; Do NOT set use these fields. 
+    + **Channels, Flow Speed, Bandwidth**; Do NOT use these fields. 
     + **Protocol**: Select the protocol for SIP (call signaling) RTP (transport/audio). 
     
         :material-menu-right: **`UDP`**: SIP and RTP are unencrypted and transported over UDP.
@@ -114,7 +114,7 @@ To enable, click the **:material-plus:** next to SIP User Authentication:
         
         :material-menu-right: **`SMPP`**: SMPP, for SMS, is not currently supported.
 
-    + **IP Whitelist**: Enter specific IPs, or use CIDR notation to specify an entire subnet. 
+    + **IP Whitelist**: Enter specific IPs or use CIDR notation to specify an entire subnet. 
     + **NAT/SIP Ping**: Set behavior of pings sent from ConnexCS back to the customer through their firewall to their UAC. This helpful when there are remote agents connecting into the switch. 
     
         :material-menu-right: **`Disabled`**: No pings are sent
@@ -189,7 +189,7 @@ In a typical configuration, a packet is sent from the customer UAC out through a
 + When a packet goes out, a hole is punched in the firewall, and the source port is recorded. When a packet is returned on that port, the firewall knows to deliver back to the UAC.  
 + This works well when using TCP, which sends regular keep-alive packets.
 + UDP does not send keep-alives (no connected state as with TCP). SIP does maintain a connected state, registration, but may have long periods of inactivity. 
-+ Without regular traffic passing between UAS and UAC in the form of keep-alives/registration (a normal occurence), NAT will eventually time out and shut down the connection. 
++ Without regular traffic passing between UAS and UAC in the form of keep-alives/registration (a normal occurance), NAT will eventually time out and shut down the connection. 
 + Enabling UDP or SIP pings can demonstrate to the NAT/firewall that the signaling path is still valid and in use. 
 
 
