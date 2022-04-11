@@ -1,2 +1,7 @@
 # Latest Calls
-The **Latest Calls** tab provides records of incoming and outgoing calls. From here, you can view recent calls and their SIP traces, and run simulated calls. 
+The **Latest Calls** tab provides records of incoming and outgoing calls. Select **`View Columns`** to modify the output for these calls. 
+
+
+![alt text][latestcalls]
+
+[latestcalls]: img/latestcalls.png "Text to Speech"
