@@ -1,5 +1,5 @@
 # User Registration
-View active registrations (live calls)**: 
+View active registrations (live calls): 
 
 + **Username**: registered user
 + **IP**: current IP
