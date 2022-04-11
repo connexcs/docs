@@ -10,3 +10,6 @@ Toggle a CLI between `Forced` and `Whitelist` depending on how you would like th
 
 + **Forced**: When choosing Forced, if there is no match present, the CLI listed is used to replace the CLI being sent on a call. For example, if the CLI is set to 111111111111, that is what will be sent on any outbound calls, regardless of what is provisioned on your endpoint.
 + **Whitelist**: Setting to Whitelist will allow a call if there are no specific matches. 
+
+!!! tip "Adding CLIs"
+    If you are interested in adding CLIs from the Customer Portal, please contact support to have "Approved CLIs Only" enabled. Any CLI you add will need to be approved before it will be functional here. 
