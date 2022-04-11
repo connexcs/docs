@@ -15,8 +15,6 @@ In ConnexCS, **CLI** allows you to restrict and manipulate CLIs and Pre-Asserted
 
 By default, a customer account will pass all calls, even without any configured CLI records.  To change this behaviour, navigate to **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Edit :material-menu-right: Verification** and enable **Approved CLI's Only**.
 
-&emsp;![alt text][approvedcli]
-
 !!! warning "Approve CLI override"
     Once the first CLI rule is entered, the behaviour changes to block all, regardless of the "Approved CLI's Only" setting.
 
@@ -49,6 +47,12 @@ Click on the :material-plus: button under **CLI**.
 &emsp;![alt text][edit-cli]
 
 Click **`Save`** to complete the CLI configuration. 
+
+## Allow Customer to add their own CLI
+Navigate to **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Edit :material-menu-right: Verification** and check the box for "Approved CLIs Only". The customer can then go to the Customer Portal CLI section and add numbers there.  
+
+&emsp;![alt text][approvedcli]
+
 
 ## Advanced CLI Match & Manipulation
 
