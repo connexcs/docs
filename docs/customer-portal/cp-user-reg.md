@@ -1,2 +1,10 @@
-!!! bug "Documentation is being written."
-    Thank you for visiting this section. We are busy updating this section of our documentation, please check back soon. If you have any questions please come to our website and have a chat with us.
+# User Registration
+View active registrations (live calls)**: 
+
++ **Username**: registered user
++ **IP**: current IP
++ **Protocol**: protocol it is registered from
++ **NAT**: indicates that far-end NAT traversal (aka firewall) has modified the entry
++ **TTL**: time since request came in
++ **Last Modified**: The time of the last state change for the call
++ **User Agent**: *pending*
