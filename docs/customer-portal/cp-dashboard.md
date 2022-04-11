@@ -14,7 +14,9 @@ The **Dashboard** for the Customer Portal also serves as the landing page.
 
 **Account** Use this to update your Profile, Change Password or Language, or Log Out.
 
-**Documentation** TBD.
+!!! warning "Account Balance functions"
+    The "Click to Make Payment" link is currently in development. Please navigate to **Payment** on the left-hand menu for this functionality. 
+
 
 ## Graphs
 There are four default **Graphs** which display current Customer account usage. 
