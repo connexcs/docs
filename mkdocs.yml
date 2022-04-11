@@ -187,6 +187,7 @@ pages:
     - Invoice: customer-portal/cp-invoice.md
     - CLI: customer-portal/cp-cli.md
     - Latest Calls: customer-portal/cp-latest-calls.md
+    - Dialogs: customer-portal/cp-dialogs.md
     - User Resgistrtion: customer-portal/cp-user-reg.md
     - PBX: 
         - Conference: customer-portal/cp-conference.md
