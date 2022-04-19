@@ -6,7 +6,7 @@ Click on the **IVR** Name to edit the following fields:
 
 + **Name**: The name of the IVR.
 + **Extension**: The dial-in numbers to callers to reach the Conference.
-+ **Audio File**: Select a file from the drop-down list to play the greeting and explain the keypad options. You can upload your own audio files under the [**Audio**](cp-audio/) section below. 
++ **Audio File**: Select a file from the drop-down list to play the greeting and explain the keypad options. You can upload your own audio files under the [**Audio**](/customer-portal/cp-audio/) section below. 
 + **Keys (numbers 0 to 9, '\*' (asterisk) and '#' (hash))**: Configure the Destination (what happens when the caller presses they key) for each key using the **`Edit`** ield.
     
     :material-menu-right: `URI`- Specific SIP URI (formatted without the initial `sip:`, ex: you would enter `1-999-123-4567@voip-provider.example.net`)

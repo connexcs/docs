@@ -1,8 +1,8 @@
 # Audio
 The **Audio** section allows you to upload and store audio files for the following PBX functions:
 
-+ [**IVR**](cp-ivr)
-+ [**Queue**](cp-queue)
++ [**IVR**](/customer-portal/cp-ivr)
++ [**Queue**](/customer-portal/cp-queue)
 
 ## Add new file(s)
 
