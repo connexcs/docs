@@ -4,4 +4,4 @@ The **Latest Calls** tab provides records of incoming and outgoing calls. Select
 
 ![alt text][latestcalls]
 
-[latestcalls]: img/latestcalls.png "Text to Speech"
+[latestcalls]: img/cp-latestcalls.png "Latest Calls"
