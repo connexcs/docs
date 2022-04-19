@@ -4,7 +4,7 @@ The **Customer Portal** provides access to configurations, real-time testing and
 ## Top of Page Functions
 ![alt text][cp-dash]
 
-**Checklist** Quick view of outstanding Alerts on the account which should be addressed. Upon initial setup, there will be Alerts to verify email and mobile for the account, as well as reminder to create your customers, setup carriers, and so on. 
+**Checklist** Quick view of outstanding Alerts on the account which need to be addressed. Upon initial setup, there will be Alerts to verify email and mobile for the account, as well as reminder to create your customers, setup carriers, and so on. 
 
 **Time Zone** Click on the Date/Time box to select the Time Zone for your site. 
 
@@ -26,13 +26,13 @@ There are four default **Graphs** which display current Customer account usage.
 |:------------|:-------------------------------------------------|
 |Live Channels |Details active channel usage|
 |ASR |Answer Seizure Ratio can be viewed as a Total, or you can isolate traffic on a per carrier basis (click on a customer to remove/add it from the graph); if some carriers are lower than others this may indicate an issue|
-|ACD|Average Call Duration can be viewed as a Total, or you can isolate traffic on a per carrier basis (click on a customer to remove/add it from the graph); if ACD is lower on one carrier, that is indicative of potential line quality issues|
+|ACD|Average Call Duration can be viewed as a Total, or you can isolate traffic on a per carrier basis (click on a customer to remove/add it from the graph); A lower ACD on one carrier is indicative of potential line quality issues|
 |DTMF |DTMF (Dual Tone Modulated Frequency) percentages|
 
 ## Summary 
-The Summaries of calls in Live (last 24 hours), Daily, and Monthly formats, are all displayed in 24-hour UTC. This data is updated hourly. 
+The Summaries of calls in Live (last 24 hours), Daily, and Monthly formats, are all displayed in 24-hour UTC. This data updates hourly. 
 
-There are several functions that can be performed with this data:
+Functions that can be performed with this data:
 
 + **Sum and Average**: Select multiple cells in a column to get sum and average values (not a true average, but an average of averages)
 + **Export Data**: Select data from multiple columns and rows, then right click to `Copy`, `Copy with Headers`, or `Export`.
