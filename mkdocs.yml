@@ -35,7 +35,7 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - def_list
 
-pages:
+nav:
   - Cloudswitch:
     - Home: index.md
     - Getting Started: getting-started.md
@@ -178,26 +178,31 @@ pages:
         - Video Guide: video-guide.md
 
   - Customer Portal:
-    - Overview: customer-portal/customer-portal.md
     - Dashboard: customer-portal/cp-dashboard.md
     - CDR: customer-portal/cp-cdr.md
     - Breakout: customer-portal/cp-breakout.md
     - Authentication: customer-portal/cp-authentication.md
     - DID: customer-portal/cp-did.md
+    - Invoice: customer-portal/cp-invoice.md
     - CLI: customer-portal/cp-cli.md
     - Latest Calls: customer-portal/cp-latest-calls.md
+    - Dialogs: customer-portal/cp-dialogs.md
+    - User Registration: customer-portal/cp-user-reg.md
     - PBX: 
         - Conference: customer-portal/cp-conference.md
         - IVR: customer-portal/cp-ivr.md
         - Group: customer-portal/cp-group.md
         - Queue: customer-portal/cp-queue.md
         - Audio: customer-portal/cp-audio.md
+    - Alert: customer-portal/cp-alert.md
     - Setup: 
         - Contracts: customer-portal/cp-contracts.md
         - Documents: customer-portal/cp-documents.md    
+    - Data Management: customer-portal/cp-data-management.md
     - Payment: customer-portal/cp-payment.md
     - Package: customer-portal/cp-package.md
     - Routes: customer-portal/cp-routes.md
+    - Recording: customer-portal/cp-recording.md
     - Forex Checker: customer-portal/cp-forex.md
     - Status: customer-portal/status.md
     - Interconnect: customer-portal/interconnect.md

@@ -90,7 +90,7 @@ From the **Customers** page, you can perform several management operations.
 
 === "Verification"
 
-    + **Approved CLI's Only**: Force the customer to log into the Portal and enter their CLI number (call-from number). This generates a test call with a code which the customer must enter into the portal. Once complete, their CLI will be added to the system. 
+    + **Approved CLI's Only**: Allows the customer to add numbers in the [**Customer Portal CLI**](/customer-portal/cp-cli/) section. This generates a test call with a code which the customer must enter in the portal. Once complete, their CLI will be added to the system. 
     + **Email Verification** and/or **Mobile Verification**: Used to force the customer to go to the portal for verification. (This is important to select when you create a customer manually.) If the customer doesn't verify these, they won't be able to dial. 
 
     !!! attention
