@@ -1,5 +1,5 @@
 # Dashboard
-The **Dashboard** for the Customer Portal also serves as the landing page. 
+The **Customer Portal** provides access to configurations, real-time testing and stats, and additional information about your account. The **Dashboard** provides an overview of Call Stats and Summaries.
 
 ## Top of Page Functions
 ![alt text][cp-dash]
@@ -12,7 +12,8 @@ The **Dashboard** for the Customer Portal also serves as the landing page.
 
 **Account Balance** Displays the current account balance and a link to make a payment using a credit card or PayPal. 
 
-**Account** Use this to update your Profile, Change Password or Language, or Log Out.
+**Account** Use this to View your Company Profile, view and update your personal Profile, Change Password or Language, or Log Out.
+
 
 !!! warning "Account Balance functions"
     The "Click to Make Payment" link is currently in development. Please navigate to **Payment** on the left-hand menu for this functionality. 
@@ -38,10 +39,6 @@ There are several functions that can be performed with this data:
 + **Generate Invoice**: Check one or more boxes under Action then select **`Generate Invoice`** in the upper right corner. This will create the invoice based on the Summary time frame (Daily, Weekly, Monthly) which can then be queried by a billing system.  
 
 !!! tip "Data used for billing"
-    The data found in the Customer Summary section is considered valid for billing purposes. The same data may be found in other parts of the system but should not be used for billing.
-
-!!! tip "Managing Graphs displayed on Dashboard"
-    All graphs are managed using the [**Analytics**](/developers/analytics/) section.
-
+    The data found in the Customer Summary section is considered valid for billing purposes. The same data may be found in other areas but should not be used for billing.
 
 [cp-dash]: /customer-portal/img/cp-dash.png "Top of Page"
