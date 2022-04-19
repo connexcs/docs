@@ -103,7 +103,7 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 ### Media
 
 + **Transcoding**: Enter the numbers of channels allowed for transcoding. This option is limited. The best use case is for customers in low-bandwidth areas that want to use G.729. Be aware that if you don't have enough transcoding capacity, calls will fail. 
-+ **SIP Ping**: Send regular pings to ensure both sides of a call are still up, in case of potential failed ACK. `Enabled` is the recommended setting.
++ **SIP Ping**: Send regular pings to ensure both sides of a call are still up. `Enabled` is the recommended setting.
 
     |Option                          | Result                                            |
     |--------------------------------|:--------------------------------------------------|
