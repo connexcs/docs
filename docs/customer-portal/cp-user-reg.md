@@ -1,10 +1,10 @@
 # User Registration
 View active registrations (live calls): 
 
-+ **Username**: registered user
-+ **IP**: current IP
-+ **Protocol**: protocol it is registered from
-+ **NAT**: indicates that far-end NAT traversal (aka firewall) has modified the entry
-+ **TTL**: time since request came in
++ **Username**: Username of user (associated password is not shown here)
++ **IP**: Current IP
++ **Protocol**: Protocol used for registration
++ **NAT**: Indicates that far-end NAT traversal (aka Firewall) has modified the entry
++ **TTL**: Time since request came in
 + **Last Modified**: The time of the last state change for the call
-+ **User Agent**: *pending*
++ **User Agent**: The end device used by the **Username** above
