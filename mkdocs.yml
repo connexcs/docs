@@ -178,7 +178,6 @@ nav:
         - Video Guide: video-guide.md
 
   - Customer Portal:
-    - Overview: customer-portal/customer-portal.md
     - Dashboard: customer-portal/cp-dashboard.md
     - CDR: customer-portal/cp-cdr.md
     - Breakout: customer-portal/cp-breakout.md
