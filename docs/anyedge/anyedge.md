@@ -78,7 +78,7 @@ Malformed packets can cause all sorts of problems for your internal network, suc
 + Checks the "R-URI" and whether the domain contains valid characters
 + Checks the URI of the "From" field and whether the domain contains valid characters
 + Checks the URI of the "To" field and whether the domain contains valid characters
-+ Checks the URI of the "Contact" field
++ Checks the URI of the "Contact" field. 
 
 If a packet fails to validate, you can choose how this must be handled. You can handle this with a "400" error or with an "X-Validate-Fail" header. The reasons why a packet fails to validate are:
 
@@ -138,3 +138,5 @@ Having High Availability (HA) with registrations ensures that you will always ha
 
 ### Outbound Proxy
 If you have a pool of multiple servers, you can proxy your communications via **AnyEdge**, allowing for a single IP address to communicate externally.
+
+
