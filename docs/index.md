@@ -1,7 +1,7 @@
 ConnexCS User Documentation
 ========================
 
-Welcome to the **Connex Carrier Services User Documentation**. If you are new to ConnexCS, we recommend beginning with the **[Getting Started Guides](https://docs.connexcs.com/getting-started/)**. From there, take a quick look at the [**Dashboard overview**](https://docs.connexcs.com/dashboard/), which details the ConnexCS home screen.  
+Welcome to the **Connex Carrier Services User Documentation**. If you are new to ConnexCS, we recommend beginning with the **[Getting Started Guides](https://docs.connexcs.com/getting-started/)**. From there, take a quick look at the [**Dashboard overview**](https://docs.connexcs.com/dashboard/), which details the ConnexCS home screen.
 
 See the [**Video Guide**](https://docs.connexcs.com/video-guide/) for additional information and walkthroughs on standard functions on the system. 
 
