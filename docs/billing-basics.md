@@ -60,7 +60,7 @@ Balances should be derived from a ledger (your CDR records).
 
 ```mermaid
 graph TD
-    BAL[Balance Mismatch] -->|Investiation Process| QTOTALS
+    BAL[Balance Mismatch] -->|Investigation Process| QTOTALS
     QTOTALS{Does the spend match<br/>& Top-ups Match?} --> RECALC
     RECALC[The floating balance may<br/>have malfunctioned, run a recalc] --> RECALCFIX
     RECALCFIX{Did this fix it?}
