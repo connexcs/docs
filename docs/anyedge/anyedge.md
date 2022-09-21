@@ -1,33 +1,33 @@
 # AnyEdge
 **Setup :material-menu-right: AnyEdge**
 
-ConnexCS **AnyEdge**, an anycast load-balancer/dispatcher, is a next-generation solution for Edge SIP providing high-reliability and custom Call Distribution algorithms (Weights and Priorities).
+ConnexCS **AnyEdge**, an anycast load-balancer/dispatcher, is a next-generation solution for Edge Session Initiation Protocol (SIP)  providing high-reliability and custom Call Distribution algorithms (Weights and Priorities).
 
-## AnyEdge setup
+## AnyEdge Setup
 
 ### Configure AnyEdge 
 Click the :material-plus: to set the following:
 
-+ **UAC Test (NAT)**: Select which method will be used to detect whether NAT is in use. See [**Far-End NAT Traversal**](https://docs.connexcs.com/anyedge/anyedge/#far-end-nat-traversal) for details. 
++ **User Account Control (UAC) Test (NAT)**: Select the method used to detect whether NAT is in use. See [**Far-End NAT Traversal**](https://docs.connexcs.com/anyedge/anyedge/#far-end-nat-traversal) for details. 
 + **Algorithm**: How to distribute calls. See [**Inbound Proxy / Dispatcher / Load Balancer**](https://docs.connexcs.com/anyedge/anyedge/#inbound-proxy-dispatcher-load-balancer) for details.
-+ **CPS**: Total calls per second allowed. See [**Metrics**](https://docs.connexcs.com/anyedge/anyedge/#metrics) for details.
++ **Cyber-Physical System(CPS)**: Total calls per second allowed. See [**Metrics**](https://docs.connexcs.com/anyedge/anyedge/#metrics) for details.
 + **Insertion**: Set whether the server acts 'Stateless' (no reply needed) or 'Transactional' (waits for reply). 
-+ **Validate**: Determine what checks, if any, will be used. For example, a Basic Check will verify all fields are correctly formed, or else the packet is rejected (protects from attacks such as buffer overflow). Select one or more checks to validate those fields. See [**SIP Packet Validation**](https://docs.connexcs.com/anyedge/anyedge/#sip-packet-validation) for details.
-+ **Compress In**: Select method(s) to compress inbound data, not only for lower bandwidth use, but also avoid UDP fragmentation. See [**Compaction & Compression**](https://docs.connexcs.com/anyedge/anyedge/#compaction-compression) for details.
-+ **Compress Out**: Particularly helpful when using Outbound Proxy. See [**Compaction & Compression**](https://docs.connexcs.com/anyedge/anyedge/#compaction-compression) for details.
++ **Validate**: Find the checks to use, if any. For example, a Basic Check will verify if all the fields are correctly formed, or else the packet is rejected (protects from attacks such as buffer overflow). Select one or more checks to validate those fields. See [**SIP Packet Validation**](https://docs.connexcs.com/anyedge/anyedge/#sip-packet-validation) for details.
++ **Compress In**: Select method(s) to compress inbound data, not only for lower bandwidth use, but also avoid User Datagram Protocol (UDP) fragmentation. See [**Compaction & Compression**](https://docs.connexcs.com/anyedge/anyedge/#compaction-compression) for details.
++ **Compress Out**: Helps when using Outbound Proxy. See [**Compaction & Compression**](https://docs.connexcs.com/anyedge/anyedge/#compaction-compression) for details.
 + **Flags**: currently n/a
 + **Primary Attempts**: (not useful for less than 3 servers) Set the number of attempts before going to a second zone.
 + **Secondary Attempts**: (not useful for less than 3 servers) Set the number of attempts before going to a third zone.
 
 ### AnyEdge Domain
-After AnyEdge configuration is complete, click the :material-plus: next to Domains to configure a specific domain with same settings as above: customer call distribution, CPS, Validation, and so on. There is also an ability to provide additional TLS configuration for SIP protection.
+After AnyEdge configuration is complete, click **:material-plus:** next to Domains to configure a specific domain with same settings as Configure AnyEdge. There is also an ability to provide additional Transport Layer Security (TLS) configuration for SIP protection.
 
 ### AnyEdge Destinations
-Click the :material-plus: to specify the Destination IP, and one or more Limit (Primary) and Backup (Secondary) Zones.
+Click **:material-plus:** to specify the Destination IP, and one or more Limit (Primary) and Backup (Secondary) Zones.
 
 
 ## Capabilities
-The ConnexCS **AnyEdge** load balancer is a high-performance application designed for maximum throughput using multiple cores. Combined with our global PoPs and detailed metrics, we have you covered even if you have requirements that exceed 10K calls per second.
+The ConnexCS **AnyEdge** load balancer is a high-performance application designed for maximum throughput using multiple cores. Combined with global PoPs and detailed metrics, we’ve you covered even if you have requirements that exceed 10K calls per second.
 
 ### Far End NAT Traversal
 NAT (Network Address Translation) is a technique which intermediates communication between a LAN (Local Area Network) and a WAN (Wide Area Network aka. Internet).
@@ -35,19 +35,19 @@ NAT (Network Address Translation) is a technique which intermediates communicati
 When a packet traverses NAT, the UDP packet headers are correctly re-written by your NAT device, however the headers in the SIP packet are often not rewritten. Here are some ways that AnyEdge facilitates these SIP rewrites:
 
 1. Hardcode the external IP Address
-2. STUN to find the external IP address
-3. SIP ALG
+2. Session Traversal Utilities for NAT (STUN) to find the external IP address
+3. SIP (Session Initiation Protocol) ALG (Application Layer Gateway)
 4. Far End NAT Traversal
 
 We can use any of the following indicators to detect if NAT is present in the UAC.
 
- - Search the Contact header field for the occurrences of RFC1918 / RFC6598 addresses
- - Use the "received" test: "address in Via" is compared against the source IP address used for signaling
- - Search the top-most VIA for the occurrences of RFC1918 / RFC6598 addresses
- - Search the SDP for the occurrences of RFC1918 / RFC6598 addresses
- - Test if the source port is different from the "port in Via"
- - Compare the "address in Contact" against the source IP address used for signaling
- - Compare the "Port in Contact" against the source port used for signaling
+ - Search the Contact header  field for the occurrences of RFC1918 / RFC6598 addresses.
+ - Use the "received" test: "address in Via" to compare against the source IP address used for signaling.
+ - Search the top-most VIA for the occurrences of RFC1918 / RFC6598 addresses.
+ - Search the Session Description Protocol(SDP) for the occurrences of RFC1918 / RFC6598 addresses.
+ - Test if the source port is different from the "port in Via".
+ - Compare the "address in Contact" with the source IP address used for signaling.
+ - Compare the "Port in Contact" with the source port used for signaling.
  
 ### Inbound Proxy / Dispatcher / Load Balancer
 The primary use case for **AnyEdge** is to disseminate calls to a pool of SIP Servers. These can be configured by the following call strategies:
@@ -56,13 +56,13 @@ The primary use case for **AnyEdge** is to disseminate calls to a pool of SIP Se
  - Hash over from uri
  - Hash over to uri
  - Hash over request-uri
- - Weighted round-robin (next destination) - the destination's weight determines how many times it is chosen before going to the next one
- - Hash over authorization-username (Proxy-Authorization or "normal" authorization) - If a username is not found, weighted round-robin is used.
+ - Weighted round-robin (next destination) - the destination's weight determines the number of times it is selected before going to the next one
+ - Hash over authorization-username (Proxy-Authorization or "normal" authorization) - If a username is not found, weighted round-robin is used
  - Random (using *rand()*)
- - The first entry in set is chosen
+ - The first entry in set is selected
 
 ### Metrics
-The load balancer's CPS limit must be set. You can view both the CPS and the totals on the amounts of calls which have failed because the CPS was breached.
+The load balancer's CPS limit must be set. You can view both the CPS and the totals on the number of calls failed because of the CPS breach.
 
 Use the following graphs to view the metrics:
 
@@ -70,17 +70,17 @@ Use the following graphs to view the metrics:
 2. CPS Breach
 
 ### SIP Packet Validation
-Malformed packets can cause all sorts of problems for your internal network, such as, buffer overflow attacks. These problems can be stopped at the edge by selecting specific options when enabling SIP Packet Validation:
+Malformed packets can cause problems for your internal network, such as, buffer overflow attacks. These problems can be stopped at the edge by selecting specific options when enabling SIP Packet Validation:
 
 + Check the integrity of the SDP body (if it exists)
 + Check the format and the integrity of each header body
 + Don't check the "Max-Forwards" header
-+ Checks the "R-URI" and whether the domain contains valid characters
-+ Checks the URI of the "From" field and whether the domain contains valid characters
-+ Checks the URI of the "To" field and whether the domain contains valid characters
++ Checks the "R-URI" and whether the domain has valid characters
++ Checks the URI of the "From" field and whether the domain has valid characters
++ Checks the URI of the "To" field and whether the domain has valid characters
 + Checks the URI of the "Contact" field. 
 
-If a packet fails to validate, you can choose how this must be handled. You can handle this with a "400" error or with an "X-Validate-Fail" header. The reasons why a packet fails to validate are:
+If a packet fails to validate, you can select a method to handle. You can handle this with a "400" error or with an "X-Validate-Fail" header. The reasons why a packet fails to validate are:
 
  - No SIP message
  - Header Parsing error
@@ -131,7 +131,7 @@ To use compaction, you need to select "Compact Enabled". You can also whitelist 
 
 
 #### Compression
-Compression or Decompression can be enabled for Inbound and/or Outbound by selecting either "Compress Enabled (Deflate)", "Compress Enabled GZip" or "Decompress Enabled". There are additional flags to control how data must be compressed.
+Compression or Decompression can be enabled for Inbound and/or Outbound by selecting either "Compress Enabled (Deflate)", "Compress Enabled GZip", or "Decompress Enabled". There are additional flags to control how data must be compressed.
 
 ### Registration Proxy
 Having High Availability (HA) with registrations ensures that you will always have an IP address which matches the hole punched when the UAC registers. Unlike other HA setups, **AnyEdge** ensures that standard NAT hole-punching can work with UAC > UAS calls/messages even after the end-point connected to the UAC fails.
