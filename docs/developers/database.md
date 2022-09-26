@@ -1,28 +1,29 @@
 # Database
 **Developer :material-menu-right: Database**
 
-The **Database** allows you to create custom persistent data storage. A datastore can be global (used with any customer), or it can be associated with a single customer.
-The **Database** can be used for activities such as checking a list of numbers, caching external lookups, or creating stateful applications that allow users a certain amount of free minutes per month.
+The **Database** allows you to create custom persistent data storage. A datastore can be specific to a single customer or global (used with any customer).
+
+The **Database** is used for activities like checking list of numbers, caching external lookups, or creating stateful applications that provide users a set number of free minutes per month.
 
 ## Types
-There are two preset data storage options:
+Preset data storage options are:
 
-**Key / Value** - Contains a basic Key / Value Storage.
++ **Key / Value** - Contains a basic Key / Value Storage.
 
-**Lead Set** - Contains the most common fields when using datastore for customer / campaign data which can be used with diallers.
++ **Lead Set** - Contains the most common fields when using a datastore for customer / campaign data which are used with dialers.
 
 ## Bulk Upload
 
-It is possible to bulk upload data and bulk delete data from the datastore. Both from the customer portal and the control panel.
+You can bulk upload data and bulk delete data from the datastore, both from the customer portal and the control panel.
 
-!!! important
-	Bulk Operations are not audited.
+!!! **Important:**
+	Bulk Operations aren't audited.
 
 ## Create Database
 
-1. Click the :material-plus: button.
-2. Select the `Customer` and `Dataset Type` (see Types above).
-3. Click the **`Save`** button. 
+1. Click **:material-plus:**.
+2. Select the `Customer` and `Dataset Type` (see **Types** above).
+3. Click **`Save`**. 
 
     ![alt text][user-space-img-3]
 
