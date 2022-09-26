@@ -10,7 +10,7 @@ You can set up 3-digit dialing in a number of ways. This is a basic setup for qu
 
     ![alt text][3dig-2]
 
-3. Document internal extensions in the [**Phonebook**](/class5/phonebook/) (this step is'nt so much functional as reference).
+3. Document internal extensions in the [**Phonebook**](/class5/phonebook/) (this step isn't so much functional as reference).
 
     ![alt text][3dig-2]
 
