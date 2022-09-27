@@ -7,7 +7,7 @@ The **Breakout** report lists account customers with the following:
  Toggle **Group Destination** to show calls based on the destination number.  
  Use the **`Date`** and **`Select Destination`** fields at the top of the page to filter results. 
 
-!!! **Warning:** "Group Destination toggle"-
+!!! warning "Group Destination toggle"
     Currently, this toggle feature is still under development, so may generate an error. 
 
 
@@ -27,7 +27,7 @@ The Columns display data for each call
 |Customer Charge|pending|
 
 
-!!! **Info:** "Refreshing the Breakout Report"-
+!!! info "Refreshing the Breakout Report"
     Remember to click **Refresh** each time parameters change to ensure you see the most recent selections onscreen. When refreshing the list (typically done after modifying the filtering parameters), use the Report Refresh (by the date filter) and not the Browser Refresh button. 
 
 
