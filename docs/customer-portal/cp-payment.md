@@ -15,5 +15,5 @@ To add a new payment, select **`Make Payment`**.
 2. Click **`Pay`**.
 
    
-!!! **Warning:** "Negative Payments"-
+!!! warning "Negative Payments"
 If you make some kind of purchase on the account, it will appear as a negative amount under Total.
