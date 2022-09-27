@@ -10,7 +10,7 @@ Use the **Audio** section to upload and store audio files for the following Priv
 1. Navigate to the desired directory, select one or more files, and then click **`Open`**.
 1. The file should appear as the next item on the list if the upload is successful. (You may need to refresh the list.)
 
-!!! **Error:** "Upload Errors"-
+!!! error: "Upload Errors"
     If an error occurs, check your browser settings and operating system for things like firewalls or pop-up blockers which may prevent uploads of a certain type.
 
 ## Remove Files
