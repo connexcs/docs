@@ -9,6 +9,6 @@ The remaining documentation covers all aspects of setup, configuration, monitori
 
 With newer versions and updates, we will continue to update the corresponding documentation. You can submit a documentation request if you feel that a subject needs more attention.
 
-!!! **Tip:** "Virtual Training"-
+!!! tip "Virtual Training"
     Book an appointment for online [**Training and Advanced Support**](https://connexcs.youcanbook.me/).
 
