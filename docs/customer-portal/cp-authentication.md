@@ -4,7 +4,7 @@ Use the **Auth** tab to configure IP or SIP (Username/Password) Authentication.
 ## IP Authentication
 When you enable **IP Authentication**, you associate the IP of a customer switch to their account. This adds a security layer by ensuring the calls come from a trusted source.
 
-!!! **Error:** "Newly added IP immediately marked as Blocked under IP Authentication"-
+!!! error "Newly added IP immediately marked as Blocked under IP Authentication"
     This occurs as a result of call requests being sent from the new IP before it had been authorised. As a result, ConnexCS fraud detection blocked the unauthorized IP in the firewall. You can't complete attempted calls from this IP.
        
 To resolve the blocked IP, 
@@ -12,7 +12,7 @@ To resolve the blocked IP,
 + Select the blocked IP, then delete it from the firewall. This unblocks the IP, but it will take up to 15 minutes for the change to become active in the switch. See [**Threat Detection**](https://docs.connexcs.com/setup/advanced/firewall/) for more details. 
 
 ### Enable IP Authentication 
-To enable, click **:material-plus:** next to IP Authentication:
+To enable, click :material-plus: next to IP Authentication:
 
 *Click each tab to view the configuration details*
 
@@ -53,7 +53,7 @@ Generic SIP Trace showing the Challenge Response:
 &emsp; ![alt text][407-trace]
 
 ### Enable SIP User Authentication 
-To enable, click **:material-plus:** next to SIP User Authentication:
+To enable, click :material-plus: next to SIP User Authentication:
 
 + **Username**: The Username used for SIP authentication (must match with the configuration on your UAC). 
 + **Password**: Must match with the configuration on your UAC.
