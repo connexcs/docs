@@ -4,7 +4,7 @@
 Use **Packages** to offer predefined products and services to each customer. 
 
 ## Assign Packages
-1. Click **:material-plus:**
+1. Click :material-plus:
 
    + Select the **Package** you want to assign to the customer. Package Details will appear below. 
    + Enter the required **Quantity** and **Start Date**.
@@ -15,7 +15,7 @@ Use **Packages** to offer predefined products and services to each customer.
 
 &emsp; ![alt text][customer-packages]
 
-!!! **Info:** "Managing Packages"-
+!!! info "Managing Packages"
     **Packages** are created and managed in **Setup :material-menu-right: Config :material-menu-right: Packages**. See **[Packages](https://docs.connexcs.com/setup/config/packages/)** for more information. 
     
 [customer-packages]: /customer/img/customer-packages.png "Customer Packages"
