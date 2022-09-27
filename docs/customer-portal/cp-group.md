@@ -21,7 +21,7 @@ Click on the Group name, then click **`Edit`** to modify the following:
 
     ![alt text][sequential]
 
-+ **Destination**: Click **:material-plus:**, then click `Edit` to enter the Destination (External number or Internal extension, SIP User, group, DID, etc.) and Ring Timeout (maximum amount of time for a call to ring before moving to next group member).
++ **Destination**: Click :material-plus:, then click `Edit` to enter the Destination (External number or Internal extension, SIP User, group, DID, etc.) and Ring Timeout (maximum amount of time for a call to ring before moving to next group member).
 
 *(**SIP:** Session Initiation Protocol, **DID:** Direct Inward Dialing)*
 
