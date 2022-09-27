@@ -14,7 +14,7 @@ Complete the following steps before configuring the IVR.
 
 ## Create an IVR
 
-1. Click **:material-plus:**.
+1. Click :material-plus:.
 2. Enter the **Name** for the IVR.
 3. Select the **Customer** from the drop-down list.
 4. Enter the **Extension** for callers to call and start interacting with the IVR.
