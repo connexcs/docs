@@ -14,7 +14,7 @@ You can create custom reports to help identify your own key metrics. Here are so
 *(**FOREX:** Foreign Exchange, **CLI:** Command Line Interface, **ISO:** International Organization for Standardization)*
 
 ## Create New Analytics
-Click **:material-plus:** to configure the following fields:
+Click :material-plus: to configure the following fields:
 
 &emsp;![alt text][analytics]
 
@@ -80,7 +80,7 @@ Click **:material-plus:** to configure the following fields:
 	{"customer_id":"@companyId"}
     ```
 
-!!! **Tip:**
+!!! tip
 	If you want to render a graph in this view for testing, you may need to temporarily hard-code a customer or carrier ID to make it work.
 
 
