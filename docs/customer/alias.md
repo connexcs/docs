@@ -5,11 +5,11 @@ You can entirely or partially rewrite a number using an **Alias**.
 
 ## Create Alias
 
-1. Click **:material-plus:**.
+1. Click :material-plus:.
     + **Current**: Current number or script (regex).
     + **New**: Set to another number or script (regex).
 2. Click **`Save`**.
 
 
-!!! **Info:** "Video Guide"-
+!!! info "Video Guide"
     See walkthrough in [**Alias Video Guide**](https://docs.connexcs.com/video-guide/#aliases). 
