@@ -6,7 +6,7 @@ Use this feature to allow multiple callers to communicate with each other over a
 For individual customers, navigate to **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Class5 :material-menu-right: Conference**
 
 ## Create Conference Call
-To create a Conference room, click **:material-plus:**.
+To create a Conference room, click :material-plus:.
 
 *Field details:*
 
@@ -28,7 +28,7 @@ To create a Conference room, click **:material-plus:**.
 
 Click **`Save`** and the new conference room is available for use. 
 
-!!! **Tip:** "Conference calls for external callers"-
+!!! tip "Conference calls for external callers"
     Only customers internal to ConnexCS can use the standard Conference configuration. To allow external numbers to dial into the conference, setup a [**Customer DID**](https://docs.connexcs.com/customer/did/#configure-did) and set the **Destination** to "Internal", and then select the available pre-configured conference. 
 
 ## Conference Call Keypad Options
