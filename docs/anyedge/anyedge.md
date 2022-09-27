@@ -6,7 +6,7 @@ ConnexCS **AnyEdge**, an anycast load-balancer/dispatcher, is a next-generation 
 ## AnyEdge Setup
 
 ### Configure AnyEdge 
-Click the :material-plus: to set the following:
+Click the :material-plus: button to set the following:
 
 + **User Account Control (UAC) Test (NAT)**: Select the method used to detect whether NAT is in use. See [**Far-End NAT Traversal**](https://docs.connexcs.com/anyedge/anyedge/#far-end-nat-traversal) for details. 
 + **Algorithm**: How to distribute calls. See [**Inbound Proxy / Dispatcher / Load Balancer**](https://docs.connexcs.com/anyedge/anyedge/#inbound-proxy-dispatcher-load-balancer) for details.
@@ -23,7 +23,7 @@ Click the :material-plus: to set the following:
 After AnyEdge configuration is complete, click **:material-plus:** next to Domains to configure a specific domain with same settings as Configure AnyEdge. There is also an ability to provide additional Transport Layer Security (TLS) configuration for SIP protection.
 
 ### AnyEdge Destinations
-Click **:material-plus:** to specify the Destination IP, and one or more Limit (Primary) and Backup (Secondary) Zones.
+Click :material-plus: button to specify the Destination IP, and one or more Limit (Primary) and Backup (Secondary) Zones.
 
 
 ## Capabilities
