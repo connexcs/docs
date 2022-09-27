@@ -32,7 +32,7 @@ Click on the existing Conference name to edit the following fields:
 
 Click **`Save`** to retain thew new settings. 
 
-!!! **Tip:** "Conference calls for external callers"-
+!!! tip "Conference calls for external callers"
     Only internal callers can use the above mentioned standard Conference configuration. To allow external numbers to dial into the conference, setup a [**Customer DID**](/customer-portal/did/) and set the Destination to Internal, and then select the available pre-configured conference. 
 
 *(DID: Direct Inward Dialing)
@@ -97,7 +97,7 @@ Click on the Group name, and then click **`Edit`** to modify the following:
 
     ![alt text][sequential]
 
-+ **Destination**: Click **:material-plus:** and then click `Edit` to enter the Destination (External number or Internal extension, SIP User, group, DID, etc.) and Ring Timeout (maximum amount of time for a call to ring before moving to next group member).
++ **Destination**: Click :material-plus: and then click `Edit` to enter the Destination (External number or Internal extension, SIP User, group, DID, etc.) and Ring Timeout (maximum amount of time for a call to ring before moving to next group member).
 
 *(SIP: Session Initiation Protocol, DID: Direct Inward Dialing)
 
