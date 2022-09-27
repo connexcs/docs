@@ -1,7 +1,7 @@
 # Contracts
 View all **Contracts** associated with your account. 
 
-!!! **Tip:** "Unapproved Contracts"-
+!!! tip "Unapproved Contracts"
     Look for unapproved Contracts with this alert:
     
     ![alt-text][contracts]
@@ -18,7 +18,7 @@ View all **Contracts** associated with your account.
     + Displays the amount of time left on any unapproved Contracts.
     + If it is blank, there is no associated grace period.
     
-!!! **Warning:** "Grace Period"-
+!!! warning "Grace Period"
     If a Grace Period elapses and the Contract isn't signed, it may impact the services. 
     
 ## View and Approve Contracts
