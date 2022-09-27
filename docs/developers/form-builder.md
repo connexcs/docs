@@ -4,7 +4,7 @@
 Developers can use **Form Builder** to create customized input forms on the ConnexCS control panels.
 
 ## Create Form
-Click **:material-plus:** and complete the following fields:
+Click :material-plus: and complete the following fields:
 
 + **Name**: Enter a name for the form (consider naming conventions for organizational purposes).
 + **Script Forge**: Select the required script from the drop-down.
@@ -19,7 +19,7 @@ Click **:material-plus:** and complete the following fields:
 + Fill in the form and click **`Save`**.
 + Click **`Run`** to check the form appearance.
 
-!!! **Example:** "Example: Number Porting"-
+!!! example "Example: Number Porting"
     Create a form for port requests and set the Placement for the Customer Portal. Customers can then submit the port request, with all the required information (including items like customer internal ticket number). Internally, you can create a ticket with this request for the carrier.  
 
 [edit-formbuilder]: /developers/img/edit-formbuilder.png "New Form"
