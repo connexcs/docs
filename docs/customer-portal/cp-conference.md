@@ -29,7 +29,7 @@ In this section, view all the configured **Conference** groups:
 
 2. Click **`Save`** to keep the new settings. 
 
-!!! **Tip:** "Conference calls for external callers"-
+!!! tip "Conference calls for external callers"
     Only internal callers can use the above mentioned standard Conference configuration. To allow external numbers to dial into the conference, setup a [**Customer DID**](/customer-portal/did/) and set the Destination to Internal, and then select the available pre-configured conference. 
 
 *(*DID: Direct Inward Dialing*)
