@@ -22,13 +22,13 @@ Once you create a new **Routing Strategy**, assign it to a customer account.
 
 **Step 1: Add Routing Strategy**
 
-1. In the **Routing Strategy** screen, click **:material-plus:**.
+1. In the **Routing Strategy** screen, click :material-plus:.
 2. Name the strategy.
 3. Select the Strategy type (as defined in Types of Routing Strategies section). 
 
     ![alt text][routing-strategy2]   
 
-4. Click **:material-plus:** to add one or more row(s).
+4. Click :material-plus: to add one or more row(s).
 5. Select a card from the drop-down list.
 6. Click **`Save`**.
 
@@ -42,10 +42,10 @@ Once you create a new **Routing Strategy**, assign it to a customer account.
 5. Click **Strategy**, and then the blue :material-plus:.
 6. Select a strategy from the drop-down list. Note that you can also add a prefix in this screen.
 
-!!! **Info:** "Advanced Customer Routing"-
+!!! info "Advanced Customer Routing"
     For more settings under Customer Routing, see [**Advanced Routing Configuration**](https://staging--connexcs-docs.netlify.app/customer/routing/#advanced-routing-configuration). 
 
-!!! **Warning:** "Default behavior with conflicting Strategies"-
+!!! warning "Default behavior with conflicting Strategies"
     You can set a Customer Rate Card to default to LCR, Random, Round Robin, and Reverse LCR. But, parameters set in a Routing Strategy will override the Customer Rate Card setting if they conflict.
 
 
