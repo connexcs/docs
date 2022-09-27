@@ -12,7 +12,7 @@ Click on either the Route **`Name`** or **`Prefix`** to view and change the foll
 
 + **Max Duration**: Set the maximum amount of time (in seconds) to allow the call to exist before it is cut off, usually after a missed BYE.
 
-!!! **Info:** "Call Timeouts"-
+!!! info "Call Timeouts"
     A VoIP call is stateful, even though its protocol is stateless. This means that the call's end time must be communicated to both sides in the conversation. They do this with a BYE message. If the BYE message goes missing, the call will continue forever. Max Duration is a method for setting up Missing BYE Protection. Another method is by using a Session Initiation Protocol (SIP) Ping to find when the connection has timed out. See **SIP Ping** below. 
 
 + **Flow Speed (CPS)**: Limits the calls per second. This must be set for each customer card assigned to the customer account.
@@ -26,7 +26,7 @@ Click on either the Route **`Name`** or **`Prefix`** to view and change the foll
     | **Enabled (Downstream Only)**  | SIP Pings sent towards where the call is FROM (originated). |
     | **Enabled (Upstream Only)**    | SIP Pings sent towards where the call is TO (terminated). |
 
-!!! **Warning:** "Asterisk pings"-
+!!! warning "Asterisk pings"
      By default, Asterisk does'nt have SIP Ping (OPTIONS) enabled. If you are using Asterisk, you may need to enable this to avoid disconnected calls after 30 seconds.     
  + **Notes** and **Route Notes**: Notes made for a particular route. **Notes** are read-only, **Route Notes** is available to edit. If you don't have the ability to edit these, please contact us for assistance. 
 
@@ -41,7 +41,7 @@ Select this option to view prefix and billing details:
 
 + **Billing**: Call is billed based on the MCD (Minimum Call Duration) and Pulse, represented as x/x. Each call using this Rate Card is rounded up to MCD, then in increments of Pulse. Call durations is rounded up based on these settings, then that new duration is what is billed.
 
-!!! **Abstract:** "Billing Example"-
+!!! abstract "Billing Example"
     In our example, MCD is set to 30 and Pulse is set to 6. The Billing column shows 30/6. Calls are billed as follows:
    
     |Call Duration|MCD?|Pulse|Billed Duration|
