@@ -3,14 +3,14 @@
 
 Use **Button Builder** in combination with [**Form Builder**](https://docs.connexcs.com/developers/form-builder/) to create a button which is placed in an existing menu on the site.
 
-!!! **Example:** "Example use"- 
+!!! example "Example use"
 
   1.  Create the ability to select one or more customers/DIDs (DID: Direct Inward Dialing) 
   2.  Supplement with additional information from a form 
   3.  And then, run Script Forge to send that data outside the system or perform bulk operations that may need to be repeated.
 
 ## Create new button
-Click **:material-plus:** and complete the following fields:
+Click :material-plus: and complete the following fields:
 
 + **Label** - Enter the button label.
 + **Icon** - Select an icon to display.
