@@ -66,7 +66,7 @@ If you want to use audio files for the group, it must first be uploaded to the s
 2. Upload the audio files to **Management :material-menu-right: File**.
 
 ## Create a Group
-To create a new Group, click **:material-plus:**.
+To create a new Group, click :material-plus:.
 
 + **Name**: Enter the name for the group.
 + **Customer**(Available only when you add the Group from Class5, not when in the Customer management area): From the drop-down list, select the customer to whom the group is applied.
@@ -75,7 +75,7 @@ To create a new Group, click **:material-plus:**.
     + **Parallel** or **Sequential** strategies require Group Member setup:
         + Select the strategy then **`Save and Stay`**.
         + Go to the new **Group Members** tab. 
-        + Click **:material-plus:** to add a new member.
+        + Click :material-plus: to add a new member.
         + `Destination`- Click **`Edit`** to enter the Destination as either an External number or Internal (ConnexCS) extension, Session Initiation Protocol (SIP) User, group, Direct Inward Dialing (DID), etc. 
         + `Ring Timeout`- Helps when calling mobile numbers as you can cancel the call before it hits the voicemail, allowing it to roll to the next Group Member.
    
