@@ -3,13 +3,13 @@
 
  View a complete list of all previous **Payments**.
 
-!!! **Note:** "Global Payments"-
+!!! note "Global Payments"
     You can also manage Payments under **Global :material-menu-right: Payments**, which displays all Payments across the account.
 
 ## Add Payment
 To add a new payment
 
-1. Click **:material-plus:**
+1. Click :material-plus:
     + **Description** is the name of the payment. 
         If you wish to hide any information on the customer portal, use **#** followed by the text to hide. Example: PayPal 87878787744XXX #payment from demo.
     + **Total** is the amount of the payment. 
@@ -21,10 +21,10 @@ To add a new payment
 
 2. Click **`Save`**.
 
-!!! **Tip:** "Pending Payments"-
+!!! tip "Pending Payments"
     When a customer places a payment through their bank, it shows **Pending** status. To accept the payment, set it to **Completed** and click **`Save`**. 
     
-!!! **Warning:** "Negative Payments"-
+!!! warning "Negative Payments"
     If a customer has made any kind of purchase on the account, it is shown as a negative amount on the main **Payments** page > **Total** section.
 
     
