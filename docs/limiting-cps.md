@@ -23,8 +23,8 @@ ConnexCS offers a range of options to limit CPS and Channels across the entire a
 
 *[**More details on CPS Spike Buffering**](https://docs.connexcs.com/customer/routing/#capacity-limits) as part of the routing strategy.*
  
-!!! **Info:** "Server capacity error"-
+!!! info "Server capacity error"
     When a server reaches capacity, the standard response is: *Request Terminated: Server at max cps/channels*. If you have multiple servers, you can send a 302 response if the server reaches capacity, advising the client of an alternative location to complete the call.
     
-!!! **Warning:** "CPS on load-balanced servers"-
+!!! warning "CPS on load-balanced servers"
     If you have multiple servers in load balance configuration, you are advised to enable "Cluster". Ex: If you set CPS to 10, clustered servers will allow 10 CPS total, un-clustered servers will allow 10 CPS per server. See [**Servers**](https://docs.connexcs.com/setup/settings/servers/) for more details. 
