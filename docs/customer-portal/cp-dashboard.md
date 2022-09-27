@@ -15,7 +15,7 @@ The **Customer Portal** provides access to configurations, real-time testing and
 + **Account** Use this to view your Company Profile, view and update your personal Profile, Change Password or Language, or Log Out.
 
 
-!!! **Warning:** "Account Balance functions"-
+!!! warning "Account Balance functions"
     The "Click to Make Payment" link is currently in development. Please navigate to **Payment** on the left-hand menu for this functionality. 
 
 
@@ -38,7 +38,7 @@ You can perform the following Functions with this data:
 + **Export Data**: Select data from multiple columns and rows, then right-click to `Copy`, `Copy with Headers`, or `Export`.
 + **Generate Invoice**: Select one or more checkboxes under Action and then select **`Generate Invoice`** in the upper right corner. This will create the invoice based on the Summary time frame (Daily, Weekly, Monthly). A billing system can then query the invoice. 
 
-!!! **Tip:** "Data used for billing"-
+!!! tip "Data used for billing"
      For billing purposes, consider the data found in the Customer Summary section as valid. Although the same information might be located elsewhere, it shouldn't be used for billing.
 
 [cp-dash]: /customer-portal/img/cp-dash.png "Top of Page"
