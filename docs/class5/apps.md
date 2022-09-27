@@ -6,14 +6,14 @@ The ConnexCS **Apps** feature allows providers to create small, simple, drag and
 ## Build App
 To create a new App:
 
-1. Click **:material-plus:**.
+1. Click the :material-plus: button.
 2. Drag desired functions from the list on the left box into the right box.
 3. Click on the function to edit parameters. 
 4. Click **`Save`**. 
 
     ![alt text][apps]
 
-!!! **Warning:** "Using Multiple Conditions"
+!!! warning "Using Multiple Conditions"
     Apps are limited to a single Condition. Multiple Conditions in an App will cause failure.  
     
 ## Advanced Applications
