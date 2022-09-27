@@ -7,7 +7,7 @@ For individual customers, navigate to **Management :material-menu-right: Custome
 
 ## Create Entry
 
-1. Click **:material-plus:**.
+1. Click :material-plus:.
 2. Add the user's name and any other data that you wish to capture. 
 
     ![alt text][phonebook0]
@@ -19,7 +19,7 @@ For individual customers, navigate to **Management :material-menu-right: Custome
 
     ![alt text][phonebook]
 
-!!! **Note:** "Phonebook and WebPhone"
+!!! note "Phonebook and WebPhone"
     Phonebook is also used in the [**Web Phone**](https://docs.connexcs.com/setup/integrations/webphone/) configuration. 
 
 [phonebook0]: /class5/img/phonebook0.png "Phonebook Entry"
