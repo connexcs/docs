@@ -66,7 +66,7 @@ function main (data = {}, ctx) {
 }
 ```
 
-!!! **Warning:** "Potential Sync Issues"-
+!!! warning "Potential Sync Issues"
    To prevent the system from losing the synchronised state with your script and connection crash, make sure to execute ALL async functions with `await`. If it isn't implemented correctly, billing and call stability are impacted.
 
 ### Form Submission
@@ -102,7 +102,7 @@ module.export = {
 ## Configuration
 
 ### Build Script
-1. To add a script, click **:material-plus:**.
+1. To add a script, click :material-plus:.
 2. Specify the script **Name**.
 3. Select the **Type**:
 
