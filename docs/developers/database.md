@@ -16,12 +16,12 @@ Preset data storage options are:
 
 You can bulk upload data and bulk delete data from the datastore, both from the customer portal and the control panel.
 
-!!! **Important:**
+!!! important
 	Bulk Operations aren't audited.
 
 ## Create Database
 
-1. Click **:material-plus:**.
+1. Click :material-plus:.
 2. Select the `Customer` and `Dataset Type` (see **Types** above).
 3. Click **`Save`**. 
 
