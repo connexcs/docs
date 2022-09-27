@@ -6,5 +6,5 @@ Click **Alert** `Title` to view the configuration details.
 Click **`Test`** to run a Simulation of the **Alert**. 
 
 
-!!! **Warning:** "Balance Alert"-
+!!! warning: "Balance Alert"
     The ability to edit and create new Alerts is still under development. 
