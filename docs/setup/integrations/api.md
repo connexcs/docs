@@ -133,7 +133,7 @@ Link Moneris to ConnexCS:
 
 1. Select **`Add`**, and then select **Scriptforge**.
 2. **Company**: Select the customer to integrate. 
-3. **Script Forge**: Select the predefined script (details found under [**Developer :material-menu-right: Scriptforge**](/developers/scriptforge/). 
+3. **Script Forge**: Select the predefined script (details found under [**Developer :material-menu-right: Scriptforge**](/developers/scriptforge/)). 
 
 ## Razor Pay Integration
 Enter Razorpay settings into ConnexCS:
