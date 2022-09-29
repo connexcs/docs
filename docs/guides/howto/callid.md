@@ -1,6 +1,6 @@
 
 # What's a Call-ID?
-A **Call-ID** is a unique identifier that's automatically generated for every call. It's assigned at the origination point when you place the call and is present in *every* SIP packet which is sent or received. 
+A **Call-ID** is a unique identifier that's automatically generated for every call. It's assigned at the origination point when you place the call and is present in every Session Initiation Protocol (SIP) packet which is sent or received. 
 
 !!! note "Topology Hiding"
     ConnexCS use **Topology Hiding** which obscures specific infrastructure information for more security. This essentially means that the outgoing Call-ID is different than the incoming Call-ID.
