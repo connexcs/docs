@@ -36,7 +36,7 @@ The following is a comprehensive list of features included in the latest stable 
 
 ### Alerts
 
-* Multiple Receipients
+* Multiple Recipients
 * [Balance / ACD / ASR / PDD / Consec Failure](https://docs.connexcs.com/acronyms-and-definitions/)
 * [Send Alert to Email or SMS](https://docs.connexcs.com/customer/alerts/#create-an-alert)
 * [Test Alert](https://docs.connexcs.com/customer/alerts/#test-and-alert)
@@ -54,7 +54,7 @@ The following is a comprehensive list of features included in the latest stable 
 * [Endpoint Level Channel & CPS Limitation](https://docs.connexcs.com/limiting-cps/#limiting-cps-channels)
 * Codec Restrictions
 * Non Standard Ports
-* Perimiter Normalization (Advanced A & B Number Manipulization to get numbers in E164 format.)
+* Perimeter Normalization (Advanced A & B Number Manipulation to get numbers in E164 format.)
 * [SIP Username / Password Authentication](https://docs.connexcs.com/customer/auth/#sip-user-authentication)
 * User Latency Measurement (Graphs)
 * [UDP / SIP Pinging](https://docs.connexcs.com/customer/auth/#use-case-for-natsip-pings)
@@ -76,7 +76,7 @@ The following is a comprehensive list of features included in the latest stable 
 ### Authentication
 
 * [Outbound Proxy Support](https://docs.connexcs.com/anyedge/anyedge/#outbound-proxy)
-* Perimiter De-Normalization (Send in the carriers required format)
+* Perimeter De-Normalization (Send in the carriers required format)
 * Codec Restrictions
 * Carrier Username / Password Registration Support
 
@@ -107,7 +107,7 @@ The following is a comprehensive list of features included in the latest stable 
 
 * [Global Routing Profiles](https://docs.connexcs.com/global-routing/)
 * [Tags](https://docs.connexcs.com/global-routing/#setup)
-* Temporarly Disable Customer Termination Routes
+* Temporarily Disable Customer Termination Routes
 * [Per Route CPS & Channel Limitations](https://docs.connexcs.com/customer/routing/#capacity-limits)
 * [Tech Prefix Support](https://docs.connexcs.com/setup/advanced/prefix-set/)
 * Single source IP many customer support.
@@ -220,10 +220,10 @@ The following is a comprehensive list of features included in the latest stable 
 * Whitelabel
 * [Customer / Carrier Signup](https://docs.connexcs.com/setup/integrations/portal/#configuration-options)
 * Default Template Customer (Set Initial Credit, etc)
-* Multiple Custom Domains Supported (Seperate Branding on each)
+* Multiple Custom Domains Supported (Separate Branding on each)
 * Custom Permissions (30+ Options)
 * [Call Reporting](https://docs.connexcs.com/customer-portal/breakout/)
-* Customisable CDR Downloads
+* Customizable CDR Downloads
 * [Email & Mobile Verification](https://docs.connexcs.com/getting-started/#verify-contact-details)
 * Self CLI Verification (via callback)
 * Full API Support
@@ -246,7 +246,7 @@ The following is a comprehensive list of features included in the latest stable 
 * Voicemail Password
 * [Call Queues ("Groups")](https://docs.connexcs.com/class5/creating-group/)
     * Music on Hold
-    * Perodic Announcements
+    * Periodic Announcements
     * Join Message
     * On Hook Agents
     * Off Hook Agents
@@ -287,7 +287,7 @@ The following is a comprehensive list of features included in the latest stable 
 
 ## Reporting
 
-* Detailed Customisable Breakout Report
+* Detailed Customizable Breakout Report
 * Realtime / Daily / Monthly
 * Per Customer & Per Route
 * 3 Months minimum history
@@ -297,14 +297,14 @@ The following is a comprehensive list of features included in the latest stable 
 * [Failure Report](https://docs.connexcs.com/reporting-problems/)
 * CLI based ASR
 * Provider Report Per Customer
-* Channel / CPS Breach Graphs (Identify if calls are being blocked because of Channel / CPS Restiction)
+* Channel / CPS Breach Graphs (Identify if calls are blocked because of Channel / CPS Restriction)
 * RTCP Reports (MOS / RTT / Packet Loss / Jitter)
 * Build your own Reports
 * [Spend Report](https://docs.connexcs.com/report/#breakout-report)
 * [Profit Reports](https://docs.connexcs.com/report/#breakout-report)
 * Customer / Provider Traffic Attribution
 * Per Carrier Failover Report (Identify calls which failed, then succeeded through another carrier)
-* Carrier Code Consistance (Compare Commonality of response codes for similar numbers between carriers)
+* Carrier Code Consistence (Compare Commonality of response codes for similar numbers between carriers)
 * [Cost per DTMF](https://docs.connexcs.com/report/#dtmf-report)
 * [Scheduled Reports](https://docs.connexcs.com/report/#schedule-reports)
 * [Per Number Analysis Reports](https://docs.connexcs.com/report/#per-number)
@@ -358,7 +358,7 @@ The following is a comprehensive list of features included in the latest stable 
 ### Servers
 
 * [Deploy Multiple Servers](https://docs.connexcs.com/setup/settings/servers/#deploy-a-server)
-* Deply in Multiple Zones Worldwide
+* Deploy in Multiple Zones Worldwide
 * Instant Deployment
 * Load Balancers / Dispatchers
 * Custom UDP, TCP, TLS, WebRTC Ports
@@ -418,7 +418,7 @@ The following is a comprehensive list of features included in the latest stable 
 
 * [Firewall](https://docs.connexcs.com/security/#sip-rtp-firewall-block-on-default)
 * Auto Detect & Block Hack Attempts
-* Platform Inteligence
+* Platform Intelligence
 
 ## Integrations
 
@@ -441,7 +441,7 @@ The following is a comprehensive list of features included in the latest stable 
 * [SIP Packet Compression / Compaction](https://docs.connexcs.com/anyedge/anyedge/#compaction-compression)
 * [SIP Packet Validation](https://docs.connexcs.com/anyedge/anyedge/#sip-packet-validation)
 * [CPS Limits & CPS Breach Metrics](https://docs.connexcs.com/anyedge/anyedge/#metrics)
-* [Far End NAT Traversal (Customisable)](https://docs.connexcs.com/far-end-nat-traversal/#what-is-far-end-nat-traversal)
+* [Far End NAT Traversal (Customizable)](https://docs.connexcs.com/far-end-nat-traversal/#what-is-far-end-nat-traversal)
 * Globally Redundant
 * UDP / TCP / TLS / WebRTC Connectivity
 * Free TLS Certificate
@@ -461,4 +461,4 @@ The following is a comprehensive list of features included in the latest stable 
 * [RESTful Customer Portal API (Can use your customer credentials to access)](https://docs.connexcs.com/api/)
 * [RESTful Control Panel API(80+ CRUD Endpoints)](https://docs.connexcs.com/api/#customer-administration)
 
-We have done our best to compile a detailed feature list, however our product is growing day-by-day and this should be interpreted as a minimum, as with our powerful customisations, you can accomplish more.
+We've done our best to compile a detailed feature list, however our product is growing day-by-day and this should be interpreted as a minimum, as with our powerful customizations, you can do more.
