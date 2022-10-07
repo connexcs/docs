@@ -23,7 +23,11 @@ Several methods of contacting ConnexCS for assistance are outlined below. If you
     Before reporting a problem, please check the [**ConnexCS System Status Page**](https://status.connexcs.com/) for current known issues. 
 
 ### Online Chat
-**Online Chat** allows for real-time assistance. Initial communication is with a bot. If the bot is unable to help, it will tell you to type "Human" to connect with a support representative. Click this button to alert staff, and the first person to become available will reply as soon as possible. We find that most questions are resolved efficiently this way. Please note that the chat system is for one-on-one communication about a specific problem, not for multiple concerns or system-wide change requests. 
+**Online Chat** allows for real-time assistance. Initial communication is with a bot. If the bot is unable to help, it will tell you to type "Human" to connect with a support representative.
+
+Click this button to alert staff, and the first person to become available will reply as soon as possible. We find that most questions are resolved efficiently this way.
+
+**Please note that the chat system is for one-on-one communication about a specific problem, not for multiple concerns or system-wide change requests.**
 
 ### Support Tickets
 **Support Ticket** (found at the bottom of the ConnexCS navigation menu) displays all open tickets for an account. To create a ticket, send an email to [**support@connexcs.com**](support@connexcs.com).
@@ -47,7 +51,7 @@ Contact us via **Telegram**:
 + @connexcs_support_bot
 
 ### NOC-On-Demand
-If you are interested in **NOC-on-Demand** or Enhanced Support, which would give 24/7 (or to cover their time zone) operational support, please contact us directly to discuss this option. 
+If you are interested in **NOC-on-Demand** or Enhanced Support, which would give 24/7 (or to cover your specific time zone) operational support, please contact us directly to discuss this option. 
 
 
 ## Report a Problem
@@ -67,7 +71,7 @@ ConnexCS classifies issues based on a combination of **Category** and **Severity
 |---|---|---|
 |P0|Critical|ConnexCS is down, this is affecting all customers and all calls are failing. The best thing to do is to monitor https://status.connexcs.com/ and await updates. As we're a small team, we may be focusing on resolving the issue, and although a reply may only take 10 seconds, we will have 100's of customers asking the same thing.|
 |P1|Critical|A customer of ConnexCS is down and it's affecting all calls.|
-|P2|Critical|A customer of our customers calls are down, or there is a serious User Interface problem.|
+|P2|Critical|A customer of our customers' calls are down, or there is a serious User Interface problem.|
 |P3|Important|A partial outage on a customer or carrier, and/or some but not all calls are affected, or there is a serious User Interface Problem.|
 |P4|Trivial|A feature is broken but business can continue (User Interface problem, or a low-impact problem affecting calls).|
 |P5|Trivial|A feature doesn't work as expected or an enhancement is required.|
@@ -84,7 +88,7 @@ ConnexCS classifies issues based on a combination of **Category** and **Severity
 + Platform for P2+ (Critical) Issues = 24/7 support.
     * Platform Issue
     * Our Monitoring will alert Us
-    * Check our status page, ETA's will be issued if we've them available.
+    * Check our status page, ETA's will be issued if we have them available.
     * You can contact us, but please don't expect any detailed replies while we're focused on troubleshooting the issue.
     * 24/7 response incident.
 
@@ -128,14 +132,22 @@ ConnexCS onsite documentation, found at [**docs.connexcs.com**](https://docs.con
 * To provide a repository where you can search for information relevant to your problem.
 * To inform your questions when you contact support.
 
-Sometimes, complications are resolved easily by turning off parameters that aren't compatible. In some instances, a little troubleshooting might solve it. In some instances, you will need help; understanding the documentation will speed our efforts to remedy larger concerns. Whenever possible, please refer the ConnexCS documentation before contacting support. 
+Sometimes, complications are resolved easily by turning off parameters that aren't compatible. In some instances, a little troubleshooting might solve it.
+
+In some instances, you will need help; understanding the documentation will speed our efforts to remedy larger concerns.
+
+*Whenever possible, please refer the ConnexCS documentation before contacting support.*
 
 **Step 3: Gather data**
 
 This step helps us understand and resolve your issue as soon as possible. Whenever possible, we recommend you follow a standardized troubleshooting process, such as our recommended [**Debugging**](/guides/debugging/) steps. 
 
 * **User Interface Issues**: Including a screenshot along with a clear description of the problem can really help us understand the issue. For an efficient utility to take UI screenshots, we recommend a browser plugin called "Lightshot", or use your OS's built-in snipping tool.
-* **Problems with Calls**: For problems with call flow, the [**Call-ID**](/guides/howto/callid/) is how we identify affected calls. It helps us isolate customers, providers, and/or channels that may be affected. Find a Call-ID in the [**Logging**](/logging/) section by clicking on a call, and then copying the ID to right of the panel.
+
+* **Problems with Calls**: For problems with call flow, the [**Call-ID**](/guides/howto/callid/) is how we identify affected calls. It helps us isolate customers, providers, and/or channels that may be affected.
+
+Find a Call-ID in the [**Logging**](/logging/) section by clicking on a call, and then copying the ID to right of the panel.
+
 * **Clear and Concise Issue Description**: The above steps contain more ways for you to be able to identify your problem, troubleshoot it, and then communicate the problem(s) clearly in the event of contact.
 
 !!! failure "Respectful communications"
