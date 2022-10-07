@@ -146,7 +146,7 @@ This step helps us understand and resolve your issue as soon as possible. Whenev
 
 * **Problems with Calls**: For problems with call flow, the [**Call-ID**](/guides/howto/callid/) is how we identify affected calls. It helps us isolate customers, providers, and/or channels that may be affected.
 
-Find a Call-ID in the [**Logging**](/logging/) section by clicking on a call, and then copying the ID to right of the panel.
+    Find a Call-ID in the [**Logging**](/logging/) section by clicking on a call, and then copying the ID to right of the panel.
 
 * **Clear and Concise Issue Description**: The above steps contain more ways for you to be able to identify your problem, troubleshoot it, and then communicate the problem(s) clearly in the event of contact.
 
