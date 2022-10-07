@@ -34,9 +34,10 @@ To verify your email address:
 1. Select `Verify Email`.
    
    The Personal Profile Screen pops-up.
-3. Click the orange `!` next to Email, this generates a code and sends it to the email address. 
-4. Click the link in the email or copy & paste the code into the Verification Code field in the Verify Email pop-up. 
-5. Click `Verify`.
+   
+2. Click the orange `!` next to Email, this generates a code and sends it to the email address. 
+3. Click the link in the email or copy & paste the code into the Verification Code field in the Verify Email pop-up. 
+4. Click `Verify`.
 
     ![alt text][verify-email-2]
 
