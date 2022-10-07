@@ -52,9 +52,10 @@ To verify a mobile number:
 1. Select `Verify Mobile`.
    
    The Personal Profile Screen pops-up.
-3. Make sure the number is correct and in E.164 format: [+] [country code] [subscriber number including area code] with maximum of fifteen digits.
-2. Click the orange `!` next to Mobile, this will generate a code and send it to mobile number. 
-5. Enter the code into the Verification Code field in the Verify Mobile pop-up. 
+   
+2. Make sure the number is correct and in E.164 format: [+] [country code] [subscriber number including area code] with maximum of fifteen digits.
+3. Click the orange `!` next to Mobile, this will generate a code and send it to mobile number. 
+4. Enter the code into the Verification Code field in the Verify Mobile pop-up. 
 5. Click `Verify`.
 
     ![alt text][verify-mobile]
@@ -81,7 +82,9 @@ ___
 ## Customer Setup
 These instructions for basic **Customer** setup helps you create a profile and setup account details like IP addresses and payments. For more detailed instructions about setting up customers, see [**Customer Management**](https://docs.connexcs.com/customer/customer/) and following sections.
 
-Navigate to **Management :material-menu-right: Customer** to modify customer details, filter the customer list, and perform bulk actions. To view outstanding actions on a customer, hover over the Warning icon. In the example below, you can see that routing hasn't been set. In that case, click on the customer's name to update their routing details.
+Navigate to **Management :material-menu-right: Customer** to modify customer details, filter the customer list, and perform bulk actions. To view outstanding actions on a customer, hover over the Warning icon.
+
+In the example below, you can see that routing hasn't been set. In that case, click on the customer's name to update their routing details.
 
 &emsp; ![alt text][warning-icon]  
 
@@ -136,7 +139,7 @@ ___
 4. Click `Save`
 5. Select **Auth** from the Carrier screen.
 2. Click `+` under IP Authentication.
-3. Enter the termination IP address. Note: We also support SRV records & domains.
+3. Enter the termination IP address. **Note: We also support SRV records & domains.**
 4. Click `Save`
 
     ![alt text][carrier-auth-2]
@@ -152,20 +155,22 @@ ___
 ___
 
 ## Ingress Routing
-To manage **Ingress Routing**, 
+To manage **Ingress Routing**,
+
 1. Navigate to **Management :material-menu-right: Customer**:
-1. Click on the customer's name.
-2. Select **Routing**.
-3. Click `+` under **Ingress Routing**.
-4. Select the **Rate Card**.
-5. Click `Save`.
+2. Click on the customer's name.
+3. Select **Routing**.
+4. Click `+` under **Ingress Routing**.
+5. Select the **Rate Card**.
+6. Click `Save`.
 
 For detailed routing configuration, see [**Routing**](https://docs.connexcs.com/customer/routing/). 
 
 ___
 
 ## Deploy Servers
-**Deploy Servers** using these instructions. 
+**Deploy Servers** using these instructions.
+
 1. Navigate to **Setup :material-menu-right: Settings :material-menu-right: Servers**:
 2. Select **Deploy a Server**
 3. Choose a server location.
