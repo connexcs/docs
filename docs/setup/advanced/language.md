@@ -11,13 +11,13 @@ If you have changed the default language (see [**User Interface Display Language
 
 To add non-English equivalents for your preferred language:
 
-3. In the `Language` sub-menu on the left, select the language you are using.
-4. (Optional) Search for the specific word before adding.
-5. Click the :material-plus: to create a new entry. 
+1. In the `Language` sub-menu on the left, select the language you want to use.
+2. (Optional) Search for the specific word before adding.
+3. Click :material-plus: to create a new entry. 
     * **Key** - English word in the system
     * **Translation** - non-English equivalent
-8. Click `Save`.
-9. If the new translation is not displayed, click `Refresh` located at the top of page.
+4. Click `Save`.
+5. If the new translation isn't displayed, click `Refresh` located at the top of page.
 
     ![alt text][adding-words-in-spanish]
 
@@ -25,22 +25,21 @@ To add non-English equivalents for your preferred language:
 ## Modify Non-English Equivalents
 To modify existing non-English equivalents that the Control Panel adds by default:
 
-1. In the `Language` sub-menu on the left, select the language you are using.
+1. In the `Language` sub-menu on the left, select the language you want to use.
 1. Search for the specific word or scroll down until you find it. 
 2. Click an English word in the Key column.
 3. Enter the new text in the Translation text box.
 4. Click `Save`.
-5. If you do not see the change, click Refresh located at the top of page.
+5. If you don't see the change, click Refresh located at the top of page.
 
 ## Delete or Reset Non-English Equivalents
 To delete a non-English equivalent you added or to reset an incorrect change to a default entry:
 
-1. Select the check box for the word and click `Reset` (located at the top of the page).
-2. A Warning pop-up appears. 
-3. Click `OK`.
-4. The Control Panel deletes the new non-English equivalent or resets the default non-English equivalent to the original translated word.
+1. Select the checkbox for the word and click `Reset` (located at the top of the page). A Warning pop-up appears. 
+2. Click `OK`.
+3. The Control Panel deletes the new non-English equivalent or resets the default non-English equivalent to the original translated word.
       
 !!!note "Note" 
-	You cannot delete default non-English equivalents from this table.
+	You can't delete default non-English equivalents from this table.
 
 [adding-words-in-spanish]: /setup/img/adding-words-in-spanish.png "adding-words-in-spanish"

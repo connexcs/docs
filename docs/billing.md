@@ -4,18 +4,18 @@ A ConnexCS subscription comes with two main tariffs used for billing: **per minu
 
 ## ConnexCS Billing Per Channel
 
-Billing per-channel is the traditional approach where the consumer pays for a set number of channels or ports; this is similar to the VoIP equivalent of per-line billing in mobile networks. 
+Billing per-channel is the traditional approach where the consumer pays for a set number of channels or ports. It is similar to the VoIP equivalent of per-line billing in mobile networks. 
 
 ### Advantages
 
-1. Cheaper than per minute billing in systems with consistent traffic and high utilization.
-2. Free servers are available for many tiers of service.
-3. Predictable costs allow for more stable billing cycles and simplified cost/benefit analysis.
++ Cheaper than per minute billing in systems with consistent traffic and high utilization.
++ Free servers are available for many tiers of service.
++ Predictable costs allow for more stable billing cycles and simplified cost/benefit analysis.
 
 ### Disadvantages
 
-1. Inconsistent traffic often leads to higher costs.
-2. Capacity planning is inherently less flexible.
++ Inconsistent traffic often leads to higher costs.
++ Capacity planning is inherently less flexible.
 
 ## ConnexCS Billing per minute
 
@@ -23,16 +23,16 @@ In per-minute billing, the amount of seconds you use are tallied daily, combined
 
 ### Advantages
  
-  1. Channels come with peripheral considerations that make it more challenging to scale a billing unit, but per-minute rates are exact enough to scale with the system.
+ + Channels come with peripheral considerations that make it more challenging to scale a billing unit, but per-minute rates are exact enough to scale with the system.
 
 ### Disadvantages
 
-  1. More expensive with consistent traffic.
-  2. Multiple servers are more expensive.
+ + More expensive with consistent traffic.
+ + Multiple servers are more expensive.
 
 ## Minimum Charges
 
-All accounts must spend a minimum of $20 per month to remain active.  This helps us prevent incurring losses from stagnant accounts. 
+All accounts must spend a minimum of $20 per month to remain active. This helps to prevent incurring losses from stagnant accounts. 
 
 ## Capacity Planning
-Capacity planning is a way we extend our services to an advisory capacity, to help our consumer choose the setup that works best for their business. Shifting utilization and the growing demands of scalability are always a consideration, but there is also the active management of changing traffic. See [**Capacity Limiting**](/limiting-cps/) for tips on limiting usage. 
+Capacity planning is a way to extend our services to an advisory capacity, to help our consumer choose the setup that works best for their business. Shifting utilization and the growing demands of scalability are always a consideration, but there is also the active management of changing traffic. See [**Capacity Limiting**](/limiting-cps/) for tips on limiting usage. 

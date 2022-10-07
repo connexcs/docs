@@ -1,2 +1,3 @@
-!!! bug "Documentation is being written."
-    Thank you for visiting this section. We are busy updating this section of our documentation, please check back soon. If you have any questions please come to our website and have a chat with us.
+!!! bug "Documentation for this section is in progress and will be updated soon." 
+    Thank you for visiting this section.   
+If you have any questions, visit our website and have a chat with us.

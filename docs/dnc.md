@@ -1,6 +1,6 @@
 # Do Not Call (DNC)
 
-In today's society, all modern call carriers should recognise and honor **Do Not Call Lists (DNC).** Calling numbers on these lists can result in costly fines and prosecutions. Use Script Forge to help you to manage these calls by adding the numbers to the system. If a number on the list is dialed, the caller will receive an alert that the number is on the DNC list and the call will not be completed. 
+In today's society, all modern call carriers should recognise and honor **Do Not Call Lists (DNC).** Calling numbers on these lists can result in costly fines and prosecutions. Use Script Forge to manage these calls by adding the numbers to the system. If you dial a number on the list, the caller will receive an alert that the number is on the DNC list and the call won't be completed. 
 
 ## DNC Check
 
@@ -11,7 +11,7 @@ In today's society, all modern call carriers should recognise and honor **Do Not
 3. Enter the **Name**.
 3. Select the **Customer**. 
 4. Select **Dataset Type**.
-5. Click Save
+5. Click **Save**.
 
     ![alt text][dnc-3]
 
@@ -20,8 +20,8 @@ In today's society, all modern call carriers should recognise and honor **Do Not
 1. Navigate to **Developer :material-menu-right: Script Forge**
 2. Add the Script **Name**.
 3. Select `App` for the **Type**.
-4. Slick **Save**.
-5. Click the newly created App
+4. Click **Save**.
+5. Click the newly created App.
 6. Add the JavaScript code [**dnc-add.js**](https://github.com/connexcs/scriptforge-examples/blob/master/dnc-check.js).
 7. Click the green arrow to `Save and Run`. 
 
@@ -48,7 +48,7 @@ Add the following to Script Forge:
 2. Add the Script **Name**.
 3. Select `App` for the **Type**.
 4. Slick **Save**.
-5. Click the newly created App
+5. Click the newly created App.
 6. Add the JavaScript code [**dnc-add.js**](https://github.com/connexcs/scriptforge-examples/blob/master/dnc-add.js).
 7. Click the green arrow to `Save and Run`. 
 

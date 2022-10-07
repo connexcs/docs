@@ -1,11 +1,11 @@
 # Alias
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Alias**
 
-An **Alias** allows you to partially or completely rewrite a number. 
+You can entirely or partially rewrite a number using an **Alias**.
 
 ## Create Alias
 
-1. Click the **:material-plus:**.
+1. Click :material-plus:.
     + **Current**: Current number or script (regex).
     + **New**: Set to another number or script (regex).
 2. Click **`Save`**.

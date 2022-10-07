@@ -1,6 +1,6 @@
 # User Interface Display Language
 
-The ConnexCS User Interface (UI) can be configured for several different languages:
+Multiple languages can be configured in the ConnexCS User Interface (UI).
 
 |Language|English Translation|
 |---|---|
@@ -18,16 +18,16 @@ The ConnexCS User Interface (UI) can be configured for several different languag
 |اردو|Urdu|
 |中文|Chinese|
    
-!!! question "Will this change the language for every word on the UI?" 
-    Modifying the language here will change most, but not all, of the words in the Control Panel. To modify existing translated words, and to add your own, go to **Setup :material-menu-right: Advanced :material-menu-right: [Language](https://docs.connexcs.com/setup/advanced/language/)**.
+!!! question "Will this change the language for every word in the UI?" 
+    Changing the language here will change most, but not all the words in the Control Panel. To change existing translated words, and to add your own, go to **Setup :material-menu-right: Advanced :material-menu-right: [Language](https://docs.connexcs.com/setup/advanced/language/)**.
 
-## Change the language on the Control Panel's UI
+## Change the language in the Control Panel's UI
 
 1. Click the down-arrow next to your name (located at the top-right corner of the page).    
 3. Select `Change Language`.
 4. Select a language from the drop-down list.   
 5. Click `Update`.
-6. The ConnexCS Control Panel UI immediately displays most of the text in your preferred language.
+6. The ConnexCS Control Panel UI quickly displays most of the text in your preferred language.
     
 The following image illustrates how your Control Panel looks if you change the language to Spanish.
     
