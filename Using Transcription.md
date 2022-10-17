@@ -1,0 +1,6 @@
+You can choose your Transcription package and the retail cost by navigating to Config>Packages. Then choose the customer's account you want to push the package to. The customer is able to use this service once the package has been subscribed to their account. In Routing>Media, you can enable or disable this service. 
+
+Visit Customer> Latest Calls to access the Transcription; on the right side, there will be a "Transcribe" button. Click on the button to view the Transcription logs. The call is transcribed in real-time. Using the search bar in the Transcription section, you can look up the history of calls that have been transcribed. 
+
+
+The Transcription Query Profile function enables you to construct a query list and save it. You can search the created query list for the calls that have been transcribed. You can also choose whether to publish the query list to your customers. You can choose "Public" from the dropdown menu to reveal the list for this feature's "Visibility" filter, or you can choose "Private" to hide it. You can decide which customers can use a specific list besides to its visibility. You should choose "Customer Name" as "None" and "Visibility" as "Public" if you want every one of your customers to see the list. 
