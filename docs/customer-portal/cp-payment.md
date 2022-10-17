@@ -1,19 +1,19 @@
 # Payments 
-View a list of all the **Payments** that have been made so far. 
+View the list of all **Payments** made to date.
 
-+ **Date/Time**: When the selected payment was made
-+ **Total**: Payment amount
-+ **Status**: The Payment may show Pending, Cancelled or Completed. (Pending and Cancelled will not be included in the balance calculation.)
-+ **Description**: The name of the payment. 
++ **Date/Time**: When the selected payment has been completed.
++ **Total**: Payment amount.
++ **Status**: The payment may show Pending, Cancelled, or Completed. Note: Pending and Cancelled payments are not included in the balance calculation.
++ **Description**: Name of the payment. 
 
-## Make Payment
-To add a new payment, select **`Make Payment`**
+## Make payment
+To add a new payment, select **`Make Payment`**.
 
 1. **Pay via**: (required) 
-    + **Bank Transfer**: Requires the Payment Amount and Currency to be selected. This will set the Payment Status to Pending until it is processed. 
-    + **Voucher**: Requires the Voucher number and Currency
+    + **Bank Transfer**: You are required to select the Payment Amount and Currency. This sets the Payment Status to Pending until it is processed. 
+    + **Voucher**: Requires Voucher number and Currency.
 2. Click **`Pay`**.
 
    
 !!! warning "Negative Payments"
-    If you make some sort of purchase on the account, this will be shown as a negative amount under Total. 
+If you make some kind of purchase on the account, it will appear as a negative amount under Total.

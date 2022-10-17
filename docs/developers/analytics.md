@@ -1,28 +1,30 @@
 # Analytics
 **Developer :material-menu-right: Analytics**
 
-The **Analytics** section is a powerful tool for gathering, manipulating, and displaying graphical and tabular data. You can view and modify a wide range of existing reports or create your own based on various data sources within the system as well as outside 3rd party systems. Data can also be run through Script Forge using processing techniques such as **mapreduce** and **preProcess** function. 
+The **Analytics** section is a powerful tool for gathering, manipulating, and displaying graphical and tabular data. You can view and edit a wide range of existing reports or create your own based on both internal system data sources and external third-party systems. You can also run data through Script Forge using processing techniques such as **mapreduce** and **preProcess** function. 
 
 You can create custom reports to help identify your own key metrics. Here are some examples of what our customers have built:
 
-* **Ticket Count** - Integration with a 3rd party ticket system and display how many tickets a particular customer has open.
-* **FOREX** - Display FOREX data on the dashboard
+* **Ticket Count** - Integration with a third-party ticket system and displays the number of open tickets for a particular consumer.
+* **FOREX** - Display FOREX data on the dashboard.
 * **603 / 604 Block Report** - Display the top CLI's that have been blocked per customer and per carrier.
-* **CLI Stats** - Display stats per CLI
+* **CLI Stats** - Display stats per CLI.
 * **ISO Code Stats** - Display stats by Country ISO.
 
-## Create new Analytics
-Click the :material-plus: to configure the following fields:
+*(**FOREX:** Foreign Exchange, **CLI:** Command Line Interface, **ISO:** International Organization for Standardization)*
+
+## Create New Analytics
+Click :material-plus: to configure the following fields:
 
 &emsp;![alt text][analytics]
 
-+ **Path**: Select where the data will be displayed.
++ **Path**: Select the location to display the data.
     + `Customer`- Management :material-menu-right: Customer :material-menu-right: Stats
     + `Carrier`- Management :material-menu-right: Carrier :material-menu-right: Stats
     + `Dashboard`- Dashboard :material-menu-right: Displayed at the bottom
     + `Route`- Management :material-menu-right: Customer :material-menu-right: Route Stats
     + `Report`- Management :material-menu-right: Report :material-menu-right: Reports
-+ **Section**: Allows you to group analytic components together when sharing the same name. This may often be collated together in the same tab.
++ **Section**: You can group analytic components together when sharing the same name. This is often collated together in the same tab.
 + **Title & Subtitle**: Displays title and subtitle information on the rendered graph / table.
 + **Output**: Select to render data in either Graph or Table, or both together.
 + **Graph Type**: The following graph types are supported.
@@ -33,24 +35,24 @@ Click the :material-plus: to configure the following fields:
     + `Scatter`- 2 Axis of data
     + `Radar`- 1 Axis of data
     + `Gauge`- 1 Axis of data
-+ **Source**: There are multiple sources of data which can be used:
-    + `Analytics`- Big Data multi-vector querying. *Note: Recalcs won't affect this data, and it never should be used for accurate financial data.*
++ **Source**: You can use many data sources such as:
+    + `Analytics`- Big Data multi-vector querying. *Note: Recalcs won't affect this data, and it should never be used for accurate financial data.*
     + `G3`- Single value time-series data.
-    + `RTP`- RTCP information.
-    + `Breakout`- Financially Accurate data available with limited query vectors.
-    + `ScriptForge`- Custom ScriptForge data source, can be used to combine other data sources or even import external data in real-time.
-+ **Fields**: What fields should be displayed in the Graph / Table. This changes per above data source.
-+ **Start Offset**: When there is NOT a data-selector on the page, the start offset will represent how far in the past the query will include.
-+ **Interval**: Select how the graph groups data. 
+    + `RTP`- Real-Time Transport Control Protocol (RTCP) information.
+    + `Breakout`- Financially accurate data available with limited query vectors.
+    + `ScriptForge`- Custom ScriptForge data source can be used to combine other data sources or even import external data in real-time.
++ **Fields**:  Fields to be displayed in the Graph / Table. This changes as per above data source.
++ **Start Offset**: When there is NOT a data-selector on the page, the start offset represents how far in the past the query will include.
++ **Interval**: Select the Interval to group data in the graph. 
     + `Auto`- Automatically choose an appropriate temporal resolution.
     + `Collate`- Collapse all the temporal data (ex: When selecting ACD, instead of having an axis for date/time, it will just display a single scalar value).
-    + `Time-based`- Choose how to group the data (ex: Selecting Hour will display a unique value for each hour).
-+ **Collate / Group**: Choose how the data is to be grouped together. (Ex: Selecting "Customer" would mean that you would get a unique value for each customer.)
-+ **Limit**: How much collated data you wish to be displayed. Be careful not to include too many values.
-+ **Order By**: Which column you wish to order the data by, this is useful in combination with limit. Ex: display the top 10 customers with the worst ACD.
-+ **Width**: When the graph is rendered on a page with multiple graphs, choose how much of the page the graph takes up.
-+ **Stacked**: When using a line, area or bar chart, each series of data will be plotted offset of the previous series (not from the 0 on that axis)
-+ **Filter**: A filter is used to automatically filter the information that is displayed based on variables available from where the page is rendered. The format of a filter changes depending on the data source. Select a data source below to view the example:
+    + `Time-based`- Select the option to group the data based on time (ex: If you select "Hour", it displays a unique value for each hour).
++ **Collate / Group**: Select the option to group the data together. (Ex: If you select "Customer", you would get a unique value for each customer.)
++ **Limit**: Specify the limit to display the amount of collated data. Don't include too many values.
++ **Order By**: The column you wish to order the data by. This is useful in combination with limit. Ex: Display the top 10 customers with the worst Automatic Call Distribution (ACD).
++ **Width**: When the graph is rendered on a page with multiple graphs, select the portion of the page for the graph to occupy.
++ **Stacked**: When using a line, area or bar chart, each series of data is plotted offset of the previous series (not from the 0 on that axis).
++ **Filter**: Use a filter to automatically filter the information that is displayed based on variables available from where the page is rendered. The format of a filter changes depending on the data source. Select a data source below to view the example:
 
 
 
@@ -66,7 +68,7 @@ Click the :material-plus: to configure the following fields:
 	{"customer_id":"@companyId"}
     ```
 	
-=== "RTP"
+=== "RTP" (Real-Time Transport Protocol)
 
     ```
 	{"customer_id":"@companyId", "is_provider":0}
@@ -79,7 +81,8 @@ Click the :material-plus: to configure the following fields:
     ```
 
 !!! tip
-	If you want to render a graph in this view for testing, you may need to temporarily hardcode a customer or carrier ID to make it work.
+	If you want to render a graph in this view for testing, you may need to temporarily hard-code a customer or carrier ID to make it work.
 
 
 [analytics]: /developers/img/analytics.png "Analytics"
+

@@ -2,43 +2,43 @@
 
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Routing**
 
-**CLI (Caller Line Identification)**, aka ANI (Automatic Number Identification), is the _From_ header in SIP and represents the senders number in a telephone call. It is the technical term for the mechanism we know as **Caller ID**. In VoIP systems, CLI is more than just a way to display the number of incoming calls. It is used as a defense against unidentified call attempts, provides information to sort incoming calls, and is an important component of billing.
+**CLI (Caller Line Identification)**, aka ANI (Automatic Number Identification), is the _From_ header in SIP and represents the senders number in a telephone call. It's the technical term for the mechanism we know as **Caller ID**. In VoIP systems, CLI is more than just a way to display the number of incoming calls. It's used as a defense against unidentified call attempts, provides information to sort incoming calls, and is an important component of billing.
 
-In ConnexCS, **CLI** allows you to restrict and manipulate CLIs and Pre-Asserted Identity on customer calls, so that any caller without a valid match is rejected outright.
+In ConnexCS, **CLI** lets you to restrict and manipulate CLIs and Pre-Asserted Identity on customer calls, so that any caller without a valid match is rejected outright.
 
-!!! tip "How is CLI derived?"
+!!! tip "How's CLI derived?"
     **CLI** refers to the **CLI/ANI** field in the `From` part of the `SIP INVITE` message. This contains specific information about the caller, particularly the name and number of the person initiating the call. Also known as "Caller ID" in standard phone systems, CLI may also be referred to as "A-Leg" or "A-Number", where the call originates. The call is then terminated at the Dialed Number, the "B-Leg" or "B-Number".
 
 &emsp;![alt text][cli]
 
 ## Default Behaviour
 
-By default, a customer account will pass all calls, even without any configured CLI records.  To change this behaviour, navigate to **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Edit :material-menu-right: Verification** and enable **Approved CLI's Only**.
+By default, a customer account will pass all calls, even without any configured CLI records. To change this behaviour, navigate to **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Edit :material-menu-right: Verification** and enable **Approved CLI's Only**.
 
 !!! warning "Approve CLI override"
     Once the first CLI rule is entered, the behaviour changes to block all, regardless of the "Approved CLI's Only" setting.
 
 !!! tip "CLI verification tool"
-    In addition to changing the default behaviour to block, adding a CLI rule gives customers the ability to verify their own CLI's from their Control Panel through a call back system. A customer can login to their portal and enter a phone number which should belong to them. The ConnexCS system will place a call and give a code which must be entered into the portal. If the codes match the CLI will be added.
+    In addition to changing the default behaviour to block, adding a CLI rule gives customers the ability to verify their own CLI's from their Control Panel through a call back system. A customer can login to their portal and enter a phone number which should belong to them. The ConnexCS system will place a call and give a code which must be entered into the portal. If the codes match the CLI is added.
 
 ## Creating a Record
 
-Click on the :material-plus: button under **CLI**.
+Click :material-plus: under **CLI**.
 
 *Field details:*
 
-+ **CLI**: To allow CLIs through, enter the desired number or a regular expression (to match and replace).
++ **CLI**: To allow CLIs through, enter the required number or a regular expression (to match and replace).
 
-+ **Pre-Asserted-ID**: To allow Pre-Asserted-Identities (PAID), enter the desired number or a regular expression to match and replace. 
++ **Pre-Asserted-ID**: To allow Pre-Asserted-Identities (PAID), enter the required number or a regular expression to match and replace. 
 
 + **Rewrite CLI**: A CLI can be re-written. For example, you can add `123456789` in the CLI box, and then rewrite by adding `987654321` in the re-write CLI box. (For more advanced CLI manipulation, see [**Advanced CLI Match & Manipulation**](/customer/cli/#advanced-cli-match-manipulation) below.)
 
-+ **Rewrite P-Asserted-ID**: This is a SIP Header similar to the FROM header, but classified as a private, or network-level identifier. Telephone companies use it to identify call originators, but then it is stripped at the call server, so the client end-points only see the FROM field. This is especially helpful when caller's obscure their CLI/FROM information, as the network-level still requires origination details. The **P-Asserted-ID** manipulation uses the same syntax as Replace CLI.
++ **Rewrite P-Asserted-ID**: This is a SIP Header similar to the FROM header, but classified as a private, or network-level identifier. Telephone companies use it to identify call originators, but then it's stripped at the call server, so the client end-points only see the FROM field. This is especially helpful when caller's obscure their CLI/FROM information, as the network-level still requires origination details. The **P-Asserted-ID** manipulation uses the same syntax as Replace CLI.
 
 !!! tip "P-Asserted-ID Use Case"
     If you wanted to allow all calls, but assign a specific number (such as the Main Billable number for the business), you would set CLI as ".*" then enter the desired P-Asserted ID. All calls will then have this number as the P-Asserted-ID. 
 
-+ **Forced**: Enabling this will allow a call if there are no other matching CLIs in the system. This will also replace the CLI that is presented with the CLI entered here. Ex: Create a whitelist of CLIs, then select **Forced** on the CLI to use if none of the others in the whitelist match. (Best practice is to only have one **Forced** CLI.)
++ **Forced**: Enabling this will allow a call if there are no other matching CLIs in the system. This will also replace the CLI that's presented with the CLI entered here. Ex: Create a whitelist of CLIs, then select **Forced** on the CLI to use if none of the others in the whitelist match. (Best practice is to only have one **Forced** CLI.)
 
 + **Direction Applied**: Select either **Termination** for calls a customer makes out, or **Origination** (also refers to DIDs) for inbound calls made to our customers. Ex: Create a whitelist that only allows calls to or from the same country.  
 
@@ -49,7 +49,7 @@ Click on the :material-plus: button under **CLI**.
 Click **`Save`** to complete the CLI configuration. 
 
 ## Allow Customer to add their own CLI
-Navigate to **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Edit :material-menu-right: Verification** and check the box for "Approved CLIs Only". The customer can then go to the Customer Portal CLI section and add numbers there.  
+Navigate to **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Edit :material-menu-right: Verification** and select the "Approved CLIs Only" checkbox. The customer can then go to the Customer Portal CLI section and add numbers there.  
 
 &emsp;![alt text][approvedcli]
 
@@ -61,7 +61,7 @@ Navigate to **Management :material-menu-right: Customer :material-menu-right: [C
 Configuring a number as a **CLI** in ConnexCS gives the customer the ability to control which numbers are allowed to initiate calls. Any number configured as a CLI is considered part of the Whitelist (unless additional configuration is applied to block it).
 
 #### Filter CLI by Number
-Block all calls that do not have the CLI "123456789":
+Block all calls that don't have the CLI "123456789":
 
 | CLI         | Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB | 
 |-------------|-----------------|-------------|-----------------------|--------|----------|--------------|
@@ -97,7 +97,7 @@ If your customers do origination as well as termination, they already have a lis
 |     |                 |             |                       | No     | Filter  | None         |
 
 #### Filter PAID by Number or Pattern
-The same is true for Pre-Asserted-Identity as it is with CLI, you can filter by PAID, as in this example.
+The same is true for Pre-Asserted-Identity as it's with CLI, you can filter by PAID, as in this example.
 
 | CLI | Pre-Asserted-ID           | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
 |-----|---------------------------|-------------|-----------------------|--------|----------|--------------|
@@ -112,7 +112,7 @@ Filters are `AND` together, meaning for a call to pass on this example, the CLI 
 | `1122334455` | `123456789`               |             |                       | No     | Disabled | None         |
 
 #### Filter CLI from a Large List
-Large lists of numbers can be managed from our Userspace database. Once the numbers are uploaded, you can use the following options to filter by the uploaded list. Note that the filter is a partial match.
+You can manage large lists of numbers from our Userspace database. Once you upload the numbers, you can use the following options to filter by the uploaded list. Note that the filter is a partial match.
 
 | Pre-Asserted-ID  | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB  |
 |------------------|-------------|-----------------------|--------|----------|---------------|
@@ -182,7 +182,7 @@ You may wish to do perform CLI Localization. For example, if you have multiple D
 |                |                 |             |                       | Yes    | Prefix Match | None         |
 
 #### Pick a CLI from a Large List
-Large lists of numbers can be managed from our Userspace database. Once the numbers are uploaded, you can use the following options to choose a number at random.
+You can manage large lists of numbers can be managed from our Userspace database.  Once you upload the numbers, you can use the following options to choose a number at random.
 
 | Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID      | Userspace DB  |
 |-----------------|-------------|-----------------------|--------|--------------|---------------|
@@ -192,7 +192,7 @@ Large lists of numbers can be managed from our Userspace database. Once the numb
 Sometimes it can be useful to retain all or part of the CLI being sent manipulate it when it gets sent out.
 
 !!! tip "Are you Normalizing?"
-    Normalizing is the process of using a common number format. For ConnexCS, this is the international format. You should not be using CLI Manipulation to correct the format or a number, this should be done by Parameter Rewrite (see [**Number Manipulation**](/number-manipulation/) for details).
+    Normalizing is the process of using a common number format. For ConnexCS, this is the international format. You shouldn't be using CLI Manipulation to correct the format or a number, this should be done by Parameter Rewrite (see [**Number Manipulation**](/number-manipulation/) for details).
 
 #### Regex Pattern Examples
 If a customer sends a call where the CLI starts with a 9 we can strip it out and replace it with a 44. For example, `9123456789` will become `4423456789`.
@@ -217,7 +217,7 @@ You can use all or part of a sent Pre-Asserted-Identity as the CLI. The followin
 |----------------|------------------|-------------|-----------------------|--------|----------|--------------|
 | `.*`           | `^(?<paid>.*)$`  | `$<paid>`   |                       | No     | Disabled | None         |
 
-In addition to the matched group as above, we have the expression `(?<paid>.*)`. Here, `paid` represents a variable where this information is stored, it is then available in the CLI rewrite scope as `$<paid>`
+In addition to the matched group as above, we've the expression `(?<paid>.*)`. Here, `paid` represents a variable where this information is stored, it's then available in the CLI rewrite scope as `$<paid>`
 
 !!! tip "Variable Scope"
     Numbered groups (e.g `$1`, `$2`) will only be **read** from the CLI and will be available in CLI rewrite or in Pre-Asserted-Identity Rewrite. Named groups can be read from, and used, anywhere.
@@ -230,7 +230,7 @@ Manipulate the P-Asserted ID similarly to how we manipulated the CLI. In this ca
 | `.*` | `^9(?<paid>.*)$` |             | `44$<paid>`           | No     | Disabled | None         |
 
 #### Use CLI
-If we want to use the CLI in the Pre-Asserted-Identity it is a little easier as we can just use the numbered group.
+If we want to use the CLI in the Pre-Asserted-Identity it's a little easier as we can just use the numbered group.
 
 | CLI      | Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
 |----------|-----------------|-------------|-----------------------|--------|----------|--------------|
@@ -250,7 +250,7 @@ The CLI system uses Regular Expressions to match and replace numbers. Here are a
 *To learn more about writing regular expressions, visit [**RegExr**](http://regexr.com) for tutorials and exercises available for all levels of expertise.*
 
 ## Blacklist numbers per provider
-Using **CLI Restrict** lets you block calls, essentially creating a Blacklist of numbers. To block a configured CLI:
+Use**CLI Restrict** to block calls, essentially creating a Blacklist of numbers. To block a configured CLI:
 
 1. Click **Management :material-menu-right: Rate Card**. 
 2. Select **Provider Rate Card** (under the Name column).

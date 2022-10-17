@@ -4,14 +4,14 @@
 Use **Packages** to offer predefined products and services to each customer. 
 
 ## Assign Packages
-Click the :material-plus: button.
+1. Click :material-plus:
 
-+ Select **Package** you want to assign to the customer (Package Details will display below). 
-+ Enter the required **Quantity** and **Start Date**.
-+ Select **End Date** if desired. 
-+ Selecting **Auto Decrement Credit** will debit the package amount from the customer account based on the Frequency and Frequency Match under Package details.
+   + Select the **Package** you want to assign to the customer. Package Details will appear below. 
+   + Enter the required **Quantity** and **Start Date**.
+   + Select **End Date**, if required. 
+   + Selecting **Auto Decrement Credit** will debit the package amount from the customer account based on the Frequency and Frequency Match under Package details.
 
-Click the **`Save`** button.
+2. Click **`Save`**.
 
 &emsp; ![alt text][customer-packages]
 

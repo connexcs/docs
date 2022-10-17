@@ -4,14 +4,14 @@
 Create your own **Templates** to customise the content displayed on outbound emails/SMS, the Customer Portal, and WebPhone. ConnexCS **Templates** use the mustash-compatible template language [**Handlebars**](https://handlebarsjs.com/guide/).
 
 !!! note "Template Syntax"
-    It is important to follow the template syntax, fields such as `{email}` or `{account_name}` need to be entered exactly otherwise they won't be replaced correctly when the template is rendered. 
+    It's important for you to follow the template syntax and enter fields such as `{email}` or `{account_name}` exactly. If not, they won't be replaced correctly when the template is rendered. 
 
 ## Add Template
 Click the blue :material-plus: to add a new Template. 
 
 + **Name** the template.
 + **Subject** for the communication (supports variables).
-+ **SMS** field does not cause the SMS to be sent, but it is available for use when other parts of the system have SMS set. 
++ **SMS** field doesn't actually send the SMS, but it's usable when other parts of the system have SMS set. 
 + Use **Text** or **HTML** for the content of the communication. 
 
     ![alt text][addtemp]
@@ -22,12 +22,12 @@ Click the blue :material-plus: to add a new Template.
     The templating system will replace placeholders with the variable when it is rendered.
 
 ## Stock Templates
-ConnexCS provides standard templates which you are free to customise as you wish. To customise any template, click on the template name, modify as needed, and click save. To revert the template to its original configuration, check the box next to the Name and select the **`Reset`** button. 
+ConnexCS provides standard templates which you can customise as you wish. To customise any template, click on the template name, modify as needed, and click Save. To revert the template to its original configuration, select the checkbox next to the Name and click **`Reset`**. 
 
 ## ScriptForge Integration  
 Dynamic Templates with custom variables are made by including ScriptForge (further details [**here**](https://docs.connexcs.com/developers/scriptforge/). This is done by using the `scriptforge` tag. Ex: To include a ScriptForge script with ID 1234, use `{{scriptforge 1234}}`. 
 
-This will pass ALL of the variables in the current scope to ScriptForge. Whatever ScriptForge returns will then be made available back in the main scope for use with the template system.
+This will pass ALL the variables in the current scope to ScriptForge. Whatever ScriptForge returns is then made available back in the main scope for use with the template system.
   
 ### Sample RSS Feed Injection into a template
 

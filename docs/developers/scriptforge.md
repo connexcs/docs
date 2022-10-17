@@ -1,19 +1,19 @@
 # ScriptForge 
 **Developer :material-menu-right: ScriptForge**
 
-ConnexCS **ScriptForge** allows you to write ECMAScript 2015 (ES6) (aka JavaScript) which is executed in a secure sandbox on the server. It is designed to be low latency and high throughput.
+Use ConnexCS **ScriptForge** to write ECMAScript 2015 (ES6) (aka JavaScript) and execute in a secure sandbox on the server. It is designed to be low latency and high throughput.
 
-It is made for scripts and small applications. Any larger applications are best executed on external hardware with ScriptForge intermediating it.
+It is made for scripts and small applications. Any larger applications are best executed on external hardware through ScriptForge.
 
-A fair-usage policy applies, and your script may not function as expected if there is unnecessary resource utilisation or if there are any attempts to break the sandbox.
+A fair-usage policy applies, and if there is unnecessary resource use or if there are any attempts to break the sandbox, your script may not function as expected.
 
-It is designed to work as FaaS (Functions as a Service) and auto-scaling your application is handled by our redundant infrastructure
+It's designed to work as FaaS (Functions as a Service), and our redundant infrastructure handles your application's auto scaling needs.
 
 ## Developer Documentation
-ConnexCS provide a number of libraries specifically for use with ConnexCS. [**Developer API Documentation is available here**](https://scriptforge-docs.connexcs.com). 
+ConnexCS offers several libraries specifically for use with ConnexCS. [**Developer API Documentation is available here**](https://scriptforge-docs.connexcs.com). 
 
 ### Available Modules
-You can include some additional modules (from npm), available for applications and drivers only. Our objective is to keep the sandbox lightweight and only include modules which are necessary:
+You can include some more modules (from npm), available for applications and drivers only. The objective is to keep the sandbox lightweight and include only necessary modules:
 
 |Modules||||
 |---|---|---|---|
@@ -23,7 +23,7 @@ You can include some additional modules (from npm), available for applications a
 |rss-parser|soap|stripe|tough-cookie|
 
 ### Sample Scripts
-You can find sample scripts in our GitHub repository for [**example applications**](https://github.com/connexcs/scriptforge-examples/). A few uses cases are included below, however with a Turing Complete language, the possibilities are endless.
+You can find sample scripts in our GitHub repository > [**example applications**](https://github.com/connexcs/scriptforge-examples/). A few uses cases are included below, but with a Turing Complete language, the possibilities are endless.
 
 * Do Not Call Lists
 * Custom Fraud Detection
@@ -35,17 +35,18 @@ You can find sample scripts in our GitHub repository for [**example applications
 * Time of Day Restrictions
 
 ## Coding Basics
-Script & Apps typically start in the `main()` function and expects a promise to be returned. The first parameter is typically an object called `data`.
+Script & Apps typically start in the `main()` function and expects to return a promise. The first parameter is typically an object called `data`.
 
 ### Throwing Errors (Class 4)
 
-Errors can be thrown in the format [SIP code] :space: [Error Message], for example to throw a 404 Not Found you can use the following
+Errors can be thrown in the format [SIP code] :space: [Error Message]. For example: To throw a 404 Not Found, you can use the following
 ``` js
 	throw new Error('404 Not Found');
 ```
+*(**SIP:** Session Initiation Protocol, **DID:** Direct Inward Dialing)
 
 ### Class 4 Routing (Routes & DID)
-After the routing engine has executed its main function, the system will run the custom ScriptForge script. This presents data as the output to the routing engine and expects the same object structure to be passed along. 
+After the routing engine has executed its main function, the system will run the custom ScriptForge script. This presents data as the output to the routing engine and is expected to send along the same object structure. 
 
 ``` js
 function main (data = {}) {
@@ -56,7 +57,7 @@ function main (data = {}) {
 ```
 
 ### Class 5 Programmable Voice
-Programmable Voice allows you to write smart voice applications controlled in modern JavaScript. The execution of the Programmable Voice script is done synchronously with the call, simplifying the entire process. This means that (for example) you would initially run an `await answer()`, it would not progress to the next line until our platform has finished executing the operation. See the [**ConnexCS ScriptForge documents**](https://scriptforge-docs.connexcs.com/ctx.html) for additional JavaScript examples.
+You can use Programmable Voice to write smart voice applications controlled in modern JavaScript. The execution of the Programmable Voice script is done synchronously with the call, simplifying the entire process. This means that (for example) you would initially run an `await answer()`, it would not progress to the next line until the platform has finished executing the operation. See the [**ConnexCS ScriptForge documents**](https://scriptforge-docs.connexcs.com/ctx.html) for more JavaScript examples.
 
 Second parameter is a ctx object
 ``` js
@@ -66,10 +67,10 @@ function main (data = {}, ctx) {
 ```
 
 !!! warning "Potential Sync Issues"
-    Ensure that ALL async functions are executed with `await`, otherwise the system will lose the synchronised state with your script and the connection will crash. If not implemented correctly, billing and call stability could be impacted.
+   To prevent the system from losing the synchronised state with your script and connection crash, make sure to execute ALL async functions with `await`. If it isn't implemented correctly, billing and call stability are impacted.
 
 ### Form Submission
-Used to receive data from Form Builder in ConnexCS, which can be displayed in the control panel or customer portal.
+Used to receive data from Form Builder in ConnexCS, and is displayed in the control panel or customer portal.
 
 ``` js
 function main (data = {}) {
@@ -101,11 +102,11 @@ module.export = {
 ## Configuration
 
 ### Build Script
-1. Add a script by clicking :material-plus:.
-2. **Name** the script.
+1. To add a script, click :material-plus:.
+2. Specify the script **Name**.
 3. Select the **Type**:
 
-    + `Script`- This is the fastest way to execute custom code and is "synchronous" execution. This should mainly be used for manipulations or calculations. It can't use libraries or work with Promises.
+    + `Script`- This is the fastest way to execute custom code and is "synchronous" execution. This is mainly used for manipulations or calculations. It can't use libraries or work with Promises.
     + `App`- Feature rich applications which can include a preset (whitelist) of available modules, the penalty of the extra features is a slightly higher latency. 
     + `Driver`- A driver works as an intermediary between ConnexCS and any external system. You can write drivers to bridge the ConnexCS DID provisioning system to a provider of your choice or build more complicated alerts.
 
@@ -114,11 +115,11 @@ module.export = {
     ![alt text][s2]   
     
 4. Select your script from the list.
-5. Enter the code of your script
+5. Enter the code of your script.
 6. Click the green arrow to **`Save and Run`**. 
-7. The results will be shown onscreen.
+7. The results are shown onscreen.
 
-If script shows an error, add this then run the script again:
+If script shows an error, add this and then run the script again:
 ```
 {"routing":{}}
 ```
@@ -126,18 +127,18 @@ If script shows an error, add this then run the script again:
 ### Assign the Script to a Customer
 
 1. Select **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Routing**
-4. Select a Rate Card from Ingress Routing.
+2. Select a Rate Card from Ingress Routing.
 
     ![alt text][s8]  
  
-5. Go to **ScriptForge**
-5. Select the script
-6. Set the **Timeout** to specify how long it will run before timing out
-6. The **Timeout Action** is entered manually and must be formatted as **`[sip response code] [sip response message]`**. 
-6. Click **`Save`**.
+3. Go to **ScriptForge**
+4. Select the script.
+5. Set the **Timeout** to specify the duration you want it to run before it times out.
+6. Enter the **Timeout Action** manually and must be formatted as **`[sip response code] [sip response message]`**. 
+7. Click **`Save`**.
 
 ### Assign the script to other functions
-ScriptForge was initially designed to run from the routing-engine only, however it is available for the following scenarios:
+ScriptForge was initially designed to run from the routing-engine only, but it's available for the following scenarios:
 
 **Class 4 Routing (Termination) - (App or Script)**: 
 Management :material-menu-right: Customer :material-menu-right: [Your Customer] :material-menu-right: Routing :material-menu-right: [Your Route] :material-menu-right: ScriptForge

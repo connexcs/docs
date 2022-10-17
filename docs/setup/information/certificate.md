@@ -5,8 +5,10 @@
 
 * Customer Portal
 * WebPhone
-* TLS SIP
+* TLS SIP  
 * WebRTC
+
+*(**TLS**:Transport Layer Security, **SIP**: Session Initiation Protocol, **WebRTC**: Web Real-Time Communication)*
 
 ConnexCS provides certificates free of charge courtesy of **[Let's Encrypt](https://letsencrypt.org/)** or User Provided.
 
@@ -18,16 +20,16 @@ To add a certificate:
 
 ### Let's Encrypt
 
-1. Enter the **Domain** name for this certificate. To allow ConnexCS to manage your certificates, you must ensure that the DNS records are set correctly so they are pointing to the correct server of ours.
+1. Enter the **Domain** name for this certificate. To allow ConnexCS to manage your certificates, you must ensure that the DNS records are appropriately set to point to our server.
 2. Set **User Provided** to "No". 
-3. Click **`Save`** and our system will provision the certificate for you.
+3. Click **`Save`** and the system will provide you the certificate.
 
 **Let's Encrypt** renewals are managed automatically.
 
 ### User Provided
 
 1. Enter the domain name for this certificate.
-2. Ensure that you have user provided to set to "Yes".
+2. Ensure that **User Provided** is set to "Yes".
 3. Certificate and keys should be in PEM (base64 format).
 4. Enter your **Certificate** with the BEGIN and END tags as follows:
 
@@ -62,6 +64,6 @@ To add a certificate:
 Renewals for **User Provided** certificates are your responsibility.
 
 ## Checking Certificates
-The Status column contains a :fontawesome-check: representing all checks having passed.
+The Status column has a :fontawesome-check: representing all passed checks.
 
-A problem is represented by :fontawesome-exclamation-triangle:. If you hover your mouse you will see a checklist explaining the issue.
+A problem is represented by :fontawesome-exclamation-triangle:. If you hover your mouse, you will see a checklist explaining the issue.

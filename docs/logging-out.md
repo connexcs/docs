@@ -1,6 +1,6 @@
-# Logging Out of the ConnexCS Control Panel
+# Logging out of the ConnexCS Control Panel
 
-You log out of the ConnexCS Control Panel when you no longer want to use the features on the portal.
+When you no longer want to use the features on the portal, log out of the ConnexCS Control Panel.
 
 To log out of the ConnexCS Control Panel:
 

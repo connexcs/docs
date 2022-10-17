@@ -1,7 +1,7 @@
 # Alerts
-**Alerts** allow you to monitor various aspects of your account. This may include tracking when your balance gets below a certain threshold or if specific usage parameter such as CPS or channels gets too high. The automated process also gives you real-time insight into your account status. 
+**Alerts** allow you to check various aspects of your account. This includes tracking when your balance falls below a certain threshold or if specific usage parameter such as Calls per Second (CPS) or channels becomes very high. The automated process also gives you real-time insight into your account status. 
 
-Click the **Alert** `Title` to view configuration details. 
+Click **Alert** `Title` to view the configuration details. 
 
 Click **`Test`** to run a Simulation of the **Alert**. 
 

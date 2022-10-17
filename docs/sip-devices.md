@@ -1,27 +1,27 @@
-# SIP Devices
+# Session Initiation Protocol (SIP) Devices
 **Management :material-menu-right: SIP Devices**
 
-**SIP Devices** allows providers the ability to set a config file for a wide range of SIP phone make and models. This is typically only used by MSPs (Managed Service Providers). 
+**SIP Devices** allows providers the ability to set a config file for a wide range of SIP phone make and models. It is mostly used by MSPs (Managed Service Providers). 
 
 ## Add SIP Device
 To add a new SIP device:
 
-2. Click the :material-plus: button.
-4. Specify the MAC / IMIE / UUID to provision a customer device directly. 
-3. Select the customer and enter any desired information.
-4. At the bottom of the edit screen, there is a **`Edit Device Item`** button which allows you to configure the Line #, Display Name, CLI, and additional settings. 
-4. Click **`Save`**.
+1. Click :material-plus:.
+2. Specify the MAC / IMIE / UUID to directly provision a customer device. (MAC: Media Access Control Address, IMEI: International Mobile Equipment Identity, UUID: Universally Unique Identifier)
+3. Select the customer and enter any required information.
+4. At the bottom of the edit screen, there is a **`Edit Device Item`** button that allows you to configure the Line #, Display Name, CLI, and other settings. 
+5. Click **`Save`**.
 
     ![alt text][sip-device] 
     
 !!! info "Advanced provisioning"
-    Use the Vars field to configure custom parameters such as shared line extensions and the customer Phonebook.
+    Use the **Vars** field to configure custom parameters such as shared line extensions and customer Phonebook.
 
-## View and Edit Device
+## View and edit Device
 Allows you to view and edit device information, including the addition of device lines.
 
-1. To view a device, select any device
-2. Select the **`Edit`** button from the form that opens.
+1. To view a device, select any device. A form appears.
+2. Select **`Edit`**.
 
 
 ## Delete Device

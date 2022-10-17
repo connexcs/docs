@@ -2,7 +2,7 @@
 
 **Global**
 
-The **Global** section of the ConnexCS Control Panel provides an account-wide overview of many of the same sections found under **Management :material-menu-right: Customer** or **Carrier**. This can be helpful for troubleshooting issues across customers or for situations where you are trying to locate the customer of a specific a DID. Some sections may also be configured and managed from the Global view. 
+The **Global** section of the ConnexCS Control Panel provides an account-wide overview of many of the same sections found in **Management :material-menu-right: Customer** or **Carrier**. This can be helpful for troubleshooting issues across customers or for situations where you are trying to locate the customer of a specific a Direct Inward Dial (DID). You can also configure and manage some sections from the Global view. 
 
 
 ## Alerts
@@ -16,7 +16,7 @@ Alternate location(s):
 * Carrier :material-menu-right: [Carrier Name] :material-menu-right: Alerts
 
 !!! tip "Testing"
-    Click the **`Test`** button (only available here) to simulate the Alert. 
+    Click **`Test`** (only available here) to simulate the Alert. 
 
 ## Contacts
 View all Customer Contacts. When creating a Contact from Global, you will need to select the Company where the Contact exists.
@@ -48,7 +48,7 @@ Alternate location(s):
 * Customer :material-menu-right: [Customer Name] :material-menu-right: Dialogs
 
 ## Routing
-View overview of configured routes grouped by Customer, Customer Card, Provider Card, as well as all active Channels and current CPS calls per account. 
+View overview of configured routes grouped by Customer, Customer Card, Provider Card, and all active Channels and current CPS calls per account. 
 
 *See [**Routing Overview**](/routing) and [**Rate Card Overview**](/rate-card-building) for details.*
 
@@ -57,7 +57,7 @@ Alternate location(s):
 * Customer :material-menu-right: [Customer Name] :material-menu-right: Routing :material-menu-right: Ingress Routing
 
 ## DID
-View list of all DIDs, as well as configuration and editing. 
+View list of all DIDs, and configuration and editing. 
 
 *See [**DID**](https://docs.connexcs.com/customer/did) for configuration details, including Bulk Upload.*
 
@@ -111,10 +111,10 @@ View active registrations (live calls) of desk phones in to ConnexCS.
 
 * Username: registered user
 * IP: current IP
-* Protocol: protocol it is registered from
+* Protocol: protocol it's registered from
 * NAT: indicates that far-end NAT traversal has modified the entry
 * TTL: time since request came in
-* Send: click `Message` to send a note (select multiple entries if desired)
+* Send: click `Message` to send a note (select multiple entries if required)
 
 **Outbound Registrations**
 View active registrations (live calls)  from ConnexCS out.
@@ -128,7 +128,7 @@ View active registrations (live calls)  from ConnexCS out.
 
 
 !!! note "Global View Only"
-    This section does not have a corresponding view from within individual Customers. 
+    This section doesn't have a corresponding view from within individual Customers. 
 
 ## SIP User Authentication
 View status of all SIP Users, reset the SIP Password (including the option to generate one), and send a message to the SIP User. 

@@ -1,7 +1,7 @@
 # Statement
 **Setup :material-menu-right: Information :material-menu-right: Statement**
 
-**Statement** displays daily spending on your ConnexCS account, typically used when a customer has questions about billing. Use the Columns section on the right to drill down based on Ros and Values for detailed analysis. 
+**Statement** displays daily spending on your ConnexCS account, typically used when a customer has questions about billing. Use the Columns section on the right to drill down based on Return on sales (ROS) and Values for detailed analysis. 
 
 ### Columns
 

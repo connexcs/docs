@@ -1,22 +1,25 @@
 # Button Builder
 **Developer :material-menu-right: Button Builder**
 
-**Button Builder** is used in combination with [**Form Builder**](https://docs.connexcs.com/developers/form-builder/) to create a button which can be placed in an existing menu on the site.
+Use **Button Builder** in combination with [**Form Builder**](https://docs.connexcs.com/developers/form-builder/) to create a button which is placed in an existing menu on the site.
 
 !!! example "Example use"
-    Create the ability to select 1 or more customers/DIDs, supplement with additional information gathered from a form, then run Script Forge to either send that data outside the system or perform bulk operations which may need to be repeated.
 
-## Create new Button
-Click the :material-plus: and complete the following fields:
+  1.  Create the ability to select one or more customers/DIDs (DID: Direct Inward Dialing) 
+  2.  Supplement with additional information from a form 
+  3.  And then, run Script Forge to send that data outside the system or perform bulk operations that may need to be repeated.
 
-+ **Label** - Enter the button label (what it will say).
+## Create new button
+Click :material-plus: and complete the following fields:
+
++ **Label** - Enter the button label.
 + **Icon** - Select an icon to display.
 + **Type / Colour** - Select the button colour.
-+ **Tooltip** - Include brief description of of what the button does.
++ **Tooltip** - Include brief description of the button.
 + **Placement** - This selection will display the button at the top of the Customers list, Carriers list, or Invoices.
-+ **ScriptForge** - Choose the Script Forge (if any) to run when the button is clicked.
-+ **Forms** - Choose the form (if any) to display when the button is clicked, which will pass the data over to the chosen Script Forge.
-+ **Min / Max Select** - No selection means the button is available when selecting no records. Entering limits will set mix/max limits to the selection.
-+ **Sort Order** - tbd.
++ **ScriptForge** -  When you click the button, select the Script Forge (if any) to launch.
++ **Forms** - When you click the button, select the form (if any) to display, and then pass the data over to the selected Script Forge.
++ **Min / Max Select** - When there is no choices, the button is still accessible. Limitations entered will apply mix/max limits to the selection.
++ **Sort Order** -  To be decided.
 
-Click **`Save`** to make the new Button available for placement. 
+Click **`Save`** to make the new button available for placement. 
