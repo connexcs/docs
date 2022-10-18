@@ -80,7 +80,9 @@ nav:
     
     - Report: report.md  
 
-    - Global: global.md
+    - Global:
+        - Global: global.md
+        - Transcription: transcription.md
     
     - Class 5 (UCS):
         - Apps: class5/apps.md
