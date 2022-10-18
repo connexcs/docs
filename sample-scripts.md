@@ -1,7 +1,7 @@
-# **Scriptforge Examples**
+# Scriptforge Examples
 Sample scripts are available on our GitHub repository under example applications. Let's discuss some scripts briefly.
 
-## **List of Scriptforge Examples**
+## List of Scriptforge Examples
 * [**account-jump.js**](https://github.com/connexcs/scriptforge-examples/blob/master/account-jump.js): With the use of this function, a call that is received via a "shared" CLI can be routed to the Class 5 system, pretending to be from a separate customer. A pre-entered CLI will be used to select the customer. The system can then be used for pinless calling card services. 
 * [**api.js**](https://github.com/connexcs/scriptforge-examples/blob/master/api.js): The code attempts to get the customer object from the  API.
 * [**asrplus-faster-call-fail.js**](https://github.com/connexcs/scriptforge-examples/blob/master/asrplus-faster-call-fail.js): ConnexCS's ASRPlus functionality minimizes unnecessary attempts and expedites call failures. It works best for heavy traffic profiles like in call centers.
