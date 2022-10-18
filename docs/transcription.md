@@ -1,5 +1,7 @@
 # Transcription
 
+Global :material-menu-right: Transcription
+
 ## Introduction
 
 !!! danger "Alpha Feature" Transcription is currently in public Alpha, it's not intended for production usage and has limited documentation, we are working on this.
