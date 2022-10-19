@@ -13,29 +13,54 @@ English is the only language offered at present, however, additional languages c
 
 Depending on the needs of customers, you can define individual prices. You can also select the quantity you want to offer your customer.
 
-## Using Transcription
+## Transcription Setup
 
-1. You can choose your Transcription package and the retail cost by navigating to **Config>Packages**. 
-2. Then choose the customer's account you want to push the package to. 
-3. The customer is able to use this service once the package has been subscribed to their account. 
-4. In **Routing>Media**, you can enable or disable this service.
-5. To access the Transcription visit **Customer> Latest Calls**; on the right side, there will be a Transcribe button. 
-6. Click on the button to view the Transcription logs. The call is transcribed in real-time. 
-7. Using the search bar in the Transcription section, you can look up the history of calls that have been transcribed.
+### Enable Transcription
+To enable Transcriptions on your account you can go to Setup :material-menu-right: Settings :material-menu-right: Account and click the "Enable Transcription" button
 
-Another interesting feature is the **Transcription Query Profile**, let's discuss its characteristics. 
+### Create a Transcription Package
+To create a package to resell to your customers go to Config :material-menu-right: Packages ...
 
-The **Transcription Query Profile** function enables you to construct a query list and save it. You can search the created query list for the calls that have been transcribed. You can also choose whether to publish the query list to your customers. 
+### Automated Transcriptions
+Add Package to Customers Account ...
+Enable in Routing ...
 
-You can choose **Public** from the dropdown menu to reveal the list for this feature's **Visibility** dropdown, or you can choose **Private** to hide it. 
+### Manual Transcriptions
 
-You can decide which customers can use a specific list besides to its visibility. 
+Logging Page ...
+
+
+## Analyzing Transcriptions
+
+Once a call has been transcribed it is placed into a full-text search engine, available only to you and (in the future) your customer.
+
+To analyze the transcriptions we will be sending a query to the server which will then based upon your search criteria return results with a score.
+
+### Ad-hoc Queries
+
+To view existing transcriptions, you can entere `*` and choose the required date range, and it will return all the results. You can further refine your search using query modifiers (anchor) 
+
+### Saved Queries / Transcription Query Profile
+
+Saved queries allows you to build a query which you can reuse.
+
+#### Visibility
+
+Visibility is a privacy setting which allows you to decide if you want your customers to be able to see (and use) the query which you have saved. **Public** will allow your customers to see this, **Private** will keep it hidden from them.
 
 You should choose **Customer Name** as **None** and **Visibility** as **Public** if you want every one of your customers to see the list.
 
-## Transcription Search Box
+## Search Modifiers
 
-The Transcription Search Box allows you to search for the transcribed call. You can use **Search Modifiers** to simplify and expedite the search process. Search modifications allow you to search for specific data and improve the accuracy of your searches. Let’s talk about the modifiers that might help you look through your call transcripts. 
+Search modifications allow you to describe what you want to find. There is a specific syntax to help you with this.
+
+| Query Type   | Example | Example Matches     |
+|--------------|---------|---------------------|
+| Wildcard     | c\*t     | cat<br>count<br>cut |
+| Place Holder | c?a     | cat<br>cut          |
+|              |         |                     |
+
+
 
 ### **1. Wildcard Searches**
 
