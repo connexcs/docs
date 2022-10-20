@@ -34,12 +34,40 @@ In Routing :material-menu-right: Media, you can enable or disable this service.
 
 Navigate to the **Logging Page** to access the transcribed calls.
 
-
-## Analyzing Transcriptions
+## Search Transcriptions
 
 Once a call has been transcribed it is placed into a full-text search engine, available only to you and (in the future) your customer.
 
-To analyze the transcriptions we will be sending a query to the server which will then based upon your search criteria return results with a score.
+To search for a transcriptions we will be sending a query to the server which will then based upon your search criteria return results with a score, we can use search modifiers to help us accomplish this.
+
+### Search Modifiers
+
+Search modifications allow you to describe what you want to find. There is a specific syntax to help you with this.
+
+| Query Type               | Example                                                     | Example Matches                                                     | Description                                                                                                                                                                                                                                                                   |                                                                                                                                                                                                                                               |
+|--------------------------|-------------------------------------------------------------|---------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Wildcard                 | c\*t                                                        | cat<br>count<br>cut<br>context<br>compact                           | 1. When looking for alternative spellings and variations of a root word, wildcards are used.<br><br>2. Used in place of multiple characters                                                                                                                                   | ℹ️: Wildcard characters cannot be used in place of a word's first letter or within an exact phrase search.                                                                                                                                     |
+| Placeholder              | c?t                                                         | cat<br>cut<br>cot                                                   | Used in place of single characters                                                                                                                                                                                                                                            |                                                                                                                                                                                                                                               |
+| Fuzzy Searches           | ~colr                                                       | colour<br>color<br>colt<br>caller                                   | 1. A fuzzy search looks for text that closely, rather than precisely, matches a keyword. Even if your search terms are mistyped, fuzzy searches can still help you find relevant results. <br><br>2. Put a tilde (~) at the end of the search term to execute a fuzzy search. | ⚠️ Please do not use Wildcards and Fuzzy searches together: Fuzzy and wildcard operators cannot be combined and used. One of the operators is not used when the two are combined. For instance, for fuzzy you can simply say "query": "rich~1" |
+| Boolean Expressions      | +apples red -green                                          | apples must be included, red is optional, green must be absent      | 1. Boolean operators are used as conjunctions to combine or exclude keywords in a search. <br><br>2. These operators link your search terms together to either increase or decrease the number of results you receive.                                                        | ℹ️: The well-known boolean operators AND (&&), OR (\|\|), and NOT(!) are also available.<br>   However, when many operators are used together, parenthesis should be used. As they do not follow the standard procedure rules.                 |
+| Alt. Boolean Expressions | (quick AND fox) OR (brown AND fox) OR fox) AND NOT news     |                                                                     | 1. Boolean operators are used as conjunctions to combine or exclude keywords in a search. <br><br>2. These operators link your search terms together to either increase or decrease the number of results you receive.                                                        | ℹ️: The well-known boolean operators AND (&&), OR (\|\|), and NOT(!) are also available.<br>   However, when many operators are used together, parenthesis should be used. As they do not follow the standard procedure rules.                 |
+| Regular Expression       | \+[1-9][0-9]{10,13}                                         | Matching a phone number                                             | It is a language to conduct pattern matches. To find out more click here                                                                                                                                                                                                      |                                                                                                                                                                                                                                               |
+| Proximity Search         | red brick house                                             | red house of brick or house made of red brick                       | 1. A proximity query allows the provided words to be spaced further apart or in a different order. <br><br>2. To start a proximity search use the tilde (~) symbol at the end of a phrase and specify the distance in words as a valid integer number.                        |                                                                                                                                                                                                                                               |
+| Boosting                 | fast^10 racing^20 car                                       | the racing car went very fast                                       | car would match, but having racing and fast in the document means that its score would be boosted by 30                                                                                                                                                                       |                                                                                                                                                                                                                              |
+|                          |                                                             |                                                                     |                                                                                                                                                                                                                                                                               |                                                                                                                                                                                                                                               |
+
+### **Lemmentization**  
+
+Our built-in search engine offers lemmentization. 
+
+Lemmatization is the grouping together of different forms of the same word. It enables end users to use any variation of a base word in search queries.  
+
+It helps in receiving appropriate results. 
+
+For example, 
+
+1. runs, running, ran are all forms of the word **run**
+2. builds, building or built are all forms of the word **build**
 
 ### Ad-hoc Queries
 
@@ -57,11 +85,7 @@ You can search the created query list for the calls that have been transcribed.
 
 ### Score
 
-When you search for a trancribed call, it assigns score to the calls.
-
-The highest score will be alloted to the most relevant call. 
-
-The maximum number of words matched from the query with the transcribed call will have the highest score.  
+Whilst searching the relevence of a document will be rated and a score will be assigned, this helps return the documents which best match the search criteria.
 
 ### Transcription
 
@@ -84,39 +108,3 @@ You should choose **Customer Name** as **None** and **Visibility** as **Public**
 You can navigate to a specific customer's account and add a Saved Query as alert.
 
 You will either recieve a call or text or e-mail saying a particular word or phrase has been detected for a specific call.  
-
-#### Penalty
-
-You can set a Penalty for a customer.
-
-For example, you can disable the customer's account if someone used swear words over the call. 
-
-You can decide the time-duration of the penalty.
-
-#### **Lemmentization**  
-
-Our built-in search engine offers lemmentization. 
-
-Lemmatization is the grouping together of different forms of the same word. It enables end users to use any variation of a base word in search queries.  
-
-It helps in receiving appropriate results. 
-
-For example, 
-
-1. runs, running, ran are all forms of the word **run**
-2. builds, building or built are all forms of the word **build**
-
-## Search Modifiers
-
-Search modifications allow you to describe what you want to find. There is a specific syntax to help you with this.
-
-| Query Type          | Example                                                                                                                                              | Example Matches                                                                                                                                    | Description                                                                                                                                                                                                                                                                   |                                                                                                                                                                                                                                               |
-|---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Wildcard            | c\*t                                                                                                                                                 | cat <br><br>count <br><br>cut                                                                                                                      | 1. When looking for alternative spellings and variations of a root word, wildcards are used.<br><br>2. Used in place of multiple characters                                                                                                                                   | ℹ️: Wildcard characters cannot be used in place of a word's first letter or within an exact phrase search.                                                                                                                                     |
-| Placeholder         | c?t                                                                                                                                                  | cat cut                                                                                                                                            | Used in place of single characters                                                                                                                                                                                                                                            |                                                                                                                                                                                                                                               |
-| Fuzzy Searches      |1.~brwn <br><br>2.~exmple <br><br>3.~quikc <br><br>4.~alowd                                                                                          | 1. brown <br><br>2. example <br><br>3. quick <br><br>4. allowed                                                                                    | 1. A fuzzy search looks for text that closely, rather than precisely, matches a keyword. Even if your search terms are mistyped, fuzzy searches can still help you find relevant results. <br><br>2. Put a tilde (~) at the end of the search term to execute a fuzzy search. | ⚠️ Please do not use Wildcards and Fuzzy searches together: Fuzzy and wildcard operators cannot be combined and used. One of the operators is not used when the two are combined. For instance, for fuzzy you can simply say "query": "rich~1" |
-| Boolean Expressions | 1. +apples red -green<br><br>2. (quick AND fox) OR (brown AND fox) OR fox) AND NOT news                                                              | 1. +apples: apples should be present <br><br><br><br>red: red may or may not present (optional) <br><br>-green: green should not be present at all | 1. Boolean operators are used as conjunctions to combine or exclude keywords in a search. <br><br>2. These operators link your search terms together to either increase or decrease the number of results you receive.                                                        | ℹ️: The well-known boolean operators AND (&&), OR (\|\|), and NOT(!) are also available.<br>   However, when many operators are used together, parenthesis should be used. As they do not follow the standard procedure rules.                 |
-| Regular Expression  | 1. 1.09(0[1-2]\|1[\d]\|3[\d]\|2[0-1])[\d]{3}[\d]{4} <br><br>2. ^(0?[1-9]\|1[0-2])//\d{2}$ <br><br>3. ^(?=.\d)(?=.[a-z])(?=.[A-Z])(?=.[a-zA-Z]).{8,}$ | 1. Matching a phone number <br><br>2. Matching a date <br><br>3. E-mail validation                                                                 | It is a language to conduct pattern matches. To find out more click here                                                                                                                                                                                                      |                                                                                                                                                                                                                                               |
-| Proximity Search    | red brick house                                                                                                                                      | red house of brick or house made of red brick                                                                                                      | 1. A proximity query allows the provided words to be spaced further apart or in a different order. <br><br>2. To start a proximity search use the tilde (~) symbol at the end of a phrase and specify the distance in words as a valid integer number.                        |                                                                                                                                                                                                                                               |
-| Boosting            | Score                                                                                                                                                | the most relevant call will be assigned the highest score                                                                                          | To make one term more significant than another                                                                                                                                                                                                                                |                                                                                                                                                                                                                                               |
-|                     |                                                                                                                                                      |                                                                                                                                                    |                                                                                                                                                                                                                                                                               |                                                                                                                                                                                                                                               |
