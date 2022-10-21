@@ -18,26 +18,26 @@ Depending on the needs of customers, you can define individual prices. You can a
 ### Enable Transcription
 To enable the Transcription feature on your account navigate to Setup :material-menu-right: Settings :material-menu-right: Account and click the "Enable Transcription" button.
 
-![Enable Transcription](/img/transcription01.webp)
+![Enable Transcription](/transcription/img/transcription01.webp)
 
 ### Create a Transcription Package
-To create a package to resell to your customers go to Config :material-menu-right: [Packages](https://docs.connexcs.com/customer/package/). Click on ![add](/img/transcription-add.png)and choose your Transcription Package from **ConnexCS Package**.
+To create a package to resell to your customers go to Config :material-menu-right: [Packages](https://docs.connexcs.com/customer/package/). Click on ![add](/transcription/img/transcription-add.png) and choose your Transcription Package from **ConnexCS Package**.
 
 Select your **Retail Cost** and click on ![save](/img/transcriptions-save.png) and choose your Transcription Package from **ConnexCS Package**.
 
-![transcription](/img/transcription-package.png)
+![transcription](/transcription/img/transcription-package.png)
 
 ### Automated Transcriptions
 Add Package to Customers Account, assign the **Quantity**, and also assign a **Start Date** and **End date** to the package. At the End Date, the package will automatically cease to work. 
 
-![automated transcriptions](/img/transcriptions-automated-transcriptions.png)
+![automated transcriptions](/transcription/img/transcriptions-automated-transcriptions.png)
 
 
 Click on ![save](/img/transcriptions-save.png) ,and the package will be available with the customer.
 
 In Routing :material-menu-right: Media, you can enable or disable this service.
 
-![enable](/img/transcription-enable-disable.png)
+![enable](/transcription/img/transcription-enable-disable.png)
 
 ### Manual Transcriptions
 
@@ -49,15 +49,13 @@ Once a call has been transcribed it is placed into a full-text search engine, av
 
 Go to Global :material-menu-right: Transcription to search for the transcribed calls. 
 
-![search](/img/transcription-search-transcriptions.png)
+![search](/transcription/img/transcription-search-transcriptions.png)
 
 To search for a transcriptions we will be sending a query to the server which will then based upon your search criteria return results with a score, we can use search modifiers to help us accomplish this.
 
 ### Search Modifiers
 
 Search modifications allow you to describe what you want to find. There is a specific syntax to help you with this.
-
-
 
 | Query Type               | Example                   | Example Matches                                                | Description                                                                                                                                                                                                                                                     |                                                                                                                                                                                                                                                |
 |--------------------------|---------------------------|----------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -69,10 +67,6 @@ Search modifications allow you to describe what you want to find. There is a spe
 | Regular Expression       | \+[1-9][0-9]{10,13}       | matching a phone number                                        | It is a language to conduct pattern matches. To find out more click here                                                                                                                                                                                        |                                                                                                                                                                                                                                                |
 | Proximity Search         | red brick house           | red house of brick or house made of red brick                  | A proximity query allows the provided words to be spaced further apart or in a different order. To start a proximity search use the tilde (~) symbol at the end of a phrase and specify the distance in words as a valid integer number.                        |                                                                                                                                                                                                                                                |
 | Boosting                 | fast^10 racing^20 car     | the racing car went very fast                                  | Car would match, but having racing and fast in the document means that its score would be boosted by 30                                                                                                                                                         |                                                                                                                                                                                                                                                |
-
-                                                                                                                                                                       
-
-
 
 ### **Lemmentization**  
 
