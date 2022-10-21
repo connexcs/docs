@@ -91,7 +91,7 @@ For example,
 
 To view existing transcriptions, you can enter `*` and choose the required date range, and it will return all the results. 
 
-You can further refine your search using query Search Modifiers (anchor) 
+You can further refine your search using query [Search Modifiers](https://bani--connexcs-docs.netlify.app/transcription/#search-modifiers) 
 
 ### Saved Queries   
 
