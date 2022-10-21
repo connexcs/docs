@@ -18,22 +18,26 @@ Depending on the needs of customers, you can define individual prices. You can a
 ### Enable Transcription
 To enable the Transcription feature on your account navigate to Setup :material-menu-right: Settings :material-menu-right: Account and click the "Enable Transcription" button.
 
-<img width="318" alt="image" src="https://user-images.githubusercontent.com/113333073/197200272-e43c9ab4-72e5-49ed-a0b5-97bfd5e4621c.png">
+<img width="280" alt="image" src="https://user-images.githubusercontent.com/113333073/197217043-6255c9d8-cc21-496e-88bf-5a98ff3f928b.png">
 
 ### Create a Transcription Package
-To create a package to resell to your customers go to Config :material-menu-right: [Packages](https://docs.connexcs.com/customer/package/). Click on <img width="59" alt="image" src="https://user-images.githubusercontent.com/113333073/197200939-d7ab1eeb-b169-4d7d-a889-6956b665c738.png"> and choose your Transcription Package from **ConnexCS Package**.
+To create a package to resell to your customers go to Config :material-menu-right: [Packages](https://docs.connexcs.com/customer/package/). Click on  <img width="76" alt="image" src="https://user-images.githubusercontent.com/113333073/197217335-872ee72a-3a23-40fd-af48-b873a32b1de4.png"> and choose your Transcription Package from **ConnexCS Package**.
 
-Select your **Retail Cost** and click on <img width="122" alt="image" src="https://user-images.githubusercontent.com/113333073/197201518-2102cf59-daef-4822-9044-ea9164bb584a.png">
+Select your **Retail Cost** and click on <img width="110" alt="image" src="https://user-images.githubusercontent.com/113333073/197217631-527b4b37-2cb4-4cfe-acf9-baadaf4a2797.png">
 
-<img width="251" alt="image" src="https://user-images.githubusercontent.com/113333073/197156569-172d277e-765a-4d7d-b7bb-38bba7361f2d.png">
-
+<img width="359" alt="image" src="https://user-images.githubusercontent.com/113333073/197223528-aab2b859-ad44-4da9-b6b3-29302d2c9302.png">
 
 ### Automated Transcriptions
 Add Package to Customers Account, assign the **Quantity**, and also assign a **Start Date** and **End date** to the package. At the End Date, the package will automatically cease to work. 
 
-Click on <img width="122" alt="image" src="https://user-images.githubusercontent.com/113333073/197201790-ae2ad156-763d-4754-82e5-db071aee9c86.png"> ,and the package will be available with the customer.
+<img width="350" alt="image" src="https://user-images.githubusercontent.com/113333073/197223792-018e79ff-a3aa-4238-ba13-481b51509c5b.png">
+
+
+Click on <img width="110" alt="image" src="https://user-images.githubusercontent.com/113333073/197217631-527b4b37-2cb4-4cfe-acf9-baadaf4a2797.png"> ,and the package will be available with the customer.
 
 In Routing :material-menu-right: Media, you can enable or disable this service.
+
+<img width="730" alt="image" src="https://user-images.githubusercontent.com/113333073/197221560-da86739b-191c-4664-ba82-b7ece14bee1e.png">
 
 ### Manual Transcriptions
 
@@ -45,7 +49,7 @@ Once a call has been transcribed it is placed into a full-text search engine, av
 
 Go to Global :material-menu-right: Transcription to search for the transcribed calls. 
 
-<img width="1000" alt="image" src="https://user-images.githubusercontent.com/113333073/197162162-bb205319-eed2-4d10-a319-19d6c5db2cf4.png">
+<img width="1000" alt="image" src="https://user-images.githubusercontent.com/113333073/197223215-65426a2f-15c3-48b2-9850-e672ae9f2240.png">
 
 To search for a transcriptions we will be sending a query to the server which will then based upon your search criteria return results with a score, we can use search modifiers to help us accomplish this.
 
