@@ -20,26 +20,24 @@ To enable the Transcription feature on your account navigate to Setup :material-
 
 ![Enable Transcription](/img/transcription01.webp)
 
-![this is image](https://github.com/digipigeon/connexcs-user-docs/blob/bani/img/transcription-enable-transcriptions.png)
-
 ### Create a Transcription Package
-To create a package to resell to your customers go to Config :material-menu-right: [Packages](https://docs.connexcs.com/customer/package/). Click on ![This is an image]()and choose your Transcription Package from **ConnexCS Package**.
+To create a package to resell to your customers go to Config :material-menu-right: [Packages](https://docs.connexcs.com/customer/package/). Click on ![add](/img/transcription-add.png)and choose your Transcription Package from **ConnexCS Package**.
 
-Select your **Retail Cost** and click on ![This is an image](https://github.com/digipigeon/connexcs-user-docs/blob/bani/img/transcriptions-save.png) and choose your Transcription Package from **ConnexCS Package**.
+Select your **Retail Cost** and click on ![save](/img/transcriptions-save.png) and choose your Transcription Package from **ConnexCS Package**.
 
-![This is an image](https://github.com/digipigeon/connexcs-user-docs/blob/bani/img/transcription-package.png)
+![transcription](/img/transcription-package.png)
 
 ### Automated Transcriptions
 Add Package to Customers Account, assign the **Quantity**, and also assign a **Start Date** and **End date** to the package. At the End Date, the package will automatically cease to work. 
 
-![This is an image](https://github.com/digipigeon/connexcs-user-docs/blob/bani/img/transcriptions-%20automated%20transcriptions%20.png)
+![automated transcriptions](/img/transcriptions-automated-transcriptions.png)
 
 
-Click on ![This is an image](https://github.com/digipigeon/connexcs-user-docs/blob/bani/img/transcriptions-save.png) ,and the package will be available with the customer.
+Click on ![save](/img/transcriptions-save.png) ,and the package will be available with the customer.
 
 In Routing :material-menu-right: Media, you can enable or disable this service.
 
-![This is an image](https://github.com/digipigeon/connexcs-user-docs/blob/bani/img/transcription-enable%20disable.png)
+![enable](/img/transcription-enable-disable.png)
 
 ### Manual Transcriptions
 
@@ -51,7 +49,7 @@ Once a call has been transcribed it is placed into a full-text search engine, av
 
 Go to Global :material-menu-right: Transcription to search for the transcribed calls. 
 
-![This is an image](https://github.com/digipigeon/connexcs-user-docs/blob/bani/img/transcription-%20search%20transcriptions.png)
+![search](/img/transcription-search-transcriptions.png)
 
 To search for a transcriptions we will be sending a query to the server which will then based upon your search criteria return results with a score, we can use search modifiers to help us accomplish this.
 
