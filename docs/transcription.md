@@ -18,7 +18,7 @@ Depending on the needs of customers, you can define individual prices. You can a
 ### Enable Transcription
 To enable the Transcription feature on your account navigate to Setup :material-menu-right: Settings :material-menu-right: Account and click the "Enable Transcription" button.
 
-![This is an image](https://github.com/digipigeon/connexcs-user-docs/blob/cbc6707d8af92a45cb62f398fc38d53a40626508/img/transcription-%20enable%20transcriptions.png)
+![This is an image](https://github.com/digipigeon/connexcs-user-docs/blob/bani/img/transcription-enable-transcriptions.png)
 
 ### Create a Transcription Package
 To create a package to resell to your customers go to Config :material-menu-right: [Packages](https://docs.connexcs.com/customer/package/). Click on ![This is an image](https://github.com/digipigeon/connexcs-user-docs/blob/bani/img/transcription-add.png)and choose your Transcription Package from **ConnexCS Package**.
