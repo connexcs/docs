@@ -18,16 +18,29 @@ Depending on the needs of customers, you can define individual prices. You can a
 ### Enable Transcription
 To enable the Transcription feature on your account navigate to Setup :material-menu-right: Settings :material-menu-right: Account and click the "Enable Transcription" button.
 
+<img width="662" alt="image" src="https://user-images.githubusercontent.com/113333073/197149465-ed534243-3d71-41fd-a359-65adb802764e.png">
+
+
 ### Create a Transcription Package
 To create a package to resell to your customers go to Config :material-menu-right: [Packages](https://docs.connexcs.com/customer/package/). Click on <img width="42" alt="image" src="https://user-images.githubusercontent.com/113333073/197020042-a05f90b3-c3d7-40b6-97f6-a02605ebb453.png"> and choose your Transcription Package from **ConnexCS Package**.
 
 Select your **Retail Cost** and click on <img width="97" alt="image" src="https://user-images.githubusercontent.com/113333073/197020548-79f25e9e-6ebc-4e7a-b417-0e575e12cdf0.png">
+
+<img width="251" alt="image" src="https://user-images.githubusercontent.com/113333073/197156569-172d277e-765a-4d7d-b7bb-38bba7361f2d.png">
+
+
 ### Automated Transcriptions
 Add Package to Customers Account, assign the **Quantity**, and also assign a **Start Date** and **End date** to the package. At the End Date, the package will automatically cease to work. 
 
-click on <img width="97" alt="image" src="https://user-images.githubusercontent.com/113333073/197020503-8a201a40-5b15-450b-87ca-a373552304de.png"> ,and the package will be available with the customer.
+<img width="306" alt="image" src="https://user-images.githubusercontent.com/113333073/197158360-d9955be6-ead8-4752-9036-fc84d27de762.png">
+
+
+Click on <img width="97" alt="image" src="https://user-images.githubusercontent.com/113333073/197020503-8a201a40-5b15-450b-87ca-a373552304de.png"> ,and the package will be available with the customer.
 
 In Routing :material-menu-right: Media, you can enable or disable this service.
+
+<img width="677" alt="image" src="https://user-images.githubusercontent.com/113333073/197159985-ae0733dc-8bf3-4203-a442-df0d809e4cbd.png">
+
 
 ### Manual Transcriptions
 
@@ -36,6 +49,10 @@ Navigate to the **Logging Page** to access the transcribed calls.
 ## Search Transcriptions
 
 Once a call has been transcribed it is placed into a full-text search engine, available only to you and (in the future) your customer.
+
+Go to Global :material-menu-right: Transcription to search for the transcribed calls. 
+
+<img width="1000" alt="image" src="https://user-images.githubusercontent.com/113333073/197162162-bb205319-eed2-4d10-a319-19d6c5db2cf4.png">
 
 To search for a transcriptions we will be sending a query to the server which will then based upon your search criteria return results with a score, we can use search modifiers to help us accomplish this.
 
@@ -52,9 +69,7 @@ Search modifications allow you to describe what you want to find. There is a spe
 | Regular Expression       | \+[1-9][0-9]{10,13}                                         | matching a phone number                                             | It is a language to conduct pattern matches. To find out more click here                                                                                                                                                                                                      |                                                                                                                                                                                                                                               |
 | Proximity Search         | red brick house                                             | red house of brick or house made of red brick                       | A proximity query allows the provided words to be spaced further apart or in a different order. To start a proximity search use the tilde (~) symbol at the end of a phrase and specify the distance in words as a valid integer number.                                      |                                                                                                                                                                                                                                               |
 | Boosting                 | fast^10 racing^20 car                                       | the racing car went very fast                                       | car would match, but having racing and fast in the document means that its score would be boosted by 30                                                                                                                                                                       |                                                                                                                                                                                                                              		        |
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
-
-
+                                                                                                                                                                       
 ### **Lemmentization**  
 
 Our built-in search engine offers lemmentization. 
