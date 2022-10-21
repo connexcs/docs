@@ -18,13 +18,12 @@ Depending on the needs of customers, you can define individual prices. You can a
 ### Enable Transcription
 To enable the Transcription feature on your account navigate to Setup :material-menu-right: Settings :material-menu-right: Account and click the "Enable Transcription" button.
 
-<img width="662" alt="image" src="https://user-images.githubusercontent.com/113333073/197149465-ed534243-3d71-41fd-a359-65adb802764e.png">
-
+<img width="318" alt="image" src="https://user-images.githubusercontent.com/113333073/197200272-e43c9ab4-72e5-49ed-a0b5-97bfd5e4621c.png">
 
 ### Create a Transcription Package
-To create a package to resell to your customers go to Config :material-menu-right: [Packages](https://docs.connexcs.com/customer/package/). Click on <img width="42" alt="image" src="https://user-images.githubusercontent.com/113333073/197020042-a05f90b3-c3d7-40b6-97f6-a02605ebb453.png"> and choose your Transcription Package from **ConnexCS Package**.
+To create a package to resell to your customers go to Config :material-menu-right: [Packages](https://docs.connexcs.com/customer/package/). Click on <img width="59" alt="image" src="https://user-images.githubusercontent.com/113333073/197200939-d7ab1eeb-b169-4d7d-a889-6956b665c738.png"> and choose your Transcription Package from **ConnexCS Package**.
 
-Select your **Retail Cost** and click on <img width="97" alt="image" src="https://user-images.githubusercontent.com/113333073/197020548-79f25e9e-6ebc-4e7a-b417-0e575e12cdf0.png">
+Select your **Retail Cost** and click on <img width="122" alt="image" src="https://user-images.githubusercontent.com/113333073/197201518-2102cf59-daef-4822-9044-ea9164bb584a.png">
 
 <img width="251" alt="image" src="https://user-images.githubusercontent.com/113333073/197156569-172d277e-765a-4d7d-b7bb-38bba7361f2d.png">
 
@@ -32,15 +31,9 @@ Select your **Retail Cost** and click on <img width="97" alt="image" src="https:
 ### Automated Transcriptions
 Add Package to Customers Account, assign the **Quantity**, and also assign a **Start Date** and **End date** to the package. At the End Date, the package will automatically cease to work. 
 
-<img width="306" alt="image" src="https://user-images.githubusercontent.com/113333073/197158360-d9955be6-ead8-4752-9036-fc84d27de762.png">
-
-
-Click on <img width="97" alt="image" src="https://user-images.githubusercontent.com/113333073/197020503-8a201a40-5b15-450b-87ca-a373552304de.png"> ,and the package will be available with the customer.
+Click on <img width="122" alt="image" src="https://user-images.githubusercontent.com/113333073/197201790-ae2ad156-763d-4754-82e5-db071aee9c86.png"> ,and the package will be available with the customer.
 
 In Routing :material-menu-right: Media, you can enable or disable this service.
-
-<img width="677" alt="image" src="https://user-images.githubusercontent.com/113333073/197159985-ae0733dc-8bf3-4203-a442-df0d809e4cbd.png">
-
 
 ### Manual Transcriptions
 
