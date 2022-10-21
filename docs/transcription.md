@@ -18,7 +18,7 @@ Depending on the needs of customers, you can define individual prices. You can a
 ### Enable Transcription
 To enable the Transcription feature on your account navigate to Setup :material-menu-right: Settings :material-menu-right: Account and click the "Enable Transcription" button.
 
-![Enable Transcription](/img/transcription-enable-transcriptions.png)
+![Enable Transcription](/img/transcription01.webp)
 
 ![this is image](https://github.com/digipigeon/connexcs-user-docs/blob/bani/img/transcription-enable-transcriptions.png)
 
