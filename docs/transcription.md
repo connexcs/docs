@@ -9,7 +9,11 @@ Global :material-menu-right: Transcription
 
 A transcription service translates voice communication whether live or recorded into a text. If you have a recorded call, you may use this service to have it transcribed in English.
 
-English is the only language offered at present, however, additional languages can be made available as per the customer's request.
+English is the only language offered at present, however, 
+
+
+
+itional languages can be made available as per the customer's request.
 
 Depending on the needs of customers, you can define individual prices. You can also select the quantity you want to offer your customer.
 
@@ -18,26 +22,26 @@ Depending on the needs of customers, you can define individual prices. You can a
 ### Enable Transcription
 To enable the Transcription feature on your account navigate to Setup :material-menu-right: Settings :material-menu-right: Account and click the "Enable Transcription" button.
 
-<img width="280" alt="image" src="https://github.com/digipigeon/connexcs-user-docs/blob/bani/img/transcription-%20enable%20transcriptions.png">
+![This is an image](https://github.com/digipigeon/connexcs-user-docs/blob/bani/img/transcription-%20enable%20transcriptions.png)
 
 ### Create a Transcription Package
-To create a package to resell to your customers go to Config :material-menu-right: [Packages](https://docs.connexcs.com/customer/package/). Click on  <img width="50" alt="image" src="https://github.com/digipigeon/connexcs-user-docs/blob/bani/img/transcription-add.png"> and choose your Transcription Package from **ConnexCS Package**.
+To create a package to resell to your customers go to Config :material-menu-right: [Packages](https://docs.connexcs.com/customer/package/). Click on ![This is an image](https://github.com/digipigeon/connexcs-user-docs/blob/bani/img/transcription-add.png)and choose your Transcription Package from **ConnexCS Package**.
 
-Select your **Retail Cost** and click on <img width="110" alt="image" src="https://github.com/digipigeon/connexcs-user-docs/blob/bani/img/transcriptions-save.png">
+Select your **Retail Cost** and click on ![This is an image](https://github.com/digipigeon/connexcs-user-docs/blob/bani/img/transcriptions-save.png) and choose your Transcription Package from **ConnexCS Package**.
 
-<img width="359" alt="image" src="https://github.com/digipigeon/connexcs-user-docs/blob/bani/img/transcription-package.png">
+![This is an image](https://github.com/digipigeon/connexcs-user-docs/blob/bani/img/transcription-package.png)
 
 ### Automated Transcriptions
 Add Package to Customers Account, assign the **Quantity**, and also assign a **Start Date** and **End date** to the package. At the End Date, the package will automatically cease to work. 
 
-<img width="258" alt="image" src="https://github.com/digipigeon/connexcs-user-docs/blob/bani/img/transcriptions-%20automated%20transcriptions%20.png">
+![This is an image](https://github.com/digipigeon/connexcs-user-docs/blob/bani/img/transcriptions-%20automated%20transcriptions%20.png)
 
 
-Click on <img width="110" alt="image" src="https://github.com/digipigeon/connexcs-user-docs/blob/bani/img/transcriptions-save.png"> ,and the package will be available with the customer.
+Click on ![This is an image](https://github.com/digipigeon/connexcs-user-docs/blob/bani/img/transcriptions-save.png) ,and the package will be available with the customer.
 
 In Routing :material-menu-right: Media, you can enable or disable this service.
 
-<img width="730" alt="image" src="https://github.com/digipigeon/connexcs-user-docs/blob/bani/img/transcription-enable%20disable.png">
+![This is an image](https://github.com/digipigeon/connexcs-user-docs/blob/bani/img/transcription-enable%20disable.png)
 
 ### Manual Transcriptions
 
@@ -49,7 +53,7 @@ Once a call has been transcribed it is placed into a full-text search engine, av
 
 Go to Global :material-menu-right: Transcription to search for the transcribed calls. 
 
-<img width="1000" alt="image" src="https://github.com/digipigeon/connexcs-user-docs/blob/bani/img/transcription-%20search%20transcriptions.png">
+![This is an image](https://github.com/digipigeon/connexcs-user-docs/blob/bani/img/transcription-%20search%20transcriptions.png)
 
 To search for a transcriptions we will be sending a query to the server which will then based upon your search criteria return results with a score, we can use search modifiers to help us accomplish this.
 
