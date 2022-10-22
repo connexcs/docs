@@ -18,7 +18,7 @@ Depending on the needs of customers, you can define individual prices. You can a
 ### Enable Transcription
 To enable the Transcription feature on your account navigate to Setup :material-menu-right: Settings :material-menu-right: Account and click the "Enable Transcription" button.
 
-<img src="/transcription/img/transcription-enable-transcriptions.png" enable transcription="package" width="300"/>
+<img src="/transcription/img/transcription-enable-transcriptions.png" enable transcription="package" width="100"/>
 
 ### Create a Transcription Package
 To create a package to resell to your customers go to Config :material-menu-right: [Packages](https://docs.connexcs.com/customer/package/). Click on <img src="/transcription/img/transcription-add.png" alt="add" width="50"/> and choose your Transcription Package from **ConnexCS Package**.
