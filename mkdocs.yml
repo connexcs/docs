@@ -98,6 +98,8 @@ nav:
         - Database: developers/database.md 
         - Form Builder: developers/form-builder.md
         - ScriptForge: developers/scriptforge.md
+        - Pages: docs/pages.md
+        
 
     - Setup:
         - AnyEdge: anyedge/anyedge.md
