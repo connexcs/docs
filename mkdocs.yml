@@ -98,7 +98,7 @@ nav:
         - Database: developers/database.md 
         - Form Builder: developers/form-builder.md
         - ScriptForge: developers/scriptforge.md
-        - Pages: developer/docs/pages.md
+        - Pages: developers/pages.md
         
 
     - Setup:
