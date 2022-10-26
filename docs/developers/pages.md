@@ -50,3 +50,29 @@ The **Elements** in the Pages are extremely powerful and increase flexibility fo
 |<img src="/pages/link.png" alt="link" width="65"/>      | **Link**            | Link lets you add an external link to the page. When you click on the link you will be redirected to that website, document, etc                                                                                                                                      |
 |<img src="/pages/cascader.png" alt="cascader" width="95"/>      | **Cascader**        | It is a multi-level dropdown option (Select option)                                                                                                                                                                                                                        |
 |<img src="/pages/steps.png" alt="steps" width="75"/>      | **Steps**           | Steps can be used to show the progress of a process. For each completed step the step number will highlighted                                                                                                                                                         |
+
+## Advance Fields
+
+| **Icon** | **Field Name**      | **Description**                                                                                                                                                                                                                                |
+|------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|      | **Data Table**    |  A data table is a document composed of columns, rows and cells that contain specific values. They store information that people can retrieve later and update as needed.                                                                                                                                                           |
+|      | **Advanced Grid** | To display a grid-like layout on the various navigation bars like Customers, Carriers, etc                                                                                                                                                 |
+|      | **Graph**         | Allows you to display graphs of various parameters like ASR, RTP                                                                                                                                                                                 |
+|      | **Multi form**    | This feature allows you to prepare multiple forms. If you want multiple duplicate copies (cloning) of the created form, you can use this advanced component.                                                                               |
+|      | **Dialog**        | A dialog is a small window that prompts the user to make a decision or enter additional information. A dialog does not fill the screen and is normally used for modal events that require users to take an action before they can proceed. |
+
+## Layout
+
+
+| **Icon** | **Field Name**      | **Description**                                                                                                                                                                                                                                |
+|------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|      | **Colapse**    |  Allows you to make a section, or group of fields, collapsible. It is useful when there are several sections in your form and you want them to take up less vertical space. You may use collapsible or standard sections to adjust your form layout or conditionally hide/show a group of fields                                                                                                                       
+|      | **Inline** | Allows you to create a layout where each element occupies only the width it requires                                                                                                                                                 |
+|      | **Alert**         | An alert occurs in response to an event and can potentially trigger a notification. It brings something to the notice of the user and a way for sending a message that can be read without opening the app, e.g., low balance alert                                                                                                                                                                                 |
+|      | **Grid**    | All components in the layout are given equal size, for two-dimensional layouts                                                                             |
+|      | **Table**        | Allows you to arrange the elements in rows and columns. The rows and columns are added dynamically as you build the table                                                                                                                                                                       |
+|          | **Tabs**       | Adding tabs to an can make it more organized and easier to use if the form contains many controls. By placing related controls on separate pages of the tab 
+                                                      
+
+
+
