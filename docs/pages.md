@@ -1,5 +1,3 @@
- 
-
 ## Introduction
 
 Using Page Builder, you can customize the Control Panel, Customer Portal, and Web Phone. Pages help you enhance the functionality of these interfaces. 
