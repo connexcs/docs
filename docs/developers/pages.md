@@ -80,40 +80,39 @@ The **Elements** in the Pages are extremely powerful and increase flexibility fo
     
 ## Basic Elements in deatail
     
-### Input
-### Textarea
-### Number
-### Radio
-### Checkbox
-### Number
-### Select
-### Time
-### Date
-### Rate
-### Color
-### Switch
-### Slider
-### Text
-### HTML
-### Button
-### Link
-### Cascader
-### Steps
+### [Input](https://bani--connexcs-docs.netlify.app/developers/pages/#input)
+### [Textarea](https://bani--connexcs-docs.netlify.app/developers/pages/#textarea)
+### [Number](https://bani--connexcs-docs.netlify.app/developers/pages/#number)
+### [Radio](https://bani--connexcs-docs.netlify.app/developers/pages/#radio)
+### [Checkbox](https://bani--connexcs-docs.netlify.app/developers/pages/#checkbox)
+### [Select](https://bani--connexcs-docs.netlify.app/developers/pages/#select)
+### [Time](https://bani--connexcs-docs.netlify.app/developers/pages/#time)
+### [Date](https://bani--connexcs-docs.netlify.app/developers/pages/#date)
+### [Rate](https://bani--connexcs-docs.netlify.app/developers/pages/#rate)
+### [Color](https://bani--connexcs-docs.netlify.app/developers/pages/#color)
+### [Switch](https://bani--connexcs-docs.netlify.app/developers/pages/#switch)
+### [Slider](https://bani--connexcs-docs.netlify.app/developers/pages/#slider)
+### [Text](https://bani--connexcs-docs.netlify.app/developers/pages/#text)
+### [HTML](https://bani--connexcs-docs.netlify.app/developers/pages/#html)
+### [Button](https://bani--connexcs-docs.netlify.app/developers/pages/#button)
+### [Link](https://bani--connexcs-docs.netlify.app/developers/pages/#link)
+### [Cascader](https://bani--connexcs-docs.netlify.app/developers/pages/#cascader)
+### [Steps](https://bani--connexcs-docs.netlify.app/developers/pages/#steps)
     
 ## Advance Elements in deatail
 
-### Data Table
-### Advanced Grid
-### Graph
-### Multi Form
-### Dialog
+### [Data Table](https://bani--connexcs-docs.netlify.app/developers/pages/#data-table)
+### [Advanced Grid](https://bani--connexcs-docs.netlify.app/developers/pages/#advanced-grid)
+### [Graph](https://bani--connexcs-docs.netlify.app/developers/pages/#graph)
+### [Multi Form](https://bani--connexcs-docs.netlify.app/developers/pages/#multi-form)
+### [Dialog](https://bani--connexcs-docs.netlify.app/developers/pages/#dialog)
 
 ## Layput Elements in deatail
 
-### Collapse
-### Inline
-### Alert
-### Grid
-### Table
-### Tabs
+### [Collapse](https://bani--connexcs-docs.netlify.app/developers/pages/#collapse)
+### [Inline](https://bani--connexcs-docs.netlify.app/developers/pages/#inline)
+### [Alert](https://bani--connexcs-docs.netlify.app/developers/pages/#alert)
+### [Grid](https://bani--connexcs-docs.netlify.app/developers/pages/#grid)
+### [Table](https://bani--connexcs-docs.netlify.app/developers/pages/#table)
+### [Tabs](https://bani--connexcs-docs.netlify.app/developers/pages/#tabs)
     
