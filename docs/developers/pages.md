@@ -85,25 +85,30 @@ The **Elements** in the Pages are extremely powerful and increase flexibility fo
 
 **1. ID**: Unique number for every INPUT component in the form
 
-**2. Name**: Title of the input (can be changed)
+**2. Name**: Display name of your input field 
 
 **3. Width**: Allows you to adjust the width of the Placeholder
 
 **4. Label Width**: Allows you to adjust the distance between each side of the label. You can customize the value
 
-**5. Hide Label**: Allows you to show/hide the label uisng a switch
+**5. Hide Label**: Set the input visibility when loaded
 
-**6. Placeholder**: Specifies a short hint that describes the expected value of an input
+**6. Placeholder**: This is the greyed out value which is displayed when the field is empty.
 
 **7. Default Value**: Pre-defined value in the Placeholder
 
 **8. Custom Class**: !!! danger "Currently Unused"
 
 **9. Attribute Action**: The action attribute defines the action to be performed when the form is submitted. Usually, the form data is sent to a file on the server when the user clicks on the submit button. 
+
 * **Data Binding**: Helps you connect data from one element (host element) to a property or attribute to another element in the form
-* **Hidden**: To make the element dissapear from the form 
+
+* **Hidden**: To make the element dissapear from the form
+
 * **Disable**: When checked the diabled option, the customer will not be able to enter any information on the input field
+
 * **Display Clear Button**: Allows you to put a claer button
+
 * **Display Password**: Allows the customer to hide the characters of the iput to avoid any outflow of sensitive
 
 **10. Validation**: Helps you verify that the input entered by the customer is accurate and complete.
