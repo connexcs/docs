@@ -6,8 +6,8 @@ You can add Pages to multiple areas of these interfaces, such as Carrier, Custom
 
 A page can be interactive, containing forms that can be completed and then processed by ScriptForge.
 
-ℹ️: **Pages work together with [Button Builder](https://docs.connexcs.com/developers/button-builder/) to display a page on any Navigation bars.**
-
+!!! note "**Pages work together with [Button Builder](https://docs.connexcs.com/developers/button-builder/) to display a page on any Navigation bars.**"
+    
 The **Elements** in the Pages are extremely powerful and increase flexibility for the features you want to include in your portal.
 
 ### Usage Cases
@@ -55,11 +55,11 @@ The **Elements** in the Pages are extremely powerful and increase flexibility fo
 
 | **Icon**                                                        | **Description**                                                                                                                                                                                                                           |
 |-----------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <img src="/pages/data-table.png" alt="data table" width="275"/>      | A data table is a document composed of columns, rows, and cells that contain specific values.<br> They store information that people can retrieve later and update as needed                                                              |
-| <img src="/pages/advanced-grid.png" alt="advanced-grid" width="275"/>     | To display a grid-like layout on the various navigation bars like Customers, Carriers, etc                                                                                                                                                |
-| <img src="/pages/graph.png" alt="graph" width="275"/>           | Allows you to display graphs of various parameters like ASR, RTP                                                                                                                                                                          |
-| <img src="/pages/multi-form.png" alt="multi-form" width="275"/> | This feature allows you to prepare multiple forms. <br> If you want multiple duplicate copies (cloning) of the created form, you can use this advanced component                                                                          |
-| <img src="/pages/dialog.png" alt="dialog" width="275"/>         | A dialog is a small window that prompts the user to make a decision or enter additional information. <br><br> A dialog does not fill the screen and is normally used for modal events that require users to take an action before they can proceed |
+| <img src="/pages/data-table.png" alt="data table" width="175"/>      | A data table is a document composed of columns, rows, and cells that contain specific values.<br> They store information that people can retrieve later and update as needed                                                              |
+| <img src="/pages/advanced-grid.png" alt="advanced-grid" width="175"/>     | To display a grid-like layout on the various navigation bars like Customers, Carriers, etc                                                                                                                                                |
+| <img src="/pages/graph.png" alt="graph" width="175"/>           | Allows you to display graphs of various parameters like ASR, RTP                                                                                                                                                                          |
+| <img src="/pages/multi-form.png" alt="multi-form" width="175"/> | This feature allows you to prepare multiple forms. <br> If you want multiple duplicate copies (cloning) of the created form, you can use this advanced component                                                                          |
+| <img src="/pages/dialog.png" alt="dialog" width="175"/>         | A dialog is a small window that prompts the user to make a decision or enter additional information. <br><br> A dialog does not fill the screen and is normally used for modal events that require users to take an action before they can proceed |
 
 !!! danger "Alpha Feature"
     Graph is currently in public Alpha, it's not intended for production usage and has limited documentation, we are working on this.
@@ -68,12 +68,52 @@ The **Elements** in the Pages are extremely powerful and increase flexibility fo
 
 | **Icon**                                                    | **Description**                                                                                                                                                                                                                                                                                          |
 |-------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [<img src="/pages/collapse.png" alt="collapse" width="375"/>]() | Allows you to make a section, or group of fields, collapsible. It is useful when there are several sections in your form and you want them to take up less vertical space. <br><br> You may use collapsible or standard sections to adjust your form layout or conditionally hide/show a group of fields |
-| <img src="/pages/inline.png" alt="inline" width="375"/>     | Allows you to create a layout where each element occupies only the width it requires                                                                                                                                                                                                                     |
-| <img src="/pages/alert.png" alt="alert" width="375"/>       | An alert occurs in response to an event and can potentially trigger a notification. It brings something to the notice of the user and a way for sending a message that can be read without opening the app, e.g., low balance alert                                                                      |
-| <img src="/pages/grid.png" alt="grid" width="375"/>         | All components in the layout are given equal size, for two-dimensional layouts                                                                                                                                                                                                                           |
-| <img src="/pages/table.png" alt="table" width="375"/>       | Allows you to arrange the elements in rows and columns. The rows and columns are added dynamically as you build the table                                                                                                                                                                                |
-| <img src="/pages/tabs.png" alt="tabs" width="375"/>         | Adding tabs to an can make it more organized and easier to use if the form contains many controls. By placing related controls on separate pages of the tab                                                                                                                                              |    
+| [<img src="/pages/collapse.png" alt="collapse" width="275"/>]() | Allows you to make a section, or group of fields, collapsible. It is useful when there are several sections in your form and you want them to take up less vertical space. <br><br> You may use collapsible or standard sections to adjust your form layout or conditionally hide/show a group of fields |
+| <img src="/pages/inline.png" alt="inline" width="275"/>     | Allows you to create a layout where each element occupies only the width it requires                                                                                                                                                                                                                     |
+| <img src="/pages/alert.png" alt="alert" width="275"/>       | An alert occurs in response to an event and can potentially trigger a notification. It brings something to the notice of the user and a way for sending a message that can be read without opening the app, e.g., low balance alert                                                                      |
+| <img src="/pages/grid.png" alt="grid" width="275"/>         | All components in the layout are given equal size, for two-dimensional layouts                                                                                                                                                                                                                           |
+| <img src="/pages/table.png" alt="table" width="275"/>       | Allows you to arrange the elements in rows and columns. The rows and columns are added dynamically as you build the table                                                                                                                                                                                |
+| <img src="/pages/tabs.png" alt="tabs" width="275"/>         | Adding tabs to an can make it more organized and easier to use if the form contains many controls. By placing related controls on separate pages of the tab                                                                                                                                              |    
 
 !!! note "Know More"
     Click on each **Icon** to know more about each element. 
+    
+## Basic Elements in deatail
+    
+### Input
+### Textarea
+### Number
+### Radio
+### Checkbox
+### Number
+### Select
+### Time
+### Date
+### Rate
+### Color
+### Switch
+### Slider
+### Text
+### HTML
+### Button
+### Link
+### Cascader
+### Steps
+    
+## Advance Elements in deatail
+
+### Data Table
+### Advanced Grid
+### Graph
+### Multi Form
+### Dialog
+
+## Layput Elements in deatail
+
+### Collapse
+### Inline
+### Alert
+### Grid
+### Table
+### Tabs
+    
