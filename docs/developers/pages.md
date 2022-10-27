@@ -61,9 +61,6 @@ The **Elements** in the Pages are extremely powerful and increase flexibility fo
 | [<img src="/pages/multi-form.png" alt="multi-form" width="135"/>](https://bani--connexcs-docs.netlify.app/developers/pages/#multi-form) | This feature allows you to prepare multiple forms. <br> If you want multiple duplicate copies (cloning) of the created form, you can use this advanced component                                                                          |
 | [<img src="/pages/dialog.png" alt="dialog" width="135"/>](https://bani--connexcs-docs.netlify.app/developers/pages/#dialog)         | A dialog is a small window that prompts the user to make a decision or enter additional information. <br><br> A dialog does not fill the screen and is normally used for modal events that require users to take an action before they can proceed |
 
-!!! danger "Alpha Feature"
-    Graph is currently in public Alpha, it's not intended for production usage and has limited documentation, we are working on this.
-
 ## Layout
 
 | **Icon**                                                    | **Description**                                                                                                                                                                                                                                                                                          |
@@ -78,9 +75,45 @@ The **Elements** in the Pages are extremely powerful and increase flexibility fo
 !!! note "Know More"
     Click on each **Icon** to know more about each element. 
     
+ For each component you can change the characteristics of each component. You can click on **Component Attribute** to and chage the properties of the elements.
+    
 ## Basic Elements 
     
 ### Input
+
+<img src="/pages/caInput.png" alt="add" width="60"/>
+
+**1. ID**: Unique number for every INPUT component in the form
+
+**2. Name**: Title of the input (can be changed)
+
+**3. Width**: Allows you to adjust the width of the Placeholder
+
+**4. Label Width**: Allows you to adjust the distance between each side of the label. You can customize the value
+
+**5. Hide Label**: Allows you to show/hide the label uisng a switch
+
+**6. Placeholder**: Specifies a short hint that describes the expected value of an input
+
+**7. Default Value**: Pre-defined value in the Placeholder
+
+**8. Custom Class**: !!! danger "Currently Unused"
+
+**9. Attribute Action**: The action attribute defines the action to be performed when the form is submitted. Usually, the form data is sent to a file on the server when the user clicks on the submit button. 
+* **Data Binding**: Helps you connect data from one element (host element) to a property or attribute to another element in the form
+* **Hidden**: To make the element dissapear from the form 
+* **Disable**: When checked the diabled option, the customer will not be able to enter any information on the input field
+* **Display Clear Button**: Allows you to put a claer button
+* **Display Password**: Allows the customer to hide the characters of the iput to avoid any outflow of sensitive
+
+**10. Validation**: Helps you verify that the input entered by the customer is accurate and complete.
+For example, some fields are necessary to be filled, so you can use the **required** field.
+Another example, if you want the answers in a specific format like **e-mail, URL, String, Hexadecimal** then this filed is extremly useful.
+
+* **Custon Validation Rules**: Of you want any other specific validation rules, you have the option to create your customized rules.
+
+**11. Action Settings**: Allows you to specify the actions for the Input element . For exmaple, OnChange, OnBLur, etc. You can create your customizable actions and functions by clicking on **New Action +**.
+
 ### Textarea
 ### Number
 ### Radio
