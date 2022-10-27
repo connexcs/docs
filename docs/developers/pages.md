@@ -81,7 +81,7 @@ The **Elements** in the Pages are extremely powerful and increase flexibility fo
     
 ### Input
 
-<img src="/pages/caInput.png" alt="add" width="60"/>
+<img src="/pages/caInput.png" alt="add" width="360"/>
 
 **1. ID**: Unique number for every INPUT component in the form
 
