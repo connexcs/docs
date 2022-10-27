@@ -105,7 +105,7 @@ The **Elements** in the Pages are extremely powerful and increase flexibility fo
 ### Advanced Grid
 ### Graph
 ### Multi Form
-### Dialog
+### Dialog.
 
 ## Layout Elements 
 
