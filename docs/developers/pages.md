@@ -74,3 +74,6 @@ The **Elements** in the Pages are extremely powerful and increase flexibility fo
 | <img src="/pages/grid.png" alt="grid" width="375"/>         | All components in the layout are given equal size, for two-dimensional layouts                                                                                                                                                                                                                           |
 | <img src="/pages/table.png" alt="table" width="375"/>       | Allows you to arrange the elements in rows and columns. The rows and columns are added dynamically as you build the table                                                                                                                                                                                |
 | <img src="/pages/tabs.png" alt="tabs" width="375"/>         | Adding tabs to an can make it more organized and easier to use if the form contains many controls. By placing related controls on separate pages of the tab                                                                                                                                              |    
+
+!!! note "Know More"
+    Click on each **Icon** to know more about each element. 
