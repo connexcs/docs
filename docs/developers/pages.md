@@ -104,7 +104,6 @@ The **Elements** in the Pages are extremely powerful and increase flexibility fo
 * **Data Binding**: Helps you connect data from one element (host element) to a property or attribute to another element in the form.
 
 !!! example "Data Binding" 
-
     if (name === 'XYZ') {
         this.setData({output: 'Welcome XYZ'});
     } else {
