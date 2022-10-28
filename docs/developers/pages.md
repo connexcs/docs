@@ -48,7 +48,7 @@ The **Elements** in the Pages are extremely powerful and increase flexibility fo
 | [<img src="/pages/html.png" alt="html" width="175"/>](https://bani--connexcs-docs.netlify.app/developers/pages/#html)                                                                                                                                                                                                                          | It gives you the option to write the HTML code                                                                                                                                                                                                                                 |
 | [<img src="/pages/button.png" alt="button" width="175"/>](https://bani--connexcs-docs.netlify.app/developers/pages/#button)                                                                                                                                                                                                                      | The button is responsible for performing an action when clicked either for redirecting or for viewing purposes                                                                                                                                                                 |
 | [<img src="/pages/link.png" alt="link" width="175"/>](https://bani--connexcs-docs.netlify.app/developers/pages/#link)                                                                                                                                                                                                                          | Link lets you add an external link to the page. When you click on the link you will be redirected to that website, document, etc                                                                                                                                               |
-| [<img src="/pages/cascader.png" alt="cascader" width="175"/>](https://bani--connexcs-docs.netlify.app/developers/pages/#cascader)                                                                                                                                                                                                                  | It is a multi-level dropdown option                                                                                                                                                                                                                                            |
+| [<img src="/pages/cascader.png" alt="cascader" width="175"/>](https://bani--connexcs-docs.netlify.app/developers/pages/#cascader)                                                                                                                                                                                                                  | It is a multi-level dropdown option. When a data set has a clear hierarchical structure, it can be viewed and selected through the cascade selector.                                                                                                                                                                                                                                            |
 | [<img src="/pages/steps.png" alt="steps" width="175"/>](https://bani--connexcs-docs.netlify.app/developers/pages/#steps)                                                                                                                                                                                                                        | Steps can be used to show the progress of a process. For each completed step the step number will be highlighted                                                                                                                                                               |
 
 ## Advance Fields
@@ -83,46 +83,107 @@ The **Elements** in the Pages are extremely powerful and increase flexibility fo
 
 <img src="/pages/caInput.png" alt="add" width="360"/>
 
-**1. ID**: Unique number for every INPUT component in the form
+**1. ID**: Unique number for every INPUT component in the form.
 
-**2. Name**: Display name of your input field 
+**2. Name**: Display name of your input field. 
 
-**3. Width**: Allows you to adjust the width of the Placeholder
+**3. Width**: Allows you to adjust the width of the Placeholder.
 
-**4. Label Width**: Allows you to adjust the distance between each side of the label. You can customize the value
+**4. Label Width**: Allows you to adjust the distance between each side of the label. You can customize the value.
 
-**5. Hide Label**: Set the input visibility when loaded
+**5. Hide Label**: Set the input visibility when loaded.
 
 **6. Placeholder**: This is the greyed out value which is displayed when the field is empty.
 
-**7. Default Value**: Pre-defined value in the Placeholder
+**7. Default Value**: Pre-defined value in the Placeholder.
 
 **8. Custom Class**: !!! danger "Currently Unused"
 
 **9. Attribute Action**: The action attribute defines the action to be performed when the form is submitted. Usually, the form data is sent to a file on the server when the user clicks on the submit button. 
 
-* **Data Binding**: Helps you connect data from one element (host element) to a property or attribute to another element in the form
+* **Data Binding**: Helps you connect data from one element (host element) to a property or attribute to another element in the form.
+
+!!! example "Data Binding" 
+
+    if (name === 'XYZ') {
+        this.setData({output: 'Welcome XYZ'});
+    } else {
+        this.setData({output: 'Please enter your name'});
+}
+
+The above code the data binding is between **Input** and **Textarea**. When your enter a name it will dislay 'Welcome name' in the Textarea, and if the Input field is empty the field will display  'Please enter your name'.
+
+
+In the above code when you write your name 
 
 * **Hidden**: To make the element dissapear from the form
 
 * **Disable**: When checked the diabled option, the customer will not be able to enter any information on the input field
 
-* **Display Clear Button**: Allows you to put a claer button
+* **Display Clear Button**: Allows you to put clear the  
 
 * **Display Password**: Allows the customer to hide the characters of the iput to avoid any outflow of sensitive
 
 **10. Validation**: Helps you verify that the input entered by the customer is accurate and complete.
-For example, some fields are necessary to be filled, so you can use the **required** field.
+For example, some fields are necessary to be filled, so you can use the **Required** field.
 Another example, if you want the answers in a specific format like **e-mail, URL, String, Hexadecimal** then this filed is extremly useful.
 
-* **Custon Validation Rules**: Of you want any other specific validation rules, you have the option to create your customized rules.
+* **Custon Validation Rules**: If you want to add some JavaScript and include a callback. Call back will perform asynchoronous validation. 
 
 **11. Action Settings**: Allows you to specify the actions for the Input element . For exmaple, OnChange, OnBLur, etc. You can create your customizable actions and functions by clicking on **New Action +**.
 
 ### Textarea
+**All fields same as Input*
+
 ### Number
-### Radio
-### Checkbox
+
+**1. Minimum**: Minimum option allows you to set the smallest value for your counter
+
+**2. Maximum**: Maximum option allows you to set the largest value for your counter
+
+**3. Step**: Steps option specifies the interval between the numbers 
+
+**4. Precison**: Precision option will let you introduce decimal places in the counter
+
+**5. Enable the control buttons**: Control buttons allows the customer to increase/decrease the count value
+
+**6. Position of the control buttons**: 
+
+* **Default**: photo
+* **Right**: photo
+
+
+### Radio Button
+
+**1. Layout**: Layout hepls you to position the Radio buttons
+
+* **Block**: Block will place the Radio buttons vertically 
+* **Inline**: Inline will place the Inline buttons horizontally 
+
+**2. Option**: Option lets you select the kind data you want to display your options, either **Static** or **Dynamic**
+* **Static**: For Static data, customers will only be allowed to select the displayed options
+* **Dynamic** Dynamic Data makes the form reactive and interactive. The data can populate with respect to the input values in other elements. You can do load the data three ways, using a **Data Source**, **Assignned Value** or as a **Function**.
+
+!!! example "Function" 
+function yesnoCheck() {
+    if (document.getElementById('yesCheck').checked) {
+        document.getElementById('ifYes').style.visibility = 'visible';
+    }
+    else document.getElementById('ifYes').style.visibility = 'hidden';
+
+}
+
+In the above code when you select the *Yes* radio button, the input fieilds will be shown, if you select the *No* radio button the input field is hidden.
+
+!!! tip "Data Binding"
+The above example displays the relationship between **Input** and **RTextarea**, but the process can be carried betwwen other elements as well.  
+
+
+### Checkbox Button
+
+**All fields same as Radio Button*
+
+
 ### Select
 ### Time
 ### Date
@@ -144,6 +205,17 @@ Another example, if you want the answers in a specific format like **e-mail, URL
 ### Graph
 ### Multi Form
 ### Dialog
+
+* **OnConfirm**: You can write a custom code on what will the OnConfirm button do when clicked
+* **OnCancel**: 
+
+The dialog can be manipulated by calling the method of the component instance:
+
+* **show dialog**: this.getComponent('dialog field identifier').open()
+* **close dialog**: this.getComponent('dialog field identifier').close()
+* **validate data in dialog**: this.getComponent('dialog field identifier').validate()
+* **dialog fields show hidden**: this.getComponent('dialog field identifier').hide([name])
+this.getComponent('dialog field identifier').display(['name'])
 
 ## Layout Elements 
 
