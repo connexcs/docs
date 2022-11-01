@@ -119,8 +119,8 @@ For each component, you can change the characteristics of each component. You ca
 
 **10. Validation**: Validation helps you verify that the input entered by the customer is accurate and complete.
 
-!!! example use "Validation Examples" 
-                 Some fields are required to be filled in, so you can use the **Required** field.<br>Another example, if you want the answers in a specific format like **e-mail, URL, String, or Hexadecimal** then this field is extremely useful.
+!!! example "Validation Examples" 
+             Some fields are required to be filled in, so you can use the **Required** field.<br>Another example, if you want the answers in a specific format like **e-mail, URL, String, or Hexadecimal** then this field is extremely useful.
 
 
 * **Custom Validation Rules**: If you want to add some JavaScript and include a callback. A callback will be performed via callback.
