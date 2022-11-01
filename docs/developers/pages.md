@@ -177,7 +177,7 @@ For each component, you can change the characteristics of each component. You ca
 | **onChange**   | Triggers when the checked state has been changed. |
 
 !!! info "Dynamic Data Sources" 
-          1. Data sources can be **External**, with URLs specified and data exchange methods such as GET, POST, PUT, and DELETE. <br> You can also use **Script Forge** as a data source. Another way of choosing a data source can be through a **Database**. 
+          Data sources can be **External**, with URLs specified and data exchange methods such as GET, POST, PUT, and DELETE. <br> You can also use **Script Forge** as a data source. <br>Another way of choosing a data source can be through a **Database**. 
 
 !!! tip "You can get the value of a checkbox by using the getData method, and you can set the visibility based on the hide method."
 
