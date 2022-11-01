@@ -119,10 +119,8 @@ For each component, you can change the characteristics of each component. You ca
 
 **10. Validation**: Validation helps you verify that the input entered by the customer is accurate and complete.
 
-!!! example "Validation Examples"
-Some fields are required to be filled in, so you can use the **Required** field. 
+!!! example "Validation Examples" Some fields are required to be filled in, so you can use the **Required** field. 
 Another example, if you want the answers in a specific format like **e-mail, URL, String, or Hexadecimal** then this field is extremely useful.
-
 
 * **Custom Validation Rules**: If you want to add some JavaScript and include a callback. A callback will be performed via callback.
 
@@ -177,10 +175,8 @@ Another example, if you want the answers in a specific format like **e-mail, URL
 |------------    |---------------------------------------------------|
 | **onChange**   | Triggers when the checked state has been changed. |
 
-!!! info "Dynamic Data Sources"
-1. Data sources can be **External**, with URLs specified and data exchange methods such as GET, POST, PUT, and DELETE. <br> You can also use **Script Forge** as a data source. Another way of choosing a data source can be through a **Database**.
+!!! info "Dynamic Data Sources" 1. Data sources can be **External**, with URLs specified and data exchange methods such as GET, POST, PUT, and DELETE. <br> You can also use **Script Forge** as a data source. Another way of choosing a data source can be through a **Database**.
 2. You can get the value of a checkbox by using the getData method, and you can set the visibility based on the hide method.
-
 
 ### Select
 
@@ -248,7 +244,7 @@ Another example, if you want the answers in a specific format like **e-mail, URL
 | **onBlur**     | Blur the Input component.                           |
 
 
-!!! tip The range date and time selector can be pretty useful for selecting the dates and specific times for displaying information on the graphs.
+!!! tip "The range date and time selector can be pretty useful for selecting the dates and specific times for displaying information on the graphs."
 
 
 ### Rate
@@ -426,8 +422,8 @@ this.getComponent('dialog field identifier').display(['name'])
 ### Alert
 ### Grid mention about grid spans
 
-!!! example use
-You can add a Grah and a corresponding Data Table which will give the information on raw data. (add photo)
+!!! example "You can add a Graph and a corresponding Data Table which will give the information on raw data. (add photo)"
+
 ### Table
 ### Tabs
 
