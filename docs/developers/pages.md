@@ -21,7 +21,6 @@ The **Elements** in the Pages are extremely powerful and increase flexibility fo
 7. Number Porting: You can create a form (using Pages) on the Customer Portal and ask for details. Once the form is submitted, the requests reach Scriptforge for validation purposes. Scriptforge can update the customer on their request processing.
 
 ## Build Form
-
 1. Navigate to Developer :material-menu-right: Scriptforge IDE :material-menu-right: Pages and click <img src="/pages/add.png" alt="add" width="60"/> to create a new form.<img src="/pages/pages-page.png" alt="pages-page" width="5000"/>
 2. Complete the form's **Name** and **Title** fields, then click **Save**. <img src="/pages/name-and-title.png" alt="name-and-title" width="450"/>
 3. When you see the screen with the various pages, click on the form you created (Bani in this case).
@@ -87,7 +86,7 @@ For each component, you can change the characteristics of each component. You ca
 
 ### Input and Textarea
 
-<img src="/pages/caInput.png" alt="add" width="360"/>
+<img src="/pages/caInput.png" alt="add" width="260"/>
 
 **1. ID**: An ID is a distinct name or number that is assigned to each INPUT component in the form.
 
@@ -120,7 +119,7 @@ For each component, you can change the characteristics of each component. You ca
 **10. Validation**: Validation helps you verify that the input entered by the customer is accurate and complete.
 
 !!! example "Validation Examples" 
-             Some fields are required to be filled in, so you can use the **Required** field.<br>Another example, if you want the answers in a specific format like **e-mail, URL, String, or Hexadecimal** then this field is extremely useful.
+    Some fields are required to be filled in, so you can use the **Required** field.<br>Another example, if you want the answers in a specific format like **e-mail, URL, String, or Hexadecimal** then this field is extremely useful.
 
 
 * **Custom Validation Rules**: If you want to add some JavaScript and include a callback. A callback will be performed via callback.
