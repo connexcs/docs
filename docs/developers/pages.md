@@ -401,22 +401,72 @@ For each component, you can change the characteristics of each component. You ca
     
 ## Advance Elements 
 
-### Data Table
-### Advanced Grid
+### Data Table, Advanced Grid and Multi-Form
+
+**1. Paging**: DataTables can split the rows in tables into individual pages, which is an efficient method of showing a large number of records in a small space.<br> The end user is provided with controls to request the display of different data as they navigate through the data.<br>The minimum value of a page is 5.
+
+**2. Page Size**: Page size defined the number of rows to display on a single page when using paging.
+
+**3. Show Control**: Show controls either lets you hide or display the serial number column.
+
+**4. Default Value**: A default value is the value that is automatically assigned to the column when a DataRow is created.
+
+**5. Attribute Action**: 
+
+* Deletable: Deletable option will remove the selected row from the DataTable completely.
+* Addible:  Deletable option will add a row to the DataTable.
+
+**6. Action Settings*:
+
+| **Event Name**   | **Description**                                                                                                                                                                                                                                    |
+|------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **onChange**     | This option allows users to define custom functionality that should occur whenever a change to the selection within a Datatable occurs.<br>For example, when the selected user changes, you can update the selected user's phone number or email.  |
+| **onRowAdd**     | Triggers when a row is added in the Datatable. You can call a function to perform any operations.                                                                                                                                                  |
+| **onRowRemove**  | Triggers when a row is added in the Datatable. You can call a function to perform any operations when the row has been deleted.                                                                                                                    |
+| **onPageChange** | Triggers each time you navigate to a new page from the pagination control.                                                                                                                                                                         |
+
 ### Graph
-### Multi Form
+
+**1. Width**: Width allows you to decide the width of the graph (horizontally).
+
+**2. Height**: Width allows you to decide the height of the graph (vertically).
+
+**3. Label Width**: Label width helps you to change the dimensions of the **Name** of the graph.
+
 ### Dialog
 
-* **OnConfirm**: You can write a custom code on what will the OnConfirm button do when clicked
-* **OnCancel**: 
+**1. Width**: Width allows you to set the dimension of the Dialog box.
 
-The dialog can be manipulated by calling the method of the component instance:
+**2. Visible**: Visible option decides whether to display or hide the Dialog box.
 
-* **show dialog**: this.getComponent('dialog field identifier').open()
-* **close dialog**: this.getComponent('dialog field identifier').close()
-* **validate data in dialog**: this.getComponent('dialog field identifier').validate()
-* **dialog fields show hidden**: this.getComponent('dialog field identifier').hide([name])
-this.getComponent('dialog field identifier').display(['name'])
+**3. Show Close**: Whether to show a close button for closing the dialog box. 
+
+**4. Show Cancel button**: Whether to show a cancel button on the dialog box. 
+
+* Button Text: Button text lets you rename the cancel button.
+
+**5. Show Confirm button**: Whether to show a confirm button on the dialog box. 
+
+* Button Text: Button text lets you rename the comfirm button.
+* Loading: Check the loading option to show animation while loading data before the customer clicks on the confirm button.
+
+**6. Center**: Center option lets you place the confrim and cancel button in the center of the dialog box.
+
+**7. Margin Top**: Margin Top lets you decide the position of the dialog box from the top on the form.  
+
+**8. Action Settings*:
+
+| **Event Name**     | **Description**                                                                       |
+|----------------    |---------------------------------------------------------------------------------------|
+| **onConfirm**      | You can write a custom code on what will happen when the onConfirm button is clicked. |
+| **onCancel**       | You can write a custom code on what will happen when the onCancel button is clicked.  |
+
+!!! info "The dialog can be manipulated by calling the method of the component instance:"
+    * **show dialog**: this.getComponent('dialog field identifier').open()
+    * **close dialog**: this.getComponent('dialog field identifier').close()
+    * **validate data in dialog**: this.getComponent('dialog field identifier').validate()
+    * **dialog fields show hidden**: this.getComponent('dialog field identifier').hide([name]). <br>:this.getComponent('dialog field identifier').display(['name'])
+                                   
 
 ## Layout Elements 
 
