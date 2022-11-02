@@ -474,11 +474,50 @@ For each component, you can change the characteristics of each component. You ca
 ### Collapse
 ### Inline
 ### Alert
-### Grid mention about grid spans
+### Grid 
+
+**1. Grid Spacing**: Grid spacing allows you to add spaces between the added fields. 
+
+**2. Flex Layout**: Flex layout helps you to place your elements horizontally and vertically according to your requirement.
+
+* Horizontal Arrangement: 
+  * *Start: Fields are placed towards the start line.
+  * *End: Fields are placed towards the end line.
+  * *Center: Fields are placed along the center of the line.
+  * *Space Around: Fields are evenly distributed in the line with equal space around them.
+  * *Space Between: Fields are evenly distributed in the line; first item is on the start line, last item on the end line.
+
+* Vertical Arrangement: 
+  * *Top: Fields are placed at the top of the grid.
+  * *Middle: Fields are placedat the center of the grid.
+  * *Bottom: Fields are placed at the bottom of the grid.
+
+#### Common Attribute of each field inside the Grid
+
+**1. Grid Span**: Grid span allows you to set the field size inside the grid.
+
+**2. Offset**: Offset allows you to move the all fields in the grid to the right side.
+
+**3. Push**: Push allows you to move a specific field in the grid to the right side.
+
+**4. Pull**: Pull allows you to move a specific field in the grid to the left side.
+    
 
 !!! example "You can add a Graph and a corresponding Data Table which will give the information on raw data. (add photo)"
 
 ### Table
+
+**1. Border Width**: Border width allows you to set the width of the rows and columns of the table.
+
+**2. Border Color**: Border color allows you to set the color of the rows and columns of the table.
+
+#### Common Attribute of each field inside the Table
+
+**1. Width**:: Width allows you to set the width of each cell in the table.
+
+**2. Height**:: Height allows you to set the height of each cell in the table.
+
+
 ### Tabs
 
 
