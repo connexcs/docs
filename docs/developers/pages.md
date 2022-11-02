@@ -403,7 +403,7 @@ For each component, you can change the characteristics of each component. You ca
 
 ### Data Table, Advanced Grid and Multi-Form
 
-**1. Paging**: DataTables can split the rows in tables into individual pages, which is an efficient method of showing a large number of records in a small space.<br> The end user is provided with controls to request the display of different data as they navigate through the data.<br>The minimum value of a page is 5.
+**1. Paging**: DataTables can split the rows in tables into individual pages, which is an efficient method of showing a large number of records in a small space.<br>The minimum value of a page is 5.
 
 **2. Page Size**: Page size defined the number of rows to display on a single page when using paging.
 
@@ -416,7 +416,7 @@ For each component, you can change the characteristics of each component. You ca
 * Deletable: Deletable option will remove the selected row from the DataTable completely.
 * Addible:  Deletable option will add a row to the DataTable.
 
-**6. Action Settings*:
+**6. Action Settings**:
 
 | **Event Name**   | **Description**                                                                                                                                                                                                                                    |
 |------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -454,7 +454,7 @@ For each component, you can change the characteristics of each component. You ca
 
 **7. Margin Top**: Margin Top lets you decide the position of the dialog box from the top on the form.  
 
-**8. Action Settings*:
+**8. Action Settings**:
 
 | **Event Name**     | **Description**                                                                       |
 |----------------    |---------------------------------------------------------------------------------------|
@@ -465,7 +465,8 @@ For each component, you can change the characteristics of each component. You ca
     * **show dialog**: this.getComponent('dialog field identifier').open()
     * **close dialog**: this.getComponent('dialog field identifier').close()
     * **validate data in dialog**: this.getComponent('dialog field identifier').validate()
-    * **dialog fields show hidden**: this.getComponent('dialog field identifier').hide([name]). <br>:this.getComponent('dialog field identifier').display(['name'])
+    * **dialog fields show hidden**: this.getComponent('dialog field identifier').hide([name]).
+                                     this.getComponent('dialog field identifier').display(['name'])
                                    
 
 ## Layout Elements 
