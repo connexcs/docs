@@ -577,3 +577,22 @@ Form attribute helps you specify values for the following parameters for all the
 **5. Data Source**: Data Source can be External, from Script Forge or a Database.
 
 **6. Action Panel**: Action panel allows you to specify the actions for buttons and links controls.
+
+## Priview Options
+
+Click on the **Preview** button to view the form.<br> You can choose from **Monitor** view, **Tablet** view and **Cellphone** view. 
+
+**1. Get Data**: Get Data displays raw data of the form.
+
+**2. Reset**: Reset will erase all the data filled in the form.
+
+**3. Disabled\Enabled Edit**: Disable edit will not allow your customer to enter data in the form; Enabled edit will allow you to enter the data in the form.
+
+**4. Print Read Mode**: Print Read mode allows you to view he form before printing.
+
+**5. Print**: Print option will let you print you the filled form.
+
+**6. Close**: Close will make you exit frorm the preview window.
+
+
+
