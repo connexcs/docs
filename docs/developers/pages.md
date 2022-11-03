@@ -472,8 +472,41 @@ For each component, you can change the characteristics of each component. You ca
 ## Layout Elements 
 
 ### Collapse
+
+**1. Collapse Options**: Collapse options lets you add and delete the collapse options for your form.
+
+**2. Accordion Mode**: Accordion mode allows you to show or hide the particular content for a collapsible option.
+
 ### Inline
+
+**1. Space Size**: Space size increases or decreases the space between the added fields.
+
 ### Alert
+
+**1. Title**: Title gives a name toy you Alert message.
+
+**2. Description**: Describe your alert message in the description field.
+
+**3. Width**: Width lets you decide the dimensions of the alert box.
+
+**4. Effect**:
+
+* Light: Light effect will display a light background with dark text in the alert box.
+* Dark: Dark effect will display a dark background with light text in the alert box.
+
+**5. Type**:
+
+* Success: Success alert indicates a successful or positive action.
+* Warning: Warning alert indicates a dangerous or potentially negative action. 
+* Info: Info alert is a simple message indicating an event, facts or an instruction.
+* Error: Error alert occurs when an unforseen or invalid event takes place.
+
+**6. Closable**: Closable allows you to close the alert box.
+
+**7. Center**: Center allows you to place the position the alert text in the center of the alert box.
+
+**8. Show Icon**: Show Icon will display the alert icons corresponding to the type of alert. 
+
 ### Grid 
 
 **1. Grid Spacing**: Grid spacing allows you to add spaces between the added fields. 
@@ -520,6 +553,11 @@ For each component, you can change the characteristics of each component. You ca
 
 ### Tabs
 
+**1. Type**:Type lets you select the tab style from 3 options: **Default, Tabs** and **Border-cards**.
+
+**2. Tab Position**: Tab position lets you decide the position of the tabs: Top, Left, Right, and Bottom.
+
+**3. Tab Options**:Tab Options lets you increase and decrease the number of tabs.
 
 
 Form attribute : Style sheets: You can add custom Style Sheets to make thr interface look more pleasing.
