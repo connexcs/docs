@@ -102,7 +102,9 @@ For each component, you can change the characteristics of each component. You ca
 
 **7. Default Value**: A placeholder with a pre-defined value.
 
-**8. Custom Class**: !!! danger "Currently Unused"
+**8. Custom Class**:
+
+!!! danger "Currently Unused"
 
 **9. Action Attribute**: The action attribute specifies the action that will be taken when the form is submitted. Usually, the form data is sent to a file on the server when the user clicks on the submit button.
 
@@ -560,4 +562,18 @@ For each component, you can change the characteristics of each component. You ca
 **3. Tab Options**:Tab Options lets you increase and decrease the number of tabs.
 
 
-Form attribute : Style sheets: You can add custom Style Sheets to make thr interface look more pleasing.
+## Form attribute
+
+Form attribute helps you specify values for the following parameters for all the fields in the form:
+
+**1. Form Width**: Form width helps you decide the dimensions of the overall form.
+
+**2. Label Position**: Label position helps you position the field lables.<br> You can decide betwwen Left, Right and Top. 
+
+**3. Size**: Size describes the dimensions of the all the fields in the form. <br> You can choose from **Large**, **Small**, and **Mini**. 
+
+**4. Style sheets**: You can add custom Style Sheets to make thr interface look more pleasing.
+
+**5. Data Source**: Data Source can be External, from Script Forge or a Database.
+
+**6. Action Panel**: Action panel allows you to specify the actions for buttons and links controls.
