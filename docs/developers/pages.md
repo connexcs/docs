@@ -182,7 +182,7 @@ You can change the characteristics of each component. You can click on **Compone
 | **onChange**   | Triggers when the checked state has been changed. |
 
 !!! info "Dynamic Data Sources" 
-          Data sources can be **External**, with URLs specified and data exchange methods such as GET, POST, PUT, and DELETE. <br> You can also use **Script Forge** as a data source. <br>Another way of choosing a data source is through a **Database**. 
+          Data sources can be **External**, with URLs specified and data exchange methods such as GET, POST, PUT, and DELETE. <br> You can also use **Script Forge** as a data source. <br>Another way of choosing a data source is through a **[Database](https://page-builder-api-docs.connexcs.com/database.html)**. 
 
 !!! tip "You can get the value of a checkbox by using the getData method, and you can set the visibility based on the hide method."
 
@@ -505,6 +505,8 @@ You can change the characteristics of each component. You can click on **Compone
     * **validate data in dialog**: this.getComponent('dialog field identifier').validate()
     * **dialog fields show hidden**: this.getComponent('dialog field identifier').hide([name]).
                                      this.getComponent('dialog field identifier').display(['name'])
+                                     
+ [**Click here**](https://page-builder-api-docs.connexcs.com/database.html) for more methods and examples on dialog.
                                    
 
 ## Layout Elements 
@@ -584,6 +586,8 @@ You can change the characteristics of each component. You can click on **Compone
 
 !!! example "You can add a Graph and a corresponding Data Table which will give the information on raw data."
 
+[**Click here**](https://page-builder-api-docs.connexcs.com/echart) for more examples on graphs.
+
 ### Table
 
 <img src="/pages/catable.png" alt="table" width="260"/>
@@ -646,3 +650,5 @@ Click on the **Preview** button to view the form.<br> You can choose between the
 
 **6. Close**: Close will make you exit from the preview window.
 
+!!! note "More examples"
+    [**Click here**](https://page-builder-api-docs.connexcs.com/page.html) to get a more detailed view on the examples and methods for creating Pages.
