@@ -86,7 +86,7 @@ You can change the characteristics of each component. You can click on **Compone
 
 ### Input and Textarea
 
-<img src="/pages/caInput.png" alt="input" width="260"/> <img src="/pages/catextarea.png" alt="textarea" width="260"/>
+<img src="/pages/caInput.png" alt="input" width="260"/><br><img src="/pages/catextarea.png" alt="textarea" width="260"/>
 
 **1. ID**: An ID is a distinct name or number that is assigned to each INPUT component in the form.
 
@@ -151,8 +151,8 @@ You can change the characteristics of each component. You can click on **Compone
 
 **6. Position of the control buttons**: 
 
-* **Default**: /pages/canumber-default.png
-* **Right**: /pages/canumber-right.png
+* **Default**: <img src="/pages/canumber-default.png" alt="cabumberdefault" width="100"/> 
+* **Right**: <img src="/pages/canumber-right.png" alt="cabumberright" width="100"/>
 
 **7. Action Settings**: 
 
@@ -165,7 +165,7 @@ You can change the characteristics of each component. You can click on **Compone
 
 ### Radio Button and Checkbox Button
 
-<img src="/pages/caradio.png" alt="radio" width="260"/> <img src="/pages/cacheckbox.png" alt="checkbox" width="260"/>
+<img src="/pages/caradio.png" alt="radio" width="260"/><br><img src="/pages/cacheckbox.png" alt="checkbox" width="260"/>
 
 **1. Layout**: Layout aids in the positioning of radio buttons.
 
@@ -392,7 +392,7 @@ You can change the characteristics of each component. You can click on **Compone
 
 ### Cascader
 
-<img src="/pages/cascader.png" alt="cascader" width="260"/>
+<img src="/pages/cacascader.png" alt="cascader" width="260"/>
 
 **1. Optional any node**: You can make the cascader's sub-options selectable.
 
@@ -435,7 +435,7 @@ You can change the characteristics of each component. You can click on **Compone
 
 ### Data Table, Advanced Grid and Multi-Form
 
-<img src="/pages/cadatatable.png" alt="datatable" width="260"/> <img src="/pages/caadvancedgrid.png" alt="advancedgrid" width="260"/> <img src="/pages/camultiform.png" alt="multiform" width="260"/>
+<img src="/pages/cadatatable.png" alt="datatable" width="260"/><br><img src="/pages/cadvancedgrid.png" alt="advancedgrid" width="260"/><br><img src="/pages/camultiform.png" alt="multiform" width="260"/>
  
 **1. Paging**: DataTables can split the rows in tables into individual pages, which is an efficient method of showing a large number of records in a small space.<br>The minimum value of a page is 5.
 
@@ -582,7 +582,7 @@ You can change the characteristics of each component. You can click on **Compone
 **4. Pull**: Pull allows you to move a specific field in the grid to the left side.
     
 
-!!! example "You can add a Graph and a corresponding Data Table which will give the information on raw data. (add photo)"
+!!! example "You can add a Graph and a corresponding Data Table which will give the information on raw data."
 
 ### Table
 
@@ -601,7 +601,7 @@ You can change the characteristics of each component. You can click on **Compone
 
 ### Tabs
 
-<img src="/pages/cadatabs.png" alt="tabs" width="260"/>
+<img src="/pages/catabs.png" alt="tabs" width="260"/>
 
 **1. Type**: Type lets you select the tab style from 3 options: **Default, Tabs** and **Border-cards**.
 
@@ -630,7 +630,7 @@ The Form attribute helps you specify values for the following parameters for all
 
 ## Preview Options
 
-<img src="/pages/capreviewingoptions.png" alt="previewingoptions" width="260"/>
+<img src="/pages/capreviewoptions.png" alt="previewoptions" width="260"/>
 
 Click on the **Preview** button to view the form.<br> You can choose between the **Monitor** view, **Tablet** view, and **Cellphone** view. 
 
