@@ -151,8 +151,8 @@ You can change the characteristics of each component. You can click on **Compone
 
 **6. Position of the control buttons**: 
 
-* **Default**: <img src="/pages/canumber-default.png" alt="cabumberdefault" width="100"/> 
-* **Right**: <img src="/pages/canumber-right.png" alt="cabumberright" width="100"/>
+* **Default**: <img src="/pages/canumber-default.png" alt="cabumberdefault" width="150"/> 
+* **Right**: <img src="/pages/canumber-right.png" alt="cabumberright" width="150"/>
 
 **7. Action Settings**: 
 
@@ -392,7 +392,7 @@ You can change the characteristics of each component. You can click on **Compone
 
 ### Cascader
 
-<img src="/pages/cacascader.png" alt="cascader" width="260"/>
+<img src="/pages/cacascader.png" alt="cascader" width="200"/>
 
 **1. Optional any node**: You can make the cascader's sub-options selectable.
 
@@ -468,6 +468,8 @@ You can change the characteristics of each component. You can click on **Compone
 **2. Height**: Width allows you to decide the vertical height of the graph.
 
 **3. Label Width**: Label width helps you change the dimensions of the Name of the graph.
+
+[**Click here**](https://page-builder-api-docs.connexcs.com/echart) for more examples on graphs.
 
 ### Dialog
 
@@ -586,7 +588,6 @@ You can change the characteristics of each component. You can click on **Compone
 
 !!! example "You can add a Graph and a corresponding Data Table which will give the information on raw data."
 
-[**Click here**](https://page-builder-api-docs.connexcs.com/echart) for more examples on graphs.
 
 ### Table
 
