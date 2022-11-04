@@ -86,7 +86,7 @@ You can change the characteristics of each component. You can click on **Compone
 
 ### Input and Textarea
 
-<img src="/pages/caInput.png" alt="add" width="260"/>
+<img src="/pages/caInput.png" alt="input" width="260"/> <img src="/pages/catextarea.png" alt="textarea" width="260"/>
 
 **1. ID**: An ID is a distinct name or number that is assigned to each INPUT component in the form.
 
@@ -137,6 +137,8 @@ You can change the characteristics of each component. You can click on **Compone
 
 ### Number
 
+<img src="/pages/canumber.png" alt="number" width="260"/>
+
 **1. Minimum**: Use the Minimum option to specify the smallest value for your counter.
 
 **2. Maximum**: With the Maximum option, you can specify the maximum value for your counter.
@@ -149,8 +151,8 @@ You can change the characteristics of each component. You can click on **Compone
 
 **6. Position of the control buttons**: 
 
-* **Default**: photo
-* **Right**: photo
+* **Default**: /pages/canumber-default.png
+* **Right**: /pages/canumber-right.png
 
 **7. Action Settings**: 
 
@@ -162,6 +164,8 @@ You can change the characteristics of each component. You can click on **Compone
 
 
 ### Radio Button and Checkbox Button
+
+<img src="/pages/caradio.png" alt="radio" width="260"/> <img src="/pages/cacheckbox.png" alt="checkbox" width="260"/>
 
 **1. Layout**: Layout aids in the positioning of radio buttons.
 
@@ -185,6 +189,8 @@ You can change the characteristics of each component. You can click on **Compone
 
 ### Select
 
+<img src="/pages/caselect.png" alt="select" width="260"/>
+
 **1. Multiple**: When enabled, the Multiple feature allows you to select many options from a drop-down list of options.
 
 **2. Searchable**: The search function allows you to quickly find options.
@@ -199,6 +205,8 @@ You can change the characteristics of each component. You can click on **Compone
 
 
 ### Time
+
+<img src="/pages/catime.png" alt="time" width="260"/>
 
 **1. Range Time**: With the Range Time feature, you can specify a start and end time.
 
@@ -227,6 +235,8 @@ You can change the characteristics of each component. You can click on **Compone
 
 ### Date
 
+<img src="/pages/cadate.png" alt="date" width="260"/>
+
 **1. Display Type**:
 
 * Year: Year enables your customers to switch between years. By default, the date will be January 1. 
@@ -254,6 +264,8 @@ You can change the characteristics of each component. You can click on **Compone
 
 ### Rate
 
+<img src="/pages/carate.png" alt="rate" width="260"/>
+
 **1. Maximum**: Maximum allows you to enter the number of stars required for a rating.
 
 **2. Allow Half**: Enabling Allow Half will let your customers make a semi-selection. 
@@ -268,6 +280,8 @@ You can change the characteristics of each component. You can click on **Compone
 
 ### Color
 
+<img src="/pages/cacolor.png" alt="color" width="260"/>
+
 **1. Support transparency options**: The Transparent option lets you decide whether to keep your color transparent or opaque. You can keep the value of alpha between 0 (completely transparent) and 1 (completely opaque).
 
 **2. Default Value**: You can select a default color.
@@ -280,6 +294,8 @@ You can change the characteristics of each component. You can click on **Compone
 
 ### Switch
 
+<img src="/pages/caswitch.png" alt="switch" width="260"/>
+
 **1. Default Value**: You can select a default value of 'true' or 'false'.
 
 **2. Action Settings**:
@@ -290,6 +306,8 @@ You can change the characteristics of each component. You can click on **Compone
 
 
 ### Slider
+
+<img src="/pages/caslider.png" alt="slider" width="260"/>
 
 **1. Display input box**: The input box lets you display the value you have selected on the slider. You can also change the value of the slider by entering values into the input box or by navigating the **-** or **+** buttons.
 
@@ -307,6 +325,8 @@ You can change the characteristics of each component. You can click on **Compone
 
 ### Text
 
+<img src="/pages/catext.png" alt="text" width="260"/>
+
 **1. Default Value**: You can enter a preset value you want your customers to read or follow.
 
 **2. Action Settings**:
@@ -318,6 +338,8 @@ You can change the characteristics of each component. You can click on **Compone
 
 ### HTML
 
+<img src="/pages/cahtml.png" alt="html" width="260"/>
+
 **1. Default Value**: The default value allows you to enter a preset HTML code.
 
 **2. Action Settings**:
@@ -327,6 +349,8 @@ You can change the characteristics of each component. You can click on **Compone
 | **onChange**   | Triggers when the element value changes in the HTML code.<br>For example, "The input value has changed. The new value is: hi". |
 
 ### Button
+
+<img src="/pages/cabutton.png" alt="button" width="260"/>
 
 **1. Button Type**: 
 
@@ -349,6 +373,8 @@ You can change the characteristics of each component. You can click on **Compone
 
 ### Link
 
+<img src="/pages/calink.png" alt="link" width="260"/>
+
 **1. Link Name**: The link name specifies the external link to be used in the form.
 
 **2. href**: href is a hypertext reference that indicates the hyperlink's destination.
@@ -366,6 +392,8 @@ You can change the characteristics of each component. You can click on **Compone
 
 ### Cascader
 
+<img src="/pages/cascader.png" alt="cascader" width="260"/>
+
 **1. Optional any node**: You can make the cascader's sub-options selectable.
 
 **2. Action Settings**:
@@ -377,6 +405,8 @@ You can change the characteristics of each component. You can click on **Compone
 | **onBlur**     | Blur the Input component and hide the dropdown.                                                                                                                                                                       |
 
 ### Steps
+
+<img src="/pages/casteps.png" alt="steps" width="260"/>
 
 **1. Spacing for each step**: You can set the spacing between the steps.
 
@@ -405,6 +435,8 @@ You can change the characteristics of each component. You can click on **Compone
 
 ### Data Table, Advanced Grid and Multi-Form
 
+<img src="/pages/cadatatable.png" alt="datatable" width="260"/> <img src="/pages/caadvancedgrid.png" alt="advancedgrid" width="260"/> <img src="/pages/camultiform.png" alt="multiform" width="260"/>
+ 
 **1. Paging**: DataTables can split the rows in tables into individual pages, which is an efficient method of showing a large number of records in a small space.<br>The minimum value of a page is 5.
 
 **2. Page Size**: Page size defines the number of rows to display on a single page when using paging.
@@ -429,6 +461,8 @@ You can change the characteristics of each component. You can click on **Compone
 
 ### Graph
 
+<img src="/pages/cagraph.png" alt="graph" width="260"/>
+
 **1. Width**: Width allows you to decide the horizontal width of the graph.
 
 **2. Height**: Width allows you to decide the vertical height of the graph.
@@ -436,6 +470,8 @@ You can change the characteristics of each component. You can click on **Compone
 **3. Label Width**: Label width helps you change the dimensions of the Name of the graph.
 
 ### Dialog
+
+<img src="/pages/cadialog.png" alt="dailog" width="260"/>
 
 **1. Width**: Width allows you to set the dimension of the Dialog box.
 
@@ -475,15 +511,21 @@ You can change the characteristics of each component. You can click on **Compone
 
 ### Collapse
 
+<img src="/pages/cacollapse.png" alt="collapse" width="260"/>
+
 **1. Collapse Options**: The collapse options let you add and delete the collapse options for your form.
 
 **2. Accordion Mode**: Accordion mode allows you to show or hide particular content for a collapsible option.
 
 ### Inline
 
+<img src="/pages/cainline.png" alt="inline" width="260"/>
+
 **1. Space Size**: The space size increases or decreases the space between the added fields.
 
 ### Alert
+
+<img src="/pages/caalert.png" alt="alert" width="260"/>
 
 **1. Title**: The title gives a name to your Alert message.
 
@@ -510,6 +552,8 @@ You can change the characteristics of each component. You can click on **Compone
 **8. Show Icon**: Show Icon will display the alert icons corresponding to the type of alert. 
 
 ### Grid 
+
+<img src="/pages/cagrid.png" alt="grid" width="260"/>
 
 **1. Grid Spacing**: Grid spacing allows you to add spaces between the added fields. 
 
@@ -542,6 +586,8 @@ You can change the characteristics of each component. You can click on **Compone
 
 ### Table
 
+<img src="/pages/catable.png" alt="table" width="260"/>
+
 **1. Border Width**: Border width allows you to set the width of the rows and columns of the table.
 
 **2. Border Color**: Border color allows you to set the color of the rows and columns of the table.
@@ -555,6 +601,8 @@ You can change the characteristics of each component. You can click on **Compone
 
 ### Tabs
 
+<img src="/pages/cadatabs.png" alt="tabs" width="260"/>
+
 **1. Type**: Type lets you select the tab style from 3 options: **Default, Tabs** and **Border-cards**.
 
 **2. Tab Position**: Tab Position lets you decide the position of the tabs: Top, Left, Right, and Bottom.
@@ -563,6 +611,8 @@ You can change the characteristics of each component. You can click on **Compone
 
 
 ## Form attribute
+
+<img src="/pages/caformattribute.png" alt="formattribute" width="260"/>
 
 The Form attribute helps you specify values for the following parameters for all the fields in the form:
 
@@ -579,6 +629,8 @@ The Form attribute helps you specify values for the following parameters for all
 **6. Action Panel**: Action Panel allows you to specify the actions for buttons and link controls.
 
 ## Preview Options
+
+<img src="/pages/capreviewingoptions.png" alt="previewingoptions" width="260"/>
 
 Click on the **Preview** button to view the form.<br> You can choose between the **Monitor** view, **Tablet** view, and **Cellphone** view. 
 
