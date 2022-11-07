@@ -99,9 +99,9 @@ nav:
         - Form Builder: developers/form-builder.md
         - ScriptForge: developers/scriptforge.md
         - Pages: developers/pages.md
-            - Basic Field: developers/basic-field.md
-            - Advance Field: developers/advance-field.md
-            - Layout: developers/layout.md
+            - Basic Field: developers/pages/basic-field.md
+            - Advance Field: developers/pages/advance-field.md
+            - Layout: developers/pages/advance-field.md
         
     - Setup:
         - AnyEdge: anyedge/anyedge.md
