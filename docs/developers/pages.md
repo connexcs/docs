@@ -24,10 +24,10 @@ The **Elements** in the Pages are extremely powerful and increase flexibility fo
 1. Navigate to Developer :material-menu-right: Scriptforge IDE :material-menu-right: Pages and click <img src="/pages/add.png" alt="add" width="60"/> to create a new form.<img src="/pages/pages-page.png" alt="pages-page" width="5000"/>
 2. Complete the form's **Name** and **Title** fields, then click **Save**. <img src="/pages/name-and-title.png" alt="name-and-title" width="450"/>
 3. When you see the screen with the various pages, click on the form you created (Bani in this case).
-4. A screen with options such as [**Basic Field**](https://bani--connexcs-docs.netlify.app/developers/basic-field/), [**Advance Field**] (https://bani--connexcs-docs.netlify.app/developers/advance-field/), **Layout** (https://bani--connexcs-docs.netlify.app/developers/layout/), **Component Attribute**, and [**Form Attribute**](https://bani--connexcs-docs.netlify.app/developers/pages/#form-attribute) enables you to design attractive interactive interfaces for your customers. 
+4. A screen with options such as [**Basic Field**](https://bani--connexcs-docs.netlify.app/developers/basic-field/), [**Advance Field**](https://bani--connexcs-docs.netlify.app/developers/advance-field/), **Layout**(https://bani--connexcs-docs.netlify.app/developers/layout/), **Component Attribute**, and [**Form Attribute**](https://bani--connexcs-docs.netlify.app/developers/pages/#form-attribute) enables you to design attractive interactive interfaces for your customers. 
 <img src="/pages/fields.png" alt="fields" width="5000"/>
 
-[## Basic Fields](https://bani--connexcs-docs.netlify.app/developers/basic-field/)
+## [Basic Fields](https://bani--connexcs-docs.netlify.app/developers/basic-field/)
 
 !!! note "Know More"
     Click on each **Icon** to find out more about each element. 
@@ -66,7 +66,7 @@ The **Elements** in the Pages are extremely powerful and increase flexibility fo
 | [<img src="/pages/multi-form.png" alt="multi-form" width="135"/>](https://bani--connexcs-docs.netlify.app/developers/advance-field/#data-table-advanced-grid-and-multi-form) | The Multi-form feature allows you to prepare multiple forms. <br> If you want multiple duplicate copies (cloning) of the created form, you can use this advanced component.                                                                          |
 | [<img src="/pages/dialog.png" alt="dialog" width="135"/>](https://bani--connexcs-docs.netlify.app/developers/advance-field/#dialog)         | A dialog is a small window that prompts the user to make a decision or enter additional information. <br>A dialog does not fill the screen and is normally used for events that require users to take an action before they can proceed.|
 
-[## Layout](https://bani--connexcs-docs.netlify.app/developers/layout/)
+## [Layout](https://bani--connexcs-docs.netlify.app/developers/layout/)
 
 !!! note "Know More"
     Click on each **Icon** to learn more about each element. 
