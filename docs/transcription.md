@@ -113,9 +113,6 @@ You should choose **Customer Name** as **None** and **Visibility** as **Public**
 
 ### Transcription Alerts
 
-!!! danger "Coming Soon"
-    Alert system for Transcription is currently in development stage, it has limited documentation, we are working on this.
-
 You can navigate to a specific customer's account and add a Saved Query as alert.
 
 You will either recieve a call or text or e-mail saying a particular word or phrase has been detected for a specific call.  
