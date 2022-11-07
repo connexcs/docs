@@ -92,7 +92,7 @@ nav:
         - Voicemail: class5/voicemail.md
         - Phonebook: class5/phonebook.md        
        
-  - Developer:
+    - Developer:
         - Analytics: developers/analytics.md
         - Button Builder: developers/button-builder.md
         - Database: developers/database.md 
@@ -103,6 +103,7 @@ nav:
             - Basic Field: developers/pages/basic-field.md
             - Advance Field: developers/pages/advance-field.md
             - Layout: developers/pages/advance-field.md
+           
     - Setup:
         - AnyEdge: anyedge/anyedge.md
         - Settings:
