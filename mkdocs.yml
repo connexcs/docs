@@ -100,8 +100,8 @@ nav:
         - ScriptForge: developers/scriptforge.md
         - Pages: developers/pages.md
         - Basic Field: developers/basic-field.md
-        - Advance Field: developers/advance-elements.md
-        - Layout: docs/developers/layout.md
+        - Advance Field: developers/advance-field.md
+        - Layout: developers/layout.md
         
     - Setup:
         - AnyEdge: anyedge/anyedge.md
