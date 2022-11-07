@@ -99,7 +99,7 @@ nav:
         - Form Builder: developers/form-builder.md
         - ScriptForge: developers/scriptforge.md
         - Pages:
-            - Pages: developers/pages/introduction.md
+            - Introduction: developers/pages/introduction.md
             - Basic Field: developers/pages/basic-field.md
             - Advance Field: developers/pages/advance-field.md
             - Layout: developers/pages/advance-field.md
