@@ -24,7 +24,7 @@ The **Elements** in the Pages are extremely powerful and increase flexibility fo
 1. Navigate to Developer :material-menu-right: Scriptforge IDE :material-menu-right: Pages and click <img src="/pages/add.png" alt="add" width="60"/> to create a new form.<img src="/pages/pages-page.png" alt="pages-page" width="5000"/>
 2. Complete the form's **Name** and **Title** fields, then click **Save**. <img src="/pages/name-and-title.png" alt="name-and-title" width="450"/>
 3. When you see the screen with the various pages, click on the form you created (Bani in this case).
-4. A screen with options such as [**Basic Field**](https://bani--connexcs-docs.netlify.app/developers/basic-field/), [**Advance Field**](https://bani--connexcs-docs.netlify.app/developers/advance-field/), **Layout**(https://bani--connexcs-docs.netlify.app/developers/layout/), **Component Attribute**, and [**Form Attribute**](https://bani--connexcs-docs.netlify.app/developers/pages/#form-attribute) enables you to design attractive interactive interfaces for your customers. 
+4. A screen with options such as [**Basic Field**](https://bani--connexcs-docs.netlify.app/developers/basic-field/), [**Advance Field**](https://bani--connexcs-docs.netlify.app/developers/advance-field/), [**Layout**](https://bani--connexcs-docs.netlify.app/developers/layout/), **Component Attribute**, and [**Form Attribute**](https://bani--connexcs-docs.netlify.app/developers/pages/#form-attribute) enables you to design attractive interactive interfaces for your customers. 
 <img src="/pages/fields.png" alt="fields" width="5000"/>
 
 ## [Basic Fields](https://bani--connexcs-docs.netlify.app/developers/basic-field/)
