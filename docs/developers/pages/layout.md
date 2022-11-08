@@ -1,4 +1,6 @@
-# Layout Elements 
+# Layout Fields 
+
+Layout fields contain a group of elements that can be used to organize the various elements and enhance the form's overall design. 
 
 ## Collapse
 
