@@ -1,5 +1,7 @@
 # Advance Field 
 
+You can further modify your form with Advance Fields.<br>You can organise your data using Advanced Grid fields and DataTables.<br>You can create data with effective visual effects by using options like Graphs and Dialog.
+
 ## Data Table, Advanced Grid and Multi-Form
 
 <img src="/pages/cadatatable.png" alt="datatable" width="260"/><br><img src="/pages/cadvancedgrid.png" alt="advancedgrid" width="260"/><br><img src="/pages/camultiform.png" alt="multiform" width="260"/>
