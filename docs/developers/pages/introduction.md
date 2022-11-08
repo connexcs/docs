@@ -111,7 +111,7 @@ Click on the **Preview** button to view the form.<br> You can choose between the
 
 **2. Reset**: Resetting will erase all the data filled in the form.
 
-**3. Disabled\Enabled Edit**: Disabled edit will not allow your customer to enter data in the form; Enabled edit will allow you to enter the data in the form.
+**3. Disabled or Enabled Edit**: Disabled edit will not allow your customer to enter data in the form; Enabled edit will allow you to enter the data in the form.
 
 **4. Print Read Mode**: Print Read mode allows you to view the form before printing.
 
