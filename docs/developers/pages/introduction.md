@@ -12,7 +12,7 @@ The **Elements** in the Pages are extremely powerful and increase flexibility fo
 
 ### Usage Cases
 
-1. You can use Pages to redirect to any rulebook or manuals that you want to show your customers.  
+1. You can use Pages to redirect to any rulebook or manuals that you want to show your customers.<br>For example, you can create a rulebook on how to use Script Forge with forms.<br>Another example may include a manual with all the information on the offered services and the corresponding payemnts.
 2. Interaction with external links using [**Scriptforge**](https://docs.connexcs.com/developers/scriptforge/) and integration with Pages. 
 3. You can use it to create interactive content. For example, getting input from the customers.  
 4. Server-side and client-side validation.  
