@@ -1,6 +1,6 @@
-## Layout Elements 
+# Layout Elements 
 
-### Collapse
+## Collapse
 
 <img src="/pages/cacollapse.png" alt="collapse" width="260"/>
 
@@ -8,13 +8,13 @@
 
 **2. Accordion Mode**: Accordion mode allows you to show or hide particular content for a collapsible option.
 
-### Inline
+## Inline
 
 <img src="/pages/cainline.png" alt="inline" width="260"/>
 
 **1. Space Size**: The space size increases or decreases the space between the added fields.
 
-### Alert
+## Alert
 
 <img src="/pages/caalert.png" alt="alert" width="260"/>
 
@@ -42,7 +42,7 @@
 
 **8. Show Icon**: Show Icon will display the alert icons corresponding to the type of alert. 
 
-### Grid 
+## Grid 
 
 <img src="/pages/cagrid.png" alt="grid" width="260"/>
 
@@ -62,7 +62,7 @@
   * *Middle: Fields are placed at the center of the grid.
   * *Bottom: Fields are placed at the bottom of the grid.
 
-#### Common Attribute of each field inside the Grid
+### Common Attribute of each field inside the Grid
 
 **1. Grid Span**: Grid span allows you to set the field size inside the grid.
 
@@ -76,7 +76,7 @@
 !!! example "You can add a Graph and a corresponding Data Table which will give the information on raw data."
 
 
-### Table
+## Table
 
 <img src="/pages/catable.png" alt="table" width="260"/>
 
@@ -84,14 +84,14 @@
 
 **2. Border Color**: Border color allows you to set the color of the rows and columns of the table.
 
-#### Common Attribute of each field inside the Table
+### Common Attribute of each field inside the Table
 
 **1. Width**:: Width allows you to set the width of each cell in the table.
 
 **2. Height**:: Height allows you to set the height of each cell in the table.
 
 
-### Tabs
+## Tabs
 
 <img src="/pages/catabs.png" alt="tabs" width="260"/>
 
