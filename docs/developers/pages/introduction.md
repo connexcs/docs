@@ -101,7 +101,7 @@ The Form attribute helps you specify values for the following parameters for all
 
 ## Preview Options
 
-<img src="/pages/capreviewoptions.png" alt="previewoptions" width="120"/>
+<img src="/pages/previewoptions.png" alt="previewoptions" width="120"/>
 
 Click on the **Preview** button to view the form.<br> You can choose between the **Monitor** view, **Tablet** view, and **Cellphone** view. 
 
