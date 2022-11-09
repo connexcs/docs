@@ -41,16 +41,25 @@ Basic Fields include a collection of standard elements that can be used to creat
 !!! example "Validation Examples" 
     Some fields are required to be filled in, so you can use the **Required** field.<br>Another example is if you want the answers in a specific format like **e-mail**, **URL**, **String**, or **Hexadecimal** then this field is extremely useful.
 
-
 * **Custom Validation Rules**: If you want to add some JavaScript and include a callback. A callback will be performed via the callback function.
 
-**11. Action Settings**: Action settings specify the actions for the input element. For example, OnChange, OnBLur, etc. You can create your own customizable actions and functions by clicking on **New Action +**.
+**11. Action Settings**: Form actions define anything that happens after a visitor clicks the form submit button. Use form actions to add a redirect URL, send a confirmation email or set up conditional actions depending on the form's questions. 
+
+Action settings specify the actions for the input element. For example, OnChange, OnBLur, etc. You can create your own customizable actions and functions by clicking on **New Action +**.
 
 | **Event Name** | **Description**                                                                                                       |
 |------------    |-----------------------------------------------------------------------------------------------------------------------|
 | **onChange**   | When the element loses focus after the content has been changed.                                                      |
 | **onFocus**    | Focus on the input element.<br> For example, it's called when the user clicks on a text input.                         |
 | **onBlur**     | Blur is used to remove focus from the input field.<br> For example, when the user moves to another field or another page. |
+
+**Functional Overview of the Action Panel**
+
+You can write the Javascript Code in **New Action +** to implement your own logic for an event.
+
+1. Click on **New Action +** and add an action function. <img src="/pages/actionsettings.png" alt="actionsettings" width="260"/>
+2. Write your code and save it.<img src="/pages/actionsettings1.png" alt="actionsettings1" width="260"/>
+3. Select the action function and add its functionality to your created form.
 
 
 ## Number
@@ -90,8 +99,10 @@ Basic Fields include a collection of standard elements that can be used to creat
 * **Block**: Block will place the radio buttons vertically. 
 * **Inline**: Inline will place the radio buttons horizontally.
 
-**2. Option**: Option allows you to specify whether you want your options to display static or dynamic data. <br>For **Static data**, customers will only be allowed to select the displayed options that you have created. 
-**Dynamic data** makes the form reactive and interactive. The data can be populated with respect to the input values in other elements. You can load the data in three ways: using a **Data Source**, **Assigned Value** or as a **Function**.
+**2. Option**: Option allows you to specify whether you want your options to display static or dynamic data. <br>The data interaction between the form and the back-end application can be realized using data sources.<br>For **Static data**, customers will only be allowed to select the displayed options that you have created. 
+
+**Dynamic data** makes the form reactive and interactive. The data can be populated with respect to the input values in other elements.<br> You can load the data in three ways: using a **Data Source**, **Assigned Value** or as a **Function**.
+
 
 **3. Action Settings**:
 
