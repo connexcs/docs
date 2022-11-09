@@ -116,3 +116,29 @@ Click on the **Preview** button to view the form.<br> You can choose between the
 **5. Print**: The print option will let you print the filled form.
 
 **6. Close**: Close will you exit from the preview window.
+
+### Configure Data Source
+
+1. Click on the **Data Source Setting**.
+
+2. Click on **Add Data Source**, and the data source setting will appear on the right-side of the panel.
+
+3. **Name**: The data source name, which must be unique, is used to display and select data sources.
+
+3. You can select the Data Source from 3 options: [**Script Forge**](https://bani--connexcs-docs.netlify.app/developers/scriptforge/), **External**( allows you to get data from external services to your end users.), and **Database**.
+
+4. When you select **External** database you can select from 4 HTTP requests:
+
+| **Request Name** | **Description**                                                                  |
+|------------------|----------------------------------------------------------------------------------|
+| **GET**          | GET request is used to read/retrieve data from a web server.                     |
+| **POST**         | POST request is used to send data (file, form data, etc.) to the server.         |
+| **PUT**          | PUT request is used to modify the data on the server.                            |
+| **DELETE**       | DELETE request is used to delete the data on the server at a specified location. |
+
+* **Params**:By using the params keyword, you can specify a method parameter that takes a variable number of arguments.
+
+5. **Whether the form is initialized to send the request**: It is an asynchronous activity that sends an HTTP request and waits for a response from the web server.
+
+6. **Data Processing**
+
