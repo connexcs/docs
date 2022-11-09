@@ -88,10 +88,10 @@ Basic Fields include a collection of standard elements that can be used to creat
 **1. Layout**: Layout aids in the positioning of radio buttons.
 
 * **Block**: Block will place the radio buttons vertically. 
-* **Inline**: Inline will place the Inline buttons horizontally.
+* **Inline**: Inline will place the radio buttons horizontally.
 
-**2. Option**: Option allows you to specify whether you want your options to display static or dynamic data. <br>For **Static data**, customers will only be allowed to select the displayed options that you create. 
-* **Dynamic data** makes the form reactive and interactive. The data can be populated with respect to the input values in other elements. You can load the data in three ways: using a **Data Source**, **Assigned Value** or as a **Function**.
+**2. Option**: Option allows you to specify whether you want your options to display static or dynamic data. <br>For **Static data**, customers will only be allowed to select the displayed options that you have created. 
+**Dynamic data** makes the form reactive and interactive. The data can be populated with respect to the input values in other elements. You can load the data in three ways: using a **Data Source**, **Assigned Value** or as a **Function**.
 
 **3. Action Settings**:
 
@@ -161,7 +161,7 @@ Basic Fields include a collection of standard elements that can be used to creat
 * Month: Month enables your customers to switch between years and months. By default, the date will be January 1.
 * Date: With Date, your customers can select the year, month, and date. Only a single selection is allowed. 
 * Dates. Multiple date selections are allowed. 
-* Week:
+* Week: Allows you to select the days of the week.
 * DateTime: With the DateTime feature, your customers can choose a specific date and time. 
 * Datetimerange: The DateTime range feature allows your customers to specify a start and stop date, as well as a start and stop time.
 
@@ -278,7 +278,7 @@ Basic Fields include a collection of standard elements that can be used to creat
 * Warning: A warning button can be introduced when you want your customer to pay special attention to a specific condition. 
 * Danger: Danger can be introduced by risk-taking actions such as deletion or authorization. 
 * Info: Info buttons are introduced when you want to provide additional information to the customer where you think the customer might need help. 
-* Text/Link: Text/Link buttons are generally used when you want to redirect the customer to some other website or page.
+* Text / Link: Text / Link buttons are generally used when you want to redirect the customer to some other website or page.
 
 **2. Button shape**: There are three button shapes to choose from: plain, round, and circular.
 
