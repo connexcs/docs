@@ -116,6 +116,3 @@ Click on the **Preview** button to view the form.<br> You can choose between the
 **5. Print**: The print option will let you print the filled form.
 
 **6. Close**: Close will you exit from the preview window.
-
-!!! note "More examples"
-    [**Click here**](https://page-builder-api-docs.connexcs.com/page.html) to get a more detailed view on the examples and methods for creating Pages.
