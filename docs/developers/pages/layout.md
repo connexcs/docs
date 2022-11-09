@@ -54,23 +54,23 @@ Layout fields can be used to organize the various elements and enhance the form'
 
 * Horizontal Arrangement: 
 
-  *Start: Fields are placed toward the start line.
+  Start: Fields are placed toward the start line.
   
-  *End: Fields are placed toward the end line.
+  End: Fields are placed toward the end line.
   
-  *Center: Fields are placed along the center of the line.
+  Center: Fields are placed along the center of the line.
   
-  *Space Around: Fields are evenly distributed in the line with equal space around them.
+  Space Around: Fields are evenly distributed in the line with equal space around them.
   
-  *Space Between: Fields are evenly distributed in the line; the first item is on the start line, and the last item is on the end line.
+  Space Between: Fields are evenly distributed in the line; the first item is on the start line, and the last item is on the end line.
 
 * Vertical Arrangement: 
 
-  *Top: Fields are placed at the top of the grid.
+  Top: Fields are placed at the top of the grid.
   
-  *Middle: Fields are placed at the center of the grid.
+  Middle: Fields are placed at the center of the grid.
   
-  *Bottom: Fields are placed at the bottom of the grid.
+  Bottom: Fields are placed at the bottom of the grid.
 
 ### Common Attribute of each field inside the Grid
 
