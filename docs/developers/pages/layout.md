@@ -53,16 +53,24 @@ Layout fields can be used to organize the various elements and enhance the form'
 **2. Flex Layout**: Flex Layout helps you place your elements horizontally and vertically according to your requirements.
 
 * Horizontal Arrangement: 
-* *Start: Fields are placed toward the start line.
-* *End: Fields are placed toward the end line.
-* *Center: Fields are placed along the center of the line.
-* *Space Around: Fields are evenly distributed in the line with equal space around them.
-* *Space Between: Fields are evenly distributed in the line; the first item is on the start line, and the last item is on the end line.
+
+  1. Start: Fields are placed toward the start line.
+  
+  2. End: Fields are placed toward the end line.
+  
+  3. Center: Fields are placed along the center of the line.
+  
+  4. Space Around: Fields are evenly distributed in the line with equal space around them.
+  
+  5. Space Between: Fields are evenly distributed in the line; the first item is on the start line, and the last item is on the end line.
 
 * Vertical Arrangement: 
-  * *Top: Fields are placed at the top of the grid.
-  * *Middle: Fields are placed at the center of the grid.
-  * *Bottom: Fields are placed at the bottom of the grid.
+
+  1. Top: Fields are placed at the top of the grid.
+  
+  2. Middle: Fields are placed at the center of the grid.
+  
+  3. Bottom: Fields are placed at the bottom of the grid.
 
 ### Common Attribute of each field inside the Grid
 
@@ -88,9 +96,9 @@ Layout fields can be used to organize the various elements and enhance the form'
 
 ### Common Attribute of each field inside the Table
 
-**1. Width**:: Width allows you to set the width of each cell in the table.
+**1. Width**: Width allows you to set the width of each cell in the table.
 
-**2. Height**:: Height allows you to set the height of each cell in the table.
+**2. Height**: Height allows you to set the height of each cell in the table.
 
 
 ## Tabs
