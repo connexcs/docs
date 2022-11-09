@@ -98,7 +98,12 @@ nav:
         - Database: developers/database.md 
         - Form Builder: developers/form-builder.md
         - ScriptForge: developers/scriptforge.md
-
+        - Pages:
+            - Introduction: developers/pages/introduction.md
+            - Basic Field: developers/pages/basic-field.md
+            - Advance Field: developers/pages/advance-field.md
+            - Layout: developers/pages/layout.md
+           
     - Setup:
         - AnyEdge: anyedge/anyedge.md
         - Settings:

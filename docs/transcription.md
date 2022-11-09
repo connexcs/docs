@@ -4,8 +4,8 @@ Global :material-menu-right: Transcription
 
 ## Introduction
 
-!!! danger "Alpha Feature"
-    Transcription is currently in public Alpha, it's not intended for production usage and has limited documentation, we are working on this.
+!!! danger "Beta Version"
+    Transcription is now in its beta release. It is stable and viable for commercial use. The service will carry a charge and users will be notified in advanced.
 
 A transcription service translates voice communication whether live or recorded into a text. If you have a recorded call, you may use this service to have it transcribed in English.
 
@@ -112,9 +112,6 @@ Visibility is a privacy setting which allows you to decide if you want your cust
 You should choose **Customer Name** as **None** and **Visibility** as **Public** if you want every one of your customers to see the list.
 
 ### Transcription Alerts
-
-!!! danger "Coming Soon"
-    Alert system for Transcription is currently in development stage, it has limited documentation, we are working on this.
 
 You can navigate to a specific customer's account and add a Saved Query as alert.
 
