@@ -75,9 +75,9 @@ To view the SIP Trace of a call:
 
 ## Call Release Reasons
 
-Call drps reasons
+Call drops reasons
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjI1MTE3NDQ2LDY0MDcyMDg0NCwxMjIyND
-cyMTU0XX0=
+eyJoaXN0b3J5IjpbMTI5NDM4MDk4Myw2MjUxMTc0NDYsNjQwNz
+IwODQ0LDEyMjI0NzIxNTRdfQ==
 -->
