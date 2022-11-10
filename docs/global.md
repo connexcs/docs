@@ -6,7 +6,7 @@ The **Global** section of the ConnexCS Control Panel provides an account-wide ov
 
 
 ## Alerts
-View all the Alerts across the entire account. When creating an Alert from Global, you will need to select the Company that will use the Alert.
+View all the Alerts across the entire account. When creating an Alert from Global, you will need to select the Company that will use the Alert. wongs
 
 *See [**Alerts**](https://docs.connexcs.com/customer/alerts) for configuration details and examples of Alerts that can be built.*
 
@@ -144,3 +144,6 @@ Alternate location(s):
 ## Weylon
 **Weylon** is a remote testing application which allows end users to run tests for call issues. Results are reported back to the Control Panel for review. For setup information, see [**Remote Testing**](/guides/remote-testing) under Troubleshooting. 
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTczNjQxNTczMV19
+-->
