@@ -99,23 +99,41 @@ The Form attribute helps you specify values for the following parameters for all
 
 **6. Action Panel**: Action Panel allows you to specify the actions for buttons and link controls.
 
+## Preview Options
+
+<img src="/pages/previewoptions.png" alt="previewoptions" width="120"/>
+
+Click on the **Preview** button to view the form.<br> You can choose between the **Monitor** view, **Tablet** view, and **Cellphone** view. 
+
+**1. Get Data**: Get Data displays the raw data from the form.
+
+**2. Reset**: Resetting will erase all the data filled in the form.
+
+**3. Disabled or Enabled Edit**: Disabled edit will not allow you or your customer to enter data in the form; Enabled edit will allow you or your customer to enter the data in the form.
+
+**4. Print Read Mode**: Print Read mode allows you to view the form before printing.
+
+**5. Print**: The print option will let you print the filled form.
+
+**6. Close**: Close will you exit from the preview window.
+
 ### Configure Data Source
 
-<img src="/pages/datasource.png" alt="datasource" width="600"/>
+<img src="/pages/datasource.png" alt="datasource" width="2600"/>
 
-**1.** Click on the **Data Source Setting**.
+**1.**1. Click on the **Data Source Setting**.
 
-**2.** Click on **Add Data Source**, and the data source setting will appear on the right-side of the panel.
+**2.**2. Click on **Add Data Source**, and the data source setting will appear on the right-side of the panel.
 
-**3. Name**: The data source name, which must be unique, is used to display and select data sources.
+**3. **Name**: The data source name, which must be unique, is used to display and select data sources.
 
-**4.** You can select the Data Source from 3 options: [**Script Forge**](https://bani--connexcs-docs.netlify.app/developers/scriptforge/), **External**( allows you to get data from external services to your end users.), and **Database** [(Refer for API documentation)](https://page-builder-api-docs.connexcs.com/database.html).
+**4.**3. You can select the Data Source from 3 options: [**Script Forge**](https://bani--connexcs-docs.netlify.app/developers/scriptforge/), **External**( allows you to get data from external services to your end users.), and **Database** [(Refer for API documentation)](https://page-builder-api-docs.connexcs.com/database.html).
 
-**4.1. External Data Source**
+**4.1. External Data Source**.
 
-When you select **External** database you can select from 4 HTTP requests:
+4. When you select **External** database you can select from 4 HTTP requests:
 
-<img src="/pages/datasourceexternal.png" alt="datasourceexternal" width="660"/>
+<img src="/pages/datasourceexternal.png" alt="datasourceexternal" width="6260"/>
 
 | **Request Name** | **Description**                                                                  |
 |------------------|----------------------------------------------------------------------------------|
@@ -134,9 +152,9 @@ When you select **External** database you can select from 4 HTTP requests:
     
 * **Params**:By using the params keyword, you can specify a method parameter that takes a variable number of arguments.
 
-**5. Whether the form is initialized to send the request**: It is an asynchronous activity that sends an HTTP request and waits for a response from the web server.
+**5. **Whether the form is initialized to send the request**: It is an asynchronous activity that sends an HTTP request and waits for a response from the web server.
 
-**6. Data Processing**
+**6. **Data Processing**
 
 | **Data Processing Type**                    | **Description**                                                                                          | **Parameters**                                                                                                                                                                                                                                                                                                                                           |
 |---------------------------------------------|----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -147,7 +165,7 @@ When you select **External** database you can select from 4 HTTP requests:
 
 **7. Request Test**
 
-<img src="/pages/datasourcerequesttest.png" alt="datasourcerequesttest" width="300"/>
+<img src="/pages/datasourcerequesttest.png" alt="datasourcerequesttest" width="30260"/>
 
 After completing the data source configuration, you can click Request Test to verify the data source interface to check whether the filling is successful and whether the returned data is correct.
 
@@ -168,3 +186,6 @@ Click on the **Preview** button to view the form.<br> You can choose between the
 **5. Print**: The print option will let you print the filled form.
 
 **6. Close**: Close will you exit from the preview window.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTM2Njc2NDU4MV19
+-->
