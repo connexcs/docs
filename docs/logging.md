@@ -78,19 +78,20 @@ To view the SIP Trace of a call:
 The causes of a dropped call:
 
  **1. Downstream BYE**: When the call has been disconnected from the **originator's** side.
+ ![downstreambye](docs/logging/downstreambye.png)
 
  **2. Upstream BYE**: When the call has been disconnected from the **carrier's** side.
 
 **3. MI Termination**: When the system detects no audio communication between the originator and the carrier, then the system decides to end the call.<br>When a BYE is triggered within the application by the system on both sides.
 
-**4. Ping Timeout**: When the server machine failed to respond to the request within the allotted time, the request gets timed-out.
+**4. Ping Timeout**: When the server machine failed to respond to the request within the allotted time, the request gets timed out.
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0MTE3NzQwMyw4NjY0MjEzMTAsLTE3Mz
-Y5ODk4NzMsLTEwODI5NDY1OTIsMTI5NDM4MDk4Myw2MjUxMTc0
-NDYsNjQwNzIwODQ0LDEyMjI0NzIxNTRdfQ==
+eyJoaXN0b3J5IjpbNTM5MDE1NTIxLDEwNDExNzc0MDMsODY2ND
+IxMzEwLC0xNzM2OTg5ODczLC0xMDgyOTQ2NTkyLDEyOTQzODA5
+ODMsNjI1MTE3NDQ2LDY0MDcyMDg0NCwxMjIyNDcyMTU0XX0=
 -->
