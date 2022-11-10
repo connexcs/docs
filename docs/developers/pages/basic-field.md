@@ -101,7 +101,7 @@ You can write the Javascript Code in **New Action +** to implement your own logi
 
 **2. Option**: Option allows you to specify whether you want your options to display static or dynamic data. <br>The data interaction between the form and the back-end application can be realized using data sources.<br>For **Static data**, customers will only be allowed to select the displayed options that you have created. 
 
-**Dynamic data** makes the form reactive and interactive. The data can be populated with respect to the input values in other elements.<br> You can load the data in three ways: using a **Data Source**, **Assigned Value** or as a **Function**. [API Documentation for Data Source Actions with Examples](https://page-builder-api-docs.connexcs.com/page.html#.refreshFieldDataSource)
+**Dynamic data** makes the form reactive and interactive. The data can be populated with respect to the input values in other elements.<br> You can load the data in three ways: using a **Data Source**, **Assigned Value** or as a **Function**. [(API Documentation for Data Source Actions with Examples)](https://page-builder-api-docs.connexcs.com/page.html#.refreshFieldDataSource)
 
 
 **3. Action Settings**:
@@ -111,7 +111,7 @@ You can write the Javascript Code in **New Action +** to implement your own logi
 | **onChange**   | Triggers when the checked state has been changed. |
 
 !!! info "Dynamic Data Sources" 
-          Data sources can be **External**, with URLs specified and data exchange methods such as GET, POST, PUT, and DELETE. <br> You can also use **Script Forge** [(API Documentation for Script Forge actions)](https://page-builder-api-docs.connexcs.com/page.html#.scriptForge) as a data source. <br>Another way of choosing a data source is through a **[Database** [(API Documentation for Database methods)](https://page-builder-api-docs.connexcs.com/database.html)**. 
+          Data sources can be **External**, with URLs specified and data exchange methods such as GET, POST, PUT, and DELETE. <br> You can also use **Script Forge** [(API Documentation for Script Forge actions)](https://page-builder-api-docs.connexcs.com/page.html#.scriptForge) as a data source. <br>Another way of choosing a data source is through a **Database** [(API Documentation for Database methods)](https://page-builder-api-docs.connexcs.com/database.html). 
 
 !!! tip "You can get the value of a checkbox by using the getData method, and you can set the visibility based on the hide method."
 
