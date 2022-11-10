@@ -101,7 +101,7 @@ The Form attribute helps you specify values for the following parameters for all
 
 ### Configure Data Source
 
-<img src="/pages/datasource.png" alt="datasource" width="560"/>
+<img src="/pages/datasource.png" alt="datasource" width="400"/>
 
 **1.** Click on the **Data Source Setting**.
 
@@ -115,7 +115,7 @@ The Form attribute helps you specify values for the following parameters for all
 
 When you select **External** database you can select from 4 HTTP requests:
 
-<img src="/pages/datasourceexternal.png" alt="datasourceexternal" width="260"/>
+<img src="/pages/datasourceexternal.png" alt="datasourceexternal" width="460"/>
 
 | **Request Name** | **Description**                                                                  |
 |------------------|----------------------------------------------------------------------------------|
@@ -147,7 +147,7 @@ When you select **External** database you can select from 4 HTTP requests:
 
 **7. Request Test**
 
-<img src="/pages/datasourcerequesttest.png" alt="datasourcerequesttest" width="560"/>
+<img src="/pages/datasourcerequesttest.png" alt="datasourcerequesttest" width="400"/>
 
 After completing the data source configuration, you can click Request Test to verify the data source interface to check whether the filling is successful and whether the returned data is correct.
 
