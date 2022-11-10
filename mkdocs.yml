@@ -210,7 +210,6 @@ nav:
     - Package: customer-portal/cp-package.md
     - Routes: customer-portal/cp-routes.md
     - Recording: customer-portal/cp-recording.md
-    - Forex Checker: customer-portal/cp-forex.md
     - Status: customer-portal/status.md
     - Interconnect: customer-portal/interconnect.md
 
