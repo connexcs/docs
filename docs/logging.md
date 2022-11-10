@@ -75,9 +75,11 @@ To view the SIP Trace of a call:
 
 ## Call Release Reasons
 
-Call drops reasons
+The causes of a dropped call:
+
+ 1. List item
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5NDM4MDk4Myw2MjUxMTc0NDYsNjQwNz
-IwODQ0LDEyMjI0NzIxNTRdfQ==
+eyJoaXN0b3J5IjpbODQ3ODI0OTE3LDEyOTQzODA5ODMsNjI1MT
+E3NDQ2LDY0MDcyMDg0NCwxMjIyNDcyMTU0XX0=
 -->
