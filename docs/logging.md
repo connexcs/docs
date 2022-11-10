@@ -73,7 +73,8 @@ To view the SIP Trace of a call:
 [logging-sip]: /misc/img/logging-sip.png "SIP Traces"
 [logging-4]: /misc/img/236.png "logging-4"
 
-## Release
+## Release Reasons
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3MTMzOTcwN119
+eyJoaXN0b3J5IjpbMTIyMjQ3MjE1NF19
 -->
