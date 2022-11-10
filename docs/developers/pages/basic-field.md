@@ -111,7 +111,7 @@ You can write the Javascript Code in **New Action +** to implement your own logi
 | **onChange**   | Triggers when the checked state has been changed. |
 
 !!! info "Dynamic Data Sources" 
-          Data sources can be **External**, with URLs specified and data exchange methods such as GET, POST, PUT, and DELETE. <br> You can also use **Script Forge** [(API Documentation for Script Forge actions)](https://page-builder-api-docs.connexcs.com/page.html#.scriptForge) as a data source. <br>Another way of choosing a data source is through a **Database** [(API Documentation for Database methods)](https://page-builder-api-docs.connexcs.com/database.html). 
+          Data sources can be **External**, with URLs specified and data exchange methods such as GET, POST, PUT, and DELETE. <br> You can also use **Script Forge** [(API Documentation for Script Forge actions)](https://page-builder-api-docs.connexcs.com/page.html#.scriptForge) as a data source. <br>Another way of choosing a data source is through a **[Database** [(API Documentation for Database methods)](https://page-builder-api-docs.connexcs.com/database.html)**. 
 
 !!! tip "You can get the value of a checkbox by using the getData method, and you can set the visibility based on the hide method."
 
@@ -358,3 +358,6 @@ You can write the Javascript Code in **New Action +** to implement your own logi
 | **Event Name** | **Description**                        |
 |----------------|----------------------------------------|
 | **onChange**   | Triggers when the step number changes. |
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEyMzQ2Nzc3ODZdfQ==
+-->
