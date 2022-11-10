@@ -81,10 +81,15 @@ The causes of a dropped call:
 
  **2. Upstream BYE**: When the call has been disconnected from the **carrier's** side.
 
-**3. MI Termination**: When the system detects no audio communication between the originator and the carrier
+**3. MI Termination**: When the system detects no audio communication between the originator and the carrier, then the system decides to end the call.<br>When a BYE is triggered within the application by the system on both the sides.
+
+
+
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTA1OTgzMjQsODY2NDIxMzEwLC0xNz
+eyJoaXN0b3J5IjpbLTEyMDUzMDYzNzcsODY2NDIxMzEwLC0xNz
 M2OTg5ODczLC0xMDgyOTQ2NTkyLDEyOTQzODA5ODMsNjI1MTE3
 NDQ2LDY0MDcyMDg0NCwxMjIyNDcyMTU0XX0=
 -->
