@@ -2,6 +2,7 @@
 
 Multiple languages can be configured in the ConnexCS User Interface (UI).
 
+
 |Language|English Translation|
 |---|---|
 |اللغة العربية|Arabic|
@@ -37,3 +38,6 @@ The following image illustrates how your Control Panel looks if you change the l
       
       
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE3OTYzNDc5NjddfQ==
+-->
