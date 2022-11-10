@@ -81,8 +81,10 @@ The causes of a dropped call:
 
  **2. Upstream BYE**: When the call has been disconnected from the **carrier's** side.
 
+**3. MI Termination**: When the system 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzY5ODk4NzMsLTEwODI5NDY1OTIsMT
-I5NDM4MDk4Myw2MjUxMTc0NDYsNjQwNzIwODQ0LDEyMjI0NzIx
-NTRdfQ==
+eyJoaXN0b3J5IjpbODY2NDIxMzEwLC0xNzM2OTg5ODczLC0xMD
+gyOTQ2NTkyLDEyOTQzODA5ODMsNjI1MTE3NDQ2LDY0MDcyMDg0
+NCwxMjIyNDcyMTU0XX0=
 -->
