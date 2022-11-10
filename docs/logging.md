@@ -75,7 +75,7 @@ To view the SIP Trace of a call:
 
 ## Call Release Reasons
 
-The causes of a dropped call:
+The causes of a dropped call are:
 
  **1. Downstream BYE**: When the call has been disconnected from the **originator's** side.
  
@@ -88,15 +88,14 @@ The causes of a dropped call:
 
 **3. MI Termination**: When the system detects no audio communication between the originator and the carrier, then the system decides to end the call.<br>When a BYE is triggered within the application by the system on both sides.
 
-**4. Ping Timeout**: When the server machine failed to respond to the request within the allotted time, the request gets timed out.
+**4. Ping Timeout**: When the server machine fails to respond to the request within the allotted time, the request gets timed out.
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDgzMTQwNjYsMTA0MTE3NzQwMyw4Nj
-Y0MjEzMTAsLTE3MzY5ODk4NzMsLTEwODI5NDY1OTIsMTI5NDM4
-MDk4Myw2MjUxMTc0NDYsNjQwNzIwODQ0LDEyMjI0NzIxNTRdfQ
-==
+eyJoaXN0b3J5IjpbLTQ4ODc3NTQxOCwxMDQxMTc3NDAzLDg2Nj
+QyMTMxMCwtMTczNjk4OTg3MywtMTA4Mjk0NjU5MiwxMjk0Mzgw
+OTgzLDYyNTExNzQ0Niw2NDA3MjA4NDQsMTIyMjQ3MjE1NF19
 -->
