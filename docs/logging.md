@@ -77,9 +77,9 @@ To view the SIP Trace of a call:
 
 The causes of a dropped call:
 
- **1. Downstream BYE**: When the call has been disconnected from the **originator's** 
+ **1. Downstream BYE**: When the call has been disconnected from the **originator's** side.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1MzQ4NDgyNSwxMjk0MzgwOTgzLDYyNT
-ExNzQ0Niw2NDA3MjA4NDQsMTIyMjQ3MjE1NF19
+eyJoaXN0b3J5IjpbLTEwODI5NDY1OTIsMTI5NDM4MDk4Myw2Mj
+UxMTc0NDYsNjQwNzIwODQ0LDEyMjI0NzIxNTRdfQ==
 -->
