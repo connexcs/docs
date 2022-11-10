@@ -79,7 +79,10 @@ The causes of a dropped call:
 
  **1. Downstream BYE**: When the call has been disconnected from the **originator's** side.
 
+ **2. Upstream BYE**: When the call has been disconnected from the **carrier's** side.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODI5NDY1OTIsMTI5NDM4MDk4Myw2Mj
-UxMTc0NDYsNjQwNzIwODQ0LDEyMjI0NzIxNTRdfQ==
+eyJoaXN0b3J5IjpbLTE3MzY5ODk4NzMsLTEwODI5NDY1OTIsMT
+I5NDM4MDk4Myw2MjUxMTc0NDYsNjQwNzIwODQ0LDEyMjI0NzIx
+NTRdfQ==
 -->
