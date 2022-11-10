@@ -119,15 +119,19 @@ Click on the **Preview** button to view the form.<br> You can choose between the
 
 ### Configure Data Source
 
+<img src="/pages/datasource.png" alt="datasource" width="260"/>
+
 **1.** Click on the **Data Source Setting**.
 
 **2.** Click on **Add Data Source**, and the data source setting will appear on the right-side of the panel.
 
 **3. Name**: The data source name, which must be unique, is used to display and select data sources.
 
-**4.** You can select the Data Source from 3 options: [**Script Forge**](https://bani--connexcs-docs.netlify.app/developers/scriptforge/), **External**( allows you to get data from external services to your end users.), and **Database**.
+**4.** You can select the Data Source from 3 options: [**Script Forge**](https://bani--connexcs-docs.netlify.app/developers/scriptforge/), **External**(allows you to get data from external services to your end users.), and **Database** [(Refer for API documentation)](https://page-builder-api-docs.connexcs.com/database.html).
 
 **4.1.** When you select **External** database you can select from 4 HTTP requests:
+
+<img src="/pages/datasource.png" alt="datasourceexternal" width="260"/>
 
 | **Request Name** | **Description**                                                                  |
 |------------------|----------------------------------------------------------------------------------|
@@ -154,9 +158,9 @@ Click on the **Preview** button to view the form.<br> You can choose between the
 |---------------------------------------------|----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Before the request is sent**              | Before the request is sent, configure the parameters, headers, address and other options of the request. | **1. Modify the request address**<br>config.url = 'new request URL'.<br>**2. Modify the request** headerconfig.headers = {'X-Requested-With': 'XMLHttpRequest'}.<br>**3. Modify request query** parametersconfig.params = {ID: 12345}.<br>**4. Request the data sent by the body, not applicable to GET requests**<br>config.data = {firstName: 'Fred'}. |
 | **When requesting to return response data** | After the interface request is successful, the returned data can be processed.                           | **res: The data returned by the interface can be processed here**.                                                                                                                                                                                                                                                                                       |
-| **When an error occurs in the request**     | PUT request is used to modify the data on the server.                                                    |                                                                                                                                                                                                                                                                                                                                                          |
-
-
+| **When an error occurs in the request**     | PUT request is used to modify the data on the server.                                                    |                                                                                                                                                                                                                                                                                                                                                  |
 **7. Request Test**
+
+<img src="/pages/datasource.png" alt="datasourcerequesttest" width="260"/>
 
 After completing the data source configuration, you can click Request Test to verify the data source interface to check whether the filling is successful and whether the returned data is correct.
