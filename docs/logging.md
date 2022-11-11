@@ -86,7 +86,7 @@ The causes of a dropped call are:
 <img src="/logging/upstreambye.png" alt="upstreambye" width="460"/>
 
 
-**3. MI Termination**: The system terminates the call when it finds that there has been no audio connection between the call's originator and the receiver.<br>When a BYE is triggered within the application by the system on both sides.
+**3. MI Termination**: The system terminates the call when it finds that there has been no audio connection between the call's originator and the receiver.<br>The system triggers a BYE message on both sides within the application.
 
 
 
@@ -94,9 +94,9 @@ The causes of a dropped call are:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODIxMzMyMzE0LC04NTk3NTQ2NDcsMzk0Mj
-Q5MjM5LC0xMDAxODUwNCwxNjEwNDIyNzk0LC0xNjc4MTY4MDA0
-LC00ODg3NzU0MTgsMTA0MTE3NzQwMyw4NjY0MjEzMTAsLTE3Mz
-Y5ODk4NzMsLTEwODI5NDY1OTIsMTI5NDM4MDk4Myw2MjUxMTc0
-NDYsNjQwNzIwODQ0LDEyMjI0NzIxNTRdfQ==
+eyJoaXN0b3J5IjpbLTc4MTI4MjMwOCw4MjEzMzIzMTQsLTg1OT
+c1NDY0NywzOTQyNDkyMzksLTEwMDE4NTA0LDE2MTA0MjI3OTQs
+LTE2NzgxNjgwMDQsLTQ4ODc3NTQxOCwxMDQxMTc3NDAzLDg2Nj
+QyMTMxMCwtMTczNjk4OTg3MywtMTA4Mjk0NjU5MiwxMjk0Mzgw
+OTgzLDYyNTExNzQ0Niw2NDA3MjA4NDQsMTIyMjQ3MjE1NF19
 -->
