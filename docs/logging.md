@@ -77,13 +77,13 @@ To view the SIP Trace of a call:
 
 The causes of a dropped call are:
 
- **1. Downstream BYE**: When the call has been disconnected from the **originator's** side via a **BYE** message 
- 
- ![downstreambye](/logging/downstreambye.png)
+ **1. Downstream BYE**: When the call has been disconnected from the **originator's** side via a **BYE** message.
+
+<img src="/logging/downstreambye.png" alt="downstreambye" width="460"/>
 
  **2. Upstream BYE**: When the call has been disconnected from the **receiver** side via a **BYE** message.
 
-![upstreambye](/logging/upstreambye.png)
+<img src="/logging/upstreambye.png" alt="upstreambye" width="460"/>
 
 
 **3. MI Termination**: When the system detects no audio communication between the originator and the carrier, then the system decides to end the call.<br>When a BYE is triggered within the application by the system on both sides.
@@ -94,9 +94,9 @@ The causes of a dropped call are:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk0MjQ5MjM5LC0xMDAxODUwNCwxNjEwND
-IyNzk0LC0xNjc4MTY4MDA0LC00ODg3NzU0MTgsMTA0MTE3NzQw
-Myw4NjY0MjEzMTAsLTE3MzY5ODk4NzMsLTEwODI5NDY1OTIsMT
-I5NDM4MDk4Myw2MjUxMTc0NDYsNjQwNzIwODQ0LDEyMjI0NzIx
-NTRdfQ==
+eyJoaXN0b3J5IjpbLTg1OTc1NDY0NywzOTQyNDkyMzksLTEwMD
+E4NTA0LDE2MTA0MjI3OTQsLTE2NzgxNjgwMDQsLTQ4ODc3NTQx
+OCwxMDQxMTc3NDAzLDg2NjQyMTMxMCwtMTczNjk4OTg3MywtMT
+A4Mjk0NjU5MiwxMjk0MzgwOTgzLDYyNTExNzQ0Niw2NDA3MjA4
+NDQsMTIyMjQ3MjE1NF19
 -->
