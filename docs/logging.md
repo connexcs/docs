@@ -88,15 +88,18 @@ The causes of a dropped call are:
 
 **3. MI Termination**: The system terminates the call when it finds that there has been no audio connection between the call's originator and the receiver.<br>The system triggers a BYE message on both sides within the application.
 
+**4. Ping Timeout**: If the Sip ping is enabled under Customer>Routing. OPTION packets are sent every X no. of seconds to both legs of the call which is supposed to be replied with 200 OK by every leg. If any leg of the call misses to send the 200 OK, call is ended with release reason as ping timeout to prevent any long duration calls as the system recognizes that leg to be inactive.
+
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4MTI4MjMwOCw4MjEzMzIzMTQsLTg1OT
-c1NDY0NywzOTQyNDkyMzksLTEwMDE4NTA0LDE2MTA0MjI3OTQs
-LTE2NzgxNjgwMDQsLTQ4ODc3NTQxOCwxMDQxMTc3NDAzLDg2Nj
-QyMTMxMCwtMTczNjk4OTg3MywtMTA4Mjk0NjU5MiwxMjk0Mzgw
-OTgzLDYyNTExNzQ0Niw2NDA3MjA4NDQsMTIyMjQ3MjE1NF19
+eyJoaXN0b3J5IjpbLTIyODc2NDgxOCwtNzgxMjgyMzA4LDgyMT
+MzMjMxNCwtODU5NzU0NjQ3LDM5NDI0OTIzOSwtMTAwMTg1MDQs
+MTYxMDQyMjc5NCwtMTY3ODE2ODAwNCwtNDg4Nzc1NDE4LDEwND
+ExNzc0MDMsODY2NDIxMzEwLC0xNzM2OTg5ODczLC0xMDgyOTQ2
+NTkyLDEyOTQzODA5ODMsNjI1MTE3NDQ2LDY0MDcyMDg0NCwxMj
+IyNDcyMTU0XX0=
 -->
