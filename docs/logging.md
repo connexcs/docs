@@ -79,12 +79,7 @@ The causes of a dropped call are:
 
  **1. Downstream BYE**: When the call has been disconnected from the **originator's** side via a **BYE** message.
 
-<img src="/logging/downstreambye.png" alt="downstreambye" width="260"/>
-
  **2. Upstream BYE**: When the call has been disconnected from the **receiver** side via a **BYE** message.
-
-<img src="/logging/upstreambye.png" alt="upstreambye" width="260"/>
-
 
 **3. MI Termination**: The system terminates the call when it finds that there has been no audio connection between the call's originator and the receiver.<br>The system triggers a BYE message on both sides within the application.
 
@@ -102,7 +97,7 @@ It prevents any long-duration calls as the system recognises either the originat
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwNDQxOTg4MSwzMzM2MzY4MTAsLTIyOD
+eyJoaXN0b3J5IjpbMTI5NzYzMTcxNywzMzM2MzY4MTAsLTIyOD
 c2NDgxOCwtNzgxMjgyMzA4LDgyMTMzMjMxNCwtODU5NzU0NjQ3
 LDM5NDI0OTIzOSwtMTAwMTg1MDQsMTYxMDQyMjc5NCwtMTY3OD
 E2ODAwNCwtNDg4Nzc1NDE4LDEwNDExNzc0MDMsODY2NDIxMzEw
