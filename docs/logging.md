@@ -92,11 +92,7 @@ The causes of a dropped call are:
 
 If the Sip Ping feature is enabled under Customer:material-menu-right: Routing, OPTION packets are delivered (every X seconds) to the originator and receiver.
 
-  
-
 The originator and the receiver should reply with 200 OK after receiving the OPTION packets. If either the originator or receiver misses sending the acknowledgment, the call is terminated. This is why the call was terminated due to a "ping timeout."
-
-  
 
 It prevents any long-duration calls as the system recognises either the originator or receiver as inactive.
 
@@ -106,10 +102,10 @@ It prevents any long-duration calls as the system recognises either the originat
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODM5MTA0MjMsMzMzNjM2ODEwLC0yMj
-g3NjQ4MTgsLTc4MTI4MjMwOCw4MjEzMzIzMTQsLTg1OTc1NDY0
-NywzOTQyNDkyMzksLTEwMDE4NTA0LDE2MTA0MjI3OTQsLTE2Nz
-gxNjgwMDQsLTQ4ODc3NTQxOCwxMDQxMTc3NDAzLDg2NjQyMTMx
-MCwtMTczNjk4OTg3MywtMTA4Mjk0NjU5MiwxMjk0MzgwOTgzLD
-YyNTExNzQ0Niw2NDA3MjA4NDQsMTIyMjQ3MjE1NF19
+eyJoaXN0b3J5IjpbMTUwNDQxOTg4MSwzMzM2MzY4MTAsLTIyOD
+c2NDgxOCwtNzgxMjgyMzA4LDgyMTMzMjMxNCwtODU5NzU0NjQ3
+LDM5NDI0OTIzOSwtMTAwMTg1MDQsMTYxMDQyMjc5NCwtMTY3OD
+E2ODAwNCwtNDg4Nzc1NDE4LDEwNDExNzc0MDMsODY2NDIxMzEw
+LC0xNzM2OTg5ODczLC0xMDgyOTQ2NTkyLDEyOTQzODA5ODMsNj
+I1MTE3NDQ2LDY0MDcyMDg0NCwxMjIyNDcyMTU0XX0=
 -->
