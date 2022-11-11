@@ -88,15 +88,14 @@ The causes of a dropped call are:
 
 **3. MI Termination**: When the system detects no audio communication between the originator and the carrier, then the system decides to end the call.<br>When a BYE is triggered within the application by the system on both sides.
 
-**4. Ping Timeout**: When the server machine fails to respond to the request within the allotted time, the request gets timed out.
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzgxNjgwMDQsLTQ4ODc3NTQxOCwxMD
-QxMTc3NDAzLDg2NjQyMTMxMCwtMTczNjk4OTg3MywtMTA4Mjk0
-NjU5MiwxMjk0MzgwOTgzLDYyNTExNzQ0Niw2NDA3MjA4NDQsMT
-IyMjQ3MjE1NF19
+eyJoaXN0b3J5IjpbMTYxMDQyMjc5NCwtMTY3ODE2ODAwNCwtND
+g4Nzc1NDE4LDEwNDExNzc0MDMsODY2NDIxMzEwLC0xNzM2OTg5
+ODczLC0xMDgyOTQ2NTkyLDEyOTQzODA5ODMsNjI1MTE3NDQ2LD
+Y0MDcyMDg0NCwxMjIyNDcyMTU0XX0=
 -->
