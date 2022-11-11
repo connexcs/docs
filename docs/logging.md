@@ -79,16 +79,16 @@ The causes of a dropped call are:
 
  **1. Downstream BYE**: When the call has been disconnected from the **originator's** side via a **BYE** message.
 
-<img src="/logging/downstreambye.png" alt="downstreambye" width="460"/>
+<img src="/logging/downstreambye.png" alt="downstreambye" width="260"/>
 
  **2. Upstream BYE**: When the call has been disconnected from the **receiver** side via a **BYE** message.
 
-<img src="/logging/upstreambye.png" alt="upstreambye" width="460"/>
+<img src="/logging/upstreambye.png" alt="upstreambye" width="260"/>
 
 
 **3. MI Termination**: The system terminates the call when it finds that there has been no audio connection between the call's originator and the receiver.<br>The system triggers a BYE message on both sides within the application.
 
-**4. Ping Timeout**: If the Sip ping is enabled under Customer>Routing. OPTION packets are sent every X no. of seconds to both legs of the call which is supposed to be replied with 200 OK by every leg. If any leg of the call misses to send the 200 OK, call is ended with release reason as ping timeout to prevent any long duration calls as the system recognizes that leg to be inactive.
+**4. Ping Timeout**: If the Sip ping is enabled under Customer>Routing. OPTION packets are sent every X no. of seconds to both legs of the call which is supposed to be replied to with 200 OK by every leg. If any leg of the call misses sending the 200 OK, the call is ended with release reason as ping timeout to prevent any long-duration calls as the system recognizes that leg to be inactive.
 
 
 
@@ -96,10 +96,10 @@ The causes of a dropped call are:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyODc2NDgxOCwtNzgxMjgyMzA4LDgyMT
-MzMjMxNCwtODU5NzU0NjQ3LDM5NDI0OTIzOSwtMTAwMTg1MDQs
-MTYxMDQyMjc5NCwtMTY3ODE2ODAwNCwtNDg4Nzc1NDE4LDEwND
-ExNzc0MDMsODY2NDIxMzEwLC0xNzM2OTg5ODczLC0xMDgyOTQ2
-NTkyLDEyOTQzODA5ODMsNjI1MTE3NDQ2LDY0MDcyMDg0NCwxMj
-IyNDcyMTU0XX0=
+eyJoaXN0b3J5IjpbMzMzNjM2ODEwLC0yMjg3NjQ4MTgsLTc4MT
+I4MjMwOCw4MjEzMzIzMTQsLTg1OTc1NDY0NywzOTQyNDkyMzks
+LTEwMDE4NTA0LDE2MTA0MjI3OTQsLTE2NzgxNjgwMDQsLTQ4OD
+c3NTQxOCwxMDQxMTc3NDAzLDg2NjQyMTMxMCwtMTczNjk4OTg3
+MywtMTA4Mjk0NjU5MiwxMjk0MzgwOTgzLDYyNTExNzQ0Niw2ND
+A3MjA4NDQsMTIyMjQ3MjE1NF19
 -->
