@@ -81,7 +81,7 @@ The causes of a dropped call are:
  
  ![downstreambye](/logging/downstreambye.png)
 
- **2. Upstream BYE**: When the call has been disconnected from the **carrier's** side.
+ **2. Upstream BYE**: When the call has been disconnected from the **receiver** side via a **BYE** message.
 
 ![upstreambye](/logging/upstreambye.png)
 
@@ -94,8 +94,9 @@ The causes of a dropped call are:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDE4NTA0LDE2MTA0MjI3OTQsLTE2Nz
-gxNjgwMDQsLTQ4ODc3NTQxOCwxMDQxMTc3NDAzLDg2NjQyMTMx
-MCwtMTczNjk4OTg3MywtMTA4Mjk0NjU5MiwxMjk0MzgwOTgzLD
-YyNTExNzQ0Niw2NDA3MjA4NDQsMTIyMjQ3MjE1NF19
+eyJoaXN0b3J5IjpbMzk0MjQ5MjM5LC0xMDAxODUwNCwxNjEwND
+IyNzk0LC0xNjc4MTY4MDA0LC00ODg3NzU0MTgsMTA0MTE3NzQw
+Myw4NjY0MjEzMTAsLTE3MzY5ODk4NzMsLTEwODI5NDY1OTIsMT
+I5NDM4MDk4Myw2MjUxMTc0NDYsNjQwNzIwODQ0LDEyMjI0NzIx
+NTRdfQ==
 -->
