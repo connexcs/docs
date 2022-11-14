@@ -149,12 +149,6 @@ To enable, click **:material-plus:** next to SIP User Authentication:
 === "Voice Mail"
 
     If you enable Voice Mail, you can set which email address receives messages, reset the Voicemail Password, and view and delete current messages. See [**Voicemail**](https://docs.connexcs.com/class5/voicemail/) for information on accessing Voicemail. 
-    
-=== "Latency"
-   
-    If you enable NAT/SIP pings, the **Latency** tab will be available at the top of the SIP user screen, and displays the status of the SIP pings, and latency based on those pings. This helps in troubleshooting audio problems. 
-
-
 ___
 
 ### Reset SIP Password
@@ -202,5 +196,6 @@ In a typical configuration, a packet is sent from the customer UAC out through a
 [407-trace]: /customer/img/407-trace.png "SIP Trace Error 407"
 [voicemail]: /customer/img/voicemail.png "Voicemail"
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjIzMDU2NzBdfQ==
+eyJoaXN0b3J5IjpbLTEzODI0NTQ3NjcsLTE5MjIzMDU2NzBdfQ
+==
 -->
