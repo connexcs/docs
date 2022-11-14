@@ -22,8 +22,11 @@ To setup a **Routing Global** template, first create it and then apply it to the
 For each customer that needs the new template:
 
 2.1. Navigate to **Management :material-menu-right: Customer** and select the customer.
+
 2.2. Select **`Edit`** in the upper right corner.
+
 2.3. On the Config tab, select the new template under **Tags**.
+
 2.4. Save the customer configuration. 
 
 !!! info "Using Routing Global and Script Forge"
@@ -31,6 +34,6 @@ For each customer that needs the new template:
 
 \[routing-global]: /misc/img/routing-global.png "Edit Global Routing"
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzMzE2NjA2OCwtMTk1NzAzOTEyLDE1Nz
+eyJoaXN0b3J5IjpbMTM0MTU5OTY1MCwtMTk1NzAzOTEyLDE1Nz
 czMjExMzUsMTEwNTE4MzUxMiwtNDA0MDE0MTAyXX0=
 -->
