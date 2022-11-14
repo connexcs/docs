@@ -21,7 +21,7 @@ Alternate location(s):
 ## Contacts
 View all Customer Contacts. When creating a Contact from Global, you will need to select the Company where the Contact exists.
 
-*See [**Contacts**](https://docs.connexcs.com/customer/main) for configuration details.* 
+*See [**Contacts**](https://docs.connexcs.com/customer/main/#contacts) for configuration details.* 
 
 Alternate location(s):
 
@@ -145,5 +145,5 @@ Alternate location(s):
 **Weylon** is a remote testing application which allows end users to run tests for call issues. Results are reported back to the Control Panel for review. For setup information, see [**Remote Testing**](/guides/remote-testing) under Troubleshooting. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczNjQxNTczMV19
+eyJoaXN0b3J5IjpbLTEzNTMzMTIyMTIsMTczNjQxNTczMV19
 -->
