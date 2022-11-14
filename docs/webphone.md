@@ -145,3 +145,6 @@ You will need to provide the full URL (ex: http://domain.connexcs.com) and crede
 [webphone-basic]: /setup/img/webphone-basic.png "WebPhone Basic"
 [webphone]: /setup/img/webphone.png "WebPhone Menu"
 [webphone-adv]: /setup/img/webphone-adv.png "WebPhone Advanced"
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTgzOTUzNzA1OF19
+-->
