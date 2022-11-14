@@ -31,7 +31,7 @@ This will pass ALL the variables in the current scope to ScriptForge. Whatever S
   
 ### Sample RSS Feed Injection into a template
 
-This example can be used to provide a custom page in the [**WebPhone**](https://docs.connexcs.com/setup/integrations/webphone/)
+This example can be used to provide a custom page in the [**WebPhone**](https://docs.connexcs.com/webphone/)
 
 **ScriptForge**
 
@@ -56,3 +56,6 @@ function main (vars) {
 ```
 
 [addtemp]: /setup/img/addtemplate.png "Add Temp"
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTE1NTIyMjMwM119
+-->
