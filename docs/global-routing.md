@@ -12,7 +12,7 @@ To setup a **Routing Global** template, first create it and then apply it to the
 
 1.2. For complete field descriptions, see [**Ingress Routing configuration**](https://docs.connexcs.com/customer/routing/#configure-routing).
 
-    ![alt text][routing-global]
+   ![alt text][routing-global]
 
 1.3. The **Tag** field is essentially the name of the template. When customer routing is setup using the template, the Tag is visible in **Customer :material-menu-right: Edit :material-menu-right: Config :material-menu-right: Tags**.
 1.4. Select **`Save`**.
@@ -31,6 +31,6 @@ For each customer that needs the new template:
 
 \[routing-global]: /misc/img/routing-global.png "Edit Global Routing"
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTcwMzkxMiwxNTc3MzIxMTM1LDExMD
-UxODM1MTIsLTQwNDAxNDEwMl19
+eyJoaXN0b3J5IjpbMTYzMzE2NjA2OCwtMTk1NzAzOTEyLDE1Nz
+czMjExMzUsMTEwNTE4MzUxMiwtNDA0MDE0MTAyXX0=
 -->
