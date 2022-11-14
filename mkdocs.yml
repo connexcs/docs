@@ -132,7 +132,6 @@ nav:
             - Statement: setup/information/statements.md
             - Dial Code / Destination: setup/information/dial-code-destination.md
             - Payment Log: setup/information/payment-log.md
-            - Email Log: setup/information/email-log.md
             - Certificate: setup/information/certificate.md
             - STIR/SHAKEN Cert: setup/information/stir-shaken.md
             - Browsing Recording: setup/information/recording.md
