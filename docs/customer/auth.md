@@ -53,7 +53,7 @@ To enable, click **:material-plus:** next to IP Authentication:
     + **Bandwidth, Force From**: Do NOT Use these fields.
     + **Username, and Password**: Set when sending calls out (egress switch direction) to a remote system. Set this to allow the ConnexCS switch to operate as a client, or UAC. Not typically recommended unless the customer has a very specialized system. 
     + **Force NAT**: Forces the switch to read the IP address the traffic was received from, not the IP in the SIP packet. (See [**Far-End NAT Traversal**](https://docs.connexcs.com/far-end-nat-traversal/) for more details on how ConnexCS handles NAT for SIP.)
-    + **Intercept Reinvite**: The only situation where this is recommended is when a customer's equipment doesn't support REINVITES. Enable this to correct issues with dropped calls by having ConnexCS generate the REINVITES, which can help keep calls up if they are being disconnected by the far-end switch. 
+    + **Intercept Reinvite**: The only situation where this is recommended is when a customer's equipment doesn't support REINVITES. Enable this to correct issues with dropped calls by having ConnexCS responds to the INVITES, which can help keep calls up if they are being disconnected by the far-end switch. 
     + **Outbound Proxy**: Enter an IP of a Proxy server for calls to route to, before being sent to the carrier. This rewrites the UAC IP in the VIA field of the SIP header. This reduces management overhead as a customer only needs to authorize the single IP. Additionally, multiple addresses can be load balanced using the AnyEdge system. 
     + **Flags**: Set CLI Authentication for situations where Accounts are unable to use [**Tech Prefix**](https://docs.connexcs.com/customer/routing/#basic) to differentiate customers using the same IP. 
  
@@ -201,3 +201,6 @@ In a typical configuration, a packet is sent from the customer UAC out through a
 [test-rewrite]: /customer/img/test-rewrite.png "Test Parameter Rewrite"
 [407-trace]: /customer/img/407-trace.png "SIP Trace Error 407"
 [voicemail]: /customer/img/voicemail.png "Voicemail"
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE5MjIzMDU2NzBdfQ==
+-->
