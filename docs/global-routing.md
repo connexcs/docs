@@ -31,10 +31,8 @@ For each customer that needs the new template:
 
 !!! info "Using Routing Global and Script Forge"
     You can't use Routing Global templates to set routing details with ScriptForge (Vars box). With appropriate design, these can be configured directly under Customer Routing.
-
-\[routing-global]: /misc/img/routing-global.png "Edit Global Routing"
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzM4MzM1MywxMzQxNTk5NjUwLC0xOT
+eyJoaXN0b3J5IjpbMTIyMDYyNDUyNSwxMzQxNTk5NjUwLC0xOT
 U3MDM5MTIsMTU3NzMyMTEzNSwxMTA1MTgzNTEyLC00MDQwMTQx
 MDJdfQ==
 -->
