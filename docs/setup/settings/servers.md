@@ -111,15 +111,6 @@ This only needs to be run when the system indicates "There is a pending update o
 
 &emsp;![alt text][server-update]
 
-### Server Reactivation
-To reactivate a server:
-
-1. Click the server's IP address.
-2. Click **Reactivate** to activate your server.
-
-    ![alt text][server-6]
-
-
 ## Server Clustering and User Location Registration
 ### User Location Registration
 When a call is initiated, this generates a SIP `INVITE` which is sent to the remote server. When users connect from dynamic IP addresses, there must be a way to map a known constant address (ex: a username) to a dynamic endpoint such as an IP address or port.
@@ -143,5 +134,5 @@ When a user endpoint registers with UDP via NAT, a port mapping is created. Howe
 [server-cert1]: /setup/img/server-cert1.png "Server Certificates"
 [server-6]: /setup/img/reactivateserver.png "Reactivate Server"
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4OTAyMjY0MV19
+eyJoaXN0b3J5IjpbODkzMzM1NjE2XX0=
 -->
