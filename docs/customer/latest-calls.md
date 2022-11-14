@@ -17,7 +17,7 @@ To simulate a call:
 
 [simulate-call]: /customer/img/52.png "Simulate Call"
 
-!!! note "The simulate button is used to simulate a closed circuit call<br>This closed circuit call is used to identify the Routing Issues.."
+!!! note "The simulate button is used to simulate a closed circuit call.<br>This closed circuit call is used to identify the Routing Issues.."
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTk4MTY4MzZdfQ==
+eyJoaXN0b3J5IjpbLTM1NjA0NTYyXX0=
 -->
