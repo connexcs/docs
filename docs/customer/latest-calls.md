@@ -16,3 +16,8 @@ To simulate a call:
 ![alt text][simulate-call]
 
 [simulate-call]: /customer/img/52.png "Simulate Call"
+
+!!! note "The simulate button is used to simulate a closed circuit call<br>This closed circuit call is used to identify the Routing Issues.."
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTExOTk4MTY4MzZdfQ==
+-->
