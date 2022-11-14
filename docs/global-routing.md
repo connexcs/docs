@@ -9,6 +9,7 @@ To setup a **Routing Global** template, first create it and then apply it to the
 **Step 1: Create the template**
 
 1.1. Click **+** to create a new template.
+
 1.2. For complete field descriptions, see [**Ingress Routing configuration**](https://docs.connexcs.com/customer/routing/#configure-routing).
 
     ![alt text][routing-global]
@@ -30,5 +31,5 @@ For each customer that needs the new template:
 
 [routing-global]: /misc/img/routing-global.png "Edit Global Routing"
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwNDAxNDEwMl19
+eyJoaXN0b3J5IjpbMTEwNTE4MzUxMiwtNDA0MDE0MTAyXX0=
 -->
