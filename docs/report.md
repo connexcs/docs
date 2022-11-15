@@ -1,7 +1,7 @@
 # Report
 **Management :material-menu-right: Report**
 
-View and download **Reports** which provide extensive insights on historical data such as by Customers or Provider routes, Dual-Tone Multi-Frequency (DTMF) Cost, and [Per Number](https://docs.connexcs.com/report/#per-number) metrics. The ability to [Schedule reports](https://docs.connexcs.com/report/#schedule-report) adds automation for frequent data requirements.  
+View and download **Reports** which provide extensive insights on historical data such as by Customers or Provider routes, [Dual-Tone Multi-Frequency (DTMF)](https://docs.connexcs.com/report/#dtmf) Cost, and [Per Number](https://docs.connexcs.com/report/#per-number) metrics. The ability to [Schedule reports](https://docs.connexcs.com/report/#schedule-report) adds automation for frequent data requirements.  
 
 !!! tip "Creating additional reports"
     The **Developer :material-menu-right: [Analytics](https://docs.connexcs.com/developers/analytics/)** section of ConnexCS lets providers to manage these reports and create new reports.
@@ -43,5 +43,6 @@ Click **`Save`** to schedule the Report.
 
 [schedulereport]: /reports/img/schedulereport1.png "Schedule Reports"
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzMzMTU4NTE3LDIwOTY2OTI5MjNdfQ==
+eyJoaXN0b3J5IjpbMTQzNTczMDg4NCw3MzMxNTg1MTcsMjA5Nj
+Y5MjkyM119
 -->
