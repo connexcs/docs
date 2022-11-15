@@ -1,7 +1,7 @@
 # Report
 **Management :material-menu-right: Report**
 
-View and download **Reports** which provide extensive insights on historical data such as by Customers or Provider routes, Dual-Tone Multi-Frequency (DTMF) Cost, and Per Number metrics. The ability to Schedule reports adds automation for frequent data requirements.  
+View and download **Reports** which provide extensive insights on historical data such as by Customers or Provider routes, Dual-Tone Multi-Frequency (DTMF) Cost, and [Per Number](https://docs.connexcs.com/report/#per-number) metrics. The ability to Schedule reports adds automation for frequent data requirements.  
 
 !!! tip "Creating additional reports"
     The **Developer :material-menu-right: [Analytics](https://docs.connexcs.com/developers/analytics/)** section of ConnexCS lets providers to manage these reports and create new reports.
@@ -42,3 +42,6 @@ Set a Schedule to email the Breakout Report at designated intervals. To schedule
 Click **`Save`** to schedule the Report. 
 
 [schedulereport]: /reports/img/schedulereport1.png "Schedule Reports"
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMjA5NjY5MjkyM119
+-->
