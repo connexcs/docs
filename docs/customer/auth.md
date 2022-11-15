@@ -80,11 +80,6 @@ To enable, click **:material-plus:** next to IP Authentication:
 
 ___    
 
-### IP Authentication Audit Log
-After IP Authentication is setup, click on the IP to view configuration, and at the top of the page click "View Audit Log" to view changes specific to these settings. 
-
-
-
 ## SIP User Authentication
 When you enable **SIP Authentication**, ConnexCS will reject the initial SIP INVITE with a "407 Authentication Required". This message includes a 'nonce' (a uniquely randomly generated number, which is hashed). The customer switch will send appropriate authentication information to ConnexCS, which will connect the call. 
 
@@ -196,6 +191,6 @@ In a typical configuration, a packet is sent from the customer UAC out through a
 [407-trace]: /customer/img/407-trace.png "SIP Trace Error 407"
 [voicemail]: /customer/img/voicemail.png "Voicemail"
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODI0NTQ3NjcsLTE5MjIzMDU2NzBdfQ
-==
+eyJoaXN0b3J5IjpbMjQyODY4OTA4LC0xMzgyNDU0NzY3LC0xOT
+IyMzA1NjcwXX0=
 -->
