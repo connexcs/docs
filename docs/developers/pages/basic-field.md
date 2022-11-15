@@ -57,7 +57,7 @@ Action settings specify the actions for the input element. For example, OnChange
 
 You can write the Javascript Code in **New Action +** to implement your own logic for an event.
 
-1. Click on **New Action +** and add an action function.<br><img src="/pages/actionsettings.png" alt="actionsettings" width="460"/>
+1. Click on **New Action +** and add an action function.<img src="/pages/actionsettings.png" alt="actionsettings" width="60"/>
 2. Write your code and save it.<br><img src="/pages/actionsettings1.png" alt="actionsettings1" width="260"/>
 3. Select the action function and add its functionality to your created form.
 
@@ -129,7 +129,7 @@ You can write the Javascript Code in **New Action +** to implement your own logi
 | **Event Name** | **Description**                                  |
 |------------    |--------------------------------------------------|
 | **onChange**   | Triggers when the selected value changes.        |
-| **onFocus**    | Focus on the Input component.                    |
+| **onFocus**    | Focus on the Input component.                 |
 | **onBlur**     | Blur the Input component and hide the dropdown. |
 
 
@@ -359,5 +359,6 @@ You can write the Javascript Code in **New Action +** to implement your own logi
 |----------------|----------------------------------------|
 | **onChange**   | Triggers when the step number changes. |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzQ2Nzc3ODZdfQ==
+eyJoaXN0b3J5IjpbLTE4NDkzODAxOTYsLTEyMzQ2Nzc3ODZdfQ
+==
 -->
