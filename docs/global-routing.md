@@ -14,7 +14,9 @@ To setup a **Routing Global** template, first create it and then apply it to the
 
 ![global routing](/misc/img/routing-global.png)
 
-1.3. The **Tag** field is essentially the name of the template. When customer routing is setup using the template, the Tag is visible in **Customer :material-menu-right: Edit :material-menu-right: Config :material-menu-right: Tags**.
+1.3. The **Tag** field is essentially the name of the template. When customer routing is set up using the template, the Tag is visible in **Customer :material-menu-right: Edit :material-menu-right: Config :material-menu-right: Tags**.
+![tags](/misc/img/tags.png)
+
 1.4. Select **`Save`**.
 
 **Step 2: Assign the template**
@@ -32,7 +34,7 @@ For each customer that needs the new template:
 !!! info "Using Routing Global and Script Forge"
     You can't use Routing Global templates to set routing details with ScriptForge (Vars box). With appropriate design, these can be configured directly under Customer Routing.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyMDYyNDUyNSwxMzQxNTk5NjUwLC0xOT
-U3MDM5MTIsMTU3NzMyMTEzNSwxMTA1MTgzNTEyLC00MDQwMTQx
-MDJdfQ==
+eyJoaXN0b3J5IjpbLTY1MzgxMDE1MCwxMjIwNjI0NTI1LDEzND
+E1OTk2NTAsLTE5NTcwMzkxMiwxNTc3MzIxMTM1LDExMDUxODM1
+MTIsLTQwNDAxNDEwMl19
 -->
