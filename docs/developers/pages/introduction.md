@@ -122,13 +122,13 @@ Click on the **Preview** button to view the form.<br> You can choose between the
 
 <img src="/pages/datasource.png" alt="datasource" width="2600"/>
 
-**1. Click on the **Data Source Setting**.
+**1.** Click on the **Data Source Setting**.
 
-**2. Click on **Add Data Source**, and the data source setting will appear on the right-side of the panel.
+**2.** Click on **Add Data Source**, and the data source setting will appear on the right-side of the panel.
 
-**3. **Name**: The data source name, which must be unique, is used to display and select data sources.
+**3. Name**: The data source name, which must be unique, is used to display and select data sources.
 
-**4. You can select the Data Source from 3 options: [**Script Forge**](https://bani--connexcs-docs.netlify.app/developers/scriptforge/), **External**( allows you to get data from external services to your end users.), and **Database** [(Refer for API documentation)](https://page-builder-api-docs.connexcs.com/database.html).
+**4. You can select the Data Source from 3 options: [**Script Forge**](https://bani--connexcs-docs.netlify.app/developers/scriptforge/), **External**(allows you to get data from external services to your end users), and **Database**[(Refer for API documentation)](https://page-builder-api-docs.connexcs.com/database.html).
 
 **4.1. External Data Source**.
 
@@ -153,7 +153,7 @@ When you select **External** database you can select from 4 HTTP requests:
     
 * **Params**:By using the params keyword, you can specify a method parameter that takes a variable number of arguments.
 
-**5. **Whether the form is initialized to send the request**: It is an asynchronous activity that sends an HTTP request and waits for a response from the web server.
+**5. Whether the form is initialized to send the request**: It is an asynchronous activity that sends an HTTP request and waits for a response from the web server.
 
 **6. Data Processing**
 
