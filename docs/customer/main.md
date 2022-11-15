@@ -29,8 +29,8 @@ Click **:material-plus:** to the right of **Contacts**.
 
 + **Name**: Contacts real name
 + **Email**: This is the contact's login and a means to contact them. 
-+ **Contact Type**: This field is only used for informational and organisational purposes, there is no additional function for it. 
 + **Phone** or **Mobile**: To reach the contact. 
++ **Contact Type**: This field is only used for informational and organizational purposes, there is no additional function for it. 
 + **Auto Generate Password**: Select this to have a password generated online and sent via email. Deselect the box to enter a password manually.
 + **Public Notes**: Display on the Customer Portal. 
 + **Private Notes**: Display in the Control Panel.
@@ -103,3 +103,6 @@ You can perform the following functions with this data:
 [audit-log]: /customer/img/audit-log.png "Audit Log"
 [reset-password]: /customer/img/reset-password.png "Reset Password"
 [main-tab]: /customer/img/41.png "Contact Details"
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTQ3Mzk1MTQ4XX0=
+-->
