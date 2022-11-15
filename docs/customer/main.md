@@ -27,7 +27,7 @@ The **Contacts** section shows an overview of contacts associated with the Custo
 ### Add Contact
 Click **:material-plus:** to the right of **Contacts**.
 
-+ **Name**: Contacts real name
++ **Name**: Contact's real name
 + **Email**: This is the contact's login and a means to contact them. 
 + **Phone** or **Mobile**: To reach the contact. 
 + **Contact Type**: This field is only used for informational and organizational purposes, there is no additional function for it. 
@@ -104,5 +104,5 @@ You can perform the following functions with this data:
 [reset-password]: /customer/img/reset-password.png "Reset Password"
 [main-tab]: /customer/img/41.png "Contact Details"
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3Mzk1MTQ4XX0=
+eyJoaXN0b3J5IjpbLTE0OTQ4Nzc3MzNdfQ==
 -->
