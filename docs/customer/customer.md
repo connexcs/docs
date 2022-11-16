@@ -74,11 +74,11 @@ From the **Customers** page, you can perform several management operations.
     * **Tax:** Tax is added as a percentage that is charged on top of costs. (UK = VAT; US = Sales Tax)
     * **Currency:** Select the currency from the drop-down menu. 
 
-note!!! "Note that you won't be able to change the account currency once the account is created."
+!!! note "Note that you won't be able to change the account currency once the account is created."
 
 === "Config"
 
-    + **PayPal Email:** The email address associated with the customer's PayPal account. (This is relevant when using the IPN API which lets customers to make payments directly through PayPal instead of using the Customer Portal. See our API documentation for details on [**PayPal IPN**](https://docs.connexcs.com/setup/integrations/api/#paypal-ipn-integration).) 
+    + **PayPal Email:** The email address associated with the customer's PayPal account. (This is relevant when using the IPN API which lets customers make payments directly through PayPal instead of using the Customer Portal. See our API documentation for details on [**PayPal IPN**](https://docs.connexcs.com/setup/integrations/api/#paypal-ipn-integration).) 
     + **Website:** The customer's website address.
     + **Portal Access:**  Users can turn **Portal Access** to `Yes` (on) or `No` (off). Selecting `No` will restrict user access to the Customer Portal. Since everyone uses the portal at this time, this should always be set to `Yes`. 
     + **Tags**: Use this to add meta-data identifiers to a customer. If a customer routing is created using a template from [**Global Routing**](https://docs.connexcs.com/global-routing/), this will be the tag configured in the template.
@@ -126,7 +126,7 @@ Click an existing customer name from Customer section, then click **`Edit`**. Fo
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjE4OTE5OTkxLC03MjgxMTg4ODMsLTEyMj
-QzNDExODgsMTM4NTM1NzE5NiwtNTc1NTY1MDI4LC00MDA0Njg3
-NTUsLTE1NTYzMTQ0MzJdfQ==
+eyJoaXN0b3J5IjpbLTE3MzAzMjIxMjIsLTcyODExODg4MywtMT
+IyNDM0MTE4OCwxMzg1MzU3MTk2LC01NzU1NjUwMjgsLTQwMDQ2
+ODc1NSwtMTU1NjMxNDQzMl19
 -->
