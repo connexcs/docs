@@ -94,7 +94,7 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 ### Locks
 Used for troubleshooting, you can remove carriers from a route and run a quick test.  
 
-+ **Lock** (Whitelist): Select one or more rate cards from the list of available providers. 
++ **Lock** : Whitelist one or more rate cards from the list of available providers. 
 + **Exclude** (Blacklist): Exclude access to one or more rate cards in the list of available providers.
 
 !!! tip "Exclude Use Case"
@@ -229,3 +229,6 @@ ASR (Answer Seizure Ratio) is the number of connected calls divided by the total
 [ingress-routing]: /customer/img/ingress-routing.png "Ingress Routing"
 [routing-disabled]: /customer/img/routing-disabled.png "Disabled Routing"
 [techprefix-usecase]: /customer/img/techprefix-usecase.png "Tech Prefix Use Case"
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTYyOTQ1MTkyMl19
+-->
