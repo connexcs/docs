@@ -34,9 +34,9 @@ From the **Customers** page, you can perform several management operations.
 
 1. Select multiple customers using the tickbox selector on the left side of each row. (Customers aren't visible to each other in the sent message.)
 2. Click on "Send" at the top right then choose email or SMS.
-3. Fill in Subject line and body details and send. 
+3. Fill in the Subject line and body details and send. 
    + Emails are sent FROM the email address populated in Setup > Settings, and TO every email address listed in Contacts for each customer. 
-   + SMS are sent to the Mobile number in each Contact. 
+   + SMS is sent to the Mobile number of each Contact. 
 
 !!! note "Custom Email Servers"
     Change the outbound Email Server and SMS origination number in **Setup :material-menu-right: Settings**. 
@@ -47,8 +47,8 @@ From the **Customers** page, you can perform several management operations.
 
 ## Customer View Modification
 
-+ **Columns** pop out on the right lets you to add/remove options, change column order, in some cases you can create row groups and total values for pivot functionality
-+ **Filters** pop out on the right lets you to filter your customers
++ **Columns** pop out on the right and lets you add/remove options, and change column order, in some cases you can create row groups and total values for pivot functionality
++ **Filters** pop out on the right lets you filter your customers
 + Adjust Column ordering
 
 ## Create Customer
@@ -122,5 +122,6 @@ Click an existing customer name from Customer section, then click **`Edit`**. Fo
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwMDQ2ODc1NSwtMTU1NjMxNDQzMl19
+eyJoaXN0b3J5IjpbLTU3NTU2NTAyOCwtNDAwNDY4NzU1LC0xNT
+U2MzE0NDMyXX0=
 -->
