@@ -135,7 +135,10 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 !!! tip "The recommended RTP Media Proxy servers are the **Closest (To ConnexCS) Server** or the **Closest (Elastic) Server**."
 
 
-    :material-menu-right: `Strict`- This will enforce the proxy engagement. If the proxy can't engage with the call, the call won't be established. Note: Free accounts are limited to how many RTP Proxy channels are enabled, this may prevent calls from  connecting if you have more channels than our free accounts allow you to have.
+
+
+
+    :material-menu-right: `Strict`- This will enforce the proxy engagement. If the proxy can't engage with the call, the call won't be established. Note: Free accounts are limited to how many RTP Proxy channels are enabled, this may prevent calls from connecting if you have more channels than our free accounts allow you to have.
 
     :material-menu-right: `Relaxed`- This will perform best efforts to engage the RTP Proxy, if it can't be engaged because of either network errors, or because you don't have enough RTP capacity, the calls will connect directly.
 
@@ -231,6 +234,7 @@ ASR (Answer Seizure Ratio) is the number of connected calls divided by the total
 [routing-disabled]: /customer/img/routing-disabled.png "Disabled Routing"
 [techprefix-usecase]: /customer/img/techprefix-usecase.png "Tech Prefix Use Case"
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyMTY3NTAxOCwtMTMyOTIzODE4MCwtMz
-AyMDcwNjUwLDQxNjEwNzkyMiwtMjA0NzcyODE5Ml19
+eyJoaXN0b3J5IjpbLTM1NDA4NTM5OCwxNjIxNjc1MDE4LC0xMz
+I5MjM4MTgwLC0zMDIwNzA2NTAsNDE2MTA3OTIyLC0yMDQ3NzI4
+MTkyXX0=
 -->
