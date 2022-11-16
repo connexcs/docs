@@ -72,7 +72,9 @@ From the **Customers** page, you can perform several management operations.
     * **Debit Limit:** How much account can go into the negative (typically only relevant for post-pay customers). See [**Credit Control**](/credit-control/) for details. 
     * **Minimum Payment:** Set the minimum payment a customer can add to recharge the account. 
     * **Tax:** Tax is added as a percentage that is charged on top of costs. (UK = VAT; US = Sales Tax)
-    * **Currency:** Select the currency from the drop-down menu. Note that you won't be able to change the account currency once the account is created.
+    * **Currency:** Select the currency from the drop-down menu. 
+
+note!!! "Note that you won't be able to change the account currency once the account is created."
 
 === "Config"
 
@@ -92,7 +94,7 @@ From the **Customers** page, you can perform several management operations.
 
 === "Verification"
 
-    + **Approved CLI's Only**: Allows the customer to add numbers in the [**Customer Portal CLI**](/customer-portal/cp-cli/) section. This generates a test call with a code which the customer must enter in the portal. Once complete, their CLI will be added to the system. 
+    + **Approved CLI's Only**: Allows the customer to add numbers in the [**Customer Portal CLI**](/customer-portal/cp-cli/) section. This generates a test call with a code that the customer must enter in the portal. Once complete, their CLI will be added to the system. 
     + **Email Verification** and/or **Mobile Verification**: Used to force the customer to go to the portal for verification. (This is important to select when you create a customer manually.) If the customer doesn't verify these, they won't be able to dial. 
 
     !!! attention
@@ -124,6 +126,7 @@ Click an existing customer name from Customer section, then click **`Edit`**. Fo
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjQzNDExODgsMTM4NTM1NzE5NiwtNT
-c1NTY1MDI4LC00MDA0Njg3NTUsLTE1NTYzMTQ0MzJdfQ==
+eyJoaXN0b3J5IjpbLTcyODExODg4MywtMTIyNDM0MTE4OCwxMz
+g1MzU3MTk2LC01NzU1NjUwMjgsLTQwMDQ2ODc1NSwtMTU1NjMx
+NDQzMl19
 -->
