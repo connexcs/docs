@@ -13,3 +13,6 @@ When building rate cards or making changes to switching configuration, certain t
 | Progress      | The current status of the task (Complete percentage, Completed or Error). |
 | Failed Reason | Details on why the task may have failed.                                                 |
 | Last Log      | Summary result of the task.                                                              |
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTk4NzE5MTg1Ml19
+-->
