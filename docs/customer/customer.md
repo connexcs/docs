@@ -49,8 +49,8 @@ From the **Customers** page, you can perform several management operations.
 
 ## Customer View Modification
 
-+ **Columns** pop out on the right and lets you add/remove options, and change column order, in some cases you can create row groups and total values for pivot functionality
-+ **Filters** pop out on the right lets you filter your customers
++ **Columns** pop out on the right and lets you add/remove options, and change column order, in some cases you can create row groups and total values for pivot functionality.
++ **Filters** pop out on the right and lets you filter your customers.
 + Adjust Column ordering
 
 ## Create Customer
@@ -126,7 +126,7 @@ Click an existing customer name from Customer section, then click **`Edit`**. Fo
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzAzMjIxMjIsLTcyODExODg4MywtMT
+eyJoaXN0b3J5IjpbLTEzNTY1NDI5NDUsLTcyODExODg4MywtMT
 IyNDM0MTE4OCwxMzg1MzU3MTk2LC01NzU1NjUwMjgsLTQwMDQ2
 ODc1NSwtMTU1NjMxNDQzMl19
 -->
