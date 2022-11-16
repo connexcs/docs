@@ -21,7 +21,7 @@ To enable, click **:material-plus:** next to IP Authentication:
 
 === "Basic"
 
-    + **IP**: Enter the IP(s) of the customer switch. (FQDN can be used for Ingress only switches.)
+    + **IP**: Enter the IP(s) of the customer switch.<br>**FQDN can be used for Ingress only switches.**
     + **Switch Direction**: The available options are from the perspective of the customer switch (PBX, dialer, etc), and describe how that switch interacts with the ConnexCS switch. For switches that send and receive calls from ConnexCS, there should be separate entries for each direction. 
         
         :material-menu-right: `Ingress`: This switch *receives* calls from ConnexCS. (Note: When selected, this gives the option of using the FQDN rather than the switch IP.)
@@ -191,6 +191,6 @@ In a typical configuration, a packet is sent from the customer UAC out through a
 [407-trace]: /customer/img/407-trace.png "SIP Trace Error 407"
 [voicemail]: /customer/img/voicemail.png "Voicemail"
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQyODY4OTA4LC0xMzgyNDU0NzY3LC0xOT
-IyMzA1NjcwXX0=
+eyJoaXN0b3J5IjpbMzc3OTE5Njc1LDI0Mjg2ODkwOCwtMTM4Mj
+Q1NDc2NywtMTkyMjMwNTY3MF19
 -->
