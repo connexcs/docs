@@ -5,7 +5,7 @@ The first tab in a Customer account is **Main**. It displays a summary of the St
 
 ![alt text][cust-main]
 
-
+Each specific customer's portal can be accessed by 
 
 ## Audit Log
 ![alt text][audit-log]
@@ -106,5 +106,6 @@ You can perform the following functions with this data:
 [reset-password]: /customer/img/reset-password.png "Reset Password"
 [main-tab]: /customer/img/41.png "Contact Details"
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2Mjc0Mzc3LC0xNDk0ODc3NzMzXX0=
+eyJoaXN0b3J5IjpbLTEyOTg1NDQ5MzUsLTE0OTQ4Nzc3MzNdfQ
+==
 -->
