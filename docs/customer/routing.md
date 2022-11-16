@@ -132,7 +132,7 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
     
 + **RTP Proxy Mode**: If connection via our service fails, and relaxed is selected, it will fail over to backup automatically. 
 
-!!! tip "Using **Closest (To ConnexCS) Server** or **Closest (Elastic) Server** is the best practice"
+!!! tip "Using **The recommended RTP Media Proxy servers are the Closest (To ConnexCS) server or the Closest (Elastic) server."
 
     :material-menu-right: `Strict`- This will enforce the proxy engagement. If the proxy can't engage with the call, the call won't be established. Note: Free accounts are limited to how many RTP Proxy channels are enabled, this may prevent calls from  connecting if you have more channels than our free accounts allow you to have.
 
@@ -230,6 +230,6 @@ ASR (Answer Seizure Ratio) is the number of connected calls divided by the total
 [routing-disabled]: /customer/img/routing-disabled.png "Disabled Routing"
 [techprefix-usecase]: /customer/img/techprefix-usecase.png "Tech Prefix Use Case"
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwMjA3MDY1MCw0MTYxMDc5MjIsLTIwND
-c3MjgxOTJdfQ==
+eyJoaXN0b3J5IjpbLTQ2MDA1Nzg5NiwtMzAyMDcwNjUwLDQxNj
+EwNzkyMiwtMjA0NzcyODE5Ml19
 -->
