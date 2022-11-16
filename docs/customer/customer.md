@@ -72,7 +72,7 @@ From the **Customers** page, you can perform several management operations.
     * **Debit Limit:** How much account can go into the negative (typically only relevant for post-pay customers). See [**Credit Control**](/credit-control/) for details. 
     * **Minimum Payment:** Set the minimum payment a customer can add to recharge the account. 
     * **Tax:** Tax is added as a percentage that is charged on top of costs. (UK = VAT; US = Sales Tax)
-    * **Currency:** Select the currency from the drop-down menu.<br>!!! note "Note that you won't be able to change the account currency once the account is created."
+    * **Currency:** Select the currency from the drop-down menu.<br><br> !!! note "Note that you won't be able to change the account currency once the account is created."
 
 === "Config"
 
@@ -124,7 +124,7 @@ Click an existing customer name from the Customer section, then click **`Edit`**
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwMzQwNjQyNiwtNzI4MTE4ODgzLC0xMj
-I0MzQxMTg4LDEzODUzNTcxOTYsLTU3NTU2NTAyOCwtNDAwNDY4
-NzU1LC0xNTU2MzE0NDMyXX0=
+eyJoaXN0b3J5IjpbMzg1MTAxMjIsLTcyODExODg4MywtMTIyND
+M0MTE4OCwxMzg1MzU3MTk2LC01NzU1NjUwMjgsLTQwMDQ2ODc1
+NSwtMTU1NjMxNDQzMl19
 -->
