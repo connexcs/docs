@@ -18,9 +18,10 @@ From the **Customers** page, you can perform several management operations.
 **Bulk Upload**: Upload multiple Customers at the same time, by importing a spreadsheet file (.csv file) into ConnexCS. 
 
 1. Click `Bulk Upload` then `Upload`, find your customer file, and then click **`Open`**. 
-2. Right-click on each column to **Map Columns** to appropriate fields.
-3. **Set Start Row** to indicate the first line of data (first row is typically column headers). 
-4. Once you set all fields as required, then click **`Upload to Server`**. 
+2. Right-click on the second row and select **St**
+3. Right-click on each column to **Map Columns** to appropriate fields.
+4. **Set Start Row** to indicate the first line of data (first row is typically column headers). 
+5. Once you set all fields as required, then click **`Upload to Server`**. 
 
 **Bulk Edit**: Select multiple customers, then click **Bulk Edit** to modify fields such as Channels, Status, Flow Speed (CPS), Portal Access, and Country. 
 
@@ -122,6 +123,6 @@ Click an existing customer name from Customer section, then click **`Edit`**. Fo
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3NTU2NTAyOCwtNDAwNDY4NzU1LC0xNT
-U2MzE0NDMyXX0=
+eyJoaXN0b3J5IjpbLTQ4Mzc5MTE3MCwtNTc1NTY1MDI4LC00MD
+A0Njg3NTUsLTE1NTYzMTQ0MzJdfQ==
 -->
