@@ -5,6 +5,8 @@ The first tab in a Customer account is **Main**. It displays a summary of the St
 
 ![alt text][cust-main]
 
+
+
 ## Audit Log
 ![alt text][audit-log]
 
@@ -104,5 +106,5 @@ You can perform the following functions with this data:
 [reset-password]: /customer/img/reset-password.png "Reset Password"
 [main-tab]: /customer/img/41.png "Contact Details"
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTQ4Nzc3MzNdfQ==
+eyJoaXN0b3J5IjpbLTU2Mjc0Mzc3LC0xNDk0ODc3NzMzXX0=
 -->
