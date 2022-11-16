@@ -15,7 +15,7 @@ From the **Customers** page, you can perform several management operations.
 
 **:material-plus:**: Add new Customers (see [**Create Customers**](https://docs.connexcs.com/customer/customer/#create-customers) below for details.)
 
-**Bulk Upload**: Upload multiple Customers at the same time, by importing a spreadsheet file into ConnexCS. 
+**Bulk Upload**: Upload multiple Customers at the same time, by importing a spreadsheet file (.csv file) into ConnexCS. 
 
 1. Click `Bulk Upload` then `Upload`, find your customer file, and then click **`Open`**. 
 2. Right-click on each column to **Map Columns** to appropriate fields.
@@ -122,5 +122,5 @@ Click an existing customer name from Customer section, then click **`Edit`**. Fo
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTYzMTQ0MzJdfQ==
+eyJoaXN0b3J5IjpbLTQwMDQ2ODc1NSwtMTU1NjMxNDQzMl19
 -->
