@@ -22,7 +22,7 @@ From the **Customers** page, you can perform several management operations.
 3. Right-click on each column to **Map Columns** to appropriate fields.
 4. Once you set all fields as required, then click **Upload to Server**.
 
-!!! note "Please make sure there are no exponential or scientific notations in the .csv file while uploading it.<br>If the notations are included it will lead to some error" 
+!!! note "Before uploading the .csv file, please ensure that it does not contain any exponential or scientific notations.<br>The inclusion of the notations will result in errors." 
 
 **Bulk Edit**: Select multiple customers, then click **Bulk Edit** to modify fields such as Channels, Status, Flow Speed (CPS), Portal Access, and Country. 
 
@@ -124,6 +124,6 @@ Click an existing customer name from Customer section, then click **`Edit`**. Fo
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4NTM1NzE5NiwtNTc1NTY1MDI4LC00MD
-A0Njg3NTUsLTE1NTYzMTQ0MzJdfQ==
+eyJoaXN0b3J5IjpbLTEyMjQzNDExODgsMTM4NTM1NzE5NiwtNT
+c1NTY1MDI4LC00MDA0Njg3NTUsLTE1NTYzMTQ0MzJdfQ==
 -->
