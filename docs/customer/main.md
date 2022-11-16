@@ -5,7 +5,7 @@ The first tab in a Customer account is **Main**. It displays a summary of the St
 
 ![alt text][cust-main]
 
-!!! note "By clicking the dropdown next to the customer's name, you will be redirected to the selected customer's portal.<br>See Access"
+!!! note "By clicking the dropdown next to the customer's name, you will be redirected to the selected customer's portal.<br> See [Access Customer Panel](https://docs.connexcs.com/customer/main/#access-customer-portal) for more information. "
 
 ## Audit Log
 ![alt text][audit-log]
@@ -106,6 +106,6 @@ You can perform the following functions with this data:
 [reset-password]: /customer/img/reset-password.png "Reset Password"
 [main-tab]: /customer/img/41.png "Contact Details"
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyMjc0MzgzNiw0OTUwNjUyNzAsLTEyOT
-g1NDQ5MzUsLTE0OTQ4Nzc3MzNdfQ==
+eyJoaXN0b3J5IjpbMjM5MDM2ODAsNDk1MDY1MjcwLC0xMjk4NT
+Q0OTM1LC0xNDk0ODc3NzMzXX0=
 -->
