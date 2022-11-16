@@ -129,14 +129,10 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
     :material-menu-right: `Direct RTP (no proxy)`- Bypass ConnexCS, so media flows directly between the customer and carrier. If the customer is using a firewall or other NAT device incorrectly then media may not flow between carrier and customer. Using this setting also means that if there are audio issues, the issue can't be ConnexCS. Since it isn't likely to be the carrier, the issue would typically exist on the customer's end. 
 
     :material-menu-right: `Zone`- Select any of the regional servers, but it's recommended you choose a location near a provider or your customer. Temporarily selecting a different region to route media traffic can be helpful in diagnosing call problems. 
-    
-+ **RTP Proxy Mode**: If connection via our service fails, and relaxed is selected, it will fail over to backup automatically. 
 
 !!! tip "The recommended RTP Media Proxy servers are the **Closest (To ConnexCS) Server** or the **Closest (Elastic) Server**."
-
-
-
-
+    
++ **RTP Proxy Mode**: If connection via our service fails, and relaxed is selected, it will fail over to backup automatically. 
 
     :material-menu-right: `Strict`- This will enforce the proxy engagement. If the proxy can't engage with the call, the call won't be established. Note: Free accounts are limited to how many RTP Proxy channels are enabled, this may prevent calls from connecting if you have more channels than our free accounts allow you to have.
 
@@ -234,7 +230,7 @@ ASR (Answer Seizure Ratio) is the number of connected calls divided by the total
 [routing-disabled]: /customer/img/routing-disabled.png "Disabled Routing"
 [techprefix-usecase]: /customer/img/techprefix-usecase.png "Tech Prefix Use Case"
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1NDA4NTM5OCwxNjIxNjc1MDE4LC0xMz
-I5MjM4MTgwLC0zMDIwNzA2NTAsNDE2MTA3OTIyLC0yMDQ3NzI4
-MTkyXX0=
+eyJoaXN0b3J5IjpbMTc2NDUxMTQyOCwtMzU0MDg1Mzk4LDE2Mj
+E2NzUwMTgsLTEzMjkyMzgxODAsLTMwMjA3MDY1MCw0MTYxMDc5
+MjIsLTIwNDc3MjgxOTJdfQ==
 -->
