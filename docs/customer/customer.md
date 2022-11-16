@@ -65,7 +65,7 @@ From the **Customers** page, you can perform several management operations.
     
         :material-menu-right: `Active`: The customer is active and allowed to pass calls. 
         
-        :material-menu-right: `Inactive`: The account is disabled, no calls will complete 
+        :material-menu-right: `Inactive`: The account is disabled, and no calls will be completed. 
         
         :material-menu-right: `Pending Approval`: New signups are listed as Pending Approval. The customer cannot pass calls or become active until this phase is completed. 
     
@@ -106,7 +106,7 @@ From the **Customers** page, you can perform several management operations.
     
 !!! note "Save Options"
     + **Save and Continue** = Exit the Customer screen
-    + **Save and Stay** = Save the customer, but stay in the screen (helpful when adding multiple Customers at a time)
+    + **Save and Stay** = Save the customer, but stay on the screen (helpful when adding multiple Customers at a time)
     + **Delay and Save** = Select a time to elapse before saving the Customer, delaying the setup or change. 
 ___
 
@@ -126,7 +126,7 @@ Click an existing customer name from Customer section, then click **`Edit`**. Fo
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTY1NDI5NDUsLTcyODExODg4MywtMT
-IyNDM0MTE4OCwxMzg1MzU3MTk2LC01NzU1NjUwMjgsLTQwMDQ2
-ODc1NSwtMTU1NjMxNDQzMl19
+eyJoaXN0b3J5IjpbNzc0MTc1MzMxLC03MjgxMTg4ODMsLTEyMj
+QzNDExODgsMTM4NTM1NzE5NiwtNTc1NTY1MDI4LC00MDA0Njg3
+NTUsLTE1NTYzMTQ0MzJdfQ==
 -->
