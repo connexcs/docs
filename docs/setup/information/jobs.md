@@ -7,8 +7,8 @@
 
 **1. Completed**: When the task has been fully accomplished.
 
-**2. Failed**:    
+**2. Failed**:
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjg0MTU4OTU0LC0xMDc1MTY3ODAxLC05OD
-cxOTE4NTJdfQ==
+eyJoaXN0b3J5IjpbLTE4NTY5NjE1NTgsLTEwNzUxNjc4MDEsLT
+k4NzE5MTg1Ml19
 -->
