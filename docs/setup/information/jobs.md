@@ -7,8 +7,8 @@
 
 **1. Completed**: When the task has been fully accomplished.
 
-**2. Failed**:
+**2. Failed**: When the process does not 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTY5NjE1NTgsLTEwNzUxNjc4MDEsLT
-k4NzE5MTg1Ml19
+eyJoaXN0b3J5IjpbLTQ3OTQyOTEyNCwtMTA3NTE2NzgwMSwtOT
+g3MTkxODUyXX0=
 -->
