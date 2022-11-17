@@ -112,6 +112,7 @@ Filters are `AND` together, meaning for a call to pass on this example, the CLI 
 |--------------|---------------------------|-------------|-----------------------|--------|----------|--------------|
 | `1122334455` | `123456789`               |             |                       | No     | Disabled | None         |
 
+
 #### Filter CLI from a Large List
 You can manage large lists of numbers from our Userspace database. Once you upload the numbers under Developer :material-menu-right: Database, you can use the following options to filter by the uploaded list. Note that the filter is a partial match.
 
@@ -270,7 +271,7 @@ To set the "P-Asserted-ID" per customer, see [**Configure CLI**](https://docs.co
 [approvedcli]: /customer/img/approvedcli.png "Approved CLI Only"
 [edit-cli]: /customer/img/edit-cli.png "Edit CLI"
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTYwODc3MzUsOTk0MzQyMDcsMTk4Nj
-Q0NDEzNywxOTQ5NTUwNDc5LDIwODkyODA3MCwtMzEzMjYyNDk3
-XX0=
+eyJoaXN0b3J5IjpbLTgwMzkzMDMzLC0xMDk2MDg3NzM1LDk5ND
+M0MjA3LDE5ODY0NDQxMzcsMTk0OTU1MDQ3OSwyMDg5MjgwNzAs
+LTMxMzI2MjQ5N119
 -->
