@@ -5,8 +5,8 @@
 
 ### Types of Status 
 
-1.   
+1. Comple  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5MTM1NTM0MiwtMTA3NTE2NzgwMSwtOT
-g3MTkxODUyXX0=
+eyJoaXN0b3J5IjpbLTE0NjM2MjA4OTAsLTEwNzUxNjc4MDEsLT
+k4NzE5MTg1Ml19
 -->
