@@ -5,8 +5,9 @@
 
 ### Types of Status 
 
-1. Comple  
+**1. Completed**: When the task has been fully accomplished.
+2.   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjM2MjA4OTAsLTEwNzUxNjc4MDEsLT
+eyJoaXN0b3J5IjpbLTE5NzY4NDM4NzcsLTEwNzUxNjc4MDEsLT
 k4NzE5MTg1Ml19
 -->
