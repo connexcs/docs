@@ -28,9 +28,9 @@ Click :material-plus: under **CLI**.
 
 *Field details:*
 
-+ **CLI**: To allow CLIs through, enter the required number or a regular expression (to match and replace).
++ **CLI**: To whitelist the required CLIs, enter the required number or a regular expression (to match and replace).
 
-+ **Pre-Asserted-ID**: To allow Pre-Asserted-Identities (PAID), enter the required number or a regular expression to match and replace. 
++ **Pre-Asserted-ID**: To whitelist the required Pre-Asserted-Identities (PAID), enter the required number or a regular expression to match and replace. 
 
 + **Rewrite CLI**: A CLI can be re-written. For example, you can add `123456789` in the CLI box, and then rewrite by adding `987654321` in the re-write CLI box. (For more advanced CLI manipulation, see [**Advanced CLI Match & Manipulation**](/customer/cli/#advanced-cli-match-manipulation) below.)
 
@@ -270,6 +270,6 @@ To set the "P-Asserted-ID" per customer, see [**Configure CLI**](https://docs.co
 [approvedcli]: /customer/img/approvedcli.png "Approved CLI Only"
 [edit-cli]: /customer/img/edit-cli.png "Edit CLI"
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0OTU1MDQ3OSwyMDg5MjgwNzAsLTMxMz
-I2MjQ5N119
+eyJoaXN0b3J5IjpbMTIwNTYzOTQ0MCwxOTQ5NTUwNDc5LDIwOD
+kyODA3MCwtMzEzMjYyNDk3XX0=
 -->
