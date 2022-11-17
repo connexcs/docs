@@ -32,7 +32,7 @@ Click :material-plus: under **CLI**.
 
 + **Pre-Asserted-ID**: To whitelist the required Pre-Asserted-Identities (PAID), enter the required number or a regular expression to match and replace. 
 
-+ **Rewrite CLI**: A CLI can be re-written. For example, you can add `123456789` in the CLI box, and then rewrite by adding `987654321` in the re-write CLI box. (For more advanced CLI manipulation, see [**Advanced CLI Match & Manipulation**](/customer/cli/#advanced-cli-match-manipulation) below.)
++ **Rewrite CLI**: A CLI can be rewritten. For example, you can add `123456789` in the CLI box, and then rewrite by adding `987654321` in the re-write CLI box. (For more advanced CLI manipulation, see [**Advanced CLI Match & Manipulation**](/customer/cli/#advanced-cli-match-manipulation) below.)
 
 + **Rewrite P-Asserted-ID**: This is a SIP Header similar to the FROM header, but classified as a private, or network-level identifier. Telephone companies use it to identify call originators, but then it's stripped at the call server, so the client end-points only see the FROM field. This is especially helpful when caller's obscure their CLI/FROM information, as the network-level still requires origination details. The **P-Asserted-ID** manipulation uses the same syntax as Replace CLI.
 
@@ -270,6 +270,6 @@ To set the "P-Asserted-ID" per customer, see [**Configure CLI**](https://docs.co
 [approvedcli]: /customer/img/approvedcli.png "Approved CLI Only"
 [edit-cli]: /customer/img/edit-cli.png "Edit CLI"
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwNTYzOTQ0MCwxOTQ5NTUwNDc5LDIwOD
+eyJoaXN0b3J5IjpbMTk4NjQ0NDEzNywxOTQ5NTUwNDc5LDIwOD
 kyODA3MCwtMzEzMjYyNDk3XX0=
 -->
