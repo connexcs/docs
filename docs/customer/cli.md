@@ -252,12 +252,12 @@ The CLI system uses Regular Expressions to match and replace numbers. Here are a
 *To learn more about writing regular expressions, visit [**RegExr**](http://regexr.com) for tutorials and exercises available for all levels of expertise.*
 
 ## Blacklist numbers per provider
-Use**CLI Restrict** to whitelist CLIs passing through a specific provider. To whitelist a configured CLI:
+Use **CLI Restrict** to whitelist CLIs passing through a specific provider. To whitelist a configured CLI:
 
 1. Click **Management :material-menu-right: Rate Card**. 
 2. Select **Provider Rate Card** (under the Name column).
 1. Select **Properties :material-menu-right: Advanced**.
-3. Enter the CLI/ANIs you want to block in the **CLI Restrict** box.
+3. Enter the CLI / ANIs you want to whitelist in the **CLI Restrict** box.
 4. Click **`Save`**.
 
 ## General Condition 6 (GC6) Compliance
@@ -271,7 +271,7 @@ To set the "P-Asserted-ID" per customer, see [**Configure CLI**](https://docs.co
 [approvedcli]: /customer/img/approvedcli.png "Approved CLI Only"
 [edit-cli]: /customer/img/edit-cli.png "Edit CLI"
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyNjA2MjQyOCwtODAzOTMwMzMsLTEwOT
+eyJoaXN0b3J5IjpbMTA2NTU2NTkxNCwtODAzOTMwMzMsLTEwOT
 YwODc3MzUsOTk0MzQyMDcsMTk4NjQ0NDEzNywxOTQ5NTUwNDc5
 LDIwODkyODA3MCwtMzEzMjYyNDk3XX0=
 -->
