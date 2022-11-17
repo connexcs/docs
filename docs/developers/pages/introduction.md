@@ -102,7 +102,7 @@ The Form attribute helps you specify values for the following parameters for all
 
 ## Preview Options
 
-<img src="/pages/previewoptions.png" alt="previewoptions" width="3120"/>
+<img src="/pages/previewoptions.png" alt="previewoptions" width="320"/>
 
 Click on the **Preview** button to view the form.<br> You can choose between the **Monitor** view, **Tablet** view, and **Cellphone** view. 
 
@@ -120,7 +120,7 @@ Click on the **Preview** button to view the form.<br> You can choose between the
 
 ### Configure Data Source
 
-<img src="/pages/datasource.png" alt="datasource" width="320"/>
+<img src="/pages/datasource.png" alt="datasource" width="520"/>
 
 **1.** Click on the **Data Source Setting**.
 
