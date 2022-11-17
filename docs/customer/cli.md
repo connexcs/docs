@@ -14,7 +14,7 @@ In ConnexCS, **CLI** lets you restrict and manipulate CLIs and Pre-Asserted Iden
 
 ## Default Behaviour
 
-By default, a customer account will pass all calls, even without any configured CLI records. To change this behaviour, navigate to **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Edit :material-menu-right: Verification** and enable   [**Approved CLI's Only**]().
+By default, a customer account will pass all calls, even without any configured CLI records. To change this behaviour, navigate to **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Edit :material-menu-right: Verification** and enable   [**Approved CLI's Only**](https://docs.connexcs.com/customer/cli/#allow-customer-to-add-their-own-cli).
 
 !!! warning "Approve CLI override"
     Once the first CLI rule is entered, the behaviour changes to block all, regardless of the "Approved CLI's Only" setting.
@@ -270,6 +270,6 @@ To set the "P-Asserted-ID" per customer, see [**Configure CLI**](https://docs.co
 [approvedcli]: /customer/img/approvedcli.png "Approved CLI Only"
 [edit-cli]: /customer/img/edit-cli.png "Edit CLI"
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQxMzYxOTg2LDE5ODY0NDQxMzcsMTk0OT
-U1MDQ3OSwyMDg5MjgwNzAsLTMxMzI2MjQ5N119
+eyJoaXN0b3J5IjpbOTk0MzQyMDcsMTk4NjQ0NDEzNywxOTQ5NT
+UwNDc5LDIwODkyODA3MCwtMzEzMjYyNDk3XX0=
 -->
