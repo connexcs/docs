@@ -59,7 +59,7 @@ Navigate to **Management :material-menu-right: Customer :material-menu-right: [C
 
 ### Filter Examples
 
-Configuring a number as a **CLI** in ConnexCS gives the customer the ability to control which numbers are allowed to initiate calls. Any number configured as a CLI is considered part of the Whitelist (unless additional configuration is applied to block it).
+Configuring a number as a **CLI** in ConnexCS gives the customer the ability to control which numbers are allowed to initiate calls. Any number configured as a CLI is considered part of the Whitelist (unless the additional configuration is applied to block it).
 
 #### Filter CLI by Number
 Block all calls that don't have the CLI "123456789":
@@ -113,7 +113,7 @@ Filters are `AND` together, meaning for a call to pass on this example, the CLI 
 | `1122334455` | `123456789`               |             |                       | No     | Disabled | None         |
 
 #### Filter CLI from a Large List
-You can manage large lists of numbers from our Userspace database. Once you upload the numbers, you can use the following options to filter by the uploaded list. Note that the filter is a partial match.
+You can manage large lists of numbers from our Userspace database. Once you upload the numbers under , you can use the following options to filter by the uploaded list. Note that the filter is a partial match.
 
 | Pre-Asserted-ID  | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB  |
 |------------------|-------------|-----------------------|--------|----------|---------------|
@@ -270,6 +270,7 @@ To set the "P-Asserted-ID" per customer, see [**Configure CLI**](https://docs.co
 [approvedcli]: /customer/img/approvedcli.png "Approved CLI Only"
 [edit-cli]: /customer/img/edit-cli.png "Edit CLI"
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTk0MzQyMDcsMTk4NjQ0NDEzNywxOTQ5NT
-UwNDc5LDIwODkyODA3MCwtMzEzMjYyNDk3XX0=
+eyJoaXN0b3J5IjpbMTU5ODg0NTY5MCw5OTQzNDIwNywxOTg2ND
+Q0MTM3LDE5NDk1NTA0NzksMjA4OTI4MDcwLC0zMTMyNjI0OTdd
+fQ==
 -->
