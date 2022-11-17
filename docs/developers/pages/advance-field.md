@@ -77,7 +77,4 @@ You can further modify your form with Advance Fields.<br>You can organise your d
     * **dialog fields show hidden**: this.getComponent('dialog field identifier').hide([name]).
                                      this.getComponent('dialog field identifier').display(['name'])
                                      
- [**Click here for the API documentation on Dialog**](https://page-builder-api-docs.connexcs.com/dialog.html)atabase.html) for more methods and examples on dialog.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjgwMjM0ODNdfQ==
--->
+ [**Click here for the API documentation on Dialog**](https://page-builder-api-docs.connexcs.com/dialog.html) for more methods and examples on dialog.
