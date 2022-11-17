@@ -57,7 +57,7 @@ Action settings specify the actions for the input element. For example, OnChange
 
 You can write the Javascript Code in **New Action +** to implement your own logic for an event.
 
-1. Click on **New Action +** and add an action function.<br><img src="/pages/actionsettings.png" alt="actionsettings" width="260"/>
+1. Click on **New Action +** and add an action function.<br><img src="/pages/actionsettings.png" alt="actionsettings" width="460"/>
 2. Write your code and save it.<br><img src="/pages/actionsettings1.png" alt="actionsettings1" width="260"/>
 3. Select the action function and add its functionality to your created form.
 
