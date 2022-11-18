@@ -33,7 +33,7 @@ Table view of configured **Customers** and **Carriers** sorted by Channels in Us
 Upper graphs:
 
 + **Channels**: Displays all currently active channels.  
-+ **Channels SanKey**: Displays the calls and carriers that are linked together. *Diagram in development*
++ **Channels SanKey**: Displays the calls and carriers that are linked together.<br>![channel san key](/misc/img/dashboardchannelsankey.png)
 
 Lower graphs:
 
@@ -48,3 +48,6 @@ Lower graphs:
 [top of page]: /misc/img/topofpage.png "Top of Page"
 [dashboard]: /misc/img/dashboard.png "Dashboard"
 [profit]: /misc/img/profit.png "Graph Actions"
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE4NDM0MTgyODBdfQ==
+-->
