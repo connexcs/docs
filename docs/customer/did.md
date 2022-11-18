@@ -46,10 +46,9 @@ For more details on these fields, see [**Media in Customer Routing**](https://do
     
     :material-menu-right: `Relaxed`- This will perform best efforts to engage the RTP Proxy, if it can't then the calls will connect directly.
 
-+  **RTP Media Proxy**: This defaults to Auto but selecting a zone (by continent) is the current recommendation. The following options allow you to set where RTP media server for this route for this customer:
-    
-    :material-menu-right: `Auto`- Selects the least expensive path between your customer and provider.
-    
++  **RTP Media Proxy**: The **recommended** RTP Media Proxy servers is the **Closest (Elastic) Server**. The following options allow you to set where RTP media server for this route for this customer:
+
+
     :material-menu-right: `Direct RTP (no proxy)`- Bypass ConnexCS, so media flows directly between the customer and carrier. 
     
     :material-menu-right: `Zone (recommended)`- Select any of the regional servers
@@ -120,3 +119,6 @@ Step 2: Upload the CSV to ConnexCS
 See [**Script Forge**](https://docs.connexcs.com/developers/scriptforge/) for more information. 
 
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTExNjg2NTgwMTFdfQ==
+-->
