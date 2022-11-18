@@ -47,9 +47,10 @@ Script Forge details are found [**here**](https://docs.connexcs.com/developers/s
 ## Test and Alert
 Once the alert is created it can be tested under a specific customer.<br>The alert messages can be received in e-mails or via SMS.
 
-![alert sample 1](/customer/img/alerts-sample1.png)<br>
-![alert sample 2](/customer/img/alerts-sample2.png)<br>
-![alert sample 3](/customer/img/alerts-sample3.png)
+
+[alerts-sample1]: /customer/img/alerts-sample1.png "Alert Sample 1"
+[alerts-sample2]: /customer/img/alerts-sample2.png "Alert Sample 2"
+[alerts-sample3]: /customer/img/alerts-sample3.png "Alert Sample 3"
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjQzNjc1NTddfQ==
+eyJoaXN0b3J5IjpbNDgwMDM1NjExXX0=
 -->
