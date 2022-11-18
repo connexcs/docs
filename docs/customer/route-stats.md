@@ -5,9 +5,9 @@
 
 **1. Channels**: Number of Channels allocated to the customer.
 
-**2. Channel Breach**: When the customer  
+**2. Channel Breach**: When the customer 
 
 Use the selectors at the top to define your time and date ranges, and also to select specific carriers. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjI2NTIwNTA0LC0xNDY3Mjk4NDU2XX0=
+eyJoaXN0b3J5IjpbLTY5NjYzODYxNiwtMTQ2NzI5ODQ1Nl19
 -->
