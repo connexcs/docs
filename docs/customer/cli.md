@@ -1,6 +1,6 @@
 # CLI
 
-    **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Routing**
+**Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Routing**
 
 **CLI (Caller Line Identification)**, aka ANI (Automatic Number Identification), is the _From_ header in SIP and represents the sender's number in a telephone call. It's the technical term for the mechanism we know as **Caller ID**. In VoIP systems, CLI is more than just a way to display the number of incoming calls. It's used as a defense against unidentified call attempts, provides information to sort incoming calls, and is an important component of billing.
 
@@ -270,7 +270,7 @@ To set the "P-Asserted-ID" per customer, see [**Configure CLI**](https://docs.co
 [approvedcli]: /customer/img/approvedcli.png "Approved CLI Only"
 [edit-cli]: /customer/img/edit-cli.png "Edit CLI"
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1NzU0MTEwMywxMDY1NTY1OTE0LC04MD
-M5MzAzMywtMTA5NjA4NzczNSw5OTQzNDIwNywxOTg2NDQ0MTM3
-LDE5NDk1NTA0NzksMjA4OTI4MDcwLC0zMTMyNjI0OTddfQ==
+eyJoaXN0b3J5IjpbLTExNzMyNzgwNjMsMTA2NTU2NTkxNCwtOD
+AzOTMwMzMsLTEwOTYwODc3MzUsOTk0MzQyMDcsMTk4NjQ0NDEz
+NywxOTQ5NTUwNDc5LDIwODkyODA3MCwtMzEzMjYyNDk3XX0=
 -->
