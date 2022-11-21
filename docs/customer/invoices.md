@@ -43,9 +43,17 @@ To allocate customer payments to a specific invoice:
 4. Enter the total paid. 
 5. Click **`Save`**. 
 
+## Automatic Voice Generation
+
+An invoice can also be generated through **Schedule Report**. 
+
+[Click here](https://docs.connexcs.com/report/#schedule-report) to check the process for creating the invoice.
 
 
 [invoice-8]: /misc/img/229.png "Invoice-8"
 
 [invoice-pdf]: /misc/img/invoice-pdf.png "Invoice PDF"
 [invoice-edit]: /misc/img/invoice-edit.png "Edit Invoice"
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTAzNjY4NTkzMl19
+-->

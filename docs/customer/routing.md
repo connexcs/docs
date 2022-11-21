@@ -1,29 +1,29 @@
 # Ingress Routing
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Routing**
 
-**Ingress Routing** is the process which allocates an incoming call (dialed by our customers) based on the assigned Customer Rate Card, which then Egresses the call to a specified provider. This allows multiple rate cards to be used with or without a prefix. First, a check is done for the longest prefix, then shortest prefix is checked for a match. If no prefix is matched, it will match the rate cards with mutually exclusive destinations. If there are multiple rate cards with the same prefixes, you must set up a dial plan with a Tech Prefix to identify the correct card.
+**Ingress Routing** is the process that allocates an incoming call (dialed by our customers) based on the assigned Customer Rate Card, which then Egresses the call to a specified provider. This allows multiple rate cards to be used with or without a prefix. First, a check is done for the longest prefix, then the shortest prefix is checked for a match. If no prefix is matched, it will match the rate cards with mutually exclusive destinations. If there are multiple rate cards with the same prefixes, you must set up a dial plan with a Tech Prefix to identify the correct card.
 
 !!! info "Routing Templates and more"
     Create templates for customer routing in [**Routing Global**](https://docs.connexcs.com/global-routing/). For more information on Routing, see [**Routing Setup**](https://docs.connexcs.com/video-guide/#routing-setup) in our Video Guides for a detailed walkthrough. You can find additional documentation in the [**Routing Overview**](https://docs.connexcs.com/routing/) and [**Routing Strategy**](https://docs.connexcs.com/routing-strategy/) sections.
 
 
 ## Configure Routing
-View and configure existing routes on the Routing tab in the Customer card. To create a new route, click :material-plus: in **Ingress Routing**. 
+View and configure existing routes on the Routing tab in the Customer card. To create a new route, click material-plus: in **Ingress Routing**. 
 
    ![alt text][ingress-routing]
 
 ### Basic
 
-+ **Rate Card**: Also known as Tariff, this allows you to select the rate card used on a customer's account. You can handle these calls in following 3 ways:
++ **Rate Card**: Also known as Tariff, this allows you to select the rate card used on a customer's account. You can handle these calls in the following 3 ways:
 
     + Internal: Send a call to the ConnexCS Class5 (Voice Mail, Interactive voice response (IVR), etc). If selected, the "Auto" option becomes available, which will generate dial strings from all possible internal extensions.
     + Extension: (uses SIP users in Customer > Auth configured SIP Users) Send a call to a Session Initiation Protocol (SIP) Authenticated user on the account.
     + Customer IP: (uses IPs in Customer > Auth configured IPs) Send a call from an agent back to the customer's Private Branch eXchange (PBX), using either the Tech Prefix (Ex: #9) or a Dial String (Ex: `^[0-9](4)$`).
     + To Carriers: Select a carrier to send the call to terminate somewhere outside of the ConnexCS system.
 
-+ **Tech Prefix**: Lets you to distinguish a route from an inbound party. When multiple customers share the same IP address, each customer needs an individual Tech Prefix so the switch can route calls correctly. It lets providers separate multiple rate cards.
-+ **Dial String Prefix Set**: Helpful for commonly used sets of prefixes. Rather than entering a complete list of prefixes for UK, for example, you can create a predefined Prefix Set (defined under **Setup :material-menu-right: Advanced :material-menu-right:** [**Prefix Set**](/setup/advanced/prefix-set/)) and then select it here for appropriate customers. 
-+ **Dial String**: Only lets a dialed number through if it matches the defined dial string (or "dial pattern"). (If you don't enter anything, it will match everything and try to send all calls. This doesn't work if you have more than one Rate Card as the system won't know which one to use.) Each prefix is listed one per line, both prefix and regular expressions are allowed:
++ **Tech Prefix**: This Lets you distinguish a route from an inbound party. When multiple customers share the same IP address, each customer needs an individual Tech Prefix so the switch can route calls correctly. It lets providers separate multiple rate cards.
++ **Dial String Prefix Set**: Helpful for commonly used sets of prefixes. Rather than entering a complete list of prefixes for the UK, for example, you can create a predefined Prefix Set (defined under **Setup :material-menu-right: Advanced :material-menu-right:** [**Prefix Set**](/setup/advanced/prefix-set/)) and then select it here for appropriate customers. 
++ **Dial String**: Only lets a dialed number through if it matches the defined dial string (or "dial pattern"). (If you don't enter anything, it will match everything, and try to send all calls. This doesn't work if you have more than one Rate Card as the system won't know which one to use.) Each prefix is listed once per line, both prefix and regular expressions are allowed:
 
     Prefix
     ```
@@ -44,7 +44,7 @@ View and configure existing routes on the Routing tab in the Customer card. To c
     ```
 
 !!! warning "Using Rate Cards for multiple countries"
-    Ingress Routing isn't independently aware of the card type you are using, and more specifically the appropriate dial strings it needs to send. For example, you are using both UK and US cards, you need to enter appropriate dial strings in the routes you set up for each card type.
+    Ingress Routing isn't independently aware of the card type you are using, and more specifically the appropriate dial strings it needs to send. For example, you are using both UK and US cards; you need to enter appropriate dial strings in the routes you set up for each card type.
 
 + **Enabled**: The route can be easily enabled and disabled here. 
 
@@ -94,8 +94,8 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 ### Locks
 Used for troubleshooting, you can remove carriers from a route and run a quick test.  
 
-+ **Lock** (Whitelist): Select one or more rate cards from the list of available providers. 
-+ **Exclude** (Blacklist): Exclude access to one or more rate cards in the list of available providers.
++ **Lock** (Allow): One or more rate cards from the list of available providers.
++ **Exclude** (Deny): Exclude access to one or more rate cards in the list of available providers.
 
 !!! tip "Exclude Use Case"
     If a customer reports an issue with a carrier or route, you can come here and set the carrier/route in Exclude and **`Save`**, then come back and remove it, and do a **`Delay and Save`** for a later date. 
@@ -124,17 +124,17 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
     | **Disabled**            | All ```timer``` headers are removed                                                              |
 
 
-+ **RTP Media Proxy**: This defaults to Auto, but selecting a zone (by continent) is the current recommendation. The following options allow you to set where RTP media server for this route for this customer:  
-
-    :material-menu-right: `Auto`- Selects the least expensive path between your customer and provider, but failovers are not automated which is why this option isn't recommended.  
-
++ **RTP Media Proxy**: This defaults to Auto, but selecting a zone (by continent) is the current recommendation. The following options allow you to set where RTP media server for this route for this customer: 
++ 
     :material-menu-right: `Direct RTP (no proxy)`- Bypass ConnexCS, so media flows directly between the customer and carrier. If the customer is using a firewall or other NAT device incorrectly then media may not flow between carrier and customer. Using this setting also means that if there are audio issues, the issue can't be ConnexCS. Since it isn't likely to be the carrier, the issue would typically exist on the customer's end. 
 
     :material-menu-right: `Zone`- Select any of the regional servers, but it's recommended you choose a location near a provider or your customer. Temporarily selecting a different region to route media traffic can be helpful in diagnosing call problems. 
-    
-+ **RTP Proxy Mode**: If connection via our service fails, and relaxed is selected, it will failover to backup automatically. 
 
-    :material-menu-right: `Strict`- This will enforce the proxy engagement. If the proxy can't engage with the call, the call won't be established. Note: Free accounts are limited to how many RTP Proxy channels are enabled, this may prevent calls connecting if you have more channels than our free accounts allow you to have.
+!!! tip "The recommended RTP Media Proxy servers are the **Closest (To ConnexCS) Server** or the **Closest (Elastic) Server**."
+    
++ **RTP Proxy Mode**: If connection via our service fails, and relaxed is selected, it will fail over to backup automatically. 
+
+    :material-menu-right: `Strict`- This will enforce the proxy engagement. If the proxy can't engage with the call, the call won't be established. Note: Free accounts are limited to how many RTP Proxy channels are enabled, this may prevent calls from connecting if you have more channels than our free accounts allow you to have.
 
     :material-menu-right: `Relaxed`- This will perform best efforts to engage the RTP Proxy, if it can't be engaged because of either network errors, or because you don't have enough RTP capacity, the calls will connect directly.
 
@@ -229,3 +229,8 @@ ASR (Answer Seizure Ratio) is the number of connected calls divided by the total
 [ingress-routing]: /customer/img/ingress-routing.png "Ingress Routing"
 [routing-disabled]: /customer/img/routing-disabled.png "Disabled Routing"
 [techprefix-usecase]: /customer/img/techprefix-usecase.png "Tech Prefix Use Case"
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTgzMDE3MTYxOCwxNzY0NTExNDI4LC0zNT
+QwODUzOTgsMTYyMTY3NTAxOCwtMTMyOTIzODE4MCwtMzAyMDcw
+NjUwLDQxNjEwNzkyMiwtMjA0NzcyODE5Ml19
+-->

@@ -39,18 +39,27 @@ Basic Fields include a collection of standard elements that can be used to creat
 **10. Validation**: Validation helps you verify that the input entered by the customer is accurate and complete.
 
 !!! example "Validation Examples" 
-    Some fields are required to be filled in, so you can use the **Required** field.<br>Another example is if you want the answers in a specific format like **e-mail**, **URL**, **String**, or **Hexadecimal** then this field is extremely useful.
-
+    Some fields are required to be filled in, so you can use the **Required** field.<br>Another example is if you want the answers in a specific format like **e-mail**, **URL**, **String**, or **Hexadecimal** then this field is extremely useful. [(Refer for API documentation)](https://page-builder-api-docs.connexcs.com/page.html#.validate).
 
 * **Custom Validation Rules**: If you want to add some JavaScript and include a callback. A callback will be performed via the callback function.
 
-**11. Action Settings**: Action settings specify the actions for the input element. For example, OnChange, OnBLur, etc. You can create your own customizable actions and functions by clicking on **New Action +**.
+**11. Action Settings**: Form actions define anything that happens after a visitor clicks the form submit button. Use form actions to add a redirect URL, send a confirmation email or set up conditional actions depending on the form's questions. 
+
+Action settings specify the actions for the input element. For example, OnChange, OnBLur, etc. You can create your own customizable actions and functions by clicking on **New Action +**.
 
 | **Event Name** | **Description**                                                                                                       |
 |------------    |-----------------------------------------------------------------------------------------------------------------------|
 | **onChange**   | When the element loses focus after the content has been changed.                                                      |
 | **onFocus**    | Focus on the input element.<br> For example, it's called when the user clicks on a text input.                         |
 | **onBlur**     | Blur is used to remove focus from the input field.<br> For example, when the user moves to another field or another page. |
+
+**Functional Overview of the Action Panel**
+
+You can write the Javascript Code in **New Action +** to implement your own logic for an event.
+
+1. Click on **New Action +** and add an action function.<br><img src="/pages/actionsettings.png" alt="actionsettings" width="4260"/>
+2. Write your code and save it.<br><img src="/pages/actionsettings1.png" alt="actionsettings1" width="260"/>
+3. Select the action function and add its functionality to your created form.
 
 
 ## Number
@@ -90,8 +99,10 @@ Basic Fields include a collection of standard elements that can be used to creat
 * **Block**: Block will place the radio buttons vertically. 
 * **Inline**: Inline will place the radio buttons horizontally.
 
-**2. Option**: Option allows you to specify whether you want your options to display static or dynamic data. <br>For **Static data**, customers will only be allowed to select the displayed options that you have created. 
-**Dynamic data** makes the form reactive and interactive. The data can be populated with respect to the input values in other elements. You can load the data in three ways: using a **Data Source**, **Assigned Value** or as a **Function**.
+**2. Option**: Option allows you to specify whether you want your options to display static or dynamic data. <br>The data interaction between the form and the back-end application can be realized using data sources.<br>For **Static data**, customers will only be allowed to select the displayed options that you have created. 
+
+**Dynamic data** makes the form reactive and interactive. The data can be populated with respect to the input values in other elements.<br> You can load the data in three ways: using a **Data Source**, **Assigned Value** or as a **Function**. [(API Documentation for Data Source Actions with Examples)](https://page-builder-api-docs.connexcs.com/page.html#.refreshFieldDataSource)
+
 
 **3. Action Settings**:
 
@@ -100,7 +111,7 @@ Basic Fields include a collection of standard elements that can be used to creat
 | **onChange**   | Triggers when the checked state has been changed. |
 
 !!! info "Dynamic Data Sources" 
-          Data sources can be **External**, with URLs specified and data exchange methods such as GET, POST, PUT, and DELETE. <br> You can also use **Script Forge** as a data source. <br>Another way of choosing a data source is through a **[Database](https://page-builder-api-docs.connexcs.com/database.html)**. 
+          Data sources can be **External**, with URLs specified and data exchange methods such as GET, POST, PUT, and DELETE. <br> You can also use **Script Forge** [(API Documentation for Script Forge actions)](https://page-builder-api-docs.connexcs.com/page.html#.scriptForge) as a data source. <br>Another way of choosing a data source is through a **Database** [(API Documentation for Database methods)](https://page-builder-api-docs.connexcs.com/database.html). 
 
 !!! tip "You can get the value of a checkbox by using the getData method, and you can set the visibility based on the hide method."
 
@@ -118,7 +129,7 @@ Basic Fields include a collection of standard elements that can be used to creat
 | **Event Name** | **Description**                                  |
 |------------    |--------------------------------------------------|
 | **onChange**   | Triggers when the selected value changes.        |
-| **onFocus**    | Focus on the Input component.                       |
+| **onFocus**    | Focus on the Input component.                 |
 | **onBlur**     | Blur the Input component and hide the dropdown. |
 
 
@@ -347,3 +358,7 @@ Basic Fields include a collection of standard elements that can be used to creat
 | **Event Name** | **Description**                        |
 |----------------|----------------------------------------|
 | **onChange**   | Triggers when the step number changes. |
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTQxODI3NjkxNiwtMTg0OTM4MDE5NiwtMT
+IzNDY3Nzc4Nl19
+-->

@@ -8,10 +8,13 @@ In VoIP systems, CLI is more than just a way to display the number of incoming c
   It's recommended to have one Forced CLI.
 
 ## Forced
-Depending on how you want to route the calls, toggle a CLI between `Forced` and `Whitelist`. 
+Depending on how you want to route the calls, toggle a CLI between `Forced` and `Allow list`. 
 
 + **Forced**: If there is no match when you select Forced, the CLI listed is used to replace the CLI being sent on a call. For example, if the CLI is set to 111111111111, that's what is sent on any outbound calls, regardless of what's provisioned on your endpoint.
-+ **Whitelist**: Setting to Whitelist will allow a call if there are no specific matches. 
++ **Allow list**: Setting to Allow list will permit a call if there are no specific matches. 
 
 !!! tip "Adding CLIs"
     If you want to add CLIs from the Customer Portal, please contact support to have "Approved CLIs Only" enabled. Any CLI you add will need to be approved before it is functional here.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNjA5NjA2Mjk2XX0=
+-->

@@ -35,6 +35,6 @@ ConnexCS allows you to have customer cards as non-LRN and provider cards as LRN 
 
 ### Charges
 ConnexCS includes LRN Dips for free under fair use. Fair use means traffic doesn't exploit our billing strategy. To send this type of traffic, please contact us, as we don't support external LRNs.
-
-### LRN Database updates
-The ConnexCS LRN database is updated daily at 8:00 am UTC (Universal Time Coordinated). 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEzNjYwMDQyMTddfQ==
+-->

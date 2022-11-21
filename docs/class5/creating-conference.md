@@ -5,7 +5,7 @@ Use this feature to allow multiple callers to communicate with each other over a
 
 For individual customers, navigate to **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Class5 :material-menu-right: Conference**
 
-## Create Conference Call
+## Create a Conference Call
 To create a Conference room, click :material-plus:.
 
 *Field details:*
@@ -14,7 +14,7 @@ To create a Conference room, click :material-plus:.
 * Select the **Customer** from the drop-down list. By default, the Conference is only available to users in this customer. However, routing can be setup to allow other customers to access it.
 * Enter the **Extension** for the callers to call (essentially, the dial-in number).
 * Configure the Personal Identification Number (**PIN**) and **Moderator PIN** for more security. 
-* **Quality** sets the amount of bandwidth available per caller in kilohertz(KHz).
+* **Quality** sets the amount of bandwidth available per caller in kilohertz(kHz).
     
     :material-menu-right: `Narrow Band`- 8 KHz (G711)
     
@@ -29,7 +29,7 @@ To create a Conference room, click :material-plus:.
 Click **`Save`** and the new conference room is available for use. 
 
 !!! tip "Conference calls for external callers"
-    Only customers internal to ConnexCS can use the standard Conference configuration. To allow external numbers to dial into the conference, setup a [**Customer DID**](https://docs.connexcs.com/customer/did/#configure-did) and set the **Destination** to "Internal", and then select the available pre-configured conference. 
+    Only customers internal to ConnexCS can use the standard Conference configuration. To allow external numbers to dial into the conference, set up a [**Customer DID**](https://docs.connexcs.com/customer/did/#configure-did) and set the **Destination** to "Internal" (set the internal destination as the extension number of the conference), and then select the available pre-configured conference. 
 
 ## Conference Call Keypad Options
 Callers can use the keypad to control the audio on the conference call. 
@@ -51,3 +51,6 @@ Callers can use the keypad to control the audio on the conference call.
  
    
 [conference]: /class5/img/conference.png "Add Conference"
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEyNzY5MzE5MTBdfQ==
+-->

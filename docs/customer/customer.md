@@ -15,12 +15,14 @@ From the **Customers** page, you can perform several management operations.
 
 **:material-plus:**: Add new Customers (see [**Create Customers**](https://docs.connexcs.com/customer/customer/#create-customers) below for details.)
 
-**Bulk Upload**: Upload multiple Customers at the same time, by importing a spreadsheet file into ConnexCS. 
+**Bulk Upload**: Upload multiple Customers at the same time, by importing a spreadsheet file (.csv file) into ConnexCS. 
 
 1. Click `Bulk Upload` then `Upload`, find your customer file, and then click **`Open`**. 
-2. Right-click on each column to **Map Columns** to appropriate fields.
-3. **Set Start Row** to indicate the first line of data (first row is typically column headers). 
-4. Once you set all fields as required, then click **`Upload to Server`**. 
+2. Right-click on the second row and select **Start Row** to indicate the first line of data (the first row is typically column headers).
+3. Right-click on each column to **Map Columns** to appropriate fields.
+4. Once you set all fields as required, then click **Upload to Server**.
+
+!!! note "Before uploading the .csv file, please ensure that it does not contain any exponential or scientific notations.<br>The inclusion of the notations will result in errors." 
 
 **Bulk Edit**: Select multiple customers, then click **Bulk Edit** to modify fields such as Channels, Status, Flow Speed (CPS), Portal Access, and Country. 
 
@@ -34,9 +36,9 @@ From the **Customers** page, you can perform several management operations.
 
 1. Select multiple customers using the tickbox selector on the left side of each row. (Customers aren't visible to each other in the sent message.)
 2. Click on "Send" at the top right then choose email or SMS.
-3. Fill in Subject line and body details and send. 
+3. Fill in the Subject line and body details and send. 
    + Emails are sent FROM the email address populated in Setup > Settings, and TO every email address listed in Contacts for each customer. 
-   + SMS are sent to the Mobile number in each Contact. 
+   + SMS is sent to the Mobile number of each Contact. 
 
 !!! note "Custom Email Servers"
     Change the outbound Email Server and SMS origination number in **Setup :material-menu-right: Settings**. 
@@ -47,8 +49,8 @@ From the **Customers** page, you can perform several management operations.
 
 ## Customer View Modification
 
-+ **Columns** pop out on the right lets you to add/remove options, change column order, in some cases you can create row groups and total values for pivot functionality
-+ **Filters** pop out on the right lets you to filter your customers
++ **Columns** pop out on the right and lets you add/remove options, and change column order, in some cases you can create row groups and total values for pivot functionality.
++ **Filters** pop out on the right and lets you filter your customers.
 + Adjust Column ordering
 
 ## Create Customer
@@ -63,21 +65,23 @@ From the **Customers** page, you can perform several management operations.
     
         :material-menu-right: `Active`: The customer is active and allowed to pass calls. 
         
-        :material-menu-right: `Inactive`: The account is disabled, no calls will complete 
+        :material-menu-right: `Inactive`: The account is disabled, and no calls will be completed. 
         
         :material-menu-right: `Pending Approval`: New signups are listed as Pending Approval. The customer cannot pass calls or become active until this phase is completed. 
     
     * **Debit Limit:** How much account can go into the negative (typically only relevant for post-pay customers). See [**Credit Control**](/credit-control/) for details. 
     * **Minimum Payment:** Set the minimum payment a customer can add to recharge the account. 
     * **Tax:** Tax is added as a percentage that is charged on top of costs. (UK = VAT; US = Sales Tax)
-    * **Currency:** Select the currency from the drop-down menu. Note that you won't be able to change the account currency once the account is created.
+    * **Currency:** Select the currency from the drop-down menu.
+
+!!! note "Note that you won't be able to change the account currency once the account is created."
 
 === "Config"
 
-    + **PayPal Email:** The email address associated with the customer's PayPal account. (This is relevant when using the IPN API which lets customers to make payments directly through PayPal instead of using the Customer Portal. See our API documentation for details on [**PayPal IPN**](https://docs.connexcs.com/setup/integrations/api/#paypal-ipn-integration).) 
+    + **PayPal Email:** The email address associated with the customer's PayPal account. (This is relevant when using the IPN API which lets customers make payments directly through PayPal instead of using the Customer Portal. See our API documentation for details on [**PayPal IPN**](https://docs.connexcs.com/setup/integrations/api/#paypal-ipn-integration).) 
     + **Website:** The customer's website address.
     + **Portal Access:**  Users can turn **Portal Access** to `Yes` (on) or `No` (off). Selecting `No` will restrict user access to the Customer Portal. Since everyone uses the portal at this time, this should always be set to `Yes`. 
-    + **Tags**: Use this to add meta-data identifiers to a customer. If a customer is created using a template from [**Global Routing**](https://docs.connexcs.com/global-routing/), this will be the tag configured in the template.
+    + **Tags**: Use this to add meta-data identifiers to a customer. If a customer routing is created using a template from [**Global Routing**](https://docs.connexcs.com/global-routing/), this will be the tag configured in the template.
     + **TOML**: This is a data storage mechanism for configuration, similar to INI files. It allows you to create advanced customization to set values, etc, for Script Forge to reference later. 
     + **Reseller**: Associate the customer to a preset Reseller Group (see [**Create Groups**](https://docs.connexcs.com/setup/settings/users/#create-groups) for more details.)
     + **Invoice Schedule**: Specify frequency for invoice generation. 
@@ -90,7 +94,7 @@ From the **Customers** page, you can perform several management operations.
 
 === "Verification"
 
-    + **Approved CLI's Only**: Allows the customer to add numbers in the [**Customer Portal CLI**](/customer-portal/cp-cli/) section. This generates a test call with a code which the customer must enter in the portal. Once complete, their CLI will be added to the system. 
+    + **Approved CLI's Only**: Allows the customer to add numbers in the [**Customer Portal CLI**](/customer-portal/cp-cli/) section. This generates a test call with a code that the customer must enter in the portal. Once complete, their CLI will be added to the system. 
     + **Email Verification** and/or **Mobile Verification**: Used to force the customer to go to the portal for verification. (This is important to select when you create a customer manually.) If the customer doesn't verify these, they won't be able to dial. 
 
     !!! attention
@@ -102,7 +106,7 @@ From the **Customers** page, you can perform several management operations.
     
 !!! note "Save Options"
     + **Save and Continue** = Exit the Customer screen
-    + **Save and Stay** = Save the customer, but stay in the screen (helpful when adding multiple Customers at a time)
+    + **Save and Stay** = Save the customer, but stay on the screen (helpful when adding multiple Customers at a time)
     + **Delay and Save** = Select a time to elapse before saving the Customer, delaying the setup or change. 
 ___
 
@@ -114,10 +118,16 @@ Once a customer is created, click on the customer name to view details and provi
 ___
 
 ## Edit Customers
-Click an existing customer name from Customer section, then click **`Edit`**. For all field details, see **[Create Customers](../customer/#create-customers)** above. 
+Click an existing customer name from the Customer section, then click **`Edit`**. For all field details, see **[Create Customers](../customer/#create-customers)** above. 
 
 [customers]: /customer/img/customers.png "Customer Dashboard"
 [customer-status]: /customer/img/39.png "Customer Status"
 [customersubs]: /customer/img/customersubs.png "Customer Sub-Sections"
 
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTI4NDAwNTk5Miw0MzgyNDc4NDYsMTEzNT
+E1ODY5OSwzODUxMDEyMiwtNzI4MTE4ODgzLC0xMjI0MzQxMTg4
+LDEzODUzNTcxOTYsLTU3NTU2NTAyOCwtNDAwNDY4NzU1LC0xNT
+U2MzE0NDMyXX0=
+-->

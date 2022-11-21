@@ -188,3 +188,6 @@ The **CDR** tab displays call drop rates. Use **`Recalc CDR`** when CDR records 
 [carrier]: /carrier/img/carrier.png "Carrier Main"
 
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTkwMTM2NjQxM119
+-->

@@ -21,7 +21,7 @@ To enable, click **:material-plus:** next to IP Authentication:
 
 === "Basic"
 
-    + **IP**: Enter the IP(s) of the customer switch. (FQDN can be used for Ingress only switches.)
+    + **IP**: Enter the IP(s) of the customer switch.<br>**FQDN can be used for Ingress-only switches.**
     + **Switch Direction**: The available options are from the perspective of the customer switch (PBX, dialer, etc), and describe how that switch interacts with the ConnexCS switch. For switches that send and receive calls from ConnexCS, there should be separate entries for each direction. 
         
         :material-menu-right: `Ingress`: This switch *receives* calls from ConnexCS. (Note: When selected, this gives the option of using the FQDN rather than the switch IP.)
@@ -53,7 +53,7 @@ To enable, click **:material-plus:** next to IP Authentication:
     + **Bandwidth, Force From**: Do NOT Use these fields.
     + **Username, and Password**: Set when sending calls out (egress switch direction) to a remote system. Set this to allow the ConnexCS switch to operate as a client, or UAC. Not typically recommended unless the customer has a very specialized system. 
     + **Force NAT**: Forces the switch to read the IP address the traffic was received from, not the IP in the SIP packet. (See [**Far-End NAT Traversal**](https://docs.connexcs.com/far-end-nat-traversal/) for more details on how ConnexCS handles NAT for SIP.)
-    + **Intercept Reinvite**: The only situation where this is recommended is when a customer's equipment doesn't support REINVITES. Enable this to correct issues with dropped calls by having ConnexCS generate the REINVITES, which can help keep calls up if they are being disconnected by the far-end switch. 
+    + **Intercept Reinvite**: The only situation where this is recommended is when a customer's equipment doesn't support REINVITES. Enable this to correct issues with dropped calls by having ConnexCS responds to the INVITES, which can help keep calls up if they are being disconnected by the far-end switch. 
     + **Outbound Proxy**: Enter an IP of a Proxy server for calls to route to, before being sent to the carrier. This rewrites the UAC IP in the VIA field of the SIP header. This reduces management overhead as a customer only needs to authorize the single IP. Additionally, multiple addresses can be load balanced using the AnyEdge system. 
     + **Flags**: Set CLI Authentication for situations where Accounts are unable to use [**Tech Prefix**](https://docs.connexcs.com/customer/routing/#basic) to differentiate customers using the same IP. 
  
@@ -79,11 +79,6 @@ To enable, click **:material-plus:** next to IP Authentication:
 
 
 ___    
-
-### IP Authentication Audit Log
-After IP Authentication is setup, click on the IP to view configuration, and at the top of the page click "View Audit Log" to view changes specific to these settings. 
-
-
 
 ## SIP User Authentication
 When you enable **SIP Authentication**, ConnexCS will reject the initial SIP INVITE with a "407 Authentication Required". This message includes a 'nonce' (a uniquely randomly generated number, which is hashed). The customer switch will send appropriate authentication information to ConnexCS, which will connect the call. 
@@ -149,12 +144,6 @@ To enable, click **:material-plus:** next to SIP User Authentication:
 === "Voice Mail"
 
     If you enable Voice Mail, you can set which email address receives messages, reset the Voicemail Password, and view and delete current messages. See [**Voicemail**](https://docs.connexcs.com/class5/voicemail/) for information on accessing Voicemail. 
-    
-=== "Latency"
-   
-    If you enable NAT/SIP pings, the **Latency** tab will be available at the top of the SIP user screen, and displays the status of the SIP pings, and latency based on those pings. This helps in troubleshooting audio problems. 
-
-
 ___
 
 ### Reset SIP Password
@@ -201,3 +190,7 @@ In a typical configuration, a packet is sent from the customer UAC out through a
 [test-rewrite]: /customer/img/test-rewrite.png "Test Parameter Rewrite"
 [407-trace]: /customer/img/407-trace.png "SIP Trace Error 407"
 [voicemail]: /customer/img/voicemail.png "Voicemail"
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTUwMDY4NjkyMCwyNDI4Njg5MDgsLTEzOD
+I0NTQ3NjcsLTE5MjIzMDU2NzBdfQ==
+-->

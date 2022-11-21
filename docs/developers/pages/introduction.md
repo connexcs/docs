@@ -99,9 +99,10 @@ The Form attribute helps you specify values for the following parameters for all
 
 **6. Action Panel**: Action Panel allows you to specify the actions for buttons and link controls.
 
+
 ## Preview Options
 
-<img src="/pages/capreviewoptions.png" alt="previewoptions" width="120"/>
+<img src="/pages/previewoptions.png" alt="previewoptions" width="3120"/>
 
 Click on the **Preview** button to view the form.<br> You can choose between the **Monitor** view, **Tablet** view, and **Cellphone** view. 
 
@@ -117,5 +118,75 @@ Click on the **Preview** button to view the form.<br> You can choose between the
 
 **6. Close**: Close will you exit from the preview window.
 
-!!! note "More examples"
-    [**Click here**](https://page-builder-api-docs.connexcs.com/page.html) to get a more detailed view on the examples and methods for creating Pages.
+### Configure Data Source
+
+<img src="/pages/datasource.png" alt="datasource" width="52600"/>
+
+**1.**1. Click on the **Data Source Setting**.
+
+**2.**2. Click on **Add Data Source**, and the data source setting will appear on the right-side of the panel.
+
+**3. **Name**: The data source name, which must be unique, is used to display and select data sources.
+
+**4.**3. You can select the Data Source from 3 options: [**Script Forge**](https://bani--connexcs-docs.netlify.app/developers/scriptforge/), **External** ( allows you to get data from external services to your end users.), and **Database** [(Refer for API documentation)](https://page-builder-api-docs.connexcs.com/database.html).
+
+**4.1. External Data Source**.
+
+4. When you select **External** database you can select from 4 HTTP requests:
+
+<img src="/pages/datasourceexternal.png" alt="datasourceexternal" width="6260"/>
+
+| **Request Name** | **Description**                                                                  |
+|------------------|----------------------------------------------------------------------------------|
+| **GET**          | GET request is used to read/retrieve data from a web server.                     |
+| **POST**         | POST request is used to send data (file, form data, etc.) to the server.         |
+| **PUT**          | PUT request is used to modify the data on the server.                            |
+| **DELETE**       | DELETE request is used to delete the data on the server at a specified location. |
+
+* **Header**:
+
+    * To send meta data
+    * Content Type - text/html or text/JSON
+    * Request authorization - authentication information
+    * Response caching
+    * Response cookies
+    
+* **Params**:By using the params keyword, you can specify a method parameter that takes a variable number of arguments.
+
+**5. **Whether the form is initialized to send the request**: It is an asynchronous activity that sends an HTTP request and waits for a response from the web server.
+
+**6. **Data Processing**
+
+| **Data Processing Type**                    | **Description**                                                                                          | **Parameters**                                                                                                                                                                                                                                                                                                                                           |
+|---------------------------------------------|----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Before the request is sent**              | Before the request is sent, configure the parameters, headers, address and other options of the request. | **1. Modify the request address**<br>config.url = 'new request URL'.<br>**2. Modify the request** headerconfig.headers = {'X-Requested-With': 'XMLHttpRequest'}.<br>**3. Modify request query** parametersconfig.params = {ID: 12345}.<br>**4. Request the data sent by the body, not applicable to GET requests**<br>config.data = {firstName: 'Fred'}. |
+| **When requesting to return response data** | After the interface request is successful, the returned data can be processed.                           | **res: The data returned by the interface can be processed here**.                                                                                                                                                                                                                                                                                       |
+| **When an error occurs in the request**     | PUT request is used to modify the data on the server.                                                    |                                                                                                                                                                                                                                                                                                                                                  |
+
+
+**7. Request Test**
+
+<img src="/pages/datasourcerequesttest.png" alt="datasourcerequesttest" width="30260"/>
+
+After completing the data source configuration, you can click Request Test to verify the data source interface to check whether the filling is successful and whether the returned data is correct.
+
+## Preview Options
+
+<img src="/pages/previewoptions.png" alt="previewoptions" width="320"/>
+
+Click on the **Preview** button to view the form.<br> You can choose between the **Monitor** view, **Tablet** view, and **Cellphone** view. 
+
+**1. Get Data**: Get Data displays the raw data from the form.
+
+**2. Reset**: Resetting will erase all the data filled in the form.
+
+**3. Disabled or Enabled Edit**: Disabled edit will not allow you or your customer to enter data in the form; Enabled edit will allow you or your customer to enter the data in the form.
+
+**4. Print Read Mode**: Print Read mode allows you to view the form before printing.
+
+**5. Print**: The print option will let you print the filled form.
+
+**6. Close**: Close will you exit from the preview window.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMjAxMTgxMzczXX0=
+-->

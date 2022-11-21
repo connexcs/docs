@@ -132,9 +132,6 @@ nav:
             - Statement: setup/information/statements.md
             - Dial Code / Destination: setup/information/dial-code-destination.md
             - Payment Log: setup/information/payment-log.md
-            - Email Log: setup/information/email-log.md
-            - Delay Log: setup/information/delay-log.md
-            - Audit Log: setup/information/audit-log.md
             - Certificate: setup/information/certificate.md
             - STIR/SHAKEN Cert: setup/information/stir-shaken.md
             - Browsing Recording: setup/information/recording.md
@@ -210,7 +207,6 @@ nav:
     - Package: customer-portal/cp-package.md
     - Routes: customer-portal/cp-routes.md
     - Recording: customer-portal/cp-recording.md
-    - Forex Checker: customer-portal/cp-forex.md
     - Status: customer-portal/status.md
     - Interconnect: customer-portal/interconnect.md
 

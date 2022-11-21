@@ -1,15 +1,14 @@
 # Jobs
 **Setup :material-menu-right: Information :material-menu-right: Job**
 
-When building rate cards or making changes to switching configuration, certain tasks are processed in the background. You may see a toast (an in-window popup message) informing you that the task is completed or had an error. This page provides more details for these events.
+**Jobs** is an interesting feature that lets you check the status of tasks created or initiated for you. 
 
-## Columns
+### Types of Status 
 
-| Column Name   | Description                                                                             |
-|---------------|-----------------------------------------------------------------------------------------|
-| ID            | Unique ID for every task.                                                                |
-| Created On    | The date/time the task was created.                                                      |
-| Completed On  | The date/time the task was completed or failed.                                 |
-| Progress      | The current status of the task (Complete percentage, Completed or Error). |
-| Failed Reason | Details on why the task may have failed.                                                 |
-| Last Log      | Summary result of the task.                                                              |
+**1. Completed**: When the task has been fully accomplished.
+
+**2. Failed**: When the process does not 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTQ3OTQyOTEyNCwtMTA3NTE2NzgwMSwtOT
+g3MTkxODUyXX0=
+-->

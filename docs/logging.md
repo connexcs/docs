@@ -72,3 +72,35 @@ To view the SIP Trace of a call:
 
 [logging-sip]: /misc/img/logging-sip.png "SIP Traces"
 [logging-4]: /misc/img/236.png "logging-4"
+
+## Call Release Reasons
+
+The causes of a dropped call are:
+
+ **1. Downstream BYE**: When the call has been disconnected from the **originator's** side via a **BYE** message.
+
+ **2. Upstream BYE**: When the call has been disconnected from the **receiver** side via a **BYE** message.
+
+**3. MI Termination**: The system terminates the call when it finds that there has been no audio connection between the call's originator and the receiver.<br>The system triggers a BYE message on both sides within the application.
+
+**4. Ping Timeout**:   
+
+If the Sip Ping feature is enabled under Customer:material-menu-right: Routing, OPTION packets are delivered (every X seconds) to the originator and receiver.
+
+The originator and the receiver should reply with 200 OK after receiving the OPTION packets. If either the originator or receiver misses sending the acknowledgment, the call is terminated. This is why the call was terminated due to a "ping timeout."
+
+It prevents any long-duration calls as the system recognises either the originator or receiver as inactive.
+
+
+
+
+
+
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTI5NzYzMTcxNywzMzM2MzY4MTAsLTIyOD
+c2NDgxOCwtNzgxMjgyMzA4LDgyMTMzMjMxNCwtODU5NzU0NjQ3
+LDM5NDI0OTIzOSwtMTAwMTg1MDQsMTYxMDQyMjc5NCwtMTY3OD
+E2ODAwNCwtNDg4Nzc1NDE4LDEwNDExNzc0MDMsODY2NDIxMzEw
+LC0xNzM2OTg5ODczLC0xMDgyOTQ2NTkyLDEyOTQzODA5ODMsNj
+I1MTE3NDQ2LDY0MDcyMDg0NCwxMjIyNDcyMTU0XX0=
+-->

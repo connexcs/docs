@@ -33,7 +33,7 @@ graph LR
 A(Far End) --> B[PSTN]
 B --> C[Carrier]
 C --> D[ConnexCS Switch]
-D --> E[Routing Engine]
+D --> E[Routing Engine]me
 E --> F(Authorisation)
 F --> G(Ingress Routing)
 ```
@@ -91,3 +91,6 @@ If your Session Initiation Protocol (SIP) Trace shows that an INVITE packet was 
 
 [call-flow]: /misc/img/call-flow.jpg "Call Flow"
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEwNDI5OTY5MzJdfQ==
+-->

@@ -5,6 +5,8 @@ The first tab in a Customer account is **Main**. It displays a summary of the St
 
 ![alt text][cust-main]
 
+!!! note "By clicking the dropdown next to the customer's name, you will be redirected to the selected customer's portal.<br> See [Access Customer Panel](https://docs.connexcs.com/customer/main/#access-customer-portal) for more information. "
+
 ## Audit Log
 ![alt text][audit-log]
 
@@ -27,10 +29,10 @@ The **Contacts** section shows an overview of contacts associated with the Custo
 ### Add Contact
 Click **:material-plus:** to the right of **Contacts**.
 
-+ **Name**: Contacts real name
++ **Name**: Contact's real name
 + **Email**: This is the contact's login and a means to contact them. 
-+ **Contact Type**: This field is only used for informational and organisational purposes, there is no additional function for it. 
 + **Phone** or **Mobile**: To reach the contact. 
++ **Contact Type**: This field is only used for informational and organizational purposes, there is no additional function for it. 
 + **Auto Generate Password**: Select this to have a password generated online and sent via email. Deselect the box to enter a password manually.
 + **Public Notes**: Display on the Customer Portal. 
 + **Private Notes**: Display in the Control Panel.
@@ -103,3 +105,7 @@ You can perform the following functions with this data:
 [audit-log]: /customer/img/audit-log.png "Audit Log"
 [reset-password]: /customer/img/reset-password.png "Reset Password"
 [main-tab]: /customer/img/41.png "Contact Details"
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMjM5MDM2ODAsNDk1MDY1MjcwLC0xMjk4NT
+Q0OTM1LC0xNDk0ODc3NzMzXX0=
+-->

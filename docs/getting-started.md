@@ -180,10 +180,12 @@ ___
 
 For detailed server configuration, see **[Servers](https://docs.connexcs.com/setup/settings/servers/)**.
 
-
 [verify-email-1]: /getting-started/img/1.png "Verify Contact"
 [verify-email-2]: /getting-started/img/verify-email.png "Verify Email"
 [verify-mobile]: /getting-started/img/verify-mobile.png "Verify Mobile"
 [warning-icon]: /getting-started/img/warning-icon.png "Warning Icon"
 [customer-save-new]: /getting-started/img/6.png "New Customer"
 [carrier-auth-2]: /getting-started/img/16.png "Carrier Setup"
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTUxMTA1Mjg3XX0=
+-->

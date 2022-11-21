@@ -56,15 +56,8 @@ When enabled, we can specify another server in the cluster to route the traffic,
 
 ### Server Config
 
-**Dispatcher**
-Click the blue pencil icon to edit. 
-
-+ **Add Load Balancer**: Add servers to the cluster.
-+ **Flush**: Force a server update.
-
 **Switch**
 
-+ **FQDN**: Set the FQDN (Fully Qualified Domain Name) to enable TLS security directly on the server.
 + **Cluster**: Group servers to share information such as dialogues and throughput. Ex: If you set CPS to 10, clustered servers will allow 10 CPS, un-clustered servers will allow 10 CPS per server. 
 + **Interconnect**: Where the server is visible routing.
 + **UAC Auth**: Enables ConnexCS to register as a UAC (rather than UAS) to upstream providers with a username and password.
@@ -118,15 +111,6 @@ This only needs to be run when the system indicates "There is a pending update o
 
 &emsp;![alt text][server-update]
 
-### Server Reactivation
-To reactivate a server:
-
-1. Click the server's IP address.
-2. Click **Reactivate** to activate your server.
-
-    ![alt text][server-6]
-
-
 ## Server Clustering and User Location Registration
 ### User Location Registration
 When a call is initiated, this generates a SIP `INVITE` which is sent to the remote server. When users connect from dynamic IP addresses, there must be a way to map a known constant address (ex: a username) to a dynamic endpoint such as an IP address or port.
@@ -149,3 +133,6 @@ When a user endpoint registers with UDP via NAT, a port mapping is created. Howe
 [server-update]: /setup/img/server-update.png "Update Server"
 [server-cert1]: /setup/img/server-cert1.png "Server Certificates"
 [server-6]: /setup/img/reactivateserver.png "Reactivate Server"
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbODkzMzM1NjE2XX0=
+-->

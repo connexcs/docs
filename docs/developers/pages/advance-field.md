@@ -38,7 +38,7 @@ You can further modify your form with Advance Fields.<br>You can organise your d
 
 **3. Label Width**: Label width helps you change the dimensions of the Name of the graph.
 
-[**Click here**](https://page-builder-api-docs.connexcs.com/echart) for more examples on graphs.
+[**Click here for API documentation for Graphs actions with examples**](https://page-builder-api-docs.connexcs.com/echart) for more examples on graphs.
 
 ## Dialog
 
@@ -77,4 +77,7 @@ You can further modify your form with Advance Fields.<br>You can organise your d
     * **dialog fields show hidden**: this.getComponent('dialog field identifier').hide([name]).
                                      this.getComponent('dialog field identifier').display(['name'])
                                      
- [**Click here**](https://page-builder-api-docs.connexcs.com/database.html) for more methods and examples on dialog.
+ [**Click here for the API documentation on Dialog**](https://page-builder-api-docs.connexcs.com/dialog.html)atabase.html) for more methods and examples on dialog.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTIxMjgwMjM0ODNdfQ==
+-->
