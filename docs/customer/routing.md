@@ -94,7 +94,7 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 ### Locks
 Used for troubleshooting, you can remove carriers from a route and run a quick test.  
 
-+ **Lock**: Allow one or more rate cards from the list of available providers. 
++ **Lock** (Allow): One or more rate cards from the list of available providers.
 + **Exclude** (Deny): Exclude access to one or more rate cards in the list of available providers.
 
 !!! tip "Exclude Use Case"
@@ -230,7 +230,7 @@ ASR (Answer Seizure Ratio) is the number of connected calls divided by the total
 [routing-disabled]: /customer/img/routing-disabled.png "Disabled Routing"
 [techprefix-usecase]: /customer/img/techprefix-usecase.png "Tech Prefix Use Case"
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwMzM0NjkxOSwxNzY0NTExNDI4LC0zNT
-QwODUzOTgsMTYyMTY3NTAxOCwtMTMyOTIzODE4MCwtMzAyMDcw
-NjUwLDQxNjEwNzkyMiwtMjA0NzcyODE5Ml19
+eyJoaXN0b3J5IjpbLTE3NTcxNjkzODIsMTc2NDUxMTQyOCwtMz
+U0MDg1Mzk4LDE2MjE2NzUwMTgsLTEzMjkyMzgxODAsLTMwMjA3
+MDY1MCw0MTYxMDc5MjIsLTIwNDc3MjgxOTJdfQ==
 -->
