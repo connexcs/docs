@@ -1,29 +1,29 @@
 # Ingress Routing
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Routing**
 
-**Ingress Routing** is the process which allocates an incoming call (dialed by our customers) based on the assigned Customer Rate Card, which then Egresses the call to a specified provider. This allows multiple rate cards to be used with or without a prefix. First, a check is done for the longest prefix, then shortest prefix is checked for a match. If no prefix is matched, it will match the rate cards with mutually exclusive destinations. If there are multiple rate cards with the same prefixes, you must set up a dial plan with a Tech Prefix to identify the correct card.
+**Ingress Routing** is the process that allocates an incoming call (dialed by our customers) based on the assigned Customer Rate Card, which then Egresses the call to a specified provider. This allows multiple rate cards to be used with or without a prefix. First, a check is done for the longest prefix, then the shortest prefix is checked for a match. If no prefix is matched, it will match the rate cards with mutually exclusive destinations. If there are multiple rate cards with the same prefixes, you must set up a dial plan with a Tech Prefix to identify the correct card.
 
 !!! info "Routing Templates and more"
     Create templates for customer routing in [**Routing Global**](https://docs.connexcs.com/global-routing/). For more information on Routing, see [**Routing Setup**](https://docs.connexcs.com/video-guide/#routing-setup) in our Video Guides for a detailed walkthrough. You can find additional documentation in the [**Routing Overview**](https://docs.connexcs.com/routing/) and [**Routing Strategy**](https://docs.connexcs.com/routing-strategy/) sections.
 
 
 ## Configure Routing
-View and configure existing routes on the Routing tab in the Customer card. To create a new route, click :material-plus: in **Ingress Routing**. 
+View and configure existing routes on the Routing tab in the Customer card. To create a new route, click material-plus: in **Ingress Routing**. 
 
    ![alt text][ingress-routing]
 
 ### Basic
 
-+ **Rate Card**: Also known as Tariff, this allows you to select the rate card used on a customer's account. You can handle these calls in following 3 ways:
++ **Rate Card**: Also known as Tariff, this allows you to select the rate card used on a customer's account. You can handle these calls in the following 3 ways:
 
     + Internal: Send a call to the ConnexCS Class5 (Voice Mail, Interactive voice response (IVR), etc). If selected, the "Auto" option becomes available, which will generate dial strings from all possible internal extensions.
     + Extension: (uses SIP users in Customer > Auth configured SIP Users) Send a call to a Session Initiation Protocol (SIP) Authenticated user on the account.
     + Customer IP: (uses IPs in Customer > Auth configured IPs) Send a call from an agent back to the customer's Private Branch eXchange (PBX), using either the Tech Prefix (Ex: #9) or a Dial String (Ex: `^[0-9](4)$`).
     + To Carriers: Select a carrier to send the call to terminate somewhere outside of the ConnexCS system.
 
-+ **Tech Prefix**: Lets you to distinguish a route from an inbound party. When multiple customers share the same IP address, each customer needs an individual Tech Prefix so the switch can route calls correctly. It lets providers separate multiple rate cards.
-+ **Dial String Prefix Set**: Helpful for commonly used sets of prefixes. Rather than entering a complete list of prefixes for UK, for example, you can create a predefined Prefix Set (defined under **Setup :material-menu-right: Advanced :material-menu-right:** [**Prefix Set**](/setup/advanced/prefix-set/)) and then select it here for appropriate customers. 
-+ **Dial String**: Only lets a dialed number through if it matches the defined dial string (or "dial pattern"). (If you don't enter anything, it will match everything and try to send all calls. This doesn't work if you have more than one Rate Card as the system won't know which one to use.) Each prefix is listed one per line, both prefix and regular expressions are allowed:
++ **Tech Prefix**: This Lets you distinguish a route from an inbound party. When multiple customers share the same IP address, each customer needs an individual Tech Prefix so the switch can route calls correctly. It lets providers separate multiple rate cards.
++ **Dial String Prefix Set**: Helpful for commonly used sets of prefixes. Rather than entering a complete list of prefixes for the UK, for example, you can create a predefined Prefix Set (defined under **Setup :material-menu-right: Advanced :material-menu-right:** [**Prefix Set**](/setup/advanced/prefix-set/)) and then select it here for appropriate customers. 
++ **Dial String**: Only lets a dialed number through if it matches the defined dial string (or "dial pattern"). (If you don't enter anything, it will match everything, and try to send all calls. This doesn't work if you have more than one Rate Card as the system won't know which one to use.) Each prefix is listed once per line, both prefix and regular expressions are allowed:
 
     Prefix
     ```
@@ -44,7 +44,7 @@ View and configure existing routes on the Routing tab in the Customer card. To c
     ```
 
 !!! warning "Using Rate Cards for multiple countries"
-    Ingress Routing isn't independently aware of the card type you are using, and more specifically the appropriate dial strings it needs to send. For example, you are using both UK and US cards, you need to enter appropriate dial strings in the routes you set up for each card type.
+    Ingress Routing isn't independently aware of the card type you are using, and more specifically the appropriate dial strings it needs to send. For example, you are using both UK and US cards; you need to enter appropriate dial strings in the routes you set up for each card type.
 
 + **Enabled**: The route can be easily enabled and disabled here. 
 
@@ -230,7 +230,7 @@ ASR (Answer Seizure Ratio) is the number of connected calls divided by the total
 [routing-disabled]: /customer/img/routing-disabled.png "Disabled Routing"
 [techprefix-usecase]: /customer/img/techprefix-usecase.png "Tech Prefix Use Case"
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTcxNjkzODIsMTc2NDUxMTQyOCwtMz
-U0MDg1Mzk4LDE2MjE2NzUwMTgsLTEzMjkyMzgxODAsLTMwMjA3
-MDY1MCw0MTYxMDc5MjIsLTIwNDc3MjgxOTJdfQ==
+eyJoaXN0b3J5IjpbLTgzMDE3MTYxOCwxNzY0NTExNDI4LC0zNT
+QwODUzOTgsMTYyMTY3NTAxOCwtMTMyOTIzODE4MCwtMzAyMDcw
+NjUwLDQxNjEwNzkyMiwtMjA0NzcyODE5Ml19
 -->
