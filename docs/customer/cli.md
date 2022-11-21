@@ -113,7 +113,7 @@ Filters are `AND` together, meaning for a call to pass on this example, the CLI 
 
 
 #### Filter CLI from a Large List
-You can manage large lists of numbers from our Userspace database. Once you upload the numbers under Developer :material-menu-right: Database, you can use the following options to filter by the uploaded list. Note that the filter is a partial match.
+You can manage large lists of numbers from our Userspace database. Once you upload the numbers under Developer :material-menu-right: [Database](https://docs.connexcs.com/developers/database/), you can use the following options to filter by the uploaded list. Note that the filter is a partial match.
 
 | Pre-Asserted-ID  | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB  |
 |------------------|-------------|-----------------------|--------|----------|---------------|
@@ -270,7 +270,7 @@ To set the "P-Asserted-ID" per customer, see [**Configure CLI**](https://docs.co
 [approvedcli]: /customer/img/approvedcli.png "Approved CLI Only"
 [edit-cli]: /customer/img/edit-cli.png "Edit CLI"
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzMyNzgwNjMsMTA2NTU2NTkxNCwtOD
-AzOTMwMzMsLTEwOTYwODc3MzUsOTk0MzQyMDcsMTk4NjQ0NDEz
-NywxOTQ5NTUwNDc5LDIwODkyODA3MCwtMzEzMjYyNDk3XX0=
+eyJoaXN0b3J5IjpbNTE1ODQxODMxLDEwNjU1NjU5MTQsLTgwMz
+kzMDMzLC0xMDk2MDg3NzM1LDk5NDM0MjA3LDE5ODY0NDQxMzcs
+MTk0OTU1MDQ3OSwyMDg5MjgwNzAsLTMxMzI2MjQ5N119
 -->
