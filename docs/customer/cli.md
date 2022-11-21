@@ -250,7 +250,7 @@ The CLI system uses Regular Expressions to match and replace numbers. Here are a
 
 *To learn more about writing regular expressions, visit [**RegExr**](http://regexr.com) for tutorials and exercises available for all levels of expertise.*
 
-## Blacklist numbers per provider
+## Allow list numbers per provider
 Use **CLI Restrict** to allow CLIs to pass through a specific provider. To allow a configured CLI:
 
 1. Click **Management :material-menu-right: Rate Card**. 
@@ -270,7 +270,7 @@ To set the "P-Asserted-ID" per customer, see [**Configure CLI**](https://docs.co
 [approvedcli]: /customer/img/approvedcli.png "Approved CLI Only"
 [edit-cli]: /customer/img/edit-cli.png "Edit CLI"
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTE1ODQxODMxLDEwNjU1NjU5MTQsLTgwMz
-kzMDMzLC0xMDk2MDg3NzM1LDk5NDM0MjA3LDE5ODY0NDQxMzcs
-MTk0OTU1MDQ3OSwyMDg5MjgwNzAsLTMxMzI2MjQ5N119
+eyJoaXN0b3J5IjpbLTEwNDc3NTM5MjcsMTA2NTU2NTkxNCwtOD
+AzOTMwMzMsLTEwOTYwODc3MzUsOTk0MzQyMDcsMTk4NjQ0NDEz
+NywxOTQ5NTUwNDc5LDIwODkyODA3MCwtMzEzMjYyNDk3XX0=
 -->
