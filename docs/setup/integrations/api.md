@@ -147,5 +147,32 @@ Enter Razorpay settings into ConnexCS:
 ## Xero Integration
 *Coming soon*
 
+##  Paystack Integration
+
+Configure the Paystack Payment settings in ConnexCS:
+
+**1.** Select `**Add**`, and then select **Paystack**.
+
+**2. Mode**: Use `Test` for testing connections or `Live` for an active account.
+
+**3. **Public Key** (Publishable) and **Private Key** (Secret)**: Access the [Paystack Support Link]([https://support.paystack.com/hc/en-us/articles/360009881600-Paystack-Test-Keys-Live-Keys-and-Webhooks](https://support.paystack.com/hc/en-us/articles/360009881600-Paystack-Test-Keys-Live-Keys-and-Webhooks)) to access the Test keys and Live keys.
+
+**4. Currencies**: Select one or more currencies that you will accept.
+
+## PayMongo Integration
+
+Configure the PayMongo Payment settings in ConnexCS:
+
+**1.** Select `**Add**`, and then select **PayMongo**.
+
+**2. Mode**: Use `Test` for testing connections or `Live` for an active account.
+
+**3. **Public Key** (Publishable) and **Private Key** (Secret)**: Access the [PayMongo API Reference Guide]([https://developers.paymongo.com/reference/getting-started-with-your-api](https://developers.paymongo.com/reference/getting-started-with-your-api)) to retrieve the Secret keys.
+
+**4. Currencies**: Select PHP (Philippine Peso) as the type of currency.
+
 [paypal-9]: /setup/img/paypal-9.png "Paypal-9"
 [api]: /setup/img/api.png "API Integration"
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTAwNTQ5NDQwOV19
+-->
