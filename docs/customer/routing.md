@@ -157,7 +157,7 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 
     *While it's doubtful that any information will be logged in the customer/providers switch when the audio is engaged, it's possible for an engineer to learn this information from a SIP trace, PCAP, or by looking at transit locations. DTMF Detection ONLY works when RTP Proxy mode is enabled.*
 
-+ **Call Recording**: This allows you to record and store calls, which are then found in **Setup > Information > [Browsing Record](https://docs.connexcs.com/setup/information/recording/)**. There is an additional charge, per recorded call, of 0.003 in addition to existing fees or charges, so choose carefully how many calls to record:
++ **Call Recording**: This allows you to record and store calls, which are then found in **Setup > Information > [Browsing Record](https://docs.connexcs.com/setup/information/recording/)**. There is an additional charge, per recorded call of $0.003 in addition to existing fees or charges, so choose carefully how many calls to record:
     
     :material-menu-right: `Disabled`- no calls are recorded
     
@@ -230,7 +230,7 @@ ASR (Answer Seizure Ratio) is the number of connected calls divided by the total
 [routing-disabled]: /customer/img/routing-disabled.png "Disabled Routing"
 [techprefix-usecase]: /customer/img/techprefix-usecase.png "Tech Prefix Use Case"
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDg5NzcyMDU1LDE3NjQ1MTE0MjgsLTM1ND
-A4NTM5OCwxNjIxNjc1MDE4LC0xMzI5MjM4MTgwLC0zMDIwNzA2
-NTAsNDE2MTA3OTIyLC0yMDQ3NzI4MTkyXX0=
+eyJoaXN0b3J5IjpbLTEzMzY4MTI2NDMsMTc2NDUxMTQyOCwtMz
+U0MDg1Mzk4LDE2MjE2NzUwMTgsLTEzMjkyMzgxODAsLTMwMjA3
+MDY1MCw0MTYxMDc5MjIsLTIwNDc3MjgxOTJdfQ==
 -->
