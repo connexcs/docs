@@ -53,7 +53,7 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 
 + **Capped Rate** and **Provider Capped Rate**: Set the maximum cost of a call. Calls that exceed the set rate won't be connected. Ex: For customers with flat rate accounts, which are allowed to dial all UK numbers but premium numbers, you would set the Provider Capped Rate at 0.01, so any call that the provider might charge over that amount would not be completed. 
 
-+ **Profit Assurance**: When `Enabled`, only calls that are profitable will be allowed, any call that costs more than the retail rate won't be allowed to complete. This is particularly useful for A-Z routes or NPA-NXX rate cards. Keep in mind that when this is enabled, additional Post Dial Delay (PDD) is added to the call.
++ **Profit Assurance**: When `Enabled`, only calls that are profitable will be allowed, any call that costs more than the retail rate won't be allowed to complete. This is particularly useful for A-Z routes or NPA-NXX [rate cards](https://docs.connexcs.com/rate-card-building/). Keep in mind that when this is enabled, additional Post Dial Delay (PDD) is added to the call.
 
 + **Block Connect Cost**: Block any call that has a connection fee. 
 
@@ -230,7 +230,7 @@ ASR (Answer Seizure Ratio) is the number of connected calls divided by the total
 [routing-disabled]: /customer/img/routing-disabled.png "Disabled Routing"
 [techprefix-usecase]: /customer/img/techprefix-usecase.png "Tech Prefix Use Case"
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwMjIwNzIwNiwxNzY0NTExNDI4LC0zNT
-QwODUzOTgsMTYyMTY3NTAxOCwtMTMyOTIzODE4MCwtMzAyMDcw
-NjUwLDQxNjEwNzkyMiwtMjA0NzcyODE5Ml19
+eyJoaXN0b3J5IjpbNDg5NzcyMDU1LDE3NjQ1MTE0MjgsLTM1ND
+A4NTM5OCwxNjIxNjc1MDE4LC0xMzI5MjM4MTgwLC0zMDIwNzA2
+NTAsNDE2MTA3OTIyLC0yMDQ3NzI4MTkyXX0=
 -->
