@@ -151,7 +151,7 @@ Enter Razorpay settings into ConnexCS:
 
 Configure the Paystack Payment settings in ConnexCS:
 
-**1.** Select `**Add**`, and then select **Paystack**.
+**1.** Select **`Add`**, and then select **Paystack**.
 
 **2. Mode**: Use `Test` for testing connections or `Live` for an active account.
 
@@ -163,7 +163,7 @@ Configure the Paystack Payment settings in ConnexCS:
 
 Configure the PayMongo Payment settings in ConnexCS:
 
-**1.** Select `**Add**`, and then select **PayMongo**.
+**1.** Select **`Add`**, and then select **PayMongo**.
 
 **2. Mode**: Use `Test` for testing connections or `Live` for an active account.
 
@@ -174,5 +174,5 @@ Configure the PayMongo Payment settings in ConnexCS:
 [paypal-9]: /setup/img/paypal-9.png "Paypal-9"
 [api]: /setup/img/api.png "API Integration"
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwNTQ5NDQwOV19
+eyJoaXN0b3J5IjpbMjAwMTM5NTg0OV19
 -->
