@@ -14,7 +14,7 @@ jobs:
           fail_on_error: true
           reporter: github-pr-check
           files: docs
-          vale_flags: "--glob=*.md"
+          vale_flags: --glob=*.{md,txt}
           filter_mode: file
         env:
           # Required, set by GitHub actions automatically:
