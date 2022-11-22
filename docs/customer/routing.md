@@ -46,7 +46,7 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 !!! warning "Using Rate Cards for multiple countries"
     Ingress Routing isn't independently aware of the card type you are using, and more specifically the appropriate dial strings it needs to send. For example, you are using both UK and US cards; you need to enter appropriate dial strings in the routes you set up for each card type.
 
-+ **Enabled**: The route can be easily enabled and disabled here. 
++ **Enabled**: The route can be easily enabled and [disabled](https://docs.connexcs.com/customer/routing/#disabled-routes) here. 
 
 
 ### Price Limits
@@ -230,7 +230,7 @@ ASR (Answer Seizure Ratio) is the number of connected calls divided by the total
 [routing-disabled]: /customer/img/routing-disabled.png "Disabled Routing"
 [techprefix-usecase]: /customer/img/techprefix-usecase.png "Tech Prefix Use Case"
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzMDE3MTYxOCwxNzY0NTExNDI4LC0zNT
-QwODUzOTgsMTYyMTY3NTAxOCwtMTMyOTIzODE4MCwtMzAyMDcw
-NjUwLDQxNjEwNzkyMiwtMjA0NzcyODE5Ml19
+eyJoaXN0b3J5IjpbLTEwNjE0OTQzODgsMTc2NDUxMTQyOCwtMz
+U0MDg1Mzk4LDE2MjE2NzUwMTgsLTEzMjkyMzgxODAsLTMwMjA3
+MDY1MCw0MTYxMDc5MjIsLTIwNDc3MjgxOTJdfQ==
 -->
