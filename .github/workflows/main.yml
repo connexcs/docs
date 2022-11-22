@@ -7,12 +7,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: errata-ai/vale-action@reviewdog
+      - name: Vale Reviewdog
+        uses: errata-ai/vale-action@reviewdog
         with:
           debug: true
           fail_on_error: true
           reporter: github-pr-check
-          files: /home/runner/work/connexcs-user-docs/connexcs-user-docs/docs
+          files: docs
+          vale_flags: "--glob=*.md"
         env:
           # Required, set by GitHub actions automatically:
           # https://docs.github.com/en/actions/security-guides/automatic-token-authentication#about-the-github_token-secret
