@@ -4,7 +4,7 @@
 
 **Ingress Routing** is the process that allocates an incoming call (dialed by our customers) based on the assigned Customer Rate Card, which then Egresses the call to a specified provider. This allows multiple rate cards to be used with or without a prefix. First, a check is done for the longest prefix, then the shortest prefix is checked for a match. If no prefix is matched, it will match the rate cards with mutually exclusive destinations. If there are multiple rate cards with the same prefix, you must set up a dial plan with a Tech Prefix to identify the correct card.
 
-!!! info Routing Templates and more
+!!! info "Routing Templates and more"
     Create templates for customer routing in [**Routing Global**](https://docs.connexcs.com/global-routing/). For more information on Routing, see [**Routing Setup**](https://docs.connexcs.com/video-guide/#routing-setup) in our Video Guides for a detailed walkthrough. You can find additional documentation in the [**Routing Overview**](https://docs.connexcs.com/routing/) and [**Routing Strategy**](https://docs.connexcs.com/routing-strategy/) sections.
 
 ## Configure Routing
@@ -47,7 +47,7 @@ View and configure existing routes on the Routing tab in the Customer card. To c
     ^1(204|226|236|249|250|289|306|343|403|416|418|438|450|506|514|519|579|581|587|604|613|647|705|709|778|780|807|819|867|902|905)
     ```
 
-!!! warning Using Rate Cards for multiple countries
+!!! warning "Using Rate Cards for multiple countries"
     Ingress Routing isn't independently aware of the card type you are using or,  more specifically, the appropriate dial strings it needs to send. For example, if you are using both UK and US cards, you need to enter appropriate dial strings in the routes you set up for each card type.
 
 + **Enabled**: The route can be easily enabled and [disabled](https://docs.connexcs.com/customer/routing/#disabled-routes) here.
@@ -68,18 +68,18 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 
 + **Max Duration**: Set the maximum amount of time (in seconds) that the call will be allowed to exist before being terminated, typically in the case of a missed `BYE`.
 
-!!! info Call Timeouts
+!!! info "Call Timeouts"
     A VoIP call is stateful, even though its protocol is stateless. This means that both sides of the conversation must be told when to finish the call. They do this with a BYE message. If the BYE message goes missing, the call will continue forever.
     Max Duration is a method for setting up **Missing BYE Protection**.  Another approach is to use a **SIP Ping** to determine when the connection has timed out. This sends a SIP packet to the remote end of the conversation roughly every 30 seconds. This checks to see if the other side is still aware of an ongoing conversation. If it does not receive a response or is told that the conversation is not active, it disconnects the call. **RTP Time-out:** this is another way to check for an active call based on whether audio is passing. If there is no audio passing for a pre-set interval, our Real-time Transport Protocol (RTP) array will notify the switch and instruct it to end the call. This won't work if RTP Mode is set to direct.
 
-!!! Warning Asterisk pings
+!!! warning "Asterisk pings"
     Asterisk doesn't have SIP Ping (OPTIONS) enabled by default. If your customer / carrier is using Asterisk, you may need to disable this if they don't have it enabled on their side, as calls will typically disconnect after 30 seconds.
 
 + **Flow Speed (CPS)**: Limits the calls per second. This must be set for each customer card assigned to the customer account.
 
 + **CPS Spike Buffer**: Limit a spike of calls by spreading them over a longer period of time. This essentially manages a large volume of calls over a short period of time. Once the buffer limit is reached, the calls per second kick in, distributing the spike of calls.
 
-!!! Note CPS Buffering
+!!! note "CPS Buffering"
     **CPS Buffering**: Used to manage large volumes of calls over a short period of time. This process maximises saturation and increases call completion within a given CPS restriction. It does this by removing spikes and borrowing capacity from future seconds. If incoming traffic exceeds your pre-set CPS, it holds the call for one second and then tries again. You can increase the second count in the CPS Spike Buffer field. Changing the CPS Buffering value only affects calls that exceed the CPS. The delay will show as increased PDD on the call, each second the system will emit a 100 Trying (High CPS, Buffering) response to indicate the status/progress of the call.
 
 + **ASR Plus** assists capacity management by helping you define how to handle connections for known failed numbers. For information on the ASR Plus options, see [**ASR Plus Details**](https://docs.connexcs.com/customer/routing/#asr-plus-details) below.
@@ -99,7 +99,7 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 + **Lock** (Allow): One or more rate cards from the list of available providers.
 + **Exclude** (Deny): Exclude access to one or more rate cards in the list of available providers.
 
-!!! Tip "Exclude Use Case"
+!!! tip "Exclude Use Case"
     If a customer reports an issue with a carrier or route, you can come here and set the carrier / route to Exclude and **`Save`**, then come back and remove it, and do a **`Delay and Save`** for a later date.
 
 ### Media
@@ -131,7 +131,7 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 
     :material-menu-right: `Zone`- Choose any of the regional servers, but it is recommended that you select a location close to a provider or your customer. Temporarily selecting a different region to route media traffic can be helpful in diagnosing call problems.
 
-!!! tip The recommended RTP Media Proxy servers are the **Closest (To ConnexCS) Server** or the **Closest (Elastic) Server**.
+!!! tip "The recommended RTP Media Proxy servers are the **Closest (To ConnexCS) Server** or the **Closest (Elastic) Server**."
 
 + **RTP Proxy Mode**: If a connection via our service fails and relaxed is selected, it will automatically fail over to the backup.
 
@@ -139,13 +139,13 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 
     :material-menu-right: `Relaxed`- This will make the best efforts to engage the RTP Proxy; if it can't be engaged because of either network errors, or because you don't have enough RTP capacity, the calls will connect directly.
 
-!!! success When should I use RTP Proxy?
+!!! success "When should I use RTP Proxy?"
     Use an RTP Proxy if you don't want your customers to know your providers.
 
-!!! warning When should I avoid using an RTP Proxy?
+!!! warning "When should I avoid using an RTP Proxy?"
     You have other equipment in your SIP set-up that will act as a Media Relay or you want to run a test to see if audio problems are related to the ConnexCS switch.
 
-!!! info RTP Proxy distinctions
+!!! info "RTP Proxy distinctions"
     When a call is established between the customer and the provider, audio can be set-up in one of two ways:
 |                         | **With RTP Proxy** | **Without RTP Proxy** |
 |-------------------------|:------------------:|----------------------:|
@@ -217,12 +217,12 @@ ASR (Answer Seizure Ratio) is the number of connected calls divided by the total
 | **ASR+?**         | When ASR+ is enabled on the provider card, only known connected calls will be allowed to pass to specific providers |
 | **ASR++**         | Only known connected calls will be allowed to pass (rarely used because it is typically overly strict) |
 
-!!! success Advantages of ASR
+!!! success "Advantages of ASR"
     + Quick failure of known bad numbers.
     + Reduces response time for your customers.
     + Improves the ASR of the traffic that your upstream carrier sees.
     + Highly effective for call centre traffic.  
-!!! failure Disadvantages of ASR
+!!! failure "Disadvantages of ASR"
     + Marginal impact on your NER due to false positive matches. This is usually kept within tolerances of < 0.1%.
     + Doesn't offer improvements for all destinations.
 
