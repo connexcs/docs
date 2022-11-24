@@ -13,7 +13,7 @@ You can organize ConnexCS **Customers** through customer cards.
 
 On the **Customers** page, you can perform several management operations.
 
-**:material-plus:**: Add new Customers (see [**Create Customers**](https://docs.connexcs.com/customer/customer/#create-customers) below for details.)
+By clicking on + button we can add customer (see [**Create Customers**](https://docs.connexcs.com/customer/customer/#create-customers) below for details.)
 
 **Bulk Upload**: Upload multiple Customers at the same time, by importing a spreadsheet file (.csv file) into ConnexCS.
 
