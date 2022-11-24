@@ -118,7 +118,7 @@ Once a customer is created, click on the customer name to view details and provi
 ___
 
 ## Edit Customers
-Click an existing customer name from the Customer section, then click **`Edit`**. For all field details, see **[Create Customers](../customer/#create-customers)** above. 
+Click an existing customer name from the Customer section, then click **`Edit`**. For all field details, see **[Create Customers](/customer/#create-customers)** above. 
 
 [customers]: /customer/img/customers.png "Customer Dashboard"
 [customer-status]: /customer/img/39.png "Customer Status"
@@ -126,8 +126,8 @@ Click an existing customer name from the Customer section, then click **`Edit`**
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4NDAwNTk5Miw0MzgyNDc4NDYsMTEzNT
-E1ODY5OSwzODUxMDEyMiwtNzI4MTE4ODgzLC0xMjI0MzQxMTg4
-LDEzODUzNTcxOTYsLTU3NTU2NTAyOCwtNDAwNDY4NzU1LC0xNT
-U2MzE0NDMyXX0=
+eyJoaXN0b3J5IjpbLTE1NzMwMzMwMDAsNDM4MjQ3ODQ2LDExMz
+UxNTg2OTksMzg1MTAxMjIsLTcyODExODg4MywtMTIyNDM0MTE4
+OCwxMzg1MzU3MTk2LC01NzU1NjUwMjgsLTQwMDQ2ODc1NSwtMT
+U1NjMxNDQzMl19
 -->
