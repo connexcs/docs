@@ -7,41 +7,40 @@ You can organize ConnexCS **Customers** through customer cards.
 ![alt text][customers]
 
 !!! question "How many customers can I add?"
-    You can add unlimited customers, and won't be charged per customer, only on their individual usage. 
-
+    You can add unlimited customers, and won't be charged per customer, only on their individual usage.
 
 ## Customer functions
-From the **Customers** page, you can perform several management operations. 
+
+On the **Customers** page, you can perform several management operations.
 
 **:material-plus:**: Add new Customers (see [**Create Customers**](https://docs.connexcs.com/customer/customer/#create-customers) below for details.)
 
-**Bulk Upload**: Upload multiple Customers at the same time, by importing a spreadsheet file (.csv file) into ConnexCS. 
+**Bulk Upload**: Upload multiple Customers at the same time, by importing a spreadsheet file (.csv file) into ConnexCS.
 
-1. Click `Bulk Upload` then `Upload`, find your customer file, and then click **`Open`**. 
+1. Click `Bulk Upload`, then `Upload`, find your customer file, and then click **`Open`**.
 2. Right-click on the second row and select **Start Row** to indicate the first line of data (the first row is typically column headers).
 3. Right-click on each column to **Map Columns** to appropriate fields.
-4. Once you set all fields as required, then click **Upload to Server**.
+4. Once you have filled out all of the required fields, click **Upload to Server**.
 
-!!! note "Before uploading the .csv file, please ensure that it does not contain any exponential or scientific notations.<br>The inclusion of the notations will result in errors." 
+!!! note "Before uploading the .csv file, please ensure that it does not contain any exponential or scientific notations.<br>The inclusion of the notations will result in errors."
 
-**Bulk Edit**: Select multiple customers, then click **Bulk Edit** to modify fields such as Channels, Status, Flow Speed (CPS), Portal Access, and Country. 
+**Bulk Edit**: Select multiple customers, then click **Bulk Edit** to modify fields such as Channels, Status, Flow Speed (CPS), Portal Access, and Country.
 
-**Refresh**: Refresh the page, helpful when making edits or looking at real-time changes. This page is built as a web app, so some information will update automatically.  
+**Refresh**: Refreshing the page, helpful when making edits or looking at real-time changes. This page is built as a web app, so some information will update automatically.  
 
-**Delete**: Delete multiple customers at a time. 
+**Delete**: Delete multiple customers at a time.
 
-**?**: Link to documentation of the current page. 
-
-**Send**: ConnexCS comes with Email and SMS included for your customers.
+**?**: Link to the documentation of the current page.
+**Send**: ConnexCS includes email and SMS support for your customers.
 
 1. Select multiple customers using the tickbox selector on the left side of each row. (Customers aren't visible to each other in the sent message.)
 2. Click on "Send" at the top right then choose email or SMS.
-3. Fill in the Subject line and body details and send. 
-   + Emails are sent FROM the email address populated in Setup > Settings, and TO every email address listed in Contacts for each customer. 
-   + SMS is sent to the Mobile number of each Contact. 
+3. Fill in the Subject line and body details and send.
+   + Emails are sent FROM the email address populated in Setup > Settings, and TO every email address listed in Contacts for each customer.
+   + SMS is sent to the Mobile number of each Contact.
 
 !!! note "Custom Email Servers"
-    Change the outbound Email Server and SMS origination number in **Setup :material-menu-right: Settings**. 
+    Change the outbound Email Server and SMS origination number in **Setup :material-menu-right: Settings**.
 
 **Active**: Filter customer(s) based on account status. Results on the page will automatically arrange themselves according to the filter.
 
@@ -49,11 +48,12 @@ From the **Customers** page, you can perform several management operations.
 
 ## Customer View Modification
 
-+ **Columns** pop out on the right and lets you add/remove options, and change column order, in some cases you can create row groups and total values for pivot functionality.
-+ **Filters** pop out on the right and lets you filter your customers.
++ **Columns** pop out on the right and allows you to add /  remove options, and change column order, in some cases you can create row groups and total values for pivot functionality.
++ **Filters** pop out on the right and allows you to filter your customers.
 + Adjust Column ordering
 
 ## Create Customer
+
 *Click each tab for field explanations:*
 
 === "Basic"
@@ -89,7 +89,7 @@ From the **Customers** page, you can perform several management operations.
     + **Invoice Template**: Select from a list of existing Templates found in **Setup :material-menu-right: Config :material-menu-right: [Templates](/setup/config/templates/)**
 
 === "Address"
-    
+
     * **Address:** Complete the customer's physical address.
 
 === "Verification"
@@ -99,31 +99,32 @@ From the **Customers** page, you can perform several management operations.
 
     !!! attention
         Mobile messages are sent globally, but there are some reports of issues with SMS being delivered to numbers in India. These messages are sent on the Twilio network, so ConnexCS can only deliver what they deliver. 
-    
+
 === "Notes"
 
     These are arbitrary notes that can be entered onto an account at your discretion. 
-    
+
 !!! note "Save Options"
     + **Save and Continue** = Exit the Customer screen
     + **Save and Stay** = Save the customer, but stay on the screen (helpful when adding multiple Customers at a time)
-    + **Delay and Save** = Select a time to elapse before saving the Customer, delaying the setup or change. 
+    + **Delay and Save** = Select a time to elapse before saving the Customer, delaying the setup or change.
 ___
 
 ## Configure Customers
-Once a customer is created, click on the customer name to view details and provide additional configuration. For documentation on that configuration, navigate to the sub-section on the left: 
+
+Once a customer is created, click on the customer name to view details and provide additional configuration. For documentation on that configuration, navigate to the sub-section on the left:
 
 &emsp; ![alt text][customersubs]
 
 ___
 
 ## Edit Customers
-Click an existing customer name from the Customer section, then click **`Edit`**. For all field details, see **[Create Customers](/customer/#create-customers)** above. 
+
+Click an existing customer name from the Customer section, then click **`Edit`**. For all field details, see **[Create Customers](https://docs.connexcs.com/customer/customer/#create-customer)** above.
 
 [customers]: /customer/img/customers.png "Customer Dashboard"
 [customer-status]: /customer/img/39.png "Customer Status"
 [customersubs]: /customer/img/customersubs.png "Customer Sub-Sections"
-
 
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTE1NzMwMzMwMDAsNDM4MjQ3ODQ2LDExMz
