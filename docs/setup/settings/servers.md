@@ -16,7 +16,7 @@ Before deploying your first server, make sure to complete the [**Getting Started
 The **Servers** section provides an overview of deployed servers:
 
 + **IP**: The unique server IP address. To view SIP and ICMP latency, hover over the status icon next to the server IP. 
-+ **Type**: Typically either **Dispatcher** (load-balancer) or **Switch** (cluster member).
++ **Type**: **Switch** (cluster member).
 + **Cluster**: Indicates which cluster the server belongs to. 
 + **Channels**: The number of available active calls in use.
 + **CPS**: Maximum calls per second. 
@@ -134,5 +134,5 @@ When a user endpoint registers with UDP via NAT, a port mapping is created. Howe
 [server-cert1]: /setup/img/server-cert1.png "Server Certificates"
 [server-6]: /setup/img/reactivateserver.png "Reactivate Server"
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODkzMzM1NjE2XX0=
+eyJoaXN0b3J5IjpbLTE2OTc5OTMzNTQsODkzMzM1NjE2XX0=
 -->
