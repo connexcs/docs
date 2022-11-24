@@ -131,7 +131,7 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 
     :material-menu-right: `Zone`- Choose any of the regional servers, but it is recommended that you select a location close to a provider or your customer. Temporarily selecting a different region to route media traffic can be helpful in diagnosing call problems.
 
-!!! Tip The recommended RTP Media Proxy servers are the **Closest (To ConnexCS) Server** or the **Closest (Elastic) Server**.
+!!! tip The recommended RTP Media Proxy servers are the **Closest (To ConnexCS) Server** or the **Closest (Elastic) Server**.
 
 + **RTP Proxy Mode**: If a connection via our service fails and relaxed is selected, it will automatically fail over to the backup.
 
@@ -139,10 +139,10 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 
     :material-menu-right: `Relaxed`- This will make the best efforts to engage the RTP Proxy; if it can't be engaged because of either network errors, or because you don't have enough RTP capacity, the calls will connect directly.
 
-!!! Success When should I use RTP Proxy?
+!!! success When should I use RTP Proxy?
     Use an RTP Proxy if you don't want your customers to know your providers.
 
-!!! Warning When should I avoid using an RTP Proxy?
+!!! warning When should I avoid using an RTP Proxy?
     You have other equipment in your SIP set-up that will act as a Media Relay or you want to run a test to see if audio problems are related to the ConnexCS switch.
 
 !!! info RTP Proxy distinctions
@@ -164,7 +164,7 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 
     :material-menu-right: `Enabled (Always On)`- Record all calls.
 
-!!! Tip The Call Recording setting is disabled
+!!! tip The Call Recording setting is disabled
     You need to enable the feature first on the account in **Setup > Settings > Account > [Packages](https://docs.connexcs.com/setup/settings/account/#packages)** before it can be enabled here for individual customers.
 
 ### Strategy
