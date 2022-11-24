@@ -23,7 +23,7 @@ If you have a customer or carrier who sends a large volume of *unauthorized* cal
 
 You may see attempts hit your switch that aren't authorized and then fail. These are attempts that our system has effectively declined the call to process. You don't need to take further action to stop these calls.
 
-It's important that calls such as these are visible for two reasons.
+It's important that calls such as these are visible for two reasons:
 
 1. If we block an IP address too soon, this may be a customer who is trying to connect with you. Once blocked, you lose the ability to view debugging information since the packets are dropped before logging.
 2. If we block an IP address too soon, we lose the ability to identify any attack patterns and profiling information on an attack. Having some data allows us to see progressive attacks spanning many IP addresses.
