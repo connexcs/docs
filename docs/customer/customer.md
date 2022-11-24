@@ -87,6 +87,7 @@ By clicking on + button we can add customer (see [**Create Customers**](https://
     + **Invoice Schedule**: Specify frequency for invoice generation. 
     + **Invoice Due Days**: Set the allowed number of days past the due date that the invoice can go unpaid. 
     + **Invoice Template**: Select from a list of existing Templates found in **Setup :material-menu-right: Config :material-menu-right: [Templates](/setup/config/templates/)**
+    + **Ext.Accounting ID**: The non parsed field- this is used to fill in work an external accounting field to correlate between Connexcs and the external accountancy system.
 
 === "Address"
 
