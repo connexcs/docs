@@ -164,7 +164,7 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 
     :material-menu-right: `Enabled (Always On)`- Record all calls.
 
-!!! tip The Call Recording setting is disabled
+!!! tip "The Call Recording setting is disabled"
     You need to enable the feature first on the account in **Setup > Settings > Account > [Packages](https://docs.connexcs.com/setup/settings/account/#packages)** before it can be enabled here for individual customers.
 
 ### Strategy
