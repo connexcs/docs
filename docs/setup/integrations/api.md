@@ -24,13 +24,13 @@ For inbound APIs, please see the in the Architecture documentation.
 
 ## Enable API Integration
 
-1. Click **`Add`**.
-2. Select the required service from the list.
+**1.** Click **`Add`**.
+**2.** Select the required service from the list.
 
     ![alt text][api]
 
-3. Complete the available fields (see individual API integrations below for details for each provider).
-4. Click **`Save`**.
+**3.** Complete the available fields (see individual API integrations below for details for each provider).
+**4.** Click **`Save`**.
 
 !!! info "API Service Details"
     Each service requires different details. You can obtain these using your account with the specific provider(s).
@@ -55,9 +55,9 @@ Use this comparison chart to decide between Mass Pay and Express Checkout with P
 
 Enter the PayPal credentials into your account.
 
-1. Select **`Add`** and then select **PayPal**.
-2. **Mode**: Use `Test` for testing connections or `Live` for an active account.
-3. To find your **Username**, **Password**, and **Signature**:
+**1.** Select **`Add`** and then select **PayPal**.
+**2. Mode**: Use `Test` for testing connections or `Live` for an active account.
+**3.** To find your **Username**, **Password**, and **Signature**:
     + To access your PayPal account, navigate to **Settings :material-menu-right: Account Settings :material-menu-right: Account Access**.
     + For **API Access**, click **`Update`**.
     + In the **NVP/SOAP API Integration (Classic)** section, select **Manage API Credentials**.
@@ -65,13 +65,13 @@ Enter the PayPal credentials into your account.
        *(NVP: Name-Value Pair; SOAP: Simple Object Access Protocol)*
 
     + Select **Request API Signature**, and then click **`Agree and Submit`**.
-4. Copy the **API Username**, **API Password**, and **Signature** credentials from this page into the open PayPal form in ConnexCS.
+**4.** Copy the **API Username**, **API Password**, and **Signature** credentials from this page into the open PayPal form in ConnexCS.
 
     ![alt text][paypal-9]
 
-5. **Currency**: Select one or more currencies that you will accept.
-6. **Deduct Payment Fees**: Set whether you will deduct the fees or not.
-7. Click **`Save`**.
+**5. Currency**: Select one or more currencies that you will accept.
+**6. Deduct Payment Fees**: Set whether you will deduct the fees or not.
+**7.** Click **`Save`**.
 
 ## PayPal IPN Integration
 
@@ -84,13 +84,17 @@ Steps to configure IPN:
 **Step 1: Configure ConnexCS**
 
 **1.1.** Select **`Add`** and then select **PayPal IPN**.
+
 **1.2.** Update the following:
+
     + **IPN URL**: You should never modify this; it's required later to complete the integration.
     + **Payment Type**: Select "Mass Pay" (described above) or "Send Money" (fees may apply).
     + **Verify Transaction**: If selected, ConnexCS will check with PayPal to make sure the transaction is correct.
     + **Currency**: Select one or more currencies that you will accept.
     + **Deduct Payment Fees**: Set whether you will deduct the fees or not.
+
 **1.3.** Click **`Save`**.
+
 **1.4.** To find the IPN URL (needed later in configuration), open the **`paypal_ipn`** now listed in API.
 
 **Step 2: Identify your IPN listener to PayPal**
@@ -98,10 +102,15 @@ Steps to configure IPN:
 After you have configured ConnexCS, add it to your PayPal account (taken from PayPal support [**here**](https://developer.paypal.com/docs/api-basics/notifications/ipn/IPNSetup/#)).
 
 **2.1.** Login to a PayPal Business Account (it must be a Business account, not a regular PayPal account).
+
 **2.2** Navigate to **Settings > Account Settings > Notifications**.
+
 **2.3.** Select **Update** next to **Instant payment notifications**.
+
 **2.4.** Click **Choose IPN Settings**.
+
 **2.5.** Enter the IPN URL under **Notification URL** and select **Receive IPN Messages (Enabled)**,and then click **Save**.
+
 **2.6.** Fill in the settings and then copy the API URL.
 
 ### Configure the Customer with PayPal Email address
@@ -109,9 +118,13 @@ After you have configured ConnexCS, add it to your PayPal account (taken from Pa
 The following are instructions on how to add a PayPal Email address to a ConnexCS customer account:
 
 **1.** Navigate to **Management :material-menu-right: Customer :material-menu-right: [Customer name]**.
+
 **2.** In Contacts, click :material-plus:.
+
 **3.** Enter the customer's name and PayPal email address, and then click **`Save`**.
+
 **4.** On the customer's main page, select Edit :material-menu-right: Config.
+
 **5.** Enter the customer's PayPal email ID and click **`Save`**.
 
 ### View the PayPal IPN Payment Log
@@ -123,8 +136,11 @@ You can view these payments under **Setup :material-menu-right: Information :mat
 Configure the Stripe API Keys in ConnexCS:
 
 **1.** Select **`Add`** and then select **Stripe**.
+
 **2. Mode**: Use `Test` for testing connections or `Live` for an active account.
+
 **3. Public Key** (Publishable) and **Private Key** (Secret): Access the [**Stripe Dashboard**](https://dashboard.stripe.com/account/apikeys) (login if necessary) to access your keys (from [**Stripe Support**](https://stripe.com/docs/keys); `Test` keys are available in that link).
+
 **4. Currencies**: Select one or more currencies that you will accept.
 
 ## Duo Security Integration
@@ -132,6 +148,7 @@ Configure the Stripe API Keys in ConnexCS:
 Configure Duo Security settings in ConnexCS:
 
 **1.** Select **`Add`** and then select **Stripe**.
+
 **2. Integration Key**, **Secret**, and **Host**: Access the [**Duo Admin Panel**](https://admin.duosecurity.com/), locate **`Auth API`**, click `Protect` (from [**Duo Auth support**](https://duo.com/docs/authapi)). Find the **Integration Key**, **Secret Key**, and **API Hostname** to complete the setup in ConnexCS.
 
 ## Moneris Integration
@@ -139,12 +156,15 @@ Configure Duo Security settings in ConnexCS:
 Link Moneris to ConnexCS:
 
 **1.** Select **`Add`**, and then select **Moneris**.
+
 **2. Store ID**: You can find this in the MRC Welcome emails (contact [**Moneris**](https://www.moneris.com/) for assistance in finding this).
 
 ## Scriptforge Integration
 
 **1.** Select **`Add`** and then select **Scriptforge**.
+
 **2. Company**: Select the customer to integrate.
+
 **3. Script Forge**: Select the predefined script (details found under [**Developer :material-menu-right: Scriptforge**](/developers/scriptforge/).
 
 ## Razor Pay Integration
@@ -152,7 +172,9 @@ Link Moneris to ConnexCS:
 Enter Razorpay settings into ConnexCS:
 
 **1.** Select **`Add`** and then select **Razorpay**.
+
 **2. Mode**: Use `Test` for testing connections or `Live` for an active account.
+
 **3. Key ID** and **Key Secret**: Access [**Razorpay Dashboard**](http://dashboard.razorpay.com/), navigate to Settings, and create a test key (from [**Razorpay support**](https://knowledgebase.razorpay.com/support/solutions/articles/11000060257-how-do-i-generate-the-api-keys-)).
 
 1. **Currency**: Select one or more currencies that you will accept.
@@ -186,8 +208,6 @@ Configure the PayMongo Payment settings in ConnexCS:
 
 **4. Currencies**: Select PHP (Philippine Peso) as the type of currency.
 
-[paypal-9]: /setup/img/paypal-9.png "Paypal-9"
-[api]: /setup/img/api.png "API Integration"
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMjAwMTM5NTg0OV19
 -->
