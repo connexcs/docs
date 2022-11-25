@@ -28,7 +28,7 @@ For inbound APIs, please see the in the Architecture documentation.
 
 **2.** Select the required service from the list.
 
-    ![API](/setup/img/api.png)
+    ![API](/docs/setup/img/api.png)
 
 **3.** Complete the available fields (see individual API integrations below for details for each provider).
 
@@ -63,19 +63,19 @@ Enter the PayPal credentials into your account.
 
 **3.** To find your **Username**, **Password**, and **Signature**:
 
-    **3.1.** To access your PayPal account, navigate to **Settings :material-menu-right: Account Settings :material-menu-right: Account Access**.
-  
-    **3.2.** For **API Access**, click **`Update`**.
-    
-    **3.3.** In the **NVP/SOAP API Integration (Classic)** section, select **Manage API Credentials**.
+**3.1.** To access your PayPal account, navigate to **Settings :material-menu-right: Account Settings :material-menu-right: Account Access**.
 
-       *(NVP: Name-Value Pair; SOAP: Simple Object Access Protocol)*
-       
-    **3.4.** Select **Request API Signature**, and then click **`Agree and Submit`**.
+**3.2.** For **API Access**, click **`Update`**.
+
+**3.3.** In the **NVP/SOAP API Integration (Classic)** section, select **Manage API Credentials**.
+
+*(NVP: Name-Value Pair; SOAP: Simple Object Access Protocol)*
+
+**3.4.** Select **Request API Signature**, and then click **`Agree and Submit`**.
 
 **4.** Copy the **API Username**, **API Password**, and **Signature** credentials from this page into the open PayPal form in ConnexCS.
 
-    ![paypal-9](/setup/img/paypal-9.png)
+    ![paypal-9](/docs/setup/img/paypal-9.png)
 
 **5. Currency**: Select one or more currencies that you will accept.
 
