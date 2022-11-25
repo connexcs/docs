@@ -90,7 +90,7 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 
 + **Timeout**: Set how long the script may run.
 
-+ **VARS (TML)**: Set variables to be passed into the select ScriptForge script.
++ **VARS [(TOML)](https://en.wikipedia.org/wiki/TOML)**: Set variables to be passed into the select ScriptForge script.
 
 ### Locks
 
