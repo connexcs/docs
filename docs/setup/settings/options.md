@@ -17,4 +17,5 @@ Configure **Options** to set key default behaviors for the system. Click **`Edit
 |Invoice Line Grouping|Find whether generated invoices display one line per day or one line per destination.|
 |Internal Number Range Start and Block Size|Set the system-wide default start and range of private number blocks, which are then assigned to customers (per configuration instructions **[here](https://docs.connexcs.com/customer/main/#internal-number-block)**). Ex: You can set the Start field to 1000, and the Size to 1000. The first number block assigned to a customer ranges from 1000–1999. The next customer receives the range 2000–2999, etc.|
 |Auto Logout|System will log out a user after timing out.|
-|Hybrid Menu Only|When ConnexCS is used in Hybrid mode, this option hides unavailable items from the menu.|
+|Hybrid Menu Only|When ConnexCS is used in Hybrid mode, this option hides unavailable items from the menu.
+Smart loading of grids(tables)|When a huge volume of data
