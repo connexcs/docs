@@ -28,7 +28,7 @@ For inbound APIs, please see the in the Architecture documentation.
 
 **2.** Select the required service from the list.
 
-    ![alt text](D:\f drive\ConnexCS\connexcs-user-docs-1\docs\setup\img\api.png)
+![Alt text](../img/api.png)
 
 **3.** Complete the available fields (see individual API integrations below for details for each provider).
 
@@ -75,7 +75,7 @@ Enter the PayPal credentials into your account.
 
 **4.** Copy the **API Username**, **API Password**, and **Signature** credentials from this page into the open PayPal form in ConnexCS.
 
-    ![alt text](../../../img/paypal-9.png) 
+![Alt text](../img/paypal-9.png)
 
 **5. Currency**: Select one or more currencies that you will accept.
 
@@ -217,6 +217,3 @@ Configure the PayMongo Payment settings in ConnexCS:
 **3. Public Key** (Publishable) and **Private Key** (Secret)**: Access the [PayMongo API Reference Guide]([https://developers.paymongo.com/reference/getting-started-with-your-api](https://developers.paymongo.com/reference/getting-started-with-your-api)) to retrieve the Secret keys.
 
 **4. Currencies**: Select PHP (Philippine Peso) as the type of currency.
-
-[paypal-9]: /setup/img/paypal-9.png "Paypal-9"
-[api]: /setup/img/api.png "API Integration"
