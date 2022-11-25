@@ -23,17 +23,21 @@ Once you create a new **Routing Strategy**, assign it to a customer account.
 
 **Step 1: Add Routing Strategy**
 
-1. In the **Routing Strategy** screen, click :material-plus:.
-2. Name the strategy.
-3. Select the Strategy type (as defined in Types of Routing Strategies section).
+**1.** In the **Routing Strategy** screen, click :material-plus:.
 
-    ![alt text][routing-strategy2]
+**2.** Name the strategy.
 
-4. Click :material-plus: to add one or more row(s).
-5. Select a card from the drop-down list.
-6. Click **`Save`**.
+**3.** Select the Strategy type (as defined in Types of Routing Strategies section).
 
-    ![alt text][routing-strategy3]
+![Alt text](misc/img/routing-1.png)
+
+**4.** Click :material-plus: to add one or more row(s).
+
+**5.** Select a card from the drop-down list.
+
+**6.** Click **`Save`**.
+
+![Alt text](misc/img/routing-2.png)
 
 **Step 2: Assign Routing Strategy to a Customer**
 
@@ -67,8 +71,4 @@ You can also block a call using routing strategy. To block a call follow the ste
 
 **5.** Click **`Save`**.
 
-    ![alt text][routing-drop]
-
-[routing-strategy2]: /misc/img/routing-1.png "Routing Strategy"
-[routing-strategy3]: /misc/img/routing-2.png "Routing with Card"
-[routing-drop]: /misc/img/routing-drop.png "Blocking Calls"
+![Alt text](misc/img/routing-drop.png)
