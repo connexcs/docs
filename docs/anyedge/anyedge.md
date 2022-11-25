@@ -44,8 +44,11 @@ NAT (Network Address Translation) is a technique that intermediates communicatio
 When a packet traverses NAT, the UDP packet headers are correctly rewritten by your NAT device, but the headers in the SIP packet are often not rewritten. Here are some ways that AnyEdge facilitates these SIP rewrites:
 
 **1.** Hardcode the external IP Address.
+
 **2.** Session Traversal Utilities for NAT (STUN) to find the external IP address.
+
 **3.** SIP (Session Initiation Protocol) and ALG (Application Layer Gateway).
+
 **4.** Far End NAT Traversal.
 
 We can use any of the following indicators to detect if NAT is present in the UAC.
