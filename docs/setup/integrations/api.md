@@ -25,11 +25,13 @@ For inbound APIs, please see the in the Architecture documentation.
 ## Enable API Integration
 
 **1.** Click **`Add`**.
+
 **2.** Select the required service from the list.
 
-    ![alt text][api]
+    ![API](/setup/img/api.png)
 
 **3.** Complete the available fields (see individual API integrations below for details for each provider).
+
 **4.** Click **`Save`**.
 
 !!! info "API Service Details"
@@ -56,21 +58,29 @@ Use this comparison chart to decide between Mass Pay and Express Checkout with P
 Enter the PayPal credentials into your account.
 
 **1.** Select **`Add`** and then select **PayPal**.
-**2. Mode**: Use `Test` for testing connections or `Live` for an active account.
-**3.** To find your **Username**, **Password**, and **Signature**:
-    + To access your PayPal account, navigate to **Settings :material-menu-right: Account Settings :material-menu-right: Account Access**.
-    + For **API Access**, click **`Update`**.
-    + In the **NVP/SOAP API Integration (Classic)** section, select **Manage API Credentials**.
-  
-       *(NVP: Name-Value Pair; SOAP: Simple Object Access Protocol)*
 
-    + Select **Request API Signature**, and then click **`Agree and Submit`**.
+**2. Mode**: Use `Test` for testing connections or `Live` for an active account.
+
+**3.** To find your **Username**, **Password**, and **Signature**:
+
+    **3.1.** To access your PayPal account, navigate to **Settings :material-menu-right: Account Settings :material-menu-right: Account Access**.
+  
+    **3.2.** For **API Access**, click **`Update`**.
+    
+    **3.3.** In the **NVP/SOAP API Integration (Classic)** section, select **Manage API Credentials**.
+
+       *(NVP: Name-Value Pair; SOAP: Simple Object Access Protocol)*
+       
+    **3.4.** Select **Request API Signature**, and then click **`Agree and Submit`**.
+
 **4.** Copy the **API Username**, **API Password**, and **Signature** credentials from this page into the open PayPal form in ConnexCS.
 
-    ![alt text][paypal-9]
+    ![paypal-9](/setup/img/paypal-9.png)
 
 **5. Currency**: Select one or more currencies that you will accept.
+
 **6. Deduct Payment Fees**: Set whether you will deduct the fees or not.
+
 **7.** Click **`Save`**.
 
 ## PayPal IPN Integration
@@ -87,11 +97,11 @@ Steps to configure IPN:
 
 **1.2.** Update the following:
 
-    + **IPN URL**: You should never modify this; it's required later to complete the integration.
-    + **Payment Type**: Select "Mass Pay" (described above) or "Send Money" (fees may apply).
-    + **Verify Transaction**: If selected, ConnexCS will check with PayPal to make sure the transaction is correct.
-    + **Currency**: Select one or more currencies that you will accept.
-    + **Deduct Payment Fees**: Set whether you will deduct the fees or not.
++ **IPN URL**: You should never modify this; it's required later to complete the integration.
++ **Payment Type**: Select "Mass Pay" (described above) or "Send Money" (fees may apply).
++ **Verify Transaction**: If selected, ConnexCS will check with PayPal to make sure the transaction is correct.
++ **Currency**: Select one or more currencies that you will accept.
++ **Deduct Payment Fees**: Set whether you will deduct the fees or not.
 
 **1.3.** Click **`Save`**.
 
