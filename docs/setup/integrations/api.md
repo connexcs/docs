@@ -28,7 +28,7 @@ For inbound APIs, please see the in the Architecture documentation.
 
 **2.** Select the required service from the list.
 
-    ![alt text][api] 
+    ![alt text](D:\f drive\ConnexCS\connexcs-user-docs-1\docs\setup\img\api.png)
 
 **3.** Complete the available fields (see individual API integrations below for details for each provider).
 
@@ -75,7 +75,7 @@ Enter the PayPal credentials into your account.
 
 **4.** Copy the **API Username**, **API Password**, and **Signature** credentials from this page into the open PayPal form in ConnexCS.
 
-    ![alt text][paypal-9] 
+    ![alt text](../../../img/paypal-9.png) 
 
 **5. Currency**: Select one or more currencies that you will accept.
 
