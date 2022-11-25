@@ -22,7 +22,7 @@ By clicking on + button we can add customer (see [**Create Customers**](https://
 3. Right-click on each column to **Map Columns** to appropriate fields.
 4. Once you have filled out all of the required fields, click **Upload to Server**.
 
-!!! note "Before uploading the .csv file, please ensure that it does not contain any exponential or scientific notations.<br>The inclusion of the notations will result in errors."
+!!! note "1. Before uploading the .csv file, please ensure that it does not contain any exponential or scientific notations.<br>The inclusion of the notations will result in errors.<br>2. You must include the **Customer name** and **Currency** as necessary columns in the.csv file for bulk uploading.
 
 **Bulk Edit**: Select multiple customers, then click **Bulk Edit** to modify fields such as Channels, Status, Flow Speed (CPS), Portal Access, and Country.
 
