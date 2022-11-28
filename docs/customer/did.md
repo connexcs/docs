@@ -63,6 +63,7 @@ For more details on these fields, see [**Media in Customer Routing**](https://do
   + 25% Sampling
   + 50% Sampling
   + Enabled (Always On)
+  
 + **Timeout**: Set various options to help with call timeout for missed BYEs.
 + **Max Duration**: Set the maximum amount of time (in seconds) to allow the call to exist before it's terminated, typically in the case of a missed BYE.
 
