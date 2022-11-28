@@ -29,9 +29,9 @@ _Field details:_
 
 + **CLI**: To allow the required CLIs, enter the required number or a regular expression (to match and replace).
 
-+ **Pre-Asserted-ID**: To allow the required Pre-Asserted-Identities (PAID), enter the required number or a regular expression to match or replace.
-
 + **Rewrite CLI**: A CLI can be rewritten. For example, you can add `123456789` in the CLI box and then rewrite by adding `987654321` in the rewrite CLI box. (For more advanced CLI manipulation, see [**Advanced CLI Match & Manipulation**](/customer/cli/#advanced-cli-match-manipulation) below.)
+
++ **Pre-Asserted-ID**: To allow the required Pre-Asserted-Identities (PAID), enter the required number or a regular expression to match or replace.
 
 + **Rewrite P-Asserted-ID**: This is a SIP Header similar to the FROM header but classified as a private, or network-level identifier. Telephone companies use it to identify call originators, but then it's stripped at the call server, so the client end-points only see the FROM field. This is especially helpful when callers obscure their CLI / FROM information, as the network level still requires origination details. The **P-Asserted-ID** manipulation uses the same syntax as the Replace CLI.
 
