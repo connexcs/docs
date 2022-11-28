@@ -54,13 +54,15 @@ For more details on these fields, see [**Media in Customer Routing**](https://do
     :material-menu-right: `Direct RTP (no proxy)`- Bypass ConnexCS, so media flows directly between the customer and carrier.
 
     :material-menu-right: `Zone (recommended)`- Select any of the regional servers.
+
 + **Call Recording**: Select the percent of calls to record for this customer
-  + Disabled- never record calls
-  + 1% Sampling
-  + 5% Sampling
-  + 25% Sampling
-  + 50% Sampling
-  + Enabled (Always On)
+  
+  1. Disabled- never record calls
+  2. 1% Sampling
+  3. 5% Sampling
+  4. 25% Sampling
+  5. 50% Sampling
+  6. Enabled (Always On)
   
 + **Timeout**: Set various options to help with call timeout for missed BYEs.
 + **Max Duration**: Set the maximum amount of time (in seconds) to allow the call to exist before it's terminated, typically in the case of a missed BYE.
