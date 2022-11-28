@@ -286,7 +286,7 @@ Use **CLI Restrict** to allow CLIs to pass through a specific provider. To allow
 
 **3.** Select **Properties :material-menu-right: Advanced**.
 
-**4.** Enter the CLIs / ANIs you want to allow in the **CLI Restrict** box.
+**4.** Enter the CLIs / ANIs you want to allow in the [**CLI Restrict**](https://docs.connexcs.com/provider-ratecard/#advanced) box.
 
 **5.** Click **`Save`**.
 
