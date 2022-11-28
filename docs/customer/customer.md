@@ -15,6 +15,8 @@ On the **Customers** page, you can perform several management operations.
 
 By clicking on + button we can add customer (see [**Create Customers**](https://docs.connexcs.com/customer/customer/#create-customers) below for details.)
 
+**Refresh**: Refreshing the page, helpful when making edits or looking at real-time changes. This page is built as a web app, so some information will update automatically.  
+
 **Bulk Upload**: Upload multiple Customers at the same time, by importing a spreadsheet file (.csv file) into ConnexCS.
 
 1. Click `Bulk Upload`, then `Upload`, find your customer file, and then click **`Open`**.
@@ -25,8 +27,6 @@ By clicking on + button we can add customer (see [**Create Customers**](https://
 !!! note "1. Before uploading the .csv file, please ensure  that it does not contain any exponential or scientific notations.<br>The inclusion of the notations will result in errors.<br>2. You must include the **Customer name** and **Currency** as necessary columns in the.csv file for bulk uploading."
 
 **Bulk Edit**: Select multiple customers, then click **Bulk Edit** to modify fields such as Channels, Status, Flow Speed (CPS), Portal Access, and Country.
-
-**Refresh**: Refreshing the page, helpful when making edits or looking at real-time changes. This page is built as a web app, so some information will update automatically.  
 
 **Delete**: Delete multiple customers at a time.
 
