@@ -10,7 +10,7 @@ All Customer Monitoring is found in **Management :material-menu-right: Customer 
 
 **:material-menu-right: Route Stats**
 
-> **Route Stats** displays Channel, Channel Breach, and Cyber-physical systems (CPS) Breach data based on individual routes. 
+> **Route Stats** displays Channel, Channel Breach, and Calls Per Second (CPS) Breach data based on individual routes. 
 
 **:material-menu-right: Latest Calls**
 
