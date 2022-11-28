@@ -16,7 +16,7 @@ Click the :material-plus: button to set the following:
 
 + **User Account Control (UAC) Test (NAT)**: Select the method used to detect whether NAT is in use. See [**Far-End NAT Traversal**](https://docs.connexcs.com/anyedge/anyedge/#far-end-nat-traversal) for details.
 + **Algorithm**: How to distribute calls. See [**Inbound Proxy / Dispatcher / Load Balancer**](https://docs.connexcs.com/anyedge/anyedge/#inbound-proxy-dispatcher-load-balancer) for details.
-+ **Cyber-Physical System (CPS)**: Total calls per second allowed. See [**Metrics**](https://docs.connexcs.com/anyedge/anyedge/#metrics) for details.
++ **Calls per Second (CPS)**: Total calls per second allowed. See [**Metrics**](https://docs.connexcs.com/anyedge/anyedge/#metrics) for details.
 + **Insertion**: Set whether the server acts 'Stateless' (no reply needed) or 'Transactional' (waits for a reply).
 + **Validate**: Find the checks to use, if any. For example, a Basic Check will verify if all the fields are correctly formed, or else the packet is rejected (protecting from attacks such as buffer overflow). Select one or more checks to validate those fields. See [**SIP Packet Validation**](https://docs.connexcs.com/anyedge/anyedge/#sip-packet-validation) for details.
 + **Compress In**: Select method(s) to compress inbound data, not only for lower bandwidth use but also to avoid User Datagram Protocol (UDP) fragmentation. See [**Compaction & Compression**](https://docs.connexcs.com/anyedge/anyedge/#compaction-compression) for details.
