@@ -55,7 +55,7 @@ For more details on these fields, see [**Media in Customer Routing**](https://do
 
     :material-menu-right: `Zone (recommended)`- Select any of the regional servers
 
-+ **Call Recording**: Select the percent of calls to record for this customer
++ **Call Recording**: Select the percent of calls to record for this customer:
   
   + Disabled- never record calls
   + 1% Sampling
@@ -68,7 +68,7 @@ For more details on these fields, see [**Media in Customer Routing**](https://do
 
 ### Billing
 
-Select a predefined **Package** to determine costs and billing. This will decrement Frequency Match and Setup Cost against that package for the account.
+Select a predefined [**Package**](https://docs.connexcs.com/customer/package/) to determine costs and billing. This will decrement Frequency Match and Setup Cost against that package for the account.
 
 ### Advanced
 
