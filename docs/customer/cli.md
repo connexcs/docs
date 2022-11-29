@@ -260,7 +260,7 @@ If we want to use the CLI in the Pre-Asserted-Identity it's a little easier as w
 
 This will BLOCK all USA Freephone numbers
 
-^ ((?!^1(800|833|844|855|866|877|888)).)*$
+```^ ((?!^1(800|833|844|855|866|877|888)).)*$```
 
 ### Additional Examples
 
