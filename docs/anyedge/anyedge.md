@@ -35,7 +35,7 @@ Click :material-plus: button to specify the Destination IP and one or more Limit
 
 ## Capabilities
 
-The ConnexCS **AnyEdge** load balancer is a high-performance application. It is designed for utmost throughput using multiple cores. Combined with global PoPs and detailed metrics, we’ve got you covered even if you have requirements that exceed 10K calls per second.
+The ConnexCS **AnyEdge** load balancer is a high-performance application. It is designed for maximum throughput using multiple cores. Combined with global PoPs and detailed metrics, we’ve got you covered even if you have requirements that exceed 10K calls per second.
 
 ### Far End NAT (Network Address Translation) Traversal
 
@@ -63,7 +63,7 @@ You can use any of the following indicators to detect if NAT is present in the U
 
 ### Inbound Proxy / Dispatcher / Load Balancer
 
-The primary use case for **AnyEdge** is to disseminate calls to a pool of SIP Servers. Configure the servers using the following call strategies:
+The primary use case for **AnyEdge** is to distribute calls to the SIP Servers. You can use the following algorithms to distribute the calls:
 
 + Hash over callid.
 + Hash over from uri.
@@ -106,7 +106,7 @@ If a packet fails to validate, you can choose how to handle it. You can handle t
 + No "Cseq" header.
 + No "From" header.
 + No "To" header.
- No "Via" header.
++ No "Via" header.
 + Request URI parse error.
 + Bad hostname in "R-URI."
 + No "Max-Forwards" header.
