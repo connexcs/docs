@@ -1,4 +1,4 @@
-# DID
+# Direct Indirect Dial (DID)
 
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: DID**
 
@@ -43,11 +43,11 @@ Set the maximum number of INBOUND concurrent calls in **Channels**, and Calls Pe
 
 For more details on these fields, see [**Media in Customer Routing**](https://docs.connexcs.com/customer/routing/#media).
 
-+ **RTP Proxy Mode**: If a connection via our service fails and relaxed is selected, it will automatically failover to backup.
++ **RTP Proxy Mode**: If relaxed is chosen and a connection through our service fails, it will automatically failover to backup.
 
     :material-menu-right: `Strict`- This will enforce the proxy engagement.
 
-    :material-menu-right: `Relaxed`- This will make every effort to connect to the RTP proxy; if it cannot, the calls will connect directly.
+    :material-menu-right: `Relaxed`- This will make every effort to connect to the RTP proxy; if it can't, the calls will connect directly.
 
 + **RTP Media Proxy**: The **recommended** RTP Media Proxy server is the **Closest (Elastic) Server**. The following options allow you to set the RTP media server for this route for this customer:
 
@@ -65,7 +65,7 @@ For more details on these fields, see [**Media in Customer Routing**](https://do
   6. Enabled (Always On)
   
 + **Timeout**: Set various options to help with call timeout for missed BYEs.
-+ **Max Duration**: Set the maximum amount of time (in seconds) to allow the call to exist before it's terminated, typically in the case of a missed BYE.
++ **Max Duration**: Set the maximum amount of time (in seconds) to allow the call to exist before it's terminated, typically in case of a missed BYE.
 
 ### Billing
 
@@ -96,7 +96,7 @@ For batches of DIDs, you can use Bulk Upload to add multiple DIDs at one time us
 **3.** From the second row on, add the values of the input fields, one row per DID.
 
 !!! tip "Tips for creating the CSV file"
-    Steps to take to ensure that the next step goes smoothly are:
+    Steps to take to ensure that the next steps are peformed efforlessly:
     * The CSV file must contain only one sheet.
   
     * Include as many fields as you can when creating your columns to leverage the benefits of the bulk upload feature.
@@ -124,9 +124,9 @@ Step 2: Upload the CSV to ConnexCS
 **4.** Assign the input fields to the column headers in the CSV file.
 
 + Right-click the top row of data and select "Set Start Row".
-+ Right-click any value in the DID column and click "Map Column" > "DID".
++ Right-click any value in the DID column and click "Map Column" > "DID."
 
-+ If the rest of the input fields match the Control Panel column headers, then you can upload the DID numbers to the server. If not, you should map the rest of the columns. To map, right-click and then select the corresponding headers the in "Map Column".
++ If the rest of the input fields match the Control Panel column headers, then you can upload the DID numbers to the server. If not, you should map the rest of the columns. To map, right-click and then select the corresponding headers the in "Map Column."
 
 + (Optional) If you want to change a value in a column that represents a drop-down list, click the cell and enter a different value in the drop-down list.
 
@@ -138,7 +138,7 @@ Step 2: Upload the CSV to ConnexCS
   
 **1.** Click **Upload to Server**, and confirm the pop-up.
 
-**2.** At this point, the DIDs and associated values are uploaded to the server. If there are any duplicate DIDs in the system, the entire operation will fail. The Control Panel doesn't have the ability to indicate which DID is the duplicate, so you will need to review the DIDs independently.
+**2.** The DIDs and associated values are now uploaded to the server. If there are any duplicate DIDs in the system, the entire operation will fail. The Control Panel doesn't have the ability to specify which DID is the duplicate, so you will need to review the DIDs independently.
 
 See [**Script Forge**](https://docs.connexcs.com/developers/scriptforge/) for more information.
 
