@@ -17,14 +17,14 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 
 + **Rate Card**: Also known as Tariff, this allows you to select the rate card used on a customer's account. You can handle these calls in the following 3 ways:
 
-  + Internal: Send a call to the ConnexCS Class5 (Voice Mail, Interactive Voice Response (IVR), etc.). If selected, the "Auto" option becomes available, which will generate dial strings from all possible internal extensions.
-  + Extension: (uses SIP users in Customer > Auth configured SIP Users) Send a call to a Session Initiation Protocol (SIP) Authenticated user on the account.
-  + Customer IP: (uses IPs in Customer > Auth configured IPs) Send a call from an agent back to the customer's Private Branch eXchange (PBX), using either the Tech Prefix (Ex: #9) or a Dial String (Ex: `^[0-9](4)$`).
-  + To Carriers: Choose a carrier to send the call to a location outside of the ConnexCS system.
+  + **Internal**: Send a call to the ConnexCS Class5 (Voice Mail, Interactive Voice Response (IVR), etc.). If selected, the "Auto" option becomes available, which will generate dial strings from all possible internal extensions.
+  + **Extension**: (uses SIP users in Customer > Auth configured SIP Users) Send a call to a Session Initiation Protocol (SIP) Authenticated user on the account.
+  + **Customer IP**: (uses IPs in Customer > Auth configured IPs) Send a call from an agent back to the customer's Private Branch eXchange (PBX), using either the Tech Prefix (Ex: #9) or a Dial String (Ex: `^[0-9](4)$`).
+  + **To Carriers**: Choose a carrier to send the call to a location outside of the ConnexCS system.
 
-+ **Tech Prefix**: This lets you distinguish a route from an inbound party. When multiple customers share the same IP address, each customer needs an individual Tech Prefix so the switch can route calls correctly. It enables service providers to separate multiple rate cards.
++ **Tech Prefix**: This lets you distinguish a route from an inbound party.<br>When multiple customers share the same IP address, each customer needs an individual Tech Prefix so the switch can route calls correctly.<br>It enables service providers to separate multiple rate cards.
 + **Dial String Prefix Set**: Helpful for commonly used sets of prefixes. Rather than entering a complete list of prefixes for the UK, for example, you can create a predefined Prefix Set (defined under **Setup :material-menu-right: Advanced :material-menu-right:** [**Prefix Set**](/setup/advanced/prefix-set/)) and then select it here for appropriate customers.
-+ **Dial String**: Only lets a dialled number through if it matches the defined dial string (or "dial pattern") (If nothing is entered, it will match everything and attempt to send all calls). This doesn't work if you have more than one Rate Card as the system won't know which one to use.) Each prefix is listed once per line, both prefixes and regular expressions are allowed:
++ **Dial String**: Only lets a dialled number through if it matches the defined dial string (or "dial pattern") (If nothing is entered, it will match everything and attempt to send all calls). <br>This doesn't work if you have more than one Rate Card as the system won't know which one to use).<br> Each prefix is listed once per line, both prefixes and regular expressions are allowed:
 
     Prefix
 
@@ -48,15 +48,15 @@ View and configure existing routes on the Routing tab in the Customer card. To c
     ```
 
 !!! warning "Using Rate Cards for multiple countries"
-    Ingress Routing isn't independently aware of the card type you are using or,  more specifically, the appropriate dial strings it needs to send. For example, if you are using both UK and US cards, you need to enter appropriate dial strings in the routes you set up for each card type.
+    Ingress Routing isn't independently aware of the card type you are using or,  more specifically, the appropriate dial strings it needs to send.<br>For example, if you are using both UK and US cards, you need to enter appropriate dial strings in the routes you set up for each card type.
 
 + **Enabled**: The route can be easily enabled and [disabled](https://docs.connexcs.com/customer/routing/#disabled-routes) here.
 
 ### Price Limits
 
-+ **Capped Rate** and **Provider Capped Rate**: Set the maximum cost of a call. Calls that exceed the set rate won't be connected. Ex: For customers with flat rate accounts, which are allowed to dial all UK numbers but premium numbers, you would set the Provider Capped Rate at 0.01, so any call that the provider might charge over that amount would not be completed.
++ **Capped Rate** and **Provider Capped Rate**: Set the maximum cost of a call. Calls that exceed the set rate won't be connected.<br>For example, for customers with flat rate accounts, which are allowed to dial all UK numbers but premium numbers, you would set the Provider Capped Rate at 0.01, so any call that the provider might charge over that amount would not be completed.
 
-+ **Profit Assurance**: When `Enabled`, only calls that are profitable will be allowed; any call that costs more than the retail rate won't be allowed to complete. This is particularly useful for A-Z routes or NPA-NXX [rate cards](https://docs.connexcs.com/rate-card-building/). Keep in mind that enabling this adds additional Post-dial delay (PDD) to the call.
++ **Profit Assurance**: When `Enabled`, only calls that are profitable will be allowed; any call that costs more than the retail rate won't be allowed to complete. This is particularly useful for A-Z routes or NPA-NXX [rate cards](https://docs.connexcs.com/rate-card-building/). <br>Keep in mind that enabling it adds additional Post-dial delay (PDD) to the call.
 
 + **Block Connect Cost**: Block any call that has a connection fee.
 
@@ -70,17 +70,20 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 
 !!! info "Call Timeouts"
     A VoIP call is stateful, even though its protocol is stateless. This means that both sides of the conversation must be told when to finish the call. They do this with a BYE message. If the BYE message goes missing, the call will continue forever.
-    Max Duration is a method for setting up **Missing BYE Protection**.  Another approach is to use a **SIP Ping** to determine when the connection has timed out. This sends a SIP packet to the remote end of the conversation roughly every 30 seconds. This checks to see if the other side is still aware of an ongoing conversation. If it does not receive a response or is told that the conversation is not active, it disconnects the call. **RTP Time-out:** this is another way to check for an active call based on whether audio is passing. If there is no audio passing for a pre-set interval, our Real-time Transport Protocol (RTP) array will notify the switch and instruct it to end the call. This won't work if RTP Mode is set to direct.
+    **Max Duration** is a method for setting up **Missing BYE Protection**. Another approach is to use a **SIP Ping** to determine when the connection has timed out. This sends a SIP packet to the remote end of the conversation roughly every 30 seconds. This checks to see if the other side is still aware of an ongoing conversation. If it does not receive a response or is told that the conversation is not active, it disconnects the call.
+    **RTP Time-out:** This is another way to check for an active call based on whether audio is passing. If there is no audio passing for a pre-set interval, our Real-time Transport Protocol (RTP) array will notify the switch and instruct it to end the call. This won't work if RTP Mode is set to direct.
 
 !!! warning "Asterisk pings"
     Asterisk doesn't have SIP Ping (OPTIONS) enabled by default. If your customer / carrier is using Asterisk, you may need to disable this if they don't have it enabled on their side, as calls will typically disconnect after 30 seconds.
 
 + **Flow Speed (CPS)**: Limits the calls per second. This must be set for each customer card assigned to the customer account.
 
-+ **CPS Spike Buffer**: Limit a spike of calls by spreading them over a longer period of time. This essentially manages a large volume of calls over a short period of time. Once the buffer limit is reached, the calls per second kick in, distributing the spike of calls.
++ **CPS Spike Buffer**: Limit a spike of calls by spreading them over a longer period of time. This essentially manages a large volume of calls over a short period of time. 
+  Once the buffer limit is reached, the calls per second kick in, distributing the spike of calls.
 
 !!! note "CPS Buffering"
-    **CPS Buffering**: Used to manage large volumes of calls over a short period of time. This process maximises saturation and increases call completion within a given CPS restriction. It does this by removing spikes and borrowing capacity from future seconds. If incoming traffic exceeds your pre-set CPS, it holds the call for one second and then tries again. You can increase the second count in the CPS Spike Buffer field. Changing the CPS Buffering value only affects calls that exceed the CPS. The delay will show as increased PDD on the call, each second the system will emit a 100 Trying (High CPS, Buffering) response to indicate the status/progress of the call.
+    **CPS Buffering**: Used to manage large volumes of calls over a short period of time. This process maximises saturation and increases call completion within a given CPS restriction. It does this by removing spikes and borrowing capacity from future seconds.
+    If incoming traffic exceeds your pre-set CPS, it holds the call for one second and then tries again. You can increase the second count in the CPS Spike Buffer field. Changing the CPS Buffering value only affects calls that exceed the CPS. The delay will show as increased PDD on the call, each second the system will emit a 100 Trying (High CPS, Buffering) response to indicate the status/progress of the call.
 
 + **ASR Plus** assists capacity management by helping you define how to handle connections for known failed numbers. For information on the ASR Plus options, see [**ASR Plus Details**](https://docs.connexcs.com/customer/routing/#asr-plus-details) below.
 
@@ -98,6 +101,9 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 
 + **Lock** (Allow): One or more rate cards from the list of available providers.
 + **Exclude** (Deny): Exclude access to one or more rate cards in the list of available providers.
++ **DNC List**: It is a **Do Not Call** list. The customer will not be able to able to dial the numbers in the specified DNC list.<br> You can add the list of numbers in the [**Database**](https://docs.connexcs.com/developers/database/).
++ **Block Destination Type**: You can select and block the calls to various destinations (carriers) like Mobile, Fixed, Paging etc.
++ **Spam Scout Scoring**: It blocks the Spam calls based on the CLIs. <br> You can either Block All, Allow All, Block Most Spam, or Block Least Spam.
 
 !!! tip "Exclude Use Case"
     If a customer reports an issue with a carrier or route, you can come here and set the carrier / route to Exclude and **`Save`**, then come back and remove it, and do a **`Delay and Save`** for a later date.
