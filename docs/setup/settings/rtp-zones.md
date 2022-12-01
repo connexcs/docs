@@ -14,8 +14,8 @@ RTP Zones allow you to change the zone in case of any change of location.
 
 **3.** A dialog will box will open with various Zone options.  
 
-![Alt text](../../../../Images/rtp%20zones.jpg)
+![RTP zones](/setup/img/rtpzones.jpg)
 
 !!! tip "The recommended **RTP Media Proxy**" is **Closest (Elastic) Server**.<br>If in case any media issue occurs and Closest (Elastic) Server is not working properly, then you can enable RTP Zones and select it accordingly."
 
-![Alt text](../../../../Images/rtp%20zones1.jpg)
+![RTP Zones1](/setup/img/rtpzones1.jpg)
