@@ -54,6 +54,8 @@ _Field details:_
 
 + **Use DID**: Pull in DIDs from the customer's account to use either as a Filter or as a Replacement.  
 
++ **Dialed Number Match**: To route to a specific CLI, dialied match number is used. For example, if Dialied matched number is starting with **1**, the CLI is routed to 11111.<br> The CLI can be a Regular Expression also.
+
 &emsp;![alt text][edit-cli]
 
 Click **`Save`** to complete the CLI configuration.
