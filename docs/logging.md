@@ -73,6 +73,8 @@ Since SIP protocol is used for call setup, maintenance, and tear-down, this tool
 
 Call quality issues are often identified using other methods.
 
+![sip trace](/logging/sipserver.jpg)
+
 !!! info "SIP Trace Captures"
     The **ConnexCS** system supports always-on **SIP Trace** capture. We keep a record of every packet sent and received by your server over the last seven (7) days.
 
