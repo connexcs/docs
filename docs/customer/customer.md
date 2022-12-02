@@ -80,7 +80,7 @@ By clicking on + button we can add customer (see [**Create Customers**](https://
     + **Website:** The customer's website address.
     + **Portal Access:** It allows you to **Show** and **Hide** parameters like Balance, CDR, Breakout etc on your customer portal. 
     + **Tags**: Use this to add meta-data identifiers to a customer. If a customer routing is created using a template from [**Global Routing**](https://docs.connexcs.com/global-routing/), this will be the tag configured in the template.
-    + **TOML**: This is a data storage mechanism for configuration, similar to [INI files](https://en.wikipedia.org/wiki/INI_file). It allows you to create advanced customization to set values, etc, for Script Forge to reference later. 
+    + [**TOML**](https://en.wikipedia.org/wiki/TOML): This is a data storage mechanism for configuration, similar to INI files. It allows you to create advanced customization to set values, etc, for Script Forge to reference later. 
     + **Reseller**: Associate the customer to a preset Reseller Group (see [**Create Groups**](https://docs.connexcs.com/setup/settings/users/#create-groups) for more details.)
     + **Invoice Schedule**: Specify frequency for invoice generation. 
     + **Invoice Due Days**: Set the allowed number of days past the due date that the invoice can go unpaid. 
