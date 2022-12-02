@@ -31,7 +31,7 @@ For example, if account is unpaid, the Status lists the server as "Expired")
 
 ## Clusters
 
-If you have various servers in a load-balance configuration, we recommend putting them into a Cluster.
+If you have multiple servers in a load-balance configuration, we recommend putting them into a Cluster.
 
 To create a **Cluster**, click **`Cluster`**, and then click **:material-plus:** to enter the name.
 
@@ -54,7 +54,7 @@ RTP servers operate independently of your server.
 
 For example, if your server is located in London, you can choose to run your media in New York (if, for example, you have customers there).
 
-Each regional zone encompasses various servers to provide high availability.
+Each regional zone encompasses multiple servers to provide high availability.
 
 To view RTP Servers:
 
@@ -190,13 +190,13 @@ Once a user registers via UDP, the connection is verified once again.
 ### Deployment Options
 
 **1. Single Server**: No additional configuration is needed for a single server.
-**2. Server Array**: For various servers, decide whether users registered to *Server A* can call users on *Server B*. If so, set the **UAC Location Array Sharing** option (found under [**Server Config**](https://docs.connexcs.com/setup/settings/servers/#server-config)) for the servers which will make the registrations.
+**2. Server Array**: For multiple servers, decide whether users registered to *Server A* can call users on *Server B*. If so, set the **UAC Location Array Sharing** option (found under [**Server Config**](https://docs.connexcs.com/setup/settings/servers/#server-config)) for the servers which will make the registrations.
 **3. Server Cluster**: Servers in a cluster share all user location registrations. This is the best solution for scaling to thousands of registrations.
 
 !!! note "You won't be able to route calls to users registered against any servers outside the cluster."
 
 !!! tip "Ping Overhead"
-    Due to design constraints that occur with various servers in an array, NAT Keep Alive Pings can be quite intensive. You could use *Disable UAC Ping* from the server page, upgrade to a cluster, or use a single registration server to solve this.
+    Due to design constraints that occur with multiple servers in an array, NAT Keep Alive Pings can be quite intensive. You could use *Disable UAC Ping* from the server page, upgrade to a cluster, or use a single registration server to solve this.
 
     More intricate measures can be arranged on a case-by-case basis.
 
