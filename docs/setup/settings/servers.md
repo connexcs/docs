@@ -114,7 +114,7 @@ For example, if the CPS or Channels reaches their limits, the next calls are blo
 + **UDP, TCP, TLS Ports**: Specify port(s) for each protocol including the protocol default.
 For example, to avoid firewall rules or ISP restrictions).
 
-!!! note "Whenever any of the above settings are modified, it is recommended to hit the **Install Server**"
+!!! note "Whenever any of the above settings are modified, it's recommended to hit the **Install Server**"
 
 ### Certificates
 
