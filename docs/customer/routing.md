@@ -37,26 +37,14 @@ View and configure existing routes on the Routing tab in the Customer card. To c
   This doesn't work if you have more than one Rate Card as the system won't know which one to use).
   Each prefix is listed once per line, both prefixes and regular expressions are allowed:
 
-    Prefix
+  **Prefix**
+  ```441 442```
 
-    ```bash
-    441 
-    442
-    ```
+  **Regular Expression (RegEx)**
+  ```^44(1|2)```
 
-    Regular Expression (RegEx)
-
-    ```bash
-    ^44(1|2)
-    ```
-
-    Combination (UK Landline & Canada)
-
-    ```bash
-    441
-    442
-    ^1(204|226|236|249|250|289|306|343|403|416|418|438|450|506|514|519|579|581|587|604|613|647|705|709|778|780|807|819|867|902|905)
-    ```
+  **Combination (UK Landline & Canada)**
+  ```441 442 ^1(204|226|236|249|250|289|306|343|403|416|418|438|450|506|514|519|579|581|587|604|613|647|705|709|778|780|807|819|867|902|905)```
 
 !!! warning "Using Rate Cards for multiple countries"
     Ingress Routing isn't independently aware of the card type you are using or,  more specifically, the appropriate dial strings it needs to send.
@@ -84,7 +72,9 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 
 !!! info "Call Timeouts"
     A VoIP call is stateful, even though its protocol is stateless. This means that both the sides should be informed on finishing of the call. They do this with a BYE message. If the BYE message goes missing, the call will continue forever.
+
     **Max Duration** is a method for setting up **Missing BYE Protection**. Another approach is to use a **SIP Ping** to determine when the connection has timed out. This sends a SIP packet to the remote end of the conversation every 30 seconds. This checks to see if the other side is still aware of an ongoing conversation. If it does'nt receive a response or informed that the conversation is not active, it disconnects the call.
+    
     **RTP Time-out:** This is another way to check for an active call based on whether audio is passing. If there is no audio passing for a pre-set interval, our Real-time Transport Protocol (RTP) array will notify the switch and instruct it to end the call. This won't work if RTP Mode is set to direct.
 
 !!! warning "Asterisk pings"
@@ -106,7 +96,7 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 
 ### ScriptForge
 
-+ **ScriptForge**: Set a custom JavaScript to run from within the ConnexCS platform in-line with the call. Some example operations could be checking a Do Not Call list or forcing a CLI. 
++ **ScriptForge**: Set a custom JavaScript to run from within the ConnexCS platform in-line with the call. Some example operations could be checking a Do Not Call list or forcing a CLI.
   For more information about setup and operation, see the [**ScriptForge**](https://docs.connexcs.com/developers/scriptforge/) page.
 
 + **Timeout**: Set how long the script may run.
@@ -130,7 +120,7 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 
 ### Media
 
-+ **Transcoding**: Enter the number  of channels allowed for transcoding. This is a limited option. The best use case is for customers in low-bandwidth areas that want to use G.729. 
++ **Transcoding**: Enter the number  of channels allowed for transcoding. This is a limited option. The best use case is for customers in low-bandwidth areas that want to use G.729.
   Be aware that if you don't have enough transcoding capacity, calls will fail.
 + **SIP Ping**: Send regular pings to ensure both sides of a call are still up. `Enabled` is the recommended setting.
 
@@ -142,7 +132,7 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
     | **Enabled (Upstream Only)**    | SIP Pings sent towards where the call is TO (terminated) |
 
 + **SIP Session Timer (SST)**: SST is Passive by Default, but **Enabled** is the recommended setting.
-  When enabled, SST ensures there is no ghost or long-duration calls are billed when one or both sides have hung up. A timer activates when the call starts and refreshes the call every X number of seconds by sending a RE-INVITE. 
+  When enabled, SST ensures there is no ghost or long-duration calls are billed when one or both sides have hung up. A timer activates when the call starts and refreshes the call every X number of seconds by sending a RE-INVITE.
   SST has surpassed SIP Ping Timeout as the best way to prevent long-duration calls. Note that any SST shorter than sixty (60) seconds is rejected.
 
     |SST Option              | Result                                                                                           |
@@ -187,7 +177,7 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 
 *While it's doubtful that any information will be logged in the customer / providers switch when the audio is engaged, it's possible for an engineer to learn this information from a SIP trace, PCAP, or by looking at transit locations. DTMF Detection ONLY works when RTP Proxy mode is enabled.
 
-+ **Call Recording**: This allows you to record and store calls, which are then found in **Setup > Information > [Browsing Record](https://docs.connexcs.com/setup/information/recording/)**. 
++ **Call Recording**: This allows you to record and store calls, which are then found in **Setup > Information > [Browsing Record](https://docs.connexcs.com/setup/information/recording/)**.
   An extra charge per recorded call of $0.003 in addition to existing fees or charges, so choose carefully how many calls to record:
 
     :material-menu-right: `Disabled`- no calls are recorded
@@ -238,7 +228,7 @@ Using Tech Prefix with SIP User "Parameter Rewrites" allows for significant gran
 
 ## ASR (Answer Seizure Ratio) Plus Details
 
-ASR (Answer Seizure Ratio) is the number of connected calls divided by the total number of calls (represented as a %). 
+ASR (Answer Seizure Ratio) is the number of connected calls divided by the total number of calls (represented as a %).
 
 **ASR Plus** is a proprietary ConnexCS technology that filters known failed, non-existent / working numbers between the customer and the terminating, or destination, carrier. This is especially useful with larger call volumes. Unless it's turned off or customized otherwise, ASR+ is active for 90% of calls, which grants the opportunity for the database to be replenished.
 
