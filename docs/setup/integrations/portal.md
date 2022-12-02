@@ -9,7 +9,7 @@ The **Portal** lets you add domains and sub-domains to the Control Panel, which 
 **Step 1: Set up the CNAME record**
 
 1. Access your domain account at your domain host.
-2. Locate the page for updating your domain's DNS (Domain Name System) records. The page may be referred to as DNS Management, Name Server Management, or Advanced Settings.
+2. Locate the page for updating your domain's DNS (Domain Name System) records. The page is referred to as DNS Management, Name Server Management, or Advanced Settings.
 3. Locate the `CNAME` records for your domain.
 4. Add a new domain record (such as `portal.yourdomain.com`, where `yourdomain.com` is the domain that you own).
 5. Point it toward `portal.connexcs.com.`
@@ -34,10 +34,10 @@ _Click each tab to view the configuration details._
 === "Basic"
 
 + **Domain**: The URL your customers use to access their portal.
-+ **Brand Name**: The brand that is displayed to your customers on the portal.
++ **Brand Name**: The brand that's displayed to your customers on the portal.
 + **Customer Signup**: Allow customers to sign up independently.
 + **Carrier Signup**: Allow carriers to sign up independently.
-+ **Template Customer**: Choose a pre-configured template customer on your account that is pre-populated with default values that are set when a customer independently creates their account through the portal (See "Template Customer example" below).
++ **Template Customer**: Choose a pre-configured template customer on your account that's pre-populated with default values that are set when a customer independently creates their account through the portal (See "Template Customer example" below).
   Available values for this template are:
   + Customer [Fields in the customer itself, such as debit limit]
   + Routes
