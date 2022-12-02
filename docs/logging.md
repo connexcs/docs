@@ -58,12 +58,12 @@ Click on a specific Call ID to view details and run call tools.
 
 + **Class5**: If you use the Class5 system, there will be some additional information, such as Request Parameters.
   
-+ **Refresh**: For Live calls, use **`Refresh`** to reload the logs to show the most recent changes. This is necessary as some of the data must be processed through CDR before it is displayed.
++ **Refresh**: For Live calls, use **`Refresh`** to reload the logs to show the most recent changes. This is necessary as some of the data must be processed through CDR before it's displayed.
 
 !!! Tip "More on Call-IDs"
     See [**Call-ID**](/guides/howto/callid) for further information and troubleshooting.
 
-### SIP Traces
+### SIP (Session Initiation Protocol) Traces
 
 **SIP Tracing** is a diagnostic tool for phone systems using SIP (Session Initiation Protocol) for interactions across trunks and between endpoints.
 
@@ -76,7 +76,7 @@ Call quality issues are often identified using other methods.
 ![sip trace](/logging/sipserver.jpg)
 
 !!! info "SIP Trace Captures"
-    The **ConnexCS** system supports always-on **SIP Trace** capture. We keep a record of every packet sent and received by your server over the last seven (7) days.
+    The **ConnexCS** system supports always-on **SIP Trace** capture. We keep a record of every packet sent and received by your server over the last 14 (fourteen) days.
 
 To view the SIP Trace of a call:
 
@@ -89,7 +89,7 @@ To view the SIP Trace of a call:
 4. Options to download as Text or an Image.
 
 !!! note "Known issues with SIP Traces"
-    * **Missing SIP data**: SIP traces aren't always guaranteed. SIP packets are carried by UDP, which may cause the traces to be lossy at times. This is to be expected due to the nature of the architecture.
+    * **Missing SIP data**: SIP traces aren't always guaranteed. PACKET CAPTURE is lossy as packets are replicated to our capture servers via UDP. This is expected due to the nature of the architecture.
   
     * **Missed call attempts**: If using SIP authentication, because there are two requests it's possible that they hit our database out of order. This may cause the logging page to only display the first call attempt.
   
@@ -102,9 +102,9 @@ To view the SIP Trace of a call:
 
 The causes of a dropped call are:
 
- **1. Downstream BYE**: When the call has been disconnected from the **originator's** side via a **BYE** message.
+ **1. Downstream BYE**: When the call is disconnected from the **originator's** side via a **BYE** message.
 
- **2. Upstream BYE**: When the call has been disconnected from the **receiver** side via a **BYE** message.
+ **2. Upstream BYE**: When the call is disconnected from the **receiver** side via a **BYE** message.
 
 **3. MI Termination**: The system terminates the call when it finds that there has been no audio connection between the call's originator and the receiver.<br>The system triggers a BYE message on both sides within the application.
 
@@ -112,7 +112,7 @@ The causes of a dropped call are:
 
 If the Sip Ping feature is enabled under Customer:material-menu-right: Routing, OPTION packets are delivered (every X seconds) to the originator and receiver.
 
-The originator and the receiver should reply with 200 OK after receiving the OPTION packets. If either the originator or receiver misses sending the acknowledgment, the call is terminated. This is why the call was terminated due to a "ping timeout."
+The originator and the receiver should reply with 200 OK after receiving the OPTION packets. If either the originator or receiver misses sending the acknowledgment, the call terminates. This is why the call was terminated due to a "ping timeout."
 
 It prevents any long-duration calls as the system recognises either the originator or receiver as inactive.
 
