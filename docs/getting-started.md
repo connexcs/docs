@@ -35,12 +35,9 @@ The system sends a verification code to the user's email, which is verified when
 
 To verify your email address:
 
-1. Select `Verify Email`.
-
-   The Personal Profile Screen pops up.
-
+1. Select `Verify Email`. The Personal Profile Screen pops up.
 2. Click the orange `!` next to Email, this generates a code and sends it to the email address.
-3. Click the link in the email or copy & paste the code into the Verification Code field in the Verify Email pop-up.
+3. Click the link in the email or copy & paste the code into the Verification Code field in the Verify Email pop-up
 4. Click `Verify`.
 
     ![alt text][verify-email-2]
@@ -56,10 +53,7 @@ Mobile Verification ensures all mobile devices associated with your account are 
 
 To verify a mobile number:
 
-1. Select `Verify Mobile`.
-
-   The Personal Profile Screen pops-up.
-
+1. Select `Verify Mobile`. The Personal Profile Screen pops-up.
 2. Make sure the number is correct and in E.164 format: [+] [country code] [subscriber number including area code] with maximum of fifteen digits.
 3. Click the orange `!` next to Mobile, this will generate a code and send it to mobile number.
 4. Enter the code into the Verification Code field in the Verify Mobile pop-up.
