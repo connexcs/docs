@@ -68,19 +68,19 @@ Balances should be derived from a ledger (your CDR records).
 
 ```mermaid
 graph TD
-    BAL[Balance Mismatch] -->|Investigation Process|INV[Compare UTC/Common Daily Totals<br/> on both sides and isolate a day where <br/>the totals have substancial differences] --> QCONN
-    QCONN{Does the connected calls<br/>totals roughly match?}
-    QCONN -->| No | MISSINGCALLISSUE
-    MISSINGCALLISSUE[Some calls are missing,<br/>we need to find them] --> ISOLATEHOUR
-    ISOLATEHOUR[Try to reduce the CDR's on both sides to a smaller<br/>timeframe where a mismatch can be observed] --> DIFFCALLS
-    DIFFCALLS[Run a diff on the smaller dataset to isolate missing calls] --> REPORT
-    QCONN -->| Yes | QDUR[Problem Resolved]
-    QDUR{Does the durations <br/>totals roughly match?}
-    QDUR -->| No | DURATIONISSUE
-    DURATIONISSUE[Duration Issue] --> 1CALL
-    QDUR -->| Yes | RATINGISSUE[Problem Resolved]
-    RATINGISSUE[Rating Issue] --> 1CALL
-    1CALL[Try to isolate a single call,<br/>take a few random samples and<br/>find the one with the biggest difference] --> REPORT
-    REPORT[Report your finding to us<br/>and we can investigate further]
-    
+BAL[Balance Mismatch] -->|Investigation Process|INV[Compare UTC/Common Daily Totals<br/> on both sides and isolate a day where <br/>the totals have substancial differences] --> QCONN
+QCONN{Does the connected calls<br/>totals roughly match?}
+QCONN -->| No | MISSINGCALLISSUE
+MISSINGCALLISSUE[Some calls are missing,<br/>we need to find them] --> ISOLATEHOUR
+ISOLATEHOUR[Try to reduce the CDR's on both sides to a smaller<br/>timeframe where a mismatch can be observed] --> DIFFCALLS
+DIFFCALLS[Run a diff on the smaller dataset to isolate missing calls] --> REPORT
+QCONN -->| Yes | QDUR[Problem Resolved]
+QDUR{Does the durations <br/>totals roughly match?}
+QDUR -->| No | DURATIONISSUE
+DURATIONISSUE[Duration Issue] --> 1CALL
+QDUR -->| Yes | RATINGISSUE[Problem Resolved]
+RATINGISSUE[Rating Issue] --> 1CALL
+1CALL[Try to isolate a single call,<br/>take a few random samples and<br/>find the one with the biggest difference] --> REPORT
+REPORT[Report your finding to us<br/>and we can investigate further]
+
 ```
