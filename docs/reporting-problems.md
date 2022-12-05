@@ -87,7 +87,7 @@ ConnexCS classifies issues based on a combination of **Category** and **Severity
 
 |Level|Severity|Example|
 |---|---|---|
-|**P0**|Critical|ConnexCS is down; this is affecting all customers, and all calls are failing. The best thing to do is to monitor <https://status.connexcs.com/> and await updates. As we're a small team, we may be focusing on resolving the issue, and although a reply may only take 10 seconds, we will have 100's of customers asking the same thing.|
+|**P0**|Critical|ConnexCS is down; this is affecting all customers, and all calls are failing. The best thing to do is to monitor <https://status.connexcs.com/> and await updates.
 |**P1**|Critical|A customer of ConnexCS is down, and it's affecting all calls.|
 |**P2**|Critical|A customer of our customer's calls is down, or there is a serious User Interface problem.|
 |**P3**|Important|A partial outage on the part of a customer or carrier, and / or some but not all calls are affected, or there is a serious User Interface problem.|
@@ -96,6 +96,7 @@ ConnexCS classifies issues based on a combination of **Category** and **Severity
 
 !!! tip "Paid Support Escalation"
     If you have a **P3 or P4** and we're out of working hours and you have a problem that internally you consider it to be critical, you have the option to escalate it. We will charge $150 per hour for our support (min 1 hour).
+
     A **P5** feature request may be escalated, but a project cost may be involved; please discuss this with us if you are considering it.
 
 !!! warning "Classification Usage"
@@ -111,7 +112,7 @@ ConnexCS classifies issues based on a combination of **Category** and **Severity
   * 24/7 response incidents.
 
 * All other Platform (non-Critical) and Operational Issues from 8:00 am - 8:00 pm UTC business hours support.
-  Whenever possible, we strive to provide best-effort support outside these times if we are available.
+Whenever possible, we strive to provide best-effort support outside these times if we are available.
   We're a small team, so we request that you keep this in mind when reporting the severity of an issue:
   * Operational or Configuration Issue.
   * Our Monitoring won't alert Us.
@@ -172,6 +173,7 @@ This step helps us understand and resolve your issue as soon as possible. Whenev
 !!! failure "Respectful communications"
     Where possible, we're also happy to talk with you about broader SIP topics outside of our switch.
     Under no circumstance will we tolerate rude behaviour, intimidation, or threats.
+
     We're all SSVVP and SSCA qualified, and whenever possible, we will cite references or point you to SIP traces for fact-checking information.
 
 ### Reporting Multiple Problems
