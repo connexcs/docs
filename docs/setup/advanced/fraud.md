@@ -44,19 +44,29 @@ Selecting Low or High mode defines the action taken when a Warning or Critical t
 **Step 1: Create a Fraud Profile and Rules**
 
 1.1 Click :material-plus:.
+
 1.2. Enter the Name.
+
 1.3. Click **Save**.
+
 1.4. To the right of the new Profile, select **`View Rules`**.
+
 1.5. Click :material-plus:.
+
 1.6. Define **Prefix**, **Start and End Times**, and **Days of Week** to set the trigger for fraud detection.
+
 1.7. Configure each individual **Metrics** (as defined above) to set thresholds for fraud detection.
+
 1.8. Save the rules.
 
 **Step 2: Apply the profile to the customer route**
 
 2.1. Go to **Management :material-menu-right: Customer :material-menu-right: [your customer] :material-menu-right: Routing :material-menu-right: [select the route] :material-menu-right: Fraud**.
+
 2.2. Select the **Fraud Profile**.
+
 2.3. Select the **Fraud Mode** (as defined above).
+
 2.4. Save the route.
 
 ## Fraud Logging
