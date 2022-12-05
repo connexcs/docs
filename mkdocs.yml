@@ -149,6 +149,7 @@ nav:
         - NEW FCC Regulations on STIR/SHAKEN : guides/stir-shaken-fcc.md
         - Billing:
             - Billing Guide: guides/billing-guide.md
+            - Billing Basics: billing-basics.md
             - Connex Billing: billing.md
             - Credit Control: credit-control.md
             - Voucher: voucher.md
