@@ -43,13 +43,15 @@ Click **:material-plus:** to the right of **Contacts**.
 
 * **Contact Type**: This field is only used for informational and organizational purposes; there is no additional function for it.
 
+* **Auto Generate Password**: Select this to have a password generated online and sent via email. Deselect the box to enter a password manually.
+
 * **Public Notes**: Display on the Customer Portal.
 
 * **Private Notes**: Display in the Control Panel.
 
 * **Mobile Verified** and **Email Verified**: Manually set the status for each. Check in the Customer Details to confirm if the Mobile and Email are verified. Alternatively, the customer can do this in the Customer Portal.
 
-    ![alt text][main-tab]
+    ![contact details](/customer/img/maincontactdetails.jpg)
 
 Click **`Save`** to add the Contact.
 
