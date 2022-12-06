@@ -43,8 +43,6 @@ Click **:material-plus:** to the right of **Contacts**.
 
 * **Contact Type**: This field is only used for informational and organizational purposes; there is no additional function for it.
 
-* **Auto Generate Password**: Select this to have a password generated online and sent via email. Deselect the box to enter a password manually.
-
 * **Public Notes**: Display on the Customer Portal.
 
 * **Private Notes**: Display in the Control Panel.
