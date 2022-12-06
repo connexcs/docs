@@ -39,22 +39,29 @@ _Field details:_
 
 + **CLI**: To allow the required CLIs, enter the required number or a regular expression (to match and replace).
 
-+ **Rewrite CLI**: A CLI can be rewritten. For example, you can add `123456789` in the CLI box and then rewrite by adding `987654321` in the rewrite CLI box. (For more advanced CLI manipulation, see [**Advanced CLI Match & Manipulation**](/customer/cli/#advanced-cli-match-manipulation) below.)
++ **Rewrite CLI**: A CLI can be rewritten. For example, you can add `123456789` in the CLI box and then rewrite by adding `987654321` in the rewrite CLI box. (For more advanced CLI manipulation, see [**Advanced CLI Match & Manipulation**](https://docs.connexcs.com/customer/cli/#advanced-cli-match-and-manipulation) below.
 
 + **Pre-Asserted-ID (PAID)**: To allow the required PAID, enter the required number or a regular expression to match or replace.
 
-+ **Rewrite P-Asserted-ID**: This is a SIP Header almost same as the FROM header but classified as a private, or network-level identifier.<br>Telephone companies use it to identify call originators. As it is stripped at the call server, the client end-points only see the FROM field.<br>This is helpful when callers obscure their CLI / FROM information, as the network level still requires origination details.<br>The **P-Asserted-ID** manipulation uses the same syntax as the Replace CLI.
++ **Rewrite P-Asserted-ID**: This is a SIP Header almost same as the FROM header but classified as a private, or network-level identifier.
+Telephone companies use it to identify call originators. As it is stripped at the call server, the client end-points only see the FROM field.
+This is helpful when callers obscure their CLI / FROM information, as the network level still requires origination details.
+The **P-Asserted-ID** manipulation uses the same syntax as the Replace CLI.
 
 !!! tip "P-Asserted-ID Use Case"
-    If you wanted to allow all calls but assign a specific number (such as the Main Billable number for the business), you would set CLI as ".*" and then enter the desired P-Asserted ID. <br>All calls will then have this number as the P-Asserted-ID.
+    If you wanted to allow all calls but assign a specific number (such as the Main Billable number for the business), you would set CLI as ".*" and then enter the desired P-Asserted ID.
+    All calls will then have this number as the P-Asserted-ID.
 
-+ **Forced**: Enabling this will allow a call if there are no other matching CLIs in the system. This will also replace the CLI that's presented with the CLI entered here. <br> For example: Create a permitted list of CLIs, then select **Forced** on the CLI to use if none of the others in the permitted list match. (Best practice is to have one unique **Forced** CLI.)
++ **Forced**: Enabling this will allow a call if there are no other matching CLIs in the system. This will also replace the CLI that's presented with the CLI entered here.
+**For example**, Create a permitted list of CLIs, then select **Forced** on the CLI to use if none of the others in the permitted list match. (Best practice is to have one unique **Forced** CLI.)
 
-+ **Direction Applied**: Select either **Termination** for calls a customer makes out or **Origination** (also refers to DIDs) for inbound calls made to our customers.<br>For example, Create a permitted list that exclusively allows calls to or from the same country.  
++ **Direction Applied**: Select either **Termination** for calls a customer makes out or **Origination** (also refers to DIDs) for inbound calls made to our customers.
+For example, Create a permitted list that exclusively allows calls to or from the same country.  
 
 + **Use DID**: Pull in DIDs from the customer's account to use either as a Filter or as a Replacement.  
 
-+ **Dialed Number Match**: To route to a specific CLI, dialied match number is used. For example, if Dialied matched number is starting with **1**, the CLI is routed to 11111.<br> The CLI can be a Regular Expression also.
++ **Dialed Number Match**: To route to a specific CLI, dialied match number is used. For example, if Dialied matched number is starting with **1**, the CLI is routed to 11111.
+The CLI can be a Regular Expression also.
 
 &emsp;![alt text][edit-cli]
 
@@ -240,7 +247,11 @@ Our Userspace database allows you to manage large lists of numbers. Once you upl
 Sometimes it can be useful to keep all or part of the transmitted CLI and manipulate it when it gets sent out.
 
 !!! tip "Are you Normalizing?"
-    Normalizing is the process of using a common number format. For ConnexCS, this is the international format. <br>You shouldn't be using CLI Manipulation to correct the format of a number. Parameter Rewrite (see [**Number Manipulation**](/number-manipulation/) for details) will help achieve this.
+    Normalizing is the process of using a common number format. For ConnexCS, this is the international format.
+
+    You shouldn't be using CLI Manipulation to correct the format of a number. 
+    
+    Parameter Rewrite (see [**Number Manipulation**](/number-manipulation/) for details) will help achieve this.
 
 #### Regex Pattern Examples
 
@@ -314,15 +325,11 @@ _To learn more about writing regular expressions, visit [**RegExr**](http://rege
 
 Use **CLI Restrict** to allow CLIs to pass through a specific provider. To allow a configured CLI:
 
-**1.** Click **Management :material-menu-right: Rate Card**.
-
-**2.** Select the **Provider Rate Card** (under the Name column).
-
-**3.** Select **Properties :material-menu-right: Advanced**.
-
-**4.** Enter the CLIs / ANIs you want to allow in the [**CLI Restrict**](https://docs.connexcs.com/provider-ratecard/#advanced) box.
-
-**5.** Click **`Save`**.
+1. Click **Management :material-menu-right: Rate Card**.
+2. Select the **Provider Rate Card** (under the Name column).
+3. Select **Properties :material-menu-right: Advanced**.
+4. Enter the CLIs / ANIs you want to allow in the [**CLI Restrict**](https://docs.connexcs.com/provider-ratecard/#advanced) box.
+5. Click **`Save`**.
 
 ## General Condition 6 (GC6) Compliance
 
