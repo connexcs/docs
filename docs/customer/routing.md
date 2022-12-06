@@ -15,7 +15,7 @@ First, a check is done for the longest prefix, then the shortest prefix is check
 
 ## Configure Routing
 
-View and configure existing routes on the Routing tab in the Customer card. To create a new route, click material-plus: in **Ingress Routing**.
+View and configure existing routes on the Routing tab in the Customer card. To create a new route, click `+` in **Ingress Routing**.
 
    ![alt text][ingress-routing]
 
@@ -200,7 +200,7 @@ For advanced routing, click :material-plus: to select a [**Prefix Set**](https:/
 
 ### Fraud
 
-+ **Fraud Profile**: Apply one of the Fraud Profiles configured under **Setup :material-menu-right: Advanced :material-menu-right: :material-menu-right: [Fraud Profile](https://docs.connexcs.com/setup/advanced/fraud/#setup-fraud-detection)**.
++ **Fraud Profile**: Apply one of the Fraud Profiles configured under **Setup :material-menu-right: Advanced :material-menu-right: [Fraud Profile](https://docs.connexcs.com/setup/advanced/fraud/#setup-fraud-detection)**.
 + **Fraud Mode**: Specify how strictly the profile will be applied, this is dependent on the [**Fraud Mode Thresholds**](https://docs.connexcs.com/setup/advanced/fraud/#fraud-mode) configured in the Profile.
 
     :material-menu-right: `Disabled`
