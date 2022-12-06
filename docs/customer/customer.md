@@ -13,7 +13,7 @@ You can organize ConnexCS **Customers** through customer cards.
 
 On the **Customers** page, you can perform several management operations.
 
-By clicking on + button we can add customer (see [**Create Customers**](https://docs.connexcs.com/customer/customer/#create-customers) below for details.)
+By clicking on `+` button we can add customer (see [**Create Customers**](https://docs.connexcs.com/customer/customer/#create-customers) below for details.)
 
 **Refresh**: Refreshing the page, helpful when making edits or looking at real-time changes. This page is built as a web app, so some information will update automatically.  
 
@@ -31,6 +31,7 @@ By clicking on + button we can add customer (see [**Create Customers**](https://
 **Delete**: Delete multiple customers at a time.
 
 **?**: Link to the documentation of the current page.
+
 **Send**: ConnexCS includes email and SMS support for your customers.
 
 1. Select multiple customers using the tickbox selector on the left side of each row. (Customers aren't visible to each other in the sent message.)
