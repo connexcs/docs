@@ -24,8 +24,8 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 + **Rate Card**: Also known as Tariff, this allows you to select the rate card used on a customer's account. You can handle these calls in the following three ways:
 
   + **Internal**: Send a call to the ConnexCS Class5 (Voice Mail, Interactive Voice Response (IVR), etc.). If selected, the "Auto" option becomes available, which will generate dial strings from all possible internal extensions.
-  + **Extension**: (uses SIP users in Customer > Auth configured SIP Users) Send a call to a Session Initiation Protocol (SIP) Authenticated user on the account.
-  + **Customer IP**: (uses IPs in Customer > Auth configured IPs) Send a call from an agent back to the customer's Private Branch eXchange (PBX), using either the Tech Prefix (e.g.: #9) or a Dial String (e.g.: `^[0-9](4)$`).
+  + **Extension**: (uses SIP users in Customer :material-menu-right: Auth configured SIP Users) Send a call to a Session Initiation Protocol (SIP) Authenticated user on the account.
+  + **Customer IP**: (uses IPs in Customer :material-menu-right: Authconfigured IPs) Send a call from an agent back to the customer's Private Branch eXchange (PBX), using either the Tech Prefix (e.g.: #9) or a Dial String (e.g.: `^[0-9](4)$`).
   + **To Carriers**: Choose a carrier to send the call to a location outside of the ConnexCS system.
 
 + **Tech Prefix**: This lets you distinguish a route from an inbound party.
@@ -177,17 +177,17 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 
 *While it's doubtful that any information will be logged in the customer / providers switch when the audio is engaged, it's possible for an engineer to learn this information from a SIP trace, PCAP, or by looking at transit locations. DTMF Detection ONLY works when RTP Proxy mode is enabled.
 
-+ **Call Recording**: This allows you to record and store calls, which are then found in **Setup > Information > [Browsing Record](https://docs.connexcs.com/setup/information/recording/)**.
++ **Call Recording**: This allows you to record and store calls, which are then found in **Customer :material-menu-right: Auth :material-menu-right: [Browsing Record](https://docs.connexcs.com/setup/information/recording/)**.
   An extra charge per recorded call of $0.003 in addition to existing fees or charges, so choose carefully how many calls to record:
 
     :material-menu-right: `Disabled`- no calls are recorded
 
-    :material-menu-right: `Sampling`- Choose from a 1%, 5%, 25%, or 50% sample of your calls (ex: 1% will record 1 of every 100 calls, 25% will record 25 of every 100 calls, etc.).
+    :material-menu-right: `Sampling`- Choose from a 1%, 5%, 25%, or 50% sample of your calls (e.g: 1% will record 1 of every 100 calls, 25% will record 25 of every 100 calls, etc.).
 
     :material-menu-right: `Enabled (Always On)`- Record all calls.
 
 !!! tip "The Call Recording setting is disabled"
-    You need to enable the feature first on the account in **Setup > Settings > Account > [Packages](https://docs.connexcs.com/setup/settings/account/#packages)** before it can be enabled here for individual customers.
+    You need to enable the feature first on the account in **Setup :material-menu-right: Settings :material-menu-right: [Packages](https://docs.connexcs.com/setup/settings/account/#packages)** before it can be enabled here for individual customers.
 
 ### Strategy
 
@@ -200,7 +200,7 @@ For advanced routing, click :material-plus: to select a [**Prefix Set**](https:/
 
 ### Fraud
 
-+ **Fraud Profile**: Apply one of the Fraud Profiles configured under **Setup > Advanced > [Fraud Profile](https://docs.connexcs.com/setup/advanced/fraud/#setup-fraud-detection)**.
++ **Fraud Profile**: Apply one of the Fraud Profiles configured under **Setup :material-menu-right: Advanced :material-menu-right: :material-menu-right: [Fraud Profile](https://docs.connexcs.com/setup/advanced/fraud/#setup-fraud-detection)**.
 + **Fraud Mode**: Specify how strictly the profile will be applied, this is dependent on the [**Fraud Mode Thresholds**](https://docs.connexcs.com/setup/advanced/fraud/#fraud-mode) configured in the Profile.
 
     :material-menu-right: `Disabled`
