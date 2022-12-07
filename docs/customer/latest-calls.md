@@ -2,7 +2,9 @@
 
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Latest Calls**
 
-The **Latest Calls** tab provides records of incoming and outgoing calls. View recent calls and their Session Initiation Protocol (SIP) traces, and run simulated calls. See [**Logging**](https://docs.connexcs.com/logging/) section for details on these functions. To view Latest Calls for all customers, go to the Logging section in ConnexCS.
+The **Latest Calls** tab provides records of incoming and outgoing calls. View recent calls and their Session Initiation Protocol (SIP) traces, and run simulated calls. 
+
+See [**Logging**](https://docs.connexcs.com/logging/) section for details on these functions. To view Latest Calls for all customers, go to the Logging section in ConnexCS.
 
 ## Simulate Calls
 
