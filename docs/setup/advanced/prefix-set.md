@@ -31,20 +31,16 @@ Use Flags to create a *Global CLI Blacklist* or a *Global Dialled Number Blackli
 ## Example Dial Strings for Prefix sets
 Prefix Sets and all Dial String fields accept plain text or regular expressions. List only one prefix per line. Here are 3 samples, using plain-text, regex, or a mix:
 
-**Plan-Text**
-```
+**Plain-Text**
+
 441
 442
-```
 
 **Regular Expression (RegEx)**
-```
 ^44(1|2)
-```
 
 **Combination (UK Landline & Canada)**
-```
+
 441
 442
 ^1(204|226|236|249|250|289|306|343|403|416|418|438|450|506|514|519|579|581|587|604|613|647|705|709|778|780|807|819|867|902|905)
-```
