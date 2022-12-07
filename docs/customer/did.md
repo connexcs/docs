@@ -95,15 +95,24 @@ Step 1: Create the CSV
 
 !!! tip "Tips for creating the CSV file"
     Steps to take to ensure that the next step goes smoothly are:
+
     + The CSV file must contain only one sheet.
+
     + Include as many fields as you can when creating your columns to leverage the benefits of the bulk upload feature.
+
     + Note the number of first and last rows, as these will be the range (minimum and maximum) values in Step 2.
+
     + Input fields that correlate to drop-down lists: The entered value must match an existing entry (the Control Panel doesn't create values from drop-down lists on-the-fly).
     For example: "Retain Display Name" only takes Enabled or Disabled; and rejects any other value.
+
     + Input fields that are pre-created objects (e.g: customer names and customer card names): You can enter "dummy" values because you must associate the corresponding cell with the input value to the actual value (name of the pre-defined object) before you upload the DID numbers to the server.
+
     + Input fields that use numerical or free-text values: Enter the permissible range of values.
+
     + Input fields that accept values on-the-fly (e.g: tags): Enter any meaningful value.
+
     + Don't include input fields such as checkboxes. You must manually select or clear a checkbox after you upload the DID number to the server.
+    
     + Don't include a DID number that already exists on the Control Panel. The entered DID Bulk Upload will fail if Control Panel finds at least one identical DID number.
 
 Step 2: Upload the CSV to ConnexCS
