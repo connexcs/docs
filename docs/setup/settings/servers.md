@@ -11,7 +11,7 @@ Before deploying your first server, make sure to complete the [**Getting Started
 
 !!! warning "Impact to services"
     If you are a serious carrier *Never let your account run out of credit*. It should go without saying, but if your account runs out of credit, service is impacted, it may not instantly be restored either. We won't consider any reactivation problems critical, if you persistently top-up only enough credit to cover you for the next day.
-    
+
 ## Server List
 The **Servers** section provides an overview of deployed servers:
 
