@@ -55,20 +55,16 @@ For more details on these fields, see [**Media in Customer Routing**](https://do
 
     :material-menu-right: `Zone (recommended)`- Select any of the regional servers
 
-+ **Call Recording**: Select the percentage of calls to record for this customer
++ **Call Recording**: Select the percentage of calls to record for this customer:
+
   + Disabled- never record calls
-
   + 1% Sampling
-
   + 5% Sampling
-
   + 25% Sampling
-
   + 50% Sampling
-
   + Enabled (Always On)
 
-+ **Timeout**: Set various options to help with call timeout for missed BYEs.
++ **Timeout**: Set multiple options to help with call timeout for missed BYEs.
 + **Max Duration**: Set the maximum amount of time (in seconds) to allow the call to exist before it's terminated, typically when a missed BYE occurs.
 
 ### Billing
@@ -86,7 +82,7 @@ Run a custom script on calls to the DID to performs actions such as route based 
 
 ## Bulk Upload
 
-For batches of DIDs, you can use Bulk Upload to add various DIDs at one time using a CSV (comma-separated values) file. It's then mapped to the correct values in Control Panel during the upload process. 
+For batches of DIDs, you can use Bulk Upload to add multiple DIDs at one time using a CSV (comma-separated values) file. It's then mapped to the correct values in Control Panel during the upload process. 
 
 You can perform this for individual Customer (**Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: DID**) or Globally (**Global :material-menu-right: DID**).  
 
