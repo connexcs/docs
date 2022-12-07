@@ -55,13 +55,19 @@ For more details on these fields, see [**Media in Customer Routing**](https://do
 
     :material-menu-right: `Zone (recommended)`- Select any of the regional servers
 
-+ **Call Recording**: Select the percent of calls to record for this customer
++ **Call Recording**: Select the percentage of calls to record for this customer
   + Disabled- never record calls
+
   + 1% Sampling
+
   + 5% Sampling
+
   + 25% Sampling
+
   + 50% Sampling
+
   + Enabled (Always On)
+
 + **Timeout**: Set various options to help with call timeout for missed BYEs.
 + **Max Duration**: Set the maximum amount of time (in seconds) to allow the call to exist before it's terminated, typically when a missed BYE occurs.
 
@@ -112,7 +118,7 @@ Step 1: Create the CSV
     + Input fields that accept values on-the-fly (e.g: tags): Enter any meaningful value.
 
     + Don't include input fields such as checkboxes. You must manually select or clear a checkbox after you upload the DID number to the server.
-    
+
     + Don't include a DID number that already exists on the Control Panel. The entered DID Bulk Upload will fail if Control Panel finds at least one identical DID number.
 
 Step 2: Upload the CSV to ConnexCS
