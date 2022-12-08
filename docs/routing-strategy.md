@@ -15,7 +15,7 @@ With ConnexCS, several types of routing strategies are employed:
 | **Round Robin** |    System will pick a call route according to a predetermined sequence. |
 | **Manual** |    Route calls manually as decided.|
 | **Reverse LCR** |   First, the most expensive route is selected. |
-| **Tier** |    Tiers in routing strategy allows one selection per tier. The same tier can be assigned for many cards. |
+| **Tier** |    Tiers in routing strategy allows distribution of calls. You can add as many cards for a customer. The calls are distributed corresponding to the weights assigned to them. It will try one carrier from each rate card. |
 
 ## Configure Routing Strategy
 

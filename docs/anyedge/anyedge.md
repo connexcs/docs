@@ -156,3 +156,5 @@ Having High Availability (HA) with registrations ensures that you will always ha
 ### Outbound Proxy
 
 If you have a pool of multiple servers, you can proxy your communications via **AnyEdge**, allowing a single IP address to communicate externally.
+
+!!! note "The monthly fee for the Anyedge service is $20."
