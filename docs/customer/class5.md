@@ -7,7 +7,6 @@
 The customers can configure several functionalities in this area to enhance the user experience.
 
 + [**Apps**](/class5/apps/): Allow customers to configure various features such as Pinless Calling or DNC (Do Not Call) lists. It includes the full functionality of Script Forge.
-
 You can configure this in Class5 :material-menu-right: Apps.
 
 + [**Conference**](/class5/creating-conference/): Allow several callers to join one conference call or bridge.
