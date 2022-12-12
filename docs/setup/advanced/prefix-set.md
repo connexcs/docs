@@ -44,21 +44,16 @@ Here are 3 samples using plain-text, regex, or a mix:
 
 **Plain-Text**
 
-```bash
 441
 442
-```
 
 **Regular Expression (RegEx)**
 
-```bash
 ^44(1|2)
-```
 
 **Combination (UK Landline & Canada)**
 
-```bash
 441
 442
 ^1(204|226|236|249|250|289|306|343|403|416|418|438|450|506|514|519|579|581|587|604|613|647|705|709|778|780|807|819|867|902|905)
-```
+
