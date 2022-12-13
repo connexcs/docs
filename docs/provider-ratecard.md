@@ -148,10 +148,13 @@ To change Revision status:
 |**IntER/IntRA**|1 (NPANXX)|Refers to Interstate and Intrastate calling for USA dialing|2|
 |**IntER/IntRA/Indeterminate**|1 (NPANXX)|Indeterminate indicates that call is between a USA number and another country|3|
 
-+ **Dialing**: Select whether to bill based on the carrier of the Dialed Number or using an LRN Database (US-only).
++ **Dialing**: Select whether to bill based on the carrier of the Dialed Number or using an LRN Database (US-only).  
+
 The LRN (Local Routing Number) identifies the switch for a number and used to determine billing for a call.
+
 When a customer ports the number from one provider to another, the billing may change based on the new carrier.
 An LRN dip will correct any pricing discrepancies between the original and new carriers. This helps to reduce billing costs.
+
 If the customer wants to do single rates, they may not want to do the LRN dip.
 
 !!! tip "ConnexCS LRN Database"
@@ -192,6 +195,7 @@ See [**Filter PAID by Number or Pattern**](/customer/cli/#filter-paid-by-number-
     |**Direct RTP (No Proxy)**|Bypass ConnexCS, so media flows directly between the customer and carrier.|
     |**Closest (To ConnexCS) Server**|Media will use the server geographically closest to ConnexCS|
     |**Closest (Elastic) Server**|This will allow traffic to traverse new deployed servers. Would only cause issues if the customer runs a firewall, in which case the servers aren't authorized.|
+
 + **Block Destination Type**: Block calls to one or more types of destination (example: Mobile, Paging, or Satellite) using SIP Message `403 Destination Blocked'.
 + **Block Connect Cost**: Disable / enable the per-call connection cost across the carrier.
 + **P-Time**: Packetization time, or P-Time, refers to the length of an SDP packet based on the media time in milliseconds.
