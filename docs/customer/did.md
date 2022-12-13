@@ -60,12 +60,12 @@ For more details on these fields, see [**Media in Customer Routing**](https://do
     :material-menu-right: `Zone (recommended)`- Select any of the regional servers.
 
 + **Call Recording**: Select the % of calls to record for this customer:
-  1. Disabled- never record calls
-  2. 1% Sampling
-  3. 5% Sampling
-  4. 25% Sampling
-  5. 50% Sampling
-  6. Enabled (Always On)
+  + Disabled- never record calls
+    + 1% Sampling
+    + 5% Sampling
+    + 25% Sampling
+    + 50% Sampling
+    + Enabled (Always On)
 
 + **Timeout**: Set various options to assist with call timeout for missed BYEs.
 + **Max Duration**: Set the maximum amount of time (in seconds) to allow the call to exist before it's terminated, typically in case of a missed BYE.
@@ -104,17 +104,26 @@ Step 1: Create the CSV
 
 !!! tip "Tips for creating the CSV file"
     Steps taken to ensure that you can perform the next steps effortlessly:
+   
     + The CSV file must contain only one sheet.
+    
     + Include various fields as you can when creating your columns to leverage the benefits of the bulk upload feature.
+    
     + Note the number of first and last rows, as these will be the range (minimum and maximum) values in Step 2.
+    
     + Input fields that correlate to drop-down lists: The entered value must match an existing entry (the Control Panel doesn't create values from drop-down lists on-the-fly).
     **For example**, "Retain Display Name" only accepts Enabled or Disabled; and rejects any other value.
+    
     + Input fields that are pre-created objects (for example, customer names and customer card names).
     You can enter "dummy" values because you must associate the corresponding cell with the input value with the actual value (name of the pre-defined object) before you upload the DID numbers to the server.
+    
     + Input fields that use numerical or free-text values: Enter the permissible range of values.
+    
     + Input fields that accept values on-the-fly (for example, tags): Enter any meaningful value.
+    
     + Don't include input fields such as checkboxes.
     You must manually select or clear a checkbox after you upload the DID number to the server.
+    
     + Don't include a DID number that already exists on the Control Panel.
     The entered DID Bulk Upload will fail if Control Panel finds at least one identical DID number.
 
