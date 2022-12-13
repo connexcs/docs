@@ -60,12 +60,12 @@ For more details on these fields, see [**Media in Customer Routing**](https://do
     :material-menu-right: `Zone (recommended)`- Select any of the regional servers.
 
 + **Call Recording**: Select the % of calls to record for this customer:
-  + Disabled- never record calls
-  + 1% Sampling
-  + 5% Sampling
-  + 25% Sampling
-  + 50% Sampling
-  + Enabled (Always On)
+    + Disabled- never record calls
+    + 1% Sampling
+    + 5% Sampling
+    + 25% Sampling
+    + 50% Sampling
+    + Enabled (Always On)
 
 + **Timeout**: Set various options to assist with call timeout for missed BYEs.
 + **Max Duration**: Set the maximum amount of time (in seconds) to allow the call to exist before it's terminated, typically in case of a missed BYE.
@@ -111,7 +111,7 @@ Step 1: Create the CSV
     
     + Note the number of first and last rows, as these will be the range (minimum and maximum) values in Step 2.
     
-    + Input fields that correlate to drop-down lists: The entered value must match an existing entry (the Control Panel doesn't create values from drop-down lists on-the-fly). 
+    + Input fields that correlate to drop-down lists: The entered value must match an existing entry (the Control Panel doesn't create values from drop-down lists on-the-fly).
     **For example**, "Retain Display Name" only accepts Enabled or Disabled; and rejects any other value.
     
     + Input fields that are pre-created objects (for example, customer names and customer card names).
