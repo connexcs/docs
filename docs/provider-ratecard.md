@@ -162,7 +162,7 @@ An LRN dip will correct any pricing discrepancies between the original and new c
 
     No charges for using this service, so customers have unlimited dips into the database.
 
-+ **ASR+**: Filter known failed, non-existent / working numbers. See [**ASR Plus Details**](https://docs.connexcs.com/customer/routing/#asr-plus-details) for additional information.
++ **ASR+**: Filter known failed, non-existent / working numbers. See [**ASR Plus Details**](https://docs.connexcs.com/customer/routing/#asr-answer-seizure-ratio-plus-details) for additional information.
 
 #### Advanced
 
