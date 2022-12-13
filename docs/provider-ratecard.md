@@ -152,10 +152,10 @@ To change Revision status:
 
     The LRN (Local Routing Number) identifies the switch for a number and used to determine billing for a call.
 
-  When a customer ports the number from one provider to another, the billing may change based on the new carrier.
+    When a customer ports the number from one provider to another, the billing may change based on the new carrier.
 An LRN dip will correct any pricing discrepancies between the original and new carriers. This helps to reduce billing costs.
 
-  If the customer wants to do single rates, they may not want to do the LRN dip.
+    If the customer wants to do single rates, they may not want to do the LRN dip.
 
 !!! tip "ConnexCS LRN Database"
     ConnexCS maintains an in-house LRN database. This ensures a quick response time and updates the rates daily.
