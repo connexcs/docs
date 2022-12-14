@@ -2,6 +2,7 @@
 
 **Management :material-menu-right: Routing Strategy**
 
+
 A **Routing Strategy** lets you route calls for different providers through the routing engine using a specified set of rules.
 
 It helps with call routing, a necessary mechanic to match operations with business needs.
@@ -18,6 +19,7 @@ With ConnexCS, you can use several types of routing strategies:
 | **Random** |    Routing calls to any random route without any sequence, though you can add weighting. |
 | **Round Robin** |    System will pick a call route according to a predetermined sequence. |
 | **Manual** |    Route calls manually as decided.|
+
 | **Reverse LCR** |   First, it selects the most expensive route. |
 | **Tier** |    Tiers in routing strategy allows distribution of calls. You can add as many cards for a customer. The calls are distributed corresponding to the weights assigned to them. It will try one carrier from each rate card.|
 
@@ -27,19 +29,19 @@ Once you create a new **Routing Strategy**, assign it to a customer account.
 
 **Step 1: Add Routing Strategy**
 
+
 1. In the **Routing Strategy** screen, click :material-plus:.
 2. Name the strategy.
 3. Select the Strategy type (as defined in Types of Routing Strategies section).
 
     ![alt text][routing-strategy2]
 
-4. Click :material-plus: to add one or more row(s).
-5. Select a card from the drop-down list.
-6. Click **`Save`**.
+**6.** Click **`Save`**.
 
-    ![alt text][routing-strategy3]
+![Alt text](misc/img/routing-2.png)
 
 **Step 2: Assign Routing Strategy to a Customer**
+
 
 1. Navigate to **Management :material-menu-right: Customer**.
 2. Select the customer account.
@@ -63,8 +65,4 @@ You can also block a call using routing strategy. To block a call,
 4. Add the number to block and then select **Drop** as the Strategy.
 5. Click **`Save`**.
 
-    ![alt text][routing-drop]
-
-[routing-strategy2]: /misc/img/routing-1.png "Routing Strategy"
-[routing-strategy3]: /misc/img/routing-2.png "Routing with Card"
-[routing-drop]: /misc/img/routing-drop.png "Blocking Calls"
+![Alt text](misc/img/routing-drop.png)
