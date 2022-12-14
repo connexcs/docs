@@ -1,4 +1,4 @@
-# Direct Inward Dial
+# Direct Inward Dial (DID)
 
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: DID**
 
@@ -39,6 +39,7 @@ Select the destination to deliver incoming calls for the DID:
 + **Internal**: Send internally to an extension, a Class5 feature, or even to another customer.
 + **Circuit Test**: *in progress*.
 
+
 ### Capacity Limits
 
 Set the maximum number of INBOUND concurrent calls in **Channels**, and Calls Per Second (CPS) in **Flow Speed**.
@@ -59,6 +60,7 @@ For more details on these fields, see [**Media in Customer Routing**](https://do
 
     :material-menu-right: `Zone (recommended)`- Select any of the regional servers.
 
+
 + **Call Recording**: Select the % of calls to record for this customer:
     + Disabled- never record calls
     + 1% Sampling
@@ -68,6 +70,7 @@ For more details on these fields, see [**Media in Customer Routing**](https://do
     + Enabled (Always On)
 
 + **Timeout**: Set various options to assist with call timeout for missed BYEs.
+
 + **Max Duration**: Set the maximum amount of time (in seconds) to allow the call to exist before it's terminated, typically in case of a missed BYE.
 
 ### Billing
@@ -96,8 +99,7 @@ You can perform this for an individual Customer (**Management :material-menu-rig
 
     You must log out and log in to use the Control Panel.
 
-Step 1: Create the CSV
-
+**Step 1: Create the CSV**
 1. In Microsoft Excel, open a new workbook and save it as a CSV (Comma delimited) file.
 2. In the first row, add the names of the input fields as column headers. In step 2, you will have a chance to map these fields to the exact fields in ConnexCS, so these don't need to be exact.
 3. From the second row on, add the values of the input fields, one row per DID.
@@ -127,7 +129,7 @@ Step 1: Create the CSV
     + Don't include a DID number that already exists on the Control Panel.
     The entered DID Bulk Upload will fail if Control Panel finds at least one identical DID number.
 
-Step 2: Upload the CSV to ConnexCS
+**Step 2: Upload the CSV to ConnexCS**
 
 1. Click **Bulk Upload**.
 2. Click **Upload** and select the CSV file (created in the earlier step).
@@ -145,6 +147,3 @@ Step 2: Upload the CSV to ConnexCS
 
 See [**Script Forge**](https://docs.connexcs.com/developers/scriptforge/) for more information.
 
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjg2NTgwMTFdfQ==
--->

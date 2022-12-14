@@ -15,7 +15,7 @@ jobs:
           reporter: github-pr-check
           files: docs
           vale_flags: --glob=*.{md,txt}
-          filter_mode: file
+          filter_mode: added
         env:
           # Required, set by GitHub actions automatically:
           # https://docs.github.com/en/actions/security-guides/automatic-token-authentication#about-the-github_token-secret
