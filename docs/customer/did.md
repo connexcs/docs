@@ -82,8 +82,10 @@ For batches of DIDs, you can use Bulk Upload to add multiple DIDs at one time us
 
 Step 1: Create the CSV
 
-1. In Microsoft Excel, open a new workbook and save it as a CSV (Comma delimited) file. 
+1. In Microsoft Excel, open a new workbook and save it as a CSV (Comma delimited) file.
+
 2. In the first row, add the names of the input fields as column headers. In step 2, you will have a chance to map these fields to the exact fields in ConnexCS, so these don't need to be exact.
+
 3. From the second row on, add the values of the input fields, one row per DID.
 
 !!! tip "Tips for creating the CSV file"
