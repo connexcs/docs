@@ -49,10 +49,15 @@ Click on a specific Call ID to view details and run call tools.
 + **Call Details**: The initial screen shows current details, which include Routing Status, Authentication, Induced PDD (Post-Dial Delay), Real-time Transfer Protocol (RTP), Routing Engine ID, Dual-Tone Multi-Frequency (DTMF), and more information.
 
     At the bottom, view the Providers, Billing details, and RTP information such as Jitter and Packet Loss.
+
 + **Raw Data**: Underlying data that populates the call.
+  
 + **SIP Trace**: Visual representation of SIP communications, see details in **SIP Traces**.
+  
 + **Simulate**: See details above for **Simulating Calls**.
+  
 + **Class5**: If you use the Class5 system, there will be some extra information, such as Request Parameters.
+  
 + **Refresh**: For Live calls, use **`Refresh`** to reload the logs to show the most recent changes. This is necessary, as some data processing happens through the CDR before it's displayed.
 
 !!! Tip "More on Call-IDs"
