@@ -2,7 +2,7 @@
 
 **Management :material-menu-right: Report**
 
-View and download **Reports** which provide extensive insights on historical data such as by Customers or Provider routes, [Dual-Tone Multi-Frequency (DTMF)](https://docs.connexcs.com/report/#dtmf) Cost, and [Per Number](https://docs.connexcs.com/report/#per-number) metrics.
+View and Download **Reports** that provides extensive insights on historical data such as by Customers or Provider routes, [Dual-Tone Multi-Frequency (DTMF)](https://docs.connexcs.com/report/#dtmf) Cost, and [Per Number](https://docs.connexcs.com/report/#per-number) metrics.
 
 The ability to [Schedule reports](https://docs.connexcs.com/report/#schedule-report) adds automation for frequent data requirements.  
 
@@ -11,9 +11,9 @@ The ability to [Schedule reports](https://docs.connexcs.com/report/#schedule-rep
 
 ## Breakout
 
-The **Breakout** report lists account customers with associated profits, and relevant data such as how much each customer costs, and the cost, Answer-Seisure Ratio (ASR) and Average Call Duration (ACD), etc.
+The **Breakout** report lists account customers with associated profits, and relevant data such as how much each customer costs, and the cost, the Answer-Seisure Ratio (ASR), and the Average Call Duration (ACD), etc.
 
-The information here is from processed CDR and considered "billing accurate," it means billing of the customers uses this data.
+The information here is from a processed CDR and considered as "billing accurate," meaning the billing for the customers uses this data.
 
 + Use the fields at the top of the page to filter by Customers and Providers, and by date range. Each individual column can also filter the grid directly.
 + Use the Columns and Filters to manage data presentation.
@@ -28,11 +28,11 @@ The information here is from processed CDR and considered "billing accurate," it
 
 ## Dual Tone Multi Frequency
 
-Use the **Dual Tone Multi Frequency (DTMF)** report for customers that send DTMF (for example, voice broadcast systems). This allows you to establish cost effectiveness for a route, and the cost per DTMF digit.
+Use the **Dual Tone Multi Frequency (DTMF)** report for customers that send DTMF (for example, voice broadcast systems). This allows you to establish the cost-effectiveness of a route and the cost per DTMF digit.
 
 ## Reports
 
-Currently, this provides the same functionality and options as the individual Breakout and DTMF reports. When addition of new reports materialize, it will replace them. This page has the same Pivot and Filtering functionality as the **Breakout** report.
+Currently, this provides the same functionality and options as the individual Breakout and DTMF reports. When new reports materialize, it will replace the old ones. This page has the same Pivot and Filtering functionality as the **Breakout** report.
 
 ## Per Number
 
