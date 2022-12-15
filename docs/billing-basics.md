@@ -16,6 +16,7 @@ Please make use of the CDR data for billing purposes.
 
 You should try to avoid Billing for the current and wherever possible, export data 24 hours following the final day for which you are billing.
 
+
 ## Why is "Minutes" X "Cost Per Minute" not the same as what my totals say
 
 Although there are some carriers that bill using this method, it's NOT the industry standard. It's unlikely that you're charged this way. Below is a simple example of why this doesn't work:
@@ -39,13 +40,7 @@ You should derive Balances from a ledger (your CDR records).
 
 ```mermaid
 graph TD
-BAL[Balance Mismatch] -->|Investigation Process| QTOTALS
-QTOTALS{Does the spend match<br/>& Top-ups Match?} --> RECALC
-RECALC[The floating balance may<br/>have malfunctioned, run a recalc] --> RECALCFIX
-RECALCFIX{Did this fix it?}
-RECALCFIX -->| No | REPORT
-QTOTALS -->| No | INV
-INV[Compare UTC/Common Daily Totals<br/> on both sides and isolate a day where <br/>the totals have substancial differences] --> QCONN
+BAL[Balance Mismatch] -->|Investigation Process|INV[Compare UTC/Common Daily Totals<br/> on both sides and isolate a day where <br/>the totals have substancial differences] --> QCONN
 QCONN{Does the connected calls<br/>totals roughly match?}
 QCONN -->| No | MISSINGCALLISSUE
 MISSINGCALLISSUE[Some calls are missing,<br/>we need to find them] --> ISOLATEHOUR
