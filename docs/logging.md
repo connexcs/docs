@@ -100,15 +100,14 @@ The causes of a dropped call are:
  1. **Downstream BYE**: When the call disconnects from the **originator's** side via a **BYE** message
  2. **Upstream BYE**: When the call disconnects from the **receiver** side via a **BYE** message.
  3. **MI Termination**: The system terminates the call when it finds that there has been no audio connection between the call's originator and the receiver.
+
      The system triggers a BYE message on both sides within the application.
-
-**4. Ping Timeout**:
-
+ 4. **Ping Timeout**:
 If you enable the Sip Ping feature under Customer:material-menu-right: Routing, the receiver and originator receives OPTION packets (every X seconds).
 
-The originator and the receiver should reply with 200 OK after receiving the OPTION packets. If either the originator or receiver misses sending the acknowledgment, the call terminates due to a "ping timeout."
+    The originator and the receiver should reply with 200 OK after receiving the OPTION packets. If either the originator or receiver misses sending the acknowledgment, the call terminates due to a "ping timeout."
 
-It prevents any long-duration calls as the system recognizes either the originator or receiver as inactive.
+    It prevents any long-duration calls as the system recognizes either the originator or receiver as inactive.
 
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMTI5NzYzMTcxNywzMzM2MzY4MTAsLTIyOD
