@@ -1,68 +1,40 @@
 # Billing Basics
 
-## How ConnexCS does billing
+## Balance Refresh Interval
 
-### Floating Balances
-
-At any time, you can check the balance of your customer accounts. The balance that you will read is a floating balance.
-
-When a call is completed, it is passed over to the billing engine, which produces a Call Detail Record (CDR) record and updates the balance. The balance should correlate with the CDR.
-
-However, there are scenarios (such as recalculations and rounding's deduplication) that means the balance may drift slightly. For this reason, the balance gets recalculated from CDR records between 60 seconds and 5 minutes.
+The ConnexCS balance gets updated every 60 seconds.
 
 ### Breakout Reports
 
-The breakout report calculates:
-
-* Every hour for the past 3 hours
-* Every day for the past 3 days
-
-The reason for this is to correct any delayed records or recalculations.
+Breakout Reports update in Real-time scenario and the consistency checked every 24-hours.
 
 ### How to bill
 
-You should NEVER bill based on the balance, or any associated delta. Equally, you should NOT bill based on the Breakout Report. Although these figures are as accurate as possible, they are not the source of the truth; both were derived from CDRs.
+Please make sure you aren't billing the customer based on the balance or associated delta.
 
-You should avoid billing for the present day and, wherever possible, export figures 24 hours after the last day for which you are billing.
+Please make use of the CDR data for billing purposes.
+
+You should try to avoid Billing for the current and wherever possible, export data 24 hours following the final day for which you are billing.
+
 
 ## Why is "Minutes" X "Cost Per Minute" not the same as what my totals say
 
-Although there are some carriers that bill using this method, it's NOT the industry standard. It's unlikely that you will be charged this way.
+Although there are some carriers that bill using this method, it's NOT the industry standard. It's unlikely that you're charged this way. Below is a simple example of why this doesn't work:
 
-Below is a simple example of why this doesn't work:
-
-**Scenario**
-
-* Rate: $0.005 USD
-* Calls: 100
-* Duration: (on all calls) 9.1 seconds
-* Per Second Rounding: Full-Up
-
-**Minutes X Duration (Incorrect Method)**
-
-* 100 calls * 9.1 seconds = 910 seconds = 15.16 minutes.
-  
-* 15.16 * $0.005 = $0.0758 USD.
-
-*This is the wrong way*
-
-**Correct Method**
-
-Calculate each call (in this scenario, we will do the same for all 100 calls).
-
-* 9.1 / 60 * 0.005 =  $0.00075833 (round up to 4dp = 0.0008)
-
-Repeat this process for each call (in this *example*, all 100 calls are the exactly the same).
-
-* 100 * 0.0008 = $0.08
+| **Scenario**                             | **Rate X Duration (Incorrect Method)**                | **Correct Method**                                                                         |
+|------------------------------------------|-------------------------------------------------------|--------------------------------------------------------------------------------------------|
+| **Rate**: $0.005 USD                     | 100 calls * 9.1 seconds = 910 seconds = 15.16 minutes | 1. Calculate each call (in this scenario, we will do the same for all 100 calls).          |
+| **Calls**: 100                           | 15.16 (Duration) * $0.005 (Rate)= **$0.0758 USD**     | (9.1 / 60) * 0.005 = $0.00075833 (round till to 4 decimal places = 0.0008)                 |
+| **Duration**: (on all calls) 9.1 seconds |                                                       | 2. Repeat this process for each call (in this *example*, all 100 calls are the exact same) |
+| **Per Second Rounding**: Full-Up         |                                                       | 100 * 0.0008 = $0.08                                                                       |
 
 ## Balance Mismatch
 
-If you get an estimated value from balances, which is OK different systems update the balance at different times. Some systems also automatically deduct a buffer balance to prevent overspending.
+It's acceptable to get estimates of spends while comparing the balances on two different systems. Although, some systems also automatically deduct a buffer balance to prevent overspend.
 
-!!! note "We don't entertain unsupported "balances don't match" statements. We can't do anything to help you investigate this type of problem."
+!!! note "Please make sure you support your balance mismatch with some statements, else we will have difficulties supporting this problem."
 
-Balances should be derived from a ledger (your CDR records).
+You should derive Balances from a ledger (your CDR records).
 
 ## Investigating Balance / Billing issues
 
@@ -82,5 +54,4 @@ QDUR -->| Yes | RATINGISSUE[Problem Resolved]
 RATINGISSUE[Rating Issue] --> 1CALL
 1CALL[Try to isolate a single call,<br/>take a few random samples and<br/>find the one with the biggest difference] --> REPORT
 REPORT[Report your finding to us<br/>and we can investigate further]
-
 ```
