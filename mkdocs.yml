@@ -13,6 +13,8 @@ extra_javascript:
 # - https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js
 #extra_css:
 #  - https://unpkg.com/mermaid@7.1.2/dist/mermaid.css
+plugins:
+    - mermaid2
 
 markdown_extensions:
   - admonition
