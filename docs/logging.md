@@ -16,7 +16,6 @@ View the log of Fraud events. See [**Setup Fraud Detection**](https://docs.conne
 
 ## Simulate
 
-
 Simulating calls lets providers identify areas of concern or just verify functionality, by testing in different setups and operational configurations.
 
 To Simulate Calls:
@@ -48,7 +47,6 @@ To search the Logs, at the top-right of the Logging page, enter the search for c
 
 Click on a specific Call ID to view details and run call tools.
 
-
 + **Call Details**: The initial screen shows current details, which include Routing Status, Authentication, Induced PDD (Post-Dial Delay), Real-time Transfer Protocol (RTP), Routing Engine ID, Dual-Tone Multi-Frequency (DTMF), and more information.
 
     At the bottom, view the Providers, Billing details, and RTP information such as Jitter and Packet Loss.
@@ -66,7 +64,6 @@ Click on a specific Call ID to view details and run call tools.
 !!! Tip "More on Call-IDs"
     See [**Call-ID**](/guides/howto/callid) for further information and troubleshooting.
 
-
 ### SIP Traces
 
 **SIP Tracing** is a diagnostic tool for phone systems using SIP (Session Initiation Protocol) for interactions across trunks and between endpoints. Traces give detailed information about calls and call attempts while debugging and troubleshooting.
@@ -75,8 +72,12 @@ Uses of SIP protocol include call setup, maintenance, and tear-down, this tool i
 
 Call quality issues are often identified using other methods.
 
+![sip trace](/logging/sipserver.jpg)
+
 !!! info "SIP Trace Captures"
-    The **ConnexCS** system supports always-on **SIP Trace** capture. We keep a record of every packet sent and received by your server over the last seven (7) days.
+    The **ConnexCS** system supports always-on **SIP Trace** capture.
+
+    We keep a record of every packet sent and received by your server over the last seven (7) days.
 
 To view the SIP Trace of a call:
 
@@ -89,9 +90,10 @@ To view the SIP Trace of a call:
 4. Options to download as Text or an Image.
 
 !!! note "Known issues with SIP Traces"
-    * **Missing SIP data**: SIP traces aren't always guaranteed. SIP packets are carried by UDP, which may cause the traces to be lossy at times. This is to be expected due to the nature of the architecture.
+
+    * **Missing SIP data**: SIP traces aren't always guaranteed. SIP packets are carried by UDP, which may cause the traces to be lossy at times. You can expect this due to the nature of the architecture.
     * **Missed call attempts**: If using SIP authentication, because there are two requests, it's possible that they hit our database out of order. This may cause the logging page to only display the first call attempt.
-    * These are considered reporting calls and don't impact the calls directly. They're both rare, typically observed in less than 1 in every 50,000 calls.
+    * Considered for reporting calls and don't impact the calls directly. They're both rare, typically observed in less than 1 in every 50,000 calls.
 
 [logging-sip]: /misc/img/logging-sip.png "SIP Traces"
 [logging-4]: /misc/img/236.png "logging-4"
