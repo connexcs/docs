@@ -72,7 +72,7 @@ Uses of SIP protocol include call setup, maintenance, and tear-down, this tool i
 
 Call quality issues are often identified using other methods.
 
-![sip trace](../../Images/sipserver.jpg)
+![sip trace](/logging/sipserver.jpg)
 
 !!! info "SIP Trace Captures"
     The **ConnexCS** system supports always-on **SIP Trace** capture.
