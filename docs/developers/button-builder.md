@@ -6,8 +6,9 @@ Use **Button Builder** in combination with [**Form Builder**](https://docs.conne
 
 !!! example "Example use"
     Create the ability to select one or more customers / DIDs (Direct Inward Dialing)
-    1.  Supplement with additional information from a form.
 
+    1.  Supplement with additional information from a form.
+    
     2.  Then, run Script Forge to send that data outside the system or perform bulk operations that may require repetition.
 
 ## Create new button
