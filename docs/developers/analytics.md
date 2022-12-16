@@ -44,6 +44,7 @@ Click :material-plus: to configure the following fields:
     * `Scatter`: 2 Axis of data
     * `Radar`: 1 Axis of data
     * `Gauge`: 1 Axis of data
+
 * **Source**: You can use several data sources, such as:
     * `Analytics`: Big Data multi-vector querying.
         ***Note:** Recalcs won't affect this data, and you  should never use it for accurate financial data.*
@@ -59,16 +60,20 @@ Click :material-plus: to configure the following fields:
          For example, when selecting ACD, instead of having an axis for date/time, it will just display a single scalar value).
     * `Time-based`- Select the option to group the data based on time.
 
-        For example, if you select "Hour," it displays a unique value for each hour).
+        For example, if you select "Hour," it displays a unique value for each hour.
+
 * **Collate / Group**: Select the option to group the data together.
+    For example, if you select "Customer," you would get a unique value for each customer.
 
-    For example: If you select "Customer," you would get a unique value for each customer.)
 * **Limit**: Specify the limit to display the amount of collated data. Don't include several values.
-* **Order By**: The column you wish to order the data by. This is useful in combination with limits.
 
+* **Order By**: The column you wish to order the data by. This is useful in combination with limits.
     For example, display the top 10 customers with the worst Automatic Call Distribution (ACD).
+
 * **Width**: When the graph renders on a page with several graphs, select the part of the page for the graph to occupy.
+  
 * **Stacked**: When using a line, area, or bar chart, each series of data plots the offset of the previous series (not from the 0 on that axis).
+  
 * **Filter**: Used to automatically filter the information displayed based on variables available from the location where the page is rendered.
 
     The format of the filter changes depending on the data source.
