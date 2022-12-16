@@ -89,7 +89,7 @@ To create a new Group, click :material-plus:.
 + **Name**: Enter the name for the group.
 + **Customer**(Available only when you add the Group from Class5, not when in the Customer management area): From the drop-down list, select the customer to whom the group applies.
 + **Extension**: Callers will use this extension to connect to this group.
-+ **Group Type** refers to the [**Group call routing strategies**](class5/creating-group/#group-call-routing-strategies) above:
++ **Group Type** refers to the [**Group call routing strategies**](https://docs.connexcs.com/class5/creating-group/#group-call-routing-strategies) above:
     + **Parallel** or **Sequential** strategies require Group Member setup:
         + Select the strategy then **`Save and Stay`**.
         + Go to the new **Group Members** tab.
