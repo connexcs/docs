@@ -1,10 +1,16 @@
 # Routing Global
+
 **Management :material-menu-right: Routing Global**
 
-Use **Routing Global** to create routing templates that can be applied to multiple customers. This is ideal when all or multiple customers are using a repeatable configuration, either the same type of route or the same routing settings. When you need to apply a change to routing for multiple customers, you only need to update the template. 
+Use **Routing Global** to create routing templates that you can apply to several customers.
+
+This is ideal when all or several customers are using a repeatable configuration, either the same kind of route or the same routing settings.
+
+When you need to apply a change to routing for several customers, you only need to update the template.
 
 ## Create Global Routing
-To setup a **Routing Global** template, first create it and then apply it to the customer account(s) using the **Tag** field. 
+
+To setup a **Routing Global** template, first create it and then apply it to the customer account(s) using the **Tag** field.
 
 **Step 1: Create the template**
 
@@ -14,7 +20,7 @@ To setup a **Routing Global** template, first create it and then apply it to the
 
 ![global routing](/misc/img/routing-global.png)
 
-1.3. The **Tag** field is essentially the name of the template. When customer routing is set up using the template, the Tag is visible in **Customer :material-menu-right: Edit :material-menu-right: Config :material-menu-right: Tags**.
+1.3. The **Tag** field is essentially the name of the template. When you use the template toset-up a customer, the Tag is visible in **Customer :material-menu-right: Edit :material-menu-right: Config :material-menu-right: Tags**.
 ![tags](/misc/img/tags.png)
 
 1.4. Select **`Save`**.
@@ -29,10 +35,12 @@ For each customer that needs the new template:
 
 2.3. On the Config tab, select the new template under **Tags**.
 
-2.4. Save the customer configuration. 
+2.4. Save the customer configuration.
 
 !!! info "Using Routing Global and Script Forge"
-    You can't use Routing Global templates to set routing details with ScriptForge (Vars box). With appropriate design, these can be configured directly under Customer Routing.
+    You can't use Routing Global templates to set routing details with ScriptForge (Vars box). 
+    
+    With appropriate design, you can configure this directly under Customer Routing.
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTY1MzgxMDE1MCwxMjIwNjI0NTI1LDEzND
 E1OTk2NTAsLTE5NTcwMzkxMiwxNTc3MzIxMTM1LDExMDUxODM1

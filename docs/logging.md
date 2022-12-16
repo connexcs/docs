@@ -16,6 +16,7 @@ View the log of Fraud events. See [**Setup Fraud Detection**](https://docs.conne
 
 ## Simulate
 
+
 Simulating calls lets providers identify areas of concern or just verify functionality, by testing in different setups and operational configurations.
 
 To Simulate Calls:
@@ -27,7 +28,7 @@ Click **`Simulate`** either from the **Logging** screen or from within a specifi
 + **Dialed Number**: Where the call will end (destination).
 + **CLI/ANI**: Where the call will originate from (configured on ConnexCS).
 + **Switch IP**: Where the call will traverse.
-+ **Customer IP**: The ConnexCS Customer IP address where the call will originate.
++ **Customer IP**: The ConnexCS Customer IP address is where the call will originate.
 + **Registered User**: (Optional) Enter a SIP extension user.
 + **Routing Engine**: Select the regional zone.
 
@@ -36,6 +37,7 @@ Click **`Simulate`**.
 The simulation call result will appear in logging. The Call ID will begin with a **`SIM`** tag. Click the Call ID to view the call's routing status.
 
 !!! info "Testing a fixed issue"
+
     After you have fixed a routing issue with a specific call, you can go into the Call ID and run the Simulate tool to ensure any routing issues get resolved and the call is now successful.
 
 ## Searching the Logs
@@ -45,6 +47,7 @@ To search the Logs, at the top-right of the Logging page, enter the search for c
 ### Call ID Details
 
 Click on a specific Call ID to view details and run call tools.
+
 
 + **Call Details**: The initial screen shows current details, which include Routing Status, Authentication, Induced PDD (Post-Dial Delay), Real-time Transfer Protocol (RTP), Routing Engine ID, Dual-Tone Multi-Frequency (DTMF), and more information.
 
@@ -62,6 +65,7 @@ Click on a specific Call ID to view details and run call tools.
 
 !!! Tip "More on Call-IDs"
     See [**Call-ID**](/guides/howto/callid) for further information and troubleshooting.
+
 
 ### SIP Traces
 
@@ -85,7 +89,6 @@ To view the SIP Trace of a call:
 4. Options to download as Text or an Image.
 
 !!! note "Known issues with SIP Traces"
-
     * **Missing SIP data**: SIP traces aren't always guaranteed. SIP packets are carried by UDP, which may cause the traces to be lossy at times. This is to be expected due to the nature of the architecture.
     * **Missed call attempts**: If using SIP authentication, because there are two requests, it's possible that they hit our database out of order. This may cause the logging page to only display the first call attempt.
     * These are considered reporting calls and don't impact the calls directly. They're both rare, typically observed in less than 1 in every 50,000 calls.
@@ -108,12 +111,3 @@ The causes of a dropped call are:
     The originator and the receiver should reply with 200 OK after receiving the OPTION packets. If either the originator or receiver misses sending the acknowledgment, the call terminates due to a "ping timeout."
 
     It prevents any long-duration calls as the system recognizes either the originator or receiver as inactive.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5NzYzMTcxNywzMzM2MzY4MTAsLTIyOD
-c2NDgxOCwtNzgxMjgyMzA4LDgyMTMzMjMxNCwtODU5NzU0NjQ3
-LDM5NDI0OTIzOSwtMTAwMTg1MDQsMTYxMDQyMjc5NCwtMTY3OD
-E2ODAwNCwtNDg4Nzc1NDE4LDEwNDExNzc0MDMsODY2NDIxMzEw
-LC0xNzM2OTg5ODczLC0xMDgyOTQ2NTkyLDEyOTQzODA5ODMsNj
-I1MTE3NDQ2LDY0MDcyMDg0NCwxMjIyNDcyMTU0XX0=
--->
