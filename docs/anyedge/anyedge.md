@@ -13,12 +13,14 @@ Click the :material-plus: button to set the following:
 * **User Account Control (UAC) Test (NAT)**: Select the method used to detect whether NAT is in use.
 
     See [**Far-End NAT Traversal**](https://docs.connexcs.com/anyedge/anyedge/#far-end-nat-network-address-translation-traversal) for details.
+
 * **Algorithm**: How to distribute calls.
 
     See [**Inbound Proxy / Dispatcher / Load Balancer**](https://docs.connexcs.com/anyedge/anyedge/#inbound-proxy-dispatcher-load-balancer) for details.
 * **Cyber-Physical System(CPS)**: Total calls per second allowed.
 
     See [**Metrics**](https://docs.connexcs.com/anyedge/anyedge/#metrics) for details
+
 * **Insertion**: Set whether the server acts 'Stateless' (no reply needed) or 'Transactional' (waits for reply).
   
 * **Validate**: Find the checks to use, if any.
@@ -161,7 +163,7 @@ Compaction uses well-established short notations for longer headers.
 
 To use compaction, you need to select **Compact Enabled.**
 
-You can also create a allow list of fields if you don't want to compact them. 
+You can also create a allow list of fields if you don't want to compact them.
 
 You can enable Compaction for calls in and/or calls out.
 
