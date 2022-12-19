@@ -10,16 +10,26 @@ ConnexCS **AnyEdge**, an anycast load-balancer/dispatcher, is a next-generation 
 
 Click the :material-plus: button to set the following:
 
-* **User Account Control (UAC) Test (NAT)**: Select the method used to detect whether NAT is in use. See [**Far-End NAT Traversal**](https://docs.connexcs.com/anyedge/anyedge/#far-end-nat-traversal) for details.
-* **Algorithm**: How to distribute calls. See [**Inbound Proxy / Dispatcher / Load Balancer**](https://docs.connexcs.com/anyedge/anyedge/#inbound-proxy-dispatcher-load-balancer) for details.
-* **Cyber-Physical System(CPS)**: Total calls per second allowed. See [**Metrics**](https://docs.connexcs.com/anyedge/anyedge/#metrics) for details
+* **User Account Control (UAC) Test (NAT)**: Select the method used to detect whether NAT is in use.
+    See [**Far-End NAT Traversal**](https://docs.connexcs.com/anyedge/anyedge/#far-end-nat-network-address-translation-traversal) for details.
+* **Algorithm**: How to distribute calls.
+    See [**Inbound Proxy / Dispatcher / Load Balancer**](https://docs.connexcs.com/anyedge/anyedge/#inbound-proxy-dispatcher-load-balancer) for details.
+* **Cyber-Physical System(CPS)**: Total calls per second allowed.
+    See [**Metrics**](https://docs.connexcs.com/anyedge/anyedge/#metrics) for details
 * **Insertion**: Set whether the server acts 'Stateless' (no reply needed) or 'Transactional' (waits for reply).
 * **Validate**: Find the checks to use, if any.
+
     **For example**, a Basic Check will verify if all the fields are appropriately formed, or else it rejects the package (protects from attacks such as buffer overflow).
+
     Select one or more checks to validate those fields.
-    See [**SIP Packet Validation**](https://docs.connexcs.com/anyedge/anyedge/#sip-packet-validation) for details.
-* **Compress In**: Select method(s) to compress inbound data, not only for lower bandwidth use, but also avoid User Datagram Protocol (UDP) fragmentation. See [**Compaction & Compression**](https://docs.connexcs.com/anyedge/anyedge/#compaction-compression) for details.
-* **Compress Out**: Helps when using Outbound Proxy. See [**Compaction & Compression**](https://docs.connexcs.com/anyedge/anyedge/#compaction-compression) for details.
+
+    See [**SIP Packet Validation**](https://docs.connexcs.com/anyedge/anyedge/#sip-session-initiation-protocol-packet-validation) for details.
+* **Compress In**: Select method(s) to compress inbound data, not only for lower bandwidth use, but also avoid User Datagram Protocol (UDP) fragmentation.
+
+    See [**Compaction & Compression**](https://docs.connexcs.com/anyedge/anyedge/#compaction-compression) for details.
+* **Compress Out**: Helps when using Outbound Proxy.
+
+    See [**Compaction & Compression**](https://docs.connexcs.com/anyedge/anyedge/#compaction-compression) for details.
 * **Flags**: *in progress*
 * **Primary Attempts**: (not useful for less than 3 servers) Set the number of attempts before going to a second zone.
 * **Secondary Attempts**: (not useful for less than 3 servers) Set the number of attempts before going to a third zone.
@@ -44,7 +54,9 @@ Combined with global PoPs and detailed metrics, we’ve you covered even if you 
 
 NAT (Network Address Translation) is a technique which intermediates communication between a LAN (Local Area Network) and a WAN (Wide Area Network aka. Internet).
 
-When a packet traverses NAT, the UDP packet headers are appropriately re-written by your NAT device, thus the headers in the SIP packet are often not rewritten. Here are some ways that AnyEdge facilitates these SIP rewrites:
+When a packet traverses NAT, the UDP packet headers are appropriately re-written by your NAT device, thus the headers in the SIP packet are often not rewritten.
+
+Here are some ways that AnyEdge facilitates these SIP rewrites:
 
 1. Hardcode the external IP Address.
 2. Session Traversal Utilities for NAT (STUN) to find the external IP address.
@@ -85,7 +97,9 @@ Use the following graphs to view the metrics:
 
 ### SIP Packet Validation
 
-Malformed packets can cause problems for your internal network, such as, buffer overflow attacks. To avoid these problems you can select some specific options while enabling SIP Packet Validation:
+Malformed packets can cause problems for your internal network, such as, buffer overflow attacks.
+
+To avoid these problems you can select some specific options while enabling SIP Packet Validation:
 
 * Check the integrity of the SDP body (if it exists).
 * Check the format and the integrity of each header body.
@@ -95,7 +109,9 @@ Malformed packets can cause problems for your internal network, such as, buffer 
 * Checks the URI of the "To" field and whether the domain has valid characters
 * Checks the URI of the "Contact" field.
 
-If a packet fails to validate, you can select a method to handle. You can handle this with a "400" error or with an "X-Validate-Fail" header. The reasons why a packet fails to validate are:
+If a packet fails to validate, you can select a method to handle. You can handle this with a "400" error or with an "X-Validate-Fail" header.
+
+The reasons why a packet fails to validate are:
 
 * No SIP message
 * Header Parsing error
