@@ -11,12 +11,16 @@ ConnexCS **AnyEdge**, an anycast load-balancer/dispatcher, is a next-generation 
 Click the :material-plus: button to set the following:
 
 * **User Account Control (UAC) Test (NAT)**: Select the method used to detect whether NAT is in use.
+
     See [**Far-End NAT Traversal**](https://docs.connexcs.com/anyedge/anyedge/#far-end-nat-network-address-translation-traversal) for details.
 * **Algorithm**: How to distribute calls.
+
     See [**Inbound Proxy / Dispatcher / Load Balancer**](https://docs.connexcs.com/anyedge/anyedge/#inbound-proxy-dispatcher-load-balancer) for details.
 * **Cyber-Physical System(CPS)**: Total calls per second allowed.
+
     See [**Metrics**](https://docs.connexcs.com/anyedge/anyedge/#metrics) for details
 * **Insertion**: Set whether the server acts 'Stateless' (no reply needed) or 'Transactional' (waits for reply).
+  
 * **Validate**: Find the checks to use, if any.
 
     **For example**, a Basic Check will verify if all the fields are appropriately formed, or else it rejects the package (protects from attacks such as buffer overflow).
@@ -24,14 +28,19 @@ Click the :material-plus: button to set the following:
     Select one or more checks to validate those fields.
 
     See [**SIP Packet Validation**](https://docs.connexcs.com/anyedge/anyedge/#sip-session-initiation-protocol-packet-validation) for details.
+
 * **Compress In**: Select method(s) to compress inbound data, not only for lower bandwidth use, but also avoid User Datagram Protocol (UDP) fragmentation.
 
     See [**Compaction & Compression**](https://docs.connexcs.com/anyedge/anyedge/#compaction-compression) for details.
+
 * **Compress Out**: Helps when using Outbound Proxy.
 
     See [**Compaction & Compression**](https://docs.connexcs.com/anyedge/anyedge/#compaction-compression) for details.
+
 * **Flags**: *in progress*
+  
 * **Primary Attempts**: (not useful for less than 3 servers) Set the number of attempts before going to a second zone.
+  
 * **Secondary Attempts**: (not useful for less than 3 servers) Set the number of attempts before going to a third zone.
 
 ### AnyEdge Domain
@@ -152,7 +161,9 @@ Compaction uses well-established short notations for longer headers.
 
 To use compaction, you need to select **Compact Enabled.**
 
-You can also create a allow list of fields if you don't want to compact them. You can enable Compaction for calls in and/or calls out.
+You can also create a allow list of fields if you don't want to compact them. 
+
+You can enable Compaction for calls in and/or calls out.
 
 See the table for available headers.
 
@@ -171,7 +182,7 @@ See the table for available headers.
 
 #### Compression
 
-You can ebable Compression or Decompression for Inbound and/or Outbound by selecting either "Compress Enabled (Deflate)," "Compress Enabled GZip," or "Decompress Enabled."
+You can enable Compression or Decompression for Inbound and/or Outbound by selecting either "Compress Enabled (Deflate)," "Compress Enabled GZip," or "Decompress Enabled."
 
 The process of data compression depends on how auxiliary flags control it.
 
