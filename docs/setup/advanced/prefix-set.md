@@ -6,7 +6,7 @@ A **Prefix Set** groups one or more prefixes together. You can then apply this s
 
 Without the ability to use a Prefix Set, you need to manually configure each individual Customer or Route, increasing the possibility of human error.
 
-With Prefix Sets, we avoid these errors and reduce configuration time overall.
+With Prefix Sets, we avoid these errors and reduce configuration time as a whole.
 
 ConnexCS supports plain text as well as regular expressions when building Prefix Sets for greater flexibility.
 
@@ -19,20 +19,22 @@ ConnexCS supports plain text as well as regular expressions when building Prefix
 3. **Data** includes the prefixes, one per line (plain-text or regular expressions).
 
     See [**Example Dial Strings for Prefix sets**](/setup/advanced/prefix-set/#example-dial-strings-for-prefix-sets) below.
-4. Use **Flags** (optional) to setup global blacklists.
+
+4. Use **Flags** (optional) to setup global deny lists.
 
     See [**Flags**](/setup/advanced/prefix-set/#flags) below.
+
 5. Click **`Save`**.
 
 **Step 2: Apply Prefix Set**
 
 You can apply Prefix Sets to the following locations under the Management menu:
 
-+ Customer :material-menu-right: Routing :material-menu-right: Ingress Routing :material-menu-right: Basic :material-menu-right: [Dial String Prefix Set](https://docs.connexcs.com/customer/routing/#basic)
+  1. Customer :material-menu-right: Routing :material-menu-right: Ingress Routing :material-menu-right: Basic :material-menu-right: [Dial String Prefix Set](https://docs.connexcs.com/customer/routing/#basic)
 
-+ Routing :material-menu-right: Routing Global :material-menu-right: Basic :material-menu-right: [Dial String Prefix Set](https://docs.connexcs.com/global-routing/)
+  2. Routing :material-menu-right: Routing Global :material-menu-right: Basic :material-menu-right: [Dial String Prefix Set](https://docs.connexcs.com/global-routing/)
 
-+ Rate Card :material-menu-right: Customer Rate Cards :material-menu-right: Profits :material-menu-right: :material-plus: :material-menu-right: Config :material-menu-right: [Prefix Set](https://docs.connexcs.com/customer-ratecard/#main-tab)
+  3. Rate Card :material-menu-right: Customer Rate Cards :material-menu-right: Profits :material-menu-right: :material-plus: :material-menu-right: Config :material-menu-right: [Prefix Set](https://docs.connexcs.com/customer-ratecard/#main-tab)
 
 ## Flags
 
