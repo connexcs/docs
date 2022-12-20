@@ -27,7 +27,7 @@ You can request customers to approve a contract before they can dial, or if they
 2. Select the **Contract** (the most recent revision is automatically chosen).
 3. (Optional) If you select both the **Grace Date** and **Required**, the customer's account will remain active until the set date.
 
-    At that point, if the contract isn't signed, the account is suspended.
+    At that point, if the contract isn't signed, the account is then suspended.
 
 !!! warning "Plain-text signature"
     "Signing" a contract is the user's input of their name into a text box.
