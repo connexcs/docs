@@ -43,9 +43,10 @@ To add a new ConnexCS **User**, click :material-plus: in the **Users** section o
 + **IP Whitelist:** Specify the IP or range of IPs this user can use to connect to the ConnexCS Control Panel.
 
     They won't be able to log in from any other IP, so be careful with this setup. Specify IPs as follows:
-  + Single IP address: For example, 1.1.1.1
-  + Wildcard for IP addresses: For example, 1.1.1
-  + Range of IP addresses in CIDR (Classless Inter-Domain Routing) format: For example, 1.1.1.0/31
+
+    + Single IP address: **For example**, 1.1.1.1
+    + Wildcard for IP addresses: **For example**, 1.1.1
+    + Range of IP addresses in CIDR (Classless Inter-Domain Routing) format: **For example**, 1.1.1.0/31
 
 + **Shared Ticket:** If enabled, all Users in the account can view tickets created by this user based on the email address of this User.
 
@@ -98,7 +99,7 @@ Typically, you create user groups to assign permissions depending on the roles t
 **Step 1: Create a Group**
 
 1. In the **Groups** section, click :material-plus:.
-2. Enter a Group **Name** (For example, Engineering, Sales, etc).
+2. Enter a Group **Name** (**For example**, Engineering, Sales, etc).
 3. Set **Default Permissions** for the group's global permissions: `Create`, `Update`, `Read`, and `Delete`. The default setting includes all four permissions.
 
     Click `X` to remove permission.
@@ -109,7 +110,7 @@ Typically, you create user groups to assign permissions depending on the roles t
 **Step 2: Specify Group Permissions**
 
 1. Click on the **Group** to view the "Add Group Permission" table. Click :material-plus: next to the table.
-    + **Area:** Select the functional area of the Control Panel for the specific permission (for example, Customer, Carrier, Logging, ScriptForge, etc).
+    + **Area:** Select the functional area of the Control Panel for the specific permission (**for example**, Customer, Carrier, Logging, ScriptForge, etc).
     + **Access:** Define the granular permissions for this area.
 
         You can select all four access options.
@@ -148,10 +149,10 @@ Level and access determine the permissions:
 + Create, Read, Update, and Delete (CRUD) are the categories for both Global and Granular access.
 + Granular permissions override and nullify all Global permissions.
 
-    For example, if you assign CRUD permissions Globally, and assign Granular Read permissions to 3 features, the group will have Read-Only permissions for those 3 features.
+    **For example**, if you assign CRUD permissions Globally, and assign Granular Read permissions to 3 features, the group will have Read-Only permissions for those 3 features.
 + If you don't assign Granular permissions to a group, the group has access to use all features in the ConnexCS Control Panel based on the level of Global permissions (CRUD).
 
-    For example, if you assign only Create and Read permissions globally, the group has permissions to create and read data for all features.
+    **For example**, if you assign only Create and Read permissions globally, the group has permissions to create and read data for all features.
 
 ### Default Reseller
 
