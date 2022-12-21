@@ -35,6 +35,8 @@ You can apply Prefix Sets to the following locations under the Management menu:
   2. Routing :material-menu-right: Routing Global :material-menu-right: Basic :material-menu-right: [Dial String Prefix Set](https://docs.connexcs.com/global-routing/)
 
   3. Rate Card :material-menu-right: Customer Rate Cards :material-menu-right: Profits :material-menu-right: :material-plus: :material-menu-right: Config :material-menu-right: [Prefix Set](https://docs.connexcs.com/customer-ratecard/#main-tab)
+  
+  4. Customer :material-menu-right: Routing :material-menu-right: Ingress Routing :material-menu-right: Strategy :material-menu-right: [Prefix Set](https://docs.connexcs.com/customer-ratecard/#main-tab)
 
 ## Flags
 
@@ -49,7 +51,7 @@ Use Flags to create a *Global CLI Blacklist* or a *Global Dialled Number Blackli
 
 Prefix Sets and all Dial String fields accept plain text or regular expressions. List only one prefix per line. Here are 3 samples using plain text, regex, or a mix:
 
-**Plan-Text**
+**Plain-Text**
 
 ```
 441
@@ -57,7 +59,6 @@ Prefix Sets and all Dial String fields accept plain text or regular expressions.
 ```
 
 **Regular Expression (RegEx)**
-
 ```
 ^44(1|2)
 ```
