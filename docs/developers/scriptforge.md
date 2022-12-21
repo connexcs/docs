@@ -18,6 +18,7 @@ ConnexCS offers several libraries specifically for use with ConnexCS. [**Develop
 
 You can include some more modules (from npm), available for applications and drivers only.
 
+
 The purpose is to keep the sandbox lightweight and include only the necessary modules:
 
 |Modules||||
@@ -42,6 +43,7 @@ You can find sample scripts in our GitHub repository > [**example applications**
 
 ## Coding Basics
 
+
 Scripts and Apps typically start in the `main()` function and expect to return a promise. The first parameter is typically an object called `data`.
 
 ### Throwing Errors (Class 4)
@@ -55,6 +57,7 @@ throw new Error('404 Not Found');
 ```
 
 *(**SIP:** Session Initiation Protocol, **DID:** Direct Inward Dialing)
+
 
 ### Class 4 Routing (Routes and Direct Inward Dial)
 
@@ -132,6 +135,12 @@ module.export = {
 1. To add a script, click :material-plus:.
 2. Specify the script **Name**.
 3. Select the **Type**:
+   * `Script`- This is the fastest way to execute custom code and is "synchronous" execution. This is mainly used for manipulations or calculations. It can't use libraries or work with Promises.
+   * `App`- Feature rich applications which can include a preset (whitelist) of available modules, the penalty of the extra features is a slightly higher latency.
+   * `Driver`- A driver works as an intermediary between ConnexCS and any external system. You can write drivers to bridge the ConnexCS DID provisioning system to a provider of your choice or build more complicated alerts.
+  
+4. Click **`Save`**.
+
 
     * `Script`- This is the fastest way to execute custom code and is "synchronous" execution.
 	    This is mainly used for manipulations or calculations.
@@ -170,7 +179,7 @@ If script shows an error, add this and then run the script again:
 
 ### Assign the script to other functions
 
-ScriptForge was initially designed to run from the routing engine only, but it's available for the following scenarios:
+ScriptForge was initially designed to run from the routing-engine only, but it's available for the following scenarios:
 
 **Class 4 Routing (Termination) - (App or Script)**:
 Management :material-menu-right: Customer :material-menu-right: [Your Customer] :material-menu-right: Routing :material-menu-right: [Your Route] :material-menu-right: ScriptForge
@@ -181,7 +190,6 @@ Management :material-menu-right: Customer :material-menu-right: [Your Customer] 
 **Class 5 Programmable Voice - (App only)**
 
 **Drivers - (App only)**:
-
 Currently available for Alert & DID
 
 [s2]: /developers/img/176.png "s2"
