@@ -2,13 +2,18 @@
 
 **Setup :material-menu-right: AnyEdge**
 
-ConnexCS **AnyEdge**, an anycast load-balancer/dispatcher, is a next-generation solution for Edge Session Initiation Protocol (SIP)  providing high-reliability and custom Call Distribution algorithms (Weights and Priorities).
+ConnexCS **AnyEdge** acts as a load-balancer / dispatcher. It balances the traffic between the SIP servers and the customers.
+
+It's a next-generation solution for the Edge Session Initiation Protocol (SIP).
+
+It provides high-reliability and custom Call Distribution algorithms (Weights and Priorities).
 
 ## AnyEdge Setup
 
 ### Configure AnyEdge
 
 Click the :material-plus: button to set the following:
+
 
 * **User Account Control (UAC) Test (NAT)**: Select the method used to detect whether NAT is in use.
 
@@ -74,7 +79,7 @@ Here are some ways that AnyEdge facilitates these SIP rewrites:
 3. SIP (Session Initiation Protocol) ALG (Application Layer Gateway).
 4. Far End NAT Traversal.
 
-We can use any of the following indicators to detect if NAT is present in the UAC.
+You can use any of the following indicators to detect if NAT is present in the UAC.
 
 * Search the Contact header  field for occurrences of RFC1918 / RFC6598 addresses.
 * Use the "received" test: "address in Via" to compare against the source IP address used for signaling.
@@ -101,10 +106,13 @@ The primary use case for **AnyEdge** is to disseminate calls to a pool of SIP Se
 
 You must set the load balancer's CPS limit. You can view both the CPS and the totals for the number of calls that failed because of the CPS breach.
 
+The CPS limit of the load balancer needs to be set-up. You can view both the CPS and the totals for the number of calls that failed because of the CPS breach.
+
 Use the following graphs to view the metrics:
 
 1. CPS - Calls Per Second
 2. CPS Breach
+
 
 ### SIP Packet Validation
 

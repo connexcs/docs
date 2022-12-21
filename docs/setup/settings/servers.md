@@ -15,6 +15,7 @@ Delivery is within 5 minutes.
 !!! note "Available Balance needed for server deployment"
     To deploy a server, you must have $20 (+ $20 X other servers in your account) available balance.
 
+
 !!! warning "Impact on services"
     If you are a serious carrier *Never let your account run out of credit*. It should go without saying, but if your account runs out of credit, it impacts the service and it's restoration may not be instant.
 
@@ -43,6 +44,7 @@ To create a **Cluster**, click **`Cluster`**, and then click **:material-plus:**
 When you deploy a new server, there is an option to select one of the configured Clusters.
 
 !!! info "Benefits of clustering"
+
     1. **Better control over CPS and Channel load-balancing:** If you set CPS to 10, clustered servers will allow 10 CPS total; un-clustered servers will allow 10 CPS per server, going over the allowed CPS with a particular carrier.
     2. **Shared User Location Information:** Un-Clustered servers will have difficulty sharing registration information. It's possible to select "UAC Location Sharing" for each of the un-clustered servers to share this information.
 
@@ -63,13 +65,13 @@ To view RTP Servers:
 1. Click **`RTP Servers`**.
 
      A list of your current RTP servers appears, with columns for IP address, aliases, and zones.
+
 2. Click **`Refresh`** to reload the page to show the most current changes, if any.
 
     ![alt text][rtpserver]
 
 !!! Tip "Media Server Selection"
     You should choose a media server that adds the least latency to the call.
-
     If your customer is in Bangalore and your carrier is in New York, use either Bangalore or New York as your media proxy.
 
 ## Server Details
@@ -84,8 +86,8 @@ These are the same fields found under **Server List** above.
 
 When enabled, we can specify another server in the cluster to route the traffic, if the server reaches capacity based on the allowed CPS and Channels.
 
-For example, if the CPS or Channels limits have reached, capacity failover will block the next call unless there is another server to route the call.
 
+For example, if the CPS or Channels limits have reached, capacity failover will block the next call unless there is another server to route the call.
 
 ### Server Config
 
@@ -140,11 +142,9 @@ Select certificates to apply to a server.
 To add a Certificate to a sever,
 
 1. Click :material-plus:.
-
-   + **Certificate**: Select from a list of Certificates managed under **Setup :material-menu-right: Information :material-menu-right: [Certificate](/setup/information/certificate/)**.
-   + **Type**: Select Server or Client as appropriate.
-
-2. Click **`Save`**.
+2. **Certificate**: Select from a list of Certificates managed under **Setup :material-menu-right: Information :material-menu-right: [Certificate](/setup/information/certificate/)**.
+3. **Type**: Select Server or Client as appropriate.
+4. Click **`Save`**.
 
 ### Server Actions Menu
 
@@ -155,9 +155,10 @@ Click **`Actions`** to open the **Server Actions Menu**. The following actions a
 + **Stop Server**: Deactivates the server
 + **Restart Server**: Reboots the server.
 + **OS Cycle**: Shuts down the server using the operating system's mechanisms.
-+ **Power Cycle**: Shuts down the server using a hard reset (emulates pressing the power button).
++ **Power Cycle**: Shuts down the server using a hard reset (emulating pressing the power button).
 
 !!! warning "Impact on Services"
+
     These actions occur in real-time, and performing any of them could affect services.
 
     We recommend you avoid using them unless you understand the results. 
@@ -169,6 +170,7 @@ Click **`Actions`** to open the **Server Actions Menu**. The following actions a
 ### Resize Capacity
 
 Use this to update the Channels for the selected server. The update will be active in 15 minutes.  
+
 
 !!! warning "Impact on services"
     If you increase Channels to 1001 or more, the server will reboot as soon as you click **`Save`**. All calls will stop, and the server can take up to 10 minutes to finish rebooting and begin services again.
@@ -206,6 +208,3 @@ When a user endpoint registers with UDP via NAT, it creates a port mapping. Thus
 [server-update]: /setup/img/server-update.png "Update Server"
 [server-cert1]: /setup/img/server-cert1.png "Server Certificates"
 [server-6]: /setup/img/reactivateserver.png "Reactivate Server"
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbODkzMzM1NjE2XX0=
--->
