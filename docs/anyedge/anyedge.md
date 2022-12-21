@@ -14,67 +14,97 @@ It provides high-reliability and custom Call Distribution algorithms (Weights an
 
 Click the :material-plus: button to set the following:
 
-+ **User Account Control (UAC) Test (NAT)**: Select the method used to detect whether NAT is in use. See [**Far-End NAT Traversal**](https://docs.connexcs.com/anyedge/anyedge/#far-end-nat-traversal) for details.
-+ **Algorithm**: How to distribute calls. See [**Inbound Proxy / Dispatcher / Load Balancer**](https://docs.connexcs.com/anyedge/anyedge/#inbound-proxy-dispatcher-load-balancer) for details.
-+ **Calls per Second (CPS)**: Total calls per second allowed. See [**Metrics**](https://docs.connexcs.com/anyedge/anyedge/#metrics) for details.
-+ **Insertion**: Set whether the server acts 'Stateless' (no reply needed) or 'Transactional' (waits for a reply).
-+ **Validate**: Find the checks to use, if any. For example, a Basic Check will verify if all the fields are properly filled in. If the fields are not verified the packet is rejected. It protects from attacks such as buffer overflow). Select one or more checks to confirm those fields. See SIP Packet Validation for details. Select one or more checks to validate those fields. See [**SIP Packet Validation**](https://docs.connexcs.com/anyedge/anyedge/#sip-packet-validation) for details.
-+ **Compress In**: Select method(s) to compress inbound data, not only for lower bandwidth use but also to avoid User Datagram Protocol (UDP) fragmentation. See [**Compaction & Compression**](https://docs.connexcs.com/anyedge/anyedge/#compaction-compression) for details.
-+ **Compress Out**: This is useful when using Outbound Proxy. See [**Compaction & Compression**](https://docs.connexcs.com/anyedge/anyedge/#compaction-compression) for details.
-+ **Flags**: currently n/a
-+ **Primary Attempts**: Set the number of attempts before going to a second zone. It is not useful for less than 3 servers.
-+ **Secondary Attempts**: Set the number of attempts before going to a third zone. It is not useful for less than 3 servers.
+
+* **User Account Control (UAC) Test (NAT)**: Select the method used to detect whether NAT is in use.
+
+    See [**Far-End NAT Traversal**](https://docs.connexcs.com/anyedge/anyedge/#far-end-nat-network-address-translation-traversal) for details.
+
+* **Algorithm**: How to distribute calls.
+
+    See [**Inbound Proxy / Dispatcher / Load Balancer**](https://docs.connexcs.com/anyedge/anyedge/#inbound-proxy-dispatcher-load-balancer) for details.
+* **Cyber-Physical System(CPS)**: Total calls per second allowed.
+
+    See [**Metrics**](https://docs.connexcs.com/anyedge/anyedge/#metrics) for details
+
+* **Insertion**: Set whether the server acts 'Stateless' (no reply needed) or 'Transactional' (waits for a reply).
+  
+* **Validate**: Find the checks to use, if any.
+
+    **For example**, a Basic Check will verify if all the fields are appropriately formed, or else it will reject the package (protecting from attacks such as buffer overflow). Select one or more checks to validate those fields.
+
+    Select one or more checks to validate those fields.
+
+    See [**SIP Packet Validation**](https://docs.connexcs.com/anyedge/anyedge/#sip-session-initiation-protocol-packet-validation) for details.
+
+* **Compress In**: Select method(s) to compress inbound data, not only for lower bandwidth use but also to avoid User Datagram Protocol (UDP) fragmentation.
+
+    See [**Compaction and Compression**](https://docs.connexcs.com/anyedge/anyedge/#compaction-compression) for details.
+
+* **Compress Out**: Helps when using Outbound Proxy.
+
+    See [**Compaction and Compression**](https://docs.connexcs.com/anyedge/anyedge/#compaction-compression) for details.
+
+* **Flags**: *in progress*
+  
+* **Primary Attempts**: (not useful for less than 3 servers) Set the number of attempts before going to a second zone.
+  
+* **Secondary Attempts**: (not useful for less than 3 servers) Set the number of attempts before going to a third zone.
 
 ### AnyEdge Domain
 
-After AnyEdge configuration is complete, click **:material-plus:** next to Domains to configure a specific domain. Complete it with the same settings as Configure AnyEdge. It also provides an extra Transport Layer Security (TLS) configuration for SIP protection.
+After AnyEdge configuration is complete, click **:material-plus:** next to Domains to configure a specific domain with the same settings as Configure AnyEdge.
+
+It can provide added Transport Layer Security (TLS) configuration for SIP protection.
 
 ### AnyEdge Destinations
 
-Click :material-plus: button to specify the Destination IP and one or more Limit (Primary) and Backup (Secondary) Zones.
+Click :material-plus: button to specify the Destination IP, and one or more Limit (Primary) and Backup (Secondary) Zones.
 
 ## Capabilities
 
-The ConnexCS **AnyEdge** load balancer is a high-performance application. It is designed for maximum throughput using multiple cores. Combined with global PoPs and detailed metrics, we’ve got you covered even if you have requirements that exceed 10K calls per second.
+The ConnexCS **AnyEdge** load balancer is a high-performance application designed for maximum throughput using several cores.
 
-### Far End NAT (Network Address Translation) Traversal
+Combined with global PoPs and detailed metrics, we’ve got thatyou covered even if you have requirements that exceed 10K calls per second.
 
-NAT (Network Address Translation) is a technique that intermediates communication between a LAN (Local Area Network) and a WAN (Wide Area Network, aka. the Internet).
+### Far End NAT Traversal
 
-When a packet traverses NAT, the UDP packet headers are correctly rewritten by your NAT device. But the headers in the SIP packet are often not rewritten. Here are some ways that AnyEdge facilitates these SIP rewrites:
+NAT (Network Address Translation) is a technique that intermediates communication between a LAN (Local Area Network) and a WAN (Wide Area Network aka. Internet).
 
-**1.** Hardcode the external IP Address.
+When a packet traverses NAT, the UDP packet headers are appropriately rewritten by your NAT device; thus, the headers in the SIP packet are often not rewritten.
 
-**2.** Session Traversal Utilities for NAT (STUN) to find the external IP address.
+Here are some ways that AnyEdge facilitates these SIP rewrites:
 
-**3.** SIP (Session Initiation Protocol) and ALG (Application Layer Gateway).
-
-**4.** Far End NAT Traversal.
+1. Hardcode the external IP Address.
+2. Session Traversal Utilities for NAT (STUN) to find the external IP address.
+3. SIP (Session Initiation Protocol) ALG (Application Layer Gateway).
+4. Far End NAT Traversal.
 
 You can use any of the following indicators to detect if NAT is present in the UAC.
 
-+ Search the Contact header  field for occurrences of RFC1918 / RFC6598 addresses.
-+ Use the "received" test: "address in Via" to compare against the source IP address used for signaling.
-+ Search the top-most VIA for the occurrences of RFC1918 / RFC6598 addresses.
-+ Search the Session Description Protocol(SDP) for the occurrences of RFC1918 / RFC6598 addresses.
-+ Test if the source port is different from the "port in Via."
-+ Compare the "address in Contact" with the source IP address used for signaling.
-+ Compare the "Port in Contact" with the source port used for signaling.
+* Search the Contact header  field for occurrences of RFC1918 / RFC6598 addresses.
+* Use the "received" test: "address in Via" to compare against the source IP address used for signaling.
+* Search the top-most VIA for the occurrences of RFC1918 / RFC6598 addresses.
+* Search the Session Description Protocol (SDP) for the occurrences of RFC1918 / RFC6598 addresses.
+* Test if the source port is different from the "port in Via."
+* Compare the "address in Contact" with the source IP address used for signaling.
+* Compare the "Port in Contact" with the source port used for signaling.
 
 ### Inbound Proxy / Dispatcher / Load Balancer
 
-The primary use case for **AnyEdge** is to distribute calls to the SIP Servers. You can use the following algorithms to distribute the calls:
+The primary use case for **AnyEdge** is to disseminate calls to a pool of SIP Servers. You can configure the following call strategies as follows:
 
-+ Hash over callid.
-+ Hash over from uri.
-+ Hash over to uri.
-+ Hash over request-uri.
-+ Weighted round-robin (next destination) - the destination's weight determines the number of times it is selected before going to the next one.
-+ Hash over authorization-username (Proxy-Authorization or "normal" authorization) - A weighted round-robin is employed if a username cannot be found.
-+ Random (using *rand()*).
-+ The first entry is selected in the set.
+* Hash over callid
+* Hash over from uri
+* Hash over to uri
+* Hash over request-uri
+* Weighted round-robin (next destination) - the destination's weight determines the number of times it's selected before going to the next on
+* Hash over authorization-username (Proxy-Authorization or "normal" authorization) - If a username isn't found, use weighted round-robin.
+* Random (using *rand()*)
+* It selects the first entry in the set.
 
 ### Metrics
+
+You must set the load balancer's CPS limit. You can view both the CPS and the totals for the number of calls that failed because of the CPS breach.
 
 The CPS limit of the load balancer needs to be set-up. You can view both the CPS and the totals for the number of calls that failed because of the CPS breach.
 
@@ -83,54 +113,69 @@ Use the following graphs to view the metrics:
 1. CPS - Calls Per Second
 2. CPS Breach
 
-### SIP (Session Initiation Protocol) Packet Validation
 
-Malformed packets can cause problems for your internal network, such as, buffer overflow attacks. These problems can be stopped at the edge by selecting specific options when enabling SIP Packet Validation:
+### SIP Packet Validation
 
-+ Check the integrity of the SDP body (if it exists).
-+ Check the format and integrity of each header body.
-+ Don't check the "Max-Forwards" header.
-+ Checks the "R-URI" and whether the domain has valid characters.
-+ Checks the URI of the "From" field and whether the domain has valid characters.
-+ Checks the URI of the "To" field and whether the domain has valid characters.
-+ Checks the URI of the "Contact" field.
+Malformed packets can cause problems for your internal network, such as, buffer overflow attacks.
 
-If a packet fails to validate, you can choose how to handle it. You can handle this with a "400" error or with an "X-Validate-Fail" header. The reasons why a packet fails to validate are:
+To avoid these problems, you can select some specific options while enabling SIP Packet Validation:
 
-+ No SIP message.
-+ Header Parsing error.
-+ No "Call-ID" header
-+ No "Content-Length" header for transports that require it (for example, TCP).
-+ Invalid Content-Length, different from the size of the actual body.
-+ SDP body parsing error.
-+ No "Cseq" header.
-+ No "From" header.
-+ No "To" header.
-+ No "Via" header.
-+ Request URI parse error.
-+ Bad hostname in "R-URI."
-+ No "Max-Forwards" header.
-+ No "Contact" header.
-+ Path user for non-Register request.
-+ No "Allow" header in the 405 reply.
-+ No "Min-Expire" header in the 423 reply.
-+ No "Proxy-Authorize" header in the 407 reply.
-+ No "Unsupported" header in the 420 reply.
-+ No "WWW-Authorize" header in 401 reply.
-+ No "Content-Type" header.
-+ "To" header parse error.
-+ "From" header parse error.
-+ Bad hostname in the "To" header.
-+ Bad hostname in "From" header.
-+ "Contact" header parse error.
+* Check the integrity of the SDP body (if it exists).
+* Check the format and the integrity of each header body.
+* Don't check the "Max-Forwards" header.
+* Checks the "R-URI" and whether the domain has valid characters.
+* Checks the URI of the "From" field and whether the domain has valid characters.
+* Checks the URI of the "To" field and whether the domain has valid characters.
+* Checks the URI of the "Contact" field.
 
-### Compaction & Compression
+If a packet fails to validate, you can select a method to handle it. You can handle this with a "400" error or with an "X-Validate-Fail" header.
 
-To reduce the size of packets (to prevent fragmentation), you can apply compaction and compression. Compression uses an algorithm such as "gzip" for compressing the message at the level of the data. Compaction uses well-established short notations for longer headers.
+The reasons why a packet fails to validate are:
+
+* No SIP message
+* Header Parsing error
+* No "Call-ID" header
+* No "Content-Length" header for transports that require it (for example, TCP
+* Invalid Content-Length, different from the size of the actual body
+* SDP body parsing error
+* No "Cseq" header
+* No "From" header
+* No "To" header
+* No "Via" header
+* Request URI parse error
+* Bad hostname in "R-URI"
+* No "Max-Forwards" header
+* No "Contact" header
+* Path user for non-Register request
+* No "Allow" header in the 405 reply
+* No "Min-Expire" header in the 423 reply
+* No "Proxy-Authorize" header in the 407 reply
+* No "Unsupported" header in the 420 reply
+* No "WWW-Authorize" header in the 401 reply
+* No "Content-Type" header
+* "To" header parse error
+* "From" header parse error
+* Bad hostname in the "To" header
+* Bad hostname in "From" header
+* "Contact" header parse error
+
+### Compaction and Compression
+
+To reduce the size of packets (to prevent fragmentation), you can apply compaction and compression.
+
+Compression uses an algorithm such as "gzip" and compressing the message at the level of the data.
+
+Compaction uses well-established short notations for longer headers.
 
 #### Compaction
 
-To use compaction, you need to select "Compact Enabled". If you don't want some fields to be compacted, you can allow some of them. Compaction can be enabled for calls in and/or calls out. See the table for available headers.
+To use compaction, you need to select **Compact Enabled.**
+
+You can also create an allow list of fields if you don't want to compact them.
+
+You can enable Compaction for calls in and/or calls out.
+
+See the table for available headers.
 
 |Abbreviation|Header|Abbreviation|Header|
 |:---:|---|:---:|---|
@@ -147,14 +192,16 @@ To use compaction, you need to select "Compact Enabled". If you don't want some 
 
 #### Compression
 
-You can enable Compression or Decompression for Inbound and/or Outbound by selecting either "Compress Enabled (Deflate)", "Compress Enabled GZip", or "Decompress Enabled." There are extra flags to control how the data must be compressed.
+You can enable Compression or Decompression for Inbound and/or Outbound by selecting either "Compress Enabled (Deflate)," "Compress Enabled GZip," or "Decompress Enabled."
+
+The process of data compression depends on how auxiliary flags control it.
 
 ### Registration Proxy
 
-Having High Availability (HA) with registrations ensures that you will always have an IP address that matches the hole punched when the UAC registers. Unlike other HA setups, **AnyEdge** ensures that standard NAT hole-punching can work with UAC > UAS calls / messages even after the end-point connected to the UAC fails.
+Having High Availability (HA) with registrations ensures that you will always have an IP address which matches the hole punched when the UAC registers.
+
+Unlike other HA setups, **AnyEdge** ensures that standard NAT hole-punching can work with UAC > UAS calls / messages even after the end-point connected to the UAC fails.
 
 ### Outbound Proxy
 
-If you have a pool of multiple servers, you can proxy your communications via **AnyEdge**, allowing a single IP address to communicate externally.
-
-!!! note "The monthly fee for the Anyedge service is $20."
+If you have a pool of several servers, you can proxy your communications via **AnyEdge**, allowing a single IP address to communicate externally.
