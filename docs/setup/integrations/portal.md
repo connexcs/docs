@@ -40,7 +40,6 @@ You can provide several domains for your customers through different brands, and
 **_Click each tab to view the configuration details_**
 
 === "Basic"
-
 * **Domain:** The URL your customers use to access their portal.
 * **Brand Name:** The name that appears on the portal for your customers.
 * **Customer Sign up:** Allow customers to sign up independently.
@@ -57,17 +56,13 @@ Available values for this template are:
 === "User Access Area"
 
     Select the sections/features displayed to your customers (see "Override Options" below).
-
 === "Breakout"
 
     Select the columns to display in the **Report :material-menu-right: Breakout Report**.
-
 === "CDR"
 
     Select the columns to display in the **Management :material-menu-right: Customer :material-menu-right: [Choose Customer] :material-menu-right: CDR Report**.
-
 === "Advanced"
-
     * **Javascript** - Custom Javascript may be added either in the form of raw Javascript. 
     
     For example,
