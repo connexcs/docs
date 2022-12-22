@@ -56,6 +56,7 @@ You can provide several domains for your customers through different brands, and
 * **Currencies:** Choose the currencies available for your customers.
 
 === "User Access Area"
+
     Select the sections/features displayed to your customers (see "Override Options" below).
 
 === "Breakout"
