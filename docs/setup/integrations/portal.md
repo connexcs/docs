@@ -53,8 +53,7 @@ You can provide several domains for your customers through different brands, and
     * Alerts
     * Packages
     * Contracts
-
-* **Currencies:** Choose the currencies available for your customers to choose when they sign up.
+* **Currencies:** Choose the currencies available for your customers.
 
 === "User Access Area"
     Select the sections/features displayed to your customers (see "Override Options" below).
