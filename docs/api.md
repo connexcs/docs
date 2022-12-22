@@ -24,4 +24,4 @@ The API lets you perform customer-facing operations like communicating with the 
 
 You can find the specifications for the customer-facing API operations [here](https://portal-api-docs.connexcs.com/).
 
-To view supported integrations, go to [**API Integrations**](https://docs.connexcs.com/setup/integrations/api-integrations/).
+To view supported integrations, go to [**API Integrations**](https://docs.connexcs.com/setup/integrations/api/).
