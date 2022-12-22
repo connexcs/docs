@@ -54,7 +54,6 @@ Available values for this template are:
     * Packages
     * Contracts
 * **Currencies:** Choose the currencies available for your customers.
-
 === "User Access Area"
 
     Select the sections/features displayed to your customers (see "Override Options" below).
