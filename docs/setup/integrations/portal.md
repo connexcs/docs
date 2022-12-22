@@ -46,7 +46,7 @@ You can provide several domains for your customers through different brands, and
 * **Customer Sign up:** Allow customers to sign up independently.
 * **Carrier Sign up:** Allow carriers to sign up independently.
 * **Template Customer:** Select a pre-configured template customer on your account, preset with default values and gets set when a customer independently creates their account via the portal (See "Template Customer example" below).
-    Available values for this template are:
+Available values for this template are:
     * Customer [Fields in the customer itself, such as debit limit]
     * Routes
     * Payments
