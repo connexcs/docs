@@ -14,10 +14,15 @@ You can provide several domains for your customers through different brands, and
 2. Locate the page for updating your domain's DNS (Domain Name System) records.
 
     You can refer the page to as DNS Management, Name Server Management, or Advanced Settings.
+
 3. Locate the `CNAME` records for your domain.
+
 4. Add a new domain record (such as `portal.yourdomain.com`, where `yourdomain.com` is the domain that you own).
+
 5. Point it toward `portal.connexcs.com.`
+
 6. If asked, we recommend setting `TTL` at 300 (seconds), which is 5 minutes.
+
 7. You can add the domain to ConnexCS as soon as you configure it.
 
 !!! note "Your should expose your Customer Portal via a `CNAME` which you set up. This won't work with `A` records or pointing directly."
@@ -42,12 +47,12 @@ You can provide several domains for your customers through different brands, and
 * **Carrier Sign up:** Allow carriers to sign up independently.
 * **Template Customer:** Select a pre-configured template customer on your account, preset with default values and gets set when a customer independently creates their account via the portal (See "Template Customer example" below).
     Available values for this template are:
-  * Customer [Fields in the customer itself, such as debit limit]
-  * Routes
-  * Payments
-  * Alerts
-  * Packages
-  * Contracts
+    * Customer [Fields in the customer itself, such as debit limit]
+    * Routes
+    * Payments
+    * Alerts
+    * Packages
+    * Contracts
 
 * **Currencies:** Choose the currencies available for your customers to choose when they sign up.
 
@@ -64,7 +69,9 @@ You can provide several domains for your customers through different brands, and
 
 === "Advanced"
 
-    * **Javascript** - Custom Javascript may be added either in the form of raw Javascript Ex:
+    * **Javascript** - Custom Javascript may be added either in the form of raw Javascript. 
+    
+    For example,
 
     ```
     alert('Hello World');
@@ -85,7 +92,9 @@ You can provide several domains for your customers through different brands, and
     }
     ```
 
-    * **Upload Logo** - Upload your logo in `jpg`, `png` or `gif` format (max 350px wide) to **Management :material-menu-right: File :material-menu-right: Public**. A list of available files will now appear in the "Upload Logo" Box.
+    * **Upload Logo** - Upload your logo in `jpg`, `png` or `gif` format (max 350px wide) to **Management :material-menu-right: File :material-menu-right: Public**. 
+    
+        A list of available files will now appear in the "Upload Logo" Box.
     * **Footer** - Enter text to display at the bottom of the page, for example _Copyright My Company_
 
 !!! example "Template Customer example"
@@ -94,7 +103,9 @@ You can provide several domains for your customers through different brands, and
     When a new customer creates an account from the Customer Portal, they will see a payment created for $5.00 at the same time of account creation.
 
 !!! note "Override Options"
-    To override these options for specific customers, go to **Management :material-menu-right: Customer :material-menu-right: [Choose Customer] :material-menu-right: Edit :material-menu-right: Config :material-menu-right: Portal Access**. Select items from the "Show" heading to display the feature, or from the Hide options to prevent it from appearing.
+    To override these options for specific customers, go to **Management :material-menu-right: Customer :material-menu-right: [Choose Customer] :material-menu-right: Edit :material-menu-right: Config :material-menu-right: Portal Access**.
+
+    Select items from the "Show" heading to display the feature, or from the Hide options to prevent it from appearing.
 
 ## User Access
 
