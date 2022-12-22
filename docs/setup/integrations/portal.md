@@ -98,7 +98,7 @@ You can provide several domains for your customers through different brands, and
 
 ## User Access
 
-To configure Users to access the Customer Portal, follow the steps to [**Add Contact**](https://docs.connexcs.com/customer/main/#contacts). 
+To configure Users to access the Customer Portal, follow the steps to [**Add Contact**](https://docs.connexcs.com/customer/main/#contacts).
 
 Any Contact configured on the account can login to the Customer Portal.
 
