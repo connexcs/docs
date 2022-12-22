@@ -56,15 +56,19 @@ Available values for this template are:
 * **Currencies:** Choose the currencies available for your customers.
 
 === "User Access Area"
+
     Select the sections/features displayed to your customers (see "Override Options" below).
 
 === "Breakout"
+
     Select the columns to display in the **Report :material-menu-right: Breakout Report**.
 
 === "CDR"
+
     Select the columns to display in the **Management :material-menu-right: Customer :material-menu-right: [Choose Customer] :material-menu-right: CDR Report**.
 
 === "Advanced"
+
     * **Javascript:** You can ad Custom Javascript in the form of raw Javascript.
 
     For example,
