@@ -167,7 +167,7 @@ Enter Razorpay settings into ConnexCS:
 
 1. Select **`Add`**, and then select **Razorpay**.
 2. **Mode**: Use `Test` for testing connections or `Live` for an active account.
-3. **Key ID** and **Key Secret**: Access the [**Razorpay Dashboard**](http://dashboard.razorpay.com/), go to Settings and Generate Test Key (from [**Razorpay support**](https://knowledgebase.razorpay.com/support/solutions/articles/11000060257-how-do-i-generate-the-api-keys-))
+3. **Key ID** and **Key Secret**: Access the [**Razorpay Dashboard**](http://dashboard.razorpay.com/), go to Settings and Generate Test Key (from [**Razorpay support**](https://razorpay.com/docs/payments/dashboard/support/))
 4. **Currency**: Select one or more currencies that you will accept.
 5. **Deduct Payment Fees**: Set whether you will deduct the fees or not.
 
