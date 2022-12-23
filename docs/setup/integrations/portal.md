@@ -11,10 +11,10 @@ You can provide several domains for your customers through different brands, and
 **Step 1: Set up the CNAME record**
 
 1. Access your domain account at your domain host.
+
 2. Locate the page for updating your domain's DNS (Domain Name System) records.
 
     You can refer the page to as DNS Management, Name Server Management, or Advanced Settings.
-
 3. Locate the `CNAME` records for your domain.
 
 4. Add a new domain record (such as `portal.yourdomain.com`, where `yourdomain.com` is the domain that you own).
@@ -32,6 +32,15 @@ You can provide several domains for your customers through different brands, and
 1. In **Portal**, click :material-plus:.
 2. Enter the details in their respective fields of the ensuing window.
 3. Click the **`Save`** button. Soon after, a certificate gets issued for the domain.
+
+!!! note
+    Your Customer Portal must be exposed via a `CNAME` that you setup. This won't work with `A` records or by pointing directly.
+
+**Step 2: Add a Domain to the Portal**
+
+1. In **Portal**, click :material-plus:.
+2. Enter the details in their respective fields of the ensuing window.
+3. Click the **`Save`** button. Soon afterward, a certificate is issued for the domain.
 
     ![alt text][portal]
 
@@ -53,7 +62,7 @@ Available values for this template are:
     * Alerts
     * Packages
     * Contracts
-* **Currencies:** Choose the currencies available for your customers.
+* **Currencies:** Choose the currencies available for your customers when they signup.
 
 === "User Access Area"
 
@@ -81,6 +90,7 @@ Available values for this template are:
 
     ```
     <script src="https://www.mydomain.com/custom.js"></script>
+
     ```
 
     * **CSS** Add custom CSS to modify how various elements are displayed. For example,

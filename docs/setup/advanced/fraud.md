@@ -36,6 +36,12 @@ When one of the limits gets triggered, the system takes automatic action determi
 
 ## Fraud Mode
 
+Each of the five parameters is configured with two limits: a **Warning limit** and a **Critical limit**.
+
+The Warning limit must always be lower than the Critical limit. When one of the limits is triggered, the system takes automatic action, which is determined by the Mode (defined below).
+
+## Fraud Mode
+
 Selecting Low or High mode defines the action taken when it reaches a Warning or Critical threshold.
 
 | Mode | Warning | Critical|
@@ -47,21 +53,24 @@ Selecting Low or High mode defines the action taken when it reaches a Warning or
 
 **Step 1: Create a Fraud Profile and Rules**
 
-1. Click :material-plus:.
-2. Enter the Name.
-3. Click **Save**.
-4. To the right of the new Profile, select **`View Rules`**.
-5. Click :material-plus:.
-6. Define **Prefix**, **Start and End Times**, and **Days of Week** to set the trigger for fraud detection.
-7. Configure individual **Metrics** (as defined above) to set thresholds for fraud detection.
-8. Save the rules.
+1.1. Click :material-plus:.
+1.2. Enter the Name.
+1.3. Click **Save**.
+1.4. To the right of the new Profile, select **`View Rules`**.
+1.5. Click :material-plus:.
+1.6. Define **Prefix**, **Start and End Times**, and **Days of Week** to set the trigger for fraud detection.
+1.7. Configure individual **Metrics** (as defined above) to set thresholds for fraud detection.
+1.8. Save the rules.
 
-**Step 2: Apply profile to customer route**
+**Step 2: Apply the profile to the customer route**
 
-1. Go to **Management :material-menu-right: Customer :material-menu-right: [your customer] :material-menu-right: Routing :material-menu-right: [select the route] :material-menu-right: Fraud**.
-2. Select the **Fraud Profile**.
-3. Select the **Fraud Mode** (as defined above).
-4. Save the route.
+2.1. Go to **Management :material-menu-right: Customer :material-menu-right: [your customer] :material-menu-right: Routing :material-menu-right: [select the route] :material-menu-right: Fraud**.
+
+2.2. Select the **Fraud Profile**.
+
+2.3. Select the **Fraud Mode** (as defined above).
+
+2.4. Save the route.
 
 ## Fraud Logging
 
