@@ -69,7 +69,7 @@ ConnexCS **Web Phone** needs the following two domains to function efficiently:
 
    2.1 Navigate to **Setup :material-menu-right: Settings :material-menu-right: DNS :material-menu-right:** to create your DNS.
 
-    2.2 Enter the domain (ex: test1), then select the checkbox for the A record for the IP of the server you want to use.
+   2.2 Enter the domain (ex: test1), then select the checkbox for the A record for the IP of the server you want to use.
 
  This is the SIP signaling domain (WebRTC) and attached to your server. Navigate to **Setup :material-menu-right: Settings :material-menu-right: DNS :material-menu-right:**. Enter the domain (ex: test1), then select the checkbox for the A record for the IP of the server you want to use.
 
@@ -168,7 +168,7 @@ The **Web Phone SDK (Software Developer Kit)** allows developers to integrate We
 
 The [**Web Phone SDK Connector**](https://webphone-sdk.connexcs.com/) provides the developer documentation required to place a call.
 
-You will need to provide the full URL (for example,<http://domain.connexcs.com>) and credentials to access Web Phone from within the connector.
+You will need to provide the full URL (for example, <http://domain.connexcs.com>) and credentials to access Web Phone from within the connector.
 
 [webphone-basic]: /setup/img/webphone-basic.png "WebPhone Basic"
 [webphone]: /setup/img/webphone.png "WebPhone Menu"
