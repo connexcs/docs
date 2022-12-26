@@ -106,18 +106,18 @@ Besides the above ConnexCS security, we also recommend the following practices t
 
 1. **Passwords** (we recommend following the [**NIST guidelines**](https://pages.nist.gov/800-63-3/sp800-63b.html#sec5)):
 
-- 8 character minimum when a human sets it.
-- 6 character minimum when set by a system/service.
-- Support at least 64 characters maximum length.
-- It should support All the ASCII characters (including space).
-- When processing, it's not recommended to truncate the secret (password).
-- Check the chosen password with known password dictionaries.
-- Allow at least 10 password attempts before the lockout.
-- No complexity requirements.
-- No password expiration period.
-- No password hints.
-- No knowledge-based authentication (for example: who was your best friend in high school?).
-- No SMS for 2FA (use a one-time password from an app like Google Authenticator).
+    - 8 character minimum when a human sets it.
+    - 6 character minimum when set by a system/service.
+    - Support at least 64 characters maximum length.
+    - It should support All the ASCII characters (including space).
+    - When processing, it's not recommended to truncate the secret (password).
+    - Check the chosen password with known password dictionaries.
+    - Allow at least 10 password attempts before the lockout.
+    - No complexity requirements.
+    - No password expiration period.
+    - No password hints.
+    - No knowledge-based authentication (for example: who was your best friend in high school?).
+    - No SMS for 2FA (use a one-time password from an app like Google Authenticator).
 
 2. **Hardware Security Tokens:** Yubikey is an example of a hardware security token.
 
