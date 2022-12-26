@@ -123,7 +123,8 @@ Besides the above ConnexCS security, we also recommend the following practices t
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_EqOmhahBQc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-    It can never be digitally stolen or used for logins to ConnexCS.
+It can never be digitally stolen or used for logins to ConnexCS.
 
 3. **Duo Security or Google / Microsoft Authenticator:** According to the NIST recommendations, you shouldn't trust the above SMS for second-factor authentication.
+
     We apply both Duo Security and [TOTP; specified in RFC 6238](https://tools.ietf.org/html/rfc6238).You can use them by Google Authenticator or Microsoft Authenticator.
