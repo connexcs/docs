@@ -1,77 +1,130 @@
 # Security
 
-We take **Security** seriously at ConnexCS, emphasizing the industry's best practices in all our policies and procedures. We use proven technology and the latest ideas to keep your systems safe from threats both external and internal.
+ConnexCS considers **Security** its top priority. We incorporate industry best practices into all our policies and procedures.
 
-Below, we've compiled a top-level abstract list on how we secure our systems. The document is kept brief in to limit exposure to our underlying systems in a public forum, but feel free to contact us with specific questions.
+We use proven technology and the latest ideas to keep your systems safe from external and internal threats.
 
-## SSL Certificates
-Our HTTPS traffic uses short-lived **SHA256bit** certificates with 2048bit keys, rejecting downgrade attacks like **SSL2,3**. We use **HSTS (HTTP Strict Transport Security), Perfect Forward Secrecy,** and **OCSP Stapling** (Online Certificate Status Protocol). You can see our servers SSL test results [**here**](https://www.ssllabs.com/ssltest/analyze.html?d=app.connexcs.com).
+Below, we've compiled a top-level, abstract list of how we secure our systems.
+
+The document is brief on limiting exposure to our underlying systems in a public forum.
+
+**Feel free to contact us with specific questions.**
+
+## Secure Sockets Layer Certificates
+
+Our HTTPS traffic uses short-lived **SHA256bit** certificates with 2048bit keys. It rejects downgrade attacks like **SSL2,3**.
+
+We use **HSTS (HTTP Strict Transport Security), Perfect Forward Secrecy,** and **OCSP Stapling** (Online Certificate Status Protocol).
+
+You can see our server's SSL test results [**here**](https://www.ssllabs.com/ssltest/analyze.html?d=app.connexcs.com).
 
 ### Inter-zone Communication
-All internal traffic travelling between zones traverses our mesh Virtual private network (VPN), protected by 4096-bit keys and managed by internal CA Servers.
+
+All internal traffic travelling between zones traverses our mesh Virtual private network (VPN). It's protected by 4096-bit keys and managed by internal CA Servers.
 
 ## Logins
+
 Our system uses an exponentially increasing delay on failed attempts and centralised reporting.
 
 ### Passwords
-All passwords are hashed in our system. The ones required for HTTP login are encrypted by Argon2, the winner of the [**Password Hashing Competition (PHC)**](https://github.com/P-H-C/phc-winner-argon2).
+
+Our system hashes every password. Argon2 encrypts the ones needed for HTTP login. It's the winner of the [**Password Hashing Competition (PHC)**](https://github.com/P-H-C/phc-winner-argon2).
 
 On every hash we use:
-- Random Per Password Salt (With email hashed seasoning)
-- Off-database site-pepper
-- High Time, Memory Cost, Parallelism Cost
 
-### 2FA / TFA
-All admins are required to use two-factor authentication when signing into the system. Two-Factor Authentication is also available for any user accounts using [**RFC 6238-style TOTP (Time Based One-time Passwords)**](https://tools.ietf.org/html/rfc6238), using applications such as Google Authenticator or Microsoft Authenticator.
+- Random Per Password Salt (With email hashed seasoning).
+- Off-database site-pepper.
+- High Time, Memory Cost, Parallelism Cost.
+
+### Two-factor Authentication
+
+All admins must use two-factor authentication (2FA / TFA) when signing into the system.
+
+Two-Factor Authentication is also available for any user accounts using [**RFC 6238-style TOTP (Time Based One-time Passwords)**](https://tools.ietf.org/html/rfc6238).
+
+Using applications such as Google Authenticator or Microsoft Authenticator.
 
 ### Server Keys
-Any user with direct access to any servers is required to use SSH Keys. In all systems where keys aren't possible, long multi-symbol passwords are used.
+
+Using SSH Keys is necessary for any user with direct access to any servers.
+
+In all systems where keys aren't possible, you must use long, multi-symbol passwords.
 
 ## Exceptions
-We **do not** consider the following items insecure. We completely understand the consequences of enabling these systems, but we believe their benefits outweigh the security implications.
 
-This **does not** mean we don't monitor activity on either of these, nor does it mean that we don't have automatically reactive systems to ensure uptime in the event of an attack.
+We **don't** consider the following items insecure.
 
-### ICMP Pings
-ICMP (Internet Control Message Protocol) pings messages (e.g ping www.connexcs.com). ICMP Ping attacks were once common, related to the packet size versus available bandwidth. They still happen, but it's more useful to enable ICMP replies to correctly establish the status of a server.
+We understand the consequences of enabling these systems. But we believe their benefits outweigh the security implications.
 
-### SIP / RTP Firewall Block on Default.
-Our Session Initiation Protocol (SIP) Servers only run SIP, and nothing else. Our Real-time Transport Protocol (RTP) Servers run RTP, and nothing else. 5060 isn't firewalled, nor are any of our RTP Ports on our RTP Servers.
+This doesn't mean we don't observe activity on either of these. Also, we've automatically reactive systems to ensure uptime in the event of an attack.
 
-This means that you will most likely see unauthorized traffic hitting your switch, but you will also see unauthorized calls being blocked for failing authentication. This is normal, as it's still important to see failed traffic to make sure the authentication isn't blocking authorized callers.
+### Internet Control Message Protocol Pings
 
-## IDS / IPS
-We've application-level logic that identifies malicious activity, which will escalate issues to our Intrusion Detection System (IDS) systems, which will enforce feedback firewall rules in return.
+ICMP (Internet Control Message Protocol) pings messages (for example, ping www.connexcs.com).
+
+ICMP Ping attacks were once common (packet size versus available bandwidth). They still happen, but it's more useful to enable ICMP replies to efficiently establish the status of a server.
+
+### Session Initiation Protocol / Real-time Transport Protocol Firewall Block on Default
+
+Our Session Initiation Protocol (SIP) Servers only run SIP and nothing else.
+
+Our Real-time Transport Protocol (RTP) Servers run RTP and nothing else.
+
+5060 isn't fire-walled, nor are any of our RTP Ports on our RTP Servers.
+
+This means that you will most likely see unauthorized traffic hitting your switch. Also, you will observe unauthorized calls getting blocked for failing authentication. This is normal, as it's still important to see failed traffic. It's done to make sure the authentication isn't blocking authorized callers.
+
+## Intrusion Detection System / Intrusion Prevention System
+
+We've application-level logic that identifies malicious activity.
+
+It helps escalate issues with our Intrusion Detection System (IDS) systems.
+
+It will further enforce feedback firewall rules in return.
 
 ## Data Usage
-**Connex Carrier Services Worldwide, LTD** is an independent company. ConnexCS servers retains All data, and **never** passed to third parties. All staff are required to abide by non-disclosure policies that protect user data, and it's made clear any data breach would be treated with severity.
 
-## SSL Certificates 
-The SSL certificate are deployed on your customer portal with a single click.
+**Connex Carrier Services Worldwide, LTD** is an independent company.
 
-1. Click  **Setup** > **Integrations**.
+ConnexCS servers retain All data and are never passed on third parties.
+
+All employees must adhere to non-disclosure agreements that protect user data.
+
+Also, it's made clear that we would take any data breach with severity.
+
+## Secure Sockets Layer Certificates Deployment
+
+One-click is all it takes to put the SSL certificates on your customer portal.
+
+1. Click  **Setup** :material-menu-right: **Integrations**.
 2. Click  **Domains**.
 3. Click **Deploy Certificate**.
 
 ## User Enhanced Security
-In addition to the above ConnexCS security, we also recommend the following practices to harden your ConnexCS account.
 
-1. Passwords (we recommend following the [**NIST guidelines**](https://pages.nist.gov/800-63-3/sp800-63b.html#sec5)):
-    + 8 character minimum when a human sets it
-    + 6 character minimum when set by a system/service
-    + Support at least 64 characters maximum length
-    + All ASCII characters (including space) should be supported
-    + Truncation of the secret (password) shall not be performed when processed
-    + Check chosen password with known password dictionaries
-    + Allow at least 10 password attempts before lockout
-    + No complexity requirements
-    + No password expiration period
-    + No password hints
-    + No knowledge-based authentication (for example: who was your best friend in high school?)
-    + No SMS for 2FA (use a one-time password from an app like Google Authenticator)
-2. Hardware Security Tokens: Yubikey is an example of hardware security token which can never be digitally stolen can be used for logins to ConnexCS.
-    
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/_EqOmhahBQc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+Besides the above ConnexCS security, we also recommend the following practices to protect your ConnexCS account.
 
-3. Duo Security or Google/Microsoft Authenticator: As per the NIST recommendations above SMS shouldn't be trusted for second factor authentication. We implement both Duo Security and [**Time-based One-time Password Algorithm (TOTP; specified in RFC 6238)**](https://tools.ietf.org/html/rfc6238),
-which can be used by Google Authenticator or Microsoft Authenticator.
+1. **Passwords** (we recommend following the [**NIST guidelines**](https://pages.nist.gov/800-63-3/sp800-63b.html#sec5)):
+
+- 8 character minimum when a human sets it.
+- 6 character minimum when set by a system/service.
+- Support at least 64 characters maximum length.
+- It should support All the ASCII characters (including space).
+- When processing, it's not recommended to truncate the secret (password).
+- Check the chosen password with known password dictionaries.
+- Allow at least 10 password attempts before the lockout.
+- No complexity requirements.
+- No password expiration period.
+- No password hints.
+- No knowledge-based authentication (for example: who was your best friend in high school?).
+- No SMS for 2FA (use a one-time password from an app like Google Authenticator).
+
+2. **Hardware Security Tokens:** Yubikey is an example of a hardware security token.
+
+    It can never be digitally stolen or used for logins to ConnexCS.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_EqOmhahBQc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+3. **Duo Security or Google / Microsoft Authenticator:** According to the NIST recommendations, you shouldn't trust the above SMS for second-factor authentication.
+
+    We apply both Duo Security and [TOTP; specified in RFC 6238](https://tools.ietf.org/html/rfc6238).You can use them by Google Authenticator or Microsoft Authenticator.
