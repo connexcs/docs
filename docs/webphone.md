@@ -4,11 +4,11 @@
 
 The ConnexCS **Web Phone** runs directly from a browser without the need to install anything, allowing customers to make calls via the internet using a softphone.
 
-If the user wishes to install the application, additional functionality becomes available.
+If the user wishes to install the application, supplementary functionality becomes available.
 
-For example, push notification capabilities while the app is closed.
+For example, push notification capabilities while closing the app.
 
-With application cross-platform functionality (including Windows, Mac, Android, iOS, etc) this makes it ideal in call center and other similar deployments.
+With application cross-platform functionality (including Windows, Mac, Android, iOS, etc.), this makes it ideal in call centres and other similar deployments.
   
 !!! warning "iOS limitations"
     iOS limits the ability to perform push notifications.
@@ -17,14 +17,14 @@ With application cross-platform functionality (including Windows, Mac, Android, 
 
 ### Application
 
-ConnexCS **Web Phone** is a WebRTC application using PWA.
+ConnexCS **Web Phone** is a PWA-based WebRTC application.
 
-**WebRTC** (Real-Time Communications) is a browser protocol which runs on top of an HTTPS connection.
+**WebRTC** (Real-Time Communications) is a browser protocol that runs on top of an HTTPS connection.
 
 ConnexCS **Web Phone** uses WebRTC (HTTPS port 443) for SIP Signaling and WebSockets (random UDP ports) for the Media.
 
 !!! warning "BitDefender and WebSockets"
-    BitDefender blocks WebSockets unless the phone. and webrtc. domains get whitelisted.
+    BitDefender blocks WebSockets unless the phone and webrtc domains get whitelisted.
 
 A [**PWA** (Progressive Web Application)](https://en.wikipedia.org/wiki/Progressive_web_application) is an application written inside the web browser, and it uses a modern API.
 
@@ -43,38 +43,35 @@ You can achieve this by leveraging TLS (Transport Layer Security) protocol suppo
 
 MITM (Man-in-the-Middle) attacks actively intercept traffic between endpoints, while still operating within a TLS framework. This kind of attack counteracts with PKI (Public Key Infrastructure), a native HTTPS feature.
 
-PKI ensures end-point integrity, so you can be confident the endpoint you connect with the one you expect without any intermediaries.
-  
-!!! note "TLS 1.3 Support"
-    ConnexCS presently doesn't support TLS 1.3. This functionality is scheduled to be completed by Q3 2020.
+PKI ensures end-point integrity, so you can be confident that the endpoint you connect with is the one you expect, without any intermediaries.
 
 !!! tip "Debugging SIP Messages"
     If you need to debug Web Phone and see the SIP messages, you can enter `*#0*#` into the dial pad, this will switch on debugging mode in the browser console.
 
 ## Navigation
 
-Navigate using the following sections in the footer menu at the bottom of Web Phone (see Menu tab under [**Config Options**](https://docs.connexcs.com/setup/integrations/webphone/#config-options) below to change how these are displayed):
+Navigate using the following sections in the footer menu at the bottom of Web Phone (see Menu tab under [**Config Options**](https://docs.connexcs.com/webphone/#configure-web-phone) below to change how these get displayed):
 
-* **Agent**: Preview dialer
-* **History**: Previously dialed numbers and extensions
+* **Agent:** Preview dialer
+* **History:** Previously dialed numbers and extensions
 * **Dialpad**: Dialpad for making and answering calls
-* **Contacts**: This is the same Contacts database configured in **Class5 :material-menu-right: Phonebook**
-* **Settings**: View the Display Name, SIP information, and WS URL
+* **Contacts:** This is the same Contacts database configured in **Class5 :material-menu-right: Phonebook**
+* **Settings:** View the Display Name, SIP information, and WS URL.
 
 ## Enable Web Phone
 
 ### Setup Domains
 
-ConnexCS **Web Phone** needs the following 2 domains to function correctly:
+ConnexCS **Web Phone** needs the following two domains to function efficiently:
 
-1. **Web Server (Domain A):** - This is the location where the phone is hosted, and the URL which is provided to your customers. Create a CNAME on your domain, such as `webphone.yourdomain.com`, and point it to our web server at `portal.connexcs.com` (responsible for web services, and yes, this is the same as the customer portal).
+1. **Web Server (Domain A):** This location hosts the phone, and the customers receives the URL. Create a CNAME on your domain, such as `webphone.yourdomain.com`, and point it to our web server at `portal.connexcs.com` (responsible for web services, and yes, this is the same as the customer portal).
 2. **SIP Switch (Domain B):** Create the WebRTC domain and it's CNME should point towards the [DNS you create](https://docs.connexcs.com/setup/settings/dns/).
 
    2.1 Navigate to **Setup :material-menu-right: Settings :material-menu-right: DNS :material-menu-right:** to create your DNS.
 
     2.2 Enter the domain (ex: test1), then select the checkbox for the A record for the IP of the server you want to use.
 
- This is the SIP signaling domain (WebRTC) and is attached to your server. Navigate to **Setup :material-menu-right: Settings :material-menu-right: DNS :material-menu-right:**. Enter the domain (ex: test1), then select the checkbox for the A record for the IP of the server you want to use.
+ This is the SIP signaling domain (WebRTC) and attached to your server. Navigate to **Setup :material-menu-right: Settings :material-menu-right: DNS :material-menu-right:**. Enter the domain (ex: test1), then select the checkbox for the A record for the IP of the server you want to use.
 
 It's recommended to setup a DNS (Domain Name System) record within ConnexCS, then point a CNAME on your domain to the ConnexCS setup domain.
 
@@ -83,7 +80,7 @@ It's recommended to setup a DNS (Domain Name System) record within ConnexCS, the
 After you configure the domains, verify the certificates in **Setup :material-menu-right: Information :material-menu-right: Certificates:
 
 * If the domain isn't listed, click on `Add Certificate` and provide your domain name.
-* If the certificates are listed but they don't have an issue or expiry date, click on "Refresh Certificates." This may take up to 10 minutes to complete.
+* If the certificates get listed but they don't have an issue or expiry date, click on "Refresh Certificates." This may take up to 10 minutes to complete.
 
 ### Add WebRTC to server
 
@@ -91,16 +88,16 @@ To setup WebRTC on a server:
 
 1. Ensure **Domain (B)** (signaling domain from above) points ONLY to the server where you enable WebRTC.
 2. Navigate to **Setup :material-menu-right: Settings :material-menu-right: Servers :material-menu-right:** select the server, then Edit.
-    * Update the FQDN (Fully Qualified Domain Name) to the server
-    * Ensure that both **TLS** and **WebRTC** are enabled
-    * Run `Install Server` if any settings were changed
+    * Update the FQDN (Fully Qualified Domain Name) to the server.
+    * Ensure that you enable both **TLS** and **WebRTC**.
+    * Run `Install Server` if any settings gets changed.
 
 !!! tip "AnyEdge and WebRTC"
     If you are using AnyEdge, you can enable WebRTC automatically by adding a domain name to your AnyEdge Domain.
 
 ### Setup Web Phone Domain
 
-Once domains, certificates, and server settings are updated, we can add the Web Phone domain.
+Once domains, certificates, and server settings get updated, we can add the Web Phone domain.
 
 1. Go to **Setup :material-menu-right: Integrations :material-menu-right: Web Phone**
 2. For **Domain**, enter **Domain (A)**
@@ -154,18 +151,18 @@ Your Web Phone should now be available.
 === "Advanced"
     * **Flags**- Select display options for WebPhone
         * `Hide UUID`: UUID is a unique deploy & version identifier, this is what you should ask your end user for if you need to report a problem to us. It's displayed in the side menu.
-        * `Menu Right`: Change the normally left menu into a right menu.
+        * `Menu Right`: Change the left menu into a right menu.
         * `Display Balance`: Show the balance of the account.
         * `Edit Settings`: As standard settings are non-editable, if you wish to allow a user to change settings, you can change this.
         * `Register`: Allow registration of new accounts, or only existing SIP Username / Passwords can login.
         * `Username as Title`: Change the title of the page to the username logged in.
-        * `Accept Payment`: Accept payments, similar to on the customer portal.
+        * `Accept Payment`: Accept payments, same as on the customer portal.
         * `Auto Answer`: Automatically answer an incoming call.
-    * **Restrict Customer Login**- Select existing Companies from the dropdown to allow them access to WebPhone. If no companies are listed, then all will have access.
+    * **Restrict Customer Login:** Select existing Companies from the dropdown to allow them access to WebPhone. If no companies are on the list, then all will have access.
 
     &emsp;![alt text][webphone-adv] 
 
-## Web Phone SDK
+## Web Phone Software Developer Kit
 
 The **Web Phone SDK (Software Developer Kit)** allows developers to integrate WebPhone into your own custom projects. This is available as part of the ConnexCS deployment at no extra charge.
 
