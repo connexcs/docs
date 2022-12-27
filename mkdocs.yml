@@ -10,9 +10,12 @@ theme:
     - navigation.tabs
 extra_javascript:
 - extra.js
-- https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js
-extra_css:
-  - https://unpkg.com/mermaid@7.1.2/dist/mermaid.css
+# - https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js
+#extra_css:
+#  - https://unpkg.com/mermaid@7.1.2/dist/mermaid.css
+plugins:
+    - search
+    - mermaid2
 
 markdown_extensions:
   - admonition
@@ -110,6 +113,7 @@ nav:
             - Account: setup/settings/account.md
             - Payments: setup/settings/payments.md
             - Servers: setup/settings/servers.md
+            - RTP Zones: setup/settings/rtp-zones.md
             - DNS: setup/settings/dns.md
             - User: setup/settings/users.md
             - Options: setup/settings/options.md
@@ -148,6 +152,7 @@ nav:
         - NEW FCC Regulations on STIR/SHAKEN : guides/stir-shaken-fcc.md
         - Billing:
             - Billing Guide: guides/billing-guide.md
+            - Billing Basics: billing-basics.md
             - Connex Billing: billing.md
             - Credit Control: credit-control.md
             - Voucher: voucher.md
