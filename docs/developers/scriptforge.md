@@ -2,9 +2,9 @@
 
 **Developer :material-menu-right: ScriptForge**
 
-Use ConnexCS **ScriptForge** to write ECMAScript 2015 (ES6) (aka JavaScript) and execute in a secure sandbox on the server. It is designed to be low latency and high throughput.
+Use ConnexCS **ScriptForge** to write ECMAScript 2015 (ES6) (aka JavaScript) and execute it in a secure sandbox on the server. It's designed to have low latency and high throughput.
 
-It is made for scripts and small applications. Any larger applications are best executed on external hardware through ScriptForge.
+It's made for scripts and small applications. Any larger applications are best executed on external hardware through ScriptForge.
 
 A fair-usage policy applies, and if there is unnecessary resource use or if there are any attempts to break the sandbox, your script may not function as expected.
 
@@ -18,7 +18,8 @@ ConnexCS offers several libraries specifically for use with ConnexCS. [**Develop
 
 You can include some more modules (from npm), available for applications and drivers only.
 
-The objective is to keep the sandbox lightweight and include only necessary modules:
+
+The purpose is to keep the sandbox lightweight and include only the necessary modules:
 
 |Modules||||
 |---|---|---|---|
@@ -29,36 +30,40 @@ The objective is to keep the sandbox lightweight and include only necessary modu
 
 ### Sample Scripts
 
-You can find sample scripts in our GitHub repository > [**example applications**](https://github.com/connexcs/scriptforge-examples/).
-
-A few uses cases are included below, but with a Turing Complete language, the possibilities are endless.
+You can find sample scripts in our GitHub repository > [**example applications**](https://github.com/connexcs/scriptforge-examples/). Below is a list of some use cases. But with a Turing Complete language, the possibilities are endless.
 
 * Do Not Call Lists
 * Custom Fraud Detection
 * Internal Automations
-* Capture and Process control panel and customer portal forms
-* Inbound & Outbound Call Filtering
+* Capture and process the Control Panel and Customer Portal forms
+* Inbound and Outbound Call Filtering
 * Class 5 Programmable Voice Applications
 * DID Drivers
 * Time of Day Restrictions
 
 ## Coding Basics
 
-Script & Apps typically start in the `main()` function and expects to return a promise. The first parameter is typically an object called `data`.
+
+Scripts and Apps typically start in the `main()` function and expect to return a promise. The first parameter is typically an object called `data`.
 
 ### Throwing Errors (Class 4)
 
-Errors can be thrown in the format [SIP code] :space: [Error Message]. For example: To throw a 404 Not Found, you can use the following
+Follow the following format; [SIP code] :space: [Error Message], for throwing errors.
+
+**For example**, to throw a 404 Not Found, you can use the following
 
 ``` js
- throw new Error('404 Not Found');
+throw new Error('404 Not Found');
 ```
 
 *(**SIP:** Session Initiation Protocol, **DID:** Direct Inward Dialing)
 
-### Class 4 Routing (Routes & DID)
 
-After the routing engine has executed its main function, the system will run the custom ScriptForge script. This presents data as the output to the routing engine and is expected to send along the same object structure.
+### Class 4 Routing (Routes and Direct Inward Dial)
+
+After the routing engine has executed its main function, the system will run the custom ScriptForge script.
+
+This presents data as the output to the routing engine and expects the same object structure.
 
 ``` js
 function main (data = {}) {
@@ -70,9 +75,9 @@ function main (data = {}) {
 
 ### Class 5 Programmable Voice
 
-You can use Programmable Voice to write smart voice applications controlled in modern JavaScript. The execution of the Programmable Voice script is done synchronously with the call, simplifying the entire process.
+You can use Programmable Voice to write smart voice applications controlled in modern JavaScript.
 
-For example, you would initially run an `await answer()`, it would not progress to the next line until the platform has finished executing the operation.
+The call and the Programmable Voice script are both executed simultaneously, simplifying the entire process. This means that (for example) you would initially run an `await answer()`, it would not progress to the next line until the platform has finished executing the operation.
 
 See the [**ConnexCS ScriptForge documents**](https://scriptforge-docs.connexcs.com/ctx.html) for more JavaScript examples.
 
@@ -85,11 +90,15 @@ function main (data = {}, ctx) {
 ```
 
 !!! warning "Potential Sync Issues"
-   To prevent the system from losing the synchronised state with your script and connection crash, make sure to execute ALL async functions with `await`. If it isn't implemented correctly, billing and call stability are impacted.
+    To avoid the system losing synchronisation with your script and the connection crashing, execute ALL async functions with `await`.
+
+	If it isn't implemented correctly, it affects thatbilling and call stability.
 
 ### Form Submission
 
-Used to receive data from Form Builder in ConnexCS, and is displayed in the control panel or customer portal.
+Used to receive data from Form Builder in ConnexCS.
+
+You can view it in the control panel or customer portal.
 
 ``` js
 function main (data = {}) {
@@ -99,7 +108,7 @@ function main (data = {}) {
 
 ### Driver
 
-A driver is a module export which may contain several pre-defined functions dependent on the integration, flow is an example for DID Driver.
+A driver is a module export that may contain several pre-defined functions dependent on the integration; flow is an example for a DID Driver.
 
 ``` js
 module.export = {
@@ -132,16 +141,28 @@ module.export = {
   
 4. Click **`Save`**.
 
-    ![alt text][s2]  
+
+    * `Script`- This is the fastest way to execute custom code and is "synchronous" execution.
+	    This is mainly used for manipulations or calculations.
+		It can't use libraries or work with Promises.
+    * `App`- As a penalty, feature-rich applications with a predefined list (allow list) of available modules have slightly higher latency.
+    * `Driver`- A driver works as an intermediary between ConnexCS and any external system.
+	   You can write drivers to bridge the ConnexCS DID provisioning system to a provider of your choice or build more complicated alerts.
+
+4. Click **`Save`**.
+
+    ![alt text][s2]
 
 5. Select your script from the list.
 6. Enter the code of your script.
 7. Click the green arrow to **`Save and Run`**.
-8. The results are shown onscreen.
+8. You can view the results onscreen.
 
 If script shows an error, add this and then run the script again:
 
-```{"routing":{}}```
+```
+{"routing":{}}
+```
 
 ### Assign the Script to a Customer
 
@@ -152,7 +173,9 @@ If script shows an error, add this and then run the script again:
 
 3. Go to **ScriptForge**
 4. Select the script.
-5. Click **`Save`**.
+5. Set the **Timeout** to specify the duration you want it to run before it times out.
+6. Enter the **Timeout Action** manually and format it as **`[sip response code] [sip response message]`**.
+7. Click **`Save`**.
 
 ### Assign the script to other functions
 
