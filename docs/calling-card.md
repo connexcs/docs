@@ -56,7 +56,7 @@ async function main(data){
 
 **Step 3: Setup a DID in the system**
 
-1. [**Create a new DID**](https://docs.connexcs.com/did/#add-a-did).
+1. [**Create a new DID**](https://docs.connexcs.com/customer/did/#configure-direct-inward-call).
 2. Set the new ScriptForge to the new App .
 3. Set the destination to `calling_card`.
 4. Verify if the origination CLI in the allow list is in the customer account.
