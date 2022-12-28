@@ -27,12 +27,12 @@ In per-minute billing, the number of seconds you use gets tallied daily. Its com
 
 ### Disadvantages of ConnexCS Billing per minute
 
-1. More expensive with consistent traffic.
+1. Expensive with consistent traffic.
 2. Multiple servers are more expensive.
 
 ## Minimum Charges
 
-All accounts must spend a minimum of $20 per month to remain active. This helps to prevent incurring losses from stagnant accounts.
+All accounts must spend a minimum of $20 per-month / per-server to remain active. This helps to prevent incurring losses from stagnant accounts.
 
 ## Capacity Planning
 
