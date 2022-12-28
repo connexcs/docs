@@ -30,10 +30,7 @@ Once you create a new **Routing Strategy**, assign it to a customer account.
 1. In the **Routing Strategy** screen, click :material-plus:.
 2. Name the strategy.
 3. Select the Strategy type (as defined in Types of Routing Strategies section).
-
-    ![alt text][routing-strategy2]
-
-**6.** Click **`Save`**.
+4. Click **`Save`**.
 
 ![Alt text](misc/img/routing-2.png)
 
