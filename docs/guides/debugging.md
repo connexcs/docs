@@ -2,7 +2,7 @@
 
 Debugging (identifying call problems) is an essential skill for maintaining a Voice Platform. A single character or a 10ms delay in the wrong place could cause issues in VoIP / SIP communication because it has several components and a wide range of possible configurations.
 
-*(**VoIP:** Voice over Internet Protocol; **SIP:** Session Initiation Protocol)
+*(**VoIP:** Voice over Internet Protocol; **SIP:** Session Initiation Protocol)*
 
 ## Debugging Steps
 
