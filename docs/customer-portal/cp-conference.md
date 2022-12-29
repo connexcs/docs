@@ -36,7 +36,7 @@ In this section, view all the configured **Conference** groups:
 !!! tip "Conference calls for external callers"
     Only internal callers can use the above-mentioned standard Conference configuration.
 
-    To allow external numbers to dial into the conference, set up a [**Customer DID**](/customer-portal/did/) and set the Destination to Internal, and then select the available pre-configured conference.
+    To allow external numbers to dial into the conference, set up a [**Customer DID**](https://docs.connexcs.com/customer/did/#configure-direct-inward-call) and set the Destination to Internal, and then select the available pre-configured conference.
 
 *(**DID:** Direct Inward Dialing)*
 
