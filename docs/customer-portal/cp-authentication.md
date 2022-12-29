@@ -79,7 +79,7 @@ To enable, click :material-plus: next to SIP User Authentication:
 
     :material-menu-right: **`SMPP`**: SMPP, for SMS, isn't presently supported.
 
-*(**SIP**: Session Initiation Protocol; **UAC**: User Account Control; **RTP**: Real-Time Transport Protocol; **UDP**: User Datagram Protocol; **TCP**: Transmission Control Protocol; **TLS**: Transport Layer Security; **SRTP**: Secure Real-Time Transport Protocol or Secure RTP; **SMPP**: Short Message Peer-to-Peer; **SMS**: Short Message Service)*
+( **SIP:** Session Initiation Protocol; **UAC:** User Account Control; **RTP:** Real-Time Transport Protocol; **UDP:** User Datagram Protocol; **TCP:** Transmission Control Protocol; **TLS:** Transport Layer Security; **SRTP:** Secure Real-Time Transport Protocol or Secure RTP; **SMPP:** Short Message Peer-to-Peer; **SMS:** Short Message Service)
 
 + **Dial Pattern:** Default = E164. The default selection is the industry standard.
 + **Codecs:** The SIP user can use any codec as long as it isn't expressly specified as "Restricted" here.
