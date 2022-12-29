@@ -20,8 +20,7 @@ Click on the **Queue** name to edit the following:
 + **On Hold Music:** The audio file to play when the call is on hold.
 + **Join Message:** The audio file that contains the Welcome Message plays after the customer dials the group extension.
 + **Chime List:** A list of audio files with the messages played to the caller if they're awaiting routing to the next available member.
-
-  The message could thank them for waiting, play an advertisement, or refer them to online or email support.
+The message could thank them for waiting, play an advertisement, or refer them to online or email support.
 
 + **Chime Interval:** The time duration between successive chime messages. During this interval, the system will play the selected On Hold Music.
 
