@@ -1,9 +1,10 @@
 # Invoice
-This section lists each **Invoice** that is generated for your account. The following functions are available:
 
-+ **Vice Invoice**: Click this to display the invoice in a webpage.
-+ **Download as PDF**: Click this to download a copy of the invoice to your computer. 
+This section lists each generated **Invoice** for your account. The following functions are available:
 
-![alt text][cp-invoice] 
++ **Vice Invoice:** Click here to display the invoice on a webpage.
++ **Download as a PDF:** To save a copy of the invoice to your computer, click this link.
+
+![alt text][cp-invoice]
 
 [cp-invoice]: img/cp-invoice.png "Invoice"
