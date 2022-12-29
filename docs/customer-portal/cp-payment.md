@@ -5,8 +5,8 @@ View the list of all **Payments** made to date.
 + **Date / Time**: When the selected payment gets completed.
 + **Total**: Payment amount.
 + **Status**: The payment may show Pending, Cancelled, or Completed.
+**Note:** Pending and Cancelled payments aren't included in the balance calculation.
 
-  **Note:** Pending and Cancelled payments aren't included in the balance calculation.
 + **Description**: Name of the payment.
 
 ## Make payment
