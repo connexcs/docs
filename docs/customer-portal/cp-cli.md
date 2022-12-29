@@ -7,7 +7,7 @@ In VoIP systems, CLI is more than just a way to display the number of incoming c
 On our platform, CLI allows you to restrict and allow CLIs, which then allow or restrict calls based on the match.
 
 !!! tip "CLI Best Practice"
-  It's recommended to have one Forced CLI.
+    It's recommended to have one Forced CLI.
 
 ## Forced
 
