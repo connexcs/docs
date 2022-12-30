@@ -14,10 +14,9 @@ It provides high-reliability and custom Call Distribution algorithms (Weights an
 
 Click the :material-plus: button to set the following:
 
-
 * **User Account Control (UAC) Test (NAT)**: Select the method used to detect whether NAT is in use.
 
-    See [**Far-End NAT Traversal**](https://docs.connexcs.com/anyedge/anyedge/#far-end-nat-network-address-translation-traversal) for details.
+    See [**Far-End NAT Traversal**](https://docs.connexcs.com/anyedge/anyedge/#far-end-nat-traversal) for details.
 
 * **Algorithm**: How to distribute calls.
 
@@ -34,15 +33,15 @@ Click the :material-plus: button to set the following:
 
     Select one or more checks to validate those fields.
 
-    See [**SIP Packet Validation**](https://docs.connexcs.com/anyedge/anyedge/#sip-session-initiation-protocol-packet-validation) for details.
+    See [**SIP Packet Validation**](https://docs.connexcs.com/anyedge/anyedge/#sip-packet-validation) for details.
 
 * **Compress In**: Select method(s) to compress inbound data, not only for lower bandwidth use but also to avoid User Datagram Protocol (UDP) fragmentation.
 
-    See [**Compaction and Compression**](https://docs.connexcs.com/anyedge/anyedge/#compaction-compression) for details.
+    See [**Compaction and Compression**](https://docs.connexcs.com/anyedge/anyedge/#compaction-and-compression) for details.
 
 * **Compress Out**: Helps when using Outbound Proxy.
 
-    See [**Compaction and Compression**](https://docs.connexcs.com/anyedge/anyedge/#compaction-compression) for details.
+    See [**Compaction and Compression**](https://docs.connexcs.com/anyedge/anyedge/#compaction-and-compression) for details.
 
 * **Flags**: *in progress*
   
@@ -64,7 +63,7 @@ Click :material-plus: button to specify the Destination IP, and one or more Limi
 
 The ConnexCS **AnyEdge** load balancer is a high-performance application designed for maximum throughput using several cores.
 
-Combined with global PoPs and detailed metrics, we’ve got thatyou covered even if you have requirements that exceed 10K calls per second.
+Combined with global PoPs and detailed metrics, we’ve got that you covered even if you have requirements that exceed 10K calls per second.
 
 ### Far End NAT Traversal
 
@@ -106,13 +105,12 @@ The primary use case for **AnyEdge** is to disseminate calls to a pool of SIP Se
 
 You must set the load balancer's CPS limit. You can view both the CPS and the totals for the number of calls that failed because of the CPS breach.
 
-The CPS limit of the load balancer needs to be set-up. You can view both the CPS and the totals for the number of calls that failed because of the CPS breach.
+The CPS limit of the load balancer needs setting up. You can view both the CPS and the totals for the number of calls that failed because of the CPS breach.
 
 Use the following graphs to view the metrics:
 
 1. CPS - Calls Per Second
 2. CPS Breach
-
 
 ### SIP Packet Validation
 
