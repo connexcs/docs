@@ -41,7 +41,7 @@ graph LR
 A(Far End) --> B[PSTN]
 B --> C[Carrier]
 C --> D[ConnexCS Switch]
-D --> E[Routing Engine]me
+D --> E[Routing Engine]
 E --> F(Authorisation)
 F --> G(Ingress Routing)
 ```
@@ -76,7 +76,7 @@ If your Session Initiation Protocol (SIP) Trace shows that an INVITE packet was 
 |:--------:|----------------------------------------|--------------------------------------------------------------------------------------------------------|
 |    **403**   | IP Not Authorised                      | The IP Address doesn't match any account in the system.                                               |
 |    **500**   | Unidentified Internal Switch           | This is an internal error; you should never see this. If you do please contact us.                     |
-|    **500**   | Server not accepting calls (Paused)    | Either your account or server is disabled with ConnexCS.                         |
+|    **500**   | Server not accepting calls (Paused)    | Either your account or server gets disabled with ConnexCS.                         |
 |    **503**   | Unknown User                           | Username & Passwords don't match to any known user account.                                           |
 |    **503**   | Unable to perform LRN                  | You have selected LRN (Location Routing Number) dipping for this route, so it's likely that you don't have credit with us. |
 |    **503**   | LCR Unavailable                        | The system is unable to perform a Least Cost Routing (LCR) lookup.                                                          |
@@ -93,7 +93,7 @@ If your Session Initiation Protocol (SIP) Trace shows that an INVITE packet was 
 |    **580**   | To (fU) User Missing                   | This is an internal error; you should never see this. If you do please contact us.                     |
 
 !!! info "End Point synchronisation"
-    When making changes, although we try to synchronise all endpoints as quickly as possible, as this is a distributed system, it can take up to 60 seconds for any changes to take effect.
+    When making changes, although we try to synchronise all endpoints instantly, as this is a distributed system, it can take up to 60 seconds for any changes to take effect.
 
 [call-flow]: /misc/img/call-flow.jpg "Call Flow"
 
