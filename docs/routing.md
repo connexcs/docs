@@ -74,7 +74,7 @@ If your Session Initiation Protocol (SIP) Trace shows that an INVITE packet was 
 
 | SIP Code | SIP Reason                             | Details                                                                                                |
 |:--------:|----------------------------------------|--------------------------------------------------------------------------------------------------------|
-|    **403**   | IP Not Authorised                      | The IP Address doesn't match any account in the system.                                               |
+|    **401**   | IP Not Authorised                      | The IP Address doesn't match any account in the system.                                               |
 |    **500**   | Unidentified Internal Switch           | This is an internal error; you should never see this. If you do please contact us.                     |
 |    **500**   | Server not accepting calls (Paused)    | Either your account or server gets disabled with ConnexCS.                         |
 |    **503**   | Unknown User                           | Username & Passwords don't match to any known user account.                                           |
