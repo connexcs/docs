@@ -1,18 +1,18 @@
 # Detailed Features
 
-The following is a comprehensive list of features included in the latest stable version of ConnexCS. 
+The following is a comprehensive list of features included in the latest stable version of ConnexCS.
 
 ## Customers
 
 * Unlimited Customers
 * [Live Channel View](https://docs.connexcs.com/dashboard/#live-channels)
-* [Prepay & Post Pay](https://docs.connexcs.com/customer/credit-control/#pre-pay-post-pay)
+* [Prepay & Post Pay](https://docs.connexcs.com/credit-control/#pre-pay-post-pay)
 * Approved Payments (e.g Bank Transfers)
 * Auto Tax (Sales Tax / VAT)
 * Email Confirmation on Payments.
 * Minimum payment limit.
 * [Customer Level Channel & CPS Limitation](https://docs.connexcs.com/limiting-cps/)
-* [Customer Portal](https://docs.connexcs.com/customer-portal/customer-portal/)
+* [Customer Portal](https://docs.connexcs.com/customer-portal/cp-dashboard/)
 * Tag Support
 * Per Customer Custom Variables
 * Meta Information Storage (Address, etc)
@@ -21,7 +21,7 @@ The following is a comprehensive list of features included in the latest stable 
 * MRC Packages
 * [Invoices (See Billing)](https://docs.connexcs.com/customer/invoices/)
 * [Document Management](https://docs.connexcs.com/customer/documents/)
-* [Auto-login to Customer Portal](https://docs.connexcs.com/customer/main/#access-customer-portal)
+* [Auto login to Customer Portal](https://docs.connexcs.com/customer/main/#access-customer-portal)
 * Auto Email Password
 * Internal Number Range Assignment & Management
 * [Save Multiple Contacts & Designations](https://docs.connexcs.com/customer/main/#contacts)
@@ -31,7 +31,7 @@ The following is a comprehensive list of features included in the latest stable 
 
 * [Contract Management](https://docs.connexcs.com/setup/config/contracts/#assign-contract-to-a-customer)
 * Contract Revision Management
-* Grace Period prior to contract approval
+* Grace Period before contract approval
 * Auto close route if contract not signed
 
 ### Alerts
@@ -45,11 +45,11 @@ The following is a comprehensive list of features included in the latest stable 
 
 ### Contacts
 
-### Authentication
+### Authentication (Contacts)
 
 * Bulk Add IP
 * [Duplicate IP Detection & Warning](https://docs.connexcs.com/customer/auth/#enable-sip-user-authentication)
-* [IP Authentication](https://docs.connexcs.com/authentication/#ip-authentication)
+* [IP Authentication](https://docs.connexcs.com/global/#ip-authenticationn)
 * [Direction Selection (Inbound / Outbound Only)](https://docs.connexcs.com/customer/auth/#enable-ip-authentication)
 * [Endpoint Level Channel & CPS Limitation](https://docs.connexcs.com/limiting-cps/#limiting-cps-channels)
 * Codec Restrictions
@@ -64,7 +64,7 @@ The following is a comprehensive list of features included in the latest stable 
 
 * [Per Provider Card Capped Rate (Block calls that exceed a set cost per minute)](https://docs.connexcs.com/customer/routing/#price-limits)
 * [Block calls with a connection cost](https://docs.connexcs.com/routing-strategy/#blocking-calls)
-* [Upstream carrier multiple endpoint loadbalancing(with weights)](https://docs.connexcs.com/scaling-load-balancing/)
+* [Upstream carrier several endpoint load-balancing(with weights)](https://docs.connexcs.com/scaling-load-balancing/)
 * Per Provider Custom Variables
 * SIP Code Rewriting
 * [Custom set failover code](https://docs.connexcs.com/customer-portal/failover/)
@@ -73,7 +73,7 @@ The following is a comprehensive list of features included in the latest stable 
 * P-Asserted-ID Rules.
 * Propagate Username.
 
-### Authentication
+### Authentication (Providers)
 
 * [Outbound Proxy Support](https://docs.connexcs.com/anyedge/anyedge/#outbound-proxy)
 * Perimeter De-Normalization (Send in the carriers required format)
@@ -84,15 +84,15 @@ The following is a comprehensive list of features included in the latest stable 
 
 * Origination / Termination
 * [Revisions](https://docs.connexcs.com/provider-ratecard/#revisions-tab)
-* [NPANXX (Intrastate / Interstate / Indeterminate](https://docs.connexcs.com/routing-usa/)
-* [LRN & DN](https://docs.connexcs.com/routing-usa/#lrnlnp)
+* [NPANXX (Intrastate / Interstate / Indeterminate](https://docs.connexcs.com/routing-usa/))
+* [LRN & DN](https://docs.connexcs.com/routing-usa/#local-routing-number-local-number-portability)
 * Multi-Currency
 * [Tech Prefix Per Card](https://docs.connexcs.com/rate-card-building/#different-length-prefixes)
 * Custom Rounding Method and Billing Precision
-* [CLI Restriction](https://docs.connexcs.com/cli-restriction/#cli-restriction)
+* [CLI Restriction](https://docs.connexcs.com/video-guide/#cli-restrictions)
 * [Capped Rate & Block Connect Cost](https://docs.connexcs.com/customer/routing/#price-limits)
-* [Bulk Upload or Build in Browser](https://docs.connexcs.com/customer-ratecard/#bulk-upload)
-* [Email Rate Card](https://docs.connexcs.com/customer-ratecard/#email-the-rate-card)
+* [Bulk Upload or Build in Browser](https://docs.connexcs.com/customer-ratecard/#create-a-customer-rate-card)
+* [Email Rate Card](https://docs.connexcs.com/customer-ratecard/#configure-the-customer-rate-card)
 
 ### Compile Customer Cards
 
@@ -100,7 +100,7 @@ The following is a comprehensive list of features included in the latest stable 
 * Manual Ordering
 * Attach Contract to a Customer Card
 * [Convert between NPANXX, LRN, Flat Rate, Single Cost, Currencies](https://docs.connexcs.com/rate-card-building/#different-card-types)
-* [Auto calculate profits based Absolutely / Relatively / Percentage](https://docs.connexcs.com/customer-ratecard/#profits)
+* [Auto calculate profits based Absolutely / Relatively / Percentage](https://docs.connexcs.com/customer-ratecard/#main-tab)
 * RegEx Filter & Build Rules
 
 ## Routing
@@ -110,21 +110,21 @@ The following is a comprehensive list of features included in the latest stable 
 * Temporarily Disable Customer Termination Routes
 * [Per Route CPS & Channel Limitations](https://docs.connexcs.com/customer/routing/#capacity-limits)
 * [Tech Prefix Support](https://docs.connexcs.com/setup/advanced/prefix-set/)
-* Single source IP many customer support.
+* Single source IP; several customer support.
 * Dialstring Filtering
 * Per Route Capped Rate (Block calls that exceed a set cost per minute)
 * [Block calls with a connection cost](https://docs.connexcs.com/routing-strategy/#blocking-calls)
 * [CPS Buffer (Add PDD to lower CPS Spikes)](https://docs.connexcs.com/customer/routing/#capacity-limits)
-* [ASR+ (Cached Connectivity Prediction to lower upstream ASR)](https://docs.connexcs.com/scriptforge-old/#performing-an-asrplus-lookup)
+* [ASR+ (Cached Connectivity Prediction to lower upstream ASR)](https://docs.connexcs.com/customer/routing/#asr-answer-seizure-ratio-plus-details)
 * Per Route Scripting with ScriptForge
 * Per Route Custom Variables
 * [Temporary Locking & Excluding of Carriers](https://docs.connexcs.com/customer/routing/#locks)
 * P-Assert-ID Management
 
-### DID Management
+### Direct Inward Dial Management
 
 * ToS (Disable DID)
-* Serial Forking (Multiple Failover Destinations)
+* Serial Forking (Several Failover Destinations)
 * [Call Forwarding](https://docs.connexcs.com/customer/did/#destination)
 * Route Internally / SIP User / External IP Address
 * [Channel and CPS Limitations](https://docs.connexcs.com/limiting-cps/#limiting-cps-channels)
@@ -132,7 +132,7 @@ The following is a comprehensive list of features included in the latest stable 
 * Tags
 * [DID Driver Support (Connect Any Provider API)](https://docs.connexcs.com/developers/scriptforge/#driver)
 
-### CLI Management
+### Caller Line Identification Management
 
 * [CLI Whitelist](https://docs.connexcs.com/customer/cli/#whitelist)
 * [Force CLI (if not in whitelist)](https://docs.connexcs.com/customer/cli/#configure-cli)
@@ -169,7 +169,6 @@ The following is a comprehensive list of features included in the latest stable 
 * Custom Templating
 * Integrated with Calling Cards for softphone deployments
 
-
 ## Circuit Test
 
 * [Add your own Origination & Termination](https://docs.connexcs.com/circuit-test/)
@@ -203,7 +202,7 @@ The following is a comprehensive list of features included in the latest stable 
 * Multi-Timezone
 * Microsoft / Google HMAC OTP
 * YubiKey Hardware Security Token (WebAuthN)
-* [Duo Security](https://docs.connexcs.com/user-enhanced-security/)
+* [Duo Security](https://docs.connexcs.com/security/#user-enhanced-security)
 * [Full API Support](https://portal-api-docs.connexcs.com/)
 * High Quality Data Tables with custom collations & data piviot
 * Bulk Import
@@ -220,9 +219,9 @@ The following is a comprehensive list of features included in the latest stable 
 * Whitelabel
 * [Customer / Carrier Signup](https://docs.connexcs.com/setup/integrations/portal/#configuration-options)
 * Default Template Customer (Set Initial Credit, etc)
-* Multiple Custom Domains Supported (Separate Branding on each)
+* Several Custom Domains Supported (Separate Branding on each)
 * Custom Permissions (30+ Options)
-* [Call Reporting](https://docs.connexcs.com/customer-portal/breakout/)
+* [Call Reporting](https://docs.connexcs.com/customer-portal/cp-breakout/)
 * Customizable CDR Downloads
 * [Email & Mobile Verification](https://docs.connexcs.com/getting-started/#verify-contact-details)
 * Self CLI Verification (via callback)
@@ -236,8 +235,7 @@ The following is a comprehensive list of features included in the latest stable 
 * Add your own Javascript & CSS
 * [Free SSL Certificate for customer portal](https://docs.connexcs.com/security/#deploying-ssl-certificates)
 
-
-## Class 5 PBX
+## Class 5 Private Branch Exchange
 
 * [Custom Application Builder (Integration with ScriptForge)](https://docs.connexcs.com/setup/config/templates/#scriptforge-integration)
 * [Conference (User & Moderator Pin Support)](https://docs.connexcs.com/class5/creating-conference/#create-conference-call)
@@ -293,11 +291,11 @@ The following is a comprehensive list of features included in the latest stable 
 * 3 Months minimum history
 * Custom Date Range Selector
 * Channels / ASR / ACD / Attempts / Connected / PDD
-* [DTMF Reporting (Count the amount of calls with DTMF passed)](https://docs.connexcs.com/report/#dtmf-report)
+* [DTMF Reporting (Count the amount of calls with DTMF passed)](https://docs.connexcs.com/report/#dual-tone-multi-frequency)
 * [Failure Report](https://docs.connexcs.com/reporting-problems/)
 * CLI based ASR
 * Provider Report Per Customer
-* Channel / CPS Breach Graphs (Identify if calls are blocked because of Channel / CPS Restriction)
+* Channel / CPS Breach Graphs (Identify if blocked calls are because of Channel / CPS Restriction)
 * RTCP Reports (MOS / RTT / Packet Loss / Jitter)
 * Build your own Reports
 * [Spend Report](https://docs.connexcs.com/report/#breakout-report)
@@ -305,7 +303,7 @@ The following is a comprehensive list of features included in the latest stable 
 * Customer / Provider Traffic Attribution
 * Per Carrier Failover Report (Identify calls which failed, then succeeded through another carrier)
 * Carrier Code Consistence (Compare Commonality of response codes for similar numbers between carriers)
-* [Cost per DTMF](https://docs.connexcs.com/report/#dtmf-report)
+* [Cost per DTMF](https://docs.connexcs.com/report/#dual-tone-multi-frequency)
 * [Scheduled Reports](https://docs.connexcs.com/report/#schedule-reports)
 * [Per Number Analysis Reports](https://docs.connexcs.com/report/#per-number)
 * Live SIP Registrations
@@ -314,7 +312,7 @@ The following is a comprehensive list of features included in the latest stable 
 
 ### Call Logging
 
-* Realtime call log (prior to CDR generation)
+* Realtime call log (before CDR generation)
 * [SIP Registration Log](https://docs.connexcs.com/logging/#register-logging)
 * [Always on SIP Trace](https://docs.connexcs.com/logging/#sip-traces)
 * SIP Ladder Generation from Always on pcap
@@ -337,9 +335,9 @@ The following is a comprehensive list of features included in the latest stable 
   * [Minimum spend (Bill the customer extra to make up for their min spend)](https://docs.connexcs.com/setup/config/packages/#minimum-spend)
 * Customer & Provider CDR's
 * Invoice Format per destination or per day.
-* [Re-rating of calls if incorrectly setup](https://docs.connexcs.com/customer/cdr/#recalculate-cdr)
+* [Re-rating of calls if incorrectly setup](https://docs.connexcs.com/customer/cdr/#recalculate-call-detail-record)
 
-### CDR
+### Call Deatil Record
 
 * In Browser Vie
 * Download
@@ -369,10 +367,10 @@ The following is a comprehensive list of features included in the latest stable 
 * TLS Certificates free of charge (TLS & WebRTC)
 * Capacity 302 Redirect
 
-### SIP
+### Session Initiation Protocol
 
 * Topology Hiding
-* Force NAT (Where NAT cant be detected).
+* Force NAT (Where NAT detection isn't possible)
 * Intercept Reinivite (Handle Reinivites actively)
 * Active SIP Pinging
 * Advanced Session Timer Management (Active & Passive)
@@ -390,7 +388,7 @@ The following is a comprehensive list of features included in the latest stable 
 * Video Passthrough
 * IPV4 & IPv6
 
-### DNS
+### Domain Name System
 
 * Free Subdomain
 * High Volume DNS Service
@@ -407,7 +405,7 @@ The following is a comprehensive list of features included in the latest stable 
 * Multi User Login
 * IP Restriction
 * Multi Groups
-* Users can below to many security groups
+* Customers can use several security groups
 * Granular Permissions (80+ Definable Areas)
 * Microsoft / Google HMAC OTP
 * YubiKey Hardware Security Token (WebAuthN)
@@ -416,7 +414,7 @@ The following is a comprehensive list of features included in the latest stable 
 
 ### Platform
 
-* [Firewall](https://docs.connexcs.com/security/#sip-rtp-firewall-block-on-default)
+* [Firewall](https://docs.connexcs.com/security/#session-initiation-protocol-real-time-transport-protocol-firewall-block-on-default)
 * Auto Detect & Block Hack Attempts
 * Platform Intelligence
 
@@ -438,7 +436,7 @@ The following is a comprehensive list of features included in the latest stable 
 **Global AnyCast SIP**, highly scalable, lowest latency worldwide, eliminated SPOF on the edge.
 
 * Dedicated IP Address
-* [SIP Packet Compression / Compaction](https://docs.connexcs.com/anyedge/anyedge/#compaction-compression)
+* [SIP Packet Compression / Compaction](https://docs.connexcs.com/anyedge/anyedge/#compaction-and-compression)
 * [SIP Packet Validation](https://docs.connexcs.com/anyedge/anyedge/#sip-packet-validation)
 * [CPS Limits & CPS Breach Metrics](https://docs.connexcs.com/anyedge/anyedge/#metrics)
 * [Far End NAT Traversal (Customizable)](https://docs.connexcs.com/far-end-nat-traversal/#what-is-far-end-nat-traversal)
@@ -456,9 +454,9 @@ The following is a comprehensive list of features included in the latest stable 
 * BYOD (ConnexCS Class 4 switching not needed)
 * Zone based proximity routing
 
-## API
+## Application Programming Interface
 
 * [RESTful Customer Portal API (Can use your customer credentials to access)](https://docs.connexcs.com/api/)
 * [RESTful Control Panel API(80+ CRUD Endpoints)](https://docs.connexcs.com/api/#customer-administration)
 
-We've done our best to compile a detailed feature list, however our product is growing day-by-day and this should be interpreted as a minimum, as with our powerful customizations, you can do more.
+We've done our best to compile a detailed feature list. However our product is growing day-by-day and you should interpret this as a minimum. As with our powerful customizations, you can do more.

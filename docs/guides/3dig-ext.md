@@ -1,6 +1,6 @@
 # 3-Digit Extension Dialling
-You can set up 3-digit dialing in a number of ways. This is a basic setup for quick deployment. 
 
+You can set up 3-digit dialling in several ways. This is a basic setup for quick deployment.
 
 1. Set up an [**Internal Number Block**](/customer/main/#internal-number-block) for the customer.
 
@@ -10,7 +10,7 @@ You can set up 3-digit dialing in a number of ways. This is a basic setup for qu
 
     ![alt text][3dig-2]
 
-3. Document internal extensions in the [**Phonebook**](/class5/phonebook/) (this step isn't so much functional as reference).
+3. Document internal extensions in the [**Phonebook**](/class5/phonebook/) (this step isn't so much functional as a reference).
 
     ![alt text][3dig-2]
 
