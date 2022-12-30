@@ -135,9 +135,9 @@ The following is a comprehensive list of features included in the latest stable 
 ### Caller Line Identification Management
 
 * [CLI Whitelist](https://docs.connexcs.com/customer/cli/#whitelist)
-* [Force CLI (if not in whitelist)](https://docs.connexcs.com/customer/cli/#configure-cli)
-* [RegEx Rewrite](https://docs.connexcs.com/customer/cli/#advanced-cli-match-manipulation)
-* [P-Assert-ID](https://docs.connexcs.com/customer/cli/#configure-cli)
+* [Force CLI (if not in whitelist)](https://docs.connexcs.com/customer/cli/#force-cli)
+* [RegEx Rewrite](https://docs.connexcs.com/customer/cli/#advanced-cli-match-and-manipulation)
+* [P-Assert-ID](https://docs.connexcs.com/customer/cli/#use-pre-asserted-identity-as-cli)
 * Orig / Term Rules
 
 ### Call Distribution
@@ -382,7 +382,7 @@ The following is a comprehensive list of features included in the latest stable 
 * 30+ RTP Servers distributed worldwide.
 * [Media Transcoding](https://docs.connexcs.com/customer/routing/#media)
 * Direct RTP
-* [Wholesale Large Volume Call Recording](https://docs.connexcs.com/customer/routing/#call-recording)
+* [Wholesale Large Volume Call Recording](https://docs.connexcs.com/customer-portal/cp-recording/)
 * SRTP Support
 * ZRTP Passthrough
 * Video Passthrough

@@ -7,7 +7,7 @@ You can organize ConnexCS **Customers** through customer cards.
 ![alt text][customers]
 
 !!! question "How many customers can I add?"
-    You can add unlimited customers, and won't be charged per customer, only on their individual usage.
+    You can add unlimited customers, and we won't charge per customer, only on their individual usage.
 
 ## Customer functions
 
@@ -17,28 +17,31 @@ By clicking on `+` button we can add customer (see [**Create Customers**](https:
 
 **Refresh**: Refreshing the page, helpful when making edits or looking at real-time changes. This page is built as a web app, so some information will update automatically.  
 
-**Bulk Upload**: Upload multiple Customers at the same time, by importing a spreadsheet file (.csv file) into ConnexCS.
+**Bulk Upload**: Upload several Customers at the same time, by importing a spreadsheet file (.csv file) into ConnexCS.
 
 1. Click `Bulk Upload`, then `Upload`, find your customer file, and then click **`Open`**.
-2. Right-click on the second row and select **Start Row** to indicate the first line of data (the first row is typically column headers).
+2. Right-click on the second row and select **Start Row** to show the first line of data (the first row is typically column headers).
 3. Right-click on each column to **Map Columns** to appropriate fields.
-4. Once you have filled out all of the required fields, click **Upload to Server**.
+4. Once you have filled out all the required fields, click **Upload to Server**.
 
-!!! note "1. Before uploading the .csv file, please ensure  that it does not contain any exponential or scientific notations.<br>The inclusion of the notations will result in errors.<br>2. You must include the **Customer name** and **Currency** as necessary columns in the.csv file for bulk uploading."
+!!! note "Note"
+    1. Before uploading the .csv file, please ensure  that it doesn't contain any exponential or scientific notations. The inclusion of the notations will result in errors.
 
-**Bulk Edit**: Select multiple customers, then click **Bulk Edit** to modify fields such as Channels, Status, Flow Speed (CPS), Portal Access, and Country.
+    2. You must include the **Customer name** and **Currency** as necessary columns in the.csv file for bulk uploading.
 
-**Delete**: Delete multiple customers at a time.
+**Bulk Edit**: Select several customers, then click **Bulk Edit** to revise fields such as Channels, Status, Flow Speed (CPS), Portal Access, and Country.
+
+**Delete**: Delete several customers at a time.
 
 **?**: Link to the documentation of the current page.
 
 **Send**: ConnexCS includes email and SMS support for your customers.
 
-1. Select multiple customers using the tickbox selector on the left side of each row. (Customers aren't visible to each other in the sent message.)
+1. Select several customers using the tick-box selector on the left side of each row. (Customers aren't visible to each other in the sent message.)
 2. Click on "Send" at the top right then choose email or SMS.
 3. Fill in the Subject line and body details and send.
-   + Emails are sent FROM the email address populated in Setup > Settings, and TO every email address listed in Contacts for each customer.
-   + SMS is sent to the Mobile number of each Contact.
+   + Emails sent FROM the email address gets populated in Setup > Settings, and TO every email address listed in Contacts for each customer.
+   + Each contact receives an SMS to their Mobile number.
 
 !!! note "Custom Email Servers"
     Change the outbound Email Server and SMS origination number in **Setup :material-menu-right: Settings**.
@@ -49,7 +52,7 @@ By clicking on `+` button we can add customer (see [**Create Customers**](https:
 
 ## Customer View Modification
 
-+ **Columns** pop out on the right and allows you to add /  remove options, and change column order, in some cases you can create row groups and total values for pivot functionality.
++ **Columns** pop out on the right and allows you to add /  remove options, and change column order, for some cases you can create row groups and total values for pivot functionality.
 + **Filters** pop out on the right and allows you to filter your customers.
 + Adjust Column ordering
 
@@ -108,15 +111,15 @@ By clicking on `+` button we can add customer (see [**Create Customers**](https:
 
 !!! note "Save Options"
     + **Save and Continue** = Exit the Customer screen
-    + **Save and Stay** = Save the customer, but stay on the screen (helpful when adding multiple Customers at a time)
+    + **Save and Stay** = Save the customer, but stay on the screen (helpful when adding several Customers at a time)
     + **Delay and Save** = Select a time to elapse before saving the Customer, delaying the setup or change.
 ___
 
-!!! note "Note that you won't be able to change the account currency once the account is created."
+!!! note "Note that you won't be able to change the account currency once you create the account."
 
 ## Configure Customers
 
-Once a customer is created, click on the customer name to view details and provide additional configuration. For documentation on that configuration, navigate to the sub-section on the left:
+Once you create a customer, click on the customer name to view details and provide additional configuration. For documentation on that configuration, navigate to the sub-section on the left:
 
 &emsp; ![alt text][customersubs]
 
