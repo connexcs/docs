@@ -10,7 +10,7 @@ You will also want to have at least one [**Provider Rate Card**](https://docs.co
 
 ## Customer Rate Card Functions
 
-+ **Bulk Build**: Select multiple cards to perform the build. This is usually done after you've set up your properties and profit, or when you need to gather multiple customers after a rate change.
++ **Bulk Build**: Select multiple cards to perform the build. This is usually done after you've set up your properties and profit, or when you need to gather several customers after a rate change.
 
 + **Bulk Edit**: Edit multiple cards at a time for some Properties settings.
 
@@ -56,9 +56,9 @@ You will also want to have at least one [**Provider Rate Card**](https://docs.co
 Once created, there are several options to complete the card.
 
 1. Click :material-plus:.
-2. Complete the required fields. (For details, see [**Configure Customer Rate Card**](https://docs.connexcs.com/customer-ratecard/#configure-customer-rate-card) below.)
+2. Complete the required fields. (For details, see [**Configure Customer Rate Card**](https://docs.connexcs.com/customer-ratecard/#create-a-customer-rate-card) below.)
 3. Click **`Save`**.
-4. In the new card, select **Profits** and then click :material-plus:. (For details, see [**Profits**](https://docs.connexcs.com/customer-ratecard/#functions) under Functions below).
+4. In the new card, select **Profits** and then click :material-plus:. (For details, see [**Profits**](https://docs.connexcs.com/customer-ratecard/#customer-rate-card-functions) under Functions below).
 
 **Option 1: Build from Provider Card**
 This is the preferred method and requires you to select a Provider Rate Card in Properties > Basic.
@@ -81,7 +81,7 @@ The final method for configuring a Customer Rate Card is to import/upload it:
     + Col 2 - Name
     + Col 3 - Cost
 5. Select **Upload to Sever** and confirm.
-6. Select **Yes** to make this active immediately.
+6. Select **Yes** to make this active instantly.
 7. Once complete, the new card will display the Provider rules and the Profit rules.
 
 ## Configure the Customer Rate Card
@@ -100,7 +100,7 @@ Click **`Email`**, enter the email address and click **`Send`**.
 &emsp;![alt text][prc-func]
 
 + **Revision**: List all versions of changes on the card.
-+ **Create Draft**: Create a blank revision to manually add all prefixes and rows. This will only contain rows added manually and doesn't retain any previous revisions.
++ **Create Draft**: Create a blank revision to manually add all prefixes and rows. This will only contain rows added manually and doesn't hold any previous revisions.
 + **Edit Revision**: Make inline edits to the current revision. Upon `Save`, you can select to make this new revision Active. This keeps the previous revision and the changes made.
 + **Delete Revision**: Select a revision to delete.
 + **Download**: Download a CSV file of the Rate Card.
@@ -204,7 +204,7 @@ To change Revision status:
     |**Half-Down**|Values 0 through 5; rounded down (0.1234)|
 
 + **Duration Rounding**: The same rounding options, but for the call duration.
-+ **Public Options**: Choose what you can do with the card information: view it via HTML (on a web page), download CSV (a spreadsheet), and whether to list the rate card in the customer portal (customers can view cards not currently on their account and select them for use). (**Note: API Querying is no longer available.**)
++ **Public Options**: Choose what you can do with the card information: view it via HTML (on a web page), download CSV (a spreadsheet), and whether to list the rate card in the customer portal (customers can view cards not presently on their account and select them for use). (**Note: API Querying is no longer available.**)
 + **Dynamic Routing**: Manually created cards (added via upload or edited in-browser) have the option to use Dynamic Routing to select routes for the card, essentially changing the routing without creating new cards.
 
    Customer Cards generated from the Provider card use predetermined LCR (Least Cost Routing) based on the Parent card.
