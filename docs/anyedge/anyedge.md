@@ -63,7 +63,7 @@ Click :material-plus: button to specify the Destination IP, and one or more Limi
 
 The ConnexCS **AnyEdge** load balancer is a high-performance application designed for maximum throughput using several cores.
 
-Combined with global PoPs and detailed metrics, we’ve got that you covered even if you have requirements that exceed 10K calls per second.
+Combined with global PoPs and detailed metrics, we’ve got you covered even if you have requirements that exceed 10K calls per second.
 
 ### Far End NAT Traversal
 
