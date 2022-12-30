@@ -16,9 +16,6 @@ The **Customer Portal** provides access to configurations, real-time testing and
 
 + **Account** Use this to view your Company Profile, view and update your personal Profile, Change Password or Language, or Log Out.
 
-!!! warning "Account Balance functions"
-    The "Click to Make Payment" link is presently under development. Please navigate to **Payment** on the left-hand menu for this functionality.
-
 ## Graphs
 
 Below is the Current Customer account usage on four default **Graphs**.
