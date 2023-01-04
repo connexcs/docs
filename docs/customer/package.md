@@ -26,9 +26,6 @@ It allows you to simulate the package:
 
 1. **Customer:** Select the customer you want to run the package for.
 2. **Simulate:** You can select `yes` if you want to the run the package or `no`.
-
-3.**Date:** You can select the date on which you want to simulate the package.
-
-![runpackage](D:\f drive\ConnexCS\Images\runpackage.jpg)
+3. **Date:** You can select the date on which you want to simulate the package.
 
 [customer-packages]: /customer/img/customer-packages.png "Customer Packages"
