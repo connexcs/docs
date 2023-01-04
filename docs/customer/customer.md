@@ -97,6 +97,7 @@ By clicking on `+` button we can add customer (see [**Create Customers**](https:
     + **Ext.Accounting ID**: This is used to fill in work an external accounting field to correlate between Connexcs and the external accountancy system.
     + **RTP Firewall**: It will bypass the media Firewall.<br>To let the customer strictly use the existing RTP firewall under **Locked** and its flexibility to use RTP Firewall under **Unlocked**.
     + **Account Manager**: Designating the control of this account to a specific user.
+    + **Call Recording Retention Days**: How long the customer wants to keep the recorded calls.
 
 === "Address"
 
