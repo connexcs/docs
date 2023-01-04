@@ -63,6 +63,12 @@ For example, Create a permitted list that exclusively allows calls to or from th
 + **Dialed Number Match**: To route to a specific CLI, you dialied match number. For example, if Dialied matched number is starting with **1**, the CLI routes to 11111.
 The CLI can be a Regular Expression also.
 
++ **Notes**: Notes give you information about the CLI.
+
++ **STIR / SHAKEN Certificate:** If you apply any STIR / SHAKEN Certificate to a customer's account for calls verification, for example, whether the calls are spam.
+
++ **STIR / SHAKEN Attestation:** This is the level of a certification you can select from 3 levels `A`, `B`, or `C`.
+
 &emsp;![alt text][edit-cli]
 
 Click **`Save`** to complete the CLI configuration.
