@@ -73,6 +73,11 @@ By clicking on `+` button we can add customer (see [**Create Customers**](https:
         
         :material-menu-right: `Pending Approval`: New signups are listed as Pending Approval. The customer cannot pass calls or become active until this phase is completed. 
     
+    * **Status:** Defines the customer's account status as follows:
+           * **Active:** The customer is able to send and receive calls.
+           * **Inactive:** When the customer's account unsed or non-functional.
+           * **Penalty:** When the customer's account is penalised due to balance or any other resaon. The customer's account gets blocked and cannot use any of the services.
+           * **Pending Approval:** If customer has asked for any service and it requires any some approval before using it, you can set the status as pending approval.
     * **Debit Limit:** How much account can go into the negative (typically only relevant for post-pay customers). See [**Credit Control**](/credit-control/) for details. 
     * **Minimum Payment:** Set the minimum payment a customer can add to recharge the account. 
     * **Tax:** Tax is added as a percentage that is charged on top of costs. (UK = VAT; US = Sales Tax)
