@@ -127,7 +127,7 @@ You can have take a look at the various SIP Timers in the table below:
 
 The causes of a dropped call are:
 
- 1. **Downstream BYE**: When the call disconnects from the **originator's** side via a **BYE** message
+ 1. **Downstream BYE**: When the call disconnects from the **originator's** side via a **BYE** message.
  2. **Upstream BYE**: When the call disconnects from the **receiver** side via a **BYE** message.
  3. **MI Termination**: The system terminates the call when it finds that there has been no audio connection between the call's originator and the receiver.
 
