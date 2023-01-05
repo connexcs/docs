@@ -2,7 +2,7 @@
 
 **Management :material-menu-right: Report**
 
-View and Download **Reports** that provides extensive insights on historical data such as by Customers or Provider routes, [Dual-Tone Multi-Frequency (DTMF)](https://docs.connexcs.com/report/#dtmf) Cost, and [Per Number](https://docs.connexcs.com/report/#per-number) metrics.
+View and Download **Reports** that provides extensive insights on historical data such as by Customers or Provider routes, [Dual-Tone Multi-Frequency (DTMF)](https://docs.connexcs.com/report/#dual-tone-multi-frequency) Cost, and [Per Number](https://docs.connexcs.com/report/#per-number) metrics.
 
 The ability to [Schedule reports](https://docs.connexcs.com/report/#schedule-report) adds automation for frequent data requirements.  
 
@@ -32,7 +32,7 @@ Use the **Dual Tone Multi Frequency (DTMF)** report for customers that send DTMF
 
 ## Reports
 
-Currently, this provides the same functionality and options as the individual Breakout and DTMF reports. When new reports materialize, it will replace the old ones. This page has the same Pivot and Filtering functionality as the **Breakout** report.
+Presently, this provides the same functionality and options as the individual Breakout and DTMF reports. When new reports materialize, it will replace the old ones. This page has the same Pivot and Filtering functionality as the **Breakout** report.
 
 ## Per Number
 
