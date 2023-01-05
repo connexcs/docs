@@ -98,6 +98,7 @@ To view the SIP Trace of a call:
 * **Re-Transmissions:** Re-transmissions occur when the same INVITE is sent more than once. This means the `same` packets were sent more than once.
 
     Re-transmissions only happen on UDP. Re-transmissions occur when packets either don't reach the receiver or get lost in transmission. Thus, re-transmissions are done after a certain time interval using specific timers.
+
     You can have take a look at the various [**SIP Timers**](https://www.ibm.com/docs/en/was/8.5.5?topic=timers-sip-timer-summary).
 
 [logging-sip]: /misc/img/logging-sip.png "SIP Traces"
