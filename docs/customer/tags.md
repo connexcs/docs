@@ -4,7 +4,7 @@
 
 Tags allow you to create Alerts and Routing information at a global level. Once you have created the Tags, you can then tag the created Alert or Routing Strategy to your customers.
 
-You can go to **Management :material-menu-right: Customer :material-menu-right: Config :material-menu-right: Tags**.
+You can go to **Management :material-menu-right: Customer :material-menu-right: Config :material-menu-right: Tags.**
 
 Click on the dropdown next to Tags and assign it to your customer.
 
