@@ -82,7 +82,9 @@ From the **Carriers** page, you can perform several management operations.
         :material-menu-right: `Required`- call won't be delivered to the provider without the PA-ID
     
     * **Consec Fail Backoff:** When Enabled, if a carrier goes down, only a fraction of calls will be sent to the carrier until the start to complete again (calls aren't completely disabled otherwise there is no way to know when the carrier is back up again). The First Reply Timeout is skipped.  
-    * **Tags** and **TOML**: not applicable to carriers
+    * **Tags** and **TOML:** Not applicable to carriers.
+    * **Ext.Accounting ID:** This is used to fill in work an external accounting field to correlate between Connexcs and the external accountancy system.
+    * **Call Recording Retention Days:** How long the customer wants to keep the recorded calls.
 
 === "Address"
 
