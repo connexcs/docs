@@ -99,7 +99,26 @@ To view the SIP Trace of a call:
 
     Re-transmissions only happen on UDP. Re-transmissions occur when packets either don't reach the receiver or get lost in transmission. Thus, re-transmissions are done after a certain time interval using specific timers.
 
-    You can have take a look at the various [**SIP Timers**](https://www.ibm.com/docs/en/was/8.5.5?topic=timers-sip-timer-summary).
+You can have take a look at the various SIP Timers in the table below:
+
+|**Timer**|**Default value**|**Section**|**Meaning**|
+|-------------|-------------------------|-------------|------------------------------------------------------------------------------|
+| **T1** | 500 ms | 17.1.1.1 | Round-trip time (RTT) estimate|
+| **T2** | 4 sec.| 17.1.2.2| Maximum retransmission interval for non-INVITE requests and INVITE responses |
+| **T4** | 5 sec.| 17.1.2.2| Maximum duration that a message can remain in the network|
+| **Timer A** | initially T1| 17.1.1.2 | INVITE request retransmission interval, for UDP only |
+| **Timer B** | 64*T1| 17.1.1.2| INVITE transaction timeout timer |
+| **Timer D** | > 32 sec. for UDP| 17.1.1.2 | Wait time for response retransmissions|
+|| 0 sec. for TCP and SCTP|
+| **Timer E** | initially T1| 17.1.2.2 | Non-INVITE request retransmission interval, UDP only|
+| **Timer F** | 64*T1| 17.1.2.2| Non-INVITE transaction timeout timer|
+| **Timer G** | initially T1| 17.2.1| INVITE response retransmission interval|
+| **Timer H** | 64*T1| 17.2.1| Wait time for ACK receipt|
+| **Timer I** | T4 for UDP| 17.2.1| Wait time for ACK retransmissions|
+|| 0 sec. for TCP and SCTP|
+| **Timer J** | 64*T1 for UDP| 17.2.2| Wait time for retransmissions of non-INVITE requests|
+| | 0 sec. for TCP and SCTP|
+| **Timer K** | T4 for UDP| 17.1.2.2| Wait time for response retransmissions|
 
 [logging-sip]: /misc/img/logging-sip.png "SIP Traces"
 [logging-4]: /misc/img/236.png "logging-4"
