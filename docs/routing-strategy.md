@@ -20,6 +20,7 @@ With ConnexCS, you can use several types of routing strategies:
 | **Manual** |    Route calls manually as decided.|
 | **Reverse LCR** |   First, it selects the most expensive route. |
 | **Tier** |    Tiers in routing strategy allows distribution of calls. You can add as many cards for a customer. The calls get distributed corresponding to the weights assigned to them. It will try one carrier from each rate card.|
+|**LCR Performance**|  The carrier with the lowest cost gets selected, and out of those carriers with the best performance (connecting to the maximum calls), is given priority. Here, the carrier with the best performance will get used even if its cost is higher than other low-cost carriers.|
 
 ## Configure Routing Strategy
 
