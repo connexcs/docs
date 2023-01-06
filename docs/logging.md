@@ -120,7 +120,7 @@ You can have take a look at the various SIP Timers in the table below:
 | | 0 sec. for TCP and SCTP|
 | **Timer K** | T4 for UDP| 17.1.2.2| Wait time for response retransmissions|
 
-+ *table source*: [**IBM**](https://www.ibm.com/docs/en/was/8.5.5?topic=timers-sip-timer-summary); *Original Ref*: [**RFC 3261**](https://www.ietf.org/rfc/rfc3261.txt)
++ <font size="2">*Table source*: [**IBM**](https://www.ibm.com/docs/en/was/8.5.5?topic=timers-sip-timer-summary); *Original Ref*: [**RFC 3261**](https://www.ietf.org/rfc/rfc3261.txt)</font size>
 
 [logging-sip]: /misc/img/logging-sip.png "SIP Traces"
 [logging-4]: /misc/img/236.png "logging-4"
