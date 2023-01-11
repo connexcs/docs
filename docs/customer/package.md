@@ -28,6 +28,6 @@ It allows you to simulate the package:
 2. **Simulate:** You can select `yes` if you want to the run the package or `no`.
 3. **Date:** You can select the date on which you want to simulate the package.
 
-![runpackage](/customer-portal/img/runpackage.jpg)
+![runpackage](/img/runpackage.jpg)
 
 [customer-packages]: /customer/img/customer-packages.png "Customer Packages"
