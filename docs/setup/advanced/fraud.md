@@ -24,7 +24,7 @@ You can use the following 5 parameters for monitoring fraud detection:
 
 * **CPM:** Calls Per Minute, the amount of calls sent in any single minute.
 * **Call Duration:** The duration of the call.
-* **Total Calls:** The duration of the call.
+* **Total Calls:** Total number of calls in a day.
 * **Channels:** The amount of concurrent calls.
 * **Sequential Calls:** Consecutive calls to the same destination.
 
