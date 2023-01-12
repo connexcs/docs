@@ -74,6 +74,28 @@ Call quality issues are often identified using other methods.
 
 ![sip trace](/logging/sipserver.jpg)
 
+Here is an example describing a SIP trace:
+
+```sequence
+    autonumber
+    Alice->>Bob: INVITE
+    Bob-->>Alice: 100 Trying
+    Bob-->>Alice: 180 Ringing
+    Bob->>Alice: 200 OK (Connected)
+    Alice->>Bob: ACK
+    Note over Alice,Bob: The call is active
+    Alice->>Bob: BYE
+    Bob->>Alice: 200 OK
+    ```
+
+Alice and Bob represents party on the call. Alice sends an **INVTE** packet to Bob. Then Bob sends a **100 Trying** (provides you the feedback that your request is getting processed by a SIP Application) message alongwith **180 Ringing** (the Destination User Agent has received the INVITE message and is alerting the user of call).
+
+Further, **200 OK** is sent which means the calls are connected.
+
+The **ACK** is message is sent from Alice to Bob confirming that the call has been connected.
+
+After the call is over the **BYE** message is sent.
+
 !!! info "SIP Trace Captures"
     The **ConnexCS** system supports always-on **SIP Trace** capture.
 
@@ -97,7 +119,8 @@ To view the SIP Trace of a call:
 
 * **Re-Transmissions:** Re-transmissions occur when the same INVITE is sent more than once. This means the `same` packets were sent more than once.
 
-    Re-transmissions only happen on UDP. Re-transmissions occur when packets either don't reach the receiver or get lost in transmission. Thus, re-transmissions are done after a certain time interval using specific timers.
+    Re-transmissions only happen on UDP. 
+    Re-transmissions occur when packets either don't reach the receiver or get lost in transmission. Thus, re-transmissions are done after a certain time interval using specific timers.
 
 You can have take a look at the various SIP Timers in the table below:
 
