@@ -189,6 +189,10 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 !!! tip "The Call Recording setting is disabled"
     You need to enable the feature first on the account in **Setup :material-menu-right: Settings :material-menu-right: [Packages](https://docs.connexcs.com/setup/settings/account/#packages)** before it gets enabled here for individual customers.
 
++ **Block DTMF:** This option allows you to either `pass` or `block` DTMF through your calls.
+
+!!! note "Make sure your carrier supports the DTMF feature."
+
 ### Strategy
 
 For advanced routing, click :material-plus: to select a [**Prefix Set**](https://docs.connexcs.com/setup/advanced/prefix-set/) and assign a [**Routing Strategy**](https://docs.connexcs.com/routing-strategy/). This gives you greater control over how routes get selected for a given customer.

@@ -1,3 +1,7 @@
-!!! bug "Documentation for this section is in progress and will be updated soon." 
-    Thank you for visiting this section.   
-If you have any questions, visit our website and have a chat with us.
+# Interconnect
+
+**Interconnect** provides information on:
+
+1. **Termination address:** This is the address you send calls to.
+2. **Origination address** This is the address to receive calls from.
+3. Click [**here**](https://docs.connexcs.com/setup/settings/servers/#real-time-transport-protocol-servers) to know more about **RTP Servers**.

@@ -73,6 +73,11 @@ By clicking on `+` button we can add customer (see [**Create Customers**](https:
         
         :material-menu-right: `Pending Approval`: New signups are listed as Pending Approval. The customer cannot pass calls or become active until this phase is completed. 
     
+    * **Status:** Defines the customer's account status as follows:
+           * **Active:** The customer is able to send and receive calls.
+           * **Inactive:** When the customer's account is unused or non-functional.
+           * **Penalty:** When the customer's account is penalised due to balance or any other reason. The customer's account gets blocked and cannot use any of the services.
+           * **Pending Approval:** If a customer has asked for any service and it requires some approval before using it, you can set the status as pending approval.
     * **Debit Limit:** How much account can go into the negative (typically only relevant for post-pay customers). See [**Credit Control**](/credit-control/) for details. 
     * **Minimum Payment:** Set the minimum payment a customer can add to recharge the account. 
     * **Tax:** Tax is added as a percentage that is charged on top of costs. (UK = VAT; US = Sales Tax)
@@ -92,6 +97,7 @@ By clicking on `+` button we can add customer (see [**Create Customers**](https:
     + **Ext.Accounting ID**: This is used to fill in work an external accounting field to correlate between Connexcs and the external accountancy system.
     + **RTP Firewall**: It will bypass the media Firewall.<br>To let the customer strictly use the existing RTP firewall under **Locked** and its flexibility to use RTP Firewall under **Unlocked**.
     + **Account Manager**: Designating the control of this account to a specific user.
+    + **Call Recording Retention Days**: How long the customer wants to keep the recorded calls.
 
 === "Address"
 
