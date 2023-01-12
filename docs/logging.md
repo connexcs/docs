@@ -76,7 +76,7 @@ Call quality issues are often identified using other methods.
 
 Here is an example describing a SIP trace:
 
-```sequence
+```sequenceDiagram
     autonumber
     Alice->>Bob: INVITE
     Bob-->>Alice: 100 Trying
