@@ -95,6 +95,33 @@ To view the SIP Trace of a call:
     * **Missed call attempts**: If using SIP authentication, because there are two requests, it's possible that they hit our database out of order. This may cause the logging page to only display the first call attempt.
     * Considered for reporting calls and don't impact the calls directly. They're both rare, typically observed in less than 1 in every 50,000 calls.
 
+* **Re-Transmissions:** Re-transmissions occur when the same INVITE is sent more than once. This means the `same` packets were sent more than once.
+
+    Re-transmissions only happen on UDP. Re-transmissions occur when packets either don't reach the receiver or get lost in transmission. Thus, re-transmissions are done after a certain time interval using specific timers.
+
+You can have take a look at the various SIP Timers in the table below:
+
+|**Timer**|**Default value**|**Section**|**Meaning**|
+|-------------|-------------------------|-------------|------------------------------------------------------------------------------|
+| **T1** | 500 ms | 17.1.1.1 | Round-trip time (RTT) estimate|
+| **T2** | 4 sec.| 17.1.2.2| Maximum retransmission interval for non-INVITE requests and INVITE responses |
+| **T4** | 5 sec.| 17.1.2.2| Maximum duration that a message can remain in the network|
+| **Timer A** | initially T1| 17.1.1.2 | INVITE request retransmission interval, for UDP only |
+| **Timer B** | 64*T1| 17.1.1.2| INVITE transaction timeout timer |
+| **Timer D** | > 32 sec. for UDP| 17.1.1.2 | Wait time for response retransmissions|
+|| 0 sec. for TCP and SCTP|
+| **Timer E** | initially T1| 17.1.2.2 | Non-INVITE request retransmission interval, UDP only|
+| **Timer F** | 64*T1| 17.1.2.2| Non-INVITE transaction timeout timer|
+| **Timer G** | initially T1| 17.2.1| INVITE response retransmission interval|
+| **Timer H** | 64*T1| 17.2.1| Wait time for ACK receipt|
+| **Timer I** | T4 for UDP| 17.2.1| Wait time for ACK retransmissions|
+|| 0 sec. for TCP and SCTP|
+| **Timer J** | 64*T1 for UDP| 17.2.2| Wait time for retransmissions of non-INVITE requests|
+| | 0 sec. for TCP and SCTP|
+| **Timer K** | T4 for UDP| 17.1.2.2| Wait time for response retransmissions|
+
+<font size="2">*Table source*: [**IBM**](https://www.ibm.com/docs/en/was/8.5.5?topic=timers-sip-timer-summary); *Original Ref*: [**RFC 3261**](https://www.ietf.org/rfc/rfc3261.txt)</font size>
+
 [logging-sip]: /misc/img/logging-sip.png "SIP Traces"
 [logging-4]: /misc/img/236.png "logging-4"
 
@@ -102,7 +129,7 @@ To view the SIP Trace of a call:
 
 The causes of a dropped call are:
 
- 1. **Downstream BYE**: When the call disconnects from the **originator's** side via a **BYE** message
+ 1. **Downstream BYE**: When the call disconnects from the **originator's** side via a **BYE** message.
  2. **Upstream BYE**: When the call disconnects from the **receiver** side via a **BYE** message.
  3. **MI Termination**: The system terminates the call when it finds that there has been no audio connection between the call's originator and the receiver.
 
