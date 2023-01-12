@@ -42,6 +42,17 @@ Alternate location(s):
 * Customer :material-menu-right: [Customer Name] :material-menu-right: CDR
 * Carrier :material-menu-right: [Carrier Name] :material-menu-right: CDR
 
+## Caller Line Identification
+
+View CLIs for all the customers.
+
+*See [**CLI**](https://docs.connexcs.com/customer/cli/) for more details.*
+
+Alternate location(s):
+
+* Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Routing :material-menu-right: CLI.
+
+
 ## Dialog
 
 View all active calls across the entire account.
