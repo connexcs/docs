@@ -301,9 +301,9 @@ An ACK is an **Acknowledgement** of a final reply.
 
 + **Cancel Message**
 
-**CANCEL** message indicates that the previous request was terminated by user. In this case, the CANCEL message is sent from Alice to Bob.
+**CANCEL** message indicates that the previous request was terminated by the user. In this case, the CANCEL message is sent from Alice to Bob.
 
-Cancel can be due to PDD timer is too high or ringing exists for a longer duration.
+Cancel can be due to PDD timer being too high or ringing exists for a longer duration.
 
 Bob should send 487 Canceled message to Alice.
 
