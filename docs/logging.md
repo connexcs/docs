@@ -116,11 +116,12 @@ To view the SIP Trace of a call:
     * **Missed call attempts**: If using SIP authentication, because there are two requests, it's possible that they hit our database out of order. This may cause the logging page to only display the first call attempt.
     * Considered for reporting calls and don't impact the calls directly. They're both rare, typically observed in less than 1 in every 50,000 calls.
 
-* **Re-Transmissions:** Re-transmissions occur when the same INVITE is sent more than once. This means the `same` packets were sent more than once.
+### **Re-Transmissions:** 
+Re-transmissions occur when the same INVITE is sent more than once. This means the `same` packets were sent more than once.
 
-    Re-transmissions only happen on UDP. Re-transmissions occur when packets either don't reach the receiver or get lost in transmission. Thus, re-transmissions are done after a certain time interval using specific timers.
+Re-transmissions only happen on UDP. Re-transmissions occur when packets either don't reach the receiver or get lost in transmission. Thus, re-transmissions are done after a certain time interval using specific timers.
 
-    Here is an example describing Re-transmissions:
+Here is an example describing Re-transmissions:
 
 ```mermaid
 sequenceDiagram
@@ -207,6 +208,37 @@ You can have take a look at the various SIP Timers in the table below:
 
 [logging-sip]: /misc/img/logging-sip.png "SIP Traces"
 [logging-4]: /misc/img/236.png "logging-4"
+
+### Re-Invite
+
+```mermaid
+    sequenceDiagram
+    autonumber
+    Alice->>Bob: INVITE (cseq 1)
+    Bob-->>Alice: 100 Trying
+    Bob->>Charlie: INVITE (cseq 1)
+    Charlie-->>Bob: 100 Trying
+    Charlie-->>Bob: 180 Ringing
+    Bob-->>Alice: 180 Ringing
+    Charlie->>Bob: 200 OK (Connected)
+    Bob->>Alice: 200 OK (Connected)
+    Alice->>Bob: ACK
+    Bob->>Charlie: ACK
+    Note over Alice,Charlie: The call is active
+    Bob->>Alice: REINVITE
+    Alice->>Bob: 200 OK
+    Bob->>Charlie: REINVITE
+    Charlie->>Bob: 200 OK
+    Note over Alice,Charlie: Call Disconnects
+    Charlie->>Bob: BYE
+    Bob->>Alice: BYE
+    Alice->>Bob: 200 OK
+    Bob->>Charlie: 200 OK
+```
+
+In case of a Re-Invite, it re-establishes an entire call.
+
+Here, Alice starts a call with Bob, the call is active without any issues and the media is through UK. But as a provider we detect the call isn't going through UK. Thus, we send the Re-Invite to Alice to send the media through us and we can place the call on a different server in real-time and in the middle of the call. Thus, a Re-Invite can contain some extra information also.
 
 ## Call Release Reasons
 
