@@ -116,7 +116,7 @@ To view the SIP Trace of a call:
     * **Missed call attempts**: If using SIP authentication, because there are two requests, it's possible that they hit our database out of order. This may cause the logging page to only display the first call attempt.
     * Considered for reporting calls and don't impact the calls directly. They're both rare, typically observed in less than 1 in every 50,000 calls.
 
-### **Re-Transmissions:** 
+### **Re-Transmissions** 
 Re-transmissions occur when the same INVITE is sent more than once. This means the `same` packets were sent more than once.
 
 Re-transmissions only happen on UDP. Re-transmissions occur when packets either don't reach the receiver or get lost in transmission. Thus, re-transmissions are done after a certain time interval using specific timers.
@@ -226,11 +226,11 @@ You can have take a look at the various SIP Timers in the table below:
 
 Here, Alice sends an invite to Bob and it's expected to get a reply (100 Trying) within in 500ms which is a **First Reply Timer**.
 
-Then a **PDD timer** is set for 5s to hear the ringing. Post-dial delay (PDD) is the measurement of how long it takes for a calling party to hear a ring back tone after initiating a call.
+Then a **PDD timer** is set for 5s to hear the ringing. Post-dial delay (PDD) is the measurement of how long it takes for a calling party to hear a ring-back tone after initiating a call.
 
 The time from when the respondent's phone starts ringing until it's answered; is a **Ring Timer**.
 
-When the call is active **Max Call Duration Timer** comes into picture. When this timer is active, the active call gets disconnected when it reaches the maximum time of an active call.
+When the call is active **Max Call Duration Timer** comes into the picture. When this timer is active, the active call gets disconnected when it reaches the maximum time of an active call.
 
 [logging-sip]: /misc/img/logging-sip.png "SIP Traces"
 [logging-4]: /misc/img/236.png "logging-4"

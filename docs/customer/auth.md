@@ -282,6 +282,23 @@ In this case, when we send the OPTION packet to Charlie, he doesn't reply. The O
 
 Another scenario is when ConnexCS sends message to Charlie and Charlie is active on the call, he will send a BYE message to Alice and we won't see a reply to that.
 
++ **ACK Message**
+
+An ACK is an **Acknowledgement** of a final reply.
+
+```mermaid
+    sequenceDiagram
+    autonumber
+    Alice->>Bob: INVITE
+    Bob-->>Alice: 100 Trying
+    Bob-->>Alice: 180 Ringing
+    Bob->>Alice: 200 OK (Connected)
+    Alice->>Bob: ACK
+    Note over Alice,Bob: The call is active
+    Alice->>Bob: BYE
+    Bob->>Alice: 200 OK
+```
+
 ### Use Case for NAT/SIP Pings
 
 **Troubleshooting Scenario**
