@@ -76,8 +76,7 @@ Call quality issues are often identified using other methods.
 
 Here is an example describing a SIP trace:
 
-```mermaid
-sequenceDiagram
+```sequence
     autonumber
     Alice->>Bob: INVITE
     Bob-->>Alice: 100 Trying
@@ -96,7 +95,6 @@ Further, **200 OK** is sent which means the calls are connected.
 The **ACK** is message is sent from Alice to Bob confirming that the call has been connected.
 
 After the call is over the **BYE** message is sent.
-
 !!! info "SIP Trace Captures"
     The **ConnexCS** system supports always-on **SIP Trace** capture.
 
@@ -161,6 +159,68 @@ To view the SIP Trace of a call:
     end
     end
 ```
+
+Alice and Bob represents party on the call. Alice sends an **INVTE** packet to Bob. INVITE is an initial request.
+
+Then Bob sends a **100 Trying** (provides you the feedback that your request is getting processed by a SIP Application) message along-with **180 Ringing** (the Destination User Agent has received the INVITE message and is alerting the user of call). **100 Trying** and **180 Ringing** are provisional response.
+
+The re-invtes get absorbed when they're received. When Bob receives the **INVITE** packet and a special timer is set (please see the below timer table) as to how long it should wait for re-transmissions. If any packet is received within this time-frame, the packet gets ignored.
+
+Further, **200 OK** is sent which means the calls are connected. **200 OK** is a final reply.
+
+The **ACK** is message is sent from Alice to Bob confirming that the call has been connected.
+
+Each line is a **Message**.
+
+From 1 message (INVITE) till message 5 (ACK), it's considered as a single **Transaction**.
+
+Similarly message 6 (BYE) and 7 (200 OK) are also considered as a single **Transaction**.
+
+From message 1 till message 7, the whole conversation is a **Dialog**.
+
+!!! note "Note"
+    Message displayed in Pink color.
+    Transaction displayed in Blue color.
+    Dialog displayed in Violet color.
+
+Here is an example describing Re-transmissions:
+
+    ```mermaid
+    sequenceDiagram
+    autonumber
+    rect rgb(127, 0, 255)
+    rect rgb(100, 180, 255)
+    rect rgb(252, 110,153)
+    Alice->>Bob: INVITE (cseq 1)
+    end
+    Note over Alice,Bob: 500ms delay
+    rect rgb(252, 110,153)
+    Alice->>Bob: INVITE (cseq 1)
+    end
+    rect rgb(252, 110,153)
+    Bob-->>Alice: 100 Trying
+    end
+    rect rgb(252, 110,153)
+    Bob-->>Alice: 180  Ringing
+    end
+    rect rgb(252, 110,153)
+    Bob->>Alice: 200 OK (Connected)
+    end
+    rect rgb(252, 110,153)
+    Alice->>Bob: ACK
+    end
+    end
+    Note over Alice,Bob: The call is active
+    rect rgb(100, 180, 255)
+    rect rgb(252, 110,153)
+    Alice->>Bob: BYE
+    end
+    rect rgb(252, 110,153)
+    Bob->>Alice: 200 OK
+    end
+    end
+    end
+    ```
 
 Alice and Bob represents party on the call. Alice sends an **INVTE** packet to Bob. INVITE is an initial request.
 
