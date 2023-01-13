@@ -269,8 +269,30 @@ Here, Alice starts a call with Bob, the call is active without any issues and th
 
 The causes of a dropped call are:
 
- 1. **Downstream BYE:** When the call disconnects from the **originator's** side via a **BYE** message.
+ 1. **Downstream BYE:** When the call disconnects from the **originator's** side via a **BYE** message. 
+
+```mermaid
+    sequenceDiagram
+    autonumber
+    Downstream->>ConnexCS: BYE
+    ConnexCS->>Upstream: BYE
+    Upstream->>ConnexCS: 200 OK
+    ConnexCS->>Downstream: 200 OK
+```
+
  2. **Upstream BYE:** When the call disconnects from the **receiver** side via a **BYE** message.
+
+```mermaid    
+    sequenceDiagram
+    autonumber
+    participant Downstream
+    participant ConnexCS
+    Upstream->>ConnexCS: BYE
+    ConnexCS->>Downstream: BYE
+    Downstream->>ConnexCS: 200 OK
+    ConnexCS->>Upstream: 200 OK
+```
+
  3. **MI Termination:** The system terminates the call when it finds that there has been no audio connection between the call's originator and the receiver.
 
      The system triggers a BYE message on both sides within the application.
