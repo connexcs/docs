@@ -269,14 +269,17 @@ Here, Alice starts a call with Bob, the call is active without any issues and th
 
 The causes of a dropped call are:
 
- 1. **Downstream BYE**: When the call disconnects from the **originator's** side via a **BYE** message.
- 2. **Upstream BYE**: When the call disconnects from the **receiver** side via a **BYE** message.
- 3. **MI Termination**: The system terminates the call when it finds that there has been no audio connection between the call's originator and the receiver.
+ 1. **Downstream BYE:** When the call disconnects from the **originator's** side via a **BYE** message.
+ 2. **Upstream BYE:** When the call disconnects from the **receiver** side via a **BYE** message.
+ 3. **MI Termination:** The system terminates the call when it finds that there has been no audio connection between the call's originator and the receiver.
 
      The system triggers a BYE message on both sides within the application.
 
- 4. **Ping Timeout**: If you enable the Sip Ping feature under Customer:material-menu-right: Routing, the receiver and originator receives OPTION packets (every X seconds).
+ 4. **Ping Timeout:** If you enable the Sip Ping feature under Customer:material-menu-right: Routing, the receiver and originator receives OPTION packets (every X seconds).
 
     The originator and the receiver should reply with 200 OK after receiving the OPTION packets. If either the originator or receiver misses sending the acknowledgment, the call terminates due to a "ping timeout."
 
     It prevents any long-duration calls as the system recognizes either the originator or receiver as inactive.
+5. **Missing ACK:** We can if a call gets disconnected within 5 seconds, its because an Acknowledgement wasn't received
+6. **Missing SIP Ping:** We can if a call gets disconnected within 20-30 seconds, its because of a missing SIP Ping.
+7. **Missing Re-Invite:** We can if a call gets disconnected within 5 minutes, its because of a missing Re-Invite message.
