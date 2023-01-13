@@ -87,11 +87,11 @@ Here is an example describing a SIP trace:
     Bob->>Alice: 200 OK
 ```
 
-Alice and Bob represents party on the call. Alice sends an **INVTE** packet to Bob. Then Bob sends a **100 Trying** (provides you the feedback that your request is getting processed by a SIP Application) message together with **180 Ringing** (the Destination User Agent has received the INVITE message and is alerting the user of call).
+Alice and Bob represent the parties on the call. Alice sends an **INVITE** packet to Bob. Then Bob sends a **100 Trying** (provides you the feedback that your request is getting processed by a SIP Application) message together with **180 Ringing** (the Destination User Agent has received the INVITE message and is alerting the user of the call).
 
 Further, **200 OK** is sent which means the calls are connected.
 
-The **ACK** is message is sent from Alice to Bob confirming that the call has been connected.
+The **ACK** message is sent from Alice to Bob confirming that the call has been connected.
 
 ![sip trace](/logging/sipserver.jpg)
 
@@ -159,11 +159,11 @@ end
 end
 ```
 
-Alice and Bob represents party on the call. Alice sends an INVTE packet to Bob. INVITE is an initial request.
+Alice and Bob represent the parties on the call. Alice sends an INVITE packet to Bob. INVITE is an initial request.
 
-Then Bob sends a 100 Trying (provides you the feedback that your request is getting processed by a SIP Application) message along-with 180 Ringing (the Destination User Agent has received the INVITE message and is alerting the user of call). 100 Trying and 180 Ringing are provisional response.
+Then Bob sends a 100 Trying (provides you the feedback that your request is getting processed by a SIP Application) message along with 180 Ringing (the Destination User Agent has received the INVITE message and is alerting the user of the call). 100 Trying and 180 Ringing are provisional responses.
 
-The re-invtes get absorbed when they're received. When Bob receives the INVITE packet and a special timer is set (please see the below timer table) as to how long it should wait for re-transmissions. If any packet is received within this time-frame, the packet gets ignored.
+The re-invites get absorbed when they're received. When Bob receives the INVITE packet and a special timer is set (please see the below timer table) as to how long it should wait for re-transmissions. If any packet is received within this time frame, the packet gets ignored.
 
 Further, 200 OK is sent which means the calls are connected. 200 OK is a final reply.
 
@@ -171,11 +171,11 @@ The ACK is message is sent from Alice to Bob confirming that the call has been c
 
 Each line is a Message.
 
-From 1 message (INVITE) till message 5 (ACK), it's considered as a single Transaction.
+From 1 message (INVITE) to message 5 (ACK), it's considered as a single Transaction.
 
-Similarly message 6 (BYE) and 7 (200 OK) are also considered as a single Transaction.
+Similarly, messages 6 (BYE) and 7 (200 OK) are also considered as a single Transaction.
 
-From message 1 till message 7, the whole conversation is a Dialog.
+From message 1 to message 7, the whole conversation is a Dialog.
 
 !!! note "Note"
     Message displayed in Pink color.
