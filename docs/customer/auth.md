@@ -299,6 +299,28 @@ An ACK is an **Acknowledgement** of a final reply.
     Bob->>Alice: 200 OK
 ```
 
++ **Cancel Message**
+
+**CANCEL** message indicates that the previous request was terminated by user. In this case, the CANCEL message is sent from Alice to Bob.
+
+Cancel can be due to PDD timer is too high or ringing exists for a longer duration.
+
+Bob should send 487 Canceled message to Alice.
+
+```mermaid
+    sequenceDiagram
+    autonumber
+    Alice->>Bob: INVITE
+    Bob-->>Alice: 100 Trying
+    Alice->>Bob: CANCEL (PDD Too High)
+    Bob->>Alice: 487 Canceled
+    Alice->>Bob: INVITE
+    Bob-->>Alice: 100 Trying
+    Bob-->>Alice: 180 Ringing
+    Alice->>Bob: CANCEL (Alternative, Ringing Too Long)
+    Bob->>Alice: 487 Canceled
+```
+
 ### Use Case for NAT/SIP Pings
 
 **Troubleshooting Scenario**
