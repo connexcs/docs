@@ -183,6 +183,29 @@ Customers using the Customer Portal can rest their SIP Passwords in [**Authentic
 
 Use `Send` next to the SIP User to send a SIP message to the end device which will flash on the phone.
 
+### SIP Pings
+
+**Case 1: Normal SIP Ping**
+
+```mermaid
+    sequenceDiagram
+    autonumber
+    Alice->>Bob: INVITE (cseq 1)
+    Bob-->>Alice: 100 Trying
+    Bob-->>Alice: 183 Ringing
+    Bob->>Alice: 200 OK (Connected)
+    Alice->>Bob: ACK
+    Note over Alice,Bob: The call is active
+    Bob->>Alice: OPTIONS
+    Alice->>Bob: 200 OK
+    Note over Alice,Bob: The call has ended
+    Alice->>Bob: BYE
+    Bob->>Alice: 200 OK
+```
+In this case, Bob sends a message to Alice called **OPTIONS** and Alice sends back **200 OK**. If **200 OK** is not sent, the call be get disconnected.
+
+**Case 2: Alice Disappears**
+
 ### Use Case for NAT/SIP Pings
 
 **Troubleshooting Scenario**
