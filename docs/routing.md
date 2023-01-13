@@ -74,7 +74,8 @@ If your Session Initiation Protocol (SIP) Trace shows that an INVITE packet was 
 
 | SIP Code | SIP Reason| Details|
 |:--------:|----------------------------------------|--------------------------------------------------------------------------------------------------------|
-|    **401**   | IP Not Authorised| The IP Address doesn't match any account in the system.|
+|**401**| IP Not Authorised| The IP Address doesn't match any account in the system.|
+|**404**|Not Found | The number does not exist.|
 |**408**| Request Timeout|If the request wasn't answered or wasn't able to get a reply from the other side|
 |**487**| Request Terminated|If the caller closes the phone before connection|
 |**500**| Unidentified Internal Switch| This is an internal error; you should never see this. If you do please contact us.|
@@ -93,6 +94,10 @@ If your Session Initiation Protocol (SIP) Trace shows that an INVITE packet was 
 |**580**| Switch IP Variable Not Provided| This is an internal error; you should never see this. If you do please contact us.|
 |**580**| To (oU) User Missing| This is an internal error; you should never see this. If you do please contact us.|
 |**580**| To (fU) User Missing| This is an internal error; you should never see this. If you do please contact us.|
+
+!!! note "4XX vs 5XX"
+    4xx codes are Client Failure Responses, while 5XX are Server Failure Responses. 
+    For example, it doesn't mean that the server couldn't deliver the call but it means the server knows that the number doesn't exist.
 
 !!! info "End Point synchronisation"
     When making changes, although we try to synchronise all endpoints instantly, as this is a distributed system, it can take up to 60 seconds for any changes to take effect.
