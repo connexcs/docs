@@ -183,7 +183,7 @@ Customers using the Customer Portal can rest their SIP Passwords in [**Authentic
 
 Use `Send` next to the SIP User to send a SIP message to the end device which will flash on the phone.
 
-### SIP Pings
+### SIP Pings.
 
 ### Use Case for NAT/SIP Pings
 
