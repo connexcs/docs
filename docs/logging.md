@@ -177,7 +177,10 @@ Similarly message 6 (BYE) and 7 (200 OK) are also considered as a single Transac
 
 From message 1 till message 7, the whole conversation is a Dialog.
 
-!!! note "Note" Message displayed in Pink color. Transaction displayed in Blue color. Dialog displayed in Violet color.
+!!! note "Note" 
+    Message displayed in Pink color.
+    Transaction displayed in Blue color. 
+    Dialog displayed in Violet color.
 
 You can have take a look at the various SIP Timers in the table below:
 
