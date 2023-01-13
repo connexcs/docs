@@ -12,7 +12,7 @@ Use the **Auth** tab to configure IP or SIP (Username / Password) Authentication
 When you enable **IP Authentication**, you link a customer switch's IP address to their account. This adds a layer of security by ensuring the calls are coming from a trusted source.
 
 !!! error "Newly added IP immediately marked as Blocked under IP Authentication"
-    This occurs because call requests were sent from the new IP before it's authorized. As a result, ConnexCS fraud detection in the firewall blocked the unauthorised IP. Attempted calls from this IP won't be completed.
+    This occurs because call requests were sent from the new IP before it's authorized. As a result, ConnexCS fraud detection in the firewall blocked the unauthorised IP. Attempted calls from this IP won't get completed.
 
     To resolve the blocked IP, go to **Setup :material-menu-right: Advanced :material-menu-right: Firewall**. Select the blocked IP, then delete it from the firewall. This unblocks the IP, but it will take up to 15 minutes for the change to become active in the switch. 
     
@@ -92,7 +92,7 @@ ___
 
 ## SIP User Authentication
 
-When you enable **SIP Authentication**, ConnexCS will reject the initial SIP INVITE with a "407 Authentication Required". This message includes a 'nonce' (a uniquely randomly generated number, which is hashed). The customer switch will send appropriate authentication information to ConnexCS, which will connect the call.
+When you enable **SIP Authentication**, ConnexCS will reject the initial SIP INVITE with a "407 Authentication Required". This message includes a 'nonce' (a uniquely randomly generated hashed number). The customer switch will send appropriate authentication information to ConnexCS, which will connect the call.
 
 Generic SIP Trace showing the Challenge Response:
 
@@ -171,7 +171,7 @@ Make sure you `Copy Text` and provide this information for configuration, as thi
 Customers using the Customer Portal can rest their SIP Passwords in [**Authentication**](https://docs.connexcs.com/customer-portal/cp-authentication/#reset-sip-password).
 
 !!! warning "SIP Password security"
-    SIP passwords are a requirement of the SIP protocol, but they can present security risks for a provider.
+    SIP passwords are needed for the SIP protocol, but they can present security risks for a provider.
 
     You must configure them in ConnexCS when SIP authentication is setup, but they aren't available for providers to retrieve later. 
     
@@ -192,7 +192,7 @@ Use `Send` next to the SIP User to send a SIP message to the end device which wi
     autonumber
     Alice->>Bob: INVITE (cseq 1)
     Bob-->>Alice: 100 Trying
-    Bob-->>Alice: 183 Ringing
+    Bob-->>Alice: 180 Ringing
     Bob->>Alice: 200 OK (Connected)
     Alice->>Bob: ACK
     Note over Alice,Bob: The call is active
@@ -202,17 +202,93 @@ Use `Send` next to the SIP User to send a SIP message to the end device which wi
     Alice->>Bob: BYE
     Bob->>Alice: 200 OK
 ```
-In this case, Bob sends a message to Alice called **OPTIONS** and Alice sends back **200 OK**. If **200 OK** is not sent, the call be get disconnected.
+In this case, Bob sends a message to Alice called **OPTIONS** and Alice sends back **200 OK**. If **200 OK** isn't sent, the call be get disconnected.
 
 **Case 2: Alice Disappears**
+
+```mermaid
+    sequenceDiagram
+    autonumber
+    Alice->>Bob: INVITE (cseq 1)
+    Bob-->>Alice: 100 Trying
+    Bob-->>Alice: 180 Ringing
+    Bob->>Alice: 200 OK (Connected)
+    Alice->>Bob: ACK
+    Note over Alice,Bob: The call is active
+    Bob->>Alice: OPTIONS
+    Note over Alice,Bob: We did not get a reply, other side disappears 
+    Note over Alice,Bob: We will drop the call
+    Bob->>Alice: BYE (No SIP Ping Reply)
+```
+
+In this case, the call is half-way connected and Alice doesn't reply to the message sent by Bob. Bob decides to drop the call.
+
+If Alice is alive, then you may get a reply, if there is a reply, then this is likely a premature disconnection and there is a fault with the SIP ping on Alice's side.
+
+**Case 3: 3-party Example**
+
+```mermaid
+    sequenceDiagram
+    autonumber
+    Alice->>ConnexCS: INVITE (cseq 1)
+    ConnexCS-->>Alice: 100 Trying
+    ConnexCS->>Charlie: INVITE (cseq 1)
+    Charlie-->>ConnexCS: 100 Trying
+    Charlie-->>ConnexCS: 180 Ringing
+    ConnexCS-->>Alice: 180 Ringing
+    Charlie->>ConnexCS: 200 OK (Connected)
+    ConnexCS->>Alice: 200 OK (Connected)
+    Alice->>ConnexCS: ACK
+    ConnexCS->>Charlie: ACK
+    Note over Alice,Charlie: The call is active
+    ConnexCS->>Alice: OPTIONS
+    Alice->>ConnexCS: 200 OK
+    ConnexCS->>Charlie: OPTIONS
+    Charlie->>ConnexCS: 200 OK
+    Note over Alice,Charlie: Call Disconnects
+    Charlie->>ConnexCS: BYE
+    ConnexCS->>Alice: BYE
+    Alice->>ConnexCS: 200 OK
+    ConnexCS->>Charlie: 200 OK
+```
+In this case, the communication happens between 3 parties. ConnexCs is sending OPTION packets in both the directions (to Alice and Charlie).
+
+**Case 4:Missing SIP Ping Call Disconnection (Charlie disappears)**
+
+```mermaid
+    sequenceDiagram
+    autonumber
+    Alice->>Bob: INVITE (cseq 1)
+    Bob-->>Alice: 100 Trying
+    Bob->>Charlie: INVITE (cseq 1)
+    Charlie-->>Bob: 100 Trying
+    Charlie-->>Bob: 183 Ringing
+    Bob-->>Alice: 183 Ringing
+    Charlie->>Bob: 200 OK (Connected)
+    Bob->>Alice: 200 OK (Connected)
+    Alice->>Bob: ACK
+    Bob->>Charlie: ACK
+    Note over Alice,Charlie: The call is active
+    Bob->>Alice: OPTIONS
+    Alice->>Bob: 200 OK
+    Bob->>Charlie: OPTIONS
+    Note over Alice,Charlie: No reply from Charlie, we need to disconnect
+    Bob->>Charlie: BYE
+    Bob->>Alice: BYE
+    Alice->>Bob: 200 OK
+```
+
+In this case, when we send the OPTION packet to Charlie, he doesn't reply. The OPTION message disappears and we need to disconnect the call.
+
+Another scenario is when ConnexCS sends message to Charlie and Charlie is active on the call, he will send a BYE message to Alice and we won't see a reply to that.
 
 ### Use Case for NAT/SIP Pings
 
 **Troubleshooting Scenario**
-The Customer reports they can register and make outbound calls, but they are unable to receive inbound calls.
+The Customer reports they can register and make outbound calls, but they're unable to receive inbound calls.
 
-**What is happening**
-In a typical configuration, a packet is sent from the customer UAC out through a NAT/firewall, and then the packet is delivered to the UAS:
+**What's happening**
+In a typical configuration, a packet is sent from the customer UAC out through a NAT/firewall, and then the packet gets delivered to the UAS:
 
 ```mermaid
     graph LR
@@ -223,11 +299,11 @@ In a typical configuration, a packet is sent from the customer UAC out through a
     style C fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
 ```
 
-+ When a packet goes out, a hole is punched in the firewall, and the source port is recorded. When a packet is returned on that port, the firewall knows to deliver back to the UAC.  
++ When a packet goes out, a hole gets punched in the firewall, and the source port gets recorded. When a packet returns on that port, the firewall knows to deliver back to the UAC.  
 + This works well when using TCP, which sends regular keep-alive packets.
 + UDP doesn't send keep-alives (no connected state as with TCP). SIP does maintain a connected state, registration, but may have long periods of inactivity.
 + Without regular traffic passing between UAS and UAC in the form of keep-alives/registration (a normal occurrence), NAT will eventually time out and shut down the connection.
-+ Enabling UDP or SIP pings can demonstrate to the NAT/firewall that the signaling path is still valid and in use.
++ Enabling UDP or SIP pings can show the NAT/firewall that the signaling path is still valid and in use.
 
 [ipauth-basic]: /customer/img/ipauth-b.png "Edit Switch Basic"
 [parameter-rewrite]: /customer/img/parameter-rewrite.png "Parameter Rewrite" width="200" height="400"
