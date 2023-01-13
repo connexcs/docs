@@ -98,6 +98,28 @@ Generic SIP Trace showing the Challenge Response:
 
 &emsp; ![alt text][407-trace]
 
+```mermaid
+    sequenceDiagram
+    autonumber
+    Alice->>Bob: INVITE
+    Bob-->>Alice: 100 Trying
+    Bob->>Alice: 407 Proxy Authentication Required
+    Note over Alice,Bob: 407 contains nonce.
+    Note left of Alice: HASH(Combine Password + Nonce).
+    Alice->>Bob: INVITE (+ Auth Header)
+    Bob-->>Alice: 100 Trying
+    Note right of Bob: HASH(Combine Password + Nonce).
+    Note right of Bob: Compare Hashes - They Match.
+    Bob-->>Alice: 183 Ringing
+    Bob->>Alice: 200 OK (Connected)
+```
+
+For call authentication we should have a Username and a Password. The Username and Password should get to the other side.
+
+The Username is sent on Plain-text and the user (Alice) hashes the password. **407** contains a nonce. A nonce is a random String of which gets send over to Alice. Both Alice and Bob are aware of this random string. Authorization header is sent with the INVITE. Then Bob combines the password with the nonce and compares the nonce. If the hashes match, the call gets connected.
+
+!!! note "407 Proxy Authentication is a part of Challenge-Response and is necessary when you proceed with SIP User Auth. Also you cannot have IP Authentication and SIP Authentication work together"
+
 ### Enable SIP User Authentication
 
 To enable, click **:material-plus:** next to SIP User Authentication:

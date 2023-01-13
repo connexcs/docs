@@ -116,7 +116,21 @@ To view the SIP Trace of a call:
     * **Missed call attempts**: If using SIP authentication, because there are two requests, it's possible that they hit our database out of order. This may cause the logging page to only display the first call attempt.
     * Considered for reporting calls and don't impact the calls directly. They're both rare, typically observed in less than 1 in every 50,000 calls.
 
-### **Re-Transmissions** 
++ **How to correlate a Reply to an Initial Request**
+
+The correlation of a Reply to an Initial Request can be done when the Invites have the same CSequence
+
+```mermaid
+    sequenceDiagram
+    autonumber
+    Alice->>Bob: INVITE (cseq 123)
+    Bob-->>Alice: 100 Trying
+    Bob-->>Alice: 180 Ringing
+    Bob->>Alice: 408 Ring Timeout (cseq 123 INVITE)
+```
+
+### **Re-Transmissions**
+
 Re-transmissions occur when the same INVITE is sent more than once. This means the `same` packets were sent more than once.
 
 Re-transmissions only happen on UDP. Re-transmissions occur when packets either don't reach the receiver or get lost in transmission. Thus, re-transmissions are done after a certain time interval using specific timers.
