@@ -125,7 +125,7 @@ To view the SIP Trace of a call:
 
     Here is an example describing Re-transmissions:
 
-    ```mermaid
+```mermaid
     sequenceDiagram
     autonumber
     rect rgb(127, 0, 255)
@@ -160,7 +160,7 @@ To view the SIP Trace of a call:
     end
     end
     end
-    ```
+```
 
 Alice and Bob represents party on the call. Alice sends an **INVTE** packet to Bob. INVITE is an initial request.
 
