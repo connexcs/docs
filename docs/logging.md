@@ -206,15 +206,41 @@ You can have take a look at the various SIP Timers in the table below:
 
 <font size="2">*Table source*: [**IBM**](https://www.ibm.com/docs/en/was/8.5.5?topic=timers-sip-timer-summary); *Original Ref*: [**RFC 3261**](https://www.ietf.org/rfc/rfc3261.txt)</font size>
 
++ **Various Timers**
+
+```mermaid
+     sequenceDiagram
+    autonumber
+    Alice->>Bob: INVITE
+    Note over Alice,Bob: First Reply Timer (500ms)
+    Bob-->>Alice: 100 Trying
+    Note over Alice,Bob: PDD Timer (5s)
+    Bob-->>Alice: 180 Ringing
+    Note over Alice,Bob: Ring Timer (30s)
+    Bob->>Alice: 200 OK (Connected)
+    Alice->>Bob: ACK
+    Note over Alice,Bob: Max Call Duration Timer (1 hour)
+    Alice->>Bob: BYE
+    Bob->>Alice: 200 OK
+```
+
+Here, Alice sends an invite to Bob and it's expected to get a reply (100 Trying) within in 500ms which is a **First Reply Timer**.
+
+Then a **PDD timer** is set for 5s to hear the ringing. Post-dial delay (PDD) is the measurement of how long it takes for a calling party to hear a ring back tone after initiating a call.
+
+The time from when the respondent's phone starts ringing until it's answered; is a **Ring Timer**.
+
+When the call is active **Max Call Duration Timer** comes into picture. When this timer is active, the active call gets disconnected when it reaches the maximum time of an active call.
+
 [logging-sip]: /misc/img/logging-sip.png "SIP Traces"
 [logging-4]: /misc/img/236.png "logging-4"
 
 ### Re-Invite
 
 ```mermaid
-    sequenceDiagram
-    autonumber
-    Alice->>Bob: INVITE (cseq 1)
+   sequenceDiagram
+   autonumber
+   Alice->>Bob: INVITE (cseq 1)
     Bob-->>Alice: 100 Trying
     Bob->>Charlie: INVITE (cseq 1)
     Charlie-->>Bob: 100 Trying
@@ -235,7 +261,6 @@ You can have take a look at the various SIP Timers in the table below:
     Alice->>Bob: 200 OK
     Bob->>Charlie: 200 OK
 ```
-
 In case of a Re-Invite, it re-establishes an entire call.
 
 Here, Alice starts a call with Bob, the call is active without any issues and the media is through UK. But as a provider we detect the call isn't going through UK. Thus, we send the Re-Invite to Alice to send the media through us and we can place the call on a different server in real-time and in the middle of the call. Thus, a Re-Invite can contain some extra information also.
