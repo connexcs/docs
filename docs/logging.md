@@ -76,7 +76,8 @@ Call quality issues are often identified using other methods.
 
 Here is an example describing a SIP trace:
 
-```sequenceDiagram
+```mermaid
+sequenceDiagram
     autonumber
     Alice->>Bob: INVITE
     Bob-->>Alice: 100 Trying
@@ -86,9 +87,9 @@ Here is an example describing a SIP trace:
     Note over Alice,Bob: The call is active
     Alice->>Bob: BYE
     Bob->>Alice: 200 OK
-    ```
+```
 
-Alice and Bob represents party on the call. Alice sends an **INVTE** packet to Bob. Then Bob sends a **100 Trying** (provides you the feedback that your request is getting processed by a SIP Application) message alongwith **180 Ringing** (the Destination User Agent has received the INVITE message and is alerting the user of call).
+Alice and Bob represents party on the call. Alice sends an **INVTE** packet to Bob. Then Bob sends a **100 Trying** (provides you the feedback that your request is getting processed by a SIP Application) message together with **180 Ringing** (the Destination User Agent has received the INVITE message and is alerting the user of call).
 
 Further, **200 OK** is sent which means the calls are connected.
 
@@ -117,10 +118,72 @@ To view the SIP Trace of a call:
     * **Missed call attempts**: If using SIP authentication, because there are two requests, it's possible that they hit our database out of order. This may cause the logging page to only display the first call attempt.
     * Considered for reporting calls and don't impact the calls directly. They're both rare, typically observed in less than 1 in every 50,000 calls.
 
-* **Re-Transmissions:** Re-transmissions occur when the same INVITE is sent more than once. This means the `same` packets were sent more than once.
++ **Re-Transmissions:** Re-transmissions occur when the same INVITE gets transmitted more than once. This means the `same` packets were sent more than once.
 
-    Re-transmissions only happen on UDP. 
-    Re-transmissions occur when packets either don't reach the receiver or get lost in transmission. Thus, re-transmissions are done after a certain time interval using specific timers.
+    Re-transmissions only happen on UDP.
+    Re-transmissions occur when packets either don't reach the receiver or get lost in transmission. Thus re-transmissions are done after a certain time interval using specific timers.
+
+    Here is an example describing Re-transmissions:
+
+    ```mermaid
+    sequenceDiagram
+    autonumber
+    rect rgb(127, 0, 255)
+    rect rgb(100, 180, 255)
+    rect rgb(252, 110,153)
+    Alice->>Bob: INVITE (cseq 1)
+    end
+    Note over Alice,Bob: 500ms delay
+    rect rgb(252, 110,153)
+    Alice->>Bob: INVITE (cseq 1)
+    end
+    rect rgb(252, 110,153)
+    Bob-->>Alice: 100 Trying
+    end
+    rect rgb(252, 110,153)
+    Bob-->>Alice: 180  Ringing
+    end
+    rect rgb(252, 110,153)
+    Bob->>Alice: 200 OK (Connected)
+    end
+    rect rgb(252, 110,153)
+    Alice->>Bob: ACK
+    end
+    end
+    Note over Alice,Bob: The call is active
+    rect rgb(100, 180, 255)
+    rect rgb(252, 110,153)
+    Alice->>Bob: BYE
+    end
+    rect rgb(252, 110,153)
+    Bob->>Alice: 200 OK
+    end
+    end
+    end
+    ```
+
+Alice and Bob represents party on the call. Alice sends an **INVTE** packet to Bob. INVITE is an initial request.
+
+Then Bob sends a **100 Trying** (provides you the feedback that your request is getting processed by a SIP Application) message along-with **180 Ringing** (the Destination User Agent has received the INVITE message and is alerting the user of call). **100 Trying** and **180 Ringing** are provisional response.
+
+The re-invtes get absorbed when they're received. When Bob receives the **INVITE** packet and a special timer is set (please see the below timer table) as to how long it should wait for re-transmissions. If any packet is received within this time-frame, the packet gets ignored.
+
+Further, **200 OK** is sent which means the calls are connected. **200 OK** is a final reply.
+
+The **ACK** is message is sent from Alice to Bob confirming that the call has been connected.
+
+Each line is a **Message**.
+
+From 1 message (INVITE) till message 5 (ACK), it's considered as a single **Transaction**.
+
+Similarly message 6 (BYE) and 7 (200 OK) are also considered as a single **Transaction**.
+
+From message 1 till message 7, the whole conversation is a **Dialog**.
+
+!!! note "Note"
+    Message displayed in Pink color.
+    Transaction displayed in Blue color.
+    Dialog displayed in Violet color.
 
 You can have take a look at the various SIP Timers in the table below:
 
