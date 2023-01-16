@@ -163,7 +163,7 @@ nav:
             - Changing Password: changing-password.md
             - Logging Out: logging-out.md
             - Number Manipulation: number-manipulation.md
-        - SIP Traces, Pings and Messages: guides/sip-traces.md
+        - SIP Traces, Pings and Messages: docs/guides/sip-traces.md
         - Documents and Files: 
             - Document Guide: guides/doc-guide.md
             - File: files.md
@@ -184,7 +184,7 @@ nav:
             - Call Connection/Signaling Issues: guides/tshoot-signal.md
             - Call Quality/Media Issues: guides/tshoot-media.md
             - Circuit Test: circuit-test.md
-            - Call Disconnection Reasons and Premature Call Disconnection: guides/call-disconnection-reasons.md
+            - Call Disconnection Reasons and Premature Call Disconnection: docs/guides/call-disconnection-reasons.md
             - Debugging: guides/debugging.md
             - Logging: logging.md
             - Remote Testing: guides/remote-testing.md            
