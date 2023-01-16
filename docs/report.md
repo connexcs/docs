@@ -2,7 +2,7 @@
 
 **Management :material-menu-right: Report**
 
-View and Download **Reports** that provides extensive insights on historical data such as by Customers or Provider routes, [Dual-Tone Multi-Frequency (DTMF)](https://docs.connexcs.com/report/#dtmf) Cost, and [Per Number](https://docs.connexcs.com/report/#per-number) metrics.
+View and Download **Reports** that provides extensive insights on historical data such as by Customers or Provider routes, [Dual-Tone Multi-Frequency (DTMF)](https://docs.connexcs.com/report/#dual-tone-multi-frequency) Cost, and [Per Number](https://docs.connexcs.com/report/#per-number) metrics.
 
 The ability to [Schedule reports](https://docs.connexcs.com/report/#schedule-report) adds automation for frequent data requirements.  
 
@@ -32,7 +32,7 @@ Use the **Dual Tone Multi Frequency (DTMF)** report for customers that send DTMF
 
 ## Reports
 
-Currently, this provides the same functionality and options as the individual Breakout and DTMF reports. When new reports materialize, it will replace the old ones. This page has the same Pivot and Filtering functionality as the **Breakout** report.
+Presently, this provides the same functionality and options as the individual Breakout and DTMF reports. When new reports materialize, it will replace the old ones. This page has the same Pivot and Filtering functionality as the **Breakout** report.
 
 ## Per Number
 
@@ -40,7 +40,7 @@ This report displays metrics for a specific number. It's specifically useful if 
 
 Select the number and define the time (max 6 months) to generate a list of all calls for that number, along with call details.
 
-Click **`Numbers`** to search for multiple numbers.
+Click **`Numbers`** to search for several numbers.
 
 ## Schedule Report
 
@@ -48,12 +48,13 @@ Set a Schedule to email the Breakout Report at designated intervals. To schedule
 
 &emsp;![alt text][schedulereport]
 
-+ **Name** the report schedule.
-+ **Email**: The report recipient.
-+ **Group**: Select one or more ways to group the data.
++ **Name:** The report schedule.
++ **Email:** The report recipient.
++ **Frequency:** You can schedule the report; Daily, Weekly or Monthly.
++ **Group:** Select one or more ways to group the data.
 + **Customers**: Select one or more, or leave it blank for all Customers.
-+ **Providers**: Select one or more, or leave it blank for all Providers.
-+ **Columns**: Select the columns to include in the report.
++ **Providers:** Select one or more, or leave it blank for all Providers.
++ **Columns:** Select the columns to include in the report.
 
 Click **`Save`** to schedule the Report.
 

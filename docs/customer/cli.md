@@ -1,4 +1,4 @@
-# Caller Line Identification (CLI)
+# Caller Line Identification
 
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Routing**
 
@@ -6,9 +6,9 @@
 
 In VoIP systems, CLI is more than just a way to display the number of incoming calls. It's used as a defense against unidentified call attempts.
 
-CLI provides information to sort incoming calls. It is an important component of billing.
+CLI provides information to sort incoming calls. It's an important component of billing.
 
-In ConnexCS, **CLI** lets you restrict and manipulate CLIs and Pre-Asserted Identity on customer calls so that any caller without a valid match is rejected outright.
+In ConnexCS, **CLI** lets you restrict and manipulate CLIs and Pre-Asserted Identity on customer calls so that any caller without a valid match gets rejected instantly.
 
 !!! tip "How's CLI derived?"
     **CLI** refers to the **CLI/ANI** field in the `From` part of the `SIP INVITE` message. This contains specific information about the caller.
@@ -21,10 +21,10 @@ In ConnexCS, **CLI** lets you restrict and manipulate CLIs and Pre-Asserted Iden
 
 ## Default Behaviour
 
-By default, a customer account will pass all calls, even with no configured CLI records. To change this behavior, navigate to Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Edit :material-menu-right: Verification and enable [**Approved CLI's Only**](https://docs.connexcs.com/customer/cli/#allow-customer-to-add-their-own-cli).
+By default, a customer account will pass all calls, even with no configured CLI records. To change this behavior, navigate to Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Edit :material-menu-right: Verification and enable [**Approved CLI's Only**](https://docs.connexcs.com/customer/cli/#allow-customers-to-add-their-own-caller-line-identification).
 
 !!! warning "Approve CLI override"
-    Once the first CLI rule is entered, the behaviour changes to block all, regardless of the "Approved CLI's Only" setting.
+    Once you enter the first CLI rule, the behaviour changes to block all, regardless of the "Approved CLI's Only" setting.
 
 !!! tip "CLI verification tool"
     Besides changing the default behaviour to block, adding a CLI rule gives customers the ability to verify their own CLIs from their Control Panel through a callback system.
@@ -44,7 +44,7 @@ _Field details:_
 + **Pre-Asserted-ID (PAID)**: To allow the required PAID, enter the required number or a regular expression to match or replace.
 
 + **Rewrite P-Asserted-ID**: This is a SIP Header almost same as the FROM header but classified as a private, or network-level identifier.
-Telephone companies use it to identify call originators. As it is stripped at the call server, the client end-points only see the FROM field.
+Telephone companies use it to identify call originators. As it's stripped at the call server, the client end-points only see the FROM field.
 This is helpful when callers obscure their CLI / FROM information, as the network level still requires origination details.
 The **P-Asserted-ID** manipulation uses the same syntax as the Replace CLI.
 
@@ -60,14 +60,20 @@ For example, Create a permitted list that exclusively allows calls to or from th
 
 + **Use DID**: Pull in DIDs from the customer's account to use either as a Filter or as a Replacement.  
 
-+ **Dialed Number Match**: To route to a specific CLI, dialied match number is used. For example, if Dialied matched number is starting with **1**, the CLI is routed to 11111.
++ **Dialed Number Match**: To route to a specific CLI, you dialied match number. For example, if Dialied matched number is starting with **1**, the CLI routes to 11111.
 The CLI can be a Regular Expression also.
+
++ **Notes**: Notes give you information about the CLI.
+
++ **STIR / SHAKEN Certificate:** If you apply any STIR / SHAKEN Certificate to a customer's account for calls verification, for example, whether the calls are spam.
+
++ **STIR / SHAKEN Attestation:** This is the level of a certification you can select from 3 levels `A`, `B`, or `C`.
 
 &emsp;![alt text][edit-cli]
 
 Click **`Save`** to complete the CLI configuration.
 
-## Allow Customers to add their own CLI
+## Allow Customers to add their own Caller Line Identification
 
 Navigate to **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Edit :material-menu-right: Verification** and select the "Approved CLIs Only" checkbox.
 
@@ -79,11 +85,11 @@ The customer can then go to the Customer Portal CLI section and add numbers ther
 
 ### Filter Examples
 
-The customer can choose which numbers are permitted to originate calls by configuring a number as a **CLI** in ConnexCS.
+The customer can choose which numbers to permit for origination of the calls by configuring a number as a **CLI** in ConnexCS.
 
-Any number configured as a CLI is a part of the permitted list (unless additional settings are implemented to block it).
+Any number configured as a CLI is a part of the permitted list (unless you use extra settings to block it).
 
-#### Filter CLI by Number
+#### Filter Caller Line Identification by Number
 
 Block all calls that don't have the CLI "123456789":
 
@@ -98,7 +104,7 @@ Allow various CLIs to pass (by entering 2 or more records):
 | `123456789` |                 |             |                       | No     | Disabled | None         |
 | `987654321` |                 |             |                       | No     | Disabled | None         |
 
-#### Filter CLI by Pattern
+#### Filter Caller Line Identification by Pattern
 
 Allow a range of numbers for a customer (this example allows all calls that start with 123456 to pass regardless of the last digits):
 
@@ -116,26 +122,26 @@ In this example, the number must start with 123456, followed by 1, 3, or 5, then
 
 This can work in combination with number lists as well.
 
-#### Filter CLI by DID
+#### Filter Caller Line Identification by Direct Inward Dial
 
 If your customers do origination as well as termination, they already have a list of DIDs. Select _Filter_ from "Use DID" to automatically read from the list of DIDs.
 
-Note that you can still add additional CLIs along with the DID list.
+Note that you can still add more CLIs along with the DID list.
 
 | CLI | Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID | Userspace DB |
 |-----|-----------------|-------------|-----------------------|--------|---------|--------------|
 |     |                 |             |                       | No     | Filter  | None         |
 
-#### Filter PAID by Number or Pattern
+#### Filter Pre-Asserted-Identity by Number or Pattern
 
-The same is true for Pre-Asserted-Identity as it's with CLI; you can filter by PAID, as in this example.
+The same is true for Pre-Asserted-Identity (PAID) as it's with CLI; you can filter by PAID, as in this example.
 
 | CLI | Pre-Asserted-ID           | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
 |-----|---------------------------|-------------|-----------------------|--------|----------|--------------|
 |     | `123456789`               |             |                       | No     | Disabled | None         |
 |     | `^123456[135][0-9]{1,2}$` |             |                       | No     | Disabled | None         |
 
-#### Combined CLI and PAID Filter
+#### Combined Caller Line Identification and Pre-Asserted-Identity Filter
 
 Filters are `AND` together, meaning that for a call to pass in this example, the CLI would need to be `1122334455` AND the Pre-Asserted-ID would need to be `123456789`.
 
@@ -143,7 +149,7 @@ Filters are `AND` together, meaning that for a call to pass in this example, the
 |--------------|---------------------------|-------------|-----------------------|--------|----------|--------------|
 | `1122334455` | `123456789`               |             |                       | No     | Disabled | None         |
 
-#### Filter CLI from a Large List
+#### Filter Caller Line Identification from a Large List
 
 Our Userspace database allows you to manage large lists of numbers. Once you upload the numbers under Developer :material-menu-right: [Database](https://docs.connexcs.com/developers/database/).
 
@@ -153,7 +159,7 @@ You can use the following options to filter by the uploaded list. Note that the 
 |------------------|-------------|-----------------------|--------|----------|---------------|
 |                  |             |                       | No     | Disabled | [My Database] |
 
-#### Filter CLI by Number Type
+#### Filter Caller Line Identification by Number Type
 
 Filtering by Number Type will block calls that originate from a "type" that you specify; this can be something such as FIXED, MOBILE, etc.
 
@@ -165,7 +171,7 @@ Filtering by Number Type will block calls that originate from a "type" that you 
 
 We can also entirely replace the transmitted CLI.
 
-Note that if a replacement occured, it means that the match was successful and is allowed to pass through.
+Note that if a replacement occurs, it means that the match was successful and its allowed to pass through.
 
 #### Direct Replacement
 
@@ -183,7 +189,7 @@ Replace all calls that begins with a `1` with `222222222222`
 |----------------|-----------------|----------------|-----------------------|--------|----------|--------------|
 | `^1`           |                 | `222222222222` |                       | No     | Disabled | None         |
 
-#### Force CLI
+#### Force Caller Line Identification
 
 When choosing **Force CLI**, _if there is no match present_, the CLI marked Force can replace the CLI transmitted on a call.
 
@@ -193,18 +199,18 @@ In the example below, the CLI `111111111111` is sent regardless of what CLI the 
 |----------------|-----------------|-------------|-----------------------|--------|----------|--------------|
 | `111111111111` |                 |             |                       | Yes    | Disabled | None         |
 
-In the following example, if the customer sends a call with `222222222222`, the call is allowed to pass through, but if the customer were to send `333333333333`, the call is replaced by `111111111111`.
+In the following example, if the customer sends a call with `222222222222`, the call gets allowed to pass through, but if the customer were to send `333333333333`, the call gets replaced by `111111111111`.
 
 | CLI            | Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
 |----------------|-----------------|-------------|-----------------------|--------|----------|--------------|
 | `111111111111` |                 |             |                       | Yes    | Disabled | None         |
 | `222222222222` |                 |             |                       | No     | Disabled | None         |
 
-#### Pick CLI at Random
+#### Pick Caller Line Identification at Random
 
 You can add various CLIs that forcefully select a random CLI.
 
-In this example, approximately 50% of the calls are sent with `111111111111` and 50% with `222222222222` (provided the customer does not send either of those two, otherwise the results would be same).
+In this example, approximately 50% of the calls are sent with `111111111111` and 50% with `222222222222` (provided the customer doesn't send either of those two, otherwise the results would be same).
 
 | CLI            | Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
 |----------------|-----------------|-------------|-----------------------|--------|----------|--------------|
@@ -216,7 +222,7 @@ In this example, approximately 50% of the calls are sent with `111111111111` and
 
     Use Scriptforge to create a custom application that reads from a database to achieve far more comprehensive solutions.
 
-#### Pick CLI from DID
+#### Pick Caller Line Identification from Direct Inward Dial
 
 This example shows how to pick a DID already associated with the customer at random for use as the CLI.
 
@@ -224,7 +230,7 @@ This example shows how to pick a DID already associated with the customer at ran
 |----------------|-----------------|-------------|-----------------------|--------|----------|--------------|
 |                |                 |             |                       | Yes    | Random   | None         |
 
-#### Pick CLI from DID with Longest Match
+#### Pick Caller Line Identification from Direct Inward Dial with Longest Match
 
 You may wish to perform CLI Localization.
 
@@ -234,7 +240,7 @@ For example, if you have various DIDs (in this case, `123456`, `123567`, and `12
 |----------------|-----------------|-------------|-----------------------|--------|--------------|--------------|
 |                |                 |             |                       | Yes    | Prefix Match | None         |
 
-#### Pick a CLI from a Large List
+#### Pick a Caller Line Identification from a Large List
 
 Our Userspace database allows you to manage large lists of numbers. Once you upload the numbers, you can use the following options to choose a number at random.
 
@@ -242,7 +248,7 @@ Our Userspace database allows you to manage large lists of numbers. Once you upl
 |-----------------|-------------|-----------------------|--------|--------------|---------------|
 |                 |             |                       | Yes    | Disabled     | [My Database] |
 
-### Manipulate CLI
+### Manipulate Caller Line Identification
 
 Sometimes it can be useful to keep all or part of the transmitted CLI and manipulate it when it gets sent out.
 
@@ -267,12 +273,12 @@ This may be a little complicated, so we can break this down:
 
 + `^` is a start anchor, which means that we start the match at the extreme left.
 + `9` is the literal digit 9.
-+ `(` and `)` represent a match group, everything matched within it is placed in the variable `$1`.
++ `(` and `)` represent a match group, everything matched within it's placed in the variable `$1`.
 + `$` is an end anchor and it means that we finish the match at the extreme right.
 
 In the Rewrite CLI section, `44` is the literal 44 digits, and `$1` will contain what it has matched in the previous stage.
 
-#### Use Pre-Asserted-Identity as CLI
+#### Use Pre-Asserted-Identity as Caller Line Identification
 
 You can use all or part of a sent Pre-Asserted-Identity as the CLI. The following example shows how to capture them all.
 
@@ -293,7 +299,7 @@ Manipulate the P-Asserted ID similarly to how we manipulated the CLI. In this ca
 |------|------------------|-------------|-----------------------|--------|----------|--------------|
 | `.*` | `^9(?<paid>.*)$` |             | `44$<paid>`           | No     | Disabled | None         |
 
-#### Use CLI
+#### Use Caller Line Identification
 
 If we want to use the CLI in the Pre-Asserted-Identity it's a little easier as we can just use the numbered group.
 
@@ -338,7 +344,7 @@ ConnexCS is GC6 compliant for end users, which:
 > requires Communications Providers (CPs) to provide CLI facilities and ensure that the CLI Data provided with a call includes a valid, dialable telephone number that uniquely identifies the caller."
 > For details on this General Condition, including guidelines for "valid" and "dialable" numbers, see OFCOM's [**Guidance on CLI Facilities**](https://www.ofcom.org.uk/__data/assets/pdf_file/0012/113214/statement-guidelines-cli-facilities.pdf).
 
-To set the "P-Asserted-ID" per customer, see [**Configure CLI**](https://docs.connexcs.com/customer/cli/#configure-cli) above.
+To set the "P-Asserted-ID" per customer, see [**Configure CLI**](https://docs.connexcs.com/customer/cli/#creating-a-record) above.
 
 [cli]: /customer/img/cli.png "CLI Main"
 [approvedcli]: /customer/img/approvedcli.png "Approved CLI Only"

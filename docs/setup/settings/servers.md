@@ -16,11 +16,14 @@ Delivery is within 5 minutes.
     To deploy a server, you must have $20 (+ $20 X other servers in your account) available balance.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 !!! warning "Impact to services"
     If you are a serious carrier *Never let your account run out of credit*. It should go without saying, but if your account runs out of credit, service is impacted, it may not instantly be restored either. We won't consider any reactivation problems critical, if you persistently top-up only enough credit to cover you for the next day.
 
 =======
 
+=======
+>>>>>>> e1d162be69d165b879af178d95d0ba3cc7474e97
 !!! warning "Impact on services"
     If you are a serious carrier *Never let your account run out of credit*. It should go without saying, but if your account runs out of credit, it impacts the service and it's restoration may not be instant.
 
@@ -92,7 +95,6 @@ These are the same fields found under **Server List** above.
 
 When enabled, we can specify another server in the cluster to route the traffic, if the server reaches capacity based on the allowed CPS and Channels.
 
-
 For example, if the CPS or Channels limits have reached, capacity failover will block the next call unless there is another server to route the call.
 
 ### Server Config
@@ -100,8 +102,8 @@ For example, if the CPS or Channels limits have reached, capacity failover will 
 **Switch**
 
 + **Cluster:** Group servers to share information such as dialogues and throughput.
-  
-  For example, if you set CPS to 10, clustered servers will allow 10 CPS and un-clustered servers will allow 10 CPS per server.
+
+    For example, if you set CPS to 10, clustered servers will allow 10 CPS and un-clustered servers will allow 10 CPS per server.
   
 + **Interconnect:** Where the server is in the visible routing.
 
@@ -138,6 +140,8 @@ For example, if the CPS or Channels limits have reached, capacity failover will 
 + **UDP, TCP, TLS Ports:** Specify port(s) for each protocol with the protocol default.
 
     For example, to avoid firewall rules or ISP restrictions.
+
+!!! note "Whenever any of the above settings get modified, it's recommended to hit the Install Server."
 
 ### Certificates
 
@@ -176,7 +180,6 @@ Click **`Actions`** to open the **Server Actions Menu**. The following actions a
 ### Resize Capacity
 
 Use this to update the Channels for the selected server. The update will be active in 15 minutes.  
-
 
 !!! warning "Impact on services"
     If you increase Channels to 1001 or more, the server will reboot as soon as you click **`Save`**. All calls will stop, and the server can take up to 10 minutes to finish rebooting and begin services again.

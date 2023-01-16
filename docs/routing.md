@@ -41,7 +41,7 @@ graph LR
 A(Far End) --> B[PSTN]
 B --> C[Carrier]
 C --> D[ConnexCS Switch]
-D --> E[Routing Engine]me
+D --> E[Routing Engine]
 E --> F(Authorisation)
 F --> G(Ingress Routing)
 ```
@@ -72,28 +72,35 @@ F --> G(Far-End)
 
 If your Session Initiation Protocol (SIP) Trace shows that an INVITE packet was received by the switch but not sent out to any providers, the failure has occurred in the **Ingress Routing**.
 
-| SIP Code | SIP Reason                             | Details                                                                                                |
+| SIP Code | SIP Reason| Details|
 |:--------:|----------------------------------------|--------------------------------------------------------------------------------------------------------|
-|    **403**   | IP Not Authorised                      | The IP Address doesn't match any account in the system.                                               |
-|    **500**   | Unidentified Internal Switch           | This is an internal error; you should never see this. If you do please contact us.                     |
-|    **500**   | Server not accepting calls (Paused)    | Either your account or server is disabled with ConnexCS.                         |
-|    **503**   | Unknown User                           | Username & Passwords don't match to any known user account.                                           |
-|    **503**   | Unable to perform LRN                  | You have selected LRN (Location Routing Number) dipping for this route, so it's likely that you don't have credit with us. |
-|    **503**   | LCR Unavailable                        | The system is unable to perform a Least Cost Routing (LCR) lookup.                                                          |
-|    **503**   | Blocked by Dial plan                    | The prefix/number isn't matched by the allowed dial plan.                                             |
-|    **503**   | No Routes Available (Pre)              | No rate card rule to allow the call to progress.                                              |
-|    **503**   | No Routes Available (U)                | No routes are available either due to: Lock, Profit Assurance, Routing Strategy or ScriptForge.        |
-|    **503**   | No Routes Available (Lock)             | Locking your Ingress routing has left no routing options.                                              |
-|    **503**   | No Routes Available (Profit Assurance) | Profit Assurance has left no routing options.                                                          |
-|    **503**   | Dropping Call (Strategy)               | Strategic Routing has dropped the call.                                                                |
-|    **503**   | Internal Strategic Routing Error       | An error with the config of Strategic Routing.                                                |
-|    **580**   | No Route Available                     | The number dialled doesn't match any ingress routing profile.                                         |
-|    **580**   | Switch IP Variable Not Provided        | This is an internal error; you should never see this. If you do please contact us.                     |
-|    **580**   | To (oU) User Missing                   | This is an internal error; you should never see this. If you do please contact us.                     |
-|    **580**   | To (fU) User Missing                   | This is an internal error; you should never see this. If you do please contact us.                     |
+|**401**| IP Not Authorised| The IP Address doesn't match any account in the system.|
+|**404**|Not Found | The number does not exist.|
+|**408**| Request Timeout|If the request wasn't answered or wasn't able to get a reply from the other side|
+|**487**| Request Terminated|If the caller closes the phone before connection|
+|**500**| Unidentified Internal Switch| This is an internal error; you should never see this. If you do please contact us.|
+|**500**| Server not accepting calls (Paused)| Either your account or server gets disabled with ConnexCS.|
+|**503**| Unknown User| Username & Passwords don't match to any known user account.|
+|**503**| Unable to perform LRN| You have selected LRN (Location Routing Number) dipping for this route, so it's likely that you don't have credit with us.|
+|**503**| LCR Unavailable| The system is unable to perform a Least Cost Routing (LCR) lookup.|
+|**503**| Blocked by Dial plan| The prefix/number isn't matched by the allowed dial plan.|
+|**503**| No Routes Available (Pre)| No rate card rule to allow the call to progress.|
+|**503**| No Routes Available (U)| No routes are available either due to: Lock, Profit Assurance, Routing Strategy or ScriptForge.|
+|**503**| No Routes Available (Lock)| Locking your Ingress routing has left no routing options.|
+|**503**| No Routes Available (Profit Assurance) | Profit Assurance has left no routing options.|
+|**503**| Dropping Call (Strategy)| Strategic Routing has dropped the call.|
+|**503**| Internal Strategic Routing Error| An error with the config of Strategic Routing.|
+|**580**| No Route Available| The number dialled doesn't match any ingress routing profile.|
+|**580**| Switch IP Variable Not Provided| This is an internal error; you should never see this. If you do please contact us.|
+|**580**| To (oU) User Missing| This is an internal error; you should never see this. If you do please contact us.|
+|**580**| To (fU) User Missing| This is an internal error; you should never see this. If you do please contact us.|
+
+!!! note "4XX vs 5XX"
+    4xx codes are Client Failure Responses, while 5XX are Server Failure Responses. 
+    For example, it doesn't mean that the server couldn't deliver the call but it means the server knows that the number doesn't exist.
 
 !!! info "End Point synchronisation"
-    When making changes, although we try to synchronise all endpoints as quickly as possible, as this is a distributed system, it can take up to 60 seconds for any changes to take effect.
+    When making changes, although we try to synchronise all endpoints instantly, as this is a distributed system, it can take up to 60 seconds for any changes to take effect.
 
 [call-flow]: /misc/img/call-flow.jpg "Call Flow"
 
