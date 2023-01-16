@@ -118,7 +118,7 @@ For call authentication we should have a Username and a Password. The Username a
 
 The Username is sent on Plain-text and the user (Alice) hashes the password. [**407 Proxy Authentication**](https://en.wikipedia.org/wiki/List_of_SIP_response_codes#4xx%E2%80%94Client_Failure_Responses) contains a nonce. A nonce is a random String of which gets send over to Alice. Both Alice and Bob are aware of this random string. Authorization header is sent with the INVITE. Then Bob combines the password with the nonce and compares the nonce. If the hashes match, the call gets connected.
 
-!!! note "407 Proxy Authentication is a part of Challenge-Response and is necessary when you proceed with SIP User Auth. Also you cannot have IP Authentication and SIP Authentication work together"
+!!! note "407 Proxy Authentication is a part of Challenge-Response and is necessary when you proceed with SIP User Auth. Also you can't have **IP Authentication** and **User / Password Authentication** work together"
 
 ### Enable SIP User Authentication
 

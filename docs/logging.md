@@ -315,8 +315,8 @@ The causes of a dropped call are:
      The originator and the receiver should reply with 200 OK after receiving the OPTION packets. If either the originator or receiver misses sending the acknowledgment, the call terminates due to a "ping timeout."
      It prevents any long-duration calls as the system recognizes either the originator or receiver as inactive.
 
-5. **Missing ACK:** We can if a call gets disconnected within 5 seconds, its because an Acknowledgement wasn't received
+5. **Missing ACK:** If a call gets disconnected within 5 seconds, its because an Acknowledgement wasn't received
 
-6. **Missing SIP Ping:** We can if a call gets disconnected within 20-30 seconds, its because of a missing SIP Ping.
+6. **Missing SIP Ping:** If a call gets disconnected within 20-30 seconds, its because of a missing SIP Ping.
 
-7. **Missing Re-Invite:** We can if a call gets disconnected within 5 minutes, its because of a missing Re-Invite message.
+7. **Missing Re-Invite:** If a call gets disconnected within 5 minutes, its because of a missing Re-Invite message.
