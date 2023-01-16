@@ -1,4 +1,4 @@
-# Session Traces, Pings and Messages
+# SIP Traces, Pings and Messages
 
 ## SIP Traces
 
