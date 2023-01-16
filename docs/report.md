@@ -40,7 +40,7 @@ This report displays metrics for a specific number. It's specifically useful if 
 
 Select the number and define the time (max 6 months) to generate a list of all calls for that number, along with call details.
 
-Click **`Numbers`** to search for multiple numbers.
+Click **`Numbers`** to search for several numbers.
 
 ## Schedule Report
 
@@ -48,12 +48,13 @@ Set a Schedule to email the Breakout Report at designated intervals. To schedule
 
 &emsp;![alt text][schedulereport]
 
-+ **Name** the report schedule.
-+ **Email**: The report recipient.
-+ **Group**: Select one or more ways to group the data.
++ **Name:** The report schedule.
++ **Email:** The report recipient.
++ **Frequency:** You can schedule the report; Daily, Weekly or Monthly.
++ **Group:** Select one or more ways to group the data.
 + **Customers**: Select one or more, or leave it blank for all Customers.
-+ **Providers**: Select one or more, or leave it blank for all Providers.
-+ **Columns**: Select the columns to include in the report.
++ **Providers:** Select one or more, or leave it blank for all Providers.
++ **Columns:** Select the columns to include in the report.
 
 Click **`Save`** to schedule the Report.
 

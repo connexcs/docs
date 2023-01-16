@@ -135,17 +135,17 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
   When enabled, SST ensures there is no ghost or long-duration calls get billed when one or both sides have hung up. A timer activates when the call starts and refreshes the call every X number of seconds by sending a RE-INVITE.
   SST has surpassed SIP Ping Timeout as the best way to prevent long-duration calls. Note that any SST shorter than sixty (60) seconds gets rejected.
 
-    |SST Option              | Result                                                                                           |
+    |SST Option| Result|
     |-------------------------|:------------------------------------------------------------------------------------------------|
-    | **Default**             | Passive SST, No headers gets changed and no SST gets engaged, all RE-INVITES will propagate through the system enables   |
-    | **Enabled Both**        | ConnexCS will send SIP Session Timers to both legs of the call                                  |
-    | **Enabled (Upstream)**  | ConnexCS will use SST with the carrier                                                           |
-    | **Enabled (Downstream)**| ConnexCS will use SST with the customer                                                          |
-    | **Suggest**             | Session-Expire headers and Min-SE gets added to packets sent to the carrier encouraging the use of SST|
-    | **Disabled**            | All ```timer``` headers are removed                                                              |
+    | **Default**| Passive SST, No headers gets changed and no SST gets engaged, all RE-INVITES will propagate through the system enables|
+    | **Enabled Both** | ConnexCS will send SIP Session Timers to both legs of the call|
+    | **Enabled (Upstream)** | ConnexCS will use SST with the carrier|
+    | **Enabled (Downstream)**| ConnexCS will use SST with the customer|
+    | **Suggest**| Session-Expire headers and Min-SE gets added to packets sent to the carrier encouraging the use of SST|
+    | **Disabled**| All ```timer``` headers are removed|
 
 + **RTP Media Proxy**: This defaults to Auto, but selecting a zone (by continent) is the current recommendation. The following options allow you to set where RTP media server for this route for this customer:
-+
+
     :material-menu-right: `Direct RTP (no proxy)`- Bypass ConnexCS, so media flows directly between the customer and carrier. If the customer is using a firewall or other NAT device incorrectly, then media may not flow between the carrier and the customer. Using this setting also means that if there are audio issues, the issue can't be ConnexCS. Since it isn't likely to be the carrier, the issue would typically exist on the customer's end.
 
     :material-menu-right: `Zone`- Choose any of the regional servers, but it's recommended that you select a location close to a provider or your customer. Temporarily selecting a different region to route media traffic can be helpful in diagnosing call problems.
@@ -188,6 +188,10 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 
 !!! tip "The Call Recording setting is disabled"
     You need to enable the feature first on the account in **Setup :material-menu-right: Settings :material-menu-right: [Packages](https://docs.connexcs.com/setup/settings/account/#packages)** before it gets enabled here for individual customers.
+
++ **Block DTMF:** This option allows you to either `pass` or `block` DTMF through your calls.
+
+!!! note "Make sure your carrier supports the DTMF feature."
 
 ### Strategy
 

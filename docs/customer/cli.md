@@ -21,7 +21,7 @@ In ConnexCS, **CLI** lets you restrict and manipulate CLIs and Pre-Asserted Iden
 
 ## Default Behaviour
 
-By default, a customer account will pass all calls, even with no configured CLI records. To change this behavior, navigate to Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Edit :material-menu-right: Verification and enable [**Approved CLI's Only**](https://docs.connexcs.com/customer/cli/#allow-customers-to-add-their-own-cli).
+By default, a customer account will pass all calls, even with no configured CLI records. To change this behavior, navigate to Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Edit :material-menu-right: Verification and enable [**Approved CLI's Only**](https://docs.connexcs.com/customer/cli/#allow-customers-to-add-their-own-caller-line-identification).
 
 !!! warning "Approve CLI override"
     Once you enter the first CLI rule, the behaviour changes to block all, regardless of the "Approved CLI's Only" setting.
@@ -62,6 +62,12 @@ For example, Create a permitted list that exclusively allows calls to or from th
 
 + **Dialed Number Match**: To route to a specific CLI, you dialied match number. For example, if Dialied matched number is starting with **1**, the CLI routes to 11111.
 The CLI can be a Regular Expression also.
+
++ **Notes**: Notes give you information about the CLI.
+
++ **STIR / SHAKEN Certificate:** If you apply any STIR / SHAKEN Certificate to a customer's account for calls verification, for example, whether the calls are spam.
+
++ **STIR / SHAKEN Attestation:** This is the level of a certification you can select from 3 levels `A`, `B`, or `C`.
 
 &emsp;![alt text][edit-cli]
 

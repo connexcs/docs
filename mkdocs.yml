@@ -66,6 +66,7 @@ nav:
         - Contracts: customer/contracts.md
         - Documents: customer/documents.md
         - Class5: customer/class5.md
+        - Tags: customer/tags.md
 
 
     - Carrier: carrier.md

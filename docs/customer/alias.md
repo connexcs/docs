@@ -12,4 +12,4 @@ You can entirely or partially rewrite a number using an **Alias**.
 2. Click **`Save`**.
 
 !!! info "Video Guide"
-    See walkthrough in [**Alias Video Guide**](https://docs.connexcs.com/video-guide/#aliases).
+    See walk-through in [**Alias Video Guide**](https://docs.connexcs.com/video-guide/#aliases).

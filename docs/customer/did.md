@@ -75,7 +75,7 @@ For more details on these fields, see [**Media in Customer Routing**](https://do
 
 ### Billing
 
-Select a predefined **Package** to determine costs and billing. This will deduct Frequency Match and Setup Cost from the account's package.
+Select a predefined [**Package**](https://docs.connexcs.com/customer/package/) to determine costs and billing. This will deduct Frequency Match and Setup Cost from the account's package.
 
 ### Advanced
 
@@ -103,9 +103,13 @@ You can perform this for an individual Customer (**Management :material-menu-rig
 
 1. In Microsoft Excel, open a new workbook and save it as a CSV (Comma delimited) file.
 
-2. In the first row, add the names of the input fields as column headers. In step 2, you will have a chance to map these fields to the exact fields in ConnexCS, so these don't need to be exact.
+2. In the first row, add the names of the input fields as column headers like Customer column or DID column.
 
-3. From the second row on, add the values of the input fields, one row per DID.
+3. The next step is to map the created columns into the system.
+
+4. To map the columns, follow the listed steps:
+    4.1 Mapping is initiated by right-clicking the second row and selecting the "Set Start Row" option from the menu. You will see the first row highlighted in Blue.
+    4.2 After that, click on each column separately, choose the 'Map column' option, and select the options from the drop-down list to map that column..
 
 !!! tip "Tips for creating the CSV file"
     Steps taken to ensure that you can perform the next steps effortlessly:
