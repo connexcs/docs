@@ -180,14 +180,14 @@ nav:
         - SIP Devices: sip-devices.md
         - Status Page (for Customer Portals): system-status.md
     
-   - Troubleshooting: 
-            - Call Connection/Signaling Issues: guides/tshoot-signal.md
-            - Call Quality/Media Issues: guides/tshoot-media.md
-            - Circuit Test: circuit-test.md
-            - Call Disconnection Reasons and Premature Call Disconnection: guides/call-disconnection-reasons.md
-            - Debugging: guides/debugging.md
-            - Logging: logging.md
-            - Remote Testing: guides/remote-testing.md
+    - Troubleshooting: 
+        - Call Connection/Signaling Issues: guides/tshoot-signal.md
+        - Call Quality/Media Issues: guides/tshoot-media.md
+        - Circuit Test: circuit-test.md
+        - Call Disconnection Reasons and Premature Call Disconnection: guides/call-disconnection-reasons.md
+        - Debugging: guides/debugging.md
+        - Logging: logging.md
+        - Remote Testing: guides/remote-testing.md
             
   - Video Guide: video-guide.md
 
