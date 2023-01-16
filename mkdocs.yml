@@ -189,7 +189,7 @@ nav:
         - Logging: logging.md
         - Remote Testing: guides/remote-testing.md
             
-  - Video Guide: video-guide.md
+    - Video Guide: video-guide.md
 
   - Customer Portal:
     - Dashboard: customer-portal/cp-dashboard.md
