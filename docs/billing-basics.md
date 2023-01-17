@@ -60,6 +60,7 @@ For example,
 | 4.   | 60.56   | 61        | 61      |
 | 5.   | 60.9    | 61        | 61      |
 
+
 2. **Billing Rounding and Precision**
 
 Carriers use cost rounding with billing increments to alter the price of each call and the net effective rate you get charged. This can have a big effect on the final cost in call centres since the vast majority of calls last under 30 seconds.
