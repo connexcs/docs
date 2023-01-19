@@ -64,11 +64,11 @@ Shifting usage and the growing demands for scalability are always a consideratio
 
 1. Please list all your customers IP Addresses along with locations if known:
 
-2. If the aforementioned traffic is not equally distributed between all IP addresses, please provide a break down.
+2. If the aforementioned traffic isn't equally distributed between all IP addresses, please provide a break down.
 
 3. Please list all carriers IP addresses where this traffic is most likely going to be sent to, along with locations if known.
 
-4. If the aforementioned traffic is not equally distributed between all IP addresses, please provide a break down.
+4. If the aforementioned traffic isn't equally distributed between all IP addresses, please provide a break down.
 
 See [**Capacity Limiting**](/limiting-cps/) for tips on limiting usage.
 
