@@ -46,13 +46,13 @@ Shifting usage and the growing demands for scalability are always a consideratio
 
 **CAPACITY REQUIREMENTS**
 
-1. How many channels are needed?
+1. The number of channels required?
 
-2. How many CPS are needed?
+2. The number of CPS required?
 
-3. What is the ACD?
+3. What's the ACD?
 
-4. What is the ASR?
+4. What's the ASR?
 
 5. What percentage of this traffic is already running on your infrastructure?
 
@@ -66,7 +66,7 @@ Shifting usage and the growing demands for scalability are always a consideratio
 
 2. If the aforementioned traffic isn't equally distributed between all IP addresses, please provide a break down.
 
-3. Please list all carriers IP addresses where this traffic is most likely going to be sent to, along with locations if known.
+3. Please list all carriers IP addresses where this traffic is most likely going to get transmitted to, along with locations if known.
 
 4. If the aforementioned traffic isn't equally distributed between all IP addresses, please provide a break down.
 

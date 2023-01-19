@@ -6,7 +6,7 @@ See [**Network Address Translation**](https://en.wikipedia.org/wiki/Network_addr
 
 **Near-end** refers to a UA (User Agent), such as a softphone. **Far-End** refers to the ConnexCS Switch.
 
-## What's Far End Nat Traversal?
+## Far End Nat Traversal
 
 Not all networking devices (firewalls, gateways, or other NAT devices) support SIP ALG (Application Layer Gateway).
 
@@ -22,7 +22,7 @@ The third option, Carrier configuration, means if, for some reason, our switch d
 
 This is the preferred method because it's easier and more efficient. To apply this kind of fix at the carrier level rather than requiring each individual customer to perform complex configuration changes to their equipment.
 
-## What NAT detection methods does ConnexCS use?
+## NAT detection methods used by ConnexCS
 
 * Tests if the client has a private IP address--as defined by RFC1918--in the Contact field of the SIP message.
 * Tests if the client has contacted ConnexCS from an address different from the one in the Via field.
@@ -35,6 +35,6 @@ See [**AnyEdge Platform**](/anyedge/anyedge/).
 For more information on Additional NAT detection capabilities, such as setting rules per domain or source IP address.
 
 !!! note "Why does SIP Systems have Network Traversal Problems?"
-    If you ask some information from the website and the system replies to you through the open communiction socket. Thus, you receive the information just as you sent. But, in SIP systems this not completely the same, because you don't open the socket and wait for the information to come back from that socket because mostly its the UDP.
+    If you ask some information from the website and the system replies to you through the open communication socket. Thus, you receive the information just as you sent. But, in SIP systems this isn't completely the same, because you don't open the socket and wait for the information to come back from that socket because mostly its the UDP.
     For example, there is a packet in the IP level and it goes through NAT, it will automatically handle the re-write of the packet information on layer 3 / 4. If the packet goes and comes back, there is no problem.
-    The problem occurs when in the invite packet, the sender should send reply or subsequent replies to the **contact header**. The reply is done independently of the protocol used (TCP / IP or UDP), it happens inside the SIP packet. Thus, SIP does a different levelof re-writing that's why it requires an Application Level Gateway. This is because on the OSI model, the ALT operates on the Application layer, wheres as NAT operates on layer 3 / 4.
+    The problem occurs when in the invite packet, the sender should send reply or following replies to the **contact header**. The reply is independent of the protocol used (TCP / IP or UDP), it happens inside the SIP packet. Thus, SIP does a different level of re-writing that's why it requires an Application Level Gateway. This is because on the OSI model, the ALT operates on the Application layer, wheres as NAT operates on layer 3 / 4.

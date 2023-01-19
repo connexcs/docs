@@ -8,7 +8,9 @@
 
 ## Number Normalisation and Denormalisation
 
-A phone number is converted into a standard, or normal, form through the process of normalization. It's tricky to compare two phone numbers to determine if they're the same if the digits aren't normalised. All numbers can be checked and handled effectively by Streem Center by converting them into a regular form.
+A phone number gets converted into a standard, or normal, form through the process of normalization. It's tricky to compare two phone numbers to determine if they're the same if the digits aren't normalised.
+
+Streem Center can check and handle all the numbers by converting them into a regular form.
 
 The customer needs to specify which format you wish your number should be and we (carrier) will provide you with the same format.
 
@@ -16,7 +18,7 @@ The customer needs to specify which format you wish your number should be and we
 
 ### Using E.164 with SIP
 
-Several situations occurs which compel SIP apps to deal with phone numbers. Unfortunately, it's impossible to route phone numbers using the conventional DNS resolution methods for SIP that rely on SIP URIs (Uniform Resource Identifiers). Thus, ENUM offers a way for converting E.164 numbers into URIs (SIP URIs).
+Several situations occurs which compel SIP apps to deal with phone numbers. It's impossible to route phone numbers using the conventional DNS resolution methods for SIP that rely on SIP URIs (Uniform Resource Identifiers). Thus, ENUM offers a way for converting E.164 numbers into URIs (SIP URIs).
 
 A system called ENUM (E.164 Number Mapping) uses DNS to convert some phone numbers, like "+12025332600," into URIs, or RFC 2396-compliant addresses, like "sip:user@sipcarrier.com."
 
