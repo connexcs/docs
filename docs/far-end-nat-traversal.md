@@ -33,3 +33,8 @@ This is the preferred method because it's easier and more efficient. To apply th
 See [**AnyEdge Platform**](/anyedge/anyedge/).
 
 For more information on Additional NAT detection capabilities, such as setting rules per domain or source IP address.
+
+!!! note "Why does SIP Systems have Network Traversal Problems?"
+    If you ask some information from the website and the system replies to you through the open communiction socket. Thus, you receive the information just as you sent. But, in SIP systems this not completely the same, because you don't open the socket and wait for the information to come back from that socket because mostly its the UDP.
+    For example, there is a packet in the IP level and it goes through NAT, it will automatically handle the re-write of the packet information on layer 3 / 4. If the packet goes and comes back, there is no problem.
+    The problem occurs when in the invite packet, the sender should send reply or subsequent replies to the **contact header**. The reply is done independently of the protocol used (TCP / IP or UDP), it happens inside the SIP packet. Thus, SIP does a different levelof re-writing that's why it requires an Application Level Gateway. This is because on the OSI model, the ALT operates on the Application layer, wheres as NAT operates on layer 3 / 4.
