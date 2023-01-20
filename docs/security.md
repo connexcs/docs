@@ -64,7 +64,7 @@ ICMP (Internet Control Message Protocol) pings messages (for example, ping www.c
 
 ICMP Pings informs if the destination is online and working and it turns down all the problems in the subsequent layers.
 
-We don't block ICMP, because it's required to enable network analysis. [Click here] for additional information.
+We (ConnexCS) don't block ICMP, because it's required to enable network analysis. [Click here] for additional information.
 
 ICMP Ping attacks were once common (packet size versus available bandwidth). They still happen, but it's more useful to enable ICMP replies to efficiently establish the status of a server.
 
