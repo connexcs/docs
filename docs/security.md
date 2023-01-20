@@ -62,6 +62,10 @@ This doesn't mean we don't observe activity on either of these. Also, we've auto
 
 ICMP (Internet Control Message Protocol) pings messages (for example, ping www.connexcs.com).
 
+ICMP Pings informs if the destination is online and working and it turns down all the problems in the subsequent layers.
+
+We don't block ICMP, because it's required to enable network analysis. [Click here] for additional information.
+
 ICMP Ping attacks were once common (packet size versus available bandwidth). They still happen, but it's more useful to enable ICMP replies to efficiently establish the status of a server.
 
 ### Session Initiation Protocol / Real-time Transport Protocol Firewall Block on Default
