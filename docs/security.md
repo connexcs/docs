@@ -68,6 +68,31 @@ We (ConnexCS) don't block ICMP, because it's required to enable network analysis
 
 ICMP Ping attacks were once common (packet size versus available bandwidth). They still happen, but it's more useful to enable ICMP replies to efficiently establish the status of a server.
 
+#### Using a TraceRoute / MTR
+
+An easy command-line application for tracking the route an IP packet takes over one or more networks is **TraceRoute**. The main function of TraceRoute is network diagnostics.
+TraceRoute provides information about internal traffic flows and reveals any erratic or inefficient routes. 
+
+When used externally, TraceRoute may show the route taken by a packet as it travels over several networks. In some situations, even the various cities or geographical areas that the traffic is travelling through.
+
+TraceRoute is used to see the routes, whether they are changing, and to get an idea of the latency.
+
+**My TraceRoute (MTR)** combines TraceRoute with ping. It's another popular technique for gauging network connectivity and performance.
+
+MTR displays continuously updated data regarding the latency, packet loss, and hops along the network path. This makes it easier to diagnose network problems since it gives you a real-time view of what's occurring along the way. It includes packet loss and jitter as well.
+
+Similar to TraceRoute, MTR finds the network path and then periodically sends packets to continue gathering data. Then it offers an updated picture of the network's health and performance.
+
+!!! note "Don't use MTR for packet loss"
+    Since the pings aren't reliable from transit providers / intermediate hops. Only end to end pings are reliable in MTR.
+
+    Use MTR to get an initial record of the packet loss. As MTR reports  packet loss on intermediary pings, it doesn't mean that there is extreme packet loss on the route.
+
+!!! note "TraceRoute vs MTR"
+    A **TraceRoute** is suitable if you only want to identify the routers your packet travels through.
+
+    **MTR** also includes information on packet loss as well.
+
 ### Session Initiation Protocol / Real-time Transport Protocol Firewall Block on Default
 
 Our Session Initiation Protocol (SIP) Servers only run SIP and nothing else.
