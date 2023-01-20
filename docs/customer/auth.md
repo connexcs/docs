@@ -190,7 +190,7 @@ You can also use `Generate Password` to generate a random and secure SIP passwor
 
 Make sure you `Copy Text` and provide this information for configuration, as this password can't be retrieved after it's set.
 
-Customers using the Customer Portal can rest their SIP Passwords in [**Authentication**](https://docs.connexcs.com/customer-portal/cp-authentication/#reset-sip-password).
+Customers using the Customer Portal can reset their SIP Passwords in [**Authentication**](https://docs.connexcs.com/customer-portal/cp-authentication/#reset-sip-password).
 
 !!! warning "SIP Password security"
     SIP passwords are needed for the SIP protocol, but they can present security risks for a provider.
