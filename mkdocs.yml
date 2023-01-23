@@ -179,6 +179,7 @@ nav:
         - Monitoring: guides/monitoring.md
         - SIP Devices: sip-devices.md
         - Status Page (for Customer Portals): system-status.md
+        - OSI Model: guides/OSI-model.md
     
     - Troubleshooting: 
         - Call Connection/Signaling Issues: guides/tshoot-signal.md
