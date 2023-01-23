@@ -163,6 +163,7 @@ nav:
             - Changing Password: changing-password.md
             - Logging Out: logging-out.md
             - Number Manipulation: number-manipulation.md
+        - SIP Traces, Pings and Messages: guides/sip-traces.md
         - Documents and Files: 
             - Document Guide: guides/doc-guide.md
             - File: files.md
@@ -178,14 +179,17 @@ nav:
         - Monitoring: guides/monitoring.md
         - SIP Devices: sip-devices.md
         - Status Page (for Customer Portals): system-status.md
-        - Troubleshooting: 
-            - Call Connection/Signaling Issues: guides/tshoot-signal.md
-            - Call Quality/Media Issues: guides/tshoot-media.md
-            - Circuit Test: circuit-test.md
-            - Debugging: guides/debugging.md
-            - Logging: logging.md
-            - Remote Testing: guides/remote-testing.md            
-        - Video Guide: video-guide.md
+    
+    - Troubleshooting: 
+        - Call Connection/Signaling Issues: guides/tshoot-signal.md
+        - Call Quality/Media Issues: guides/tshoot-media.md
+        - Circuit Test: circuit-test.md
+        - Call Disconnection Reasons and Premature Call Disconnection: guides/call-disconnection-reasons.md
+        - Debugging: guides/debugging.md
+        - Logging: logging.md
+        - Remote Testing: guides/remote-testing.md
+            
+    - Video Guide: video-guide.md
 
   - Customer Portal:
     - Dashboard: customer-portal/cp-dashboard.md
