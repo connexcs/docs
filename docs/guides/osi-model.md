@@ -8,7 +8,7 @@ In the year 1984, the International Organization for Standardization (ISO) creat
 
 ## Open Systems Interconnections Model Layers
 
-![osi-model](/guides/img/osi-model.jpg)
+![osi-model](/guides/img/osimodel.jpg)
 
 ### Physical Layer
 
