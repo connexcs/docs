@@ -8,6 +8,8 @@ In the year 1984, the International Organization for Standardization (ISO) creat
 
 ## Open Systems Interconnections Model Layers
 
+![osi-model](/guides/img/osi-model.jpg)
+
 ### Physical Layer
 
 It's in charge of the wired / wireless connections that physically connect network nodes.
@@ -87,6 +89,8 @@ This implies that the application must wait for any missed segments to get retra
 Moving a data center can alter network-related latency. The geographic separation between the client and server affects network latency. The delay may get doubled by relocating the server farther from the user. The end users will be further affected as it will slow down processes. It also decreases the application throughput.
 
 Here is an example showing a link between network latency and application latency.
+
+![net latency](/guides/img/netlatency.jpg)
 
 150 transactions would expire for a local user with a 1-ms network latency between the client and the server in 0.15s.
 
