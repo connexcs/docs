@@ -23,4 +23,4 @@ Use the **Documents** section to collect various files from the customer, as par
 [document]: /customer/img/document.png "Add Document"
 
 !!! note
-    We have KYC for our customers and very soon we'll be making it available for our customer's customers.
+    We've KYC for our customers and soon we'll be making it available for our customer's customers.
