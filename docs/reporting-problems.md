@@ -41,7 +41,23 @@ Click this button to alert staff, and the first person to become available will 
 
 **Support Ticket** (found at the bottom of the ConnexCS navigation menu) displays all open tickets for an account.
 
-To create a ticket, send an email to [**support@connexcs.com**](support@connexcs.com).
+#### Steps to Raise a Ticket appropriately
+
+1. Email the issue to support@connexcs.com
+2. Compose a subject that's descriptive and accurately summarises the issue.
+3. Include crucial data regarding the issue, such as:
+    3.1. When the issue first commenced
+    3.2. Measures taken by to fix or isolate the problem
+    3.3. Any other pertinent information
+4. Please distinguish between your assumptions and actual observations.
+5. Please provide us with single or multiple calls if you were successful in isolating the issue
+
+!!! note "Follow the guidelines below and help us serve you better"
+    1. Don't send us 100's calls to find the one call with the issue.
+    2. If you send us more than 1 call, be sure that each one displays the issue. We don't want to test one of them and then discover that there is no issue.
+    3. Please be clear and precise about your problem.
+    4. Please respond to our comments. It will speed up the process of fixing the issue.
+    5. Please don't excessively complain about the issue (when you engage with our support team), as it will delay finding a solution.
 
 ### Phone
 
