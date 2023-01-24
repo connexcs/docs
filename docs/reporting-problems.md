@@ -247,3 +247,9 @@ Making a video is the best way to get the issue resolved, including the User Int
 2. Mention A/B examples
 3. Mention the commonalities
 4. Feed us with appropriate assumptions
+
+## Commonality Analysis
+
+Consider a situation where there are 100 calls that go as planned and 100 calls that don't. Thus,  commonality analysis might help spot the reasons why they fall short
+
+To accomplish this, connected calls must be examined to determine what they had in-common. Similarly, the calls which didn't connect had in common.
