@@ -194,3 +194,49 @@ If you have more than one problem to report, we ask you to:
 2. Allow an adequate amount of time for us to assess the problem and resolve it.
 3. We first find if the problems are connected, adding extra time onto finding the roots themselves.
 4. Call instead of sending an email: This helps us to get a concise reading on all concerns instantly and ask follow-up questions instantly.
+
+## Importance of Replication
+
+Being able to replicate (on-demand) an issue is the best method to solve it.
+If we can do this, the issue can get resolved without the input of the customer, and we'll be able to do it without your help as well.
+
+For example,
+
+If you make a call to **A** and the call connects:
+
+a. When you disconnect, the call terminates successfully.
+
+b. When A disconnects, the call doesn't end inadequately.
+
+**Poor Scenario**
+
+The issue occurs at irregular events, or it's an uncommon problem.
+
+**Good Scenario**
+
+When you're unable to recreate the issue in isolation and on request, the customer can replicate the issue.
+
+**Ideal Scenario: Isolation**
+
+You can take steps without the customer's involvement. You can make a call-on-demand example that illustrates an issue. Then you can make a change and illustrate how things continue to function without that particular modification.
+
+### User Interface Problems
+
+Making a video is the best way to get the issue resolved, including the User Interface. You may then send the video to us so that we can see the exact problem with clarity. We'll be in a better position to fix the problem.
+
+**Instructions for recording a video in Windows**
+
+1. Enable Screen Recording
+2. Record Your Screen:
+   2.1. Launch the recording app of your choice. The majority of programs and windows allow you to begin recording, although the Windows desktop, File Explorer, and several other Windows apps don't.
+   2.2. To snap a quick screenshot, click the camera icon, or press the Start Recording button to record your screen activity.
+   2.3 Click the Recording button on the floating bar to halt the recording. You receive a notice letting you know the video got recorded. When you click the notice, your video appears in a new window.
+   2.4 To watch the video, use the Play button.
+   2.5 Your video's location in File Explorer, which is by default C:Users[username]\Videos\Captures. You may always change the location of where video captures get saved if you don't like the default setting.
+3. Enable Background Recording
+
+## ConnexCS Internal Steps for Problem Resolution
+
+1. If ConnexCS receives a problem from you and is unable to identify the problem instantly, we'll attempt to replicate the problem.
+2. If we aren't able to replicate the problem, we'll be replying to ask for your assistance.
+3. If you can include this information when you submit the ticket, the problem will be resolved more quickly.
