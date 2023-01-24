@@ -240,3 +240,10 @@ Making a video is the best way to get the issue resolved, including the User Int
 1. If ConnexCS receives a problem from you and is unable to identify the problem instantly, we'll attempt to replicate the problem.
 2. If we aren't able to replicate the problem, we'll be replying to ask for your assistance.
 3. If you can include this information when you submit the ticket, the problem will be resolved more quickly.
+
+## Steps to Prepare an Incident Report
+
+1. Provide with the Caller-ID details, if the incident is related to the call
+2. Mention A/B examples
+3. Mention the commonalities
+4. Feed us with appropriate assumptions
