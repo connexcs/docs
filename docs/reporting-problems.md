@@ -58,6 +58,7 @@ Click this button to alert staff, and the first person to become available will 
     3. Please be clear and precise about your problem.
     4. Please respond to our comments. It will speed up the process of fixing the issue.
     5. Please don't excessively complain about the issue (when you engage with our support team), as it will delay finding a solution.
+    6. Please be patient with us and answer our queries regarding the issue.
 
 ### Phone
 
