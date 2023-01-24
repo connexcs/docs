@@ -8,13 +8,13 @@ If you’re operating within a single country, compliance is more streamlined. I
 
 With that said, let's take a look at the major telecom regulatory authorities around the world.
 
-United States of America - Federal Communications Commission
+## United States of America - Federal Communications Commission
 
 The FCC is the apex regulatory authority in the USA when it comes to all forms of communication. It’s an independent committee tasked with implementing and enforcing America’s laws and regulations concerning electronic and digital communication.
 
 You can learn about all their recent initiatives for the betterment of the communication space here.
 
-United Kingdom - Ofcom
+## United Kingdom - Ofcom
 
 The Office of Communications, Ofcom, is the de facto regulatory authority for all forms of communication within the United Kingdom. Ofcom is an independent authority responsible for regulating and enforcing the UK’s communication laws and regulations.
 
@@ -22,7 +22,7 @@ Ofcom is also responsible for making and amending rules and regulations for all 
 
 You can learn about all the new things happening at Ofcom here.
 
-India - Telecom Regulatory Authority of India
+## India - Telecom Regulatory Authority of India
 
 The TRAI was set up by the Ministry of Communications, Government of India to function as an independent regulatory authority for the telecommunication sector within India. Thus, TRAI is responsible for regulating and enforcing communication laws.
 
@@ -30,7 +30,7 @@ Through its operations, TRAI aims to nurture and grow the telecommunication indu
 
 You can learn more about the activities TRAI undertakes here.
 
-Australia - Australian Communication and Media Authority
+## Australia - Australian Communication and Media Authority
 
 The Australian Communication and Media Authority, AMCA, is an independent regulatory authority within the Australian Government’s Communications Portfolio.
 
@@ -38,7 +38,7 @@ The AMCA is responsible for setting and updating rules and regulations governing
 
 You can learn about all the recent developments from AMCA here.
 
-China - Ministry of Industry and Information Technology
+## China - Ministry of Industry and Information Technology
 
 The Ministry of Industry and Information Technology, MIIT, is a governing body under the Government of China that's responsible for regulating the telecommunications sector within China.
 
