@@ -253,3 +253,13 @@ Making a video is the best way to get the issue resolved, including the User Int
 Consider a situation where there are 100 calls that go as planned and 100 calls that don't. Thus,  commonality analysis might help spot the reasons why they fall short
 
 To accomplish this, connected calls must be examined to determine what they had in-common. Similarly, the calls which didn't connect had in common.
+
+## Confirming a Fix
+
+It's important to test when a resolution has been achieved for the problem.
+
+It may require simulating a call, or sometimes you're required to make a real-time call. Thus, it's important to test the resolution yourself before informing the other parties.
+
+If the resolution doesn't work, make sure the problem gets marked as unresolved and the required parties are informed about the status.
+
+Additionally, it's good practice to update the ticket status after a successful resolution.
