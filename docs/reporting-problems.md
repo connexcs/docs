@@ -6,7 +6,7 @@ ConnexCS doesn't charge for support, but there is a reasonable level of expectat
 
 ### ConnexCS Server Provider Obligations
 
-ConnexCS support engineers make all efforts to fix reported problems within a timeframe deemed appropriate for the severity of the issue.
+ConnexCS support engineers make all efforts to fix reported problems within a time-frame deemed appropriate for the severity of the issue.
 
 We make our best efforts to reply 24/7.
 
@@ -17,12 +17,12 @@ We expect the following from you as a customer:
 * Basic level or above of computer operation.
 * Basic level or above of Telephony.
 * Act as a liaison with your customers and carriers.
-* Initial investigation of the problem.
+* For initial investigation of the problem, first-line support should be internal to your company.
 * Problem Isolation (See [**Debugging guide**](/guides/debugging/))
 
 ## Support Channels
 
-Several methods of contacting ConnexCS for assistance are outlined below.
+Several methods of contacting ConnexCS for guidance are outlined below.
 
 If you need to Report a Problem, please make sure you check that section for information on issue classification and response times, and some tips for reporting issues so we can best address your needs.
 
@@ -31,9 +31,9 @@ If you need to Report a Problem, please make sure you check that section for inf
 
 ### Online Chat
 
-**Online Chat** allows for real-time assistance. Initial communication is with a bot. If the bot is unable to help, it will tell you to type "Human" to connect with a support representative.
+**Online Chat** allows for real-time guidance. Initial communication is with a bot. If the bot is unable to help, it will tell you to type "Human" to connect with a support representative.
 
-Click this button to alert staff, and the first person to become available will reply as soon as possible. We find that most questions are resolved efficiently this way.
+Click this button to alert staff, and the first person to become available will reply as soon as possible. We find that most questions get their resolution efficiently this way.
 
 **Please note that the chat system is for one-on-one communication about a specific problem, not for multiple concerns or system-wide change requests.**
 
@@ -48,7 +48,7 @@ To create a ticket, send an email to [**support@connexcs.com**](support@connexcs
 To speak to a Support Representative, please call our office number listed at [**www.connexcs.com**](https://www.connexcs.com/).
 
 !!! error "When to call the support number"
-    Our support line connects directly to our engineers. Unless there is a critical issue, please call this number between 9:00 a.m. and 23:00 p.m. UTC.
+    Our support line connects directly to our engineers. Unless there is a critical issue, please call this number between 9:00 AM and 23:00 PM UTC.
 
 ### SMS
 
@@ -66,13 +66,23 @@ Contact us via **Telegram**:
 
 ### NOC-On-Demand
 
-If you are interested in **NOC-on-Demand** or Enhanced Support, which would give 24/7 (or cover your specific time zone) operational support, please contact us directly to discuss this option.
+If you're interested in **NOC-on-Demand** or Enhanced Support, which would give 24/7 (or cover your specific time zone) operational support, please contact us directly to discuss this option.
 
 ## Report a Problem
 
 This section covers the best practises for reporting problems to ConnexCS support.
 
 We encourage feedback but also want to make sure you have the most efficient means of expressing a problem so there are no delays.
+
+### How to confirm an issue has occurred?
+
+The moment a consumer reports a problem. You must begin an inquiry, utilizing the training and documentation we've provided you.
+
+Customer's / Provider's issues shouldn't be escalated directly to ConnexCS. The issues should undergo initial troubleshooting steps.
+
+If a customer reports channel variance, the customer is making an observation rather than reporting a problem. This makes it necessary to investigate the problems at the elemental level.
+
+If a problem is with poor stats, compare it with formerly recorded positive numbers.
 
 ### Issue Classification and Response times
 
@@ -81,7 +91,7 @@ ConnexCS classifies issues based on a combination of **Category** and **Severity
 #### Categories
 
 * **Platform**: Refers to the stability of the ConnexCS system (typically outside customer control). For example, the ConnexCS platform is down.
-* **Operational**: Any configuration related issues, which are typically within the customer's control. For example, the Misconfiguration issue.
+* **Operational**: Any configuration related issues, which are typically within the customer's control. For example, the misconfiguration issue.
 
 #### Severity Levels
 
@@ -90,8 +100,8 @@ ConnexCS classifies issues based on a combination of **Category** and **Severity
 |**P0**|Critical|ConnexCS is down; this is affecting all customers, and all calls are failing. The best thing to do is to monitor <https://status.connexcs.com/> and await updates.
 |**P1**|Critical|A customer of ConnexCS is down, and it's affecting all calls.|
 |**P2**|Critical|A customer of our customer's calls is down, or there is a serious User Interface problem.|
-|**P3**|Important|A partial outage on the part of a customer or carrier, and / or some but not all calls are affected, or there is a serious User Interface problem.|
-|**P4**|Trivial|A feature is broken but business can continue (User Interface problem, or a low-impact problem affecting calls).|
+|**P3**|Important|A partial outage on the part of a customer or carrier, and / or some but not all calls get affected, or there is a serious User Interface problem.|
+|**P4**|Trivial|A feature gets broken but business can continue (User Interface problem, or a low-impact problem affecting calls).|
 |**P5**|Trivial|A feature doesn't work as expected, or an enhancement is required.|
 
 !!! tip "Paid Support Escalation"
@@ -107,24 +117,24 @@ ConnexCS classifies issues based on a combination of **Category** and **Severity
 * Platform for P2+ (Critical) Issues = 24/7 support.
   * Platform Issue.
   * Our Monitoring will alert Us.
-  * Check our status page; ETA's will be issued if we have them available.
+  * Check our status page; ETA's will get issued if we've them available.
   * You can contact us, but please don't expect any detailed replies while we're focused on troubleshooting the issue.
   * 24/7 response incidents.
 
-* All other Platform (non-Critical) and Operational Issues from 8:00 am - 8:00 pm UTC business hours support.
-Whenever possible, we strive to provide best-effort support outside these times if we are available.
+* All other Platform (non-Critical) and Operational Issues from 8:00 AM - 8:00 PM UTC business hours support.
+Whenever possible, we strive to provide best-effort support outside these times if we're available.
   We're a small team, so we request that you keep this in mind when reporting the severity of an issue:
   * Operational or Configuration Issue.
   * Our Monitoring won't alert Us.
   * Our status page won't show this problem.
   * Contact us immediately.
-  * Problem are resolved during working hours or best effort.
+  * Problems get resolved during working hours or best effort.
 
 !!! tip "Issues with new interconnects"
     Issues encountered when turning up a new interconnect that isn't working aren't considered Critical.
 
 !!! tip "Issues when making changes"
-    Issues encountered when you are making a change, testing a new feature, or onboarding a new customer aren't considered Critical.
+    Issues encountered when you are making a change, testing a new feature, or on-boarding a new customer aren't considered Critical.
 
 ### Requested Troubleshooting and Information
 
@@ -147,14 +157,14 @@ Please check the [**ConnexCS System Status Page**](https://status.connexcs.com/)
 
 **Step 2: Check the Documentation**
 
-The ConnexCS onsite documentation, found at [**docs.connexcs.com**](https://docs.connexcs.com/), serves multiple functions:
+The ConnexCS onsite documentation, found at [**docs.connexcs.com**](https://docs.connexcs.com/), serves several functions:
 
 * To provide a repository where you can search for information relevant to your problem.
 * To inform your questions when you contact support.
 
-Sometimes, complications are easily resolved by turning off parameters that aren't compatible. In some instances, a little troubleshooting might solve it.
+Sometimes, complications are resolved by turning off parameters that aren't compatible. Sometimes, a little troubleshooting might solve it.
 
-In some instances, you will need help; understanding the documentation will speed up our efforts to remedy larger concerns.
+Sometimes, you will need help; understanding the documentation will speed up our efforts to remedy larger concerns.
 
 *Whenever possible, please refer to the ConnexCS documentation before contacting support.*
 
@@ -162,9 +172,9 @@ In some instances, you will need help; understanding the documentation will spee
 
 This step helps us understand and resolve your issue as soon as possible. Whenever possible, we recommend you follow a standardized troubleshooting process, such as our recommended [**Debugging**](/guides/debugging/) steps.
 
-* **User Interface Issues**: Including a screenshot along with a clear description of the problem can really help us understand the issue. For an efficient utility to take UI screenshots, we recommend a browser plugin called "Lightshot" or using your OS's built-in snipping tool.
+* **User Interface Issues**: Including a screenshot along with a clear description of the problem can help us understand the issue. For an efficient utility to take UI screenshots, we recommend a browser plugin called "Lightshot" or using your OS's built-in snipping tool.
 
-* **Problems with Calls**: For problems with call flow, the [**Call-ID**](/guides/howto/callid/) is how we identify affected calls. It helps us isolate customers, providers, and/or channels that may be affected.
+* **Problems with Calls**: For problems with call flow, the [**Call-ID**](/guides/howto/callid/) is how we identify affected calls. It helps us isolate customers, providers, and/or channels that may get affected.
 
     Find a Call-ID in the [**Logging**](/logging/) section by clicking on a call, and then copying the ID to the right of the panel.
 
@@ -183,4 +193,4 @@ If you have more than one problem to report, we ask you to:
 1. Create a separate ticket for each request so that it's routed to the correct staff member.
 2. Allow an adequate amount of time for us to assess the problem and resolve it.
 3. We first find if the problems are connected, adding extra time onto finding the roots themselves.
-4. Call instead of sending an email: This helps us to get a concise reading on all concerns quickly and ask follow-up questions on the spot.
+4. Call instead of sending an email: This helps us to get a concise reading on all concerns instantly and ask follow-up questions instantly.
