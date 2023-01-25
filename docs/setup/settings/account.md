@@ -47,9 +47,9 @@ Click **Enable Call Recording** to add the feature to the Account. First, you ne
 
 ## ConnexCS Service Agreement
 
-To view the full ConnexCS Service Agreement, click the orange banner at the bottom:
+To view the full ConnexCS Service Agreement, click on the below link:
 
-&emsp;![alt text][setup/settings/ConnexCS Service Agreement.pdf]
+[ConnexCS Service Agreement](setup/settings/ConnexCS Service Agreement.pdf)
 
 [accountprofile]: /setup/img/account-profile.png "Account Profile"
 [smtp]: /setup/img/smtp.png "SMTP"
