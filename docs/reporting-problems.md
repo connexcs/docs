@@ -96,6 +96,90 @@ This section covers the best practises for reporting problems to ConnexCS suppor
 
 We encourage feedback but also want to make sure you have the most efficient means of expressing a problem so there are no delays.
 
+### Problem Escalation Matrix
+
+Customers are bound to face some difficulties and problems throughout their tenure with you. Not all problems are the same and require different levels of attention and assistance.
+
+Resolving problems at the earliest is a necessity when it comes to maximizing positive customer experience. To achieve this it is necessary to categorize and prioritize problems based on their severity and impact.
+
+For this, a proper framework is needed. This framework is known as a problem escalation matrix.
+
+A problem escalation matrix is a set of guidelines that enable you to categorize and prioritize problems in the best possible manner. This ensures the right expert is working on the issue and delivers a resolution at the earliest.
+
+With that said, we can now define the framework of an ideal customer support function.
+
+**1st Line Support Executive**
+
+A 1st Line Support Executive functions as the primary point of contact between your customer support team and the customer. They should have a good understanding of how everything works and how to troubleshoot the most common problems.
+
+The primary responsibility of the 1st Line Support Executive is to assist customers in troubleshooting common problems that are easy to fix. They are supposed to collect all available information from the customer and maintain a record of it.
+
+In case a problem is not a common occurrence and outside the scope of the expertise of a 1st Line Support Executive, they’re supposed to escalate the problem and pass it on to the 2nd Line Support Executive.
+
+**2nd Line Support Executive**
+
+A 2nd Line Support Executive is a certified expert for the platform and serves as the second in line to the 1st Line Support Executive in the Customer Support Function.
+
+The primary responsibility of the 2nd Line Support Executive is to assess the information about the problem gathered by the 1st Line Support Executive. Then they proceed to deliver a resolution at the earliest based on the assessment.
+
+2nd Line Support Executives handle problems that may arise due to misconfiguration, improper setup, mismanaged advanced settings, etc.
+
+A very small number of problems fall out of the scope of the 2nd Line Support Executive’s expertise. In such circumstances, the problem is further escalated to the Senior Support Executive.
+
+**Senior Support Executive**
+
+A Senior Support Executive is usually a developer with significant hands-on experience with the platform. They not only know the ins and outs of the platform but also are capable of resolving issues that may occur due to a malfunctioning code or component.
+
+Their primary responsibility is to assist customers with only the most severe problems. Senior Support Executives also assist customers with API integrations, platform plugins, payment gateway integrations and much more.
+
+Another important responsibility shouldered by them is to determine whether a particular problem is caused by internal factors, customer actions, external factors or the Connex platform.
+
+If a particular issue is identified as being caused due to a malfunction in the Connex Platform, the Senior Support Executive is expected to gather all the necessary information and inform the Vendor Support Team at ConnexCS.
+
+### ConnexCS Escalation Matrix
+
+We at ConnexCS follow a similar approach to handling customer problems. As our customers, we want you to know how our escalation matrix functions.
+
+This will help you report the problems properly, request for escalation and have a thorough understanding of how your problems are being resolved.
+
+**1st Line Support Specialists**
+
+Our 1st Line Support Specialists are NOC Engineers who are highly trained and certified in managing SIP servers, SIP troubleshooting and platform management.
+
+Once you’ve identified that the problem you’re facing is due to some issue with our platform, you’re expected to inform the 1st Line Support Specialists.
+
+Provide them with all the necessary information that was gathered. Our NOC Engineers will assess the situation and provide a resolution at the earliest.
+
+In case the problem is still now resolved or is identified as a critical issue, the problem shall be escalated to our 2nd Line Senior Experts.
+
+**2nd Line Experts**
+
+Our 2nd Line Experts are senior network engineers that are responsible for monitoring and ensuring the ConnexCS platform works as intended.
+
+They are not only more experienced but actively contributing to the improvements in the platform. Thus, they have the necessary access and expertise to troubleshoot complex technical issues that are fairly uncommon.
+
+Most of the operational problems will be easily resolved at this level.
+
+In the rare instances where a critical operations component breaks, system-wide network failure occurs or severe service stability is reported, the problem is escalated to our 3rd Line Senior Developers.
+
+**3rd Line Senior Developers**
+
+Our 3rd Line Senior Developers consist of a team of senior developers who have built the ConnexCS platform from the ground up.
+
+This makes them the ideal choice for handling any critical problem that may have system-wide effects.
+
+Our 3rd Line Senior Developers also entertain requests for particular features, functionality or capability requirements from the customers. These additional services are subjected to additional costs.
+
+### NOC-as-a-Service
+
+Hiring a NOC Engineer and having them trained to operate our platform may be a time and cost-intensive undertaking. We have a solution to this!
+
+Any of our customers can request a ConnexCS-certified expert NOC Engineer. The NOC Engineer will be trained and managed by us.
+
+They shall be responsible for operating and maintaining all your systems, handling and assisting customers with any difficulties they might face.
+
+This ad-on service would cost you $500 a month for each NOC Engineer you may wish to secure the services of.
+
 ### How to confirm an issue has occurred?
 
 The moment a consumer reports a problem. You must begin an inquiry, utilizing the training and documentation we've provided you.
