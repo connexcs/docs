@@ -49,7 +49,7 @@ Click **Enable Call Recording** to add the feature to the Account. First, you ne
 
 To view the full ConnexCS Service Agreement, click on the below link:
 
-[ConnexCS Service Agreement](setup/settings/ConnexCS Service Agreement.pdf)
+[ConnexCS Service Agreement](docs/setup/settings/ConnexCS Service Agreement.pdf)
 
 [accountprofile]: /setup/img/account-profile.png "Account Profile"
 [smtp]: /setup/img/smtp.png "SMTP"
