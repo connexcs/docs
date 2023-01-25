@@ -63,14 +63,14 @@ You can create an application called **Echo Test** and provide a specific call t
 
 1. Login to your account.
 2. Go to Class5 :material-menu-right: Apps and click `+`.
-3. You will see a Dialog box as shown below.
+3. You will see a Dialog box as shown below. ![echo test](/guides/img/echotest.jpg)
 4. Write the **Name** of your Echo test.
 5. Enter the **Destination** number for your Echo Test.
 6. Select the **PBX Server** for the call. The **Distributed (Default)** server will assign you the server near to your location.
-7. Click on `Save`.
-8. Click on `Go to App` which is right next to the echo test you've created. You will see a screen as shown in the figure below.
+7. Click on `Save`. ![echo test1](/guides/img/echotest1.jpg)
+8. Click on `Go to App` which is right next to the echo test you've created. You will see a screen as shown in the figure below. ![echo test2](/guides/img/echotest2.jpg)
 9. Then from components drag the `echo` component and connect it with your created echo test.
-10. Click on the dot on the right-side of your created echo test (Echo Test in this case) and join it with the `echo component` on the right-side.
+10. Click on the dot on the right-side of your created echo test (Echo Test in this case) and join it with the `echo component` on the right-side.![echo test3](/guides/img/echotest3.jpg)
 11. Then use your softfone to check for the echo test.
 
 **RTCP Metrics** If you enable RTCP on your customer and carrier, meta data about the RTP stream (packet counters, round trip time) gets exchanged. This information is available on the logging page of the call. These graphs can help to identify the problems.
