@@ -2,7 +2,7 @@
 
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Documents**
 
-Use the **Documents** section to collect various files from the customer, as part of Know Your Customer (KYC).
+Use the **Documents** section to collect various files from the customer, as part of [Know Your Customer (KYC)](https://en.wikipedia.org/wiki/Know_your_customer).
 
 1. Create a new document.
     + Click :material-plus:
@@ -21,3 +21,6 @@ Use the **Documents** section to collect various files from the customer, as par
     You might need to ask your customer for documents like CLI verification, the terms of condition with a contract signed via ConnexCS, copy of a phone bill, or a passport to verify their identity.
 
 [document]: /customer/img/document.png "Add Document"
+
+!!! note
+    We've KYC for our customers and soon we'll be making it available for our customer's customers.

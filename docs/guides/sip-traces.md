@@ -27,7 +27,7 @@ Alice and Bob represent the parties on the call. Alice sends an **INVITE** packe
 
 Further, **200 OK** is sent which means the calls are connected.
 
-The **ACK** message is sent from Alice to Bob confirming that the call has been connected.
+The **ACK** message is sent from Alice to Bob confirming that the call has got connected.
 
 ![sip trace](/logging/sipserver.jpg)
 
@@ -132,6 +132,7 @@ If Alice is alive, then you may get a reply, if there is a reply, then this is l
     Alice->>ConnexCS: 200 OK
     ConnexCS->>Charlie: 200 OK
 ```
+
 In this case, the communication happens between 3 parties. ConnexCs is sending OPTION packets in both the directions (to Alice and Charlie).
 
 **Case 4:Missing SIP Ping Call Disconnection (Charlie disappears)**
@@ -206,7 +207,7 @@ Bob should send 487 Canceled message to Alice.
 
 ### **200 OK Message**
 
-**200 OK** is a Success message. In order to understand how the **200 OK** is related to we need to follow back the original cseq.
+**200 OK** is a Success message. To understand how the **200 OK** is related to we need to follow back the original cseq.
 
 For example, if you don't see a 200 OK for a BYE message it means the other side has disappeared.
 
@@ -259,9 +260,9 @@ Alice and Bob represent the parties on the call. Alice sends an INVITE packet to
 
 Then Bob sends a 100 Trying (provides you the feedback that your request is getting processed by a SIP Application) message along with 180 Ringing (the Destination User Agent has received the INVITE message and is alerting the user of the call). 100 Trying and 180 Ringing are provisional responses.
 
-The re-invites get absorbed when they're received. When Bob receives the INVITE packet and a special timer is set (please see the below timer table) as to how long it should wait for re-transmissions. If any packet is received within this time frame, the packet gets ignored.
+The re-invites get absorbed when they're received. When Bob receives the INVITE packet and a special timer is set (please see the below timer table) to how long it should wait for re-transmissions. If any packet is received within this time-frame, the packet gets ignored.
 
-Further, 200 OK is sent which means the calls are connected. 200 OK is a final reply.
+Further, 200 OK is sent which means the calls gets connected. 200 OK is a final reply.
 
 The ACK is message is sent from Alice to Bob confirming that the call has been connected.
 
@@ -321,7 +322,7 @@ You can have take a look at the various SIP Timers in the table below:
 
 Here, Alice sends an invite to Bob and it's expected to get a reply (100 Trying) within in 500ms which is a **First Reply Timer**.
 
-Then a **PDD timer** is set for 5s to hear the ringing. Post-dial delay (PDD) is the measurement of how long it takes for a calling party to hear a ring-back tone after initiating a call.
+Then a **PDD timer** set for 5s to hear the ringing. Post-dial delay (PDD) is the measurement of how long it takes for a calling party to hear a ring-back tone after initiating a call.
 
 The time from when the respondent's phone starts ringing until it's answered; is a **Ring Timer**.
 
@@ -356,6 +357,31 @@ When the call is active **Max Call Duration Timer** comes into the picture. When
     Alice->>Bob: 200 OK
     Bob->>Charlie: 200 OK
 ```
+
 In case of a Re-Invite, it re-establishes an entire call.
 
 Here, Alice starts a call with Bob, the call is active without any issues and the media is through UK. But as a provider we detect the call isn't going through UK. Thus, we send the Re-Invite to Alice to send the media through us and we can place the call on a different server in real-time and in the middle of the call. Thus, a Re-Invite can contain some extra information also.
+
+### SIP Session Timers
+
+The SIP Session Timer feature adds the capability to periodically refresh SIP sessions. It sends repeated INVITE or RE-Invite requests.
+
+To enable UAs or proxies to determine the state of a SIP session, these requests get issued across active call legs.
+
+Session timers and Session refresh requests work together. They control whether active sessions remain active and completed sessions get terminated.
+
+Then check Supported: timers. It means the customer has this functionality, but that doesn't necessarily mean it's enabled.
+
+You can also check the minimum session interval allowed by Min-SE: 300.
+
+You can check Session expiration using Session-Expires: 1800. At half the session's expiration time, it will send a REINVITE.
+
+Suppose ConnexCS has a customer who sends traffic and they have Supported: timers, but actually, they don't support timers. So as soon as they receive a Re-Invite their system breaks. On behalf of the customers ConnexCS can reply that if it sees an invite from the upstream, it should get absorbed by the server and reply with a 200 OK. The Intercept Re-Invite feature can help achieve this issue.
+
+To ignore the system breakdown due to Supported: timers ConnexCS can use another feature Remove Timers.
+
+Remove Timers will inform the destination that this customer doesn't support the SIP Session Timer.
+
+If the Customer supports the timers but Supported: timers aren't visible.
+
+If the Customer supports the timers, but `Supported: timers` isn't visible; ConnexCS can add `Supported: timers` and the headers `Min-SE: 300`, `Session-Expires: 1800` on customer's behalf.

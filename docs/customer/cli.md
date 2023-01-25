@@ -349,8 +349,11 @@ To set the "P-Asserted-ID" per customer, see [**Configure CLI**](https://docs.co
 [cli]: /customer/img/cli.png "CLI Main"
 [approvedcli]: /customer/img/approvedcli.png "Approved CLI Only"
 [edit-cli]: /customer/img/edit-cli.png "Edit CLI"
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDc3NTM5MjcsMTA2NTU2NTkxNCwtOD
-AzOTMwMzMsLTEwOTYwODc3MzUsOTk0MzQyMDcsMTk4NjQ0NDEz
-NywxOTQ5NTUwNDc5LDIwODkyODA3MCwtMzEzMjYyNDk3XX0=
--->
+
+## CLI and PAID Responsibilities
+
+1. If the customers don't offer any CLI, you can add a CLI list but it should be validated.
+2. The customers are allowed to partly modify the format of CLIs. It should be changed to make it more compliant.
+3. If a customer isn't complaining, you can allocate a PAID from YOUR OWN list of CLI's, which can help you trace the calls.
+4. You shouldn't delete any information but you can fix the syntax or format.
+5. You shouldn't present any invalid / false information.
