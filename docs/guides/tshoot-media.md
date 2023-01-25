@@ -62,7 +62,7 @@ You can create an application called **Echo Test** and provide a specific call t
 **Setting up an Echo Test:**
 
 1. Login to your account.
-2. Go to Class5 :material-right-menu: Apps and click `+`.
+2. Go to Class5 :material-menu-right: Apps and click `+`.
 3. You will see a Dialog box as shown below.
 4. Write the **Name** of your Echo test.
 5. Enter the **Destination** number for your Echo Test.
@@ -72,7 +72,6 @@ You can create an application called **Echo Test** and provide a specific call t
 9. Then from components drag the `echo` component and connect it with your created echo test.
 10. Click on the dot on the right-side of your created echo test (Echo Test in this case) and join it with the `echo component` on the right-side.
 11. Then use your softfone to check for the echo test.
-
 
 **RTCP Metrics** If you enable RTCP on your customer and carrier, meta data about the RTP stream (packet counters, round trip time) gets exchanged. This information is available on the logging page of the call. These graphs can help to identify the problems.
 
