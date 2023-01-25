@@ -66,7 +66,7 @@ You can create an application called **Echo Test** and provide a specific call t
 3. You will see a Dialog box as shown below.
 4. Write the **Name** of your Echo test.
 5. Enter the **Destination** number for your Echo Test.
-6. Select the **PBX Server** for the call. The **Distributed (Default)** server will assign you the server near to yuor location.
+6. Select the **PBX Server** for the call. The **Distributed (Default)** server will assign you the server near to your location.
 7. Click on `Save`.
 8. Click on `Go to App` which is right next to the echo test you've created. You will see a screen as shown in the figure below.
 9. Then from components drag the `echo` component and connect it with your created echo test.
