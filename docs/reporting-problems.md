@@ -158,6 +158,16 @@ Whenever possible, we strive to provide best-effort support outside these times 
 !!! tip "Issues when making changes"
     Issues encountered when you are making a change, testing a new feature, or on-boarding a new customer aren't considered Critical.
 
+#### Internal vs External Failure
+
+It's important to identify from where the issue has started; whether it's an internal failure (ConnexCS) or an external failure (Upstream).
+
+The following measures can help you identify the failure problems:
+
+1. You can check where the **error message** is coming from and it will help you identify the failure.
+2. You can debug specific calls and find the issue.
+3. You can debug performance problems as well to find the commencement of error messages. When investigating a performance issue, it's recommended to only focus on the issue and distinguish between your assumptions and observations.
+
 ### Requested Troubleshooting and Information
 
 For best results when reporting an issue, please provide us with the following information. This will help our support staff and engineers best address reported problems.
