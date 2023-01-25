@@ -60,6 +60,10 @@ Click this button to alert staff, and the first person to become available will 
     5. Please don't excessively complain about the issue (when you engage with our support team), as it will delay finding a solution.
     6. Please be patient with us and answer our queries regarding the issue.
     7. When your problem gets fixed and say after 10 days the issue re-occurs, please **open the existing ticket**. It's not recommended to create a new ticket.
+    
+#### Ticket Lifecycle
+
+![lifecycle](/misc/img/ticketlifecycle.jpg)
 
 ### Phone
 
