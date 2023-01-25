@@ -151,6 +151,7 @@ nav:
 
     - Topical Guides:
         - NEW FCC Regulations on STIR/SHAKEN : guides/stir-shaken-fcc.md
+        - Capacity Planning: guides/capacity-planning.md
         - Billing:
             - Billing Guide: guides/billing-guide.md
             - Billing Basics: billing-basics.md
