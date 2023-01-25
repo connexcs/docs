@@ -295,3 +295,43 @@ It may require simulating a call, or sometimes you're required to make a real-ti
 If the resolution doesn't work, make sure the problem gets marked as unresolved and the required parties are informed about the status.
 
 Additionally, it's good practice to update the ticket status after a successful resolution.
+
+## How to Handle a Customer Complaint
+
+Handling customer complaints is an important function for any business. How well you perform this function determines how well your business will do in the long run.
+
+While one shouldn't restrict themselves to a certain framework for handling complaints, there are a few ideas and principles that are a must when managing aggravated customers. These are as follows:
+
+**Be a Patient Listener**
+
+A customer who has run into a problem or is facing some difficulty is already having a bad experience. Being too direct or being as concise as possible in terms of communication isn't recommended.
+
+Gauge the situation carefully. If the customer is infuriated and wants to express themselves, let them. Not only will this make the customer more manageable, but it will also make communication more fruitful and clear.
+
+**Try To Understand The Problem Thoroughly**
+
+As they say, a lot of details are lost in translation. Details are very important especially for SaaS, B2B and Online Businesses to resolve any reported incident.
+
+The best approach to retain all details is to ask the customers to describe the incident in detail and if possible over an email. Walk with them through the details in a step-by-step manner to ensure nothing goes unreported.
+
+**Gather As Much Information As Possible**
+
+Problem resolution can be tricky as so many variables and factors may have led to the incident occurring. To identify the actual root cause, you will need to eliminate all the other possibilities.
+
+This can be only done when you have all the required information, so gather as much information as you can. This may be logs, screenshots, reports, etc.
+
+In case the problem is more severe than initially thought, passing on this information to the technical team or developers will make their work easy.
+
+**Be Emphatic**
+
+Showing empathy towards your customers is the first step in building a good long-term relationship with them. This not only helps in customer retention but promotes brand loyalty and customer TLV.
+
+Another benefit of being empathic is that the customer is bound to be more patient with you and not push for a quick resolution. Having this understanding and a personal connection with the customer cushions any bad experience from impacting negatively.
+
+**Conduct Yourself Professionally**
+
+Your objective is to serve the customers and ensure they’re happy and well taken care of. This has to be achieved within the constraints of professionalism. Avoid apologizing too much, being overly friendly or casual and maintain polite conduct.
+
+Remember your scope of work and responsibility and never stray away from that. Don't be pushovers, set clear boundaries and don't encourage or put up with disrespectful conduct. Patience and politeness are the keys to this.
+
+We hope this was helpful for you to become better at customer relations and conflict management. If you wish to keep learning and improving in this department, consider subscribing to our newsletter!
