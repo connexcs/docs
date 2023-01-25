@@ -59,6 +59,21 @@ Common issues related to the media stream can include choppy or robotic voice, e
 
 You can create an application called **Echo Test** and provide a specific call to the Echo test. Then you can check audio quality of the call when the customer complains. You can ask the customer to dial 160 and you can get the Echo test and analyse the call.
 
+**Setting up an Echo Test:**
+
+1. Login to your account.
+2. Go to Class5 :material-right-menu: Apps and click `+`.
+3. You will see a Dialog box as shown below.
+4. Write the **Name** of your Echo test.
+5. Enter the **Destination** number for your Echo Test.
+6. Select the **PBX Server** for the call. The **Distributed (Default)** server will assign you the server near to yuor location.
+7. Click on `Save`.
+8. Click on `Go to App` which is right next to the echo test you've created. You will see a screen as shown in the figure below.
+9. Then from components drag the `echo` component and connect it with your created echo test.
+10. Click on the dot on the right-side of your created echo test (Echo Test in this case) and join it with the `echo component` on the right-side.
+11. Then use your softfone to check for the echo test.
+
+
 **RTCP Metrics** If you enable RTCP on your customer and carrier, meta data about the RTP stream (packet counters, round trip time) gets exchanged. This information is available on the logging page of the call. These graphs can help to identify the problems.
 
 **User Latency** If the UAC is connecting by SIP Auth directly to ConnexCS, it's possible to view latency graphs.
