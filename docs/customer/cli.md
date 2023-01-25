@@ -353,7 +353,7 @@ To set the "P-Asserted-ID" per customer, see [**Configure CLI**](https://docs.co
 ## CLI and PAID Responsibilities
 
 1. If the customers don't offer any CLI, you can add a CLI list but it should be validated.
-2. The customers are allowed to partly modify the format of CLIs. It should be changed to make it more complaint.
+2. The customers are allowed to partly modify the format of CLIs. It should be changed to make it more compliant.
 3. If a customer isn't complaining, you can allocate a PAID from YOUR OWN list of CLI's, which can help you trace the calls.
 4. You shouldn't delete any information but you can fix the syntax or format.
 5. You shouldn't present any invalid / false information.
