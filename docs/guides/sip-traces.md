@@ -385,3 +385,8 @@ Remove Timers will inform the destination that this customer doesn't support the
 If the Customer supports the timers but Supported: timers aren't visible.
 
 If the Customer supports the timers, but `Supported: timers` isn't visible; ConnexCS can add `Supported: timers` and the headers `Min-SE: 300`, `Session-Expires: 1800` on customer's behalf.
+
+!!! info "SIP Traces are Truth"
+    1. It's an undeniable reality, if a customer or provider reacts to a packet and we can verify in the SIP Trace that the provider did receive the packet.
+    2.Customers and providers should understand the cause of any error codes they send.
+    3. If a customer/provider sends a BYE message, their system should be investigated for the proper reason.
