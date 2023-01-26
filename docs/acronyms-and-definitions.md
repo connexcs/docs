@@ -7,8 +7,7 @@ Find below the definitions for the most relevant telephony terms, along with som
 |Term|Definition|Explanation|
 |---|---|---|
 |**ACD \ ALOC**|*Average Call Duration \ Average Length of Call*|The average length of calls. ACD can be a marker of how efficient phone systems are at solving problems instantly.|
-|**ASR**|*Answer-Seisure Ratio*|The call answer rates as a percentage (connected calls divided by total calls).|  
-|**Channel**|n/a|An ongoing live call on the system. |
+|**ASR**|*Answer-Seisure Ratio*|The call answer rates as a percentage (connected calls divided by total calls).|
 |**CLI**|*Calling Line Identification*|Identifies the caller's telephone number, which is often displayed to the call recipient in the form of Caller-ID.|
 |**CPS**|*Calls Per Second*|The volume of calls, referred to the number of calls handled per second, rather than the number of calls a system can receive.|
 |**CDR**|*Call Detail Records*|In-depth information about calls that pass through a VoIP exchange. CDRs are a source data for billing and consumer tracking.|
