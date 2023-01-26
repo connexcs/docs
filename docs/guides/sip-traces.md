@@ -388,5 +388,5 @@ If the Customer supports the timers, but `Supported: timers` isn't visible; Conn
 
 !!! info "SIP Traces are Truth"
     1. It's an undeniable reality, if a customer or provider reacts to a packet and we can verify in the SIP Trace that the provider did receive the packet.
-    2.Customers and providers should understand the cause of any error codes they send.
+    2. Customers and providers should understand the cause of any error codes they send.
     3. If a customer/provider sends a BYE message, their system should be investigated for the proper reason.
