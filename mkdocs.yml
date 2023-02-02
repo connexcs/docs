@@ -182,6 +182,8 @@ nav:
         - Status Page (for Customer Portals): system-status.md
         - OSI Model: guides/osi-model.md
         - Major Telecom Regulatory Authorities: guides/major-telecom-regulatory-authorities.md
+        - General Data Protection Regulation: guides/gdpr.md
+        - Call Detail Record Retention- guides/cdr-retention.md
     
     - Troubleshooting: 
         - Call Connection/Signaling Issues: guides/tshoot-signal.md
