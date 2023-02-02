@@ -44,22 +44,13 @@ For example,
 
    A call with a duration of 1 second 500 milliseconds will get rounded up to the nearest whole second. The call duration will get recorded as 2 seconds.
 
-| S.No | Seconds | Full-Down | Full-Up |
-|------|---------|-----------|---------|
-| 1.   | 60.0    | 60        | 60      |
-| 2.   | 60.1    | 60        | 61      |
-| 3.   | 60.4    | 60        | 61      |
-| 4.   | 60.5    | 60        | 61      |
-| 5.   | 60.9    | 61        | 61      |
-
-| S.No | Seconds | Half-Down | Half-Up |
-|------|---------|-----------|---------|
-| 1.   | 60.0    | 60        | 60      |
-| 2.   | 60.11   | 60        | 60      |
-| 3.   | 60.44   | 60        | 60      |
-| 4.   | 60.56   | 61        | 61      |
-| 5.   | 60.9    | 61        | 61      |
-
+| S.No | Seconds | Full-Down | Full-Up | Half-Up | Half-Down |
+|------|---------|-----------|---------|---------|-----------|
+| 1.   | 60.0    | 60        | 60      | 60      | 60        |
+| 2.   | 60.1    | 60        | 61      | 60      | 60        |
+| 3.   | 60.4    | 60        | 61      | 60      | 60        |
+| 4.   | 60.5    | 60        | 61      | 61      | 60        |
+| 5.   | 60.6    | 60        | 61      | 61      | 61        |
 
 2. **Billing Rounding and Precision**
 
