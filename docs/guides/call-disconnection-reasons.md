@@ -96,7 +96,6 @@ Disconnection due to inactive data transmission is a **timeout**.
 For instance, if a modem connects to the Internet but has been inactive for too long, a timeout may occur.
 
 **User Datagram Protocol (UDP)** connections keep breaking due to UDP timeout. UDP timeout means the maximum duration of a UDP connection. For timeout protection in UDP, you can either increase the UDP Timeout value or increase the Maximum UDP Connection.
-For timeout protection in UDP you can either increase the UDP Timeout value or increase Maximum UDP Connection.
 
 Alternately, **Transmission Control Protocol (TCP)** Keep-alive Packets determine if the connection is still valid, and abort it if needed. Most hosts that support TCP also support TCP Keep-alive.
 Each host (or peer) periodically sends a TCP packet to its peer, which solicits a response.
