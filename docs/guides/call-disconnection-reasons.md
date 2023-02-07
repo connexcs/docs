@@ -2,7 +2,7 @@
 
 ## Main Reasons for Call Disconnection
 
-1.**Downstream BYE:** When the call disconnects from the **originator's** side via a **BYE** message.
+1. **Downstream BYE:** When the call disconnects from the **originator's** side via a **BYE** message.
 
 ```mermaid
     sequenceDiagram
@@ -13,7 +13,7 @@
     ConnexCS->>Downstream: 200 OK
 ```
 
-2.**Upstream BYE:** When the call disconnects from the **receiver** side via a **BYE** message.
+2. **Upstream BYE:** When the call disconnects from the **receiver** side via a **BYE** message.
 
 ```mermaid
     sequenceDiagram
@@ -26,11 +26,11 @@
     ConnexCS->>Upstream: 200 OK
 ```
 
-3.**MI Termination:** The system ends the call when it finds that there has been no audio connection between the call's originator and the receiver. It also happens when the Dialog gets closed via the Control Panel / Customer Portal / Media Timeout.
+3. **MI Termination:** The system ends the call when it finds that there has been no audio connection between the call's originator and the receiver. It also happens when the Dialog gets closed via the Control Panel / Customer Portal / Media Timeout.
 
      The system triggers a BYE message on both sides of the application.
 
-4.**Ping Timeout:** If you enable the Sip Ping feature under Customer:material-menu-right: Routing, the receiver, and the originator receive OPTION packets (every X seconds).
+4. **Ping Timeout:** If you enable the Sip Ping feature under Customer:material-menu-right: Routing, the receiver, and the originator receive OPTION packets (every X seconds).
      The originator and the receiver should reply with 200 OK after receiving the OPTION packets. If either the originator or receiver misses sending the acknowledgment, the call ends due to a "ping timeout."
      It prevents any long-duration calls as the system recognizes either the originator or receiver as inactive.
 
@@ -65,21 +65,21 @@ In this case, when we send the OPTION packet to Charlie, he doesn't reply. The O
 
 Another scenario is when ConnexCS sends message to Charlie and Charlie is active on the call, he will send a BYE message to Alice and we won't see a reply to that.
 
-5.**Missing ACK:** If a call gets disconnected within 5 seconds, it's because an Acknowledgement wasn't received.
+5. **Missing ACK:** If a call gets disconnected within 5 seconds, it's because an Acknowledgement wasn't received.
 
     According to the [**RFC3261**](https://www.ietf.org/rfc/rfc3261.txt), any SIP device not receiving the ACK to its final 2xx reply has to disconnect the call by issuing a standard BYE request.
 
-6.**Missing SIP Ping:** If a call gets disconnected within 20-30 seconds, it's because of a missing SIP Ping.
+6. **Missing SIP Ping:** If a call gets disconnected within 20-30 seconds, it's because of a missing SIP Ping.
 
-7.**Missing Re-Invite:** If a call gets disconnected within 5 minutes, it's because of a missing Re-Invite message.
-8.**Lifetime Timeout:** The reasons for a lifetime timeout can be due to:
+7. **Missing Re-Invite:** If a call gets disconnected within 5 minutes, it's because of a missing Re-Invite message.
+8. **Lifetime Timeout:** The reasons for a lifetime timeout can be due to:
    + **Max Call Duration**
    + **Missing ACK** or other specific missing in call packets
    + We received a BYE message when the call is still ringing
 
-9.**Re-INVITE Ping Timeout (Upstream / Downstream):** It happens since the Dialog ended because there was no reply to re-invite pings.
+9. **Re-INVITE Ping Timeout (Upstream / Downstream):** It happens since the Dialog ended because there was no reply to re-invite pings.
 
-10.**SIP Race Condition:** A SIP race condition is a situation that occurs when two or more processes try to access and change a shared resource together. This results in unexpected behavior.
+10. **SIP Race Condition:** A SIP race condition is a situation that occurs when two or more processes try to access and change a shared resource together. This results in unexpected behavior.
 
     A race condition can occur in SIP if several messages get transmitted and received together. Also, their order of processing isn't well-defined. This can lead to inconsistencies in the state of the SIP system, as different messages may have conflicting effects on the system.
 
