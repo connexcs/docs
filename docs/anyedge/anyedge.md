@@ -59,10 +59,6 @@ It can provide added Transport Layer Security (TLS) configuration for SIP protec
 
 Click :material-plus: button to specify the Destination IP, and one or more Limit (Primary) and Backup (Secondary) Zones.
 
-> **Note**
-> 
-> We are happy to announce that AnyEdge Media is now in the Beta version.
-
 ## Capabilities
 
 The ConnexCS **AnyEdge** load balancer is a high-performance application designed for maximum throughput using several cores.
