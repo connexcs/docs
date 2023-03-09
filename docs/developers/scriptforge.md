@@ -192,6 +192,7 @@ Currently available for Alert & DID
 ## Manipulating headers from ScriptForge
 
 ```
+
 function main(data) {
 
 // Delete headers for ALL destinations
