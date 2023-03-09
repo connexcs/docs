@@ -39,7 +39,6 @@ Select the destination to deliver incoming calls for the DID:
 + **Internal**: Send internally to an extension, a Class5 feature, or even to another customer.
 + **Circuit Test**: *in progress*.
 
-
 ### Capacity Limits
 
 Set the maximum number of INBOUND concurrent calls in **Channels**, and Calls Per Second (CPS) in **Flow Speed**.
@@ -59,7 +58,6 @@ For more details on these fields, see [**Media in Customer Routing**](https://do
     :material-menu-right: `Direct RTP (no proxy)`- Bypass ConnexCS, so media flows directly between the customer and carrier.
 
     :material-menu-right: `Zone (recommended)`- Select any of the regional servers.
-
 
 + **Call Recording**: Select the % of calls to record for this customer:
     + Disabled- never record calls
@@ -109,7 +107,7 @@ You can perform this for an individual Customer (**Management :material-menu-rig
 
 4. To map the columns, follow the listed steps:
     4.1 Mapping is initiated by right-clicking the second row and selecting the "Set Start Row" option from the menu. You will see the first row highlighted in Blue.
-    4.2 After that, click on each column separately, choose the 'Map column' option, and select the options from the drop-down list to map that column..
+    4.2 After that, click on each column, choose the 'Map column' option, and select the options from the drop-down list to map that column..
 
 !!! tip "Tips for creating the CSV file"
     Steps taken to ensure that you can perform the next steps effortlessly:
@@ -154,3 +152,16 @@ You can perform this for an individual Customer (**Management :material-menu-rig
 
 See [**Script Forge**](https://docs.connexcs.com/developers/scriptforge/) for more information.
 
+## Range Holders
+
+Following are the steps to configure the Range Holder cards.
+
+1. We create a new **Carrier** which is basically a **Range Holder**. This is a pseudo-carrier. This carrier (Range Holder) isn't going to send any calls and we need not provide it with any **Authentication**.
+2. Next, we build a **Provider Rate Card** for the Range Holder.
+3. Under the **Provider Rate Card** we have **Tier 1 Interconnect** and **Tier 2 Interconnect** for different providers.
+4. Then you go to the **Carrier** click on **Edit** and then click on **Range Holder** and select **Provider Rate Card** and click on `Save`. This gives them access to the whole range of numbers.
+5. Then go to **Management :material-menu-right: Global :material-menu-right: DID**.
+6. Select the number.
+7. In **Basic** select your **Customer**.
+8. From the **Provider** drop-down select **None/Range Holder** and the **Provider Rate card** disappears.
+9. Click on `Save` and you can see the updated card.
