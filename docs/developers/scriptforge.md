@@ -191,32 +191,29 @@ Currently available for Alert & DID
 
 ## Manipulating headers from ScriptForge
 
- function main(data) {
-	
-	// Delete headers for ALL destinations
+```
+function main(data) {
+
+// Delete headers for ALL destinations
 	data.remove_headers = [
 		{key: 'X-Customer-ID'}
-	];
-		 
-	// Delete headers for first destination
+	]; 
+// Delete headers for first destination
 	data.egress_routing[0].remove_headers = [
 		{key: 'X-Customer-ID'}
 	];
-
-	// Add Headers for ALL Destinations
+// Add Headers for ALL Destinations
 	data.headers = [
 		{key: 'X-Customer-ID', value: '1234'}
 	];
-		 
-	// Add Headers for first destination
+// Add Headers for first destination
 	data.egress_routing[0].headers = [
 		{key: 'X-Customer-ID', value: 1234}
 	];
-	
-	// If you want to replace a header, you must remove it, then add it.
-		 
+// If you want to replace a header, you must remove it, then add it.
 	return data;
-}`
+}
+```
 
 [s2]: /developers/img/176.png "s2"
 [s8]: /developers/img/183.png "s8"
