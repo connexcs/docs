@@ -193,6 +193,8 @@ Currently available for Alert & DID
 
 This feature helps you manipulate or remove headers.
 
+Below are some examples for removing headers for all or specific destinations.
+
 ```
 
 function main(data) {
