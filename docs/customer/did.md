@@ -156,12 +156,12 @@ See [**Script Forge**](https://docs.connexcs.com/developers/scriptforge/) for mo
 
 Following are the steps to configure the Range Ho9lder cards.
 
-1. We create a new **Carrier** which is basically a **Range Holder**. This is a pseudo-carrier. This carrier (Range Holder) isn't going to send any calls and we need not provide it with any **Authentication**.![RH1]/customer/img/RH1.jpg)
+1. We create a new **Carrier** which is basically a **Range Holder**. This is a pseudo-carrier. This carrier (Range Holder) isn't going to send any calls and we need not provide it with any **Authentication**.![RH1](/customer/img/RH1.jpg)
 2. Next, we build a **Provider Rate Card** for the Range Holder.
 3. Under the **Provider Rate Card** we have **Tier 1 Interconnect** and **Tier 2 Interconnect** for different providers.
-4. Then you go to the **Carrier** click on **Edit** and then click on **Range Holder** and select **Provider Rate Card** and click on `Save`. This gives them access to the whole range of numbers.![RH2]/customer/img/RH2.jpg)![RH3]/customer/img/RH3.jpg)
+4. Then you go to the **Carrier** click on **Edit** and then click on **Range Holder** and select **Provider Rate Card** and click on `Save`. This gives them access to the whole range of numbers.![RH2](/customer/img/RH2.jpg)![RH3](/customer/img/RH3.jpg)
 5. Then go to **Management :material-menu-right: Global :material-menu-right: DID**.
 6. Select the number.
 7. In **Basic** select your **Customer**.
 8. From the **Provider** drop-down select **None/Range Holder** and the **Provider Rate card** disappears.
-9. Click on `Save` and you can see the updated card.![RH4]/customer/img/RH4.jpg)
+9. Click on `Save` and you can see the updated card.![RH4](/customer/img/RH4.jpg)
