@@ -192,11 +192,12 @@ Currently available for Alert & DID
 ## Manipulating headers from ScriptForge
 
 function main(data) {
-
+	
 	// Delete headers for ALL destinations
 	data.remove_headers = [
 		{key: 'X-Customer-ID'}
 	];
+		 
 	// Delete headers for first destination
 	data.egress_routing[0].remove_headers = [
 		{key: 'X-Customer-ID'}
@@ -206,11 +207,14 @@ function main(data) {
 	data.headers = [
 		{key: 'X-Customer-ID', value: '1234'}
 	];
+		 
 	// Add Headers for first destination
 	data.egress_routing[0].headers = [
 		{key: 'X-Customer-ID', value: 1234}
 	];
+	
 	// If you want to replace a header, you must remove it, then add it.
+		 
 	return data;
 }
 
