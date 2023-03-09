@@ -191,6 +191,8 @@ Currently available for Alert & DID
 
 ## Manipulating headers from ScriptForge
 
+This feature helps you manipulate or remove headers.
+
 ```
 
 function main(data) {
