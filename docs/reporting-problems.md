@@ -46,10 +46,15 @@ Click this button to alert staff, and the first person to become available will 
 1. Email the issue to support@connexcs.com
 2. Compose a subject that's descriptive and accurately summarises the issue.
 3. Include crucial data regarding the issue, such as:
+
     3.1. When the issue first commenced
-    3.2. Measures taken by to fix or isolate the problem
+
+    3.2. Measures taken by you to fix or isolate the problem
+
     3.3. Any other pertinent information
+
 4. Please distinguish between your assumptions and actual observations.
+
 5. Please provide us with single or multiple calls if you were successful in isolating the issue
 
 !!! note "Follow the guidelines below and help us serve you better"
