@@ -191,7 +191,7 @@ Currently available for Alert & DID
 
 ## Manipulating headers from ScriptForge
 
-function main(data) {
+`function main(data) {
 	
 	// Delete headers for ALL destinations
 	data.remove_headers = [
@@ -216,7 +216,7 @@ function main(data) {
 	// If you want to replace a header, you must remove it, then add it.
 		 
 	return data;
-}
+}`
 
 [s2]: /developers/img/176.png "s2"
 [s8]: /developers/img/183.png "s8"
