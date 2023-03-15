@@ -74,9 +74,9 @@ Following are the steps to enable the DNO list.
 4. You should enable the **FTC DNC Report ANI Block (USA)** option. This blocks the calls which have been reported as originating invalid numbers.
 5. Click on `Save`.
 
-### How to implement US DNO requirements in ConnexCS
+### US DNO Requirements in ConnexCS
 
-As per [Federal Register Vol. 87, No. 222](https://www.govinfo.gov/content/pkg/FR-2022-11-18/pdf/2022-25148.pdf?utm_medium=email&utm_campaign=subscription+mailing+list&utm_source=federalregister.gov), DNO list should contain the following.
+According to [Federal Register Vol. 87, No. 222](https://www.govinfo.gov/content/pkg/FR-2022-11-18/pdf/2022-25148.pdf?utm_medium=email&utm_campaign=subscription+mailing+list&utm_source=federalregister.gov), DNO list should contain the following.
 
 1. Known DNO numbers
 2. Non-allocated ranges
