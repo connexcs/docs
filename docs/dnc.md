@@ -73,6 +73,7 @@ Following are the steps to enable the DNO list.
 3. The DNO does two things when its enabled. First, it blocks the DNO numbers from the Federal Government and second, it blocks the numbers we know which don't exist.
 4. You should enable the **FTC DNC Report ANI Block (USA)** option. This blocks the calls which have been reported as originating invalid numbers.
 5. Click on `Save`.
+![dno](/guides/img/dno.jpg)
 
 ### US DNO Requirements in ConnexCS
 
