@@ -351,15 +351,15 @@ Making a video is the best way to get the issue resolved, including the User Int
 
 2. Record Your Screen:
 
-   2.1. Launch the recording app of your choice. The majority of programs and windows allow you to begin recording, although the Windows desktop, File Explorer, and several other Windows apps don't.
+    2.1 Launch the recording app of your choice. The majority of programs and windows allow you to begin recording, although the Windows desktop, File Explorer, and several other Windows apps don't.
 
-   2.2. To snap a quick screenshot, click the camera icon, or press the Start Recording button to record your screen activity.
+    2.2 To snap a quick screenshot, click the camera icon, or press the Start Recording button to record your screen activity.
 
-   2.3 Click the Recording button on the floating bar to halt the recording. You receive a notice letting you know the video got recorded. When you click the notice, your video appears in a new window.
+    2.3 Click the Recording button on the floating bar to halt the recording. You receive a notice letting you know the video got recorded. When you click the notice, your video appears in a new window.
 
-   2.4 To watch the video, use the Play button.
+    2.4 To watch the video, use the Play button.
 
-   2.5 Your video's location in File Explorer, which is by default C:Users[username]\Videos\Captures. You may always change the location of where video captures get saved if you don't like the default setting.
+    2.5 Your video's location in File Explorer, which is by default C:Users[username]\Videos\Captures. You may always change the location of where video captures get saved if you don't like the default setting.
 
 3. Enable Background Recording.
 
