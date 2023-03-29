@@ -65,7 +65,7 @@ Click this button to alert staff, and the first person to become available will 
     5. Please don't excessively complain about the issue (when you engage with our support team), as it will delay finding a solution.
     6. Please be patient with us and answer our queries regarding the issue.
     7. When your problem gets fixed and say after 10 days the issue re-occurs, please **open the existing ticket**. It's not recommended to create a new ticket.
-    
+
 #### Ticket Lifecycle
 
 ![lifecycle](/misc/img/ticketlifecycle.jpg)
@@ -105,7 +105,7 @@ We encourage feedback but also want to make sure you have the most efficient mea
 
 Customers are bound to face some difficulties and problems throughout their tenure with you. Not all problems are the same and require different levels of attention and assistance.
 
-Resolving problems at the earliest is a necessity when it comes to maximizing positive customer experience. To achieve this it is necessary to categorize and prioritize problems based on their severity and impact.
+Resolving problems at the earliest is a necessity when it comes to maximizing positive customer experience. To achieve this it's necessary to categorize and prioritize problems based on their severity and impact.
 
 For this, a proper framework is needed. This framework is known as a problem escalation matrix.
 
@@ -117,9 +117,9 @@ With that said, we can now define the framework of an ideal customer support fun
 
 A 1st Line Support Executive functions as the primary point of contact between your customer support team and the customer. They should have a good understanding of how everything works and how to troubleshoot the most common problems.
 
-The primary responsibility of the 1st Line Support Executive is to assist customers in troubleshooting common problems that are easy to fix. They are supposed to collect all available information from the customer and maintain a record of it.
+The primary responsibility of the 1st Line Support Executive is to assist customers in troubleshooting common problems that are easy to fix. They're supposed to collect all available information from the customer and maintain a record of it.
 
-In case a problem is not a common occurrence and outside the scope of the expertise of a 1st Line Support Executive, they’re supposed to escalate the problem and pass it on to the 2nd Line Support Executive.
+In case a problem isn't a common occurrence and outside the scope of the expertise of a 1st Line Support Executive, they’re supposed to escalate the problem and pass it on to the 2nd Line Support Executive.
 
 **2nd Line Support Executive**
 
@@ -129,7 +129,7 @@ The primary responsibility of the 2nd Line Support Executive is to assess the in
 
 2nd Line Support Executives handle problems that may arise due to misconfiguration, improper setup, mismanaged advanced settings, etc.
 
-A very small number of problems fall out of the scope of the 2nd Line Support Executive’s expertise. In such circumstances, the problem is further escalated to the Senior Support Executive.
+A small number of problems fall out of the scope of the 2nd Line Support Executive’s expertise. In such circumstances, the problem is further escalated to the Senior Support Executive.
 
 **Senior Support Executive**
 
@@ -161,7 +161,7 @@ In case the problem is still now resolved or is identified as a critical issue, 
 
 Our 2nd Line Experts are senior network engineers that are responsible for monitoring and ensuring the ConnexCS platform works as intended.
 
-They are not only more experienced but actively contributing to the improvements in the platform. Thus, they have the necessary access and expertise to troubleshoot complex technical issues that are fairly uncommon.
+They're not only more experienced but actively contributing to the improvements in the platform. Thus, they have the necessary access and expertise to troubleshoot complex technical issues that are fairly uncommon.
 
 Most of the operational problems will be easily resolved at this level.
 
@@ -177,7 +177,7 @@ Our 3rd Line Senior Developers also entertain requests for particular features, 
 
 ### NOC-as-a-Service
 
-Hiring a NOC Engineer and having them trained to operate our platform may be a time and cost-intensive undertaking. We have a solution to this!
+Hiring a NOC Engineer and having them trained to operate our platform may be a time and cost-intensive undertaking. We've a solution to this!
 
 Any of our customers can request a ConnexCS-certified expert NOC Engineer. The NOC Engineer will be trained and managed by us.
 
@@ -349,12 +349,18 @@ Making a video is the best way to get the issue resolved, including the User Int
 
 1. Enable Screen Recording
 2. Record Your Screen:
+
    2.1. Launch the recording app of your choice. The majority of programs and windows allow you to begin recording, although the Windows desktop, File Explorer, and several other Windows apps don't.
+
    2.2. To snap a quick screenshot, click the camera icon, or press the Start Recording button to record your screen activity.
+
    2.3 Click the Recording button on the floating bar to halt the recording. You receive a notice letting you know the video got recorded. When you click the notice, your video appears in a new window.
+
    2.4 To watch the video, use the Play button.
+
    2.5 Your video's location in File Explorer, which is by default C:Users[username]\Videos\Captures. You may always change the location of where video captures get saved if you don't like the default setting.
-3. Enable Background Recording
+
+3. Enable Background Recording.
 
 ## ConnexCS Internal Steps for Problem Resolution
 
@@ -399,7 +405,7 @@ Gauge the situation carefully. If the customer is infuriated and wants to expres
 
 **Try To Understand The Problem Thoroughly**
 
-As they say, a lot of details are lost in translation. Details are very important especially for SaaS, B2B and Online Businesses to resolve any reported incident.
+As they say, a lot of details are lost in translation. Details are important especially for SaaS, B2B and Online Businesses to resolve any reported incident.
 
 The best approach to retain all details is to ask the customers to describe the incident in detail and if possible over an email. Walk with them through the details in a step-by-step manner to ensure nothing goes unreported.
 
