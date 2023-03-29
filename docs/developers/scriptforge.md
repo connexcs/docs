@@ -43,7 +43,6 @@ You can find sample scripts in our GitHub repository > [**example applications**
 
 ## Coding Basics
 
-
 Scripts and Apps typically start in the `main()` function and expect to return a promise. The first parameter is typically an object called `data`.
 
 ### Throwing Errors (Class 4)
@@ -91,7 +90,6 @@ function main (data = {}, ctx) {
 
 !!! warning "Potential Sync Issues"
     To avoid the system losing synchronisation with your script and the connection crashing, execute ALL async functions with `await`.
-
 	If it isn't implemented correctly, it affects thatbilling and call stability.
 
 ### Form Submission
@@ -140,7 +138,6 @@ module.export = {
    * `Driver`- A driver works as an intermediary between ConnexCS and any external system. You can write drivers to bridge the ConnexCS DID provisioning system to a provider of your choice or build more complicated alerts.
   
 4. Click **`Save`**.
-
 
     * `Script`- This is the fastest way to execute custom code and is "synchronous" execution.
 	    This is mainly used for manipulations or calculations.
@@ -191,6 +188,37 @@ Management :material-menu-right: Customer :material-menu-right: [Your Customer] 
 
 **Drivers - (App only)**:
 Currently available for Alert & DID
+
+## Manipulating headers from ScriptForge
+
+This feature helps you manipulate or remove headers.
+
+Below are some examples for removing headers for all or specific destinations.
+
+```
+
+function main(data) {
+
+// Delete headers for ALL destinations
+	data.remove_headers = [
+		{key: 'X-Customer-ID'}
+	]; 
+// Delete headers for first destination
+	data.egress_routing[0].remove_headers = [
+		{key: 'X-Customer-ID'}
+	];
+// Add Headers for ALL Destinations
+	data.headers = [
+		{key: 'X-Customer-ID', value: '1234'}
+	];
+// Add Headers for first destination
+	data.egress_routing[0].headers = [
+		{key: 'X-Customer-ID', value: 1234}
+	];
+// If you want to replace a header, you must remove it, then add it.
+	return data;
+}
+```
 
 [s2]: /developers/img/176.png "s2"
 [s8]: /developers/img/183.png "s8"
