@@ -348,6 +348,7 @@ Making a video is the best way to get the issue resolved, including the User Int
 **Instructions for recording a video in Windows**
 
 1. Enable Screen Recording
+
 2. Record Your Screen:
 
    2.1. Launch the recording app of your choice. The majority of programs and windows allow you to begin recording, although the Windows desktop, File Explorer, and several other Windows apps don't.
