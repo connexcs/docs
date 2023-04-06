@@ -123,6 +123,7 @@ nav:
             - Contracts: setup/config/contracts.md
             - Packages: setup/config/packages.md
             - Templates: setup/config/templates.md
+            - SIP Profile: setup/config/sip-profile.md
         - Advanced:
             - Language: setup/advanced/language.md
             - Firewall: setup/advanced/firewall.md
