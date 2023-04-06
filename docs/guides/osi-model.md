@@ -90,7 +90,7 @@ Moving a data center can alter network-related latency. The geographic separatio
 
 Here is an example showing a link between network latency and application latency.
 
-![net latency](/guides/img/netlatency.jpg)
+![netlatency](/guides/img/netlatency.jpg)
 
 150 transactions would expire for a local user with a 1-ms network latency between the client and the server in 0.15s.
 

@@ -70,8 +70,7 @@ Another scenario is when ConnexCS sends message to Charlie and Charlie is active
     According to the [**RFC3261**](https://www.ietf.org/rfc/rfc3261.txt), any SIP device not receiving the ACK to its final 2xx reply has to disconnect the call by issuing a standard BYE request.
 
 6. **Missing SIP Ping:** If a call gets disconnected within 20-30 seconds, it's because of a missing SIP Ping.
-
-7. **Missing Re-Invite:** If a call gets disconnected within 5 minutes, it's because of a missing Re-Invite message.
+7. **Missing Re-Invite:** If a call gets disconnected within 5 minutes, it's because of a missing Re-Invite message
 8. **Lifetime Timeout:** The reasons for a lifetime timeout can be due to:
    + **Max Call Duration**
    + **Missing ACK** or other specific missing in call packets
@@ -96,7 +95,6 @@ Disconnection due to inactive data transmission is a **timeout**.
 For instance, if a modem connects to the Internet but has been inactive for too long, a timeout may occur.
 
 **User Datagram Protocol (UDP)** connections keep breaking due to UDP timeout. UDP timeout means the maximum duration of a UDP connection. For timeout protection in UDP, you can either increase the UDP Timeout value or increase the Maximum UDP Connection.
-For timeout protection in UDP you can either increase the UDP Timeout value or increase Maximum UDP Connection.
 
 Alternately, **Transmission Control Protocol (TCP)** Keep-alive Packets determine if the connection is still valid, and abort it if needed. Most hosts that support TCP also support TCP Keep-alive.
 Each host (or peer) periodically sends a TCP packet to its peer, which solicits a response.
