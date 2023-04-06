@@ -6,7 +6,7 @@ Find below the definitions for the most relevant telephony terms, along with som
 
 |Term|Definition|Explanation|
 |---|---|---|
-|**ACD \ ALOC**|*Average Call Duration \ Average Length of Call*|The average length of calls. ACD can be a marker of how efficient phone systems are at solving problems instantly.|
+|**ACD \ ALOC**|*Average Call Duration \ Average Length of Call*|The average length of calls. Average Call Duration or otherwise called Average Length of Call is a retrospective calculation of how long calls last, that is the mean average. Typically only connected calls are included in this calculation, so it is simply the total time that all of the calls were connected divided by the total number of connected calls.|
 |**ASR**|*Answer-Seisure Ratio*|The call answer rates as a percentage (connected calls divided by total calls).|  
 |**Channel**|n/a|An ongoing live call on the system. |
 |**CLI**|*Calling Line Identification*|Identifies the caller's telephone number, which is often displayed to the call recipient in the form of Caller-ID.|
