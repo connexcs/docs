@@ -208,7 +208,7 @@ If you have a pool of several servers, you can proxy your communications via **A
 
 The UAS is pinging the AnyEdge Loadbalancer and further, the Loadbalancer passes the pings to the Opensips Servers. Further, the Opensips Servers reply to the Laodbalancer, and then the ping gets to the UAS. In case, any of the SIP servers are slow, it slows down the AnyEdge Loadbalancer as well. Thus, introducing Latency in the system.
 
-![any3](/anyedge/any3.jpg))
+![any3](/anyedge/any3.jpg)
 
 Therefore, the AnyEdge SIP Ping Replies feature will help fix this issue. This feature will allow the AnyEdge Loadbalancer to reply to the UAS ping messages without passing them to the Opensips Server. This feature will fix the latency issue, and the application latency will be closer match to what we expect.
 
