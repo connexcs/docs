@@ -216,6 +216,6 @@ According to RFC 3261, there is a proper header Timestamp available. We include 
 
 ### How to Enable AnyEdge SIP Ping Replies
 
-1. Go to Setup :material-menu-right: AnyEdge and click on the `Edit` button.![anyedge1](/anyedge/anyedge1.jpg)
-2. You will a window, select the **AnyEdge SIP Ping Replies** from the dropdown in **Flags** to enable this feature.![anyedge2](/anyedge/anyedge2.jpg)
+1. Go to Setup :material-menu-right: AnyEdge and click on the `Edit` button.![any1](/anyedge/any1.jpg)
+2. You will a window, select the **AnyEdge SIP Ping Replies** from the dropdown in **Flags** to enable this feature.![any2](/anyedge/any2.jpg)
 3. Click on `Save`.
