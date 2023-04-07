@@ -24,7 +24,7 @@ The **File** section can store a variety of files, including (but not limited to
 
 ## Specific file type functions
 
-* **Text to Speech:** Under Audio files, select ![alt text][texttospeech]. Enter the text, select the voice, and define the file name. To preview the audio, select **`Play Voice`**. When the audio is ready, click **`Save`**.
+* **Text to Speech:** Under Audio files, select ![alt text][texttospeech]. Enter the text, select the voice, and define the file name. To preview the audio, select **`Play Voice`**. When the audio is ready, click **`Save`**. In addition, we also support [SSML](https://cloud.google.com/text-to-speech/docs/ssml) for our TTS.
 * **Download:** Use **`Download`** to download a file you've selected.
 
 ## Remove files
