@@ -212,7 +212,8 @@ The action to run is dependent on the following configurations. Each of these co
 
 #### Dynamic Button API - Button Builder
 
-```
+```bash
+
  * API ENDPOINTS
  * =============
  * Get /api/softphone/button/button_id
@@ -250,6 +251,7 @@ The action to run is dependent on the following configurations. Each of these co
 	"sort_order": 50
 }
 ```
+
 ### Script-Forge Response
 
 Below is the Actions Namespace that describes how actions should run. It can be used to initiate an action or respond to one. This object follows the same rules whether returned by a button or a form.
@@ -259,7 +261,8 @@ Below is the Actions Namespace that describes how actions should run. It can be 
 
 #### ScriptForge API Response - Actions Namespace
 
-```
+```bash
+
  * API ENDPOINTS
  * =============
  * POST /api/softphone/button/button_id
