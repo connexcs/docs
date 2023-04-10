@@ -37,6 +37,8 @@ Click the :material-plus: button.
 
     For example, Retail value is to 50, but customer only spends 25, an extra charge of 25 applies for that billing cycle.
 
++ **Minimum Duration**: When you choose a package with the minimum duration, it means you won't be able to delete the package for the duration you have entered in the field.
+
 Click **`Save`** to make the Package available to assign to customer accounts.
 
 ## Assign Package
