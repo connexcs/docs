@@ -4,7 +4,7 @@
 
 ## Introduction
 
-In simple terms, you can think of SI Profile as a way to group a lot of users together. These users will have common features and services to use when they log in with the SIP Profile.
+In simple terms, you can think of SIP Profile as a way to group a lot of users together. These users will have common features and services to use when they log in with the SIP Profile.
 
 For example, there is a call center with 100 agents and an operator too. The operator might need some extra features than the agents. The feature might include listening to the calls or dialling certain numbers with the agents who aren't allowed to. Thus, the operator might want to have a different SIP Profile.
 
