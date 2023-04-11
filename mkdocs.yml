@@ -133,6 +133,7 @@ nav:
             - Prefix Set: setup/advanced/prefix-set.md
             - Reseller Account: setup/advanced/reseller.md
             - Fraud Profile: setup/advanced/fraud.md
+            - RTP Block: setup/advanced/rtp-block.md
         - Integrations:
             - API: setup/integrations/api.md
             - Portal: setup/integrations/portal.md
