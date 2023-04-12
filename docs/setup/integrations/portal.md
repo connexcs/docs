@@ -127,7 +127,7 @@ Each domain can have different price points, support levels, features, etc.
 
 **Steps to create a new Domain**:
 
-1. Go to **Setup :material-menu-right: Integrations :material-menu-right: Portal**.
+1. Go to **Setup :material-menu-right: Integrations :material-menu-right: Portal**. ![smtp2](/setup/img/smtp2.jpg)
 
 2. Click on `+` button and click on the **SMTP** tab.
 
@@ -148,6 +148,7 @@ Each domain can have different price points, support levels, features, etc.
 3. Click on **`Edit`.**
 4. Click on **`Config`** and in the **Domain** field you can select the domain from the dropdown menu.
 5. Click on `Save` and the customer will be associated with that particular Domain/ Brand.
+![smtp1](/setup/img/smtp1.jpg)
 
 !!! Note
     1. Multiple customers can be associated with one domain.
