@@ -4,6 +4,8 @@
 
 Use **Group** or **Call Queue** to construct a team of individuals to receive calls placed to a specified number or extension based on the routing strategy you configure.
 
+A **Group** in our system mapped to a **Queue** is exactly same as the FIFO (First In First Out).
+
 For example, create a number that customers can call that routes them to a team of Technical Support Specialists who can fix the technical issues with their laptops.
 
 For individual customers, navigate to **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Class5 :material-menu-right: Groups**
