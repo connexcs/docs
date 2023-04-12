@@ -38,12 +38,12 @@ It utilizes the first-in, first-out (FIFO) queuing system. The mod_fifo makes ma
 
     2.9 **Tier Rule Wait Second**: It's defined as the time (in seconds) the caller has to wait before moving to a new tier. It can be used with options:
 
-        2.9.1 **Tier Rule Wait Multiply Level**: It can be selected as either **True** or **False**. If you choose **True**, then the tier level will be multiplied by the Tier Rule Wait Second and the caller also has to wait on every tier Tier Rule Wait Second before moving to the next tier. If you choose **False**, then after the Tier Rule wait second (time) has passed, all the tiers are open to calls in the order of their level or position.
+    2.9.1 **Tier Rule Wait Multiply Level**: It can be selected as either **True** or **False**. If you choose **True**, then the tier level will be multiplied by the Tier Rule Wait Second and the caller also has to wait on every tier Tier Rule Wait Second before moving to the next tier. If you choose **False**, then after the Tier Rule wait second (time) has passed, all the tiers are open to calls in the order of their level or position.
 
-        2.9.2 **Tier Rule no Agent no Wait**: You can choose from **True** or **False**. If you choose **True**, callers will skip tiers that don't have agents available. If you select **False**, they're required to wait before moving to the next tier. Agents must be logged off to be considered unavailable.
+    2.9.2 **Tier Rule no Agent no Wait**: You can choose from **True** or **False**. If you choose **True**, callers will skip tiers that don't have agents available. If you select **False**, they're required to wait before moving to the next tier. Agents must be logged off to be considered unavailable.
 
     2.10 **Discard Abandoned After**: If you choose this option it will remove the abandoned member from the queue after the prescribed time (in seconds). This can be used with the following option:
 
-        2.10.1 **Abandoned Resume Allowed**: You can choose it to be either **True** or **False**. If you choose **True**, a caller who has abandoned the queue can re-enter and resume their previous position in that queue. To maintain their position in the queue, the member shouldn't have been abandoned for longer than the number of seconds defined in Discard Abandoned After.
+    2.10.1 **Abandoned Resume Allowed**: You can choose it to be either **True** or **False**. If you choose **True**, a caller who has abandoned the queue can re-enter and resume their previous position in that queue. To maintain their position in the queue, the member shouldn't have been abandoned for longer than the number of seconds defined in Discard Abandoned After.
 
 3. Click on Save to complete the Call Center configuration.
