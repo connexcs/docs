@@ -17,7 +17,7 @@ It utilizes the first-in, first-out (FIFO) queuing system. The mod_fifo makes ma
 
 ## Steps to Create a Call-Center
 
-1. Go to Class 5 :material-menu-right: Call-Center and you will see a window with various fields as shown in the figure below.
+1. Go to Class 5 :material-menu-right: Call-Center and you will see a window with various fields as shown in the figure below.![callcenter](/class5/img/callcenter.jpg)
 
 2. Configure the Call-Center by filling in the fields.
 2.1 **Name**: Enter the name you want for the cal-center.
