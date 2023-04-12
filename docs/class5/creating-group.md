@@ -88,7 +88,9 @@ You must first upload the audio files to the system if you wish to use them for 
 
 ## Create a Group
 
-To create a new Group, click :material-plus:. ![group12](/class5/img/group12.jpg)
+To create a new Group, click :material-plus:. 
+
+![group12](/class5/img/group12.jpg)
 
 + **Name:** Enter the name for the group.
 + **Customer:** (Available only when you add the Group from Class5, not when in the Customer management area): From the drop-down list, select the customer to whom the group applies.
