@@ -18,9 +18,11 @@ Agent Commission calculates the percentage of the customer spend.
 
 3. You will see a window with various fields; click on the drop-down menu of the Account Manager to select one for your customer.
 
-4. You can select any person as an Account Manager if that person is in the **Users** list.
+4. Click `Save` to save the commission information.
 
-5. Go to **Setup :material-menu-right: Settings :material-menu-right: User**.
+5. You can select any person as an Account Manager if that person is in the **Users** list.
+
+6. Go to **Setup :material-menu-right: Settings :material-menu-right: User**.
 
 ## Steps to add Commission to the Account Manager
 
@@ -35,3 +37,5 @@ Agent Commission calculates the percentage of the customer spend.
    2.3 **End Date**: Select a date you wish to stop the commission.
 
    2.4 **Commission**: Put a value (in %) you wish to provide your Account Manager.
+
+3. Click `Save` to save the commission information.
