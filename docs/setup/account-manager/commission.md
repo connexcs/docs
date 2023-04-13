@@ -1,8 +1,8 @@
 # Commission
 
-!!! danger "This feature is presently in the Alpha Version. We're working on it. Please contact us for any queries."
-
 **Setup :material-menu-right: Account Manager :material-menu-right: Commission**
+
+!!! danger "This feature is presently in the Alpha Version. We're working on it. Please contact us for any queries."
 
 ## Introduction
 
@@ -25,7 +25,7 @@ Agent Commission calculates the percentage of the customer spend.
    2.4 **Commission**: Put a value (in %) you wish to provide your Account Manager.
 
 3. Click `Save` to save the commission information.
-![acc4](/setup/img/acc4.jpg)
+![acc41](/setup/img/acc41.jpg)
 
 ## Steps to associate Account Manager with a Customer
 
