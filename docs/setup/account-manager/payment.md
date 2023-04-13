@@ -23,3 +23,4 @@ The Payment feature lets you record the information of the payment you've made t
    2.4 **Description**: You can add any information about the payment in this field.
 
 3. Click `Save` to save the payment information.
+![acc4](/setup/img/acc4.jpg)
