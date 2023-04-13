@@ -16,13 +16,13 @@ Agent Commission calculates the percentage of the customer spend.
 
 2. Click on `+` button. A window will appear with various fields.
 
-   2.1 **User**: Select the user from the drop-down menu.
+    2.1 **User**: Select the user from the drop-down menu.
 
-   2.2 **Start Date**: Select a date you wish to start the commission.
+    2.2 **Start Date**: Select a date you wish to start the commission.
 
-   2.3 **End Date**: Select a date you wish to stop the commission.
+    2.3 **End Date**: Select a date you wish to stop the commission.
 
-   2.4 **Commission**: Put a value (in %) you wish to provide your Account Manager.
+    2.4 **Commission**: Put a value (in %) you wish to provide your Account Manager.
 
 3. Click `Save` to save the commission information.
 ![acc41](/setup/img/acc41.jpg)
