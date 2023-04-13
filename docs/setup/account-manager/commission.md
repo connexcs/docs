@@ -25,7 +25,7 @@ Agent Commission calculates the percentage of the customer spend.
     2.4 **Commission**: Put a value (in %) you wish to provide your Account Manager.
 
 3. Click `Save` to save the commission information.
-![acc41](/setup/img/acc41.jpg)
+![acc42](/setup/img/acc42.jpg)
 
 ## Steps to associate Account Manager with a Customer
 
