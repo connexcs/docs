@@ -36,12 +36,6 @@ You can provide several domains for your customers through different brands, and
 !!! note
     Your Customer Portal must be exposed via a `CNAME` that you setup. This won't work with `A` records or by pointing directly.
 
-**Step 2: Add a Domain to the Portal**
-
-1. In **Portal**, click :material-plus:.
-2. Enter the details in their respective fields of the ensuing window.
-3. Click the **`Save`** button. Soon afterward, a certificate is issued for the domain.
-
     ![alt text][portal]
 
 ## Configuration Options
