@@ -42,6 +42,10 @@ Once you create a new **Routing Strategy**, assign it to a customer account.
 3. Select **Routing** and then click on the desired Rate Card. The **Edit Ingress Routing** screen opens.
 4. Click **Strategy**, and then the blue :material-plus:.
 5. Select a strategy from the drop-down list. Note that you can also add a prefix in this screen.
+6. Select one or various **Rate Cards** from the drop-down menu.
+7. Each card can be associated with a **Weight**. You can assign any numeric value to the **Weight**. The server will distribute the calls to the Rate Cards according to the Weights associated with each card. If the weights of both cards are the same, the calls will be equally distributed. Let's consider a scenario where Carrier1 (Rate Card1) has a 100% ASR and Carrier2 (Rate Card2) has a 50% ASR, and we have given them equal weights. Since Carrier1 has a 100% ASR, it will connect all (100%) the received calls. Since Carrier2 has a 50% ASR, it will only connect 50% of the received calls, and the remaining 50% of the unconnected calls will failover to Carrier1. Thus, Carrier2 will only be able to connect 25% of the total calls, and Carrier1 will connect 75% of the calls.
+
+!!! note "Total Calls = Calls received by Carrier1 and Carrier2"
 
 !!! info "Advanced Customer Routing"
     For more settings under Customer Routing, see [**Advanced Routing Configuration**](https://staging--connexcs-docs.netlify.app/customer/routing/#advanced-routing-configuration).
