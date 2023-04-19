@@ -33,7 +33,7 @@ Once you create a new **Routing Strategy**, assign it to a customer account.
 3. Select the Strategy type (as defined in Types of Routing Strategies section).
 4. Click **`Save`**.
 
-![Alt text](misc/img/routing-2.png)
+![weights](/misc/img/weights.jpg)
 
 **Step 2: Assign Routing Strategy to a Customer**
 
