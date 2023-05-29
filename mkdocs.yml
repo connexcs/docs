@@ -124,8 +124,8 @@ nav:
             - Packages: setup/config/packages.md
             - Templates: setup/config/templates.md
         - Account Manager:
-            - Commission: setup/config/commission.md
-            - Payment: setup/config/payment.md
+            - Commission: setup/account-manager/commission.md
+            - Payment: setup/account-manager/payment.md
 
         - Advanced:
             - Language: setup/advanced/language.md
