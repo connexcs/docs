@@ -62,7 +62,7 @@ Available values for this template are:
     * Alerts
     * Packages
     * Contracts
-* **Currencies:** Choose the currencies available for your customers when they signup.
+* **Currencies:** Choose the currencies available for your customers when they sign up.
 
 === "User Access Area"
 
@@ -116,6 +116,43 @@ Available values for this template are:
     To override these options for specific customers, go to **Management :material-menu-right: Customer :material-menu-right: [Choose Customer] :material-menu-right: Edit :material-menu-right: Config :material-menu-right: Portal Access**.
 
     Select items from the "Show" heading to display the feature, or from the Hide options to prevent it from appearing.
+
+=== "SMTP"
+
+As brands are associated with Portal, you can now send an e-mail with your brand or domain name with this feature.
+
+A customer can sign into the various domains available in the system.
+
+Each domain can have different price points, support levels, features, etc.
+
+**Steps to create a new Domain**:
+
+1. Go to **Setup :material-menu-right: Integrations :material-menu-right: Portal**. ![smtp2](/setup/img/smtp2.jpg)
+
+2. Click on `+` button and click on the **SMTP** tab.
+
+3. A window with several fields will appear. You need to fill out the fields:
+
+    3.1 **Server**: ConnexCS defines the SMTP server for your brand or domain.
+
+    3.2 **Username**: Define the name you want for the domain.
+
+    3.3 **Password**: Define the password for the e-mail address.
+
+    3.4 **From Email Address**: This defines the name of your domain e-mail.
+
+**Steps to add Domain to the Customer**:
+
+1. Go to **Management :material-menu-right: Customer :material-menu-right: Customer Name**.
+2. Select the customer you want to associate with the brand.
+3. Click on **`Edit`.**
+4. Click on **`Config`** and in the **Domain** field you can select the domain from the dropdown menu.
+5. Click on `Save` and the customer will be associated with that particular Domain/ Brand.
+![smtp1](/setup/img/smtp1.jpg)
+
+!!! Note
+    1. Multiple customers can be associated with one domain.
+    2. Only one customer can log in to one Domain.
 
 ## User Access
 
