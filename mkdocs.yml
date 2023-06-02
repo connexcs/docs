@@ -124,12 +124,16 @@ nav:
             - Packages: setup/config/packages.md
             - Templates: setup/config/templates.md
             - SIP Profile: setup/config/sip-profile.md
+        - Account Manager:
+            - Commission: setup/account-manager/commission.md
+            - Payment: setup/account-manager/payment.md
         - Advanced:
             - Language: setup/advanced/language.md
             - Firewall: setup/advanced/firewall.md
             - Prefix Set: setup/advanced/prefix-set.md
             - Reseller Account: setup/advanced/reseller.md
             - Fraud Profile: setup/advanced/fraud.md
+            - RTP Block: setup/advanced/rtp-block.md
         - Integrations:
             - API: setup/integrations/api.md
             - Portal: setup/integrations/portal.md
@@ -152,6 +156,7 @@ nav:
 
     - Topical Guides:
         - NEW FCC Regulations on STIR/SHAKEN : guides/stir-shaken-fcc.md
+        - Capacity Planning: guides/capacity-planning.md
         - Billing:
             - Billing Guide: guides/billing-guide.md
             - Billing Basics: billing-basics.md
@@ -182,6 +187,8 @@ nav:
         - Status Page (for Customer Portals): system-status.md
         - OSI Model: guides/osi-model.md
         - Major Telecom Regulatory Authorities: guides/major-telecom-regulatory-authorities.md
+        - General Data Protection Regulation: guides/gdpr.md
+        - Call Detail Record Retention- guides/cdr-retention.md
     
     - Troubleshooting: 
         - Call Connection/Signaling Issues: guides/tshoot-signal.md

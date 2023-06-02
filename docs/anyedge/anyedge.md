@@ -203,3 +203,21 @@ Unlike other HA setups, **AnyEdge** ensures that standard NAT hole-punching can 
 ### Outbound Proxy
 
 If you have a pool of several servers, you can proxy your communications via **AnyEdge**, allowing a single IP address to communicate externally.
+
+## AnyEdge SIP Ping Replies
+
+The UAS is pinging the AnyEdge Loadbalancer and further, the Loadbalancer passes the pings to the Opensips Servers. Further, the Opensips Servers reply to the Laodbalancer, and then the ping gets to the UAS. In case, any of the SIP servers are slow, it slows down the AnyEdge Loadbalancer as well. Thus, introducing Latency in the system.
+
+![any3](/anyedge/any3.jpg)
+
+Therefore, the AnyEdge SIP Ping Replies feature will help fix this issue. This feature will allow the AnyEdge Loadbalancer to reply to the UAS ping messages without passing them to the Opensips Server. This feature will fix the latency issue, and the application latency will be closer match to what we expect.
+
+This feature adds another capability where the AnyEdge Laodbalancer is aware of the latency of the Opensips (backend) servers. The AnyEdge Loadbalancer measures the latency on backend servers by checking that the servers are online. This can be done by adding the **Timestamps**.
+
+According to RFC 3261, there is a proper header Timestamp available. We include this Timestamp header with the message we are going to send. When we get a reply, it comes along with the Timestamp as well. The Timestamp of the message and reply should be identical, which measures the latency or calculates the difference.
+
+### How to Enable AnyEdge SIP Ping Replies
+
+1. Go to Setup :material-menu-right: AnyEdge and click on the `Edit` button.![any1](/anyedge/any1.jpg)
+2. You will a window, select the **AnyEdge SIP Ping Replies** from the dropdown in **Flags** to enable this feature.![any2](/anyedge/any2.jpg)
+3. Click on `Save`.

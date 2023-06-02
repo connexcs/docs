@@ -162,9 +162,7 @@ The Form attribute helps you specify values for the following parameters for all
 
 **7. Request Test**
 
-<img src="/pages/datasourcerequesttest.png" alt="datasourcerequesttest" width="30260"/>
-
-After completing the data source configuration, you can click Request Test to verify the data source interface to check whether the filling is successful and whether the returned data is correct.
+After completing the data source configuration, you can click on **Request Test** to verify the data source interface to check whether the filling is successful and whether the returned data is correct.
 
 ## Preview Options
 

@@ -18,6 +18,8 @@ This means that every function accomplished through our web interface is availab
 
 You can find the API specification here: **<https://docs.connexcs.com/cp-api>**
 
+You can find the API specification (new version) here: **<https://app.connexcs.com/api/api-spec/v3>**
+
 ## Customer Administration
 
 The API lets you perform customer-facing operations like communicating with the switch, information about current balances, and managing Call Detail Records (CDRs).  

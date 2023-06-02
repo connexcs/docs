@@ -12,7 +12,7 @@ Each package may include incentives for Monthly Recurring Charges (MRC) like Dir
 
 Click the :material-plus: button.
 
-&emsp;![alt text][addpackage]
+&emsp;![pack1](/setup/img/pack1.jpg)
 
 + **Name:** The name of the package.
 + **Cost:** The recurring price which you (the provider) pay for this package (based on Frequency set below).
@@ -36,6 +36,8 @@ Click the :material-plus: button.
     If spend is below the Retail amount configured above, the spend get subtracted from Retail, and that charge adds to their account.
 
     For example, Retail value is to 50, but customer only spends 25, an extra charge of 25 applies for that billing cycle.
+
++ **Minimum Days**: When you choose a package with the minimum days, it means you won't be able to delete the package for the duration you have entered in the field.
 
 Click **`Save`** to make the Package available to assign to customer accounts.
 
