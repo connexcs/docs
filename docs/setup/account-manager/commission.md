@@ -40,6 +40,6 @@ Agent Commission calculates the percentage of the customer spend.
 5. You can select any person as an Account Manager if that person is in the **Users** list.
 
 6. Go to **Setup :material-menu-right: Settings :material-menu-right: User**.
-![acc2](/setup/img/acc2.jpg)
+![acc2](/setup/img/commission.png)
 
 
