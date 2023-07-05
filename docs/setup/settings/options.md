@@ -35,3 +35,5 @@ The **Source** specifies the original code present.
 The **Rewrite** option allows you to edit the original SIP Code present in the **Source**.
 
 Click on the `Save` button to apply the changes to your account.
+
+<img src="/setup/img/siprewrite.png">
