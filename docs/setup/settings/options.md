@@ -21,6 +21,7 @@ Configure **Options** to set key default behaviors for the system. Click **`Edit
     |**Alpha and Beta Feature Previews**|Provide access to new and upcoming features.|
     |**Invoice Line Grouping**|Find whether generated invoices display one line per day or one line per destination.|
     |**Internal Number Range Start and Block Size**|Set the system-wide default start and range of private number blocks, which are then assigned to customers (per configuration instructions **[here](https://docs.connexcs.com/customer/main/#internal-number-block)**). For example, you can set the Start field to 1000, and the Size to 1000. The first number block assigned to a customer ranges from 1000–1999. The next customer receives the range 2000–2999, etc.|
+    |**Server Maximum Auth Failures**|The maximum number of authentication tries for a system. When a user tries more than this Max Auth limit authentication failure error occurs. Here, you can choose the number of times the failure can occur.|
     |**Auto Logout**|System will log out a user after timing out.|
     |**Hybrid Menu Only**|When you use ConnexCS in Hybrid mode, this option hides unavailable items from the menu|
 
