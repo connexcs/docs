@@ -124,7 +124,7 @@ Your Web Phone should now be available.
         * Contracts
     * **Register Success HTML** - Customize a message to display to customers once they have completed their signup process.
 
-    &emsp;![alt text][webphone-basic]
+    &emsp;![alt text][webphonebasic]
     
     !!! example "Template Customer Example"
         You want to give all your customers $5.00 credit. Create an account in **Management :material-menu-right: Customer**. In Payments for that account, add $5.00. When a new customer creates an account from the Customer Portal, they will see a payment created for $5.00 at the same the time account was created.
@@ -138,7 +138,7 @@ Your Web Phone should now be available.
     * **Position** - Determine Icon position, starting with 1 on the far left. Select Disabled if you don't wish to show this item.
     * **Template** - A Custom page can be used to display custom static & dynamic content. These are pre-built in **Setup :material-menu-right: Config :material-menu-right: Template**.
 
-    &emsp;![alt text][webphone] 
+    &emsp;![alt text][webphonemenu] 
     
     !!! tip "Frameless iframe"
         We have implemented an edge case. If you wish for the custom page to be an `iframe`, you can use the following code to ensure that it fills up all the available space (replace www.connexcs.com with the page you wish to display):
@@ -173,8 +173,8 @@ The [**Web Phone SDK Connector**](https://webphone-sdk.connexcs.com/) provides t
 
 You will need to provide the full URL (for example, <http://domain.connexcs.com>) and credentials to access Web Phone from within the connector.
 
-[webphone-basic]: /setup/img/webphone-basic.png "WebPhone Basic"
-[webphone]: /setup/img/webphone.png "WebPhone Menu"
+[webphonebasic]: /setup/img/webphonebasic.png "WebPhone Basic"
+[webphonemenu]: /setup/img/webphonemenu.png "WebPhone Menu"
 [webphoneadv]: /setup/img/webphoneadv.png "WebPhone Advanced"
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTgzOTUzNzA1OF19
