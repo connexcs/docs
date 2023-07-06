@@ -12,8 +12,8 @@ To add or edit Company information, click the blue pencil icon. This allows you 
 + Email
 + Company
 + Company Registration ID
-+ OCN: It is the Operating Company Number
-+ FRN: It is the Firm Registration Number
++ OCN: It's the Operating Company Number
++ FRN: It's the Firm Registration Number
 + VAT Registration ID
 
 Under General Information, you can check the following:
