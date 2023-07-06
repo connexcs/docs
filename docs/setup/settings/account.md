@@ -24,7 +24,7 @@ Under General Information, you can check the following:
 + Contact Information for the account: You can edit this field.
 + Address
 
-    &emsp; ![alt text][accountprofile1]
+    <img src="/setup/img/accountprofile1.png">
 
 !!! note "Additional Configuration"
     To change any other settings, please contact Technical Support.
