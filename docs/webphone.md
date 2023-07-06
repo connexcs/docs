@@ -159,9 +159,9 @@ Your Web Phone should now be available.
         * `Accept Payment`: Accept payments, same as on the customer portal.
         * `Auto Answer`: Automatically answer an incoming call.
     * **Restrict Customer Login:** Select existing Companies from the dropdown to allow them access to WebPhone. If no companies are on the list, then all will have access.
-    *  **CSS: You can add CSS (Cascading Style Sheets) style to your Webphone.
-    *  ** Codec Delete: You can delete the Codec which you don't require in your system. You can check the Codec list from Management > Carrier > Select a Carrier > Auth > blue `+` button > under Codecs tab.
-    *  **Codec Priority: You can se the priority of the Codecs used in your system.
+    *  **CSS:** You can add CSS (Cascading Style Sheets) style to your Webphone.
+    *  ** Codec Delete**: You can delete the Codec which you don't require in your system. You can check the Codec list from Management > Carrier > Select a Carrier > Auth > blue `+` button > under Codecs tab.
+    *  **Codec Priority**: You can se the priority of the Codecs used in your system.
 
     &emsp;![alt text][webphoneadv] 
 
