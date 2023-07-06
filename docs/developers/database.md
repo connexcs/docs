@@ -20,13 +20,11 @@ The **Database** is used for activities like checking list of numbers, caching e
       + **Key / Value** - Contains a basic Key / Value Storage.
       + **Lead Set** - Contains the most common fields when using a datastore for customer / campaign data which are used with dialers.
 
-<img src="/developers/img/db2.png" width="460">
-
+<img src="/developers/img/db2.png" width="460", height="500">
 
 7. Next to the **Basic** Tab is the **SQL Table Schema**. This allows you to add additional fields apart from the **Leadset**. You can also select it's **Type** like integer, string, double, float etc.
 
-<img src="/developers/img/db3.png" width="460">
-
+<img src="/developers/img/db3.png" width="460", height="500">
 
 8. Click on `Save` to finally create the database.
 
