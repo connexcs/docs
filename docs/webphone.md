@@ -24,7 +24,7 @@ ConnexCS **Web Phone** is a PWA-based WebRTC application.
 ConnexCS **Web Phone** uses WebRTC (HTTPS port 443) for SIP Signaling and WebSockets (random UDP ports) for the Media.
 
 !!! warning "BitDefender and WebSockets"
-    BitDefender blocks WebSockets unless the phone and webrtc domains get whitelisted.
+    BitDefender blocks WebSockets unless the phone and WebRTC domains get whitelisted.
 
 A [**PWA** (Progressive Web Application)](https://en.wikipedia.org/wiki/Progressive_web_application) is an application written inside the web browser, and it uses a modern API.
 
@@ -53,7 +53,7 @@ PKI ensures end-point integrity, so you can be confident that the endpoint you c
 Navigate using the following sections in the footer menu at the bottom of Web Phone (see Menu tab under [**Config Options**](https://docs.connexcs.com/webphone/#configure-web-phone) below to change how these get displayed):
 
 * **Agent:** Preview dialer
-* **History:** Previously dialed numbers and extensions
+* **History:** Previous dialed numbers and extensions
 * **Dialpad**: Dialpad for making and answering calls
 * **Contacts:** This is the same Contacts database configured in **Class5 :material-menu-right: Phonebook**
 * **Settings:** View the Display Name, SIP information, and WS URL.
@@ -161,7 +161,7 @@ Your Web Phone should now be available.
     * **Restrict Customer Login:** Select existing Companies from the dropdown to allow them access to WebPhone. If no companies are on the list, then all will have access.
     *  **CSS:** You can add CSS (Cascading Style Sheets) style to your Webphone.
     *  ** Codec Delete**: You can delete the Codec which you don't require in your system. You can check the Codec list from Management > Carrier > Select a Carrier > Auth > blue `+` button > under Codecs tab.
-    *  **Codec Priority**: You can se the priority of the Codecs used in your system.
+    *  **Codec Priority**: You can see the priority of the Codecs used in your system.
 
     &emsp;![alt text][webphoneadv] 
 
@@ -184,34 +184,34 @@ eyJoaXN0b3J5IjpbLTgzOTUzNzA1OF19
 
 ### Getting Started
 
-This documentation focuses on the dynamic actions that can be performed on the Softphone's or Agent's page using dynamic buttons. You can create these buttons using the [button builder](https://docs.connexcs.com/developers/button-builder/), while the forms manipulated by these buttons are created using the [form builder](https://docs.connexcs.com/developers/pages/introduction/).
+This documentation focuses on the dynamic actions that you can perform on the Softphone's or Agent's page using dynamic buttons. You can create these buttons using the [button builder](https://docs.connexcs.com/developers/button-builder/), while you can create forms by [Pages](https://docs.connexcs.com/developers/pages/introduction/).
 
 ### How does it work?
 
-Dynamic actions can be chained to create a series of actions. Only dynamic buttons can initiate an action. The process goes as follows:
+You can chain the Dynamic actions by creating a series of actions. Only dynamic buttons can start an action. The process goes as follows:
 
-1. A button is created with the button builder, i.e an action is configured and assigned a placement of 'Agent' so that it's displayed on the Softphone's or the Agent's page.
+1. You can create a button the button builder, i.e an action gets configured and assigned a placement of 'Agent' so that it's displayed on the Softphone's or the Agent's page.
 2. The action is run on the Softphone's or the Agent's page.
 3. The action can be to run ScriptForge and act on its response, run a local function in the browser, or both.
-4. If ScriptForge is run, the response can be displayed according to its type, or it can initiate (chain) another action.
-5. If the action was to open a form, then the button's ScriptForge response (if any) will be used to manipulate the form to be displayed.
-    5.1 When the form is submitted, it will run ScriptForge and return a response.
-    5.2 This form's ScriptForge response will be treated as in stage 4.
+4. When you run the ScriptForge, the response gets displayed according to its type, or it can start (chain) another action.
+5. If the action was to open a form, then the button's ScriptForge response (if any) uses to manipulate the form for display purposes.
+    5.1 When the form gets submitted, it will run ScriptForge and return a response.
+    5.2 This form's ScriptForge response gets treated as in stage 4.
 
 ### Initiating and Chaining Actions
 
-Only a button can initiate a series of actions; however, forms can also initiate an action that chains to the one started by the button. This behavior allows for a chain of actions and, ultimately, sophisticated logic.
+Only a button can start a series of actions; however, forms can also start an action that chains to the one started by the button. This behavior allows for a chain of actions and, sophisticated logic.
 
-There are two sources of action. One is a button response, and the other is a ScriptForge response.
+Two sources of action exist. One is a button response, and the other is a ScriptForge response.
 
-A ScriptForge response can either be requested by a dynamic button or a dynamic form. Fortunately, they both obey the same actions API, which is documented in the "ScriptForge response" section below.
+Dynamic button or Dynamic Form can request a ScriptForge response. Fortunately, they both obey the same actions API documented in the "ScriptForge response" section below.
 
 #### Button Response
 
-The action to run is dependent on the following configurations. Each of these configurations is set using the button builder. For a button to be displayed on the Softphone's or Agent's page, the placement has to be set to Agent.
+The action to run is dependent on the following configurations. Button Builder can set each of these configurations. To display a button on the Softphone's or Agent's page, the placement has to be set to Agent.
 
 !!! note
-    The following is a sample of the response to be expected from the button API endpoint GET  GET /api/softphone/button/button_id - replace button_id is the button's id  property.
+    The following is a sample of the response you can expect from the button API endpoint GET /api/softphone/button/button_id - replace button_id is the button's id  property.
 
 #### Dynamic Button API - Button Builder
 
@@ -257,10 +257,10 @@ The action to run is dependent on the following configurations. Each of these co
 
 ### Script-Forge Response
 
-Below is the Actions Namespace that describes how actions should run. It can be used to initiate an action or respond to one. This object follows the same rules whether returned by a button or a form.
+Below is the Actions Namespace that describes how actions should run. YOu can use it to start an action or respond to one. This object follows the same rules whether returned by a button or a form.
 
 !!! note
-    The following is a sample of the response to be expected from the button and form ScriptForge API endpoints POST /api/softphone/button/button_id and POST /api/softphone/form/form_id   - replace the button_id and form_id with the appropriate id  properties.
+    The following is a sample of the response you can expect from the button and form ScriptForge API endpoints POST /api/softphone/button/button_id and POST /api/softphone/form/form_id   - replace the button_id and form_id with the appropriate id  properties.
 
 #### ScriptForge API Response - Actions Namespace
 
@@ -349,17 +349,16 @@ Below is the Actions Namespace that describes how actions should run. It can be 
 | answerCall | -| -| Answers a call|
 | endCall | -| -| Ends a call|
 | makeCall| alt_phone | alt_phone | Make a call using the campaign's alt_phone property. Used exactly as makeCall(alt_phone) |
-|            | phone_code| phone_code | Make a call using the campaign's phone_code property.  Used exactly as makeCall(phone_code)|
+|            | phone_code| phone_code | Make a call using the campaign's phone_code property. Used exactly as makeCall(phone_code)|
 | openForm| formName| The name of any existing form created with the form builder | Opens a form with a provided formName, e.g openForm(feedback form)|
 | redirect| url| - | Redirects a page to this URL value e.g redirect(https://www.example.com)                            |
-|            | isExternalLink | Either true or false | Whether or not a link leads to an external site e.g redirect(www.example.com, true)   - Optional|
+|            | isExternalLink | Either true or false | Whether a link leads to an external site e.g redirect(www.example.com, true)   - Optional|
 |            | target | _blank | Opens a new page with the provided URL. e.g redirect(https://www.example.com, _blank)    - Optional |
 | toggleMic| - | -| Toggles the mic on or off |
 | save | Decision | Yes | Save a campaign                                                                                     |
-|            |                | No | Do not save a  campaign|
+|            |                | No | Don't save a  campaign|
 |            |                | Unknown | The decision to save a campaign is unknown |
 | next       | - | - | Load the next campaign |
-
 
 ### The Procedure
 
@@ -367,14 +366,14 @@ This section takes you through the process of setting up your actions.
 
 #### Initiating an Action with a Button
 
-As already mentioned, only a button can initiate the first action in a series of actions. The process for selecting which action to run is as follows:
+As already mentioned, only a button can start the first action in a series of actions. The process for selecting which action to run is as follows:
 
-1. If the fn property is set, then action has been set. Here, the action is written as a function, for example, openForm('Feedback Form')  , translated as, { action: { name: 'openForm', params: ['Feedback Form'] }}
+1. If the fn property is set, then action has gets set too. Here, the action is written as a function, for example, openForm('Feedback Form')  , translated as, { action: { name: 'openForm', params: ['Feedback Form'] }}
 
     1.1 If the action openForm has been set and the form_id property has also been set by selecting a form in the button builder, then the form_id property takes priority.
-    1.2 Then the action is run.
+    1.2 Then the action runs.
 
-2. If the openForm action (through fn or form_id) and the sandbox_id (ScriptForge) properties have been set, then data from ScriptForge is used to manipulate the form to be opened.
+2. If the openForm action (through fn or form_id) and the sandbox_id (ScriptForge) properties are set, then data from ScriptForge manipulates the form to get opened.
    2.1 Otherwise, only ScriptForge will run, and the response will start the action.
    2.2 The data used to manipulate the form is present in __.formSchema. Check the documentation above under SCRIPT-FORGE RESPONSE.
 
@@ -382,7 +381,7 @@ As already mentioned, only a button can initiate the first action in a series of
 
 This describes how to use the form ScriptForge response to chain an action. Only one action can run at a time. The process for selecting which action to run is as follows:
 
-1. If the __.action object has its properties set, then that's the action that will be run.
+1. If the __.action object has its properties set, then that's the action that will run.
 
 ### Summary
 
