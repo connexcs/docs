@@ -40,4 +40,18 @@ The **SQL Query** option allows you to run a query on the database you wish.
 
 Click on `Run` for query search.
 
+This helps in modifying the sql query by the user itself.
+
+As of now we can do only 'SELECT' query.
+
+You can add, modify, remove the columns to display on the grid. This is only for the rendering purpose, it doesn't effect the data permanently.
+
+SQL is currently available in 3 part of the system
+
+Customer (Client Side)
+
+CDR (Server)
+
+Userspace Database (Server)
+
 <img src="/developers/img/db4.png">
