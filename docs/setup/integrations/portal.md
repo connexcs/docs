@@ -34,7 +34,7 @@ You can provide several domains for your customers through different brands, and
 3. Click the **`Save`** button. Soon after, a certificate gets issued for the domain.
 
 !!! note
-    Your Customer Portal must be exposed via a `CNAME` that you setup. This won't work with `A` records or by pointing directly.
+    You should expose your Customer Portal via a `CNAME` that you setup. This won't work with `A` records or by pointing directly.
 
     ![alt text][portal]
 
@@ -60,15 +60,15 @@ Available values for this template are:
 
 === "User Access Area"
 
-    Select the sections/features displayed to your customers (see "Override Options" below).
+Select the sections/features displayed to your customers (see "Override Options" below).
 
 === "Breakout"
 
-    Select the columns to display in the **Report :material-menu-right: Breakout Report**.
+Select the columns to display in the **Report :material-menu-right: Breakout Report**.
 
 === "CDR"
 
-    Select the columns to display in the **Management :material-menu-right: Customer :material-menu-right: [Choose Customer] :material-menu-right: CDR Report**.
+Select the columns to display in the **Management :material-menu-right: Customer :material-menu-right: [Choose Customer] :material-menu-right: CDR Report**.
 
 === "Advanced"
 
@@ -113,7 +113,7 @@ Available values for this template are:
 
 === "SMTP"
 
-As brands are associated with Portal, you can now send an e-mail with your brand or domain name with this feature.
+You can now associate brands with Portal, and send an e-mail with your brand or domain name with this feature.
 
 A customer can sign into the various domains available in the system.
 
