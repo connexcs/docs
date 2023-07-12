@@ -215,6 +215,8 @@ Configure the Paystack Payment settings in ConnexCS:
 
 ## PayMongo Integration
 
+Configure the PayMongo Payment settings in ConnexCS:
+
 1. Select **Add**, and then select PayMongo.
 2. **Mode**: Use Test for testing connections or Live for an active account.
 3. **Public Key (Publishable) and Private Key (Secret)**: Access the [PayMongo API Reference Guide](https://developers.paymongo.com/reference/getting-started-with-your-api) to retrieve the Secret keys.
@@ -223,6 +225,8 @@ Configure the Paystack Payment settings in ConnexCS:
 <img src= "/setup/img/api9.png" width="350">
 
 ## NOWPayments  Integration
+
+Configure the NOWPayments settings in ConnexCS:
 
 1. Select **Add**, and then select NOWPayments.
 2. **Mode**: Use Test for testing connections or Live for an active account.
@@ -233,6 +237,8 @@ Configure the Paystack Payment settings in ConnexCS:
 <img src= "/setup/img/api10.png" width="350">
 
 ## Emetec Integration
+
+Configure the Emetec settings in ConnexCS:
 
 1. Select **Add**, and then select Emetec.
 2. **Mode**: Use Test for testing connections or Live for an active account.
