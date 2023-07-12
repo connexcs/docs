@@ -36,7 +36,6 @@ For inbound APIs, please see the [**API**](https://docs.connexcs.com/api/) in th
 
 + **Emetec**: [**Emetec**](https://www.linkedin.com/company/emetec/) provides Merchant services, Payments processing, eCommerce Payment Gateway,  Real-Time-Payments, Online Transfers.
 
-<img src= "/setup/img/api1.png" width="350">
 
 ## Enable API Integration
 
