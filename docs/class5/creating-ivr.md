@@ -26,6 +26,7 @@ Complete the following steps before configuring the IVR.
 3. Select the **Customer** from the drop-down list.
 4. Enter the **Extension** for callers to call and start interacting with the IVR.
 5. Select the **Audio File** from the drop-down list which plays the greeting and explains the keypad options. This is the file created in the first step of IVR Planning, or one that was pre-loaded into [**Files**](https://docs.connexcs.com/files/).
+
 6. You can select from the list of available **PBX Servers**.
 
     ![alt text][ivr]
