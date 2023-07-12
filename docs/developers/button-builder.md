@@ -29,7 +29,7 @@ Click :material-plus: and complete the following fields:
 + **Forms:** When you click the button, select the form (if any) to display, and then pass the data over to the selected Script Forge.
 + **Min / Max Select:** When there are no choices, the button is still accessible. Limitations entered will apply mix/max limits to the selection.
 + **Sort Order:** You can use this option when you have multiple buttons. It lets you select the arrangement of the buttons. The lower the sort order defines which ones comes first.
-+ **App:** You can select an application where you want to place the button .
++ **App:** You can select an application where you want to place the button.
 
 Click **`Save`** to make the new button available for placement.
 
