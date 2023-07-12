@@ -26,15 +26,17 @@ For inbound APIs, please see the [**API**](https://docs.connexcs.com/api/) in th
 
 + **Razor Pay**: [**Razor Pay**](https://razorpay.com/) is a large payment processor from India.
 
-+ **Xero**: Utilising any domestic bank account, Xero Pay with Wise enables you to pay all your vendors through Xero and reconcile transactions.
++ **Xero**: Utilising any domestic bank account, [**Xero Pay**](https://www.xero.com/us/accounting-software/accept-payments/) with Wise enables you to pay all your vendors through Xero and reconcile transactions.
 
-+ **Paystack**: With the help of Paystack, you may take payments from clients using a variety of methods, including cards, mobile money accounts, QR codes, bank account direct deposits, and USSD.
++ **Paystack**: With the help of [**Paystack**](https://paystack.com/), you may take payments from clients using a variety of methods, including cards, mobile money accounts, QR codes, bank account direct deposits, and USSD.
 
-+ **PayMongo**: With the help of PayMongo, your company can conveniently take payments from customers using credit cards, e-wallets, and over-the-counter transactions.
++ **PayMongo**: With the help of [**PayMongo**](https://www.paymongo.com/), your company can conveniently take payments from customers using credit cards, e-wallets, and over-the-counter transactions.
 
-+ **NOWPayments**: With the support for auto coin conversion and the ability to take payments in over 75+ cryptocurrencies, NOWPayments is a non-custodial cryptocurrency payment gateway enabling users to accept payments in any coin they choose.
++ **NOWPayments**: With the support for auto coin conversion and the ability to take payments in over 75+ cryptocurrencies, [**NOWPayments**](https://nowpayments.io/) is a non-custodial cryptocurrency payment gateway enabling users to accept payments in any coin they choose.
 
-+ **Emetec**: It provides Merchant services, Payments processing, eCommerce Payment Gateway,  Real-Time-Payments, Online Transfers.
++ **Emetec**: [**Emetec**](https://www.linkedin.com/company/emetec/) provides Merchant services, Payments processing, eCommerce Payment Gateway,  Real-Time-Payments, Online Transfers.
+
+<img src= "/setup/img/payments.png">
 
 ## Enable API Integration
 
@@ -142,7 +144,7 @@ The following are instructions on how to add a PayPal Email address to a ConnexC
 
 You can view these payments under **Setup :material-menu-right: Information :material-menu-right: Payment Log**.
 
-<img src= "/setup/img/api2.png">
+<img src= "/setup/img/api2.png" width="200">
 
 ## Stripe Integration
 
@@ -155,7 +157,7 @@ Configure the Stripe API Keys in ConnexCS:
 5. **Surcharge**: Amount charged for each transaction.
 6. **Surcharge Precent**:It's the percentage of the total charge that's added as an extra fee.
 
-<img src= "/setup/img/api3.png">
+<img src= "/setup/img/api3.png" width="200">
 
 ## Duo Security Integration
 
@@ -165,7 +167,7 @@ Configure Duo Security Settings in ConnexCS:
 2. **Integration Key**, **Secret**, and **Host**: Access the [**Duo Admin Panel**](https://admin.duosecurity.com/), locate the **`Auth API`**, click `Protect` (from [**Duo Auth support**](https://duo.com/docs/authapi)). Find the **Integration Key**, **Secret Key**, and **API Hostname** to complete setup in ConnexCS.
 3. **AKey (Application Key)**: It's a secret key that's used to authenticate your application with Duo Security. You will need to provide the AKey to Duo Security when you configure your application to use Duo Security.
 
-<img src= "/setup/img/api4.png">
+<img src= "/setup/img/api4.png" width="200">
 
 ## Moneris Integration
 
@@ -175,7 +177,7 @@ Link Moneris to ConnexCS:
 2. **Store ID**: You can find this in the MRC Welcome emails (contact [**Moneris**](https://www.moneris.com/) for help finding it).
 3. **Signature**: It's used to verify the identity of the cardholder to prevent frauds.
 
-<img src= "/setup/img/api5.png">
+<img src= "/setup/img/api5.png" width="200">
 
 ## Scriptforge Integration
 
@@ -183,7 +185,7 @@ Link Moneris to ConnexCS:
 2. **Company**: Select the customer to integrate.
 3. **Script Forge**: Select the predefined script (details found under [**Developer :material-menu-right: Scriptforge**](/developers/scriptforge/).
 
-<img src= "/setup/img/api6.png">
+<img src= "/setup/img/api6.png" width="200">
 
 ## Razor Pay Integration
 
@@ -195,7 +197,7 @@ Enter Razorpay settings into ConnexCS:
 4. **Currency**: Select one or more currencies that you will accept.
 5. **Deduct Payment Fees**: Set whether you will deduct the fees or not.
 
-<img src= "/setup/img/api7.png">
+<img src= "/setup/img/api7.png" width="200">
 
 ## Xero Integration
 
@@ -210,7 +212,7 @@ Configure the Paystack Payment settings in ConnexCS:
 3. **Public Key (Publishable) and Private Key (Secret)**: Access the [Paystack Support Link](https://support.paystack.com/hc/en-us/articles/360009881600-Paystack-Test-Keys-Live-Keys-and-Webhooks) to access the Test keys and Live keys.
 4. **Currencies**: Select one or more currencies that you will accept.
 
-<img src= "/setup/img/api8.png">
+<img src= "/setup/img/api8.png" width="200">
 
 ## PayMongo Integration
 
@@ -219,7 +221,7 @@ Configure the Paystack Payment settings in ConnexCS:
 3. **Public Key (Publishable) and Private Key (Secret)**: Access the [PayMongo API Reference Guide](https://developers.paymongo.com/reference/getting-started-with-your-api) to retrieve the Secret keys.
 4. **Currencies**: Select PHP (Philippine Peso) as the currency.
 
-<img src= "/setup/img/api9.png">
+<img src= "/setup/img/api9.png" width="200">
 
 ## NOWPayments  Integration
 
@@ -229,7 +231,7 @@ Configure the Paystack Payment settings in ConnexCS:
 4. **IPN Key**: Access the [IPN Key guide](https://nowpayments.io/help/what-is/what-is-ipn).
 5. **Currencies**: You have several curriencies to choose from.
 
-<img src= "/setup/img/api10.png">
+<img src= "/setup/img/api10.png" width="200">
 
 ## Emetec Integration
 
@@ -239,7 +241,7 @@ Configure the Paystack Payment settings in ConnexCS:
 4. **Authorization**: It;s a process of determining whether a user has permission to access a resource. In Emtec, authorization depends on roles and permissions.
 5. **Currencies**: Select USD as the currency.
 
-<img src= "/setup/img/api11.png">
+<img src= "/setup/img/api11.png" width="200">
 
 [paypal-9]: /setup/img/paypal-9.png "Paypal-9"
 [api]: /setup/img/api1.png "API Integration"
