@@ -36,7 +36,7 @@ For inbound APIs, please see the [**API**](https://docs.connexcs.com/api/) in th
 
 + **Emetec**: [**Emetec**](https://www.linkedin.com/company/emetec/) provides Merchant services, Payments processing, eCommerce Payment Gateway,  Real-Time-Payments, Online Transfers.
 
-<img src= "/setup/img/api1.png">
+<img src= "/setup/img/api1.png" width="350">
 
 ## Enable API Integration
 
@@ -244,4 +244,4 @@ Configure the Paystack Payment settings in ConnexCS:
 <img src= "/setup/img/api11.png" width="350">
 
 [paypal-9]: /setup/img/paypal-9.png "Paypal-9"
-[api]: /setup/img/api1.png "API Integration"
+[api]: /setup/img/api.png "API Integration"
