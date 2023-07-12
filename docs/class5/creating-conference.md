@@ -19,17 +19,18 @@ To create a Conference room, click :material-plus:.
 * Configure the Personal Identification Number (**PIN**) and **Moderator PIN** for more security.
 * **Quality** sets the amount of bandwidth available per caller in kilohertz (kHz).
 
-    :material-menu-right: `Narrow Band`- 8 KHz (G711)
+    :material-menu-right: `Narrow Band`- 8 kHz (G711)
 
-    :material-menu-right: `Wide Band1`- 16 KHz
+    :material-menu-right: `Wide Band1`- 16 kHz
 
-    :material-menu-right: `Ultra Wide Band`- 32 KHz
+    :material-menu-right: `Ultra Wide Band`- 32 kHz
 
 * **Max Members** limits the number of concurrent callers allowed in the conference.
 
-    **Note:** The preset of '0' Max Members allows an unlimited number of callers to join the conference.
+!!! note
+    The preset of '0' Max Members allows an unlimited number of callers to join the conference.
 
-    ![alt text][conference]
+* **PBX Server** You can select from the available servers.
 
 Click **`Save`** and the new conference room is available for use.
 
@@ -57,7 +58,7 @@ Callers can use the keypad to control the audio on the conference call.
 |\*|Deaf/mute|Mute your speakers and the microphone in one action.|
 |#|Hang up|Disconnect the call and leave the conference.|
 
-[conference]: /class5/img/conference.png "Add Conference"
+[conference]: /class5/img/conference1.png "Add Conference"
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTEyNzY5MzE5MTBdfQ==
 -->
