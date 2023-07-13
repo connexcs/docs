@@ -67,13 +67,13 @@ To enable, click **:material-plus:** next to IP Authentication:
     + **Flags**: Set CLI Authentication for situations where Accounts are unable to use [**Tech Prefix**](https://docs.connexcs.com/customer/routing/#basic) to differentiate customers using the same IP. CLI Tags is another way to do it.
         + **CLI Tags**: Set the CLI Authentication and `Save` it for the required customer. Then go to **Routing** and put some CLI's in the allow list. For example, you have allowed 1234567 (CLI) in Routing, and add 1234578 (CLI) in the Customer. When this customer receives a call, it will be able to differentiate where the call (traffic) is from with the help of CLI Tags.
   
-    <img src= "/customer/img/advanced.png" width= "400">
+    <img src= "/customer/img/advanced.png" width= "600">
 
 === "Codecs"
 
     All Codecs are supported unless specifically set as "Restricted" here.
 
-    <img src= "/customer/img/codecs.png" width= "400"> 
+    <img src= "/customer/img/codecs.png" width= "600"> 
 
 
 === "Parameter Rewrite"
@@ -160,13 +160,13 @@ To enable, click **:material-plus:** next to SIP User Authentication:
     + **Retain DID**: When you enable this, inbound calls will retain the destination number (DID), and the call is sent into the system, rather than using the SIP Username. 
     + **Smart Extension**: Calls are sent to the Class5, not Class4 infrastructure. This feature is currently in Alpha and is not recommended. 
 
-    <img src= "/customer/img/sip1.png" width= "400">
+    <img src= "/customer/img/sip1.png" width= "600">
 
 === "Codecs"
 
     All Codecs are supported for the SIP user unless specifically set as "Restricted" here. 
     
-    <img src= "/customer/img/codecs.png" width= "400">
+    <img src= "/customer/img/codecs.png" width= "600">
 
 === "Parameter Rewrite"
 
