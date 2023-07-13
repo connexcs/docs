@@ -26,6 +26,7 @@ To enable, click **:material-plus:** next to IP Authentication:
 
 === "Basic"
 
+    + **SIP Profile**: You can select the created [SIP Profile](https://docs.connexcs.com/setup/config/sip-profile/) here.**
     + **IP**: Enter the IP(s) of the customer's switch.<br>**FQDN can be used for Ingress-only switches.**
     + **Switch Direction**: The available options are from the perspective of the customer switch (PBX, dialer, etc), and describe how that switch interacts with the ConnexCS switch. For switches that send and receive calls from ConnexCS, there should be separate entries for each direction. 
         
@@ -87,9 +88,7 @@ To enable, click **:material-plus:** next to IP Authentication:
     
     Example: International calls coming in with a + should be replaced with a specific country code. 
 
-    &emsp;![alt text][parameter-rewrite]
-
-___
+<img src= "/customer/img/sip1.png" width= "400">
 
 ## SIP User Authentication
 
