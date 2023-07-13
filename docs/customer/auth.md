@@ -160,7 +160,7 @@ To enable, click **:material-plus:** next to SIP User Authentication:
     + **Retain DID**: When you enable this, inbound calls will retain the destination number (DID), and the call is sent into the system, rather than using the SIP Username. 
     + **Smart Extension**: Calls are sent to the Class5, not Class4 infrastructure. This feature is currently in Alpha and is not recommended. 
 
-    <img src= "/customer/img/sip1.png" width= "600">
+    <img src= "/customer/img/sip1.png" width= "500">
 
 === "Codecs"
 
