@@ -68,7 +68,20 @@ Click this button to alert staff, and the first person to become available will 
 
 #### Ticket Lifecycle
 
-![lifecycle](/misc/img/tl1.png)
+It is necessary for all customers to know what a ticket life-cycle is and how the entire process works.
+
+The first step includes observing the issue. Following this, it will be great if you are able to replicate the issue and isolate it. After isolating the issue you should be able to identify the problematic areas in the issue.
+
+There can be one or more reasons causing the issue. Proceed to analyse the reasons and correspondingly propose a solution and implement it.
+
+Once a problem resolution is provided to you or you’re able to fix it yourself, you need to confirm that the solution works properly.
+
+If the solution doesn't work, please reopen the ticket.
+
+Once, the problem has occurred and fixed, the last step is to close the ticket.
+
+<img src= "/misc/img/tl1.png" width= "400">
+
 
 #### Enable Support Tickets on Control Panel
 
@@ -77,12 +90,12 @@ Click this button to alert staff, and the first person to become available will 
 3. Verify your **e-mail**.
 4. After verifying your e-mail, you will be able to see the raised tickets and any updates on them.
 
-<img src= "/misc/img/st1.png" width= "400">
+<img src= "/misc/img/st1.png" width= "700">
 
 !!! note
     If an Admin has raised a ticket and wants their customer(s) to view the tickets then the Admin can grant access to the customers by going to **Setup > Settings > Users > Customer [Name] > Shared Ticket > Yes**. Click on `**Save**`
 
-    <img src= "/misc/img/st2.png" width= "400">
+    <img src= "/misc/img/st2.png" width= "550">
 
 ### Phone
 
@@ -429,7 +442,7 @@ It's a good practice to update the ticket status after a successful resolution.
 
 Once, the incident or problem gets fixed the next step is to report or document the issue for further reference.
 
-<img src= "/misc/img/fix1.png" width= "400"> <img src= "/misc/img/fix2.png" width= "400">
+<img src= "/misc/img/fix1.png" width= "550"> <img src= "/misc/img/fix2.png" width= "300">
 
 ## How to Handle a Customer Complaint
 
