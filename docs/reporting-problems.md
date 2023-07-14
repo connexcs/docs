@@ -442,9 +442,9 @@ It's a good practice to update the ticket status after a successful resolution.
 
 Once, the incident or problem gets fixed the next step is to report or document the issue for further reference.
 
-    <img src= "/misc/img/fix1.png" width= "550"> 
+<img src= "/misc/img/fix1.png" width= "550"> 
 
-    <img src= "/misc/img/fix2.png" width= "300">
+<img src= "/misc/img/fix2.png" width= "300">
 
 ## How to Handle a Customer Complaint
 
