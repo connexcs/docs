@@ -73,7 +73,7 @@ The **P-Asserted-ID** manipulation uses the same syntax as the Replace CLI.
 + **Database** (To add CLI and PAID from a database):
 
     1. Upload a list of numbers you choose as CLI or PAID under **Developer > Database**.
-    2. Go to **Customer>Routing>CLI** add the same database under database field. Under rewrite PAID field add this database.
+    2. Go to **Customer > Routing > CLI** add the same database under database field. Under rewrite PAID field add this database.
 
     !!! note
         Make sure you select  the **Forced** option as **Yes**.
