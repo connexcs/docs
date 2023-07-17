@@ -112,16 +112,11 @@ You can perform this for an individual Customer (**Management :material-menu-rig
 **Step 1: Create the CSV**
 
 1. In Microsoft Excel, open a new workbook and save it as a CSV (Comma delimited) file.
-
-2. In the first row, add the names of the input fields as column headers like Customer column or DID column.
-
-3. The next step is to map the created columns into the system.
-
+2. In the first row, add the names of the input fields as column headers like Customer column or DID column.
+3. The next step is to map the created columns into the system.
 4. To map the columns, follow the listed steps:
-
-    4.1 Mapping gets initiated by right-clicking the second row and selecting the "Set Start Row" option from the menu. You will see the first row highlighted in Blue.
-
-    4.2 After that, click on each column, choose the 'Map column' option, and select the options from the drop-down list to map that column..
+   1. Mapping gets initiated by right-clicking the second row and selecting the "Set Start Row" option from the menu. You will see the first row highlighted in Blue.
+   2. After that, click on each column, choose the 'Map column' option, and select the options from the drop-down list to map that column..
 
 !!! tip "Tips for creating the CSV file"
     Steps taken to ensure that you can perform the next steps effortlessly:
@@ -173,10 +168,10 @@ Following are the steps to configure the Range Ho9lder cards.
 1. We create a new **Carrier** which is basically a **Range Holder**. This is a pseudo-carrier. This carrier (Range Holder) isn't going to send any calls and we need not provide it with any **Authentication**.![RH1](/customer/img/RH1.jpg)
 2. Next, we build a **Provider Rate Card** for the Range Holder.
 3. Under the **Provider Rate Card** we've **Tier 1 Interconnect** and **Tier 2 Interconnect** for different providers.
-4. Then you go to the **Carrier** click on **Edit** and then click on **Range Holder** and select **Provider Rate Card** and click on `Save`. This gives them access to the whole range of numbers.<img src= "/customer/img/RH2.jpg" width="500"> ![RH3](/customer/img/RH3.jpg)
+4. Then you go to the **Carrier** click on **Edit** and then click on **Range Holder** and select **Provider Rate Card** and click on `Save`. This gives them access to the whole range of numbers.<img src= "/customer/img/RH2.jpg" width="700"> ![RH3](/customer/img/RH3.jpg)
 5. Then go to **Management :material-menu-right: Global :material-menu-right: DID**.
 6. Select the number.
 7. In **Basic** select your **Customer**.
 8. From the **Provider** drop-down select **None/Range Holder** and the **Provider Rate card** disappears.
 9. Click on `Save` and you can see the updated card.
-   <img src= "/customer/img/RH4.jpg" width="500">
+   <img src= "/customer/img/RH4.jpg" width="700">

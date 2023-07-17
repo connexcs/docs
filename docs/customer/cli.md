@@ -53,12 +53,14 @@ The **P-Asserted-ID** manipulation uses the same syntax as the Replace CLI.
     All calls will then have this number as the P-Asserted-ID.
 
 + **Forced**: Enabling this will allow a call if there are no other matching CLIs in the system. This will also replace the CLI that's presented with the CLI entered here.
-**For example**, Create a permitted list of CLIs, then select **Forced** on the CLI to use if none of the others in the permitted list match. (Best practice is to have one unique **Forced** CLI.)
+
+    !!! Example
+        Create a permitted list of CLIs, then select **Forced** on the CLI to use if none of the others in the permitted list match. (Best practice is to have one unique **Forced** CLI.)
 
 + **Direction Applied**: Select either **Termination** for calls a customer makes out or **Origination** (also refers to DIDs) for inbound calls made to our customers.
 
     !!! Example
-    Create a permitted list that exclusively allows calls to or from the same country.  
+        Create a permitted list that exclusively allows calls to or from the same country.  
 
 + **Allow Type**: You can select from various options like Mobile, Paging, VoIP, Satellite etc to allow the CLIs.
 
@@ -84,7 +86,7 @@ The **P-Asserted-ID** manipulation uses the same syntax as the Replace CLI.
 
 + **STIR / SHAKEN Attestation:** This is the level of a certification you can select from 3 levels `A`, `B`, or `C`.
 
-&emsp;![alt text][cli1]
+<img src= "/customer/img/cli1.png" width= "500">
 
 Click **`Save`** to complete the CLI configuration.
 
