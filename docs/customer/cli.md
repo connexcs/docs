@@ -48,9 +48,9 @@ Telephone companies use it to identify call originators. As it's stripped at the
 This is helpful when callers obscure their CLI / FROM information, as the network level still requires origination details.
 The **P-Asserted-ID** manipulation uses the same syntax as the Replace CLI.
 
-!!! tip "P-Asserted-ID Use Case"
-    If you wanted to allow all calls but assign a specific number (such as the Main Billable number for the business), you would set CLI as ".*" and then enter the desired P-Asserted ID.
-    All calls will then have this number as the P-Asserted-ID.
+    !!! tip "P-Asserted-ID Use Case"
+        If you wanted to allow all calls but assign a specific number (such as the Main Billable number for the business), you would set CLI as ".*" and then enter the desired P-Asserted ID.
+        All calls will then have this number as the P-Asserted-ID.
 
 + **Forced**: Enabling this will allow a call if there are no other matching CLIs in the system. This will also replace the CLI that's presented with the CLI entered here.
 

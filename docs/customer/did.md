@@ -115,8 +115,9 @@ You can perform this for an individual Customer (**Management :material-menu-rig
 2. In the first row, add the names of the input fields as column headers like Customer column or DID column.
 3. The next step is to map the created columns into the system.
 4. To map the columns, follow the listed steps:
-   1. Mapping gets initiated by right-clicking the second row and selecting the "Set Start Row" option from the menu. You will see the first row highlighted in Blue.
-   2. After that, click on each column, choose the 'Map column' option, and select the options from the drop-down list to map that column..
+
+    4.1 Mapping gets initiated by right-clicking the second row and selecting the "Set Start Row" option from the menu. You will see the first row highlighted in Blue.
+    4.2 After that, click on each column, choose the 'Map column' option, and select the options from the drop-down list to map that column..
 
 !!! tip "Tips for creating the CSV file"
     Steps taken to ensure that you can perform the next steps effortlessly:
