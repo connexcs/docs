@@ -117,6 +117,7 @@ You can perform this for an individual Customer (**Management :material-menu-rig
 4. To map the columns, follow the listed steps:
 
     4.1 Mapping gets initiated by right-clicking the second row and selecting the "Set Start Row" option from the menu. You will see the first row highlighted in Blue.
+
     4.2 After that, click on each column, choose the 'Map column' option, and select the options from the drop-down list to map that column..
 
 !!! tip "Tips for creating the CSV file"
