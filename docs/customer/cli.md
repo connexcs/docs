@@ -57,23 +57,24 @@ The **P-Asserted-ID** manipulation uses the same syntax as the Replace CLI.
 
 + **Direction Applied**: Select either **Termination** for calls a customer makes out or **Origination** (also refers to DIDs) for inbound calls made to our customers.
 
-!!! Example
+    !!! Example
     Create a permitted list that exclusively allows calls to or from the same country.  
 
 + **Allow Type**: You can select from various options like Mobile, Paging, VoIP, Satellite etc to allow the CLIs.
 
 + **Use DID**: Pull in DIDs from the customer's account to use either as a Filter or as a Replacement.  
 
-!!! Example
-     If Dialled matched number is starting with **1**, the CLI routes to 11111.
+    !!! Example
+        If Dialled matched number is starting with **1**, the CLI routes to 11111.
      The CLI can be a Regular Expression also.
 
 + **Database** (To add CLI and PAID from a database):
+
     1. Upload a list of numbers you choose as CLI or PAID under **Developer > Database**.
     2. Go to **Customer>Routing>CLI** add the same database under database field. Under rewrite PAID field add this database.
 
-   !!! note
-       Make sure you select  the **Forced** option as **Yes**.
+    !!! note
+        Make sure you select  the **Forced** option as **Yes**.
 
 + **Dialed Number Match**: To route to a specific CLI, you dialled match number.
 
