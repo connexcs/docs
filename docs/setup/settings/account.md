@@ -9,11 +9,22 @@ The **Account** overview allows you to edit Company and General Information, set
 To add or edit Company information, click the blue pencil icon. This allows you to edit:
 
 + Name
-+ Address
-+ Billing Method (Click on the blue text to toggle between **per channel** and **per-minute** billing; it changes once every 30 days)
-+ Contact Information for the account
++ Email
++ Company
++ Company Registration ID
++ OCN: It's the Operating Company Number
++ FRN: It's the Firm Registration Number
++ VAT Registration ID
 
-    ![alt text][accountprofile]
+Under General Information, you can check the following:
+
++ Currency
++ Account Balance
++ Billing Method (Click on the blue text to toggle between **per channel** and **per-minute** billing; it changes once every 30 days)
++ Contact Information for the account: You can edit this field.
++ Address
+
+    <img src="/setup/img/accountprofile1.png">
 
 !!! note "Additional Configuration"
     To change any other settings, please contact Technical Support.
@@ -51,7 +62,7 @@ To view the full ConnexCS Service Agreement, click on the below link:
 
 [ConnexCS Service Agreement](https://cdn.cnxcdn.com/ConnexCS%20Service%20Agreement.pdf)
 
-[accountprofile]: /setup/img/account-profile.png "Account Profile"
+[accountprofile]: /setup/img/accountprofile1.png "Account Profile"
 [smtp]: /setup/img/smtp.png "SMTP"
 [call-recording]: /setup/img/call-recording.png "Call Recording"
 [service-agreement]: /setup/img/service-agreement.png "Service Agreement"
