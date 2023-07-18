@@ -25,7 +25,7 @@ To add a new payment, select **`Make Payment`**.
 
 2. Click **`Pay`**.
 
-<img src= "/customer-portal/img/payment.png">
+<img src= "/customer-portal/img/payment2.png">
 
 !!! warning "Negative Payments"
     If you make some kind of purchase on the account, it will appear as a negative amount under **Total**.
