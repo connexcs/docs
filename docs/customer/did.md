@@ -74,7 +74,7 @@ For more details on these fields, see [**Media in Customer Routing**](https://do
 
 + **Max Duration**: Set the maximum amount of time (in seconds) to allow the call to exist before it's terminated, typically in case of a missed BYE.
 
-+ **Transcoding**: Enter the number of channels allowed for transcoding. This is a limited option. The best use case is for customers in low-bandwidth areas that want to use G.729. Make sure you have enough transcoding capacity, otherwise calls start failing.
++ **Transcoding**: Enter the number of channels allowed for transcoding. This is a limited option. The best use case is for customers in low-bandwidth areas that want to use G.729. If you don't have enough transcoding capacity, calls might start failing.
 
 ### Billing
 
@@ -92,7 +92,7 @@ For each Package there is an associated **Minimum Days** the package is valid fo
 Run a custom script on calls to the DID to perform actions such as routing based on the time of day or if specific users or numbers are active.
 
 + **Script Forge**: Select the script you wish to run for the **DID**.
-+ **Timeout**: Select the time for how long your script should n.
++ **Timeout**: Select the time for how long your script should.
 + **Timeout Action**: You can specify the timeout action if some issue occurs while the script runs. You can specify the action as: **[sip response code] [sip message]**, example: 200 OK.
 + **Vars** [**TOML**](https://en.wikipedia.org/wiki/TOML): This is a data storage mechanism for configuration, similar to INI files. It allows you to create advanced customization to set values, etc, for Script Forge to reference later.
 
@@ -165,7 +165,7 @@ See [**Script Forge**](https://docs.connexcs.com/developers/scriptforge/) for mo
 
 ## Range Holders
 
-Following are the steps to configure the Range Ho9lder cards.
+Following are the steps to configure the Range Holder cards.
 
 1. We create a new **Carrier** which is basically a **Range Holder**. This is a pseudo-carrier. This carrier (Range Holder) isn't going to send any calls and we need not provide it with any **Authentication**.![RH1](/customer/img/RH1.jpg)
 2. Next, we build a **Provider Rate Card** for the Range Holder.
