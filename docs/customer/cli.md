@@ -48,20 +48,37 @@ Telephone companies use it to identify call originators. As it's stripped at the
 This is helpful when callers obscure their CLI / FROM information, as the network level still requires origination details.
 The **P-Asserted-ID** manipulation uses the same syntax as the Replace CLI.
 
-!!! tip "P-Asserted-ID Use Case"
-    If you wanted to allow all calls but assign a specific number (such as the Main Billable number for the business), you would set CLI as ".*" and then enter the desired P-Asserted ID.
-    All calls will then have this number as the P-Asserted-ID.
+    !!! tip "P-Asserted-ID Use Case"
+        If you wanted to allow all calls but assign a specific number (such as the Main Billable number for the business), you would set CLI as ".*" and then enter the desired P-Asserted ID.
+        All calls will then have this number as the P-Asserted-ID.
 
 + **Forced**: Enabling this will allow a call if there are no other matching CLIs in the system. This will also replace the CLI that's presented with the CLI entered here.
-**For example**, Create a permitted list of CLIs, then select **Forced** on the CLI to use if none of the others in the permitted list match. (Best practice is to have one unique **Forced** CLI.)
+
+    !!! Example
+        Create a permitted list of CLIs, then select **Forced** on the CLI to use if none of the others in the permitted list match. (Best practice is to have one unique **Forced** CLI.)
 
 + **Direction Applied**: Select either **Termination** for calls a customer makes out or **Origination** (also refers to DIDs) for inbound calls made to our customers.
-For example, Create a permitted list that exclusively allows calls to or from the same country.  
+
+    !!! Example
+        Create a permitted list that exclusively allows calls to or from the same country.  
+
++ **Allow Type**: You can select from various options like Mobile, Paging, VoIP, Satellite etc to allow the CLIs.
 
 + **Use DID**: Pull in DIDs from the customer's account to use either as a Filter or as a Replacement.  
 
-+ **Dialed Number Match**: To route to a specific CLI, you dialied match number. For example, if Dialied matched number is starting with **1**, the CLI routes to 11111.
-The CLI can be a Regular Expression also.
+    !!! Example
+        If Dialled matched number is starting with **1**, the CLI routes to 11111.
+     The CLI can be a Regular Expression also.
+
++ **Database** (To add CLI and PAID from a database):
+
+    1. Upload a list of numbers you choose as CLI or PAID under **Developer > Database**.
+    2. Go to **Customer > Routing > CLI** add the same database under database field. Under rewrite PAID field add this database.
+
+    !!! note
+        Make sure you select  the **Forced** option as **Yes**.
+
++ **Dialed Number Match**: To route to a specific CLI, you dialled match number.
 
 + **Notes**: Notes give you information about the CLI.
 
@@ -69,7 +86,7 @@ The CLI can be a Regular Expression also.
 
 + **STIR / SHAKEN Attestation:** This is the level of a certification you can select from 3 levels `A`, `B`, or `C`.
 
-&emsp;![alt text][edit-cli]
+<img src= "/customer/img/cli1.png" width= "500">
 
 Click **`Save`** to complete the CLI configuration.
 
@@ -348,12 +365,12 @@ To set the "P-Asserted-ID" per customer, see [**Configure CLI**](https://docs.co
 
 [cli]: /customer/img/cli.png "CLI Main"
 [approvedcli]: /customer/img/approvedcli.png "Approved CLI Only"
-[edit-cli]: /customer/img/edit-cli.png "Edit CLI"
+[cli1]: /customer/img/cli1.png "Edit CLI"
 
 ## CLI and PAID Responsibilities
 
-1. If the customers don't offer any CLI, you can add a CLI list but it should be validated.
-2. The customers are allowed to partly modify the format of CLIs. It should be changed to make it more compliant.
+1. If the customers don't offer any CLI, you can add a CLI list but make sure its validated.
+2. The customers can partly modify the format of CLIs, to make it more compliant.
 3. If a customer isn't complaining, you can allocate a PAID from YOUR OWN list of CLI's, which can help you trace the calls.
 4. You shouldn't delete any information but you can fix the syntax or format.
 5. You shouldn't present any invalid / false information.
