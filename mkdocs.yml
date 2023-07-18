@@ -188,7 +188,8 @@ nav:
         - OSI Model: guides/osi-model.md
         - Major Telecom Regulatory Authorities: guides/major-telecom-regulatory-authorities.md
         - General Data Protection Regulation: guides/gdpr.md
-        - Call Detail Record Retention- guides/cdr-retention.md
+        - Call Detail Record Retention: guides/cdr-retention.md
+        - Spam Protection Features: guides/spam-blockcalls.md
     
     - Troubleshooting: 
         - Call Connection/Signaling Issues: guides/tshoot-signal.md
