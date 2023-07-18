@@ -91,6 +91,7 @@ nav:
     - Class 5 (UCS):
         - Apps: class5/apps.md
         - Conference: class5/creating-conference.md
+        - Call Center: class5/call-center.md
         - IVR: class5/creating-ivr.md
         - Groups: class5/creating-group.md
         - Voicemail: class5/voicemail.md
