@@ -247,4 +247,4 @@ For example, if a number range begins with ^449, which is an expensive range of 
 | **CLI - Allow Type**| Security, Commercial, Regulatory, Strategic, Performance based | CLI| Customer|
 | **CLI - DID Only**| Security, Commercial, Regulatory, Strategic, Performance based, Database| CLI| Customer|
 | **Block Destination in Rate Card**| Commercial, Security| Destination| Customer Card|
-| **Carrier Card, CLI and PAID Restrict**| Security, Commercial, Regulatory, Strategic, Performance based | CLI| Carrier Card|
+| **Carrier Card, CLI and PAID Restrict**| Security, Commercial, Regulatory, Strategic, Performance based | CLI| Carrier Card.|
