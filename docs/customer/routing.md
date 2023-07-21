@@ -94,6 +94,11 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 
 + **ASR Plus** assists capacity management by helping you define how to handle connections for known failed numbers. For information on the ASR Plus options, see [**ASR Plus Details**](https://docs.connexcs.com/customer/routing/#asr-answer-seizure-ratio-plus-details) below.
 
++ **Balance Disconnect** this feature checks the balance every 60 seconds. It will disconnect the call when the **balance plus the debit limit** is below $0.
+
+  !!! note
+      Balance Disconnect only takes into account the **completed calls**; it excludes any **active calls**.
+
 ### ScriptForge
 
 + **ScriptForge**: Set a custom JavaScript to run from within the ConnexCS platform in-line with the call. Some example operations could be checking a Do Not Call list or forcing a CLI.
