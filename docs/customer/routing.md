@@ -96,8 +96,8 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 
 + **Balance Disconnect** this feature checks the balance every 60 seconds. It will disconnect the call when the **balance plus the debit limit** is below $0.
 
-  !!! note
-      Balance Disconnect only takes into account the **completed calls**; it excludes any **active calls**.
+!!! note
+    Balance Disconnect only takes into account the **completed calls**; it excludes any **active calls**.
 
 ### ScriptForge
 

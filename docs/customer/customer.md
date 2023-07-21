@@ -100,8 +100,9 @@ By clicking on `+` button we can add customer (see [**Create Customers**](https:
     + **Call Recording Retention Days**: How long the customer wants to keep the recorded calls.
     + **Domain**: You can select the [domain](https://docs.connexcs.com/setup/integrations/portal/#configuration-options) you wish wish to access from the drop-down menu.
     + **Daily Spend Limit**: The maximum limit for a customer for making calls in their chosen currency. Once the limit is reached it won't allow any new calls to connect.
-        !!! note
-            The daily spend day is defined from 00:00 UTC to 00:00 UTC.
+
+    !!! note
+        The daily spend day is defined from 00:00 UTC to 00:00 UTC.
 
 === "Address"
 
