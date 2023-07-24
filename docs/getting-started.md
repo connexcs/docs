@@ -81,6 +81,14 @@ While it's not necessary to configure your Personal Profile to complete basic se
     
     To configure this on ConnexCS, click `Enroll`. Once it's setup, there is a special button to click/tap upon login to the ConnexCS portal. 
 
+    You can also add **Biometric Security** by using **Face Verification**.
+
+    Other options include **PIN** and **Security**.
+
+    The interesting thing is that you get these options on your browser using the [**Windows Hello**](https://support.microsoft.com/en-us/windows/learn-about-windows-hello-and-set-it-up-dae28983-8242-bb2a-d3d1-87c9d265a5f0) application.
+
+<img src= "/getting-started/img/2fa.png" width= "500">
+
 === "Advanced"
 
     Click the blue `Edit` button to manage your email subscriptions. 
