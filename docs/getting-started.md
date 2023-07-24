@@ -85,7 +85,7 @@ While it's not necessary to configure your Personal Profile to complete basic se
 
     Other options include **PIN** and **Security**.
 
-    The interesting thing is that you get these options on your browser using the [**Windows Hello**](https://support.microsoft.com/en-us/windows/learn-about-windows-hello-and-set-it-up-dae28983-8242-bb2a-d3d1-87c9d265a5f0) application.
+    The interesting thing is that you get these options on your browser using the [**Windows Hello application**](https://support.microsoft.com/en-us/windows/learn-about-windows-hello-and-set-it-up-dae28983-8242-bb2a-d3d1-87c9d265a5f0).
     
     <img src= "/getting-started/img/2fa.png" width= "350">
 
