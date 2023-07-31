@@ -34,6 +34,47 @@ You can create data with effective visual effects by using options like Graphs a
 | **onRowRemove**  | Triggers when a new row adds to the Datatable. You can call a function to perform any operation after the row gets deleted.|
 | **onPageChange** | Triggers each time you navigate to a new page from the pagination control.|
 
+### Example of creating an Advanced Grid (Cars Information)
+
+1. Drag and Drop a **Button** from the **Basic Field**.
+2. Drag and Drop the **Advanced Grid** from the **Advance Field**.
+3. Drag and Drop 3 **Input** fields from the **Basic Field**  to the Advanced Gird field.
+4. Rename the **Input fields** as **Make**, **Model**, and **Price**.
+5. Drag and Drop a **Button** from the **Basic Field** to the Advanced Gird field and rename the button to **View Data**.
+<img src= "/pages/ag1.png">
+6. Now we will add some actions when we click the button.
+7. The first thing is that the data should load when we click the `Preview` button.
+8. Click on **Form Attribute > Action Panel > Setting > Function refresh**. Then add the code.
+
+   ```js
+    this.setData({
+	aggrid: [
+		{ make: 'Toyota', model: 'Celica', price: 35000 },
+		{ make: 'Ford', model: 'Mondeo', price: 32000 },
+		{ make: 'Porsche', model: 'Boxster', price: 72000 }
+	]
+    });
+    ```
+9. Create a new function `viewButton`. For this function, when we click the it will show you some details in the `Console Log`.
+    ```js
+    console.log('Starting Arguments');
+
+    // Declare and define the variables (You might want to replace the values with actual data)
+    let args = 'This is Toyota';
+    let arg = 'Its a good car';
+
+    // Check if the variables exist and log messages accordingly
+    if (args) console.log('This is Toyota', args);
+    if (typeof arguments !== 'undefined') console.log('Hello Userland', arguments);
+    if (arg) console.log('This is Toyota', arg);
+    ```
+
+10. Click on the **Preview** button to view the output.
+
+<img src= "/pages/ag2.png">
+
+<iframe width="560" height="315" src="/pages/agv.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Graph
 
 <img src="/pages/cagraph.png" alt="graph" width="260"/>
