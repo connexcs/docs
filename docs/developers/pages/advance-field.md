@@ -73,7 +73,7 @@ You can create data with effective visual effects by using options like Graphs a
 
 10. Click on the **Preview** button to view the output.
 
-<img src= "/pages/ag2.png", width= "1000">
+<img src= "/pages/ag2.png", width= "1500">
 
 <iframe width="760" height="515" src="/pages/agv.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
