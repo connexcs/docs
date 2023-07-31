@@ -41,12 +41,14 @@ You can create data with effective visual effects by using options like Graphs a
 3. Drag and Drop 3 **Input** fields from the **Basic Field**  to the Advanced Gird field.
 4. Rename the **Input fields** as **Make**, **Model**, and **Price**.
 5. Drag and Drop a **Button** from the **Basic Field** to the Advanced Gird field and rename the button to **View Data**.
-<img src= "/pages/ag1.png" width= "300">
+
+<img src= "/pages/ag1.png" width= "450">
+
 6. Now we will add some actions when we click the button.
 7. The first thing is that the data should load when we click the `Preview` button.
 8. Click on **Form Attribute > Action Panel > Setting > Function refresh**. Then add the code.
 
-   ```js
+```js
     this.setData({
 	aggrid: [
 		{ make: 'Toyota', model: 'Celica', price: 35000 },
@@ -54,7 +56,7 @@ You can create data with effective visual effects by using options like Graphs a
 		{ make: 'Porsche', model: 'Boxster', price: 72000 }
 	]
     });
-    ```
+```
 9. Create a new function `viewButton`. For this function, when we click the it will show you some details in the `Console Log`.
     ```js
     console.log('Starting Arguments');
@@ -71,7 +73,7 @@ You can create data with effective visual effects by using options like Graphs a
 
 10. Click on the **Preview** button to view the output.
 
-<img src= "/pages/ag2.png", width= "600">
+<img src= "/pages/ag2.png", width= "1000">
 
 <iframe width="760" height="515" src="/pages/agv.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
