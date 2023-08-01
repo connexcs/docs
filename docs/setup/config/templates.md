@@ -57,7 +57,7 @@ Before describing those variables, we first discuss the steps for creating the *
 
 <img src= "/developers/img/invoice1.png">
 
-!!! note Please make a note here:
+!!! "note" Please make a note here:
     You just need to add or remove the variables from the invoice template that we'll offer.
 
 | **Variable Name**| **Explanation**|
@@ -90,7 +90,8 @@ Before describing those variables, we first discuss the steps for creating the *
 | tax {{ tax}} ($1)| Tax applied on the bill|
 | total {{ total} | Total amount due (Sub total amount + Tax amount = $10 + $1= $11)|
 
-!!! Note You can use **nlb2r** function to create the next line.
+!!! Note 
+    You can use **nlb2r** function to create the next line.
 
 ## Stock Templates
 
