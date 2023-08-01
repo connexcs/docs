@@ -57,8 +57,8 @@ Before describing those variables, we first discuss the steps for creating the *
 
 <img src= "/developers/img/invoice1.png">
 
-!!! "note" Please make a note here:
-    You just need to add or remove the variables from the invoice template that we'll offer.
+!!! Note Important Note
+     You just need to add or remove the variables from the invoice template that we'll offer.
 
 | **Variable Name**| **Explanation**|
 |----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
