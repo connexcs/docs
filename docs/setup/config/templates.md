@@ -90,7 +90,7 @@ Before describing those variables, we first discuss the steps for creating the *
 | tax {{ tax}} ($1)| Tax applied on the bill|
 | total {{ total} | Total amount due (Sub total amount + Tax amount = $10 + $1= $11)|
 
-!!! Note 
+!!! Info 
     You can use **nlb2r** function to create the next line.
 
 ## Stock Templates
