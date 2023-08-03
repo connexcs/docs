@@ -220,7 +220,7 @@ function main(data) {
 }
 ```
 
-## Originate a Call via an API using ScriptForge
+## Originate a Call via an API using ScriptForge..
 
 [s2]: /developers/img/176.png "s2"
 [s8]: /developers/img/183.png "s8"
