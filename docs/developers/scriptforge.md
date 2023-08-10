@@ -150,12 +150,6 @@ module.export = {
 4. Click **`Save`**.
 5. Select your script from the list.
 6. Enter the code of your script.
-7. **Global Routing Priority** means the script will run for every single call. You have 3 options to choose from:
-	* You can **disable** it if you don't want to use it.
-	* **Run first** or **Run Last** means this script will run first or after the Script Forge enabled in the Routing section.
-8. The **App** field allow you to integrate the created applications with the ScriptForge.
-9. Click the green arrow to **`Save and Run`**.
-10. You can view the results onscreen.
 
 If script shows an error, add this and then run the script again:
 
@@ -163,13 +157,21 @@ If script shows an error, add this and then run the script again:
 {"routing":{}}
 ```
 
-<img src= "docs/developers/img/sf1.png">
+7. **Global Routing Priority** means the script will run for every single call. You have 3 options to choose from:
+	* You can **disable** it if you don't want to use it.
+	* **Run first** or **Run Last** means this script will run first or after the Script Forge enabled in the Routing section.
+8. The **App** field allow you to integrate the created applications with the ScriptForge.
+9. Click the green arrow to **`Save and Run`**.
+
+<img src= "/developers/img/sf1.png">
+
+10. You can view the results onscreen.
 
 === "Schedule"
 
 The **Schedule** option allows to you run your Script Forge based on pre-determined **dates in month**, **days of a week** and you can even select the time by selecting the values of **minutes** and **hours** from the drop-down menu.
 
-<img src= "docs/developers/img/sf2.png">
+<img src= "/developers/img/sf2.png">
 
 ### Assign the Script to a Customer
 
