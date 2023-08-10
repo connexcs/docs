@@ -165,7 +165,7 @@ module.export = {
 
     The **Schedule** option allows to you run your Script Forge based on pre-determined **dates in month**, **days of a week** and you can even select the time by selecting the values of **minutes** and **hours** from the drop-down menu.
 
-    	<img src= "/developers/img/sf2.png" width= "300">
+    	<img src= "/developers/img/sf2.png" width= "400">
 
 ### Assign the Script to a Customer
 
