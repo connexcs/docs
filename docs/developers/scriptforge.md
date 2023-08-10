@@ -131,47 +131,41 @@ module.export = {
 
 === "Basic"
 
-  1. To add a script, click :material-plus:.
-  2. Specify the script **Name**.
-  3. Select the **Type**:
-     * `Script`- This is the fastest way to execute custom code and is "synchronous" execution. This is mainly used for manipulations or calculations. It can't use libraries or work with Promises.
-     * `App`- Feature rich applications which can include a preset (whitelist) of available modules, the penalty of the extra features is a slightly higher latency.
-     * `Driver`- A driver works as an intermediary between ConnexCS and any external system. You can write drivers to bridge the ConnexCS DID provisioning system to a provider of your choice or build more complicated alerts.
+    1. To add a script, click :material-plus:.
+    2. Specify the script **Name**.
+    3. Select the **Type**:
+        * `Script`- This is the fastest way to execute custom code and is "synchronous" execution. This is mainly used for manipulations or calculations. It can't use libraries or work with Promises.
+        * `App`- Feature rich applications which can include a preset (whitelist) of available modules, the penalty of the extra features is a slightly higher latency.
+        * `Driver`- A driver works as an intermediary between ConnexCS and any external system. You can write drivers to bridge the ConnexCS DID provisioning system to a provider of your choice or build more complicated alerts.
     
-  4. Click **`Save`**.
 
-      * `Script`- This is the fastest way to execute custom code and is "synchronous" execution.
-  	    This is mainly used for manipulations or calculations.
-  		It can't use libraries or work with Promises.
-      * `App`- As a penalty, feature-rich applications with a predefined list (allow list) of available modules have slightly higher latency.
-      * `Driver`- A driver works as an intermediary between ConnexCS and any external system.
-  	   You can write drivers to bridge the ConnexCS DID provisioning system to a provider of your choice or build more complicated alerts.
 
-  5. Click **`Save`**.
-  6. Select your script from the list.
-  7. Enter the code of your script.
+    4. Click **`Save`**.
+    5. Select your script from the list.
+    6. Enter the code of your script.
 
-  If script shows an error, add this and then run the script again:
+		If script shows an error, add this and then run the script again:
 
-  ```
-  {"routing":{}}
-  ```
+  		```
+  		{"routing":{}}
+  		```
 
-  7. **Global Routing Priority** means the script will run for every single call. You have 3 options to choose from:
+    7. **Global Routing Priority** means the script will run for every single call. You have 3 options to choose from:
   	* You can **disable** it if you don't want to use it.
   	* **Run first** or **Run Last** means this script will run first or after the Script Forge enabled in the Routing section.
-  8. The **App** field allow you to integrate the created applications with the ScriptForge.
-  9. Click the green arrow to **`Save and Run`**.
+  	* The **App** field allow you to integrate the created applications with the ScriptForge.
 
-  <img src= "/developers/img/sf1.png" width= "300">
+    8. Click the green arrow to **`Save and Run`**.
 
-  10. You can view the results onscreen.
+    	<img src= "/developers/img/sf1.png" width= "300">
+
+    9. You can view the results onscreen.
 
 === "Schedule"
 
-	The **Schedule** option allows to you run your Script Forge based on pre-determined **dates in month**, **days of a week** and you can even select the time by selecting the values of **minutes** and **hours** from the drop-down menu.
+    The **Schedule** option allows to you run your Script Forge based on pre-determined **dates in month**, **days of a week** and you can even select the time by selecting the values of **minutes** and **hours** from the drop-down menu.
 
-<img src= "/developers/img/sf2.png" width= "300">
+    	<img src= "/developers/img/sf2.png" width= "300">
 
 ### Assign the Script to a Customer
 
