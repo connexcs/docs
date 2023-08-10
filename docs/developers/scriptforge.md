@@ -57,7 +57,6 @@ throw new Error('404 Not Found');
 
 *(**SIP:** Session Initiation Protocol, **DID:** Direct Inward Dialing)
 
-
 ### Class 4 Routing (Routes and Direct Inward Dial)
 
 After the routing engine has executed its main function, the system will run the custom ScriptForge script.
@@ -90,7 +89,7 @@ function main (data = {}, ctx) {
 
 !!! warning "Potential Sync Issues"
     To avoid the system losing synchronisation with your script and the connection crashing, execute ALL async functions with `await`.
-	If it isn't implemented correctly, it affects thatbilling and call stability.
+	If it isn't implemented correctly, it affects that billing and call stability.
 
 ### Form Submission
 
@@ -130,6 +129,8 @@ module.export = {
 
 ### Build Script
 
+=== "Basic"
+
 1. To add a script, click :material-plus:.
 2. Specify the script **Name**.
 3. Select the **Type**:
@@ -147,19 +148,28 @@ module.export = {
 	   You can write drivers to bridge the ConnexCS DID provisioning system to a provider of your choice or build more complicated alerts.
 
 4. Click **`Save`**.
-
-    ![alt text][s2]
-
 5. Select your script from the list.
 6. Enter the code of your script.
-7. Click the green arrow to **`Save and Run`**.
-8. You can view the results onscreen.
+7. **Global Routing Priority** means the script will run for every single call. You have 3 options to choose from:
+	* You can **disable** it if you don't want to use it.
+	* **Run first** or **Run Last** means this script will run first or after the Script Forge enabled in the Routing section.
+8. The **App** field allow you to integrate the created applications with the ScriptForge.
+9. Click the green arrow to **`Save and Run`**.
+10. You can view the results onscreen.
+
+<img src= "/developers/img/sf1.png">
 
 If script shows an error, add this and then run the script again:
 
 ```
 {"routing":{}}
 ```
+
+=== "Schedule"
+
+The **Schedule** option allows to you run your Script Forge based on pre-determined dates in month, days of a week and you can even select the time by selecting the values of minutes and hours from the drip-down menu.
+
+<img src= "/developers/img/sf2.png">
 
 ### Assign the Script to a Customer
 
