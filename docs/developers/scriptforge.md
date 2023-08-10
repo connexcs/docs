@@ -157,18 +157,19 @@ module.export = {
 9. Click the green arrow to **`Save and Run`**.
 10. You can view the results onscreen.
 
-<img src= "/developers/img/sf1.png">
-
 If script shows an error, add this and then run the script again:
 
 ```
 {"routing":{}}
 ```
+
+<img src= "docs/developers/img/sf1.png">
+
 === "Schedule"
 
 The **Schedule** option allows to you run your Script Forge based on pre-determined **dates in month**, **days of a week** and you can even select the time by selecting the values of **minutes** and **hours** from the drop-down menu.
 
-<img src= "/developers/img/sf2.png">
+<img src= "docs/developers/img/sf2.png">
 
 ### Assign the Script to a Customer
 
