@@ -111,7 +111,7 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 + **Exclude** (Deny): Exclude access to one or more rate cards in the list of available providers.
 + **DNC (Do Not Call) List**: The customer won't be able to able to dial the numbers in the specified DNC list. You can add the list of numbers in the [**Database**](https://docs.connexcs.com/developers/database/).
 
-  * Apart from your own DNC list you can also choose [**United States Federal DNC**](https://www.donotcall.gov/). Choosing not to accept telemarketing calls is possible because of the National Do Not Call Registry.
+    Apart from your own DNC list you can also choose [**United States Federal DNC**](https://www.donotcall.gov/). Choosing not to accept telemarketing calls is possible because of the National Do Not Call Registry.
 + **Block Destination Type**: You can select and block the calls to various destinations (carriers) like Mobile, Fixed, Paging, etc.
 + **Spam Scout Scoring**: It blocks Spam calls based on the CLIs.
   You can either Block All, Allow All, Block Most Spam, or Block Least Spam.
