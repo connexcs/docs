@@ -279,10 +279,7 @@ async function main (data) {
 ```
 
 9. Click on `Save and Run`. <img src= /developers/img/callingapi1.png>
-
-10. The code gets published to your website.
-
-<iframe width="1000" height="315" src="/developers/img/callingapi2.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+10. The code gets published to your website. <iframe width="1000" height="315" src="/developers/img/callingapi2.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 !!! warning
 	We're NOT building any API here.
