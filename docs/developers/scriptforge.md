@@ -18,7 +18,6 @@ ConnexCS offers several libraries specifically for use with ConnexCS. [**Develop
 
 You can include some more modules (from npm), available for applications and drivers only.
 
-
 The purpose is to keep the sandbox lightweight and include only the necessary modules:
 
 |Modules||||
@@ -226,7 +225,59 @@ function main(data) {
 }
 ```
 
-## Originate a Call via an API using ScriptForge..
+## Originate a Call via an API using ScriptForge
+
+Suppose a company wants to provide an API, we will build an API.
+
+The API Dialing feature sends an API request to the ConnexCS Platform for their customer to place a call via the API.
+
+For this feature, write an API in the ScriptForge for connecting the company to their customer via ConnexCS Platform using this API (in ScriptForge).
+
+ScriptForge uses the `originate` feature for originating the call.
+
+You need to include, Company ID,the Server where the call will be sent, Destination, CLI, and Extension in the script.
+
+### Calling API Code
+
+1. Login to your account.
+2. Go to **Developer :material-menu-right: ScriptForge IDE :material-menu-right: ScriptForge**.
+3. Click on the blue `+` button.
+4. Enter the **Name** for the script in the **Basic Tab**.
+5. You can use the **Schedule** tab to run your script.
+6. Click on `Save`.
+7. Click on the created script `Calling API`.
+   
+   <img src= /developers/img/callingapi.png>
+
+8. Enter the below code:
+
+```js
+const apiKeys = {
+'Value of the API key' : customer // apiKey, maps to the Customer SIPLink
+};
+
+async function main (data) {
+	const companyID = apiKeys{data.apiKey}; // authorizing the key
+	if (!companyID) throw new Error('401 Unauthorized'); // does the company exists?
+	if (!data.destination) throw new Error('Missing Destination'); // does the destination exists?
+	if (!data.cli) throw new Error('Missing CLI'); // does the CLI exists?
+	if (!data.extension) throw new Error('Missing Extension'); // does the extension exists?
+	
+	var result = await originate.originate(companyID, 'enter server details the calls will be sent to', data.destination, data.cli, data.extension);
+	return result;
+}
+```
+
+9. Click on `Save and Run`.
+
+<img src= /developers/img/callingapi1.png>
+
+10. The code gets published to your website.
+
+<iframe width="560" height="315" src="/developers/img/callingapi2.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+!!! "warning"
+	We're NOT building any API here. We're just using ScriptForge to link the internal and external platforms.
 
 [s2]: /developers/img/176.png "s2"
 [s8]: /developers/img/183.png "s8"
