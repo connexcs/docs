@@ -237,6 +237,17 @@ ScriptForge uses the `originate` feature for originating the call.
 
 You need to include, Company ID,the Server where the call will be sent, Destination, CLI, and Extension in the script.
 
+```mermaid
+A[End Customer] --> B[Customer's Dialer/Application]
+    B --> C[Dialer makes an API request via HTTP]
+    C --> D[API-HTTP API request hits the ConnexCS platform]
+    D --> E[ConnexCS platform runs ScriptForge]
+    E --> F[ScriptForge uses ScriptForge API to place a call]
+    F --> G[The API talks to the ConnexCS Class 5 Infrastructure]
+    G --> H[Class 5 then talks to the Cx Customer Class 4 Infrastructure]
+    H --> I[Call placed]
+```
+
 ### Calling API Code
 
 1. Login to your account.
