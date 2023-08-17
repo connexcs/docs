@@ -278,9 +278,7 @@ async function main (data) {
 }
 ```
 
-9. Click on `Save and Run`.
-
-<img src= /developers/img/callingapi1.png>
+9. Click on `Save and Run`. <img src= /developers/img/callingapi1.png>
 
 10. The code gets published to your website.
 
