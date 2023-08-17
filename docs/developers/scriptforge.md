@@ -256,10 +256,8 @@ flowchart TD
 3. Click on the blue `+` button.
 4. Enter the **Name** for the script in the **Basic Tab**.
 5. You can use the **Schedule** tab to run your script.
-6. Click on `**Save**`.
-7. Click on the created script `**Calling API**`.
-   
-   <img src= /developers/img/callingapi.png width= "500">
+6. Click on `Save`.
+7. Click on the created script `Calling API`. <img src= /developers/img/callingapi.png width= "1000">
 
 8. Enter the below code:
 
@@ -280,13 +278,13 @@ async function main (data) {
 }
 ```
 
-9. Click on `**Save and Run**`.
+9. Click on `Save and Run`.
 
 <img src= /developers/img/callingapi1.png>
 
 10. The code gets published to your website.
 
-<iframe width="560" height="315" src="/developers/img/callingapi2.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1000" height="315" src="/developers/img/callingapi2.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 !!! warning
 	We're NOT building any API here.
