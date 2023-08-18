@@ -108,6 +108,7 @@ nav:
             - Basic Field: developers/pages/basic-field.md
             - Advance Field: developers/pages/advance-field.md
             - Layout: developers/pages/layout.md
+        - Apps: developers/apps.md
            
     - Setup:
         - AnyEdge: anyedge/anyedge.md
