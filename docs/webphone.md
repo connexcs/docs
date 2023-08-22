@@ -170,7 +170,7 @@ Your Web Phone should now be available.
  
 *  **Codec Priority**: You can set the priority of the Codecs which you use in your system.
 
-    <img src= "/setup/img/webphoneadv.png" width= "500">
+<img src= "/setup/img/webphoneadv.png" width= "200">
 
 ## Web Phone Software Developer Kit
 
@@ -396,7 +396,7 @@ Visual Voicemail is an interesting feature that allows you to view the voicemail
 
 Various fields include the Caller, Call-ID, Duration of the call, Call Date and Time. You can listen to the call and download it as well.
 
-<img src= "/misc/img/vv.png" width= "500">
+<img src= "/misc/img/vv.png" width= "1500">
 
 ### Summary
 
