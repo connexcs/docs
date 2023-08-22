@@ -181,19 +181,19 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
     We provide deployment of the Private RTP Server (Media) to our customers, which is liable to some cost.
     You may be able to add Private RTP Servers to the following fields:
     
-    + [Customer :material-menu-right: Routing :material-menu-right: Customer [Name] :material-menu-right: Media](https://docs.connexcs.com/customer/routing/)
+    + [Management :material-menu-right: Customer :material-menu-right: Routing :material-menu-right: Customer [Name] :material-menu-right: Media](https://docs.connexcs.com/customer/routing/)
   
     + [Management :material-menu-right: Tags :material-menu-right: Routing :material-menu-right: Customer [Name] :material-menu-right: Media](https://docs.connexcs.com/customer/tags/)
     
     + [Global :material-menu-right: Routing :material-menu-right: Routing](https://docs.connexcs.com/global-routing/)
     
-    + [Customer :material-menu-right: Routing :material-menu-right: Customer [Name] :material-menu-right: DID (Edit DID `+`) :material-menu-right: Media](https://docs.connexcs.com/customer/did/)
+    + [Management :material-menu-right: Customer :material-menu-right: Routing :material-menu-right: Customer [Name] :material-menu-right: DID (Edit DID `+`) :material-menu-right: Media](https://docs.connexcs.com/customer/did/#media)
     
     + [Global :material-menu-right: DID (Edit DID `+`) :material-menu-right: Media](https://docs.connexcs.com/global/#direct-inward-dial)
     
-    + [Management :material-menu-right: Rate Card :material-menu-right: Provider Rate Card :material-menu-right: Add Provider Rate Card `+` :material-menu-right: Advanced :material-menu-right: Default RTP](https://docs.connexcs.com/provider-ratecard/)
+    + [Management :material-menu-right: Rate Card :material-menu-right: Provider Rate Card :material-menu-right: Add Provider Rate Card `+` :material-menu-right: Advanced :material-menu-right: Default RTP](https://docs.connexcs.com/provider-ratecard/#advanced)
     
-    + [Management :material-menu-right: Rate Card :material-menu-right: Customer Rate Card :material-menu-right: Add Customer Rate Card `+` :material-menu-right: Advanced :material-menu-right: Default RTP](https://docs.connexcs.com/customer-ratecard/)
+    + [Management :material-menu-right: Rate Card :material-menu-right: Customer Rate Card :material-menu-right: Add Customer Rate Card `+` :material-menu-right: Advanced :material-menu-right: Default RTP](https://docs.connexcs.com/customer-ratecard/#advanced)
 
 + **Call Recording**: This allows you to record and store calls, which are then found in **Customer :material-menu-right: Auth :material-menu-right: [Browsing Record](https://docs.connexcs.com/setup/information/recording/)**.
   An extra charge per recorded call of $0.003 gets added to existing fees or charges, so choose carefully how many calls to record:
