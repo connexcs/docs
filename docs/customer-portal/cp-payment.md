@@ -10,6 +10,9 @@ View the list of all **Payments** made to date.
 
 + **Description**: Name of the payment.
 
+!!! info "Bulk Payment Download"
+    If you wish to download all the Paymnet details click on ![Alt text](image.png) on the extreme right side and a **.csv** file will be downloaded to your system.
+
 ## Make payment
 
 To add a new payment, select **`Make Payment`**.
