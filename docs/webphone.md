@@ -392,11 +392,11 @@ This describes how to use the form ScriptForge response to chain an action. Only
 
 ### Visual Voicemail
 
-Visual Voicemail is an interesting feature which allows you to view the voicemail in Webphone.
+Visual Voicemail is an interesting feature that allows you to view the voicemail in Webphone.
 
-There are various fields including the Caller, Call-ID, Duration of the call, Call Date and Time. You can listen to the call and download it as well.
+Various fields include the Caller, Call-ID, Duration of the call, Call Date and Time. You can listen to the call and download it as well.
 
-<img src="img/vv.png" >
+<img src="/docs/img/vv.png" >
 
 ### Summary
 
