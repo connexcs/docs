@@ -180,8 +180,8 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 !!! info "Private RTP Server"
     We provide deployment of the Private RTP Server (Media) to our customers, which is liable to some cost.
     You may be able to add Private RTP Servers to the following fields:
-    
-    + [Management :material-menu-right: Customer :material-menu-right: Routing :material-menu-right: Customer [Name] :material-menu-right: Media](https://docs.connexcs.com/customer/routing/)
+
+    + [Management :material-menu-right: Customer :material-menu-right: Routing :material-menu-right: Customer [Name] :material-menu-right: Media](https://docs.connexcs.com/customer/routing/#media)
   
     + [Management :material-menu-right: Tags :material-menu-right: Routing :material-menu-right: Customer [Name] :material-menu-right: Media](https://docs.connexcs.com/customer/tags/)
     
