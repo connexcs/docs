@@ -358,14 +358,14 @@ Below is the Actions Namespace that describes how actions should run. YOu can us
 | makeCall| alt_phone | alt_phone | Make a call using the campaign's alt_phone property. Used exactly as makeCall(alt_phone) |
 |            | phone_code| phone_code | Make a call using the campaign's phone_code property. Used exactly as makeCall(phone_code)|
 | openForm| formName| The name of any existing form created with the form builder | Opens a form with a provided formName, e.g openForm(feedback form)|
-| redirect| url| - | Redirects a page to this URL value e.g redirect(https://www.example.com)                            |
+| redirect| url| - | Redirects a page to this URL value e.g redirect(https://www.example.com)|
 |            | isExternalLink | Either true or false | Whether a link leads to an external site e.g redirect(www.example.com, true)   - Optional|
 |            | target | _blank | Opens a new page with the provided URL. e.g redirect(https://www.example.com, _blank)    - Optional |
 | toggleMic| - | -| Toggles the mic on or off |
-| save | Decision | Yes | Save a campaign                                                                                     |
+| save | Decision | Yes | Save a campaign|
 |            |                | No | Don't save a  campaign|
 |            |                | Unknown | The decision to save a campaign is unknown |
-| next       | - | - | Load the next campaign |
+| next| - | - | Load the next campaign|
 
 ### The Procedure
 
@@ -389,6 +389,14 @@ As already mentioned, only a button can start the first action in a series of ac
 This describes how to use the form ScriptForge response to chain an action. Only one action can run at a time. The process for selecting which action to run is as follows:
 
 1. If the __.action object has its properties set, then that's the action that will run.
+
+### Visual Voicemail
+
+Visual Voicemail is an interesting feature which allows you to view the voicemail in Webphone.
+
+There are various fields including the Caller, Call-ID, Duration of the call, Call Date and Time. You can listen to the call and download it as well.
+
+<img src="img/vv.png" >
 
 ### Summary
 
