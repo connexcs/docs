@@ -161,7 +161,7 @@ Your Web Phone should now be available.
     * **Restrict Customer Login:** Select existing Companies from the dropdown to allow them access to WebPhone. If no companies are on the list, then all will have access.
     *  **CSS:** You can add CSS (Cascading Style Sheets) style to your Webphone.
     *  **Codec Delete**: You can delete the Codec which you don't require in your Webphone. You can check the Codec list from Management > Carrier > Select a Carrier > Auth > blue `+` button > under Codecs tab.
-        
+
 !!! note
     Please try to use a Regex Pattern when to wish to delete a codec e.g., **PC.***, if you want to remove all the codecs starting with PC else you always have the option to write the name of the codec.
 
@@ -170,7 +170,7 @@ Your Web Phone should now be available.
  
 *  **Codec Priority**: You can set the priority of the Codecs which you use in your system.
 
-    &emsp;![alt text][webphoneadv] 
+    &emsp;![alt text][webphoneadv]
 
 ## Web Phone Software Developer Kit
 
