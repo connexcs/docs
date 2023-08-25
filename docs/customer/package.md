@@ -25,7 +25,7 @@ Use **Packages** to offer predefined products and services to each customer.
 It allows you to simulate the package:
 
 1. **Customer:** Select the customer you want to run the package for.
-2. **Simulate:** You can select `yes` if you want to the run the package or `no`.
+2. **Simulate:** You can select `yes` (it will geberate a report) if you want to the run the package or `no` (it will again charge for the package).
 3. **Date:** You can select the date on which you want to simulate the package.
 
 ![runpackage](/misc/img/runpackage.jpg)
