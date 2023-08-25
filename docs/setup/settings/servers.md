@@ -177,7 +177,7 @@ Use this to update the Channels for the selected server. The update will be acti
 
 ### Run Server Update
 
-This only needs to run when the system indicates "There's a pending update on the server" at the top of the server details.
+This only needs to run when the system indicates "Theres a pending update on the server" at the top of the server details.
 
 &emsp;![alt text][server-update]
 
