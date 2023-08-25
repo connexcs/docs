@@ -137,7 +137,7 @@ For example, if the CPS or Channels limits have reached, capacity failover will 
 
 Select certificates to apply to a server.
 
-<img src= "/setup/img/server1.png">
+<img src= "/setup/img/server1.png" width= "300">
 
 To add a Certificate to a sever,
 
