@@ -47,11 +47,11 @@ SQL is currently available in 3 parts of the system:
 
 + Customer (Client Side): **Management :material-menu-right: Customer :material-menu-right: SQL**
 
-<img src= "/developers/img/client.png">
+<img src= "/developers/img/client.png" width= "1500">
 
 + CDR (Server): **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: SQL**
 
-<img src= "/developers/img/cdr.png">
+<img src= "/developers/img/cdr.png" width= "1500">
 
 + Userspace Database (Server): **Developer :material-menu-right: Database :material-menu-right: SQL**
 
