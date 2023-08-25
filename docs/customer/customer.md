@@ -98,6 +98,7 @@ By clicking on `+` button we can add customer (see [**Create Customers**](https:
     + **RTP Firewall**: It will bypass the media Firewall.<br>To let the customer strictly use the existing RTP firewall under **Locked** and its flexibility to use RTP Firewall under **Unlocked**.
     + **Account Manager**: Designating the control of this account to a specific user.
     + **Call Recording Retention Days**: How long the customer wants to keep the recorded calls.
+    + **Domain**: A customer can sign into the various domains available in the system.Each domain can have different price points, support levels, features, etc.
 
 === "Address"
 
