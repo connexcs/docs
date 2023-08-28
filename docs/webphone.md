@@ -400,7 +400,7 @@ This is an interesting feature, that sync's the contacts which you add in the **
 11. Click on **Contacts**, and you will see the contact you added is now available on the **Webphone**.
 <img src= "/misc/img/ph5.png">
 
-<iframe width="560" height="315" src="/misc/img/ph0.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1000" height="415" src="/misc/img/ph0.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Summary
 
