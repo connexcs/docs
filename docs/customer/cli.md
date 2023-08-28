@@ -84,11 +84,11 @@ The **P-Asserted-ID** manipulation uses the same syntax as the Replace CLI.
 
 + **STIR / SHAKEN Certificate:** If you apply any STIR / SHAKEN Certificate to a customer's account for calls verification, for example, whether the calls are spam.
 
-+ **STIR / SHAKEN Attestation:** This is the level of a certification you can select from 3 levels `A`, `B`, or `C`.
+    + **STIR / SHAKEN Attestation:** This is the level of a certification you can select from 3 levels `A`, `B`, or `C`.
 
 <img src= "/customer/img/cli1.png" width= "500">
 
-Click **`Save`** to complete the CLI configuration.
++ Click **`Save`** to complete the CLI configuration.
 
 ## Allow Customers to add their own Caller Line Identification
 

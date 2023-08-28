@@ -1,6 +1,6 @@
 # Introduction
 
-**Management :material-menu-right: Tags**
+**Management :material-menu-right: Customer :material-menu-right: Tags**
 
 Tags allow you to create Alerts and Routing information at a global level. Once you have created the Tags, you can then tag the created Alert or Routing Strategy to your customers.
 
