@@ -41,12 +41,12 @@ Routing Tag helps you strategize the Routing options for your customer. You can 
 1. Navigate to **Management :material-menu-right: Tags :material-menu-right: Routing**.
 2. Click on the blue `+` button on the top-right.
 
-#### Basic Fiel
+#### Basic Field
 
 1. **Rate Card**: Also known as Tariff, this allows you to select the rate card used on a customer's account. You can handle these calls in the following three ways:
-   + **Internal**: Send a call to the ConnexCS Class5 (Voice Mail, Interactive Voice Response (IVR), etc.). If selected, the "Auto" option becomes available, which will generate dial strings from all possible internal extensions.
-   + **Extension**: (uses SIP users in **Customer :material-menu-right: Auth configured :material-menu-right: SIP Users**) Send a call to a Session Initiation Protocol (SIP) Authenticated user on the account.
-   + **To Carriers**: Choose a carrier to send the call to a location outside of the ConnexCS system.
+      + **Internal**: Send a call to the ConnexCS Class5 (Voice Mail, Interactive Voice Response (IVR), etc.). If selected, the "Auto" option becomes available, which will generate dial strings from all possible internal extensions.
+      + **Extension**: (uses SIP users in **Customer :material-menu-right: Auth configured :material-menu-right: SIP Users**) Send a call to a Session Initiation Protocol (SIP) Authenticated user on the account.
+      + **To Carriers**: Choose a carrier to send the call to a location outside of the ConnexCS system.
 2. **Tech Prefix**: This lets you distinguish a route from an inbound party. When several customers share the same IP address, each customer needs an individual Tech Prefix so the switch can route calls correctly. It enables service providers to differentiate between several rate cards.
 3. **Tag**: You can apply any tags here.
 4. **Dial String Prefix Set**: Helpful for commonly used sets of prefixes. Rather than entering a complete list of prefixes for the UK, for example, you can create a predefined Prefix Set (defined under **Setup :material-menu-right: Advanced :material-menu-right: Prefix Set**) and then select it here for appropriate customers.
@@ -80,8 +80,8 @@ Routing Tag helps you strategize the Routing options for your customer. You can 
 !!! warning "Asterisk pings"
     Asterisk doesn't have SIP Ping (OPTIONS) enabled by default. If your customer / carrier is using Asterisk, you may need to disable this if they don't have it enabled on their side, as calls will typically disconnect after 30 seconds.
 
-4. **Flow Speed (CPS)**: Limits the calls per second. You should set this for each customer card assigned to the customer account.
-5. **CPS Spike Buffer**: Limit a spike of calls by spreading them over a longer period of time. This essentially manages a large volume of calls over a short period of time.
+3. **Flow Speed (CPS)**: Limits the calls per second. You should set this for each customer card assigned to the customer account.
+4. **CPS Spike Buffer**: Limit a spike of calls by spreading them over a longer period of time. This essentially manages a large volume of calls over a short period of time.
   Once the buffer limit reaches its threshold, the calls per second kicks in, distributing the spike of calls.
 
 !!! note "CPS Buffering"
@@ -91,8 +91,8 @@ Routing Tag helps you strategize the Routing options for your customer. You can 
     
     Changing the CPS Buffering value only affects calls that exceed the CPS. The delay will show as increased PDD on the call, each second the system will emit a 100 Trying (High CPS, Buffering) response to show the status/progress of the call.
 
-6. **ASR Plus** assists capacity management by helping you define how to handle connections for known failed numbers. For information on the ASR Plus options, see [**ASR Plus Details**](https://docs.connexcs.com/customer/routing/#asr-answer-seizure-ratio-plus-details) here.
-7. **Balance Disconnect** this feature checks the balance every 60 seconds. It will disconnect the call when the **balance plus the debit limit** is below $0.
+5. **ASR Plus** assists capacity management by helping you define how to handle connections for known failed numbers. For information on the ASR Plus options, see [**ASR Plus Details**](https://docs.connexcs.com/customer/routing/#asr-answer-seizure-ratio-plus-details) here.
+6. **Balance Disconnect** this feature checks the balance every 60 seconds. It will disconnect the call when the **balance plus the debit limit** is below $0.
 
 !!! note
     Balance Disconnect only takes into account the **completed calls**; it excludes any **active calls**.
@@ -271,7 +271,6 @@ The **P-Asserted-ID** manipulation uses the same syntax as the Replace CLI.
 
     + **STIR / SHAKEN Attestation:** This is the level of a certification you can select from 3 levels `A`, `B`, or `C`.
 
-<img src= "/misc/img/t10.png">
-
-
 16. Click **`Save`** to complete the CLI configuration.
+
+<img src= "/misc/img/t10.png">
