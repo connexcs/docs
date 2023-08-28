@@ -81,6 +81,7 @@ Routing Tag helps you strategize the Routing options for your customer. You can 
     Asterisk doesn't have SIP Ping (OPTIONS) enabled by default. If your customer / carrier is using Asterisk, you may need to disable this if they don't have it enabled on their side, as calls will typically disconnect after 30 seconds.
 
 3.**Flow Speed (CPS)**: Limits the calls per second. You should set this for each customer card assigned to the customer account.
+
 4.**CPS Spike Buffer**: Limit a spike of calls by spreading them over a longer period of time. This essentially manages a large volume of calls over a short period of time.
   Once the buffer limit reaches its threshold, the calls per second kicks in, distributing the spike of calls.
 
@@ -162,11 +163,11 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 
 5.**RTP Proxy Mode**: If a connection via our service fails and you have selected relaxed, it will automatically fail over to the backup.
 
-    :material-menu-right: `Strict`- This will enforce the proxy engagement. If the proxy can't engage with the call, the call won't get established.
+: material-menu-right: `Strict`- This will enforce the proxy engagement. If the proxy can't engage with the call, the call won't get established.
 
     !!! note "Free accounts are limited to how many RTP Proxy channels get enabled, this may prevent calls from connecting if you have more channels than our free accounts allow you to have."
 
-    :material-menu-right: `Relaxed`- This will make the best efforts to engage the RTP Proxy; if it can't get engaged because of either network errors, or because you don't have enough RTP capacity, the calls will connect directly.
+:material-menu-right: `Relaxed`- This will make the best efforts to engage the RTP Proxy; if it can't get engaged because of either network errors, or because you don't have enough RTP capacity, the calls will connect directly.
 
 !!! success "When should I use RTP Proxy?"
     Use an RTP Proxy if you don't want your customers to know your providers.
@@ -188,11 +189,11 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 6.**Call Recording**: This allows you to record and store calls, which are then found in **Customer :material-menu-right: Auth :material-menu-right: [Browsing Record](https://docs.connexcs.com/setup/information/recording/)**.
   An extra charge per recorded call of $0.003 gets added to existing fees or charges, so choose carefully how many calls to record:
 
-    :material-menu-right: `Disabled`- no calls get recorded
+:material-menu-right: `Disabled`- no calls get recorded
 
-    :material-menu-right: `Sampling`- Choose from a 1%, 5%, 25%, or 50% sample of your calls (e.g: 1% will record 1 of every 100 calls, 25% will record 25 of every 100 calls, etc.).
+:material-menu-right: `Sampling`- Choose from a 1%, 5%, 25%, or 50% sample of your calls (e.g: 1% will record 1 of every 100 calls, 25% will record 25 of every 100 calls, etc.).
 
-    :material-menu-right: `Enabled (Always On)`- Record all calls.
+:material-menu-right: `Enabled (Always On)`- Record all calls.
 
 !!! tip "The Call Recording setting is disabled"
     You need to enable the feature first on the account in **Setup :material-menu-right: Settings :material-menu-right: [Packages](https://docs.connexcs.com/setup/settings/account/#packages)** before it gets enabled here for individual customers.
