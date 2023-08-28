@@ -184,7 +184,7 @@ nav:
             - Feature List: feature-list.md
         - How To:
             - Locate Call-ID: guides/howto/callid.md
-            - Resrict Users to Specific Countries/Routing: guides/howto/restrict-calling-plan.md
+            - Restrict Users to Specific Countries/Routing: guides/howto/restrict-calling-plan.md
         - Monitoring: guides/monitoring.md
         - SIP Devices: sip-devices.md
         - Status Page (for Customer Portals): system-status.md
