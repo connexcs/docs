@@ -41,7 +41,7 @@ Routing Tag helps you strategize the Routing options for your customer. You can 
 1. Navigate to **Management :material-menu-right: Tags :material-menu-right: Routing**.
 2. Click on the blue `+` button on the top-right.
 
-#### Basic Field
+#### Basic Fiel
 
 1. **Rate Card**: Also known as Tariff, this allows you to select the rate card used on a customer's account. You can handle these calls in the following three ways:
    + **Internal**: Send a call to the ConnexCS Class5 (Voice Mail, Interactive Voice Response (IVR), etc.). If selected, the "Auto" option becomes available, which will generate dial strings from all possible internal extensions.
@@ -58,7 +58,7 @@ Routing Tag helps you strategize the Routing options for your customer. You can 
 #### Price Limits
 
 1. **Capped Rate and Provider Capped Rate**: Set the maximum cost of a call. Calls that exceed the set rate won't get connected. For example, for customers with flat rate accounts, which allows to dial all UK numbers but premium numbers, you would set the Provider Capped Rate at 0.01, so any call that the provider might charge over that amount wouldn't get completed.
-2. **Profit Assurance**: When Enabled, only calls that are profitable pass-through; any call that costs more than the retail rate are not allowed to complete. This is particularly useful for A-Z routes or NPA-NXX rate cards. Keep in mind that enabling it adds an extra Post-dial delay (PDD) to the call.
+2. **Profit Assurance**: When Enabled, only calls that are profitable pass-through; any call that costs more than the retail rate aren't allowed to complete. This is particularly useful for A-Z routes or NPA-NXX rate cards. Keep in mind that enabling it adds an extra Post-dial delay (PDD) to the call.
 3. **Block Connect Cost**: Block any call that has a connection fee.
 4. **FTC DNC Report ANI Block (USA)**: When Enabled, ConnexCS will take a copy of FTC data (using the FCC's Do Not Call (DNC) Reported Calls Data API) and add it to the system. We can then block callers from known spammer CLI / ANI's.
 5. **DNO**: [Click here](https://docs.connexcs.com/dnc/#do-not-originate-dno-list-blocking) to know more about it.
@@ -81,7 +81,6 @@ Routing Tag helps you strategize the Routing options for your customer. You can 
     Asterisk doesn't have SIP Ping (OPTIONS) enabled by default. If your customer / carrier is using Asterisk, you may need to disable this if they don't have it enabled on their side, as calls will typically disconnect after 30 seconds.
 
 4. **Flow Speed (CPS)**: Limits the calls per second. You should set this for each customer card assigned to the customer account.
-
 5. **CPS Spike Buffer**: Limit a spike of calls by spreading them over a longer period of time. This essentially manages a large volume of calls over a short period of time.
   Once the buffer limit reaches its threshold, the calls per second kicks in, distributing the spike of calls.
 
@@ -95,8 +94,8 @@ Routing Tag helps you strategize the Routing options for your customer. You can 
 6. **ASR Plus** assists capacity management by helping you define how to handle connections for known failed numbers. For information on the ASR Plus options, see [**ASR Plus Details**](https://docs.connexcs.com/customer/routing/#asr-answer-seizure-ratio-plus-details) here.
 7. **Balance Disconnect** this feature checks the balance every 60 seconds. It will disconnect the call when the **balance plus the debit limit** is below $0.
 
-  !!! note
-      Balance Disconnect only takes into account the **completed calls**; it excludes any **active calls**.
+!!! note
+    Balance Disconnect only takes into account the **completed calls**; it excludes any **active calls**.
 
 <img src= "/misc/img/t4.png">
 
@@ -219,8 +218,7 @@ For advanced routing, click :material-plus: to select a [**Prefix Set**](https:/
 
 ## CLI Tag
 
-You can apply the careted **CLI Tags** to various customers.
-
+You can apply the created **CLI Tags** to various customers.
 
 ### Create a CLI Tag
 
@@ -239,25 +237,25 @@ The **P-Asserted-ID** manipulation uses the same syntax as the Replace CLI.
         If you wanted to allow all calls but assign a specific number (such as the Main Billable number for the business), you would set CLI as ".*" and then enter the desired P-Asserted ID.
         All calls will then have this number as the P-Asserted-ID.
 
-1. **Forced**: Enabling this will allow a call if there are no other matching CLIs in the system. This will also replace the CLI that's presented with the CLI entered here.
+8. **Forced**: Enabling this will allow a call if there are no other matching CLIs in the system. This will also replace the CLI that's presented with the CLI entered here.
 
     !!! Example
         Create a permitted list of CLIs, then select **Forced** on the CLI to use if none of the others in the permitted list match. (Best practice is to have one unique **Forced** CLI.)
 
-2. **Direction Applied**: Select either **Termination** for calls a customer makes out or **Origination** (also refers to DIDs) for inbound calls made to our customers.
+9. **Direction Applied**: Select either **Termination** for calls a customer makes out or **Origination** (also refers to DIDs) for inbound calls made to our customers.
 
     !!! Example
         Create a permitted list that exclusively allows calls to or from the same country.  
 
-3. **Allow Type**: You can select from various options like Mobile, Paging, VoIP, Satellite etc to allow the CLIs.
+10. **Allow Type**: You can select from various options like Mobile, Paging, VoIP, Satellite etc to allow the CLIs.
 
-4.  **Use DID**: Pull in DIDs from the customer's account to use either as a Filter or as a Replacement.  
+11. **Use DID**: Pull in DIDs from the customer's account to use either as a Filter or as a Replacement.  
 
     !!! Example
         If Dialled matched number is starting with **1**, the CLI routes to 11111.
      The CLI can be a Regular Expression also.
 
-5.  **Database** (To add CLI and PAID from a database):
+12. **Database** (To add CLI and PAID from a database):
 
     1. Upload a list of numbers you choose as CLI or PAID under **Developer > Database**.
     2. Go to **Customer > Routing > CLI** add the same database under database field. Under rewrite PAID field add this database.
@@ -265,14 +263,15 @@ The **P-Asserted-ID** manipulation uses the same syntax as the Replace CLI.
     !!! note
         Make sure you select  the **Forced** option as **Yes**.
 
-6.  **Dialed Number Match**: To route to a specific CLI, you dialled match number.
+13. **Dialed Number Match**: To route to a specific CLI, you dialled match number.
 
-7.  **Notes**: Notes give you information about the CLI.
+14. **Notes**: Notes give you information about the CLI.
 
-8.  **STIR / SHAKEN Certificate:** If you apply any STIR / SHAKEN Certificate to a customer's account for calls verification, for example, whether the calls are spam.
+15. **STIR / SHAKEN Certificate:** If you apply any STIR / SHAKEN Certificate to a customer's account for calls verification, for example, whether the calls are spam.
 
     + **STIR / SHAKEN Attestation:** This is the level of a certification you can select from 3 levels `A`, `B`, or `C`.
 
 <img src= "/misc/img/t10.png">
 
-9.  Click **`Save`** to complete the CLI configuration.
+
+16. Click **`Save`** to complete the CLI configuration.
