@@ -80,8 +80,8 @@ Routing Tag helps you strategize the Routing options for your customer. You can 
 !!! warning "Asterisk pings"
     Asterisk doesn't have SIP Ping (OPTIONS) enabled by default. If your customer / carrier is using Asterisk, you may need to disable this if they don't have it enabled on their side, as calls will typically disconnect after 30 seconds.
 
-3. **Flow Speed (CPS)**: Limits the calls per second. You should set this for each customer card assigned to the customer account.
-4. **CPS Spike Buffer**: Limit a spike of calls by spreading them over a longer period of time. This essentially manages a large volume of calls over a short period of time.
+3.**Flow Speed (CPS)**: Limits the calls per second. You should set this for each customer card assigned to the customer account.
+4.**CPS Spike Buffer**: Limit a spike of calls by spreading them over a longer period of time. This essentially manages a large volume of calls over a short period of time.
   Once the buffer limit reaches its threshold, the calls per second kicks in, distributing the spike of calls.
 
 !!! note "CPS Buffering"
@@ -91,8 +91,8 @@ Routing Tag helps you strategize the Routing options for your customer. You can 
     
     Changing the CPS Buffering value only affects calls that exceed the CPS. The delay will show as increased PDD on the call, each second the system will emit a 100 Trying (High CPS, Buffering) response to show the status/progress of the call.
 
-5. **ASR Plus** assists capacity management by helping you define how to handle connections for known failed numbers. For information on the ASR Plus options, see [**ASR Plus Details**](https://docs.connexcs.com/customer/routing/#asr-answer-seizure-ratio-plus-details) here.
-6. **Balance Disconnect** this feature checks the balance every 60 seconds. It will disconnect the call when the **balance plus the debit limit** is below $0.
+5.**ASR Plus** assists capacity management by helping you define how to handle connections for known failed numbers. For information on the ASR Plus options, see [**ASR Plus Details**](https://docs.connexcs.com/customer/routing/#asr-answer-seizure-ratio-plus-details) here.
+6.**Balance Disconnect** this feature checks the balance every 60 seconds. It will disconnect the call when the **balance plus the debit limit** is below $0.
 
 !!! note
     Balance Disconnect only takes into account the **completed calls**; it excludes any **active calls**.
@@ -160,7 +160,7 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 
 !!! tip "The recommended RTP Media Proxy servers are the **Closest (To ConnexCS) Server** or the **Closest (Elastic) Server**."
 
-5. **RTP Proxy Mode**: If a connection via our service fails and you have selected relaxed, it will automatically fail over to the backup.
+5.**RTP Proxy Mode**: If a connection via our service fails and you have selected relaxed, it will automatically fail over to the backup.
 
     :material-menu-right: `Strict`- This will enforce the proxy engagement. If the proxy can't engage with the call, the call won't get established.
 
@@ -185,7 +185,7 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 
 *While it's doubtful that any information will get logged in the customer / providers switch when the audio gets engaged, it's possible for an engineer to learn this information from a SIP trace, PCAP, or by looking at transit locations. DTMF Detection ONLY works when RTP Proxy mode gets enabled.
 
-6. **Call Recording**: This allows you to record and store calls, which are then found in **Customer :material-menu-right: Auth :material-menu-right: [Browsing Record](https://docs.connexcs.com/setup/information/recording/)**.
+6.**Call Recording**: This allows you to record and store calls, which are then found in **Customer :material-menu-right: Auth :material-menu-right: [Browsing Record](https://docs.connexcs.com/setup/information/recording/)**.
   An extra charge per recorded call of $0.003 gets added to existing fees or charges, so choose carefully how many calls to record:
 
     :material-menu-right: `Disabled`- no calls get recorded
@@ -197,7 +197,7 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 !!! tip "The Call Recording setting is disabled"
     You need to enable the feature first on the account in **Setup :material-menu-right: Settings :material-menu-right: [Packages](https://docs.connexcs.com/setup/settings/account/#packages)** before it gets enabled here for individual customers.
 
-7. **Block DTMF:** This option allows you to either `pass` or `block` DTMF through your calls.
+7.**Block DTMF:** This option allows you to either `pass` or `block` DTMF through your calls.
 
 !!! note "Make sure your carrier supports the DTMF feature."
 
