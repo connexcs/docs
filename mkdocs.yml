@@ -82,6 +82,8 @@ nav:
         - Routing Global: global-routing.md
         - USA Routing: routing-usa.md
     
+    - Routing: tag.md
+
     - Report: report.md  
 
     - Global:
