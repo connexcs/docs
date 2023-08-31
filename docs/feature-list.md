@@ -259,7 +259,7 @@ The following is a comprehensive list of features included in the latest stable 
     * [Class 5 Applications](https://docs.connexcs.com/class5/apps/)
     * UI Enhancement
     * Batch Processing
-* [Form Builder - Place custom data collection forms on Customer and Control Panel](https://docs.connexcs.com/developers/form-builder/)
+* [Pages - Place custom data collection forms on Customer and Control Panel](https://docs.connexcs.com/developers/pages/introduction/)
 * [Analytics - Build your own Reports](https://docs.connexcs.com/developers/analytics/)
 * Userspace Database - Create your own databases
     * Real-time querying with ScriptForge
