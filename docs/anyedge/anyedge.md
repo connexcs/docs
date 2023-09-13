@@ -43,7 +43,7 @@ Click the :material-plus: button to set the following:
 
     See [**Compaction and Compression**](https://docs.connexcs.com/anyedge/anyedge/#compaction-and-compression) for details.
 
-* **Flags**: You may choose form 3 types of flags:
+* **Flags**: You may choose from 3 types of flags:
     * **Registrations to AnyReg**: The AnyReg registration server will holds the AnyEdge registrations for all your customers.
     * **AnyEdge SIP Ping Replies**: [**Click here**](https://docs.connexcs.com/anyedge/anyedge/#anyedge-sip-ping-replies) to know more.
   
@@ -59,7 +59,7 @@ After AnyEdge configuration is complete, click **:material-plus:** next to **Dom
 
 It can provide added **Transport Layer Security (TLS)/ Secure Sockets Layer (SSL)** configuration for SIP protection.
 
-1. You can choose various versions of SSL and TLS certificates from the drpdown menu.
+1. You can choose various versions of SSL and TLS certificates from the drop-down menu.
 2. If you enable the **Verify Certificate** option, then it will verify the client's certificate.
 3. If you enable the **Require Certificate** option, it means the client should have the certificate.
 
@@ -224,7 +224,7 @@ Therefore, the AnyEdge SIP Ping Replies feature will help fix this issue. This f
 
 This feature adds another capability where the AnyEdge Laodbalancer is aware of the latency of the Opensips (backend) servers. The AnyEdge Loadbalancer measures the latency on backend servers by checking that the servers are online. This can be done by adding the **Timestamps**.
 
-According to RFC 3261, there is a proper header Timestamp available. We include this Timestamp header with the message we are going to send. When we get a reply, it comes along with the Timestamp as well. The Timestamp of the message and reply should be identical, which measures the latency or calculates the difference.
+According to RFC 3261, there is a proper header Timestamp available. We include this Timestamp header with the message we're going to send. When we get a reply, it comes along with the Timestamp as well. The Timestamp of the message and reply should be identical, which measures the latency or calculates the difference.
 
 ### How to Enable AnyEdge SIP Ping Replies
 
