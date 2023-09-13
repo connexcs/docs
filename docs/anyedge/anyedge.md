@@ -43,17 +43,27 @@ Click the :material-plus: button to set the following:
 
     See [**Compaction and Compression**](https://docs.connexcs.com/anyedge/anyedge/#compaction-and-compression) for details.
 
-* **Flags**: *in progress*
+* **Flags**: You may choose form 3 types of flags:
+    * **Registrations to AnyReg**: The AnyReg registration server will holds the AnyEdge registrations for all your customers.
+    * **AnyEdge SIP Ping Replies**: [**Click here**](https://docs.connexcs.com/anyedge/anyedge/#anyedge-sip-ping-replies) to know more.
   
 * **Primary Attempts**: (not useful for less than 3 servers) Set the number of attempts before going to a second zone.
   
 * **Secondary Attempts**: (not useful for less than 3 servers) Set the number of attempts before going to a third zone.
 
+<img src= "/setup/img/any1.jpg">
+
 ### AnyEdge Domain
 
-After AnyEdge configuration is complete, click **:material-plus:** next to Domains to configure a specific domain with the same settings as Configure AnyEdge.
+After AnyEdge configuration is complete, click **:material-plus:** next to **Domains** to configure a specific domain with the same settings as Configure AnyEdge.
 
-It can provide added Transport Layer Security (TLS) configuration for SIP protection.
+It can provide added **Transport Layer Security (TLS)/ Secure Sockets Layer (SSL)** configuration for SIP protection.
+
+1. You can choose various versions of SSL and TLS certificates from the drpdown menu.
+2. If you enable the **Verify Certificate** option, then it will verify the client's certificate.
+3. If you enable the **Require Certificate** option, it means the client should have the certificate.
+
+<img src= "/setup/img/ssl.jpg">
 
 ### AnyEdge Destinations
 
