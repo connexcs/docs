@@ -267,7 +267,7 @@ const apiKeys = {
 };
 
 async function main (data) {
-	const companyID = apiKeys{data.apiKey}; // authorizing the key
+	const companyID = apiKeys{data.apiKey}; // authorizing the key, maps to Customer SIPLINK (105979) UUID
 	if (!companyID) throw new Error('401 Unauthorized'); // does the company exists?
 	if (!data.destination) throw new Error('Missing Destination'); // does the destination exists?
 	if (!data.cli) throw new Error('Missing CLI'); // does the CLI exists?
@@ -278,8 +278,21 @@ async function main (data) {
 }
 ```
 
-9.Click on `Save and Run`. <img src= /developers/img/callingapi1.png>
-10.The code gets published to your website. <iframe width="1000" height="315" src="/developers/img/callingapi2.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+9.Click on `Save and Run`. <img src= /developers/img/callingapi12.png>
+<iframe width="1000" height="315" src="/developers/img/callingapi22.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+10.You can access this feature on your **Customer Portal** using the **UUID**. We use the UUID to access ScriptForge from the customer portal URL as an API unauthenticated.
+For example, your Customer Portal URL is https://api.xx.yy/api/script/**uuid** and the code will be published here.
+
+!!! Note "How to fetch the UUID?"
+	1. Login to your **Customer Portal**.
+	2. Navigate to **Developer :material-menu-right: ScriptForge**.
+	3. Click on your **API Calling Script**. <img src= /developers/img/uuid1.png>
+	4. Press **F12** key on your keyboard.
+	5. Click on **Network :material-menu-right: Preview**.
+	6. Press **Control+R**.
+	7. Inside the **Filter** field, search the **Script Forge ID** and you can find the associated **UUID**. 
+	8. The UUID is can also been seen in square brackets next to the **ScriptForge ID**. For example, **ScriptForge ID: xxxx[yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyyyyyy]**. Here, the **ScriptForge ID** is **xxxx** and **UUID** is **yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyyyyyy**. <img src= /developers/img/uuid2.png> <img src= /developers/img/callingapi12.png> <iframe width="1000" height="315" src="/developers/img/uuid4.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 !!! warning
 	We're NOT building any API here.
