@@ -277,7 +277,7 @@ async function main (data) {
 ```
 
 9.Click on `Save and Run`. <img src= /developers/img/callingapi12.jpg>
-<iframe width="585 height="315" src="/developers/img/callingapi22.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="585" height="315" src="/developers/img/callingapi22.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 10.You can access this feature on your **Customer Portal** using the **UUID**. We use the UUID to access ScriptForge from the customer portal URL as an API unauthenticated.
 For example, your Customer Portal URL is https://api.xx.yy/api/script/**uuid** and the code will be published here.
