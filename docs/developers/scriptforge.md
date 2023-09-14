@@ -277,7 +277,7 @@ async function main (data) {
 ```
 
 9.Click on `Save and Run`. <img src= /developers/img/callingapi12.jpg>
-<iframe width="580" height="315" src="/developers/img/callingapi22.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="585 height="315" src="/developers/img/callingapi22.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 10.You can access this feature on your **Customer Portal** using the **UUID**. We use the UUID to access ScriptForge from the customer portal URL as an API unauthenticated.
 For example, your Customer Portal URL is https://api.xx.yy/api/script/**uuid** and the code will be published here.
@@ -292,7 +292,7 @@ For example, your Customer Portal URL is https://api.xx.yy/api/script/**uuid** a
 	7. Inside the **Filter** field, search the **Script Forge ID** and you can find the associated **UUID**. 
 	8. The UUID is also displayed inside the square brackets next to the **ScriptForge ID**. For example, **ScriptForge ID: xxxx [yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyyyyyy]**. Here, the **ScriptForge ID** is **xxxx** and **UUID** is **yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyyyyyy**. <img src= "/developers/img/uuid5.jpg" width= "1000">
 	
-	<iframe width="590" height="315" src="/developers/img/uuid4.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<iframe width="585" height="315" src="/developers/img/uuid4.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 !!! warning
 	We're NOT building any API here.
