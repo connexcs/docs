@@ -227,13 +227,13 @@ function main(data) {
 
 ## Originate a Call via an API using ScriptForge
 
-The API Dialing feature sends an API request to the ConnexCS Platform for their customer to place a call via the API.
+The API Dialing feature sends an API request to the ConnexCS Platform for their customers to place a call via the API.
 
-For this feature, write an API in the ScriptForge for connecting the company to their customer via ConnexCS Platform using this API (in ScriptForge).
+For this feature, write an API in ScriptForge for connecting the company to their customer via the ConnexCS Platform using this API (in ScriptForge).
 
 ScriptForge uses the `originate` feature for originating the call.
 
-You need to include, Company ID,the Server where the call will be sent, Destination, CLI, and Extension in the script.
+You need to include the Company ID,the Server where the call will be sent, Destination, CLI, and Extension in the script.
 
 ```mermaid
 flowchart TD
