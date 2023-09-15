@@ -260,24 +260,24 @@ flowchart TD
 8. Enter the below code:
 
 ```js
+const originate = require('cxOriginate'); // for originating the call
 const apiKeys = {
-'Value of the API key' : customer // apiKey, maps to the Customer SIPLink
+	'Secret Key/API Key': customer ID // maps to Customer SIPLINK 
 };
 
-async function main (data) {
-	const companyID = apiKeys{data.apiKey}; // authorizing the key, maps to Customer SIPLINK (105979) UUID
-	if (!companyID) throw new Error('401 Unauthorized'); // does the company exists?
+//async function main (data) {
+	const companyId = apiKeys[data.apiKey]; // authorizing the key
+	if (!companyId) throw new Error('401 Unauthorized'); // does the company exists?
 	if (!data.destination) throw new Error('Missing Destination'); // does the destination exists?
 	if (!data.cli) throw new Error('Missing CLI'); // does the CLI exists?
 	if (!data.extension) throw new Error('Missing Extension'); // does the extension exists?
-	
 	var result = await originate.originate(companyID, 'enter server details the calls will be sent to', data.destination, data.cli, data.extension);
-	return result;
+	return {status: 'OK'};
 }
 ```
 
-9.Click on `Save and Run`. <img src= /developers/img/callingapi12.jpg>
-<iframe width="585" height="315" src="/developers/img/callingapi22.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+9.Click on `Save and Run`. <img src= /developers/img/callingapi123.jpg>
+<iframe width="585" height="315" src="/developers/img/callingapi223.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 10.You can access this feature on your **Customer Portal** using the **UUID**. We use the UUID to access ScriptForge from the customer portal URL as an API unauthenticated.
 For example, your Customer Portal URL is https://api.xx.yy/api/script/**uuid** and the code will be published here.
@@ -290,9 +290,9 @@ For example, your Customer Portal URL is https://api.xx.yy/api/script/**uuid** a
 	5. Click on **Network :material-menu-right: Preview**.
 	6. Press **Control+R**.
 	7. Inside the **Filter** field, search the **Script Forge ID** and you can find the associated **UUID**. 
-	8. The UUID is also displayed inside the square brackets next to the **ScriptForge ID**. For example, **ScriptForge ID: xxxx [yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyyyyyy]**. Here, the **ScriptForge ID** is **xxxx** and **UUID** is **yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyyyyyy**. <img src= "/developers/img/uuid5.jpg" width= "1000">
+	8. The UUID is also displayed inside the square brackets next to the **ScriptForge ID**. For example, **ScriptForge ID: xxxx [yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyyyyyy]**. Here, the **ScriptForge ID** is **xxxx** and **UUID** is **yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyyyyyy**. <img src= "/developers/img/uuid51.jpg" width= "1000">
 	
-	<iframe width="585" height="315" src="/developers/img/uuid4.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<iframe width="585" height="315" src="/developers/img/uuid41.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 !!! warning
 	We're NOT building any API here.
