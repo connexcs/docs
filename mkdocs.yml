@@ -242,7 +242,7 @@ nav:
         - Architecture: apps/arch-introduction.md
         - Applications: apps/app.md
         - Repository: apps/repository.md
-        - Front End: apps/fornt-end.md
+        - Front End: apps/front-end.md
     - Back End:
         - Script Forge: apps/scriptforge.md
         - Databases: apps/database.md
@@ -276,7 +276,7 @@ nav:
         - Input: apps/input.md
         - link: apps/link.md
         - Number: apps/number.md
-        - Page Layout: apps/pagelayout.md
+        - Page Layout: apps/page-layout.md
         - Pagination: apps/pagination.md
         - Portal: apps/portal.md
         - Radio: apps/radio.md
@@ -284,7 +284,7 @@ nav:
         - Select: apps/select.md
         - Slider: apps/slider.md
         - Steps: apps/steps.md
-        - Sub Form: apps/subform.md
+        - Sub Form: apps/sub-form.md
         - Switch: apps/switch.md
         - Table: apps/table.md
         - Tabs: apps/tabs.md
