@@ -233,3 +233,66 @@ nav:
 
   - WebPhone: 
     - WebPhone: webphone.md
+
+- Apps Platform:
+    - Apps:
+        - Apps: app-introduction.md
+        - Use Cases: use-case.md
+    - Architecture:
+        - Architecture: arch-introduction.md
+        - Applications: app.md
+        - Repository: repository.md
+        - Front End: forntend.md
+    - Back End:
+        - Script Forge: scriptforge.md
+        - Databases: database.md
+        - Pub / Sub Bus: pubsubbus.md
+        - Environmental Variables: environmentalvariables.md
+    - Features:
+        - BYOD- Bring Your Own Domain: byod.md
+    - Pages:
+        - Alert: alert.md
+        - Button: button.md
+        - Card: card.md
+        - Cascader: cascader.md
+        - Chart: chart.md
+        - Checkbox: checkbox.md
+        - Collapse: collapse.md
+        - Color: color.md
+        - Component: component.md
+        - Custom: custom.md
+        - Data Grid: data-grid.md
+        - Date: date.md
+        - Dialog: dialog.md
+        - Divider: divider.md
+        - Editor: editor.md
+        - File: file.md
+        - Grid: grid.md
+        - Group: group.md
+        - HTML: html.md
+        - I-Frame: iframe.md
+        - Image: image.md
+        - Inline: inline.md
+        - Input: input.md
+        - link: link.md
+        - Number: number.md
+        - Page Layout: pagelayout.md
+        - Pagination: pagination.md
+        - Portal: portal.md
+        - Radio: radio.md
+        - Rate: rate.md
+        - Select: select.md
+        - Slider: slider.md
+        - Steps: steps.md
+        - Sub Form: subform.md
+        - Switch: switch.md
+        - Table: table.md
+        - Tabs: tabs.md
+        - Text: text.md
+        - Textures: textures.md
+        - Time: time.md
+        - Transfer: transfer.md
+        - Tree Select: tree-select.md
+        - Use Case: usecase.md
+        - Wephone: web.md
+
