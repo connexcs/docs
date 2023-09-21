@@ -236,63 +236,62 @@ nav:
 
   - Apps Platform:
     - Apps:
-        - Apps: app-introduction.md
-        - Use Cases: use-case.md
+        - Apps: apps/app-introduction.md
+        - Use Cases: apps/use-case.md
     - Architecture:
-        - Architecture: arch-introduction.md
-        - Applications: app.md
-        - Repository: repository.md
-        - Front End: fornt-end.md
+        - Architecture: apps/arch-introduction.md
+        - Applications: apps/app.md
+        - Repository: apps/repository.md
+        - Front End: apps/fornt-end.md
     - Back End:
-        - Script Forge: scriptforge.md
-        - Databases: database.md
-        - Pub / Sub Bus: pub-sub.md
-        - Environmental Variables: environmental-variables.md
+        - Script Forge: apps/scriptforge.md
+        - Databases: apps/database.md
+        - Pub / Sub Bus: apps/pub-sub.md
+        - Environmental Variables: apps/environmental-variables.md
     - Features:
-        - BYOD- Bring Your Own Domain: byod.md
+        - BYOD- Bring Your Own Domain: apps/byod.md
     - Pages:
-        - Alert: alert.md
-        - Button: button.md
-        - Card: card.md
-        - Cascader: cascader.md
-        - Chart: chart.md
-        - Checkbox: checkbox.md
-        - Collapse: collapse.md
-        - Color: color.md
-        - Component: component.md
-        - Custom: custom.md
-        - Data Grid: data-grid.md
-        - Date: date.md
-        - Dialog: dialog.md
-        - Divider: divider.md
-        - Editor: editor.md
-        - File: file.md
-        - Grid: grid.md
-        - Group: group.md
-        - HTML: html.md
-        - I-Frame: iframe.md
-        - Image: image.md
-        - Inline: inline.md
-        - Input: input.md
-        - link: link.md
-        - Number: number.md
-        - Page Layout: pagelayout.md
-        - Pagination: pagination.md
-        - Portal: portal.md
-        - Radio: radio.md
-        - Rate: rate.md
-        - Select: select.md
-        - Slider: slider.md
-        - Steps: steps.md
-        - Sub Form: subform.md
-        - Switch: switch.md
-        - Table: table.md
-        - Tabs: tabs.md
-        - Text: text.md
-        - Textures: textures.md
-        - Time: time.md
-        - Transfer: transfer.md
-        - Tree Select: tree-select.md
-        - Use Case: usecase.md
-        - Wephone: web.md
+        - Alert: apps/alert.md
+        - Button: apps/button.md
+        - Card: apps/card.md
+        - Cascader: apps/cascader.md
+        - Chart: apps/chart.md
+        - Checkbox: apps/checkbox.md
+        - Collapse: apps/collapse.md
+        - Color: apps/color.md
+        - Component: apps/component.md
+        - Custom: apps/custom.md
+        - Data Grid: apps/data-grid.md
+        - Date: apps/date.md
+        - Dialog: apps/dialog.md
+        - Divider: apps/divider.md
+        - Editor: apps/editor.md
+        - File: apps/file.md
+        - Grid: apps/grid.md
+        - Group: apps/group.md
+        - HTML: apps/html.md
+        - I-Frame: apps/iframe.md
+        - Image: apps/image.md
+        - Inline: apps/inline.md
+        - Input: apps/input.md
+        - link: apps/link.md
+        - Number: apps/number.md
+        - Page Layout: apps/pagelayout.md
+        - Pagination: apps/pagination.md
+        - Portal: apps/portal.md
+        - Radio: apps/radio.md
+        - Rate: apps/rate.md
+        - Select: apps/select.md
+        - Slider: apps/slider.md
+        - Steps: apps/steps.md
+        - Sub Form: apps/subform.md
+        - Switch: apps/switch.md
+        - Table: apps/table.md
+        - Tabs: apps/tabs.md
+        - Text: apps/text.md
+        - Textures: apps/textures.md
+        - Time: apps/time.md
+        - Transfer: apps/transfer.md
+        - Tree Select: apps/tree-select.md
+        - Wephone: apps/web.md
 
