@@ -242,12 +242,12 @@ nav:
         - Architecture: arch-introduction.md
         - Applications: app.md
         - Repository: repository.md
-        - Front End: forntend.md
+        - Front End: fornt-end.md
     - Back End:
         - Script Forge: scriptforge.md
         - Databases: database.md
-        - Pub / Sub Bus: pubsubbus.md
-        - Environmental Variables: environmentalvariables.md
+        - Pub / Sub Bus: pub-sub.md
+        - Environmental Variables: environmental-variables.md
     - Features:
         - BYOD- Bring Your Own Domain: byod.md
     - Pages:
