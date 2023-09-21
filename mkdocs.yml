@@ -234,7 +234,7 @@ nav:
   - WebPhone: 
     - WebPhone: webphone.md
 
-- Apps Platform:
+  - Apps Platform:
     - Apps:
         - Apps: app-introduction.md
         - Use Cases: use-case.md
