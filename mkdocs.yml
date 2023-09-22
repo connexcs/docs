@@ -235,63 +235,60 @@ nav:
     - WebPhone: webphone.md
 
   - Apps Platform:
-    - Apps:
-        - Apps: apps/app-introduction.md
-        - Use Cases: apps/use-case.md
+    - Introduction: apps/introduction.md
+    - Use Cases: apps/use-case.md
+    - Features: apps/features.md
+    - Page Builder: apps/page-builder.md
     - Architecture:
-        - Architecture: apps/arch-introduction.md
+        - Architecture: apps/architecture.md
         - Applications: apps/app.md
         - Repository: apps/repository.md
-        - Front End: apps/front-end.md
-    - Back End:
         - Script Forge: apps/scriptforge.md
         - Databases: apps/database.md
         - Pub / Sub Bus: apps/pub-sub.md
         - Environmental Variables: apps/environmental-variables.md
-    - Features:
-        - BYOD- Bring Your Own Domain: apps/byod.md
-    - Pages:
-        - Alert: apps/alert.md
-        - Button: apps/button.md
-        - Card: apps/card.md
-        - Cascader: apps/cascader.md
-        - Chart: apps/chart.md
-        - Checkbox: apps/checkbox.md
-        - Collapse: apps/collapse.md
-        - Color: apps/color.md
-        - Component: apps/component.md
-        - Custom: apps/custom.md
-        - Data Grid: apps/data-grid.md
-        - Date: apps/date.md
-        - Dialog: apps/dialog.md
-        - Divider: apps/divider.md
-        - Editor: apps/editor.md
-        - File: apps/file.md
-        - Grid: apps/grid.md
-        - Group: apps/group.md
-        - HTML: apps/html.md
-        - I-Frame: apps/iframe.md
-        - Image: apps/image.md
-        - Inline: apps/inline.md
-        - Input: apps/input.md
-        - link: apps/link.md
-        - Number: apps/number.md
-        - Page Layout: apps/page-layout.md
-        - Pagination: apps/pagination.md
-        - Portal: apps/portal.md
-        - Radio: apps/radio.md
-        - Rate: apps/rate.md
-        - Select: apps/select.md
-        - Slider: apps/slider.md
-        - Steps: apps/steps.md
-        - Sub Form: apps/sub-form.md
-        - Switch: apps/switch.md
-        - Table: apps/table.md
-        - Tabs: apps/tabs.md
-        - Text: apps/text.md
-        - Textures: apps/textures.md
-        - Time: apps/time.md
-        - Transfer: apps/transfer.md
-        - Tree Select: apps/tree-select.md
-        - Wephone: apps/web.md
+    - Components:
+        - Alert: apps/components/alert.md
+        - Button: apps/components/button.md
+        - Card: apps/components/card.md
+        - Cascader: apps/components/cascader.md
+        - Chart: apps/components/chart.md
+        - Checkbox: apps/components/checkbox.md
+        - Collapse: apps/components/collapse.md
+        - Color: apps/components/color.md
+        - Component: apps/components/component.md
+        - Custom: apps/components/custom.md
+        - Data Grid: apps/components/data-grid.md
+        - Date: apps/components/date.md
+        - Dialog: apps/components/dialog.md
+        - Divider: apps/components/divider.md
+        - Editor: apps/components/editor.md
+        - File: apps/components/file.md
+        - Grid: apps/components/grid.md
+        - Group: apps/components/group.md
+        - HTML: apps/components/html.md
+        - I-Frame: apps/components/iframe.md
+        - Image: apps/components/image.md
+        - Inline: apps/components/inline.md
+        - Input: apps/components/input.md
+        - link: apps/components/link.md
+        - Number: apps/components/number.md
+        - Page Layout: apps/components/page-layout.md
+        - Pagination: apps/components/pagination.md
+        - Portal: apps/components/portal.md
+        - Radio: apps/components/radio.md
+        - Rate: apps/components/rate.md
+        - Select: apps/components/select.md
+        - Slider: apps/components/slider.md
+        - Steps: apps/components/steps.md
+        - Sub Form: apps/components/sub-form.md
+        - Switch: apps/components/switch.md
+        - Table: apps/components/table.md
+        - Tabs: apps/components/tabs.md
+        - Text: apps/components/text.md
+        - Textures: apps/components/textures.md
+        - Time: apps/components/time.md
+        - Transfer: apps/components/transfer.md
+        - Tree Select: apps/components/tree-select.md
+        - Wephone: apps/components/web.md
 
