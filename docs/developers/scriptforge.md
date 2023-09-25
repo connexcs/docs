@@ -247,7 +247,7 @@ flowchart TD
     H --> I[Call placed]
 ```
 
-### Calling API Code
+### Building the API Code
 
 1. Login to your account.
 2. Go to **Developer :material-menu-right: ScriptForge IDE :material-menu-right: ScriptForge**.
@@ -259,7 +259,6 @@ flowchart TD
 
 8. Enter the below code:
 
-```js
 ```js
 /* This ConnexCS Library makes it easy to place a call */
 const originate = require('cxOriginate');
