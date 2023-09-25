@@ -260,43 +260,54 @@ flowchart TD
 8. Enter the below code:
 
 ```js
-const originate = require('cxOriginate'); // for originating the call
+```js
+/* This ConnexCS Library makes it easy to place a call */
+const originate = require('cxOriginate');
+/*
+    Simple Key/Value pairs, where the Key is a private secret,
+    and the value is the Customer ID.
+*/
 const apiKeys = {
-	'Secret Key/API Key': customer ID // maps to Customer SIPLINK 
+    'secret-key': 1234
 };
-
 //async function main (data) {
-	const companyId = apiKeys[data.apiKey]; // authorizing the key
-	if (!companyId) throw new Error('401 Unauthorized'); // does the company exists?
-	if (!data.destination) throw new Error('Missing Destination'); // does the destination exists?
-	if (!data.cli) throw new Error('Missing CLI'); // does the CLI exists?
-	if (!data.extension) throw new Error('Missing Extension'); // does the extension exists?
-	var result = await originate.originate(companyID, 'enter server details the calls will be sent to', data.destination, data.cli, data.extension);
-	return {status: 'OK'};
+    /* Authorizing the key */
+    const companyId = apiKeys[data.apiKey];
+    /* If the company does not exist, throw an Error*/
+    if (!companyId) throw new Error('401 Unauthorized');
+    /*
+        If the destination does not exist, throw an Error
+        The destination is the telephone number to be dialled
+    */
+    if (!data.destination) throw new Error('Missing Destination');
+    /*
+        If the CLI does not exist, throw an Error
+        The CLI is the form number of the phone call.
+    */
+        if (!data.cli) throw new Error('Missing CLI');
+    /*
+        If the extension does not exist, throw an Error
+        The external is the second leg destination where the
+        connected call will then be delivered to.
+        For example, a queue.
+    */
+    if (!data.extension) throw new Error('Missing Extension');
+    /*
+        Use the ConnexCS library to place the call.
+    */
+    var result = await originate.originate(companyID, 'enter server details the calls will be sent to', data.destination, data.cli, data.extension);
+    /*
+        Confirm that everything worked okay.
+    */
+    return {status: 'OK'};
 }
 ```
 
-9.Click on `Save and Run`. <img src= /developers/img/callingapi123.jpg>
-<iframe width="585" height="315" src="/developers/img/callingapi223.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+9.Click on `Save and Run`. <img src= /developers/img/callingapi1234.jpg>
+<iframe width="585" height="315" src="/developers/img/callingapi1234.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 10.You can access this feature on your **Customer Portal** using the **UUID**. We use the UUID to access ScriptForge from the customer portal URL as an API unauthenticated.
 For example, your Customer Portal URL is https://api.xx.yy/api/script/**uuid** and the code will be published here.
-
-!!! Note "How to fetch the UUID?"
-	1. Login to your **Customer Portal**.
-	2. Navigate to **Developer :material-menu-right: ScriptForge**.
-	3. Click on your **API Calling Script**. <img src= /developers/img/uuid1.jpg>
-	4. Press **F12** key on your keyboard.
-	5. Click on **Network :material-menu-right: Preview**.
-	6. Press **Control+R**.
-	7. Inside the **Filter** field, search the **Script Forge ID** and you can find the associated **UUID**. 
-	8. The UUID is also displayed inside the square brackets next to the **ScriptForge ID**. For example, **ScriptForge ID: xxxx [yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyyyyyy]**. Here, the **ScriptForge ID** is **xxxx** and **UUID** is **yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyyyyyy**. <img src= "/developers/img/uuid51.jpg" width= "1000">
-	
-	<iframe width="585" height="315" src="/developers/img/uuid42.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-!!! warning
-	We're NOT building any API here.
-	We're just using ScriptForge to link the internal and external platforms.
 
 [s2]: /developers/img/176.png "s2"
 [s8]: /developers/img/183.png "s8"
