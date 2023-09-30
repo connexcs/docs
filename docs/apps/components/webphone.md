@@ -52,7 +52,7 @@ Add Audio/Video Bi-directional communication for use in
 ## Methods
 
 ```
-setConfig (username: String, password: String, displayName: String, cli: String, realm: String)
+setConfig ({wsServers: String, username: String, password: String, displayName: String, cli: String, realm: String})
 async register()
 async unregister()
 dialpadPress(digit String)
