@@ -8,9 +8,9 @@
 |------------------------------------------|---------------------------------------------------------------|
 | addClassName(fields = [], className)     | Programmatically add a Class to a fields                      |
 | removeClassName(fields, className)       | Programmatically remove a class from fields                   |
-| disabled(fields = [], disabled)          | Disables components                                           |
-| enable (fields = [])                     | Enables components                                            |
-| display(fields = []) / show(fields = []) | Shows components                                              |
+| disable(fields = [])                     | Disables components                                           |
+| enable(fields = [])                      | Enables components                                            |
+| show(fields = [])                        | Shows components                                              |
 | hide(fields)                             | Hides components                                              |
 | getComponent(name)                       | Returns an object allowing direct API access to the component |
 | getData(isValidate = true)               | Get data from the page, optionally validate                   |
