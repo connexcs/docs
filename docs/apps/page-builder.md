@@ -25,3 +25,10 @@
 | setOptions(fields, options)              | Set options on a multi-select field                           |
 | setRules(field, rules)                   | Programmatically add validation rules to a field              |
 | validate(fields)                         | Run validate on the page                                      |
+
+### Events
+
+| Name    | Description                                                       |
+|---------|-------------------------------------------------------------------|
+| mounted | When the page is first loaded                                     |
+| refresh | When the page is first loaded and every time .refresh() is called |
