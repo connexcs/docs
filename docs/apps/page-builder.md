@@ -2,6 +2,10 @@
 
 ## Config
 
+### Javascript CDN Library
+
+Javascript CDN Library allows you to load external javascript libaries. Our search feature lets you quickly search for libraries from `cdnjs.cloudflare.com`
+
 ### API
 
 | Method & Params                          | Description                      |
