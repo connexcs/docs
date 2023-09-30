@@ -37,7 +37,6 @@ Add Audio/Video Bi-directional communication for use in
 | Cli                   | The From Number on outbound calls                                                                                                      |
 | Realm                 | The Authorization Domain (usually the same as the host without the protocol, e.g sip.example.com)                                      |
 
-
 ## Events
 
 | Name                   | Description                                               |
@@ -49,3 +48,18 @@ Add Audio/Video Bi-directional communication for use in
 | onRegistered ()        | Triggers when SIP registration is successful              |
 | onUnregistered ()      | Triggers when SIP is unregistration                       |
 | onError (error)        | Triggers on any internal error                            |
+
+## Methods
+
+```
+setConfig (username: String, password: String, displayName: String, cli: String, realm: String)
+async register()
+async unregister()
+dialpadPress(digit String)
+answer()
+hangup()
+makeCall(address)
+sendDTMF(digit)
+hold()
+mute()
+```
