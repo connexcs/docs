@@ -103,6 +103,7 @@ nav:
         - Database: developers/database.md 
         - Form Builder: developers/form-builder.md
         - ScriptForge: developers/scriptforge.md
+        - Templates: setup/config/templates.md
         - Pages:
             - Introduction: developers/pages/introduction.md
             - Basic Field: developers/pages/basic-field.md
@@ -123,7 +124,6 @@ nav:
         - Config:
             - Contracts: setup/config/contracts.md
             - Packages: setup/config/packages.md
-            - Templates: setup/config/templates.md
             - SIP Profile: setup/config/sip-profile.md
         - Account Manager:
             - Commission: setup/account-manager/commission.md
