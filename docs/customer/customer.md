@@ -91,13 +91,18 @@ By clicking on `+` button we can add customer (see [**Create Customers**](https:
     + **Tags**: Use this to add meta-data identifiers to a customer. If a customer routing is created using a template from [**Global Routing**](https://docs.connexcs.com/global-routing/), this will be the tag configured in the template.
     + [**TOML**](https://en.wikipedia.org/wiki/TOML): This is a data storage mechanism for configuration, similar to INI files. It allows you to create advanced customization to set values, etc, for Script Forge to reference later. 
     + **Reseller**: Associate the customer to a preset Reseller Group (see [**Create Groups**](https://docs.connexcs.com/setup/settings/users/#create-groups) for more details.)
+    + **Account Manager**: Designating the control of this account to a specific user.
     + **Invoice Schedule**: Specify frequency for invoice generation. 
     + **Invoice Due Days**: Set the allowed number of days past the due date that the invoice can go unpaid. 
     + **Invoice Template**: Select from a list of existing Templates found in **Setup :material-menu-right: Config :material-menu-right: [Templates](/setup/config/templates/)**
     + **Ext.Accounting ID**: This is used to fill in work an external accounting field to correlate between Connexcs and the external accountancy system.
     + **RTP Firewall**: It will bypass the media Firewall.<br>To let the customer strictly use the existing RTP firewall under **Locked** and its flexibility to use RTP Firewall under **Unlocked**.
-    + **Account Manager**: Designating the control of this account to a specific user.
     + **Call Recording Retention Days**: How long the customer wants to keep the recorded calls.
+    + **Domain**: You can select the [domain](https://docs.connexcs.com/setup/integrations/portal/#configuration-options) you wish wish to access from the drop-down menu.
+    + **Daily Spend Limit**: The maximum limit for a customer for making calls in their chosen currency. Once the limit is reached it won't allow any new calls to connect.
+
+    !!! note
+        The daily spend day is defined from 00:00 UTC to 00:00 UTC.
 
 === "Address"
 

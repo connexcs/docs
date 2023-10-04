@@ -91,6 +91,7 @@ nav:
     - Class 5 (UCS):
         - Apps: class5/apps.md
         - Conference: class5/creating-conference.md
+        - Call Center: class5/call-center.md
         - IVR: class5/creating-ivr.md
         - Groups: class5/creating-group.md
         - Voicemail: class5/voicemail.md
@@ -102,6 +103,7 @@ nav:
         - Database: developers/database.md 
         - Form Builder: developers/form-builder.md
         - ScriptForge: developers/scriptforge.md
+        - Templates: setup/config/templates.md
         - Pages:
             - Introduction: developers/pages/introduction.md
             - Basic Field: developers/pages/basic-field.md
@@ -122,13 +124,17 @@ nav:
         - Config:
             - Contracts: setup/config/contracts.md
             - Packages: setup/config/packages.md
-            - Templates: setup/config/templates.md
+            - SIP Profile: setup/config/sip-profile.md
+        - Account Manager:
+            - Commission: setup/account-manager/commission.md
+            - Payment: setup/account-manager/payment.md
         - Advanced:
             - Language: setup/advanced/language.md
             - Firewall: setup/advanced/firewall.md
             - Prefix Set: setup/advanced/prefix-set.md
             - Reseller Account: setup/advanced/reseller.md
             - Fraud Profile: setup/advanced/fraud.md
+            - RTP Block: setup/advanced/rtp-block.md
         - Integrations:
             - API: setup/integrations/api.md
             - Portal: setup/integrations/portal.md
@@ -151,6 +157,7 @@ nav:
 
     - Topical Guides:
         - NEW FCC Regulations on STIR/SHAKEN : guides/stir-shaken-fcc.md
+        - Capacity Planning: guides/capacity-planning.md
         - Billing:
             - Billing Guide: guides/billing-guide.md
             - Billing Basics: billing-basics.md
@@ -163,6 +170,7 @@ nav:
             - Changing Password: changing-password.md
             - Logging Out: logging-out.md
             - Number Manipulation: number-manipulation.md
+        - SIP Traces, Pings and Messages: guides/sip-traces.md
         - Documents and Files: 
             - Document Guide: guides/doc-guide.md
             - File: files.md
@@ -178,14 +186,21 @@ nav:
         - Monitoring: guides/monitoring.md
         - SIP Devices: sip-devices.md
         - Status Page (for Customer Portals): system-status.md
-        - Troubleshooting: 
-            - Call Connection/Signaling Issues: guides/tshoot-signal.md
-            - Call Quality/Media Issues: guides/tshoot-media.md
-            - Circuit Test: circuit-test.md
-            - Debugging: guides/debugging.md
-            - Logging: logging.md
-            - Remote Testing: guides/remote-testing.md            
-        - Video Guide: video-guide.md
+        - OSI Model: guides/osi-model.md
+        - Major Telecom Regulatory Authorities: guides/major-telecom-regulatory-authorities.md
+        - General Data Protection Regulation: guides/gdpr.md
+        - Call Detail Record Retention- guides/cdr-retention.md
+    
+    - Troubleshooting: 
+        - Call Connection/Signaling Issues: guides/tshoot-signal.md
+        - Call Quality/Media Issues: guides/tshoot-media.md
+        - Circuit Test: circuit-test.md
+        - Call Disconnection Reasons and Premature Call Disconnection: guides/call-disconnection-reasons.md
+        - Debugging: guides/debugging.md
+        - Logging: logging.md
+        - Remote Testing: guides/remote-testing.md
+            
+    - Video Guide: video-guide.md
 
   - Customer Portal:
     - Dashboard: customer-portal/cp-dashboard.md

@@ -36,11 +36,9 @@ When one of the limits gets triggered, the system takes automatic action determi
 
 ## Fraud Mode
 
-Each of the five parameters is configured with two limits: a **Warning limit** and a **Critical limit**.
+Each of the five parameters gets configured with two limits: a **Warning limit** and a **Critical limit**.
 
-The Warning limit must always be lower than the Critical limit. When one of the limits is triggered, the system takes automatic action, which is determined by the Mode (defined below).
-
-## Fraud Mode
+The Warning limit must always be lower than the Critical limit. When one of the limits gets triggered, the system takes automatic action, which gets determined by the Mode (defined below).
 
 Selecting Low or High mode defines the action taken when it reaches a Warning or Critical threshold.
 
@@ -54,12 +52,19 @@ Selecting Low or High mode defines the action taken when it reaches a Warning or
 **Step 1: Create a Fraud Profile and Rules**
 
 1.1. Click :material-plus:.
+
 1.2. Enter the Name.
+
 1.3. Click **Save**.
+
 1.4. To the right of the new Profile, select **`View Rules`**.
+
 1.5. Click :material-plus:.
+
 1.6. Define **Prefix**, **Start and End Times**, and **Days of Week** to set the trigger for fraud detection.
+
 1.7. Configure individual **Metrics** (as defined above) to set thresholds for fraud detection.
+
 1.8. Save the rules.
 
 **Step 2: Apply the profile to the customer route**

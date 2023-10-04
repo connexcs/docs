@@ -6,13 +6,15 @@ ConnexCS uses the **Debit Limit** to differentiate between Pre-Pay and Post-Pay 
 
 It's a value (in the customer’s currency) that lets the account drop to a specified amount before the calls stop.
 
-1. **Pre-Pay:** Set the Debit Limit to 0.00 for pre-paid customers, indicating their balances should be paid _before_ they may access services.
+To setup **Pre-pay** or **Post-Pay** limit go to Management :material-menu-right: Customer :material-menu-right: Basic :material-menu-right: Debit Limit; and the limits as discussed:
+
+1. **Pre-Pay:** Set the Debit Limit to 0.00 for pre-paid customers, indicating that they should pay their balances _before_ they may access services.
 
 2. **Post-Pay:** Set the Debit Limit to the maximum amount you wish to allow customers.
 
-    This doesn't affect the payment terms, but the "negative debit" just acts as a form of credit.
+    This doesn't affect the payment terms, but the **negative debit** just acts as a form of credit.
 
-3. **Pre Pay with Credit Buffer:**
+3. **Pre-Pay with Credit Buffer:**
 4. Set the Debit Limit to the NEGATIVE of your buffer value. To avoid overspending, set a buffer credit on the customer's account.
 
     This will give the non-real-time mechanics in the system a chance to catch up or to send customers. The warnings are about cancellation when they near their limits

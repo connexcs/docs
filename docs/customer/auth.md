@@ -64,11 +64,17 @@ To enable, click **:material-plus:** next to IP Authentication:
     + **Outbound Proxy**: Enter the IP address of a Proxy server for calls to route to before being sent to the carrier. This rewrites the UAC IP in the VIA field of the SIP header. 
     This reduces management overhead as a customer only needs to authorize a single IP. 
     Additionally, multiple addresses can be load-balanced using the AnyEdge system. 
-    + **Flags**: Set CLI Authentication for situations where Accounts are unable to use [**Tech Prefix**](https://docs.connexcs.com/customer/routing/#basic) to differentiate customers using the same IP. 
+    + **Flags**: Set CLI Authentication for situations where Accounts are unable to use [**Tech Prefix**](https://docs.connexcs.com/customer/routing/#basic) to differentiate customers using the same IP. CLI Tags is another way to do it.
+        + **CLI Tags**: Set the CLI Authentication and `Save` it for the required customer. Then go to **Routing** and put some CLI's in the allow list. For example, you have allowed 1234567 (CLI) in Routing, and add 1234578 (CLI) in the Customer. When this customer receives a call, it will be able to differentiate where the call (traffic) is from with the help of CLI Tags.
+  
+    <img src= "/customer/img/advanced.png" width= "600">
 
 === "Codecs"
 
-    All Codecs are supported unless specifically set as "Restricted" here. 
+    All Codecs are supported unless specifically set as "Restricted" here.
+
+    <img src= "/customer/img/codecs.png" width= "600"> 
+
 
 === "Parameter Rewrite"
 
@@ -84,11 +90,9 @@ To enable, click **:material-plus:** next to IP Authentication:
     6. Click **`Save`** when done. 
     7. If a parameter rewrite is already created, you will have the ability to test it from the main tab. 
     
-    Example: International calls coming in with a + should be replaced with a specific country code. 
+    Example: International calls coming in with a + should be replaced with a specific country code.
 
-    &emsp;![alt text][parameter-rewrite]
-
-___
+    ![alt text][parameter-rewrite]
 
 ## SIP User Authentication
 
@@ -128,6 +132,7 @@ To enable, click **:material-plus:** next to SIP User Authentication:
 
 === "Basic"
 
+    + **SIP Profile**: You can select the created [SIP Profile](https://docs.connexcs.com/setup/config/sip-profile/) here.
     + **Username**: This will be the Username used for SIP authentication (must match configuration on the customer UAC). If the Customer has [**Internal Number Block**](https://docs.connexcs.com/customer/main/#internal-number-block) set on the **Main** tab, you can only select the Username from available extensions. If a Username is already in use on the Account, they will get an error "Duplicate User Detected".
     + **Password**: Must match with the configuration on the customer UAC.
     + **Channels, Flow Speed, Bandwidth**; Do NOT use these fields. 
@@ -155,11 +160,13 @@ To enable, click **:material-plus:** next to SIP User Authentication:
     + **Retain DID**: When you enable this, inbound calls will retain the destination number (DID), and the call is sent into the system, rather than using the SIP Username. 
     + **Smart Extension**: Calls are sent to the Class5, not Class4 infrastructure. This feature is currently in Alpha and is not recommended. 
 
-         ![alt text][sip-b]
+    <img src= "/customer/img/sip1.png" width= "500">
 
 === "Codecs"
 
     All Codecs are supported for the SIP user unless specifically set as "Restricted" here. 
+    
+    <img src= "/customer/img/codecs.png" width= "600">
 
 === "Parameter Rewrite"
 
@@ -180,7 +187,10 @@ To enable, click **:material-plus:** next to SIP User Authentication:
     If you enable Voice Mail, you can set which email address receives messages, reset the Voicemail Password, and view and delete current messages. 
     
     See [**Voicemail**](https://docs.connexcs.com/class5/voicemail/) for information on accessing Voicemail. 
+
+    <img src= "/customer/img/voicemail.png" width= "600"/>
 ___
+
 
 ### Reset SIP Password
 
@@ -190,7 +200,7 @@ You can also use `Generate Password` to generate a random and secure SIP passwor
 
 Make sure you `Copy Text` and provide this information for configuration, as this password can't be retrieved after it's set.
 
-Customers using the Customer Portal can rest their SIP Passwords in [**Authentication**](https://docs.connexcs.com/customer-portal/cp-authentication/#reset-sip-password).
+Customers using the Customer Portal can reset their SIP Passwords in [**Authentication**](https://docs.connexcs.com/customer-portal/cp-authentication/#reset-sip-password).
 
 !!! warning "SIP Password security"
     SIP passwords are needed for the SIP protocol, but they can present security risks for a provider.
@@ -204,150 +214,6 @@ Customers using the Customer Portal can rest their SIP Passwords in [**Authentic
 ### Send message to SIP Users
 
 Use `Send` next to the SIP User to send a SIP message to the end device which will flash on the phone.
-
-### SIP Pings
-
-**Case 1: Normal SIP Ping**
-
-```mermaid
-    sequenceDiagram
-    autonumber
-    Alice->>Bob: INVITE (cseq 1)
-    Bob-->>Alice: 100 Trying
-    Bob-->>Alice: 180 Ringing
-    Bob->>Alice: 200 OK (Connected)
-    Alice->>Bob: ACK
-    Note over Alice,Bob: The call is active
-    Bob->>Alice: OPTIONS
-    Alice->>Bob: 200 OK
-    Note over Alice,Bob: The call has ended
-    Alice->>Bob: BYE
-    Bob->>Alice: 200 OK
-```
-In this case, Bob sends a message to Alice called **OPTIONS** and Alice sends back **200 OK**. If **200 OK** isn't sent, the call be get disconnected.
-
-**Case 2: Alice Disappears**
-
-```mermaid
-    sequenceDiagram
-    autonumber
-    Alice->>Bob: INVITE (cseq 1)
-    Bob-->>Alice: 100 Trying
-    Bob-->>Alice: 180 Ringing
-    Bob->>Alice: 200 OK (Connected)
-    Alice->>Bob: ACK
-    Note over Alice,Bob: The call is active
-    Bob->>Alice: OPTIONS
-    Note over Alice,Bob: We did not get a reply, other side disappears 
-    Note over Alice,Bob: We will drop the call
-    Bob->>Alice: BYE (No SIP Ping Reply)
-```
-
-In this case, the call is half-way connected and Alice doesn't reply to the message sent by Bob. Bob decides to drop the call.
-
-If Alice is alive, then you may get a reply, if there is a reply, then this is likely a premature disconnection and there is a fault with the SIP ping on Alice's side.
-
-**Case 3: 3-party Example**
-
-```mermaid
-    sequenceDiagram
-    autonumber
-    Alice->>ConnexCS: INVITE (cseq 1)
-    ConnexCS-->>Alice: 100 Trying
-    ConnexCS->>Charlie: INVITE (cseq 1)
-    Charlie-->>ConnexCS: 100 Trying
-    Charlie-->>ConnexCS: 180 Ringing
-    ConnexCS-->>Alice: 180 Ringing
-    Charlie->>ConnexCS: 200 OK (Connected)
-    ConnexCS->>Alice: 200 OK (Connected)
-    Alice->>ConnexCS: ACK
-    ConnexCS->>Charlie: ACK
-    Note over Alice,Charlie: The call is active
-    ConnexCS->>Alice: OPTIONS
-    Alice->>ConnexCS: 200 OK
-    ConnexCS->>Charlie: OPTIONS
-    Charlie->>ConnexCS: 200 OK
-    Note over Alice,Charlie: Call Disconnects
-    Charlie->>ConnexCS: BYE
-    ConnexCS->>Alice: BYE
-    Alice->>ConnexCS: 200 OK
-    ConnexCS->>Charlie: 200 OK
-```
-In this case, the communication happens between 3 parties. ConnexCs is sending OPTION packets in both the directions (to Alice and Charlie).
-
-**Case 4:Missing SIP Ping Call Disconnection (Charlie disappears)**
-
-```mermaid
-    sequenceDiagram
-    autonumber
-    Alice->>Bob: INVITE (cseq 1)
-    Bob-->>Alice: 100 Trying
-    Bob->>Charlie: INVITE (cseq 1)
-    Charlie-->>Bob: 100 Trying
-    Charlie-->>Bob: 183 Ringing
-    Bob-->>Alice: 183 Ringing
-    Charlie->>Bob: 200 OK (Connected)
-    Bob->>Alice: 200 OK (Connected)
-    Alice->>Bob: ACK
-    Bob->>Charlie: ACK
-    Note over Alice,Charlie: The call is active
-    Bob->>Alice: OPTIONS
-    Alice->>Bob: 200 OK
-    Bob->>Charlie: OPTIONS
-    Note over Alice,Charlie: No reply from Charlie, we need to disconnect
-    Bob->>Charlie: BYE
-    Bob->>Alice: BYE
-    Alice->>Bob: 200 OK
-```
-
-In this case, when we send the OPTION packet to Charlie, he doesn't reply. The OPTION message disappears and we need to disconnect the call.
-
-Another scenario is when ConnexCS sends message to Charlie and Charlie is active on the call, he will send a BYE message to Alice and we won't see a reply to that.
-
-+ **ACK Message**
-
-An ACK is an **Acknowledgement** of a final reply.
-
-```mermaid
-    sequenceDiagram
-    autonumber
-    Alice->>Bob: INVITE
-    Bob-->>Alice: 100 Trying
-    Bob-->>Alice: 180 Ringing
-    Bob->>Alice: 200 OK (Connected)
-    Alice->>Bob: ACK
-    Note over Alice,Bob: The call is active
-    Alice->>Bob: BYE
-    Bob->>Alice: 200 OK
-```
-
-+ **Cancel Message**
-
-**CANCEL** message indicates that the previous request was terminated by the user. In this case, the CANCEL message is sent from Alice to Bob.
-
-Cancel can be due to PDD timer being too high or ringing exists for a longer duration.
-
-Bob should send 487 Canceled message to Alice.
-
-```mermaid
-    sequenceDiagram
-    autonumber
-    Alice->>Bob: INVITE
-    Bob-->>Alice: 100 Trying
-    Alice->>Bob: CANCEL (PDD Too High)
-    Bob->>Alice: 487 Canceled
-    Alice->>Bob: INVITE
-    Bob-->>Alice: 100 Trying
-    Bob-->>Alice: 180 Ringing
-    Alice->>Bob: CANCEL (Alternative, Ringing Too Long)
-    Bob->>Alice: 487 Canceled
-```
-
-+ **200 OK Message**
-
-**200 OK** is a Success message. In order to understand how the **200 OK** is related to we need to follow back the original cseq.
-
-For example, if you don't see a 200 OK for a BYE message it means the other side has disappeared.
 
 ### Use Case for NAT/SIP Pings
 
