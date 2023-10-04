@@ -13,7 +13,7 @@ ConnexCS helps in block these spam and scam calls.
 1. Go to **Management > Customer > Customer [Name] > Routing > Basic > Dial String**.
 2. Enter the Prefix phone code for the country you wish to block the calls from.
 
-<img src= "/guides/img/spam1.png" width= "1000">
+<img src= "/guides/img/spam01.png" width= "1000">
 
 ## 2. Block Calls based on Dial String Prefix Set in Routing
 
@@ -47,12 +47,14 @@ In the [**Flags**](https://docs.connexcs.com/setup/advanced/prefix-set/#flags) f
 ### 3.3 Setting the FTC DNC Report ANI Block (USA)
 
 1. Go to **Management > Customer > Customer [Name] > Routing > Price Limits > FTC DNC Report ANI Block (USA)**.
-2. You can either **Enable** or **Disable** this option. It's a list of phone numbers provided by the FTC  reported as spam.
+2. You can either **Enable** or **Disable** this option. It's a list of phone numbers provided by the FTC reported as spam.
 
 ### 3.4 Setting the DNO
 
 1. Go to **Management > Customer > Customer [Name] > Routing > Price Limits > DNO**.
 2. You can either **Enable** or **Disable** this option. These are the number ranges that don't exist.
+
+[Click here](https://docs.connexcs.com/dnc/#us-dno-requirements-in-connexcs) to checkout the DNO blocking ConnexCS DNO requirements.
 
 <img src= "/guides/img/spam3.png" width= "1000">
 
