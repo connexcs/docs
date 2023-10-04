@@ -185,7 +185,7 @@ From message 1 till message 7, the whole conversation is a **Dialog**.
 
 Here is an example describing Re-transmissions:
 
-    ```mermaid
+```mermaid
     sequenceDiagram
     autonumber
     rect rgb(127, 0, 255)
@@ -220,7 +220,7 @@ Here is an example describing Re-transmissions:
     end
     end
     end
-    ```
+```
 
 Alice and Bob represents party on the call. Alice sends an **INVTE** packet to Bob. INVITE is an initial request.
 
