@@ -33,13 +33,3 @@ In per-minute billing, the number of seconds you use gets tallied daily. Its com
 ## Minimum Charges
 
 All accounts must spend a minimum of $20 per-month / per-server to remain active. This helps to prevent incurring losses from stagnant accounts.
-
-## Capacity Planning
-
-Capacity planning is a way to extend our services in an advisory capacity.
-
-It helps our customers choose the setup that works best for their business.
-
-Shifting usage and the growing demands for scalability are always a consideration. But there is also the active management of changing traffic.
-
-See [**Capacity Limiting**](/limiting-cps/) for tips on limiting usage.

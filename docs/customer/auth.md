@@ -12,7 +12,7 @@ Use the **Auth** tab to configure IP or SIP (Username / Password) Authentication
 When you enable **IP Authentication**, you link a customer switch's IP address to their account. This adds a layer of security by ensuring the calls are coming from a trusted source.
 
 !!! error "Newly added IP immediately marked as Blocked under IP Authentication"
-    This occurs because call requests were sent from the new IP before it's authorized. As a result, ConnexCS fraud detection in the firewall blocked the unauthorised IP. Attempted calls from this IP won't be completed.
+    This occurs because call requests were sent from the new IP before it's authorized. As a result, ConnexCS fraud detection in the firewall blocked the unauthorised IP. Attempted calls from this IP won't get completed.
 
     To resolve the blocked IP, go to **Setup :material-menu-right: Advanced :material-menu-right: Firewall**. Select the blocked IP, then delete it from the firewall. This unblocks the IP, but it will take up to 15 minutes for the change to become active in the switch. 
     
@@ -64,11 +64,17 @@ To enable, click **:material-plus:** next to IP Authentication:
     + **Outbound Proxy**: Enter the IP address of a Proxy server for calls to route to before being sent to the carrier. This rewrites the UAC IP in the VIA field of the SIP header. 
     This reduces management overhead as a customer only needs to authorize a single IP. 
     Additionally, multiple addresses can be load-balanced using the AnyEdge system. 
-    + **Flags**: Set CLI Authentication for situations where Accounts are unable to use [**Tech Prefix**](https://docs.connexcs.com/customer/routing/#basic) to differentiate customers using the same IP. 
+    + **Flags**: Set CLI Authentication for situations where Accounts are unable to use [**Tech Prefix**](https://docs.connexcs.com/customer/routing/#basic) to differentiate customers using the same IP. CLI Tags is another way to do it.
+        + **CLI Tags**: Set the CLI Authentication and `Save` it for the required customer. Then go to **Routing** and put some CLI's in the allow list. For example, you have allowed 1234567 (CLI) in Routing, and add 1234578 (CLI) in the Customer. When this customer receives a call, it will be able to differentiate where the call (traffic) is from with the help of CLI Tags.
+  
+    <img src= "/customer/img/advanced.png" width= "600">
 
 === "Codecs"
 
-    All Codecs are supported unless specifically set as "Restricted" here. 
+    All Codecs are supported unless specifically set as "Restricted" here.
+
+    <img src= "/customer/img/codecs.png" width= "600"> 
+
 
 === "Parameter Rewrite"
 
@@ -84,19 +90,39 @@ To enable, click **:material-plus:** next to IP Authentication:
     6. Click **`Save`** when done. 
     7. If a parameter rewrite is already created, you will have the ability to test it from the main tab. 
     
-    Example: International calls coming in with a + should be replaced with a specific country code. 
+    Example: International calls coming in with a + should be replaced with a specific country code.
 
-    &emsp;![alt text][parameter-rewrite]
-
-___
+    ![alt text][parameter-rewrite]
 
 ## SIP User Authentication
 
-When you enable **SIP Authentication**, ConnexCS will reject the initial SIP INVITE with a "407 Authentication Required". This message includes a 'nonce' (a uniquely randomly generated number, which is hashed). The customer switch will send appropriate authentication information to ConnexCS, which will connect the call.
+When you enable **SIP Authentication**, ConnexCS will reject the initial SIP INVITE with a "407 Authentication Required". This message includes a 'nonce' (a uniquely randomly generated hashed number). The customer switch will send appropriate authentication information to ConnexCS, which will connect the call.
 
 Generic SIP Trace showing the Challenge Response:
 
 &emsp; ![alt text][407-trace]
+
+```mermaid
+    sequenceDiagram
+    autonumber
+    Alice->>Bob: INVITE
+    Bob-->>Alice: 100 Trying
+    Bob->>Alice: 407 Proxy Authentication Required
+    Note over Alice,Bob: 407 contains nonce.
+    Note left of Alice: HASH(Combine Password + Nonce).
+    Alice->>Bob: INVITE (+ Auth Header)
+    Bob-->>Alice: 100 Trying
+    Note right of Bob: HASH(Combine Password + Nonce).
+    Note right of Bob: Compare Hashes - They Match.
+    Bob-->>Alice: 183 Ringing
+    Bob->>Alice: 200 OK (Connected)
+```
+
+For call authentication we should have a Username and a Password. The Username and Password should get to the other side.
+
+The Username is sent on Plain-text and the user (Alice) hashes the password. [**407 Proxy Authentication**](https://en.wikipedia.org/wiki/List_of_SIP_response_codes#4xx%E2%80%94Client_Failure_Responses) contains a nonce. A nonce is a random String of which gets send over to Alice. Both Alice and Bob are aware of this random string. Authorization header is sent with the INVITE. Then Bob combines the password with the nonce and compares the nonce. If the hashes match, the call gets connected.
+
+!!! note "407 Proxy Authentication is a part of Challenge-Response and is necessary when you proceed with SIP User Auth. Also you can't have **IP Authentication** and **User / Password Authentication** work together"
 
 ### Enable SIP User Authentication
 
@@ -106,6 +132,7 @@ To enable, click **:material-plus:** next to SIP User Authentication:
 
 === "Basic"
 
+    + **SIP Profile**: You can select the created [SIP Profile](https://docs.connexcs.com/setup/config/sip-profile/) here.
     + **Username**: This will be the Username used for SIP authentication (must match configuration on the customer UAC). If the Customer has [**Internal Number Block**](https://docs.connexcs.com/customer/main/#internal-number-block) set on the **Main** tab, you can only select the Username from available extensions. If a Username is already in use on the Account, they will get an error "Duplicate User Detected".
     + **Password**: Must match with the configuration on the customer UAC.
     + **Channels, Flow Speed, Bandwidth**; Do NOT use these fields. 
@@ -133,11 +160,13 @@ To enable, click **:material-plus:** next to SIP User Authentication:
     + **Retain DID**: When you enable this, inbound calls will retain the destination number (DID), and the call is sent into the system, rather than using the SIP Username. 
     + **Smart Extension**: Calls are sent to the Class5, not Class4 infrastructure. This feature is currently in Alpha and is not recommended. 
 
-         ![alt text][sip-b]
+    <img src= "/customer/img/sip1.png" width= "500">
 
 === "Codecs"
 
     All Codecs are supported for the SIP user unless specifically set as "Restricted" here. 
+    
+    <img src= "/customer/img/codecs.png" width= "600">
 
 === "Parameter Rewrite"
 
@@ -158,7 +187,10 @@ To enable, click **:material-plus:** next to SIP User Authentication:
     If you enable Voice Mail, you can set which email address receives messages, reset the Voicemail Password, and view and delete current messages. 
     
     See [**Voicemail**](https://docs.connexcs.com/class5/voicemail/) for information on accessing Voicemail. 
+
+    <img src= "/customer/img/voicemail.png" width= "600"/>
 ___
+
 
 ### Reset SIP Password
 
@@ -168,10 +200,10 @@ You can also use `Generate Password` to generate a random and secure SIP passwor
 
 Make sure you `Copy Text` and provide this information for configuration, as this password can't be retrieved after it's set.
 
-Customers using the Customer Portal can rest their SIP Passwords in [**Authentication**](https://docs.connexcs.com/customer-portal/cp-authentication/#reset-sip-password).
+Customers using the Customer Portal can reset their SIP Passwords in [**Authentication**](https://docs.connexcs.com/customer-portal/cp-authentication/#reset-sip-password).
 
 !!! warning "SIP Password security"
-    SIP passwords are a requirement of the SIP protocol, but they can present security risks for a provider.
+    SIP passwords are needed for the SIP protocol, but they can present security risks for a provider.
 
     You must configure them in ConnexCS when SIP authentication is setup, but they aren't available for providers to retrieve later. 
     
@@ -209,10 +241,10 @@ In this case, Bob sends a message to Alice called **OPTIONS** and Alice sends ba
 ### Use Case for NAT/SIP Pings
 
 **Troubleshooting Scenario**
-The Customer reports they can register and make outbound calls, but they are unable to receive inbound calls.
+The Customer reports they can register and make outbound calls, but they're unable to receive inbound calls.
 
-**What is happening**
-In a typical configuration, a packet is sent from the customer UAC out through a NAT/firewall, and then the packet is delivered to the UAS:
+**What's happening**
+In a typical configuration, a packet is sent from the customer UAC out through a NAT/firewall, and then the packet gets delivered to the UAS:
 
 ```mermaid
     graph LR
@@ -223,11 +255,11 @@ In a typical configuration, a packet is sent from the customer UAC out through a
     style C fill:#ECEFF1,stroke:#4051b5,stroke-width:4px
 ```
 
-+ When a packet goes out, a hole is punched in the firewall, and the source port is recorded. When a packet is returned on that port, the firewall knows to deliver back to the UAC.  
++ When a packet goes out, a hole gets punched in the firewall, and the source port gets recorded. When a packet returns on that port, the firewall knows to deliver back to the UAC.  
 + This works well when using TCP, which sends regular keep-alive packets.
 + UDP doesn't send keep-alives (no connected state as with TCP). SIP does maintain a connected state, registration, but may have long periods of inactivity.
 + Without regular traffic passing between UAS and UAC in the form of keep-alives/registration (a normal occurrence), NAT will eventually time out and shut down the connection.
-+ Enabling UDP or SIP pings can demonstrate to the NAT/firewall that the signaling path is still valid and in use.
++ Enabling UDP or SIP pings can show the NAT/firewall that the signaling path is still valid and in use.
 
 [ipauth-basic]: /customer/img/ipauth-b.png "Edit Switch Basic"
 [parameter-rewrite]: /customer/img/parameter-rewrite.png "Parameter Rewrite" width="200" height="400"

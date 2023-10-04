@@ -6,8 +6,7 @@ Find below the definitions for the most relevant telephony terms, along with som
 
 |Term|Definition|Explanation|
 |---|---|---|
-|**ACD**|*Average Call Duration*|The average length of calls. ACD can be a marker of how efficient phone systems are at solving problems instantly.|
-|**ALOC**|*Average Length of Call*|See ACD.|
+|**ACD \ ALOC**|*Average Call Duration \ Average Length of Call*|The average length of calls. Average Call Duration or otherwise called Average Length of Call is a retrospective calculation of how long calls last, that is the mean average. Typically only connected calls are included in this calculation, so it is simply the total time that all of the calls were connected divided by the total number of connected calls.|
 |**ASR**|*Answer-Seisure Ratio*|The call answer rates as a percentage (connected calls divided by total calls).|  
 |**Channel**|n/a|An ongoing live call on the system. |
 |**CLI**|*Calling Line Identification*|Identifies the caller's telephone number, which is often displayed to the call recipient in the form of Caller-ID.|
@@ -29,10 +28,54 @@ Find below the definitions for the most relevant telephony terms, along with som
 |**NAT**|*Network Address Translation*|This is a networking practice that allows private IPs in a defined network to share a public IP that can route over the internet, helping to conserve the dwindling supply of public IPs.|
 |**NER**|*Network Effectiveness Ratio*|Measures a network's ability to deliver phone calls independent of user actions like a terminal reject.|
 |**NPA-NXX**|*Numbering Plan Area-1st 3 digits*|The number is followed by four more identifying digits, making it NPA-NXX-XXXX.  The 'N' in NXX is different because it represents digits from 2 9 instead of 0–9, as it's with 'X'. See [**USA Routing**](https://docs.connexcs.com/routing-usa/) for further explanation.|  
-|**P-Asserted-ID**|n/a|A header field in the SIP INVITE that has the identity of the caller (typically used for caller-ID).|
+|**P-Asserted-ID**|n/a|A header field in the SIP INVITE that has the identity of the caller (typically used for caller-ID / network identifier). It shouldn't be delivered to the end-user.|
 |**PDD**|*Post-Dial Delay*|The time between the last digit dialled and a ringer or equal action on the other end. This is useful to check to see if a carrier is slow to connect a call.|
 |**PSTN**|*Public Switched Telephone Network*|A broad term that encompasses most telephone networks, including telephone lines, mobile networks, and communication satellites.|
 |**RTP**|*Real-time Transfer Protocol*|A network protocol used to move media across IP-based systems.|
 |**SIP**|*Session Initiation Protocol*|A TCP/IP-based network protocol used in VoIP telephony to establish connections for telephone calls.|
 |**SIP Trace**|n/a|A log of SIP signalling messages, this is an essential tool for troubleshooting registration, call completion, and other issues.|
 |**Transcoding**|n/a|Converts file from one format to another. In ConnexCS, this refers to the process of converting audio from one codec to another, often when there is low-bandwidth.|
+|**Channel**|n/a| Channels are analogous to dialogs. Channels are counted even if the call wasn't connected or even ringing hasn't begun. It's counted even if the call geeing setup. For example, if 100 channels exist, it means 100 active calls exist.|
+|**Dialog**|n/a| A Dialog is a single call.|
+
+!!! info
+```mermaid
+    graph TD
+    A[ACD Calculation] -->B[Correct Method]
+    A[ACD Calculation] -->C[Incorrect Method]
+    B -->D[Total Duration- answered calls /  Total Connected-answered calls]
+    C -->E[Total Duration / Total Calls]
+```
+
+!!! Info
+    | S.No | ASR Score     | Inference          |
+    |------|---------------|--------------------|
+    | 1.   | 60% and above | Exceptionally good |
+    | 2.   | 40% to 50%    | Acceptable         |
+    | 3.   | Less than 40% | Poor               |
+
+!!! Note
+
+    1. **ASR Calculation**
+    Total Connected / Total Calls
+    
+    2. **Strict ASR (Removing NER) Calculation**
+    Total Connected / Non-carrier failure
+
+    3. **NER Calculation**
+    Client Side Response Codes / Client + Server Codes
+    4. **Channels** = CPS * ACD
+
+!!! note "CLI vs PAID"
+    **PAID** is the address of the person who placed the call. This is same as the address in the "From" header, but it may change if the caller uses several identities and needs to represent the one that applies to the destination.
+
+    For example, consider a call from alice@sip.com to the PSTN, where the P-Asserted-Identity field can be changed to the "alice" phone number.
+
+    **CLI** gives the calling phone's number to the party receiving the call. CLI is used to determine the caller or the place where a call originated.
+
+    The P-Asserted-Identity contains the caller id information for the call on the INVITE SIP packet. P-asserted-ID header may contain either Tel URI or SIP URI. For CLI identification purposes multiple P-Asserted-ID headers should not be used unless there is a P-asserted-ID containing Tel URI and/or a P-asserted-ID containing SIP URI and user=phone. In this case both type of URIs must contain the same phone number. If none of the above exist and contain a valid E.164 number, CLI will not be considered valid.
+
+!!! note "Missed Call Traffic"
+    Missed Call Traffic is placing calls which DONT connect and / or have a VERY SHORT duration.
+    It's not advisable not to have large volumes of Missed Call Traffic.
+  
