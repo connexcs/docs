@@ -64,91 +64,226 @@ Click on a specific Call ID to view details and run call tools.
 !!! Tip "More on Call-IDs"
     See [**Call-ID**](/guides/howto/callid) for further information and troubleshooting.
 
+### SIP Traces
+
+**SIP Tracing** is a diagnostic tool for phone systems using SIP (Session Initiation Protocol) for interactions across trunks and between endpoints. Traces give detailed information about calls and call attempts while debugging and troubleshooting.
+
+Uses of SIP protocol include call setup, maintenance, and tear-down, this tool is typically used only for call connection issues.
+
+Call quality issues are often identified using other methods.
+
+![sip trace](/logging/sipserver.jpg)
+
+Here is an example describing a SIP trace:
+
+```mermaid
+    sequenceDiagram
+    autonumber
+    Alice->>Bob: INVITE
+    Bob-->>Alice: 100 Trying
+    Bob-->>Alice: 180 Ringing
+    Bob->>Alice: 200 OK (Connected)
+    Alice->>Bob: ACK
+    Note over Alice,Bob: The call is active
+    Alice->>Bob: BYE
+    Bob->>Alice: 200 OK
+```
+
+Alice and Bob represents party on the call. Alice sends an **INVTE** packet to Bob. Then Bob sends a **100 Trying** (provides you the feedback that your request is getting processed by a SIP Application) message together with **180 Ringing** (the Destination User Agent has received the INVITE message and is alerting the user of call).
+
+Further, **200 OK** is sent which means the calls are connected.
+
+The **ACK** is message is sent from Alice to Bob confirming that the call has been connected.
+
+After the call is over the **BYE** message is sent.
+!!! info "SIP Trace Captures"
+    The **ConnexCS** system supports always-on **SIP Trace** capture.
+
+    We keep a record of every packet sent and received by your server over the last seven (7) days.
+
+To view the SIP Trace of a call:
+
+1. Click a **Call ID** to view its SIP traces.
+2. Click **`SIP traces`** to view the SIP trace.
+
+      ![alt text][logging-sip]
+
+3. Toggle between Relative Time and Absolute Time for a specific time of day.
+4. Options to download as Text or an Image.
+
+!!! note "Known issues with SIP Traces"
+
+    * **Missing SIP data**: SIP traces aren't always guaranteed. SIP packets are carried by UDP, which may cause the traces to be lossy at times. You can expect this due to the nature of the architecture.
+    * **Missed call attempts**: If using SIP authentication, because there are two requests, it's possible that they hit our database out of order. This may cause the logging page to only display the first call attempt.
+    * Considered for reporting calls and don't impact the calls directly. They're both rare, typically observed in less than 1 in every 50,000 calls.
+
++ **Re-Transmissions:** Re-transmissions occur when the same INVITE gets transmitted more than once. This means the `same` packets were sent more than once.
+
+    Re-transmissions only happen on UDP.
+    Re-transmissions occur when packets either don't reach the receiver or get lost in transmission. Thus re-transmissions are done after a certain time interval using specific timers.
+
+    Here is an example describing Re-transmissions:
+
+```mermaid
+    sequenceDiagram
+    autonumber
+    rect rgb(127, 0, 255)
+    rect rgb(100, 180, 255)
+    rect rgb(252, 110,153)
+    Alice->>Bob: INVITE (cseq 1)
+    end
+    Note over Alice,Bob: 500ms delay
+    rect rgb(252, 110,153)
+    Alice->>Bob: INVITE (cseq 1)
+    end
+    rect rgb(252, 110,153)
+    Bob-->>Alice: 100 Trying
+    end
+    rect rgb(252, 110,153)
+    Bob-->>Alice: 180  Ringing
+    end
+    rect rgb(252, 110,153)
+    Bob->>Alice: 200 OK (Connected)
+    end
+    rect rgb(252, 110,153)
+    Alice->>Bob: ACK
+    end
+    end
+    Note over Alice,Bob: The call is active
+    rect rgb(100, 180, 255)
+    rect rgb(252, 110,153)
+    Alice->>Bob: BYE
+    end
+    rect rgb(252, 110,153)
+    Bob->>Alice: 200 OK
+    end
+    end
+    end
+```
+
+Alice and Bob represents party on the call. Alice sends an **INVTE** packet to Bob. INVITE is an initial request.
+
+Then Bob sends a **100 Trying** (provides you the feedback that your request is getting processed by a SIP Application) message along-with **180 Ringing** (the Destination User Agent has received the INVITE message and is alerting the user of call). **100 Trying** and **180 Ringing** are provisional response.
+
+The re-invtes get absorbed when they're received. When Bob receives the **INVITE** packet and a special timer is set (please see the below timer table) as to how long it should wait for re-transmissions. If any packet is received within this time-frame, the packet gets ignored.
+
+Further, **200 OK** is sent which means the calls are connected. **200 OK** is a final reply.
+
+The **ACK** is message is sent from Alice to Bob confirming that the call has been connected.
+
+Each line is a **Message**.
+
+From 1 message (INVITE) till message 5 (ACK), it's considered as a single **Transaction**.
+
+Similarly message 6 (BYE) and 7 (200 OK) are also considered as a single **Transaction**.
+
+From message 1 till message 7, the whole conversation is a **Dialog**.
+
+!!! note "Note"
+    Message displayed in Pink color.
+    Transaction displayed in Blue color.
+    Dialog displayed in Violet color.
+
+Here is an example describing Re-transmissions:
+
+```mermaid
+    sequenceDiagram
+    autonumber
+    rect rgb(127, 0, 255)
+    rect rgb(100, 180, 255)
+    rect rgb(252, 110,153)
+    Alice->>Bob: INVITE (cseq 1)
+    end
+    Note over Alice,Bob: 500ms delay
+    rect rgb(252, 110,153)
+    Alice->>Bob: INVITE (cseq 1)
+    end
+    rect rgb(252, 110,153)
+    Bob-->>Alice: 100 Trying
+    end
+    rect rgb(252, 110,153)
+    Bob-->>Alice: 180  Ringing
+    end
+    rect rgb(252, 110,153)
+    Bob->>Alice: 200 OK (Connected)
+    end
+    rect rgb(252, 110,153)
+    Alice->>Bob: ACK
+    end
+    end
+    Note over Alice,Bob: The call is active
+    rect rgb(100, 180, 255)
+    rect rgb(252, 110,153)
+    Alice->>Bob: BYE
+    end
+    rect rgb(252, 110,153)
+    Bob->>Alice: 200 OK
+    end
+    end
+    end
+```
+
+Alice and Bob represents party on the call. Alice sends an **INVTE** packet to Bob. INVITE is an initial request.
+
+Then Bob sends a **100 Trying** (provides you the feedback that your request is getting processed by a SIP Application) message along-with **180 Ringing** (the Destination User Agent has received the INVITE message and is alerting the user of call). **100 Trying** and **180 Ringing** are provisional response.
+
+The re-invtes get absorbed when they're received. When Bob receives the **INVITE** packet and a special timer is set (please see the below timer table) as to how long it should wait for re-transmissions. If any packet is received within this time-frame, the packet gets ignored.
+
+Further, **200 OK** is sent which means the calls are connected. **200 OK** is a final reply.
+
+The **ACK** is message is sent from Alice to Bob confirming that the call has been connected.
+
+Each line is a **Message**.
+
+From 1 message (INVITE) till message 5 (ACK), it's considered as a single **Transaction**.
+
+Similarly message 6 (BYE) and 7 (200 OK) are also considered as a single **Transaction**.
+
+From message 1 till message 7, the whole conversation is a **Dialog**.
+
+!!! note "Note"
+    Message displayed in Pink color.
+    Transaction displayed in Blue color.
+    Dialog displayed in Violet color.
+
+You can have take a look at the various SIP Timers in the table below:
+
+|**Timer**|**Default value**|**Section**|**Meaning**|
+|-------------|-------------------------|-------------|------------------------------------------------------------------------------|
+| **T1** | 500 ms | 17.1.1.1 | Round-trip time (RTT) estimate|
+| **T2** | 4 sec.| 17.1.2.2| Maximum retransmission interval for non-INVITE requests and INVITE responses |
+| **T4** | 5 sec.| 17.1.2.2| Maximum duration that a message can remain in the network|
+| **Timer A** | initially T1| 17.1.1.2 | INVITE request retransmission interval, for UDP only |
+| **Timer B** | 64*T1| 17.1.1.2| INVITE transaction timeout timer |
+| **Timer D** | > 32 sec. for UDP| 17.1.1.2 | Wait time for response retransmissions|
+|| 0 sec. for TCP and SCTP|
+| **Timer E** | initially T1| 17.1.2.2 | Non-INVITE request retransmission interval, UDP only|
+| **Timer F** | 64*T1| 17.1.2.2| Non-INVITE transaction timeout timer|
+| **Timer G** | initially T1| 17.2.1| INVITE response retransmission interval|
+| **Timer H** | 64*T1| 17.2.1| Wait time for ACK receipt|
+| **Timer I** | T4 for UDP| 17.2.1| Wait time for ACK retransmissions|
+|| 0 sec. for TCP and SCTP|
+| **Timer J** | 64*T1 for UDP| 17.2.2| Wait time for retransmissions of non-INVITE requests|
+| | 0 sec. for TCP and SCTP|
+| **Timer K** | T4 for UDP| 17.1.2.2| Wait time for response retransmissions|
+
+<font size="2">*Table source*: [**IBM**](https://www.ibm.com/docs/en/was/8.5.5?topic=timers-sip-timer-summary); *Original Ref*: [**RFC 3261**](https://www.ietf.org/rfc/rfc3261.txt)</font size>
+
+[logging-sip]: /misc/img/logging-sip.png "SIP Traces"
+[logging-4]: /misc/img/236.png "logging-4"
+
 ## Call Release Reasons
 
 The causes of a dropped call are:
 
- 1. **Downstream BYE:** When the call disconnects from the **originator's** side via a **BYE** message. 
-
-```mermaid
-    sequenceDiagram
-    autonumber
-    Downstream->>ConnexCS: BYE
-    ConnexCS->>Upstream: BYE
-    Upstream->>ConnexCS: 200 OK
-    ConnexCS->>Downstream: 200 OK
-```
-
- 2. **Upstream BYE:** When the call disconnects from the **receiver** side via a **BYE** message.
-
-```mermaid    
-    sequenceDiagram
-    autonumber
-    participant Downstream
-    participant ConnexCS
-    Upstream->>ConnexCS: BYE
-    ConnexCS->>Downstream: BYE
-    Downstream->>ConnexCS: 200 OK
-    ConnexCS->>Upstream: 200 OK
-```
-
- 3. **MI Termination:** The system terminates the call when it finds that there has been no audio connection between the call's originator and the receiver.
+ 1. **Downstream BYE**: When the call disconnects from the **originator's** side via a **BYE** message.
+ 2. **Upstream BYE**: When the call disconnects from the **receiver** side via a **BYE** message.
+ 3. **MI Termination**: The system terminates the call when it finds that there has been no audio connection between the call's originator and the receiver.
 
      The system triggers a BYE message on both sides within the application.
 
- 4. **Ping Timeout:** If you enable the Sip Ping feature under Customer:material-menu-right: Routing, the receiver and originator receives OPTION packets (every X seconds).
-     The originator and the receiver should reply with 200 OK after receiving the OPTION packets. If either the originator or receiver misses sending the acknowledgment, the call terminates due to a "ping timeout."
-     It prevents any long-duration calls as the system recognizes either the originator or receiver as inactive.
-      Here's an example:
+ 4. **Ping Timeout**: If you enable the Sip Ping feature under Customer:material-menu-right: Routing, the receiver and originator receives OPTION packets (every X seconds).
 
-     **Missing SIP Ping Call Disconnection**
+    The originator and the receiver should reply with 200 OK after receiving the OPTION packets. If either the originator or receiver misses sending the acknowledgment, the call terminates due to a "ping timeout."
 
-```mermaid
-    sequenceDiagram
-    autonumber
-    Alice->>Bob: INVITE (cseq 1)
-    Bob-->>Alice: 100 Trying
-    Bob->>Charlie: INVITE (cseq 1)
-    Charlie-->>Bob: 100 Trying
-    Charlie-->>Bob: 183 Ringing
-    Bob-->>Alice: 183 Ringing
-    Charlie->>Bob: 200 OK (Connected)
-    Bob->>Alice: 200 OK (Connected)
-    Alice->>Bob: ACK
-    Bob->>Charlie: ACK
-    Note over Alice,Charlie: The call is active
-    Bob->>Alice: OPTIONS
-    Alice->>Bob: 200 OK
-    Bob->>Charlie: OPTIONS
-    Note over Alice,Charlie: No reply from Charlie, we need to disconnect
-    Bob->>Charlie: BYE
-    Bob->>Alice: BYE
-    Alice->>Bob: 200 OK
-```
-
-In this case, when we send the OPTION packet to Charlie, he doesn't reply. The OPTION message disappears and we need to disconnect the call.
-
-Another scenario is when ConnexCS sends message to Charlie and Charlie is active on the call, he will send a BYE message to Alice and we won't see a reply to that.
-
-5. **Missing ACK:** If a call gets disconnected within 5 seconds, its because an Acknowledgement wasn't received
-
-6. **Missing SIP Ping:** If a call gets disconnected within 20-30 seconds, its because of a missing SIP Ping.
-
-7. **Missing Re-Invite:** If a call gets disconnected within 5 minutes, its because of a missing Re-Invite message.
-
-8. **Lifetime Timeout:** The reasons for a lifetime timeout can be due to:
-   + **Max Call Duration**
-   + **Missing ACK** or other specific missing in call packets
-   + We received a BYE message when the call is still ringing
-
-9.  **Re-INVITE Ping Timeout (Upstream / Downstream):** It happens since the Dialog ended because there was no reply to re-invite pings.
-
-10. **SIP Race Condition:** A SIP race condition is a situation that occurs when two or more processes try to access and change a shared resource together. This results in unexpected behavior.
-
-    A race condition can occur in SIP if several messages get transmitted and received together. Also, their order of processing isn't well-defined. This can lead to inconsistencies in the state of the SIP system, as different messages may have conflicting effects on the system.
-
-    For example, consider a SIP system in which two users, Alice and Bob, are trying to establish a call with each other. If Alice and Bob both send SIP INVITE messages at the same time, and these messages get processed all together by the SIP server; it's possible that the server will receive the messages in an order that's different from the order in which they got transmitted. This could lead to a race condition, as the server may not be able to determine the correct state of the call.
-
-    To avoid race conditions, it's important to carefully design the protocol used to communicate between SIP components and to use appropriate mechanisms to ensure that messages get processed in the correct order.
-
-    Also, if we've a CANCEL message, but upstream sends a 183 / 200, which means they haven't received the CANCEL message.
+    It prevents any long-duration calls as the system recognizes either the originator or receiver as inactive.
