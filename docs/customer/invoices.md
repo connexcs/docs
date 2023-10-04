@@ -7,9 +7,6 @@ ConnexCS allows for straightforward **Invoice** generation for all providers. Th
 !!! note "Global Invoices"
     You can also manage Invoices in **Global :material-menu-right: Invoices**.
 
-!!! warning "Invoice Generation"
-        ConnexCS provides basic Invoice functions. Please note there are 3rd party accounting systems (such as [**ClearBooks**](https://www.clearbooks.co.uk/) or [**FreshBooks**](https://www.freshbooks.com/)) that are far more robust at functions such as taxes, discounts, and full-featured invoice management.
-
 ## Add new Invoices
 
 To add a new invoice:

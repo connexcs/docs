@@ -64,11 +64,17 @@ To enable, click **:material-plus:** next to IP Authentication:
     + **Outbound Proxy**: Enter the IP address of a Proxy server for calls to route to before being sent to the carrier. This rewrites the UAC IP in the VIA field of the SIP header. 
     This reduces management overhead as a customer only needs to authorize a single IP. 
     Additionally, multiple addresses can be load-balanced using the AnyEdge system. 
-    + **Flags**: Set CLI Authentication for situations where Accounts are unable to use [**Tech Prefix**](https://docs.connexcs.com/customer/routing/#basic) to differentiate customers using the same IP. 
+    + **Flags**: Set CLI Authentication for situations where Accounts are unable to use [**Tech Prefix**](https://docs.connexcs.com/customer/routing/#basic) to differentiate customers using the same IP. CLI Tags is another way to do it.
+        + **CLI Tags**: Set the CLI Authentication and `Save` it for the required customer. Then go to **Routing** and put some CLI's in the allow list. For example, you have allowed 1234567 (CLI) in Routing, and add 1234578 (CLI) in the Customer. When this customer receives a call, it will be able to differentiate where the call (traffic) is from with the help of CLI Tags.
+  
+    <img src= "/customer/img/advanced.png" width= "600">
 
 === "Codecs"
 
-    All Codecs are supported unless specifically set as "Restricted" here. 
+    All Codecs are supported unless specifically set as "Restricted" here.
+
+    <img src= "/customer/img/codecs.png" width= "600"> 
+
 
 === "Parameter Rewrite"
 
@@ -84,11 +90,9 @@ To enable, click **:material-plus:** next to IP Authentication:
     6. Click **`Save`** when done. 
     7. If a parameter rewrite is already created, you will have the ability to test it from the main tab. 
     
-    Example: International calls coming in with a + should be replaced with a specific country code. 
+    Example: International calls coming in with a + should be replaced with a specific country code.
 
-    &emsp;![alt text][parameter-rewrite]
-
-___
+    ![alt text][parameter-rewrite]
 
 ## SIP User Authentication
 
@@ -128,6 +132,7 @@ To enable, click **:material-plus:** next to SIP User Authentication:
 
 === "Basic"
 
+    + **SIP Profile**: You can select the created [SIP Profile](https://docs.connexcs.com/setup/config/sip-profile/) here.
     + **Username**: This will be the Username used for SIP authentication (must match configuration on the customer UAC). If the Customer has [**Internal Number Block**](https://docs.connexcs.com/customer/main/#internal-number-block) set on the **Main** tab, you can only select the Username from available extensions. If a Username is already in use on the Account, they will get an error "Duplicate User Detected".
     + **Password**: Must match with the configuration on the customer UAC.
     + **Channels, Flow Speed, Bandwidth**; Do NOT use these fields. 
@@ -155,11 +160,13 @@ To enable, click **:material-plus:** next to SIP User Authentication:
     + **Retain DID**: When you enable this, inbound calls will retain the destination number (DID), and the call is sent into the system, rather than using the SIP Username. 
     + **Smart Extension**: Calls are sent to the Class5, not Class4 infrastructure. This feature is currently in Alpha and is not recommended. 
 
-         ![alt text][sip-b]
+    <img src= "/customer/img/sip1.png" width= "500">
 
 === "Codecs"
 
     All Codecs are supported for the SIP user unless specifically set as "Restricted" here. 
+    
+    <img src= "/customer/img/codecs.png" width= "600">
 
 === "Parameter Rewrite"
 
@@ -180,7 +187,10 @@ To enable, click **:material-plus:** next to SIP User Authentication:
     If you enable Voice Mail, you can set which email address receives messages, reset the Voicemail Password, and view and delete current messages. 
     
     See [**Voicemail**](https://docs.connexcs.com/class5/voicemail/) for information on accessing Voicemail. 
+
+    <img src= "/customer/img/voicemail.png" width= "600"/>
 ___
+
 
 ### Reset SIP Password
 
@@ -190,7 +200,7 @@ You can also use `Generate Password` to generate a random and secure SIP passwor
 
 Make sure you `Copy Text` and provide this information for configuration, as this password can't be retrieved after it's set.
 
-Customers using the Customer Portal can rest their SIP Passwords in [**Authentication**](https://docs.connexcs.com/customer-portal/cp-authentication/#reset-sip-password).
+Customers using the Customer Portal can reset their SIP Passwords in [**Authentication**](https://docs.connexcs.com/customer-portal/cp-authentication/#reset-sip-password).
 
 !!! warning "SIP Password security"
     SIP passwords are needed for the SIP protocol, but they can present security risks for a provider.

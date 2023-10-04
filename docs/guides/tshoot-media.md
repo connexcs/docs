@@ -55,7 +55,23 @@ Common issues related to the media stream can include choppy or robotic voice, e
 !!! Danger
     If the SIP packets and / or RTP endpoints get investigated, sending media direct exposes your carrier's identity to your customer and vice versa.
 
-**Echo Test** Use our class 5 features to set up an Echo Test. When dialed, all audio spoken gets echoed back. This can be a quick way of checking a customer's audio quality.
+**Echo Test** Use our class 5 features to set up an Echo Test. When dialed, all audio spoken gets echoed back. Basically, it will repeat the media straight back to you. This can be a quick way of checking a customer's audio quality.
+
+You can create an application called **Echo Test** and provide a specific call to the Echo test. Then you can check audio quality of the call when the customer complains. You can ask the customer to dial 160 and you can get the Echo test and analyse the call.
+
+**Setting up an Echo Test:**
+
+1. Login to your account.
+2. Go to Class5 :material-menu-right: Apps and click `+`.
+3. You will see a Dialog box as shown below. ![echo test](/guides/img/echotest.jpg)
+4. Write the **Name** of your Echo test.
+5. Enter the **Destination** number for your Echo Test.
+6. Select the **PBX Server** for the call. The **Distributed (Default)** server will assign you the server near to your location.
+7. Click on `Save`. ![echo test1](/guides/img/echotest1.jpg)
+8. Click on `Go to App` which is right next to the echo test you've created. You will see a screen as shown in the figure below. ![echo test2](/guides/img/echotest2.jpg)
+9. Then from components drag the `echo` component and connect it with your created echo test.
+10. Click on the dot on the right-side of your created echo test (Echo Test in this case) and join it with the `echo component` on the right-side.![echo test3](/guides/img/echotest3.jpg)
+11. Then use your softfone to check for the echo test.
 
 **RTCP Metrics** If you enable RTCP on your customer and carrier, meta data about the RTP stream (packet counters, round trip time) gets exchanged. This information is available on the logging page of the call. These graphs can help to identify the problems.
 
@@ -84,6 +100,35 @@ ping 1.2.3.4 -s 160 -t 200 -i 0.02 -f
 
 **Smokeping / long-running pings:** An added part of your arsenal for identifying trends outside. This may be to set up a long-standing Ping in your monitoring environment for your customers / carrier equipment. This can identify long-term trends in customer / carrier latency.
 
-There're also plenty of SaaS ping monitoring systems, such as Pingdom.
+Plenty of SaaS ping monitoring systems, such as Pingdom also exist.
 
 **Call Recording / Packet Capture** Enable call recording on ConnexCS. It also captures packets on the customer's or the carrier's end. Compare the results.
+
+## Direct Media (Proxy ByPass)
+
+Basically, you may browse local websites and material without connecting to the outside internet when you utilise a local server to access the internet.
+Without proxy servers, which connect you to default IPs, or the outside world, these may be accessible instantly.
+Some addresses will be opened as no proxy if you enter them in the bypass proxy field.
+
+The easiest way to describe bypassing a proxy is that your device or browser won't need to search for a DNS server or connect when connecting to an address.
+
+For example, your workplace has a website with the address 172.31.163.8 or something similar.
+Simply enter 172.31.*.* in your bypass proxy box to instantly access these websites even if your internet connection from your ISP is unavailable.
+
+### Understanding SIP and RTP
+
+The SIP protocol can be, and usually is, routed through one or more SIP proxy servers before reaching its destination. It's similar to how email gets transmitted, in that several email servers are usually involved in the delivery process, each forwarding the message in its original form. Each email server adds a Received header to the message, to track the route the message has taken. SIP uses a Via header to track the SIP proxies that the message has passed through to get to its destination.
+SIP uses a similar message format to HTTP. These are both human-readable, and use similar (if not the same) error codes. For example, both HTTP and SIP use 408 as the error code to signal a timeout error, 404 for 'not found', etc.
+
+Now while SIP traffic passes from one server to the next to get to its destination, RTP sessions sets up directly between SIP clients.
+
+Now SIP is a good protocol, but things kind of break down when NAT gets involved. SIP packets themselves tend to move about without too much trouble, as they 'hop' from one server to another. RTP sessions are somewhat more troublesome. Either both clients need to be aware they're behind a NAT, and substitute their local IP addresses for their public IPs in their Session Description messages and open the appropriate firewall ports, or something has to modify the SIP packets en route. Thus, Products known as Back-to-Back User Agents, can actually proxy RTP traffic.
+
+```mermaid
+sequenceDiagram
+    SIP Client (Caller)->>+SIP User Agent: RTP Audio/ Video
+    SIP Client (Destination)->>+SIP User Agent: RTP Audio / Video
+```
+
+User Agent can modify SIP packets to direct the caller and destination to establish an RTP session with itself, rather than with each other. This is useful in situations where two SIP clients may not have direct access to each other, most commonly, when one or both of the SIP clients are behind a NAT.
+It's important to note that User Agent only proxy's RTP traffic when it has to, and when configured to do so. If both clients are on the same local network segment, User Agent doesn't need to play a part in the RTP session, and it will proxy only the SIP traffic.
