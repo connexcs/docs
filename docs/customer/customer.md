@@ -82,7 +82,7 @@ By clicking on `+` button we can add customer (see [**Create Customers**](https:
     * **Minimum Payment:** Set the minimum payment a customer can add to recharge the account. 
     * **Tax:** Tax is added as a percentage that is charged on top of costs. (UK = VAT; US = Sales Tax)
     * **Currency:** Select the currency from the drop-down menu.
-  
+
 === "Config"
 
     + **PayPal Email:** The email address associated with the customer's PayPal account. (This is relevant when using the IPN API which lets customers make payments directly through PayPal instead of using the Customer Portal. See our API documentation for details on [**PayPal IPN**](https://docs.connexcs.com/setup/integrations/api/#paypal-ipn-integration).) 

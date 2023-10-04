@@ -18,7 +18,6 @@ ConnexCS offers several libraries specifically for use with ConnexCS. [**Develop
 
 You can include some more modules (from npm), available for applications and drivers only.
 
-
 The purpose is to keep the sandbox lightweight and include only the necessary modules:
 
 |Modules||||
@@ -57,7 +56,6 @@ throw new Error('404 Not Found');
 
 *(**SIP:** Session Initiation Protocol, **DID:** Direct Inward Dialing)
 
-
 ### Class 4 Routing (Routes and Direct Inward Dial)
 
 After the routing engine has executed its main function, the system will run the custom ScriptForge script.
@@ -90,7 +88,7 @@ function main (data = {}, ctx) {
 
 !!! warning "Potential Sync Issues"
     To avoid the system losing synchronisation with your script and the connection crashing, execute ALL async functions with `await`.
-	If it isn't implemented correctly, it affects thatbilling and call stability.
+	If it isn't implemented correctly, it affects that billing and call stability.
 
 ### Form Submission
 
@@ -108,36 +106,43 @@ function main (data = {}) {
 
 ### Build Script
 
-1. To add a script, click :material-plus:.
-2. Specify the script **Name**.
-3. Select the **Type**:
-   * `Script`- This is the fastest way to execute custom code and is "synchronous" execution. This is mainly used for manipulations or calculations. It can't use libraries or work with Promises.
-   * `App`- Feature rich applications which can include a preset (whitelist) of available modules, the penalty of the extra features is a slightly higher latency.
-   * `Driver`- A driver works as an intermediary between ConnexCS and any external system. You can write drivers to bridge the ConnexCS DID provisioning system to a provider of your choice or build more complicated alerts.
-  
-4. Click **`Save`**.
+=== "Basic"
 
-    * `Script`- This is the fastest way to execute custom code and is "synchronous" execution.
-	    This is mainly used for manipulations or calculations.
-		It can't use libraries or work with Promises.
-    * `App`- As a penalty, feature-rich applications with a predefined list (allow list) of available modules have slightly higher latency.
-    * `Driver`- A driver works as an intermediary between ConnexCS and any external system.
-	   You can write drivers to bridge the ConnexCS DID provisioning system to a provider of your choice or build more complicated alerts.
+    1. To add a script, click :material-plus:.
+    2. Specify the script **Name**.
+    3. Select the **Type**:
+        * `Script`- This is the fastest way to execute custom code and is "synchronous" execution. This is mainly used for manipulations or calculations. It can't use libraries or work with Promises.
+        * `App`- Feature rich applications which can include a preset (whitelist) of available modules, the penalty of the extra features is a slightly higher latency.
+        * `Driver`- A driver works as an intermediary between ConnexCS and any external system. You can write drivers to bridge the ConnexCS DID provisioning system to a provider of your choice or build more complicated alerts.
+    
 
-4. Click **`Save`**.
 
-    ![alt text][s2]
+    4. Click **`Save`**.
+    5. Select your script from the list.
+    6. Enter the code of your script.
 
-5. Select your script from the list.
-6. Enter the code of your script.
-7. Click the green arrow to **`Save and Run`**.
-8. You can view the results onscreen.
+		If script shows an error, add this and then run the script again:
 
-If script shows an error, add this and then run the script again:
+  		```
+  		{"routing":{}}
+  		```
 
-```
-{"routing":{}}
-```
+    7. **Global Routing Priority** means the script will run for every single call. You have 3 options to choose from:
+    	* You can **disable** it if you don't want to use it.
+    	* **Run first** or **Run Last** means this script will run first or after the Script Forge enabled in the Routing section.
+    	* The **App** field allow you to integrate the created applications with the ScriptForge.
+
+    8. Click the green arrow to **`Save and Run`**.
+
+    	<img src= "/developers/img/sf1.png" width= "300">
+
+    9. You can view the results onscreen.
+
+=== "Schedule"
+
+    The **Schedule** option allows to you run your Script Forge based on pre-determined **dates in month**, **days of a week** and you can even select the time by selecting the values of **minutes** and **hours** from the drop-down menu.
+
+    <img src= "/developers/img/sf2.png" width= "400">
 
 ### Assign the Script to a Customer
 
@@ -197,6 +202,89 @@ function main(data) {
 	return data;
 }
 ```
+
+## Originate a Call via an API using ScriptForge
+
+The API Dialing feature sends an API request to the ConnexCS Platform for their customers to place a call via the API.
+
+For this feature, write an API in ScriptForge for connecting the company to their customer via the ConnexCS Platform using this API (in ScriptForge).
+
+ScriptForge uses the `originate` feature for originating the call.
+
+You need to include the Company ID,the Server where the call will be sent, Destination, CLI, and Extension in the script.
+
+```mermaid
+flowchart TD
+ A[End Customer] --> B[Customer's Dialer/Application]
+    B --> C[Dialer makes an API request via HTTP]
+    C --> D[API-HTTP API request hits the ConnexCS platform]
+    D --> E[ConnexCS platform runs ScriptForge]
+    E --> F[ScriptForge uses ScriptForge API to place a call]
+    F --> G[The API talks to the ConnexCS Class 5 Infrastructure]
+    G --> H[Class 5 then talks to the Cx Customer Class 4 Infrastructure]
+    H --> I[Call placed]
+```
+
+### Building the API Code
+
+1. Login to your account.
+2. Go to **Developer :material-menu-right: ScriptForge IDE :material-menu-right: ScriptForge**.
+3. Click on the blue `+` button.
+4. Enter the **Name** for the script in the **Basic Tab**.
+5. You can use the **Schedule** tab to run your script.
+6. Click on `Save`.
+7. Click on the created script `Calling API`. <img src= /developers/img/callingapi.png width= "1000">
+
+8. Enter the below code:
+
+```js
+/* This ConnexCS Library makes it easy to place a call */
+const originate = require('cxOriginate');
+/*
+    Simple Key/Value pairs, where the Key is a private secret,
+    and the value is the Customer ID.
+*/
+const apiKeys = {
+    'secret-key': 1234
+};
+//async function main (data) {
+    /* Authorizing the key */
+    const companyId = apiKeys[data.apiKey];
+    /* If the company does not exist, throw an Error*/
+    if (!companyId) throw new Error('401 Unauthorized');
+    /*
+        If the destination does not exist, throw an Error
+        The destination is the telephone number to be dialled
+    */
+    if (!data.destination) throw new Error('Missing Destination');
+    /*
+        If the CLI does not exist, throw an Error
+        The CLI is the form number of the phone call.
+    */
+        if (!data.cli) throw new Error('Missing CLI');
+    /*
+        If the extension does not exist, throw an Error
+        The external is the second leg destination where the
+        connected call will then be delivered to.
+        For example, a queue.
+    */
+    if (!data.extension) throw new Error('Missing Extension');
+    /*
+        Use the ConnexCS library to place the call.
+    */
+    var result = await originate.originate(companyID, 'enter server details the calls will be sent to', data.destination, data.cli, data.extension);
+    /*
+        Confirm that everything worked okay.
+    */
+    return {status: 'OK'};
+}
+```
+
+9.Click on `Save and Run`. <img src= /developers/img/callingapi1234.jpg>
+<iframe width="585" height="315" src="/developers/img/callingapi1234.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+10.You can access this feature on your **Customer Portal** using the **UUID**. We use the UUID to access ScriptForge from the customer portal URL as an API unauthenticated.
+For example, your Customer Portal URL is https://api.xx.yy/api/script/**uuid** and the code will be published here.
 
 [s2]: /developers/img/176.png "s2"
 [s8]: /developers/img/183.png "s8"
