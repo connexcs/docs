@@ -271,7 +271,7 @@ nav:
         - Image: apps/components/image.md
         - Inline: apps/components/inline.md
         - Input: apps/components/input.md
-        - link: apps/components/link.md
+        - Link: apps/components/link.md
         - Number: apps/components/number.md
         - Page Layout: apps/components/page-layout.md
         - Pagination: apps/components/pagination.md
@@ -282,6 +282,7 @@ nav:
         - Slider: apps/components/slider.md
         - Steps: apps/components/steps.md
         - Sub Form: apps/components/sub-form.md
+        - Sub Form+: apps/components/sub-form+.md
         - Switch: apps/components/switch.md
         - Table: apps/components/table.md
         - Tabs: apps/components/tabs.md

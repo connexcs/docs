@@ -36,3 +36,5 @@ Javascript CDN Library allows you to load external javascript libaries. Our sear
 |---------|-------------------------------------------------------------------|
 | mounted | When the page is first loaded                                     |
 | refresh | When the page is first loaded and every time .refresh() is called |
+
+## Form Attribute
