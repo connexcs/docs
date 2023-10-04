@@ -6,16 +6,16 @@ When we initiate **makeCall** we pass a number that we're dialing, for example:
 
 ```js
 this.makeCall('200')
-this.(res => {
-    res.$on('onStatusChanged', (status)) => {
-        console.log('Auto Status Change', status.session);
+  .then(res => {
+    res.$on('onStatusChanged', status => {
+      console.log('Auto Status Change', status.session);
     });
     console.log('Before Dial');
-})
-.catch (err => {
-    console.log('error, err');
+  })
+  .catch(err => {
+    console.log('error', err);
     console.log('Before Dial');
-});
+  });
 ```
 
 Then, the **makeCall** features return a **Promise** (an object that represents the eventual completion (or failure) of an asynchronous operation and its resulting value), which results in an **Event Manager** (refers to the process of handling and responding to events that occur in a web page or application).
