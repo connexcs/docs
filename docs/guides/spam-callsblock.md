@@ -6,12 +6,12 @@ These undesirable calls frequently entail fraud and schemes that intend to tric
 
 Thus, it becomes essential to remain vigilant and take proactive measures to protect oneself from falling victim to scams.
 
-ConnexCS helps in block these spam and scam calls.
+ConnexCS helps block these spam and scam calls.
 
 ## 1. Block Calls based on Dial Strings
 
 1. Go to **Management > Customer > Customer [Name] > Routing > Basic > Dial String**.
-2. Enter the Prefix phone code for the country you wish to block the calls from.
+2. Enter the Prefix phone code for the country you wish to block calls from.
 
 <img src= "/guides/img/spam01.png" width= "1000">
 
@@ -20,7 +20,7 @@ ConnexCS helps in block these spam and scam calls.
 1. Go to **Setup > Advanced > Prefix Set** to create a Prefix Set. The Prefix Set defines a list of pre-defined numbers.
 [Click here](https://docs.connexcs.com/setup/advanced/prefix-set/#configure-prefix-set) to follow the steps for configuring the Prefix Set.
 2. After configuring the Prefix Set, go to **Management > Customer > Customer [Name] > Routing > Basic > Dial String Prefix Set**.
-3. Click on the dropdown menu to select the configured Prefix Set.
+3. Click on the drop-down menu to select the configured Prefix Set.
 
 <img src= "/guides/img/spam2.png" width= "1000">
 
@@ -60,10 +60,10 @@ In the [**Flags**](https://docs.connexcs.com/setup/advanced/prefix-set/#flags) f
 
 ## 4. Performance (ASR+) based Call Blocking
 
-Performance based call blocking option will let you block calls if certain ASR+ low, or high etc.
+The Performance-based call blocking option will let you block calls if certain ASR+ low, or high etc.
 
 1. Go to **Management > Customer > Customer [Name] > Routing > Capacity Limits > ASR+**.
-2. Click on the dropdown menu to select from multiple options like ASR+(Low), ASR+(High), ASR? etc.
+2. Click on the drop-down menu to select from multiple options like ASR+ (low), ASR+ (high), ASR? etc.
 
 <img src= "/guides/img/spam4.png" width= "1000">
 
@@ -74,7 +74,7 @@ You can create a script on ScriptForge under the Developer section.
 [**Click here**](https://docs.connexcs.com/developers/scriptforge/#configuration) to follow the steps for writing the script.
 
 1. Go to **Management > Customer > Customer [Name] > Routing > ScriptForge > ScriptForge**.
-2. Click on the dropdown menu to select from the list of configured scripts.
+2. Click on the drop-down menu to select from the list of configured scripts.
 
 <img src= "/guides/img/spam5.png" width= "1000">
 
