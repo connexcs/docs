@@ -34,7 +34,7 @@ You can provide several domains for your customers through different brands, and
 3. Click the **`Save`** button. Soon after, a certificate gets issued for the domain.
 
 !!! note
-    Your Customer Portal must be exposed via a `CNAME` that you setup. This won't work with `A` records or by pointing directly.
+    You should expose your Customer Portal via a `CNAME` that you setup. This won't work with `A` records or by pointing directly.
 
     ![alt text][portal]
 
@@ -44,19 +44,19 @@ You can provide several domains for your customers through different brands, and
 
 === "Basic"
 
-* **Domain:** The URL your customers use to access their portal.
-* **Brand Name:** The name that appears on the portal for your customers.
-* **Customer Sign up:** Allow customers to sign up independently.
-* **Carrier Sign up:** Allow carriers to sign up independently.
-* **Template Customer:** Select a pre-configured template customer on your account, preset with default values and gets set when a customer independently creates their account via the portal (See "Template Customer example" below).
-Available values for this template are:
-    * Customer [Fields in the customer itself, such as debit limit]
-    * Routes
-    * Payments
-    * Alerts
-    * Packages
-    * Contracts
-* **Currencies:** Choose the currencies available for your customers when they sign up.
+   * **Domain:** The URL your customers use to access their portal.
+   * **Brand Name:** The name that appears on the portal for your customers.
+   * **Customer Sign up:** Allow customers to sign up independently.
+   * **Carrier Sign up:** Allow carriers to sign up independently.
+   * **Template Customer:** Select a pre-configured template customer on your account, preset with default values and gets set when a customer independently creates their account via the portal (See "Template Customer example" below).
+   Available values for this template are:
+       * Customer [Fields in the customer itself, such as debit limit]
+       * Routes
+       * Payments
+       * Alerts
+       * Packages
+       * Contracts
+   * **Currencies:** Choose the currencies available for your customers when they sign up.
 
 === "User Access Area"
 
@@ -113,11 +113,11 @@ Available values for this template are:
 
 === "SMTP"
 
-As brands are associated with Portal, you can now send an e-mail with your brand or domain name with this feature.
+    You can now associate brands with Portal, and send an e-mail with your brand or domain name with this feature.
 
-A customer can sign into the various domains available in the system.
+    A customer can sign into the various domains available in the system.
 
-Each domain can have different price points, support levels, features, etc.
+    Each domain can have different price points, support levels, features, etc.
 
 **Steps to create a new Domain**:
 

@@ -2,7 +2,9 @@
 
 **Class 5 :material-menu-right: IVR**
 
-An **Interactive Voice Response (IVR)**, or phone tree, allows callers to dial in and select an extension for a specific department or group within the company. These extensions can be routed to different Session Initiation Protocol (SIP) addresses, Public Switched Telephone Network (PSTN) numbers, internal extension numbers, other IVRs, conference bridges, groups, and Class 5 applications, based on the selected key.
+An **Interactive Voice Response (IVR)**, or phone tree, allows callers to dial in and select an extension for a specific department or group within the company.
+
+These extensions can be routed to different Session Initiation Protocol (SIP) addresses, Public Switched Telephone Network (PSTN) numbers, internal extension numbers, other IVRs, conference bridges, groups, and Class 5 applications, based on the selected key.
 
 When you create an IVR, you can specify a 1:1 mapping for all the possible keys on the keypad.
 
@@ -25,9 +27,11 @@ Complete the following steps before configuring the IVR.
 4. Enter the **Extension** for callers to call and start interacting with the IVR.
 5. Select the **Audio File** from the drop-down list which plays the greeting and explains the keypad options. This is the file created in the first step of IVR Planning, or one that was pre-loaded into [**Files**](https://docs.connexcs.com/files/).
 
+6. You can select from the list of available **PBX Servers**.
+
     ![alt text][ivr]
 
-6. After the completion of the above fields, **`Edit`** becomes available for each key- numbers 0 to 9, '\*' (asterisk) and '#' (hash) - to configure the Destination (what happens when the caller selects the key).
+7. After the completion of the above fields, **`Edit`** becomes available for each key- numbers 0 to 9, '\*' (asterisk) and '#' (hash) - to configure the Destination (what happens when the caller selects the key).
 
     :material-menu-right: `External`: PSTN numbers that are outside your Class 5 network.
          For example, someone's mobile).
