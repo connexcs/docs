@@ -162,7 +162,7 @@ The firewall blocks the IP Addresses along with the attackers.
 ## 9. Using SIP Authentication IP Whitelist
 
 1. Go to **Management > Customer > Customer [Name] > Auth > Basic > IP Whitelist**.
-2. You can block the IP addresses using this option.
+2. Using this method, you are only allowing certain IP addresses and blocking the rest of them.
 
 <img src= "/guides/img/spam11.png" width= "1000">
 
