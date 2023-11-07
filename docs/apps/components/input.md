@@ -14,6 +14,18 @@ The input box can also be dragged into other components including: **Sub-Form**[
 
 ## API
 
+By using input component APIs, developers can create a wide variety of input fields, including text fields, number fields, checkboxes, radio buttons, select boxes, and more.
+
+1. **Creating input components**: Specifying the type of input field (e.g., text, number, checkbox, select), setting initial values, and defining validation rules.
+
+2. **Binding input data to form values**: Associating input values with form data and handling data changes and updates.
+
+3. **Customizing input appearance**: Applying CSS styles to modify the visual aspects of the input field, including font, color, and borders.
+
+4. **Managing input events**: Handling user interactions with the input field, such as focus, blur, input, and change events.
+
+5. **Validating input values**: Implementing validation rules to ensure that input values are correct and meet the specified criteria.
+
 ### Config
 
 | **Name**|**Description**|
@@ -21,7 +33,7 @@ The input box can also be dragged into other components including: **Sub-Form**[
 |**ID**| This is a unique identifier which is used to access the field by the API and the key of the field when the form is saved |
 |**Name**| [**Optional**] The visual identifier label of the field|
 |**Width**| [**Optional**] To set the width of the field|
-|**Label Width**| [**Optional**] Sets the width of the label|
+|**Label Width**|Width of the label associated with an input field. It determines the horizontal space occupied by the label text|
 |**Label Wrap**| If the label is longer than the allowed width the text will continue on another line|
 |**Hide Label**| Hides the label on the form|
 |**Placeholder**| The short hint is displayed in the input field before the user enters a value|
@@ -67,6 +79,25 @@ Form validation can be performed using a variety of methods, including:
 | **onBlur (element)**| The onblur event occurs when an field loses focus|
 
 ### Methods
+
+| **Name**| **Description**|
+|----------------------|---------------------------------------------------------------------|
+| **createFormElement()**| This method dynamically generates an input element based on the specified input type (text, number, checkbox, select, etc.) and properties|
+| **bindInputValue(inputElement, value)**| This method associates the input element with a specific value, ensuring that the input field reflects the current value|
+| **onInputValueChange(event)**| This event handler is triggered when the user changes the input value, updating the corresponding data model and potentially triggering validations|
+|**applyInputStyles(inputElement, styles)**|This method applies CSS styles to the input element, customizing its appearance, such as font, color, and borders|
+|**updateInputPlaceholder(inputElement, placeholderText)**|This method sets the placeholder text for the input element, providing a hint for the user about the expected input|
+|**onInputFocus(event)**|This event handler is triggered when the user focuses on the input element, potentially revealing additional information or enabling input interactions|
+|**onInputBlur(event)**|This event handler is triggered when the user blurs the input element, potentially validating the input value or performing actions based on the input|
+|**validateInputValue(inputValue)**|This method checks the input value against validation rules, such as required fields, format constraints, or value ranges|
+|**displayInputError(inputElement, errorMessage)** |This method displays an error message associated with the input element, providing feedback to the user about invalid input|
+|**highlightInputOnFocus(inputElement)**|This method applies a visual cue, such as a highlight or border change, when the input element is focused, indicating active input|
+|**showInputSuggestions(inputElement, suggestions)**| This method displays suggestions or autocompletion options based on the user's input, facilitating efficient data entry|
+|**onInputKeyDown(event)**| This event handler is triggered when the user presses a key within the input element, potentially handling specific shortcuts or input behaviors|
+|**onInputKeyPress(event)**|This event handler is triggered when the user presses and releases a key within the input element, capturing individual key presses|
+|**formatInputValue(inputValu)**| This method applies formatting rules to the input value, such as masking sensitive data, converting input to a specific format (e.g., phone number, date), or ensuring consistent input patterns|
+|**updateFormData(inputElement, value)**|This method updates the corresponding form data model with the current input value, ensuring that data is synchronized across the form|
+|**getFormValue(inputElement)**| This method retrieves the current value of the input element, allowing access to input data for processing or submission|
 
 ### Interactivity
 
