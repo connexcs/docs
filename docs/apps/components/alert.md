@@ -15,27 +15,16 @@ You can use alerts to display:
 
 ## API
 
-Here are some examples of how APIs can be integrated with Alerts:
+### Methods
 
-1. **Data-driven alerts**: Connect APIs to external data sources to trigger alerts based on real-time data updates.
+| **Name**|**Description**|
+|---------------|----------------------------------------------------------------------------------------------------------------------------------------|
+|**.show()**|Displays the alert|
+|**.hide()**|Hides the alert |
 
-2. **Personalized alerts**: Utilize user data and preferences to personalize alert content and timing.
+!!! Info The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
 
-3. **Actionable alerts**: Integrate APIs with alert actions to enable users to take immediate action from within the alert.
-
-4. **Context-aware alerts**: Use APIs to gather contextual information and tailor alerts to the current state of the app or user activity.
-
-5. **Dynamic alert content**: Integrate APIs to dynamically generate alert content based on specific criteria.
-
-6. **Real-time feedback alerts**: Utilize APIs to provide real-time feedback to user actions.
-
-7. **Contextual help alerts**: Integrate APIs with help desk or knowledge base systems to provide contextual help alerts when users encounter errors or difficulties.
-
-8. **Proactive alerts**: Use APIs to analyze user behavior and proactively trigger alerts to prevent potential issues.
-
-9. **Multi-channel alerts**: Integrate APIs with various communication channels, such as email, SMS, or push notifications, to ensure users receive alerts even when they are not actively using the app.
-
-10. **Customizable alert configurations**: Allow users to customize alert preferences, such as frequency, severity levels, and notification channels, to personalize their alert experience.
+### Events
 
 ### Config
 
@@ -57,14 +46,7 @@ Here are some examples of how APIs can be integrated with Alerts:
 
 Events aren't used with Alerts.
 
-### Methods
 
-| **Name**|**Description**|
-|---------------|----------------------------------------------------------------------------------------------------------------------------------------|
-|**.show()**|Displays the alert|
-|**.hide()**|Hides the alert |
-
-!!! Info The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
 
 ### Interactivity
 
