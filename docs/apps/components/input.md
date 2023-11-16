@@ -48,8 +48,21 @@ You can use focus and blur events to perform a variety of actions, such as:
 
 | **Name**| **Description**|
 |----------------------|---------------------------------------------------------------------|
+|**(static) addClassName(fields, disabled)**|Add style class to form item|
 | **this.disabled(fields,true)**| Disable input field from user interaction|
-| 
+| **(static) getComponent(name) → {Object}**|Retrieve a component from an object or element|
+|**(static) getData(isValidateopt) → {Promise.<Object>}**|To get form data|
+| **(static) getValue(fieldName)**|Get A Value From An Object|
+|**(static) hide(fields)**|Hides the field|
+|**(static) refresh()**|Refresh the form, when the form data changes, you need to call this method for re-render|
+|**(static) setOptions(fields, options)**|Set Form Field Configuration Item|
+|**(static) removeClassName(fields, disabled)**|Remove form item style|
+|**this.reset()**|Reset Form Fields Data|
+|**(static) scriptForge(name, data, fn, args) → {Promise.<Boolean>}**|Access scriptForge|
+|**sendrequest**|
+|**(static) setData(Value)**|Set the data in the field|
+|**(static) setOptions(fields, options)**|Set Form Field Configuration item|
+
 ## Config
 
 | **Name**|**Description**|
