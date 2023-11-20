@@ -28,19 +28,70 @@ It enables users to navigate through a hierarchical structure of options, narrow
 
 10. **Accessibility Enhancements**: Cascaders can improve form accessibility for users with visual impairments or limited motor skills, making it easier for them to navigate through options and make informed choices.
 
+### Interactivity
+
+Integrating interactivity with cascaders in a form builder involves  scripting languages to control the cascader's behavior and respond to user interactions.
+
+Here's a general approach to integrating interactivity:
+
+1. **Identify interactive scenarios**: Determine the specific scenarios where interactivity should be implemented, such as updating options based on selections, providing real-time feedback, or triggering form actions.
+
+2. **Attach event listeners**: Attach event listeners to the cascader components to capture user interactions. Common events include 'change', 'select', and 'blur'.
+
+3. **Implement event handlers**: Write event handler functions that respond to the captured events. These functions should perform the desired interactive behavior, such as updating options, displaying feedback, or triggering actions.
+
+4. **Utilize data sources**: Access and manipulate data sources, such as external APIs or local data structures, to provide dynamic content and context-aware interactions.
+
+5. **Update cascader options**: Dynamically update the cascader's options based on user interactions or data retrieval. Use methods like loadOptions() or enableOption() to modify the options.
+
+6. **Provide real-time feedback**: Display visual or textual feedback to users based on their selections. Use methods like highlightOption() or displayMessage() to provide feedback.
+
+7. **Trigger form actions**: Trigger specific form actions based on user interactions in the cascader. Use methods like submitForm() or showAdditionalFields() to perform actions.
+
+8. **Handle errors and exceptions**: Implement error handling mechanisms to gracefully handle invalid selections or unexpected input. Use try-catch blocks to catch and handle errors.
+
+9. **Test and refine**: Thoroughly test the interactive cascaders to ensure smooth functionality and user-friendly interactions. Gather user feedback and refine the implementation accordingly.
+
+**Examples may include:**
+
+1. A **product configuration form** could use interactivity to dynamically update the available variants and pricing based on the selected product model and other options.
+
+2. A **location selection form** could use interactivity to provide real-time feedback on the validity of the selected address and suggest alternative options if necessary.
+
+3. A **scheduling form** could use interactivity to highlight available time slots based on the selected date, service provider, and other criteria.
+
+4. A **multi-level categorization** form could use interactivity to reveal additional subcategories or filters based on the user's previous selections, refining the categorization process.
+
+5. A **dynamic form generation tool** could use interactivity to dynamically generate new cascader options or form fields based on the user's input and choices.
+
 ## API
 
-Here are some examples of how APIs can be integrated with the Cascader:
+### Events
 
-APIs and cascaders can be used together in form builders to create dynamic and user-friendly forms.
+| **Name**| **Description**|
+|----------------------|---------------------------------------------------------------------|
+| **onChange (element)**| The onChange event occurs when the value of an field is changed|
+| **onFocus (element)**| The onfocus event occurs when an field gets focus|
+| **onBlur (element)**| The onblur event occurs when an field loses focus|
 
-APIs can be used to:
+### Methods
 
-1. **Load data for the cascader options**: APIs can be used to retrieve data from external sources, such as databases or web services, to populate the cascader options. This allows for dynamic options that are based on real-time data.
-
-2. **Validate user selections**: APIs can be used to validate the user's selections in the cascader. This can be used to ensure that the selected options are compatible with each other and that they meet certain criteria.
-
-3. **Submit form data**: APIs can be used to submit the form data to a server or other data store. This can be used to save the user's selections and to process the form data.
+| **Name**| **Description**|
+|----------------------|---------------------------------------------------------------------|
+|**(static) addClassName(fields, disabled)**|Add style class to form item|
+| **this.disabled(fields,true)**| Disable input field from user interaction|
+| **(static) getComponent(name) → {Object}**|Retrieve a component from an object or element|
+|**(static) getData(isValidateopt) → {Promise.<Object>}**|To get form data|
+| **(static) getValue(fieldName)**|Get A Value From An Object|
+|**(static) hide(fields)**|Hides the field|
+|**(static) refresh()**|Refresh the form, when the form data changes, you need to call this method for re-render|
+|**(static) setOptions(fields, options)**|Set Form Field Configuration Item|
+|**(static) removeClassName(fields, disabled)**|Remove form item style|
+|**this.reset()**|Reset Form Fields Data|
+|**(static) scriptForge(name, data, fn, args) → {Promise.<Boolean>}**|Access scriptForge|
+|**sendrequest**|
+|**(static) setData(Value)**|Set the data in the field|
+|**(static) setOptions(fields, options)**|Set Form Field Configuration item|
 
 ### Config
 
@@ -85,62 +136,3 @@ Form validation can be performed using a variety of methods, including:
 
 !!! Info
     1. The **callback()function** is also called to verify success in the custom checkup method.
-
-### Events
-
-| **Name**| **Description**|
-|----------------------|---------------------------------------------------------------------|
-| **onChange (element)**| The onChange event occurs when the value of an field is changed|
-| **onFocus (element)**| The onfocus event occurs when an field gets focus|
-| **onBlur (element)**| The onblur event occurs when an field loses focus|
-
-### Methods
-
-| **Name**|**Description**|
-|---------------|----------------------------------------------------------------------------------------------------------------------------------------|
-|**loadOptions(options)**|This method loads a set of options into the cascader, replacing the existing options|
-|**selectOption(option)**|This method selects the specified option in the cascader|
-|**getSelectedValue()**|This method returns the currently selected option's value. If no option is selected, it returns null or undefined|
-|**getSelectedIndex()**|This method returns the index of the currently selected option. If no option is selected, it returns -1|
-|**enableOption(option)**|This method enables the specified option in the cascader, allowing users to select it|
-|**disableOption(option)**|This method disables the specified option in the cascader, preventing users from selecting it|
-|**clearSelection()**|This method clears the current selection in the cascader, leaving no option selected|
-|**addEventListener(event, callback)**|This method attaches an event listener to the cascader for the specified event. The event parameter can be any supported event, such as 'change', 'select', or 'blur'. The callback parameter is a function that is called when the event occurs|
-|**removeEventListener(event, callback)**| This method removes an event listener from the cascader for the specified event. The event parameter can be any supported event, and the callback parameter is the function that was previously attached to the event|
-|**destroy()**| This method destroys the cascader, removing it from the DOM and releasing any associated resources. This is typically called when the cascader is no longer needed|
-
-### Interactivity
-
-Integrating interactivity with cascaders in a form builder involves  scripting languages to control the cascader's behavior and respond to user interactions.
-
-Here's a general approach to integrating interactivity:
-
-1. **Identify interactive scenarios**: Determine the specific scenarios where interactivity should be implemented, such as updating options based on selections, providing real-time feedback, or triggering form actions.
-
-2. **Attach event listeners**: Attach event listeners to the cascader components to capture user interactions. Common events include 'change', 'select', and 'blur'.
-
-3. **Implement event handlers**: Write event handler functions that respond to the captured events. These functions should perform the desired interactive behavior, such as updating options, displaying feedback, or triggering actions.
-
-4. **Utilize data sources**: Access and manipulate data sources, such as external APIs or local data structures, to provide dynamic content and context-aware interactions.
-
-5. **Update cascader options**: Dynamically update the cascader's options based on user interactions or data retrieval. Use methods like loadOptions() or enableOption() to modify the options.
-
-6. **Provide real-time feedback**: Display visual or textual feedback to users based on their selections. Use methods like highlightOption() or displayMessage() to provide feedback.
-
-7. **Trigger form actions**: Trigger specific form actions based on user interactions in the cascader. Use methods like submitForm() or showAdditionalFields() to perform actions.
-
-8. **Handle errors and exceptions**: Implement error handling mechanisms to gracefully handle invalid selections or unexpected input. Use try-catch blocks to catch and handle errors.
-
-9. **Test and refine**: Thoroughly test the interactive cascaders to ensure smooth functionality and user-friendly interactions. Gather user feedback and refine the implementation accordingly.
-
-**Examples may include:**
-
-1. A **product configuration form** could use interactivity to dynamically update the available variants and pricing based on the selected product model and other options.
-
-2. A **location selection form** could use interactivity to provide real-time feedback on the validity of the selected address and suggest alternative options if necessary.
-
-3. A **scheduling form** could use interactivity to highlight available time slots based on the selected date, service provider, and other criteria.
-
-4. A **multi-level categorization** form could use interactivity to reveal additional subcategories or filters based on the user's previous selections, refining the categorization process.
-
-5. A **dynamic form generation tool** could use interactivity to dynamically generate new cascader options or form fields based on the user's input and choices.

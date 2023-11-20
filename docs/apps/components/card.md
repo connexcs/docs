@@ -47,7 +47,7 @@ Some examples of how card components can be made interactive include:
 | **Name**| **Description**|
 |----------------------|---------------------------------------------------------------------|
 |**(static) addClassName(fields, disabled)**|Add style class to form item|
-| **this.disabled(fields,true)**| Disable input field from user interaction|
+//|**this.disabled(fields,true)**|,true)**| Disable input field from user interaction|
 | **(static) getComponent(name) → {Object}**|Retrieve a component from an object or element|
 |**(static) getData(isValidateopt) → {Promise.<Object>}**|To get form data|
 | **(static) getValue(fieldName)**|Get A Value From An Object|
@@ -59,7 +59,7 @@ Some examples of how card components can be made interactive include:
 |**(static) scriptForge(name, data, fn, args) → {Promise.<Boolean>}**|Access scriptForge|
 |**sendrequest**|
 |**(static) setData(Value)**|Set the data in the field|
-|**(static) setOptions(fields, options)**|Set Form Field Configuration item|
+//|**(static) setOptions(fields, options)**|Set Form Field Configuration item|
 
 ### Config
 
