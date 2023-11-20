@@ -36,7 +36,6 @@ You would need to make a custom alert element and include event listeners in it 
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------|
 
 | **Name**| **Description**|
-//| **(static) getComponent(name) → {Object}**|Retrieve a component from an object or element|
 |**(static) getData(isValidateopt) → {Promise.<Object>}**|To get form data|
 | **(static) getValue(fieldName)**|Get A Value From An Object|
 |**(static) hide(fields)**|Hides the field|
