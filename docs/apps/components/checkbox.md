@@ -17,25 +17,38 @@ Checkboxes are typically used to collect data about user preferences or choices.
 7. Personalizing user experiences
 8. Streamlining multi-step processes
 
+### Interactivity
+
+The're a number of ways to add interactivity to **Checkboxes**.
+
+Some of the most common methods include:
+
+1. **Conditional logic and dynamic content updates**: Checkboxes can dynamically control other form fields based on selections, enhancing personalization.
+
+2. **Validation checks and error prevention**: Checkboxes can enforce validation rules, ensuring correct user input and data integrity.
+
+3. **Data collection and processing**: Checkboxes allow for collecting user preferences and tailoring experiences accordingly.
+
+4. **Visual feedback and user engagement**: Visual feedback from checkboxes improves user interaction and form engagement.
+
+5. **Accessibility and inclusive design**: Accessible checkboxes ensure inclusive participation and form usability for all.
+
+6. **Conditional page navigation**: Dynamically switch between form pages based on checkbox selections
+7. **Real-time progress indicators**: Keep users engaged by showing their progress and remaining tasks
+8. **Autofill and smart suggestions**: Suggest relevant options based on user choices, reducing input effort.
+9. **Contextual tooltips and pop-ups**: Provide additional context and explanations for specific checkboxes.
+10. **Interactive visuals and animations**: Enhance visual feedback and engagement with dynamic responses.
+11. **Conditional page navigation**: Dynamically switch between form pages based on checkbox selections
+12. **Real-time progress indicators**: Keep users engaged by showing their progress and remaining tasks
+13. **Autofill and smart suggestions**: Suggest relevant options based on user choices, reducing input effort.
+14. **Contextual tooltips and pop-ups**: Provide additional context and explanations for specific checkboxes.
+15. **Interactive visuals and animations**: Enhance visual feedback and engagement with dynamic responses.
+
 ## API
 
-Here are some specific ways APIs can be integrated with checkboxes in a form builder:
 
-1. **Dynamically generate Checkbox fields**: APIs can be used to programmatically create checkbox fields, including their labels, values, and default states. This allows for dynamic form generation based on user input or data from external sources.
 
-2. **Handle Checkbox interactions**: APIs enable developers to respond to user interactions with checkboxes, such as when a checkbox is checked or unchecked. This allows for conditional logic, dynamic content updates, and validation checks.
-
-3. **Access Checkbox values**: APIs provide a means to retrieve the current values of checkboxes, allowing developers to collect and process user selections. This is essential for gathering user data and making informed decisions based on user preferences.
-
-4. **Manage Checkbox groups**: APIs facilitate the management of checkbox groups, enabling developers to handle multiple checkboxes within a single form element. This allows for group validation, collective data handling, and conditional interactions.
-
-5. **Customize Checkbox appearance**: APIs can be used to customize the appearance of checkboxes, including their styling, positioning, and layout. This allows for branding consistency, enhanced user experience, and accessibility.
-
-6. **Perform validation and Error handling**: APIs enable developers to implement validation rules for checkboxes, ensuring that user input meets specific criteria. This helps maintain data integrity and prevent erroneous submissions.
-
-7. **Integrate with External Services**: APIs can be used to integrate checkboxes with external services, such as data storage systems or third-party applications. This allows for seamless data exchange and enhanced functionality.
-
-### Config
+## Config
 
 | **Name**|**Description**|
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------|
@@ -84,56 +97,17 @@ Form validation can be performed using a variety of methods, including:
 
 | **Name**| **Description**|
 |----------------------|---------------------------------------------------------------------|
-| **createCheckbox()**|Create a new checkbox field in your form|
-| **getCheckboxState()**| Allows you to get the current state of a checkbox. This will return a boolean value of true if the checkbox is checked and false if it is not|
-| **setCheckboxState()**| Allows you to set the state of a checkbox. This will either check or uncheck the checkbox, depending on the value of the argument you pass to the method|
-|**addCheckboxEventListener()**|Allows you to add an event listener to a checkbox. This will allow you to run code whenever the checkbox is checked or unchecked|
-|**removeCheckboxEventListener()**|Allows you to remove an event listener from a checkbox. This will prevent the code from running whenever the checkbox is checked or unchecked|
-|**disableCheckbox()**|Allows you to disable a checkbox so that it cannot be checked or unchecked|
-|**enableCheckbox()**|Allows you to enable a checkbox so that it can be checked or unchecked|
-|**getCheckboxValue()**|Allows you to get the value that will be submitted when the checkbox is checked|
-|**setCheckboxLabel()** |Allows you to set the label for a checkbox|
-|**setCheckboxName()**|Allows you to set the name for a checkbox. The name is the identifier that will be used to submit the checkbox value|
-|**setCheckboxId()**|Allows you to set the ID for a checkbox|
-|**validateCheckbox()**|Allows you to validate the value of a checkbox. This can be used to ensure that the user has selected a checkbox before submitting the form|
-|**getCheckboxCheckedCount()**|Allows you to get the number of checked checkboxes in a group of checkboxes|
-|**getCheckboxValues()**|Allows you to get all of the values of the checked checkboxes in a group of checkboxes|
-|**clearCheckboxes()**|Allows you to clear all of the checked checkboxes in a group of checkboxes|
-|**toggleCheckbox()**|Allows you to toggle the state of a checkbox. This will either check the checkbox if it is unchecked or uncheck the checkbox if it is checked|
-|**setCheckboxRequired()**|Allows you to set a checkbox to be required. This means that the user will be required to check the checkbox before submitting the form|
-|**getCheckboxRequired()**| Allows you to check if a checkbox is required|
-|**getCheckboxGroup()**|Retrieves the checkbox group to which a specific checkbox belongs|
-|**setCheckboxAppearance()**|Allows you to customize the appearance of a checkbox, such as its size, color, and style|
-|**getCheckboxAppearance()**|This method retrieves the current appearance style of a checkbox|
-|**addCheckboxChangeListener()**|This method allows you to add a change listener to a checkbox. A change listener is a function that is called whenever the state of the checkbox changes|
-|**removeCheckboxChangeListener()**|This method removes a change listener from a checkbox|
-
-### Interactivity
-
-**Interactivity** is the ability of a web page or application to respond to user input.
-
-The're a number of ways to add interactivity to **Checkboxes**.
-
-Some of the most common methods include:
-
-1. **Conditional logic and dynamic content updates**: Checkboxes can dynamically control other form fields based on selections, enhancing personalization.
-
-2. **Validation checks and error prevention**: Checkboxes can enforce validation rules, ensuring correct user input and data integrity.
-
-3. **Data collection and processing**: Checkboxes allow for collecting user preferences and tailoring experiences accordingly.
-
-4. **Visual feedback and user engagement**: Visual feedback from checkboxes improves user interaction and form engagement.
-
-5. **Accessibility and inclusive design**: Accessible checkboxes ensure inclusive participation and form usability for all.
-   
-6. **Conditional page navigation**: Dynamically switch between form pages based on checkbox selections
-7. **Real-time progress indicators**: Keep users engaged by showing their progress and remaining tasks
-8. **Autofill and smart suggestions**: Suggest relevant options based on user choices, reducing input effort.
-9. **Contextual tooltips and pop-ups**: Provide additional context and explanations for specific checkboxes.
-10. **Interactive visuals and animations**: Enhance visual feedback and engagement with dynamic responses.
-11. **Conditional page navigation**: Dynamically switch between form pages based on checkbox selections
-12. **Real-time progress indicators**: Keep users engaged by showing their progress and remaining tasks
-13. **Autofill and smart suggestions**: Suggest relevant options based on user choices, reducing input effort.
-14. **Contextual tooltips and pop-ups**: Provide additional context and explanations for specific checkboxes.
-15. **Interactive visuals and animations**: Enhance visual feedback and engagement with dynamic responses.
-
+|**(static) addClassName(fields, disabled)**|Add style class to form item|
+| **this.disabled(fields,true)**| Disable input field from user interaction|
+| **(static) getComponent(name) → {Object}**|Retrieve a component from an object or element|
+|**(static) getData(isValidateopt) → {Promise.<Object>}**|To get form data|
+| **(static) getValue(fieldName)**|Get A Value From An Object|
+|**(static) hide(fields)**|Hides the field|
+|**(static) refresh()**|Refresh the form, when the form data changes, you need to call this method for re-render|
+|**(static) setOptions(fields, options)**|Set Form Field Configuration Item|
+|**(static) removeClassName(fields, disabled)**|Remove form item style|
+|**this.reset()**|Reset Form Fields Data|
+//|**(static) scriptForge(name, data, fn, args) → {Promise.<Boolean>}**|Access scriptForge|
+//|**sendrequest**|
+//|**(static) setData(Value)**|Set the data in the field|
+//|**(static) setOptions(fields, options)**|Set Form Field Configuration item|
