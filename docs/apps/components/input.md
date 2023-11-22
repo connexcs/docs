@@ -6,7 +6,7 @@ The input box specifies an input field where the user can enter data.
 
 The input field also support client-side validation.
 
-<img src ="docs/apps/components/img/input.png">
+<img src= "/apps/components/img/input.png">
 
 ## Use Case
 
@@ -69,18 +69,18 @@ You can use focus and blur events to perform a variety of actions, such as:
 
 | **Name**|**Description**| **Image**|
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
-|**ID**| This is a unique identifier which is used to access the field by the API and the key of the field when the form is saved |<img src ="docs/apps/components/img/input_id.png">|
-|**Name**| [**Optional**] The visual identifier label of the field|<img src ="docs/apps/components/img/input_name.png">|
-|**Width**| [**Optional**] To set the width of the field|<img src ="docs/apps/components/img/input_width.png">|
-|**Label Width**|Width of the label associated with an input field. It determines the horizontal space occupied by the label text|<img src ="docs/apps/components/img/input_labelwidth.png">|
-|**Label Wrap**| If the label is longer than the allowed width the text will continue on another line|<img src ="docs/apps/components/img/input_labelwrap.png">|
-|**Hide Label**| Hides the label on the form|<img src ="docs/apps/components/img/input_hidelabel.png">|
-|**Placeholder**| The short hint is displayed in the input field before the user enters a value|<img src ="docs/apps/components/img/input_placeholder.png">|
-|**Text Prompt**| A description to aid the user when completing the field|<img src ="docs/apps/components/img/input_textpromp.png">|
-|**Max Length**| Limit the amount of characters the field supports|<img src ="docs/apps/components/img/input_maxlength.png">|
-|**Default Value**| The default value which is filled in the field before the user changes it|<img src ="docs/apps/components/img/input_defaultvalue.png">|
-|**Custom Class**| A HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src ="docs/apps/components/img/input_customclass.png">|
-|**Attribute Action**|Enable **Data Binding** to connect the data to UI|<img src ="docs/apps/components/img/input_attributeaction.png">|
+|**ID**| This is a unique identifier which is used to access the field by the API and the key of the field when the form is saved |<img src= "/apps/components/img/input_id.png">|
+|**Name**| [**Optional**] The visual identifier label of the field|<img src= "/apps/components/img/input_name.png">|
+|**Width**| [**Optional**] To set the width of the field|<img src= "/apps/components/img/input_width.png">|
+|**Label Width**|Width of the label associated with an input field. It determines the horizontal space occupied by the label text|<img src= "/apps/components/img/input_labelwidth.png">|
+|**Label Wrap**| If the label is longer than the allowed width the text will continue on another line|<img src= "/apps/components/img/input_labelwrap.png">|
+|**Hide Label**| Hides the label on the form|<img src= "/apps/components/img/input_hidelabel.png">|
+|**Placeholder**| The short hint is displayed in the input field before the user enters a value|<img src= "/apps/components/img/input_placeholder.png">|
+|**Text Prompt**| A description to aid the user when completing the field|<img src= "/apps/components/img/input_textpromp.png">|
+|**Max Length**| Limit the amount of characters the field supports|<img src= "/apps/components/img/input_maxlength.png">|
+|**Default Value**| The default value which is filled in the field before the user changes it|<img src= "/apps/components/img/input_defaultvalue.png">|
+|**Custom Class**| A HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|
+|**Attribute Action**|Enable **Data Binding** to connect the data to UI|<img src= "/apps/components/img/input_attributeaction.png">|
 ||Enable **Hidden** action to hide the field|
 ||Enable **Disabled** action to make the field unsuable|
 ||Enable **Show clear button** action make the clear button visible|
@@ -105,7 +105,7 @@ Form validation can be performed using a variety of methods, including:
 ||**value**: Value of the current field|
 ||**callback**: Callback function (must be called) upon completion of validation; **callback('Error message')/ callback(new Error('Error message'))**. These are two ways to return an error message|
 
-|<img src ="docs/apps/components/img/input_validation.png">|
+|<img src= "/apps/components/img/input_validation.png">|
 
 
 !!! Info
