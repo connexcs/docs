@@ -49,6 +49,7 @@ You can use focus and blur events to perform a variety of actions, such as:
 | **Name**| **Description**|
 |----------------------|---------------------------------------------------------------------|
 |**(static) addClassName(fields, disabled)**|Add style class to form item|
+|**(static) database(name)**|Access database for List(get all records), Read (get a record), Update (update a record), Delete (delete a record). This is an Object of functions|
 | **this.disabled(fields,true)**| Disable input field from user interaction|
 | **(static) getComponent(name) → {Object}**|Retrieve a component from an object or element|
 |**(static) getData(isValidateopt) → {Promise.<Object>}**|To get form data|
@@ -59,9 +60,9 @@ You can use focus and blur events to perform a variety of actions, such as:
 |**(static) removeClassName(fields, disabled)**|Remove form item style|
 |**this.reset()**|Reset Form Fields Data|
 |**(static) scriptForge(name, data, fn, args) → {Promise.<Boolean>}**|Access scriptForge|
-|**sendrequest**|
 |**(static) setData(Value)**|Set the data in the field|
 |**(static) setOptions(fields, options)**|Set Form Field Configuration item|
+|**(static) validate(fieldsopt) → {Promise.<Boolean>}**|Validates the form data or a key-value pair // Returns Both The Success And Failure Results|
 
 ## Config
 
