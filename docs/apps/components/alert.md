@@ -44,13 +44,13 @@ You would need to make a custom alert element and include event listeners in it 
 
 |**Name**|**Description**|**Icon**|
 |--------|---------------|--------|
-|**ID**| This is a unique identifier used to access the field by the API and the key of the field when the form is saved|<img src= "/apps/components/img/alert_id2.png">|
+|**ID**| This is a unique identifier used to access the field by the API and the key of the field when the form is saved|<img src= "/apps/components/img/alert_id2.png"> <img src= "/apps/components/img/alert_id4.png">|
 |**Title**| [**Optional**] The visual identifier label of the field|<img src= "/apps/components/img/alert_title2.png">|
 |**Description**| [**Optional**] Gives information about the alert|<img src= "/apps/components/img/alert_description2.png">|
 |**Width**| [**Optional**] To set the width of the field|<img src= "/apps/components/img/alert_width2.png">|
-|**Hide Label**| Hides the label on the form|<img src= "/apps/components/img/alert_hidelabel2.png">|
-|**Effect**| You can either choose from **Dark** or **Light** Mode|<img src= "/apps/components/img/alert_effect3.png">|
-|**Type**| Sets the icon of the selected alert type. **Success**, **Warning**, **Info** and **Error** will have different icons associated with them|<img src= "/apps/components/img/alert_type2.png">|
+|**Hide Label**| Hides the label on the form|<img src= "/apps/components/img/input_hidelabel.png">|
+|**Effect**| You can either choose from **Dark** or **Light** Mode|<img src= "/apps/components/img/alert_type.png">|
+|**Type**| Sets the icon of the selected alert type. **Success**, **Warning**, **Info** and **Error** will have different icons associated with them|<img src= "/apps/components/img/alert_effect3.png">|
 |**Closable**| The user can close the alert box|<img src= "/apps/components/img/alert_closable2.png">|
 |**Center**| Sets the position of the alert label at the center|<img src= "/apps/components/img/alert_center2.png">|
 |**Show Icon**|Displays/Hides the symbol associated with each **Type** of alert|<img src= "/apps/components/img/alert_showicon2.png">|
