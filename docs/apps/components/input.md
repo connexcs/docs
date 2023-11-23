@@ -59,7 +59,7 @@ You can use focus and blur events to perform a variety of actions, such as:
 | **this.getValues() → {Object}**|Get the values of all fields when values change|
 |**this.hide(fields)**|Hides the field|
 |**this.show(fields)**|Displays the field|
-|**(static) setData(Value)**|Set the data in the field|
+|**this.setData(Value)**|Set the data in the field|
 |**(static) validate(fieldsopt) → {Promise.<Boolean>}**|Validates the form data or a key-value pair // Returns Both The Success And Failure Results|
 
 ## Config
