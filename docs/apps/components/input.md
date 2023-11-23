@@ -60,11 +60,11 @@ You can use focus and blur events to perform a variety of actions, such as:
 |**this.hide(fields)**|Hides the field|
 |**this.show(fields)**|Displays the field|
 |**this.setData(Value)**|Set the data in the field|
-|**(static) validate(fieldsopt) → {Promise.<Boolean>}**|Validates the form data or a key-value pair // Returns Both The Success And Failure Results|
+|**this.validate(fieldsopt) → {Promise.<Boolean>}**|Validates the form data or a key-value pair // Returns Both The Success And Failure Results|
 
 ## Config
 
-| **Name**|**Description**| **Image**|
+| **Name**|**Description**|**Icon**|
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
 |**ID**| This is a unique identifier which is used to access the field by the API and the key of the field when the form is saved |<img src= "/apps/components/img/input_id.png">|
 |**Name**| [**Optional**] The visual identifier label of the field|<img src= "/apps/components/img/input_name.png">|

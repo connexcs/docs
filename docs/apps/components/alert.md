@@ -35,20 +35,14 @@ You would need to make a custom alert element and include event listeners in it 
 | **Name**|**Description**|
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------|
 | **Name**| **Description**|
-**(static) database(name)**|Access database for List(get all records), Read (get a record), Update (update a record), Delete (delete a record). This is an Object of functions|
-|**(static) getData(isValidateopt) → {Promise.<Object>}**|To get form data|
-| **(static) getValue(fieldName)**|Get A Value From An Object|
-|**(static) hide(fields)**|Hides the field|
-|**.show()**|Displays the alert|
-|**(static) refresh()**|Refresh the form, when the form data changes, you need to call this method for re-render|
-|**this.reset()**|Reset Form Fields Data|
-|**(static) setData(Value)**|Set the data in the field|
+|**thi.hide(fields)**|Hides the field|
+|**this.show(fields)**|Displays the field|
 
 !!! Info The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
 
 ### Config
 
-| **Name**|**Description**|
+| **Name**|**Description**|**Icon**|
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------|
 |**ID**| This is a unique identifier used to access the field by the API and the key of the field when the form is saved |
 |**Title**| [**Optional**] The visual identifier label of the field|
