@@ -50,20 +50,16 @@ You can use focus and blur events to perform a variety of actions, such as:
 
 | **Name**| **Description**|
 |----------------------|---------------------------------------------------------------------|
-|**(static) addClassName(fields, disabled)**|Add style class to form item|
-|**(static) database(name)**|Access database for List(get all records), Read (get a record), Update (update a record), Delete (delete a record). This is an Object of functions|
-| **this.disabled(fields,true)**| Disable input field from user interaction|
-| **(static) getComponent(name) → {Object}**|Retrieve a component from an object or element|
-|**(static) getData(isValidateopt) → {Promise.<Object>}**|To get form data|
-| **(static) getValue(fieldName)**|Get A Value From An Object|
-|**(static) hide(fields)**|Hides the field|
-|**(static) refresh()**|Refresh the form, when the form data changes, you need to call this method for re-render|
-|**(static) setOptions(fields, options)**|Set Form Field Configuration Item|
-|**(static) removeClassName(fields, disabled)**|Remove form item style|
-|**this.reset()**|Reset Form Fields Data|
-|**(static) scriptForge(name, data, fn, args) → {Promise.<Boolean>}**|Access scriptForge|
+|**this.addClassName(fields, disabled)**|Add style class to form item|
+|**this.removeClassName(fields, disabled)**|Remove form item style|
+| **this.disable(fields)**| Disable input field from user interaction|
+| **this.enable(fields)**| Disable input field from user interaction|
+| **this.getComponent(name) → {Object}**|Retrieve a component from an object or element|
+| **this.getValue(fieldName)**|Get A Value From An Object|
+| **this.getValues() → {Object}**|Get the values of all fields when values change|
+|**this.hide(fields)**|Hides the field|
+|**this.show(fields)**|Displays the field|
 |**(static) setData(Value)**|Set the data in the field|
-|**(static) setOptions(fields, options)**|Set Form Field Configuration item|
 |**(static) validate(fieldsopt) → {Promise.<Boolean>}**|Validates the form data or a key-value pair // Returns Both The Success And Failure Results|
 
 ## Config
@@ -81,12 +77,7 @@ You can use focus and blur events to perform a variety of actions, such as:
 |**Max Length**| Limit the amount of characters the field supports|<img src= "/apps/components/img/input_maxlength.png">|
 |**Default Value**| The default value which is filled in the field before the user changes it|<img src= "/apps/components/img/input_defaultvalue.png">|
 |**Custom Class**| A HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|
-|**Attribute Action**|Enable **Data Binding** to connect the data to UI|<img src= "/apps/components/img/input_attributeaction.png">|
-||Enable **Hidden** action to hide the field|
-||Enable **Disabled** action to make the field unsuable|
-||Enable **Show clear button** action make the clear button visible|
-||Enable **Show Password** action make the password visible|
-||Enable **Show word count** action make the word count visible|
+|**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br>Enable **Disabled** action to make the field unsuable. <br>Enable **Show clear button** action make the clear button visible. <br> Enable **Show Password** action make the password visible. <br>Enable **Show word count** action make the word count visible|<img src= "/apps/components/img/input_attributeaction.png">|
 
 ### Validation
 

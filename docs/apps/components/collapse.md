@@ -18,53 +18,7 @@ This feature is often used to organize lengthy or complex forms, making them eas
 8. Contact forms
 9. Customer feedback forms
 
-## API
-
-Here are some specific ways APIs can be integrated with Collapse component in a form builder:
-
-
-1. **API-driven collapse**: Programmatically control section collapse based on interactions or data changes.
-2. **Real-time collapse updates**: Ensure consistent form state with APIs for real-time section updates.
-3. **Progressive disclosure with API**: Reveal sections gradually based on interactions or data updates using APIs.
-4. **Automated form updates**: Trigger section changes based on events or external triggers using APIs.
-5. **Dynamically populate form sections**: Retrieve and display relevant data based on user selections.
-6. **Integrate with external validation services**: Validate user inputs in real time within collapsible sections.
-7. **Trigger external actions**: Perform actions when sections are collapsed or expanded.
-8. **Dynamically adjust form layout**: Adapt collapsible sections to different devices and screen sizes.
-9. **Personalize form content**: Tailor form content based on user preferences or history.
-10. **Integrate with chatbots or virtual assistants**: Enable conversational form completion through chatbots.
-11. **Real-time data synchronization**: Keep form data consistent with external sources in real time.
-12. **Automate form routing and submission**: Streamline form processing based on user interactions.
-13. **Integrate with analytics platforms**: Gain insights into user behavior and form effectiveness
-14. **Enable data export and formatting**: Export collapsible section data in various formats.
-
-### Config
-
-| **Name**|**Description**|
-|---------------|----------------------------------------------------------------------------------------------------------------------------------------|
-|**ID**| This is a unique identifier which is used to access the field by the API and the key of the field when the form is saved |
-|**Collapse Options**|Allows you to add/delete multiple Collapses|
-|**Accordian Mode**|Enable this mode if you want to display only one Collaspse section at a time (this is helful when you have to avoid clutter when you have multiple Collapse sections)
-|**Custom Class**| A HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|
-|**Attribute Action**|Enable **Hidden** action to hide the field|
-
-
-### Events
-
-
-### Methods
-
-| **Name**| **Description**|
-|----------------------|---------------------------------------------------------------------|
-| **Element.classList.toggle()**| This method toggles a class on an element, which can be used to show or hide the element|
-| **Element.setAttribute()and  Element.removeAttribute()**| These methods can be used to set or remove a custom attribute on an element, which can be used to toggle its visibility|
-| **Element.style.display**| This method can be used to directly set the display property of an element, which can be used to show or hide the element|
-|**.collapse('hide')**|This code will collapse/hide the element by setting its display property to "none"|
-|**.collapse('show')**|This code will expand/show the element by setting its display property to "none"|
-
 ### Interactivity
-
-**Interactivity** is the ability of a web page or application to respond to user input.
 
 The're a number of ways to add interactivity to the **Collapse** component.
 
@@ -77,3 +31,35 @@ Some of the most common methods include:
 5. **Nested Collapse**: Organize complex forms with multiple levels of collapsible sections.
 6. **Enhanced animations and transitions**: Improve the visual appeal of the collapse/expand action.
 7. **Accessibility considerations**: Optimize the collapse component for users with disabilities.
+
+## API
+
+### Methods
+
+//|**(static) addClassName(fields, disabled)**|Add style class to form item|
+//|**(static) database(name)**|Access database for List(get all records), Read (get a record), Update (update a record), Delete (delete a record). This is an Object of functions|
+//| **this.disabled(fields,true)**| Disable input field from user interaction|
+| **(static) getComponent(name) → {Object}**|Retrieve a component from an object or element|
+|**(static) getData(isValidateopt) → {Promise.<Object>}**|To get form data|
+| **(static) getValue(fieldName)**|Get A Value From An Object|
+//| **(static) getValues() → {Object}**|Get the values of all fields when values change|
+|**(static) hide(fields)**|Hides the field|
+|**this.show()**|Displays the field|
+|**(static) refresh()**|Refresh the form, when the form data changes, you need to call this method for re-render|
+|**(static) setOptions(fields, options)**|Set Form Field Configuration Item|
+|**(static) removeClassName(fields, disabled)**|Remove form item style|
+|**this.reset()**|Reset Form Fields Data|
+|**(static) scriptForge(name, data, fn, args) → {Promise.<Boolean>}**|Access scriptForge|
+|**(static) setData(Value)**|Set the data in the field|
+|**(static) setOptions(fields, options)**|Set Form Field Configuration item|
+|**(static) validate(fieldsopt) → {Promise.<Boolean>}**|Validates the form data or a key-value pair // Returns Both The Success And Failure Results|
+
+## Config
+
+| **Name**|**Description**|
+|---------------|----------------------------------------------------------------------------------------------------------------------------------------|
+|**ID**| This is a unique identifier which is used to access the field by the API and the key of the field when the form is saved |
+|**Collapse Options**|Allows you to add/delete multiple Collapses|
+|**Accordian Mode**|Enable this mode if you want to display only one Collaspse section at a time (this is helful when you have to avoid clutter when you have multiple Collapse sections)
+|**Custom Class**| A HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|
+|**Attribute Action**|Enable **Hidden** action to hide the field|
