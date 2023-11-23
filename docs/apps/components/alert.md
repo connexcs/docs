@@ -50,7 +50,7 @@ You would need to make a custom alert element and include event listeners in it 
 
 ### Config
 
-| **Name**|**Description**|**Icon**
+| **Name**|**Description**|**Icon**|
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------|
 |**ID**| This is a unique identifier used to access the field by the API and the key of the field when the form is saved|<img src= "/apps/components/img/alert_id.png">|
 |**Title**| [**Optional**] The visual identifier label of the field|<img src= "/apps/components/img/alert_title.png">|
