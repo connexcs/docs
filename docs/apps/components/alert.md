@@ -35,12 +35,14 @@ You would need to make a custom alert element and include event listeners in it 
 ### Methods
 
 | **Name**| **Description**|
+|----------|----------------|
 |**thi.hide(fields)**|Hides the field|
 |**this.show(fields)**|Displays the field|
 
-!!! Info The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
+!!! Info 
+    The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
 
-### Config
+## Config
 
 |**Name**|**Description**|**Icon**|
 |--------|---------------|--------|
