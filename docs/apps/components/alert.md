@@ -54,4 +54,4 @@ You would need to make a custom alert element and include event listeners in it 
 |**Closable**| The user can close the alert box|<img src= "/apps/components/img/alert_closable2.png">|
 |**Center**| Sets the position of the alert label at the center|<img src= "/apps/components/img/alert_center2.png">|
 |**Show Icon**|Displays/Hides the symbol associated with each **Type** of alert|<img src= "/apps/components/img/alert_showicon2.png">|
-|**Attribute Action**|Enable **Hidden** action to hide the field|<img src= "/apps/components/img/alert_attributeaction.png">|
+|**Attribute Action**|Enable **Hidden** action to hide the field|<img src= "/apps/components/img/alert_arrtibuteaction.png">|
