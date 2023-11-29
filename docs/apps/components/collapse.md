@@ -6,6 +6,8 @@ Collapse helps to hide or conceal a section of a form, typically by minimizing o
 
 This feature is often used to organize lengthy or complex forms, making them easier to navigate and reducing visual clutter.
 
+<img src= "/apps/components/img/collapse.png">
+
 ## Use Case
 
 1. Improved form organization
@@ -36,30 +38,23 @@ Some of the most common methods include:
 
 ### Methods
 
-//|**(static) addClassName(fields, disabled)**|Add style class to form item|
-//|**(static) database(name)**|Access database for List(get all records), Read (get a record), Update (update a record), Delete (delete a record). This is an Object of functions|
-//| **this.disabled(fields,true)**| Disable input field from user interaction|
-| **(static) getComponent(name) → {Object}**|Retrieve a component from an object or element|
-|**(static) getData(isValidateopt) → {Promise.<Object>}**|To get form data|
-| **(static) getValue(fieldName)**|Get A Value From An Object|
-//| **(static) getValues() → {Object}**|Get the values of all fields when values change|
-|**(static) hide(fields)**|Hides the field|
-|**this.show()**|Displays the field|
-|**(static) refresh()**|Refresh the form, when the form data changes, you need to call this method for re-render|
-|**(static) setOptions(fields, options)**|Set Form Field Configuration Item|
-|**(static) removeClassName(fields, disabled)**|Remove form item style|
-|**this.reset()**|Reset Form Fields Data|
-|**(static) scriptForge(name, data, fn, args) → {Promise.<Boolean>}**|Access scriptForge|
-|**(static) setData(Value)**|Set the data in the field|
-|**(static) setOptions(fields, options)**|Set Form Field Configuration item|
-|**(static) validate(fieldsopt) → {Promise.<Boolean>}**|Validates the form data or a key-value pair // Returns Both The Success And Failure Results|
+| **Name**| **Description**|
+|----------------------|---------------------------------------------------------------------|
+|**this.addClassName(fields, disabled)**|Add style class to form item|
+|**this.removeClassName(fields, disabled)**|Remove form item style|
+| **this.disable(fields)**| Disable input field from user interaction|
+| **this.enable(fields)**| Disable input field from user interaction|
+| **this.getComponent(name) → {Object}**|Retrieve a component from an object or element|
+| **this.getValue(fieldName)**|Get A Value From An Object|
+|**this.hide(fields)**|Hides the field|
+|**this.show(fields)**|Displays the field|
 
 ## Config
 
-| **Name**|**Description**|
-|---------------|----------------------------------------------------------------------------------------------------------------------------------------|
-|**ID**| This is a unique identifier which is used to access the field by the API and the key of the field when the form is saved |
-|**Collapse Options**|Allows you to add/delete multiple Collapses|
-|**Accordian Mode**|Enable this mode if you want to display only one Collaspse section at a time (this is helful when you have to avoid clutter when you have multiple Collapse sections)
-|**Custom Class**| A HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|
-|**Attribute Action**|Enable **Hidden** action to hide the field|
+| **Name**|**Description**|**Image**|
+|---------------|----------------------------------------------------------------------------------------------------------------------------------------|--|
+|**ID**| This is a unique identifier which is used to access the field by the API and the key of the field when the form is saved|<img src= "/apps/components/img/input_id.png">|
+|**Collapse Options**|Allows you to add/delete multiple Collapses|<img src= "/apps/components/img/collapse_collapseoptions.png">|
+|**Accordian Mode**|Enable this mode if you want to display only one Collaspse section at a time (this is helful when you have to avoid clutter when you have multiple Collapse sections)|<img src= "/apps/components/img/collapse_accordianmode.png">
+|**Custom Class**| A HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|
+|**Attribute Action**|Enable **Hidden** action to hide the field|<img src= "/apps/components/img/alert_arrtibuteaction.png">|
