@@ -10,7 +10,7 @@ They can also help to improve the user experience by making it easier for users 
 
 ## Use Case
 
-Some of te Use-Cases are as follows:
+Some of the Use-Cases are as follows:
 
 1. Grouping related fields together.
 2. Creating multi-step forms.
@@ -46,31 +46,25 @@ Some examples of how card components can be made interactive include:
 
 | **Name**| **Description**|
 |----------------------|---------------------------------------------------------------------|
-|**(static) addClassName(fields, disabled)**|Add style class to form item|
-//|**this.disabled(fields,true)**|,true)**| Disable input field from user interaction|
-| **(static) getComponent(name) → {Object}**|Retrieve a component from an object or element|
-|**(static) getData(isValidateopt) → {Promise.<Object>}**|To get form data|
-| **(static) getValue(fieldName)**|Get A Value From An Object|
-|**(static) hide(fields)**|Hides the field|
-|**(static) refresh()**|Refresh the form, when the form data changes, you need to call this method for re-render|
-|**(static) setOptions(fields, options)**|Set Form Field Configuration Item|
-|**(static) removeClassName(fields, disabled)**|Remove form item style|
-|**this.reset()**|Reset Form Fields Data|
-|**(static) scriptForge(name, data, fn, args) → {Promise.<Boolean>}**|Access scriptForge|
-|**sendrequest**|
-|**(static) setData(Value)**|Set the data in the field|
-//|**(static) setOptions(fields, options)**|Set Form Field Configuration item|
+|**this.addClassName(fields, disabled)**|Add style class to form item|
+|**this.removeClassName(fields, disabled)**|Remove form item style|
+//confirm from saurabh|**this.disable(fields)**| Disable input field from user interaction|
+| **this.enable(fields)**| Disable input field from user interaction|
+| **this.getComponent(name) → {Object}**|Retrieve a component from an object or element|
+| **this.getValue(fieldName)**|Get A Value From An Object|
+|**this.hide(fields)**|Hides the field|
+|**this.show(fields)**|Displays the field|
 
-### Config
+## Config
 
-| **Name**|**Description**|
-|---------------|----------------------------------------------------------------------------------------------------------------------------------------|
-|**ID**| This is a unique identifier which is used to access the field by the API and the key of the field when the form is saved |
-|**Title**| [**Optional**] The visual identifier label of the field|
-|**Width**| [**Optional**] To set the width of the field|
-|**Padding**| [**Optional**] Specificies the amount of space between an element's content and its border|
-|**Show Header**| [**Optional**] Hides/Displays the **Title** of the card|
-|**Bordered**| [**Optional**] Adds/Removes the border around the card|
-|**Shadow**| [**Optional**]It's used to create a more visually appealing and engaging form. Shadows can also be used to make it easier for users to find and interact with form elements.  the terms "always," "hover," and "never" refer to the visibility of the component's shadow|
-|**Custom Class**| A HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|
-|**Attribute Action**|Enable **Hidden** action to hide the field|
+| **Name**|**Description**|**Image**|
+|---------------|----------------------------------------------------------------------------------------------------------------------------------------|----|
+|**ID**| This is a unique identifier which is used to access the field by the API and the key of the field when the form is saved|<img src= "/apps/components/img/input_id.png">|
+|**Title**| [**Optional**] The visual identifier label of the field|<img src= "/apps/components/img/alert_title2.png">|
+|**Width**| [**Optional**] To set the width of the field|<img src= "/apps/components/img/input_width.png">|
+|**Padding**| [**Optional**] Specifies the amount of space between an element's content and its border|<img src= "/apps/components/img/card_padding.png">
+|**Show Header**| [**Optional**] Hides/Displays the **Title** of the card|<img src= "/apps/components/img/card_showheader.png">
+|**Bordered**| [**Optional**] Adds/Removes the border around the card|<img src= "/apps/components/img/card_bordered.png">
+|**Shadow**| [**Optional**]It's used to create a more visually appealing and engaging form. Shadows can also be used to make it easier for users to find and interact with form elements.  the terms "always," "hover," and "never" refer to the visibility of the component's shadow|<img src= "/apps/components/img/card_shadow.png">
+|**Custom Class**| A HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|
+|**Attribute Action**|Enable **Hidden** action to hide the field|<img src= "/apps/components/img/alert_arrtibuteaction.png">|
