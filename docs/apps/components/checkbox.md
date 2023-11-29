@@ -78,14 +78,14 @@ Some of the most common methods include:
 |**ID**| This is a unique identifier which is used to access the field by the API and the key of the field when the form is saved|<img src= "/apps/components/img/input_id.png">|
 |**Name**| [**Optional**] The visual identifier label of the field|<img src= "/apps/components/img/checkbox_name.png">|
 |**Width**| [**Optional**] To set the width of the field|<img src= "/apps/components/img/input_width.png">|
-|**Label Width**|Width of the label associated with an input field. It determines the horizontal space occupied by the label text||<img src= "/apps/components/img/input_labelwidth1.png">|
+|**Label Width**|Width of the label associated with an input field. It determines the horizontal space occupied by the label text|<img src= "/apps/components/img/input_labelwidth1.png">|
 |**Label Wrap**| If the label is longer than the allowed width the text will continue on another line|<img src= "/apps/components/img/input_labelwrap1.png">|
 |**Hide Label**| Hides the label on the form|<img src= "/apps/components/img/input_hidelabel.png">|
 |**Text Prompt**| A description to aid the user when completing the field|<img src= "/apps/components/img/input_textprompt.png">|
 |**Layout**| Select the format of the Checkbox as **Block** or **Inline**|<img src= "/apps/components/img/checkbox_layout.png">|
 |**Option**|Choose either **Static** or **Dynamic** way of adding data to the oprions of the Cascader <br><br>**Static data** refers to a fixed set of options that are predefined and loaded into the cascader at the time of initialization</br></br> **Dynamic data** are options fetched as needed from sources like databases or APIs. The cascader updates choices based on user selections. You select from **Data source** which refers to the origin of the data; **Function** which refers to the code that manipulates the data, and **Assigned Value** which refers to the specific value stored or associated with a data element|<img src= "/apps/components/img/checkbox_static.png"> <img src= "/apps/components/img/checkbox_dynamic.png">|
 |**Custom Class**| A HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|
-|**Attribute Action**|Enable **Data Binding** to connect the data to UI<br><br>Enable **Hidden** action to hide the field</br></br> Enable **Disabled** action to make the field unsuable|<img src= "/apps/components/img/checkbox_attributeaction.png">|
+|**Attribute Action**|Enable **Data Binding** to connect the data to UI<br>Enable **Hidden** action to hide the field</br>Enable **Disabled** action to make the field unsuable|<img src= "/apps/components/img/checkbox_attributeaction.png">|
 
 ### Validation
 

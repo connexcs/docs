@@ -93,7 +93,7 @@ Here's a general approach to integrating interactivity:
 |**(static) setData(Value)**|Set the data in the field|
 |**(static) setOptions(fields, options)**|Set Form Field Configuration item|
 
-### Config
+## Config
 
 | **Name**|**Description**|
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------|
