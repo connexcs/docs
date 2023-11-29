@@ -55,6 +55,6 @@ Some of the most common methods include:
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------|--|
 |**ID**| This is a unique identifier which is used to access the field by the API and the key of the field when the form is saved|<img src= "/apps/components/img/input_id.png">|
 |**Collapse Options**|Allows you to add/delete multiple Collapses|<img src= "/apps/components/img/collapse_collapseoptions.png">|
-|**Accordian Mode**|Enable this mode if you want to display only one Collaspse section at a time (this is helful when you have to avoid clutter when you have multiple Collapse sections)|<img src= "/apps/components/img/collapse_accordianmode.png">
+|**Accordian Mode**|Enable this mode if you want to display only one Collaspse section at a time (this is helful when you have to avoid clutter when you have multiple Collapse sections)|<img src= "/apps/components/img/collapse_accordionmode.png">
 |**Custom Class**| A HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Hidden** action to hide the field|<img src= "/apps/components/img/alert_arrtibuteaction.png">|
