@@ -63,8 +63,7 @@ Here are some examples of how interactivity can be implemented for **Button** co
 |**this.hide(fields)**|Hides the field|
 |**this.show(fields)**|Displays the field|
 
-
-### Config
+## Config
 
 | **Name**|**Description**|**Image**|
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------|-----|
