@@ -60,13 +60,12 @@ You can use focus and blur events to perform a variety of actions, such as:
 |**this.hide(fields)**|Hides the field|
 |**this.show(fields)**|Displays the field|
 |**this.setData(Value)**|Set the data in the field|
-|**this.validate(fieldsopt) → {Promise.<Boolean>}**|Validates the form data or a key-value pair // Returns Both The Success And Failure Results|
 
 ## Config
 
 | **Name**|**Description**|**Icon**|
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
-|**ID**| This is a unique identifier which is used to access the field by the API and the key of the field when the form is saved |<img src= "/apps/components/img/input_id.png">|
+|**ID**| This is a unique identifier which is used to access the field by the API and the key of the field when the form is saved|<img src= "/apps/components/img/input_id.png">|
 |**Name**| [**Optional**] The visual identifier label of the field|<img src= "/apps/components/img/input_name.png">|
 |**Width**| [**Optional**] To set the width of the field|<img src= "/apps/components/img/input_width.png">|
 |**Label Width**|Width of the label associated with an input field. It determines the horizontal space occupied by the label text|<img src= "/apps/components/img/input_labelwidth1.png">|
@@ -98,7 +97,6 @@ Form validation can be performed using a variety of methods, including:
 ||**callback**: Callback function (must be called) upon completion of validation; **callback('Error message')/ callback(new Error('Error message'))**. These are two ways to return an error message|
 
 <img src= "/apps/components/img/input_validation.png">
-
 
 !!! Info
     1. **Regular expressions** should be wrapped with //, as in:/^1[3456789]\d{9}$/"

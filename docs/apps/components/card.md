@@ -8,6 +8,8 @@ Cards are typically used to create a more organized and visually appealing form 
 
 They can also help to improve the user experience by making it easier for users to scan the form and find the information they need.
 
+<img src= "/apps/components/img/card.png">
+
 ## Use Case
 
 Some of the Use-Cases are as follows:
