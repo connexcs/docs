@@ -6,6 +6,8 @@ A button can be used to trigger an event when it's clicked.
 
 Buttons are typically used to submit forms, navigate between pages, or perform other actions.
 
+<img src= "/apps/components/img/button.png">
+
 ## Use Case
 
 Some Use Cases are listed as follows:
@@ -52,39 +54,31 @@ Here are some examples of how interactivity can be implemented for **Button** co
 
 | **Name**| **Description**|
 |----------------------|---------------------------------------------------------------------|
-|**(static) addClassName(fields, disabled)**|Add style class to form item|
-| **this.disabled(fields,true)**| Disable input field from user interaction|
-| **(static) getComponent(name) → {Object}**|Retrieve a component from an object or element|
-|**(static) getData(isValidateopt) → {Promise.<Object>}**|To get form data|
-| **(static) getValue(fieldName)**|Get A Value From An Object|
-|**(static) hide(fields)**|Hides the field|
-|**(static) refresh()**|Refresh the form, when the form data changes, you need to call this me
-thod for re-render|
-|**(static) removeClassName(fields, disabled)**|Remove form item style|
-|**this.reset()**|Reset Form Fields Data|
-//|**(static) scriptForge(name, data, fn, args) → {Promise.<Boolean>}**|Access scriptForge|
-//|**sendrequest**|
-|**(static) setRules(field, rules)**|Set Form Field Validation Rules|
-
+|**this.addClassName(fields, disabled)**|Add style class to form item|
+|**this.removeClassName(fields, disabled)**|Remove form item style|
+| **this.disable(fields)**| Disable input field from user interaction|
+| **this.enable(fields)**| Disable input field from user interaction|
+| **this.getComponent(name) → {Object}**|Retrieve a component from an object or element|
+| **this.getValue(fieldName)**|Get A Value From An Object|
+|**this.hide(fields)**|Hides the field|
+|**this.show(fields)**|Displays the field|
 
 
 ### Config
 
-| **Name**|**Description**|
-|---------------|----------------------------------------------------------------------------------------------------------------------------------------|
-|**ID**| This is a unique identifier which is used to access the field by the API and the key of the field when the form is saved|
-|**Name**| [**Optional**] An identifier for the button within the form. It is used by the form builder to associate the button with the data it is submitting. The name is typically not displayed to the user|
-|**Button Name**| [**Optional**] The visual identifier label of the field|
-|**Width**| [**Optional**] To set the width of the field|
-|**Label Width**| [**Optional**] Sets the width of the label|
-|**Label Wrap**| If the label is longer than the allowed width the text will continue on another line|
-|**Hide Label**| Hides the label on the form|
-|**Placeholder**| The short hint is displayed in the input field before the user enters a value|
-|**Text Prompt**| A description to aid the user when completing the field|
-|**Button Size**| Select the size of the button from 3 choices; **Large**, **Default** or **Small**|
-|**Button Type**| Select the type of button from: **Default**, **Primary**, **Success**, **Warning**, **Danger**, **Info**, **Text**, or **Link**|
-|**Determine whether it's**|You may select the shape of the button as **plain**, **round** or **circle**|
-|**Custom Class**| A HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|
-|**Attribute Action**|Enable **Hidden** action to hide the field|
-||Enable **Disabled** action to make the field unsuable|
-
+| **Name**|**Description**|**Image**|
+|---------------|----------------------------------------------------------------------------------------------------------------------------------------|-----|
+|**ID**| This is a unique identifier which is used to access the field by the API and the key of the field when the form is saved|<img src= "/apps/components/img/alert_id2.png">|
+|**Name**| [**Optional**] An identifier for the button within the form. It is used by the form builder to associate the button with the data it is submitting. The name is typically not displayed to the user|<img src= "/apps/components/img/button_name.png">|
+|**Button Name**| [**Optional**] The visual identifier label of the field|<img src= "/apps/components/img/button_buttonname.png">|
+|**Width**| [**Optional**] To set the width of the field|<img src= "/apps/components/img/input_width.png">|
+|**Label Width**| [**Optional**] Sets the width of the label|<img src= "/apps/components/img/input_labelwidth1.png">|
+|**Label Wrap**| If the label is longer than the allowed width the text will continue on another line|<img src= "/apps/components/img/input_labelwrap1.png">|
+|**Hide Label**| Hides the label on the form|<img src= "/apps/components/img/input_hidelabel.png">|
+|**Placeholder**| The short hint is displayed in the input field before the user enters a value|<img src= "/apps/components/img/input_placeholder.png">|
+|**Text Prompt**| A description to aid the user when completing the field|<img src= "/apps/components/img/input_textprompt.png">|
+|**Button Size**| Select the size of the button from 3 choices; **Large**, **Default** or **Small**|<img src= "/apps/components/img/button_buttonsize.png">|
+|**Button Type**| Select the type of button from: **Default**, **Primary**, **Success**, **Warning**, **Danger**, **Info**, **Text**, or **Link**|<img src= "/apps/components/img/button_buttontype.png">|
+|**Determine whether it's**|You may select the shape of the button as **plain**, **round** or **circle**|<img src= "/apps/components/img/button_shape.png">|
+|**Custom Class**| A HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|
+|**Attribute Action**|Enable **Hidden** action to hide the field <br>Enable **Disabled** action to make the field unsuable</br>|<img src= "/apps/components/img/button_attributeaction.png">|
