@@ -70,6 +70,7 @@ Some of the most common methods include:
 |**this.show(fields)**|Displays the field|
 |**this.setData(Value)**|Set the data in the field|
 |**this.refreshFieldDataSource**|Refresh the datasource data bound to the form field|
+|**this.setOptions(fields, options)**|Set Form Field Configuration Item|
 
 ## Config
 

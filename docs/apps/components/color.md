@@ -68,9 +68,10 @@ Some of the most common methods include:
 | **this.disable(fields)**| Disable input field from user interaction|
 | **this.enable(fields)**| Disable input field from user interaction|
 | **this.getComponent(name) → {Object}**|Retrieve a component from an object or element|
-//| **this.getValue(fieldName)**|Get A Value From An Object|
+| **this.getValue(fieldName)**|Get A Value From An Object|
 |**this.hide(fields)**|Hides the field|
 |**this.show(fields)**|Displays the field|
+|**this.setData(Value)**|Set the data in the field|
 
 ## Config
 
