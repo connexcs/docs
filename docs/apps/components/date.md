@@ -6,6 +6,8 @@ It's a specialized input field designed to collect date information from users.
 
 It typically provides a user-friendly interface for selecting a date, often in the form of a calendar or a date picker.
 
+<img src= "/apps/components/img/date.png">
+
 ## Use Case
 
 1. **Calendar interface**: A visual calendar grid allows users to select dates by clicking or tapping on specific days.
@@ -34,109 +36,6 @@ Examples may include:
 10. **Expiration date**: Set expiry date for deals, offers, trials, memberships.
 11. **Reminders**: Choosing future dates to set reminders and deadlines.
 12. **Release planners**: Manage product/project release dates.
-
-## API
-
-APIs can be used to extend the functionality of the date component, such as:
-
-1. **Pre-filling the date field with relevant information**: For instance, an API could be used to retrieve the user's birthday or the current date from a server and pre-fill the date field accordingly.
-
-2. **Validating the entered date against external data**: An API could be used to check if the entered date is within a valid range, such as a date range for an event registration or a reservation.
-
-3. **Dynamically populating date options based on user input**: For example, an API could be used to populate a drop-down menu with available dates based on the user's selected location or activity.
-
-4. **Synchronizing the selected date with external systems**: An API could be used to send the selected date to a backend server, updating a calendar or scheduling system in real-time.
-
-5. **Customizing the appearance and behavior of the date component**: An API could be used to provide custom date formats, color schemes, or animations for the date component, aligning it with the overall design and branding of the form.
-
-Examples include:
-
-1. Send the selected date value to an API when the form is submitted.
-2. Populate the date picker with disabled dates fetched from an API.
-3. Disable future/past dates by calling an API to check validity.
-4. Show available booking slots by fetching open date slots from an API.
-5. Autofill or preselect dates by calling an API to get user info or defaults.
-6. Validate selected date against holidays API to prevent bookings.
-7. Update date picker styling dynamically based on response from an API.
-8. Fetch locale and date format settings from a locale API.
-9. Call API on date selection to check availability and show error.
-10. POST selected dates to an API to add bookings/appointments to a calendar.
-11. Use date range to filter data visualization from an API dynamically.
-12. Trigger form validation API on date change to check for errors.
-13. Maintain revision history of date changes by sending updates to an API.
-
-### Config
-
-| **Name**|**Description**|
-|---------------|----------------------------------------------------------------------------------------------------------------------------------------|
-|**ID**| This is a unique identifier which is used to access the field by the API and the key of the field when the form is saved |
-|**Name**| [**Optional**] The visual identifier label of the field|
-|**Width**| [**Optional**] To set the width of the field|
-|**Label Width**|Width of the label associated with an input field. It determines the horizontal space occupied by the label text|
-|**Label Wrap**| If the label is longer than the allowed width the text will continue on another line|
-|**Hide Label**| Hides the label on the form|
-|**Text Prompt**| A description to aid the user when completing the field|
-|**Display Type**| You can select from various options including **Year**, **Month**, **Date**, **Week**, **Dates**, **Datetime**, **Datetimerange**, **Daterange**, or **Monthrange**|
-|**Placeholder**| The short hint is displayed in the input field before the user enters a value|
-|**Format**| You can decide the format of your datelike **YYYY-MM-DD** or **DD/MM/YY**|
-|**Default Value**|Specifies the initial value that is displayed in the date field when the form is loaded|
-|**Custom Class**| A HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|
-|**Attribute Action**|Enable **Data Binding** to connect the data to UI
-||Enable **Read Only** to make the field non-editable|
-||Enable **Disabled** action to make the field unsuable|
-||Enable **Text box is editable** to allow users to manually type in a date value instead of only selecting from the date picker. |
-||Enable **Show clear button** action make the clear button visible|
-
-### Validation
-
-Form validation is the process of checking the data entered into a form to ensure that it's valid and complete.
-
-This helps to prevent users from submitting forms with invalid data, which can cause problems for the application that's processing the form.
-
-Form validation can be performed using a variety of methods, including:
-
-| **Name**| **Description**|
-|----------------------|---------------------------------------------------------------------|
-| **Required**| Single line of text|
-|**Custom Validation Rules**|(rule, value, callback) => {|
-||**rule**: Verification rule, you can view the verification configuration information through this parameter; rule.fieldcan get the field identifier of the current verification.|
-||**value**: Value of the current field|
-||**callback**: Callback function (must be called) upon completion of validation; **callback('Error message')/ callback(new Error('Error message'))**. These are two ways to return an error message.|
-
-!!! Info
-    1. The **callback()function** is also called to verify success in the custom checkup method.
-
-### Events
-
-| **Name**| **Description**|
-|----------------------|---------------------------------------------------------------------|
-| **onChange (element)**| The onChange event occurs when the value of an field is changed|
-| **onFocus (element)**| The onfocus event occurs when an field gets focus|
-| **onBlur (element)**| The onblur event occurs when an field loses focus|
-
-### Methods
-
-| **Name**| **Description**|
-|----------------------|---------------------------------------------------------------------|
-|**GetValue()**: Retrieves the current value of the date component, which is the selected date|
-|**SetValue(date)**| Sets the value of the date component to the specified date|
-|**SetMinDate(date)**| Sets the minimum selectable date for the date component, ensuring that users cannot select dates before the specified date|
-|**SetMaxDate(date)**: Sets the maximum selectable date for the date component, ensuring that users cannot select dates after the specified date|
-|**SetFormat(format)**| Sets the date format for the date component, controlling how the selected date is displayed|
-|**SetDisabled(isDisabled)**| Enables or disables the date component, preventing users from interacting with it when it is disabled|
-|**Validate()**| Validates the selected date, checking for errors or inconsistencies|
-|**BindToDateSource(dataSource)**| Binds the date component to a data source, allowing it to update its value dynamically based on changes to the underlying data|
-|**AddEventListener(eventName, callback)**| Attaches an event listener to the date component, triggering the specified callback function when the event occurs|
-|**RemoveEventListener(eventName, callback)**| Removes an event listener from the date component, preventing the callback function from being triggered when the event occurs|
-|**SetPlaceholder(placeholderText)**|Sets placeholder text for the date component when it's empty|
-|**SetStep(stepSize)**|Sets the increment/decrement step size for the date component|
-|**SetRange(startDate, endDate)**|Sets the range of selectable dates for the date component|
-|**SetFormatOptions(formatOptions)**|Sets additional formatting options for the date component|
-|**SetCustomFormatter(formatterFunction)**|Replaces the default date formatter with a custom function|
-|**SetCustomValidator(validatorFunction)**|Replaces the default date validator with a custom function|
-|**SetCustomRenderer(rendererFunction)**|Replaces the default date renderer with a custom function|
-|**GetCustomData()**|Retrieves custom data associated with the date component|
-|**SetCustomData(data)**|Sets custom data associated with the date component|
 
 ### Interactivity
 
@@ -178,3 +77,67 @@ Examples may include:
 12. Allow typing date directly or via shortcuts for power users.
 13. Sync date selection across multiple instances of the form.
 14. Prefill date based on user info and persist on form reload
+
+## API
+
+### Events
+
+| **Name**| **Description**|
+|----------------------|---------------------------------------------------------------------|
+| **onChange (element)**| The onChange event occurs when the value of an field is changed|
+| **onFocus (element)**| The onfocus event occurs when an field gets focus|
+| **onBlur (element)**| The onblur event occurs when an field loses focus|
+
+### Methods
+
+| **Name**| **Description**|
+|----------------------|---------------------------------------------------------------------|
+|**this.addClassName(fields, disabled)**|Add style class to form item|
+|**this.removeClassName(fields, disabled)**|Remove form item style|
+| **this.disable(fields)**| Disable input field from user interaction|
+| **this.enable(fields)**| Disable input field from user interaction|
+| **this.getComponent(name) → {Object}**|Retrieve a component from an object or element|
+| **this.getValue(fieldName)**|Get A Value From An Object|
+| **this.getValues() → {Object}**|Get the values of all fields when values change|
+|**this.hide(fields)**|Hides the field|
+|**this.show(fields)**|Displays the field|
+|**this.setData(Value)**|Set the data in the field|
+
+## Config
+
+| **Name**|**Description**|**Image**|
+|---------------|----------------------------------------------------------------------------------------------------------------------------------------|--|
+|**ID**| This is a unique identifier which is used to access the field by the API and the key of the field when the form is saved|<img src= "/apps/components/img/input_id.png">|
+|**Name**| [**Optional**] The visual identifier label of the field|<img src= "/apps/components/img/cascader_name.png">|
+|**Width**| [**Optional**] To set the width of the field|<img src= "/apps/components/img/input_width.png">|
+|**Label Width**|Width of the label associated with an input field. It determines the horizontal space occupied by the label text|<img src= "/apps/components/img/input_labelwidth1.png">|
+|**Label Wrap**| If the label is longer than the allowed width the text will continue on another line|<img src= "/apps/components/img/input_labelwrap1.png">|
+|**Hide Label**| Hides the label on the form|<img src= "/apps/components/img/input_hidelabel.png">|
+|**Text Prompt**| A description to aid the user when completing the field|<img src= "/apps/components/img/input_textprompt.png">|
+|**Display Type**| You can select from various options including **Year**, **Month**, **Date**, **Week**, **Dates**, **Datetime**, **Datetimerange**, **Daterange**, or **Monthrange**|<img src= "/apps/components/img/date_displaytype.png">|
+|**Placeholder**| The short hint is displayed in the input field before the user enters a value|<img src= "/apps/components/img/input_placeholder.png">|
+|**Format**| You can decide the format of your datelike **YYYY-MM-DD** or **DD/MM/YY**|<img src= "/apps/components/img/date_format.png">|
+|**Default Value**|Specifies the initial value that's displayed in the date field when the form is loaded|<img src= "/apps/components/img/date_defaultvalue.png">|
+|**Custom Class**| A HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|
+|**Attribute Action**|Enable **Data Binding** to connect the data to UI <br><br> Enable **Read Only** to make the field non-editable <br> <br> Enable **Disabled** action to make the field unsuable <br><br> Enable **Text box is editable** to allow users to manually type in a date value instead of only selecting from the date picker <br><br>Enable **Show clear button** action make the clear button visible|<img src= "/apps/components/img/date_attributeaction.png">
+
+### Validation
+
+Form validation is the process of checking the data entered into a form to ensure that it's valid and complete.
+
+This helps to prevent users from submitting forms with invalid data, which can cause problems for the application that's processing the form.
+
+Form validation can be performed using a variety of methods, including:
+
+| **Name**| **Description**|
+|----------------------|---------------------------------------------------------------------|
+| **Required**| Single line of text|
+|**Custom Validation Rules**|(rule, value, callback) => {|
+||**rule**: Verification rule, you can view the verification configuration information through this parameter; rule.fieldcan get the field identifier of the current verification.|
+||**value**: Value of the current field|
+||**callback**: Callback function (must be called) upon completion of validation; **callback('Error message')/ callback(new Error('Error message'))**. These are two ways to return an error message.|
+
+<img src= "/apps/components/img/input_validation.png">
+
+!!! Info
+    1. The **callback()function** is also called to verify success in the custom checkup method.
