@@ -108,7 +108,7 @@ Examples may include:
 | **Name**|**Description**|**Image**|
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------|--|
 |**ID**| This is a unique identifier which is used to access the field by the API and the key of the field when the form is saved|<img src= "/apps/components/img/input_id.png">|
-|**Name**| [**Optional**] The visual identifier label of the field|<img src= "/apps/components/img/cascader_name.png">|
+|**Name**| [**Optional**] The visual identifier label of the field|<img src= "/apps/components/img/checkbox_name.png">|
 |**Width**| [**Optional**] To set the width of the field|<img src= "/apps/components/img/input_width.png">|
 |**Label Width**|Width of the label associated with an input field. It determines the horizontal space occupied by the label text|<img src= "/apps/components/img/input_labelwidth1.png">|
 |**Label Wrap**| If the label is longer than the allowed width the text will continue on another line|<img src= "/apps/components/img/input_labelwrap1.png">|
@@ -119,7 +119,7 @@ Examples may include:
 |**Format**| You can decide the format of your datelike **YYYY-MM-DD** or **DD/MM/YY**|<img src= "/apps/components/img/date_format.png">|
 |**Default Value**|Specifies the initial value that's displayed in the date field when the form is loaded|<img src= "/apps/components/img/date_defaultvalue.png">|
 |**Custom Class**| A HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|
-|**Attribute Action**|Enable **Data Binding** to connect the data to UI <br><br> Enable **Read Only** to make the field non-editable <br> <br> Enable **Disabled** action to make the field unsuable <br><br> Enable **Text box is editable** to allow users to manually type in a date value instead of only selecting from the date picker <br><br>Enable **Show clear button** action make the clear button visible|<img src= "/apps/components/img/date_attributeaction.png">
+|**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br>Enable **Read Only** to make the field non-editable. <br>Enable **Disabled** action to make the field unsuable. <br> Enable **Text box is editable** to allow users to manually type in a date value instead of only selecting from the date picker. <br>Enable **Show clear button** action make the clear button visible|<img src= "/apps/components/img/date_attributeaction.png">
 
 ### Validation
 
