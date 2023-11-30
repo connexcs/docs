@@ -64,7 +64,7 @@ It typically provides a self-contained interface for collecting additional infor
 |**Visible**|Enable visible option to display the Dialog and disable to hide the dialog box|<img src= "/apps/components/img/dialog_visible.png">|
 |**Center**| Enable this option to make the components of the Dialog box centrally aligned|<img src= "/apps/components/img/dialog_center.png">|
 |**Show Close**| Enable this option for displaying the close button (for closing the dialog box)|<img src= "/apps/components/img/dialog_showclose.png">|
-|**Show Cancel Button**| Enable this option for displaying the Cancel button (the button name is editable)|<img src= "/apps/components/img/dialog_showcancelbutton.png">|
+|**Show Cancel Button**| Enable this option for displaying the Cancel button (the button name is editable)|<img src= "/apps/components/img/dialog_showcancelbuttonpng.png">|
 |**Show Confirm Button**| Enable this option for displaying the confirm button (the button name is editable)<br>Enable **Loading** option to show the user that the dialog is busy. It prevents the user from interacting with the dialog until the operation is complete|<img src= "/apps/components/img/dialog_showconfirmbutton.png">|
 |**Margin Top**|It defines the position of the dialog box from the top of the screen|<img src= "/apps/components/img/dialog_magintop.png">|
 |**Custom Class**| A HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|
