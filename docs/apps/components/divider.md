@@ -6,6 +6,8 @@ A divider in a form builder is a visual element that separates different section
 
 It can be used to improve the readability and usability of forms by making it easier for users to scan the form and identify where different sections begin and end.
 
+<img src= "/apps/components/img/divider.png">
+
 ## Use Case
 
 1. To group related form fields.
@@ -29,4 +31,4 @@ It can be used to improve the readability and usability of forms by making it ea
 |**ID**| This is a unique identifier which is used to access the field by the API and the key of the field when the form is saved |<img src= "/apps/components/img/input_id.png">|
 |**Name**| [**Optional**] The visual identifier label of the field|<img src= "/apps/components/img/checkbox_name.png">|
 |**Content Position**|Specifies how the divider is positioned relative to the form content, like **Left**, **Center** or **Right**|<img src= "/apps/components/img/divider_contentposition.png">|
-|**Attribute Action**|Enable **Hidden** action to hide the field|<img src= "/apps/components/img/alert_attributeaction.png">|
+|**Attribute Action**|Enable **Hidden** action to hide the field|<img src= "/apps/components/img/alert_arrtibuteaction.png">|
