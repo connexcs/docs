@@ -6,6 +6,8 @@ A "dialog" component in a form builder is a specialized element that allows you 
 
 It typically provides a self-contained interface for collecting additional information or displaying contextual details without disrupting the main form flow.
 
+<img src= "/apps/components/img/dialog.png">
+
 ## Use Case
 
 1. **Alerts**: Quickly show simple alerts for messages, errors, warnings, etc.
@@ -20,32 +22,25 @@ It typically provides a self-contained interface for collecting additional infor
 10. **Media Previews**: Enlarge images and videos for closer inspection in a modal.
 11. **Notifications**: Communicate messages non-intrusively using popup notifications.
 
+### Interactivity
+
+1. **Responsive Inputs**: Utilize input fields that respond to user actions, such as providing real-time validation or updating related form fields based on input changes.
+
+2. **Dynamic Content**: Incorporate dynamic content that changes based on user input or dialog interactions. This could involve updating text, images, or other elements within the dialog.
+
+3. **Conditional Actions**: Implement conditional actions that trigger based on specific user inputs or dialog events. For instance, enable or disable certain buttons or sections of the dialog based on user choices.
+
+4. **Progressive Disclosure**: Employ progressive disclosure techniques to gradually reveal more information or options as the user interacts with the dialog. This helps to avoid overwhelming the user with too much information at once.
+
+5. **Error Handling**: Implement proper error handling to gracefully inform the user of any errors or invalid inputs within the dialog. This could involve displaying error messages, highlighting invalid fields, or providing corrective suggestions.
+
+6. **User Feedback**: Provide visual or auditory feedback to user actions within the dialog. This could include animations, transitions, or sound effects to enhance the interactive experience.
+
+7. **Accessibility**: Ensure that the interactive elements within the dialog are accessible to users with disabilities. This may involve providing keyboard navigation, screen reader compatibility, and alternative input methods.
+
+8. **Cross-Platform Compatibility**: Consider the compatibility of the interactive elements across different browsers and devices. Ensure that the dialog component functions consistently and responsively across various platforms.
+
 ## API
-
-Here are some examples of how APIs can be integrated with date elements in form builders:
-
-1. **Pre-fill the date field with relevant information**: An API could be used to pre-fill the date field with relevant information, such as the user's birthday or the current date. This can be useful for reducing the amount of time and effort required for users to complete the form.
-2. **Validate the entered date against external data**: An API could be used to validate the entered date against external data, such as a database of available dates or a calendar of events. This can help to prevent users from entering invalid dates or booking dates that are not available.
-3. **Dynamically populate date options based on user input**: An API could be used to dynamically populate date options based on user input, such as the selected location or activity. This can make it easier for users to find and select the desired date.
-4. **Synchronize the selected date with external systems**: An API could be used to synchronize the selected date with external systems, such as a booking system or a calendar. This can help to ensure that the date is always up-to-date and that users are aware of any changes.
-5. **Customize the appearance and behavior of the date component**: An API could be used to customize the appearance and behavior of the date component, such as the date format, color scheme, or available date ranges. This can help to match the date component to the overall design and functionality of the form.
-
-### Config
-
-| **Name**|**Description**|
-|---------------|----------------------------------------------------------------------------------------------------------------------------------------|
-|**ID**| This is a unique identifier which is used to access the field by the API and the key of the field when the form is saved |
-|**Title**| [**Optional**] The visual identifier label of the field|
-|**Width**| [**Optional**] To set the width of the field|
-|**Visible**|Enable visible option to display the Dialog and disable to hide the dialog box|
-|**Center**| Enable this option to make the components of the Dialog box centrally aligned|
-|**Show Close**| Enable this option for displaying the close button (for closing the dialog box)|
-|**Show Cancel Button**| Enable this option for displaying the Cancel button (the button name is editable)|
-|**Show Confirm Button**| Enable this option for displaying the confirm button (the button name is editable)|
-|| Enable **Loading** option to show the user that the dialog is busy. It prevents the user from interacting with the dialog until the operation is complete|
-|**Margin Top**|It defines the position of the dialog box from the top of the screen|
-|**Custom Class**| A HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|
-|**Attribute Action**|Enable **Data Binding** to connect the data to UI|
 
 ### Events
 
@@ -59,10 +54,18 @@ Here are some examples of how APIs can be integrated with date elements in form 
 | **Name**| **Description**|
 |----------------------|---------------------------------------------------------------------|
 
-### Interactivity
+## Config
 
-**Interactivity** is the ability of a web page or application to respond to user input.
-
-The're a number of ways to add interactivity to **Input boxes**.
-
-Some of the most common methods include:
+| **Name**|**Description**|**Image**|
+|---------------|----------------------------------------------------------------------------------------------------------------------------------------|--|
+|**ID**| This is a unique identifier which is used to access the field by the API and the key of the field when the form is saved|<img src= "/apps/components/img/input_id.png">|
+|**Title**| [**Optional**] The visual identifier label of the field|<img src= "/apps/components/img/alert_title.png">|
+|**Width**| [**Optional**] To set the width of the field|<img src= "/apps/components/img/input_width.png">|
+|**Visible**|Enable visible option to display the Dialog and disable to hide the dialog box|<img src= "/apps/components/img/dialog_visible.png">|
+|**Center**| Enable this option to make the components of the Dialog box centrally aligned|<img src= "/apps/components/img/dialog_center.png">|
+|**Show Close**| Enable this option for displaying the close button (for closing the dialog box)|<img src= "/apps/components/img/dialog_showclose.png">|
+|**Show Cancel Button**| Enable this option for displaying the Cancel button (the button name is editable)|<img src= "/apps/components/img/dialog_showcancelbutton.png">|
+|**Show Confirm Button**| Enable this option for displaying the confirm button (the button name is editable)<br>Enable **Loading** option to show the user that the dialog is busy. It prevents the user from interacting with the dialog until the operation is complete|<img src= "/apps/components/img/dialog_showconfirmbutton.png">|
+|**Margin Top**|It defines the position of the dialog box from the top of the screen|<img src= "/apps/components/img/dialog_magintop.png">|
+|**Custom Class**| A HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|
+|**Attribute Action**|Enable **Data Binding** to connect the data to UI|<img src= "/apps/components/img/dialog_attributeaction.png">|
