@@ -1,4 +1,4 @@
-# Input
+# Grid
 
 ## Description
 
@@ -48,8 +48,8 @@ Examples may include:
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
 |**ID**| This is a unique identifier which is used to access the field by the API and the key of the field when the form is saved|<img src= "/apps/components/img/input_id.png">|
 |**Grid Spacing**| [**Optional**] Space between various components inside the grid|<img src= "/apps/components/img/grid_gridspacing.png">|
-|**Flex Layout**| [**Optional**] Allows flexibility to arrange the various components inside the grid|<img src= "/apps/components/img/grid_gridspacing.png">|
+|**Flex Layout**| [**Optional**] Allows flexibility to arrange the various components inside the grid|<img src= "/apps/components/img/grid_flexlayout.png">|
 |**Horizontal Arangement**|Select from various options **Start**, **End**, **Center**, **Space Around**, **Space Between** for horizontal arrangement of the compoents inside the grid|<img src= "/apps/components/img/grid_horizontal.png">|
-|**Vertical Arangement**|Select from various options **Top**, **Middle**, **Bottom** for vertical arrangement of the compoents inside the grid|<img src= "/apps/components/img/grid_vertical.png">|
+|**Vertical Arangement**|Select from various options **Top**, **Middle**, **Bottom** for vertical arrangement of the compoents inside the grid|<img src= "/apps/components/img/grid_vertical1.png">|
 |**Custom Class**| A HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Hidden** action to hide the field|<img src= "/apps/components/img/alert_arrtibuteaction.png">|
