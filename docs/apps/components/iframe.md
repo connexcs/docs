@@ -57,4 +57,4 @@ Some of the examples may include:
 |**Height**|Adjust the height of the I-Frame window|<img src= "/apps/components/img/iframe_height.png">|
 |**URL**|Provide the link for the webpage you wish to displayin the I-Frame|<img src= "/apps/components/img/iframe_url.png">|
 |**Custom Class**| A HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|
-|**Attribute Action**|Enable **Hidden** to action to hide the field|<img src= "/apps/components/img/alert_attributeaction.png">|
+|**Attribute Action**|Enable **Hidden** to action to hide the field|<img src= "/apps/components/img/alert_arrtibuteaction.png">|
