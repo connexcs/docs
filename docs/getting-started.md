@@ -121,7 +121,7 @@ In the example below, you can see that routing hasn't been set. In that case, cl
 
 !!! note "Additional Authentication Support"
     We support SRV (service) records & domains. A Service record identifies servers that provide special services to a domain.
-    Ror example, defining the location of a SIP service.
+    For example, defining the location of a SIP service.
 
 ### Set SIP User Authentication
 
