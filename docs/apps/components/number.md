@@ -75,6 +75,9 @@ Examples mat include:
 |**Minimum**|Users can only enter values above a minimum threshold|<img src= "/apps/components/img/number_min.png">|
 |**Maximum**|Users can only enter values below a maximum limit|<img src= "/apps/components/img/number_max.png">|
 |**Step**|Minimum increment or decrement by which the value can be changed|<img src= "/apps/components/img/number_step.png">|
+|**Precision**|Number of decimal places to be displayed for the input value|<img src= "/apps/components/img/number_precision.png">|
+|**Enable the control buttons**|Enable this option for the user to increment or decrement the value|<img src= "/apps/components/img/number_enable.png">|
+|**Position of the control buttons**| Place the control button on both sides or on the right of the number component|<img src= "/apps/components/img/number_position.png">|
 |**Default Value**| The default number which is filled in the field before the user changes it|<img src= "/apps/components/img/number_default.png">|
 |**Custom Class**| A HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** to action to hide the field. <br> Enable **Disabled** action to make the field unsuable|<img src= "/apps/components/img/checkbox_attributeaction.png">|
