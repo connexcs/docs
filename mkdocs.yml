@@ -88,14 +88,15 @@ nav:
         - Global: global.md
         - Transcription: transcription.md
     
-    - Class 5 (UCS):
+    - Class 5:
         - Apps: class5/apps.md
         - Conference: class5/creating-conference.md
         - Call Center: class5/call-center.md
         - IVR: class5/creating-ivr.md
         - Groups: class5/creating-group.md
         - Voicemail: class5/voicemail.md
-        - Phonebook: class5/phonebook.md        
+        - Phonebook: class5/phonebook.md
+        - ConneXML: class5/connexml.md        
        
     - Developer:
         - Analytics: developers/analytics.md
