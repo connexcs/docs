@@ -64,7 +64,9 @@ In the next section, we shall discuss the various `Verbs`,`Attributes` and `Noun
 
 ## Verbs, Attributes and Nouns
 
-1. **Hangup**: The current call is terminated with the `Hangup` verb.
+### Hangup
+
+The current call is terminated with the `Hangup` verb.
 It has **no attributes** and doesn;t include any **nouns**.
 
 !!! example
@@ -76,7 +78,9 @@ It has **no attributes** and doesn;t include any **nouns**.
     </Response>
     ```
 
-2. **Pause**: The `Pause` verb waits silently for a given amount of time, or by default, one second.
+### Pause
+
+The `Pause` verb waits silently for a given amount of time, or by default, one second.
 `Pause` doesn't use any nouns, and a self-closing tag is mandatory.
 
 !!! example
@@ -101,7 +105,9 @@ It has **no attributes** and doesn;t include any **nouns**.
     </Response>"
     ```
 
-3. `Say`: Text to speech is enabled for any application by using the `Say` verb, which speaks the provided text back to the caller.
+### Say
+
+Text to speech is enabled for any application by using the `Say` verb, which speaks the provided text back to the caller.
 
 !!! example
     ```xml
@@ -111,7 +117,9 @@ It has **no attributes** and doesn;t include any **nouns**.
     </Response>"
     ```
 
-4. `Reject`: This verb rejects the current call.
+### Reject
+
+This verb rejects the current call.
 
 !!! note
     `Reject` cannot be nested in any other verb and reject cannot include any other verb.
@@ -136,7 +144,9 @@ It has **no attributes** and doesn;t include any **nouns**.
     </Response>"
     ```
 
-5. `Play`: The `Play` verb allows you to play back to the caller an MP3 or WAV audio file.
+### Play
+
+The `Play` verb allows you to play back to the caller an MP3 or WAV audio file.
 
 You can use `Play` as a verb  standalone or as a noun nested inside `Gather` to play audio while you wait for DTMF tones.
 
@@ -178,8 +188,11 @@ You can use `Play` as a verb  standalone or as a noun nested inside `Gather` to
         </Response>"
         ```
 
-6. `Redirect`: The current call gets transferred to another ConnexCS CLass5 application using the `Redirect` verb.
-<Redirect> doesn't allow for the nesting of nouns.
+### Redirect
+
+The current call gets transferred to another ConnexCS CLass5 application using the `Redirect` verb.
+
+`Redirect` doesn't allow for the nesting of nouns.
 
 !!!  example
     ```xml
@@ -203,7 +216,9 @@ You can use `Play` as a verb  standalone or as a noun nested inside `Gather` to
 !!! Note
     After 'Redirect', all verbs are unreachable and disregarded.
 
-7. `Conference`: You can connect to a conference room using the `Dial` verb's `Conference` noun.
+### Conference
+
+You can connect to a conference room using the `Dial` verb's `Conference` noun.
 
     The `Conference`` noun lets you connect to a designated conference room and converse with other callers who have already connected to that room.
 
@@ -218,8 +233,10 @@ You can use `Play` as a verb  standalone or as a noun nested inside `Gather` to
             </Dial>
         </Response>"
 
+### Gather
 
-8. `Gather`: During a call, the `Gather` verb accumulates DTMF tones.
+During a call, the `Gather` verb accumulates DTMF tones.
+
 You can create an interactive IVR with text-to-speech by nesting `Say` within `Gather`.
 
 !!! example
@@ -248,7 +265,9 @@ You can create an interactive IVR with text-to-speech by nesting `Say` within `
 |`say`|Reads the supplied text back to the caller|
 |`play`|Plays the audio URL back to the caller|
 
-9. `Enqueque`: The current call is enqueued in a call queue using the `Enqueue` verb.
+### Enqueque
+
+The current call is enqueued in a call queue using the `Enqueue` verb.
 
 !!! example
     ```xml
@@ -258,7 +277,9 @@ You can create an interactive IVR with text-to-speech by nesting `Say` within `
     </Response>"
     ```
 
-10. `Dial`: An existing call is transferred to a different destination using the `Dial` verb. 
+### Dial
+
+An existing call is transferred to a different destination using the `Dial` verb.
 
  `Dial` will end this call if:
 * The called person does not answer.
@@ -318,4 +339,4 @@ You can create an interactive IVR with text-to-speech by nesting `Say` within `
             <Response>
                 <Dial fromDisplayName=""+1234"" ringTone=""in"" >160</Dial>
             </Response>"
-            ```
+        ```
