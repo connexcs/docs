@@ -10,9 +10,9 @@ When the customers receive an External or Internal Call, it hits the [DID](https
 
 In the DID section you can allocate the calls at different places. Click on Call :material-menu-right: Destination:
 
-1. **URI**: Its points to a client's server. You can send the call either to the Destination DID or an IP address.<img src= "/ml2.png">
-2. **External**: Allows you to re-direct the call out back again to the network.<img src= "/ml3.png">
-3. **Internal**: Allows you to route the call internally like a SIP user or a Queue.<img src= "/ml4.png">
+1. **URI**: Its points to a client's server. You can send the call either to the Destination DID or an IP address.<img src= "/class5/img/ml2.png">
+2. **External**: Allows you to re-direct the call out back again to the network.<img src= "/class5/img/ml3.png">
+3. **Internal**: Allows you to route the call internally like a SIP user or a Queue.<img src= "/class5/img/ml4.png">
 
 Later, the Class5 Applications makes an HTTP request to the URL endpoint you configured for that number. The endpoint will contain instructions telling ConnexML what to do next with the call.
 
@@ -32,7 +32,7 @@ Further, the Routing Engine questions the same thing to the Customer on how to h
 
 ConneXML uses the standard '.xml' file extension.
 
-<img src= "/ml1.png">
+.<img src= "/class5/img/ml1.png">
 
 ### ConneXML Components
 
