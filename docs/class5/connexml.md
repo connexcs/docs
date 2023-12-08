@@ -22,28 +22,6 @@ In the DID section you can allocate the calls at different places. Click on Call
 
 Later, the Class5 Applications makes an HTTP request to the URL endpoint you configured for that number. The endpoint will contain instructions telling ConnexML what to do next with the call.
 
-To get ConneXML working you will need to
-1. Go to Class 5 :material-menu-right: Apps.
-2. On the top right click on blue `+` sign.
-3. Add new and make sure you choose App Type = ConneXML. The destination can be alpha-numeric and contains an endpoint, for example "customer_a_connexml".
-
-<img src= "/class5/img/ml5.png" width="400">
-
-4. After saving the above information. Click on `Go to App` to enter the ConneXML editor. Write your code and click `Save`.
-
-<img src= "/class5/img/ml6.png" width="400">
-
-5. If you initially want this to hit a customers server same as before, you can use something like this in the XML field.
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<Response>
-    <Redirect method="POST">https://yourdomain.com/yourscript.php</Redirect>
-</Response>
-```
-
-6.Point the DID to internal and then the name of the endpoint that you created (for example customer_a_connexml)
-
 ### How does ConneXML work?
 
 In a general call scenario, the call goes from the Carrier to ConnexCS Class4 to the Customer.
@@ -65,9 +43,30 @@ ConneXML uses the standard [`.xml` markup](https://en.wikipedia.org/wiki/XML) la
 
 .<img src= "/class5/img/ml11.png">
 
-### How to reach the ConneXML Editor?
+### How to reach and code the ConneXML Editor? 
 
-1. Go to Class
+To get ConneXML working you will need to:
+
+1. Go to Class 5 :material-menu-right: Apps.
+2. On the top right click on blue `+` sign.
+3. Add new and make sure you choose App Type = ConneXML. The destination can be alpha-numeric and contains an endpoint, for example "customer_a_connexml".
+
+<img src= "/class5/img/ml5.png">
+
+4. After saving the above information. Click on `Go to App` to enter the ConneXML editor. Write your code and click `Save`.
+
+<img src= "/class5/img/ml6.png">
+
+5. If you initially want this to hit a customers server same as before, you can use something like this in the XML field.
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Redirect method="POST">https://yourdomain.com/yourscript.php</Redirect>
+</Response>
+```
+
+6. Point the DID to internal and then the name of the endpoint that you created (for example customer_a_connexml)
 
 
 ### ConneXML Components
@@ -450,6 +449,5 @@ An existing call is transferred to a different destination using the `Dial` ver
 |➡️**timeout**|✅|✅|✅|
 |**digits**|✅|❌|✅|
 
-!!! Footnote
-    [^1]:  https://www.twilio.com/docs/voice/twiml/client
-    [^2]:  https://developers.telnyx.com/docs/v2/voice/programmable_voice/texml/texml-translator/texml_translator/
+[^1]:  https://www.twilio.com/docs/voice/twiml/client
+[^2]:  https://developers.telnyx.com/docs/v2/voice/programmable_voice/texml/texml-translator/texml_translator/
