@@ -12,9 +12,9 @@ When the customers receive an External or Internal Call, it hits the [DID](https
 
 In the DID section you can allocate the calls at different places. Click on Call :material-menu-right: Destination:
 
-1. **URI**: Its points to a client's server. You can send the call either to the Destination DID or an IP address.<img src= "/class5/img/ml2.png">
-2. **External**: Allows you to re-direct the call out back again to the network.<img src= "/class5/img/ml3.png">
-3. **Internal**: Allows you to route the call internally like a SIP user or a Queue.<img src= "/class5/img/ml4.png">
+1. **URI**: Its points to a client's server. You can send the call either to the Destination DID or an IP address.<img src= "/class5/img/ml2.png"  width="200">
+2. **External**: Allows you to re-direct the call out back again to the network.<img src= "/class5/img/ml3.png" width="200">
+3. **Internal**: Allows you to route the call internally like a SIP user or a Queue.<img src= "/class5/img/ml4.png" width="200">
 
 Later, the Class5 Applications makes an HTTP request to the URL endpoint you configured for that number. The endpoint will contain instructions telling ConnexML what to do next with the call.
 
@@ -67,15 +67,16 @@ In the next section, we shall discuss the various `Verbs`,`Attributes` and `Noun
 ### Hangup
 
 The current call is terminated with the `Hangup` verb.
+
 It has **no attributes** and doesn;t include any **nouns**.
 
 !!! example
     ```xml
-    <?xml version="1.0" encoding="UTF-8"?>
+    "<?xml version=""1.0"" encoding=""UTF-8""?>
     <Response>
-        <Say voice="kal">I will hangup call in 1 second even though there is say after hangup </Say>
+        <Say voice=""kal"">I will hangup call in 1 second even though there is say after hangup </Say>
         <Hangup />
-    </Response>
+    </Response>"
     ```
 
 ### Pause
@@ -100,7 +101,7 @@ The `Pause` verb waits silently for a given amount of time, or by default, one s
     ```xml
     "<?xml version=""1.0"" encoding=""UTF-8""?>
     <Response>
-        <Pause length=""10""/></br>
+        <Pause length=""10""/>
         <Say voice=""kal"">I just paused 10 seconds</Say>
     </Response>"
     ```
@@ -122,7 +123,7 @@ Text to speech is enabled for any application by using the `Say` verb, which spe
 This verb rejects the current call.
 
 !!! note
-    `Reject` cannot be nested in any other verb and reject cannot include any other verb.
+    `Reject` can't be nested in any other verb and reject can't include any other verb.
 
 !!! example
     ```xml
@@ -177,7 +178,7 @@ You can use `Play` as a verb  standalone or as a noun nested inside `Gather` to
     ```xml
     "<?xml version=""1.0"" encoding=""UTF-8""?>
     <Response>
-    <Play>https://file-examples.com/storage/fef3ad87fb6568c5a9d7b04/2017/11/file_example_WAV_1MG.wav</Play>
+        <Play>https://file-examples.com/storage/fef3ad87fb6568c5a9d7b04/2017/11/file_example_WAV_1MG.wav</Play>
     </Response>"
     ```
     4. **User Files**
@@ -194,7 +195,7 @@ The current call gets transferred to another ConnexCS CLass5 application using
 
 `Redirect` doesn't allow for the nesting of nouns.
 
-!!!  example
+!!! Example
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
@@ -220,18 +221,18 @@ The current call gets transferred to another ConnexCS CLass5 application using
 
 You can connect to a conference room using the `Dial` verb's `Conference` noun.
 
-    The `Conference`` noun lets you connect to a designated conference room and converse with other callers who have already connected to that room.
+The `Conference`` noun lets you connect to a designated conference room and converse with other callers who have already connected to that room.
 
-    This is similar to how the `Number`` noun lets you connect to another phone number.
+This is similar to how the `Number` noun lets you connect to another phone number.
 
-    !!! example
-        ```xml
-        "<?xml version=""1.0"" encoding=""UTF-8""?>
-        <Response>
-            <Dial>
-                <Conference>Room 10481</Conference>
-            </Dial>
-        </Response>"
+!!! example
+    ```xml
+    "<?xml version=""1.0"" encoding=""UTF-8""?>
+    <Response>
+        <Dial>
+        <Conference>Room 10481</Conference>
+        </Dial>
+    </Response>"
 
 ### Gather
 
@@ -244,7 +245,7 @@ You can create an interactive IVR with text-to-speech by nesting `Say` within `
     "<?xml version=""1.0"" encoding=""UTF-8""?>
     <Response>
         <Gather  actionOnEmptyResult=""false"" action=""https://cdn.cnxcdn.com/public/1093/test.xml"" method=""GET"" numDigits=""6"" finishOnKey=""*"" timeout=""120"" >
-        <Play>https://samplelib.com/lib/preview/wav/sample-12s.wav</Play> 
+            <Play>https://samplelib.com/lib/preview/wav/sample-12s.wav</Play> 
         </Gather> 
     <Say voice=""kal"">This is outside Gather</Say>
     </Response>"
@@ -265,6 +266,14 @@ You can create an interactive IVR with text-to-speech by nesting `Say` within `
 |`say`|Reads the supplied text back to the caller|
 |`play`|Plays the audio URL back to the caller|
 
+!!! example
+    ```xml
+    "<?xml version=""1.0"" encoding=""UTF-8""?>
+    <Response>
+        <Dial fromDisplayName=""+1234"" timeout=""10"" >160</Dial>
+    </Response>"
+    ```
+
 ### Enqueque
 
 The current call is enqueued in a call queue using the `Enqueue` verb.
@@ -282,9 +291,10 @@ The current call is enqueued in a call queue using the `Enqueue` verb.
 An existing call is transferred to a different destination using the `Dial` verb.
 
  `Dial` will end this call if:
-* The called person does not answer.
-* The number is invalid.
-* ConnexCS receives a busy signal.
+
+1. The called person doesn't answer.
+2. The number is invalid.
+3. ConnexCS receives a busy signal.
   
 !!! example
     ```xml
@@ -321,7 +331,7 @@ An existing call is transferred to a different destination using the `Dial` ver
         ```xml
         "<?xml version=""1.0"" encoding=""UTF-8""?>
         <Response>
-            <Dial callerId=""+1234"">12345</Dial>
+            <Dial fromDisplayName=""+1234"">12345</Dial>
             <Say voice=""kal"">This is after hangup. </Say>
         </Response>"
         ```
@@ -335,8 +345,35 @@ An existing call is transferred to a different destination using the `Dial` ver
         ```
     4. **ringTone**
         ```xml
-            "<?xml version=""1.0"" encoding=""UTF-8""?>
-            <Response>
-                <Dial fromDisplayName=""+1234"" ringTone=""in"" >160</Dial>
-            </Response>"
+        "<?xml version=""1.0"" encoding=""UTF-8""?>
+        <Response>
+            <Dial fromDisplayName=""+1234"" ringTone=""in"" >160</Dial>
+        </Response>"
         ```
+    5. **Number**
+        ```xml
+        "<?xml version=""1.0"" encoding=""UTF-8""?>
+        <Response>
+            <Dial>
+                <Number>4423456789</Number>
+            </Dial>
+        </Response>"
+        ```
+    6. **Queue**
+        ```xml
+        "<?xml version=""1.0"" encoding=""UTF-8""?>
+        <Response>
+            <Dial>
+                <Queue>10482</Queue>
+            </Dial>
+        </Response>"
+        ```
+
+    7. **Client**
+        ```xml
+        "<?xml version=""1.0"" encoding=""UTF-8""?>
+        <Response>
+            <Dial>
+                <Client>testadam</Client>
+            </Dial>
+        </Response>"
