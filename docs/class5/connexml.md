@@ -20,21 +20,21 @@ In the DID section you can allocate the calls at different places. Click on Call
 
 <img src= "/class5/img/ml4.png" width="400">
 
-Later, the Class5 Applications makes an HTTP request to the URL endpoint you configured for that number. The endpoint will contain instructions telling ConnexML what to do next with the call.
+Later, the Class 5 Applications makes an HTTP request to the URL endpoint you configured for that number. The endpoint will contain instructions telling ConnexML what to do next with the call.
 
 ### How does ConneXML work?
 
-In a general call scenario, the call goes from the Carrier to ConnexCS Class4 to the Customer.
+In a general call scenario, the call goes from the Carrier to ConnexCS Class 4 to the Customer.
 
-In this case, the call goes from Carrier to ConnexCS Class4 to ConnexCS Class5.
+In this case, the call goes from Carrier to ConnexCS Class 4 to ConnexCS Class 5.
 
-The Class5 initially doesn't pass the call to the Customer.
+The Class 5 initially doesn't pass the call to the Customer.
 
-The call gets terminated here and instead Class4 sends a request to the Routing Engine via HTTP and then the HTTP replies back to the Class4 system.
+The call gets terminated here and instead Class 4 sends a request to the Routing Engine via HTTP and then the HTTP replies back to the Class 4 system.
 
-Class4 passes the call to Class5. Then Class5 asks the Routing Engine how to handle the call.
+Class 4 passes the call to Class 5. Then Class 5 asks the Routing Engine how to handle the call.
 
-Further, the Routing Engine questions the same thing to the Customer on how to handle the call. The Customer can ask to collect some information or play a music or something else via a an HTTP Request. The same request is sent to the Class5 from the Routing Engine. The Class5 then replies to the requests of the customer.
+Further, the Routing Engine questions the same thing to the Customer on how to handle the call. The Customer can ask to collect some information or play a music or something else via a an HTTP Request. The same request is sent to the Class 5 from the Routing Engine. The Class 5 then replies to the requests of the customer.
 
 Another scenario might be when the Routing Engine might talk to the ConnexCS Applications like `ScriptForge`, `ConneXML`, `Call Flow Builder`.
 In case it hits the `ConneXML` application, `ConnexML` can as to direct it (Routing Engine) to a 3^rd^ party customer and that customer can access the 3^rd^ party data hit back to `ConneXML`, then the Routing Engine followed by Class 5 Application and lastly the Customer.
@@ -222,7 +222,7 @@ You can use `Play` as a verb  standalone or as a noun nested inside `Gather` to
 
 ### Redirect
 
-The current call gets transferred to another ConnexCS CLass5 application using the `Redirect` verb.
+The current call gets transferred to another ConnexCS Class 5 application using the `Redirect` verb.
 
 `Redirect` doesn't allow for the nesting of nouns.
 
