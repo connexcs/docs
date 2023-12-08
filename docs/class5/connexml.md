@@ -389,3 +389,31 @@ An existing call is transferred to a different destination using the `Dial` ver
             </Dial>
         </Response>
         ```
+| **Verbs/Attributes/Nouns** | **Twilio** | **ConnexCS** | **Telnyx** |
+|----------------------------|------------|--------------|------------|
+|**Play**|Yes|Yes|Yes|
+|**loop**|Yes|Yes|Yes|
+|**Remote HTTP**|No|Yes|No|
+|**User Files**|No|Yes|No|
+|**digits**|Yes|No|Yes|
+|**Hangup**|Yes|Yes|Yes|
+|**Pause**|Yes|Yes|Yes|
+|**length**|Yes|Yes|Yes|
+|**Say**|Yes|Yes|Yes|
+|**voice**|Yes|No|Yes|
+|**language**|Yes|No|Yes|
+|**loop**|Yes|No|Yes|
+|**Reject**|Yes|Yes|Yes|
+|**reason**|Yes|Yes|Yes|
+|**Dial**|Yes|Yes|Yes|
+|**callerId**|Yes|Yes|Yes|
+|**fromDispalyName**|No|Yes|Yes|
+|**hangupOnStar**|Yes|Yes|Yes|
+|**ringTone**|Yes|Yes|Yes|
+|**timeout**|Yes|Yes|Yes|
+|**Number**|Yes|Yes|Yes|
+|**Queue**|Yes|Yes|Yes|
+|**Client**|Yes|Yes|No|
+|**Conference**|Yes|Yes|Yes|
+|**Enqueue**|Yes|Yes|Yes|
+|**Play**|Yes|Yes|Yes|
