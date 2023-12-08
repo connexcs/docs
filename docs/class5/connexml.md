@@ -53,11 +53,11 @@ To get ConneXML working you will need to:
 
 <img src= "/class5/img/ml5.png">
 
-4. After saving the above information. Click on `Go to App` to enter the ConneXML editor. Write your code and click `Save`.
+4.After saving the above information. Click on `Go to App` to enter the ConneXML editor. Write your code and click `Save`.
 
 <img src= "/class5/img/ml6.png">
 
-5. If you initially want this to hit a customers server same as before, you can use something like this in the XML field.
+5.If you initially want this to hit a customers server same as before, you can use something like this in the XML field.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -66,7 +66,7 @@ To get ConneXML working you will need to:
 </Response>
 ```
 
-6. Point the DID to internal and then the name of the endpoint that you created (for example customer_a_connexml)
+6.Point the DID to internal and then the name of the endpoint that you created (for example customer_a_connexml)
 
 ### ConneXML Components
 
@@ -378,12 +378,12 @@ An existing call is transferred to a different destination using the `Dial` ver
         </Response>
         ```
     4. **ringTone**
-       ```xml
+        ```xml
        <?xml version="1.0" encoding="UTF-8"?>
        <Response>
-            <Dial fromDisplayName="1234" ringTone="in">160</Dial>
+            <Dial fromDisplayName="1234" ringTone="in" >160</Dial>
         </Response>
-        ```    
+        ```
     5. **Number**
         ```xml
         <?xml version="1.0" encoding="UTF-8"?>
