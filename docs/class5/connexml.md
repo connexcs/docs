@@ -12,9 +12,17 @@ When the customers receive an External or Internal Call, it hits the [DID](https
 
 In the DID section you can allocate the calls at different places. Click on Call :material-menu-right: Destination:
 
-1. **URI**: Its points to a client's server. You can send the call either to the Destination DID or an IP address.<img src= "/class5/img/ml2.png"  width="200">
-2. **External**: Allows you to re-direct the call out back again to the network.<img src= "/class5/img/ml3.png" width="200">
-3. **Internal**: Allows you to route the call internally like a SIP user or a Queue.<img src= "/class5/img/ml4.png" width="200">
+1. **URI**: Its points to a client's server. You can send the call either to the Destination DID or an IP address.
+
+<img src= "/class5/img/ml2.png"  width="400">
+
+2. **External**: Allows you to re-direct the call out back again to the network.
+
+<img src= "/class5/img/ml3.png" width="450">
+
+3. **Internal**: Allows you to route the call internally like a SIP user or a Queue.
+
+<img src= "/class5/img/ml4.png" width="500">
 
 Later, the Class5 Applications makes an HTTP request to the URL endpoint you configured for that number. The endpoint will contain instructions telling ConnexML what to do next with the call.
 
@@ -22,7 +30,7 @@ Later, the Class5 Applications makes an HTTP request to the URL endpoint you con
 
 In a general call scenario, the call goes from the Carrier to ConnexCS Class4 to the Customer.
 
-But in this case, the call goes from Carrier to ConnexCS Class4 to ConnexCS Class5.
+In this case, the call goes from Carrier to ConnexCS Class4 to ConnexCS Class5.
 
 The Class5 initially doesn't pass the call to the Customer.
 
@@ -32,7 +40,7 @@ Class4 passes the call to Class5. Then Class5 asks the Routing Engine how to han
 
 Further, the Routing Engine questions the same thing to the Customer on how to handle the call. The Customer can ask to collect some information or play a music or something else via a an HTTP Request. The same request is sent to the Class5 from the Routing Engine. The Class5 then replies to the requests of the customer.
 
-ConneXML uses the standard '.xml' file extension.
+ConneXML uses the standard `.xml` file extension.
 
 .<img src= "/class5/img/ml1.png">
 
@@ -76,7 +84,7 @@ It has **no attributes** and doesn;t include any **nouns**.
     <Response>
         <Say voice=""kal"">I will hangup call in 1 second even though there is say after hangup </Say>
         <Hangup />
-    </Response>"
+    </Response>
     ```
 
 ### Pause
@@ -90,7 +98,7 @@ The `Pause` verb waits silently for a given amount of time, or by default, one s
     <Response>
         <Say voice=""kal"">I will pause default time starting now!</Say>
         <Pause/>
-    </Response>"
+    </Response>
     ```
 
 |**Attribute**|**Description**|**Seconds**|**Default Value**|
@@ -103,7 +111,7 @@ The `Pause` verb waits silently for a given amount of time, or by default, one s
     <Response>
         <Pause length=""10""/>
         <Say voice=""kal"">I just paused 10 seconds</Say>
-    </Response>"
+    </Response>
     ```
 
 ### Say
@@ -115,7 +123,7 @@ Text to speech is enabled for any application by using the `Say` verb, which spe
     "<?xml version=""1.0"" encoding=""UTF-8""?>
     <Response>
         <Say>This is better  text to speech. </Say>
-    </Response>"
+    </Response>
     ```
 
 ### Reject
@@ -130,7 +138,7 @@ This verb rejects the current call.
     "<?xml version=""1.0"" encoding=""UTF-8""?>
     <Response>
         <Reject  />
-    </Response>"
+    </Response>
     ```
 
 |**Attribute**|**Description**|**Options**|**Default**|
@@ -142,7 +150,7 @@ This verb rejects the current call.
     "<?xml version=""1.0"" encoding=""UTF-8""?>
     <Response>
         <Reject  reason=""busy""/>
-    </Response>"
+    </Response>
     ```
 
 ### Play
@@ -164,7 +172,7 @@ You can use `Play` as a verb  standalone or as a noun nested inside `Gather` to
     "<?xml version=""1.0"" encoding=""UTF-8""?>
     <Response>
         <Play loop=""3"">ivr/ivr-invalid_number_format.wav</Play>
-    </Response>"
+    </Response>
     ```
 
     2. **Local Files**
@@ -172,21 +180,21 @@ You can use `Play` as a verb  standalone or as a noun nested inside `Gather` to
     "<?xml version=""1.0"" encoding=""UTF-8""?>
     <Response>
         <Play>ivr/ivr-invalid_number_format.wav</Play>
-    </Response>"
+    </Response>
     ```
     3. **Remote HTTP**
     ```xml
     "<?xml version=""1.0"" encoding=""UTF-8""?>
     <Response>
         <Play>https://file-examples.com/storage/fef3ad87fb6568c5a9d7b04/2017/11/file_example_WAV_1MG.wav</Play>
-    </Response>"
+    </Response>
     ```
     4. **User Files**
         ```xml
         "<?xml version=""1.0"" encoding=""UTF-8""?>
         <Response>
             <Play>user/adam.wav</Play>
-        </Response>"
+        </Response>
         ```
 
 ### Redirect
@@ -211,7 +219,7 @@ The current call gets transferred to another ConnexCS CLass5 application using
     ```xml
     "<Response>
         <Redirect method=""""GET"""">https://cdn.cnxcdn.com/public/1093/test.xml</Redirect>
-    </Response>"""
+    </Response>
     ```
 
 !!! Note
@@ -230,9 +238,10 @@ This is similar to how the `Number` noun lets you connect to another phone numbe
     "<?xml version=""1.0"" encoding=""UTF-8""?>
     <Response>
         <Dial>
-        <Conference>Room 10481</Conference>
+            <Conference>Room 10481</Conference>
         </Dial>
-    </Response>"
+    </Response>
+    ```
 
 ### Gather
 
@@ -245,10 +254,10 @@ You can create an interactive IVR with text-to-speech by nesting `Say` within `
     "<?xml version=""1.0"" encoding=""UTF-8""?>
     <Response>
         <Gather  actionOnEmptyResult=""false"" action=""https://cdn.cnxcdn.com/public/1093/test.xml"" method=""GET"" numDigits=""6"" finishOnKey=""*"" timeout=""120"" >
-            <Play>https://samplelib.com/lib/preview/wav/sample-12s.wav</Play> 
-        </Gather> 
+            <Play>https://samplelib.com/lib/preview/wav/sample-12s.wav</Play>
+        </Gather>
     <Say voice=""kal"">This is outside Gather</Say>
-    </Response>"
+    </Response>
     ```
 
 |**Attribute**|**Description**|**Options**|**Default Method**
@@ -259,7 +268,7 @@ You can create an interactive IVR with text-to-speech by nesting `Say` within `
 |`numDigits`|Total number of digits to be gathered|
 |`minDigits`|Minimum number of digits to be gathered|[1-128]|1|
 |`maxDigits`|Maximum number of digits to be gathered|[1-128]|128|
-|`timeout`|You can configure the `timeout` to determine how long ConnexCS will wait (in seconds) before sending data to your action URL in order to wait for the caller to press or say another number|[1-120]|5|
+|`timeout`|You can configure the `timeout` to determine how long ConnexCS will wait (in seconds) before sending data to your action URL to wait for the caller to press or say another number|[1-120]|5|
 
 |**Noun**|**Description**|
 |-------------|----------|
@@ -271,7 +280,7 @@ You can create an interactive IVR with text-to-speech by nesting `Say` within `
     "<?xml version=""1.0"" encoding=""UTF-8""?>
     <Response>
         <Dial fromDisplayName=""+1234"" timeout=""10"" >160</Dial>
-    </Response>"
+    </Response>
     ```
 
 ### Enqueque
@@ -283,7 +292,7 @@ The current call is enqueued in a call queue using the `Enqueue` verb.
     "<?xml version=""1.0"" encoding=""UTF-8""?>
     <Response>
         <Enqueue>10482</Enqueue>
-    </Response>"
+    </Response>
     ```
 
 ### Dial
@@ -292,22 +301,22 @@ An existing call is transferred to a different destination using the `Dial` ver
 
  `Dial` will end this call if:
 
-1. The called person doesn't answer.
-2. The number is invalid.
-3. ConnexCS receives a busy signal.
+   * The called person doesn't answer.
+   * The number is invalid.
+   * ConnexCS receives a busy signal.
   
 !!! example
     ```xml
     "<?xml version=""1.0"" encoding=""UTF-8""?>
     <Response>
         <Dial>123456</Dial>
-    </Response>"
+    </Response>
     ```
 
 |**Attribute**|**Description**|**Options**|**Default Method**
 |-------------|---------------|-----------|-------|
 |`callerID`|Caller ID that must be a valid E.164 format number|
-|`fromdisplayName`|The fromDisplayName string to be used as the caller id name (SIP From Display Name) presented to the destination. The string should have a maximum of 128 characters, containing only letters, numbers, spaces, and -_~!.+ special characters. If ommited, the display name will be the same as the number in the callerId field|
+|`fromdisplayName`|The fromDisplayName string to be used as the caller id name (SIP From Display Name) presented to the destination. The string should have a maximum of 128 characters, containing only letters, numbers, spaces, and -_~!.+ special characters. If omited, the display name will be the same as the number in the callerId field|
 |`hangupOnStar`|By tapping the `*` key on their phone, the initial caller can hang up on the called party using the hangupOnStar attribute. It doesn't apply for `Conference` noun|true, false| false|
 |`rignTone`|The ringback tone played back to the caller|at,au,bg,br,be,ch,cl,cn,cz,de,dk,ee,es,fi,fr,gr,hu,il,in,it,lt,jp,mx,my,nl,no,nz,ph,pl,pt,ru,se,sg,th,uk,us,us-old,tw,ve,za|us|
 
@@ -324,7 +333,7 @@ An existing call is transferred to a different destination using the `Dial` ver
     <Response>
         <Dial callerId=""+1234"">12345</Dial>
         <Say voice=""kal"">This is after hangup. </Say>
-    </Response>"
+    </Response>
     ```
 
     2. **fromDisplayName**
@@ -333,23 +342,25 @@ An existing call is transferred to a different destination using the `Dial` ver
         <Response>
             <Dial fromDisplayName=""+1234"">12345</Dial>
             <Say voice=""kal"">This is after hangup. </Say>
-        </Response>"
+        </Response>
         ```
+
     3. **hangupOnStar**
         ```xml
         "<?xml version=""1.0"" encoding=""UTF-8""?>
         <Response>
-            <Dial hangupOnStar=""True"">12345</Dial>
+            <Dial hangOnStar=""+1234"">12345</Dial>
             <Say voice=""kal"">This is after hangup. </Say>
-        </Response>"
+        </Response>
         ```
     4. **ringTone**
-        ```xml
+       ```xml 
         "<?xml version=""1.0"" encoding=""UTF-8""?>
         <Response>
             <Dial fromDisplayName=""+1234"" ringTone=""in"" >160</Dial>
-        </Response>"
+        </Response>
         ```
+    
     5. **Number**
         ```xml
         "<?xml version=""1.0"" encoding=""UTF-8""?>
@@ -366,7 +377,7 @@ An existing call is transferred to a different destination using the `Dial` ver
             <Dial>
                 <Queue>10482</Queue>
             </Dial>
-        </Response>"
+        </Response>
         ```
 
     7. **Client**
@@ -376,4 +387,5 @@ An existing call is transferred to a different destination using the `Dial` ver
             <Dial>
                 <Client>testadam</Client>
             </Dial>
-        </Response>"
+        </Response>
+        ```
