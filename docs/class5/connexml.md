@@ -379,11 +379,12 @@ An existing call is transferred to a different destination using the `Dial` ver
         ```
     4. **ringTone**
         ```xml
-       <?xml version="1.0" encoding="UTF-8"?>
-       <Response>
-            <Dial fromDisplayName="1234" ringTone="in" >160</Dial>
+        <?xml version="1.0" encoding="UTF-8"?>
+        <Response>
+            <Dial fromDisplayName="1234" ringtone="in">160</Dial>
         </Response>
         ```
+    
     5. **Number**
         ```xml
         <?xml version="1.0" encoding="UTF-8"?>
