@@ -37,7 +37,7 @@ Class4 passes the call to Class5. Then Class5 asks the Routing Engine how to han
 Further, the Routing Engine questions the same thing to the Customer on how to handle the call. The Customer can ask to collect some information or play a music or something else via a an HTTP Request. The same request is sent to the Class5 from the Routing Engine. The Class5 then replies to the requests of the customer.
 
 Another scenario might be when the Routing Engine might talk to the ConnexCS Applications like `ScriptForge`, `ConneXML`, `Call Flow Builder`.
-In case it hits the `ConneXML` application, `ConnexML` can as to direct it (Routing Engine) to a 3^rd^ party customer and that customer can access the 3^rd^ party data hit back to `ConneXML`, then the Routing Enigne followed by Class 5 Application and lastly the Customer.
+In case it hits the `ConneXML` application, `ConnexML` can as to direct it (Routing Engine) to a 3^rd^ party customer and that customer can access the 3^rd^ party data hit back to `ConneXML`, then the Routing Engine followed by Class 5 Application and lastly the Customer.
 
 ConneXML uses the standard [`.xml` markup](https://en.wikipedia.org/wiki/XML) language.
 
@@ -67,7 +67,6 @@ To get ConneXML working you will need to:
 ```
 
 6. Point the DID to internal and then the name of the endpoint that you created (for example customer_a_connexml)
-
 
 ### ConneXML Components
 
@@ -381,7 +380,7 @@ An existing call is transferred to a different destination using the `Dial` ver
     4. **ringTone**
        ```xml
        <?xml version="1.0" encoding="UTF-8"?>
-        <Response>
+       <Response>
             <Dial fromDisplayName="1234" ringTone="in">160</Dial>
         </Response>
         ```    
