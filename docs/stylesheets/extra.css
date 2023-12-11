@@ -1,3 +1,24 @@
-a {
-    color: red;
-  }
+.md-tabs > .md-grid {
+  width: 100%;
+  max-width: 100%;
+  padding: 0px 50px;
+}
+
+.md-main > .md-main__inner {
+  display: grid;
+  grid-template-columns: 20% 50% 30%;
+  padding: 0px 50px;
+}
+
+.md-main > .md-grid{
+  max-width: none;
+}
+
+.md-header > .md-header__inner {
+  padding: 0px 50px;
+}
+
+.md-header > .md-grid {
+  max-width: none;
+}
+
