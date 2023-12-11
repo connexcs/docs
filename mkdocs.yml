@@ -8,6 +8,21 @@ theme:
   features:
     - navigation.instant
     - navigation.tabs
+  palette:
+    - scheme: default
+      toggle:
+            icon: material/toggle-switch-off-outline
+            name: Switch to dark mode
+      primary: 4051b5
+      accent: purple
+    - scheme: slate
+      toggle:
+            icon: material/toggle-switch
+            name: Switch to light mode
+      primary: 4051b5
+      accent: 526cfe
+        
+            
 extra_javascript:
 - extra.js
 # - https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js
