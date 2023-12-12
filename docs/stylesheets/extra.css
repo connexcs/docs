@@ -22,3 +22,19 @@
   max-width: none;
 }
 
+.md-sidebar--primary > .md-sidebar__scrollwrap{
+  border-right: 2px solid #efefef;
+}
+
+.md-tabs__list > .md-tabs__item--active{
+  border-bottom: 3px solid white;
+}
+
+.md-tabs__list > .md-tabs__item{
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0.6rem;
+  margin-right: 0.6rem;
+
+}
+
