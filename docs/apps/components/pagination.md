@@ -2,15 +2,21 @@
 
 ## Description
 
-mechanism for presenting and navigating through large chunks of information within a form in a structured way. Imagine you have a form with hundreds of items to choose from, like products in a catalog. Without pagination, users would have to scroll through an endless list, making it incredibly time-consuming and frustrating.
+Pagination is a mechanism for presenting and navigating through large chunks of information within a form in a structured way.
 
-<img src= "/apps/components/img/input.png">
+Imagine you have a form with hundreds of items to choose from, like products in a catalog. Without pagination, users would have to scroll through an endless list, making it incredibly time-consuming and frustrating.
+
+<img src= "/apps/components/img/pagination.png">
 
 ## Use Case
 
-The input box is a core component in allow information to be entered into the system, as well as displaying existing information.
-
-The input box can also be dragged into other components including: **Sub-Form**[add anchor text] and **Sub-Form+**[add anchor text].
+1. **Dividing content**: When there's a large amount of data which split into smaller, bite-sized pages.
+2. **Displaying current page**: Only a specific number of items are shown on each page, usually indicated by a page number or counter.
+3. **Navigation controls**: Users can easily navigate between pages using various controls like page numbers, links, buttons, or arrows. This allows them to quickly find the information they need without scrolling through every single item.
+4. **Improved user experience**: Reduces frustration and simplifies browsing large amounts of data, keeping users engaged and efficient.
+5. **Better visual design**: Breaks down information into manageable chunks, making the form appear less overwhelming and cluttered.
+6. **Performance optimization**: Reduces loading times by displaying only the necessary data on each page, especially for complex forms.
+7. **Accessibility**: Makes the form easier to navigate for users with disabilities who may rely on keyboard navigation or screen readers.
 
 ### Interactivity
 
