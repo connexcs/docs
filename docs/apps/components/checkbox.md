@@ -8,7 +8,6 @@ Checkboxes are typically used to collect data about user preferences or choices.
 
 <img src= "/apps/components/img/checkbox.png">
 
-
 ## Use Case
 
 1. Allowing users to select multiple options

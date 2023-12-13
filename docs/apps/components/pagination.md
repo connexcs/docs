@@ -20,25 +20,11 @@ Imagine you have a form with hundreds of items to choose from, like products in 
 
 ### Interactivity
 
-**Interactivity** is the ability of a web page or application to respond to user input.
-
-The're a number of ways to add interactivity to **Input boxes**.
-
-Some of the most common methods include:
-
-1. **Change events**: Change events are fired when the value of an input box is changed.
-   You can use change events to perform a variety of actions, such as:
-    * Validating the data entered into the input box
-    * Displaying a message to the user
-    * Enabling or disabling other input boxes on the form
-    * Performing a search
-    * Submitting the form
-
-2. **Focus and blur events**: **Focus events** are fired when an input box receives focus. **Blur events** are fired when an input box loses focus.
-You can use focus and blur events to perform a variety of actions, such as:
-    *Highlighting the input box when it receives focus
-    Changing the cursor style when the input box receives focus
-    Clearing the value of the input box when it loses focus
+1. Animated Page Numbers
+2. Interactive Thumbnails
+3. Progress Bar
+4. Smart Buttons
+5. Scrolling Controls
 
 ## API
 
@@ -47,8 +33,6 @@ You can use focus and blur events to perform a variety of actions, such as:
 | **Name**| **Description**|
 |----------------------|---------------------------------------------------------------------|
 | **onChange (element)**| The onChange event occurs when the value of an field is changed|
-| **onFocus (element)**| The onfocus event occurs when an field gets focus|
-| **onBlur (element)**| The onblur event occurs when an field loses focus|
 
 ### Methods
 
@@ -60,48 +44,23 @@ You can use focus and blur events to perform a variety of actions, such as:
 | **this.enable(fields)**| Disable input field from user interaction|
 | **this.getComponent(name) → {Object}**|Retrieve a component from an object or element|
 | **this.getValue(fieldName)**|Get A Value From An Object|
-| **this.getValues() → {Object}**|Get the values of all fields when values change|
+//| **this.getValues() → {Object}**|Get the values of all fields when values change|
 |**this.hide(fields)**|Hides the field|
 |**this.show(fields)**|Displays the field|
-|**this.setData(Value)**|Set the data in the field|
+//|**this.setData(Value)**|Set the data in the field|
 
 ## Config
 
 | **Name**|**Description**|**Icon**|
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
 |**ID**| This is a unique identifier which is used to access the field by the API and the key of the field when the form is saved|<img src= "/apps/components/img/input_id.png">|
-|**Name**| [**Optional**] The visual identifier label of the field|<img src= "/apps/components/img/input_name.png">|
-|**Width**| [**Optional**] To set the width of the field|<img src= "/apps/components/img/input_width.png">|
+|**Name**| [**Optional**] The visual identifier label of the field|<img src= "/apps/components/img/checkbox_name.png">|
 |**Label Width**|Width of the label associated with an input field. It determines the horizontal space occupied by the label text|<img src= "/apps/components/img/input_labelwidth1.png">|
 |**Label Wrap**| If the label is longer than the allowed width the text will continue on another line|<img src= "/apps/components/img/input_labelwrap1.png">|
 |**Hide Label**| Hides the label on the form|<img src= "/apps/components/img/input_hidelabel.png">|
-|**Placeholder**| The short hint is displayed in the input field before the user enters a value|<img src= "/apps/components/img/input_placeholder.png">|
-|**Text Prompt**| A description to aid the user when completing the field|<img src= "/apps/components/img/input_textprompt.png">|
-|**Max Length**| Limit the amount of characters the field supports|<img src= "/apps/components/img/input_maxlength.png">|
-|**Default Value**| The default value which is filled in the field before the user changes it|<img src= "/apps/components/img/input_defaultvalue.png">|
+|**Page Size**|The page size determines how much information users see at a glance. A larger size shows more items per page, while a smaller size displays fewer|<img src= "/apps/components/img/pagination_pagesize.png">|
+|**Pager Count**| Refers to the total number of visible page numbers displayed at once|<img src= "/apps/components/img/pagination_pagercount.png">|
+|**Total**| Total number of pages you wish to keep for navigation|<img src= "/apps/components/img/pagination_total.png">|
+|**Backgruond**|Enable this option to add backdrop to the pages while navigating|<img src= "/apps/components/img/pagination_total.png">|
 |**Custom Class**| A HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|
-|**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** to action to hide the field. <br> Enable **Disabled** action to make the field unsuable. <br>Enable **Show clear button** action make the clear button visible. <br> Enable **Show Password** action make the password visible. <br>Enable **Show word count** action make the word count visible|<img src= "/apps/components/img/input_attributeaction.png">|
-
-### Validation
-
-Form validation is the process of checking the data entered into a form to ensure that it's valid and complete.
-
-This helps to prevent users from submitting forms with invalid data, which can cause problems for the application that's processing the form.
-
-Form validation can be performed using a variety of methods, including:
-
-| **Name**| **Description**|
-|----------------------|---------------------------------------------------------------------|
-| **Required**| Single line of text|
-|**Select**|Several common type checks are provided in single-line text boxes such as string, URL, mailbox, etc.|
-| **Regular expressions**|Used to match patterns in text. They can be used to validate the format of data, such as email addresses, phone numbers, and dates|
-|**Custom Validation Rules**|(rule, value, callback) => {|
-||**rule**: Verification rule, you can view the verification configuration information through this parameter; rule.fieldcan get the field identifier of the current verification|
-||**value**: Value of the current field|
-||**callback**: Callback function (must be called) upon completion of validation; **callback('Error message')/ callback(new Error('Error message'))**. These are two ways to return an error message|
-
-<img src= "/apps/components/img/input_validation.png">
-
-!!! Info
-    1. **Regular expressions** should be wrapped with //, as in:/^1[3456789]\d{9}$/"
-    2. The **callback()function** is also called to verify success in the custom checkup method.
+|**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** to action to hide the field. <br> Enable **Disabled** action to make the field unsuable|<img src= "/apps/components/img/checkbox_attributeaction.png">|
