@@ -100,7 +100,7 @@ In the next section, we shall discuss the various `Verbs`,`Attributes` and `Noun
 
 The current call is terminated with the `Hangup` verb.
 
-It has **no attributes** and doesn;t include any **nouns**.
+It has **no attributes** and doesnt include any **nouns**.
 
 !!! example
     ```xml
@@ -427,6 +427,7 @@ An existing call is transferred to a different destination using the `Dial` ver
 |**Reject**|✅|✅|✅|
 |**➡️reason**|✅|✅|✅|
 |**Dial**|✅|✅|✅|
+|**➡️Conference**|✅|✅|✅|
 |**➡️callerId**|✅|✅|✅|
 |**➡️fromDispalyName**|✅|✅|✅|
 |**➡️hangupOnStar**|✅|✅|✅|
@@ -434,7 +435,6 @@ An existing call is transferred to a different destination using the `Dial` ver
 |**➡️Number**|✅|✅|✅|
 |**➡️Queue**|✅|✅|✅|
 |**➡️Client**|✅|✅|❌|
-|**Conference**|✅|✅|✅|
 |**Enqueue**|✅|✅|✅|
 |**Play**|✅|✅|✅|
 |**Redirect**|✅|✅|✅|
