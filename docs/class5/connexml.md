@@ -112,7 +112,7 @@ It has **no attributes** and doesnt include any **nouns**.
 
 ### Pause
 
-The `Pause` verb waits silently for a given amount of time, or by default, one second.
+The `Pause` verb waits silently for a given amount of time, or by default, 5 seconds.
 `Pause` doesn't use any nouns, and a self-closing tag is mandatory.
 
 !!! example
@@ -126,7 +126,7 @@ The `Pause` verb waits silently for a given amount of time, or by default, one s
 
 |**Attribute**|**Description**|**Seconds**|**Default Value**|
 |-------------|---------------|----------|-|
-|`length`|How many seconds for waiting|`1-180`|`1`|
+|`length`|How many seconds for waiting|`1-180`|`5`|
 
 !!! example
     ```xml
@@ -248,24 +248,6 @@ The current call gets transferred to another ConnexCS Class 5 application usin
 !!! Note
     After `Redirect`, all verbs are unreachable and disregarded.
 
-### Conference
-
-You can connect to a conference room using the `Dial` verb's `Conference` noun.
-
-The `Conference` noun lets you connect to a designated conference room and converse with other callers who have already connected to that room.
-
-This is similar to how the `Number` noun lets you connect to another phone number.
-
-!!! example
-    ```xml
-    <?xml version="1.0" encoding="UTF-8"?>
-    <Response>
-        <Dial>
-            <Conference>Room5</Conference>
-        </Dial>
-    </Response>
-    ```
-
 ### Gather
 
 During a call, the `Gather` verb accumulates DTMF tones.
@@ -298,14 +280,6 @@ You can create an interactive IVR with text-to-speech by nesting `Say` within `
 |`say`|Reads the supplied text back to the caller|
 |`play`|Plays the audio URL back to the caller|
 
-!!! example
-    ```xml
-    <?xml version="1.0" encoding="UTF-8"?>
-    <Response>
-        <Dial fromDisplayName="1234" timeout="10">160</Dial>
-    </Response>
-    ```
-
 ### Enqueque
 
 The current call is enqueued in a call queue using the `Enqueue` verb.
@@ -336,6 +310,23 @@ An existing call is transferred to a different destination using the `Dial` ver
     </Response>
     ```
 
+#### Conference
+
+You can connect to a conference room using the `Dial` verb's `Conference` noun.
+
+The `Conference` noun lets you connect to a designated conference room and converse with other callers who have already connected to that room.
+
+This is similar to how the `Number` noun lets you connect to another phone number.
+
+!!! example
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+        <Dial>
+            <Conference>Room5</Conference>
+        </Dial>
+    </Response>
+    ```
 
 |**Attribute**|**Description**|**Options**|**Default Method**
 |-------------|---------------|-----------|-------|
