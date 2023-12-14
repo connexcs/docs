@@ -92,3 +92,26 @@
 .md-grid > .md-sidebar--primary{
   padding: 0;
 }
+
+.md-content__inner > h1{
+  font-size: 32px;
+  font-weight: 700;
+  color:  rgb(0, 0, 0) ;
+}
+
+.md-content__inner > p{
+  font-size: 16px;
+  line-height: 26px;
+  padding-top: 15px;
+  margin: 0px;
+}
+
+.md-content__inner > ul,
+.md-content__inner > ol{
+  font-size: 16px;
+  line-height: 26px;
+  padding-top: 15px;
+  margin: 0px;
+  padding-left: 0px;
+  /* list-style: none; */
+}
