@@ -61,6 +61,6 @@ Imagine you have a form with hundreds of items to choose from, like products in 
 |**Page Size**|The page size determines how much information users see at a glance. A larger size shows more items per page, while a smaller size displays fewer|<img src= "/apps/components/img/pagination_pagesize.png">|
 |**Pager Count**| Refers to the total number of visible page numbers displayed at once|<img src= "/apps/components/img/pagination_pagercount.png">|
 |**Total**| Total number of pages you wish to keep for navigation|<img src= "/apps/components/img/pagination_total.png">|
-|**Backgruond**|Enable this option to add backdrop to the pages while navigating|<img src= "/apps/components/img/pagination_total.png">|
+|**Background**|Enable this option to add backdrop to the pages while navigating|<img src= "/apps/components/img/pagination_background.png">|
 |**Custom Class**| A HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** to action to hide the field. <br> Enable **Disabled** action to make the field unsuable|<img src= "/apps/components/img/checkbox_attributeaction.png">|
