@@ -67,7 +67,13 @@
   font-weight: 700;
   text-transform: uppercase;
   line-height: 20px;
+  color: black;
   /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; */
+}
+
+.md-nav__title{
+  color: black;
+  font-weight: 500;
 }
 
 .md-nav__item > .md-nav__link > .md-ellipsis{
@@ -89,7 +95,8 @@
   /* height: 100vh !important; */
 }
 
-.md-grid > .md-sidebar--primary{
+.md-grid > .md-sidebar--primary,
+.md-grid > .md-sidebar--secondary{
   padding: 0;
 }
 
@@ -114,4 +121,27 @@
   margin: 0px;
   padding-left: 0px;
   /* list-style: none; */
+}
+
+.tabbed-block > ul{
+  font-size: 16px;
+  line-height: 26px;
+  padding-top: 15px;
+  margin: 0px;
+  padding-left: 0px;
+}
+
+.md-typeset .tabbed-labels>label{
+  font-size: 16px;
+}
+
+
+.md-content__inner > h1,
+.md-content__inner > h2,
+.md-content__inner > h3,
+.md-content__inner > h3,
+.md-content__inner > h4,
+.md-content__inner > h5,
+.md-content__inner > h6{
+  font-weight: 600;
 }
