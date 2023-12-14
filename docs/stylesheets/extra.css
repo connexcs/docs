@@ -10,22 +10,22 @@
 .md-tabs > .md-grid {
   width: 100%;
   max-width: 100%;
-  padding: 0px 50px;
+  /* padding: 0px 50px; */
 }
 
 .md-main > .md-main__inner {
   display: grid;
   grid-template-columns: 20% 50% 30%;
-  padding: 0px 50px;
+  margin-top: 0;
 }
 
 .md-main > .md-grid{
   max-width: none;
 }
 
-.md-header > .md-header__inner {
+/* .md-header > .md-header__inner {
   padding: 0px 50px;
-}
+} */
 
 .md-header > .md-grid {
   max-width: none;
@@ -78,4 +78,17 @@
   flex-direction: row-reverse !important;
   justify-content: flex-end !important;
   gap: 0 !important;
+}
+
+/* .md-main > .md-main__inner{
+  margin-top: 0;
+} */
+
+.md-sidebar__scrollwrap{
+  padding-top: 15px;
+  /* height: 100vh !important; */
+}
+
+.md-grid > .md-sidebar--primary{
+  padding: 0;
 }
