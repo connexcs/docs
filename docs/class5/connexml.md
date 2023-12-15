@@ -313,24 +313,6 @@ An existing call is transferred to a different destination using the `Dial` ver
     </Response>
     ```
 
-#### Conference
-
-You can connect to a conference room using the `Dial` verb's `Conference` noun.
-
-The `Conference` noun lets you connect to a designated conference room and converse with other callers who have already connected to that room.
-
-This is similar to how the `Number` noun lets you connect to another phone number.
-
-!!! example
-    ```xml
-    <?xml version="1.0" encoding="UTF-8"?>
-    <Response>
-        <Dial>
-            <Conference>Room5</Conference>
-        </Dial>
-    </Response>
-    ```
-
 |**Attribute**|**Description**|**Options**|**Default Method**
 |-------------|---------------|-----------|-------|
 |`callerID`|Caller ID that must be a valid E.164 format number|
@@ -343,6 +325,11 @@ This is similar to how the `Number` noun lets you connect to another phone numbe
 |`Number`|Its is an E.164 phone number|
 |`Queue`|Its a queue name|
 |`Client`|It specifies a client identifier to dial|
+|`Conference`|You can connect to a conference room using the `Dial` verb's `Conference` noun|
+
+!!! Info
+    `Conference` is similar to how the `Number` noun lets you connect to another phone number.
+
 
 !!! example
     1. **callerID**
@@ -367,7 +354,7 @@ This is similar to how the `Number` noun lets you connect to another phone numbe
         ```xml
         <?xml version="1.0" encoding="UTF-8"?>
         <Response>
-            <Dial hangOnStar="1234">12345</Dial>
+            <Dial hangOnStar="True">12345</Dial>
             <Say>This is after hangup.</Say>
         </Response>
         ```
@@ -404,6 +391,15 @@ This is similar to how the `Number` noun lets you connect to another phone numbe
         <Response>
             <Dial>
                 <Client>test1</Client>
+            </Dial>
+        </Response>
+        ```
+    8. **Conference**
+       ```xml
+        <?xml version="1.0" encoding="UTF-8"?>
+        <Response>
+            <Dial>
+                <Conference>Room5</Conference>
             </Dial>
         </Response>
         ```
