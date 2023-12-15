@@ -2,11 +2,11 @@
 
 ## Description
 
-A **Sub-form**, also called a nested form or child form, is a powerful tool in form creation that allows you to embed one form within another.
+A **Sub-form**, is a powerful tool in form creation that allows you to embed one form within another.
 
 Think of it as a smaller form placed within the larger form, providing additional details or related information about a specific section.
 
-Subform component, for list (array) type form data, uses Table layout, doesn't support layout nesting.
+Sub-form component, for list (array) type form data, uses Table layout, doesn't support layout nesting.
 
 <img src= "/apps/components/img/subform.png">
 
