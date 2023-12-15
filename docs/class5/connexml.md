@@ -354,7 +354,7 @@ An existing call is transferred to a different destination using the `Dial` ver
         ```xml
         <?xml version="1.0" encoding="UTF-8"?>
         <Response>
-            <Dial hangOnStar="True">12345</Dial>
+            <Dial hangOnStar="true">12345</Dial>
             <Say>This is after hangup.</Say>
         </Response>
         ```
@@ -395,7 +395,7 @@ An existing call is transferred to a different destination using the `Dial` ver
         </Response>
         ```
     8. **Conference**
-       ```xml
+        ```xml
         <?xml version="1.0" encoding="UTF-8"?>
         <Response>
             <Dial>
@@ -403,6 +403,7 @@ An existing call is transferred to a different destination using the `Dial` ver
             </Dial>
         </Response>
         ```
+
 |**Verbs/Attributes/Nouns**|**ConnexCS (ConneXML)**|**Twilio<sup>TM</sup> (TwiML)[^1]**|**Telnyx (TeXML)[^2]**|
 |----------------------------|------------|--------------|------------|
 |**Play**|✅|✅|✅|
