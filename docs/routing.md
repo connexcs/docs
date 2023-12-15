@@ -3,12 +3,12 @@
 ## Route Path
 
 ```mermaid
-graph LR
-A(Incoming Call) --> B[Customer]
-B --> C[Ingress Routing]
-C --> D[Customer Rate Card]
-D --> E[Carrier Rate Card]
-E --> F(Carrier IPS)
+    graph LR
+    A(Incoming Call) --> B[Customer]
+    B --> C[Ingress Routing]
+    C --> D[Customer Rate Card]
+    D --> E[Carrier Rate Card]
+    E --> F(Carrier IPS)
 ```
 
 **Routing** in ConnexCS CloudSwitch occurs in the following stages:
@@ -38,12 +38,12 @@ This determines the call profile and where to send it.
 
 ```mermaid
 graph LR
-A(Far End) --> B[PSTN]
-B --> C[Carrier]
-C --> D[ConnexCS Switch]
-D --> E[Routing Engine]
-E --> F(Authorisation)
-F --> G(Ingress Routing)
+    A(Far End) --> B[PSTN]
+    B --> C[Carrier]
+    C --> D[ConnexCS Switch]
+    D --> E[Routing Engine]
+    E --> F(Authorisation)
+    F --> G(Ingress Routing)
 ```
 
 !!! example "Ingress Example"
@@ -57,12 +57,12 @@ UA -> Customer > Customer Rate Card > Carrier Rate Card -> Carrier -> PSTN -> Fa
 
 ```mermaid
 graph LR
-A(UA) --> B[Customer]
-B --> C[Customer Rate Card]
-C --> D[Carrier Rate Card]
-D --> E[Carrier]
-E --> F(PSTN)
-F --> G(Far-End)
+    A(UA) --> B[Customer]
+    B --> C[Customer Rate Card]
+    C --> D[Carrier Rate Card]
+    D --> E[Carrier]
+    E --> F(PSTN)
+    F --> G(Far-End)
 ```
 
 !!! tip "Egress Example"

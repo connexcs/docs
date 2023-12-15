@@ -145,3 +145,7 @@
 .md-content__inner > h6{
   font-weight: 600;
 }
+
+.md-search{
+  margin-right: 0.7rem;
+}
