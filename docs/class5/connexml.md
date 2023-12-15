@@ -190,7 +190,7 @@ The value of Play can either be:
 
 1. **Local files**: You can play from default built-in messages. List of default sounds to follow.
 2. **Remote HTTP**: You can play from a remote datasource, the file can be anywhere on the internet; starts with HTTP.
-3. **User Files**|You can play the audio that you have uploaded with ConnexCS. Login to your account :material-menu-right: Management :material-menu-right: File :material-menu-right: Upload.
+3. **User Files**: You can play the audio that you have uploaded with ConnexCS. Login to your account :material-menu-right: Management :material-menu-right: File :material-menu-right: Upload.
 
 !!!example
     1. **Loop**
@@ -407,7 +407,7 @@ This is similar to how the `Number` noun lets you connect to another phone numbe
             </Dial>
         </Response>
         ```
-|**Verbs/Attributes/Nouns**|**ConnexCS (ConneXML)**|**Twilio^TM^ (TwiML)[^1]**|**Telnyx (TeXML)[^2]**|
+|**Verbs/Attributes/Nouns**|**ConnexCS (ConneXML)**|**Twilio<sup>TM</sup> (TwiML)[^1]**|**Telnyx (TeXML)[^2]**|
 |----------------------------|------------|--------------|------------|
 |**Play**|✅|✅|✅|
 |➡️loop|✅|✅|✅|
