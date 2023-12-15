@@ -184,10 +184,13 @@ You can use `Play` as a verb  standalone or as a noun nested inside `Gather` to
 
 |**Attribute**|**Description**|**Options**|**Default Value**|
 |-------------|---------------|------------|---------|
-|`loop`|How many times you wish to repeat the audio|`[1-100]`, `[0] for infinite`| `1`|
-|`Local files`|You can play from default built-in messages|`List of default sounds to follow`
-|`Remote HTTP`|You can play from a remote datasource, the file can be anywhere on the internet; starts with `HTTP`|
-|`User Files`|You can play the audio that you have uploaded with ConnexCS. Login to your account :material-menu-right: Management :material-menu-right: File :material-menu-right: Upload.
+|`loop`|How many times you wish to repeat the audio|`[1-100]`, `[0]` for infinite| `1`|
+
+The vlaue of Play can either be:
+
+1. **Local files**: You can play from default built-in messages. List of default sounds to follow.
+2. **Remote HTTP**: You can play from a remote datasource, the file can be anywhere on the internet; starts with HTTP.
+3. **User Files**|You can play the audio that you have uploaded with ConnexCS. Login to your account :material-menu-right: Management :material-menu-right: File :material-menu-right: Upload.
 
 !!!example
     1. **Loop**
@@ -441,10 +444,17 @@ This is similar to how the `Number` noun lets you connect to another phone numbe
 |**digits**|❌|✅|✅|
 |**Stop**|❌|❌|✅|
 |**Transcription**|❌|❌|✅|
-|**Stream**|❌|❌|✅|
+|**Stream**|❌|✅|✅|
 |**Refer**|❌|✅|✅|
 |**Record**|❌|✅|✅|
+|**HttpRequest**|❌|❌|✅|
+|**Leave**|❌|✅|✅|
+|**Pay**|❌|✅|❌|
+|**Connect**|❌|✅|❌|
+|**Supression**|❌|❌|✅|
 
-
-[^1]:  https://www.twilio.com/docs/voice/twiml/client
+[^1]:  https://www.twilio.com/docs/voice/twiml
 [^2]:  https://developers.telnyx.com/docs/v2/voice/programmable_voice/texml/texml-translator/texml_translator/
+
+!!! Note
+    TwiML is a trademark of TWILIO.
