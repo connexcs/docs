@@ -43,7 +43,7 @@ ConneXML uses the standard [`.xml` markup](https://en.wikipedia.org/wiki/XML) la
 
 .<img src= "/class5/img/ml11.png">
 
-### How to reach and code the ConneXML Editor? 
+### How to reach and code the ConneXML Editor?
 
 To get ConneXML working you will need to:
 
@@ -100,7 +100,7 @@ In the next section, we shall discuss the various `Verbs`,`Attributes` and `Noun
 
 The current call is terminated with the `Hangup` verb.
 
-It has **no attributes** and doesnt include any **nouns**.
+It has **no attributes** and doesn't include any **nouns**.
 
 !!! example
     ```xml
@@ -184,9 +184,9 @@ You can use `Play` as a verb  standalone or as a noun nested inside `Gather` to
 
 |**Attribute**|**Description**|**Options**|**Default Value**|
 |-------------|---------------|------------|---------|
-|`loop`|How many times you wish to repeat the audio|`[1-100]`, `[0]` for infinite| `1`|
+|`loop`|How many times you wish to repeat the audio|`[1-100]`| `1`|
 
-The vlaue of Play can either be:
+The value of Play can either be:
 
 1. **Local files**: You can play from default built-in messages. List of default sounds to follow.
 2. **Remote HTTP**: You can play from a remote datasource, the file can be anywhere on the internet; starts with HTTP.
@@ -451,7 +451,7 @@ This is similar to how the `Number` noun lets you connect to another phone numbe
 |**Leave**|❌|✅|✅|
 |**Pay**|❌|✅|❌|
 |**Connect**|❌|✅|❌|
-|**Supression**|❌|❌|✅|
+|**Suppression**|❌|❌|✅|
 
 [^1]:  https://www.twilio.com/docs/voice/twiml
 [^2]:  https://developers.telnyx.com/docs/v2/voice/programmable_voice/texml/texml-translator/texml_translator/
