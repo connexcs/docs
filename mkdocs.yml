@@ -288,6 +288,7 @@ nav:
         - Table: apps/components/table.md
         - Tabs: apps/components/tabs.md
         - Text: apps/components/text.md
+        - Text Area: apps/components/text-area.md
         - Textures: apps/components/textures.md
         - Time: apps/components/time.md
         - Transfer: apps/components/transfer.md
