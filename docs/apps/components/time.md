@@ -2,7 +2,7 @@
 
 ## Description
 
-**Time** element allows you to input the time in HH:mm:ss format.
+**Time** element allows you to input the time in HH: mm :ss format.
 
 <img src= "/apps/components/img/time.png">
 

@@ -30,7 +30,7 @@ It's a versatile tool for collecting user input in situations where there are mu
 1. **Search functionality**: Integrate a search bar within the dropdown menu for quickly finding specific options in long lists.
 2. **Dependent dropdowns**: Link multiple select components, making the options in the second dropdown dependent on the selection in the first.
 3. **Conditional options**: Based on user input in other form fields, dynamically hide or show irrelevant options in the select list.
-4. **Preview features**: When users hover over an option, display a preview of what happens if they select it. 
+4. **Preview features**: When users hover over an option, display a preview of what happens if they select it.
 
 ## API
 

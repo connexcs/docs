@@ -6,14 +6,14 @@ The "Steps" component, guides users through a complex process by breaking it dow
 
 It serves as a visual and functional indicator of progress, improving user experience and data collection.
 
-<img src= "/apps/components/img/steps.png">
+<img src= "/apps/components/img/step.png">
 
 ## Use Case
 
-1. **Improved user experience**
-2. **Reduced errors**
-3. **Increased data quality**
-4. **Better conversion rates**
+1. Improved user experience
+2. Reduced errors
+3. Increased data quality
+4. Better conversion rates
 5. Long registration forms
 6. Checkout processes
 7. Wizard-based applications

@@ -257,19 +257,15 @@ nav:
         - Checkbox: apps/components/checkbox.md
         - Collapse: apps/components/collapse.md
         - Color: apps/components/color.md
-        - Component: apps/components/component.md
-        - Custom: apps/components/custom.md
         - Data Grid: apps/components/data-grid.md
         - Date: apps/components/date.md
         - Dialog: apps/components/dialog.md
         - Divider: apps/components/divider.md
         - Editor: apps/components/editor.md
-        - File: apps/components/file.md
         - Grid: apps/components/grid.md
         - Group: apps/components/group.md
         - HTML: apps/components/html.md
         - I-Frame: apps/components/iframe.md
-        - Image: apps/components/image.md
         - Inline: apps/components/inline.md
         - Input: apps/components/input.md
         - Link: apps/components/link.md
@@ -289,9 +285,8 @@ nav:
         - Tabs: apps/components/tabs.md
         - Text: apps/components/text.md
         - Text Area: apps/components/text-area.md
-        - Textures: apps/components/textures.md
         - Time: apps/components/time.md
         - Transfer: apps/components/transfer.md
         - Tree Select: apps/components/tree-select.md
-        - Wephone: apps/components/web.md
+        - Wephone: apps/components/webphone.md
 
