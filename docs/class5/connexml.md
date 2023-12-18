@@ -20,7 +20,7 @@ In the DID section you can allocate the calls at different places. Click on DID 
 
 <img src= "/class5/img/ml4.png" width="400">
 
-Later, the Class 5 Applications makes an HTTP request to the URL endpoint you configured for that number. The endpoint will contain instructions telling ConnexML what to do next with the call.
+Later, the Class 5 Applications makes an HTTP request to the URL endpoint you configured for that number. The endpoint will contain instructions telling ConneXML what to do next with the call.
 
 ### How does ConneXML work?
 
@@ -39,7 +39,7 @@ Class 4 passes the call to Class 5. Then Class 5 asks the Routing Engine how to 
 Further, the Routing Engine questions the same thing to the Customer on how to handle the call. The Customer can ask to collect some information or play a music or something else via a an HTTP Request. The same request is sent to the Class 5 from the Routing Engine. The Class 5 then replies to the requests of the customer.
 
 Another scenario might be when the Routing Engine might talk to the ConnexCS Applications like `ScriptForge`, `ConneXML`, `Call Flow Builder`.
-In case it hits the `ConneXML` application, `ConnexML` can as to direct it (Routing Engine) to a 3<sup>rd</sup> party customer and that customer can access the 3<sup>rd</sup> party data hit back to `ConneXML`, then the Routing Engine followed by Class 5 Application and lastly the Customer.
+In case it hits the `ConneXML` application, `ConneXML` can as to direct it (Routing Engine) to a 3<sup>rd</sup> party customer and that customer can access the 3<sup>rd</sup> party data hit back to `ConneXML`, then the Routing Engine followed by Class 5 Application and lastly the Customer.
 
 ConneXML uses the standard [`.xml` markup](https://en.wikipedia.org/wiki/XML) language.
 
