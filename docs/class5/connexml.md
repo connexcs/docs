@@ -10,7 +10,7 @@ ConneXML is a set of instructions you can use to tell Class 5 Applications what 
 
 When the customers receive an External or Internal Call, it hits the [DID](https://docs.connexcs.com/customer/did/) section.
 
-In the DID section you can allocate the calls at different places. Click on Call :material-menu-right: Destination:
+In the DID section you can allocate the calls at different places. Click on DID (on the left) :material-menu-right: Destination:
 
 1.**URI**: Its points to a client's server. You can send the call either to the Destination DID or an IP address.
 
@@ -20,11 +20,13 @@ In the DID section you can allocate the calls at different places. Click on Call
 
 <img src= "/class5/img/ml4.png" width="400">
 
-Later, the Class 5 Applications makes an HTTP request to the URL endpoint you configured for that number. The endpoint will contain instructions telling ConnexML what to do next with the call.
+Later, the Class 5 Applications makes an HTTP request to the URL endpoint you configured for that number. The endpoint will contain instructions telling ConneXML what to do next with the call.
 
 ### How does ConneXML work?
 
 In a general call scenario, the call goes from the Carrier to ConnexCS Class 4 to the Customer.
+
+Now let's understand how ConneXML can control calls.
 
 In this case, the call goes from Carrier to ConnexCS Class 4 to ConnexCS Class 5.
 
@@ -37,7 +39,7 @@ Class 4 passes the call to Class 5. Then Class 5 asks the Routing Engine how to 
 Further, the Routing Engine questions the same thing to the Customer on how to handle the call. The Customer can ask to collect some information or play a music or something else via a an HTTP Request. The same request is sent to the Class 5 from the Routing Engine. The Class 5 then replies to the requests of the customer.
 
 Another scenario might be when the Routing Engine might talk to the ConnexCS Applications like `ScriptForge`, `ConneXML`, `Call Flow Builder`.
-In case it hits the `ConneXML` application, `ConnexML` can as to direct it (Routing Engine) to a 3^rd^ party customer and that customer can access the 3^rd^ party data hit back to `ConneXML`, then the Routing Engine followed by Class 5 Application and lastly the Customer.
+In case it hits the `ConneXML` application, `ConneXML` can as to direct it (Routing Engine) to a 3<sup>rd</sup> party customer and that customer can access the 3<sup>rd</sup> party data hit back to `ConneXML`, then the Routing Engine followed by Class 5 Application and lastly the Customer.
 
 ConneXML uses the standard [`.xml` markup](https://en.wikipedia.org/wiki/XML) language.
 
@@ -280,10 +282,10 @@ You can create an interactive IVR with text-to-speech by nesting `Say` within `
 
 |**Noun**|**Description**|
 |-------------|----------|
-|`say`|Reads the supplied text back to the caller|
-|`play`|Plays the audio URL back to the caller|
+|`Say`|Reads the supplied text back to the caller|
+|`Play`|Plays the audio URL back to the caller|
 
-### Enqueque
+### Enqueue
 
 The current call is enqueued in a call queue using the `Enqueue` verb.
 
@@ -316,9 +318,9 @@ An existing call is transferred to a different destination using the `Dial` ver
 |**Attribute**|**Description**|**Options**|**Default Method**
 |-------------|---------------|-----------|-------|
 |`callerID`|Caller ID that must be a valid E.164 format number|
-|`fromdisplayName`|The fromDisplayName string to be used as the caller id name (SIP From Display Name) presented to the destination. The string should have a maximum of 128 characters, containing only letters, numbers, spaces, and -_~!.+ special characters. If omited, the display name will be the same as the number in the callerId field|
+|`fromDisplayName`|The fromDisplayName string to be used as the caller id name (SIP From Display Name) presented to the destination. The string should have a maximum of 128 characters, containing only letters, numbers, spaces, and -_~!.+ special characters. If omitted, the display name will be the same as the number in the callerId field|
 |`hangupOnStar`|By tapping the `*` key on their phone, the initial caller can hang up on the called party using the hangupOnStar attribute. It doesn't apply for `Conference` noun|`true`, `false`| `false`|
-|`rignTone`|The ringback tone played back to the caller|`at`,`au`,`bg`,`br`,<br>`be`,`ch`,`cl`,`cn`,`cz`,</br>`de`,`dk`,`ee`,`es`,`fi`,<br>`fr`,`gr`,`hu`,`il`,`in`,<br>`it`,`lt`,`jp`,`mx`,`my`,<br>`nl`,`no`,`nz`,`ph`,`pl`,<br>`pt`,`ru`,`se`,`sg`,<br>`th`,`uk`,`us`,`us-old`,`tw`,<br>`ve`,`za`|`us`|
+|`ringTone`|The ringback tone played back to the caller|`at`,`au`,`bg`,`br`,<br>`be`,`ch`,`cl`,`cn`,`cz`,</br>`de`,`dk`,`ee`,`es`,`fi`,<br>`fr`,`gr`,`hu`,`il`,`in`,<br>`it`,`lt`,`jp`,`mx`,`my`,<br>`nl`,`no`,`nz`,`ph`,`pl`,<br>`pt`,`ru`,`se`,`sg`,<br>`th`,`uk`,`us`,`us-old`,`tw`,<br>`ve`,`za`|`us`|
 
 |**Noun**|**Description**|
 |-------------|----------|
@@ -329,7 +331,6 @@ An existing call is transferred to a different destination using the `Dial` ver
 
 !!! Info
     `Conference` is similar to how the `Number` noun lets you connect to another phone number.
-
 
 !!! example
     1. **callerID**
@@ -354,7 +355,7 @@ An existing call is transferred to a different destination using the `Dial` ver
         ```xml
         <?xml version="1.0" encoding="UTF-8"?>
         <Response>
-            <Dial hangOnStar="true">12345</Dial>
+            <Dial hangupOnStar="true">12345</Dial>
             <Say>This is after hangup.</Say>
         </Response>
         ```
@@ -420,7 +421,7 @@ An existing call is transferred to a different destination using the `Dial` ver
 |**Dial**|✅|✅|✅|
 |➡️Conference|✅|✅|✅|
 |➡️callerId|✅|✅|✅|
-|➡️fromDispalyName|✅|✅|✅|
+|➡️fromDisplayName|✅|✅|✅|
 |➡️hangupOnStar|✅|✅|✅|
 |➡️ringTone|✅|✅|✅|
 |➡️Number|✅|✅|✅|
