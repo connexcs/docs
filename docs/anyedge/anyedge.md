@@ -44,7 +44,7 @@ Click the :material-plus: button to set the following:
     See [**Compaction and Compression**](https://docs.connexcs.com/anyedge/anyedge/#compaction-and-compression) for details.
 
 * **Flags**: You may choose from 2 types of flags:
-    * **Registrations to AnyReg**: The AnyReg registration server will holds the AnyEdge registrations for all your customers.
+    * **Registrations to AnyReg**: The AnyReg registration server will hold the AnyEdge registrations for all your customers.
     * **AnyEdge SIP Ping Replies**: [**Click here**](https://docs.connexcs.com/anyedge/anyedge/#anyedge-sip-ping-replies) to know more.
   
 * **Primary Attempts**: (not useful for less than 3 servers) Set the number of attempts before going to a second zone.
