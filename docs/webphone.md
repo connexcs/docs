@@ -166,8 +166,8 @@ Your Web Phone should now be available.
     Please try to use a Regex Pattern when to wish to delete a codec e.g., **PC.***, if you want to remove all the codecs starting with PC else you always have the option to write the name of the codec.
 
 !!! danger
-        The **Opus codec** can't be deleted as its a default codec in WebRTC.
- 
+    The **Opus codec** can't be deleted as its a default codec in WebRTC.
+
 *  **Codec Priority**: You can set the priority of the Codecs which you use in your system.
 
 <img src= "/misc/img/wadv.png" width= "1000">
