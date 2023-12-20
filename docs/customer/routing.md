@@ -195,8 +195,13 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
     
     + [Management :material-menu-right: Rate Card :material-menu-right: Customer Rate Card :material-menu-right: Add Customer Rate Card `+` :material-menu-right: Advanced :material-menu-right: Default RTP](https://docs.connexcs.com/customer-ratecard/#advanced)
 
-+ **Call Recording**: This allows you to record and store calls, which are then found in **Customer :material-menu-right: Auth :material-menu-right: [Browsing Record](https://docs.connexcs.com/setup/information/recording/)**.
-  An extra charge per recorded call of $0.003 gets added to existing fees or charges, so choose carefully how many calls to record:
++ **Call Recording**: This allows you to record and store calls, which are then found in:
+
+* **Logging**
+* **Management:material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: CDR**
+* **Management :material-menu-right: File :material-menu-right: Recording**
+  
+An extra charge per recorded call of $0.003 gets added to existing fees or charges, so choose carefully how many calls to record:
 
     :material-menu-right: `Disabled`- no calls get recorded
 
