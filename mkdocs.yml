@@ -8,10 +8,26 @@ theme:
   features:
     - navigation.instant
     - navigation.tabs
+  palette:
+    - scheme: default
+      toggle:
+            icon: material/toggle-switch-off-outline
+            name: Switch to dark mode
+      primary: 4051b5
+      accent: 526cfe
+    - scheme: slate
+      toggle:
+            icon: material/toggle-switch
+            name: Switch to light mode
+      primary: 4051b5
+      accent: 526cfe
+        
+            
 extra_javascript:
 - extra.js
 # - https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js
-#extra_css:
+extra_css:
+  - stylesheets/extra.css
 #  - https://unpkg.com/mermaid@7.1.2/dist/mermaid.css
 plugins:
     - search
@@ -24,7 +40,7 @@ markdown_extensions:
   - toc:
       permalink: true
   - pymdownx.tabbed:
-      alternate_style: true 
+      alternate_style: true
   - pymdownx.details
   - pymdownx.tasklist:
       custom_checkbox: true
@@ -32,7 +48,7 @@ markdown_extensions:
       custom_fences:
         - name: mermaid
           class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_div_format
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
