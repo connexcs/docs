@@ -6,7 +6,16 @@ With the help of tags, you may generate global Alerts, Routing, and CLI informat
 
 By using tags, you may create an Alert, Routing or CLI Strategy for each specific customer with less time and effort.
 
-You may apply the tags to as many customers you wish.
+You may apply the tags to as many customers you wish.**Management :material-menu-right: Customer :material-menu-right: Tags**
+
+1. You can go to **Management :material-menu-right: Customer :material-menu-right: Config :material-menu-right: Tags**.
+2. Click on the dropdown next to Tags and assign it to your customer.
+
+![tags](/customer/img/tags.png)
+
+Tags help reduce the time and effort required in creating an Alert or Routing Strategy for each individual customer.
+
+You can create a general alert or routing strategy and apply it to as many customers as you want.
 
 ## Alerts
 
@@ -190,8 +199,13 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 
 *While it's doubtful that any information will get logged in the customer / providers switch when the audio gets engaged, it's possible for an engineer to learn this information from a SIP trace, PCAP, or by looking at transit locations. DTMF Detection ONLY works when RTP Proxy mode gets enabled.
 
-6.**Call Recording**: This allows you to record and store calls, which are then found in **Customer :material-menu-right: Auth :material-menu-right: [Browsing Record](https://docs.connexcs.com/setup/information/recording/)**.
-  An extra charge per recorded call of $0.003 gets added to existing fees or charges, so choose carefully how many calls to record:
+6.**Call Recording**: This allows you to record and store calls, which are then found in:
+* **Logging**
+* **Management ::material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right:
+CDR**
+* **Management ::material-menu-right: File :material-menu-right: Recording**
+
+An extra charge per recorded call of $0.003 gets added to existing fees or charges, so choose carefully how many calls to record:
 
 :material-menu-right: `Disabled`- no calls get recorded
 

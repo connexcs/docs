@@ -147,7 +147,6 @@ nav:
             - Payment Log: setup/information/payment-log.md
             - Certificate: setup/information/certificate.md
             - STIR/SHAKEN Cert: setup/information/stir-shaken.md
-            - Browsing Recording: setup/information/recording.md
             - Jobs: setup/information/jobs.md
 
     - Architecture:
