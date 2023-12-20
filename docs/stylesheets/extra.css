@@ -74,6 +74,12 @@
   /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; */
 }
 
+.md-nav--secondary > .md-nav__title{
+  height: 35px;
+  display: flex;
+  align-items: end;
+}
+
 .md-nav__title{
   /* color: #000000de; */
   font-weight: 700;
