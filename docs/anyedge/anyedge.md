@@ -51,7 +51,7 @@ Click the :material-plus: button to set the following:
   
 * **Secondary Attempts**: (not useful for less than 3 servers) Set the number of attempts before going to a third zone.
 
-<img src= "/setup/img/any1.jpg">
+<img src= "/anyedge/anyedge12.png">
 
 ### AnyEdge Domain
 
@@ -63,7 +63,7 @@ It can provide added **Transport Layer Security (TLS)/ Secure Sockets Layer (SSL
 2. If you enable the **Verify Certificate** option, then it will verify the client's certificate.
 3. If you enable the **Require Certificate** option, it means the client should have the certificate.
 
-<img src= "/setup/img/ssl.jpg">
+<img src= "/anyedge/anyedge13.png">
 
 ### AnyEdge Destinations
 
