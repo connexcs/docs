@@ -176,7 +176,7 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 
 5.**RTP Proxy Mode**: If a connection via our service fails and you have selected relaxed, it will automatically fail over to the backup.
 
-: material-menu-right: `Strict`- This will enforce the proxy engagement. If the proxy can't engage with the call, the call won't get established.
+:material-menu-right: `Strict`- This will enforce the proxy engagement. If the proxy can't engage with the call, the call won't get established.
 
     !!! note "Free accounts are limited to how many RTP Proxy channels get enabled, this may prevent calls from connecting if you have more channels than our free accounts allow you to have."
 
@@ -197,12 +197,15 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 | **Latency**             |         Low        |                Lowest |
 | **Information Leakage** |         No         |                  Yes* |
 
-*While it's doubtful that any information will get logged in the customer / providers switch when the audio gets engaged, it's possible for an engineer to learn this information from a SIP trace, PCAP, or by looking at transit locations. DTMF Detection ONLY works when RTP Proxy mode gets enabled.
+* While it's doubtful that any information will get logged in the customer / providers switch when the audio gets engaged, it's possible for an engineer to learn this information from a SIP trace, PCAP, or by looking at transit locations. DTMF Detection ONLY works when RTP Proxy mode gets enabled.
 
 6.**Call Recording**: This allows you to record and store calls, which are then found in:
+
 * **Logging**
+
 * **Management ::material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right:
 CDR**
+
 * **Management ::material-menu-right: File :material-menu-right: Recording**
 
 An extra charge per recorded call of $0.003 gets added to existing fees or charges, so choose carefully how many calls to record:
