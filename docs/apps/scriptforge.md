@@ -134,11 +134,13 @@ module.export = {
     2. Specify the script **Name**.
 
     3. Select the **Type**:
-   * `Script`- This is the fastest way to execute custom code and is "synchronous" execution. This is mainly used for manipulations or calculations. It can't use libraries or work with Promises. You can also select the Global Routing Priority from **Disable**, **Run First** or **Run Last**.
-   * `App`- Feature rich applications which can include a preset (whitelist) of available modules, the penalty of the extra features is a slightly higher latency. The App field allow you to integrate the created applications with the ScriptForge. You can enter the **Class 5 Destination** for the Script.
-   * `Worker`.
+       * `Script`- This is the fastest way to execute custom code and is "synchronous" execution. This is mainly used for manipulations or calculations. It can't use libraries or work with Promises. You can also select the Global Routing Priority from **Disable**, **Run First** or **Run Last**.
+       * `App`- Feature rich applications which can include a preset (whitelist) of available modules, the penalty of the extra features is a slightly higher latency. You can enter the **Class 5 Destination** for the Script.
+       * `Worker`- You can consider it as a Stricter Sandbox. It's persistant. *Please note, its Work In Progress*.
 
-    4. Click **`Save`**.
+    4. The **App** field allow you to integrate the created applications with the ScriptForge.
+
+    5. Click `Save`.
 
     <img src= "/apps/img/app_scriptforge2.png">
 
@@ -146,19 +148,19 @@ module.export = {
 
     <img src= "/apps/img/app_scriptforge5.png">
 
-    5. Your saved Script becomes available on the main IDE section.
-    6. Click on ScriptForge.
-    7. Select your script from the list.
+    6. Your saved Script becomes available on the main IDE section.
+    7. Click on ScriptForge.
+    8. Select your script from the list.
 
     <img src= "/apps/img/app_scriptforge6.png">
 
-    8. Enter the code of your script.
-    9. Click the green arrow to `Saved` and `Run`.
-    10. You can view the results onscreen.
+    9. Enter the code of your script.
+    10. Click the green arrow to `Saved` and `Run`.
+    11. You can view the results onscreen.
 
     <img src= "/apps/img/app_scriptforge7.png">
 
-    11. You can **Toggle Console**, **Preview (errors)**, or **Edit and Set Vars** using Settings.
+    12.  You can **Toggle Console**, **Preview (errors)**, or **Edit and Set Vars** using Settings.
 
     <img src= "/apps/img/app_scriptforge.png">
 
