@@ -263,7 +263,6 @@ nav:
         - Architecture: apps/architecture.md
         - Applications: apps/app.md
         - Script Forge: apps/scriptforge.md
-        - SC: apps/scriptforge.md
         - Databases: apps/database.md
         - Pub / Sub Bus: apps/pub-sub.md
         - Environmental Variables: apps/environmental-variables.md
