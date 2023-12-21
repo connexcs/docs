@@ -129,14 +129,14 @@ module.export = {
 === "Basic"
 
     1. To add a script, click :material-plus:, and select `Scriptforge`.
-    <img src= "/apps/img/app_scriptforge1.png">
+    <img src= "/apps/img/app_scriptforge1.png" width= "500">
 
     2. Specify the script **Name**.
 
     3. Select the **Type**:
-       * `Script`- This is the fastest way to execute custom code and is "synchronous" execution. This is mainly used for manipulations or calculations. It can't use libraries or work with Promises. You can also select the Global Routing Priority from **Disable**, **Run First** or **Run Last**.
-       * `App`- Feature rich applications which can include a preset (whitelist) of available modules, the penalty of the extra features is a slightly higher latency. You can enter the **Class 5 Destination** for the Script.
-       * `Worker`- You can consider it as a Stricter Sandbox. It's persistant. *Please note, its Work In Progress*.
+          * `Script`- This is the fastest way to execute custom code and is "synchronous" execution. This is mainly used for manipulations or calculations. It can't use libraries or work with Promises. You can also select the Global Routing Priority from **Disable**, **Run First** or **Run Last**.
+          * `App`- Feature rich applications which can include a preset (whitelist) of available modules, the penalty of the extra features is a slightly higher latency. You can enter the **Class 5 Destination** for the Script.
+          * `Worker`- You can consider it as a Stricter Sandbox. It's persistant. *Please note, its Work In Progress*.
 
     4. The **App** field allow you to integrate the created applications with the ScriptForge.
 
@@ -153,7 +153,7 @@ module.export = {
     8. Select your script from the list.
 
     <img src= "/apps/img/app_scriptforge6.png">
-
+    
     9. Enter the code of your script.
     10. Click the green arrow to `Saved` and `Run`.
     11. You can view the results onscreen.
