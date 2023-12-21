@@ -253,7 +253,6 @@ nav:
 
   - WebPhone: 
     - WebPhone: webphone.md
-<<<<<<< HEAD
 
   - Apps Platform:
     - Introduction: apps/introduction.md
@@ -264,6 +263,7 @@ nav:
         - Architecture: apps/architecture.md
         - Applications: apps/app.md
         - Script Forge: apps/scriptforge.md
+        - SC: apps/scriptforge.md
         - Databases: apps/database.md
         - Pub / Sub Bus: apps/pub-sub.md
         - Environmental Variables: apps/environmental-variables.md
@@ -309,6 +309,4 @@ nav:
         - Tree Select: apps/components/tree-select.md
         - Wephone: apps/components/webphone.md
 
-=======
     - Some Interesting Features: makecall.md
->>>>>>> 5f66f614f205832cb18ceaf38d8ff2c0ad96a69e
