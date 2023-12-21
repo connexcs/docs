@@ -166,9 +166,8 @@ module.export = {
 
     !!! note
         Global Routing Priority means the script will run for every single call. You have 3 options to choose from:
-
-        * You can disable it if you don't want to use it.
-        * Run first or Run Last means this script will run first or after the Script Forge enabled in the Routing section.
+             * You can disable it if you don't want to use it.
+             * Run first or Run Last means this script will run first or after the Script Forge enabled in the Routing section.
 
 === "Schedule"
 
@@ -181,65 +180,3 @@ If script shows an error, add this and then run the script again:
 ```
 {"routing":{}}
 ```
-
-### Assign the Script to a Customer
-
-1. Select **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Routing**
-2. Select a Rate Card from Ingress Routing.
-
-    ![alt text][s8]  
-
-3. Go to **ScriptForge**
-4. Select the script.
-5. Set the **Timeout** to specify the duration you want it to run before it times out.
-6. Enter the **Timeout Action** manually and format it as **`[sip response code] [sip response message]`**.
-7. Click **`Save`**.
-
-### Assign the script to other functions
-
-ScriptForge was initially designed to run from the routing-engine only, but it's available for the following scenarios:
-
-**Class 4 Routing (Termination) - (App or Script)**:
-Management :material-menu-right: Customer :material-menu-right: [Your Customer] :material-menu-right: Routing :material-menu-right: [Your Route] :material-menu-right: ScriptForge
-
-**Class 4 Routing (Origination) - (App or Script)**:
-Management :material-menu-right: Customer :material-menu-right: [Your Customer] :material-menu-right: DID :material-menu-right: [Your DID] :material-menu-right: ScriptForge
-
-**Class 5 Programmable Voice - (App only)**
-
-**Drivers - (App only)**:
-Currently available for Alert & DID
-
-## Manipulating headers from ScriptForge
-
-This feature helps you manipulate or remove headers.
-
-Below are some examples for removing headers for all or specific destinations.
-
-```
-
-function main(data) {
-
-// Delete headers for ALL destinations
-	data.remove_headers = [
-		{key: 'X-Customer-ID'}
-	]; 
-// Delete headers for first destination
-	data.egress_routing[0].remove_headers = [
-		{key: 'X-Customer-ID'}
-	];
-// Add Headers for ALL Destinations
-	data.headers = [
-		{key: 'X-Customer-ID', value: '1234'}
-	];
-// Add Headers for first destination
-	data.egress_routing[0].headers = [
-		{key: 'X-Customer-ID', value: 1234}
-	];
-// If you want to replace a header, you must remove it, then add it.
-	return data;
-}
-```
-
-[s2]: /developers/img/176.png "s2"
-[s8]: /developers/img/183.png "s8"
