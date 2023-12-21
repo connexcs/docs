@@ -243,7 +243,6 @@ nav:
     - Architecture:
         - Architecture: apps/architecture.md
         - Applications: apps/app.md
-        - Repository: apps/repository.md
         - Script Forge: apps/scriptforge.md
         - Databases: apps/database.md
         - Pub / Sub Bus: apps/pub-sub.md

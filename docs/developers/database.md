@@ -13,7 +13,7 @@ You can use **Database** for activities like checking list of numbers, caching e
 3. Click on blue `+`
    <img src="/developers/img/db1.png">
 
-4. Under the **Basic** Tab Write the **Name** of the databae you wish to create.
+4. Under the **Basic** Tab Write the **Name** of the database you wish to create.
 5. Select the **Customer** you want to create the database for under the **Basic** Tab.
 6. Select from the **Dataset Type** which are the preset data storage options. The two options are:
 
@@ -24,7 +24,7 @@ You can use **Database** for activities like checking list of numbers, caching e
 1. Next to the **Basic** Tab is the **SQL Table Schema**. This allows you to add additional fields apart from the **Leadset**. You can also select it's **Type** like integer, string, double, float etc.
 <img src="/developers/img/db3.png" width="500", height="150">
 
-1. Click on `Save` to finally create the database.
+2. Click on `Save` to finally create the database.
 
 ## Bulk Upload
 
@@ -48,5 +48,5 @@ SQL is currently available in 3 parts of the system:
 + Customer (Client Side)
 + CDR (Server)
 + Userspace Database (Server)
-+ 
+
 <img src="/developers/img/db4.png">

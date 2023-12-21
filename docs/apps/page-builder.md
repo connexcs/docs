@@ -38,3 +38,48 @@ Javascript CDN Library allows you to load external javascript libaries. Our sear
 | refresh | When the page is first loaded and every time .refresh() is called |
 
 ## Form Attribute
+
+## Platform Features
+
+Drag & Drop Admin Interface Builder, using the following components.
+
+1. Alert
+2. Button
+3. Card
+4. Cascader
+5. Chart
+6. Checkbox
+7. Collapse
+8. Color
+9. Data Grid
+10. Date
+11. Dialog
+12. Divider
+13. Editor
+14. Grid
+15. Group
+16. HTML
+17. I-Frame
+18. Inline
+19. Input
+20. Link
+21. Number
+22. Page Layout
+23. Pagination
+24. Portal
+25. Radio
+26. Rate
+27. Select
+28. Slider
+29. Steps
+30. Sub-Form
+31. Sub-Form+
+32. Switch
+33. Table
+34. Tabs
+35. Text Area
+36. Text
+37. Time
+38. Transfer
+39. Tree-Select
+40. Webphone
