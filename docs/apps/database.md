@@ -8,10 +8,7 @@ You can use **Database** for activities like checking list of numbers, caching e
 
 1. Login to your **Control Panel**.
 2. Click on **IDE** :material menu-right: +.
-3. Select **Database**.
-
-<img src= "/apps/img/app_database.png" width= "400>
-
+3. Select **Database**.<img src= "/apps/img/app_database.png" width= "400>
 4. Under the **Basic** Tab Write the **Name** of the database you wish to create.
 5. Select the **Customer** you want to create the database for under the **Basic** Tab.
 6. Select from the **Dataset Type** which are the preset data storage options. The two options are:
@@ -21,9 +18,10 @@ You can use **Database** for activities like checking list of numbers, caching e
 <img src="/developers/img/db2.png" width="350">
 
 7. Next to the **Basic** Tab is the **SQL Table Schema**. This allows you to add additional fields apart from the **Leadset**. You can also select it's **Type** like integer, string, double, float etc.
+
 <img src="/developers/img/db3.png" width="375">
 
-8. Click on `Save` to finally create the database.
+8.Click on `Save` to finally create the database.
 
 ## Bulk Upload
 
