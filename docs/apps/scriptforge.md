@@ -142,17 +142,17 @@ module.export = {
 
     5. Click `Save`.
 
-    <img src= "/apps/img/app_scriptforge2.png" width= "400>
+    <img src= "/apps/img/app_scriptforge2.png" width= "350>
 
-    <img src= "/apps/img/app_scriptforge3.png" width= "400>
+    <img src= "/apps/img/app_scriptforge3.png" width= "350>
 
-    <img src= "/apps/img/app_scriptforge5.png" width= "400>
+    <img src= "/apps/img/app_scriptforge5.png" width= "350>
 
     6. Your saved Script becomes available on the main IDE section.
     7. Click on ScriptForge.
     8. Select your script from the list.
 
-    <img src= "/apps/img/app_scriptforge6.png" width= "400>
+    <img src= "/apps/img/app_scriptforge6.png" width= "350>
     
     9. Enter the code of your script.
     10. Click the green arrow to `Saved` and `Run`.
