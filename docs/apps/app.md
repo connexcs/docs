@@ -18,12 +18,13 @@ You can create your own App and publish it to the **App Store (Repository)**. Al
 
 4.The created application will be visible on the App interface.
 
-<img src= "/apps/img/app2.png" width="300">
+<img src= "/apps/img/app2.png" width="215">
 
 5.You have the option to **Publish** it using the `Settings`⚙️ button and provide a **Version** to it as well.
 
-<img src= "/apps/img/app3.png" width="300">
-<img src= "/apps/img/app4.png" width="300">
+<img src= "/apps/img/app3.png" width="250">
+
+<img src= "/apps/img/app4.png" width="250">
 
 !!! Example
 
