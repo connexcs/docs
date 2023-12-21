@@ -221,6 +221,7 @@ nav:
             - Remote Testing: guides/remote-testing.md
             
     - Video Guide: video-guide.md
+    - Some Interesting Features: makecall.md
 
   - Customer Portal:
     - Dashboard: customer-portal/cp-dashboard.md
@@ -308,4 +309,4 @@ nav:
         - Tree Select: apps/components/tree-select.md
         - Wephone: apps/components/webphone.md
 
-    - Some Interesting Features: makecall.md
+    

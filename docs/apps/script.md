@@ -166,9 +166,8 @@ module.export = {
 
     !!! note
         Global Routing Priority means the script will run for every single call. You have 3 options to choose from:
-
-        * You can disable it if you don't want to use it.
-        * Run first or Run Last means this script will run first or after the Script Forge enabled in the Routing section.
+             * You can disable it if you don't want to use it.
+             * Run first or Run Last means this script will run first or after the Script Forge enabled in the Routing section.
 
 === "Schedule"
 
@@ -221,23 +220,23 @@ Below are some examples for removing headers for all or specific destinations.
 function main(data) {
 
 // Delete headers for ALL destinations
-	data.remove_headers = [
-		{key: 'X-Customer-ID'}
-	]; 
+    data.remove_headers = [
+        {key: 'X-Customer-ID'}
+    ]; 
 // Delete headers for first destination
-	data.egress_routing[0].remove_headers = [
-		{key: 'X-Customer-ID'}
-	];
+    data.egress_routing[0].remove_headers = [
+        {key: 'X-Customer-ID'}
+    ];
 // Add Headers for ALL Destinations
-	data.headers = [
-		{key: 'X-Customer-ID', value: '1234'}
-	];
+    data.headers = [
+        {key: 'X-Customer-ID', value: '1234'}
+    ];
 // Add Headers for first destination
-	data.egress_routing[0].headers = [
-		{key: 'X-Customer-ID', value: 1234}
-	];
+    data.egress_routing[0].headers = [
+        {key: 'X-Customer-ID', value: 1234}
+    ];
 // If you want to replace a header, you must remove it, then add it.
-	return data;
+    return data;
 }
 ```
 
