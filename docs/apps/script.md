@@ -180,7 +180,6 @@ If script shows an error, add this and then run the script again:
 ```
 {"routing":{}}
 ```
-
 ### Assign the Script to a Customer
 
 1. Select **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Routing**
@@ -242,3 +241,5 @@ function main(data) {
 
 [s2]: /developers/img/176.png "s2"
 [s8]: /developers/img/183.png "s8"
+
+
