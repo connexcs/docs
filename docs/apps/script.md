@@ -148,26 +148,26 @@ module.export = {
 
     <img src= "/apps/img/app_scriptforge5.png" width= "350">
 
-    6. Your saved Script becomes available on the main IDE section.
-    7. Click on ScriptForge.
-    8. Select your script from the list.
+    6.Your saved Script becomes available on the main IDE section.
+    7.Click on ScriptForge.
+    8.Select your script from the list.
 
-    <img src= "/apps/img/app_scriptforge6.png" width= "350">
+    <img src= "/apps/img/app_scriptforge6.png" width= "250">
     
-    9. Enter the code of your script.
-    10. Click the green arrow to `Saved` and `Run`.
-    11. You can view the results onscreen.
+    9.Enter the code of your script.
+    10.Click the green arrow to `Saved` and `Run`.
+    11.You can view the results onscreen.
 
-    <img src= "/apps/img/app_scriptforge7.png" width= "400">
+    <img src= "/apps/img/app_scriptforge7.png" width= "550">
 
-    12.  You can **Toggle Console**, **Preview (errors)**, or **Edit and Set Vars** using Settings.
+    12.You can **Toggle Console**, **Preview (errors)**, or **Edit and Set Vars** using Settings.
 
-    <img src= "/apps/img/app_scriptforge.png" width= "400">
+    <img src= "/apps/img/app_scriptforge.png" width= "275">
 
     !!! note
         Global Routing Priority means the script will run for every single call. You have 3 options to choose from:
-             * You can disable it if you don't want to use it.
-             * Run first or Run Last means this script will run first or after the Script Forge enabled in the Routing section.
+        * You can disable it if you don't want to use it
+        * Run first or Run Last means this script will run first or after the Script Forge enabled in the Routing section.
 
 === "Schedule"
 
@@ -180,6 +180,7 @@ If script shows an error, add this and then run the script again:
 ```
 {"routing":{}}
 ```
+
 ### Assign the Script to a Customer
 
 1. Select **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Routing**
@@ -241,5 +242,3 @@ function main(data) {
 
 [s2]: /developers/img/176.png "s2"
 [s8]: /developers/img/183.png "s8"
-
-
