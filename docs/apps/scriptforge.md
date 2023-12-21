@@ -126,41 +126,60 @@ module.export = {
 
 ### Build Script
 
-1. To add a script, click :material-plus:.
-2. Specify the script **Name**.
-3. Select the **Type**:
+=== "Basic"
+
+    1. To add a script, click :material-plus:, and select `Scriptforge`.
+    <img src= "/apps/img/app_scriptforge1.png">
+
+    2. Specify the script **Name**.
+
+    3. Select the **Type**:
    * `Script`- This is the fastest way to execute custom code and is "synchronous" execution. This is mainly used for manipulations or calculations. It can't use libraries or work with Promises. You can also select the Global Routing Priority from **Disable**, **Run First** or **Run Last**.
-   * `App`- Feature rich applications which can include a preset (whitelist) of available modules, the penalty of the extra features is a slightly higher latency. You can enter the **Class 5 Destination** for the Script.
-   * `Driver`- A driver works as an intermediary between ConnexCS and any external system. You can write drivers to bridge the ConnexCS DID provisioning system to a provider of your choice or build more complicated alerts.
-   * `Worker`
-4. **App**: The App field allow you to integrate the created applications with the ScriptForge.
+   * `App`- Feature rich applications which can include a preset (whitelist) of available modules, the penalty of the extra features is a slightly higher latency. The App field allow you to integrate the created applications with the ScriptForge. You can enter the **Class 5 Destination** for the Script.
+   * `Worker`.
 
-5. Click **`Save`**.
+    4. Click **`Save`**.
 
-    ![alt text][s2]
+    <img src= "/apps/img/app_scriptforge2.png">
 
-6. Your saved Script becomes available on the main IDE section.
-7. Click on ScriptForge.
-8. Select your script from the list.
-9. Enter the code of your script.
-10. Click the green arrow to `Saved` and `Run`.
-11. You can view the results onscreen.
-12. You can **Toggle Console**, **Preview (errors)**, or **Edit and Set Vars** using Settings.
+    <img src= "/apps/img/app_scriptforge3.png">
 
-<img src= "/apps/img/app_scriptforge.png">
+    <img src= "/apps/img/app_scriptforge5.png">
 
-!!! note
-    Global Routing Priority means the script will run for every single call. You have 3 options to choose from:
+    5. Your saved Script becomes available on the main IDE section.
+    6. Click on ScriptForge.
+    7. Select your script from the list.
 
-    * You can disable it if you don't want to use it.
-    * Run first or Run Last means this script will run first or after the Script Forge enabled in the Routing section.
+    <img src= "/apps/img/app_scriptforge6.png">
+
+    8. Enter the code of your script.
+    9. Click the green arrow to `Saved` and `Run`.
+    10. You can view the results onscreen.
+
+    <img src= "/apps/img/app_scriptforge7.png">
+
+    11. You can **Toggle Console**, **Preview (errors)**, or **Edit and Set Vars** using Settings.
+
+    <img src= "/apps/img/app_scriptforge.png">
+
+    !!! note
+        Global Routing Priority means the script will run for every single call. You have 3 options to choose from:
+
+        * You can disable it if you don't want to use it.
+        * Run first or Run Last means this script will run first or after the Script Forge enabled in the Routing section.
+
+=== "Schedule"
+
+    The **Schedule** option allows to you run your Script Forge based on pre-determined **dates in month**, **days of a week** and you can even select the time by selecting the values of **minutes** and **hours** from the drop-down menu.
+
+    <img src= "/developers/img/sf2.png" width= "400">
 
 If script shows an error, add this and then run the script again:
 
 ```
 {"routing":{}}
 ```
-### 
+
 ### Assign the Script to a Customer
 
 1. Select **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Routing**
@@ -222,6 +241,3 @@ function main(data) {
 
 [s2]: /developers/img/176.png "s2"
 [s8]: /developers/img/183.png "s8"
-    
-
-reference API docs
