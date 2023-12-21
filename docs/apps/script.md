@@ -170,8 +170,9 @@ module.export = {
 
     !!! note
         Global Routing Priority means the script will run for every single call. You have 3 options to choose from:
-        <br>* You can disable it if you don't want to use it</br>
-        <br>* Run first or Run Last means this script will run first or after the Script Forge enabled in the Routing section.</br>
+        
+        <br> * You can **disable** it if you don't want to use it</br>
+        <br> * **Run first** or **Run Last** means this script will run first or after the Script Forge enabled in the Routing section.</br>
 
 === "Schedule"
 

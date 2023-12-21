@@ -16,10 +16,14 @@ You can create your own App and publish it to the **App Store (Repository)**. Al
 
 <img src= "/apps/img/app1.png">
 
-4. The created application will be visible on the App interface, then you have the option to **Publish** it using the `Settings`⚙️ button and provide a **Version** to it as well.
+4.The created application will be visible on the App interface.
 
-<img src= "/developers/img/app.png" width= "1000">
-<img src= "/developers/img/app1.png" width= "1000">
+<img src= "/apps/img/app2.png">
+
+5.You have the option to **Publish** it using the `Settings`⚙️ button and provide a **Version** to it as well.
+
+<img src= "/apps/img/app3.png">
+<img src= "/apps/img/app4.png">
 
 !!! Example
 
@@ -27,7 +31,7 @@ You can create your own App and publish it to the **App Store (Repository)**. Al
 
     You use the ScriptForge, Pages and Button Builder for creating the Calculator.
 
-5. Click `Refresh` ↻ to refresh the Apps or Files.
+1. Click `Refresh` ↻ to refresh the Apps or Files.
 
 !!! warning
 

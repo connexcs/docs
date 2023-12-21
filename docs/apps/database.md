@@ -18,10 +18,10 @@ You can use **Database** for activities like checking list of numbers, caching e
 
 6.Select from the **Dataset Type** which are the preset data storage options. The two options are:
 
-      + **Key / Value** - Contains a basic Key / Value Storage.
-      + **Lead Set** - Contains the most common fields when using a datastore for customer / campaign data which you can use with dialers.
++ **Key / Value** - Contains a basic Key / Value Storage.
++ **Lead Set** - Contains the most common fields when using a datastore for customer / campaign data which you can use with dialers.
 
-<img src="/developers/img/db2.png" width="400">
+<img src="/developers/img/db2.png" width="300">
 
 7.Next to the **Basic** Tab is the **SQL Table Schema**. This allows you to add additional fields apart from the **Leadset**. You can also select it's **Type** like integer, string, double, float etc.
 
