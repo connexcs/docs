@@ -18,7 +18,7 @@ Add Audio/Video Bi-directional communication for use in:
 5. Embedded Applications
 6. Conference Applications
 
-<img src= "/apps/components/img/webphone.png">
+<img src= "/apps/components/img/webphone.png" width="300">
 
 ### Interactivity
 
@@ -56,7 +56,7 @@ Add Audio/Video Bi-directional communication for use in:
 |**hold()**|This method is used to put the current call on hold|
 |**mute**()|This method is used to mute the microphone|
 
-### Config
+## Config
 
 | **Name**| **Description**|**Icon**|
 |-----------------------|----------------------------------------------------------------------------------------------------------------------------------------|------------|

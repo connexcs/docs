@@ -59,7 +59,7 @@ It serves as a visual and functional indicator of progress, improving user exper
 |**Label Width**|Width of the label associated with an input field. It determines the horizontal space occupied by the label text|<img src= "/apps/components/img/input_labelwidth1.png">|
 |**Label Wrap**| If the label is longer than the allowed width the text will continue on another line|<img src= "/apps/components/img/input_labelwrap1.png">|
 |**Hide Label**| Hides the label on the form|<img src= "/apps/components/img/input_hidelabel.png">|
-|**Step Options**|**Static Data**: Enter your own step number and description.<br> **Data Source**: Dynamic data are options fetched as needed from sources like databases or APIs.|<img src= "/apps/components/img/step_static.png"> <br> <img src= "/apps/components/img/step_datasource.png">||
+|**Step Options**|**Static Data**: Enter your own step number and description.<br> **Data Source**: Dynamic data are options fetched as needed from sources like databases or APIs.|<img src= "/apps/components/img/step_static.png"> <br> <img src= "/apps/components/img/step_datasourece.png">||
 |**Display Direction**|Arrangement of Steps either **Horizontally** or **Vertically**|<img src= "/apps/components/img/step_displaydirection.png">|
 |**Status of current step**|Choose the status of the current step from **wait**, **process**, **finish**, **error** or **success**|<img src= "/apps/components/img/step_statuscurrent.png">|  
 |**Status of end step**|Choose the status of the end step from **wait**, **process**, **finish**, **error** or **success**|<img src= "/apps/components/img/step_statusend.png">|

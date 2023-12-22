@@ -46,8 +46,7 @@ The're a number of ways to add interactivity to **Date** component.
 Some of the most common methods include:
 
 1. **Event Handling**: Event listeners can be attached to the date component to capture user interactions, such as clicks, changes, or selections. These events can then be used to trigger actions, update data, or modify the appearance of the component.
-   
-   For example, when a user clicks on a calendar day, an event handler can update the selected date and display a tooltip with additional information about that date.
+For example, when a user clicks on a calendar day, an event handler can update the selected date and display a tooltip with additional information about that date.
 
 2. **Data Binding**: The date component can be bound to a data source, allowing it to update its content dynamically based on changes to the underlying data. This enables real-time feedback and data synchronization between the component and the form.
    For instance, a date component could be linked to a user's birthday data, automatically updating the date field when the user updates their birthday in their profile.

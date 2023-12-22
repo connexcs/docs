@@ -61,59 +61,58 @@
 We're talking about **Column Config** separately as it's a comprehensive component. Click on `+` to add a new column.
 
 1. **Basic**
-   * **Field**: Write the Field name.
-   * **Title**: Give the Title to your column.
-   * **Hide**: Toggle this option to either hide or show the column.
-   * **Sortable**: Enable to sort the columns
-   * **Checkbox Selection**: Allow users to choose multiple choices from a list.
-   * **Cell Data Type**: Choose data type from various options like Auto, Text, Number, Boolean, Date, Date String.
-   * **Auto Height**: Automatically adjusts the height of the column.
-   * **Wrap Text**: Automatically adjusts the arrangement of text to fit within a specified area.
-   * **Lock Visible**: It keeps key columns or rows always in view, even when scrolling, for focused data navigation and analysis.
-   * **Lock Position**: Set the Lock Position to either **Left**, **Right** or **None**.
-   * **Suppress Movable**: It locks the grid's layout, preventing manual reordering and ensuring consistent data presentation.
+      * **Field**: Write the Field name.
+      * **Title**: Give the Title to your column.
+      * **Hide**: Toggle this option to either hide or show the column.
+      * **Sortable**: Enable to sort the columns
+      * **Checkbox Selection**: Allow users to choose multiple choices from a list.
+      * **Cell Data Type**: Choose data type from various options like Auto, Text, Number, Boolean, Date, Date String.
+      * **Auto Height**: Automatically adjusts the height of the column.
+      * **Wrap Text**: Automatically adjusts the arrangement of text to fit within a specified area.
+      * **Lock Visible**: It keeps key columns or rows always in view, even when scrolling, for focused data navigation and analysis.
+      * **Lock Position**: Set the Lock Position to either **Left**, **Right** or **None**.
+      * **Suppress Movable**: It locks the grid's layout, preventing manual reordering and ensuring consistent data presentation.
 
-<img src= "/apps/components/img/datagrid_basic.png" width="300">
+<img src= "/apps/components/img/datagrid_basic.png" width="400">
 
-2. **Width**
+2.**Width**
    * **Width**: Enter the width of the column in pixels.
    * **Min Width**: Enter the minimum value width of the column in pixels.
    * **Max Width**: Enter the maximum value width of the column in pixels.
    * **Resizable**: Enable to resize the column width.
 
-<img src= "/apps/components/img/datagrid_width.png" width="300">
+<img src= "/apps/components/img/datagrid_width.png" width="400">
 
 3.**Value Format**
 Value format in a datagrid is a feature that controls how raw data values are displayed within individual cells.
 
 It allows you to customize the appearance of data to improve readability, highlight specific information, and ensure consistency across the grid.
 
-<img src= "/apps/components/img/datagrid_valueformat.png" width="300">
+<img src= "/apps/components/img/datagrid_valueformat.png" width="400">
 
 4.**Display format**
    * **Format Type**: You can select the format options for a column from Date, Currency, Duration, Percent from Decimal, Percent from Number, Decimal, Second, Bytes.
    * **Link**: which is used to link from one page to another.
 
-<img src= "/apps/components/img/datagrid_displayformat.png" width="300">
-
+<img src= "/apps/components/img/datagrid_displayformat.png" width="400">
 
 5.**Header**
-  * **Header Checkbox Selection**: a single checkbox, typically placed in the header row, allows you to select all rows (or filtered/current page rows) in the grid with a single click.
-  * * **Wrap Header Text**:Allows the text in header cells to automatically wrap onto multiple lines if it exceeds the available space.
+   * **Header Checkbox Selection**: a single checkbox, typically placed in the header row, allows you to select all rows (or filtered/current page rows) in the grid with a single click.
+   * **Wrap Header Text**:Allows the text in header cells to automatically wrap onto multiple lines if it exceeds the available space.
 
-<img src= "/apps/components/img/datagrid_header.png" width="300">
+<img src= "/apps/components/img/datagrid_header.png" width="400">
 
 6.**Pivot**
-  * **Pivot**: Allows you to dynamically rearrange and restructure the data by rotating the grid's axis, switching rows and columns to create different views and perspectives.
-  * **Enable Pivot**: Enable/Disable pivot.
+   * **Pivot**: Allows you to dynamically rearrange and restructure the data by rotating the grid's axis, switching rows and columns to create different views and perspectives.
+   * **Enable Pivot**: Enable/Disable pivot.
 
-<img src= "/apps/components/img/datagrid_header.png" width="300">
+<img src= "/apps/components/img/datagrid_header.png" width="400">
 
 7.**Charts**
-  * **Charts Data Type**: 
-     * Excluded: Data in columns marked as "excluded" aren't included in the visual representation of the chart.
-     * Category: Data in columns marked as "category" are used to group data points into distinct categories or segments.
-     * Series: Data in columns marked as "series" create separate lines or sets of data points within the chart, often for comparison purposes.
-     * Time: Data in columns marked as "time" represent temporal information, often used for time-series charts that track trends or changes over time.
+   * **Charts Data Type**: 
+       * Excluded: Data in columns marked as "excluded" aren't included in the visual representation of the chart.
+       * Category: Data in columns marked as "category" are used to group data points into distinct categories or segments.
+       * Series: Data in columns marked as "series" create separate lines or sets of data points within the chart, often for comparison purposes.
+       * Time: Data in columns marked as "time" represent temporal information, often used for time-series charts that track trends or changes over time.
 
-<img src= "/apps/components/img/datagrid_charts.png" width="300">
+<img src= "/apps/components/img/datagrid_charts.png" width="400">
