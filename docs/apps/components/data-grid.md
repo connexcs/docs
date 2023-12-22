@@ -2,35 +2,24 @@
 
 ## Description
 
-**Data Grid** is a table 
+**Data Grid** is a tabular data display component. It enables you to add different functionalities.
 
 <img src= "/apps/components/img/datagrid.png">
 
 ## Use Case
 
-
+1. Displaying and Editing Tabular Data.
+2. Collecting and Managing Lists.
+3. Building Dynamic Forms.
+4. Integrating with External Data.
 
 ### Interactivity
 
-**Interactivity** is the ability of a web page or application to respond to user input.
-
-The're a number of ways to add interactivity to **Input boxes**.
-
-Some of the most common methods include:
-
-1. **Change events**: Change events are fired when the value of an input box is changed.
-   You can use change events to perform a variety of actions, such as:
-    * Validating the data entered into the input box
-    * Displaying a message to the user
-    * Enabling or disabling other input boxes on the form
-    * Performing a search
-    * Submitting the form
-
-2. **Focus and blur events**: **Focus events** are fired when an input box receives focus. **Blur events** are fired when an input box loses focus.
-You can use focus and blur events to perform a variety of actions, such as:
-    *Highlighting the input box when it receives focus
-    Changing the cursor style when the input box receives focus
-    Clearing the value of the input box when it loses focus
+1. Allow users to directly edit data within cells, eliminating the need for separate edit forms or modals.
+2. Provide tools for users to sort data by different columns and apply filters to narrow down the displayed information.
+3. Pagination
+4. Expandable Rows
+5. Enforce data integrity by implementing validation rules to ensure data accuracy and consistency.
 
 ## API
 
@@ -38,9 +27,8 @@ You can use focus and blur events to perform a variety of actions, such as:
 
 | **Name**| **Description**|
 |----------------------|---------------------------------------------------------------------|
-| **onChange (element)**| The onChange event occurs when the value of an field is changed|
-| **onFocus (element)**| The onfocus event occurs when an field gets focus|
-| **onBlur (element)**| The onblur event occurs when an field loses focus|
+| **onCellClicked**| The onCellClicked event occurs when the cell in a data grid is clicked|
+| **onLinkClicked**| The onLinkClicked event occurs when the link is clicked|
 
 ### Methods
 
@@ -62,38 +50,70 @@ You can use focus and blur events to perform a variety of actions, such as:
 | **Name**|**Description**|**Icon**|
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
 |**ID**| This is a unique identifier which is used to access the field by the API and the key of the field when the form is saved|<img src= "/apps/components/img/input_id.png">|
-|**Name**| [**Optional**] The visual identifier label of the field|<img src= "/apps/components/img/input_name.png">|
 |**Width**| [**Optional**] To set the width of the field|<img src= "/apps/components/img/input_width.png">|
-|**Label Width**|Width of the label associated with an input field. It determines the horizontal space occupied by the label text|<img src= "/apps/components/img/input_labelwidth1.png">|
-|**Label Wrap**| If the label is longer than the allowed width the text will continue on another line|<img src= "/apps/components/img/input_labelwrap1.png">|
-|**Hide Label**| Hides the label on the form|<img src= "/apps/components/img/input_hidelabel.png">|
-|**Placeholder**| The short hint is displayed in the input field before the user enters a value|<img src= "/apps/components/img/input_placeholder.png">|
-|**Text Prompt**| A description to aid the user when completing the field|<img src= "/apps/components/img/input_textprompt.png">|
-|**Max Length**| Limit the amount of characters the field supports|<img src= "/apps/components/img/input_maxlength.png">|
-|**Default Value**| The default value which is filled in the field before the user changes it|<img src= "/apps/components/img/input_defaultvalue.png">|
-|**Custom Class**| A HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|
-|**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** to action to hide the field. <br> Enable **Disabled** action to make the field unsuable. <br>Enable **Show clear button** action make the clear button visible. <br> Enable **Show Password** action make the password visible. <br>Enable **Show word count** action make the word count visible|<img src= "/apps/components/img/input_attributeaction.png">|
+|**Status Bar**|Displays information about the number of rows and cloumns|<img src= "/apps/components/img/datagrid_statusbar.png">|
+|**Side Bar**|Displays the side bar with Columns and Filters|<img src= "/apps/components/img/datagrid_sidebar.png">|
+|**Enable Range Selection**|Enable to select multiple cells in the datagrid and it provides you with minimum value, maximum value, average, sum, count|<img src= "/apps/components/img/datagrid_rangeselection.png">|
+|**Suppress Context Menu**|When disabled, it enables the mouse right-click which has options like export into `.CSV` file or `Excel`, copy or copy with headers etc|<img src= "/apps/components/img/datagrid_suppress.png">|
+|**Context Menu**|You can select from various options to add to your context menu|<img src= "/apps/components/img/datagrid_contextmenu.png">|
+|**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** to action to hide the field|<img src= "/apps/components/img/datagrid_attributeaction.png">|
 
-### Validation
+We're talking about **Column Config** separately as it's a comprehensive component. Click on `+` to add a new column.
 
-Form validation is the process of checking the data entered into a form to ensure that it's valid and complete.
+1. **Basic**
+   * **Field**: Write the Field name.
+   * **Title**: Give the Title to your column.
+   * **Hide**: Toggle this option to either hide or show the column.
+   * **Sortable**: Enable to sort the columns
+   * **Checkbox Selection**: Allow users to choose multiple choices from a list.
+   * **Cell Data Type**: Choose data type from various options like Auto, Text, Number, Boolean, Date, Date String.
+   * **Auto Height**: Automatically adjusts the height of the column.
+   * **Wrap Text**: Automatically adjusts the arrangement of text to fit within a specified area.
+   * **Lock Visible**: It keeps key columns or rows always in view, even when scrolling, for focused data navigation and analysis.
+   * **Lock Position**: Set the Lock Position to either **Left**, **Right** or **None**.
+   * **Suppress Movable**: It locks the grid's layout, preventing manual reordering and ensuring consistent data presentation.
 
-This helps to prevent users from submitting forms with invalid data, which can cause problems for the application that's processing the form.
+<img src= "/apps/components/img/datagrid_basic.png">
 
-Form validation can be performed using a variety of methods, including:
+2. **Width**
+   * **Width**: Enter the width of the column in pixels.
+   * **Min Width**: Enter the minimum value width of the column in pixels.
+   * **Max Width**: Enter the maximum value width of the column in pixels.
+   * **Resizable**: Enable to resize the column width.
 
-| **Name**| **Description**|
-|----------------------|---------------------------------------------------------------------|
-| **Required**| Single line of text|
-|**Select**|Several common type checks are provided in single-line text boxes such as string, URL, mailbox, etc.|
-| **Regular expressions**|Used to match patterns in text. They can be used to validate the format of data, such as email addresses, phone numbers, and dates|
-|**Custom Validation Rules**|(rule, value, callback) => {|
-||**rule**: Verification rule, you can view the verification configuration information through this parameter; rule.fieldcan get the field identifier of the current verification|
-||**value**: Value of the current field|
-||**callback**: Callback function (must be called) upon completion of validation; **callback('Error message')/ callback(new Error('Error message'))**. These are two ways to return an error message|
+<img src= "/apps/components/img/datagrid_width.png">
 
-<img src= "/apps/components/img/input_validation.png">
+3.**Value Format**
+Value format in a datagrid is a feature that controls how raw data values are displayed within individual cells.
 
-!!! Info
-    1. **Regular expressions** should be wrapped with //, as in:/^1[3456789]\d{9}$/"
-    2. The **callback()function** is also called to verify success in the custom checkup method.
+It allows you to customize the appearance of data to improve readability, highlight specific information, and ensure consistency across the grid.
+
+<img src= "/apps/components/img/datagrid_valueformat.png">
+
+4.**Display format**
+   * **Format Type**: You can select the format options for a column from Date, Currency, Duration, Percent from Decimal, Percent from Number, Decimal, Second, Bytes.
+   * **Link**: which is used to link from one page to another.
+
+<img src= "/apps/components/img/datagrid_displayformat.png">
+
+
+5.**Header**
+  * **Header Checkbox Selection**: a single checkbox, typically placed in the header row, allows you to select all rows (or filtered/current page rows) in the grid with a single click.
+  * * **Wrap Header Text**:Allows the text in header cells to automatically wrap onto multiple lines if it exceeds the available space.
+
+<img src= "/apps/components/img/datagrid_header.png">
+
+6.**Pivot**
+  * **Pivot**: Allows you to dynamically rearrange and restructure the data by rotating the grid's axis, switching rows and columns to create different views and perspectives.
+  * **Enable Pivot**: Enable/Disable pivot.
+
+<img src= "/apps/components/img/datagrid_header.png">
+
+7.**Charts**
+  * **Charts Data Type**: 
+     * Excluded: Data in columns marked as "excluded" aren't included in the visual representation of the chart.
+     * Category: Data in columns marked as "category" are used to group data points into distinct categories or segments.
+     * Series: Data in columns marked as "series" create separate lines or sets of data points within the chart, often for comparison purposes.
+     * Time: Data in columns marked as "time" represent temporal information, often used for time-series charts that track trends or changes over time.
+
+<img src= "/apps/components/img/datagrid_charts.png">
