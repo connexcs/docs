@@ -10,36 +10,19 @@ It allows you to create a fully customised solution.
 
 ## Use Case
 
-Add Audio/Video Bi-directional communication for use in
-- OTT Mobile Application
-- Call Center Agent Dashboard
-- Click-2-Call
-- Live Website Help
-- Embedded Applications
-- Conference Applications
+Add Audio/Video Bi-directional communication for use in:
+1. OTT Mobile Application
+2. Call Center Agent Dashboard
+3. Click-2-Call
+4. Live Website Help
+5. Embedded Applications
+6. Conference Applications
+
+<img src= "/apps/components/img/webphone.png">
+
+### Interactivity
 
 ## API
-
-### Config
-
-| **Name**| **Description**|
-|-----------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-|**ID**| This is a unique identifier which is used to access the field by the API and the key of the field when the form is saved|
-|**Show (Dialpad)**| Show a numeric dial-pad 0-9 # and *|
-|**Show (Dialled Number)**| A text input box containing the number to be dialled|
-|**Show (Answer)**| Show an Answer button|
-|**Show (Hang Up)**| Show a Hang Up button|
-|**Show (Hold)**| Show a Hold button (Places the call on a Network Level Hold)|
-|**Show (Mute)**| Show a Mute Button (Mute microphone channel)|
-|**Show (Dial)**| Show a Dial Button (Which is to be clicked on the start the call)|
-|**Show (Status)**| Show the Registration and Call Status|
-|**Auto Register**| Automatically register when credentials are presented|
-|**Host**| The WebRTC socket to connect to (format: wss://sip.example.com), supports failover separated by a comma ','|
-|**Username**| Username for SIP Authentication|
-|**Password**| Password for SIP Authentication|
-|**Display Name**| The From Name on outgoing calls|
-|**CLI**| The From Number on outbound calls|
-| **Realm**| The Authorization Domain (usually the same as the host without the protocol, e.g sip.example.com)|
 
 ### Events
 
@@ -73,4 +56,25 @@ Add Audio/Video Bi-directional communication for use in
 |**hold()**|This method is used to put the current call on hold|
 |**mute**()|This method is used to mute the microphone|
 
-### Interactivity
+### Config
+
+| **Name**| **Description**|**Icon**|
+|-----------------------|----------------------------------------------------------------------------------------------------------------------------------------|------------|
+|**ID**| This is a unique identifier which is used to access the field by the API and the key of the field when the form is saved|<img src= "/apps/components/img/input_id.png">|
+|**Width**| [**Optional**] To set the width of the field|<img src= "/apps/components/img/input_width.png">|
+|**Show (Dialpad)**<br>| Show a numeric dial-pad 0-9 # and *|<img src= "/apps/components/img/webphone_show.png">|
+|**Show (Dialled Number)**| A text input box containing the number to be dialled|
+|**Show (Answer)**| Show an Answer button|
+|**Show (Hang Up)**| Show a Hang Up button|
+|**Show (Hold)**| Show a Hold button (Places the call on a Network Level Hold)|
+|**Show (Mute)**| Show a Mute Button (Mute microphone channel)|
+|**Show (Dial)**| Show a Dial Button (Which is to be clicked on the start the call)|
+|**Show (Status)**| Show the Registration and Call Status|
+|**Auto Register**| Automatically register when credentials are presented|<img src= "/apps/components/img/webphone_autoregister.png">|
+|**Default SIP Server**| The WebRTC socket to connect to (format: wss://sip.example.com), supports failover separated by a comma ','|<img src= "/apps/components/img/webphone_sipserver.png">|
+|**Default Realm**| The Authorization Domain (usually the same as the host without the protocol, e.g sip.example.com)|<img src= "/apps/components/img/webphone_realm.png">|
+|**Default Display Name**| The From Name on outgoing calls|<img src= "/apps/components/img/webphone_displayname.png">|
+|**Default CLI**| The From Number on outbound calls|<img src= "/apps/components/img/webphone_cli.png">|
+|**Default Username**| Username for SIP Authentication|<img src= "/apps/components/img/webphone_username.png">|
+|**Default Password**| Password for SIP Authentication|<img src= "/apps/components/img/webphone_password.png">|
+|**Attribute Action**|Enable **Hidden** action to hide the field|<img src= "/apps/components/img/alert_arrtibuteaction.png">|
