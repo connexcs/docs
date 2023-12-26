@@ -150,3 +150,19 @@
 .md-search{
   margin-right: 0.7rem;
 }
+
+@media only screen and (max-width: 1219px) {
+  .md-main>.md-main__inner {
+    grid-template-columns: none;
+  }
+
+  #__nav_1_label .md-ellipsis,
+  #__nav_2_label .md-ellipsis,
+  #__nav_3_label .md-ellipsis {
+    height: 22px;
+  }
+
+  .md-nav--primary .md-nav__link .md-nav__icon{
+    height: 1rem;
+  }
+}
