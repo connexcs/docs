@@ -20,6 +20,7 @@ Create and edit **DID parameters** within the individual customer cards. You can
 
 To configure individual DIDs, click :material-plus::
 
+
 ### Basic
 
 + **Customer**: Assign the number to the customer.
@@ -37,6 +38,7 @@ To configure individual DIDs, click :material-plus::
 
 Select the destination to deliver incoming calls for the DID:
 
+
 + **URI**: Set the Destination DID (number or extension) and IP to forward calls to a specific SIP URI (Session Initiation Protocol, Uniform Resource Identifier).
 + **External**: To send the call back out to the internet, use a prefix (defined in Customer :material-menu-right: Routing ) to select the outbound route, then the number to send the call to.
 + **Internal**: Send internally to an extension, a Class5 feature, or even to another customer.
@@ -50,7 +52,7 @@ Set the maximum number of INBOUND concurrent calls in **Channels**, and Calls Pe
 
 For more details on these fields, see [**Media in Customer Routing**](https://docs.connexcs.com/customer/routing/#media).
 
-+ **RTP Proxy Mode**:  If you choose the relaxed setting and a connection through our service fails, it will automatically failover to backup.
++ **RTP Proxy Mode**: If relaxed is chosen and a connection through our service fails, we will attempt to send the call out to your carrier direct. This will expose your customer IP address to your carrier and vice versa.
 
     :material-menu-right: `Strict`- This will enforce the proxy engagement.
 
@@ -62,6 +64,15 @@ For more details on these fields, see [**Media in Customer Routing**](https://do
 
     :material-menu-right: `Zone (recommended)`- Select any of the regional servers.
 
+  + Disabled- never record calls
+  + 1% Sampling
+  + 5% Sampling
+  + 25% Sampling
+  + 50% Sampling
+  + Enabled (Always On)
+  
++ **Timeout**: Set various options to help with call timeout for missed BYEs.
+
 + **Call Recording**: Select the % of calls to record for this customer:
     + Disabled- never record calls
     + 1% Sampling
@@ -69,8 +80,6 @@ For more details on these fields, see [**Media in Customer Routing**](https://do
     + 25% Sampling
     + 50% Sampling
     + Enabled (Always On)
-
-+ **Timeout**: Set various options to assist with call timeout for missed BYEs.
 
 + **Max Duration**: Set the maximum amount of time (in seconds) to allow the call to exist before it's terminated, typically in case of a missed BYE.
 
@@ -85,9 +94,11 @@ For each Package there is an associated **Minimum Days** the package is valid fo
 ### Advanced
 
 + **Tags**: Add these for informational purposes.
-+ **P-Asserted-ID**: Either `Remove` the P-Asserted-ID so it doesn't reach the customer or set it to `Default` to preserve it.
+
++ **P-Asserted-ID**: Either `Remove` the P-Asserted-ID so it doesn't reach the customer, or leave it `Default` to preserve it.
 
 ### Script Forge
+
 
 Run a custom script on calls to the DID to perform actions such as routing based on the time of day or if specific users or numbers are active.
 
@@ -115,10 +126,9 @@ You can perform this for an individual Customer (**Management :material-menu-rig
 2. In the first row, add the names of the input fields as column headers like Customer column or DID column.
 3. The next step is to map the created columns into the system.
 4. To map the columns, follow the listed steps:
-
-    4.1 Mapping gets initiated by right-clicking the second row and selecting the "Set Start Row" option from the menu. You will see the first row highlighted in Blue.
-
-    4.2 After that, click on each column, choose the 'Map column' option, and select the options from the drop-down list to map that column..
+    4.1 Mapping is initiated by right-clicking the second row and selecting the "Set Start Row" option from the menu. You will see the first row highlighted in Blue.
+    4.2 After that, click on each column separately, choose the 'Map column' option, and select the options from the drop-down list to map that column.
+    4.3 From the second row on, add the values of the input fields, one row per DID.
 
 !!! tip "Tips for creating the CSV file"
     Steps taken to ensure that you can perform the next steps effortlessly:

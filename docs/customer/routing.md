@@ -25,7 +25,7 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 
   + **Internal**: Send a call to the ConnexCS Class5 (Voice Mail, Interactive Voice Response (IVR), etc.). If selected, the "Auto" option becomes available, which will generate dial strings from all possible internal extensions.
   + **Extension**: (uses SIP users in Customer :material-menu-right: Auth configured SIP Users) Send a call to a Session Initiation Protocol (SIP) Authenticated user on the account.
-  + **Customer IP**: (uses IPs in Customer :material-menu-right: Authconfigured IPs) Send a call from an agent back to the customer's Private Branch eXchange (PBX), using either the Tech Prefix (e.g.: #9) or a Dial String (e.g.: `^[0-9](4)$`).
+  + **Customer IP**: (uses IPs in Customer :material-menu-right: Auth configured IPs) Send a call from an agent back to the customer's Private Branch eXchange (PBX), using either the Tech Prefix (e.g.: #9) or a Dial String (e.g.: `^[0-9](4)$`).
   + **To Carriers**: Choose a carrier to send the call to a location outside of the ConnexCS system.
 
 + **Tech Prefix**: This lets you distinguish a route from an inbound party.
@@ -57,7 +57,7 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 + **Capped Rate** and **Provider Capped Rate**: Set the maximum cost of a call. Calls that exceed the set rate won't get connected.
   **For example**, for customers with flat rate accounts, which allows to dial all UK numbers but premium numbers, you would set the Provider Capped Rate at 0.01, so any call that the provider might charge over that amount wouldn't get completed.
 
-+ **Profit Assurance**: When `Enabled`, only calls that are profitable pass-through; any call that costs more than the retail rate are not allowed to complete. This is particularly useful for A-Z routes or NPA-NXX [rate cards](https://docs.connexcs.com/rate-card-building/).
++ **Profit Assurance**: When `Enabled`, only calls that are profitable pass-through; any call that costs more than the retail rate aren't allowed to complete. This is particularly useful for A-Z routes or NPA-NXX [rate cards](https://docs.connexcs.com/rate-card-building/).
   Keep in mind that enabling it adds an extra Post-dial delay (PDD) to the call.
 
 + **Block Connect Cost**: Block any call that has a connection fee.
@@ -94,6 +94,11 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 
 + **ASR Plus** assists capacity management by helping you define how to handle connections for known failed numbers. For information on the ASR Plus options, see [**ASR Plus Details**](https://docs.connexcs.com/customer/routing/#asr-answer-seizure-ratio-plus-details) below.
 
++ **Balance Disconnect** this feature checks the balance every 60 seconds. It will disconnect the call when the **balance plus the debit limit** is below $0.
+
+!!! note
+    Balance Disconnect only takes into account the **completed calls**; it excludes any **active calls**.
+
 ### ScriptForge
 
 + **ScriptForge**: Set a custom JavaScript to run from within the ConnexCS platform in-line with the call. Some example operations could be checking a Do Not Call list or forcing a CLI.
@@ -109,9 +114,12 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 
 + **Lock** (Allow): One or more rate cards from the list of available providers.
 + **Exclude** (Deny): Exclude access to one or more rate cards in the list of available providers.
-+ **DNC (Do Not Call) List**: The customer won't be able to able to dial the numbers in the specified DNC list.
-  You can add the list of numbers in the [**Database**](https://docs.connexcs.com/developers/database/).
++ **DNC (Do Not Call) List**: The customer won't be able to able to dial the numbers in the specified DNC list. You can add the list of numbers in the [**Database**](https://docs.connexcs.com/developers/database/).
+
+    Apart from your own DNC list you can also choose [**United States Federal DNC**](https://www.donotcall.gov/). Choosing not to accept telemarketing calls is possible because of the National Do Not Call Registry.
+
 + **Block Destination Type**: You can select and block the calls to various destinations (carriers) like Mobile, Fixed, Paging, etc.
+
 + **Spam Scout Scoring**: It blocks Spam calls based on the CLIs.
   You can either Block All, Allow All, Block Most Spam, or Block Least Spam.
 
@@ -180,8 +188,31 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 
 *While it's doubtful that any information will get logged in the customer / providers switch when the audio gets engaged, it's possible for an engineer to learn this information from a SIP trace, PCAP, or by looking at transit locations. DTMF Detection ONLY works when RTP Proxy mode gets enabled.
 
-+ **Call Recording**: This allows you to record and store calls, which are then found in **Customer :material-menu-right: Auth :material-menu-right: [Browsing Record](https://docs.connexcs.com/setup/information/recording/)**.
-  An extra charge per recorded call of $0.003 gets added to existing fees or charges, so choose carefully how many calls to record:
+!!! info "Private RTP Server"
+    We provide deployment of the Private RTP Server (Media) to our customers, which is liable to some cost.
+    You may be able to add Private RTP Servers to the following fields:
+
+    + [Management :material-menu-right: Customer :material-menu-right: Routing :material-menu-right: Customer [Name] :material-menu-right: Media](https://docs.connexcs.com/customer/routing/#media)
+  
+    + [Management :material-menu-right: Tags :material-menu-right: Routing :material-menu-right: Customer [Name] :material-menu-right: Media](https://docs.connexcs.com/customer/tags/)
+    
+    + [Global :material-menu-right: Routing :material-menu-right: Routing](https://docs.connexcs.com/global-routing/)
+    
+    + [Management :material-menu-right: Customer :material-menu-right: Routing :material-menu-right: Customer [Name] :material-menu-right: DID (Edit DID `+`) :material-menu-right: Media](https://docs.connexcs.com/customer/did/#media)
+    
+    + [Global :material-menu-right: DID (Edit DID `+`) :material-menu-right: Media](https://docs.connexcs.com/global/#direct-inward-dial)
+    
+    + [Management :material-menu-right: Rate Card :material-menu-right: Provider Rate Card :material-menu-right: Add Provider Rate Card `+` :material-menu-right: Advanced :material-menu-right: Default RTP](https://docs.connexcs.com/provider-ratecard/#advanced)
+    
+    + [Management :material-menu-right: Rate Card :material-menu-right: Customer Rate Card :material-menu-right: Add Customer Rate Card `+` :material-menu-right: Advanced :material-menu-right: Default RTP](https://docs.connexcs.com/customer-ratecard/#advanced)
+
++ **Call Recording**: This allows you to record and store calls, which are then found in:
+
+* **Logging**
+* **Management:material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: CDR**
+* **Management :material-menu-right: File :material-menu-right: Recording**
+  
+An extra charge per recorded call of $0.003 gets added to existing fees or charges, so choose carefully how many calls to record:
 
     :material-menu-right: `Disabled`- no calls get recorded
 
