@@ -6,6 +6,8 @@ You can separate your code (logic) from your config.
 
 The variables you create here will be accessible to the ScriptForge, Templates, Pages and the Button Builder.
 
+This is available from within page builder via `this.env` and it can be saved by using `this.saveEnvVars(obj)`.
+
 ### Steps for configuring the Variables
 
 1. Login to your account.

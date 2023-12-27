@@ -22,7 +22,7 @@ It can be used to improve the readability and usability of forms by making it ea
 | **Name**| **Description**|
 |----------------------|---------------------------------------------------------------------|
 |**this.hide(fields)**|Hides the field|
-|**this.show(fields)**|Dispalys the field|
+|**this.show(fields)**|Displays the field|
 
 ## Config
 

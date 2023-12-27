@@ -42,7 +42,7 @@ It's like a set of switches where only one can be "on" at any given moment.
 | **this.disable(fields)**| Disable input field from user interaction|
 //| **this.enable(fields)**| Disable input field from user interaction|
 | **this.getComponent(name) → {Object}**|Retrieve a component from an object or element|
-//|**this.getValue(fieldName)**|Get A Value From An Object|
+//|**this.getValue(fieldName)**|Get A Value From a component|
 //| **this.getValues() → {Object}**|Get the values of all fields when values change|
 |**this.hide(fields)**|Hides the field|
 |**this.show(fields)**|Displays the field|

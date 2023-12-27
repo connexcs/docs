@@ -25,8 +25,6 @@ The inline layout approach allows for a more compact and organized form layout, 
 |----------------------|---------------------------------------------------------------------|
 |**this.addClassName(fields, disabled)**|Add style class to form item|
 |**this.removeClassName(fields, disabled)**|Remove form item style|
-//| **this.disable(fields)**| Disable input field from user interaction|
-//| **this.enable(fields)**| Disable input field from user interaction|
 |**this.hide(fields)**|Hides the field|
 |**this.show(fields)**|Displays the field|
 
