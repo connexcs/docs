@@ -48,5 +48,5 @@ SQL is currently available in 3 parts of the system:
 + Customer (Client Side)
 + CDR (Server)
 + Userspace Database (Server)
-+ 
+
 <img src="/developers/img/db4.png">

@@ -2,6 +2,9 @@
 
 **Management :material-menu-right: Tags**
 
+
+A **Tag** refers to a label or keyword used to categorize or identify something.
+
 With the help of tags, you may generate global Alerts, Routing, and CLI information. Following the creation of the Tags, you can tag your clients in the Alert, Routing, or CLI Strategy.
 
 By using tags, you may create an Alert, Routing or CLI Strategy for each specific customer with less time and effort.
