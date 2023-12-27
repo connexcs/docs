@@ -42,7 +42,7 @@
 | **this.getValues() → {Object}**|Get the values of all fields when values change|
 |**this.hide(fields)**|Hides the field|
 |**this.show(fields)**|Displays the field|
-//|**this.setData(Value)**|Set the data in the field|
+|**this.setData(Value)**|Set the data in the field|
 
 ## Config
 
