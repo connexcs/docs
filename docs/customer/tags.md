@@ -2,6 +2,8 @@
 
 **Management :material-menu-right: Customer :material-menu-right: Tags**
 
+A **Tag** refers to a label or keyword used to categorize or identify something.
+
 Tags allow you to create Alerts and Routing information at a global level. Once you have created the Tags, you can then tag the created Alert or Routing Strategy to your customers.
 
 You can go to **Management :material-menu-right: Customer :material-menu-right: Config :material-menu-right: Tags.**

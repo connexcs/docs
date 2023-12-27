@@ -13,7 +13,7 @@ You may apply the tags to as many customers you wish.**Management :material-menu
 
 ![tags](/customer/img/tags.png)
 
-Tags help reduce the time and effort required in creating an Alert or Routing Strategy for each individual customer.
+Tags help reduce the time and effort required in creating an Alert or Routing Strategy for each individual customer. Alerts will be sent to all the emails that are added to the contact of that customer.
 
 You can create a general alert or routing strategy and apply it to as many customers as you want.
 
@@ -42,7 +42,7 @@ The purpose is two-fold: to allow the threshold function to have a range type in
 <img src= "/misc/img/t1.png">
 
 !!! Info
-    Whenever you select the **Area** as **Change** from menu, there are 2 options in **Table Change**, **SIP User** and **Switch** (you can either SIP User or Swictch or you can select both.). An alert will be issued and sent to the customer's email address that there has been a change recorded in the IP list if you make any changes to the IP Authentication field after saving the settings, such as changing the IP Address etc.
+    Whenever you select the **Area** as **Change** from menu, there are 2 options in **Table Change**, **SIP User** and **Switch** (you can either SIP User or Switch or you can select both.). An alert will be issued and sent to the customer's email address that there has been a change recorded in the IP list if you make any changes to the IP Authentication field after saving the settings, such as changing the IP Address etc.
 
 ## Routing
 
