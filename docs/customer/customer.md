@@ -15,7 +15,9 @@ On the **Customers** page, you can perform several management operations.
 
 By clicking on `+` button we can add customer (see [**Create Customers**](https://docs.connexcs.com/customer/customer/#create-customers) below for details.)
 
-**Refresh**: Refreshing the page, helpful when making edits or looking at real-time changes. This page is built as a web app, so some information will update automatically.  
+**Refresh**: Refreshing the page, helpful when making edits or looking at real-time changes. This page is built as a web app, so some information will update automatically.
+
+**SQL**: The **SQL Query** option allows you to run a query.
 
 **Bulk Upload**: Upload several Customers at the same time, by importing a spreadsheet file (.csv file) into ConnexCS.
 
@@ -98,7 +100,7 @@ By clicking on `+` button we can add customer (see [**Create Customers**](https:
     + **Ext.Accounting ID**: This is used to fill in work an external accounting field to correlate between Connexcs and the external accountancy system.
     + **RTP Firewall**: It will bypass the media Firewall.<br>To let the customer strictly use the existing RTP firewall under **Locked** and its flexibility to use RTP Firewall under **Unlocked**.
     + **Call Recording Retention Days**: How long the customer wants to keep the recorded calls.
-    + **Domain**: You can select the [domain](https://docs.connexcs.com/setup/integrations/portal/#configuration-options) you wish wish to access from the drop-down menu.
+    + **Domain**: You can select the [domain](https://docs.connexcs.com/setup/integrations/portal/#configuration-options) you wish wish to access from the drop-down menu. A customer can sign into the various domains available in the system.Each domain can have different price points, support levels, features, etc.
     + **Daily Spend Limit**: The maximum limit for a customer for making calls in their chosen currency. Once the limit is reached it won't allow any new calls to connect.
 
     !!! note

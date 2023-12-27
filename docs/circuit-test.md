@@ -72,9 +72,10 @@ To schedule *recurring Circuit Test*, go to **Management :material-menu-right: C
 === "Schedule"
 
     + Enter a **Name** for the circuit test.
+    + Check the **Set Schedule** box.
     + **Minutes** indicates the minute of the hour the test will run. 
     + **Hours** indicates the hour of the day the test will run (this is denoted in a 24 hour clock, ex: 2:00pm is 14). 
-    + Select the *Day of the Week* to run the test.
+    + Select the **Day of the Week** and/ or **Day of a Month** to run the test.
 
 When the scheduled test run, the results are visible on the "Log" tab.
 

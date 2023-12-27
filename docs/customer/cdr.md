@@ -4,8 +4,6 @@
 
 The **CDR (Call Detail Record)** is an extensive set of information that's collected and stored for each call. This is primarily used for billing purposes as it contains details such as call duration and destination number.
 
-!!! info "Archived Records"
-    CDR records are "hot" (instantly queries) for the last 3 months guaranteed. After that, they're moved to the warm storage server where they're highly compressed and available for bulk download.
 
 !!! note "Global CDR"
     View CDRs for all Customers and Carriers in **Global :material-menu-right: CDR**.
@@ -18,7 +16,7 @@ The Customer **CDR** tab lists Call Detail Records associated with the selected 
 
 * **Columns**: You can enable more CDR fields on the Columns tab on the right.
 * **Column filter/sort**: Click the header of each column to filter and sort the displayed entries. Since each call generates a CDR, this function is specifically useful for customers with high call volumes.
-* **Download**: Press **`Download`** to save the record to your hard drive in CSV format. You can also select the columns to include in the download.
+* **SQL**: The **SQL Query** option allows you to run a query.
   
 ## Recalculate Call Detail Record
 
