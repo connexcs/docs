@@ -8,10 +8,26 @@ theme:
   features:
     - navigation.instant
     - navigation.tabs
+  palette:
+    - scheme: default
+      toggle:
+            icon: material/toggle-switch-off-outline
+            name: Switch to dark mode
+      primary: 4051b5
+      accent: 526cfe
+    - scheme: slate
+      toggle:
+            icon: material/toggle-switch
+            name: Switch to light mode
+      primary: 4051b5
+      accent: 526cfe
+        
+            
 extra_javascript:
 - extra.js
 # - https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js
-#extra_css:
+extra_css:
+  - stylesheets/extra.css
 #  - https://unpkg.com/mermaid@7.1.2/dist/mermaid.css
 plugins:
     - search
@@ -24,7 +40,7 @@ markdown_extensions:
   - toc:
       permalink: true
   - pymdownx.tabbed:
-      alternate_style: true 
+      alternate_style: true
   - pymdownx.details
   - pymdownx.tasklist:
       custom_checkbox: true
@@ -32,11 +48,12 @@ markdown_extensions:
       custom_fences:
         - name: mermaid
           class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_div_format
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - def_list
+  - footnotes
 
 nav:
   - Cloudswitch:
@@ -90,14 +107,15 @@ nav:
         - Global: global.md
         - Transcription: transcription.md
     
-    - Class 5 (UCS):
+    - Class 5:
         - Apps: class5/apps.md
         - Conference: class5/creating-conference.md
         - Call Center: class5/call-center.md
         - IVR: class5/creating-ivr.md
         - Groups: class5/creating-group.md
         - Voicemail: class5/voicemail.md
-        - Phonebook: class5/phonebook.md        
+        - Phonebook: class5/phonebook.md
+        - ConneXML: class5/connexml.md        
        
     - Developer:
         - Analytics: developers/analytics.md
@@ -105,6 +123,7 @@ nav:
         - Database: developers/database.md 
         - Form Builder: developers/form-builder.md
         - ScriptForge: developers/scriptforge.md
+        - Templates: setup/config/templates.md
         - Pages:
             - Introduction: developers/pages/introduction.md
             - Basic Field: developers/pages/basic-field.md
@@ -125,7 +144,6 @@ nav:
         - Config:
             - Contracts: setup/config/contracts.md
             - Packages: setup/config/packages.md
-            - Templates: setup/config/templates.md
             - SIP Profile: setup/config/sip-profile.md
         - Account Manager:
             - Commission: setup/account-manager/commission.md
@@ -171,6 +189,7 @@ nav:
             - Changing Password: changing-password.md
             - Logging Out: logging-out.md
             - Number Manipulation: number-manipulation.md
+        
         - SIP Traces, Pings and Messages: guides/sip-traces.md
         - Documents and Files: 
             - Document Guide: guides/doc-guide.md
@@ -190,16 +209,17 @@ nav:
         - OSI Model: guides/osi-model.md
         - Major Telecom Regulatory Authorities: guides/major-telecom-regulatory-authorities.md
         - General Data Protection Regulation: guides/gdpr.md
-        - Call Detail Record Retention- guides/cdr-retention.md
+        - Call Detail Record Retention: guides/cdr-retention.md
+        - Spam Protection Features: guides/spam-callsblock.md
     
     - Troubleshooting: 
-        - Call Connection/Signaling Issues: guides/tshoot-signal.md
-        - Call Quality/Media Issues: guides/tshoot-media.md
-        - Circuit Test: circuit-test.md
-        - Call Disconnection Reasons and Premature Call Disconnection: guides/call-disconnection-reasons.md
-        - Debugging: guides/debugging.md
-        - Logging: logging.md
-        - Remote Testing: guides/remote-testing.md
+            - Call Connection/Signaling Issues: guides/tshoot-signal.md
+            - Call Quality/Media Issues: guides/tshoot-media.md
+            - Circuit Test: circuit-test.md
+            - Call Disconnection Reasons and Premature Call Disconnection: guides/call-disconnection-reasons.md
+            - Debugging: guides/debugging.md
+            - Logging: logging.md
+            - Remote Testing: guides/remote-testing.md
             
     - Video Guide: video-guide.md
 
@@ -234,3 +254,4 @@ nav:
 
   - WebPhone: 
     - WebPhone: webphone.md
+    - Some Interesting Features: makecall.md

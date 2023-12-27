@@ -160,10 +160,17 @@ Your Web Phone should now be available.
         * `Auto Answer`: Automatically answer an incoming call.
     * **Restrict Customer Login:** Select existing Companies from the dropdown to allow them access to WebPhone. If no companies are on the list, then all will have access.
     *  **CSS:** You can add CSS (Cascading Style Sheets) style to your Webphone.
-    *  ** Codec Delete**: You can delete the Codec which you don't require in your system. You can check the Codec list from Management > Carrier > Select a Carrier > Auth > blue `+` button > under Codecs tab.
-    *  **Codec Priority**: You can see the priority of the Codecs used in your system.
+    *  **Codec Delete**: You can delete the Codec which you don't require in your Webphone. You can check the Codec list from Management > Carrier > Select a Carrier > Auth > blue `+` button > under Codecs tab.
 
-    &emsp;![alt text][webphoneadv] 
+!!! note
+    Please try to use a Regex Pattern when to wish to delete a codec e.g., **PC.***, if you want to remove all the codecs starting with PC else you always have the option to write the name of the codec.
+
+!!! danger
+    The **Opus codec** can't be deleted as its a default codec in WebRTC.
+
+*  **Codec Priority**: You can set the priority of the Codecs which you use in your system.
+
+<img src= "/misc/img/wadv.png" width= "1000">
 
 ## Web Phone Software Developer Kit
 
@@ -351,14 +358,14 @@ Below is the Actions Namespace that describes how actions should run. YOu can us
 | makeCall| alt_phone | alt_phone | Make a call using the campaign's alt_phone property. Used exactly as makeCall(alt_phone) |
 |            | phone_code| phone_code | Make a call using the campaign's phone_code property. Used exactly as makeCall(phone_code)|
 | openForm| formName| The name of any existing form created with the form builder | Opens a form with a provided formName, e.g openForm(feedback form)|
-| redirect| url| - | Redirects a page to this URL value e.g redirect(https://www.example.com)                            |
+| redirect| url| - | Redirects a page to this URL value e.g redirect(https://www.example.com)|
 |            | isExternalLink | Either true or false | Whether a link leads to an external site e.g redirect(www.example.com, true)   - Optional|
 |            | target | _blank | Opens a new page with the provided URL. e.g redirect(https://www.example.com, _blank)    - Optional |
 | toggleMic| - | -| Toggles the mic on or off |
-| save | Decision | Yes | Save a campaign                                                                                     |
+| save | Decision | Yes | Save a campaign|
 |            |                | No | Don't save a  campaign|
 |            |                | Unknown | The decision to save a campaign is unknown |
-| next       | - | - | Load the next campaign |
+| next| - | - | Load the next campaign|
 
 ### The Procedure
 
@@ -401,6 +408,14 @@ This is an interesting feature, that sync's the contacts which you add in the **
 <img src= "/misc/img/ph5.png">
 
 <iframe width="560" height="315" src="/misc/img/ph0.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Visual Voicemail
+
+Visual Voicemail is an interesting feature that allows you to view the voicemail in Webphone.
+
+Various fields include the Caller, Call-ID, Duration of the call, Call Date and Time. You can listen to the call and download it as well.
+
+<img src= "/misc/img/vv2.png" width= "1000">
 
 ### Summary
 
