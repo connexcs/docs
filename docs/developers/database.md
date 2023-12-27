@@ -13,7 +13,7 @@ You can use **Database** for activities like checking list of numbers, caching e
 3. Click on blue `+`
    <img src="/developers/img/db1.png">
 
-4. Under the **Basic** Tab Write the **Name** of the databae you wish to create.
+4. Under the **Basic** Tab Write the **Name** of the database you wish to create.
 5. Select the **Customer** you want to create the database for under the **Basic** Tab.
 6. Select from the **Dataset Type** which are the preset data storage options. The two options are:
 
