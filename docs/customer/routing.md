@@ -162,6 +162,9 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 
 !!! tip "The recommended RTP Media Proxy servers are the **Closest (To ConnexCS) Server** or the **Closest (Elastic) Server**."
 
+!!! warning
+    **SIP Ping** and **SIP Session Timers** can't be enabled at the same time.
+
 + **RTP Proxy Mode**: If a connection via our service fails and you have selected relaxed, it will automatically fail over to the backup.
 
     :material-menu-right: `Strict`- This will enforce the proxy engagement. If the proxy can't engage with the call, the call won't get established.

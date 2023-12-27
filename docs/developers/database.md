@@ -13,7 +13,7 @@ You can use **Database** for activities like checking list of numbers, caching e
 3. Click on blue `+`
    <img src="/developers/img/db1.png">
 
-4. Under the **Basic** Tab Write the **Name** of the databae you wish to create.
+4. Under the **Basic** Tab Write the **Name** of the database you wish to create.
 5. Select the **Customer** you want to create the database for under the **Basic** Tab.
 6. Select from the **Dataset Type** which are the preset data storage options. The two options are:
 
@@ -45,8 +45,16 @@ You can add, modify, remove the columns to display on the grid. This is only for
 
 SQL is currently available in 3 parts of the system:
 
-+ Customer (Client Side)
-+ CDR (Server)
-+ Userspace Database (Server)
-
 <img src="/developers/img/db4.png">
+
++ Customer (Client Side): **Management :material-menu-right: Customer :material-menu-right: SQL**
+
+<img src= "/developers/img/client3.png">
+
++ CDR (Server): **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: SQL**
+
+<img src= "/developers/img/cdr3.png">
+
++ Userspace Database (Server): **Developer :material-menu-right: Database :material-menu-right: SQL**
+
+<img src= "/developers/img/server.png">

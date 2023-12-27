@@ -4,8 +4,6 @@
 
 The **CDR (Call Detail Record)** is an extensive set of information that's collected and stored for each call. This is primarily used for billing purposes as it contains details such as call duration and destination number.
 
-!!! info "Archived Records"
-    CDR records are "hot" (instantly queries) for the last 3 months guaranteed. After that, they're moved to the warm storage server where they're highly compressed and available for bulk download.
 
 !!! note "Global CDR"
     View CDRs for all Customers and Carriers in **Global :material-menu-right: CDR**.
