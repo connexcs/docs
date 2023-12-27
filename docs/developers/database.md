@@ -45,6 +45,8 @@ You can add, modify, remove the columns to display on the grid. This is only for
 
 SQL is currently available in 3 parts of the system:
 
+<img src="/developers/img/db4.png">
+
 + Customer (Client Side): **Management :material-menu-right: Customer :material-menu-right: SQL**
 
 <img src= "/developers/img/client3.png">

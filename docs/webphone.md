@@ -390,6 +390,25 @@ This describes how to use the form ScriptForge response to chain an action. Only
 
 1. If the __.action object has its properties set, then that's the action that will run.
 
+### Phone Book/Sync Directory
+
+This is an interesting feature, that sync's the contacts which you add in the **Control Panel** to the **Webphone**.
+
+1. Login to the **Control Panel**.
+2. Navigate to **Management :material-menu-right: Customer :material-menu-right: Customer [Name] :material-menu-right: Class 5 :material-menu-right: Phonebook**.
+3. Click on the blue `+` button on the right top. <img src= "/misc/img/ph1.png">
+4. Enter the **Customer's Name** which is required field, remaining fields are optional.
+5. Click `Save`. <img src= "/misc/img/ph2.png" width= "500">
+6. Click on the **Phone Numbers** on the right-side. <img src= "/misc/img/ph3.png">
+7. Click on the blue `+` button on the right top of the window.
+8. Enter the **Name** and **Number** which are mandatory fields. You may also add the extension.
+9. Click `Save`. <img src= "/misc/img/ph4.png">
+10. Login to your **Webphone**.
+11. Click on **Contacts**, and you will see the contact you added is now available on the **Webphone**.
+<img src= "/misc/img/ph5.png">
+
+<iframe width="560" height="315" src="/misc/img/ph0.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### Visual Voicemail
 
 Visual Voicemail is an interesting feature that allows you to view the voicemail in Webphone.

@@ -99,6 +99,8 @@ nav:
         - Routing Global: global-routing.md
         - USA Routing: routing-usa.md
     
+    - Tags: tag.md
+
     - Report: report.md  
 
     - Global:
@@ -163,7 +165,6 @@ nav:
             - Payment Log: setup/information/payment-log.md
             - Certificate: setup/information/certificate.md
             - STIR/SHAKEN Cert: setup/information/stir-shaken.md
-            - Browsing Recording: setup/information/recording.md
             - Jobs: setup/information/jobs.md
 
     - Architecture:
@@ -201,7 +202,7 @@ nav:
             - Feature List: feature-list.md
         - How To:
             - Locate Call-ID: guides/howto/callid.md
-            - Resrict Users to Specific Countries/Routing: guides/howto/restrict-calling-plan.md
+            - Restrict Users to Specific Countries/Routing: guides/howto/restrict-calling-plan.md
         - Monitoring: guides/monitoring.md
         - SIP Devices: sip-devices.md
         - Status Page (for Customer Portals): system-status.md
