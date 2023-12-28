@@ -31,9 +31,9 @@ It's a Server Side Chat Application.
 
 1. **Button Builder** helps you create a button that you can place in an existing menu on the site.
 2. **Database** allows you to create custom persistent data storage.
-3. **Domain**
+3. **Domain** where the Application will be publicly accessible.
 4. **Key Value Store** is a type of data storage software that uses a simple approach to storing and retrieving data
 5. **Page Builder** allows you to customise the Control Panel, Customer Portal, and Web Phone and helps you enhance the functionality of these interfaces.
 6. **ScriptForge** helps you create scripts and applications.
 7. **Templates** customise the content displayed on outbound emails/SMS, the Customer Portal, and WebPhone
-8. **Query Builder**
+8. **Query Builder** streamline database query construction, enabling developers to create queries intuitively and often without direct SQL knowledge.
