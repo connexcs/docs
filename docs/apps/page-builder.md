@@ -41,14 +41,14 @@ The Form attribute helps you specify values for the following parameters for all
 |-------------------------|---------------|---------|
 |**UI**|User Interface refers to the graphical layout of an application. **Element and Ant Design** are for desktop components design and **Vuetify** focuses on designing for mobile components|<img src= "/apps/img/page_ui.png">|
 |**Form Width**| Form width helps you decide the dimensions of the complete form|<img src= "/apps/img/page_formwidth.png">|
-|**Label Position**|Label position helps you position the field labels.<br> You can decide between Left, Right and Top||<img src= "/apps/img/page_labelposition.png">|
-|**Label Width**|Refers to the horizontal space allocated for displaying labels in a form or dialog box||<img src= "/apps/img/page_labelwidth.png">|
+|**Label Position**|Label position helps you position the field labels.<br> You can decide between Left, Right and Top|<img src= "/apps/img/page_labelposition.png">|
+|**Label Width**|Refers to the horizontal space allocated for displaying labels in a form or dialog box|<img src= "/apps/img/page_labelwidth.png">|
 |**Label Suffix**| A label suffix typically refers to a set of characters or symbols that are added to the end of a label or identifier to provide additional information or context|<img src= "/apps/img/page_labelsuffix.png">|
-|**Size**| Size describes the dimensions of all the fields in the form. <br> You can choose from **Large**, **Default**, and **Small**|
-|**Style sheets**|You can add custom Style Sheets to make the interface look more pleasing|
+|**Size**| Size describes the dimensions of all the fields in the form. <br> You can choose from **Large**, **Default**, and **Small**|<img src= "/apps/img/page_size.png">|
+|**Style sheets**|You can add custom Style Sheets to make the interface look more pleasing|<img src= "/apps/img/page_stylesheets.png">|
 |**Custom Class**| A HTML class attribute which allows further customisation|<img src= "/apps/components/img/input_customclass.png">|
-|**Data Source**| Data Source can be External, from Script Forge or a Database|
-|**Action Panel**| Action Panel allows you to specify the actions for buttons and link controls|
+|**Data Source**| Data Source can be External, from Script Forge or a Database|<img src= "/apps/img/page_datasource.png">|
+|**Action Panel**| Action Panel allows you to specify the actions for buttons and link controls|<img src= "/apps/img/page_actionpanel.png">|
 |**Javascript CDN Library**|Allows you to load external javascript libaries. Our search feature lets you quickly search for libraries from `cdnjs.cloudflare.com`|<img src= "/apps/img/page_js.png">|
 
 ## Platform Features

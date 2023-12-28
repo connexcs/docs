@@ -17,13 +17,13 @@ Think of it like a dictionary entry with a word (key) and its definition (value)
 
 2.Enter the **Key**, **Value** and click on `Save`.
 
-<img src= "/apps/img/key2.png">
+<img src= "/apps/img/key2.png" width="350">
 
 3.The created **Key Value** will be visible on the IDE panel under **Global :material-menu-right: Database :material-menu-right: Key Value Store** tab.
 
 4.Click on your created **Key Value**.
 
-<img src= "/apps/img/key3.png" width="200">
+<img src= "/apps/img/key3.png">
 
 5.Click on **load** to see the **value** you entered.
 <img src= "/apps/img/key4.png">
