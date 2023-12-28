@@ -2,44 +2,54 @@
 
 ## Config
 
-### Javascript CDN Library
-
-Javascript CDN Library allows you to load external javascript libaries. Our search feature lets you quickly search for libraries from `cdnjs.cloudflare.com`
-
 ### API
 
-| Method & Params                          | Description                      |
+| Method & Params| Description|
 |------------------------------------------|---------------------------------------------------------------|
-| addClassName(fields = [], className)     | Programmatically add a Class to a fields                      |
-| removeClassName(fields, className)       | Programmatically remove a class from fields                   |
-| disable(fields = [])                     | Disables components                                           |
-| enable(fields = [])                      | Enables components                                            |
-| show(fields = [])                        | Shows components                                              |
-| hide(fields)                             | Hides components                                              |
-| getComponent(name)                       | Returns an object allowing direct API access to the component |
-| getData(isValidate = true)               | Get data from the page, optionally validate                   |
-| getFieldDataSource(field)                | Get the datasource from complex fields                        |
-| getValue(fieldName)                      | Get the value from a specific field                           |
-| getValues()                              | Get all the values from the form                              |
-| refresh()                                | Refresh the page                                              |
-| refreshFieldDataSource(field, args)      | Refresh a datasource                                          |
-| reset()                                  | Reset the form to what it was when it was loaded              |
-| setData(value)                           | Set the value of a field                                      |
-| setOptionData(fields, data)              | Set options on a multiple multi-select                        |
-| setOptions(fields, options)              | Set options on a multi-select field                           |
-| setRules(field, rules)                   | Programmatically add validation rules to a field              |
-| validate(fields)                         | Run validate on the page                                      |
+| addClassName(fields = [], className)| Programmatically add a Class to a fields|
+| removeClassName(fields, className)| Programmatically remove a class from fields|
+| disable(fields = []) | Disables components|
+| enable(fields = [])| Enables components |
+| show(fields = []) | Shows components|
+| hide(fields)| Hides components|
+| getComponent(name) | Returns an object allowing direct API access to the component |
+| getData(isValidate = true) | Get data from the page, optionally validate|
+| getFieldDataSource(field)| Get the datasource from complex fields |
+| getValue(fieldName)| Get the value from a specific field|
+| getValues()| Get all the values from the form|
+| refresh()| Refresh the page|
+| refreshFieldDataSource(field, args) | Refresh a datasource|
+| reset() | Reset the form to what it was when it was loaded|
+| setData(value)| Set the value of a field|
+| setOptionData(fields, data)| Set options on a multiple multi-select|
+| setOptions(fields, options)| Set options on a multi-select field|
+| setRules(field, rules)| Programmatically add validation rules to a field|
+| validate(fields) | Run validate on the page|
 
 ### Events
 
-| Name    | Description                                                       |
-|---------|-------------------------------------------------------------------|
-| mounted | When the page is first loaded                                     |
+| Name| Description|
+|-----|------------------------------------------------|
+| mounted | When the page is first loaded|
 | refresh | When the page is first loaded and every time .refresh() is called |
 
 ## Form Attribute
 
-1. 
+The Form attribute helps you specify values for the following parameters for all the fields in the form:
+
+|**Name of the Component**|**Description**|**Icon**|
+|-------------------------|---------------|---------|
+|**UI**|User Interface refers to the graphical layout of an application. **Element and Ant Design** are for desktop components design and **Vuetify** focuses on designing for mobile components|<img src= "/apps/img/page_ui.png">|
+|**Form Width**| Form width helps you decide the dimensions of the complete form|<img src= "/apps/img/page_formwidth.png">|
+|**Label Position**|Label position helps you position the field labels.<br> You can decide between Left, Right and Top||<img src= "/apps/img/page_labelposition.png">|
+|**Label Width**|Refers to the horizontal space allocated for displaying labels in a form or dialog box||<img src= "/apps/img/page_labelwidth.png">|
+|**Label Suffix**| A label suffix typically refers to a set of characters or symbols that are added to the end of a label or identifier to provide additional information or context|<img src= "/apps/img/page_labelsuffix.png">|
+|**Size**| Size describes the dimensions of all the fields in the form. <br> You can choose from **Large**, **Default**, and **Small**|
+|**Style sheets**|You can add custom Style Sheets to make the interface look more pleasing|
+|**Custom Class**| A HTML class attribute which allows further customisation|<img src= "/apps/components/img/input_customclass.png">|
+|**Data Source**| Data Source can be External, from Script Forge or a Database|
+|**Action Panel**| Action Panel allows you to specify the actions for buttons and link controls|
+|**Javascript CDN Library**|Allows you to load external javascript libaries. Our search feature lets you quickly search for libraries from `cdnjs.cloudflare.com`|<img src= "/apps/img/page_js.png">|
 
 ## Platform Features
 
