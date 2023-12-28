@@ -20,9 +20,10 @@ Think of it like a dictionary entry with a word (key) and its definition (value)
 <img src= "/apps/img/key2.png">
 
 3.The created **Key Value** will be visible on the IDE panel under **Global :material-menu-right: Database :material-menu-right: Key Value Store** tab.
+
 4.Click on your created **Key Value**.
 
-<img src= "/apps/img/key3.png">
+<img src= "/apps/img/key3.png" width="200">
 
 5.Click on **load** to see the **value** you entered.
 <img src= "/apps/img/key4.png">

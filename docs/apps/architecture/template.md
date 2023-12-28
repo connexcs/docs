@@ -20,7 +20,7 @@ ConnexCS **Templates** use the mustash-compatible template language [**Handlebar
    + Enter the **SMS** details.
    + Enter the **Text**.
 
-<img src= "/apps/img/template2.png">
+<img src= "/apps/img/template2.png" width="300">
 
 3.Click on `Save`.
 
