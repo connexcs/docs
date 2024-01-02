@@ -294,8 +294,13 @@ persist=600 //value is in seconds
 <img src= "/customer/img/cli_2.png">
 
 !!! Example
-    If you have a database which has 10 CLIs and a customer wants the each CLI to be used for 10 minutes, if you keep persist for 600 seconds.
-    The the CLIs will be used sequentially 1,2,3,4,5,6,7,8,9,0 and then again start from 1,2,3,4,5,6,7,8,9,0.
+    Envision a scenario with a database containing 10 CLIs, where the customer specifies that each CLI should remain active for precisely 10 minutes. By setting the persist value to 600 seconds (10 minutes), the system will follow this sequential pattern:
+
+      - Activate CLI 1 for the initial 10 minutes
+      - Transition to CLI 2 for the subsequent 10 minutes
+    - Continue sequentially with CLI 3 through CLI 10, each active for the next 10 minutes
+
+    After all 10 CLIs complete their respective 10-minute cycles, the system seamlessly returns to CLI 1, initiating another 10-minute period. This cyclic pattern repeats consistently.
 
 ### Manipulate Caller Line Identification
 
