@@ -253,9 +253,9 @@ You may wish to perform CLI Localization.
 
 For example, if you have various DIDs (in this case, `123456`, `123567`, and `123789`) and are placing a call to `1234987654`, the system will find the longest match (in this case, `123456)` to use as the CLI.
 
-| CLI            | Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID      | Userspace DB |
+| CLI| Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID | Userspace DB |
 |----------------|-----------------|-------------|-----------------------|--------|--------------|--------------|
-|                |                 |             |                       | Yes    | Prefix Match | None         |
+||||| Yes| Prefix Match | None |
 
 #### Pick a Caller Line Identification from a Large List
 
@@ -273,7 +273,7 @@ The CLI selection is TIME DETERMINISTIC. It means that the system chooses a CLI 
 
 ###### How to use Deterministic Sequential CLI Persistence feature
 
-1. Navigate to Management :material menu-right: Customer :material menu-right: Customer [Name] :material menu-right: Routing :material menu-right: CLI :material menu-right: blue `+` button.
+1. Navigate to **Management :material-menu-right: Customer :material menu-right: Customer [Name] :material-menu-right: Routing :material-menu-right: CLI :material-menu-right: blue `+` button.**
 2. Select **Yes** from drop-down menu for the **Forced** field.
 3. Select the Database you wish to choose the CLI from. It will then automatically pull in numbers from the database and forces it to set as CLIs. (This feature already exists).
 
@@ -284,7 +284,7 @@ The CLI selection is TIME DETERMINISTIC. It means that the system chooses a CLI 
 
 5.Follow steps 1 and 2.
 
-6.Navigate to Management :material menu-right: Customer :material menu-right: Customer [Name] :material menu-right: Routing :material menu-right: Edit :material menu-right: Config :material menu-right: Vars<sup>TOML</sup> and write the below code:
+6.Navigate to **Management :material-menu-right: Customer :material-menu-right: Customer [Name] :material-menu-right: Routing :material-menu-right: Edit :material-menu-right: Config :material-menu-right: Vars<sup>TOML</sup>** and write the below code:
 
 ```js
 [cli]
@@ -294,8 +294,8 @@ persist=600
 <img src= "/customer/img/cli_2.png">
 
 !!! Example
-        If you have a database which has 10 rows and a customer wants the CLI to be used within 10 minutes.
-        The the CLIs will be used sequentially 1,2,3,4,5,6,7,8,9,0 and then again start from 1,2,3,4,5,6,7,8,9,0 and will continue till it reaches the CLI persist which is 600 seconds.
+    If you have a database which has 10 rows and a customer wants the CLI to be used within 10 minutes.
+    The the CLIs will be used sequentially 1,2,3,4,5,6,7,8,9,0 and then again start from 1,2,3,4,5,6,7,8,9,0 and will continue till it reaches the CLI persist which is 600 seconds.
 
 ### Manipulate Caller Line Identification
 
