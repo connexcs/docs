@@ -253,17 +253,54 @@ You may wish to perform CLI Localization.
 
 For example, if you have various DIDs (in this case, `123456`, `123567`, and `123789`) and are placing a call to `1234987654`, the system will find the longest match (in this case, `123456)` to use as the CLI.
 
-| CLI            | Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID      | Userspace DB |
+| CLI| Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID | Userspace DB |
 |----------------|-----------------|-------------|-----------------------|--------|--------------|--------------|
-|                |                 |             |                       | Yes    | Prefix Match | None         |
+||||| Yes| Prefix Match | None |
 
 #### Pick a Caller Line Identification from a Large List
 
 Our Userspace database allows you to manage large lists of numbers. Once you upload the numbers, you can use the following options to choose a number at random.
 
-| Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID      | Userspace DB  |
+| Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID| Userspace DB  |
 |-----------------|-------------|-----------------------|--------|--------------|---------------|
-|                 |             |                       | Yes    | Disabled     | [My Database] |
+|||| Yes| Disabled| [My Database] |
+
+##### Deterministic Sequential CLI Persistence
+
+This feature allows a CLI to be chosen from a database and used for a specific period of time before it's rotated to the next CLI in the list.
+
+The CLI selection is TIME DETERMINISTIC. It means that the system chooses a CLI and that CLI will be used for the specified time by the customer and later each CLI is executed sequentially and for the same specified duration.
+
+###### How to use Deterministic Sequential CLI Persistence feature
+
+1. Navigate to **Management :material-menu-right: Customer :material menu-right: Customer [Name] :material-menu-right: Routing :material-menu-right: CLI :material-menu-right: blue `+` button.**
+2. Select **Yes** from drop-down menu for the **Forced** field.
+3. Select the Database you wish to choose the CLI from. It will then automatically pull in numbers from the database and forces it to set as CLIs. (This feature already exists).
+
+<img src= "/customer/img/cli_1.png">
+
+4.Follow steps 1 and 2.
+
+5.Navigate to **Management :material-menu-right: Customer :material-menu-right: Customer [Name] :material-menu-right: Routing :material-menu-right: Edit :material-menu-right: Config :material-menu-right: Vars<sup>TOML</sup>** and write the below code:
+
+```js
+[cli]
+persist=600 //value is in seconds
+```
+
+!!! Note
+    You can keep the value of CLI persist according to your requirements. For example, if you require CLI to be used of 10 minutes then keep the persist value as 600.
+
+<img src= "/customer/img/cli_2.png">
+
+!!! Example
+    Envision a scenario with a database containing 10 CLIs, where the customer specifies that each CLI should remain active for precisely 10 minutes. By setting the persist value to 600 seconds (10 minutes), the system will follow this sequential pattern:
+
+      - Activate CLI 1 for the initial 10 minutes
+      - Transition to CLI 2 for the subsequent 10 minutes
+    - Continue sequentially with CLI 3 through CLI 10, each active for the next 10 minutes
+
+    After all 10 CLIs complete their respective 10-minute cycles, the system seamlessly returns to CLI 1, initiating another 10-minute period. This cyclic pattern repeats consistently.
 
 ### Manipulate Caller Line Identification
 
