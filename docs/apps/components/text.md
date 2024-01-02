@@ -32,7 +32,6 @@ Users can type text, numbers, or symbols into the designated field, providing es
 |**this.addClassName(fields, disabled)**|Add style class to form item|
 |**this.removeClassName(fields, disabled)**|Remove form item style|
 | **this.disable(fields)**| Disable input field from user interaction|
-//| **this.enable(fields)**| Disable input field from user interaction|
 | **this.getComponent(name) → {Object}**|Retrieve a component from an object or element|
 | **this.getValue(fieldName)**|Get A Value From a component|
 | **this.getValues() → {Object}**|Get the values of all fields when values change|

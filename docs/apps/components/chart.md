@@ -50,38 +50,49 @@ The 3 types of Charts we use are:
 | **Name**|**Description**|**Icon**|
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
 |**ID**| This is a unique identifier which is used to access the field by the API and the key of the field when the form is saved|<img src= "/apps/components/img/input_id.png">|
-|**Name**| [**Optional**] The visual identifier label of the field|<img src= "/apps/components/img/input_name.png">|
 |**Width**| [**Optional**] To set the width of the field|<img src= "/apps/components/img/input_width.png">|
-|**Label Width**|Width of the label associated with an input field. It determines the horizontal space occupied by the label text|<img src= "/apps/components/img/input_labelwidth1.png">|
-|**Label Wrap**| If the label is longer than the allowed width the text will continue on another line|<img src= "/apps/components/img/input_labelwrap1.png">|
-|**Hide Label**| Hides the label on the form|<img src= "/apps/components/img/input_hidelabel.png">|
-|**Placeholder**| The short hint is displayed in the input field before the user enters a value|<img src= "/apps/components/img/input_placeholder.png">|
-|**Text Prompt**| A description to aid the user when completing the field|<img src= "/apps/components/img/input_textprompt.png">|
-|**Max Length**| Limit the amount of characters the field supports|<img src= "/apps/components/img/input_maxlength.png">|
-|**Default Value**| The default value which is filled in the field before the user changes it|<img src= "/apps/components/img/input_defaultvalue.png">|
+|**Height**| [**Optional**] To set the height of the field|<img src= "/apps/components/img/input_height.png">|
+|**Default**| Set any default data for the charts|<img src= "/apps/components/img/charts_default.png">|
 |**Custom Class**| A HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|
-|**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** to action to hide the field. <br> Enable **Disabled** action to make the field unsuable. <br>Enable **Show clear button** action make the clear button visible. <br> Enable **Show Password** action make the password visible. <br>Enable **Show word count** action make the word count visible|<img src= "/apps/components/img/input_attributeaction.png">|
+|**Attribute Action**|Enable **Data Binding** to connect the data to UI|<img src= "/apps/components/img/charts_attributeaction.png">|
 
-### Validation
+1. **Basic**: Set the basic fields in a chart.
+   * Sub-Title: Enter the sub-title of the chart.
+   * Alignment: Place the sub-title either at the top using **Title Top Margin**, **Center Alignment**, or **Title Vertical Gap**.
+   * Enable **Tooltip** open small, contextual pop-up window that provides additional information or guidance when users hover over, point to, or tap an element on a GUI.
+   * Enable **Legend** to decode the visual elements used to represent data.
+   * Enable **Toolbox** to get options like **Zoom** and **Zoom Reset**.
 
-Form validation is the process of checking the data entered into a form to ensure that it's valid and complete.
+<img src= "/apps/components/img/charts_basic.png">
 
-This helps to prevent users from submitting forms with invalid data, which can cause problems for the application that's processing the form.
+2.**Series**: When you have more than 2 charts in a single chart.
+   * **Type**: Select **Bar**, **Line** or **Pie** charts.
+   * **Encode X, Encode Y**: Swap the contents of X and Y axis.
+   * **X-Axis Index**:The X-axis index in a graph refers to the numerical values or categories displayed along the bottom horizontal axis.
+   * **Y-Axis Index**: The Y-axis index in a graph refers to the numerical values displayed along the vertical axis
 
-Form validation can be performed using a variety of methods, including:
+<img src= "/apps/components/img/charts_series.png">
 
-| **Name**| **Description**|
-|----------------------|---------------------------------------------------------------------|
-| **Required**| Single line of text|
-|**Select**|Several common type checks are provided in single-line text boxes such as string, URL, mailbox, etc.|
-| **Regular expressions**|Used to match patterns in text. They can be used to validate the format of data, such as email addresses, phone numbers, and dates|
-|**Custom Validation Rules**|(rule, value, callback) => {|
-||**rule**: Verification rule, you can view the verification configuration information through this parameter; rule.fieldcan get the field identifier of the current verification|
-||**value**: Value of the current field|
-||**callback**: Callback function (must be called) upon completion of validation; **callback('Error message')/ callback(new Error('Error message'))**. These are two ways to return an error message|
+3.**X-Axis**: To change the settings for X-Axis.
+    * **Grid Index**: Select the grid you wish to place your X-Axis.
+    * **Type**: Select the type of value you want to display on the chart.
+    * **Name**: Enter the name of the X-Axis.
+    * **Formatter-X**: Select the value you want to display on X-axis like **Duration**, **Millisecond**, **Decimal**, **Percent**, **Bytes**.
 
-<img src= "/apps/components/img/input_validation.png">
+<img src= "/apps/components/img/charts_xaxis.png">
 
-!!! Info
-    1. **Regular expressions** should be wrapped with //, as in:/^1[3456789]\d{9}$/"
-    2. The **callback()function** is also called to verify success in the custom checkup method.
+4.**Y-Axis**: To change the settings for Y-Axis.
+    * **Grid Index**: Select the grid you wish to place your Y-Axis.
+    * **Type**: Select the type of value you want to display on the chart.
+    * **Name**: Enter the name of the Y-Axis.
+    * **Formatter-Y**: Select the value you want to display on X-axis like **Duration**, **Millisecond**, **Decimal**, **Percent**, **Bytes**.
+
+<img src= "/apps/components/img/charts_yaxis.png">
+
+4.**Grid**: To change the settings for Grid.
+    * **Left**: Place the chart on left-side using the slider.
+    * **Right**: Place the chart on right-side using the slider.
+    * **Width**: Change the width of the chart using the slider.
+    * **Height**: Change the height of the chart using the slider.
+
+<img src= "/apps/components/img/charts_grid.png">

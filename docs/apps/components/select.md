@@ -49,14 +49,13 @@ It's a versatile tool for collecting user input in situations where there are mu
 |**this.addClassName(fields, disabled)**|Add style class to form item|
 |**this.removeClassName(fields, disabled)**|Remove form item style|
 | **this.disable(fields)**| Disable input field from user interaction|
-//| **this.enable(fields)**| Disable input field from user interaction|
 | **this.getComponent(name) → {Object}**|Retrieve a component from an object or element|
-//| **this.getValue(fieldName)**|Get A Value From a component|
+| **this.getValue(fieldName)**|Get A Value From a component|
 | **this.getValues() → {Object}**|Get the values of all fields when values change|
 |**this.hide(fields)**|Hides the field|
 |**this.show(fields)**|Displays the field|
 |**this.setData(Value)**|Set the data in the field|
-|**this.getFieldDataSource**|Get information from the data source.
+|**this.getFieldDataSource**|Get information from the data source|
 |**this.refreshFieldDataSource**|Refresh the datasource data bound to the form field
 
 ## Config

@@ -44,10 +44,8 @@ Imagine you have a form with hundreds of items to choose from, like products in 
 | **this.enable(fields)**| Disable input field from user interaction|
 | **this.getComponent(name) → {Object}**|Retrieve a component from an object or element|
 | **this.getValue(fieldName)**|Get A Value From a component|
-//| **this.getValues() → {Object}**|Get the values of all fields when values change|
 |**this.hide(fields)**|Hides the field|
 |**this.show(fields)**|Displays the field|
-//|**this.setData(Value)**|Set the data in the field|
 
 ## Config
 

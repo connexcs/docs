@@ -50,7 +50,7 @@ Some examples of how card components can be made interactive include:
 |----------------------|---------------------------------------------------------------------|
 |**this.addClassName(fields, disabled)**|Add style class to form item|
 |**this.removeClassName(fields, disabled)**|Remove form item style|
-//confirm from saurabh|**this.disable(fields)**| Disable input field from user interaction|
+|**this.disable(fields)**| Disable input field from user interaction|
 | **this.enable(fields)**| Disable input field from user interaction|
 | **this.getComponent(name) → {Object}**|Retrieve a component from an object or element|
 | **this.getValue(fieldName)**|Get A Value From a component|

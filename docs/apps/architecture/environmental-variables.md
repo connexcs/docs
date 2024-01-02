@@ -12,15 +12,12 @@ This is available from within page builder via `this.env` and it can be saved by
 
 1. Login to your account.
 
-2. Navigate to **Developer :material-menu-right: Var**.
+2. Navigate to **IDE :material-menu-right: Var**.
+3. Select the **App** you wish to use the variables for.
 
-3. Click on the blue + button.
+4. Enter the values for **Key** and **Value** fields.
 
-4. Select the **App** you wish to use the variables for.
-
-5. Enter the values for **Key** and **Value** fields.
-
-6. You can restrict access to your variables by utilizing the **Flags** option.
+5. You can restrict access to your variables by utilizing the **Flags** option.
 
     + **Protected**: This flag is only relevant for the **App** feature and not the **Repo** or **ScriptForge** feature. The UI will nor be able to read the variable back. In simple terms, the user won't be able to read the value of the variable, it will return the entered value as ****.
 

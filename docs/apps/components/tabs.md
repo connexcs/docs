@@ -82,10 +82,7 @@ You can use focus and blur events to perform a variety of actions, such as:
 |**this.addClassName(fields, disabled)**|Add style class to form item|
 |**this.removeClassName(fields, disabled)**|Remove form item style|
 | **this.disable(fields)**| Disable input field from user interaction|
-//| **this.enable(fields)**| Disable input field from user interaction|
 | **this.getComponent(name) → {Object}**|Retrieve a component from an object or element|
-//| **this.getValue(fieldName)**|Get A Value From An Object|
-//| **this.getValues() → {Object}**|Get the values of all fields when values change|
 |**this.hide(fields)**|Hides the field|
 |**this.show(fields)**|Displays the field|
 | **this.enable(fields)**| Disable input field from user interaction|

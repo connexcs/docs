@@ -24,20 +24,11 @@ You can arrange elements as **Header**, **Aside**, **Footer** or in the **Main**
 
 ## API
 
-
 ### Methods
 
-| **Name**| **Description**|
-|----------------------|---------------------------------------------------------------------|
-//|**this.addClassName(fields, disabled)**|Add style class to form item|
-//|**this.removeClassName(fields, disabled)**|Remove form item style|
-//| **this.disable(fields)**| Disable input field from user interaction|
-//| **this.enable(fields)**| Disable input field from user interaction|
-//| **this.getComponent(name) → {Object}**|Retrieve a component from an object or element|
-//| **this.getValue(fieldName)**|Get A Value From a component|
-//| **this.getValues() → {Object}**|Get the values of all fields when values change|
-//|**this.hide(fields)**|Hides the field|
-//|**this.show(fields)**|Displays the field|
+!!! note
+    We are working on the *Methods* we will come back to you soon.
+
 
 ## Config
 
