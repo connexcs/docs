@@ -269,7 +269,7 @@ Our Userspace database allows you to manage large lists of numbers. Once you upl
 
 This feature allows a CLI to be chosen from a database and used for a specific period of time before it's rotated to the next CLI in the list.
 
-The CLI selection is TIME DETERMINISTIC. It means that the system chooses a CLI and that CLI should be used in 10 minutes (for example) and later each CLI can be used sequentially.
+The CLI selection is TIME DETERMINISTIC. It means that the system chooses a CLI and that CLI will be used for the specified time by the customer and later each CLI is executed sequentially and for the same specified duration.
 
 ###### How to use Deterministic Sequential CLI Persistence feature
 
@@ -279,23 +279,23 @@ The CLI selection is TIME DETERMINISTIC. It means that the system chooses a CLI 
 
 <img src= "/customer/img/cli_1.png">
 
-!!! Example "We shall explain the above with the help of an example"
-    Let's assume we've full phone numbers 1,2,3,4,5,6,7,8,9. The number is picked up randomly.
+4.Follow steps 1 and 2.
 
-5.Follow steps 1 and 2.
-
-6.Navigate to **Management :material-menu-right: Customer :material-menu-right: Customer [Name] :material-menu-right: Routing :material-menu-right: Edit :material-menu-right: Config :material-menu-right: Vars<sup>TOML</sup>** and write the below code:
+5.Navigate to **Management :material-menu-right: Customer :material-menu-right: Customer [Name] :material-menu-right: Routing :material-menu-right: Edit :material-menu-right: Config :material-menu-right: Vars<sup>TOML</sup>** and write the below code:
 
 ```js
 [cli]
-persist=600
+persist=600 //value is in seconds
 ```
+
+!!! Note
+    You can keep the value of CLI persist according to your requirements. For example, if you require CLI to be used of 10 minutes then keep the persist value as 600.
 
 <img src= "/customer/img/cli_2.png">
 
 !!! Example
-    If you have a database which has 10 rows and a customer wants the CLI to be used within 10 minutes.
-    The the CLIs will be used sequentially 1,2,3,4,5,6,7,8,9,0 and then again start from 1,2,3,4,5,6,7,8,9,0 and will continue till it reaches the CLI persist which is 600 seconds.
+    If you have a database which has 10 CLIs and a customer wants the each CLI to be used for 10 minutes, if you keep persist for 600 seconds.
+    The the CLIs will be used sequentially 1,2,3,4,5,6,7,8,9,0 and then again start from 1,2,3,4,5,6,7,8,9,0.
 
 ### Manipulate Caller Line Identification
 
