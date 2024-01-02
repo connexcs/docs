@@ -76,9 +76,13 @@ We're talking about **Column Config** separately as it's a comprehensive compone
 <img src= "/apps/components/img/datagrid_basic.png" width="400">
 
 2.**Width**
+
    * **Width**: Enter the width of the column in pixels.
+
    * **Min Width**: Enter the minimum value width of the column in pixels.
+  
    * **Max Width**: Enter the maximum value width of the column in pixels.
+  
    * **Resizable**: Enable to resize the column width.
 
 <img src= "/apps/components/img/datagrid_width.png" width="400">
@@ -91,28 +95,39 @@ It allows you to customize the appearance of data to improve readability, highli
 <img src= "/apps/components/img/datagrid_valueformat.png" width="400">
 
 4.**Display format**
+   
    * **Format Type**: You can select the format options for a column from Date, Currency, Duration, Percent from Decimal, Percent from Number, Decimal, Second, Bytes.
+   
    * **Link**: which is used to link from one page to another.
 
 <img src= "/apps/components/img/datagrid_displayformat.png" width="400">
 
 5.**Header**
+
    * **Header Checkbox Selection**: a single checkbox, typically placed in the header row, allows you to select all rows (or filtered/current page rows) in the grid with a single click.
+
    * **Wrap Header Text**:Allows the text in header cells to automatically wrap onto multiple lines if it exceeds the available space.
 
 <img src= "/apps/components/img/datagrid_header.png" width="400">
 
 6.**Pivot**
+
    * **Pivot**: Allows you to dynamically rearrange and restructure the data by rotating the grid's axis, switching rows and columns to create different views and perspectives.
+
    * **Enable Pivot**: Enable/Disable pivot.
 
 <img src= "/apps/components/img/datagrid_header.png" width="400">
 
 7.**Charts**
+   
    * **Charts Data Type**: 
+       
        * Excluded: Data in columns marked as "excluded" aren't included in the visual representation of the chart.
+       
        * Category: Data in columns marked as "category" are used to group data points into distinct categories or segments.
+       
        * Series: Data in columns marked as "series" create separate lines or sets of data points within the chart, often for comparison purposes.
+       
        * Time: Data in columns marked as "time" represent temporal information, often used for time-series charts that track trends or changes over time.
 
 <img src= "/apps/components/img/datagrid_charts.png" width="400">

@@ -11,19 +11,19 @@ It's a versatile tool for collecting user input in situations where there are mu
 ## Use Case
 
 1. **Filtering and Selection**
-   * Product Catalog
-   * Search Results
-   * Event Calendar
+      * Product Catalog
+      * Search Results
+      * Event Calendar
 2. **Dynamically Changing Options**
-   * Dependent Dropdowns
-   * Conditional Options
-   * Personalized Offer
+      * Dependent Dropdowns
+      * Conditional Options
+      * Personalized Offer
 3. **Data Collection and Analytics**
-   * Survey Questions
-   * Feedback Forms
-   * Market Research
+      * Survey Questions
+      * Feedback Forms
+      * Market Research
 4. **Interactive and Engaging Designs**
-   * Customizable Options
+      * Customizable Options
 
 ### Interactivity
 

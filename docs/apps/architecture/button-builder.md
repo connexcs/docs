@@ -13,7 +13,7 @@ Use **Button Builder** in combination to create a button that you can place in a
 
 1. Navigate to **IDE** :material-menu-right: `+` sign :material-menu-right: **Button Builder**.
 
-<img src= "/apps/img/button2.png">
+<img src= "/apps/img/button_main.png">
 
 + **Label:** Enter the button label.
 + **Icon:** Select an icon to display.
@@ -33,7 +33,7 @@ Use **Button Builder** in combination to create a button that you can place in a
 
 2.Click **`Save`** to make the new button available for placement.
 
-<img src= "/developers/img/button1.png" width= "400">
+<img src= "/developers/img/button1.png" width= "350">
 
 3.The created **Button** will be visible on the IDE panel under **Button Builder**. Click on the created button, also you have the option to `Edit` the button.
 

@@ -27,8 +27,6 @@ This is available from within page builder via `this.env` and it can be saved by
 
     + **Default**: This is only relevant to **Repo**. Suppose, your App colour is gray by default and a customer changes the colour to red after deploying the App. Now the default colour of the App will be red when deployed by another customer when Default flag is selected. Thus, upgrading this variable won't override any previously stored value.
 
-<img src= "/developers/img/app3.png" width= "1000">
-
 !!! Info
 
     1. If you wish to keep the variable value a **Secret** like password etc., then you should use the **Protected**, **Private** and **Locked** flags.

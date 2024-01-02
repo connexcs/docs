@@ -57,7 +57,7 @@
 |**Text Prompt**| A description to aid the user when completing the field|<img src= "/apps/components/img/input_textprompt.png">|
 |**Range Time**| accept user input for a range of times, rather than a single point in time|<img src= "/apps/components/img/time_range.png">|
 |**Placeholder**| The short hint is displayed in the input field before the user enters a value|<img src= "/apps/components/img/input_placeholder.png">|
-|**Format**|Define the time format HH:mm:ss|<img src= "/apps/components/img/time_format.png">|
+|**Format**|Define the time format HH: mm :ss|<img src= "/apps/components/img/time_format.png">|
 |**Default Value**| The default value which is filled in the field before the user changes it|<img src= "/apps/components/img/time_default.png">|
 |**Custom Class**| A HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|
 |**Max Length**| Limit the amount of characters the field supports|<img src= "/apps/components/img/input_maxlength.png">|
