@@ -120,8 +120,7 @@ nav:
     - Developer:
         - Analytics: developers/analytics.md
         - Button Builder: developers/button-builder.md
-        - Database: developers/database.md 
-        - Form Builder: developers/form-builder.md
+        - Database: developers/database.md
         - ScriptForge: developers/scriptforge.md
         - Templates: setup/config/templates.md
         - Pages:
