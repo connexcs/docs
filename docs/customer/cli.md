@@ -113,16 +113,15 @@ Any number configured as a CLI is a part of the permitted list (unless you use e
 
 Block all calls that don't have the CLI "123456789":
 
-| CLI         | Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
+| CLI | Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
 |-------------|-----------------|-------------|-----------------------|--------|----------|--------------|
-| `123456789` |                 |             |                       | No     | Disabled | None         |
+| `123456789`|||| No| Disabled | None|
 
 Allow various CLIs to pass (by entering 2 or more records):
-
-| CLI         | Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
+| CLI| Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
 |-------------|-----------------|-------------|-----------------------|--------|----------|--------------|
-| `123456789` |                 |             |                       | No     | Disabled | None         |
-| `987654321` |                 |             |                       | No     | Disabled | None         |
+| `123456789`|||| No| Disabled | None |
+| `987654321`|||| No| Disabled | None |
 
 #### Filter CLI by Pattern
 
@@ -130,15 +129,15 @@ Allow a range of numbers for a customer (this example allows all calls that star
 
 | CLI            | Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
 |----------------|-----------------|-------------|-----------------------|--------|----------|--------------|
-| `^123456`      |                 |             |                       | No     | Disabled | None         |
+| `^123456`|||| No| Disabled | None|
 
 You could also use a more complicated expression to match various ranges.
 
 In this example, the number must start with 123456, followed by 1, 3, or 5, then followed by 1 or 2 numbers.
 
-| CLI                       | Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
+| CLI| Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
 |---------------------------|-----------------|-------------|-----------------------|--------|----------|--------------|
-| `^123456[135][0-9]{1,2}$` |                 |             |                       | No     | Disabled | None         |
+| `^123456[135][0-9]{1,2}$` |||| No| Disabled | None|
 
 This can work in combination with number lists as well.
 
@@ -150,24 +149,24 @@ Note that you can still add more CLIs along with the DID list.
 
 | CLI | Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID | Userspace DB |
 |-----|-----------------|-------------|-----------------------|--------|---------|--------------|
-|     |                 |             |                       | No     | Filter  | None         |
+||||| No| Filter  | None |
 
 #### Filter Pre-Asserted-Identity by Number or Pattern
 
 The same is true for Pre-Asserted-Identity (PAID) as it's with CLI; you can filter by PAID, as in this example.
 
-| CLI | Pre-Asserted-ID           | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
+| CLI | Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
 |-----|---------------------------|-------------|-----------------------|--------|----------|--------------|
-|     | `123456789`               |             |                       | No     | Disabled | None         |
-|     | `^123456[135][0-9]{1,2}$` |             |                       | No     | Disabled | None         |
+|`123456789`||| No| Disabled | None |
+|| `^123456[135][0-9]{1,2}$` ||| No| Disabled | None|
 
 #### Combined CLI and Pre-Asserted-Identity Filter
 
 Filters are `AND` together, meaning that for a call to pass in this example, the CLI would need to be `1122334455` AND the Pre-Asserted-ID would need to be `123456789`.
 
-| CLI          | Pre-Asserted-ID           | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
+| CLI| Pre-Asserted-ID| Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
 |--------------|---------------------------|-------------|-----------------------|--------|----------|--------------|
-| `1122334455` | `123456789`               |             |                       | No     | Disabled | None         |
+| `1122334455` | `123456789`||| No| Disabled | None|
 
 #### Filter CLI from a Large List
 
@@ -177,7 +176,7 @@ You can use the following options to filter by the uploaded list. Note that the 
 
 | Pre-Asserted-ID  | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB  |
 |------------------|-------------|-----------------------|--------|----------|---------------|
-|                  |             |                       | No     | Disabled | [My Database] |
+|||| No| Disabled | [My Database] |
 
 #### Filter CLI by Number Type
 
@@ -185,7 +184,7 @@ Filtering by Number Type will block calls that originate from a "type" that you 
 
 | Pre-Asserted-ID  | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Block Type  |
 |------------------|-------------|-----------------------|--------|----------|-------------|
-|                  |             |                       | No     | Disabled | FIXED       |
+|||| No| Disabled | FIXED|
 
 ### Replace Examples
 
@@ -197,17 +196,17 @@ Note that if a replacement occurs, it means that the match was successful and it
 
 Replacing a `111111111111` with `222222222222`.
 
-| CLI            | Pre-Asserted-ID | Rewrite CLI    | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
+| CLI| Pre-Asserted-ID | Rewrite CLI    | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
 |----------------|-----------------|----------------|-----------------------|--------|----------|--------------|
-| `111111111111` |                 | `222222222222` |                       | No     | Disabled | None         |
+| `111111111111` ||`222222222222`|| No| Disabled | None|
 
 #### Pattern Replacement
 
 Replace all calls that begins with a `1` with `222222222222`
 
-| CLI            | Pre-Asserted-ID | Rewrite CLI    | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
+| CLI| Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
 |----------------|-----------------|----------------|-----------------------|--------|----------|--------------|
-| `^1`           |                 | `222222222222` |                       | No     | Disabled | None         |
+| `^1`|| `222222222222` || No| Disabled | None|
 
 #### Force CLI
 
@@ -215,16 +214,16 @@ When choosing **Force CLI**, _if there is no match present_, the CLI marked Forc
 
 In the example below, the CLI `111111111111` is sent regardless of what CLI the customer sends.
 
-| CLI            | Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
+| CLI| Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
 |----------------|-----------------|-------------|-----------------------|--------|----------|--------------|
-| `111111111111` |                 |             |                       | Yes    | Disabled | None         |
+| `111111111111`|||| Yes| Disabled | None|
 
 In the following example, if the customer sends a call with `222222222222`, the call gets allowed to pass through, but if the customer were to send `333333333333`, the call gets replaced by `111111111111`.
 
-| CLI            | Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
+| CLI| Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
 |----------------|-----------------|-------------|-----------------------|--------|----------|--------------|
-| `111111111111` |                 |             |                       | Yes    | Disabled | None         |
-| `222222222222` |                 |             |                       | No     | Disabled | None         |
+| `111111111111`|||| Yes| Disabled | None|
+| `222222222222` |||| No     | Disabled | None|
 
 #### Pick CLI at Random
 
@@ -232,10 +231,10 @@ You can add various CLIs that forcefully select a random CLI.
 
 In this example, approximately 50% of the calls are sent with `111111111111` and 50% with `222222222222` (provided the customer doesn't send either of those two, otherwise the results would be same).
 
-| CLI            | Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
+| CLI| Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
 |----------------|-----------------|-------------|-----------------------|--------|----------|--------------|
-| `111111111111` |                 |             |                       | Yes    | Disabled | None         |
-| `222222222222` |                 |             |                       | Yes    | Disabled | None         |
+| `111111111111` |||| Yes| Disabled | None|
+| `222222222222` |||| Yes| Disabled | None|
 
 !!! tip "Large Numbers of Random CLIs"
     To filter or replace calls with a larger number of CLIs or to perform more complex rules.
@@ -289,7 +288,7 @@ The customer has a lot of CLIs and they dial people with those CLIs. Thus, the b
 4. From the drop-down next to **Flags** select Performance CLI Selection.
 5. Click `Save`.
 
-<img src= "/customer/img/performancecli.png"> 
+<img src= "/customer/img/performancecli_1.png"> 
 
 ##### Deterministic Sequential CLI Persistence
 
