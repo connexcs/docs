@@ -89,7 +89,7 @@ The Performance CLI Selection chooses the CLI with the best ASR.
 
     + **STIR / SHAKEN Attestation:** This is the level of a certification you can select from 3 levels `A`, `B`, or `C`.
 
-<img src= "/customer/img/cli_new.png" width= "500">
+<img src= "/customer/img/cli_new.png">
 
 + Click **`Save`** to complete the CLI configuration.
 
