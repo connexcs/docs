@@ -288,7 +288,7 @@ The customer has a lot of CLIs and they dial people with those CLIs. Thus, the b
 4. From the drop-down next to **Flags** select Performance CLI Selection.
 5. Click `Save`.
 
-<img src= "/customer/img/performancecli_1.png"> 
+<img src= "/customer/img/performancecli1.png"> 
 
 ##### Deterministic Sequential CLI Persistence
 
