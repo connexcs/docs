@@ -271,8 +271,6 @@ Our Userspace database allows you to manage large lists of numbers. Once you upl
 
 The Performance based CLI Selection chooses the CLI with the best ASR from a large list or a database.
 
-The customer has a lot of CLIs and they dial people with those CLIs. Thus, the best performing CLIs are the ones you want to keep.
-
 **How does this algorithm work?**
 
 1. If there is more than 1000 records in the CLI Database, it will randomly pick 1000, then pick from that.
