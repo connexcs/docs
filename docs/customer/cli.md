@@ -78,7 +78,7 @@ The **P-Asserted-ID** manipulation uses the same syntax as the Replace CLI.
     !!! note
         Make sure you select  the **Forced** option as **Yes**.
 
-+ **Flags**: When you select **Forced** as **Yes** and select a **Database**, you get an option to select a flag which is **Performace CLI Selection**.
++ **Flags**: When you select **Forced** as **Yes** and select a **Database**, you get an option to select a flag which is **Performance CLI Selection**.
 The Performance CLI Selection chooses the CLI with the best ASR.
 
 + **Dialed Number Match**: To route to a specific CLI, you dialled match number.
@@ -280,7 +280,7 @@ The customer has a lot of CLIs and they dial people with those CLIs. Thus, the b
 3. If there are less than 50 calls to this CLI (or none), it will assume an ASR of 50%.
 4. It will pick the top 5 performing CLI's every 5 minutes.
 
-**Steps to use Performace CLI Selection**
+**Steps to use Performance CLI Selection**
 
 1. Navigate to **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Routing :material-menu-right: CLI (blue `+` button).**
 2. Select **Yes** for the **Forced** field.
