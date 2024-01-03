@@ -298,7 +298,7 @@ The CLI selection is TIME DETERMINISTIC. It means that the system chooses a CLI 
 
 ###### How to use Deterministic Sequential CLI Persistence feature
 
-1. Navigate to **Management :material-menu-right: Customer :material menu-right: Customer [Name] :material-menu-right: Routing :material-menu-right: CLI :material-menu-right: blue `+` button.**
+1. Navigate to **Management :material-menu-right: Customer :material-menu-right: Customer [Name] :material-menu-right: Routing :material-menu-right: CLI :material-menu-right: blue `+` button.**
 2. Select **Yes** from drop-down menu for the **Forced** field.
 3. Select the Database you wish to choose the CLI from. It will then automatically pull in numbers from the database and forces it to set as CLIs. (This feature already exists).
 
