@@ -274,7 +274,7 @@ The Performance based CLI Selection chooses the CLI with the best ASR from a lar
 
 The customer has a lot of CLIs and they dial people with those CLIs. Thus, the best performing CLIs are the ones you want to keep.
 
-**How does this algorithm work?(Strategy 1)**
+**How does this algorithm work?**
 
 1. If there is more than 1000 records in the CLI Database, it will randomly pick 1000, then pick from that.
 2. An ASR lookup is initiated and the ASR reading requires at least 50 calls. It does a sliding window over the last 7 days.
