@@ -281,6 +281,16 @@ The customer has a lot of CLIs and they dial people with those CLIs. Thus, the b
 3. If there are less than 50 calls to this CLI (or none), it will assume an ASR of 50%.
 4. It will pick the top 5 performing CLI's every 5 minutes.
 
+**Steps to use Performace CLI Selection**
+
+1. Navigate to **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Routing :material-menu-right: CLI (blue `+` button).**
+2. Select **Yes** for the **Forced** field.
+3. Select a **Database**.
+4. From the drop-down next to **Flags** select Performance CLI Selection.
+5. Click `Save`.
+
+<img src= "/customer/img/performancecli.png"> 
+
 ##### Deterministic Sequential CLI Persistence
 
 This feature allows a CLI to be chosen from a database and used for a specific period of time before it's rotated to the next CLI in the list.
