@@ -84,6 +84,7 @@ nav:
         - Documents: customer/documents.md
         - Class5: customer/class5.md
         - Tags: customer/tags.md
+        - Circuit Test: circuit-test.md
 
 
     - Carrier: carrier.md
@@ -159,11 +160,11 @@ nav:
             - Portal: setup/integrations/portal.md
             - WebPhone: webphone.md
         - Information:
-            - Change Log: setup/information/chnage-log.md
+            - Change Log: setup/information/change-log.md
             - Statement: setup/information/statements.md
             - Dial Code / Destination: setup/information/dial-code-destination.md
             - Payment Log: setup/information/payment-log.md
-            - Payment Log: setup/information/audit-log.md
+            - Audit Log: setup/information/audit-log.md
             - Certificate: setup/information/certificate.md
             - STIR/SHAKEN Cert: setup/information/stir-shaken.md
             - Jobs: setup/information/jobs.md
@@ -216,7 +217,6 @@ nav:
     - Troubleshooting: 
             - Call Connection/Signaling Issues: guides/tshoot-signal.md
             - Call Quality/Media Issues: guides/tshoot-media.md
-            - Circuit Test: circuit-test.md
             - Call Disconnection Reasons and Premature Call Disconnection: guides/call-disconnection-reasons.md
             - Debugging: guides/debugging.md
             - Logging: logging.md

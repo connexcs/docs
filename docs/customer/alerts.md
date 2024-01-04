@@ -98,11 +98,17 @@ Well it’s good news..!!! You can integrate Pushover notifications with the Con
 <img src= "/customer/img/pushover3.png ">
 
 9.You now have Push message on the device.
-10. Now, to integrate this with ConnexCS, copy the email under **Your E-Mail Aliases** whihch will be something like *******@pomail.net**.
-11. Login to your ConnexCS account.
-12. Navigate to Management :material-menu-right: Customer :material-menu-right: Customer [Name]:material-menu-right:Alert :material-menu-right: blue `+` sign.
+
+10.Now, to integrate this with ConnexCS, copy the email under **Your E-Mail Aliases** which will be something like *******@pomail.net**.
+
+11.Login to your ConnexCS account.
+
+12.Navigate to Management :material-menu-right: Customer :material-menu-right: Customer [Name]:material-menu-right:Alert :material-menu-right: blue `+` sign.
+
 13.Enter the **Title** and paste the *******@pomail.net** (email) in the **Email/Phone** field. Fill out rest of the fields according to your alert requirement.
+
 14.click `Save`.
+
 15.You will receive the pushover notification on your device.
 
 <img src= "/customer/img/pushover4.png ">
