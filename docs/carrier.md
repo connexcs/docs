@@ -215,6 +215,34 @@ To ensure compatibility, set the switch manufacturer to `bandwidth.com`.
 [carriers-main]: /carrier/img/carriers-main.png "Carriers"
 [carrier]: /carrier/img/carrier.png "Carrier Main"
 
+## Headers from Customers to Providers
+
+When the Carrier requires information on the headers sent from the UAC, you can use below discussed process:
+
+1. Login to your account.
+2. Navigate to Management :material-menu-right: Customer :material-menu-right: Carrier :material-menu-right: blue `+` button :material-menu-right: Config :material-menu-right: Vars<sup>TOML</sup>.
+3. We consider an example here: **Example of how to retain X-ng199 but remove all other X-headers**
+4. Enter the code in the Vars<sup>TOML</sup> section.
+
+```js
+[headers] // configuration for headers
+remove_regex="^X-(?:(?!(ng911)).)*" // only retain X-ng199 but remove all other X-headers
+```
+
+The **Default Setting** is:
+
+```js
+[headers]
+remove_regex="^X-.*"
+```
+
+5.Click `Save`.
+
+!!! Danger Note
+    Please note you can use the regex pattern according to your requirement.
+
+<img src= "/carrier/img/regex.png">
+
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMTkwMTM2NjQxM119
 -->

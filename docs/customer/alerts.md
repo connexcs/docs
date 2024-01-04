@@ -70,6 +70,43 @@ You can test the created alert under a specific customer.
 
 You can receive alert messages in e-mails or via SMS.
 
+## Pushover Notifications
+
+Pushover is an easy-to-use and reliable platform that allows you to deliver push alerts to your desktop computer, smartwatch, and mobile devices.
+
+Even when you're not actively using your devices, it enables you to receive notifications and updates from a variety of applications and websites.
+
+Well it’s good news..!!! You can integrate Pushover notifications with the ConnexCS system.
+
+### Steps for Integration
+
+1. Create an account on https://pushover.net/  and login to your account.
+2. Install the Pushover app on your mobile devices and optionally the desktop app on your computer.
+3. Click on **Pushover** on the top left.
+
+<img src= "/customer/img/pushover1.png ">
+
+4.Select the **Device**, **Sound**, and **Priority** of the notification.
+5.**Title** and **URL** are optional fields. But do fill-out the **Message** field.
+6.Click on **Send Notification**.
+7.You will see the following message on the top **Your message has been queued for delivery**.
+
+<img src= "/customer/img/pushover2.png ">
+
+8.Received the message on https://client.pushover.net/ .
+
+<img src= "/customer/img/pushover3.png ">
+
+9.You now have Push message on the device.
+10. Now, to integrate this with ConnexCS, copy the email under **Your E-Mail Aliases** whihch will be something like *******@pomail.net**.
+11. Login to your ConnexCS account.
+12. Navigate to Management :material-menu-right: Customer :material-menu-right: Customer [Name]:material-menu-right:Alert :material-menu-right: blue `+` sign.
+13.Enter the **Title** and paste the *******@pomail.net** (email) in the **Email/Phone** field. Fill out rest of the fields according to your alert requirement.
+14.click `Save`.
+15.You will receive the pushover notification on your device.
+
+<img src= "/customer/img/pushover4.png ">
+
 [alerts-sample1]: /customer/img/alerts-sample1.png "Alert Sample 1"
 [alerts-sample2]: /customer/img/alerts-sample2.png "Alert Sample 2"
 [alerts-sample3]: /customer/img/alerts-sample3.png "Alert Sample 3"
