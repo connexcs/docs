@@ -37,3 +37,8 @@ It's a Server Side Chat Application.
 6. **ScriptForge** helps you create scripts and applications.
 7. **Templates** customise the content displayed on outbound emails/SMS, the Customer Portal, and WebPhone
 8. **Query Builder** streamline database query construction, enabling developers to create queries intuitively and often without direct SQL knowledge.
+
+## Authentication
+
+1. **Customer Login/Login/Company Login**: When you login using your name and password it gives you normal information. This allows you to login to the Customer Portal.
+2. **SIP Login**: When you login it gives you SIP information. Another thing which is done here is passing a `jwt` which is a json web token. You can send this token to Control Panel API or Webphone API. It will help you communicate with other systems like Control Panel or Webphone etc.

@@ -1,4 +1,4 @@
-# Web Phone
+# Webphone
 
 **Setup :material-menu-right: Integrations :material-menu-right: Web Phone**
 

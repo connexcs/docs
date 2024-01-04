@@ -312,6 +312,6 @@ nav:
         - Time: apps/components/time.md
         - Transfer: apps/components/transfer.md
         - Tree Select: apps/components/tree-select.md
-        - Wephone: apps/components/webphone.md
+        - Webphone: apps/components/webphone.md
 
     

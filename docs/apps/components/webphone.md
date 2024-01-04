@@ -11,12 +11,13 @@ It allows you to create a fully customised solution.
 ## Use Case
 
 Add Audio/Video Bi-directional communication for use in:
-1. OTT Mobile Application
-2. Call Center Agent Dashboard
-3. Click-2-Call
-4. Live Website Help
-5. Embedded Applications
-6. Conference Applications
+OTT Mobile Application
+
+1. Call Center Agent Dashboard
+2. Click-2-Call
+3. Live Website Help
+4. Embedded Applications
+5. Conference Applications
 
 <img src= "/apps/components/img/webphone.png" width="300">
 
