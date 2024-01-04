@@ -10,7 +10,7 @@ You can use **Database** for activities like checking list of numbers, caching e
 2. Click on **IDE** :material menu-right: +.
 3. Select **Database**.
 
-<img src= "/customer-portal/img/app_database.png">
+<img src= "/customer-portal/img/app_database.png" width="400">
 
 4.Under the **Basic** Tab Write the **Name** of the database you wish to create.
 

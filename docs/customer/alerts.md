@@ -87,8 +87,11 @@ Well it’s good news..!!! You can integrate Pushover notifications with the Con
 <img src= "/customer/img/pushover1.png ">
 
 4.Select the **Device**, **Sound**, and **Priority** of the notification.
+
 5.**Title** and **URL** are optional fields. But do fill-out the **Message** field.
+
 6.Click on **Send Notification**.
+
 7.You will see the following message on the top **Your message has been queued for delivery**.
 
 <img src= "/customer/img/pushover2.png ">
@@ -105,7 +108,7 @@ Well it’s good news..!!! You can integrate Pushover notifications with the Con
 
 12.Navigate to Management :material-menu-right: Customer :material-menu-right: Customer [Name]:material-menu-right:Alert :material-menu-right: blue `+` sign.
 
-13.Enter the **Title** and paste the *******@pomail.net** (email) in the **Email/Phone** field. Fill out rest of the fields according to your alert requirement.
+13.Enter the **Title** and paste the *****@pomail.net (email) in the Email/Phone field. Fill out rest of the fields according to your alert requirement.
 
 14.click `Save`.
 

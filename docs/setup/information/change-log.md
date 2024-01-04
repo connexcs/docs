@@ -9,4 +9,4 @@ It serves as a historical reference for developers, users, and stakeholders to t
 On the Control Panel, navigate to **Setup :material-menu-right: Information :material-menu-right: Change Log** to view the Change Log.
 You can see information like in which **Area** the feature has been added, **Time**, **Description**, **Tags**
 
-<img src= "/setup/img/changelog.png> 
+<img src= "/setup/img/changelog.png>
