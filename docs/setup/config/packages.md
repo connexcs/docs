@@ -23,7 +23,7 @@ Click the :material-plus: button.
 
     Most providers bill on monthly basis.
 
-    If you select Weekly or Monthly, you can select several days for each bill.
+    If you select the Frequency Weekly or Monthly, Frequency Match option will populate which allows you to select several days for each bill.
 
     For example, to bill bi-monthly, set the **Frequency** to "Monthly," and then **Frequency Match** to 15 and 31 to bill on those days of the month.
 

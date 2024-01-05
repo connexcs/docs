@@ -38,3 +38,7 @@ Configure **Options** to set key default behaviors for the system. Click **`Edit
     Click on the `Save` button to apply the changes to your account.
 
     <img src="/setup/img/siprewrite.png">
+
+=== "Custom Pages"
+
+   Custom Pages allow you to add the created Apps to the **Dashboard** and the **Anyedge**.
