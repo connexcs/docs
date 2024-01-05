@@ -36,7 +36,7 @@ You would need to make a custom alert element and include event listeners in it 
 
 | **Name**| **Description**|
 |----------|----------------|
-|**thi.hide(fields)**|Hides the field|
+|**this.hide(fields)**|Hides the field|
 |**this.show(fields)**|Displays the field|
 
 !!! Info 
