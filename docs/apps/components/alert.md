@@ -56,7 +56,8 @@ You would need to make a custom alert element and include event listeners in it 
         this.hide(fields)
         ```
 
-!!! Note Steps to place/use the methods for components of the Page Builder
+!!! Note "Steps to place/use the methods for components of the Page Builder"
+
     1. Go to Form Attribute :material-menu-right: Action Panel :material-menu-right: Setting :material-menu-right: (Mounted | refresh | click 'Add action')
     2. Click on `Save`.
     3. On the main screen click on `Save` again.
@@ -77,3 +78,6 @@ You would need to make a custom alert element and include event listeners in it 
 |**Center**| Sets the position of the alert label at the center|<img src= "/apps/components/img/alert_center2.png">|
 |**Show Icon**|Displays/Hides the symbol associated with each **Type** of alert|<img src= "/apps/components/img/alert_showicon2.png">|
 |**Attribute Action**|Enable **Hidden** action to hide the alert|<img src= "/apps/components/img/alert_arrtibuteaction.png">|
+
+!!! Note
+    [Click here](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#steps-to-use-components-in-the-page-builder) for the detailed steps on how to use the components.

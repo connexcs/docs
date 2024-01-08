@@ -141,15 +141,15 @@ Drag & Drop Admin Interface Builder, using the following components.
 
 3. After selecting the app it shows a `+` on the right side which is a drop down list, select Page Builder.
 
-<img src= "/apps/img/page1.png">
+<img src= "/apps/img/page1.png" width="400">
 
 4.Enter the **Name** and **Title** of the Page Builder. Select the **App** for the Page Builder. Click `Save`.
 
-<img src= "/apps/img/page2.png">
+<img src= "/apps/img/page2.png" width="300">
 
 5.The created **Page Builder** will be visible on the IDE panel under **Page Builder**. Click on the created Page Builder (test12).
 
-<img src= "/apps/img/page3.png">
+<img src= "/apps/img/page3.png" width="300">
 
 6.Click on the created page builder, it shows with page builder sections where you can **Drag and Drop** the components from the left navigation (Layout).
 
