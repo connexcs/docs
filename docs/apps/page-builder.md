@@ -51,7 +51,8 @@ The Form attribute helps you specify values for the following parameters for all
 |**Action Panel**| Action Panel allows you to specify the actions for buttons and link controls|<img src= "/apps/img/page_actionpanel.png">|
 |**Javascript CDN Library**|Allows you to load external javascript libaries. Our search feature lets you quickly search for libraries from `cdnjs.cloudflare.com`|<img src= "/apps/img/page_js.png">|
 
-!!! Info Form Attribute :material-menu-right: Datasource :material-menu-right: ScriptForge :material-menu-right: Websocket
+!!! Info 
+    Form Attribute :material-menu-right: Datasource :material-menu-right: ScriptForge :material-menu-right: Websocket
     WebSocket enables you to create and manage WebSocket connections within your application. WebSockets are a powerful technology for establishing persistent, two-way communication channels between a web browser and a server, enabling real-time data exchange without the need for constant polling.
     **Example**:
     ```js
@@ -63,13 +64,16 @@ The Form attribute helps you specify values for the following parameters for all
     })
     socket.close(); // closing the socket
 
-!!! Info Form Attribute :material-menu-right: Datasource :material-menu-right: Stores
+!!! Info
+    Form Attribute :material-menu-right: Datasource :material-menu-right: Stores
     Stores accesses Datasource form the Control Panel only.
 
-!!! Info Form Attribute :material-menu-right: Datasource :material-menu-right: Databases
+!!! Info
+    Form Attribute :material-menu-right: Datasource :material-menu-right: Databases
     Stores accesses Datasource form the Control Panel only.
 
-!!! Info Form Attribute :material-menu-right: Datasource :material-menu-right: Saved Query
+!!! Info
+    Form Attribute :material-menu-right: Datasource :material-menu-right: Saved Query
     Using the Page Builder interface we can run a complicated query (runs behind the scenes) and it returns the data. the Saved Queries can be accssed via ScriptForge.
     1. A query can be ran against different endpoints, (CDR, Primary Database, G3 Analytics), so we will need a selector.
     2. From the IDE perspective, we should be able to run an ad-hoc query, e.g we shouldn't need to create a new item and save it before we can run it.
@@ -80,9 +84,9 @@ The Form attribute helps you specify values for the following parameters for all
     5. When the query is saved (/api/cp/setup/query) you can run it /api/cp/setup/query/1234/run with POST or GET and pass the variable along with it. Then it will inject the variables into the saved query and execute it.
     6. This query will then be accessible from ScriptForge or via the Page-builder.
 
-!!! Info Form Attribute :material-menu-right: Datasource :material-menu-right: External
+!!! Info
+    Form Attribute :material-menu-right: Datasource :material-menu-right: External
     Access information externally.
-
 
 ## Platform Features
 
@@ -128,3 +132,25 @@ Drag & Drop Admin Interface Builder, using the following components.
 38. Transfer
 39. Tree-Select
 40. Webphone
+
+### Steps to use Components in the Page Builder
+
+1. Create an Application. [Click here](https://bani-appsection--connexcs-docs.netlify.app/apps/architecture/app/#step-to-create-an-app) for creating an Application.
+
+2. Select the created application from the dropdown.
+
+3. After selecting the app it shows a `+` on the right side which is a drop down list, select Page Builder.
+
+<img src= "/apps/img/page1.png">
+
+4.Enter the **Name** and **Title** of the Page Builder. Select the **App** for the Page Builder. Click `Save`.
+
+<img src= "/apps/img/page2.png">
+
+5.The created **Page Builder** will be visible on the IDE panel under **Page Builder**. Click on the created Page Builder (test12).
+
+<img src= "/apps/img/page3.png">
+
+6.Click on the created page builder, it shows with page builder sections where you can **Drag and Drop** the components from the left navigation (Layout).
+
+<img src= "/apps/img/page4.png">

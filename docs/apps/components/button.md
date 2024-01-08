@@ -68,7 +68,7 @@ Here are some examples of how interactivity can be implemented for **Button** co
 | **Name**|**Description**|**Image**|
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------|-----|
 |**ID**| This is a unique identifier which is used to access the field by the API and the key of the field when the form is saved|<img src= "/apps/components/img/alert_id2.png">|
-|**Name**| [**Optional**] An identifier for the button within the form. It is used by the form builder to associate the button with the data it is submitting. The name is typically not displayed to the user|<img src= "/apps/components/img/button_name.png">|
+|**Name**| [**Optional**] An identifier for the button within the form. It's used by the form builder to associate the button with the data it's submitting. The name is typically not displayed to the user|<img src= "/apps/components/img/button_name.png">|
 |**Button Name**| [**Optional**] The visual identifier label of the field|<img src= "/apps/components/img/button_buttonname.png">|
 |**Width**| [**Optional**] To set the width of the field|<img src= "/apps/components/img/input_width.png">|
 |**Label Width**| [**Optional**] Sets the width of the label|<img src= "/apps/components/img/input_labelwidth1.png">|

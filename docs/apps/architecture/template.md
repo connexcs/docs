@@ -25,6 +25,7 @@ ConnexCS **Templates** use the mustash-compatible template language [**Handlebar
 3.Click on `Save`.
 
 4.The created **Template** will be visible on the IDE panel under **Template**. Click on the created template.
+
 5.Enter the HTML code. Click on `Save` and `Run`.
 
 <img src= "/apps/img/template3.png">

@@ -34,13 +34,34 @@ You would need to make a custom alert element and include event listeners in it 
 
 ### Methods
 
-| **Name**| **Description**|
-|----------|----------------|
-|**this.hide(fields)**|Hides the field|
-|**this.show(fields)**|Displays the field|
+| **Name**| **Description**|**Datatype**|
+|---------|----------------|------------|
+|**this.hide(fields)**|Hides the field|string, array|
+|**this.show(fields)**|Displays the field|string, array|
 
-!!! Info 
-    The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
+!!! Info
+    1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
+    2. **fields** refer to the component **ID**. You can fetch the ID from the **Component Attribute** panel in the Page Builder.
+    3. For using **this.show(fields)** enable the **Hidden** check-box in the **Component Attribute** panel.
+
+!!! Example
+    1. **this.hide(fields)**
+        ```js
+        var fields= ['alert_ilqsq5xq']
+        this.hide(fields)
+        ```
+    2. **this.show(fields)**
+        ```js
+        var fields= ['alert_ilqsq5xq']
+        this.hide(fields)
+        ```
+
+!!! Note Steps to place/use the methods for components of the Page Builder
+    1. Go to Form Attribute :material-menu-right: Action Panel :material-menu-right: Setting :material-menu-right: (Mounted | refresh | click 'Add action')
+    2. Click on `Save`.
+    3. On the main screen click on `Save` again.
+    4. Click on `Preview` to see the code in action.
+    <img src= "/apps/components/img/alert1.png">
 
 ## Config
 
@@ -49,11 +70,10 @@ You would need to make a custom alert element and include event listeners in it 
 |**ID**| This is a unique identifier used to access the field by the API and the key of the field when the form is saved|<img src= "/apps/components/img/alert_id2.png">|
 |**Title**| [**Optional**] The visual identifier label of the field|<img src= "/apps/components/img/alert_title2.png">|
 |**Description**| [**Optional**] Gives information about the alert|<img src= "/apps/components/img/alert_description2.png">|
-|**Width**| [**Optional**] To set the width of the field|<img src= "/apps/components/img/alert_width2.png">|
-|**Hide Label**| Hides the label on the form|<img src= "/apps/components/img/input_hidelabel.png">|
+|**Width**| [**Optional**] To set the width of the field. Example: 20%, 20px, 20rem|<img src= "/apps/components/img/alert_width2.png">|
 |**Effect**| You can either choose from **Dark** or **Light** Mode|<img src= "/apps/components/img/alert_effect2.png">|
 |**Type**| Sets the icon of the selected alert type. **Success**, **Warning**, **Info** and **Error** will have different icons associated with them|<img src= "/apps/components/img/alert_effect3.png">|
 |**Closable**| The user can close the alert box|<img src= "/apps/components/img/alert_closable2.png">|
 |**Center**| Sets the position of the alert label at the center|<img src= "/apps/components/img/alert_center2.png">|
 |**Show Icon**|Displays/Hides the symbol associated with each **Type** of alert|<img src= "/apps/components/img/alert_showicon2.png">|
-|**Attribute Action**|Enable **Hidden** action to hide the field|<img src= "/apps/components/img/alert_arrtibuteaction.png">|
+|**Attribute Action**|Enable **Hidden** action to hide the alert|<img src= "/apps/components/img/alert_arrtibuteaction.png">|
