@@ -26,7 +26,7 @@ Click the :material-plus: button.
     If you select the Frequency Weekly or Monthly, Frequency Match option will populate which allows you to select several days for each bill.
 
     For example, to bill bi-monthly, set the **Frequency** to "Monthly," and then **Frequency Match** to 15 and 31 to bill on those days of the month.
-
+z``
 + **Description**: Describe the product provided in this package.
   
 + **ConnexCS Package**:  If you have a ConnexCS service that you revamp and sell to your customers, you must select it here to enable that feature on the customer account.
