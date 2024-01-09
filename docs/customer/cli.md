@@ -114,7 +114,7 @@ Any number configured as a CLI is a part of the permitted list (unless you use e
 Block all calls that don't have the CLI "123456789":
 
 | CLI | Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
-|-------------|-----------------|-------------|-----------------------|--------|----------|--------------|
+|-----|-----|-----|-----|-----|-----|-----|
 | `123456789`|||| No| Disabled | None|
 
 Allow various CLIs to pass (by entering 2 or more records):
@@ -342,9 +342,9 @@ If a customer sends a call where the CLI starts with a 9 we can strip it out and
 
 For example, `9123456789` will become `4423456789`.
 
-| CLI            | Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
+| CLI| Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
 |----------------|-----------------|-------------|-----------------------|--------|----------|--------------|
-| `^9(.*)$`      |                 | `44$1`      |                       | No     | Disabled | None         |
+| `^9(.*)$` || `44$1`|| No| Disabled | None |
 
 This may be a little complicated, so we can break this down:
 
@@ -359,9 +359,12 @@ In the Rewrite CLI section, `44` is the literal 44 digits, and `$1` will contain
 
 You can use all or part of a sent Pre-Asserted-Identity as the CLI. The following example shows how to capture them all.
 
-| CLI            | Pre-Asserted-ID  | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
+| CLI| Pre-Asserted-ID  | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
 |----------------|------------------|-------------|-----------------------|--------|----------|--------------|
-| `.*`           | `^(?<paid>.*)$`  | `$<paid>`   |                       | No     | Disabled | None         |
+| `.*`| `^(?<paid>.*)$`| `$<paid>`|| No| Disabled | None|
+| `$0`| `^(?<paid>.*)$`| `$<paid>`|| No| Disabled/Filter | Select a database|
+| `/0`| `^(?<paid>.*)$`| `$<paid>`|| No| Disabled/Filter | Select a database|
+| `db`| `^(?<paid>.*)$`| `$<paid>`|| Yes|| Select a database|
 
 Besides the matched group as above, we've the expression `(?<paid>.*)`. Here, `paid` represents a variable which stores this information, and it's then available in the CLI rewrite scope as `$<paid>`.
 
@@ -374,15 +377,15 @@ Manipulate the P-Asserted ID similarly to how we manipulated the CLI. In this ca
 
 | CLI  | Pre-Asserted-ID  | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
 |------|------------------|-------------|-----------------------|--------|----------|--------------|
-| `.*` | `^9(?<paid>.*)$` |             | `44$<paid>`           | No     | Disabled | None         |
+| `.*` | `^9(?<paid>.*)$` || `44$<paid>`| No| Disabled | None|
 
 #### Use CLI
 
 If we want to use the CLI in the Pre-Asserted-Identity it's a little easier as we can just use the numbered group.
 
-| CLI      | Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
+| CLI| Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
 |----------|-----------------|-------------|-----------------------|--------|----------|--------------|
-| `^(.*)$` |                 |             | `$1`                  | No     | Disabled | None         |
+| `^(.*)$`||| `$1`| No | Disabled | None|
 
 ### How to Invert a Regular Expression
 
@@ -394,13 +397,13 @@ This will BLOCK all USA Freephone numbers
 
 The CLI system uses Regular Expressions to match and replace numbers. Here are some examples:
 
-| Number      |            CLI | Replace CLI |                                      Description |
+| Number|CLI | Replace CLI |Description |
 |-------------|:--------------:|:-----------:|:-------------------------------------------------|
-| 123456789   |          ^1234 |             |   Allows only numbers starting with 1234 to pass |
-| 123456789   |           789$ |             |      Allows only numbers ending with 789 to pass |
-| 12345678912 | ^[0-9]{11,12}$ |             | Allows only numbers with 11 or 12 digits to pass |
-| +123456789  |   ^\+([0-9]+)$ |          \1 |                                 Remove the leading + |
-| 01782123456 |    ^0([1-9]+)$ |        44\1 |             Remove the leading 0 and replace it with 44 |
+| 123456789 | ^1234 ||Allows only numbers starting with 1234 to pass |
+| 123456789|789$ ||Allows only numbers ending with 789 to pass |
+| 12345678912 | ^[0-9]{11,12}$ || Allows only numbers with 11 or 12 digits to pass |
+| +123456789  |^\+([0-9]+)$ |\1 |Remove the leading + |
+| 01782123456 |^0([1-9]+)$ |44\1 |Remove the leading 0 and replace it with 44 |
 
 _To learn more about writing regular expressions, visit [**RegExr**](http://regexr.com). It includes tutorials and exercises available for all levels of expertise._
 
