@@ -72,32 +72,32 @@ Some examples of how card components can be made interactive include:
 
 !!! Example
     1. `this.addClassName(fields, className)`
-       * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
-        ```js
-        .abc{ // abc is the class name
-        background-color: red;
-        }
-        ```
-       * Follow the steps in the above **Note**
-       * ```js
-         this.addClassName('card_khlorb9y', 'abc')
-         ```
+          * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
+            ```js
+            .abc{ // abc is the class name
+            background-color: red;
+            }
+            ```
+          * Follow the steps in the above **Note**
+            ```js
+            this.addClassName('card_khlorb9y', 'abc')
+            ```
 
     2. `this.removeClassName(fields, className)`
-    ```js
-    this.removeClassName('card_khlorb9y', 'abc')
-    ```
+        ```js
+        this.removeClassName('card_khlorb9y', 'abc')
+        ```
     
     3. `this.getValue(fieldName)`
-    ```js
-    var cardname = this.getValue('card_khlorb9y');
-    console.log('getValue', cardname);
-    ```
+        ```js
+        var cardname = this.getValue('card_khlorb9y');
+        console.log('getValue', cardname);
+        ```
     4. `this.getValues(fieldName)`
-    ```js
-    var data = this.getValues();
-    console.log(data);
-    ```
+        ```js
+        var data = this.getValues();
+        console.log(data);
+        ```
     5. `this.hide(fields)`
         ```js
         var fields= ['card_khlorb9y']
