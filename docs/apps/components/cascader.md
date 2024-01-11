@@ -2,9 +2,9 @@
 
 ## Description
 
-A **Cascader**, also known as a **Cascade Select** or **Dependent Drop-down**, is a type of input field in a form builder that allows users to select options dynamically based on their previous selections in other fields.
+A **Cascader**, also known as a **Cascade Select** or **Dependent Drop-down**, is a type of input field in a page builder that allows users to select options dynamically based on their previous selections in other fields.
 
-It enables users to navigate through a hierarchical structure of options, narrowing down their choices as they progress through the form.
+It enables users to navigate through a hierarchical structure of options, narrowing down their choices as they progress through the page.
 
 <img src= "/apps/components/img/cascader.png">
 
@@ -32,7 +32,7 @@ It enables users to navigate through a hierarchical structure of options, narrow
 
 ### Interactivity
 
-Integrating interactivity with cascaders in a form builder involves  scripting languages to control the cascader's behavior and respond to user interactions.
+Integrating interactivity with cascaders in a page builder involves  scripting languages to control the cascader's behavior and respond to user interactions.
 
 Here's a general approach to integrating interactivity:
 
@@ -78,31 +78,87 @@ Here's a general approach to integrating interactivity:
 
 ### Methods
 
-| **Name**| **Description**|
-|----------------------|---------------------------------------------------------------------|
-|**this.addClassName(fields, disabled)**|Add style class to form item|
-|**this.removeClassName(fields, disabled)**|Remove form item style|
-| **this.disable(fields)**| Disable input field from user interaction|
-| **this.enable(fields)**| Disable input field from user interaction|
-| **this.getComponent(name) → {Object}**|Retrieve a component from an object or element|
-| **this.getValue(fieldName)**|Get A Value From a component|
-| **this.getValues() → {Object}**|Get the values of all fields when values change|
-|**this.hide(fields)**|Hides the field|
-|**this.show(fields)**|Displays the field|
-|**this.setData(Value)**|Set the data in the field|
+| **Name**| **Description**|**Parameters**|
+|----------------------|---------------------------------------------------------------------|----|
+|`this.addClassName`|Add style class to form item|`(fields: String(componentID), String[]; className: String)`|
+|`this.removeClassName`|Remove form item style|`(fields: String(componentID), String[]; className: String)`|
+|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String(componentID), String[]; Object: Object)`|
+|`this.getValues()`|Get the values of all fields when values change|`(Object: Object)`|
+|`this.hide(fields)`|Hides the field|`(fields: String(componentID)`|
+|`this.show(fields)`|Displays the field|`(fields: String(componentID)`|
+| `this.disable(fields)`| Disable input field from user interaction|`(fields: String(componentID), String[])`|
+
+|`this.setData(Value)`|Set the data in the field|
 |**this.refreshFieldDataSource**|Refresh the datasource data bound to the form field|
 |**this.setOptions(fields, options)**|Set Form Field Configuration Item|
+
+!!! Info
+    1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
+    2. **fields** refer to the component **ID**. You can fetch the ID from the **Component Attribute** panel in the Page Builder.
+    3. For using **this.show(fields)** enable the **Hidden** check-box in the **Component Attribute** panel.
+
+#### Steps to place/use the methods for components of the Page Builder"
+
+1. Go to Form Attribute :material-menu-right: Action Panel :material-menu-right: Setting :material-menu-right: (Mounted | refresh | click 'Add action')
+2. Write the method/code as shown in the **Example** below
+3. Click on `Save`.
+4. On the main screen click on `Save` again.
+5. Click on `Preview` to see the code in action.
+<img src= "/apps/components/img/alert1.png">
+
+!!! Example
+    1. `this.addClassName(fields, className)`
+       * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
+        ```js
+        .abc{ // abc is the class name
+        background-color: red;
+        }
+        ```
+       * Follow the steps in the above **Note**
+       * ```js
+         this.addClassName('button_815t5dfs', 'abc')
+         ```
+
+    2. `this.removeClassName(fields, className)`
+    ```js
+    this.removeClassName('button_815t5dfs', 'abc')
+    ```
+    
+    3. `this.getValue(fieldName)`
+    ```js
+    var buttonname = this.getValue('button_815t5dfs');
+    console.log('getValue', buttonname);
+    ```
+    4. `this.getValues(fieldName)`
+    ```js
+    var data = this.getValues();
+    console.log(data);
+    ```
+    5. `this.hide(fields)`
+        ```js
+        var fields= ['button_815t5dfs']
+        this.hide(fields)
+        ```
+    6. `this.show(fields)`
+        ```js
+        var fields= ['button_815t5dfs']
+        this.show(fields)
+        ```
+    7. `this.disable(['fields'])`
+        ```js
+        this.disable(['button_6ytj0ne9'])
+        ```
 
 ## Config
 
 | **Name**|**Description**|**Image**|
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------|---|
-|**ID**| This is a unique identifier used to access the field by the API and the key of the field when the form is saved|<img src= "/apps/components/img/input_id.png">|
+|**ID**| Cascader's unique identifier|<img src= "/apps/components/img/input_id.png">|
 |**Name**| [**Optional**] The visual identifier label of the field|<img src= "/apps/components/img/checkbox_name.png">|
 |**Width**| [**Optional**] To set the width of the field|<img src= "/apps/components/img/input_width.png">|
 |**Label Width**|Width of the label associated with an input field. It determines the horizontal space occupied by the label text|<img src= "/apps/components/img/input_labelwidth1.png">|
 |**Label Wrap**| If the label is longer than the allowed width the text will continue on another line|<img src= "/apps/components/img/input_labelwrap1.png">|
-|**Hide Label**| Hides the label on the form|<img src= "/apps/components/img/input_hidelabel.png">|
+|**Hide Label**| Hides the label on the page|<img src= "/apps/components/img/input_hidelabel.png">|
 |**Placeholder**| The short hint is displayed in the input field before the user enters a value|<img src= "/apps/components/img/input_placeholder.png">|
 |**Text Prompt**| A description to aid the user when completing the field|<img src= "/apps/components/img/input_textprompt.png">|
 |**Multiple**|Enable this option if you want  your users to select multiple options from the cascader's list of choices|<img src= "/apps/components/img/cascader_mutiple.png">
@@ -133,3 +189,7 @@ Form validation can be performed using a variety of methods, including:
 
 !!! Info
     1. The **callback()function** is also called to verify success in the custom checkup method.
+
+## Steps to use the Components
+
+<a href="https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#steps-to-use-components-in-the-page-builder" target="_blank">Click here</a> for the detailed steps on how to use the components.

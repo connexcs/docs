@@ -34,10 +34,10 @@ You would need to make a custom alert element and include event listeners in it 
 
 ### Methods
 
-| **Name**| **Description**|**Datatype**|
+| **Name**| **Description**|**Parameters**|
 |---------|----------------|------------|
-|`this.hide(fields)`|Hides the field|string, array|
-|`this.show(fields)`|Displays the field|string, array|
+|`this.hide`|Hides the field|`(fields: String(componentID), String[])`|
+|`this.show`|Displays the field|`(fields: String(componentID), String[])`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
@@ -47,7 +47,7 @@ You would need to make a custom alert element and include event listeners in it 
 #### Steps to place/use the methods for components of the Page Builder"
 
 1. Go to Form Attribute :material-menu-right: Action Panel :material-menu-right: Setting :material-menu-right: (Mounted | refresh | click 'Add action')
-2. Write the method/code as shown in the **Exmaple** below
+2. Write the method/code as shown in the **Example** below
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
@@ -69,7 +69,7 @@ You would need to make a custom alert element and include event listeners in it 
 
 |**Name**|**Description**|**Icon**|
 |--------|---------------|--------|
-|**ID**| This is a unique identifier used to access the field by the API and the key of the field when the form is saved|<img src= "/apps/components/img/alert_id2.png">|
+|**ID**| Alert's unique Identifier|<img src= "/apps/components/img/alert_id2.png">|
 |**Title**| [**Optional**] The visual identifier label of the field|<img src= "/apps/components/img/alert_title2.png">|
 |**Description**| [**Optional**] Gives information about the alert|<img src= "/apps/components/img/alert_description2.png">|
 |**Width**| [**Optional**] To set the width of the field. Example: 20%, 20px, 20rem|<img src= "/apps/components/img/alert_width2.png">|
@@ -80,6 +80,6 @@ You would need to make a custom alert element and include event listeners in it 
 |**Show Icon**|Displays/Hides the symbol associated with each **Type** of alert|<img src= "/apps/components/img/alert_showicon2.png">|
 |**Attribute Action**|Enable **Hidden** action to hide the alert|<img src= "/apps/components/img/alert_arrtibuteaction.png">|
 
-## Steps to use the Components
+## First time User?
 
-<a href="https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#steps-to-use-components-in-the-page-builder" target="_blank">Click here</a> for the detailed steps on how to use the components.
+If you are using the Page Builder components on the ConnexCS platform first time, we request you to use our guide on <a href="https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#steps-to-use-components-in-the-page-builder" target="_blank">steps to use the Components</a>.
