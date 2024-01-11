@@ -78,16 +78,16 @@ Here are some examples of how interactivity can be implemented for **Button** co
 
 !!! Example
     1. `this.addClassName(fields, className)`
-       * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
-        ```js
-        .abc{ // abc is the class name
-        background-color: red;
-        }
-        ```
-       * Follow the steps in the above **Note**
-       * ```js
-         this.addClassName('button_815t5dfs', 'abc')
-         ```
+          * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
+            ```js
+            .abc{ // abc is the class name
+            background-color: red;
+            }
+            ```
+          * Follow the steps in the above **Note**
+          * ```js
+            this.addClassName('button_815t5dfs', 'abc')
+            ```
 
     2. `this.removeClassName(fields, className)`
         ```js
@@ -130,8 +130,6 @@ Here are some examples of how interactivity can be implemented for **Button** co
 |**Determine whether it's**|You may select the shape of the button as **plain**, **round** or **circle**|<img src= "/apps/components/img/button_shape.png">|
 |**Custom Class**| An HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Hidden** action to hide the field <br>Enable **Disabled** action to make the field unsuable</br>|<img src= "/apps/components/img/button_attributeaction.png">|
-
-## First time User?
 
 ## First time User?
 
