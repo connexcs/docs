@@ -63,23 +63,23 @@ Some examples of how card components can be made interactive include:
 
 #### Steps to place/use the methods for components of the Page Builder
 
-    1. Go to Form Attribute :material-menu-right: Action Panel :material-menu-right: Setting :material-menu-right: (Mounted | refresh | click 'Add action')
-    2. Write the method/code as shown in the **Exmaple** below.
-    3. Click on `Save`.
-    4. On the main screen click on `Save` again.
-    5. Click on `Preview` to see the code in action.
-    <img src= "/apps/components/img/alert1.png">
+1. Go to Form Attribute :material-menu-right: Action Panel :material-menu-right: Setting :material-menu-right: (Mounted | refresh | click 'Add action').
+2. Write the method/code as shown in the **Exmaple** below
+3. Click on `Save`.
+4. On the main screen click on `Save` again.
+5. Click on `Preview` to see the code in action.
+<img src= "/apps/components/img/alert1.png">
 
 !!! Example
     1. **this.addClassName(fields, className)**
-    * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
-    ```js
-    .abc{ // abc is the class name
-    background-color: red;
-    }
-    ```
-    * Follow the steps in the above **Note**
-    * ```js
+       * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
+        ```js
+        .abc{ // abc is the class name
+        background-color: red;
+        }
+        ```
+       * Follow the steps in the above **Note**
+       * ```js
       this.addClassName('card_khlorb9y', 'abc')
       ```
 
@@ -98,12 +98,12 @@ Some examples of how card components can be made interactive include:
     var data = this.getValues();
     console.log(data);
     ```
-    5. *this.hide(fields)**
+    5. **this.hide(fields)**
         ```js
         var fields= ['card_khlorb9y']
         this.hide(fields)
         ```
-    2. **this.show(fields)**
+    6. **this.show(fields)**
         ```js
         var fields= ['card_khlorb9y']
         this.show(fields)

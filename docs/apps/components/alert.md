@@ -46,12 +46,12 @@ You would need to make a custom alert element and include event listeners in it 
 
 #### Steps to place/use the methods for components of the Page Builder"
 
-    1. Go to Form Attribute :material-menu-right: Action Panel :material-menu-right: Setting :material-menu-right: (Mounted | refresh | click 'Add action')
-    2. Write the method/code as shown in the **Exmaple** below.
-    3. Click on `Save`.
-    4. On the main screen click on `Save` again.
-    5. Click on `Preview` to see the code in action.
-    <img src= "/apps/components/img/alert1.png">
+1. Go to Form Attribute :material-menu-right: Action Panel :material-menu-right: Setting :material-menu-right: (Mounted | refresh | click 'Add action')
+2. Write the method/code as shown in the **Exmaple** below
+3. Click on `Save`.
+4. On the main screen click on `Save` again.
+5. Click on `Preview` to see the code in action.
+<img src= "/apps/components/img/alert1.png">
 
 !!! Example
     1. **this.hide(fields)**
