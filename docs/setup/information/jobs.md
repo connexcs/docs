@@ -17,7 +17,7 @@
 1. **Card**: You can check the status of the Rate Card, when you build it.
 2. **CDR**: You can check the status of any re-rate.
 3. **Delayed**: You can check the status of any task you've delayed.
-4. **ORC**: You can the status of any server which has been added or restarted.
+4. **ORC**: You can check the status of any server which has been added or restarted.
 5. **Send**: You can check the status of the e-mails you send. You can even re-try to send the e-mail along with failed reasons.
 6. **ScriptForge**: You can check the status of the ScriptForge running in the background.
 7. **Switch**: You can check the status of any changes are made to the OpenSIPS.

@@ -7,7 +7,7 @@ You can use **Database** for activities like checking list of numbers, caching e
 ## Steps to create a Database
 
 1. Login to your **Control Panel**.
-2. Click on **IDE** :material menu-right: +.
+2. Click on **IDE** :material-menu-right: +.
 3. Select **Database**.
 
 <img src= "/customer-portal/img/app_database.png" width="400">
@@ -19,7 +19,7 @@ You can use **Database** for activities like checking list of numbers, caching e
 6.Select from the **Dataset Type** which are the preset data storage options. The two options are:
 
 + **Key / Value** - Contains a basic Key / Value Storage.
-+ **Lead Set** - Contains the most common fields when using a datastore for customer / campaign data which you can use with dialers.
++ **Leadset** - Contains the most common fields when using a datastore for customer / campaign data which you can use with dialers.
 
 <img src="/developers/img/db2.png" width="300">
 
@@ -27,4 +27,4 @@ You can use **Database** for activities like checking list of numbers, caching e
 
 <img src="/developers/img/db3.png" width="400">
 
-8.Click on `Save` to finally create the database.
+8.Click on `Save` to create the database.

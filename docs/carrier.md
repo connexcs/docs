@@ -217,6 +217,8 @@ To ensure compatibility, set the switch manufacturer to `bandwidth.com`.
 
 ## Headers from Customers to Providers
 
+Customize the handling of X-Headers between the User Agent Client (UAC) and the carrier. By default, all UAC-originating X-Headers are removed for standardization, but this configuration allows selective retention of specific headers crucial for carrier communication.
+
 When the Carrier requires information on the headers sent from the UAC, you can use below discussed process:
 
 1. Login to your account.
