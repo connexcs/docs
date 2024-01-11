@@ -53,7 +53,7 @@ You would need to make a custom alert element and include event listeners in it 
     2. **this.show(fields)**
         ```js
         var fields= ['alert_ilqsq5xq']
-        this.hide(fields)
+        this.show(fields)
         ```
 
 !!! Note "Steps to place/use the methods for components of the Page Builder"
@@ -79,5 +79,6 @@ You would need to make a custom alert element and include event listeners in it 
 |**Show Icon**|Displays/Hides the symbol associated with each **Type** of alert|<img src= "/apps/components/img/alert_showicon2.png">|
 |**Attribute Action**|Enable **Hidden** action to hide the alert|<img src= "/apps/components/img/alert_arrtibuteaction.png">|
 
-!!! Note
-    [Click here](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#steps-to-use-components-in-the-page-builder) for the detailed steps on how to use the components.
+## Steps to use the Components
+
+[Click here](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#steps-to-use-components-in-the-page-builder target="_blank") for the detailed steps on how to use the components.
