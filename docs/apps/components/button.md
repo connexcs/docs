@@ -90,31 +90,26 @@ Here are some examples of how interactivity can be implemented for **Button** co
          ```
 
     2. `this.removeClassName(fields, className)`
-    ```js
-    this.removeClassName('button_815t5dfs', 'abc')
-    ```
+        ```js
+        this.removeClassName('button_815t5dfs', 'abc')
+        ```
     
-    3. `this.getValue(fieldName)`
-    ```js
-    var buttonname = this.getValue('button_815t5dfs');
-    console.log('getValue', buttonname);
-    ```
-    4. `this.getValues(fieldName)`
-    ```js
-    var data = this.getValues();
-    console.log(data);
-    ```
-    5. `this.hide(fields)`
+    3. `this.getValues(fieldName)`
+        ```js
+        var data = this.getValues();
+        console.log(data);
+        ```
+    4. `this.hide(fields)`
         ```js
         var fields= ['button_815t5dfs']
         this.hide(fields)
         ```
-    6. `this.show(fields)`
+    5. `this.show(fields)`
         ```js
         var fields= ['button_815t5dfs']
         this.show(fields)
         ```
-    7. `this.disable(['fields'])`
+    6. `this.disable(['fields'])`
         ```js
         this.disable(['button_6ytj0ne9'])
         ```
@@ -124,9 +119,9 @@ Here are some examples of how interactivity can be implemented for **Button** co
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------|-----|
 |**ID**| Button's unique Identifier |<img src= "/apps/components/img/alert_id2.png">|
 |**Name**| [**Optional**] An identifier for the button within the page. It's used by the page builder to associate the button with the data it's submitting. The name is typically not displayed to the user|<img src= "/apps/components/img/button_name.png">|
-|**Button Name**| [**Optional**] The visual identifier label of the field|<img src= "/apps/components/img/button_buttonname.png">|
-|**Width**| [**Optional**] To set the width of the field|<img src= "/apps/components/img/input_width.png">|
-|**Label Width**| [**Optional**] Sets the width of the label|<img src= "/apps/components/img/input_labelwidth1.png">|
+|**Button Name**| [**Optional**] The display name of the button|<img src= "/apps/components/img/button_buttonname.png">|
+|**Width**| [**Optional**] The width of the field|<img src= "/apps/components/img/input_width.png">|
+|**Label Width**| [**Optional**] The width of the label field|<img src= "/apps/components/img/input_labelwidth1.png">|
 |**Label Wrap**| If the label is longer than the allowed width the text will continue on another line|<img src= "/apps/components/img/input_labelwrap1.png">|
 |**Hide Label**| Hides the label on the page|<img src= "/apps/components/img/input_hidelabel.png">|
 |**Text Prompt**| A description to aid the user when completing the field|<img src= "/apps/components/img/input_textprompt.png">|

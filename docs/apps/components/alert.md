@@ -72,7 +72,7 @@ You would need to make a custom alert element and include event listeners in it 
 |**ID**| Alert's unique Identifier|<img src= "/apps/components/img/alert_id2.png">|
 |**Title**| [**Optional**] The visual identifier label of the field|<img src= "/apps/components/img/alert_title2.png">|
 |**Description**| [**Optional**] Gives information about the alert|<img src= "/apps/components/img/alert_description2.png">|
-|**Width**| [**Optional**] To set the width of the field. Example: 20%, 20px, 20rem|<img src= "/apps/components/img/alert_width2.png">|
+|**Width**| [**Optional**] The width of the field. Example: 20%, 20px, 20rem|<img src= "/apps/components/img/alert_width2.png">|
 |**Effect**| You can either choose from **Dark** or **Light** Mode|<img src= "/apps/components/img/alert_effect2.png">|
 |**Type**| Sets the icon of the selected alert type. **Success**, **Warning**, **Info** and **Error** will have different icons associated with them|<img src= "/apps/components/img/alert_effect3.png">|
 |**Closable**| The user can close the alert box|<img src= "/apps/components/img/alert_closable2.png">|

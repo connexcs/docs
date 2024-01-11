@@ -115,7 +115,7 @@ Some examples of how card components can be made interactive include:
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------|----|
 |**ID**|Card's unique Identifier|<img src= "/apps/components/img/input_id.png">|
 |**Title**| [**Optional**] The visual identifier label of the field|<img src= "/apps/components/img/alert_title2.png">|
-|**Width**| [**Optional**] To set the width of the field. Example: 20%, 20px, 20rem|<img src= "/apps/components/img/input_width.png">|
+|**Width**| [**Optional**] The width of the field. Example: 20%, 20px, 20rem|<img src= "/apps/components/img/input_width.png">|
 |**Padding**| [**Optional**] Specifies the amount of space between an element's content and its border. Example: 20%, 20px, 20rem|<img src= "/apps/components/img/card_padding.png">
 |**Show Header**| [**Optional**] Hides/Displays the **Title** of the card|<img src= "/apps/components/img/card_showheader.png">
 |**Bordered**| [**Optional**] Adds/Removes the border around the card|<img src= "/apps/components/img/card_bordered.png">
