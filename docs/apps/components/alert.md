@@ -82,3 +82,5 @@ You would need to make a custom alert element and include event listeners in it 
 ## Steps to use the Components
 
 [Click here](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#steps-to-use-components-in-the-page-builder){:target="_blank"} for the detailed steps on how to use the components.
+
+<a href="https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#steps-to-use-components-in-the-page-builder" target="_blank">Open Google in a new tab</a>
