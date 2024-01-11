@@ -44,6 +44,15 @@ You would need to make a custom alert element and include event listeners in it 
     2. **fields** refer to the component **ID**. You can fetch the ID from the **Component Attribute** panel in the Page Builder.
     3. For using **this.show(fields)** enable the **Hidden** check-box in the **Component Attribute** panel.
 
+#### Steps to place/use the methods for components of the Page Builder"
+
+    1. Go to Form Attribute :material-menu-right: Action Panel :material-menu-right: Setting :material-menu-right: (Mounted | refresh | click 'Add action')
+    2. Write the method/code as shown in the **Exmaple** below.
+    3. Click on `Save`.
+    4. On the main screen click on `Save` again.
+    5. Click on `Preview` to see the code in action.
+    <img src= "/apps/components/img/alert1.png">
+
 !!! Example
     1. **this.hide(fields)**
         ```js
@@ -55,14 +64,6 @@ You would need to make a custom alert element and include event listeners in it 
         var fields= ['alert_ilqsq5xq']
         this.show(fields)
         ```
-
-!!! Note "Steps to place/use the methods for components of the Page Builder"
-
-    1. Go to Form Attribute :material-menu-right: Action Panel :material-menu-right: Setting :material-menu-right: (Mounted | refresh | click 'Add action')
-    2. Click on `Save`.
-    3. On the main screen click on `Save` again.
-    4. Click on `Preview` to see the code in action.
-    <img src= "/apps/components/img/alert1.png">
 
 ## Config
 
@@ -81,6 +82,4 @@ You would need to make a custom alert element and include event listeners in it 
 
 ## Steps to use the Components
 
-[Click here](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#steps-to-use-components-in-the-page-builder){:target="_blank"} for the detailed steps on how to use the components.
-
-<a href="https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#steps-to-use-components-in-the-page-builder" target="_blank">Open Google in a new tab</a>
+<a href="https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#steps-to-use-components-in-the-page-builder" target="_blank">Click here</a> for the detailed steps on how to use the components.
