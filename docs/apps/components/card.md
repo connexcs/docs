@@ -48,13 +48,13 @@ Some examples of how card components can be made interactive include:
 
 | **Name**| **Description**|**Datatype**|
 |----------------------|---------------------------------------------------------------------|-----|
-|**this.addClassName(fields, className)**|Add style class to form item|string,array|
-|**this.removeClassName(fields, className)**|Remove form item style|string,array|
-| **this.getComponent(name) → {Object}**|Retrieve a component from an object or element. It returns an object|string,array|
-| **this.getValue(fieldName)**|Get A Value From a component|string,array|
-| **this.getValues() → {Object}**|Get the values of all fields when values change|
-|**this.hide(fields)**|Hides the field|string,array|
-|**this.show(fields)**|Displays the field|string,array|
+|`js this.addClassName(fields, className)`|Add style class to form item|string,array|
+|`this.removeClassName(fields, className)`|Remove form item style|string,array|
+|`this.getComponent(name) → {Object}`|Retrieve a component from an object or element. It returns an object|string,array|
+|`this.getValue(fieldName)`|Get A Value From a component|string,array|
+|`this.getValues() → {Object}`|Get the values of all fields when values change|
+|`this.hide(fields)`|Hides the field|string,array|
+|`this.show(fields)`|Displays the field|string,array|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
@@ -71,7 +71,7 @@ Some examples of how card components can be made interactive include:
 <img src= "/apps/components/img/alert1.png">
 
 !!! Example
-    1. **this.addClassName(fields, className)**
+    1. `this.addClassName(fields, className)`
        * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
         ```js
         .abc{ // abc is the class name

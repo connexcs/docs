@@ -36,8 +36,8 @@ You would need to make a custom alert element and include event listeners in it 
 
 | **Name**| **Description**|**Datatype**|
 |---------|----------------|------------|
-|**this.hide(fields)**|Hides the field|string, array|
-|**this.show(fields)**|Displays the field|string, array|
+|`this.hide(fields)`|Hides the field|string, array|
+|`this.show(fields)`|Displays the field|string, array|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
@@ -54,12 +54,12 @@ You would need to make a custom alert element and include event listeners in it 
 <img src= "/apps/components/img/alert1.png">
 
 !!! Example
-    1. **this.hide(fields)**
+    1. `this.hide(fields)`
         ```js
         var fields= ['alert_ilqsq5xq']
         this.hide(fields)
         ```
-    2. **this.show(fields)**
+    2. `this.show(fields)`
         ```js
         var fields= ['alert_ilqsq5xq']
         this.show(fields)
