@@ -80,17 +80,17 @@ Here's a general approach to integrating interactivity:
 
 | **Name**| **Description**|**Parameters**|
 |----------------------|---------------------------------------------------------------------|----|
-|`this.addClassName`|Add style class to form item|`(fields: String(componentID), String[]; className: String)`|
-|`this.removeClassName`|Remove form item style|`(fields: String(componentID), String[]; className: String)`|
+|`this.addClassName`|Add style class to page item|`(fields: String(componentID), String[]; className: String)`|
+|`this.removeClassName`|Remove page item style|`(fields: String(componentID), String[]; className: String)`|
 |`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String(componentID), String[]; Object: Object)`|
 |`this.getValues()`|Get the values of all fields when values change|`(Object: Object)`|
 |`this.hide(fields)`|Hides the field|`(fields: String(componentID)`|
 |`this.show(fields)`|Displays the field|`(fields: String(componentID)`|
 | `this.disable(fields)`| Disable input field from user interaction|`(fields: String(componentID), String[])`|
+|`this.setData`|Set the data in the field|`(Value: String, String[])`|
 
-|`this.setData(Value)`|Set the data in the field|
-|**this.refreshFieldDataSource**|Refresh the datasource data bound to the form field|
-|**this.setOptions(fields, options)**|Set Form Field Configuration Item|
+|`this.refreshFieldDataSource`|Refresh the datasource data bound to the form field|
+|`this.setOptions(fields, options)`|Set Form Field Configuration Item|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
@@ -165,7 +165,7 @@ Here's a general approach to integrating interactivity:
 |**Searchable**|This method makes it easier for users to find and select options in forms with many choices, especially when they're organized hierarchically|<img src= "/apps/components/img/cascader_searchable.png">
 |**Optional any node**|Allow users to pick any node in the hierarchy, even if it's unrelated to their previous choices, offering flexibility in option selection|<img src= "/apps/components/img/cascader_optional.png">
 |**Option**|Choose either **Static** or **Dynamic** way of adding data to the oprions of the Cascader <br><br>**Static data** refers to a fixed set of options that are predefined and loaded into the cascader at the time of initialization</br></br> **Dynamic data** are options fetched as needed from sources like databases or APIs. The cascader updates choices based on user selections. You select from **Data source** which refers to the origin of the data; **Function** which refers to the code that manipulates the data, and **Assigned Value** which refers to the specific value stored or associated with a data element|<img src= "/apps/components/img/checkbox_static.png"> <img src= "/apps/components/img/checkbox_dynamic.png">|
-|**Default Value**|It Specifies the initial option that is selected when the form is loaded|<img src= "/apps/components/img/input_defaultvalue.png">|
+|**Default Value**|It Specifies the initial option that's selected when the form is loaded|<img src= "/apps/components/img/input_defaultvalue.png">|
 |**Custom Class**| A HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Data Binding** to connect the data to UI<br>Enable **Hidden** action to hide the field</br>Enable **Disabled** action to make the field unsuable<br>Enable **Show clear button** action make the clear button visible|<img src= "/apps/components/img/cascader_attributeaction.png">|
 
