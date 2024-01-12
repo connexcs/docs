@@ -72,9 +72,9 @@ Here's a general approach to integrating interactivity:
 
 | **Name**| **Description**|
 |----------------------|---------------------------------------------------------------------|
-| **onChange (element)**| The onChange event occurs when the value of an field is changed|
-| **onFocus (element)**| The onfocus event occurs when an field gets focus|
-| **onBlur (element)**| The onblur event occurs when an field loses focus|
+| `onChange (element)`| The onChange event occurs when the value of a field is changed|
+| `onFocus (element)`| The onfocus event occurs when a field gets focus|
+| `onBlur (element)`| The onblur event occurs when a field loses focus|
 
 ### Methods
 

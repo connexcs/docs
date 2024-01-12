@@ -48,7 +48,7 @@ Here are some examples of how interactivity can be implemented for **Button** co
 
 | **Name**| **Description**|
 |----------------------|---------------------------------------------------------------------|
-| **onClick (element)**| Event handler that's triggered when the button is clicked. This event handler can be used to perform any number of actions, such as submitting the form, redirecting the user to a different page, or displaying an error message|
+| `onClick (element)`| Event handler that's triggered when the button is clicked. This event handler can be used to perform any number of actions, such as submitting the form, redirecting the user to a different page, or displaying an error message|
 
 ### Methods
 
