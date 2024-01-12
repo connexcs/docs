@@ -362,9 +362,9 @@ You can use all or part of a sent Pre-Asserted-Identity as the CLI. The followin
 | CLI| Pre-Asserted-ID  | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
 |----------------|------------------|-------------|-----------------------|--------|----------|--------------|
 | `.*`| `^(?<paid>.*)$`| `$<paid>`| No| Disabled | None|
-| `$0`| `^(?<paid>.*)$`| `$<paid>`| No| Disabled/Filter | Select a database|
-| `/0`| `^(?<paid>.*)$`| `$<paid>`| No| Disabled/Filter | Select a database|
-| `db`| `^(?<paid>.*)$`| `$<paid>`| Yes | Select a database|
+| | | |`$0`| Yes/No| Disabled/Filter | Select a database|
+| | | |`\0`| Yes/No| Disabled/Filter | Select a database|
+| | | |`<db>`|Yes | |Select a database|
 
 Besides the matched group as above, we've the expression `(?<paid>.*)`. Here, `paid` represents a variable which stores this information, and it's then available in the CLI rewrite scope as `$<paid>`.
 
@@ -402,7 +402,7 @@ The CLI system uses Regular Expressions to match and replace numbers. Here are s
 | 123456789 | ^1234 ||Allows only numbers starting with 1234 to pass |
 | 123456789|789$ ||Allows only numbers ending with 789 to pass |
 | 12345678912 | ^[0-9]{11,12}$ || Allows only numbers with 11 or 12 digits to pass |
-| +123456789  |^\+([0-9]+)$ |\1 |Remove the leading + |
+| +123456789  |^ \+([0-9]+)$ |\1 |Remove the leading + |
 | 01782123456 |^0([1-9]+)$ |44\1 |Remove the leading 0 and replace it with 44 |
 
 _To learn more about writing regular expressions, visit [**RegExr**](http://regexr.com). It includes tutorials and exercises available for all levels of expertise._

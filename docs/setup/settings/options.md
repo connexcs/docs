@@ -25,7 +25,7 @@ Configure **Options** to set key default behaviors for the system. Click **`Edit
     |**Auto Logout**|System will log out a user after timing out.|
     |**Hybrid Menu Only**|When you use ConnexCS in Hybrid mode, this option hides unavailable items from the menu|
 
-   Custom Pages allow you to add the created Apps to the **Dashboard** and the **Anyedge**.
+   Custom Pages allow you to add the created Pages from the IDE to the **Dashboard** and the **Anyedge**. It provides respective information on the Dashboard and Anyedege.
 
 === "Internal SIP Code Rewrite"
 

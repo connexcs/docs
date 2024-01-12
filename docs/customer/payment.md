@@ -15,8 +15,11 @@ To add a new payment
     + **Description** is the name of the payment.
 
         If you wish to hide any information on the customer portal, use **#** followed by the text to hide.
-        For example, PayPal 87878787744XXX #payment from the demo.
-        Please note add a **#** symbol for starting a private comment to store private information along with the public information.
+        
+        !!! Example
+            PayPal 87878787744XXX #payment from the demo.
+        !!! Note
+            Add a **#** symbol for starting a private comment to store private information along with the public information.
 
     + **Total** is the amount of the payment.
     + **Payment Fee (Ref Only)** For payments made through PayPal or another external payment system, the Payment Fee field is automatically filled.
@@ -26,7 +29,7 @@ To add a new payment
 
     ![alt text][payments-tab]
 
-1. Click **`Save`**.
+2. Click **`Save`**.
 
 !!! tip "Pending Payments"
     When a customer places a payment through their bank, it shows **Pending** status.
