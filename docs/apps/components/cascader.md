@@ -154,8 +154,8 @@ Here's a general approach to integrating interactivity:
 | **Name**|**Description**|**Image**|
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------|---|
 |**ID**| Cascader's unique identifier|<img src= "/apps/components/img/input_id.png">|
-|**Name**| [**Optional**] The visual identifier label of the field|<img src= "/apps/components/img/checkbox_name.png">|
-|**Width**| [**Optional**] To set the width of the field|<img src= "/apps/components/img/input_width.png">|
+|**Name**| [**Optional**] The display name of the cascader|<img src= "/apps/components/img/checkbox_name.png">|
+|**Width**| [**Optional**] The width of the field|<img src= "/apps/components/img/input_width.png">|
 |**Label Width**|Width of the label associated with an input field. It determines the horizontal space occupied by the label text|<img src= "/apps/components/img/input_labelwidth1.png">|
 |**Label Wrap**| If the label is longer than the allowed width the text will continue on another line|<img src= "/apps/components/img/input_labelwrap1.png">|
 |**Hide Label**| Hides the label on the page|<img src= "/apps/components/img/input_hidelabel.png">|
@@ -165,9 +165,9 @@ Here's a general approach to integrating interactivity:
 |**Searchable**|This method makes it easier for users to find and select options in forms with many choices, especially when they're organized hierarchically|<img src= "/apps/components/img/cascader_searchable.png">
 |**Optional any node**|Allow users to pick any node in the hierarchy, even if it's unrelated to their previous choices, offering flexibility in option selection|<img src= "/apps/components/img/cascader_optional.png">
 |**Option**|Choose either **Static** or **Dynamic** way of adding data to the oprions of the Cascader <br><br>**Static data** refers to a fixed set of options that are predefined and loaded into the cascader at the time of initialization</br></br> **Dynamic data** are options fetched as needed from sources like databases or APIs. The cascader updates choices based on user selections. You select from **Data source** which refers to the origin of the data; **Function** which refers to the code that manipulates the data, and **Assigned Value** which refers to the specific value stored or associated with a data element|<img src= "/apps/components/img/checkbox_static.png"> <img src= "/apps/components/img/checkbox_dynamic.png">|
-|**Default Value**|It Specifies the initial option that's selected when the form is loaded|<img src= "/apps/components/img/input_defaultvalue.png">|
+|**Default Value**|It specifies the initial option that's selected when the form is loaded|<img src= "/apps/components/img/input_defaultvalue.png">|
 |**Custom Class**| A HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|
-|**Attribute Action**|Enable **Data Binding** to connect the data to UI<br>Enable **Hidden** action to hide the field</br>Enable **Disabled** action to make the field unsuable<br>Enable **Show clear button** action make the clear button visible|<img src= "/apps/components/img/cascader_attributeaction.png">|
+|**Attribute Action**|Enable **Data Binding** to connect the data to UI<br>Enable **Hidden** action to hide the field</br>Enable **Disabled** action to make the field unsuable<br>Enable **Show Clear button** action to make the clear button visible.|<img src= "/apps/components/img/cascader_attributeaction.png">|
 
 ### Validation
 
