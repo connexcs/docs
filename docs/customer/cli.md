@@ -361,10 +361,10 @@ You can use all or part of a sent Pre-Asserted-Identity as the CLI. The followin
 
 | CLI| Pre-Asserted-ID  | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
 |----------------|------------------|-------------|-----------------------|--------|----------|--------------|
-| `.*`| `^(?<paid>.*)$`| `$<paid>`|| No| Disabled | None|
-| `$0`| `^(?<paid>.*)$`| `$<paid>`|| No| Disabled/Filter | Select a database|
-| `/0`| `^(?<paid>.*)$`| `$<paid>`|| No| Disabled/Filter | Select a database|
-| `db`| `^(?<paid>.*)$`| `$<paid>`|| Yes|| Select a database|
+| `.*`| `^(?<paid>.*)$`| `$<paid>`| No| Disabled | None|
+| `$0`| `^(?<paid>.*)$`| `$<paid>`| No| Disabled/Filter | Select a database|
+| `/0`| `^(?<paid>.*)$`| `$<paid>`| No| Disabled/Filter | Select a database|
+| `db`| `^(?<paid>.*)$`| `$<paid>`| Yes | Select a database|
 
 Besides the matched group as above, we've the expression `(?<paid>.*)`. Here, `paid` represents a variable which stores this information, and it's then available in the CLI rewrite scope as `$<paid>`.
 

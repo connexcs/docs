@@ -25,6 +25,8 @@ Configure **Options** to set key default behaviors for the system. Click **`Edit
     |**Auto Logout**|System will log out a user after timing out.|
     |**Hybrid Menu Only**|When you use ConnexCS in Hybrid mode, this option hides unavailable items from the menu|
 
+   Custom Pages allow you to add the created Apps to the **Dashboard** and the **Anyedge**.
+
 === "Internal SIP Code Rewrite"
 
     The Internal SIP Code Rewrite option allows you to re-write the SIP Codes already present.
@@ -39,6 +41,3 @@ Configure **Options** to set key default behaviors for the system. Click **`Edit
 
     <img src="/setup/img/siprewrite.png">
 
-=== "Custom Pages"
-
-   Custom Pages allow you to add the created Apps to the **Dashboard** and the **Anyedge**.
