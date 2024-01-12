@@ -223,7 +223,7 @@ When the Carrier requires information on the headers sent from the UAC, you can 
 
 1. Login to your account.
 2. Navigate to Management :material-menu-right: Customer :material-menu-right: Carrier :material-menu-right: blue `+` button :material-menu-right: Config :material-menu-right: Vars<sup>TOML</sup>.
-3. We consider an example here: **Example of how to retain X-ng199 but remove all other X-headers**
+3. Consider an example here: **Example of how to retain X-ng199 but remove all other X-headers**
 4. Enter the code in the Vars<sup>TOML</sup> section.
 
 ```js

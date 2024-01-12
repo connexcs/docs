@@ -23,7 +23,7 @@ You can use **Database** for activities like checking list of numbers, caching e
 
 <img src="/developers/img/db2.png" width="300">
 
-7.Next to the **Basic** Tab is the **SQL Table Schema**. This allows you to add additional fields apart from the **Leadset**. You can also select it's **Type** like integer, string, double, float etc.
+7.Next to the **Basic** Tab is the **SQL Table Schema**. This allows you to add additional fields to leadset, change order, remove a field. You can also select it's **Type** like integer, string, double, float etc.
 
 <img src="/developers/img/db3.png" width="400">
 
