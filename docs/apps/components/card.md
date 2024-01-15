@@ -111,7 +111,7 @@ Some examples of how card components can be made interactive include:
 
 ## Config
 
-| **Name**|**Description**|**Image**|
+| **Name**|**Description**|**Icon**|
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------|----|
 |**ID**|Card's unique Identifier|<img src= "/apps/components/img/input_id.png">|
 |**Title**| [**Optional**] The visual identifier label of the field|<img src= "/apps/components/img/alert_title2.png">|

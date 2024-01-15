@@ -41,18 +41,18 @@ It can be used to improve the readability and usability of forms by making it ea
 !!! Example
     1. `this.hide(fields)`
         ```js
-        var fields= ['alert_ilqsq5xq']
+        var fields= ['divider_xjmcv33p']
         this.hide(fields)
         ```
     2. `this.show(fields)`
         ```js
-        var fields= ['alert_ilqsq5xq']
+        var fields= ['divider_xjmcv33p']
         this.show(fields)
         ```
 
 ## Config
 
-| **Name**|**Description**|**Image**
+| **Name**|**Description**|**Icon**
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------|--|
 |**ID**| Divider's unique identifier which is used to access the field by the API and the key of the field when the form is saved |<img src= "/apps/components/img/input_id.png">|
 |**Name**| [**Optional**] The visual identifier label of the field|<img src= "/apps/components/img/checkbox_name.png">|

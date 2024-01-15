@@ -100,7 +100,7 @@ Here's a general approach to integrating interactivity:
 #### Steps to place/use the methods for components of the Page Builder"
 
 1. Go to Form Attribute :material-menu-right: Action Panel :material-menu-right: Setting :material-menu-right: (Mounted | refresh | click 'Add action')
-2. Write the method/code as shown in the **Example** below
+2. Write the method/code as shown in the **Example** below.
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
@@ -116,18 +116,18 @@ Here's a general approach to integrating interactivity:
         ```
        * Follow the steps in the above **Note**
        * ```js
-         this.addClassName('button_815t5dfs', 'abc')
+         this.addClassName('cascader_ccj8m3in', 'abc')
          ```
 
     2. `this.removeClassName(fields, className)`
     ```js
-    this.removeClassName('button_815t5dfs', 'abc')
+    this.removeClassName('cascader_ccj8m3in', 'abc')
     ```
     
     3. `this.getValue(fieldName)`
     ```js
-    var buttonname = this.getValue('button_815t5dfs');
-    console.log('getValue', buttonname);
+    var cascadername = this.getValue('cascader_ccj8m3in');
+    console.log('getValue', cascadername);
     ```
     4. `this.getValues(fieldName)`
     ```js
@@ -136,17 +136,17 @@ Here's a general approach to integrating interactivity:
     ```
     5. `this.hide(fields)`
         ```js
-        var fields= ['button_815t5dfs']
+        var fields= ['cascader_ccj8m3in']
         this.hide(fields)
         ```
     6. `this.show(fields)`
         ```js
-        var fields= ['button_815t5dfs']
+        var fields= ['cascader_ccj8m3in']
         this.show(fields)
         ```
     7. `this.disable(['fields'])`
         ```js
-        this.disable(['button_6ytj0ne9'])
+        this.disable(['cascader_ccj8m3in'])
         ```
 
 ## Config
@@ -166,7 +166,7 @@ Here's a general approach to integrating interactivity:
 |**Optional any node**|Allow users to pick any node in the hierarchy, even if it's unrelated to their previous choices, offering flexibility in option selection|<img src= "/apps/components/img/cascader_optional.png">
 |**Option**|Choose either **Static** or **Dynamic** way of adding data to the oprions of the Cascader <br><br>**Static data** refers to a fixed set of options that are predefined and loaded into the cascader at the time of initialization</br></br> **Dynamic data** are options fetched as needed from sources like databases or APIs. The cascader updates choices based on user selections. You select from **Data source** which refers to the origin of the data; **Function** which refers to the code that manipulates the data, and **Assigned Value** which refers to the specific value stored or associated with a data element|<img src= "/apps/components/img/checkbox_static.png"> <img src= "/apps/components/img/checkbox_dynamic.png">|
 |**Default Value**|It specifies the initial option that's selected when the form is loaded|<img src= "/apps/components/img/input_defaultvalue.png">|
-|**Custom Class**| A HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|
+|**Custom Class**| An HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Data Binding** to connect the data to UI<br>Enable **Hidden** action to hide the field</br>Enable **Disabled** action to make the field unsuable<br>Enable **Show Clear button** action to make the clear button visible.|<img src= "/apps/components/img/cascader_attributeaction.png">|
 
 ### Validation

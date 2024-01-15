@@ -96,15 +96,15 @@ Some of the most common methods include:
         ```
     6. `this.getValue('fieldName')`
         ```js
-        var namee = this.getValue('collapse_itxbeisp');
-        console.log('getValue',namee);
+        var collapsename = this.getValue('collapse_itxbeisp');
+        console.log('getValue',collapsename);
         ```
 
 ## Config
 
-| **Name**|**Description**|**Image**|
+| **Name**|**Description**|**Icon**|
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------|--|
-|**ID**| Collapse's unique identifier which is used to access the field by the API and the key of the field when the form is saved|<img src= "/apps/components/img/input_id.png">|
+|**ID**| Collapse's unique identifier|<img src= "/apps/components/img/input_id.png">|
 |**Collapse Options**|Allows you to add/delete multiple Collapses|<img src= "/apps/components/img/collapse_collapseoptions.png">|
 |**Accordian Mode**|Enable this mode if you want to display only one Collaspse section at a time (this is helpful when you have to avoid clutter when you have multiple Collapse sections)|<img src= "/apps/components/img/collapse_accordionmode.png">
 |**Custom Class**| An HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|

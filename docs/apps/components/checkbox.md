@@ -124,15 +124,15 @@ Some of the most common methods include:
         ```
     7. `this.getValue('fieldName')`
         ```js
-        var namee = this.getValue('checkbox_g0x4pt54z');
-        console.log('getValue',namee);
+        var checkname = this.getValue('checkbox_g0x4pt54z');
+        console.log('getValue',checkname);
         ```
 
 ## Config
 
-| **Name**|**Description**|**Image**
+| **Name**|**Description**|**Icon**
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------|--|
-|**ID**| Checkbox's unique identifier which is used to access the field by the API and the key of the field when the form is saved|<img src= "/apps/components/img/input_id.png">|
+|**ID**| Checkbox's unique identifier|<img src= "/apps/components/img/input_id.png">|
 |**Name**| [**Optional**] The display name of the checkbox|<img src= "/apps/components/img/checkbox_name.png">|
 |**Width**| [**Optional**] Width of the field|<img src= "/apps/components/img/input_width.png">|
 |**Label Width**|Width of the label associated with an input field. It determines the horizontal space occupied by the label text|<img src= "/apps/components/img/input_labelwidth1.png">|

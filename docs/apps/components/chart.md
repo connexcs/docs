@@ -32,28 +32,91 @@ The 3 types of Charts we use are:
 
 ### Methods
 
-| **Name**| **Description**|
-|----------------------|---------------------------------------------------------------------|
-|**this.addClassName(fields, disabled)**|Add style class to form item|
-|**this.removeClassName(fields, disabled)**|Remove form item style|
-| **this.disable(fields)**| Disable input field from user interaction|
-| **this.enable(fields)**| Disable input field from user interaction|
-| **this.getComponent(name) → {Object}**|Retrieve a component from an object or element|
-| **this.getValue(fieldName)**|Get A Value From a component|
-| **this.getValues() → {Object}**|Get the values of all fields when values change|
-|**this.hide(fields)**|Hides the field|
-|**this.show(fields)**|Displays the field|
-|**this.setData(Value)**|Set the data in the field|
+| **Name**| **Description**|**Parameters**|
+|----------------------|---------------------------------------------------------------------|----|
+|`this.addClassName`|Add style class to page item|`(fields: String(componentID), String[]; className: String)`|
+|`this.removeClassName`|Remove page item style|`(fields: String(componentID), String[]; className: String)`|
+|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String(componentID), String[]; Object: Object)`|
+|`this.getValues()`|Get the values of all fields when values change|`(Object: Object)`|
+|`this.hide(fields)`|Hides the field|`(fields: String(componentID)`|
+|`this.show(fields)`|Displays the field|`(fields: String(componentID)`|
+| `this.disable(fields)`| Disable input field from user interaction|`(fields: String(componentID), String[])`|
+|`this.setData`|Set the data in the field|`(Value: String, String[])`|
+|`this.getValue`|Get A Value From a component|`(fieldName String(componentID)`|
+
+!!! Info
+    1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
+    2. **fields** refer to the component **ID**. You can fetch the ID from the **Component Attribute** panel in the Page Builder.
+    3. For using **this.show(fields)** enable the **Hidden** check-box in the **Component Attribute** panel.
+
+#### Steps to place/use the methods for components of the Page Builder"
+
+1. Go to Form Attribute :material-menu-right: Action Panel :material-menu-right: Setting :material-menu-right: (Mounted | refresh | click 'Add action')
+2. Write the method/code as shown in the **Example** below
+3. Click on `Save`.
+4. On the main screen click on `Save` again.
+5. Click on `Preview` to see the code in action.
+<img src= "/apps/components/img/alert1.png">
+
+!!! Example
+    1. `this.addClassName(fields, className)`
+       * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
+        ```js
+        .abc{ // abc is the class name
+        background-color: red;
+        }
+        ```
+       * Follow the steps in the above **Note**
+       * ```js
+         this.addClassName('echarts_moy2lbor', 'abc')
+         ```
+
+    2. `this.removeClassName(fields, className)`
+    ```js
+    this.removeClassName('echarts_moy2lbor', 'abc')
+    ```
+    
+    3. `this.getValue(fieldName)`
+    ```js
+    var chartname = this.getValue('echarts_moy2lbor');
+    console.log('getValue', chartname);
+    ```
+    4. `this.getValues(fieldName)`
+    ```js
+    var data = this.getValues();
+    console.log(data);
+    ```
+    5. `this.hide(fields)`
+        ```js
+        var fields= ['echarts_moy2lbor']
+        this.hide(fields)
+        ```
+    6. `this.show(fields)`
+        ```js
+        var fields= ['echarts_moy2lbor']
+        this.show(fields)
+        ```
+    7. `this.disable(['fields'])`
+        ```js
+        this.disable(['echarts_moy2lbor'])
+        ```
+    8.`this.getValue('fieldName')`
+        ```js
+        var chartname = this.getValue('echarts_moy2lbor');
+        console.log('getValue',chartname);
+        ```
+
+**example of setData**
 
 ## Config
 
 | **Name**|**Description**|**Icon**|
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
-|**ID**| This is a unique identifier which is used to access the field by the API and the key of the field when the form is saved|<img src= "/apps/components/img/input_id.png">|
-|**Width**| [**Optional**] To set the width of the field|<img src= "/apps/components/img/input_width.png">|
-|**Height**| [**Optional**] To set the height of the field|<img src= "/apps/components/charts_height.png">|
-|**Default**| Set any default data for the charts|<img src= "/apps/components/charts_default.png">|
-|**Custom Class**| A HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|
+|**ID**| Chart's unique identifier|<img src= "/apps/components/img/input_id.png">|
+|**Width**| [**Optional**] Width of the field|<img src= "/apps/components/img/input_width.png">|
+|**Height**| [**Optional**] Height of the field|<img src= "/apps/components/charts_height.png">|
+|**Default**| Default data for the charts|<img src= "/apps/components/charts_default.png">|
+|**Custom Class**| An HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Data Binding** to connect the data to UI|<img src= "/apps/components/charts_attributeaction.png">|
 
 1. **Basic**: Set the basic fields in a chart.
@@ -78,7 +141,7 @@ The 3 types of Charts we use are:
 
    * **X-Axis Index**:The X-axis index in a graph refers to the numerical values or categories displayed along the bottom horizontal axis.
 
-   * **Y-Axis Index**: The Y-axis index in a graph refers to the numerical values displayed along the vertical axis
+   * **Y-Axis Index**: The Y-axis index in a graph refers to the numerical values displayed along the vertical axis.
 
 <img src= "/apps/components/charts_series.png">
 
@@ -117,3 +180,7 @@ The 3 types of Charts we use are:
     * **Height**: Change the height of the chart using the slider.
 
 <img src= "/apps/components/charts_grid.png">
+
+## Steps to use the Components
+
+<a href="https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#steps-to-use-components-in-the-page-builder" target="_blank">Click here</a> for the detailed steps on how to use the components.

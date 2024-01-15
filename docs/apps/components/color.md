@@ -99,12 +99,12 @@ Some of the most common methods include:
             ```
           * Follow the steps in the above **Note**
           * ```js
-            this.addClassName('checkbox_g0x4pt54z', 'abc')
+            this.addClassName('color_zxqxhwlh', 'abc')
             ```
 
     2. `this.removeClassName(fields, className)`
         ```js
-        this.removeClassName('checkbox_g0x4pt54z', 'abc')
+        this.removeClassName('color_zxqxhwlh', 'abc')
         ```
     
     3. `this.getValues(fieldName)`
@@ -114,29 +114,29 @@ Some of the most common methods include:
         ```
     4. `this.hide(fields)`
         ```js
-        var fields= ['checkbox_g0x4pt54z']
+        var fields= ['color_zxqxhwlh']
         this.hide(fields)
         ```
     5. `this.show(fields)`
         ```js
-        var fields= ['checkbox_g0x4pt54z']
+        var fields= ['color_zxqxhwlh']
         this.show(fields)
         ```
     6. `this.disable(['fields'])`
         ```js
-        this.disable(['checkbox_g0x4pt54z'])
+        this.disable(['color_zxqxhwlh'])
         ```
     7. `this.getValue('fieldName')`
         ```js
-        var namee = this.getValue('checkbox_g0x4pt54z');
-        console.log('getValue',namee);
+        var colorname = this.getValue('color_zxqxhwlh');
+        console.log('getValue',colorname);
         ```
 
 ## Config
 
-| **Name**|**Description**|**Image**
+| **Name**|**Description**|**Icon**
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------|--|
-|**ID**| Color's unique identifier which is used to access the field by the API and the key of the field when the form is saved|<img src= "/apps/components/img/input_id.png">|
+|**ID**| Color's unique identifier|<img src= "/apps/components/img/input_id.png">|
 |**Name**| [**Optional**] The visual identifier label of the field|<img src= "/apps/components/img/checkbox_name.png">|
 |**Width**| [**Optional**] Width of the field|<img src= "/apps/components/img/input_width.png">|
 |**Label Width**|Width of the label associated with an input field. It determines the horizontal space occupied by the label text|<img src= "/apps/components/img/input_labelwidth1.png">|

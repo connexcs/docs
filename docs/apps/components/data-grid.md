@@ -27,33 +27,94 @@
 
 | **Name**| **Description**|
 |----------------------|---------------------------------------------------------------------|
-| **onCellClicked**| The onCellClicked event occurs when the cell in a data grid is clicked|
-| **onLinkClicked**| The onLinkClicked event occurs when the link is clicked|
+| `onCellClicked`| The onCellClicked event occurs when the cell in a data grid is clicked|
+| `onLinkClicked`| The onLinkClicked event occurs when the link is clicked|
 
 ### Methods
 
-| **Name**| **Description**|
-|----------------------|---------------------------------------------------------------------|
-|**this.addClassName(fields, disabled)**|Add style class to form item|
-|**this.removeClassName(fields, disabled)**|Remove form item style|
-| **this.disable(fields)**| Disable input field from user interaction|
-| **this.enable(fields)**| Enable input field from user interaction|
-| **this.getComponent(name) → {Object}**|Retrieve a component from an object or element|
-| **this.getValue(fieldName)**|Get A Value From a component|
-| **this.getValues() → {Object}**|Get the values of all fields when values change|
-|**this.hide(fields)**|Hides the field|
-|**this.show(fields)**|Displays the field|
-|**this.setData(Value)**|Set the data in the field|
+| **Name**| **Description**|**Parameters**|
+|----------------------|---------------------------------------------------------------------|----|
+|`this.addClassName`|Add style class to page item|`(fields: String(componentID), String[]; className: String)`|
+|`this.removeClassName`|Remove page item style|`(fields: String(componentID), String[]; className: String)`|
+|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String(componentID), String[]; Object: Object)`|
+|`this.getValues()`|Get the values of all fields when values change|`(Object: Object)`|
+|`this.hide(fields)`|Hides the field|`(fields: String(componentID)`|
+|`this.show(fields)`|Displays the field|`(fields: String(componentID)`|
+| `this.disable(fields)`| Disable input field from user interaction|`(fields: String(componentID), String[])`|
+|`this.setData`|Set the data in the field|`(Value: String, String[])`|
+|`this.getValue`|Get A Value From a component|`(fieldName String(componentID)`|
+
+!!! Info
+    1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
+    2. **fields** refer to the component **ID**. You can fetch the ID from the **Component Attribute** panel in the Page Builder.
+    3. For using **this.show(fields)** enable the **Hidden** check-box in the **Component Attribute** panel.
+
+#### Steps to place/use the methods for components of the Page Builder"
+
+1. Go to Form Attribute :material-menu-right: Action Panel :material-menu-right: Setting :material-menu-right: (Mounted | refresh | click 'Add action')
+2. Write the method/code as shown in the **Example** below.
+3. Click on `Save`.
+4. On the main screen click on `Save` again.
+5. Click on `Preview` to see the code in action.
+<img src= "/apps/components/img/alert1.png">
+
+!!! Example
+    1. `this.addClassName(fields, className)`
+       * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
+        ```js
+        .abc{ // abc is the class name
+        background-color: red;
+        }
+        ```
+       * Follow the steps in the above **Note**
+       * ```js
+         this.addClassName('aggrid_nd93m43c', 'abc')
+         ```
+
+    2. `this.removeClassName(fields, className)`
+    ```js
+    this.removeClassName('aggrid_nd93m43c', 'abc')
+    ```
+    
+    3. `this.getValue(fieldName)`
+    ```js
+    var dataname = this.getValue('aggrid_nd93m43c');
+    console.log('getValue', dataname);
+    ```
+    4. `this.getValues(fieldName)`
+    ```js
+    var data = this.getValues();
+    console.log(data);
+    ```
+    5. `this.hide(fields)`
+        ```js
+        var fields= ['aggrid_nd93m43c']
+        this.hide(fields)
+        ```
+    6. `this.show(fields)`
+        ```js
+        var fields= ['aggrid_nd93m43c']
+        this.show(fields)
+        ```
+    7. `this.disable(['fields'])`
+        ```js
+        this.disable(['aggrid_nd93m43c'])
+        ```
+    8.`this.getValue('fieldName')`
+        ```js
+        var dataname = this.getValue('aggrid_nd93m43c');
+        console.log('getValue',datanamee);
+        ```
 
 ## Config
 
 | **Name**|**Description**|**Icon**|
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
-|**ID**| This is a unique identifier which is used to access the field by the API and the key of the field when the form is saved|<img src= "/apps/components/img/input_id.png">|
+|**ID**| Data-grid's unique identifier|<img src= "/apps/components/img/input_id.png">|
 |**Width**| [**Optional**] To set the width of the field|<img src= "/apps/components/img/input_width.png">|
-|**Status Bar**|Displays information about the number of rows and cloumns|<img src= "/apps/components/img/datagrid_statusbar.png">|
+|**Status Bar**|Displays information about the number of rows and columns|<img src= "/apps/components/img/datagrid_statusbar.png">|
 |**Side Bar**|Displays the side bar with Columns and Filters|<img src= "/apps/components/img/datagrid_sidebar.png">|
-|**Enable Range Selection**|Enable to select multiple cells in the datagrid and it provides you with minimum value, maximum value, average, sum, count|<img src= "/apps/components/img/datagrid_rangeselection.png">|
+|**Enable Range Selection**|Enable to select multiple cells in the data-grid and it provides you with minimum value, maximum value, average, sum, count|<img src= "/apps/components/img/datagrid_rangeselection.png">|
 |**Suppress Context Menu**|When disabled, it enables the mouse right-click which has options like export into `.CSV` file or `Excel`, copy or copy with headers etc|<img src= "/apps/components/img/datagrid_suppress.png">|
 |**Context Menu**|You can select from various options to add to your context menu|<img src= "/apps/components/img/datagrid_contextmenu.png">|
 |**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** to action to hide the field|<img src= "/apps/components/img/datagrid_attributeaction.png">|
@@ -120,7 +181,7 @@ It allows you to customize the appearance of data to improve readability, highli
 
 7.**Charts**
    
-   * **Charts Data Type**: 
+   * **Charts Data Type**:
        
        * Excluded: Data in columns marked as "excluded" aren't included in the visual representation of the chart.
        
@@ -131,3 +192,10 @@ It allows you to customize the appearance of data to improve readability, highli
        * Time: Data in columns marked as "time" represent temporal information, often used for time-series charts that track trends or changes over time.
 
 <img src= "/apps/components/img/datagrid_charts.png" width="400">
+
+!!! Info
+    1. The **callback()function** is also called to verify success in the custom checkup method.
+
+## Steps to use the Components
+
+<a href="https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#steps-to-use-components-in-the-page-builder" target="_blank">Click here</a> for the detailed steps on how to use the components.

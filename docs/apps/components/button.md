@@ -115,7 +115,7 @@ Here are some examples of how interactivity can be implemented for **Button** co
         ```
 ## Config
 
-| **Name**|**Description**|**Image**|
+| **Name**|**Description**|**Icon**|
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------|-----|
 |**ID**| Button's unique Identifier |<img src= "/apps/components/img/alert_id2.png">|
 |**Name**| [**Optional**] An identifier for the button within the page. It's used by the page builder to associate the button with the data it's submitting. The name is typically not displayed to the user|<img src= "/apps/components/img/button_name.png">|
