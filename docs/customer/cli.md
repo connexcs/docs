@@ -118,6 +118,7 @@ Block all calls that don't have the CLI "123456789":
 | `123456789`|||| No| Disabled | None|
 
 Allow various CLIs to pass (by entering 2 or more records):
+
 | CLI| Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
 |-------------|-----------------|-------------|-----------------------|--------|----------|--------------|
 | `123456789`|||| No| Disabled | None |
