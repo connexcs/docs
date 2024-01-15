@@ -7,7 +7,7 @@ The ConnexCS **Firewall** uses a threat detection system to blacklist attackers.
 ## Configure Firewall
 
 1. Click on the blue `+` button.
-2. Enter the **IP Address** you want to block in the first field.
+2. Enter the **IP Address** you want to block in the first field. You can only enter a **single IP Address**.
 3. Select **Block** from the **Action** dropdown menu.
 4. You can add additional information in the **Notes** section.
 
