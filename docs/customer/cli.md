@@ -355,16 +355,13 @@ This may be a little complicated, so we can break this down:
 
 In the Rewrite CLI section, `44` is the literal 44 digits, and `$1` will contain what it has matched in the previous stage.
 
-#### Use Pre-Asserted-Identity as CLI
+#### Use PAID as CLI
 
 You can use all or part of a sent Pre-Asserted-Identity as the CLI. The following example shows how to capture them all.
 
 | CLI| Pre-Asserted-ID  | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
 |----------------|------------------|-------------|-----------------------|--------|----------|--------------|
 | `.*`| `^(?<paid>.*)$`| `$<paid>`| No| Disabled | None|
-| | | |`$0`| No| Disabled/Filter | Select a database|
-| | | |`\0`| No| Disabled/Filter | Select a database|
-| | | |`<db>`|Yes | |Select a database|
 
 Besides the matched group as above, we've the expression `(?<paid>.*)`. Here, `paid` represents a variable which stores this information, and it's then available in the CLI rewrite scope as `$<paid>`.
 
@@ -379,13 +376,16 @@ Manipulate the P-Asserted ID similarly to how we manipulated the CLI. In this ca
 |------|------------------|-------------|-----------------------|--------|----------|--------------|
 | `.*` | `^9(?<paid>.*)$` || `44$<paid>`| No| Disabled | None|
 
-#### Use CLI
+#### Use CLI as PAID
 
 If we want to use the CLI in the Pre-Asserted-Identity it's a little easier as we can just use the numbered group.
 
 | CLI| Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
 |----------|-----------------|-------------|-----------------------|--------|----------|--------------|
 | `^(.*)$`||| `$1`| No | Disabled | None|
+| | | |`$0`| No| Disabled/Filter | Select a database|
+| | | |`\0`| No| Disabled/Filter | Select a database|
+| | | |`<db>`|Yes | |Select a database|
 
 ### How to Invert a Regular Expression
 

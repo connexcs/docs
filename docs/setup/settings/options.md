@@ -27,6 +27,7 @@ Configure **Options** to set key default behaviors for the system. Click **`Edit
 
    Custom Pages allow you to add the created Pages from the IDE to the **Dashboard** and the **Anyedge**. It provides respective information on the Dashboard and Anyedege.
 
+
 === "Internal SIP Code Rewrite"
 
     The Internal SIP Code Rewrite option allows you to re-write the SIP Codes already present.
