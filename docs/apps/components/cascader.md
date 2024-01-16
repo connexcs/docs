@@ -148,6 +148,10 @@ Here's a general approach to integrating interactivity:
         ```js
         this.disable(['cascader_ccj8m3in'])
         ```
+    8. `this.getComponent('component_ID')`
+        ```js
+        var cascadername = this.getComponent('cascader_ccj8m3in');
+        console.log('getComponent',cascadername);
 
 ## Config
 
@@ -190,6 +194,6 @@ Form validation can be performed using a variety of methods, including:
 !!! Info
     1. The **callback()function** is also called to verify success in the custom checkup method.
 
-## Steps to use the Components
+## First time User?
 
-<a href="https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#steps-to-use-components-in-the-page-builder" target="_blank">Click here</a> for the detailed steps on how to use the components.
+If you are using the Page Builder components on the ConnexCS platform first time, we request you to use our guide on <a href="https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#steps-to-use-components-in-the-page-builder" target="_blank">steps to use the Components</a>.

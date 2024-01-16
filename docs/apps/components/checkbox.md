@@ -127,6 +127,10 @@ Some of the most common methods include:
         var checkname = this.getValue('checkbox_g0x4pt54z');
         console.log('getValue',checkname);
         ```
+    8. `this.getComponent('component_ID')`
+        ```js
+        var checkname = this.getComponent('checkbox_g0x4pt54z');
+        console.log('getComponent',checkname);
 
 ## Config
 

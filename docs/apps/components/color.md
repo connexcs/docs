@@ -131,13 +131,17 @@ Some of the most common methods include:
         var colorname = this.getValue('color_zxqxhwlh');
         console.log('getValue',colorname);
         ```
+    8. `this.getComponent('component_ID')`
+        ```js
+        var colorname = this.getComponent('color_zxqxhwlh');
+        console.log('getComponent',colorname);
 
 ## Config
 
 | **Name**|**Description**|**Icon**
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------|--|
 |**ID**| Color's unique identifier|<img src= "/apps/components/img/input_id.png">|
-|**Name**| [**Optional**] The visual identifier label of the field|<img src= "/apps/components/img/checkbox_name.png">|
+|**Name**| [**Optional**] The display name of the color field|<img src= "/apps/components/img/checkbox_name.png">|
 |**Width**| [**Optional**] Width of the field|<img src= "/apps/components/img/input_width.png">|
 |**Label Width**|Width of the label associated with an input field. It determines the horizontal space occupied by the label text|<img src= "/apps/components/img/input_labelwidth1.png">|
 |**Label Wrap**| If the label is longer than the allowed width the text will continue on another line|<img src= "/apps/components/img/input_labelwrap1.png">|

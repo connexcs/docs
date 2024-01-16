@@ -99,6 +99,10 @@ Some of the most common methods include:
         var collapsename = this.getValue('collapse_itxbeisp');
         console.log('getValue',collapsename);
         ```
+    7. `this.getComponent('component_ID')`
+        ```js
+        var collapsename = this.getComponent('collapse_itxbeisp');
+        console.log('getComponent',collapsename);
 
 ## Config
 

@@ -133,49 +133,48 @@ Examples may include:
     this.removeClassName('date_0gprgpvi', 'abc')
     ```
     
-    3. `this.getValue(fieldName)`
-    ```js
-    var datename = this.getValue('date_0gprgpvi');
-    console.log('getValue', datename);
-    ```
-    4. `this.getValues(fieldName)`
+    3. `this.getValues(fieldName)`
     ```js
     var data = this.getValues();
     console.log(data);
     ```
-    5. `this.hide(fields)`
+    4. `this.hide(fields)`
         ```js
         var fields= ['date_0gprgpvi']
         this.hide(fields)
         ```
-    6. `this.show(fields)`
+    5. `this.show(fields)`
         ```js
         var fields= ['date_0gprgpvi']
         this.show(fields)
         ```
-    7. `this.disable(['fields'])`
+    6. `this.disable(['fields'])`
         ```js
         this.disable(['date_0gprgpvi'])
         ```
-    8.`this.getValue('fieldName')`
+    7.`this.getValue('fieldName')`
         ```js
         var datename = this.getValue('date_0gprgpvi');
         console.log('getValue',datename);
         ```
-    9.`this.setData(Value)`
+    8.`this.setData(Value)`
         ```js
         this.setData(
          {
          "date_0gprgpvi": "2023-11-30",}
         );
         ```
+    9.  `this.getComponent('component_ID')`
+        ```js
+        var datename = this.getComponent('date_0gprgpvi');
+        console.log('getComponent',datename);
 
 ## Config
 
 | **Name**|**Description**|**Image**|
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------|--|
 |**ID**| Date's unique identifier|<img src= "/apps/components/img/input_id.png">|
-|**Name**| [**Optional**] The visual identifier label of the field|<img src= "/apps/components/img/checkbox_name.png">|
+|**Name**| [**Optional**] The display name of the date field|<img src= "/apps/components/img/checkbox_name.png">|
 |**Width**| [**Optional**] Width of the field|<img src= "/apps/components/img/input_width.png">|
 |**Label Width**|Width of the label associated with an input field. It determines the horizontal space occupied by the label text|<img src= "/apps/components/img/input_labelwidth1.png">|
 |**Label Wrap**| If the label is longer than the allowed width the text will continue on another line|<img src= "/apps/components/img/input_labelwrap1.png">|
@@ -209,6 +208,6 @@ Form validation can be performed using a variety of methods, including:
 !!! Info
     1. The **callback()function** is also called to verify success in the custom checkup method.
 
-## Steps to use the Components
+## First time User?
 
-<a href="https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#steps-to-use-components-in-the-page-builder" target="_blank">Click here</a> for the detailed steps on how to use the components.
+If you are using the Page Builder components on the ConnexCS platform first time, we request you to use our guide on <a href="https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#steps-to-use-components-in-the-page-builder" target="_blank">steps to use the Components</a>.

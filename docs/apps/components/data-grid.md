@@ -105,13 +105,17 @@
         var dataname = this.getValue('aggrid_nd93m43c');
         console.log('getValue',datanamee);
         ```
+    9. `this.getComponent('component_ID')`
+        ```js
+        var dataname = this.getComponent('aggrid_nd93m43c');
+        console.log('getComponent',dataname);
 
 ## Config
 
 | **Name**|**Description**|**Icon**|
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
 |**ID**| Data-grid's unique identifier|<img src= "/apps/components/img/input_id.png">|
-|**Width**| [**Optional**] To set the width of the field|<img src= "/apps/components/img/input_width.png">|
+|**Width**| [**Optional**] Width of the field|<img src= "/apps/components/img/input_width.png">|
 |**Status Bar**|Displays information about the number of rows and columns|<img src= "/apps/components/img/datagrid_statusbar.png">|
 |**Side Bar**|Displays the side bar with Columns and Filters|<img src= "/apps/components/img/datagrid_sidebar.png">|
 |**Enable Range Selection**|Enable to select multiple cells in the data-grid and it provides you with minimum value, maximum value, average, sum, count|<img src= "/apps/components/img/datagrid_rangeselection.png">|
@@ -196,6 +200,6 @@ It allows you to customize the appearance of data to improve readability, highli
 !!! Info
     1. The **callback()function** is also called to verify success in the custom checkup method.
 
-## Steps to use the Components
+## First time User?
 
-<a href="https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#steps-to-use-components-in-the-page-builder" target="_blank">Click here</a> for the detailed steps on how to use the components.
+If you are using the Page Builder components on the ConnexCS platform first time, we request you to use our guide on <a href="https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#steps-to-use-components-in-the-page-builder" target="_blank">steps to use the Components</a>.

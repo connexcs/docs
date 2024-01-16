@@ -42,9 +42,13 @@ Some of the examples may include:
 
 | **Name**|**Description**|**Icon**|
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
-|**ID**| This is a unique identifier which is used to access the field by the API and the key of the field when the form is saved|<img src= "/apps/components/img/input_id.png">|
-|**Width**| [**Optional**] To set the width of the field|<img src= "/apps/components/img/input_width.png">|
-|**Height**|Adjust the height of the I-Frame window|<img src= "/apps/components/img/iframe_height.png">|
+|**ID**| I-frame's unique identifier|<img src= "/apps/components/img/input_id.png">|
+|**Width**| [**Optional**] Width of the I-Frame window|<img src= "/apps/components/img/input_width.png">|
+|**Height**|Height of the I-Frame window|<img src= "/apps/components/img/iframe_height.png">|
 |**URL**|Provide the link for the webpage you wish to displayin the I-Frame|<img src= "/apps/components/img/iframe_url.png">|
-|**Custom Class**| A HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|
+|**Custom Class**| An HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Hidden** to action to hide the field|<img src= "/apps/components/img/alert_arrtibuteaction.png">|
+
+## First time User?
+
+If you are using the Page Builder components on the ConnexCS platform first time, we request you to use our guide on <a href="https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#steps-to-use-components-in-the-page-builder" target="_blank">steps to use the Components</a>.

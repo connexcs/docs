@@ -108,6 +108,11 @@ Some examples of how card components can be made interactive include:
         var fields= ['card_khlorb9y']
         this.show(fields)
         ```
+    7. `this.getComponent('component_ID')`
+        ```js
+        var cardname = this.getComponent('card_khlorb9y');
+        console.log('getComponent',cardname);
+        ```
 
 ## Config
 

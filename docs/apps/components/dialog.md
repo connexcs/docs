@@ -66,10 +66,10 @@ It typically provides a self-contained interface for collecting additional infor
 <img src= "/apps/components/img/alert1.png">
 
 !!! Example
-    1. `this.getValue(fieldName)`
-    ```js
-    var dialogname = this.getValue('dialog_icubvv8x');
-    console.log('getValue', dialogname);
+    1. `this.getComponent('component_ID')`
+        ```js
+        var dialogname = this.getComponent('dialog_icubvv8x');
+        console.log('getComponent',datename);
 
         ```
     2.`this.getValue('fieldName')`
@@ -83,7 +83,7 @@ It typically provides a self-contained interface for collecting additional infor
 | **Name**|**Description**|**Icon**|
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------|--|
 |**ID**| Dialog's unique identifier|<img src= "/apps/components/img/input_id.png">|
-|**Title**| [**Optional**] The visual identifier label of the field|<img src= "/apps/components/img/alert_title.png">|
+|**Title**| [**Optional**] The display name of the dialog field|<img src= "/apps/components/img/alert_title.png">|
 |**Width**| [**Optional**] Width of the field|<img src= "/apps/components/img/input_width.png">|
 |**Visible**|Enable visible option to display the Dialog and disable to hide the dialog box|<img src= "/apps/components/img/dialog_visible.png">|
 |**Center**| Enable this option to make the components of the Dialog box centrally aligned|<img src= "/apps/components/img/dialog_center.png">|
@@ -97,6 +97,6 @@ It typically provides a self-contained interface for collecting additional infor
 !!! Info
     1. The **callback()function** is also called to verify success in the custom checkup method.
 
-## Steps to use the Components
+## First time User?
 
-<a href="https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#steps-to-use-components-in-the-page-builder" target="_blank">Click here</a> for the detailed steps on how to use the components.
+If you are using the Page Builder components on the ConnexCS platform first time, we request you to use our guide on <a href="https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#steps-to-use-components-in-the-page-builder" target="_blank">steps to use the Components</a>.

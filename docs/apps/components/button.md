@@ -113,6 +113,12 @@ Here are some examples of how interactivity can be implemented for **Button** co
         ```js
         this.disable(['button_6ytj0ne9'])
         ```
+    7. `this.getComponent('component_ID')`
+        ```js
+        var butonname = this.getComponent('button_815t5dfs');
+        console.log('getComponent',buttonname);
+        ```
+
 ## Config
 
 | **Name**|**Description**|**Icon**|

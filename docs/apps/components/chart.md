@@ -105,6 +105,10 @@ The 3 types of Charts we use are:
         var chartname = this.getValue('echarts_moy2lbor');
         console.log('getValue',chartname);
         ```
+    9. `this.getComponent('component_ID')`
+        ```js
+        var chartname = this.getComponent('echarts_moy2lbor');
+        console.log('getComponent',chartname);
 
 **example of setData**
 
@@ -181,6 +185,6 @@ The 3 types of Charts we use are:
 
 <img src= "/apps/components/charts_grid.png">
 
-## Steps to use the Components
+## First time User?
 
-<a href="https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#steps-to-use-components-in-the-page-builder" target="_blank">Click here</a> for the detailed steps on how to use the components.
+If you are using the Page Builder components on the ConnexCS platform first time, we request you to use our guide on <a href="https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#steps-to-use-components-in-the-page-builder" target="_blank">steps to use the Components</a>.
