@@ -60,62 +60,68 @@ The 3 types of Charts we use are:
 
 !!! Example
     1. `this.addClassName(fields, className)`
-       * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
-        ```js
-        .abc{ // abc is the class name
-        background-color: red;
-        }
-        ```
-       * Follow the steps in the above **Note**
-       * ```js
-         this.addClassName('echarts_moy2lbor', 'abc')
-         ```
+          * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
+            ```js
+            .abc{ // abc is the class name
+            background-color: red;
+            }
+            ```
+          * Follow the steps in the above **Note**
+          * ```js
+            this.addClassName('echarts_moy2lbor', 'abc')
+            ```
 
     2. `this.removeClassName(fields, className)`
-    ```js
-    this.removeClassName('echarts_moy2lbor', 'abc')
-    ```
+        ``js
+        this.removeClassName('echarts_moy2lbor', 'abc')
+        ```
     
     3. `this.getValue(fieldName)`
-    ```js
-    var chartname = this.getValue('echarts_moy2lbor');
-    console.log('getValue', chartname);
-    ```
+        ```js
+        var chartname = this.getValue('echarts_moy2lbor');
+        console.log('getValue', chartname);
+        ```
+    
     4. `this.getValues(fieldName)`
-    ```js
-    var data = this.getValues();
-    console.log(data);
-    ```
+        ```js
+        var data = this.getValues();
+        console.log(data);
+        ```
+    
     5. `this.hide(fields)`
         ```js
         var fields= ['echarts_moy2lbor']
         this.hide(fields)
         ```
+    
     6. `this.show(fields)`
         ```js
         var fields= ['echarts_moy2lbor']
         this.show(fields)
         ```
+    
     7. `this.disable(['fields'])`
         ```js
         this.disable(['echarts_moy2lbor'])
         ```
+    
     8.`this.getValue('fieldName')`
         ```js
         var chartname = this.getValue('echarts_moy2lbor');
         console.log('getValue',chartname);
         ```
+    
     9. `this.getComponent('component_ID')`
         ```js
         var chartname = this.getComponent('echarts_moy2lbor');
         console.log('getComponent',chartname);
-
+        ```
 **example of setData**
 
 ## Config
 
 | **Name**|**Description**|**Icon**|
-|---------------|----------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
+|---------|---------------|--------|
 |**ID**| Chart's unique identifier|<img src= "/apps/components/img/input_id.png">|
 |**Width**| [**Optional**] Width of the field|<img src= "/apps/components/img/input_width.png">|
 |**Height**| [**Optional**] Height of the field|<img src= "/apps/components/charts_height.png">|

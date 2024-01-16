@@ -108,16 +108,16 @@ Here's a general approach to integrating interactivity:
 
 !!! Example
     1. `this.addClassName(fields, className)`
-       * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
-        ```js
-        .abc{ // abc is the class name
-        background-color: red;
-        }
-        ```
-       * Follow the steps in the above **Note**
-       * ```js
-         this.addClassName('cascader_ccj8m3in', 'abc')
-         ```
+          * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
+            ```js
+            .abc{ // abc is the class name
+            background-color: red;
+            }
+            ```
+          * Follow the steps in the above **Note**
+          * ```js
+            this.addClassName('cascader_ccj8m3in', 'abc')
+            ```
 
     2. `this.removeClassName(fields, className)`
     ```js
@@ -152,6 +152,7 @@ Here's a general approach to integrating interactivity:
         ```js
         var cascadername = this.getComponent('cascader_ccj8m3in');
         console.log('getComponent',cascadername);
+        ```
 
 ## Config
 

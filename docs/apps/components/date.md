@@ -117,46 +117,51 @@ Examples may include:
 
 !!! Example
     1. `this.addClassName(fields, className)`
-       * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
-        ```js
-        .abc{ // abc is the class name
-        background-color: red;
-        }
-        ```
-       * Follow the steps in the above **Note**
-       * ```js
-         this.addClassName('date_0gprgpvi', 'abc')
-         ```
+          * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
+            ```js
+            .abc{ // abc is the class name
+            background-color: red;
+            }
+            ```
+          * Follow the steps in the above **Note**
+          * ```js
+            this.addClassName('date_0gprgpvi', 'abc')
+            ```
 
     2. `this.removeClassName(fields, className)`
-    ```js
-    this.removeClassName('date_0gprgpvi', 'abc')
-    ```
+        ```js
+        this.removeClassName('date_0gprgpvi', 'abc')
+        ```
     
     3. `this.getValues(fieldName)`
-    ```js
-    var data = this.getValues();
-    console.log(data);
-    ```
+        ```js
+        var data = this.getValues();
+        console.log(data);
+        ```
+    
     4. `this.hide(fields)`
         ```js
         var fields= ['date_0gprgpvi']
         this.hide(fields)
         ```
+    
     5. `this.show(fields)`
         ```js
         var fields= ['date_0gprgpvi']
         this.show(fields)
         ```
+    
     6. `this.disable(['fields'])`
         ```js
         this.disable(['date_0gprgpvi'])
         ```
+    
     7.`this.getValue('fieldName')`
         ```js
         var datename = this.getValue('date_0gprgpvi');
         console.log('getValue',datename);
         ```
+    
     8.`this.setData(Value)`
         ```js
         this.setData(
@@ -164,10 +169,12 @@ Examples may include:
          "date_0gprgpvi": "2023-11-30",}
         );
         ```
-    9.  `this.getComponent('component_ID')`
+    
+    7.  `this.getComponent('component_ID')`
         ```js
         var datename = this.getComponent('date_0gprgpvi');
         console.log('getComponent',datename);
+        ```
 
 ## Config
 

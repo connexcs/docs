@@ -60,16 +60,16 @@ Examples may include:
 
 !!! Example
     1. `this.addClassName(fields, className)`
-       * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
-        ```js
-        .abc{ // abc is the class name
-        background-color: red;
-        }
-        ```
-       * Follow the steps in the above **Note**
-       * ```js
-         this.addClassName('group_j9o3pb2i', 'abc')
-         ```
+          * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
+            ```js
+            .abc{ // abc is the class name
+            background-color: red;
+            }
+            ```
+          * Follow the steps in the above **Note**
+          * ```js
+            this.addClassName('group_j9o3pb2i', 'abc')
+            ```
 
     2. `this.removeClassName(fields, className)`
         ```js
@@ -97,6 +97,7 @@ Examples may include:
         ```js
         var groupname = this.getComponent('group_j9o3pb2i');
         console.log('getComponent',groupname);
+        ```
 
 ## Config
 

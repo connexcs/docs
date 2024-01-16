@@ -135,6 +135,7 @@ Some of the most common methods include:
         ```js
         var colorname = this.getComponent('color_zxqxhwlh');
         console.log('getComponent',colorname);
+        ```
 
 ## Config
 

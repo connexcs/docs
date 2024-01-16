@@ -108,29 +108,35 @@ Some of the most common methods include:
         var data = this.getValues();
         console.log(data);
         ```
+    
     4. `this.hide(fields)`
         ```js
         var fields= ['checkbox_g0x4pt54z']
         this.hide(fields)
         ```
+    
     5. `this.show(fields)`
         ```js
         var fields= ['checkbox_g0x4pt54z']
         this.show(fields)
         ```
+    
     6. `this.disable(['fields'])`
         ```js
         this.disable(['checkbox_g0x4pt54z'])
         ```
+    
     7. `this.getValue('fieldName')`
         ```js
         var checkname = this.getValue('checkbox_g0x4pt54z');
         console.log('getValue',checkname);
         ```
+    
     8. `this.getComponent('component_ID')`
         ```js
         var checkname = this.getComponent('checkbox_g0x4pt54z');
         console.log('getComponent',checkname);
+        ```
 
 ## Config
 

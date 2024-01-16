@@ -25,7 +25,7 @@ The <html> tag is the container for all other HTML elements (except for the <!DO
 ### Methods
 
 | **Name**| **Description**|**Parameters**|
-|----------------------|---------------------------------------------------------------------|----|
+|---------|----------------|--------------|
 |`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String(componentID), String[]; Object: Object)`|
 |`this.getValue`|Get A Value From a component|`(fieldName String(componentID)`|
 |`this.getValues()`|Get the values of all fields when values change|`(Object: Object)`|
@@ -77,7 +77,7 @@ The <html> tag is the container for all other HTML elements (except for the <!DO
 ## Config
 
 | **Name**|**Description**|**Icon**|
-|---------------|----------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
+|---------|---------------|--------|
 |**ID**| HTML's unique identifier|<img src= "/apps/components/img/input_id.png">|
 |**Name**| [**Optional**] The display name of the HTML field|<img src= "/apps/components/img/checkbox_name.png">|
 |**Width**| [**Optional**] Width of the field|<img src= "/apps/components/img/input_width.png">|

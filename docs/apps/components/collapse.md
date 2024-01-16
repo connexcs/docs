@@ -85,24 +85,29 @@ Some of the most common methods include:
         var fields= ['collapse_itxbeisp']
         this.hide(fields)
         ```
+    
     4. `this.show(fields)`
         ```js
         var fields= ['collapse_itxbeisp']
         this.show(fields)
         ```
+    
     5. `this.disable(['fields'])`
         ```js
         this.disable(['collapse_itxbeisp'])
         ```
+    
     6. `this.getValue('fieldName')`
         ```js
         var collapsename = this.getValue('collapse_itxbeisp');
         console.log('getValue',collapsename);
         ```
+    
     7. `this.getComponent('component_ID')`
         ```js
         var collapsename = this.getComponent('collapse_itxbeisp');
         console.log('getComponent',collapsename);
+        ```
 
 ## Config
 

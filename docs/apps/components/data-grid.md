@@ -60,60 +60,67 @@
 
 !!! Example
     1. `this.addClassName(fields, className)`
-       * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
-        ```js
-        .abc{ // abc is the class name
-        background-color: red;
-        }
-        ```
-       * Follow the steps in the above **Note**
-       * ```js
-         this.addClassName('aggrid_nd93m43c', 'abc')
-         ```
+          * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
+            ```js
+            .abc{ // abc is the class name
+            background-color: red;
+            }
+            ```
+          * Follow the steps in the above **Note**
+          * ```js
+            this.addClassName('aggrid_nd93m43c', 'abc')
+            ```
 
     2. `this.removeClassName(fields, className)`
-    ```js
-    this.removeClassName('aggrid_nd93m43c', 'abc')
-    ```
+        ```js
+        this.removeClassName('aggrid_nd93m43c', 'abc')
+        ```
     
     3. `this.getValue(fieldName)`
-    ```js
-    var dataname = this.getValue('aggrid_nd93m43c');
-    console.log('getValue', dataname);
-    ```
+        ```js
+        var dataname = this.getValue('aggrid_nd93m43c');
+        console.log('getValue', dataname);
+        ```
+    
     4. `this.getValues(fieldName)`
-    ```js
-    var data = this.getValues();
-    console.log(data);
-    ```
+        ```js
+        var data = this.getValues();
+        console.log(data);
+        ```
+    
     5. `this.hide(fields)`
         ```js
         var fields= ['aggrid_nd93m43c']
         this.hide(fields)
         ```
+    
     6. `this.show(fields)`
         ```js
         var fields= ['aggrid_nd93m43c']
         this.show(fields)
         ```
+    
     7. `this.disable(['fields'])`
         ```js
         this.disable(['aggrid_nd93m43c'])
         ```
+    
     8.`this.getValue('fieldName')`
         ```js
         var dataname = this.getValue('aggrid_nd93m43c');
         console.log('getValue',datanamee);
         ```
+    
     9. `this.getComponent('component_ID')`
         ```js
         var dataname = this.getComponent('aggrid_nd93m43c');
         console.log('getComponent',dataname);
+        ```
 
 ## Config
 
 | **Name**|**Description**|**Icon**|
-|---------------|----------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
+|---------|---------------|--------|
 |**ID**| Data-grid's unique identifier|<img src= "/apps/components/img/input_id.png">|
 |**Width**| [**Optional**] Width of the field|<img src= "/apps/components/img/input_width.png">|
 |**Status Bar**|Displays information about the number of rows and columns|<img src= "/apps/components/img/datagrid_statusbar.png">|

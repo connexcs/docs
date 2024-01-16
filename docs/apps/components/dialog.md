@@ -70,8 +70,8 @@ It typically provides a self-contained interface for collecting additional infor
         ```js
         var dialogname = this.getComponent('dialog_icubvv8x');
         console.log('getComponent',datename);
-
         ```
+    
     2.`this.getValue('fieldName')`
         ```js
         var dialogname = this.getValue('dialog_icubvv8x');
