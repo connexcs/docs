@@ -75,7 +75,7 @@ Examples may include:
 11. Trigger animations and transitions when date is changed.
 12. Allow typing date directly or via shortcuts for power users.
 13. Sync date selection across multiple instances of the form.
-14. Prefill date based on user info and persist on form reload
+14. Pre-fill date based on user info and persist on form reload
 
 ## API
 
