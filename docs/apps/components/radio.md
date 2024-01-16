@@ -116,13 +116,13 @@ It's like a set of switches where only one can be "on" at any given moment.
         var radioname = this.getComponent('radio_mv3o2rpn');
         console.log('getComponent',radioname);
 
-8.`this.setData(Value)`
+    9.`this.setData(Value)`
         ```js
         this.setData(
          {
-         "radio_mv3o2rpn": "2023-11-30",}
+         "radio_mv3o2rpn": "Option 3",}
         );
-        ``` **take example**
+        ```
 
 ## Config
 

@@ -38,33 +38,103 @@ It's a versatile tool for collecting user input in situations where there are mu
 
 | **Name**| **Description**|
 |----------------------|---------------------------------------------------------------------|
-| **onChange (element)**| The onChange event occurs when the value of an field is changed|
-| **onFocus (element)**| The onfocus event occurs when an field gets focus|
-| **onBlur (element)**| The onblur event occurs when an field loses focus|
+| `onChange (element)`| The onChange event occurs when the value of a field is changed|
+| `onFocus (element)`| The onfocus event occurs when a field gets focus|
+| `onBlur (element)`| The onblur event occurs when a field loses focus|
 
 ### Methods
 
-| **Name**| **Description**|
-|----------------------|---------------------------------------------------------------------|
-|**this.addClassName(fields, disabled)**|Add style class to form item|
-|**this.removeClassName(fields, disabled)**|Remove form item style|
-| **this.disable(fields)**| Disable input field from user interaction|
-| **this.getComponent(name) → {Object}**|Retrieve a component from an object or element|
-| **this.getValue(fieldName)**|Get A Value From a component|
-| **this.getValues() → {Object}**|Get the values of all fields when values change|
-|**this.hide(fields)**|Hides the field|
-|**this.show(fields)**|Displays the field|
-|**this.setData(Value)**|Set the data in the field|
+| **Name**| **Description**|**Parameters**|
+|----------------------|---------------------------------------------------------------------|----|
+|`this.addClassName`|Add style class to page item|`(fields: String(componentID), String[]; className: String)`|
+|`this.removeClassName`|Remove page item style|`(fields: String(componentID), String[]; className: String)`|
+|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String(componentID), String[]; Object: Object)`|
+|`this.getValues()`|Get the values of all fields when values change|`(Object: Object)`|
+|`this.hide(fields)`|Hides the field|`(fields: String(componentID)`|
+|`this.show(fields)`|Displays the field|`(fields: String(componentID)`|
+| `this.disable(fields)`| Disable input field from user interaction|`(fields: String(componentID), String[])`|
+|`this.setData`|Set the data in the field|`(Value: String, String[])`|
+|`this.getValue`|Get A Value From a component|`(fieldName String(componentID)`|
+
 |**this.getFieldDataSource**|Get information from the data source|
 |**this.refreshFieldDataSource**|Refresh the datasource data bound to the form field
+
+!!! Info
+    1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
+    2. **fields** refer to the component **ID**. You can fetch the ID from the **Component Attribute** panel in the Page Builder.
+    3. For using **this.show(fields)** enable the **Hidden** check-box in the **Component Attribute** panel.
+
+#### Steps to place/use the methods for components of the Page Builder"
+
+1. Go to Form Attribute :material-menu-right: Action Panel :material-menu-right: Setting :material-menu-right: (Mounted | refresh | click 'Add action')
+2. Write the method/code as shown in the **Example** below.
+3. Click on `Save`.
+4. On the main screen click on `Save` again.
+5. Click on `Preview` to see the code in action.
+<img src= "/apps/components/img/alert1.png">
+
+!!! Example
+    1. `this.addClassName(fields, className)`
+       * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
+        ```js
+        .abc{ // abc is the class name
+        background-color: red;
+        }
+        ```
+       * Follow the steps in the above **Note**
+       * ```js
+         this.addClassName('select_rzaltclo', 'abc')
+         ```
+
+    2. `this.removeClassName(fields, className)`
+    ```js
+    this.removeClassName('select_rzaltclo', 'abc')
+    ```
+    
+    3. `this.getValues(fieldName)`
+    ```js
+    var data = this.getValues();
+    console.log(data);
+    ```
+    4. `this.hide(fields)`
+        ```js
+        var fields= ['select_rzaltclo']
+        this.hide(fields)
+        ```
+    5. `this.show(fields)`
+        ```js
+        var fields= ['select_rzaltclo']
+        this.show(fields)
+        ```
+    6. `this.disable(['fields'])`
+        ```js
+        this.disable(['select_rzaltclo'])
+        ```
+    7.`this.getValue('fieldName')`
+        ```js
+        var selectname = this.getValue('select_rzaltclo');
+        console.log('getValue',selectname);
+        ```
+      
+    8.  `this.getComponent('component_ID')`
+        ```js
+        var selectname = this.getComponent('select_rzaltclo');
+        console.log('getComponent',selectname);
+
+    9.`this.setData(Value)`
+        ```js
+        this.setData(
+         {
+         "select_rzaltclo": "Option 2",}
+        );
 
 ## Config
 
 | **Name**|**Description**|**Icon**|
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
-|**ID**| This is a unique identifier which is used to access the field by the API and the key of the field when the form is saved|<img src= "/apps/components/img/input_id.png">|
-|**Name**| [**Optional**] The visual identifier label of the field|<img src= "/apps/components/img/input_name.png">|
-|**Width**| [**Optional**] To set the width of the field|<img src= "/apps/components/img/checkbox_name.png">|
+|**ID**| Select's unique identifier|<img src= "/apps/components/img/input_id.png">|
+|**Name**| [**Optional**] The display name of the select field|<img src= "/apps/components/img/input_name.png">|
+|**Width**| [**Optional**] Width of the field|<img src= "/apps/components/img/checkbox_name.png">|
 |**Label Width**|Width of the label associated with an input field. It determines the horizontal space occupied by the label text|<img src= "/apps/components/img/input_labelwidth1.png">|
 |**Label Wrap**| If the label is longer than the allowed width the text will continue on another line|<img src= "/apps/components/img/input_labelwrap1.png">|
 |**Hide Label**| Hides the label on the form|<img src= "/apps/components/img/input_hidelabel.png">|
@@ -73,8 +143,8 @@ It's a versatile tool for collecting user input in situations where there are mu
 |**Multiple**|Choose multiple options from the available list|<img src= "/apps/components/img/select_multiple.png">|
 |**Searchable**|Enable this option to search the options from the list|<img src= "/apps/components/img/select_searchable.png">|
 |**Option**|Choose either **Static** or **Dynamic** way of adding data to the options of the Select <br><br>**Static data** refers to a fixed set of options that are predefined and loaded into the select at the time of initialization</br></br> **Dynamic data** are options fetched as needed from sources like databases or APIs. The select updates choices based on user selections. You select from **Data source** which refers to the origin of the data; **Function** which refers to the code that manipulates the data, and **Assigned Value** which refers to the specific value stored or associated with a data element|<img src= "/apps/components/img/checkbox_static.png"> <img src= "/apps/components/img/checkbox_dynamic.png">|
-|**Custom Class**| A HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|
-|**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** to action to hide the field. <br> Enable **Disabled** action to make the field unsuable. <br>Enable **Show clear button** action make the clear button visible.|<img src= "/apps/components/img/select_attributeaction.png">|
+|**Custom Class**| An HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|
+|**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** to action to hide the field. <br> Enable **Disabled** action to make the field unsuable. <br>Enable **Show Clear button** action to make the clear button visible.|<img src= "/apps/components/img/select_attributeaction.png">|
 
 ### Validation
 
@@ -96,3 +166,7 @@ Form validation can be performed using a variety of methods, including:
 
 !!! Info
     1. The **callback()function** is also called to verify success in the custom checkup method.
+
+## First time User?
+
+If you are using the Page Builder components on the ConnexCS platform first time, we request you to use our guide on <a href="https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#steps-to-use-components-in-the-page-builder" target="_blank">steps to use the Components</a>.

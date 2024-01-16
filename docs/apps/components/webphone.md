@@ -29,13 +29,13 @@ OTT Mobile Application
 
 |**Name**|**Description**|
 |------------------------|-----------------------------------------------------------|
-|**onAnswer (detail)**|Triggers when a call is answered by the other party|
-|**onRingingOut (detail)**|Triggers when 180/183 is receiver from the other party|
-|**onRingingIn (detail)**| Triggers when an incoming call starts ringing|
-|**onEnd (cdrDetails)**| After the call ends, provides the client CDR details|
-|**onRegistered ()**| Triggers when SIP registration is successful|
-|**onUnregistered ()**| Triggers when SIP is un-registration|
-|**onError (error)**| Triggers on any internal error|
+|`onAnswer (detail)`|Triggers when a call is answered by the other party|
+|`onRingingOut (detail)`|Triggers when 180/183 is receiver from the other party|
+|`onRingingIn (detail)`| Triggers when an incoming call starts ringing|
+|`onEnd (cdrDetails)`| After the call ends, provides the client CDR details|
+|`onRegistered ()`| Triggers when SIP registration is successful|
+|`onUnregistered ()`| Triggers when SIP is un-registration|
+|`onError (error)`| Triggers on any internal error|
 
 ### Methods
 
@@ -79,3 +79,7 @@ OTT Mobile Application
 |**Default Username**| Username for SIP Authentication|<img src= "/apps/components/img/webphone_username.png">|
 |**Default Password**| Password for SIP Authentication|<img src= "/apps/components/img/webphone_password.png">|
 |**Attribute Action**|Enable **Hidden** action to hide the field|<img src= "/apps/components/img/alert_arrtibuteaction.png">|
+
+## First time User?
+
+If you are using the Page Builder components on the ConnexCS platform first time, we request you to use our guide on <a href="https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#steps-to-use-components-in-the-page-builder" target="_blank">steps to use the Components</a>.
