@@ -64,37 +64,40 @@ It serves as a visual and functional indicator of progress, improving user exper
 
 !!! Example
     1. `this.addClassName(fields, className)`
-       * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
-        ```js
-        .abc{ // abc is the class name
-        background-color: red;
-        }
-        ```
-       * Follow the steps in the above **Note**
-       * ```js
-         this.addClassName('steps_2bpjtc5m', 'abc')
-         ```
+          * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
+            ```js
+            .abc{ // abc is the class name
+            background-color: red;
+            }
+            ```
+          * Follow the steps in the above **Note**
+          * ```js
+            this.addClassName('steps_2bpjtc5m', 'abc')
+            ```
 
     2. `this.removeClassName(fields, className)`
-    ```js
-    this.removeClassName('steps_2bpjtc5m', 'abc')
-    ```
+        ```js
+        this.removeClassName('steps_2bpjtc5m', 'abc')
+        ```
     
     3. `this.getValues(fieldName)`
-    ```js
-    var data = this.getValues();
-    console.log(data);
-    ```
+        ```js
+        var data = this.getValues();
+        console.log(data);
+        ```
+    
     4. `this.hide(fields)`
         ```js
         var fields= ['steps_2bpjtc5m']
         this.hide(fields)
         ```
+    
     5. `this.show(fields)`
         ```js
         var fields= ['steps_2bpjtc5m']
         this.show(fields)
         ```
+    
     6. `this.disable(['fields'])`
         ```js
         this.disable(['steps_2bpjtc5m'])
@@ -115,11 +118,12 @@ It serves as a visual and functional indicator of progress, improving user exper
         ```js
         var stepname = this.getComponent('steps_2bpjtc5m');
         console.log('getComponent',stepname);
+        ```
 
 ## Config
 
 | **Name**|**Description**|**Icon**|
-|---------------|----------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
+|---------|---------------|--------|
 |**ID**| Step's unique identifier|<img src= "/apps/components/img/input_id.png">|
 |**Name**| [**Optional**] The display name of the Steps field|<img src= "/apps/components/img/checkbox_name.png">|
 |**Width**| [**Optional**] Width of the field|<img src= "/apps/components/img/input_width.png">|

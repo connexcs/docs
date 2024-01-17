@@ -59,16 +59,16 @@
 
 !!! Example
     1. `this.addClassName(fields, className)`
-       * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
-        ```js
-        .abc{ // abc is the class name
-        background-color: red;
-        }
-        ```
-       * Follow the steps in the above **Note**
-       * ```js
-         this.addClassName('slider_k9cacr9r', 'abc')
-         ```
+          * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
+            ```js
+            .abc{ // abc is the class name
+            background-color: red;
+            }
+            ```
+          * Follow the steps in the above **Note**
+          * ```js
+            this.addClassName('slider_k9cacr9r', 'abc')
+            ```
 
     2. `this.removeClassName(fields, className)`
         ```js
@@ -112,10 +112,11 @@
         );
         ```
     
-    7.  `this.getComponent('component_ID')`
+    9.  `this.getComponent('component_ID')`
         ```js
         var slidername = this.getComponent('slider_k9cacr9r');
         console.log('getComponent',slidername);
+        ```
 
 ## Config
 

@@ -34,7 +34,7 @@ Each tab acts as a dedicated space for specific information, guiding users throu
 ### Events
 
 | **Name**| **Description**|
-|----------------------|---------------------------------------------------------------------|
+|---------|----------------|
 |`onChange (element)`| The onChange event occurs when the value of a field is changed|
 |`onFocus (element)`| The onfocus event occurs when a field gets focus|
 |`onBlur (element)`| The onblur event occurs when a field loses focus|
@@ -42,7 +42,7 @@ Each tab acts as a dedicated space for specific information, guiding users throu
 ### Methods
 
 | **Name**| **Description**|**Parameters**|
-|----------------------|---------------------------------------------------------------------|----|
+|---------|----------------|--------------|
 |`this.addClassName`|Add style class to page item|`(fields: String(componentID), String[]; className: String)`|
 |`this.removeClassName`|Remove page item style|`(fields: String(componentID), String[]; className: String)`|
 |`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String(componentID), String[]; Object: Object)`|
@@ -68,16 +68,16 @@ Each tab acts as a dedicated space for specific information, guiding users throu
 
 !!! Example
     1. `this.addClassName(fields, className)`
-       * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
-        ```js
-        .abc{ // abc is the class name
-        background-color: red;
-        }
-        ```
-       * Follow the steps in the above **Note**
-       * ```js
-         this.addClassName('tabs_8r5c1t2n', 'abc')
-         ```
+          * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
+            ```js
+            .abc{ // abc is the class name
+            background-color: red;
+            }
+            ```
+          * Follow the steps in the above **Note**
+          * ```js
+            this.addClassName('tabs_8r5c1t2n', 'abc')
+            ```
 
     2. `this.removeClassName(fields, className)`
         ```js
@@ -113,7 +113,7 @@ Each tab acts as a dedicated space for specific information, guiding users throu
         console.log('getValue',tabsname);
         ```
     
-    8.  `this.getComponent('component_ID')`
+    8.`this.getComponent('component_ID')`
         ```js
         var tabsname = this.getComponent('tabs_8r5c1t2n');
         console.log('getComponent',tabsname);

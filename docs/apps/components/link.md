@@ -56,16 +56,16 @@ Link components can be used in forms to provide additional functionality, such a
 
 !!! Example
     1. `this.addClassName(fields, className)`
-       * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
-        ```js
-        .abc{ // abc is the class name
-        background-color: red;
-        }
-        ```
-       * Follow the steps in the above **Note**
-       * ```js
-         this.addClassName('link_0t4yixc3', 'abc')
-         ```
+          * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
+            ```js
+            .abc{ // abc is the class name
+            background-color: red;
+            }
+            ```
+          * Follow the steps in the above **Note**
+          * ```js
+            this.addClassName('link_0t4yixc3', 'abc')
+            ```
 
     2. `this.removeClassName(fields, className)`
         ```js
@@ -95,6 +95,7 @@ Link components can be used in forms to provide additional functionality, such a
         ```js
         var linkname = this.getComponent('link_0t4yixc3');
         console.log('getComponent',linkname);
+        ```
 
 ## Config
 

@@ -62,16 +62,16 @@ Imagine you have a form with hundreds of items to choose from, like products in 
 
 !!! Example
     1. `this.addClassName(fields, className)`
-       * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
-        ```js
-        .abc{ // abc is the class name
-        background-color: red;
-        }
-        ```
-       * Follow the steps in the above **Note**
-       * ```js
-         this.addClassName('pagination_oet28hkk', 'abc')
-         ```
+          * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
+            ```js
+            .abc{ // abc is the class name
+            background-color: red;
+            }
+            ```
+          * Follow the steps in the above **Note**
+          * ```js
+            this.addClassName('pagination_oet28hkk', 'abc')
+            ```
 
     2. `this.removeClassName(fields, className)`
         ```js
@@ -98,10 +98,11 @@ Imagine you have a form with hundreds of items to choose from, like products in 
         console.log('getValue',pagename);
         ```
     
-    7.  `this.getComponent('component_ID')`
+    6.  `this.getComponent('component_ID')`
         ```js
         var pagename = this.getComponent('pagination_oet28hkk');
         console.log('getComponent',pagename);
+        ```
 
 ## Config
 

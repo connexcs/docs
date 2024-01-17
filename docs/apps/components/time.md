@@ -29,7 +29,7 @@
 ### Events
 
 | **Name**| **Description**|
-|----------------------|---------------------------------------------------------------------|
+|---------|----------------|
 |`onChange (element)`| The onChange event occurs when the value of a field is changed|
 |`onFocus (element)`| The onfocus event occurs when a field gets focus|
 |`onBlur (element)`| The onblur event occurs when a field loses focus|
@@ -60,16 +60,16 @@
 
 !!! Example
     1. `this.addClassName(fields, className)`
-       * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
-        ```js
-        .abc{ // abc is the class name
-        background-color: red;
-        }
-        ```
-       * Follow the steps in the above **Note**
-       * ```js
-         this.addClassName('time_16of90m8', 'abc')
-         ```
+          * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
+            ```js
+            .abc{ // abc is the class name
+            background-color: red;
+            }
+            ```
+          * Follow the steps in the above **Note**
+          * ```js
+            this.addClassName('time_16of90m8', 'abc')
+            ```
 
     2. `this.removeClassName(fields, className)`
         ```js
@@ -81,11 +81,13 @@
         var fields= ['time_16of90m8']
         this.hide(fields)
         ```
+    
     4. `this.show(fields)`
         ```js
         var fields= ['time_16of90m8']
         this.show(fields)
         ```
+    
     5. `this.disable(['fields'])`
         ```js
         this.disable(['time_16of90m8'])
@@ -94,7 +96,7 @@
 ## Config
 
 | **Name**|**Description**|**Icon**|
-|---------------|----------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
+|---------|---------------|--------|
 |**ID**| Time's unique identifier|<img src= "/apps/components/img/input_id.png">|
 |**Name**| [**Optional**] The display name of the time field|<img src= "/apps/components/img/checkbox_name.png">|
 |**Width**| [**Optional**] Width of the field|<img src= "/apps/components/img/input_width.png">|
@@ -119,7 +121,7 @@ This helps to prevent users from submitting forms with invalid data, which can c
 Form validation can be performed using a variety of methods, including:
 
 | **Name**| **Description**|
-|----------------------|---------------------------------------------------------------------|
+|---------|----------------|
 | **Required**| Single line of text|
 |**Custom Validation Rules**|(rule, value, callback) => {|
 ||**rule**: Verification rule, you can view the verification configuration information through this parameter; rule.fieldcan get the field identifier of the current verification|

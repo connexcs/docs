@@ -38,7 +38,7 @@ Complex layout subform component for list (array) type form data, supporting nes
 ### Events
 
 | **Name**| **Description**|
-|----------------------|---------------------------------------------------------------------|
+|---------|----------------|
 |`onChange (element)`| The onChange event occurs when the value of a field is changed|
 |`onRowAdd (element)`|The onRowAdd event occurs when a row is added|
 |`onRowRemove (element)`|The onRowRemove event occurs when a row is removed|
@@ -47,7 +47,7 @@ Complex layout subform component for list (array) type form data, supporting nes
 ### Methods
 
 | **Name**| **Description**|**Parameters**|
-|----------------------|---------------------------------------------------------------------|----|
+|---------|----------------|--------------|
 |`this.addClassName`|Add style class to page item|`(fields: String(componentID), String[]; className: String)`|
 |`this.removeClassName`|Remove page item style|`(fields: String(componentID), String[]; className: String)`|
 |`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String(componentID), String[]; Object: Object)`|
@@ -71,16 +71,16 @@ Complex layout subform component for list (array) type form data, supporting nes
 
 !!! Example
     1. `this.addClassName(fields, className)`
-       * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
-        ```js
-        .abc{ // abc is the class name
-        background-color: red;
-        }
-        ```
-       * Follow the steps in the above **Note**
-       * ```js
-         this.addClassName('subform_e4cjz3nf', 'abc')
-         ```
+          * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
+            ```js
+            .abc{ // abc is the class name
+            background-color: red;
+            }
+            ```
+          * Follow the steps in the above **Note**
+          * ```js
+            this.addClassName('subform_e4cjz3nf', 'abc')
+            ```
 
     2. `this.removeClassName(fields, className)`
         ```js
@@ -106,11 +106,12 @@ Complex layout subform component for list (array) type form data, supporting nes
         ```js
         var subformname = this.getComponent('subform_e4cjz3nf');
         console.log('getComponent',subformname);
+        ```
 
 ## Config
 
 | **Name**|**Description**|**Icon**|
-|---------------|----------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
+|---------|---------------|--------|
 |**ID**| Sub-Form's identifier|<img src= "/apps/components/img/input_id.png">|
 |**Label Width**|Width of the label associated with an input field. It determines the horizontal space occupied by the label text|<img src= "/apps/components/img/input_labelwidth1.png">|
 |**Hide Label**| Hides the label on the form|<img src= "/apps/components/img/input_hidelabel.png">|

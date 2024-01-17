@@ -111,10 +111,11 @@ It's like a set of switches where only one can be "on" at any given moment.
         console.log('getValue',radioname);
         ```
 
-    8.  `this.getComponent('component_ID')`
+    8.`this.getComponent('component_ID')`
         ```js
         var radioname = this.getComponent('radio_mv3o2rpn');
         console.log('getComponent',radioname);
+        ```
 
     9.`this.setData(Value)`
         ```js

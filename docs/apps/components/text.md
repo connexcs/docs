@@ -22,13 +22,13 @@ Users can type text, numbers, or symbols into the designated field, providing es
 ### Events
 
 | **Name**| **Description**|
-|----------------------|---------------------------------------------------------------------|
+|---------|----------------|
 |`onChange (element)`| The onChange event occurs when the value of a field is changed|
 
 ### Methods
 
 | **Name**| **Description**|**Parameters**|
-|----------------------|---------------------------------------------------------------------|----|
+|---------|----------------|--------------|
 |`this.addClassName`|Add style class to page item|`(fields: String(componentID), String[]; className: String)`|
 |`this.removeClassName`|Remove page item style|`(fields: String(componentID), String[]; className: String)`|
 |`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String(componentID), String[]; Object: Object)`|
@@ -55,41 +55,45 @@ Users can type text, numbers, or symbols into the designated field, providing es
 
 !!! Example
     1. `this.addClassName(fields, className)`
-       * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
-        ```js
-        .abc{ // abc is the class name
-        background-color: red;
-        }
-        ```
-       * Follow the steps in the above **Note**
-       * ```js
-         this.addClassName('text_t1fhz5vb', 'abc')
-         ```
+          * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
+            ```js
+            .abc{ // abc is the class name
+            background-color: red;
+            }
+            ```
+          * Follow the steps in the above **Note**
+          * ```js
+            this.addClassName('text_t1fhz5vb', 'abc')
+            ```
 
     2. `this.removeClassName(fields, className)`
-    ```js
-    this.removeClassName('text_t1fhz5vb', 'abc')
-    ```
+        ```js
+        this.removeClassName('text_t1fhz5vb', 'abc')
+        ```
     
     3. `this.getValues(fieldName)`
-    ```js
-    var data = this.getValues();
-    console.log(data);
-    ```
+        ```js
+        var data = this.getValues();
+        console.log(data);
+        ```
+    
     4. `this.hide(fields)`
         ```js
         var fields= ['text_t1fhz5vb']
         this.hide(fields)
         ```
+    
     5. `this.show(fields)`
         ```js
         var fields= ['text_t1fhz5vb']
         this.show(fields)
         ```
+    
     6. `this.disable(['fields'])`
         ```js
         this.disable(['text_t1fhz5vb'])
         ```
+    
     7.`this.getValue('fieldName')`
         ```js
         var textname = this.getValue('text_t1fhz5vb');
@@ -102,15 +106,16 @@ Users can type text, numbers, or symbols into the designated field, providing es
          "text_t1fhz5vb": "This is the Text",}
         );
         ```
-    9.  `this.getComponent('component_ID')`
+    9.`this.getComponent('component_ID')`
         ```js
         var textname = this.getComponent('text_t1fhz5vb');
         console.log('getComponent',textname);
+        ```
 
 ## Config
 
 | **Name**|**Description**|**Icon**|
-|---------------|---------|--------|
+|---------|---------------|--------|
 |**ID**| Text's unique identifier |<img src= "/apps/components/img/input_id.png">|
 |**Name**| [**Optional**] The display name of the text field|<img src= "/apps/components/img/checkbox_name.png">|
 |**Width**| [**Optional**] Width of the field|<img src= "/apps/components/img/input_width.png">|

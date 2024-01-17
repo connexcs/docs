@@ -62,58 +62,56 @@ A "rate" component allows users to express their level of satisfaction, preferen
 
 !!! Example
     1. `this.addClassName(fields, className)`
-       * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
-        ```js
-        .abc{ // abc is the class name
-        background-color: red;
-        }
-        ```
-       * Follow the steps in the above **Note**
-       * ```js
-         this.addClassName('rate_2n2vy8wj', 'abc')
-         ```
+          * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
+            ```js
+            .abc{ // abc is the class name
+            background-color: red;
+            }
+            ```
+          * Follow the steps in the above **Note**
+          * ```js
+            this.addClassName('rate_2n2vy8wj', 'abc')
+            ```
 
     2. `this.removeClassName(fields, className)`
-    ```js
-    this.removeClassName('rate_2n2vy8wj', 'abc')
-    ```
+        ```js
+        this.removeClassName('rate_2n2vy8wj', 'abc')
+        ```
     
     3. `this.getValues(fieldName)`
-    ```js
-    var data = this.getValues();
-    console.log(data);
-    ```
+        ```js
+        var data = this.getValues();
+        console.log(data);
+        ```
+    
     4. `this.hide(fields)`
         ```js
         var fields= ['rate_2n2vy8wj']
         this.hide(fields)
         ```
+    
     5. `this.show(fields)`
         ```js
         var fields= ['rate_2n2vy8wj']
         this.show(fields)
         ```
+    
     6. `this.disable(['fields'])`
         ```js
         this.disable(['rate_2n2vy8wj'])
         ```
+    
     7.`this.getValue('fieldName')`
         ```js
         var ratename = this.getValue('rate_2n2vy8wj');
         console.log('getValue',ratename);
         ```
     
-    8.  `this.getComponent('component_ID')`
+    8.`this.getComponent('component_ID')`
         ```js
         var ratename = this.getComponent('rate_2n2vy8wj');
         console.log('getComponent',ratename);
-8.`this.setData(Value)`
-        ```js
-        this.setData(
-         {
-         "rate_2n2vy8wj": "2023-11-30",}
-        );
-        ``` **get example**
+        ```
 
 ## Config
 

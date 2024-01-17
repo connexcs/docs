@@ -69,16 +69,16 @@ It offers a clear and efficient way for users to select one of two mutually excl
 
 !!! Example
     1. `this.addClassName(fields, className)`
-       * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
-        ```js
-        .abc{ // abc is the class name
-        background-color: red;
-        }
-        ```
-       * Follow the steps in the above **Note**
-       * ```js
-         this.addClassName('switch_ornfn03c', 'abc')
-         ```
+          * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
+            ```js
+            .abc{ // abc is the class name
+            background-color: red;
+            }
+            ```
+          * Follow the steps in the above **Note**
+          * ```js
+            this.addClassName('switch_ornfn03c', 'abc')
+            ```
 
     2. `this.removeClassName(fields, className)`
         ```js
@@ -114,15 +114,16 @@ It offers a clear and efficient way for users to select one of two mutually excl
         console.log('getValue',switchname);
         ```
 
-    8.  `this.getComponent('component_ID')`
+    8.`this.getComponent('component_ID')`
         ```js
         var switchname = this.getComponent('switch_ornfn03c');
         console.log('getComponent',switchname);
+        ```
 
 ## Config
 
 | **Name**|**Description**|**Icon**|
-|---------------|----------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
+|---------|---------------|--------|
 |**ID**| Switch's unique identifier|<img src= "/apps/components/img/input_id.png">|
 |**Name**| [**Optional**] The display name of the switch field|<img src= "/apps/components/img/checkbox_name.png">|
 |**Width**| [**Optional**] Width of the field|<img src= "/apps/components/img/input_width.png">|

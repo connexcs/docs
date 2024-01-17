@@ -52,16 +52,16 @@ Tables provide a structured format for organizing related data within a form. Us
 
 !!! Example
     1. `this.addClassName(fields, className)`
-       * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
-        ```js
-        .abc{ // abc is the class name
-        background-color: red;
-        }
-        ```
-       * Follow the steps in the above **Note**
-       * ```js
-         this.addClassName('report_eahnplzw', 'abc')
-         ```
+          * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
+            ```js
+            .abc{ // abc is the class name
+            background-color: red;
+            }
+            ```
+          * Follow the steps in the above **Note**
+          * ```js
+            this.addClassName('report_eahnplzw', 'abc')
+            ```
 
     2. `this.removeClassName(fields, className)`
         ```js
@@ -87,11 +87,12 @@ Tables provide a structured format for organizing related data within a form. Us
         ```js
         var reportname = this.getComponent('report_eahnplzw');
         console.log('getComponent',reportname);
+        ```
 
 ## Config
 
 | **Name**|**Description**|**Icon**|
-|---------------|----------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
+|---------|---------------|--------|
 |**ID**| Table's unique identifier|<img src= "/apps/components/img/input_id.png">|
 |**Width**| [**Optional**] Width of the field|<img src= "/apps/components/img/input_width.png">|
 |**Border Width**|Choose the width of the table|<img src= "/apps/components/img/table_border.png">|

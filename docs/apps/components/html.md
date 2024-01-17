@@ -52,6 +52,7 @@ The <html> tag is the container for all other HTML elements (except for the <!DO
         ```js
         var htmlname = this.getComponent('html_0h6cj3iv');
         console.log('getComponent',htmlname);
+        ```
    
     2. `this.getValue(fieldName)`
         ```js

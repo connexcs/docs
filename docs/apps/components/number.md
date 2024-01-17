@@ -76,16 +76,16 @@ Examples mat include:
 
 !!! Example
     1. `this.addClassName(fields, className)`
-       * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
-        ```js
-        .abc{ // abc is the class name
-        background-color: red;
-        }
-        ```
-       * Follow the steps in the above **Note**
-       * ```js
-         this.addClassName('number_kzdn0gvb', 'abc')
-         ```
+          * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
+            ```js
+            .abc{ // abc is the class name
+            background-color: red;
+            }
+            ```
+          * Follow the steps in the above **Note**
+          * ```js
+            this.addClassName('number_kzdn0gvb', 'abc')
+            ```
 
     2. `this.removeClassName(fields, className)`
     ```js
@@ -127,11 +127,12 @@ Examples mat include:
         ```js
         var numbername = this.getComponent('number_kzdn0gvb');
         console.log('getComponent',numbername);
+        ```
 
 ## Config
 
 | **Name**|**Description**|**Icon**|
-|---------------|----------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
+|---------|---------------|--------|
 |**ID**| Number's unique identifier |<img src= "/apps/components/img/input_id.png">|
 |**Name**| [**Optional**] The display name of the number field|<img src= "/apps/components/img/checkbox_name.png">|
 |**Width**| [**Optional**] Width of the field|<img src= "/apps/components/img/input_width.png">|

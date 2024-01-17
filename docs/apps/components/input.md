@@ -76,16 +76,16 @@ You can use focus and blur events to perform a variety of actions, such as:
 
 !!! Example
     1. `this.addClassName(fields, className)`
-       * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
-        ```js
-        .abc{ // abc is the class name
-        background-color: red;
-        }
-        ```
-       * Follow the steps in the above **Note**
-       * ```js
-         this.addClassName('input_h633hysc', 'abc')
-         ```
+          * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
+            ```js
+            .abc{ // abc is the class name
+            background-color: red;
+            }
+            ```
+          * Follow the steps in the above **Note**
+          * ```js
+            this.addClassName('input_h633hysc', 'abc')
+            ```
 
     2. `this.removeClassName(fields, className)`
         ```js
@@ -123,10 +123,11 @@ You can use focus and blur events to perform a variety of actions, such as:
          "input_h633hysc": "Hello",}
         );
         ```
-    9.  `this.getComponent('component_ID')`
+    8.  `this.getComponent('component_ID')`
         ```js
         var inputname = this.getComponent('input_h633hysc');
         console.log('getComponent',inputname);
+        ```
 
 ## Config
 

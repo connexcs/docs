@@ -75,16 +75,16 @@ Sub-form component, for list (array) type form data, uses Table layout, doesn't 
 
 !!! Example
     1. `this.addClassName(fields, className)`
-       * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
-        ```js
-        .abc{ // abc is the class name
-        background-color: red;
-        }
-        ```
-       * Follow the steps in the above **Note**
-       * ```js
-         this.addClassName('table_n7rs950l', 'abc')
-         ```
+          * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
+            ```js
+            .abc{ // abc is the class name
+            background-color: red;
+            }
+            ```
+          * Follow the steps in the above **Note**
+          * ```js
+            this.addClassName('table_n7rs950l', 'abc')
+            ```
 
     2. `this.removeClassName(fields, className)`
         ```js
@@ -96,11 +96,13 @@ Sub-form component, for list (array) type form data, uses Table layout, doesn't 
         var fields= ['table_n7rs950l']
         this.hide(fields)
         ```
+    
     4. `this.show(fields)`
         ```js
         var fields= ['table_n7rs950l']
         this.show(fields)
         ```
+    
     5. `this.disable(['fields'])`
         ```js
         this.disable(['table_n7rs950l'])
@@ -110,12 +112,13 @@ Sub-form component, for list (array) type form data, uses Table layout, doesn't 
         ```js
         var subname = this.getComponent('table_n7rs950l');
         console.log('getComponent',subname);
+        ```
 
 ## Config
 
 | **Name**|**Description**|**Icon**|
-|---------------|----------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
-|**ID**| Sub-form's unique identifier which is used to access the field by the API and the key of the field when the form is saved|<img src= "/apps/components/img/input_id.png">|
+|---------|---------------|--------|
+|**ID**| Sub-form's unique identifier|<img src= "/apps/components/img/input_id.png">|
 |**Label Width**|Width of the label associated with an input field. It determines the horizontal space occupied by the label text|<img src= "/apps/components/img/input_labelwidth1.png">|
 |**Hide Label**| Hides the label on the form|<img src= "/apps/components/img/input_hidelabel.png">|
 |**Text Prompt**| A description to aid the user when completing the field|<img src= "/apps/components/img/input_textprompt.png">|

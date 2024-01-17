@@ -29,7 +29,7 @@ The **Text-Area** element allows users to write freely across multiple lines, id
 ### Events
 
 | **Name**| **Description**|
-|----------------------|---------------------------------------------------------------------|
+|---------|---------------|
 |`onChange (element)`| The onChange event occurs when the value of a field is changed|
 |`onFocus (element)`| The onfocus event occurs when a field gets focus|
 |`onBlur (element)`| The onblur event occurs when a field loses focus|
@@ -37,7 +37,7 @@ The **Text-Area** element allows users to write freely across multiple lines, id
 ### Methods
 
 | **Name**| **Description**|**Parameters**|
-|----------------------|---------------------------------------------------------------------|----|
+|---------|----------------|--------------|
 |`this.addClassName`|Add style class to page item|`(fields: String(componentID), String[]; className: String)`|
 |`this.removeClassName`|Remove page item style|`(fields: String(componentID), String[]; className: String)`|
 |`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String(componentID), String[]; Object: Object)`|
@@ -62,16 +62,16 @@ The **Text-Area** element allows users to write freely across multiple lines, id
 
 !!! Example
     1. `this.addClassName(fields, className)`
-       * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
-        ```js
-        .abc{ // abc is the class name
-        background-color: red;
-        }
-        ```
-       * Follow the steps in the above **Note**
-       * ```js
-         this.addClassName('textarea_hl6emwsb', 'abc')
-         ```
+          * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
+            ```js
+            .abc{ // abc is the class name
+            background-color: red;
+            }
+            ```
+          * Follow the steps in the above **Note**
+          * ```js
+            this.addClassName('textarea_hl6emwsb', 'abc')
+            ```
 
     2. `this.removeClassName(fields, className)`
         ```js
@@ -83,11 +83,13 @@ The **Text-Area** element allows users to write freely across multiple lines, id
         var fields= ['textarea_hl6emwsb']
         this.hide(fields)
         ```
+    
     4. `this.show(fields)`
         ```js
         var fields= ['textarea_hl6emwsbi']
         this.show(fields)
         ```
+    
     5. `this.disable(['fields'])`
         ```js
         this.disable(['textarea_hl6emwsb'])
@@ -100,15 +102,16 @@ The **Text-Area** element allows users to write freely across multiple lines, id
          "textarea_hl6emwsb": "Hi...I am Joe",}
         );
         ```
-    7.  `this.getComponent('component_ID')`
+    7.`this.getComponent('component_ID')`
         ```js
         var textareaname = this.getComponent('textarea_hl6emwsb');
         console.log('getComponent',textareaname);
+        ```
 
 ## Config
 
 | **Name**|**Description**|**Icon**|
-|---------------|---------|--------|
+|---------|---------------|--------|
 |**ID**| Text-area's unique identifier|<img src= "/apps/components/img/input_id.png">|
 |**Name**| [**Optional**] The display name of the text-area|<img src= "/apps/components/img/checkbox_name.png">|
 |**Width**| [**Optional**] Width of the field|<img src= "/apps/components/img/input_width.png">|
@@ -133,7 +136,7 @@ This helps to prevent users from submitting forms with invalid data, which can c
 Form validation can be performed using a variety of methods, including:
 
 | **Name**| **Description**|
-|----------------------|---------------------------------------------------------------------|
+|---------|----------------|
 | **Required**| Single line of text|
 | **Regular expressions**|Used to match patterns in text. They can be used to validate the format of data, such as email addresses, phone numbers, and dates|
 |**Custom Validation Rules**|(rule, value, callback) => {|

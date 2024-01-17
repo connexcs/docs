@@ -55,16 +55,16 @@ It's commonly used to create interactive selections, manage data assignments, or
 
 !!! Example
     1. `this.addClassName(fields, className)`
-       * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
-        ```js
-        .abc{ // abc is the class name
-        background-color: red;
-        }
-        ```
-       * Follow the steps in the above **Note**
-       * ```js
-         this.addClassName('transfer_jhg5bttj', 'abc')
-         ```
+          * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
+            ```js
+            .abc{ // abc is the class name
+            background-color: red;
+            }
+            ```
+          * Follow the steps in the above **Note**
+          * ```js
+            this.addClassName('transfer_jhg5bttj', 'abc')
+            ```
 
     2. `this.removeClassName(fields, className)`
         ```js
@@ -76,14 +76,17 @@ It's commonly used to create interactive selections, manage data assignments, or
         var fields= ['transfer_jhg5bttj']
         this.hide(fields)
         ```
+    
     4. `this.show(fields)`
         ```js
         var fields= ['transfer_jhg5bttj']
         this.show(fields)
         ```
+    
     5. `this.disable(['fields'])`
         ```js
         this.disable(['transfer_jhg5bttj'])
+        ```
 
 ## Config
 
