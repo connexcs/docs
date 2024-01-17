@@ -116,14 +116,15 @@ You can use focus and blur events to perform a variety of actions, such as:
         ```js
         this.disable(['input_h633hysc'])
         ```
-    8.`this.setData(Value)`
+    8.  `this.setData(Value)`
         ```js
         this.setData(
          {
          "input_h633hysc": "Hello",}
         );
         ```
-    8.  `this.getComponent('component_ID')`
+    
+    9.  `this.getComponent('component_ID')`
         ```js
         var inputname = this.getComponent('input_h633hysc');
         console.log('getComponent',inputname);

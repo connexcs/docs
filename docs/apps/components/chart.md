@@ -116,7 +116,8 @@ The 3 types of Charts we use are:
         var chartname = this.getComponent('echarts_moy2lbor');
         console.log('getComponent',chartname);
         ```
-**example of setData**
+
+        **example of setData**
 
 ## Config
 

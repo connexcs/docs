@@ -102,18 +102,21 @@ It serves as a visual and functional indicator of progress, improving user exper
         ```js
         this.disable(['steps_2bpjtc5m'])
         ```
-    7.`this.getValue('fieldName')`
+    
+    7.  `this.getValue('fieldName')`
         ```js
         var stepname = this.getValue('steps_2bpjtc5m');
         console.log('getValue',stepname);
         ```
-    8.`this.setData(Value)`
+    
+    8.  `this.setData(Value)`
         ```js
         this.setData(
          {
          "steps_2bpjtc5m": "2023-11-30",}
         ); **get example**
         ```
+    
     9.  `this.getComponent('component_ID')`
         ```js
         var stepname = this.getComponent('steps_2bpjtc5m');

@@ -37,13 +37,13 @@ It offers a clear and efficient way for users to select one of two mutually excl
 ### Events
 
 | **Name**| **Description**|
-|----------------------|---------------------------------------------------------------------|
+|---------|----------------|
 | `onChange (element)`| The onChange event occurs when the value of a field is changed|
 
 ### Methods
 
 | **Name**| **Description**|**Parameters**|
-|----------------------|---------------------------------------------------------------------|----|
+|---------|----------------|--------------|
 |`this.addClassName`|Add style class to page item|`(fields: String(componentID), String[]; className: String)`|
 |`this.removeClassName`|Remove page item style|`(fields: String(componentID), String[]; className: String)`|
 |`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String(componentID), String[]; Object: Object)`|
@@ -108,13 +108,13 @@ It offers a clear and efficient way for users to select one of two mutually excl
         this.disable(['switch_ornfn03c'])
         ```
 
-    7.`this.getValue('fieldName')`
+    7.  `this.getValue('fieldName')`
         ```js
         var switchname = this.getValue('switch_ornfn03c');
         console.log('getValue',switchname);
         ```
 
-    8.`this.getComponent('component_ID')`
+    8.  `this.getComponent('component_ID')`
         ```js
         var switchname = this.getComponent('switch_ornfn03c');
         console.log('getComponent',switchname);

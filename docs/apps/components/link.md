@@ -77,21 +77,25 @@ Link components can be used in forms to provide additional functionality, such a
         var fields= ['link_0t4yixc3']
         this.hide(fields)
         ```
+    
     4. `this.show(fields)`
         ```js
         var fields= ['link_0t4yixc3']
         this.show(fields)
         ```
+    
     5. `this.disable(['fields'])`
         ```js
         this.disable(['link_0t4yixc3'])
         ```
-    7.`this.getValue('fieldName')`
+    
+    6.  `this.getValue('fieldName')`
         ```js
         var linkname = this.getValue('link_0t4yixc3');
         console.log('getValue',linkname);
         ```
-    6.  `this.getComponent('component_ID')`
+    
+    7.  `this.getComponent('component_ID')`
         ```js
         var linkname = this.getComponent('link_0t4yixc3');
         console.log('getComponent',linkname);

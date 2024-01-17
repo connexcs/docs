@@ -30,7 +30,7 @@ It's like a set of switches where only one can be "on" at any given moment.
 ### Events
 
 | **Name**| **Description**|
-|----------------------|---------------------------------------------------------------------|
+|---------|----------------|
 | `onChange (element)`| The onChange event occurs when the value of a field is changed|
 
 ### Methods
@@ -66,16 +66,16 @@ It's like a set of switches where only one can be "on" at any given moment.
 
 !!! Example
     1. `this.addClassName(fields, className)`
-       * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
-        ```js
-        .abc{ // abc is the class name
-        background-color: red;
-        }
-        ```
-       * Follow the steps in the above **Note**
-       * ```js
-         this.addClassName('radio_mv3o2rpn', 'abc')
-         ```
+          * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
+            ```js
+            .abc{ // abc is the class name
+            background-color: red;
+            }
+            ```
+          * Follow the steps in the above **Note**
+          * ```js
+            this.addClassName('radio_mv3o2rpn', 'abc')
+            ```
 
     2. `this.removeClassName(fields, className)`
         ```js
@@ -105,19 +105,19 @@ It's like a set of switches where only one can be "on" at any given moment.
         this.disable(['radio_mv3o2rpn'])
         ```
     
-    7.`this.getValue('fieldName')`
+    7.  `this.getValue('fieldName')`
         ```js
         var radioname = this.getValue('radio_mv3o2rpn');
         console.log('getValue',radioname);
         ```
 
-    8.`this.getComponent('component_ID')`
+    8.  `this.getComponent('component_ID')`
         ```js
         var radioname = this.getComponent('radio_mv3o2rpn');
         console.log('getComponent',radioname);
         ```
 
-    9.`this.setData(Value)`
+    9.  `this.setData(Value)`
         ```js
         this.setData(
          {

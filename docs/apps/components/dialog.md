@@ -72,7 +72,7 @@ It typically provides a self-contained interface for collecting additional infor
         console.log('getComponent',datename);
         ```
     
-    2.`this.getValue('fieldName')`
+    2.  `this.getValue('fieldName')`
         ```js
         var dialogname = this.getValue('dialog_icubvv8x');
         console.log('getValue',dialogname);

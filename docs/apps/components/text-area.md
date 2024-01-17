@@ -95,14 +95,15 @@ The **Text-Area** element allows users to write freely across multiple lines, id
         this.disable(['textarea_hl6emwsb'])
         ```
         
-    6.`this.setData(Value)`
+    6.  `this.setData(Value)`
         ```js
         this.setData(
          {
          "textarea_hl6emwsb": "Hi...I am Joe",}
         );
         ```
-    7.`this.getComponent('component_ID')`
+    
+    7.  `this.getComponent('component_ID')`
         ```js
         var textareaname = this.getComponent('textarea_hl6emwsb');
         console.log('getComponent',textareaname);

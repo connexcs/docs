@@ -83,22 +83,25 @@ Imagine you have a form with hundreds of items to choose from, like products in 
         var fields= ['pagination_oet28hkk']
         this.hide(fields)
         ```
+    
     4. `this.show(fields)`
         ```js
         var fields= ['pagination_oet28hkk']
         this.show(fields)
         ```
+    
     5. `this.disable(['fields'])`
         ```js
         this.disable(['pagination_oet28hkk'])
         ```
-    6.`this.getValue('fieldName')`
+    
+    6.  `this.getValue('fieldName')`
         ```js
         var pagename = this.getValue('pagination_oet28hkk');
         console.log('getValue',pagename);
         ```
     
-    6.  `this.getComponent('component_ID')`
+    7.  `this.getComponent('component_ID')`
         ```js
         var pagename = this.getComponent('pagination_oet28hkk');
         console.log('getComponent',pagename);

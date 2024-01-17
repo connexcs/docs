@@ -107,13 +107,13 @@ Each tab acts as a dedicated space for specific information, guiding users throu
         this.disable(['tabs_8r5c1t2n'])
         ```
     
-    7.`this.getValue('fieldName')`
+    7.  `this.getValue('fieldName')`
         ```js
         var tabsname = this.getValue('tabs_8r5c1t2n');
         console.log('getValue',tabsname);
         ```
     
-    8.`this.getComponent('component_ID')`
+    8.  `this.getComponent('component_ID')`
         ```js
         var tabsname = this.getComponent('tabs_8r5c1t2n');
         console.log('getComponent',tabsname);

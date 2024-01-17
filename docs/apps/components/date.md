@@ -156,13 +156,13 @@ Examples may include:
         this.disable(['date_0gprgpvi'])
         ```
     
-    7.`this.getValue('fieldName')`
+    7. `this.getValue('fieldName')`
         ```js
         var datename = this.getValue('date_0gprgpvi');
         console.log('getValue',datename);
         ```
     
-    8.`this.setData(Value)`
+    8.  `this.setData(Value)`
         ```js
         this.setData(
          {
@@ -170,7 +170,7 @@ Examples may include:
         );
         ```
     
-    7.  `this.getComponent('component_ID')`
+    9.  `this.getComponent('component_ID')`
         ```js
         var datename = this.getComponent('date_0gprgpvi');
         console.log('getComponent',datename);

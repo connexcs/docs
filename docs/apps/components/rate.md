@@ -30,13 +30,13 @@ A "rate" component allows users to express their level of satisfaction, preferen
 ### Events
 
 | **Name**| **Description**|
-|----------------------|---------------------------------------------------------------------|
+|---------|----------------|
 | `onChange (element)| The onChange event occurs when the value of a field is changed|
 
 ### Methods
 
 | **Name**| **Description**|**Parameters**|
-|----------------------|---------------------------------------------------------------------|----|
+|---------|----------------|--------------|
 |`this.addClassName`|Add style class to page item|`(fields: String(componentID), String[]; className: String)`|
 |`this.removeClassName`|Remove page item style|`(fields: String(componentID), String[]; className: String)`|
 |`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String(componentID), String[]; Object: Object)`|
@@ -101,13 +101,13 @@ A "rate" component allows users to express their level of satisfaction, preferen
         this.disable(['rate_2n2vy8wj'])
         ```
     
-    7.`this.getValue('fieldName')`
+    7.  `this.getValue('fieldName')`
         ```js
         var ratename = this.getValue('rate_2n2vy8wj');
         console.log('getValue',ratename);
         ```
     
-    8.`this.getComponent('component_ID')`
+    8.  `this.getComponent('component_ID')`
         ```js
         var ratename = this.getComponent('rate_2n2vy8wj');
         console.log('getComponent',ratename);

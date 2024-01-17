@@ -94,19 +94,20 @@ Users can type text, numbers, or symbols into the designated field, providing es
         this.disable(['text_t1fhz5vb'])
         ```
     
-    7.`this.getValue('fieldName')`
+    7.  `this.getValue('fieldName')`
         ```js
         var textname = this.getValue('text_t1fhz5vb');
         console.log('getValue',textname);
         ```
-    8.`this.setData(Value)`
+    8.  `this.setData(Value)`
         ```js
         this.setData(
          {
          "text_t1fhz5vb": "This is the Text",}
         );
         ```
-    9.`this.getComponent('component_ID')`
+    
+    9.  `this.getComponent('component_ID')`
         ```js
         var textname = this.getComponent('text_t1fhz5vb');
         console.log('getComponent',textname);

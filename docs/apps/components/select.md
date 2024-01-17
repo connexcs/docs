@@ -37,7 +37,7 @@ It's a versatile tool for collecting user input in situations where there are mu
 ### Events
 
 | **Name**| **Description**|
-|----------------------|---------------------------------------------------------------------|
+|---------|----------------|
 | `onChange (element)`| The onChange event occurs when the value of a field is changed|
 | `onFocus (element)`| The onfocus event occurs when a field gets focus|
 | `onBlur (element)`| The onblur event occurs when a field loses focus|
@@ -114,7 +114,7 @@ It's a versatile tool for collecting user input in situations where there are mu
         this.disable(['select_rzaltclo'])
         ```
     
-    7.`this.getValue('fieldName')`
+    7.  `this.getValue('fieldName')`
         ```js
         var selectname = this.getValue('select_rzaltclo');
         console.log('getValue',selectname);
@@ -126,17 +126,18 @@ It's a versatile tool for collecting user input in situations where there are mu
         console.log('getComponent',selectname);
         ```
 
-    9.`this.setData(Value)`
+    9.  `this.setData(Value)`
         ```js
         this.setData(
          {
          "select_rzaltclo": "Option 2",}
         );
+        ```
 
 ## Config
 
 | **Name**|**Description**|**Icon**|
-|---------------|----------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
+|---------|---------------|--------|
 |**ID**| Select's unique identifier|<img src= "/apps/components/img/input_id.png">|
 |**Name**| [**Optional**] The display name of the select field|<img src= "/apps/components/img/input_name.png">|
 |**Width**| [**Optional**] Width of the field|<img src= "/apps/components/img/checkbox_name.png">|
@@ -160,7 +161,7 @@ This helps to prevent users from submitting forms with invalid data, which can c
 Form validation can be performed using a variety of methods, including:
 
 | **Name**| **Description**|
-|----------------------|---------------------------------------------------------------------|
+|---------|----------------|
 | **Required**| Single line of text|
 |**Custom Validation Rules**|(rule, value, callback) => {|
 ||**rule**: Verification rule, you can view the verification configuration information through this parameter; rule.fieldcan get the field identifier of the current verification|
