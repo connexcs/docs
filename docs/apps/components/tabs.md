@@ -46,11 +46,11 @@ Each tab acts as a dedicated space for specific information, guiding users throu
 |`this.addClassName`|Add style class to page item|`(fields: String(componentID), String[]; className: String)`|
 |`this.removeClassName`|Remove page item style|`(fields: String(componentID), String[]; className: String)`|
 |`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String(componentID), String[]; Object: Object)`|
-|`this.hide(fields)`|Hides the field|`(fields: String(componentID)`|
-|`this.show(fields)`|Displays the field|`(fields: String(componentID)`|
-| `this.disable(fields)`| Disable input field from user interaction|`(fields: String(componentID), String[])`|
+|`this.hide`|Hides the field|`(fields: String(componentID)`|
+|`this.show`|Displays the field|`(fields: String(componentID)`|
+| `this.disable`| Disable input field from user interaction|`(fields: String(componentID), String[])`|
 |`this.getValue`|Get A Value From a component|`(fieldName String(componentID)`|
-|`this.getValues()`|Get the values of all fields when values change|`(Object: Object)`|
+|`this.getValues`|Get the values of all fields when values change|`Object`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
@@ -110,13 +110,13 @@ Each tab acts as a dedicated space for specific information, guiding users throu
     7.  `this.getValue('fieldName')`
         ```js
         var tabsname = this.getValue('tabs_8r5c1t2n');
-        console.log('getValue',tabsname);
+        console.log('getValue', tabsname);
         ```
     
     8.  `this.getComponent('component_ID')`
         ```js
         var tabsname = this.getComponent('tabs_8r5c1t2n');
-        console.log('getComponent',tabsname);
+        console.log('getComponent', tabsname);
         ```
 
 ## Config
@@ -127,7 +127,7 @@ Each tab acts as a dedicated space for specific information, guiding users throu
 |**Type**|Choose the arrangement of tabs from **Default**, **Tabs** or **Border-Card**|<img src= "/apps/components/img/tabs_type.png">|
 |**Tab Position**|Choose the tabs from **Top**, **Left** or **Right** or **Bottom**|<img src= "/apps/components/img/tabs_type.png">|
 |**Tab Options**|Choose the number of tabs you wish to have in the form|<img src= "/apps/components/img/tabs_options.png">|
-|**Custom Class**| An HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|
+|**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**| Enable **Hidden** to action to hide the field|<img src= "/apps/components/img/alert_arrtibuteaction.png">|
 
 ## First time User?

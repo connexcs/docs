@@ -31,19 +31,19 @@ Imagine you have a form with hundreds of items to choose from, like products in 
 ### Events
 
 | **Name**| **Description**|
-|----------------------|---------------------------------------------------------------------|
+|---------|----------------|
 | `onChange (element)`| The onChange event occurs when the value of a field is changed|
 
 ### Methods
 
 | **Name**| **Description**|**Parameters**|
-|----------------------|---------------------------------------------------------------------|----|
+|----------|---------------|--------------|
 |`this.addClassName`|Add style class to page item|`(fields: String(componentID), String[]; className: String)`|
 |`this.removeClassName`|Remove page item style|`(fields: String(componentID), String[]; className: String)`|
 |`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String(componentID), String[]; Object: Object)`|
-|`this.hide(fields)`|Hides the field|`(fields: String(componentID)`|
-|`this.show(fields)`|Displays the field|`(fields: String(componentID)`|
-| `this.disable(fields)`| Disable input field from user interaction|`(fields: String(componentID), String[])`|
+|`this.hide`|Hides the field|`(fields: String(componentID)`|
+|`this.show`|Displays the field|`(fields: String(componentID)`|
+| `this.disable`| Disable input field from user interaction|`(fields: String(componentID), String[])`|
 |`this.getValue`|Get A Value From a component|`(fieldName String(componentID)`|
 
 !!! Info
@@ -98,19 +98,19 @@ Imagine you have a form with hundreds of items to choose from, like products in 
     6.  `this.getValue('fieldName')`
         ```js
         var pagename = this.getValue('pagination_oet28hkk');
-        console.log('getValue',pagename);
+        console.log('getValue', pagename);
         ```
     
     7.  `this.getComponent('component_ID')`
         ```js
         var pagename = this.getComponent('pagination_oet28hkk');
-        console.log('getComponent',pagename);
+        console.log('getComponent', pagename);
         ```
 
 ## Config
 
 | **Name**|**Description**|**Icon**|
-|---------------|----------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
+|---------|---------------|--------|
 |**ID**| Pagination's unique identifier|<img src= "/apps/components/img/input_id.png">|
 |**Name**| [**Optional**] The display name of the pagination field|<img src= "/apps/components/img/checkbox_name.png">|
 |**Label Width**|Width of the label associated with an input field. It determines the horizontal space occupied by the label text|<img src= "/apps/components/img/input_labelwidth1.png">|
@@ -120,7 +120,7 @@ Imagine you have a form with hundreds of items to choose from, like products in 
 |**Pager Count**| Refers to the total number of visible page numbers displayed at once|<img src= "/apps/components/img/pagination_pagercount.png">|
 |**Total**| Total number of pages you wish to keep for navigation|<img src= "/apps/components/img/pagination_total.png">|
 |**Background**|Enable this option to add backdrop to the pages while navigating|<img src= "/apps/components/img/pagination_background.png">|
-|**Custom Class**| An HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|
+|**Custom Class**| An HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** to action to hide the field. <br> Enable **Disabled** action to make the field un-suable|<img src= "/apps/components/img/checkbox_attributeaction.png">|
 
 ## First time User?

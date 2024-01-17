@@ -45,10 +45,10 @@ Unlike a standard dropdown menu with a flat list of options, a tree-select organ
 | **Name**| **Description**|**Parameters**|
 |---------|----------------|--------------|
 |`this.addClassName`|Add style class to page item|`(fields: String(componentID), String[]; className: String)`|
-|`this.hide(fields)`|Hides the field|`(fields: String(componentID)`|
-|`this.show(fields)`|Displays the field|`(fields: String(componentID)`|
-|`this.disable(fields)`| Disable input field from user interaction|`(fields: String(componentID), String[])`|
-|`this.setData`|Set the data in the field|`(Value: String, String[])`|
+|`this.hide`|Hides the field|`(fields: String(componentID)`|
+|`this.show`|Displays the field|`(fields: String(componentID)`|
+|`this.disable`| Disable input field from user interaction|`(fields: String(componentID), String[])`|
+|`this.setData`|Set the data in the field|`(Value: Object)`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
@@ -120,7 +120,7 @@ Unlike a standard dropdown menu with a flat list of options, a tree-select organ
 |**Optional any Node**|users can choose any node from any level within the tree, including child nodes|<img src= "/apps/components/img/treeselect_optional.png">|
 |**Option**|Choose either **Static** or **Dynamic** way of adding data to the options of the Tree Select <br><br>**Static data** refers to a fixed set of options that are predefined and loaded into the Tree Select at the time of initialization</br></br> **Dynamic data** are options fetched as needed from sources like databases or APIs. The Tree Select updates choices based on user selections. You select from **Data source** which refers to the origin of the data; **Function** which refers to the code that manipulates the data, and **Assigned Value** which refers to the specific value stored or associated with a data element|<img src= "/apps/components/img/checkbox_static.png"> <img src= "/apps/components/img/checkbox_dynamic.png">|
 |**Default Value**| The default value which is filled in the field before the user changes it|<img src= "/apps/components/img/treeselect_default.png">|
-|**Custom Class**| An HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|
+|**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** to action to hide the field. <br> Enable **Disabled** action to make the field unsuable. <br>Enable **Show Clear button** action to make the clear button visible.|<img src= "/apps/components/img/treeselect_attributionaction.png">|
 
 ## First time User?

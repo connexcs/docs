@@ -26,22 +26,22 @@
 ### Events
 
 | **Name**| **Description**|
-|----------------------|---------------------------------------------------------------------|
+|---------|----------------|
 | `onCellClicked`| The onCellClicked event occurs when the cell in a data grid is clicked|
 | `onLinkClicked`| The onLinkClicked event occurs when the link is clicked|
 
 ### Methods
 
 | **Name**| **Description**|**Parameters**|
-|----------------------|---------------------------------------------------------------------|----|
+|---------|----------------|--------------|
 |`this.addClassName`|Add style class to page item|`(fields: String(componentID), String[]; className: String)`|
 |`this.removeClassName`|Remove page item style|`(fields: String(componentID), String[]; className: String)`|
 |`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String(componentID), String[]; Object: Object)`|
-|`this.getValues()`|Get the values of all fields when values change|`(Object: Object)`|
-|`this.hide(fields)`|Hides the field|`(fields: String(componentID)`|
-|`this.show(fields)`|Displays the field|`(fields: String(componentID)`|
-| `this.disable(fields)`| Disable input field from user interaction|`(fields: String(componentID), String[])`|
-|`this.setData`|Set the data in the field|`(Value: String, String[])`|
+|`this.getValues`|Get the values of all fields when values change|`Object`|
+|`this.hide`|Hides the field|`(fields: String(componentID)`|
+|`this.show`|Displays the field|`(fields: String(componentID)`|
+| `this.disable`| Disable input field from user interaction|`(fields: String(componentID), String[])`|
+|`this.setData`|Set the data in the field|`(Value: Object`|
 |`this.getValue`|Get A Value From a component|`(fieldName String(componentID)`|
 
 !!! Info
@@ -108,13 +108,13 @@
     8.  `this.getValue('fieldName')`
         ```js
         var dataname = this.getValue('aggrid_nd93m43c');
-        console.log('getValue',datanamee);
+        console.log('getValue', datanamee);
         ```
     
     9.  `this.getComponent('component_ID')`
         ```js
         var dataname = this.getComponent('aggrid_nd93m43c');
-        console.log('getComponent',dataname);
+        console.log('getComponent', dataname);
         ```
 
 ## Config

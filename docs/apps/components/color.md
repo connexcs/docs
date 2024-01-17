@@ -61,15 +61,15 @@ Some of the most common methods include:
 
 ### Methods
 
-| **Name**| **Description**|**Parameters**
-|----------------------|---------------------------------------------------------------------|---|
+| **Name**| **Description**|**Parameters**|
+|---------|----------------|--------------|
 |`this.addClassName`|Add style class to form item|`(fields: String(componentID), String[]; className: String)`|
 |`this.removeClassName`|Remove form item style|`(fields: String(componentID), String[]; className: String)`|
 |`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String(componentID), String[]; Object: Object)`|
-|`this.getValues()`|Get the values of all fields when values change|`(Object: Object)`|
-|`this.hide(fields)`|Hides the field|`(fields: String(componentID)`|
-|`this.show(fields)`|Displays the field|`(fields: String(componentID)`|
-| `this.disable(fields)`| Disable input field from user interaction|`(fields: String(componentID), String[])`|
+|`this.getValues`|Get the values of all fields when values change|`Object`|
+|`this.hide`|Hides the field|`(fields: String(componentID)`|
+|`this.show`|Displays the field|`(fields: String(componentID)`|
+| `this.disable`| Disable input field from user interaction|`(fields: String(componentID), String[])`|
 |`this.getValue`|Get A Value From a component|`(fieldName String(componentID)`|
 
 |**this.setData(Value)**|Set the data in the field|
@@ -129,18 +129,18 @@ Some of the most common methods include:
     7. `this.getValue('fieldName')`
         ```js
         var colorname = this.getValue('color_zxqxhwlh');
-        console.log('getValue',colorname);
+        console.log('getValue', colorname);
         ```
     8. `this.getComponent('component_ID')`
         ```js
         var colorname = this.getComponent('color_zxqxhwlh');
-        console.log('getComponent',colorname);
+        console.log('getComponent', colorname);
         ```
 
 ## Config
 
-| **Name**|**Description**|**Icon**
-|---------------|----------------------------------------------------------------------------------------------------------------------------------------|--|
+| **Name**|**Description**|**Icon**|
+|---------|---------------|--------|
 |**ID**| Color's unique identifier|<img src= "/apps/components/img/input_id.png">|
 |**Name**| [**Optional**] The display name of the color field|<img src= "/apps/components/img/checkbox_name.png">|
 |**Width**| [**Optional**] Width of the field|<img src= "/apps/components/img/input_width.png">|
@@ -150,8 +150,8 @@ Some of the most common methods include:
 |**Text Prompt**| A description to aid the user when completing the field|<img src= "/apps/components/img/input_textprompt.png">|
 |**Support Transparency Options**|Ability to specify the transparency level of a color|<img src= "/apps/components/img/color_support.png">
 |**Default Value**| Controls the initial color selection in a color picker, while still allowing the user to change it if desired|<img src= "/apps/components/img/color_default.png">
-|**Custom Class**| An HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|
-|**Attribute Action**|Enable **Data Binding** to connect the data to UI<br>Enable **Hidden** action to hide the field</br>Enable **Disabled** action to make the field unsuable|<img src= "/apps/components/img/checkbox_attributeaction.png">|
+|**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
+|**Attribute Action**|Enable **Data Binding** to connect the data to UI<br>Enable **Hidden** action to hide the field</br>Enable **Disabled** action to make the field un-suable|<img src= "/apps/components/img/checkbox_attributeaction.png">|
 
 ### Validation
 
@@ -162,7 +162,7 @@ This helps to prevent users from submitting forms with invalid data, which can c
 Form validation can be performed using a variety of methods, including:
 
 | **Name**| **Description**|
-|----------------------|---------------------------------------------------------------------|
+|---------|----------------|
 | **Required**| Single line of text|
 |**Custom Validation Rules**|(rule, value, callback) => {|
 ||**rule**: Verification rule, you can view the verification configuration information through this parameter; rule.fieldcan get the field identifier of the current verification.|

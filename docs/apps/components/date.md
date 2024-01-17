@@ -94,11 +94,11 @@ Examples may include:
 |`this.addClassName`|Add style class to page item|`(fields: String(componentID), String[]; className: String)`|
 |`this.removeClassName`|Remove page item style|`(fields: String(componentID), String[]; className: String)`|
 |`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String(componentID), String[]; Object: Object)`|
-|`this.getValues()`|Get the values of all fields when values change|`(Object: Object)`|
-|`this.hide(fields)`|Hides the field|`(fields: String(componentID)`|
-|`this.show(fields)`|Displays the field|`(fields: String(componentID)`|
-| `this.disable(fields)`| Disable input field from user interaction|`(fields: String(componentID), String[])`|
-|`this.setData`|Set the data in the field|`(Value: String, String[])`|
+|`this.getValues`|Get the values of all fields when values change|`Object`|
+|`this.hide`|Hides the field|`(fields: String(componentID)`|
+|`this.show`|Displays the field|`(fields: String(componentID)`|
+| `this.disable`| Disable input field from user interaction|`(fields: String(componentID), String[])`|
+|`this.setData`|Set the data in the field|`(Value: Object)`|
 |`this.getValue`|Get A Value From a component|`(fieldName String(componentID)`|
 
 !!! Info
@@ -159,7 +159,7 @@ Examples may include:
     7. `this.getValue('fieldName')`
         ```js
         var datename = this.getValue('date_0gprgpvi');
-        console.log('getValue',datename);
+        console.log('getValue', datename);
         ```
     
     8.  `this.setData(Value)`
@@ -173,7 +173,7 @@ Examples may include:
     9.  `this.getComponent('component_ID')`
         ```js
         var datename = this.getComponent('date_0gprgpvi');
-        console.log('getComponent',datename);
+        console.log('getComponent', datename);
         ```
 
 ## Config
@@ -189,9 +189,9 @@ Examples may include:
 |**Text Prompt**| A description to aid the user when completing the field|<img src= "/apps/components/img/input_textprompt.png">|
 |**Display Type**| You can select from various options including **Year**, **Month**, **Date**, **Week**, **Dates**, **Datetime**, **Datetimerange**, **Daterange**, or **Monthrange**|<img src= "/apps/components/img/date_displaytype.png">|
 |**Placeholder**| The short hint is displayed in the input field before the user enters a value|<img src= "/apps/components/img/input_placeholder.png">|
-|**Format**| You can decide the format of your datelike **YYYY-MM-DD** or **DD/MM/YY**|<img src= "/apps/components/img/date_format.png">|
+|**Format**| You can decide the format of your date like **YYYY-MM-DD** or **DD/MM/YY**|<img src= "/apps/components/img/date_format.png">|
 |**Default Value**|Specifies the initial value that's displayed in the date field when the form is loaded|<img src= "/apps/components/img/date_defaultvalue.png">|
-|**Custom Class**| An HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|
+|**Custom Class**| An HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br>Enable **Read Only** to make the field non-editable. <br>Enable **Disabled** action to make the field unsuable. <br> Enable **Text box is editable** to allow users to manually type in a date value instead of only selecting from the date picker. <br>Enable **Show Clear button** action to make the clear button visible|<img src= "/apps/components/img/date_attributeaction.png">
 
 ### Validation

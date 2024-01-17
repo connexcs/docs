@@ -51,9 +51,9 @@ Complex layout subform component for list (array) type form data, supporting nes
 |`this.addClassName`|Add style class to page item|`(fields: String(componentID), String[]; className: String)`|
 |`this.removeClassName`|Remove page item style|`(fields: String(componentID), String[]; className: String)`|
 |`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String(componentID), String[]; Object: Object)`|
-|`this.hide(fields)`|Hides the field|`(fields: String(componentID)`|
-|`this.show(fields)`|Displays the field|`(fields: String(componentID)`|
-| `this.disable(fields)`| Disable input field from user interaction|`(fields: String(componentID), String[])`|
+|`this.hide`|Hides the field|`(fields: String(componentID)`|
+|`this.show`|Displays the field|`(fields: String(componentID)`|
+| `this.disable`| Disable input field from user interaction|`(fields: String(componentID), String[])`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
@@ -105,7 +105,7 @@ Complex layout subform component for list (array) type form data, supporting nes
     6.  `this.getComponent('component_ID')`
         ```js
         var subformname = this.getComponent('subform_e4cjz3nf');
-        console.log('getComponent',subformname);
+        console.log('getComponent', subformname);
         ```
 
 ## Config
@@ -121,7 +121,7 @@ Complex layout subform component for list (array) type form data, supporting nes
 |**Show Control**|Displays control button|<img src= "/apps/components/img/subform_showcontrol.png">|
 |**Virtual Table**| Display elements inside the sub-form|<img src= "/apps/components/img/subform_virtualtable.png">|
 |**Default Value**| The default value which is filled in the field before the user changes it|<img src= "/apps/components/img/input_defaultvalue.png">|
-|**Custom Class**| An HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|
+|**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** to action to hide the field. <br> Enable **Disabled** action to make the field un-suable. <br>Enable **Deletable** to delete the row in the sub-form. <br> Enable **Addible** to add a row in the sub-form. <br>Enable **Show word count** action make the word count visible|<img src= "/apps/components/img/input_attributeaction.png">|
 
 ## First time User?

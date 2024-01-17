@@ -36,11 +36,11 @@
 |`this.addClassName`|Add style class to page item|`(fields: String(componentID), String[]; className: String)`|
 |`this.removeClassName`|Remove page item style|`(fields: String(componentID), String[]; className: String)`|
 |`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String(componentID), String[]; Object: Object)`|
-|`this.getValues()`|Get the values of all fields when values change|`(Object: Object)`|
-|`this.hide(fields)`|Hides the field|`(fields: String(componentID)`|
-|`this.show(fields)`|Displays the field|`(fields: String(componentID)`|
-| `this.disable(fields)`| Disable input field from user interaction|`(fields: String(componentID), String[])`|
-|`this.setData`|Set the data in the field|`(Value: String, String[])`|
+|`this.getValues`|Get the values of all fields when values change|`Object`|
+|`this.hide`|Hides the field|`(fields: String(componentID)`|
+|`this.show`|Displays the field|`(fields: String(componentID)`|
+| `this.disable`| Disable input field from user interaction|`(fields: String(componentID), String[])`|
+|`this.setData`|Set the data in the field|`(Value: Object)`|
 |`this.getValue`|Get A Value From a component|`(fieldName String(componentID)`|
 
 !!! Info
@@ -101,7 +101,7 @@
     7.  `this.getValue('fieldName')`
         ```js
         var slidername = this.getValue('slider_k9cacr9r');
-        console.log('getValue',slidername);
+        console.log('getValue', slidername);
         ```
     
     8.  `this.setData(Value)`
@@ -115,7 +115,7 @@
     9.  `this.getComponent('component_ID')`
         ```js
         var slidername = this.getComponent('slider_k9cacr9r');
-        console.log('getComponent',slidername);
+        console.log('getComponent', slidername);
         ```
 
 ## Config
@@ -133,7 +133,7 @@
 |**Minimum**|Least value for the slider range|<img src= "/apps/components/img/slider_minimum.png">|
 |**Minimum**|Highest value for the slider range|<img src= "/apps/components/img/slider_maximum.png">|
 |**Step**|Smallest increment or jump by which the value of the slider can change|<img src= "/apps/components/img/slider_step.png">|
-|**Custom Class**| An HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|
+|**Custom Class**| An HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** to action to hide the field. <br> Enable **Disabled** action to make the field un-suable.|<img src= "/apps/components/img/checkbox_attributeaction.png">|
 
 ### Validation

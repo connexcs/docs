@@ -19,10 +19,10 @@ It can be used to improve the readability and usability of forms by making it ea
 
 ### Methods
 
-| **Name**| **Description**|
-|----------------------|---------------------------------------------------------------------|
-|`this.hide(fields)`|Hides the field|
-|`this.show(fields)`|Displays the field|
+| **Name**| **Description**|**Parameters**|
+|---------|----------------|--------------|
+|`this.hide`|Hides the field|`(fields: String(componentID), String[])`|
+|`this.show`|Displays the field|`(fields: String(componentID), String[])`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
@@ -44,6 +44,7 @@ It can be used to improve the readability and usability of forms by making it ea
         var fields= ['divider_xjmcv33p']
         this.hide(fields)
         ```
+    
     2. `this.show(fields)`
         ```js
         var fields= ['divider_xjmcv33p']
@@ -52,9 +53,9 @@ It can be used to improve the readability and usability of forms by making it ea
 
 ## Config
 
-| **Name**|**Description**|**Icon**
-|---------------|----------------------------------------------------------------------------------------------------------------------------------------|--|
-|**ID**| Divider's unique identifier which is used to access the field by the API and the key of the field when the form is saved |<img src= "/apps/components/img/input_id.png">|
+| **Name**|**Description**|**Icon**|
+|---------|---------------|--------|
+|**ID**| Divider's unique identifier|<img src= "/apps/components/img/input_id.png">|
 |**Name**| [**Optional**] The display name of the divider|<img src= "/apps/components/img/checkbox_name.png">|
 |**Content Position**|Specifies how the divider is positioned relative to the form content, like **Left**, **Center** or **Right**|<img src= "/apps/components/img/divider_contentposition.png">|
 |**Attribute Action**|Enable **Hidden** action to hide the field|<img src= "/apps/components/img/alert_arrtibuteaction.png">|

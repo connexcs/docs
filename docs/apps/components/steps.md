@@ -41,11 +41,11 @@ It serves as a visual and functional indicator of progress, improving user exper
 |`this.addClassName`|Add style class to page item|`(fields: String(componentID), String[]; className: String)`|
 |`this.removeClassName`|Remove page item style|`(fields: String(componentID), String[]; className: String)`|
 |`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String(componentID), String[]; Object: Object)`|
-|`this.getValues()`|Get the values of all fields when values change|`(Object: Object)`|
-|`this.hide(fields)`|Hides the field|`(fields: String(componentID)`|
-|`this.show(fields)`|Displays the field|`(fields: String(componentID)`|
-| `this.disable(fields)`| Disable input field from user interaction|`(fields: String(componentID), String[])`|
-|`this.setData`|Set the data in the field|`(Value: String, String[])`|
+|`this.getValues`|Get the values of all fields when values change|`Object`|
+|`this.hide`|Hides the field|`(fields: String(componentID)`|
+|`this.show`|Displays the field|`(fields: String(componentID)`|
+| `this.disable`| Disable input field from user interaction|`(fields: String(componentID), String[])`|
+|`this.setData`|Set the data in the field|`(Value: Object)`|
 |`this.getValue`|Get A Value From a component|`(fieldName String(componentID)`|
 
 !!! Info
@@ -106,7 +106,7 @@ It serves as a visual and functional indicator of progress, improving user exper
     7.  `this.getValue('fieldName')`
         ```js
         var stepname = this.getValue('steps_2bpjtc5m');
-        console.log('getValue',stepname);
+        console.log('getValue', stepname);
         ```
     
     8.  `this.setData(Value)`
@@ -120,7 +120,7 @@ It serves as a visual and functional indicator of progress, improving user exper
     9.  `this.getComponent('component_ID')`
         ```js
         var stepname = this.getComponent('steps_2bpjtc5m');
-        console.log('getComponent',stepname);
+        console.log('getComponent', stepname);
         ```
 
 ## Config
@@ -139,7 +139,7 @@ It serves as a visual and functional indicator of progress, improving user exper
 |**Status of end step**|Choose the status of the end step from **wait**, **process**, **finish**, **error** or **success**|<img src= "/apps/components/img/step_statusend.png">|
 |**Center title and description**|Enable this option to make the title and description centrally aligned |<img src= "/apps/components/img/step_statusend.png">|
 |**Simple Theme**| Toggle this button to switch between themes|<img src= "/apps/components/img/step_simple.png">|
-|**Custom Class**| An HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|
+|**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** to action to hide the field.|<img src= "/apps/components/img/step_attributeaction.png">|
 
 ## First time User?

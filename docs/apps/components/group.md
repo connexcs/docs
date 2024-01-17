@@ -36,13 +36,13 @@ Examples may include:
 ### Methods
 
 | **Name**| **Description**|**Parameters**|
-|----------------------|---------------------------------------------------------------------|----|
+|---------|----------------|--------------|
 |`this.addClassName`|Add style class to page item|`(fields: String(componentID), String[]; className: String)`|
 |`this.removeClassName`|Remove page item style|`(fields: String(componentID), String[]; className: String)`|
 |`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String(componentID), String[]; Object: Object)`|
 |`this.getValue`|Get A Value From a component|`(fieldName String(componentID)`|
-|`this.hide(fields)`|Hides the field|`(fields: String(componentID)`|
-|`this.show(fields)`|Displays the field|`(fields: String(componentID)`|
+|`this.hide`|Hides the field|`(fields: String(componentID)`|
+|`this.show`|Displays the field|`(fields: String(componentID)`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
@@ -78,8 +78,8 @@ Examples may include:
     
     3. `this.getValue(fieldName)`
         ```js
-        var datename = this.getValue('group_j9o3pb2i');
-        console.log('getValue', datename);
+        var groupname = this.getValue('group_j9o3pb2i');
+        console.log('getValue', groupname);
         ```
 
     4. `this.hide(fields)`
@@ -96,13 +96,13 @@ Examples may include:
     6.  `this.getComponent('component_ID')`
         ```js
         var groupname = this.getComponent('group_j9o3pb2i');
-        console.log('getComponent',groupname);
+        console.log('getComponent', groupname);
         ```
 
 ## Config
 
 | **Name**|**Description**|**Icon**|
-|---------------|----------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
+|---------|---------------|--------|
 |**ID**| Group's unique identifier|<img src= "/apps/components/img/input_id.png">|
 |**Name**| [**Optional**] The display name of the grid|<img src= "/apps/components/img/checkbox_name.png">|
 |**Width**| [**Optional**] Width of the field|<img src= "/apps/components/img/input_width.png">|
@@ -110,7 +110,7 @@ Examples may include:
 |**Label Wrap**| If the label is longer than the allowed width the text will continue on another line|<img src= "/apps/components/img/input_labelwrap1.png">|
 |**Hide Label**| Hides the label on the form|<img src= "/apps/components/img/input_hidelabel.png">|
 |**Text Prompt**| A description to aid the user when completing the field|<img src= "/apps/components/img/input_textprompt.png">|
-|**Custom Class**| An HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|
+|**Custom Class**| An HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** to action to hide the field.|<img src= "/apps/components/img/group_attributionaction.png">|
 
 ### Validation
@@ -122,7 +122,7 @@ This helps to prevent users from submitting forms with invalid data, which can c
 Form validation can be performed using a variety of methods, including:
 
 | **Name**| **Description**|
-|----------------------|---------------------------------------------------------------------|
+|---------|----------------|
 |**Custom Validation Rules**|(rule, value, callback) => {|
 ||**rule**: Verification rule, you can view the verification configuration information through this parameter; rule.fieldcan get the field identifier of the current verification|
 

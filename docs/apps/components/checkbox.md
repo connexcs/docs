@@ -51,25 +51,23 @@ Some of the most common methods include:
 ### Events
 
 | **Name**| **Description**|
-|----------------------|---------------------------------------------------------------------|
+|---------|----------------|
 | `onChange (element)`| The onChange event occurs when the value of a field is changed|
 
 ### Methods
 
-| **Name**| **Description**|**Parameters**
-|----------------------|---------------------------------------------------------------------|---|
+| **Name**| **Description**|**Parameters**|
+|---------|----------------|--------------|
 |`this.addClassName`|Add style class to form item|`(fields: String(componentID), String[]; className: String)`|
 |`this.removeClassName`|Remove form item style|`(fields: String(componentID), String[]; className: String)`|
 |`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String(componentID), String[]; Object: Object)`|
-|`this.getValues()`|Get the values of all fields when values change|`(Object: Object)`|
-|`this.hide(fields)`|Hides the field|`(fields: String(componentID)`|
-|`this.show(fields)`|Displays the field|`(fields: String(componentID)`|
-| `this.disable(fields)`| Disable input field from user interaction|`(fields: String(componentID), String[])`|
+|`this.getValues`|Get the values of all fields when values change|`Object`|
+|`this.hide`|Hides the field|`(fields: String(componentID)`|
+|`this.show`|Displays the field|`(fields: String(componentID)`|
+| `this.disable`| Disable input field from user interaction|`(fields: String(componentID), String[])`|
 |`this.getValue`|Get A Value From a component|`(fieldName String(componentID)`|
-
-|**this.setData(Value)**|Set the data in the field|
-|**this.refreshFieldDataSource**|Refresh the datasource data bound to the form field|
-|**this.setOptions(fields, options)**|Set Form Field Configuration Item|
+|`this.setData`|Set the data in the field|`(Value: Object)`|
+|`this.refreshFieldDataSource`|Refresh the datasource data bound to the whole page|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
@@ -79,7 +77,7 @@ Some of the most common methods include:
 #### Steps to place/use the methods for components of the Page Builder"
 
 1. Go to Form Attribute :material-menu-right: Action Panel :material-menu-right: Setting :material-menu-right: (Mounted | refresh | click 'Add action')
-2. Write the method/code as shown in the **Example** below
+2. Write the method/code as shown in the **Example** below.
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
@@ -129,19 +127,26 @@ Some of the most common methods include:
     7. `this.getValue('fieldName')`
         ```js
         var checkname = this.getValue('checkbox_g0x4pt54z');
-        console.log('getValue',checkname);
+        console.log('getValue', checkname);
         ```
     
     8. `this.getComponent('component_ID')`
         ```js
         var checkname = this.getComponent('checkbox_g0x4pt54z');
-        console.log('getComponent',checkname);
+        console.log('getComponent', checkname);
         ```
+    
+    9. `this.setData(Value)`
+        ```js
+        this.setData(
+         {
+         "checkbox_g0x4pt54z": "Option 1", "Option 2",}
+        );
 
 ## Config
 
-| **Name**|**Description**|**Icon**
-|---------------|----------------------------------------------------------------------------------------------------------------------------------------|--|
+| **Name**|**Description**|**Icon**|
+|---------|---------------|--------|
 |**ID**| Checkbox's unique identifier|<img src= "/apps/components/img/input_id.png">|
 |**Name**| [**Optional**] The display name of the checkbox|<img src= "/apps/components/img/checkbox_name.png">|
 |**Width**| [**Optional**] Width of the field|<img src= "/apps/components/img/input_width.png">|
@@ -151,8 +156,8 @@ Some of the most common methods include:
 |**Text Prompt**| A description to aid the user when completing the field|<img src= "/apps/components/img/input_textprompt.png">|
 |**Layout**| Select the format of the Checkbox as **Block** or **Inline**|<img src= "/apps/components/img/checkbox_layout.png">|
 |**Option**|Choose either **Static** or **Dynamic** way of adding data to the options of the Checkbox <br><br>**Static data** refers to a fixed set of options that are predefined and loaded into the Checkbox at the time of initialization</br></br> **Dynamic data** are options fetched as needed from sources like databases or APIs. The checkbox updates choices based on user selections. You select from **Data source** which refers to the origin of the data; **Function** which refers to the code that manipulates the data, and **Assigned Value** which refers to the specific value stored or associated with a data element|<img src= "/apps/components/img/checkbox_static.png"> <img src= "/apps/components/img/checkbox_dynamic.png">|
-|**Custom Class**| An HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|
-|**Attribute Action**|Enable **Data Binding** to connect the data to UI<br>Enable **Hidden** action to hide the field</br>Enable **Disabled** action to make the field unsuable|<img src= "/apps/components/img/checkbox_attributeaction.png">|
+|**Custom Class**| An HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
+|**Attribute Action**|Enable **Data Binding** to connect the data to UI<br>Enable **Hidden** action to hide the field</br>Enable **Disabled** action to make the field un-suable|<img src= "/apps/components/img/checkbox_attributeaction.png">|
 
 ### Validation
 
@@ -163,7 +168,7 @@ This helps to prevent users from submitting forms with invalid data, which can c
 Form validation can be performed using a variety of methods, including:
 
 | **Name**| **Description**|
-|----------------------|---------------------------------------------------------------------|
+|---------|----------------|
 | **Required**| Single line of text|
 |**Custom Validation Rules**|(rule, value, callback) => {|
 ||**rule**: Verification rule, you can view the verification configuration information through this parameter; rule.fieldcan get the field identifier of the current verification.|

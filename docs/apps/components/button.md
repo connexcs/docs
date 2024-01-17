@@ -47,20 +47,20 @@ Here are some examples of how interactivity can be implemented for **Button** co
 ### Events
 
 | **Name**| **Description**|
-|----------------------|---------------------------------------------------------------------|
+|---------|----------------|
 | `onClick (element)`| Event handler that's triggered when the button is clicked. This event handler can be used to perform any number of actions, such as submitting the form, redirecting the user to a different page, or displaying an error message|
 
 ### Methods
 
 | **Name**| **Description**|**Parameters**|
-|----------------------|---------------------------------------------------------------------|-----|
+|---------|----------------|--------------|
 |`this.addClassName`|Add style class to form item|`(fields: String(componentID), String[]; className: String)`|
 |`this.removeClassName`|Remove form item style|`(fields: String(componentID), String[]; className: String)`|
 |`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String(componentID), String[]; Object: Object)`|
-|`this.getValues()`|Get the values of all fields when values change|`(Object: Object)`|
-|`this.hide(fields)`|Hides the field|`(fields: String(componentID)`|
-|`this.show(fields)`|Displays the field|`(fields: String(componentID)`|
-| `this.disable(fields)`| Disable input field from user interaction|`(fields: String(componentID), String[])`|
+|`this.getValues`|Get the values of all fields when values change|`Object`|
+|`this.hide`|Hides the field|`(fields: String(componentID)`|
+|`this.show`|Displays the field|`(fields: String(componentID)`|
+| `this.disable`| Disable input field from user interaction|`(fields: String(componentID), String[])`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
@@ -116,13 +116,13 @@ Here are some examples of how interactivity can be implemented for **Button** co
     7. `this.getComponent('component_ID')`
         ```js
         var butonname = this.getComponent('button_815t5dfs');
-        console.log('getComponent',buttonname);
+        console.log('getComponent', buttonname);
         ```
 
 ## Config
 
 | **Name**|**Description**|**Icon**|
-|---------------|----------------------------------------------------------------------------------------------------------------------------------------|-----|
+|---------|---------------|--------|
 |**ID**| Button's unique Identifier |<img src= "/apps/components/img/alert_id2.png">|
 |**Name**| [**Optional**] An identifier for the button within the page. It's used by the page builder to associate the button with the data it's submitting. The name is typically not displayed to the user|<img src= "/apps/components/img/button_name.png">|
 |**Button Name**| [**Optional**] The display name of the button|<img src= "/apps/components/img/button_buttonname.png">|
@@ -134,8 +134,8 @@ Here are some examples of how interactivity can be implemented for **Button** co
 |**Button Size**| Select the size of the button from 3 choices; **Large**, **Default** or **Small**|<img src= "/apps/components/img/button_buttonsize.png">|
 |**Button Type**| Select the type of button from: **Default**, **Primary**, **Success**, **Warning**, **Danger**, **Info**, **Text**, or **Link**|<img src= "/apps/components/img/button_buttontype.png">|
 |**Determine whether it's**|You may select the shape of the button as **plain**, **round** or **circle**|<img src= "/apps/components/img/button_shape.png">|
-|**Custom Class**| An HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|
-|**Attribute Action**|Enable **Hidden** action to hide the field <br>Enable **Disabled** action to make the field unsuable</br>|<img src= "/apps/components/img/button_attributeaction.png">|
+|**Custom Class**| An HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
+|**Attribute Action**|Enable **Hidden** action to hide the field <br>Enable **Disabled** action to make the field un-suable</br>|<img src= "/apps/components/img/button_attributeaction.png">|
 
 ## First time User?
 

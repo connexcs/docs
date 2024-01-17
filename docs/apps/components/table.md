@@ -28,13 +28,13 @@ Tables provide a structured format for organizing related data within a form. Us
 ### Methods
 
 | **Name**| **Description**|**Parameters**|
-|----------------------|---------------------------------------------------------------------|----|
+|---------|----------------|--------------|
 |`this.addClassName`|Add style class to page item|`(fields: String(componentID), String[]; className: String)`|
 |`this.removeClassName`|Remove page item style|`(fields: String(componentID), String[]; className: String)`|
 |`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String(componentID), String[]; Object: Object)`|
-|`this.hide(fields)`|Hides the field|`(fields: String(componentID)`|
-|`this.show(fields)`|Displays the field|`(fields: String(componentID)`|
-| `this.disable(fields)`| Disable input field from user interaction|`(fields: String(componentID), String[])`|
+|`this.hide`|Hides the field|`(fields: String(componentID)`|
+|`this.show`|Displays the field|`(fields: String(componentID)`|
+| `this.disable`| Disable input field from user interaction|`(fields: String(componentID), String[])`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
@@ -86,7 +86,7 @@ Tables provide a structured format for organizing related data within a form. Us
     6.  `this.getComponent('component_ID')`
         ```js
         var reportname = this.getComponent('report_eahnplzw');
-        console.log('getComponent',reportname);
+        console.log('getComponent', reportname);
         ```
 
 ## Config
@@ -97,7 +97,7 @@ Tables provide a structured format for organizing related data within a form. Us
 |**Width**| [**Optional**] Width of the field|<img src= "/apps/components/img/input_width.png">|
 |**Border Width**|Choose the width of the table|<img src= "/apps/components/img/table_border.png">|
 |**Border Color**|Choose the color of the table|<img src= "/apps/components/img/table_color.png">|
-|**Custom Class**| An HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|
+|**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Hidden** to action to hide the field|<img src= "/apps/components/img/alert_arrtibuteaction.png">|
 
 ## First time User?

@@ -32,11 +32,11 @@ Users can type text, numbers, or symbols into the designated field, providing es
 |`this.addClassName`|Add style class to page item|`(fields: String(componentID), String[]; className: String)`|
 |`this.removeClassName`|Remove page item style|`(fields: String(componentID), String[]; className: String)`|
 |`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String(componentID), String[]; Object: Object)`|
-|`this.getValues()`|Get the values of all fields when values change|`(Object: Object)`|
-|`this.hide(fields)`|Hides the field|`(fields: String(componentID)`|
-|`this.show(fields)`|Displays the field|`(fields: String(componentID)`|
-| `this.disable(fields)`| Disable input field from user interaction|`(fields: String(componentID), String[])`|
-|`this.setData`|Set the data in the field|`(Value: String, String[])`|
+|`this.getValues`|Get the values of all fields when values change|`Object`|
+|`this.hide`|Hides the field|`(fields: String(componentID)`|
+|`this.show`|Displays the field|`(fields: String(componentID)`|
+| `this.disable`| Disable input field from user interaction|`(fields: String(componentID), String[])`|
+|`this.setData`|Set the data in the field|`(Value: Object)`|
 |`this.getValue`|Get A Value From a component|`(fieldName String(componentID)`|
 
 !!! Info
@@ -97,7 +97,7 @@ Users can type text, numbers, or symbols into the designated field, providing es
     7.  `this.getValue('fieldName')`
         ```js
         var textname = this.getValue('text_t1fhz5vb');
-        console.log('getValue',textname);
+        console.log('getValue', textname);
         ```
     8.  `this.setData(Value)`
         ```js
@@ -110,7 +110,7 @@ Users can type text, numbers, or symbols into the designated field, providing es
     9.  `this.getComponent('component_ID')`
         ```js
         var textname = this.getComponent('text_t1fhz5vb');
-        console.log('getComponent',textname);
+        console.log('getComponent', textname);
         ```
 
 ## Config
@@ -126,7 +126,7 @@ Users can type text, numbers, or symbols into the designated field, providing es
 |**Placeholder**| The short hint is displayed in the input field before the user enters a value|<img src= "/apps/components/img/input_placeholder.png">|
 |**Text Prompt**| A description to aid the user when completing the field|<img src= "/apps/components/img/input_textprompt.png">|
 |**Default Value**| The default value which is filled in the field before the user changes it|<img src= "/apps/components/img/input_defaultvalue.png">|
-|**Custom Class**| An HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|
+|**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** to action to hide the field.|<img src= "/apps/components/img/text_attributeaction.png">|
 
 ### Validation

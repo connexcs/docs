@@ -41,7 +41,7 @@ You can use focus and blur events to perform a variety of actions, such as:
 ### Events
 
 | **Name**| **Description**|
-|----------------------|---------------------------------------------------------------------|
+|---------|----------------|
 | `onChange (element)`| The onChange event occurs when the value of a field is changed|
 | `onFocus (element)`| The onfocus event occurs when a field gets focus|
 | `onBlur (element)`| The onblur event occurs when a field loses focus|
@@ -49,15 +49,15 @@ You can use focus and blur events to perform a variety of actions, such as:
 ### Methods
 
 | **Name**| **Description**|**Parameters**|
-|----------------------|---------------------------------------------------------------------|----|
+|---------|----------------|--------------|
 |`this.addClassName`|Add style class to page item|`(fields: String(componentID), String[]; className: String)`|
 |`this.removeClassName`|Remove page item style|`(fields: String(componentID), String[]; className: String)`|
 |`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String(componentID), String[]; Object: Object)`|
-|`this.getValues()`|Get the values of all fields when values change|`(Object: Object)`|
-|`this.hide(fields)`|Hides the field|`(fields: String(componentID)`|
-|`this.show(fields)`|Displays the field|`(fields: String(componentID)`|
-| `this.disable(fields)`| Disable input field from user interaction|`(fields: String(componentID), String[])`|
-|`this.setData`|Set the data in the field|`(Value: String, String[])`|
+|`this.getValues`|Get the values of all fields when values change|`Object`|
+|`this.hide`|Hides the field|`(fields: String(componentID)`|
+|`this.show`|Displays the field|`(fields: String(componentID)`|
+|`this.disable`| Disable input field from user interaction|`(fields: String(componentID), String[])`|
+|`this.setData`|Set the data in the field|`(Value: Object)`|
 |`this.getValue`|Get A Value From a component|`(fieldName String(componentID)`|
 
 !!! Info
@@ -127,13 +127,13 @@ You can use focus and blur events to perform a variety of actions, such as:
     9.  `this.getComponent('component_ID')`
         ```js
         var inputname = this.getComponent('input_h633hysc');
-        console.log('getComponent',inputname);
+        console.log('getComponent', inputname);
         ```
 
 ## Config
 
 | **Name**|**Description**|**Icon**|
-|---------------|----------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
+|---------|---------------|--------|
 |**ID**| Input's unique identifier |<img src= "/apps/components/img/input_id.png">|
 |**Name**| [**Optional**] The display name of the input field|<img src= "/apps/components/img/input_name.png">|
 |**Width**| [**Optional**] Width of the field|<img src= "/apps/components/img/input_width.png">|
@@ -144,7 +144,7 @@ You can use focus and blur events to perform a variety of actions, such as:
 |**Text Prompt**| A description to aid the user when completing the field|<img src= "/apps/components/img/input_textprompt.png">|
 |**Max Length**| Limit the amount of characters the field supports|<img src= "/apps/components/img/input_maxlength.png">|
 |**Default Value**| The default value which is filled in the field before the user changes it|<img src= "/apps/components/img/input_defaultvalue.png">|
-|**Custom Class**| An HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|
+|**Custom Class**| An HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** to action to hide the field. <br> Enable **Disabled** action to make the field unsuable. <br>Enable **Show Clear button** action to make the clear button visible. <br> Enable **Show Password** action make the password visible. <br>Enable **Show word count** action make the word count visible|<img src= "/apps/components/img/input_attributeaction.png">|
 
 ### Validation
@@ -156,7 +156,7 @@ This helps to prevent users from submitting forms with invalid data, which can c
 Form validation can be performed using a variety of methods, including:
 
 | **Name**| **Description**|
-|----------------------|---------------------------------------------------------------------|
+|---------|----------------|
 | **Required**| Single line of text|
 |**Select**|Several common type checks are provided in single-line text boxes such as string, URL, mailbox, etc.|
 | **Regular expressions**|Used to match patterns in text. They can be used to validate the format of data, such as email addresses, phone numbers, and dates|

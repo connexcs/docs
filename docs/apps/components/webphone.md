@@ -40,7 +40,7 @@ OTT Mobile Application
 ### Methods
 
 |**Name**|**Description**|
-|------------------------|-----------------------------------------------------------|
+|--------|---------------|
 |**setConfig ({wsServers: String, username: String, password: String, displayName: String, cli: String, realm: String})**|This method is used to set the configuration for the communication component. The following parameters are required:|
 ||**wsServers**: A list of web sockets servers to connect to|
 ||**username**: The username to use to authenticate with the communication server|
@@ -60,7 +60,7 @@ OTT Mobile Application
 ## Config
 
 | **Name**| **Description**|**Icon**|
-|-----------------------|----------------------------------------------------------------------------------------------------------------------------------------|------------|
+|---------|----------------|--------|
 |**ID**| This is a unique identifier which is used to access the field by the API and the key of the field when the form is saved|<img src= "/apps/components/img/input_id.png">|
 |**Width**| [**Optional**] To set the width of the field|<img src= "/apps/components/img/input_width.png">|
 |**Show (Dialpad)**<br>| Show a numeric dial-pad 0-9 # and *|<img src= "/apps/components/img/webphone_show.png">|

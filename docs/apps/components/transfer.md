@@ -35,9 +35,9 @@ It's commonly used to create interactive selections, manage data assignments, or
 |---------|----------------|--------------|
 |`this.addClassName`|Add style class to page item|`(fields: String(componentID), String[]; className: String)`|
 |`this.removeClassName`|Remove page item style|`(fields: String(componentID), String[]; className: String)`|
-|`this.hide(fields)`|Hides the field|`(fields: String(componentID)`|
-|`this.show(fields)`|Displays the field|`(fields: String(componentID)`|
-|`this.disable(fields)`| Disable input field from user interaction|`(fields: String(componentID), String[])`|
+|`this.hide`|Hides the field|`(fields: String(componentID)`|
+|`this.show`|Displays the field|`(fields: String(componentID)`|
+|`this.disable`| Disable input field from user interaction|`(fields: String(componentID), String[])`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
@@ -102,7 +102,7 @@ It's commonly used to create interactive selections, manage data assignments, or
 |**Searchable**| Make the Source and Target options searchable|<img src= "/apps/components/img/transfer_searchable.png">|
 |**Option**|Choose either **Static** or **Dynamic** way of adding data to the oprions of the Transfer <br><br>**Static data** refers to a fixed set of options that are predefined and loaded into the transfer at the time of initialization</br></br> **Dynamic data** are options fetched as needed from sources like databases or APIs. The transfer updates choices based on user selections. You select from **Data source** which refers to the origin of the data; **Function** which refers to the code that manipulates the data, and **Assigned Value** which refers to the specific value stored or associated with a data element|<img src= "/apps/components/img/checkbox_static.png"> <img src= "/apps/components/img/checkbox_dynamic.png">|
 |**Titles**|Change the titles of your transfer lists|<img src= "/apps/components/img/transfer_titles.png">|
-|**Custom Class**| An HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|
+|**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** to action to hide the field. <br> Enable **Disabled** action to make the field unsuable.|<img src= "/apps/components/img/transfer_attributeaction.png">|
 
 ### Validation

@@ -40,11 +40,11 @@ A "rate" component allows users to express their level of satisfaction, preferen
 |`this.addClassName`|Add style class to page item|`(fields: String(componentID), String[]; className: String)`|
 |`this.removeClassName`|Remove page item style|`(fields: String(componentID), String[]; className: String)`|
 |`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String(componentID), String[]; Object: Object)`|
-|`this.getValues()`|Get the values of all fields when values change|`(Object: Object)`|
-|`this.hide(fields)`|Hides the field|`(fields: String(componentID)`|
-|`this.show(fields)`|Displays the field|`(fields: String(componentID)`|
-| `this.disable(fields)`| Disable input field from user interaction|`(fields: String(componentID), String[])`|
-|`this.setData`|Set the data in the field|`(Value: String, String[])`|
+|`this.getValues`|Get the values of all fields when values change|`Object`|
+|`this.hide`|Hides the field|`(fields: String(componentID)`|
+|`this.show`|Displays the field|`(fields: String(componentID)`|
+| `this.disable`| Disable input field from user interaction|`(fields: String(componentID), String[])`|
+|`this.setData`|Set the data in the field|`(Value: Object)`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
@@ -104,19 +104,19 @@ A "rate" component allows users to express their level of satisfaction, preferen
     7.  `this.getValue('fieldName')`
         ```js
         var ratename = this.getValue('rate_2n2vy8wj');
-        console.log('getValue',ratename);
+        console.log('getValue', ratename);
         ```
     
     8.  `this.getComponent('component_ID')`
         ```js
         var ratename = this.getComponent('rate_2n2vy8wj');
-        console.log('getComponent',ratename);
+        console.log('getComponent', ratename);
         ```
 
 ## Config
 
 | **Name**|**Description**|**Icon**|
-|---------------|----------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
+|---------|---------------|--------|
 |**ID**| Rate's unique identifier|<img src= "/apps/components/img/input_id.png">|
 |**Name**| [**Optional**] The display name of the rate field|<img src= "/apps/components/img/checkbox_name.png">|
 |**Width**| [**Optional**] Width of the field|<img src= "/apps/components/img/input_width.png">|
@@ -126,7 +126,7 @@ A "rate" component allows users to express their level of satisfaction, preferen
 |**Text Prompt**| A description to aid the user when completing the field|<img src= "/apps/components/img/input_textprompt.png">|
 |**Maximum**|Number of stars for rating|<img src= "/apps/components/img/rate_maximum.png">|
 |**Allow Half**|Enable this option to allow half rating|<img src= "/apps/components/img/rate_allowhalf.png">|
-|**Custom Class**| An HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|
+|**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** to action to hide the field. <br> Enable **Disabled** action to make the field unsuable. <br>Enable **Show Score** for displaying the rate score.|<img src= "/apps/components/img/rate_attributeaction.png">|
 
 ### Validation
@@ -138,7 +138,7 @@ This helps to prevent users from submitting forms with invalid data, which can c
 Form validation can be performed using a variety of methods, including:
 
 | **Name**| **Description**|
-|----------------------|---------------------------------------------------------------------|
+|---------|----------------|
 | **Required**| Single line of text|
 |**Custom Validation Rules**|(rule, value, callback) => {|
 ||**rule**: Verification rule, you can view the verification configuration information through this parameter; rule.fieldcan get the field identifier of the current verification|

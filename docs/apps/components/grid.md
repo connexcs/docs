@@ -30,12 +30,12 @@ Examples may include:
 ### Methods
 
 | **Name**| **Description**|**Parameters**|
-|----------------------|---------------------------------------------------------------------|----|
+|---------|----------------|--------------|
 |`this.addClassName`|Add style class to page item|`(fields: String(componentID), String[]; className: String)`|
 |`this.removeClassName`|Remove page item style|`(fields: String(componentID), String[]; className: String)`|
 |`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String(componentID), String[]; Object: Object)`|
-|`this.hide(fields)`|Hides the field|`(fields: String(componentID)`|
-|`this.show(fields)`|Displays the field|`(fields: String(componentID)`|
+|`this.hide`|Hides the field|`(fields: String(componentID)`|
+|`this.show`|Displays the field|`(fields: String(componentID)`|
 |`this.getValue`|Get A Value From a component|`(fieldName String(componentID)`|
 
 !!! Info
@@ -70,37 +70,41 @@ Examples may include:
         this.removeClassName('grid_th1wozzk', 'abc')
         
         ```
+    
     3. `this.hide(fields)`
         ```js
         var fields= ['grid_th1wozzk']
         this.hide(fields)
         ```
+    
     4. `this.show(fields)`
         ```js
         var fields= ['grid_th1wozzk']
         this.show(fields)
         ```
+    
     5.  `this.getValue('fieldName')`
         ```js
         var gridname = this.getValue('grid_th1wozzk');
-        console.log('getValue',datanamee);
+        console.log('getValue', gridname);
         ```
+    
     6. `this.getComponent('component_ID')`
         ```js
         var gridname = this.getComponent('grid_th1wozzk');
-        console.log('getComponent',gridname);
+        console.log('getComponent', gridname);
         ```
 
 ## Config
 
 | **Name**|**Description**|**Icon**|
-|---------------|----------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
+|---------|---------------|--------|
 |**ID**| Grid's unique identifier |<img src= "/apps/components/img/input_id.png">|
 |**Grid Spacing**| [**Optional**] Space between various components inside the grid|<img src= "/apps/components/img/grid_gridspacing.png">|
 |**Flex Layout**| [**Optional**] Allows flexibility to arrange the various components inside the grid|<img src= "/apps/components/img/grid_flexlayout.png">|
 |**Horizontal Arrangement**|Select from various options **Start**, **End**, **Center**, **Space Around**, **Space Between** for horizontal arrangement of the components inside the grid|<img src= "/apps/components/img/grid_horizontal.png">|
 |**Vertical Arrangement**|Select from various options **Top**, **Middle**, **Bottom** for vertical arrangement of the components inside the grid|<img src= "/apps/components/img/grid_vertical4.png">|
-|**Custom Class**| An HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|
+|**Custom Class**| An HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Hidden** action to hide the field|<img src= "/apps/components/img/alert_arrtibuteaction.png">|
 
 ## First time User?

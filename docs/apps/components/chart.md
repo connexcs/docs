@@ -37,11 +37,11 @@ The 3 types of Charts we use are:
 |`this.addClassName`|Add style class to page item|`(fields: String(componentID), String[]; className: String)`|
 |`this.removeClassName`|Remove page item style|`(fields: String(componentID), String[]; className: String)`|
 |`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String(componentID), String[]; Object: Object)`|
-|`this.getValues()`|Get the values of all fields when values change|`(Object: Object)`|
-|`this.hide(fields)`|Hides the field|`(fields: String(componentID)`|
-|`this.show(fields)`|Displays the field|`(fields: String(componentID)`|
-| `this.disable(fields)`| Disable input field from user interaction|`(fields: String(componentID), String[])`|
-|`this.setData`|Set the data in the field|`(Value: String, String[])`|
+|`this.getValues`|Get the values of all fields when values change|`Object`|
+|`this.hide`|Hides the field|`(fields: String(componentID)`|
+|`this.show`|Displays the field|`(fields: String(componentID)`|
+| `this.disable`| Disable input field from user interaction|`(fields: String(componentID), String[])`|
+|`this.setData`|Set the data in the field|`(Value: Object)`|
 |`this.getValue`|Get A Value From a component|`(fieldName String(componentID)`|
 
 !!! Info
@@ -108,13 +108,13 @@ The 3 types of Charts we use are:
     8.  `this.getValue('fieldName')`
         ```js
         var chartname = this.getValue('echarts_moy2lbor');
-        console.log('getValue',chartname);
+        console.log('getValue', chartname);
         ```
     
     9. `this.getComponent('component_ID')`
         ```js
         var chartname = this.getComponent('echarts_moy2lbor');
-        console.log('getComponent',chartname);
+        console.log('getComponent', chartname);
         ```
 
         **example of setData**
@@ -127,7 +127,7 @@ The 3 types of Charts we use are:
 |**Width**| [**Optional**] Width of the field|<img src= "/apps/components/img/input_width.png">|
 |**Height**| [**Optional**] Height of the field|<img src= "/apps/components/charts_height.png">|
 |**Default**| Default data for the charts|<img src= "/apps/components/charts_default.png">|
-|**Custom Class**| An HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|
+|**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Data Binding** to connect the data to UI|<img src= "/apps/components/charts_attributeaction.png">|
 
 1. **Basic**: Set the basic fields in a chart.

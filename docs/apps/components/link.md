@@ -25,19 +25,19 @@ Link components can be used in forms to provide additional functionality, such a
 ### Events
 
 | **Name**| **Description**|
-|----------------------|---------------------------------------------------------------------|
+|---------|----------------|
 | `onClick (element)`| Event handler that's triggered when the button is clicked. This event handler can be used to perform any number of actions, such as submitting the form, redirecting the user to a different page, or displaying an error message|
 
 ### Methods
 
 | **Name**| **Description**|**Parameters**|
-|----------------------|---------------------------------------------------------------------|----|
+|---------|----------------|--------------|
 |`this.addClassName`|Add style class to page item|`(fields: String(componentID), String[]; className: String)`|
 |`this.removeClassName`|Remove page item style|`(fields: String(componentID), String[]; className: String)`|
 |`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String(componentID), String[]; Object: Object)`|
-|`this.hide(fields)`|Hides the field|`(fields: String(componentID)`|
-|`this.show(fields)`|Displays the field|`(fields: String(componentID)`|
-| `this.disable(fields)`| Disable input field from user interaction|`(fields: String(componentID), String[])`|
+|`this.hide`|Hides the field|`(fields: String(componentID)`|
+|`this.show`|Displays the field|`(fields: String(componentID)`|
+| `this.disable`| Disable input field from user interaction|`(fields: String(componentID), String[])`|
 |`this.getValue`|Get A Value From a component|`(fieldName String(componentID)`|
 
 !!! Info
@@ -92,19 +92,19 @@ Link components can be used in forms to provide additional functionality, such a
     6.  `this.getValue('fieldName')`
         ```js
         var linkname = this.getValue('link_0t4yixc3');
-        console.log('getValue',linkname);
+        console.log('getValue', linkname);
         ```
     
     7.  `this.getComponent('component_ID')`
         ```js
         var linkname = this.getComponent('link_0t4yixc3');
-        console.log('getComponent',linkname);
+        console.log('getComponent', linkname);
         ```
 
 ## Config
 
 | **Name**|**Description**|**Icon**|
-|---------------|----------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
+|---------|---------------|--------|
 |**ID**| Link's unique identifier|<img src= "/apps/components/img/input_id.png">|
 |**Name**| [**Optional**] The display name of the date field|<img src= "/apps/components/img/checkbox_name.png">|
 |**Link Name**| [**Optional**] Name of the link you wish to provide|<img src= "/apps/components/img/link_linkname.png">|
@@ -115,7 +115,7 @@ Link components can be used in forms to provide additional functionality, such a
 |**Link Type**| You can select from various types of link you can represent including **Default**, **Primary**, **Success**, **Warning**, **Danger**, **Info**|<img src= "/apps/components/img/link_linktype.png">|
 |**whether the component has underline**| Enable this option to underline the link component|<img src= "/apps/components/img/link_underline.png">|
 |**Whether to open in a new window**| Enable this option to open the link in the new window|<img src= "/apps/components/img/link_newwindow.png">|
-|**Custom Class**| An HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|
+|**Custom Class**| An HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**| Enable **Hidden** to action to hide the field <br> Enable **Disabled** action to make the field un-suable|<img src= "/apps/components/img/link_attributeaction.png">|
 
 ## First time User?

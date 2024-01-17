@@ -83,14 +83,12 @@ Here's a general approach to integrating interactivity:
 |`this.addClassName`|Add style class to page item|`(fields: String(componentID), String[]; className: String)`|
 |`this.removeClassName`|Remove page item style|`(fields: String(componentID), String[]; className: String)`|
 |`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String(componentID), String[]; Object: Object)`|
-|`this.getValues()`|Get the values of all fields when values change|`(Object: Object)`|
-|`this.hide(fields)`|Hides the field|`(fields: String(componentID)`|
-|`this.show(fields)`|Displays the field|`(fields: String(componentID)`|
-| `this.disable(fields)`| Disable input field from user interaction|`(fields: String(componentID), String[])`|
-|`this.setData`|Set the data in the field|`(Value: String, String[])`|
-
-|`this.refreshFieldDataSource`|Refresh the datasource data bound to the form field|
-|`this.setOptions(fields, options)`|Set Form Field Configuration Item|
+|`this.getValues`|Get the values of all fields when values change|Object|
+|`this.hide`|Hides the field|`(fields: String(componentID)`|
+|`this.show`|Displays the field|`(fields: String(componentID)`|
+| `this.disable`| Disable input field from user interaction|`(fields: String(componentID), String[])`|
+|`this.setData`|Set the data in the field|`(Value: Object)`|
+|`this.refreshFieldDataSource`|Refresh the datasource data bound to the whole page|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
@@ -120,44 +118,49 @@ Here's a general approach to integrating interactivity:
             ```
 
     2. `this.removeClassName(fields, className)`
-    ```js
-    this.removeClassName('cascader_ccj8m3in', 'abc')
-    ```
+        ```js
+        this.removeClassName('cascader_ccj8m3in', 'abc')
+        ```
     
     3. `this.getValue(fieldName)`
-    ```js
-    var cascadername = this.getValue('cascader_ccj8m3in');
-    console.log('getValue', cascadername);
-    ```
+        ```js
+        var cascadername = this.getValue('cascader_ccj8m3in');
+        console.log('getValue', cascadername);
+        ```
+    
     4. `this.getValues(fieldName)`
-    ```js
-    var data = this.getValues();
-    console.log(data);
-    ```
+        ```js
+        var data = this.getValues();
+        console.log(data);
+        ```
+    
     5. `this.hide(fields)`
         ```js
         var fields= ['cascader_ccj8m3in']
         this.hide(fields)
         ```
+    
     6. `this.show(fields)`
         ```js
         var fields= ['cascader_ccj8m3in']
         this.show(fields)
         ```
+    
     7. `this.disable(['fields'])`
         ```js
         this.disable(['cascader_ccj8m3in'])
         ```
+    
     8. `this.getComponent('component_ID')`
         ```js
         var cascadername = this.getComponent('cascader_ccj8m3in');
-        console.log('getComponent',cascadername);
+        console.log('getComponent', cascadername);
         ```
 
 ## Config
 
-| **Name**|**Description**|**Image**|
-|---------------|----------------------------------------------------------------------------------------------------------------------------------------|---|
+| **Name**|**Description**|**Icon**|
+|---------|---------------|---------|
 |**ID**| Cascader's unique identifier|<img src= "/apps/components/img/input_id.png">|
 |**Name**| [**Optional**] The display name of the cascader|<img src= "/apps/components/img/checkbox_name.png">|
 |**Width**| [**Optional**] The width of the field|<img src= "/apps/components/img/input_width.png">|
@@ -171,8 +174,8 @@ Here's a general approach to integrating interactivity:
 |**Optional any node**|Allow users to pick any node in the hierarchy, even if it's unrelated to their previous choices, offering flexibility in option selection|<img src= "/apps/components/img/cascader_optional.png">
 |**Option**|Choose either **Static** or **Dynamic** way of adding data to the oprions of the Cascader <br><br>**Static data** refers to a fixed set of options that are predefined and loaded into the cascader at the time of initialization</br></br> **Dynamic data** are options fetched as needed from sources like databases or APIs. The cascader updates choices based on user selections. You select from **Data source** which refers to the origin of the data; **Function** which refers to the code that manipulates the data, and **Assigned Value** which refers to the specific value stored or associated with a data element|<img src= "/apps/components/img/checkbox_static.png"> <img src= "/apps/components/img/checkbox_dynamic.png">|
 |**Default Value**|It specifies the initial option that's selected when the form is loaded|<img src= "/apps/components/img/input_defaultvalue.png">|
-|**Custom Class**| An HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|
-|**Attribute Action**|Enable **Data Binding** to connect the data to UI<br>Enable **Hidden** action to hide the field</br>Enable **Disabled** action to make the field unsuable<br>Enable **Show Clear button** action to make the clear button visible.|<img src= "/apps/components/img/cascader_attributeaction.png">|
+|**Custom Class**| An HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
+|**Attribute Action**|Enable **Data Binding** to connect the data to UI<br>Enable **Hidden** action to hide the field</br>Enable **Disabled** action to make the field un-suable<br>Enable **Show Clear button** action to make the clear button visible.|<img src= "/apps/components/img/cascader_attributeaction.png">|
 
 ### Validation
 
@@ -183,7 +186,7 @@ This helps to prevent users from submitting forms with invalid data, which can c
 Form validation can be performed using a variety of methods, including:
 
 | **Name**| **Description**|
-|----------------------|---------------------------------------------------------------------|
+|---------|----------------|
 | **Required**| Single line of text|
 |**Custom Validation Rules**|(rule, value, callback) => {|
 ||**rule**: Verification rule, you can view the verification configuration information through this parameter; rule.fieldcan get the field identifier of the current verification.|

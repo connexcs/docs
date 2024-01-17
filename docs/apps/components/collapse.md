@@ -38,14 +38,14 @@ Some of the most common methods include:
 
 ### Methods
 
-| **Name**| **Description**|**Parameters**
-|----------------------|---------------------------------------------------------------------|---|
+| **Name**| **Description**|**Parameters**|
+|---------|----------------|--------------|
 |`this.addClassName`|Add style class to form item|`(fields: String(componentID), String[]; className: String)`|
 |`this.removeClassName`|Remove form item style|`(fields: String(componentID), String[]; className: String)`|
 |`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String(componentID), String[]; Object: Object)`|
-|`this.hide(fields)`|Hides the field|`(fields: String(componentID)`|
-|`this.show(fields)`|Displays the field|`(fields: String(componentID)`|
-| `this.disable(fields)`| Disable input field from user interaction|`(fields: String(componentID), String[])`|
+|`this.hide`|Hides the field|`(fields: String(componentID)`|
+|`this.show`|Displays the field|`(fields: String(componentID)`|
+|`this.disable`| Disable input field from user interaction|`(fields: String(componentID), String[])`|
 |`this.getValue`|Get A Value From a component|`(fieldName String(componentID)`|
 
 !!! Info
@@ -100,23 +100,23 @@ Some of the most common methods include:
     6. `this.getValue('fieldName')`
         ```js
         var collapsename = this.getValue('collapse_itxbeisp');
-        console.log('getValue',collapsename);
+        console.log('getValue', collapsename);
         ```
     
     7. `this.getComponent('component_ID')`
         ```js
         var collapsename = this.getComponent('collapse_itxbeisp');
-        console.log('getComponent',collapsename);
+        console.log('getComponent', collapsename);
         ```
 
 ## Config
 
 | **Name**|**Description**|**Icon**|
-|---------------|----------------------------------------------------------------------------------------------------------------------------------------|--|
+|---------|---------------|--------|
 |**ID**| Collapse's unique identifier|<img src= "/apps/components/img/input_id.png">|
 |**Collapse Options**|Allows you to add/delete multiple Collapses|<img src= "/apps/components/img/collapse_collapseoptions.png">|
 |**Accordian Mode**|Enable this mode if you want to display only one Collaspse section at a time (this is helpful when you have to avoid clutter when you have multiple Collapse sections)|<img src= "/apps/components/img/collapse_accordionmode.png">
-|**Custom Class**| An HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|
+|**Custom Class**| An HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Hidden** action to hide the field|<img src= "/apps/components/img/alert_arrtibuteaction.png">|
 
 ## First time User?

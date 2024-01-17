@@ -19,7 +19,7 @@ The <html> tag is the container for all other HTML elements (except for the <!DO
 ### Events
 
 | **Name**| **Description**|
-|----------------------|---------------------------------------------------------------------|
+|---------|----------------|
 | `onChange (element)`| The onChange event occurs when the value of a field is changed|
 
 ### Methods
@@ -28,9 +28,9 @@ The <html> tag is the container for all other HTML elements (except for the <!DO
 |---------|----------------|--------------|
 |`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String(componentID), String[]; Object: Object)`|
 |`this.getValue`|Get A Value From a component|`(fieldName String(componentID)`|
-|`this.getValues()`|Get the values of all fields when values change|`(Object: Object)`|
-|`this.hide(fields)`|Hides the field|`(fields: String(componentID)`|
-|`this.show(fields)`|Displays the field|`(fields: String(componentID)`|
+|`this.getValues`|Get the values of all fields when values change|`Object`|
+|`this.hide`|Hides the field|`(fields: String(componentID)`|
+|`this.show`|Displays the field|`(fields: String(componentID)`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
@@ -51,7 +51,7 @@ The <html> tag is the container for all other HTML elements (except for the <!DO
     1. `this.getComponent('component_ID')`
         ```js
         var htmlname = this.getComponent('html_0h6cj3iv');
-        console.log('getComponent',htmlname);
+        console.log('getComponent', htmlname);
         ```
    
     2. `this.getValue(fieldName)`
@@ -97,7 +97,7 @@ This helps to prevent users from submitting forms with invalid data, which can c
 Form validation can be performed using a variety of methods, including:
 
 | **Name**| **Description**|
-|----------------------|---------------------------------------------------------------------|
+|---------|----------------|
 | **Required**| Single line of text|
 
 <img src= "/apps/components/img/html_validation.png">

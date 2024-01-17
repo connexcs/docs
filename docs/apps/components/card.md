@@ -47,14 +47,14 @@ Some examples of how card components can be made interactive include:
 ### Methods
 
 | **Name**| **Description**|**Parameters**|
-|----------------------|---------------------------------------------------------------------|-----|
+|---------|----------------|--------------|
 |`this.addClassName`|Add style class to form item|`(fields: String(componentID), String[]; className: String)`|
 |`this.removeClassName`|Remove form item style|`(fields: String(componentID), String[]; className: String)`|
 |`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String(componentID), String[])`|
 |`this.getValue`|Get A Value From a component|`(fields: String(componentID)`|
-|`this.getValues()`|Get the values of all fields when values change|`(Object: Object)`|
-|`this.hide(fields)`|Hides the field|`(fields: String(componentID)`|
-|`this.show(fields)`|Displays the field|`(fields: String(componentID)`|
+|`this.getValues`|Get the values of all fields when values change|`Object`|
+|`this.hide`|Hides the field|`(fields: String(componentID)`|
+|`this.show`|Displays the field|`(fields: String(componentID)`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
@@ -111,13 +111,13 @@ Some examples of how card components can be made interactive include:
     7. `this.getComponent('component_ID')`
         ```js
         var cardname = this.getComponent('card_khlorb9y');
-        console.log('getComponent',cardname);
+        console.log('getComponent', cardname);
         ```
 
 ## Config
 
 | **Name**|**Description**|**Icon**|
-|---------------|----------------------------------------------------------------------------------------------------------------------------------------|----|
+|---------|---------------|--------|
 |**ID**|Card's unique Identifier|<img src= "/apps/components/img/input_id.png">|
 |**Title**| [**Optional**] The visual identifier label of the field|<img src= "/apps/components/img/alert_title2.png">|
 |**Width**| [**Optional**] The width of the field. Example: 20%, 20px, 20rem|<img src= "/apps/components/img/input_width.png">|
@@ -125,7 +125,7 @@ Some examples of how card components can be made interactive include:
 |**Show Header**| [**Optional**] Hides/Displays the **Title** of the card|<img src= "/apps/components/img/card_showheader.png">
 |**Bordered**| [**Optional**] Adds/Removes the border around the card|<img src= "/apps/components/img/card_bordered.png">
 |**Shadow**| [**Optional**]It's used to create a more visually appealing and engaging page. Shadows can also be used to make it easier for users to find and interact with page elements.  the terms "always," "hover," and "never" refer to the visibility of the component's shadow|<img src= "/apps/components/img/card_shadow.png">
-|**Custom Class**| An HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|
+|**Custom Class**| An HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Hidden** action to hide the field|<img src= "/apps/components/img/alert_arrtibuteaction.png">|
 
 ## First time User?

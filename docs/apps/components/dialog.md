@@ -45,7 +45,7 @@ It typically provides a self-contained interface for collecting additional infor
 ### Events
 
 | **Name**| **Description**|
-|----------------------|---------------------------------------------------------------------|
+|---------|----------------|
 |`onCancel`| This event is fired when the user clicks the cancel button on a dialog. This event can be used to perform any necessary cleanup or to prevent any unwanted actions from occurring.|
 |`onConfirm`| This event is fired when the user clicks the confirm button on a dialog. This event can be used to perform any desired actions, such as submitting a form, deleting a file, or making a change to the system|
 
@@ -69,19 +69,19 @@ It typically provides a self-contained interface for collecting additional infor
     1. `this.getComponent('component_ID')`
         ```js
         var dialogname = this.getComponent('dialog_icubvv8x');
-        console.log('getComponent',datename);
+        console.log('getComponent', dialogname);
         ```
-    
+
     2.  `this.getValue('fieldName')`
         ```js
         var dialogname = this.getValue('dialog_icubvv8x');
-        console.log('getValue',dialogname);
+        console.log('getValue', dialogname);
         ```
 
 ## Config
 
 | **Name**|**Description**|**Icon**|
-|---------------|----------------------------------------------------------------------------------------------------------------------------------------|--|
+|---------|---------------|--------|
 |**ID**| Dialog's unique identifier|<img src= "/apps/components/img/input_id.png">|
 |**Title**| [**Optional**] The display name of the dialog field|<img src= "/apps/components/img/alert_title.png">|
 |**Width**| [**Optional**] Width of the field|<img src= "/apps/components/img/input_width.png">|
@@ -91,7 +91,7 @@ It typically provides a self-contained interface for collecting additional infor
 |**Show Cancel Button**| Enable this option for displaying the Cancel button (the button name is editable)|<img src= "/apps/components/img/dialog_showcancelbuttonpng.png">|
 |**Show Confirm Button**| Enable this option for displaying the confirm button (the button name is editable)<br>Enable **Loading** option to show the user that the dialog is busy. It prevents the user from interacting with the dialog until the operation is complete|<img src= "/apps/components/img/dialog_showconfirmbutton.png">|
 |**Margin Top**|It defines the position of the dialog box from the top of the screen|<img src= "/apps/components/img/dialog_magintop.png">|
-|**Custom Class**| An HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](**add anchor text**)|<img src= "/apps/components/img/input_customclass.png">|
+|**Custom Class**| An HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Data Binding** to connect the data to UI|<img src= "/apps/components/img/dialog_attributeaction.png">|
 
 !!! Info
