@@ -83,7 +83,7 @@ It offers a clear and efficient way for users to select one of two mutually excl
     2. `this.removeClassName(fields, className)`
         ```js
         this.removeClassName('switch_ornfn03c', 'abc')
-         ```
+        ```
     
     3. `this.getValues(fieldName)`
         ```js

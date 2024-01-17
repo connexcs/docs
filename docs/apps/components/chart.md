@@ -33,7 +33,7 @@ The 3 types of Charts we use are:
 ### Methods
 
 | **Name**| **Description**|**Parameters**|
-|----------------------|---------------------------------------------------------------------|----|
+|---------|----------------|--------------|
 |`this.addClassName`|Add style class to page item|`(fields: String(componentID), String[]; className: String)`|
 |`this.removeClassName`|Remove page item style|`(fields: String(componentID), String[]; className: String)`|
 |`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String(componentID), String[]; Object: Object)`|
@@ -105,7 +105,7 @@ The 3 types of Charts we use are:
         this.disable(['echarts_moy2lbor'])
         ```
     
-    8.`this.getValue('fieldName')`
+    8.  `this.getValue('fieldName')`
         ```js
         var chartname = this.getValue('echarts_moy2lbor');
         console.log('getValue',chartname);
