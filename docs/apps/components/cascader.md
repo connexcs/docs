@@ -156,6 +156,18 @@ Here's a general approach to integrating interactivity:
         var cascadername = this.getComponent('cascader_ccj8m3in');
         console.log('getComponent', cascadername);
         ```
+    
+    9. `this.setData(Value)`
+        ```js
+        this.setData(
+            {
+	            "cascader_oe6xkjqr": [
+		            "Option 1",
+		            "Option 1 - children"
+	        ]
+        }
+    )
+    ```
 
 ## Config
 
