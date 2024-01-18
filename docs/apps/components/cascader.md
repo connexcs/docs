@@ -159,15 +159,15 @@ Here's a general approach to integrating interactivity:
     
     9. `this.setData(Value)`
         ```js
-        this.setData(
+            this.setData(
             {
 	            "cascader_oe6xkjqr": [
-		            "Option 1",
-		            "Option 1 - children"
+		        "Option 1",
+		        "Option 1 - children"
 	        ]
-        }
-    )
-    ```
+           }
+          )
+        ```
 
 ## Config
 
