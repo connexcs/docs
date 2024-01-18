@@ -118,6 +118,15 @@ By clicking on `+` button we can add customer (see [**Create Customers**](https:
     !!! attention
         Mobile messages are sent globally, but there are some reports of issues with SMS being delivered to numbers in India. These messages are sent on the Twilio network, so ConnexCS can only deliver what they deliver.
 
+=== "Notes"
+
+    These are arbitrary notes that can be entered onto an account at your discretion. 
+
+!!! note "Save Options"
+    + **Save and Continue** = Exit the Customer screen
+    + **Save and Stay** = Save the customer, but stay on the screen (helpful when adding several Customers at a time)
+    + **Delay and Save** = Select a time to elapse before saving the Customer, delaying the setup or change.
+
 === "Day/Time Restrict"
 
     With this feature you can refrain your customers from calling at speficied time slots.
@@ -133,16 +142,7 @@ By clicking on `+` button we can add customer (see [**Create Customers**](https:
 !!! Example
     In the image below you can see the time slider starts from 12:00 AM till 8:00 AM, this means your customers are only allowed to dial between 12:00 AM and 8:00 AM. After 8:00 AM your customers won't be able to call. The rest of the slots (grey color) are restricted slots.
 
-    <img src= "/customer/img/restrict.png" width="300">
-
-=== "Notes"
-
-    These are arbitrary notes that can be entered onto an account at your discretion. 
-
-!!! note "Save Options"
-    + **Save and Continue** = Exit the Customer screen
-    + **Save and Stay** = Save the customer, but stay on the screen (helpful when adding several Customers at a time)
-    + **Delay and Save** = Select a time to elapse before saving the Customer, delaying the setup or change.
+    <img src= "/customer/img/restrict.png" width="400">
 ___
 
 !!! note "Note that you won't be able to change the account currency once you create the account."
