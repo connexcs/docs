@@ -126,7 +126,6 @@ By clicking on `+` button we can add customer (see [**Create Customers**](https:
     + **Save and Continue** = Exit the Customer screen
     + **Save and Stay** = Save the customer, but stay on the screen (helpful when adding several Customers at a time)
     + **Delay and Save** = Select a time to elapse before saving the Customer, delaying the setup or change.
-
 === "Day/Time Restrict"
 
     With this feature you can refrain your customers from calling at speficied time slots.
