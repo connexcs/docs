@@ -19,6 +19,8 @@ Since the threshold represents the most numeric traits related to VoIP, it can f
 
 To add a customized alert, click :material-plus:.
 
+<img src= "/customer/alert_main.png">
+
 Field details:
 
 * **Company**: (Found only under Global Alerts) Select the Customer or Carrier that the Alert will track.
@@ -37,6 +39,7 @@ For example, "=" means "is equal to."
 * **Penalty**: The alert will Disable the Customer or Carrier for the selected duration of time.
 * **Template**: This will populate the sent Alert. (See **Setup :material-menu-right: Config** :material-menu-right: [**Templates**](https://docs.connexcs.com/setup/config/templates/) for details.)
 * **Repeat**: How often to resend the Alert.
+* **Notice Level**: You can assign alert levels like **Warning** or **Error** for classifying and communicating the severity of events or conditions that require attention or action.
 
 Click **`Save`**, and it creates a new alert.
 
