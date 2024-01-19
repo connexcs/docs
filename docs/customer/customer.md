@@ -44,13 +44,7 @@ By clicking on `+` button we can add customer (see [**Create Customers**](https:
 3. Fill in the Subject line and body details and send.
       + Emails sent FROM the email address gets populated in Setup > Settings, and TO every email address listed in Contacts for each customer.
       + Each contact receives an SMS to their Mobile number.
-+ **Send**: ConnexCS includes email and SMS support for your customers.
-
-1. Select several customers using the tick-box selector on the left side of each row. (Customers aren't visible to each other in the sent message.)
-2. Click on "Send" at the top right then choose email, SMS or Refer ConnexCS.
-3. Fill in the Subject line and body details and send.
-      + Emails sent FROM the email address gets populated in Setup > Settings, and TO every email address listed in Contacts for each customer.
-      + Each contact receives an SMS to their Mobile number.+ Refer ConnexCS: This feature allows you to send simple ConnexCS Referrals to you customers.
+      + Refer ConnexCS: This feature allows you to send simple ConnexCS Referrals to you customers.
         + You can send referrals to multiple **Customers**.
         + You can select the **Template** from the drop-down list.
         + Enter the **Subject**.
