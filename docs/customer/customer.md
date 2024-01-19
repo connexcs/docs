@@ -44,6 +44,14 @@ By clicking on `+` button we can add customer (see [**Create Customers**](https:
 3. Fill in the Subject line and body details and send.
    + Emails sent FROM the email address gets populated in Setup > Settings, and TO every email address listed in Contacts for each customer.
    + Each contact receives an SMS to their Mobile number.
+4. Refer ConnexCS: This feature allows you to send simple ConnexCS Referrals to you customers.
+   + You can send referrals to multiple **Customers**.
+   + You can select the **Templates** from the drop-down list.
+   + Enter the **Subject**.
+   + Write the Body of the referral.
+   + Click on `Send`.
+
+<img src= "/customer/img/referral.png" width="400">
 
 !!! note "Custom Email Servers"
     Change the outbound Email Server and SMS origination number in **Setup :material-menu-right: Settings**.
@@ -141,8 +149,6 @@ By clicking on `+` button we can add customer (see [**Create Customers**](https:
     In the image below you can see the time slider starts from 12:00 AM till 8:00 AM, this means your customers are only allowed to dial between 12:00 AM and 8:00 AM. After 8:00 AM your customers won't be able to call. The rest of the slots (grey color) are restricted slots.
 
     <img src= "/customer/img/restrict.png" width="400">
-
-
 ___
 
 !!! note "Note that you won't be able to change the account currency once you create the account."
