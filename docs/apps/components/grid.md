@@ -36,7 +36,6 @@ Examples may include:
 |`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String(componentID), String[]; Object: Object)`|
 |`this.hide`|Hides the field|`(fields: String(componentID)`|
 |`this.show`|Displays the field|`(fields: String(componentID)`|
-|`this.getValue`|Get A Value From a component|`(fieldName String(componentID)`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
@@ -83,13 +82,7 @@ Examples may include:
         this.show(fields)
         ```
     
-    5.  `this.getValue('fieldName')`
-        ```js
-        var gridname = this.getValue('grid_th1wozzk');
-        console.log('getValue', gridname);
-        ```
-    
-    6. `this.getComponent('component_ID')`
+    5. `this.getComponent('component_ID')`
         ```js
         var gridname = this.getComponent('grid_th1wozzk');
         console.log('getComponent', gridname);

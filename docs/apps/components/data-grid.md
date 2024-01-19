@@ -110,8 +110,7 @@
         var dataname = this.getValue('aggrid_nd93m43c');
         console.log('getValue', datanamee);
         ```
-    
-    9.  `this.getComponent('component_ID')`
+    9. `this.getComponent('component_ID')`
         ```js
         var dataname = this.getComponent('aggrid_nd93m43c');
         console.log('getComponent', dataname);
