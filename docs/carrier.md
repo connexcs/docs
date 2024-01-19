@@ -4,17 +4,34 @@
 
 Use the **Carrier** section in **ConnexCS** for simplified Carrier management where you can add, configure, and delete Carriers.
 
-![alt text][carriers-main]
+<img src= "/carrier/img/carriermain.png">
 
 ## Carrier Functions
 
 From the **Carriers** page, you can perform several management operations.
 
 + :material-plus::Add new Carriers (see [**Create Carrier**](https://docs.connexcs.com/carrier/#create-carrier) below for details.)
+
 + **Refresh**: Refresh the page, helpful when making edits or looking at real-time changes. This created page is like a web app so some information will update automatically.
+
 + **Bulk Edit**: Select several Carriers, then click **Bulk Edit** to change the fields such as Channels Status, Flow Speed (CPS), Portal Access, and Country.
+
 + **Delete**: To delete several carriers at a time, select one or more carriers from the list and then click the trash bin icon and confirm.
+
 + **?**: Link to documentation for the current page.
+
++ **Send**: ConnexCS includes Refer ConnexCS for your customers.
+
+1. Select several customers using the tick-box selector on the left side of each row. (Customers aren't visible to each other in the sent message.)
+2. Click on "Send" at the top right then choose Refer ConnexCS.
+3. Refer ConnexCS: This feature allows you to send simple ConnexCS Referrals to you customers.
+    + You can send referrals to multiple **Customers**.
+    + You can select the **Template** from the drop-down list.
+    + Enter the **Subject**.
+    + Write the Body of the referral.
+    + Click on `Send`.
+  
+<img src= "/carrier/img/carrier_referral.png">
 
 + **Active**: Used to sort Carriers based on the selected status. Results on the page will automatically arrange themselves according to the filter.
 
