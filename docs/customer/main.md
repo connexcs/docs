@@ -121,6 +121,9 @@ You can perform the following functions with this data:
 
 * **Generate Invoice**: Select one or more checkboxes under Action, and then select **`Generate Invoice`** in the upper right corner. This will create the invoice based on the Summary time frame (Daily, Weekly, Monthly) which can then be queried by a billing system.
 
+!!! Info
+    You now have the option to **Download** the **CDR** report in the **.csv** format. You can download the CDR report as a **Daily**, **Weekly** or **Monthly** time-frame. You just need to click on the download icon ![Alt text](image.png).
+
 * **Auto Generate Invoice**: Select this to generate an invoice based on the settings found in the Customer configuration (**Edit :material-menu-right: Config :material-menu-right: Invoice Schedule**) for any that are missing.  
 
 !!! tip "Data used for billing"

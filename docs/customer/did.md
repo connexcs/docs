@@ -20,7 +20,6 @@ Create and edit **DID parameters** within the individual customer cards. You can
 
 To configure individual DIDs, click :material-plus::
 
-
 ### Basic
 
 + **Customer**: Assign the number to the customer.
@@ -37,7 +36,6 @@ To configure individual DIDs, click :material-plus::
 ### Destination
 
 Select the destination to deliver incoming calls for the DID:
-
 
 + **URI**: Set the Destination DID (number or extension) and IP to forward calls to a specific SIP URI (Session Initiation Protocol, Uniform Resource Identifier).
 + **External**: To send the call back out to the internet, use a prefix (defined in Customer :material-menu-right: Routing ) to select the outbound route, then the number to send the call to.
@@ -98,7 +96,6 @@ For each Package there is an associated **Minimum Days** the package is valid fo
 + **P-Asserted-ID**: Either `Remove` the P-Asserted-ID so it doesn't reach the customer, or leave it `Default` to preserve it.
 
 ### Script Forge
-
 
 Run a custom script on calls to the DID to perform actions such as routing based on the time of day or if specific users or numbers are active.
 
@@ -187,3 +184,17 @@ Following are the steps to configure the Range Holder cards.
 8. From the **Provider** drop-down select **None/Range Holder** and the **Provider Rate card** disappears.
 9. Click on `Save` and you can see the updated card.
    <img src= "/customer/img/RH4.jpg" width="1300">
+
+## Add ConneXML Tab to DID
+
+1. Login to your Control Panel.
+2. Navigate to Management :material-right-menu: Customer :material-right-menu: Customer[Name] :material-right-menu: DID :material-right-menu: blue `+` button.
+<img src= "/customer/img/did1.png">
+
+3. In the **Basic** tab select your customer.
+<img src= "/customer/img/did2.png">
+
+4. The **Destination** tab will automatically appear, click on **Edit** and then **ConneXML** and insert the link.
+<img src= "/customer/img/did2.png">
+
+5. Click `Save`.
