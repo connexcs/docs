@@ -85,6 +85,7 @@ nav:
         - Class5: customer/class5.md
         - Tags: customer/tags.md
         - Circuit Test: circuit-test.md
+        - Check: customer/check.md
 
 
     - Carrier: carrier.md
