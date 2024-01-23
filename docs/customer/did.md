@@ -195,6 +195,6 @@ Following are the steps to configure the Range Holder cards.
 <img src= "/customer/img/did2.png">
 
 4. The **Destination** tab will automatically appear, click on **Edit** and then **ConneXML** and insert the link.
-<img src= "/customer/img/did2.png">
+<img src= "/customer/img/did3.png">
 
 5. Click `Save`.

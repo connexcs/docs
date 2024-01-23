@@ -65,7 +65,7 @@ The feature gives you the flexibility for **Resizing** the graph, **Refreshing**
 
 === "Customer/Provider Spend"
 
-    <img src= "/misc/img/ch.png">
+    <img src= "/misc/img/spend.png">
 
 === "Profit"
 
