@@ -42,6 +42,20 @@ Select the destination to deliver incoming calls for the DID:
 + **Internal**: Send internally to an extension, a Class5 feature, or even to another customer.
 + **Circuit Test**: *in progress*.
 
+#### Add ConneXML Tab to DID
+
+1. Login to your Control Panel.
+2. Navigate to Management :material-menu-right: Customer :material-menu-right: Customer[Name] :material-menu-right: DID :material-menu-right: blue `+` button.
+<img src= "/customer/img/did1.png">
+
+3.In the **Basic** tab select your customer.
+<img src= "/customer/img/did2.png">
+
+4.The **Destination** tab will automatically appear, click on **Edit** and then **ConneXML** and insert the link.
+<img src= "/customer/img/did3.png">
+
+5.Click `Save`.
+
 ### Capacity Limits
 
 Set the maximum number of INBOUND concurrent calls in **Channels**, and Calls Per Second (CPS) in **Flow Speed**.
@@ -184,17 +198,3 @@ Following are the steps to configure the Range Holder cards.
 8. From the **Provider** drop-down select **None/Range Holder** and the **Provider Rate card** disappears.
 9. Click on `Save` and you can see the updated card.
    <img src= "/customer/img/RH4.jpg" width="1300">
-
-## Add ConneXML Tab to DID
-
-1. Login to your Control Panel.
-2. Navigate to Management :material-menu-right: Customer :material-menu-right: Customer[Name] :material-menu-right: DID :material-menu-right: blue `+` button.
-<img src= "/customer/img/did1.png">
-
-1. In the **Basic** tab select your customer.
-<img src= "/customer/img/did2.png">
-
-1. The **Destination** tab will automatically appear, click on **Edit** and then **ConneXML** and insert the link.
-<img src= "/customer/img/did3.png">
-
-1. Click `Save`.
