@@ -140,17 +140,6 @@ By clicking on `+` button we can add customer (see [**Create Customers**](https:
     With this feature you can refrain your customers from calling at speficied time slots.
     
     **How to use?**
-    
-    1. Login to your Control Panel.
-    2. Navigate to Management :material-menu-right: Customer :material-menu-right: Customer [Name] :material-menu-right: Day/Time Restrict.
-    3. Choose the **Timezone** from the drop-down.
-    4. Drag the time slider between the time-slots you wish to aloow your customers to dial.
-    5. Click `Save`.
-
-!!! Example
-    In the image below you can see the time slider starts from 12:00 AM till 8:00 AM, this means your customers are only allowed to dial between 12:00 AM and 8:00 AM. After 8:00 AM your customers won't be able to call. The rest of the slots (grey color) are restricted slots.
-
-    <img src= "/customer/img/restrict.png" width="400">
 ___
 
 !!! note "Note that you won't be able to change the account currency once you create the account."
