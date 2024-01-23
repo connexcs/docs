@@ -78,11 +78,6 @@
     3. Choose the **Timezone** from the drop-down.
     4. Drag the time slider between the time-slots you wish to aloow your customers to dial.
     5. Click `Save`.
-
-!!! Example
-    In the image below you can see the time slider starts from 12:00 AM till 8:00 AM, this means your customers are only allowed to dial between 12:00 AM and 8:00 AM. After 8:00 AM your customers won't be able to call. The rest of the slots (grey color) are restricted slots.
-
-    <img src= "/customer/img/restrict.png" width="400">
 ___
 
 !!! note "Note that you won't be able to change the account currency once you create the account."
