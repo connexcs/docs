@@ -123,9 +123,7 @@ You can perform the following functions with this data:
 
 * **Auto Generate Invoice**: Select this to generate an invoice based on the settings found in the Customer configuration (**Edit :material-menu-right: Config :material-menu-right: Invoice Schedule**) for any that are missing.  
   
-* **Download CDR Report**
-
-You now have the option to **Download** the **CDR** report in the **.csv** format. You can download the CDR report as a **Daily**, **Weekly** or **Monthly** time-frame. You just need to click on the download icon ![Alt text](image.png).
+* **Download CDR Report**: You now have the option to **Download** the **CDR** report in the **.csv** format. You can download the CDR report as a **Daily**, **Weekly** or **Monthly** time-frame. You just need to click on the download icon ![Alt text](image.png).
 
 !!! tip "Data used for billing"
     The data found in the Customer Summary section is considered valid for billing purposes. The same data may be found in other parts of the system, but you shouldn't use it for billing.

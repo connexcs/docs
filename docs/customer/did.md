@@ -188,13 +188,13 @@ Following are the steps to configure the Range Holder cards.
 ## Add ConneXML Tab to DID
 
 1. Login to your Control Panel.
-2. Navigate to Management :material-right-menu: Customer :material-right-menu: Customer[Name] :material-right-menu: DID :material-right-menu: blue `+` button.
+2. Navigate to Management :material-menu-right: Customer :material-menu-right: Customer[Name] :material-menu-right: DID :material-menu-right: blue `+` button.
 <img src= "/customer/img/did1.png">
 
-3. In the **Basic** tab select your customer.
+1. In the **Basic** tab select your customer.
 <img src= "/customer/img/did2.png">
 
-4. The **Destination** tab will automatically appear, click on **Edit** and then **ConneXML** and insert the link.
+1. The **Destination** tab will automatically appear, click on **Edit** and then **ConneXML** and insert the link.
 <img src= "/customer/img/did3.png">
 
-5. Click `Save`.
+1. Click `Save`.
