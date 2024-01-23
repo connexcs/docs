@@ -62,10 +62,10 @@
 
     These are arbitrary notes that can be entered onto an account at your discretion. 
 
-!!! note "Save Options"
-    + **Save and Continue** = Exit the Customer screen
-    + **Save and Stay** = Save the customer, but stay on the screen (helpful when adding several Customers at a time)
-    + **Delay and Save** = Select a time to elapse before saving the Customer, delaying the setup or change.
+    !!! note "Save Options"
+      + **Save and Continue** = Exit the Customer screen
+      + **Save and Stay** = Save the customer, but stay on the screen (helpful when adding several Customers at a time)
+      + **Delay and Save** = Select a time to elapse before saving the Customer, delaying the setup or change.
 
 === "Day/Time Restrict"
 
