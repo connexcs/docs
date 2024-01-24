@@ -134,9 +134,11 @@ The 3 types of Charts we use are:
 
 1. **Basic**: Set the basic fields in a chart.
 
-   * Sub-Title: Enter the sub-title of the chart.
+   * **Sub-Title**: Enter the sub-title of the chart.
 
-   * Alignment: Place the sub-title either at the top using **Title Top Margin**, **Center Alignment**, or **Title Vertical Gap**.
+   * **Title Vertical Position**: Place the sub-title either at the **Top**, **Center** or **Bottom**.
+   * **Title Hortzontal Position**: Place the sub-title either at the **Left**, **Center** or **Right**.
+   * **Title Gap**
 
    * Enable **Tooltip** open small, contextual pop-up window that provides additional information or guidance when users hover over, point to, or tap an element on a GUI.
 
@@ -149,14 +151,14 @@ The 3 types of Charts we use are:
 2.**Series**: When you have more than 2 charts in a single chart.
 
    * **Type**: Select **Bar**, **Line**, **Pie**, **Area** or **Sankey** charts.
+   * 
 
-   * **Encode X, Encode Y**: Swap the contents of X and Y axis.
 
    * **X-Axis Index**:The X-axis index in a graph refers to the numerical values or categories displayed along the bottom horizontal axis.
 
    * **Y-Axis Index**: The Y-axis index in a graph refers to the numerical values displayed along the vertical axis.
 
-<img src= "/apps/components/charts_series.png">
+<img src= "/apps/components/charts_series1.png">
 
 !!! Info Sankey Charts
     A Sankey chart is a type of diagram that helps you show how things flow from one part to another.
@@ -167,30 +169,28 @@ The 3 types of Charts we use are:
 
 3.**X-Axis**: To change the settings for X-Axis.
 
-  * **Grid Index**: Select the grid you wish to place your X-Axis.
-  * **Type**: Select the type of value you want to display on the chart.
+  * **Grid**: Select the grid you wish to place your X-Axis.
   * **Name**: Enter the name of the X-Axis.
-  * **Formatter-X**: Select the value you want to display on X-axis like **Duration**, **Millisecond**, **Decimal**, **Percent**, **Bytes**.
+  * **Formatter**: Select the value you want to display on X-axis like **Duration**, **Millisecond**, **Decimal**, **Percent**, **Bytes**.
 
 <img src= "/apps/components/charts_xaxis.png" width="300">
 
 4.**Y-Axis**: To change the settings for Y-Axis.
 
-* **Grid Index**: Select the grid you wish to place your Y-Axis.
-* **Type**: Select the type of value you want to display on the chart.
+* **Grid**: Select the grid you wish to place your Y-Axis.
 * **Name**: Enter the name of the Y-Axis.
-* **Formatter-Y**: Select the value you want to display on X-axis like **Duration**, **Millisecond**, **Decimal**, **Percent**, **Bytes**.
+* **Formatter**: Select the value you want to display on X-axis like **Duration**, **Millisecond**, **Decimal**, **Percent**, **Bytes**.
 
-<img src= "/apps/components/charts_yaxis.png" width="300">
+<img src= "/apps/components/charts_yaxis1.png" width="300">
 
 4.**Grid**: To change the settings for Grid.
 
 * **Left**: Place the chart on left-side using the slider.
-* **Right**: Place the chart on right-side using the slider.
+* **Top**: Place the chart on the Top using the slider.
 * **Width**: Change the width of the chart using the slider.
 * **Height**: Change the height of the chart using the slider.
 
-<img src= "/apps/components/charts_grid.png" width="300">
+<img src= "/apps/components/charts_grid1.png" width="300">
 
 ## First time User?
 
