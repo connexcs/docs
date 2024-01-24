@@ -6,7 +6,7 @@ Collapse helps to hide or conceal a section of a form, typically by minimizing o
 
 This feature is often used to organize lengthy or complex forms, making them easier to navigate and reducing visual clutter.
 
-<img src= "/apps/components/img/collapse.png">
+<img src= "/apps/components/img/collapse1.png">
 
 ## Use Case
 
