@@ -18,7 +18,7 @@ Create and edit **DID parameters** within the individual customer cards. You can
 
 ## Configure Direct Inward Call
 
-To configure individual DIDs, click :material-plus::
+To configure individual DIDs, click :material-plus:
 
 ### Basic
 
