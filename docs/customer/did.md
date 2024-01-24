@@ -97,7 +97,6 @@ For each Package there is an associated **Minimum Days** the package is valid fo
 
 ### Script Forge
 
-
 Run a custom script on calls to the DID to perform actions such as routing based on the time of day or if specific users or numbers are active.
 
 + **Script Forge**: Select the script you wish to run for the **DID**.

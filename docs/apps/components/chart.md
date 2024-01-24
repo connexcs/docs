@@ -130,6 +130,8 @@ The 3 types of Charts we use are:
 |**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Data Binding** to connect the data to UI|<img src= "/apps/components/charts_attributeaction.png">|
 
+### Chart Config
+
 1. **Basic**: Set the basic fields in a chart.
 
    * Sub-Title: Enter the sub-title of the chart.
@@ -146,7 +148,7 @@ The 3 types of Charts we use are:
 
 2.**Series**: When you have more than 2 charts in a single chart.
 
-   * **Type**: Select **Bar**, **Line** or **Pie** charts.
+   * **Type**: Select **Bar**, **Line**, **Pie**, **Area** or **Sankey** charts.
 
    * **Encode X, Encode Y**: Swap the contents of X and Y axis.
 
@@ -155,6 +157,13 @@ The 3 types of Charts we use are:
    * **Y-Axis Index**: The Y-axis index in a graph refers to the numerical values displayed along the vertical axis.
 
 <img src= "/apps/components/charts_series.png">
+
+!!! Info Sankey Charts
+    A Sankey chart is a type of diagram that helps you show how things flow from one part to another.
+    
+    Sankey charts are handy for understanding and visualizing how resources or information move through complex systems. They're used in various fields to make it easier to see and analyze these flows.
+
+    <img src= "/apps/components/charts_sankey.png">
 
 3.**X-Axis**: To change the settings for X-Axis.
 
