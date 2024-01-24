@@ -146,23 +146,19 @@ The 3 types of Charts we use are:
 
    * Enable **Toolbox** to get options like **Zoom** and **Zoom Reset**.
 
-<img src= "/apps/components/charts_basic.png" width="300">
+<img src= "/apps/components/img/charts_basic1.png" width="300">
 
 2.**Series**: When you have more than 2 charts in a single chart.
 
    * **Type**: Select **Bar**, **Line**, **Pie**, **Area** or **Sankey** charts.
-   * 
-
-
-   * **X-Axis Index**:The X-axis index in a graph refers to the numerical values or categories displayed along the bottom horizontal axis.
-
+   * * **X-Axis Index**:The X-axis index in a graph refers to the numerical values or categories displayed along the bottom horizontal axis.
    * **Y-Axis Index**: The Y-axis index in a graph refers to the numerical values displayed along the vertical axis.
 
-<img src= "/apps/components/charts_series1.png">
+<img src= "/apps/components/img/charts_series1.png" width="300">
 
 !!! Info Sankey Charts
     A Sankey chart is a type of diagram that helps you show how things flow from one part to another.
-    
+
     Sankey charts are handy for understanding and visualizing how resources or information move through complex systems. They're used in various fields to make it easier to see and analyze these flows.
 
     <img src= "/apps/img/charts_sankey.png">
@@ -173,7 +169,7 @@ The 3 types of Charts we use are:
   * **Name**: Enter the name of the X-Axis.
   * **Formatter**: Select the value you want to display on X-axis like **Duration**, **Millisecond**, **Decimal**, **Percent**, **Bytes**.
 
-<img src= "/apps/components/charts_xaxis.png" width="300">
+<img src= "/apps/components/img/charts_xaxis1.png width="300">
 
 4.**Y-Axis**: To change the settings for Y-Axis.
 
@@ -181,7 +177,7 @@ The 3 types of Charts we use are:
 * **Name**: Enter the name of the Y-Axis.
 * **Formatter**: Select the value you want to display on X-axis like **Duration**, **Millisecond**, **Decimal**, **Percent**, **Bytes**.
 
-<img src= "/apps/components/charts_yaxis1.png" width="300">
+<img src= "/apps/components/img/charts_yaxis1.png" width="300">
 
 4.**Grid**: To change the settings for Grid.
 
@@ -190,7 +186,7 @@ The 3 types of Charts we use are:
 * **Width**: Change the width of the chart using the slider.
 * **Height**: Change the height of the chart using the slider.
 
-<img src= "/apps/components/charts_grid1.png" width="300">
+<img src= "/apps/components/img/charts_grid1.png" width="300">
 
 ## First time User?
 
