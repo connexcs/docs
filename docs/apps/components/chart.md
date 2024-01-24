@@ -138,7 +138,7 @@ The 3 types of Charts we use are:
 
    * **Title Vertical Position**: Place the sub-title either at the **Top**, **Center** or **Bottom**.
    * **Title Hortzontal Position**: Place the sub-title either at the **Left**, **Center** or **Right**.
-   * **Title Gap**
+   * **Title Gap**: Space between the Main Title and Sub-Title.
 
    * Enable **Tooltip** open small, contextual pop-up window that provides additional information or guidance when users hover over, point to, or tap an element on a GUI.
 
@@ -146,15 +146,15 @@ The 3 types of Charts we use are:
 
    * Enable **Toolbox** to get options like **Zoom** and **Zoom Reset**.
 
-<img src= "/apps/components/img/charts_basic1.png" width="300">
+<img src= "/apps/components/img/charts_basic1.png">
 
 2.**Series**: When you have more than 2 charts in a single chart.
 
    * **Type**: Select **Bar**, **Line**, **Pie**, **Area** or **Sankey** charts.
-   * * **X-Axis Index**:The X-axis index in a graph refers to the numerical values or categories displayed along the bottom horizontal axis.
+   * **X-Axis Index**:The X-axis index in a graph refers to the numerical values or categories displayed along the bottom horizontal axis.
    * **Y-Axis Index**: The Y-axis index in a graph refers to the numerical values displayed along the vertical axis.
 
-<img src= "/apps/components/img/charts_series1.png" width="300">
+<img src= "/apps/components/img/charts_series1.png">
 
 !!! Info Sankey Charts
     A Sankey chart is a type of diagram that helps you show how things flow from one part to another.
@@ -169,7 +169,7 @@ The 3 types of Charts we use are:
   * **Name**: Enter the name of the X-Axis.
   * **Formatter**: Select the value you want to display on X-axis like **Duration**, **Millisecond**, **Decimal**, **Percent**, **Bytes**.
 
-<img src= "/apps/components/img/charts_xaxis1.png width="300">
+<img src= "/apps/components/img/charts_xaxis1.png">
 
 4.**Y-Axis**: To change the settings for Y-Axis.
 
@@ -177,7 +177,7 @@ The 3 types of Charts we use are:
 * **Name**: Enter the name of the Y-Axis.
 * **Formatter**: Select the value you want to display on X-axis like **Duration**, **Millisecond**, **Decimal**, **Percent**, **Bytes**.
 
-<img src= "/apps/components/img/charts_yaxis1.png" width="300">
+<img src= "/apps/components/img/charts_yaxis1.png">
 
 4.**Grid**: To change the settings for Grid.
 
@@ -186,8 +186,8 @@ The 3 types of Charts we use are:
 * **Width**: Change the width of the chart using the slider.
 * **Height**: Change the height of the chart using the slider.
 
-<img src= "/apps/components/img/charts_grid1.png" width="300">
+<img src= "/apps/components/img/charts_grid1.png">
 
 ## First time User?
 
-If you are using the Page Builder components on the ConnexCS platform first time, we request you to use our guide on <a href="https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#steps-to-use-components-in-the-page-builder" target="_blank">steps to use the Components</a>.
+If you are using the Page Builder components on the ConnexCS platform first time, we request you to use our guide on <a href="https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#steps-to-use-components-in-the-page-builder"target="_blank">steps to use the Components</a>.
