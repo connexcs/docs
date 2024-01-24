@@ -42,8 +42,16 @@ By clicking on `+` button we can add customer (see [**Create Customers**](https:
 1. Select several customers using the tick-box selector on the left side of each row. (Customers aren't visible to each other in the sent message.)
 2. Click on "Send" at the top right then choose email or SMS.
 3. Fill in the Subject line and body details and send.
-   + Emails sent FROM the email address gets populated in Setup > Settings, and TO every email address listed in Contacts for each customer.
-   + Each contact receives an SMS to their Mobile number.
+      + Emails sent FROM the email address gets populated in Setup > Settings, and TO every email address listed in Contacts for each customer.
+      + Each contact receives an SMS to their Mobile number.
+      + Refer ConnexCS: This feature allows you to send simple ConnexCS Referrals to you customers.
+        + You can send referrals to multiple **Customers**.
+        + You can select the **Template** from the drop-down list.
+        + Enter the **Subject**.
+        + Write the Body of the referral.
+        + Click on `Send`.
+  
+<img src= "/customer/img/referral.png">
 
 !!! note "Custom Email Servers"
     Change the outbound Email Server and SMS origination number in **Setup :material-menu-right: Settings**.
@@ -116,17 +124,33 @@ By clicking on `+` button we can add customer (see [**Create Customers**](https:
     + **Email Verification** and/or **Mobile Verification**: Used to force the customer to go to the portal for verification. (This is important to select when you create a customer manually.) If the customer doesn't verify these, they won't be able to dial. 
 
     !!! attention
-        Mobile messages are sent globally, but there are some reports of issues with SMS being delivered to numbers in India. These messages are sent on the Twilio network, so ConnexCS can only deliver what they deliver. 
+        Mobile messages are sent globally, but there are some reports of issues with SMS being delivered to numbers in India. These messages are sent on the Twilio network, so ConnexCS can only deliver what they deliver.
 
 === "Notes"
 
     These are arbitrary notes that can be entered onto an account at your discretion. 
 
-!!! note "Save Options"
-    + **Save and Continue** = Exit the Customer screen
-    + **Save and Stay** = Save the customer, but stay on the screen (helpful when adding several Customers at a time)
-    + **Delay and Save** = Select a time to elapse before saving the Customer, delaying the setup or change.
-___
+    !!! note "Save Options"
+        + **Save and Continue** = Exit the Customer screen
+        + **Save and Stay** = Save the customer, but stay on the screen (helpful when adding several Customers at a time)
+        + **Delay and Save** = Select a time to elapse before saving the Customer, delaying the setup or change.
+
+=== "Day/Time Restrict"
+
+    With this feature you can refrain your customers from calling at speficied time slots.
+    
+    **How to use?**
+    
+    1. Login to your Control Panel.
+    2. Navigate to Management :material-menu-right: Customer :material-menu-right: Customer [Name] :material-menu-right: Day/Time Restrict.
+    3. Choose the **Timezone** from the drop-down.
+    4. Drag the time slider between the time-slots you wish to aloow your customers to dial.
+    5. Click `Save`.
+
+    !!! Example
+        In the image below you can see the time slider starts from 12:00 AM till 8:00 AM, this means your customers are only allowed to dial between 12:00 AM and 8:00 AM. After 8:00 AM your customers won't be able to call. The rest of the slots (grey color) are restricted slots.
+
+        <img src= "/customer/img/restrict.png" width="400">
 
 !!! note "Note that you won't be able to change the account currency once you create the account."
 

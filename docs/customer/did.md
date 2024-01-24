@@ -18,8 +18,7 @@ Create and edit **DID parameters** within the individual customer cards. You can
 
 ## Configure Direct Inward Call
 
-To configure individual DIDs, click :material-plus::
-
+To configure individual DIDs, click :material-plus:
 
 ### Basic
 
@@ -38,11 +37,24 @@ To configure individual DIDs, click :material-plus::
 
 Select the destination to deliver incoming calls for the DID:
 
-
 + **URI**: Set the Destination DID (number or extension) and IP to forward calls to a specific SIP URI (Session Initiation Protocol, Uniform Resource Identifier).
 + **External**: To send the call back out to the internet, use a prefix (defined in Customer :material-menu-right: Routing ) to select the outbound route, then the number to send the call to.
 + **Internal**: Send internally to an extension, a Class5 feature, or even to another customer.
 + **Circuit Test**: *in progress*.
+
+#### Add ConneXML Tab to DID
+
+1. Login to your Control Panel.
+2. Navigate to Management :material-menu-right: Customer :material-menu-right: Customer[Name] :material-menu-right: DID :material-menu-right: blue `+` button.
+<img src= "/customer/img/did1.png">
+
+3.In the **Basic** tab select your customer.
+<img src= "/customer/img/did2.png">
+
+4.The **Destination** tab will automatically appear, click on **Edit** and then **ConneXML** and insert the link.
+<img src= "/customer/img/did3.png">
+
+5.Click `Save`.
 
 ### Capacity Limits
 
@@ -64,12 +76,12 @@ For more details on these fields, see [**Media in Customer Routing**](https://do
 
     :material-menu-right: `Zone (recommended)`- Select any of the regional servers.
 
-  + Disabled- never record calls
-  + 1% Sampling
-  + 5% Sampling
-  + 25% Sampling
-  + 50% Sampling
-  + Enabled (Always On)
+    + Disabled- never record calls
+    + 1% Sampling
+    + 5% Sampling
+    + 25% Sampling
+    + 50% Sampling
+    + Enabled (Always On)
   
 + **Timeout**: Set various options to help with call timeout for missed BYEs.
 
@@ -98,7 +110,6 @@ For each Package there is an associated **Minimum Days** the package is valid fo
 + **P-Asserted-ID**: Either `Remove` the P-Asserted-ID so it doesn't reach the customer, or leave it `Default` to preserve it.
 
 ### Script Forge
-
 
 Run a custom script on calls to the DID to perform actions such as routing based on the time of day or if specific users or numbers are active.
 

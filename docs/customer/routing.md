@@ -134,10 +134,10 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
   Be aware that if you don't have enough transcoding capacity, calls will fail.
 + **SIP Ping**: Send regular pings to ensure both sides of a call are still up. `Enabled` is the recommended setting.
 
-    |Option                          | Result                                            |
+    |Option| Result|
     |--------------------------------|:--------------------------------------------------|
-    | **Disabled**                   | No SIP pings will be sent                        |
-    | **Enabled Both Sides**         | SIP pings sent in both directions        |
+    | **Disabled**                   | No SIP pings will be sent |
+    | **Enabled Both Sides**         | SIP pings sent in both directions |
     | **Enabled (Downstream Only)**  | SIP Pings sent to the location where the call originated |
     | **Enabled (Upstream Only)**    | SIP Pings sent towards where the call is TO (terminated) |
 
@@ -146,7 +146,7 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
   SST has surpassed SIP Ping Timeout as the best way to prevent long-duration calls. Note that any SST shorter than sixty (60) seconds gets rejected.
 
     |SST Option| Result|
-    |-------------------------|:------------------------------------------------------------------------------------------------|
+    |----------|:------|
     | **Default**| Passive SST, No headers gets changed and no SST gets engaged, all RE-INVITES will propagate through the system enables|
     | **Enabled Both** | ConnexCS will send SIP Session Timers to both legs of the call|
     | **Enabled (Upstream)** | ConnexCS will use SST with the carrier|
@@ -156,9 +156,9 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 
 + **RTP Media Proxy**: This defaults to Auto, but selecting a zone (by continent) is the current recommendation. The following options allow you to set where RTP media server for this route for this customer:
 
-    :material-menu-right: `Direct RTP (no proxy)`- Bypass ConnexCS, so media flows directly between the customer and carrier. If the customer is using a firewall or other NAT device incorrectly, then media may not flow between the carrier and the customer. Using this setting also means that if there are audio issues, the issue can't be ConnexCS. Since it isn't likely to be the carrier, the issue would typically exist on the customer's end.
+   :material-menu-right: `Direct RTP (no proxy)`- Bypass ConnexCS, so media flows directly between the customer and carrier. If the customer is using a firewall or other NAT device incorrectly, then media may not flow between the carrier and the customer. Using this setting also means that if there are audio issues, the issue can't be ConnexCS. Since it isn't likely to be the carrier, the issue would typically exist on the customer's end.
 
-    :material-menu-right: `Zone`- Choose any of the regional servers, but it's recommended that you select a location close to a provider or your customer. Temporarily selecting a different region to route media traffic can be helpful in diagnosing call problems.
+   :material-menu-right: `Zone`- Choose any of the regional servers, but it's recommended that you select a location close to a provider or your customer. Temporarily selecting a different region to route media traffic can be helpful in diagnosing call problems.
 
 !!! tip "The recommended RTP Media Proxy servers are the **Closest (To ConnexCS) Server** or the **Closest (Elastic) Server**."
 
@@ -167,11 +167,11 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 
 + **RTP Proxy Mode**: If a connection via our service fails and you have selected relaxed, it will automatically fail over to the backup.
 
-    :material-menu-right: `Strict`- This will enforce the proxy engagement. If the proxy can't engage with the call, the call won't get established.
+   :material-menu-right: `Strict`- This will enforce the proxy engagement. If the proxy can't engage with the call, the call won't get established.
 
-    !!! note "Free accounts are limited to how many RTP Proxy channels get enabled, this may prevent calls from connecting if you have more channels than our free accounts allow you to have."
+!!! note "Free accounts are limited to how many RTP Proxy channels get enabled, this may prevent calls from connecting if you have more channels than our free accounts allow you to have."
 
-    :material-menu-right: `Relaxed`- This will make the best efforts to engage the RTP Proxy; if it can't get engaged because of either network errors, or because you don't have enough RTP capacity, the calls will connect directly.
+   :material-menu-right: `Relaxed`- This will make the best efforts to engage the RTP Proxy; if it can't get engaged because of either network errors, or because you don't have enough RTP capacity, the calls will connect directly.
 
 !!! success "When should I use RTP Proxy?"
     Use an RTP Proxy if you don't want your customers to know your providers.
@@ -216,11 +216,11 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
   
 An extra charge per recorded call of $0.003 gets added to existing fees or charges, so choose carefully how many calls to record:
 
-    :material-menu-right: `Disabled`- no calls get recorded
+:material-menu-right: `Disabled`- no calls get recorded.
 
-    :material-menu-right: `Sampling`- Choose from a 1%, 5%, 25%, or 50% sample of your calls (e.g: 1% will record 1 of every 100 calls, 25% will record 25 of every 100 calls, etc.).
+:material-menu-right: `Sampling`- Choose from a 1%, 5%, 25%, or 50% sample of your calls (e.g: 1% will record 1 of every 100 calls, 25% will record 25 of every 100 calls, etc.).
 
-    :material-menu-right: `Enabled (Always On)`- Record all calls.
+:material-menu-right: `Enabled (Always On)`- Record all calls.
 
 !!! tip "The Call Recording setting is disabled"
     You need to enable the feature first on the account in **Setup :material-menu-right: Settings :material-menu-right: [Packages](https://docs.connexcs.com/setup/settings/account/#packages)** before it gets enabled here for individual customers.

@@ -48,6 +48,34 @@ Lower graphs:
 + Profit (daily stats on profit and loss, good for analysis).
 + Registration Count (currently registered end-points).
 
+## Dashboard: Graph Tabs
+
+With this new feature, you can view parameters like **Channels**, **CPS**, **Customer/Provider Spend**, **Profit** and **Registration Count**.
+
+You can view the **Configuration** of the displayed graph.
+The feature gives you the flexibility for **Resizing** the graph, **Refreshing** it and **Download** it as well.
+
+=== "Channels"
+
+    <img src= "/misc/img/ch.png">
+
+=== "CPS"
+
+    <img src= "/misc/img/cps.png">
+
+=== "Customer/Provider Spend"
+
+    <img src= "/misc/img/spend.png">
+
+=== "Profit"
+
+    <img src= "/misc/img/profit.png">
+
+=== "Registration Count"
+
+    <img src= "/misc/img/count.png">
+
+
 [top of page]: /misc/img/topofpage.png "Top of Page"
 [dashboard]: /misc/img/dashboard.png "Dashboard"
 [profit]: /misc/img/profit.png "Graph Actions"

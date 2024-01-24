@@ -1,0 +1,12 @@
+# Introduction
+
+**Setup :material-menu-right: Information :material-menu-right: Change Log**
+
+A changelog is a chronological record of notable changes made to a project, software, or document.
+
+It serves as a historical reference for developers, users, and stakeholders to track the evolution of the project, understand what has changed, and manage updates effectively.
+
+On the Control Panel, navigate to **Setup :material-menu-right: Information :material-menu-right: Change Log** to view the Change Log.
+You can see information like in which **Area** the feature has been added, **Time**, **Description**, **Tags**
+
+<img src= "/setup/img/changelog.png">
