@@ -18,8 +18,7 @@ Create and edit **DID parameters** within the individual customer cards. You can
 
 ## Configure Direct Inward Call
 
-To configure individual DIDs, click :material-plus::
-
+To configure individual DIDs, click :material-plus:
 
 ### Basic
 
@@ -37,7 +36,6 @@ To configure individual DIDs, click :material-plus::
 ### Destination
 
 Select the destination to deliver incoming calls for the DID:
-
 
 + **URI**: Set the Destination DID (number or extension) and IP to forward calls to a specific SIP URI (Session Initiation Protocol, Uniform Resource Identifier).
 + **External**: To send the call back out to the internet, use a prefix (defined in Customer :material-menu-right: Routing ) to select the outbound route, then the number to send the call to.
