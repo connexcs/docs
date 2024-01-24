@@ -60,7 +60,7 @@ It offers a clear and efficient way for users to select one of two mutually excl
 
 #### Steps to place/use the methods for components of the Page Builder
 
-1. Go to Form Attribute :material-menu-right: Action Panel :material-menu-right: Setting :material-menu-right: (Mounted | refresh | click 'Add action')
+1. Go to Form Attribute :material-menu-right: Action Panel :material-menu-right: Setting :material-menu-right: (Mounted | refresh | click 'Add action').
 2. Write the method/code as shown in the **Example** below.
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
