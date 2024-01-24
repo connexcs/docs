@@ -2,7 +2,7 @@
 
 ## Description
 
-It's a specialized input field designed to collect date information from users.
+**Date** is a specialized input field designed to collect date information from users.
 
 It typically provides a user-friendly interface for selecting a date, often in the form of a calendar or a date picker.
 
@@ -28,7 +28,7 @@ Examples may include:
 2. **Event registration**: Selecting a date for an event, conference, workshop registration.
 3. **Schedule appointments**: Choosing date/time slots for appointments, meetings, classes.
 4. **Reservation systems**: Hotel, flight, venue booking for reserving dates.
-5. **Timesheets**: Selecting dates for shifts, clock-in/out in timesheets.
+5. **Time-sheets**: Selecting dates for shifts, clock-in/out in timesheets.
 6. **Patient records**: Storing visit dates, admit/discharge dates for healthcare.
 7. **Order forms**: Allow selecting delivery or start dates for orders.
 8. **Job applications**: Entering start availability date on application forms.
@@ -91,40 +91,40 @@ Examples may include:
 
 | **Name**| **Description**|**Parameters**|
 |---------|----------------|--------------|
-|`this.addClassName`|Add style class to page item|`(fields: String(componentID), String[]; className: String)`|
-|`this.removeClassName`|Remove page item style|`(fields: String(componentID), String[]; className: String)`|
-|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String(componentID), String[]; Object: Object)`|
+|`this.addClassName`|Add style class to a form item|`(fields: String, String[]; className: String)`|
+|`this.removeClassName`|Remove style class from a form item|`(fields: String, String[]; className: String)`|
+|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String(), String[]; Object: Object)`|
 |`this.getValues`|Get the values of all fields when values change|`Object`|
-|`this.hide`|Hides the field|`(fields: String(componentID)`|
-|`this.show`|Displays the field|`(fields: String(componentID)`|
-| `this.disable`| Disable input field from user interaction|`(fields: String(componentID), String[])`|
+|`this.hide`|Hides the field|`(fields: String()`|
+|`this.show`|Displays the field|`(fields: String()`|
+| `this.disable`| Disable input field from user interaction|`(fields: String(), String[])`|
 |`this.setData`|Set the data in the field|`(Value: Object)`|
-|`this.getValue`|Get A Value From a component|`(fieldName String(componentID)`|
+|`this.getValue`|Get A Value From a component|`(fieldName String()`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
-    2. **fields** refer to the component **ID**. You can fetch the ID from the **Component Attribute** panel in the Page Builder.
-    3. For using **this.show(fields)** enable the **Hidden** check-box in the **Component Attribute** panel.
+    2. **Fields** refers to a **component ID** or a **list of component IDs**. You can fetch the ID from the **Component Attribute** panel in the Page Builder.
+    3. Before using **this.show(fields)**, make sure the component is **hidden**. This can be done using **this.hide(fields)** or by **enabling** the **Hidden checkbox** in the Component Attribute panel.
 
-#### Steps to place/use the methods for components of the Page Builder"
+#### Steps to place/use the methods for components of the Page Builder
 
 1. Go to Form Attribute :material-menu-right: Action Panel :material-menu-right: Setting :material-menu-right: (Mounted | refresh | click 'Add action')
 2. Write the method/code as shown in the **Example** below.
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/alert1.png">
+<img src= "/apps/components/img/check1.png">
 
 !!! Example
     1. `this.addClassName(fields, className)`
           * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
-            ```js
+            ```
             .abc{ // abc is the class name
             background-color: red;
             }
             ```
-          * Follow the steps in the above **Note**
-          * ```js
+          * Follow the steps mentioned above, under Steps to place/use the methods for components of the Page Builder
+          * ```
             this.addClassName('date_0gprgpvi', 'abc')
             ```
 
@@ -179,7 +179,7 @@ Examples may include:
 ## Config
 
 | **Name**|**Description**|**Icon**|
-|---------|---------------|---------|
+|---------|---------------|--------|
 |**ID**| Date's unique identifier|<img src= "/apps/components/img/input_id.png">|
 |**Name**| [**Optional**] The display name of the date field|<img src= "/apps/components/img/checkbox_name.png">|
 |**Width**| [**Optional**] Width of the field|<img src= "/apps/components/img/input_width.png">|
@@ -191,8 +191,8 @@ Examples may include:
 |**Placeholder**| The short hint is displayed in the input field before the user enters a value|<img src= "/apps/components/img/input_placeholder.png">|
 |**Format**| You can decide the format of your date like **YYYY-MM-DD** or **DD/MM/YY**|<img src= "/apps/components/img/date_format.png">|
 |**Default Value**|Specifies the initial value that's displayed in the date field when the form is loaded|<img src= "/apps/components/img/date_defaultvalue.png">|
-|**Custom Class**| An HTML class attribute which allows further customisation **[See Form Attribute > Style Sheets**](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
-|**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br>Enable **Read Only** to make the field non-editable. <br>Enable **Disabled** action to make the field unsuable. <br> Enable **Text box is editable** to allow users to manually type in a date value instead of only selecting from the date picker. <br>Enable **Show Clear button** action to make the clear button visible|<img src= "/apps/components/img/date_attributeaction.png">
+|**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
+|**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br>Enable **Read Only** to make the field non-editable. <br>Enable **Disabled** action to make the field unusable. <br> Enable **Text box is editable** to allow users to manually type in a date value instead of only selecting from the date picker. <br>Enable **Show Clear button** action to make the clear button visible|<img src= "/apps/components/img/date_attributeaction.png">
 
 ### Validation
 
@@ -217,4 +217,4 @@ Form validation can be performed using a variety of methods, including:
 
 ## First time User?
 
-If you are using the Page Builder components on the ConnexCS platform first time, we request you to use our guide on <a href="https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#steps-to-use-components-in-the-page-builder" target="_blank">steps to use the Components</a>.
+If you are using the Page Builder components on the ConnexCS platform for the first time, we request you to use our guide on <a href="https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#steps-to-use-components-in-the-page-builder" target="_blank">steps to use the Components</a>.

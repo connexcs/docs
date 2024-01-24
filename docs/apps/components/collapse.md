@@ -2,7 +2,7 @@
 
 ## Description
 
-Collapse helps to hide or conceal a section of a form, typically by minimizing or folding it into a smaller, more compact view.
+**Collapse** helps to hide or conceal a section of a form, typically by minimizing or folding it into a smaller, more compact view.
 
 This feature is often used to organize lengthy or complex forms, making them easier to navigate and reducing visual clutter.
 
@@ -41,7 +41,7 @@ Some of the most common methods include:
 | **Name**| **Description**|**Parameters**|
 |---------|----------------|--------------|
 |`this.addClassName`|Add style class to a form item|`(fields: String, String[]; className: String)`|
-|`this.removeClassName`|Remove style class from a form item|`(fields: String(componentID), String[]; className: String)`|
+|`this.removeClassName`|Remove style class from a form item|`(fields: String, String[]; className: String)`|
 |`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String, String[]; Object: Object)`|
 |`this.hide`|Hides the field|`(fields: String`|
 |`this.show`|Displays the field|`(fields: String)`|

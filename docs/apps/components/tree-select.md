@@ -1,4 +1,4 @@
-# Input
+# Tree-Select
 
 ## Description
 
@@ -44,36 +44,36 @@ Unlike a standard dropdown menu with a flat list of options, a tree-select organ
 
 | **Name**| **Description**|**Parameters**|
 |---------|----------------|--------------|
-|`this.addClassName`|Add style class to page item|`(fields: String(componentID), String[]; className: String)`|
-|`this.hide`|Hides the field|`(fields: String(componentID)`|
-|`this.show`|Displays the field|`(fields: String(componentID)`|
-|`this.disable`| Disable input field from user interaction|`(fields: String(componentID), String[])`|
+|`this.addClassName`|Add style class to a form item|`(fields: String, String[]; className: String)`|
+|`this.hide`|Hides the field|`(fields: String()`|
+|`this.show`|Displays the field|`(fields: String()`|
+|`this.disable`| Disable input field from user interaction|`(fields: String(), String[])`|
 |`this.setData`|Set the data in the field|`(Value: Object)`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
-    2. **fields** refer to the component **ID**. You can fetch the ID from the **Component Attribute** panel in the Page Builder.
-    3. For using **this.show(fields)** enable the **Hidden** check-box in the **Component Attribute** panel.
+    2. **Fields** refers to a **component ID** or a **list of component IDs**. You can fetch the ID from the **Component Attribute** panel in the Page Builder.
+    3. Before using **this.show(fields)**, make sure the component is **hidden**. This can be done using **this.hide(fields)** or by **enabling** the **Hidden checkbox** in the Component Attribute panel.
 
-#### Steps to place/use the methods for components of the Page Builder"
+#### Steps to place/use the methods for components of the Page Builder
 
 1. Go to Form Attribute :material-menu-right: Action Panel :material-menu-right: Setting :material-menu-right: (Mounted | refresh | click 'Add action')
 2. Write the method/code as shown in the **Example** below.
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/alert1.png">
+<img src= "/apps/components/img/check1.png">
 
 !!! Example
     1. `this.addClassName(fields, className)`
           * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
-            ```js
+            ```
             .abc{ // abc is the class name
             background-color: red;
             }
             ```
-          * Follow the steps in the above **Note**
-          * ```js
+          * Follow the steps mentioned above, under Steps to place/use the methods for components of the Page Builder
+          * ```
             this.addClassName('treeselect_4xgiru3n', 'abc')
             ```
 
@@ -121,8 +121,8 @@ Unlike a standard dropdown menu with a flat list of options, a tree-select organ
 |**Option**|Choose either **Static** or **Dynamic** way of adding data to the options of the Tree Select <br><br>**Static data** refers to a fixed set of options that are predefined and loaded into the Tree Select at the time of initialization</br></br> **Dynamic data** are options fetched as needed from sources like databases or APIs. The Tree Select updates choices based on user selections. You select from **Data source** which refers to the origin of the data; **Function** which refers to the code that manipulates the data, and **Assigned Value** which refers to the specific value stored or associated with a data element|<img src= "/apps/components/img/checkbox_static.png"> <img src= "/apps/components/img/checkbox_dynamic.png">|
 |**Default Value**| The default value which is filled in the field before the user changes it|<img src= "/apps/components/img/treeselect_default.png">|
 |**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
-|**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** to action to hide the field. <br> Enable **Disabled** action to make the field unsuable. <br>Enable **Show Clear button** action to make the clear button visible.|<img src= "/apps/components/img/treeselect_attributionaction.png">|
+|**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** to action to hide the field. <br> Enable **Disabled** action to make the field unusable. <br>Enable **Show Clear button** action to make the clear button visible.|<img src= "/apps/components/img/treeselect_attributionaction.png">|
 
 ## First time User?
 
-If you are using the Page Builder components on the ConnexCS platform first time, we request you to use our guide on <a href="https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#steps-to-use-components-in-the-page-builder" target="_blank">steps to use the Components</a>.
+If you are using the Page Builder components on the ConnexCS platform for the first time, we request you to use our guide on <a href="https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#steps-to-use-components-in-the-page-builder" target="_blank">steps to use the Components</a>.
