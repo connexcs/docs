@@ -6,7 +6,7 @@ The **Steps** component, guides users through a complex process by breaking it d
 
 It serves as a visual and functional indicator of progress, improving user experience and data collection.
 
-<img src= "/apps/components/img/step.png">
+<img src= "/apps/components/img/steps1.png">
 
 ## Use Case
 

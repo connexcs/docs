@@ -45,7 +45,6 @@ The 3 types of Charts we use are:
 |`this.getValue`|Get A Value From a component|`(fieldName String()`|
 
 !!! Info
-    !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
     2. **Fields** refers to a **component ID** or a **list of component IDs**. You can fetch the ID from the **Component Attribute** panel in the Page Builder.
     3. Before using **this.show(fields)**, make sure the component is **hidden**. This can be done using **this.hide(fields)** or by **enabling** the **Hidden checkbox** in the Component Attribute panel.
@@ -147,11 +146,12 @@ The 3 types of Charts we use are:
 
    * Enable **Toolbox** to get options like **Zoom** and **Zoom Reset**.
 
-<img src= "/apps/components/img/charts_basic1.png" width="400">
+<img src= "/apps/components/img/charts_basic1.png" width="500">
 
 2.**Series**: When you have more than 2 charts in a single chart.
 
    * **Type**: Select **Bar**, **Line**, **Pie**, **Area** or **Sankey** charts.
+   * **Label Formatter**: It displays
    * **X-Axis Index**:The X-axis index in a graph refers to the numerical values or categories displayed along the bottom horizontal axis.
    * **Y-Axis Index**: The Y-axis index in a graph refers to the numerical values displayed along the vertical axis.
 
