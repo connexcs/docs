@@ -41,7 +41,7 @@ Tables provide a structured format for organizing related data within a form. Us
     2. **Fields** refers to a **component ID** or a **list of component IDs**. You can fetch the ID from the **Component Attribute** panel in the Page Builder.
     3. Before using **this.show(fields)**, make sure the component is **hidden**. This can be done using **this.hide(fields)** or by **enabling** the **Hidden checkbox** in the Component Attribute panel.
 
-#### Steps to place/use the methods for components of the Page Builder
+#### Steps to use the methods for the Page Builder components
 
 1. Go to Form Attribute :material-menu-right: Action Panel :material-menu-right: Setting :material-menu-right: (Mounted | refresh | click 'Add action').
 2. Write the method/code as shown in the **Example** below.
@@ -58,7 +58,7 @@ Tables provide a structured format for organizing related data within a form. Us
             background-color: red;
             }
             ```
-          * Follow the steps mentioned above, under Steps to place/use the methods for components of the Page Builder
+          * Follow the steps mentioned above, under Steps to use the methods for the Page Builder components
           * ```
             this.addClassName('report_eahnplzw', 'abc')
             ```
@@ -95,7 +95,7 @@ Tables provide a structured format for organizing related data within a form. Us
 
 | **Name**|**Description**|**Icon**|
 |---------|---------------|--------|
-|**ID**| Table's unique identifier|<img src= "/apps/components/img/input_id.png">|
+|**ID**| The table component's unique identifier|<img src= "/apps/components/img/input_id.png">|
 |**Width**| [**Optional**] Width of the field|<img src= "/apps/components/img/input_width.png">|
 |**Border Width**|Choose the width of the table|<img src= "/apps/components/img/table_border.png">|
 |**Border Color**|Choose the color of the table|<img src= "/apps/components/img/table_color.png">|

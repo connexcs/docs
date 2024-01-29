@@ -51,7 +51,7 @@ Imagine you have a form with hundreds of items to choose from, like products in 
     2. **Fields** refers to a **component ID** or a **list of component IDs**. You can fetch the ID from the **Component Attribute** panel in the Page Builder.
     3. Before using **this.show(fields)**, make sure the component is **hidden**. This can be done using **this.hide(fields)** or by **enabling** the **Hidden checkbox** in the Component Attribute panel.
 
-#### Steps to place/use the methods for components of the Page Builder
+#### Steps to use the methods for the Page Builder components
 
 1. Go to Form Attribute :material-menu-right: Action Panel :material-menu-right: Setting :material-menu-right: (Mounted | refresh | click 'Add action').
 2. Write the method/code as shown in the **Example** below.
@@ -68,7 +68,7 @@ Imagine you have a form with hundreds of items to choose from, like products in 
             background-color: red;
             }
             ```
-          * Follow the steps mentioned above, under Steps to place/use the methods for components of the Page Builder
+          * Follow the steps mentioned above, under Steps to use the methods for the Page Builder components
           * ```
             this.addClassName('pagination_oet28hkk', 'abc')
             ```
@@ -111,7 +111,7 @@ Imagine you have a form with hundreds of items to choose from, like products in 
 
 | **Name**|**Description**|**Icon**|
 |---------|---------------|--------|
-|**ID**| Pagination's unique identifier|<img src= "/apps/components/img/input_id.png">|
+|**ID**| The pagination component's unique identifier|<img src= "/apps/components/img/input_id.png">|
 |**Name**| [**Optional**] The display name of the pagination field|<img src= "/apps/components/img/checkbox_name.png">|
 |**Label Width**|Width of the label associated with an input field. It determines the horizontal space occupied by the label text|<img src= "/apps/components/img/input_labelwidth1.png">|
 |**Label Wrap**| If the label is longer than the allowed width the text will continue on another line|<img src= "/apps/components/img/input_labelwrap1.png">|

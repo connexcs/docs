@@ -46,14 +46,14 @@ It serves as a visual and functional indicator of progress, improving user exper
 |`this.show`|Displays the field|`(fields: String()`|
 | `this.disable`| Disable input field from user interaction|`(fields: String(), String[])`|
 |`this.setData`|Set the data in the field|`(Value: Object)`|
-|`this.getValue`|Get A Value From a component|`(fieldName String()`|
+|`this.getValue`|Get A Value From a component|`(fieldName: String()`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
     2. **Fields** refers to a **component ID** or a **list of component IDs**. You can fetch the ID from the **Component Attribute** panel in the Page Builder.
     3. Before using **this.show(fields)**, make sure the component is **hidden**. This can be done using **this.hide(fields)** or by **enabling** the **Hidden checkbox** in the Component Attribute panel.
 
-#### Steps to place/use the methods for components of the Page Builder
+#### Steps to use the methods for the Page Builder components
 
 1. Go to Form Attribute :material-menu-right: Action Panel :material-menu-right: Setting :material-menu-right: (Mounted | refresh | click 'Add action').
 2. Write the method/code as shown in the **Example** below.
@@ -70,7 +70,7 @@ It serves as a visual and functional indicator of progress, improving user exper
             background-color: red;
             }
             ```
-          * Follow the steps mentioned above, under Steps to place/use the methods for components of the Page Builder
+          * Follow the steps mentioned above, under Steps to use the methods for the Page Builder components
           * ```
             this.addClassName('steps_2bpjtc5m', 'abc')
             ```
@@ -80,7 +80,7 @@ It serves as a visual and functional indicator of progress, improving user exper
         this.removeClassName('steps_2bpjtc5m', 'abc')
         ```
     
-    3. `this.getValues(fieldName)`
+    3. `this.getValues()`
         ```js
         var data = this.getValues();
         console.log(data);
@@ -127,7 +127,7 @@ It serves as a visual and functional indicator of progress, improving user exper
 
 | **Name**|**Description**|**Icon**|
 |---------|---------------|--------|
-|**ID**| Step's unique identifier|<img src= "/apps/components/img/input_id.png">|
+|**ID**| The step component's unique identifier|<img src= "/apps/components/img/input_id.png">|
 |**Name**| [**Optional**] The display name of the Steps field|<img src= "/apps/components/img/checkbox_name.png">|
 |**Width**| [**Optional**] Width of the field|<img src= "/apps/components/img/input_width.png">|
 |**Label Width**|Width of the label associated with an input field. It determines the horizontal space occupied by the label text|<img src= "/apps/components/img/input_labelwidth1.png">|

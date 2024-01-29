@@ -27,7 +27,7 @@ The <html> tag is the container for all other HTML elements (except for the <!DO
 | **Name**| **Description**|**Parameters**|
 |---------|----------------|--------------|
 |`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String(), String[]; Object: Object)`|
-|`this.getValue`|Get A Value From a component|`(fieldName String()`|
+|`this.getValue`|Get A Value From a component|`(fieldName: String()`|
 |`this.getValues`|Get the values of all fields when values change|`Object`|
 |`this.hide`|Hides the field|`(fields: String()`|
 |`this.show`|Displays the field|`(fields: String()`|
@@ -37,7 +37,7 @@ The <html> tag is the container for all other HTML elements (except for the <!DO
     2. **Fields** refers to a **component ID** or a **list of component IDs**. You can fetch the ID from the **Component Attribute** panel in the Page Builder.
     3. Before using **this.show(fields)**, make sure the component is **hidden**. This can be done using **this.hide(fields)** or by **enabling** the **Hidden checkbox** in the Component Attribute panel
 
-#### Steps to place/use the methods for components of the Page Builder
+#### Steps to use the methods for the Page Builder components
 
 1. Go to Form Attribute :material-menu-right: Action Panel :material-menu-right: Setting :material-menu-right: (Mounted | refresh | click 'Add action').
 2. Write the method/code as shown in the **Example** below.
@@ -59,7 +59,7 @@ The <html> tag is the container for all other HTML elements (except for the <!DO
         var htmlname = this.getValue('html_0h6cj3iv');
         console.log('getValue', htmlname);
         ```
-    3. `this.getValues(fieldName)`
+    3. `this.getValues()`
         ```js
         var data = this.getValues();
         console.log(data);
@@ -79,7 +79,7 @@ The <html> tag is the container for all other HTML elements (except for the <!DO
 
 | **Name**|**Description**|**Icon**|
 |---------|---------------|--------|
-|**ID**| HTML's unique identifier|<img src= "/apps/components/img/input_id.png">|
+|**ID**| The HTML component's unique identifier|<img src= "/apps/components/img/input_id.png">|
 |**Name**| [**Optional**] The display name of the HTML field|<img src= "/apps/components/img/checkbox_name.png">|
 |**Width**| [**Optional**] Width of the field|<img src= "/apps/components/img/input_width.png">|
 |**Label Width**|Width of the label associated with an input field. It determines the horizontal space occupied by the label text|<img src= "/apps/components/img/input_labelwidth1.png">|
@@ -87,6 +87,22 @@ The <html> tag is the container for all other HTML elements (except for the <!DO
 |**Hide Label**| Hides the label on the form|<img src= "/apps/components/img/input_hidelabel.png">|
 |**Text Prompt**| A description to aid the user when completing the field|<img src= "/apps/components/img/input_textprompt.png">|
 |**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** to action to hide the field|<img src= "/apps/components/img/group_attributionaction.png">|
+
+### setHTML and set Template
+
+#### setHTML
+
+```js
+this.setData({html: I don't need no template})
+```
+
+#### set Template
+
+It always reads from the default value.
+
+```js
+this.setData({html: {name: `Alice`}})
+```
 
 ### Validation
 

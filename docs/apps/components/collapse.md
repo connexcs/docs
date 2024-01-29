@@ -51,7 +51,7 @@ Some of the most common methods include:
     2. **Fields** refers to a **component ID** or a **list of component IDs**. You can fetch the ID from the **Component Attribute** panel in the Page Builder.
     3. Before using **this.show(fields)**, make sure the component is **hidden**. This can be done using **this.hide(fields)** or by **enabling** the **Hidden checkbox** in the Component Attribute panel.
 
-#### Steps to place/use the methods for components of the Page Builder
+#### Steps to use the methods for the Page Builder components
 
 1. Go to Form Attribute :material-menu-right: Action Panel :material-menu-right: Setting :material-menu-right: (Mounted | refresh | click 'Add action').
 2. Write the method/code as shown in the **Example** below.
@@ -68,7 +68,7 @@ Some of the most common methods include:
             background-color: red;
             }
             ```
-          * Follow the steps mentioned above, under Steps to place/use the methods for components of the Page Builder
+          * Follow the steps mentioned above, under Steps to use the methods for the Page Builder components
           * ```
             this.addClassName('collapse_itxbeisp', 'abc')
             ```
@@ -100,7 +100,7 @@ Some of the most common methods include:
 
 | **Name**|**Description**|**Icon**|
 |---------|---------------|--------|
-|**ID**| Collapse's unique identifier|<img src= "/apps/components/img/input_id.png">|
+|**ID**| The collapse compenent's unique identifier|<img src= "/apps/components/img/input_id.png">|
 |**Collapse Options**|Allows you to add/delete multiple Collapses|<img src= "/apps/components/img/collapse_collapseoptions.png">|
 |**Accordian Mode**|Enable this mode if you want to display only one Collaspse section at a time (this is helpful when you have to avoid clutter when you have multiple Collapse sections)|<img src= "/apps/components/img/collapse_accordionmode.png">
 |**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|

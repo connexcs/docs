@@ -42,14 +42,14 @@
 |`this.show`|Displays the field|`(fields: String()`|
 | `this.disable`| Disable input field from user interaction|`(fields: String(), String[])`|
 |`this.setData`|Set the data in the field|`(Value: Object`|
-|`this.getValue`|Get A Value From a component|`(fieldName String()`|
+|`this.getValue`|Get A Value From a component|`(fieldName: String()`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
     2. **Fields** refers to a **component ID** or a **list of component IDs**. You can fetch the ID from the **Component Attribute** panel in the Page Builder.
     3. Before using **this.show(fields)**, make sure the component is **hidden**. This can be done using **this.hide(fields)** or by **enabling** the **Hidden checkbox** in the Component Attribute panel.
 
-#### Steps to place/use the methods for components of the Page Builder
+#### Steps to use the methods for the Page Builder components
 
 1. Go to Form Attribute :material-menu-right: Action Panel :material-menu-right: Setting :material-menu-right: (Mounted | refresh | click 'Add action').
 2. Write the method/code as shown in the **Example** below.
@@ -66,7 +66,7 @@
             background-color: red;
             }
             ```
-          * Follow the steps mentioned above, under Steps to place/use the methods for components of the Page Builder
+          * Follow the steps mentioned above, under Steps to use the methods for the Page Builder components
           * ```
             this.addClassName('aggrid_nd93m43c', 'abc')
             ```
@@ -82,7 +82,7 @@
         console.log('getValue', dataname);
         ```
     
-    4. `this.getValues(fieldName)`
+    4. `this.getValues()`
         ```js
         var data = this.getValues();
         console.log(data);
@@ -120,7 +120,7 @@
 
 | **Name**|**Description**|**Icon**|
 |---------|---------------|--------|
-|**ID**| Data-grid's unique identifier|<img src= "/apps/components/img/input_id.png">|
+|**ID**| The data-grid compoent's unique identifier|<img src= "/apps/components/img/input_id.png">|
 |**Width**| [**Optional**] Width of the field|<img src= "/apps/components/img/input_width.png">|
 |**Status Bar**|Displays information about the number of rows and columns|<img src= "/apps/components/img/datagrid_statusbar.png">|
 |**Side Bar**|Displays the side bar with Columns and Filters|<img src= "/apps/components/img/datagrid_sidebar.png">|
@@ -202,9 +202,6 @@ It allows you to customize the appearance of data to improve readability, highli
        * Time: Data in columns marked as "time" represent temporal information, often used for time-series charts that track trends or changes over time.
 
 <img src= "/apps/components/img/datagrid_charts.png" width="400">
-
-!!! Info
-    1. The **callback()function** is also called to verify success in the custom checkup method.
 
 ## First time User?
 

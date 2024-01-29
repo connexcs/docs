@@ -42,7 +42,7 @@ Some of the examples may include:
 
 | **Name**|**Description**|**Icon**|
 |---------|---------------|--------|
-|**ID**| I-frame's unique identifier|<img src= "/apps/components/img/input_id.png">|
+|**ID**| The I-frame component's unique identifier|<img src= "/apps/components/img/input_id.png">|
 |**Width**| [**Optional**] Width of the I-Frame window|<img src= "/apps/components/img/input_width.png">|
 |**Height**|Height of the I-Frame window|<img src= "/apps/components/img/iframe_height.png">|
 |**URL**|Provide the link for the webpage you wish to display in the I-Frame|<img src= "/apps/components/img/iframe_url.png">|

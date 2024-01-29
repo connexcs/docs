@@ -57,7 +57,7 @@ Some of the most common methods include:
 
 | **Name**| **Description**|
 |---------|----------------|
-| `onChange (element)`| The onChange event occurs when the value of a field is changed|
+| `onChange (element)`| The onChange event occurs when the value of the color field changes.|
 
 ### Methods
 
@@ -70,15 +70,15 @@ Some of the most common methods include:
 |`this.hide`|Hides the field|`(fields: String()`|
 |`this.show`|Displays the field|`(fields: String()`|
 | `this.disable`| Disable input field from user interaction|`(fields: String(), String[])`|
-|`this.getValue`|Get A Value From a component|`(fieldName String()`|
-|`this.setData`|Set the default color|`(Value: Hexadecimal color code)`|
+|`this.getValue`|Get A Value From a component|`(fieldName: String()`|
+|`this.setData`|Set the color by passing an object of type, { component_Id: String }. The String should a color in hexadicimal format. e.g. '#443214'|`(Value: Object)`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
     2. **Fields** refers to a **component ID** or a **list of component IDs**. You can fetch the ID from the **Component Attribute** panel in the Page Builder.
     3. Before using **this.show(fields)**, make sure the component is **hidden**. This can be done using **this.hide(fields)** or by **enabling** the **Hidden checkbox** in the Component Attribute panel.
 
-#### Steps to place/use the methods for components of the Page Builder
+#### Steps to use the methods for the Page Builder components
 
 1. Go to Form Attribute :material-menu-right: Action Panel :material-menu-right: Setting :material-menu-right: (Mounted | refresh | click 'Add action').
 2. Write the method/code as shown in the **Example** below.
@@ -95,7 +95,7 @@ Some of the most common methods include:
             background-color: red;
             }
             ```
-          * Follow the steps mentioned above, under Steps to place/use the methods for components of the Page Builder
+          * Follow the Steps to use the methods for the Page Builder components
           * ```
             this.addClassName('color_zxqxhwlh', 'abc')
             ```
@@ -105,7 +105,7 @@ Some of the most common methods include:
         this.removeClassName('color_zxqxhwlh', 'abc')
         ```
     
-    3. `this.getValues(fieldName)`
+    3. `this.getValues()`
         ```js
         var data = this.getValues();
         console.log(data);
@@ -143,16 +143,14 @@ Some of the most common methods include:
     9. `this.setData(Value)`
         ```js
         this.setData(
-         {
-         ""color_o1cfjhoq": "#AEE710",}
-        );
+         {""color_o1cfjhoq": "#AEE710",});
         ```
 
 ## Config
 
 | **Name**|**Description**|**Icon**|
 |---------|---------------|--------|
-|**ID**| Color's unique identifier|<img src= "/apps/components/img/input_id.png">|
+|**ID**| The color component's unique identifier|<img src= "/apps/components/img/input_id.png">|
 |**Name**| [**Optional**] The display name of the color field|<img src= "/apps/components/img/checkbox_name.png">|
 |**Width**| [**Optional**] Width of the field|<img src= "/apps/components/img/input_width.png">|
 |**Label Width**|Width of the label associated with an input field. It determines the horizontal space occupied by the label text|<img src= "/apps/components/img/input_labelwidth1.png">|
@@ -176,7 +174,7 @@ Form validation can be performed using a variety of methods, including:
 |---------|----------------|
 | **Required**| Single line of text|
 |**Custom Validation Rules**|(rule, value, callback) => {|
-||**rule**: Verification rule, you can view the verification configuration information through this parameter; rule.fieldcan get the field identifier of the current verification.|
+||**rule**: Verification rule, you can view the verification configuration information through this parameter; **rule.field** can get the field identifier of the current verification.|
 ||**value**: Value of the current field|
 ||**callback**: Callback function (must be called) upon completion of validation; **callback('Error message')/ callback(new Error('Error message'))**. These are two ways to return an error message.|
 

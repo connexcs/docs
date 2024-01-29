@@ -42,14 +42,14 @@ The 3 types of Charts we use are:
 |`this.show`|Displays the field|`(fields: String()`|
 | `this.disable`| Disable input field from user interaction|`(fields: String(), String[])`|
 |`this.setData`|Set the data in the field|`(Value: Object)`|
-|`this.getValue`|Get A Value From a component|`(fieldName String()`|
+|`this.getValue`|Get A Value From a component|`(fieldName: String()`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
     2. **Fields** refers to a **component ID** or a **list of component IDs**. You can fetch the ID from the **Component Attribute** panel in the Page Builder.
     3. Before using **this.show(fields)**, make sure the component is **hidden**. This can be done using **this.hide(fields)** or by **enabling** the **Hidden checkbox** in the Component Attribute panel.
 
-#### Steps to place/use the methods for components of the Page Builder
+#### Steps to use the methods for the Page Builder components
 
 1. Go to Form Attribute :material-menu-right: Action Panel :material-menu-right: Setting :material-menu-right: (Mounted | refresh | click 'Add action').
 2. Write the method/code as shown in the **Example** below.
@@ -66,7 +66,7 @@ The 3 types of Charts we use are:
             background-color: red;
             }
             ```
-          * Follow the steps mentioned above, under Steps to place/use the methods for components of the Page Builder
+          * Follow the steps mentioned above, under Steps to use the methods for the Page Builder components
           * ```
             this.addClassName('echarts_moy2lbor', 'abc')
             ```
@@ -82,7 +82,7 @@ The 3 types of Charts we use are:
         console.log('getValue', chartname);
         ```
     
-    4. `this.getValues(fieldName)`
+    4. `this.getValues()`
         ```js
         var data = this.getValues();
         console.log(data);
@@ -123,7 +123,7 @@ The 3 types of Charts we use are:
 
 | **Name**|**Description**|**Icon**|
 |---------|---------------|--------|
-|**ID**| Chart's unique identifier|<img src= "/apps/components/img/input_id.png">|
+|**ID**| The chart component's unique identifier|<img src= "/apps/components/img/input_id.png">|
 |**Width**| [**Optional**] Width of the field|<img src= "/apps/components/img/input_width.png">|
 |**Height**| [**Optional**] Height of the field|<img src= "/apps/components/charts_height.png">|
 |**Default**| Default data for the charts|<img src= "/apps/components/charts_default.png">|
@@ -137,7 +137,7 @@ The 3 types of Charts we use are:
    * **Sub-Title**: Enter the sub-title of the chart.
 
    * **Title Vertical Position**: Place the sub-title either at the **Top**, **Center** or **Bottom**.
-   * **Title Hortzontal Position**: Place the sub-title either at the **Left**, **Center** or **Right**.
+   * **Title Horizontal Position**: Place the sub-title either at the **Left**, **Center** or **Right**.
    * **Title Gap**: Space between the Main Title and Sub-Title.
 
    * Enable **Tooltip** open small, contextual pop-up window that provides additional information or guidance when users hover over, point to, or tap an element on a GUI.
@@ -151,14 +151,30 @@ The 3 types of Charts we use are:
 2.**Series**: When you have more than 2 charts in a single chart.
 
    * **Type**: Select **Bar**, **Line**, **Pie**, **Area** or **Sankey** charts.
-   * **Label Formatter**: It displays
-   * **X-Axis Index**:The X-axis index in a graph refers to the numerical values or categories displayed along the bottom horizontal axis.
-   * **Y-Axis Index**: The Y-axis index in a graph refers to the numerical values displayed along the vertical axis.
+   * **Label Formatter**: It helps you display the following information:
+        Model variation includes:
+        * {a}: series name.
+        * {b}: the name of a data item.
+        * {c}: the value of a data item.
+        * {@xxx}: the value of a dimension named 'xxx', for example, {@product} refers to the value of 'product' dimension.
+        * {@[n]}: the value of a dimension at the index of n, for example, {@[3]} refers to the value at dimensions[3].
+   * **Name**: Select the **Series**.
+   * **Encode X**:The X-axis index in a graph refers to the numerical values or categories displayed along the bottom horizontal axis.
+   * **Encode Y**: The Y-axis index in a graph refers to the numerical values displayed along the vertical axis.
 
 <img src= "/apps/components/img/charts_series1.png" width="400">
 
+!!! Info Line Charts
+    When you select **Line Charts** some additional fields are displayed:
+    * **Symbol**: Allows you to choose the symbol of the connecting the line.
+    * **Connect Nulls**: Whether to connect the line across null points.
+
+!!! Info Area
+    When you select **Area** some fields are displayed:
+    * **Color**: Select the area under the curve.
+
 !!! Info Sankey Charts
-    A Sankey chart is a type of diagram that helps you show how things flow from one part to another.
+    A **Sankey chart** is a type of diagram that helps you show how things flow from one part to another.
 
     Sankey charts are handy for understanding and visualizing how resources or information move through complex systems. They're used in various fields to make it easier to see and analyze these flows.
 
@@ -166,7 +182,7 @@ The 3 types of Charts we use are:
 
 3.**X-Axis**: To change the settings for X-Axis.
 
-  * **Grid**: Select the grid you wish to place your X-Axis.
+  * **Grid Index**: Select the grid you wish to place your X-Axis.
   * **Name**: Enter the name of the X-Axis.
   * **Formatter**: Select the value you want to display on X-axis like **Duration**, **Millisecond**, **Decimal**, **Percent**, **Bytes**.
 
@@ -174,7 +190,7 @@ The 3 types of Charts we use are:
 
 4.**Y-Axis**: To change the settings for Y-Axis.
 
-* **Grid**: Select the grid you wish to place your Y-Axis.
+* **Grid Index**: Select the grid you wish to place your Y-Axis.
 * **Name**: Enter the name of the Y-Axis.
 * **Formatter**: Select the value you want to display on X-axis like **Duration**, **Millisecond**, **Decimal**, **Percent**, **Bytes**.
 

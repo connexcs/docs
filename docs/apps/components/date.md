@@ -99,14 +99,14 @@ Examples may include:
 |`this.show`|Displays the field|`(fields: String()`|
 | `this.disable`| Disable input field from user interaction|`(fields: String(), String[])`|
 |`this.setData`|Set the data in the field|`(Value: Object)`|
-|`this.getValue`|Get A Value From a component|`(fieldName String()`|
+|`this.getValue`|Get A Value From a component|`(fieldName: String()`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
     2. **Fields** refers to a **component ID** or a **list of component IDs**. You can fetch the ID from the **Component Attribute** panel in the Page Builder.
     3. Before using **this.show(fields)**, make sure the component is **hidden**. This can be done using **this.hide(fields)** or by **enabling** the **Hidden checkbox** in the Component Attribute panel.
 
-#### Steps to place/use the methods for components of the Page Builder
+#### Steps to use the methods for the Page Builder components
 
 1. Go to Form Attribute :material-menu-right: Action Panel :material-menu-right: Setting :material-menu-right: (Mounted | refresh | click 'Add action').
 2. Write the method/code as shown in the **Example** below.
@@ -123,7 +123,7 @@ Examples may include:
             background-color: red;
             }
             ```
-          * Follow the steps mentioned above, under Steps to place/use the methods for components of the Page Builder
+          * Follow the steps mentioned above, under Steps to use the methods for the Page Builder components
           * ```
             this.addClassName('date_0gprgpvi', 'abc')
             ```
@@ -133,7 +133,7 @@ Examples may include:
         this.removeClassName('date_0gprgpvi', 'abc')
         ```
     
-    3. `this.getValues(fieldName)`
+    3. `this.getValues()`
         ```js
         var data = this.getValues();
         console.log(data);
@@ -180,7 +180,7 @@ Examples may include:
 
 | **Name**|**Description**|**Icon**|
 |---------|---------------|--------|
-|**ID**| Date's unique identifier|<img src= "/apps/components/img/input_id.png">|
+|**ID**| The date component's unique identifier|<img src= "/apps/components/img/input_id.png">|
 |**Name**| [**Optional**] The display name of the date field|<img src= "/apps/components/img/checkbox_name.png">|
 |**Width**| [**Optional**] Width of the field|<img src= "/apps/components/img/input_width.png">|
 |**Label Width**|Width of the label associated with an input field. It determines the horizontal space occupied by the label text|<img src= "/apps/components/img/input_labelwidth1.png">|
@@ -206,7 +206,7 @@ Form validation can be performed using a variety of methods, including:
 |---------|----------------|
 | **Required**| Single line of text|
 |**Custom Validation Rules**|(rule, value, callback) => {|
-||**rule**: Verification rule, you can view the verification configuration information through this parameter; rule.fieldcan get the field identifier of the current verification.|
+||**rule**: Verification rule, you can view the verification configuration information through this parameter; **rule.field** can get the field identifier of the current verification.|
 ||**value**: Value of the current field|
 ||**callback**: Callback function (must be called) upon completion of validation; **callback('Error message')/ callback(new Error('Error message'))**. These are two ways to return an error message.|
 

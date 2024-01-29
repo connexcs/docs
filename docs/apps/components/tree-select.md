@@ -55,7 +55,7 @@ Unlike a standard dropdown menu with a flat list of options, a tree-select organ
     2. **Fields** refers to a **component ID** or a **list of component IDs**. You can fetch the ID from the **Component Attribute** panel in the Page Builder.
     3. Before using **this.show(fields)**, make sure the component is **hidden**. This can be done using **this.hide(fields)** or by **enabling** the **Hidden checkbox** in the Component Attribute panel.
 
-#### Steps to place/use the methods for components of the Page Builder
+#### Steps to use the methods for the Page Builder components
 
 1. Go to Form Attribute :material-menu-right: Action Panel :material-menu-right: Setting :material-menu-right: (Mounted | refresh | click 'Add action').
 2. Write the method/code as shown in the **Example** below.
@@ -72,7 +72,7 @@ Unlike a standard dropdown menu with a flat list of options, a tree-select organ
             background-color: red;
             }
             ```
-          * Follow the steps mentioned above, under Steps to place/use the methods for components of the Page Builder
+          * Follow the steps mentioned above, under Steps to use the methods for the Page Builder components
           * ```
             this.addClassName('treeselect_4xgiru3n', 'abc')
             ```
@@ -97,17 +97,14 @@ Unlike a standard dropdown menu with a flat list of options, a tree-select organ
     5. `this.setData(Value)`
         ```js
         this.setData(
-        {
-        "treeselect_4xgiru3n": "Option 2",
-        }
-        )
+        {"treeselect_4xgiru3n": "Option 2",})
         ```
 
 ## Config
 
 | **Name**|**Description**|**Icon**|
 |---------|---------------|--------|
-|**ID**| Tree-select's unique identifier|<img src= "/apps/components/img/input_id.png">|
+|**ID**| The tree-select component's unique identifier|<img src= "/apps/components/img/input_id.png">|
 |**Name**| [**Optional**] The display name of the Tree-select field|<img src= "/apps/components/img/checkbox_name.png">|
 |**Width**| [**Optional**] Width of the field|<img src= "/apps/components/img/input_width.png">|
 |**Label Width**|Width of the label associated with an input field. It determines the horizontal space occupied by the label text|<img src= "/apps/components/img/input_labelwidth1.png">|
@@ -118,7 +115,7 @@ Unlike a standard dropdown menu with a flat list of options, a tree-select organ
 |**Multiple**|Allows users to choose multiple options from different branches or levels within the tree-select structure|<img src= "/apps/components/img/treeselect_multiple.png">|
 |**Searchable**|Allows users to search the from the options|<img src= "/apps/components/img/treeselect_searchable.png">|
 |**Optional any Node**|users can choose any node from any level within the tree, including child nodes|<img src= "/apps/components/img/treeselect_optional.png">|
-|**Option**|Choose either **Static** or **Dynamic** way of adding data to the options of the Tree Select <br><br>**Static data** refers to a fixed set of options that are predefined and loaded into the Tree Select at the time of initialization</br></br> **Dynamic data** are options fetched as needed from sources like databases or APIs. The Tree Select updates choices based on user selections. You select from **Data source** which refers to the origin of the data; **Function** which refers to the code that manipulates the data, and **Assigned Value** which refers to the specific value stored or associated with a data element|<img src= "/apps/components/img/checkbox_static.png"> <img src= "/apps/components/img/checkbox_dynamic.png">|
+|**Option**|Choose either **Static** or **Dynamic** way of adding data to the options of the Tree Select <br><br>**Static data** refers to a fixed set of options that are pre-defined and loaded into the Tree Select at the time of initialization</br></br> **Dynamic data** are options fetched as needed from sources like databases or APIs. The Tree Select updates choices based on user selections. You select from **Data source** which refers to the origin of the data; **Function** which refers to the code that manipulates the data, and **Assigned Value** which refers to the specific value stored or associated with a data element|<img src= "/apps/components/img/checkbox_static.png"> <img src= "/apps/components/img/checkbox_dynamic.png">|
 |**Default Value**| The default value which is filled in the field before the user changes it|<img src= "/apps/components/img/treeselect_default.png">|
 |**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** to action to hide the field. <br> Enable **Disabled** action to make the field unusable. <br>Enable **Show Clear button** action to make the clear button visible.|<img src= "/apps/components/img/treeselect_attributionaction.png">|

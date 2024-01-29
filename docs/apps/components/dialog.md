@@ -54,9 +54,9 @@ It typically provides a self-contained interface for collecting additional infor
 | **Name**| **Description**|**Parameters**|
 |---------|----------------|--------------|
 |`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String(), String[]; Object: Object)`|
-|`this.getValue`|Get A Value From a component|`(fieldName String()`|
+|`this.getValue`|Get A Value From a component|`(fieldName: String()`|
 
-#### Steps to place/use the methods for components of the Page Builder
+#### Steps to use the methods for the Page Builder components
 
 1. Go to Form Attribute :material-menu-right: Action Panel :material-menu-right: Setting :material-menu-right: (Mounted | refresh | click 'Add action').
 2. Write the method/code as shown in the **Example** below.
@@ -82,7 +82,7 @@ It typically provides a self-contained interface for collecting additional infor
 
 | **Name**|**Description**|**Icon**|
 |---------|---------------|--------|
-|**ID**| Dialog's unique identifier|<img src= "/apps/components/img/input_id.png">|
+|**ID**| The dialog component's unique identifier|<img src= "/apps/components/img/input_id.png">|
 |**Title**| [**Optional**] The display name of the dialog field|<img src= "/apps/components/img/alert_title.png">|
 |**Width**| [**Optional**] Width of the field|<img src= "/apps/components/img/input_width.png">|
 |**Visible**|Enable visible option to display the Dialog and disable to hide the dialog box|<img src= "/apps/components/img/dialog_visible.png">|
@@ -94,8 +94,6 @@ It typically provides a self-contained interface for collecting additional infor
 |**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Data Binding** to connect the data to UI|<img src= "/apps/components/img/dialog_attributeaction.png">|
 
-!!! Info
-    1. The **callback()function** is also called to verify success in the custom checkup method.
 
 ## First time User?
 

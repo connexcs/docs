@@ -33,7 +33,7 @@ The **Inline** layout approach allows for a more compact and organized form layo
     2. **Fields** refers to a **component ID** or a **list of component IDs**. You can fetch the ID from the **Component Attribute** panel in the Page Builder.
     3. Before using **this.show(fields)**, make sure the component is **hidden**. This can be done using **this.hide(fields)** or by **enabling** the **Hidden checkbox** in the Component Attribute panel
 
-#### Steps to place/use the methods for components of the Page Builder
+#### Steps to use the methods for the Page Builder components
 
 1. Go to Form Attribute :material-menu-right: Action Panel :material-menu-right: Setting :material-menu-right: (Mounted | refresh | click 'Add action').
 2. Write the method/code as shown in the **Example** below.
@@ -50,7 +50,7 @@ The **Inline** layout approach allows for a more compact and organized form layo
             background-color: red;
             }
             ```
-          * Follow the steps mentioned above, under Steps to place/use the methods for components of the Page Builder
+          * Follow the steps mentioned above, under Steps to use the methods for the Page Builder components
           * ```
             this.addClassName('inline_1lm561y7', 'abc')
             ```
@@ -75,7 +75,7 @@ The **Inline** layout approach allows for a more compact and organized form layo
 
 | **Name**|**Description**|**Icon**|
 |---------|---------------|--------|
-|**ID**| Inline's unique identifier |<img src= "/apps/components/img/input_id.png">|
+|**ID**| The inline component's unique identifier |<img src= "/apps/components/img/input_id.png">|
 |**Space Size**| It's the space between the components. Adjust the size using keys [**Optional**] |<img src= "/apps/components/img/inline_spacesize.png">|
 |**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Hidden** action to hide the field|<img src= "/apps/components/img/alert_arrtibuteaction.png">|

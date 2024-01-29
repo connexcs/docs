@@ -51,7 +51,7 @@ Some examples of how card components can be made interactive include:
 |`this.addClassName`|Add style class to a form item|`(fields: String, String[]; className: String)`|
 |`this.removeClassName`|Remove style class from a form item|`(fields: String, String[]; className: String)`|
 |`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String(), String[])`|
-|`this.getValue`|Get A Value From a component|`(fields: String()`|
+|`this.getValue`|Get A Value From a component|`(fieldName: String()`|
 |`this.getValues`|Get the values of all fields when values change|`Object`|
 |`this.hide`|Hides the field|`(fields: String()`|
 |`this.show`|Displays the field|`(fields: String()`|
@@ -61,7 +61,7 @@ Some examples of how card components can be made interactive include:
     2. **Fields** refers to a **component ID** or a **list of component IDs**. You can fetch the ID from the **Component Attribute** panel in the Page Builder.
     3. Before using **this.show(fields)**, make sure the component is **hidden**. This can be done using **this.hide(fields)** or by **enabling** the **Hidden checkbox** in the Component Attribute panel.
 
-#### Steps to place/use the methods for components of the Page Builder
+#### Steps to use the methods for the Page Builder components
 
 1. Go to Form Attribute :material-menu-right: Action Panel :material-menu-right: Setting :material-menu-right: (Mounted | refresh | click 'Add action').
 2. Write the method/code as shown in the **Example** below.
@@ -78,7 +78,8 @@ Some examples of how card components can be made interactive include:
             background-color: red;
             }
             ```
-          * Follow the steps mentioned above, under Steps to place/use the methods for components of the Page Builder
+          * Follow the steps mentioned above, under Steps to use the methods for the Page Builder components
+
             ```
             this.addClassName('card_khlorb9y', 'abc')
             ```
@@ -93,7 +94,7 @@ Some examples of how card components can be made interactive include:
         var cardname = this.getValue('card_khlorb9y');
         console.log('getValue', cardname);
         ```
-    4. `this.getValues(fieldName)`
+    4. `this.getValues()`
         ```js
         var data = this.getValues();
         console.log(data);
@@ -118,7 +119,8 @@ Some examples of how card components can be made interactive include:
 
 | **Name**|**Description**|**Icon**|
 |---------|---------------|--------|
-|**ID**|Card's unique Identifier|<img src= "/apps/components/img/input_id.png">|
+|**ID**|The card's component's unique identifier
+|<img src= "/apps/components/img/input_id.png">|
 |**Title**| [**Optional**] The visual identifier label of the field|<img src= "/apps/components/img/alert_title2.png">|
 |**Width**| [**Optional**] The width of the field. Example: 20%, 20px, 20rem|<img src= "/apps/components/img/input_width.png">|
 |**Padding**| [**Optional**] Specifies the amount of space between an element's content and its border. Example: 20%, 20px, 20rem|<img src= "/apps/components/img/card_padding.png">

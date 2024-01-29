@@ -40,7 +40,7 @@ Examples may include:
 |`this.addClassName`|Add style class to a form item|`(fields: String, String[]; className: String)`|
 |`this.removeClassName`|Remove style class from a form item|`(fields: String, String[]; className: String)`|
 |`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String(), String[]; Object: Object)`|
-|`this.getValue`|Get A Value From a component|`(fieldName String()`|
+|`this.getValue`|Get A Value From a component|`(fieldName: String()`|
 |`this.hide`|Hides the field|`(fields: String()`|
 |`this.show`|Displays the field|`(fields: String()`|
 
@@ -49,7 +49,7 @@ Examples may include:
     2. **Fields** refers to a **component ID** or a **list of component IDs**. You can fetch the ID from the **Component Attribute** panel in the Page Builder.
     3. Before using **this.show(fields)**, make sure the component is **hidden**. This can be done using **this.hide(fields)** or by **enabling** the **Hidden checkbox** in the Component Attribute panel.
 
-#### Steps to place/use the methods for components of the Page Builder
+#### Steps to use the methods for the Page Builder components
 
 1. Go to Form Attribute :material-menu-right: Action Panel :material-menu-right: Setting :material-menu-right: (Mounted | refresh | click 'Add action').
 2. Write the method/code as shown in the **Example** below.
@@ -66,7 +66,7 @@ Examples may include:
             background-color: red;
             }
             ```
-          * Follow the steps mentioned above, under Steps to place/use the methods for components of the Page Builder
+          * Follow the steps mentioned above, under Steps to use the methods for the Page Builder components
           * ```
             this.addClassName('group_j9o3pb2i', 'abc')
             ```
@@ -103,7 +103,7 @@ Examples may include:
 
 | **Name**|**Description**|**Icon**|
 |---------|---------------|--------|
-|**ID**| Group's unique identifier|<img src= "/apps/components/img/input_id.png">|
+|**ID**| The group component's unique identifier|<img src= "/apps/components/img/input_id.png">|
 |**Name**| [**Optional**] The display name of the grid|<img src= "/apps/components/img/checkbox_name.png">|
 |**Width**| [**Optional**] Width of the field|<img src= "/apps/components/img/input_width.png">|
 |**Label Width**|Width of the label associated with an input field. It determines the horizontal space occupied by the label text|<img src= "/apps/components/img/input_labelwidth1.png">|
@@ -124,7 +124,7 @@ Form validation can be performed using a variety of methods, including:
 | **Name**| **Description**|
 |---------|----------------|
 |**Custom Validation Rules**|(rule, value, callback) => {|
-||**rule**: Verification rule, you can view the verification configuration information through this parameter; rule.fieldcan get the field identifier of the current verification|
+||**rule**: Verification rule, you can view the verification configuration information through this parameter; **rule.field** can get the field identifier of the current verification|
 
 <img src= "/apps/components/img/group_validation.png">
 

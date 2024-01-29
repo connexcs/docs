@@ -53,14 +53,14 @@ Complex layout Sub-Form component for list (array) type form data, supporting ne
 |`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String(), String[]; Object: Object)`|
 |`this.hide`|Hides the field|`(fields: String()`|
 |`this.show`|Displays the field|`(fields: String()`|
-| `this.disable`| Disable input field from user interaction|`(fields: String(), String[])`|
+|`this.disable`| Disable input field from user interaction|`(fields: String(), String[])`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
     2. **Fields** refers to a **component ID** or a **list of component IDs**. You can fetch the ID from the **Component Attribute** panel in the Page Builder.
     3. Before using **this.show(fields)**, make sure the component is **hidden**. This can be done using **this.hide(fields)** or by **enabling** the **Hidden checkbox** in the Component Attribute panel.
 
-#### Steps to place/use the methods for components of the Page Builder
+#### Steps to use the methods for the Page Builder components
 
 1. Go to Form Attribute :material-menu-right: Action Panel :material-menu-right: Setting :material-menu-right: (Mounted | refresh | click 'Add action').
 2. Write the method/code as shown in the **Example** below.
@@ -77,7 +77,7 @@ Complex layout Sub-Form component for list (array) type form data, supporting ne
             background-color: red;
             }
             ```
-          * Follow the steps mentioned above, under Steps to place/use the methods for components of the Page Builder
+          * Follow the steps mentioned above, under Steps to use the methods for the Page Builder components
           * ```
             this.addClassName('table_n7rs950l', 'abc')
             ```
@@ -114,7 +114,7 @@ Complex layout Sub-Form component for list (array) type form data, supporting ne
 
 | **Name**|**Description**|**Icon**|
 |---------|---------------|--------|
-|**ID**| Sub-Form's identifier|<img src= "/apps/components/img/input_id.png">|
+|**ID**| The sub-Form+ component's identifier|<img src= "/apps/components/img/input_id.png">|
 |**Label Width**|Width of the label associated with an input field. It determines the horizontal space occupied by the label text|<img src= "/apps/components/img/input_labelwidth1.png">|
 |**Hide Label**| Hides the label on the form|<img src= "/apps/components/img/input_hidelabel.png">|
 |**Text Prompt**| A description to aid the user when completing the field|<img src= "/apps/components/img/input_textprompt.png">|

@@ -49,7 +49,7 @@ Each tab acts as a dedicated space for specific information, guiding users throu
 |`this.hide`|Hides the field|`(fields: String`|
 |`this.show`|Displays the field|`(fields: String)`|
 |`this.disable`| Disable input field from user interaction|`(fields: String(), String[])`|
-|`this.getValue`|Get A Value From a component|`(fieldName String()`|
+|`this.getValue`|Get A Value From a component|`(fieldName: String()`|
 |`this.getValues`|Get the values of all fields when values change|`Object`|
 
 !!! Info
@@ -57,7 +57,7 @@ Each tab acts as a dedicated space for specific information, guiding users throu
     2. **Fields** refers to a **component ID** or a **list of component IDs**. You can fetch the ID from the **Component Attribute** panel in the Page Builder.
     3. Before using **this.show(fields)**, make sure the component is **hidden**. This can be done using **this.hide(fields)** or by **enabling** the **Hidden checkbox** in the Component Attribute panel.
 
-#### Steps to place/use the methods for components of the Page Builder
+#### Steps to use the methods for the Page Builder components
 
 1. Go to Form Attribute :material-menu-right: Action Panel :material-menu-right: Setting :material-menu-right: (Mounted | refresh | click 'Add action').
 2. Write the method/code as shown in the **Example** below.
@@ -75,7 +75,7 @@ Each tab acts as a dedicated space for specific information, guiding users throu
             background-color: red;
             }
             ```
-          * Follow the steps mentioned above, under Steps to place/use the methods for components of the Page Builder
+          * Follow the steps mentioned above, under Steps to use the methods for the Page Builder components
           * ```
             this.addClassName('tabs_8r5c1t2n', 'abc')
             ```
@@ -85,7 +85,7 @@ Each tab acts as a dedicated space for specific information, guiding users throu
         this.removeClassName('tabs_8r5c1t2n, 'abc')
         ```
     
-    3. `this.getValues(fieldName)`
+    3. `this.getValues()`
         ```js
         var data = this.getValues();
         console.log(data);
@@ -124,7 +124,7 @@ Each tab acts as a dedicated space for specific information, guiding users throu
 
 | **Name**|**Description**|**Icon**|
 |---------|---------------|--------|
-|**ID**| Tab's unique identifier|<img src= "/apps/components/img/input_id.png">|
+|**ID**| The tab component's unique identifier|<img src= "/apps/components/img/input_id.png">|
 |**Type**|Choose the arrangement of tabs from **Default**, **Tabs** or **Border-Card**|<img src= "/apps/components/img/tabs_type.png">|
 |**Tab Position**|Choose the tabs from **Top**, **Left** or **Right** or **Bottom**|<img src= "/apps/components/img/tabs_type.png">|
 |**Tab Options**|Choose the number of tabs you wish to have in the form|<img src= "/apps/components/img/tabs_options.png">|

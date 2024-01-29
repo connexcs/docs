@@ -67,7 +67,7 @@ Here are some examples of how interactivity can be implemented for **Button** co
     2. **Fields** refers to a **component ID** or a **list of component IDs**. You can fetch the ID from the **Component Attribute** panel in the Page Builder.
     3. Before using **this.show(fields)**, make sure the component is **hidden**. This can be done using **this.hide(fields)** or by **enabling** the **Hidden checkbox** in the Component Attribute panel.
 
-#### Steps to place/use the methods for components of the Page Builder
+#### Steps to use the methods for the Page Builder components
 
 1. Go to Form Attribute :material-menu-right: Action Panel :material-menu-right: Setting :material-menu-right: (Mounted | refresh | click 'Add action').
 2. Write the method/code as shown in the **Example** below.
@@ -84,7 +84,7 @@ Here are some examples of how interactivity can be implemented for **Button** co
             background-color: red;
             }
             ```
-          * Follow the steps mentioned above, under Steps to place/use the methods for components of the Page Builder.
+          * Follow the steps mentioned above, Steps to use the methods for the Page Builder components
           * ```
             this.addClassName('button_815t5dfs', 'abc')
             ```
@@ -94,7 +94,7 @@ Here are some examples of how interactivity can be implemented for **Button** co
         this.removeClassName('button_815t5dfs', 'abc')
         ```
     
-    3. `this.getValues(fieldName)`
+    3. `this.getValues()`
         ```js
         var data = this.getValues();
         console.log(data);
@@ -123,7 +123,7 @@ Here are some examples of how interactivity can be implemented for **Button** co
 
 | **Name**|**Description**|**Icon**|
 |---------|---------------|--------|
-|**ID**| Button's unique Identifier |<img src= "/apps/components/img/alert_id2.png">|
+|**ID**| The button component's unique Identifier |<img src= "/apps/components/img/alert_id2.png">|
 |**Name**| [**Optional**] An identifier for the button within the page. It's used by the page builder to associate the button with the data it's submitting. The name is typically not displayed to the user|<img src= "/apps/components/img/button_name.png">|
 |**Button Name**| [**Optional**] The display name of the button|<img src= "/apps/components/img/button_buttonname.png">|
 |**Width**| [**Optional**] The width of the field|<img src= "/apps/components/img/input_width.png">|

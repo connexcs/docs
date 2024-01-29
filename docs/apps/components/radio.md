@@ -45,7 +45,7 @@ It's like a set of switches where only one can be "on" at any given moment.
 |`this.show`|Displays the field|`(fields: String()`|
 | `this.disable`| Disable input field from user interaction|`(fields: String(), String[])`|
 |`this.setData`|Set the data in the field|`(Value: Object)`|
-|`this.getValue`|Get A Value From a component|`(fieldName String()`|
+|`this.getValue`|Get A Value From a component|`(fieldName: String()`|
 |`this.refreshFieldDataSource`|Refresh the datasource data bound to the form field|
 
 |**this.getFieldDataSource**|Gets data from a datasource|
@@ -55,7 +55,7 @@ It's like a set of switches where only one can be "on" at any given moment.
     2. **Fields** refers to a **component ID** or a **list of component IDs**. You can fetch the ID from the **Component Attribute** panel in the Page Builder.
     3. Before using **this.show(fields)**, make sure the component is **hidden**. This can be done using **this.hide(fields)** or by **enabling** the **Hidden checkbox** in the Component Attribute panel
 
-#### Steps to place/use the methods for components of the Page Builder
+#### Steps to use the methods for the Page Builder components
 
 1. Go to Form Attribute :material-menu-right: Action Panel :material-menu-right: Setting :material-menu-right: (Mounted | refresh | click 'Add action').
 2. Write the method/code as shown in the **Example** below.
@@ -72,7 +72,7 @@ It's like a set of switches where only one can be "on" at any given moment.
             background-color: red;
             }
             ```
-          * Follow the steps mentioned above, under Steps to place/use the methods for components of the Page Builder
+          * Follow the steps mentioned above, under Steps to use the methods for the Page Builder components
           * ```
             this.addClassName('radio_mv3o2rpn', 'abc')
             ```
@@ -82,7 +82,7 @@ It's like a set of switches where only one can be "on" at any given moment.
         this.removeClassName('radio_mv3o2rpn', 'abc')
         ```
     
-    3. `this.getValues(fieldName)`
+    3. `this.getValues()`
         ```js
         var data = this.getValues();
         console.log(data);
@@ -120,16 +120,14 @@ It's like a set of switches where only one can be "on" at any given moment.
     9.  `this.setData(Value)`
         ```js
         this.setData(
-         {
-         "radio_mv3o2rpn": "Option 3",}
-        );
+         {"radio_mv3o2rpn": "Option 3",});
         ```
 
 ## Config
 
 | **Name**|**Description**|**Icon**|
 |---------|---------------|--------|
-|**ID**| Radio's unique identifier which is used to access the field by the API and the key of the field when the form is saved|<img src= "/apps/components/img/input_id.png">|
+|**ID**| The radio component's unique identifier which is used to access the field by the API and the key of the field when the form is saved|<img src= "/apps/components/img/input_id.png">|
 |**Name**| [**Optional**] The display name of the radio field|<img src= "/apps/components/img/checkbox_name.png">|
 |**Width**| [**Optional**] Width of the field|<img src= "/apps/components/img/input_width.png">|
 |**Label Width**|Width of the label associated with an input field. It determines the horizontal space occupied by the label text|<img src= "/apps/components/img/input_labelwidth1.png">|
@@ -137,7 +135,7 @@ It's like a set of switches where only one can be "on" at any given moment.
 |**Hide Label**| Hides the label on the form|<img src= "/apps/components/img/input_hidelabel.png">|
 |**Text Prompt**| A description to aid the user when completing the field|<img src= "/apps/components/img/input_textprompt.png">|
 |**Layout**|**Block**: Occupy the entire width of their container element.<br> **Inline**: Only occupy the space they need horizontally|<img src= "/apps/components/img/radio_layout.png">|
-|**Option**|Choose either **Static** or **Dynamic** way of adding data to the options of the Radio <br><br>**Static data** refers to a fixed set of options that are predefined and loaded into the radio at the time of initialization</br></br> **Dynamic data** are options fetched as needed from sources like databases or APIs. The radio updates choices based on user selections. You select from **Data source** which refers to the origin of the data; **Function** which refers to the code that manipulates the data, and **Assigned Value** which refers to the specific value stored or associated with a data element|<img src= "/apps/components/img/checkbox_static.png"> <img src= "/apps/components/img/checkbox_dynamic.png">|
+|**Option**|Choose either **Static** or **Dynamic** way of adding data to the options of the Radio <br><br>**Static data** refers to a fixed set of options that are pre-defined and loaded into the radio at the time of initialization</br></br> **Dynamic data** are options fetched as needed from sources like databases or APIs. The radio updates choices based on user selections. You select from **Data source** which refers to the origin of the data; **Function** which refers to the code that manipulates the data, and **Assigned Value** which refers to the specific value stored or associated with a data element|<img src= "/apps/components/img/checkbox_static.png"> <img src= "/apps/components/img/checkbox_dynamic.png">|
 |**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Data Binding** to connect the data to UI<br>Enable **Hidden** action to hide the field</br>Enable **Disabled** action to make the field unusable|<img src= "/apps/components/img/checkbox_attributeaction.png">|
 
@@ -153,7 +151,7 @@ Form validation can be performed using a variety of methods, including:
 |---------|----------------|
 | **Required**| Single line of text|
 |**Custom Validation Rules**|(rule, value, callback) => {|
-||**rule**: Verification rule, you can view the verification configuration information through this parameter; rule.fieldcan get the field identifier of the current verification|
+||**rule**: Verification rule, you can view the verification configuration information through this parameter; **rule.field** can get the field identifier of the current verification|
 ||**value**: Value of the current field|
 ||**callback**: Callback function (must be called) upon completion of validation; **callback('Error message')/ callback(new Error('Error message'))**. These are two ways to return an error message|
 

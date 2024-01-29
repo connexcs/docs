@@ -44,7 +44,7 @@ You would need to make a custom alert element and include event listeners in it 
     2. **Fields** refers to a **component ID** or a **list of component IDs**. You can fetch the ID from the **Component Attribute** panel in the Page Builder.
     3. Before using **this.show(fields)**, make sure the component is **hidden**. This can be done using **this.hide(fields)** or by **enabling** the **Hidden checkbox** in the Component Attribute panel.
 
-#### Steps to place/use the methods for components of the Page Builder"
+#### Steps to use the methods for the Page Builder components
 
 1. Go to Form Attribute :material-menu-right: Action Panel :material-menu-right: Setting :material-menu-right: (Mounted | refresh | click 'Add action').
 2. Write the method/code as shown in the **Example** below.
@@ -70,7 +70,7 @@ You would need to make a custom alert element and include event listeners in it 
 
 |**Name**|**Description**|**Icon**|
 |--------|---------------|--------|
-|**ID**| Alert's unique Identifier|<img src= "/apps/components/img/alert_id2.png">|
+|**ID**| The alert component's unique identifier|<img src= "/apps/components/img/alert_id2.png">|
 |**Title**| [**Optional**] The visual identifier label of the field|<img src= "/apps/components/img/alert_title2.png">|
 |**Description**| [**Optional**] Gives information about the alert|<img src= "/apps/components/img/alert_description2.png">|
 |**Width**| [**Optional**] The width of the field. Example: 20%, 20px, 20rem|<img src= "/apps/components/img/alert_width2.png">|
