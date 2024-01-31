@@ -105,7 +105,9 @@ This capability injects variable into a template.
         Hi my name is {{name}} //{{}}➡️templating language
     </b>
     ```
+
     HTML Output:
+    
     <span style="color:red">Hi my name is {{name}}</span>
 
     setHTML Code:
@@ -114,6 +116,7 @@ This capability injects variable into a template.
     ```
     
     HTML Output:
+    
     I don't need no template
 
 #### set Template
@@ -133,7 +136,9 @@ This capability will override the entire HTML text.
         Hi my name is {{name}} //{{}}➡️templating language
     </b>
     ```
+
     HTML Output:
+    
     <span style="color:red">Hi my name is {{name}}</span>
 
     set Template Code:
@@ -142,6 +147,7 @@ This capability will override the entire HTML text.
     ```
     
     HTML Output:
+    
     <span style="color:red">Hi my name is Alice</span>
 
 This capability uses Handlebars to create the template.
