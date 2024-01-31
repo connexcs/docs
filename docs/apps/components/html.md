@@ -90,19 +90,63 @@ The <html> tag is the container for all other HTML elements (except for the <!DO
 
 ### setHTML and set Template
 
+setHTML and set Template are data setting capabilities of HTML using the [Templating Language](https://handlebarsjs.com/guide/#what-is-handlebars).
+
 #### setHTML
 
-```js
-this.setData({html: I don't need no template})
-```
+The setHTML capability allows you to set and display data.
+
+This capability injects variable into a template.
+
+!!! Example
+    HTML Code:
+    ```js
+    <b style="color: red;">
+        Hi my name is {{name}} //{{}}➡️templating language
+    </b>
+    ```
+    HTML Output:
+    <span style="color:red">Hi my name is {{name}}</span>
+
+    setHTML Code:
+    ```js
+    this.setData({html: I don't need no template})
+    ```
+    
+    HTML Output:
+    I don't need no template
 
 #### set Template
 
+The set Template capability allow you to use it for dynamic HTML solutions like rendering or updating dynamic data.
+
+It uses a Template and an input object to generate HTML.
+
 It always reads from the default value.
 
-```js
-this.setData({html: {name: `Alice`}})
-```
+This capability will override the entire HTML text.
+
+!!! Example
+    HTML Code:
+    ```js
+    <b style="color: red;">
+        Hi my name is {{name}} //{{}}➡️templating language
+    </b>
+    ```
+    HTML Output:
+    <span style="color:red">Hi my name is {{name}}</span>
+
+    set Template Code:
+    ```js
+    this.setData({html: {name: `Alice`}}) // in the HTML field setting an object here
+    ```
+    
+    HTML Output:
+    <span style="color:red">Hi my name is Alice</span>
+
+This capability uses Handlebars to create the template.
+
+To know more about Handlebars [click here](https://handlebarsjs.com/guide/#html-escaping).
 
 ### Validation
 
