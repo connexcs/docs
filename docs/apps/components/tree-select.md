@@ -44,10 +44,10 @@ Unlike a standard dropdown menu with a flat list of options, a tree-select organ
 
 | **Name**| **Description**|**Parameters**|
 |---------|----------------|--------------|
-|`this.addClassName`|Add style class to a form item|`(fields: String, String[]; className: String)`|
-|`this.hide`|Hides the field|`(fields: String()`|
-|`this.show`|Displays the field|`(fields: String()`|
-|`this.disable`| Disable input field from user interaction|`(fields: String(), String[])`|
+|`this.addClassName`|Add style class to a form item|`(fields: String \| String[], className: String)`|
+|`this.hide`|Hides the field|`(fields: String \| String[])`|
+|`this.show`|Displays the field|`(fields: String \| String[])`|
+|`this.disable`| Disable input field from user interaction|`(fields: String \| String[])`|
 |`this.setData`|Set the data in the field|`(Value: Object)`|
 
 !!! Info

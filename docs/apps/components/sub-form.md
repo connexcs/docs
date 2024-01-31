@@ -42,7 +42,7 @@ Sub-form component, for list (array) type form data, uses Table layout, doesn't 
 ### Events
 
 | **Name**| **Description**|
-|----------------------|---------------------------------------------------------------------|
+|---------|----------------|
 |`onChange (element)`|The onChange event occurs when the value of a field is changed|
 |`onRowAdd (element)`|The onRowAdd event occurs when a row is added|
 |`onRowRemove (element)`|The onRowRemove event occurs when a row is removed|
@@ -52,12 +52,12 @@ Sub-form component, for list (array) type form data, uses Table layout, doesn't 
 
 | **Name**| **Description**|**Parameters**|
 |---------|----------------|--------------|
-|`this.addClassName`|Add style class to a form item|`(fields: String, String[]; className: String)`|
-|`this.removeClassName`|Remove style class from a form item|`(fields: String, String[]; className: String)`|
-|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String(), String[]; Object: Object)`|
-|`this.hide`|Hides the field|`(fields: String()`|
-|`this.show`|Displays the field|`(fields: String()`|
-| `this.disable`| Disable input field from user interaction|`(fields: String(), String[])`|
+|`this.addClassName`|Add style class to a form item|`(fields: String \| String[], className: String)`|
+|`this.removeClassName`|Remove style class from a form item|`(fields: String \| String[], className: String)`|
+|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String : Object)`|
+|`this.hide`|Hides the field|`(fields: String \| String[])`|
+|`this.show`|Displays the field|`(fields: String \| String[])`|
+|`this.disable`| Disable input field from user interaction|`(fields: String \| String[])`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.

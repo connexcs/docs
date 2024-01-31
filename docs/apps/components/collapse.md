@@ -6,7 +6,7 @@
 
 This feature is often used to organize lengthy or complex forms, making them easier to navigate and reducing visual clutter.
 
-<img src= "/apps/components/img/collapse1.png" width="500">
+<img src= "/apps/components/img/collapse1.png">
 
 ## Use Case
 
@@ -40,11 +40,11 @@ Some of the most common methods include:
 
 | **Name**| **Description**|**Parameters**|
 |---------|----------------|--------------|
-|`this.addClassName`|Add style class to a form item|`(fields: String, String[]; className: String)`|
-|`this.removeClassName`|Remove style class from a form item|`(fields: String, String[]; className: String)`|
-|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String, String[]; Object: Object)`|
-|`this.hide`|Hides the field|`(fields: String`|
-|`this.show`|Displays the field|`(fields: String)`|
+|`this.addClassName`|Add style class to a form item|`(fields: String \| String[], className: String)`|
+|`this.removeClassName`|Remove style class from a form item|`(fields: String \| String[], className: String)`|
+|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String : Object)`|
+|`this.hide`|Hides the field|`(fields: String \| String[])`|
+|`this.show`|Displays the field|`(fields: String \| String[])`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
@@ -100,7 +100,7 @@ Some of the most common methods include:
 
 | **Name**|**Description**|**Icon**|
 |---------|---------------|--------|
-|**ID**| The collapse compenent's unique identifier|<img src= "/apps/components/img/input_id.png">|
+|**ID**| The collapse component's unique identifier|<img src= "/apps/components/img/input_id.png">|
 |**Collapse Options**|Allows you to add/delete multiple Collapses|<img src= "/apps/components/img/collapse_collapseoptions.png">|
 |**Accordian Mode**|Enable this mode if you want to display only one Collaspse section at a time (this is helpful when you have to avoid clutter when you have multiple Collapse sections)|<img src= "/apps/components/img/collapse_accordionmode.png">
 |**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|

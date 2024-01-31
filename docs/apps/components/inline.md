@@ -23,10 +23,10 @@ The **Inline** layout approach allows for a more compact and organized form layo
 
 | **Name**| **Description**|**Parameters**|
 |---------|----------------|--------------|
-|`this.addClassName`|Add style class to a form item|`(fields: String, String[]; className: String)`|
-|`this.removeClassName`|Remove style class from a form item|`(fields: String, String[]; className: String)`|
-|`this.hide`|Hides the field|`(fields: String()`|
-|`this.show`|Displays the field|`(fields: String()`|
+|`this.addClassName`|Add style class to a form item|`(fields: String \| String[], className: String)`|
+|`this.removeClassName`|Remove style class from a form item|`(fields: String \| String[], className: String)`|
+|`this.hide`|Hides the field|`(fields: String \| String[])`|
+|`this.show`|Displays the field|`(fields: String \| String[])`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.

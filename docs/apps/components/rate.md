@@ -37,13 +37,13 @@ A **Rate** component allows users to express their level of satisfaction, prefer
 
 | **Name**| **Description**|**Parameters**|
 |---------|----------------|--------------|
-|`this.addClassName`|Add style class to a form item|`(fields: String, String[]; className: String)`|
-|`this.removeClassName`|Remove style class from a form item|`(fields: String, String[]; className: String)`|
-|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String(), String[]; Object: Object)`|
-|`this.getValues`|Get the values of all fields when values change|`Object`|
-|`this.hide`|Hides the field|`(fields: String()`|
-|`this.show`|Displays the field|`(fields: String()`|
-| `this.disable`| Disable input field from user interaction|`(fields: String(), String[])`|
+|`this.addClassName`|Add style class to a form item|`(fields: String \| String[], className: String)`|
+|`this.removeClassName`|Remove style class from a form item|`(fields: String \| String[], className: String)`|
+|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String : Object)`|
+|`this.getValues`|Get the values of all fields when values change|`() : Object`|
+|`this.hide`|Hides the field|`(fields: String \| String[])`|
+|`this.show`|Displays the field|`(fields: String \| String[])`|
+|`this.disable`| Disable input field from user interaction|`(fields: String \| String[])`|
 |`this.setData`|Set the data in the field|`(Value: Object)`|
 
 !!! Info

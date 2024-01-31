@@ -44,14 +44,14 @@ It offers a clear and efficient way for users to select one of two mutually excl
 
 | **Name**| **Description**|**Parameters**|
 |---------|----------------|--------------|
-|`this.addClassName`|Add style class to a form item|`(fields: String, String[]; className: String)`|
-|`this.removeClassName`|Remove style class from a form item|`(fields: String, String[]; className: String)`|
-|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String(), String[]; Object: Object)`|
-|`this.getValues`|Get the values of all fields when values change|`Object`|
-|`this.hide`|Hides the field|`(fields: String()`|
-|`this.show`|Displays the field|`(fields: String()`|
-| `this.disable`| Disable input field from user interaction|`(fields: String(), String[])`|
-|`this.getValue`|Get A Value From a component|`(fieldName: String()`|
+|`this.addClassName`|Add style class to a form item|`(fields: String \| String[], className: String)`|
+|`this.removeClassName`|Remove style class from a form item|`(fields: String \| String[], className: String)`|
+|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String : Object)`|
+|`this.getValues`|Get the values of all fields when values change|`() : Object`|
+|`this.hide`|Hides the field|`(fields: String \| String[])`|
+|`this.show`|Displays the field|`(fields: String \| String[])`|
+|`this.disable`| Disable input field from user interaction|`(fields: String \| String[])`|
+|`this.getValue`|Get A Value From a component|`(fieldName: String)`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
@@ -153,7 +153,7 @@ Form validation can be performed using a variety of methods, including:
 <img src= "/apps/components/img/cascader_validation.png">
 
 !!! Info
-    1. The **callback()function** is also called to verify success in the custom checkup method.
+    1. The **callback()function** is also called to verify success in the custom validation method.
 
 ## First time User?
 

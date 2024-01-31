@@ -50,15 +50,15 @@ You can use focus and blur events to perform a variety of actions, such as:
 
 | **Name**| **Description**|**Parameters**|
 |---------|----------------|--------------|
-|`this.addClassName`|Add style class to a form item|`(fields: String, String[]; className: String)`|
-|`this.removeClassName`|Remove style class from a form item|`(fields: String, String[]; className: String)`|
-|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String(), String[]; Object: Object)`|
-|`this.getValues`|Get the values of all fields when values change|`Object`|
-|`this.hide`|Hides the field|`(fields: String()`|
-|`this.show`|Displays the field|`(fields: String()`|
-|`this.disable`| Disable input field from user interaction|`(fields: String(), String[])`|
+|`this.addClassName`|Add style class to a form item|`(fields: String \| String[], className: String)`|
+|`this.removeClassName`|Remove style class from a form item|`(fields: String \| String[], className: String)`|
+|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String : Object)`|
+|`this.getValues`|Get the values of all fields when values change|`() : Object`|
+|`this.hide`|Hides the field|`(fields: String \| String[])`|
+|`this.show`|Displays the field|`(fields: String \| String[])`|
+|`this.disable`| Disable input field from user interaction|`(fields: String \| String[])`|
 |`this.setData`|Set the data in the field|`(Value: Object)`|
-|`this.getValue`|Get A Value From a component|`(fieldName: String()`|
+|`this.getValue`|Get A Value From a component|`(fieldName: String)`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
@@ -167,7 +167,7 @@ Form validation can be performed using a variety of methods, including:
 
 !!! Info
     1. **Regular expressions** should be wrapped with //, as in:/^1[3456789]\d{9}$/"
-    2. The **callback()function** is also called to verify success in the custom checkup method.
+    2. The **callback()function** is also called to verify success in the custom validation method.
 
 ## First time User?
 

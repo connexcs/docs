@@ -38,11 +38,11 @@
 
 | **Name**| **Description**|**Parameters**|
 |---------|----------------|--------------|
-|`this.addClassName`|Add style class to a form item|`(fields: String, String[]; className: String)`|
-|`this.removeClassName`|Remove style class from a form item|`(fields: String, String[]; className: String)`|
-|`this.hide`|Hides the field|`(fields: String()`|
-|`this.show`|Displays the field|`(fields: String()`|
-|`this.disable`| Disable input field from user interaction|`(fields: String(), String[])`|
+|`this.addClassName`|Add style class to a form item|`(fields: String \| String[], className: String)`|
+|`this.removeClassName`|Remove style class from a form item|`(fields: String \| String[], className: String)`|
+|`this.hide`|Hides the field|`(fields: String \| String[])`|
+|`this.show`|Displays the field|`(fields: String \| String[])`|
+|`this.disable`| Disable input field from user interaction|`(fields: String \| String[])`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
@@ -131,7 +131,7 @@ Form validation can be performed using a variety of methods, including:
 <img src= "/apps/components/img/time_validation.png">
 
 !!! Info
-    1. The **callback()function** is also called to verify success in the custom checkup method.
+    1. The **callback()function** is also called to verify success in the custom validation method.
 
 ## First time User?
 

@@ -6,7 +6,7 @@ A **Divider** in a page builder is a visual element that separates different sec
 
 It can be used to improve the readability and usability of forms by making it easier for users to scan the form and identify where different sections begin and end.
 
-<img src= "/apps/components/img/divider.png">
+<img src= "/apps/components/img/divider.png" width="800">
 
 ## Use Case
 
@@ -21,8 +21,8 @@ It can be used to improve the readability and usability of forms by making it ea
 
 | **Name**| **Description**|**Parameters**|
 |---------|----------------|--------------|
-|`this.hide`|Hides the field|`(fields: String(), String[])`|
-|`this.show`|Displays the field|`(fields: String(), String[])`|
+|`this.hide`|Hides the field|`(fields: String \| String[])`|
+|`this.show`|Displays the field|`(fields: String \| String[])`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.

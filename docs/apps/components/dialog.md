@@ -53,8 +53,8 @@ It typically provides a self-contained interface for collecting additional infor
 
 | **Name**| **Description**|**Parameters**|
 |---------|----------------|--------------|
-|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String(), String[]; Object: Object)`|
-|`this.getValue`|Get A Value From a component|`(fieldName: String()`|
+|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String : Object)`|
+|`this.getValue`|Get A Value From a component|`(fieldName: String)`|
 
 #### Steps to use the methods for the Page Builder components
 
@@ -93,7 +93,6 @@ It typically provides a self-contained interface for collecting additional infor
 |**Margin Top**|It defines the position of the dialog box from the top of the screen|<img src= "/apps/components/img/dialog_magintop.png">|
 |**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Data Binding** to connect the data to UI|<img src= "/apps/components/img/dialog_attributeaction.png">|
-
 
 ## First time User?
 

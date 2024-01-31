@@ -34,15 +34,15 @@
 
 | **Name**| **Description**|**Parameters**|
 |---------|----------------|--------------|
-|`this.addClassName`|Add style class to a form item|`(fields: String, String[]; className: String)`|
-|`this.removeClassName`|Remove style class from a form item|`(fields: String, String[]; className: String)`|
-|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String(), String[]; Object: Object)`|
-|`this.getValues`|Get the values of all fields when values change|`Object`|
-|`this.hide`|Hides the field|`(fields: String()`|
-|`this.show`|Displays the field|`(fields: String()`|
-| `this.disable`| Disable input field from user interaction|`(fields: String(), String[])`|
-|`this.setData`|Set the data in the field|`(Value: Object`|
-|`this.getValue`|Get A Value From a component|`(fieldName: String()`|
+|`this.addClassName`|Add style class to a form item|`(fields: String \| String[], className: String)`|
+|`this.removeClassName`|Remove style class from a form item|`(fields: String \| String[], className: String)`|
+|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String : Object)`|
+|`this.getValues`|Get the values of all fields when values change|`() : Object`|
+|`this.hide`|Hides the field|`(fields: String \| String[])`|
+|`this.show`|Displays the field|`(fields: String \| String[])`|
+|`this.disable`| Disable input field from user interaction|`(fields: String \| String[])`|
+|`this.getValue`|Get A Value From a component|`(fieldName: String)`|
+|`this.setData`|Set the data in the field|`(Value: Object)`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
@@ -120,7 +120,7 @@
 
 | **Name**|**Description**|**Icon**|
 |---------|---------------|--------|
-|**ID**| The data-grid compoent's unique identifier|<img src= "/apps/components/img/input_id.png">|
+|**ID**| The data-grid component's unique identifier|<img src= "/apps/components/img/input_id.png">|
 |**Width**| [**Optional**] Width of the field|<img src= "/apps/components/img/input_width.png">|
 |**Status Bar**|Displays information about the number of rows and columns|<img src= "/apps/components/img/datagrid_statusbar.png">|
 |**Side Bar**|Displays the side bar with Columns and Filters|<img src= "/apps/components/img/datagrid_sidebar.png">|
