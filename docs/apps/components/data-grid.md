@@ -34,10 +34,10 @@
 
 | **Name**| **Description**|**Parameters**|
 |---------|----------------|--------------|
-|`this.addClassName`|Add style class to a form item|`(fields: String \| String[], className: String)`|
+|`this.addClassName`|Add style class to a form item|`(fields: String &#124;  String[], className: String)`|
 |`this.removeClassName`|Remove style class from a form item|`(fields: String \| String[], className: String)`|
-|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String : Object)`|
-|`this.getValues`|Get the values of all fields when values change|`() : Object`|
+|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String) : Object`|
+|`this.getValues`|Gets the current values of all fields|`() : Object`|
 |`this.hide`|Hides the field|`(fields: String \| String[])`|
 |`this.show`|Displays the field|`(fields: String \| String[])`|
 |`this.disable`| Disable input field from user interaction|`(fields: String \| String[])`|
