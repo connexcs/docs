@@ -35,12 +35,12 @@
 | **Name**| **Description**|**Parameters**|
 |---------|----------------|--------------|
 |`this.addClassName`|Add style class to a form item|`(fields: String `&#124;`  String[], className: String)`|
-|`this.removeClassName`|Remove style class from a form item|`(fields: String \| String[], className: String)`|
+|`this.removeClassName`|Remove style class from a form item|`(fields: String `&#124;` String[], className: String)`|
 |`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String) : Object`|
 |`this.getValues`|Gets the current values of all fields|`() : Object`|
-|`this.hide`|Hides the field|`(fields: String \| String[])`|
-|`this.show`|Displays the field|`(fields: String \| String[])`|
-|`this.disable`| Disable input field from user interaction|`(fields: String \| String[])`|
+|`this.hide`|Hides the field|`(fields: String `&#124;` String[])`|
+|`this.show`|Displays the field|`(fields: String `&#124;` String[])`|
+|`this.disable`| Disable input field from user interaction|`(fields: String `&#124;` String[])`|
 |`this.getValue`|Get A Value From a component|`(fieldName: String)`|
 |`this.setData`|Set the data in the field|`(Value: Object)`|
 
@@ -56,7 +56,7 @@
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/check1.png">
+<img src= "/apps/components/img/datagrid12.png">
 
 !!! Example
     1. `this.addClassName(fields, className)`
@@ -125,7 +125,7 @@
 |**Status Bar**|Displays information about the number of rows and columns|<img src= "/apps/components/img/datagrid_statusbar.png">|
 |**Side Bar**|Displays the side bar with Columns and Filters|<img src= "/apps/components/img/datagrid_sidebar.png">|
 |**Enable Range Selection**|Enable to select multiple cells in the data-grid and it provides you with minimum value, maximum value, average, sum, count|<img src= "/apps/components/img/datagrid_rangeselection.png">|
-|**Suppress Context Menu**|When disabled, it enables the mouse right-click which has options like export into `.CSV` file or `Excel`, copy or copy with headers etc|<img src= "/apps/components/img/datagrid_suppress.png">|
+|**Suppress Context Menu**|When disabled, it disables the mouse right-click feature which has custom options like export into `.CSV` file or Excel, copy or copy with headers, etc. and instead the browser default and generic right-click options become available|<img src= "/apps/components/img/datagrid_suppress.png">|
 |**Context Menu**|You can select from various options to add to your context menu|<img src= "/apps/components/img/datagrid_contextmenu.png">|
 |**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** to action to hide the field|<img src= "/apps/components/img/datagrid_attributeaction.png">|
 
