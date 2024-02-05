@@ -40,8 +40,6 @@ The 3 types of Charts we use are:
 |`this.getValues`|Gets the current values of all fields|`() : Object`|
 |`this.hide`|Hides the field|`(fields: String`&#124;`String[])`|
 |`this.show`|Displays the field|`(fields: String`&#124;`String[])`|
-|`this.disable`| Disable charts from user interaction|`(fields: String`&#124;`String[])`|
-|`this.enable`| Enable charts from user interaction|`(fields: String`&#124;`String[])`|
 |`this.getValue`|Get A Value From a component|`(fieldName: String)`|
 |`this.setData`|Set the data in the field|`(Value: Object)`|
 

@@ -74,6 +74,8 @@ Some of the most common methods include:
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
     2. **Fields** refers to a **component ID** or a **list of component IDs**. You can fetch the ID from the **Component Attribute** panel in the Page Builder.
     3. Before using **this.show(fields)**, make sure the component is **hidden**. This can be done using **this.hide(fields)** or by **enabling** the **Hidden checkbox** in the Component Attribute panel.
+    4. Before using **this.enable(fields)**, make sure the component is **disabled**. This can be done using **this.disable(fields)** or by **enabling** the **Disabled checkbox** in the Component Attribute panel.
+
 
 #### Steps to use the methods for the Page Builder components
 
@@ -148,8 +150,6 @@ Some of the most common methods include:
          {
          "checkbox_g0x4pt54z": "Option 1", "Option 2",}
         );
-
-**example of refreshfield**
 
 !!! info Add multiple classes
     Use the following syntax to add multiple classes to a component:

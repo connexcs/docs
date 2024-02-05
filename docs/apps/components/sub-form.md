@@ -58,7 +58,7 @@ Sub-form component, for list (array) type form data, uses Table layout, doesn't 
 |`this.hide`|Hides the field|`(fields: String`&#124;`String[])`|
 |`this.show`|Displays the field|`(fields: String`&#124;`String[])`|
 |`this.disable`| Disable sub-form field from user interaction|`(fields: String`&#124;`String[])`|
-|`this.ebnable`| Enable sub-form field from user interaction|`(fields: String`&#124;`String[])`|
+|`this.enable`| Enable sub-form field from user interaction|`(fields: String`&#124;`String[])`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
