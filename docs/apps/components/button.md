@@ -54,14 +54,14 @@ Here are some examples of how interactivity can be implemented for **Button** co
 
 | **Name**| **Description**|**Parameters**|
 |---------|----------------|--------------|
-|`this.addClassName`|Add style class to a form item|`(fields: String `&#124;` String[], className: String)`|
-|`this.removeClassName`|Remove style class from a form item|`(fields: String `&#124;` String[], className: String)`|
+|`this.addClassName`|Add style class to a form item|`(fields: String`&#124;`String[], className: String)`|
+|`this.removeClassName`|Remove style class from a form item|`(fields: String`&#124;`String[], className: String)`|
 |`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String) : Object`|
 |`this.getValues`|Gets the current values of all fields|`() : Object`|
-|`this.hide`|Hides the field|`(fields: String `&#124;` String[])`|
-|`this.show`|Displays the field|`(fields: String `&#124;` String[])`|
-|`this.disable`| Disable button from user interaction|`(fields: String `&#124;` String[])`|
-|`this.enable`| Enable button from user interaction|`(fields: String `&#124;` String[])`|
+|`this.hide`|Hides the field|`(fields: String`&#124;`String[])`|
+|`this.show`|Displays the field|`(fields: String`&#124;`String[])`|
+|`this.disable`| Disable button from user interaction|`(fields: String`&#124;`String[])`|
+|`this.enable`| Enable button from user interaction|`(fields: String`&#124;`String[])`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.

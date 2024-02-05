@@ -58,13 +58,14 @@ Some of the most common methods include:
 
 | **Name**| **Description**|**Parameters**|
 |---------|----------------|--------------|
-|`this.addClassName`|Add style class to a form item|`(fields: String \| String[], className: String)`|
-|`this.removeClassName`|Remove style class from a form item|`(fields: String \| String[], className: String)`|
-|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String : Object)`|
-|`this.getValues`|Get the values of all fields when values change|`() : Object`|
-|`this.hide`|Hides the field|`(fields: String \| String[])`|
-|`this.show`|Displays the field|`(fields: String \| String[])`|
-|`this.disable`| Disable input field from user interaction|`(fields: String \| String[])`|
+|`this.addClassName`|Add style class to a form item|`(fields: String`&#124;`String[], className: String)`|
+|`this.removeClassName`|Remove style class from a form item|`(fields: String`&#124;`String[], className: String)`|
+|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String) : Object`|
+|`this.getValues`|Gets the current values of all fields|`() : Object`|
+|`this.hide`|Hides the field|`(fields: String`&#124;`String[])`|
+|`this.show`|Displays the field|`(fields: String`&#124;`String[])`|
+|`this.disable`| Disable checkbox from user interaction|`(fields: String`&#124;`String[])`|
+|`this.enable`| Enable checkbox from user interaction|`(fields: String`&#124;`String[])`|
 |`this.getValue`|Get A Value From a component|`(fieldName: String)`|
 |`this.setData`|Set the data in the field|`(Value: Object)`|
 |`this.refreshFieldDataSource`|Refresh the datasource data bound to the whole page|
@@ -124,24 +125,37 @@ Some of the most common methods include:
         this.disable(['checkbox_g0x4pt54z'])
         ```
     
-    7. `this.getValue('fieldName')`
+    7. `this.enable(['fields'])`
+        ```js
+        this.enable(['checkbox_g0x4pt54z'])
+        ```
+    
+    8. `this.getValue('fieldName')`
         ```js
         var checkname = this.getValue('checkbox_g0x4pt54z');
         console.log('getValue', checkname);
         ```
     
-    8. `this.getComponent('component_ID')`
+    9. `this.getComponent('component_ID')`
         ```js
         var checkname = this.getComponent('checkbox_g0x4pt54z');
         console.log('getComponent', checkname);
         ```
     
-    9. `this.setData(Value)`
+    10. `this.setData(Value)`
         ```js
         this.setData(
          {
          "checkbox_g0x4pt54z": "Option 1", "Option 2",}
         );
+
+**example of refreshfield**
+
+!!! info Add multiple classes
+    Use the following syntax to add multiple classes to a component:
+    ```js
+    this.addClassName('componentID', 'class1', 'class2')
+    ```
 
 ## Config
 

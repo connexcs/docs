@@ -37,13 +37,14 @@ It's like a set of switches where only one can be "on" at any given moment.
 
 | **Name**| **Description**|**Parameters**|
 |---------|----------------|--------------|
-|`this.addClassName`|Add style class to a form item|`(fields: String \| String[], className: String)`|
-|`this.removeClassName`|Remove style class from a form item|`(fields: String \| String[], className: String)`|
-|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String : Object)`|
-|`this.getValues`|Get the values of all fields when values change|`() : Object`|
-|`this.hide`|Hides the field|`(fields: String \| String[])`|
-|`this.show`|Displays the field|`(fields: String \| String[])`|
-|`this.disable`| Disable input field from user interaction|`(fields: String \| String[])`|
+|`this.addClassName`|Add style class to a form item|`(fields: String`&#124;`String[], className: String)`|
+|`this.removeClassName`|Remove style class from a form item|`(fields: String`&#124;`String[], className: String)`|
+|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String) : Object)`|
+|`this.getValues`|Gets the current values of all fields|`() : Object`|
+|`this.hide`|Hides the field|`(fields: String`&#124;`String[])`|
+|`this.show`|Displays the field|`(fields: String`&#124;`String[])`|
+|`this.disable`| Disable radio field from user interaction|`(fields: String`&#124;`String[])`|
+|`this.enable`| Enable radio field from user interaction|`(fields: String`&#124;`String[])`|
 |`this.getValue`|Get A Value From a component|`(fieldName: String)`|
 |`this.setData`|Set the data in the field|`(Value: Object)`|
 |`this.refreshFieldDataSource`|Refresh the datasource data bound to the form field|
@@ -53,7 +54,8 @@ It's like a set of switches where only one can be "on" at any given moment.
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
     2. **Fields** refers to a **component ID** or a **list of component IDs**. You can fetch the ID from the **Component Attribute** panel in the Page Builder.
-    3. Before using **this.show(fields)**, make sure the component is **hidden**. This can be done using **this.hide(fields)** or by **enabling** the **Hidden checkbox** in the Component Attribute panel
+    3. Before using **this.show(fields)**, make sure the component is **hidden**. This can be done using **this.hide(fields)** or by **enabling** the **Hidden checkbox** in the Component Attribute panel.
+    4. Before using **this.enable(fields)**, make sure the component is **disabled**. This can be done using **this.disable(fields)** or by **enabling** the **Disabled checkbox** in the Component Attribute panel.
 
 #### Steps to use the methods for the Page Builder components
 
@@ -105,23 +107,36 @@ It's like a set of switches where only one can be "on" at any given moment.
         this.disable(['radio_mv3o2rpn'])
         ```
     
-    7.  `this.getValue('fieldName')`
+    7. `this.enable(['fields'])`
+        ```js
+        this.enable(['radio_mv3o2rpn'])
+        ```
+    
+    8.  `this.getValue('fieldName')`
         ```js
         var radioname = this.getValue('radio_mv3o2rpn');
         console.log('getValue', radioname);
         ```
 
-    8.  `this.getComponent('component_ID')`
+    9.  `this.getComponent('component_ID')`
         ```js
         var radioname = this.getComponent('radio_mv3o2rpn');
         console.log('getComponent', radioname);
         ```
 
-    9.  `this.setData(Value)`
+    10.  `this.setData(Value)`
         ```js
         this.setData(
          {"radio_mv3o2rpn": "Option 3",});
         ```
+
+**example of refreshfield and getfield**
+
+!!! info Add multiple classes
+    Use the following syntax to add multiple classes to a component:
+    ```js
+    this.addClassName('componentID', 'class1', 'class2')
+    ```
 
 ## Config
 

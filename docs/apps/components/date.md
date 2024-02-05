@@ -91,13 +91,14 @@ Examples may include:
 
 | **Name**| **Description**|**Parameters**|
 |---------|----------------|--------------|
-|`this.addClassName`|Add style class to a form item|`(fields: String \| String[], className: String)`|
-|`this.removeClassName`|Remove style class from a form item|`(fields: String \| String[], className: String)`|
-|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String : Object)`|
-|`this.getValues`|Get the values of all fields when values change|`() : Object)`|
-|`this.hide`|Hides the field|`(fields: String \| String[])`|
-|`this.show`|Displays the field|`(fields: String \| String[])`|
-|`this.disable`| Disable input field from user interaction|`(fields: String \| String[])`|
+|`this.addClassName`|Add style class to a form item|`(fields: String`&#124;`String[], className: String)`|
+|`this.removeClassName`|Remove style class from a form item|`(fields: String`&#124;`String[], className: String)`|
+|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String) : Object`|
+|`this.getValues`|Gets the current values of all fields|`() : Object)`|
+|`this.hide`|Hides the field|`(fields: String`&#124;`String[])`|
+|`this.show`|Displays the field|`(fields: String`&#124;`String[])`|
+|`this.disable`| Disable date field from user interaction|`(fields: String`&#124;`String[])`|
+|`this.enable`| Enable date field from user interaction|`(fields: String`&#124;`String[])`|
 |`this.getValue`|Get A Value From a component|`(fieldName: String)`|
 |`this.setData`|Set the data in the field|`(Value: Object)`|
 
@@ -156,13 +157,18 @@ Examples may include:
         this.disable(['date_0gprgpvi'])
         ```
     
-    7. `this.getValue('fieldName')`
+    7. `this.enable(['fields'])`
+        ```js
+        this.enable(['date_0gprgpvi'])
+        ```
+
+    8. `this.getValue('fieldName')`
         ```js
         var datename = this.getValue('date_0gprgpvi');
         console.log('getValue', datename);
         ```
     
-    8.  `this.setData(Value)`
+    9.  `this.setData(Value)`
         ```js
         this.setData(
          {
@@ -170,11 +176,17 @@ Examples may include:
         );
         ```
     
-    9.  `this.getComponent('component_ID')`
+    10.  `this.getComponent('component_ID')`
         ```js
         var datename = this.getComponent('date_0gprgpvi');
         console.log('getComponent', datename);
         ```
+
+!!! info Add multiple classes
+    Use the following syntax to add multiple classes to a component:
+    ```js
+    this.addClassName('componentID', 'class1', 'class2')
+    ```
 
 ## Config
 
