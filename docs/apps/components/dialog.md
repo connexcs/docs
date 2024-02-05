@@ -53,8 +53,9 @@ It typically provides a self-contained interface for collecting additional infor
 
 | **Name**| **Description**|**Parameters**|
 |---------|----------------|--------------|
-|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String : Object)`|
+|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String) : Object`|
 |`this.getValue`|Get A Value From a component|`(fieldName: String)`|
+|`myDialog.open()`|Opens the dialog box on the page|
 
 #### Steps to use the methods for the Page Builder components
 
@@ -76,6 +77,12 @@ It typically provides a self-contained interface for collecting additional infor
         ```js
         var dialogname = this.getValue('dialog_icubvv8x');
         console.log('getValue', dialogname);
+        ```
+    
+    3. `myDialog.open()`
+        ```js
+        var myDialog = this.getComponent('dialog_icubvv8x')
+        myDialog.open()
         ```
 
 ## Config

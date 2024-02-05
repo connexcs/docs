@@ -71,7 +71,7 @@ Here's a general approach to integrating interactivity:
 ### Events
 
 | **Name**| **Description**|
-|----------------------|---------------------------------------------------------------------|
+|---------|----------------|
 | `onChange (element)`| The onChange event occurs when the value of a field is changed|
 | `onFocus (element)`| The onfocus event occurs when a field gets focus|
 | `onBlur (element)`| The onblur event occurs when a field loses focus|
@@ -79,15 +79,15 @@ Here's a general approach to integrating interactivity:
 ### Methods
 
 | **Name**| **Description**|**Parameters**|
-|----------------------|---------------------------------------------------------------------|----|
-|`this.addClassName`|Add style class to a form item|`(fields: String \| String[], className: String)`|
-|`this.removeClassName`|Remove style class from a form item|`(fields: String \| String[], className: String)`|
-|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String : Object)`|
-|`this.getValues`|Get the values of all fields when values change|`() : Object`|
-|`this.hide`|Hides the field|`(fields: String \| String[])`|
-|`this.show`|Displays the field|`(fields: String \| String[])`|
-|`this.disable`| Disable input field from user interaction|`(fields: String \| String[])`|
-|`this.setData`|Set the data in the field|`(Value: Object)`|
+|---------|----------------|--------------|
+|`this.addClassName`|Add style class to a form item|`(fields: String`&#124;`String[], className: String)`|
+|`this.removeClassName`|Remove style class from a form item|`(fields: String `&#124;`String[], className: String)`|
+|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String) : Object`|
+|`this.getValues`|Gets the current values of all fields|`() : Object`|
+|`this.hide`|Hides the field|`(fields: String `&#124;`String[])`|
+|`this.show`|Displays the field|`(fields: String`&#124;`String[])`|
+|`this.disable`| Disable cascader from user interaction|`(fields: String`&#124;`String[])`|
+|`this.enable`| Enable cascader from user interaction|`(fields: String`&#124;`String[])`|
 |`this.refreshFieldDataSource`|Refresh the datasource data bound to the whole page|
 
 !!! Info
@@ -122,33 +122,32 @@ Here's a general approach to integrating interactivity:
         this.removeClassName('cascader_ccj8m3in', 'abc')
         ```
     
-    3. `this.getValue(fieldName)`
-        ```js
-        var cascadername = this.getValue('cascader_ccj8m3in');
-        console.log('getValue', cascadername);
-        ```
-    
-    4. `this.getValues(fieldName)`
+    3. `this.getValues(fieldName)`
         ```js
         var data = this.getValues();
         console.log(data);
         ```
     
-    5. `this.hide(fields)`
+    4. `this.hide(fields)`
         ```js
         var fields= ['cascader_ccj8m3in']
         this.hide(fields)
         ```
     
-    6. `this.show(fields)`
+    5. `this.show(fields)`
         ```js
         var fields= ['cascader_ccj8m3in']
         this.show(fields)
         ```
     
-    7. `this.disable(['fields'])`
+    6. `this.disable(['fields'])`
         ```js
         this.disable(['cascader_ccj8m3in'])
+        ```
+    
+    7. `this.enable(['fields'])`
+        ```js
+        this.enable(['cascader_ccj8m3in'])
         ```
     
     8. `this.getComponent('component_ID')`

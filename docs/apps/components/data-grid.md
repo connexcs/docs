@@ -34,13 +34,8 @@
 
 | **Name**| **Description**|**Parameters**|
 |---------|----------------|--------------|
-|`this.addClassName`|Add style class to a form item|`(fields: String `&#124;`  String[], className: String)`|
-|`this.removeClassName`|Remove style class from a form item|`(fields: String `&#124;` String[], className: String)`|
 |`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String) : Object`|
 |`this.getValues`|Gets the current values of all fields|`() : Object`|
-|`this.hide`|Hides the field|`(fields: String `&#124;` String[])`|
-|`this.show`|Displays the field|`(fields: String `&#124;` String[])`|
-|`this.disable`| Disable input field from user interaction|`(fields: String `&#124;` String[])`|
 |`this.getValue`|Get A Value From a component|`(fieldName: String)`|
 |`this.setData`|Set the data in the field|`(Value: Object)`|
 
@@ -59,62 +54,50 @@
 <img src= "/apps/components/img/datagrid12.png">
 
 !!! Example
-    1. `this.addClassName(fields, className)`
-          * Go to Form Attribute :material-menu-right: Style Sheets :material-menu-right: add the class
-            ```
-            .abc{ // abc is the class name
-            background-color: red;
-            }
-            ```
-          * Follow the steps mentioned above, under Steps to use the methods for the Page Builder components
-          * ```
-            this.addClassName('aggrid_nd93m43c', 'abc')
-            ```
 
-    2. `this.removeClassName(fields, className)`
-        ```js
-        this.removeClassName('aggrid_nd93m43c', 'abc')
-        ```
-    
-    3. `this.getValue(fieldName)`
+    1. `this.getValue(fieldName)`
         ```js
         var dataname = this.getValue('aggrid_nd93m43c');
         console.log('getValue', dataname);
         ```
     
-    4. `this.getValues()`
+    2. `this.getValues()`
         ```js
         var data = this.getValues();
         console.log(data);
         ```
     
-    5. `this.hide(fields)`
-        ```js
-        var fields= ['aggrid_nd93m43c']
-        this.hide(fields)
-        ```
-    
-    6. `this.show(fields)`
-        ```js
-        var fields= ['aggrid_nd93m43c']
-        this.show(fields)
-        ```
-    
-    7. `this.disable(['fields'])`
-        ```js
-        this.disable(['aggrid_nd93m43c'])
-        ```
-    
-    8.  `this.getValue('fieldName')`
-        ```js
-        var dataname = this.getValue('aggrid_nd93m43c');
-        console.log('getValue', datanamee);
-        ```
-    9. `this.getComponent('component_ID')`
+    3. `this.getComponent('component_ID')`
         ```js
         var dataname = this.getComponent('aggrid_nd93m43c');
         console.log('getComponent', dataname);
         ```
+    
+    4. `this.setData
+        ```js
+        this.setData(
+        {
+    	"grid_qwer": [
+		{
+			"make": "suzuki",
+			"model": "Celica",
+			"price": 350000,
+			"date": "2019-01-01"
+		},
+		{
+			"make": "audi",
+			"model": "Mondeo",
+			"price": 42000,
+        }
+        ]
+        }
+        )
+
+!!! info Add multiple classes
+    Use the following syntax to add multiple classes to a component:
+    ```js
+    this.addClassName('componentID', 'class1', 'class2')
+    ```
 
 ## Config
 
@@ -126,8 +109,8 @@
 |**Side Bar**|Displays the side bar with Columns and Filters|<img src= "/apps/components/img/datagrid_sidebar.png">|
 |**Enable Range Selection**|Enable to select multiple cells in the data-grid and it provides you with minimum value, maximum value, average, sum, count|<img src= "/apps/components/img/datagrid_rangeselection.png">|
 |**Suppress Context Menu**|When disabled, it disables the mouse right-click feature which has custom options like export into `.CSV` file or Excel, copy or copy with headers, etc. and instead the browser default and generic right-click options become available|<img src= "/apps/components/img/datagrid_suppress.png">|
-|**Context Menu**|You can select from various options to add to your context menu|<img src= "/apps/components/img/datagrid_contextmenu.png">|
-|**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** to action to hide the field|<img src= "/apps/components/img/datagrid_attributeaction.png">|
+|**Context Menu**|You can select from various options to add to your context menu. This option is ONLY effective if suppress Context Menu is Disabled|<img src= "/apps/components/img/datagrid_contextmenu.png">|
+|**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** action to hide the field|<img src= "/apps/components/img/datagrid_attributeaction.png">|
 
 We're talking about **Column Config** separately as it's a comprehensive component. Click on `+` to add a new column.
 
@@ -135,7 +118,7 @@ We're talking about **Column Config** separately as it's a comprehensive compone
       * **Field**: Write the Field name.
       * **Title**: Give the Title to your column.
       * **Hide**: Toggle this option to either hide or show the column.
-      * **Sortable**: Enable to sort the columns
+      * **Sortable**: Enable to allow sorting of the table rows by this column.
       * **Checkbox Selection**: Allow users to choose multiple choices from a list.
       * **Cell Data Type**: Choose data type from various options like Auto, Text, Number, Boolean, Date, Date String.
       * **Auto Height**: Automatically adjusts the height of the column.
@@ -166,16 +149,16 @@ It allows you to customize the appearance of data to improve readability, highli
 <img src= "/apps/components/img/datagrid_valueformat.png" width="400">
 
 4.**Display format**
-   
+
    * **Format Type**: You can select the format options for a column from Date, Currency, Duration, Percent from Decimal, Percent from Number, Decimal, Second, Bytes.
-   
-   * **Link**: which is used to link from one page to another.
+
+   * **Link**:This property is used to turn the values in the column into links that emit the onLinkClicked event.
 
 <img src= "/apps/components/img/datagrid_displayformat.png" width="400">
 
 5.**Header**
 
-   * **Header Checkbox Selection**: a single checkbox, typically placed in the header row, allows you to select all rows (or filtered/current page rows) in the grid with a single click.
+   * **Header Checkbox Selection**: Refers to a feature in data tables or grids that allows you to select all or multiple rows by clicking a checkbox in the header row.
 
    * **Wrap Header Text**:Allows the text in header cells to automatically wrap onto multiple lines if it exceeds the available space.
 
@@ -190,15 +173,15 @@ It allows you to customize the appearance of data to improve readability, highli
 <img src= "/apps/components/img/datagrid_header.png" width="400">
 
 7.**Charts**
-   
+
    * **Charts Data Type**:
        
        * Excluded: Data in columns marked as "excluded" aren't included in the visual representation of the chart.
-       
+
        * Category: Data in columns marked as "category" are used to group data points into distinct categories or segments.
-       
+
        * Series: Data in columns marked as "series" create separate lines or sets of data points within the chart, often for comparison purposes.
-       
+
        * Time: Data in columns marked as "time" represent temporal information, often used for time-series charts that track trends or changes over time.
 
 <img src= "/apps/components/img/datagrid_charts.png" width="400">

@@ -48,13 +48,13 @@ Some examples of how card components can be made interactive include:
 
 | **Name**| **Description**|**Parameters**|
 |---------|----------------|--------------|
-|`this.addClassName`|Add style class to a form item|`(fields: String \| String[], className: String)`|
-|`this.removeClassName`|Remove style class from a form item|`(fields: String \| String[], className: String)`|
-|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String : Object)`|
+|`this.addClassName`|Add style class to a form item|`(fields: String `&#124;` String[], className: String)`|
+|`this.removeClassName`|Remove style class from a form item|`(fields: String `&#124;` String[], className: String)`|
+|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String) : Object`|
 |`this.getValue`|Get A Value From a component|`(fieldName: String)`|
-|`this.getValues`|Get the values of all fields when values change|`() : Object`|
-|`this.hide`|Hides the field|`(fields: String \| String[])`|
-|`this.show`|Displays the field|`(fields: String \| String[])`|
+|`this.getValues`|Gets the current values of all fields|`() : Object`|
+|`this.hide`|Hides the field|`(fields: String `&#124;` String[])`|
+|`this.show`|Displays the field|`(fields: String `&#124;` String[])`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
@@ -114,6 +114,12 @@ Some examples of how card components can be made interactive include:
         var cardname = this.getComponent('card_khlorb9y');
         console.log('getComponent', cardname);
         ```
+
+!!! info Add multiple classes
+    Use the following syntax to add multiple classes to a component:
+    ```js
+    this.addClassName('componentID', 'class1', 'class2')
+    ```
 
 ## Config
 

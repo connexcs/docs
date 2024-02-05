@@ -54,13 +54,14 @@ Here are some examples of how interactivity can be implemented for **Button** co
 
 | **Name**| **Description**|**Parameters**|
 |---------|----------------|--------------|
-|`this.addClassName`|Add style class to a form item|`(fields: String \| String[], className: String)`|
-|`this.removeClassName`|Remove style class from a form item|`(fields: String \| String[], className: String)`|
-|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String : Object)`|
-|`this.getValues`|Get the values of all fields when values change|`() : Object`|
-|`this.hide`|Hides the field|`(fields: String \| String[])`|
-|`this.show`|Displays the field|`(fields: String \| String[])`|
-|`this.disable`| Disable input field from user interaction|`(fields: String \| String[])`|
+|`this.addClassName`|Add style class to a form item|`(fields: String `&#124;` String[], className: String)`|
+|`this.removeClassName`|Remove style class from a form item|`(fields: String `&#124;` String[], className: String)`|
+|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String) : Object`|
+|`this.getValues`|Gets the current values of all fields|`() : Object`|
+|`this.hide`|Hides the field|`(fields: String `&#124;` String[])`|
+|`this.show`|Displays the field|`(fields: String `&#124;` String[])`|
+|`this.disable`| Disable button from user interaction|`(fields: String `&#124;` String[])`|
+|`this.enable`| Enable button from user interaction|`(fields: String `&#124;` String[])`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
@@ -99,25 +100,40 @@ Here are some examples of how interactivity can be implemented for **Button** co
         var data = this.getValues();
         console.log(data);
         ```
+    
     4. `this.hide(fields)`
         ```js
         var fields= ['button_815t5dfs']
         this.hide(fields)
         ```
+    
     5. `this.show(fields)`
         ```js
         var fields= ['button_815t5dfs']
         this.show(fields)
         ```
+    
     6. `this.disable(['fields'])`
         ```js
         this.disable(['button_6ytj0ne9'])
         ```
+    
     7. `this.getComponent('component_ID')`
         ```js
         var butonname = this.getComponent('button_815t5dfs');
         console.log('getComponent', buttonname);
         ```
+    
+    8. `this.enable(['fields'])`
+        ```js
+        this.enable(['button_6ytj0ne9'])
+        ```
+
+!!! info Add multiple classes
+    Use the following syntax to add multiple classes to a component:
+    ```js
+    this.addClassName('componentID', 'class1', 'class2')
+    ```
 
 ## Config
 

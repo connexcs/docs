@@ -35,9 +35,9 @@ You would need to make a custom alert element and include event listeners in it 
 ### Methods
 
 | **Name**| **Description**|**Parameters**|
-|---------|----------------|------------|
-|`this.hide`|Hides the field|`(fields: String \| String[])`|
-|`this.show`|Displays the field|`(fields: String \| String[])`|
+|---------|----------------|--------------|
+|`this.hide`|Hides the field|`(fields: String `&#124;` String[])`|
+|`this.show`|Displays the field|`(fields: String `&#124;` String[])`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
