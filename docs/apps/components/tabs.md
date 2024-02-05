@@ -43,19 +43,20 @@ Each tab acts as a dedicated space for specific information, guiding users throu
 
 | **Name**| **Description**|**Parameters**|
 |---------|----------------|--------------|
-|`this.addClassName`|Add style class to a form item|`(fields: String \| String[], className: String)`|
-|`this.removeClassName`|Remove style class from a form item|`(fields: String \| String[], className: String)`|
-|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String : Object)`|
-|`this.hide`|Hides the field|`(fields: String \| String[])`|
-|`this.show`|Displays the field|`(fields: String \| String[]`|
-|`this.disable`| Disable input field from user interaction|`(fields: String \| String[])`|
+|`this.addClassName`|Add style class to a form item|`(fields: String`&#124;`String[], className: String)`|
+|`this.removeClassName`|Remove style class from a form item|`(fields: String`&#124;`String[], className: String)`|
+|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String) : Object`|
+|`this.hide`|Hides the field|`(fields: String`&#124;`String[])`|
+|`this.show`|Displays the field|`(fields: String`&#124;`String[]`|
+|`this.disable`| Disable input field from user interaction|`(fields: String`&#124;`String[])`|
 |`this.getValue`|Get A Value From a component|`(fieldName: String)`|
-|`this.getValues`|Get the values of all fields when values change|`() : Object`|
+|`this.getValues`|Gets the current values of all fields|`() : Object`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
     2. **Fields** refers to a **component ID** or a **list of component IDs**. You can fetch the ID from the **Component Attribute** panel in the Page Builder.
     3. Before using **this.show(fields)**, make sure the component is **hidden**. This can be done using **this.hide(fields)** or by **enabling** the **Hidden checkbox** in the Component Attribute panel.
+    4. Before using **this.enable(fields)**, make sure the component is **disabled**. This can be done using **this.disable(fields)** or by **enabling** the **Disabled checkbox** in the Component Attribute panel.
 
 #### Steps to use the methods for the Page Builder components
 
@@ -65,7 +66,6 @@ Each tab acts as a dedicated space for specific information, guiding users throu
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
 <img src= "/apps/components/img/check1.png">
-
 
 !!! Example
     1. `this.addClassName(fields, className)`
@@ -108,17 +108,27 @@ Each tab acts as a dedicated space for specific information, guiding users throu
         this.disable(['tabs_8r5c1t2n'])
         ```
     
-    7.  `this.getValue('fieldName')`
+    7. `this.enable(['fields'])`
+        ```js
+        this.enable(['tabs_8r5c1t2n'])
+        ```
+    
+    8.  `this.getValue('fieldName')`
         ```js
         var tabsname = this.getValue('tabs_8r5c1t2n');
         console.log('getValue', tabsname);
         ```
     
-    8.  `this.getComponent('component_ID')`
+    9.  `this.getComponent('component_ID')`
         ```js
         var tabsname = this.getComponent('tabs_8r5c1t2n');
         console.log('getComponent', tabsname);
         ```
+!!! info Add multiple classes
+    Use the following syntax to add multiple classes to a component:
+    ```js
+    this.addClassName('componentID', 'class1', 'class2')
+    ```
 
 ## Config
 
@@ -129,7 +139,7 @@ Each tab acts as a dedicated space for specific information, guiding users throu
 |**Tab Position**|Choose the tabs from **Top**, **Left** or **Right** or **Bottom**|<img src= "/apps/components/img/tabs_type.png">|
 |**Tab Options**|Choose the number of tabs you wish to have in the form|<img src= "/apps/components/img/tabs_options.png">|
 |**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
-|**Attribute Action**| Enable **Hidden** to action to hide the field|<img src= "/apps/components/img/alert_arrtibuteaction.png">|
+|**Attribute Action**| Enable **Hidden** action to hide the field|<img src= "/apps/components/img/alert_arrtibuteaction.png">|
 
 ## First time User?
 

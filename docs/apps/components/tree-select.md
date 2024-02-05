@@ -44,16 +44,18 @@ Unlike a standard dropdown menu with a flat list of options, a tree-select organ
 
 | **Name**| **Description**|**Parameters**|
 |---------|----------------|--------------|
-|`this.addClassName`|Add style class to a form item|`(fields: String \| String[], className: String)`|
-|`this.hide`|Hides the field|`(fields: String \| String[])`|
-|`this.show`|Displays the field|`(fields: String \| String[])`|
-|`this.disable`| Disable input field from user interaction|`(fields: String \| String[])`|
+|`this.addClassName`|Add style class to a form item|`(fields: String`&#124;`String[], className: String)`|
+|`this.hide`|Hides the field|`(fields: String`&#124;`String[])`|
+|`this.show`|Displays the field|`(fields: String`&#124;`String[])`|
+|`this.disable`| Disable tree-select field from user interaction|`(fields: String`&#124;`String[])`|
+|`this.enable`| Enable tree-select field from user interaction|`(fields: String`&#124;`String[])`|
 |`this.setData`|Set the data in the field|`(Value: Object)`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
     2. **Fields** refers to a **component ID** or a **list of component IDs**. You can fetch the ID from the **Component Attribute** panel in the Page Builder.
     3. Before using **this.show(fields)**, make sure the component is **hidden**. This can be done using **this.hide(fields)** or by **enabling** the **Hidden checkbox** in the Component Attribute panel.
+    4. Before using **this.enable(fields)**, make sure the component is **disabled**. This can be done using **this.disable(fields)** or by **enabling** the **Disabled checkbox** in the Component Attribute panel.
 
 #### Steps to use the methods for the Page Builder components
 
@@ -94,11 +96,22 @@ Unlike a standard dropdown menu with a flat list of options, a tree-select organ
         this.disable(['treeselect_4xgiru3n'])
         ```
     
-    5. `this.setData(Value)`
+    5. `this.enable(['fields'])`
+        ```js
+        this.enable(['treeselect_4xgiru3n'])
+        ```
+    
+    6. `this.setData(Value)`
         ```js
         this.setData(
         {"treeselect_4xgiru3n": "Option 2",})
         ```
+
+!!! info Add multiple classes
+    Use the following syntax to add multiple classes to a component:
+    ```js
+    this.addClassName('componentID', 'class1', 'class2')
+    ```
 
 ## Config
 
@@ -118,7 +131,7 @@ Unlike a standard dropdown menu with a flat list of options, a tree-select organ
 |**Option**|Choose either **Static** or **Dynamic** way of adding data to the options of the Tree Select <br><br>**Static data** refers to a fixed set of options that are pre-defined and loaded into the Tree Select at the time of initialization</br></br> **Dynamic data** are options fetched as needed from sources like databases or APIs. The Tree Select updates choices based on user selections. You select from **Data source** which refers to the origin of the data; **Function** which refers to the code that manipulates the data, and **Assigned Value** which refers to the specific value stored or associated with a data element|<img src= "/apps/components/img/checkbox_static.png"> <img src= "/apps/components/img/checkbox_dynamic.png">|
 |**Default Value**| The default value which is filled in the field before the user changes it|<img src= "/apps/components/img/treeselect_default.png">|
 |**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
-|**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** to action to hide the field. <br> Enable **Disabled** action to make the field unusable. <br>Enable **Show Clear button** action to make the clear button visible.|<img src= "/apps/components/img/treeselect_attributionaction.png">|
+|**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** action to hide the field. <br> Enable **Disabled** action to make the field unusable. <br>Enable **Show Clear button** action to make the clear button visible.|<img src= "/apps/components/img/treeselect_attributionaction.png">|
 
 ## First time User?
 

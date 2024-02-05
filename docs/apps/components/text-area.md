@@ -38,18 +38,20 @@ The **Text-Area** element allows users to write freely across multiple lines, id
 
 | **Name**| **Description**|**Parameters**|
 |---------|----------------|--------------|
-|`this.addClassName`|Add style class to a form item|`(fields: String \| String[], className: String)`|
-|`this.removeClassName`|Remove style class from a form item|`(fields: String \| String[], className: String)`|
-|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String : Object)`|
-|`this.hide`|Hides the field|`(fields: String \| String[])`|
-|`this.show`|Displays the field|`(fields: String \| String[])`|
-|`this.disable`| Disable input field from user interaction|`(fields: String \| String[])`|
+|`this.addClassName`|Add style class to a form item|`(fields: String`&#124;`String[], className: String)`|
+|`this.removeClassName`|Remove style class from a form item|`(fields: String`&#124;`String[], className: String)`|
+|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String) : Object`|
+|`this.hide`|Hides the field|`(fields: String`&#124;`String[])`|
+|`this.show`|Displays the field|`(fields: String`&#124;`String[])`|
+|`this.disable`| Disable text-area field from user interaction|`(fields: String`&#124;`String[])`|
+|`this.enable`| Enable text-area field from user interaction|`(fields: String`&#124;`String[])`|
 |`this.setData`|Set the data in the field|`(Value: Object)`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
     2. **Fields** refers to a **component ID** or a **list of component IDs**. You can fetch the ID from the **Component Attribute** panel in the Page Builder.
     3. Before using **this.show(fields)**, make sure the component is **hidden**. This can be done using **this.hide(fields)** or by **enabling** the **Hidden checkbox** in the Component Attribute panel.
+    4. Before using **this.enable(fields)**, make sure the component is **disabled**. This can be done using **this.disable(fields)** or by **enabling** the **Disabled checkbox** in the Component Attribute panel.
 
 #### Steps to use the methods for the Page Builder components
 
@@ -59,7 +61,6 @@ The **Text-Area** element allows users to write freely across multiple lines, id
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
 <img src= "/apps/components/img/check1.png">
-
 
 !!! Example
     1. `this.addClassName(fields, className)`
@@ -95,18 +96,29 @@ The **Text-Area** element allows users to write freely across multiple lines, id
         ```js
         this.disable(['textarea_hl6emwsb'])
         ```
+    
+    6. `this.enable(['fields'])`
+        ```js
+        this.enable(['textarea_hl6emwsb'])
+        ```
         
-    6.  `this.setData(Value)`
+    7.  `this.setData(Value)`
         ```js
         this.setData(
          {"textarea_hl6emwsb": "Hi...I am Joe",});
         ```
     
-    7.  `this.getComponent('component_ID')`
+    8.  `this.getComponent('component_ID')`
         ```js
         var textareaname = this.getComponent('textarea_hl6emwsb');
         console.log('getComponent', textareaname);
         ```
+
+!!! info Add multiple classes
+    Use the following syntax to add multiple classes to a component:
+    ```js
+    this.addClassName('componentID', 'class1', 'class2')
+    ```
 
 ## Config
 
@@ -125,7 +137,7 @@ The **Text-Area** element allows users to write freely across multiple lines, id
 |**Autosize**| Enable autosize to automatically adjust the element's height to fit the content it holds|<img src= "/apps/components/img/textarea_autosize.png">|
 |**Default Value**| The default value which is filled in the field before the user changes it|<img src= "/apps/components/img/input_defaultvalue.png">|
 |**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
-|**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** to action to hide the field. <br> Enable **Disabled** action to make the field unusable. <br>Enable **Show Clear button** action to make the clear button visible.<br>Enable **Show word count** action make the word count visible|<img src= "/apps/components/img/textarea_attributeaction.png">|
+|**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** action to hide the field. <br> Enable **Disabled** action to make the field unusable. <br>Enable **Show Clear button** action to make the clear button visible.<br>Enable **Show word count** action make the word count visible|<img src= "/apps/components/img/textarea_attributeaction.png">|
 
 ### Validation
 

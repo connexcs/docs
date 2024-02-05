@@ -38,13 +38,14 @@ It serves as a visual and functional indicator of progress, improving user exper
 
 | **Name**| **Description**|**Parameters**|
 ----------|----------------|--------------|
-|`this.addClassName`|Add style class to a form item|`(fields: String \| String[], className: String)`|
-|`this.removeClassName`|Remove style class from a form item|`(fields: String \| String[], className: String)`|
-|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String : Object)`|
-|`this.getValues`|Get the values of all fields when values change|`() : Object`|
-|`this.hide`|Hides the field|`(fields: String \| String[])`|
-|`this.show`|Displays the field|`(fields: String \| String[])`|
-|`this.disable`| Disable input field from user interaction|`(fields: String \| String[])`|
+|`this.addClassName`|Add style class to a form item|`(fields: String `&#124;`String[], className: String)`|
+|`this.removeClassName`|Remove style class from a form item|`(fields: String `&#124;`String[], className: String)`|
+|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String) : Object`|
+|`this.getValues`|Gets the current values of all fields change|`() : Object`|
+|`this.hide`|Hides the field|`(fields: String`&#124;`String[])`|
+|`this.show`|Displays the field|`(fields: String`&#124;`String[])`|
+|`this.disable`| Disable step field from user interaction|`(fields: String`&#124;`String[])`|
+|`this.enable`| Enable step field from user interaction|`(fields: String`&#124;`String[])`|
 |`this.getValue`|Get A Value From a component|`(fieldName: String)`|
 |`this.setData`|Set the data in the field|`(Value: Object)`|
 
@@ -52,6 +53,7 @@ It serves as a visual and functional indicator of progress, improving user exper
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
     2. **Fields** refers to a **component ID** or a **list of component IDs**. You can fetch the ID from the **Component Attribute** panel in the Page Builder.
     3. Before using **this.show(fields)**, make sure the component is **hidden**. This can be done using **this.hide(fields)** or by **enabling** the **Hidden checkbox** in the Component Attribute panel.
+    4.  Before using **this.enable(fields)**, make sure the component is **disabled**. This can be done using **this.disable(fields)** or by **enabling** the **Disabled checkbox** in the Component Attribute panel.
 
 #### Steps to use the methods for the Page Builder components
 
@@ -103,13 +105,18 @@ It serves as a visual and functional indicator of progress, improving user exper
         this.disable(['steps_2bpjtc5m'])
         ```
     
-    7.  `this.getValue('fieldName')`
+    7. `this.enable(['fields'])`
+        ```js
+        this.enable(['steps_2bpjtc5m'])
+        ```
+    
+    8.  `this.getValue('fieldName')`
         ```js
         var stepname = this.getValue('steps_2bpjtc5m');
         console.log('getValue', stepname);
         ```
     
-    8.  `this.setData(Value)`
+    9.  `this.setData(Value)`
         ```js
         this.setData(
          {
@@ -117,11 +124,17 @@ It serves as a visual and functional indicator of progress, improving user exper
         ); **get example**
         ```
     
-    9.  `this.getComponent('component_ID')`
+    10.  `this.getComponent('component_ID')`
         ```js
         var stepname = this.getComponent('steps_2bpjtc5m');
         console.log('getComponent', stepname);
         ```
+
+!!! info Add multiple classes
+    Use the following syntax to add multiple classes to a component:
+    ```js
+    this.addClassName('componentID', 'class1', 'class2')
+    ```
 
 ## Config
 
@@ -140,7 +153,7 @@ It serves as a visual and functional indicator of progress, improving user exper
 |**Center title and description**|Enable this option to make the title and description centrally aligned |<img src= "/apps/components/img/step_statusend.png">|
 |**Simple Theme**| Toggle this button to switch between themes|<img src= "/apps/components/img/step_simple.png">|
 |**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
-|**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** to action to hide the field.|<img src= "/apps/components/img/step_attributeaction.png">|
+|**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** action to hide the field.|<img src= "/apps/components/img/step_attributeaction.png">|
 
 ## First time User?
 

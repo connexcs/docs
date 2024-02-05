@@ -44,19 +44,21 @@ It offers a clear and efficient way for users to select one of two mutually excl
 
 | **Name**| **Description**|**Parameters**|
 |---------|----------------|--------------|
-|`this.addClassName`|Add style class to a form item|`(fields: String \| String[], className: String)`|
-|`this.removeClassName`|Remove style class from a form item|`(fields: String \| String[], className: String)`|
-|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String : Object)`|
-|`this.getValues`|Get the values of all fields when values change|`() : Object`|
-|`this.hide`|Hides the field|`(fields: String \| String[])`|
-|`this.show`|Displays the field|`(fields: String \| String[])`|
-|`this.disable`| Disable input field from user interaction|`(fields: String \| String[])`|
+|`this.addClassName`|Add style class to a form item|`(fields: String`&#124;`String[], className: String)`|
+|`this.removeClassName`|Remove style class from a form item|`(fields: String`&#124;`String[], className: String)`|
+|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String) : Object`|
+|`this.getValues`|Gets the current values of all fields|`() : Object`|
+|`this.hide`|Hides the field|`(fields: String`&#124;`String[])`|
+|`this.show`|Displays the field|`(fields: String`&#124;`String[])`|
+|`this.disable`| Disable switch field from user interaction|`(fields: String`&#124;`String[])`|
+|`this.enable`| Enable switch field from user interaction|`(fields: String`&#124;`String[])`|
 |`this.getValue`|Get A Value From a component|`(fieldName: String)`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
     2. **Fields** refers to a **component ID** or a **list of component IDs**. You can fetch the ID from the **Component Attribute** panel in the Page Builder.
     3. Before using **this.show(fields)**, make sure the component is **hidden**. This can be done using **this.hide(fields)** or by **enabling** the **Hidden checkbox** in the Component Attribute panel.
+    4.  Before using **this.enable(fields)**, make sure the component is **disabled**. This can be done using **this.disable(fields)** or by **enabling** the **Disabled checkbox** in the Component Attribute panel.
 
 #### Steps to use the methods for the Page Builder components
 
@@ -107,18 +109,29 @@ It offers a clear and efficient way for users to select one of two mutually excl
         ```js
         this.disable(['switch_ornfn03c'])
         ```
+    
+    7. `this.enable(['fields'])`
+        ```js
+        this.enable(['switch_ornfn03c'])
+        ```
 
-    7.  `this.getValue('fieldName')`
+    8.  `this.getValue('fieldName')`
         ```js
         var switchname = this.getValue('switch_ornfn03c');
         console.log('getValue', switchname);
         ```
 
-    8.  `this.getComponent('component_ID')`
+    9.  `this.getComponent('component_ID')`
         ```js
         var switchname = this.getComponent('switch_ornfn03c');
         console.log('getComponent', switchname);
         ```
+
+!!! info Add multiple classes
+    Use the following syntax to add multiple classes to a component:
+    ```js
+    this.addClassName('componentID', 'class1', 'class2')
+    ```
 
 ## Config
 
@@ -132,7 +145,7 @@ It offers a clear and efficient way for users to select one of two mutually excl
 |**Hide Label**| Hides the label on the form|<img src= "/apps/components/img/input_hidelabel.png">|
 |**Text Prompt**| A description to aid the user when completing the field|<img src= "/apps/components/img/input_textprompt.png">|
 |**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
-|**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** to action to hide the field. <br> Enable **Disabled** action to make the field unusable.|<img src= "/apps/components/img/switch_attributeaction.png">|
+|**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** action to hide the field. <br> Enable **Disabled** action to make the field unusable.|<img src= "/apps/components/img/switch_attributeaction.png">|
 
 ### Validation
 

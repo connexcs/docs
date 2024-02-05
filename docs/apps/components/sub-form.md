@@ -52,17 +52,19 @@ Sub-form component, for list (array) type form data, uses Table layout, doesn't 
 
 | **Name**| **Description**|**Parameters**|
 |---------|----------------|--------------|
-|`this.addClassName`|Add style class to a form item|`(fields: String \| String[], className: String)`|
-|`this.removeClassName`|Remove style class from a form item|`(fields: String \| String[], className: String)`|
-|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String : Object)`|
-|`this.hide`|Hides the field|`(fields: String \| String[])`|
-|`this.show`|Displays the field|`(fields: String \| String[])`|
-|`this.disable`| Disable input field from user interaction|`(fields: String \| String[])`|
+|`this.addClassName`|Add style class to a form item|`(fields: String`&#124;`String[], className: String)`|
+|`this.removeClassName`|Remove style class from a form item|`(fields: String`&#124;`String[], className: String)`|
+|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String ): Object`|
+|`this.hide`|Hides the field|`(fields: String`&#124;`String[])`|
+|`this.show`|Displays the field|`(fields: String`&#124;`String[])`|
+|`this.disable`| Disable sub-form field from user interaction|`(fields: String`&#124;`String[])`|
+|`this.ebnable`| Enable sub-form field from user interaction|`(fields: String`&#124;`String[])`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
     2. **Fields** refers to a **component ID** or a **list of component IDs**. You can fetch the ID from the **Component Attribute** panel in the Page Builder.
     3. Before using **this.show(fields)**, make sure the component is **hidden**. This can be done using **this.hide(fields)** or by **enabling** the **Hidden checkbox** in the Component Attribute panel.
+    4. Before using **this.enable(fields)**, make sure the component is **disabled**. This can be done using **this.disable(fields)** or by **enabling** the **Disabled checkbox** in the Component Attribute panel.
 
 #### Steps to use the methods for the Page Builder components
 
@@ -107,12 +109,23 @@ Sub-form component, for list (array) type form data, uses Table layout, doesn't 
         ```js
         this.disable(['table_n7rs950l'])
         ```
+    
+    6. `this.enable(['fields'])`
+        ```js
+        this.enable(['table_n7rs950l'])
+        ```
 
-    6.  `this.getComponent('component_ID')`
+    7.  `this.getComponent('component_ID')`
         ```js
         var subname = this.getComponent('table_n7rs950l');
         console.log('getComponent', subname);
         ```
+
+!!! info Add multiple classes
+    Use the following syntax to add multiple classes to a component:
+    ```js
+    this.addClassName('componentID', 'class1', 'class2')
+    ```
 
 ## Config
 
@@ -128,7 +141,7 @@ Sub-form component, for list (array) type form data, uses Table layout, doesn't 
 |**Virtual Table**| Display elements inside the sub-form|<img src= "/apps/components/img/subform_virtualtable.png">|
 |**Default Value**| The default value which is filled in the field before the user changes it|<img src= "/apps/components/img/input_defaultvalue.png">|
 |**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
-|**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** to action to hide the field. <br> Enable **Disabled** action to make the field unusable. <br>Enable **Deletable** to delete the row in the sub-form. <br> Enable **Addible** to add a row in the subform. <br>Enable **Show word count** action make the word count visible|<img src= "/apps/components/img/input_attributeaction.png">|
+|**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** action to hide the field. <br> Enable **Disabled** action to make the field unusable. <br>Enable **Deletable** to delete the row in the sub-form. <br> Enable **Addible** to add a row in the subform. <br>Enable **Show word count** action make the word count visible|<img src= "/apps/components/img/input_attributeaction.png">|
 
 ## First time User?
 

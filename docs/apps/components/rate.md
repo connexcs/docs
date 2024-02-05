@@ -37,19 +37,21 @@ A **Rate** component allows users to express their level of satisfaction, prefer
 
 | **Name**| **Description**|**Parameters**|
 |---------|----------------|--------------|
-|`this.addClassName`|Add style class to a form item|`(fields: String \| String[], className: String)`|
-|`this.removeClassName`|Remove style class from a form item|`(fields: String \| String[], className: String)`|
-|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String : Object)`|
-|`this.getValues`|Get the values of all fields when values change|`() : Object`|
-|`this.hide`|Hides the field|`(fields: String \| String[])`|
-|`this.show`|Displays the field|`(fields: String \| String[])`|
-|`this.disable`| Disable input field from user interaction|`(fields: String \| String[])`|
+|`this.addClassName`|Add style class to a form item|`(fields: String`&#124;`String[], className: String)`|
+|`this.removeClassName`|Remove style class from a form item|`(fields: String`&#124;`String[], className: String)`|
+|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String) : Object`|
+|`this.getValues`|Gets the current values of all fields|`() : Object`|
+|`this.hide`|Hides the field|`(fields: String`&#124;`String[])`|
+|`this.show`|Displays the field|`(fields: String`&#124;`String[])`|
+|`this.disable`| Disable rate field from user interaction|`(fields: String`&#124;`String[])`|
+|`this.enable`| Enable rate field from user interaction|`(fields: String`&#124;`String[])`|
 |`this.setData`|Set the data in the field|`(Value: Object)`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
     2. **Fields** refers to a **component ID** or a **list of component IDs**. You can fetch the ID from the **Component Attribute** panel in the Page Builder.
     3. Before using **this.show(fields)**, make sure the component is **hidden**. This can be done using **this.hide(fields)** or by **enabling** the **Hidden checkbox** in the Component Attribute panel.
+    4. Before using **this.enable(fields)**, make sure the component is **disabled**. This can be done using **this.disable(fields)** or by **enabling** the **Disabled checkbox** in the Component Attribute panel.
 
 #### Steps to use the methods for the Page Builder components
 
@@ -101,18 +103,28 @@ A **Rate** component allows users to express their level of satisfaction, prefer
         this.disable(['rate_2n2vy8wj'])
         ```
     
-    7.  `this.getValue('fieldName')`
+    7. `this.enable(['fields'])`
+        ```js
+        this.enable(['rate_2n2vy8wj'])
+        ```
+    
+    8.  `this.getValue('fieldName')`
         ```js
         var ratename = this.getValue('rate_2n2vy8wj');
         console.log('getValue', ratename);
         ```
     
-    8.  `this.getComponent('component_ID')`
+    9. `this.getComponent('component_ID')`
         ```js
         var ratename = this.getComponent('rate_2n2vy8wj');
         console.log('getComponent', ratename);
         ```
-**setData example**
+
+!!! info Add multiple classes
+    Use the following syntax to add multiple classes to a component:
+    ```js
+    this.addClassName('componentID', 'class1', 'class2')
+    ```
 
 ## Config
 
@@ -128,7 +140,7 @@ A **Rate** component allows users to express their level of satisfaction, prefer
 |**Maximum**|Number of stars for rating|<img src= "/apps/components/img/rate_maximum.png">|
 |**Allow Half**|Enable this option to allow half rating|<img src= "/apps/components/img/rate_allowhalf.png">|
 |**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
-|**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** to action to hide the field. <br> Enable **Disabled** action to make the field unusable. <br>Enable **Show Score** for displaying the rate score.|<img src= "/apps/components/img/rate_attributeaction.png">|
+|**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** action to hide the field. <br> Enable **Disabled** action to make the field unusable. <br>Enable **Show Score** for displaying the rate score.|<img src= "/apps/components/img/rate_attributeaction.png">|
 
 ### Validation
 

@@ -33,16 +33,18 @@ It's commonly used to create interactive selections, manage data assignments, or
 
 | **Name**| **Description**|**Parameters**|
 |---------|----------------|--------------|
-|`this.addClassName`|Add style class to a form item|`(fields: String \| String[], className: String)`|
-|`this.removeClassName`|Remove style class from a form item|`(fields: String \| String[], className: String)`|
-|`this.hide`|Hides the field|`(fields: String \| String[])`|
-|`this.show`|Displays the field|`(fields: String \| String[])`|
-|`this.disable`| Disable input field from user interaction|`(fields: String \| String[])`|
+|`this.addClassName`|Add style class to a form item|`(fields: String`&#124;`String[], className: String)`|
+|`this.removeClassName`|Remove style class from a form item|`(fields: String`&#124;`String[], className: String)`|
+|`this.hide`|Hides the field|`(fields: String`&#124;`String[])`|
+|`this.show`|Displays the field|`(fields: String`&#124;`String[])`|
+|`this.disable`| Disable transfer field from user interaction|`(fields: String`&#124;`String[])`|
+|`this.enable`| Enable transfer field from user interaction|`(fields: String`&#124;`String[])`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
     2. **Fields** refers to a **component ID** or a **list of component IDs**. You can fetch the ID from the **Component Attribute** panel in the Page Builder.
     3. Before using **this.show(fields)**, make sure the component is **hidden**. This can be done using **this.hide(fields)** or by **enabling** the **Hidden checkbox** in the Component Attribute panel.
+    4. Before using **this.enable(fields)**, make sure the component is **disabled**. This can be done using **this.disable(fields)** or by **enabling** the **Disabled checkbox** in the Component Attribute panel.
 
 #### Steps to use the methods for the Page Builder components
 
@@ -87,6 +89,17 @@ It's commonly used to create interactive selections, manage data assignments, or
         ```js
         this.disable(['transfer_jhg5bttj'])
         ```
+    
+    6. `this.enable(['fields'])`
+        ```js
+        this.enable(['transfer_jhg5bttj'])
+        ```
+
+!!! info Add multiple classes
+    Use the following syntax to add multiple classes to a component:
+    ```js
+    this.addClassName('componentID', 'class1', 'class2')
+    ```
 
 ## Config
 
@@ -100,10 +113,10 @@ It's commonly used to create interactive selections, manage data assignments, or
 |**Hide Label**| Hides the label on the form|<img src= "/apps/components/img/input_hidelabel.png">|
 |**Text Prompt**| A description to aid the user when completing the field|<img src= "/apps/components/img/input_textprompt.png">|
 |**Searchable**| Make the Source and Target options searchable|<img src= "/apps/components/img/transfer_searchable.png">|
-|**Option**|Choose either **Static** or **Dynamic** way of adding data to the oprions of the Transfer <br><br>**Static data** refers to a fixed set of options that are pre-defined and loaded into the transfer at the time of initialization</br></br> **Dynamic data** are options fetched as needed from sources like databases or APIs. The transfer updates choices based on user selections. You select from **Data source** which refers to the origin of the data; **Function** which refers to the code that manipulates the data, and **Assigned Value** which refers to the specific value stored or associated with a data element|<img src= "/apps/components/img/checkbox_static.png"> <img src= "/apps/components/img/checkbox_dynamic.png">|
+|**Option**|Choose either **Static** or **Dynamic** way of adding data to the options of the Transfer <br><br>**Static data** refers to a fixed set of options that are pre-defined and loaded into the transfer at the time of initialization</br></br> **Dynamic data** are options fetched as needed from sources like databases or APIs. The transfer updates choices based on user selections. You select from **Data source** which refers to the origin of the data; **Function** which refers to the code that manipulates the data, and **Assigned Value** which refers to the specific value stored or associated with a data element|<img src= "/apps/components/img/checkbox_static.png"> <img src= "/apps/components/img/checkbox_dynamic.png">|
 |**Titles**|Change the titles of your transfer lists|<img src= "/apps/components/img/transfer_titles.png">|
 |**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
-|**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** to action to hide the field. <br> Enable **Disabled** action to make the field unusable.|<img src= "/apps/components/img/transfer_attributeaction.png">|
+|**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** action to hide the field. <br> Enable **Disabled** action to make the field unusable.|<img src= "/apps/components/img/transfer_attributeaction.png">|
 
 ### Validation
 

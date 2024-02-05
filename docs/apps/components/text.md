@@ -29,13 +29,14 @@ Users can type text, numbers, or symbols into the designated field, providing es
 
 | **Name**| **Description**|**Parameters**|
 |---------|----------------|--------------|
-|`this.addClassName`|Add style class to a form item|`(fields: String \| String[], className: String)`|
-|`this.removeClassName`|Remove style class from a form item|`(fields: String \| String[], className: String)`|
-|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String : Object)`|
-|`this.getValues`|Get the values of all fields when values change|`() : Object`|
-|`this.hide`|Hides the field|`(fields: String \| String[])`|
-|`this.show`|Displays the field|`(fields: String \| String[])`|
-|`this.disable`| Disable input field from user interaction|`(fields: String \| String[])`|
+|`this.addClassName`|Add style class to a form item|`(fields: String`&#124;`String[], className: String)`|
+|`this.removeClassName`|Remove style class from a form item|`(fields: String`&#124;`String[], className: String)`|
+|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String) : Object)`|
+|`this.getValues`|Gets the current values of all fields|`() : Object`|
+|`this.hide`|Hides the field|`(fields: String`&#124;`String[])`|
+|`this.show`|Displays the field|`(fields: String`&#124;`String[])`|
+|`this.disable`| Disable text field from user interaction|`(fields: String`&#124;`String[])`|
+|`this.enable`| Enable text field from user interaction|`(fields: String`&#124;`String[])`|
 |`this.setData`|Set the data in the field|`(Value: Object)`|
 |`this.getValue`|Get A Value From a component|`(fieldName: String)`|
 
@@ -43,6 +44,7 @@ Users can type text, numbers, or symbols into the designated field, providing es
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
     2. **Fields** refers to a **component ID** or a **list of component IDs**. You can fetch the ID from the **Component Attribute** panel in the Page Builder.
     3. Before using **this.show(fields)**, make sure the component is **hidden**. This can be done using **this.hide(fields)** or by **enabling** the **Hidden checkbox** in the Component Attribute panel.
+    4. Before using **this.enable(fields)**, make sure the component is **disabled**. This can be done using **this.disable(fields)** or by **enabling** the **Disabled checkbox** in the Component Attribute panel.
 
 #### Steps to use the methods for the Page Builder components
 
@@ -94,23 +96,34 @@ Users can type text, numbers, or symbols into the designated field, providing es
         this.disable(['text_t1fhz5vb'])
         ```
     
-    7.  `this.getValue('fieldName')`
+    7. `this.enable(['fields'])`
+        ```js
+        this.enable(['text_t1fhz5vb'])
+        ```
+    
+    8.  `this.getValue('fieldName')`
         ```js
         var textname = this.getValue('text_t1fhz5vb');
         console.log('getValue', textname);
         ```
     
-    8.  `this.setData(Value)`
+    9.  `this.setData(Value)`
         ```js
         this.setData(
          {"text_t1fhz5vb": "This is the Text",});
         ```
     
-    9.  `this.getComponent('component_ID')`
+    10.  `this.getComponent('component_ID')`
         ```js
         var textname = this.getComponent('text_t1fhz5vb');
         console.log('getComponent', textname);
         ```
+
+!!! info Add multiple classes
+    Use the following syntax to add multiple classes to a component:
+    ```js
+    this.addClassName('componentID', 'class1', 'class2')
+    ```
 
 ## Config
 
@@ -126,7 +139,7 @@ Users can type text, numbers, or symbols into the designated field, providing es
 |**Text Prompt**| A description to aid the user when completing the field|<img src= "/apps/components/img/input_textprompt.png">|
 |**Default Value**| The default value which is filled in the field before the user changes it|<img src= "/apps/components/img/input_defaultvalue.png">|
 |**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
-|**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** to action to hide the field.|<img src= "/apps/components/img/text_attributeaction.png">|
+|**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** action to hide the field.|<img src= "/apps/components/img/text_attributeaction.png">|
 
 ### Validation
 

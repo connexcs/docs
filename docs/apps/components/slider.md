@@ -33,13 +33,14 @@
 
 | **Name**| **Description**|**Parameters**|
 |---------|----------------|--------------|
-|`this.addClassName`|Add style class to a form item|`(fields: String \| String[], className: String)`|
-|`this.removeClassName`|Remove style class from a form item|`(fields: String \| String[], className: String)`|
-|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String : Object)`|
-|`this.getValues`|Get the values of all fields when values change|`() : Object`|
-|`this.hide`|Hides the field|`(fields: String \| String[])`|
-|`this.show`|Displays the field|`(fields: String \| String[])`|
-|`this.disable`| Disable input field from user interaction|`(fields: String \| String[])`|
+|`this.addClassName`|Add style class to a form item|`(fields: String`&#124;`String[], className: String)`|
+|`this.removeClassName`|Remove style class from a form item|`(fields: String`&#124;`String[], className: String)`|
+|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String) : Object`|
+|`this.getValues`|Gets the current values of all fields|`() : Object`|
+|`this.hide`|Hides the field|`(fields: String`&#124;`String[])`|
+|`this.show`|Displays the field|`(fields: String`&#124;`String[])`|
+|`this.disable`| Disable slider field from user interaction|`(fields: String`&#124;`String[])`|
+|`this.enable`| Enable slider field from user interaction|`(fields: String`&#124;`String[])`|
 |`this.getValue`|Get A Value From a component|`(fieldName: String)`|
 |`this.setData`|Set the data in the field|`(Value: Object)`|
 
@@ -47,6 +48,7 @@
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
     2. **Fields** refers to a **component ID** or a **list of component IDs**. You can fetch the ID from the **Component Attribute** panel in the Page Builder.
     3. Before using **this.show(fields)**, make sure the component is **hidden**. This can be done using **this.hide(fields)** or by **enabling** the **Hidden checkbox** in the Component Attribute panel.
+    4.  Before using **this.enable(fields)**, make sure the component is **disabled**. This can be done using **this.disable(fields)** or by **enabling** the **Disabled checkbox** in the Component Attribute panel.
 
 #### Steps to use the methods for the Page Builder components
 
@@ -98,23 +100,34 @@
         this.disable(['slider_k9cacr9r'])
         ```
     
-    7.  `this.getValue('fieldName')`
+    7. `this.enable(['fields'])`
+        ```js
+        this.enable(['slider_k9cacr9r'])
+        ```
+    
+    8.  `this.getValue('fieldName')`
         ```js
         var slidername = this.getValue('slider_k9cacr9r');
         console.log('getValue', slidername);
         ```
     
-    8.  `this.setData(Value)`
+    9.  `this.setData(Value)`
         ```js
         this.setData(
          {"slider_k9cacr9r": "45",});
         ```
     
-    9.  `this.getComponent('component_ID')`
+    10.  `this.getComponent('component_ID')`
         ```js
         var slidername = this.getComponent('slider_k9cacr9r');
         console.log('getComponent', slidername);
         ```
+
+!!! info Add multiple classes
+    Use the following syntax to add multiple classes to a component:
+    ```js
+    this.addClassName('componentID', 'class1', 'class2')
+    ```
 
 ## Config
 
@@ -132,7 +145,7 @@
 |**Maximum**|Highest value for the slider range|<img src= "/apps/components/img/slider_maximum.png">|
 |**Step**|Smallest increment or jump by which the value of the slider can change|<img src= "/apps/components/img/slider_step.png">|
 |**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
-|**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** to action to hide the field. <br> Enable **Disabled** action to make the field unusable.|<img src= "/apps/components/img/checkbox_attributeaction.png">|
+|**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** action to hide the field. <br> Enable **Disabled** action to make the field unusable.|<img src= "/apps/components/img/checkbox_attributeaction.png">|
 
 ### Validation
 
