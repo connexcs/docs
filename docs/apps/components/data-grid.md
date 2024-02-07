@@ -166,16 +166,18 @@ It allows you to customize the appearance of data to improve readability, highli
 
 6.**Pivot**
 
-   * **Pivot**: Allows you to dynamically rearrange and restructure the data by rotating the grid's axis, switching rows and columns to create different views and perspectives.
+   * **Pivot**: Allows you to dynamically rearrange and restructure the data by rotating the grid's axis. You can switch rows and columns to create different view of the information in the grid. You can also filter the required fields, which you wish to see on the screen.
 
-   * **Enable Pivot**: Enable/Disable pivot.
+   * **Enable Pivot**: Enable/Disable pivot mode.
 
 <img src= "/apps/components/img/datagrid_header.png" width="400">
 
 7.**Charts**
 
+!!! note To use the Charts option, first enable the *Enable Range Selection* option. Click on *Preview*, select the values on the grid, right-click on the selected the area then Charts. Below are further filters you can apply on the charts under Column Config.
+
    * **Charts Data Type**:
-       
+
        * Excluded: Data in columns marked as "excluded" aren't included in the visual representation of the chart.
 
        * Category: Data in columns marked as "category" are used to group data points into distinct categories or segments.
