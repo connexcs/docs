@@ -17,7 +17,7 @@ Click the blue :material-plus: to add a new Template.
 + Use **Text** or **HTML** for the content of the communication.
 
     ![alt text][addtemp]
- 
+
  Select **`Save`** to complete the configuration.
 
 !!! tip "Rendering Variables"
@@ -62,6 +62,7 @@ Before describing those variables, we first discuss the steps for creating the *
 !!! Note Important Note
      You just need to add or remove the variables from the invoice template that we'll offer.
 
+{% raw %}
 | **Variable Name**| **Explanation**|
 |----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
 | account.name| Provides you with the account name|
@@ -83,7 +84,7 @@ Before describing those variables, we first discuss the steps for creating the *
 | numberFormat unit_price, {numberFormat net, {numberFormat tax, numberFormat sub_total| Gives you the total Amount |
 | nl2br account.config.payment_details| Account Details|
 | account.phone | Telephone|
-| account.email                                                                            | Billing Email| Billing e-mail address.
+| account.email| Billing Email| Billing e-mail address.
 | dateFormat date | Formats the date to: YYYY-MM-DD |
 | numberFormat (Input: 55662890)| Formats the provided number (Output: 5,56,62,890)|
 | currencyFormat currency (Input: 25000)| Formats the provided currency and displays the amount in dollars (Output: $25,000)|
@@ -91,6 +92,7 @@ Before describing those variables, we first discuss the steps for creating the *
 | sub_total{{sub_total} ($10)| Sub total amount|
 | tax {{ tax}} ($1)| Tax applied on the bill|
 | total {{ total} | Total amount due (Sub total amount + Tax amount = $10 + $1= $11)|
+{% endraw %}
 
 !!! Info 
     You can use **nlb2r** function to create the next line.
