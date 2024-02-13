@@ -57,7 +57,7 @@ For example, when a user clicks on a calendar day, an event handler can update t
 4. **Animations and Transitions**: Animations and transitions can be incorporated to enhance the visual appeal and user experience of the date component. Libraries like GSAP or CSS animations can be used to add smooth transitions, visual feedback, and engaging interactions to the component.
    For instance, a date component could animate the calendar slide-in transition when the user clicks on the input field.
 
-5. Accessibility: Accessibility measures should be considered to ensure that the date component is usable by users with disabilities. This includes providing keyboard navigation, screen reader support, and appropriate color contrast.
+5. **Accessibility**: Accessibility measures should be considered to ensure that the date component is usable by users with disabilities. This includes providing keyboard navigation, screen reader support, and appropriate color contrast.
    For example, a date component could provide keyboard navigation shortcuts for selecting dates, making it accessible to users who rely on keyboard input.
 
 Examples may include:
@@ -100,14 +100,13 @@ Examples may include:
 |`this.disable`| Disable date field from user interaction|`(fields: String`&#124;`String[])`|
 |`this.enable`| Enable date field from user interaction|`(fields: String`&#124;`String[])`|
 |`this.getValue`|Get A Value From a component|`(fieldName: String)`|
-|`this.setData`|Set the data in the field|`(Value: Object)`|
+|`this.setData`|Set the data in the field|`(Value: Object)` {'field-id': 'field-value'}|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
     2. **Fields** refers to a **component ID** or a **list of component IDs**. You can fetch the ID from the **Component Attribute** panel in the Page Builder.
     3. Before using **this.show(fields)**, make sure the component is **hidden**. This can be done using **this.hide(fields)** or by **enabling** the **Hidden checkbox** in the Component Attribute panel.
     4. Before using **this.enable(fields)**, make sure the component is **disabled**. This can be done using **this.disable(fields)** or by **enabling** the **Disabled checkbox** in the Component Attribute panel.
-
 
 #### Steps to use the methods for the Page Builder components
 
@@ -227,7 +226,7 @@ Form validation can be performed using a variety of methods, including:
 <img src= "/apps/components/img/cascader_validation.png">
 
 !!! Info
-    1. The **callback()function** is also called to verify success in the custom checkup method.
+    1. The **callback() function** is also called to verify success in the custom checkup method.
 
 ## First time User?
 
