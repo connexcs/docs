@@ -20,15 +20,18 @@ This capability injects variable into a template.
 
 !!! Example
     HTML Code:
+    {% raw %}
     ```js
     <b style="color: red;">
         Hi my name is {{name}} //{{}}➡️templating language
     </b>
     ```
+    {% endraw %}
 
     HTML Output:
-    
+    {% raw %}
     <span style="color:red">Hi my name is {{name}}</span>
+    {% endraw %}
 
     setHTML Code:
     ```js
@@ -51,15 +54,18 @@ This capability will override the entire HTML text.
 
 !!! Example
     HTML Code:
+    {% raw %}
     ```js
     <b style="color: red;">
         Hi my name is {{name}} //{{}}➡️templating language
     </b>
     ```
+    {% endraw %}
 
     HTML Output:
-    
+    {% raw %}
     <span style="color:red">Hi my name is {{name}}</span>
+    {% endraw %}
 
     set Template Code:
     ```js
