@@ -160,7 +160,7 @@ Form validation can be performed using a variety of methods, including:
 
 !!! Info
     1. **Regular expressions** should be wrapped with //, as in:/^1[3456789]\d{9}$/"
-    2. The **callback()function** is also called to verify success in the custom validation method.
+    2. The **callback() function** is also called to verify success in the custom validation method.
 
 ## First time User?
 

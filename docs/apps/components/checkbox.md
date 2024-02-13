@@ -76,7 +76,6 @@ Some of the most common methods include:
     3. Before using **this.show(fields)**, make sure the component is **hidden**. This can be done using **this.hide(fields)** or by **enabling** the **Hidden checkbox** in the Component Attribute panel.
     4. Before using **this.enable(fields)**, make sure the component is **disabled**. This can be done using **this.disable(fields)** or by **enabling** the **Disabled checkbox** in the Component Attribute panel.
 
-
 #### Steps to use the methods for the Page Builder components
 
 1. Go to Form Attribute :material-menu-right: Action Panel :material-menu-right: Setting :material-menu-right: (Mounted | refresh | click 'Add action').
@@ -190,7 +189,7 @@ Form validation can be performed using a variety of methods, including:
 ||**callback**: Callback function (must be called) upon completion of validation; **callback('Error message')/ callback(new Error('Error message'))**. These are two ways to return an error message.|
 
 !!! Info
-    1. The **callback()function** is also called to verify success in the custom validation method.
+    1. The **callback() function** is also called to verify success in the custom validation method.
 
 <img src= "/apps/components/img/cascader_validation.png">
 
