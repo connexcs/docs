@@ -154,3 +154,5 @@ Drag & Drop Admin Interface Builder, using the following components.
 6.Click on the created page builder, it shows with page builder sections where you can **Drag and Drop** the components from the left navigation (Layout).
 
 <img src= "/apps/img/page4.png">
+
+{{ external_markdown('https://cdn.cnxcdn.com/cnxapp/docs/api.md', '') }}
