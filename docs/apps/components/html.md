@@ -123,20 +123,6 @@ To know more about Handlebars [click here](https://handlebarsjs.com/guide/#html-
 |**Text Prompt**| A description to aid the user when completing the field|<img src= "/apps/components/img/input_textprompt.png">|
 |**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** action to hide the field|<img src= "/apps/components/img/group_attributionaction.png">|
 
-### Validation
-
-Form validation is the process of checking the data entered into a form to ensure that it's valid and complete.
-
-This helps to prevent users from submitting forms with invalid data, which can cause problems for the application that's processing the form.
-
-Form validation can be performed using a variety of methods, including:
-
-| **Name**| **Description**|
-|---------|----------------|
-| **Required**| Single line of text|
-
-<img src= "/apps/components/img/html_validation.png">
-
 ## First time User?
 
 If you are using the Page Builder components on the ConnexCS platform for the first time, we request you to use our guide on <a href="https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#steps-to-use-components-in-the-page-builder" target="_blank">steps to use the Components</a>.
