@@ -20,9 +20,8 @@ Some of the examples may include:
 
 1. Embedding Maps
 2. Integrating Calendars
-3. Incorporating Payment Gateways
-4. Displaying Dynamic Content
-5. Encapsulating External Tools
+3. Displaying Dynamic Content
+4. Encapsulating External Tools
 
 ### Interactivity
 
@@ -35,7 +34,7 @@ Some of the examples may include:
 
 ### Methods
 
-!!! danger
+!!! Warning
     We're working on the methods. We will come back to you soon
 
 ## Config
