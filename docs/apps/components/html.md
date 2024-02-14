@@ -8,6 +8,8 @@ The <html> tag is the container for all other HTML elements (except for the <!DO
 
 <img src= "/apps/components/img/html.png">
 
+## Use Case
+
 ### setHTML and set Template
 
 setHTML and set Template are data setting capabilities of HTML using the [Templating Language](https://handlebarsjs.com/guide/#what-is-handlebars).
