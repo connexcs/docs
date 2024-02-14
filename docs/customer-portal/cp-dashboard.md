@@ -41,3 +41,17 @@ You can perform the following Functions with this data:
      For billing purposes, consider the data found in the Customer Summary section as valid. Although the same information might be at other locations, you shouldn't use it for billing.
 
 [cp-dash]: /customer-portal/img/cp-dash.png "Top of Page"
+
+## Internal Number Block
+
+Internal Number Block to define the range of numbers a Customer can use for setting up SIP Extensions.
+
+### Why Define Internal Number Blocks?
+
+Within each Account are multiple Customers, each will likely have more than one Contact.
+
+SIP Extensions are unique for the Account, not for individual Customers.
+
+Without defined Internal Number Blocks, there is the risk of a Contact attempting to use an extension that's already in use by another Customer or Contact.
+
+With Internal Number Blocks defined, each Customer will have a predetermined list of Usernames to select for SIP Authentication.

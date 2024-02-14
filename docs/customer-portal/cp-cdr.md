@@ -15,7 +15,7 @@ The **CDR** section lists details from the Call Detail Record for each call. You
 * **Download:** Save the record to your hard drive in CSV format.
 * **View Columns:** Select the CDR fields that display in the table.
 * **Date Ranges:** Limit displayed calls based on preset date ranges or a custom date range.
-* **Search:** Search for calls from a specific phone number and verify that the number is the destination or source.
+* **Search:** Search for calls from a specific phone number and verify that the number is the **Destination** or **Source**.
 
 ## Call Detail Record Time Zone
 
@@ -24,3 +24,6 @@ Coordinated Universal Time (UTC) rates and stores the CDRs.
 Daily totals are also calculated in UTC.
 
 You can change the display time zone for each CDR record and saves the time zone selector, but downloads will always be in UTC.
+
+!!! Info
+    When a call enters the CDR table, you have the option to **Play Audio**. The **Call recording** is available, and you can **Download** it as well.
