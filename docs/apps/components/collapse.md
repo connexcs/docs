@@ -6,7 +6,7 @@
 
 This feature is often used to organize lengthy or complex forms, making them easier to navigate and reducing visual clutter.
 
-<img src= "/apps/components/img/collapse1.png">
+<img src= "/apps/components/img/collapse1.png" width= "800">
 
 ## Use Case
 
@@ -96,19 +96,13 @@ Some of the most common methods include:
         console.log('getComponent', collapsename);
         ```
 
-!!! info Add multiple classes
-    Use the following syntax to add multiple classes to a component:
-    ```js
-    this.addClassName('componentID', 'class1', 'class2')
-    ```
-
 ## Config
 
 | **Name**|**Description**|**Icon**|
 |---------|---------------|--------|
 |**ID**| The collapse component's unique identifier|<img src= "/apps/components/img/input_id.png">|
 |**Collapse Options**|Allows you to add/delete multiple Collapses|<img src= "/apps/components/img/collapse_collapseoptions.png">|
-|**Accordian Mode**|Enable this mode if you want to display only one Collaspse section at a time (this is helpful when you have to avoid clutter when you have multiple Collapse sections)|<img src= "/apps/components/img/collapse_accordionmode.png">
+|**Accordian Mode**|Enable this mode if you want to display only one Collapse section at a time (this is helpful when you have to avoid clutter when you have multiple Collapse sections)|<img src= "/apps/components/img/collapse_accordionmode.png">
 |**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Hidden** action to hide the field|<img src= "/apps/components/img/alert_arrtibuteaction.png">|
 
