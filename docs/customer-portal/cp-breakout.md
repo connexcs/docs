@@ -10,6 +10,8 @@ The **Breakout** report lists account customers with the following:
  Toggle **Group Destination** to show calls based on the destination number.  
  Use the **`Date`** and **`Select Destination`** fields at the top of the page to filter results.
 
+ The **Select Destination** allows you to filter out the calls made to a particular destination.
+
 !!! warning "Group Destination toggle"
     Presently, this toggle feature is still under development, so it may generate an error.
 

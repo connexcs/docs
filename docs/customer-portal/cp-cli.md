@@ -20,7 +20,3 @@ Depending on how you want to route the calls, toggle a CLI between `Forced` and 
     If you want to add CLIs from the Customer Portal, please contact support to have "Approved CLIs Only" enabled.
 
     Any CLI you add will need to get approval before it's functional here.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbNjA5NjA2Mjk2XX0=
--->
