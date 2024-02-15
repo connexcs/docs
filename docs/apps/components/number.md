@@ -11,10 +11,10 @@ It's commonly used for collecting quantitative data, such as age, quantity, pric
 ## Use Case
 
 1. Text Input with Number Type
-2. Number Spinner
-3. Range Slider
-4. Number Validation
-5. Custom Number Input
+2. Number Validation
+3. Custom Number Input
+4. Number Spinner: It can be used provide a user-friendly interface for inputting quantities or values. You can add custom spin buttons using JavaScript.
+5. Range Slider: Based on the drag position, calculate the new min and max values for the range and update the underlying "number" element's value and attribute accordingly.
 
 Examples mat include:
 
@@ -59,7 +59,7 @@ Examples mat include:
 |`this.disable`| Disable number field from user interaction|`(fields: String`&#124;`String[])`|
 |`this.enable`| Enable number field from user interaction|`(fields: String`&#124;`String[])`|
 |`this.getValue`|Get A Value From a component|`(fieldName: String)`|
-|`this.setData`|Set the data in the field|`(Value: Object)`|
+|`this.setData`|et the data in the field. The Value object should be of type { componentId: componentValue }|`(Value: Object)`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
@@ -74,7 +74,7 @@ Examples mat include:
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/check1.png">
+<img src= "/apps/components/img/num.png">
 
 !!! Example
     1. `this.addClassName(fields, className)`
@@ -140,12 +140,6 @@ Examples mat include:
         console.log('getComponent', numbername);
         ```
 
-!!! info Add multiple classes
-    Use the following syntax to add multiple classes to a component:
-    ```js
-    this.addClassName('componentID', 'class1', 'class2')
-    ```
-
 ## Config
 
 | **Name**|**Description**|**Icon**|
@@ -177,7 +171,7 @@ Form validation can be performed using a variety of methods, including:
 
 | **Name**| **Description**|
 ----------|----------------|
-| **Required**| Single line of text|
+| **Required**|If enabled, then the field value cannot be empty, otherwise an error message is emitted|
 |**Custom Validation Rules**|(rule, value, callback) => {|
 ||**rule**: Verification rule, you can view the verification configuration information through this parameter; **rule.field** can get the field identifier of the current verification|
 ||**value**: Value of the current field|
