@@ -6,7 +6,7 @@
 
 This feature is often used to organize lengthy or complex forms, making them easier to navigate and reducing visual clutter.
 
-<img src= "/apps/components/img/collapse12.png">
+<img src= "/apps/components/img/collapse12.png" width= "1000">
 
 ## Use Case
 
