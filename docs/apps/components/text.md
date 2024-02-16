@@ -35,7 +35,7 @@ Users can type text, numbers, or symbols into the designated field, providing es
 |`this.getValues`|Gets the current values of all fields|`() : Object`|
 |`this.hide`|Hides the field|`(fields: String`&#124;`String[])`|
 |`this.show`|Displays the field|`(fields: String`&#124;`String[])`|
-|`this.setData`|Set the data in the field|`(Value: Object)`|
+|`this.setData`|Set the data in the field. The Value object should be of type { componentId: componentValue }|`(Value: Object)`|
 |`this.getValue`|Get A Value From a component|`(fieldName: String)`|
 
 !!! Info
@@ -50,7 +50,7 @@ Users can type text, numbers, or symbols into the designated field, providing es
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/check1.png">
+<img src= "/apps/components/img/text1.png">
 
 !!! Example
     1. `this.addClassName(fields, className)`
@@ -148,7 +148,7 @@ Form validation can be performed using a variety of methods, including:
 
 | **Name**| **Description**|
 |---------|----------------|
-| **Required**| Single line of text|
+| **Required**|If enabled, then the field value can't be empty, otherwise an error message is emitted|
 
 <img src= "/apps/components/img/text_validation.png">
 

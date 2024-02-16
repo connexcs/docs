@@ -37,7 +37,7 @@
 |`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String) : Object`|
 |`this.getValues`|Gets the current values of all fields|`() : Object`|
 |`this.getValue`|Get A Value From a component|`(fieldName: String)`|
-|`this.setData`|Set the data in the field|`(Value: Object)`|
+|`this.setData`|Set the data in the field. The Value object should be of type { componentId: componentValue }|`(Value: Object)`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.

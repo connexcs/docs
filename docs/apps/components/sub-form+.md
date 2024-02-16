@@ -4,7 +4,7 @@
 
 Complex layout Sub-Form component for list (array) type form data, supporting nesting of complex layouts.
 
-<img src= "/apps/components/img/subform.png">
+<img src= "/apps/components/img/subformplus.png">
 
 ## Use Case
 
@@ -69,7 +69,7 @@ Complex layout Sub-Form component for list (array) type form data, supporting ne
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/check1.png">
+<img src= "/apps/components/img/subformplus1.png">
 
 !!! Example
     1. `this.addClassName(fields, className)`
@@ -81,39 +81,39 @@ Complex layout Sub-Form component for list (array) type form data, supporting ne
             ```
           * Follow the steps mentioned above, under Steps to use the methods for the Page Builder components
           * ```
-            this.addClassName('table_n7rs950l', 'abc')
+            this.addClassName('subform_e4cjz3nf', 'abc')
             ```
 
     2. `this.removeClassName(fields, className)`
         ```js
-        this.removeClassName('table_n7rs950l', 'abc')
+        this.removeClassName('subform_e4cjz3nf', 'abc')
         ```
 
     3. `this.hide(fields)`
         ```js
-        var fields= ['table_n7rs950l']
+        var fields= ['subform_e4cjz3nf']
         this.hide(fields)
         ```
     
     4. `this.show(fields)`
         ```js
-        var fields= ['table_n7rs950l']
+        var fields= ['subform_e4cjz3nf']
         this.show(fields)
         ```
     
     5. `this.disable(['fields'])`
         ```js
-        this.disable(['table_n7rs950l'])
+        this.disable(['subform_e4cjz3nf'])
         ```
     
     6. `this.enable(['fields'])`
         ```js
-        this.enable(['table_n7rs950l'])
+        this.enable(['subform_e4cjz3nf'])
         ```
 
     7.  `this.getComponent('component_ID')`
         ```js
-        var subname = this.getComponent('table_n7rs950l');
+        var subname = this.getComponent('subform_e4cjz3nf');
         console.log('getComponent', subname);
         ```
 

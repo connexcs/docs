@@ -55,7 +55,7 @@ It's a versatile tool for collecting user input in situations where there are mu
 |`this.disable`| Disable select field from user interaction|`(fields: String`&#124;`String[])`|
 |`this.enable`| Enable select field from user interaction|`(fields: String`&#124;`String[])`|
 |`this.getValue`|Get A Value From a component|`(fieldName: String)`|
-|`this.setData`|Set the data in the field|`(Value: Object)`|
+|`this.setData`|Set the data in the field. The Value object should be of type { componentId: componentValue }|`(Value: Object)`|
 |`this.refreshFieldDataSource`|Refresh the datasource data bound to the whole page|
 
 !!! Info
@@ -71,7 +71,7 @@ It's a versatile tool for collecting user input in situations where there are mu
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/check1.png">
+<img src= "/apps/components/img/select1.png">
 
 !!! Example
     1. `this.addClassName(fields, className)`
@@ -171,7 +171,7 @@ Form validation can be performed using a variety of methods, including:
 
 | **Name**| **Description**|
 |---------|----------------|
-| **Required**| Single line of text|
+| **Required**| If enabled, then the field value can't be empty, otherwise an error message is emitted|
 |**Custom Validation Rules**|(rule, value, callback) => {|
 ||**rule**: Verification rule, you can view the verification configuration information through this parameter; **rule.field** can get the field identifier of the current verification|
 ||**value**: Value of the current field|

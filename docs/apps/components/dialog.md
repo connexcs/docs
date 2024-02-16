@@ -64,7 +64,7 @@ It typically provides a self-contained interface for collecting additional infor
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/check1.png">
+<img src= "/apps/components/img/dialog1.png">
 
 !!! Example
     1. `this.getComponent('component_ID')`

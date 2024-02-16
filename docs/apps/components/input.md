@@ -58,15 +58,15 @@ You can use focus and blur events to perform a variety of actions, such as:
 |`this.show`|Displays the field|`(fields: String`&#124;`String[])`|
 |`this.disable`| Disable input field from user interaction|`(fields: String`&#124;`String[])`|
 |`this.enable`| Enable input field from user interaction|`(fields: String`&#124;`String[])`|
-|`this.setData`|Set the data in the field|`(Value: Object)`|
+`(Value: Object)` {'field-id': 'field-value'}|
 |`this.getValue`|Get A Value From a component|`(fieldName: String)`|
+|`this.setData`|Set the data in the field. The Value object should be of type { componentId: componentValue }|`(Value: Object)`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
     2. **Fields** refers to a **component ID** or a **list of component IDs**. You can fetch the ID from the **Component Attribute** panel in the Page Builder.
     3. Before using **this.show(fields)**, make sure the component is **hidden**. This can be done using **this.hide(fields)** or by **enabling** the **Hidden checkbox** in the Component Attribute panel.
     4. Before using **this.enable(fields)**, make sure the component is **disabled**. This can be done using **this.disable(fields)** or by **enabling** the **Disabled checkbox** in the Component Attribute panel.
-
 
 #### Steps to use the methods for the Page Builder components
 
@@ -75,7 +75,7 @@ You can use focus and blur events to perform a variety of actions, such as:
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/check1.png">
+<img src= "/apps/components/img/input1.png">
 
 !!! Example
     1. `this.addClassName(fields, className)`
@@ -174,7 +174,7 @@ Form validation can be performed using a variety of methods, including:
 
 | **Name**| **Description**|
 |---------|----------------|
-| **Required**| Single line of text|
+| **Required**|If enabled, then the field value can't be empty, otherwise an error message is emitted|
 |**Select**|Several common type checks are provided in single-line text boxes such as string, URL, mailbox, etc.|
 | **Regular expressions**|Used to match patterns in text. They can be used to validate the format of data, such as email addresses, phone numbers, and dates|
 |**Custom Validation Rules**|(rule, value, callback) => {|

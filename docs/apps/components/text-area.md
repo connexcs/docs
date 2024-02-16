@@ -45,7 +45,7 @@ The **Text-Area** element allows users to write freely across multiple lines, id
 |`this.show`|Displays the field|`(fields: String`&#124;`String[])`|
 |`this.disable`| Disable text-area field from user interaction|`(fields: String`&#124;`String[])`|
 |`this.enable`| Enable text-area field from user interaction|`(fields: String`&#124;`String[])`|
-|`this.setData`|Set the data in the field|`(Value: Object)`|
+|`this.setData`|Set the data in the field. The Value object should be of type { componentId: componentValue }|`(Value: Object)`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
@@ -60,7 +60,7 @@ The **Text-Area** element allows users to write freely across multiple lines, id
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/check1.png">
+<img src= "/apps/components/img/textarea1.png">
 
 !!! Example
     1. `this.addClassName(fields, className)`
@@ -149,7 +149,7 @@ Form validation can be performed using a variety of methods, including:
 
 | **Name**| **Description**|
 |---------|----------------|
-| **Required**| Single line of text|
+| **Required**|If enabled, then the field value can't be empty, otherwise an error message is emitted|
 | **Regular expressions**|Used to match patterns in text. They can be used to validate the format of data, such as email addresses, phone numbers, and dates|
 |**Custom Validation Rules**|(rule, value, callback) => {|
 ||**rule**: Verification rule, you can view the verification configuration information through this parameter; **rule.field** can get the field identifier of the current verification|
