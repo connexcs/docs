@@ -47,7 +47,6 @@ It's like a set of switches where only one can be "on" at any given moment.
 |`this.enable`| Enable radio field from user interaction|`(fields: String`&#124;`String[])`|
 |`this.getValue`|Get A Value From a component|`(fieldName: String)`|
 |`this.setData`|Set the data in the field. The Value object should be of type { componentId: componentValue }|`(Value: Object)`|
-|`this.refreshFieldDataSource`|Refresh the datasource data bound to the form field|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of the radio component in response to user input.
@@ -127,8 +126,6 @@ It's like a set of switches where only one can be "on" at any given moment.
         this.setData(
          {"radio_mv3o2rpn": "Option 3",});
         ```
-
-**example of refreshfield and getfield**
 
 !!! info Add multiple classes
     Use the following syntax to add multiple classes to a component:
