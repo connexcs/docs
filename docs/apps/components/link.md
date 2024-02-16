@@ -1,6 +1,6 @@
 # Link
 
-## Descriptio
+## Description
 
 **Link** components can be used in forms to provide additional functionality, such as opening external resources, navigating to different sections of the form, or triggering specific actions.
 
@@ -34,15 +34,13 @@
 |---------|----------------|--------------|
 |`this.addClassName`|Add style class to a form item|`(fields: String`&#124;`String[], className: String)`|
 |`this.removeClassName`|Remove style class from a form item|`(fields: String`&#124;`String[], className: String)`|
-|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String) : Object)`|
 |`this.hide`|Hides the field|`(fields: String`&#124;`String[])`|
 |`this.show`|Displays the field|`(fields: String`&#124;`String[])`|
 |`this.disable`| Disable link field from user interaction|`(fields: String`&#124;`String[])`|
 |`this.enable`| Enable link field from user interaction|`(fields: String`&#124;`String[])`|
-|`this.getValue`|Get A Value From a component|`(fieldName: String)`|
 
 !!! Info
-    1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
+    1. The show() and hide() methods can also be used to control the visibility of the link component in response to user input.
     2. **Fields** refers to a **component ID** or a **list of component IDs**. You can fetch the ID from the **Component Attribute** panel in the Page Builder.
     3. Before using **this.show(fields)**, make sure the component is **hidden**. This can be done using **this.hide(fields)** or by **enabling** the **Hidden checkbox** in the Component Attribute panel
     4. Before using **this.enable(fields)**, make sure the component is **disabled**. This can be done using **this.disable(fields)** or by **enabling** the **Disabled checkbox** in the Component Attribute panel.
@@ -95,24 +93,6 @@
         ```js
         this.enable(['link_0t4yixc3'])
         ```
-    
-    7.  `this.getValue('fieldName')`
-        ```js
-        var linkname = this.getValue('link_0t4yixc3');
-        console.log('getValue', linkname);
-        ```
-    
-    8.  `this.getComponent('component_ID')`
-        ```js
-        var linkname = this.getComponent('link_0t4yixc3');
-        console.log('getComponent', linkname);
-        ```
-
-!!! info Add multiple classes
-    Use the following syntax to add multiple classes to a component:
-    ```js
-    this.addClassName('componentID', 'class1', 'class2')
-    ```
 
 ## Config
 

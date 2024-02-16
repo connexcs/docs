@@ -36,7 +36,7 @@ Tables provide a structured format for organizing related data within a form. Us
 |`this.show`|Displays the field|`(fields: String`&#124;`String[])`|
 
 !!! Info
-    1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
+    1. The show() and hide() methods can also be used to control the visibility of a table in response to user input.
     2. **Fields** refers to a **component ID** or a **list of component IDs**. You can fetch the ID from the **Component Attribute** panel in the Page Builder.
     3. Before using **this.show(fields)**, make sure the component is **hidden**. This can be done using **this.hide(fields)** or by **enabling** the **Hidden checkbox** in the Component Attribute panel.
 

@@ -48,7 +48,7 @@ It serves as a visual and functional indicator of progress, improving user exper
 |`this.setData`|Set the data in the field. The Value object should be of type { componentId: componentValue }|`(Value: Object)`|
 
 !!! Info
-    1. The show() and hide() methods can also be used to control the visibility of an alert in response to user input.
+    1. The show() and hide() methods can also be used to control the visibility of a step component in response to user input.
     2. **Fields** refers to a **component ID** or a **list of component IDs**. You can fetch the ID from the **Component Attribute** panel in the Page Builder.
     3. Before using **this.show(fields)**, make sure the component is **hidden**. This can be done using **this.hide(fields)** or by **enabling** the **Hidden checkbox** in the Component Attribute panel.
 
@@ -59,7 +59,7 @@ It serves as a visual and functional indicator of progress, improving user exper
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/setps21.png">
+<img src= "/apps/components/img/steps21.png">
 
 !!! Example
     1. `this.addClassName(fields, className)`
