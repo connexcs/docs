@@ -30,7 +30,7 @@ To setup, click your name in the upper right corner and select `My Profile`.
     
     To configure this on ConnexCS, click `Enable` and follow prompts for QR code. You must install a 2FA/TFA app on your phone. 
     
-    <img src= "/customer-portal/img/profile.png">
+    <img src= "/customer-portal/img/profile.png" width= "500">
 
 ## Graphs
 
