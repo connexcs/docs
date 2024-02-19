@@ -18,14 +18,6 @@ Imagine you have a form with hundreds of items to choose from, like products in 
 6. **Performance optimization**: Reduces loading times by displaying only the necessary data on each page, especially for complex forms.
 7. **Accessibility**: Makes the form easier to navigate for users with disabilities who may rely on keyboard navigation or screen readers.
 
-### Interactivity
-
-1. Animated Page Numbers
-2. Interactive Thumbnails
-3. Progress Bar
-4. Smart Buttons
-5. Scrolling Controls
-
 ## API
 
 ### Events
@@ -113,12 +105,6 @@ Imagine you have a form with hundreds of items to choose from, like products in 
         var pagename = this.getComponent('pagination_oet28hkk');
         console.log('getComponent', pagename);
         ```
-
-!!! info Add multiple classes
-    Use the following syntax to add multiple classes to a component:
-    ```js
-    this.addClassName('componentID', 'class1', 'class2')
-    ```
 
 ## Config
 
