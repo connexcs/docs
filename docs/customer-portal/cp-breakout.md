@@ -24,7 +24,8 @@ The Columns display data for each call
 |**Destination**|The destination number of the call|
 |**Attempts**|The number of retries|
 |**Connected**|Final status of the call|
-|**Total Customer Charge**|Pending|
+|**Total Provider Charge**|How much your provider is charging you|
+|**Total Customer Charge**|How much you are charging your customer|
 |**Duration**|Length of the call, in minutes and seconds|
 |**ASR (Answer Seizure Ratio)**|ASR is the number of connected calls divided by the total calls (represented as a %)|
 |**ACD**|Average Call Duration|
