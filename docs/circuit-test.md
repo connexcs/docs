@@ -44,6 +44,50 @@ View a history of completed circuit tests, including the provider the call route
 + **Filters** pop out on the right allowing you to filter some of your data.
 + Adjust the Column ordering.
 
+|Parameter|Description|
+|---------|-----------|
+|**Created**| When the log was created mm/dd/yyyy|
+|**Provider**|List of your providers|
+|**MOS- Mean Opinion Score**|To find the call quality|
+|**DTMF- Dual Tone Multi Frequency**|diagnose and resolve various communication problems, enhancing network performance and ensuring smooth communication experiences|
+|**Answered**||
+|**Destroyed**||
+|**Direction**||
+|**Card**||
+|**Destination Number**|Recipient's number |
+|**Caller**|1. **ID**: Caller's ID number <br> 2. **Display Name** of the caller <br> 3. **IP**: IP address of the caller|
+|**Called**|1. **ID**: Recipient's ID number <br> 2. **Display Name** of the recipient <br> 3. **IP**: IP address of the recipient|
+|**SIP Call ID**|SIP call ID number|
+|**Disconnection**|1. **Code**: standardized code used to identify the reason why a call was disconnected. <br> 2. **Status**: Specific reason why a call was terminated unexpectedly. <br> These **codes** and **status **are crucial for troubleshooting issues, analyzing network performance, and understanding call quality.|
+|**Released By**||
+|**Answer Delay**|Time it takes between the initiation of a call and the moment the called party answers. It's a crucial metric used to gauge responsiveness and efficiency in call handling, impacting both user experience and operational effectiveness.|
+|**_100_Delay**||
+|**_180_Delay**||
+|**_183_Delay**||
+|**_100_183_Delay**||
+|**Audio Signal Delay (Latency)**| Time it takes for an audio signal to travel from the sender to the receiver. Its a crucial factor in the quality of voice and video communication in telecommunication systems|
+|**Latest RBT Delay**|The delay between selecting a Ring Back Tone (RBT) and it actually playing for callers can vary significantly|
+|**Early Media Peak Signal Level**|The highest volume level measured during the initial audio exchange before the call is fully connected. This information could be useful for QoS, Network troubleshooting, Media optimization|
+|**Active Media Peak Signal Level**|refers to the highest power level attained by the audio or video signal during a call or streaming session| This information could be useful for Audio/video quality, Network performance, Regulation compliance|
+|**Recorded**| Recorded received call file name, transmitted call file name, mix file name|
+|**Answered Duration**| Duration of the answered call|
+|**Current Calls Count**|Number of current calls|
+|**SIP Pcap FileName**|Filename of a SIP Pcap (packet capture) file|
+|**SIP and RTP Pcap FileName**|Filename of a SIP and RTP Pcap (packet capture) file|
+|**RTP Codec**|Name of the RTP Codec used in the call|
+|**RTP Caller**|1. **Address** of the caller. <br> 2. **Port** used by the caller for call sessions. <br> 3. **Synchronization Source (SSRC)** identifier for a specific source of synchronized multimedia data within an RTP session <br> 4. **G107R** <br> 5. **G107MOS** <br> 6. **Packets Count**: Number of packets. <br> 7. **Lost Packets**: Number of packets lost in transmission <br> 8. **Max RFC3550 Jitter**: Refers to the maximum value of the calculated jitter for an RTP stream over a specified measurement interval. High jitter can negatively impact the quality of real-time applications such as voice and video calls, as it can lead to stuttering, delays, and distortions. <br> 9. **Mean RFC3550 Jitter**: Refers to the average deviation of the time it takes for consecutive RTP packets to arrive at the receiver, compared to the sender's timestamps. It's a measure of the variability in the packet arrival times, which can be caused by various factors such as network congestion, routing changes, and packet loss. <br> 10. **Max Delta**: refers to the largest difference in arrival times between two consecutive RTP packets received at the receiver. It essentially measures the maximum variation in the time it takes for packets to arrive, which can be an indicator of network issues like congestion or variable latency. <br> 11. **Min Delta**: Minimum time difference between RTP packets. <br> 12. **Packet Time**: <br> 13. **Non Silent Percentage** <br> 14. **Delay**: Time it takes for an RTP packet to travel from the sender to the receiver|
+|**RTP Called**|1. **Address** of the recipient. <br> 2. **Port** used by the recipient for call sessions. <br> 3. **Synchronization Source (SSRC)** identifier for a specific source of synchronized multimedia data within an RTP session <br> 4. **G107R** <br> 5. **G107MOS** <br> 6. **Packets Count**: Number of packets. <br> 7. **Lost Packets**: Number of packets lost in transmission <br> 8. **Max RFC3550 Jitter**: Refers to the maximum value of the calculated jitter for an RTP stream over a specified measurement interval. High jitter can negatively impact the quality of real-time applications such as voice and video calls, as it can lead to stuttering, delays, and distortions. <br> 9. **Mean RFC3550 Jitter**: Refers to the average deviation of the time it takes for consecutive RTP packets to arrive at the receiver, compared to the sender's timestamps. It's a measure of the variability in the packet arrival times, which can be caused by various factors such as network congestion, routing changes, and packet loss. <br> 10. **Max Delta**: refers to the largest difference in arrival times between two consecutive RTP packets received at the receiver. It essentially measures the maximum variation in the time it takes for packets to arrive, which can be an indicator of network issues like congestion or variable latency. <br> 11. **Min Delta**: Minimum time difference between RTP packets. <br> 12. **Packet Time**: <br> 13. **Non Silent Percentage** <br> 14. **Delay**: Time it takes for an RTP packet to travel from the sender to the receiver|
+|**SDP RTP**|1. **Caller Delay**: <br> 2. **Called Delay**|
+|**RTCP RTT**|1. **Max**: This represents the longest measured round-trip time for any of the received RTCP packets during a specific interval. <br> 2. **Min**: This represents the shortest measured round-trip time for any of the received RTCP packets during a specific interval.|
+|**RTCP Caller**|1. **Jitter Max**: Highest recorded difference between the arrival times of consecutive RTP packets received from the caller (sender). It signifies the maximum variation in packet arrival times, which can contribute to audio/video distortion and choppiness. <br> 2. **Jitter Mean**: This value represents the average difference between the arrival times of consecutive RTP packets received from the caller. It provides a general sense of the overall variability in packet arrival times, impacting perceived quality. <br> 3. **Lost Packets**: This value indicates the number of RTP packets sent by the caller that weren't received by the receiver.|
+|**RTCP Called**|1. **Jitter Max**: largest observed absolute difference between consecutive packet arrival times, expressed in the same units as the sender's timestamp clock. <br> 2. **Jitter Mean**: Average amount of jitter experienced by the receiver, calculated as the average of the absolute differences between consecutive packet arrival times, again using the sender's timestamp units. <br> 3. **Lost Packets**: Total number of packets that the receiver didn't receive out of the expected number sent by the sender.|
+|**Test ID**||
+|**RTP Rx Packets**|1. **Total**: Total number of received packets. <br> 2. **Discarded**: Total number of discarded received packets. <br> 3. **Discarded Duplicated**: Total number of duplicated discarded received packets. <br> 4. **Discarded Early**: <br> 5. **Discarded Late**: <br> 6. **Discarded Error**:|
+|**RTP Codec Sample Rate**| Refers to the number of times per second that an audio or video signal is sampled for encoding and decoding within the RTP framework. It plays a crucial role in determining the quality and bandwidth requirements of the media content being transmitted.|
+|**Ingress ID**|Ingress ID of the call|
+|**RTCP caller DSCP**|RTP caller DSCP refers to the Differentiated Services Code Point (DSCP) value assigned to outgoing RTP media packets by the sender (caller). DSCP is a mechanism used in network traffic management to prioritize specific types of traffic based on predefined classes.|
+|**RTCP called DSCP**|RTP called DSCP refers to the DSCP value assigned to incoming RTP media packets to the recipient|
+
 ### Run Circuit Test
 
 To create a *one-time Circuit Test*, go to **Management :material-menu-right: Circuit Test :material-menu-right: Log**:
