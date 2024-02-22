@@ -31,7 +31,7 @@ A **Rate** component allows users to express their level of satisfaction, prefer
 
 | **Name**| **Description**|
 |---------|----------------|
-| `onChange (element)| The onChange event occurs when the value of a field is changed|
+| `onChange (element)`| The onChange event occurs when the value of a field is changed|
 
 ### Methods
 
@@ -41,6 +41,7 @@ A **Rate** component allows users to express their level of satisfaction, prefer
 |`this.removeClassName`|Remove style class from a form item|`(fields: String`&#124;`String[], className: String)`|
 |`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String) : Object`|
 |`this.getValues`|Gets the current values of all fields|`() : Object`|
+|`this.getValue`|Get A Value From a component|`(fieldName: String)`|
 |`this.hide`|Hides the field|`(fields: String`&#124;`String[])`|
 |`this.show`|Displays the field|`(fields: String`&#124;`String[])`|
 |`this.disable`| Disable rate field from user interaction|`(fields: String`&#124;`String[])`|
@@ -60,7 +61,7 @@ A **Rate** component allows users to express their level of satisfaction, prefer
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/rate1.png">
+<img src= "/apps/components/img/rate2.png">
 
 !!! Example
     1. `this.addClassName(fields, className)`
@@ -120,12 +121,6 @@ A **Rate** component allows users to express their level of satisfaction, prefer
         console.log('getComponent', ratename);
         ```
 
-!!! info Add multiple classes
-    Use the following syntax to add multiple classes to a component:
-    ```js
-    this.addClassName('componentID', 'class1', 'class2')
-    ```
-
 ## Config
 
 | **Name**|**Description**|**Icon**|
@@ -138,7 +133,7 @@ A **Rate** component allows users to express their level of satisfaction, prefer
 |**Hide Label**| Hides the label on the form|<img src= "/apps/components/img/input_hidelabel.png">|
 |**Text Prompt**| A description to aid the user when completing the field|<img src= "/apps/components/img/input_textprompt.png">|
 |**Maximum**|Number of stars for rating|<img src= "/apps/components/img/rate_maximum.png">|
-|**Allow Half**|Enable this option to allow half rating|<img src= "/apps/components/img/rate_allowhalf.png">|
+|**Allow Half**|Enable this option to allow half rating. Half rating values are decimals like 3.5|<img src= "/apps/components/img/rate_allowhalf.png">|
 |**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** action to hide the field. <br> Enable **Disabled** action to make the field unusable. <br>Enable **Show Score** for displaying the rate score.|<img src= "/apps/components/img/rate_attributeaction.png">|
 
