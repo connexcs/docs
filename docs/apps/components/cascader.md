@@ -104,7 +104,7 @@ Here's a general approach to integrating interactivity:
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/cascader1.png">
+<img src= "/apps/components/img/cascader2.png">
 
 !!! Example
     1. `this.addClassName(fields, className)`

@@ -115,7 +115,7 @@ Examples may include:
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/date1.png">
+<img src= "/apps/components/img/date2.png">
 
 !!! Example
     1. `this.addClassName(fields, className)`

@@ -61,7 +61,7 @@ It's like a set of switches where only one can be "on" at any given moment.
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/radio1.png">
+<img src= "/apps/components/img/radio2.png">
 
 !!! Example
     1. `this.addClassName(fields, className)`

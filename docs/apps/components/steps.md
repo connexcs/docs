@@ -13,18 +13,13 @@ It serves as a visual and functional indicator of progress, improving user exper
 1. Improved user experience
 2. Reduced errors
 3. Increased data quality
-4. Better conversion rates
-5. Long registration forms
-6. Checkout processes
-7. Wizard-based applications
-8. Multi-page questionnaires
+4. Easy Checkout processes
+5. Multi-page questionnaires
 
 ### Interactivity
 
-1. **Drag and drop reordering**: Allow users to rearrange the order of steps if applicable to their specific needs or preferences.
-2. **Conditional branching**: Based on user choices in previous steps, branch out to different sets of subsequent steps, creating a customized form experience.
-3. **Skippable steps**: Provide options for users to skip optional steps based on their answers or pre-filled information, saving them time and effort.
-4. **Jump-to options**: Enable users to easily jump back and forth between previously completed steps for review or edits, offering flexibility and control.
+1. **Skippable steps**: Provide options for users to skip optional steps based on their answers or pre-filled information, saving them time and effort.
+2. **Jump-to options**: Enable users to easily jump back and forth between previously completed steps for review or edits, offering flexibility and control.
 
 ## API
 
@@ -59,7 +54,7 @@ It serves as a visual and functional indicator of progress, improving user exper
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/steps21.png">
+<img src= "/apps/components/img/steps22.png">
 
 !!! Example
     1. `this.addClassName(fields, className)`

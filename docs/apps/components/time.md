@@ -58,7 +58,7 @@
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/time1.png">
+<img src= "/apps/components/img/time2.png">
 
 !!! Example
     1. `this.addClassName(fields, className)`

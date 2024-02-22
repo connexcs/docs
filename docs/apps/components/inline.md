@@ -40,7 +40,7 @@ The **Inline** layout approach allows for a more compact and organized form layo
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/inline1.png">
+<img src= "/apps/components/img/inline2.png">
 
 !!! Example
     1. `this.addClassName(fields, className)`

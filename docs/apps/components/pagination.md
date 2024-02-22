@@ -52,7 +52,7 @@ Imagine you have a form with hundreds of items to choose from, like products in 
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/pagination1.png">
+<img src= "/apps/components/img/pagination2.png">
 
 !!! Example
     1. `this.addClassName(fields, className)`

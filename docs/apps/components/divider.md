@@ -36,7 +36,7 @@ It can be used to improve the readability and usability of forms by making it ea
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/divider1.png">
+<img src= "/apps/components/img/divider2.png">
 
 !!! Example
     1. `this.hide(fields)`
