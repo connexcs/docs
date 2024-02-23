@@ -73,7 +73,7 @@ Sub-form component, for list (array) type form data, uses Table layout, doesn't 
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/subform2.png">
+<img src= "/apps/components/img/subform3.png">
 
 !!! Example
     1. `this.addClassName(fields, className)`
