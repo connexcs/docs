@@ -278,7 +278,7 @@ You can have take a look at the various SIP Timers in the table below:
 2. A window will appear with **Raw** and **Shaken** tabs. Only if you are signing calls using **Shaken** certificate.
 3. The **Shaken** tab will have the decoded information from the **Raw** tab like **Algorithm**, **Public Certificate URL**, **Attestation Level**, **Dialled Number**, **CLI**, **Unique Customer ID**, **Timestamp**.
 
-<img src= "docs/misc/img/shaken.png">
+<img src= "docs/logging/shaken.png">
 
 ## Call Release Reasons
 
