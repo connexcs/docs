@@ -16,10 +16,11 @@ The Apps can be created by the other customers or developers and can be used by 
 <img src= "/setup/img/appstore.png">
 
 3.After hitting the Install button. A window appears which has 2 fields, **App Name** you can either change the name of the application or keep it same. The second allows you to select the  **Version** of the application.
+
 4.Click on **Install** and the App will be installed on your user account.
 
-<img src= "/setup/img/appstore1.png">
+<img src= "/setup/img/appstore1.png" width= "500">
 
 5.You can view the **Description**, **Installed Versions**, **All Versions** and any **Documentation** related to the Application.
 
-<img src= "/setup/img/appstore2.png">
+<img src= "/setup/img/appstore2.png" width= "500">
