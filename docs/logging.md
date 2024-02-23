@@ -249,7 +249,7 @@ From message 1 till message 7, the whole conversation is a **Dialog**.
 You can have take a look at the various SIP Timers in the table below:
 
 |**Timer**|**Default value**|**Section**|**Meaning**|
-|-------------|-------------------------|-------------|------------------------------------------------------------------------------|
+|---------|-----------------|-----------|-----------|
 | **T1** | 500 ms | 17.1.1.1 | Round-trip time (RTT) estimate|
 | **T2** | 4 sec.| 17.1.2.2| Maximum retransmission interval for non-INVITE requests and INVITE responses |
 | **T4** | 5 sec.| 17.1.2.2| Maximum duration that a message can remain in the network|
@@ -271,6 +271,14 @@ You can have take a look at the various SIP Timers in the table below:
 
 [logging-sip]: /misc/img/logging-sip.png "SIP Traces"
 [logging-4]: /misc/img/236.png "logging-4"
+
+### Decode Identity header in SIP Trace
+
+1. Click on the **INVITE** packet in the SIP Trace.
+2. A window will appear with **Raw** and **Shaken** tabs. Only if you are signing calls using **Shaken** certificate.
+3. The **Shaken** tab will have the decoded information from the **Raw** tab like **Algorithm**, **Public Certificate URL**, **Attestation Level**, **Dialled Number**, **CLI**, **Unique Customer ID**, **Timestamp**.
+
+<img src= "misc/img/shaken.png">
 
 ## Call Release Reasons
 

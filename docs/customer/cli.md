@@ -277,7 +277,7 @@ The Performance based CLI Selection chooses the CLI with the best ASR from a lar
 1. If there is more than 1000 records in the CLI Database, it will randomly pick 1000, then pick from that.
 2. An ASR lookup is initiated and the ASR reading requires at least 50 calls. It does a sliding window over the last 7 days.
 3. If there are less than 50 calls to this CLI (or none), it will assume an ASR of 50%.
-4. It will pick the top 5 performing CLI's every 5 minutes.
+4. It will pick the top 5 performing CLIs every 5 minutes.
 
 **Steps to use Performance CLI Selection**
 
@@ -285,9 +285,12 @@ The Performance based CLI Selection chooses the CLI with the best ASR from a lar
 2. Select **Yes** for the **Forced** field.
 3. Select a **Database**.
 4. From the drop-down next to **Flags** select Performance CLI Selection.
-5. Click `Save`.
+5. **Performance Top Batch Size** choose how many of the top CLIs we use together.
+6. **Performance Interval**: Choose from the dropdown how long this batch stays active(in seconds). You can choose from the minimum value of 5 minutes and maximum value of 1 day with intervals of 300 seconds.
+7. **Performance Ban Time**: How long a used DID is paused for. You can choose the value from the dropdown with minimum value being 5 minutes and maximumm value being 90 days. The value is stored in **seconds**.
+8. Click `Save`.
 
-<img src= "/customer/img/performancecli1.png"> 
+<img src= "/customer/img/performancecli2.png"> 
 
 ##### Deterministic Sequential CLI Persistence
 
