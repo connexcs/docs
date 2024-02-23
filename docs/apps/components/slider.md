@@ -11,7 +11,7 @@
 ## Use Case
 
 1. Setting price filters
-2. Choosing age brackets
+2. Choosing age
 3. Choose quantities of products or services
 
 ### Interactivity
