@@ -1,8 +1,8 @@
 # Database
 
-The **Database** allows you to create custom persistent data storage. A datastore can be specific to a single customer or global (used with any customer).
+The **Database** allows you to create custom persistent data storage. A data store can be specific to a single customer or global (used with any customer).
 
-You can use **Database** for activities like checking list of numbers, caching external lookups, or creating stateful applications that provide users a set number of free minutes per month.
+You can use **Database** for activities like checking list of numbers, caching external lookup, or creating stateful applications that provide users a set number of free minutes per month.
 
 ## Steps to create a Database
 
@@ -19,7 +19,7 @@ You can use **Database** for activities like checking list of numbers, caching e
 6.Select from the **Dataset Type** which are the preset data storage options. The two options are:
 
 + **Key / Value** - Contains a basic Key / Value Storage.
-+ **Lead Set** - Contains the most common fields when using a datastore for customer / campaign data which you can use with dialers.
++ **Lead Set** - Contains the most common fields when using a data store for customer / campaign data which you can use with dialers.
 
 <img src="/developers/img/db2.png" width="300">
 
@@ -31,7 +31,7 @@ You can use **Database** for activities like checking list of numbers, caching e
 
 ## Bulk Upload
 
-You can bulk upload data and bulk delete data from the datastore, both from the customer portal and the control panel.
+You can bulk upload data and bulk delete data from the data store, both from the customer portal and the control panel.
 
 !!! important
 	Bulk Operations aren't audited.

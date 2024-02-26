@@ -19,7 +19,7 @@ You can include some more modules (from npm), available for applications and dri
 The purpose is to keep the sandbox lightweight and include only the necessary modules:
 
 |Modules||||
-|---|---|---|---|
+|-------|-|-|-|
 |**axios**|axios-cookiejar-support|card-validator|csv-parse/lib/sync|
 |**data-forge**|decompress-zip|elasticemail-webapiclient|fast-csv|
 |**fast-toml**|ftp|helpscout-2.0|moment|
@@ -31,7 +31,7 @@ You can find sample scripts in our GitHub repository > [**example applications**
 
 * Do Not Call Lists
 * Custom Fraud Detection
-* Internal Automations
+* Internal Automation
 * Capture and process the Control Panel and Customer Portal forms
 * Inbound and Outbound Call Filtering
 * Class 5 Programmable Voice Applications
@@ -86,7 +86,7 @@ function main (data = {}, ctx) {
 
 !!! warning "Potential Sync Issues"
     To avoid the system losing synchronisation with your script and the connection crashing, execute ALL async functions with `await`.
-	If it isn't implemented correctly, it affects thatbilling and call stability.
+	If it isn't implemented correctly, it affects that billing and call stability.
 
 ### Form Submission
 

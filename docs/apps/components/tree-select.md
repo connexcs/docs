@@ -107,12 +107,6 @@ Unlike a standard dropdown menu with a flat list of options, a tree-select organ
         {"treeselect_4xgiru3n": "Option 2",})
         ```
 
-!!! info Add multiple classes
-    Use the following syntax to add multiple classes to a component:
-    ```js
-    this.addClassName('componentID', 'class1', 'class2')
-    ```
-
 ## Config
 
 | **Name**|**Description**|**Icon**|

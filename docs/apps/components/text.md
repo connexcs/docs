@@ -116,11 +116,6 @@ Users can type text, numbers, or symbols into the designated field, providing es
         console.log('getComponent', textname);
         ```
 
-!!! info Add multiple classes
-    Use the following syntax to add multiple classes to a component:
-    ```js
-    this.addClassName('componentID', 'class1', 'class2')
-    ```
 
 ## Config
 

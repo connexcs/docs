@@ -46,7 +46,6 @@ It offers a clear and efficient way for users to select one of two mutually excl
 |---------|----------------|--------------|
 |`this.addClassName`|Add style class to a form item|`(fields: String`&#124;`String[], className: String)`|
 |`this.removeClassName`|Remove style class from a form item|`(fields: String`&#124;`String[], className: String)`|
-|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String) : Object`|
 |`this.getValues`|Gets the current values of all fields|`() : Object`|
 |`this.hide`|Hides the field|`(fields: String`&#124;`String[])`|
 |`this.show`|Displays the field|`(fields: String`&#124;`String[])`|
@@ -120,18 +119,6 @@ It offers a clear and efficient way for users to select one of two mutually excl
         var switchname = this.getValue('switch_ornfn03c');
         console.log('getValue', switchname);
         ```
-
-    9.  `this.getComponent('component_ID')`
-        ```js
-        var switchname = this.getComponent('switch_ornfn03c');
-        console.log('getComponent', switchname);
-        ```
-
-!!! info Add multiple classes
-    Use the following syntax to add multiple classes to a component:
-    ```js
-    this.addClassName('componentID', 'class1', 'class2')
-    ```
 
 ## Config
 

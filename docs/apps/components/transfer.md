@@ -26,8 +26,6 @@ It's commonly used to create interactive selections, manage data assignments, or
 | **Name**| **Description**|
 |---------|----------------|
 |`onChange (element)`| The onChange event occurs when the value of a field is changed|
-|`onFocus (element)`| The onfocus event occurs when a field gets focus|
-|`onBlur (element)`| The onblur event occurs when a field loses focus|
 
 ### Methods
 
@@ -94,12 +92,6 @@ It's commonly used to create interactive selections, manage data assignments, or
         ```js
         this.enable(['transfer_jhg5bttj'])
         ```
-
-!!! info Add multiple classes
-    Use the following syntax to add multiple classes to a component:
-    ```js
-    this.addClassName('componentID', 'class1', 'class2')
-    ```
 
 ## Config
 

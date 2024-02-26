@@ -114,12 +114,6 @@ The **Text-Area** element allows users to write freely across multiple lines, id
         console.log('getComponent', textareaname);
         ```
 
-!!! info Add multiple classes
-    Use the following syntax to add multiple classes to a component:
-    ```js
-    this.addClassName('componentID', 'class1', 'class2')
-    ```
-
 ## Config
 
 | **Name**|**Description**|**Icon**|

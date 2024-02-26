@@ -28,7 +28,7 @@ OTT Mobile Application
 ### Events
 
 |**Name**|**Description**|
-|------------------------|-----------------------------------------------------------|
+|--------|---------------|
 |`onAnswer (detail)`|Triggers when a call is answered by the other party|
 |`onRingingOut (detail)`|Triggers when 180/183 is receiver from the other party|
 |`onRingingIn (detail)`| Triggers when an incoming call starts ringing|
@@ -36,6 +36,8 @@ OTT Mobile Application
 |`onRegistered ()`| Triggers when SIP registration is successful|
 |`onUnregistered ()`| Triggers when SIP is un-registration|
 |`onError (error)`| Triggers on any internal error|
+|`this.hide`|Hides the field|
+|`this.show`|Shows the field|
 
 ### Methods
 

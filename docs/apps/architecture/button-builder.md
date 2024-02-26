@@ -22,13 +22,13 @@ Use **Button Builder** in combination to create a button that you can place in a
 + **Area:** You can select the region where you place your button like *Control Panel*, *Customer Portal* or *Webphone*.
     + Control Panel: You can place the button either on Side Navigation bar, Page or Row(App). Row(App) allows you place the button in Actions Column next to 'Publish' if the 'App' record id matches with button-builder 'app_id' then display the button.
     + Customer Portal: You can place the button either on Side Navigation bar or Page.
-    + Webphone: You can place the button either on Side Navigation bar, Page or Footer Navigation.
+    + WebPhone: You can place the button either on Side Navigation bar, Page or Footer Navigation.
 + **Placement:** This selection will display the button at the top of the Customers list, Carriers list, or Invoices.
 + **Company**: Select the company from the drop-down.
 + **ScriptForge:** When you click the button, select Script Forge (if any) to launch.
 + + **Function:** It has 2 uses:
   + The selected function will executes when you select ScriptForge.
-  + When using services like the Webphone, the function can perform additional tasks on the page, like placing or terminating a call.
+  + When using services like the WebPhone, the function can perform additional tasks on the page, like placing or terminating a call.
 + **Page:** Page is the dynamic page that the button opens when clicked.
 + **App:** Select the application you want to place your button.
 + **Min / Max Select:** When there are no choices, the button is still accessible. Limitations entered will apply mix/max limits to the selection.

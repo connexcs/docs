@@ -4,7 +4,7 @@ The **App** feature is like an umbrella, which holds the features like **Button 
 
 An **App** is a discrete component can be installed and uninstalled.
 
-You can create your own App and publish it to the **App Store (Repository)**. Also, other people can also download your Apps.
+You can create your own App and publish it to the **ConnexCS App Store**. Also, other people can also download your Apps.
 
 ## Step to create an App
 

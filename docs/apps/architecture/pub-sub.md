@@ -2,7 +2,7 @@
 
 A **Pub/Sub** bus, short for **Publish/Subscribe** bus, is a messaging system that enables asynchronous communication between different parts of an application or system. It functions like a central communication hub where:
 
-* **Publishers**: Emit events or messages containing information about something that happened (e.g., a user logged in, a product was purchased, a sensor detected a change).
+* **Publishers**: Emit events or messages containing information about something that happened (for example, a user logged in, a product was purchased, a sensor detected a change).
 
 * **Subscribers**: Register to receive specific types of events. They're notified and receive the published messages whenever an event relevant to their interests occurs.
 

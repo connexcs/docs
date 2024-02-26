@@ -48,7 +48,6 @@ Each tab acts as a dedicated space for specific information, guiding users throu
 |`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String) : Object`|
 |`this.hide`|Hides the field|`(fields: String`&#124;`String[])`|
 |`this.show`|Displays the field|`(fields: String`&#124;`String[]`|
-|`this.getValue`|Get A Value From a component|`(fieldName: String)`|
 |`this.getValues`|Gets the current values of all fields|`() : Object`|
 
 !!! Info
@@ -83,50 +82,39 @@ Each tab acts as a dedicated space for specific information, guiding users throu
         this.removeClassName('tabs_8r5c1t2n, 'abc')
         ```
     
-    3. `this.getValues()`
-        ```js
-        var data = this.getValues();
-        console.log(data);
-        ```
-    
-    4. `this.hide(fields)`
+    3. `this.hide(fields)`
         ```js
         var fields= ['tabs_8r5c1t2n']
         this.hide(fields)
         ```
     
-    5. `this.show(fields)`
+    4. `this.show(fields)`
         ```js
         var fields= ['tabs_8r5c1t2n']
         this.show(fields)
         ```
     
-    6. `this.disable(['fields'])`
+    5. `this.disable(['fields'])`
         ```js
         this.disable(['tabs_8r5c1t2n'])
         ```
     
-    7. `this.enable(['fields'])`
+    6. `this.enable(['fields'])`
         ```js
         this.enable(['tabs_8r5c1t2n'])
         ```
     
-    8.  `this.getValue('fieldName')`
+    7. `this.getValues()`
         ```js
-        var tabsname = this.getValue('tabs_8r5c1t2n');
-        console.log('getValue', tabsname);
+        var data = this.getValues();
+        console.log(data);
         ```
     
-    9.  `this.getComponent('component_ID')`
+    8.  `this.getComponent('component_ID')`
         ```js
         var tabsname = this.getComponent('tabs_8r5c1t2n');
         console.log('getComponent', tabsname);
         ```
-!!! info Add multiple classes
-    Use the following syntax to add multiple classes to a component:
-    ```js
-    this.addClassName('componentID', 'class1', 'class2')
-    ```
 
 ## Config
 
@@ -134,7 +122,7 @@ Each tab acts as a dedicated space for specific information, guiding users throu
 |---------|---------------|--------|
 |**ID**| The tab component's unique identifier|<img src= "/apps/components/img/input_id.png">|
 |**Type**|Choose the arrangement of tabs from **Default**, **Tabs** or **Border-Card**|<img src= "/apps/components/img/tabs_type.png">|
-|**Tab Position**|Choose the tabs from **Top**, **Left** or **Right** or **Bottom**|<img src= "/apps/components/img/tabs_type.png">|
+|**Tab Position**|Choose the tabs from **Top**, **Left** or **Right** or **Bottom**|<img src= "/apps/components/img/tabposition2.png">|
 |**Tab Options**|Choose the number of tabs you wish to have in the form|<img src= "/apps/components/img/tabs_options.png">|
 |**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**| Enable **Hidden** action to hide the field|<img src= "/apps/components/img/alert_arrtibuteaction.png">|
