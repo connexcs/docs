@@ -15,9 +15,10 @@ Common use cases include: Database Administration Tools, Web Application, Report
 2.Select the App and enter the domain where the App will be visible and accessible.
 3.Click `Save`.
 
-<img src= "/apps/img/query2.png" width="350">
+<img src= "/apps/img/query21.png" width="350">
 
 4.The created Query will be visible on the IDE panel under **Query Builder** tab.
+
 5.Click on your created **Query**.
 
 <img src= "/apps/img/query3.png" width="350">

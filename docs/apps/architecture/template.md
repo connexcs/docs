@@ -11,16 +11,15 @@ ConnexCS **Templates** use the mustash-compatible template language [**Handlebar
 
 1. Navigate to **IDE** :material-menu-right: `+` sign :material-menu-right: **Template**.
 
-<img src= "/apps/img/template1.png">
+<img src= "/apps/img/template12.png">
 
 2.Fill out the following details:
-   + Name of the **Template**.
-   + Select the **Application** for which you want to integrate the template.
-   + Fill out the template **Subject**.
-   + Enter the **SMS** details.
-   + Enter the **Text**.
+    + Name of the **Template**.
+    + Select the **Application** for which you want to integrate the template.
+    + Fill out the template **Subject**.
+    + Enter the **SMS** details.
 
-<img src= "/apps/img/template2.png" width="300">
+<img src= "/apps/img/template21.png" width="300">
 
 3.Click on `Save`.
 
@@ -28,7 +27,7 @@ ConnexCS **Templates** use the mustash-compatible template language [**Handlebar
 
 5.Enter the HTML code. Click on `Save` and `Run`.
 
-<img src= "/apps/img/template3.png">
+<img src= "/apps/img/template31.png">
 
 6.**Preview** is available on the right side of the screen.
 

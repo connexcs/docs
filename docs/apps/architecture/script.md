@@ -128,7 +128,7 @@ module.export = {
 
 === "Basic"
 
-    1. To add a script, login to your Control Panel. Click on IDE :material menu-right: +, and select `Scriptforge`.
+    1. To add a script, login to your Control Panel. Click on IDE :material-menu-right: +, and select `Scriptforge`.
     <img src= "/apps/img/app_scriptforge1.png" width= "400">
 
     2. Specify the script **Name**.

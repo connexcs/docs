@@ -26,9 +26,9 @@ Use **Button Builder** in combination to create a button that you can place in a
 + **Placement:** This selection will display the button at the top of the Customers list, Carriers list, or Invoices.
 + **Company**: Select the company from the drop-down.
 + **ScriptForge:** When you click the button, select Script Forge (if any) to launch.
-+ + **Function:** It has 2 uses:
-  + The selected function will executes when you select ScriptForge.
-  + When using services like the WebPhone, the function can perform additional tasks on the page, like placing or terminating a call.
++ **Function:** It has 2 uses:
+    + The selected function will executes when you select ScriptForge.
+    + When using services like the WebPhone, the function can perform additional tasks on the page, like placing or terminating a call.
 + **Page:** Page is the dynamic page that the button opens when clicked.
 + **App:** Select the application you want to place your button.
 + **Min / Max Select:** When there are no choices, the button is still accessible. Limitations entered will apply mix/max limits to the selection.
@@ -36,7 +36,7 @@ Use **Button Builder** in combination to create a button that you can place in a
 
 2.Click **`Save`** to make the new button available for placement.
 
-<img src= "/developers/img/button1.png" width= "350">
+<img src= "/apps/img/buttonbuilder2.png">
 
 3.The created **Button** will be visible on the IDE panel under **Button Builder**. Click on the created button, also you have the option to `Edit` the button.
 
