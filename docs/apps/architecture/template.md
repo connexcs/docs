@@ -14,6 +14,7 @@ ConnexCS **Templates** use the mustash-compatible template language [**Handlebar
 <img src= "/apps/img/template12.png">
 
 2.Fill out the following details:
+
     + Name of the **Template**.
     + Select the **Application** for which you want to integrate the template.
     + Fill out the template **Subject**.
@@ -27,7 +28,7 @@ ConnexCS **Templates** use the mustash-compatible template language [**Handlebar
 
 5.Enter the HTML code. Click on `Save` and `Run`.
 
-<img src= "/apps/img/template31.png">
+<img src= "/apps/img/template3.png">
 
 6.**Preview** is available on the right side of the screen.
 
