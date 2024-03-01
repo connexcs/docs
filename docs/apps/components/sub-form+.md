@@ -135,6 +135,7 @@ Complex layout Sub-Form component for list (array) type form data, supporting ne
     10. `this.setData(Value)`
         ```js
         this.setData({ subform_e4cjz3nf: [ { inputId: '1234', inputId2: 'value2' } ] })
+        ```
 
 ## Config
 
