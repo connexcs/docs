@@ -55,6 +55,9 @@ Complex layout Sub-Form component for list (array) type form data, supporting ne
 |`this.show`|Displays the field|`(fields: String \| String[])`|
 |`this.disable`| Disable sub-form+ field from user interaction|`(fields: String`&#124;`String[])`|
 |`this.enable`| Enable sub-form+ field from user interaction|`(fields: String`&#124;`String[])`|
+|`this.setData`|Set the data in the field. The Value object should be of type { componentId: componentValue }|`(Value: Object)`|
+|`this.getValues`|Gets the current values of all fields|`() : Object`|
+|`this.getValue`|Get A Value From a component|`(fieldName: String)`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of a sub-form+ component in response to user input.
@@ -117,21 +120,38 @@ Complex layout Sub-Form component for list (array) type form data, supporting ne
         console.log('getComponent', subname);
         ```
 
+    8. `this.getValues()`
+        ```js
+        var data = this.getValues();
+        console.log(data);
+        ```
+    
+    9. `this.getValue('fieldName')`
+        ```js
+        var subname = this.getValue('subform_e4cjz3nf');
+        console.log('getValue', subname);
+        ```
+    
+    10. `this.setData(Value)`
+        ```js
+        this.setData({ subform_e4cjz3nf: [ { inputId: '1234', inputId2: 'value2' } ] })
+
 ## Config
 
 | **Name**|**Description**|**Icon**|
 |---------|---------------|--------|
 |**ID**| The sub-Form+ component's identifier|<img src= "/apps/components/img/input_id.png">|
+|**Name**| Name you wish to keep for the sub-form+|<img src= "/apps/components/img/subformplus_name.png">|
 |**Label Width**|Width of the label associated with an input field. It determines the horizontal space occupied by the label text|<img src= "/apps/components/img/input_labelwidth1.png">|
+|**Label Wrap**| If the label is longer than the allowed width the text will continue on another line|<img src= "/apps/components/img/input_labelwrap1.png">|
 |**Hide Label**| Hides the label on the form|<img src= "/apps/components/img/input_hidelabel.png">|
 |**Text Prompt**| A description to aid the user when completing the field|<img src= "/apps/components/img/input_textprompt.png">|
 |**Paging**|Enables pagination|<img src= "/apps/components/img/subform_paging.png">|
 |**Page Size**| Displays the number of entries per page|<img src= "/apps/components/img/subform_pagesize.png">|
 |**Show Control**|Displays control button|<img src= "/apps/components/img/subform_showcontrol.png">|
-|**Virtual Table**| Display elements inside the sub-form|<img src= "/apps/components/img/subform_virtualtable.png">|
 |**Default Value**| The default value which is filled in the field before the user changes it|<img src= "/apps/components/img/input_defaultvalue.png">|
 |**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
-|**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** action to hide the field. <br> Enable **Disabled** action to make the field unusable. <br>Enable **Deletable** to delete the row in the sub-form. <br> Enable **Addible** to add a row in the sub-form. <br>Enable **Show word count** action make the word count visible|<img src= "/apps/components/img/input_attributeaction.png">|
+|**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** action to hide the field. <br> Enable **Disabled** action to make the field unusable. <br>Enable **Deletable** to delete the row in the sub-form. <br> Enable **Addible** to add a row in the sub-form.|<img src= "/apps/components/img/subform_aa.png">|
 
 ## First time User?
 

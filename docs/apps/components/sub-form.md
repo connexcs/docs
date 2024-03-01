@@ -138,7 +138,7 @@ Sub-form component, for list (array) type form data, uses Table layout, doesn't 
     
     10. `this.setData(Value)`
         ```js
-        this.setData({ subformId: [ { inputId: '1234', inputId2: 'value2' } ] })
+        this.setData({ table_n7rs950l: [ { inputId: '1234', inputId2: 'value2' } ] })
         ```
 
 !!! info Add multiple classes

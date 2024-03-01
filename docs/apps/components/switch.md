@@ -52,6 +52,7 @@ It offers a clear and efficient way for users to select one of two mutually excl
 |`this.disable`| Disable switch field from user interaction|`(fields: String`&#124;`String[])`|
 |`this.enable`| Enable switch field from user interaction|`(fields: String`&#124;`String[])`|
 |`this.getValue`|Get A Value From a component|`(fieldName: String)`|
+|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String) : Object`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of a switch in response to user input.
@@ -118,6 +119,12 @@ It offers a clear and efficient way for users to select one of two mutually excl
         ```js
         var switchname = this.getValue('switch_ornfn03c');
         console.log('getValue', switchname);
+        ```
+
+    9.  `this.getComponent('component_ID')`
+        ```js
+        var switchname = this.getComponent('switch_ornfn03c');
+        console.log('getComponent', switchname);
         ```
 
 ## Config
