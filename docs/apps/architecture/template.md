@@ -9,11 +9,13 @@ ConnexCS **Templates** use the mustash-compatible template language [**Handlebar
 
 ## How to Add a Template
 
-1. Navigate to **IDE** :material-menu-right: `+` sign :material-menu-right: **Template**.
+1. Login to your account.
+
+2. Navigate to **IDE** :material-menu-right: `+` sign :material-menu-right: **Template**.
 
 <img src= "/apps/img/template12.png">
 
-2.Fill out the following details:
+3.Fill out the following details:
 
     + Name of the **Template**.
     + Select the **Application** for which you want to integrate the template.
@@ -22,14 +24,14 @@ ConnexCS **Templates** use the mustash-compatible template language [**Handlebar
 
 <img src= "/apps/img/template21.png" width="300">
 
-3.Click on `Save`.
+4.Click on `Save`.
 
-4.The created **Template** will be visible on the IDE panel under **Template**. Click on the created template.
+5.The created **Template** will be visible on the IDE panel under **Template**. Click on the created template.
 
-5.Enter the HTML code. Click on `Save` and `Run`.
+6.Enter the HTML code. Click on `Save` and `Run`.
 
 <img src= "/apps/img/template3.png">
 
-6.**Preview** is available on the right side of the screen.
+7.**Preview** is available on the right side of the screen.
 
 <img src= "/apps/img/template4.png">

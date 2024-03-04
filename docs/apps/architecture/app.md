@@ -8,11 +8,13 @@ You can create your own App and publish it to the **ConnexCS App Store**. Also, 
 
 ## Step to create an App
 
-1. Navigate to **IDE** :material-menu-right: `+` sign :material-menu-right: **App**.
+1. Login to your account.
 
-2. Enter the **Name** of your application.
+2. Navigate to **IDE** :material-menu-right: `+` sign :material-menu-right: **App**.
 
-3. Click on **Save**.
+3. Enter the **Name** of your application.
+
+4. Click on **Save**.
 
 <img src= "/apps/img/app1.png">
 

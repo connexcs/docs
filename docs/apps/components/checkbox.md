@@ -16,8 +16,6 @@ Checkboxes are typically used to collect data about user preferences or choices.
 4. Accepting terms and conditions
 5. Gathering consent
 6. Filtering search results
-7. Personalizing user experiences
-8. Streamlining multi-step processes
 
 ### Interactivity
 
@@ -149,12 +147,7 @@ Some of the most common methods include:
          {
          "checkbox_g0x4pt54z": "Option 1", "Option 2",}
         );
-
-!!! info Add multiple classes
-    Use the following syntax to add multiple classes to a component:
-    ```js
-    this.addClassName('componentID', 'class1', 'class2')
-    ```
+        ```
 
 ## Config
 
@@ -168,7 +161,7 @@ Some of the most common methods include:
 |**Hide Label**| Hides the label on the form|<img src= "/apps/components/img/input_hidelabel.png">|
 |**Text Prompt**| A description to aid the user when completing the field|<img src= "/apps/components/img/input_textprompt.png">|
 |**Layout**| Select the format of the Checkbox as **Block** or **Inline**|<img src= "/apps/components/img/checkbox_layout.png">|
-|**Option**|Choose either **Static** or **Dynamic** way of adding data to the options of the Checkbox <br><br>**Static data** refers to a fixed set of options that are pre-defined and loaded into the Checkbox at the time of initialization</br></br> **Dynamic data** are options fetched as needed from sources like databases or APIs. The checkbox updates choices based on user selections. You select from **Data source** which refers to the origin of the data; **Function** which refers to the code that manipulates the data, and **Assigned Value** which refers to the specific value stored or associated with a data element|<img src= "/apps/components/img/checkbox_static.png"> <img src= "/apps/components/img/checkbox_dynamic.png">|
+|**Option**|Choose either **Static** or **Dynamic** way of adding data to the options of the Checkbox <br><br>**Static data** refers to a fixed set of options that are pre-defined and loaded into the Checkbox at the time of initialization</br></br> **Dynamic data** option refers to the ability to automatically populate form/page fields or modify the form's/page behavior based on various sources like databases or APIs. The checkbox updates choices based on user selections. <br>You select from **Data source** takes information from databases, APIs etc; **Assigned Variable** refers to the specific value stored or associated with a data element and serve as a way to capture and manage dynamic data within the form/page and **Function** refers specific block of code that performs a particular task related to manipulating data and influencing the form's behavior. These functions operate on the data obtained from various sources like databases, APIs, user inputs and use them to dynamically modify the form experience.|<img src= "/apps/components/img/checkbox_static.png"> <img src= "/apps/components/img/checkbox_dynamic.png">|
 |**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Data Binding** to connect the data to UI<br>Enable **Hidden** action to hide the field</br>Enable **Disabled** action to make the field un-suable|<img src= "/apps/components/img/checkbox_attributeaction.png">|
 

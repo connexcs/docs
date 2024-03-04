@@ -8,25 +8,27 @@ Common use cases include: Database Administration Tools, Web Application, Report
 
 ## How to use Query Builder?
 
-1. Navigate to **IDE** :material-menu-right: `+` sign :material-menu-right: **Query Builder**.
+1. Login to your account.
+
+2. Navigate to **IDE** :material-menu-right: `+` sign :material-menu-right: **Query Builder**.
 
 <img src= "/apps/img/query1.png">
 
-2.Select the App and enter the domain where the App will be visible and accessible.
-3.Click `Save`.
+3.Select the App and enter the domain where the App will be visible and accessible.
+4.Click `Save`.
 
 <img src= "/apps/img/query21.png" width="350">
 
-4.The created Query will be visible on the IDE panel under **Query Builder** tab.
+5.The created Query will be visible on the IDE panel under **Query Builder** tab.
 
-5.Click on your created **Query**.
+6.Click on your created **Query**.
 
 <img src= "/apps/img/query3.png" width="350">
 
-6.Enter the SQL query code.
+7.Enter the SQL query code.
 
 <img src= "/apps/img/query4.png">
 
-7.Click on `Save` and then `Run`. It will display a query output.
+8.Click on `Save` and then `Run`. It will display a query output.
 
 <img src= "/apps/img/query5.png">

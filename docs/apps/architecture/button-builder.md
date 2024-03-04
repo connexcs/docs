@@ -11,7 +11,8 @@ Use **Button Builder** in combination to create a button that you can place in a
 
 ## Create new button
 
-1. Navigate to **IDE** :material-menu-right: `+` sign :material-menu-right: **Button Builder**.
+1. Login to your account.
+2. Navigate to **IDE** :material-menu-right: `+` sign :material-menu-right: **Button Builder**.
 
 <img src= "/apps/img/button_main.png">
 

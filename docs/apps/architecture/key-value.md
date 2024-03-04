@@ -11,19 +11,21 @@ Think of it like a dictionary entry with a word (key) and its definition (value)
 
 ## How to use the Key Value Stores
 
-1. Navigate to **IDE** :material-menu-right: `+` sign :material-menu-right: **Key Value Store**.
+1. Login to your account.
+
+2. Navigate to **IDE** :material-menu-right: `+` sign :material-menu-right: **Key Value Store**.
 
 <img src= "/apps/img/key1.png">
 
-2.Enter the **Key**, **Value** and click on `Save`.
+3.Enter the **Key**, **Value** and click on `Save`.
 
 <img src= "/apps/img/key2.png" width="350">
 
-3.The created **Key Value** will be visible on the IDE panel under **Global :material-menu-right: Database :material-menu-right: Key Value Store** tab.
+4.The created **Key Value** will be visible on the IDE panel under **Global :material-menu-right: Database :material-menu-right: Key Value Store** tab.
 
-4.Click on your created **Key Value**.
+5.Click on your created **Key Value**.
 
 <img src= "/apps/img/key3.png">
 
-5.Click on **load** to see the **value** you entered.
+6.Click on **load** to see the **value** you entered.
 <img src= "/apps/img/key4.png">

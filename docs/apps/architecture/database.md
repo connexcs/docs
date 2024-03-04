@@ -6,7 +6,7 @@ You can use **Database** for activities like checking list of numbers, caching e
 
 ## Steps to create a Database
 
-1. Login to your **Control Panel**.
+1. Login to your account.
 2. Click on **IDE** :material menu-right: +.
 3. Select **Database**.
 
