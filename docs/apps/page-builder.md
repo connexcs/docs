@@ -27,7 +27,7 @@ It provides a user-friendly interface with drag-and-drop functionality and vario
 
 4.Click on **Save and Continue**.
 
-<img src= "/apps/img/pageb2.png" width="300">
+<img src= "/apps/img/pageb2.png" width="600">
 
 5.The created **Page** will be visible on the IDE panel under **Page Builder**. Click on the created blank page to create your customize form/page.
 
