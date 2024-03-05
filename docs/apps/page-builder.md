@@ -27,7 +27,7 @@ It provides a user-friendly interface with drag-and-drop functionality and vario
 
 4.Click on **Save and Continue**.
 
-<img src= "/apps/img/pageb2.png">
+<img src= "/apps/img/pageb2.png" width="300">
 
 5.The created **Page** will be visible on the IDE panel under **Page Builder**. Click on the created blank page to create your customize form/page.
 
@@ -59,10 +59,12 @@ The Form attribute helps you specify values for the following parameters for all
 |**Size**| Size describes the dimensions of all the fields in the form. <br> You can choose from **Large**, **Default**, and **Small**|<img src= "/apps/img/page_size.png">|
 |**Style Sheets**|You can add custom Style Sheets to make the interface look more pleasing|<img src= "/apps/img/page_stylesheets.png">|
 |**Custom Class**| A HTML class attribute which allows further customisation|<img src= "/apps/components/img/input_customclass.png">|
-|**Log Level**||<img src= "/apps/img/page_loglevel.png">|
+|**Log Level**|Log messages based on the severity of the event they describe, helping users prioritize and interpret the vast amount of information typically found in logs. <br><br>1.**Disabled** signifies is entirely turned off. No messages, regardless of their severity (error, warning, info, etc.), will be written to the log file.</br></br> 2. Use **Error** log level that should be used when the application hits an issue preventing one or more functionalities from properly functioning. <br><br> 3. Use **Warn** log for unexpected behavior happened inside the application, but it's continuing its work and the key business features are operating as expected. <br><br>4. **Info** An event happened, the event is purely informative and can be ignored during normal operations. <br><br>5. Use **Debug** level for troubleshooting or test environments to diagnose potential issues. <br><br> 6. **Trace** Detailed code execution for deep debugging, ignored during normal operation.<br><br>{ label: 'Disabled', value: 5 }, <br>{ label: 'Error', value: 4 },<br>{ label: 'Warn', value: 3 },<br>{ label: 'Info', value: 2 },<br>{ label: 'Debug', value: 1 },<br>{ label: 'Trace', value: 0 }|<img src= "/apps/img/page_loglevel.png">|
 |**Data Source**| Data Source can be External, from Script Forge or a Database|<img src= "/apps/img/page_datasource.png">|
 |**Action Panel**| Action Panel allows you to specify the actions for buttons and link controls|<img src= "/apps/img/page_actionpanel.png">|
 |**Javascript CDN Library**|Allows you to load external javascript libaries. Our search feature lets you quickly search for libraries from `cdnjs.cloudflare.com`|<img src= "/apps/img/page_js.png">|
+
+!!!Info
 
 ## Config
 
@@ -103,7 +105,7 @@ The Form attribute helps you specify values for the following parameters for all
     Using the Page Builder interface we can run a complicated query (runs behind the scenes) and it returns the data. the Saved Queries can be accssed via ScriptForge.
     1. A query can be ran against different endpoints, (CDR, Primary Database, G3 Analytics), so we will need a selector.
     2. From the IDE perspective, we should be able to run an ad-hoc query, e.g we shouldn't need to create a new item and save it before we can run it.
-    3. There should be a section for variables to be filled in, for example: 
+    3. There should be a section for variables to be filled in, for example:
     SELECT * FROM customers WHERE customer_id = :customer_id
     :customer_id is the replacement syntax
     4. Then when we run the query it will automatically replace :customer_id with the value associated with that variable.
@@ -115,8 +117,27 @@ The Form attribute helps you specify values for the following parameters for all
     Access information externally.
 
 !!! Info
-    ** window.ctx**: This function, when called, returns an object with the name **ctx**. This can be accessed using the browser's console.
+    ** window.cx**: This function, when called, returns an object with the name **ctx**. This can be accessed using the browser's console.
     When any functions are being executed, "this" context is equivalent to "ctx." It's an incredibly efficient method for modifying code directly from the browser console.
+    For example, using the below code you can interact with the Page Builder from the Console.
+
+    1. **Example 1**
+    ```js
+    window.cx().ctx.$('echarts').loading // Charts component is loading
+    ```
+    <img src= "/apps/img/pageb6.png" width="300">
+
+    ```js
+    window.cx().ctx.$('echarts').loading(false) // Charts component is not loading
+    ```
+    <img src= "/apps/img/pageb7.png" width="300">
+
+    2. **Example 2**: Set the Log Level
+    ```js
+    window.cx().ctx.setLogLevel(`debug`) // Setting log level to debug
+    ```
+    <img src= "/apps/img/pageb6.png" width="300">
+
 
 ## Platform Features
 

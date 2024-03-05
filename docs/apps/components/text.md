@@ -116,7 +116,6 @@ Users can type text, numbers, or symbols into the designated field, providing es
         console.log('getComponent', textname);
         ```
 
-
 ## Config
 
 | **Name**|**Description**|**Icon**|
@@ -143,7 +142,7 @@ Form validation can be performed using a variety of methods, including:
 
 | **Name**| **Description**|
 |---------|----------------|
-| **Required**|If enabled, then the field value can't be empty, otherwise an error message is emitted|
+|**Required**|If enabled, then the field value can't be empty, otherwise an error message is emitted|
 
 <img src= "/apps/components/img/text_validation.png">
 

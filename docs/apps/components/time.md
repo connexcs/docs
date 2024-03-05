@@ -119,6 +119,26 @@
 |**Max Length**| Limit the amount of characters the field supports|<img src= "/apps/components/img/input_maxlength.png">|
 |**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** action to hide the field. <br> Enable **Read Only** to for viewing and not editing the time <br> Enable **Disabled** action to make the field unusable. <br> Enable **Text box is editable** to modify the time text box. <br>Enable **Show Clear button** action to make the clear button visible.|<img src= "/apps/components/img/time_attributionaction.png">|
 
+### Validation
+
+Form validation is the process of checking the data entered into a form to ensure that it's valid and complete.
+
+This helps to prevent users from submitting forms with invalid data, which can cause problems for the application that's processing the form.
+
+Form validation can be performed using a variety of methods, including:
+
+| **Name**| **Description**|
+|---------|----------------|
+| **Required**| If enabled, then the field value can't be empty, otherwise an error message is emitted|
+|**Custom Validation Rules**|(rule, value, callback) => {|
+||**rule**: Verification rule, you can view the verification configuration information through this parameter; **rule.field** can get the field identifier of the current verification.|
+||**value**: Value of the current field|
+||**callback**: Callback function (must be called) upon completion of validation; **callback('Error message')/ callback(new Error('Error message'))**. These are two ways to return an error message.|
+
+<img src= "/apps/components/img/cascader_validation.png">
+
+!!! Info
+    1. The **callback() function** is also called to verify success in the custom validation method.
 ## First time User?
 
 If you are using the Page Builder components on the ConnexCS platform for the first time, we request you to use our guide on <a href="https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#steps-to-use-components-in-the-page-builder" target="_blank">steps to use the Components</a>.
