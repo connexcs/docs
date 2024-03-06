@@ -256,7 +256,7 @@ nav:
   - WebPhone: 
     - WebPhone: webphone.md
 
-  - Apps Platform:
+  - Apps Platform: 
     - Introduction: apps/introduction.md
     - Use Cases: apps/use-case.md
     - Features: apps/features.md
