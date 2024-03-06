@@ -1,4 +1,4 @@
-# Key-Value
+# Key Value Store
 
 ## Introduction
 

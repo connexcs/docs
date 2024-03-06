@@ -1,4 +1,4 @@
-# Enviornmental Variables
+# Environmental Variables
 
 ## Introduction
 
