@@ -147,14 +147,15 @@ For example, if the CPS or Channels limits have reached, capacity failover will 
 
 Select certificates to apply to a server.
 
-&emsp;![alt text][server-cert1]
+<img src= "/setup/img/server1.png" width= "300">
 
 To add a Certificate to a sever,
 
 1. Click :material-plus:.
 2. **Certificate**: Select from a list of Certificates managed under **Setup :material-menu-right: Information :material-menu-right: [Certificate](/setup/information/certificate/)**.
 3. **Type**: Select Server or Client as appropriate.
-4. Click **`Save`**.
+4. **Match SIP Domain**: You can add **SIP Domain** and it will be associated with mentioned certificates. For example, if you enter **test1.com** and **test2.com**, and you communicate with either of these domains, you'll be served with the certificate associate with these domains.
+5. Click **`Save`**.
 
 ### Server Actions Menu
 
@@ -186,7 +187,7 @@ Use this to update the Channels for the selected server. The update will be acti
 
 ### Run Server Update
 
-This only needs to run when the system indicates "There is a pending update on the server" at the top of the server details.
+This only needs to run when the system indicates "There's a pending update on the server" at the top of the server details.
 
 &emsp;![alt text][server-update]
 

@@ -4,17 +4,34 @@
 
 Use the **Carrier** section in **ConnexCS** for simplified Carrier management where you can add, configure, and delete Carriers.
 
-![alt text][carriers-main]
+<img src= "/carrier/img/carriermain.png">
 
 ## Carrier Functions
 
 From the **Carriers** page, you can perform several management operations.
 
 + :material-plus::Add new Carriers (see [**Create Carrier**](https://docs.connexcs.com/carrier/#create-carrier) below for details.)
+
 + **Refresh**: Refresh the page, helpful when making edits or looking at real-time changes. This created page is like a web app so some information will update automatically.
+
 + **Bulk Edit**: Select several Carriers, then click **Bulk Edit** to change the fields such as Channels Status, Flow Speed (CPS), Portal Access, and Country.
+
 + **Delete**: To delete several carriers at a time, select one or more carriers from the list and then click the trash bin icon and confirm.
+
 + **?**: Link to documentation for the current page.
+
++ **Send**: ConnexCS includes Refer ConnexCS for your customers.
+
+1. Select several customers using the tick-box selector on the left side of each row. (Customers aren't visible to each other in the sent message.)
+2. Click on "Send" at the top right then choose Refer ConnexCS.
+3. Refer ConnexCS: This feature allows you to send simple ConnexCS Referrals to you customers.
+    + You can send referrals to multiple **Customers**.
+    + You can select the **Template** from the drop-down list.
+    + Enter the **Subject**.
+    + Write the Body of the referral.
+    + Click on `Send`.
+  
+<img src= "/carrier/img/carrier_referral.png">
 
 + **Active**: Used to sort Carriers based on the selected status. Results on the page will automatically arrange themselves according to the filter.
 
@@ -214,6 +231,36 @@ To ensure compatibility, set the switch manufacturer to `bandwidth.com`.
 
 [carriers-main]: /carrier/img/carriers-main.png "Carriers"
 [carrier]: /carrier/img/carrier.png "Carrier Main"
+
+## Headers from Customers to Providers
+
+Customize the handling of X-Headers between the User Agent Client (UAC) and the carrier. By default, all UAC-originating X-Headers are removed for standardization, but this configuration allows selective retention of specific headers crucial for carrier communication.
+
+When the Carrier requires information on the headers sent from the UAC, you can use below discussed process:
+
+1. Login to your account.
+2. Navigate to Management :material-menu-right: Customer :material-menu-right: Carrier :material-menu-right: blue `+` button :material-menu-right: Config :material-menu-right: Vars<sup>TOML</sup>.
+3. Consider an example here: **Example of how to retain X-ng199 but remove all other X-headers**
+4. Enter the code in the Vars<sup>TOML</sup> section.
+
+```js
+[headers] // configuration for headers
+remove_regex="^X-(?:(?!(ng911)).)*" // only retain X-ng199 but remove all other X-headers
+```
+
+The **Default Setting** is:
+
+```js
+[headers]
+remove_regex="^X-.*"
+```
+
+5.Click `Save`.
+
+!!! Danger Note
+    Please note you can use the regex pattern according to your requirement.
+
+<img src= "/carrier/img/regex.png">
 
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMTkwMTM2NjQxM119

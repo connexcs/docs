@@ -13,8 +13,14 @@ To add a new payment
 
 1. Click :material-plus:
     + **Description** is the name of the payment.
+
         If you wish to hide any information on the customer portal, use **#** followed by the text to hide.
-        For example, PayPal 87878787744XXX #payment from the demo.
+        
+        !!! Example
+            PayPal 87878787744XXX #payment from the demo.
+        !!! Note
+            Add a **#** symbol for starting a private comment to store private information along with the public information.
+
     + **Total** is the amount of the payment.
     + **Payment Fee (Ref Only)** For payments made through PayPal or another external payment system, the Payment Fee field is automatically filled.
     + **Status** allows you to set the Payment to **Pending, Cancelled or Completed**.

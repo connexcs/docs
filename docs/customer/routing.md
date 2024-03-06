@@ -23,11 +23,11 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 
 + **Rate Card**: Also known as Tariff, this allows you to select the rate card used on a customer's account. You can handle these calls in the following three ways:
 
-  + **Internal**: Send a call to the ConnexCS Class5 (Voice Mail, Interactive Voice Response (IVR), etc.). If selected, the "Auto" option becomes available, which will generate dial strings from all possible internal extensions.
-  + **Extension**: (uses SIP users in Customer :material-menu-right: Auth configured SIP Users) Send a call to a Session Initiation Protocol (SIP) Authenticated user on the account.
-  + **Customer IP**: (uses IPs in Customer :material-menu-right: Authconfigured IPs) Send a call from an agent back to the customer's Private Branch eXchange (PBX), using either the Tech Prefix (e.g.: #9) or a Dial String (e.g.: `^[0-9](4)$`).
-  + **To Carriers**: Choose a carrier to send the call to a location outside of the ConnexCS system.
-
+    + **Internal**: Send a call to the ConnexCS Class5 (Voice Mail, Interactive Voice Response (IVR), etc.). If selected, the "Auto" option becomes available, which will generate dial strings from all possible internal extensions.
+    + **Extension**: (uses SIP users in Customer :material-menu-right: Auth configured SIP Users) Send a call to a Session Initiation Protocol (SIP) Authenticated user on the account.
+    + **Customer IP**: (uses IPs in Customer :material-menu-right: Authconfigured IPs) Send a call from an agent back to the customer's Private Branch eXchange (PBX), using either the Tech Prefix (e.g.: #9) or a Dial String (e.g.: `^[0-9](4)$`).
+    + **To Carriers**: Choose a carrier to send the call to a location outside of the ConnexCS system.
+   
 + **Tech Prefix**: This lets you distinguish a route from an inbound party.
   When several customers share the same IP address, each customer needs an individual Tech Prefix so the switch can route calls correctly.
   It enables service providers to differentiate between several rate cards.
@@ -57,12 +57,14 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 + **Capped Rate** and **Provider Capped Rate**: Set the maximum cost of a call. Calls that exceed the set rate won't get connected.
   **For example**, for customers with flat rate accounts, which allows to dial all UK numbers but premium numbers, you would set the Provider Capped Rate at 0.01, so any call that the provider might charge over that amount wouldn't get completed.
 
-+ **Profit Assurance**: When `Enabled`, only calls that are profitable pass-through; any call that costs more than the retail rate are not allowed to complete. This is particularly useful for A-Z routes or NPA-NXX [rate cards](https://docs.connexcs.com/rate-card-building/).
++ **Profit Assurance**: When `Enabled`, only calls that are profitable pass-through; any call that costs more than the retail rate aren't allowed to complete. This is particularly useful for A-Z routes or NPA-NXX [rate cards](https://docs.connexcs.com/rate-card-building/).
   Keep in mind that enabling it adds an extra Post-dial delay (PDD) to the call.
 
 + **Block Connect Cost**: Block any call that has a connection fee.
 
 + **FTC DNC Report ANI Block (USA)**: When `Enabled`, ConnexCS will take a copy of FTC data (using the [FCC's **Do Not Call (DNC) Reported Calls Data API**](https://www.ftc.gov/developer/api/v0/endpoints/do-not-call-dnc-reported-calls-data-api)) and add it to the system. We can then block callers from known spammer CLI / ANI's.
+
++ **DNO**: [Click here](https://docs.connexcs.com/dnc/#do-not-originate-dno-list-blocking) to know more about it.
 
 ### Capacity Limits
 
@@ -105,7 +107,7 @@ View and configure existing routes on the Routing tab in the Customer card. To c
   For more information about setup and operation, see the [**ScriptForge**](https://docs.connexcs.com/developers/scriptforge/) page.
 
 + **Timeout**: Set how long the script may run.
-
++ **Timeout Action**: This option lets you decide the action when the timeout occurs.
 + **VARS [(TOML)](https://en.wikipedia.org/wiki/TOML)**: Select the variables you want pass into the ScriptForge script.
 
 ### Locks
@@ -132,10 +134,10 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
   Be aware that if you don't have enough transcoding capacity, calls will fail.
 + **SIP Ping**: Send regular pings to ensure both sides of a call are still up. `Enabled` is the recommended setting.
 
-    |Option                          | Result                                            |
+    |Option| Result|
     |--------------------------------|:--------------------------------------------------|
-    | **Disabled**                   | No SIP pings will be sent                        |
-    | **Enabled Both Sides**         | SIP pings sent in both directions        |
+    | **Disabled**                   | No SIP pings will be sent |
+    | **Enabled Both Sides**         | SIP pings sent in both directions |
     | **Enabled (Downstream Only)**  | SIP Pings sent to the location where the call originated |
     | **Enabled (Upstream Only)**    | SIP Pings sent towards where the call is TO (terminated) |
 
@@ -144,7 +146,7 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
   SST has surpassed SIP Ping Timeout as the best way to prevent long-duration calls. Note that any SST shorter than sixty (60) seconds gets rejected.
 
     |SST Option| Result|
-    |-------------------------|:------------------------------------------------------------------------------------------------|
+    |----------|:------|
     | **Default**| Passive SST, No headers gets changed and no SST gets engaged, all RE-INVITES will propagate through the system enables|
     | **Enabled Both** | ConnexCS will send SIP Session Timers to both legs of the call|
     | **Enabled (Upstream)** | ConnexCS will use SST with the carrier|
@@ -154,19 +156,22 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 
 + **RTP Media Proxy**: This defaults to Auto, but selecting a zone (by continent) is the current recommendation. The following options allow you to set where RTP media server for this route for this customer:
 
-    :material-menu-right: `Direct RTP (no proxy)`- Bypass ConnexCS, so media flows directly between the customer and carrier. If the customer is using a firewall or other NAT device incorrectly, then media may not flow between the carrier and the customer. Using this setting also means that if there are audio issues, the issue can't be ConnexCS. Since it isn't likely to be the carrier, the issue would typically exist on the customer's end.
+   :material-menu-right: `Direct RTP (no proxy)`- Bypass ConnexCS, so media flows directly between the customer and carrier. If the customer is using a firewall or other NAT device incorrectly, then media may not flow between the carrier and the customer. Using this setting also means that if there are audio issues, the issue can't be ConnexCS. Since it isn't likely to be the carrier, the issue would typically exist on the customer's end.
 
-    :material-menu-right: `Zone`- Choose any of the regional servers, but it's recommended that you select a location close to a provider or your customer. Temporarily selecting a different region to route media traffic can be helpful in diagnosing call problems.
+   :material-menu-right: `Zone`- Choose any of the regional servers, but it's recommended that you select a location close to a provider or your customer. Temporarily selecting a different region to route media traffic can be helpful in diagnosing call problems.
 
 !!! tip "The recommended RTP Media Proxy servers are the **Closest (To ConnexCS) Server** or the **Closest (Elastic) Server**."
 
+!!! warning
+    **SIP Ping** and **SIP Session Timers** can't be enabled at the same time.
+
 + **RTP Proxy Mode**: If a connection via our service fails and you have selected relaxed, it will automatically fail over to the backup.
 
-    :material-menu-right: `Strict`- This will enforce the proxy engagement. If the proxy can't engage with the call, the call won't get established.
+   :material-menu-right: `Strict`- This will enforce the proxy engagement. If the proxy can't engage with the call, the call won't get established.
 
-    !!! note "Free accounts are limited to how many RTP Proxy channels get enabled, this may prevent calls from connecting if you have more channels than our free accounts allow you to have."
+!!! note "Free accounts are limited to how many RTP Proxy channels get enabled, this may prevent calls from connecting if you have more channels than our free accounts allow you to have."
 
-    :material-menu-right: `Relaxed`- This will make the best efforts to engage the RTP Proxy; if it can't get engaged because of either network errors, or because you don't have enough RTP capacity, the calls will connect directly.
+   :material-menu-right: `Relaxed`- This will make the best efforts to engage the RTP Proxy; if it can't get engaged because of either network errors, or because you don't have enough RTP capacity, the calls will connect directly.
 
 !!! success "When should I use RTP Proxy?"
     Use an RTP Proxy if you don't want your customers to know your providers.
@@ -185,14 +190,37 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 
 *While it's doubtful that any information will get logged in the customer / providers switch when the audio gets engaged, it's possible for an engineer to learn this information from a SIP trace, PCAP, or by looking at transit locations. DTMF Detection ONLY works when RTP Proxy mode gets enabled.
 
-+ **Call Recording**: This allows you to record and store calls, which are then found in **Customer :material-menu-right: Auth :material-menu-right: [Browsing Record](https://docs.connexcs.com/setup/information/recording/)**.
-  An extra charge per recorded call of $0.003 gets added to existing fees or charges, so choose carefully how many calls to record:
+!!! info "Private RTP Server"
+    We provide deployment of the Private RTP Server (Media) to our customers, which is liable to some cost.
+    You may be able to add Private RTP Servers to the following fields:
 
-    :material-menu-right: `Disabled`- no calls get recorded
+    + [Management :material-menu-right: Customer :material-menu-right: Routing :material-menu-right: Customer [Name] :material-menu-right: Media](https://docs.connexcs.com/customer/routing/#media)
+  
+    + [Management :material-menu-right: Tags :material-menu-right: Routing :material-menu-right: Customer [Name] :material-menu-right: Media](https://docs.connexcs.com/customer/tags/)
+    
+    + [Global :material-menu-right: Routing :material-menu-right: Routing](https://docs.connexcs.com/global-routing/)
+    
+    + [Management :material-menu-right: Customer :material-menu-right: Routing :material-menu-right: Customer [Name] :material-menu-right: DID (Edit DID `+`) :material-menu-right: Media](https://docs.connexcs.com/customer/did/#media)
+    
+    + [Global :material-menu-right: DID (Edit DID `+`) :material-menu-right: Media](https://docs.connexcs.com/global/#direct-inward-dial)
+    
+    + [Management :material-menu-right: Rate Card :material-menu-right: Provider Rate Card :material-menu-right: Add Provider Rate Card `+` :material-menu-right: Advanced :material-menu-right: Default RTP](https://docs.connexcs.com/provider-ratecard/#advanced)
+    
+    + [Management :material-menu-right: Rate Card :material-menu-right: Customer Rate Card :material-menu-right: Add Customer Rate Card `+` :material-menu-right: Advanced :material-menu-right: Default RTP](https://docs.connexcs.com/customer-ratecard/#advanced)
 
-    :material-menu-right: `Sampling`- Choose from a 1%, 5%, 25%, or 50% sample of your calls (e.g: 1% will record 1 of every 100 calls, 25% will record 25 of every 100 calls, etc.).
++ **Call Recording**: This allows you to record and store calls, which are then found in:
 
-    :material-menu-right: `Enabled (Always On)`- Record all calls.
+* **Logging**
+* **Management:material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: CDR**
+* **Management :material-menu-right: File :material-menu-right: Recording**
+  
+An extra charge per recorded call of $0.003 gets added to existing fees or charges, so choose carefully how many calls to record:
+
+:material-menu-right: `Disabled`- no calls get recorded.
+
+:material-menu-right: `Sampling`- Choose from a 1%, 5%, 25%, or 50% sample of your calls (e.g: 1% will record 1 of every 100 calls, 25% will record 25 of every 100 calls, etc.).
+
+:material-menu-right: `Enabled (Always On)`- Record all calls.
 
 !!! tip "The Call Recording setting is disabled"
     You need to enable the feature first on the account in **Setup :material-menu-right: Settings :material-menu-right: [Packages](https://docs.connexcs.com/setup/settings/account/#packages)** before it gets enabled here for individual customers.

@@ -45,8 +45,23 @@ You can add, modify, remove the columns to display on the grid. This is only for
 
 SQL is currently available in 3 parts of the system:
 
+<<<<<<< HEAD
 + Customer (Client Side)
 + CDR (Server)
 + Userspace Database (Server)
 
+=======
+>>>>>>> 95084266e003a35b1dabe1474fe99091142b452e
 <img src="/developers/img/db4.png">
+
++ Customer (Client Side): **Management :material-menu-right: Customer :material-menu-right: SQL**
+
+<img src= "/developers/img/client3.png">
+
++ CDR (Server): **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: SQL**
+
+<img src= "/developers/img/cdr3.png">
+
++ Userspace Database (Server): **Developer :material-menu-right: Database :material-menu-right: SQL**
+
+<img src= "/developers/img/server.png">

@@ -42,6 +42,20 @@ Select the destination to deliver incoming calls for the DID:
 + **Internal**: Send internally to an extension, a Class5 feature, or even to another customer.
 + **Circuit Test**: *in progress*.
 
+#### Add ConneXML Tab to DID
+
+1. Login to your Control Panel.
+2. Navigate to Management :material-menu-right: Customer :material-menu-right: Customer[Name] :material-menu-right: DID :material-menu-right: blue `+` button.
+<img src= "/customer/img/did1.png">
+
+3.In the **Basic** tab select your customer.
+<img src= "/customer/img/did2.png">
+
+4.The **Destination** tab will automatically appear, click on **Edit** and then **ConneXML** and insert the link.
+<img src= "/customer/img/did3.png">
+
+5.Click `Save`.
+
 ### Capacity Limits
 
 Set the maximum number of INBOUND concurrent calls in **Channels**, and Calls Per Second (CPS) in **Flow Speed**.
@@ -62,12 +76,12 @@ For more details on these fields, see [**Media in Customer Routing**](https://do
 
     :material-menu-right: `Zone (recommended)`- Select any of the regional servers.
 
-  + Disabled- never record calls
-  + 1% Sampling
-  + 5% Sampling
-  + 25% Sampling
-  + 50% Sampling
-  + Enabled (Always On)
+    + Disabled- never record calls
+    + 1% Sampling
+    + 5% Sampling
+    + 25% Sampling
+    + 50% Sampling
+    + Enabled (Always On)
   
 + **Timeout**: Set various options to help with call timeout for missed BYEs.
 

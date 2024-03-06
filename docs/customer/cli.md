@@ -78,19 +78,22 @@ The **P-Asserted-ID** manipulation uses the same syntax as the Replace CLI.
     !!! note
         Make sure you select  the **Forced** option as **Yes**.
 
++ **Flags**: When you select **Forced** as **Yes** and select a **Database**, you get an option to select a flag which is **Performance CLI Selection**.
+The Performance CLI Selection chooses the CLI with the best ASR.
+
 + **Dialed Number Match**: To route to a specific CLI, you dialled match number.
 
 + **Notes**: Notes give you information about the CLI.
 
 + **STIR / SHAKEN Certificate:** If you apply any STIR / SHAKEN Certificate to a customer's account for calls verification, for example, whether the calls are spam.
 
-+ **STIR / SHAKEN Attestation:** This is the level of a certification you can select from 3 levels `A`, `B`, or `C`.
+    + **STIR / SHAKEN Attestation:** This is the level of a certification you can select from 3 levels `A`, `B`, or `C`.
 
-<img src= "/customer/img/cli1.png" width= "500">
+<img src= "/customer/img/cli_new.png">
 
-Click **`Save`** to complete the CLI configuration.
++ Click **`Save`** to complete the CLI configuration.
 
-## Allow Customers to add their own Caller Line Identification
+## Allow Customers to add their own CLI
 
 Navigate to **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Edit :material-menu-right: Verification** and select the "Approved CLIs Only" checkbox.
 
@@ -106,40 +109,40 @@ The customer can choose which numbers to permit for origination of the calls by 
 
 Any number configured as a CLI is a part of the permitted list (unless you use extra settings to block it).
 
-#### Filter Caller Line Identification by Number
+#### Filter CLI by Number
 
 Block all calls that don't have the CLI "123456789":
 
-| CLI         | Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
-|-------------|-----------------|-------------|-----------------------|--------|----------|--------------|
-| `123456789` |                 |             |                       | No     | Disabled | None         |
+| CLI | Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
+|-----|-----|-----|-----|-----|-----|-----|
+| `123456789`|||| No| Disabled | None|
 
 Allow various CLIs to pass (by entering 2 or more records):
 
-| CLI         | Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
+| CLI| Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
 |-------------|-----------------|-------------|-----------------------|--------|----------|--------------|
-| `123456789` |                 |             |                       | No     | Disabled | None         |
-| `987654321` |                 |             |                       | No     | Disabled | None         |
+| `123456789`|||| No| Disabled | None |
+| `987654321`|||| No| Disabled | None |
 
-#### Filter Caller Line Identification by Pattern
+#### Filter CLI by Pattern
 
 Allow a range of numbers for a customer (this example allows all calls that start with 123456 to pass regardless of the last digits):
 
-| CLI            | Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
-|----------------|-----------------|-------------|-----------------------|--------|----------|--------------|
-| `^123456`      |                 |             |                       | No     | Disabled | None         |
+| CLI| Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
+|----|----|---|---|---|---|---|
+| `^123456`|||| No| Disabled | None|
 
 You could also use a more complicated expression to match various ranges.
 
 In this example, the number must start with 123456, followed by 1, 3, or 5, then followed by 1 or 2 numbers.
 
-| CLI                       | Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
+| CLI| Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
 |---------------------------|-----------------|-------------|-----------------------|--------|----------|--------------|
-| `^123456[135][0-9]{1,2}$` |                 |             |                       | No     | Disabled | None         |
+| `^123456[135][0-9]{1,2}$` |||| No| Disabled | None|
 
 This can work in combination with number lists as well.
 
-#### Filter Caller Line Identification by Direct Inward Dial
+#### Filter CLI by DID
 
 If your customers do origination as well as termination, they already have a list of DIDs. Select _Filter_ from "Use DID" to automatically read from the list of DIDs.
 
@@ -147,26 +150,26 @@ Note that you can still add more CLIs along with the DID list.
 
 | CLI | Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID | Userspace DB |
 |-----|-----------------|-------------|-----------------------|--------|---------|--------------|
-|     |                 |             |                       | No     | Filter  | None         |
+||||| No| Filter  | None |
 
 #### Filter Pre-Asserted-Identity by Number or Pattern
 
 The same is true for Pre-Asserted-Identity (PAID) as it's with CLI; you can filter by PAID, as in this example.
 
-| CLI | Pre-Asserted-ID           | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
+| CLI | Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
 |-----|---------------------------|-------------|-----------------------|--------|----------|--------------|
-|     | `123456789`               |             |                       | No     | Disabled | None         |
-|     | `^123456[135][0-9]{1,2}$` |             |                       | No     | Disabled | None         |
+|`123456789`||| No| Disabled | None |
+|| `^123456[135][0-9]{1,2}$` ||| No| Disabled | None|
 
-#### Combined Caller Line Identification and Pre-Asserted-Identity Filter
+#### Combined CLI and Pre-Asserted-Identity Filter
 
 Filters are `AND` together, meaning that for a call to pass in this example, the CLI would need to be `1122334455` AND the Pre-Asserted-ID would need to be `123456789`.
 
-| CLI          | Pre-Asserted-ID           | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
+| CLI| Pre-Asserted-ID| Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
 |--------------|---------------------------|-------------|-----------------------|--------|----------|--------------|
-| `1122334455` | `123456789`               |             |                       | No     | Disabled | None         |
+| `1122334455` | `123456789`||| No| Disabled | None|
 
-#### Filter Caller Line Identification from a Large List
+#### Filter CLI from a Large List
 
 Our Userspace database allows you to manage large lists of numbers. Once you upload the numbers under Developer :material-menu-right: [Database](https://docs.connexcs.com/developers/database/).
 
@@ -174,15 +177,15 @@ You can use the following options to filter by the uploaded list. Note that the 
 
 | Pre-Asserted-ID  | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB  |
 |------------------|-------------|-----------------------|--------|----------|---------------|
-|                  |             |                       | No     | Disabled | [My Database] |
+|||| No| Disabled | [My Database] |
 
-#### Filter Caller Line Identification by Number Type
+#### Filter CLI by Number Type
 
 Filtering by Number Type will block calls that originate from a "type" that you specify; this can be something such as FIXED, MOBILE, etc.
 
 | Pre-Asserted-ID  | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Block Type  |
 |------------------|-------------|-----------------------|--------|----------|-------------|
-|                  |             |                       | No     | Disabled | FIXED       |
+|||| No| Disabled | FIXED|
 
 ### Replace Examples
 
@@ -194,78 +197,136 @@ Note that if a replacement occurs, it means that the match was successful and it
 
 Replacing a `111111111111` with `222222222222`.
 
-| CLI            | Pre-Asserted-ID | Rewrite CLI    | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
+| CLI| Pre-Asserted-ID | Rewrite CLI    | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
 |----------------|-----------------|----------------|-----------------------|--------|----------|--------------|
-| `111111111111` |                 | `222222222222` |                       | No     | Disabled | None         |
+| `111111111111` ||`222222222222`|| No| Disabled | None|
 
 #### Pattern Replacement
 
 Replace all calls that begins with a `1` with `222222222222`
 
-| CLI            | Pre-Asserted-ID | Rewrite CLI    | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
+| CLI| Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
 |----------------|-----------------|----------------|-----------------------|--------|----------|--------------|
-| `^1`           |                 | `222222222222` |                       | No     | Disabled | None         |
+| `^1`|| `222222222222` || No| Disabled | None|
 
-#### Force Caller Line Identification
+#### Force CLI
 
 When choosing **Force CLI**, _if there is no match present_, the CLI marked Force can replace the CLI transmitted on a call.
 
 In the example below, the CLI `111111111111` is sent regardless of what CLI the customer sends.
 
-| CLI            | Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
+| CLI| Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
 |----------------|-----------------|-------------|-----------------------|--------|----------|--------------|
-| `111111111111` |                 |             |                       | Yes    | Disabled | None         |
+| `111111111111`|||| Yes| Disabled | None|
 
 In the following example, if the customer sends a call with `222222222222`, the call gets allowed to pass through, but if the customer were to send `333333333333`, the call gets replaced by `111111111111`.
 
-| CLI            | Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
+| CLI| Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
 |----------------|-----------------|-------------|-----------------------|--------|----------|--------------|
-| `111111111111` |                 |             |                       | Yes    | Disabled | None         |
-| `222222222222` |                 |             |                       | No     | Disabled | None         |
+| `111111111111`|||| Yes| Disabled | None|
+| `222222222222` |||| No     | Disabled | None|
 
-#### Pick Caller Line Identification at Random
+#### Pick CLI at Random
 
 You can add various CLIs that forcefully select a random CLI.
 
 In this example, approximately 50% of the calls are sent with `111111111111` and 50% with `222222222222` (provided the customer doesn't send either of those two, otherwise the results would be same).
 
-| CLI            | Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
+| CLI| Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
 |----------------|-----------------|-------------|-----------------------|--------|----------|--------------|
-| `111111111111` |                 |             |                       | Yes    | Disabled | None         |
-| `222222222222` |                 |             |                       | Yes    | Disabled | None         |
+| `111111111111` |||| Yes| Disabled | None|
+| `222222222222` |||| Yes| Disabled | None|
 
 !!! tip "Large Numbers of Random CLIs"
     To filter or replace calls with a larger number of CLIs or to perform more complex rules.
 
     Use Scriptforge to create a custom application that reads from a database to achieve far more comprehensive solutions.
 
-#### Pick Caller Line Identification from Direct Inward Dial
+#### Pick CLI from DID
 
 This example shows how to pick a DID already associated with the customer at random for use as the CLI.
 
-| CLI            | Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
+| CLI| Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
 |----------------|-----------------|-------------|-----------------------|--------|----------|--------------|
-|                |                 |             |                       | Yes    | Random   | None         |
+||||| Yes| Random| None|
 
-#### Pick Caller Line Identification from Direct Inward Dial with Longest Match
+#### Pick CallerCLI from DID with Longest Match
 
 You may wish to perform CLI Localization.
 
 For example, if you have various DIDs (in this case, `123456`, `123567`, and `123789`) and are placing a call to `1234987654`, the system will find the longest match (in this case, `123456)` to use as the CLI.
 
-| CLI            | Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID      | Userspace DB |
+| CLI| Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID | Userspace DB |
 |----------------|-----------------|-------------|-----------------------|--------|--------------|--------------|
-|                |                 |             |                       | Yes    | Prefix Match | None         |
+||||| Yes| Prefix Match | None |
 
-#### Pick a Caller Line Identification from a Large List
+#### Pick a CLI from a Large List
 
 Our Userspace database allows you to manage large lists of numbers. Once you upload the numbers, you can use the following options to choose a number at random.
 
-| Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID      | Userspace DB  |
+| Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID| Userspace DB  |
 |-----------------|-------------|-----------------------|--------|--------------|---------------|
-|                 |             |                       | Yes    | Disabled     | [My Database] |
+|||| Yes| Disabled| [My Database] |
 
-### Manipulate Caller Line Identification
+###### Performance based CLI Selection
+
+The Performance based CLI Selection chooses the CLI with the best ASR from a large list or a database.
+
+**How does this algorithm work?**
+
+1. If there is more than 1000 records in the CLI Database, it will randomly pick 1000, then pick from that.
+2. An ASR lookup is initiated and the ASR reading requires at least 50 calls. It does a sliding window over the last 7 days.
+3. If there are less than 50 calls to this CLI (or none), it will assume an ASR of 50%.
+4. It will pick the top 5 performing CLI's every 5 minutes.
+
+**Steps to use Performance CLI Selection**
+
+1. Navigate to **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Routing :material-menu-right: CLI (blue `+` button).**
+2. Select **Yes** for the **Forced** field.
+3. Select a **Database**.
+4. From the drop-down next to **Flags** select Performance CLI Selection.
+5. Click `Save`.
+
+<img src= "/customer/img/performancecli1.png"> 
+
+##### Deterministic Sequential CLI Persistence
+
+This feature allows a CLI to be chosen from a database and used for a specific period of time before it's rotated to the next CLI in the list.
+
+The CLI selection is TIME DETERMINISTIC. It means that the system chooses a CLI and that CLI will be used for the specified time by the customer and later each CLI is executed sequentially and for the same specified duration.
+
+###### How to use Deterministic Sequential CLI Persistence feature
+
+1. Navigate to **Management :material-menu-right: Customer :material-menu-right: Customer [Name] :material-menu-right: Routing :material-menu-right: CLI :material-menu-right: blue `+` button.**
+2. Select **Yes** from drop-down menu for the **Forced** field.
+3. Select the Database you wish to choose the CLI from. It will then automatically pull in numbers from the database and forces it to set as CLIs. (This feature already exists).
+
+<img src= "/customer/img/cli_1.png">
+
+4.Follow steps 1 and 2.
+
+5.Navigate to **Management :material-menu-right: Customer :material-menu-right: Customer [Name] :material-menu-right: Routing :material-menu-right: Edit :material-menu-right: Config :material-menu-right: Vars<sup>TOML</sup>** and write the below code:
+
+```js
+[cli]
+persist=600 //value is in seconds
+```
+
+!!! Note
+    You can keep the value of CLI persist according to your requirements. For example, if you require CLI to be used of 10 minutes then keep the persist value as 600.
+
+<img src= "/customer/img/cli_2.png">
+
+!!! Example
+    Envision a scenario with a database containing 10 CLIs, where the customer specifies that each CLI should remain active for precisely 10 minutes. By setting the persist value to 600 seconds (10 minutes), the system will follow this sequential pattern:
+
+      - Activate CLI 1 for the initial 10 minutes
+      - Transition to CLI 2 for the subsequent 10 minutes
+    - Continue sequentially with CLI 3 through CLI 10, each active for the next 10 minutes
+
+    After all 10 CLIs complete their respective 10-minute cycles, the system seamlessly returns to CLI 1, initiating another 10-minute period. This cyclic pattern repeats consistently.
+
+### Manipulate CLI
 
 Sometimes it can be useful to keep all or part of the transmitted CLI and manipulate it when it gets sent out.
 
@@ -282,9 +343,9 @@ If a customer sends a call where the CLI starts with a 9 we can strip it out and
 
 For example, `9123456789` will become `4423456789`.
 
-| CLI            | Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
+| CLI| Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
 |----------------|-----------------|-------------|-----------------------|--------|----------|--------------|
-| `^9(.*)$`      |                 | `44$1`      |                       | No     | Disabled | None         |
+| `^9(.*)$` || `44$1`|| No| Disabled | None |
 
 This may be a little complicated, so we can break this down:
 
@@ -295,13 +356,13 @@ This may be a little complicated, so we can break this down:
 
 In the Rewrite CLI section, `44` is the literal 44 digits, and `$1` will contain what it has matched in the previous stage.
 
-#### Use Pre-Asserted-Identity as Caller Line Identification
+#### Use PAID as CLI
 
 You can use all or part of a sent Pre-Asserted-Identity as the CLI. The following example shows how to capture them all.
 
-| CLI            | Pre-Asserted-ID  | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
+| CLI| Pre-Asserted-ID  | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
 |----------------|------------------|-------------|-----------------------|--------|----------|--------------|
-| `.*`           | `^(?<paid>.*)$`  | `$<paid>`   |                       | No     | Disabled | None         |
+| `.*`| `^(?<paid>.*)$`| `$<paid>`| No| Disabled | None|
 
 Besides the matched group as above, we've the expression `(?<paid>.*)`. Here, `paid` represents a variable which stores this information, and it's then available in the CLI rewrite scope as `$<paid>`.
 
@@ -314,15 +375,18 @@ Manipulate the P-Asserted ID similarly to how we manipulated the CLI. In this ca
 
 | CLI  | Pre-Asserted-ID  | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
 |------|------------------|-------------|-----------------------|--------|----------|--------------|
-| `.*` | `^9(?<paid>.*)$` |             | `44$<paid>`           | No     | Disabled | None         |
+| `.*` | `^9(?<paid>.*)$` || `44$<paid>`| No| Disabled | None|
 
-#### Use Caller Line Identification
+#### Use CLI as PAID
 
 If we want to use the CLI in the Pre-Asserted-Identity it's a little easier as we can just use the numbered group.
 
-| CLI      | Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
+| CLI| Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
 |----------|-----------------|-------------|-----------------------|--------|----------|--------------|
-| `^(.*)$` |                 |             | `$1`                  | No     | Disabled | None         |
+| `^(.*)$`||| `$1`| No | Disabled | None|
+| | | |`$0`| No| Disabled/Filter | Select a database|
+| | | |`\0`| No| Disabled/Filter | Select a database|
+| | | |`<db>`|Yes | |Select a database|
 
 ### How to Invert a Regular Expression
 
@@ -334,13 +398,13 @@ This will BLOCK all USA Freephone numbers
 
 The CLI system uses Regular Expressions to match and replace numbers. Here are some examples:
 
-| Number      |            CLI | Replace CLI |                                      Description |
+| Number|CLI | Replace CLI |Description |
 |-------------|:--------------:|:-----------:|:-------------------------------------------------|
-| 123456789   |          ^1234 |             |   Allows only numbers starting with 1234 to pass |
-| 123456789   |           789$ |             |      Allows only numbers ending with 789 to pass |
-| 12345678912 | ^[0-9]{11,12}$ |             | Allows only numbers with 11 or 12 digits to pass |
-| +123456789  |   ^\+([0-9]+)$ |          \1 |                                 Remove the leading + |
-| 01782123456 |    ^0([1-9]+)$ |        44\1 |             Remove the leading 0 and replace it with 44 |
+| 123456789 | ^1234 ||Allows only numbers starting with 1234 to pass |
+| 123456789|789$ ||Allows only numbers ending with 789 to pass |
+| 12345678912 | ^[0-9]{11,12}$ || Allows only numbers with 11 or 12 digits to pass |
+| +123456789  |^\ +([0-9]+)$ |\1 |Remove the leading + |
+| 01782123456 |^0([1-9]+)$ |44\1 |Remove the leading 0 and replace it with 44 |
 
 _To learn more about writing regular expressions, visit [**RegExr**](http://regexr.com). It includes tutorials and exercises available for all levels of expertise._
 

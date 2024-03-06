@@ -43,7 +43,7 @@ To allocate customer payments to a specific invoice:
 4. Enter the total paid.
 5. Click **`Save`**.
 
-## Automatic Voice Generation
+## Automatic Invoice Generation
 
 You can also generate an invoice through **Schedule Report**.
 

@@ -2,7 +2,7 @@
 
 **Developer :material-menu-right: Button Builder**
 
-Use **Button Builder** in combination with [**Form Builder**](https://docs.connexcs.com/developers/form-builder/) to create a button that you can place in an existing menu on the site.
+Use **Button Builder** in combination with [**Pages**](https://docs.connexcs.com/developers/pages/introduction/) to create a button that you can place in an existing menu on the site.
 
 !!! example "Example use"
     Create the ability to select one or more customers / DIDs (Direct Inward Dialing)
