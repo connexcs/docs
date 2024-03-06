@@ -4,11 +4,13 @@
 
 **Charts** are visual representations of data that use symbols, colors, and shapes to communicate information clearly and efficiently.
 
-The 3 types of Charts we use are:
+The 5 types of Charts we use are:
 
-1. **Bar charts**: Use bars of different heights to represent data points. Often used for comparing values across categories.
+1. **Bar charts**: Use bars to represent data points. Often used for comparing values across categories.
 2. **Line charts**: Show trends and changes over time. Connecting data points with lines allows for easy visualization of patterns.
-3. **Pie charts**: Show the proportion of each category in a data set as slices of a pie. Useful for highlighting the relative size of different parts of a whole.
+3. **Area charts**: Its similar to line charts, but displays the area below the curve.
+4. **Pie charts**: Show the proportion of each category in a data set as slices of a pie. Useful for highlighting the relative size of different parts of a whole.
+5. **Sankey Charts**: The Sankey diagram encodes each node of the raw data into a small rectangle. Different nodes are presented in different colors as far as possible.
 
 <img src= "/apps/components/charts.png">
 
@@ -71,7 +73,7 @@ The 3 types of Charts we use are:
             ```
 
     2. `this.removeClassName(fields, className)`
-        ``js
+        ```js
         this.removeClassName('echarts_moy2lbor', 'abc')
         ```
     
@@ -120,14 +122,21 @@ The 3 types of Charts we use are:
         var chartname = this.getComponent('echarts_moy2lbor');
         console.log('getComponent', chartname);
         ```
-
-        **example of setData**
-
-!!! info Add multiple classes
-    Use the following syntax to add multiple classes to a component:
-    ```js
-    this.addClassName('componentID', 'class1', 'class2')
-    ``
+    
+    11. `this.setData(Value)`
+        ```js
+        this.setData(
+        {
+        "chart":[
+        {
+            "2015":43.3,
+            "2016":90,
+            "2017":10,
+            "product":"Matcha Latte"
+        },
+        ]
+        }
+        ```
 
 ## Config
 
@@ -168,20 +177,20 @@ The 3 types of Charts we use are:
         * {c}: the value of a data item.
         * {@xxx}: the value of a dimension named 'xxx', for example, {@product} refers to the value of 'product' dimension.
         * {@[n]}: the value of a dimension at the index of n, for example, {@[3]} refers to the value at dimensions[3].
-   * **Name**: Select the **Series**.
-   * **Encode X**:The X-axis index in a graph refers to the numerical values or categories displayed along the bottom horizontal axis.
+   * **Name**: Name of the **Series**.
+   * **Encode X**: The X-axis index in a graph refers to the numerical values or categories displayed along the bottom horizontal axis.
    * **Encode Y**: The Y-axis index in a graph refers to the numerical values displayed along the vertical axis.
 
 <img src= "/apps/components/img/charts_series1.png" width="400">
 
 !!! Info Line Charts
-    When you select **Line Charts** some additional fields are displayed:
-    * **Symbol**: Allows you to choose the symbol of the connecting the line.
-    * **Connect Nulls**: Whether to connect the line across null points.
+    When you select **Line Charts** some additional fields are displayed:<br>
+    **Symbol**: Allows you to choose the symbol of the connecting the line.<br>
+    **Connect Nulls**: Whether to connect the line across null points.
 
 !!! Info Area
-    When you select **Area** some fields are displayed:
-    * **Color**: Select the area under the curve.
+    When you select **Area** some fields are displayed:<br>
+    **Color**: Select the area under the curve.
 
 !!! Info Sankey Charts
     A **Sankey chart** is a type of diagram that helps you show how things flow from one part to another.
@@ -206,7 +215,7 @@ The 3 types of Charts we use are:
 
 <img src= "/apps/components/img/charts_yaxis1.png" width="400">
 
-4.**Grid**: To change the settings for Grid.
+4.**Grid**: To change the settings for Grid when we've multiple charts.
 
 * **Left**: Place the chart on left-side using the slider.
 * **Top**: Place the chart on the Top using the slider.

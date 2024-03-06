@@ -8,11 +8,11 @@ It provides a user-friendly interface with drag-and-drop functionality and vario
 
 ### Key features and functionalities of the  Page builder:
 
-1. **Drag-and-drop interface**: You can drag and drop various form elements like text fields, checkboxes, radio buttons, drop-down menus, and more onto a visual canvas.
+1. **Drag-and-drop interface**: You can drag and drop various form elements e.g. *text fields, checkboxes, radio buttons, drop-down menus*, and more onto a visual canvas.
 2. **Customization options**: You can customize the appearance of your form by changing colors, fonts, layouts, and adding your own branding elements.
 3. **Conditional logic**: You can set up conditional logic, where certain form fields appear or disappear depending on the user's selections in other fields.
 4. **Data validation**: Page builders offer built-in validation rules to ensure users enter data in the correct format (e.g., email address, phone number).
-5. Integrations: You have the option yo integrate with various services like email marketing platforms, payment gateways, and CRM systems.
+5. **Integrations**: You have the option to integrate with various services like email marketing platforms, payment gateways, and CRM systems.
 6. **Charts**: You can display your data using various types of charts.
 
 ## Create a new Page
@@ -23,13 +23,11 @@ It provides a user-friendly interface with drag-and-drop functionality and vario
 
 <img src= "/apps/img/pageb1.png">
 
-3.Enter the **Name** and **Title** of your Page. From the **App** drop-down you can select the application for which you wish to create the page for.
-
-4.Click on **Save and Continue**.
+3.Enter the **Name** and **Title** of your Page. From the **App** drop-down you can select the application for which you wish to create for the page for and click on **Save and Continue**.
 
 <img src= "/apps/img/pageb2.png" width="600">
 
-5.The created **Page** will be visible on the IDE panel under **Page Builder**. Click on the created blank page to create your customize form/page.
+4.The created **Page** will be visible on the IDE panel under **Page Builder**. Click on the created blank page to create your customize form/page.
 
 <img src= "/apps/img/pageb3.png">
 
@@ -43,11 +41,11 @@ It serves as a way to customize the component's behavior, appearance, or functio
 
 Components in a Page Builder include Alert, Buttons, Sub-Form, Sub-Form+, Table etc.
 
-We've explained the **Component Attribute** for each component individually in the **Components section**.
+We've explained the **Component Attribute** for each component individually in the [**Components section**](https://bani-appsection--connexcs-docs.netlify.app/apps/components/alert/).
 
 ## Form Attribute
 
-The Form attribute helps you specify values for the following parameters for all the fields in the form:
+The Form attribute helps you specify values for the following parameters for all the fields in the form or on the form itself:
 
 |**Name of the Component**|**Description**|**Icon**|
 |-------------------------|---------------|---------|
@@ -58,13 +56,11 @@ The Form attribute helps you specify values for the following parameters for all
 |**Label Suffix**| A label suffix typically refers to a set of characters or symbols that are added to the end of a label or identifier to provide additional information or context|<img src= "/apps/img/page_labelsuffix.png">|
 |**Size**| Size describes the dimensions of all the fields in the form. <br> You can choose from **Large**, **Default**, and **Small**|<img src= "/apps/img/page_size.png">|
 |**Style Sheets**|You can add custom Style Sheets to make the interface look more pleasing|<img src= "/apps/img/page_stylesheets.png">|
-|**Custom Class**| A HTML class attribute which allows further customisation|<img src= "/apps/components/img/input_customclass.png">|
+|**Custom Class**|You can select class names created in Style Sheets|<img src= "/apps/components/img/input_customclass.png">|
 |**Log Level**|Log messages based on the severity of the event they describe, helping users prioritize and interpret the vast amount of information typically found in logs. <br><br>1.**Disabled** signifies is entirely turned off. No messages, regardless of their severity (error, warning, info, etc.), will be written to the log file.</br></br> 2. Use **Error** log level that should be used when the application hits an issue preventing one or more functionalities from properly functioning. <br><br> 3. Use **Warn** log for unexpected behavior happened inside the application, but it's continuing its work and the key business features are operating as expected. <br><br>4. **Info** An event happened, the event is purely informative and can be ignored during normal operations. <br><br>5. Use **Debug** level for troubleshooting or test environments to diagnose potential issues. <br><br> 6. **Trace** Detailed code execution for deep debugging, ignored during normal operation.<br><br>{ label: 'Disabled', value: 5 }, <br>{ label: 'Error', value: 4 },<br>{ label: 'Warn', value: 3 },<br>{ label: 'Info', value: 2 },<br>{ label: 'Debug', value: 1 },<br>{ label: 'Trace', value: 0 }|<img src= "/apps/img/page_loglevel.png">|
 |**Data Source**| Data Source can be External, from Script Forge or a Database|<img src= "/apps/img/page_datasource.png">|
-|**Action Panel**| Action Panel allows you to specify the actions for buttons and link controls|<img src= "/apps/img/page_actionpanel.png">|
+|**Action Panel**| Allows you to create functions/JavaScript methods to specify the actions for various components in the form/page|<img src= "/apps/img/page_actionpanel.png">|
 |**Javascript CDN Library**|Allows you to load external javascript libaries. Our search feature lets you quickly search for libraries from `cdnjs.cloudflare.com`|<img src= "/apps/img/page_js.png">|
-
-!!!Info
 
 ## Config
 

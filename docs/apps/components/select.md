@@ -136,12 +136,12 @@ It's a versatile tool for collecting user input in situations where there are mu
         this.setData(
          {"select_rzaltclo": "Option 2",});
         ```
-
-!!! info Add multiple classes
-    Use the following syntax to add multiple classes to a component:
-    ```js
-    this.addClassName('componentID', 'class1', 'class2')
-    ```
+    
+    11. `this.refreshFieldDataSource(datasource)`
+        ```js
+        const dataSource = 'Name Of The Data Source Function'
+        this.refreshFieldDataSource(dataSource)
+        ```
 
 ## Config
 
