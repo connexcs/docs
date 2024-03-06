@@ -17,7 +17,7 @@ Click the blue :material-plus: to add a new Template.
 + Use **Text** or **HTML** for the content of the communication.
 
     ![alt text][addtemp]
- 
+
  Select **`Save`** to complete the configuration.
 
 !!! tip "Rendering Variables"
@@ -35,14 +35,16 @@ Here, we've made the variables available for creating a customized **Invoice**.
 
 Handlebars make use of [**Built-in Helpers**](https://handlebarsjs.com/guide/builtin-helpers.html).
 
+{% raw %}
 | **Built-in Helper Name** | **Explanation** | **Syntax** | **Template**| **Example Input**| **Example Output**|
-|--------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------|-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
+|--------------------------|----|----------------|----|--------------------|---------------------------|
 | **#if**| The "if" helper shows content conditionally; if the input is useful it will display the information; otherwise, it keeps the section empty, if its argument returns false, undefined, null, "", 0, or [] | {{#if content1}}{{content2}}{{/if}}| {{#if account.postcode}}{{account.postcode}}{{/if}} || It will take the value of postcode from the account information already added while subscribing |
 | **#unless**| It's the opposite of "if" helper, will render the block when the argument returns "false" values.| {{#unless name}} {{/unless}}| {{#unless name}} <h3 class="warning">WARNING: This entry doesn't have a name!</h3> {{/unless}} | {}| WARNING: This entry doesn't have a name!|
 | **#each**| "each" helps loop through lists, and "this" refers to the current element. It simplifies list processing.| {{#each content}}     <li>{{this}}</li>   {{/each}}| <ul class="people_list">   {{#each people}}     <li>{{this}}</li>   {{/each}} </ul>| {   people: [     "XXX",     "YYY",     "ZZZ",   ], } |<li>XXX</li>     <li>YYY</li>     <li>ZZZ</li> |
 | **#with**| "with" helper changes this context to focus on specific data, making it easier to work with. You can consider the "with" helper as information filter. | {{#with content}} {{content1}} {{content2}....} {{/with}} | {{#with person}} {{firstname}} {middlename} {{lastname}} {{/with}} | {   person: {     firstname: "Ben",     middlename: "Roy"     lastname: "Charles",   }, } | Ben Roy Charles |
 | **#lookup** | The "lookup" helper is used to retrieve values from an object or array based on a provided key or index. | {{#each content}}    {{.}} xxxx {{lookup ../}} {{/each}}  | {{#each people}}    {{.}} lives in {{lookup ../cities @index}} {{/each}}| {    people: ["Adam", "Ben"],   customer: [     "PM Dialer",     "Phonebook",   ], } | Adam is customer of PM Dialer Ben is customer of Phonebook |
 | **#log** | The "log" helper in Handlebars allows you to print data at specific points in the template, helping you debug and understand the rendering process. | {{log 'xxxx'}} | {{log 'this is a simple log output'}} | null||
+{% endraw %}
 
 #### Invoice Variables
 
@@ -60,6 +62,7 @@ Before describing those variables, we first discuss the steps for creating the *
 !!! Note Important Note
      You just need to add or remove the variables from the invoice template that we'll offer.
 
+{% raw %}
 | **Variable Name**| **Explanation**|
 |----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
 | account.name| Provides you with the account name|
@@ -81,7 +84,7 @@ Before describing those variables, we first discuss the steps for creating the *
 | numberFormat unit_price, {numberFormat net, {numberFormat tax, numberFormat sub_total| Gives you the total Amount |
 | nl2br account.config.payment_details| Account Details|
 | account.phone | Telephone|
-| account.email                                                                            | Billing Email| Billing e-mail address.
+| account.email| Billing Email| Billing e-mail address.
 | dateFormat date | Formats the date to: YYYY-MM-DD |
 | numberFormat (Input: 55662890)| Formats the provided number (Output: 5,56,62,890)|
 | currencyFormat currency (Input: 25000)| Formats the provided currency and displays the amount in dollars (Output: $25,000)|
@@ -89,6 +92,7 @@ Before describing those variables, we first discuss the steps for creating the *
 | sub_total{{sub_total} ($10)| Sub total amount|
 | tax {{ tax}} ($1)| Tax applied on the bill|
 | total {{ total} | Total amount due (Sub total amount + Tax amount = $10 + $1= $11)|
+{% endraw %}
 
 !!! Info 
     You can use **nlb2r** function to create the next line.
@@ -99,7 +103,7 @@ ConnexCS provides standard templates which you can customise as you wish. To cus
 
 ## ScriptForge Integration
 
-Dynamic Templates with custom variables are made by including ScriptForge(further details [**here**](https://docs.connexcs.com/developers/scriptforge/). It's done by using the `scriptforge` tag. Ex: To include a ScriptForge script with ID 1234, use `{{scriptforge 1234}}`.
+Dynamic Templates with custom variables are made by including ScriptForge(further details [**here**](https://docs.connexcs.com/developers/scriptforge/). It's done by using the `scriptforge` tag. Ex: To include a ScriptForge script with ID 1234, use `{%raw%}{{scriptforge 1234}}{% endraw %}`.
 
 This will pass ALL the variables in the current scope to ScriptForge. Whatever ScriptForge returns is then made available back in the main scope for use with the template system.
   
@@ -119,6 +123,7 @@ function main (vars) {
 
 **Template**
 
+{% raw %}
 ```xml
 <h1>Here is the news</h1>
 
@@ -128,8 +133,6 @@ function main (vars) {
 <h2>{{title}}</h2>
 {{/each}}
 ```
+{% endraw %}
 
 [addtemp]: /setup/img/addtemplate.png "Add Temp"
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1NTIyMjMwM119
--->
