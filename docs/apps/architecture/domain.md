@@ -1,4 +1,6 @@
-# Introduction
+# Domain
+
+## Introduction
 
 You can set the **Domain** where your applications will be visible and publicly accessible.
 

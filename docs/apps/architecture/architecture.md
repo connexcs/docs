@@ -1,4 +1,6 @@
-# Introduction
+# Architecture
+
+## Introduction
 
 The Application Platform is distributed over global, stateless web servers that includes the sessions.
 

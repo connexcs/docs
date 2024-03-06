@@ -1,4 +1,6 @@
-# Introduction
+# Button Builder
+
+## Introduction
 
 Use **Button Builder** in combination to create a button that you can place in an existing menu on the site.
 

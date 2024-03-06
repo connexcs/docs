@@ -1,4 +1,6 @@
-## Vars
+# Enviornmental Variables
+
+## Introduction
 
 Your variables can be placed inside the env.
 

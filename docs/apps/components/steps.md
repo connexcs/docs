@@ -113,7 +113,7 @@ It serves as a visual and functional indicator of progress, improving user exper
         this.setData(
          {
          "steps_2bpjtc5m": "2023-11-30",}
-        ); **get example**
+        );
         ```
     
     10.  `this.getComponent('component_ID')`

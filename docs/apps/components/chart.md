@@ -127,7 +127,7 @@ The 5 types of Charts we use are:
         ```js
         this.setData(
         {
-        "chart":[
+        "echarts_moy2lbor":[
         {
             "2015":43.3,
             "2016":90,

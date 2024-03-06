@@ -1,4 +1,6 @@
-# Introduction
+# Template
+
+## Introduction
 
 Create your own **Templates** to customise the content displayed on outbound emails/SMS, the Customer Portal, and WebPhone.
 

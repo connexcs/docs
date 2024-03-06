@@ -1,3 +1,5 @@
+# Pub/Sub Bus
+
 ## Introduction
 
 A **Pub/Sub** bus, short for **Publish/Subscribe** bus, is a messaging system that enables asynchronous communication between different parts of an application or system. It functions like a central communication hub where:

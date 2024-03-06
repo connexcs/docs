@@ -1,5 +1,7 @@
 # Use Cases
 
+## Introduction
+
 With our amazing **App Platform** you can perform activities:
 
 1. Various Administration Panels

@@ -1,5 +1,7 @@
 # Database
 
+## Introduction
+
 The **Database** allows you to create custom persistent data storage. A data store can be specific to a single customer or global (used with any customer).
 
 You can use **Database** for activities like checking list of numbers, caching external lookup, or creating stateful applications that provide users a set number of free minutes per month.

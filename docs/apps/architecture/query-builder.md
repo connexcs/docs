@@ -1,4 +1,6 @@
-# Introduction
+# Query Builder
+
+## Introduction
 
 A **Query builder** is a tool or library that helps developers construct database queries in a more intuitive and structured way, often without requiring direct knowledge of the query language (like SQL).
 

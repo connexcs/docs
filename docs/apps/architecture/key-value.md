@@ -1,4 +1,6 @@
-# Introduction
+# Key-Value
+
+## Introduction
 
 A **Key-Value Store**, also known as a key-value database, is a simple and efficient type of database that uses a "key-value" pair format to store data.
 

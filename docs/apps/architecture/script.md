@@ -1,4 +1,6 @@
-# Introduction
+# Script
+
+## Introduction
 
 Use ConnexCS **ScriptForge** to write ECMAScript 2015 (ES6) (aka JavaScript) and execute it in a secure sandbox on the server. It's designed to have low latency and high throughput.
 
