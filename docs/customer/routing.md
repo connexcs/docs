@@ -27,7 +27,6 @@ View and configure existing routes on the Routing tab in the Customer card. To c
     + **Extension**: (uses SIP users in Customer :material-menu-right: Auth configured SIP Users) Send a call to a Session Initiation Protocol (SIP) Authenticated user on the account.
     + **Customer IP**: (uses IPs in Customer :material-menu-right: Authconfigured IPs) Send a call from an agent back to the customer's Private Branch eXchange (PBX), using either the Tech Prefix (e.g.: #9) or a Dial String (e.g.: `^[0-9](4)$`).
     + **To Carriers**: Choose a carrier to send the call to a location outside of the ConnexCS system.
-   
 + **Tech Prefix**: This lets you distinguish a route from an inbound party.
   When several customers share the same IP address, each customer needs an individual Tech Prefix so the switch can route calls correctly.
   It enables service providers to differentiate between several rate cards.
@@ -116,6 +115,8 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 
 + **Lock** (Allow): One or more rate cards from the list of available providers.
 + **Exclude** (Deny): Exclude access to one or more rate cards in the list of available providers.
++ **Redial Max Count**: This a smart limitation feature which allow the carrier to restrict the maximum number of times their customers can redial in a selected time frame which is **Redial Max Period**. For example, you select 5 for this field, it means your customer can dial only 5 times.
++ **Redial Max Period**: Select the time-period for which you can allow the customer to redial. For example, if you select Redial Max Count as 10 and Redial Max Period as 6000 seconds, this means your customer can redial maximum 10 times within 6000 seconds.
 + **DNC (Do Not Call) List**: The customer won't be able to able to dial the numbers in the specified DNC list. You can add the list of numbers in the [**Database**](https://docs.connexcs.com/developers/database/).
 
     Apart from your own DNC list you can also choose [**United States Federal DNC**](https://www.donotcall.gov/). Choosing not to accept telemarketing calls is possible because of the National Do Not Call Registry.
@@ -229,6 +230,11 @@ An extra charge per recorded call of $0.003 gets added to existing fees or charg
 
 !!! note "Make sure your carrier supports the DTMF feature."
 
++ **RTP Codec**: This fields allows you to have more specific control over the Codecs you choose for your system. After the selection you can assign various **Permissions** to the Codecs you select.
+
+    + **Types of Permissions include**:
+      + 1. 
+  
 ### Strategy
 
 For advanced routing, click :material-plus: to select a [**Prefix Set**](https://docs.connexcs.com/setup/advanced/prefix-set/) and assign a [**Routing Strategy**](https://docs.connexcs.com/routing-strategy/). This gives you greater control over how routes get selected for a given customer.
