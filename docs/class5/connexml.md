@@ -372,7 +372,7 @@ An existing call is transferred to a different destination using the `Dial` ver
         </Response>
         ```
     
-    5. **ringTone**
+    5. **timeout**
         ```xml
         <?xml version="1.0" encoding="UTF-8"?>
         <Response>
