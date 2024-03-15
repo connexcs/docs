@@ -116,7 +116,7 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 
 + **Lock** (Allow): One or more rate cards from the list of available providers.
 + **Exclude** (Deny): Exclude access to one or more rate cards in the list of available providers.
-+ + **Redial Max Count**: This a smart limitation feature which allow the carrier to restrict the maximum number of times their customers can redial in a selected time frame which is **Redial Max Period**. For example, you select 5 for this field, it means your customer can dial only 5 times.
++ **Redial Max Count**: This a smart limitation feature which allow the carrier to restrict the maximum number of times their customers can redial in a selected time frame which is **Redial Max Period**. For example, you select 5 for this field, it means your customer can dial only 5 times.
 + **Redial Max Period**: Select the time-period for which you can allow the customer to redial. For example, if you select Redial Max Count as 10 and Redial Max Period as 6000 seconds, this means your customer can redial maximum 10 times within 6000 seconds.
 + **DNC (Do Not Call) List**: The customer won't be able to able to dial the numbers in the specified DNC list. You can add the list of numbers in the [**Database**](https://docs.connexcs.com/developers/database/).
 
@@ -234,30 +234,31 @@ An extra charge per recorded call of $0.003 gets added to existing fees or charg
 + **RTP Codec**: This fields allows you to have more specific control over the Codecs you choose for your system. After the selection you can assign various **Permissions** to the Codecs you select.
 
     + **Types of Permissions include**:
-      +  **Except**: This permission allows you to block all the codecs apart from the ones in the Whitelist. Codecs that were not included in the carrier's initial codec list will not be taken into consideration.
-      +  **Offer**: Offer also blocks the codecs apart from the ones in the whitelist and provides flexibility to change the order of the codecs in the list as well. Thus, the first codec in the list is treated as the primary codec (at the output) even if it was the last codec in the list.
-      +  **Consume**: Identical to mask but enables the transcoding engine even if no other transcoding related options are given.
-      +  **Transcode**: Allows the addition of codecs in the offered codec list even if the codecs were not included in the original list of codecs. Here, transcoding engine will be engaged meaning  behind-the-scenes translation process is happening to ensure communication.<br> You can only add those those codecs which are supported by your device for both encoding and decoding process. <br>One limitation of using this option is that it will strip-off all the unsupported codecs. Note that using this option doesn't necessarily always engage the transcoding engine. If all codecs given in the transcode list were present in the original list of offered codecs, then no transcoding will be done.<br> When you use this permission it enables you to mark/modify the Ptime.
-      +  **Strip**: This permission allows you to remove the selected codecs or RTP Payload types from the SDP. Codecs removed using this option behaves as if they never existed in the SDP.
+        + **Except**: This permission allows you to block all the codecs apart from the ones in the Whitelist. Codecs that were not included in the carrier's initial codec list will not be taken into consideration.
+        +  **Offer**: Offer also blocks the codecs apart from the ones in the whitelist and provides flexibility to change the order of the codecs in the list as well. Thus, the first codec in the list is treated as the primary codec (at the output) even if it was the last codec in the list.
+        +  **Consume**: Identical to mask but enables the transcoding engine even if no other transcoding related options are given.
+        +  **Transcode**: Allows the addition of codecs in the offered codec list even if the codecs were not included in the original list of codecs. Here, transcoding engine will be engaged meaning  behind-the-scenes translation process is happening to ensure communication.<br> You can only add those those codecs which are supported by your device for both encoding and decoding process. <br>One limitation of using this option is that it will strip-off all the unsupported codecs. Note that using this option doesn't necessarily always engage the transcoding engine. If all codecs given in the transcode list were present in the original list of offered codecs, then no transcoding will be done.<br> When you use this permission it enables you to mark/modify the Ptime.
+        +  **Strip**: This permission allows you to remove the selected codecs or RTP Payload types from the SDP. Codecs removed using this option behaves as if they never existed in the SDP.
   
-      |Strip|Transcode|Explanation|
-      |-----|---------|-----------|
-      |G729A|Opus|G729A is unavailable for transcoding|
-      +  **Mask**: This option allows you to filter-out the selected codec from the output. Mask works well in combination with **Transcode** option. For example,
+        |Strip|Transcode|Explanation|
+        |-----|---------|-----------|
+        |G729A|Opus|G729A is unavailable for transcoding|
+        
+        +  **Mask**: This option allows you to filter-out the selected codec from the output. Mask works well in combination with **Transcode** option. For example,
 
-      |Input/Offering side|Mask|Transcode|Output/Outgoing Offer|Explanation|
-      |-------------------|-----|---------|--------------------|-----------|
-      |G729A|G729A|Opus|Opus|Transcoding happens between G729A and Opus but output is Opus, G729 is filtered out|
-      |G729A||Opus|G729A and Opus| Transcoding happens between G729A and Opus but outputs are both Opus and G729A since G729A wasn't filtered out|
+        |Input/Offering side|Mask|Transcode|Output/Outgoing Offer|Explanation|
+        |-------------------|-----|---------|--------------------|-----------|
+        |G729A|G729A|Opus|Opus|Transcoding happens between G729A and Opus but output is Opus, G729 is filtered out|
+        |G729A||Opus|G729A and Opus| Transcoding happens between G729A and Opus but outputs are both Opus and G729A since G729A wasn't filtered out|
 
-       + **Accept**: This option is similar to **Strip** and **Mask** but it isn't removed from the codecs offered list. When you select this option, the selected codec is offered to the remote peer (output/outgoing offer), if the remote peer rejects the offered (incoming) codec it will be used for transcoding and is accepted by the input/offering side.
-       In short, Accept permission allows your device to use codecs offered by the remote peer even if they weren't your initial choice.
+         + **Accept**: This option is similar to **Strip** and **Mask** but it isn't removed from the codecs offered list. When you select this option, the selected codec is offered to the remote peer (output/outgoing offer), if the remote peer rejects the offered (incoming) codec it will be used for transcoding and is accepted by the input/offering side.
+        In short, Accept permission allows your device to use codecs offered by the remote peer even if they weren't your initial choice.
 
-      |Input/Offering side|Accept|Transcode|Output/Outgoing Offer|Explanation|
-      |-------------------|------|---------|---------------------|-----------|
-      |G729A|G729A|Opus|Reject|Transcoding still happens between G729A and Opus|
+        |Input/Offering side|Accept|Transcode|Output/Outgoing Offer|Explanation|
+        |-------------------|------|---------|---------------------|-----------|
+        |G729A|G729A|Opus|Reject|Transcoding still happens between G729A and Opus|
 
-+ **Ptime(ms)**: This value determines the length of time each box (RTP packet) can hold. A higher ptime means each packet carries a longer chunk of audio/video data (bigger box), while a lower ptime means shorter chunks (smaller boxes).
+    + **Ptime(ms)**: This value determines the length of time each box (RTP packet) can hold. A higher ptime means each packet carries a longer chunk of audio/video data (bigger box), while a lower ptime means shorter chunks (smaller boxes).
 
 ### Strategy
 
