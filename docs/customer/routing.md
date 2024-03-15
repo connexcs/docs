@@ -136,11 +136,11 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 + **SIP Ping**: Send regular pings to ensure both sides of a call are still up. `Enabled` is the recommended setting.
 
     |Option| Result|
-    |--------------------------------|:--------------------------------------------------|
-    | **Disabled**                   | No SIP pings will be sent |
-    | **Enabled Both Sides**         | SIP pings sent in both directions |
-    | **Enabled (Downstream Only)**  | SIP Pings sent to the location where the call originated |
-    | **Enabled (Upstream Only)**    | SIP Pings sent towards where the call is TO (terminated) |
+    |------|:------|
+    |**Disabled**| No SIP pings will be sent|
+    |**Enabled Both Sides**| SIP pings sent in both directions|
+    |**Enabled (Downstream Only)**| SIP Pings sent to the location where the call originated|
+    |**Enabled (Upstream Only)**| SIP Pings sent towards where the call is TO (terminated)|
 
 + **SIP Session Timer (SST)**: SST is Passive by Default, but **Enabled** is the recommended setting.
   When enabled, SST ensures there is no ghost or long-duration calls get billed when one or both sides have hung up. A timer activates when the call starts and refreshes the call every X number of seconds by sending a RE-INVITE.
@@ -182,12 +182,12 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 
 !!! info "RTP Proxy distinctions"
     When a call gets established between the customer and the provider, audio can be setup in one of two ways:
-|                         | **With RTP Proxy** | **Without RTP Proxy** |
-|-------------------------|:------------------:|----------------------:|
-| **Audio Path**          |      Indirect      |                Direct |
-| **Audio Quality**       |      Excellent     |            Unbeatable |
-| **Latency**             |         Low        |                Lowest |
-| **Information Leakage** |         No         |                  Yes* |
+|                         |**With RTP Proxy**| **Without RTP Proxy**|
+|-------------------------|:------------------:|-------------------:|
+| **Audio Path**|Indirect|Direct|
+| **Audio Quality**|Excellent|Unbeatable|
+| **Latency**|Low|Lowest|
+| **Information Leakage**|No|Yes*|
 
 *While it's doubtful that any information will get logged in the customer / providers switch when the audio gets engaged, it's possible for an engineer to learn this information from a SIP trace, PCAP, or by looking at transit locations. DTMF Detection ONLY works when RTP Proxy mode gets enabled.
 
@@ -233,7 +233,31 @@ An extra charge per recorded call of $0.003 gets added to existing fees or charg
 + **RTP Codec**: This fields allows you to have more specific control over the Codecs you choose for your system. After the selection you can assign various **Permissions** to the Codecs you select.
 
     + **Types of Permissions include**:
-      + 1. 
+      +  **Except**: This permission allows you to block all the codecs apart from the ones in the Whitelist. Codecs that were not included in the carrier's initial codec list will not be taken into consideration.
+      +  **Offer**: Offer also blocks the codecs apart from the ones in the whitelist and provides flexibility to change the order of the codecs in the list as well. Thus, the first codec in the list is treated as the primary codec (at the output) even if it was the last codec in the list.
+      +  **Consume**: Identical to mask but enables the transcoding engine even if no other transcoding related options are given.
+      +  **Transcode**: Allows the addition of codecs in the offered codec list even if the codecs were not included in the original list of codecs. Here, transcoding engine will be engaged meaning  behind-the-scenes translation process is happening to ensure communication. You can only add those those codecs which are supported by your device for both encoding and decoding process. One limitation of using this option is that it will strip-off all the unsupported codecs. Note that using this option does not necessarily always engage the transcoding engine. If all codecs given in the transcode list were present in the original list of offered codecs, then no transcoding will be done.
+      +  **Strip**: This permission allows you to remove the selected codecs or RTP Payload types from the SDP. Codecs removed using this option behaves as if they never existed in the SDP.
+  
+      |Strip|Transcode|Explanation|
+      |-----|---------|-----------|
+      |G729A|Opus|G729A is unavailable for transcoding|
+      +  **Mask**: This option allows you to filter-out the selected codec from the output. Mask works well in combination with **Transcode** option. For example,
+
+      |Input/Offering side|Mask|Transcode|Output/Outgoing Offer|Explanation|
+      |-------------------|-----|---------|--------------------|-----------|
+      |G729A|G729A|Opus|Opus|Transcoding happens between G729A and Opus but output is Opus, G729 is filtered out|
+      |G729A||Opus|G729A and Opus| Transcoding happens between G729A and Opus but outputs are both Opus and G729A since G729A wasn't filtered out|
+
+       + **Accept**: This option is similar to **Strip** and **Mask** but it isn't removed from the codecs offered list. When you select this option, the selected codec is offered to the remote peer (output/outgoing offer), if the remote peer rejects the offered (incoming) codec it will be used for transcoding and is accepted by the input/offering side.
+       In short, Accept permission allows your device to use codecs offered by the remote peer even if they weren't your initial choice.
+
+      |Input/Offering side|Accept|Transcode|Output/Outgoing Offer|Explanation|
+      |-------------------|------|---------|---------------------|-----------|
+      |G729A|G729A|Opus|Reject|Transcoding still happens between G729A and Opus|
+
+
+ 
   
 ### Strategy
 
@@ -278,14 +302,14 @@ ASR (Answer Seizure Ratio) is the number of connected calls divided by the total
 
 **ASR Plus** is a proprietary ConnexCS technology that filters known failed, non-existent / working numbers between the customer and the terminating, or destination, carrier. This is useful with larger call volumes. Unless it's turned off or customized otherwise, ASR+ is active for 90% of calls, which grants the opportunity for the database replenishment.
 
-| Value         | Description                |
-| ------------- |----------------------------|
-| **Off**           | ASR+ Disabled              |
-| **ASR+ (Low)**    | Active on 30% of calls     |
-| **ASR+**          | Active                     |
-| **ASR?**          | When ASR+ gets enabled on the provider card |
-| **ASR+?**         | When ASR+ gets enabled on the provider card, only known connected calls pass-through specific providers |
-| **ASR++**         | Only known connected calls pass-through (not used frequently because it's typically overly strict) |
+| Value| Description|
+| -----|------------|
+| **Off**|ASR+ Disabled|
+| **ASR+ (Low)**| Active on 30% of calls|
+| **ASR+**|Active|
+| **ASR?**|When ASR+ gets enabled on the provider card|
+| **ASR+?**|When ASR+ gets enabled on the provider card, only known connected calls pass-through specific providers|
+| **ASR++**| Only known connected calls pass-through (not used frequently because it's typically overly strict)|
 
 !!! success "Advantages of ASR"
     + Quick failure of known bad numbers.
@@ -299,8 +323,3 @@ ASR (Answer Seizure Ratio) is the number of connected calls divided by the total
 [ingress-routing]: /customer/img/ingress-routing.png "Ingress Routing"
 [routing-disabled]: /customer/img/routing-disabled.png "Disabled Routing"
 [techprefix-usecase]: /customer/img/techprefix-usecase.png "Tech Prefix Use Case"
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzY4MTI2NDMsMTc2NDUxMTQyOCwtMz
-U0MDg1Mzk4LDE2MjE2NzUwMTgsLTEzMjkyMzgxODAsLTMwMjA3
-MDY1MCw0MTYxMDc5MjIsLTIwNDc3MjgxOTJdfQ==
--->

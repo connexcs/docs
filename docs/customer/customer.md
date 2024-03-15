@@ -169,10 +169,3 @@ Click an existing customer name from the Customer section, then click **`Edit`**
 [customers]: /customer/img/customers.png "Customer Dashboard"
 [customer-status]: /customer/img/39.png "Customer Status"
 [customersubs]: /customer/img/customersubs.png "Customer Sub-Sections"
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzMwMzMwMDAsNDM4MjQ3ODQ2LDExMz
-UxNTg2OTksMzg1MTAxMjIsLTcyODExODg4MywtMTIyNDM0MTE4
-OCwxMzg1MzU3MTk2LC01NzU1NjUwMjgsLTQwMDQ2ODc1NSwtMT
-U1NjMxNDQzMl19
--->
