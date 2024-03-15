@@ -236,7 +236,7 @@ An extra charge per recorded call of $0.003 gets added to existing fees or charg
       +  **Except**: This permission allows you to block all the codecs apart from the ones in the Whitelist. Codecs that were not included in the carrier's initial codec list will not be taken into consideration.
       +  **Offer**: Offer also blocks the codecs apart from the ones in the whitelist and provides flexibility to change the order of the codecs in the list as well. Thus, the first codec in the list is treated as the primary codec (at the output) even if it was the last codec in the list.
       +  **Consume**: Identical to mask but enables the transcoding engine even if no other transcoding related options are given.
-      +  **Transcode**: Allows the addition of codecs in the offered codec list even if the codecs were not included in the original list of codecs. Here, transcoding engine will be engaged meaning  behind-the-scenes translation process is happening to ensure communication. You can only add those those codecs which are supported by your device for both encoding and decoding process. One limitation of using this option is that it will strip-off all the unsupported codecs. Note that using this option does not necessarily always engage the transcoding engine. If all codecs given in the transcode list were present in the original list of offered codecs, then no transcoding will be done.
+      +  **Transcode**: Allows the addition of codecs in the offered codec list even if the codecs were not included in the original list of codecs. Here, transcoding engine will be engaged meaning  behind-the-scenes translation process is happening to ensure communication.<br> You can only add those those codecs which are supported by your device for both encoding and decoding process. <br>One limitation of using this option is that it will strip-off all the unsupported codecs. Note that using this option doesn't necessarily always engage the transcoding engine. If all codecs given in the transcode list were present in the original list of offered codecs, then no transcoding will be done.<br> When you use this permission it enables you to mark/modify the Ptime.
       +  **Strip**: This permission allows you to remove the selected codecs or RTP Payload types from the SDP. Codecs removed using this option behaves as if they never existed in the SDP.
   
       |Strip|Transcode|Explanation|
@@ -256,9 +256,8 @@ An extra charge per recorded call of $0.003 gets added to existing fees or charg
       |-------------------|------|---------|---------------------|-----------|
       |G729A|G729A|Opus|Reject|Transcoding still happens between G729A and Opus|
 
++ **Ptime(ms)**: This value determines the length of time each box (RTP packet) can hold. A higher ptime means each packet carries a longer chunk of audio/video data (bigger box), while a lower ptime means shorter chunks (smaller boxes).
 
- 
-  
 ### Strategy
 
 For advanced routing, click :material-plus: to select a [**Prefix Set**](https://docs.connexcs.com/setup/advanced/prefix-set/) and assign a [**Routing Strategy**](https://docs.connexcs.com/routing-strategy/). This gives you greater control over how routes get selected for a given customer.
