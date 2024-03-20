@@ -24,7 +24,7 @@ You can use **Database** for activities like checking list of numbers, caching e
 1. Next to the **Basic** Tab is the **SQL Table Schema**. This allows you to add additional fields apart from the **Leadset**. You can also select it's **Type** like integer, string, double, float etc.
 <img src="/developers/img/db3.png" width="500", height="150">
 
-1. Click on `Save` to finally create the database.
+2. Click on `Save` to finally create the database.
 
 ## Bulk Upload
 
@@ -45,6 +45,13 @@ You can add, modify, remove the columns to display on the grid. This is only for
 
 SQL is currently available in 3 parts of the system:
 
+<<<<<<< HEAD
++ Customer (Client Side)
++ CDR (Server)
++ Userspace Database (Server)
+
+=======
+>>>>>>> 95084266e003a35b1dabe1474fe99091142b452e
 <img src="/developers/img/db4.png">
 
 + Customer (Client Side): **Management :material-menu-right: Customer :material-menu-right: SQL**

@@ -10,17 +10,21 @@ ConneXML is a set of instructions you can use to tell Class 5 Applications what 
 
 When the customers receive an External or Internal Call, it hits the [DID](https://docs.connexcs.com/customer/did/) section.
 
-In the DID section you can allocate the calls at different places. Click on DID (on the left) :material-menu-right: Destination:
+In the DID section you can allocate the calls at different places. Click on Call :material-menu-right: Destination:
 
 1.**URI**: Its points to a client's server. You can send the call either to the Destination DID or an IP address.
 
 <img src= "/class5/img/ml2.png"  width="400">
 
-2.**Internal**: Allows you to route the call internally like a SIP user or a Queue.
+2.**External**: Allows you to re-direct the call out back again to the network.
+
+<img src= "/class5/img/ml3.png" width="400">
+
+3.**Internal**: Allows you to route the call internally like a SIP user or a Queue.
 
 <img src= "/class5/img/ml4.png" width="400">
 
-Later, the Class 5 Applications makes an HTTP request to the URL endpoint you configured for that number. The endpoint will contain instructions telling ConneXML what to do next with the call.
+Later, the Class5 Applications makes an HTTP request to the URL endpoint you configured for that number. The endpoint will contain instructions telling ConnexML what to do next with the call.
 
 ### How does ConneXML work?
 

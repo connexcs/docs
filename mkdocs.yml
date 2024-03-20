@@ -32,6 +32,7 @@ extra_css:
 plugins:
     - search
     - mermaid2
+    - external-markdown
 
 markdown_extensions:
   - admonition
@@ -223,6 +224,7 @@ nav:
             - Remote Testing: guides/remote-testing.md
             
     - Video Guide: video-guide.md
+    - Some Interesting Features: makecall.md
 
   - Customer Portal:
     - Dashboard: customer-portal/cp-dashboard.md
@@ -255,4 +257,64 @@ nav:
 
   - WebPhone: 
     - WebPhone: webphone.md
-    - Some Interesting Features: makecall.md
+
+  - Apps Platform: 
+    - Introduction: apps/introduction.md
+    - Use Cases: apps/use-case.md
+    - Features: apps/features.md
+    - Architecture:
+        - Architecture: apps/architecture/architecture.md
+        - Applications: apps/architecture/app.md
+        - Button Builder: apps/architecture/button-builder.md
+        - Databases: apps/architecture/database.md
+        - Domain: apps/architecture/domain.md
+        - Key Value Store: apps/architecture/key-value.md
+        - Page Builder: apps/page-builder.md
+        - Script Forge: apps/architecture/script.md
+        - Template: apps/architecture/template.md
+        - Query Builder: apps/architecture/query-builder.md
+        - Pub / Sub Bus: apps/architecture/pub-sub.md
+        - Environmental Variables: apps//architecture/environmental-variables.md
+    - Components:
+        - Alert: apps/components/alert.md
+        - Button: apps/components/button.md
+        - Card: apps/components/card.md
+        - Cascader: apps/components/cascader.md
+        - Chart: apps/components/chart.md
+        - Checkbox: apps/components/checkbox.md
+        - Collapse: apps/components/collapse.md
+        - Color: apps/components/color.md
+        - Data Grid: apps/components/data-grid.md
+        - Date: apps/components/date.md
+        - Dialog: apps/components/dialog.md
+        - Divider: apps/components/divider.md
+        - Editor: apps/components/editor.md
+        - Grid: apps/components/grid.md
+        - Group: apps/components/group.md
+        - HTML: apps/components/html.md
+        - I-Frame: apps/components/iframe.md
+        - Inline: apps/components/inline.md
+        - Input: apps/components/input.md
+        - Link: apps/components/link.md
+        - Number: apps/components/number.md
+        - Page Layout: apps/components/page-layout.md
+        - Pagination: apps/components/pagination.md
+        - Portal: apps/components/portal.md
+        - Radio: apps/components/radio.md
+        - Rate: apps/components/rate.md
+        - Select: apps/components/select.md
+        - Slider: apps/components/slider.md
+        - Steps: apps/components/steps.md
+        - Sub Form: apps/components/sub-form.md
+        - Sub Form+: apps/components/sub-form+.md
+        - Switch: apps/components/switch.md
+        - Table: apps/components/table.md
+        - Tabs: apps/components/tabs.md
+        - Text: apps/components/text.md
+        - Text Area: apps/components/text-area.md
+        - Time: apps/components/time.md
+        - Transfer: apps/components/transfer.md
+        - Tree Select: apps/components/tree-select.md
+        - Webphone: apps/components/webphone.md
+
+    
