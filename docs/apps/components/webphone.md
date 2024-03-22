@@ -8,16 +8,22 @@ The Webphone component is available as an instant component with no programming 
 
 It allows you to create a fully customised solution.
 
+Here, you have the capability to set the [Environmental Variables](https://docs.connexcs.com/apps/architecture/environmental-variables/) which can be called as a **function** (internal or external) from the **Dynamic Data** option in the **Component Attribute** from the **Page Builder**.
+
+!!! Example
+    1. Configure the **Environmental Variables** as explained [here](https://docs.connexcs.com/apps/architecture/environmental-variables/#steps-for-configuring-the-variables).
+    2. Navigate to [Page Builder](https://docs.connexcs.com/apps/page-builder/), select the component, click on [Component Attribute](https://docs.connexcs.com/apps/page-builder/#component-attribute), then **Option :material-menu-right: Dynamic Data :material-menu-right: Function**, click on Function (can be internal or external). You can call the environmental variables using `this.env`. You can create the function in [Form Attribute :material-menu-right: Action Panel](https://docs.connexcs.com/apps/page-builder/#form-attribute).
+
 ## Use Case
 
 Add Audio/Video Bi-directional communication for use in:
-OTT Mobile Application
 
-1. Call Center Agent Dashboard
-2. Click-2-Call
-3. Live Website Help
-4. Embedded Applications
-5. Conference Applications
+1. OTT Mobile Application
+2. Call Center Agent Dashboard
+3. Click-2-Call
+4. Live Website Help
+5. Embedded Applications
+6. Conference Applications
 
 <img src= "/apps/components/img/webphone.png" width="300">
 

@@ -14,8 +14,8 @@ We make our best efforts to reply 24/7.
 
 We expect the following from you as a customer:
 
-* Basic level or above of computer operation.
-* Basic level or above of Telephony.
+* Basic knowledge level or above of computer operation.
+* Basic knowledge level or above of Telephony.
 * Act as a liaison with your customers and carriers.
 * For initial investigation of the problem, first-line support should be internal to your company.
 * Problem Isolation (See [**Debugging guide**](/guides/debugging/))
@@ -132,9 +132,9 @@ We encourage feedback but also want to make sure you have the most efficient mea
 
 Customers do face some difficulties and problems throughout their tenure with you. Not all problems are the same and require different levels of attention and help.
 
-For maximizing the pleasant customer experience, we must resolve the problems with immediate effect. To achieve this it's necessary to categorize and prioritize problems based on their severity and impact.
+For maximizing a pleasant customer experience, we must resolve the problems with immediate effect. To achieve this it's necessary to categorize and prioritize problems based on their severity and impact.
 
-For this, a proper framework we require a proper framework, which we've termed as a Problem Escalation Matrix.
+For this, we require a proper framework, which we've termed as a Problem Escalation Matrix.
 
 A problem escalation matrix is a set of guidelines that enable you to categorize and prioritize problems in the best possible manner. This ensures the right expert is working on the issue and delivers a resolution as soon as possible.
 
@@ -156,7 +156,7 @@ Additionally, they're tasked with determining whether the problem is a customer-
 
 Once identified, you can help them correct this mis-configuration. In case the issue emerges from the ConnexCS platform, your 1st line support Executive should gather all the incident data and report the problem to the ConnexCS Technical Support Team.
 
-We expect all 1st line support executives on your end to complete this course. It will help them gain a thorough understanding of VoIP and our systems. In case, you’re exactly this candidate, taking the course, it’s a job well done on your end.
+We expect all 1st line support executives on your end to complete this course. We will soon share the course details with all of you. It will help them gain a thorough understanding of VoIP and our systems. In case, you’re exactly this candidate, taking the course, it’s a job well done on your end.
 
 We at ConnexCS follow a similar approach to handling customer problems. As our customers, we want you to know how our escalation matrix functions.
 
@@ -235,7 +235,7 @@ ConnexCS classifies issues based on a combination of **Category** and **Severity
 |**P5**|Trivial|A feature doesn't work as expected, or requires some improvement.|
 
 !!! tip "Paid Support Escalation"
-    If you have a **P3 or P4** and we're out of working hours and you have a problem that internally you consider it to be critical, you have the option to escalate it. We will charge $150 per hour for our support (min 1 hour).
+    If you have a **P3 or P4** and we're out of working hours and you have a problem that internally you consider to be critical, you have the option to escalate it. We will charge $150 per hour for our support (min 1 hour).
 
     A **P5** feature request may be escalated, but a project cost may be involved; please discuss this with us if you are considering it.
 

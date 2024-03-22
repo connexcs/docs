@@ -132,6 +132,7 @@ nav:
            
     - Setup:
         - AnyEdge: anyedge/anyedge.md
+        - App Store: setup/appstore.md
         - Settings:
             - Account: setup/settings/account.md
             - Payments: setup/settings/payments.md
