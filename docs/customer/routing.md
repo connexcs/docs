@@ -133,6 +133,7 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 !!! Example "Example: Redial Max Count and Redial Max Period"
     For example, if you have set Redial Max Count (maximum redials in a given time period) as 4 and Redial Max Period as 24 hours for your customer, then your customer can **resume redialling after 24 hours after the last call "starts"/last call was placed**.
     For instance, 4 Redials in 24 hours (Time starts from 9:00 AM)
+
     |Redial number  |Time    |
     |---------------|--------|
     |Redial number 1|10:00 AM|
