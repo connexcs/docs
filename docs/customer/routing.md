@@ -130,6 +130,18 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 !!! tip "Exclude Use Case"
     If a customer reports an issue with a carrier or route, you can come here and set the carrier / route to Exclude and **`Save`**, then come back and remove it, and do a **`Delay and Save`** for a later date.
 
+!!! Example "Example: Redial Max Count and Redial Max Period"
+    For example, if you have set Redial Max Count (maximum redials in a given time period) as 4 and Redial Max Period as 24 hours for your customer, then your customer can **resume redialling after 24 hours after the last call "starts"/last call was placed**.
+    For instance, 4 Redials in 24 hours (Time starts from 9:00 AM)
+    |Redial number  |Time    |
+    |---------------|--------|
+    |Redial number 1|10:00 AM|
+    |Redial number 2|01:00 PM|
+    |Redial number 3|04:00 PM|
+    |Redial number 4|08:00 PM|
+
+    The last(4<sup>th</sup> call) redial call was placed at 08:00 PM, so the customer can start redialing at 08:00 PM the next day.
+
 ### Media
 
 + **Transcoding**: Enter the number  of channels allowed for transcoding. This is a limited option. The best use case is for customers in low-bandwidth areas that want to use G.729.
