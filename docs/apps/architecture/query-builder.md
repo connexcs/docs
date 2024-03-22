@@ -67,6 +67,6 @@ start_date: :start_date // making it a variable using Set Vars
 
 You can put any value in the Vars field, it will be treated as a default value when you use the above code.
 
-<img src= "/apps/img/g31.png">
+<img src= "/apps/img/g31.png" width="250">
 
 <img src= "/apps/img/g32.png">
