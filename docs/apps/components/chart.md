@@ -138,6 +138,9 @@ The 5 types of Charts we use are:
         }
         ```
 
+!!! Warning
+    Please note when you're using **Pie Charts**, its mandatory to select the **Formatter Type** from the **Label Formatter** field. Please [Click here](https://docs.connexcs.com/apps/components/chart/#chart-config) for further information on the Label Formatter.  
+
 ## Config
 
 | **Name**|**Description**|**Icon**|

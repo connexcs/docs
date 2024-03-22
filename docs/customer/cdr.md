@@ -4,7 +4,6 @@
 
 The **CDR (Call Detail Record)** is an extensive set of information that's collected and stored for each call. This is primarily used for billing purposes as it contains details such as call duration and destination number.
 
-
 !!! note "Global CDR"
     View CDRs for all Customers and Carriers in **Global :material-menu-right: CDR**.
 
@@ -33,10 +32,18 @@ When viewing CDRs for a specific customer, use the **`Recalc CDR`** button to re
 
 * **Release Reason** (for Rerate operations)- Select the reason for the call's termination (multiple selections allowed). This will revise the amount charged for the calls.
 
-* **Min Duration** (for Adjust Call Duration operations)
+* **Min Duration** (for Adjust Call Duration operations) (Calls with Minimum Duration in the CDR for example 3600 seconds will be considered for re-calculation)
 
-* **New Duration** (for Adjust Call Duration operations)
-    ![alt text][recalc]
+* **New Duration** (for Adjust Call Duration operations) (All the calls with minimum duration of 3600 seconds will be recalculated with the value in the New Duration, for example 60 seconds).
+(All the calls will be converted from 3600 seconds to 60 seconds and the billing will also be redone according to 60 seconds duration).
+
+!!! Example
+    |Duration(seconds)|Cost per second($)|Total Cost($)|
+    |-----------------|---------------|----------------|
+    |3600(minimum duration)|0.0001|0.36|
+    |60(new duration)|0.0001|0.006|
+
+![alt text][recalc]
 
 !!! danger "Rerating CDRs"
     If you select either "Rerate" options when recalculating CDRs, this will change your CDRs and isn't reversible.
