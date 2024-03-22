@@ -135,11 +135,11 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 + **SIP Ping**: Send regular pings to ensure both sides of a call are still up. `Enabled` is the recommended setting.
 
     |Option| Result|
-    |--------------------------------|:--------------------------------------------------|
-    | **Disabled**                   | No SIP pings will be sent |
-    | **Enabled Both Sides**         | SIP pings sent in both directions |
-    | **Enabled (Downstream Only)**  | SIP Pings sent to the location where the call originated |
-    | **Enabled (Upstream Only)**    | SIP Pings sent towards where the call is TO (terminated) |
+    |------|:------|
+    |**Disabled**| No SIP pings will be sent |
+    |**Enabled Both Sides**| SIP pings sent in both directions |
+    |**Enabled (Downstream Only)**| SIP Pings sent to the location where the call originated |
+    |**Enabled (Upstream Only)**| SIP Pings sent towards where the call is TO (terminated) |
 
 + **SIP Session Timer (SST)**: SST is Passive by Default, but **Enabled** is the recommended setting.
   When enabled, SST ensures there is no ghost or long-duration calls get billed when one or both sides have hung up. A timer activates when the call starts and refreshes the call every X number of seconds by sending a RE-INVITE.
@@ -181,12 +181,12 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 
 !!! info "RTP Proxy distinctions"
     When a call gets established between the customer and the provider, audio can be setup in one of two ways:
-|                         | **With RTP Proxy** | **Without RTP Proxy** |
-|-------------------------|:------------------:|----------------------:|
-| **Audio Path**          |      Indirect      |                Direct |
-| **Audio Quality**       |      Excellent     |            Unbeatable |
-| **Latency**             |         Low        |                Lowest |
-| **Information Leakage** |         No         |                  Yes* |
+|              |**With RTP Proxy**|**Without RTP Proxy**|
+|--------------|:------------------:|----------------------:|
+|**Audio Path**|Indirect|Direct|
+|**Audio Quality**|Excellent|Unbeatable |
+|**Latency**|Low|Lowest|
+|**Information Leakage**|No|Yes*|
 
 *While it's doubtful that any information will get logged in the customer / providers switch when the audio gets engaged, it's possible for an engineer to learn this information from a SIP trace, PCAP, or by looking at transit locations. DTMF Detection ONLY works when RTP Proxy mode gets enabled.
 
@@ -272,14 +272,14 @@ ASR (Answer Seizure Ratio) is the number of connected calls divided by the total
 
 **ASR Plus** is a proprietary ConnexCS technology that filters known failed, non-existent / working numbers between the customer and the terminating, or destination, carrier. This is useful with larger call volumes. Unless it's turned off or customized otherwise, ASR+ is active for 90% of calls, which grants the opportunity for the database replenishment.
 
-| Value         | Description                |
-| ------------- |----------------------------|
-| **Off**           | ASR+ Disabled              |
-| **ASR+ (Low)**    | Active on 30% of calls     |
-| **ASR+**          | Active                     |
-| **ASR?**          | When ASR+ gets enabled on the provider card |
-| **ASR+?**         | When ASR+ gets enabled on the provider card, only known connected calls pass-through specific providers |
-| **ASR++**         | Only known connected calls pass-through (not used frequently because it's typically overly strict) |
+| Value| Description|
+|-----|-------------|
+|**Off** |ASR+ Disabled|
+|**ASR+ (Low)**|Active on 30% of calls|
+|**ASR+**|Active|
+|**ASR?**|When ASR+ gets enabled on the provider card|
+|**ASR+?**|When ASR+ gets enabled on the provider card, only known connected calls pass-through specific providers|
+|**ASR++**|Only known connected calls pass-through (not used frequently because it's typically overly strict)|
 
 !!! success "Advantages of ASR"
     + Quick failure of known bad numbers.
@@ -293,8 +293,3 @@ ASR (Answer Seizure Ratio) is the number of connected calls divided by the total
 [ingress-routing]: /customer/img/ingress-routing.png "Ingress Routing"
 [routing-disabled]: /customer/img/routing-disabled.png "Disabled Routing"
 [techprefix-usecase]: /customer/img/techprefix-usecase.png "Tech Prefix Use Case"
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzY4MTI2NDMsMTc2NDUxMTQyOCwtMz
-U0MDg1Mzk4LDE2MjE2NzUwMTgsLTEzMjkyMzgxODAsLTMwMjA3
-MDY1MCw0MTYxMDc5MjIsLTIwNDc3MjgxOTJdfQ==
--->
