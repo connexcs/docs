@@ -24,7 +24,7 @@ To setup, click your name in the upper right corner and select `My Profile`.
 
     View account details such as **Name**, **Role**, **Email**, **Department**, **Phone**,  **Mobile** and **Skype**. 
     
-    **You can only edit the Mobile field. To change email or name, contact ConnexCS Support.**
+    **You can only edit the **Name**, **Phone**, **Mobile**, **Skype** fields. To change email or name, contact ConnexCS Support.**
     
     **Two Factor Authentication**: This adds additional security against password guessing and theft, including brute force attacks (details [**here**](https://www.ncsc.gov.uk/guidance/multi-factor-authentication-online-services)). 
     
@@ -51,7 +51,6 @@ You can perform the following Functions with this data:
 
 + **Sum and Average:** Select several cells in a column to get the sum and average values (not a true average, but an average of averages).
 + **Export Data:** Select data from several columns and rows, then right-click to `Copy`, `Copy with Headers`, or `Export`.
-+ **Generate Invoice:** Select one or more checkboxes under Action and then select **`Generate Invoice`** in the upper right corner. This will create the invoice based on the Summary time-frame (Daily, Weekly, Monthly). A billing system can then query the invoice.
 
 !!! tip "Data used for billing"
      For billing purposes, consider the data found in the Customer Summary section as valid. Although the same information might be at other locations, you shouldn't use it for billing.
@@ -61,12 +60,6 @@ You can perform the following Functions with this data:
 ## Internal Number Block
 
 Internal Number Block to define the range of numbers a Customer can use for setting up SIP Extensions.
-
-### Why Define Internal Number Blocks?
-
-Within each Account are multiple Customers, each will likely have more than one Contact.
-
-SIP Extensions are unique for the Account, not for individual Customers.
 
 Without defined Internal Number Blocks, there is the risk of a Contact attempting to use an extension that's already in use by another Customer or Contact.
 

@@ -26,4 +26,6 @@ Daily totals are also calculated in UTC.
 You can change the display time zone for each CDR record and saves the time zone selector, but downloads will always be in UTC.
 
 !!! Info
-    When a call enters the CDR table, you have the option to **Play Audio**. The **Call recording** is available, and you can **Download** it as well.
+    When a call enters the CDR table and if a recording of the call is present, you have the option to **Play** the recording and **Download** it as well.
+
+
