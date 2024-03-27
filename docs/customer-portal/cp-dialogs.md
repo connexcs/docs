@@ -6,5 +6,3 @@
 
 !!! note "Ended Status"
     "Ended" indicates a call is over, but the telephony switches are still tearing down the call, including the Real-time Transport Protocol (RTP) stream and any final signaling. After that, the server gathers data for billing.
-
-    Also, you can select and end the calls using **End Calls** and the calls are terminated using the MI Termination.

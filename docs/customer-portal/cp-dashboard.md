@@ -20,17 +20,15 @@ The **Customer Portal** provides access to configurations, real-time testing and
 
 To setup, click your name in the upper right corner and select `My Profile`.
 
-=== "Basic"
+View account details such as Name, Role, Email, Department, Phone, Mobile and Skype.
 
-    View account details such as **Name**, **Role**, **Email**, **Department**, **Phone**,  **Mobile** and **Skype**. 
-    
-    **You can only edit the **Name**, **Phone**, **Mobile**, **Skype** fields. To change email or name, contact ConnexCS Support.**
-    
-    **Two Factor Authentication**: This adds additional security against password guessing and theft, including brute force attacks (details [**here**](https://www.ncsc.gov.uk/guidance/multi-factor-authentication-online-services)). 
-    
-    To configure this on ConnexCS, click `Enable` and follow prompts for QR code. You must install a 2FA/TFA app on your phone. 
-    
-    <img src= "/customer-portal/img/profile.png" width= "500">
+**You can only edit the Name, Phone, Mobile, Skype fields. To change email or name, contact ConnexCS Support.**
+
+**Two Factor Authentication**: This adds additional security against password guessing and theft, including brute force attacks (details [**here**](https://www.ncsc.gov.uk/guidance/multi-factor-authentication-online-services)).
+
+To configure this on ConnexCS, click `Enable` and follow prompts for QR code. You must install a 2FA/TFA app on your phone.
+
+<img src= "/customer-portal/img/profile.png" width= "500">
 
 ## Graphs
 
@@ -39,8 +37,8 @@ Below is the Current Customer account usage on four default **Graphs**.
 |Graph|Description |
 |:----|:-----------|
 |**Live Channels**|Details of active channel usage|
-|**ASR**|You can view Answer Seizure Ratio as a Total, or isolate traffic on a per-carrier basis (click on a customer to remove or add it from the graph); if some carriers are lower than others, this may create an issue|
-|**ACD**|You can view the total average call duration or isolate traffic by carrier (click on a customer to remove or add it to the graph). A lower ACD on one carrier is indicative of potential line quality issues|
+|**ASR**|You can view Answer Seizure Ratio as a Total, or isolate traffic on a per-carrier basis. If some carriers are lower than others, this may create an issue|
+|**ACD**|You can view the total average call duration or isolate traffic by carrier, A lower ACD on one carrier is indicative of potential line quality issues|
 |**DTMF**|DTMF (Dual Tone Modulated Frequency) percentages|
 
 ## Summary
