@@ -1,6 +1,6 @@
 # Routes
 
-All **Termination Routes**, or outbound calls.
+All **Termination Routes** or **Outbound Calls** can be viewed. You can also access the **Rate Card** associated with **Termination Routes**."
 
 ## Edit a Route
 

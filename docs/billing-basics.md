@@ -24,7 +24,7 @@ Billing intervals might be as short as 6 seconds or as long as 60 seconds.
 
 A "60/6" billing denotes a minimum of 60 seconds and following 6-second intervals. This implies, that a call lasting 10 seconds on a 60/6 billing scheme will get billed as 60 seconds; a call lasting 61 seconds on a 60/6 scheme will get billed as 66 seconds; if your call lasts for 67 seconds you will get billed for 72 seconds.
 
-Here "30/6" means, "30" is **Maximum Call Duration (MCD)** and "6" is the **Pulse**. Here, **MCD** is the effective call duration.
+Here "30/6" means, "30" is **Minimum Call Duration (MCD)** and "6" is the **Pulse**. Here, **MCD** is the effective call duration.
 
 For example,
 

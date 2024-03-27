@@ -10,6 +10,8 @@ The **Breakout** report lists account customers with the following:
  Toggle **Group Destination** to show calls based on the destination number.  
  Use the **`Date`** and **`Select Destination`** fields at the top of the page to filter results.
 
+ The **Select Destination** allows you to filter out the calls made to a particular destination.
+
 !!! warning "Group Destination toggle"
     Presently, this toggle feature is still under development, so it may generate an error.
 
@@ -22,7 +24,8 @@ The Columns display data for each call
 |**Destination**|The destination number of the call|
 |**Attempts**|The number of retries|
 |**Connected**|Final status of the call|
-|**Total Customer Charge**|Pending|
+|**Total Provider Charge**|How much your provider is charging you|
+|**Total Customer Charge**|How much you are charging your customer|
 |**Duration**|Length of the call, in minutes and seconds|
 |**ASR (Answer Seizure Ratio)**|ASR is the number of connected calls divided by the total calls (represented as a %)|
 |**ACD**|Average Call Duration|
