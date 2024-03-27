@@ -22,7 +22,7 @@ To setup, click your name in the upper right corner and select `My Profile`.
 
 View account details such as Name, Role, Email, Department, Phone, Mobile and Skype.
 
-**You can only edit the Name, Phone, Mobile, Skype fields. To change email or name, contact ConnexCS Support.**
+You can only edit the Name, Phone, Mobile, Skype fields. To change email or name, contact ConnexCS Support.
 
 **Two Factor Authentication**: This adds additional security against password guessing and theft, including brute force attacks (details [**here**](https://www.ncsc.gov.uk/guidance/multi-factor-authentication-online-services)).
 
