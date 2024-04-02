@@ -14,11 +14,11 @@ This cross-platform application is ideal for call centers and similar deployment
 
 ### Application
 
-ConnexCS **Web Phone** is a PWA-based WebRTC application.
+ConnexCS **WebPhone** is a PWA-based WebRTC application.
 
 **WebRTC** (Real-Time Communications) is a browser protocol that runs on top of an HTTPS connection.
 
-ConnexCS **Web Phone** uses WebRTC (HTTPS port 443) for SIP Signaling and WebSockets (random UDP ports) for the Media.
+ConnexCS **WebPhone** uses WebRTC (HTTPS port 443) for SIP Signaling and WebSockets (random UDP ports) for the Media.
 
 !!! warning "BitDefender and WebSockets"
     BitDefender blocks WebSockets unless the phone and WebRTC domains get whitelisted.
@@ -34,7 +34,7 @@ WebRTC is effective for bypassing state-level firewalls by:
 
 ### Security and Encryption
 
-ConnexCS **Web Phone** encrypts **all** information (Signaling & Media) between the browser and the ConnexCS platform.
+ConnexCS **WebPhone** encrypts **all** information (Signaling & Media) between the browser and the ConnexCS platform.
 
 You can achieve this by leveraging TLS (Transport Layer Security) protocol support on the underlying browsers. Presently, all modern browsers support TLS 1.0, 1.1, 1.2 & 1.3.
 
@@ -45,13 +45,11 @@ PKI ensures end-point integrity, so you can be confident that the endpoint you c
 !!! tip "Debugging SIP Messages"
     If you need to debug Web Phone and see the SIP messages, you can enter `*#0*#` into the dial pad, this will switch on debugging mode in the browser console.
 
-## Navigation
-
 ## Enable Web Phone
 
 ### Setup Domains
 
-ConnexCS **Web Phone** needs the following two domains to function efficiently:
+ConnexCS **WebPhone** needs the following two domains to function efficiently:
 
 1. **Web Server (Domain A):** This location hosts the phone, and the customers receives the URL. Create a CNAME on your domain, such as `webphone.yourdomain.com`, and point it to our web server at `portal.connexcs.com` (responsible for web services, and yes, this is the same as the customer portal).
 2. **SIP Switch (Domain B):** Create the WebRTC domain and it's CNME should point towards the [DNS you create](https://docs.connexcs.com/setup/settings/dns/).
@@ -71,10 +69,61 @@ After you configure the domains, verify the certificates in **Setup :material-me
 * If the domain isn't listed, click on `Add Certificate` and provide your domain name.
 * If the certificates get listed but they don't have an issue or expiry date, click on "Refresh Certificates." This may take up to 10 minutes to complete.
 
-## Configure Webphone (video script + photos)
+## Configure WebPhone
+
+!!! tip
+    Before you proceed with installing and using the WebPhone Application, make sure you meet the necessary prerequisites.
+    1. A working ConnexCS account.
+    2. Servers are deployed.
+    3. WebRTC is configured. (Before proceeding, ensure that WebRTC is properly configured. If you haven’t set it up yet, click on the [link](https://docs.connexcs.com/webphone/#add-webrtc-to-server) to get started.)
+
+### Step 1: Installing
+
+1. Login to your account.
+2. Navigate to **Setup** :material-menu-right: **App Store**. <img src= "img/wp1.png">
+3. Click on **WebPhone**. <img src= "img/wp2.png">
+4. Click **Install**. <img src= "img/wp3.png">
+5. After hitting the Install button. A window appears which has 2 fields, **App Name** and **Version**. We shall keep the default App name and the suggested version of the App.
+6. Click on **Install** and the App will be installed on your user account. <img src= "img/wp4.png">
+
+### Step 2: Publishing
+
+1. Navigate to the **IDE** section, and from the dropdown select the **WebPhone App**.
+2. Click on the **Domain**, and press the blue plus sign to add the domain of your WebPhone.
+3. To keep things simple, we will use a top-level domain provider by ConnexCS.
+4. Enter your unique name in the first part of the domain and we will deploy this for you on the **.cnx.page** domain.
+5. Click on **Save**. <img src= "img/wp5.png">
+6. Please note you can change this later if you want to deploy this on your own domain.
+7. Now let's have a look at the deployed domain.
+8. Enter in the domain name in the URL e.g., webphone.cnx.page. <img src= "img/wp6.png">
+9. Enter the **Username**, and **Password**.
+10. Select the **Server** from the dropdown. If you don’t want the customer to type-in the server, you can add the servers in the drop-down in the next step which is **Configuration**. You won't have the drop-down if you don’t fill out the information of the servers in the environmental variables. <img src= "img/wp7.png">
+11. After logging in you can dial from your WebPhone. <img src= "img/wp8.png">
+
+### Step 3: Configuring (Optional Step)
+
+1. Go to **IDE :material-menu-right: WebPhone :material-menu-right: Environmental variables**.
+2. Click on the blue plus sign to create a new variable.
+3. A window will pop-up, where you need to enter the **key** as wsServers (example value) and **value** as yourservername.host.connexcs.net (example value). These values and will appear in the drop-down on the Webphone login-page.
+   - Key = wsServers
+    - Value = yourservername.host.connexcs.net (you can separate each with ' if there are multiple)
+4. For selecting **Flags** [click here](https://docs.connexcs.com/apps/architecture/environmental-variables/#steps-for-configuring-the-variables).
+5. Click on **Save**.
+
+<img src= "img/wp10.png">
 
 !!! example "Template Customer Example"
         You want to give all your customers $5.00 credit. Create an account in **Management :material-menu-right: Customer**. In Payments for that account, add $5.00. When a new customer creates an account from the Customer Portal, they will see a payment created for $5.00 at the same the time account was created.
+
+### Navigation
+
+1. **Dialpad**: Dialpad for making and answering calls.
+2. **Contacts**: This is the same Contacts database configured in **Class5 :material-menu-right: Phonebook**.
+3. **Mic Off**: Mute the call.
+4. **Hangup**: Disconnect the call.
+5. **Call Hold**: Hold the call.
+
+<img src= "img/wp9.png">
 
 ## Phone Book/Sync Directory
 
