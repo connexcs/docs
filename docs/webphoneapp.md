@@ -54,9 +54,9 @@ ConnexCS **WebPhone** needs the following two domains to function efficiently:
 1. **Web Server (Domain A):** This location hosts the phone, and the customers receives the URL. Create a CNAME on your domain, such as `webphone.yourdomain.com`, and point it to our web server at `portal.connexcs.com` (responsible for web services, and yes, this is the same as the customer portal).
 2. **SIP Switch (Domain B):** Create the WebRTC domain and it's CNME should point towards the [DNS you create](https://docs.connexcs.com/setup/settings/dns/).
 
-   2.1 Navigate to **Setup :material-menu-right: Settings :material-menu-right: DNS :material-menu-right:** to create your DNS.
+    2.1 Navigate to **Setup :material-menu-right: Settings :material-menu-right: DNS :material-menu-right:** to create your DNS.
 
-   2.2 Enter the domain (ex: test1), then select the checkbox for the A record for the IP of the server you want to use.
+    2.2 Enter the domain (ex: test1), then select the checkbox for the A record for the IP of the server you want to use.
 
  This is the SIP signaling domain (WebRTC) and attached to your server. Navigate to **Setup :material-menu-right: Settings :material-menu-right: DNS :material-menu-right:**. Enter the domain (ex: test1), then select the checkbox for the A record for the IP of the server you want to use.
 
@@ -73,18 +73,21 @@ After you configure the domains, verify the certificates in **Setup :material-me
 
 !!! tip
     Before you proceed with installing and using the WebPhone Application, make sure you meet the necessary prerequisites.
+
     1. A working ConnexCS account.
+    
     2. Servers are deployed.
+    
     3. WebRTC is configured. (Before proceeding, ensure that WebRTC is properly configured. If you haven’t set it up yet, click on the [link](https://docs.connexcs.com/webphone/#add-webrtc-to-server) to get started.)
 
 ### Step 1: Installing
 
 1. Login to your account.
-2. Navigate to **Setup** :material-menu-right: **App Store**. <img src= "/wp1.png">
-3. Click on **WebPhone**. <img src= "/wp2.png">
-4. Click **Install**. <img src= "/wp3.png">
+2. Navigate to **Setup** :material-menu-right: **App Store**. <img src= "/setup/img/wp1.png">
+3. Click on **WebPhone**. <img src= "/setup/img/wp2.png">
+4. Click **Install**. <img src= "/setup/img/wp3.png">
 5. After hitting the Install button. A window appears which has 2 fields, **App Name** and **Version**. We shall keep the default App name and the suggested version of the App.
-6. Click on **Install** and the App will be installed on your user account. <img src= "/wp4.png">
+6. Click on **Install** and the App will be installed on your user account. <img src= "/setup/img/wp4.png">
 
 ### Step 2: Publishing
 
@@ -92,13 +95,13 @@ After you configure the domains, verify the certificates in **Setup :material-me
 2. Click on the **Domain**, and press the blue plus sign to add the domain of your WebPhone.
 3. To keep things simple, we will use a top-level domain provider by ConnexCS.
 4. Enter your unique name in the first part of the domain and we will deploy this for you on the **.cnx.page** domain.
-5. Click on **Save**. <img src= "/wp5.png">
+5. Click on **Save**. <img src= "/setup/img/wp5.png">
 6. Please note you can change this later if you want to deploy this on your own domain.
 7. Now let's have a look at the deployed domain.
-8. Enter in the domain name in the URL e.g., webphone.cnx.page. <img src= "/wp6.png">
+8. Enter in the domain name in the URL e.g., webphone.cnx.page. <img src= "/setup/img/wp6.png">
 9. Enter the **Username**, and **Password**.
-10. Select the **Server** from the dropdown. If you don’t want the customer to type-in the server, you can add the servers in the drop-down in the next step which is **Configuration**. You won't have the drop-down if you don’t fill out the information of the servers in the environmental variables. <img src= "/wp7.png">
-11. After logging in you can dial from your WebPhone. <img src= "/wp8.png">
+10. Select the **Server** from the dropdown. If you don’t want the customer to type-in the server, you can add the servers in the drop-down in the next step which is **Configuration**. You won't have the drop-down if you don’t fill out the information of the servers in the environmental variables. <img src= "/setup/img/wp7.png">
+11. After logging in you can dial from your WebPhone. <img src= "/setup/img/wp8.png">
 
 ### Step 3: Configuring (Optional Step)
 
@@ -110,10 +113,10 @@ After you configure the domains, verify the certificates in **Setup :material-me
 4. For selecting **Flags** [click here](https://docs.connexcs.com/apps/architecture/environmental-variables/#steps-for-configuring-the-variables).
 5. Click on **Save**.
 
-<img src= "/wp10.png">
+<img src= "/setup/img/wp10.png">
 
 !!! example "Template Customer Example"
-        You want to give all your customers $5.00 credit. Create an account in **Management :material-menu-right: Customer**. In Payments for that account, add $5.00. When a new customer creates an account from the Customer Portal, they will see a payment created for $5.00 at the same the time account was created.
+    You want to give all your customers $5.00 credit. Create an account in **Management :material-menu-right: Customer**. In Payments for that account, add $5.00. When a new customer creates an account from the Customer Portal, they will see a payment created for $5.00 at the same the time account was created.
 
 ### Navigation
 
@@ -123,7 +126,7 @@ After you configure the domains, verify the certificates in **Setup :material-me
 4. **Hangup**: Disconnect the call.
 5. **Call Hold**: Hold the call.
 
-<img src= "/wp9.png">
+<img src= "/setup/img/wp9.png">
 
 ## Phone Book/Sync Directory
 
