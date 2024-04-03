@@ -240,7 +240,6 @@ nav:
         - Conference: customer-portal/cp-conference.md
         - IVR: customer-portal/cp-ivr.md
         - Group: customer-portal/cp-group.md
-        - Queue: customer-portal/cp-queue.md
         - Audio: customer-portal/cp-audio.md
     - Alert: customer-portal/cp-alert.md
     - Setup: 

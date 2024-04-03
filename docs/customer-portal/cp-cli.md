@@ -21,6 +21,24 @@ Depending on how you want to route the calls, toggle a CLI between `Forced` and 
 
     Any CLI you add will need to get approval before it's functional here.
 
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbNjA5NjA2Mjk2XX0=
--->
+!!! note
+    **Add Forced CLI** appears when the customer has forced a particular CLI in their account.
+
+## Steps to add Approved CLIs
+
+1. Login to your account.
+2. Click on **CLI** on the left panel.
+3. Click on the `blue +` button on the top right.
+4. Enter the phone number with the country prefix.
+5. Click on **Next Step**.
+
+<img src= "/customer-portal/img/cli1.png">
+
+6.You will receive a call for the **Verification Code**.
+7.Enter the verification code and the click **Verify Code**.
+
+<img src= "/customer-portal/img/cli2.png">
+
+8.The CLI will be added as **Whitelist**. **Forced** CLI appears when the customer has forced a particular CLI in their account.
+
+<img src= "/customer-portal/img/cli3.png">

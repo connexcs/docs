@@ -12,20 +12,34 @@ The **Customer Portal** provides access to configurations, real-time testing and
 
 + **Channel Count** Total Live Channels presently in use and total configured Channels.
 
-+ **Account Balance** Displays the current account balance and a link to make a payment using a credit card or PayPal.
++ **Account Balance** Displays the current account balance and a link to make a payment using a credit card or PayPal. [Click here](https://docs.connexcs.com/customer-portal/cp-payment/) to know more about **Payments**.
 
 + **Account** Use this to view your Company Profile, view and update your personal Profile, Change Password or Language, or Log Out.
+
+### Setup Personal Profile
+
+To setup, click your name in the upper right corner and select `My Profile`.
+
+View account details such as Name, Role, Email, Department, Phone, Mobile and Skype.
+
+You can only edit the Name, Phone, Mobile, Skype fields. To change email or name, contact ConnexCS Support.
+
+**Two Factor Authentication**: This adds additional security against password guessing and theft, including brute force attacks (details [**here**](https://www.ncsc.gov.uk/guidance/multi-factor-authentication-online-services)).
+
+To configure this on ConnexCS, click `Enable` and follow prompts for QR code. You must install a 2FA/TFA app on your phone.
+
+<img src= "/customer-portal/img/profile.png" width= "500">
 
 ## Graphs
 
 Below is the Current Customer account usage on four default **Graphs**.
 
 |Graph|Description |
-|:------------|:-------------------------------------------------|
-|**Live Channels** |Details of active channel usage|
-|**ASR** |You can view Answer Seizure Ratio as a Total, or isolate traffic on a per-carrier basis (click on a customer to remove or add it from the graph); if some carriers are lower than others, this may create an issue|
-|**ACD**|You can view the total average call duration or isolate traffic by carrier (click on a customer to remove or add it to the graph). A lower ACD on one carrier is indicative of potential line quality issues|
-|**DTMF** |DTMF (Dual Tone Modulated Frequency) percentages|
+|:----|:-----------|
+|**Live Channels**|Details of active channel usage|
+|**ASR**|You can view Answer Seizure Ratio as a Total, or isolate traffic on a per-carrier basis. If some carriers are lower than others, this may create an issue|
+|**ACD**|You can view the total average call duration or isolate traffic by carrier, A lower ACD on one carrier is indicative of potential line quality issues|
+|**DTMF**|DTMF (Dual Tone Modulated Frequency) percentages|
 
 ## Summary
 
@@ -35,9 +49,16 @@ You can perform the following Functions with this data:
 
 + **Sum and Average:** Select several cells in a column to get the sum and average values (not a true average, but an average of averages).
 + **Export Data:** Select data from several columns and rows, then right-click to `Copy`, `Copy with Headers`, or `Export`.
-+ **Generate Invoice:** Select one or more checkboxes under Action and then select **`Generate Invoice`** in the upper right corner. This will create the invoice based on the Summary time-frame (Daily, Weekly, Monthly). A billing system can then query the invoice.
 
 !!! tip "Data used for billing"
      For billing purposes, consider the data found in the Customer Summary section as valid. Although the same information might be at other locations, you shouldn't use it for billing.
 
 [cp-dash]: /customer-portal/img/cp-dash.png "Top of Page"
+
+## Internal Number Block
+
+Internal Number Block to define the range of numbers a Customer can use for setting up SIP Extensions.
+
+Without defined Internal Number Blocks, there is the risk of a Contact attempting to use an extension that's already in use by another Customer or Contact.
+
+With Internal Number Blocks defined, each Customer will have a predetermined list of Usernames to select for SIP Authentication.

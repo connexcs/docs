@@ -9,3 +9,5 @@ Get a quick reference view of your products and services:
 + **Name:** The name of the package.
 + **Retail:** Recurring charges and frequency (for example, monthly), any one-time charges.
 + **Description:** Product description.
++ **Frequency:** When the package fee recurs (monthly, daily, weekly).
++ **Auto Decrement Credit:** Selecting Auto Decrement Credit will debit the package amount from the customer's account.
