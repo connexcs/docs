@@ -85,8 +85,8 @@ After you configure the domains, verify the certificates in **Setup :material-me
 1. Login to your account.
 2. Navigate to **Setup** :material-menu-right: **App Store**. <img src= "/setup/img/wp1.png">
 3. Click on **WebPhone**. <img src= "/setup/img/wp2.png">
-4. Click **Install**. <img src= "/setup/img/wp3.png" width="800">
-5. After hitting the Install button. A window appears which has 2 fields, **App Name** and **Version**. We shall keep the default App name and the suggested version of the App.
+4. Click **Install**.
+5. After hitting the Install button. A window appears which has 2 fields, **App Name** and **Version**. We shall keep the default App name and the suggested version of the App.<img src= "/setup/img/wp3.png" width="600">
 6. Click on **Install** and the App will be installed on your user account. <img src= "/setup/img/wp4.png">
 
 ### Step 2: Publishing
@@ -98,9 +98,9 @@ After you configure the domains, verify the certificates in **Setup :material-me
 5. Click on **Save**. <img src= "/setup/img/wp5.png">
 6. Please note you can change this later if you want to deploy this on your own domain.
 7. Now let's have a look at the deployed domain.
-8. Enter in the domain name in the URL e.g., webphone.cnx.page. <img src= "/setup/img/wp6.png" width="800">
+8. Enter in the domain name in the URL e.g., webphone.cnx.page. <img src= "/setup/img/wp6.png" width="600">
 9. Enter the **Username** and **Password**.
-10. Select the **Server** from the dropdown. If you don’t want the customer to type-in the server, you can add the servers in the drop-down in the next step which is **Configuration**. You won't have the drop-down if you don’t fill out the information of the servers in the environmental variables. <img src= "/setup/img/wp7.png" width="800">
+10. Select the **Server** from the dropdown. If you don’t want the customer to type-in the server, you can add the servers in the drop-down in the next step which is **Configuration**. You won't have the drop-down if you don’t fill out the information of the servers in the environmental variables. <img src= "/setup/img/wp7.png" width="600">
 11. After logging in you can dial from your WebPhone. <img src= "/setup/img/wp8.png" width="300">
 
 ### Step 3: Configuring (Optional Step)
