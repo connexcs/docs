@@ -116,7 +116,7 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 
 + **Lock** (Allow): One or more rate cards from the list of available providers.
 + **Exclude** (Deny): Exclude access to one or more rate cards in the list of available providers.
-+ **Redial Max Count**: This a smart limitation feature which allow the carrier to restrict the maximum number of times their customers can redial in a selected time frame which is **Redial Max Period**. For example, you select 5 for this field, it means your customer can dial only 5 times.
++ **Redial Max Count**: This a smart limitation feature that allows the carrier to restrict the maximum number of times their customers can redial. After reaching this limit, customers must wait for a certain amount of time defined by the **Redial Max Period**. For example, you select 5 for this field, it means your customer can dial only 5 times.
 + **Redial Max Period**: Select the time-period for which you can allow the customer to redial. For example, if you select Redial Max Count as 10 and Redial Max Period as 6000 seconds, this means your customer can redial maximum 10 times within 6000 seconds.
 + **DNC (Do Not Call) List**: The customer won't be able to able to dial the numbers in the specified DNC list. You can add the list of numbers in the [**Database**](https://docs.connexcs.com/developers/database/).
 
@@ -261,7 +261,7 @@ An extra charge per recorded call of $0.003 gets added to existing fees or charg
 
         |Input/Offering side|Mask|Transcode|Output/Outgoing Offer|Explanation|
         |-------------------|-----|---------|--------------------|-----------|
-        |G729A|G729A|Opus|Opus|Transcoding happens between G729A and Opus but output is Opus, G729 is filtered out|
+        |G729A|G729A|Opus|Opus|Transcoding happens between G729A and Opus but output is Opus, G729A is filtered out from outgoing offer|
         |G729A||Opus|G729A and Opus| Transcoding happens between G729A and Opus but outputs are both Opus and G729A since G729A wasn't filtered out|
 
          + **Accept**: This option is similar to **Strip** and **Mask** but it isn't removed from the codecs offered list. When you select this option, the selected codec is offered to the remote peer (output/outgoing offer), if the remote peer rejects the offered (incoming) codec it will be used for transcoding and is accepted by the input/offering side.

@@ -54,6 +54,9 @@ After entering the information, click **`Save`**.
 
 &emsp;![alt text][user]
 
+!!! Note
+    [Click here](https://cidr.xyz/) to view an interactive IP address and CIDR range visualizer.
+
 !!! question "Why should you specify an email address that you use often?"
 
     * The email address is the username to log into the user account.
