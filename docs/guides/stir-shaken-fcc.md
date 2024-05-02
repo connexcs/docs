@@ -196,7 +196,7 @@ The TRACED Act specified that Service Providers must "no later than June 30 2021
 Complete the [**Service Provider SHAKEN STI-PA Registration**](https://authenticate.iconectiv.com/service-provider-authenticate) after you have completed the preceding three procedures.
 
 !!! Note
-    [Click here](https://test-shaken.sansay.cloud) to test your Stir-Shaken. 
+    [Click here](https://test-shaken.sansay.cloud) to test your Stir-Shaken.
 
 ## FAQ
 
@@ -212,11 +212,9 @@ For providers with less than 100k lines, you have options:
 + SHAKEN or Robocall Mitigation for SIP
 + Robocall mitigation for TDM interconnects
 
-
 **Question:** How does this impact calls originating from outside the US?
 
 This only applies to US calling numbers, even if the carrier is outside of the US. If calls are originating outside the US with non-US numbers, none of this applies. Its required that US carriers drop calls received from US numbers that aren't verified for SHAKEN.
-
 
 **Question:** Does ConnexCS provide SHAKEN?
 

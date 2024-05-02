@@ -21,6 +21,9 @@ Once you have the certificate, it's added to ConnexCS as described in the steps 
 !!! info "STIR/SHAKEN background"
     See Wikipedia [**STIR / SHAKEN**](https://en.wikipedia.org/wiki/STIR/SHAKEN) and the FCC [**Report on Selection of Governance Authority and Timely Deployment of SHAKEN/STIR**](https://docs.fcc.gov/public/attachments/DOC-350542A1.pdf) for details.
 
+!!! Note
+    [Click here](https://test-shaken.sansay.cloud) to test your Stir-Shaken.
+
 ## Add STIR / SHAKEN Cert
 
 To add a certificate:
@@ -32,6 +35,3 @@ To add a certificate:
 &emsp;![alt text][stirshaken]
 
 [stirshaken]: /setup/img/stirshaken.png "Add Stir-Shaken Cert"
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTQzODMyMDddfQ==
--->

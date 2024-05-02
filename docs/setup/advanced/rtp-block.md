@@ -18,7 +18,7 @@ This feature is also known as **Block Media IP**. In simple terms, it enables yo
 
 5. After the settings have been saved, you may check the **Status** in **Logging**.
 
-<img src= "/setup/img/rtp11.png" width= "250">
+<img src= "/setup/img/rtp11.png" width= "400">
 
 !!! Note
     [Click here](https://cidr.xyz/) to view an interactive IP address and CIDR range visualizer.
