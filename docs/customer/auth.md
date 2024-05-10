@@ -26,7 +26,7 @@ To enable, click **:material-plus:** next to IP Authentication:
 
 === "Basic"
 
-    + **IP**: Enter the IP(s) of the customer's switch.<br>**FQDN can be used for Ingress-only switches.**
+    + **IP**: Enter specific IPs or use CIDR notation to specify an entire subnet.<br>**FQDN can be used for Ingress-only switches.**
     + **Switch Direction**: The available options are from the perspective of the customer switch (PBX, dialer, etc), and describe how that switch interacts with the ConnexCS switch. For switches that send and receive calls from ConnexCS, there should be separate entries for each direction. 
         
         :material-menu-right: `Ingress`: This switch *receives* calls from ConnexCS. (Note: When selected, this gives the option of using the FQDN rather than the switch IP.)
@@ -190,6 +190,9 @@ To enable, click **:material-plus:** next to SIP User Authentication:
     <img src= "/customer/img/voicemail.png" width= "600"/>
 ___
 
+!!! Note
+    [Click here](https://cidr.xyz/) to view an interactive IP address and CIDR range visualizer.
+
 ### Reset SIP Password
 
 Click the `Password` key next to the SIP user to reset the password.
@@ -232,6 +235,7 @@ Use `Send` next to the SIP User to send a SIP message to the end device which wi
     Alice->>Bob: BYE
     Bob->>Alice: 200 OK
 ```
+
 In this case, Bob sends a message to Alice called **OPTIONS** and Alice sends back **200 OK**. If **200 OK** isn't sent, the call be get disconnected.
 
 **Case 2: Alice Disappears**
@@ -258,10 +262,6 @@ In a typical configuration, a packet is sent from the customer UAC out through a
 + UDP doesn't send keep-alives (no connected state as with TCP). SIP does maintain a connected state, registration, but may have long periods of inactivity.
 + Without regular traffic passing between UAS and UAC in the form of keep-alives/registration (a normal occurrence), NAT will eventually time out and shut down the connection.
 + Enabling UDP or SIP pings can show the NAT/firewall that the signaling path is still valid and in use.
-
-!!! Note
-    [Click here](https://cidr.xyz/) to view an interactive IP address and CIDR range visualizer.
-
 
 [ipauth-basic]: /customer/img/ipauth-b.png "Edit Switch Basic"
 [parameter-rewrite]: /customer/img/parameter-rewrite.png "Parameter Rewrite" width="200" height="400"
