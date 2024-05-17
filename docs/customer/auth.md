@@ -26,7 +26,7 @@ To enable, click **:material-plus:** next to IP Authentication:
 
 === "Basic"
 
-    + **IP**: Enter the IP(s) of the customer's switch.<br>**FQDN can be used for Ingress-only switches.**
+    + **IP**: Enter specific IPs or use CIDR notation to specify an entire subnet.<br>**FQDN can be used for Ingress-only switches.**
     + **Switch Direction**: The available options are from the perspective of the customer switch (PBX, dialer, etc), and describe how that switch interacts with the ConnexCS switch. For switches that send and receive calls from ConnexCS, there should be separate entries for each direction. 
         
         :material-menu-right: `Ingress`: This switch *receives* calls from ConnexCS. (Note: When selected, this gives the option of using the FQDN rather than the switch IP.)
@@ -37,6 +37,9 @@ To enable, click **:material-plus:** next to IP Authentication:
     + **Flow Speed**: Set the Calls Per Second (CPS) (0 = unlimited calls).   
     
         ![alt text][ipauth-basic]
+
+!!! Note
+    [Click here](https://cidr.xyz/) to view an interactive IP address and CIDR range visualizer.
 
 === "Advanced"
 
@@ -74,7 +77,6 @@ To enable, click **:material-plus:** next to IP Authentication:
     All Codecs are supported unless specifically set as "Restricted" here.
 
     <img src= "/customer/img/codecs.png" width= "600"> 
-
 
 === "Parameter Rewrite"
 
@@ -148,7 +150,7 @@ To enable, click **:material-plus:** next to SIP User Authentication:
         
         :material-menu-right: **`SMPP`**: SMPP, for SMS, is currently not supported.
 
-    + **IP Allow list**: Enter specific IPs or use CIDR notation to specify an entire subnet. 
+    + **IP Allow list**: Enter specific IPs or use CIDR notation to specify an entire subnet.
     + **NAT/SIP Ping**: Set behavior of pings sent from ConnexCS back to the customer through their firewall to their UAC. This helps when there are remote agents connecting to the switch. 
     
         :material-menu-right: **`Disabled`**: No pings are sent
@@ -190,7 +192,6 @@ To enable, click **:material-plus:** next to SIP User Authentication:
 
     <img src= "/customer/img/voicemail.png" width= "600"/>
 ___
-
 
 ### Reset SIP Password
 
@@ -234,7 +235,8 @@ Use `Send` next to the SIP User to send a SIP message to the end device which wi
     Alice->>Bob: BYE
     Bob->>Alice: 200 OK
 ```
-In this case, Bob sends a message to Alice called **OPTIONS** and Alice sends back **200 OK**. If **200 OK** is not sent, the call be get disconnected.
+
+In this case, Bob sends a message to Alice called **OPTIONS** and Alice sends back **200 OK**. If **200 OK** isn't sent, the call be get disconnected.
 
 **Case 2: Alice Disappears**
 
@@ -269,7 +271,3 @@ In a typical configuration, a packet is sent from the customer UAC out through a
 [test-rewrite]: /customer/img/test-rewrite.png "Test Parameter Rewrite"
 [407-trace]: /customer/img/407-trace.png "SIP Trace Error 407"
 [voicemail]: /customer/img/voicemail.png "Voicemail"
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwMDY4NjkyMCwyNDI4Njg5MDgsLTEzOD
-I0NTQ3NjcsLTE5MjIzMDU2NzBdfQ==
--->

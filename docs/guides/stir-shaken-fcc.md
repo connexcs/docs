@@ -6,7 +6,7 @@ In recent years, **Illegal Robocalling** is one of the most problematic activiti
 
 With 4.6 billion robocalls a month in the U.S. alone, this activity impacts everyone in different ways:
 
-1. Estimated value of Lost time from unwanted Robocalls for customers and consumers is around $3 billion / year. It does not include losses related to fraud.
+1. Estimated value of Lost time from unwanted Robocalls for customers and consumers is around $3 billion / year. It doesn't include losses related to fraud.
 2. Service providers are handling and manage constant service calls from customers. It also manages the extra traffic on the networks.
 3. Businesses can't reach customers, since no one wants to answer the phone.
 
@@ -19,7 +19,7 @@ Legitimate examples of a robocall would be from:
     + Telephone campaigns (telemarketing or political)
     + Public-service (from your child's school)
     + Emergency announcements (Amber Alert or Weather Advisory)
-            
+
 When robocalling uses spoofed numbers or illegal methods to reach end users, considered as illegal. Examples include bypassing Do Not Call lists. These calls are typically associated with some sort of added fraud or scam.
 
 ## TRACED Act
@@ -154,7 +154,6 @@ Service Provider must have **Service Provider Code (SPC)** token from the **STI-
 
 !!! Warning
     Once you receive the certs, you can still revoke them if Service Providers misbehave.
->>>>>>> d2e94be7ce5d9e7aeedf9b0f8439763e06f65700
 
 ## Voice Service Providers implementation
 
@@ -178,7 +177,6 @@ FCC doesn't have any specific instructions or recommendations, but they have pro
 + It must be public and transparent.
 + Providers must cooperate with the [**US Telecom Traceback Group**](https://www.ustelecom.org/the-industry-traceback-group-itg/) to produce requested Call Detail Records on time.
 
-
 ### SHAKEN for Time Division Multiplexing
 
 **TDM (Time Division Multiplexing)** is no longer commonly found at the edge of telephony networks, but is still in use in the core of telephony networks. If not accounted for, then all the meticulously gather and certified SIP SHAKEN info gets lost when it hits TDM segments.
@@ -197,7 +195,8 @@ The TRACED Act specified that Service Providers must "no later than June 30 2021
 
 Complete the [**Service Provider SHAKEN STI-PA Registration**](https://authenticate.iconectiv.com/service-provider-authenticate) after you have completed the preceding three procedures.
 
-
+!!! Note
+    [Click here](https://test-shaken.sansay.cloud) to test your Stir-Shaken.
 
 ## FAQ
 
@@ -213,11 +212,9 @@ For providers with less than 100k lines, you have options:
 + SHAKEN or Robocall Mitigation for SIP
 + Robocall mitigation for TDM interconnects
 
-
 **Question:** How does this impact calls originating from outside the US?
 
 This only applies to US calling numbers, even if the carrier is outside of the US. If calls are originating outside the US with non-US numbers, none of this applies. Its required that US carriers drop calls received from US numbers that aren't verified for SHAKEN.
-
 
 **Question:** Does ConnexCS provide SHAKEN?
 
