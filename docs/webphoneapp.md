@@ -115,9 +115,6 @@ After you configure the domains, verify the certificates in **Setup :material-me
 
 <img src= "/setup/img/wp10.png">
 
-!!! example "Template Customer Example"
-    You want to give all your customers $5.00 credit. Create an account in **Management :material-menu-right: Customer**. In Payments for that account, add $5.00. When a new customer creates an account from the Customer Portal, they will see a payment created for $5.00 at the same the time account was created.
-
 ### Navigation
 
 1. **Dialpad**: Dialpad for making and answering calls.
@@ -127,22 +124,3 @@ After you configure the domains, verify the certificates in **Setup :material-me
 5. **Call Hold**: Hold the call.
 
 <img src= "/setup/img/wp9.png" width="300">
-
-## Phone Book/Sync Directory
-
-This is an interesting feature, that sync's the contacts which you add in the **Control Panel** to the **Webphone**.
-
-1. Login to the **Control Panel**.
-2. Navigate to **Management :material-menu-right: Customer :material-menu-right: Customer [Name] :material-menu-right: Class 5 :material-menu-right: Phonebook**.
-3. Click on the blue `+` button on the right top. <img src= "/misc/img/ph1.png">
-4. Enter the **Customer's Name** which is required field, remaining fields are optional.
-5. Click `Save`. <img src= "/misc/img/ph2.png" width= "500">
-6. Click on the **Phone Numbers** on the right-side. <img src= "/misc/img/ph3.png">
-7. Click on the blue `+` button on the right top of the window.
-8. Enter the **Name** and **Number** which are mandatory fields. You may also add the extension.
-9. Click `Save`. <img src= "/misc/img/ph4.png">
-10. Login to your **Webphone**.
-11. Click on **Contacts**, and you will see the contact you added is now available on the **Webphone**.
-<img src= "/misc/img/ph5.png" width="800">
-
-<iframe width="560" height="315" src="/misc/img/ph0.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
