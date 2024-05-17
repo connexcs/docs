@@ -69,6 +69,19 @@ After you configure the domains, verify the certificates in **Setup :material-me
 * If the domain isn't listed, click on `Add Certificate` and provide your domain name.
 * If the certificates get listed but they don't have an issue or expiry date, click on "Refresh Certificates." This may take up to 10 minutes to complete.
 
+### Add WebRTC to server
+
+To setup WebRTC on a server:
+
+1. Ensure **Domain (B)** (signaling domain from above) points ONLY to the server where you enable WebRTC.
+2. Navigate to **Setup :material-menu-right: Settings :material-menu-right: Servers :material-menu-right:** select the server, then Edit.
+    * Update the FQDN (Fully Qualified Domain Name) to the server.
+    * Ensure that you enable both **TLS** and **WebRTC**.
+    * Run `Install Server` if any settings gets changed.
+
+!!! tip "AnyEdge and WebRTC"
+    If you are using AnyEdge, you can enable WebRTC automatically by adding a domain name to your AnyEdge Domain.
+
 ## Configure WebPhone
 
 !!! tip
