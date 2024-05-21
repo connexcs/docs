@@ -253,8 +253,9 @@ nav:
     - Status: customer-portal/status.md
     - Interconnect: customer-portal/interconnect.md
 
-  - WebPhone: 
-    - WebPhone: webphone.md
+  - WebPhone:
+    - WebPhone App: webphoneapp.md
+    - WebPhone (Legacy): webphone.md
 
   - Apps Platform: 
     - Introduction: apps/introduction.md

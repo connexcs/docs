@@ -9,9 +9,6 @@ If the user wishes to install the application, supplementary functionality becom
 For example, push notification capabilities while closing the app.
 
 With application cross-platform functionality (including Windows, Mac, Android, iOS, etc.), this makes it ideal in call centres and other similar deployments.
-  
-!!! warning "iOS limitations"
-    iOS limits the ability to perform push notifications.
 
 ## Technical Details
 
