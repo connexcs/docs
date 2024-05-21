@@ -45,43 +45,6 @@ PKI ensures end-point integrity, so you can be confident that the endpoint you c
 !!! tip "Debugging SIP Messages"
     If you need to debug Web Phone and see the SIP messages, you can enter `*#0*#` into the dial pad, this will switch on debugging mode in the browser console.
 
-## Enable Web Phone
-
-### Setup Domains
-
-ConnexCS **WebPhone** needs the following two domains to function efficiently:
-
-1. **Web Server (Domain A):** This location hosts the phone, and the customers receives the URL. Create a CNAME on your domain, such as `webphone.yourdomain.com`, and point it to our web server at `portal.connexcs.com` (responsible for web services, and yes, this is the same as the customer portal).
-2. **SIP Switch (Domain B):** Create the WebRTC domain and it's CNME should point towards the [DNS you create](https://docs.connexcs.com/setup/settings/dns/).
-
-    2.1 Navigate to **Setup :material-menu-right: Settings :material-menu-right: DNS :material-menu-right:** to create your DNS.
-
-    2.2 Enter the domain (ex: test1), then select the checkbox for the A record for the IP of the server you want to use.
-
- This is the SIP signaling domain (WebRTC) and attached to your server. Navigate to **Setup :material-menu-right: Settings :material-menu-right: DNS :material-menu-right:**. Enter the domain (ex: test1), then select the checkbox for the A record for the IP of the server you want to use.
-
-It's recommended to setup a DNS (Domain Name System) record within ConnexCS, then point a CNAME on your domain to the ConnexCS setup domain.
-
-### Create Certificates
-
-After you configure the domains, verify the certificates in **Setup :material-menu-right: Information :material-menu-right: Certificates:
-
-* If the domain isn't listed, click on `Add Certificate` and provide your domain name.
-* If the certificates get listed but they don't have an issue or expiry date, click on "Refresh Certificates." This may take up to 10 minutes to complete.
-
-### Add WebRTC to server
-
-To setup WebRTC on a server:
-
-1. Ensure **Domain (B)** (signaling domain from above) points ONLY to the server where you enable WebRTC.
-2. Navigate to **Setup :material-menu-right: Settings :material-menu-right: Servers :material-menu-right:** select the server, then Edit.
-    * Update the FQDN (Fully Qualified Domain Name) to the server.
-    * Ensure that you enable both **TLS** and **WebRTC**.
-    * Run `Install Server` if any settings gets changed.
-
-!!! tip "AnyEdge and WebRTC"
-    If you are using AnyEdge, you can enable WebRTC automatically by adding a domain name to your AnyEdge Domain.
-
 ## Configure WebPhone
 
 !!! tip
@@ -116,7 +79,27 @@ To setup WebRTC on a server:
 10. Select the **Server** from the dropdown. If you don’t want the customer to type-in the server, you can add the servers in the drop-down in the next step which is **Configuration**. You won't have the drop-down if you don’t fill out the information of the servers in the environmental variables.<br><img src= "/setup/img/wp7.png" width="600"></br>
 11. After logging in you can dial from your WebPhone.<br><img src= "/setup/img/wp8.png" width="300"></br>
 
-### Step 3: Configuring (Optional Step)
+### Step 3: Create Certificates
+
+1. After you configure the domains, verify the certificates in **Setup :material-menu-right: Information :material-menu-right: Certificates:
+
+2. * If the domain isn't listed, click on `Add Certificate` and provide your domain name.
+3. * If the certificates get listed but they don't have an issue or expiry date, click on "Refresh Certificates." This may take up to 10 minutes to complete.
+
+### Step 4: Add WebRTC to server
+
+To setup WebRTC on a server:
+
+1. Ensure **Domain (B)** (signaling domain from above) points ONLY to the server where you enable WebRTC.
+2. Navigate to **Setup :material-menu-right: Settings :material-menu-right: Servers :material-menu-right:** select the server, then Edit.
+    * Update the FQDN (Fully Qualified Domain Name) to the server.
+    * Ensure that you enable both **TLS** and **WebRTC**.
+    * Run `Install Server` if any settings gets changed.
+
+!!! tip "AnyEdge and WebRTC"
+    If you are using AnyEdge, you can enable WebRTC automatically by adding a domain name to your AnyEdge Domain.
+
+### Step 5: Configuring (Optional Step)
 
 1. Go to **IDE :material-menu-right: WebPhone :material-menu-right: Environmental variables**.
 2. Click on the blue plus sign to create a new variable.
