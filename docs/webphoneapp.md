@@ -72,19 +72,15 @@ PKI ensures end-point integrity, so you can be confident that the endpoint you c
 3. To keep things simple, we will use a top-level domain provider by ConnexCS.
 4. Enter your unique name in the first part of the domain and we will deploy this for you on the **.cnx.page** domain.
 5. Click on **Save**. <img src= "/setup/img/wp5.png">
-6. Please note you can change this later if you want to deploy this on your own domain.
-7. Now let's have a look at the deployed domain.
-8. Enter in the domain name in the URL e.g., webphone1.cnx.page.
-9. Enter the **Username** and **Password**.
-10. Select the **Server** from the dropdown. If you don’t want the customer to type-in the server, you can add the servers in the drop-down in the next step which is **Configuration**. You won't have the drop-down if you don’t fill out the information of the servers in the environmental variables.<br><img src= "/setup/img/wp7.png" width="600"></br>
-11. After logging in you can dial from your WebPhone.<br><img src= "/setup/img/wp8.png" width="300"></br>
+
+!!! Note
+    Please note you can change this later if you want to deploy this on your own domain.
 
 ### Step 3: Create Certificates
 
 1. After you configure the domains, verify the certificates in **Setup :material-menu-right: Information :material-menu-right: Certificates:
-
-2. * If the domain isn't listed, click on `Add Certificate` and provide your domain name.
-3. * If the certificates get listed but they don't have an issue or expiry date, click on "Refresh Certificates." This may take up to 10 minutes to complete.
+2. If the domain isn't listed, click on `Add Certificate` and provide your domain name (for example: yourservername.host.connexcs.net).
+3. If the certificates get listed but they don't have an issue or expiry date, click on "Refresh Certificates." This may take up to 10 minutes to complete.
 
 ### Step 4: Add WebRTC to server
 
@@ -110,6 +106,15 @@ To setup WebRTC on a server:
 5. Click on **Save**.
 
 <img src= "/setup/img/wp10.png">
+
+### Step 6: Login
+
+1. Now let's have a look at the deployed domain.
+2. Enter in the domain name in the URL e.g., webphone1.cnx.page.
+3. Enter the **Username** and **Password**.
+4. Select the **Server** from the dropdown. If you don’t want the customer to type-in the server, you can add the servers in the drop-down in the next step which is **Configuration**. You won't have the drop-down if you don’t fill out the information of the servers in the environmental variables.<br><img src= "/setup/img/wp7.png" width="600"></br>
+5. After logging in you can dial from your WebPhone.<br><img src= "/setup/img/wp8.png" width="300"></br>
+
 
 ### Navigation
 
