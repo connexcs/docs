@@ -115,13 +115,11 @@ To setup WebRTC on a server:
 4. Select the **Server** from the dropdown. If you don’t want the customer to type-in the server, you can add the servers in the drop-down in the next step which is **Configuration**. You won't have the drop-down if you don’t fill out the information of the servers in the environmental variables.<br><img src= "/setup/img/wp7.png" width="600"></br>
 5. After logging in you can dial from your WebPhone.<br><img src= "/setup/img/wp8.png" width="300"></br>
 
-
 ### Navigation
 
 1. **Dialpad**: Dialpad for making and answering calls.
-2. **Contacts**: This is the same Contacts database configured in **Class5 :material-menu-right: Phonebook**.
-3. **Mic Off**: Mute the call.
-4. **Hangup**: Disconnect the call.
-5. **Call Hold**: Hold the call.
+2. **Mic Off**: Mute the call.
+3. **Hangup**: Disconnect the call.
+4. **Call Hold**: Hold the call.
 
 <img src= "/setup/img/wp9.png" width="300">
