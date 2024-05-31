@@ -40,7 +40,7 @@ ConnexCS **Templates** use the mustash-compatible template language [**Handlebar
 
 ### Use Case
 
-1. To display **Documentation** in **App Store** (**Setup :material-menu-right: App Store :material-menu-right: Click on the App :material-menu-right: Documentation)
+1. To display **Documentation** in **App Store** (Setup :material-menu-right: App Store :material-menu-right: Click on the App :material-menu-right: Documentation)
 
     * Follow the instructions above to add documentation for a specific built application, however note that **template name** should actually be **app_documentation**.
 
