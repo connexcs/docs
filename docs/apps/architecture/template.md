@@ -19,10 +19,10 @@ ConnexCS **Templates** use the mustash-compatible template language [**Handlebar
 
 3.Fill out the following details:
 
-    + Name of the **Template**.
-    + Select the **Application** for which you want to integrate the template.
-    + Fill out the template **Subject**.
-    + Enter the **SMS** details.
+* Name of the **Template**.
+* Select the **Application** for which you want to integrate the template.
+* Fill out the template **Subject**.
+* Enter the **SMS** details.
 
 <img src= "/apps/img/template21.png" width="300">
 
@@ -37,3 +37,12 @@ ConnexCS **Templates** use the mustash-compatible template language [**Handlebar
 7.**Preview** is available on the right side of the screen.
 
 <img src= "/apps/img/template4.png">
+
+### Use Case
+
+1. To display **Documentation** in **App Store** (**Setup :material-menu-right: App Store :material-menu-right: Click on the App :material-menu-right: Documentation)
+
+    * Follow the instructions above to add documentation for a specific built application, however note that **template name** should actually be **app_documentation**.
+
+<img src= "/apps/img/appdoc.png">
+<img src= "/apps/img/appdoc1.png">
