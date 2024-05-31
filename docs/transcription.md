@@ -104,3 +104,9 @@ You should choose **Customer Name** : **None** and **Visibility** as **Public** 
 You can navigate to a specific customer's account and add a Saved Query as an alert.
 
 You will either receive a call, text, or e-mail saying that the system has detected a particular word or phrase for a specific call.
+
+## Its a consistent query mechanism which deals in real-time and performs query on historic data.
+
+We currently make use of Unified Query Language.
+
+This whole search mechanism is [Vector Search](https://learn.microsoft.com/en-us/azure/search/vector-search-overview)
