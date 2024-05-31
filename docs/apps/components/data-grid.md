@@ -73,7 +73,7 @@
         console.log('getComponent', dataname);
         ```
     
-    4. `this.setData
+    4. `this.setData`
         ```js
         this.setData(
         {

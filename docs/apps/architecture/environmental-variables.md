@@ -12,19 +12,20 @@ You can save the variables within page builder via 2 methods as follows:
 
 1. `this.env` and it can be saved by using `this.saveEnvVars(obj)`.
 2. Add Environmental Variables through **ScriptForge**: `setEnvVar('key_name', 'value')`
-   * If type of **value** is **String** then use the below specified format:
-	```js
-    if (value === string) {
-		setEnvVar('key_name', 'value')
-	}
-    ```
+   
+      * If type of **value** is **String** then use the below specified format:
+	    ```js
+        if (value === string) {
+		    setEnvVar('key_name', 'value')
+	    }
+        ```
 
-   * if the type of **value** is an **object** then use the below specified format:
-  ```js
-	if(value === Object) {
-		setEnvVar('key_name', JSON.stringify(value))
-	}
-```
+      * If the type of **value** is an **object** then use the below specified format:
+        ```js
+	    if(value === Object) {
+		    setEnvVar('key_name', JSON.stringify(value))
+	    }
+        ```
 
 ### Steps for configuring the Variables
 
