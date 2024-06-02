@@ -102,23 +102,27 @@ It enables you to locate records that accurately match specific keywords. Becaus
 
 PostgreSQL full-text searches are made possible by the **to_tsvector()** and **to_tsquery()** methods.
 
-* **to_tsvector():** This function takes a piece of text and breaks it down into important words, ignoring common words like ‘and’, ‘the’,etc these are also known as **Stop Words**. It’s like creating an index for a book, where you list the important words and where they appear. In the end, the to_tsvector() function returns a tsvector list containing all base words and their positions with stop words like a and the stripped.
-
+* **to_tsvector():** This function takes a piece of text and breaks it down into important words, ignoring common words like ‘and’, ‘the’,etc these are also known as **Stop Words**.
+It’s like creating an index for a book, where you list the important words and where they appear.
+In the end, the to_tsvector() function returns a tsvector list containing all base words and their positions with stop words like a and the stripped.
 In short, to_tsvector parses a textual document into tokens, reduces the tokens to lexemes (headwords of dictionaries), and returns a tsvector which lists the lexemes together with their positions in the document.
 
 |Phrase|Query|Result of the to_tsvector|
 |------|-----|-------------------------|
 |The girls are coming to eat the apples after they pray| `SELECT to_tsvector('The girls are coming to eat the apples after they pray');`|`girl:2 come:4 eat:6 apple:8 after:9 pray:11`|
 
-* **to_tsquery():** This function takes your search words and prepares them for searching in the text that was processed by to_tsvector(). It’s like looking up words in the index of a book.
-
+* **to_tsquery():** This function takes your search words and prepares them for searching in the text that was processed by to_tsvector().
+It’s like looking up words in the index of a book.
 In a nutshell, the **to_tsquery()** function compiles a search term into a structure that the PostgreSQL server can understand when locating documents/records in a tsvector list.
 
 ##### How to make a search using to_tsvector and to_tsquery()?
 
 For full-text search in PostgreSQL:
-* **to_tsvector** acts like an **interpreter**, getting the text ready for search
-* **to_tsquery** defines what you're **looking** for
+
+* **to_tsvector** acts like an **interpreter**, getting the text ready for search.
+
+* **to_tsquery** defines what you're **looking** for.
+
 * **@@** checks if the text matches your search query. The @@ operator compares these two and returns a simple 'yes' or 'no' answer (**TRUE/FALSE**) based on whether the keywords are found in the document.
 
 For example,
@@ -134,8 +138,8 @@ You can use various Operators to refine your research:
 
 |**Operator**|**Explanation**|**Query**|**Result**|
 |------------|--------------|---------|----------|
-|`AND/&|When searching, filter the results to include only entries (records or documents) that contain all the keywords provided in a list, separated by `&`|`SELECT * FROM products WHERE to_tsvector(product_name) @@ to_tsquery('T-Shirt & UCLA');`|`T-shirt UCLA Medium, T-shirt Green UCLA, UCLA Benetton T-Shirt`|
-|`OR/(&#124;)`|When searching, use 'OR' to find entries (records or documents) that contain at least one keyword from the provided list.|`SELECT * FROM products WHERE to_tsvector(product_name) @@ to_tsquery('UCLA (&#124;) T-Shirt');`|`UCLA Medium, T-shirt Green UCLA, Benetton T-Shirt`|
+|`AND/&`|When searching, filter the results to include only entries (records or documents) that contain all the keywords provided in a list, separated by `&`|`SELECT * FROM products WHERE to_tsvector(product_name) @@ to_tsquery('T-Shirt & UCLA');`|`T-shirt UCLA Medium, T-shirt Green UCLA, UCLA Benetton T-Shirt`|
+|`OR\|`|When searching, use 'OR' to find entries (records or documents) that contain at least one keyword from the provided list.|`SELECT * FROM products WHERE to_tsvector(product_name) @@ to_tsquery('UCLA \| T-Shirt');`|`UCLA Medium, T-shirt Green UCLA, Benetton T-Shirt`|
 |`NOT/!`|Exclude a particular keyword|`SELECT * FROM products WHERE to_tsvector(product_name) @@ to_tsquery('!Medium');`|`T-shirt Green UCLA, UCLA Benetton T-Shirt`|
 |`""`| Find entries (records or documents) where the text precisely matches the phrase enclosed in double quotes ("")|`SELECT * FROM products WHERE to_tsvector(product_name) @@ to_tsquery("UCLA Benetton T-Shirt");`|`UCLA Benetton T-Shirt`|
 
@@ -146,7 +150,7 @@ You can use various Operators to refine your research:
 |--------------|---------------|------------|-------|------|
 |**plainto_tsquery**|Converts plain text to tsquery for all words|`& (AND)`|`SELECT plainto_tsquery('english', 'The pretty girl')`;| `pretty & girl`|
 |**phraseto_tsquery**|Convert text to tsquery for exact phrases|`<-> (FOLLOWED BY)`|`SELECT plainto_tsquery('english', 'The pretty girl');`|`pretty <->(followed by) girl|
-|**websearch_to_tsquery**|Convert user input (web search like) to tsquery|`Supports OR/(&#124;)`|`SELECT websearch_to_tsquery('english', 'signal -"segmentation weak"')`;`| `'signal' & !( 'segment' <-> 'weak' )`|
+|**websearch_to_tsquery**|Convert user input (web search like) to tsquery|`Supports OR\|`|`SELECT websearch_to_tsquery('english', 'signal -"segmentation weak"')`;`| `'signal' & !( 'segment' <-> 'weak' )`|
 
 ##### Ranking the search results
 
@@ -199,7 +203,6 @@ The function used is `ts_headline`. It's a built-in function used for highlighti
 It takes the document text and your search query as input and returns an excerpt from the document where the search terms are highlighted.
 
 !!!! Example
-
     Information to be highighted form:
 
     |Product_name|Excerpt|
