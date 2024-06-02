@@ -103,17 +103,17 @@ It enables you to locate records that accurately match specific keywords. Becaus
 PostgreSQL full-text searches are made possible by the **to_tsvector()** and **to_tsquery()** methods.
 
 * **to_tsvector():** This function takes a piece of text and breaks it down into important words, ignoring common words like ‘and’, ‘the’,etc these are also known as **Stop Words**.
-  * It’s like creating an index for a book, where you list the important words and where they appear.
-  * In the end, the to_tsvector() function returns a tsvector list containing all base words and their positions with stop words like `a` and `the` get stripped.
-  * In short, to_tsvector parses a textual document into tokens, reduces the tokens to lexemes (headwords of dictionaries), and returns a tsvector which lists the lexemes together with their positions in the document.
+    * It’s like creating an index for a book, where you list the important words and where they appear.
+    * In the end, the to_tsvector() function returns a tsvector list containing all base words and their positions with stop words like `a` and `the` get stripped.
+    * In short, to_tsvector parses a textual document into tokens, reduces the tokens to lexemes (headwords of dictionaries), and returns a tsvector which lists the lexemes together with their positions in the document.
 
 |Phrase|Query|Result of the to_tsvector|
 |------|-----|-------------------------|
 |The girls are coming to eat the apples after they pray| `SELECT to_tsvector('The girls are coming to eat the apples after they pray');`|`girl:2 come:4 eat:6 apple:8 after:9 pray:11`|
 
 * **to_tsquery():** This function takes your search words and prepares them for searching in the text that was processed by to_tsvector().
-  * It’s like looking up words in the index of a book.
-  * In a nutshell, the **to_tsquery()** function compiles a search term into a structure that the PostgreSQL server can understand when locating documents/records in a tsvector list.
+    * It’s like looking up words in the index of a book.
+    * In a nutshell, the **to_tsquery()** function compiles a search term into a structure that the PostgreSQL server can understand when locating documents/records in a tsvector list.
 
 ##### How to make a search using to_tsvector and to_tsquery()?
 
@@ -169,8 +169,8 @@ PostgreSQL offers built-in ranking that considers **how often** search terms app
 !!! Example
     1. **`ts_rank`**
     Imagine you have a table containing product descriptions and search for "camera lenses." The query might return a list of products like:
-       * **Query**: `SELECT*, ts_rank(search_vector, to_tsquery('english', 'query terms')) AS rank FROM your_table WHERE search_vector @@ to_tsquery('english', 'query terms') ORDERBY rank DESC;`
-       * **Result**:
+          * **Query**: `SELECT*, ts_rank(search_vector, to_tsquery('english', 'query terms')) AS rank FROM your_table WHERE search_vector @@ to_tsquery('english', 'query terms') ORDERBY rank DESC;`
+          * **Result**:
 
     |**ID**|**Product_name**|**Description**|**Rank**|
     |------|----------------|---------------|--------|
@@ -180,12 +180,12 @@ PostgreSQL offers built-in ranking that considers **how often** search terms app
 
     2. **`ts_rank_cd`**
     Imagine you have a news article database and search for "climate change." The query might return articles like:
-       * **Query**: `SELECT *, ts_rank_cd(search_vector, to_tsquery('english', 'query terms'), dictionary) AS rank
-        FROM your_table
-        WHERE search_vector @@ to_tsquery('english', 'query terms')
-        ORDER BY rank DESC;`
+          * **Query**: `SELECT *, ts_rank_cd(search_vector, to_tsquery('english', 'query terms'), dictionary) AS rank
+            FROM your_table
+            WHERE search_vector @@ to_tsquery('english', 'query terms')
+            ORDER BY rank DESC;`
 
-       * **Result**:
+          * **Result**:
 
     |**ID**|**Title**|**Summary**|**Rank**|
     |------|---------|-----------|--------|
@@ -203,7 +203,7 @@ The function used is `ts_headline`. It's a built-in function used for highlighti
 It takes the document text and your search query as input and returns an excerpt from the document where the search terms are highlighted.
 
 !!!! Example
-     Information to be highlighted from:
+    Information to be highlighted from:
 
     |Product_name|Excerpt|
     |------------|-------|
