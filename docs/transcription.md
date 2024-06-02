@@ -91,7 +91,9 @@ We currently make use of **Unified Query Language**.
 
 This whole search mechanism is [Vector Search](https://learn.microsoft.com/en-us/azure/search/vector-search-overview).
 
-It enables you to locate records that accurately match specific keywords. Because it uses indices, effective query methods, and rules, this query method is quick.
+It enables you to locate records that accurately match specific keywords.
+
+As it uses indices, effective query methods, and rules, this query method is quick.
 
 |**Type of Search/Algorithm**|**Explanation**|**Example**|
 |----------------------------|---------------|-----------|
@@ -104,8 +106,8 @@ PostgreSQL full-text searches are made possible by the **to_tsvector()** and **t
 
 * **to_tsvector():** This function takes a piece of text and breaks it down into important words, ignoring common words like ‘and’, ‘the’,etc these are also known as **Stop Words**.
     * It’s like creating an index for a book, where you list the important words and where they appear.
-    * In the end, the to_tsvector() function returns a tsvector list containing all base words and their positions with stop words like `a` and `the` get stripped.
-    * In short, to_tsvector parses a textual document into tokens, reduces the tokens to lexemes (headwords of dictionaries), and returns a tsvector which lists the lexemes together with their positions in the document.
+    * The to_tsvector() function returns a tsvector list containing all base words and their positions with stop words like `a` and `the` get stripped.
+    * In short, to_tsvector() parses a textual document into tokens, reduces the tokens to lexemes (headwords of dictionaries), and returns a tsvector which lists the lexemes together with their positions in the document.
 
 |Phrase|Query|Result of the to_tsvector|
 |------|-----|-------------------------|
@@ -138,15 +140,15 @@ You can use various Operators to refine your research:
 
 |**Operator**|**Explanation**|**Query**|**Result**|
 |------------|--------------|---------|----------|
-|`AND/&`|When searching, filter the results to include only entries (records or documents) that contain all the keywords provided in a list, separated by `&`|`SELECT * FROM products WHERE to_tsvector(product_name) @@ to_tsquery('T-Shirt & UCLA');`|`T-shirt UCLA Medium, T-shirt Green UCLA, UCLA Benetton T-Shirt`|
+|`AND\&`|When searching, filter the results to include only entries (records or documents) that contain all the keywords provided in a list, separated by `&`|`SELECT * FROM products WHERE to_tsvector(product_name) @@ to_tsquery('T-Shirt & UCLA');`|`T-shirt UCLA Medium, T-shirt Green UCLA, UCLA Benetton T-Shirt`|
 |`OR\|`|When searching, use 'OR' to find entries (records or documents) that contain at least one keyword from the provided list.|`SELECT * FROM products WHERE to_tsvector(product_name) @@ to_tsquery('UCLA \| T-Shirt');`|`UCLA Medium, T-shirt Green UCLA, Benetton T-Shirt`|
-|`NOT/!`|Exclude a particular keyword|`SELECT * FROM products WHERE to_tsvector(product_name) @@ to_tsquery('!Medium');`|`T-shirt Green UCLA, UCLA Benetton T-Shirt`|
+|`NOT\!`|Exclude a particular keyword|`SELECT * FROM products WHERE to_tsvector(product_name) @@ to_tsquery('!Medium');`|`T-shirt Green UCLA, UCLA Benetton T-Shirt`|
 |`""`| Find entries (records or documents) where the text precisely matches the phrase enclosed in double quotes ("")|`SELECT * FROM products WHERE to_tsvector(product_name) @@ to_tsquery("UCLA Benetton T-Shirt");`|`UCLA Benetton T-Shirt`|
 
 !!! Tip
     By using **multiple search operators together**, you can create more specific search queries that helps you find the most relevant entries quicker.
 
-|**Query Type**|**Explanation**|**Operator used for combining words**|**Example/Query**|**Results**
+|**Query Type**|**Explanation**|**Operator used for combining words**|**Example/Query**|**Results**|
 |--------------|---------------|------------|-------|------|
 |**plainto_tsquery**|Converts plain text to tsquery for all words|`& (AND)`|`SELECT plainto_tsquery('english', 'The pretty girl')`;| `pretty & girl`|
 |**phraseto_tsquery**|Convert text to tsquery for exact phrases|`<-> (FOLLOWED BY)`|`SELECT plainto_tsquery('english', 'The pretty girl');`|`pretty <->(followed by) girl`|
