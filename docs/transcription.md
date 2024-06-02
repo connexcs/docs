@@ -181,9 +181,9 @@ PostgreSQL offers built-in ranking that considers **how often** search terms app
     2. **`ts_rank_cd`**
     Imagine you have a news article database and search for "climate change." The query might return articles like:
           * **Query**: `SELECT *, ts_rank_cd(search_vector, to_tsquery('english', 'query terms'), dictionary) AS rank
-            FROM your_table
-            WHERE search_vector @@ to_tsquery('english', 'query terms')
-            ORDER BY rank DESC;`
+          FROM your_table
+          WHERE search_vector @@ to_tsquery('english', 'query terms')
+          ORDER BY rank DESC;`
 
           * **Result**:
 
@@ -203,19 +203,19 @@ The function used is `ts_headline`. It's a built-in function used for highlighti
 It takes the document text and your search query as input and returns an excerpt from the document where the search terms are highlighted.
 
 !!!! Example
-    Information to be highlighted from:
+     Information to be highlighted from:
 
-    |Product_name|Excerpt|
-    |------------|-------|
-    |iPhone 14 Pro Max|	Powerful A16 Bionic chip and an advanced triple- smartphone camera system for capturing stunning photos and cinematic-quality videos|
-    |Samsung Galaxy S23 Ultra|Exceptional camera experience with a 108MP main sensor and advanced zoom capabilities. Long-lasting battery and S Pen support|
-    |Google Pixel 7 Pro|Next-generation Google Tensor chip for intelligent photography features. Compact design and a beautiful display. Smartphone Case protects your phone and includes a wide-angle lens attachment|
+     |Product_name|Excerpt|
+     |------------|-------|
+     |iPhone 14 Pro Max|	Powerful A16 Bionic chip and an advanced triple- smartphone camera system for capturing stunning photos and cinematic-quality videos|
+     |Samsung Galaxy S23 Ultra|Exceptional camera experience with a 108MP main sensor and advanced zoom capabilities. Long-lasting battery and S Pen support|
+     |Google Pixel 7 Pro|Next-generation Google Tensor chip for intelligent photography features. Compact design and a beautiful display. Smartphone Case protects your phone and includes a wide-angle lens attachment|
 
-    |Product_name|Excerpt|
-    |------------|-------|
-    |iPhone 14 Pro Max| Powerful A16 Bionic chip and an advanced triple-**smartphone camera** system for capturing stunning photos and cinematic-quality videos|
-    |Samsung Galaxy S23 Ultra|Exceptional **camera** experience with a 108MP main sensor and advanced zoom capabilities. Long-lasting battery and S Pen support|
-    |Google Pixel 7 Pro|Next-generation Google Tensor chip for intelligent photography features. Compact design and a beautiful display. Smartphone Case Protects your phone and includes a wide-angle **lens** attachment|
+     |Product_name|Excerpt|
+     |------------|-------|
+     |iPhone 14 Pro Max| Powerful A16 Bionic chip and an advanced triple-**smartphone camera** system for capturing stunning photos and cinematic-quality videos|
+     |Samsung Galaxy S23 Ultra|Exceptional **camera** experience with a 108MP main sensor and advanced zoom capabilities. Long-lasting battery and S Pen support|
+     |Google Pixel 7 Pro|Next-generation Google Tensor chip for intelligent photography features. Compact design and a beautiful display. Smartphone Case Protects your phone and includes a wide-angle **lens** attachment|
 
 ### Score
 
