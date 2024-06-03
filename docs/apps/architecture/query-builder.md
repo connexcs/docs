@@ -37,7 +37,9 @@ Common use cases include: Database Administration Tools, Web Application, Report
 
 ### G3 Query Builder
 
-If you wish to generate a graph, for example from past 10 days, you can use the feature `start_date`.
+When creating a **query**, you can select the **data source** as **G3**, which is helpful when you intend to visualize the data as a graph.
+
+The `start_dat`e feature facilitates specifying time ranges using natural language parsing in JavaScript.
 
 `start_date` is a natural language date parser in Javascript. It can extract data from any provided text and handle the majority of date/time formats.
 

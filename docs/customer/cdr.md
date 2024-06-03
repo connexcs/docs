@@ -25,17 +25,17 @@ When viewing CDRs for a specific customer, use the **`Recalc CDR`** button to re
 * **Operations**
   * Refresh Credit (recalculates balances)
   * Refresh Summaries & Credit
-  * Rerate Calls, and Refresh Summaries & Credit
-  * Adjust Call Duration, Rerate Calls, and Refresh Summaries and Credit
+  * Re-rate Calls, and Refresh Summaries & Credit
+  * Adjust Call Duration, Re-rate Calls, and Refresh Summaries and Credit
 
 * **Date (UTC)** (for Refresh operations)
 
-* **Release Reason** (for Rerate operations)- Select the reason for the call's termination (multiple selections allowed). This will revise the amount charged for the calls.
+* **Release Reason** (for Re-rate operations)- Select the reason for the call's termination (multiple selections allowed). This will revise the amount charged for the calls.
 
-* **Min Duration** (for Adjust Call Duration operations) (Calls with Minimum Duration in the CDR for example 3600 seconds will be considered for re-calculation)
+* **Min Duration** (for Adjust Call Duration operations) (Minimum Duration of calls that will be considered for re-calculation (3600 seconds))
 
 * **New Duration** (for Adjust Call Duration operations) (All the calls with minimum duration of 3600 seconds will be recalculated with the value in the New Duration, for example 60 seconds).
-(All the calls will be converted from 3600 seconds to 60 seconds and the billing will also be redone according to 60 seconds duration).
+(The duration of qualifying calls will be recalculated to this value (from 3600 seconds to 60 seconds)).
 
 !!! Example
     |Duration(seconds)|Cost per second($)|Total Cost($)|

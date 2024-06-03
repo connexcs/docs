@@ -70,7 +70,7 @@ It can provide added **Transport Layer Security (TLS)/ Secure Sockets Layer (SSL
 Click :material-plus: button to specify the Destination IP, and one or more Limit (Primary) and Backup (Secondary) Zones.
 
 * **Destination**: Enter the Customer's server's IP address.
-* **Limit Zones**: The calls hitting the selected zones in the Limit Zones field will go directly to the entered IP address(server) in the Destination field.
+* **Limit Zones**:  Limit Zones control access to specific servers within a load balancer. By defining limit zones, you restrict access to certain servers from designated zones. For example, if Sydney is not added to the limit zone configuration, individuals from Sydney will be unable to access this designated server within the load balancer.
 * **Backup Zones**: Whenever the server of the main zone fails, the traffic will route to the zone selected in the Backup Zones field.
 
 <img src= "/anyedge/anyedge5.png">
