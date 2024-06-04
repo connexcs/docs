@@ -276,11 +276,9 @@ This feature's objective is to allow customers to utilise the best performing CL
 
 **How does this algorithm work?**
 
-1. If there are more than 1000 records in the CLI Database, the system will randomly pick 1000 DIDs, then pick the best ones from that list of best performing ones.
-2. An ASR lookup is initiated and the ASR reading requires at least 50 calls (per CLI). It means the system will then shortlist 50 calls (out of 1000) with the best ASR.
-3. The system uses a **Sliding Window** concept over 7 days to achieve the ASR readings. This concept will add up the all the calls (successful and unsuccessful) per CLI to give us the ASR readings. Once the system gets all the CLIs ASR readings, it will arrange it from Best to Worse and will pick the top 5 CLIs.
-4. Out of the 1000 calls the system will pick the top 5 performing CLIs every 5 minutes.
-5. If there are less than 50 calls to this CLI (or none), it will assume an ASR of 50%.
+1. If the CLI database contains more than 1000 records, the system randomly selects 1000 Direct Inward Dialing (DID) numbers. From these 1000 DIDs, the system identifies the best-performing ones based on ASR.
+2. ASR lookup is initiated, and the ASR requires at least 50 calls per CLI ( in last 7 days) to be considered valid. If there are fewer than 50 calls for a CLI, the system assigns it an ASR of 50%.
+3. The number of top-performing CLIs selected is determined by the Performance Top Batch Size setting. These top CLIs are selected for use based on the Performance Interval setting, which dictates how long this batch remains active.
 
 **Steps to use Performance CLI Selection**
 

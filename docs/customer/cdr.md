@@ -35,7 +35,6 @@ When viewing CDRs for a specific customer, use the **`Recalc CDR`** button to re
 * **Min Duration** (for Adjust Call Duration operations) (Minimum Duration of calls that will be considered for re-calculation (3600 seconds))
 
 * **New Duration** (for Adjust Call Duration operations) (All the calls with minimum duration of 3600 seconds will be recalculated with the value in the New Duration, for example 60 seconds).
-(The duration of qualifying calls will be recalculated to this value (from 3600 seconds to 60 seconds)).
 
 !!! Example
     |Duration(seconds)|Cost per second($)|Total Cost($)|
