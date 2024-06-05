@@ -87,6 +87,7 @@ The Form attribute helps you specify values for the following parameters for all
         console.log('New Data In', data)
     })
     socket.close(); // closing the socket
+    ```
 
 !!! Info
     Form Attribute :material-menu-right: Datasource :material-menu-right: Stores
@@ -98,12 +99,13 @@ The Form attribute helps you specify values for the following parameters for all
 
 !!! Info
     Form Attribute :material-menu-right: Datasource :material-menu-right: Saved Query
-    Using the Page Builder interface we can run a complicated query (runs behind the scenes) and it returns the data. the Saved Queries can be accssed via ScriptForge.
+    Using the Page Builder interface we can run a complicated query (runs behind the scenes) and it returns the data. the Saved Queries can be accessed via ScriptForge.
+
     1. A query can be ran against different endpoints, (CDR, Primary Database, G3 Analytics), so we will need a selector.
     2. From the IDE perspective, we should be able to run an ad-hoc query, e.g we shouldn't need to create a new item and save it before we can run it.
     3. There should be a section for variables to be filled in, for example:
     SELECT * FROM customers WHERE customer_id = :customer_id
-    :customer_id is the replacement syntax
+    :customer_id is the replacement syntax.
     4. Then when we run the query it will automatically replace :customer_id with the value associated with that variable.
     5. When the query is saved (/api/cp/setup/query) you can run it /api/cp/setup/query/1234/run with POST or GET and pass the variable along with it. Then it will inject the variables into the saved query and execute it.
     6. This query will then be accessible from ScriptForge or via the Page-builder.
