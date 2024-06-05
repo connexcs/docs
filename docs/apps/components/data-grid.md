@@ -73,7 +73,7 @@
         console.log('getComponent', dataname);
         ```
     
-    4. `this.setData
+    4. `this.setData`
         ```js
         this.setData(
         {
@@ -92,6 +92,7 @@
         ]
         }
         )
+        ```
 
 !!! info Add multiple classes
     Use the following syntax to add multiple classes to a component:
@@ -190,4 +191,4 @@ It allows you to customize the appearance of data to improve readability, highli
 
 ## First time User?
 
-If you are using the Page Builder components on the ConnexCS platform for the first time, we request you to use our guide on <a href="https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#steps-to-use-components-in-the-page-builder" target="_blank">steps to use the Components</a>.
+If you are using the Page Builder components on the ConnexCS platform for the first time, we request you to use our guide on <a href="https://docs.connexcs.com/apps/page-builder/#steps-to-use-components-in-the-page-builder" target="_blank">steps to use the Components</a>.
