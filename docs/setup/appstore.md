@@ -26,7 +26,7 @@ The Apps can be created by other customers or developers and used by ConnexCS's 
 <img src= "/setup/img/appstore2.png" width= "500">
 
 !!! Note
-    See this icon? ![ownership](image.png). It means you built this application and the ownership belongs to you.
+    See this icon? ![owner](image-1.png). It means you built this application and the ownership belongs to you.
 
 ## How to Display documentation for your Application
 

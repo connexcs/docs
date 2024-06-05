@@ -78,6 +78,7 @@ The Form attribute helps you specify values for the following parameters for all
 !!! Info 
     Form Attribute :material-menu-right: Datasource :material-menu-right: ScriptForge :material-menu-right: Websocket
     WebSocket enables you to create and manage WebSocket connections within your application. WebSockets are a powerful technology for establishing persistent, two-way communication channels between a web browser and a server, enabling real-time data exchange without the need for constant polling.
+
     **Example**:
     ```js
     const socket = this.scriptForge('myScriptForge')//creates a new WebSocket connection using the scriptForge function
@@ -115,7 +116,7 @@ The Form attribute helps you specify values for the following parameters for all
     Access information externally.
 
 !!! Info
-    ** window.cx**: This function, when called, returns an object with the name **ctx**. This can be accessed using the browser's console.
+    **window.cx**: This function, when called, returns an object with the name **ctx**. This can be accessed using the browser's console.
     When any functions are being executed, "this" context is equivalent to "ctx." It's an incredibly efficient method for modifying code directly from the browser console.
     For example, using the below code you can interact with the Page Builder from the Console.
 
@@ -129,7 +130,7 @@ The Form attribute helps you specify values for the following parameters for all
     window.cx().ctx.$('echarts').loading(false) // Charts component is not loading
     ```
     <img src= "/apps/img/pageb7.png" width="300">
-
+    
     2. **Example 2**: Set the Log Level
     ```js
     window.cx().ctx.setLogLevel(`debug`) // Setting log level to debug
