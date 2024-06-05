@@ -131,7 +131,7 @@ The Form attribute helps you specify values for the following parameters for all
     ```
     <img src= "/apps/img/pageb7.png" width="300">
     
-    2. **Example 2**: Set the Log Level
+    2.**Example 2**: Set the Log Level
     ```js
     window.cx().ctx.setLogLevel(`debug`) // Setting log level to debug
     ```

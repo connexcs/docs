@@ -34,7 +34,7 @@ ConnexCS **Templates** use the mustash-compatible template language [**Handlebar
 
 <img src= "/apps/img/template3.png">
 
-7.**Preview** ![prev](image-4.png) is available on the right side of the screen. Click here to open the preview section.
+7.**Preview**![prev1](image-6.png) is available on the right side of the screen. Click here to open the preview section.
 Click on this arrow ![arr](image-5.png) to maximize the preview screen.
 
 <img src= "/apps/img/template4.png">
