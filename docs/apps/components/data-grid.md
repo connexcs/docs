@@ -73,7 +73,7 @@
         console.log('getComponent', dataname);
         ```
     
-    4. `this.setData
+    4. `this.setData`
         ```js
         this.setData(
         {
@@ -203,13 +203,13 @@ The **Server-Side Row Model (SSRM)** enables applications to manage extensive da
 
 This is achieved through the following mechanisms:
 
-1. Infinite scrolling: It loads additional data as the user scrolls through the application.
-2. Lazy loading from group rows. You can decide how much data you wish to see like 10 rows of data or 100 rows of data.
+1. **Infinite scrolling**: It loads additional data as the user scrolls through the application.
+2. **Lazy loading from group rows**: You can decide how much data you wish to see like 10 rows of data or 100 rows of data.
 
 #### How to use it with Datagrid?
 
 1. **Infinite Scrolling**
-   * [Click here](https://docs.connexcs.com/apps/page-builder/#steps-to-use-components-in-the-page-builder) to add the Data Grid component.
+      * [Click here](https://docs.connexcs.com/apps/page-builder/#steps-to-use-components-in-the-page-builder) to add the Data Grid component.
    <img src= "/apps/pag1.png">
    * Click on **Form Attribute :material-menu-right: Data source (Setting) :material-menu-right: Add data source**.
    <img src= "/apps/pag2.png">
