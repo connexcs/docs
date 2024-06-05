@@ -27,7 +27,7 @@ You can save the variables via 2 methods as follows:
 
 1. Login to your account.
 
-2. Navigate to **IDE :material-menu-right: Var**.
+2. Navigate to **IDE :material-menu-right: Environmental Var**.
 3. Select the **App** you wish to use the variables for.
 
 4. Enter the values for **Key** and **Value** fields.
