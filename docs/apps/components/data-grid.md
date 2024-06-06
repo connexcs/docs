@@ -112,6 +112,7 @@
 |**Suppress Context Menu**|When disabled, it disables the mouse right-click feature which has custom options like export into `.CSV` file or Excel, copy or copy with headers, etc. and instead the browser default and generic right-click options become available|<img src= "/apps/components/img/datagrid_suppress.png">|
 |**Context Menu**|You can select from various options to add to your context menu. This option is ONLY effective if suppress Context Menu is Disabled|<img src= "/apps/components/img/datagrid_contextmenu.png">|
 |**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** action to hide the field|<img src= "/apps/components/img/datagrid_attributeaction.png">|
+|**Action Settings**|Click on the drop-down to select the pre-defined methods you wish to apply to your component. In this case, you can choose either **mounted** or **refresh** for `onCellClicked`, or `onLinkClicked`|<img src= "/apps/components/img/datagrid_ac.png">|
 
 We're talking about **Column Config** separately as it's a comprehensive component. Click on `+` to add a new column.
 

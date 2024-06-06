@@ -56,6 +56,7 @@ It typically provides a self-contained interface for collecting additional infor
 |`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String) : Object`|
 |`this.getValue`|Get A Value From a component|`(fieldName: String)`|
 |`myDialog.open()`|Opens the dialog box on the page|
+|`myDialog.close()`|Closes the dialog box on the page|
 
 #### Steps to use the methods for the Page Builder components
 
@@ -84,6 +85,12 @@ It typically provides a self-contained interface for collecting additional infor
         var myDialog = this.getComponent('dialog_icubvv8x')
         myDialog.open()
         ```
+    
+    4. `myDialog.close()`
+        ```js
+        var myDialog = this.getComponent('dialog_icubvv8x')
+        myDialog.close()
+        ```
 
 ## Config
 
@@ -100,6 +107,7 @@ It typically provides a self-contained interface for collecting additional infor
 |**Margin Top**|It defines the position of the dialog box from the top of the screen|<img src= "/apps/components/img/dialog_magintop.png">|
 |**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Data Binding** to connect the data to UI|<img src= "/apps/components/img/dialog_attributeaction.png">|
+|**Action Settings**|Click on the drop-down to select the pre-defined methods you wish to apply to your component. In this case, you can choose either **mounted** or **refresh** for `onCancel` or `onConfirm`|<img src= "/apps/components/img/dialog_ac.png">|
 
 ## First time User?
 

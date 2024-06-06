@@ -121,5 +121,8 @@ To setup WebRTC on a server:
 2. **Mic Off**: Mute the call.
 3. **Hangup**: Disconnect the call.
 4. **Call Hold**: Hold the call.
+5. **Clipboard**: When you copy something on your computer, it's stored on the clipboard. You can then paste it on the Webphone.
+6. **Log Out** (top-right) ![logout](image-3.png): Clink on this button to sign out of the Webphone.
+7. **Current Call Time**: Displays the duration of the ongoing call.
 
 <img src= "/setup/img/wp9.png" width="300">

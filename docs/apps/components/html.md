@@ -130,6 +130,7 @@ To know more about Handlebars [click here](https://handlebarsjs.com/guide/#html-
 |**Hide Label**| Hides the label on the form|<img src= "/apps/components/img/input_hidelabel.png">|
 |**Text Prompt**| A description to aid the user when completing the field|<img src= "/apps/components/img/input_textprompt.png">|
 |**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** action to hide the field|<img src= "/apps/components/img/group_attributionaction.png">|
+|**Action Settings**|Click on the drop-down to select the pre-defined methods you wish to apply to your component. In this case, you can choose either **mounted** or **refresh** for `onClick`|<img src= "/apps/components/img/button_ac.png">|
 
 ## First time User?
 
