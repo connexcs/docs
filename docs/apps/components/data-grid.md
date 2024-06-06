@@ -212,16 +212,16 @@ This is achieved through the following mechanisms:
       * [Click here](https://docs.connexcs.com/apps/page-builder/#steps-to-use-components-in-the-page-builder) to add the Data Grid component.
         <img src= "/apps/pag1.png">
       * Click on **Form Attribute :material-menu-right: Data source (Setting) :material-menu-right: Add data source**.
-        <img src= "/apps/pag2.png" width= "200">
+        <img src= "/apps/pag2.png" width= "250">
       * Select form the various data sources like ScriptForge, Stores, Database, Saved Query, External. Make sure you have enabled `Whether the form is initialized to send the request` (for auto-loading the data source). Click on `Save`.
         <img src= "/apps/pag3.png">
       * Click on **Component Attribute**, select the saved **Data source** and enable the **Server Side Row Model**.
 
-        <img src= "/apps/pag4.png" width= "200">
+        <img src= "/apps/pag4.png" width= "400">
 
       * Click on `Preview`. You will see that all the data has been auto-loaded in one go (10,000 rows of data). This type of loading is the **Infinite scrolling**.
 
-        <img src= "/apps/pag5.png" width= "1000">
+        <img src= "/apps/pag5.png" width= "800">
 
 2.**Lazy-loading of data in groups**
 
@@ -231,7 +231,7 @@ This is achieved through the following mechanisms:
 
 * Click on **Form Attribute :material-menu-right: Data source (Setting) :material-menu-right: Add data source**.
 
-<img src= "/apps/pag2.png" width= "300">
+<img src= "/apps/pag2.png" width= "250">
 
 * Select form the various data sources like ScriptForge, Stores, Database, Saved Query, External. Make sure `Whether the form is initialized to send the request` is **disabled**.
 
@@ -245,7 +245,7 @@ return config;
 
 * Click on `Save`.
 
-<img src= "/apps/pag61.png">
+<img src= "/apps/img/pag61.png">
 
 * Click on **Component Attribute**, select the saved **Data source** and enable the **Server Side Row Model**.
 
@@ -253,7 +253,7 @@ return config;
 
 * Click on `Preview`. You will see that all the data hasn't been auto-loaded instead only 100 rows of data is loading at a time. This type of loading is the **Lazy-loading in groups**.
   
-<img src= "/apps/pag7.png" width= "1000">
+<img src= "/apps/pag7.png" width= "800">
 
 ## First time User?
 
