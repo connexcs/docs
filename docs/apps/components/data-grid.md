@@ -221,7 +221,7 @@ This is achieved through the following mechanisms:
 
       * Click on `Preview`. You will see that all the data has been auto-loaded in one go (10,000 rows of data). This type of loading is the **Infinite scrolling**.
 
-        <img src= "/apps/pag5.png" width= "2500">
+        <img src= "/apps/pag5.png" width= "1000">
 
 2.**Lazy-loading of data in groups**
 
@@ -245,15 +245,15 @@ return config;
 
 * Click on `Save`.
 
-<img src= "/apps/pag6.png">
+<img src= "/apps/pag61.png">
 
 * Click on **Component Attribute**, select the saved **Data source** and enable the **Server Side Row Model**.
 
-<img src= "/apps/pag4.png" width= "600">
+<img src= "/apps/pag4.png" width= "250">
 
 * Click on `Preview`. You will see that all the data hasn't been auto-loaded instead only 100 rows of data is loading at a time. This type of loading is the **Lazy-loading in groups**.
   
-<img src= "/apps/pag7.png" width= "3500">
+<img src= "/apps/pag7.png" width= "1000">
 
 ## First time User?
 
