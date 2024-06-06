@@ -8,7 +8,20 @@ You can separate your code (logic) from your config.
 
 The variables you create here will be accessible to the ScriptForge, Templates, Pages and the Button Builder.
 
-This is available from within page builder via `this.env` and it can be saved by using `this.saveEnvVars(obj)`.
+You can save the variables via 2 methods as follows:
+
+1. `this.env` can be saved by using `this.saveEnvVars(obj)` in the **Page Builder**.
+2. Add Environmental Variables through **ScriptForge**: `setEnvVar('key_name', 'value')`
+   
+      * If type of **value** is **String** then use the below specified format:
+	    ```js
+		    setEnvVar('key_name', 'value')
+        ```
+
+      * If the type of **value** is an **object** then use the below specified format:
+        ```js
+		    setEnvVar('key_name', JSON.stringify(value))
+        ```
 
 ### Steps for configuring the Variables
 

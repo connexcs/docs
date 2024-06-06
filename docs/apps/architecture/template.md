@@ -13,16 +13,16 @@ ConnexCS **Templates** use the mustash-compatible template language [**Handlebar
 
 1. Login to your account.
 
-2. Navigate to **IDE** :material-menu-right: `+` sign :material-menu-right: **Template**.
+2. Navigate to **IDE** :material-menu-right: `+` icon :material-menu-right: **Template**.
 
 <img src= "/apps/img/template12.png">
 
 3.Fill out the following details:
 
-    + Name of the **Template**.
-    + Select the **Application** for which you want to integrate the template.
-    + Fill out the template **Subject**.
-    + Enter the **SMS** details.
+   * Name of the **Template**.
+   * Select the **Application** for which you want to integrate the template.
+   * Fill out the template **Subject** for the **e-mail** communication (supports variables).
+   * The **SMS** field doesn't actually send the SMS, but it's usable when other parts of the system have SMS set.
 
 <img src= "/apps/img/template21.png" width="300">
 
@@ -34,6 +34,16 @@ ConnexCS **Templates** use the mustash-compatible template language [**Handlebar
 
 <img src= "/apps/img/template3.png">
 
-7.**Preview** is available on the right side of the screen.
+7.**Preview**![prev1](image-6.png) is available on the right side of the screen. Click here to open the preview section.
+Click on this arrow ![arr](image-5.png) to maximize the preview screen.
 
 <img src= "/apps/img/template4.png">
+
+### Use Case
+
+1. To display **Documentation** in **App Store** (Setup :material-menu-right: App Store :material-menu-right: Click on the App :material-menu-right: Documentation)
+
+    * Follow the instructions above to add documentation for a specific built application, however note that **template name** should actually be **app_documentation**.
+
+<img src= "/apps/img/appdoc.png">
+<img src= "/apps/img/appdoc1.png">
