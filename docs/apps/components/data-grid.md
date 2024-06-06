@@ -210,23 +210,25 @@ This is achieved through the following mechanisms:
 
 1. **Infinite Scrolling**
       * [Click here](https://docs.connexcs.com/apps/page-builder/#steps-to-use-components-in-the-page-builder) to add the Data Grid component.
-   <img src= "/apps/pag1.png">
-   * Click on **Form Attribute :material-menu-right: Data source (Setting) :material-menu-right: Add data source**.
-   <img src= "/apps/pag2.png">
-   * Select form the various data sources like ScriptForge, Stores, Database, Saved Query, External. Make sure you have enabled `Whether the form is initialized to send the request` (for auto-loading the data source). Click on `Save`.
-   <img src= "/apps/pag3.png">
-   * Click on **Component Attribute**, select the saved **Data source** and enable the **Server Side Role Model**.
-   <img src= "/apps/pag4.png">
-   * Click on `Preview`. You will see that all the data has been auto-loaded in one go (10,000 rows of data). This type of loading is the **Infinite scrolling**.
-   <img src= "/apps/pag5.png">
+        <img src= "/apps/pag1.png">
+      * Click on **Form Attribute :material-menu-right: Data source (Setting) :material-menu-right: Add data source**.
+        <img src= "/apps/pag2.png">
+      * Select form the various data sources like ScriptForge, Stores, Database, Saved Query, External. Make sure you have enabled `Whether the form is initialized to send the request` (for auto-loading the data source). Click on `Save`.
+        <img src= "/apps/pag3.png" width= "600">
+      * Click on **Component Attribute**, select the saved **Data source** and enable the **Server Side Role Model**.
 
-2. **Lazy-loading of data in groups**
-   * [Click here](https://docs.connexcs.com/apps/page-builder/#steps-to-use-components-in-the-page-builder) to add the Data Grid component.
-   pag1.png
-   * Click on **Form Attribute :material-menu-right: Data source (Setting) :material-menu-right: Add data source**.
-   pag2
-   * Select form the various data sources like ScriptForge, Stores, Database, Saved Query, External. Make sure `Whether the form is initialized to send the request` is **disabled**.
-   * In the **Data Processing field :material-menu-right: Before sending the request**, write the following code which will only load finite number of rows (as you want) as you scroll, but won't load the whole dataset.
+        <img src= "/apps/pag4.png" width= "600">
+
+      * Click on `Preview`. You will see that all the data has been auto-loaded in one go (10,000 rows of data). This type of loading is the **Infinite scrolling**.
+        <img src= "/apps/pag5.png" width= "1500">
+
+2.**Lazy-loading of data in groups**
+      * [Click here](https://docs.connexcs.com/apps/page-builder/#steps-to-use-components-in-the-page-builder) to add the Data Grid component.
+        <img src= "/apps/pag1.png">
+      * Click on **Form Attribute :material-menu-right: Data source (Setting) :material-menu-right: Add data source**.
+        <img src= "/apps/pag2.png">
+      * Select form the various data sources like ScriptForge, Stores, Database, Saved Query, External. Make sure `Whether the form is initialized to send the request` is **disabled**.
+      * In the **Data Processing field :material-menu-right: Before sending the request**, write the following code which will only load finite number of rows (as you want) as you scroll, but won't load the whole dataset.
 
     ```js
     args.off = args.startRow
@@ -234,12 +236,12 @@ This is achieved through the following mechanisms:
     return config;
     ```
 
-   * Click on `Save`.
-   <img src= "/apps/pag6.png">
-   * Click on **Component Attribute**, select the saved **Data source** and enable the **Server Side Row Model**.
-   pag4.
-   * Click on `Preview`. You will see that all the data hasn't been auto-loaded instead only 100 rows of data is loading at a time. This type of loading is the **Lazy-loading in groups**.
-   <img src= "/apps/pag7.png">.
+      * Click on `Save`.
+        <img src= "/apps/pag6.png">
+      * Click on **Component Attribute**, select the saved **Data source** and enable the **Server Side Row Model**.
+        <img src= "/apps/pag4.png" width= "600">
+      * Click on `Preview`. You will see that all the data hasn't been auto-loaded instead only 100 rows of data is loading at a time. This type of loading is the **Lazy-loading in groups**.
+        <img src= "/apps/pag7.png" width= "1500">.
 
 ## First time User?
 
