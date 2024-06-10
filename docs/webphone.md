@@ -64,7 +64,7 @@ Navigate using the following sections in the footer menu at the bottom of Web Ph
 
 ConnexCS **Web Phone** needs the following two domains to function efficiently:
 
-1. **Web Server (Domain A):** This location hosts the phone, and the customers receives the URL. Create a CNAME on your domain, such as `webphone.yourdomain.com`, and point it to our web server at `webphone.connexcs.com` (responsible for web services, and yes, this is the same as the customer portal).
+1. **Web Server (Domain A):** This location hosts the phone, and the customers receives the URL. Create a CNAME on your domain, such as `webphone.yourdomain.com`, and point it to our web server at `webphone.connexcs.com` (responsible for web services).
 2. **SIP Switch (Domain B):** Create the WebRTC domain and it's CNME should point towards the [DNS you create](https://docs.connexcs.com/setup/settings/dns/).
 
    2.1 Navigate to **Setup :material-menu-right: Settings :material-menu-right: DNS :material-menu-right:** to create your DNS.
@@ -77,7 +77,7 @@ It's recommended to setup a DNS (Domain Name System) record within ConnexCS, the
 
 ### Create Certificates
 
-After you configure the domains, verify the certificates in **Setup :material-menu-right: Information :material-menu-right: Certificates:
+After you configure the domains, verify the certificates in **Setup :material-menu-right: Information :material-menu-right: Certificates**:
 
 * If the domain isn't listed, click on `Add Certificate` and provide your domain name.
 * If the certificates get listed but they don't have an issue or expiry date, click on "Refresh Certificates." This may take up to 10 minutes to complete.
