@@ -135,7 +135,7 @@ Some of the most common methods include:
 | **Name**|**Description**|**Icon**|
 |---------|---------------|--------|
 |**ID**| The editor component's unique identifier |<img src= "/apps/components/img/input_id.png">|
-|**Name**| [**Optional**] The display name of the editor field|<img src= "/apps/components/img/input_name.png">|
+|**Name**| [**Optional**] The display name of the editor field|<img src= "/apps/components/img/checkbox_name.png">|
 |**Width**| [**Optional**] Width of the field|<img src= "/apps/components/img/input_width.png">|
 |**Label Width**|Width of the label associated with the editor field. It determines the horizontal space occupied by the label text|<img src= "/apps/components/img/input_labelwidth1.png">|
 |**Label Wrap**| If the label is longer than the allowed width the text will continue on another line|<img src= "/apps/components/img/input_labelwrap1.png">|
