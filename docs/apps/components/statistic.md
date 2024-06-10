@@ -65,7 +65,7 @@ Some of the most common methods include:
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/input2.png">
+<img src= "/apps/components/img/statistic1.png">
 
 !!! Example
     1. `this.addClassName(fields, className)`
@@ -136,10 +136,10 @@ Some of the most common methods include:
 | **Name**|**Description**|**Icon**|
 |---------|---------------|--------|
 |**ID**| The statistic component's unique identifier |<img src= "/apps/components/img/input_id.png">|
-|**Name**| [**Optional**] The display name of the statistic field|<img src= "/apps/components/img/input_name.png">|
+|**Name**| [**Optional**] The display name of the statistic field|<img src= "/apps/components/img/checkbox_name.png">|
 |**Label Width**|Width of the label associated with the statistic field. It determines the horizontal space occupied by the label text|<img src= "/apps/components/img/input_labelwidth1.png">|
-|**Prefix**|Sets the prefix (before) of a number|<img src= "/apps/components/img/stat_prefix.png">|
-|**Suffix**|Sets the suffix (after) of a number|<img src= "/apps/components/img/stat_suffix.png">|
+|**Prefix**|Sets the prefix (before) of a number|<img src= "/apps/components/img/sta_prefix.png">|
+|**Suffix**|Sets the suffix (after) of a number|<img src= "/apps/components/img/sta_suffix.png">|
 |**Default Value**| The default value which is filled in the field before the user changes it|<img src= "/apps/components/img/input_defaultvalue.png">|
 |**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://docs.connexcs.com/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** action to hide the field. <br> Enable **Disabled** action to make the field unusable|<img src= "/apps/components/img/checkbox_attributeaction.png">|
