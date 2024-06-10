@@ -57,8 +57,7 @@ You can use focus and blur events to perform a variety of actions, such as:
 |`this.hide`|Hides the field|`(fields: String`&#124;`String[])`|
 |`this.show`|Displays the field|`(fields: String`&#124;`String[])`|
 |`this.disable`| Disable input field from user interaction|`(fields: String`&#124;`String[])`|
-|`this.enable`| Enable input field from user interaction|`(fields: String`&#124;`String[])`|
-`(Value: Object)` {'field-id': 'field-value'}|
+|`this.enable`| Enable input field from user interaction|`(fields: String`&#124;`String[])`; `(Value: Object) {'field-id': 'field-value'}`|
 |`this.getValue`|Get A Value From a component|`(fieldName: String)`|
 |`this.setData`|Set the data in the field. The Value object should be of type { componentId: componentValue }|`(Value: Object)`|
 
@@ -161,7 +160,7 @@ You can use focus and blur events to perform a variety of actions, such as:
 |**Text Prompt**| A description to aid the user when completing the field|<img src= "/apps/components/img/input_textprompt.png">|
 |**Max Length**| Limit the amount of characters the field supports|<img src= "/apps/components/img/input_maxlength.png">|
 |**Default Value**| The default value which is filled in the field before the user changes it|<img src= "/apps/components/img/input_defaultvalue.png">|
-|**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
+|**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://docs.connexcs.com/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** action to hide the field. <br> Enable **Disabled** action to make the field unusable. <br>Enable **Show Clear button** action to make the clear button visible. <br> Enable **Show Password** action make the password visible. <br>Enable **Show word count** action make the word count visible|<img src= "/apps/components/img/input_attributeaction.png">|
 |**Action Settings**|Click on the drop-down to select the pre-defined methods you wish to apply to your component. In this case, you can choose either **mounted** or **refresh** for `onChange`, `onFocus`, or `onBlur`|<img src= "/apps/components/img/input_ac.png">|
 

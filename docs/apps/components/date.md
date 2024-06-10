@@ -204,7 +204,7 @@ Examples may include:
 |**Placeholder**| The short hint is displayed in the input field before the user enters a value|<img src= "/apps/components/img/input_placeholder.png">|
 |**Format**| You can decide the format of your date like **YYYY-MM-DD** or **DD/MM/YY**|<img src= "/apps/components/img/date_format.png">|
 |**Default Value**|Specifies the initial value that's displayed in the date field when the form is loaded|<img src= "/apps/components/img/date_defaultvalue.png">|
-|**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
+|**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://docs.connexcs.com/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br>Enable **Read Only** to make the field non-editable. <br>Enable **Disabled** action to make the field unusable. <br> Enable **Text box is editable** to allow users to manually type in a date value instead of only selecting from the date picker. <br>Enable **Show Clear button** action to make the clear button visible|<img src= "/apps/components/img/date_attributeaction.png">|
 |**Action Settings**|Click on the drop-down to select the pre-defined methods you wish to apply to your component. In this case, you can choose either **mounted** or **refresh** for `onChange`, `onFocus`, or `onBlur`|<img src= "/apps/components/img/input_ac.png">|
 

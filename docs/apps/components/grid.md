@@ -103,7 +103,7 @@ Examples may include:
 |**Flex Layout**| [**Optional**] Allows flexibility to arrange the various components inside the grid|<img src= "/apps/components/img/grid_flexlayout.png">|
 |**Horizontal Arrangement**|Select from various options **Start**, **End**, **Center**, **Space Around**, **Space Between** for horizontal arrangement of the components inside the grid|<img src= "/apps/components/img/grid_horizontal.png">|
 |**Vertical Arrangement**|Select from various options **Top**, **Middle**, **Bottom** for vertical arrangement of the components inside the grid|<img src= "/apps/components/img/grid_vertical4.png">|
-|**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
+|**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://docs.connexcs.com/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Hidden** action to hide the field|<img src= "/apps/components/img/alert_arrtibuteaction.png">|
 
 ## First time User?
