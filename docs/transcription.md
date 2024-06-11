@@ -1,6 +1,6 @@
 # Transcription
 
-Global :material-menu-right: Transcription
+**Global :material-menu-right: Transcription**
 
 ## Introduction
 
@@ -19,13 +19,14 @@ To enable the Transcription feature on your account, navigate to **Setup :materi
 <img src="/transcription/img/transcription-enable-transcriptions.png" enable transcription="package" width="100"/>
 
 !!! Note
-    You can find the pricing of the Transcription service here: **Setup :material-menu-right: Settings :material-menu-right: Account**
+    You can find the **Pricing** of the Transcription service here: **Setup :material-menu-right: Settings :material-menu-right: Account**
 
 !!! Warning
     Please contact us for assistance and enable the transcription service if you are unable to find the **Enable Transcription** option.
 
 !!! Info
     Please take note that there is **no fee** for **silence**.
+
     It implies that if a call lasts for 50 seconds and no audio is exchanged for 20 seconds, we will make every effort to cut out the silence from the audio and bill you for 30 seconds of transcribing service.
 
 ### Create a Transcription Package
@@ -49,9 +50,9 @@ Click on <img src="/transcription/img/transcriptions-save.png" alt="save" width=
 Once this service has been [enabled on your account](https://docs.connexcs.com/transcription/#enable-transcription), you can follow the steps below to enable this for your customers:
 
 1. Navigate to **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Routing :material-menu-right: Ingress Routing `+` icon :material-menu-right: Media :material-menu-right: Transcribe**.
-2. From the drop-down you can select from multiple options like Disabled, **1% Sampling**, **5% Sampling**, **25% Sampling**, **50% Sampling** and **Enabled (Always On)**.
+2. From the drop-down you can select from multiple options like **Disabled**, **1% Sampling**, **5% Sampling**, **25% Sampling**, **50% Sampling** and **Enabled (Always On)**.
 
-!!! Note
+!!! Info
     Out of all the calls that are accessible, **% Sampling** indicates the proportion of calls that will be transcribed.
 
 <img src="/transcription/img/trans1.png" alt="enable" width="900"/>
@@ -62,9 +63,9 @@ Once this service has been [enabled on your account](https://docs.connexcs.com/t
 
 4.You will see 3 options:
 
-* **Select**: Select from query profiles built using the [Transcription Query Profile](https://docs.connexcs.com/transcription/#saved-queries).
+* **Select**: Select from query profiles built using the [Transcription Query Profile](https://bani-transcription--connexcs-docs.netlify.app/transcription/#transcription-query-profile).
 * **Search**: Allows you to search things like the **Call ID**, **Phrases** etc. [Click here](https://docs.connexcs.com/transcription/#search-transcriptions) to know more.
-* [Transcription Query Profile](https://docs.connexcs.com/transcription/#saved-queries)
+* [Transcription Query Profile](https://bani-transcription--connexcs-docs.netlify.app/transcription/#transcription-query-profile).
 
 5.The columns in the field include:
 
@@ -73,7 +74,7 @@ Once this service has been [enabled on your account](https://docs.connexcs.com/t
 * **Customer Name**: Name of the customer whose transcription is displayed.
 * **Text**: Sentences of the transcribed call.
 * **Leg**: Assigns `0` value to caller, `1` to the callie.
-* **Score**: [Click here](https://docs.connexcs.com/transcription/#search-transcriptions)
+* **Score**: While searching for the relevance of a document, the system rates it and assigns a score; this helps return the documents that best match the search criteria.
 
 ## Search Transcriptions
 
@@ -123,10 +124,12 @@ To create the query list, please follow the steps below:
 5. Form the **Visibility** drop-down you can either select **Public** or **Private**. Its a privacy setting that allows you to decide if you want your customers to be able to see (and use) the query that you have saved. **Public** will allow your customers to see this; **Private** will keep it hidden from them.
 
     For example, you can choose **Customer Name** : **None** and **Visibility** as **Public** if you want every one of your customers to see the list.
+
 6.**Action**: Allows you to either [**Trigger Alert**](https://docs.connexcs.com/transcription/#transcription-alerts) when the phrase is detected or **Hangup** the call if that particular phrase is detected in the call.
+
 7.Click `Save`.
 
-<img src="/transcription/img/trans3.png" alt="enable" width="900"/>
+<img src="/transcription/img/trans3.png"/>
 
 #### Transcription Alerts
 
@@ -140,7 +143,7 @@ Please follow the below steps to add the Alerts:
 2. Enter the **Title** of the alert.
 3. Enter the **E-mail/Phone Number** you wish to receive the alert message.
 4. Select the **Area** as **Transcription**. For example, this alert can be used to inform Customer1 that their account has been disabled.
-5. You can also select the **Penalty** as soon as the alert triggers. This option will disable the customer's account for 1 minute, 5 minutes, 15 minutes, 1 Hour, 1 Day, 1 Year or just use the **Disabled** option for not using the penalty option.
+5. You can also select the **Penalty** as soon as the alert triggers. This option will disable the customer's account for **1 minute**, **5 minutes**, **15 minutes**, **1 Hour**, **1 Day**, **1 Year** or just use the **Disabled** option for not using the penalty option.
 6. You can also select the **Template** from the drop-down. For example, you can use this template to alert the admin/manager that Customer1's account has been disabled.
 
 <img src="/transcription/img/trans4.png" alt="transcription" width="900"/>
@@ -281,7 +284,3 @@ It takes the document text and your search query as input and returns an excerpt
     |iPhone 14 Pro Max| Powerful A16 Bionic chip and an advanced triple-**smartphone camera** system for capturing stunning photos and cinematic-quality videos|
     |Samsung Galaxy S23 Ultra|Exceptional **camera** experience with a 108MP main sensor and advanced zoom capabilities. Long-lasting battery and S Pen support|
     |Google Pixel 7 Pro|Next-generation Google Tensor chip for intelligent photography features. Compact design and a beautiful display. Smartphone Case Protects your phone and includes a wide-angle **lens** attachment|
-
-### Score
-
-While searching for the relevance of a document, the system rates it and assigns a score; this helps return the documents that best match the search criteria.
