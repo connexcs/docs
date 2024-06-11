@@ -29,23 +29,7 @@ To enable the Transcription feature on your account, navigate to **Setup :materi
 
     It implies that if a call lasts for 50 seconds and no audio is exchanged for 20 seconds, we will make every effort to cut out the silence from the audio and bill you for 30 seconds of transcribing service.
 
-### Create a Transcription Package
-
-To create a package to resell to your customers, go to Config :material-menu-right: [Packages](https://docs.connexcs.com/customer/package/). Click on <img src="/transcription/img/transcription-add.png" alt="add" width="50"/> and choose your Transcription Package from **ConnexCS Package**.
-
-Select your **Retail Cost** and click on <img src="/transcription/img/transcriptions-save.png" alt="save" width="120"/> and choose your Transcription Package from **ConnexCS Package**.
-
-<img src="/transcription/img/transcription-package.png" alt="package" width="500"/>
-
-### Automated Transcriptions
-
-Add Package to Customers Account, assign the **Quantity**, and also assign a **Start Date** and **End date** to the package. At the End Date, the package will automatically stop working.
-
-<img src="/transcription/img/transcriptions-automated-transcriptions.png" alt="automated transcript" width="400"/>
-
-Click on <img src="/transcription/img/transcriptions-save.png" alt="save" width="120"/>, and the package will be available with the customer.
-
-#### Add Transcription Service for your Customer
+### Add Transcription Service for your Customer
 
 Once this service has been [enabled on your account](https://docs.connexcs.com/transcription/#enable-transcription), you can follow the steps below to enable this for your customers:
 
@@ -59,7 +43,7 @@ Once this service has been [enabled on your account](https://docs.connexcs.com/t
 
 3.Navigate to **Global :material-menu-right: Transcription**. You will be able to seen the screen as shown below.
 
-<img src="/transcription/img/trans2.png" alt="enable" width="900"/>
+<img src="/transcription/img/trans2.png"/>
 
 4.You will see 3 options:
 
@@ -75,6 +59,22 @@ Once this service has been [enabled on your account](https://docs.connexcs.com/t
 * **Text**: Sentences of the transcribed call.
 * **Leg**: Assigns `0` value to caller, `1` to the callie.
 * **Score**: While searching for the relevance of a document, the system rates it and assigns a score; this helps return the documents that best match the search criteria.
+
+### Create a Transcription Package
+
+To create a package to resell to your customers, go to Config :material-menu-right: [Packages](https://docs.connexcs.com/customer/package/). Click on <img src="/transcription/img/transcription-add.png" alt="add" width="50"/> and choose your Transcription Package from **ConnexCS Package**.
+
+Select your **Retail Cost** and click on <img src="/transcription/img/transcriptions-save.png" alt="save" width="120"/> and choose your Transcription Package from **ConnexCS Package**.
+
+<img src="/transcription/img/transcription-package.png" alt="package" width="500"/>
+
+### Automated Transcriptions
+
+Add Package to Customers Account, assign the **Quantity**, and also assign a **Start Date** and **End date** to the package. At the End Date, the package will automatically stop working.
+
+<img src="/transcription/img/transcriptions-automated-transcriptions.png" alt="automated transcript" width="400"/>
+
+Click on <img src="/transcription/img/transcriptions-save.png" alt="save" width="120"/>, and the package will be available with the customer.
 
 ## Search Transcriptions
 
