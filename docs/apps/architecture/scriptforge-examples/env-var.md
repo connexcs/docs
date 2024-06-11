@@ -1,4 +1,4 @@
-# How to use Environmental Variable in ScriptForge
+# How to use Environmental Variables in ScriptForge
 
 ## Abstract
 
