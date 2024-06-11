@@ -129,7 +129,7 @@ To create the query list, please follow the steps below:
 
 7.Click `Save`.
 
-<img src="/transcription/img/trans3.png" width= "600"/>
+<img src="/transcription/img/trans3.png" width= "200"/>
 
 #### Transcription Alerts
 
