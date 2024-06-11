@@ -270,7 +270,22 @@ nav:
         - Domain: apps/architecture/domain.md
         - Key Value Store: apps/architecture/key-value.md
         - Page Builder: apps/page-builder.md
-        - Script Forge: apps/architecture/script.md
+        - ScriptForge: apps/architecture/script.md
+        - ScriptForge Examples:
+            - Environmental Variables in ScriptForge: apps/architecture/scriptforge-examples/env-var.md
+            - ScriptForge with Class 5 Programmable Voice: apps/architecture/scriptforge-examples/class5.md
+            - Class 4 Routing with ScriptForge: apps/architecture/scriptforge-examples/class4-routing.md
+            - Third Party Libraries: apps/architecture/scriptforge-examples/third-lib.md
+            - Introspection: apps/architecture/scriptforge-examples/introspection.md
+            - App vs Script: apps/architecture/scriptforge-examples/app-script.md
+            - IVR in Programmable Voice: apps/architecture/scriptforge-examples/ivr.md
+            - ASR, TTS, LLM in Programmable Voice: apps/architecture/scriptforge-examples/asr-tts-llm.md
+            - Echo Test in Programmable Voice: apps/architecture/scriptforge-examples/echotest.md
+            - Job Queue: apps/architecture/scriptforge-examples/jobqueue.md
+            - Pub-Sub: apps/architecture/scriptforge-examples/pub-sub.md
+            - Echo Test in Programmable Voice: apps/architecture/scriptforge-examples/echotest.md
+            - Key Value Store: apps/architecture/scriptforge-examples/key-value.md
+                     
         - Template: apps/architecture/template.md
         - Query Builder: apps/architecture/query-builder.md
         - Pub / Sub Bus: apps/architecture/pub-sub.md
