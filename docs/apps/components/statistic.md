@@ -8,7 +8,7 @@ The **Statistic** allows you to display values/numbers.
 
 ## Use Case
 
-1. Highlight a **number or a group of numbers**, such as **statistical value**, **amount**, and **ranking**, you can add elements such as icon and unit before and after the number and title.
+1. Highlight a **number or a group of numbers**, such as **statistical value**, **amount**, and **ranking**.
 2. Countdown component, support to add other components control countdown.
 3. Card usage display, can be freely combined.
 
