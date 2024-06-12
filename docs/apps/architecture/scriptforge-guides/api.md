@@ -95,8 +95,8 @@ In this case the ScriptForge is accessible on the Customer Portal.
 * Access through **Script UUID**
 https://portal.test.connexcs.com/api/3a11fc52-c1d2-11ee-8e2d-0cc47aa90192/checkItem
 
-<img src= "/apps/img/api4.png" width= "750">
+<img src= "/apps/img/api4.png" width= "900">
 
 https://portal.test.connexcs.com/api/3a11fc52-c1d2-11ee-8e2d-0cc47aa90192/main
 
-<img src= "/apps/img/api5.png" width= "750">
+<img src= "/apps/img/api5.png" width= "900">
