@@ -176,7 +176,8 @@ It allows you to customize the appearance of data to improve readability, highli
 
 7.**Charts**
 
-!!! note To use the Charts option, first enable the *Enable Range Selection* option. Click on *Preview*, select the values on the grid, right-click on the selected the area then Charts. Below are further filters you can apply on the charts under Column Config.
+!!! Info
+    To use the Charts option, first enable the **Enable Range Selection** option. Click on **Preview**, select the values on the grid, right-click on the selected the area then Charts. Below are further filters you can apply on the charts under Column Config.
 
    * **Charts Data Type**:
 
@@ -190,6 +191,72 @@ It allows you to customize the appearance of data to improve readability, highli
 
 <img src= "/apps/components/img/datagrid_charts.png" width="400">
 
+## Pagination
+
+**Pagination** is a user interface design pattern that organizes content or large data sets into separate pages, each displaying a limited number of items.
+By doing so, it enhances user navigation and improves application performance.
+
+### Server Side Row Model (Server Side Pagination)
+
+When handling substantial amounts of data, applications often employ pagination to assist users in navigating through the information.
+
+The **Server-Side Row Model (SSRM)** enables applications to manage extensive datasets by employing lazy-loading techniques.
+
+This is achieved through the following mechanisms:
+
+1. **Infinite scrolling**: It loads additional data as the user scrolls through the application.
+2. **Lazy loading from group rows**: You can decide how much data you wish to see like 10 rows of data or 100 rows of data.
+
+#### How to use it with Datagrid?
+
+1. **Infinite Scrolling**
+      * [Click here](https://docs.connexcs.com/apps/page-builder/#steps-to-use-components-in-the-page-builder) to add the Data Grid component.
+        <img src= "/apps/pag1.png">
+      * Click on **Form Attribute :material-menu-right: Data source (Setting) :material-menu-right: Add data source**.
+        <img src= "/apps/pag2.png" width= "250">
+      * Select form the various data sources like ScriptForge, Stores, Database, Saved Query, External. Make sure you have enabled `Whether the form is initialized to send the request` (for auto-loading the data source). Click on `Save`.
+        <img src= "/apps/pag3.png">
+      * Click on **Component Attribute**, select the saved **Data source** and enable the **Server Side Row Model**.
+
+        <img src= "/apps/pag4.png" width= "250">
+
+      * Click on `Preview`. You will see that all the data has been auto-loaded in one go (10,000 rows of data). This type of loading is the **Infinite scrolling**.
+
+        <img src= "/apps/pag5.png" width= "2000">
+
+2.**Lazy-loading of data in groups**
+
+* [Click here](https://docs.connexcs.com/apps/page-builder/#steps-to-use-components-in-the-page-builder) to add the Data Grid component.
+
+<img src= "/apps/pag1.png">
+
+* Click on **Form Attribute :material-menu-right: Data source (Setting) :material-menu-right: Add data source**.
+
+<img src= "/apps/pag2.png" width= "250">
+
+* Select form the various data sources like ScriptForge, Stores, Database, Saved Query, External. Make sure `Whether the form is initialized to send the request` is **disabled**.
+
+* In the **Data Processing field :material-menu-right: Before sending the request**, write the following code which will only load finite number of rows (as you want) as you scroll, but won't load the whole dataset.
+
+```js
+args.off = args.startRow
+args.pager = args.startRow - args.endRow
+return config;
+```
+
+* Click on `Save`.
+
+<img src= "/apps/img/pag61.png">
+
+* Click on **Component Attribute**, select the saved **Data source** and enable the **Server Side Row Model**.
+
+<img src= "/apps/pag4.png" width= "250">
+
+* Click on `Preview`. You will see that all the data hasn't been auto-loaded instead only 100 rows of data is loading at a time. This type of loading is the **Lazy-loading in groups**.
+  
+<img src= "/apps/pag7.png" width= "2000">
+
 ## First time User?
 
 If you are using the Page Builder components on the ConnexCS platform for the first time, we request you to use our guide on <a href="https://docs.connexcs.com/apps/page-builder/#steps-to-use-components-in-the-page-builder" target="_blank">steps to use the Components</a>.
+
