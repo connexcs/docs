@@ -17,3 +17,8 @@ You can also use any custom domain.
 3. Select the App and enter the domain where the App will be visible and accessible.
 4. Click `Save`.
 <img src= "/apps/img/domain2.png">
+
+!!! Note "Custom Domain"
+    If you want to setup your custom domain or your own domain for `app.mycustomdomain.com` for the Apps Platform, then you need to point your custom name as a `CNAME` record to `cnx.page`.
+
+    Custom Domain can be setup for any application you build using our Apps Platform. 
