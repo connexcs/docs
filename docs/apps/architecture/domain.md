@@ -18,7 +18,8 @@ You can also use any custom domain.
 4. Click `Save`.
 <img src= "/apps/img/domain2.png">
 
-!!! Note "Custom Domain"
-    If you want to setup your custom domain or your own domain for `app.mycustomdomain.com` for the Apps Platform, then you need to point your custom name as a `CNAME` record to `cnx.page`.
+### Custom Domain
 
-    Custom Domain can be setup for any application you build using our Apps Platform. 
+If you want to setup your custom domain or your own domain for `app.mycustomdomain.com` for the Apps Platform, then you need to point your custom name as a `CNAME` record to `cnx.page`.
+
+Custom Domain can be setup for any application you build using our Apps Platform. 
