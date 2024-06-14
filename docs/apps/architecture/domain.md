@@ -28,7 +28,7 @@ Enter the domain name where your app will be displayed. You also have the option
     1. The created domain should have the name "domain" as shown in the image below.
     2. The created user-interface in the **Page Builder** should have the **name** as **index**.
 
-    <img src= "/apps/img/custom1.png" width= "400">
+    <img src= "/apps/img/custom1.png" width= "275">
     <img src= "/apps/img/custom2.png" width= "400">
 
 ### Custom Domain
