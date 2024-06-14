@@ -84,7 +84,7 @@ The **Inline** layout approach allows for a more compact and organized form layo
 |---------|---------------|--------|
 |**ID**| The inline component's unique identifier |<img src= "/apps/components/img/input_id.png">|
 |**Space Size**| It's the space between the components. Adjust the size using keys [**Optional**] |<img src= "/apps/components/img/inline_spacesize.png">|
-|**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
+|**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://docs.connexcs.com/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Hidden** action to hide the field|<img src= "/apps/components/img/alert_arrtibuteaction.png">|
 
 ## First time User?

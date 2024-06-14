@@ -158,8 +158,9 @@ Examples mat include:
 |**Enable the control buttons**|Enable this option for the user to increment or decrement the value|<img src= "/apps/components/img/number_enable.png">|
 |**Position of the control buttons**| Place the control button on both sides or on the right of the number component|<img src= "/apps/components/img/number_position.png">|
 |**Default Value**| The default number which is filled in the field before the user changes it|<img src= "/apps/components/img/number_default.png">|
-|**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
+|**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://docs.connexcs.com/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** action to hide the field. <br> Enable **Disabled** action to make the field unusable|<img src= "/apps/components/img/checkbox_attributeaction.png">|
+|**Action Settings**|Click on the drop-down to select the pre-defined methods you wish to apply to your component. In this case, you can choose either **mounted** or **refresh** for `onChange`, `onFocus`, or `onBlur`|<img src= "/apps/components/img/input_ac.png">|
 
 ### Validation
 

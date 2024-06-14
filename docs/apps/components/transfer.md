@@ -107,8 +107,9 @@ It's commonly used to create interactive selections, manage data assignments, or
 |**Searchable**| Make the Source and Target options searchable|<img src= "/apps/components/img/transfer_searchable.png">|
 |**Option**|Choose either **Static** or **Dynamic** way of adding data to the options of the Transfer <br><br>**Static data** refers to a fixed set of options that are pre-defined and loaded into the transfer at the time of initialization</br></br> **Dynamic data** are options fetched as needed from sources like databases or APIs. The transfer updates choices based on user selections. You select from **Data source** which refers to the origin of the data; **Function** which refers to the code that manipulates the data, and **Assigned Value** which refers to the specific value stored or associated with a data element|<img src= "/apps/components/img/checkbox_static.png"> <img src= "/apps/components/img/checkbox_dynamic.png">|
 |**Titles**|Change the titles of your transfer lists|<img src= "/apps/components/img/transfer_titles.png">|
-|**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
+|**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://docs.connexcs.com/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** action to hide the field. <br> Enable **Disabled** action to make the field unusable.|<img src= "/apps/components/img/transfer_attributeaction.png">|
+|**Action Settings**|Click on the drop-down to select the pre-defined methods you wish to apply to your component. In this case, you can choose either **mounted** or **refresh** for `onChange`|<img src= "/apps/components/img/radio_ac.png">|
 
 ### Validation
 
