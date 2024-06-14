@@ -41,17 +41,19 @@ Once this service has been [enabled on your account](https://docs.connexcs.com/t
 
 <img src="/transcription/img/trans1.png" alt="enable" width="900"/>
 
-3.Navigate to **Global :material-menu-right: Transcription**. You will be able to see the screen as shown below.
+3.**Transcription Duration**: You can set a maximum recording time (in seconds) for your transcription. Please note, the recording will stop at the specified time, even if mid-sentence.
+
+4.Navigate to **Global :material-menu-right: Transcription**. You will be able to see the screen as shown below.
 
 <img src="/transcription/img/trans2.png"/>
 
-4.You will see 3 options:
+5.You will see 3 options:
 
 * **Select**: Select from query profiles built using the [Transcription Query Profile](https://bani-transcription--connexcs-docs.netlify.app/transcription/#transcription-query-profile).
 * **Search**: Allows you to search things like the **Call ID**, **Phrases** etc. [Click here](https://docs.connexcs.com/transcription/#search-transcriptions) to know more.
 * [Transcription Query Profile](https://bani-transcription--connexcs-docs.netlify.app/transcription/#transcription-query-profile).
 
-5.The columns in the field include:
+6.The columns in the field include:
 
 * **Call ID**: Particular Call ID.
 * **Date**: Date of the call.
