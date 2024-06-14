@@ -12,10 +12,13 @@ You can also use any custom domain.
 
 1. Login to your account.
 2. Navigate to **IDE** :material-menu-right: `+` sign :material-menu-right: **Domain**.
+
 <img src= "/apps/img/domain1.png" width= "350">
 
-3. Select the App and enter the domain where the App will be visible and accessible.
-4. Click `Save`.
+3.Select the App and enter the domain where the App will be visible and accessible.
+
+4.Click `Save`.
+
 <img src= "/apps/img/domain2.png">
 
 ### Custom Domain

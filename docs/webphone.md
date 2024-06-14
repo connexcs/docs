@@ -72,6 +72,12 @@ ConnexCS **Web Phone** needs the following two domains to function efficiently:
 
 It's recommended to setup a DNS (Domain Name System) record within ConnexCS, then point a CNAME on your domain to the ConnexCS setup domain.
 
+#### Custom Domain
+
+If you want to setup your custom domain or your own domain for `app.mycustomdomain.com` for the Apps Platform, then you need to point your custom name as a `CNAME` record to `cnx.page`.
+
+Custom Domain can be setup for any application you build using our Apps Platform.
+
 ### Create Certificates
 
 After you configure the domains, verify the certificates in **Setup :material-menu-right: Information :material-menu-right: Certificates:

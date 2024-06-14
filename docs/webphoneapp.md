@@ -95,6 +95,12 @@ To setup WebRTC on a server:
 !!! tip "AnyEdge and WebRTC"
     If you are using AnyEdge, you can enable WebRTC automatically by adding a domain name to your AnyEdge Domain.
 
+#### Custom Domain
+
+If you want to setup your custom domain or your own domain for `app.mycustomdomain.com` for the Apps Platform, then you need to point your custom name as a `CNAME` record to `cnx.page`.
+
+Custom Domain can be setup for any application you build using our Apps Platform.
+
 ### Step 5: Configuring (Optional Step)
 
 1. Go to **IDE :material-menu-right: WebPhone :material-menu-right: Environmental variables**.
