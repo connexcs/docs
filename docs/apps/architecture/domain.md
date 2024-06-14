@@ -19,7 +19,7 @@ You can also use any custom domain.
 
 4.Click `Save`.
 
-<img src= "/apps/img/domain2.png">
+<img src= "/apps/img/domain2.png" width= "350">
 
 ### Custom Domain
 
