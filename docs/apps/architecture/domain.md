@@ -25,7 +25,7 @@ Enter the domain name where your app will be displayed. You also have the option
 
 !!! Warning
     For your application to be visible on the created domain, make sure you take care of the following things:
-    
+
     1. The created domain should have the name "domain" as shown in the image below.
 
     2. The created user-interface in the **Page Builder** should have the **name** as **index**.
