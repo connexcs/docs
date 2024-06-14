@@ -309,7 +309,7 @@ The CLI selection is TIME DETERMINISTIC. It means that the system chooses a CLI 
 
 4.Follow steps 1 and 2.
 
-5.Navigate to **Management :material-menu-right: Customer :material-menu-right: Customer [Name] :material-menu-right: Routing :material-menu-right: Edit :material-menu-right: Config :material-menu-right: Vars<sup>TOML</sup>** and write the below code:
+5.Navigate to **Management :material-menu-right: Customer :material-menu-right: Customer [Name] :material-menu-right: Edit :material-menu-right: Config :material-menu-right: Vars<sup>TOML</sup>** and write the below code:
 
 ```js
 [cli]
