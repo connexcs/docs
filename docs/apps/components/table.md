@@ -80,23 +80,18 @@ Tables provide a structured format for organizing related data within a form. Us
         this.show(fields)
         ```
     
-    5. `this.disable(['fields'])`
-        ```js
-        this.disable(['report_eahnplzw'])
-        ```
-    
-    6. `this.enable(['fields'])`
+    5. `this.enable(['fields'])`
         ```js
         this.enable(['report_eahnplzw'])
         ```
 
-    7.  `this.getComponent('component_ID')`
+    6.  `this.getComponent('component_ID')`
         ```js
         var reportname = this.getComponent('report_eahnplzw');
         console.log('getComponent', reportname);
         ```
     
-    8.  `this.getValues()`
+    7.  `this.getValues()`
         ```js
         var data = this.getValues();
         console.log(data);

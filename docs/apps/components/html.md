@@ -128,7 +128,7 @@ To know more about Handlebars [click here](https://handlebarsjs.com/guide/#html-
         ```js
         this.setData({
         html: "<b style=\"color: red;\">\n\tThis is a HTML5\n</b>" })
-
+        ```
 
 ## Config
 

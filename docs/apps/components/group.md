@@ -108,6 +108,7 @@ Examples may include:
         input: 'hello'
         }
         })
+        ```
 
     8. `this.getValues()`
         ```js

@@ -134,6 +134,7 @@ It offers a clear and efficient way for users to select one of two mutually excl
          {
          "switch_ornfn03c": true,}
         );
+        ```
 
 ## Config
 

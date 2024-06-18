@@ -118,6 +118,7 @@ It's commonly used to create interactive selections, manage data assignments, or
         })
         ```
     10. `this.refreshFieldDataSource`
+        
         `make the function or data as dynamic`
 
 ## Config
