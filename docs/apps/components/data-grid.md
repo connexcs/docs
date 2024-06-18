@@ -38,6 +38,9 @@
 |`this.getValues`|Gets the current values of all fields|`() : Object`|
 |`this.getValue`|Get A Value From a component|`(fieldName: String)`|
 |`this.setData`|Set the data in the field. The Value object should be of type { componentId: componentValue }|`(Value: Object)`|
+|`this.hide`|Hides the field|`(fields: String`&#124;`String[])`|
+|`this.show`|Displays the field|`(fields: String`&#124;`String[])`|
+|`this.refreshFieldDataSource`|Refresh the datasource data bound to the whole page|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of the datagrid in response to user input.
@@ -93,6 +96,19 @@
         }
         )
         ```
+    5. `this.hide(fields)`
+        ```js
+        var fields= ['aggrid_nd93m43c']
+        this.hide(fields)
+        ```
+    
+    6. `this.show(fields)`
+        ```js
+        var fields= ['aggrid_nd93m43c']
+        this.show(fields)
+        ```
+    7. `this.refreshFieldDataSource`
+        `make the function or data as dynamic`
 
 !!! info Add multiple classes
     Use the following syntax to add multiple classes to a component:

@@ -38,6 +38,7 @@
 |`this.show`|Displays the field|`(fields: String`&#124;`String[])`|
 |`this.disable`| Disable link field from user interaction|`(fields: String`&#124;`String[])`|
 |`this.enable`| Enable link field from user interaction|`(fields: String`&#124;`String[])`|
+|`this.getValues`|Gets the current values of all fields|`() : Object`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of the link component in response to user input.
@@ -92,6 +93,12 @@
     6. `this.enable(['fields'])`
         ```js
         this.enable(['link_0t4yixc3'])
+        ```
+    
+    7. `this.getValues()`
+        ```js
+        var data = this.getValues();
+        console.log(data);
         ```
 
 ## Config

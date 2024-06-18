@@ -46,6 +46,8 @@ The **Text-Area** element allows users to write freely across multiple lines, id
 |`this.disable`| Disable text-area field from user interaction|`(fields: String`&#124;`String[])`|
 |`this.enable`| Enable text-area field from user interaction|`(fields: String`&#124;`String[])`|
 |`this.setData`|Set the data in the field. The Value object should be of type { componentId: componentValue }|`(Value: Object)`|
+|`this.getValue`|Get A Value From a component|`(fieldName: String)`|
+|`this.getValues`|Gets the current values of all fields|`() : Object`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of a text-area in response to user input.
@@ -112,6 +114,18 @@ The **Text-Area** element allows users to write freely across multiple lines, id
         ```js
         var textareaname = this.getComponent('textarea_hl6emwsb');
         console.log('getComponent', textareaname);
+        ```
+    
+    9. `this.getValue('fieldName')`
+        ```js
+        var textareanamename = this.getValue('textarea_hl6emwsb');
+        console.log('getValue', textareaname);
+        ```
+    
+    10. `this.getValues()`
+        ```js
+        var data = this.getValues();
+        console.log(data);
         ```
 
 ## Config

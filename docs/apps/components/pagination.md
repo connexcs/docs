@@ -26,6 +26,7 @@ Imagine you have a form with hundreds of items to choose from, like products in 
 |---------|----------------|
 | `onChange (element)`| The onChange event occurs when the value of a field is changed|
 
+
 ### Methods
 
 | **Name**| **Description**|**Parameters**|
@@ -38,6 +39,8 @@ Imagine you have a form with hundreds of items to choose from, like products in 
 |`this.disable`| Disable pagination field from user interaction|`(fields: String`&#124;`String[])`|
 |`this.enable`| Enable pagination field from user interaction|`(fields: String`&#124;`String[])`|
 |`this.getValue`|Get A Value From a component|`(fieldName: String)`|
+|`this.getValues`|Gets the current values of all fields|`() : Object`|
+|`this.setData`|Set the data in the field. The Value object should be of type { componentId: componentValue }|`(Value: Object)`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of the pagination component in response to user input.
@@ -106,6 +109,18 @@ Imagine you have a form with hundreds of items to choose from, like products in 
         console.log('getComponent', pagename);
         ```
 
+    9. `this.getValues()`
+        ```js
+        var data = this.getValues();
+        console.log(data);
+        ```
+
+    10. `this.setData(Value)`
+        ```js
+        this.setData({
+        pagination: 3
+        });
+        ```
 ## Config
 
 | **Name**|**Description**|**Icon**|

@@ -36,6 +36,7 @@ Examples may include:
 |`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String) : Object)`|
 |`this.hide`|Hides the field|`(fields: String`&#124;`String[])`|
 |`this.show`|Displays the field|`(fields: String`&#124;`String[])`|
+|`this.getValues`|Gets the current values of all fields|`() : Object`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of the grid in response to user input.
@@ -87,6 +88,12 @@ Examples may include:
         var gridname = this.getComponent('grid_th1wozzk');
         console.log('getComponent', gridname);
         ```
+    
+    6.  `this.getValues()`
+        ```js
+        var data = this.getValues();
+        console.log(data);
+        ``` 
 
 !!! info Add multiple classes
     Use the following syntax to add multiple classes to a component:

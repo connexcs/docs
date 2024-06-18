@@ -90,6 +90,8 @@ To know more about Handlebars [click here](https://handlebarsjs.com/guide/#html-
 |---------|----------------|--------------|
 |`this.hide`|Hides the field|`(fields: String`&#124;`String[])`|
 |`this.show`|Displays the field|`(fields: String`&#124;`String[])`|
+|`this.getValues`|Gets the current values of all fields|`() : Object`|
+|`this.setData`|Set the data in the field. The Value object should be of type { componentId: componentValue }|`(Value: Object)`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an HTML component in response to user input.
@@ -117,6 +119,16 @@ To know more about Handlebars [click here](https://handlebarsjs.com/guide/#html-
         var fields= ['html_0h6cj3iv']
         this.show(fields)
         ```
+    3. `this.getValues()`
+        ```js
+        var data = this.getValues();
+        console.log(data);
+        ``` 
+    4. `this.setData(Value)`
+        ```js
+        this.setData({
+        html: "<b style=\"color: red;\">\n\tThis is a HTML5\n</b>" })
+
 
 ## Config
 

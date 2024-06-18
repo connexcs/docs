@@ -44,6 +44,10 @@
 |`this.show`|Displays the field|`(fields: String`&#124;`String[])`|
 |`this.disable`| Disable time field from user interaction|`(fields: String`&#124;`String[])`|
 |`this.enable`| Enable time field from user interaction|`(fields: String`&#124;`String[])`|
+|`this.getValue`|Get A Value From a component|`(fieldName: String)`|
+|`this.getValues`|Gets the current values of all fields|`() : Object`|
+|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String) : Object`|
+|`this.setData`|Set the data in the field. The Value object should be of type { componentId: componentValue }|`(Value: Object)`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of the time component in response to user input.
@@ -99,6 +103,28 @@
         ```js
         this.enable(['time_16of90m8'])
         ```
+    
+    7. `this.getValue('fieldName')`
+        ```js
+        var timename = this.getValue('time_16of90m8');
+        console.log('getValue', timename);
+        ```
+    8. `this.getValues()`
+        ```js
+        var data = this.getValues();
+        console.log(data);
+        ```
+    9. `this.getComponent('component_ID')`
+        ```js
+        var timename = this.getComponent('time_16of90m8');
+        console.log('getComponent', timename);
+        ```
+    10. `this.setData(Value)`
+        ```js
+        this.setData(
+         {
+         "time_16of90m8": "10",}
+        );
 
 ## Config
 

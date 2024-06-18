@@ -169,6 +169,8 @@ Here's a general approach to integrating interactivity:
            }
           )
         ```
+    10. `this.refreshFieldDataSource`
+        `make the function or data as dynamic` 
 
 ## Config
 

@@ -43,6 +43,8 @@ Examples may include:
 |`this.getValue`|Get A Value From a component|`(fieldName: String)`|
 |`this.hide`|Hides the field|`(fields: String`&#124;`String[])`|
 |`this.show`|Displays the field|`(fields: String`&#124;`String[])`|
+|`this.setData`|Set the data in the field. The Value object should be of type { componentId: componentValue }|`(Value: Object)`|
+|`this.getValues`|Gets the current values of all fields|`() : Object`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of the group in response to user input.
@@ -98,6 +100,20 @@ Examples may include:
         var groupname = this.getComponent('group_j9o3pb2i');
         console.log('getComponent', groupname);
         ```
+    
+    7. `this.setData(Value)`
+        ```js
+        this.setData({
+        group : {
+        input: 'hello'
+        }
+        })
+
+    8. `this.getValues()`
+        ```js
+        var data = this.getValues();
+        console.log(data);
+        ``` 
 
 !!! info Add multiple classes
     Use the following syntax to add multiple classes to a component:

@@ -56,6 +56,7 @@ It typically provides a self-contained interface for collecting additional infor
 |`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String) : Object`|
 |`this.getValue`|Get A Value From a component|`(fieldName: String)`|
 |`myDialog.open()`|Opens the dialog box on the page|
+|`this.getValues`|Gets the current values of all fields|`() : Object`|
 
 #### Steps to use the methods for the Page Builder components
 
@@ -83,6 +84,11 @@ It typically provides a self-contained interface for collecting additional infor
         ```js
         var myDialog = this.getComponent('dialog_icubvv8x')
         myDialog.open()
+        ```
+    4. `this.getValues()`
+        ```js
+        var data = this.getValues();
+        console.log(data);
         ```
 
 ## Config

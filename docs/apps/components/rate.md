@@ -120,6 +120,14 @@ A **Rate** component allows users to express their level of satisfaction, prefer
         var ratename = this.getComponent('rate_2n2vy8wj');
         console.log('getComponent', ratename);
         ```
+    
+    10. `this.setData(Value)`
+        ```js
+        this.setData({
+        "tabs": 4.5
+        });
+        ```
+
 
 ## Config
 
