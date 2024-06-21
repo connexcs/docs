@@ -2,49 +2,78 @@
 
 ## Abstract
 
-A Class5 feature, and a proof of concept of the **Autonomous Speech Recognition (ASR)**, **Text-to-Speech (TTS)** and **Large Language Model (LLM)** using ConnexCS.
+This Class5 feature serves as a proof of concept for Autonomous Speech Recognition (ASR), Text-to-Speech (TTS), and Large Language Model (LLM) integration using ConnexCS. The system demonstrates how real-time voice interactions can be managed and processed effectively.
 
-Some pre-requisites are required for this system to function:
+## Prerequisites:
 
 1. Google Transcribe
 2. Google Text-to-Speech
 
-* With the help of `await ctx.transcribeStart()}`, the call is transcribed in real time. Sentence splitting is used to transcribing.
-* After the transcription process is completed, it displays the transcribed text using  `ctx.on('transcription', async text => {` and stops the transcription process.
-* Consequently, it will speak the text that you spoke using the **Google Text-To-Speech**
+## Key Features:
 
-!!! Example
-    This capability can be used in a situation where a ChatBot receives audio, interprets it, and responds appropriately. The ChatBot's response will thus be spoken by the **Google TTS**.
+1. **Real-Time Transcription:** Utilizing await ctx.transcribeStart(), the system transcribes incoming calls in real time, with sentence splitting for accurate transcription.
+2. **Transcription Handling:** Upon completion of transcription, the transcribed text is processed within the event listener ctx.on('transcription', async text => {, which then halts the transcription temporarily.
+3. **Text-to-Speech Response:** The system converts the transcribed text into speech using Google Text-to-Speech, providing real-time spoken responses.
+4. **Interactive Voice Conversation:** The transcription process continues in a loop, enabling continuous interaction between the caller and the language model.
+
+## Example Use Case:
+
+This technology can be deployed in scenarios where a ChatBot needs to receive audio input, interpret it using a language model, and respond verbally. The ChatBot's responses are articulated through Google TTS, enabling interactive and autonomous voice communication.
+
+## Code Explanation:
+The JavaScript code defines an asynchronous function, main, which handles a Class 5 telephony application that interacts with a language model for real-time voice interactions. The application, upon receiving a call, answers it and starts transcribing the caller's speech. It logs key events and processes transcribed text by sending it to a language model (via the cxLLM module) to generate responses. These responses are then spoken back to the caller using text-to-speech (TTS) functionality. The transcription process continues in a loop, allowing for an interactive voice conversation. The application waits for the call to end before completing its execution.
 
 ## Libraries
+   * cxLLM: For interacting with a language model.
+   * ctx: A class 5 real-time interface used for managing call actions, logging, transcription, and TTS.
 
 ## Script Example
 
 ``` js title="AI Agent" linenums="1"
-const llm = require('cxLLM')
+// Import the cxLLM module which is used for handling language model interactions
+const llm = require('cxLLM');
+
+// The main function that contains the core logic of the Class 5 Application
 async function main(data, ctx) {
-	let chatId = null;
-	console.log('Starting Class 5 Application')
-	await ctx.answer();
-	await ctx.log(`Enterd 2626`);
+    // Initialize chatId to null; this will be used to maintain the chat session with the language model
+    let chatId = null;
 
-	ctx.on('transcription', async text => {
-		console.log('ScriptForge Transcription:', text);
-		await ctx.transcribeStop();
-		const result = await llm.chat('asst_MTbETp3jyb9tG9eAepFGxgPb', text, chatId);
-		chatId = result.chat_id;
-		await ctx.tts(result.response, { provider: 'google' });
-		await ctx.transcribeStart();
-	});
+    // Log to console that the application is starting
+    console.log('Starting Class 5 Application');
 
-	await ctx.transcribeStart();
+    // Answer the incoming call
+    await ctx.answer();
 
-	//	await ctx.transcribeStop();
+    // Log an informational message to the context
+    await ctx.log(`Entered 2626`);
 
-	return ctx.waitForHangup();
+    // Set up an event listener for transcription events
+    ctx.on('transcription', async text => {
+        // Log the transcribed text to the console
+        console.log('ScriptForge Transcription:', text);
+
+        // Stop transcription temporarily to process the current input
+        await ctx.transcribeStop();
+
+        // Send the transcribed text to the language model chat function, using a specific assistant ID
+        // The chatId is used to maintain context in the conversation
+        const result = await llm.chat('asst_MTbETp3jyb9tG9eAepFGxgPb', text, chatId);
+
+        // Update chatId with the current session's chat ID returned from the language model
+        chatId = result.chat_id;
+
+        // Use text-to-speech to speak out the response from the language model
+        await ctx.tts(result.response, { provider: 'google' });
+
+        // Restart transcription to continue listening for further input
+        await ctx.transcribeStart();
+    });
+
+    // Start transcription to begin capturing audio input for real-time transcription
+    await ctx.transcribeStart();
+
+    // Wait for the call to hang up before completing the script
+    return ctx.waitForHangup();
 }
 
-function sleep(timeout = 5) {
-	return new Promise(resolve => setTimeout(resolve, timeout * 1000))
-}
 ```
