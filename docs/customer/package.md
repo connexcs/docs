@@ -39,7 +39,7 @@ Use **Packages** to offer predefined products and services to each customer.
 
 9.**Free Minutes** and **Destination** are displayed in the Package Details.
 
-10.Click on `Save`
+10.Click on `Save`.
 
 <img src= "/customer/img/free2.png"> 
 

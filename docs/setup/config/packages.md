@@ -47,7 +47,7 @@ Click **`Save`** to make the Package available to assign to customer accounts.
 
 !!! Warning
     Ensure you select **Type** as **Free Minutes** while creating a package to allocate a free minutes bundle to your customers.
-    If you don't select this option, the **Minutes** tab (Cutoomer :material-menu-right: Packages) will not be visible, and you will be unable to allocate free minutes to your customers.
+    If you don't select this option, the **Minutes** tab (Customer :material-menu-right: Packages) won't be visible, and you will be unable to allocate free minutes to your customers.
 
 ## Assign Package
 
