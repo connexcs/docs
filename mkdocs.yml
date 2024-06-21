@@ -8,6 +8,8 @@ theme:
   features:
     - navigation.instant
     - navigation.tabs
+    - content.copy.code
+    - content.code.annotate
   palette:
     - scheme: default
       toggle:
