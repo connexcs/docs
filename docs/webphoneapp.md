@@ -1,5 +1,8 @@
 # WebPhone App
 
+!!! Warning
+    We advise users to switch to this new [App Platform](https://docs.connexcs.com/apps/introduction/) (WebPhone App) as the previous WebPhone development has been put on hold.
+
 # Introduction
 
 The ConnexCS WebPhone Application is fully customizable. It replaces the old legacy Web Phone Application.
@@ -139,5 +142,8 @@ To setup WebRTC on a server:
 2. **Mic Off**: Mute the call.
 3. **Hangup**: Disconnect the call.
 4. **Call Hold**: Hold the call.
+5. **Clipboard**: When you copy something on your computer, it's stored on the clipboard. You can then paste it on the Webphone.
+6. **Log Out** (top-right): Click on this button to sign out of the Webphone.
+7. **Current Call Time**: Displays the duration of the ongoing call.
 
 <img src= "/setup/img/wp9.png" width="300">

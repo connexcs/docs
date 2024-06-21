@@ -1,5 +1,8 @@
 # Webphone
 
+!!! Warning
+    We advise users to switch to the new [App Platform](https://docs.connexcs.com/apps/introduction/) [(WebphoneApp)](https://docs.connexcs.com/webphoneapp/) as this webphone development has been put on hold.
+
 **Setup :material-menu-right: Integrations :material-menu-right: Web Phone**
 
 The ConnexCS **Web Phone** runs directly from a browser without the need to install anything, allowing customers to make calls via the internet using a softphone.
@@ -74,7 +77,7 @@ It's recommended to setup a DNS (Domain Name System) record within ConnexCS, the
 
 ### Create Certificates
 
-After you configure the domains, verify the certificates in **Setup :material-menu-right: Information :material-menu-right: Certificates:
+After you configure the domains, verify the certificates in **Setup :material-menu-right: Information :material-menu-right: Certificates**:
 
 * If the domain isn't listed, click on `Add Certificate` and provide your domain name.
 * If the certificates get listed but they don't have an issue or expiry date, click on "Refresh Certificates." This may take up to 10 minutes to complete.

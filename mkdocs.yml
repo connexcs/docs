@@ -304,6 +304,7 @@ nav:
         - Rate: apps/components/rate.md
         - Select: apps/components/select.md
         - Slider: apps/components/slider.md
+        - Statistic: apps/components/statistic.md
         - Steps: apps/components/steps.md
         - Sub Form: apps/components/sub-form.md
         - Sub Form+: apps/components/sub-form+.md

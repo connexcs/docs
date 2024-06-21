@@ -45,7 +45,7 @@ Some of the examples may include:
 |**Width**| [**Optional**] Width of the I-Frame window|<img src= "/apps/components/img/input_width.png">|
 |**Height**|Height of the I-Frame window|<img src= "/apps/components/img/iframe_height.png">|
 |**URL**|Provide the link for the webpage you wish to display in the I-Frame|<img src= "/apps/components/img/iframe_url.png">|
-|**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
+|**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://docs.connexcs.com/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Hidden** action to hide the field|<img src= "/apps/components/img/alert_arrtibuteaction.png">|
 
 ## First time User?

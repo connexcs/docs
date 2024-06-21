@@ -87,6 +87,7 @@ Add Audio/Video Bi-directional communication for use in:
 |**Default Username**| Username for SIP Authentication|<img src= "/apps/components/img/webphone_username.png">|
 |**Default Password**| Password for SIP Authentication|<img src= "/apps/components/img/webphone_password.png">|
 |**Attribute Action**|Enable **Hidden** action to hide the field|<img src= "/apps/components/img/alert_arrtibuteaction.png">|
+|**Action Settings**|Click on the drop-down to select the pre-defined methods you wish to apply to your component. In this case, you can choose either **mounted** or **refresh** for `onAnswer`, `onRingingOut`, `onRingingIn`, `onEnd`, `onRegistered`, `onUnRegistered` or `onError`|<img src= "/apps/components/img/webphone_ac.png">|
 
 ## First time User?
 
