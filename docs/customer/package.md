@@ -20,6 +20,29 @@ Use **Packages** to offer predefined products and services to each customer.
 !!! info "Managing Packages"
     You can create and manage **Packages** in **Setup :material-menu-right: Config :material-menu-right: Packages**. See **[Packages](https://docs.connexcs.com/setup/config/packages/)** for more information.
 
+### Assign Free Minutes Package
+
+1. Navigate to Setup :material-menu-right: Config :material-menu-right: Packages :material-menu-right: Click on blue `+` icon.
+2. Fill in the details and in the **Type** field select **Free Minutes**.
+3. You may enter the **Destination**. Its an optional field.
+4. Click on `Save` to build your package.
+
+<img src= "/customer/img/free1.png">
+
+5.Navigate to Management :material-menu-right: Customer :material-menu-right: Customer[Name] :material-menu-right: Packages :material-menu-right: Click on blue `+` icon.
+
+6.Select the Package created for allocating free minutes.
+
+7.Fill out the mandatory fields.
+
+8.Allot the number of free minutes to your customers.
+
+9.**Free Minutes** and **Destination** are displayed in the Package Details.
+
+10.Click on `Save`
+
+<img src= "/customer/img/free2.png"> 
+
 ## Run Package
 
 It allows you to simulate the package:
