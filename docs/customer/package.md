@@ -33,10 +33,10 @@ Use **Packages** to offer predefined products and services to each customer.
 
 #### Assign Free Minutes Package
 
-1. Navigate to Management :material-menu-right: Customer :material-menu-right: Customer[Name] :material-menu-right: Packages :material-menu-right: Click on blue `+` icon..Select the Package created for allocating free minutes.
-2. Fill out the mandatory fields.
-3. Allot the number of free minutes to your customers
-4. **Free Minutes** and **Destination** are displayed in the Package Details.
+1. Navigate to Management :material-menu-right: Customer :material-menu-right: Customer[Name] :material-menu-right: Packages :material-menu-right: Click on blue `+` icon
+2. Select the Package created for allocating free minutes.
+3. Fill out the required fields.
+4. Enter the number of free minutes to be allocated to the customer.
 5. Click on `Save`.
 
 <img src= "/customer/img/free2.png"> 
