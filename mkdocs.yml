@@ -36,8 +36,6 @@ plugins:
 
 markdown_extensions:
   - admonition
-  - codehilite:
-      linenums: true
   - toc:
       permalink: true
   - pymdownx.tabbed:
@@ -55,6 +53,12 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - def_list
   - footnotes
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
 
 nav:
   - Cloudswitch:

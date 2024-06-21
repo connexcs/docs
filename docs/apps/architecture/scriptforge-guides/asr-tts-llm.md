@@ -20,7 +20,7 @@ Some pre-requisites are required for this system to function:
 
 ## Script Example
 
-```js
+``` js title="AI Agent" linenums="1"
 const llm = require('cxLLM')
 async function main(data, ctx) {
 	let chatId = null;
