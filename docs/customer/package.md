@@ -22,7 +22,7 @@ Use **Packages** to offer predefined products and services to each customer.
 
 ## Run Package
 
-It allows you to simulate the package:
+It allows you to simulate making a charge against the package:
 
 1. **Customer:** Select the customer you want to run the package for.
 2. **Simulate:** You can select `yes` (it will generate a report) if you want to the run the package or `no` (it will again charge for the package).
