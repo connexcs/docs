@@ -26,15 +26,25 @@ Enter the domain name where your app will be displayed. You also have the option
 !!! Warning
     For your application to be visible on the created domain, make sure you take care of the following things:
 
-    1. The created domain should have the name "domain" as shown in the image below.
-
-    2. The created user-interface in the **Page Builder** should have the **name** as **index**.
+    1. The created user-interface in the **Page Builder** should have the **name** as **index**.
 
     <img src= "/apps/img/custom1.png" width= "275">
     <img src= "/apps/img/custom2.png" width= "350">
 
-### Custom Domain
+### Custom Domain Setup
 
-If you want to setup your custom domain or your own domain for `app.mycustomdomain.com` for the Apps Platform, then you need to point your custom name as a `CNAME` record to `cnx.page`.
+**Step 1: Set up the CNAME record**
 
-Custom Domain can be setup for any application you build using our Apps Platform.
+1. Access your domain account at your domain host.
+
+2. Locate the page for updating your domain's DNS (Domain Name System) records.
+
+3. Locate the `CNAME` records for your domain.
+
+4. Add a new domain record such as `app.mycustomdomain.com`.
+
+5. Point it toward `cnx.page`.
+
+**Step 2: Add a Domain to App**
+
+[Click here](https://docs.connexcs.com/apps/architecture/domain/#steps-for-setting-up-the-domain) to check the steps for adding the Domain to your App.
