@@ -143,6 +143,17 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 
     The last(4<sup>th</sup> call) redial call was placed at 08:00 PM, so the customer can start redialing at 08:00 PM the next day.
 
+ **IP Quality Score (IPQS)**: It blocks spam calls based on CLIs. It won't allow the CLIs of having a specific spam score that you've selected to pass through the system. For more information on IPQS, [click here](https://www.ipqualityscore.com/).
+
+ !!! Warning
+    The **IPQS** feature requires a paid subscription. To enable this feature navigate to **Setup :material-menu-right: Settings :material-menu-right: Account** and enable this feature.
+    The **cost** for a single lookup is **$0.0040**.
+
+ You can set a **Max Daily Quantity** for your customer's lookups. This restricts them to using only the specific number you allocate, ensuring controlled usage.
+
+!!! Note
+    We don't charge you again if you repeat your lookup within 24-hours of time-span.
+
 ### Media
 
 + **Transcoding**: Enter the number  of channels allowed for transcoding. This is a limited option. The best use case is for customers in low-bandwidth areas that want to use G.729.
@@ -305,7 +316,7 @@ Using Tech Prefix with SIP User "Parameter Rewrites" allows for significant gran
 
 1. Use Parameter Rewrite on the SIP User (found in **Customer :material-menu-right: Auth :material-menu-right: SIP User :material-menu-right: Parameter Rewrite**) to add a number for calls from this SIP User:
 
-    ![alt text][techprefix-usecase]
+    <img src= "/customer/img/regex1.png">
 
 2. Add a Tech Prefix for that user in Routing. In this example, it would be 1234.
 3. Set how you want those calls routed: Internal to Class5, out to a provider, etc.

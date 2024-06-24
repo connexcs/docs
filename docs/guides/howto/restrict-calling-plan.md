@@ -16,7 +16,7 @@ For example, the Provider has 3 calling plans, so we define a Tech prefix for ea
 
 Go to **Customer :material-menu-right: Auth**, select **IP Auth** or **SIP User Auth**, and then navigate to **Parameter Rewrite**:
 
-&emsp;![alt text][restrictcalling1]
+<img src= "/customer/img/regex.png">
 
 **Step 2: Add a tag to Customer routing**
 
