@@ -193,10 +193,13 @@ If script shows an error, add this and then run the script again:
 
 !!! Note
     Some In-Built Environmental Variables in ScriptForge:
+
     * **SCRIPTFORGE_ID**: File ID of the ScriptForge file
-    * **SCRIPTFORGE_UUID**: UUID of the ScriptForge file
+  
     * **SCRIPTFORGE_NAME**: Name of the ScriptForge file
+    
     * **APP_ID**: ID of the application
+    
     * **EXEC_HOST**: Host name of the server executing the script
 
 ### Assign the Script to a Customer

@@ -39,9 +39,12 @@ Click on this arrow ![arr](image-5.png) to maximize the preview screen.
 
 <img src= "/apps/img/template4.png">
 
-8. You can `Run` and `Save` the code, `Toggle Console`, `Preview (errors)`, `Request Cancellation` for cancelling any ongoing requests, for example taking longer to execute, `Settings` you can edit, Set Vars, Copy file ID, Copy UUID using Settings.
+8.You can `Run` and `Save` the code, `Toggle Console`, `Preview (errors)`, `Request Cancellation` for cancelling any ongoing requests, for example taking longer to execute, `Settings` you can edit, Set Vars, Copy file ID, Copy UUID using Settings.
 
 <img src= "/apps/img/sc.png" width= "275">
+
+!!! Note
+    A **File ID** serves as the unique identifier for a file, while a **UUID** is used to expose a **ScriptForge File** to external systems.
 
 ### Use Case
 

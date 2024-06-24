@@ -35,7 +35,6 @@ Importantly, every application you publish must be linked to a specific project 
 1. Login to your account.
 2. Navigate to **IDE :material-menu-right: Select an Application to be placed under the Project :material-menu-right: Settings :material-menu-right: Publish App**.
 
-<img src= "/apps/img/project3.png">
+<img src= "/apps/img/project3.png" width= "300">
 
 3.Select the created **Project** and **Version** and click `Publish App`.
-<img src= "/apps/img/project3.png">
