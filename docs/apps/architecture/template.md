@@ -39,6 +39,10 @@ Click on this arrow ![arr](image-5.png) to maximize the preview screen.
 
 <img src= "/apps/img/template4.png">
 
+8. You can `Run` and `Save` the code, `Toggle Console`, `Preview (errors)`, `Request Cancellation` for cancelling any ongoing requests, for example taking longer to execute, `Settings` you can edit, Set Vars, Copy file ID, Copy UUID using Settings.
+
+<img src= "/apps/img/sc.png" width= "275">
+
 ### Use Case
 
 1. To display **Documentation** in **App Store** (Setup :material-menu-right: App Store :material-menu-right: Click on the App :material-menu-right: Documentation)

@@ -166,9 +166,9 @@ module.export = {
 
     <img src= "/apps/img/app_scriptforge7.png" width= "550">
 
-    12.You can **Toggle Console**, **Preview (errors)**, or **Edit and Set Vars** using Settings.
+    12.You can `Run` and `Save` the code, `Toggle Console`, `Preview (errors)`, `Request Cancellation` for cancelling any ongoing requests, for example taking longer to execute, `Settings` you can edit, Set Vars, Copy file ID, Copy UUID using Settings.
 
-    <img src= "/apps/img/app_scriptforge.png" width= "275">
+    <img src= "/apps/img/sc.png" width= "275">
 
     !!! note
         Global Routing Priority means the script will run for every single call. You have 3 options to choose from:
@@ -187,6 +187,17 @@ If script shows an error, add this and then run the script again:
 ```
 {"routing":{}}
 ```
+
+!!! Note
+    A **File ID** serves as the unique identifier for a file, while a **UUID** is used to expose a **ScriptForge File** to external systems.
+
+!!! Note
+    Some In-Built Environmental Variables in ScriptForge:
+    * **SCRIPTFORGE_ID**: File ID of the ScriptForge file
+    * **SCRIPTFORGE_UUID**: UUID of the ScriptForge file
+    * **SCRIPTFORGE_NAME**: Name of the ScriptForge file
+    * **APP_ID**: ID of the application
+    * **EXEC_HOST**: Host name of the server executing the script
 
 ### Assign the Script to a Customer
 

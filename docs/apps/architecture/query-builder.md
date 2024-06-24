@@ -35,6 +35,10 @@ Common use cases include: Database Administration Tools, Web Application, Report
 
 <img src= "/apps/img/query5.png">
 
+9.You can `Run` and `Save` the code, `Toggle Console`, `Preview (errors)`, `Request Cancellation` for cancelling any ongoing requests, for example taking longer to execute, `Settings` you can edit, Set Vars, Copy file ID, Copy UUID using Settings.
+
+<img src= "/apps/img/sc.png" width= "275">
+
 ### G3 Query Builder
 
 When creating a **query**, you can select the **data source** as **G3**, which is helpful when you intend to visualize the data as a graph.
