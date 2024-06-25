@@ -191,14 +191,14 @@ If script shows an error, add this and then run the script again:
 !!! Note
     A **File ID** serves as the unique identifier for a file, while a **UUID** is used to expose a **ScriptForge File** to external systems.
 
-#### Some In-Built Environmental Variables in ScriptForge:
+#### Some In-Built Environmental Variables in ScriptForge
 
 * **SCRIPTFORGE_ID**: File ID of the ScriptForge file.
 * **SCRIPTFORGE_NAME**: Name of the ScriptForge file.
 * **APP_ID**: ID of the application.
 * **EXEC_HOST**: Host name of the server executing the script.
 
-You can add the environmental variables using `process.env`.
+You can get the environmental variables using `process.env`.
 
 ### Assign the Script to a Customer
 
