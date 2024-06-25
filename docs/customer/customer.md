@@ -113,9 +113,6 @@ By clicking on `+` button we can add customer (see [**Create Customers**](https:
     + **Daily Spend Limit**: The maximum limit for a customer for making calls in their chosen currency. Once the limit is reached it won't allow any new calls to connect.
     + **Default STIR Shaken Attestation**: If an attestation level is selected here (Customer > Edit), then same attestaion will be visible in the CLI section.
 
-!!! note
-    The daily spend day is defined from 00:00 UTC to 00:00 UTC.
-
 === "Address"
 
     * **Address:** Complete the customer's physical address.
@@ -153,6 +150,9 @@ By clicking on `+` button we can add customer (see [**Create Customers**](https:
         In the image below you can see the time slider starts from 12:00 AM till 8:00 AM, this means your customers are only allowed to dial between 12:00 AM and 8:00 AM. After 8:00 AM your customers won't be able to call. The rest of the slots (grey color) are restricted slots.
 
         <img src= "/customer/img/restrict.png" width="400">
+
+!!! note
+    The daily spend day is defined from 00:00 UTC to 00:00 UTC.
 
 !!! note "Note that you won't be able to change the account currency once you create the account."
 
