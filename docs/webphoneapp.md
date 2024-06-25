@@ -1,5 +1,8 @@
 # WebPhone App
 
+!!! Warning
+    We advise users to switch to this new [App Platform](https://docs.connexcs.com/apps/introduction/) (WebPhone App) as the previous WebPhone development has been put on hold.
+
 # Introduction
 
 The ConnexCS WebPhone Application is fully customizable. It replaces the old legacy Web Phone Application.
@@ -95,6 +98,24 @@ To setup WebRTC on a server:
 !!! tip "AnyEdge and WebRTC"
     If you are using AnyEdge, you can enable WebRTC automatically by adding a domain name to your AnyEdge Domain.
 
+#### Custom Domain Setup
+
+**Step 1: Set up the CNAME record**
+
+1. Access your domain account at your domain host.
+
+2. Locate the page for updating your domain's DNS (Domain Name System) records.
+
+3. Locate the `CNAME` records for your domain.
+
+4. Add a new domain record such as `app.mycustomdomain.com`.
+
+5. Point it toward `cnx.page`.
+
+**Step 2: Add a Domain to App**
+
+[Click here](https://docs.connexcs.com/apps/architecture/domain/#steps-for-setting-up-the-domain) to check the steps for adding the Domain to your App.
+
 ### Step 5: Configuring (Optional Step)
 
 1. Go to **IDE :material-menu-right: WebPhone :material-menu-right: Environmental variables**.
@@ -121,5 +142,8 @@ To setup WebRTC on a server:
 2. **Mic Off**: Mute the call.
 3. **Hangup**: Disconnect the call.
 4. **Call Hold**: Hold the call.
+5. **Clipboard**: When you copy something on your computer, it's stored on the clipboard. You can then paste it on the Webphone.
+6. **Log Out** (top-right): Click on this button to sign out of the Webphone.
+7. **Current Call Time**: Displays the duration of the ongoing call.
 
 <img src= "/setup/img/wp9.png" width="300">
