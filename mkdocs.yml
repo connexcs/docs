@@ -273,6 +273,7 @@ nav:
         - Script Forge: apps/architecture/script.md
         - Template: apps/architecture/template.md
         - Query Builder: apps/architecture/query-builder.md
+        - Project: apps/architecture/project.md
         - Pub / Sub Bus: apps/architecture/pub-sub.md
         - Environmental Variables: apps//architecture/environmental-variables.md
     - Components:
