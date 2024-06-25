@@ -328,11 +328,13 @@ An existing call is transferred to a different destination using the `Dial` ver
 |`timeout`|timeout in <Dial> lets you specify the maximum waiting time in seconds for the dialed party to answer|||
 
 |**Noun**|**Description**|
-|-------------|----------|
+|--------|---------------|
 |`Number`|Its is an E.164 phone number|
 |`Queue`|Its a queue name|
 |`Client`|It specifies a client identifier to dial|
 |`Conference`|You can connect to a conference room using the `Dial` verb's `Conference` noun|
+|`Voicemail`| Your voicemails can be played using the `Voicemail` noun. [Click here](https://docs.connexcs.com/class5/voicemail/#voicemail-dialpad-options) to know more options for the Voicemail Dialpad options|
+|`Voicemail Inbox`|It will only play the recent messages in the inbox|
 
 !!! Info
     `Conference` is similar to how the `Number` noun lets you connect to another phone number.
@@ -414,6 +416,27 @@ An existing call is transferred to a different destination using the `Dial` ver
         <Response>
             <Dial>
                 <Conference>Room5</Conference>
+            </Dial>
+        </Response>
+        ```
+    
+    10. **Voicemail**
+        ``` xml
+        <?xml version="1.0" encoding="UTF-8"?>
+        <Response>
+            <Dial>
+                <Voicemail />
+            </Dial>
+        </Response>
+        ```
+    
+    11. **Voicemail Inbox**
+        ``` xml
+        <?xml version="1.0" encoding="UTF-8"?>
+        <Response>
+            <Dial>
+                <Voicemail inbox="true">
+                 <Voicemail/>
             </Dial>
         </Response>
         ```
