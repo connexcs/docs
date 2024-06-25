@@ -104,8 +104,8 @@ From the **Carriers** page, you can perform several management operations.
     * **Call Recording Retention Days:** How long the customer wants to keep the recorded calls.
     * **Gateway Failover:** This feature allows you to swtich to another IP if the call(s) doesn't pass through or fails on the first IP. It has 4 options:
         * *None*: The call will not switch to any other IP.
-        * *Failover 1*: The call will only to switch to 1 of the IP's that you've configured in the Auth .
-        * *Failover 2*: The call will only to switch to 2 of the IP's that you've configured in the Auth .
+        * *Failover 1*: The call will only to switch to 1 of the IP's that you've configured in the Auth.
+        * *Failover 2*: The call will only to switch to 2 of the IP's that you've configured in the Auth.
         * *Failover 3*: The call will only to switch to 3 of the IP's that you've configured in the Auth section.
 
 === "Address"

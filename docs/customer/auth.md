@@ -38,9 +38,6 @@ To enable, click **:material-plus:** next to IP Authentication:
     
         ![alt text][ipauth-basic]
 
-!!! Note
-    [Click here](https://cidr.xyz/) to view an interactive IP address and CIDR range visualizer.
-
 === "Advanced"
 
     + **Manufacturer and Version**: These references fields allow you to enter the customer switch Manufacturer and Version, if required (these fields are not functional; they are informational only).
@@ -95,6 +92,9 @@ To enable, click **:material-plus:** next to IP Authentication:
     Example: International calls coming in with a + should be replaced with a specific country code.
 
     <img src= "/customer/img/regex.png">
+
+!!! Note
+    [Click here](https://cidr.xyz/) to view an interactive IP address and CIDR range visualizer.
 
 ## SIP User Authentication
 
