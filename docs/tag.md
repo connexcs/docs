@@ -2,7 +2,6 @@
 
 **Management :material-menu-right: Tags**
 
-
 A **Tag** refers to a label or keyword used to categorize or identify something.
 
 With the help of tags, you may generate global Alerts, Routing, and CLI information. Following the creation of the Tags, you can tag your clients in the Alert, Routing, or CLI Strategy.
@@ -296,6 +295,11 @@ The **P-Asserted-ID** manipulation uses the same syntax as the Replace CLI.
 
     + **STIR / SHAKEN Attestation:** This is the level of a certification you can select from 3 levels `A`, `B`, or `C`.
 
-16. Click **`Save`** to complete the CLI configuration.
+16.**Flags**: When you select **Forced** as **Yes** and select a **Database**, you get an option to select a flag which is **Performance CLI Selection**.
+The Performance CLI Selection chooses the CLI with the best ASR.
++ *Stir Shaken Required*: Choose this option when no certificate is selected.
++ *Stir Shaken Replace*: Choose this option when you wish to apply your Stir-shaken certificate instead of which is  already applied (for a call).
 
-<img src= "/misc/img/t10.png">
+17.Click **`Save`** to complete the CLI configuration.
+
+<img src= "/customer/img/tagcli.png">

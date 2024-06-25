@@ -97,6 +97,8 @@ For more details on these fields, see [**Media in Customer Routing**](https://do
 
 + **Transcoding**: Enter the number of channels allowed for transcoding. This is a limited option. The best use case is for customers in low-bandwidth areas that want to use G.729. If you don't have enough transcoding capacity, calls might start failing.
 
++ **Flags**: Enable this option if you want to remove STIR/SHAKEN information from an inbound call before forwarding it to the destination.
+
 + **RTP Codec**: This fields allows you to have more specific control over the Codecs you choose for your system. After the selection you can assign various **Permissions** to the Codecs you select.
 
     + **Types of Permissions include**:

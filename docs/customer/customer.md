@@ -102,7 +102,7 @@ By clicking on `+` button we can add customer (see [**Create Customers**](https:
     + [**TOML**](https://en.wikipedia.org/wiki/TOML): This is a data storage mechanism for configuration, similar to INI files. It allows you to create advanced customization to set values, etc, for Script Forge to reference later. 
     + **Reseller**: Associate the customer to a preset Reseller Group (see [**Create Groups**](https://docs.connexcs.com/setup/settings/users/#create-groups) for more details.)
     + **Account Manager**: Designating the control of this account to a specific user.
-    + **Invoice Schedule**: Specify frequency for invoice generation. 
+    + **Invoice Schedule**: Specify frequency for invoice generation like Daily, Weekly or Monthly. 
     + **Invoice Due Days**: Set the allowed number of days past the due date that the invoice can go unpaid. 
     + **Invoice Template**: Select from a list of existing Templates found in **Setup :material-menu-right: Config :material-menu-right: [Templates](/setup/config/templates/)**
     + **Ext.Accounting ID**: This is used to fill in work an external accounting field to correlate between Connexcs and the external accountancy system.
