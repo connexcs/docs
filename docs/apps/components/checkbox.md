@@ -148,6 +148,9 @@ Some of the most common methods include:
          "checkbox_g0x4pt54z": "Option 1", "Option 2",}
         );
         ```
+    11. `this.refreshFieldDataSource`
+        
+        `make the function or data as dynamic` 
 
 ## Config
 

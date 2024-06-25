@@ -34,6 +34,7 @@ Tables provide a structured format for organizing related data within a form. Us
 |`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String) : Object`|
 |`this.hide`|Hides the field|`(fields: String`&#124;`String[])`|
 |`this.show`|Displays the field|`(fields: String`&#124;`String[])`|
+|`this.getValues`|Gets the current values of all fields|`() : Object`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of a table in response to user input.
@@ -79,12 +80,7 @@ Tables provide a structured format for organizing related data within a form. Us
         this.show(fields)
         ```
     
-    5. `this.disable(['fields'])`
-        ```js
-        this.disable(['report_eahnplzw'])
-        ```
-    
-    6. `this.enable(['fields'])`
+    5. `this.enable(['fields'])`
         ```js
         this.enable(['report_eahnplzw'])
         ```
@@ -93,6 +89,12 @@ Tables provide a structured format for organizing related data within a form. Us
         ```js
         var reportname = this.getComponent('report_eahnplzw');
         console.log('getComponent', reportname);
+        ```
+    
+    7.  `this.getValues()`
+        ```js
+        var data = this.getValues();
+        console.log(data);
         ```
 
 ## Config

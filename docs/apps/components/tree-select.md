@@ -50,6 +50,12 @@ Unlike a standard dropdown menu with a flat list of options, a tree-select organ
 |`this.disable`| Disable tree-select field from user interaction|`(fields: String`&#124;`String[])`|
 |`this.enable`| Enable tree-select field from user interaction|`(fields: String`&#124;`String[])`|
 |`this.setData`|Set the data in the field. The Value object should be of type { componentId: componentValue }|`(Value: Object)`|
+|`this.getValue`|Get A Value From a component|`(fieldName: String)`|
+|`this.getValues`|Gets the current values of all fields|`() : Object`|
+|`this.removeClassName`|Remove style class from a form item|`(fields: String`&#124;`String[], className: String)`|
+|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String) : Object`|
+|`this.hide`|Hides the field|`(fields: String`&#124;`String[])`|
+|`this.refreshFieldDataSource`|Refresh the datasource data bound to the whole page|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of the tree-select component in response to user input.
@@ -106,6 +112,33 @@ Unlike a standard dropdown menu with a flat list of options, a tree-select organ
         this.setData(
         {"treeselect_4xgiru3n": "Option 2",})
         ```
+    
+    7. `this.getValue('fieldName')`
+        ```js
+        var fields = this.getValue('treeselect_4xgiru3n');
+        console.log('getValue', fields);
+        ```
+    
+    10. `this.getValues()`
+        ```js
+        var data = this.getValues();
+        console.log(data);
+        ```
+    
+    11. `this.removeClassName(fields, className)`
+        ```js
+        this.removeClassName('treeselect_4xgiru3n', 'abc')
+        ```
+    
+    12. `this.getComponent('component_ID')`
+        ```js
+        var fields = this.getComponent('treeselect_4xgiru3n');
+        console.log('getComponent', fields);
+        ```
+    
+    13. `this.refreshFieldDataSource`
+        
+        `make the function or data as dynamic`
 
 ## Config
 

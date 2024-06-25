@@ -37,6 +37,10 @@ It's commonly used to create interactive selections, manage data assignments, or
 |`this.show`|Displays the field|`(fields: String`&#124;`String[])`|
 |`this.disable`| Disable transfer field from user interaction|`(fields: String`&#124;`String[])`|
 |`this.enable`| Enable transfer field from user interaction|`(fields: String`&#124;`String[])`|
+|`this.getValues`|Gets the current values of all fields|`() : Object`|
+|`this.getValue`|Get A Value From a component|`(fieldName: String)`|
+|`this.setData`|Set the data in the field. The Value object should be of type { componentId: componentValue }|`(Value: Object)`|
+|`this.refreshFieldDataSource`|Refresh the datasource data bound to the whole page|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of the transfer component in response to user input.
@@ -92,6 +96,30 @@ It's commonly used to create interactive selections, manage data assignments, or
         ```js
         this.enable(['transfer_jhg5bttj'])
         ```
+    
+    7. `this.getValue(fieldName)`
+        ```js
+        var fields = this.getValue('transfer_jhg5bttj');
+        console.log('getValue', fields);
+        ```
+    
+    8. `this.getValues()`
+        ```js
+        var data = this.getValues();
+        console.log(data);
+        ```
+    9. `this.setData()`
+        ```js
+        this.setData({
+	    "transfer_8pd5pfng": [
+		"2",
+		"3"
+	    ] // 2 and 3 are keys
+        })
+        ```
+    10. `this.refreshFieldDataSource`
+        
+        `make the function or data as dynamic`
 
 ## Config
 

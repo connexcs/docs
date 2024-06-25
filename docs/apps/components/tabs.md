@@ -49,6 +49,7 @@ Each tab acts as a dedicated space for specific information, guiding users throu
 |`this.hide`|Hides the field|`(fields: String`&#124;`String[])`|
 |`this.show`|Displays the field|`(fields: String`&#124;`String[]`|
 |`this.getValues`|Gets the current values of all fields|`() : Object`|
+|`this.disable`| Disable time field from user interaction|`(fields: String`&#124;`String[])`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of tabs in response to user input.
