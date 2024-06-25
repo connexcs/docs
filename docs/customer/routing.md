@@ -145,9 +145,10 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 
  **IP Quality Score (IPQS)**: It blocks spam calls based on CLIs. It won't allow the CLIs of having a specific spam score that you've selected to pass through the system. For more information on IPQS, [click here](https://www.ipqualityscore.com/).
 
-    !!! Warning
-        The **IPQS** feature requires a paid subscription. To enable this feature navigate to **Setup :material-menu-right: Settings :material-menu-right: Account** and enable this feature.
-        The **cost** for a single lookup is **$0.0040**.
+!!! Warning
+    The **IPQS** feature requires a paid subscription. To enable this feature navigate to **Setup :material-menu-right: Settings :material-menu-right: Account** and enable this feature.
+
+    The **cost** for a single lookup is **$0.0040**.
 
  You can set a **Max Daily Quantity** for your customer's lookups. This restricts them to using only the specific number you allocate, ensuring controlled usage.
 
