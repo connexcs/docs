@@ -43,7 +43,7 @@ The JavaScript code defines an asynchronous function, main, which handles a Clas
 
 ## Script Example
 
-``` js title="AI Agent" linenums="1" { .yaml .select } { .yaml .annotate }
+```javascript
 // Import the cxLLM module which is used for handling language model interactions
 const llm = require('cxLLM');
 
