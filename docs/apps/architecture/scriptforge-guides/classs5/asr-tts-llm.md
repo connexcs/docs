@@ -43,16 +43,13 @@ The JavaScript code defines an asynchronous function, main, which handles a Clas
 
 ## Script Example
 
-``` javascript title="AgentAI" linenums="1" annotate
+```javascript title="AgentAI" linenums="1"
 // Import the cxLLM module which is used for handling language model interactions
 const llm = require('cxLLM'); 
 // The main function that contains the core logic of the Class 5 Application
 async function main(data, ctx) {
     // Initialize chatId to null; this will be used to maintain the chat session with the language model
     let chatId = null;
-
-    // Log to console that the application is starting
-    console.log('Starting Class 5 Application');
 
     // Answer the incoming call
     await ctx.answer();
@@ -62,8 +59,6 @@ async function main(data, ctx) {
 
     // Set up an event listener for transcription events
     ctx.on('transcription', async text => {
-        // Log the transcribed text to the console
-        console.log('ScriptForge Transcription:', text);
 
         // Stop transcription temporarily to process the current input
         await ctx.transcribeStop();
