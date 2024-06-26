@@ -280,7 +280,7 @@ nav:
         - ScriptForge Guides:
             - Class 4:
                 - Mapping a ScriptForge API endpoint to a Public API Endpoint: apps/architecture/scriptforge-guides/class4/api.md
-                - App vs Script: apps/architecture/scriptforge-guidess/class4/app-script.md
+                - App vs Script: apps/architecture/scriptforge-guides/class4/app-script.md
                 - Class 4 Routing with ScriptForge: apps/architecture/scriptforge-guides/class4/class4-routing.md
                 - Environmental Variables in ScriptForge: apps/architecture/scriptforge-guides/class4/env-var.md
                 - Introspection: apps/architecture/scriptforge-guides/class4/introspection.md
