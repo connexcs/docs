@@ -289,10 +289,10 @@ nav:
                 - Pub-Sub: apps/architecture/scriptforge-guides/class4/pub-sub.md
                 - Third Party Libraries: apps/architecture/scriptforge-guides/class4/third-lib.md
             - Class 5:
-                - ASR, TTS, LLM in Programmable Voice: apps/architecture/scriptforge-guides/class5/asr-tts-llm.md
-                - ScriptForge with Class 5 Programmable Voice: apps/architecture/scriptforge-guides/class5/class5.md
-                - Echo Test in Programmable Voice: apps/architecture/scriptforge-guides/class5/echotest.md
-                - IVR in Programmable Voice: apps/architecture/scriptforge-guides/class5/ivr.md
+                - ASR, TTS, LLM in Programmable Voice: apps/architecture/scriptforge-guides/classs5/asr-tts-llm.md
+                - ScriptForge with Class 5 Programmable Voice: apps/architecture/scriptforge-guides/classs5/class5.md
+                - Echo Test in Programmable Voice: apps/architecture/scriptforge-guides/classs5/echotest.md
+                - IVR in Programmable Voice: apps/architecture/scriptforge-guides/classs5/ivr.md
         - Template: apps/architecture/template.md
         - Query Builder: apps/architecture/query-builder.md
         - Pub / Sub Bus: apps/architecture/pub-sub.md

@@ -33,6 +33,7 @@ D --> E[User Hears Reply]
 This technology can be deployed in scenarios where a ChatBot needs to receive audio input, interpret it using a language model, and respond verbally. The ChatBot's responses are articulated through Google TTS, enabling interactive and autonomous voice communication.
 
 ## Code Explanation:
+
 The JavaScript code defines an asynchronous function, main, which handles a Class 5 telephony application that interacts with a language model for real-time voice interactions. The application, upon receiving a call, answers it and starts transcribing the caller's speech. It logs key events and processes transcribed text by sending it to a language model (via the cxLLM module) to generate responses. These responses are then spoken back to the caller using text-to-speech (TTS) functionality. The transcription process continues in a loop, allowing for an interactive voice conversation. The application waits for the call to end before completing its execution.
 
 ## Libraries
