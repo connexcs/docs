@@ -43,9 +43,9 @@ The JavaScript code defines an asynchronous function, main, which handles a Clas
 
 ## Script Example
 
-``` javascript annotate title="AgentAI" linenums="1"
-const llm = require('cxLLM'); // Import the cxLLM module which is used for handling language model interactions
-
+``` javascript title="AgentAI" linenums="1" annotate
+// Import the cxLLM module which is used for handling language model interactions
+const llm = require('cxLLM'); 
 // The main function that contains the core logic of the Class 5 Application
 async function main(data, ctx) {
     // Initialize chatId to null; this will be used to maintain the chat session with the language model
