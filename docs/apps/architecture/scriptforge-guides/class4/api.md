@@ -86,12 +86,6 @@ this.setData({
 
 In this case the ScriptForge is accessible on the Customer Portal.
 
-* Access through **Domain**
-
-[Create a Domain](https://docs.connexcs.com/apps/architecture/domain/#steps-for-setting-up-the-domain), for example `https://totalpayment.cnx.page/`
-
-<img src= "/apps/img/api6.png">
-
 * Access through **Script UUID**
 https://portal.test.connexcs.com/api/uuid/checkItem
 
