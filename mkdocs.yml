@@ -278,20 +278,21 @@ nav:
         - Page Builder: apps/page-builder.md
         - ScriptForge: apps/architecture/script.md
         - ScriptForge Guides:
-            - Environmental Variables in ScriptForge: apps/architecture/scriptforge-guides/env-var.md
-            - ScriptForge with Class 5 Programmable Voice: apps/architecture/scriptforge-guides/class5.md
-            - Class 4 Routing with ScriptForge: apps/architecture/scriptforge-guides/class4-routing.md
-            - Third Party Libraries: apps/architecture/scriptforge-guides/third-lib.md
-            - Introspection: apps/architecture/scriptforge-guides/introspection.md
-            - App vs Script: apps/architecture/scriptforge-guidess/app-script.md
-            - IVR in Programmable Voice: apps/architecture/scriptforge-guides/ivr.md
-            - ASR, TTS, LLM in Programmable Voice: apps/architecture/scriptforge-guides/asr-tts-llm.md
-            - Echo Test in Programmable Voice: apps/architecture/scriptforge-guides/echotest.md
-            - Job Queue: apps/architecture/scriptforge-guides/jobqueue.md
-            - Pub-Sub: apps/architecture/scriptforge-guides/pub-sub.md
-            - Echo Test in Programmable Voice: apps/architecture/scriptforge-guides/echotest.md
-            - Key Value Store: apps/architecture/scriptforge-guides/key-value.md
-            - Mapping a ScriptForge API endpoint to a Public API Endpoint: apps/architecture/scriptforge-guides/api.md    
+            - Class 4:
+                - Mapping a ScriptForge API endpoint to a Public API Endpoint: apps/architecture/scriptforge-guides/api.md
+                - App vs Script: apps/architecture/scriptforge-guidess/app-script.md
+                - Class 4 Routing with ScriptForge: apps/architecture/scriptforge-guides/class4-routing.md
+                - Environmental Variables in ScriptForge: apps/architecture/scriptforge-guides/env-var.md
+                - Introspection: apps/architecture/scriptforge-guides/introspection.md
+                - Job Queue: apps/architecture/scriptforge-guides/jobqueue.md
+                - Key Value Store: apps/architecture/scriptforge-guides/key-value.md
+                - Pub-Sub: apps/architecture/scriptforge-guides/pub-sub.md
+                - Third Party Libraries: apps/architecture/scriptforge-guides/third-lib.md
+            - Class 5:
+                - ASR, TTS, LLM in Programmable Voice: apps/architecture/scriptforge-guides/asr-tts-llm.md
+                - ScriptForge with Class 5 Programmable Voice: apps/architecture/scriptforge-guides/class5.md
+                - Echo Test in Programmable Voice: apps/architecture/scriptforge-guides/echotest.md
+                - IVR in Programmable Voice: apps/architecture/scriptforge-guides/ivr.md
         - Template: apps/architecture/template.md
         - Query Builder: apps/architecture/query-builder.md
         - Pub / Sub Bus: apps/architecture/pub-sub.md
