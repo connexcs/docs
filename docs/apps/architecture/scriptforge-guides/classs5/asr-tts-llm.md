@@ -45,6 +45,7 @@ The JavaScript code defines an asynchronous function, main, which handles a Clas
 
 ``` javascript annotate title="AgentAI" linenums="1"
 // Import the cxLLM module which is used for handling language model interactions
+{ .annotate }
 const llm = require('cxLLM');
 
 // The main function that contains the core logic of the Class 5 Application
