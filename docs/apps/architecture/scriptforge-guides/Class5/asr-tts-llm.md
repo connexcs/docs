@@ -2,7 +2,19 @@
 
 ## Abstract
 
-This Class5 feature serves as a proof of concept for Autonomous Speech Recognition (ASR), Text-to-Speech (TTS), and Large Language Model (LLM) integration using ConnexCS. The system demonstrates how real-time voice interactions can be managed and processed effectively.
+This Class5 feature serves as a proof of concept for Autonomous Speech Recognition (ASR), Text-to-Speech (TTS), and Large Language Model (LLM) integration using ConnexCS.
+
+It's an example of how to call into a Class5 endpoint on the System. ASR will listen to the conversation and then convert it into text. It then gets passed to the LLM, which curates an intelligent reply, this reply can be spoken using the TTS technology.
+
+``` mermaid
+graph LR
+A[User Speaks] --> B{ASR: Convert to Text}
+B --> C{LLM: Generate Reply}
+C --> D{TTS: Convert to Speech}
+D --> E[User Hears Reply]
+```
+
+ The system demonstrates how real-time voice interactions can be managed and processed effectively.
 
 ## Prerequisites:
 
@@ -24,12 +36,13 @@ This technology can be deployed in scenarios where a ChatBot needs to receive au
 The JavaScript code defines an asynchronous function, main, which handles a Class 5 telephony application that interacts with a language model for real-time voice interactions. The application, upon receiving a call, answers it and starts transcribing the caller's speech. It logs key events and processes transcribed text by sending it to a language model (via the cxLLM module) to generate responses. These responses are then spoken back to the caller using text-to-speech (TTS) functionality. The transcription process continues in a loop, allowing for an interactive voice conversation. The application waits for the call to end before completing its execution.
 
 ## Libraries
+
    * cxLLM: For interacting with a language model.
    * ctx: A class 5 real-time interface used for managing call actions, logging, transcription, and TTS.
 
 ## Script Example
 
-``` js title="AI Agent" linenums="1"
+``` js title="AI Agent" linenums="1" { .yaml .select } { .yaml .annotate }
 // Import the cxLLM module which is used for handling language model interactions
 const llm = require('cxLLM');
 
@@ -75,5 +88,4 @@ async function main(data, ctx) {
     // Wait for the call to hang up before completing the script
     return ctx.waitForHangup();
 }
-
 ```
