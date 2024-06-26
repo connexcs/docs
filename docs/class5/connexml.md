@@ -326,19 +326,15 @@ An existing call is transferred to a different destination using the `Dial` ver
 |`hangupOnStar`|By tapping the `*` key on their phone, the initial caller can hang up on the called party using the hangupOnStar attribute. It doesn't apply for `Conference` noun|`true`, `false`| `false`|
 |`ringTone`|The ringback tone played back to the caller|`at`,`au`,`bg`,`br`,<br>`be`,`ch`,`cl`,`cn`,`cz`,</br>`de`,`dk`,`ee`,`es`,`fi`,<br>`fr`,`gr`,`hu`,`il`,`in`,<br>`it`,`lt`,`jp`,`mx`,`my`,<br>`nl`,`no`,`nz`,`ph`,`pl`,<br>`pt`,`ru`,`se`,`sg`,<br>`th`,`uk`,`us`,`us-old`,`tw`,<br>`ve`,`za`|`us`|
 |`timeout`|timeout in <Dial> lets you specify the maximum waiting time in seconds for the dialed party to answer|||
-|`whisper`|an arrtibute of `barge`| listen to a conversation without the other party knowing|
-|`bridge`|an arrtibute of `barge` |listening in on a conference call where the eavesdropper is not a participant but can still monitor the conversation|
-|`command`|an arrtibute of `barge`|**DTMF signals/Commands** during eavesdrop: <br> `2 to speak with the uuid` <br> `1 to speak with the other half` <br> `3 to engage a three way` <br> `0 to restore eavesdrop` <br> `* to next channel`|
 
-|**Noun**|**Description**|
-|--------|---------------|
+|**Noun**|**Description**|**Attribute**|**Options**|**Default Method**|
+|--------|---------------|-------------|-------------|---|
 |`Number`|Its is an E.164 phone number|
 |`Queue`|Its a queue name|
 |`Client`|It specifies a client identifier to dial|
 |`Conference`|You can connect to a conference room using the `Dial` verb's `Conference` noun|
-|`Voicemail`| Your voicemails can be played using the `Voicemail` noun. [Click here](https://docs.connexcs.com/class5/voicemail/#voicemail-dialpad-options) to know more options for the Voicemail Dialpad options|
-|`Voicemail Inbox`|It sends you to the inbox to leave a message|
-|`barge`|Allows you to join an ongoing call, without alerting the participants|
+|`Voicemail`| Your voicemails can be played using the `Voicemail` noun. [Click here](https://docs.connexcs.com/class5/voicemail/#voicemail-dialpad-options) to know more options for the Voicemail Dialpad options|`Voicemail Inbox`- It sends you to the inbox to leave a message|
+|`barge`|Allows you to join an ongoing call, without alerting the participants|<table><tr> <td>`whisper`- listen to a conversation without the other party knowing</td> </tr> <tr> <td>`bridge`- listening in on a conference call where the eavesdropper isn't a participant but can still monitor the conversation</tr> </td> <tr> <td>`command`- DTMF signals during eavesdrop</td> </tr></table>|<table><tr> <td>`whisper`- `a`, `b`, `ab`</td> </tr> <tr> <td>`bridge`- `a`, `b`, `ab`</tr> </td> <tr> <td>`command`- <br> `2 to speak with the uuid` <br> `1 to speak with the other half` <br> `3 to engage a three way` <br> `0 to restore eavesdrop` <br> `* to next channel`</td> </tr></table>| all the attributes will be executed|
 
 !!! Info
     `Conference` is similar to how the `Number` noun lets you connect to another phone number.
@@ -445,28 +441,24 @@ An existing call is transferred to a different destination using the `Dial` ver
         </Response>
         ```
 
-    12. **Barge (Default- All modifiers will be present)**
+    12. **Barge**
         ``` xml
         <?xml version="1.0" encoding="UTF-8"?>
         <Response>
             <Dial>
-                <Barge></Barge> // whipsper, bridge and commands will be executed by default
+                <Barge></Barge>
             </Dial>
         </Response>
         ```
     
-    13.  **Barge (Mention the required modifiers inside Barge)**
+    13.  **Barge**
         ``` xml
         <?xml version="1.0" encoding="UTF-8"?>
         <Response>
             <Dial>
                 <Barge>
-                    whisper="ab" // enables whisper mode in aleg and bleg
-                    whisper="a" // enables whisper mode in aleg only
-                    whisper="b" // enables whisper mode in bleg only
-                    bridge="a" // enables listen to aleg only
-                    bridge="b" // enables listen to bleg only
-                    bridge="ab" // enables listen to aleg and bleg
+                    whisper="ab" or "a" or 'b'// enables whisper mode in aleg, bleg or both
+                    bridge="ab" or "a" or 'b // enables listen to in aleg, bleg or both
                     commands= "false" // false means no DTMF signals/commands during eavesdrop
                 </Barge>
             </Dial>
@@ -478,8 +470,8 @@ An existing call is transferred to a different destination using the `Dial` ver
         <?xml version="1.0" encoding="UTF-8"?>
         <Response>
             <Dial>
-                <Barge>
-                GROUPA></Barge> // Add a group of customers in SIP Profile to listen to the conversation of that particular group. If no group is mentioned then you can listen to any ongoing calls 
+                <Barge
+                >GROUPA</Barge> // Add a group of customers in SIP Profile to listen to the conversation of that particular group. If no group is mentioned then you can listen to any ongoing calls 
             </Dial>
         </Response>
         ```
