@@ -131,7 +131,7 @@ You can use various Operators to refine your research:
     <img src="/transcription/img/and.png" width= "800">
 
     2. `OR` Operator
-    img src="/transcription/img/or.png" width= "800">
+    <img src="/transcription/img/or.png" width= "800">
 
     3. `NOT` Operator
     <img src="/transcription/img/not.png" width= "800">
