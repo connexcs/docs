@@ -40,7 +40,6 @@ markdown_extensions:
   - admonition
   - attr_list
   - md_in_html
-  - pymdownx.superfences
   - toc:
       permalink: true
   - pymdownx.tabbed:
@@ -52,10 +51,10 @@ markdown_extensions:
       custom_fences:
         - name: mermaid
           class: mermaid
-          format: ""
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.emoji:
-      emoji_index: ""
-      emoji_generator: ""
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
   - def_list
   - footnotes
   - pymdownx.highlight:

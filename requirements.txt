@@ -3,4 +3,3 @@ mkdocs
 mkdocs-material
 mkdocs-mermaid2-plugin
 mkdocs-embed-external-markdown
-pymdown-extensions
