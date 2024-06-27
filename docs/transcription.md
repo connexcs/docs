@@ -121,9 +121,9 @@ You can use various Operators to refine your research:
 
 |**Operator**|**Explanation**|**Example**|
 |------------|---------------|-----------|
-|`AND`|Includes entries that contain all the keywords provided in a list, separated by `AND/&/and`| <img src="/transcription/img/and.png">|
-|`OR`|Include entries that contain at least one keyword from the provided list, separated by `OR/or`| <img src="/transcription/img/or.png">|
-|`-`| This is the NOT operator it won't include the keywords prefixed by`-` symbol|<img src="/transcription/img/not.png">|
+|`AND`|Includes entries that contain all the keywords provided in a list, separated by `AND/&/and`| <img src="/transcription/img/and.png" width= "800">|
+|`OR`|Include entries that contain at least one keyword from the provided list, separated by `OR/or`| <img src="/transcription/img/or.png" width= "800">|
+|`NOT`| This is the NOT operator it won't include the keywords prefixed by`-` symbol|<img src="/transcription/img/not.png" width= "800">|
 
 !!! Tip
     By using **multiple search operators together**, you can create more specific search queries that helps you find the most relevant entries quicker.
