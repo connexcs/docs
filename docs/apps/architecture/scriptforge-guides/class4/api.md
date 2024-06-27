@@ -21,8 +21,8 @@ This capability allows our customers or external users to connect to our system 
 It's mainly used to receive the `http request`, process the request and respond.
 
 !!! Example
-    ConnexCS wants to share payment status to an external person who doesn't have an account with ConnexCS.  
-   Thus, we use an API endpoint to automatically update the payment status.
+    ConnexCS wants to share payment status to an external person who doesn't have an account with ConnexCS.
+	Thus, we use an API endpoint to automatically update the payment status.
 
 ### Use Cases
 
@@ -66,6 +66,6 @@ function myCustomFunction () {
 3. Place the URL mentioned above in the `GET` field, `https://portal.test.connexcs.com/api/script/accb960b-3211-11ef-9324-d05099d1f064/myCustomFunction` and hit the `Send` button.
 4. You can get the `Script UUID` from the `Settings` option.
 
-<img src= "customerportal.png">
+<img src= "/apps/img/customerportal.png">
 
 ### **App Domain Example**
