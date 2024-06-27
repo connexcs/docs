@@ -441,7 +441,7 @@ An existing call is transferred to a different destination using the `Dial` ver
         </Response>
         ```
 
-    12. **Barge**
+    12. **Barge (Default Method)**
         ``` xml
         <?xml version="1.0" encoding="UTF-8"?>
         <Response>
@@ -499,8 +499,11 @@ An existing call is transferred to a different destination using the `Dial` ver
 |➡️Queue|✅|✅|✅|
 |➡️Client|✅|✅|❌|
 |➡️Voicemail|✅|❌|❌|
-|➡️Voicemail Inbox|✅|❌|❌|
+|🟦Voicemail Inbox|✅|❌|❌|
 |➡️Barge|✅|❌|❌|
+|🟦whisper|✅|❌|❌|
+|🟦bridge|✅|❌|❌|
+|🟦commands|✅|❌|❌|
 |**Enqueue**|✅|✅|✅|
 |**Play**|✅|✅|✅|
 |**Redirect**|✅|✅|✅|
