@@ -23,8 +23,8 @@ D --> E[User Hears Reply]
 
 ## Key Features:
 
-1. **Real-Time Transcription:** Utilizing await ctx.transcribeStart(), the system transcribes incoming calls in real time, with sentence splitting for accurate transcription.
-2. **Transcription Handling:** Upon completion of transcription, the transcribed text is processed within the event listener ctx.on('transcription', async text => {, which then halts the transcription temporarily.
+1. **Real-Time Transcription:** Convert incoming speech into text.
+2. **AI (LLM):** Intelligent humanized replies.
 3. **Text-to-Speech Response:** The system converts the transcribed text into speech using Google Text-to-Speech, providing real-time spoken responses.
 4. **Interactive Voice Conversation:** The transcription process continues in a loop, enabling continuous interaction between the caller and the language model.
 
@@ -43,7 +43,7 @@ The JavaScript code defines an asynchronous function, main, which handles a Clas
 
 ## Script Example
 
-```javascript title="AgentAI" linenums="1"
+``` javascript title="AgentAI" linenums="1"
 // Import the cxLLM module which is used for handling language model interactions
 const llm = require('cxLLM'); 
 // The main function that contains the core logic of the Class 5 Application

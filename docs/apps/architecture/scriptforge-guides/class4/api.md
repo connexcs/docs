@@ -30,67 +30,42 @@ It's mainly used to receive the `http request`, process the request and respond.
 2. **Automation**: By utilising API's endpoints, scripts and programmes can communicate with them to automate various tasks in the system.
 3. **Data Exchange**: Public APIs frequently offer useful information or features. You can leverage external services without having to start from scratch by mapping ScriptForge endpoints to public ones.
 
-### Methods to access the Script at ConnexCS
+### Methods to access the Script at ConnexCS (Externally)
 
-1. **ScriptForge (script), :material-menu-right: Page Builder (User Interface) :material-menu-right: Button Builder (Internal access)**
-2. **ScriptForge (script), :material-menu-right: Page Builder (User Interface) :material-menu-right: Domain (External access)**
-3. **`${host}api/script/${scriptUuid}/${functionName}`** (External Access)
+1. **From the Customer Portal:**
+**`${host}/api/script/${scriptUuid}/${functionName}`**
+
+```mermaid
+graph LR
+A[External HTTP Request] --> B{Customer Portal}
+B --> C{Script Forge}
+```
+
+2.**From the App Domain:**
+
+```mermaid
+graph LR
+A[External HTTP Request] --> B{App Domain}
+B --> C{Script Forge}
+```
 
 ## Libraries
 
 ## Script Example
 
-```js
-// External Computer
-function main (data) {
-	const item = {
-		"item": "potato",
-		"price": "12",
-		"currency": "USD"
-	}
-	return totalPayments(data)
-}
-
-function totalPayments (payment) {
-	// Check Database for total reported and stored payment from Binance
-	return 50
-}
-
-// Our Computer Logic (Script-Forge)
-function checkItem (item) {
-	if (item.price > 10) {
-		return "item approved"
-	} else {
-		return "price too low"
-	}
-	// const discount = 5
-	// return Number(data.price - discount)
+``` javascript
+function myCustomFunction () {
+	return 'Hello from My Custom Function`;
 }
 ```
 
-```js
-// Get total from scriptforge funcion totalPayments
-const total = await this.scriptForge('script_forge_total_payment')
+### **Customer Portal Example**
 
-// Set total to text field with ID total_count
-this.setData({
-  total_count: total
-})
-```
+1. Create a Script in the IDE section. [Click here](https://docs.connexcs.com/apps/architecture/script/#build-script) to follow the steps. In this example, we've used the above Script Example.
+2. Login to the [Postman website](https://web.postman.co/home). Click on `New Request`.
+3. Place the URL mentioned above in the `GET` field, `https://portal.test.connexcs.com/api/script/accb960b-3211-11ef-9324-d05099d1f064/myCustomFunction` and hit the `Send` button.
+4. You can get the `Script UUID` from the `Settings` option.
 
-* Access through **Button Builder**
+<img src= "customerportal.png">
 
-<img src= "/apps/img/api1.png" width="400">
-
-<img src= "/apps/img/api3.png">
-
-In this case the ScriptForge is accessible on the Customer Portal.
-
-* Access through **Script UUID**
-https://portal.test.connexcs.com/api/uuid/checkItem
-
-<img src= "/apps/img/api4.png" width= "1000">
-
-https://portal.test.connexcs.com/api/uuid/main
-
-<img src= "/apps/img/api5.png" width= "1000">
+### **App Domain Example**
