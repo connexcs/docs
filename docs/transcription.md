@@ -19,7 +19,7 @@ To enable the Transcription feature on your account, navigate to **Setup :materi
 <img src="/transcription/img/transcription-enable-transcriptions.png" enable transcription="package" width="100"/>
 
 !!! Note
-    You can find the **Pricing** of the Transcription service here: **Setup :material-menu-right: Settings :material-menu-right: Account**
+    The Transcription service fee is **$0.0150** USD per minute.
 
 !!! Warning
     Please contact us for assistance and enable the transcription service if you are unable to find the **Enable Transcription** option.
@@ -41,19 +41,21 @@ Once this service has been [enabled on your account](https://docs.connexcs.com/t
 
 <img src="/transcription/img/trans1.png" alt="enable" width="900"/>
 
-3.**Transcription Duration**: You can set a maximum recording time (in seconds) for your transcription. Please note, the recording will stop at the specified time, even if mid-sentence.
+3.**Transcription Duration**: You can set a maximum transcription time (in seconds) for your transcription service. Please note, the transcription will stop at the specified time, even if mid-sentence.
 
-4.Navigate to **Global :material-menu-right: Transcription**. You will be able to see the screen as shown below.
+#### Confirm your Transcription Service Status: 
+
+1. Navigate to **Global :material-menu-right: Transcription**. You will be able to see the screen as shown below.
 
 <img src="/transcription/img/trans2.png"/>
 
-5.You will see 3 options:
+2.You will see 3 options:
 
 * **Select**: Select from query profiles built using the [Transcription Query Profile](https://bani-transcription--connexcs-docs.netlify.app/transcription/#transcription-query-profile).
 * **Search**: Allows you to search things like the **Call ID**, **Phrases** etc. [Click here](https://docs.connexcs.com/transcription/#search-transcriptions) to know more.
 * [Transcription Query Profile](https://bani-transcription--connexcs-docs.netlify.app/transcription/#transcription-query-profile).
 
-6.The columns in the field include:
+3.The columns in the field include:
 
 * **Call ID**: Particular Call ID.
 * **Date**: Date of the call.
@@ -69,14 +71,6 @@ To create a package to resell to your customers, go to Config :material-menu-rig
 Select your **Retail Cost** and click on <img src="/transcription/img/transcriptions-save.png" alt="save" width="120"/> and choose your Transcription Package from **ConnexCS Package**.
 
 <img src="/transcription/img/transcription-package.png" alt="package" width="500"/>
-
-### Automated Transcriptions
-
-Add Package to Customers Account, assign the **Quantity**, and also assign a **Start Date** and **End date** to the package. At the End Date, the package will automatically stop working.
-
-<img src="/transcription/img/transcriptions-automated-transcriptions.png" alt="automated transcript" width="400"/>
-
-Click on <img src="/transcription/img/transcriptions-save.png" alt="save" width="120"/>, and the package will be available with the customer.
 
 ## Search Transcriptions
 
