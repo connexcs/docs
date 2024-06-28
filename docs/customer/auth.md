@@ -54,8 +54,7 @@ To enable, click **:material-plus:** next to IP Authentication:
         :material-menu-right: **`SMPP`**: SMPP, for SMS, is not currently supported.
     + **Port**: Default = 5060. If using TLS protocol, this should be set to 5061. 
     + **Dial Pattern**: The default selection is the industry standard.
-    + **CLI Prefix, Tech Prefix**:  Do NOT Use these fields. Use the Parameter Rewrite tab to modify numbers. 
-    + **Force From**: Do NOT use these fields.
+    + **CLI Prefix, Tech Prefix, Force From**:  Do NOT Use these fields. Use the Parameter Rewrite tab to modify numbers. 
     + **Username, and Password**: Set when sending calls out (egress switch direction) to a remote system. 
     Set this to allow the ConnexCS switch to operate as a client or UAC. Not typically recommended unless the customer has a very specialized system. 
     + **Force NAT**: Forces the switch to read the IP address the traffic was received from, not the IP in the SIP packet. (See [**Far-End NAT Traversal**](https://docs.connexcs.com/far-end-nat-traversal/) for more details on how ConnexCS handles NAT for SIP.)
@@ -83,8 +82,8 @@ To enable, click **:material-plus:** next to IP Authentication:
 
     1. Click **`+`**.
     2. **Type**: Select the parameter to modify.
-    3. **Current**: Enter the prefix for the destination number, or the CLI.
-    4. **New**: Enter what should replace the current information. You also have the option to generate a regular expression using `AI Generate Regular Expression`.
+    3. **Current**: Enter the prefix for the destination number, or the CLI. You also have the option to generate a regular expression using `AI Generate Regular Expression`.
+    4. **New**: Enter what should replace the current information.
     5. Use the **Testing** `Input` field to verify if the replacement is working as expected. 
     6. Click **`Save`** when done. 
     7. If a parameter rewrite is already created, you will have the ability to test it from the main tab. 
@@ -137,7 +136,8 @@ To enable, click **:material-plus:** next to SIP User Authentication:
     + **SIP Profile**: You can select the created [SIP Profile](https://docs.connexcs.com/setup/config/sip-profile/) here.
     + **Username**: This will be the Username used for SIP authentication (must match configuration on the customer UAC). If the Customer has [**Internal Number Block**](https://docs.connexcs.com/customer/main/#internal-number-block) set on the **Main** tab, you can only select the Username from available extensions. If a Username is already in use on the Account, they will get an error "Duplicate User Detected".
     + **Password**: Must match with the configuration on the customer UAC.
-    + **Channels, Flow Speed**; Do NOT use these fields. 
+    + **Channels**: Set the maximum number of concurrent calls for this switch. 
+    + **Flow Speed**: Set the Calls Per Second (CPS) (0 = unlimited calls). 
     + **Protocol**: Select the protocol for SIP (call signaling) RTP (transport/audio). 
     
         :material-menu-right: **`UDP`**: SIP and RTP are unencrypted and transported over UDP.
