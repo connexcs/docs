@@ -84,7 +84,7 @@ To create the query list, please follow the steps below:
 
 <img src="/transcription/img/trans3.png" width= "400"/>
 
-#### Transcription Alerts
+##### Transcription Alerts
 
 You can navigate to a specific customer's account and add a Saved Query as an alert.
 
