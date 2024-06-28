@@ -19,7 +19,7 @@ To enable the Transcription feature on your account, navigate to **Setup :materi
 <img src="/transcription/img/transcription-enable-transcriptions.png" enable transcription="package" width="100"/>
 
 !!! Note
-    The Transcription service fee is **$0.0150** USD per minute.
+    The Transcription service fee is **$0.0003** USD per minute.
 
 !!! Warning
     Please contact us for assistance and enable the transcription service if you are unable to find the **Enable Transcription** option.
@@ -31,9 +31,9 @@ To enable the Transcription feature on your account, navigate to **Setup :materi
 
 ### Add Transcription Service for your Customer
 
-Once this service has been [enabled on your account](https://docs.connexcs.com/transcription/#enable-transcription), you can follow the steps below to enable this for your customers:
+Once this service has been enabled on your account, you can follow the steps below to enable this for your customers:
 
-1. Navigate to **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Routing :material-menu-right: Ingress Routing `+` icon :material-menu-right: Media :material-menu-right: Transcribe**.
+1. Navigate to **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Routing :material-menu-right: Ingress Routing  :material-menu-right: Media :material-menu-right: Transcribe**.
 2. From the drop-down you can select from multiple options like **Disabled**, **1% Sampling**, **5% Sampling**, **25% Sampling**, **50% Sampling** and **Enabled (Always On)**.
 
 !!! Info
@@ -41,9 +41,9 @@ Once this service has been [enabled on your account](https://docs.connexcs.com/t
 
 <img src="/transcription/img/trans1.png" alt="enable" width="900"/>
 
-3.**Transcription Duration**: You can set a maximum transcription time (in seconds) for your transcription service. Please note, the transcription will stop at the specified time, even if mid-sentence.
+3.**Transcription Duration**: You can set a maximum transcription time (in seconds) for your transcription service per call. Please note, the transcription will stop at the specified time, even if mid-sentence.
 
-#### Confirm your Transcription Service Status: 
+#### Confirm your Transcription Service Status
 
 1. Navigate to **Global :material-menu-right: Transcription**. You will be able to see the screen as shown below.
 
@@ -51,11 +51,11 @@ Once this service has been [enabled on your account](https://docs.connexcs.com/t
 
 2.You will see 3 options:
 
-* **Select**: Select from query profiles built using the [Transcription Query Profile](https://bani-transcription--connexcs-docs.netlify.app/transcription/#transcription-query-profile).
+* **Select**: You can select a particular query profile built using the [Transcription Query Profile](https://bani-transcription--connexcs-docs.netlify.app/transcription/#transcription-query-profile).
 * **Search**: Allows you to search things like the **Call ID**, **Phrases** etc. [Click here](https://docs.connexcs.com/transcription/#search-transcriptions) to know more.
 * [Transcription Query Profile](https://bani-transcription--connexcs-docs.netlify.app/transcription/#transcription-query-profile).
 
-3.The columns in the field include:
+3.Description of Transcription fields:
 
 * **Call ID**: Particular Call ID.
 * **Date**: Date of the call.
@@ -64,76 +64,9 @@ Once this service has been [enabled on your account](https://docs.connexcs.com/t
 * **Leg**: Assigns `0` value to caller, `1` to the callie.
 * **Score**: While searching for the relevance of a document, the system rates it and assigns a score; this helps return the documents that best match the search criteria.
 
-### Create a Transcription Package
+#### Transcription Query Profile
 
-To create a package to resell to your customers, go to Config :material-menu-right: [Packages](https://docs.connexcs.com/customer/package/). Click on <img src="/transcription/img/transcription-add.png" alt="add" width="50"/> and choose your Transcription Package from **ConnexCS Package**.
-
-Select your **Retail Cost** and click on <img src="/transcription/img/transcriptions-save.png" alt="save" width="120"/> and choose your Transcription Package from **ConnexCS Package**.
-
-<img src="/transcription/img/transcription-package.png" alt="package" width="500"/>
-
-## Search Transcriptions
-
-Once the system performs the call transcription process, it's placed into a full-text search engine, available only to you and, (in the future) your customer.
-
-To search for transcriptions, we will be sending a query to the server, which, based on your search criteria, will return results with a score. We can use search modifiers to help us achieve this.
-
-### Search Modifiers
-
-Search modifications allow you to describe what you want to find. Specific syntax is available to help you with this.
-
-### **Lemmatization**
-
-Our built-in search engine offers Lemmatization.
-
-Lemmatization is the grouping together of different forms of the same word. It enables end users to use any variation of a base word in search queries.
-
-It helps in receiving appropriate results.
-
-For example,
-
-1. runs, running, and ran are all forms of the word **run**
-2. builds, building, or built are all forms of the word **build.**
-
-### Ad-hoc Queries
-
-To view existing transcriptions, you can enter `*` and choose the required date range, and it will return all the results.
-
-You can further refine your search using query [Search Modifiers](https://bani--connexcs-docs.netlify.app/transcription/#search-modifiers)
-
-### Saved Queries
-
-Saved queries allow you to build a query that you can reuse.
-
-The **Transcription Query Profile** enables you to construct a query list and save it.
-
-You can search the created query list for the transcribed calls.
-
-### Boolean Search
-
-You can use various Operators to refine your research:
-
-|**Operator**|**Explanation**|**Example**|
-|------------|---------------|-----------|
-|`AND`|Includes entries that contain all the keywords provided in a list, separated by `AND/&/and`|`call AND connect AND echo` \| `call and connect and echo` \| `call & connect & echo` |
-|`OR`|Include entries that contain at least one keyword from the provided list, separated by `OR/or`|`call or connect or echo` \| `call OR connect OR echo`|
-|`NOT`| This is the NOT operator it won't include the keywords prefixed by`-` symbol|`-call -connect -echo`|
-
-!!! Example
-
-    1. `AND` Operator
-    <img src="/transcription/img/and.png" width= "800">
-
-    2. `OR` Operator
-    <img src="/transcription/img/or.png" width= "800">
-
-    3. `NOT` Operator
-    <img src="/transcription/img/not.png" width= "800">
-
-!!! Tip
-    By using **multiple search operators together**, you can create more specific search queries that helps you find the most relevant entries quicker.
-
-### Transcription Query Profile
+A Transcription Query Profile is a configuration that defines how transcription services should handle if a certain word or phrase is spoken during the call.
 
 To create the query list, please follow the steps below:
 
@@ -167,3 +100,70 @@ Please follow the below steps to add the Alerts:
 6. You can also select the **Template** from the drop-down. For example, you can use this template to alert the admin/manager that Customer1's account has been disabled.
 
 <img src="/transcription/img/trans4.png" alt="transcription" width="900"/>
+
+### Create a Transcription Package
+
+To create a package to resell to your customers, go to Config :material-menu-right: [Packages](https://docs.connexcs.com/customer/package/). Click on <img src="/transcription/img/transcription-add.png" alt="add" width="50"/> and choose your Transcription Package from **ConnexCS Package**.
+
+Select your **Retail Cost** and click on <img src="/transcription/img/transcriptions-save.png" alt="save" width="120"/> and choose your Transcription Package from **ConnexCS Package**.
+
+<img src="/transcription/img/transcription-package.png" alt="package" width="500"/>
+
+## Search Transcriptions
+
+Once the system performs the call transcription process, it's kept into a full-text search engine, available only to you and, (in the future) your customer.
+
+To search for transcriptions, we will be sending a query to the server, which, based on your search criteria, will return results with a score.
+
+### Search Modifiers
+
+Search modifications allow you to describe what you want to find. Specific syntax is available to help you with this.
+
+### **Lemmatization**
+
+Our built-in search engine offers Lemmatization.
+
+Lemmatization is the grouping together of different forms of the same word. It enables end users to use any variation of a base word in search queries.
+
+It helps in receiving appropriate results.
+
+For example,
+
+1. Runs, running, and ran are all forms of the word **run**
+2. Builds, building, or built are all forms of the word **build.**
+
+### Ad-hoc Queries
+
+To view all existing transcriptions, you can enter `*` and choose the required date range.
+
+### Saved Queries
+
+Saved queries allow you to build a query that you can reuse.
+
+The **Transcription Query Profile** enables you to construct a query list and save it.
+
+You can search the created query list for the transcribed calls.
+
+### Boolean Search
+
+You can use various Operators to refine your research:
+
+|**Operator**|**Explanation**|**Example**|
+|------------|---------------|-----------|
+|`AND`|Includes entries that contain all the keywords provided in a list, separated by `AND/&/and`|`call AND connect AND echo` \| `call and connect and echo` \| `call & connect & echo` |
+|`OR`|Include entries that contain at least one keyword from the provided list, separated by `OR/or`|`call or connect or echo` \| `call OR connect OR echo`|
+|`NOT`| This is the NOT operator it won't include the keywords prefixed by`-` symbol|`-call -connect -echo`|
+
+!!! Example
+
+    1. `AND` Operator
+    <img src="/transcription/img/and.png" width= "800">
+
+    2. `OR` Operator
+    <img src="/transcription/img/or.png" width= "800">
+
+    3. `NOT` Operator
+    <img src="/transcription/img/not.png" width= "800">
+
+!!! Tip
+    By using **multiple search operators together**, you can create more specific search queries that helps you find the most relevant entries quicker.
