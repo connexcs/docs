@@ -339,8 +339,8 @@ An existing call is transferred to a different destination using the `Dial` ver
 |**Noun**|**Attribute**|**Description**|**Options**|**Default Method**|
 |--------|--------|-----|-----------|------------------|
 |`Voicemail`|`Voicemail Inbox`| It sends you to the inbox to leave a message|
-|`Barge`| `whisper`|listen to a conversation without the other party knowing|`a`, `b`, `ab`|`ab`|
-||`bridge`|listening in on a conference call where the eavesdropper isn't a participant but can still monitor the conversation|`a`, `b`, `ab`|`ab`|
+|`Barge`| `whisper`|if enabled allows you to speak with the 3rd-party|`a`(aleg), `b`(bleg), `ab`(both legs)|`ab`|
+||`bridge`|listening in on a conference call where the eavesdropper isn't a participant but can still monitor the conversation|`a`(aleg), `b`(bleg),`ab` (both legs)|`ab`|
 ||`command`|DTMF signals during eavesdrop|`true`, `false`|`true`|
 
 !!! Info
