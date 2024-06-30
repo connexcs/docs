@@ -467,7 +467,7 @@ An existing call is transferred to a different destination using the `Dial` ver
             <Dial>
                 <Barge>
                     whisper="a" <!-- Enables whisper mode in the A leg-->
-                    bridge="b" // <!-- Enables listen to B leg -->
+                    bridge="b" <!-- Enables listen to B leg -->
                     commands="false" <!-- Disables DTMF signals/commands during barge -->
                 </Barge>
             </Dial>
