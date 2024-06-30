@@ -333,7 +333,7 @@ An existing call is transferred to a different destination using the `Dial` ver
 |`Queue`|Its a queue name|
 |`Client`|It specifies a client identifier to dial|
 |`Conference`|You can connect to a conference room using the `Dial` verb's `Conference` noun|
-|`Voicemail`| You can access Voicemail using the `Dial` verb's `Voicemail` noun. [Click here](https://docs.connexcs.com/class5/voicemail/#voicemail-dialpad-options) to know more options for the Voicemail Dialpad options|
+|`Voicemail`| You can access Voicemail using the `Dial` verb's `Voicemail` noun. [Click here](https://docs.connexcs.com/class5/voicemail/#voicemail-dialpad-options) to know more about Voicemail Dialpad options|
 |`barge`|Allows you to join an ongoing call, without alerting the participants| `whisper`, `bridge`, `commands`|
 
 |**Noun**|**Attribute**|**Description**|**Options**|**Default Method**|
@@ -466,9 +466,9 @@ An existing call is transferred to a different destination using the `Dial` ver
         <Response>
             <Dial>
                 <Barge>
-                    whisper="a" // enables whisper mode in aleg
-                    bridge="b" // enables listen to in bleg
-                    commands="false" // false means no DTMF signals/commands during eavesdrop
+                    whisper="a" <!-- Enables whisper mode in the A leg-->
+                    bridge="b" // <!-- Enables listen to B leg -->
+                    commands="false" <!-- Disables DTMF signals/commands during barge -->
                 </Barge>
             </Dial>
         </Response>
@@ -480,7 +480,7 @@ An existing call is transferred to a different destination using the `Dial` ver
         <Response>
             <Dial>
                 <Barge
-                >GROUPA</Barge> // Add a group of customers in SIP Profile to listen to the conversation of that particular group. If no group is mentioned then you can listen to any ongoing calls 
+                >GROUPA</Barge> <!-- Listens to the conversation of the specified group. If no group is mentioned, it can listen to any ongoing calls for this customer -->
             </Dial>
         </Response>
         ```
