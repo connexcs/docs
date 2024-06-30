@@ -333,20 +333,20 @@ An existing call is transferred to a different destination using the `Dial` ver
 |`Queue`|Its a queue name|
 |`Client`|It specifies a client identifier to dial|
 |`Conference`|You can connect to a conference room using the `Dial` verb's `Conference` noun|
-|`Voicemail`| Your voicemails can be played using the `Voicemail` noun. [Click here](https://docs.connexcs.com/class5/voicemail/#voicemail-dialpad-options) to know more options for the Voicemail Dialpad options|
+|`Voicemail`| You can access Voicemail using the `Dial` verb's `Voicemail` noun. [Click here](https://docs.connexcs.com/class5/voicemail/#voicemail-dialpad-options) to know more options for the Voicemail Dialpad options|
 |`barge`|Allows you to join an ongoing call, without alerting the participants| `whisper`, `bridge`, `commands`|
 
 |**Noun**|**Attribute**|**Description**|**Options**|**Default Method**|
 |--------|--------|-----|-----------|------------------|
 |`Voicemail`|`Voicemail Inbox`| It sends you to the inbox to leave a message|
-|`Barge`| `whisper`|if enabled allows you to speak with the 3rd-party|`a`(aleg), `b`(bleg), `ab`(both legs)|`ab`|
-||`bridge`|listening in on a conference call where the eavesdropper isn't a participant but can still monitor the conversation|`a`(aleg), `b`(bleg),`ab` (both legs)|`ab`|
+|`Barge`| `whisper`|If enabled, allows you to speak privately to one or both legs of the call without the other party hearing.|`a`(aleg), `b`(bleg), `ab`(both legs)|`ab`|
+||`bridge`|Allows an eavesdropper to listen in on a call without being an active participant. The eavesdropper can monitor the conversation on one or both legs of the call|`a`(aleg), `b`(bleg),`ab` (both legs)|`ab`|
 ||`command`|DTMF signals during eavesdrop|`true`, `false`|`true`|
 
 !!! Info
     1. `Conference` is similar to how the `Number` noun lets you connect to another phone number.
     2. DTMF signals/ Commands in `Barge`:
-    `2 to speak with the uuid` <br> `1 to speak with the other half` <br> `3 to engage a three way` <br> `0 to restore eavesdrop to next channel`
+    `0: Restore eavesdrop mode.` <br> `1: Speak with the B leg.` <br> `2: Speak with the A leg.` <br> `3: Engage in a three-way call.` <br> `*: Move to the next channel.`
 
 !!! example
     1. **callerID**
@@ -468,7 +468,7 @@ An existing call is transferred to a different destination using the `Dial` ver
                 <Barge>
                     whisper="a" // enables whisper mode in aleg
                     bridge="b" // enables listen to in bleg
-                    commands= "false" // false means no DTMF signals/commands during eavesdrop
+                    commands="false" // false means no DTMF signals/commands during eavesdrop
                 </Barge>
             </Dial>
         </Response>
