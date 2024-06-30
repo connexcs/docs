@@ -22,7 +22,7 @@ To enable the Transcription feature on your account, navigate to **Setup :materi
     The Transcription service fee is **$0.0003** USD per minute.
 
 !!! Warning
-    Please contact us for assistance and enable the transcription service if you are unable to find the **Enable Transcription** option.
+    If you are unable to find the **Enable Transcription** option, please contact us for assistance in enabling the transcription service.
 
 !!! Info
     Please take note that there is **no fee** for **silence**.
@@ -41,7 +41,7 @@ Once this service has been enabled on your account, you can follow the steps bel
 
 <img src="/transcription/img/trans1.png" alt="enable" width="900"/>
 
-3.**Transcription Duration**: You can set a maximum transcription time (in seconds) for your transcription service per call. Please note, the transcription will stop at the specified time, even if mid-sentence.
+3.**Transcription Duration**: You can set a maximum transcription time (in seconds) for your transcription service per call. Please note, the transcription will stop at the specified time, even if it is mid-sentence.
 
 #### Confirm your Transcription Service Status
 
@@ -78,9 +78,9 @@ To create the query list, please follow the steps below:
 
     For example, you can choose **Customer Name** : **None** and **Visibility** as **Public** if you want every one of your customers to see the list.
 
-6.**Action**: Allows you to either [**Trigger Alert**](https://docs.connexcs.com/transcription/#transcription-alerts) when the phrase is detected or **Hangup** the call if that particular phrase is detected in the call.
+6. **Action**: Allows you to either [**Trigger Alert**](https://docs.connexcs.com/transcription/#transcription-alerts) when the phrase is detected or **Hangup** the call if that particular phrase is detected in the call.
 
-7.Click `Save`.
+7. Click `Save`.
 
 <img src="/transcription/img/trans3.png" width= "400"/>
 
@@ -97,7 +97,7 @@ Please follow the below steps to add the Alerts:
 3. Enter the **E-mail/Phone Number** you wish to receive the alert message.
 4. Select the **Area** as **Transcription**. For example, this alert can be used to inform Customer1 that their account has been disabled.
 5. You can also select the **Penalty** as soon as the alert triggers. This option will disable the customer's account for **1 minute**, **5 minutes**, **15 minutes**, **1 Hour**, **1 Day**, **1 Year** or just use the **Disabled** option for not using the penalty option.
-6. You can also select the **Template** from the drop-down. For example, you can use this template to alert the admin/manager that Customer1's account has been disabled.
+6. You can also select the **Template** from the drop-down.
 
 <img src="/transcription/img/trans4.png" alt="transcription" width="900"/>
 
