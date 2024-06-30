@@ -78,9 +78,6 @@ The **P-Asserted-ID** manipulation uses the same syntax as the Replace CLI.
     !!! note
         Make sure you select  the **Forced** option as **Yes**.
 
-+ **Flags**: When you select **Forced** as **Yes** and select a **Database**, you get an option to select a flag which is **Performance CLI Selection**.
-The Performance CLI Selection chooses the CLI with the best ASR.
-
 + **Dialed Number Match**: To route to a specific CLI, you dialled match number.
 
 + **Notes**: Notes give you information about the CLI.
@@ -88,6 +85,11 @@ The Performance CLI Selection chooses the CLI with the best ASR.
 + **STIR / SHAKEN Certificate:** If you apply any STIR / SHAKEN Certificate to a customer's account for calls verification, for example, whether the calls are spam.
 
     + **STIR / SHAKEN Attestation:** This is the level of a certification you can select from 3 levels `A`, `B`, or `C`.
+
++ **Flags**:
+    + *Performance CLI Selection*: When you select **Forced** as **Yes** and select a **Database**, you get an option to select a flag which is Performance CLI Selection. The Performance CLI Selection chooses the CLI with the best ASR
+    + *Stir Shaken Required*: Choose this option when no certificate is selected.
+    + *Stir Shaken Replace*: Choose this option when you wish to apply your Stir-shaken certificate instead of which is  already applied (for a call).
 
 <img src= "/customer/img/cli_new.png">
 

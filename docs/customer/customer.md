@@ -102,7 +102,8 @@ By clicking on `+` button we can add customer (see [**Create Customers**](https:
     + [**TOML**](https://en.wikipedia.org/wiki/TOML): This is a data storage mechanism for configuration, similar to INI files. It allows you to create advanced customization to set values, etc, for Script Forge to reference later. 
     + **Reseller**: Associate the customer to a preset Reseller Group (see [**Create Groups**](https://docs.connexcs.com/setup/settings/users/#create-groups) for more details.)
     + **Account Manager**: Designating the control of this account to a specific user.
-    + **Invoice Schedule**: Specify frequency for invoice generation. 
+    + **Invoice Schedule**: Specify frequency for invoice generation like Daily, Weekly or Monthly.
+    + **Flags**: Select the **Create Invoice on Payment** flag and if payment done then invoice will be generated.
     + **Invoice Due Days**: Set the allowed number of days past the due date that the invoice can go unpaid. 
     + **Invoice Template**: Select from a list of existing Templates found in **Setup :material-menu-right: Config :material-menu-right: [Templates](/setup/config/templates/)**
     + **Ext.Accounting ID**: This is used to fill in work an external accounting field to correlate between Connexcs and the external accountancy system.
@@ -110,9 +111,7 @@ By clicking on `+` button we can add customer (see [**Create Customers**](https:
     + **Call Recording Retention Days**: How long the customer wants to keep the recorded calls.
     + **Domain**: You can select the [domain](https://docs.connexcs.com/setup/integrations/portal/#configuration-options) you wish wish to access from the drop-down menu. A customer can sign into the various domains available in the system.Each domain can have different price points, support levels, features, etc.
     + **Daily Spend Limit**: The maximum limit for a customer for making calls in their chosen currency. Once the limit is reached it won't allow any new calls to connect.
-
-    !!! note
-        The daily spend day is defined from 00:00 UTC to 00:00 UTC.
+    + **Default STIR Shaken Attestation**: If an attestation level is selected here (Customer > Edit), then same attestaion will be visible in the CLI section.
 
 === "Address"
 
@@ -151,6 +150,9 @@ By clicking on `+` button we can add customer (see [**Create Customers**](https:
         In the image below you can see the time slider starts from 12:00 AM till 8:00 AM, this means your customers are only allowed to dial between 12:00 AM and 8:00 AM. After 8:00 AM your customers won't be able to call. The rest of the slots (grey color) are restricted slots.
 
         <img src= "/customer/img/restrict.png" width="400">
+
+!!! note
+    The daily spend day is defined from 00:00 UTC to 00:00 UTC.
 
 !!! note "Note that you won't be able to change the account currency once you create the account."
 

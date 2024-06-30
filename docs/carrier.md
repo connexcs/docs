@@ -102,6 +102,12 @@ From the **Carriers** page, you can perform several management operations.
     * **Tags** and **TOML:** Not applicable to carriers.
     * **Ext.Accounting ID:** This is used to fill in work in an external accounting field to correlate between Connexcs and the external accountancy system.
     * **Call Recording Retention Days:** How long the customer wants to keep the recorded calls.
+    * **Gateway Failover:** Enables automatic switching between multiple IP addresses configured within a carrier's authentication settings. By default, when a call reaches this carrier, it is attempted on one of the IPs configured in the carrier's authentication settings. If the call fails, it does not fail over to a different IP within the same carrier. However, enabling Gateway Failover allows the call to fail over to a different IP within the same carrier.
+    Gateway Failover typically offers several options that determine the behavior when a call fails on the first IP:
+        * *None*: No failover occurs.
+        * *Failover 1*: After a call fails on the first IP, the system attempts to route the call through one alternative IP configured in the authentication setting.
+        * *Failover 2*: After a call fails on the first IP, the system attempts to route the call through up to two alternative IPs.
+        * *Failover 3*: After a call fails on the first IP, the system attempts to route the call through up to three alternative IPs.
 
 === "Address"
 
