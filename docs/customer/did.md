@@ -140,7 +140,7 @@ For each Package there is an associated **Minimum Days** the package is valid fo
 
 + **P-Asserted-ID**: Either `Remove` the P-Asserted-ID so it doesn't reach the customer, or leave it `Default` to preserve it.
 
-+ **IP Quality Score (IPQS)**: It blocks spam calls based on CLIs. It won't allow the CLIs of having a specific spam score that you've selected to pass through the system. For more information on IPQS, [click here](https://www.ipqualityscore.com/).
++ **IP Quality Score (IPQS)**: IP Quality Score (IPQS) blocks calls based on CLIs. It prevents CLIs with a specific spam score that you've selected from passing through the system. For more information on IPQS, [click here](https://www.ipqualityscore.com/).
 
     !!! Warning
         The **IPQS** feature requires a paid subscription. To enable this feature navigate to **Setup :material-menu-right: Settings :material-menu-right: Account** and enable this feature.
