@@ -319,7 +319,7 @@ An existing call is transferred to a different destination using the `Dial` ver
     </Response>
     ```
 
-|**Attribute**|**Description**|**Options**|**Default Method**
+|**Attribute**|**Description**|**Options**|**Default Method**|
 |-------------|---------------|-----------|-------|
 |`callerID`|Caller ID that must be a valid E.164 format number|
 |`fromDisplayName`|The fromDisplayName string to be used as the caller id name (SIP From Display Name) presented to the destination. The string should have a maximum of 128 characters, containing only letters, numbers, spaces, and -_~!.+ special characters. If omitted, the display name will be the same as the number in the callerId field|
@@ -327,15 +327,26 @@ An existing call is transferred to a different destination using the `Dial` ver
 |`ringTone`|The ringback tone played back to the caller|`at`,`au`,`bg`,`br`,<br>`be`,`ch`,`cl`,`cn`,`cz`,</br>`de`,`dk`,`ee`,`es`,`fi`,<br>`fr`,`gr`,`hu`,`il`,`in`,<br>`it`,`lt`,`jp`,`mx`,`my`,<br>`nl`,`no`,`nz`,`ph`,`pl`,<br>`pt`,`ru`,`se`,`sg`,<br>`th`,`uk`,`us`,`us-old`,`tw`,<br>`ve`,`za`|`us`|
 |`timeout`|timeout in <Dial> lets you specify the maximum waiting time in seconds for the dialed party to answer|||
 
-|**Noun**|**Description**|
-|-------------|----------|
+|**Noun**|**Description**|**Default Method**|
+|--------|---------------|------------------|
 |`Number`|Its is an E.164 phone number|
 |`Queue`|Its a queue name|
 |`Client`|It specifies a client identifier to dial|
 |`Conference`|You can connect to a conference room using the `Dial` verb's `Conference` noun|
+|`Voicemail`| You can access Voicemail using the `Dial` verb's `Voicemail` noun. [Click here](https://docs.connexcs.com/class5/voicemail/#voicemail-dialpad-options) to know more about Voicemail Dialpad options|
+|`barge`|Allows you to join an ongoing call, without alerting the participants| `whisper`, `bridge`, `commands`|
+
+|**Noun**|**Attribute**|**Description**|**Options**|**Default Method**|
+|--------|--------|-----|-----------|------------------|
+|`Voicemail`|`Voicemail Inbox`| It sends you to the inbox to leave a message|
+|`Barge`| `whisper`|If enabled, allows you to speak privately to one or both legs of the call without the other party hearing.|`a`(aleg), `b`(bleg), `ab`(both legs)|`ab`|
+||`bridge`|Allows an eavesdropper to listen in on a call without being an active participant. The eavesdropper can monitor the conversation on one or both legs of the call|`a`(aleg), `b`(bleg),`ab` (both legs)|`ab`|
+||`command`|DTMF signals during eavesdrop|`true`, `false`|`true`|
 
 !!! Info
-    `Conference` is similar to how the `Number` noun lets you connect to another phone number.
+    1. `Conference` is similar to how the `Number` noun lets you connect to another phone number.
+    2. DTMF signals/ Commands in `Barge`:
+    `0: Restore eavesdrop mode.` <br> `1: Speak with the B leg.` <br> `2: Speak with the A leg.` <br> `3: Engage in a three-way call.` <br> `*: Move to the next channel.`
 
 !!! example
     1. **callerID**
@@ -417,6 +428,62 @@ An existing call is transferred to a different destination using the `Dial` ver
             </Dial>
         </Response>
         ```
+    
+    10. **Voicemail**
+        ``` xml
+        <?xml version="1.0" encoding="UTF-8"?>
+        <Response>
+            <Dial>
+                <Voicemail />
+            </Dial>
+        </Response>
+        ```
+    
+    11. **Voicemail Inbox**
+        ``` xml
+        <?xml version="1.0" encoding="UTF-8"?>
+        <Response>
+            <Dial>
+                <Voicemail inbox="true">
+                 <Voicemail/>
+            </Dial>
+        </Response>
+        ```
+
+    12. **Barge (Default Method)**
+        ``` xml
+        <?xml version="1.0" encoding="UTF-8"?>
+        <Response>
+            <Dial>
+                <Barge></Barge>
+            </Dial>
+        </Response>
+        ```
+    
+    13.  **Barge**
+        ``` xml
+        <?xml version="1.0" encoding="UTF-8"?>
+        <Response>
+            <Dial>
+                <Barge>
+                    whisper="a" <!-- Enables whisper mode in the A leg-->
+                    bridge="b" <!-- Enables listen to B leg -->
+                    commands="false" <!-- Disables DTMF signals/commands during barge -->
+                </Barge>
+            </Dial>
+        </Response>
+        ```
+
+    14. **Barge (Group)** 
+        ``` xml
+        <?xml version="1.0" encoding="UTF-8"?>
+        <Response>
+            <Dial>
+                <Barge
+                >GROUPA</Barge> <!-- Listens to the conversation of the specified group. If no group is mentioned, it can listen to any ongoing calls for this customer -->
+            </Dial>
+        </Response>
+        ```
 
 |**Verbs/Attributes/Nouns**|**ConnexCS (ConneXML)**|**Twilio<sup>TM</sup> (TwiML)[^1]**|**Telnyx (TeXML)[^2]**|
 |----------------------------|------------|--------------|------------|
@@ -440,6 +507,12 @@ An existing call is transferred to a different destination using the `Dial` ver
 |➡️Number|✅|✅|✅|
 |➡️Queue|✅|✅|✅|
 |➡️Client|✅|✅|❌|
+|➡️Voicemail|✅|❌|❌|
+|🟦Voicemail Inbox|✅|❌|❌|
+|➡️Barge|✅|❌|❌|
+|🟦whisper|✅|❌|❌|
+|🟦bridge|✅|❌|❌|
+|🟦commands|✅|❌|❌|
 |**Enqueue**|✅|✅|✅|
 |**Play**|✅|✅|✅|
 |**Redirect**|✅|✅|✅|
