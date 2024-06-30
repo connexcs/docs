@@ -78,7 +78,7 @@ The Form attribute helps you specify values for the following parameters for all
 
 {{ external_markdown('https://cdn.cnxcdn.com/cnxapp/docs/api.md', '') }}
 
-!!! Info 
+!!! Info
     Form Attribute :material-menu-right: Datasource :material-menu-right: ScriptForge :material-menu-right: Websocket
     WebSocket enables you to create and manage WebSocket connections within your application. WebSockets are a powerful technology for establishing persistent, two-way communication channels between a web browser and a server, enabling real-time data exchange without the need for constant polling.
 
