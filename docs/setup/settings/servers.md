@@ -15,20 +15,12 @@ Delivery is within 5 minutes.
 !!! note "Available Balance needed for server deployment"
     To deploy a server, you must have $20 (+ $20 X other servers in your account) available balance.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-!!! warning "Impact to services"
-    If you are a serious carrier *Never let your account run out of credit*. It should go without saying, but if your account runs out of credit, service is impacted, it may not instantly be restored either. We won't consider any reactivation problems critical, if you persistently top-up only enough credit to cover you for the next day.
 
-=======
-
-=======
->>>>>>> e1d162be69d165b879af178d95d0ba3cc7474e97
 !!! warning "Impact on services"
     If you are a serious carrier *Never let your account run out of credit*. It should go without saying, but if your account runs out of credit, it impacts the service and it's restoration may not be instant.
 
     It's difficult for us to consider any reactivation problems critical if you persistently top-up only enough credit to cover you for the next day.
->>>>>>> 0edcf7cc80529152fdd3e8730ca7238575d359ad
+
 
 ## Server List
 
