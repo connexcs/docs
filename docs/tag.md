@@ -146,8 +146,9 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 
    + **TCPA  Litigator DNC**: Enabling this flag blocks outbound calls to known TCPA Litigators.
    + **On Net Call Routing**: Enabling this flag determines if a call should be routed internally  between customers to DID's.
-        !!! Info "Call Routing Process"
-            ```mermaid
+
+    !!! Info "Call Routing Process"
+        ```mermaid
             graph LR
             A[Customer A makes a call using the route with the ON NET CALLING flag] --> B{Syatem checks the dialed number and compares it against DIDs added to the account across all customers}
             B -- Yes: If the dialed number matches any DID in the account--> C{Route call internally to the matching DID}
