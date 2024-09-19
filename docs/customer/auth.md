@@ -79,11 +79,10 @@ To enable, click **:material-plus:** next to IP Authentication:
         <img src= "/customer/img/cliauth1.png" width="1000">
         
         + **Setting Up CLIs or Regular Expressions**:
-              + Navigate to **Customer :material-menu-right: Customer [Name] :material-menu-right: Routing :material-menu-right: CLI :material-menu-right: click on the blue `+` sign**.
-  
-              + Enter the specific CLIs or Regular expressions associated with the customer.
-  
-              + This configuration allows the system to match incoming call CLIs with the defined patterns.
+              
+            + Navigate to **Customer :material-menu-right: Customer [Name] :material-menu-right: Routing :material-menu-right: CLI :material-menu-right: click on the blue `+` sign**.
+            + Enter the specific CLIs or Regular expressions associated with the customer.
+            + This configuration allows the system to match incoming call CLIs with the defined patterns.
 
         <img src= "/customer/img/cliauth2.png" width= "1000">
 
