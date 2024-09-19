@@ -156,8 +156,10 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
     We don't charge you again if you repeat your lookup within 24-hours of time-span.
 
 **Flags**:
-+ **TCPA  Litigator DNC**: Enabling this flag blocks outbound calls to known TCPA Litigators.
-+ **On Net Call Routing**: Enabling this flag determines if a call should be routed internally  between customers to DID's.
+
+  + **TCPA  Litigator DNC**: Enabling this flag blocks outbound calls to known TCPA Litigators.
+
+  + **On Net Call Routing**: Enabling this flag determines if a call should be routed internally  between customers to DID's.
         !!! Info "Call Routing Process"
             ```mermaid
             graph LR
