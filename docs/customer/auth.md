@@ -77,7 +77,6 @@ To enable, click **:material-plus:** next to IP Authentication:
                     3. This step ensures that the system will use CLI Authentication to differentiate customers with the same IP address.
 
         <img src= "/customer/img/cliauth1.png" width="1000">
-                
                 + **Setting Up CLIs or Regular Expressions**:
                     
                     1. Navigate to **Customer :material-menu-right: Customer [Name] :material-menu-right: Routing :material-menu-right: CLI :material-menu-right: click on the blue `+` sign**.

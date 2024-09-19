@@ -142,6 +142,23 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 
 <img src= "/misc/img/t6.png">
 
+6. **Flags**:
++ **TCPA  Litigator DNC**: Enabling this flag blocks outbound calls to known TCPA Litigators.
++ **On Net Call Routing**: Enabling this flag determines if a call should be routed internally  between customers to DID's.
+        !!! Info "Call Routing Process"
+            ```mermaid
+            graph LR
+            A[Customer A makes a call using the route with the ON NET CALLING flag] --> B{Syatem checks the dialed number and compares it against DIDs added to the account across all customers}
+            B -- Yes: If the dialed number matches any DID in the account--> C{Route call internally to the matching DID}
+            B -- No: If the dialed number doesnt match any DID in the account--> D{Route call externally via carrier as configured}
+            ```
+
+!!! Note "Enabling TCPA  Litigator DNC flag and On Net Call Routing flag"
+    1. **Navigate to Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Routing :material-menu-right: Locks :material-menu-right: TCPA  Litigator DNC/On Net Call Routing**.
+    2. Click on the checkbox to enable the required flags.
+    3. Click on `Save`.
+    <img src= "/customer/img/tcpa.png">
+
 #### Media
 
 1. **Transcoding**: Enter the number  of channels allowed for transcoding. This is a limited option. The best use case is for customers in low-bandwidth areas that want to use G.729.
