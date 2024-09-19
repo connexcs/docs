@@ -68,20 +68,21 @@ To enable, click **:material-plus:** next to IP Authentication:
   
         <img src= "/customer/img/advanced.png" width= "600">
     
-        + **CLI Authentication**: Select this flag to distinguish between multiple customers sharing the same IP address by using CLI Authentication instead of tech prefix.
+        + **CLI Authentication**: Select this flag to distinguish between multiple customers sharing the same IP address by using CLI Authentication instead of Tech Prefix.
             + **Setup Process**
-                + Configuring IP Authentication:
+                + **Configuring IP Authentication**:
                     1. Navigate to **Customer :material-menu-right: Customer [Name] Auth :material-menu-right: IP Authentication :material-menu-right: click on the blue `+` sign**.
-                    2. Under **Advanced settings :material-menu-right: Flag :material-menu-right: Enable CLI Authentication.
+                    2. Under **Advanced settings :material-menu-right: Flag :material-menu-right: Enable CLI Authentication**.
                     3. This step ensures that the system will use CLI Authentication to differentiate customers with the same IP address.
 
-        <img src= "/customer/img/cliauth1.png">
+        <img src= "/customer/img/cliauth1.png" width="500">
 
-            + **Setting Up CLIs or Regular Expressions**:
-                1. Navigate to **Customer :material-menu-right: Customer [Name] :material-menu-right: Routing :material-menu-right: CLI :material-menu-right: click on the blue `+` sign**.
-                2. Enter the specific CLIs or Regular expressions associated with the customer. 
-                3. This configuration allows the system to match incoming call CLIs with the defined patterns.
-    <img src= "/customer/img/cliauth2.png" width= "600">
+                + **Setting Up CLIs or Regular Expressions**:
+                    1. Navigate to **Customer :material-menu-right: Customer [Name] :material-menu-right: Routing :material-menu-right: CLI :material-menu-right: click on the blue `+` sign**.
+                    2. 1. Enter the specific CLIs or Regular expressions associated with the customer.
+                    3. This configuration allows the system to match incoming call CLIs with the defined patterns.
+
+        <img src= "/customer/img/cliauth2.png" width= "1000">
 
     !!! Info "Call Routing Logic"
         ```mermaid
