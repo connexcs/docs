@@ -67,6 +67,37 @@ To enable, click **:material-plus:** next to IP Authentication:
         + **CLI Tags**: Set the CLI Authentication and `Save` it for the required customer. Then go to **Routing** and put some CLI's in the allow list. For example, you have allowed 1234567 (CLI) in Routing, and add 1234578 (CLI) in the Customer. When this customer receives a call, it will be able to differentiate where the call (traffic) is from with the help of CLI Tags.
   
     <img src= "/customer/img/advanced.png" width= "600">
+    
+        + **CLI Authentication**: Select this flag to distinguish between multiple customers sharing the same IP address by using CLI Authentication instead of tech prefix.
+            + **Setup Process**
+                + Configuring IP Authentication:
+                    1. Navigate to **Customer :material-menu-right: Customer [Name] Auth :material-menu-right: IP Authentication :material-menu-right: click on the blue `+` sign**.
+                    2. Under **Advanced settings :material-menu-right: Flag :material-menu-right: Enable CLI Authentication.
+                    3. This step ensures that the system will use CLI Authentication to differentiate customers with the same IP address.
+
+    <img src= "/customer/img/cliauth1.png" width= "600">
+
+            + **Setting Up CLIs or Regular Expressions**:
+                1. Navigate to **Customer :material-menu-right: Customer [Name] :material-menu-right: Routing :material-menu-right: CLI :material-menu-right: click on the blue `+` sign**.
+                2. Enter the specific CLIs or Regular expressions associated with the customer. 
+                3. This configuration allows the system to match incoming call CLIs with the defined patterns.
+    <img src= "/customer/img/cliauth2.png" width= "600">
+
+    !!! Info "Call Routing Logic"
+        When a call arrives, the system will first check the source IP address.
+        If the IP address matches an entry in the IP Authentication configuration, the system will then check the CLI of the incoming call.
+        If both the IP address and the CLI match the configuration for a particular customer, the call will be routed to that customer.
+    
+    ```mermaid
+    graph LR
+    A[Call Arrives] --> B{Check Source IP Address}
+    B --> |If the IP address matches with the entry in the Authentication configuration| C{Check CLI of the incoming call}
+    C --> |If both CLI and IP address match the configuration for a particular customer| D{Route Call to Customer}
+    ```
+
+    !!! Warning "Ensuring Consistent CLI Authentication Flag"
+        Ensure that the CLI Authentication flag is consistently added to the IP configuration across all customers sharing the same IP address.
+        This is crucial for the system to correctly apply the CLI-based routing logic.
 
 === "Codecs"
 
