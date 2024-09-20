@@ -14,7 +14,7 @@ When someone logs into the [Web Phone](https://docs.connexcs.com/webphone/), the
 
 1. Go to **Setup :material-menu-right: Config :material-menu-right: SIP Profile** and you will see a screen as shown below. Then click the **blue `+` button**.![sip12](/setup/img/sip12.jpg)
 
-2. A window will appear after you click on the `+` button. It will let you create a new SIP Profile. As you can see, the window has 3 fields for setting up the SIP Profile<img src="/setup/img/barge1.jpg)">
+2. A window will appear after you click on the `+` button. It will let you create a new SIP Profile. Fill in the following details. <img src="/setup/img/barge1.jpg">
 
     2.1 **Name**: This is a required field that will display your SIP Profile's name.
 
