@@ -16,17 +16,14 @@ When someone logs into the [Web Phone](https://docs.connexcs.com/webphone/), the
 
 2. A window will appear after you click on the `+` button. It will let you create a new SIP Profile. Fill in the following details.
 
-<img src="/setup/img/barge1.png" width="600">
+   + **Name**: This is a required field that will display your SIP Profile's name.
+   + **Profile Capacity**: This field enables you to add the number of people who can use this profile to access the features.
+   + **Flags**: This field allows you to select one or multiple features that the user can access.![sip3](/setup/img/sip3.jpg)
+   + **Barge Group**: This field allows you add a group to the user. It allows the user to `listen` to the conversation of the specified group using Barge in [ConneXML-Barge Groups](https://docs.connexcs.com/class5/connexml/#dial).
 
-    2.1 **Name**: This is a required field that will display your SIP Profile's name.
-
-    2.2 **Profile Capacity**: This field enables you to add the number of people who can use this profile to access the features.
-
-    2.3 **Flags**: This field allows you to select one or multiple features that the user can access.![sip3](/setup/img/sip3.jpg)
-
-     2.4 **Barge Group**: This field allows you add a group to the user. It allows the user to `listen` to the conversation of the specified group using Barge in [ConneXML-Barge Groups](https://docs.connexcs.com/class5/connexml/#dial).
-
-    !!! Note
-        The values entered should be plain text, **^[a-z_0-9]+$ only**.
+!!! Note
+    The values entered should be plain text, **^[a-z_0-9]+$ only**.
 
 3. Click on `Save` to create a new profile.
+
+<img src="/setup/img/barge1.png" width="500">
