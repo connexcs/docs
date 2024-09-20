@@ -311,7 +311,37 @@ Routes highlighted in red on the customer Routing page gets disabled. Open the r
 
 &emsp; ![alt text][routing-disabled]
 
-## Use Case for the Tech Prefix
+## Tech Prefix
+
+**1. What is Tech Prefix?**
+   A Tech Prefix is a string of numbers, added to the dialed number (DNIS) before sending the call.
+
+**2. Purpose of Tech Prefix:**
+
+   + **Customer Identification**: It allows routing calls for different customers using the same inbound IP by specifying which customer the call belongs to.
+   + **Routing Control**: It can be used to direct calls to specific routes or carriers depending on the prefix.
+
+**3. How it Works?**
+
+```mermaid
+graph TB
+A[Tech prefix added to the dialed number before sending the call] --> B{VoIP identifies the Tech Prefix}
+B --> C{Strip Tech Prefix}
+C --> D{Route Call Based on Rules configured for that Prefix}
+```
+
+**Example Workflow**
+
+```mermaid
+flowchart TB
+    A[Call Ingress] -- A call is made to a number with a tech prefix (e.g., 123*123456789) ---B[Prefix Matching] -- The system checks if the prefix 123* matches a configured customer or route ---C[Stripping Prefix] -- The system strips off the 123*, leaving the actual number 123456789.---D[Call Routing] --Based on the tech prefix, the call is routed to the associated customer or carrier ---End
+```
+
+**4. Advantages**
+
++ Flexibility in routing calls to different customers using a shared IP or trunk.
+
+### Use Case for the Tech Prefix
 
 Using Tech Prefix with SIP User "Parameter Rewrites" allows for significant granularity to manage permissions for how to connect a user's calls.
 
@@ -321,6 +351,17 @@ Using Tech Prefix with SIP User "Parameter Rewrites" allows for significant gran
 
 2. Add a Tech Prefix for that user in Routing. In this example, it would be 1234.
 3. Set how you want those calls routed: Internal to Class5, out to a provider, etc.
+
+!!! Example
+    ```mermaid
+    graph
+    A[Incoming Call with 001*123456789] -- Call will be routed to Customer A --- B[Customer A Prefix: 001]
+    subgraph Customers
+    B[Customer A Prefix: 001] & C[Customer B Prefix: 002]
+    end
+    B[Customer A Prefix: 001]-- Prefix 001* will be stripped  before passing the call to the destination number 123456789 --- Destination
+    ```
+
 
 ## Answer Seizure Ratio Plus Details
 
