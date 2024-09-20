@@ -14,7 +14,9 @@ When someone logs into the [Web Phone](https://docs.connexcs.com/webphone/), the
 
 1. Go to **Setup :material-menu-right: Config :material-menu-right: SIP Profile** and you will see a screen as shown below. Then click the **blue `+` button**.<img src="/setup/img/sippro.png">
 
-2. A window will appear after you click on the `+` button. It will let you create a new SIP Profile. Fill in the following details. <img src="/setup/img/barge1.png" width="300">
+2. A window will appear after you click on the `+` button. It will let you create a new SIP Profile. Fill in the following details.
+
+<img src="/setup/img/barge1.png" width="600">
 
     2.1 **Name**: This is a required field that will display your SIP Profile's name.
 
@@ -24,7 +26,7 @@ When someone logs into the [Web Phone](https://docs.connexcs.com/webphone/), the
 
      2.4 **Barge Group**: This field allows you add a group to the user. It allows the user to `listen` to the conversation of the specified group using Barge in [ConneXML-Barge Groups](https://docs.connexcs.com/class5/connexml/#dial).
 
-            !!! Note
-                The values entered should be plain text, **^[a-z_0-9]+$ only**.
+    !!! Note
+        The values entered should be plain text, **^[a-z_0-9]+$ only**.
 
 3. Click on `Save` to create a new profile.
