@@ -334,7 +334,7 @@ C --> D{Route Call Based on Rules configured for that Prefix}
 **Example Workflow**
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[Call Ingress] -- A call is made to a number with a tech prefix (e.g., 123*123456789) ---B[Prefix Matching] -- The system checks if the prefix 123* matches a configured customer or route ---C[Stripping Prefix] -- The system strips off the 123*, leaving the actual number 123456789.---D[Call Routing] --Based on the tech prefix, the call is routed to the associated customer or carrier ---End
 ```
 
