@@ -22,7 +22,7 @@ When someone logs into the [Web Phone](https://docs.connexcs.com/webphone/), the
 
     2.3 **Flags**: This field allows you to select one or multiple features that the user can access.![sip3](/setup/img/sip3.jpg)
 
-     2.4 **Barge Group**: This field allows you add a group to the user. It allows the user to `listen` to the conversation of the specified group using Barge in (Connexml)[Barge Groups](https://docs.connexcs.com/class5/connexml/#dial).
+     2.4 **Barge Group**: This field allows you add a group to the user. It allows the user to `listen` to the conversation of the specified group using Barge in [ConneXML-Barge Groups](https://docs.connexcs.com/class5/connexml/#dial).
 
      !!! Note
          The values entered should be plain text, **^[a-z_0-9]+$ only**.
