@@ -111,7 +111,7 @@ By clicking on `+` button we can add customer (see [**Create Customers**](https:
     + **Call Recording Retention Days**: How long the customer wants to keep the recorded calls.
     + **Domain**: You can select the [domain](https://docs.connexcs.com/setup/integrations/portal/#configuration-options) you wish wish to access from the drop-down menu. A customer can sign into the various domains available in the system.Each domain can have different price points, support levels, features, etc.
     + **Daily Spend Limit**: The maximum limit for a customer for making calls in their chosen currency. Once the limit is reached it won't allow any new calls to connect.
-    + **Default STIR Shaken Attestation**: The attestation level that is selected here same attestation level will be applied to the CLIs that your customer adds from customer portal.
+    + **Default STIR Shaken Attestation**: The attestation level you select here is the same attestation level that will be applied to the CLIs that your customer adds from customer portal.
 
 === "Address"
 
