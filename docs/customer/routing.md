@@ -314,7 +314,8 @@ Routes highlighted in red on the customer Routing page gets disabled. Open the r
 ## Tech Prefix
 
 **1. What is Tech Prefix?**
-   A Tech Prefix is a string of numbers, added to the dialed number (DNIS) before sending the call.
+   
+A Tech Prefix is a string of numbers, added to the dialed number (DNIS) before sending the call.
 
 **2. Purpose of Tech Prefix:**
 
@@ -324,7 +325,7 @@ Routes highlighted in red on the customer Routing page gets disabled. Open the r
 **3. How it Works?**
 
 ```mermaid
-graph TB
+graph LR
 A[Tech prefix added to the dialed number before sending the call] --> B{VoIP identifies the Tech Prefix}
 B --> C{Strip Tech Prefix}
 C --> D{Route Call Based on Rules configured for that Prefix}
@@ -333,7 +334,7 @@ C --> D{Route Call Based on Rules configured for that Prefix}
 **Example Workflow**
 
 ```mermaid
-flowchart TB
+flowchart LR
     A[Call Ingress] -- A call is made to a number with a tech prefix (e.g., 123*123456789) ---B[Prefix Matching] -- The system checks if the prefix 123* matches a configured customer or route ---C[Stripping Prefix] -- The system strips off the 123*, leaving the actual number 123456789.---D[Call Routing] --Based on the tech prefix, the call is routed to the associated customer or carrier ---End
 ```
 

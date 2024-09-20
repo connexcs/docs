@@ -16,7 +16,7 @@ Configure **Options** to set key default behaviors for the system. Click **`Edit
     |**Payment Details**|You can add custom messages and display details such as bank account information, simplifying the payment process. This is for display purposes only.|
     |**Payment Description**|Description that's displayed for payment methods such as PayPal and Stripe.|
     |**Smart Loading of Grid Tables**|You can choose this option to automatically load the tables while you scroll the page.|
-    |**Package Charge Notification Days**|You can set the package notification date. An e-mail will be sent the number of days before you wish to recharge the package|
+    |**Package Charge Notification Days**|You can set the package notification date. An e-mail will be sent the number of days before you wish to recharge the package.|
     |**Circuit Test User**|Select the account from which calls come for circuit testing.|
     |**Alpha and Beta Feature Previews**|Provide access to new and upcoming features.|
     |**Invoice Line Grouping**|Find whether generated invoices display one line per day or one line per destination.|
