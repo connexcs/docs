@@ -160,7 +160,7 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
   + **TCPA  Litigator DNC**: Enabling this flag blocks outbound calls to known TCPA Litigators.
 
   + **On Net Call Routing**: Enabling this flag determines if a call should be routed internally  between customers to DID's.
-    
+
     !!! Info "Call Routing Process"
         ```mermaid
         graph LR
