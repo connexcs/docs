@@ -64,9 +64,40 @@ To enable, click **:material-plus:** next to IP Authentication:
     This reduces management overhead as a customer only needs to authorize a single IP. 
     Additionally, multiple addresses can be load-balanced using the AnyEdge system. 
     + **Flags**: Set CLI Authentication for situations where Accounts are unable to use [**Tech Prefix**](https://docs.connexcs.com/customer/routing/#basic) to differentiate customers using the same IP. CLI Tags is another way to do it.
-        + **CLI Tags**: Set the CLI Authentication and `Save` it for the required customer. Then go to **Routing** and put some CLI's in the allow list. For example, you have allowed 1234567 (CLI) in Routing, and add 1234578 (CLI) in the Customer. When this customer receives a call, it will be able to differentiate where the call (traffic) is from with the help of CLI Tags.
   
-    <img src= "/customer/img/advanced.png" width= "600">
+        <img src= "/customer/img/advanced.png" width= "600">
+    
+        + **CLI Authentication**: Select this flag to distinguish between multiple customers sharing the same IP address by using CLI Authentication instead of Tech Prefix.
+            + **Setup Process**
+                + **Configuring IP Authentication**:
+                    1. Navigate to **Customer :material-menu-right: Customer [Name] Auth :material-menu-right: IP Authentication :material-menu-right: click on the blue `+` sign**.
+                    2. Under **Advanced settings :material-menu-right: Flag :material-menu-right: Enable CLI Authentication**.
+                    3. This step ensures that the system will use CLI Authentication to differentiate customers with the same IP address.
+
+        <img src= "/customer/img/cliauth1.png" width="1000">
+        
+        + **Setting Up CLIs or Regular Expressions**:
+              
+            + Navigate to **Customer :material-menu-right: Customer [Name] :material-menu-right: Routing :material-menu-right: CLI :material-menu-right: click on the blue `+` sign**.
+            + Enter the specific CLIs, or Regular expressions associated with the customer.
+            + This configuration allows the system to match incoming call CLIs with the defined patterns.
+
+        <img src= "/customer/img/cliauth2.png" width= "1000">
+    
+    !!! Info
+        You can Use DID for CLI Authentication
+
+    !!! Info "Call Routing Logic"
+        ```mermaid
+        graph LR
+        A[Call Arrives] --> B{Check Source IP Address}
+        B --> |If the IP address matches with the entry in the Authentication configuration| C{Check CLI of the incoming call}
+        C --> |If both CLI and IP address match the configuration for a particular customer| D{Route Call to Customer}
+        ```
+
+    !!! Warning "Ensuring Consistent CLI Authentication Flag"
+        Ensure that the CLI Authentication flag is consistently added to the IP configuration across all customers sharing the same IP address.
+        This is crucial for the system to correctly apply the CLI-based routing logic.
 
 === "Codecs"
 
