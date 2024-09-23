@@ -64,8 +64,6 @@ To enable, click **:material-plus:** next to IP Authentication:
     This reduces management overhead as a customer only needs to authorize a single IP. 
     Additionally, multiple addresses can be load-balanced using the AnyEdge system. 
     + **Flags**: Set CLI Authentication for situations where Accounts are unable to use [**Tech Prefix**](https://docs.connexcs.com/customer/routing/#basic) to differentiate customers using the same IP. CLI Tags is another way to do it.
-    
-        + **CLI Tags**: Set the CLI Authentication and `Save` it for the required customer. Then go to **Routing** and put some CLI's in the allow list. For example, you have allowed 1234567 (CLI) in Routing, and add 1234578 (CLI) in the Customer. When this customer receives a call, it will be able to differentiate where the call (traffic) is from with the help of CLI Tags.
   
         <img src= "/customer/img/advanced.png" width= "600">
     
@@ -81,10 +79,13 @@ To enable, click **:material-plus:** next to IP Authentication:
         + **Setting Up CLIs or Regular Expressions**:
               
             + Navigate to **Customer :material-menu-right: Customer [Name] :material-menu-right: Routing :material-menu-right: CLI :material-menu-right: click on the blue `+` sign**.
-            + Enter the specific CLIs or Regular expressions associated with the customer.
+            + Enter the specific CLIs, or Regular expressions associated with the customer.
             + This configuration allows the system to match incoming call CLIs with the defined patterns.
 
         <img src= "/customer/img/cliauth2.png" width= "1000">
+    
+    !!! Info
+        You can Use DID for CLI Authentication
 
     !!! Info "Call Routing Logic"
         ```mermaid
