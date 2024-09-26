@@ -222,7 +222,7 @@ This feature helps you manipulate or remove headers.
 
 Below are some examples for removing headers for all or specific destinations.
 
-```
+``` { .yaml .annotate }
 
 function main(data) {
 
