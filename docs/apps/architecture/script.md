@@ -106,7 +106,7 @@ function main (data = {}) {
 
 A driver is a module export that may contain several pre-defined functions dependent on the integration; flow is an example for a DID Driver.
 
-``` js { .yaml .copy }
+``` js
 module.export = {
     search: async function ({number}) {
     // Returns Array of Objects, e.g [{did:'1234'}]
@@ -222,7 +222,7 @@ This feature helps you manipulate or remove headers.
 
 Below are some examples for removing headers for all or specific destinations.
 
-``` { .yaml .copy }
+```
 
 function main(data) {
 

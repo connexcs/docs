@@ -76,7 +76,7 @@ Internal links- Use the same, but I have been working on converting to folder ra
 ### Code format
 + When entering code (such as Javascript or Python) = ``` ``` (bookend with triple back-ticks). Ex:
     
-    ``` { .yaml .copy }
+    ```
     function main (data = {}) {
 	        // data contains object containing key/value pairs from the form. 
     }
