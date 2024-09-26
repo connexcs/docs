@@ -11,8 +11,8 @@ theme:
   features:
     - navigation.instant
     - navigation.tabs
-    - content.code.copy
     - content.code.annotate
+    - content.code.copy
   palette:
     - scheme: default
       toggle:
