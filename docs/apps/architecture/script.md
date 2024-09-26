@@ -106,7 +106,7 @@ function main (data = {}) {
 
 A driver is a module export that may contain several pre-defined functions dependent on the integration; flow is an example for a DID Driver.
 
-``` js
+``` js {.copy }
 module.export = {
  search: async function ({number}) {
   // Returns Array of Objects, e.g [{did:'1234'}]
