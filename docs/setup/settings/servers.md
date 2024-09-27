@@ -189,11 +189,11 @@ You can use **Ping** and **MTR**  to test network connectivity and performance.
 2. Click on ![alt text](image.png) icon next to your IP address.
 3. A window will pop-up where you enter the Hostname or IP Address.
 
-<img src="docs/setup/img/server1.png">
+<img src="/setup/img/server1.png">
 
-4. Click **Run** to see the results.
+4.Click **Run** to see the results.
 
-<img src="docs/setup/img/ping.png">
+<img src="/setup/img/ping.png">
 
 <img src="/setup/img/mtr.png">
 
