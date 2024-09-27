@@ -66,6 +66,13 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 
 + **DNO**: [Click here](https://docs.connexcs.com/dnc/#do-not-originate-dno-list-blocking) to know more about it.
 
++ **Stir Shaken Min Attest**: It enables the selection of STIR/SHAKEN attestation levels for validating incoming calls. Users can configure the system to permit only calls that meet specific attestation standards. The available validation levels are as follows:
+    + **A**: Permits only calls with attestation level A, the highest level of trust. Calls with attestation levels B or C will be blocked.
+    + **A + B**: Restricts incoming calls to only those with attestation levels A or B. Calls with attestation level C will be blocked.
+    + **A + B + C**: Allows calls with any attestation level (A, B, or C) to pass through.
+
+In all cases, calls without attestation will also be blocked.  
+
 ### Capacity Limits
 
 + **Channels**: Set the maximum number of channels/live calls allowed for this route.
