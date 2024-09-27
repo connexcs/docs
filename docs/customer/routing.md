@@ -71,7 +71,8 @@ View and configure existing routes on the Routing tab in the Customer card. To c
     + **A + B**: Restricts incoming calls to only those with attestation levels A or B. Calls with attestation level C will be blocked.
     + **A + B + C**: Allows calls with any attestation level (A, B, or C) to pass through.
 
-In all cases, calls without attestation will also be blocked.  
+!!! Note
+    In all cases, calls without attestation will also be blocked.  
 
 ### Capacity Limits
 

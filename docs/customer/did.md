@@ -140,6 +140,8 @@ For each Package there is an associated **Minimum Days** the package is valid fo
     + **A**: Permits only calls with attestation level A, the highest level of trust. Calls with attestation levels B or C will be blocked.
     + **A + B**: Restricts incoming calls to only those with attestation levels A or B. Calls with attestation level C will be blocked.
     + **A + B + C**: Allows calls with any attestation level (A, B, or C) to pass through.
+!!! Note
+    In all cases, calls without attestation will also be blocked.
 
 + **Tags**: Add these for informational purposes.
 
