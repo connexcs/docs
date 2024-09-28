@@ -36,7 +36,7 @@ To enable, click **:material-plus:** next to IP Authentication:
     + **Channels**: Set the maximum number of concurrent calls for this switch. 
     + **Flow Speed**: Set the Calls Per Second (CPS) (0 = unlimited calls).   
     
-        ![alt text][ipauth-basic]
+        <img src="/customer/img/basic12.png">
 
 === "Advanced"
 
