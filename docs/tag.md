@@ -76,8 +76,13 @@ Routing Tag helps you strategize the Routing options for your customer. You can 
 3. **Block Connect Cost**: Block any call that has a connection fee.
 4. **FTC DNC Report ANI Block (USA)**: When Enabled, ConnexCS will take a copy of FTC data (using the FCC's Do Not Call (DNC) Reported Calls Data API) and add it to the system. We can then block callers from known spammer CLI / ANI's.
 5. **DNO**: [Click here](https://docs.connexcs.com/dnc/#do-not-originate-dno-list-blocking) to know more about it.
+6. **Stir Shaken Min Attest**: It enables the selection of STIR/SHAKEN attestation levels for validating incoming calls. Users can configure the system to permit only calls that meet specific attestation standards. The available validation levels are as follows:
+    + **A**: Permits only calls with attestation level A, the highest level of trust. Calls with attestation levels B or C will be blocked.
+    + **A + B**: Restricts incoming calls to only those with attestation levels A or B. Calls with attestation level C will be blocked.
+    + **A + B + C**: Allows calls with any attestation level (A, B, or C) to pass through.
 
-<img src= "/misc/img/t3.png">
+!!! Note
+    In all cases, calls without attestation will also be blocked.
 
 #### Capacity Limits
 

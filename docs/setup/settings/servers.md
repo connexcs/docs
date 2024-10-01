@@ -15,12 +15,10 @@ Delivery is within 5 minutes.
 !!! note "Available Balance needed for server deployment"
     To deploy a server, you must have $20 (+ $20 X other servers in your account) available balance.
 
-
 !!! warning "Impact on services"
     If you are a serious carrier *Never let your account run out of credit*. It should go without saying, but if your account runs out of credit, it impacts the service and it's restoration may not be instant.
 
     It's difficult for us to consider any reactivation problems critical if you persistently top-up only enough credit to cover you for the next day.
-
 
 ## Server List
 
@@ -182,6 +180,22 @@ Use this to update the Channels for the selected server. The update will be acti
 This only needs to run when the system indicates "There's a pending update on the server" at the top of the server details.
 
 &emsp;![alt text][server-update]
+
+## Network Tools
+
+You can use **Ping** and **MTR**  to test network connectivity and performance.
+
+1. Navigate to **Setup :material-menu-right: Settings :material-menu-right: Servers**.
+2. Click on ![alt text](image.png) icon next to your IP address.
+3. A window will pop-up where you enter the Hostname or IP Address.
+
+<img src="/setup/img/server1.png">
+
+4.Click **Run** to see the results.
+
+<img src="/setup/img/ping.png">
+
+<img src="/setup/img/mtr.png">
 
 ## Server Clustering and User Location Registration
 

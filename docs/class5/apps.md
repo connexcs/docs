@@ -8,18 +8,18 @@ The ConnexCS **Apps** feature allows providers to create small, simple, drag-and
 
 To create a new App:
 
-1. Click the :material-plus: button.
-2. Drag the desired functions from the left box's list into the right box.
-3. Click on the function to edit the parameters.
+1. Navigate to **Class 5 :material-menu-right: Apps**.
+2. Click on the blue :material-plus: button.
+3. Fill in the following details for the application.
+    + **Name**: Enter the name of the application.
+    + **Customer**: Select the customer from the drop-down list. By default, the app is available to all the customers.
+    + **App Type**: Select the type of app you want to create from the drop-down Call Flow or ConneXML.
+    + **Destination**: Enter the Extension for the callers to call (essentially, the dial-in number).
+    + **PBX Server**: Select the relevant server for your customer.
 4. Click **`Save`**.
 
-    ![alt text][apps]
-
-!!! warning "Using Multiple Conditions"
-    Apps can only use one Condition. Failure will occur if an app has several conditions.  
+<img src= "/class5/img/apps1.png"> 
 
 ## Advanced Applications
 
 To configure more complex applications, ConnexCS offers Class5 **[Programmable Voice](https://docs.connexcs.com/developers/scriptforge/#class-5-programmable-voice)** which allows you to build comprehensive applications using JavaScript.
-
-[apps]: /class5/img/apps.png "Add App"
