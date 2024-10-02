@@ -18,7 +18,7 @@ This feature is also known as **Block Media IP**. In simple terms, it enables yo
       +  Customer In: This flags checks the RTP when the call comes from the customer.
       +  Customer Out: This flags checks the RTP when the call goes to the customer.
       +  Provider In: This flags checks the RTP when the call comes from the provider.
-      +  Customer Out: This flags checks the RTP when the call goes to the provider.
+      +  Provider Out: This flags checks the RTP when the call goes to the provider.
 
 5. Click on `Save` button.
 
