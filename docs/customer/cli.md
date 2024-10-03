@@ -425,7 +425,7 @@ Use **CLI Restrict** to allow CLIs to pass through a specific provider. To allow
 5. Click **`Save`**.
 
 !!! Note
-    Please note now you can perform Use DID options (Performance, Prefix Match or Random) on a single CLI as well.
+     You can now use DID options (Performance, Prefix Match, or Random) on a single CLI.
 
 ## General Condition 6 (GC6) Compliance
 
