@@ -27,16 +27,16 @@ To enable, click **:material-plus:** next to IP Authentication:
 === "Basic"
 
     + **IP**: Enter specific IPs or use CIDR notation to specify an entire subnet.<br>**FQDN can be used for Ingress-only switches.**
-    + **Switch Direction**: The available options are from the perspective of the customer switch (PBX, dialer, etc), and describe how that switch interacts with the ConnexCS switch. For switches that send and receive calls from ConnexCS, there should be separate entries for each direction. 
+    + **Switch Direction**: The available options are from the perspective of the customer switch (PBX, dialer, etc), and describe how that switch interacts with the ConnexCS switch. For switches that send and receive calls from ConnexCS, there should be separate entries for each direction. Two types of switches are as follows:    
         
-        :material-menu-right: `Ingress`: This switch *receives* calls from ConnexCS. (Note: When selected, this gives the option of using the FQDN rather than the switch IP.)
+        :material-menu-right: This switch *receives* calls from ConnexCS. (Note: When selected, this gives the option of using the FQDN rather than the switch IP.)
         
-        :material-menu-right: `Egress`: This switch *sends* calls to ConnexCS.
+        :material-menu-right: This switch *sends* calls to ConnexCS.
         
     + **Channels**: Set the maximum number of concurrent calls for this switch. 
     + **Flow Speed**: Set the Calls Per Second (CPS) (0 = unlimited calls).   
     
-        ![alt text][ipauth-basic]
+        <img src="/customer/img/basic12.png">
 
 === "Advanced"
 

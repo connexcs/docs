@@ -71,6 +71,10 @@ Click :material-plus: button to specify the Destination IP, and one or more Limi
 
 * **Destination**: Enter the Customer's server's IP address.
 * **Weight**: You can allocate the weight to the server that permits the highest traffic or call volume through that server. This means the server with the highest weight will handle more traffic or calls compared to other servers.
+
+!!! Note
+    You can now set weight up to 50 now for server under Anyedge.
+
 * **Limit Zones**:  Limit Zones control access to specific servers within a load balancer. By defining limit zones, you restrict access to certain servers from designated zones. For example, if Sydney isn't added to the limit zone configuration, individuals from Sydney will be unable to access this designated server within the load balancer.
 * **Backup Zones**: Whenever the server of the main zone fails, the traffic will route to the zone selected in the Backup Zones field.
 
