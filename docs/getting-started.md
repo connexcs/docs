@@ -2,6 +2,7 @@
 
 !!! Info " Download Control Panel Application"
     To download our Control Panel Application. Click ![alt text](image-4.png) on your browser while you are logged into your account and hit Install.
+    <img src= "/customer/img/controlpanelapp.png">
 
 The initial setup in ConnexCS will configure a single carrier, a single customer, and a single rate card.
 
