@@ -49,7 +49,9 @@ Click on a specific Call ID to view details and run call tools.
 
 + **Call Details**: The initial screen shows current details, which include Routing Status, Authentication, Induced PDD (Post-Dial Delay), Real-time Transfer Protocol (RTP), Routing Engine ID, Dual-Tone Multi-Frequency (DTMF), and more information.
 
-    At the bottom, view the Providers, Billing details, and RTP information such as Jitter and Packet Loss.
+    At the bottom, view the Providers, Billing details, Graphs, and Logs of the respective call.
+
+    + **Graphs**: It will display parameters like Re=ound Trip Time, MOS, Jitter, and Packet Loss, only if the call experiences any of these issues.
 
 + **Raw Data**: Underlying data that populates the call.
   
