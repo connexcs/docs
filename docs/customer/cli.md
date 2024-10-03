@@ -64,7 +64,7 @@ The **P-Asserted-ID** manipulation uses the same syntax as the Replace CLI.
 
 + **Allow Type**: You can select from various options like Mobile, Paging, VoIP, Satellite etc to allow the CLIs.
 
-+ **Use DID**: Pull in DIDs from the customer's account to use either as a Filter or as a Replacement.  
++ **Use DID**: Pull in DIDs from the customer's account to use either as a Filter, Performance, Prefix Match or Random.  
 
     !!! Example
         If Dialled matched number is starting with **1**, the CLI routes to 11111.
@@ -423,6 +423,9 @@ Use **CLI Restrict** to allow CLIs to pass through a specific provider. To allow
 3. Select **Properties :material-menu-right: Advanced**.
 4. Enter the CLIs / ANIs you want to allow in the [**CLI Restrict**](https://docs.connexcs.com/provider-ratecard/#advanced) box.
 5. Click **`Save`**.
+
+!!! Note
+    Please note now you can perform Use DID options (Performance, Prefix Match or Random) on a single CLI as well.
 
 ## General Condition 6 (GC6) Compliance
 
