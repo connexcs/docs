@@ -433,11 +433,11 @@ Strategic Routing feature allows creating a Routing Strategy that, when applied,
    + Fill in the following details:
        + **Name** of the strategy
        + Select the **Strategy** from the drop-down menu.
-   + Enable the **Override Routing** option.
+       + Enable the **Override Routing** option.
    + Select a **Rate Card** from the drop-down menu.
    + Click `Save`.
 
-<img src= "/customer/img/rs.png"
+<img src= "/customer/img/rs.png">
 
 2.**Apply the Strategy to a Customer**:
 
@@ -446,7 +446,7 @@ Strategic Routing feature allows creating a Routing Strategy that, when applied,
 + Select the newly created **Routing Strategy** for the customer.
 + Click `Save`.
 
-<img src= "/customer/img/rs1.png"
+<img src= "/customer/img/rs1.png">
 
 !!! Info "Routing Behaviour"
     Once applied, calls from the customer will now route based on the provider rate cards specified in the strategy.
