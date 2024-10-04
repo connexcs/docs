@@ -451,4 +451,3 @@ Strategic Routing feature allows creating a Routing Strategy that, when applied,
 !!! Info "Routing Behaviour"
     Once applied, calls from the customer will now route based on the provider rate cards specified in the strategy.
     **Important**: This will completely ignore the routing set up in the customer rate card.
-    
