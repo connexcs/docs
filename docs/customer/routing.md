@@ -437,7 +437,7 @@ Strategic Routing feature allows creating a Routing Strategy that, when applied,
    + Select a **Rate Card** from the drop-down menu.
    + Click `Save`.
 
-<img src= "/customer/img/rs.png">
+<img src= "/customer/img/rs.png" width="1000">
 
 2.**Apply the Strategy to a Customer**:
 
