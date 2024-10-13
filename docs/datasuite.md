@@ -90,10 +90,10 @@ You can create your workspace via three methods:
 
   <img src= "/misc/img/ds8.png" width="200">
 
-  + **Help**: Directs you to our documentation website.
-  + **Export Query Results to CSV**
-  + **Export Query Results to JSON**
-  + **Export Query Results to Parquet**
+    + **Help**: Directs you to our documentation website.
+    + **Export Query Results to CSV**
+    + **Export Query Results to JSON**
+    + **Export Query Results to Parquet**
 
 #### Uploading via URL
 
@@ -140,12 +140,10 @@ Column 1,Column 2,Column 3,Column 4
 
 <img src= "/misc/img/ds14.png">
 
-3.You have capability to edit the entries inside table.
+3.**Mapping Target Table**: You can select the destination to upload the selected data like **CLI**, **Contact**, **Customer**, **DID**, **SIP User Auth**.
 
-4.**Mapping Target Table**: You can select the destination to upload the selected data like **CLI**, **Contact**, **Customer**, **DID**, **SIP User Auth**.
+4.**Continue to Modify**: Allows to edit/modify the table values via queries.
 
-5.**Continue to Modify**: Allows to edit/modify the table values via queries.
-
-6.**Upload All to Server**: saves the table entries or modified table entries to the server.
+5.**Upload All to Server**: saves the table entries or modified table entries to the server.
 
 !!! Example "Query Examples"
