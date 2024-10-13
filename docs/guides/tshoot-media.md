@@ -114,3 +114,23 @@ sequenceDiagram
 
 User Agent can modify SIP packets to direct the caller and destination to establish an RTP session with itself, rather than with each other. This is useful in situations where two SIP clients may not have direct access to each other, most commonly, when one or both of the SIP clients are behind a NAT.
 It's important to note that User Agent only proxy's RTP traffic when it has to, and when configured to do so. If both clients are on the same local network segment, User Agent doesn't need to play a part in the RTP session, and it will proxy only the SIP traffic.
+
+## Echo Test
+
+Use our class 5 features to set up an Echo Test. When dialed, all audio spoken gets echoed back. Basically, it will repeat the media straight back to you. This can be a quick way of checking a customer's audio quality.
+
+You can create an application called **Echo Test** and provide a specific call to the Echo test. Then you can check audio quality of the call when the customer complains. You can ask the customer to dial 160 and you can get the Echo test and analyse the call.
+
+**Setting up an Echo Test:**
+
+1. Login to your account.
+2. Go to Class5 :material-menu-right: Apps and click `+`.
+3. You will see a Dialog box as shown below. ![echo test](/guides/img/echotest.jpg)
+4. Write the **Name** of your Echo test.
+5. Enter the **Destination** number for your Echo Test.
+6. Select the **PBX Server** for the call. The **Distributed (Default)** server will assign you the server near to your location.
+7. Click on `Save`. ![echo test1](/guides/img/echotest1.jpg)
+8. Click on `Go to App` which is right next to the echo test you've created. You will see a screen as shown in the figure below. ![echo test2](/guides/img/echotest2.jpg)
+9. Then from components drag the `echo` component and connect it with your created echo test.
+10. Click on the dot on the right-side of your created echo test (Echo Test in this case) and join it with the `echo component` on the right-side.![echo test3](/guides/img/echotest3.jpg)
+11. Then use your softfone to check for the echo test.
