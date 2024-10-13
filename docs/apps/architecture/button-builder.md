@@ -39,8 +39,8 @@ Use **Button Builder** in combination to create a button that you can place in a
 
 2.Click **`Save`** to make the new button available for placement.
 
-<img src= "/apps/img/buttonbuilder2.png" width="500">
+<img src= "/apps/img/buttonbuilder2.png" width="300">
 
 3.The created **Button** will be visible on the IDE panel under **Button Builder**. Click on the created button, also you have the option to `Edit` the button.
 
-<img src= "/apps/img/button3.png" width="300">
+<img src= "/apps/img/button3.png" width="500">
