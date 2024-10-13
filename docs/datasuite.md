@@ -88,10 +88,10 @@ You can create your workspace via three methods:
 
 * **Settings**: <br><img src= "/misc/img/ds8.png" width="200"></br>
 
-  * **Help**: Directs you to our documentation website.
-  * **Export Query Results to CSV**
-  * **Export Query Results to JSON**
-  * **Export Query Results to Parquet**
+    * **Help**: Directs you to our documentation website.
+    * **Export Query Results to CSV**
+    * **Export Query Results to JSON**
+    * **Export Query Results to Parquet**
 
 #### Uploading via URL
 
