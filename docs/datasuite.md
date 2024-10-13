@@ -86,7 +86,8 @@ You can create your workspace via three methods:
 
 <img src= "/misc/img/ds7.png" width="400">
 
-* **Settings**: <img src= "/misc/img/ds8.png" width="200">
+* **Settings**:
+<img src= "/misc/img/ds8.png" width="200">
     + **Help**: Directs you to our documentation website.
     + **Export Query Results to CSV**
     + **Export Query Results to JSON**
