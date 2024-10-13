@@ -38,13 +38,13 @@ You can create your workspace via three methods:
 #### Uploading a File
 
 1. Drop a file or click to upload. A window will appear as shown below.
-<img src= "/misc/img/ds2.png" width="150">
+<img src= "/misc/img/ds2.png">
 
 2. **File Functions**
 
       * **File**:
 
-        <img src= "/misc/img/ds3.png">
+        <img src= "/misc/img/ds3.png" width="200">
 
         + **New Workspace**: Add a new workspace.
         + **Load Workspace**: Upload a new workspace to an existing workspace.
@@ -90,10 +90,10 @@ You can create your workspace via three methods:
 
   <img src= "/misc/img/ds8.png" width="200">
 
-  + **Help**: Directs you to our documentation website.
-  + **Export Query Results to CSV**
-  + **Export Query Results to JSON**
-  + **Export Query Results to Parquet**
+    + **Help**: Directs you to our documentation website.
+    + **Export Query Results to CSV**
+    + **Export Query Results to JSON**
+    + **Export Query Results to Parquet**
 
 #### Uploading via URL
 
