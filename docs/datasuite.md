@@ -19,11 +19,11 @@ What our Data Suite offers?
 
 1. Login to the Control Panel and click on **Data Suite**.
 2. Three options are available: **New Workspace**, **Load Workspace** and **Bulk Upload**.
-3. **New Workspace**: It allows you to manage and analyse your data in a new workspace.
-4. **Load Workspace**: It loads your existing workspace and allows you to continue where your last left.
+3. **New Workspace**: Allows you to manage and analyse your data in a new workspace.
+4. **Load Workspace**: Loads your existing workspace and allows you to continue where your last left.
 5. **Bulk Upload**: Uploads a huge chunk of data to a remote table.
 
-<img src= "/img/ds.png">
+<img src= "/docs/img/ds.png">
 
 ### New Workspace
 
@@ -33,18 +33,18 @@ You can create your workspace via 3 methods:
 2. Enter a **URL**.
 3. Manually enter the content via **Text** option.
 
-<img src= "docs/img/ds1">
+<img src= "/docs/img/ds1">
 
 #### Uploading a File
 
 1. Drop a file or click to upload. A window will appear as shown below.
-<img src= "docs/img/ds2">
+<img src= "/docs/img/ds2">
 
 2. **File Functions**
 
-   + **File**:
+   * **File**:
 
-    <img src= "docs/img/ds3">
+    <img src= "/docs/img/ds3">
 
      + **New Workspace**: Add a new workspace.
      +   **Load Workspace**: Upload a new workspace to an existing workspace.
@@ -53,19 +53,19 @@ You can create your workspace via 3 methods:
 
 * **Drag & Drop a .csv file here or Browse**:
 
-<img src= "docs/img/ds4">
+<img src= "/docs/img/ds4">
 
 * **Explore Tables**:
 
-<img src= "docs/img/ds5">
+<img src= "/docs/img/ds5">
 
 +   **Tables:**
       + **Add Table**: Add a new table to an existing workspace.
       + **Map Table Columns**: Allows you to upload the data.
         + **Mapping Target Table**: You can select the destination (**CLI**, **Contact**, **Customer**, **DID**, **SIP User Auth**) to upload the selected data.
-        + **Refresh** the entries inside the table.
-        + **Upload All To Server** saves the table to the server.
-        + **Continue To Modify**:
+        + **Refresh** any changed or modified entries inside the table.
+        + **Upload All To Server** saves the table entries or modified table entries to the server.
+        + **Continue To Modify**: Allows to edit/modify the table values via queries.
       + **Delete**: Allows you to delete the existing table.
 
 !!! Note "You can now edit the entries inside the table itself."
@@ -76,18 +76,17 @@ You can create your workspace via 3 methods:
 
 * **Query Editor**: It's an interface where you can  write, edit, and execute queries against a database or data source. It's typically part of a larger data management or analytics platform, and it allows you to interact with data by writing commands in query languages.
 
-<img src= "docs/img/ds6">
+<img src= "/docs/img/ds6">
 
 + **Other options**
-![alt text](image-3.png)
     + **Run**: Allows you to execute the query.
     + **Toggle Console**: Allows you to open or close the console window.
     + **Query History**: It allows you to view log or record of previously executed queries.
 
-<img src= "docs/img/ds7">
+<img src= "/docs/img/ds7">
 
 * **Settings**:
-<img src= "docs/img/ds8">
+<img src= "/docs/img/ds8">
 
     + **Help**: Directs you to our documentation website.
     + **Export Query Results to CSV**
@@ -98,11 +97,11 @@ You can create your workspace via 3 methods:
 
 1.Enter the URL in the CSV format and hit the `Upload` button.
 
-<img src= "docs/img/ds9">
+<img src= "/docs/img/ds9">
 
 2.After clicking `Run` a window will appear as shown below.
 
-<img src= "docs/img/ds10">
+<img src= "/docs/img/ds10">
 
 #### Uploading via Text
 
@@ -118,29 +117,32 @@ Column 1,Column 2,Column 3,Column 4
 
 2.Click on `Upload`.
 
-<img src= "docs/img/ds11">
+<img src= "/docs/img/ds11">
 
 3.After clicking `Run` a window will appear as shown below.
 
-<img src= "docs/img/ds12">
+<img src= "/docs/img/ds12">
 
 ### Load Workspace
 
 1. Upload the workspace ONLY in the `.json` format.
 2. Click on `Run` to see the output.
 
-<img src= "docs/img/ds13">
+<img src= "/docs/img/ds13">
 
 ### Bulk Upload
 
 1.Upload your data via **File**, **URL** or by entering the **Text**.
 2.Click on `Upload`. A window will appear as shown below
 
-<img src= "docs/img/ds14">
+<img src= "/docs/img/ds14">
 
-3.You have capability to edit the entries inside table
+3.You have capability to edit the entries inside table.
+
 4.**Mapping Target Table**: You can select the destination to upload the selected data like **CLI**, **Contact**, **Customer**, **DID**, **SIP User Auth**.
+
 5.**Continue to Modify**: Allows to edit/modify the table values via queries.
-6.**Upload All to Server**: Upload the table entries or modified table entries to the server.
+
+6.**Upload All to Server**: saves the table entries or modified table entries to the server.
 
 !!! Example "Query Examples"
