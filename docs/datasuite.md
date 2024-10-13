@@ -33,18 +33,18 @@ You can create your workspace via 3 methods:
 2. Enter a **URL**.
 3. Manually enter the content via **Text** option.
 
-<img src= "/docs/img/ds1">
+<img src= "/docs/img/ds1.png">
 
 #### Uploading a File
 
 1. Drop a file or click to upload. A window will appear as shown below.
-<img src= "/docs/img/ds2">
+<img src= "/docs/img/ds2,png">
 
 2. **File Functions**
 
-   * **File**:
+      * **File**:
 
-    <img src= "/docs/img/ds3">
+        <img src= "/docs/img/ds3.png">
 
      + **New Workspace**: Add a new workspace.
      +   **Load Workspace**: Upload a new workspace to an existing workspace.
@@ -53,20 +53,20 @@ You can create your workspace via 3 methods:
 
 * **Drag & Drop a .csv file here or Browse**:
 
-<img src= "/docs/img/ds4">
+<img src= "/docs/img/ds4.png">
 
 * **Explore Tables**:
 
-<img src= "/docs/img/ds5">
+<img src= "/docs/img/ds5.png">
 
-+   **Tables:**
-      + **Add Table**: Add a new table to an existing workspace.
-      + **Map Table Columns**: Allows you to upload the data.
-        + **Mapping Target Table**: You can select the destination (**CLI**, **Contact**, **Customer**, **DID**, **SIP User Auth**) to upload the selected data.
-        + **Refresh** any changed or modified entries inside the table.
-        + **Upload All To Server** saves the table entries or modified table entries to the server.
-        + **Continue To Modify**: Allows to edit/modify the table values via queries.
-      + **Delete**: Allows you to delete the existing table.
+    +   **Tables:**
+          + **Add Table**: Add a new table to an existing workspace.
+          + **Map Table Columns**: Allows you to upload the data.
+          + **Mapping Target Table**: You can select the destination (**CLI**, **Contact**, **Customer**, **DID**, **SIP User Auth**) to upload the selected data.
+          + **Refresh** any changed or modified entries inside the table.
+          + **Upload All To Server** saves the table entries or modified table entries to the server.
+          + **Continue To Modify**: Allows to edit/modify the table values via queries.
+          + **Delete**: Allows you to delete the existing table.
 
 !!! Note "You can now edit the entries inside the table itself."
 
@@ -76,17 +76,18 @@ You can create your workspace via 3 methods:
 
 * **Query Editor**: It's an interface where you can  write, edit, and execute queries against a database or data source. It's typically part of a larger data management or analytics platform, and it allows you to interact with data by writing commands in query languages.
 
-<img src= "/docs/img/ds6">
+<img src= "/docs/img/ds6.png">
 
-+ **Other options**
++ **Other options**:
     + **Run**: Allows you to execute the query.
     + **Toggle Console**: Allows you to open or close the console window.
     + **Query History**: It allows you to view log or record of previously executed queries.
 
-<img src= "/docs/img/ds7">
+<img src= "/docs/img/ds7.png">
 
 * **Settings**:
-<img src= "/docs/img/ds8">
+
+<img src= "/docs/img/ds8.png">
 
     + **Help**: Directs you to our documentation website.
     + **Export Query Results to CSV**
@@ -97,11 +98,11 @@ You can create your workspace via 3 methods:
 
 1.Enter the URL in the CSV format and hit the `Upload` button.
 
-<img src= "/docs/img/ds9">
+<img src= "/docs/img/ds9.png">
 
 2.After clicking `Run` a window will appear as shown below.
 
-<img src= "/docs/img/ds10">
+<img src= "/docs/img/ds10.png">
 
 #### Uploading via Text
 
@@ -128,14 +129,15 @@ Column 1,Column 2,Column 3,Column 4
 1. Upload the workspace ONLY in the `.json` format.
 2. Click on `Run` to see the output.
 
-<img src= "/docs/img/ds13">
+<img src= "/docs/img/ds13.png">
 
 ### Bulk Upload
 
 1.Upload your data via **File**, **URL** or by entering the **Text**.
+
 2.Click on `Upload`. A window will appear as shown below
 
-<img src= "/docs/img/ds14">
+<img src= "/docs/img/ds14.png">
 
 3.You have capability to edit the entries inside table.
 
