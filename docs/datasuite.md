@@ -92,7 +92,7 @@ You can create your workspace via three methods:
   * **Help**: Directs you to our documentation website.
   * **Export Query Results to CSV**
   * **Export Query Results to JSON**
-* **Export Query Results to Parquet**
+  * **Export Query Results to Parquet**
 
 #### Uploading via URL
 
