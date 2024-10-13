@@ -27,7 +27,7 @@ What our Data Suite offers?
 
 ### New Workspace
 
-You can create your workspace via 3 methods:
+You can create your workspace via three methods:
 
 1. Uploading a **File**.
 2. Enter a **URL**.
@@ -38,7 +38,7 @@ You can create your workspace via 3 methods:
 #### Uploading a File
 
 1. Drop a file or click to upload. A window will appear as shown below.
-<img src= "/misc/img/ds2.png">
+<img src= "/misc/img/ds2.png" width="150">
 
 2. **File Functions**
 
@@ -84,11 +84,11 @@ You can create your workspace via 3 methods:
     + **Toggle Console**: Allows you to open or close the console window.
     + **Query History**: It allows you to view log or record of previously executed queries.
 
-<img src= "/misc/img/ds7.png">
+<img src= "/misc/img/ds7.png" width="400">
 
 * **Settings**:
 
-  <img src= "/misc/img/ds8.png">
+  <img src= "/misc/img/ds8.png" width="200">
 
   + **Help**: Directs you to our documentation website.
   + **Export Query Results to CSV**
@@ -117,9 +117,9 @@ Column 1,Column 2,Column 3,Column 4
 4,5,6,7
 ```
 
-2.Click on `Upload`.
-
 <img src= "/misc/img/ds11.png">
+
+2.Click on `Upload`.
 
 3.After clicking `Run` a window will appear as shown below.
 
