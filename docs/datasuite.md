@@ -145,3 +145,8 @@ Column 1,Column 2,Column 3,Column 4
 5.**Upload All to Server**: saves the table entries or modified table entries to the server.
 
 !!! Example "Query Examples"
+    |**Query Name**|**Query Syntax**|**Output**|
+    |--------------|----------------|----------|
+    |**Select**|```SELECT * FROM 'Example'```|<img src= "/misc/img/ds15.png">|
+    |**Update**|```UPDATE 'Example' SET Col2 = '4' WHERE Col2 = '97405'```|<img src= "/misc/img/ds16.png">
+    |**Delete**|```DELETE FROM 'Example' WHERE Col2 = '4'```|<img src= "/misc/img/ds17.png">|
