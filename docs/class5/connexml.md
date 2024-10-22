@@ -565,7 +565,7 @@ It initializes variables before executing other commands.
 
         <Say>Hello my name is {{newHome}}</Say>
         <Say >Hello my name is {{headerName}}</Say>
-        <Say>Hello my name is {{{% raw %}{{ x-name }}{% endraw %}}}</Say>
+        <Say>Hello my name is {% raw %}{{x-name}}{% endraw %}</Say>
 
         <Dial>
             <Number>160</Number>
