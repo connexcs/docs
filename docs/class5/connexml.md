@@ -593,7 +593,7 @@ It's an effective and quicker way to check a customer's audio quality and call p
          2. `Hello my name is Joe`.
          3. `Hello my name is`.
     4. Finally, the system dials the number `160`.
-    
+
     This script ensures that specific headers are included in the SIP INVITE if specified with `header="true"` and provides clear audio prompts before connecting the call.
     If the **Set elements** don't include `header="true"`, they will only set the variables and not as headers in the SIP INVITE.
 
