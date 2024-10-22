@@ -65,7 +65,7 @@ To get ConneXML working you will need to:
 
 5.If you initially want this to hit a customers server same as before, you can use something like this in the XML field.
 
-```xml
+``` xml
 <?xml version="1.0" encoding="UTF-8"?>
 <Response>
     <Redirect method="POST">https://yourdomain.com/yourscript.php</Redirect>
@@ -84,7 +84,7 @@ In ConneXML, the XML components can be divided into 4 categories:
 4. `Nouns`: As the name suggests, a noun can described on which the action has to be performed. For example, it can be a phone number on which a Dial action has to be performed.
 
 !!! example
-    ```xml
+    ``` xml
     <Response> <!--Body of the code>
         <!-- Here, Play and Dial are the Verbs -->
         <Play loop="2">http://www.music.com/fun.wav</Play>
@@ -109,7 +109,7 @@ The current call is terminated with the `Hangup` verb.
 It has **no attributes** and doesn't include any **nouns**.
 
 !!! example
-    ```xml
+    ``` xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
         <Hangup/>
@@ -122,7 +122,7 @@ The `Pause` verb waits silently for a given amount of time, or by default, 5 sec
 `Pause` doesn't use any nouns, and a self-closing tag is mandatory.
 
 !!! example
-    ```xml
+    ``` xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
         <Say>I will pause default time starting now!</Say>
@@ -135,7 +135,7 @@ The `Pause` verb waits silently for a given amount of time, or by default, 5 sec
 |`length`|How many seconds for waiting|`1-180`|`5`|
 
 !!! example
-    ```xml
+    ``` xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
         <Pause length="10"/>
@@ -148,7 +148,7 @@ The `Pause` verb waits silently for a given amount of time, or by default, 5 sec
 Text to speech is enabled for any application by using the `Say` verb, which speaks the provided text back to the caller.
 
 !!! example
-    ```xml
+    ``` xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
         <Say>This is better  text to speech.</Say>
@@ -163,7 +163,7 @@ This verb rejects the current call.
     `Reject` can't be nested in any other verb and reject can't include any other verb.
 
 !!! example
-    ```xml
+    ``` xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
         <Reject/>
@@ -175,7 +175,7 @@ This verb rejects the current call.
 |`reason`|The sound to play in order to explain why the call was turned down|`rejected`, `busy`|`rejected`|
 
 !!! example
-    ```xml
+    ``` xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
         <Reject reason="busy"/>
@@ -200,7 +200,7 @@ The value of Play can either be:
 
 !!!example
     1. **Loop**
-    ```xml
+    ``` xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
         <Play loop="3">ivr/ivr-invalid_number_format.wav</Play>
@@ -208,21 +208,21 @@ The value of Play can either be:
     ```
 
     2. **Local Files**
-    ```xml
+    ``` xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
         <Play>ivr/ivr-invalid_number_format.wav</Play>
     </Response>
     ```
     3. **Remote HTTP**
-    ```xml
+    ``` xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
         <Play>https://file-examples.com/storage/fef3ad87fb6568c5a9d7b04/2017/11/file_example_WAV_1MG.wav</Play>
     </Response>
     ```
     4. **User Files**
-        ```xml
+        ``` xml
         <?xml version="1.0" encoding="UTF-8"?>
         <Response>
             <Play>user/adam.wav</Play>
@@ -236,7 +236,7 @@ The current call gets transferred to another ConnexCS Class 5 application usin
 `Redirect` doesn't allow for the nesting of nouns.
 
 !!! Example
-    ```xml
+    ``` xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
         <Redirect>http://yourdomain.com/connex/test.xml</Redirect>
@@ -248,7 +248,7 @@ The current call gets transferred to another ConnexCS Class 5 application usin
 |`method`|The type of redirect method used URL|`GET`, `POST`| `POST`|
 
 !!! example
-    ```xml
+    ``` xml
     <Response>
         <Redirect method="GET">https://yourdomain.com/yourscript.php</Redirect>
     </Response>
@@ -264,7 +264,7 @@ During a call, the `Gather` verb accumulates DTMF tones.
 You can create an interactive IVR with text-to-speech by nesting `Say` within `Gather`.
 
 !!! example
-    ```xml
+    ``` xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
         <Gather actionOnEmptyResult="false" action="https://yourdomain.com/youwebserver.php" method="GET" numDigits="6" finishOnKey="*" timeout="120">
@@ -294,7 +294,7 @@ You can create an interactive IVR with text-to-speech by nesting `Say` within `
 The current call is enqueued in a call queue using the `Enqueue` verb.
 
 !!! example
-    ```xml
+    ``` xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
         <Enqueue>1000</Enqueue>
@@ -312,7 +312,7 @@ An existing call is transferred to a different destination using the `Dial` ver
    * ConnexCS receives a busy signal.
   
 !!! example
-    ```xml
+    ``` xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
         <Dial>123456</Dial>
@@ -353,7 +353,7 @@ An existing call is transferred to a different destination using the `Dial` ver
 
 !!! example
     1. **callerID**
-    ```xml
+    ``` xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
         <Dial callerId="1234">12345</Dial>
@@ -362,7 +362,7 @@ An existing call is transferred to a different destination using the `Dial` ver
     ```
 
     2. **fromDisplayName**
-        ```xml
+        ``` xml
         <?xml version="1.0" encoding="UTF-8"?>
         <Response>
             <Dial fromDisplayName="1234">12345</Dial>
@@ -371,7 +371,7 @@ An existing call is transferred to a different destination using the `Dial` ver
         ```
 
     3. **hangupOnStar**
-        ```xml
+        ``` xml
         <?xml version="1.0" encoding="UTF-8"?>
         <Response>
             <Dial hangupOnStar="true">12345</Dial>
@@ -379,7 +379,7 @@ An existing call is transferred to a different destination using the `Dial` ver
         </Response>
         ```
     4. **ringTone**
-        ```xml
+        ``` xml
         <?xml version="1.0" encoding="UTF-8"?>
         <Response>
             <Dial fromDisplayName="1234" ringtone="in">160</Dial>
@@ -387,7 +387,7 @@ An existing call is transferred to a different destination using the `Dial` ver
         ```
     
     5. **timeout**
-        ```xml
+        ``` xml
         <?xml version="1.0" encoding="UTF-8"?>
         <Response>
             <Dial timeout="60">123456</Dial>
@@ -395,7 +395,7 @@ An existing call is transferred to a different destination using the `Dial` ver
         ```
 
     6. **Number**
-        ```xml
+        ``` xml
         <?xml version="1.0" encoding="UTF-8"?>
         <Response>
             <Dial>
@@ -404,7 +404,7 @@ An existing call is transferred to a different destination using the `Dial` ver
         </Response>"
         ```
     7. **Queue**
-        ```xml
+        ``` xml
         <?xml version="1.0" encoding="UTF-8"?>
         <Response>
             <Dial>
@@ -414,7 +414,7 @@ An existing call is transferred to a different destination using the `Dial` ver
         ```
 
     8. **Client**
-        ```xml
+        ``` xml
         <?xml version="1.0" encoding="UTF-8"?>
         <Response>
             <Dial>
@@ -423,7 +423,7 @@ An existing call is transferred to a different destination using the `Dial` ver
         </Response>
         ```
     9. **Conference**
-        ```xml
+        ``` xml
         <?xml version="1.0" encoding="UTF-8"?>
         <Response>
             <Dial>
@@ -433,7 +433,7 @@ An existing call is transferred to a different destination using the `Dial` ver
         ```
     
     10. **Voicemail**
-        ```xml
+        ``` xml
         <?xml version="1.0" encoding="UTF-8"?>
         <Response>
             <Dial>
@@ -443,7 +443,7 @@ An existing call is transferred to a different destination using the `Dial` ver
         ```
     
     11. **Voicemail Inbox**
-        ```xml
+        ``` xml
         <?xml version="1.0" encoding="UTF-8"?>
         <Response>
             <Dial>
@@ -454,7 +454,7 @@ An existing call is transferred to a different destination using the `Dial` ver
         ```
 
     12. **Barge (Default Method)**
-        ```xml
+        ``` xml
         <?xml version="1.0" encoding="UTF-8"?>
         <Response>
             <Dial>
@@ -464,7 +464,7 @@ An existing call is transferred to a different destination using the `Dial` ver
         ```
     
     13.  **Barge**
-        ```xml
+        ``` xml
         <?xml version="1.0" encoding="UTF-8"?>
         <Response>
             <Dial>
@@ -478,7 +478,7 @@ An existing call is transferred to a different destination using the `Dial` ver
         ```
 
     14. **Barge (Group)** 
-        ```xml
+        ``` xml
         <?xml version="1.0" encoding="UTF-8"?>
         <Response>
             <Dial>
@@ -489,7 +489,7 @@ An existing call is transferred to a different destination using the `Dial` ver
         ```
     
     15. **statusCallbackEvent, statusCallback, statusCallbackMethod**
-        ```xml
+        ``` xml
         <?xml version="1.0" encoding="UTF-8"?>
         <Response>
             <Dial>
@@ -510,7 +510,7 @@ It helps to define on which leg of the call the DTMF will work. For example, `dt
 
 !!! Example
     When the digit `3` is pressed on the call leg `b` within the specified context `A`, the call will be transferred to `test4`.
-    ```xml
+    ``` xml
     <Response>
         <Press dtmf_leg ='b'digit="3" context="A">
         <Transfer>test4</Transfer>
@@ -527,7 +527,7 @@ It helps to define on which leg of the call the DTMF will work. For example, `dt
 It initializes variables before executing other commands.
 
 !!! Example
-    ```xml
+    ``` xml
     <Response>
         <Before><Set name="newHome" value="Adam"/><Set name="headerName" value="Joe"/></Before>
     </Response>
@@ -539,7 +539,7 @@ It initializes variables before executing other commands.
 `Set` defines headers to be included in the SIP INVITE and set variables.
 
 !!! Example "Example 1"
-    ```xml
+    ``` xml
     <Response>
         <Set name="name" value="Adam"/>
         <Set name="x-name" value="Water" header="true" />
@@ -554,7 +554,7 @@ It initializes variables before executing other commands.
     ...
 
 !!! Example "Example 2"
-    ```xml
+    ``` xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
         <Before>
@@ -597,7 +597,7 @@ It initializes variables before executing other commands.
 When the `<Start><Stream>` command is used during a call, the call's raw audio stream is streamed to your WebSocket server near real-time.
 
 !!! Example
-    ```xml
+    ``` xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
         <Start>
@@ -615,7 +615,7 @@ It enables loopback on the calling channel.
 It's an effective and quicker way to check a customer's audio quality and call path delay.
 
 !!! Example
-    ```xml
+    ``` xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
        <Echo></Echo>
