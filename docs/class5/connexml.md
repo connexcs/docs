@@ -527,7 +527,8 @@ Dynamically dial a phone number based on a `substring` of a variable named `Exte
 
 !!! Example "Example 3"
     Assuming the `Extension variable` is set to `"afwd_[a-z0-9]+"`:
-    It means if you dial `newsetup_160` and 
+    It means if you dial `newsetup_160` and
+
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
@@ -607,7 +608,7 @@ When the `<Start><Stream>` command is used during a call, the call's raw audio s
 
 ### Echo
 
-`Echo` plays back everything that is spoken/ played, like voice, audio, DTMF, etc.
+`Echo` plays back everything that'ss spoken/ played, like voice, audio, DTMF, etc.
 
 It enables loopback on the calling channel.
 
