@@ -494,7 +494,6 @@ It helps to define on which leg of the call the DTMF will work. For example, `dt
 
 !!! Example
     When the digit `3` is pressed on the call leg `b` within the specified context `A`, the call will be transferred to `test4`.
-
     ``` xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
