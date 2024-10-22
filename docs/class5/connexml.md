@@ -536,7 +536,6 @@ Dynamically dial a phone number based on a `substring` of a variable named `Exte
         </Dial>
     </Response>
     ```
-
     The system will dial the number `"160"`
 
 ### Press DTMF Variable
@@ -602,9 +601,9 @@ It initializes variables before executing other commands.
         <Set name="name" value="{{headerName}}" header="true"/>
         <Set name="{% raw %}{{ x-name }}{% endraw %}" value="{{newHome}}" header="true" />
 
-        <Say>Hello my name is "{% raw %}{{newHome}}{% endraw %}"</Say>
-        <Say >Hello my name is "{% raw %}{{headerName}}{% endraw %}"</Say>
-        <Say>Hello my name is "{% raw %}{{x-name}}{% endraw %}"</Say>
+        <Say>Hello my name is "{% raw %}{{ newHome }}{% endraw %}"</Say>
+        <Say >Hello my name is "{% raw %}{{ headerName }}{% endraw %}"</Say>
+        <Say>Hello my name is "{% raw %}{{ x-name }}{% endraw %}"</Say>
 
         <Dial>
             <Number>160</Number>
