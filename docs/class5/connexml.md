@@ -567,11 +567,7 @@ It's an effective and quicker way to check a customer's audio quality and call p
         </Dial>
     </Response>
     ```
-    Sets the **name** to the value of **Adam**.
-
-    Sets the **x-name header** to the value of **Water**.
-    
-    Result call will be sent to 160 and will have header **INVITE sip:160@domain.com SIP/2.0**
+    Sets the **name** to the value of **Adam**.<br>Sets the **x-name header** to the value of **Water**.</br><br>Result call will be sent to 160 and will have header **INVITE sip:160@domain.com SIP/2.0**.</br>
 
 !!! Example "Example 2"
     ```xml
