@@ -499,7 +499,7 @@ It helps to define on which leg of the call the DTMF will work. For example, `dt
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
         <Press dtmf_leg ='b'digit="3" context="A">
-            <Transfer>test4</Transfer>
+            <Transfer>test4</Transfer>
         </Press>
     </Response>
     ```
