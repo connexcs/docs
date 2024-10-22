@@ -488,41 +488,6 @@ An existing call is transferred to a different destination using the `Dial` ver
         </Response>
         ```
 
-#### Dynamic Dial
-
-Dynamically dial a phone number based on a `substring` of a variable named `Extension`.
-
-!!! Example "Example 1"
-    ```xml
-    <?xml version="1.0" encoding="UTF-8"?>
-    <Response>
-        <Dial>
-            <Number>{{substring Extension 5}}</Number>
-        </Dial>
-    </Response>
-    ```
-    **Purpose**: Initiates a call to a number extracted from the Extension variable.
-    **Actions**: Extracts a substring from the Extension variable starting at the 5th character and uses it as the number to dial.
-
-!!! Example "Example 2"
-    Assuming the `Extension variable` is set to `"1234567890"`:
-    The `substring` starting at the `5th character` is `"67890"`.
-    The system will dial the number `"67890"`.
-
-!!! Example "Example 3"
-    Assuming the `Extension variable` is set to `"afwd_[a-z0-9]+"`:
-    It means if you dial `newsetup_160` and
-
-    ```xml
-    <?xml version="1.0" encoding="UTF-8"?>
-    <Response>
-        <Dial>
-            <Number>{{substring Extension 9}}</Number>
-        </Dial>
-    </Response>
-    ```
-    The system will dial the number `"160"`
-
 ### Press DTMF Variable
 
 It helps to define on which leg of the call the DTMF will work. For example, `dtmf_leg ='a'` or `dtmf_leg ='b'`.
