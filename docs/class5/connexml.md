@@ -542,7 +542,7 @@ It initializes variables before executing other commands.
     ``` xml
     <Response>
         <Set name="name" value="Adam"/>
-        <Set name="x-name" value="Water" header="true" />
+        <Set name="{% raw %}{{ x-name }}{% endraw %}" value="Water" header="true" />
         <Dial>
             <Number>160</Number>
         </Dial>
@@ -561,11 +561,11 @@ It initializes variables before executing other commands.
         </Before>
 
         <Set name="name" value="{{headerName}}" header="true"/>
-        <Set name="x-name" value="{{newHome}}" header="true" />
+        <Set name="{% raw %}{{ x-name }}{% endraw %}" value="{{newHome}}" header="true" />
 
         <Say>Hello my name is {{newHome}}</Say>
         <Say >Hello my name is {{headerName}}</Say>
-        <Say>Hello my name is {{x-name}}</Say>
+        <Say>Hello my name is {{{% raw %}{{ x-name }}{% endraw %}}}</Say>
 
         <Dial>
             <Number>160</Number>
