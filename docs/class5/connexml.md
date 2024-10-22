@@ -572,24 +572,6 @@ It initializes variables before executing other commands.
     ```
     Sets the variable `newHome` to "**Adam**".<br>Sets the variable `headerName` to "**Joe**"</br>.
 
-### Set
-
-`Set` defines headers to be included in the SIP INVITE and set variables.
-
-!!! Example "Example 1"
-    ``` xml
-    <?xml version="1.0" encoding="UTF-8"?>
-    <Response>
-        <Set name="name" value="Adam"/>
-        <Set name="{% raw %}{{ x-name }}{% endraw %}" value="Water" header="true" />
-        <Dial>
-            <Number>160</Number>
-        </Dial>
-    </Response>
-    ```
-    Sets the **name** to the value of **Adam**.<br>Sets the **x-name header** to the value of **Water**.</br><br>Result call will be sent to 160 and will have header **INVITE sip:160@domain.com SIP/2.0**</br>
-    `x-name: Water`
-
 ### Stream
 
 `Stream` is a noun together used with the `Start` verb.
