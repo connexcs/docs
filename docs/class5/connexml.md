@@ -342,6 +342,9 @@ An existing call is transferred to a different destination using the `Dial` ver
 |`Barge`| `whisper`|If enabled, allows you to speak privately to one or both legs of the call without the other party hearing.|`a`(aleg), `b`(bleg), `ab`(both legs)|`ab`|
 ||`bridge`|Allows an eavesdropper to listen in on a call without being an active participant. The eavesdropper can monitor the conversation on one or both legs of the call|`a`(aleg), `b`(bleg),`ab` (both legs)|`ab`|
 ||`command`|DTMF signals during eavesdrop|`true`, `false`|`true`|
+|`Client`|`statusCallbackEvent`|An outbound call starts when you use `Dial` to dial out to a client. When the phone rings, the call switches from the `initiated` event to the `ringing` event, `answered` when the call is answered, and `completed` when the call is ended. You can also sign up for the webhooks for the various call events.|`initiated`, `ringing`, `answered`, `completed`|none|
+||`statusCallback`|For every event listed in the `statusCallbackEvent` attribute, you may define a URL to send webhook requests to using the `statusCallback` attribute. A valid hostname is required for non-relative URLs (underscores are not allowed)|any `URL`|none|
+||`statusCallbackMethod`|Lets you define the `HTTP` method ConnexCS should use when making requests to the URL specified in the `statusCallback` attribute.|`GET`, `POST`|`POST`|
 
 !!! Info
     1. `Conference` is similar to how the `Number` noun lets you connect to another phone number.
@@ -484,6 +487,140 @@ An existing call is transferred to a different destination using the `Dial` ver
             </Dial>
         </Response>
         ```
+    
+    15. **statusCallbackEvent, statusCallback, statusCallbackMethod**
+        ```xml
+        <?xml version="1.0" encoding="UTF-8"?>
+        <Response>
+            <Dial>
+                <Client
+                statusCallbackEvent='initiated ringing answered completed'
+                statusCallback='http://fr1js1.connexcs.net:3002'
+                statusCallbackMethod='POST'>
+                7900
+                </Client>
+            </Dial>
+        </Response>
+        ```
+        Send updates about the call's lifecycle (initiated, ringing, answered, and completed) to the callback URL http://fr1js1.connexcs.net:3002 via HTTP POST requests.
+
+### Press DTMF Variable
+
+It helps to define on which leg of the call the DTMF will work. For example, `dtmf_leg ='a'` or `dtmf_leg ='b'`.
+
+!!! Example
+    When the digit `3` is pressed on the call leg `b` within the specified context `A`, the call will be transferred to `test4`.
+    ``` xml
+    <Response>
+        <Press dtmf_leg ='b'digit="3" context="A">
+        <Transfer>test4</Transfer>
+        </Press>
+    </Response>
+    ```
+
+|**Noun**|**Description**|
+|--------|---------------|
+|`Transfer`|Transfers the call to the given extension given|
+
+### Before
+
+It initializes variables before executing other commands.
+
+!!! Example
+    ``` xml
+    <Response>
+        <Before><Set name="newHome" value="Adam"/><Set name="headerName" value="Joe"/></Before>
+    </Response>
+    ```
+    Sets the variable `newHome` to "**Adam**".<br>Sets the variable `headerName` to "**Joe**"</br>.
+
+### Set
+
+`Set` defines headers to be included in the SIP INVITE and set variables.
+
+!!! Example "Example 1"
+    ``` xml
+    <Response>
+        <Set name="name" value="Adam"/>
+        <Set name="x-name" value="Water" header="true" />
+        <Dial>
+            <Number>160</Number>
+        </Dial>
+    </Response>
+    ```
+    Sets the **name** to the value of **Adam**.<br>Sets the **x-name header** to the value of **Water**.</br><br>Result call will be sent to 160 and will have header **INVITE sip:160@domain.com SIP/2.0**</br>
+    ...
+    x-name: Water
+    ...
+
+!!! Example "Example 2"
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+        <Before>
+            <Set name="newHome" value="Adam"/>
+            <Set name="headerName" value="Joe"/>
+        </Before>
+
+        <Set name="name" value="{{headerName}}" header="true"/>
+        <Set name="x-name" value="{{newHome}}" header="true" />
+
+        <Say>Hello my name is {{newHome}}</Say>
+        <Say >Hello my name is {{headerName}}</Say>
+        <Say>Hello my name is {{x-name}}</Say>
+
+        <Dial>
+            <Number>160</Number>
+        </Dial>
+    </Response> 
+    ```
+
+    Upon running this script, the subsequent actions take place:
+    1. The variables `newHome` and `headerName` are initialized.
+    2. The SIP INVITE message is prepared with headers:
+        `name: Joe`
+        `x-name: Adam`
+    3. The system plays the following audio prompts:
+        `Hello my name is Adam`.
+        `Hello my name is Joe`.
+        `Hello my name is`.
+    4. Finally, the system dials the number `160`.
+
+    This script ensures that specific headers are included in the SIP INVITE if specified with `header="true"` and provides clear audio prompts before connecting the call. 
+    
+    If the **Set elements** don't include `header="true"`, they will only set the variables and not as headers in the SIP INVITE.
+
+### Stream
+
+`Stream` is a noun together used with the `Start` verb.
+
+When the `<Start><Stream>` command is used during a call, the call's raw audio stream is streamed to your WebSocket server near real-time.
+
+!!! Example
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+        <Start>
+            <Stream url="wss://your-websocket-server.com/your-endpoint" />
+        </Start>
+    </Response>
+    ```
+
+### Echo
+
+`Echo` plays back everything that is spoken/ played, like voice, audio, DTMF, etc.
+
+It enables loopback on the calling channel.
+
+It's an effective and quicker way to check a customer's audio quality and call path delay.
+
+!!! Example
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+       <Echo></Echo>
+    </Response>
+    ```
 
 |**Verbs/Attributes/Nouns**|**ConnexCS (ConneXML)**|**Twilio<sup>TM</sup> (TwiML)[^1]**|**Telnyx (TeXML)[^2]**|
 |----------------------------|------------|--------------|------------|
@@ -507,6 +644,9 @@ An existing call is transferred to a different destination using the `Dial` ver
 |➡️Number|✅|✅|✅|
 |➡️Queue|✅|✅|✅|
 |➡️Client|✅|✅|❌|
+|🟦setCallbackEvent|✅|✅|✅|
+|🟦setCallback|✅|✅|✅|
+|🟦setCallbackMethod|✅|✅|✅|
 |➡️Voicemail|✅|❌|❌|
 |🟦Voicemail Inbox|✅|❌|❌|
 |➡️Barge|✅|❌|❌|
@@ -528,7 +668,7 @@ An existing call is transferred to a different destination using the `Dial` ver
 |**digits**|❌|✅|✅|
 |**Stop**|❌|❌|✅|
 |**Transcription**|❌|❌|✅|
-|**Stream**|❌|✅|✅|
+|**Stream**|✅|✅|✅|
 |**Refer**|❌|✅|✅|
 |**Record**|❌|✅|✅|
 |**HttpRequest**|❌|❌|✅|
@@ -536,6 +676,11 @@ An existing call is transferred to a different destination using the `Dial` ver
 |**Pay**|❌|✅|❌|
 |**Connect**|❌|✅|❌|
 |**Suppression**|❌|❌|✅|
+|**Press DTMF Varaible**|✅|❌|❌|
+|➡️transfer|✅|❌|❌|
+|**Before**|✅|❌|❌|
+|**Set**|✅|❌|❌|
+|**Echo**|✅|❌|❌|
 
 [^1]:  https://www.twilio.com/docs/voice/twiml
 [^2]:  https://developers.telnyx.com/docs/v2/voice/programmable_voice/texml/texml-translator/texml_translator/
