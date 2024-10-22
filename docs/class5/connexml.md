@@ -580,7 +580,8 @@ It's an effective and quicker way to check a customer's audio quality and call p
         <Before>
             <Set name="newHome" value="Adam"/>
             <Set name="headerName" value="Joe"/>
-        </Before> 
+        </Before>
+    </Response>
     ```
     Upon running this script, the subsequent actions take place:
     1. The variables `newHome` and `headerName` are initialized.
