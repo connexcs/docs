@@ -433,7 +433,7 @@ An existing call is transferred to a different destination using the `Dial` ver
         ```
     
     10. **Voicemail**
-        ``` xml
+        ```xml
         <?xml version="1.0" encoding="UTF-8"?>
         <Response>
             <Dial>
@@ -443,7 +443,7 @@ An existing call is transferred to a different destination using the `Dial` ver
         ```
     
     11. **Voicemail Inbox**
-        ``` xml
+        ```xml
         <?xml version="1.0" encoding="UTF-8"?>
         <Response>
             <Dial>
@@ -454,7 +454,7 @@ An existing call is transferred to a different destination using the `Dial` ver
         ```
 
     12. **Barge (Default Method)**
-        ``` xml
+        ```xml
         <?xml version="1.0" encoding="UTF-8"?>
         <Response>
             <Dial>
@@ -464,7 +464,7 @@ An existing call is transferred to a different destination using the `Dial` ver
         ```
     
     13.  **Barge**
-        ``` xml
+        ```xml
         <?xml version="1.0" encoding="UTF-8"?>
         <Response>
             <Dial>
@@ -478,7 +478,7 @@ An existing call is transferred to a different destination using the `Dial` ver
         ```
 
     14. **Barge (Group)** 
-        ``` xml
+        ```xml
         <?xml version="1.0" encoding="UTF-8"?>
         <Response>
             <Dial>
@@ -510,7 +510,7 @@ It helps to define on which leg of the call the DTMF will work. For example, `dt
 
 !!! Example
     When the digit `3` is pressed on the call leg `b` within the specified context `A`, the call will be transferred to `test4`.
-    ``` xml
+    ```xml
     <Response>
         <Press dtmf_leg ='b'digit="3" context="A">
         <Transfer>test4</Transfer>
@@ -527,7 +527,7 @@ It helps to define on which leg of the call the DTMF will work. For example, `dt
 It initializes variables before executing other commands.
 
 !!! Example
-    ``` xml
+    ```xml
     <Response>
         <Before><Set name="newHome" value="Adam"/><Set name="headerName" value="Joe"/></Before>
     </Response>
@@ -539,7 +539,7 @@ It initializes variables before executing other commands.
 `Set` defines headers to be included in the SIP INVITE and set variables.
 
 !!! Example "Example 1"
-    ``` xml
+    ```xml
     <Response>
         <Set name="name" value="Adam"/>
         <Set name="x-name" value="Water" header="true" />
