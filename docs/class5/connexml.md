@@ -494,9 +494,9 @@ An existing call is transferred to a different destination using the `Dial` ver
         <Response>
             <Dial>
                 <Client
-                statusCallbackEvent='initiated ringing answered completed'
-                statusCallback='http://fr1js1.connexcs.net:3002'
-                statusCallbackMethod='POST'>
+                statusCallbackEvent="initiated ringing answered completed"
+                statusCallback="http://fr1js1.connexcs.net:3002"
+                statusCallbackMethod="POST">
                 7900
                 </Client>
             </Dial>
@@ -504,16 +504,53 @@ An existing call is transferred to a different destination using the `Dial` ver
         ```
         Send updates about the call's lifecycle (initiated, ringing, answered, and completed) to the callback URL http://fr1js1.connexcs.net:3002 via HTTP POST requests.
 
+#### Dynamic Dial
+
+Dynamically dial a phone number based on a `substring` of a variable named `Extension`.
+
+!!! Example "Example 1"
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+        <Dial>
+            <Number>{{substring Extension 5}}</Number>
+        </Dial>
+    </Response>
+    ```
+    **Purpose**: Initiates a call to a number extracted from the Extension variable.
+    **Actions**: Extracts a substring from the Extension variable starting at the 5th character and uses it as the number to dial.
+
+!!! Example "Example 2"
+    Assuming the `Extension variable` is set to `"1234567890"`:
+    The `substring` starting at the `5th character` is `"67890"`.
+    The system will dial the number `"67890"`.
+
+!!! Example "Example 3"
+    Assuming the `Extension variable` is set to `"afwd_[a-z0-9]+"`:
+    It means if you dial `newsetup_160` and 
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+        <Dial>
+            <Number>{{substring Extension 9}}</Number>
+        </Dial>
+    </Response>
+    ```
+
+    The system will dial the number `"160"`
+
 ### Press DTMF Variable
 
 It helps to define on which leg of the call the DTMF will work. For example, `dtmf_leg ='a'` or `dtmf_leg ='b'`.
 
 !!! Example
     When the digit `3` is pressed on the call leg `b` within the specified context `A`, the call will be transferred to `test4`.
+
     ``` xml
+    <?xml version="1.0" encoding="UTF-8"?>
     <Response>
         <Press dtmf_leg ='b'digit="3" context="A">
-        <Transfer>test4</Transfer>
+            <Transfer>test4</Transfer>
         </Press>
     </Response>
     ```
@@ -528,6 +565,7 @@ It initializes variables before executing other commands.
 
 !!! Example
     ``` xml
+    <?xml version="1.0" encoding="UTF-8"?>
     <Response>
         <Before><Set name="newHome" value="Adam"/><Set name="headerName" value="Joe"/></Before>
     </Response>
@@ -540,6 +578,7 @@ It initializes variables before executing other commands.
 
 !!! Example "Example 1"
     ``` xml
+    <?xml version="1.0" encoding="UTF-8"?>
     <Response>
         <Set name="name" value="Adam"/>
         <Set name="{% raw %}{{ x-name }}{% endraw %}" value="Water" header="true" />
@@ -563,9 +602,9 @@ It initializes variables before executing other commands.
         <Set name="name" value="{{headerName}}" header="true"/>
         <Set name="{% raw %}{{ x-name }}{% endraw %}" value="{{newHome}}" header="true" />
 
-        <Say>Hello my name is {{newHome}}</Say>
-        <Say >Hello my name is {{headerName}}</Say>
-        <Say>Hello my name is {% raw %}{{x-name}}{% endraw %}</Say>
+        <Say>Hello my name is "{{newHome}}"</Say>
+        <Say >Hello my name is "{{headerName}}"</Say>
+        <Say>Hello my name is "{% raw %}{{x-name}}{% endraw %}"</Say>
 
         <Dial>
             <Number>160</Number>
@@ -574,14 +613,18 @@ It initializes variables before executing other commands.
     ```
 
     Upon running this script, the subsequent actions take place:
+
     1. The variables `newHome` and `headerName` are initialized.
+
     2. The SIP INVITE message is prepared with headers:
         `name: Joe`
         `x-name: Adam`
+    
     3. The system plays the following audio prompts:
         `Hello my name is Adam`.
         `Hello my name is Joe`.
         `Hello my name is`.
+    
     4. Finally, the system dials the number `160`.
 
     This script ensures that specific headers are included in the SIP INVITE if specified with `header="true"` and provides clear audio prompts before connecting the call. 
@@ -651,6 +694,7 @@ It's an effective and quicker way to check a customer's audio quality and call p
 |🟦whisper|✅|❌|❌|
 |🟦bridge|✅|❌|❌|
 |🟦commands|✅|❌|❌|
+|➡️**Dynamic Dial**|✅|❌|❌|
 |**Enqueue**|✅|✅|✅|
 |**Play**|✅|✅|✅|
 |**Redirect**|✅|✅|✅|
@@ -674,7 +718,7 @@ It's an effective and quicker way to check a customer's audio quality and call p
 |**Pay**|❌|✅|❌|
 |**Connect**|❌|✅|❌|
 |**Suppression**|❌|❌|✅|
-|**Press DTMF Varaible**|✅|❌|❌|
+|**Press DTMF Variable**|✅|❌|❌|
 |➡️transfer|✅|❌|❌|
 |**Before**|✅|❌|❌|
 |**Set**|✅|❌|❌|
