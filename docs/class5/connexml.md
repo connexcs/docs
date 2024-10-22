@@ -589,47 +589,6 @@ It initializes variables before executing other commands.
     Sets the **name** to the value of **Adam**.<br>Sets the **x-name header** to the value of **Water**.</br><br>Result call will be sent to 160 and will have header **INVITE sip:160@domain.com SIP/2.0**</br>
     `x-name: Water`
 
-!!! Example "Example 2"
-    ``` xml
-    <?xml version="1.0" encoding="UTF-8"?>
-    <Response>
-        <Before>
-            <Set name="newHome" value="Adam"/>
-            <Set name="headerName" value="Joe"/>
-        </Before>
-
-        <Set name="name" value="{{headerName}}" header="true"/>
-        <Set name="{% raw %}{{ x-name }}{% endraw %}" value="{{newHome}}" header="true" />
-
-        <Say>Hello my name is "newHome"</Say>
-        <Say >Hello my name is "headerName"</Say>
-        <Say>Hello my name is "{% raw %}{{ x-name }}{% endraw %}"</Say>
-
-        <Dial>
-            <Number>160</Number>
-        </Dial>
-    </Response> 
-    ```
-
-    Upon running this script, the subsequent actions take place:
-
-    1. The variables `newHome` and `headerName` are initialized.
-
-    2. The SIP INVITE message is prepared with headers:
-        `name: Joe`
-        `x-name: Adam`
-    
-    3. The system plays the following audio prompts:
-        `Hello my name is Adam`.
-        `Hello my name is Joe`.
-        `Hello my name is`.
-    
-    4. Finally, the system dials the number `160`.
-
-    This script ensures that specific headers are included in the SIP INVITE if specified with `header="true"` and provides clear audio prompts before connecting the call. 
-    
-    If the **Set elements** don't include `header="true"`, they will only set the variables and not as headers in the SIP INVITE.
-
 ### Stream
 
 `Stream` is a noun together used with the `Start` verb.
