@@ -487,22 +487,6 @@ An existing call is transferred to a different destination using the `Dial` ver
             </Dial>
         </Response>
         ```
-    
-    15. **statusCallbackEvent, statusCallback, statusCallbackMethod**
-        ``` xml
-        <?xml version="1.0" encoding="UTF-8"?>
-        <Response>
-            <Dial>
-                <Client
-                statusCallbackEvent="initiated ringing answered completed"
-                statusCallback="http://fr1js1.connexcs.net:3002"
-                statusCallbackMethod="POST">
-                7900
-                </Client>
-            </Dial>
-        </Response>
-        ```
-        Send updates about the call's lifecycle (initiated, ringing, answered, and completed) to the callback URL http://fr1js1.connexcs.net:3002 via HTTP POST requests.
 
 #### Dynamic Dial
 
