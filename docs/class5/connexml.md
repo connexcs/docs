@@ -539,7 +539,7 @@ When the `<Start><Stream>` command is used during a call, the call's raw audio s
 
 ### Echo
 
-`Echo` plays back everything that'ss spoken/ played, like voice, audio, DTMF, etc.
+`Echo` plays back everything that's spoken/played, like voice, audio, DTMF, etc.
 
 It enables loopback on the calling channel.
 
