@@ -542,14 +542,14 @@ It initializes variables before executing other commands.
     ``` xml
     <Response>
         <Set name="name" value="Adam"/>
-        <Set name="y-name" value="Water" header="true" />
+        <Set name="x-name" value="Water" header="true" />
         <Dial>
             <Number>160</Number>
         </Dial>
     </Response>
     ```
-    Sets the **name** to the value of **Adam**.<br>Sets the **y-name header** to the value of **Water**.</br><br>Result call will be sent to 160 and will have header **INVITE sip:160@domain.com SIP/2.0**</br>
-    `y-name: Water`
+    Sets the **name** to the value of **Adam**.<br>Sets the **x-name header** to the value of **Water**.</br><br>Result call will be sent to 160 and will have header **INVITE sip:160@domain.com SIP/2.0**</br>
+    `x-name: Water`
 
 !!! Example "Example 2"
     ``` xml
@@ -561,11 +561,11 @@ It initializes variables before executing other commands.
         </Before>
 
         <Set name="name" value="{{headerName}}" header="true"/>
-        <Set name="y-name" value="{{newHome}}" header="true" />
+        <Set name="x-name" value="{{newHome}}" header="true" />
 
         <Say>Hello my name is {{newHome}}</Say>
         <Say >Hello my name is {{headerName}}</Say>
-        <Say>Hello my name is {{y-name}}</Say>
+        <Say>Hello my name is {{x-name}}</Say>
 
         <Dial>
             <Number>160</Number>
@@ -577,7 +577,7 @@ It initializes variables before executing other commands.
     1. The variables `newHome` and `headerName` are initialized.
     2. The SIP INVITE message is prepared with headers:
         `name: Joe`
-        `y-name: Adam`
+        `x-name: Adam`
     3. The system plays the following audio prompts:
         `Hello my name is Adam`.
         `Hello my name is Joe`.
