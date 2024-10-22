@@ -549,9 +549,7 @@ It initializes variables before executing other commands.
     </Response>
     ```
     Sets the **name** to the value of **Adam**.<br>Sets the **x-name header** to the value of **Water**.</br><br>Result call will be sent to 160 and will have header **INVITE sip:160@domain.com SIP/2.0**</br>
-    ...
-    x-name: Water
-    ...
+    `x-name: Water`
 
 !!! Example "Example 2"
     ``` xml
