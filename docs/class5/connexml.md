@@ -577,6 +577,8 @@ It's an effective and quicker way to check a customer's audio quality and call p
             <Set name="newHome" value="Adam"/>
             <Set name="headerName" value="Joe"/>
         </Before>
+        <Set name="name" value="{{headerName}}" header="true"/>
+        <Set name="{% raw %}{{ x-name }}{% endraw %}" value="{{newHome}}" header="true" />
     </Response>
     ```
 
