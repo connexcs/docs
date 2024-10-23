@@ -512,7 +512,7 @@ Dynamically dial a phone number based on a `substring` of a variable named `Exte
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
         <Dial>
-            <Number>{{substring Extension 5}}</Number>
+            <Number>>{% raw %}{{ substring Extension 9 }}{% endraw %}</Number>
         </Dial>
     </Response>
     ```
@@ -532,7 +532,7 @@ Dynamically dial a phone number based on a `substring` of a variable named `Exte
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
         <Dial>
-            <Number>{{substring Extension 9}}</Number>
+            <Number>{% raw %}{{ substring Extension 9 }}{% endraw %}</Number>
         </Dial>
     </Response>
     ```
