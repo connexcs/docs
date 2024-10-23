@@ -587,6 +587,18 @@ It's an effective and quicker way to check a customer's audio quality and call p
         </Dial>
     </Response>
     ```
+    Upon running this script, the subsequent actions take place:
+    1. The variables `newHome` and `headerName` are initialized.
+    2. The SIP INVITE message is prepared with headers:
+       1. `name: Joe`
+       2. `x-name: Adam`
+    3. The system plays the following audio prompts:
+          1. `Hello my name is Adam`.
+          2. `Hello my name is Joe`.
+          3. `Hello my name is`.
+    4. Finally, the system dials the number `160`.
+    5. This script ensures that specific headers are included in the SIP INVITE if specified with `header="true"` and provides clear audio prompts before connecting the call.
+    6. If the **Set elements** don't include `header="true"`, they will only set the variables and not as headers in the SIP INVITE.
 
 |**Verbs/Attributes/Nouns**|**ConnexCS (ConneXML)**|**Twilio<sup>TM</sup> (TwiML)[^1]**|**Telnyx (TeXML)[^2]**|
 |----------------------------|------------|--------------|------------|
