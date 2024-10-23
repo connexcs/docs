@@ -516,6 +516,7 @@ Dynamically dial a phone number based on a `substring` of a variable named `Exte
         </Dial>
     </Response>
     ```
+
     **Purpose**: Initiates a call to a number extracted from the Extension variable.
     **Actions**: Extracts a substring from the Extension variable starting at the 5th character and uses it as the number to dial.
 
