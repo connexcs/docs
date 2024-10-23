@@ -488,7 +488,7 @@ An existing call is transferred to a different destination using the `Dial` ver
         </Response>
         ```
 
-#### Dynamic Dial
+### Dynamic Dial
 
 Dynamically dial a phone number based on a `substring` of a variable named `Extension`.
 
