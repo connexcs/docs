@@ -579,9 +579,13 @@ It's an effective and quicker way to check a customer's audio quality and call p
         </Before>
         <Set name="name" value="{{headerName}}" header="true"/>
         <Set name="{% raw %}{{ x-name }}{% endraw %}" value="{{newHome}}" header="true" />
-        <Say>Hello my name is {{newHome}}</Say>
-        <Say >Hello my name is {{headerName}}</Say>
+        <Say>Hello my name is "{{newHome}}"</Say>
+        <Say >Hello my name is "{{headerName}}"</Say>
         <Say>Hello my name is {% raw %}{{ x-name }}{% endraw %}</Say>
+        <Dial>
+            <Number>160</Number>
+        </Dial>
+</Response> 
     </Response>
     ```
 
