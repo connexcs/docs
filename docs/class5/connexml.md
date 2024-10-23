@@ -492,7 +492,7 @@ An existing call is transferred to a different destination using the `Dial` ver
 
 Dynamically dial a phone number based on a `substring` of a variable named `Extension`.
 
-!!! Example "Example 1"
+!!! Example "Syntax"
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
