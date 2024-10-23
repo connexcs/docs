@@ -592,8 +592,8 @@ It's an effective and quicker way to check a customer's audio quality and call p
     1. The variables `newHome` and `headerName` are initialized.
    
     2. The SIP INVITE message is prepared with headers:
-       1. `name: Joe`
-       2. `x-name: Adam`
+          1. `name: Joe`
+          2. `x-name: Adam`
 
     3. The system plays the following audio prompts:
           1. `Hello my name is Adam`.
