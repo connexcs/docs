@@ -507,17 +507,17 @@ An existing call is transferred to a different destination using the `Dial` ver
 
 Dynamically dial a phone number based on a `substring` of a variable named `Extension`.
 
-!!! Example "Syntax"
+!!! Example "Example 1"
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
         <Dial>
-            <Number>>{% raw %}{{ substring Extension 9 }}{% endraw %}</Number>
+            <Number>>{% raw %}{{ substring Extension 5 }}{% endraw %}</Number>
         </Dial>
     </Response>
     ```
-
     **Purpose**: Initiates a call to a number extracted from the Extension variable.
+
     **Actions**: Extracts a substring from the Extension variable starting at the 5th character and uses it as the number to dial.
 
 !!! Example "Example 2"
