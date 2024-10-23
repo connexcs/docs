@@ -585,7 +585,6 @@ It's an effective and quicker way to check a customer's audio quality and call p
         <Dial>
             <Number>160</Number>
         </Dial>
-</Response> 
     </Response>
     ```
 
