@@ -487,6 +487,21 @@ An existing call is transferred to a different destination using the `Dial` ver
             </Dial>
         </Response>
         ```
+    15. **statusCallbackEvent, statusCallback, statusCallbackMethod**
+        ``` xml
+        <?xml version="1.0" encoding="UTF-8"?>
+        <Response>
+            <Dial>
+                <Client
+                statusCallbackEvent="initiated ringing answered completed"
+                statusCallback="http://fr1js1.connexcs.net:3002"
+                statusCallbackMethod="POST">
+                7900
+                </Client>
+            </Dial>
+        </Response>
+        ```
+        Send updates about the call's lifecycle (initiated, ringing, answered, and completed) to the callback URL http://fr1js1.connexcs.net:3002 via HTTP POST requests.
 
 ### Dynamic Dial
 
@@ -512,7 +527,6 @@ Dynamically dial a phone number based on a `substring` of a variable named `Exte
 !!! Example "Example 3"
     Assuming the `Extension variable` is set to `"afwd_[a-z0-9]+"`:
     It means if you dial `newsetup_160` and
-
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
