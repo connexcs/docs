@@ -503,7 +503,7 @@ An existing call is transferred to a different destination using the `Dial` ver
         ```
         Send updates about the call's lifecycle (initiated, ringing, answered, and completed) to the callback URL http://fr1js1.connexcs.net:3002 via HTTP POST requests.
 
-### Dynamic Dial
+#### Dynamic Dial
 
 Dynamically dial a phone number based on a `substring` of a variable named `Extension`.
 
