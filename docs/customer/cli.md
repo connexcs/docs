@@ -64,7 +64,7 @@ The **P-Asserted-ID** manipulation uses the same syntax as the Replace CLI.
 
 + **Allow Type**: You can select from various options like Mobile, Paging, VoIP, Satellite etc to allow the CLIs.
 
-+ **Use DID**: Pull in DIDs from the customer's account to use either as a Filter, Performance, Prefix Match or Random.  
++ **Use DID**: Pull in DIDs from the customer's account to use either as a Filter or as a Replacement.  
 
     !!! Example
         If Dialled matched number is starting with **1**, the CLI routes to 11111.

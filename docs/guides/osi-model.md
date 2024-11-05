@@ -8,7 +8,7 @@ In the year 1984, the International Organization for Standardization (ISO) creat
 
 ## Open Systems Interconnections Model Layers
 
-![osi-model](/guides/img/osimodel.jpg)
+<img src= "/guides/img/osi12.png">
 
 ### Physical Layer
 
@@ -20,7 +20,7 @@ It regulates the bit rate and the transmission of the raw data, which is just a 
 
 ### Data Link Layer
 
-It creates and breaks connections between two network nodes that are physically close.
+It creates and breaks connections between two network nodes.
 
 Packets get disintegrated into Frames, which are then sent from the source to the destination.
 
@@ -32,7 +32,7 @@ LLC identifies network protocols, does error checking, and synchronises frames.
 
 ### Network Layer
 
-The network layer serves two primary purposes. One is dividing segments into network packets, which are then put back together at the other end. The other is packet routing with the best route across a physical network. To route packets to a target node, the network layer needs network addresses (IP addresses).
+The network layer serves two primary purposes. One is dividing segments into network packets, which are then put back together at the other end. The other is packet routing with the best route. To route packets to a target node, the network layer needs network addresses (IP addresses).
 
 ### Transport Layer
 
