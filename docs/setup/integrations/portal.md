@@ -57,6 +57,7 @@ You can provide several domains for your customers through different brands, and
        * Packages
        * Contracts
    * **Currencies:** Choose the currencies available for your customers when they sign up.
+
 === "User Access Area"
 
     Select the sections/features displayed to your customers (see "Override Options" below).
@@ -109,6 +110,7 @@ You can provide several domains for your customers through different brands, and
     To override these options for specific customers, go to **Management :material-menu-right: Customer :material-menu-right: [Choose Customer] :material-menu-right: Edit :material-menu-right: Config :material-menu-right: Portal Access**.
 
     Select items from the "Show" heading to display the feature, or from the Hide options to prevent it from appearing.
+
 === "SMTP"
 
     You can now associate brands with Portal, and send an e-mail with your brand or domain name with this feature.
