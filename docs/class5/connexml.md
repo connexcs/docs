@@ -494,7 +494,7 @@ An existing call is transferred to a different destination using the `Dial` ver
             <Dial>
                 <Client
                 statusCallbackEvent="initiated ringing answered completed"
-                statusCallback="http://fr1js1.connexcs.net:3002"
+                statusCallback="https://api.example.com/compile?rateCompact=true&ids=101,202,303"
                 statusCallbackMethod="POST">
                 7900
                 </Client>
@@ -572,7 +572,7 @@ It initializes variables before executing other commands.
 
 ### Stream
 
-`Stream` is a noun together used with the `Start` verb.
+`Stream` is a noun is used in conjunction with either `Start` or `Connect`.
 
 When the `<Start><Stream>` command is used during a call, the call's raw audio stream is streamed to your WebSocket server near real-time.
 
@@ -585,6 +585,16 @@ When the `<Start><Stream>` command is used during a call, the call's raw audio s
         </Start>
     </Response>
     ```
+
+|**Attribute**|**Description**|**Options**|**Default Method**|
+|-------------|---------------|-----------|-------|
+|`url`|The WebSocket destination address for stream delivery||none|
+|`name`(Optional)|Defines a unique custom name for the stream instance||none|
+|`track`(Optional)|Indicates which track to stream|`inbound_track`, `outbound_track`, `both_tracks`|`inbound_track`|
+|`statusCallback`|For every event listed in the `statusCallbackEvent` attribute, you may define a URL to send webhook requests to using the `statusCallback` attribute. A valid hostname is required for non-relative URLs (underscores are not allowed)|any `URL`|none|
+|`statusCallbackMethod`|Lets you define the `HTTP` method ConnexCS should use when making requests to the URL specified in the `statusCallback` attribute.|`GET`, `POST`|`POST`|
+|`bidirectionalMode`|Bidirectional streaming mode|`mp3`, `rtp`|`mp3`|
+|`bidirectionalCodec`|Bidirectional streaming codec, used only with `bidirectionalMode=rtp`|`PCMU`, `PCMA`, `G722`|`PCMU`|
 
 ### Echo
 
@@ -704,6 +714,13 @@ It's an effective and quicker way to check a customer's audio quality and call p
 |**Stop**|❌|❌|✅|
 |**Transcription**|❌|❌|✅|
 |**Stream**|✅|✅|✅|
+|🟦url|✅|✅|✅|
+|🟦name|✅|✅|✅|
+|🟦track|✅|✅|✅|
+|🟦statusCallbackMethod|✅|✅|❌|
+|🟦statusCallback|✅|✅|❌|
+|🟦bidirectionalMode|✅|✅|❌|
+|🟦bidirectionalCodec|✅|✅|❌|
 |**Refer**|❌|✅|✅|
 |**Record**|❌|✅|✅|
 |**HttpRequest**|❌|❌|✅|
