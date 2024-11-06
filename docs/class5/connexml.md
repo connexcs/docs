@@ -614,19 +614,18 @@ graph TD
     **App Script Example (within the IDE):**
 
     ```js
-    const llm = require('cxLLM');
+        const llm = require('cxLLM');
+        // Retrieves the current day of the week
+        function dayOfWeek() {
+            return 'Monday';
+        }
 
-    // Retrieves the current day of the week
-    function dayOfWeek() {
-        return 'Monday';
-    }
-
-    // Transfers the call to a specified person
-    function transfer({name}) {
-        console.log(`We are going to transfer the call to ${name}`);
-        return {action: 'transfer', data: {number: '160'}};
-    }
-    ````
+        // Transfers the call to a specified person
+        function transfer({name}) {
+            console.log(`We are going to transfer the call to ${name}`);
+            return {action: 'transfer', data: {number: '160'}};
+        }
+    ```
 
 !!! Example "Example: XML Response"
     ```xml
