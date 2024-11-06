@@ -589,7 +589,7 @@ graph TD
     J --> K[Call Transfers and AI Agent in XML Response]
 ```
 
-!!! Example "File ID method"
+!!! Example "Example: File ID method"
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
@@ -600,7 +600,7 @@ graph TD
     ```
     File ID of agent: `asst_MTbETp3jyb9tG9eAepFGxgPb`, created and configured in the IDE.
 
-!!! Example "Embedded Instructions Method" 
+!!! Example "Example: Embedded Instructions Method" 
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
@@ -610,10 +610,10 @@ graph TD
     </Response>
     ```
 
-!!! Example "XML Integration (App Script Method)"
+!!! Example "Example: XML Integration (App Script Method)"
     **App Script Example (within the IDE):**
-    ```js
 
+    ```js
     const llm = require('cxLLM');
 
     // Retrieves the current day of the week
@@ -628,7 +628,7 @@ graph TD
     }
     ````
 
-!!! Example "XML Response"
+!!! Example "Example: XML Response"
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
