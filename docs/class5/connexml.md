@@ -538,7 +538,7 @@ Dynamically dial a phone number based on a `substring` of a variable named `Exte
     ```
     The system will dial the number `"160"`
 
-### Press DTMF Variable
+### Press
 
 It helps to define on which leg of the call the DTMF will work. For example, `dtmf_leg ='a'` or `dtmf_leg ='b'`.
 
@@ -728,7 +728,7 @@ It's an effective and quicker way to check a customer's audio quality and call p
 |**Pay**|❌|✅|❌|
 |**Connect**|❌|✅|❌|
 |**Suppression**|❌|❌|✅|
-|**Press DTMF Variable**|✅|❌|❌|
+|**Press**|✅|❌|❌|
 |➡️transfer|✅|❌|❌|
 |**Before**|✅|❌|❌|
 |**Set**|✅|❌|❌|
