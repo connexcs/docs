@@ -424,6 +424,9 @@ Use **CLI Restrict** to allow CLIs to pass through a specific provider. To allow
 4. Enter the CLIs / ANIs you want to allow in the [**CLI Restrict**](https://docs.connexcs.com/provider-ratecard/#advanced) box.
 5. Click **`Save`**.
 
+!!! Note
+     You can now use DID options (Performance, Prefix Match, or Random) on a single CLI.
+
 ## General Condition 6 (GC6) Compliance
 
 ConnexCS is GC6 compliant for end users, which:

@@ -153,6 +153,7 @@ Level and access determine the permissions:
 + Granular permissions override and nullify all Global permissions.
 
     **For example**, if you assign CRUD permissions Globally, and assign Granular Read permissions to 3 features, the group will have Read-Only permissions for those 3 features.
+
 + If you don't assign Granular permissions to a group, the group has access to use all features in the ConnexCS Control Panel based on the level of Global permissions (CRUD).
 
     **For example**, if you assign only Create and Read permissions globally, the group has permissions to create and read data for all features.
