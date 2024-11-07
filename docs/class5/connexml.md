@@ -343,7 +343,7 @@ An existing call is transferred to a different destination using the `Dial` ver
 ||`bridge`|Allows an eavesdropper to listen in on a call without being an active participant. The eavesdropper can monitor the conversation on one or both legs of the call|`a`(aleg), `b`(bleg),`ab` (both legs)|`ab`|
 ||`command`|DTMF signals during eavesdrop|`true`, `false`|`true`|
 |`Client`|`statusCallbackEvent`|An outbound call starts when you use `Dial` to dial out to a client. When the phone rings, the call switches from the `initiated` event to the `ringing` event, `answered` when the call is answered, and `completed` when the call is ended. You can also sign up for the webhooks for the various call events.|`initiated`, `ringing`, `answered`, `completed`|none|
-||`statusCallback`|For every event listed in the `statusCallbackEvent` attribute, you may define a URL to send webhook requests to using the `statusCallback` attribute. A valid hostname is required for non-relative URLs (underscores are not allowed)|any `URL`|none|
+||`statusCallback`|For every event listed in the `statusCallbackEvent` attribute, you may define a URL to send webhook requests to using the `statusCallback` attribute Non-relative URLs (underscores aren't allowed) require a valid hostname|any `URL`|none|
 ||`statusCallbackMethod`|Lets you define the `HTTP` method ConnexCS should use when making requests to the URL specified in the `statusCallback` attribute.|`GET`, `POST`|`POST`|
 
 !!! Info
@@ -589,12 +589,8 @@ When the `<Start><Stream>` command is used during a call, the call's raw audio s
 |**Attribute**|**Description**|**Options**|**Default Method**|
 |-------------|---------------|-----------|-------|
 |`url`|The WebSocket destination address for stream delivery||none|
-|`name`(Optional)|Defines a unique custom name for the stream instance||none|
-|`track`(Optional)|Indicates which track to stream|`inbound_track`, `outbound_track`, `both_tracks`|`inbound_track`|
-|`statusCallback`|For every event listed in the `statusCallbackEvent` attribute, you may define a URL to send webhook requests to using the `statusCallback` attribute. A valid hostname is required for non-relative URLs (underscores are not allowed)|any `URL`|none|
+|`statusCallback`|For every event listed in the `statusCallbackEvent` attribute, you may define a URL to send webhook requests to using the `statusCallback` attribute. Non-relative URLs (underscores aren't allowed) require a valid hostname|any `URL`|none|
 |`statusCallbackMethod`|Lets you define the `HTTP` method ConnexCS should use when making requests to the URL specified in the `statusCallback` attribute.|`GET`, `POST`|`POST`|
-|`bidirectionalMode`|Bidirectional streaming mode|`mp3`, `rtp`|`mp3`|
-|`bidirectionalCodec`|Bidirectional streaming codec, used only with `bidirectionalMode=rtp`|`PCMU`, `PCMA`, `G722`|`PCMU`|
 
 ### Echo
 
@@ -715,12 +711,8 @@ It's an effective and quicker way to check a customer's audio quality and call p
 |**Transcription**|❌|❌|✅|
 |**Stream**|✅|✅|✅|
 |🟦url|✅|✅|✅|
-|🟦name|✅|✅|✅|
-|🟦track|✅|✅|✅|
 |🟦statusCallbackMethod|✅|✅|❌|
 |🟦statusCallback|✅|✅|❌|
-|🟦bidirectionalMode|✅|✅|❌|
-|🟦bidirectionalCodec|✅|✅|❌|
 |**Refer**|❌|✅|✅|
 |**Record**|❌|✅|✅|
 |**HttpRequest**|❌|❌|✅|
