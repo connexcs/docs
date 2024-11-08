@@ -65,7 +65,7 @@ To get ConneXML working you will need to:
 
 5.If you initially want this to hit a customers server same as before, you can use something like this in the XML field.
 
-```xml
+``` xml
 <?xml version="1.0" encoding="UTF-8"?>
 <Response>
     <Redirect method="POST">https://yourdomain.com/yourscript.php</Redirect>
@@ -84,7 +84,7 @@ In ConneXML, the XML components can be divided into 4 categories:
 4. `Nouns`: As the name suggests, a noun can described on which the action has to be performed. For example, it can be a phone number on which a Dial action has to be performed.
 
 !!! example
-    ```xml
+    ``` xml
     <Response> <!--Body of the code>
         <!-- Here, Play and Dial are the Verbs -->
         <Play loop="2">http://www.music.com/fun.wav</Play>
@@ -109,7 +109,7 @@ The current call is terminated with the `Hangup` verb.
 It has **no attributes** and doesn't include any **nouns**.
 
 !!! example
-    ```xml
+    ``` xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
         <Hangup/>
@@ -122,7 +122,7 @@ The `Pause` verb waits silently for a given amount of time, or by default, 5 sec
 `Pause` doesn't use any nouns, and a self-closing tag is mandatory.
 
 !!! example
-    ```xml
+    ``` xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
         <Say>I will pause default time starting now!</Say>
@@ -135,7 +135,7 @@ The `Pause` verb waits silently for a given amount of time, or by default, 5 sec
 |`length`|How many seconds for waiting|`1-180`|`5`|
 
 !!! example
-    ```xml
+    ``` xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
         <Pause length="10"/>
@@ -148,7 +148,7 @@ The `Pause` verb waits silently for a given amount of time, or by default, 5 sec
 Text to speech is enabled for any application by using the `Say` verb, which speaks the provided text back to the caller.
 
 !!! example
-    ```xml
+    ``` xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
         <Say>This is better  text to speech.</Say>
@@ -163,7 +163,7 @@ This verb rejects the current call.
     `Reject` can't be nested in any other verb and reject can't include any other verb.
 
 !!! example
-    ```xml
+    ``` xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
         <Reject/>
@@ -175,7 +175,7 @@ This verb rejects the current call.
 |`reason`|The sound to play in order to explain why the call was turned down|`rejected`, `busy`|`rejected`|
 
 !!! example
-    ```xml
+    ``` xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
         <Reject reason="busy"/>
@@ -200,7 +200,7 @@ The value of Play can either be:
 
 !!!example
     1. **Loop**
-    ```xml
+    ``` xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
         <Play loop="3">ivr/ivr-invalid_number_format.wav</Play>
@@ -208,21 +208,21 @@ The value of Play can either be:
     ```
 
     2. **Local Files**
-    ```xml
+    ``` xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
         <Play>ivr/ivr-invalid_number_format.wav</Play>
     </Response>
     ```
     3. **Remote HTTP**
-    ```xml
+    ``` xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
         <Play>https://file-examples.com/storage/fef3ad87fb6568c5a9d7b04/2017/11/file_example_WAV_1MG.wav</Play>
     </Response>
     ```
     4. **User Files**
-        ```xml
+        ``` xml
         <?xml version="1.0" encoding="UTF-8"?>
         <Response>
             <Play>user/adam.wav</Play>
@@ -236,7 +236,7 @@ The current call gets transferred to another ConnexCS Class 5 application usin
 `Redirect` doesn't allow for the nesting of nouns.
 
 !!! Example
-    ```xml
+    ``` xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
         <Redirect>http://yourdomain.com/connex/test.xml</Redirect>
@@ -248,7 +248,7 @@ The current call gets transferred to another ConnexCS Class 5 application usin
 |`method`|The type of redirect method used URL|`GET`, `POST`| `POST`|
 
 !!! example
-    ```xml
+    ``` xml
     <Response>
         <Redirect method="GET">https://yourdomain.com/yourscript.php</Redirect>
     </Response>
@@ -264,7 +264,7 @@ During a call, the `Gather` verb accumulates DTMF tones.
 You can create an interactive IVR with text-to-speech by nesting `Say` within `Gather`.
 
 !!! example
-    ```xml
+    ``` xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
         <Gather actionOnEmptyResult="false" action="https://yourdomain.com/youwebserver.php" method="GET" numDigits="6" finishOnKey="*" timeout="120">
@@ -294,7 +294,7 @@ You can create an interactive IVR with text-to-speech by nesting `Say` within `
 The current call is enqueued in a call queue using the `Enqueue` verb.
 
 !!! example
-    ```xml
+    ``` xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
         <Enqueue>1000</Enqueue>
@@ -312,7 +312,7 @@ An existing call is transferred to a different destination using the `Dial` ver
    * ConnexCS receives a busy signal.
   
 !!! example
-    ```xml
+    ``` xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
         <Dial>123456</Dial>
@@ -342,6 +342,9 @@ An existing call is transferred to a different destination using the `Dial` ver
 |`Barge`| `whisper`|If enabled, allows you to speak privately to one or both legs of the call without the other party hearing.|`a`(aleg), `b`(bleg), `ab`(both legs)|`ab`|
 ||`bridge`|Allows an eavesdropper to listen in on a call without being an active participant. The eavesdropper can monitor the conversation on one or both legs of the call|`a`(aleg), `b`(bleg),`ab` (both legs)|`ab`|
 ||`command`|DTMF signals during eavesdrop|`true`, `false`|`true`|
+|`Client`|`statusCallbackEvent`|An outbound call starts when you use `Dial` to dial out to a client. When the phone rings, the call switches from the `initiated` event to the `ringing` event, `answered` when the call is answered, and `completed` when the call is ended. You can also sign up for the webhooks for the various call events.|`initiated`, `ringing`, `answered`, `completed`|none|
+||`statusCallback`|For every event listed in the `statusCallbackEvent` attribute, you may define a URL to send webhook requests to using the `statusCallback` attribute Non-relative URLs (underscores aren't allowed) require a valid hostname|any `URL`|none|
+||`statusCallbackMethod`|Lets you define the `HTTP` method ConnexCS should use when making requests to the URL specified in the `statusCallback` attribute.|`GET`, `POST`|`POST`|
 
 !!! Info
     1. `Conference` is similar to how the `Number` noun lets you connect to another phone number.
@@ -350,7 +353,7 @@ An existing call is transferred to a different destination using the `Dial` ver
 
 !!! example
     1. **callerID**
-    ```xml
+    ``` xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
         <Dial callerId="1234">12345</Dial>
@@ -359,7 +362,7 @@ An existing call is transferred to a different destination using the `Dial` ver
     ```
 
     2. **fromDisplayName**
-        ```xml
+        ``` xml
         <?xml version="1.0" encoding="UTF-8"?>
         <Response>
             <Dial fromDisplayName="1234">12345</Dial>
@@ -368,7 +371,7 @@ An existing call is transferred to a different destination using the `Dial` ver
         ```
 
     3. **hangupOnStar**
-        ```xml
+        ``` xml
         <?xml version="1.0" encoding="UTF-8"?>
         <Response>
             <Dial hangupOnStar="true">12345</Dial>
@@ -376,7 +379,7 @@ An existing call is transferred to a different destination using the `Dial` ver
         </Response>
         ```
     4. **ringTone**
-        ```xml
+        ``` xml
         <?xml version="1.0" encoding="UTF-8"?>
         <Response>
             <Dial fromDisplayName="1234" ringtone="in">160</Dial>
@@ -384,7 +387,7 @@ An existing call is transferred to a different destination using the `Dial` ver
         ```
     
     5. **timeout**
-        ```xml
+        ``` xml
         <?xml version="1.0" encoding="UTF-8"?>
         <Response>
             <Dial timeout="60">123456</Dial>
@@ -392,7 +395,7 @@ An existing call is transferred to a different destination using the `Dial` ver
         ```
 
     6. **Number**
-        ```xml
+        ``` xml
         <?xml version="1.0" encoding="UTF-8"?>
         <Response>
             <Dial>
@@ -401,7 +404,7 @@ An existing call is transferred to a different destination using the `Dial` ver
         </Response>"
         ```
     7. **Queue**
-        ```xml
+        ``` xml
         <?xml version="1.0" encoding="UTF-8"?>
         <Response>
             <Dial>
@@ -411,7 +414,7 @@ An existing call is transferred to a different destination using the `Dial` ver
         ```
 
     8. **Client**
-        ```xml
+        ``` xml
         <?xml version="1.0" encoding="UTF-8"?>
         <Response>
             <Dial>
@@ -420,7 +423,7 @@ An existing call is transferred to a different destination using the `Dial` ver
         </Response>
         ```
     9. **Conference**
-        ```xml
+        ``` xml
         <?xml version="1.0" encoding="UTF-8"?>
         <Response>
             <Dial>
@@ -484,6 +487,180 @@ An existing call is transferred to a different destination using the `Dial` ver
             </Dial>
         </Response>
         ```
+    15. **statusCallbackEvent, statusCallback, statusCallbackMethod**
+        ``` xml
+        <?xml version="1.0" encoding="UTF-8"?>
+        <Response>
+            <Dial>
+                <Client
+                statusCallbackEvent="initiated ringing answered completed"
+                statusCallback="https://api.example.com/compile?rateCompact=true&ids=101,202,303"
+                statusCallbackMethod="POST">
+                7900
+                </Client>
+            </Dial>
+        </Response>
+        ```
+        Send updates about the call's lifecycle (initiated, ringing, answered, and completed) to the callback URL http://fr1js1.connexcs.net:3002 via HTTP POST requests.
+
+#### Dynamic Dial
+
+Dynamically dial a phone number based on a `substring` of a variable named `Extension`.
+
+!!! Example "Example 1"
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+        <Dial>
+            <Number>>{% raw %}{{ substring Extension 5 }}{% endraw %}</Number>
+        </Dial>
+    </Response>
+    ```
+    **Purpose**: Initiates a call to a number extracted from the Extension variable.
+
+    **Actions**: Extracts a substring from the Extension variable starting at the 5th character and uses it as the number to dial.
+
+!!! Example "Example 2"
+    Assuming the `Extension variable` is set to `"1234567890"`:
+    The `substring` starting at the `5th character` is `"67890"`.
+    The system will dial the number `"67890"`.
+
+!!! Example "Example 3"
+    Assuming the `Extension variable` is set to `"afwd_[a-z0-9]+"`:
+    It means if you dial `newsetup_160` and
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+        <Dial>
+            <Number>{% raw %}{{ substring Extension 9 }}{% endraw %}</Number>
+        </Dial>
+    </Response>
+    ```
+    The system will dial the number `"160"`
+
+### Press
+
+It helps to define on which leg of the call the DTMF will work. For example, `dtmf_leg ='a'` or `dtmf_leg ='b'`.
+
+!!! Example
+    When the digit `3` is pressed on the call leg `b` within the specified context `A`, the call will be transferred to `test4`.
+    ``` xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+        <Press dtmf_leg ='b'digit="3" context="A">
+            <Transfer>test4</Transfer>
+        </Press>
+    </Response>
+    ```
+
+|**Noun**|**Description**|
+|--------|---------------|
+|`Transfer`|Transfers the call to the given extension given|
+
+### Before
+
+It initializes variables before executing other commands.
+
+!!! Example
+    ``` xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+        <Before><Set name="newHome" value="Adam"/><Set name="headerName" value="Joe"/></Before>
+    </Response>
+    ```
+    Sets the variable `newHome` to "**Adam**".<br>Sets the variable `headerName` to "**Joe**"</br>.
+
+### Stream
+
+`Stream` is a noun is used in conjunction with either `Start` or `Connect`.
+
+When the `<Start><Stream>` command is used during a call, the call's raw audio stream is streamed to your WebSocket server near real-time.
+
+!!! Example
+    ``` xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+        <Start>
+            <Stream url="wss://your-websocket-server.com/your-endpoint" />
+        </Start>
+    </Response>
+    ```
+
+|**Attribute**|**Description**|**Options**|**Default Method**|
+|-------------|---------------|-----------|-------|
+|`url`|The WebSocket destination address for stream delivery||none|
+|`statusCallback`|For every event listed in the `statusCallbackEvent` attribute, you may define a URL to send webhook requests to using the `statusCallback` attribute. Non-relative URLs (underscores aren't allowed) require a valid hostname|any `URL`|none|
+|`statusCallbackMethod`|Lets you define the `HTTP` method ConnexCS should use when making requests to the URL specified in the `statusCallback` attribute.|`GET`, `POST`|`POST`|
+
+### Echo
+
+`Echo` plays back everything that's spoken/played, like voice, audio, DTMF, etc.
+
+It enables loopback on the calling channel.
+
+It's an effective and quicker way to check a customer's audio quality and call path delay.
+
+!!! Example
+    ``` xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+       <Echo></Echo>
+    </Response>
+    ```
+
+### Set
+
+`Set` defines headers to be included in the SIP INVITE and set variables.
+
+!!! Example "Example 1"
+    ``` xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+        <Set name="name" value="Adam"/>
+        <Set name="{% raw %}{{ x-name }}{% endraw %}" value="Water" header="true" />
+        <Dial>
+            <Number>160</Number>
+        </Dial>
+    </Response>
+    ```
+    Sets the **name** to the value of **Adam**.<br>Sets the **x-name header** to the value of **Water**.</br><br>Result call will be sent to 160 and will have header **INVITE sip:160@domain.com SIP/2.0**.</br>
+
+!!! Example "Example 2"
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+        <Before>
+            <Set name="newHome" value="Adam"/>
+            <Set name="headerName" value="Joe"/>
+        </Before>
+        <Set name="name" value="{{headerName}}" header="true"/>
+        <Set name="{% raw %}{{ x-name }}{% endraw %}" value="{{newHome}}" header="true" />
+        <Say>Hello my name is newHome</Say>
+        <Say>Hello my name is headerName</Say>
+        <Say>Hello my name is {% raw %}{{ x-name }}{% endraw %}</Say>
+        <Dial>
+            <Number>160</Number>
+        </Dial>
+    </Response>
+    ```
+    Upon running this script, the subsequent actions take place:
+
+    1. The variables `newHome` and `headerName` are initialized.
+   
+    2. The SIP INVITE message is prepared with headers:
+          1. `name: Joe`
+          2. `x-name: Adam`
+
+    3. The system plays the following audio prompts:
+          1. `Hello my name is Adam`.
+          2. `Hello my name is Joe`.
+          3. `Hello my name is`.
+
+    4. Finally, the system dials the number `160`.
+
+    5. This script ensures that specific headers are included in the SIP INVITE if specified with `header="true"` and provides clear audio prompts before connecting the call.
+
+    6. If the **Set elements** don't include `header="true"`, they will only set the variables and not as headers in the SIP INVITE.
 
 |**Verbs/Attributes/Nouns**|**ConnexCS (ConneXML)**|**Twilio<sup>TM</sup> (TwiML)[^1]**|**Telnyx (TeXML)[^2]**|
 |----------------------------|------------|--------------|------------|
@@ -507,12 +684,16 @@ An existing call is transferred to a different destination using the `Dial` ver
 |➡️Number|✅|✅|✅|
 |➡️Queue|✅|✅|✅|
 |➡️Client|✅|✅|❌|
+|🟦statusCallbackEvent|✅|✅|✅|
+|🟦statusCallback|✅|✅|✅|
+|🟦statusCallbackMethod|✅|✅|✅|
 |➡️Voicemail|✅|❌|❌|
 |🟦Voicemail Inbox|✅|❌|❌|
 |➡️Barge|✅|❌|❌|
 |🟦whisper|✅|❌|❌|
 |🟦bridge|✅|❌|❌|
 |🟦commands|✅|❌|❌|
+|➡️**Dynamic Dial**|✅|❌|❌|
 |**Enqueue**|✅|✅|✅|
 |**Play**|✅|✅|✅|
 |**Redirect**|✅|✅|✅|
@@ -528,7 +709,10 @@ An existing call is transferred to a different destination using the `Dial` ver
 |**digits**|❌|✅|✅|
 |**Stop**|❌|❌|✅|
 |**Transcription**|❌|❌|✅|
-|**Stream**|❌|✅|✅|
+|**Stream**|✅|✅|✅|
+|🟦url|✅|✅|✅|
+|🟦statusCallbackMethod|✅|✅|❌|
+|🟦statusCallback|✅|✅|❌|
 |**Refer**|❌|✅|✅|
 |**Record**|❌|✅|✅|
 |**HttpRequest**|❌|❌|✅|
@@ -536,6 +720,11 @@ An existing call is transferred to a different destination using the `Dial` ver
 |**Pay**|❌|✅|❌|
 |**Connect**|❌|✅|❌|
 |**Suppression**|❌|❌|✅|
+|**Press**|✅|❌|❌|
+|➡️transfer|✅|❌|❌|
+|**Before**|✅|❌|❌|
+|**Set**|✅|❌|❌|
+|**Echo**|✅|❌|❌|
 
 [^1]:  https://www.twilio.com/docs/voice/twiml
 [^2]:  https://developers.telnyx.com/docs/v2/voice/programmable_voice/texml/texml-translator/texml_translator/
