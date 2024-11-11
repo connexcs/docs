@@ -331,7 +331,7 @@ An existing call is transferred to a different destination using the `Dial` ver
 |--------|---------------|------------------|
 |`Number`|Its is an E.164 phone number|
 |`Queue`|Its a queue name|
-|`Queue custom music`|<Queue> element inside <Dial> has only the music attribute specifying the music file to play when a caller is in the queue|
+|`Queue custom music`|`Queue` element inside `Dial` has only the music attribute specifying the music file to play when a caller is in the queue|
 |`Client`|It specifies a client identifier to dial|
 |`Conference`|You can connect to a conference room using the `Dial` verb's `Conference` noun|
 |`Voicemail`| You can access Voicemail using the `Dial` verb's `Voicemail` noun. [Click here](https://docs.connexcs.com/class5/voicemail/#voicemail-dialpad-options) to know more about Voicemail Dialpad options|
