@@ -309,7 +309,7 @@ An existing call is transferred to a different destination using the `Dial` ver
 
    * The called person doesn't answer.
    * The number is invalid.
-   * ConnexCS receives a busy signal.
+   * ConnexCS receives a busy signal.
   
 !!! example
     ``` xml
@@ -323,7 +323,7 @@ An existing call is transferred to a different destination using the `Dial` ver
 |-------------|---------------|-----------|-------|
 |`callerID`|Caller ID that must be a valid E.164 format number|
 |`fromDisplayName`|The fromDisplayName string to be used as the caller id name (SIP From Display Name) presented to the destination. The string should have a maximum of 128 characters, containing only letters, numbers, spaces, and -_~!.+ special characters. If omitted, the display name will be the same as the number in the callerId field|
-|`hangupOnStar`|By tapping the `*` key on their phone, the initial caller can hang up on the called party using the hangupOnStar attribute. It doesn't apply for `Conference` noun|`true`, `false`| `false`|
+|`hangupOnStar`|By tapping the `*` key on their phone, the initial caller can hang up on the called party using the hangupOnStar attribute. It doesn't apply for `Conference` noun|`true`, `false`| `false`|
 |`ringTone`|The ringback tone played back to the caller|`at`,`au`,`bg`,`br`,<br>`be`,`ch`,`cl`,`cn`,`cz`,</br>`de`,`dk`,`ee`,`es`,`fi`,<br>`fr`,`gr`,`hu`,`il`,`in`,<br>`it`,`lt`,`jp`,`mx`,`my`,<br>`nl`,`no`,`nz`,`ph`,`pl`,<br>`pt`,`ru`,`se`,`sg`,<br>`th`,`uk`,`us`,`us-old`,`tw`,<br>`ve`,`za`|`us`|
 |`timeout`|timeout in <Dial> lets you specify the maximum waiting time in seconds for the dialed party to answer|||
 
@@ -331,6 +331,7 @@ An existing call is transferred to a different destination using the `Dial` ver
 |--------|---------------|------------------|
 |`Number`|Its is an E.164 phone number|
 |`Queue`|Its a queue name|
+|`Queue custom music`|<Queue> element inside <Dial> has only the music attribute specifying the music file to play when a caller is in the queue|
 |`Client`|It specifies a client identifier to dial|
 |`Conference`|You can connect to a conference room using the `Dial` verb's `Conference` noun|
 |`Voicemail`| You can access Voicemail using the `Dial` verb's `Voicemail` noun. [Click here](https://docs.connexcs.com/class5/voicemail/#voicemail-dialpad-options) to know more about Voicemail Dialpad options|
@@ -502,6 +503,26 @@ An existing call is transferred to a different destination using the `Dial` ver
         </Response>
         ```
         Send updates about the call's lifecycle (initiated, ringing, answered, and completed) to the callback URL http://fr1js1.connexcs.net:3002 via HTTP POST requests.
+    
+    16. **Queue music**
+        ``` xml
+        <?xml version="1.0" encoding="UTF-8"?>
+        <Response>
+            <Dial>
+                <Queue music="user/Adamcall.wav">20000</Queue>
+            </Dial>
+        </Response>
+        ```
+    
+    17. **Queue action**
+        ``` xml
+        <?xml version="1.0" encoding="UTF-8"?>
+        <Response>
+            <Dial>
+                <Queue action="pickup" music="ivr/ivr-invalid_number_format.wav">20000</Queue>
+            </Dial>
+        </Response>
+        ```
 
 #### Dynamic Dial
 
