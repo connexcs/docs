@@ -226,6 +226,75 @@ To enable, click **:material-plus:** next to SIP User Authentication:
     <img src= "/customer/img/voicemail.png" width= "600"/>
 ___
 
+### Channel Capacity Limitation
+
+#### Overview
+
+The Channel Capacity Limitation feature allows administrators to control the maximum number of channels available to each customer account.
+It efficiently manages channel resources across multiple SIP users, ensuring the account stays within its allocated capacity.
+
+#### How It Works?
+
+1. **Channel Allocation in Control Panel**:
+
++ Each customer account is assigned a maximum number of channels via the control panel.
++ The total channel allocation is the upper limit for all SIP users within the account.
+
+2. **Channel Assignment for SIP Users**:
+
++ Customers can create multiple SIP users through the customer portal.
+During setup, the customer allocates a specific number of channels to each SIP user.
++ The sum of channels assigned to all SIP users can't exceed the account’s total channel capacity.
+
+3. **Error Notification**:
+
++ When the customer attempts to allocate more channels than their account limit allows, they will receive an error message: **"No channel capacity available for your account."**
++ This message indicates that the requested channel allocation for the SIP user exceeds the remaining available channels in the account.
+
+```mermaid
+flowchart TD
+    A[Channel Allocation in Control Panel] --> B[Assign Maximum Number of Channels to Customer Account]
+    B --> C[Upper Limit for All SIP Users Combined]
+
+    C --> D[Channel Assignment for SIP Users]
+    D --> E[Create Multiple SIP Users in Customer Portal]
+    D --> F[Allocate Channels to Each SIP User]
+    F --> G[Check if Sum of Channels <= Account's Total Capacity]
+
+    G -->|Yes| H[Channels Successfully Assigned]
+    G -->|No| I[Error: No channel capacity available for your account]
+
+    I --> J[Requested Allocation Exceeds Remaining Available Channels]
+```
+
+!!! Example "Example Use Case"
+    + A customer account has a channel allocation of 100.
+    + The customer creates two SIP users, each assigned 50 channels.
+    +  If the customer creates a third SIP user and assigns even one additional channel, an error occurs because the 100-channel limit is reached.
+    ```mermaid
+    flowchart TD
+    A[Customer Account] -->|Allocated 100 Channels| B[Create SIP User 1]
+    A -->|Allocated 100 Channels| C[Create SIP User 2]
+    B -->|Assign 50 Channels| D[Total Used: 50 Channels]
+    C -->|Assign 50 Channels| E[Total Used: 100 Channels]
+    F[Attempt to Create SIP User 3] -->|Allocate 1+ Channels| G[Error: Total Capacity Reached]
+    D --> E
+    E --> F
+    ```
+
+#### Benefits
+
++ **Resource Control**: Ensures that channel usage is kept within limits, preventing over-allocation.
++ **Improved Customer Management**: Customers understand channel limitations, promoting efficient SIP user configuration management.
++ **Error Prevention**: Proactively blocks configurations that would exceed the account's channel capacity. It helps to avoid unexpected issues in the SIP user setup.
+
+#### Recommendations
+
+1. **Channel Reallocation**: Customers can modify channels allotted to current SIP users to free up space.
+2. **Capacity Upgrades**: Customers can request a channel increase if their needs exceed the initial limit.
+
+This feature ensures precise control and optimization of channel resources for manageable SIP user configurations across all accounts.
+
 ### Reset SIP Password
 
 Click the `Password` key next to the SIP user to reset the password.
