@@ -51,11 +51,11 @@ It's particularly useful for troubleshooting by highlighting discrepancies betwe
 
 1. Login to your **Control Panel**.
 2. Navigate to **:material-menu-right: Logging**.
-3. Right click on the Call-IDs and click `Add to Compare`. <img src="docs/logging/comp11.png">
-4. You also have the option to `Remove from Compare` to deselect the Call IDs.<img src="/logging/comp4.png">
-5. A **Compare** field will appear on the right corner. <img src="docs/logging/comp22.png">
-6. Click `Compare`, a widow will appear where you need to select the Call IDs for comparison. <img src="docs/logging/comp3.png">
-7. Check `View only difference lines` to view only the parameters of call logs that differ between two Call IDs. <img src="docs/logging/comp5.png">
+3. Right click on the Call-IDs and click `Add to Compare`. <img src="/logging/comp11.png">
+4. You also have the option to `Remove from Compare` to deselect the Call IDs.<img src="/logging/comp4.png" width="800">
+5. A **Compare** field will appear on the right corner. <img src="/logging/comp22.png">
+6. Click `Compare`, a widow will appear where you need to select the Call IDs for comparison. <img src="/logging/comp3.png">
+7. Check `View only difference lines` to view only the parameters of call logs that differ between two Call IDs. <img src="/logging/comp5.png">
 8. Once the comparison is complete, you can `Clear Compare` to reset all the Call IDs comparisons.
 
 ## Searching the Logs
