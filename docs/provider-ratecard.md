@@ -147,10 +147,14 @@ To change Revision status:
 |**Single Rate**|0.0007|Usually a UK Landline|1|
 |**IntER/IntRA**|1 (NPANXX)|Refers to Interstate and Intrastate calling for USA dialing|2|
 |**IntER/IntRA/Indeterminate**|1 (NPANXX)|Indeterminate indicates that call is between a USA number and another country|3|
-|**EEA**|If a call originates from a CLI starting with '33' (France) and the destination number starts with '43' (Austria)| When a call originates from one European Economic Area country and terminates in another EEA country|3|
-|**Local Rates**|If a call originates from a CLI starting with '43' and the destination number also starts with '43'| Both the originating CLI and destination number start with the same country code, specifically '43' for Austria||
-|**International Rates**| If a call originates from a CLI starting with '33' (France) and the destination number starts with '444' (UK)|Any call not meeting the Local or EEA criteria falls under this category|
+|**EEA (Local Rates)**|If a call originates from a CLI starting with '43' and the destination number also starts with '43'| Both the originating CLI and destination number start with the same country code, specifically '43' for Austria||
+|**EEA(EEA Rates)**|If a call originates from a CLI starting with '33' (France) and the destination number starts with '43' (Austria)| When a call originates from one European Economic Area country and terminates in another EEA country|3|
+|**EEA(International Rates)**| If a call originates from a CLI starting with '33' (France) and the destination number starts with '444' (UK)|Any call not meeting the Local or EEA criteria falls under this category|
 
+!!! Note
+    Selecting **EEA (Local/EEA/International)** in **Force Presentation** enables a new option called **Origin Billing**.
+
++ **Origin Billing**
 
 + **Dialing**: Select whether to bill based on the carrier of the Dialed Number or using an LRN Database (US-only).  
 
