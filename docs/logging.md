@@ -39,6 +39,25 @@ The simulation call result will appear in logging. The Call ID will begin with a
 
     After you have fixed a routing issue with a specific call, you can go into the Call ID and run the Simulate tool to ensure any routing issues get resolved and the call is now successful.
 
+## Compare (Call IDs)
+
+**Compare Call IDs** refers to the process of analyzing two or more Call IDs to identify differences and similarities in their call logs.
+
+This comparison helps in diagnosing issues by examining factors such as switch, user agent, start time, CLI, end time,proocol, sip_code, sip_reason, port number etc.
+
+It's particularly useful for troubleshooting by highlighting discrepancies between successful and failed calls.
+
+### How to use?
+
+1. Login to your **Control Panel**.
+2. Navigate to **:material-menu-right: Logging**.
+3. Right click on the Call-IDs and click `Add to Compare`. <img src="docs/logging/comp11.png">
+4. You also have the option to `Remove from Compare` to deselect the Call IDs.<img src="/logging/comp4.png">
+5. A **Compare** field will appear on the right corner. <img src="docs/logging/comp22.png">
+6. Click `Compare`, a widow will appear where you need to select the Call IDs for comparison. <img src="docs/logging/comp3.png">
+7. Check `View only difference lines` to view only the parameters of call logs that differ between two Call IDs. <img src="docs/logging/comp5.png">
+8. Once the comparison is complete, you can `Clear Compare` to reset all the Call IDs comparisons.
+
 ## Searching the Logs
 
 To search the Logs, at the top-right of the Logging page, enter the search for calls by phone number, Call ID, or IP address into the text box and click **`Search`**.
