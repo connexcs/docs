@@ -74,6 +74,10 @@ To get ConneXML working you will need to:
 
 6.Point the DID to internal and then the name of the endpoint that you created (for example customer_a_connexml)
 
+7.**Select Code Snippet**: Enables you to choose pre-made ConneXML codes for faster and more convenient use. You choose from multiple available options.
+
+<img src= "/class5/img/codesnippet.png">
+
 ### ConneXML Components
 
 In ConneXML, the XML components can be divided into 4 categories:
