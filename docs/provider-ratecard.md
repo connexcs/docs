@@ -157,8 +157,8 @@ To change Revision status:
 + **Origin Billing**: Calls are classified as EEA based on the configuration in Rate Card :material-menu-right: Origin Billing.
 
     + **Configuration**:
-      + **Source EEA Countries**: Define the countries that qualify as EEA origins.
-      + **Destination EEA Countries**: Define the countries that qualify as EEA destinations.
+        + **Source EEA Countries**: Define the countries that qualify as EEA origins.
+        + **Destination EEA Countries**: Define the countries that qualify as EEA destinations.
     + **Use Case**: A call is considered EEA if the origin country is in **Source EEA Countries** and the destination country is in **Destination EEA Countries**.
 
         !!! Example "Example"
