@@ -156,16 +156,16 @@ To change Revision status:
 
 + **Origin Billing**: Calls are classified as EEA based on the configuration in Rate Card :material-menu-right: Origin Billing.
 
-  + **Configuration**:
-    + **Source EEA Countries**: Define the countries that qualify as EEA origins.
-    + **Destination EEA Countries**: Define the countries that qualify as EEA destinations.
-  + **Use Case**: A call is considered EEA if the origin country is in **Source EEA Countries** and the destination country is in **Destination EEA Countries**.
+    + **Configuration**:
+      + **Source EEA Countries**: Define the countries that qualify as EEA origins.
+      + **Destination EEA Countries**: Define the countries that qualify as EEA destinations.
+    + **Use Case**: A call is considered EEA if the origin country is in **Source EEA Countries** and the destination country is in **Destination EEA Countries**.
 
-    !!! Example "Example"
+        !!! Example "Example"
 
-        Source EEA Countries: **UK (44)**
-        Destination EEA Countries: **Afghanistan (93)**
-        A call from **44 to 93** will be classified as **EEA** and charged accordingly.
+            Source EEA Countries: **UK (44)**
+            Destination EEA Countries: **Afghanistan (93)**
+            A call from **44 to 93** will be classified as **EEA** and charged accordingly.
 
 + **Dialing**: Select whether to bill based on the carrier of the Dialed Number or using an LRN Database (US-only).  
 
