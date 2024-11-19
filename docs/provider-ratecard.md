@@ -154,7 +154,7 @@ To change Revision status:
 !!! Note
     Selecting **EEA (Local/EEA/International)** in **Force Presentation** enables a new option called **Origin Billing**.
 
-+ **Origin Billing**: Calls are classified as EEA based on the configuration in **Rate Card :material-menu-right: Config :material-menu-right: Force Presentation :material-menu-right: EEA(Local/EEA/International) :material-menu-right: Origin Billing.**
++ **Origin Billing**: Calls are classified as EEA based on the configuration in **Rate Card :material-menu-right: Config :material-menu-right: Force Presentation :material-menu-right: EEA(Local/EEA/International) :material-menu-right: Origin Billing**
 
     + **Configuration**:
         + **Source EEA Countries**: Define the countries that qualify as EEA origins.
