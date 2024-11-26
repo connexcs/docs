@@ -335,7 +335,6 @@ An existing call is transferred to a different destination using the `Dial` ver
 |--------|---------------|------------------|
 |`Number`|Its is an E.164 phone number|
 |`Queue`|Its a queue name|
-|`Queue custom music`|`Queue` element inside `Dial` has only the music attribute specifying the music file to play when a caller is in the queue|
 |`Client`|It specifies a client identifier to dial|
 |`Conference`|You can connect to a conference room using the `Dial` verb's `Conference` noun|
 |`Voicemail`| You can access Voicemail using the `Dial` verb's `Voicemail` noun. [Click here](https://docs.connexcs.com/class5/voicemail/#voicemail-dialpad-options) to know more about Voicemail Dialpad options|
@@ -350,6 +349,7 @@ An existing call is transferred to a different destination using the `Dial` ver
 |`Client`|`statusCallbackEvent`|An outbound call starts when you use `Dial` to dial out to a client. When the phone rings, the call switches from the `initiated` event to the `ringing` event, `answered` when the call is answered, and `completed` when the call is ended. You can also sign up for the webhooks for the various call events.|`initiated`, `ringing`, `answered`, `completed`|none|
 ||`statusCallback`|For every event listed in the `statusCallbackEvent` attribute, you may define a URL to send webhook requests to using the `statusCallback` attribute Non-relative URLs (underscores aren't allowed) require a valid hostname|any `URL`|none|
 ||`statusCallbackMethod`|Lets you define the `HTTP` method ConnexCS should use when making requests to the URL specified in the `statusCallback` attribute.|`GET`, `POST`|`POST`|
+|`Queue`|`Queue music`|`Queue` element inside `Dial` has only the music attribute specifying the music file to play when a caller is in the queue|
 
 !!! Info
     1. `Conference` is similar to how the `Number` noun lets you connect to another phone number.
