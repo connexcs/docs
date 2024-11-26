@@ -731,3 +731,100 @@ It's an effective and quicker way to check a customer's audio quality and call p
 
 !!! Note
     TwiML is a trademark of TWILIO.
+
+### Adding AI Agents
+
+#### Overview
+
+The **AI Agent** allows integration of AI agents into your call flow using three methods:
+
+* **File ID Method**: References a pre-configured agent created in the IDE.
+* **Embedded Instructions Method**: Directly embeds instructions for the AI agent within the XML.
+* **App Script Method**: Involves creating an app in the IDE with custom scripts that handles specific functions, such as retrieving information or managing call transfers, combined with XML call flow that invokes the AI agent.
+
+```mermaid
+graph TD
+    A[AI Agent Integration Methods] --> B[File ID Method]
+    A --> C[Embedded Instructions Method]
+    A --> D[App Script Method]
+    
+    B --> E[References a pre-configured agent created in the IDE]
+    C --> F[Embeds instructions for the AI agent within the XML]
+    D --> G[Creates an app with custom scripts in the IDE]
+    G --> H[Functions like retrieving info or call transfers]
+    H --> I[Combined with XML call flow to invoke the AI agent]
+```
+
+#### How It Works
+
+* **File ID Method**: Uses the agent's file ID from the IDE to engage pre-configured behaviors.
+* **Embedded Instructions Method**: Embeds natural language instructions directly in the XML.
+* **App Script Method**: Uses a custom app built in the IDE with cxLLM to define complex interactions, such as call transfers, and combines this with an AI agent in the XML response.
+
+```mermaid
+graph TD
+    A[Start Call Flow] --> B[File ID Method]
+    A --> C[Embedded Instructions Method]
+    A --> D[App Script Method]
+
+    B --> E[Use Agent's File ID from IDE]
+    E --> F[Engage Pre-Configured Behaviors]
+
+    C --> G[Embed Natural Language Instructions]
+    G --> H[Directly in XML]
+
+    D --> I[Custom App in IDE with cxLLM]
+    I --> J[Define Complex Interactions]
+    J --> K[Call Transfers and AI Agent in XML Response]
+```
+
+!!! Example "Example: File ID method"
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+        <Dial>
+            <LLM-Agent>asst_MTbETp3jyb9tG9eAepFGxgPb</LLM-Agent>
+        </Dial>
+    </Response>
+    ```
+    File ID of agent: `asst_MTbETp3jyb9tG9eAepFGxgPb`, created and configured in the IDE.
+
+!!! Example "Example: Embedded Instructions Method" 
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+        <Dial>
+            <LLM-Agent>You are a knowledgeable fitness coach, providing advice on workout routines, nutrition, and healthy habits. Offer personalized guidance based on the user's fitness level, goals, and preferences, and motivate them to stay consistent and make progress toward their objectives.</LLM-Agent>
+        </Dial>
+    </Response>
+    ```
+
+!!! Example "Example: XML Integration (App Script Method)"
+    **App Script Example (within the IDE):**
+
+    ```js
+        const llm = require('cxLLM');
+        // Retrieves the current day of the week
+        function dayOfWeek() {
+            return 'Monday';
+        }
+
+        // Transfers the call to a specified person
+        function transfer({name}) {
+            console.log(`We are going to transfer the call to ${name}`);
+            return {action: 'transfer', data: {number: '160'}};
+        }
+    ```
+
+!!! Example "Example: XML Response"
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+        <Say>Hi, we are redirecting your call to our revolutionary AI Agent.</Say>
+        <Dial>
+            <LLM-Agent appId="0506a202-4377-11ef-9324-d05099d1f064">
+            You are the friendly and professional receptionist for a company Test Account specializing in revolutionary technology. Begin each conversation by saying 'Hello' and then pausing briefly. Greet callers and provide information, informing them that there are 5 key members in the organization: Jonathan Hulme, Rizwan Syed, Adam Nawaz, Ankit Patel, and Bani Gandhi. Let the caller know that you can transfer them to any of these individuals. However, if none of these names are mentioned, politely inform the caller that you cannot transfer the call and encourage them to continue the conversation. Always be polite, concise, and clear in your responses.
+            </LLM-Agent>
+        </Dial>
+    </Response>
+    ```

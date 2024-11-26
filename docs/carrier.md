@@ -127,9 +127,9 @@ To configure a **Carrier**, select the Carrier from the list, then configure the
 
 + **Contacts**: Helpful for keeping track of Support contacts for individual carriers.
 + **Rates Grid**: Associated rate cards for this provider. See [**Provider Rate Cards**](https://docs.connexcs.com/provider-ratecard/) for configuration.
-+ **Code Consistency** measures changes to response codes (specifically SIP 200 and 404s) returned from the carrier.
-It's useful for identifying routes of varying or poor quality.
-Effective carriers try to maintain 100% code consistency.
++ **Code Consistency**: The purpose is to assess carrier reliability by comparing SIP 200 (OK) and 404 (Not Found) response codes. Consistent response codes help identify route quality and detect carriers who may misrepresent call outcomes.
+    * **Analyzing Inconsistencies**: 200 vs. 404 Comparison: Our primary measure of code consistency. A clear distinction between 404 and 200 responses helps identify whether a provider is connecting calls inappropriately or mislabeling the status of a non-existent number.
+This provider should have returned a 404 at least once for reliable data.
 + **Consecutive Failure**: Shows a count of failed calls based on specific SIP failure responses.  
   The counter doesn't include SIP 200 responses for connected calls.
   This simplistic measurement can measure a carrier's ability to connect calls or a particular route: a connected call resets the counter, a failed call increments the counter by one.
