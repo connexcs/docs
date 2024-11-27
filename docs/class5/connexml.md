@@ -74,6 +74,10 @@ To get ConneXML working you will need to:
 
 6.Point the DID to internal and then the name of the endpoint that you created (for example customer_a_connexml)
 
+7.**Select Code Snippet**: Enables you to choose pre-made ConneXML codes for faster and more convenient use. You choose from multiple available options.
+
+<img src= "/class5/img/codesnippet.png">
+
 ### ConneXML Components
 
 In ConneXML, the XML components can be divided into 4 categories:
@@ -309,7 +313,7 @@ An existing call is transferred to a different destination using the `Dial` ver
 
    * The called person doesn't answer.
    * The number is invalid.
-   * ConnexCS receives a busy signal.
+   * ConnexCS receives a busy signal.
   
 !!! example
     ``` xml
@@ -323,7 +327,7 @@ An existing call is transferred to a different destination using the `Dial` ver
 |-------------|---------------|-----------|-------|
 |`callerID`|Caller ID that must be a valid E.164 format number|
 |`fromDisplayName`|The fromDisplayName string to be used as the caller id name (SIP From Display Name) presented to the destination. The string should have a maximum of 128 characters, containing only letters, numbers, spaces, and -_~!.+ special characters. If omitted, the display name will be the same as the number in the callerId field|
-|`hangupOnStar`|By tapping the `*` key on their phone, the initial caller can hang up on the called party using the hangupOnStar attribute. It doesn't apply for `Conference` noun|`true`, `false`| `false`|
+|`hangupOnStar`|By tapping the `*` key on their phone, the initial caller can hang up on the called party using the hangupOnStar attribute. It doesn't apply for `Conference` noun|`true`, `false`| `false`|
 |`ringTone`|The ringback tone played back to the caller|`at`,`au`,`bg`,`br`,<br>`be`,`ch`,`cl`,`cn`,`cz`,</br>`de`,`dk`,`ee`,`es`,`fi`,<br>`fr`,`gr`,`hu`,`il`,`in`,<br>`it`,`lt`,`jp`,`mx`,`my`,<br>`nl`,`no`,`nz`,`ph`,`pl`,<br>`pt`,`ru`,`se`,`sg`,<br>`th`,`uk`,`us`,`us-old`,`tw`,<br>`ve`,`za`|`us`|
 |`timeout`|timeout in <Dial> lets you specify the maximum waiting time in seconds for the dialed party to answer|||
 
@@ -345,11 +349,11 @@ An existing call is transferred to a different destination using the `Dial` ver
 |`Client`|`statusCallbackEvent`|An outbound call starts when you use `Dial` to dial out to a client. When the phone rings, the call switches from the `initiated` event to the `ringing` event, `answered` when the call is answered, and `completed` when the call is ended. You can also sign up for the webhooks for the various call events.|`initiated`, `ringing`, `answered`, `completed`|none|
 ||`statusCallback`|For every event listed in the `statusCallbackEvent` attribute, you may define a URL to send webhook requests to using the `statusCallback` attribute Non-relative URLs (underscores aren't allowed) require a valid hostname|any `URL`|none|
 ||`statusCallbackMethod`|Lets you define the `HTTP` method ConnexCS should use when making requests to the URL specified in the `statusCallback` attribute.|`GET`, `POST`|`POST`|
+|`Queue`|`music`| Music attribute specifies the music file to play when a caller is in the queue|
+||`action`|When `action= pickup`agent is assigned to the queue||
 
 !!! Info
     1. `Conference` is similar to how the `Number` noun lets you connect to another phone number.
-    2. DTMF signals/ Commands in `Barge`:
-    `0: Restore eavesdrop mode.` <br> `1: Speak with the B leg.` <br> `2: Speak with the A leg.` <br> `3: Engage in a three-way call.` <br> `*: Move to the next channel.`
 
 !!! example
     1. **callerID**
@@ -502,6 +506,26 @@ An existing call is transferred to a different destination using the `Dial` ver
         </Response>
         ```
         Send updates about the call's lifecycle (initiated, ringing, answered, and completed) to the callback URL http://fr1js1.connexcs.net:3002 via HTTP POST requests.
+    
+    16. **Queue music**
+        ``` xml
+        <?xml version="1.0" encoding="UTF-8"?>
+        <Response>
+            <Dial>
+                <Queue music="user/Adamcall.wav">20000</Queue>
+            </Dial>
+        </Response>
+        ```
+    
+    17. **Queue action**
+        ``` xml
+        <?xml version="1.0" encoding="UTF-8"?>
+        <Response>
+            <Dial>
+                <Queue action="pickup" music="ivr/ivr-invalid_number_format.wav">20000</Queue>
+            </Dial>
+        </Response>
+        ```
 
 #### Dynamic Dial
 
