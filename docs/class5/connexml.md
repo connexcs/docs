@@ -577,7 +577,7 @@ It helps to define on which leg of the call the DTMF will work. For example, `dt
     </Response>
     ```
 
-|**Noun**|**Description**|
+|**Noun**|**Description**|  
 |--------|---------------|
 |`Transfer`|Transfers the call to the given extension given|
 
@@ -615,6 +615,23 @@ When the `<Start><Stream>` command is used during a call, the call's raw audio s
 |`url`|The WebSocket destination address for stream delivery||none|
 |`statusCallback`|For every event listed in the `statusCallbackEvent` attribute, you may define a URL to send webhook requests to using the `statusCallback` attribute. Non-relative URLs (underscores aren't allowed) require a valid hostname|any `URL`|none|
 |`statusCallbackMethod`|Lets you define the `HTTP` method ConnexCS should use when making requests to the URL specified in the `statusCallback` attribute.|`GET`, `POST`|`POST`|
+|`mix_type`| Determines the type of audio stream|1. `mono`: Single channel with only the caller's audio.<br> 2. `mixed`: Single channel combining both caller and callee audio.</br><br> 3.`stereo`: Two channels; one for the caller and one for the callee.</br>|`mono`|
+
+|**Noun**|**Description**|  
+|--------|---------------|
+|`Parameter`|Its used to send key-value pairs to the WebSocket server.|
+
+!!! Example "Example"
+    ``` xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+        <Start>
+            <Stream url="ws://fr1js1.connexcs.net:3001" mix_type="stereo" >
+                <Parameter name="Hello" value="how are you, " />
+            </Stream>
+        </Start>
+    </Response>
+    ```
 
 ### Echo
 
@@ -756,9 +773,9 @@ It's an effective and quicker way to check a customer's audio quality and call p
 !!! Note
     TwiML is a trademark of TWILIO.
 
-### Adding AI Agents
+## Adding AI Agents
 
-#### Overview
+### Overview
 
 The **AI Agent** allows integration of AI agents into your call flow using three methods:
 
@@ -779,7 +796,7 @@ graph TD
     H --> I[Combined with XML call flow to invoke the AI agent]
 ```
 
-#### How It Works
+### How It Works
 
 * **File ID Method**: Uses the agent's file ID from the IDE to engage pre-configured behaviors.
 * **Embedded Instructions Method**: Embeds natural language instructions directly in the XML.
@@ -852,3 +869,64 @@ graph TD
         </Dial>
     </Response>
     ```
+
+## Condition Field
+
+A condition field determines if a given condition is met before performing a corresponding action or logic.
+It functions as a decision-making component that determines a system's flow or behavior.
+
+!!! Example "Example"
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+	    <!-- Initial Greeting -->
+	    <Say>Welcome to the conference system. Please enter your 1-digit conference code.</Say>
+	    <Gather actionOnEmptyResult="true" method="GET" numDigits="1" timeout="120">
+		    <Play>https://samplelib.com/lib/preview/wav/sample-12s.wav</Play>
+	    </Gather>
+	    <!-- Logic for conference -->
+	    <Condition field="gather_result" expression="1">
+		    <Say>You have pushed 1, which was the correct digit and connecting to the conference.</Say>
+		    <Dial>
+			    <Conference>MyConferenceRoom</Conference>
+		    </Dial>
+	    </Condition>
+	    <!-- If no valid input, play an error message -->
+	    <Say>No input received.</Say>
+    </Response>
+    ```
+    **Initial Greeting:**
+    The user hears a welcome message and is prompted to enter a 1-digit conference code.
+    A `Gather` tag collects the user's input, allowing up to 120 seconds for a response.
+    **Processing the Input:**
+    The `Condition` tag evaluates a specific field (`field="gather_result"`) against a condition (`expression="1"`).
+    `Field`: `gather_result` refers to the value collected from the user's input (via the `Gather` tag).
+    `Expression: "1"` specifies the required value for the condition to be true
+    **Handling Valid and Invalid Inputs**:
+    If the condition is met (user pressed 1), the system responds accordingly.
+    If no input is received or the input doesn't match the condition, an error message is played.
+
+### Variables
+
+**Variables** refer to the fields or parameters being tested to see if the provided condition is `true` or `false`.
+These variables are typically set dynamically by previous operations or user inputs, such as collected values, system-generated data, or context-specific states.
+
+#### Types of Variables
+
+|**Attribute**|**Description**|**Acceptable Values**|**Example**|
+|-------------|---------------|---------------------|-----------|
+|year|calendar year|0 - 9999|
+|yday|day of year|1 - 366|
+|mon|month (Jan = 1, Feb = 2, etc.)|1 - 12|
+|mday|date of month|1 - 31|
+|week|week of year|1 - 53|
+|mweek|week of month|1 - 6|
+|wday|day of week, numeric (sun = 1, mon = 2, etc.)|1 - 7|
+|sun mon tue wed thu fri sat|day of week|sun mon tue wed thu fri sat|
+|hour|hour|0 - 23|
+|minute|minute (of the hour)|0 - 59|
+|minute-of-day|minute of the day (midnight = 1, 1am = 60, noon = 720, etc)|1-1440
+|time-of-day|time range|hh:mm-hh:mm|Example: 08:00-17:00|
+||time range, with seconds|hh:mm:ss-hh:mm:ss|
+|date-time|date time range, note the ~ delimiter|YYYY-MM-DD hh:mm**~**YYYY-MM-DD hh:mm|	Example: 2010-10-01 00:00:01**~**2010-10-15 23:59:59|
+||date time range, with seconds, note the ~ delimiter|YYYY-MM-DD hh:mm:ss**~**YYYY-MM-DD hh:mm:ss|
