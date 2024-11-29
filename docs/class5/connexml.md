@@ -915,7 +915,7 @@ These variables are typically set dynamically by previous operations or user inp
 
 |**Attribute**|**Description**|**Acceptable Values**|**Example**|
 |-------------|---------------|---------------------|-----------|
-|year|calendar year|0 - 9999|
+|year|calendar year|0 - 9999|```<Condition field="year" expression="2023">```|
 |yday|day of year|1 - 366|
 |mon|month (Jan = 1, Feb = 2, etc.)|1 - 12|
 |mday|date of month|1 - 31|
