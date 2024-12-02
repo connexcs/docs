@@ -913,16 +913,16 @@ These variables are typically set dynamically by previous operations or user inp
 
 #### Types of Variables
 
-|**Attribute**|**Description**|**Acceptable Values**|**Example**|
-|-------------|---------------|---------------------|-----------|
-|year|calendar year|0 - 9999|```<Condition field="year" expression="2023">```|
+|**Attribute**|**Description**|**Acceptable Values**|
+|-------------|---------------|---------------------|
+|year|calendar year|0 - 9999
 |yday|day of year|1 - 366|
 |mon|month (Jan = 1, Feb = 2, etc.)|1 - 12|
 |mday|date of month|1 - 31|
 |week|week of year|1 - 53|
 |mweek|week of month|1 - 6|
 |wday|day of week, numeric (sun = 1, mon = 2, etc.)|1 - 7|
-|sun mon tue wed thu fri sat|day of week|sun mon tue wed thu fri sat|
+|sunmontuewedthufrisat|day of week|sun, mon, tue, wed, thu, fri, sat|
 |hour|hour|0 - 23|
 |minute|minute (of the hour)|0 - 59|
 |minute-of-day|minute of the day (midnight = 1, 1am = 60, noon = 720, etc)|1-1440
@@ -930,3 +930,242 @@ These variables are typically set dynamically by previous operations or user inp
 ||time range, with seconds|hh:mm:ss-hh:mm:ss|
 |date-time|date time range, note the ~ delimiter|YYYY-MM-DD hh:mm**~**YYYY-MM-DD hh:mm|	Example: 2010-10-01 00:00:01**~**2010-10-15 23:59:59|
 ||date time range, with seconds, note the ~ delimiter|YYYY-MM-DD hh:mm:ss**~**YYYY-MM-DD hh:mm:ss|
+
+!!! Example "Variable Examples in Condition Field"
+    1. `year`: calendar year
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+        <Condition field="year" expression="2024">
+            <Say>Welcome to the events of 2024!</Say>
+        </Condition>
+        <Condition field="year" expression="default">
+            <Say>Year not recognized. Please try again.</Say>
+        </Condition>
+    </Response>
+    ```
+
+    2. `yday`: day of the year
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+        <!-- Welcome Message -->
+        <Say>Welcome to the system. Checking the day of the year.</Say>
+        <!-- Condition to check the value of yday -->
+        <Condition field="yday" expression="1">
+            <Say>Happy New Year! Today is January 1st.</Say>
+        </Condition>
+        <Condition field="yday" expression="365">
+            <Say>It is the last day of the year. December 31st.</Say>
+        </Condition>
+        <Condition field="yday" expression="default">
+            <Say>It is just another regular day of the year.</Say>
+        </Condition>
+    </Response>
+    ```
+
+    3. `mon`: month
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+        <Condition field="day" expression="mon">
+            <Say>Welcome! It's Monday, starting the week strong!</Say>
+        </Condition>
+        <Condition field="day" expression="default">
+            <Say>Have a great day!</Say>
+        </Condition>
+    </Response>
+    ```
+
+    4. `mday`: date of the month
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+        <Condition field="mday" expression="1">
+            <Say>Welcome! It's the first day of the month.</Say>
+        </Condition>
+        <Condition field="mday" expression="15">
+            <Say>Mid-month check-in! Have a great day.</Say>
+        </Condition>
+        <Condition field="mday" expression="default">
+            <Say>Enjoy your day!</Say>
+        </Condition>
+    </Response>
+    ```
+
+    5. `week`: week of the year
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+        <Conditions>
+        <Condition field="week" expression="1">
+            <Say>Welcome to Week 1 activities.</Say>
+        </Condition>
+        <Condition field="week" expression="2">
+            <Say>Welcome to Week 2 activities.</Say>
+        </Condition>
+        <Condition field="week" expression="default">
+            <Say>Please enter a valid week number.</Say>
+        </Condition>
+        </Conditions>
+    </Response>
+    ```
+
+    6. `mweek`: week of the month
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+        <Condition field="mweek" expression="1">
+            <Say>This is the first week of the month. Special offers are available!</Say>
+        </Condition>
+        <Condition field="mweek" expression="2">
+            <Say>Welcome to the second week of the month. Stay tuned for updates.</Say>
+        </Condition>
+        <Condition field="mweek" expression="default">
+            <Say>Thank you for visiting us. Check back for more updates!</Say>
+        </Condition>
+    </Response>
+    ```
+
+    7. `wday`: day of the week
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+        <Condition field="wday" expression="1">
+            <Say>Today is Sunday. Enjoy your weekend!</Say>
+        </Condition>
+        <Condition field="wday" expression="2">
+            <Say>Today is Monday. Start your week strong!</Say>
+        </Condition>
+        <Condition field="wday" expression="3">
+            <Say>Today is Tuesday. Keep going!</Say>
+        </Condition>
+        <Condition field="wday" expression="7">
+            <Say>Today is Saturday. Relax and recharge!</Say>
+        </Condition>
+    </Response>
+    ```
+
+    8. `sunmontuewedthufrisat`: days of the week
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+        <Condition field="sunmontuewedthufrisat" expression="mon,tue,wed,thu,fri">
+            <Say>It's a weekday. Let's get to work!</Say>
+        </Condition>
+        <Condition field="sunmontuewedthufrisat" expression="sat,sun">
+            <Say>It's the weekend! Enjoy your time off!</Say>
+        </Condition>
+    </Response>
+    ```
+    
+    9. `hour`
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+        <Condition field="hour" expression="12">
+            <Say>Good afternoon! You are connecting at noon.</Say>
+        </Condition>
+        <Condition field="hour" expression="18">
+            <Say>Good evening! You are connecting at 6 PM.</Say>
+        </Condition>
+        <Condition field="hour" expression="default">
+            <Say>Hello! Your connection time is noted.</Say>
+        </Condition>
+    </Response>
+    ```
+
+    10. `minute`
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+        <Condition field="minute" expression="30">
+            <Say>It's 30 minutes past the hour, proceeding with the action.</Say>
+        </Condition>
+        <Condition field="minute" expression="0">
+            <Say>It's the start of the hour, waiting for the next action.</Say>
+        </Condition>
+    </Response>
+    ```
+
+    11. `minute-of-day`
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+    <!-- Check if the time is before noon (720 minutes) -->
+        <Condition field="minute-of-day" expression="720">
+            <Say>The time is before noon. Connecting you to morning services.</Say>
+        </Condition>
+    <!-- If it's after noon, connect to afternoon services -->
+        <Condition field="minute-of-day" expression="720" operator="greater-than">
+            <Say>The time is after noon. Connecting you to afternoon services.</Say>
+        </Condition>
+    </Response>
+    ```
+    
+    12. `time-of-day`
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+        <!-- Check time of day and respond accordingly -->
+        <Condition field="time-of-day" expression="09:00-17:00">
+            <Say>Good day! Our office hours are from 9 AM to 5 PM.</Say>
+        </Condition>
+        <Condition field="time-of-day" expression="default">
+            <Say>Our office is currently closed. Please call back during our working hours.</Say>
+        </Condition>
+    </Response>
+    ```
+
+    13. `time-of-day`: time range with seconds
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+        <!-- Check time range -->
+        <Condition field="time-of-day" expression="09:00:00-17:00:00">
+            <Say>Welcome! You are accessing the system during business hours.</Say>
+        </Condition>
+        <Condition field="time-of-day" expression="17:00:01-08:59:59">
+            <Say>Our business hours are 9 AM to 5 PM. Please try again later.</Say>
+        </Condition>
+    </Response>
+    ```
+
+    14. `date-time`
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+        <!-- Evaluate date-time range -->
+        <Condition field="date--time" expression="2024-11-22 10:00**~**2024-11-22 14:00">
+            <Say>The current time is within the specified range.</Say>
+        </Condition>
+        <Condition field="date--time" expression="default">
+            <Say>The current time is outside the specified range.</Say>
+        </Condition>
+    </Response>
+    ```
+
+    15. `date-time`: date-time range with seconds
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+        <Condition field="date_time" expression="2024-11-22 14:00:00**~**2024-11-22 16:00:00">
+            <Say>The date-time is within the specified range. Proceeding with the action.</Say>
+            <Dial>
+                <Number>+123456789</Number>
+            </Dial>
+        </Condition>
+        <Say>The date-time is outside the specified range. Please try again later.</Say>
+    </Response>
+    ```
+
+#### Wrap-Around
+Time and date variables can use wrap-around to handle ranges that span across boundaries, such as days, months, or years, ensuring continuous coverage even when transitioning from the end of one period to the beginning of the next.
+
+
+
+
+
+
+
+   
