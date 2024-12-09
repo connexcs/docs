@@ -1160,12 +1160,49 @@ These variables are typically set dynamically by previous operations or user inp
     ```
 
 #### Wrap-Around
-Time and date variables can use wrap-around to handle ranges that span across boundaries, such as days, months, or years, ensuring continuous coverage even when transitioning from the end of one period to the beginning of the next.
 
+Time and date variables can use wrap-around to handle ranges that span across boundaries.
+It can include days, months, or years, ensuring continuous coverage even when transitioning from the end of one period to the beginning of the next.
+A wrap-around condition allows a range of time or dates to seamlessly cross a natural boundary.
 
+!!! Examples "Wrap Around Condition Examples"
+    1. **Time Range (Crossing Midnight)**
+    ```xml
+    <condition time="22:00-06:00">
+    <!-- Handles times from 10 PM to 6 AM (crossing midnight) -->
+    </condition>
+    ```
 
+    2. **Month Range (Crossing Year End)**
+    ```xml
+    <condition mon="10-2">
+    <!-- From October to February -->
+    </condition>
+    ```
 
+    3. **Day Range (Crossing Week)**
+    ```xml
+    <condition day="Friday-Sunday">
+    <!-- From Friday to Sunday -->
+    </condition>
+    ```
 
+#### Blocks
 
+A **block** of time is a continuous period, such as `9:00–11:00` or `14:00–16:00`.
+**Comma-separated values** let you specify multiple such periods in one statement.
+This approach is useful for defining non-continuous time ranges within a single field.
 
-   
+!!! Example "Example"
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+        <Condition time="09:00-12:00,14:00-17:00">
+            <Say>The support system is available during this time. Connecting you to a support agent now.</Say>
+            <Dial>
+                <Number>+123456789</Number>
+            </Dial>
+        </Condition>
+        <Say>The support system is currently unavailable. Please try again during our working hours: 09:00-12:00 or 14:00-17:00 GMT.</Say>
+    </Response>
+    ```
