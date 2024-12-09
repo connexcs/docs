@@ -898,10 +898,12 @@ It functions as a decision-making component that determines a system's flow or b
     **Initial Greeting:**
     The user hears a welcome message and is prompted to enter a 1-digit conference code.
     A `Gather` tag collects the user's input, allowing up to 120 seconds for a response.
+    
     **Processing the Input:**
     The `Condition` tag evaluates a specific field (`field="gather_result"`) against a condition (`expression="1"`).
     `Field`: `gather_result` refers to the value collected from the user's input (via the `Gather` tag).
     `Expression: "1"` specifies the required value for the condition to be true
+    
     **Handling Valid and Invalid Inputs**:
     If the condition is met (user pressed 1), the system responds accordingly.
     If no input is received or the input doesn't match the condition, an error message is played.
@@ -927,9 +929,9 @@ These variables are typically set dynamically by previous operations or user inp
 |minute|minute (of the hour)|0 - 59|
 |minute-of-day|minute of the day (midnight = 1, 1am = 60, noon = 720, etc)|1-1440
 |time-of-day|time range|hh:mm-hh:mm|Example: 08:00-17:00|
-||time range, with seconds|hh:mm:ss-hh:mm:ss|
+||time range, with seconds|hh:mm: ss-hh:mm: ss|
 |date-time|date time range, note the ~ delimiter|YYYY-MM-DD hh:mm**~**YYYY-MM-DD hh:mm|	Example: 2010-10-01 00:00:01**~**2010-10-15 23:59:59|
-||date time range, with seconds, note the ~ delimiter|YYYY-MM-DD hh:mm:ss**~**YYYY-MM-DD hh:mm:ss|
+||date time range, with seconds, note the ~ delimiter|YYYY-MM-DD hh:mm: ss**~**YYYY-MM-DD hh:mm: ss|
 
 !!! Example "Variable Examples in Condition Field"
     1. `year`: calendar year
@@ -1165,7 +1167,7 @@ Time and date variables can use wrap-around to handle ranges that span across bo
 It can include days, months, or years, ensuring continuous coverage even when transitioning from the end of one period to the beginning of the next.
 A wrap-around condition allows a range of time or dates to seamlessly cross a natural boundary.
 
-!!! Examples "Wrap Around Condition Examples"
+!!! Example "Wrap Around Condition Examples"
     1. **Time Range (Crossing Midnight)**
     ```xml
     <condition time="22:00-06:00">
