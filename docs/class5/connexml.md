@@ -873,6 +873,7 @@ graph TD
 ## Condition Field
 
 A condition field determines if a given condition is met before performing a corresponding action or logic.
+
 It functions as a decision-making component that determines a system's flow or behavior.
 
 !!! Example "Example"
@@ -898,7 +899,7 @@ It functions as a decision-making component that determines a system's flow or b
     **Initial Greeting:**
     The user hears a welcome message and is prompted to enter a 1-digit conference code.
     A `Gather` tag collects the user's input, allowing up to 120 seconds for a response.
-    
+
     **Processing the Input:**
     The `Condition` tag evaluates a specific field (`field="gather_result"`) against a condition (`expression="1"`).
     `Field`: `gather_result` refers to the value collected from the user's input (via the `Gather` tag).
