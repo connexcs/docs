@@ -873,6 +873,7 @@ graph TD
 ## Condition Field
 
 A condition field determines if a given condition is met before performing a corresponding action or logic.
+
 It functions as a decision-making component that determines a system's flow or behavior.
 
 !!! Example "Example"
@@ -911,6 +912,7 @@ It functions as a decision-making component that determines a system's flow or b
 ### Variables
 
 **Variables** refer to the fields or parameters being tested to see if the provided condition is `true` or `false`.
+
 These variables are typically set dynamically by previous operations or user inputs, such as collected values, system-generated data, or context-specific states.
 
 #### Types of Variables
@@ -929,9 +931,9 @@ These variables are typically set dynamically by previous operations or user inp
 |minute|minute (of the hour)|0 - 59|
 |minute-of-day|minute of the day (midnight = 1, 1am = 60, noon = 720, etc)|1-1440
 |time-of-day|time range|hh:mm-hh:mm|Example: 08:00-17:00|
-||time range, with seconds|hh:mm: ss-hh:mm: ss|
+||time range, with seconds|hh:mm:ss-hh:mm:ss-hh:mm:ss-hh:mm:ss|
 |date-time|date time range, note the ~ delimiter|YYYY-MM-DD hh:mm**~**YYYY-MM-DD hh:mm|	Example: 2010-10-01 00:00:01**~**2010-10-15 23:59:59|
-||date time range, with seconds, note the ~ delimiter|YYYY-MM-DD hh:mm: ss**~**YYYY-MM-DD hh:mm: ss|
+||date time range, with seconds, note the ~ delimiter|YYYY-MM-DD hh:mm:ss**~**YYYY-MM-DD hh:mm:ss|
 
 !!! Example "Variable Examples in Condition Field"
     1. `year`: calendar year
