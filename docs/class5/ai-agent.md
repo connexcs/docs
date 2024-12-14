@@ -101,6 +101,28 @@ The AI agents seamlessly integrate into the ConnexCS platform, enabling business
     + **Company**: Select your customer you want to apply the AI model for.
     + **Destination**: Enter the Extension for the callers to call (essentially, the dial-in number).
     + **Platform**: Use either **OpenAI**, **ConnexCS Converse** or **ConnexCS Converse Direct** to model the AI Agent.
-    + 
+    + **Model**: Select a model for the selected platform. A model is a specific version or configuration of an AI system to perform tasks like text generation, real-time interactions etc.
 
+    !!! Info
+        Different Platforms offer specific Models suited to their capabilities.
 
+    + **Transcriber**: Select the transcriber service to convert spoken words to text. You can select from either **Deepgram** or **ConnexCS Internal** depending on the selected platform.
+    + **Text To Speech(TTS)**: Select from various TTS models to convert your text into audio. You can select from either **Google**, **Rime AI**, **Neets**, or **Azure** depending on the selected platform.
+    + **Voice**: Select the voice for the test-to-speech service.
+    + **First Message**: The initial message spoken by the agent. For example, when the agent begins the conversation.
+    + **Prompt**: The prompt field allows you to enter the set of instructions to guide the AI model to perform certain tasks. It provides as the foundation for the AI to comprehend the context, interpret the user's purpose, and generate relevant results.
+    + Click `Save`.
+
+### AI Platforms, Models, Voices, TTS, Transcribers
+
+|Platform|Model|Transcriber|Text To Speech (TTS)|Voice|
+|--------|-----|-----------|--------------------|-----|
+|**OpenAI**|GPT 4o, GPT 4o Mini, GPT 4o Realtime|Deepgram|Google|
+|**ConnexCS Converse**|Gemma 2 9bn, Gemma 7bn, Lamma 3 Tools 70bn, Lamma 3 Tools 8bn, Lamma 3.1 Tools 70bn, Lamma 3.1 Tools 8bn, Mixtral 8x7bn||Rime AI, Neets, Azure|
+|**ConnexCS Converse Direct**|LLamma, Phi3|ConnexCS Internal|Google|
+
+|Model|Description based on what Output results you want|
+|-----|-----------|
+|GPT 4o|For deep, detailed, and complex interactions|
+|GPT 4o Mini|For faster responses with efficiency in mind|
+|GPT 4o Realtime|For instant interactions where low latency is critical|
