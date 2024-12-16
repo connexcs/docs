@@ -87,14 +87,14 @@ The AI agents seamlessly integrate into the ConnexCS platform, enabling business
       + Increases engagement and drives customer acquisition.
       + Optimizes ROI on marketing efforts.
 
-## Steps to create AI Agents
+## Steps to create AI Agent
 
 1. Login to your account.
 2. Navigate to **Class 5 :material-menu-right: AI Agent**.
 3. Click on the blue `+` icon.
 <img src= "ai1">
 4. A window will open up where you can create your customizable AI Agent for your customers.
-<img src= "ai1">
+<img src= "ai2">
 5. Fill in the following fields to setup your AI model:
     + **Name**: Give a name to your AI Agent.
     + **App**: Select the [Application](https://docs.connexcs.com/apps/architecture/app/) you want to run your AI model.
@@ -121,8 +121,27 @@ The AI agents seamlessly integrate into the ConnexCS platform, enabling business
 |**ConnexCS Converse**|Gemma 2 9bn, Gemma 7bn, Lamma 3 Tools 70bn, Lamma 3 Tools 8bn, Lamma 3.1 Tools 70bn, Lamma 3.1 Tools 8bn, Mixtral 8x7bn||Rime AI, Neets, Azure|
 |**ConnexCS Converse Direct**|LLamma, Phi3|ConnexCS Internal|Google|
 
-|Model|Description based on what Output results you want|
+|Model|Description (based on required output)|
 |-----|-----------|
-|GPT 4o|For deep, detailed, and complex interactions|
-|GPT 4o Mini|For faster responses with efficiency in mind|
-|GPT 4o Realtime|For instant interactions where low latency is critical|
+|**GPT 4o**|For deep, detailed, and complex interactions. Suports ScriptForge|
+|**GPT 4o Mini**|For faster responses with efficiency in mind|
+|**GPT 4o Realtime**|For instant interactions where low latency is critical|
+|**Gemma 2 9bn**| Strong performance in tasks like text generation, translation, and summarization|
+|**Gemma 2 7bn**|Excels in areas like creative text generation, translation, and code generation|
+|**Lamma 3 Tools 8b**|Complex reasoning, instruction following, multilingual capabilities, contextual understanding, and knowledge base integration. Suports ScriptForge|
+|**Lamma 3.1 Tools 70bn**| offers improved reasoning, factual accuracy, context understanding, and multilingual capabilities over its predecessor, Llama 3 7B. Suports ScriptForge|
+|**Mixtral 8x7bn**|Natural Language Processing (NLP), Data Analysis, Code Generation, Multi Modal (text, images, or audio)|
+|**Llama**|Llama boasts a 128k token context window, ethical alignment, text-in, text-out interaction, strong logical reasoning, and multilingual capabilities|
+|**Phi3**|excel in language understanding, reasoning, coding, and math, outperforming larger models in these areas, and offer multimodal capabilities|
+
+|Transcriber|Description|
+|-----------|-----------|
+|Deepgram|Offers real-time and batch transcription, custom vocabulary, multi-language support, speaker diarization, noise robustness, timestamps, domain-specific models, flexible deployment, streaming APIs, custom model training, data security and compliance, actionable insights, and scalability for large-scale audio processing|
+|ConnexCS Internal|ConnexCS offers a transcription service that converts live and recorded calls into text with English as the default language and additional language support upon request. It includes configurable duration limits per call, advanced search with query modifiers and Boolean operators, and the ability to set custom pricing. The service integrates easily into existing workflows, enabling seamless incorporation of transcriptions into reports and analytics for improved efficiency|
+
+|Text To Speech (TTS)|Description|
+|--------------------|-----------|
+|**Google**|Excels in naturalness, global language support, and customization, making it ideal for diverse applications|
+|**Rime AI**|Focuses on emotional expressiveness and real-time interaction, suitable for conversational agents|
+|**Neets**|Offers a simpler, cost-effective solution for basic TTS needs with limited features|
+|**Azure**| It stands out for its extensive language and voice options, enterprise-grade security, and advanced customization capabilities|
