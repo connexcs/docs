@@ -145,3 +145,26 @@ The AI agents seamlessly integrate into the ConnexCS platform, enabling business
 |**Rime AI**|Focuses on emotional expressiveness and real-time interaction, suitable for conversational agents|
 |**Neets**|Offers a simpler, cost-effective solution for basic TTS needs with limited features|
 |**Azure**| It stands out for its extensive language and voice options, enterprise-grade security, and advanced customization capabilities|
+
+## How to use Functions for the Large Language Models (LLMs)?
+
+1. Develop an application utilizing the provided [link](https://docs.connexcs.com/apps/architecture/app/).
+2. Create an **Agent** using the provided [link]().
+3. Click on (Scriptforge)[https://docs.connexcs.com/apps/architecture/script/] to create a script to acces the AI Agent.
+
+!!! Example "Example Script"
+    ```js
+
+
+    mention about js doc notation makes the code easily comprehendable and readale.. written a way that describes the function. it is very important as the llm will know how to interact with the code (scriptforge)
+
+    rewritess and translates expose the function/description of the function.. llm knows how to interact with the AI model.
+
+    with llm you need to be careful about a few things:
+    1. short, sharp, concise description- exactly what you need, if you make it bigger you are under a lot of risks.
+
+llm.listFunctions : its an introspection capability.. it parses the information @permission agent and returns it as an object.
+
+what this can do? Use Cases
+1. create custom databases in the system 
+2. create fucntions to update the databases
