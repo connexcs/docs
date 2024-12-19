@@ -3,8 +3,11 @@
 **Class 5 :material-menu-right: AI Agent**
 
 ConnexCS's AI Agent promise to deliver cutting-edge solutions that simplify and enhance your telecom experience.
+
 Its a transformative step to optimize your business operations and elevate the services you offer to your customers.
+
 AI Agents leverage advanced machine learning and automation capabilities to perform critical functions such as real-time call routing optimization, fraud detection, predictive analytics, and automated customer support.
+
 The AI agents seamlessly integrate into the ConnexCS platform, enabling businesses to streamline operations, reduce overhead costs, and achieve greater accuracy in decision-making.
 
 ## Use Cases
@@ -12,38 +15,38 @@ The AI agents seamlessly integrate into the ConnexCS platform, enabling business
 1. **Real-Time Call Routing Optimization**
     + **Function**: AI agents dynamically analyze real-time traffic patterns, latency, call quality, and costs to determine the optimal routing for calls.
     + **Benefits**:
-      + Reduces dropped calls and improves call quality.
-      + Minimizes operational costs by selecting the most efficient carriers or routes.
+        + Reduces dropped calls and improves call quality.
+        + Minimizes operational costs by selecting the most efficient carriers or routes.
 
 2. **Advanced Fraud Detection and Prevention**
     + **Function**: AI agents monitor call data to detect anomalous patterns indicative of toll fraud, premium number abuse, or unauthorized access.
     + **Benefits**:
-      + Proactive blocking of fraudulent activity.
-      + Reduces revenue leakage and enhances system security.
+        + Proactive blocking of fraudulent activity.
+        + Reduces revenue leakage and enhances system security.
 
 3. **Intelligent Traffic Management**
-   + **Function**: AI agents distribute network load intelligently during peak times, prioritizing critical calls or services.
-   + **Benefits**:
-     + Prevents congestion.
-     + Ensures a seamless experience for high-priority users.
+      + **Function**: AI agents distribute network load intelligently during peak times, prioritizing critical calls or services.
+      + **Benefits**:
+          + Prevents congestion.
+          + Ensures a seamless experience for high-priority users.
 
 4. **Predictive Analytics for Resource Management**
     + **Function**: AI agents analyze historical data to predict future demand, enabling proactive resource allocation and planning.
     + **Benefits**:
-      + Prevents overloading during high-traffic periods.
-      + Reduces costs by aligning resources with demand.
+        + Prevents overloading during high-traffic periods.
+        + Reduces costs by aligning resources with demand.
 
 5. **Automated Customer Support and Troubleshooting**
-   + **Function**: Chatbots and virtual assistants powered by AI agents handle customer inquiries, provide technical troubleshooting, and escalate issues when necessary.
-   + **Benefits**:
-    + 24/7 availability for customer support.
-    + Reduced response times and improved customer satisfaction.
+      + **Function**: Chatbots and virtual assistants powered by AI agents handle customer inquiries, provide technical troubleshooting, and escalate issues when necessary.
+      + **Benefits**:
+        + 24/7 availability for customer support.
+        + Reduced response times and improved customer satisfaction.
 
 6. **Call Quality Monitoring and Enhancement**
-   + **Function**: AI agents continuously assess and improve call quality by identifying jitter, packet loss, and latency issues.
-   + **Benefits**:
-        + Automatically resolves quality issues through route adjustments.
-        + Ensures consistent QoS (Quality of Service) for users.
+      + **Function**: AI agents continuously assess and improve call quality by identifying jitter, packet loss, and latency issues.
+      + **Benefits**:
+          + Automatically resolves quality issues through route adjustments.
+          + Ensures consistent QoS (Quality of Service) for users.
 
 7. **Billing and Invoice Automation**
     + **Function**: AI agents generate accurate, real-time invoices by tracking customer usage and identifying discrepancies.
@@ -54,38 +57,38 @@ The AI agents seamlessly integrate into the ConnexCS platform, enabling business
 8. **Personalized Customer Recommendations**
     + **Function**: AI agents analyze customer behavior and usage patterns to recommend tailored pricing plans, feature upgrades, or add-ons.
     + **Benefits**:
-      + Improves customer retention.
-      + Increases revenue through targeted up-selling.
+        + Improves customer retention.
+        + Increases revenue through targeted up-selling.
 
 9. **Real-Time Network Monitoring and Alerts**
     + **Function**: AI agents monitor the health of the telecom infrastructure, sending alerts for potential outages or performance degradation.
     + **Benefits**:
-      + Reduces downtime through proactive maintenance.
-      + Ensures high availability and reliability of services.
+        + Reduces downtime through proactive maintenance.
+        + Ensures high availability and reliability of services.
 
 10.  **Voice and Sentiment Analytics**
     + **Function**: AI agents analyze call transcripts for sentiment and intent, enabling ConnexCS customers to gain insights into user satisfaction and trends.
     + **Benefits**:
-      + Improves customer service strategies.
-      + Identifies areas for operational improvement.
+        + Improves customer service strategies.
+        + Identifies areas for operational improvement.
 
 11. **Scalable Multi-Region Management**
     + **Function**: AI agents coordinate traffic, billing, and monitoring across multiple regions to ensure compliance and seamless operations.
     + **Benefits**:
-      + Simplifies management of global telecom operations
-      + Ensures region-specific customization for pricing and regulations.
+        + Simplifies management of global telecom operations
+        + Ensures region-specific customization for pricing and regulations.
 
 12. **Dynamic Compliance Enforcement**
     + **Function**: AI agents ensure adherence to regional telecom regulations by dynamically applying compliance rules, such as call recording consent or data privacy policies.
     + **Benefits**:
-      + Reduces risk of legal penalties.
-      + Enhances trust with end-users and regulatory bodies.
+        + Reduces risk of legal penalties.
+        + Enhances trust with end-users and regulatory bodies.
 
 13. **Marketing Campaign Automation**
     + **Function**: AI agents analyze customer data to design and execute targeted marketing campaigns, such as promotional offers or loyalty rewards.
     + **Benefits**:
-      + Increases engagement and drives customer acquisition.
-      + Optimizes ROI on marketing efforts.
+        + Increases engagement and drives customer acquisition.
+        + Optimizes ROI on marketing efforts.
 
 14. **Create custom databases** and **create functions** to update the databases as well.
 
@@ -140,8 +143,8 @@ The AI agents seamlessly integrate into the ConnexCS platform, enabling business
 
 |Platform|Model|Transcriber|Text To Speech (TTS)|Voice|
 |--------|-----|-----------|--------------------|-----|
-|**OpenAI**|GPT 4o, GPT 4o Mini, GPT 4o Realtime|OpenAI|Google|Select from multiple options|
-|**ConnexCS Converse**|Gemma 2 9bn, Gemma 7bn, Lamma 3 Tools 70bn, Lamma 3 Tools 8bn, Lamma 3.1 Tools 70bn, Lamma 3.1 Tools 8bn, Mixtral 8x7bn||Rime AI, Neets, Azure|
+|**OpenAI**|GPT 4o, GPT 4o Mini, GPT 4o Realtime|OpenAI|Google|
+|**ConnexCS Converse**|Gemma 2 9bn, Gemma 7bn, Lamma 3 Tools 70bn, Lamma 3 Tools 8bn, Lamma 3.1 Tools 70bn, Lamma 3.1 Tools 8bn, Mixtral 8x7bn||Rime AI, Neets, Azure|Select from multiple options|
 |**ConnexCS Converse Direct**|LLamma, Phi3|ConnexCS Internal|Google|
 
 |Model|Description (based on required output)|
@@ -152,10 +155,10 @@ The AI agents seamlessly integrate into the ConnexCS platform, enabling business
 |**Gemma 2 9bn**| Strong performance in tasks like text generation, translation, and summarization|
 |**Gemma 2 7bn**|Excels in areas like creative text generation, translation, and code generation|
 |**Lamma 3 To   ols 8b**|Complex reasoning, instruction following, multilingual capabilities, contextual understanding, and knowledge base integration. Supports ScriptForge|
-|**Lamma 3.1 Tools 70bn**| offers improved reasoning, factual accuracy, context understanding, and multilingual capabilities over its predecessor, Llama 3 7B. Suports ScriptForge|
+|**Lamma 3.1 Tools 70bn**| Offers improved reasoning, factual accuracy, context understanding, and multilingual capabilities over its predecessor, Llama 3 7B. Suports ScriptForge|
 |**Mixtral 8x7bn**|Natural Language Processing (NLP), Data Analysis, Code Generation, Multi Modal (text, images, or audio)|
 |**Llama**|Llama boasts a 128k token context window, ethical alignment, text-in, text-out interaction, strong logical reasoning, and multilingual capabilities|
-|**Phi3**|excel in language understanding, reasoning, coding, and math, outperforming larger models in these areas, and offer multimodal capabilities|
+|**Phi3**|Excel in language understanding, reasoning, coding, and math, outperforming larger models in these areas, and offer multimodal capabilities|
 
 |Transcriber|Description|
 |-----------|-----------|
@@ -173,7 +176,7 @@ The AI agents seamlessly integrate into the ConnexCS platform, enabling business
 
 1. Develop an application utilizing the provided [link](https://docs.connexcs.com/apps/architecture/app/).
 2. Create an **Agent** using the provided [link]().
-3. Click on (Scriptforge)[https://docs.connexcs.com/apps/architecture/script/] to create a script to access the AI Agent.
+3. Click on [Scriptforge](https://docs.connexcs.com/apps/architecture/script/) to create a script to access the AI Agent.
 
 !!! Example "Example Script"
     ```js
@@ -250,11 +253,12 @@ The AI agents seamlessly integrate into the ConnexCS platform, enabling business
     style N fill:#ff,stroke:#333,stroke-width:2.5px
     style O fill:#ff,stroke:#333,stroke-width:2.5px
     ```
+
 4. Using JSDoc for optimizing function usage within LLMs:
-   +  Provides clear descriptions of each function, parameter, and return type, making the purpose and behavior of LLM-related functions easy to understand.
-   +  Reduces confusion and errors.
-   +  With multiple developers working on an LLM project, JSDoc serves as a standardized way to share knowledge.
-   + LLM will exactly know how to interact with the code (Scriptforge).
+     +  Provides clear descriptions of each function, parameter, and return type, making the purpose and behavior of LLM-related functions easy to understand.
+     +  Reduces confusion and errors.
+     +  With multiple developers working on an LLM project, JSDoc serves as a standardized way to share knowledge.
+     +  LLM will exactly know how to interact with the code (Scriptforge).
 
     !!! Tip
         The function description must be brief, sharp, and accurate. Expanding it unnecessarily may create significant risks.
