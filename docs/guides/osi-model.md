@@ -66,7 +66,7 @@ It offers protocols that let computer programs send and receive data.
 
 ## Network Latency, Application Latency and SIP Latency
 
-1. **Network Latency** refers to the delay in data transmission over a network.
+1.**Network Latency** refers to the delay in data transmission over a network.
 It's the time taken for data to travel from the source to the destination through the network infrastructure.
 
 |Components|Description|
@@ -87,7 +87,7 @@ It's the time taken for data to travel from the source to the destination throug
     1. A user accessing a website hosted on a server located on the other side of the world may experience higher network latency due to the longer distance the data needs to travel.
     2. Video streaming services may suffer from network latency, causing buffering or lag.
 
-2. **Application Latency** refers to the delay between when an application receives a request and when it responds with the requested data or action.
+2.**Application Latency** refers to the delay between when an application receives a request and when it responds with the requested data or action.
 It includes all processing steps within the application itself, excluding network transmission times.
 
 |Components|Description|
@@ -143,11 +143,6 @@ It includes all processing steps within the application itself, excluding networ
 2. **Application Latency** is primarily server-side processing delay, independent of network transmission times.
 
 3. **SIP Ping Latency** combines network latency and SIP server processing delays.
-
-
-
-network ping= 15ms
-sip ping=40ms
 
 ## VoIP Latency
 
