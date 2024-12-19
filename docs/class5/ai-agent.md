@@ -256,9 +256,13 @@ The AI agents seamlessly integrate into the ConnexCS platform, enabling business
 
 !!! Note "JSDoc Notation"
     Using JSDoc for optimizing function usage within LLMs:
+
      +  Provides clear descriptions of each function, parameter, and return type, making the purpose and behavior of LLM-related functions easy to understand.
+     
      +  Reduces confusion and errors.
+     
      +  With multiple developers working on an LLM project, JSDoc serves as a standardized way to share knowledge.
+     
      +  LLM will exactly know how to interact with the code (Scriptforge).
 
     !!! Tip
