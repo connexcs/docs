@@ -109,6 +109,7 @@ nav:
         - Transcription: transcription.md
     
     - Class 5:
+        - AI Agent: class5/ai-agent.md
         - Apps: class5/apps.md
         - Conference: class5/creating-conference.md
         - Call Center: class5/call-center.md
