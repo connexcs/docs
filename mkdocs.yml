@@ -214,6 +214,7 @@ nav:
         - General Data Protection Regulation: guides/gdpr.md
         - Call Detail Record Retention: guides/cdr-retention.md
         - Spam Protection Features: guides/spam-callsblock.md
+        - Some Interesting Features: makecall.md
     
     - Troubleshooting: 
             - Call Connection/Signaling Issues: guides/tshoot-signal.md
@@ -224,7 +225,6 @@ nav:
             - Remote Testing: guides/remote-testing.md
             
     - Video Guide: video-guide.md
-    - Some Interesting Features: makecall.md
 
   - Customer Portal:
     - Dashboard: customer-portal/cp-dashboard.md

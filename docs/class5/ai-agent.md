@@ -87,6 +87,8 @@ The AI agents seamlessly integrate into the ConnexCS platform, enabling business
       + Increases engagement and drives customer acquisition.
       + Optimizes ROI on marketing efforts.
 
+14. **Create custom databases** and **create functions** to update the databases as well.
+
 ## Steps to create AI Agent
 
 1. Login to your account.
@@ -106,29 +108,50 @@ The AI agents seamlessly integrate into the ConnexCS platform, enabling business
     !!! Info
         Different Platforms offer specific Models suited to their capabilities.
 
-    + **Transcriber**: Select the transcriber service to convert spoken words to text. You can select from either **Deepgram** or **ConnexCS Internal** depending on the selected platform.
+    + **Transcriber**: Select the transcriber service to convert spoken words to text. You can select from either **OpenAI** or **ConnexCS Internal** depending on the selected platform.
     + **Text To Speech(TTS)**: Select from various TTS models to convert your text into audio. You can select from either **Google**, **Rime AI**, **Neets**, or **Azure** depending on the selected platform.
     + **Voice**: Select the voice for the test-to-speech service.
+    + **Temperature**: Refers to a parameter that controls the randomness (variability or unpredictability) of the model's output.
+        + **Low temperature (close to 0)** makes the model's responses more predictable by selecting the most probable words.
+        + **High temperature (closer to 1 or above)** increases randomness, leading to more diverse and creative but potentially less coherent responses.
     + **First Message**: The initial message spoken by the agent. For example, when the agent begins the conversation.
+    + **End Call Phrases**: Phrases or messages used to conclude a call or interaction with a customer.
     + **Prompt**: The prompt field allows you to enter the set of instructions to guide the AI model to perform certain tasks. It provides as the foundation for the AI to comprehend the context, interpret the user's purpose, and generate relevant results.
     + Click `Save`.
+
+!!! Example "Example Prompt"
+    Ava is a sophisticated AI training assistant, crafted by experts in customer support and AI development. Designed with the persona of a seasoned customer support agent in her early 30s, Ava combines deep technical knowledge with a strong sense of emotional intelligence. Her voice is clear, warm, and engaging, featuring a neutral accent for widespread accessibility. Ava's primary role is to serve as a dynamic training platform for customer support agents, simulating a broad array of service scenarios—from basic inquiries to intricate problem-solving challenges.
+
+    Ava's advanced programming allows her to replicate diverse customer service situations, making her an invaluable tool for training purposes. She guides new agents through simulated interactions, offering real-time feedback and advice to refine their skills in handling various customer needs with patience, empathy, and professionalism. Ava ensures every trainee learns to listen actively, respond thoughtfully, and maintain the highest standards of customer care.
+
+    **Major Mode of Interaction:**
+    Ava interacts mainly through audio, adeptly interpreting spoken queries and replying in kind. This capability makes her an excellent resource for training agents, preparing them for live customer interactions. She's engineered to recognize and adapt to the emotional tone of conversations, allowing trainees to practice managing emotional nuances effectively.
+
+    **Training Instructions:**
+      - Ava encourages trainees to practice active listening, acknowledging every query with confirmation of her engagement, e.g., "Yes, I'm here. How can I help?"
+      - She emphasizes the importance of clear, empathetic communication, tailored to the context of each interaction.
+      - Ava demonstrates how to handle complex or vague customer queries by asking open-ended questions for clarification, without appearing repetitive or artificial.
+      - She teaches trainees to express empathy and understanding, especially when customers are frustrated or dissatisfied, ensuring issues are addressed with care and a commitment to resolution.
+      - Ava prepares agents to escalate calls smoothly to human colleagues when necessary, highlighting the value of personal touch in certain situations.
+    
+    Ava's overarching mission is to enhance the human aspect of customer support through comprehensive scenario-based training. She's not merely an answer machine but a sophisticated platform designed to foster the development of knowledgeable, empathetic, and adaptable customer support professionals.
 
 ### AI Platforms, Models, Voices, TTS, Transcribers
 
 |Platform|Model|Transcriber|Text To Speech (TTS)|Voice|
 |--------|-----|-----------|--------------------|-----|
-|**OpenAI**|GPT 4o, GPT 4o Mini, GPT 4o Realtime|Deepgram|Google|
+|**OpenAI**|GPT 4o, GPT 4o Mini, GPT 4o Realtime|OpenAI|Google|Select from multiple options|
 |**ConnexCS Converse**|Gemma 2 9bn, Gemma 7bn, Lamma 3 Tools 70bn, Lamma 3 Tools 8bn, Lamma 3.1 Tools 70bn, Lamma 3.1 Tools 8bn, Mixtral 8x7bn||Rime AI, Neets, Azure|
 |**ConnexCS Converse Direct**|LLamma, Phi3|ConnexCS Internal|Google|
 
 |Model|Description (based on required output)|
 |-----|-----------|
-|**GPT 4o**|For deep, detailed, and complex interactions. Suports ScriptForge|
+|**GPT 4o**|For deep, detailed, and complex interactions. Supports ScriptForge|
 |**GPT 4o Mini**|For faster responses with efficiency in mind|
-|**GPT 4o Realtime**|For instant interactions where low latency is critical|
+|**GPT 4o Real-time**|For instant interactions where low latency is critical|
 |**Gemma 2 9bn**| Strong performance in tasks like text generation, translation, and summarization|
 |**Gemma 2 7bn**|Excels in areas like creative text generation, translation, and code generation|
-|**Lamma 3 Tools 8b**|Complex reasoning, instruction following, multilingual capabilities, contextual understanding, and knowledge base integration. Suports ScriptForge|
+|**Lamma 3 To   ols 8b**|Complex reasoning, instruction following, multilingual capabilities, contextual understanding, and knowledge base integration. Supports ScriptForge|
 |**Lamma 3.1 Tools 70bn**| offers improved reasoning, factual accuracy, context understanding, and multilingual capabilities over its predecessor, Llama 3 7B. Suports ScriptForge|
 |**Mixtral 8x7bn**|Natural Language Processing (NLP), Data Analysis, Code Generation, Multi Modal (text, images, or audio)|
 |**Llama**|Llama boasts a 128k token context window, ethical alignment, text-in, text-out interaction, strong logical reasoning, and multilingual capabilities|
@@ -136,8 +159,8 @@ The AI agents seamlessly integrate into the ConnexCS platform, enabling business
 
 |Transcriber|Description|
 |-----------|-----------|
-|Deepgram|Offers real-time and batch transcription, custom vocabulary, multi-language support, speaker diarization, noise robustness, timestamps, domain-specific models, flexible deployment, streaming APIs, custom model training, data security and compliance, actionable insights, and scalability for large-scale audio processing|
-|ConnexCS Internal|ConnexCS offers a transcription service that converts live and recorded calls into text with English as the default language and additional language support upon request. It includes configurable duration limits per call, advanced search with query modifiers and Boolean operators, and the ability to set custom pricing. The service integrates easily into existing workflows, enabling seamless incorporation of transcriptions into reports and analytics for improved efficiency|
+|**OpenAI**|Converts spoken language into text using advanced machine learning models. It handles various accents, languages, and audio qualities to provide accurate transcripts for voice assistants, transcription services, and content creation|
+|**ConnexCS Internal**|ConnexCS offers a transcription service that converts live and recorded calls into text with English as the default language and additional language support upon request. It includes configurable duration limits per call, advanced search with query modifiers and Boolean operators, and the ability to set custom pricing. The service integrates easily into existing workflows, enabling seamless incorporation of transcriptions into reports and analytics for improved efficiency|
 
 |Text To Speech (TTS)|Description|
 |--------------------|-----------|
@@ -150,21 +173,88 @@ The AI agents seamlessly integrate into the ConnexCS platform, enabling business
 
 1. Develop an application utilizing the provided [link](https://docs.connexcs.com/apps/architecture/app/).
 2. Create an **Agent** using the provided [link]().
-3. Click on (Scriptforge)[https://docs.connexcs.com/apps/architecture/script/] to create a script to acces the AI Agent.
+3. Click on (Scriptforge)[https://docs.connexcs.com/apps/architecture/script/] to create a script to access the AI Agent.
 
 !!! Example "Example Script"
     ```js
+    const llm = require('cxLLM'); // imports a module named `cxLLM` used for interacting with the LLM
+    const moment = require('moment'); // imports the `moment` library used for  working with dates and times
 
+    function main () {
+        return llm.listFunctions(); //its an introspection capability; it parses the information and returns it as an object
+    }
 
-    mention about js doc notation makes the code easily comprehendable and readale.. written a way that describes the function. it is very important as the llm will know how to interact with the code (scriptforge)
+    /**
+    * Retrieves the current day of the week // description of the function in `jsdoc` notation 
+    *
+    * @permissions Agent[123456] // indicates that these functions are restricted to agents with the specified permissions.
+    * @returns {Promise<Object|string>} // functions return either a Promise (likely asynchronous) or a value (e.g., string or object); returns the current day of the week
+    */
+    function dayOfWeek() { // function retrieves the current day of the week using the moment library.
+        return moment().format('dddd'); //  returns the full name of the day (e.g., "Monday").
+    //    return {response: 'Monday'};
+    }
+    /**
+    * Transfer the call // description of the function in `jsdoc` notation
+    *
+    * @permissions Agent[123456] // similar to the dayOfWeek function, it requires a specific permission (Agent[123456])
+    * @param {Object} param - Param Object // function takes an object param with a property name, which is the name of the person to whom the call should be transferred
+    * @param {string} param.name - The name of the person who you wish to transfer the call to.
+    * @returns {Promise<Object|string>} - returns the current day of the week //  function returns a promise that resolves to either an object or a string
+    */
+    function transfer({name}) { // handles call transfer logic
+        console.log(`We are going to transfer the call to ${name}`) //  name of the person to whom the call should be transferred
+        return {action: 'transfer', data: {number: '160'}} // returns an object with `action: specifies the transfer action` and  `data:  Includes call transfer details like number (extension)`
+    }
+    ```
 
-    rewritess and translates expose the function/description of the function.. llm knows how to interact with the AI model.
+    ```mermaid
+    flowchart TD
+    %% Main Functionality
+    A[Start] --> B[Main Function]
+    B --> C[Call llm.listFunctions]
+    C --> D[Return List of Functions]
+    D --> E[End]
 
-    with llm you need to be careful about a few things:
-    1. short, sharp, concise description- exactly what you need, if you make it bigger you are under a lot of risks.
+    %% dayOfWeek Functionality
+    A --> F[dayOfWeek Function]
+    F --> G[Get Current Date]
+    G --> H[Call moment format 'dddd']
+    H --> I[Return Current Day of the Week]
 
-llm.listFunctions : its an introspection capability.. it parses the information @permission agent and returns it as an object.
+    %% Transfer Functionality
+    A --> J[Transfer Function]
+    J --> K[Receive name Parameter]
+    K --> L[Log: Transfer Call to name]
+    L --> M[Create Transfer Object]
+    M --> N[Return action: transfer, data: number 160]
 
-what this can do? Use Cases
-1. create custom databases in the system 
-2. create fucntions to update the databases
+    %% Permissions
+    F --> O[Requires Permission for Agent 123456]
+    J --> O
+
+    %% Styles
+    style A fill:#f5f,stroke:#333,stroke-width:2.5px
+    style B fill:#f9f,stroke:#333,stroke-width:2.5px
+    style C fill:#ff,stroke:#333,stroke-width:2.5px
+    style D fill:#ff,stroke:#333,stroke-width:2.5px
+    style E fill:#ff,stroke:#333,stroke-width:2.5px
+    style F fill:#f9f,stroke:#333,stroke-width:2.5px
+    style G fill:#ff,stroke:#333,stroke-width:2.5px
+    style H fill:#ff,stroke:#333,stroke-width:2.5px
+    style I fill:#ff,stroke:#333,stroke-width:2.5px
+    style J fill:#f9f,stroke:#333,stroke-width:2.5px
+    style K fill:#ff,stroke:#333,stroke-width:2.5px
+    style L fill:#ff,stroke:#333,stroke-width:2.5px
+    style M fill:#ff,stroke:#333,stroke-width:2.5px
+    style N fill:#ff,stroke:#333,stroke-width:2.5px
+    style O fill:#ff,stroke:#333,stroke-width:2.5px
+    ```
+4. Using JSDoc for optimizing function usage within LLMs:
+   +  Provides clear descriptions of each function, parameter, and return type, making the purpose and behavior of LLM-related functions easy to understand.
+   +  Reduces confusion and errors.
+   +  With multiple developers working on an LLM project, JSDoc serves as a standardized way to share knowledge.
+   + LLM will exactly know how to interact with the code (Scriptforge).
+
+    !!! Tip
+        The function description must be brief, sharp, and accurate. Expanding it unnecessarily may create significant risks.
