@@ -193,7 +193,7 @@ To enable, click **:material-plus:** next to SIP User Authentication:
     + **Retain DID**: When you enable this, inbound calls will retain the destination number (DID), and the call is sent into the system, rather than using the SIP Username. 
     + **Smart Extension**: It simplifies call transfers and enables advanced features like call barging and interception by centralizing REFER message handling within the Class 5 system. Unlike traditional SIP workflows, where the UAC or softphone manages transfers, this approach offloads complexity to us, enhancing functionality, user experience, and control through seamless integration of Class 4 and Class 5 systems.
           
-          + Smart Extension Workflow:
+          + **Smart Extension Workflow**:
             ```mermaid
             graph TD
             %% Define node styles
