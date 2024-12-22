@@ -226,6 +226,7 @@ To enable, click **:material-plus:** next to SIP User Authentication:
             ```
             
             + **Advantages**
+                
                 + **Simplified Call Transfers**:
                     The complexity of handling REFER messages is shifted from the UAC to the Class 5 system.
                     Ensures a seamless experience for the user, as the originating device is unaware of the transfer.
