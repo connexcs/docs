@@ -192,51 +192,51 @@ To enable, click **:material-plus:** next to SIP User Authentication:
     
     + **Retain DID**: When you enable this, inbound calls will retain the destination number (DID), and the call is sent into the system, rather than using the SIP Username. 
     + **Smart Extension**: It simplifies call transfers and enables advanced features like call barging and interception by centralizing REFER message handling within the Class 5 system. Unlike traditional SIP workflows, where the UAC or softphone manages transfers, this approach offloads complexity to us, enhancing functionality, user experience, and control through seamless integration of Class 4 and Class 5 systems.
-      + Smart Extension Workflow:
-      ```mermaid
-      graph TD
-      %% Define node styles
-      classDef startEnd fill:#d1e7dd,stroke:#0f5132,stroke-width:2px,font-weight:bold;
-      classDef process fill:#f9f9c5,stroke:#d4a017,stroke-width:2px,font-weight:normal;
-      classDef decision fill:#ffffcc,stroke:#999900,stroke-width:2px,color:#000,font-style:italic;
+          + Smart Extension Workflow:
+            ```mermaid
+            graph TD
+            %% Define node styles
+            classDef startEnd fill:#d1e7dd,stroke:#0f5132,stroke-width:2px,font-weight:bold;
+            classDef process fill:#f9f9c5,stroke:#d4a017,stroke-width:2px,font-weight:normal;
+            classDef decision fill:#ffffcc,stroke:#999900,stroke-width:2px,color:#000,font-style:italic;
 
-      %% Nodes
-      A[UAC Initiates Call]:::startEnd
-      B[Class 4 System Routes Call]:::process
-      C{Upstream Carrier Determines Transfer Needed?}:::decision
-      D[REFER Message Sent Back to Originating System]:::process
-      E[Class 5 System Intercepts REFER Message]:::process
-      F[Class 5 System Processes Transfer]:::process
-      G[Class 5 System Initiates New Call]:::process
-      H[New Call Flows to Class 4 System]:::process
-      I[Call Routed to Updated Destination via Carrier]:::startEnd
-      J[Call Continues Normally]:::process
+            %% Nodes
+            A[UAC Initiates Call]:::startEnd
+            B[Class 4 System Routes Call]:::process
+            C{Upstream Carrier Determines Transfer Needed?}:::decision
+            D[REFER Message Sent Back to Originating System]:::process
+            E[Class 5 System Intercepts REFER Message]:::process
+            F[Class 5 System Processes Transfer]:::process
+            G[Class 5 System Initiates New Call]:::process
+            H[New Call Flows to Class 4 System]:::process
+            I[Call Routed to Updated Destination via Carrier]:::startEnd
+            J[Call Continues Normally]:::process
 
-      %% Links
-      A --> B
-      B --> C
-      C -- Yes --> D
-      D --> E
-      E --> F
-      F --> G
-      G --> H
-      H --> I
-      C -- No --> J
-      ```
-      + Advantages
-        + **Simplified Call Transfers**:
-        The complexity of handling REFER messages is shifted from the UAC to the Class 5 system.
-        Ensures a seamless experience for the user, as the originating device is unaware of the transfer.
+            %% Links
+            A --> B
+            B --> C
+            C -- Yes --> D
+            D --> E
+            E --> F
+            F --> G
+            G --> H
+            H --> I
+            C -- No --> J
+            ```
+            + Advantages
+              + **Simplified Call Transfers**:
+                The complexity of handling REFER messages is shifted from the UAC to the Class 5 system.
+                Ensures a seamless experience for the user, as the originating device is unaware of the transfer.
 
-        + **Advanced Call Manipulation**:
-        By routing calls through the Class 5 system, advanced features such as call barging, whispering, and interception are enabled.
-        !!! Example "Examples"
-            1. **Call Barging**: Useful in customer service scenarios where a supervisor might need to join an ongoing call to assist or guide the agent.
-            2. **Whispering**: Ideal in training situations, allowing a mentor to provide instructions to the agent without the customer hearing.
-            3. **Interception**: Crucial in security or compliance settings, enabling a manager to take over a call in progress if necessary.
-
-        + **Centralized Complexity Management**:
-        Keeps call logic and transfer handling within the provider's infrastructure, reducing the burden on end-user devices.
+              + **Advanced Call Manipulation**:
+                By routing calls through the Class 5 system, advanced features such as call barging, whispering, and interception are enabled.
+                !!! Example "Examples"
+                    1. **Call Barging**: Useful in customer service scenarios where a supervisor might need to join an ongoing call to assist or guide the agent.
+                    2. **Whispering**: Ideal in training situations, allowing a mentor to provide instructions to the agent without the customer hearing.
+                    3. **Interception**: Crucial in security or compliance settings, enabling a manager to take over a call in progress if necessary.
+            
+            + **Centralized Complexity Management**:
+            Keeps call logic and transfer handling within the provider's infrastructure, reducing the burden on end-user devices.
     
     !!! Example "Use Case Example "
         ```mermaid
@@ -303,11 +303,10 @@ To enable, click **:material-plus:** next to SIP User Authentication:
         %% Notes outside of subgraphs
         I1 --> |Note:| N1["Seamless Transfer"]:::normal
         I2 --> |Note:| N2["Complexity and Potential Failures"]:::normal
+        ```
     
     !!! Note "Important Note"
         An additional charge of $0.003 per call applies to use the Smart Extension capability.
-
-
 
     <img src= "/customer/img/sip1.png" width= "500">
 
