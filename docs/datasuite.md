@@ -2,7 +2,7 @@
 
 ConnexCS's Data Management Suite helps you manage, organize, and optimize your data throughout its lifecycle.
 
-Our suite  includes software solutions for data collection, editing, modify, processing, and analysis.
+Our suite  includes software solutions for data collection, processing, and analysis.
 
 It will enable your businesses to handle large amounts of structured and unstructured data efficiently, ensuring that data is accessible, accurate, and secure.
 
@@ -11,8 +11,7 @@ What our Data Suite offers?
 1. Data Management
 2. Bulk Upload
 3. Data Analyses
-4. Data Reporting
-5. Data Archiving
+4. Server Side Querying
 
 ## Steps to use Data Management Suite
 
