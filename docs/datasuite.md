@@ -15,17 +15,27 @@ What our Data Suite offers?
 
 ## Steps to use Data Management Suite
 
-1. Login to the Control Panel and click on **Data Suite**.
-2. Three options are available: **New Workspace**, **Load Workspace** and **Bulk Upload**.
-3. **New Workspace**: Allows you to manage and analyse your data in a new workspace.
-4. **Load Workspace**: Loads your existing workspace and allows you to continue where your last left.
-5. **Bulk Upload**: Uploads a huge chunk of data to a remote table.
+### Step 1: Login
 
-<img src= "/misc/img/ds.png">
+Login to the Control Panel and click on **Data Suite**.
 
-### New Workspace
+### Step 2: Workspace
 
-You can create your workspace via three methods:
+Four options are available: **New Workspace**, **Load Workspace**, **Bulk Upload** and **Server Side Querying**.
+
+1. **New Workspace**: Allows you to manage and analyse your data in a new workspace.
+2. **Load Workspace**: Loads your existing workspace and allows you to continue where your last left.
+3. **Bulk Upload**: Uploads a huge chunk of data to a remote table.
+4. **Server Side Querying**: Allows directly querying remote tables.
+
+<img src= "/misc/img/ds12.png">
+
+!!! Note "Important Note"
+    Upload the workspace ONLY in the `.json` format in **Load Workspace**.
+
+### Step 3: Upload Data
+
+**Upload Data** (New Workspace, Load Workspace, Bulk Upload): You can create your workspace via three methods:
 
 1. Uploading a **File**.
 2. Enter a **URL**.
@@ -36,70 +46,14 @@ You can create your workspace via three methods:
 #### Uploading a File
 
 1. Drop a file or click to upload. A window will appear as shown below.
+
 <img src= "/misc/img/ds2.png">
-
-2. **File Functions**
-
-      * **File**:
-
-        <img src= "/misc/img/ds3.png" width="200">
-
-        + **New Workspace**: Add a new workspace.
-        + **Load Workspace**: Upload a new workspace to an existing workspace.
-        + **Import Table**: Insert a table from an external source to an existing workspace.
-        + **Download Workspace**: Allows you to download the workspace in the `json` format.
-
-* **Drag & Drop a .csv file here or Browse**:
-
-<img src= "/misc/img/ds4.png">
-
-* **Explore Tables**:
-
-    <img src= "/misc/img/ds5.png">
-
-    + **Tables:**
-          
-        + **Add Table**: Add a new table to an existing workspace.
-        + **Map Table Columns**: Allows you to upload the data.
-        + **Mapping Target Table**: You can select the destination (**CLI**, **Contact**, **Customer**, **DID**, **SIP User Auth**) to upload the selected data.
-        + **Refresh** any changed or modified entries inside the table.
-        + **Upload All To Server** saves the table entries or modified table entries to the server.
-        + **Continue To Modify**: Allows to edit/modify the table values via queries.
-        + **Delete**: Allows you to delete the existing table.
-
-!!! Note "You can now edit the entries inside the table itself."
-
-+   **Queries:**
-      + **Add Table**: Add a new query for the table.
-      + **Delete**: Allows you to delete the required query.
-
-* **Query Editor**: It's an interface where you can  write, edit, and execute queries against a database or data source. It's typically part of a larger data management or analytics platform, and it allows you to interact with data by writing commands in query languages.
-
-<img src= "/misc/img/ds6.png">
-
-+ **Other options**:
-    + **Run**: Allows you to execute the query.
-    + **Toggle Console**: Allows you to open or close the console window.
-    + **Query History**: It allows you to view log or record of previously executed queries.
-
-<img src= "/misc/img/ds7.png" width="400">
-
-* **Settings**: <br><img src= "/misc/img/ds8.png" width="200"></br>
-
-    * **Help**: Directs you to our documentation website.
-    * **Export Query Results to CSV**
-    * **Export Query Results to JSON**
-    * **Export Query Results to Parquet**
 
 #### Uploading via URL
 
-1.Enter the URL in the CSV format and hit the `Upload` button.
+1. Enter the URL in the CSV format and hit the `Upload` button. <img src= "/misc/img/ds9.png">
 
-<img src= "/misc/img/ds9.png">
-
-2.After clicking `Run` a window will appear as shown below.
-
-<img src= "/misc/img/ds10.png">
+2. After clicking `Run` a window will appear as shown below <img src= "/misc/img/ds10.png">
 
 #### Uploading via Text
 
@@ -121,14 +75,61 @@ Column 1,Column 2,Column 3,Column 4
 
 <img src= "/misc/img/ds12.png">
 
-### Load Workspace
+### Step 4: Edit/Modify/Analyse Data
 
-1. Upload the workspace ONLY in the `.json` format.
-2. Click on `Run` to see the output.
+1.**File** <img src= "/misc/img/ds31.png" width="200">
 
-<img src= "/misc/img/ds13.png">
++ **New Workspace**: Add a new workspace.
++ **Load Workspace**: Upload a new workspace to an existing workspace.
++ **New Server Side Query**:
+  + New Query: Start a new SQL query.
+  + Load Query: Apply a previously defined SQL query. 
++ **Import Table**: Insert a table from an external source to an existing workspace.
++ **Download Workspace**: Allows you to download the workspace in the `json` format.
 
-### Bulk Upload
+2.**Drag & Drop a .csv file here or Browse**: <img src= "/misc/img/ds4.png">
+
+3.**Explore Tables**: <img src= "/misc/img/ds51.png">
+
++ **Tables**:
+    + **Add Table**: Add a new table to an existing workspace.
+    + **Map Table Columns**: Allows you to upload the data.
+    + **Mapping Target Table**: You can select the destination (**CLI**, **Contact**, **Customer**, **DID**, **SIP User Auth**) to upload the selected data.
+    + **Refresh** any changed or modified entries inside the table.
+    + **Upload All To Server** saves the table entries or modified table entries to the server.
+    + **Continue To Modify**: Allows to edit/modify the table values via queries.
+    + **Delete**: Allows you to delete the existing table.
+
+!!! Note "You can now edit the entries inside the table itself."
+
++ **Queries**:
+  + **Add Table**: Add a new query for the table.
+  + **Delete**: Allows you to delete the required query.
+  
++ **Server Side Queries**:
+  It appears when you select **Load Query**.
+  A server-side query is a request that you send to a database server to fetch or process information directly on the server.
+  Instead of doing the work (like filtering or calculating data) on your own computer or app (the "client"), you let the powerful server handle it. Once the server finishes, it sends you back only the results you need.
+
++ **Query Editor**: It's an interface where you can  write, edit, and execute queries against a database or data source. It's typically part of a larger data management or analytics platform, and it allows you to interact with data by writing commands in query languages.
+
+<img src= "/misc/img/ds6.png">
+
++ **Other options**:
+    + **Run**: Allows you to execute the query.
+    + **Toggle Console**: Allows you to open or close the console window.
+    + **Query History**: It allows you to view log or record of previously executed queries.
+
+<img src= "/misc/img/ds7.png" width="400">
+
+* **Settings**: <br><img src= "/misc/img/ds8.png" width="200"></br>
+
+    * **Help**: Directs you to our documentation website.
+    * **Export Query Results to CSV**
+    * **Export Query Results to JSON**
+    * **Export Query Results to Parquet**
+
+#### Bulk Upload
 
 1.Upload your data via **File**, **URL** or by entering the **Text**.
 
@@ -148,3 +149,7 @@ Column 1,Column 2,Column 3,Column 4
     |**Select**|```SELECT * FROM 'Example'```|<img src= "/misc/img/ds15.png">|
     |**Update**|```UPDATE 'Example' SET Col2 = '4' WHERE Col2 = '97405'```|<img src= "/misc/img/ds16.png">
     |**Delete**|```DELETE FROM 'Example' WHERE Col2 = '4'```|<img src= "/misc/img/ds17.png">|
+
+#### Server Side Querying
+
+Upload your data follow the steps mentioned in [Step 4]()
