@@ -92,6 +92,7 @@ Column 1,Column 2,Column 3,Column 4
 2.**Drag & Drop a .csv file here or Browse**: <img src= "/misc/img/ds4.png">
 
 3.**Explore Tables**:
+
 <img src= "/misc/img/ds51.png" width="400">
 
 + **Tables**:
@@ -125,7 +126,7 @@ Column 1,Column 2,Column 3,Column 4
 
 <img src= "/misc/img/ds7.png" width="300">
 
-+ **Settings**: <br><img src= "/misc/img/ds8.png" width="300"></br>
++ **Settings**: <br><img src= "/misc/img/ds8.png" width="200"></br>
 
     * **Help**: Directs you to our documentation website.
     * **Export Query Results to CSV**
