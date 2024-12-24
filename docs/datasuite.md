@@ -77,19 +77,21 @@ Column 1,Column 2,Column 3,Column 4
 
 ### Step 4: Edit/Modify/Analyse Data
 
-1.**File** <img src= "/misc/img/ds31.png" width="200">
+1.**File**
+
+<img src= "/misc/img/ds31.png" width="200">
 
 + **New Workspace**: Add a new workspace.
 + **Load Workspace**: Upload a new workspace to an existing workspace.
 + **New Server Side Query**:
-  + New Query: Start a new SQL query.
-  + Load Query: Apply a previously defined SQL query. 
+    + New Query: Start a new SQL query.
+    + Load Query: Apply a previously defined SQL query. 
 + **Import Table**: Insert a table from an external source to an existing workspace.
 + **Download Workspace**: Allows you to download the workspace in the `json` format.
 
 2.**Drag & Drop a .csv file here or Browse**: <img src= "/misc/img/ds4.png">
 
-3.**Explore Tables**: <img src= "/misc/img/ds51.png">
+3.**Explore Tables**: <img src= "/misc/img/ds51.png" width="400">
 
 + **Tables**:
     + **Add Table**: Add a new table to an existing workspace.
@@ -120,7 +122,7 @@ Column 1,Column 2,Column 3,Column 4
     + **Toggle Console**: Allows you to open or close the console window.
     + **Query History**: It allows you to view log or record of previously executed queries.
 
-<img src= "/misc/img/ds7.png" width="400">
+<img src= "/misc/img/ds7.png" width="300">
 
 * **Settings**: <br><img src= "/misc/img/ds8.png" width="200"></br>
 
