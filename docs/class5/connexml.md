@@ -939,12 +939,9 @@ These variables are typically set dynamically by previous operations or user inp
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
-        <Condition field="year" expression="2024">
+        <condition year="2024">
             <Say>Welcome to the events of 2024!</Say>
-        </Condition>
-        <Condition field="year" expression="default">
-            <Say>Year not recognized. Please try again.</Say>
-        </Condition>
+        </condition>
     </Response>
     ```
 
@@ -955,15 +952,9 @@ These variables are typically set dynamically by previous operations or user inp
         <!-- Welcome Message -->
         <Say>Welcome to the system. Checking the day of the year.</Say>
         <!-- Condition to check the value of yday -->
-        <Condition field="yday" expression="1">
-            <Say>Happy New Year! Today is January 1st.</Say>
-        </Condition>
-        <Condition field="yday" expression="365">
-            <Say>It is the last day of the year. December 31st.</Say>
-        </Condition>
-        <Condition field="yday" expression="default">
-            <Say>It is just another regular day of the year.</Say>
-        </Condition>
+        <condition yday="1">
+            <Say>It's the first day of the year!</Say>
+        </condition>
     </Response>
     ```
 
@@ -971,12 +962,9 @@ These variables are typically set dynamically by previous operations or user inp
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
-        <Condition field="day" expression="mon">
+        <condition day="mon">
             <Say>Welcome! It's Monday, starting the week strong!</Say>
-        </Condition>
-        <Condition field="day" expression="default">
-            <Say>Have a great day!</Say>
-        </Condition>
+        </condition>
     </Response>
     ```
 
@@ -984,15 +972,9 @@ These variables are typically set dynamically by previous operations or user inp
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
-        <Condition field="mday" expression="1">
+        <condition mday="1">
             <Say>Welcome! It's the first day of the month.</Say>
-        </Condition>
-        <Condition field="mday" expression="15">
-            <Say>Mid-month check-in! Have a great day.</Say>
-        </Condition>
-        <Condition field="mday" expression="default">
-            <Say>Enjoy your day!</Say>
-        </Condition>
+        </condition>
     </Response>
     ```
 
@@ -1000,17 +982,9 @@ These variables are typically set dynamically by previous operations or user inp
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
-        <Conditions>
-        <Condition field="week" expression="1">
+        <condition week="1">
             <Say>Welcome to Week 1 activities.</Say>
-        </Condition>
-        <Condition field="week" expression="2">
-            <Say>Welcome to Week 2 activities.</Say>
-        </Condition>
-        <Condition field="week" expression="default">
-            <Say>Please enter a valid week number.</Say>
-        </Condition>
-        </Conditions>
+        </condition>
     </Response>
     ```
 
@@ -1018,15 +992,9 @@ These variables are typically set dynamically by previous operations or user inp
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
-        <Condition field="mweek" expression="1">
-            <Say>This is the first week of the month. Special offers are available!</Say>
-        </Condition>
-        <Condition field="mweek" expression="2">
+        <condition mweek="2">
             <Say>Welcome to the second week of the month. Stay tuned for updates.</Say>
-        </Condition>
-        <Condition field="mweek" expression="default">
-            <Say>Thank you for visiting us. Check back for more updates!</Say>
-        </Condition>
+        </condition>
     </Response>
     ```
 
@@ -1034,18 +1002,9 @@ These variables are typically set dynamically by previous operations or user inp
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
-        <Condition field="wday" expression="1">
-            <Say>Today is Sunday. Enjoy your weekend!</Say>
-        </Condition>
-        <Condition field="wday" expression="2">
-            <Say>Today is Monday. Start your week strong!</Say>
-        </Condition>
-        <Condition field="wday" expression="3">
+        <condition wday="3">
             <Say>Today is Tuesday. Keep going!</Say>
-        </Condition>
-        <Condition field="wday" expression="7">
-            <Say>Today is Saturday. Relax and recharge!</Say>
-        </Condition>
+        </condition>
     </Response>
     ```
 
@@ -1053,12 +1012,9 @@ These variables are typically set dynamically by previous operations or user inp
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
-        <Condition field="sunmontuewedthufrisat" expression="mon,tue,wed,thu,fri">
+        <condition sunmontuewedthufrisat="mon,tue,wed,thu,fri">
             <Say>It's a weekday. Let's get to work!</Say>
-        </Condition>
-        <Condition field="sunmontuewedthufrisat" expression="sat,sun">
-            <Say>It's the weekend! Enjoy your time off!</Say>
-        </Condition>
+        </condition>
     </Response>
     ```
     
@@ -1066,15 +1022,9 @@ These variables are typically set dynamically by previous operations or user inp
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
-        <Condition field="hour" expression="12">
+        <condition field="hour" expression="12">
             <Say>Good afternoon! You are connecting at noon.</Say>
-        </Condition>
-        <Condition field="hour" expression="18">
-            <Say>Good evening! You are connecting at 6 PM.</Say>
-        </Condition>
-        <Condition field="hour" expression="default">
-            <Say>Hello! Your connection time is noted.</Say>
-        </Condition>
+        </condition>
     </Response>
     ```
 
@@ -1082,12 +1032,9 @@ These variables are typically set dynamically by previous operations or user inp
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
-        <Condition field="minute" expression="30">
+        <condition minute="30">
             <Say>It's 30 minutes past the hour, proceeding with the action.</Say>
-        </Condition>
-        <Condition field="minute" expression="0">
-            <Say>It's the start of the hour, waiting for the next action.</Say>
-        </Condition>
+        </condition>
     </Response>
     ```
 
@@ -1096,13 +1043,9 @@ These variables are typically set dynamically by previous operations or user inp
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
     <!-- Check if the time is before noon (720 minutes) -->
-        <Condition field="minute-of-day" expression="720">
+        <condition minute-of-day="720">
             <Say>The time is before noon. Connecting you to morning services.</Say>
-        </Condition>
-    <!-- If it's after noon, connect to afternoon services -->
-        <Condition field="minute-of-day" expression="720" operator="greater-than">
-            <Say>The time is after noon. Connecting you to afternoon services.</Say>
-        </Condition>
+        </condition>
     </Response>
     ```
     
@@ -1111,12 +1054,9 @@ These variables are typically set dynamically by previous operations or user inp
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
         <!-- Check time of day and respond accordingly -->
-        <Condition field="time-of-day" expression="09:00-17:00">
+        <condition time-of-day="09:00-17:00">
             <Say>Good day! Our office hours are from 9 AM to 5 PM.</Say>
-        </Condition>
-        <Condition field="time-of-day" expression="default">
-            <Say>Our office is currently closed. Please call back during our working hours.</Say>
-        </Condition>
+        </condition>
     </Response>
     ```
 
@@ -1125,12 +1065,9 @@ These variables are typically set dynamically by previous operations or user inp
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
         <!-- Check time range -->
-        <Condition field="time-of-day" expression="09:00:00-17:00:00">
+        <condition time-of-day="09:00:00-17:00:00">
             <Say>Welcome! You are accessing the system during business hours.</Say>
-        </Condition>
-        <Condition field="time-of-day" expression="17:00:01-08:59:59">
-            <Say>Our business hours are 9 AM to 5 PM. Please try again later.</Say>
-        </Condition>
+        </condition>
     </Response>
     ```
 
@@ -1139,12 +1076,9 @@ These variables are typically set dynamically by previous operations or user inp
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
         <!-- Evaluate date-time range -->
-        <Condition field="date--time" expression="2024-11-22 10:00**~**2024-11-22 14:00">
+        <condition date--time="2024-11-22 10:00**~**2024-11-22 14:00">
             <Say>The current time is within the specified range.</Say>
-        </Condition>
-        <Condition field="date--time" expression="default">
-            <Say>The current time is outside the specified range.</Say>
-        </Condition>
+        </condition>
     </Response>
     ```
 
@@ -1152,12 +1086,12 @@ These variables are typically set dynamically by previous operations or user inp
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
-        <Condition field="date_time" expression="2024-11-22 14:00:00**~**2024-11-22 16:00:00">
+        <condition date_time="2024-11-22 14:00:00**~**2024-11-22 16:00:00">
             <Say>The date-time is within the specified range. Proceeding with the action.</Say>
             <Dial>
                 <Number>+123456789</Number>
             </Dial>
-        </Condition>
+        </condition>
         <Say>The date-time is outside the specified range. Please try again later.</Say>
     </Response>
     ```
@@ -1200,12 +1134,12 @@ This approach is useful for defining non-continuous time ranges within a single 
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
-        <Condition time="09:00-12:00,14:00-17:00">
+        <condition time="09:00-12:00,14:00-17:00">
             <Say>The support system is available during this time. Connecting you to a support agent now.</Say>
             <Dial>
                 <Number>+123456789</Number>
             </Dial>
-        </Condition>
+        </condition>
         <Say>The support system is currently unavailable. Please try again during our working hours: 09:00-12:00 or 14:00-17:00 GMT.</Say>
     </Response>
     ```
