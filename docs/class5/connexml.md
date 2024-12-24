@@ -1022,7 +1022,7 @@ These variables are typically set dynamically by previous operations or user inp
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
-        <condition field="hour" expression="12">
+        <condition hour="12">
             <Say>Good afternoon! You are connecting at noon.</Say>
         </condition>
     </Response>
@@ -1076,7 +1076,7 @@ These variables are typically set dynamically by previous operations or user inp
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
         <!-- Evaluate date-time range -->
-        <condition date--time="2024-11-22 10:00**~**2024-11-22 14:00">
+        <condition date-time="2024-11-22 10:00**~**2024-11-22 14:00">
             <Say>The current time is within the specified range.</Say>
         </condition>
     </Response>
