@@ -97,9 +97,9 @@ The AI agents seamlessly integrate into the ConnexCS platform, enabling business
 1. Login to your account.
 2. Navigate to **Class 5 :material-menu-right: AI Agent**.
 3. Click on the blue `+` icon.
-<img src= "ai1">
+<img src= "/class5/img/ai1.png">
 4. A window will open up where you can create your customizable AI Agent for your customers.
-<img src= "ai2">
+<img src= "/class5/img/ai2.png">
 5. Fill in the following fields to setup your AI model:
     + **Name**: Give a name to your AI Agent.
     + **App**: Select the [Application](https://docs.connexcs.com/apps/architecture/app/) you want to run your AI model.
@@ -118,6 +118,9 @@ The AI agents seamlessly integrate into the ConnexCS platform, enabling business
         + **Low temperature (close to 0)** makes the model's responses more predictable by selecting the most probable words.
         + **High temperature (closer to 1 or above)** increases randomness, leading to more diverse and creative but potentially less coherent responses.
     + **First Message**: The initial message spoken by the agent. For example, when the agent begins the conversation.
+    + **Built-in Functions**:
+        + **Hangup**: Use this flag to terminate the call. You can include a prompt such as, "When call ended, hangup.
+        + **Set Variable**: Used to store values. For example, in a prompt, you could ask, "What's your name?" and save the response to the variable `name`.
     + **End Call Phrases**: Phrases or messages used to conclude a call or interaction with a customer.
     + **Prompt**: The prompt field allows you to enter the set of instructions to guide the AI model to perform certain tasks. It provides as the foundation for the AI to comprehend the context, interpret the user's purpose, and generate relevant results.
     + Click `Save`.
@@ -154,8 +157,8 @@ The AI agents seamlessly integrate into the ConnexCS platform, enabling business
 |**GPT 4o Real-time**|For instant interactions where low latency is critical|
 |**Gemma 2 9bn**| Strong performance in tasks like text generation, translation, and summarization|
 |**Gemma 2 7bn**|Excels in areas like creative text generation, translation, and code generation|
-|**Lamma 3 To   ols 8b**|Complex reasoning, instruction following, multilingual capabilities, contextual understanding, and knowledge base integration. Supports ScriptForge|
-|**Lamma 3.1 Tools 70bn**| Offers improved reasoning, factual accuracy, context understanding, and multilingual capabilities over its predecessor, Llama 3 7B. Suports ScriptForge|
+|**Lamma 3 Tools 8b**|Complex reasoning, instruction following, multilingual capabilities, contextual understanding, and knowledge base integration. Supports ScriptForge|
+|**Lamma 3.1 Tools 70bn**| Offers improved reasoning, factual accuracy, context understanding, and multilingual capabilities over its predecessor, Llama 3 7B. Supports ScriptForge|
 |**Mixtral 8x7bn**|Natural Language Processing (NLP), Data Analysis, Code Generation, Multi Modal (text, images, or audio)|
 |**Llama**|Llama boasts a 128k token context window, ethical alignment, text-in, text-out interaction, strong logical reasoning, and multilingual capabilities|
 |**Phi3**|Excel in language understanding, reasoning, coding, and math, outperforming larger models in these areas, and offer multimodal capabilities|
@@ -175,7 +178,7 @@ The AI agents seamlessly integrate into the ConnexCS platform, enabling business
 ## How to use Functions for the Large Language Models (LLMs)?
 
 1. Develop an application utilizing the provided [link](https://docs.connexcs.com/apps/architecture/app/).
-2. Create an **Agent** using the provided [link]().
+2. Create an **Agent** using the provided [link](https://bani-converse--connexcs-docs.netlify.app/class5/ai-agent/#steps-to-create-ai-agent).
 3. Click on [Scriptforge](https://docs.connexcs.com/apps/architecture/script/) to create a script to access the AI Agent.
 
 !!! Example "Example Script"
