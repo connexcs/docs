@@ -91,7 +91,8 @@ Column 1,Column 2,Column 3,Column 4
 
 2.**Drag & Drop a .csv file here or Browse**: <img src= "/misc/img/ds4.png">
 
-3.**Explore Tables**: <img src= "/misc/img/ds51.png" width="400">
+3.**Explore Tables**:
+<img src= "/misc/img/ds51.png" width="400">
 
 + **Tables**:
     + **Add Table**: Add a new table to an existing workspace.
@@ -105,8 +106,8 @@ Column 1,Column 2,Column 3,Column 4
 !!! Note "You can now edit the entries inside the table itself."
 
 + **Queries**:
-  + **Add Table**: Add a new query for the table.
-  + **Delete**: Allows you to delete the required query.
+    + **Add Table**: Add a new query for the table.
+    + **Delete**: Allows you to delete the required query.
   
 + **Server Side Queries**:
   It appears when you select **Load Query**.
@@ -124,7 +125,7 @@ Column 1,Column 2,Column 3,Column 4
 
 <img src= "/misc/img/ds7.png" width="300">
 
-* **Settings**: <br><img src= "/misc/img/ds8.png" width="200"></br>
++ **Settings**: <br><img src= "/misc/img/ds8.png" width="300"></br>
 
     * **Help**: Directs you to our documentation website.
     * **Export Query Results to CSV**
@@ -154,4 +155,4 @@ Column 1,Column 2,Column 3,Column 4
 
 #### Server Side Querying
 
-Upload your data follow the steps mentioned in [Step 4]()
+Upload your data follow the steps mentioned in [Step 4](https://bani-41024--connexcs-docs.netlify.app/datasuite/#step-4-editmodifyanalyse-data)
