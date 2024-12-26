@@ -53,6 +53,12 @@ Click the :material-plus: button to set the following:
 
 <img src= "/anyedge/anyedge12.png">
 
+!!! Note "Increase AnyEdge Ports"
+    1. Login to your account.
+    2. Navigate to **Setup :material-menu-right: AnyEdge :material-menu-right: blue `+` icon :material-menu-right: modify CPS limit**.
+
+    <img src= "/anyedge/any45.png">
+
 ### AnyEdge Domain
 
 After AnyEdge configuration is complete, click **:material-plus:** next to **Domains** to configure a specific domain with the same settings as Configure AnyEdge.
