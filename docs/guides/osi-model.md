@@ -64,39 +64,85 @@ End-user applications like web browsers and email clients operate at the applica
 
 It offers protocols that let computer programs send and receive data.
 
-## Network vs Application Level Latency
+## Network Latency, Application Latency and SIP Latency
 
-**Network latency (lag)** characterizes delays in network communication. In networking, it's the time it takes for a data packet to pass through several devices before getting received at its destination and then getting decoded.
+1.**Network Latency** refers to the delay in data transmission over a network.
+It's the time taken for data to travel from the source to the destination through the network infrastructure.
 
-A low-latency network is one that has short transmission delays.
+|Components|Description|
+|----------|-----------|
+|**Propagation Delay**| Time taken for a signal to travel through the physical medium, for example fiber optic cables, wireless links etc|
+|**Transmission Delay**| Time required to transmit a packet of data over the network|
+|**Processing Delay**| Time spent by routers and switches processing packets|
+|**Queueing Delay**| The time packets spend waiting in queues at network devices|
 
-A high-latency network has greater transmission delays (not so desirable). High-latency networks that experience lengthy delays impede communication.
+|Causes|Explanation|
+|------|-------|
+|**Distance**|Signals travel faster over shorter distances|
+|**Network Congestion**| High traffic can cause delays as packets wait in queues|
+|**Network Quality**| Poorly maintained or low-quality networks can introduce additional latency|
+|**Protocol Overhead**|Additional overhead from network protocols like TCP/IP can add to latency|
 
-In the worst circumstances, it resembles vehicles trying to merge into a single lane.
+!!! Example "Examples"
+    1. A user accessing a website hosted on a server located on the other side of the world may experience higher network latency due to the longer distance the data needs to travel.
+    2. Video streaming services may suffer from network latency, causing buffering or lag.
 
-Depending on the cause of the delays, high latency reduces transmission capacity. It can be either be on temporary or permanent.
+2.**Application Latency** refers to the delay between when an application receives a request and when it responds with the requested data or action.
+It includes all processing steps within the application itself, excluding network transmission times.
 
-Latency is described as a ping rate and measured in milliseconds. Performance improves as the ping rate decreases. Ping rates of less than 100ms are acceptable. For best performance, latency in the range of 30–40ms gets preference.
+|Components|Description|
+|----------|-----------|
+|**Server Response Time**|Time taken by the server to process the request and generate a response|
+|**Database Query Time**|If the application relies on databases, this includes the time taken to execute queries and retrieve data|
+|**Computation Time**| Time spent on computational tasks such as data processing, algorithm execution, etc|
+|**Resource Allocation**|Time spent allocating resources like memory, CPU cycles, etc|
 
-Thus, the definition of a network's typical latency varies slightly depending on the context. Latency problems change from network to network.
+|Causes|Explanation|
+|------|-------|
+|**Server Load**|High server load can slow down response times|
+|**Database Performance**|Slow database queries can significantly impact application latency|
+|**Code Efficiency**|Inefficiently written code can lead to longer processing times|
+|**Resource Constraints**|Limited resources such as RAM or CPU power can cause delays|
 
-Application Latency: Before the data gets transmitted to the application, received data segments must get saved in a buffer until a full range of data gets received.
+!!! Examples "Example"
+    1. A web application that takes several seconds to load a page after clicking on a link is experiencing high application latency.
+    2. A mobile app that takes a long time to process user input (e.g., logging in) is suffering from application latency.
 
-This implies that the application must wait for any missed segments to get retransmitted and received before it can use any successfully delivered packets.
+3.**SIP Ping Latency** refers specifically to the delay in sending and receiving SIP messages, which are used in VoIP  and other real-time communication services. This type of latency is crucial for ensuring timely and reliable communication.
 
-### Relationship between Network and Application latency
+|Components|Description|
+|----------|-----------|
+|**SIP Message Transmission**|Time taken for SIP messages (e.g., INVITE, ACK, BYE) to be transmitted between endpoints|
+|**Server Response Time**|Time taken by SIP servers to process and respond to SIP requests|
 
-Moving a data center can alter network-related latency. The geographic separation between the client and server affects network latency. The delay may get doubled by relocating the server farther from the user. The end users will be further affected as it will slow down processes. It also decreases the application throughput.
+|Causes|Explanation|
+|------|-------|
+|**Network Latency**|Underlying network conditions can affect SIP message transmission times|
+|**Server Load**| High load on SIP servers can slow down response times|
+|**Configuration Issues**|Mis-configured SIP settings or firewalls can introduce delays|
 
-Here is an example showing a link between network latency and application latency.
+!!! Example "Examples"
+    1. In VoIP calls, high SIP ping latency can cause delays in call setup and tear-down, leading to poor user experience.
+    2. In video conferencing, delayed SIP messages can result in synchronization issues between audio and video streams.
 
-![netlatency](/guides/img/netlatency.jpg)
+### Relationships Between Latency Types
 
-150 transactions would expire for a local user with a 1-ms network latency between the client and the server in 0.15s.
+1. **Network Latency** affects both SIP ping latency and Application latency because it influences how quickly data (including SIP messages and application requests) can be transmitted over the network.
 
-The speed of these transactions didn't decrease by 50ms when a typical cross-country WAN connection's 50ms of network latency included (0.05s). The same 150 operations, took 7.5 seconds.
+2. **Application Latency** can be influenced by both network latency (for data transmission) and server-side processing times. High network latency can exacerbate this by delaying the transmission of requests and responses.
 
-Even little variations in network latency highly impact application performance.
+3. **SIP Ping Latency** is particularly sensitive to underlying network conditions. Therefore, high network latency will directly impact SIP ping latency.
+
+!!! Note "Important Note"
+    SIP Ping Latency= Network Latency + Application Latency
+
+### Summary
+
+1. **Network Latency** measures data travel delay.
+
+2. **Application Latency** is primarily server-side processing delay, independent of network transmission times.
+
+3. **SIP Ping Latency** combines network latency and SIP server processing delays.
 
 ## VoIP Latency
 
