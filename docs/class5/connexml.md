@@ -577,7 +577,7 @@ It helps to define on which leg of the call the DTMF will work. For example, `dt
     </Response>
     ```
 
-|**Noun**|**Description**|
+|**Noun**|**Description**|  
 |--------|---------------|
 |`Transfer`|Transfers the call to the given extension given|
 
@@ -615,6 +615,23 @@ When the `<Start><Stream>` command is used during a call, the call's raw audio s
 |`url`|The WebSocket destination address for stream delivery||none|
 |`statusCallback`|For every event listed in the `statusCallbackEvent` attribute, you may define a URL to send webhook requests to using the `statusCallback` attribute. Non-relative URLs (underscores aren't allowed) require a valid hostname|any `URL`|none|
 |`statusCallbackMethod`|Lets you define the `HTTP` method ConnexCS should use when making requests to the URL specified in the `statusCallback` attribute.|`GET`, `POST`|`POST`|
+|`mix_type`| Determines the type of audio stream|1. `mono`: Single channel with only the caller's audio.<br> 2. `mixed`: Single channel combining both caller and callee audio.</br><br> 3.`stereo`: Two channels; one for the caller and one for the callee.</br>|`mono`|
+
+|**Noun**|**Description**|  
+|--------|---------------|
+|`Parameter`|Its used to send key-value pairs to the WebSocket server.|
+
+!!! Example "Example"
+    ``` xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+        <Start>
+            <Stream url="ws://fr1js1.connexcs.net:3001" mix_type="stereo" >
+                <Parameter name="Hello" value="how are you, " />
+            </Stream>
+        </Start>
+    </Response>
+    ```
 
 ### Echo
 
@@ -756,9 +773,9 @@ It's an effective and quicker way to check a customer's audio quality and call p
 !!! Note
     TwiML is a trademark of TWILIO.
 
-### Adding AI Agents
+## Adding AI Agents
 
-#### Overview
+### Overview
 
 The **AI Agent** allows integration of AI agents into your call flow using three methods:
 
@@ -779,7 +796,7 @@ graph TD
     H --> I[Combined with XML call flow to invoke the AI agent]
 ```
 
-#### How It Works
+### How It Works
 
 * **File ID Method**: Uses the agent's file ID from the IDE to engage pre-configured behaviors.
 * **Embedded Instructions Method**: Embeds natural language instructions directly in the XML.
@@ -850,5 +867,279 @@ graph TD
             You are the friendly and professional receptionist for a company Test Account specializing in revolutionary technology. Begin each conversation by saying 'Hello' and then pausing briefly. Greet callers and provide information, informing them that there are 5 key members in the organization: Jonathan Hulme, Rizwan Syed, Adam Nawaz, Ankit Patel, and Bani Gandhi. Let the caller know that you can transfer them to any of these individuals. However, if none of these names are mentioned, politely inform the caller that you cannot transfer the call and encourage them to continue the conversation. Always be polite, concise, and clear in your responses.
             </LLM-Agent>
         </Dial>
+    </Response>
+    ```
+
+## Condition Field
+
+A condition field determines if a given condition is met before performing a corresponding action or logic.
+
+It functions as a decision-making component that determines a system's flow or behavior.
+
+!!! Example "Example"
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+	    <!-- Initial Greeting -->
+	    <Say>Welcome to the conference system. Please enter your 1-digit conference code.</Say>
+	    <Gather actionOnEmptyResult="true" method="GET" numDigits="1" timeout="120">
+		    <Play>https://samplelib.com/lib/preview/wav/sample-12s.wav</Play>
+	    </Gather>
+	    <!-- Logic for conference -->
+	    <Condition field="gather_result" expression="1">
+		    <Say>You have pushed 1, which was the correct digit and connecting to the conference.</Say>
+		    <Dial>
+			    <Conference>MyConferenceRoom</Conference>
+		    </Dial>
+	    </Condition>
+	    <!-- If no valid input, play an error message -->
+	    <Say>No input received.</Say>
+    </Response>
+    ```
+    **Initial Greeting:**
+    The user hears a welcome message and is prompted to enter a 1-digit conference code.
+    A `Gather` tag collects the user's input, allowing up to 120 seconds for a response.
+
+    **Processing the Input:**
+    The `Condition` tag evaluates a specific field (`field="gather_result"`) against a condition (`expression="1"`).
+    `Field`: `gather_result` refers to the value collected from the user's input (via the `Gather` tag).
+    `Expression: "1"` specifies the required value for the condition to be true
+    
+    **Handling Valid and Invalid Inputs**:
+    If the condition is met (user pressed 1), the system responds accordingly.
+    If no input is received or the input doesn't match the condition, an error message is played.
+
+### Variables
+
+**Variables** refer to the fields or parameters being tested to see if the provided condition is `true` or `false`.
+These variables are typically set dynamically by previous operations or user inputs, such as collected values, system-generated data, or context-specific states.
+
+#### Types of Variables
+
+|**Attribute**|**Description**|**Acceptable Values**|
+|-------------|---------------|---------------------|
+|year|calendar year|0 - 9999
+|yday|day of year|1 - 366|
+|mon|month (Jan = 1, Feb = 2, etc.)|1 - 12|
+|mday|date of month|1 - 31|
+|week|week of year|1 - 53|
+|mweek|week of month|1 - 6|
+|wday|day of week, numeric (sun = 1, mon = 2, etc.)|1 - 7|
+|sunmontuewedthufrisat|day of week|sun, mon, tue, wed, thu, fri, sat|
+|hour|hour|0 - 23|
+|minute|minute (of the hour)|0 - 59|
+|minute-of-day|minute of the day (midnight = 1, 1am = 60, noon = 720, etc)|1-1440
+|time-of-day|time range|`hh:mm-hh:mm`|Example: 08:00-17:00|
+||time range, with seconds|`hh:mm:ss-hh:mm:ss-hh:mm:ss-hh:mm:ss`|
+|date-time|date time range, note the ~ delimiter|`YYYY-MM-DD hh:mm**~**YYYY-MM-DD hh:mm`|Example: 2010-10-01 00:00:01**~**2010-10-15 23:59:59|
+||date time range, with seconds, note the ~ delimiter|`YYYY-MM-DD hh:mm:ss**~**YYYY-MM-DD hh:mm:ss`|
+
+!!! Example "Variable Examples in Condition Field"
+    1. `year`: calendar year
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+        <condition year="2024">
+            <Say>Welcome to the events of 2024!</Say>
+        </condition>
+    </Response>
+    ```
+
+    2. `yday`: day of the year
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+        <!-- Welcome Message -->
+        <Say>Welcome to the system. Checking the day of the year.</Say>
+        <!-- Condition to check the value of yday -->
+        <condition yday="1">
+            <Say>It's the first day of the year!</Say>
+        </condition>
+    </Response>
+    ```
+
+    3. `mon`: month
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+        <condition day="mon">
+            <Say>Welcome! It's Monday, starting the week strong!</Say>
+        </condition>
+    </Response>
+    ```
+
+    4. `mday`: date of the month
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+        <condition mday="1">
+            <Say>Welcome! It's the first day of the month.</Say>
+        </condition>
+    </Response>
+    ```
+
+    5. `week`: week of the year
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+        <condition week="1">
+            <Say>Welcome to Week 1 activities.</Say>
+        </condition>
+    </Response>
+    ```
+
+    6. `mweek`: week of the month
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+        <condition mweek="2">
+            <Say>Welcome to the second week of the month. Stay tuned for updates.</Say>
+        </condition>
+    </Response>
+    ```
+
+    7. `wday`: day of the week
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+        <condition wday="3">
+            <Say>Today is Tuesday. Keep going!</Say>
+        </condition>
+    </Response>
+    ```
+
+    8. `sunmontuewedthufrisat`: days of the week
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+        <condition sunmontuewedthufrisat="mon,tue,wed,thu,fri">
+            <Say>It's a weekday. Let's get to work!</Say>
+        </condition>
+    </Response>
+    ```
+    
+    9. `hour`
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+        <condition hour="12">
+            <Say>Good afternoon! You are connecting at noon.</Say>
+        </condition>
+    </Response>
+    ```
+
+    10. `minute`
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+        <condition minute="30">
+            <Say>It's 30 minutes past the hour, proceeding with the action.</Say>
+        </condition>
+    </Response>
+    ```
+
+    11. `minute-of-day`
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+    <!-- Check if the time is before noon (720 minutes) -->
+        <condition minute-of-day="720">
+            <Say>The time is before noon. Connecting you to morning services.</Say>
+        </condition>
+    </Response>
+    ```
+    
+    12. `time-of-day`
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+        <!-- Check time of day and respond accordingly -->
+        <condition time-of-day="09:00-17:00">
+            <Say>Good day! Our office hours are from 9 AM to 5 PM.</Say>
+        </condition>
+    </Response>
+    ```
+
+    13. `time-of-day`: time range with seconds
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+        <!-- Check time range -->
+        <condition time-of-day="09:00:00-17:00:00">
+            <Say>Welcome! You are accessing the system during business hours.</Say>
+        </condition>
+    </Response>
+    ```
+
+    14. `date-time`
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+        <!-- Evaluate date-time range -->
+        <condition date-time="2024-11-22 10:00**~**2024-11-22 14:00">
+            <Say>The current time is within the specified range.</Say>
+        </condition>
+    </Response>
+    ```
+
+    15. `date-time`: date-time range with seconds
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+        <condition date_time="2024-11-22 14:00:00**~**2024-11-22 16:00:00">
+            <Say>The date-time is within the specified range. Proceeding with the action.</Say>
+            <Dial>
+                <Number>+123456789</Number>
+            </Dial>
+        </condition>
+        <Say>The date-time is outside the specified range. Please try again later.</Say>
+    </Response>
+    ```
+
+#### Wrap-Around
+
+Time and date variables can use wrap-around to handle ranges that span across boundaries.
+It can include days, months, or years, ensuring continuous coverage even when transitioning from the end of one period to the beginning of the next.
+A wrap-around condition allows a range of time or dates to seamlessly cross a natural boundary.
+
+!!! Example "Wrap Around Condition Examples"
+    1. **Time Range (Crossing Midnight)**
+    ```xml
+    <condition time="22:00-06:00">
+    <!-- Handles times from 10 PM to 6 AM (crossing midnight) -->
+    </condition>
+    ```
+
+    2. **Month Range (Crossing Year End)**
+    ```xml
+    <condition mon="10-2">
+    <!-- From October to February -->
+    </condition>
+    ```
+
+    3. **Day Range (Crossing Week)**
+    ```xml
+    <condition day="Friday-Sunday">
+    <!-- From Friday to Sunday -->
+    </condition>
+    ```
+
+#### Blocks
+
+A **block** of time is a continuous period, such as `9:00–11:00` or `14:00–16:00`.
+**Comma-separated values** let you specify multiple such periods in one statement.
+This approach is useful for defining non-continuous time ranges within a single field.
+
+!!! Example "Example"
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+        <condition time="09:00-12:00,14:00-17:00">
+            <Say>The support system is available during this time. Connecting you to a support agent now.</Say>
+            <Dial>
+                <Number>+123456789</Number>
+            </Dial>
+        </condition>
+        <Say>The support system is currently unavailable. Please try again during our working hours: 09:00-12:00 or 14:00-17:00 GMT.</Say>
     </Response>
     ```
