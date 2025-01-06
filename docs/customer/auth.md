@@ -26,7 +26,7 @@ To enable, click **:material-plus:** next to IP Authentication:
 
 === "Basic"
 
-    + **IP**: Enter specific IPs or use CIDR notation to specify an entire subnet.<br>**FQDN can be used for Ingress-only switches.**
+    + **IP**: Enter specific IPs or use CIDR notation to specify an entire subnet.<br>**FQDN can be used for Ingress-only switches.** You can assign multiple IPs.
     + **Switch Direction**: The available options are from the perspective of the customer switch (PBX, dialer, etc), and describe how that switch interacts with the ConnexCS switch. For switches that send and receive calls from ConnexCS, there should be separate entries for each direction. Two types of switches are as follows:    
         
         :material-menu-right: This switch *receives* calls from ConnexCS. (Note: When selected, this gives the option of using the FQDN rather than the switch IP.)
@@ -52,7 +52,7 @@ To enable, click **:material-plus:** next to IP Authentication:
         :material-menu-right: **`TLS & SRTP`**: SIP is sent over TLS (over TCP), RTP is encrypted with SRTP.
         
         :material-menu-right: **`SMPP`**: SMPP, for SMS, is not currently supported.
-    + **Port**: Default = 5060. If using TLS protocol, this should be set to 5061. 
+    + **Port**: Default = 5060. If using TLS protocol, this should be set to 5061. **ConnexCS is compatible with non-standard ports**.
     + **Dial Pattern**: The default selection is the industry standard.
     + **CLI Prefix, Tech Prefix, Force From**:  Do NOT Use these fields. Use the Parameter Rewrite tab to modify numbers. 
     + **Username, and Password**: Set when sending calls out (egress switch direction) to a remote system. 

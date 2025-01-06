@@ -253,6 +253,7 @@ nav:
     - Recording: customer-portal/cp-recording.md
     - Status: customer-portal/status.md
     - Interconnect: customer-portal/interconnect.md
+    - Failover: customer-portal/failover.md
 
   - WebPhone:
     - WebPhone App: webphoneapp.md
