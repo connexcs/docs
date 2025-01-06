@@ -50,6 +50,12 @@ Using SSH Keys is necessary for any user with direct access to any servers.
 
 In all systems where keys aren't possible, you must use long, multi-symbol passwords.
 
+### Auto Detect & Block Hack Attempts
+
+At ConnexCS, our Auto Detect & Block Hack Attempts feature enhances security by automatically detecting and preventing unauthorized access.
+
+It identifies multiple failed login attempts, blocking further attempts from the source. This proactive defense mechanism safeguards sensitive data and ensures the integrity of your systems, providing robust protection against potential threats.
+
 ## Exceptions
 
 We **don't** consider the following items insecure.

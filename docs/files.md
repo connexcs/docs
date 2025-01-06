@@ -31,4 +31,9 @@ The **File** section can store a variety of files, including (but not limited to
 
 Select a file from the list and then click the trashcan button.
 
+## Auto Archival
+
+We support the automatic archival of rate cards.
+These can be downloaded in `.csv` format for convenient access and record-keeping.
+
 [texttospeech]: /misc/img/texttospeech.png "Text to Speech"
