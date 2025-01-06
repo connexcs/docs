@@ -9,6 +9,11 @@ You can organize ConnexCS **Customers** through customer cards.
 !!! question "How many customers can I add?"
     You can add unlimited customers, and we won't charge per customer, only on their individual usage.
 
+!!! Info "White-Labeling Solutions"
+    At ConnexCS Pvt. Ltd., we offer comprehensive white-labeling solutions, enabling our partners to re-brand and deliver our cutting-edge services as their own.
+    With full customization of branding, user interfaces, and features, we ensure a seamless integration into your existing offerings.
+    Our flexible platform supports easy API integration and scalable infrastructure, allowing you to provide reliable, fully branded services to your customers without the need for in-house development.
+
 ## Customer functions
 
 On the **Customers** page, you can perform several management operations.
