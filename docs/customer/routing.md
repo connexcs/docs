@@ -61,14 +61,18 @@ View and configure existing routes on the Routing tab in the Customer card. To c
   
 !!! Tip "When Profit Assurance Fails to Operate"
     Profit Assurance may appear to fail, often due to:
+    
     1. **Incorrect Billing Configurations**:
     Billing increments (e.g., 6/6, 30/6, or 60/60) play a significant role in profitability. A mismatch between the billing increments of your carrier and customer rates can lead to unexpected losses.
-    **For example**:
+    
+        **For example**:
     If you buy at 30/6 and sell at 6/6, you lose money on shorter-duration calls because of rounding discrepancies.
+    
     2. **Profit Assurance Enabled but Losses Persist**:
     Even with Profit Assurance enabled, losses may occur due to:
           + Specific call durations where rounding favors the carrier.
           + Variability in customer usage patterns that do not align with your billing increment assumptions.
+    
     3. **Misunderstanding Call Connection Logic**:
     Profit Assurance does not retroactively check call profitability during ongoing calls. If the buy rate is temporarily higher than the sell rate due to duration or rounding, calls may still connect.
 
@@ -76,36 +80,42 @@ View and configure existing routes on the Routing tab in the Customer card. To c
     + **Diagnosing the Issue**
 
     **Step 1: Analyze Breakout Reports**
+    
     Use the Breakout Report to identify calls with negative margins: 
+    
      * Navigate to **Management :material-menu-right: Reports :material-menu-right: Breakout Report**.
+     
      * Filter by destination, carrier, or time period to pinpoint unprofitable calls.
     
     **Step 2: Compare Billing Increments**
+    
     Verify the billing increments set for your carrier and customer:
+    
     * Carrier increments define how you are charged (e.g., 30/6).
+    
     * Customer increments define how you bill your customers (e.g., 6/6).
+    
     * Mismatched increments often lead to losses, especially on shorter calls.
 
     **Step 3: Review Sell and Buy Rates**
+    
     Ensure that your sell rates are consistently higher than your buy rates:
-    + Check rate sheets for discrepancies.
-    + Adjust rates to maintain a positive margin.
-
-    4. **Resolving the Issue**
     
-    a. Adjust Configuration
-    + Align carrier and customer billing increments to minimize rounding discrepancies.
-    + Update rate sheets to ensure sell rates always exceed buy rates.
-    
-        
-    b. Enable Profit Assurance (if not already enabled)
-    
-    + This will block calls where the sell rate is lower than the buy rate.
+      + Check rate sheets for discrepancies.
+      + Adjust rates to maintain a positive margin.
 
-    c. Identify and Address Specific Calls
-
-    + Locate specific calls causing losses using the Breakout Report.
-    + Analyze their durations and verify if the billing increments contributed to the issue.
+    * **Resolving the Issue**
+    
+        a. **Adjust Configuration**:
+        + Align carrier and customer billing increments to minimize rounding discrepancies.
+        + Update rate sheets to ensure sell rates always exceed buy rates.
+  
+        b. Enable Profit Assurance (if not already enabled)
+        + This will block calls where the sell rate is lower than the buy rate.
+  
+        c. Identify and Address Specific Calls
+        +   Locate specific calls causing losses using the Breakout Report.
+        +  Analyze their durations and verify if the billing increments contributed to the issue.
 
 + **Block Connect Cost**: Block any call that has a connection fee.
 
@@ -312,9 +322,9 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 
 + **Call Recording**: This allows you to record and store calls, which are then found in:
 
-  * **Logging**
-  * **Management:material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: CDR**
-  * **Management :material-menu-right: File :material-menu-right: Recording**
+    * **Logging**
+    * **Management:material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: CDR**
+    * **Management :material-menu-right: File :material-menu-right: Recording**
   
 !!! Info
     An extra charge per recorded call of **$0.003** gets added to existing fees or charges, so choose carefully how many calls to record:
