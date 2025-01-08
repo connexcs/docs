@@ -79,6 +79,7 @@ Routing Tag helps you strategize the Routing options for your customer. You can 
     **A. Profit Assurance may appear to fail, often due to:**
 
     1.**Incorrect Billing Configurations**:
+    
     Billing increments (e.g., 6/6, 30/6, or 60/60) play a significant role in profitability. A mismatch between the billing increments of your carrier and customer rates can lead to unexpected losses.
     
     **For example**:
@@ -128,7 +129,9 @@ Routing Tag helps you strategize the Routing options for your customer. You can 
     **C. Resolving the Issue**
     
     a. Adjust Configuration:
+    
     * Align carrier and customer billing increments to minimize rounding discrepancies.
+    
     * Update rate sheets to ensure sell rates always exceed buy rates.
   
     b. Enable Profit Assurance (if not already enabled):
