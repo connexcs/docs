@@ -75,7 +75,7 @@ Routing Tag helps you strategize the Routing options for your customer. You can 
 2. **Profit Assurance**: When Enabled, only calls that are profitable pass-through; any call that costs more than the retail rate aren't allowed to complete. This is particularly useful for A-Z routes or NPA-NXX rate cards.
 
 !!! Tip "When Profit Assurance Fails to Operate"
-    Profit Assurance may appear to fail, often due to:
+    A. Profit Assurance may appear to fail, often due to:
 
     1.**Incorrect Billing Configurations**:
     Billing increments (e.g., 6/6, 30/6, or 60/60) play a significant role in profitability. A mismatch between the billing increments of your carrier and customer rates can lead to unexpected losses.
@@ -95,7 +95,7 @@ Routing Tag helps you strategize the Routing options for your customer. You can 
     Profit Assurance does not retroactively check call profitability during ongoing calls. If the buy rate is temporarily higher than the sell rate due to duration or rounding, calls may still connect.
 
 
-    * **Diagnosing the Issue**
+    B) **Diagnosing the Issue**
 
         **Step 1: Analyze Breakout Reports**
     
@@ -124,7 +124,7 @@ Routing Tag helps you strategize the Routing options for your customer. You can 
        + Adjust rates to maintain a positive margin.
 
 
-    * **Resolving the Issue**
+    C) **Resolving the Issue**
     
         a. **Adjust Configuration**:
         
