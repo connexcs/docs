@@ -65,7 +65,7 @@ View and configure existing routes on the Routing tab in the Customer card. To c
     1.**Incorrect Billing Configurations**:
     Billing increments (e.g., 6/6, 30/6, or 60/60) play a significant role in profitability. A mismatch between the billing increments of your carrier and customer rates can lead to unexpected losses.
     
-        **For example**:
+    **For example**:
         If you buy at 30/6 and sell at 6/6, you lose money on shorter-duration calls because of rounding discrepancies.
     
     2.**Profit Assurance Enabled but Losses Persist**:
