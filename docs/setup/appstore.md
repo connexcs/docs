@@ -63,3 +63,23 @@ Before using the app, ensure that the [**Spam Score package**](https://docs.conn
 9. Send the `Spam Score Report`.
 10. After clicking the Spam Score button, you will be prompted to enter the **email address** to which the DID spam report will be sent.
 11. Enter the desired email address and click `Spam Scout`. <img src= "/apps/img/fli3.png" width= "400">
+
+### Autonomous Calling
+
+#### **Overview**
+
+This application allows autonomous dialling of numbers from an uploaded list.
+
+#### Steps to Use the App
+
+1. Setup Email that will be used as API user.
+2. Navigate to **IDE :material-menu-right: DID Spam Score App :material-menu-right: Environmental Variables**.
+3. Locate the `cx_api_user`variable. <img src= "/apps/img/fli.png" width= "800">
+4. Enter the email address you use to login in value.<img src= "/apps/img/fli1.png" width= "400">
+5. Select **DIDs** for **Spam Score Check**.
+6. Navigate to **Global :material-menu-right: DID**.
+7. Select the DIDs you want to check.
+8. Once selected, click on the `Spam Score button` at the top of the page.<img src= "/apps/img/fli2.png" width= "800">
+9. Send the `Spam Score Report`.
+10. After clicking the Spam Score button, you will be prompted to enter the **email address** to which the DID spam report will be sent.
+11. Enter the desired email address and click `Spam Scout`. <img src= "/apps/img/fli3.png" width= "400">
