@@ -61,20 +61,22 @@ View and configure existing routes on the Routing tab in the Customer card. To c
   
 !!! Tip "When Profit Assurance Fails to Operate"
     Profit Assurance may appear to fail, often due to:
-    
+
     1. **Incorrect Billing Configurations**:
     Billing increments (e.g., 6/6, 30/6, or 60/60) play a significant role in profitability. A mismatch between the billing increments of your carrier and customer rates can lead to unexpected losses.
     
-        **For example**:
+    **For example**:
     If you buy at 30/6 and sell at 6/6, you lose money on shorter-duration calls because of rounding discrepancies.
     
     2. **Profit Assurance Enabled but Losses Persist**:
-    Even with Profit Assurance enabled, losses may occur due to:
-          + Specific call durations where rounding favors the carrier.
-          + Variability in customer usage patterns that do not align with your billing increment assumptions.
+        
+        Even with Profit Assurance enabled, losses may occur due to:
+        * Specific call durations where rounding favors the carrier.
+        * Variability in customer usage patterns that do not align with your billing increment assumptions.
     
     3. **Misunderstanding Call Connection Logic**:
-    Profit Assurance does not retroactively check call profitability during ongoing calls. If the buy rate is temporarily higher than the sell rate due to duration or rounding, calls may still connect.
+    
+        Profit Assurance does not retroactively check call profitability during ongoing calls. If the buy rate is temporarily higher than the sell rate due to duration or rounding, calls may still connect.
 
 
     + **Diagnosing the Issue**
@@ -104,17 +106,20 @@ View and configure existing routes on the Routing tab in the Customer card. To c
       + Check rate sheets for discrepancies.
       + Adjust rates to maintain a positive margin.
 
+
     * **Resolving the Issue**
     
         a. **Adjust Configuration**:
+        
         + Align carrier and customer billing increments to minimize rounding discrepancies.
         + Update rate sheets to ensure sell rates always exceed buy rates.
   
         b. Enable Profit Assurance (if not already enabled)
+        
         + This will block calls where the sell rate is lower than the buy rate.
   
         c. Identify and Address Specific CallsLocate specific calls causing losses using the Breakout Report.
-    + Analyze their durations and verify if the billing increments contributed to the issue.
+        + Analyze their durations and verify if the billing increments contributed to the issue.
 
 + **Block Connect Cost**: Block any call that has a connection fee.
 
