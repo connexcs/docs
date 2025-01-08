@@ -60,7 +60,7 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 + **Profit Assurance**: When `Enabled`, only calls that are profitable pass-through; any call that costs more than the retail rate aren't allowed to complete. This is particularly useful for A-Z routes or NPA-NXX [rate cards](https://docs.connexcs.com/rate-card-building/).
   
 !!! Tip "When Profit Assurance Fails to Operate"
-    A. Profit Assurance may appear to fail, often due to:
+    **A. Profit Assurance may appear to fail, often due to:**
 
     1.**Incorrect Billing Configurations**:
     Billing increments (e.g., 6/6, 30/6, or 60/60) play a significant role in profitability. A mismatch between the billing increments of your carrier and customer rates can lead to unexpected losses.
@@ -80,19 +80,19 @@ View and configure existing routes on the Routing tab in the Customer card. To c
     Profit Assurance does not retroactively check call profitability during ongoing calls. If the buy rate is temporarily higher than the sell rate due to duration or rounding, calls may still connect.
 
 
-    B) **Diagnosing the Issue**
+    **B. Diagnosing the Issue**
 
-        **Step 1: Analyze Breakout Reports**
+    **Step 1: Analyze Breakout Reports**
     
-        Use the Breakout Report to identify calls with negative margins: 
+    Use the Breakout Report to identify calls with negative margins: 
     
        * Navigate to **Management :material-menu-right: Reports :material-menu-right: Breakout Report**.
      
        * Filter by destination, carrier, or time period to pinpoint unprofitable calls.
     
-        **Step 2: Compare Billing Increments**
+    **Step 2: Compare Billing Increments**
     
-        Verify the billing increments set for your carrier and customer:
+    Verify the billing increments set for your carrier and customer:
     
       * Carrier increments define how you are charged (e.g., 30/6).
     
@@ -100,29 +100,28 @@ View and configure existing routes on the Routing tab in the Customer card. To c
     
       * Mismatched increments often lead to losses, especially on shorter calls.
 
-       **Step 3: Review Sell and Buy Rates**:
+    **Step 3: Review Sell and Buy Rates**:
        
-       Ensure that your sell rates are consistently higher than your buy rates:
+    Ensure that your sell rates are consistently higher than your buy rates:
        
        + Check rate sheets for discrepancies.
        
        + Adjust rates to maintain a positive margin.
 
 
-    C) **Resolving the Issue**
+    **C. Resolving the Issue**
     
-        a. **Adjust Configuration**:
-        
-        + Align carrier and customer billing increments to minimize rounding discrepancies.
-        + Update rate sheets to ensure sell rates always exceed buy rates.
+    a. Adjust Configuration:
+    * Align carrier and customer billing increments to minimize rounding discrepancies.
+    * Update rate sheets to ensure sell rates always exceed buy rates.
   
-        b. Enable Profit Assurance (if not already enabled)
+    b. Enable Profit Assurance (if not already enabled):
         
-        + This will block calls where the sell rate is lower than the buy rate.
+    + This will block calls where the sell rate is lower than the buy rate.
   
-        c. Identify and Address Specific CallsLocate specific calls causing losses using the Breakout Report.
+    c. Identify and Address specific calls causing losses using the Breakout Report:
         
-        + Analyze their durations and verify if the billing increments contributed to the issue.
+    + Analyze their durations and verify if the billing increments contributed to the issue.
 
 + **Block Connect Cost**: Block any call that has a connection fee.
 
