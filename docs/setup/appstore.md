@@ -98,8 +98,9 @@ Instead of manually dialing a phone number, users or systems can trigger a call 
 #### Steps to Use the App
 
 1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: Click-2-Dial** and click `Install`.<img src= "/apps/img/cd1.png" width= "900>
+
 2. A window will appear, select the version of the app and hit `Install` again. <img src= "/apps/img/cd2.png">
-3. In the `Installed Versions` tab click `Config`. <img src= "/apps/img/cd3.png" width= "500">
+3. In the `Installed Versions` tab click `Config`. <img src= "/apps/img/cd3.png" width= "300">
 4. A window will open, prompting you to enter the following details:
       + Select the `Customer` for the drop-down.
       + Enter the `API Key`. It acts as a gate-keeper in maintaining the security, reliability, and integrity of API-based interactions. API Keys are generated randomly for each customer as soon as you press `+Add`.
