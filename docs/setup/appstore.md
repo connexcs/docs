@@ -99,9 +99,9 @@ Instead of manually dialing a phone number, users or systems can trigger a call 
 
 1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: Click-2-Dial** and click `Install`.<img src= "/apps/img/cd1.png" width= "900">
 
-2. A window will appear, select the version of the app and hit `Install` again. <img src= "/apps/img/cd2.png">
+2. A window will appear, select the version of the app and hit `Install` again. <img src= "/apps/img/cd2.png" width= "400">
 
-3. In the `Installed Versions` tab click `Config`.<img src= "/apps/img/cd3.png" width= "400">
+3. In the `Installed Versions` tab click `Config`.<img src= "/apps/img/cd3.png" width= "300">
 
 4. A window will open, prompting you to enter the following details:
       + Select the `Customer` for the drop-down.
