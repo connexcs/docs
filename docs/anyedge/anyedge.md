@@ -8,6 +8,10 @@ It's a next-generation solution for the Edge Session Initiation Protocol (SIP).
 
 It provides high-reliability and custom Call Distribution algorithms (Weights and Priorities).
 
+Each customer benefits from a unique, dedicated IP address through AnyEdge
+
+Calls are routed to the nearest AnyEdge server for optimal performance and reduced latency.
+
 ## AnyEdge Setup
 
 ### Configure AnyEdge
