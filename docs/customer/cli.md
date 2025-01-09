@@ -80,6 +80,9 @@ The **P-Asserted-ID** manipulation uses the same syntax as the Replace CLI.
 
 + **Dialed Number Match**: To route to a specific CLI, you dialled match number.
 
+    !!! Note "CLI per Route"
+        If a `Tech Prefix` is specified in Routing (Ingress Routing :material-menu-right: Basic :material-menu-right: Tech Prefix) and the same `Tech Prefix` is added to the `Dialed Number Match` (using the ^ (caret sign)), the corresponding CLI rule will be applied to that specific route.
+
 + **Notes**: Notes give you information about the CLI.
 
 + **STIR / SHAKEN Certificate:** If you apply any STIR / SHAKEN Certificate to a customer's account for calls verification, for example, whether the calls are spam.

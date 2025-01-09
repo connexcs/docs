@@ -72,14 +72,36 @@ This application allows autonomous dialling of numbers from an uploaded list.
 
 #### Steps to Use the App
 
-1. Setup Email that will be used as API user.
-2. Navigate to **IDE :material-menu-right: DID Spam Score App :material-menu-right: Environmental Variables**.
-3. Locate the `cx_api_user`variable. <img src= "/apps/img/fli.png" width= "800">
-4. Enter the email address you use to login in value.<img src= "/apps/img/fli1.png" width= "400">
-5. Select **DIDs** for **Spam Score Check**.
-6. Navigate to **Global :material-menu-right: DID**.
-7. Select the DIDs you want to check.
-8. Once selected, click on the `Spam Score button` at the top of the page.<img src= "/apps/img/fli2.png" width= "800">
-9. Send the `Spam Score Report`.
-10. After clicking the Spam Score button, you will be prompted to enter the **email address** to which the DID spam report will be sent.
-11. Enter the desired email address and click `Spam Scout`. <img src= "/apps/img/fli3.png" width= "400">
+1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: Autonomous Calling** and click `Install`.<img src= "/apps/img/ac1.png">
+2. A window will appear, select the version of the app and hit `Install` again. <img src= "/apps/img/ac2.png">
+3. After refreshing the Control Panel, the `Auto Dial` button will appear on the side bar.
+4. Click `Auto Dial`, then `Config` to setup the calling process.
+   + Select the `Customer` for the drop-down.
+   + Enter the `Outbound Server` in use.
+   + Enter the extension in the `Endpoint` field.
+   + Enter the `CLI` and click `Confirm`.<img src= "/apps/img/ac3.png">
+5. Click on `Set Numbers` to add the number list for the autonomous dialing process. Click on `Save Numbers`. <img src= "/apps/img/ac4.png">
+6. Hit the `Start` button to dial the numbers automatically. `.<img src= "/apps/img/ac5.png">
+
+!!! Note "Important Note"
+    1. Ensure that all phone numbers are entered in the complete international format (e.g., +44 for the UK, +1 for the US).
+    2. When entering multiple phone numbers, list each number on a new line.
+
+### Click-2-Dial (Programmatic API Calling)
+
+#### **Overview**
+
+**Click-to-Dial API** enables applications, websites, or software systems to initiate phone calls with a single click or programmatic command.
+
+Instead of manually dialing a phone number, users or systems can trigger a call directly from an interface, making the process faster, more efficient, and less error-prone.
+
+#### Steps to Use the App
+
+1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: Click-2-Dial** and click `Install`.<img src= "/apps/img/cd1.png">
+2. A window will appear, select the version of the app and hit `Install` again. <img src= "/apps/img/cd2.png">
+3. In the `Installed Versions` tab click `Config`. <img src= "/apps/img/cd3.png">
+4. A window will open, prompting you to enter the following details:
+   + Select the `Customer` for the drop-down.
+   + Enter the `API Key`. It acts as a gate-keeper in maintaining the security, reliability, and integrity of API-based interactions. API Keys are generated randomly for each customer as soon as you press `+Add`.
+   + Enter the `Extension`. It specifies the number you are using to initiate the call.<img src= "/apps/img/cd4.png">
+   + Click `Save`.
