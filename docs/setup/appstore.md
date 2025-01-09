@@ -62,7 +62,7 @@ Before using the app, ensure that the [**Spam Score package**](https://docs.conn
 8. Once selected, click on the `Spam Score button` at the top of the page.<img src= "/apps/img/fli2.png" width= "800">
 9. Send the `Spam Score Report`.
 10. After clicking the Spam Score button, you will be prompted to enter the **email address** to which the DID spam report will be sent.
-11. Enter the desired email address and click `Spam Scout`. <img src= "/apps/img/fli3.png" width= "400">
+11. Enter the desired email address and click `Spam Scout`. <img src= "/apps/img/fli3.png" width= "600">
 
 ### Autonomous Calling
 
@@ -73,14 +73,14 @@ This application allows autonomous dialling of numbers from an uploaded list.
 #### Steps to Use the App
 
 1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: Autonomous Calling** and click `Install`.<img src= "/apps/img/ac1.png">
-2. A window will appear, select the version of the app and hit `Install` again. <img src= "/apps/img/ac2.png" width= "600">
+2. A window will appear, select the version of the app and hit `Install` again. <img src= "/apps/img/ac2.png" width= "400">
 3. After refreshing the Control Panel, the `Auto Dial` button will appear on the side bar.
 4. Click `Auto Dial`, then `Config` to setup the calling process.
       + Select the `Customer` for the drop-down.
       + Enter the `Outbound Server` in use.
       + Enter the extension in the `Endpoint` field.
       + Enter the `CLI` and click `Confirm`.<img src= "/apps/img/ac3.png">
-5. Click on `Set Numbers` to add the number list for the autonomous dialing process. Click on `Save Numbers`. <img src= "/apps/img/ac4.png">
+5. Click on `Set Numbers` to add the number list for the autonomous dialing process. Click on `Save Numbers`. <img src= "/apps/img/ac4.png" widht= "600">
 6. Hit the `Start` button to dial the numbers automatically. `.<img src= "/apps/img/ac5.png">
 
 !!! Note "Important Note"
@@ -98,7 +98,7 @@ Instead of manually dialing a phone number, users or systems can trigger a call 
 #### Steps to Use the App
 
 1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: Click-2-Dial** and click `Install`.<img src= "/apps/img/cd1.png" width= "900>
-2. A window will appear, select the version of the app and hit `Install` again. <img src= "/apps/img/cd2.png" width= "600">
+2. A window will appear, select the version of the app and hit `Install` again. <img src= "/apps/img/cd2.png">
 3. In the `Installed Versions` tab click `Config`. <img src= "/apps/img/cd3.png" width= "500">
 4. A window will open, prompting you to enter the following details:
       + Select the `Customer` for the drop-down.
