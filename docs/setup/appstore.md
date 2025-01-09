@@ -97,7 +97,7 @@ Instead of manually dialing a phone number, users or systems can trigger a call 
 
 #### Steps to Use the App
 
-1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: Click-2-Dial** and click `Install`.<img src= "/apps/img/cd1.png" width= "900>
+1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: Click-2-Dial** and click `Install`.<img src= "/apps/img/cd1.png" width= "900">
 
 2. A window will appear, select the version of the app and hit `Install` again. <img src= "/apps/img/cd2.png">
 
