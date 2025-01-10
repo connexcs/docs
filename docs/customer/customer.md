@@ -2,14 +2,34 @@
 
 **Management :material-menu-right: Customer**
 
+## Platform Intelligence
+
+Before setting up your customers, let's take a moment to understand the powerful intelligence built into the ConnexCS platform.
+
+ConnexCS stands out as an intelligent platform in the telecommunications domain through the integration of several sophisticated features.
+
+At the core lies **[ASR+](https://docs.connexcs.com/customer/routing/#answer-seizure-ratio-plus-details)**, a technology that continuously analyzes call data to identify and filter out known bad numbers.
+By learning from real-time call outcomes, ASR+ proactively prevents calls to unreachable destinations, minimizing wasted resources and significantly improving call success rates.
+
+[ConnexCS AnyEdge](https://docs.connexcs.com/anyedge/anyedge/) acts as a **high-performance load balancer and traffic dispatcher**. This intelligent component distributes traffic seamlessly across multiple SIP servers, ensuring optimal resource utilization and minimizing latency.
+AnyEdge also offers customizable call distribution rules, allowing businesses to prioritize critical calls and optimize routing for specific customer segments. 
+
+ConnexCS incorporates **[Spam Scout Scoring](https://docs.connexcs.com/guides/spam-callsblock/#64-using-spam-scout-scoring)**. This feature leverages machine learning to analyze caller IDs (CLIs) and categorize calls based on their spam risk level. By providing options to block or prioritize calls based on their spam score, Spam Scout effectively reduces the impact of spam calls on network resources and enhances the user experience.
+
+Complementing Spam Scout is **[IPQS](https://www.ipqualityscore.com/)**, which blocks calls originating from IP addresses known to be associated with spam activity. This adds another layer of defense, ensuring a cleaner and more secure network environment.
+
+By proactively managing traffic, enhancing call quality, and improving network security, ConnexCS empowers businesses to optimize their telecommunications operations, reduce costs, and deliver a superior customer experience.
+
+The combination of intelligent capabilities positions ConnexCS as a leading-edge solution in the telecommunications industry, providing businesses with a competitive advantage in today's dynamic market.
+
+## Customer functions
+
 You can organize ConnexCS **Customers** through customer cards.
 
 ![alt text][customers]
 
 !!! question "How many customers can I add?"
     You can add unlimited customers, and we won't charge per customer, only on their individual usage.
-
-## Customer functions
 
 On the **Customers** page, you can perform several management operations.
 
