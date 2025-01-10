@@ -276,5 +276,5 @@ You can access and view background jobs running through Script Forge, since Scri
         }
     ```
 
-1. You can view the jobs under Global :material-menu-right: Queue. <img src= "/apps/img/job1.png" width= "400">
-2. Click on the job `Name`  to view the status or add a new job. <img src= "/apps/img/job2.png" width= "400">
+1. You can view the jobs under Global :material-menu-right: Queue. <img src= "/apps/img/job1.png">
+2. Click on the job `Name`  to view the status or add a new job. <img src= "/apps/img/job2.png" width= "200">
