@@ -37,6 +37,6 @@ Complete the following steps before configuring the IVR.
          For example, someone's mobile).
 
     :material-menu-right: `Internal`: A number or resource on the ConnexCS platform.
-        For example, extension numbers, IVRs, conference bridges, and groups).
+        For example, extension numbers, IVRs, conference bridges, and groups.
 
 [ivr]: /class5/img/ivr.png "IVR Setup"

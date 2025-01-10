@@ -15,6 +15,7 @@ You can provide several domains for your customers through different brands, and
 2. Locate the page for updating your domain's DNS (Domain Name System) records.
 
     You can refer the page to as DNS Management, Name Server Management, or Advanced Settings.
+
 3. Locate the `CNAME` records for your domain.
 
 4. Add a new domain record (such as `portal.yourdomain.com`, where `yourdomain.com` is the domain that you own).

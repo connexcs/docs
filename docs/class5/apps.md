@@ -23,3 +23,7 @@ To create a new App:
 ## Advanced Applications
 
 To configure more complex applications, ConnexCS offers Class5 **[Programmable Voice](https://docs.connexcs.com/developers/scriptforge/#class-5-programmable-voice)** which allows you to build comprehensive applications using JavaScript.
+
+## Class 5 Auto Add DNC for callback on IVR
+
+In a Class 5 setup, you can configure an endpoint to redirect incoming calls to an IVR, where the caller can be added to the Do Not Call (DNC) list automatically.
