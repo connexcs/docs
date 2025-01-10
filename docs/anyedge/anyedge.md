@@ -8,6 +8,10 @@ It's a next-generation solution for the Edge Session Initiation Protocol (SIP).
 
 It provides high-reliability and custom Call Distribution algorithms (Weights and Priorities).
 
+!!! Info "Global Redundancy"
+    Global redundancy in AnyEdge ensures high availability by distributing traffic across multiple edge servers located in different geographical regions.
+    This minimizes downtime and provides seamless service continuity even during outages or failures in any single location.
+
 ## AnyEdge Setup
 
 ### Configure AnyEdge
