@@ -87,8 +87,20 @@ nav:
         - Tags: customer/tags.md
         - Circuit Test: circuit-test.md
 
-    - Carrier: carrier.md
-        
+    - Carrier: 
+        - Carrier Overview: carrier.md
+        - Main: carrier/carrier-main.md
+        - Reply Management: carier/carrier-reply-management.md
+        - Auth: carrier/carrier-auth.md 
+        - Failover: carrier/failover.md
+        - Latest Calls: carrier/latest-calls.md
+        - Payment: carrier/payment.md
+        - Stats: carrier/stats.md
+        - Alerts: carrier/alerts.md
+        - DID: carrier/did.md
+        - DID Inventory: carrier/did-inventory.md
+        - CDR: carrier/cdr.md
+    
     - Rate Cards:
         - Rate Card Overview: rate-card-building.md
         - Provider Rate Card: provider-ratecard.md

@@ -102,8 +102,8 @@ The AI agents seamlessly integrate into the ConnexCS platform, enabling business
 <img src= "/class5/img/ai2.png">
 5. Fill in the following fields to setup your AI model:
     + **Name**: Give a name to your AI Agent.
-    + **App**: Select the [Application](https://docs.connexcs.com/apps/architecture/app/) you want to run your AI model.
-    + **Company**: Select your customer you want to apply the AI model for.
+    + **App**: Associate the AI model with the [Application](https://docs.connexcs.com/apps/architecture/app/) in the IDE. Its done using the ScriptForge, for example, the AI model can call a function from the ScriptForge when these two are associated.
+    + **Company**: Associate the AI model with a company.
     + **Destination**: Enter the Extension for the callers to call (essentially, the dial-in number).
     + **Platform**: Use either **OpenAI**, **ConnexCS Converse** or **ConnexCS Converse Direct** to model the AI Agent.
     + **Model**: Select a model for the selected platform. A model is a specific version or configuration of an AI system to perform tasks like text generation, real-time interactions etc.
@@ -111,16 +111,26 @@ The AI agents seamlessly integrate into the ConnexCS platform, enabling business
     !!! Info
         Different Platforms offer specific Models suited to their capabilities.
 
-    + **Transcriber**: Select the transcriber service to convert spoken words to text. You can select from either **OpenAI** or **ConnexCS Internal** depending on the selected platform.
-    + **Text To Speech(TTS)**: Select from various TTS models to convert your text into audio. You can select from either **Google**, **Rime AI**, **Neets**, or **Azure** depending on the selected platform.
-    + **Voice**: Select the voice for the test-to-speech service.
-    + **Temperature**: Refers to a parameter that controls the randomness (variability or unpredictability) of the model's output.
+    + **Transcriber**: Select the transcriber service to convert spoken words to text. You can select the transcriber depending on the selected platform.
+    + **Text To Speech(TTS)**: Select from various TTS models to convert your text into audio. You can select the transcriber depending on the selected platform.
+    + **Voice**: Select the voice for the text-to-speech service.
+    + **Temperature**: Refers to a parameter that controls the creativity of the model's output.
         + **Low temperature (close to 0)** makes the model's responses more predictable by selecting the most probable words.
         + **High temperature (closer to 1 or above)** increases randomness, leading to more diverse and creative but potentially less coherent responses.
     + **First Message**: The initial message spoken by the agent. For example, when the agent begins the conversation.
+    + **Interrupt Delay (sec)**: Refers to the latency or time taken by the model to halt its current operation or response generation when interrupted by a user or system signal.
+    + **Min Filler Delay (sec)**: If the AI model fails to respond within the designated time-frame, the system will automatically utilize the predefined filler words to maintain communication with the customer.
+    + **Office Background Volume**: This feature enables the playback of background office sounds, creating a more authentic experience, as if the person is operating from a call center environment.
+    + **Filler Words**: Select multiple filler words.
+    + **Guard Rails**: These are mechanisms or strategies designed to ensure the safe, reliable, and ethical use of models. These measures help steer the model’s behavior, preventing misuse, reducing errors, and ensuring its outputs align with specific requirements or constraints.
+    + **LLM Timeout (sec)**: Refers to the predefined time-frame during which an LLM is granted permission to process a request, or the number of attempts the LLM makes in performing back-end tasks.
+    + **LLM Retries**: Refers to the predefined time-frame during which an LLM is granted permission to process a request, or the number of attempts the LLM makes in performing back-end tasks.
+    + **Flags**: Select from various flags:
+        + **LLM Failover**: If one LLM Model fails, it will failover to another LLM.
+        + **Disable ScriptForge**: Disables Scriptforge completely.
     + **Built-in Functions**:
         + **Hangup**: Use this flag to terminate the call. You can include a prompt such as, "When call ended, hangup.
-        + **Set Variable**: Used to store values. For example, in a prompt, you could ask, "What's your name?" and save the response to the variable `name`.
+        + **Set Variable**: Set variables locally. For example, in a prompt, you could ask, "What's your name?" and save the response to the variable `name`.
     + **End Call Phrases**: Phrases or messages used to conclude a call or interaction with a customer.
     + **Prompt**: The prompt field allows you to enter the set of instructions to guide the AI model to perform certain tasks. It provides as the foundation for the AI to comprehend the context, interpret the user's purpose, and generate relevant results.
     + Click `Save`.
@@ -142,26 +152,18 @@ The AI agents seamlessly integrate into the ConnexCS platform, enabling business
     
     Ava's overarching mission is to enhance the human aspect of customer support through comprehensive scenario-based training. She's not merely an answer machine but a sophisticated platform designed to foster the development of knowledgeable, empathetic, and adaptable customer support professionals.
 
+!!! Tip "Note: You have NOT YET collected any customer information, ignore any pre-set variables"
+    Add this in the prompt to tell your LLM that no customer information has been gathered so far, and any variables or configurations that might have been pre-set should be disregarded at this stage. This ensures that the process begins with a clean slsate, without relying on or being influenced by previously defined or assumed data.  
+
 ### AI Platforms, Models, Voices, TTS, Transcribers
 
 |Platform|Model|Transcriber|Text To Speech (TTS)|Voice|
 |--------|-----|-----------|--------------------|-----|
 |**OpenAI**|GPT 4o, GPT 4o Mini, GPT 4o Realtime|OpenAI|Google|
 |**ConnexCS Converse**|Gemma 2 9bn, Gemma 7bn, Lamma 3 Tools 70bn, Lamma 3 Tools 8bn, Lamma 3.1 Tools 70bn, Lamma 3.1 Tools 8bn, Mixtral 8x7bn||Rime AI, Neets, Azure|Select from multiple options|
-|**ConnexCS Converse Direct**|LLamma, Phi3|ConnexCS Internal|Google|
+|**ConnexCS Converse Direct**|Select from the multiple options|ConnexCS Internal|Google|
 
-|Model|Description (based on required output)|
-|-----|-----------|
-|**GPT 4o**|For deep, detailed, and complex interactions. Supports ScriptForge|
-|**GPT 4o Mini**|For faster responses with efficiency in mind|
-|**GPT 4o Real-time**|For instant interactions where low latency is critical|
-|**Gemma 2 9bn**| Strong performance in tasks like text generation, translation, and summarization|
-|**Gemma 2 7bn**|Excels in areas like creative text generation, translation, and code generation|
-|**Lamma 3 Tools 8b**|Complex reasoning, instruction following, multilingual capabilities, contextual understanding, and knowledge base integration. Supports ScriptForge|
-|**Lamma 3.1 Tools 70bn**| Offers improved reasoning, factual accuracy, context understanding, and multilingual capabilities over its predecessor, Llama 3 7B. Supports ScriptForge|
-|**Mixtral 8x7bn**|Natural Language Processing (NLP), Data Analysis, Code Generation, Multi Modal (text, images, or audio)|
-|**Llama**|Llama boasts a 128k token context window, ethical alignment, text-in, text-out interaction, strong logical reasoning, and multilingual capabilities|
-|**Phi3**|Excel in language understanding, reasoning, coding, and math, outperforming larger models in these areas, and offer multimodal capabilities|
+!!! Note "While accessing the **ConnexCS Converse Direct** Platform, you will notice that models in the drop-down menu are labeled with **"(Tools)"**. Selecting a model without the (Tools) designation will prevent you from accessing **ScriptForge** and performing behind-the-scenes tasks."
 
 |Transcriber|Description|
 |-----------|-----------|
@@ -174,6 +176,8 @@ The AI agents seamlessly integrate into the ConnexCS platform, enabling business
 |**Rime AI**|Focuses on emotional expressiveness and real-time interaction, suitable for conversational agents|
 |**Neets**|Offers a simpler, cost-effective solution for basic TTS needs with limited features|
 |**Azure**| It stands out for its extensive language and voice options, enterprise-grade security, and advanced customization capabilities|
+|**Aura**|Delivers high-quality text-to-speech conversions with advanced customization options|
+|**Edge TTS**|Offers low-latency, real-time text-to-speech processing for seamless communication|
 
 ## How to use Functions for the Large Language Models (LLMs)?
 
@@ -268,5 +272,7 @@ The AI agents seamlessly integrate into the ConnexCS platform, enabling business
      
      +  LLM will exactly know how to interact with the code (Scriptforge).
 
-    !!! Tip
-        The function description must be brief, sharp, and accurate. Expanding it unnecessarily may create significant risks.
+    !!! Tip "The function description must be brief, sharp, and accurate. Expanding it unnecessarily may create significant risks."
+
+!!! Tip "Unlock Reseller Potential with Our AI Agent"
+    Our AI Agent comes equipped with robust reseller capabilities. For instance, if you’ve created and assigned a package to a customer, you can associate their company with the AI model. Once this connection is in place, charges for using the AI model are automatically deducted. With the package already linked to your customer, managing reselling becomes effortless and efficient.
