@@ -1,12 +1,12 @@
 # Main
 
-**Management :material-menu-right: Carrier**
+**Management :material-menu-right: Carrier :material-menu-right: Main**
 
 ## Configure Carrier
 
 To configure a **Carrier**, select the Carrier from the list, then configure the following areas:
 
-![alt text][carrier]
+<img src= "/carrier/img/carriermain.png">
 
 + **Contacts**: Helpful for keeping track of Support contacts for individual carriers.
 + **Rates Grid**: Associated rate cards for this provider. See [**Provider Rate Cards**](https://docs.connexcs.com/provider-ratecard/) for configuration.

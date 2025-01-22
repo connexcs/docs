@@ -1,5 +1,9 @@
 # Auth
 
+**Management :material-menu-right: Carrier :material-menu-right: Auth**
+
+<img src= "/carrier/img/carrierauth.png">
+
 1. Carrier **IP Authentication**: This uses IP addresses to allow or disallow attempts to access service.
    To add authorized IP address(es), click :material-plus: on the right. These fields are the same as in [**Customer Auth**](https://docs.connexcs.com/customer/auth/) except that they pertain to Carriers. The only exceptions are:
 
