@@ -506,7 +506,7 @@ An existing call is transferred to a different destination using the `Dial` ver
             </Dial>
         </Response>
         ```
-        Send updates about the call's lifecycle (initiated, ringing, answered, and completed) to the callback URL http://fr1js1.connexcs.net:3002 via HTTP POST requests.
+        Send updates about the call's lifecycle (initiated, ringing, answered, and completed) to the callback URL via HTTP POST requests.
     
     16. **Queue music**
         ``` xml
