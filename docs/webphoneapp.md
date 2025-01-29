@@ -13,6 +13,8 @@ Customers can make calls over the internet with the ConnexCS WebPhone App (softp
 
 This cross-platform application is ideal for call centers and similar deployments. It works with Windows, Mac, Android, iOS, and other operating systems.
 
+The ConnexCS WebPhone is fully compatible with smartphones, ensuring seamless usability across mobile devices.
+
 ## Technical Details
 
 ### Application

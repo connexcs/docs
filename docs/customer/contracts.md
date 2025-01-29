@@ -2,7 +2,9 @@
 
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Contract**
 
-The **Contracts** section lists contracts associated with the customer. **Contracts** are useful when you want new customers to agree to certain conditions before they can dial. Click on each name to view the details.
+The **Contracts** section lists contracts associated with the customer.
+
+**Contracts** are useful when you want new customers to agree to certain conditions before they can dial. Click on each name to view the details.
 
 ## Assign Contracts
 
@@ -20,5 +22,7 @@ The **Contracts** section lists contracts associated with the customer. **Contra
     For details on Contract setup, see **Setup :material-menu-right: Config :material-menu-right: [Contracts](https://docs.connexcs.com/setup/config/contracts/)**.
 
     Contract Revisions are also available here.
+
+!!! Danger "Customers are restricted from making calls until their contract is reviewed and approved."
 
 [customer-contracts]: /customer/img/customer-contracts.png "Customer Contracts"
