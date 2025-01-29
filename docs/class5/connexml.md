@@ -343,6 +343,7 @@ An existing call is transferred to a different destination using the `Dial` ver
 |**Noun**|**Attribute**|**Description**|**Options**|**Default Method**|
 |--------|--------|-----|-----------|------------------|
 |`Voicemail`|`Voicemail Inbox`| It sends you to the inbox to leave a message|
+||`user`|The user attribute specifies the SIP user|
 |`Barge`| `whisper`|If enabled, allows you to speak privately to one or both legs of the call without the other party hearing.|`a`(aleg), `b`(bleg), `ab`(both legs)|`ab`|
 ||`bridge`|Allows an eavesdropper to listen in on a call without being an active participant. The eavesdropper can monitor the conversation on one or both legs of the call|`a`(aleg), `b`(bleg),`ab` (both legs)|`ab`|
 ||`command`|DTMF signals during eavesdrop|`true`, `false`|`true`|
@@ -523,6 +524,16 @@ An existing call is transferred to a different destination using the `Dial` ver
         <Response>
             <Dial>
                 <Queue action="pickup" music="ivr/ivr-invalid_number_format.wav">20000</Queue>
+            </Dial>
+        </Response>
+        ```
+    18. **user**
+        ``` xml
+        <?xml version="1.0" encoding="UTF-8"?>
+        <Response>
+            <Dial>
+                <Voicemail inbox="true" user="2890">
+                </Voicemail>
             </Dial>
         </Response>
         ```
