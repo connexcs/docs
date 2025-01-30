@@ -9,9 +9,9 @@ google_analytics:
 theme:
   name: material
   features:
+    - content.code.annotate
     - navigation.instant
     - navigation.tabs
-    - content.code.annotate
     - content.code.copy
   palette:
     - scheme: default
