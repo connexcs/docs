@@ -65,10 +65,14 @@ This presents data as the output to the routing engine and expects the same obje
 ``` js
 function main (data = {}) {
  // data.routing contains the same data you will find in the Logs
- // in the Raw Data Section
+ // in the Raw Data Section (1)
  return data;
 }
 ```
+
+1.  :man_raising_hand: I'm a code annotation! I can contain `code`, __formatted
+    text__, images, ... basically anything that can be written in Markdown.
+
 
 ### Class 5 Programmable Voice
 
