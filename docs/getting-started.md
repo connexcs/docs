@@ -157,6 +157,9 @@ Below are the steps to add a SIP extension:
 3. Under SIP User Authentication, click on the `+` icon.
 4. Enter a username and password, then press the `Save` button.
 
+!!! Warning
+    We **block IP addresses** upon SIP authentication failures to enhance security.
+
 ### Payments
 
 You can create multiple payment records to cover a customer's invoices and receipts.
