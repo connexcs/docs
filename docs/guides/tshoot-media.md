@@ -11,6 +11,10 @@ By using UDP, data gets transmitted at higher rates, some loss will occur and ca
 
 **RTCP (RTP Control Protocol)** doesn't carry any actual data payload but helps with delivery. Use RTCP to report on media quality statistics after call completion.
 
+!!! Info
+    1. We support ZRTP and video pass-through functionalities, enabling seamless transmission from customers to carriers.
+    2. Our platform provides comprehensive support for both IPv4 and IPv6 address protocols.
+
 ## ConnexCS Media Servers
 
 ConnexCS lets you route your media through a global array of dedicated media servers.
