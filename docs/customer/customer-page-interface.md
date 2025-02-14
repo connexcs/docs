@@ -41,38 +41,25 @@ This system ensures up-to-date customer information and facilitates quick action
       + **Calculation**: (Connected Calls / Total Calls) * 100.
     + **ACD (Average Call Duration)**: Calculates the average length of customer calls.
       + **Calculation**: Total Call Duration / Total Number of Calls.
+    + **PDD (Post Dial Delay)**: Measures the time delay between dialing a number and hearing the ringtone.
+    A high PDD (e.g., 10 seconds) can indicate carrier issues.
+    + **CPS (Calls Per Second)**: Displays the number of calls processed per second.
 
-PDD (Post Dial Delay):
++ **Customer Management**: Adding a New Customer:
 
-Measures the time delay between dialing a number and hearing the ringtone.
+    Click the `blue +` box to create a new customer entry.
 
-A high PDD (e.g., 10 seconds) can indicate carrier issues.
++ **Bulk Upload**: Upload multiple customers at once.
+    Users can dynamically map columns (e.g., customer name, channels, status).
 
-CPS (Calls Per Second):
+    Define the first row as the start row before importing data.
 
-Displays the number of calls processed per second.
++ **Bulk Edit**: Select multiple customers and modify attributes in bulk.
 
-1. Customer Management
+!!! Example
+    Change multiple customers to inactive in one action.
 
-Adding a New Customer:
-
-Click the blue box to create a new customer entry.
-
-Bulk Upload:
-
-Upload multiple customers at once.
-
-Users can dynamically map columns (e.g., customer name, channels, status).
-
-Define the first row as the start row before importing data.
-
-Bulk Edit:
-
-Select multiple customers and modify attributes in bulk.
-
-Example: Change multiple customers to inactive in one action.
-
-Refresh Data:
++ Refresh Data:
 
 Use the refresh button to update displayed information.
 
@@ -80,7 +67,7 @@ Delete Customers:
 
 Select customers and confirm deletion with a prompt before removal.
 
-5. Communication Tools
+1. Communication Tools
 
 Email Notifications:
 
