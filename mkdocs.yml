@@ -66,8 +66,11 @@ nav:
     - Management:
         - Introduction: customer/management1.md
         - Customer:
-            - Introduction: customer/customer.md
+            - Introduction: customer/customer-page-interface.md
+            - Customer: customer/customer.md
             - Main: customer/main.md
+            - Auth: customer/auth.md
+            - Alias: customer/alias.md
             - Routing: 
                 - Ingress Routing: customer/routing.md
                 - CLI: customer/cli.md
