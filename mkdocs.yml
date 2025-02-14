@@ -69,23 +69,23 @@ nav:
             - Main: customer/main.md
             - Auth: customer/auth.md
             - Alias: customer/alias.md
-            - Routing: 
-                - Ingress Routing: customer/routing.md
-                - CLI: customer/cli.md
-            - Payment: customer/payment.md
-            - Stats: customer/stats.md
-            - Route Stats: customer/route-stats.md
-            - Latest Calls: customer/latest-calls.md
-            - Dialogs: customer/dialogs.md
-            - Alerts: customer/alerts.md
-            - DID: customer/did.md
-            - CDR: customer/cdr.md
-            - Packages: customer/package.md
-            - Transcription: transcription.md
-            - Invoices: customer/invoices.md
-            - Contracts: customer/contracts.md
-            - Documents: customer/documents.md
-            - Class5: customer/class5.md
+        - Routing: 
+            - Ingress Routing: customer/routing.md
+            - CLI: customer/cli.md
+        - Payment: customer/payment.md
+        - Stats: customer/stats.md
+        - Route Stats: customer/route-stats.md
+        - Latest Calls: customer/latest-calls.md
+        - Dialogs: customer/dialogs.md
+        - Alerts: customer/alerts.md
+        - DID: customer/did.md
+        - CDR: customer/cdr.md
+        - Packages: customer/package.md
+        - Transcription: transcription.md
+        - Invoices: customer/invoices.md
+        - Contracts: customer/contracts.md
+        - Documents: customer/documents.md
+        - Class5: customer/class5.md
 
         - Carrier: carrier.md
         
