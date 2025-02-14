@@ -63,7 +63,8 @@ nav:
     - Customer Support: reporting-problems.md
     - Dashboard : dashboard.md
 
-    - Management: customer/management.md
+    - Management:
+        - Introduction: customer/management.md
         - Customer: customer/customer.md
             - Main: customer/main.md
             - Auth: customer/auth.md
