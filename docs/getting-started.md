@@ -25,7 +25,7 @@ Use the **Alerts** icon at the top left of the screen to view all outstanding it
 
 &emsp; ![alt text][verify-email-1]
 
-A Customer Setuo Checklist will guide you through essential steps like adding a customer and card information.
+A **Customer Setup Checklist** will guide you through essential steps like adding a customer and card information.
 
 ### Email Verification
 
@@ -160,7 +160,7 @@ For detailed instructions on carrier setup, see [**Carrier**](https://docs.conne
 
     ![alt text][carrier-auth-2]
 
-[Click here for video playback.](https://www.youtube.com/watch?v=7cDHJCEJDjI&t=3s)
+[Click here for video playback.](https://www.youtube.com/watch?v=7cDHJCEJDjI&t=3)
 
 ### Rate Cards
 
@@ -173,6 +173,28 @@ For detailed instructions on carrier setup, see [**Carrier**](https://docs.conne
 [Click here for video playback for Provider Rate Card.](https://www.youtube.com/watch?v=NYL6cNGGuaw)
 
 [Click here for video playback for Customer Rate Card.](https://www.youtube.com/watch?v=i7vSzIuUAL4&t=31s)
+
+**Summary**
+
+**Step 1**: Create a Carrier
+Create a new carrier entity.
+
+**Step 2**: Create a Provider Rate Card for This Carrier
+Generate a provider rate card specifically for the newly created carrier.
+
+**Step 3**: Create a Customer Rate Card and Link It with the Provider Rate Card
+Create a customer rate card and link it to the previously created provider rate card.
+
+**Step 4**: Add This Rate Card to the Routing of This Customer
+Assign the newly created rate to the routing configuration for this customer.
+
+```mermaid
+    graph TD;
+        A[Create Carrier] --> B[Create Provider Rate Card];
+        B --> C[Create Customer Rate Card];
+        C --> D[Link with Provider Rate Card];
+        D --> E[Add Rate Card to Customer Routing];
+```
 
 ## Timezone Settings
 

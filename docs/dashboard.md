@@ -1,80 +1,77 @@
 # Dashboard
 
-The **Dashboard** overview provides a summary of active customers and channels, along with some quick functions.
+The ConnexCS **Dashboard** provides a real-time overview of active customers, channels, and key system metrics. It includes interactive elements for monitoring traffic, analyzing trends, and customizing data displays.
+
 For detailed account and customer activities, use the Menu system on the left.  
-
-## Control Panel Functions
-
-![alt text][top of page]
-
-+ **Checklist**: A quick view of outstanding Alerts on the account to be addressed. Upon initial setup, there are Alerts to verify email and mobile for the account, as well as reminders to create your customers, setup carriers, etc.
-
-+ **Time Zone**: Click on the Date / Time box to select the Time Zone for your site.
-
-+ **Documentation**: Click on the question mark to access the ConnexCS Documentation.
-
-+ **Account Balance**: Displays the current account balance and a link to make a payment using a credit card or PayPal.
-
-+ **Channel Count**: Total Live Channels currently in use for all customers.
-
-+ **Account**: Use this to update your Profile, Change Password or Language, or Log Out.
 
 ## Overview
 
-This provides a view of Live Channels, Customers, Carriers, and Rate Cards
++ Displays a summary of Live Channels, Active Customers, Carriers, and Rate Cards.
 
-![alt text][dashboard]
++ Quick access to essential functions.
+
++ For detailed account activities, use the **Menu** System on the left.
+
+<img src= "/misc/img/dash1.png">
 
 ### Channels
 
-Table view of configured **Customers** and **Carriers** sorted by Channels in Use (highest and lowest).
+Table view of configured **Customers**, **Carriers** and **DIDs** sorted by Channels in Use (highest and lowest).
 
 ### Live Channels
 
-![alt text][profit] Use the icons in the upper right corner to refresh, select options, or download the graph.
+Diaplays the number of active channels in real time through a **Graph**.
 
-Upper graphs:
+Option to view the maximum channel value across all servers.
 
-+ **Channels**: Displays all currently active channels.  
-+ **Channels SanKey**: Displays the calls and carriers that are linked together.
-![channel san key](/misc/img/dashboardchannelsankey.png)
+### Graphs
 
-Lower graphs:
+With this new feature, you can view parameters
 
-+ Channels (historical data).
-+ CPS (calls per second).
-+ Daily Spend (displayed by customers).
-+ Customer / Provider spend (from SanKey Diagram above).
-+ Profit (daily stats on profit and loss, good for analysis).
-+ Registration Count (currently registered end-points).
++ **Channels** (historical data).
++ **CPS** (calls per second).
++ **Customer/Provider Spend**
++ **Profit** (daily stats on profit and loss, good for analysis).
++ **Registration Count** (currently registered end-points).
 
-## Dashboard: Graph Tabs
-
-With this new feature, you can view parameters like **Channels**, **CPS**, **Customer/Provider Spend**, **Profit** and **Registration Count**.
-
-You can view the **Configuration** of the displayed graph.
-The feature gives you the flexibility for **Resizing** the graph, **Refreshing** it and **Download** it as well.
+!!! Note **This information is available for 7 days**
 
 === "Channels"
 
-    <img src= "/misc/img/ch.png">
+    <img src= "/misc/img/dash2.png">
 
 === "CPS"
 
-    <img src= "/misc/img/cps.png">
+    <img src= "/misc/img/dash3.png">
 
 === "Customer/Provider Spend"
 
-    <img src= "/misc/img/spend.png">
+    <img src= "/misc/img/dash4.png">
 
 === "Profit"
 
-    <img src= "/misc/img/profit.png">
+    <img src= "/misc/img/dash5.png">
 
 === "Registration Count"
 
-    <img src= "/misc/img/count.png">
+    <img src= "/misc/img/dash6.png">
 
+## Customization & Interaction
+
++ Fully Customizable
+
++ Users can modify and integrate analytics into the dashboard.
+
++ New reports and insights can be pushed dynamically.
+
++ Interactive Features include:
+
+  + Zoom into graphs using the scroll wheel.
+  + Refresh graphs for updated data.
+  + Multi-select functionality:
+  + Select All / Deselect All options.
+
+This structured dashboard guide ensures customers can effectively monitor system performance, analyze data, and customize their experience with ConnexCS.
 
 [top of page]: /misc/img/topofpage.png "Top of Page"
 [dashboard]: /misc/img/dashboard.png "Dashboard"
