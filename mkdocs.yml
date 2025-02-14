@@ -66,9 +66,7 @@ nav:
     - Management:
         - Introduction: customer/management1.md
         - Customer: customer/customer.md
-            - Main: customer/main.md
-            - Auth: customer/auth.md
-            - Alias: customer/alias.md
+        - Main: customer/main.md
         - Routing: 
             - Ingress Routing: customer/routing.md
             - CLI: customer/cli.md
@@ -118,7 +116,8 @@ nav:
 
     - Logging: logging.md
     
-    - Class 5: class5/calss5-intro.md
+    - Class 5:
+        - Introduction: class5/calss5-intro.md
         - Apps: class5/apps.md
         - Conference: class5/creating-conference.md
         - Call Center: class5/call-center.md
