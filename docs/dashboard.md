@@ -34,7 +34,7 @@ With this new feature, you can view parameters
 + **Profit** (daily stats on profit and loss, good for analysis).
 + **Registration Count** (currently registered end-points).
 
-!!! Note **This information is available for 7 days**
+!!! Note "**This information is available for 7 days**"
 
 === "Channels"
 
