@@ -47,7 +47,7 @@ This system ensures up-to-date customer information and facilitates quick action
 
 + **Customer Management Functions**:
 
-    <img src="/customer/img/customer_interface.png" alt="Customer Interface" height="800" width="900" style="border: 3px solid blue;">
+    <img src="/customer/img/customer_interface.png" alt="Customer Interface" height="800" width="900" style="border: 4px solid blue;">
 
     + **Adding a New Customer**: On the **Customers** page, you can perform several management operations.
     By clicking on `+` button we can add customer (see [**Create Customers**](https://docs.connexcs.com/customer/customer/#create-customers) below for details.)
@@ -101,7 +101,7 @@ This system ensures up-to-date customer information and facilitates quick action
         + Write the Body of the referral.
         + Click on `Send`.
   
-      <img src= "/customer/img/referral.png" alt= "ConnexCS Referral" style="border: 3px solid blue;">
+      <img src= "/customer/img/referral.png" alt= "ConnexCS Referral" style="border: 5px solid blue;">
 
       + **Customer Status**: View and update the status of a customer:
         + All
@@ -112,6 +112,6 @@ This system ensures up-to-date customer information and facilitates quick action
         + Pending Approval
         + Penalty
 
-    <img src= "/customer/img/39.pn" alt= "Customer Status" style="border: 3px solid blue;">
+    <img src= "/customer/img/39.png" alt= "Customer Status" style="border: 5px solid blue;">
 
 [customersubs]: /customer/img/customersubs.png "Customer Sub-Sections"
