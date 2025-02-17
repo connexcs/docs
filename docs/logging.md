@@ -12,7 +12,7 @@ As soon as a call hits the ConnexCS system, it will display in the Logging area.
 + **Call Flow Analysis**: Tracks call routing and detects irregularities.
 + **Security Monitoring**: Logs unauthorized access attempts and suspicious activities.
 + **Performance Optimization**: Provides insights into system performance and helps with fine-tuning configurations.
-**Regulatory Compliance**: Maintains records for audits and compliance requirements
++ **Regulatory Compliance**: Maintains records for audits and compliance requirements
 
 ## Register Logging
 
