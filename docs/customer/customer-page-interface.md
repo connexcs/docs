@@ -47,7 +47,7 @@ This system ensures up-to-date customer information and facilitates quick action
 
 + **Customer Management Functions**:
 
-    <img src= "/customer/img/customers.png">
+    <img src="/customer/img/customer_interface.png" alt="customer interface" width="300" height="200">
 
     + **Adding a New Customer**: On the **Customers** page, you can perform several management operations.
     By clicking on `+` button we can add customer (see [**Create Customers**](https://docs.connexcs.com/customer/customer/#create-customers) below for details.)
@@ -58,11 +58,11 @@ This system ensures up-to-date customer information and facilitates quick action
 
     + **Bulk Upload**: Upload multiple customers at once by importing a spreadsheet file (.csv file).
     Users can dynamically map columns (e.g., customer name, channels, status).
-        + Steps of bulk uploading:
-          + Click `Bulk Upload`, then `Upload`, find your customer file, and then click **`Open`**.
-          + Right-click on the second row and select **Start Row** to show the first line of data (the first row is typically column headers).
-          + Right-click on each column to **Map Columns** to appropriate fields.
-          + Once you have filled out all the required fields, click **Upload to Server**.
+        + **Steps of bulk uploading**:
+            + Click `Bulk Upload`, then `Upload`, find your customer file, and then click **`Open`**.
+            + Right-click on the second row and select **Start Row** to show the first line of data (the first row is typically column headers).
+            + Right-click on each column to **Map Columns** to appropriate fields.
+            + Once you have filled out all the required fields, click **Upload to Server**.
 
     !!! Note "Note"
         1. Before uploading the .csv file, please ensure that it doesn't contain any exponential or scientific notations. The inclusion of the notations will result in errors.
@@ -84,12 +84,12 @@ This system ensures up-to-date customer information and facilitates quick action
         + **SMS Alerts**: Send instant SMS messages to selected customers.
         **Use cases**: System updates, routing issues, urgent notifications.
 
-      + **Steps to use Communication Tools**:
-        + Select several customers using the tick-box selector on the left side of each row. (Customers aren't visible to each other in the sent message.)
-        + Click on "Send" at the top right then choose email or SMS.
-        + Fill in the Subject line and body details and send.
-          + Emails sent FROM the email address gets populated in **Setup :material-menu-right: Settings**, and TO every email address listed in Contacts for each customer.
-          + Each contact receives an SMS to their Mobile number.
+        + **Steps to use Communication Tools**:
+          + Select several customers using the tick-box selector on the left side of each row. (Customers aren't visible to each other in the sent message.)
+          + Click on "Send" at the top right then choose email or SMS.
+          + Fill in the Subject line and body details and send.
+            + Emails sent FROM the email address gets populated in **Setup :material-menu-right: Settings**, and TO every email address listed in Contacts for each customer.
+            + Each contact receives an SMS to their Mobile number.
   
         !!! note "Custom Email Servers"
             Change the outbound Email Server and SMS origination number in **Setup :material-menu-right: Settings**.
