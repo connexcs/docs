@@ -101,7 +101,7 @@ This system ensures up-to-date customer information and facilitates quick action
         + Write the Body of the referral.
         + Click on `Send`.
   
-      <img src= "/customer/img/referral.png" alt= "ConnexCS Referral" style="border: 5px solid blue;">
+      <img src= "/customer/img/referral.png" alt= "ConnexCS Referral" style="border: 4px solid blue;">
 
       + **Customer Status**: View and update the status of a customer:
         + All
@@ -112,6 +112,6 @@ This system ensures up-to-date customer information and facilitates quick action
         + Pending Approval
         + Penalty
 
-    <img src= "/customer/img/39.png" alt= "Customer Status" style="border: 5px solid blue;">
+    <img src= "/customer/img/39.png" alt= "Customer Status">
 
 [customersubs]: /customer/img/customersubs.png "Customer Sub-Sections"
