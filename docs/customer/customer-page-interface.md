@@ -29,15 +29,15 @@ This system ensures up-to-date customer information and facilitates quick action
     + **Last Call Details**: Track the last time a customer was active.
 
     + **Key Metrics**
-      + **Credit & Currency**: Displays available balance in the system.
-      + **Active Channels**: Shows live active call channels.
-      + **ASR (Answer Seizure Ratio)**: Measures the percentage of connected calls vs. total calls. 
-      + **Calculation**: (Connected Calls / Total Calls) * 100.
-      + **ACD (Average Call Duration)**: Calculates the average length of customer calls.
-      + **Calculation**: Total Call Duration / Total Number of Calls.
-      + **PDD (Post Dial Delay)**: Measures the time delay between dialing a number and hearing the ringtone.
-      A high PDD (e.g., 10 seconds) can indicate carrier issues.
-      + **CPS (Calls Per Second)**: Displays the number of calls processed per second.
+        + **Credit & Currency**: Displays available balance in the system.
+        + **Active Channels**: Shows live active call channels.
+        + **ASR (Answer Seizure Ratio)**: Measures the percentage of connected calls vs. total calls. 
+        + **Calculation**: (Connected Calls / Total Calls) * 100.
+        + **ACD (Average Call Duration)**: Calculates the average length of customer calls.
+        + **Calculation**: Total Call Duration / Total Number of Calls.
+        + **PDD (Post Dial Delay)**: Measures the time delay  between dialing a number and hearing the ringtone.
+        A high PDD (e.g., 10 seconds) can indicate carrier issues.
+        + **CPS (Calls Per Second)**: Displays the number of calls processed per second.
 
 + **Search & Filtering**
 
@@ -46,6 +46,9 @@ This system ensures up-to-date customer information and facilitates quick action
     + **Filters**: Apply specific criteria to narrow down search results.
 
 + **Customer Management Functions**:
+
+    <img src= "/customer/img/customers.png">
+
     + **Adding a New Customer**: On the **Customers** page, you can perform several management operations.
     By clicking on `+` button we can add customer (see [**Create Customers**](https://docs.connexcs.com/customer/customer/#create-customers) below for details.)
 
@@ -55,11 +58,11 @@ This system ensures up-to-date customer information and facilitates quick action
 
     + **Bulk Upload**: Upload multiple customers at once by importing a spreadsheet file (.csv file).
     Users can dynamically map columns (e.g., customer name, channels, status).
-      + Steps of bulk uploading:
-        + Click `Bulk Upload`, then `Upload`, find your customer file, and then click **`Open`**.
-        + Right-click on the second row and select **Start Row** to show the first line of data (the first row is typically column headers).
-        + Right-click on each column to **Map Columns** to appropriate fields.
-        + Once you have filled out all the required fields, click **Upload to Server**.
+        + Steps of bulk uploading:
+          + Click `Bulk Upload`, then `Upload`, find your customer file, and then click **`Open`**.
+          + Right-click on the second row and select **Start Row** to show the first line of data (the first row is typically column headers).
+          + Right-click on each column to **Map Columns** to appropriate fields.
+          + Once you have filled out all the required fields, click **Upload to Server**.
 
     !!! Note "Note"
         1. Before uploading the .csv file, please ensure that it doesn't contain any exponential or scientific notations. The inclusion of the notations will result in errors.
@@ -67,7 +70,7 @@ This system ensures up-to-date customer information and facilitates quick action
   
     + **Bulk Edit**: Select multiple customers and modify attributes such as Channels, Status, Flow Speed (CPS), Portal Access, and Country in bulk.
 
-      !!! Example "Change multiple customers to inactive in one action"
+        !!! Example "Change multiple customers to inactive in one action"
 
     + **Delete Customers**: Select customers and confirm deletion with a prompt before removal.
   
@@ -75,11 +78,11 @@ This system ensures up-to-date customer information and facilitates quick action
 
     + **Send (Communication Tools)**
 
-      + **Email Notifications**: Select customers and send bulk emails. Customers don't see other recipients.
-    **Use cases**: Service downtime alerts, marketing updates, new product announcements.
+        + **Email Notifications**: Select customers and send bulk emails. Customers don't see other recipients
+        **Use cases**: Service downtime alerts, marketing updates, new product announcements.
 
-      + **SMS Alerts**: Send instant SMS messages to selected customers.
-    **Use cases**: System updates, routing issues, urgent notifications.
+        + **SMS Alerts**: Send instant SMS messages to selected customers.
+        **Use cases**: System updates, routing issues, urgent notifications.
 
       + **Steps to use Communication Tools**:
         + Select several customers using the tick-box selector on the left side of each row. (Customers aren't visible to each other in the sent message.)
@@ -101,13 +104,13 @@ This system ensures up-to-date customer information and facilitates quick action
       <img src= "/customer/img/referral.png">
 
       + **Customer Status**: View and update the status of a customer:
-      + All
-      + Active
-      + Dialing
-      + Inactive
-      + Pending
-      + Pending Approval
-      + Penalty
+        + All
+        + Active
+        + Dialing
+        + Inactive
+        + Pending
+        + Pending Approval
+        + Penalty
 
     &emsp; ![alt text][customer-status]
 
