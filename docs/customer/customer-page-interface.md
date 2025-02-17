@@ -47,8 +47,7 @@ This system ensures up-to-date customer information and facilitates quick action
 
 + **Customer Management Functions**:
 
-  <img src="/customer/img/customer_interface.png" alt="Customer Interface" height="800" width="900" style="border: 3px solid blue;">
-
+    <img src="/customer/img/customer_interface.png" alt="Customer Interface" height="800" width="900" style="border: 3px solid blue;">
 
     + **Adding a New Customer**: On the **Customers** page, you can perform several management operations.
     By clicking on `+` button we can add customer (see [**Create Customers**](https://docs.connexcs.com/customer/customer/#create-customers) below for details.)
