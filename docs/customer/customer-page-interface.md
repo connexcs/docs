@@ -47,7 +47,7 @@ This system ensures up-to-date customer information and facilitates quick action
 
 + **Customer Management Functions**:
 
-    <img src="/customer/img/customer_interface.png" alt="customer interface" width="300" height="200">
+    <img src="/customer/img/customer_interface.png" alt="customer interface" style="border: 1px solid \#000;">
 
     + **Adding a New Customer**: On the **Customers** page, you can perform several management operations.
     By clicking on `+` button we can add customer (see [**Create Customers**](https://docs.connexcs.com/customer/customer/#create-customers) below for details.)
@@ -85,9 +85,9 @@ This system ensures up-to-date customer information and facilitates quick action
         **Use cases**: System updates, routing issues, urgent notifications.
 
         + **Steps to use Communication Tools**:
-          + Select several customers using the tick-box selector on the left side of each row. (Customers aren't visible to each other in the sent message.)
-          + Click on "Send" at the top right then choose email or SMS.
-          + Fill in the Subject line and body details and send.
+            + Select several customers using the tick-box selector on the left side of each row. (Customers aren't visible to each other in the sent message.)
+            + Click on "Send" at the top right then choose email or SMS.
+            + Fill in the Subject line and body details and send.
             + Emails sent FROM the email address gets populated in **Setup :material-menu-right: Settings**, and TO every email address listed in Contacts for each customer.
             + Each contact receives an SMS to their Mobile number.
   
@@ -101,7 +101,7 @@ This system ensures up-to-date customer information and facilitates quick action
         + Write the Body of the referral.
         + Click on `Send`.
   
-      <img src= "/customer/img/referral.png">
+      <img src= "/customer/img/referral.png" style="border: 1px solid \#000;">
 
       + **Customer Status**: View and update the status of a customer:
         + All
