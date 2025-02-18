@@ -10,17 +10,17 @@ It provides essential tools to manage customer accounts, contacts, authenticatio
 
 !!! Question "Why and When do we need the **Main** section?"
     1. **User-Friendly & Flexible System**:
-       1. Guides customers in configuring their accounts to match their operational needs.
-       2. Offers customizable options such as number blocks, verification, and aliases.
+          1. Guides customers in configuring their accounts to match their operational needs.
+          2. Offers customizable options such as number blocks, verification, and aliases.
     2. **Improved Organization & Accountability**:
-       1. Clearly defines how customers and their contacts are managed.
-       2. Ensures that every action taken by a contact is logged, improving traceability.
+          1. Clearly defines how customers and their contacts are managed.
+          2. Ensures that every action taken by a contact is logged, improving traceability.
     3. **Enhanced Security & Access Control**:
-       1. Allows multiple logins with unique credentials for each contact.
-       2. Provides authentication and password management options to secure customer access.
+          1. Allows multiple logins with unique credentials for each contact.
+          2. Provides authentication and password management options to secure customer access.
     4. **Efficient Number Management**:
-        1. Explains how internal number blocks work to avoid conflicts.
-        2. Helps customers set up structured dialing plans for better call routing.
+          1. Explains how internal number blocks work to avoid conflicts.
+          2. Helps customers set up structured dialing plans for better call routing.
 
 ![alt text][cust-main]
 
@@ -29,6 +29,7 @@ It provides essential tools to manage customer accounts, contacts, authenticatio
 ## Audit Log
 
 ![alt text][audit-log]
+
 The **Audit Log**, or Audit Trail, is a chronological set of records that shows all changes performed on a system, software, or device including **timestamps** and **IP addresses**.
 
 It displays when the customer was created, all changes made, either directly by users or through the API. This includes all activity on the Control Panel and in the Customer Portal.
@@ -165,19 +166,19 @@ The Internal Number Block ensures number allocations are managed efficiently.
 
 1. **Namespace and Extension Management**: 
 
-   1. The system can be multi-tenant (domain-based) or use number allocations.
-   2. Each customer operates within a unique namespace.
-   3. Duplicate extensions across multiple customers are prevented.
+      1. The system can be multi-tenant (domain-based) or use number allocations.
+      2. Each customer operates within a unique namespace.
+      3. Duplicate extensions across multiple customers are prevented.
 
 2. **Number Allocation**:
 
-   1. **Without a Number Block**: Any extension can be added without restrictions.
-   2. **With a Number Block**: Extensions must be chosen from a predefined range.
-   3. Administrators can assign number blocks to specific users.
+      1. **Without a Number Block**: Any extension can be added without restrictions.
+      2. **With a Number Block**: Extensions must be chosen from a predefined range.
+      3. Administrators can assign number blocks to specific users.
 
 3. **Organization of Extensions**
 
-   1. **Number blocks can be structured as**:
+      1. **Number blocks can be structured as**:
 
         First few digits = **Company identifier**
         Last few digits = **Extension identifier**
@@ -186,23 +187,23 @@ The Internal Number Block ensures number allocations are managed efficiently.
             A company can dial 100 internally, while the system automatically appends the required prefix.
 
 4. **Routing and Aliases**
-   1. Calls can be routed automatically using number blocks
-   2. Alias functionality allows alternative ways to achieve the same result.
+      1. Calls can be routed automatically using number blocks
+      2. Alias functionality allows alternative ways to achieve the same result.
 
-### Stepp to implement Internal Number Block
+### Steps to implement Internal Number Block
 
 1. Click **:material-plus:** next to **Internal Number Block**
 2. The next available **Number Block** is assigned.
 3. Numbers from the assigned range is then available in **Customer :material-menu-right: [Auth](/customer/auth/) for IP or SIP users**, and in **Class5 :material-menu-right: [Conference](/class5/creating-conference/)**.
 
 !!! info "Why Define Internal Number Blocks?"
-    Within each Account are multiple Customers, each will likely have more than one Contact.
+    1. Within each Account are multiple Customers, each will likely have more than one Contact.
 
-    SIP Extensions are unique for the Account, not for individual Customers. 
+    2. SIP Extensions are unique for the Account, not for individual Customers. 
     
-    Without defined Internal Number Blocks, there is the risk of a Contact attempting to use an extension that's already in use by another Customer or Contact. 
+    3. Without defined Internal Number Blocks, there is the risk of a Contact attempting to use an extension that's already in use by another Customer or Contact. 
     
-    With Internal Number Blocks defined, each Customer will have a predetermined list of Usernames to select for SIP Authentication.
+    4. With Internal Number Blocks defined, each Customer will have a predetermined list of Usernames to select for SIP Authentication.
 
 !!! note "Number Range parameters"
     The Number Range Start and Block Size must be defined under [**Settings :material-menu-right: Options**](https://docs.connexcs.com/setup/settings/options/) before an Internal Number Block can be assigned.
