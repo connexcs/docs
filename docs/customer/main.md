@@ -2,9 +2,25 @@
 
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name]**
 
-The first tab in a Customer account is **Main**. It displays a summary of the Status, Balance, Debit Limit, and current Channels in use.
+The first tab in a Customer account is **Main**.
 
-You can manage contacts, block internal numbers, and view call summaries.
+As the name suggests it allows you to manage the critical customer functions.
+
+It provides essential tools to manage customer accounts, contacts, authentication, and internal number allocation.
+
+!!! Question "Why and When do we need the **Main** section?"
+    1. **User-Friendly & Flexible System**:
+       1. Guides customers in configuring their accounts to match their operational needs.
+       2. Offers customizable options such as number blocks, verification, and aliases.
+    2. **Improved Organization & Accountability**:
+       1. Clearly defines how customers and their contacts are managed.
+       2. Ensures that every action taken by a contact is logged, improving traceability.
+    3. **Enhanced Security & Access Control**:
+       1. Allows multiple logins with unique credentials for each contact.
+       2. Provides authentication and password management options to secure customer access.
+    4. **Efficient Number Management**:
+        1. Explains how internal number blocks work to avoid conflicts.
+        2. Helps customers set up structured dialing plans for better call routing.
 
 ![alt text][cust-main]
 
