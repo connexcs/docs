@@ -33,19 +33,17 @@ The following sections will appear when you click on the `blue +` sign.
     + **PayPal Email:** The email address associated with the customer's PayPal account. (This is relevant when using the IPN API which lets customers make payments directly through PayPal instead of using the Customer Portal. See our API documentation for details on [**PayPal IPN**](https://docs.connexcs.com/setup/integrations/api/#paypal-ipn-integration). It enables mass payments without requiring customer login.
     + **Website:** The customer's website address.
     + **P-Asserted-ID:**PAID (PS Setter ID) is a feature that determines how calls are routed based on predefined rules. The behavior of PAID varies depending on whether it is set to **Default**, **If Available**, or **Required**.
-    
-    |**Mode**|**Description**|
-    |--------|---------------|
-    |**Default**|If there is any PAID or CLI rule, then the call will proceed if not the call will still proceed. Any attempt to modify PAID, including parameter rewrite rules, CLI section changes, or PAID changes, will not take effect. No modifications are allowed to PAID|
-    |**If Available**|The rule applies only when PAID is available. If PAID is present, it can be modified using rewrite rules. If it is missing, the call proceeds without PAID. Allows rewriting of PAID using rules.|
-    |**Required**|PAID must be present. If PAID is missing, the call will not proceed.PAID is mandatory for call routing.|
+      + **Default**: If there is any PAID or CLI rule, then the call will proceed if not the call will still proceed. Any attempt to modify PAID, including parameter rewrite rules, CLI section changes, or PAID changes, will not take effect. No modifications are allowed to PAID.
+      + **If Available**: The rule applies only when PAID is available. If PAID is present, it can be modified using rewrite rules. If it is missing, the call proceeds without PAID. Allows rewriting of PAID using rules.
+      + **Required**: PAID must be present. If PAID is missing, the call will not proceed.PAID is mandatory for call routing.
 
     + **Portal Access:** It allows you to **Show** and **Hide** parameters like Balance, CDR, Breakout etc on your customer portal. 
     + **Tags**: Use this to add meta-data identifiers to a customer. If a customer routing is created using a template from [**Global Routing**](https://docs.connexcs.com/global-routing/), this will be the tag configured in the template. Used to apply global routing rules to customers.
     + Vars<sup>[**TOML**](https://en.wikipedia.org/wiki/TOML)</sup>: This is a data storage mechanism for configuration, similar to INI files. It allows you to create advanced customization to set values, etc, for Script Forge to reference later. 
     + **Reseller**: Allows customers to manage sub-accounts and grant controlled access to their resellers.
     This ensures proper call routing, access restrictions, and rate card management.
-    Associate the customer to a preset Reseller Group (see [**Create Groups**](https://docs.connexcs.com/setup/settings/users/#create-groups) for more details.)
+    Associate the customer to a preset Reseller Group (see [**Create Groups**](https://docs.connexcs.com/setup/
+    settings/users/#create-groups) for more details.)
         + The reseller can manage multiple customers under their account.
         + Resellers can have controlled access to rate cards, customer accounts, and billing.
         + Each reseller sees only the customers and rate cards assigned to them.
