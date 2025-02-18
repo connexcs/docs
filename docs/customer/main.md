@@ -180,10 +180,11 @@ The Internal Number Block ensures number allocations are managed efficiently.
 
       1. **Number blocks can be structured as**:
 
-        First few digits = **Company identifier**
-        Last few digits = **Extension identifier**
+            First few digits = **Company identifier**
 
-        !!! Example
+            Last few digits = **Extension identifier**
+    
+    !!! Example
             A company can dial 100 internally, while the system automatically appends the required prefix.
 
 4. **Routing and Aliases**
