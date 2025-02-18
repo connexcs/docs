@@ -3,6 +3,7 @@
 **Management :material-menu-right: Customer**
 
 The **Customer**  section will help you navigate the key functionalities of our system, from adding customers to configuring settings, managing invoices, and understanding audit logs.
+
 Follow the sections below to get started.
 
 ## Create Customer
