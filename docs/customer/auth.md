@@ -15,8 +15,8 @@ When you enable **IP Authentication**, you link a customer switch's IP address t
 
  This adds a layer of security by ensuring the calls are coming from a trusted source.
 
- !!! question "How it works"
-        **Matching IP Addresses**: When a packet arrives from a specific IP address (e.g., 1.1.1.1), the system matches it to the corresponding customer.
+!!! Question "How it works"
+    **Matching IP Addresses**: When a packet arrives from a specific IP address (e.g., 1.1.1.1), the system matches it to the corresponding customer.
 
 !!! error "Newly added IP immediately marked as Blocked under IP Authentication"
     This occurs because call requests were sent from the new IP before it's authorized. As a result, ConnexCS fraud detection in the firewall blocked the unauthorised IP. Attempted calls from this IP won't get completed.
@@ -76,8 +76,11 @@ To enable, click **:material-plus:** next to IP Authentication:
         <img src= "/customer/img/advanced.png" width= "600">
     
         + **CLI Authentication**: Select this flag to distinguish between multiple customers sharing the same IP address by using CLI Authentication instead of Tech Prefix.
-            + Configuration
+            
+            + **Configuration**
+                
                 + **CLI Routing**: CLIs are used as a secondary authentication mechanism to identify which customer traffic belongs to.
+                
                 !!! Example
                     Joe and Bob share an IP address but have different CLIs; the system uses these CLIs to route calls correctly.
                 
@@ -93,11 +96,10 @@ To enable, click **:material-plus:** next to IP Authentication:
 
         <img src= "/customer/img/cliauth1.png" width="1000">
         
-                + **Setting Up CLIs or Regular Expressions**:
-              
-                    + Navigate to **Customer :material-menu-right: Customer [Name] :material-menu-right: Routing :material-menu-right: CLI :material-menu-right: click on the blue `+` sign**.
-                    + Enter the specific CLIs, or Regular expressions associated with the customer.
-                    + This configuration allows the system to match incoming call CLIs with the defined patterns.
+            + **Setting Up CLIs or Regular Expressions**:
+                + Navigate to **Customer :material-menu-right: Customer [Name] :material-menu-right: Routing :material-menu-right: CLI :material-menu-right: click on the blue `+` sign**.
+                + Enter the specific CLIs, or Regular expressions associated with the customer.
+                + This configuration allows the system to match incoming call CLIs with the defined patterns.
 
         <img src= "/customer/img/cliauth2.png" width= "1000">
     
@@ -130,6 +132,7 @@ To enable, click **:material-plus:** next to IP Authentication:
         It is most useful when you need to create **automatic replacements** for destination numbers or CLI, so a number is formatted in the appropriate [**E164 format**](https://en.wikipedia.org/wiki/E.164). 
     
     + **Configuration**:
+        
         + **Number Formatting**:
             Strip leading zeros or add country codes based on regular expressions.
             
@@ -138,13 +141,14 @@ To enable, click **:material-plus:** next to IP Authentication:
         + **Destination Number or CLI Manipulation**:
             Apply these manipulations on either destination numbers or CLIs.
 
-    1. Click **`+`**.
-    2. **Type**: Select the parameter to modify.
-    3. **Current**: Enter the prefix for the destination number, or the CLI. You also have the option to generate a regular expression using `AI Generate Regular Expression`.
-    4. **New**: Enter what should replace the current information.
-    5. Use the **Testing** `Input` field to verify if the replacement is working as expected. 
-    6. Click **`Save`** when done. 
-    7. If a parameter rewrite is already created, you will have the ability to test it from the main tab. 
+    + Steps for re-writing: 
+        1. Click **`+`**.
+        2. **Type**: Select the parameter to modify.
+        3. **Current**: Enter the prefix for the destination number, or the CLI. You also have the option to generate a regular expression using `AI Generate Regular Expression`.
+        4. **New**: Enter what should replace the current information.
+        5. Use the **Testing** `Input` field to verify if the replacement is working as expected. 
+        6. Click **`Save`** when done. 
+        7. If a parameter rewrite is already created, you will have the ability to test it from the main tab. 
     
     !!! Example
         International calls coming in with a + should be replaced with a specific country code.
@@ -228,6 +232,13 @@ To enable, click **:material-plus:** next to SIP User Authentication:
 
     + **IP Allow list**: Enter specific IPs or use CIDR notation to specify an entire subnet.
     + **NAT/SIP Ping**: Set behavior of pings sent from ConnexCS back to the customer through their firewall to their UAC. This helps when there are remote agents connecting to the switch. NAT/SIP Ping is used to keep the network address translation (NAT) open, ensuring calls can be received.
+            
+            :material-menu-right: **`Disabled`**: No pings are sent
+        
+            :material-menu-right: **`Enabled`**: Send UDP pings every 60 seconds, helping to keep some longer calls (1800 or 3600 seconds) up. 
+        
+            :material-menu-right: **`Enabled (Timeout)`**: Send UDP pings every 60 seconds and disconnect the call (terminate registration) if the pings aren't returned.
+
         
     !!! question "How it works?"
         1. When using NAT, outbound packets create a temporary port mapping.
@@ -248,17 +259,10 @@ To enable, click **:material-plus:** next to SIP User Authentication:
             G -- No --> I[No Response, System Times Out]
             I --> J[System Deregisters Device Due to Inactivity]
     ```
-    
-            :material-menu-right: **`Disabled`**: No pings are sent
-        
-            :material-menu-right: **`Enabled`**: Send UDP pings every 60 seconds, helping to keep some longer calls (1800 or 3600 seconds) up. 
-        
-            :material-menu-right: **`Enabled (Timeout)`**: Send UDP pings every 60 seconds and disconnect the call (terminate registration) if the pings aren't returned.
-
-            !!! danger "Common Issue"
-                **Outbound calls work, but inbound calls fail**:
-                  + This usually indicates a NAT issue where the port has closed.
-                  + Enabling NAT SIP Ping keeps the port open.
+        !!! danger "Common Issue"
+            **Outbound calls work, but inbound calls fail**:
+               + This usually indicates a NAT issue where the port has closed.
+               + Enabling NAT SIP Ping keeps the port open.
     
     + **Retain DID**: When you enable this, inbound calls will retain the destination number (DID), and the call is sent into the system, rather than using the SIP Username or routing calls to a predefined destination. 
         + **Key Considerations**:
@@ -418,9 +422,13 @@ To enable, click **:material-plus:** next to SIP User Authentication:
     If you enable Voice Mail, you can set which email address receives messages, reset the Voicemail Password, and view and delete current messages.
 
     **Key Features**:
+       
        + Enable voicemail for specific extensions.
+       
        + Configure email notifications for new voicemails.
+       
        + Set up a voicemail password for retrieval via an interactive menu.
+       
        + To access voicemail, dial *1 (subject to confirmation in system settings). 
     
     See [**Voicemail**](https://docs.connexcs.com/class5/voicemail/) for information on accessing Voicemail. 
