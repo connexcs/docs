@@ -16,7 +16,7 @@ When you enable **IP Authentication**, you link a customer switch's IP address t
  This adds a layer of security by ensuring the calls are coming from a trusted source.
 
  !!! question "How it works"
-    **Matching IP Addresses**: When a packet arrives from a specific IP address (e.g., 1.1.1.1), the system matches it to the corresponding customer.
+        **Matching IP Addresses**: When a packet arrives from a specific IP address (e.g., 1.1.1.1), the system matches it to the corresponding customer.
 
 !!! error "Newly added IP immediately marked as Blocked under IP Authentication"
     This occurs because call requests were sent from the new IP before it's authorized. As a result, ConnexCS fraud detection in the firewall blocked the unauthorised IP. Attempted calls from this IP won't get completed.
@@ -76,23 +76,23 @@ To enable, click **:material-plus:** next to IP Authentication:
         <img src= "/customer/img/advanced.png" width= "600">
     
         + **CLI Authentication**: Select this flag to distinguish between multiple customers sharing the same IP address by using CLI Authentication instead of Tech Prefix.
-        + Configuration
-            + **CLI Routing**: CLIs are used as a secondary authentication mechanism to identify which customer traffic belongs to.
-            !!! Example
+            + Configuration
+                + **CLI Routing**: CLIs are used as a secondary authentication mechanism to identify which customer traffic belongs to.
+                !!! Example
                 Joe and Bob share an IP address but have different CLIs; the system uses these CLIs to route calls correctly.
-            + **Setup Process**
-                + **Configuring IP Authentication**:
-                    1. Navigate to **Customer :material-menu-right: Customer [Name] Auth :material-menu-right: IP Authentication :material-menu-right: click on the blue `+` sign**.
-                    2. Under **Advanced settings :material-menu-right: Flag :material-menu-right: Enable CLI Authentication**.
-                    3. This step ensures that the system will use CLI Authentication to differentiate customers with the same IP address.
+                + **Setup Process**
+                    + **Configuring IP Authentication**:
+                        1. Navigate to **Customer :material-menu-right: Customer [Name] Auth :material-menu-right: IP Authentication :material-menu-right: click on the blue `+` sign**.
+                        2. Under **Advanced settings :material-menu-right: Flag :material-menu-right: Enable CLI Authentication**.
+                        3. This step ensures that the system will use CLI Authentication to differentiate customers with the same IP address.
 
         <img src= "/customer/img/cliauth1.png" width="1000">
         
-        + **Setting Up CLIs or Regular Expressions**:
+            + **Setting Up CLIs or Regular Expressions**:
               
-            + Navigate to **Customer :material-menu-right: Customer [Name] :material-menu-right: Routing :material-menu-right: CLI :material-menu-right: click on the blue `+` sign**.
-            + Enter the specific CLIs, or Regular expressions associated with the customer.
-            + This configuration allows the system to match incoming call CLIs with the defined patterns.
+                + Navigate to **Customer :material-menu-right: Customer [Name] :material-menu-right: Routing :material-menu-right: CLI :material-menu-right: click on the blue `+` sign**.
+                + Enter the specific CLIs, or Regular expressions associated with the customer.
+                + This configuration allows the system to match incoming call CLIs with the defined patterns.
 
         <img src= "/customer/img/cliauth2.png" width= "1000">
     
@@ -139,7 +139,8 @@ To enable, click **:material-plus:** next to IP Authentication:
     6. Click **`Save`** when done. 
     7. If a parameter rewrite is already created, you will have the ability to test it from the main tab. 
     
-    Example: International calls coming in with a + should be replaced with a specific country code.
+    !!! Example
+        International calls coming in with a + should be replaced with a specific country code.
 
     <img src= "/customer/img/regex.png">
 
@@ -147,9 +148,12 @@ To enable, click **:material-plus:** next to IP Authentication:
     [Click here](https://cidr.xyz/) to view an interactive IP address and CIDR range visualizer.
 
 !!! Info "NAT Considerations"
+
     **Network Address Translation (NAT)**: NAT can cause issues with SIP communications due to internal vs. external IP addresses.
+    
     * **STUN (Session Traversal Utilities for NAT)**: Clients can use STUN to determine their external IP address and update SIP packets accordingly.
     * **Application Layer Gateway (ALG)**: NAT devices can rewrite SIP packets to use external IP addresses, though this method is unreliable.
+    
     * **Far-end NAT Traversal**: The system can detect and adjust for NAT by checking IP headers and assuming the correct external IP address.
 
 ## SIP User Authentication
@@ -217,26 +221,26 @@ To enable, click **:material-plus:** next to SIP User Authentication:
 
     + **IP Allow list**: Enter specific IPs or use CIDR notation to specify an entire subnet.
     + **NAT/SIP Ping**: Set behavior of pings sent from ConnexCS back to the customer through their firewall to their UAC. This helps when there are remote agents connecting to the switch. NAT/SIP Ping is used to keep the network address translation (NAT) open, ensuring calls can be received.
-        !!! question "How it works?"
-            1. When using NAT, outbound packets create a temporary port mapping.
-            2. NAT remembers this mapping and routes responses back to the sender.
-            3. UDP has no built-in KeepAlive, so NAT can close inactive ports.
-            4. To prevent this, the system sends a SIP ping every 60 seconds.
-            5. If no response is received, the system times out and deregisters the device.
-            
-            ```mermaid
-            graph TD
-            A[Outbound Packet Sent] --> B[NAT Creates Temporary Port Mapping]
-                B --> C[NAT Remembers Port Mapping and Routes Responses]
-                C --> D[UDP Has No Built-in KeepAlive Mechanism]
-                D --> E[NAT Can Close Inactive Ports After Timeout]
-                E --> F[System Sends SIP Ping Every 60 Seconds to Keep Alive]
-                F --> G{Check for Response from Device}
-                    G -- Yes --> H[Response Received, Continue Operation]
-                    G -- No --> I[No Response, System Times Out]
-                        I --> J[System Deregisters Device Due to Inactivity]
-            ```
-            
+        
+    !!! question "How it works?"
+        1. When using NAT, outbound packets create a temporary port mapping.
+        2. NAT remembers this mapping and routes responses back to the sender.
+        3. UDP has no built-in KeepAlive, so NAT can close inactive ports.
+        4. To prevent this, the system sends a SIP ping every 60 seconds.
+        5. If no response is received, the system times out and deregisters the device.
+   
+    ```mermaid
+    graph TD
+        A[Outbound Packet Sent] --> B[NAT Creates Temporary Port Mapping]
+        B --> C[NAT Remembers Port Mapping and Routes Responses]
+        C --> D[UDP Has No Built-in KeepAlive Mechanism]
+        D --> E[NAT Can Close Inactive Ports After Timeout]
+        E --> F[System Sends SIP Ping Every 60 Seconds to Keep Alive]
+        F --> G{Check for Response from Device}
+            G -- Yes --> H[Response Received, Continue Operation]
+            G -- No --> I[No Response, System Times Out]
+            I --> J[System Deregisters Device Due to Inactivity]
+    ```
     
         :material-menu-right: **`Disabled`**: No pings are sent
         
@@ -407,10 +411,10 @@ To enable, click **:material-plus:** next to SIP User Authentication:
     If you enable Voice Mail, you can set which email address receives messages, reset the Voicemail Password, and view and delete current messages.
 
     **Key Features**:
-    + Enable voicemail for specific extensions.
-    + Configure email notifications for new voicemails.
-    + Set up a voicemail password for retrieval via an interactive menu.
-    + To access voicemail, dial *1 (subject to confirmation in system settings). 
+       + Enable voicemail for specific extensions.
+       + Configure email notifications for new voicemails.
+       + Set up a voicemail password for retrieval via an interactive menu.
+       + To access voicemail, dial *1 (subject to confirmation in system settings). 
     
     See [**Voicemail**](https://docs.connexcs.com/class5/voicemail/) for information on accessing Voicemail. 
 
@@ -419,10 +423,10 @@ ___
 
 !!! Info "Additional Considerations"
     1. **Re-invite Mechanism**:
-       + Used to maintain active calls by sending periodic invite messages to reestablish the call state.
-       + Helps in managing timeouts and ensuring that both sides of the call are aware of its status.
+          + Used to maintain active calls by sending periodic invite messages to reestablish the call state.
+          + Helps in managing timeouts and ensuring that both sides of the call are aware of its status.
     2. **Intercept Re-invite**:
-       + Used in scenarios where customers' equipment cannot handle re-invites properly; the system intercepts and responds on behalf of the customer.
+          + Used in scenarios where customers' equipment can't handle re-invites properly; the system intercepts and responds on behalf of the customer.
 
 ### Channel Capacity Limitation
 
