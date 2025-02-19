@@ -79,20 +79,25 @@ To enable, click **:material-plus:** next to IP Authentication:
             + Configuration
                 + **CLI Routing**: CLIs are used as a secondary authentication mechanism to identify which customer traffic belongs to.
                 !!! Example
-                Joe and Bob share an IP address but have different CLIs; the system uses these CLIs to route calls correctly.
+                    Joe and Bob share an IP address but have different CLIs; the system uses these CLIs to route calls correctly.
+                
                 + **Setup Process**
+                    
                     + **Configuring IP Authentication**:
+                        
                         1. Navigate to **Customer :material-menu-right: Customer [Name] Auth :material-menu-right: IP Authentication :material-menu-right: click on the blue `+` sign**.
+                        
                         2. Under **Advanced settings :material-menu-right: Flag :material-menu-right: Enable CLI Authentication**.
+                        
                         3. This step ensures that the system will use CLI Authentication to differentiate customers with the same IP address.
 
         <img src= "/customer/img/cliauth1.png" width="1000">
         
-            + **Setting Up CLIs or Regular Expressions**:
+                + **Setting Up CLIs or Regular Expressions**:
               
-                + Navigate to **Customer :material-menu-right: Customer [Name] :material-menu-right: Routing :material-menu-right: CLI :material-menu-right: click on the blue `+` sign**.
-                + Enter the specific CLIs, or Regular expressions associated with the customer.
-                + This configuration allows the system to match incoming call CLIs with the defined patterns.
+                    + Navigate to **Customer :material-menu-right: Customer [Name] :material-menu-right: Routing :material-menu-right: CLI :material-menu-right: click on the blue `+` sign**.
+                    + Enter the specific CLIs, or Regular expressions associated with the customer.
+                    + This configuration allows the system to match incoming call CLIs with the defined patterns.
 
         <img src= "/customer/img/cliauth2.png" width= "1000">
     
@@ -127,7 +132,9 @@ To enable, click **:material-plus:** next to IP Authentication:
     + **Configuration**:
         + **Number Formatting**:
             Strip leading zeros or add country codes based on regular expressions.
+            
             **Example**: Changing 01782 to 441782 for international formatting.
+
         + **Destination Number or CLI Manipulation**:
             Apply these manipulations on either destination numbers or CLIs.
 
@@ -242,16 +249,16 @@ To enable, click **:material-plus:** next to SIP User Authentication:
             I --> J[System Deregisters Device Due to Inactivity]
     ```
     
-        :material-menu-right: **`Disabled`**: No pings are sent
+            :material-menu-right: **`Disabled`**: No pings are sent
         
-        :material-menu-right: **`Enabled`**: Send UDP pings every 60 seconds, helping to keep some longer calls (1800 or 3600 seconds) up. 
+            :material-menu-right: **`Enabled`**: Send UDP pings every 60 seconds, helping to keep some longer calls (1800 or 3600 seconds) up. 
         
-        :material-menu-right: **`Enabled (Timeout)`**: Send UDP pings every 60 seconds and disconnect the call (terminate registration) if the pings aren't returned.
+            :material-menu-right: **`Enabled (Timeout)`**: Send UDP pings every 60 seconds and disconnect the call (terminate registration) if the pings aren't returned.
 
-        !!! danger "Common Issue"
-            **Outbound calls work, but inbound calls fail**:
-            + This usually indicates a NAT issue where the port has closed.
-            + Enabling NAT SIP Ping keeps the port open.
+            !!! danger "Common Issue"
+                **Outbound calls work, but inbound calls fail**:
+                  + This usually indicates a NAT issue where the port has closed.
+                  + Enabling NAT SIP Ping keeps the port open.
     
     + **Retain DID**: When you enable this, inbound calls will retain the destination number (DID), and the call is sent into the system, rather than using the SIP Username or routing calls to a predefined destination. 
         + **Key Considerations**:
