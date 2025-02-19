@@ -9,7 +9,14 @@ Use the **Auth** tab to configure IP or SIP (Username / Password) Authentication
 
 ## IP Authentication
 
-When you enable **IP Authentication**, you link a customer switch's IP address to their account. This adds a layer of security by ensuring the calls are coming from a trusted source.
+When you enable **IP Authentication**, you link a customer switch's IP address to their account.
+
+ It involves verifying incoming traffic based on the source IP address.
+
+ This adds a layer of security by ensuring the calls are coming from a trusted source.
+
+ !!! question "How it works"
+    **Matching IP Addresses**: When a packet arrives from a specific IP address (e.g., 1.1.1.1), the system matches it to the corresponding customer.
 
 !!! error "Newly added IP immediately marked as Blocked under IP Authentication"
     This occurs because call requests were sent from the new IP before it's authorized. As a result, ConnexCS fraud detection in the firewall blocked the unauthorised IP. Attempted calls from this IP won't get completed.
@@ -26,15 +33,15 @@ To enable, click **:material-plus:** next to IP Authentication:
 
 === "Basic"
 
-    + **IP**: Enter specific IPs or use CIDR notation to specify an entire subnet.<br>**FQDN can be used for Ingress-only switches.** You can assign multiple IPs.
+    + **IP/CIDR**: Enter specific IPs or use CIDR notation to specify an entire subnet.<br>**FQDN can be used for Ingress-only switches.** You can assign multiple IPs.
     + **Switch Direction**: The available options are from the perspective of the customer switch (PBX, dialer, etc), and describe how that switch interacts with the ConnexCS switch. For switches that send and receive calls from ConnexCS, there should be separate entries for each direction. Two types of switches are as follows:    
         
-        :material-menu-right: This switch *receives* calls from ConnexCS. (Note: When selected, this gives the option of using the FQDN rather than the switch IP.)
+        :material-menu-right: **This endpoint receives calls**. This switch *receives* calls from ConnexCS. (Note: When selected, this gives the option of using the FQDN rather than the switch IP.)
         
-        :material-menu-right: This switch *sends* calls to ConnexCS.
+        :material-menu-right: **This endpoint receives calls**. This switch *sends* calls to ConnexCS.
         
     + **Channels**: Set the maximum number of concurrent calls for this switch. 
-    + **Flow Speed**: Set the Calls Per Second (CPS) (0 = unlimited calls).   
+    + **Flow Speed**: Set the Calls Per Second (CPS) (0 = unlimited calls). A value of zero represents unlimited.
     
         <img src="/customer/img/basic12.png">
 
@@ -63,11 +70,16 @@ To enable, click **:material-plus:** next to IP Authentication:
     + **Outbound Proxy**: Enter the IP address of a Proxy server for calls to route to before being sent to the carrier. This rewrites the UAC IP in the VIA field of the SIP header. 
     This reduces management overhead as a customer only needs to authorize a single IP. 
     Additionally, multiple addresses can be load-balanced using the AnyEdge system. 
-    + **Flags**: Set CLI Authentication for situations where Accounts are unable to use [**Tech Prefix**](https://docs.connexcs.com/customer/routing/#basic) to differentiate customers using the same IP. CLI Tags is another way to do it.
+    + **Flags**: Check **CLI Authentication** flag for situations where Accounts are unable to use [**Tech Prefix**](https://docs.connexcs.com/customer/routing/#basic) to differentiate customers using the same IP. CLI Tags is another way to do it. 
+        Check **Disable NAT** flag to disable NAT settings.
   
         <img src= "/customer/img/advanced.png" width= "600">
     
         + **CLI Authentication**: Select this flag to distinguish between multiple customers sharing the same IP address by using CLI Authentication instead of Tech Prefix.
+        + Configuration
+            + **CLI Routing**: CLIs are used as a secondary authentication mechanism to identify which customer traffic belongs to.
+            !!! Example
+                Joe and Bob share an IP address but have different CLIs; the system uses these CLIs to route calls correctly.
             + **Setup Process**
                 + **Configuring IP Authentication**:
                     1. Navigate to **Customer :material-menu-right: Customer [Name] Auth :material-menu-right: IP Authentication :material-menu-right: click on the blue `+` sign**.
@@ -101,15 +113,23 @@ To enable, click **:material-plus:** next to IP Authentication:
 
 === "Codecs"
 
-    All Codecs are supported unless specifically set as "Restricted" here.
+    All Codecs are supported unless specifically set as **`Restricted`** here.
 
     <img src= "/customer/img/codecs.png" width= "600"> 
 
 === "Parameter Rewrite"
 
-    The **Parameter Rewrite** tab is used to manipulate data as it comes into the system. 
+    The **Parameter Rewrite** tab is used to manipulate data as it comes into the system, particularly useful for formatting phone numbers.
+
+    !!! question "When and Why is it useful?"
+        It is most useful when you need to create **automatic replacements** for destination numbers or CLI, so a number is formatted in the appropriate [**E164 format**](https://en.wikipedia.org/wiki/E.164). 
     
-    It is most useful when you need to create automatic replacements for destination numbers or CLI, so a number is formatted in the appropriate [**E164 format**](https://en.wikipedia.org/wiki/E.164). 
+    + **Configuration**:
+        + **Number Formatting**:
+            Strip leading zeros or add country codes based on regular expressions.
+            **Example**: Changing 01782 to 441782 for international formatting.
+        + **Destination Number or CLI Manipulation**:
+            Apply these manipulations on either destination numbers or CLIs.
 
     1. Click **`+`**.
     2. **Type**: Select the parameter to modify.
@@ -126,9 +146,16 @@ To enable, click **:material-plus:** next to IP Authentication:
 !!! Note
     [Click here](https://cidr.xyz/) to view an interactive IP address and CIDR range visualizer.
 
+!!! Info "NAT Considerations"
+    **Network Address Translation (NAT)**: NAT can cause issues with SIP communications due to internal vs. external IP addresses.
+    * **STUN (Session Traversal Utilities for NAT)**: Clients can use STUN to determine their external IP address and update SIP packets accordingly.
+    * **Application Layer Gateway (ALG)**: NAT devices can rewrite SIP packets to use external IP addresses, though this method is unreliable.
+    * **Far-end NAT Traversal**: The system can detect and adjust for NAT by checking IP headers and assuming the correct external IP address.
+
 ## SIP User Authentication
 
-When you enable **SIP Authentication**, ConnexCS will reject the initial SIP INVITE with a "407 Authentication Required". This message includes a 'nonce' (a uniquely randomly generated hashed number). The customer switch will send appropriate authentication information to ConnexCS, which will connect the call.
+When you enable **SIP Authentication**, ConnexCS will reject the initial SIP INVITE with a "407 Authentication Required". This message includes a 'nonce' (a uniquely randomly generated hashed number). The customer switch will send appropriate authentication information to ConnexCS, which will connect the call. 
+SIP Authentication involves using **Usernames** and **Passwords** to authenticate SIP connections.
 
 Generic SIP Trace showing the Challenge Response:
 
@@ -156,6 +183,10 @@ The Username is sent on Plain-text and the user (Alice) hashes the password. [**
 
 !!! note "407 Proxy Authentication is a part of Challenge-Response and is necessary when you proceed with SIP User Auth. Also you can't have **IP Authentication** and **User / Password Authentication** work together"
 
+!!! Info "UAC vs. UAS"
+    **UAC (User Agent Client)**: Acts as a client, typically used when sending calls out.
+    **UAS (User Agent Server)**: Acts as a server, typically used when receiving calls.
+
 ### Enable SIP User Authentication
 
 To enable, click **:material-plus:** next to SIP User Authentication:
@@ -165,7 +196,10 @@ To enable, click **:material-plus:** next to SIP User Authentication:
 === "Basic"
 
     + **SIP Profile**: You can select the created [SIP Profile](https://docs.connexcs.com/setup/config/sip-profile/) here.
-    + **Username**: This will be the Username used for SIP authentication (must match configuration on the customer UAC). If the Customer has [**Internal Number Block**](https://docs.connexcs.com/customer/main/#internal-number-block) set on the **Main** tab, you can only select the Username from available extensions. If a Username is already in use on the Account, they will get an error "Duplicate User Detected".
+    + **Username**: This will be the Username used for SIP authentication (must match configuration on the customer UAC). If the Customer has [**Internal Number Block**](https://docs.connexcs.com/customer/main/#internal-number-block) set on the **Main** tab, you can only select the Username from available extensions. If a Username is already in use on the Account, they will get an error "Duplicate User Detected". Required when sending calls out to a remote system; the switch behaves in UAC (User Agent Client) mode.
+        !!! Example
+            If connecting to a GSM gateway or multi-tenant system, you may need to register with a username and password.
+
     + **Password**: Must match with the configuration on the customer UAC.
     + **Channels**: Set the maximum number of concurrent calls for this switch. 
     + **Flow Speed**: Set the Calls Per Second (CPS) (0 = unlimited calls). 
@@ -182,15 +216,47 @@ To enable, click **:material-plus:** next to SIP User Authentication:
         :material-menu-right: **`SMPP`**: SMPP, for SMS, is currently not supported.
 
     + **IP Allow list**: Enter specific IPs or use CIDR notation to specify an entire subnet.
-    + **NAT/SIP Ping**: Set behavior of pings sent from ConnexCS back to the customer through their firewall to their UAC. This helps when there are remote agents connecting to the switch. 
+    + **NAT/SIP Ping**: Set behavior of pings sent from ConnexCS back to the customer through their firewall to their UAC. This helps when there are remote agents connecting to the switch. NAT/SIP Ping is used to keep the network address translation (NAT) open, ensuring calls can be received.
+        !!! question "How it works?"
+            1. When using NAT, outbound packets create a temporary port mapping.
+            2. NAT remembers this mapping and routes responses back to the sender.
+            3. UDP has no built-in KeepAlive, so NAT can close inactive ports.
+            4. To prevent this, the system sends a SIP ping every 60 seconds.
+            5. If no response is received, the system times out and deregisters the device.
+            
+            ```mermaid
+            graph TD
+            A[Outbound Packet Sent] --> B[NAT Creates Temporary Port Mapping]
+                B --> C[NAT Remembers Port Mapping and Routes Responses]
+                C --> D[UDP Has No Built-in KeepAlive Mechanism]
+                D --> E[NAT Can Close Inactive Ports After Timeout]
+                E --> F[System Sends SIP Ping Every 60 Seconds to Keep Alive]
+                F --> G{Check for Response from Device}
+                    G -- Yes --> H[Response Received, Continue Operation]
+                    G -- No --> I[No Response, System Times Out]
+                        I --> J[System Deregisters Device Due to Inactivity]
+            ```
+            
     
         :material-menu-right: **`Disabled`**: No pings are sent
         
         :material-menu-right: **`Enabled`**: Send UDP pings every 60 seconds, helping to keep some longer calls (1800 or 3600 seconds) up. 
         
         :material-menu-right: **`Enabled (Timeout)`**: Send UDP pings every 60 seconds and disconnect the call (terminate registration) if the pings aren't returned.
+
+        !!! danger "Common Issue"
+            **Outbound calls work, but inbound calls fail**:
+            + This usually indicates a NAT issue where the port has closed.
+            + Enabling NAT SIP Ping keeps the port open.
     
-    + **Retain DID**: When you enable this, inbound calls will retain the destination number (DID), and the call is sent into the system, rather than using the SIP Username. 
+    + **Retain DID**: When you enable this, inbound calls will retain the destination number (DID), and the call is sent into the system, rather than using the SIP Username or routing calls to a predefined destination. 
+        + **Key Considerations**:
+          + This does not affect the "From" number.
+          + Useful for maintaining correct call routing.
+        !!! Example
+            + **Without Retain DID**: Call to +1234567890 routes to TestRIS1.
+            + **With Retain DID**: The call retains +1234567890 as the destination.
+   
     + **Smart Extension**: It simplifies call transfers and enables advanced features like call barging and interception by centralizing REFER message handling within the Class 5 system. Unlike traditional SIP workflows, where the UAC or softphone manages transfers, this approach offloads complexity to us, enhancing functionality, user experience, and control through seamless integration of Class 4 and Class 5 systems.
           
           + **Smart Extension Workflow**:
@@ -338,12 +404,25 @@ To enable, click **:material-plus:** next to SIP User Authentication:
 
 === "Voice Mail"
 
-    If you enable Voice Mail, you can set which email address receives messages, reset the Voicemail Password, and view and delete current messages. 
+    If you enable Voice Mail, you can set which email address receives messages, reset the Voicemail Password, and view and delete current messages.
+
+    **Key Features**:
+    + Enable voicemail for specific extensions.
+    + Configure email notifications for new voicemails.
+    + Set up a voicemail password for retrieval via an interactive menu.
+    + To access voicemail, dial *1 (subject to confirmation in system settings). 
     
     See [**Voicemail**](https://docs.connexcs.com/class5/voicemail/) for information on accessing Voicemail. 
 
     <img src= "/customer/img/voicemail.png" width= "600"/>
 ___
+
+!!! Info "Additional Considerations"
+    1. **Re-invite Mechanism**:
+       + Used to maintain active calls by sending periodic invite messages to reestablish the call state.
+       + Helps in managing timeouts and ensuring that both sides of the call are aware of its status.
+    2. **Intercept Re-invite**:
+       + Used in scenarios where customers' equipment cannot handle re-invites properly; the system intercepts and responds on behalf of the customer.
 
 ### Channel Capacity Limitation
 
@@ -437,6 +516,14 @@ Customers using the Customer Portal can reset their SIP Passwords in [**Authenti
 
 Use `Send` next to the SIP User to send a SIP message to the end device which will flash on the phone.
 
+**Key Features**:
+
+1. Allows sending SIP messages to customer devices.
+2. Works similarly to a flash message on a phone.
+3. Used for notifying users (e.g., server restarts, alerts).
+
+!!! Note "Users cannot reply to messages."
+
 ### SIP Pings
 
 **Case 1: Normal SIP Ping**
@@ -483,6 +570,55 @@ In a typical configuration, a packet is sent from the customer UAC out through a
 + UDP doesn't send keep-alives (no connected state as with TCP). SIP does maintain a connected state, registration, but may have long periods of inactivity.
 + Without regular traffic passing between UAS and UAC in the form of keep-alives/registration (a normal occurrence), NAT will eventually time out and shut down the connection.
 + Enabling UDP or SIP pings can show the NAT/firewall that the signaling path is still valid and in use.
+
+!!! question "How NAT/SIP Ping measures Latency"
+    1. A SIP ping request is sent to the User Agent Client (UAC).
+    2. When a response is received, the system calculates latency.
+    3. Useful for diagnosing VoIP quality issues.
+    4. Can help troubleshoot high latency due to poor mobile network connections.
+    ```mermaid
+    graph TD
+    A[SIP Ping Request Sent to UAC] --> B[UAC Receives Request]
+        B --> C[UAC Sends Response Back]
+        C --> D[System Receives Response]
+        D --> E[Calculate Round-Trip Time-RTT Latency]
+            E --> F[Latency Calculated]
+                F --> G{Evaluate VoIP Quality}
+                    G -- High Latency --> H[Troubleshoot Poor Mobile Network Connections]
+                        H --> J[Adjust Network Settings or Contact Provider]
+                    G -- Normal Latency --> I[Continue Normal Operation]
+    ```
+
+## Summary (Features and its Benefits)
+
+|Feature|Benefit|
+|-------|-------|
+| **IP Authentication**|**Simplifies authentication**: Matches incoming packets to known IPs without requiring credentials.
+||**Faster call setup**: Eliminates authentication delays compared to username/password authentication.
+||**Enhanced security**: Restricts SIP access to trusted IPs, reducing unauthorized access.
+||**Easier troubleshooting**: Directly links calls to customers based on IP logs.|
+|**SIP Authentication**|**Enhanced Security**: Prevents unauthorized access, protects against SIP fraud, and stops spoofing.|
+||**Flexible Authentication Methods**: Supports both IP-based authentication for simplicity and username/password authentication for added security.|
+||**Call Routing Control**: Ensures calls originate from legitimate sources, aiding in traffic management.|
+||**Better Network Management**: Helps with tracking, monitoring, and debugging SIP traffic.|
+||**Prevents Toll Fraud**" Ensures only authorized users can make costly calls, reducing hacking risks.|
+|| **Seamless Interoperability**: Works across various VoIP platforms and protocols.|
+||**Optimized Performance**: Reduces authentication latency and improves call setup efficiency.|
+|**Switch Direction**|**Clear traffic direction**: Helps in identifying whether the system is sending or receiving calls.
+||**Accurate routing**: Ensures correct configuration for incoming and outgoing calls.
+||**Efficient call management**: Supports handling of both call directions separately when needed.|
+|**FQDN (Fully Qualified Domain Name) vs. IP Address**|**Flexibility**: Using an FQDN (e.g., sip.mycompany.com) allows dynamic IP changes without reconfiguration.|
+||**Scalability**: Easier to manage SIP endpoints with DNS rather than hardcoded IPs.|
+||**Improved redundancy**: If a server IP changes, DNS updates can redirect calls seamlessly.|
+|**Codec Filtering**|**Optimized call quality**: Allows selection of preferred codecs for better audio transmission.|
+||**Bandwidth efficiency**: Removes unnecessary codecs, reducing bandwidth usage.|
+||**Better compatibility**: Ensures interoperability between different VoIP systems.||
+|**Force NAT**|**Ensures connectivity**: Overrides incorrect NAT settings to allow SIP communication.|
+||**Fixes one-way audio issues**: Helps in cases where audio streams are not properly routed.|
+||**Reduces manual intervention**: Automatically detects and corrects NAT issues without requiring user configuration.
+|**Intercept Re-Invite & Call Timeout Mechanisms**|**Prevents stuck calls**: Ensures that SIP calls properly terminate when needed.|
+||**Enhances call quality**: Enables re-negotiation of codecs or call parameters if needed.|
+||**Avoids ghost calls & billing issues**: Ensures calls don’t remain active indefinitely due to lost BYE messages.|
 
 [ipauth-basic]: /customer/img/ipauth-b.png "Edit Switch Basic"
 [parameter-rewrite]: /customer/img/parameter-rewrite.png "Parameter Rewrite" width="200" height="400"
