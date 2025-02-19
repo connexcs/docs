@@ -96,10 +96,13 @@ To enable, click **:material-plus:** next to IP Authentication:
 
         <img src= "/customer/img/cliauth1.png" width="1000">
         
-                + **Setting Up CLIs or Regular Expressions**:
-                    + Navigate to **Customer :material-menu-right: Customer [Name] :material-menu-right: Routing :material-menu-right: CLI :material-menu-right: click on the blue `+` sign**.
-                    + Enter the specific CLIs, or Regular expressions associated with the customer.
-                    + This configuration allows the system to match incoming call CLIs with the defined patterns.
+            + **Setting Up CLIs or Regular Expressions**:
+                
+                + Navigate to **Customer :material-menu-right: Customer [Name] :material-menu-right: Routing :material-menu-right: CLI :material-menu-right: click on the blue `+` sign**.
+                
+                + Enter the specific CLIs, or Regular expressions associated with the customer.
+                
+                + This configuration allows the system to match incoming call CLIs with the defined patterns.
 
         <img src= "/customer/img/cliauth2.png" width= "1000">
     
@@ -232,9 +235,12 @@ To enable, click **:material-plus:** next to SIP User Authentication:
 
     + **IP Allow list**: Enter specific IPs or use CIDR notation to specify an entire subnet.
     + **NAT/SIP Ping**: Set behavior of pings sent from ConnexCS back to the customer through their firewall to their UAC. This helps when there are remote agents connecting to the switch. NAT/SIP Ping is used to keep the network address translation (NAT) open, ensuring calls can be received.
-      + :material-menu-right: **`Disabled`**: No pings are sent
-      + :material-menu-right: **`Enabled`**: Send UDP pings every 60 seconds, helping to keep some longer calls (1800 or 3600 seconds) up. 
-      + :material-menu-right: **`Enabled (Timeout)`**: Send UDP pings every 60 seconds and disconnect the call (terminate registration) if the pings aren't returned.
+        
+        :material-menu-right: **`Disabled`**: No pings are sent
+        
+        :material-menu-right: **`Enabled`**: Send UDP pings every 60 seconds, helping to keep some longer calls (1800 or 3600 seconds) up. 
+        
+        :material-menu-right: **`Enabled (Timeout)`**: Send UDP pings every 60 seconds and disconnect the call (terminate registration) if the pings aren't returned.
 
         
     !!! question "How it works?"
@@ -420,6 +426,7 @@ To enable, click **:material-plus:** next to SIP User Authentication:
     If you enable Voice Mail, you can set which email address receives messages, reset the Voicemail Password, and view and delete current messages.
 
     **Key Features**:
+       
        + Enable voicemail for specific extensions.
        
        + Configure email notifications for new voicemails.
