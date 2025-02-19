@@ -522,7 +522,7 @@ Use `Send` next to the SIP User to send a SIP message to the end device which wi
 2. Works similarly to a flash message on a phone.
 3. Used for notifying users (e.g., server restarts, alerts).
 
-!!! Note "Users cannot reply to messages."
+!!! Note "Users can't reply to messages."
 
 ### SIP Pings
 
