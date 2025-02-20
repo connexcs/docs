@@ -2,6 +2,7 @@
 
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Routing**
 
+overview
 **CLI (Caller Line Identification)**, aka ANI (Automatic Number Identification), is the From header in SIP. It represents the sender's number in a telephone call. It's the technical term for the mechanism we know as Caller ID.
 
 In VoIP systems, CLI is more than just a way to display the number of incoming calls. It's used as a defense against unidentified call attempts.
@@ -9,6 +10,9 @@ In VoIP systems, CLI is more than just a way to display the number of incoming c
 CLI provides information to sort incoming calls. It's an important component of billing.
 
 In ConnexCS, **CLI** lets you restrict and manipulate CLIs and Pre-Asserted Identity on customer calls so that any caller without a valid match gets rejected instantly.
+
+It is also referred to as the **A-number or A-leg**, representing the **incoming call to the switch**.
+The **B-number, or B-leg**, is the **dialed number**, representing the **outgoing call from the switch**.
 
 !!! tip "How's CLI derived?"
     **CLI** refers to the **CLI/ANI** field in the `From` part of the `SIP INVITE` message. This contains specific information about the caller.
@@ -19,7 +23,23 @@ In ConnexCS, **CLI** lets you restrict and manipulate CLIs and Pre-Asserted Iden
 
 &emsp;![alt text][cli]
 
-## Default Behaviour
+### Key Features & Benefits
+
+1. **Granular Control**: Define which CLIs can pass through the system.
+
+2. **Security & Compliance**: Restrict unauthorized calls based on CLI rules.
+
+3. **Pattern Matching**: Utilize regular expressions to allow or block specific CLIs.
+
+4. **Forced CLI Assignments**: Ensure calls use predefined numbers when necessary.
+
+5. **Peer-Asserted Identity Management**: Manage trust and visibility of caller IDs at the network level.
+
+6. **Directional Routing**: Apply rules to both inbound (origination) and outbound calls.
+
+## CLI Routing Rules
+
+1. **Default Behaviour**
 
 By default, a customer account will pass all calls, even with no configured CLI records. To change this behavior, navigate to Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Edit :material-menu-right: Verification and enable [**Approved CLI's Only**](https://docs.connexcs.com/customer/cli/#allow-customers-to-add-their-own-caller-line-identification).
 
@@ -31,6 +51,22 @@ By default, a customer account will pass all calls, even with no configured CLI 
 
     A customer can login to their portal and enter a phone number that should belong to them. The ConnexCS system will place a call and give a code that must be entered into the portal. If the codes match, the CLI is then added.
 
+!!! Note "Summary"
+    1. By default, if CLI restrictions aren't enabled, all incoming CLIs are allowed and passed through the system without filtering.
+    2. If CLI restrictions are enabled but no numbers are listed, no calls will be allowed.
+
+2. **CLI Allow List**
+
++ If a single CLI is added to the list, only that specific number is permitted.
++ If multiple numbers exist in the list, only those numbers can pass.
++ Calls using a CLI not in the list will be blocked with a "CLI restriction in effect" message.
+
+3. **Forced CLI**
+
++ When a "Forced" CLI is set, any call that doesn't match an allowed CLI will be assigned the forced CLI.
++ If a caller uses the forced CLI as their A-number, the call will pass through normally.
++ If multiple forced CLIs are set, the system typically applies the first listed option.
+
 ## Creating a Record
 
 Click :material-plus: under **CLI**.
@@ -39,9 +75,22 @@ _Field details:_
 
 + **CLI**: To allow the required CLIs, enter the required number or a regular expression (to match and replace).
 
-+ **Rewrite CLI**: A CLI can be rewritten. For example, you can add `123456789` in the CLI box and then rewrite by adding `987654321` in the rewrite CLI box. (For more advanced CLI manipulation, see [**Advanced CLI Match & Manipulation**](https://docs.connexcs.com/customer/cli/#advanced-cli-match-and-manipulation) below.
++ **Rewrite CLI**: A CLI can be rewritten. For example, you can add `123456789` in the CLI box and then rewrite by adding `987654321` in the rewrite CLI box. (For more advanced CLI manipulation, see [**Advanced CLI Match & Manipulation**](https://docs.connexcs.com/customer/cli/#advanced-cli-match-and-manipulation) below.)
 
-+ **Pre-Asserted-ID (PAID)**: To allow the required PAID, enter the required number or a regular expression to match or replace.
++ **Pre-Asserted-ID (PAID)**: The Peer-Asserted Identity (P-Asserted-ID) header is used in telecom networks to verify the actual caller identity. It helps carriers trace calls and enforce security. To allow the required PAID, enter the required number or a regular expression to match or replace.
+  + **Purpose**:
+    + **Caller ID Management**: Determines whether the presented caller ID is trusted.
+    + **Privacy Control**: Ensures withheld numbers remain private while allowing traceability at the network level.
+    + **Regulatory Compliance**: Allows authorities to trace nuisance or fraudulent calls.
+  + **How It Works**:
+    + The "From" field contains the public caller ID, visible to the call recipient.
+    + The "P-Asserted-ID" contains the actual network-level caller ID, which can be different from the "From" number.
+    + Carriers can remove or modify P-Asserted-ID values based on policies.
+  + **Configuration Options**
+    + **Trusting the Client**: Allow the customer's provided P-Asserted-ID to pass through.
+    + **Enforcing a Fixed P-Asserted-ID**: Assign a predefined value regardless of the original caller ID.
+    + **Using a Main Billable Number**: Present a primary company number as the caller ID.
+    + **Utilizing Network Identification Numbers**: Assign a unique but non-dialable identifier for network-level identification.
 
 + **Rewrite P-Asserted-ID**: This is a SIP Header almost same as the FROM header but classified as a private, or network-level identifier.
 Telephone companies use it to identify call originators. As it's stripped at the call server, the client end-points only see the FROM field.
@@ -57,10 +106,13 @@ The **P-Asserted-ID** manipulation uses the same syntax as the Replace CLI.
     !!! Example
         Create a permitted list of CLIs, then select **Forced** on the CLI to use if none of the others in the permitted list match. (Best practice is to have one unique **Forced** CLI.)
 
-+ **Direction Applied**: Select either **Termination** for calls a customer makes out or **Origination** (also refers to DIDs) for inbound calls made to our customers.
++ **Direction Applied**:
+    + **Outbound Calls (Termination)**: Customer dials a number; CLI rules control which caller IDs are allowed to pass.
+    + **Inbound Calls (Origination)**: Calls coming into the system (DID/DDI) can be filtered based on CLI rules.
 
     !!! Example
-        Create a permitted list that exclusively allows calls to or from the same country.  
+        1. Create a permitted list that exclusively allows calls to or from the same country.
+        2. Only allow incoming calls with a CLI starting with 44 (UK numbers).
 
 + **Allow Type**: You can select from various options like Mobile, Paging, VoIP, Satellite etc to allow the CLIs.
 
@@ -345,9 +397,18 @@ Sometimes it can be useful to keep all or part of the transmitted CLI and manipu
 
 #### Regex Pattern Examples
 
-If a customer sends a call where the CLI starts with a 9 we can strip it out and replace it with a 44.
+**CLI Pattern Matching with Regular Expressions
+**
+Regular expressions (regex) can be used to define complex CLI rules:
 
-For example, `9123456789` will become `4423456789`.
+!!! Example
+    1. Allow all numbers that begin with `123456` and end in either `5`, `8`, or `3`.
+    2. If a customer sends a call where the CLI starts with a `9` we can strip it out and replace it with a `44`.
+    So, `9123456789` will become `4423456789`.
+
+Use **regex anchors** (e.g., ^ for start, $ for end) to precisely control matching logic.
+
+Regular expressions enable advanced filtering beyond simple number lists.
 
 | CLI| Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
 |----------------|-----------------|-------------|-----------------------|--------|----------|--------------|
