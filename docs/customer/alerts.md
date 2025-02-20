@@ -122,6 +122,3 @@ Well it’s good news..!!! You can integrate Pushover notifications with the Con
 [alerts-sample1]: /customer/img/alerts-sample1.png "Alert Sample 1"
 [alerts-sample2]: /customer/img/alerts-sample2.png "Alert Sample 2"
 [alerts-sample3]: /customer/img/alerts-sample3.png "Alert Sample 3"
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbNDgwMDM1NjExXX0=
--->
