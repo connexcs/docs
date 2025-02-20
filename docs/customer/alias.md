@@ -11,7 +11,7 @@ This enables efficient call routing and management by dynamically modifying numb
 By leveraging aliases, users can achieve optimized and seamless call routing within the ConnexCS system.
 
 !!! question "How it works?"
-    Aliases modify dialed numbers by:
+    **Aliases modify dialed numbers by**:
 
     * Adding or removing prefixes and suffixes.
     
