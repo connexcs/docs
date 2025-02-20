@@ -12,8 +12,11 @@ By leveraging aliases, users can achieve optimized and seamless call routing wit
 
 !!! question "How it works?"
     Aliases modify dialed numbers by:
+
     * Adding or removing prefixes and suffixes.
+    
     * Replacing specific digits.
+    
     * Using regular expressions for complex rewrites
 
     !!! Example "If a user dials 100, the system can rewrite it to 456100 based on an alias rule. The transformed number then proceeds through the system for further processing."
@@ -45,7 +48,7 @@ By leveraging aliases, users can achieve optimized and seamless call routing wit
 
 2. **Regular Expression-Based Rewrite**: Uses regex patterns to modify numbers dynamically.
 
-    !!! Example:
+    !!! Example
         A five-digit number ([0-9]{5}) can be rewritten using $1, referencing captured groups from the regex pattern.
 
         This allows for flexible transformations, such as preserving part of the original number while modifying the rest.
