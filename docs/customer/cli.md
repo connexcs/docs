@@ -11,7 +11,7 @@ CLI provides information to sort incoming calls. It's an important component of 
 
 In ConnexCS, **CLI** lets you restrict and manipulate CLIs and Pre-Asserted Identity on customer calls so that any caller without a valid match gets rejected instantly.
 
-It is also referred to as the **A-number or A-leg**, representing the **incoming call to the switch**.
+It's also referred to as the **A-number or A-leg**, representing the **incoming call to the switch**.
 The **B-number, or B-leg**, is the **dialed number**, representing the **outgoing call from the switch**.
 
 !!! tip "How's CLI derived?"
@@ -55,13 +55,13 @@ By default, a customer account will pass all calls, even with no configured CLI 
     1. By default, if CLI restrictions aren't enabled, all incoming CLIs are allowed and passed through the system without filtering.
     2. If CLI restrictions are enabled but no numbers are listed, no calls will be allowed.
 
-2. **CLI Allow List**
+2.**CLI Allow List**
 
 + If a single CLI is added to the list, only that specific number is permitted.
 + If multiple numbers exist in the list, only those numbers can pass.
 + Calls using a CLI not in the list will be blocked with a "CLI restriction in effect" message.
 
-3. **Forced CLI**
+3.**Forced CLI**
 
 + When a "Forced" CLI is set, any call that doesn't match an allowed CLI will be assigned the forced CLI.
 + If a caller uses the forced CLI as their A-number, the call will pass through normally.
@@ -78,19 +78,22 @@ _Field details:_
 + **Rewrite CLI**: A CLI can be rewritten. For example, you can add `123456789` in the CLI box and then rewrite by adding `987654321` in the rewrite CLI box. (For more advanced CLI manipulation, see [**Advanced CLI Match & Manipulation**](https://docs.connexcs.com/customer/cli/#advanced-cli-match-and-manipulation) below.)
 
 + **Pre-Asserted-ID (PAID)**: The Peer-Asserted Identity (P-Asserted-ID) header is used in telecom networks to verify the actual caller identity. It helps carriers trace calls and enforce security. To allow the required PAID, enter the required number or a regular expression to match or replace.
-  + **Purpose**:
-    + **Caller ID Management**: Determines whether the presented caller ID is trusted.
-    + **Privacy Control**: Ensures withheld numbers remain private while allowing traceability at the network level.
-    + **Regulatory Compliance**: Allows authorities to trace nuisance or fraudulent calls.
-  + **How It Works**:
-    + The "From" field contains the public caller ID, visible to the call recipient.
-    + The "P-Asserted-ID" contains the actual network-level caller ID, which can be different from the "From" number.
-    + Carriers can remove or modify P-Asserted-ID values based on policies.
-  + **Configuration Options**
-    + **Trusting the Client**: Allow the customer's provided P-Asserted-ID to pass through.
-    + **Enforcing a Fixed P-Asserted-ID**: Assign a predefined value regardless of the original caller ID.
-    + **Using a Main Billable Number**: Present a primary company number as the caller ID.
-    + **Utilizing Network Identification Numbers**: Assign a unique but non-dialable identifier for network-level identification.
+  
+    + **Purpose**:
+        + **Caller ID Management**: Determines whether the     presented caller ID is trusted.
+        + **Privacy Control**: Ensures withheld numbers remain private while allowing traceability at the network level.
+        + **Regulatory Compliance**: Allows authorities to trace nuisance or fraudulent calls.
+
+    + **How It Works**:
+        + The "From" field contains the public caller ID, visible to the call recipient.
+        + The "P-Asserted-ID" contains the actual network-level caller ID, which can be different from the "From" number.
+        + Carriers can remove or modify P-Asserted-ID values based on policies.
+  
+    + **Configuration Options**
+        + **Trusting the Client**: Allow the customer's provided P-Asserted-ID to pass through.
+        + **Enforcing a Fixed P-Asserted-ID**: Assign a predefined value regardless of the original caller ID.
+        + **Using a Main Billable Number**: Present a primary company number as the caller ID.
+        + **Utilizing Network Identification Numbers**: Assign a unique but non-dialable identifier for network-level identification.
 
 + **Rewrite P-Asserted-ID**: This is a SIP Header almost same as the FROM header but classified as a private, or network-level identifier.
 Telephone companies use it to identify call originators. As it's stripped at the call server, the client end-points only see the FROM field.
