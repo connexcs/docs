@@ -2,7 +2,7 @@
 
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Dialogs**
 
-## OVerview
+## Overview
 
 **Dialogs** display the status of current (real-time) active calls on the account.
 
