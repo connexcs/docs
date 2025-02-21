@@ -364,10 +364,8 @@ Enter the number  of channels allowed for transcoding. This is a limited option.
         * **Remove Timer**: Strips out the timer header for compatibility with non-compliant carriers.
 
     **Benefits**:
-        
-        1. Reduces call drops due to session timeouts.
-        
-        2. Ensures carriers properly manage long-duration calls.
+    1. Reduces call drops due to session timeouts.
+    2. Ensures carriers properly manage long-duration calls.
 
 |SST Option| Result|
 |----------|:------|
