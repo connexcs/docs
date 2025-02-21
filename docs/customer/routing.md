@@ -290,16 +290,25 @@ Enter the number  of channels allowed for transcoding. This is a limited option.
 
 !!! Info "Key Features and Benefits"
     **Key Features**:
+       
        1. **Supported Codecs**:
+          
           1. **G.711**: uncompressed, high-quality, available in ULaw & ALaw.
+          
           2. **G.729**: Compressed, Bandwidth-efficient.
+          
           3. **G.722, G.723** (Wideband codecs) for better sound quality.
+          
           4. **Opus, Speex**: WebRTC-compatible codecs.
+       
        2. **Transcoding Channels**: Limits the number of simultaneous transcoding operations.
+       
        3. **Performance Considerations**: Transcoding is resource-intensive; default limits ensure scalability.
 
     **Benefits**:
+       
        1. Enables seamless communication between different network endpoints.
+       
        2. Optimizes bandwidth usage for high-quality VoIP calls.
 
 + **SIP Ping**: SIP Ping ensures call stability by periodically verifying call connection status.
@@ -307,14 +316,21 @@ Enter the number  of channels allowed for transcoding. This is a limited option.
 
 !!! Info "Key Features and Benefits"
     **Key Features**:
+
     1. **Upstream & Downstream Ping**:
+       
        1. **Upstream**: Verifies connection to the receiving carrier.
+       
        2. **Downstream**: Checks connection from the caller's side.
+    
     2. **Prevention of Long-Duration Calls (LDCs)**: Automatically disconnects calls where endpoints fail to signal disconnection.
+    
     3. **Customizable Intervals**: Default interval of 30 seconds for continuous monitoring.
 
     **Benefits**:
+       
        1. Prevents ghost calls.
+       
        2. Ensures real-time call session awareness.
 
 |Option| Result|
@@ -332,16 +348,25 @@ Enter the number  of channels allowed for transcoding. This is a limited option.
 
 !!! Info "Key Features and Benefits"
     **Key Features**:
+
       * **Re-INVITE Mechanism**: Sends a re-invite message every 5 minutes to refresh session state.
+      
       * **Selective Activation**:
+      
         * Can be enabled for upstream, downstream, or both directions.
+      
         * Only relevant at call-originating and terminating endpoints.
+    
     * **Timer Management**:
+    
         * **Suggest Timer**: Encourages the use of timers with an additional session expiration header.
+    
         * **Remove Timer**: Strips out the timer header for compatibility with non-compliant carriers.
 
     **Benefits**:
+        
         1. Reduces call drops due to session timeouts.
+        
         2. Ensures carriers properly manage long-duration calls.
 
 |SST Option| Result|
