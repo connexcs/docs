@@ -20,9 +20,9 @@ The system's goal is to identify suspicious calls and depending on how it's conf
 
 ## Benefits
 
-1. Prevents unauthorized call activities, especially during non-business hours.
-2. Minimizes financial losses due to fraud.
-3. Ensures account security and service continuity.
++ Prevents unauthorized call activities, especially during non-business hours.
++ Minimizes financial losses due to fraud.
++ Ensures account security and service continuity.
 
 
 ## Detection Parameters and Limits

@@ -49,20 +49,19 @@ Ingress Routing in ConnexCS is a crucial component for managing and authenticati
 Ingress Routing supports three primary authentication methods:
 
 1. **IP Authentication**:
-
-   + Calls are authenticated based on the source IP address.
-   + Useful for direct interconnects and trusted partners.
-   + Eliminates the need for username-password-based authentication.
+   1. Calls are authenticated based on the source IP address.
+   2. Useful for direct interconnects and trusted partners.
+   3. Eliminates the need for username-password-based authentication.
 
 2. **Credential-Based Authentication**:
-   + Uses a username and password for authentication.
-   + Suitable for scenarios where IP addresses are dynamic or unknown.
-   + Provides an additional layer of security.
+   1. Uses a username and password for authentication.
+   2. Suitable for scenarios where IP addresses are dynamic or unknown.
+   3. Provides an additional layer of security.
 
 3. **ANI Authentication**:
-   + Authenticates calls based on the caller’s ANI (Automatic Number Identification).
-   + Useful for customers requiring number-based verification.
-   + Can be combined with other authentication methods for enhanced security.
+   1. Authenticates calls based on the caller’s ANI (Automatic Number Identification).
+   2. Useful for customers requiring number-based verification.
+   3. Can be combined with other authentication methods for enhanced security.
 
 ### Ingress Routing Process
 
@@ -75,8 +74,8 @@ Ingress Routing supports three primary authentication methods:
       2. Parameters such as prefixes, customer preferences, and load balancing may influence routing decisions.
 
 4.  **Call Processing**:
-    + Successfully authenticated calls proceed to the designated destination.
-    + Billing and reporting data are updated accordingly.
+    1.  Successfully authenticated calls proceed to the designated destination.
+    2.  Billing and reporting data are updated accordingly.
 
 ```mermaid
 graph TD
@@ -197,7 +196,7 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 ### ScriptForge
 
 + **ScriptForge**: Set a custom JavaScript to run from within the ConnexCS platform in-line with the call. Some example operations could be checking a Do Not Call list or forcing a CLI.
-+ It allows running JavaScript scripts inline with call processing, enabling real-time modifications and checks.
+  It allows running JavaScript scripts inline with call processing, enabling real-time modifications and checks.
 
   For more information about setup and operation, see the [**ScriptForge**](https://docs.connexcs.com/developers/scriptforge/) page.
 
@@ -207,7 +206,6 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 + **Integration with Data Storage**: Uses TOML for configuration and variable storage.
 + **Carrier-Level Routing Controls**: Includes include (whitelist) and exclude (blacklist) carrier options.
 + **Timeout Settings**: Defines the duration a script is allowed to run before termination.
-
 + **Timeout**: Set how long the script may run.
 + **Timeout Action**: This option lets you decide the action when the timeout occurs.
 + **VARS [(TOML)](https://en.wikipedia.org/wiki/TOML)**: Select the variables you want pass into the ScriptForge script.
@@ -215,11 +213,12 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 ### Locks
 
 Used for troubleshooting, you can remove carriers from a route and run a quick test.
+
 The Lock feature allows administrators to define routing restrictions by specifying allowed or excluded carriers.
 
-**Benefits**:
-+ Improves call reliability by dynamically managing carrier performance.
-+ Prevents routing issues from affecting end-user experience.
+!!! Info "Benefits"
+    1. Improves call reliability by dynamically managing carrier performance.
+    2. Prevents routing issues from affecting end-user experience.
 
 + **Lock** (Allow): One or more rate cards from the list of available providers. Ensures calls are only routed through specified carriers. Blocks specific carriers from being used.
 + **Exclude** (Deny): Exclude access to one or more rate cards in the list of available providers.
@@ -259,8 +258,7 @@ The Lock feature allows administrators to define routing restrictions by specify
 
  You can set a **Max Daily Quantity** for your customer's lookups. This restricts them to using only the specific number you allocate, ensuring controlled usage.
 
-!!! Note
-    We don't charge you again if you repeat your lookup within 24-hours of time-span.
+!!! Note "We don't charge you again if you repeat your lookup within 24-hours of time-span."
 
 **Flags**:
 
@@ -284,40 +282,37 @@ The Lock feature allows administrators to define routing restrictions by specify
 
 ### Media
 
-+ **Transcoding**: Transcoding manages different audio codecs to ensure compatibility between the calling and receiving systems.
+**Transcoding**: Transcoding manages different audio codecs to ensure compatibility between the calling and receiving systems.
 
 Enter the number  of channels allowed for transcoding. This is a limited option. The best use case is for customers in low-bandwidth areas that want to use G.729.
 
 !!! Danger "Be aware that if you don't have enough transcoding capacity, calls will fail."
 
 + **Key Features**:
-  
     + **Supported Codecs**:
       + **G.711**: uncompressed, high-quality, available in   ULaw & ALaw.
       + **G.729**: Compressed, Bandwidth-efficient.
       + **G.722, G.723** (Wideband codecs) for better sound quality.
       + **Opus, Speex**: WebRTC-compatible codecs.
-
-   + **Transcoding Channels**: Limits the number of simultaneous transcoding operations.
-   + **Performance Considerations**: Transcoding is resource-intensive; default limits ensure scalability.
+    + **Transcoding Channels**: Limits the number of simultaneous transcoding operations.
+    + **Performance Considerations**: Transcoding is resource-intensive; default limits ensure scalability.
 
 + **Benefits**:
-  + Enables seamless communication between different network endpoints.
-  + Optimizes bandwidth usage for high-quality VoIP calls.
+    + Enables seamless communication between different network endpoints.
+    + Optimizes bandwidth usage for high-quality VoIP calls.
 
 + **SIP Ping**: SIP Ping ensures call stability by periodically verifying call connection status.
   Send regular pings to ensure both sides of a call are still up. `Enabled` is the recommended setting.
+  + **Key Features**:
+    + **Upstream & Downstream Ping**:
+      + **Upstream**: Verifies connection to the receiving carrier.
+      + **Downstream**: Checks connection from the caller's side.
+    + **Prevention of Long-Duration Calls (LDCs)**: Automatically disconnects calls where endpoints fail to signal disconnection.
+    + **Customizable Intervals**: Default interval of 30 seconds for continuous monitoring.
 
-+ **Key Features**:
-  + **Upstream & Downstream Ping**:
-    + **Upstream**: Verifies connection to the receiving carrier.
-    + **Downstream**: Checks connection from the caller's side.
-  + **Prevention of Long-Duration Calls (LDCs)**: Automatically disconnects calls where endpoints fail to signal disconnection.
-  + **Customizable Intervals**: Default interval of 30 seconds for continuous monitoring.
-
-+ **Benefits**:
-  + Prevents ghost calls.
-  + Ensures real-time call session awareness.
+  + **Benefits**:
+    + Prevents ghost calls.
+    + Ensures real-time call session awareness.
 
     |Option| Result|
     |------|:------|
@@ -342,8 +337,8 @@ Enter the number  of channels allowed for transcoding. This is a limited option.
       + **Remove Timer**: Strips out the timer header for compatibility with non-compliant carriers.
 
 + **Benefits**:
-  + Reduces call drops due to session timeouts.
-  + Ensures carriers properly manage long-duration calls.
+    + Reduces call drops due to session timeouts.
+    + Ensures carriers properly manage long-duration calls.
 
     |SST Option| Result|
     |----------|:------|
@@ -365,12 +360,13 @@ Enter the number  of channels allowed for transcoding. This is a limited option.
      +  Enhances call quality by reducing packet loss.
      +  Prevents "hello-hello" delays and interruptions.
 
-   :material-menu-right: `Direct RTP (no proxy)`- Bypass ConnexCS, so media flows directly between the customer and carrier. If the customer is using a firewall or other NAT device incorrectly, then media may not flow between the carrier and the customer. Using this setting also means that if there are audio issues, the issue can't be ConnexCS. Since it isn't likely to be the carrier, the issue would typically exist on the customer's end.<br>**Disadvantages & Risks**:
-   + Leaks Carrier Information: Direct RTP reveals the carrier’s SDP address.
-   + Risk of Disintermediation: Customers can bypass ConnexCS and deal with carriers directly.
+   :material-menu-right: `Direct RTP (no proxy)`- Bypass ConnexCS, so media flows directly between the customer and carrier. If the customer is using a firewall or other NAT device incorrectly, then media may not flow between the carrier and the customer. Using this setting also means that if there are audio issues, the issue can't be ConnexCS. Since it isn't likely to be the carrier, the issue would typically exist on the customer's end.**Disadvantages & Risks**:
+   * **Leaks Carrier Information**: Direct RTP reveals the carrier’s SDP address.
+   * **Risk of Disintermediation**: Customers can bypass ConnexCS and deal with carriers directly.
    + **NAT Issues**:
-     + Incorrect SIP address rewriting can cause one-way audio.
-     + If foreign NAT traversal is needed, ConnexCS cannot assist in media correction.</br>
+       + Incorrect SIP address rewriting can cause one-way audio.
+       + If foreign NAT traversal is needed, ConnexCS cannot assist in media correction.</br>
+
     **Best Practice**:
     + Always inform customers about the risks associated with Direct RTP.
     + Recommend using RTP Proxy when confidentiality and NAT traversal support are needed.
@@ -571,9 +567,9 @@ It enhances call routing by tracking the validity of dialed numbers over a 30-da
 
 1. **Call History Tracking**: The system remembers if a number was successfully connected or failed in the last 30 days
 2. **Automated Call Blocking**:
-   + If a number failed previously with a 404 error, it is automatically blocked for future attempts.
-   + If a number has never been seen, it is allowed through.
-   + If a number is connected successfully, it continues to be allowed.
+      + If a number failed previously with a 404 error, it is automatically blocked for future attempts.
+      + If a number has never been seen, it is allowed through.
+      + If a number is connected successfully, it continues to be allowed.
 
 3. **Customizable Configurations**: Users can tweak settings to define how ASR+ handles call failures and successes.
 4. **Carrier Load Optimization**: Reduces unnecessary call attempts, preventing high call-per-second rates to invalid numbers.
