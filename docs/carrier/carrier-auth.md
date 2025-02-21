@@ -21,14 +21,14 @@
 2. Carrier **SIP User Authentication** is only used to allow a carrier to connect to the system, not for outbound connections.
 [**Customer Auth**](https://docs.connexcs.com/customer/auth/) gives information on the field details.  
 
-   + **Capability**:
-       + Allows carriers to authenticate via SIP user credentials.
-       + Typically not required but available for advanced configurations.
+   1. **Capability**:
+         1. Allows carriers to authenticate via SIP user credentials.
+         2. Typically not required but available for advanced configurations.
 
-   + **Key Features & Benefits**:
-       + **Comprehensive Credit Management**: Helps track and manage carrier credit effectively.
-       + **Automated Failure Detection**: Identifies route failures without relying on manual monitoring.
-       + **Flexible SIP Response Handling**: Customizes responses to ensure compatibility with different carriers.
-       + **Enhanced Security & Authentication**: Supports multiple authentication methods for secure carrier interactions.
-       + **Optimized Routing & Load Balancing**: Enables intelligent traffic distribution across carrier gateways.
-       + **Efficient Parameter Rewriting**: Ensures seamless call processing by maintaining a uniform number format.
+   2. **Key Features & Benefits**:
+         1. + **Comprehensive Credit Management**: Helps track and manage carrier credit effectively.
+         2. **Automated Failure Detection**: Identifies route failures without relying on manual monitoring.
+         3. **Flexible SIP Response Handling**: Customizes responses to ensure compatibility with different carriers.
+         4. **Enhanced Security & Authentication**: Supports multiple authentication methods for secure carrier interactions.
+         5. **Optimized Routing & Load Balancing**: Enables intelligent traffic distribution across carrier gateways.
+         6. **Efficient Parameter Rewriting**: Ensures seamless call processing by maintaining a uniform number format.

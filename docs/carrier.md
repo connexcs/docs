@@ -11,14 +11,15 @@ Use the **Carrier** section in **ConnexCS** for simplified Carrier management wh
 ### Key Features
 
 1. **Credit System**:
-   1. **Credit Calculation**:
-      1. The carrier's credit runs in reverse compared to the customer's credit.
-      2. As both the customer and carrier spend, credits decrease.
-    2. **Call Completion**:
-       1. A call may not complete if a customer lacks credit
-       2. Calls will still connect if a carrier has credit; the carrier credit field is informational and doesn't prevent calls.
+      1. **Credit Calculation**:
+            1. The carrier's credit runs in reverse compared to the customer's credit.
+            2. As both the customer and carrier spend, credits decrease.
+      2. **Call Completion**:
+            1.  A call may not complete if a customer lacks credit.
+            2.  Calls will still connect if a carrier has credit; the carrier credit field is informational and doesn't prevent calls.
+
 2.  **Carrier Rate Cards**:
-        1.  **Rate Card Structure**: 
+        1.  **Rate Card Structure**:
         2.  Every carrier has one or more rate cards.
         3.  Each rate card contains the charges imposed by the carrier.
 
