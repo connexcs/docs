@@ -50,10 +50,10 @@ The Customer **CDR** tab lists Call Detail Records associated with the selected 
 When viewing CDRs for a specific customer, use the **`Recalc CDR`** button to refresh CDR data that may be inaccurate. Each Operation displays different fields.
 
 * **Operations**
-  * Refresh Credit (recalculates balances)
-  * Refresh Summaries & Credit
-  * Re-rate Calls, and Refresh Summaries & Credit
-  * Adjust Call Duration, Re-rate Calls, and Refresh Summaries and Credit
+    * Refresh Credit (recalculates balances)
+    * Refresh Summaries & Credit
+    * Re-rate Calls, and Refresh Summaries & Credit
+    * Adjust Call Duration, Re-rate Calls, and Refresh Summaries and Credit
 
 * **Date (UTC)** (for Refresh operations)
 
