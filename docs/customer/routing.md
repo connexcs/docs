@@ -305,24 +305,24 @@ Enter the number  of channels allowed for transcoding. This is a limited option.
 + **SIP Ping**: SIP Ping ensures call stability by periodically verifying call connection status.
   Send regular pings to ensure both sides of a call are still up. `Enabled` is the recommended setting.
 
-  !!! Info "Key Features and Benefits"
-        **Key Features**:
-         1. **Upstream & Downstream Ping**:
-            1. **Upstream**: Verifies connection to the receiving carrier.
-            2. **Downstream**: Checks connection from the caller's side.
-         2. **Prevention of Long-Duration Calls (LDCs)**: Automatically disconnects calls where endpoints fail to signal disconnection.
-         3. **Customizable Intervals**: Default interval of 30 seconds for continuous monitoring.
+!!! Info "Key Features and Benefits"
+    **Key Features**:
+    1. **Upstream & Downstream Ping**:
+       1. **Upstream**: Verifies connection to the receiving carrier.
+       2. **Downstream**: Checks connection from the caller's side.
+    2. **Prevention of Long-Duration Calls (LDCs)**: Automatically disconnects calls where endpoints fail to signal disconnection.
+    3. **Customizable Intervals**: Default interval of 30 seconds for continuous monitoring.
 
     **Benefits**:
        1. Prevents ghost calls.
        2. Ensures real-time call session awareness.
 
-    |Option| Result|
-    |------|:------|
-    |**Disabled**| No SIP pings will be sent |
-    |**Enabled Both Sides**| SIP pings sent in both directions |
-    |**Enabled (Downstream Only)**| SIP Pings sent to the location where the call originated |
-    |**Enabled (Upstream Only)**| SIP Pings sent towards where the call is TO (terminated) |
+|Option| Result|
+|------|:------|
+|**Disabled**| No SIP pings will be sent |
+|**Enabled Both Sides**| SIP pings sent in both directions |
+|**Enabled (Downstream Only)**| SIP Pings sent to the location where the call originated |
+|**Enabled (Upstream Only)**| SIP Pings sent towards where the call is TO (terminated) |
 
 + **SIP Session Timer (SST)**: SST is Passive by Default, but **Enabled** is the recommended setting.
   When enabled, SST ensures there is no ghost or long-duration calls get billed when one or both sides have hung up. A timer activates when the call starts and refreshes the call every X number of seconds by sending a RE-INVITE.
@@ -330,40 +330,43 @@ Enter the number  of channels allowed for transcoding. This is a limited option.
 
   Session Timers periodically revalidate call sessions to ensure continued connectivity.
 
-    !!! Info "Key Features and Benefits"
-        **Key Features**:
-         1. **Re-INVITE Mechanism**: Sends a re-invite message every 5 minutes to refresh session state.
-         2. **Selective Activation**:
-           + Can be enabled for upstream, downstream, or both directions.
-           + Only relevant at call-originating and terminating endpoints.
-         3. **Timer Management**:
-             1. **Suggest Timer**: Encourages the use of timers with an additional session expiration header.
-             2. **Remove Timer**: Strips out the timer header for compatibility with non-compliant carriers.
+!!! Info "Key Features and Benefits"
+    **Key Features**:
+      * **Re-INVITE Mechanism**: Sends a re-invite message every 5 minutes to refresh session state.
+      * **Selective Activation**:
+        * Can be enabled for upstream, downstream, or both directions.
+        * Only relevant at call-originating and terminating endpoints.
+    * **Timer Management**:
+        * **Suggest Timer**: Encourages the use of timers with an additional session expiration header.
+        * **Remove Timer**: Strips out the timer header for compatibility with non-compliant carriers.
 
-        **Benefits**:
-       1. Reduces call drops due to session timeouts.
-       2. Ensures carriers properly manage long-duration calls.
+    **Benefits**:
+        1. Reduces call drops due to session timeouts.
+        2. Ensures carriers properly manage long-duration calls.
 
-    |SST Option| Result|
-    |----------|:------|
-    | **Default**| Passive SST, No headers gets changed and no SST gets engaged, all RE-INVITES will propagate through the system enables|
-    | **Enabled Both** | ConnexCS will send SIP Session Timers to both legs of the call|
-    | **Enabled (Upstream)** | ConnexCS will use SST with the carrier|
-    | **Enabled (Downstream)**| ConnexCS will use SST with the customer|
-    | **Suggest**| Session-Expire headers and Min-SE gets added to packets sent to the carrier encouraging the use of SST|
-    | **Disabled**| All ```timer``` headers are removed|
+|SST Option| Result|
+|----------|:------|
+| **Default**| Passive SST, No headers gets changed and no SST gets engaged, all RE-INVITES will propagate through the system enables|
+| **Enabled Both** | ConnexCS will send SIP Session Timers to both legs of the call|
+| **Enabled (Upstream)** | ConnexCS will use SST with the carrier|
+| **Enabled (Downstream)**| ConnexCS will use SST with the customer|
+| **Suggest**| Session-Expire headers and Min-SE gets added to packets sent to the carrier encouraging the use of SST|
+| **Disabled**| All ```timer``` headers are removed|
 
 + **RTP Media Proxy**: This defaults to Auto, but selecting a zone (by continent) is the current recommendation. The following options allow you to set where RTP media server for this route for this customer:
 
 !!! Info "Functionality and Benefits"
     **Functionality**:
+
       + Ensures media flows through the most efficient route.
+      
       + Reduces audio latency by keeping media within the same geographical region as the customer and carrier.
 
     **Benefits**:
-        + Minimizes delay in audio transmission.
-        + Enhances call quality by reducing packet loss.
-        + Prevents "hello-hello" delays and interruptions.
+        
+    + Minimizes delay in audio transmission.
+    + Enhances call quality by reducing packet loss.
+    + Prevents "hello-hello" delays and interruptions.
 
    :material-menu-right: `Direct RTP (no proxy)`- Bypass ConnexCS, so media flows directly between the customer and carrier. If the customer is using a firewall or other NAT device incorrectly, then media may not flow between the carrier and the customer. Using this setting also means that if there are audio issues, the issue can't be ConnexCS. Since it isn't likely to be the carrier, the issue would typically exist on the customer's end.
 
