@@ -39,10 +39,13 @@ Failover is a powerful feature that enables seamless call routing between multip
 ## Exception: False Answer Supervision (FAS)
 
 **What is FAS?**
+  
   + A fraudulent practice where a carrier connects a call to an unintended destination (e.g., a radio message or a low-cost number) instead of the intended recipient.
+  
   + The caller is charged, but the carrier avoids paying termination fees.
 
 **How FAS Affects Failover Reporting?**
+
 + Calls that appear in the failover list may include fraudulent connections from a carrier utilizing FAS.
 
 + Carrier A may falsely report calls as successfully connected when they weren't genuinely completed.

@@ -2,11 +2,11 @@
 
 **Management :material-menu-right: Carrier :material-menu-right: CDR**
 
+See [**Customer CDR**](https://docs.connexcs.com/customer/cdr/#recalculate-cdr) for details.
+
 <img src= "/carrier/img/carriercdr.png">
 
 The **CDR** tab displays call drop rates. Use **`Recalc CDR`** when CDR records aren't accurate.
-
-See [**Customer CDR**](https://docs.connexcs.com/customer/cdr/#recalculate-cdr) for details.
 
 !!! danger "Rerating CDRs"
     If you select either "Rerate" option when recalculating CDRs, this will change your CDRs and isn't reversible. You can revise Original call durations according to the criteria selected.
@@ -26,11 +26,11 @@ The CDR Recalculation feature is used to correct and update Call Detail Records 
 Clicking "Run" recalculates account balances based on existing call records.
 
 2. **Re-rate Calls**:
-   1. Adjusts the cost of calls by reapplying the correct rate card.
-   2. Allows specification of:
-         1. Minimum duration (e.g., 1 second) to exclude very short calls.
-         2. Date/time range (in UTC) to apply recalculations to a specific period.
-         3. Release reasons (e.g., disconnect due to timeout, upstream or downstream issues) to refine recalculations.
+      1. Adjusts the cost of calls by reapplying the correct rate card.
+      2. Allows specification of:
+            1. Minimum duration (e.g., 1 second) to exclude very short calls.
+            2. Date/time range (in UTC) to apply recalculations to a specific period.
+            3. Release reasons (e.g., disconnect due to timeout, upstream or downstream issues) to refine recalculations.
 
 3. **Recalculate Long Duration Calls (LDC)**:
       1. Identifies and adjusts calls with excessive durations (e.g., 3600 seconds or more).
@@ -39,32 +39,32 @@ Clicking "Run" recalculates account balances based on existing call records.
             2. Compare with the customer's Average Call Duration (ACD).
             3. Adjust call duration to a reasonable time (e.g., 30 seconds) for billing purposes.
 
-            ```mermaid
-            graph TD
-            A[Start: Check CDRs] --> B{Call Duration > 2700s?}
-            B -- Yes --> C[Compare with Customer ACD]
-            C --> D{Is Duration Unreasonable?}
-            D -- Yes --> E[Adjust to Reasonable Duration: 30s]
-            E --> F[Apply for Billing]
-            D -- No --> G[Proceed with Original Duration]
-            G --> F
-            B -- No --> G
+    ```mermaid
+    graph TD
+        A[Start: Check CDRs] --> B{Call Duration > 2700s?}
+        B -- Yes --> C[Compare with Customer ACD]
+        C --> D{Is Duration Unreasonable?}
+        D -- Yes --> E[Adjust to Reasonable Duration: 30s]
+        E --> F[Apply for Billing]
+        D -- No --> G[Proceed with Original Duration]
+        G --> F
+        B -- No --> G
 
-            F --> H[End]
+        F --> H[End]
 
-            %% Styling
-            classDef decision fill:#ffcc00,stroke:#333,stroke-width:2px;
-            classDef process fill:#,stroke:#333,stroke-width:2px;
+        %% Styling
+        classDef decision fill:#ffcc00,stroke:#333,stroke-width:2px;
+        classDef process fill:#,stroke:#333,stroke-width:2px;
 
-            class B,D decision;
-            class A,C,E,F,G,H process;
+        class B,D decision;
+        class A,C,E,F,G,H process;
         ```
 
 !!! Warning
     This is a destructive operation that permanently changes call data.
     If applied incorrectly, all call durations may be rewritten, affecting billing accuracy.
 
-## Benefits of CDR Recalculation
+### Benefits of CDR Recalculation
 
 + **Ensures Billing Accuracy**: Prevents incorrect charges due to inaccurate rate cards or call durations.
 + **Corrects Anomalies in Call Data**: Detects and adjusts excessively long calls to prevent overcharging.
