@@ -36,12 +36,9 @@ Clicking "Run" recalculates account balances based on existing call records.
       1. Identifies and adjusts calls with excessive durations (e.g., 3600 seconds or more).
       
       2. **Process**:
-
-            1. Check CDRs for calls longer than a specified duration (e.g., 2700 seconds / 45 minutes).
-
-            2. Compare with the customer's Average Call Duration (ACD).
-
-            3. Adjust call duration to a reasonable time (e.g., 30 seconds) for billing purposes.
+         1. Check CDRs for calls longer than a specified duration (e.g., 2700 seconds / 45 minutes).
+         2. Compare with the customer's Average Call Duration (ACD).
+         3. Adjust call duration to a reasonable time (e.g., 30 seconds) for billing purposes.
 
 ```mermaid
 graph TD
