@@ -18,6 +18,13 @@ The system's goal is to identify suspicious calls and depending on how it's conf
 * A prefix and a date / time range define a rule.
 * A call is eligible for fraud detection if the fraud profile gets enabled on the call (by setting it in routing) and if the prefix matches.
 
+## Benefits
+
+1. Prevents unauthorized call activities, especially during non-business hours.
+2. Minimizes financial losses due to fraud.
+3. Ensures account security and service continuity.
+
+
 ## Detection Parameters and Limits
 
 You can use the following 5 parameters for monitoring fraud detection:
@@ -43,9 +50,9 @@ The Warning limit must always be lower than the Critical limit. When one of the 
 Selecting Low or High mode defines the action taken when it reaches a Warning or Critical threshold.
 
 | Mode | Warning | Critical|
-|------|------------------------------------|--------------------------------------|
-| **Low**  | Call continues, shows in log only. | Calls blocked.                     |
-| **High** | Calls blocked.                   | Calls and account blocked. |
+|------|---------|---------|
+|**Low**|Call continues, shows in log only. Sends an alert.| Calls blocked.|
+|**High**|Calls blocked.| Calls and account blocked (manual intervention required).|
 
 ## Setup Fraud Detection
 
