@@ -39,26 +39,26 @@ Clicking "Run" recalculates account balances based on existing call records.
             2. Compare with the customer's Average Call Duration (ACD).
             3. Adjust call duration to a reasonable time (e.g., 30 seconds) for billing purposes.
 
-    ```mermaid
-    graph TD
-        A[Start: Check CDRs] --> B{Call Duration > 2700s?}
-        B -- Yes --> C[Compare with Customer ACD]
-        C --> D{Is Duration Unreasonable?}
-        D -- Yes --> E[Adjust to Reasonable Duration: 30s]
-        E --> F[Apply for Billing]
-        D -- No --> G[Proceed with Original Duration]
-        G --> F
-        B -- No --> G
+```mermaid
+graph TD
+    A[Start: Check CDRs] --> B{Call Duration > 2700s?}
+    B -- Yes --> C[Compare with Customer ACD]
+    C --> D{Is Duration Unreasonable?}
+    D -- Yes --> E[Adjust to Reasonable Duration: 30s]
+    E --> F[Apply for Billing]
+    D -- No --> G[Proceed with Original Duration]
+    G --> F
+    B -- No --> G
 
-        F --> H[End]
+    F --> H[End]
 
-        %% Styling
-        classDef decision fill:#ffcc00,stroke:#333,stroke-width:2px;
-        classDef process fill:#,stroke:#333,stroke-width:2px;
-
-        class B,D decision;
-        class A,C,E,F,G,H process;
-        ```
+    %% Styling
+    classDef decision fill:#ffcc00,stroke:#333,stroke-width:2px;
+    classDef process fill:#,stroke:#333,stroke-width:2px;
+    
+    class B,D decision;
+    class A,C,E,F,G,H process;
+```
 
 !!! Warning
     This is a destructive operation that permanently changes call data.
