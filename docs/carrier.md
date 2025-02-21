@@ -18,10 +18,7 @@ Use the **Carrier** section in **ConnexCS** for simplified Carrier management wh
             1.  A call may not complete if a customer lacks credit.
             2.  Calls will still connect if a carrier has credit; the carrier credit field is informational and doesn't prevent calls.
 
-2.  **Carrier Rate Cards**:
-        1.  **Rate Card Structure**:
-        2.  Every carrier has one or more rate cards.
-        3.  Each rate card contains the charges imposed by the carrier.
+2.  **Carrier Rate Card Structure**: Every carrier has one or more rate cards. Each rate card contains the charges imposed by the carrier.
 
 !!! Tip "Key Considerations"
     The system shouldn't display the "Auto-generate invoice" option in this section.
