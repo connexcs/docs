@@ -2,11 +2,25 @@
 
 **Management :material-menu-right: Provider Rate Cards**
 
+## Overview
+
 Rate cards in ConnexCS help manage pricing structures for telecom services by defining how calls are billed, charged, and tracked.
 
 The rate card system includes various attributes that determine the cost and billing increments for each call.
 
 Before configuring Provider Rate Cards, we suggest you review [**Rate Card Overview**](https://docs.connexcs.com/rate-card-building/) then [**Rate Card Setup**](https://docs.connexcs.com/video-guide/#rate-card-setup) in the ConnexCS Video Guide.
+
+## Key Benefits
+
+1. **Efficient Routing**: Tech prefixes and LRN ensure optimal call routing.
+
+2. **Transparent Billing**: Customizable rounding and precision prevent billing disputes.
+
+3. **Carrier Compliance**: Helps meet carrier ACD requirements without violating policies.
+
+4. **Enhanced Control**: Advanced settings allow granular restrictions on call flow, CLI, and rates.
+
+5. **Zero-cost LRN Lookups**: Free DIPs reduce operational costs compared to third-party LRN providers.
 
 ## Provider Rate Card Functions
 
