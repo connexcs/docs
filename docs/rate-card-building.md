@@ -53,7 +53,7 @@ Rate Cards in ConnexCS are categorized into two types:
 1. **Code and Billing Accuracy**: It's always sound practice to base Rate Cards on the information in Provider cards.
 Code accuracy is perhaps one of the most important of these benefits.
 
-In any system with card-based profiles, code accuracy is one of the means to ensure the accuracy of the whole system.
+    In any system with card-based profiles, code accuracy is one of the means to ensure the accuracy of the whole system.
 It also increases the reliability of all data passed or collected.
 
 2. **Comprehensive Call Routing & Billing**: Ensures that both routing and billing work seamlessly.

@@ -145,8 +145,7 @@ These settings round-up the call durations and the call billing is based on the 
     |36 sec|met|6|36 sec|
     |37 sec|met|6|42 sec|
 
-    + **Billing Increments**:
-      + Calls are billed based on two key values: Minimum Call Duration (MCD) and Pulse.
+    + **Billing Increments**: Calls are billed based on two key values: Minimum Call Duration (MCD) and Pulse.
         + **MCD (Minimum Call Duration)**: The shortest duration for which a call is billed.
         + **Pulse**: Defines the increments in which calls are billed after the MCD.
   
