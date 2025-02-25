@@ -1,16 +1,22 @@
 # Rate Card Overview
 
-**Rate Cards** are an important ConnexCS feature because they organise the majority of the information.
+**Rate Cards** are an essential component in ConnexCS, playing a crucial role in both call routing and billing.
 
-Rate Cards define both the routing and billing of customer calls.
+They ensure that calls are priced correctly and routed efficiently.
 
-When a dialled number comes in, it hits the customer's card first.
+Rate Cards are an important ConnexCS feature because they organise the majority of the information.
 
-You can associate the Customer Card with one or more Provider Cards, each of which will have different means for routing the calls and billing the call.
+When a call is made, it follows this path:
+**Customer → Customer Rate Card → Provider Rate Card → Provider**
+This creates a **one-to-many relationship** between the customer and provider rate cards.
 
-We can also say that Provider Cards create Customer Cards.
+!!! tip
+    You can associate the Customer Card with one or more Provider Cards, each of which will have different means for routing the calls and billing the call.
+    We can also say that Provider Cards create Customer Cards.
 
-!!! tip "Rate Card Terminology"
+!!! Warning "Proper configuration of rate cards is vital for ensuring seamless call flow and billing accuracy."
+
+!!! Info "Rate Card Terminology"
     Several terms in ConnexCS are interchangeably used when talking about Rate Cards:
 
     + Provider = Carrier
@@ -26,15 +32,48 @@ The ConnexCS Control Panel has the following four sections for Rate Cards:
 
 ![alt text][rc-global]
 
-## Code and Billing Accuracy
+## Types of Rate Cards
 
-It's always sound practice to base Rate Cards on the information in Provider cards.
+Rate Cards in ConnexCS are categorized into two types:
 
+1. **Origination Rate Cards**:
+   + Handles DIDs (Direct Inward Dialing).
+   + Manages incoming calls from the PSTN (Public Switched Telephone Network).
+   + The upstream carrier is responsible for handling these calls.
+   + Less commonly used by customers compared to termination rate cards.
+
+2. **Termination Rate Cards**:
+   + Manages outgoing calls to the PSTN.
+   + Majority of ConnexCS customers primarily use termination rate cards.
+   + Directs outbound calls via providers.
+
+## Key Features
+
+1. **Code and Billing Accuracy**: It's always sound practice to base Rate Cards on the information in Provider cards.
 Code accuracy is perhaps one of the most important of these benefits.
-
 In any system with card-based profiles, code accuracy is one of the means to ensure the accuracy of the whole system.
-
 It also increases the reliability of all data passed or collected.
+
+2. **Comprehensive Call Routing & Billing**: Ensures that both routing and billing work seamlessly.
+
+3. **Parent-Child Relationship Management**: Helps in tracking dependencies between provider and customer rate cards.
+
+4. **Bulk Editing**: Allows quick modifications across multiple entries.
+
+5. **Real-Time Updates**: Ensures that rate cards remain up to date to prevent stale entries.
+
+## **Benefits**
+
+1. **Efficiency**: Automates call rating and billing processes, reducing manual errors.
+
+2. **Scalability**: Supports multiple rate cards, allowing businesses to scale operations effortlessly.
+
+3. **Transparency**: Detailed breakdown of charges and call duration billing.
+
+4. **Flexibility**: Customize billing based on provider agreements.
+5. **Comprehensive audit trails**: Maintain a full history of changes.
+6. **Automated rate activation**: Schedule rate changes in advance.
+7. **Bulk upload support**: Manage large datasets efficiently.
 
 ## Rate Card Compilation Engine
 
