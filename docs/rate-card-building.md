@@ -7,7 +7,8 @@ They ensure that calls are priced correctly and routed efficiently.
 Rate Cards are an important ConnexCS feature because they organise the majority of the information.
 
 When a call is made, it follows this path:
-**Customer → Customer Rate Card → Provider Rate Card → Provider**
+**`Customer → Customer Rate Card → Provider Rate Card → Provider`**.
+
 This creates a **one-to-many relationship** between the customer and provider rate cards.
 
 !!! tip
@@ -37,20 +38,21 @@ The ConnexCS Control Panel has the following four sections for Rate Cards:
 Rate Cards in ConnexCS are categorized into two types:
 
 1. **Origination Rate Cards**:
-   + Handles DIDs (Direct Inward Dialing).
-   + Manages incoming calls from the PSTN (Public Switched Telephone Network).
-   + The upstream carrier is responsible for handling these calls.
-   + Less commonly used by customers compared to termination rate cards.
+      + Handles DIDs (Direct Inward Dialing).
+      + Manages incoming calls from the PSTN (Public Switched Telephone Network).
+      + The upstream carrier is responsible for handling these calls.
+      + Less commonly used by customers compared to termination rate cards.
 
 2. **Termination Rate Cards**:
-   + Manages outgoing calls to the PSTN.
-   + Majority of ConnexCS customers primarily use termination rate cards.
-   + Directs outbound calls via providers.
+      + Manages outgoing calls to the PSTN.
+      + Majority of ConnexCS customers primarily use termination rate cards.
+      + Directs outbound calls via providers.
 
 ## Key Features
 
 1. **Code and Billing Accuracy**: It's always sound practice to base Rate Cards on the information in Provider cards.
 Code accuracy is perhaps one of the most important of these benefits.
+
 In any system with card-based profiles, code accuracy is one of the means to ensure the accuracy of the whole system.
 It also increases the reliability of all data passed or collected.
 
@@ -124,11 +126,65 @@ Profit Assurance can protect you against this sometimes, but not if your carrier
 
 Also, customers might expect to connect calls to prefixes that aren't included if you rely purely on profit assurance.
 
+```mermaid
+graph TD
+    A[Decide to Provide UK Landlines] --> B[Add 441 to Rate Deck]
+    B --> C{Carrier Charges Differently for Specific Prefixes?}
+    C -->|Yes| D[Carrier Charges More for Specific Prefixes, e.g., 441481]
+    C -->|No| E[No Additional Charges]
+    D --> F[Update Rate Card with Specific Prefix Costs]
+    F --> G{Build Own Rate Cards?}
+    G -->|Yes| H[Discrepancies Less Visible, But Potential for Higher Costs]
+    G -->|No| I[Rely on Carrier's Rate Cards]
+    H --> J{Profit Assurance in Place?}
+    I --> J
+    J --> K{Carrier Bills on 60/60 While You Sell at 1/1 or Has Connection Fees?}
+    K -->|Yes| L[Profit Assurance May Not Protect Against Discrepancies]
+    K -->|No| M[Profit Assurance Can Protect Against Discrepancies]
+    L --> N[Higher Costs Due to Billing Discrepancies]
+    M --> O[Profit Assurance Protects Against Discrepancies]
+    N --> P[Customers Expect to Connect Calls to All Prefixes]
+    O --> P
+    P --> Q{Customers Satisfied with Call Connections?}
+    Q -->|Yes| R[No Issues]
+    Q -->|No| S[Customer Complaints Due to Unincluded Prefixes]
+
+    %% Styling
+    classDef decision fill:#ffcc00,stroke:#333,stroke-width:2px;
+    classDef process fill:#,stroke:#333,stroke-width:2px;
+    
+    class B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S process;
+    class C,G,J,K,Q decision;
+```
+
 #### Example 2
 
 If you sell NPA-NXX but also have some flat rates (and allowed cherry-picking) with just one prefix, you can combine several cards to generate the most competitive pricing. Then, you can place the margins at 20% once a carrier issues you a new rate card.
 
 Click regenerate and the system will deal with all 200,000 prefixes on each and generate new pricing.
+
+```mermaid
+graph TD
+    A[Sell NPA-NXX and Flat Rates] --> B{Have Multiple Rate Cards?}
+    B -->|Yes| C[Combine Several Rate Cards]
+    B -->|No| D[Use Single Rate Card]
+    C --> E[Allow Cherry-Picking with Single Prefix]
+    E --> F[Generate Most Competitive Pricing]
+    F --> G{Carrier Issues New Rate Card?}
+    G -->|Yes| H[Update Pricing with New Rate Card]
+    G -->|No| I[Continue with Current Pricing]
+    H --> J[Set Margins at 20 Percent]
+    J --> K[Click Regenerate]
+    K --> L[System Processes All Prefixes, Over 200000]
+    L --> M[Generate New Pricing for All Prefixes]
+
+    %% Styling
+    classDef decision fill:#ffcc00,stroke:#333,stroke-width:2px;
+    classDef process fill:#,stroke:#333,stroke-width:2px;
+    
+    class A,B,C,D,E,F,G,H,I,J,K,L,M process;
+    class B,G decision;
+```
 
 #### Example 3
 

@@ -133,8 +133,8 @@ These settings round-up the call durations and the call billing is based on the 
 
     + **Billing Increments**:
       + Calls are billed based on two key values: Minimum Call Duration (MCD) and Pulse.
-          + **MCD (Minimum Call Duration)**: The shortest duration for which a call is billed.
-          + **Pulse**: Defines the increments in which calls are billed after the MCD.
+        + **MCD (Minimum Call Duration)**: The shortest duration for which a call is billed.
+        + **Pulse**: Defines the increments in which calls are billed after the MCD.
   
         !!! Example
             1. **6/1 Billing**: Minimum charge is for 6 seconds; further billing increments are 1 second.
@@ -177,8 +177,7 @@ To change Revision status:
 | --- | --- | --- |---|
 |**Single Rate**|0.0007|Uses a single column for rates, usually a UK Landline|1|
 |**IntER/IntRA**|1 (NPANXX)|Refers to Interstate (different states) and Intrastate (same state) calling for USA dialing|2|
-|**IntER/IntRA/Indeterminate**|1 (NPANXX)|Indeterminate indicates that call is between a USA number and another country. Calls with unknown or unclassifiable origin. Includes: International calls, Withheld numbers, Toll-free (1-800) numbers. These are charged based on the Cost Column.
-|3|
+|**IntER/IntRA/Indeterminate**|1 (NPANXX)|Indeterminate indicates that call is between a USA number and another country. Calls with unknown or unclassifiable origin. Includes: International calls, Withheld numbers, Toll-free (1-800) numbers. These are charged based on the Cost Column.|3|
 
 !!! Note
     Billing depends on the originating caller ID (CLI) and the destination number.
@@ -188,13 +187,13 @@ To change Revision status:
 
     !!! Info "LRN (Local Routing Number)"
         + **Purpose**:
-          + LRN ensures accurate call routing based on number portability.
-          + Prevents incorrect billing by mapping calls to the correct terminating provider. It identifies the switch for a number and used to determine billing for a call.
+            + LRN ensures accurate call routing based on number portability.
+            + Prevents incorrect billing by mapping calls to the correct terminating provider. It identifies the switch for a number and used to determine billing for a call.
         + **How It Works**:
-          + A phone number might be assigned to one provider but actually be serviced by another.
-          + LRN lookup ensures the call is billed correctly based on the actual provider.
-          + When a customer ports the number from one provider to another, the billing may change based on the new carrier. An LRN dip will correct any pricing discrepancies between the original and new carriers. This helps to reduce billing costs.
-          + If the customer wants to do single rates, they may not want to do the LRN dip.
+            + A phone number might be assigned to one provider but actually be serviced by another.
+            + LRN lookup ensures the call is billed correctly based on the actual provider.
+            + When a customer ports the number from one provider to another, the billing may change based on the new carrier. An LRN dip will correct any pricing discrepancies between the original and new carriers. This helps to reduce billing costs.
+            + If the customer wants to do single rates, they may not want to do the LRN dip.
             ```mermaid
             graph TD
                 A[Phone Number Assignment] --> B{Is Number Serviced by Different Provider?}
@@ -297,7 +296,7 @@ Consider the following when using **Delayed Bye**.
 + **Delayed Bye MCD**: Sets a minimum duration to calculate a delta. For example, if you set the Delayed BYE MCD to 10 seconds and the call lasts for 8 seconds, the call gets extended by 2 seconds.
 + **Delayed Bye Customer Charge**: Determines if the customer should be charged for the extended call.
 
-!!! note "Incorrect Billing"
+!!! warning "Incorrect Billing"
     Any attempt at artificially adjusting packets may cause billing problems.
 
     Some limitations exist within the protocol, the real world, and our implementation. 
