@@ -14,15 +14,15 @@ SIP Devices allows providers the ability to set a config file for a wide range o
 
 !!! Example "Use Case Examples"
     1. **Efficient Deployment Strategy**:
-       1. Pre-configure devices before shipment.
-       2. Scan MAC addresses before dispatch.
-       3. Modify configurations while devices are in transit.
-       4. Customers receive plug-and-play devices, reducing setup time.
+          1. Pre-configure devices before shipment.
+          2. Scan MAC addresses before dispatch.
+          3. Modify configurations while devices are in transit.
+          4. Customers receive plug-and-play devices, reducing setup time.
 
     2. **Remote Management Benefits**:
-       1. Easily reassign devices to different users.
-       2. Automatic nightly updates ensure accurate configurations.
-       3. No need for manual on-site configuration.
+          1. Easily reassign devices to different users.
+          2. Automatic nightly updates ensure accurate configurations.
+          3. No need for manual on-site configuration.
 
 ## SIP Device Provisioning
 
@@ -42,36 +42,36 @@ SIP Devices allows providers the ability to set a config file for a wide range o
 
 1. **Device Authentication**:
 
-   + Customers can log in using assigned usernames and passwords.
-   + Managed Service Providers (MSPs) can enter SIP phone details for their clients.
+      + Customers can log in using assigned usernames and passwords.
+      + Managed Service Providers (MSPs) can enter SIP phone details for their clients.
 
 2. **Device Identification**:
 
-   + Each device is identified uniquely using:
-       + MAC Address (for hard phones)
-       + IMEI Number (for mobile devices)
-       + UUID (for other devices)
+      + Each device is identified uniquely using:
+           + MAC Address (for hard phones)
+           + IMEI Number (for mobile devices)
+           + UUID (for other devices)
 
 3. **Device Configuration**:
 
-   + Assign a customer to the device.
-   + Specify make and model.
-   + Set the device status (active/inactive).
-   + Define username and password for authentication.
-   + Configure additional variables via Vars sup[Toml]</sup>.
+      + Assign a customer to the device.
+      + Specify make and model.
+      + Set the device status (active/inactive).
+      + Define username and password for authentication.
+      + Configure additional variables via Vars <sup>[Toml]</sup>.
 
 4. **Billing and Packages**:
 
-   + Assign rental packages to devices, ensuring automatic billing for leased hardware.
+      + Assign rental packages to devices, ensuring automatic billing for leased hardware.
 
 5. **Phone Book and Firmware Updates**:
 
-   + **Phone Book URI**: Directs the device to a company directory for seamless contact management.
-   + **Firmware URI**: Allows automatic firmware updates.
+      + **Phone Book URI**: Directs the device to a company directory for seamless contact management.
+      + **Firmware URI**: Allows automatic firmware updates.
 
 6. **Provisioning Endpoint**:
 
-   + **Provision URI**: Endpoint where the device fetches its configuration settings from ConnexCS servers.
+      + **Provision URI**: Endpoint where the device fetches its configuration settings from ConnexCS servers.
 
 ## Add SIP Device
 

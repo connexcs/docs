@@ -10,46 +10,44 @@ Users can upload different file types for system functionality including (but no
 
 ### Key Features
 
-**Default Uploads**: Pre-configured folders for specific file types.
++ **Default Uploads**: Pre-configured folders for specific file types.
 
-**Public File Access**: Allows customers to upload and use publicly accessible files, such as logos.
++ **Public File Access**: Allows customers to upload and use publicly accessible files, such as logos.
 
-**Audio File Support**: Enables IVR and voicemail greeting uploads.
++ **Audio File Support**: Enables IVR and voicemail greeting uploads.
 
-**Text-to-Speech Integration**: Generates high-quality audio files using WaveNet voices.
++ **Text-to-Speech Integration**: Generates high-quality audio files using WaveNet voices.
 
-**Bulk Upload**: Supports multiple file uploads at once.
++ **Bulk Upload**: Supports multiple file uploads at once.
 
 ### Benefits
 
-**Centralized Storage**: Keeps all necessary files in one place for easy access and retrieval.
++ **Centralized Storage**: Keeps all necessary files in one place for easy access and retrieval.
 
-**Automated Organization**: Pre-configured folders streamline file categorization.
++ **Automated Organization**: Pre-configured folders streamline file categorization.
 
-**Improved Customer Experience**: Enables seamless integration of logos and audio files.
++ **Improved Customer Experience**: Enables seamless integration of logos and audio files.
 
-**Time-Saving**: Built-in text-to-speech functionality reduces reliance on third-party services.
++ **Time-Saving**: Built-in text-to-speech functionality reduces reliance on third-party services.
 
-**Efficient Management**: Bulk upload feature allows rapid file handling.
++ **Efficient Management**: Bulk upload feature allows rapid file handling.
 
 ## File Categories
 
-+ **Default File Storage**:
-
-ConnexCS has predefined folders for specific file types.
++ **Default File Storage**: ConnexCS has predefined folders for specific file types.
 
    + **Provider Cards**: Every provider card uploaded is automatically stored. It retains a copy for reference in case of issues or failures.
 
    + **Audio Files**: Storage for voicemail greetings, IVR files, and other system-generated audio like IVR prompts, Voicemail greetings, and other system-generated announcements.
 
 + **Public File Storage**: This section allows files to be publicly accessible.
-   + **Use Case**: Customers can upload logos for display on their customer portals.
+     + **Use Case**: Customers can upload logos for display on their customer portals.
 
 + **Text-to-Speech Files**: Uses WaveNet voices for high-quality speech generation.
 
-  + Supports multiple languages and accents (e.g., English with an Indian accent, German, Hindi, etc.).
-  + Users can enter text, select a voice, and save it as an audio file.
-  + Eliminates the need to use external text-to-speech services.
+    + Supports multiple languages and accents (e.g., English with an Indian accent, German, Hindi, etc.).
+    + Users can enter text, select a voice, and save it as an audio file.
+    + Eliminates the need to use external text-to-speech services.
 
 ## Add new file(s)
 

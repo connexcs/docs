@@ -48,22 +48,22 @@ Tags are labels applied to both routes and customers to simplify bulk administra
 
 + **Key Functions**:
 
-  + **Route Management**: A single route can be assigned to multiple customers by using tags.
+    + **Route Management**: A single route can be assigned to multiple customers by using tags.
 
-  + **Customer Grouping**: Customers with the same tag will share the same global routing settings.
+    + **Customer Grouping**: Customers with the same tag will share the same global routing settings.
 
 + **Implementation**:
 
-  + Tags are assigned in the rate card configuration.
+    + Tags are assigned in the rate card configuration.
 
-  + Removing a tag from a route makes it unavailable for associated customers.
+    + Removing a tag from a route makes it unavailable for associated customers.
 
 + **Benefits**
 
-  + **Simplifies Bulk Administration**: Manage multiple customers with a single routing configuration.
+    + **Simplifies Bulk Administration**: Manage multiple customers with a single routing configuration.
 
-  + **Scalability**: Supports large-scale routing needs without individual customer setups.
+    + **Scalability**: Supports large-scale routing needs without individual customer setups.
 
-  + **Consistency**: Ensures uniform pricing and routing logic across similar customer groups.
+    + **Consistency**: Ensures uniform pricing and routing logic across similar customer groups.
 
-  + **Flexibility**: Tags allow quick modifications without altering individual customer settings.
+    + **Flexibility**: Tags allow quick modifications without altering individual customer settings.
