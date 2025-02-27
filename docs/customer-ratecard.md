@@ -55,10 +55,10 @@ These fields define individual rates within the rate card.
 !!! Note "Multiple Carrier Rate Cards"
     + A single customer rate card can have multiple carrier rate cards.
     + The system allows the selection of different strategies:
-      + Random
-      + Round Robin
-      + Reverse RCR
-      + LCR (Least Cost Routing)
+        + Random
+        + Round Robin
+        + Reverse RCR
+        + LCR (Least Cost Routing)
     + The default strategy is overridden if a routing strategy is set.
 
 ## Benefits
@@ -307,9 +307,9 @@ To change Revision status:
     + Rarely used but provides in-depth customization for advanced users.
 
 + **Reseller**: Select Resellers to associate with this card. When the Reseller logs into the Portal, they see the settings from the perspective of a Provider Card, even though they're configured as a Customer Card.
-  + In a reseller model, the provider and customer cards are bifurcated.
-  + Resellers do not see actual provider details; they only see the cards assigned to them.
-  + The provider card in the reseller’s account behaves as a customer card.
+    + In a reseller model, the provider and customer cards are bifurcated.
+    + Resellers don't see actual provider details; they only see the cards assigned to them.
+    + The provider card in the reseller’s account behaves as a customer card.
 
 #### Notes
 
@@ -330,6 +330,6 @@ For each Prefix you can manually order the Provider Rate Cards for a high degree
 
 [profit]: /card/img/profit.png "Edit Profits"
 
-!!! tip "**Rate Compact**, **Collapse Using**, and **Force Presentation**.
+!!! tip "**Rate Compact**, **Collapse Using**, and **Force Presentation**."
     + These properties relate to profit calculation and rate structure presentation.
     + Ensures rate structure efficiency while providing profit visibility.
