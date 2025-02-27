@@ -2,7 +2,54 @@
 
 **Management :material-menu-right: File**
 
-The **File** section can store a variety of files, including (but not limited to) audio files for PBX (Private Branch Exchange), rate cards, or a logo for your portal.
+## Overview
+
+The File Management section provides a centralized location to upload, store, and manage various files within the ConnexCS system.
+
+Users can upload different file types for system functionality including (but not limited to), public assets, audio files for PBX (Private Branch Exchange), rate cards, or a logo for your portal.
+
+### Key Features
+
+**Default Uploads**: Pre-configured folders for specific file types.
+
+**Public File Access**: Allows customers to upload and use publicly accessible files, such as logos.
+
+**Audio File Support**: Enables IVR and voicemail greeting uploads.
+
+**Text-to-Speech Integration**: Generates high-quality audio files using WaveNet voices.
+
+**Bulk Upload**: Supports multiple file uploads at once.
+
+### Benefits
+
+**Centralized Storage**: Keeps all necessary files in one place for easy access and retrieval.
+
+**Automated Organization**: Pre-configured folders streamline file categorization.
+
+**Improved Customer Experience**: Enables seamless integration of logos and audio files.
+
+**Time-Saving**: Built-in text-to-speech functionality reduces reliance on third-party services.
+
+**Efficient Management**: Bulk upload feature allows rapid file handling.
+
+## File Categories
+
++ **Default File Storage**:
+
+ConnexCS has predefined folders for specific file types.
+
+   + **Provider Cards**: Every provider card uploaded is automatically stored. It retains a copy for reference in case of issues or failures.
+
+   + **Audio Files**: Storage for voicemail greetings, IVR files, and other system-generated audio like IVR prompts, Voicemail greetings, and other system-generated announcements.
+
++ **Public File Storage**: This section allows files to be publicly accessible.
+   + **Use Case**: Customers can upload logos for display on their customer portals.
+
++ **Text-to-Speech Files**: Uses WaveNet voices for high-quality speech generation.
+
+  + Supports multiple languages and accents (e.g., English with an Indian accent, German, Hindi, etc.).
+  + Users can enter text, select a voice, and save it as an audio file.
+  + Eliminates the need to use external text-to-speech services.
 
 ## Add new file(s)
 
