@@ -2,11 +2,29 @@
 
 **Management :material-menu-right: Routing Strategy**
 
+## Overview
+
 A **Routing Strategy** lets you route calls for different providers through the routing engine using a specified set of rules.
 
 It helps with call routing, a necessary mechanic to match operations with business needs.
 
+These strategies can be applied at both the **Customer level** and a **Global level**, allowing for flexible and scalable call routing.
+
 The **Routing Strategy** screen, located under **Management**, displays existing strategies in an alphabetical list.
+
+### Customer-Specific Routing
+
+Routes are assigned directly to a specific customer.
+
+Its suitable for cases where each customer has unique routing requirements.
+
+### Global Routing
+
+Global Routing allows route configurations that aren't tied to any particular customer.
+
+Its ideal for situations where multiple customers share the same prefixes, tariffs, and routing structures.
+
+It reduces the need for duplicate route setups across multiple customers.
 
 ## Types of Routing Strategies
 
@@ -31,7 +49,8 @@ Once you create a new **Routing Strategy**, assign it to a customer account.
 1. In the **Routing Strategy** screen, click :material-plus:.
 2. Name the strategy.
 3. Select the Strategy type (as defined in Types of Routing Strategies section).
-4. Click **`Save`**.
+4. **Override Routing**: **Enable/Disable** to completely bypass any routing configured in the Customer Rate Card.
+5. Click **`Save`**.
 
 ![weights](/misc/img/weights.jpg)
 
