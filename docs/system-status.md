@@ -42,7 +42,7 @@ Follow these steps to configure outage reporting on Customer Portals:
 4. **Visibility (Public/Private)** determines who can see the Report.
 5. **Description** allows better communication of the issues clients should expect to see.
 6. Select one or more Status Component(s) affected, and the severity of the issue.
-      + Severity Levels:
+      + **Severity Levels**:
         + Partial RTH (Return Traffic Handling issue).
         + Performance Issue.
         + Major Outage
@@ -56,16 +56,16 @@ Follow these steps to configure outage reporting on Customer Portals:
 3. Under **User Access Area**, enable **`Status`**.
 4. Click **`Save`**.
 
-+ **Customer Communication on Customer Portal**
-  + **Portal Display**: Customers logging into the portal can view live status updates.
-  + **Email Notifications**: Users can send bulk notifications to customers about service status.
-  + **Transparency & Trust**: Keeping customers informed reduces confusion and improves trust.
+      + **Customer Communication on Customer Portal**
+        + **Portal Display**: Customers logging into the portal can view live status updates.
+        + **Email Notifications**: Users can send bulk notifications to customers about service status.
+        + **Transparency & Trust**: Keeping customers informed reduces confusion and improves trust.
 
-+ **Benefits**:
-  + **Real-time Monitoring**: Track issues as they happen.
-  + **Efficient Communication**: Quickly notify customers
-  + **Customizable Tracking**: Define and monitor any service components.
-  + **Improved Customer Experience**: Keep users informed about service performance.
+      + **Benefits**:
+        + **Real-time Monitoring**: Track issues as they happen.
+        + **Efficient Communication**: Quickly notify customers.
+        + **Customizable Tracking**: Define and monitor any service components.
+        + **Improved Customer Experience**: Keep users informed about service performance.
 
 [system-status-2]: /misc/img/264.png "system-status-2"
 [system-status-3]: /misc/img/265.png "system-status-3"

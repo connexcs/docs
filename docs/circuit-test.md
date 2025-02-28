@@ -30,17 +30,17 @@ Its considered active testing (the call is actively placed on the network) as op
     + **Carrier Portal Information**: Stores credentials for easy login access.
       + **Consecutive Fail Back-Off**:
         + Reduces call attempts to failing providers to prevent call delays.
-      + Gradual restoration of calls when the provider resumes service.
-    
+        + Gradual restoration of calls when the provider resumes service.
+
     + **Peer-Asserted ID (PAID)**:
-      + **Default**: Passes the PAID through.
-      + **Remove**: Strips PAID data.
-      + **If Available**: Adds PAID if provided.
-      + **Required**: Blocks calls without PAID.
-    
+        + **Default**: Passes the PAID through.
+        + **Remove**: Strips PAID data.
+        + **If Available**: Adds PAID if provided.
+        + **Required**: Blocks calls without PAID.
+
     + **Propagate Username**:
-      + Retains username information in the From header.
-      + Useful for regulatory CLI identification requirements.
+        + Retains username information in the From header.
+        + Useful for regulatory CLI identification requirements.
 
 #### Testing Capabilities
 
