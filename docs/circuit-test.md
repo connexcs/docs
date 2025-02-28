@@ -137,11 +137,11 @@ To create a *one-time Circuit Test*, go to **Management :material-menu-right: Ci
 ## Schedule
 
 + **Scheduling & Automation**:
-  + Users can set up automated scheduled tests at predefined times.
-  + Calls can be programmed for specific days and hours.
-  + Logs are generated for scheduled test calls.
-  + Active Testing: Actual test calls placed on the network.
-  + Passive Monitoring: Collects call data without initiating new calls.
+    + Users can set up automated scheduled tests at predefined times.
+    + Calls can be programmed for specific days and hours.
+    + Logs are generated for scheduled test calls.
+    + Active Testing: Actual test calls placed on the network.
+    + Passive Monitoring: Collects call data without initiating new calls.
 
 To schedule *recurring Circuit Test*, go to **Management :material-menu-right: Circuit Test :material-menu-right: Schedule**, Click :material-plus:.
 
