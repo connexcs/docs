@@ -66,7 +66,16 @@ Select the destination to deliver incoming calls for the DID:
 + **External**: To send the call back out to the internet(public network) through a different carrier.
 Use a prefix (defined in Customer :material-menu-right: Routing ) to select the outbound route, then the number to send the call to.
 + **Internal**: Send internally to an extension, a Class5 feature, or even to another customer.
-+ **Circuit Test**: *in progress*.
++ **Circuit Test**: Enables users to verify the integrity and performance of call routing. By pointing a Direct Inward Dialing (DID) number back to the Circuit Test system, users can evaluate critical metrics such as MOS, DTMF, and Caller ID consistency. This process ensures that the purchased routes meet expected standards.
+
+!!! question "How it works?"
+    ```mermaid
+    graph TD
+        A[Call Initiated through Carrier] --> B[Call Enters through Assigned DID]
+        B --> C[System Identifies Call as Part of Circuit Test]
+        C --> D[Call Redirected back to Circuit Test System]
+        D --> E[System Evaluates and Logs Key Quality Parameters]
+    ```
 
 #### Add ConneXML Tab to DID
 
