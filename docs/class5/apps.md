@@ -2,7 +2,35 @@
 
 **Class 5 :material-menu-right: Apps**
 
-The ConnexCS **Apps** feature allows providers to create small, simple, drag-and-drop applications. Some examples are [**Pinless Calling Cards**](https://docs.connexcs.com/calling-card/), Echo Tests, Conferencing, or a Welcome message with an IVR setup and conditions.
+## Overview
+
+The ConnexCS **Apps** feature allows providers to create small, simple, drag-and-drop telephony applications.
+
+!!! Example "Examples include"
+    + [**Pinless Calling Cards**](https://docs.connexcs.com/calling-card/
+    + Echo Tests
+    + Conferencing
+    + `Welcome message` with an IVR setup and conditions.
+
+### Key Features
+
++ Simple interface for building call flows.
+
++ Includes text-to-speech functionality.
+
++ Allows playing of pre-recorded audio messages.
+
++ Supports IVR integration.
+
++ Configurable key inputs and validation.
+
++ Supports simple condition-based call routing.
+
++ Allows transferring calls to external numbers based on input.
+
+!!! question "Why use Apps?"
+    + Allows businesses to create custom call flows easily.
+    + Simplifies integration with IVR and other features.
 
 ## Build App
 

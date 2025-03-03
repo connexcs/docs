@@ -2,9 +2,27 @@
 
 **Class 5 :material-menu-right: Conference**
 
+## Overview
+
 Use this feature to allow several callers to communicate with each other over a voice call. Once it's created, callers join the call, and the moderator presides.
 
-For individual customers, navigate to **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Class5 :material-menu-right: Conference**
+For individual customers, navigate to **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Class5 :material-menu-right: Conference**.
+
+### Key Features
+
++ Assign a unique conference name.
++ Associate the conference with a specific customer.
++ Use internal extension numbers for customers.
++ Set a PIN for security.
++ Select the audio quality (Narrowband - G711, Wideband, Ultra-Wideband).
++ Define the maximum number of participants.
++ Link a Direct Inward Dialing (DID) number to the conference
++ Automatic internal routing for ease of access.
+
+!!! question "Why use the Conference feature?"
+    + Secure access through PIN.
+    + High-quality audio options for better clarity.
+    + Easy routing setup for internal and external participants.
 
 ## Create a Conference Call
 

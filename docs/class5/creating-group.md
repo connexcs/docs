@@ -2,6 +2,8 @@
 
 **Class 5 :material-menu-right: Group**
 
+## Overview
+
 Use **Group** or **Call Queue** to construct a team of individuals to receive calls placed to a specified number or extension based on the routing strategy you configure.
 
 A **Group** in our system mapped to a **Queue** is exactly same as the FIFO (First In First Out).
@@ -9,6 +11,18 @@ A **Group** in our system mapped to a **Queue** is exactly same as the FIFO (Fir
 For example, create a number that customers can call that routes them to a team of Technical Support Specialists who can fix the technical issues with their laptops.
 
 For individual customers, navigate to **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Class5 :material-menu-right: Groups**
+
+### Key Features
+
++ Assign the group to a customer.
++ Specify an extension for group calls.
++ Configure timeouts to prevent voicemail interruptions.
++ Allow external and internal numbers as group members.
+
+!!! question "Why use the Group feature?"
+    + Ensures quick response times by distributing calls efficiently.
+    + Reduces missed calls by routing to multiple agents.
+    + Allows businesses to manage call traffic effectively.
 
 ## Group call routing strategies
 
@@ -18,7 +32,7 @@ The routing strategy set up for each group controls the routing of the calls to 
 
 You can assign unique timeout timers for individual members.
 
-**Note:** This rings all members, even if they're already on a call.
+!!! Note "This rings all members, even if they're already on a call."
 
 ```mermaid
 graph TD
@@ -53,7 +67,9 @@ style D fill:#ECEFF1,stroke:#C70039,stroke-width:2px
 style E fill:#ECEFF1,stroke:#16C440,stroke-width:2px
 ```
 
-**Queue:** Places the caller in a call queue before routing the call to the next available member (whoever has been waiting for the longest to receive a call).
+**Queue:** A queue system manages high-volume inbound calls by placing them in a queue and distributing them to available agents.
+
+Places the caller in a call queue before routing the call to the next available member (whoever has been waiting for the longest to receive a call).
 
 If you use this routing strategy:
 
@@ -78,6 +94,11 @@ style C fill:#ECEFF1,stroke:#C70039,stroke-width:2px
 style D fill:#ECEFF1,stroke:#C70039,stroke-width:2px
 style E fill:#ECEFF1,stroke:#16C440,stroke-width:2px
 ```
+
+!!! question "Why use Queue?"
+    + Enhances call handling for customer service teams.
+    + Reduces wait times and caller frustration.
+    + Automates call distribution for efficiency.
 
 ## Group planning
 
@@ -115,6 +136,16 @@ To create a new Group, click :material-plus:.
         + `Agent Offhook Destination`: An extension number an individual must dial to receive calls soon after joining the group.
 
         ![alt text][group2]
+
+!!! Info "On-hook and Off-hook Modes"
+    1. **On-Hook Mode**:
+        + Agents log in and receive calls when their phone rings.
+        + Agents can log out when unavailable.
+
+    2. **Off-Hook Mode**:
+        + Agents continuously stay connected, with calls delivered automatically.
+        + Calls play music when idle, allowing agents to remain engaged.
+        + Provides short breaks between calls.
 
 + **PBX Server**: Select the desired regional server. (PBX: Private Branch Exchange)
 

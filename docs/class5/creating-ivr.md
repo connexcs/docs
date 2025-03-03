@@ -2,13 +2,31 @@
 
 **Class 5 :material-menu-right: IVR**
 
+## Overview
+
 An **Interactive Voice Response (IVR)**, or phone tree, allows callers to dial in and select an extension for a specific department or group within the company.
+
+The IVR system plays a pre-recorded message and allows callers to select options using their keypad, directing them to the appropriate department or service.
 
 These extensions can be routed to different Session Initiation Protocol (SIP) addresses, Public Switched Telephone Network (PSTN) numbers, internal extension numbers, other IVRs, conference bridges, groups, and Class 5 applications, based on the selected key.
 
 When you create an IVR, you can specify a 1:1 mapping for all the possible keys on the keypad.
 
-For individual customers, navigate to **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Class5 :material-menu-right: IVR**
+For individual customers, navigate to **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Class5 :material-menu-right: IVR**.
+
+### Key Features
+
++ Upload custom audio files or select from existing ones.
++ Assign numeric keys (0-9) to different actions (e.g., "Press 1 for Sales").
++ Route calls to internal or external numbers.
++ Transfer calls to specific extensions, external destinations, or conferences.
++ Use prefixes for external call transfers.
++ Create multi-level IVR setups.
+
+!!! question "Why use the IVR system?"
+    + Streamlines call handling and improves customer experience.
+    + Reduces the need for human intervention in call routing.
+    + Provides automated assistance to callers.
 
 ## Interactive Voice Response Planning
 
