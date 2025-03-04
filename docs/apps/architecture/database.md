@@ -6,6 +6,34 @@ The **Database** allows you to create custom persistent data storage. A data sto
 
 You can use **Database** for activities like checking list of numbers, caching external lookup, or creating stateful applications that provide users a set number of free minutes per month.
 
+### Types of Databases
+
+ConnexCS provides two primary types of databases:
+
+1. **Key-Value Store**
+
++ A custom-built database.
++ Can be used for maintaining Do Not Call (DNC) lists.
+
++ **Features**:
+
+  + Allows adding phone numbers.
+  + Option to create a database per customer.
+  + Customers can access their database via the customer portal.
+  + Ability to upload, modify, and remove data.
+
+2. **Lead Set**
+
++ Designed for handling complex data structures.
++ Primarily used for dialers.
+
++ **Features**:
+
+  + Supports multiple fields for more detailed records.
+  + Integrates with dialer systems.
+  + Bulk data operations: Import and Export
+  + Customer-level data association and management.
+
 ## Steps to create a Database
 
 1. Login to your account.
