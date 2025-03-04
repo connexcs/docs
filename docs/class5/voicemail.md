@@ -2,9 +2,22 @@
 
 **Class 5 :material-menu-right: Voicemail**
 
-Displays all **Voicemail** on the system (unlike the other Class5 modules).
+## Overview
+A voicemail system allows users to leave recorded messages when the recipient is unavailable.
+
+It displays all **Voicemail** on the system (unlike the other Class5 modules).
 
 For individual customers, navigate to **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Class5 :material-menu-right: Voicemail**
+
+### Key Features
+
++ Centralized storage of all voicemails.
++ Assign voicemails to specific extensions.
++ Playback and manage messages easily.
+
+!!! question "Why use the Voicemail feature?"
+    + Ensures important messages aren't missed.
+    + Enables users to respond at their convenience.
 
 ## VoiceMail Dialpad Options
 
@@ -35,6 +48,3 @@ To access Voicemail, dial \*1. The default actions for Voicemail navigation are:
 |**Recording VoiceMail**|Save File|2|
 |**Recording VoiceMail**|Record File|3|
 |**Recording VoiceMail**|End|#|
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMjI0ODk3NDAwXX0=
--->
