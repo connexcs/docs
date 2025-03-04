@@ -2,12 +2,24 @@
 
 ## Introduction
 
+ConnexCS offers a powerful templating system for rendering pages and automating communication.
+
 Create your own **Templates** to customise the content displayed on outbound emails/SMS, the Customer Portal, and WebPhone.
 
 ConnexCS **Templates** use the mustash-compatible template language [**Handlebars**](https://handlebarsjs.com/guide/).
 
 !!! note "Template Syntax"
     It's important for you to follow the template syntax and enter fields such as `{email}` or `{account_name}` exactly. If not, the system won't  correctly replace when the template is rendered.
+
+### Key Features:
+
++ Ability to create custom pages within the ConnexCS platform.
++ Can be used to customize the customer control panel.
++ Supports:
+  + Sending emails
+  + Sending text messages
++ Utilizes CXREST API for system communication:
+  + Create, delete, read, and update customer records.
 
 ## How to Add a Template
 
