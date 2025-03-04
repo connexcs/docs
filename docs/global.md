@@ -119,11 +119,11 @@ View a list of all DIDs (Direct Inward Dialing) and their statuses. You can also
   + **Provider Comparison Report**: Compares provider-assigned DIDs with ConnexCS system records to detect discrepancies.
 
 + **DID Drivers and Provisioning**:
-  + ConnexCS uses a driver system to integrate with external DID providers.
-  + Drivers act as a middleware layer between external DID systems and ConnexCS, enabling:
-      + Number lookup and purchase automation.
-      + Real-time number provisioning.
-      + Seamless integration with multiple DID providers (e.g., DIDX, DIDWW, VoxBone, etc.).
+    + ConnexCS uses a driver system to integrate with external DID providers.
+    + Drivers act as a middleware layer between external DID systems and ConnexCS, enabling:
+        + Number lookup and purchase automation.
+        + Real-time number provisioning.
+        + Seamless integration with multiple DID providers (e.g., DIDX, DIDWW, VoxBone, etc.).
 
   + **Call Flow Management**:
     + Numbers are routed through multiple layers: **`Provider → ConnexCS → Customer`**.

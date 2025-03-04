@@ -45,8 +45,7 @@ To create a Conference room, click :material-plus:.
 
 * **Max Members** limits the number of concurrent callers allowed in the conference.
 
-!!! note
-    The preset of '0' Max Members allows an unlimited number of callers to join the conference.
+!!! note "The preset of '0' Max Members allows an unlimited number of callers to join the conference."
 
 * **PBX Server** You can select from the list of available servers.
 

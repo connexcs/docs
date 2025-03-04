@@ -7,7 +7,7 @@
 The ConnexCS **Apps** feature allows providers to create small, simple, drag-and-drop telephony applications.
 
 !!! Example "Examples include"
-    + [**Pinless Calling Cards**](https://docs.connexcs.com/calling-card/
+    + [**Pinless Calling Cards**](https://docs.connexcs.com/calling-card/)
     + Echo Tests
     + Conferencing
     + `Welcome message` with an IVR setup and conditions.
