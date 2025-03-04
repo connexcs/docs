@@ -35,7 +35,7 @@ It's designed to work as **FaaS** (Functions as a Service), and our redundant in
     + **Drivers**: Interact with external systems, e.g., provisioning a DID from a third party.
     + **Debug Mode**: Available for administrators to troubleshoot and optimize scripts.
 
-!!! Examples "Examples"
+!!! Example "Examples"
     1.  **Querying Recent CLI Data**:
          + Retrieve the last seen CLIs.
          + Filter results by time range.
