@@ -12,27 +12,27 @@ ConnexCS provides two primary types of databases:
 
 1. **Key-Value Store**
 
-+ A custom-built database.
-+ Can be used for maintaining Do Not Call (DNC) lists.
+   + A custom-built database.
+   + Can be used for maintaining Do Not Call (DNC) lists.
 
-+ **Features**:
+   + **Features**:
 
-  + Allows adding phone numbers.
-  + Option to create a database per customer.
-  + Customers can access their database via the customer portal.
-  + Ability to upload, modify, and remove data.
+     + Allows adding phone numbers.
+     + Option to create a database per customer.
+     + Customers can access their database via the customer portal.
+     + Ability to upload, modify, and remove data.
 
 2. **Lead Set**
 
-+ Designed for handling complex data structures.
-+ Primarily used for dialers.
+   + Designed for handling complex data structures.
+   + Primarily used for dialers.
 
-+ **Features**:
+   + **Features**:
 
-  + Supports multiple fields for more detailed records.
-  + Integrates with dialer systems.
-  + Bulk data operations: Import and Export
-  + Customer-level data association and management.
+     + Supports multiple fields for more detailed records.
+     + Integrates with dialer systems.
+     + Bulk data operations: Import and Export
+     + Customer-level data association and management.
 
 ## Steps to create a Database
 
