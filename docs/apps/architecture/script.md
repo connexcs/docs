@@ -50,12 +50,12 @@ It's designed to work as **FaaS** (Functions as a Service), and our redundant in
         + Capture and validate user inputs
         + Set and retrieve special variables
     4. **Call Logging & Data Processing**:
-       + Captures logs of Class 5 calls for monitoring.
-       + Displays logs to track call progress.
+          + Captures logs of Class 5 calls for monitoring.
+          + Displays logs to track call progress.
     5. **Security & Payment Integration**:
-       + Ability to securely capture and process credit card payments.
-       + Blocks DTMF signals from reaching the other side.
-       + Ensures high security in real-time payment processing.
+          + Ability to securely capture and process credit card payments.
+          + Blocks DTMF signals from reaching the other side.
+          + Ensures high security in real-time payment processing.
 
 ## Developer Documentation
 
