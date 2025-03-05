@@ -63,8 +63,8 @@ Delivery is within 5 minutes.
     + Manual selection allows prioritization of local backends (e.g., US servers for local AMQP server routing).
 
 + **CDR Data Handling**:
-  + Local emission of Call Detail Record (CDR) data minimizes latency.
-  + Helps avoid cross-continent network bottlenecks, ensuring reliable data transmission.
+    + Local emission of Call Detail Record (CDR) data minimizes latency.
+    + Helps avoid cross-continent network bottlenecks, ensuring reliable data transmission.
 
 ## Server List
 
@@ -95,7 +95,7 @@ Although you can technically create as many clusters as needed, in most real-lif
 
 ### Key Benefits and Features
 
-+ **Consistent Rate Limiting**: used to control the number of requests that can be made to a system within a given time frame. It ensures that the rate limiting is applied consistently across all servers or nodes in a distributed system. The goal is to prevent any single user from exceeding their allowed rate, even if they distribute their requests across multiple servers.
++ **Consistent Rate Limiting**: Its used to control the number of requests that can be made to a system within a given time frame. It ensures that the rate limiting is applied consistently across all servers or nodes in a distributed system. The goal is to prevent any single user from exceeding their allowed rate, even if they distribute their requests across multiple servers.
 
 !!! Example "Customer Example"
     If customer Joe is allowed 10 calls per second, without clustering, Server A and Server B would each permit 10 calls per second, potentially doubling the limit to 20 CPS if both servers are used. **This would violate the intended rate limit of 10 CPS for Joe**.
@@ -133,7 +133,9 @@ When you deploy a new server, there is an option to select one of the configured
         + In a single server setup, registration data is stored locally.
         + With multiple servers that aren't clustered, registration information isn't shared, leading to potential call routing issues.
    + **Redis Integration**: An option is available to share the user registration table across servers via Redis (by ticking the UAC location array sharing).
-       + **Performance Note**: When enabled, servers will query the Redis server every second regardless of traffic volume, which can introduce additional load.
+
+    !!! note "Performance Note"
+        When enabled, servers will query the Redis server every second regardless of traffic volume, which can introduce additional load.
 
 4. **Recommendation**:
 
