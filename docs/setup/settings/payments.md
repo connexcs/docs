@@ -14,7 +14,7 @@ Use the **Payments** view to manage payments to ConnexCS and other related funct
 
     **To remove a card, right-click and delete**.
 
-2. * **Payments:** View Payment details like Date/Time, Description (on what the payment was done) and Amount. 
+2. **Payments:** View Payment details like Date/Time, Description (why was the payment made) and Amount.
 
 3. **Voucher Redemption:**
       + Users can apply vouchers provided by ConnexCS:
@@ -22,11 +22,11 @@ Use the **Payments** view to manage payments to ConnexCS and other related funct
         + Click Submit to apply.
         + Invalid vouchers will prompt an error message.
 
-4. **Make Payment:** Users can make a new payment by selecting the relevant option Credit Card/PayPal.
+4. **Make Payment:** Users can make a new payment by selecting the relevant option **Credit Card/PayPal**.
 
 5. **Invoices:**
-   + Displays a list of all invoices associated with the account.
-   + If no invoices appear, it may indicate an issue (to be resolved by ConnexCS support).
+      + Displays a list of all invoices associated with the account.
+      + If no invoices appear, it may indicate an issue (to be resolved by ConnexCS support).
 
 ### Benefits
 
