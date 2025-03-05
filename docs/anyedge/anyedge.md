@@ -2,6 +2,10 @@
 
 **Setup :material-menu-right: AnyEdge**
 
+## Overview
+
+AnyEdge is a dynamic, distributed solution designed to optimize call distribution and load balancing across multiple regions. It enhances redundancy, improves call routing efficiency, and ensures high availability for VoIP traffic.
+
 ConnexCS **AnyEdge** acts as a load-balancer / dispatcher. It balances the traffic between the SIP servers and the customers.
 
 It's a next-generation solution for the Edge Session Initiation Protocol (SIP).
@@ -11,6 +15,21 @@ It provides high-reliability and custom Call Distribution algorithms (Weights an
 !!! Info "AnyEdge Features"
     1. We provide 10,000+ CPS to all customers for optimal scalability and performance.
     2. All our customers benefit from 100Gbps DDoS protection.
+
+### Key Features
+
++ **Global Load Balancing**: Routes calls intelligently based on region and performance.
++ **Failover Protection**: Ensures seamless call routing in case of outages.
+**Auto-Scaling**: Dynamically adjusts resources based on demand.
++ **Optimized Call Distribution**: Distributes traffic efficiently to reduce latency.
++ **Flexible Configuration**: Supports various routing policies and priority settings.
+
+### Benefits
+
++ **Improved Redundancy**: Avoids downtime by automatically rerouting calls.
++ **Optimized Call Routing**: Ensures better call quality and lower latency.
++ **Cost Efficiency**: Uses LCR to minimize operational costs.
++ **Scalability**: Adapts to traffic spikes dynamically.
 
 ## AnyEdge Setup
 
@@ -25,6 +44,7 @@ Click the :material-plus: button to set the following:
 * **Algorithm**: How to distribute calls.
 
     See [**Inbound Proxy / Dispatcher / Load Balancer**](https://docs.connexcs.com/anyedge/anyedge/#inbound-proxy-dispatcher-load-balancer) for details.
+
 * **Cyber-Physical System(CPS)**: Total calls per second allowed.
 
     See [**Metrics**](https://docs.connexcs.com/anyedge/anyedge/#metrics) for details
