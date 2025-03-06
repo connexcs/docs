@@ -244,8 +244,8 @@ For example, if the CPS or Channels limits have reached, capacity failover will 
 
     **Capture Servers**:
 
-        + SIP trace data is relayed to external capture servers.
-        + Heavy load on capture servers can cause TCP back pressure issues.
+    + SIP trace data is relayed to external capture servers.
+    + Heavy load on capture servers can cause TCP back pressure issues.
 
 !!! Note "UDP vs TCP"
     **UDP (Default):**
