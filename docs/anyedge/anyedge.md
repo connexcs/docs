@@ -31,6 +31,25 @@ It provides high-reliability and custom Call Distribution algorithms (Weights an
 + **Cost Efficiency**: Uses LCR to minimize operational costs.
 + **Scalability**: Adapts to traffic spikes dynamically.
 
+### Load Balancer
+
+The load balancer is a core feature from the beginning, designed to manage call routing and provide failover mechanisms in your deployment.
+
+There are two primary methods for handling call distribution:
+
++ **Call Routing via a Load Balancer**:
+    + **Mechanism**: Calls are sent from point A to point C via an intermediary (B), where B acts as the load balancer.
+    + **Key Benefit**: Provides a scalable method to distribute call traffic across servers, ensuring that no single server is overloaded.
+
++ **302 Redirect as a Fallback**:
+    + **Mechanism**: Instead of directly routing through B, point A sends a call to B. B replies with a 302 redirect (temporary) pointing to C, which results in point A ultimately sending the call directly to C.
+    + **Considerations**: This “poor man’s redirect” offers basic call failover but lacks the granular control required for full dispatcher functionality.
+
++ **Capacity Failover**:
+    + **Scenario**: If a server exceeds its capacity (e.g., over 10 calls per second or 20 channels), the call is blocked by default.
+    + **Solution**: The system can automatically redirect overflow calls to another server in the cluster—be it server two or a hybrid hosted solution.
+    + **Key Benefit**: Ensures high availability by distributing excess load to servers with available capacity, acting as an effective failsafe.
+
 ## AnyEdge Setup
 
 ### Configure AnyEdge

@@ -2,7 +2,11 @@
 
 **Setup :material-menu-right: Settings :material-menu-right: DNS**
 
+## Overview
+
 ConnexCS provides a managed **DNS (Domain Name System)** platform geared towards VoIP delivery, so low TTL's (Time to live) won't overload your DNS provider.
+
+DNS management is separate from the Anycast load balancer and provides an additional layer of reliability and routing flexibility.
 
 We provide a white-labeled `.sip.direct` domain name which you can use directly or setup as a `CNAME`.
 
@@ -16,6 +20,23 @@ We provide a white-labeled `.sip.direct` domain name which you can use directly 
     2. Efficiently **handles large-scale DNS queries** with high availability and fast response times.
     3. **Low latency DNS changes** optimize configurations to reduce query resolution time.
 
+### Key Features
+
++ **Integrated DNS Management**:
+    + Uses DNS SRV records to load balance traffic.
+    + Designed for companies that may not have a large enough infrastructure for a dedicated load balancer but still operate multiple servers.
+    + Can be deployed in tandem with the AnyEdge system to enhance functionality.
+
++ **Reliability and Scalability**: DNS is one of the world’s most reliable systems, with very low risk of global outages.
+
++ **Efficient Traffic Handling**:
+    + A recommended setup involves using a unique domain (e.g., abctelco.sip.direct if your company is abctalco.com).
+    + Use of a CNAME record with a TTL (Time To Live) of one hour ensures that DNS lookups are cached, reducing the load on DNS servers.
+    + The servers cache lookup data for 60 seconds, preventing excessive queries.
+
++ **Wildcard Redirects and Management**:
+    + Customers can set up wildcard redirects at the top level to handle high-volume traffic or to isolate specific customers on dedicated servers.
+    + **Key Recommendation**: Avoid sending calls directly to an IP address. Always use DNS records for easier server management and seamless upgrades or failover transitions.
 
 ## Domain Name System Setup
 
@@ -41,14 +62,34 @@ For example:
 
 ### Distribution methods
 
-+ **A records**: The `A` record (pointing a domain such as `abc.com` to `13.224.230.90`) is the most common record in DNS.
++ **A records**: Offer the highest compatibility for call routing. The `A` record (pointing a domain such as `abc.com` to `13.224.230.90`) is the most common record in DNS.
 
     Select several `A` records to setup a round-robin DNS query. This is the simplest form of load-balancing.
 
-+ **SRV records**: Unlike `A` records, `SRV` records send (mirror) data for the SIP client.
++ **SRV records**: Provides a secondary routing strategy with slightly lower compatibility but still robust performance. Unlike `A` records, `SRV` records send (mirror) data for the SIP client.
 
     The SIP client can then make an informed decision about which the servers to try and in what order.
     ConnexCS allows 3 tiers of Service records (SRV), though it's rare to use the Tertiary.
+
+!!! Info "Failover Logic"
+    1. **Primary Routing**: Calls initially target the AnyEdge system.
+    2. **Secondary Routing**: If the primary AnyEdge system is unreachable (e.g., due to network routing errors), a secondary SRV record (preloaded with the last known good settings) takes over.
+    3. **Tertiary Option**: In cases of configuration errors (such as an empty server list), a tertiary routing option can be manually configured.
+
+    ```mermaid
+    graph TD
+    A[Call Initiated] --> B[Primary Routing: AnyEdge System]
+    B --> C{AnyEdge System Reachable?}
+    C -->|Yes| D[Route Call Through AnyEdge]
+    C -->|No| E[Secondary Routing: Use SRV Record]
+    E --> F[Use Last Known Good Settings from SRV Record]
+    E --> G{Configuration Errors?}
+    G -->|Yes| H[Tertiary Option: Manual Configuration]
+    G -->|No| F
+    D --> I[Call Routed Successfully]
+    F --> I
+    H --> I
+    ```
 
 ### AnyEdge Mirroring
 

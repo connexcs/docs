@@ -51,13 +51,23 @@ When you deploy a new server, there is an option to select one of the configured
 
 ## Real-Time Transport Protocol Servers
 
-Real-Time Transport Protocol (RTP) Servers handle streaming media.
+Real-Time Transport Protocol (RTP) Servers handle streaming media for calls and are an integral part of the global deployment.
 
 ConnexCS allows you to route your media through a global array of dedicated media servers.
 
 These servers operate independently of your server.
 
 If your server is in London, you can choose to run your media in New York (if you have customers there). Each regional zone encompasses multiple servers to provide high availability.
+
+### Key Features
+
++ **Geographical Distribution**: Multiple media servers are deployed in different locations to manage media streams efficiently.
+
++ **Capacity Overview**: Each server displays its current capacity, allowing for real-time monitoring of resources.
+
++ **IP Address Information**: Complete lists of media server IP addresses are available, ensuring transparency and easy network management.
+
++ **IPv6 Availability**: Some RTP servers include IPv6 support.
 
 To view RTP Servers:
 

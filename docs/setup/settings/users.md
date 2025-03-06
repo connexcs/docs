@@ -2,6 +2,8 @@
 
 **Setup :material-menu-right: Settings :material-menu-right: User**
 
+ConnexCS provides a robust, granular permissions system through users and groups, ensuring secure and flexible account management.
+
 For more efficient management of access to the ConnexCS Control Panel, Create and assign **Users** and **Groups** based on various levels of permission.
 
 Groups manage the Permissions, and at a Granular level for every endpoint in the system.
