@@ -268,7 +268,7 @@ For example, if the CPS or Channels limits have reached, capacity failover will 
       + Alternative ports can be configured for TCP to bypass local ISP firewall restrictions.
       + TLS can be enabled on different ports as required.
 
-    
+
     !!! Example "For example, to avoid firewall rules or ISP restrictions."
 
 !!! note "Whenever any of the above settings get modified, it's recommended to hit the Install Server."
