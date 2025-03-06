@@ -139,8 +139,8 @@ When you deploy a new server, there is an option to select one of the configured
 
 4. **Recommendation**:
 
-   + To avoid the constant overhead of Redis checks, either maintain a single server or use a clustered setup.
-   + If you must use separate clusters and require cross-communication, enabling user location sharing remains a viable option.
+      + To avoid the constant overhead of Redis checks, either maintain a single server or use a clustered setup.
+      + If you must use separate clusters and require cross-communication, enabling user location sharing remains a viable option.
 
 ## Real-Time Transport Protocol Servers
 
@@ -243,16 +243,21 @@ For example, if the CPS or Channels limits have reached, capacity failover will 
     While providing higher reliability, in high-traffic scenarios there may be a decrease in packet processing time.
 
     **Capture Servers**:
-    + SIP trace data is relayed to external capture servers.
-    + Heavy load on capture servers can cause TCP back pressure issues.
+
+        + SIP trace data is relayed to external capture servers.
+        + Heavy load on capture servers can cause TCP back pressure issues.
 
 !!! Note "UDP vs TCP"
     **UDP (Default):**
+
        + Implements a “send and forget” method ensuring rapid message dispatch.
+       
        + Reduces risk of call event delays during high server load.
 
     **TCP:**
+      
       + Ensures delivery through back pressure and acknowledgments.
+      
       + May result in message buildup if the remote server is unavailable.
   
 + **Use AnyReg Server:** This is an experimental platform SIP Registrar; use only if you are confident. When used in conjunction with AnyEdge, the AnyEdge server will take the registration information and pass it to AnyReg, avoiding the need to check customer equipment for registration. This negates the need for the UAC options above. It reduces load on customer infrastructure, ensuring quick and global registration response times (e.g., community nodes in Australia).
