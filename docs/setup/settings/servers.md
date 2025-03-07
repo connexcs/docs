@@ -67,7 +67,7 @@ If your server is in London, you can choose to run your media in New York (if yo
 
 + **IP Address Information**: Complete lists of media server IP addresses are available, ensuring transparency and easy network management.
 
-+ **IPv6 Availability**: Some RTP servers include IPv6 support.
++ **IPv6 Availability**: RTP servers include IPv6 support. We dont support IPv6 with SIP yet.
 
 To view RTP Servers:
 
