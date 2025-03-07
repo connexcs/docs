@@ -2,10 +2,33 @@
 
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Invoice**
 
-ConnexCS allows for straightforward **Invoice** generation for all providers. The tool is another way to end gaps in communication between providers and customers.
+The invoice system allows for seamless customer billing and payment tracking.
+
+The tool is another way to end gaps in communication between providers and customers.
 
 !!! note "Global Invoices"
     You can also manage Invoices in **Global :material-menu-right: Invoices**.
+
+**Key Features**:
+
++ **Invoice Generation**:
+    + **View**, **select**, and **manage** invoices within the portal.
+    + **Modify** invoice details, including line items, tax descriptions, and unit prices.
+    + **Generate** invoices based on defined packages and usage.
+
++ **Exports**:
+    + Download invoices as PDFs for external sharing and for offline use.
+
++ **Payments & Reconciliation**:
+    + Add and allocate payments against invoices.
+    + Displays outstanding balances and payment history.
+
++ **External Accounting System Integration**:
+    + Supports export to **ClearBooks**, **Xero**, and **FreshBooks** for enhanced tax, depreciation, and discount management.
+    + Export invoices to ClearBooks via API.
+
+!!! Tip "ConnexCS Invoice Philosophy"
+    While invoices can be managed within ConnexCS, external accounting systems are recommended for advanced financial tracking.
 
 ## Add new Invoices
 

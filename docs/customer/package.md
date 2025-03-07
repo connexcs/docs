@@ -4,6 +4,24 @@
 
 Use **Packages** to offer predefined products and services to each customer.
 
+Packages allow customers to define specific service limits and recurring charges, including spend limits and automatic credit deductions
+
+## Key Features
+
++ **Customer-Specific Packages**:
+    + Packages can be applied at the DID level or directly to the customer.
+    + Configurable parameters such as quantity, start and end dates.
+
++ **Customization**:
+    + Specify quantity, which multiplies cost accordingly.
+    + Define start and end dates for package validity.
+
++ **Auto Decrement Credit**:
+    + Automatically deducts a specified amount from the customer's credit at a set frequency (e.g., daily deductions).
+
++ **Autonomous Billing**:
+  + Ensures seamless recurring charges without manual intervention.
+
 ## Assign Packages
 
 1. Click :material-plus:
