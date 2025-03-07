@@ -13,19 +13,20 @@ ConnexCS **Templates** use the mustash-compatible template language [**Handlebar
 
 ### Key Features:
 
-+ Ability to create custom pages within the ConnexCS platform.
-+ Can be used to customize the customer control panel.
-+ Supports:
-  + Sending emails
-  + Sending text messages
-+ Utilizes CXREST API for system communication:
-  + Create, delete, read, and update customer records.
-+ Template Literals & Variables:
++ **Supports**:
+    + Sending emails
+    + Sending text messages
++ **Utilizes CXREST API for system communication**:
+    + Create, delete, read, and update customer records.
++ **Template Literals & Variables**:
     + Placeholders within the template (template literals/variables) are dynamically replaced with actual data.
-+ Pre-Built Templates:
-  + Reset Password Template: Provides a ready-to-use layout when customers reset their passwords.
-  + Voicemail Notification: A simple message indicating “you have a new voicemail.”
-+ Customization: Modify layouts and content to suit various use cases (e.g., complex scenarios like web phone interactions).
++ **Pre-Built Templates**:
+    + **Reset Password Template**: Provides a ready-to-use layout when customers reset their passwords.
+    + **Voicemail Notification**: A simple message indicating “you have a new voicemail.”
++ **Customization**:
+    + Modify layouts and content to suit various use cases (e.g., complex scenarios like web phone interactions).
+    + Can be used to customize the customer control panel.
+    + Ability to create custom pages within the ConnexCS platform.
 
 ### Benefits
 
@@ -51,11 +52,11 @@ ConnexCS **Templates** use the mustash-compatible template language [**Handlebar
 + **Reset Functionality**: A simple reset option reverts the alert template to its original system default, removing any customizations.
 
 + **ScriptForge Integration**:
-  + **Custom Variables Injection**: Execute ScriptForge to inject custom variables into the global space.
+    + **Custom Variables Injection**: Execute ScriptForge to inject custom variables into the global space.
 
-  !!! question "How It Works?"
-      Although ScriptForge runs asynchronously (which might delay processing), its output is merged into the global space for synchronous template variable execution.
-      This method bridges the gap between asynchronous processing (ScriptForge) and synchronous template variable replacement, ensuring seamless functionality.
+!!! question "How It Works?"
+    Although ScriptForge runs asynchronously (which might delay processing), its output is merged into the global space for synchronous template variable execution.
+    This method bridges the gap between asynchronous processing (ScriptForge) and synchronous template variable replacement, ensuring seamless functionality.
 
 ## How to Add a Template
 
@@ -63,7 +64,7 @@ ConnexCS **Templates** use the mustash-compatible template language [**Handlebar
 
 2. Navigate to **IDE** :material-menu-right: `+` icon :material-menu-right: **Template**.
 
-<img src= "/apps/img/template12.png">
+<img src= "/apps/img/template12.png" width="500" >
 
 3.Fill out the following details:
 
