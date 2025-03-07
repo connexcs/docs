@@ -20,6 +20,42 @@ ConnexCS **Templates** use the mustash-compatible template language [**Handlebar
   + Sending text messages
 + Utilizes CXREST API for system communication:
   + Create, delete, read, and update customer records.
++ Template Literals & Variables:
+    + Placeholders within the template (template literals/variables) are dynamically replaced with actual data.
++ Pre-Built Templates:
+  + Reset Password Template: Provides a ready-to-use layout when customers reset their passwords.
+  + Voicemail Notification: A simple message indicating “you have a new voicemail.”
++ Customization: Modify layouts and content to suit various use cases (e.g., complex scenarios like web phone interactions).
+
+### Benefits
+
++ **Enhanced Customization**: Allows designers to separate static design from dynamic user content.
++ **Dynamic Content Integration**: Ensures that template variables are automatically replaced with live data.
++ **Versatile Usage**: Suitable for both simple notifications and more intricate user interface designs.
++ **Flexibility in Design**: The ability to add and reset templates offers complete control over system alerts.
+
+### Alert Management through Templates
+
+**Purpose**: Customize and manage system alerts through editable templates.
+
+**Usage**: Change the default alert template or add entirely new ones to design custom pages.
+
+**Key Features**:
+
++ **Editable Alert Templates**:
+    + Modify the default alert appearance as needed.
+    + Supports multiple alert templates to cover different scenarios.
+
++ **Adding New Templates**: You can add custom templates that don’t already exist.
+
++ **Reset Functionality**: A simple reset option reverts the alert template to its original system default, removing any customizations.
+
++ **ScriptForge Integration**:
+  + **Custom Variables Injection**: Execute ScriptForge to inject custom variables into the global space.
+
+  !!! question "How It Works?"
+      Although ScriptForge runs asynchronously (which might delay processing), its output is merged into the global space for synchronous template variable execution.
+      This method bridges the gap between asynchronous processing (ScriptForge) and synchronous template variable replacement, ensuring seamless functionality.
 
 ## How to Add a Template
 
