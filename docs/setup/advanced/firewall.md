@@ -2,7 +2,7 @@
 
 **Setup :material-menu-right: Advanced :material-menu-right: Firewall**
 
-The ConnexCS **Firewall** uses a threat detection system to blacklist attackers.
+The ConnexCS **Firewall** to enhance system security by dynamically managing traffic based on threat detection to blacklist attackers.
 
 ## Configure Firewall
 
@@ -20,6 +20,45 @@ The ConnexCS **Firewall** uses a threat detection system to blacklist attackers.
 It primarily pays attention to authentication failures on both registration and the firewall at a particular threshold.
 
 If it exceeds certain criteria, the system will issue a system-wide block.
+
+**Key Features**
+
++ **Automated Threat Detection**: Monitors incoming traffic and evaluates against defined thresholds.
+
++ **Dynamic Rule Addition**: When traffic exceeds safe limits (e.g., 10,000+ requests per minute), the system automatically adds blocking rules.
+
++ **Global Enforcement**: Once a threat is detected, the blocking rule is applied across all accounts to prevent further spamming.
+
++ **Manual Override**: If a blocked entity is later determined to be safe, administrators can manually delete the rule to restore access. Administrators can also review and remove a rule if the flagged source isn't considered a threat.
+
+!!! question "How it works?"
+    **Detection and Blocking**:
+    1. The system continuously monitors incoming requests.
+    2. If traffic exceeds set thresholds, it identifies potential spam or attacks.
+    3. A rule is automatically added to the firewall.
+    
+    ```mermaid
+    graph TD;
+
+    %% Define Nodes for Each Step
+    A[Monitor Incoming Requests]
+    B{Traffic Exceeds Threshold?}
+    C[Identify Potential Spam or Attack]
+    D[Add Rule to Firewall]
+    E[Allow Normal Traffic]
+
+    %% Define Connections Between Steps
+    A --> B
+    B -- Yes --> C
+    C --> D
+    B -- No --> E
+    ```
+
+**Benefits**
+
++ **Enhanced Security**: Proactively defends against high-volume attacks.
++ **Centralized Control**: Rules are applied system-wide, minimizing manual intervention.
++ **Adaptability**: The system learns from real-time traffic patterns and updates its defenses accordingly.
 
 ## Remove an IP from the Blocked list
 

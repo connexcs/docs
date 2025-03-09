@@ -2,13 +2,31 @@
 
 **Setup :material-menu-right: Advanced :material-menu-right: Prefix Set**
 
+## Overview
+
 A **Prefix Set** groups containing one or more prefixes together. You can then apply this set to a Customer or Route.
 
 Without the ability to use a Prefix Set, you need to manually configure each individual Customer or Route, increasing the possibility of human error.
 
+The Prefix Set feature allows you to define specific dialing prefixes and create global blacklists for incoming calls and CLI (Caller Line Identification).
+
 With Prefix Sets, we avoid these errors and reduce configuration time as a whole.
 
 ConnexCS supports plain text as well as regular expressions when building Prefix Sets for greater flexibility.
+
+### Key Features
+
++ **Custom Prefix Addition**: Easily add prefixes (e.g., for UK landlines, input prefixes like 441 and 442).
++ **Global Dialed Blacklist**: 
+    + Block ranges of numbers using regular expressions.
+    + **Example**: Block any number matching the UK mobile range starting with “4477777” by using a regex pattern with an anchor (^) at the start.
++ **CLI Blocking**: Similarly, define and enforce a global blacklist for caller IDs (CLI) that appear across multiple accounts.
+
+### Benefits
+
++ **Streamlined Call Routing**: Quickly set up and manage dialing rules for different regions or purposes.
++ **Proactive Spam Prevention**: Automatically blocks unwanted calls before they can propagate through the system.
++ **Centralized Control**: Manage global blacklists from one interface, reducing administrative overhead.
 
 ## Configure Prefix Set
 
