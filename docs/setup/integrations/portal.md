@@ -6,6 +6,9 @@ The **Portal** lets you add domains and sub-domains to the Control Panel, which 
 
 You can provide several domains for your customers through different brands, and each domain can have different permissions, currencies, default, etc.
 
+!!! Note "Deployment"
+    Customers are instructed to point a CNAME record to portal.connectcs.com; secure certificates are deployed automatically upon configuration.
+
 ## Portal Setup
 
 **Step 1: Set up the CNAME record**
@@ -48,27 +51,27 @@ You can provide several domains for your customers through different brands, and
    * **Brand Name:** The name that appears on the portal for your customers.
    * **Customer Sign up:** Allow customers to sign up independently.
    * **Carrier Sign up:** Allow carriers to sign up independently.
-   * **Template Customer:** Select a pre-configured template customer on your account, preset with default values and gets set when a customer independently creates their account via the portal (See "Template Customer example" below).
+   * **Template Customer:** Select a pre-configured template customer on your account, preset with default values and gets set when a customer independently creates their account via the portal (See "Template Customer example" below). Automatically replicate settings for new customers.
    Available values for this template are:
        * Customer [Fields in the customer itself, such as debit limit]
        * Routes
-       * Payments
+       * Payments (Any associated payment configurations are copied)
        * Alerts
        * Packages
-       * Contracts
+       * Contracts (Required contracts (e.g., if two contracts are needed at sign-up) are duplicated automatically)
    * **Currencies:** Choose the currencies available for your customers when they sign up.
 
 === "User Access Area"
 
-    Select the sections/features displayed to your customers (see "Override Options" below).
+    Select the sections/features displayed to your customers (see "Override Options" below). Individual settings can be customized per customer.
 
 === "Breakout"
 
-    Select the columns to display in the **Report :material-menu-right: Breakout Report**.
+    Customized report view that shows different levels of detail depending on whether the user is a carrier or a customer.Select the columns to display in the **Report :material-menu-right: Breakout Report**.
 
 === "CDR"
 
-    Select the columns to display in the **Management :material-menu-right: Customer :material-menu-right: [Choose Customer] :material-menu-right: CDR Report**.
+    	Select which CDR fields are available for viewing by different user types. Select the columns to display in the **Management :material-menu-right: Customer :material-menu-right: [Choose Customer] :material-menu-right: CDR Report**.
 
 === "Advanced"
 
