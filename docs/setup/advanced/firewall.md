@@ -33,8 +33,11 @@ If it exceeds certain criteria, the system will issue a system-wide block.
 
 !!! question "How it works?"
     **Detection and Blocking**:
+
     1. The system continuously monitors incoming requests.
+    
     2. If traffic exceeds set thresholds, it identifies potential spam or attacks.
+    
     3. A rule is automatically added to the firewall.
     
     ```mermaid
