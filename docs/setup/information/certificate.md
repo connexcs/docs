@@ -2,6 +2,8 @@
 
 **Setup :material-menu-right: Information :material-menu-right: Certificate**
 
+## Overview
+
 **Certificate** management for public-key cryptography, such as:
 
 * Customer Portal
@@ -9,9 +11,25 @@
 * TLS SIP  
 * WebRTC
 
+It manages secure certificate deployment for the customer portal and related services.
+
+Also ensures that end-user connections are protected via SSL/TLS.
+
 *(**TLS**:Transport Layer Security, **SIP**: Session Initiation Protocol, **WebRTC**: Web Real-Time Communication)*
 
 ConnexCS provides certificates free of charge courtesy of **[Let's Encrypt](https://letsencrypt.org/)** or User Provided.
+
+### Key Features & Benefits
+
++ **Automated Certificate Deployment**:
+    + Customers are asked to point a CNAME record (e.g., to portal.connectcs.com) to enable certificate provisioning.
+    + Once the CNAME is in place, the system deploys a secure certificate automatically.
+
++ **Domain & Branding Synchronization**:
+    + Certificate deployment is linked to domain and brand name settings.
+    + Simplifies the process of establishing trust with end users.
+
++ **Development & Troubleshooting**: Provides visibility into certificate status (e.g., alerts when a certificate has expired during development).
 
 ## Add Certificate
 
@@ -67,7 +85,12 @@ Renewals for **User Provided** certificates are your responsibility.
 
 ## Checking Certificates
 
-The Status column has a :fontawesome-check: representing all passed checks.
-
-The following exhibits a problem:
-:fontawesome-exclamation-triangle:. If you hover your mouse, you will see a checklist explaining the issue.
+|Column|Description|
+|------|-----------|
+|**Domain**|Certificate domain name|
+|**Name**|Either `Lets Encrypt` or `User Provided`|
+|**Subject CN**|Refers to the Common Name (CN), which is a field within the subject of a certificate that identifies the specific domain name or entity the certificate is issued to, often matching the website's domain name|
+|**Issued On**|Date when the certificate was issued|
+|**Expires On**| Date when your certificate expires|
+|**Status**| An alert associated with your certificate with needs correction, like if certificate is expired or domain name doesn't match with the subject|
+|**Deployed**|If your certificate is deployed it will display a `check-circle` icon|
