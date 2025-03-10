@@ -99,6 +99,5 @@ It supports search and dynamic retrieval of call-related data.
     + Customizable home screen and tabs (e.g., Home, Dialpad, Agent, Contacts, Settings) provide a tailored user experience.
 
 + **User Interface Customization**:
-+ Supports dynamic icons, custom page templates, and the option to change the order of tabs.
-+ Enhances accessibility and improves overall user interaction with call recordings.
-+ 
+  + Supports dynamic icons, custom page templates, and the option to change the order of tabs.
+  + Enhances accessibility and improves overall user interaction with call recordings.
