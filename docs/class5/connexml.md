@@ -578,7 +578,7 @@ Dynamically dial a phone number based on a `substring` of a variable named `Exte
 It helps to define on which leg of the call the DTMF will work. For example, `dtmf_leg ='a'` or `dtmf_leg ='b'`.
 
 !!! Example
-    When the digit `3` is pressed on the call leg `b` within the specified context `A`, the call will be transferred to `test4`.
+   When the digit `3` is pressed on the call leg `b` within the specified context `A`, the call will be transferred to `test4`.
     ``` xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
@@ -590,7 +590,18 @@ It helps to define on which leg of the call the DTMF will work. For example, `dt
 
 |**Noun**|**Description**|  
 |--------|---------------|
-|`Transfer`|Transfers the call to the given extension given|
+|`Transfer (Blind)`|Transfers the call to the given extension given immediately without verifying whether the recipient is available or willing to take the call|
+|`Attended Transfer`|The transferring party confirms the recipient's availability before completing the transfer.|
+
+!!! Example "Example Attended Transfer"
+    ``` xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+        <Transfer attended="true">
+            <Target>+1234567890</Target>
+        </Transfer>
+    </Response>
+    ```
 
 ### Before
 
