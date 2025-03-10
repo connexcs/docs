@@ -89,7 +89,7 @@ Call Recording enables users to view and review call recordings and histories th
 
 It supports search and dynamic retrieval of call-related data.
 
-## Key Features & Benefits
+### Key Features & Benefits
 
 + **WebRTC Phone Integration**:
     + Incorporates a dial pad and contact database with complete call history details.
@@ -99,5 +99,5 @@ It supports search and dynamic retrieval of call-related data.
     + Customizable home screen and tabs (e.g., Home, Dialpad, Agent, Contacts, Settings) provide a tailored user experience.
 
 + **User Interface Customization**:
-  + Supports dynamic icons, custom page templates, and the option to change the order of tabs.
-  + Enhances accessibility and improves overall user interaction with call recordings.
+    + Supports dynamic icons, custom page templates, and the option to change the order of tabs.
+    + Enhances accessibility and improves overall user interaction with call recordings.

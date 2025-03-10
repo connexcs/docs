@@ -30,4 +30,4 @@ It also kinks carriers and DID drivers to enable smooth telephony operations.
 | **Type** | Such as Mobile, Landline, and Special Services|
 | **Operator**| The Operator Name / Range Holder of the number (Note: Porting of numbers)|
 | **Description** | More information about the number|
-| **Country** | Destination country the number|
+| **Country** | Destination country of the number|

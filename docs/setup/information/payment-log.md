@@ -21,5 +21,5 @@ Payments made through your customer portal or using PayPal Instant Payment Notif
     + Option to deduct payment processor fees automatically.
 
 + **Dynamic Currency Options**:
-  + Allows specification of acceptable currencies for incoming payments.
-  + Ensures that financial records are maintained in the desired currency format.
+    + Allows specification of acceptable currencies for incoming payments.
+    + Ensures that financial records are maintained in the desired currency format.
