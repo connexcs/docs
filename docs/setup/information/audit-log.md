@@ -4,16 +4,21 @@
 
 ## Overview
 
-The **Audit Log**, or Audit Trail, is a chronological set of records that shows all changes (activities) performed on a system, software, or device, or both customers and carriers.
+The **Audit Log**, or Audit Trail, is a chronological set of records that shows all changes (activities) performed on a system, software, or device, or both customers and carriers. It even displays **timestamps** and **IP addresses**.
+
+Displays HTTP verbs (PUT, POST, GET, DELETE) for actions taken.
+
+Enables viewing differences between previous and current configurations.
 
 It displays all changes made, either directly by users or through the API. This includes all activity on the Control Panel and in the Customer Portal.
 
 You can search using Account ID, Ingress ID, etc.
 
 !!!question "Why and when do you need to see audit logs"
-    Audit logs can offer rich insights about what caused downtime, loss of performance, and other unexpected issues.
-
-    An audit log is a primary source of information to investigate the causes of issues.
+    1. Audit logs can offer rich insights about what caused downtime, loss of performance, and other unexpected issues.
+    2. An audit log is a primary source of information to investigate the causes of issues.
+    3. Provides proof of customer changes.
+    4. Prevents disputes about unauthorized setting modifications.
 
 ### Key Features & Benefits
 

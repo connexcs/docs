@@ -60,6 +60,3 @@ You can also generate an invoice through **Schedule Report**.
 
 [invoice-pdf]: /misc/img/invoice-pdf.png "Invoice PDF"
 [invoice-edit]: /misc/img/invoice-edit.png "Edit Invoice"
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzNjY4NTkzMl19
--->

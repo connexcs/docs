@@ -2,78 +2,13 @@
 
 **Management :material-menu-right: Customer**
 
-You can organize ConnexCS **Customers** through customer cards.
+The **Customer**  section will help you navigate the key functionalities of our system, from adding customers to configuring settings, managing invoices, and understanding audit logs.
 
-![alt text][customers]
-
-!!! question "How many customers can I add?"
-    You can add unlimited customers, and we won't charge per customer, only on their individual usage.
-
-!!! Info "White-Labeling Solutions"
-    At ConnexCS Pvt. Ltd., we offer comprehensive white-labeling solutions, enabling our partners to re-brand and deliver our cutting-edge services as their own.
-
-    With full customization of branding, user interfaces, and features, we ensure a seamless integration into your existing offerings.
-    
-    Our flexible platform supports easy API integration and scalable infrastructure, allowing you to provide reliable, fully branded services to your customers without the need for in-house development.
-
-## Customer functions
-
-On the **Customers** page, you can perform several management operations.
-
-By clicking on `+` button we can add customer (see [**Create Customers**](https://docs.connexcs.com/customer/customer/#create-customers) below for details.)
-
-**Refresh**: Refreshing the page, helpful when making edits or looking at real-time changes. This page is built as a web app, so some information will update automatically.
-
-**SQL**: The **SQL Query** option allows you to run a query.
-
-**Bulk Upload**: Upload several Customers at the same time, by importing a spreadsheet file (.csv file) into ConnexCS.
-
-1. Click `Bulk Upload`, then `Upload`, find your customer file, and then click **`Open`**.
-2. Right-click on the second row and select **Start Row** to show the first line of data (the first row is typically column headers).
-3. Right-click on each column to **Map Columns** to appropriate fields.
-4. Once you have filled out all the required fields, click **Upload to Server**.
-
-!!! note "Note"
-    1. Before uploading the .csv file, please ensure  that it doesn't contain any exponential or scientific notations. The inclusion of the notations will result in errors.
-
-    2. You must include the **Customer name** and **Currency** as necessary columns in the.csv file for bulk uploading.
-
-**Bulk Edit**: Select several customers, then click **Bulk Edit** to revise fields such as Channels, Status, Flow Speed (CPS), Portal Access, and Country.
-
-**Delete**: Delete several customers at a time.
-
-**?**: Link to the documentation of the current page.
-
-**Send**: ConnexCS includes email and SMS support for your customers.
-
-1. Select several customers using the tick-box selector on the left side of each row. (Customers aren't visible to each other in the sent message.)
-2. Click on "Send" at the top right then choose email or SMS.
-3. Fill in the Subject line and body details and send.
-      + Emails sent FROM the email address gets populated in Setup > Settings, and TO every email address listed in Contacts for each customer.
-      + Each contact receives an SMS to their Mobile number.
-      + Refer ConnexCS: This feature allows you to send simple ConnexCS Referrals to you customers.
-        + You can send referrals to multiple **Customers**.
-        + You can select the **Template** from the drop-down list.
-        + Enter the **Subject**.
-        + Write the Body of the referral.
-        + Click on `Send`.
-  
-<img src= "/customer/img/referral.png">
-
-!!! note "Custom Email Servers"
-    Change the outbound Email Server and SMS origination number in **Setup :material-menu-right: Settings**.
-
-**Active**: Filter customer(s) based on account status. Results on the page will automatically arrange themselves according to the filter.
-
-&emsp; ![alt text][customer-status]
-
-## Customer View Modification
-
-+ **Columns** pop out on the right and allows you to add /  remove options, and change column order, for some cases you can create row groups and total values for pivot functionality.
-+ **Filters** pop out on the right and allows you to filter your customers.
-+ Adjust Column ordering
+Follow the sections below to get started.
 
 ## Create Customer
+
+The following sections will appear when you click on the `blue +` sign.
 
 *Click each tab for field explanations:*
 
@@ -82,32 +17,37 @@ By clicking on `+` button we can add customer (see [**Create Customers**](https:
     * **Name:** A name or unique identifier for each customer.
     * **Channels:** Set the maximum number of channels (essentially a channel is a live call). 
     * **Flow Speed:** Set the CPS (Calls Per Second) for the customer.
-    * **Status:** The customer's status:
-    
-        :material-menu-right: `Active`: The customer is active and allowed to pass calls. 
-        
-        :material-menu-right: `Inactive`: The account is disabled, and no calls will be completed. 
-        
-        :material-menu-right: `Pending Approval`: New signups are listed as Pending Approval. The customer cannot pass calls or become active until this phase is completed. 
-    
     * **Status:** Defines the customer's account status as follows:
            * **Active:** The customer is able to send and receive calls.
            * **Inactive:** When the customer's account is unused or non-functional.
            * **Penalty:** When the customer's account is penalised due to balance or any other reason. The customer's account gets blocked and cannot use any of the services.
            * **Pending Approval:** If a customer has asked for any service and it requires some approval before using it, you can set the status as pending approval.
-    * **Debit Limit:** How much account can go into the negative (typically only relevant for post-pay customers). See [**Credit Control**](/credit-control/) for details. 
-    * **Minimum Payment:** Set the minimum payment a customer can add to recharge the account. 
+    * **Debit Limit:** How much negative balance is allowed,  typically only relevant for post-pay customers. See [**Credit Control**](/credit-control/) for details. 
+    * **Minimum Payment:** Set the minimum payment a customer can add to recharge the account (required for account top-ups). 
+    *  **Restrict Topup Currencies**: Enables you to restrict or define the specific currency types that customers can use to add funds to their wallet or account.
     * **Tax:** Tax is added as a percentage that is charged on top of costs. (UK = VAT; US = Sales Tax)
     * **Currency:** Select the currency from the drop-down menu.
 
 === "Config"
 
-    + **PayPal Email:** The email address associated with the customer's PayPal account. (This is relevant when using the IPN API which lets customers make payments directly through PayPal instead of using the Customer Portal. See our API documentation for details on [**PayPal IPN**](https://docs.connexcs.com/setup/integrations/api/#paypal-ipn-integration).) 
+    + **PayPal Email:** The email address associated with the customer's PayPal account. (This is relevant when using the IPN API which lets customers make payments directly through PayPal instead of using the Customer Portal. See our API documentation for details on [**PayPal IPN**](https://docs.connexcs.com/setup/integrations/api/#paypal-ipn-integration). It enables mass payments without requiring customer login.
     + **Website:** The customer's website address.
+    + **P-Asserted-ID:**PAID is a feature that determines how calls are routed based on predefined rules. The behavior of PAID varies depending on whether it is set to **Default**, **If Available**, or **Required**.
+        + **Default**: If there is any PAID or CLI rule, then the call will proceed if not the call will still proceed. Any attempt to modify PAID, including parameter rewrite rules, CLI section changes, or PAID changes, will not take effect. No modifications are allowed to PAID.
+        + **If Available**: The rule applies only when PAID is available. If PAID is present, it can be modified using rewrite rules. If it is missing, the call proceeds without PAID. Allows rewriting of PAID using rules.
+        + **Required**: PAID must be present. If PAID is missing, the call will not proceed.PAID is mandatory for call routing.
+
     + **Portal Access:** It allows you to **Show** and **Hide** parameters like Balance, CDR, Breakout etc on your customer portal. 
-    + **Tags**: Use this to add meta-data identifiers to a customer. If a customer routing is created using a template from [**Global Routing**](https://docs.connexcs.com/global-routing/), this will be the tag configured in the template.
-    + [**TOML**](https://en.wikipedia.org/wiki/TOML): This is a data storage mechanism for configuration, similar to INI files. It allows you to create advanced customization to set values, etc, for Script Forge to reference later. 
-    + **Reseller**: Associate the customer to a preset Reseller Group (see [**Create Groups**](https://docs.connexcs.com/setup/settings/users/#create-groups) for more details.)
+    + **Tags**: Use this to add meta-data identifiers to a customer. If a customer routing is created using a template from [**Global Routing**](https://docs.connexcs.com/global-routing/), this will be the tag configured in the template. Used to apply global routing rules to customers.
+    + Vars<sup>[**TOML**](https://en.wikipedia.org/wiki/TOML)</sup>: This is a data storage mechanism for configuration, similar to INI files. It allows you to create advanced customization to set values, etc, for Script Forge to reference later. 
+    + **Reseller**: Allows customers to manage sub-accounts and grant controlled access to their resellers.
+    This ensures proper call routing, access restrictions, and rate card management.
+    Associate the customer to a preset Reseller Group (see [**Create Groups**](https://docs.connexcs.com/setup/
+    settings/users/#create-groups) for more details.)
+        + The reseller can manage multiple customers under their account.
+        + Resellers can have controlled access to rate cards, customer accounts, and billing.
+        + Each reseller sees only the customers and rate cards assigned to them.
+        + Resellers can sell traffic to their own customers and manage billing.
     + **Account Manager**: Designating the control of this account to a specific user.
     + **Invoice Schedule**: Specify frequency for invoice generation like Daily, Weekly or Monthly.
     + **Flags**: Select the **Create Invoice on Payment** flag and if payment done then invoice will be generated.
@@ -126,7 +66,7 @@ By clicking on `+` button we can add customer (see [**Create Customers**](https:
 
 === "Verification"
 
-    + **Approved CLI's Only**: Allows the customer to add numbers in the [**Customer Portal CLI**](/customer-portal/cp-cli/) section. This generates a test call with a code that the customer must enter in the portal. Once complete, their CLI will be added to the system. 
+    + **Approved CLI's Only**: Allows the customer to add numbers in the [**Customer Portal CLI**](/customer-portal/cp-cli/) section. This generates a test call with a code that the customer must enter in the portal. Once complete, their CLI will be added to the system. It basically, r  restricts calls to pre-approved caller IDs.
     + **Email Verification** and/or **Mobile Verification**: Used to force the customer to go to the portal for verification. (This is important to select when you create a customer manually.) If the customer doesn't verify these, they won't be able to dial. 
 
     !!! attention
@@ -137,21 +77,16 @@ By clicking on `+` button we can add customer (see [**Create Customers**](https:
     These are arbitrary notes that can be entered onto an account at your discretion. 
 
     !!! note "Save Options"
-        + **Save and Continue** = Exit the Customer screen
-        + **Save and Stay** = Save the customer, but stay on the screen (helpful when adding several Customers at a time)
-        + **Delay and Save** = Select a time to elapse before saving the Customer, delaying the setup or change.
+        + **Save and Continue**:  Saves and exits.
+        + **Save and Stay**: Saves the customer data but keeps the form open for additional entries (stay on the screen). It's helpful when adding several Customers at a time.
+        + **Delay and Save**: Allows scheduling changes (e.g., updating debit limits at a later date).
 
 === "Day/Time Restrict"
 
     With this feature you can refrain your customers from calling at speficied time slots.
-    
-    **How to use?**
-    
-    1. Login to your Control Panel.
-    2. Navigate to Management :material-menu-right: Customer :material-menu-right: Customer [Name] :material-menu-right: Day/Time Restrict.
-    3. Choose the **Timezone** from the drop-down.
-    4. Drag the time slider between the time-slots you wish to aloow your customers to dial.
-    5. Click `Save`.
+    1. Choose the **Timezone** from the drop-down.
+    2. Drag the time slider between the time-slots you wish to aloow your customers to dial.
+    3. Click `Save`.
 
     !!! Example
         In the image below you can see the time slider starts from 12:00 AM till 8:00 AM, this means your customers are only allowed to dial between 12:00 AM and 8:00 AM. After 8:00 AM your customers won't be able to call. The rest of the slots (grey color) are restricted slots.
@@ -162,6 +97,13 @@ By clicking on `+` button we can add customer (see [**Create Customers**](https:
     The daily spend day is defined from 00:00 UTC to 00:00 UTC.
 
 !!! note "Note that you won't be able to change the account currency once you create the account."
+
+!!! info "PAID Configuration
+
+    PAID can be set in two places:
+
+    1. **Customer Level**: Applied when a call originates from the customer.
+    2. **Carrier Level**: Applied when a call is forwarded to a carrier.
 
 ## Configure Customers
 
@@ -175,13 +117,16 @@ ___
 
 Click an existing customer name from the Customer section, then click **`Edit`**. For all field details, see **[Create Customers](https://docs.connexcs.com/customer/customer/#create-customer)** above.
 
-[customers]: /customer/img/customers.png "Customer Dashboard"
+!!! question "How many customers can I add?"
+    You can add unlimited customers, and we won't charge per customer, only on their individual usage.
+
+## White-Labeling Solutions
+
+At ConnexCS Pvt. Ltd., we offer comprehensive white-labeling solutions, enabling our partners to re-brand and deliver our cutting-edge services as their own.
+
+With full customization of branding, user interfaces, and features, we ensure a seamless integration into your existing offerings.
+
+Our flexible platform supports easy API integration and scalable infrastructure, allowing you to provide reliable, fully branded services to your customers without the need for in-house development.
+
 [customer-status]: /customer/img/39.png "Customer Status"
 [customersubs]: /customer/img/customersubs.png "Customer Sub-Sections"
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzMwMzMwMDAsNDM4MjQ3ODQ2LDExMz
-UxNTg2OTksMzg1MTAxMjIsLTcyODExODg4MywtMTIyNDM0MTE4
-OCwxMzg1MzU3MTk2LC01NzU1NjUwMjgsLTQwMDQ2ODc1NSwtMT
-U1NjMxNDQzMl19
--->
