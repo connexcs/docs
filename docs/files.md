@@ -82,3 +82,23 @@ We support the automatic archival of rate cards.
 These can be downloaded in `.csv` format for convenient access and record-keeping.
 
 [texttospeech]: /misc/img/texttospeech.png "Text to Speech"
+
+## Browse Recordings
+
+Call Recording enables users to view and review call recordings and histories through the Web Phone interface.
+
+It supports search and dynamic retrieval of call-related data.
+
+## Key Features & Benefits
+
++ **WebRTC Phone Integration**:
+    + Incorporates a dial pad and contact database with complete call history details.
+    + Users can see who was called and view associated call data.
++ **Dynamic Content Loading**:
+    + Offers the ability to integrate ScriptForge to pull down additional information for each call.
+    + Customizable home screen and tabs (e.g., Home, Dialpad, Agent, Contacts, Settings) provide a tailored user experience.
+
++ **User Interface Customization**:
++ Supports dynamic icons, custom page templates, and the option to change the order of tabs.
++ Enhances accessibility and improves overall user interaction with call recordings.
++ 
