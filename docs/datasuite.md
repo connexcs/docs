@@ -11,7 +11,7 @@ What our Data Suite offers?
 1. Data Management
 2. Bulk Upload
 3. Data Analyses
-4. Server Side Querying
+4. Remote Query
 
 ## Steps to use Data Management Suite
 
@@ -21,19 +21,21 @@ Login to the Control Panel and click on **Data Suite**.
 
 ### Step 2: Workspace
 
-Four options are available: **New Workspace**, **Load Workspace**, **Bulk Upload** and **Server Side Querying**.
+Four options are available: **New Workspace**, **Load Workspace**, **Bulk Upload** and **Remote Query**.
 
 1. **New Workspace**: Allows you to manage and analyse your data in a new workspace.
 2. **Load Workspace**: Loads your existing workspace and allows you to continue where your last left.
 3. **Bulk Upload**: Uploads a huge chunk of data to a remote table.
-4. **Server Side Querying**: Allows directly querying remote tables.
+4. **Remote Query**: Allows directly querying remote tables.
 
-<img src= "/misc/img/ds12.png">
+<img src= "/misc/img/dms1.png">
 
 !!! Note "Important Note"
     Upload the workspace ONLY in the `.json` format in **Load Workspace**.
 
-### Step 3: Upload Data
+### Step 3: Use any of the above 4 options for Data Manageement
+
+#### New Workspace
 
 **Upload Data** (New Workspace, Load Workspace, Bulk Upload): You can create your workspace via three methods:
 
@@ -41,7 +43,7 @@ Four options are available: **New Workspace**, **Load Workspace**, **Bulk Upload
 2. Enter a **URL**.
 3. Manually enter the content via **Text** option.
 
-<img src= "/misc/img/ds1.png">
+<img src= "/misc/img/dms2.png">
 
 #### Uploading a File
 
