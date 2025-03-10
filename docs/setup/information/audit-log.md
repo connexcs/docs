@@ -2,21 +2,42 @@
 
 **Setup :material-menu-right: Information :material-menu-right: Audit Log**
 
-The **Audit Log**, or Audit Trail, is a chronological set of records that shows all changes performed on a system, software, or device.
+## Overview
+
+The **Audit Log**, or Audit Trail, is a chronological set of records that shows all changes (activities) performed on a system, software, or device, or both customers and carriers. It even displays **timestamps** and **IP addresses**.
+
+Displays HTTP verbs (PUT, POST, GET, DELETE) for actions taken.
+
+Enables viewing differences between previous and current configurations.
 
 It displays all changes made, either directly by users or through the API. This includes all activity on the Control Panel and in the Customer Portal.
 
 You can search using Account ID, Ingress ID, etc.
 
 !!!question "Why and when do you need to see audit logs"
-    Audit logs can offer rich insights about what caused downtime, loss of performance, and other unexpected issues.
+    1. Audit logs can offer rich insights about what caused downtime, loss of performance, and other unexpected issues.
+    2. An audit log is a primary source of information to investigate the causes of issues.
+    3. Provides proof of customer changes.
+    4. Prevents disputes about unauthorized setting modifications.
 
-    An audit log is a primary source of information to investigate the causes of issues.
+### Key Features & Benefits
+
++ **Breakout Reporting**:
+    + Offers a breakout report that can be customized to display different levels of information based on user roles.
+    + Allows sensitive data to be selectively hidden or shown.
+
++ **Customizable CDR Fields**:
+    + Administrators can choose which fields in the CDR should be available.
+    + Supports both customer and carrier-specific configurations.
+
++ **Enhanced Oversight**:
+    + Tracks changes made in portal settings (e.g., custom JavaScript, CSS, logos, and footer details).
+    + Helps maintain a detailed history of system interactions and modifications.
 
 ## Columns
 
 | Column Name | Description|
-|-------------|------------------------------------------------|
+|-------------|------------|
 | **User** | User responsible for the events. An entry will display 'Portal' if you make a change there; all others were directly made in the Control Panel|
 | **IP** | IP address of the computer which performed the action|
 | **Date / Time** | Date / Time when the User made the change|
