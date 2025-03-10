@@ -89,12 +89,14 @@ nav:
             - Documents: customer/documents.md
             - Class5: customer/class5.md
 
-    - Carrier: carrier.md
+        - Carrier: carrier.md
         
-    - Rate Cards:
-        - Rate Card Overview: rate-card-building.md
-        - Provider Rate Card: provider-ratecard.md
-        - Customer Rate Card: customer-ratecard.md 
+        - Rate Cards:
+            - Rate Card Overview: rate-card-building.md
+            - Provider Rate Card: provider-ratecard.md
+            - Customer Rate Card: customer-ratecard.md
+
+        - Voucher: voucher.md 
     
         - Routing:
             - Routing Overview: routing.md
@@ -119,6 +121,7 @@ nav:
     - Logging: logging.md
     
     - Class 5:
+        - Introduction: class5/class5-intro.md
         - Apps: class5/apps.md
         - Conference: class5/creating-conference.md
         - Call Center: class5/call-center.md
@@ -221,7 +224,6 @@ nav:
         - General Data Protection Regulation: guides/gdpr.md
         - Call Detail Record Retention: guides/cdr-retention.md
         - Spam Protection Features: guides/spam-callsblock.md
-        - Some Interesting Features: makecall.md
     
     - Troubleshooting: 
             - Call Connection/Signaling Issues: guides/tshoot-signal.md
@@ -231,6 +233,7 @@ nav:
             - Remote Testing: guides/remote-testing.md
             
     - Video Guide: video-guide.md
+    - Some Interesting Features: makecall.md
 
   - Customer Portal:
     - Dashboard: customer-portal/cp-dashboard.md
@@ -325,5 +328,3 @@ nav:
         - Transfer: apps/components/transfer.md
         - Tree Select: apps/components/tree-select.md
         - Webphone: apps/components/webphone.md
-
-    
