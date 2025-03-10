@@ -2,12 +2,32 @@
 
 **Setup :material-menu-right: Advanced :material-menu-right: Language**
 
-Use the **Language** interface to customize your selected interface language.
+## Overview
+
+The system offers robust language customization features that allow you to tailor language settings to your organization’s interface needs.
 
 You can add non-English equivalents for words in your preferred language or revise system defaults.
 
 !!! info "Multiple entries for one Key"
     If you add a non-English equivalent for a word, say 'Channel' as 'canal', but there is an existing entry for 'Channel' as 'Canales', the Control Panel replaces the default entry with your new word.
+
+### Key Features
+
++ **Custom Translations**:
+    + Add or modify translations for any language.
+    + **For example**, update the Russian translation for “support chat” if the default is incorrect.
+
++ **Multi-Language Compatibility**: Changes made are automatically reflected when switching languages.
+
++ **Reset to Default**: A reset option is available to revert custom translations back to the default settings.
+
++ **Dynamic Updates**: When a different language is selected, the system applies your custom translations immediately.
+
+### Benefits
+
++ **Enhanced Localization**: Provides more accurate and culturally appropriate language support.
++ **Flexibility and Control**: Easily update and manage translations as needed.
++ **User-Friendly Experience**:  Automatic updates and reset functionality simplify language management.
 
 ## Add Non-English Equivalents
 
