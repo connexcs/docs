@@ -59,7 +59,7 @@ You can provide several domains for your customers through different brands, and
        * Alerts
        * Packages
        * Contracts (Required contracts (e.g., if two contracts are needed at sign-up) are duplicated automatically)
-   * **Currencies:** Choose the currencies available for your customers when they sign up.
+* **Currencies:** Choose the currencies available for your customers when they sign up.
 
 === "User Access Area"
 
@@ -71,7 +71,7 @@ You can provide several domains for your customers through different brands, and
 
 === "CDR"
 
-    	Select which CDR fields are available for viewing by different user types. Select the columns to display in the **Management :material-menu-right: Customer :material-menu-right: [Choose Customer] :material-menu-right: CDR Report**.
+    Select which CDR fields are available for viewing by different user types. Select the columns to display in the **Management :material-menu-right: Customer :material-menu-right: [Choose Customer] :material-menu-right: CDR Report**.
 
 === "Advanced"
 
