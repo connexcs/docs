@@ -59,7 +59,7 @@ You can provide several domains for your customers through different brands, and
        * Alerts
        * Packages
        * Contracts (Required contracts (e.g., if two contracts are needed at sign-up) are duplicated automatically)
-* **Currencies:** Choose the currencies available for your customers when they sign up.
+   * **Currencies:** Choose the currencies available for your customers when they sign up.
 
 === "User Access Area"
 
@@ -104,6 +104,14 @@ You can provide several domains for your customers through different brands, and
         A list of available files will now appear in the "Upload Logo" Box.
     * **Footer** - Enter text to display at the bottom of the page, for example _Copyright My Company_
 
+=== "SMTP"
+
+    You can now associate brands with Portal, and send an e-mail with your brand or domain name with this feature.
+
+    A customer can sign into the various domains available in the system.
+
+    Each domain can have different price points, support levels, features, etc.
+
 !!! example "Template Customer example"
     If you want to give all your customers $5.00 credit, create an account from: Management :material-menu-right: Customer. Add $5.00 in Payments for that account.
 
@@ -113,14 +121,6 @@ You can provide several domains for your customers through different brands, and
     To override these options for specific customers, go to **Management :material-menu-right: Customer :material-menu-right: [Choose Customer] :material-menu-right: Edit :material-menu-right: Config :material-menu-right: Portal Access**.
 
     Select items from the "Show" heading to display the feature, or from the Hide options to prevent it from appearing.
-
-=== "SMTP"
-
-    You can now associate brands with Portal, and send an e-mail with your brand or domain name with this feature.
-
-    A customer can sign into the various domains available in the system.
-
-    Each domain can have different price points, support levels, features, etc.
 
 **Steps to create a new Domain**:
 
