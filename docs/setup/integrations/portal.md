@@ -54,12 +54,6 @@ You can provide several domains for your customers through different brands, and
    * **Currencies:** Choose the currencies available for your customers when they sign up.
    * **Template Customer:** Select a pre-configured template customer on your account, preset with default values and gets set when a customer independently creates their account via the portal (See "Template Customer example" below). Automatically replicate settings for new customers.
    Available values for this template are:
-     + Customer [Fields in the customer itself, such as debit limit]
-     + Routes
-     + Payments (Any associated payment configurations are copied)
-     + Alerts
-     + Packages
-     + Contracts (Required contracts (e.g., if two contracts are needed at sign-up) are duplicated automatically)
 
 === "User Access Area"
 
