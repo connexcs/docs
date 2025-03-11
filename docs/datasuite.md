@@ -75,13 +75,13 @@ Four options are available: **New Workspace**, **Load Workspace**, **Bulk Upload
                + **Key / Value** - Contains a basic Key / Value Storage.
                + **Lead Set** - Contains the most common fields when using a data store for customer / campaign data which you can use with dialers.
 
-            <img src="/developers/img/db2.png" width="300">
+            <img src="/developers/img/db2.png" width="300" style="border: 2px solid blue;">
 
         + Next to the **Basic** Tab is the **SQL Table Schema**. This allows you to add additional fields apart from the **Leadset**. You can also select it's **Type** like integer, string, double, float etc.
 
-<img src="/developers/img/db3.png" width="400">
+        <img src="/developers/img/db3.png" width="400" style="border: 2px solid blue;">
 
-8.Click on `Save` to finally create the table.
+      + Click on `Save` to finally create the table.
 
 ### Step 4: Edit/Modify/Analyse Data
 
@@ -102,9 +102,8 @@ Four options are available: **New Workspace**, **Load Workspace**, **Bulk Upload
 
 3.**Explore Tables**:
 
-1. **Local**: <img src= "/misc/img/dms10.png" width= "400">
+1. **Local**: <br><img src= "/misc/img/dms10.png" width= "400"></br>
     + **Database**: Add a new table to an existing workspace. [Click here to know more.](https://bani-41024--connexcs-docs.netlify.app/datasuite/#upload-data-from-local-or-remote-databases).
-    + 
         + **Map Table Columns**: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. A window will appear as follows. <img src= "/misc/img/dms17.png">
               + **Mapping Target Table**: You can select the destination (**CLI**, **Contact**, **Customer**, **DID**, **SIP User Auth**) to upload the selected data.
               + **Refresh** any changed or modified entries inside the table.
@@ -134,10 +133,7 @@ Four options are available: **New Workspace**, **Load Workspace**, **Bulk Upload
             * **Export Query Results to JSON**
             * **Export Query Results to Parquet**
 
-2. **Remote**: 
-
-<img src= "/misc/img/dms13.png" width= "300">
-    
+2. **Remote**: <br><img src= "/misc/img/dms13.png" width= "300"></br>
     + **Databases**: Add a new table to an existing database. [Click here to know more.](https://bani-41024--connexcs-docs.netlify.app/datasuite/#upload-data-from-local-or-remote-databases)
     + **Queries**:
         + Click the **`+`** icon, which functions as the **Add Query** button, within the **Queries** section. A window will appear as follows: <img src= "/misc/img/dms15.png"> <img src= "/misc/img/dms16.png">
@@ -189,4 +185,3 @@ Upload your data follow the steps mentioned in [Step 3](https://bani-41024--conn
   Instead of doing the work (like filtering or calculating data) on your own computer or app (the "client"), you let the powerful server handle it. Once the server finishes, it sends you back only the results you need.
 
   When you click on **Remote Query**, it will open a **New Query** under **Workspace page :material-menu-right: Remote :material-menu-right: New Query**.
-  
