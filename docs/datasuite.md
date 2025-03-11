@@ -155,27 +155,25 @@ Four options are available: **New Workspace**, **Load Workspace**, **Bulk Upload
    + **Import Data via File**: This is same as "Drag & Drop a `.csv` file or `Browse`". <img src= "/misc/img/dms4.png">.
    + **Uploading via URL**: Enter the URL in the CSV format and hit the `Upload` button. <img src= "/misc/img/dms5.png">. After clicking `Upload` a window will appear as shown below <img src= "/misc/img/dms6.png">
    + **Uploading via Text**:
+       + Enter the text in the following format:
 
-    1.Enter the text in the following format:
+        ```
+        Column 1,Column 2,Column 3,Column 4
+        1-1,1-2,1-3,1-4
+        2-1,2-2,2-3,2-4
+        3-1,3-2,3-3,3-4
+        4,5,6,7
+        ```
+        <img src= "/misc/img/dms7.png">
 
-    ```
-    Column 1,Column 2,Column 3,Column 4
-    1-1,1-2,1-3,1-4
-    2-1,2-2,2-3,2-4
-    3-1,3-2,3-3,3-4
-    4,5,6,7
-    ```
-    <img src= "/misc/img/dms7.png">
+2. Click on `Upload`. A window will appear as shown below. <img src= "/misc/img/dms8.png">
 
+3. **Map Table Columns**: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. A window will appear as follows. <img src= "/misc/img/ds14.png">
 
-    2.Click on `Upload`. A window will appear as shown below. <img src= "/misc/img/dms8.png">
-
-2. **Map Table Columns**: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. A window will appear as follows. <img src= "/misc/img/ds14.png">
-
-3. **Mapping Target Table**: You can select the destination (**CLI**, **Contact**, **Customer**, **DID**, **SIP User Auth**) to upload the selected data.
-    + **Refresh** any changed or modified entries inside the table.
-    + **Upload** saves the table entries or modified table entries to the server.
-    + **Continue To Modify**: Allows to edit/modify the table values via queries.
+   + **Mapping Target Table**: You can select the destination (**CLI**, **Contact**, **Customer**, **DID**, **SIP User Auth**) to upload the selected data.
+   + **Refresh** any changed or modified entries inside the table.
+   + **Upload** saves the table entries or modified table entries to the server.
+   + **Continue To Modify**: Allows to edit/modify the table values via queries.
 
     !!! Note "You can now edit the entries inside the table itself."
 
