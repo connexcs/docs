@@ -49,33 +49,28 @@ Four options are available: **New Workspace**, **Load Workspace**, **Bulk Upload
 
 1. **Upload from Local Database**
 
-1. Click the **`+`** icon, which functions as the **Add Table** button, within the **Database** section.
+   + Click the **`+`** icon, which functions as the **Add Table** button, within the **Database** section.
+    + An **Import Local Table** window will pop up with the following 3 options:
+        + **Import Data via File**: This is same as "Drag & Drop a `.csv` file or `Browse`". <img src= "/misc/img/dms4.png">.
+        + **Uploading via URL**: Enter the URL in the CSV format and hit the `Upload` button. <img src= "/misc/img/dms5.png"> After clicking `Upload` a window will appear as shown below <img src= "/misc/img/dms6.png">
+      + **Uploading via Text**:
+          + Enter the text in the following format:
+            ```
+            Column 1,Column 2,Column 3,Column 4
+            1-1,1-2,1-3,1-4
+            2-1,2-2,2-3,2-4
+            3-1,3-2,3-3,3-4
+            4,5,6,7
+            ```
+            <img src= "/misc/img/dms7.png">
 
-2. An **Import Local Table** window will pop up with the following 3 options:
-    + **Import Data via File**: This is same as "Drag & Drop a `.csv` file or `Browse`". <img src= "/misc/img/dms4.png">.
-    + **Uploading via URL**: Enter the URL in the CSV format and hit the `Upload` button. <img src= "/misc/img/dms5.png">. After clicking `Upload` a window will appear as shown below <img src= "/misc/img/dms6.png">
-    + **Uploading via Text**:
-        1.Enter the text in the following format:
-
-        ```
-        Column 1,Column 2,Column 3,Column 4
-        1-1,1-2,1-3,1-4
-        2-1,2-2,2-3,2-4
-        3-1,3-2,3-3,3-4
-        4,5,6,7
-        ```
-        <img src= "/misc/img/dms7.png">
-
-
-        2.Click on `Upload`. A window will appear as shown below. <img src= "/misc/img/dms8.png">
+          + Click on `Upload`. A window will appear as shown below. <img src= "/misc/img/dms8.png">
 
 2. **Upload from Remote Database**
 
-1. Click the **`+`** icon, which functions as the **Add Database** button, within the **Database** section.
-
-2. After adding a remote database, you can create a **table** within it. <img src= "/misc/img/dms14.png">
-
-3. Under the **Basic** Tab:
++ Click the **`+`** icon, which functions as the **Add Database** button, within the **Database** section.
++ After adding a remote database, you can create a **table** within it. <img src= "/misc/img/dms14.png">
++ Under the **Basic** Tab:
       1. Write the **Name** of the database you wish to create.
       2. Select the **Customer** you want to create the database for under the **Basic** Tab.
       3. Select from the **Dataset Type** which are the preset data storage options. The two options are:
@@ -84,7 +79,7 @@ Four options are available: **New Workspace**, **Load Workspace**, **Bulk Upload
 
         <img src="/developers/img/db2.png" width="300">
 
-4. Next to the **Basic** Tab is the **SQL Table Schema**. This allows you to add additional fields apart from the **Leadset**. You can also select it's **Type** like integer, string, double, float etc.
++ Next to the **Basic** Tab is the **SQL Table Schema**. This allows you to add additional fields apart from the **Leadset**. You can also select it's **Type** like integer, string, double, float etc.
 
 <img src="/developers/img/db3.png" width="400">
 
@@ -94,7 +89,7 @@ Four options are available: **New Workspace**, **Load Workspace**, **Bulk Upload
 
 1.**File**
 
-<img src= "/misc/img/dms9.png">
+<img src= "/misc/img/dms9.png" width= "300">
 
 + **New Workspace**: Add a new workspace.
 + **Load Workspace**: Upload a new workspace to an existing workspace.
@@ -102,27 +97,27 @@ Four options are available: **New Workspace**, **Load Workspace**, **Bulk Upload
 + **New Remote Query**: Executes a database query on a remote server, enabling data retrieval or manipulation over a network.
     + New Query: Start a new SQL query.
     + Load Query: Apply a previously defined SQL query.
-+ **Import Local Table**:  allows you to transfer a table from a local database or file into the system. **Click here to know more**.
++ **Import Local Table**:  allows you to transfer a table from a local database or file into the system. [Click here to know more.](https://bani-41024--connexcs-docs.netlify.app/datasuite/#upload-data-from-local-or-remote-databases).
 + **Download Workspace**: Allows you to download the workspace in the `json` format.
 
 2.**Drag & Drop a .csv file here or Browse**: <img src= "/misc/img/ds4.png">
 
 3.**Explore Tables**:
 
-1. **Local**: <img src= "/misc/img/dms10.png">
-    + **Database**: Add a new table to an existing workspace. **Click here to know more**.
-      + **Map Table Columns**: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. A window will appear as follows. <img src= "/misc/img/ds14.png">
-          + **Mapping Target Table**: You can select the destination (**CLI**, **Contact**, **Customer**, **DID**, **SIP User Auth**) to upload the selected data.
-          + **Refresh** any changed or modified entries inside the table.
-          + **Upload** saves the table entries or modified table entries to the server.
-          + **Continue To Modify**: Allows to edit/modify the table values via queries.
+1. **Local**: <img src= "/misc/img/dms10.png" width= "400">
+    + **Database**: Add a new table to an existing workspace. [Click here to know more.](https://bani-41024--connexcs-docs.netlify.app/datasuite/#upload-data-from-local-or-remote-databases).
+      + **Map Table Columns**: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. A window will appear as follows. <img src= "/misc/img/dms17.png">
+            + **Mapping Target Table**: You can select the destination (**CLI**, **Contact**, **Customer**, **DID**, **SIP User Auth**) to upload the selected data.
+            + **Refresh** any changed or modified entries inside the table.
+            + **Upload** saves the table entries or modified table entries to the server.
+            + **Continue To Modify**: Allows to edit/modify the table values via queries.
 
-            !!! Note "You can now edit the entries inside the table itself."
+        !!! Note "You can now edit the entries inside the table itself."
 
     + **Queries**:
-      + Click the **`+`** icon, which functions as the **Add Query** button, within the **Queries** section. A window will appear as follows: <img src= "/misc/img/dms11.png">
-      + Click `Add`.
-      + A **Query Editor** window will appear. It's an interface where you can  write, edit, and execute queries against a database or data source. It's typically part of a larger data management or analytics platform, and it allows you to interact with data by writing commands in query languages.
+        + Click the **`+`** icon, which functions as the **Add Query** button, within the **Queries** section. A window will appear as follows: <img src= "/misc/img/dms11.png">
+        + Click `Add`.
+        + A **Query Editor** window will appear. It's an interface where you can  write, edit, and execute queries against a database or data source. It's typically part of a larger data management or analytics platform, and it allows you to interact with data by writing commands in query languages.
 
         <img src= "/misc/img/dms12.png">
 
@@ -140,20 +135,20 @@ Four options are available: **New Workspace**, **Load Workspace**, **Bulk Upload
             * **Export Query Results to JSON**
             * **Export Query Results to Parquet**
 
-2. **Remote**: <img src= "/misc/img/dms13.png">
-    + **Databases**: Add a new table to an existing database. **Click here to know more**.|
+2. **Remote**: <img src= "/misc/img/dms13.png" width= "300">
+    + **Databases**: Add a new table to an existing database. [Click here to know more.](https://bani-41024--connexcs-docs.netlify.app/datasuite/#upload-data-from-local-or-remote-databases)
     + **Queries**:
-      + Click the **`+`** icon, which functions as the **Add Query** button, within the **Queries** section. A window will appear as follows: <img src= "/misc/img/dms15.png"> <img src= "/misc/img/dms16.png">
-      + Select `New Query` or `Load Query`.
-      + **New Query** will open a **Query Editor**. The rest remains the same as covered under **Local :material-menu-right: Queries**.
-      + **Load Query** will open an existing query in the system in the Query Editor.
+        + Click the **`+`** icon, which functions as the **Add Query** button, within the **Queries** section. A window will appear as follows: <img src= "/misc/img/dms15.png"> <img src= "/misc/img/dms16.png">
+        + Select `New Query` or `Load Query`.
+        + **New Query** will open a **Query Editor**. The rest remains the same as covered under **Local :material-menu-right: Queries**.
+        + **Load Query** will open an existing query in the system in the Query Editor.
 
 ### Bulk Upload
 
 1.Upload your data via **File**, **URL** or by entering the **Text**.
 
    + **Import Data via File**: This is same as "Drag & Drop a `.csv` file or `Browse`". <img src= "/misc/img/dms4.png">.
-   + **Uploading via URL**: Enter the URL in the CSV format and hit the `Upload` button. <img src= "/misc/img/dms5.png">. After clicking `Upload` a window will appear as shown below <img src= "/misc/img/dms6.png">
+   + **Uploading via URL**: Enter the URL in the CSV format and hit the `Upload` button. <img src= "/misc/img/dms5.png"> After clicking `Upload` a window will appear as shown below <img src= "/misc/img/dms6.png">
    + **Uploading via Text**:
        + Enter the text in the following format:
 
@@ -166,14 +161,14 @@ Four options are available: **New Workspace**, **Load Workspace**, **Bulk Upload
         ```
         <img src= "/misc/img/dms7.png">
 
-2. Click on `Upload`. A window will appear as shown below. <img src= "/misc/img/dms8.png">
+       + Click on `Upload`. A window will appear as shown below. <img src= "/misc/img/dms8.png">
 
-3. **Map Table Columns**: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. A window will appear as follows. <img src= "/misc/img/ds14.png">
+2. **Map Table Columns**: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. A window will appear as follows. <img src= "/misc/img/dms17.png">
 
-   + **Mapping Target Table**: You can select the destination (**CLI**, **Contact**, **Customer**, **DID**, **SIP User Auth**) to upload the selected data.
-   + **Refresh** any changed or modified entries inside the table.
-   + **Upload** saves the table entries or modified table entries to the server.
-   + **Continue To Modify**: Allows to edit/modify the table values via queries.
+      + **Mapping Target Table**: You can select the destination (**CLI**, **Contact**, **Customer**, **DID**, **SIP User Auth**) to upload the selected data.
+      + **Refresh** any changed or modified entries inside the table.
+      + **Upload** saves the table entries or modified table entries to the server.
+      + **Continue To Modify**: Allows to edit/modify the table values via queries.
 
     !!! Note "You can now edit the entries inside the table itself."
 
@@ -186,7 +181,7 @@ Four options are available: **New Workspace**, **Load Workspace**, **Bulk Upload
 
 ### Remote Query
 
-Upload your data follow the steps mentioned in [Step 4](https://bani-41024--connexcs-docs.netlify.app/datasuite/#step-4-editmodifyanalyse-data)
+Upload your data follow the steps mentioned in [Step 3](https://bani-41024--connexcs-docs.netlify.app/datasuite/#step-3-upload-data)
 
   A remote query is a request that you send to a database server to fetch or process information directly on the server.
   Instead of doing the work (like filtering or calculating data) on your own computer or app (the "client"), you let the powerful server handle it. Once the server finishes, it sends you back only the results you need.
