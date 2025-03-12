@@ -77,9 +77,9 @@ Common issues related to the media stream can include choppy or robotic voice, e
 
     + **Enhanced Debugging**:
 
-      + Helps troubleshoot call quality issues by visualizing round trip time and MOS scores.
+        + Helps troubleshoot call quality issues by visualizing round trip time and MOS scores.
 
-      + Enables quicker identification of factors contributing to poor call experiences.
+        + Enables quicker identification of factors contributing to poor call experiences.
 
     + **Detailed Call Quality Insights**: Calls exceeding acceptable thresholds can be easily detected.
         + Round Trip Time (RTT): Helps determine network delay.+ MOS Score: Indicates voice quality perception.
