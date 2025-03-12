@@ -9,7 +9,7 @@ By using UDP, data gets transmitted at higher rates, some loss will occur and ca
 !!! info "RTP on Wikipedia"
     For a detailed description of RTP, see the [**Wikipedia Real-time Transport Protocol article**](https://en.wikipedia.org/wiki/Real-time_Transport_Protocol).
 
-**RTCP (RTP Control Protocol)** doesn't carry any actual data payload but helps with delivery. Use RTCP to report on media quality statistics after call completion.
+**RTCP (RTP Control Protocol)** doesn't carry any actual data payload but helps with delivery. Use RTCP to report on media quality statistics after call completion. It provides valuable insights into call quality by measuring factors like round trip time, jitter, packet loss, and MOS (Mean Opinion Score).
 
 !!! Info
     1. We support ZRTP and video pass-through functionalities, enabling seamless transmission from customers to carriers.
@@ -60,14 +60,52 @@ Common issues related to the media stream can include choppy or robotic voice, e
     If the SIP packets and / or RTP endpoints get investigated, sending media direct exposes your carrier's identity to your customer and vice versa.
 
 **RTCP Metrics** If you enable RTCP on your customer and carrier, meta data about the RTP stream (packet counters, round trip time) gets exchanged. This information is available on the logging page of the call. These graphs can help to identify the problems.
+ + **Default Status**:
+      + RTCP metrics aren't actively enabled within ConnexCS dialers.
+      + The system currently operates as a proxy and doesn't inherently generate RTCP statistics.
++ **Benefits**:
+    + **Real-time & Post-call Analysis**:
+        + While not strictly real-time, call performance can be reviewed shortly after each call.
+        + Users can monitor trends and identify issues like packet loss, jitter, or latency spikes.
 
-**User Latency** If the UAC is connecting by SIP Auth directly to ConnexCS, it's possible to view latency graphs.
+    + **Enhanced Debugging**:
+
+      + Helps troubleshoot call quality issues by visualizing round trip time and MOS scores.
+
+      + Enables quicker identification of factors contributing to poor call experiences.
+
+    + **Detailed Call Quality Insights**: Calls exceeding acceptable thresholds can be easily detected.
+        + Round Trip Time (RTT): Helps determine network delay.+ MOS Score: Indicates voice quality perception.
+        + Jitter & Packet Loss: Affects audio stability and clarity.
+
+**User Latency** refers to the time delay experienced when transmitting data between a user and the server. It plays a crucial role in determining call quality and overall system performance.
+
+If the UAC is connecting by SIP Auth directly to ConnexCS, it's possible to view latency graphs.
 
 For this, make sure to enable the SIP Ping from Customer :material-menu-right: Auth :material-menu-right: NAT / SIP Ping :material-menu-right: Enabled. Also, ensure to deselect the "Disable UAC Ping" in your Server.
+
++ **Monitoring User Latency**:
+
+  + **NAT Ping & Latency Graphs**: NAT Ping, when enabled, continuously monitors user latency. It generates a latency graph that provides real-time insights into connection quality.
+
+    !!! question "How It Works?"
+        The latency graph is active when the customer is online. It helps in identifying network fluctuations affecting call quality.
+
+    !!! Example "Real-World Example"
+        A user connected via Wi-Fi in an office will typically experience low latency.
+        If the same user switches to 4G mobile data, latency may increase due to network changes.
 
 ## Advanced Media Troubleshooting
 
 **ConnexCS Circuit Test** Setup ConnexCS to perform automated circuit tests. An outbound call is made and can complete a full circuit, as well as test other metrics and select MOS. This is a measure of audio quality; a long running test can notice trends even before your customers do.
+
+This feature used to test carriers and assess the quality of routes. Unlike other testing tools, it's not particularly beneficial for dialers but is essential for evaluating carrier performance.
+
++ **Key Features and Benefits**:
+    + **Active MOS Testing**: Unlike passive MOS testing, the circuit test performs active MOS testing to evaluate call quality dynamically.
+    + **DTMF Testing**: The test conducts both forward and reverse DTMF checks to ensure proper transmission of key-press signals.
+    + **CLI Verification**: Assesses whether the CLI is accurately preserved across the tested route.
+    + **Route Testing for Carriers**: Provides insights into carrier performance by ensuring that calls are successfully looped back.
 
 **Modified Ping (Linux)** If the endpoint responds to the ping message, you can tweak the regular ping to make it behave like an RTP Packet. This helps debug connections further.
 
