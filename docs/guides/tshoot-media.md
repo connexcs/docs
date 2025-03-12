@@ -214,4 +214,3 @@ You can create an application called **Echo Test** and provide a specific call t
 9. Then from components drag the `echo` component and connect it with your created echo test.
 10. Click on the dot on the right-side of your created echo test (Echo Test in this case) and join it with the `echo component` on the right-side.![echo test3](/guides/img/echotest3.jpg)
 11. Then use your softfone to check for the echo test.
-
