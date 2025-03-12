@@ -122,79 +122,78 @@ It's important to note that User Agent only proxy's RTP traffic when it has to, 
 ## One-Way audio Issues
 
 1. **Key Indicators**
-
-   + Customer experiences one-way audio when switched to direct media.
-   + The issue isn't caused by a firewall blocking RTP packets, as bi-directional media is still flowing.
-   + The problem is unmasked when switching a customer to direct routing.
+      + Customer experiences one-way audio when switched to direct media.
+      + The issue isn't caused by a firewall blocking RTP packets, as bi-directional media is still flowing.
+      + The problem is unmasked when switching a customer to direct routing.
 
 2. **Root Causes**
 
-   + The customer is behind a NAT and not performing the correct NAT traversal.
-   + Previously, ConnexCS was handling far-end NAT traversal, compensating for the customer's mis-configuration.
-   + Possible issues include:
-        + Lack of STUN (Session Traversal Utilities for NAT) usage.
-        + Missing hardcoded external IP address.
-        + No Application Layer Gateway (ALG) correction.
+      + The customer is behind a NAT and not performing the correct NAT traversal.
+      + Previously, ConnexCS was handling far-end NAT traversal, compensating for the customer's mis-configuration.
+      + Possible issues include:
+          + Lack of STUN (Session Traversal Utilities for NAT) usage.
+          + Missing hardcoded external IP address.
+          + No Application Layer Gateway (ALG) correction.
 
 3. **Debugging SIP and Media Flow**
 
-   + **Check SIP Headers in SDP Body**:
+      + **Check SIP Headers in SDP Body**:
 
-      + Look for the c=IN IP4 field in the INVITE message.
-      + If the IP address is public and valid, NAT traversal is working correctly.
-      + If the IP address is an RFC 1918 private address, NAT rewriting is failing.
+        + Look for the c=IN IP4 field in the INVITE message.
+        + If the IP address is public and valid, NAT traversal is working correctly.
+        + If the IP address is an RFC 1918 private address, NAT rewriting is failing.
 
-   + **Verify Best Media Zone Settings**:
+      + **Verify Best Media Zone Settings**:
 
-      + ConnexCS system decouples signaling from media.
-      + Do not ask customers to ping SIP servers to check for media issues, as media follows a different path.
-      + Ensure that the correct media zone is selected for optimal performance.
+        + ConnexCS system decouples signaling from media.
+        + Do not ask customers to ping SIP servers to check for media issues, as media follows a different path.
+        + Ensure that the correct media zone is selected for optimal performance.
 
-   + **Test Alternative Media Servers**
+      + **Test Alternative Media Servers**
 
-   + **Use Traceroute to Identify Latency Issues**:
+      + **Use Traceroute to Identify Latency Issues**:
 
-     + Perform a traceroute from the customer’s network to the media server.
-     + Helps in determining routing issues, not packet loss.
-     + Avoid Using MTR for Packet Loss Identification:
-        + MTR is ineffective for diagnosing media packet loss.
-        + Instead, monitor packet drops from the ConnexCS side for accurate insights.
+        + Perform a traceroute from the customer’s network to the media server.
+        + Helps in determining routing issues, not packet loss.
+        + Avoid Using MTR for Packet Loss Identification:
+          + MTR is ineffective for diagnosing media packet loss.
+          + Instead, monitor packet drops from the ConnexCS side for accurate insights.
 
 ## NAT Traversal Issues
 
 1. **Key Considerations**:
 
-   + Some carriers and customers operate behind NAT.
+      + Some carriers and customers operate behind NAT.
 
-   + When switching to direct media, ensure that:
+      + When switching to direct media, ensure that:
 
-      + The correct NAT traversal technique is implemented.
+        + The correct NAT traversal technique is implemented.
 
-      + Topology hiding is maintained if necessary.
+        + Topology hiding is maintained if necessary.
 
-   + If maintaining topology hiding is critical, don't force direct media.
+      + If maintaining topology hiding is critical, don't force direct media.
 
-   + For testing purposes, switching to direct media can help diagnose issues.
+      + For testing purposes, switching to direct media can help diagnose issues.
 
 2. **Key Features**
 
-   + Far-end NAT traversal support for indirect routing.
+      + Far-end NAT traversal support for indirect routing.
 
-   + Decoupled signaling and media paths to optimize call performance.
+      + Decoupled signaling and media paths to optimize call performance.
 
-   + Customizable media zones for better call routing.
+      + Customizable media zones for better call routing.
 
-   + Traceroute-based diagnosis for latency and routing issues.
+      + Traceroute-based diagnosis for latency and routing issues.
 
 3. **Benefits**
 
-   + Identifies NAT traversal issues quickly by switching to direct media.
+      + Identifies NAT traversal issues quickly by switching to direct media.
 
-   + Ensures proper media flow by verifying SDP headers and IP configurations.
+      + Ensures proper media flow by verifying SDP headers and IP configurations.
 
-   + Optimizes call quality by selecting the best media zone.
+      + Optimizes call quality by selecting the best media zone.
 
-   + Provides an effective debugging strategy to resolve one-way audio problems efficiently.
+      + Provides an effective debugging strategy to resolve one-way audio problems efficiently.
 
 ## Echo Test
 
