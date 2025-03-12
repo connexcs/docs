@@ -156,8 +156,8 @@ It's important to note that User Agent only proxy's RTP traffic when it has to, 
         + Perform a traceroute from the customer’s network to the media server.
         + Helps in determining routing issues, not packet loss.
         + Avoid Using MTR for Packet Loss Identification:
-          + MTR is ineffective for diagnosing media packet loss.
-          + Instead, monitor packet drops from the ConnexCS side for accurate insights.
+            + MTR is ineffective for diagnosing media packet loss.
+            + Instead, monitor packet drops from the ConnexCS side for accurate insights.
 
 ## NAT Traversal Issues
 
