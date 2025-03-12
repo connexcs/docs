@@ -60,12 +60,19 @@ Common issues related to the media stream can include choppy or robotic voice, e
     If the SIP packets and / or RTP endpoints get investigated, sending media direct exposes your carrier's identity to your customer and vice versa.
 
 **RTCP Metrics** If you enable RTCP on your customer and carrier, meta data about the RTP stream (packet counters, round trip time) gets exchanged. This information is available on the logging page of the call. These graphs can help to identify the problems.
+ 
  + **Default Status**:
+      
       + RTCP metrics aren't actively enabled within ConnexCS dialers.
+      
       + The system currently operates as a proxy and doesn't inherently generate RTCP statistics.
+
 + **Benefits**:
+    
     + **Real-time & Post-call Analysis**:
+        
         + While not strictly real-time, call performance can be reviewed shortly after each call.
+        
         + Users can monitor trends and identify issues like packet loss, jitter, or latency spikes.
 
     + **Enhanced Debugging**:
@@ -86,7 +93,7 @@ For this, make sure to enable the SIP Ping from Customer :material-menu-right: A
 
 + **Monitoring User Latency**:
 
-  + **NAT Ping & Latency Graphs**: NAT Ping, when enabled, continuously monitors user latency. It generates a latency graph that provides real-time insights into connection quality.
+    + **NAT Ping & Latency Graphs**: NAT Ping, when enabled, continuously monitors user latency. It generates a latency graph that provides real-time insights into connection quality.
 
     !!! question "How It Works?"
         The latency graph is active when the customer is online. It helps in identifying network fluctuations affecting call quality.
