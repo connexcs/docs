@@ -13,6 +13,36 @@ Customers can make calls over the internet with the ConnexCS WebPhone App (softp
 
 This cross-platform application is ideal for call centers and similar deployments. It works with Windows, Mac, Android, iOS, and other operating systems.
 
+## Key Components
+
+1. **WebRTC**: A technology that enables voice and video communication via a web browser.
+
+2. **WebPhone**: A browser-based SIP client that serves as the user interface for making and receiving calls.
+
+3. **SIP Server**: The backend component responsible for handling call signaling and connections.
+
+4. **DNS Records**: Required to configure domain names for WebPhone and WebRTC services.
+
+5. **Certificates**: Used for secure communications.
+
+## Benefits and Features
+
+1. **Seamless Browser-Based Communication**:
+      + Eliminates the need for standalone SIP clients.
+      + Works directly within modern web browsers.
+
+2. **Automatic Certificate Deployment**: Ensures secure connections without manual intervention.
+
+3. **Flexible DNS Configuration**:
+
+   + CNAME records allow quick switching between servers in case of failures.
+   + Users can update DNS settings via ConnexCS without downtime.
+
+4. **Multi-Server Support**:
+
+   + Customers can distribute traffic across multiple WebRTC servers.
+   + Ensures redundancy and failover support.
+
 ## Technical Details
 
 ### Application
