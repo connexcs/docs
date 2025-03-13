@@ -35,13 +35,13 @@ This cross-platform application is ideal for call centers and similar deployment
 
 3. **Flexible DNS Configuration**:
 
-   + CNAME records allow quick switching between servers in case of failures.
-   + Users can update DNS settings via ConnexCS without downtime.
+      + CNAME records allow quick switching between servers in case of failures.
+      + Users can update DNS settings via ConnexCS without downtime.
 
 4. **Multi-Server Support**:
 
-   + Customers can distribute traffic across multiple WebRTC servers.
-   + Ensures redundancy and failover support.
+      + Customers can distribute traffic across multiple WebRTC servers.
+      + Ensures redundancy and failover support.
 
 ## Technical Details
 
