@@ -94,38 +94,38 @@ ping 1.2.3.4 -s 160 -t 200 -i 0.02 -f
     1. Identify the target IP address.
     2. Execute a ping command from the source server.
     3. **Monitor the results**:
-       1. **Stable connection**: Consistent response times with minimal standard deviation.
-       2. **Unstable connection**: High variance in response times or packet loss.
+          1. **Stable connection**: Consistent response times with minimal standard deviation.
+          2. **Unstable connection**: High variance in response times or packet loss.
 
 + **Benefits**:
 
-1. Provides instant feedback on network latency.
-2. Helps identify unstable network paths.
-3. Ensures VoIP and real-time applications function optimally.
+  1. Provides instant feedback on network latency.
+  2. Helps identify unstable network paths.
+  3. Ensures VoIP and real-time applications function optimally.
 
 **Traceroute**: Traceroute is a diagnostic tool used to map the path data takes from a source to a destination. It identifies all intermediary hops between the two points.
 
 + **Key Features**
 
-1. Displays the network path packets take.
-2. Measures hop-by-hop latency.
-3. Identifies dynamic routing changes.
+  1. Displays the network path packets take.
+  2. Measures hop-by-hop latency.
+  3. Identifies dynamic routing changes.
 
 + **Benefits**
 
-1. Useful for detecting network congestion and rerouting issues.
-2. Helps diagnose routing inefficiencies.
-3. Essential for network optimization and troubleshooting.
+  1. Useful for detecting network congestion and rerouting issues.
+  2. Helps diagnose routing inefficiencies.
+  3. Essential for network optimization and troubleshooting.
 
 **MTR (My Traceroute)**: Its an advanced network diagnostic tool that combines Ping and Traceroute functionalities. It continuously probes the route to detect real-time variations in network performance.
 
 + **Key Features**:
 
-1. Displays real-time changes in network paths.
-2. Measures both latency and packet loss.
-3. Simulates actual VoIP packet behavior for accurate diagnostics.
+  1. Displays real-time changes in network paths.
+  2. Measures both latency and packet loss.
+  3. Simulates actual VoIP packet behavior for accurate diagnostics.
 
-!!! question "How to Use MTR"?
+!!! question "How to Use MTR?"
     1. Run an MTR command to the target IP.
     2. It monitors:
        1. Latency across each hop.
@@ -135,9 +135,9 @@ ping 1.2.3.4 -s 160 -t 200 -i 0.02 -f
 
 + **Benefits**:
 
-1. Provides detailed network health analysis.
-2. Detects jitter, latency spikes, and packet loss.
-3. Helps diagnose VoIP and media packet transmission issues.
+  1. Provides detailed network health analysis.
+  2. Detects jitter, latency spikes, and packet loss.
+  3. Helps diagnose VoIP and media packet transmission issues.
 
 |Tool|Primary Use|Key Insights|
 |----|-----------|------------|
