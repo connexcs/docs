@@ -85,10 +85,10 @@ ping 1.2.3.4 -s 160 -t 200 -i 0.02 -f
 
 + **Key Features**
 
-  1. Measures round-trip time (RTT) between source and destination.
-  2. Detects packet loss and network stability.
-  3. Provides real-time monitoring of network reliability.
-  4. Offers better insights than trace routes for packet delay consistency.
+    1. Measures round-trip time (RTT) between source and destination.
+    2. Detects packet loss and network stability.
+    3. Provides real-time monitoring of network reliability.
+    4. Offers better insights than trace routes for packet delay consistency.
 
 !!! question "How to use Ping"
     1. Identify the target IP address.
