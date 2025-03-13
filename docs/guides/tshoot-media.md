@@ -81,6 +81,70 @@ ping 1.2.3.4 -s 160 -t 200 -i 0.02 -f
 -f [display output as .]
 ```
 
+**Ping:** Its fundamental network diagnostic tool used to measure connectivity between two devices over a network. It sends ICMP (Internet Control Message Protocol) echo requests and records the response times to determine latency and packet loss.
+
++ **Key Features**
+
+1. Measures round-trip time (RTT) between source and destination.
+2. Detects packet loss and network stability.
+3. Provides real-time monitoring of network reliability.
+4. Offers better insights than trace routes for packet delay consistency.
+
+!!! question "How to use Ping"
+    1. Identify the target IP address.
+    2. Execute a ping command from the source server.
+    3. **Monitor the results**:
+       1. **Stable connection**: Consistent response times with minimal standard deviation.
+       2. **Unstable connection**: High variance in response times or packet loss.
+
++ **Benefits**:
+
+1. Provides instant feedback on network latency.
+2. Helps identify unstable network paths.
+3. Ensures VoIP and real-time applications function optimally.
+
+**Traceroute**: Traceroute is a diagnostic tool used to map the path data takes from a source to a destination. It identifies all intermediary hops between the two points.
+
++ **Key Features**
+
+1. Displays the network path packets take.
+2. Measures hop-by-hop latency.
+3. Identifies dynamic routing changes.
+
++ **Benefits**
+
+1. Useful for detecting network congestion and rerouting issues.
+2. Helps diagnose routing inefficiencies.
+3. Essential for network optimization and troubleshooting.
+
+**MTR (My Traceroute)**: Its an advanced network diagnostic tool that combines Ping and Traceroute functionalities. It continuously probes the route to detect real-time variations in network performance.
+
++ **Key Features**:
+
+1. Displays real-time changes in network paths.
+2. Measures both latency and packet loss.
+3. Simulates actual VoIP packet behavior for accurate diagnostics.
+
+!!! question "How to Use MTR"?
+    1. Run an MTR command to the target IP.
+    2. It monitors:
+       1. Latency across each hop.
+       2. Packet loss at each stage.
+       3. Route deviations and fluctuations.
+       4. Compare last-mile vs. ISP performance.
+
++ **Benefits**:
+
+1. Provides detailed network health analysis.
+2. Detects jitter, latency spikes, and packet loss.
+3. Helps diagnose VoIP and media packet transmission issues.
+
+|Tool|Primary Use|Key Insights|
+|----|-----------|------------|
+|**Ping**|Measures latency and packet loss|Best for continuous real-time monitoring|
+|**Traceroute**|Maps network path and hop latency|Helps detect routing issues, not packet loss|
+|**MTR**|Combines Ping and Traceroute|Best for VoIP diagnostics and real-time packet loss detection|
+
 !!! Warning
     Trace Route (`tracert` / `mtr`) are great tool for checking the IP route. They're not made to analyse RTP packet loss. Also, intermediate hops DON'T prioritize Internet Control Message Protocol (ICMP) packets. They shouldn't use this as a method to debug media issues.
 
