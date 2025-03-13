@@ -272,7 +272,7 @@ It's important to note that User Agent only proxy's RTP traffic when it has to, 
 
 1. When a customer is set to **Direct RTP**, observe the SIP trace:
 
-   + Check what is being sent to the carrier.
+   + Check what's being sent to the carrier.
    + Monitor the originating IP address to ensure consistency.
 
 2. For **Processed RTP**, analyze:
