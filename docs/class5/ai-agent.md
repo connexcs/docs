@@ -220,45 +220,45 @@ The AI agents seamlessly integrate into the ConnexCS platform, enabling business
 
     ```mermaid
     flowchart TD
-    %% Main Functionality
-    A[Start] --> B[Main Function]
-    B --> C[Call llm.listFunctions]
-    C --> D[Return List of Functions]
-    D --> E[End]
+        %% Main Functionality
+        A[Start] --> B[Main Function]
+        B --> C[Call llm.listFunctions]
+        C --> D[Return List of Functions]
+        D --> E[End]
 
-    %% dayOfWeek Functionality
-    A --> F[dayOfWeek Function]
-    F --> G[Get Current Date]
-    G --> H[Call moment format 'dddd']
-    H --> I[Return Current Day of the Week]
+        %% dayOfWeek Functionality
+        A --> F[dayOfWeek Function]
+        F --> G[Get Current Date]
+        G --> H[Call moment format 'dddd']
+        H --> I[Return Current Day of the Week]
 
-    %% Transfer Functionality
-    A --> J[Transfer Function]
-    J --> K[Receive name Parameter]
-    K --> L[Log: Transfer Call to name]
-    L --> M[Create Transfer Object]
-    M --> N[Return action: transfer, data: number 160]
+        %% Transfer Functionality
+        A --> J[Transfer Function]
+        J --> K[Receive name Parameter]
+        K --> L[Log: Transfer Call to name]
+        L --> M[Create Transfer Object]
+        M --> N[Return action: transfer, data: number 160]
 
-    %% Permissions
-    F --> O[Requires Permission for Agent 123456]
-    J --> O
+        %% Permissions
+        F --> O[Requires Permission for Agent 123456]
+        J --> O
 
-    %% Styles
-    style A fill:#f5f,stroke:#333,stroke-width:2.5px
-    style B fill:#f9f,stroke:#333,stroke-width:2.5px
-    style C fill:#ff,stroke:#333,stroke-width:2.5px
-    style D fill:#ff,stroke:#333,stroke-width:2.5px
-    style E fill:#ff,stroke:#333,stroke-width:2.5px
-    style F fill:#f9f,stroke:#333,stroke-width:2.5px
-    style G fill:#ff,stroke:#333,stroke-width:2.5px
-    style H fill:#ff,stroke:#333,stroke-width:2.5px
-    style I fill:#ff,stroke:#333,stroke-width:2.5px
-    style J fill:#f9f,stroke:#333,stroke-width:2.5px
-    style K fill:#ff,stroke:#333,stroke-width:2.5px
-    style L fill:#ff,stroke:#333,stroke-width:2.5px
-    style M fill:#ff,stroke:#333,stroke-width:2.5px
-    style N fill:#ff,stroke:#333,stroke-width:2.5px
-    style O fill:#ff,stroke:#333,stroke-width:2.5px
+        %% Styles
+        style A fill:#f5f,stroke:#333,stroke-width:2.5px
+        style B fill:#f9f,stroke:#333,stroke-width:2.5px
+        style C fill:#ff,stroke:#333,stroke-width:2.5px
+        style D fill:#ff,stroke:#333,stroke-width:2.5px
+        style E fill:#ff,stroke:#333,stroke-width:2.5px
+        style F fill:#f9f,stroke:#333,stroke-width:2.5px
+        style G fill:#ff,stroke:#333,stroke-width:2.5px
+        style H fill:#ff,stroke:#333,stroke-width:2.5px
+        style I fill:#ff,stroke:#333,stroke-width:2.5px
+        style J fill:#f9f,stroke:#333,stroke-width:2.5px
+        style K fill:#ff,stroke:#333,stroke-width:2.5px
+        style L fill:#ff,stroke:#333,stroke-width:2.5px
+        style M fill:#ff,stroke:#333,stroke-width:2.5px
+        style N fill:#ff,stroke:#333,stroke-width:2.5px
+        style O fill:#ff,stroke:#333,stroke-width:2.5px
     ```
 
 !!! Note "JSDoc Notation"
