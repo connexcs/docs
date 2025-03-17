@@ -65,6 +65,14 @@ You can provide several domains for your customers through different brands, and
 
     Select the sections/features displayed to your customers (see "Override Options" below). Individual settings can be customized per customer.
 
+    **Common**
+
+    |Feature|Description|
+    |-------|-----------|
+    |**Balance**|Customer's current account balance|
+    |**Call Detail Record (CDR)**| Displays detailed information of each call like call details, destination etc. [CLick here to know more](https://docs.connexcs.com/customer/cdr/)|
+    |**Breakout**|
+
 === "Breakout"
 
     Customized report view that shows different levels of detail depending on whether the user is a carrier or a customer.Select the columns to display in the **Report :material-menu-right: Breakout Report**.
