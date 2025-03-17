@@ -97,43 +97,74 @@ The AI agents seamlessly integrate into the ConnexCS platform, enabling business
 1. Login to your account.
 2. Navigate to **Class 5 :material-menu-right: AI Agent**.
 3. Click on the blue `+` icon.
-<img src= "/class5/img/ai1.png">
+<img src= "/class5/img/aiagent1.png">
 4. A window will open up where you can create your customizable AI Agent for your customers.
-<img src= "/class5/img/ai2.png">
+<img src= "/class5/img/aiagent2.png">
 5. Fill in the following fields to setup your AI model:
+
+=== "Basic"
+
     + **Name**: Give a name to your AI Agent.
     + **App**: Associate the AI model with the [Application](https://docs.connexcs.com/apps/architecture/app/) in the IDE. Its done using the ScriptForge, for example, the AI model can call a function from the ScriptForge when these two are associated.
-    + **Company**: Associate the AI model with a company.
+    + **Host**: It refers to a system, environment, or platform where you need deploy the AI Agent.
     + **Destination**: Enter the Extension for the callers to call (essentially, the dial-in number).
+    + **Company**: Associate the AI model with a customer.
+    + **PBX Server**: Select the PBX Server from the drop-down.
     + **Platform**: Use either **OpenAI**, **ConnexCS Converse** or **ConnexCS Converse Direct** to model the AI Agent.
+    + Click `Save`.
+         <img src= "/class5/img/aiagent3.png">
+
+=== "Model"
+
     + **Model**: Select a model for the selected platform. A model is a specific version or configuration of an AI system to perform tasks like text generation, real-time interactions etc.
 
-    !!! Info
-        Different Platforms offer specific Models suited to their capabilities.
-
-    + **Transcriber**: Select the transcriber service to convert spoken words to text. You can select the transcriber depending on the selected platform.
-    + **Text To Speech(TTS)**: Select from various TTS models to convert your text into audio. You can select the transcriber depending on the selected platform.
-    + **Voice**: Select the voice for the text-to-speech service.
-    + **Temperature**: Refers to a parameter that controls the creativity of the model's output.
-        + **Low temperature (close to 0)** makes the model's responses more predictable by selecting the most probable words.
-        + **High temperature (closer to 1 or above)** increases randomness, leading to more diverse and creative but potentially less coherent responses.
+        !!! Info
+            Different Platforms offer specific Models suited to their capabilities.
+    
     + **First Message**: The initial message spoken by the agent. For example, when the agent begins the conversation.
-    + **Interrupt Delay (sec)**: Refers to the latency or time taken by the model to halt its current operation or response generation when interrupted by a user or system signal.
-    + **Min Filler Delay (sec)**: If the AI model fails to respond within the designated time-frame, the system will automatically utilize the predefined filler words to maintain communication with the customer.
-    + **Office Background Volume**: This feature enables the playback of background office sounds, creating a more authentic experience, as if the person is operating from a call center environment.
-    + **Filler Words**: Select multiple filler words.
-    + **Guard Rails**: These are mechanisms or strategies designed to ensure the safe, reliable, and ethical use of models. These measures help steer the model’s behavior, preventing misuse, reducing errors, and ensuring its outputs align with specific requirements or constraints.
     + **LLM Timeout (sec)**: Refers to the predefined time-frame during which an LLM is granted permission to process a request, or the number of attempts the LLM makes in performing back-end tasks.
     + **LLM Retries**: Refers to the predefined time-frame during which an LLM is granted permission to process a request, or the number of attempts the LLM makes in performing back-end tasks.
-    + **Flags**: Select from various flags:
-        + **LLM Failover**: If one LLM Model fails, it will failover to another LLM.
-        + **Disable ScriptForge**: Disables Scriptforge completely.
+    + **Prompt**: The prompt field allows you to enter the set of instructions to guide the AI model to perform certain tasks. It provides as the foundation for the AI to comprehend the context, interpret the user's purpose, and generate relevant results.
+    + Click `Save`.
+        <img src= "/class5/img/aiagent4.png">
+
+=== "Transcriber"
+
+    + **Transcriber**: Select the transcriber service to convert spoken words to text. You can select the transcriber depending on the selected platform.
+    + **Answer Machine Detection Keywords**: It helps distinguish between live calls and voicemail by analyzing speech patterns, audio cues, and specific phrases. 
+    + **Transcriber Timeout**: It defines the maximum time the system waits for a response during speech-to-text transcription before terminating the process. If no speech is detected within this period, the transcriber stops listening and times out. On timeout `<SILENT_TIMEOUT>` will be sent to the LLM. You should advise your LLM to handle this accordingly. 
+    + **End Call Phrases**: Phrases or messages used to conclude a call or interaction with a customer.
+      <img src= "/class5/img/aiagent5.png"> 
+
+=== "Voice"
+
+    + **Voice**: Select the voice for the text-to-speech service.
+    + **Filler Words**: non-lexical or low-information speech elements that do not contribute semantic meaning but serve as pauses, hesitation markers, or conversational regulators in spoken language. Select multiple filler words.
+    + **Text To Speech(TTS)**: Select from various TTS models to convert your text into audio. You can select the transcriber depending on the selected platform.
+    + **Min Filler Delay (sec)**: If the AI model fails to respond within the designated time-frame, the system will automatically utilize the predefined filler words to maintain communication with the customer.
+    + + **Interrupt Delay (sec)**: Refers to the latency or time taken by the model to halt its current operation or response generation when interrupted by a user or system signal.
+        <img src= "/class5/img/aiagent6.png">
+
+=== "Advanced"
+
     + **Built-in Functions**:
         + **Hangup**: Use this flag to terminate the call. You can include a prompt such as, "When call ended, hangup.
         + **Set Variable**: Set variables locally. For example, in a prompt, you could ask, "What's your name?" and save the response to the variable `name`.
-    + **End Call Phrases**: Phrases or messages used to conclude a call or interaction with a customer.
-    + **Prompt**: The prompt field allows you to enter the set of instructions to guide the AI model to perform certain tasks. It provides as the foundation for the AI to comprehend the context, interpret the user's purpose, and generate relevant results.
-    + Click `Save`.
+        + **Tool Call Allow List**:
+        + **Guard Rails**: These are mechanisms or strategies designed to ensure the safe, reliable, and ethical use of models. These measures help steer the model’s behavior, preventing misuse, reducing errors, and ensuring its outputs align with specific requirements or constraints.
+        + **Flags**: Select from various flags:
+          + **Async Guard Rails**:
+          + **Local Voice Activity Detection**: It optimizes VoIP performance by identifying speech in real-time at the user’s device. By suppressing silence and background noise, it reduces bandwidth usage, lowers latency, and improves call quality. 
+          + **LLM Failover**: If one LLM Model fails, it will failover to another LLM.
+          + **Disable ScriptForge**: Disables Scriptforge completely.
+          + **Listen First**: Enabling this flag ensures efficient VoIP transmission by checking for an active signal before sending data. This prevents packet collisions, reduces interference, optimizes bandwidth usage, enhances call stability and overall communication reliability.
+          + **Office Background Volume**: This feature enables the playback of background office sounds, creating a more authentic experience, as if the person is operating from a call center environment.
+          + **Temperature**: Refers to a parameter that controls the creativity of the model's output.
+            + **Low temperature (close to 0)** makes the model's responses more predictable by selecting the most probable words.
+            + **High temperature (closer to 1 or above)** increases randomness, leading to more diverse and creative but potentially less coherent responses.
+            + **Vars**<sup>TOML</sup>:  Select the variables you want pass into the ScriptForge script.
+                <img src= "/class5/img/aiagent7.png"> 
+    
 
 !!! Example "Example Prompt"
     Ava is a sophisticated AI training assistant, crafted by experts in customer support and AI development. Designed with the persona of a seasoned customer support agent in her early 30s, Ava combines deep technical knowledge with a strong sense of emotional intelligence. Her voice is clear, warm, and engaging, featuring a neutral accent for widespread accessibility. Ava's primary role is to serve as a dynamic training platform for customer support agents, simulating a broad array of service scenarios—from basic inquiries to intricate problem-solving challenges.
