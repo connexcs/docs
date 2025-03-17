@@ -142,7 +142,7 @@ The AI agents seamlessly integrate into the ConnexCS platform, enabling business
     + **Voice**: Select the voice for the text-to-speech service.
     + **Filler Words**: non-lexical or low-information speech elements that do not contribute semantic meaning but serve as pauses, hesitation markers, or conversational regulators in spoken language. Select multiple filler words.
     + **Text To Speech(TTS)**: Select from various TTS models to convert your text into audio. You can select the transcriber depending on the selected platform.
-    + **Min Filler Delay (sec)**: If the AI model fails to respond within the designated time-frame, the system will automatically utilize the predefined filler words to maintain communication with the customer.
+    + **Min Filler Word Delay (sec)**: If the AI model fails to respond within the designated time-frame, the system will automatically utilize the predefined filler words to maintain communication with the customer.
     + **Interrupt Delay (sec)**: Refers to the latency or time taken by the model to halt its current operation or response generation when interrupted by a user or system signal.
     + Click `Save`.
         <img src= "/class5/img/aiagent6.png">
@@ -164,7 +164,9 @@ The AI agents seamlessly integrate into the ConnexCS platform, enabling business
     + **Temperature**: Refers to a parameter that controls the creativity of the model's output.
         + **Low temperature (close to 0)** makes the model's responses more predictable by selecting the most probable words.
         + **High temperature (closer to 1 or above)** increases randomness, leading to more diverse and creative but potentially less coherent responses.
+    
     + **Vars**<sup>TOML</sup>:  Select the variables you want pass into the ScriptForge script.
+    
     + Click `Save`.
         <img src= "/class5/img/aiagent7.png"> 
     
