@@ -218,8 +218,8 @@ The AI agents seamlessly integrate into the ConnexCS platform, enabling business
     }
     ```
     
-    ```mermaid
-    flowchart TD
+```mermaid
+flowchart TD
     %% Main Functionality
     A[Start] --> B[Main Function]
     B --> C[Call llm.listFunctions]
@@ -259,7 +259,7 @@ The AI agents seamlessly integrate into the ConnexCS platform, enabling business
     style M fill:#ff,stroke:#333,stroke-width:2.5px
     style N fill:#ff,stroke:#333,stroke-width:2.5px
     style O fill:#ff,stroke:#333,stroke-width:2.5px
-    ```
+```
 
 !!! Note "JSDoc Notation"
     Using JSDoc for optimizing function usage within LLMs:
