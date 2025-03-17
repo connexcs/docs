@@ -134,6 +134,7 @@ The AI agents seamlessly integrate into the ConnexCS platform, enabling business
     + **Answer Machine Detection Keywords**: It helps distinguish between live calls and voicemail by analyzing speech patterns, audio cues, and specific phrases. 
     + **Transcriber Timeout**: It defines the maximum time the system waits for a response during speech-to-text transcription before terminating the process. If no speech is detected within this period, the transcriber stops listening and times out. On timeout `<SILENT_TIMEOUT>` will be sent to the LLM. You should advise your LLM to handle this accordingly. 
     + **End Call Phrases**: Phrases or messages used to conclude a call or interaction with a customer.
+    + Click `Save`.
       <img src= "/class5/img/aiagent5.png"> 
 
 === "Voice"
@@ -142,7 +143,8 @@ The AI agents seamlessly integrate into the ConnexCS platform, enabling business
     + **Filler Words**: non-lexical or low-information speech elements that do not contribute semantic meaning but serve as pauses, hesitation markers, or conversational regulators in spoken language. Select multiple filler words.
     + **Text To Speech(TTS)**: Select from various TTS models to convert your text into audio. You can select the transcriber depending on the selected platform.
     + **Min Filler Delay (sec)**: If the AI model fails to respond within the designated time-frame, the system will automatically utilize the predefined filler words to maintain communication with the customer.
-    + + **Interrupt Delay (sec)**: Refers to the latency or time taken by the model to halt its current operation or response generation when interrupted by a user or system signal.
+    + **Interrupt Delay (sec)**: Refers to the latency or time taken by the model to halt its current operation or response generation when interrupted by a user or system signal.
+    + Click `Save`.
         <img src= "/class5/img/aiagent6.png">
 
 === "Advanced"
@@ -150,19 +152,20 @@ The AI agents seamlessly integrate into the ConnexCS platform, enabling business
     + **Built-in Functions**:
         + **Hangup**: Use this flag to terminate the call. You can include a prompt such as, "When call ended, hangup.
         + **Set Variable**: Set variables locally. For example, in a prompt, you could ask, "What's your name?" and save the response to the variable `name`.
-        + **Tool Call Allow List**:
-        + **Guard Rails**: These are mechanisms or strategies designed to ensure the safe, reliable, and ethical use of models. These measures help steer the model’s behavior, preventing misuse, reducing errors, and ensuring its outputs align with specific requirements or constraints.
-        + **Flags**: Select from various flags:
-          + **Async Guard Rails**:
+    + **Tool Call Allow List**: defines the specific functions permitted from ScriptForge within the system. 
+    + **Guard Rails**: These are mechanisms or strategies designed to ensure the safe, reliable, and ethical use of models. These measures help steer the model’s behavior, preventing misuse, reducing errors, and ensuring its outputs align with specific requirements or constraints.
+    + **Flags**: Select from various flags:
+          + **Async Guard Rails**: *Currently not in use*.
           + **Local Voice Activity Detection**: It optimizes VoIP performance by identifying speech in real-time at the user’s device. By suppressing silence and background noise, it reduces bandwidth usage, lowers latency, and improves call quality. 
           + **LLM Failover**: If one LLM Model fails, it will failover to another LLM.
           + **Disable ScriptForge**: Disables Scriptforge completely.
           + **Listen First**: Enabling this flag ensures efficient VoIP transmission by checking for an active signal before sending data. This prevents packet collisions, reduces interference, optimizes bandwidth usage, enhances call stability and overall communication reliability.
-          + **Office Background Volume**: This feature enables the playback of background office sounds, creating a more authentic experience, as if the person is operating from a call center environment.
-          + **Temperature**: Refers to a parameter that controls the creativity of the model's output.
+        + **Office Background Volume**: This feature enables the playback of background office sounds, creating a more authentic experience, as if the person is operating from a call center environment.
+        + **Temperature**: Refers to a parameter that controls the creativity of the model's output.
             + **Low temperature (close to 0)** makes the model's responses more predictable by selecting the most probable words.
             + **High temperature (closer to 1 or above)** increases randomness, leading to more diverse and creative but potentially less coherent responses.
-            + **Vars**<sup>TOML</sup>:  Select the variables you want pass into the ScriptForge script.
+        + **Vars**<sup>TOML</sup>:  Select the variables you want pass into the ScriptForge script.
+            + Click `Save`.
                 <img src= "/class5/img/aiagent7.png"> 
     
 
