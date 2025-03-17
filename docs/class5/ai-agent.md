@@ -132,7 +132,7 @@ The AI agents seamlessly integrate into the ConnexCS platform, enabling business
 
     + **Transcriber**: Select the transcriber service to convert spoken words to text. You can select the transcriber depending on the selected platform.
     + **Answer Machine Detection Keywords**: It helps distinguish between live calls and voicemail by analyzing speech patterns, audio cues, and specific phrases. 
-    + **Transcriber Timeout**: It defines the maximum time the system waits for a response during speech-to-text transcription before terminating the process. If no speech is detected within this period, the transcriber stops listening and times out. On timeout `<SILENT_TIMEOUT>` will be sent to the LLM. You should advise your LLM to handle this accordingly. 
+    + **Transcriber Timeout**: It defines the maximum time the system waits for a response during speech-to-text transcription before terminating the process.         If no speech is detected within this period, the transcriber stops listening and times out. On timeout `<SILENT_TIMEOUT>` will be sent to the LLM. You should advise your LLM to handle this accordingly. 
     + **End Call Phrases**: Phrases or messages used to conclude a call or interaction with a customer.
     + Click `Save`.
       <img src= "/class5/img/aiagent5.png"> 
