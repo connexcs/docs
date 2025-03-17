@@ -71,7 +71,8 @@ You can provide several domains for your customers through different brands, and
     |-------|-----------|
     |**Balance**|Customer's current account balance|
     |**Call Detail Record (CDR)**| Displays detailed information of each call like call details, destination etc. [CLick here to know more](https://docs.connexcs.com/customer/cdr/)|
-    |**Breakout**|
+    |**Breakout**|Offers billing-accurate CDR insights, including customer profits, costs, billed amounts, ASR, and ACD.[CLick here to know more](https://docs.connexcs.com/customer-portal/cp-breakout/)
+    |**Latest Calls**|Offers billing-accurate CDR insights, including customer profits, costs, billed amounts, ASR, and ACD.[CLick here to know more](https://docs.connexcs.com/customer-portal/cp-breakout/)
 
 === "Breakout"
 
