@@ -160,13 +160,13 @@ The AI agents seamlessly integrate into the ConnexCS platform, enabling business
           + **LLM Failover**: If one LLM Model fails, it will failover to another LLM.
           + **Disable ScriptForge**: Disables Scriptforge completely.
           + **Listen First**: Enabling this flag ensures efficient VoIP transmission by checking for an active signal before sending data. This prevents packet collisions, reduces interference, optimizes bandwidth usage, enhances call stability and overall communication reliability.
-        + **Office Background Volume**: This feature enables the playback of background office sounds, creating a more authentic experience, as if the person is operating from a call center environment.
-        + **Temperature**: Refers to a parameter that controls the creativity of the model's output.
-            + **Low temperature (close to 0)** makes the model's responses more predictable by selecting the most probable words.
-            + **High temperature (closer to 1 or above)** increases randomness, leading to more diverse and creative but potentially less coherent responses.
-        + **Vars**<sup>TOML</sup>:  Select the variables you want pass into the ScriptForge script.
-            + Click `Save`.
-                <img src= "/class5/img/aiagent7.png"> 
+    + **Office Background Volume**: This feature enables the playback of background office sounds, creating a more authentic experience, as if the person is operating from a call center environment.
+    + **Temperature**: Refers to a parameter that controls the creativity of the model's output.
+        + **Low temperature (close to 0)** makes the model's responses more predictable by selecting the most probable words.
+        + **High temperature (closer to 1 or above)** increases randomness, leading to more diverse and creative but potentially less coherent responses.
+    + **Vars**<sup>TOML</sup>:  Select the variables you want pass into the ScriptForge script.
+    + Click `Save`.
+        <img src= "/class5/img/aiagent7.png"> 
     
 
 !!! Example "Example Prompt"
