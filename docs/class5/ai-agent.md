@@ -2,95 +2,34 @@
 
 **Class 5 :material-menu-right: AI Agent**
 
+# Overview
+
 ConnexCS's AI Agent promise to deliver cutting-edge solutions that simplify and enhance your telecom experience.
 
-Its a transformative step to optimize your business operations and elevate the services you offer to your customers.
+The AI Agent in ConnexCS is an advanced, automated system that handles inbound and outbound calls using AI-driven speech recognition, Natural Language Processing (NLP), and Machine Learning (ML). It enhances call efficiency by automating responses, and integrating with CRM systems.
 
-AI Agents leverage advanced machine learning and automation capabilities to perform critical functions such as real-time call routing optimization, fraud detection, predictive analytics, and automated customer support.
+The AI Call Center Agent in ConnexCS enhances operational efficiency, reduces costs, and improves customer interactions through intelligent automation.
 
-The AI agents seamlessly integrate into the ConnexCS platform, enabling businesses to streamline operations, reduce overhead costs, and achieve greater accuracy in decision-making.
+### Use Cases
 
-## Use Cases
++ AI Receptionist: Front Desk Automation, Appointment Scheduling, Customer Query Handling, After hours support.
++ Conversational Data Collection
++ Sending Notification via Tool Calls
++ Transferring calls between agents
++ Scheduling call back
 
-1. **Real-Time Call Routing Optimization**
-    + **Function**: AI agents dynamically analyze real-time traffic patterns, latency, call quality, and costs to determine the optimal routing for calls.
-    + **Benefits**:
-        + Reduces dropped calls and improves call quality.
-        + Minimizes operational costs by selecting the most efficient carriers or routes.
+### Benefits
 
-2. **Advanced Fraud Detection and Prevention**
-    + **Function**: AI agents monitor call data to detect anomalous patterns indicative of toll fraud, premium number abuse, or unauthorized access.
-    + **Benefits**:
-        + Proactive blocking of fraudulent activity.
-        + Reduces revenue leakage and enhances system security.
-
-3. **Intelligent Traffic Management**
-      + **Function**: AI agents distribute network load intelligently during peak times, prioritizing critical calls or services.
-      + **Benefits**:
-          + Prevents congestion.
-          + Ensures a seamless experience for high-priority users.
-
-4. **Predictive Analytics for Resource Management**
-    + **Function**: AI agents analyze historical data to predict future demand, enabling proactive resource allocation and planning.
-    + **Benefits**:
-        + Prevents overloading during high-traffic periods.
-        + Reduces costs by aligning resources with demand.
-
-5. **Automated Customer Support and Troubleshooting**
-      + **Function**: Chatbots and virtual assistants powered by AI agents handle customer inquiries, provide technical troubleshooting, and escalate issues when necessary.
-      + **Benefits**:
-        + 24/7 availability for customer support.
-        + Reduced response times and improved customer satisfaction.
-
-6. **Call Quality Monitoring and Enhancement**
-      + **Function**: AI agents continuously assess and improve call quality by identifying jitter, packet loss, and latency issues.
-      + **Benefits**:
-          + Automatically resolves quality issues through route adjustments.
-          + Ensures consistent QoS (Quality of Service) for users.
-
-7. **Billing and Invoice Automation**
-    + **Function**: AI agents generate accurate, real-time invoices by tracking customer usage and identifying discrepancies.
-    + **Benefits**:
-        + Reduces billing errors.
-        + Enhances transparency and builds customer trust.
-
-8. **Personalized Customer Recommendations**
-    + **Function**: AI agents analyze customer behavior and usage patterns to recommend tailored pricing plans, feature upgrades, or add-ons.
-    + **Benefits**:
-        + Improves customer retention.
-        + Increases revenue through targeted up-selling.
-
-9. **Real-Time Network Monitoring and Alerts**
-    + **Function**: AI agents monitor the health of the telecom infrastructure, sending alerts for potential outages or performance degradation.
-    + **Benefits**:
-        + Reduces downtime through proactive maintenance.
-        + Ensures high availability and reliability of services.
-
-10.  **Voice and Sentiment Analytics**
-    + **Function**: AI agents analyze call transcripts for sentiment and intent, enabling ConnexCS customers to gain insights into user satisfaction and trends.
-    + **Benefits**:
-        + Improves customer service strategies.
-        + Identifies areas for operational improvement.
-
-11. **Scalable Multi-Region Management**
-    + **Function**: AI agents coordinate traffic, billing, and monitoring across multiple regions to ensure compliance and seamless operations.
-    + **Benefits**:
-        + Simplifies management of global telecom operations
-        + Ensures region-specific customization for pricing and regulations.
-
-12. **Dynamic Compliance Enforcement**
-    + **Function**: AI agents ensure adherence to regional telecom regulations by dynamically applying compliance rules, such as call recording consent or data privacy policies.
-    + **Benefits**:
-        + Reduces risk of legal penalties.
-        + Enhances trust with end-users and regulatory bodies.
-
-13. **Marketing Campaign Automation**
-    + **Function**: AI agents analyze customer data to design and execute targeted marketing campaigns, such as promotional offers or loyalty rewards.
-    + **Benefits**:
-        + Increases engagement and drives customer acquisition.
-        + Optimizes ROI on marketing efforts.
-
-14. **Create custom databases** and **create functions** to update the databases as well.
++ 24/7 Availability
++ Reduced Operational Costs
++ Faster Query Resolution
++ Improved Appointment Management
++ Automatic collection and updation of records
++ Reduced Transfer Time
++ Improved Customer Experience
++ Optimized Call Handling
++ Personalized Follow-Ups
++ Higher Conversion Rates 
 
 ## Steps to create AI Agent
 
@@ -131,7 +70,7 @@ The AI agents seamlessly integrate into the ConnexCS platform, enabling business
 === "Transcriber"
 
     + **Transcriber**: Select the transcriber service to convert spoken words to text. You can select the transcriber depending on the selected platform.
-    + **Answer Machine Detection Keywords**: It helps distinguish between live calls and voicemail by analyzing speech patterns, audio cues, and specific phrases. 
+    + **Answer Machine Detection Keywords**: It helps distinguish between live calls and voicemail by analyzing speech patterns, audio cues, and specific phrases. If an LLM detects a phrase indicative (like an) of an answering machine, such as "Please leave a message," it will automatically disconnect the call to optimize call handling efficiency.
     + **Transcriber Timeout**: It defines the maximum time the system waits for a response during speech-to-text transcription before terminating the process.         If no speech is detected within this period, the transcriber stops listening and times out. On timeout `<SILENT_TIMEOUT>` will be sent to the LLM. You should advise your LLM to handle this accordingly. 
     + **End Call Phrases**: Phrases or messages used to conclude a call or interaction with a customer.
     + Click `Save`.
@@ -172,24 +111,41 @@ The AI agents seamlessly integrate into the ConnexCS platform, enabling business
     
 
 !!! Example "Example Prompt"
-    Ava is a sophisticated AI training assistant, crafted by experts in customer support and AI development. Designed with the persona of a seasoned customer support agent in her early 30s, Ava combines deep technical knowledge with a strong sense of emotional intelligence. Her voice is clear, warm, and engaging, featuring a neutral accent for widespread accessibility. Ava's primary role is to serve as a dynamic training platform for customer support agents, simulating a broad array of service scenarios—from basic inquiries to intricate problem-solving challenges.
+    You are an AI agent representing ConnexCS, a leading telecommunications company specializing in advanced VoIP and cloud communication solutions. Begin by introducing yourself and letting the customer know you’re here to assist. Then, ask whether they would like information about specific products and services or billing details.
 
-    Ava's advanced programming allows her to replicate diverse customer service situations, making her an invaluable tool for training purposes. She guides new agents through simulated interactions, offering real-time feedback and advice to refine their skills in handling various customer needs with patience, empathy, and professionalism. Ava ensures every trainee learns to listen actively, respond thoughtfully, and maintain the highest standards of customer care.
+    Introduction:
+    Hello, and welcome! I am your AI assistant from ConnexCS, a leading provider of advanced VoIP and cloud communication solutions. I’m here to provide professional, concise, and accurate information tailored to your needs.
 
-    **Major Mode of Interaction:**
-    Ava interacts mainly through audio, adeptly interpreting spoken queries and replying in kind. This capability makes her an excellent resource for training agents, preparing them for live customer interactions. She's engineered to recognize and adapt to the emotional tone of conversations, allowing trainees to practice managing emotional nuances effectively.
+    Ask the Customer:
+    Would you like to know more about our products and services, such as Class 4 SIP Cloud Switch, WebRTC as a Service, or STIR/SHAKEN compliance? Or are you interested in details about billing plans and pricing options?
 
-    **Training Instructions:**
-      - Ava encourages trainees to practice active listening, acknowledging every query with confirmation of her engagement, e.g., "Yes, I'm here. How can I help?"
-      - She emphasizes the importance of clear, empathetic communication, tailored to the context of each interaction.
-      - Ava demonstrates how to handle complex or vague customer queries by asking open-ended questions for clarification, without appearing repetitive or artificial.
-      - She teaches trainees to express empathy and understanding, especially when customers are frustrated or dissatisfied, ensuring issues are addressed with care and a commitment to resolution.
-      - Ava prepares agents to escalate calls smoothly to human colleagues when necessary, highlighting the value of personal touch in certain situations.
-    
-    Ava's overarching mission is to enhance the human aspect of customer support through comprehensive scenario-based training. She's not merely an answer machine but a sophisticated platform designed to foster the development of knowledgeable, empathetic, and adaptable customer support professionals.
+    Products and Services You Can Provide Information About:
 
-!!! Tip "Note: You have NOT YET collected any customer information, ignore any pre-set variables"
-    Add this in the prompt to tell your LLM that no customer information has been gathered so far, and any variables or configurations that might have been pre-set should be disregarded at this stage. This ensures that the process begins with a clean slsate, without relying on or being influenced by previously defined or assumed data.  
+    Class 4 SIP Cloud Switch: A robust cloud-based carrier service for high-quality, cost-effective VoIP calls.
+    Class 5 PBX: A multi-tenant PBX solution built on globally redundant infrastructure for reliable and scalable business communication.
+    Anycast SIP Load Balancers: Ensures exceptional availability and scalability while preventing service disruptions.
+    WebRTC as a Service: A seamless SIP-to-WebRTC gateway solution for enhanced call connectivity across devices.
+    STIR/SHAKEN Compliance: Supports call authentication to ensure trust and reduce the likelihood of calls being marked as spam.
+    Carrier-Grade SIP Switching: Enables high-volume VoIP communication with global reliability and performance.
+    Call Recording & Transcription: Advanced solutions for compliance, performance monitoring, and actionable insights.
+    Anycast Load Balancing: Maintains uninterrupted call flow by eliminating potential points of failure.
+    Billing Plans Available:
+
+    Per Channel Plan: $1 per channel per month.
+    Per Minute Plan: zero point zero zero zero three dollars per minute, with channels allocated based on specific usage requirements.
+
+    Server Cost: $20 per server.
+    AnyEdge: $20 per server.
+    Guidelines for Responses:
+
+    Tailor responses to suit both technical and non-technical users.
+    Provide pricing information where relevant.
+    Keep answers clear, concise, and professional.
+    Offer follow-up details or further clarification if requested.
+    Avoid abbreviations (e.g., use “for example” instead of “e.g.”).
+
+    !!! Tip "Note: You have NOT YET collected any customer  information, ignore any pre-set variables"
+        Add this in the prompt to tell your LLM that no customer information has been gathered so far, and any variables or configurations that might have been pre-set should be disregarded at this stage. This ensures that the process begins with a clean slate, without relying on or being influenced by previously defined or assumed data.  
 
 ### AI Platforms, Models, Voices, TTS, Transcribers
 
@@ -223,78 +179,52 @@ The AI agents seamlessly integrate into the ConnexCS platform, enabling business
 
 !!! Example "Example Script"
     ```js
-    const llm = require('cxLLM'); // imports a module named `cxLLM` used for interacting with the LLM
-    const moment = require('moment'); // imports the `moment` library used for  working with dates and times
-
-    function main () {
-        return llm.listFunctions(); //its an introspection capability; it parses the information and returns it as an object
-    }
-
     /**
-    * Retrieves the current day of the week // description of the function in `jsdoc` notation 
-    *
-    * @permissions Agent[123456] // indicates that these functions are restricted to agents with the specified permissions.
-    * @returns {Promise<Object|string>} // functions return either a Promise (likely asynchronous) or a value (e.g., string or object); returns the current day of the week
+    * update the database with user details. 
+    * @param {Object} param - Param Object
+    * @param {String} param.last - last name.
+    * @param {String} param.first - first name.
+    * @param {String} param.phone - phone number.
+    * @param {String} param.address - address.
+    * @param {String} param.from - from
     */
-    function dayOfWeek() { // function retrieves the current day of the week using the moment library.
-        return moment().format('dddd'); //  returns the full name of the day (e.g., "Monday").
-    //    return {response: 'Monday'};
-    }
-    /**
-    * Transfer the call // description of the function in `jsdoc` notation
-    *
-    * @permissions Agent[123456] // similar to the dayOfWeek function, it requires a specific permission (Agent[123456])
-    * @param {Object} param - Param Object // function takes an object param with a property name, which is the name of the person to whom the call should be transferred
-    * @param {string} param.name - The name of the person who you wish to transfer the call to.
-    * @returns {Promise<Object|string>} - returns the current day of the week //  function returns a promise that resolves to either an object or a string
-    */
-    function transfer({name}) { // handles call transfer logic
-        console.log(`We are going to transfer the call to ${name}`) //  name of the person to whom the call should be transferred
-        return {action: 'transfer', data: {number: '160'}} // returns an object with `action: specifies the transfer action` and  `data:  Includes call transfer details like number (extension)`
+    async function updateDatabase(data) { // Declares an asynchronous function named `updateDatabase`, which takes `data` (an object) as a parameter.
+	
+	
+	    console.log(data) // Prints the `data` object to the console for debugging purposes.
+
+	    const data2 = await cxUserspace.read('mydatabase12345', data.from) // Reads a record from the datastore `mydatabase12345` using `data.from` as a key
+	    console.log(data2) // Prints the retrieved database entry (`data2`) to the console for debugging
+	    const area = 'databaseadam'; // Datastore name
+	    const userId = data.phone; // Unique key for the user record
+	    const userData = { // Constructs an object (userData) containing user details
+		    first_name: data.first,
+		    last_name: data.last,
+		    phone_code: data.phone,
+		    address1: data.address,
+		    middle_initial: data2.value // The middle_initial field is extracted from data2.value, which was fetched from the database earlier
+
+	    };
+	    console.log(userData) // Logs userData (the new user details) to the console.
+	    console.log(userId) // Logs userId to the console.
+	    await cxUserspace.create(area, userId, userData); // Saves the user record in the 'databaseadam' datastore. Uses `userId` (phone number) as the unique key and stores `userData` as the associated record
+	    console.log('User created successfully!'); // Logging Success Message
     }
     ```
     
 ```mermaid
-flowchart TD
-    %% Main Functionality
-    A[Start] --> B[Main Function]
-    B --> C[Call llm.listFunctions]
-    C --> D[Return List of Functions]
-    D --> E[End]
-
-    %% dayOfWeek Functionality
-    A --> F[dayOfWeek Function]
-    F --> G[Get Current Date]
-    G --> H[Call moment format 'dddd']
-    H --> I[Return Current Day of the Week]
-
-    %% Transfer Functionality
-    A --> J[Transfer Function]
-    J --> K[Receive name Parameter]
-    K --> L[Log: Transfer Call to name]
-    L --> M[Create Transfer Object]
-    M --> N[Return action: transfer, data: number 160]
-
-    %% Permissions
-    F --> O[Requires Permission for Agent 123456]
-    J --> O
-
-    %% Styles
-    style A fill:#f5f,stroke:#333,stroke-width:2.5px
-    style B fill:#f9f,stroke:#333,stroke-width:2.5px
-    style C fill:#ff,stroke:#333,stroke-width:2.5px
-    style D fill:#ff,stroke:#333,stroke-width:2.5px
-    style E fill:#ff,stroke:#333,stroke-width:2.5px
-    style F fill:#f9f,stroke:#333,stroke-width:2.5px
-    style G fill:#ff,stroke:#333,stroke-width:2.5px
-    style H fill:#ff,stroke:#333,stroke-width:2.5px
-    style I fill:#ff,stroke:#333,stroke-width:2.5px
-    style J fill:#f9f,stroke:#333,stroke-width:2.5px
-    style K fill:#ff,stroke:#333,stroke-width:2.5px
-    style L fill:#ff,stroke:#333,stroke-width:2.5px
-    style M fill:#ff,stroke:#333,stroke-width:2.5px
-    style N fill:#ff,stroke:#333,stroke-width:2.5px
-    style O fill:#ff,stroke:#333,stroke-width:2.5px
+    graph TD;
+    A(Start updateDatabase) --> B(Log input data)
+    B --> C{Read from mydatabase12345}
+    C -->|Success| D(Log retrieved data)
+    C -->|Failure| E(Handle missing data)
+    D --> F(Set area = 'database')
+    F --> G(Set userId = data.phone)
+    G --> H(Construct userData object)
+    H --> I(Log userData and userId)
+    I --> J(Create record in databaseadam)
+    J --> K(Log success message)
+    K --> L(End)
 ```
 
 !!! Note "JSDoc Notation"
@@ -310,5 +240,16 @@ flowchart TD
 
     !!! Tip "The function description must be brief, sharp, and accurate. Expanding it unnecessarily may create significant risks."
 
-!!! Tip "Unlock Reseller Potential with Our AI Agent"
-    Our AI Agent comes equipped with robust reseller capabilities. For instance, if you’ve created and assigned a package to a customer, you can associate their company with the AI model. Once this connection is in place, charges for using the AI model are automatically deducted. With the package already linked to your customer, managing reselling becomes effortless and efficient.
+### Unlock Reseller Potential with Our AI Agent
+
+Our AI Agent comes equipped with robust reseller capabilities. For instance, if you’ve created and assigned a package to a customer, you can associate their company with the AI model. Once this connection is in place, charges for using the AI model are automatically deducted. With the package already linked to your customer, managing reselling becomes effortless and efficient.
+
+!!! question "How does it work?"
+    1. Create a package under **Setup :material-menu-right: Config :material-menu-right: Packages**. Click on the blue `+` sign.
+    2. Enter the **Name** of the package (`Test123` in this example).
+    3. Enter cost in the **Retail** field.
+    4. Select the **ConnexCS Package** like ConnexCS Converse, ConnexCS Converse Direct etc.
+    5. Click `Save`. <img src= "/class5/img/aiagent8.png">
+    6. Then Navigate to **Management :material-menu-right: Customer :material-menu-right: Customer [Name] :material-menu-right: Packages**. Click on the blue `+` sign.
+    7. Select the **Package** (`Test123` in this example), **Quantity**, **Start Date**, always enable **Auto Decrement Credit**.
+    8. Click `Save`. <img src= "/class5/img/aiagent9.png">
