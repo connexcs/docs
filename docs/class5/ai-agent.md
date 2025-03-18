@@ -2,7 +2,7 @@
 
 **Class 5 :material-menu-right: AI Agent**
 
-# Overview
+## Overview
 
 ConnexCS's AI Agent promise to deliver cutting-edge solutions that simplify and enhance your telecom experience.
 
@@ -212,8 +212,7 @@ The AI Call Center Agent in ConnexCS enhances operational efficiency, reduces co
 	    console.log('User created successfully!'); // Logging Success Message
     }
     ```
-    
-```mermaid
+    ```mermaid
     graph TD;
     A(Start updateDatabase) --> B(Log input data)
     B --> C{Read from mydatabase12345}
@@ -226,7 +225,7 @@ The AI Call Center Agent in ConnexCS enhances operational efficiency, reduces co
     I --> J(Create record in databaseadam)
     J --> K(Log success message)
     K --> L(End)
-```
+    ```
 
 !!! Note "JSDoc Notation"
     Using JSDoc for optimizing function usage within LLMs:
