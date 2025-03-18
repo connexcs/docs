@@ -6,16 +6,18 @@
 
 ConnexCS's AI Agent promise to deliver cutting-edge solutions that simplify and enhance your telecom experience.
 
-The AI Agent in ConnexCS is an advanced, automated system that handles inbound and outbound calls using AI-driven speech recognition, Natural Language Processing (NLP), and Machine Learning (ML). It enhances call efficiency by automating responses, and integrating with CRM systems.
+The AI Agent in ConnexCS is an advanced, automated system that handles inbound and outbound calls using AI-driven speech recognition, Natural Language Processing (NLP), and Machine Learning (ML). It enhances call efficiency by automating responses.
 
 The AI Call Center Agent in ConnexCS enhances operational efficiency, reduces costs, and improves customer interactions through intelligent automation.
 
 ### Use Cases
 
-+ AI Receptionist: Front Desk Automation, Appointment Scheduling, Customer Query Handling, After hours support.
++ AI Receptionist:
+    + Front Desk Automation
+    + Appointment Scheduling,
+    + Customer Query Handling,
+    + After hours support.
 + Conversational Data Collection
-+ Sending Notification via Tool Calls
-+ Transferring calls between agents
 + Scheduling call back
 
 ### Benefits
