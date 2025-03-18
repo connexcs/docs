@@ -12,13 +12,13 @@ The AI Call Center Agent in ConnexCS enhances operational efficiency, reduces co
 
 ### Use Cases
 
-+ AI Receptionist:
++ **AI Receptionist**:
     + Front Desk Automation
     + Appointment Scheduling,
     + Customer Query Handling,
     + After hours support.
-+ Conversational Data Collection
-+ Scheduling call back
++ **Conversational Data Collection**
++ **Scheduling call back**
 
 ### Benefits
 
