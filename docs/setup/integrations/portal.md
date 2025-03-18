@@ -72,7 +72,30 @@ You can provide several domains for your customers through different brands, and
     |**Balance**|Customer's current account balance|
     |**Call Detail Record (CDR)**| Displays detailed information of each call like call details, destination etc. [CLick here to know more](https://docs.connexcs.com/customer/cdr/)|
     |**Breakout**|Offers billing-accurate CDR insights, including customer profits, costs, billed amounts, ASR, and ACD.[CLick here to know more](https://docs.connexcs.com/customer-portal/cp-breakout/)
-    |**Latest Calls**|Offers billing-accurate CDR insights, including customer profits, costs, billed amounts, ASR, and ACD.[CLick here to know more](https://docs.connexcs.com/customer-portal/cp-breakout/)
+    |**Latest Calls**|Provides records of recent incoming and outgoing calls, their SIP traces, and run simulated calls.[CLick here to know more](https://docs.connexcs.com/customer/latest-calls/)|
+    |**CLI**|Displays the number of an incoming call.[CLick here to know more](https://docs.connexcs.com/customer-portal/cp-cli/#steps-to-add-approved-clis)|
+    |**Customer ACD**|View Average Call Duration as a total or per-carrier basis.[CLick here to know more](https://docs.connexcs.com/customer/stats/)|
+    |**Customer ASR**|View Average Call Duration as a total or per-carrier basis.[CLick here to know more](https://docs.connexcs.com/customer/stats/)|
+    |**Customer CPS**|View calls per second over time.[CLick here to know more](https://docs.connexcs.com/customer/stats/)|
+    |**Customer Channels**|View ccustomer channels.[CLick here to know more](https://docs.connexcs.com/dashboard/#dashboard-graph-tabs)|
+    |**Customer DTMF**|View DTMF percentages of each carrier. [Click here to know more](https://docs.connexcs.com/customer/stats/#customer-carrier).|
+    |**Carrier CPS**|View carrier's calls per second.[Click here to know more](https://docs.connexcs.com/customer/stats/#customer-carrier).|
+    |**Carrier Channels**|View carrier's channels.[Click here to know more](https://docs.connexcs.com/customer/stats/#main).|
+    |**Carrier DTMF**|View DTMF percentages of each carrier. [Click here to know more](https://docs.connexcs.com/customer/stats/#customer-carrier).|
+    |**Carrier Portal**||
+    |**Rate Cards**|View Customer Rate Cards and Provider Rate Cards of your customer. [Click here to know more](https://docs.connexcs.com/rate-card-building/).|
+    |**DID**|View the list of DIDs. [Click here to know more](https://docs.connexcs.com/customer/did/).|
+    |**DID (Editable)**|Allows customer to edit the DIDs.|
+    |**DID Destination Lock**||
+    |**DID Tags**|Add tags for informational purposes. [Click here to know more](https://docs.connexcs.com/customer/did/#advanced).|
+    |**IP Auth (Editable)**|Allows your customer to edit the IP Auth settings. [Click here to know more](https://docs.connexcs.com/customer/auth/#ip-authentication).|
+    |**SIP Auth (Editable)**|Allows your customer to edit the SIP Auth settings. [Click here to know more](https://docs.connexcs.com/customer/auth/#sip-user-authentication).|
+    |**User Registration**|View active registrations. [Click here to know more](https://docs.connexcs.com/customer-portal/cp-user-reg/)|
+    |**Queue**|The **Queue**, like **Groups**, routes calls to the longest-idle agent in a team-based call queue.. [Click here to know more](https://docs.connexcs.com/customer-portal/cp-queue/).|
+    |**Audio**|Allow your customer to upload and store audios for IVR or Queue PBX functions.[Click here to know more](https://docs.connexcs.com/customer-portal/cp-audio/).|
+
+
+
 
 === "Breakout"
 
