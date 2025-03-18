@@ -14,9 +14,9 @@ The AI Call Center Agent in ConnexCS enhances operational efficiency, reduces co
 
 + **AI Receptionist**:
     + Front Desk Automation
-    + Appointment Scheduling,
-    + Customer Query Handling,
-    + After hours support.
+    + Appointment Scheduling
+    + Customer Query Handling
+    + After hours support
 + **Conversational Data Collection**
 + **Scheduling call back**
 
@@ -27,11 +27,10 @@ The AI Call Center Agent in ConnexCS enhances operational efficiency, reduces co
 + Faster Query Resolution
 + Improved Appointment Management
 + Automatic collection and updation of records
-+ Reduced Transfer Time
 + Improved Customer Experience
 + Optimized Call Handling
 + Personalized Follow-Ups
-+ Higher Conversion Rates 
++ Higher Conversion Rates
 
 ## Steps to create AI Agent
 
