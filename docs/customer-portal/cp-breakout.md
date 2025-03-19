@@ -12,9 +12,6 @@ The **Breakout** report lists account customers with the following:
 
  The **Select Destination** allows you to filter out the calls made to a particular destination.
 
-!!! warning "Group Destination toggle"
-    Presently, this toggle feature is still under development, so it may generate an error.
-
 ## Manage Displayed Fields
 
 The Columns display data for each call
