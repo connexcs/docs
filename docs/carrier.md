@@ -109,13 +109,13 @@ From the **Carriers** page, you can perform several management operations.
     * **Website:** Add the carrier's official website.
     * **P-Asserted-ID:** Considered a network level identifier, you can select how calls to the provider is handled based on the PA-ID:
     
-        :material-menu-right: `Default`- call passed to the provider (no manipulation)
+        :material-menu-right: `Default`: Call passed to the provider (no manipulation).
         
-        :material-menu-right: `Remove`- strips PA-ID before passing the call to the provider
+        :material-menu-right: `Remove`: Strips PA-ID before passing the call to the provider.
         
-        :material-menu-right: `If Available`- will add PA-ID if one has been provided, otherwise the call will still be allowed
+        :material-menu-right: `If Available`: It will add PA-ID if one has been provided, otherwise the call will still be allowed.
         
-        :material-menu-right: `Required`- call won't be delivered to the provider without the PA-ID
+        :material-menu-right: `Required`: Call won't be delivered to the provider without the PA-ID.
     
     * **Consec Fail Backoff:** When Enabled, if a carrier goes down, only a fraction of calls will be sent to the carrier until the start to complete again (calls aren't completely disabled otherwise there is no way to know when the carrier is back up again). The First Reply Timeout is skipped.
         * **Purpose**:
