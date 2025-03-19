@@ -80,7 +80,7 @@ You can provide several domains for your customers through different brands, and
     |**Customer Channels**|View ccustomer channels. [Click here to know more.](https://docs.connexcs.com/dashboard/#dashboard-graph-tabs)|
     |**Customer DTMF**|View DTMF percentages of each carrier. [Click here to know more.](https://docs.connexcs.com/customer/stats/#customer-carrier)|
     |**Carrier CPS**|View carrier's calls per second. [Click here to know more.](https://docs.connexcs.com/customer/stats/#customer-carrier)|
-    |**Carrier Channels**|View carrier's channels.[Click here to know more.](https://docs.connexcs.com/customer/stats/#main)|
+    |**Carrier Channels**|View carrier's channels. [Click here to know more.](https://docs.connexcs.com/customer/stats/#main)|
     |**Carrier DTMF**|View DTMF percentages of each carrier. [Click here to know more.](https://docs.connexcs.com/customer/stats/#customer-carrier)|
     |**Carrier Portal**|Allow portal access to your carrier, just like customer portal.|
     |**Rate Cards**|View Customer Rate Cards and Provider Rate Cards of your customer. [Click here to know more](https://docs.connexcs.com/rate-card-building/).|
@@ -123,7 +123,7 @@ You can provide several domains for your customers through different brands, and
     |**App**| It helps to create small drag and drop applications. Use [ConneXML](https://docs.connexcs.com/class5/connexml/) here. [Click here to know more.](https://docs.connexcs.com/class5/apps/).|
     |**Conference**|Allows multiple participants to interact simultaenuously. [Click here to know more.](https://docs.connexcs.com/class5/creating-conference/)|
     |**IVR**|An anutomated telephone system that allows customers to interact with the system via keypad inputs or voice. [Click here to know more.](https://docs.connexcs.com/class5/creating-ivr/)|
-    |**Group**|route calls to a designated team based on your configured strategy.[Click here to know more.](https://docs.connexcs.com/class5/creating-group/)|
+    |**Group**|route calls to a designated team based on your configured strategy. [Click here to know more.](https://docs.connexcs.com/class5/creating-group/)|
     
 
 === "Breakout"
