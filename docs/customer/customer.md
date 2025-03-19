@@ -32,7 +32,7 @@ The following sections will appear when you click on the `blue +` sign.
 
     + **PayPal Email:** The email address associated with the customer's PayPal account. (This is relevant when using the IPN API which lets customers make payments directly through PayPal instead of using the Customer Portal. See our API documentation for details on [**PayPal IPN**](https://docs.connexcs.com/setup/integrations/api/#paypal-ipn-integration). It enables mass payments without requiring customer login.
     + **Website:** The customer's website address.
-    + **P-Asserted-ID:**PAID is a feature that determines how calls are routed based on predefined rules. The behavior of PAID varies depending on whether it is set to **Default**, **Remove**, **If Available**, or **Required**.
+    + **P-Asserted-ID: **PAID is a feature that determines how calls are routed based on predefined rules. The behavior of PAID varies depending on whether it is set to **Default**, **Remove**, **If Available**, or **Required**.
         + **Default**: If there is any PAID or CLI rule, then the call will proceed; if not the call will still proceed. Any attempt to modify PAID, including parameter rewrite rules, CLI section changes, or PAID changes, will not take effect. No modifications are allowed to PAID.
         + **Remove**: Strips PA-ID before passing the call to the provider.
         + **If Available**: The rule applies only when PAID is available. If PAID is present, it can be modified using rewrite rules. If it is missing, the call proceeds without PAID. Allows rewriting of PAID using rules.
@@ -99,7 +99,7 @@ The following sections will appear when you click on the `blue +` sign.
 
 !!! note "Note that you won't be able to change the account currency once you create the account."
 
-!!! info "PAID Configuration
+!!! info "PAID Configuration"
 
     PAID can be set in two places:
 
