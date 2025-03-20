@@ -65,7 +65,7 @@ With AI-driven automation, businesses can enhance customer experience while sign
 === "Transcriber"
 
     + **Transcriber**: Select the transcriber service to convert audio to text. You can select the transcriber depending on the selected platform.
-    + **Answer Machine Detection Keywords**: If the AI Agent detects a phrase (any phrase entered by the user) like "Please leave a message" at the start of the call, it will automatically disconnect..
+    + **Answer Machine Detection Keywords**: If the AI Agent detects a phrase (any phrase entered by the user) like "Please leave a message" at the start of the call, it will automatically disconnect.
     + **Transcriber Timeout**: It defines the maximum time the system waits for a response during speech-to-text transcription before terminating the process. If no speech is detected within this period, the transcriber stops listening and times out. On timeout `<SILENT_TIMEOUT>` will be sent to the LLM.
     + **End Call Phrases**: Phrases or messages used to conclude a call or interaction with a customer.
     + Click `Save`.
@@ -191,7 +191,7 @@ With AI-driven automation, businesses can enhance customer experience while sign
 
     !!! Tip "The function description must be brief, sharp, and accurate. Expanding it unnecessarily may create significant risks."
 
-### How to Enable Reseller Billing for AI Agent Services?
+## How to Enable Reseller Billing for AI Agent Services?
 
 Our AI Agent comes equipped with robust reseller capabilities. For instance, if you’ve created and assigned a package to a customer, you can associate their company with the AI Agent. Once this connection is in place, charges for using the AI Agent are automatically deducted. With the package already linked to your customer, managing reselling becomes effortless and efficient.
 
