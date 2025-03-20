@@ -222,9 +222,10 @@ Calls can be routed to another agent through two different transfer options.
                 return { action: 'transfer', destination: 'input phone number' }
             }
             ```
-       4. Navigate to **Class 5 :material-menu-right: AI Agent**.
-       5. In the **Basic** tab select the created transfer application from the dropdown in the **App** field.
-       6. Navigate to the **Advanced** tab and select the created `transfer function` in the **Tool Call Allow List**.    
+       
+    4. Navigate to **Class 5 :material-menu-right: AI Agent**.
+    5. In the **Basic** tab select the created transfer application from the dropdown in the **App** field.
+    6. Navigate to the **Advanced** tab and select the created `transfer function` in the **Tool Call Allow List**.    
 
 ## How to Enable Reseller Billing for AI Agent Services?
 
