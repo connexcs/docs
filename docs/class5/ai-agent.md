@@ -86,6 +86,7 @@ With AI-driven automation, businesses can enhance customer experience while sign
     + **Built-in Functions**:
         + **Hangup**: Use this flag to terminate the call. You can include a prompt such as, "When call ended, hangup.
         + **Set Variable**: Set variables locally. For example, in a prompt, you could ask, "What's your name?" and save the response to the variable `name`.
+        + **Transfer**: Allows transfering calls to another agent.
     + **Tool Call Allow List**: Select from a list of `functions` available in Apps in IDE. 
     + **Guard Rails**: Choose from multiple Guard Rails options to define constraints for your AI Agent.
     + **Flags**: Select from various flags:
@@ -190,6 +191,40 @@ With AI-driven automation, businesses can enhance customer experience while sign
      +  LLM will exactly know how to interact with the code (Scriptforge).
 
     !!! Tip "The function description must be brief, sharp, and accurate. Expanding it unnecessarily may create significant risks."
+
+### Call Transfer Techniques
+
+Calls can be routed to another agent through two different transfer options.
+
+1. **Using the built-in `Transfer` function**:
+      1. Select `Transfer` from the  **Advanced :material-menu-right: Built-in Functions** tab.
+      2. Navigate to the **Model** tab and insert the given prompt in the **Prompt** section.
+            **If requested you please call the transfer function with `input phone number` as the parameter `destination`**.
+
+            !!! danger "Security Warning"
+                Implementing this way will give the LLM the capability to transfer to **ANY number**. If a carefully executed instructions are passed to the LLM via a caller, it MAY be possible to encourage the LLM to dial a DIFFERENT number. 
+
+                We would recommend against this method outside testing. Furthermore, it's highly advisable that the routing is additionally protected, to all additional layers of security.
+                
+                **See below for a recommended strategy to implement transfers.**
+
+2. **Using Transfer function with Script Forge**:
+      1. Login to you account.
+      2. Navigate to **IDE :material-menu-right: ScriptForge**.
+      3. The script is as follows:
+            ```js
+            /**
+             * Transfer
+             * @param {Object} param - Param Object
+             * @param {string} param.name - The name of the person who you wish to transfer the call to.
+             */
+            function transfer() {
+                return { action: 'transfer', destination: 'input phone number' }
+            }
+            ```
+       4. Navigate to **Class 5 :material-menu-right: AI Agent**.
+       5. In the **Basic** tab select the created transfer application from the dropdown in the **App** field.
+       6. Navigate to the **Advanced** tab and select the created `transfer function` in the **Tool Call Allow List**.    
 
 ## How to Enable Reseller Billing for AI Agent Services?
 
