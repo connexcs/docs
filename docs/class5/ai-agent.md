@@ -201,12 +201,12 @@ Calls can be routed to another agent through two different transfer options.
       2. Navigate to the **Model** tab and insert the given prompt in the **Prompt** section.
             **If requested you please call the transfer function with `input phone number` as the parameter `destination`**.
 
-            !!! danger "Security Warning"
-                Implementing this way will give the LLM the capability to transfer to **ANY number**. If a carefully executed instructions are passed to the LLM via a caller, it MAY be possible to encourage the LLM to dial a DIFFERENT number. 
+    !!! danger "Security Warning"
+        Implementing this way will give the LLM the capability to transfer to **ANY number**. If a carefully executed instructions are passed to the LLM via a caller, it MAY be possible to encourage the LLM to dial a DIFFERENT number.
 
-                We would recommend against this method outside testing. Furthermore, it's highly advisable that the routing is additionally protected, to all additional layers of security.
+        We would recommend against this method outside testing. Furthermore, it's highly advisable that the routing is additionally protected, to all additional layers of security.
                 
-                **See below for a recommended strategy to implement transfers.**
+        **See below for a recommended strategy to implement transfers.**
 
 2. **Using Transfer function with Script Forge**:
       1. Login to you account.
