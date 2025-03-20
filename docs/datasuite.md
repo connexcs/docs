@@ -65,7 +65,7 @@ Four options are available: **New Workspace**, **Load Workspace**, **Bulk Upload
 
             + Click on `Upload`. A window will appear as shown below. <img src= "/misc/img/dms8.png">
 
-2. **Upload from Remote Database**
+2. **Upload to Remote Database**
       + Click the **`+`** icon, which functions as the **Add Database** button, within the **Database** section.
       + After adding a remote database, you can create a **table** within it. <img src= "/misc/img/dms14.png">
       + Under the **Basic** Tab:
@@ -83,7 +83,7 @@ Four options are available: **New Workspace**, **Load Workspace**, **Bulk Upload
 
       + Click on `Save` to finally create the table.
 
-### Step 4: Edit/Modify/Analyse Data
+### Step 4: Edit Data/Modify Data
 
 1.**File**
 
