@@ -4,7 +4,7 @@
 
 ConnexCS IDE is a   powerful, flexible platform that allows developers and administrators to customize, automate, and optimize the ConnexCS ecosystem.
 
-The IDE platform is a one stop solution for creating your own apps using the elements automating tasks making your system more efficient  
+Its a one stop solution platform for developing custom applications, automating tasks, and enhancing system efficiency. With its modular elements, it streamlines workflows while ensuring a user-friendly experience.
 
 With an intuitive interface and a wide range of features, the IDE enables seamless integration, improved efficiency, and enhanced functionality.
 
@@ -47,10 +47,10 @@ With an intuitive interface and a wide range of features, the IDE enables seamle
       1. `Database`: For creating custom data storage. [Click here to know more.](https://docs.connexcs.com/apps/architecture/database/)
       2. `Key-Value Store`: `Key-Value` pair format for storing data. [Click here to know more.](https://docs.connexcs.com/apps/architecture/key-value/)
       3. `Project`: For organizing various applications. [Click here to know more.](https://docs.connexcs.com/apps/architecture/project/)
-      4. `Queue`: Queue will display the status of various runnning jobs like `Waiting`, `Prioritized`, `Active`, `Completed`, `Failed`, `Delayed`, `Paused`.
+      4. `Queue`: Queue will display the status of various jobs like `Waiting`, `Prioritized`, `Active`, `Completed`, `Failed`, `Delayed`, `Paused`.
 4. **Button Builder**: Create and build buttons on Control Panel, Customer Portal, Forms etc. [Click here to know more](https://docs.connexcs.com/apps/architecture/button-builder/).
-5. **Domain**: Create Domians where your applications will be visible. [Click here to know more.](https://docs.connexcs.com/apps/architecture/domain/)
-6. **Page Builder**: Drang and Drop componets to create pages, forms etc. [Click here to know more](https://docs.connexcs.com/apps/page-builder/).
+5. **Domain**: Create Domains where your applications will be visible. [Click here to know more.](https://docs.connexcs.com/apps/architecture/domain/)
+6. **Page Builder**: Drag and Drop components to create pages, forms etc. [Click here to know more](https://docs.connexcs.com/apps/page-builder/).
 7. **Query Builder**: Use SQL queries to communicate with databases. [Click here to know more.](https://docs.connexcs.com/apps/architecture/query-builder/)
 8. **Script Forge**: Create and deploy customize scripts to automate tasks. [Click here to know more.](https://docs.connexcs.com/apps/architecture/script/)
-9. **Template**: Create csustomize templates for outbound SMS/Calls for infoming customers about balance, invoice etc. [Click her to know more.](https://docs.connexcs.com/apps/architecture/template/) 
+9. **Template**: Create customize templates for outbound SMS/Calls for informing customers about balance, invoice etc. [Click her to know more.](https://docs.connexcs.com/apps/architecture/template/) 
