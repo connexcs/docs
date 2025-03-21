@@ -75,6 +75,9 @@ The feature gives you the flexibility for **Resizing** the graph, **Refreshing**
 
     <img src= "/misc/img/count.png">
 
+!!! Info " Download Control Panel Application"
+    To download our Control Panel Application. Click ![alt text](image-4.png) on your browser while you are logged into your account and hit Install.
+    <img src= "/customer/img/controlpanelapp.png">
 
 [top of page]: /misc/img/topofpage.png "Top of Page"
 [dashboard]: /misc/img/dashboard.png "Dashboard"
