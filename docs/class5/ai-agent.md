@@ -149,9 +149,39 @@ With AI-driven automation, businesses can enhance customer experience while sign
 
 ## How to use Functions for the Large Language Models (LLMs)?
 
-1. Develop an application utilizing the provided [link](https://docs.connexcs.com/apps/architecture/app/).
-2. Create an **Agent** using the provided [link](https://bani-converse--connexcs-docs.netlify.app/class5/ai-agent/#steps-to-create-ai-agent).
-3. Click on [Scriptforge](https://docs.connexcs.com/apps/architecture/script/) to create a script to access the AI Agent.
+To grant access to functions for an AI agent, follow these steps:
+
+1. **Create an App from IDE**:
+      1. Login to your account
+      2. Navigate to **IDE :material-menu-right: Application**.
+      3. Create a new App. [Click here](https://docs.connexcs.com/apps/architecture/app/) to follow the steps.
+
+2. **Add a Script Forge**:
+      1. Under the newly created app, add a Script Forge. [Click here](https://docs.connexcs.com/apps/architecture/script/) to know the steps.
+
+3. **Define the Function**:
+   1. Within the Script Forge, add the function you want the AI agent to access.
+
+   !!! Example "Example Function"
+        ```js
+        /**
+          * Transfer
+          * @param {Object} param - Param Object
+          * @param {string} param.name - The name of the person who you wish to transfer the call to.
+            */
+        function transfer() {
+            return { action: 'transfer', destination: '160' }
+        }
+        ```
+
+4. **Assign the App to the AI Agent**:
+      1. Navigate to your AI agent that you have previously created.
+      2. Under the **Basic** in the **App** field app, choose the created App.
+
+5. **Allow Function Access**:
+      1. Navigate to **Advanced** tab (in AI Agent), then select the created function in the **Tool Call Allow List** and grant access from the list.
+
+Following these steps ensures that the AI agent has the necessary permissions to interact with the designated function.
 
 !!! Example "Example Script"
     ```js
