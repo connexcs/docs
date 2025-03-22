@@ -343,6 +343,9 @@ To enable, click **:material-plus:** next to SIP User Authentication:
     See [**Voicemail**](https://docs.connexcs.com/class5/voicemail/) for information on accessing Voicemail. 
 
     <img src= "/customer/img/voicemail.png" width= "600"/>
+
+!!! Danger "Duplicate IP Detection & Warning"
+    Our system generates a warning notification if a duplicate IP address is detected.
 ___
 
 ### Channel Capacity Limitation
