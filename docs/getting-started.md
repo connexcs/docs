@@ -6,6 +6,8 @@
 
 The initial setup in ConnexCS will configure a single carrier, a single customer, and a single rate card.
 
+We Support an unlimited number of customers and recipients.
+
 !!! info "Changing the UI language"
     To change the display language for the UI, click your name in the upper-right corner and select [**Change Language**](https://docs.connexcs.com/changing-language/).
 
@@ -73,7 +75,6 @@ To verify a mobile number:
 + Country
 + Address
 + VAT Registration ID
-___
 
 ## Setup Personal Profile
 
