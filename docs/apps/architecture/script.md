@@ -266,16 +266,6 @@ function main(data) {
 
 You can access and view background jobs running through Script Forge, since Script Forge has access to Queue.
 
-!!! Example "Example Code"
-    ```js
-    const { C5 } = require('cxCallControl'); //  imports the C5 module from the cxCallControl package
-    async function main() { // declares an asynchronous function named `main`
-        const c5 = await C5(['am1fs1']); // The `C5` function initializes `c5` with `'am1fs1'`, using `await` to ensure readiness
-        const allQueues = await c5.getQueue('20000'); // `getQueue` fetches queue `'20000'`, with `await` storing the result in `allQueues`
-        return allQueues // The `main` function returns `allQueues`, resolving its promise with the result of the `getQueue` method
-        }
-    ```
-
 1. You can view the jobs under Global :material-menu-right: Queue. <img src= "/apps/img/job1.png">
 2. Click on the job `Name`  to view the status or add a new job.
 
