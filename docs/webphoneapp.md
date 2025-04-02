@@ -137,7 +137,6 @@ There are 2 ways to create a certificate:
 
 <img src= "/setup/img/webphone6.jpeg">
 
-
 ### Step 4: Add WebRTC to server
 
 To setup WebRTC on a server:
