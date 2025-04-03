@@ -118,7 +118,9 @@ There are 2 ways to create a certificate:
 
       1. **Web Server (Domain A):** This location hosts the phone, and the customers receives the URL. Create a CNAME on your domain, such as `webphone.yourdomain.com`, and point it to our web server at `webphone.connexcs.com` (responsible for web services, and yes, this is the same as the customer portal).
       2. **SIP Switch (Domain B):** Create the WebRTC domain and it's CNAME should point towards the [DNS you create](https://docs.connexcs.com/setup/settings/dns/).
+
             1. Navigate to **Setup :material-menu-right: Settings :material-menu-right: DNS :material-menu-right:** to create your DNS.
+
             2. Enter the domain (ex: test1), then select the checkbox for the A record for the IP of the server you want to use.
 
             This is the SIP signaling domain (WebRTC) and attached to your server. Navigate to **Setup :material-menu-right: Settings :material-menu-right: DNS :material-menu-right:**. Enter the domain (ex: test1), then select the checkbox for the A record for the IP of the server you want to use.
