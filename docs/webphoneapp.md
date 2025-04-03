@@ -136,7 +136,7 @@ There are 2 ways to create a certificate:
          * If the domain isn't listed, click on `Add Certificate` and provide your domain name.
          * If the certificates get listed but they don't have an issue or expiry date, click on "Refresh Certificates." This may take up to 10 minutes to complete.
 
-<img src= "/setup/img/webphone6.jpeg">
+<img src= "/setup/img/webphone78.png">
 
 ### Step 4: Add WebRTC to server
 
