@@ -1,13 +1,28 @@
 # Caller Line Identification
 
-**CLI (Caller Line Identification)** (or "Automatic Number Identification") refers to the *From* header in Session Initiation Protocol (SIP) and represents the senders number in an outgoing telephone call. It's the technical term for the Caller ID mechanism.
+## Overview
 
-In VoIP systems, CLI is more than just a way to display the number of incoming calls. It serves as a defense against unidentified call attempts, provides information to sort incoming calls, and is an important part of billing.
+CLI (Caller Line Identification), aka ANI (Automatic Number Identification), is the From header in SIP. It represents the sender's number in a telephone call. It's the technical term for the mechanism we know as Caller ID.
 
-On our platform, CLI allows you to restrict and allow CLIs, which then allow or restrict calls based on the match.
+In VoIP systems, CLI is more than just a way to display the number of incoming calls. It's used as a defense against unidentified call attempts.
+
+CLI provides information to sort incoming calls. It's an important component of billing.
+
+In ConnexCS, CLI lets you restrict and manipulate CLIs and Pre-Asserted Identity on customer calls so that any caller without a valid match gets rejected instantly.
+
+It's also referred to as the A-number or A-leg, representing the incoming call to the switch. The B-number, or B-leg, is the dialed number, representing the outgoing call from the switch.
 
 !!! tip "CLI Best Practice"
     It's recommended to have one Forced CLI.
+
+### Key Features
+
+1. **Granular Control**: Define which CLIs can pass through the system.
+2. **Security & Compliance**: Restrict unauthorized calls based on CLI rules.
+3. **Pattern Matching**: Utilize regular expressions to allow or block specific CLIs.
+4. **Forced CLI Assignments**: Ensure calls use predefined numbers when necessary.
+5. **Peer-Asserted Identity Management**: Manage trust and visibility of caller IDs at the network level.
+6. **Directional Routing**: Apply rules to both inbound (origination) and outbound calls.
 
 ## Forced
 
