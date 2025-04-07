@@ -6,7 +6,6 @@ The **Breakout** report lists account customers with the following:
 * relevant data such as cost per customer, amount billed, Aggregation Services Router (ASR), and Automatic Call Distribution Service (ACD).
 * use the Columns and Filters to manage data presentation.
 Enable Pivot Mode (check box at the top of Columns) to setup Row Groups and Values for additional report customization.
-Example
 
     The information here is from a processed Call Detail Record (CDR) and is thus considered "billing accurate." You can use this data to bill your customers.
 

@@ -14,9 +14,9 @@ CDRs provide comprehensive call data, essential for billing and analytics.
 + **Comprehensive Data**: Stores millions of call records efficiently.
 + **Customizable Display**: Users can add extra fields like source IP, reorder fields, and filter data based on parameters.
 + **Filtering & Querying**:
-  + Apply filters (e.g., termination, origination).
-  + Advanced query builder allows multi-parameter searching (e.g., calls longer than 10 seconds and PDD less than 5 milliseconds).
-  + Grouping of query results is limited due to large data sets.
+    + Apply filters (e.g., termination, origination).
+    + Advanced query builder allows multi-parameter searching (e.g., calls longer than 10 seconds and PDD less than 5 milliseconds).
+    + Grouping of query results is limited due to large data sets.
 + **Server-Side Sorting**: Ensures optimal performance when dealing with large datasets.
 + **Data Export**: Download call data as CSV for further analysis.
 + **Long-Term Storage**: CDRs are stored indefinitely unless customers request deletion.
