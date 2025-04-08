@@ -20,9 +20,9 @@ In this section, view all the configured **Conference** groups:
 8. Automatic internal routing for ease of access.
 
 !!! question "Why use the Conference feature?
-    1. Secure access through PIN.
-    2. High-quality audio options for better clarity.
-    3. Easy routing setup for internal and external participants."
+       1. Secure access through PIN.
+       2. High-quality audio options for better clarity.
+       3. Easy routing setup for internal and external participants."
 
 ## Edit Existing Conference
 
@@ -43,7 +43,7 @@ In this section, view all the configured **Conference** groups:
 
    + **Max Members:** Limit the number of concurrent callers this conference must allow.
   
-    !!! **Note**
+    !!! Note
         The preset of '0' Max Members allows an unlimited number of callers to join the conference.
 
     ![alt text][conference]

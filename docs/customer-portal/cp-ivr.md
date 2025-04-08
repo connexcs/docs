@@ -17,7 +17,7 @@ When you create an IVR, you specify a 1:1 mapping for all the possible keys on t
 5. Use prefixes for external call transfers.
 6. Create multi-level IVR setups.
 
-!!! question Why use the IVR system?
+!!! question "Why use the IVR system?"
     1. Streamlines call handling and improves customer experience.
     2. Reduces the need for human intervention in call routing.
     3. Provides automated assistance to callers.

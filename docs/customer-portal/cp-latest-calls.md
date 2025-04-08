@@ -7,18 +7,18 @@ See Logging section for details on these functions. To view Latest Calls for all
 ## Features & Insights
 
 1. **Displays**:
-   1. Carrier handling the call.
-   2. Caller and receiver numbers.
+      1. Carrier handling the call.
+      2. Caller and receiver numbers.
 
 2. **Useful for**:
 
-   1. Debugging real-time call flow.
-   2. Analyzing SIP trace logs at the packet level.
+      1. Debugging real-time call flow.
+      2. Analyzing SIP trace logs at the packet level.
 
 3. **Allows users to**:
-   1. Simulate calls.
-   2. Refresh call logs.
-   3. View raw call data.
+      1. Simulate calls.
+      2. Refresh call logs.
+      3. View raw call data.
 
 ![alt text][latestcalls]
 
