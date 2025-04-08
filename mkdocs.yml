@@ -143,6 +143,8 @@ nav:
             - Advance Field: developers/pages/advance-field.md
             - Layout: developers/pages/layout.md
            
+    - Data Suite: datasuite.md
+
     - Setup:
         - AnyEdge: anyedge/anyedge.md
         - App Store: setup/appstore.md

@@ -488,3 +488,35 @@ ASR (Answer Seizure Ratio) is the number of connected calls divided by the total
 [ingress-routing]: /customer/img/ingress-routing.png "Ingress Routing"
 [routing-disabled]: /customer/img/routing-disabled.png "Disabled Routing"
 [techprefix-usecase]: /customer/img/techprefix-usecase.png "Tech Prefix Use Case"
+
+## Strategic Routing
+
+Strategic Routing feature allows creating a Routing Strategy that, when applied, will route calls to specific provider rate cards, completely bypassing any routing configured in the customer rate card.
+
+### Steps for implementation
+
+1. **Create a Routing Strategy**:
+
+   + Navigate to **Management :material-menu-right: Routing Strategy :material-menu-right: blue `+` icon** .
+   + A window will pop-up to create a new strategy.
+   + Fill in the following details:
+       + **Name** of the strategy
+       + Select the **Strategy** from the drop-down menu.
+       + Enable the **Override Routing** option.
+   + Select a **Rate Card** from the drop-down menu.
+   + Click `Save`.
+
+<img src= "/customer/img/rs.png" width="800">
+
+2.**Apply the Strategy to a Customer**:
+
++ Navigate to **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Routing :material-menu-right: Ingress Routing :material-menu-right: blue `+` icon :material-menu-right: Strategy :material-menu-right: blue `+` icon**.
++ Select the **Prefix Set** or enter the **Prefix**.
++ Select the newly created **Routing Strategy** for the customer.
++ Click `Save`.
+
+<img src= "/customer/img/rs1.png">
+
+!!! Info "Routing Behaviour"
+    Once applied, calls from the customer will now route based on the provider rate cards specified in the strategy.
+    **Important**: This will completely ignore the routing set up in the customer rate card.
