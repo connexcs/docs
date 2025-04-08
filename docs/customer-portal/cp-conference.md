@@ -19,10 +19,10 @@ In this section, view all the configured **Conference** groups:
 7. Link a Direct Inward Dialing (DID) number to the conference
 8. Automatic internal routing for ease of access.
 
-!!! question "Why use the Conference feature?
-       1. Secure access through PIN.
-       2. High-quality audio options for better clarity.
-       3. Easy routing setup for internal and external participants."
+!!! question "Why use the Conference feature?"
+      1. Secure access through PIN.
+      2. High-quality audio options for better clarity.
+      3. Easy routing setup for internal and external participants."
 
 ## Edit Existing Conference
 
