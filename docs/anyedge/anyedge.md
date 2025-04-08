@@ -12,6 +12,14 @@ It provides high-reliability and custom Call Distribution algorithms (Weights an
     Global redundancy in AnyEdge ensures high availability by distributing traffic across multiple edge servers located in different geographical regions.
     This minimizes downtime and provides seamless service continuity even during outages or failures in any single location.
 
+Each customer benefits from a unique, dedicated IP address through AnyEdge
+
+Calls are routed to the nearest AnyEdge server for optimal performance and reduced latency.
+
+!!! Info "AnyEdge Features"
+    1. We provide 10,000+ CPS to all customers for optimal scalability and performance.
+    2. All our customers benefit from 100Gbps DDoS protection.
+    
 ## AnyEdge Setup
 
 ### Configure AnyEdge
@@ -74,6 +82,9 @@ It can provide added **Transport Layer Security (TLS)/ Secure Sockets Layer (SSL
 3. If you enable the **Require Certificate** option, it means the client should have the certificate.
 
 <img src= "/anyedge/anyedge13.png">
+
+!!! Info "Custom TLS Ciphers & Curves"
+     ConnexCS AnyEdge supports custom TLS ciphers, cryptographic algorithms and elliptic curves, allowing administrators to precisely configure security protocols and ensure compatibility with specific client or server requirements.
 
 ### AnyEdge Destinations
 

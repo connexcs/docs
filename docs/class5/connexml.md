@@ -343,6 +343,7 @@ An existing call is transferred to a different destination using the `Dial` ver
 |**Noun**|**Attribute**|**Description**|**Options**|**Default Method**|
 |--------|--------|-----|-----------|------------------|
 |`Voicemail`|`Voicemail Inbox`| It sends you to the inbox to leave a message|
+||`user`|The user attribute specifies the SIP user|
 |`Barge`| `whisper`|If enabled, allows you to speak privately to one or both legs of the call without the other party hearing.|`a`(aleg), `b`(bleg), `ab`(both legs)|`ab`|
 ||`bridge`|Allows an eavesdropper to listen in on a call without being an active participant. The eavesdropper can monitor the conversation on one or both legs of the call|`a`(aleg), `b`(bleg),`ab` (both legs)|`ab`|
 ||`command`|DTMF signals during eavesdrop|`true`, `false`|`true`|
@@ -505,7 +506,7 @@ An existing call is transferred to a different destination using the `Dial` ver
             </Dial>
         </Response>
         ```
-        Send updates about the call's lifecycle (initiated, ringing, answered, and completed) to the callback URL http://fr1js1.connexcs.net:3002 via HTTP POST requests.
+        Send updates about the call's lifecycle (initiated, ringing, answered, and completed) to the callback URL via HTTP POST requests.
     
     16. **Queue music**
         ``` xml
@@ -523,6 +524,16 @@ An existing call is transferred to a different destination using the `Dial` ver
         <Response>
             <Dial>
                 <Queue action="pickup" music="ivr/ivr-invalid_number_format.wav">20000</Queue>
+            </Dial>
+        </Response>
+        ```
+    18. **user**
+        ``` xml
+        <?xml version="1.0" encoding="UTF-8"?>
+        <Response>
+            <Dial>
+                <Voicemail inbox="true" user="2890">
+                </Voicemail>
             </Dial>
         </Response>
         ```
@@ -567,7 +578,7 @@ Dynamically dial a phone number based on a `substring` of a variable named `Exte
 It helps to define on which leg of the call the DTMF will work. For example, `dtmf_leg ='a'` or `dtmf_leg ='b'`.
 
 !!! Example
-    When the digit `3` is pressed on the call leg `b` within the specified context `A`, the call will be transferred to `test4`.
+   When the digit `3` is pressed on the call leg `b` within the specified context `A`, the call will be transferred to `test4`.
     ``` xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
@@ -579,7 +590,18 @@ It helps to define on which leg of the call the DTMF will work. For example, `dt
 
 |**Noun**|**Description**|  
 |--------|---------------|
-|`Transfer`|Transfers the call to the given extension given|
+|`Transfer (Blind)`|Transfers the call to the given extension given immediately without verifying whether the recipient is available or willing to take the call|
+|`Attended Transfer`|The transferring party confirms the recipient's availability before completing the transfer.|
+
+!!! Example "Example Attended Transfer"
+    ``` xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+        <Transfer attended="true">
+            <Target>+1234567890</Target>
+        </Transfer>
+    </Response>
+    ```
 
 ### Before
 
