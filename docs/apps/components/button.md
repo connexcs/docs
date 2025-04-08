@@ -62,6 +62,8 @@ Here are some examples of how interactivity can be implemented for **Button** co
 |`this.show`|Displays the field|`(fields: String`&#124;`String[])`|
 |`this.disable`| Disable button from user interaction|`(fields: String`&#124;`String[])`|
 |`this.enable`| Enable button from user interaction|`(fields: String`&#124;`String[])`|
+|`this.$('agentStatus').disable()`|Disable button from user interaction|`(fields: String`&#124;`String[])`|
+|`this.$('agentStatus').enable()`| Enable button from user interaction|`(fields: String`&#124;`String[])`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of the button in response to user input.

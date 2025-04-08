@@ -6,6 +6,9 @@ The **Portal** lets you add domains and sub-domains to the Control Panel, which 
 
 You can provide several domains for your customers through different brands, and each domain can have different permissions, currencies, default, etc.
 
+!!! Note "Deployment"
+    Customers are instructed to point a CNAME record to portal.connectcs.com; secure certificates are deployed automatically upon configuration.
+
 ## Portal Setup
 
 **Step 1: Set up the CNAME record**
@@ -44,31 +47,92 @@ You can provide several domains for your customers through different brands, and
 
 === "Basic"
 
-   * **Domain:** The URL your customers use to access their portal.
-   * **Brand Name:** The name that appears on the portal for your customers.
-   * **Customer Sign up:** Allow customers to sign up independently.
-   * **Carrier Sign up:** Allow carriers to sign up independently.
-   * **Template Customer:** Select a pre-configured template customer on your account, preset with default values and gets set when a customer independently creates their account via the portal (See "Template Customer example" below).
-   Available values for this template are:
-       * Customer [Fields in the customer itself, such as debit limit]
-       * Routes
-       * Payments
-       * Alerts
-       * Packages
-       * Contracts
-   * **Currencies:** Choose the currencies available for your customers when they sign up.
+    * **Domain:** The URL your customers use to access their portal.
+    * **Brand Name:** The name that appears on the portal for your customers.
+    * **Customer Sign up:** Allow customers to sign up independently.
+    * **Carrier Sign up:** Allow carriers to sign up independently.
+    * **Currencies:** Choose the currencies available for your customers when they sign up.
+    * **Template Customer:** Select a pre-configured template customer on your account, preset with default values and gets set when a customer independently creates their account via the portal (See "Template Customer example" below). Automatically replicate settings for new customers.
+    Available values for this template are:
+        + Customer [Fields in the customer itself, such as debit limit]
+        + Routes
+        + Payments (Any associated payment configurations are copied)
+        + Alerts
+        + Packages
+        + Contracts (Required contracts (e.g., if two contracts are needed at sign-up) are duplicated automatically)
 
 === "User Access Area"
 
-    Select the sections/features displayed to your customers (see "Override Options" below).
+    Select the sections/features displayed to your customers (see "Override Options" below). Individual settings can be customized per customer.
+
+    **Common**
+
+    |Feature|Description|
+    |-------|-----------|
+    |**Balance**|Customer's current account balance|
+    |**Call Detail Record (CDR)**| Displays detailed information of each call like call details, destination etc. [Click here to know more.](https://docs.connexcs.com/customer/cdr/)|
+    |**Breakout**|Offers billing-accurate CDR insights, including customer profits, costs, billed amounts, ASR, and ACD. [Click here to know more.](https://docs.connexcs.com/customer-portal/cp-breakout/)
+    |**Latest Calls**|Provides records of recent incoming and outgoing calls, their SIP traces, and run simulated calls. [Click here to know more.](https://docs.connexcs.com/customer/latest-calls/)|
+    |**CLI**|Displays the number of an incoming call. [Click here to know more.](https://docs.connexcs.com/customer-portal/cp-cli/#steps-to-add-approved-clis)|
+    |**Customer ACD**|View Average Call Duration as a total or per-carrier basis. [Click here to know more.](https://docs.connexcs.com/customer/stats/)|
+    |**Customer ASR**|View Average Call Duration as a total or per-carrier basis. [Click here to know more.](https://docs.connexcs.com/customer/stats/)|
+    |**Customer CPS**|View calls per second over time. [Click here to know more](https://docs.connexcs.com/customer/stats/)|
+    |**Customer Channels**|View ccustomer channels. [Click here to know more.](https://docs.connexcs.com/dashboard/#dashboard-graph-tabs)|
+    |**Customer DTMF**|View DTMF percentages of each carrier. [Click here to know more.](https://docs.connexcs.com/customer/stats/#customer-carrier)|
+    |**Carrier CPS**|View carrier's calls per second. [Click here to know more.](https://docs.connexcs.com/customer/stats/#customer-carrier)|
+    |**Carrier Channels**|View carrier's channels. [Click here to know more.](https://docs.connexcs.com/customer/stats/#main)|
+    |**Carrier DTMF**|View DTMF percentages of each carrier. [Click here to know more.](https://docs.connexcs.com/customer/stats/#customer-carrier)|
+    |**Carrier Portal**|Allow portal access to your carrier, just like customer portal.|
+    |**Rate Cards**|View Customer Rate Cards and Provider Rate Cards of your customer. [Click here to know more](https://docs.connexcs.com/rate-card-building/).|
+    |**DID**|View the list of DIDs. [Click here to know more.](https://docs.connexcs.com/customer/did/)|
+    |**DID (Editable)**|Allows customer to edit the DIDs.|
+    |**DID Destination Lock**|Locks DID Destination so that it cannot be changed (in url destination).|
+    |**DID Tags**|Add tags for informational purposes. [Click here to know more.](https://docs.connexcs.com/customer/did/#advanced)|
+    |**IP Auth (Editable)**|Allows your customer to edit the IP Auth settings. [Click here to know more.](https://docs.connexcs.com/customer/auth/#ip-authentication)|
+    |**SIP Auth (Editable)**|Allows your customer to edit the SIP Auth settings. [Click here to know more.](https://docs.connexcs.com/customer/auth/#sip-user-authentication)|
+    |**User Registration**|View active registrations. [Click here to know more.](https://docs.connexcs.com/customer-portal/cp-user-reg/)|
+    |**Queue**|The **Queue**, like **Groups**, routes calls to the longest-idle agent in a team-based call queue. [Click here to know more.](https://docs.connexcs.com/customer-portal/cp-queue/)|
+    |**Audio**|Allow your customer to upload and store audios for IVR or Queue PBX functions. [Click here to know more.](https://docs.connexcs.com/customer-portal/cp-audio/)|
+    |**Interconnect Info**|Information on termination and origination address. [Click here to know more.](https://docs.connexcs.com/customer-portal/interconnect/)|
+    |**Packages**|Packages to offer predefined products and services. [Click here to know more.](https://docs.connexcs.com/customer/package/)|
+    |**Show RTP Servers**|It will display the RTP Servers used by your customers.|
+    |**Routes (Editable)**|View, configure and edit Routing options for customers. [Click here to know more.](https://docs.connexcs.com/customer/routing/#configure-routing)|
+    |**Summary**|Display the summaries of live calls (last 24 hours), Daily, Monthly. This data updates every hour. [Click here to know more.](https://docs.connexcs.com/customer-portal/cp-dashboard/#summary)|
+    |**Data Management (Data Suite)**|Allows customers to create custom persistent data storage. [Click here to know more.](https://docs.connexcs.com/customer-portal/cp-data-management/)|
+    |**Allow Route Public Note**|Notes entered here get displayed on the Customer Portal when logged in. [Click here to know more.](https://docs.connexcs.com/customer/routing/#notes)|
+    |**Recording**|The Recording area allows you to listen to recorded calls, provided this feature is available on your account. [Click here to know more.](https://docs.connexcs.com/customer-portal/cp-recording/)|
+    |**Download Recording**|Allows your customer to download call recordings. [Click here to know more.](https://docs.connexcs.com/customer-portal/cp-recording/)|
+    |**Invoice**|Allows customers to generation invoices. [Click here to know more.](https://docs.connexcs.com/customer/invoices/)|
+    |**Status**|Use **Status** to create customer-facing status pages, automating outage and downtime notifications. [Click here to know more.](https://docs.connexcs.com/system-status/)|
+    |**Public Status**|Make the status visibility as public.|
+    |**Alert**|Allows your customers to apply Alerts for Balance, ASR, ACD, CDR etc. [Click here to know more.](https://docs.connexcs.com/customer/alerts/)|
+    |**Editable Balance Alert**|Allows your customers to edit Blalance alert threshold. [Click here to know more.](https://docs.connexcs.com/customer/alerts/)|
+    |**Payments**| Displays various payment modes. [Click here to know more.](https://docs.connexcs.com/customer/payment/)|
+    |**Pending Bank Payments**| Displays any pending bank payments.|
+    |**Block PayPal**|Allows your customers to block PayPal payment mode.|
+    |**Block Stripe**|Allows your customers to block Stripe payment mode.|
+    |**Voucher**|Enable pre-generated codes with monetary value to be used for account top-ups. [Click here to know more](https://docs.connexcs.com/voucher/)|
+    |**Dialog**|Display the status of current active calls on the account. [Click here to know more.](https://docs.connexcs.com/customer/dialogs/)|
+
+    
+    **Class 5 Access**
+
+    |Feature|Description|
+    |-------|-----------|
+    |**AI Agent**|It replaces AI Call Center Agents.|
+    |**App**| It helps to create small drag and drop applications. Use [ConneXML](https://docs.connexcs.com/class5/connexml/) here. [Click here to know more.](https://docs.connexcs.com/class5/apps/).|
+    |**Conference**|Allows multiple participants to interact simultaenuously. [Click here to know more.](https://docs.connexcs.com/class5/creating-conference/)|
+    |**IVR**|An anutomated telephone system that allows customers to interact with the system via keypad inputs or voice. [Click here to know more.](https://docs.connexcs.com/class5/creating-ivr/)|
+    |**Group**|route calls to a designated team based on your configured strategy. [Click here to know more.](https://docs.connexcs.com/class5/creating-group/)|
+    
 
 === "Breakout"
 
-    Select the columns to display in the **Report :material-menu-right: Breakout Report**.
+    Customized report view that shows different levels of detail depending on whether the user is a carrier or a customer.Select the columns to display in the **Report :material-menu-right: Breakout Report**.
 
 === "CDR"
 
-    Select the columns to display in the **Management :material-menu-right: Customer :material-menu-right: [Choose Customer] :material-menu-right: CDR Report**.
+    Select which CDR fields are available for viewing by different user types. Select the columns to display in the **Management :material-menu-right: Customer :material-menu-right: [Choose Customer] :material-menu-right: CDR Report**.
 
 === "Advanced"
 
@@ -101,6 +165,14 @@ You can provide several domains for your customers through different brands, and
         A list of available files will now appear in the "Upload Logo" Box.
     * **Footer** - Enter text to display at the bottom of the page, for example _Copyright My Company_
 
+=== "SMTP"
+
+    You can now associate brands with Portal, and send an e-mail with your brand or domain name with this feature.
+
+    A customer can sign into the various domains available in the system.
+
+    Each domain can have different price points, support levels, features, etc.
+
 !!! example "Template Customer example"
     If you want to give all your customers $5.00 credit, create an account from: Management :material-menu-right: Customer. Add $5.00 in Payments for that account.
 
@@ -110,14 +182,6 @@ You can provide several domains for your customers through different brands, and
     To override these options for specific customers, go to **Management :material-menu-right: Customer :material-menu-right: [Choose Customer] :material-menu-right: Edit :material-menu-right: Config :material-menu-right: Portal Access**.
 
     Select items from the "Show" heading to display the feature, or from the Hide options to prevent it from appearing.
-
-=== "SMTP"
-
-    You can now associate brands with Portal, and send an e-mail with your brand or domain name with this feature.
-
-    A customer can sign into the various domains available in the system.
-
-    Each domain can have different price points, support levels, features, etc.
 
 **Steps to create a new Domain**:
 
