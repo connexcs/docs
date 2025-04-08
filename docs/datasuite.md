@@ -98,7 +98,9 @@ Four options are available: **New Workspace**, **Load Workspace**, **Bulk Upload
 + **Import Local Table**:  allows you to transfer a table from a local database or file into the system. [Click here to know more.](https://bani-41024--connexcs-docs.netlify.app/datasuite/#upload-data-from-local-or-remote-databases)
 + **Download Workspace**: Allows you to download the workspace in the `json` format.
 
-2.**Drag & Drop a .csv file here or Browse**: <img src= "/misc/img/ds4.png">
+2.**Drag & Drop a .csv file here or Browse**:
+
+<img src= "/misc/img/ds4.png">
 
 3.**Explore Tables**:
 

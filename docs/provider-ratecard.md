@@ -151,22 +151,6 @@ To change Revision status:
 |**EEA(EEA Rates)**|If a call originates from a CLI starting with '33' (France) and the destination number starts with '43' (Austria)| When a call originates from one European Economic Area country and terminates in another EEA country|3|
 |**EEA(International Rates)**| If a call originates from a CLI starting with '33' (France) and the destination number starts with '444' (UK)|Any call not meeting the Local or EEA criteria falls under this category|
 
-!!! Note
-    Selecting **EEA (Local/EEA/International)** in **Force Presentation** enables a new option called **Origin Billing**.
-
-+ **Origin Billing**: Calls are classified as EEA based on the configuration in **Rate Card :material-menu-right: Config :material-menu-right: Force Presentation :material-menu-right: EEA(Local/EEA/International) :material-menu-right: Origin Billing**.
-
-    + **Configuration**:
-        + **Source EEA Countries**: Define the countries that qualify as EEA origins.
-        + **Destination EEA Countries**: Define the countries that qualify as EEA destinations.
-    + **Use Case**: A call is considered EEA if the origin country is in **Source EEA Countries** and the destination country is in **Destination EEA Countries**.
-
-        !!! Example "Example"
-
-            Source EEA Countries: **UK (44)**
-            Destination EEA Countries: **Afghanistan (93)**
-            A call from **44 to 93** will be classified as **EEA** and charged accordingly.
-
 + **Dialing**: Select whether to bill based on the carrier of the Dialed Number or using an LRN Database (US-only).  
 
     The LRN (Local Routing Number) identifies the switch for a number and used to determine billing for a call.
