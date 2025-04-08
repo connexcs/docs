@@ -8,6 +8,22 @@ In this section, view all the configured **Conference** groups:
 + **Extension:** The dial-in numbers for callers to reach the Conference.
 + **Active Participants:** All callers who have joined the Conference.
 
+## Key Features
+
+1. Assign a unique conference name.
+2. Associate the conference with a specific customer.
+3. Use internal extension numbers for customers.
+4. Set a PIN for security.
+5. Select the audio quality (Narrowband - G711, Wideband, Ultra-Wideband).
+6. Define the maximum number of participants.
+7. Link a Direct Inward Dialing (DID) number to the conference
+8. Automatic internal routing for ease of access.
+
+!!! question "Why use the Conference feature?
+    1. Secure access through PIN.
+    2. High-quality audio options for better clarity.
+    3. Easy routing setup for internal and external participants."
+
 ## Edit Existing Conference
 
 1. Click on the existing Conference name to edit the following fields:
@@ -27,7 +43,8 @@ In this section, view all the configured **Conference** groups:
 
    + **Max Members:** Limit the number of concurrent callers this conference must allow.
   
-     **Note**: The preset of '0' Max Members allows an unlimited number of callers to join the conference.
+    !!! **Note**
+        The preset of '0' Max Members allows an unlimited number of callers to join the conference.
 
     ![alt text][conference]
 
