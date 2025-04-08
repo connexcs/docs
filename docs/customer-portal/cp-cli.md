@@ -35,6 +35,7 @@ Depending on how you want to route the calls, toggle a CLI between `Forced` and 
 <img src= "/customer-portal/img/cli1.png">
 
 6.You will receive a call for the **Verification Code**.
+
 7.Enter the verification code and the click **Verify Code**.
 
 <img src= "/customer-portal/img/cli2.png">

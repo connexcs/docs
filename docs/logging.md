@@ -6,6 +6,14 @@ The **Logging** function checks real-time call attempts, Session Initiation Prot
 
 As soon as a call hits the ConnexCS system, it will display in the Logging area. The majority of issue debugging takes place in the Logging section.
 
+**Why do need a Logging Section?**
+
++ **Efficient Debugging**: Helps identify and resolve system issues quickly.
++ **Call Flow Analysis**: Tracks call routing and detects irregularities.
++ **Security Monitoring**: Logs unauthorized access attempts and suspicious activities.
++ **Performance Optimization**: Provides insights into system performance and helps with fine-tuning configurations.
++ **Regulatory Compliance**: Maintains records for audits and compliance requirements
+
 ## Register Logging
 
 To view calls that are having issues registering, click **`Register Logging`**, and then click on a specific Call ID to view the [**Call Details**](https://docs.connexcs.com/logging/#call-id-details) and [**SIP Trace**](https://docs.connexcs.com/logging/#sip-traces).
@@ -39,6 +47,25 @@ The simulation call result will appear in logging. The Call ID will begin with a
 
     After you have fixed a routing issue with a specific call, you can go into the Call ID and run the Simulate tool to ensure any routing issues get resolved and the call is now successful.
 
+## Compare (Call IDs)
+
+**Compare Call IDs** refers to the process of analyzing two or more Call IDs to identify differences and similarities in their call logs.
+
+This comparison helps in diagnosing issues by examining factors such as switch, user agent, start time, CLI, end time,proocol, sip_code, sip_reason, port number etc.
+
+It's particularly useful for troubleshooting by highlighting discrepancies between successful and failed calls.
+
+### How to use?
+
+1. Login to your **Control Panel**.
+2. Navigate to **:material-menu-right: Logging**.
+3. Right click on the Call-IDs and click `Add to Compare`. <img src="/logging/comp11.png" width= "800">
+4. You also have the option to `Remove from Compare` to deselect the Call IDs.<img src="/logging/comp4.png" width= "800">
+5. A **Compare** field will appear on the right corner. <img src="/logging/comp22.png">
+6. Click `Compare`, a widow will appear where you need to select the Call IDs for comparison. <img src="/logging/comp3.png">
+7. Check `View only difference lines` to view only the parameters of call logs that differ between two Call IDs. <img src="/logging/comp5.png">
+8. Once the comparison is complete, you can `Clear Compare` to reset all the Call IDs comparisons.
+
 ## Searching the Logs
 
 To search the Logs, at the top-right of the Logging page, enter the search for calls by phone number, Call ID, or IP address into the text box and click **`Search`**.
@@ -49,7 +76,9 @@ Click on a specific Call ID to view details and run call tools.
 
 + **Call Details**: The initial screen shows current details, which include Routing Status, Authentication, Induced PDD (Post-Dial Delay), Real-time Transfer Protocol (RTP), Routing Engine ID, Dual-Tone Multi-Frequency (DTMF), and more information.
 
-    At the bottom, view the Providers, Billing details, and RTP information such as Jitter and Packet Loss.
+    At the bottom, view the Providers, Billing details, Graphs, and Logs of the respective call.
+
+    + **Graphs**: It will display parameters like Re=ound Trip Time, MOS, Jitter, and Packet Loss, only if the call experiences any of these issues.
 
 + **Raw Data**: Underlying data that populates the call.
   

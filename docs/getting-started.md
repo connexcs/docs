@@ -2,6 +2,8 @@
 
 The initial setup in ConnexCS will configure a single carrier, a single customer, and a single rate card.
 
+We Support an unlimited number of customers and recipients.
+
 !!! info "Changing the UI language"
     To change the display language for the UI, click your name in the upper-right corner and select [**Change Language**](https://docs.connexcs.com/changing-language/).
 
@@ -61,7 +63,14 @@ To verify a mobile number:
 
     ![alt text][verify-mobile]
 
-___
+### Other Fields to be verified
+
++ Company Registration
++ Company Details
++ Company Registration ID
++ Country
++ Address
++ VAT Registration ID
 
 ## Setup Personal Profile
 
@@ -143,6 +152,9 @@ Below are the steps to add a SIP extension:
 2. Click on the Auth menu item.
 3. Under SIP User Authentication, click on the `+` icon.
 4. Enter a username and password, then press the `Save` button.
+
+!!! Warning
+    We **block IP addresses** upon SIP authentication failures to enhance security.
 
 ### Payments
 

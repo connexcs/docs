@@ -8,6 +8,14 @@ It's a next-generation solution for the Edge Session Initiation Protocol (SIP).
 
 It provides high-reliability and custom Call Distribution algorithms (Weights and Priorities).
 
+Each customer benefits from a unique, dedicated IP address through AnyEdge
+
+Calls are routed to the nearest AnyEdge server for optimal performance and reduced latency.
+
+!!! Info "AnyEdge Features"
+    1. We provide 10,000+ CPS to all customers for optimal scalability and performance.
+    2. All our customers benefit from 100Gbps DDoS protection.
+
 ## AnyEdge Setup
 
 ### Configure AnyEdge
@@ -52,6 +60,12 @@ Click the :material-plus: button to set the following:
 * **Secondary Attempts**: (not useful for less than 3 servers) Set the number of attempts before going to a third zone.
 
 <img src= "/anyedge/anyedge12.png">
+
+!!! Note "Increase AnyEdge Ports"
+    1. Login to your account.
+    2. Navigate to **Setup :material-menu-right: AnyEdge :material-menu-right: blue `+` icon :material-menu-right: modify CPS limit**.
+
+    <img src= "/anyedge/any45.png">
 
 ### AnyEdge Domain
 

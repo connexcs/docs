@@ -58,6 +58,8 @@ It typically provides a self-contained interface for collecting additional infor
 |`myDialog.open()`|Opens the dialog box on the page|
 |`this.getValues`|Gets the current values of all fields|`() : Object`|
 |`myDialog.close()`|Closes the dialog box on the page|
+|`this.$('dailogID.othercomponentID').disable()`|Disable dialog from user interaction|`(fields: String`&#124;`String[])`|
+|`this.$('dailogID.othercomponentID').enable()`|Enable dialog from user interaction|`(fields: String`&#124;`String[])`|
 
 #### Steps to use the methods for the Page Builder components
 
