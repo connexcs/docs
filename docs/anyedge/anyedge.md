@@ -79,6 +79,9 @@ It can provide added **Transport Layer Security (TLS)/ Secure Sockets Layer (SSL
 
 <img src= "/anyedge/anyedge13.png">
 
+!!! Info "Custom TLS Ciphers & Curves"
+     ConnexCS AnyEdge supports custom TLS ciphers, cryptographic algorithms and elliptic curves, allowing administrators to precisely configure security protocols and ensure compatibility with specific client or server requirements.
+
 ### AnyEdge Destinations
 
 Click :material-plus: button to specify the Destination IP, and one or more Limit (Primary) and Backup (Secondary) Zones.

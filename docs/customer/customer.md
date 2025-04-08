@@ -2,7 +2,89 @@
 
 **Management :material-menu-right: Customer**
 
+## Platform Intelligence
+
+Before setting up your customers, let's take a moment to understand the powerful intelligence built into the ConnexCS platform.
+
+ConnexCS stands out as an intelligent platform in the telecommunications domain through the integration of several sophisticated features.
+
+At the core lies **[ASR+](https://docs.connexcs.com/customer/routing/#answer-seizure-ratio-plus-details)**, a technology that continuously analyzes call data to identify and filter out known bad numbers.
+By learning from real-time call outcomes, ASR+ proactively prevents calls to unreachable destinations, minimizing wasted resources and significantly improving call success rates.
+
+[ConnexCS AnyEdge](https://docs.connexcs.com/anyedge/anyedge/) acts as a **high-performance load balancer and traffic dispatcher**. This intelligent component distributes traffic seamlessly across multiple SIP servers, ensuring optimal resource utilization and minimizing latency.
+AnyEdge also offers customizable call distribution rules, allowing businesses to prioritize critical calls and optimize routing for specific customer segments.
+
+ConnexCS incorporates **[Spam Scout Scoring](https://docs.connexcs.com/guides/spam-callsblock/#64-using-spam-scout-scoring)**. By providing options to block calls based on spam score. Spam Scout effectively reduces the impact of spam calls on network resources and enhances the user experience.
+
+Complementing Spam Scout is **[IPQS](https://www.ipqualityscore.com/)**. It also blocks the calls based on the spam score. The spam score is provided by a third party IPQS.
+
+By proactively managing traffic, enhancing call quality, and improving network security, ConnexCS empowers businesses to optimize their telecommunications operations, reduce costs, and deliver a superior customer experience.
+
+The combination of intelligent capabilities positions ConnexCS as a leading-edge solution in the telecommunications industry, providing businesses with a competitive advantage in today's dynamic market.
+
+## Customer functions
+
 You can organize ConnexCS **Customers** through customer cards.
+
+![alt text][customers]
+
+!!! question "How many customers can I add?"
+    You can add unlimited customers, and we won't charge per customer, only on their individual usage.
+
+On the **Customers** page, you can perform several management operations.
+
+By clicking on `+` button we can add customer (see [**Create Customers**](https://docs.connexcs.com/customer/customer/#create-customers) below for details.)
+
+**Refresh**: Refreshing the page, helpful when making edits or looking at real-time changes. This page is built as a web app, so some information will update automatically.
+
+**SQL**: The **SQL Query** option allows you to run a query.
+
+**Bulk Upload**: Upload several Customers at the same time, by importing a spreadsheet file (.csv file) into ConnexCS.
+
+1. Click `Bulk Upload`, then `Upload`, find your customer file, and then click **`Open`**.
+2. Right-click on the second row and select **Start Row** to show the first line of data (the first row is typically column headers).
+3. Right-click on each column to **Map Columns** to appropriate fields.
+4. Once you have filled out all the required fields, click **Upload to Server**.
+
+!!! note "Note"
+    1. Before uploading the .csv file, please ensure  that it doesn't contain any exponential or scientific notations. The inclusion of the notations will result in errors.
+
+    2. You must include the **Customer name** and **Currency** as necessary columns in the.csv file for bulk uploading.
+
+**Bulk Edit**: Select several customers, then click **Bulk Edit** to revise fields such as Channels, Status, Flow Speed (CPS), Portal Access, and Country.
+
+**Delete**: Delete several customers at a time.
+
+**?**: Link to the documentation of the current page.
+
+**Send**: ConnexCS includes email and SMS support for your customers.
+
+1. Select several customers using the tick-box selector on the left side of each row. (Customers aren't visible to each other in the sent message.)
+2. Click on "Send" at the top right then choose email or SMS.
+3. Fill in the Subject line and body details and send.
+      + Emails sent FROM the email address gets populated in Setup > Settings, and TO every email address listed in Contacts for each customer.
+      + Each contact receives an SMS to their Mobile number.
+      + Refer ConnexCS: This feature allows you to send simple ConnexCS Referrals to you customers.
+        + You can send referrals to multiple **Customers**.
+        + You can select the **Template** from the drop-down list.
+        + Enter the **Subject**.
+        + Write the Body of the referral.
+        + Click on `Send`.
+  
+<img src= "/customer/img/referral.png">
+
+!!! note "Custom Email Servers"
+    Change the outbound Email Server and SMS origination number in **Setup :material-menu-right: Settings**.
+
+**Active**: Filter customer(s) based on account status. Results on the page will automatically arrange themselves according to the filter.
+
+&emsp; ![alt text][customer-status]
+
+## Customer View Modification
+
++ **Columns** pop out on the right and allows you to add /  remove options, and change column order, for some cases you can create row groups and total values for pivot functionality.
++ **Filters** pop out on the right and allows you to filter your customers.
++ Adjust Column ordering
 
 ## Create Customer
 

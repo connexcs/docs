@@ -219,3 +219,46 @@ To configure Users to access the Customer Portal, follow the steps to [**Add Con
 Any Contact configured on the account can login to the Customer Portal.
 
 [portal]: /setup/img/portal.png "Portal"
+
+## Multi Brand Support
+
+By leveraging a single ConnexCS account, customers can seamlessly run multiple brands, each with its own distinct identity and customer base.
+
+It's achieved by deploying independent customer portals tailored to the specific needs and preferences of each target market.
+
+### **Key Benefits**:
+
++ **Enhanced Market Penetration**:
+
+Effectively reach and engage customers across various market segments, such as residential, business, wholesale, and international, with tailored offerings and pricing strategies for each.
+
+Enter new markets and capture new customer bases without the overhead of managing separate infrastructure or systems.
+
++ **Improved Customer Segmentation**:
+
+Maintain clear separation between customer groups, ensuring data privacy and preventing cross-contamination of services.
+
+Deliver personalized experiences to each customer segment with customized features, pricing plans, and support channels within their dedicated portal.
+
++ **Increased Profitability**:
+
+Develop and implement distinct pricing and service packages for each brand, maximizing revenue generation from each customer segment.
+
+Reduce operational costs and improve efficiency by managing multiple brands from a single, centralized platform.
+
++ **Enhanced Brand Differentiation**:
+
+Preserve the unique identity and brand image of each brand within the ConnexCS ecosystem.
+
+Foster stronger customer loyalty by providing a seamless and personalized experience for each brand's customer base.
+
+### ConnexCS Multi-Brand Management empowers businesses to:
+
++ **Operate on all levels of the market**:
+  From SMBs to enterprises and wholesale, effectively serve diverse customer needs with tailored offerings.
+
++ **Maximize revenue potential**:
+  Capture a larger market share and increase profitability by effectively targeting and serving distinct customer segments.
+
++ **Gain a competitive edge**:
+  Differentiate themselves in the market by offering a unique and personalized experience to each customer segment.
