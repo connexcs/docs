@@ -213,7 +213,7 @@ To change Revision status:
   
 + **Contract**: Specify a default contract that applies to a specific rate card. This only applies if the customer selects the rate card from the Customer Portal, not when it's added using the Dashboard.
 
-!!! Warning "When a contract is linked to a specific rate card, customer approval is mandatory. Failure to approve the contract will result in the customer being unable to access or use the associated rate card."
+!!! Warning "When a contract is linked to a specific rate card, customer approval is mandatory. Failure to approve the contract will result in the customer being unable to use the associated rate card."
 
 + **Manual Ordering**: Allow granular ordering of specific prefixes and which carriers to use. See [**Manual Ordering**](https://docs.connexcs.com/customer-ratecard/#manual-ordering-tab) below for details.
   

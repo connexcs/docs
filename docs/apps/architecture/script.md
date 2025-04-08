@@ -264,9 +264,9 @@ function main(data) {
 
 ## Script Forge Background Job Queue Support
 
-You can access and view background jobs running through Script Forge, since Script Forge has access to Queue.
+You can access and view background jobs running through Script Forge.
 
 1. You can view the jobs under Global :material-menu-right: Queue. <img src= "/apps/img/job1.png">
-2. Click on the job `Name`  to view the status or add a new job.
+2. Click on the job `Name`  to view the status.
 
 <img src= "/apps/img/job2.png" width= "200">
