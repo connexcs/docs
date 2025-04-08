@@ -261,3 +261,12 @@ function main(data) {
 
 [s2]: /developers/img/176.png "s2"
 [s8]: /developers/img/183.png "s8"
+
+## Script Forge Background Job Queue Support
+
+You can access and view background jobs running through Script Forge.
+
+1. You can view the jobs under Global :material-menu-right: Queue. <img src= "/apps/img/job1.png">
+2. Click on the job `Name`  to view the status.
+
+<img src= "/apps/img/job2.png" width= "200">

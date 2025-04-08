@@ -229,6 +229,7 @@ nav:
         - General Data Protection Regulation: guides/gdpr.md
         - Call Detail Record Retention: guides/cdr-retention.md
         - Spam Protection Features: guides/spam-callsblock.md
+        - Channel Limitation Settings: guides/channel-limitations.md
         - Some Interesting Features: makecall.md
     
     - Troubleshooting: 
