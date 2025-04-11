@@ -59,8 +59,8 @@ markdown_extensions:
 nav:
   - Cloudswitch:
     - Home: index.md
-    - Getting Started: getting-started.md
     - Customer Support: reporting-problems.md
+    - Getting Started: getting-started.md
     - Dashboard : dashboard.md
 
     - Customer:
