@@ -151,8 +151,6 @@ For detailed instructions on carrier setup, see [**Carrier**](https://docs.conne
 
 You can authenticate a customer using SIP Username and Password.
 
-You can also use `Digest Authentication`.
-
 Below are the steps to create a SIP user:
 
 1. Select the customer to authenticate.
@@ -227,7 +225,7 @@ For detailed server configuration, see **[Servers](https://docs.connexcs.com/set
 
 [Click here for video playback.](https://www.youtube.com/watch?v=QSagrJ1redI)
 
-## Additional Otions
+## Additional Options
 
 ### Timezone Settings
 
@@ -239,7 +237,7 @@ Click **`Update`** to apply changes.
 
 + **Help Buttons**: Throughout the platform, you'll find question mark icons. Click on them to access relevant documentation that can guide you.
 
-### **Account Balance**
+### Account Balance
 
 **View Balance**: Your current account balance is displayed here.
 To make a payment, click on the balance, and you’ll have the option to pay via `PayPal` or `credit card`.

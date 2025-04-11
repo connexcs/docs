@@ -3,8 +3,6 @@ ConnexCS User Documentation
 
 Welcome to the **ConnexCS User Documentation**, your comprehensive guide to understanding and utilizing **Connex Carrier Services**. Whether you are a new or experienced user, this documentation provides essential resources for setup, configuration, monitoring, and troubleshooting.
 
-Before we dive in, it's crucial to grasp the full context before we get started:
-
 ConnexCS is a cloud-based switching platform that enables seamless VoIP and telecom solutions. Our services include:
 
 + **CloudSwitch** – A powerful cloud-based softswitch that ensures high availability, scalability, and real-time traffic management.
@@ -45,7 +43,7 @@ With every new release and update, we ensure our documentation remains up-to-dat
 
 ## Need More Information?
 
-If there’s a topic that requires more attention, feel free to submit a documentation request.
+If there’s a topic that requires more attention, feel free to [submit](https://connexcs.com/doc-contribution) a documentation request.
 
 Your feedback helps us improve and enhance our resources for a better user experience.
 

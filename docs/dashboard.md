@@ -2,8 +2,6 @@
 
 The ConnexCS **Dashboard** provides a real-time overview of active customers, channels, and key system metrics. It includes interactive elements for monitoring traffic, analyzing trends, and customizing data displays.
 
-For detailed account and customer activities, use the Menu system on the left.  
-
 ## Overview
 
 + Displays a summary of Live Channels, Active Customers, Carriers, and Rate Cards.
@@ -16,13 +14,11 @@ For detailed account and customer activities, use the Menu system on the left.
 
 ### Channels
 
-Table view of configured **Customers**, **Carriers** and **DIDs** sorted by Channels in Use (highest and lowest).
+Table view of active channels for **Customers**, **Carriers** and **DIDs** sorted by Channels in Use (highest and lowest).
 
 ### Live Channels
 
-Diaplays the number of active channels in real time through a **Graph**.
-
-Option to view the maximum channel value across all servers.
+Displays the number of active channels in real time through a **Graph**.
 
 ### Graphs
 
@@ -56,26 +52,16 @@ With this new feature, you can view parameters
 
     <img src= "/misc/img/dash6.png">
 
-## Customization & Interaction
+## Customization
 
-+ Fully Customizable
++ Fully Customizable using [Custom Pages](https://bani-ankmeg--connexcs-docs.netlify.app/setup/settings/options/)
 
 + Users can modify and integrate analytics into the dashboard.
 
 + New reports and insights can be pushed dynamically.
-
-+ Interactive Features include:
-
-  + Zoom into graphs using the scroll wheel.
-  + Refresh graphs for updated data.
-  + Multi-select functionality:
-  + Select All / Deselect All options.
 
 This structured dashboard guide ensures customers can effectively monitor system performance, analyze data, and customize their experience with ConnexCS.
 
 [top of page]: /misc/img/topofpage.png "Top of Page"
 [dashboard]: /misc/img/dashboard.png "Dashboard"
 [profit]: /misc/img/profit.png "Graph Actions"
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDM0MTgyODBdfQ==
--->
