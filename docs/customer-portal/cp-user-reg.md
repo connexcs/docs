@@ -9,3 +9,4 @@ View active registrations (live calls):
 + **TTL:** Time to live (TTL) is the time since request came in.
 + **Last Modified:** The time of the last state change for the call.
 + **User Agent:** The end device used by the **Username** above.
++ **Contact**: The SIP Contact header received from the registration request sent by the client to our server.
