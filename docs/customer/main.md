@@ -6,7 +6,7 @@ The first tab in a Customer account is **Main**.
 
 As the name suggests it allows you to manage the critical customer functions.
 
-It provides essential tools to manage customer accounts, contacts, authentication, and internal number allocation.
+It offers a comprehensive set of tools to manage customer accounts, including the addition of customer contacts, invoice generation, summary reporting, and internal number allocation.
 
 !!! Question "Why and When do we need the **Main** section?"
     1. **User-Friendly & Flexible System**:
@@ -112,11 +112,6 @@ Click **:material-plus:** to the right of **Contacts**.
 * **Private Notes**: Display in the Control Panel and its internal-only for administrative purposes.
 
 * **Mobile Verified** and **Email Verified**: Manually set the status for each. Check in the Customer Details to confirm if the Mobile and Email are verified. Alternatively, the customer can do this in the Customer Portal.
-
-    !!! Note "Account Verification"
-        1. Email and mobile verification options are available.
-        2. Verification confirms the correctness of contact details.
-        3. System prompts for manual confirmation of the email address.
 
     ![contact details](/customer/img/maincontactdetails.jpg)
 
