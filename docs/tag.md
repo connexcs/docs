@@ -2,7 +2,7 @@
 
 **Management :material-menu-right: Tags**
 
-A **Tag** refers to a label or keyword used to categorize or identify something.
+It's a dynamic label which links Routes, Alerts, CLI rules to customers by automatically applying tagged configuration when the same tag is assigned to a customer.
 
 With the help of tags, you may generate global Alerts, Routing, and CLI information. Following the creation of the Tags, you can tag your clients in the Alert, Routing, or CLI Strategy.
 

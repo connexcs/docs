@@ -2,7 +2,7 @@
 
 **Management :material-menu-right: Customer**
 
-The **Customer**  section will help you navigate the key functionalities of our system, from adding customers to configuring settings, managing invoices, and understanding audit logs.
+The **Customer** section will help you navigate the key functionalities of our system, from adding customers to configuring settings.
 
 Follow the sections below to get started.
 
@@ -42,13 +42,6 @@ The following sections will appear when you click on the `blue +` sign.
     + **Tags**: Use this to add meta-data identifiers to a customer. If a customer routing is created using a template from [**Global Routing**](https://docs.connexcs.com/global-routing/), this will be the tag configured in the template. Used to apply global routing rules to customers.
     + Vars<sup>[**TOML**](https://en.wikipedia.org/wiki/TOML)</sup>: This is a data storage mechanism for configuration, similar to INI files. It allows you to create advanced customization to set values, etc, for Script Forge to reference later. 
     + **Reseller**: Allows customers to manage sub-accounts and grant controlled access to their resellers.
-    This ensures proper call routing, access restrictions, and rate card management.
-    Associate the customer to a preset Reseller Group (see [**Create Groups**](https://docs.connexcs.com/setup/
-    settings/users/#create-groups) for more details.)
-        + The reseller can manage multiple customers under their account.
-        + Resellers can have controlled access to rate cards, customer accounts, and billing.
-        + Each reseller sees only the customers and rate cards assigned to them.
-        + Resellers can sell traffic to their own customers and manage billing.
     + **Account Manager**: Designating the control of this account to a specific user.
     + **Invoice Schedule**: Specify frequency for invoice generation like Daily, Weekly or Monthly.
     + **Flags**: Select the **Create Invoice on Payment** flag and if payment done then invoice will be generated.
