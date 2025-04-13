@@ -32,7 +32,7 @@ Click on either the Route **`Name`** or **`Prefix`** to view and change the foll
     The call gets terminated if it doesn't receive back, or told that the conversation isn't active.
 
     |Option| Result|
-    |--------------------------------|:--------------------------------------------------|
+    |------|:------|
     | **Disabled**| No SIP pings sent.|
     | **Enabled (Both Sides)**| SIP pings sent in both directions.|
     | **Enabled (Downstream Only)**| SIP Pings sent towards where the call is FROM (originated).|
@@ -52,6 +52,8 @@ Select this option to view prefix and billing details:
 + **Prefix:** The part of the dialled number that must match to trigger the use of the card.
 
 + **Name**: Optional name for the card.
++ **Channels**: Allocated number of channels.
++ **CPS**: Allocated flow speed. 
 
 + **Cost (or Indeterminate):**  Refers to international calls, Toll Free (800, 888, etc) numbers, or anything else that's neither Inter or Intra.
 
