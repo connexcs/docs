@@ -115,14 +115,14 @@ To grant access to functions for an AI agent, follow these steps:
    !!! Example "Example Function"
 
         ```js
-        /**
-          * Transfer
-          * @param {Object} param - Param Object
-          * @param {string} param.name - The name of the person who you wish to transfer the call to.
+            /**
+             * Transfer
+             * @param {Object} param - Param Object
+             * @param {string} param.name - The name of the person who you wish to transfer the call to.
             */
-        function transfer() {
+            function transfer() {
             return { action: 'transfer', destination: '160' }
-        }
+            }
         ```
 
 4. **Assign the App to the AI Agent**:
