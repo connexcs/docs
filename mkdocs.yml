@@ -253,7 +253,8 @@ nav:
     - Latest Calls: customer-portal/cp-latest-calls.md
     - Dialogs: customer-portal/cp-dialogs.md
     - User Registration: customer-portal/cp-user-reg.md
-    - PBX: 
+    - PBX:
+        - AI Agent: customer-portal/cp-ai-agent.md
         - Conference: customer-portal/cp-conference.md
         - IVR: customer-portal/cp-ivr.md
         - Group: customer-portal/cp-group.md
