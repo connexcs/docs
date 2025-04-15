@@ -29,10 +29,10 @@ With AI-driven automation, businesses can enhance customer experience while sign
 1. Login to your account.
 2. Navigate to **PBX :material-menu-right: AI Agent**.
 3. Click on the blue `+` icon.
-<img src= "/class5/img/cpai1.png">
+<img src= "/customer-portal/img/cpai1.png"> 
 4. A window will open up where you can create your customizable AI Agent for your customers.
-<img src= "/class5/img/cpai2.png">
-5. Fill in the following fields to setup your AI Agent:
+<img src= "/customer-portal/img/cpai2.png">
+1. Fill in the following fields to setup your AI Agent:
 
     + **Name**: Give a name to your AI Agent.
     + **Destination**: Enter the Extension for the callers to call (essentially, the dial-in number).
@@ -55,7 +55,7 @@ With AI-driven automation, businesses can enhance customer experience while sign
     + **App**: Associate the AI Agent with the [Application](https://docs.connexcs.com/apps/architecture/app/) that you have created in the IDE.
     + **End Call Phrases**: Phrases or messages used to conclude a call or interaction with a customer.
     + **Prompt**: The prompt field allows you to enter the set of instructions to guide the AI Agent to perform certain tasks. It provides as the foundation for the AI to comprehend the context, interpret the user's purpose, and generate relevant results.
-6. Click `Save`.
+2. Click `Save`.
 
 !!! Example "Example Prompt"
     **Introduction:**  
