@@ -248,6 +248,7 @@ nav:
     - Breakout: customer-portal/cp-breakout.md
     - Authentication: customer-portal/cp-authentication.md
     - DID: customer-portal/cp-did.md
+    - Contact Center: customer-portal/cp-contact-center.md
     - Invoice: customer-portal/cp-invoice.md
     - CLI: customer-portal/cp-cli.md
     - Latest Calls: customer-portal/cp-latest-calls.md
