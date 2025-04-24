@@ -10,74 +10,15 @@ It offers a comprehensive set of tools to manage customer accounts, including th
 
 !!! Question "Why and When do we need the **Main** section?"
     1. **User-Friendly & Flexible System**:
-          1. Guides customers in configuring their accounts to match their operational needs.
-          2. Offers customizable options such as number blocks, verification, and aliases.
+          1. Offers customizable options such as number blocks and verification.
     2. **Improved Organization & Accountability**:
-          1. Clearly defines how customers and their contacts are managed.
-          2. Ensures that every action taken by a contact is logged, improving traceability.
-    3. **Enhanced Security & Access Control**:
-          1. Allows multiple logins with unique credentials for each contact.
-          2. Provides authentication and password management options to secure customer access.
-    4. **Efficient Number Management**:
-          1. Explains how internal number blocks work to avoid conflicts.
-          2. Helps customers set up structured dialing plans for better call routing.
+          1. It helps in managing customer's contacts.
+          2. Allows multiple logins with unique credentials for each contact.
+          3. Provides authentication and password management options to secure customer access.
 
 ![alt text][cust-main]
 
 !!! note "By clicking the dropdown next to the             customer's   name, you will be redirected to the selected customer's portal. For more information, see [Access Customer Panel](https://docs.connexcs.com/customer/main/#access-customer-portal)."
-
-## Audit Log
-
-![alt text][audit-log]
-
-The **Audit Log**, or Audit Trail, is a chronological set of records that shows all changes performed on a system, software, or device including **timestamps** and **IP addresses**.
-
-It displays when the customer was created, all changes made, either directly by users or through the API. This includes all activity on the Control Panel and in the Customer Portal.
-
-**Displays HTTP verbs** (PUT, POST, GET, DELETE) for actions taken.
-
-Enables **viewing differences** between previous and current configurations.
-
-You can search using Account ID, Ingress ID, etc.
-
-!!!question "Why and when do you need to see audit logs"
-    1. Audit logs can offer rich insights about what caused downtime, loss of performance, and other unexpected issues.
-    2. An audit log is a primary source of information to investigate the causes of issues.
-    3. Provides proof of customer changes.
-    4. Prevents disputes about unauthorized setting modifications.
-
-### Columns
-
-| Column Name | Description|
-|-------------|------------|
-| **User** | User responsible for the events. An entry will display 'Portal' if you make a change there; all others were directly made in the Control Panel|
-| **IP** | IP address of the computer which performed the action (from where the IP was modified)|
-| **Date / Time** | Date / Time when the User made the change|
-| **Primary Key** | Unique ID of the record in the database that the User modified with this action|
-| **Action** | The action type performed: CREATE, DELETE, GENERATE, LOGIN, POST, PUBLISH, PUT, SEND, or UPDATE|
-| **Table**| The table in the database that the User modified|
-| **Message**| A simple message that defines what the user did|
-| **Data**| Click `View Difference` to see the fields changed, plus previous and current values. (Data displayed in JSON format.)|
-
-### View Difference
-
-In the Data column, select "View Difference" to view a popup containing a diff. This shows the data before and after the action.
-
-Here is an example of a View Data Difference pop-up for an action type = PUT.
-  
-   ![alt text][view-data-difference-audit-logs]
-
-### Supplementary Functions
-
-To view more details about the audit logs:
-
-* To search for a specific set of audit logs by the values in the columns, enter the search criteria in the Search box and press `Enter`.
-* To sort a column by the ascending or descending order of the values in the column, click the column header.
-* To filter the audit logs by one or more values in a column, click the 3-lines icon in a column, click the Funnel icon, and select or enter values.
-
-!!! tip "Data Synchronization"
-    To avert the impact of data synchronisation issues and get the latest set of audit logs, click **Refresh**, located at the top-right of the table.
- [view-data-difference-audit-logs]: /setup/img/view-data-difference-audit-logs.png "view-data-difference-audit-logs"
 
 ## Contacts
 
@@ -227,4 +168,3 @@ You can perform the following functions with this data:
 [audit-log]: /customer/img/audit-log.png "Audit Log"
 [reset-password]: /customer/img/reset-password.png "Reset Password"
 [main-tab]: /customer/img/41.png "Contact Details"
-

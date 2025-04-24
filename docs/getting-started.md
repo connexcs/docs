@@ -214,7 +214,7 @@ graph TD
 
 **Deploy Servers** using these instructions.
 
-1. Navigate to **Setup :material-menu-right: Settings :material-menu-right: Servers**:
+1. Navigate to **Setup :material-menu-right: Settings :material-menu-right: Servers**.
 2. Select **Deploy a Server**.
 3. Choose a server location.
 4. Enter a server name.
