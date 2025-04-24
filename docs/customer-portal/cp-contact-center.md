@@ -51,7 +51,8 @@ This auto dialer dials one number per available agent only after they finish the
 **Advantages**:
 
 + **Accuracy**: Reduction in dropped calls as calls are made only when agent is available.
-+ Better agent control
++ **Better agent control**: Agents aren't overwhelmed with back-to-back calls.
++ **Improved call quality**: 
 
 We start from creating an **Agent**
 
