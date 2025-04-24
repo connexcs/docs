@@ -38,10 +38,10 @@ To enable, click **:material-plus:** next to IP Authentication:
         
         :material-menu-right: **This endpoint receives calls**. This switch *receives* calls from ConnexCS. (Note: When selected, this gives the option of using the FQDN rather than the switch IP.)
         
-        :material-menu-right: **This endpoint receives calls**. This switch *sends* calls to ConnexCS.
+        :material-menu-right: **This endpoint sends calls**. This switch *sends* calls to ConnexCS.
         
     + **Channels**: Set the maximum number of concurrent calls for this switch. 
-    + **Flow Speed**: Set the Calls Per Second (CPS) (0 = unlimited calls). A value of zero represents unlimited.
+    + **Flow Speed**: Set the Calls Per Second (CPS) (0 = unlimited calls).
     
         <img src="/customer/img/basic12.png">
 
