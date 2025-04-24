@@ -100,32 +100,16 @@ The Internal Number Block ensures number allocations are managed efficiently.
 
 ### Key Features/Benefits
 
-1. **Namespace and Extension Management**: 
+1. **Namespace and Extension Management**:
 
-      1. The system can be multi-tenant (domain-based) or use number allocations.
-      2. Each customer operates within a unique namespace.
-      3. Duplicate extensions across multiple customers are prevented.
+      1. Each customer operates within a unique namespace.
+      2. Duplicate extensions across multiple customers are prevented.
 
 2. **Number Allocation**:
 
       1. **Without a Number Block**: Any extension can be added without restrictions.
       2. **With a Number Block**: Extensions must be chosen from a predefined range.
       3. Administrators can assign number blocks to specific users.
-
-3. **Organization of Extensions**
-
-    **Number blocks can be structured as**:
-
-    First few digits = **Company identifier**
-
-    Last few digits = **Extension identifier**
-
-    !!! Example
-        A company can dial 100 internally, while the system automatically appends the required prefix.
-
-4. **Routing and Aliases**
-      1. Calls can be routed automatically using number blocks
-      2. Alias functionality allows alternative ways to achieve the same result.
 
 ### Steps to implement Internal Number Block
 
