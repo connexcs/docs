@@ -61,6 +61,9 @@ With this new feature, you can view parameters
 + New reports and insights can be pushed dynamically.
 
 This structured dashboard guide ensures customers can effectively monitor system performance, analyze data, and customize their experience with ConnexCS.
+!!! Info " Download Control Panel Application"
+    To download our Control Panel Application. Click ![alt text](image-4.png) on your browser while you are logged into your account and hit Install.
+    <img src= "/customer/img/controlpanelapp.png">
 
 [top of page]: /misc/img/topofpage.png "Top of Page"
 [dashboard]: /misc/img/dashboard.png "Dashboard"

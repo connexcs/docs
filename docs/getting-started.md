@@ -5,6 +5,8 @@ We're excited to have you on board. This guide will walk you through the key fea
 
 Our platform is designed to streamline your communication and billing processes, making it easier for you to manage your customers, carriers, and rate cards.
 
+The initial setup in ConnexCS will configure a single carrier, a single customer, and a single rate card.
+
 To get started, the initial setup in ConnexCS will configure a single carrier, a single customer, and a single rate card, providing you with a base configuration that you can expand as needed.
 
 Whether you’re managing a few or scaling to an unlimited number of customers and recipients, ConnexCS supports seamless growth, offering flexibility and robust features to meet your business requirements.
@@ -161,7 +163,6 @@ Below are the steps to create a SIP user:
 !!! Warning
     We block IP addresses upon SIP authentication failures to enhance security.
 
-[Click here for video playback.](https://www.youtube.com/watch?v=hGlXb0opRsE)
 
 ##### Payments
 
