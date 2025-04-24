@@ -22,7 +22,7 @@ Displays the number of active channels in real time through a **Graph**.
 
 ### Graphs
 
-With this new feature, you can view parameters
+With this new feature, you can view parameters:
 
 + **Channels** (historical data).
 + **CPS** (calls per second).
