@@ -133,14 +133,52 @@ Next, proceed to the Customer Portal to review the Contact Center application's 
    7. **Calls Ringing**: Total number of calls initiated but not answered yet.
    8. **Data Remaining**: Shows the number of contacts left to be dialed.
 
-<img src= "cc8.png">
+!!!! Note "Please Note"
+    1. `Agents Waiting`, `Agents in Call`, `Calls Ringing`, and `Active Calls` are the stats only for the **Auto Dialer**.
+    2. `AI Calls Ringing`, `AI Calls Active`: These stats are only for **Broadcast Dialer**.
+    3. `Agents Logged In`, `Agents Paused`, `Data Remaining` for **all three dialers**.
 
-4. **Campaign Overview**: Summarizes ongoing campaigns, including active calls, answered calls, and failed calls.
+<img src= "cc9.png">
 
+=== "Campaigns"
 
-### Step-II(a): Setup Auto Dialer
+    Summarizes ongoing campaigns, including parameters like status, campgain type, source status, CPS, Channels etc. You also have an option to **[Add Campgain](add link)**.
 
+    <img src= "cc10.png">
 
+=== "Agents"
+
+    Summarizes ongoing agent activity, displaying parameters like status, SIP profile, protocol, bandwidth, CPS, channels, dial pattern, and other SIP metrics.
+    You can also upload agents in bulk uing [Create Bulk Agents](add link).
+
+    <img src= "cc11.png">
+
+=== "Script"
+
+    Displays all the created scripts in the Contact Center. You can also [Add a New Script](add link). 
+
+        <img src= "cc12.png">
+
+=== "Leadset"
+
+    Manages leadsets for outbound campaigns, showing parameters like name, associated campaign, status, and description.
+    You can also create new leadsets individually or upload them in bulk using [Create Leadset](add link).
+
+   <img src= "cc13.png">
+
+### Step-II: Setup Dialers 
+
+You can configure multiple dialers based on your specific campaign requirements.
+
+#### Preview Dialer
+
+1. Navigate to **Customer Portal :material-menu-right: Contact Center**.
+2. In the `Campgains` tab, click `Add Campgain`. <img src= "cc14.png">
+3. A Window will pop-up  with two sections:
+   1. **Basic Info**:
+      1. **Name**: Enter the Campgain name.
+      2. **Campgain Type**: From the drop-down select `Preview Dialer`.
+      3. **Agent Script**: Select any pre-defined script for the agent to say before to the customers.
 
 
 
