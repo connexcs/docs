@@ -90,6 +90,7 @@ Best for: Complex or high-value calls where agents need context (e.g., sales or 
 + Agents align calls to customer needs.
 
 **Cons**:
+
 + Slower pace.
 + Fewer calls per hour as compared to Auto Dialer.
 + Skips Lead Automation.
@@ -107,6 +108,9 @@ Best for: Complex or high-value calls where agents need context (e.g., sales or 
 4. Modify the `App Name` (optional) and select the app `Version` (optional). Click `Install`. <img src= "cc3.png">
 5. Click on `Config`. <img src= "cc4.png">
 6. A window will pop-up where you need to select the `User API`, `Class 5 Server` and `Class 4 Server` and hit the `Next Step` button. <img src= "cc5.png">
+
+!!! Note "Important Note"
+    Make sure to select a **Class 4 server** where **WebRTC** and **TLS** are enabled.
 7. Select a pre-loaded database or click on `Continue With New Database`. [Click here](https://docs.connexcs.com/datasuite/) to follow the steps for database creation. Click `Confirm`. <img src= "cc6.png">.
 8. **Adding the Domain**
    1. Navigate to **IDE :material-menu: Select the Contact Center App (you created) :material-menu: Domain**. Click on `Domain`. <img src= "cc7.png">
@@ -114,9 +118,11 @@ Best for: Complex or high-value calls where agents need context (e.g., sales or 
    3. Select the `App` and enter the `domain` for your dialer. Click `Save`. <img src= "cc8.png">
    [Click here](https://docs.connexcs.com/apps/architecture/domain/) to get more information on domains.
 
+!!! Note ""An internal number block range is required to create agents."
+
 After following the above step, we've successfully installed the Contact Center application.
 
-Next, proceed to the Customer Portal to review the Contact Center application's setup process and understand its operational workflow.
+Next, proceed to the **Customer Portal** to review the Contact Center application's setup process and understand its operational workflow.
 
 ### Dialer Dashboard: Features and Functions
 
@@ -182,9 +188,9 @@ You can configure multiple dialers based on your specific campaign requirements.
       4. **State**: Configure the campaign's operational status by setting it to either `Active` (currently available for use) or `Inactive` (disabled or paused).
       5. **Notes**: An optional field to pen down any important information.
    2. **Config**:
-      1. **Caller ID**:
-      2. **Source Status**:
-      3. **Outbound Multiplier**:
+      1. **Caller ID**: The `CLI` used for this campaign.
+      2. **Source Status**: Select `Ready`/`New` or Custom Source Staus for call origination. If no status is selected the calls won't be sent.
+      3. **Outbound Multiplier**: It controls how many outbound calls your system (or agent/reseller) can make at the same time.
       4. **Custom Disposition**: A user-defined set of call outcome labels that agents are required to select after each call, enabling structured tracking, systematic reporting, and optimized follow-up workflows. <img src= "cc15.png">
              1. `Agent Unavailable`: Call was made but hung up due to agent being busy (mostly in auto dialers.
             2. `Answered`: Call is connected.
@@ -196,7 +202,7 @@ You can configure multiple dialers based on your specific campaign requirements.
             8. `In Progress`: Call data is being allocated.
       5. Click on the `Confirm` button.
         !!! Note
-            `DO NOT CALL`, `NOT INTERESTED`, `SALE MADE`, `CALL TRANSFERRED`, `BUSY`, `CALL BACK`, `DISCONNECTED NUMBER`, `DECLINED SALE`, `WRONG DETAILS` —Predefined Disposition Statuses.
+            `DO NOT CALL`, `NOT INTERESTED`, `SALE MADE`, `CALL TRANSFERRED`, `BUSY`, `CALL BACK`, `DISCONNECTED NUMBER`, `DECLINED SALE`, `WRONG DETAILS` — Predefined Disposition Statuses.
             Users can create custom source statuses and dispositions while creating or updating campaigns.
    3. Click on `See More` in the `Details` column.
       1. A `Campaign Overview` will open. This interface is used for real-time monitoring of campaigns, lead stats, agent statuses, and calling activity. <img src= "cc15.png">
@@ -248,8 +254,8 @@ You can configure multiple dialers based on your specific campaign requirements.
             5. Upload your data via `File`, `URL` or by entering the `Text`.
                1. **File**: Drag and Drop a file or click to upload the `.csv`. <img src= "cc25.png">
                   1. A new window will open where two actions must be completed to create the leadset. <img src="cc26.png">
-                  2. `Set row`: To indicate where the uploaad should start. `Right-click` on the row to want to start the uploading and click on `Set Start Row`. <img src="cc27.png">
-                  3. `Map Table Columns`: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. `Right-click` on the column you wish to be mapped, click on `Map Column` then `Key`. Click on `Upload`. This will upload the leadset data to the server. <img src="cc28.png">
+                  2. `Set row`: To indicate where the upload should start. `Right-click` on the row to want to start the uploading and click on `Set Start Row`. <img src="cc27.png">
+                  3. `Map Table Columns`: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. `Right-click` on the column you wish to be mapped, click on `Map Column` then `Phone` and `Status`. Click on `Upload`. This will upload the leadset data to the server. <img src="cc28.png">
                   4. UPLOAD WASN't NOT SUCCESSFUL. SO TRY AFTER LISTENING TO THE VIDEOS.
                2. **Uploading via URL**: Enter the URL in the CSV format and hit the Upload button. <img src="cc29.png">
                      1. A new window will open where two actions must be completed to create the leadset. <img src="cc26.png">
@@ -262,7 +268,7 @@ You can configure multiple dialers based on your specific campaign requirements.
 
                     ```bash
                         Column 1,Column 2,
-                        Number, Ready
+                        Phone, Status
                         44116, Ready
                         44117, Ready
                         44118, Ready
@@ -272,7 +278,7 @@ You can configure multiple dialers based on your specific campaign requirements.
                     3. A new window will open where two actions must be completed to create the leadset. <img src="cc26.png">
                     4. `Set row`: To indicate where the uploaad should start. `Right-click` on the row to want to start the uploading and click on `Set Start Row`. <img src="cc27.png">
                     5. `Map Table Columns`: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. `Right-click` on the column you wish to be mapped, click on `Map Column` then `Key`. Click on `Upload`. This will upload the leadset data to the server. <img src="cc28.png">
-                    6. UPLOAD WASN't NOT SUCCESSFUL. SO TRY AFTER LISTENING TO THE VIDEOS.
+                    6. The successful upload can be seen in the image. <img src="cc36.png">
             6. `Continue to Modify`: If you click here, it will redirect to ConnexCS's Data Sure. [Click here](https://docs.connexcs.com/datasuite/) to know more.
         1.  **Edit Leadset**: Modify the details of an existing Leadset. The system will present the same interface as `Create Leadset`.
         2.  **Add Lead (Form)**: Manually add a lead via a form. <img src="cc31.png">
@@ -284,11 +290,30 @@ You can configure multiple dialers based on your specific campaign requirements.
         5.  **Disposition Status**: Shows a pie chart for all the call disposition outcomes. Each colored section of the pie chart corresponds to one of these dispositions.
         6.  **Lead Agents Activity**: It displays performance stats of individual agents. The metrics include `Call Transfered`, `Busy`, `Call Back`, `Do Not Call`, `Not interested`, `Null`, `Sale made`, `Wrong details` etc.
 
+With your Campaign, Agents, Agent Script, and Leadset configured, the next step is to access the **Agent Dialer** to start placing calls.
 
+### Step-III: Setup Dialers 
 
+1. Enter the domain as entered in the **IDE** in [Step-I](add link). The screen will prompt the agent to enter the `Username` and `Password`. Click on `Login`. <img src="cc37.png">
+2. Select the campaign from the drop-down menu and click `Confirm`. <img src="cc38.png">
+3. An Agent Dialer interface with the following fields will appear:
+   1. `Selected Campgain` from the drop-down menu.
+   2. `Keypad` for dialing the numbers.
+   3. `Script`: Displays the call script the agent should follow.
+   4. `Logout` for the agent to log off from the system. <img src="cc38.png">
+   5. `Contact information` from the leadset.
+   6. `Lead Preview`: Opens lead details for the agent. [GET IMAGE AFTER CORRECTION]
 
+**Broadcast:**
+1. Channels: Number of channels allocated to this campaign.
+2. Internal Destination: Which AI agent will take the calls in this campaign. kaunsa AI agent active rakhna hai.
 
+**Auto Dialer**:
+Note: The next call will go through after 30 seconds.
 
+Toggle the status switch to make the agent offline.
+
+called id: 12345
 
 
 
