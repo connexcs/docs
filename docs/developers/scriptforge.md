@@ -86,9 +86,13 @@ Second parameter is a ctx object
 
 ``` js
 function main (data = {}, ctx) {
- // ctx contains class 5 ctx object 
+ // ctx contains class 5 ctx object (1)
 }
 ```
+
+1.  :man_raising_hand: I'm a code annotation! I can contain `code`, __formatted
+    text__, images, ... basically anything that can be written in Markdown.
+
 
 !!! warning "Potential Sync Issues"
     To avoid the system losing synchronisation with your script and the connection crashing, execute ALL async functions with `await`.
