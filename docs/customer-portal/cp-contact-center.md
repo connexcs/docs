@@ -106,7 +106,7 @@ You can create your own personal AI Agent with ConnexCS. [Click here](https://do
 
 !!! question "How it works?"
     ```mermaid
-        flowchart TD
+    flowchart TD
         style A fill:#F3E5F5,stroke:#6A1B9A,stroke-width:2,rx:10,ry:10
         style B fill:#E8F5E9,stroke:#2E7D32,stroke-width:2,rx:10,ry:10
         style C fill:#FFEBEE,stroke:#C62828,stroke-width:2,rx:10,ry:10
@@ -118,7 +118,7 @@ You can create your own personal AI Agent with ConnexCS. [Click here](https://do
         C --> D(["📝 AI logs outcome:<br/>- Call summary<br/>- Sentiment<br/>- Disposition<br/>- Optional transcription"])
         D --> E(["🔄 Moves to next contact automatically"])
         E --> B
-        ```
+
 **Pros**:
 
 + High speed and efficiency — thousands of calls per hour.
@@ -140,18 +140,20 @@ You can create your own personal AI Agent with ConnexCS. [Click here](https://do
 3. Click on the **Contact Center** application. Click on `Install`. <img src= "/customer-portal/img/cc2.png">
 4. Modify the `App Name` (optional) and select the app `Version` (optional). Click `Install`. <img src= "/customer-portal/img/cc3.png">
 5. Click on `Config`. <img src= "/customer-portal/img/cc4.png">
-6. A window will pop-up where you need to select the `User API`, `Class 5 Server` and `Class 4 Server` and hit the `Next Step` button. <img src= "/customer-portal/img/cc5.png">
+6. A window will pop-up where you need to select the `User API`, `Class 5 Server` and `Class 4 Server` and hit the `Next Step` button. <img src= "/customer-portal/img/cc5new.png">
 
 !!! Note "Important Note"
     Make sure to select a **Class 4 server** where **WebRTC** and **TLS** are enabled.
-7. Select a pre-loaded database or click on `Continue With New Database`. [Click here](https://docs.connexcs.com/datasuite/) to follow the steps for database creation. Click `Confirm`. <img src= "/customer-portal/img/cc6.png">.
-8. **Adding the Domain**
-   1. Navigate to **IDE :material-menu: Select the Contact Center App (you created) :material-menu: Domain**. Click on `Domain`. <img src= "/customer-portal/img/cc7.png">
-   2. Click on the blue `+` sign.
-   3. Select the `App` and enter the `domain` for your dialer. Click `Save`. <img src= "/customer-portal/img/cc8.png">
-   [Click here](https://docs.connexcs.com/apps/architecture/domain/) to get more information on domains.
 
-!!! Note ""An internal number block range is required to create agents."
+7. Select a pre-loaded database or click on `Continue With New Database`. [Click here](https://docs.connexcs.com/datasuite/) to follow the steps for database creation. Click `Confirm`. <img src= "/customer-portal/img/cc6new.png">.
+
+8. **Adding the Domain**
+      1. Navigate to **IDE :material-menu-right: Select the Contact Center App (you created) :material-menu-right: Domain**. Click on `Domain`. <img src= "/customer-portal/img/cc7.png">
+      2. Click on the blue `+` sign.
+      3. Select the `App` and enter the `domain` for your dialer. Click `Save`. <img src= "/customer-portal/img/cc8new.png">
+      [Click here](https://docs.connexcs.com/apps/architecture/domain/) to get more information on domains.
+
+!!! Note "An internal number block range is required to create agents."
 
 After following the above step, we've successfully installed the Contact Center application.
 
@@ -161,49 +163,49 @@ Next, proceed to the **Customer Portal** to review the Contact Center applicatio
 
 1. Navigate to **Customer Portal :material-menu-right: Contact Center**.
 2. **Accessing the Dialer**:
-   1. The dashboard provides a real-time overview of campaign activities, agent statuses, data remaining and call progress.
+      1. The dashboard provides a real-time overview of campaign activities, agent statuses, data remaining and call progress.
 3. **Dashboard Features**:
-   1. **Agents Logged In**: Tracks number of active agents.
-   2. **Agents Paused**: Number of agents currently not available take calls but are logged in the system.
-   3. **Agents Waiting**: Number of agents available and ready to take the call.
-   4. **Agents in Call**: Number of agents actively involved in a live conversation.
-   5. **Active Calls**: Total number of live and ongoing calls.
-   6. **Calls Waiting**: Displays the number of queued calls.
-   7. **Calls Ringing**: Total number of calls initiated but not answered yet.
-   8. **Data Remaining**: Shows the number of contacts left to be dialed.
+      1. **Agents Logged In**: Tracks number of active agents.
+      2. **Agents Paused**: Number of agents currently not available take calls but are logged in the system.
+      3. **Agents Waiting**: Number of agents available and ready to take the call.
+      4. **Agents in Call**: Number of agents actively involved in a live conversation.
+      5. **Active Calls**: Total number of live and ongoing calls.
+      6. **Calls Waiting**: Displays the number of queued calls.
+      7. **Calls Ringing**: Total number of calls initiated but not answered yet.
+      8. **Data Remaining**: Shows the number of contacts left to be dialed.
 
-!!!! Note "Please Note"
-    1. `Agents Waiting`, `Agents in Call`, `Calls Ringing`, and `Active Calls` are the stats only for the **Auto Dialer**.
-    2. `AI Calls Ringing`, `AI Calls Active`: These stats are only for **Broadcast Dialer**.
-    3. `Agents Logged In`, `Agents Paused`, `Data Remaining` for **all three dialers**.
+!!! Note "Please Note"
+      1. `Agents Waiting`, `Agents in Call`, `Calls Ringing`, and `Active Calls` are the stats only for the **Auto Dialer**.
+      2. `AI Calls Ringing`, `AI Calls Active`: These stats are only for **Broadcast Dialer**.
+      3. `Agents Logged In`, `Agents Paused`, `Data Remaining` for **all three dialers**.
 
 <img src= "/customer-portal/img/cc9.png">
 
 === "Campaigns"
 
-    Summarizes ongoing campaigns, including parameters like status, campaign type, source status, CPS, Channels etc. You also have an option to **[Add Campaign](add link)**.
+    Summarizes ongoing campaigns, including parameters like status, campaign type, source status, CPS, Channels etc. You also have an option to **Add Campaign**.
 
-    <img src= "/customer-portal/img/cc10.png">
+    <img src= "/customer-portal/img/cc10new.png">
 
 === "Agents"
 
     Summarizes ongoing agent activity, displaying parameters like status, SIP profile, protocol, bandwidth, CPS, channels, dial pattern, and other SIP metrics.
-    You can also upload agents in bulk uing [Create Bulk Agents](add link).
+    You can also upload agents in bulk using **Create Bulk Agents**.
 
-    <img src= "/customer-portal/img/cc11.png">
+    <img src= "/customer-portal/img/cc11new.png">
 
 === "Script"
 
-    Displays all the created scripts in the Contact Center. You can also [Add a New Script](add link). 
+    Displays all the created scripts in the Contact Center. You can also **Add a New Script**. 
 
-        <img src= "/customer-portal/img/cc12.png">
+      <img src= "/customer-portal/img/cc12new.png">
 
 === "Leadset"
 
     Manages leadsets for outbound campaigns, showing parameters like name, associated campaign, status, and description.
-    You can also create new leadsets individually or upload them in bulk using [Create Leadset](add link).
+    You can also create new leadsets individually or upload them in bulk using **Create Leadset**.
 
-      <img src= "/customer-portal/img/cc13.png">
+      <img src= "/customer-portal/img/cc13new.png">
 
 ### Step-II: Setup Dialers 
 
@@ -224,33 +226,35 @@ You can configure multiple dialers based on your specific campaign requirements.
       1. **Caller ID**: The `CLI` used for this campaign.
       2. **Source Status**: Select `Ready`/`New` or Custom Source Status for call origination. If no status is selected the calls won't be sent.
       3. **Outbound Multiplier**: It controls how many outbound calls your system (or agent/reseller) can make at the same time.
-      4. **Custom Disposition**: A user-defined set of call outcome labels that agents are required to select after each call, enabling structured tracking, systematic reporting, and optimized follow-up workflows. <img src= "/customer-portal/img/cc15.png">
-             1. `Agent Unavailable`: Call was made but hung up due to agent being busy (mostly in auto dialers.
-            2. `Answered`: Call is connected.
-            3. `Connection Error`: Originate method failed to work.
-            4. `Error`: An error occurred at the code level.
-            5. `Connected`: AI call was answered, but disposition wasn't saved.
-            6. `Rejected`: Call ended without pickup (user or server may have hung up).
-            7. `Ringing`: AI-initiated call is ringing.
-            8. `In Progress`: Call data is being allocated.
-      5. Click on the `Confirm` button.
-        !!! Note
+      4. **Custom Disposition**: A user-defined set of call outcome labels that agents are required to select after each call, enabling structured tracking, systematic reporting, and optimized follow-up workflows. <img src= "/customer-portal/img/cc15new.png">
+         1. `Agent Unavailable`: Call was made but hung up due to agent being busy (mostly in auto dialers.
+         2. `Answered`: Call is connected.
+         3. `Connection Error`: Originate method failed to work.
+         4. `Error`: An error occurred at the code level.
+         5. `Connected`: AI call was answered, but disposition wasn't saved.
+         6. `Rejected`: Call ended without pickup (user or server may have hung up).
+         7. `Ringing`: AI-initiated call is ringing.
+         8. `In Progress`: Call data is being allocated.
+      5. **Agents**: Select human agents or AI agents for the Preview Dialer.
+      6. Click on the `Confirm` button.
+
+      !!! Note
             `DO NOT CALL`, `NOT INTERESTED`, `SALE MADE`, `CALL TRANSFERRED`, `BUSY`, `CALL BACK`, `DISCONNECTED NUMBER`, `DECLINED SALE`, `WRONG DETAILS` — Predefined Disposition Statuses.
             Users can create custom source statuses and dispositions while creating or updating campaigns.
    3. Click on `See More` in the `Details` column.
-      1. A `Campaign Overview` will open. This interface is used for real-time monitoring of campaigns, lead stats, agent statuses, and calling activity. <img src= "/customer-portal/img/cc45.png">
+      1. A `Campaign Overview` will open. This interface is used for real-time monitoring of campaigns, lead stats, agent statuses, and calling activity. <img src= "/customer-portal/img/cc45new.png">
       2. `State`: Whether the campaign is `Active` or `Inactive`.
       3. `Edit Campaign`: Open the campaign settings for editing.
       4. `Back`: Return to the previous page.
       5. `Campaign Stats`: Provides real-time visual insights into the current status of the campaign's calling activities and agent activities.
-            1. `Callers Chart`: Shows the current distribution of calls:
+         1. `Callers Chart`: Shows the current distribution of calls:
                1. `Call In Progress`: How many calls are actively happening (agents talking to leads).
                2. `Call Waiting`: How many calls are waiting to be connected.
-            2. `Agents Chart`: Shows the status of agents.
+         2. `Agents Chart`: Shows the status of agents.
                1. `Call Active`: How many agents are currently on a call.
                2. `Agent Waiting`: How many agents are idle (ready and waiting for a call).
       6. `Campaign Agents`: List of agents assigned to the campaign.
-         1. `Manage Agents`: Allows you to add/remove agents from the campaign from the drop-down menu. Click `Confirm`. <img src= "/customer-portal/img/cc34.png">
+         1. `Manage Agents`: Allows you to add/remove agents from the campaign from the drop-down menu. Click `Confirm`. <img src= "/customer-portal/img/cc34new.png">
          2. For example: The select agents will be added.<img src= "/customer-portal/img/cc35.png">
          3. `Refresh Button`: To update agent statuses.
       7. `Lead Stats`: It shows you the total number of leads loaded into the campaign and what stage they're currently at during the calling process.
