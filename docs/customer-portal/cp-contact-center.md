@@ -118,6 +118,7 @@ You can create your own personal AI Agent with ConnexCS. [Click here](https://do
         C --> D(["📝 AI logs outcome:<br/>- Call summary<br/>- Sentiment<br/>- Disposition<br/>- Optional transcription"])
         D --> E(["🔄 Moves to next contact automatically"])
         E --> B
+    ```  
 
 **Pros**:
 
@@ -136,11 +137,11 @@ You can create your own personal AI Agent with ConnexCS. [Click here](https://do
 ### Step-I: Install Contact Center App
 
 1. Login to your **Control Panel**.
-2. Navigate to **Setup :material-menu: App Store**. <img src= "/customer-portal/img/cc1.png">
+2. Navigate to **Setup :material-menu-right: App Store**. <img src= "/customer-portal/img/cc1.png">
 3. Click on the **Contact Center** application. Click on `Install`. <img src= "/customer-portal/img/cc2.png">
 4. Modify the `App Name` (optional) and select the app `Version` (optional). Click `Install`. <img src= "/customer-portal/img/cc3.png">
 5. Click on `Config`. <img src= "/customer-portal/img/cc4.png">
-6. A window will pop-up where you need to select the `User API`, `Class 5 Server` and `Class 4 Server` and hit the `Next Step` button. <img src= "/customer-portal/img/cc5new.png">
+6. A window will pop-up where you need to select the `User API`, `Class 5 Server` and `Class 4 Server` and hit the `Next Step` button. <img src= "/customer-portal/img/cc5new1.png">
 
 !!! Note "Important Note"
     Make sure to select a **Class 4 server** where **WebRTC** and **TLS** are enabled.
@@ -375,7 +376,7 @@ You can configure multiple dialers based on your specific campaign requirements.
          6. `Rejected`: Call ended without pickup (user or server may have hung up).
          7. `Ringing`: AI-initiated call is ringing.
          8. `In Progress`: Call data is being allocated.
-      5. Click on the `Confirm` button. <img src= "/customer-portal/img/cc89new.png">
+      5. Click on the `Confirm` button. <img src= "/customer-portal/img/cc44new.png">
 
          !!! Info "Custom Disposition Information"
                `DO NOT CALL`, `NOT INTERESTED`, `SALE MADE`, `CALL TRANSFERRED`, `BUSY`, `CALL BACK`, `DISCONNECTED NUMBER`, `DECLINED SALE`, `WRONG DETAILS` — Predefined Disposition Statuses.
