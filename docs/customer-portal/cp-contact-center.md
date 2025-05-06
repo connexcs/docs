@@ -141,7 +141,7 @@ You can create your own personal AI Agent with ConnexCS. [Click here](https://do
 3. Click on the **Contact Center** application. Click on `Install`. <img src= "/customer-portal/img/cc2.png">
 4. Modify the `App Name` (optional) and select the app `Version` (optional). Click `Install`. <img src= "/customer-portal/img/cc3.png">
 5. Click on `Config`. <img src= "/customer-portal/img/cc4.png">
-6. A window will pop-up where you need to select the `User API`, `Class 5 Server` and `Class 4 Server` and hit the `Next Step` button. <img src= "/customer-portal/img/cc5new1.png">
+6. A window will pop-up where you need to select the `User API`, `Class 5 Server` and `Class 4 Server` and hit the `Next Step` button. <img src= "/customer-portal/img/ccnew5.png">
 
 !!! Note "Important Note"
     Make sure to select a **Class 4 server** where **WebRTC** and **TLS** are enabled.
