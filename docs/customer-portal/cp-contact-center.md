@@ -148,10 +148,9 @@ You can create your own personal AI Agent with ConnexCS. [Click here](https://do
 
 8.**Adding the Domain**
 
-      1. Navigate to **IDE :material-menu-right: Select the Contact Center App (you created) :material-menu-right: Domain**. Click on `Domain`. <img src= "/customer-portal/img/cc7.png" style="border: 3px solid #4472C4;">
-      2. Click on the blue `+` sign.
-
-      3. Select the `App` and enter the `domain` for your dialer. Click `Save`. <img src= "/customer-portal/img/cc8new.png" style="border: 3px solid #4472C4;">
+   1. Navigate to **IDE :material-menu-right: Select the Contact Center App (you created) :material-menu-right: Domain**. Click on `Domain`. <img src= "/customer-portal/img/cc7.png" style="border: 3px solid #4472C4;">
+   2. Click on the blue `+` sign.
+   3. Select the `App` and enter the `domain` for your dialer. Click `Save`. <img src= "/customer-portal/img/cc8new.png" style="border: 3px solid #4472C4;">
       [Click here](https://docs.connexcs.com/apps/architecture/domain/) to get more information on domains.
 
 !!! Note "An internal number block range is required to create agents."
@@ -248,72 +247,65 @@ You can configure multiple dialers based on your specific campaign requirements.
 
 6.A `Campaign Overview` will open. This interface is used for real-time monitoring of campaigns, lead stats, agent statuses, and calling activity. <img src= "/customer-portal/img/cc45new.png" style="border: 3px solid #4472C4;">
 
-      1. `State`: Whether the campaign is `Active` or `Inactive`.
-      
-      2. `Edit Campaign`: Open the campaign settings for editing.
-      
-      3. `Back`: Return to the previous page.
-      
-      4. `Campaign Stats`: Provides real-time visual insights into the current status of the campaign's calling activities and agent activities.
-         
-         1. `Callers Chart`: Shows the current distribution of calls:
-            
-            1. `Call In Progress`: How many calls are actively happening (agents talking to leads).
-            
-            2. `Call Waiting`: How many calls are waiting to be connected.
-         
-         2. `Agents Chart`: Shows the status of agents.
-            
-            1. `Call Active`: How many agents are currently on a call.
-            
-            2. `Agent Waiting`: How many agents are idle (ready and waiting for a call).
+   1. `State`: Whether the campaign is `Active` or `Inactive`.
+   2. `Edit Campaign`: Open the campaign settings for editing.
+   3. `Back`: Return to the previous page.
+   4. `Campaign Stats`: Provides real-time visual insights into the current status of the campaign's calling activities and agent activities.
+      1. `Callers Chart`: Shows the current distribution of calls:
+         1. `Call In Progress`: How many calls are actively happening (agents talking to leads).
+         2. `Call Waiting`: How many calls are waiting to be connected.
+      2. `Agents Chart`: Shows the status of agents.
+         1. `Call Active`: How many agents are currently on a call.
+         2. `Agent Waiting`: How many agents are idle (ready and waiting for a call).
 
-      5.`Campaign Agents`: List of agents assigned to the campaign.
-            
-            `Manage Agents`: Allows you to add/remove agents from the campaign from the drop-down menu. Click `Confirm`. <img src= "/customer-portal/img/cc34new.png" style="border: 3px solid #4472C4;">
+   5.`Campaign Agents`: List of agents assigned to the campaign.
 
-            For example: The select agents will be added.<img src= "/customer-portal/img/cc35.png">
+      `Manage Agents`: Allows you to add/remove agents from the campaign from the drop-down menu. Click `Confirm`. <img src= "/customer-portal/img/cc34new.png" style="border: 3px solid #4472C4;">
 
-            `Refresh Button`: To update agent statuses.
+      For example: The select agents will be added.<img src= "/customer-portal/img/cc35.png">
 
-      6.`Lead Stats`: It shows you the total number of leads loaded into the campaign and what stage they're currently at during the calling process.
+      `Refresh Button`: To update agent statuses.
 
-         1. `Total Leads`: Everyone you plan to call.
-         2. Dialable Leads`: How many you still can call.
-         3. `In Progress`: Live calls happening now.
-         4. `Call Answered`: People who actually picked up.
-         5. `Failed Calls`: Calls that couldn't connect.
-         6. `Dropped Calls`: Calls that got disconnected unexpectedly.
-         7. `Agents in Queue`: Displays a list of agents who are waiting for a call or are ready to be assigned a call in the campaign.
+   6.`Lead Stats`: It shows you the total number of leads loaded into the campaign and what stage they're currently at during the calling process.
+      1. `Total Leads`: Everyone you plan to call.
+      2. `Dialable Leads`: How many you still can call.
+      3. `In Progress`: Live calls happening now.
+      4. `Call Answered`: People who actually picked up.
+      5. `Failed Calls`: Calls that couldn't connect.
+      6. `Dropped Calls`: Calls that got disconnected unexpectedly.
+      7. `Agents in Queue`: Displays a list of agents who are waiting for a call or are ready to be assigned a call in the campaign.
 
-7. **Agents**: This section has information on the agents. You can also `Create Bulk Agents` . <img src= "/customer-portal/img/cc16new.png" style="border: 3px solid #4472C4;">
+7.**Agents**: This section has information on the agents. You can also `Create Bulk Agents` . <img src= "/customer-portal/img/cc16new.png" style="border: 3px solid #4472C4;">
+
    1. Select a `SIP Profile`.
+
    2. Add the `Number of Agents` for participation in this campaign.
+
    3. Click on `Create`. <img src= "/customer-portal/img/cc17new.png" style="border: 3px solid #4472C4;">
 
 8.**Script**: The Script section enables you to create structured call scripts for agents to follow during customer interactions.
 
-   4. Click on `Add a new Script`. <img src= "/customer-portal/img/cc18new.png" style="border: 3px solid #4472C4;">
+   1. Click on `Add a new Script`. <img src= "/customer-portal/img/cc18new.png" style="border: 3px solid #4472C4;">
 
-   5. Enter the `Script Name` and `Script`.
+   2. Enter the `Script Name` and `Script`.
 
-   6. Click `Confirm` to save the script. <img src= "/customer-portal/img/cc19new.png" style="border: 3px solid #4472C4;">
+   3. Click `Confirm` to save the script. <img src= "/customer-portal/img/cc19new.png" style="border: 3px solid #4472C4;">
 
-   7. The created script will be displayed in the window; click on `Preview` to view the script. <img src= "/customer-portal/img/cc20.png"style="border: 3px solid #4472C4;">
+   4. The created script will be displayed in the window; click on `Preview` to view the script. <img src= "/customer-portal/img/cc20.png"style="border: 3px solid #4472C4;">
 
 9.**Leadset**: This section has information on the Leadsets. You can also `Create Leadset` . <img src= "/customer-portal/img/cc21new.png" style="border: 3px solid #4472C4;">
 
 10.A new window will appear, prompting you to enter the required information:
 
-      1. Enter the leadset `Name`.
-      
-      2. Pen-down any required `Description`.
-      
-      3. Select the `Campaign` from the drop-down for which you wish to associate the leadset.
-      
-      4. **State**: Configure the leadset’s operational status by setting it to either Active (available for assignment and dialing) or Inactive (disabled or paused).
-      
-      5. Click on `Confirm` to create the leadset. <img src= "/customer-portal/img/cc22new.png" style="border: 3px solid #4472C4;">
+   1. Enter the leadset `Name`.
+
+   2. Pen-down any required `Description`.
+
+   3. Select the `Campaign` from the drop-down for which you wish to associate the leadset.
+
+   4. **State**: Configure the leadset’s operational status by setting it to either Active (available for assignment and dialing) or Inactive (disabled or paused).
+
+   5. Click on `Confirm` to create the leadset. <img src= "/customer-portal/img/cc22new.png" style="border: 3px solid #4472C4;">
 
 11.Click on `See More` in the `Details` column. <img src= "/customer-portal/img/cc23new.png" style="border: 3px solid #4472C4;">
 
@@ -386,12 +378,16 @@ You can configure multiple dialers based on your specific campaign requirements.
 15.**Add Lead (Form)**: Manually add a lead via a form. <img src="/customer-portal/img/cc31.png">
 
 16.**Lead Status**: Displays whether a lead is available, being worked on, needs follow-up, or is no longer active.
-    1. `Total Leads`: The total number of leads uploaded or assigned to the campaign or leadset.
-      1. `Dialable Leads`: Leads that are ready to be called (i.e., they're active, have valid numbers, and meet campaign rules).
-      2. `Data Recycle`: Recycles leads that didn’t connect (e.g., no answer, busy) by returning them to the dial queue and updating their status based on retry rules.
-17. **Call Status**: Displays counts for different call outcomes; like `Call Answered`, `Failed Calls`, `Call In Progress`, `Call Ringing`, `Dropped Calls`.
-18. **Disposition Status**: Shows a pie chart for all the call disposition outcomes. Each colored section of the pie chart corresponds to one of these dispositions.
-19. **Lead Agents Activity**: It displays performance stats of individual agents. The metrics include `Call Transfered`, `Busy`, `Call Back`, `Do Not Call`, `Not interested`, `Null`, `Sale made`, `Wrong details` etc.
+
+   1. `Total Leads`: The total number of leads uploaded or assigned to the campaign or leadset.
+   2. `Dialable Leads`: Leads that are ready to be called (i.e., they're active, have valid numbers, and meet campaign rules).
+   3. `Data Recycle`: Recycles leads that didn’t connect (e.g., no answer, busy) by returning them to the dial queue and updating their status based on retry rules.
+
+17.**Call Status**: Displays counts for different call outcomes; like `Call Answered`, `Failed Calls`, `Call In Progress`, `Call Ringing`, `Dropped Calls`.
+
+18.**Disposition Status**: Shows a pie chart for all the call disposition outcomes. Each colored section of the pie chart corresponds to one of these dispositions.
+
+19.**Lead Agents Activity**: It displays performance stats of individual agents. The metrics include `Call Transfered`, `Busy`, `Call Back`, `Do Not Call`, `Not interested`, `Null`, `Sale made`, `Wrong details` etc.
 
 #### Auto Dialer
 
@@ -471,7 +467,7 @@ You can configure multiple dialers based on your specific campaign requirements.
 
       7. `Agents in Queue`: Displays a list of agents who are waiting for a call or are ready to be assigned a call in the campaign.
 
-8.**Agents**: This section has information on the agents. You can also `Create Bulk Agents`. <img src= "/customer-portal/img/cc16new.png" style="border: 3px solid #4472C4;">
+7.**Agents**: This section has information on the agents. You can also `Create Bulk Agents`. <img src= "/customer-portal/img/cc16new.png" style="border: 3px solid #4472C4;">
 
    1. Select a `SIP Profile`.
 
@@ -492,11 +488,17 @@ You can configure multiple dialers based on your specific campaign requirements.
 10.**Leadset**: This section has information on the Leadsets. You can also `Create Leadset`. <img src= "/customer-portal/img/cc21new.png" style="border: 3px solid #4472C4;">
 
 11.A new window will appear, prompting you to enter the required information:
+
    1. Enter the leadset `Name`.
+
    2. Pen-down any required `Description`.
+
    3. Select the `Campaign` from the drop-down for which you wish to associate the leadset.
+
    4. **State**: Configure the leadset’s operational status by setting it to either Active (available for assignment and dialing) or Inactive (disabled or paused).
+
    5. Click on `Confirm` to create the leadset. <img src= "/customer-portal/img/cc48new.png" style="border: 3px solid #4472C4;">
+
    6. Click on `See More` in the `Details` column.
 
 12.**A Leadset Dashboard** monitoring window will appear which displays the metrics of the leadset. <img src= "/customer-portal/img/cc49.png" style="border: 3px solid #4472C4;">
@@ -525,19 +527,19 @@ You can configure multiple dialers based on your specific campaign requirements.
 
       2.**Uploading via URL**: Enter the URL in the CSV format and hit the Upload button. <img src="/customer-portal/img/cc57new.png" width= "800" style="border: 3px solid #4472C4;">
 
-            1. A new window will open where two actions must be completed to create the leadset. <img src="/customer-portal/img/cc52new.png" style="border: 3px solid #4472C4;">
-            
-            2. `Set row`: To indicate where the upload should start. `Right-click` on the row to want to start the uploading and click on `Set Start Row`. <img src="/customer-portal/img/cc27new.png" style="border: 3px solid #4472C4;">
-            
-            3. `Map Table Columns`: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. `Right-click` on the column you wish to be mapped, click on `Map Column` then `Phone` and `Status`. Click on `Upload`. This will upload the leadset data to the server. <img src="/customer-portal/img/cc28new.png" style="border: 3px solid #4472C4;"> <img src="/customer-portal/img/cc29new.png" style="border: 3px solid #4472C4;">
-            
-            4. The successful upload can be seen in the image. <img src="/customer-portal/img/cc56.png" width= "800" style="border: 3px solid #4472C4;">
-            
-            5. The updated `Leadset Dashboard` can be seen as. <img src="/customer-portal/img/cc87.png" style="border: 3px solid #4472C4;">
+         1. A new window will open where two actions must be completed to create the leadset. <img src="/customer-portal/img/cc52new.png" style="border: 3px solid #4472C4;">
 
-         3.**Uploading via Text**:
+         2. `Set row`: To indicate where the upload should start. `Right-click` on the row to want to start the uploading and click on `Set Start Row`. <img src="/customer-portal/img/cc27new.png" style="border: 3px solid #4472C4;">
+            
+         3. `Map Table Columns`: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. `Right-click` on the column you wish to be mapped, click on `Map Column` then `Phone` and `Status`. Click on `Upload`. This will upload the leadset data to the server. <img src="/customer-portal/img/cc28new.png" style="border: 3px solid #4472C4;"> <img src="/customer-portal/img/cc29new.png" style="border: 3px solid #4472C4;">
 
-            1. Enter the text in the following format:
+         4. The successful upload can be seen in the image. <img src="/customer-portal/img/cc56.png" width= "800" style="border: 3px solid #4472C4;">
+
+         5. The updated `Leadset Dashboard` can be seen as. <img src="/customer-portal/img/cc87.png" style="border: 3px solid #4472C4;">
+
+      3.**Uploading via Text**:
+
+         1. Enter the text in the following format:
                ```bash
                Column 1,Column 2,
                Phone, Status
@@ -546,17 +548,18 @@ You can configure multiple dialers based on your specific campaign requirements.
                44118, Ready
                44119, Ready
                ```
-            2. Click on `Upload`. <img src="/customer-portal/img/cc58.png" width= "800" style="border: 3px solid #4472C4;">
-            
-            3. A new window will open where two actions must be completed to create the leadset. <img src="/customer-portal/img/cc52new.png" style="border: 3px solid #4472C4;">
-            
-            4. `Set row`: To indicate where the upload should start. `Right-click` on the row to want to start the uploading and click on `Set Start Row`. <img src="/customer-portal/img/cc27new.png" style="border: 3px solid #4472C4;">
-            
-            5. `Map Table Columns`: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. `Right-click` on the column you wish to be mapped, click on `Map Column` then `Phone` and `Status`. Click on `Upload`. This will upload the leadset data to the server. <img src="/customer-portal/img/cc28new.png" style="border: 3px solid #4472C4;"> <img src="/customer-portal/img/cc29new.png" style="border: 3px solid #4472C4;">
-            
-            6. The successful upload can be seen in the image. <img src="/customer-portal/img/cc56.png" widht= "800" style="border: 3px solid #4472C4;">
-            
-            7. The updated `Leadset Dashboard` can be seen as. <img src="/customer-portal/img/cc87.png" style="border: 3px solid #4472C4;">
+
+         2. Click on `Upload`. <img src="/customer-portal/img/cc58.png" width= "800" style="border: 3px solid #4472C4;">
+
+         3. A new window will open where two actions must be completed to create the leadset. <img src="/customer-portal/img/cc52new.png" style="border: 3px solid #4472C4;">
+
+         4. `Set row`: To indicate where the upload should start. `Right-click` on the row to want to start the uploading and click on `Set Start Row`. <img src="/customer-portal/img/cc27new.png" style="border: 3px solid #4472C4;">
+
+         5. `Map Table Columns`: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. `Right-click` on the column you wish to be mapped, click on `Map Column` then `Phone` and `Status`. Click on `Upload`. This will upload the leadset data to the server. <img src="/customer-portal/img/cc28new.png" style="border: 3px solid #4472C4;"> <img src="/customer-portal/img/cc29new.png" style="border: 3px solid #4472C4;">
+
+         6. The successful upload can be seen in the image. <img src="/customer-portal/img/cc56.png" widht= "800" style="border: 3px solid #4472C4;">
+
+         7. The updated `Leadset Dashboard` can be seen as. <img src="/customer-portal/img/cc87.png" style="border: 3px solid #4472C4;">
 
 14.**Continue to Modify**: If you click here, it will redirect to ConnexCS's Data Sure. [Click here](https://docs.connexcs.com/datasuite/) to know more.
 
@@ -566,11 +569,11 @@ You can configure multiple dialers based on your specific campaign requirements.
 
 17.**Lead Status**: Displays whether a lead is available, being worked on, needs follow-up, or is no longer active.
 
-    1. `Total Leads`: The total number of leads uploaded or assigned to the campaign or leadset.
-    
-    2. `Dialable Leads`: Leads that are ready to be called (i.e., they're active, have valid numbers, and meet campaign rules).
-    
-    3. `Data Recycle`: Recycles leads that didn’t connect (e.g., no answer, busy) by returning them to the dial queue and updating their status based on retry rules.
+   1. `Total Leads`: The total number of leads uploaded or assigned to the campaign or leadset.
+
+   2. `Dialable Leads`: Leads that are ready to be called (i.e., they're active, have valid numbers, and meet campaign rules).
+
+   3. `Data Recycle`: Recycles leads that didn’t connect (e.g., no answer, busy) by returning them to the dial queue and updating their status based on retry rules.
 
 18.**Call Status**: Displays counts for different call outcomes; like `Call Answered`, `Failed Calls`, `Call In Progress`, `Call Ringing`, `Dropped Calls`.
 
