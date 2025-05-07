@@ -159,7 +159,7 @@ After following the above step, we've successfully installed the Contact Center 
 
 Next, proceed to the **Customer Portal** to review the Contact Center application's setup process and understand its operational workflow.
 
-### Dialer Dashboard: Features and Functions
+#### Dialer Dashboard: Features and Functions
 
 1. Navigate to **Customer Portal :material-menu-right: Contact Center**.
 2. **Accessing the Dialer**:
@@ -226,8 +226,8 @@ You can configure multiple dialers based on your specific campaign requirements.
          1. **Caller ID**: The `CLI` used for this campaign.
          2. **Source Status**: Select `Ready`/`New` or Custom Source Status for call origination. If no status is selected the calls won't be sent.
          3. **Outbound Multiplier**: It controls how many outbound calls your system (or agent/reseller) can make at the same time.
-         4. **Custom Disposition**: A user-defined set of call outcome labels that agents are required to select after each call, enabling structured tracking, systematic reporting, and optimized follow-up workflows. <img src= "/customer-portal/img/cc15new.png" style="border: 3px solid #4472C4;">
-            1. `Agent Unavailable`: Call was made but hung up due to agent being busy (mostly in auto dialers.
+         4. **Custom Disposition**: A user-defined set of call outcome labels that agents are required to select after each call, enabling structured tracking, systematic reporting, and optimized follow-up workflows. <img src= "/customer-portal/img/cc15new1.png" style="border: 4px solid #4472C4;">
+            1. `Agent Unavailable`: Call was made but hung up due to agent being busy (mostly in auto dialers).
             2. `Answered`: Call is connected.
             3. `Connection Error`: Originate method failed to work.
             4. `Error`: An error occurred at the code level.
@@ -235,7 +235,8 @@ You can configure multiple dialers based on your specific campaign requirements.
             6. `Rejected`: Call ended without pickup (user or server may have hung up).
             7. `Ringing`: AI-initiated call is ringing.
             8. `In Progress`: Call data is being allocated.
-         5. **Agents**: Select human agents or AI agents for the Preview Dialer.
+         5. **Flags**: Select `Transfer` flag to activate the option of call transfer in Preview Dialer.
+         6. **Agents**: Select human agents or AI agents for the Preview Dialer.
 
 4. Click on the `Confirm` button.
 
@@ -731,8 +732,8 @@ With your Campaign, Agents, Agent Script, and Leadset configured, the next step 
       6. `Lead Preview`: Opens lead details for the agent.
       7. `Invalid Details`: Lets the agent flag the lead if information is incorrect or incomplete.
       8. `Get Next Led`: It becomes active after the current call is concluded and displays the information of the next customer.
-      9. `Call`: Hit the call button to phone the customer. <img src="/customer-portal/img/cc40new.png" style="border: 3px solid #4472C4;">
-      10. When your agent hits the `Call` button, a `Live Call` window will appear. <img src="/customer-portal/img/cc41new.png" style="border: 3px solid #4472C4;">
+      9. `Call`: Hit the call button to phone the customer. <img src="/customer-portal/img/cc40new1.png" style="border: 4px solid #4472C4;">
+      10. When your agent hits the `Call` button, a `Live Call` window will appear. <img src="/customer-portal/img/cc41new1.png" style="border: 2px solid #4472C4;">
           1. `Hold`: Allows your agent to place the call on hold.
           2. `Transfer`: Transfer call to another agent or manager.
           3. `Mute`: Allows your agent to mute your call.
