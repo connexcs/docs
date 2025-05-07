@@ -241,6 +241,7 @@ You can configure multiple dialers based on your specific campaign requirements.
 
 !!! Info "Custom Disposition Information"
       `DO NOT CALL`, `NOT INTERESTED`, `SALE MADE`, `CALL TRANSFERRED`, `BUSY`, `CALL BACK`, `DISCONNECTED NUMBER`, `DECLINED SALE`, `WRONG DETAILS` — Predefined Disposition Statuses.
+
       Users can create custom source statuses and dispositions while creating or updating campaigns.
 
 5.Click on `See More` in the `Details` column.
@@ -304,7 +305,7 @@ You can configure multiple dialers based on your specific campaign requirements.
 
    4. **State**: Configure the leadset’s operational status by setting it to either Active (available for assignment and dialing) or Inactive (disabled or paused).
 
-   5. Click on `Confirm` to create the leadset. <img src= "/customer-portal/img/cc22new.png" style="border: 3px solid #4472C4;">
+   5. Click on `Confirm` to create the leadset. <img src= "/customer-portal/img/cc22new1.png" style="border: 3px solid #4472C4;">
 
 11.Click on `See More` in the `Details` column. <img src= "/customer-portal/img/cc23new.png" style="border: 3px solid #4472C4;">
 
@@ -417,6 +418,7 @@ You can configure multiple dialers based on your specific campaign requirements.
 
 !!! Info "Custom Disposition Information"
       `DO NOT CALL`, `NOT INTERESTED`, `SALE MADE`, `CALL TRANSFERRED`, `BUSY`, `CALL BACK`, `DISCONNECTED NUMBER`, `DECLINED SALE`, `WRONG DETAILS` — Predefined Disposition Statuses.
+
       Users can create custom source statuses and dispositions while creating or updating campaigns.
 
 5.Click on `See More` in the `Details` column.
@@ -525,14 +527,21 @@ You can configure multiple dialers based on your specific campaign requirements.
          4. Upon successful upload, the leadset will appear as shown below. <img src="/customer-portal/img/cc56new.png" width= "800" style="border: 3px solid #4472C4;">
 
       2.**Uploading via URL**: Enter the URL in the CSV format and hit the Upload button. <img src="/customer-portal/img/cc57new.png" width= "800" style="border: 3px solid #4472C4;">
-         1. A new window will open where two actions must be completed to create the leadset. <img src="/customer-portal/img/cc52new.png" style="border: 3px solid #4472C4;">
-         2. `Set row`: To indicate where the upload should start. `Right-click` on the row to want to start the uploading and click on `Set Start Row`. <img src="/customer-portal/img/cc27new.png" style="border: 3px solid #4472C4;">
-         3. `Map Table Columns`: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. `Right-click` on the column you wish to be mapped, click on `Map Column` then `Phone` and `Status`. Click on `Upload`. This will upload the leadset data to the server. <img src="/customer-portal/img/cc28new.png" style="border: 3px solid #4472C4;"> <img src="/customer-portal/img/cc29new.png" style="border: 3px solid #4472C4;">
-         4. The successful upload can be seen in the image. <img src="/customer-portal/img/cc56.png" width= "800" style="border: 3px solid #4472C4;">
-         5. The updated `Leadset Dashboard` can be seen as. <img src="/customer-portal/img/cc87.png" style="border: 3px solid #4472C4;">
+
+
+            1. A new window will open where two actions must be completed to create the leadset. <img src="/customer-portal/img/cc52new.png" style="border: 3px solid #4472C4;">
+            
+            2. `Set row`: To indicate where the upload should start. `Right-click` on the row to want to start the uploading and click on `Set Start Row`. <img src="/customer-portal/img/cc27new.png" style="border: 3px solid #4472C4;">
+
+            3. `Map Table Columns`: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. `Right-click` on the column you wish to be mapped, click on `Map Column` then `Phone` and `Status`. Click on `Upload`. This will upload the leadset data to the server. <img src="/customer-portal/img/cc28new.png" style="border: 3px solid #4472C4;"> <img src="/customer-portal/img/cc29new.png" style="border: 3px solid #4472C4;">
+
+            4. The successful upload can be seen in the image. <img src="/customer-portal/img/cc56.png" width= "800" style="border: 3px solid #4472C4;">
+            
+            5. The updated `Leadset Dashboard` can be seen as. <img src="/customer-portal/img/cc87.png" style="border: 3px solid #4472C4;">
 
       3.**Uploading via Text**:
-         1. Enter the text in the following format:
+
+            1. Enter the text in the following format:
             ```bash
             Column 1,Column 2,
             Phone, Status
@@ -541,12 +550,17 @@ You can configure multiple dialers based on your specific campaign requirements.
             44118, Ready
             44119, Ready
             ```
-         2. Click on `Upload`. <img src="/customer-portal/img/cc58.png" width= "800" style="border: 3px solid #4472C4;">
-         3. A new window will open where two actions must be completed to create the leadset. <img src="/customer-portal/img/cc52new.png" style="border: 3px solid #4472C4;">
-         4. `Set row`: To indicate where the upload should start. `Right-click` on the row to want to start the uploading and click on `Set Start Row`. <img src="/customer-portal/img/cc27new.png" style="border: 3px solid #4472C4;">
-         5. `Map Table Columns`: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. `Right-click` on the column you wish to be mapped, click on `Map Column` then `Phone` and `Status`. Click on `Upload`. This will upload the leadset data to the server. <img src="/customer-portal/img/cc28new.png" style="border: 3px solid #4472C4;"> <img src="/customer-portal/img/cc29new.png" style="border: 3px solid #4472C4;">
-         6. The successful upload can be seen in the image. <img src="/customer-portal/img/cc56.png" widht= "800" style="border: 3px solid #4472C4;">
-         7. The updated `Leadset Dashboard` can be seen as. <img src="/customer-portal/img/cc87.png" style="border: 3px solid #4472C4;">
+            2.  Click on `Upload`. <img src="/customer-portal/img/cc58.png" width= "800" style="border: 3px solid #4472C4;">
+
+            3.  A new window will open where two actions must be completed to create the leadset. <img src="/customer-portal/img/cc52new.png" style="border: 3px solid #4472C4;">
+   
+            4.  `Set row`: To indicate where the upload should start. `Right-click` on the row to want to start the uploading and click on `Set Start Row`. <img src="/customer-portal/img/cc27new.png" style="border: 3px solid #4472C4;">
+         
+            5.  `Map Table Columns`: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. `Right-click` on the column you wish to be mapped, click on `Map Column` then `Phone` and `Status`. Click on `Upload`. This will upload the leadset data to the server. <img src="/customer-portal/img/cc28new.png" style="border: 3px solid #4472C4;"> <img src="/customer-portal/img/cc29new.png" style="border: 3px solid #4472C4;">
+            
+            6.  The successful upload can be seen in the image. <img src="/customer-portal/img/cc56.png" widht= "800" style="border: 3px solid #4472C4;">
+            
+            7.  The updated `Leadset Dashboard` can be seen as. <img src="/customer-portal/img/cc87.png" style="border: 3px solid #4472C4;">
 
 13.**Continue to Modify**: If you click here, it will redirect to ConnexCS's Data Sure. [Click here](https://docs.connexcs.com/datasuite/) to know more.
 
@@ -572,7 +586,7 @@ You can configure multiple dialers based on your specific campaign requirements.
 
 1. [Click here](https://docs.connexcs.com/class5/ai-agent/#steps-to-create-ai-agent) to create an AI Agent.
 2. Navigate to **Customer Portal :material-menu-right: Contact Center**.
-3. In the `Campaign` tab, click `Add Campaign`. <img src= "/customer-portal/img/cc45.png" style="border: 3px solid #4472C4;">
+3. In the `Campaign` tab, click `Add Campaign`. <img src= "/customer-portal/img/cc88.png" style="border: 3px solid #4472C4;">
 4. A Window will pop-up with two sections:
       1. **Basic Info**:
          1. **Name**: Enter the Campaign name.
@@ -633,7 +647,7 @@ You can configure multiple dialers based on your specific campaign requirements.
 8. **Script**: The Script section enables you to create structured call scripts for agents to follow during customer interactions.
     1. Click on `Add a new Script`. <img src= "/customer-portal/img/cc18new.png" style="border: 3px solid #4472C4;">
     2. Enter the `Script Name` and `Script`.
-    3. Click `Confirm` to save the script. <img src= "/customer-portal/img/cc64.png" style="border: 2px solid #4472C4;">
+    3. Click `Confirm` to save the script. <img src= "/customer-portal/img/cc64.png" style="border: 4px solid #4472C4;">
     4. The created script will be displayed in the window; click on `Preview` to view the script. <img src= "/customer-portal/img/cc65.png" style="border: 3px solid #4472C4;">
 
 9. **Leadset**: This section has information on the Leadsets. You can also `Create Leadset` . <img src= "/customer-portal/img/cc21new.png" style="border: 3px solid #4472C4;">
@@ -667,7 +681,7 @@ You can configure multiple dialers based on your specific campaign requirements.
             2. `Set row`: To indicate where the uploaad should start. `Right-click` on the row to want to start the uploading and click on `Set Start Row`. <img src="/customer-portal/img/cc72new.png" style="border: 3px solid #4472C4;">
             3. `Map Table Columns`: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. `Right-click` on the column you wish to be mapped, click on `Map Column` then `Phone` and `Status`. Click on `Upload`. This will upload the leadset data to the server. <img src="/customer-portal/img/cc73new.png" style="border: 3px solid #4472C4;"> <img src="/customer-portal/img/cc74new.png" style= "border: 3px solid #4472C4;">
             4. The leadset gets uploaded sucessfully. <img src="/customer-portal/img/cc75new.png" style="border: 3px solid #4472C4;">
-            5. The leadset dashboard now displays total uploaded leads and dialable leads as well. <img src="/customer-portal/img/cc76.png" style="border: 3px solid #4472C4;">
+            5. The leadset dashboard now displays total uploaded leads and dialable leads as well. <img src="/customer-portal/img/cc76.png" style="border: 2px solid #4472C4;">
 
          2. **Uploading via Text**:
             1. Enter the text in the following format:
@@ -714,12 +728,12 @@ With your Campaign, Agents, Agent Script, and Leadset configured, the next step 
       Once the status has been provided, store it in the variable name. Do not store the variable unless you have been given it by the customer. don't save anything until the customer gives you 
       Do not proceed with anything else until you have successfully collected and stored the status by calling the setVariable function with `name`=`status` and `value`=`[status]`.
 
-### Step-III: Setup Dialers
+### Step-III: Agent Dialer Guide
 
 #### Preview Dialer
 
-1. Enter the domain as entered in the **IDE** in [Step-I](add link). The screen will prompt the agent to enter the `Username` and `Password`. Click on `Login`. <img src="/customer-portal/img/cc37.png">
-2. Select the campaign `Preview Dialler` from the drop-down menu and click `Confirm`. <img src="/customer-portal/img/cc38.png" style="border: 1px solid #4472C4;">
+1. Enter the domain as entered in the **IDE** in [Step-I](add link). The screen will prompt the agent to enter the `Username` and `Password`. Click on `Login`. <img src="/customer-portal/img/cc37.png" style="border: 2px solid #4472C4;">
+2. Select the campaign `Preview Dialler` from the drop-down menu and click `Confirm`. <img src="/customer-portal/img/cc38.png" style="border: 2px solid #4472C4;">
 3. An Agent Dialer interface with the following fields will appear:
       1. `Selected Campgain` from the drop-down menu.
       2. `Keypad` for dialing the numbers.
