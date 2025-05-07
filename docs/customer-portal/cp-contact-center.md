@@ -526,43 +526,29 @@ You can configure multiple dialers based on your specific campaign requirements.
 
          4. Upon successful upload, the leadset will appear as shown below. <img src="/customer-portal/img/cc56new.png" width= "800" style="border: 3px solid #4472C4;">
 
-      2.**Uploading via URL**: Enter the URL in the CSV format and hit the Upload button. <img src="/customer-portal/img/cc57new.png" width= "800" style="border: 3px solid #4472C4;">
+      2. **Uploading via URL**: Enter the URL in the CSV format and hit the Upload button. <img src="/customer-portal/img/cc57new.png" width= "800" style="border: 3px solid #4472C4;">
+         1. A new window will open where two actions must be completed to create the leadset. <img src="/customer-portal/img/cc52new.png" style="border: 3px solid #4472C4;">
+         2. `Set row`: To indicate where the upload should start. `Right-click` on the row to want to start the uploading and click on `Set Start Row`. <img src="/customer-portal/img/cc27new.png" style="border: 3px solid #4472C4;">
+         3. `Map Table Columns`: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. `Right-click` on the column you wish to be mapped, click on `Map Column` then `Phone` and `Status`. Click on `Upload`. This will upload the leadset data to the server. <img src="/customer-portal/img/cc28new.png" style="border: 3px solid #4472C4;"> <img src="/customer-portal/img/cc29new.png" style="border: 3px solid #4472C4;">
+         4. The successful upload can be seen in the image. <img src="/customer-portal/img/cc56.png" width= "800" style="border: 3px solid #4472C4;">
+         5. The updated `Leadset Dashboard` can be seen as. <img src="/customer-portal/img/cc87.png" style="border: 3px solid #4472C4;">
 
-
-            1. A new window will open where two actions must be completed to create the leadset. <img src="/customer-portal/img/cc52new.png" style="border: 3px solid #4472C4;">
-
-            2. `Set row`: To indicate where the upload should start. `Right-click` on the row to want to start the uploading and click on `Set Start Row`. <img src="/customer-portal/img/cc27new.png" style="border: 3px solid #4472C4;">
-
-            3. `Map Table Columns`: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. `Right-click` on the column you wish to be mapped, click on `Map Column` then `Phone` and `Status`. Click on `Upload`. This will upload the leadset data to the server. <img src="/customer-portal/img/cc28new.png" style="border: 3px solid #4472C4;"> <img src="/customer-portal/img/cc29new.png" style="border: 3px solid #4472C4;">
-
-            4. The successful upload can be seen in the image. <img src="/customer-portal/img/cc56.png" width= "800" style="border: 3px solid #4472C4;">
-            
-            5. The updated `Leadset Dashboard` can be seen as. <img src="/customer-portal/img/cc87.png" style="border: 3px solid #4472C4;">
-
-      3.**Uploading via Text**:
-
-               1. Enter the text in the following format:
-            
-               ```bash
+      3. **Uploading via Text**:
+         1. Enter the text in the following format:
+            ```bash
                Column 1,Column 2,
                Phone, Status
                44116, Ready
                44117, Ready
                44118, Ready
                44119, Ready
-               ```
-
-               2. Click on `Upload`. <img src="/customer-portal/img/cc58.png" width= "800" style="border: 3px solid #4472C4;">
-
-               3. A new window will open where two actions must be completed to create the leadset. <img src="/customer-portal/img/cc52new.png" style="border: 3px solid #4472C4;">
-
-               4. `Set row`: To indicate where the upload should start. `Right-click` on the row to want to start the uploading and click on `Set Start Row`. <img src="/customer-portal/img/cc27new.png" style="border: 3px solid #4472C4;">
-
-               5.  `Map Table Columns`: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. `Right-click` on the column you wish to be mapped, click on `Map Column` then `Phone` and `Status`. Click on `Upload`. This will upload the leadset data to the server. <img src="/customer-portal/img/cc28new.png" style="border: 3px solid #4472C4;"> <img src="/customer-portal/img/cc29new.png" style="border: 3px solid #4472C4;">
-
-               6.  The successful upload can be seen in the image. <img src="/customer-portal/img/cc56.png" widht= "800" style="border: 3px solid #4472C4;">
-
-               7.  The updated `Leadset Dashboard` can be seen as. <img src="/customer-portal/img/cc87.png" style="border: 3px solid #4472C4;">
+            ```
+         2. Click on `Upload`. <img src="/customer-portal/img/cc58.png" width= "800" style="border: 3px solid #4472C4;">
+         3. A new window will open where two actions must be completed to create the leadset. <img src="/customer-portal/img/cc52new.png" style="border: 3px solid #4472C4;">
+         4. `Set row`: To indicate where the upload should start. `Right-click` on the row to want to start the uploading and click on `Set Start Row`. <img src="/customer-portal/img/cc27new.png" style="border: 3px solid #4472C4;">
+         5. `Map Table Columns`: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. `Right-click` on the column you wish to be mapped, click on `Map Column` then `Phone` and `Status`. Click on `Upload`. This will upload the leadset data to the server. <img src="/customer-portal/img/cc28new.png" style="border: 3px solid #4472C4;"> <img src="/customer-portal/img/cc29new.png" style="border: 3px solid #4472C4;">
+         6. The successful upload can be seen in the image. <img src="/customer-portal/img/cc56.png" widht= "800" style="border: 3px solid #4472C4;">
+         7. The updated `Leadset Dashboard` can be seen as. <img src="/customer-portal/img/cc87.png" style="border: 3px solid #4472C4;">
 
 13.**Continue to Modify**: If you click here, it will redirect to ConnexCS's Data Sure. [Click here](https://docs.connexcs.com/datasuite/) to know more.
 
