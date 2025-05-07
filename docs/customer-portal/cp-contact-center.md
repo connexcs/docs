@@ -2,7 +2,7 @@
 
 ## Overview
 
-The ConnexCS Dialer is a comprehensive contact center solution designed to streamline outbound and inbound campaigns.
+Our Dialer is a comprehensive contact center solution designed to streamline outbound and inbound campaigns.
 
 It includes a Dialer Dashboard, Agent Management, Campaign Management, and Lead Management functionalities.
 
@@ -10,7 +10,7 @@ The dialer supports both Auto Dialer and Preview Dialer modes for flexibility in
 
 ## Types of Dialer
 
-At ConnexCS we've three types of dialers at your disposal.
+Here, we've three types of dialers at your disposal.
 
 ### **Auto Dialers**
 
@@ -100,7 +100,7 @@ A Broadcast Dialer is an automated outbound calling system where an AI Agent ini
 
 Once activated, the system starts dialing contacts in bulk. The AI Agent engages with each person using natural conversation, guided by a predefined script and logic.
 
-You can create your own personal AI Agent with ConnexCS. [Click here](https://docs.connexcs.com/class5/ai-agent/) to know more.
+You can create your own personal AI Agent. [Click here](https://docs.d.com/class5/ai-agent/) to know more.
 
 !!! question "How it works?"
     ```mermaid
@@ -135,7 +135,7 @@ You can create your own personal AI Agent with ConnexCS. [Click here](https://do
 ### Step-I: Install Contact Center App
 
 1. Login to your **Control Panel**.
-2. Navigate to **Setup :material-menu-right: App Store**. <img src= "/customer-portal/img/cc1.png">
+2. Navigate to **Setup :material-menu-right: App Store**. <img src= "/customer-portal/img/1cc.png"> <img src= "/customer-portal/img/1cc.png" style="border: 2px solid #4472C4;">
 3. Click on the **Contact Center** application. Click on `Install`. <img src= "/customer-portal/img/cc2.png">
 4. Modify the `App Name` (optional) and select the app `Version` (optional). Click `Install`. <img src= "/customer-portal/img/cc3.png">
 5. Click on `Config`. <img src= "/customer-portal/img/cc4.png">
@@ -372,7 +372,7 @@ You can configure multiple dialers based on your specific campaign requirements.
 
             7. The `Leadset Dashboard` is also modified. <img src="/customer-portal/img/cc37new.png" width= "800" style="border: 3px solid #4472C4;">
 
-13.**Continue to Modify**: If you click here, it will redirect to ConnexCS's Data Sure. [Click here](https://docs.connexcs.com/datasuite/) to know more.
+13.**Continue to Modify**: If you click here, it will redirect to the Data Sure. [Click here](https://docs.connexcs.com/datasuite/) to know more.
 
 14.**Edit Leadset**: Modify the details of an existing Leadset. The system will present the same interface as `Create Leadset`.
 
@@ -551,7 +551,7 @@ You can configure multiple dialers based on your specific campaign requirements.
          6. The successful upload can be seen in the image. <img src="/customer-portal/img/cc56.png" widht= "800" style="border: 3px solid #4472C4;">
          7. The updated `Leadset Dashboard` can be seen as. <img src="/customer-portal/img/cc87.png" style="border: 3px solid #4472C4;">
 
-13.**Continue to Modify**: If you click here, it will redirect to ConnexCS's Data Sure. [Click here](https://docs.connexcs.com/datasuite/) to know more.
+13.**Continue to Modify**: If you click here, it will redirect to the Data Sure. [Click here](https://docs.connexcs.com/datasuite/) to know more.
 
 14.**Edit Leadset**: Modify the details of an existing Leadset. The system will present the same interface as `Create Leadset`.
 
@@ -687,7 +687,7 @@ You can configure multiple dialers based on your specific campaign requirements.
             6. The successful upload can be seen in the image. <img src="/customer-portal/img/cc75new.png" style="border: 3px solid #4472C4;">
             7. The leadset dashboard now displays total uploaded leads and dialable leads as well. <img src="/customer-portal/img/cc76.png" style="border: 2px solid #4472C4;">
 
-14. **Continue to Modify**: If you click here, it will redirect to ConnexCS's Data Sure. [Click here](https://docs.connexcs.com/datasuite/) to know more.
+14. **Continue to Modify**: If you click here, it will redirect to the Data Sure. [Click here](https://docs.connexcs.com/datasuite/) to know more.
 
 15. **Edit Leadset**: Modify the details of an existing Leadset. The system will present the same interface as `Create Leadset`.
 
