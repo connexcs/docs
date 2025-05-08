@@ -334,5 +334,7 @@ nav:
         - Transfer: apps/components/transfer.md
         - Tree Select: apps/components/tree-select.md
         - Webphone: apps/components/webphone.md
+    - Contact Center: customer-portal/cp-contact-center.md
+    - Dialer: apps/contact.md
 
     
