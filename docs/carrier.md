@@ -11,9 +11,9 @@ Use the **Carrier** section in **ConnexCS** for simplified Carrier management wh
 ### Key Features
 
 1. **Call Completion**:
-   1. A call may not complete if a customer lacks credit.
+      1. A call may not complete if a customer lacks credit.
 
-   2. Calls will still connect if a carrier has credit; the carrier credit field is informational and doesn't prevent calls.
+      2. Calls will still connect if a carrier has credit; the carrier credit field is informational and doesn't prevent calls.
 
 2. **Carrier Rate Card Structure**: Every carrier has one or more rate cards. Each rate card contains the charges imposed by the carrier.
 
