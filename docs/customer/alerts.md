@@ -6,7 +6,30 @@ Create **Alerts** to contact customers when specific occurrences occur.
 
 **Alerts** are a useful way to track transaction information, mainly when your customer lists fill up.
 
-For example, the mechanism used to send Alerts when a customer's balance gets below a certain threshold. To send Alerts when a specified usage parameter gets too high.
+It helps automate monitoring and notifications based on key **performance metrics**.
+These alerts are triggered when predefined thresholds are met, ensuring proactive management.
+
+Alerts are primarily communicated via email to designated recipients.
+
+!!! example
+    The mechanism used to send Alerts when a customer's balance gets below a certain threshold.
+    ```mermaid
+    graph TD
+    A[Monitor Customer Data] --> B{Check Balance Threshold}
+    B -- Below Threshold --> C[Balance Below Threshold] --> D[Send Balance Alert]
+    B -- Above Threshold --> E{No Alerts Needed}
+
+    %% Properly formatted notes
+    B:::note -->|Compare current balance with threshold| B
+    E:::note -->|Compare current usage with specified limit| B
+    D:::note -->|Notify customer via email/SMS/etc.| D
+
+    %% Styling nodes
+    classDef alert fill:#,stroke:#333,stroke-width:2px;
+    classDef note fill:#ffffcc,stroke:#333,stroke-width:1px,font-style:italic;
+    
+    class A,B,C,D,E,F,G,H alert;
+    ```
 
 Assigning the recipient's e-mail address to the relevant department heads in a business pipeline automates a procedure that would require manual attention.
 
@@ -14,6 +37,15 @@ Since the threshold represents the most numeric traits related to VoIP, it can f
 
 !!! note "Global Alerts"
     You can also configure Alerts for specific Customers or Carriers under **Global :material-menu-right: Alerts**, which displays all configured Alerts.
+
+## Key Features
+
++ **Custom Alert Triggers**: Alerts can be configured based on specific thresholds.
++ **Automated Email Notifications**: Notifications are sent to specified recipients.
++ **Reset Thresholds**: Alerts reset once conditions return to normal.
++ **Configurable Sample Periods**: ASR, ACD, PDD, and other metrics can be monitored over custom time frames.
++ **Custom Templates**: Users can create their own alert templates.
++ **ScriptForge Integration**: Allows advanced, script-based monitoring and custom alerts.
 
 ## Create an Alert
 
@@ -55,15 +87,58 @@ If it goes above 31%, then the Alert is reset.
 
 **ASR Penalty** Similarly, you could set the ASR Threshold to 15, and enable a penalty of 1 hour. This would disable the customer for 1 hour whenever their completed calls drop below 15% of total calls.
 
+!!! question "How it works"
+    + **Trigger Condition**: Activated when the Answer-Seizure Ratio (ASR) falls below 30%.
+    + **Notification**: Sends an email alert stating that ASR has dropped below the threshold.
+    + **Reset Condition**: The alert resets when ASR rises above 31%.
+    + **Sample Period**: Users can configure measurement intervals (e.g., last 5 minutes, last 30 minutes).
+
+    ```mermaid
+    graph TD
+    A[Monitor ASR] --> B{ASR < 30%?}
+    B -- Yes --> C[Trigger ASR Alert] --> D[Send Email Notification]
+    B -- No --> E[No Alert]
+
+    C --> F{ASR >= 31%?}
+    F -- Yes --> G[Reset Alert]
+    F -- No --> H[Continue Monitoring]
+
+    %% Notes
+    B:::note -->|Activated when ASR drops below 30%| B
+    D:::note -->|Email notification sent to user| D
+    F:::note -->|Alert resets when ASR rises above 31%| F
+
+    %% Styling nodes
+    classDef alert fill:#,stroke:#333,stroke-width:2px;
+    classDef note fill:#ffffcc,stroke:#333,stroke-width:1px,font-style:italic;
+    
+    class A,B,C,D,E,F,G,H alert;
+    ```
+!!! question "What's the purpose?"
+    1. Prevents junk traffic that affects carrier profitability.
+    2. Protects the network from non-connecting calls.
+    3. Automatically re-enables calling after the penalty duration.
+
 &emsp;![alt text][alerts-sample2]
 
 **Daily Balance** For customers who run close to their balance on a regular basis.
 
+Can be scheduled to provide daily updates on key metrics:
+
++ Balance alerts
++ ASR alerts
++ ACD alerts
++ PDD alerts
++ ScriptForge alerts
+
 &emsp;![alt text][alerts-sample3]
 
-**Script Forge**  When you set the Area to "Script Forge," it will bypass all the other Alerts fields and allow you to select an existing Script Forge script.
+**Script Forge Alerts**  When you set the Area to "Script Forge," it will bypass all the other Alerts fields and allow you to select an existing Script Forge script.
 
 For example, a script could check locked CLIs by a carrier and then send a regular report with that information.
+
++ Advanced alerting using JavaScript.
++ Allows holistic monitoring, such as tracking CLI-based call blocks.
 
 [**Click here**](https://docs.connexcs.com/developers/scriptforge/) for details on Script Forge.
 

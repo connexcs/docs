@@ -2,19 +2,39 @@
 
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: DID**
 
-A **Direct Inward Dial (DID)** number is one that exists on the public telephone network.
+## Overview
 
-When you dial the number, the carrier delivers the call to ConnexCS.
+A **Direct Inward Dial (DID)** number is one that exists on the public telephone network. It enables customers to receive calls from the public telephone network.
 
-ConnexCS then passes it to the customer based on the configured settings. It allows inbound calls to bypass a PBX (Private Branch Exchange) or another routing to connect directly to the destination number.
+!!! question "How it works?"
+    When you dial the number, the carrier delivers the call to ConnexCS. ConnexCS then passes it to the customer based on the configured settings.
+    It allows inbound calls to bypass a PBX (Private Branch Exchange) or another routing to connect directly to the destination number.
 
-Create and edit **DID parameters** within the individual customer cards. You can either use Bulk Upload or manually **Configure DID** as shown below.
-
-!!! tip "Stats Button"
-    Use **`Stats`** to view the **Per Number Report** of DIDs.
+    ```mermaid
+    graph TD
+    A[Dialed Number] --> B[Carrier Delivers Call to ConnexCS]
+    B --> C[ConnexCS Processes Call]
+    C --> D{Check Routing Rules}
+    
+    D -- Direct Routing --> E[Forward Call to Customer]
+    D -- PBX Bypass --> F[Connect Directly to Destination Number]
+    
+    E --> G[Call Successfully Connected]
+    F --> G[Call Successfully Connected]
+    ```
 
 !!! note "Global DID"
     You can also configure and manage a DID for specific Customers or Carriers in **Global :material-menu-right: DID**, which displays all configured DID.
+
+## Key Features
+
++ **Inbound Call Routing**: Calls from the public network are directed to customer systems.
++ **Custom Destination Management**: Calls can be forwarded to SIP URIs, external numbers, or internal extensions.
++ **Retain Display Name Option**: Configurable settings to preserve caller name information. By default, the display name is stripped to prevent unnecessary data exposure.
++ **Capacity Limits**: Manage call flow with channel restrictions.
++ **Media and Call Recording Settings**: Control media proxy modes and enable call recording.
++ **Billing Packages**: Assign recurring cost structures to DIDs.
++ **ScriptForge Integration**: Custom script-based call handling.
 
 ## Configure Direct Inward Call
 
@@ -38,27 +58,27 @@ To configure individual DIDs, click :material-plus:
 Select the destination to deliver incoming calls for the DID:
 
 + **URI**: Set the Destination DID (number or extension) and IP to forward calls to a specific SIP URI (Session Initiation Protocol, Uniform Resource Identifier).
-+ **External**: To send the call back out to the internet, use a prefix (defined in Customer :material-menu-right: Routing ) to select the outbound route, then the number to send the call to.
++ **External**: To send the call back out to the internet(public network) through a different carrier.
+Use a prefix (defined in Customer :material-menu-right: Routing ) to select the outbound route, then the number to send the call to.
 + **Internal**: Send internally to an extension, a Class5 feature, or even to another customer.
-+ **Circuit Test**: *in progress*.
++ **Circuit Test**: Enables users to verify the integrity and performance of call routing. By pointing a Direct Inward Dialing (DID) number back to the Circuit Test system, users can evaluate critical metrics such as MOS, DTMF, and Caller ID consistency. This process ensures that the purchased routes meet expected standards.
++ **ConneXML**: The incoming call is routed to a ConneXML script, which defines the subsequent call behavior.
 
-#### Add ConneXML Tab to DID
-
-1. Login to your Control Panel.
-2. Navigate to Management :material-menu-right: Customer :material-menu-right: Customer[Name] :material-menu-right: DID :material-menu-right: blue `+` button.
-<img src= "/customer/img/did1.png">
-
-3.In the **Basic** tab select your customer.
-<img src= "/customer/img/did2.png">
-
-4.The **Destination** tab will automatically appear, click on **Edit** and then **ConneXML** and insert the link.
-<img src= "/customer/img/did3.png">
-
-5.Click `Save`.
+!!! question "How it works?"
+    ```mermaid
+    graph TD
+        A[Call Initiated through Carrier] --> B[Call Enters through Assigned DID]
+        B --> C[System Identifies Call as Part of Circuit Test]
+        C --> D[Call Redirected back to Circuit Test System]
+        D --> E[System Evaluates and Logs Key Quality Parameters]
+    ```
 
 ### Capacity Limits
 
 Set the maximum number of INBOUND concurrent calls in **Channels**, and Calls Per Second (CPS) in **Flow Speed**.
+
+It Defines channel restrictions for inbound calls.
+This feature also controls the rate at which calls enter the system.
 
 ### Media
 
@@ -76,14 +96,8 @@ For more details on these fields, see [**Media in Customer Routing**](https://do
 
     :material-menu-right: `Zone (recommended)`- Select any of the regional servers.
 
-    + Disabled- never record calls
-    + 1% Sampling
-    + 5% Sampling
-    + 25% Sampling
-    + 50% Sampling
-    + Enabled (Always On)
-
-+ **Call Recording**: Select the % of calls to record for this customer:
++ **Call Recording**: Its an optional feature for compliance and quality monitoring.
+Select the % of calls to record for this customer:
     + Disabled- never record calls
     + 1% Sampling
     + 5% Sampling
@@ -143,7 +157,7 @@ For each Package there is an associated **Minimum Days** the package is valid fo
 !!! Note
     In all cases, calls without attestation will also be blocked.
 
-+ **Tags**: Add these for informational purposes.
++ **Tags**: Tags allow users to categorize DIDs for reference (e.g., High Capacity, Failure). Add these for informational purposes.
 
 + **P-Asserted-ID**: Either `Remove` the P-Asserted-ID so it doesn't reach the customer, or leave it `Default` to preserve it.
 
@@ -158,6 +172,8 @@ For each Package there is an associated **Minimum Days** the package is valid fo
 ### Script Forge
 
 Run a custom script on calls to the DID to perform actions such as routing based on the time of day or if specific users or numbers are active.
+
+Use ScriptForge for **Dynamic Call Management**.
 
 + **Script Forge**: Select the script you wish to run for the **DID**.
 + **Timeout**: Select the time for how long your script should.
