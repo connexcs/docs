@@ -62,7 +62,7 @@ Select the destination to deliver incoming calls for the DID:
 Use a prefix (defined in Customer :material-menu-right: Routing ) to select the outbound route, then the number to send the call to.
 + **Internal**: Send internally to an extension, a Class5 feature, or even to another customer.
 + **Circuit Test**: Enables users to verify the integrity and performance of call routing. By pointing a Direct Inward Dialing (DID) number back to the Circuit Test system, users can evaluate critical metrics such as MOS, DTMF, and Caller ID consistency. This process ensures that the purchased routes meet expected standards.
-+ **ConneXML**: The incoming call is routed to a ConneXML script, which defines the subsequent call behavior such as forwarding, announcements, condition checks, or termination.
++ **ConneXML**: The incoming call is routed to a ConneXML script, which defines the subsequent call behavior.
 
 !!! question "How it works?"
     ```mermaid
@@ -95,13 +95,6 @@ For more details on these fields, see [**Media in Customer Routing**](https://do
     :material-menu-right: `Direct RTP (no proxy)`- Bypass ConnexCS, so media flows directly between the customer and carrier.
 
     :material-menu-right: `Zone (recommended)`- Select any of the regional servers.
-
-    + Disabled- never record calls
-    + 1% Sampling
-    + 5% Sampling
-    + 25% Sampling
-    + 50% Sampling
-    + Enabled (Always On)
 
 + **Call Recording**: Its an optional feature for compliance and quality monitoring.
 Select the % of calls to record for this customer:
