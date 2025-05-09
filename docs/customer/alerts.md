@@ -17,12 +17,12 @@ Alerts are primarily communicated via email to designated recipients.
     graph TD
     A[Monitor Customer Data] --> B{Check Balance Threshold}
     B -- Below Threshold --> C[Balance Below Threshold] --> D[Send Balance Alert]
-    B -- Above Threshold --> E{No Alert}
+    B -- Above Threshold --> E{No Alerts Needed}
 
     %% Properly formatted notes
     B:::note -->|Compare current balance with threshold| B
     E:::note -->|Compare current usage with specified limit| E
-    G:::note -->|Notify customer via email/SMS/etc.| G
+    D:::note -->|Notify customer via email/SMS/etc.| D
 
     %% Styling nodes
     classDef alert fill:#,stroke:#333,stroke-width:2px;
