@@ -21,7 +21,7 @@ Alerts are primarily communicated via email to designated recipients.
 
     %% Properly formatted notes
     B:::note -->|Compare current balance with threshold| B
-    E:::note -->|Compare current usage with specified limit| E
+    E:::note -->|Compare current usage with specified limit| B
     D:::note -->|Notify customer via email/SMS/etc.| D
 
     %% Styling nodes
