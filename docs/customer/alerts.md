@@ -7,24 +7,21 @@ Create **Alerts** to contact customers when specific occurrences occur.
 **Alerts** are a useful way to track transaction information, mainly when your customer lists fill up.
 
 It helps automate monitoring and notifications based on key **performance metrics**.
-These alerts are triggered when predefined thresholds are met, ensuring proactive network management.
+These alerts are triggered when predefined thresholds are met, ensuring proactive management.
 
 Alerts are primarily communicated via email to designated recipients.
 
 !!! example
-    The mechanism used to send Alerts when a customer's balance gets below a certain threshold. To send Alerts when a specified usage parameter gets too high.
+    The mechanism used to send Alerts when a customer's balance gets below a certain threshold.
     ```mermaid
     graph TD
     A[Monitor Customer Data] --> B{Check Balance Threshold}
     B -- Below Threshold --> C[Balance Below Threshold] --> D[Send Balance Alert]
-    B -- Above Threshold --> E{Check Usage Parameter}
-    E -- Exceeded --> F[Usage Parameter Exceeded] --> G[Send Usage Alert]
-    E -- Within Limit --> H[No Alerts Needed]
+    B -- Above Threshold --> E{No Alert}
 
     %% Properly formatted notes
     B:::note -->|Compare current balance with threshold| B
     E:::note -->|Compare current usage with specified limit| E
-    D:::note -->|Notify customer via email/SMS/etc.| D
     G:::note -->|Notify customer via email/SMS/etc.| G
 
     %% Styling nodes
