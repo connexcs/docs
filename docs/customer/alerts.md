@@ -131,8 +131,6 @@ Can be scheduled to provide daily updates on key metrics:
 + PDD alerts
 + ScriptForge alerts
 
-**Customization**: Users can bundle multiple alerts into a single notification.
-
 &emsp;![alt text][alerts-sample3]
 
 **Script Forge Alerts**  When you set the Area to "Script Forge," it will bypass all the other Alerts fields and allow you to select an existing Script Forge script.
@@ -141,10 +139,6 @@ For example, a script could check locked CLIs by a carrier and then send a regul
 
 + Advanced alerting using JavaScript.
 + Allows holistic monitoring, such as tracking CLI-based call blocks.
-+ Automated Reports: Can generate custom reports and send alerts based on findings.
-
-!!! Example "Example Use Case"
-    Identifies whether a call block is due to a CLI issue or other reasons by analyzing connected vs. failed calls.
 
 [**Click here**](https://docs.connexcs.com/developers/scriptforge/) for details on Script Forge.
 

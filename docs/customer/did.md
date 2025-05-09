@@ -23,11 +23,6 @@ A **Direct Inward Dial (DID)** number is one that exists on the public telephone
     F --> G[Call Successfully Connected]
     ```
 
-Create and edit **DID parameters** within the individual customer cards. You can either use Bulk Upload or manually **Configure DID** as shown below.
-
-!!! tip "Stats Button"
-    Use **`Stats`** to view the **Per Number Report** of DIDs.
-
 !!! note "Global DID"
     You can also configure and manage a DID for specific Customers or Carriers in **Global :material-menu-right: DID**, which displays all configured DID.
 
@@ -67,6 +62,7 @@ Select the destination to deliver incoming calls for the DID:
 Use a prefix (defined in Customer :material-menu-right: Routing ) to select the outbound route, then the number to send the call to.
 + **Internal**: Send internally to an extension, a Class5 feature, or even to another customer.
 + **Circuit Test**: Enables users to verify the integrity and performance of call routing. By pointing a Direct Inward Dialing (DID) number back to the Circuit Test system, users can evaluate critical metrics such as MOS, DTMF, and Caller ID consistency. This process ensures that the purchased routes meet expected standards.
++ **ConneXML**: The incoming call is routed to a ConneXML script, which defines the subsequent call behavior such as forwarding, announcements, condition checks, or termination.
 
 !!! question "How it works?"
     ```mermaid
@@ -76,20 +72,6 @@ Use a prefix (defined in Customer :material-menu-right: Routing ) to select the 
         C --> D[Call Redirected back to Circuit Test System]
         D --> E[System Evaluates and Logs Key Quality Parameters]
     ```
-
-#### Add ConneXML Tab to DID
-
-1. Login to your Control Panel.
-2. Navigate to Management :material-menu-right: Customer :material-menu-right: Customer[Name] :material-menu-right: DID :material-menu-right: blue `+` button.
-<img src= "/customer/img/did1.png">
-
-3.In the **Basic** tab select your customer.
-<img src= "/customer/img/did2.png">
-
-4.The **Destination** tab will automatically appear, click on **Edit** and then **ConneXML** and insert the link.
-<img src= "/customer/img/did3.png">
-
-5.Click `Save`.
 
 ### Capacity Limits
 
@@ -199,10 +181,6 @@ For each Package there is an associated **Minimum Days** the package is valid fo
 Run a custom script on calls to the DID to perform actions such as routing based on the time of day or if specific users or numbers are active.
 
 Use ScriptForge for **Dynamic Call Management**.
-
-Modify timeouts and routes based on real-time conditions.
-
-!!! Example "Route calls differently based on the caller's availability status."
 
 + **Script Forge**: Select the script you wish to run for the **DID**.
 + **Timeout**: Select the time for how long your script should.
