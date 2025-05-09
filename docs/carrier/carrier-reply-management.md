@@ -14,24 +14,11 @@ See the [**Wikipedia List of SIP response codes**](https://en.wikipedia.org/wiki
 
 ### Key Features
 
-+ **Understanding SIP Response Codes** 
-    + SIP response codes range from 100 to 606.
-
-+ **Commonly used codes include**:
-    + **180 (Ringing)**: Indicates ringing without SDP.
-    + **183 (Session Progress)**: Indicates ringing with SDP (network-generated ringing).
-
 + **Response Code Modification**:
     + Allows replacement of SIP responses (e.g., replacing 183 with 180 when required by specific switches).
 
 + **Failover Management**:
-    + Defines whether a call should retry another carrier upon failure.
-    + **Response codes categorized as**:
-        + **400-series errors (Client-side)**: Typically don't trigger failover (e.g., 404 - Not Found)
-        + **500-series errors (Server-side)**: Usually trigger failover.
-        + **600-series errors (Global network issues)**: Also may trigger failover.
-
-+ **Allows rewriting response codes for better compatibility**.
+    + Allows rewriting response codes for better compatibility.
 
 ## To edit Reply Codes
 

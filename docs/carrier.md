@@ -10,18 +10,15 @@ Use the **Carrier** section in **ConnexCS** for simplified Carrier management wh
 
 ### Key Features
 
-1. **Credit System**:
-      1. **Credit Calculation**:
-            1. The carrier's credit runs in reverse compared to the customer's credit.
-            2. As both the customer and carrier spend, credits decrease.
-      2. **Call Completion**:
-            1.  A call may not complete if a customer lacks credit.
-            2.  Calls will still connect if a carrier has credit; the carrier credit field is informational and doesn't prevent calls.
+1. **Call Completion**:
+   1. A call may not complete if a customer lacks credit.
 
-2.  **Carrier Rate Card Structure**: Every carrier has one or more rate cards. Each rate card contains the charges imposed by the carrier.
+   2. Calls will still connect if a carrier has credit; the carrier credit field is informational and doesn't prevent calls.
+
+2. **Carrier Rate Card Structure**: Every carrier has one or more rate cards. Each rate card contains the charges imposed by the carrier.
 
 !!! Tip "Key Considerations"
-    The system shouldn't display the "Auto-generate invoice" option in this section.
+    The system doesn't display the "Auto-generate invoice" option in this section.
 
 <img src= "/carrier/img/carriermain.png">
 
@@ -120,14 +117,10 @@ From the **Carriers** page, you can perform several management operations.
     * **Consec Fail Backoff:** When Enabled, if a carrier goes down, only a fraction of calls will be sent to the carrier until the start to complete again (calls aren't completely disabled otherwise there is no way to know when the carrier is back up again). The First Reply Timeout is skipped.
         * **Purpose**:
             * Helps determine if a route is down.
-            * Individual SIP codes can be misleading for route status determination.
         * **Functionality**:
             * Counts the number of consecutive failed calls.
             * Resets to zero when a call successfully connects.
             * If 10,000 consecutive calls fail, it indicates a route is likely down.
-        * **Potential Limitations**: 
-            * Customers sending all invalid numbers could trick the system, but statistically, valid calls should connect within a reasonable range.
-
     * **Tags** and **TOML:** Not applicable to carriers.
     * **Ext.Accounting ID:** This is used to fill in work in an external accounting field to correlate between Connexcs and the external accountancy system.
     * **Call Recording Retention Days:** How long the customer wants to keep the recorded calls.
