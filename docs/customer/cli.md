@@ -34,9 +34,7 @@ The **B-number, or B-leg**, is the **dialed number**, representing the **outgoin
 
 4. **Forced CLI Assignments**: Ensure calls use predefined numbers when necessary.
 
-5. **Peer-Asserted Identity Management**: Manage trust and visibility of caller IDs at the network level.
-
-6. **Directional Routing**: Apply rules to both inbound (origination) and outbound calls.
+5. **Directional Routing**: Apply rules to both inbound (origination) and outbound calls.
 
 ## CLI Routing Rules
 
@@ -54,7 +52,6 @@ By default, a customer account will pass all calls, even with no configured CLI 
 
 !!! Note "Summary"
     1. By default, if CLI restrictions aren't enabled, all incoming CLIs are allowed and passed through the system without filtering.
-    2. If CLI restrictions are enabled but no numbers are listed, no calls will be allowed.
 
 2.**CLI Allow List**
 
@@ -77,24 +74,6 @@ _Field details:_
 + **CLI**: To allow the required CLIs, enter the required number or a regular expression (to match and replace).
 
 + **Rewrite CLI**: A CLI can be rewritten. For example, you can add `123456789` in the CLI box and then rewrite by adding `987654321` in the rewrite CLI box. (For more advanced CLI manipulation, see [**Advanced CLI Match & Manipulation**](https://docs.connexcs.com/customer/cli/#advanced-cli-match-and-manipulation) below.)
-
-+ **Pre-Asserted-ID (PAID)**: The Peer-Asserted Identity (P-Asserted-ID) header is used in telecom networks to verify the actual caller identity. It helps carriers trace calls and enforce security. To allow the required PAID, enter the required number or a regular expression to match or replace.
-  
-    + **Purpose**:
-        + **Caller ID Management**: Determines whether the     presented caller ID is trusted.
-        + **Privacy Control**: Ensures withheld numbers remain private while allowing traceability at the network level.
-        + **Regulatory Compliance**: Allows authorities to trace nuisance or fraudulent calls.
-
-    + **How It Works**:
-        + The "From" field contains the public caller ID, visible to the call recipient.
-        + The "P-Asserted-ID" contains the actual network-level caller ID, which can be different from the "From" number.
-        + Carriers can remove or modify P-Asserted-ID values based on policies.
-  
-    + **Configuration Options**
-        + **Trusting the Client**: Allow the customer's provided P-Asserted-ID to pass through.
-        + **Enforcing a Fixed P-Asserted-ID**: Assign a predefined value regardless of the original caller ID.
-        + **Using a Main Billable Number**: Present a primary company number as the caller ID.
-        + **Utilizing Network Identification Numbers**: Assign a unique but non-dialable identifier for network-level identification.
 
 + **Rewrite P-Asserted-ID**: This is a SIP Header almost same as the FROM header but classified as a private, or network-level identifier.
 Telephone companies use it to identify call originators. As it's stripped at the call server, the client end-points only see the FROM field.
@@ -171,13 +150,13 @@ Any number configured as a CLI is a part of the permitted list (unless you use e
 
 Block all calls that don't have the CLI "123456789":
 
-| CLI | Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
+| CLI | P-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
 |-----|-----|-----|-----|-----|-----|-----|
 | `123456789`|||| No| Disabled | None|
 
 Allow various CLIs to pass (by entering 2 or more records):
 
-| CLI| Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
+| CLI| P-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
 |-------------|-----------------|-------------|-----------------------|--------|----------|--------------|
 | `123456789`|||| No| Disabled | None |
 | `987654321`|||| No| Disabled | None |
@@ -406,13 +385,10 @@ Sometimes it can be useful to keep all or part of the transmitted CLI and manipu
 Regular expressions (regex) can be used to define complex CLI rules:
 
 !!! Example
-    1. Allow all numbers that begin with `123456` and end in either `5`, `8`, or `3`.
-    2. If a customer sends a call where the CLI starts with a `9` we can strip it out and replace it with a `44`.
+    1. If a customer sends a call where the CLI starts with a `9` we can strip it out and replace it with a `44`.
     So, `9123456789` will become `4423456789`.
 
 Use **regex anchors** (e.g., ^ for start, $ for end) to precisely control matching logic.
-
-Regular expressions enable advanced filtering beyond simple number lists.
 
 | CLI| Pre-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB |
 |----------------|-----------------|-------------|-----------------------|--------|----------|--------------|
