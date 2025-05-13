@@ -4,7 +4,7 @@
 
 **Route Stats** displays Channel, Channel Breach, and Calls Per Second (CPS) Breach data based on individual routes.
 
-It section provides routing performance insights.
+This section provides routing performance insights.
 
 **Key Features**
 

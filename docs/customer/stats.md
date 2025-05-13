@@ -20,8 +20,6 @@ Data related to Session Initiation Protocol (SIP) signalling and call completion
 | **Attempts**| It's helpful to compare total connected calls to total attempted calls (which correlates to CPS below)|
 | **Balance**| Balance over time|
 | **CPS**| Calls per Second over time|
-||Helps identify customers exceeding CPS limits.|
-||Useful for troubleshooting low connectivity complaints.|
 | **DTMF**| DTMF (Dual Tone Modulated Frequency) percentages|
 | **Codes**| SIP response codes ([**List of SIP Response Codes**](https://en.wikipedia.org/wiki/List_of_SIP_response_codes))|
 | **Codes Total**| Allows you to see SIP codes as a percentage, which is useful for identifying potential problems|

@@ -4,7 +4,7 @@
 
 ## Overview
 
-The **Latest Calls** tab provides real-time records of incoming and outgoing calls and deugging tools. View recent calls and their Session Initiation Protocol (SIP) traces, and run simulated calls.
+The **Latest Calls** tab provides records of incoming and outgoing calls, along with powerful debugging tools. You can view recent calls and their full SIP traces, as well as simulate calls for testing and troubleshooting.
 
 See [**Logging**](https://docs.connexcs.com/logging/) section for details on these functions. To view Latest Calls for all customers, go to the Logging section in ConnexCS.
 
@@ -20,8 +20,7 @@ See [**Logging**](https://docs.connexcs.com/logging/) section for details on the
 
 3. **Allows users to**:
       1. Simulate calls.
-      2. Refresh call logs.
-      3. View raw call data.
+      2. View raw call data.
 
 ## Simulate Calls
 

@@ -11,12 +11,7 @@ Use the **Refresh** button to get up-to-date information.
 ## Features and Benefits
 
 1. Displays currently active calls.
-2. Calls in "Ended" state may still be visible for a short period due to:
-   + Ongoing media server tear-down processes.
-   + Billing system finalization.
-   + Ensuring all call-related data is logged correctly.
-3. Typically, ended calls disappear within **60 seconds**.
-4. Helps troubleshoot **call termination delays**.
+2. Helps troubleshoot **call termination delays**.
 
 !!! note "Ended Status"
     "Ended" indicates a call is over, but the telephony switches are still tearing down the call, including the Real-time Transport Protocol (RTP) stream and any final signaling. After that, the server gathers data for billing.
