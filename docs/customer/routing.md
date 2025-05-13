@@ -10,15 +10,16 @@ Ingress Routing in ConnexCS is a crucial component for managing and authenticati
 
  By leveraging Ingress Routing, customers can ensure efficient, secure, and customized handling of inbound call traffic, optimizing their overall VoIP operations.
 
-### Key Features and Benefits 
+### Key Features and Benefits
 
-+ **Flexible Authentication**: Supports multiple authentication methods including IP-based, credential-based, and ANI authentication.
-+ **Customizable Routing Rules**: Users can define rules based on different parameters such as source IP, username, and number prefixes.
++ **Customizable and Enhanced Routing Rules**: Users can define rules based on different parameters such as source IP, username, and number prefixes.
+
 + **Enhanced Security**: Ensures only authenticated traffic is allowed, preventing unauthorized access.
+
 + **Efficient Traffic Handling**: Optimizes call routing for seamless operations.
-+ **Improved Security**: Ensures only authorized calls are processed.
+
 + **Operational Efficiency**: Reduces manual intervention with automated routing.
-+ **Enhanced Customization**: Customers can tailor routing rules to their specific needs.
+
 + **Scalability**: Supports high-volume traffic with optimized performance.
 
 !!! question "How it works?"
@@ -44,24 +45,6 @@ Ingress Routing in ConnexCS is a crucial component for managing and authenticati
     classDef highlight fill:#f9f,stroke:#333,stroke-width:2px;
     class A,B,C,D,E,F,G,H,I,J,K,L,M highlight;
     ```
-### Authentication Methods
-
-Ingress Routing supports three primary authentication methods:
-
-1. **IP Authentication**:
-      1. Calls are authenticated based on the source IP address.
-      2. Useful for direct interconnects and trusted partners.
-      3. Eliminates the need for username-password-based authentication.
-
-2. **Credential-Based Authentication**:
-      1. Uses a username and password for authentication.
-      2. Suitable for scenarios where IP addresses are dynamic or unknown.
-      3. Provides an additional layer of security.
-
-3. **ANI Authentication**:
-      1. Authenticates calls based on the caller’s ANI (Automatic Number Identification).
-      2. Useful for customers requiring number-based verification.
-      3. Can be combined with other authentication methods for enhanced security.
 
 ### Ingress Routing Process
 
