@@ -70,7 +70,7 @@ To enable, click **:material-plus:** next to IP Authentication:
     + **Outbound Proxy**: Enter the IP address of a Proxy server for calls to route to before being sent to the carrier. This rewrites the UAC IP in the VIA field of the SIP header. 
     This reduces management overhead as a customer only needs to authorize a single IP. 
     Additionally, multiple addresses can be load-balanced using the AnyEdge system. 
-    + **Flags**: Check **CLI Authentication** flag for situations where Accounts are unable to use [**Tech Prefix**](https://docs.connexcs.com/customer/routing/#basic) to differentiate customers using the same IP. CLI Tags is another way to do it. 
+    + **Flags**: Check **CLI Authentication** flag for situations where Accounts are unable to use [**Tech Prefix**](https://docs.connexcs.com/customer/routing/#basic) to differentiate customers using the same IP.
         Check **Disable NAT** flag to disable NAT settings.
   
         <img src= "/customer/img/advanced.png" width= "600">
@@ -171,7 +171,7 @@ To enable, click **:material-plus:** next to IP Authentication:
 ## SIP User Authentication
 
 When you enable **SIP Authentication**, ConnexCS will reject the initial SIP INVITE with a "407 Authentication Required". This message includes a 'nonce' (a uniquely randomly generated hashed number). The customer switch will send appropriate authentication information to ConnexCS, which will connect the call. 
-SIP Authentication involves using **Usernames** and **Passwords** to authenticate SIP connections.
+SIP Authentication involves using **Usernames**, **Passwords** and your **Server's IP** to authenticate SIP connections.
 
 Generic SIP Trace showing the Challenge Response:
 
@@ -213,9 +213,6 @@ To enable, click **:material-plus:** next to SIP User Authentication:
 
     + **SIP Profile**: You can select the created [SIP Profile](https://docs.connexcs.com/setup/config/sip-profile/) here.
     + **Username**: This will be the Username used for SIP authentication (must match configuration on the customer UAC). If the Customer has [**Internal Number Block**](https://docs.connexcs.com/customer/main/#internal-number-block) set on the **Main** tab, you can only select the Username from available extensions. If a Username is already in use on the Account, they will get an error "Duplicate User Detected". Required when sending calls out to a remote system; the switch behaves in UAC (User Agent Client) mode.
-        !!! Example
-            If connecting to a GSM gateway or multi-tenant system, you may need to register with a username and password.
-
     + **Password**: Must match with the configuration on the customer UAC.
     + **Channels**: Set the maximum number of concurrent calls for this switch. 
     + **Flow Speed**: Set the Calls Per Second (CPS) (0 = unlimited calls). 
@@ -267,13 +264,15 @@ To enable, click **:material-plus:** next to SIP User Authentication:
         + Enabling NAT SIP Ping keeps the port open.
     
     + **Retain DID**: When you enable this, inbound calls will retain the destination number (DID), and the call is sent into the system, rather than using the SIP Username or routing calls to a predefined destination. 
-        + **Key Considerations**:
-          + This does not affect the "From" number.
-          + Useful for maintaining correct call routing.
-        !!! Example
-            + **Without Retain DID**: Call to +1234567890 routes to TestRIS1.
-            + **With Retain DID**: The call retains +1234567890 as the destination.
-   
+        
+        !!! Example "DID Setup"
+            + **DID**: `+1234567890`
+            + **Destination**: Internal SIP User `TestRIS1`
+            
+            + **Behavior**:
+                + Without Retain DID: Call to `+1234567890` **routes directly** to `TestRIS1`.
+                + **With Retain DID**: Call keeps `+1234567890` as the **destination**, allowing further routing by downstream systems.
+
     + **Smart Extension**: It simplifies call transfers and enables advanced features like call barging and interception by centralizing REFER message handling within the Class 5 system. Unlike traditional SIP workflows, where the UAC or softphone manages transfers, this approach offloads complexity to us, enhancing functionality, user experience, and control through seamless integration of Class 4 and Class 5 systems.
           
           + **Smart Extension Workflow**:
@@ -429,9 +428,9 @@ To enable, click **:material-plus:** next to SIP User Authentication:
        
        + Configure email notifications for new voicemails.
        
-       + Set up a voicemail password for retrieval via an interactive menu.
+       + Set up a voicemail password for retrieval.
        
-       + To access voicemail, dial *1 (subject to confirmation in system settings). 
+       + To access voicemail, dial *1 (subject to routing settings). 
     
     See [**Voicemail**](https://docs.connexcs.com/class5/voicemail/) for information on accessing Voicemail. 
 
@@ -456,19 +455,19 @@ It efficiently manages channel resources across multiple SIP users, ensuring the
 
 1. **Channel Allocation in Control Panel**:
 
-+ Each customer account is assigned a maximum number of channels via the control panel.
-+ The total channel allocation is the upper limit for all SIP users within the account.
+   + Each customer account is assigned a maximum number of channels via the control panel.
+   + The total channel allocation is the upper limit for all SIP users within the account.
 
 2. **Channel Assignment for SIP Users**:
 
-+ Customers can create multiple SIP users through the customer portal.
-During setup, the customer allocates a specific number of channels to each SIP user.
-+ The sum of channels assigned to all SIP users can't exceed the account’s total channel capacity.
+   + Customers can create multiple SIP users through the customer portal.
+    During setup, the customer allocates a specific number of channels to each SIP user.
+   + The sum of channels assigned to all SIP users can't exceed the account’s total channel capacity.
 
 3. **Error Notification**:
 
-+ When the customer attempts to allocate more channels than their account limit allows, they will receive an error message: **"No channel capacity available for your account."**
-+ This message indicates that the requested channel allocation for the SIP user exceeds the remaining available channels in the account.
+   + When the customer attempts to allocate more channels than their account limit allows, they will receive an error message: **"No channel capacity available for your account."**
+   + This message indicates that the requested channel allocation for the SIP user exceeds the remaining available channels in the account.
 
 ```mermaid
 flowchart TD
@@ -537,12 +536,6 @@ Customers using the Customer Portal can reset their SIP Passwords in [**Authenti
 
 Use `Send` next to the SIP User to send a SIP message to the end device which will flash on the phone.
 
-**Key Features**:
-
-1. Allows sending SIP messages to customer devices.
-2. Works similarly to a flash message on a phone.
-3. Used for notifying users (e.g., server restarts, alerts).
-
 !!! Note "Users can't reply to messages."
 
 ### SIP Pings
@@ -609,37 +602,6 @@ In a typical configuration, a packet is sent from the customer UAC out through a
                         H --> J[Adjust Network Settings or Contact Provider]
                     G -- Normal Latency --> I[Continue Normal Operation]
     ```
-
-## Summary (Features and its Benefits)
-
-|Feature|Benefit|
-|-------|-------|
-| **IP Authentication**|**Simplifies authentication**: Matches incoming packets to known IPs without requiring credentials.
-||**Faster call setup**: Eliminates authentication delays compared to username/password authentication.
-||**Enhanced security**: Restricts SIP access to trusted IPs, reducing unauthorized access.
-||**Easier troubleshooting**: Directly links calls to customers based on IP logs.|
-|**SIP Authentication**|**Enhanced Security**: Prevents unauthorized access, protects against SIP fraud, and stops spoofing.|
-||**Flexible Authentication Methods**: Supports both IP-based authentication for simplicity and username/password authentication for added security.|
-||**Call Routing Control**: Ensures calls originate from legitimate sources, aiding in traffic management.|
-||**Better Network Management**: Helps with tracking, monitoring, and debugging SIP traffic.|
-||**Prevents Toll Fraud**" Ensures only authorized users can make costly calls, reducing hacking risks.|
-|| **Seamless Interoperability**: Works across various VoIP platforms and protocols.|
-||**Optimized Performance**: Reduces authentication latency and improves call setup efficiency.|
-|**Switch Direction**|**Clear traffic direction**: Helps in identifying whether the system is sending or receiving calls.
-||**Accurate routing**: Ensures correct configuration for incoming and outgoing calls.
-||**Efficient call management**: Supports handling of both call directions separately when needed.|
-|**FQDN (Fully Qualified Domain Name) vs. IP Address**|**Flexibility**: Using an FQDN (e.g., sip.mycompany.com) allows dynamic IP changes without reconfiguration.|
-||**Scalability**: Easier to manage SIP endpoints with DNS rather than hardcoded IPs.|
-||**Improved redundancy**: If a server IP changes, DNS updates can redirect calls seamlessly.|
-|**Codec Filtering**|**Optimized call quality**: Allows selection of preferred codecs for better audio transmission.|
-||**Bandwidth efficiency**: Removes unnecessary codecs, reducing bandwidth usage.|
-||**Better compatibility**: Ensures interoperability between different VoIP systems.||
-|**Force NAT**|**Ensures connectivity**: Overrides incorrect NAT settings to allow SIP communication.|
-||**Fixes one-way audio issues**: Helps in cases where audio streams are not properly routed.|
-||**Reduces manual intervention**: Automatically detects and corrects NAT issues without requiring user configuration.
-|**Intercept Re-Invite & Call Timeout Mechanisms**|**Prevents stuck calls**: Ensures that SIP calls properly terminate when needed.|
-||**Enhances call quality**: Enables re-negotiation of codecs or call parameters if needed.|
-||**Avoids ghost calls & billing issues**: Ensures calls don’t remain active indefinitely due to lost BYE messages.|
 
 [ipauth-basic]: /customer/img/ipauth-b.png "Edit Switch Basic"
 [parameter-rewrite]: /customer/img/parameter-rewrite.png "Parameter Rewrite" width="200" height="400"
