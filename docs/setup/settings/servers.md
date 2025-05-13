@@ -220,6 +220,16 @@ When a user endpoint registers with UDP via NAT, it creates a port mapping. Thus
 
     We can help with more intricate measures on a case-by-case basis.
 
+## APIBAN Integration
+
+APIBAN integration with ConnexCS is a third-party system provided by [apiban.org](https://www.apiban.org/).
+
+It automatically blocks malicious traffic to your servers. 
+
+APIBAN proactively prevents unwanted SIP traffic by identifying and blocking IP addresses of known bad actors before they can target your system.
+
+These bad actors are identified through globally deployed honeypots and curated by APIBAN to ensure comprehensive protection.
+
 [rtpserver]: /setup/img/rtpservers.png "RTP Server"
 [server-update]: /setup/img/server-update.png "Update Server"
 [server-cert1]: /setup/img/server-cert1.png "Server Certificates"

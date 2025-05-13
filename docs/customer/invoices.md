@@ -56,6 +56,13 @@ Click ![alt text][invoice-edit] to change the date, then click **`Edit Invoice I
 !!! note "Invoice Line Grouping"
     Use Invoice Line Grouping to group the invoice based on the destination or day. You can set this in **My Account** > **Settings**.
 
+## Download Invoices
+
+1. Login to your account.
+2. Navigate to **Management :material-menu-right: Customer :material-menu-right: Customer [Name] :material-menu-right: Main :material-menu-right: Summary :material-menu-right: Daily, Weekly or Monthly :material-menu-right: Download Invoice** (csv format).
+
+<img src= "/misc/img/in1.png">
+
 ## Allocate Payment
 
 To allocate customer payments to a specific invoice:

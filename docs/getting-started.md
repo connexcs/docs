@@ -1,6 +1,17 @@
 # Getting Started
 
+Welcome to ConnexCS! Your Guide to Getting Started
+We're excited to have you on board. This guide will walk you through the key features and settings you’ll need as you begin your journey with ConnexCS.
+
+Our platform is designed to streamline your communication and billing processes, making it easier for you to manage your customers, carriers, and rate cards.
+
 The initial setup in ConnexCS will configure a single carrier, a single customer, and a single rate card.
+
+To get started, the initial setup in ConnexCS will configure a single carrier, a single customer, and a single rate card, providing you with a base configuration that you can expand as needed.
+
+Whether you’re managing a few or scaling to an unlimited number of customers and recipients, ConnexCS supports seamless growth, offering flexibility and robust features to meet your business requirements.
+
+Ready to begin? Let's walk through the steps to set up and customize your ConnexCS environment!
 
 !!! info "Changing the UI language"
     To change the display language for the UI, click your name in the upper-right corner and select [**Change Language**](https://docs.connexcs.com/changing-language/).
@@ -11,25 +22,24 @@ The initial setup in ConnexCS will configure a single carrier, a single customer
 !!! help "Need Help?"
     If you need help, we offer free 1:1 training, which you can book at **<https://connexcs.youcanbook.me/>**.
 
-___
-
 ## Prerequisites
 
 * You have a modern web browser such as Google Chrome, Firefox, Safari, or their equivalent.
 * You have a basic understanding of Telecoms--customers, providers, and rates.
-* You have created an account with ConnexCS.com.
+* You have created an account with [ConnexCS](https://app.connexcs.com/#/register).
 
-___
+## Account Setup and Verification
 
-## Verify Contact Details
+Upon creating your account, you’ll need to complete a few key steps to ensure everything is properly set up.
 
-Before you configure your account, you need to verify your email and mobile number. Use the **Alerts** icon at the top left of the screen to view all outstanding items:
+Use the **Alerts** icon at the top left of the screen to view all outstanding items:
 
 &emsp; ![alt text][verify-email-1]
 
 ### Email Verification
 
-Email verification is the process by which ConnexCS determines if an email address is genuine.
+You’ll receive a verification email. Click the link in the email to verify your account. ConnexCS determines if an email address is genuine.
+
 It's a measure against unauthorized users accessing customer accounts. It works similarly to most email verification mechanisms.
 The system sends a verification code to the user's email, which is verified when the user enters the code back into the verification.
 
@@ -46,7 +56,9 @@ To verify your email address:
 
 **Mobile Verification** is the process by which we verify mobile phone numbers to ensure that they're genuine, and is an extension of **Email Verification**.
 
-Mobile Verification ensures all mobile devices associated with your account are genuine. Before verifying a mobile number, make sure the information is correct.
+Mobile Verification ensures all mobile devices associated with your account are genuine.
+
+Before verifying a mobile number, make sure the information is correct.
 
 !!! note "Number Format"
     The number must be in E.164 format. E.164 numbers are formatted [+] [country code] [subscriber number including area code] and have a maximum of fifteen digits.
@@ -69,11 +81,176 @@ To verify a mobile number:
 + Country
 + Address
 + VAT Registration ID
-___
 
-## Setup Personal Profile
+### Customer-Carrier Billing Setup
 
-While it's not necessary to configure your Personal Profile to complete basic setup, this is a good time to get it done. To find this, click your name in the upper right corner and select `Profile`.
+Follow the below steps to setup routing and billing.
+
+#### Carrier Setup
+
+**Carriers** are your VoIP route providers.
+
+Below, we include only the required fields to set up a carrier.
+
+For detailed instructions on carrier setup, see [**Carrier**](https://docs.connexcs.com/carrier/).
+
+1. Navigate to **Management :material-menu-right: Carrier**:
+2. Click on the `+` icon.
+3. Enter the Carrier Name.
+4. Select the Carrier's currency type, for example: dollars, pounds, or euros.
+5. Click `Save`
+6. Select **Auth** from the Carrier screen.
+7. Click `+` under IP Authentication.
+8. Enter the termination IP address.
+9. Click `Save`
+
+    ![alt text][carrier-auth-2]
+
+[Click here for video playback.](https://www.youtube.com/watch?v=7cDHJCEJDjI&t=3)
+
+#### Rate Cards
+
+**Rate Cards** are structured pricing tables that specify the cost associated with terminating voice traffic to different global destinations.
+
+1. Before getting started, we recommend you review **[Building Rate Cards](https://docs.connexcs.com/rate-card-building/)**. You can also watch our **[Rate Card Setup video](https://docs.connexcs.com/video-guide/#rate-card-setup)**.
+2. Setup the [**Provider Rate Cards**](https://docs.connexcs.com/provider-ratecard/) as customer cards will build off those.
+3. Build the [**Customer Rate Cards**](https://docs.connexcs.com/customer-ratecard/) as needed.  
+
+[Click here for video playback for Provider Rate Card.](https://www.youtube.com/watch?v=NYL6cNGGuaw)
+
+[Click here for video playback for Customer Rate Card.](https://www.youtube.com/watch?v=i7vSzIuUAL4&t=31s)
+
+#### Create a new Customer
+
+1. Click on the `+` icon.
+2. Enter the Customer's Name.
+3. Select the currency to use for this account. **Please note that you can't change this later**.
+4. Add a tax percentage, which is calculated for each added payment.
+5. Click `Save`.
+
+      ![alt text][customer-save-new]
+
+!!! Note "To view outstanding actions on a customer, hover over the **Warning icon**."
+
+    In the example below, you can see that routing hasn't been set. In that case, click on the customer's name to update their routing details.
+
+&emsp; ![alt text][warning-icon]
+
+##### Set IP Authentication
+
+1. Select the customer to authenticate.
+2. Click on the Auth menu item.
+3. Under IP Authentication, click on the `+` icon.
+4. Enter the Origination/Customer IP address.
+5. Click **Save**.
+
+!!! note "Additional Authentication Support"
+    We support SRV (service) records & domains.
+
+[Click here for video playback.](https://www.youtube.com/watch?v=U0lnj0Iu-Pw)
+
+##### Set SIP User Authentication
+
+You can authenticate a customer using SIP Username and Password.
+
+Below are the steps to create a SIP user:
+
+1. Select the customer to authenticate.
+2. Click on the Auth menu item.
+3. Under SIP User Authentication, click on the `+` icon.
+4. Enter a username and password, then press the `Save` button.
+
+!!! Warning
+    We block IP addresses upon SIP authentication failures to enhance security.
+
+
+##### Payments
+
+You can add balance to a customer.
+
+Follow the steps to add Payments:
+
+1. Select the customer.
+2. Click on the Payment menu item.
+3. Click on the `+` icon.
+4. Enter a Description and Total amount and select `Completed` from the drop-down menu, if the payment is made.
+5. Click `Save`.
+
+[Click here for video playback.](https://www.youtube.com/watch?v=gm3enkq5VSo)
+
+##### Ingress Routing
+
+To manage **Ingress Routing**,
+
+1. Navigate to **Management :material-menu-right: Customer**:
+2. Click on the customer's name.
+3. Select **Routing**.
+4. Click `+` under **Ingress Routing**.
+5. Select the **Rate Card**.
+6. Click `Save`.
+
+For detailed routing configuration, see [**Routing**](https://docs.connexcs.com/customer/routing/).
+
+**Summary**
+
+**Step 1**: Create a Carrier.
+
+**Step 2**: Create a Provider Rate Card.
+
+**Step 3**: Create a Customer Rate Card and link it to the previously created provider rate card.
+
+**Step 4**: Create a Customer.
+
+**Step 5**: Assign the newly created Customer Rate Card to the routing configuration for the new customer.
+
+```mermaid
+graph TD
+    A[Step 1: Create a Carrier] --> B[Step 2: Create a Provider Rate Card]
+    B --> C[Step 3: Create a Customer             Rate Card and link            it to Provider Rate Card]
+    C --> D[Step 4: Create a Customer]
+    D --> E[Step 5: Assign Customer              Rate Card to Routing Configuration]
+```
+
+#### Deploy Servers
+
+**Deploy Servers** using these instructions.
+
+1. Navigate to **Setup :material-menu-right: Settings :material-menu-right: Servers**.
+2. Select **Deploy a Server**.
+3. Choose a server location.
+4. Enter a server name.
+5. Check the confirmation box and deploy the server.
+6. The server's IP address is emailed to your registered email address. You can also find it in the server list section.
+
+For detailed server configuration, see **[Servers](https://docs.connexcs.com/setup/settings/servers/)**.
+
+[Click here for video playback.](https://www.youtube.com/watch?v=QSagrJ1redI)
+
+## Additional Options
+
+### Timezone Settings
+
+**Change Timezone**: You can set your local time zone by clicking on the “Time Top” option in the settings. This will affect the time format across the entire site.
+
+Click **`Update`** to apply changes.
+
+### Help and Documentation
+
++ **Help Buttons**: Throughout the platform, you'll find question mark icons. Click on them to access relevant documentation that can guide you.
+
+### Account Balance
+
+**View Balance**: Your current account balance is displayed here.
+To make a payment, click on the balance, and you’ll have the option to pay via `PayPal` or `credit card`.
+Ensure your account balance stays positive to avoid any issues.
+
+### Setup Personal Profile
+
+Logged-In User: The current user’s name and role are visible. You can change your password, language settings, and other preferences.
+
+While it's not necessary to configure your Personal Profile to complete basic setup, this is a good time to get it done.
+
+To find this, click your name in the upper right corner and select `Profile`.
 
 === "Basic"
 
@@ -99,130 +276,7 @@ While it's not necessary to configure your Personal Profile to complete basic se
 
 === "Advanced"
 
-    Click the blue `Edit` button to manage your email subscriptions. 
-
-___
-
-## Customer Setup
-
-These instructions for basic **Customer** setup help you create a profile and setup account details like IP addresses and payments.
-
-For more detailed instructions about setting up customers, see [**Customer Management**](https://docs.connexcs.com/customer/customer/) and the following sections.
-
-Navigate to **Management :material-menu-right: Customer** to modify customer details, filter the customer list, and perform bulk actions.
-
-To view outstanding actions on a customer, hover over the **Warning icon**.
-
-In the example below, you can see that routing hasn't been set. In that case, click on the customer's name to update their routing details.
-
-&emsp; ![alt text][warning-icon]  
-
-### Create a new Customer
-
-1. Click on the `+` icon.
-2. Enter the Customer's Name.
-3. Select the currency to use for this account. **Please note that you can't change this later**.
-4. Add a tax percentage, which is calculated for each added payment.
-5. Click `Save`.
-
-      ![alt text][customer-save-new]
-
-### Set IP Authentication
-
-1. Select the customer to authenticate.
-2. Click on the Auth menu item.
-3. Under IP Authentication, click on the `+` icon.
-4. Enter the Origination/Customer IP address.
-5. Click **Save**.
-
-!!! note "Additional Authentication Support"
-    We support SRV (service) records & domains. A Service record identifies servers that provide special services to a domain.
-    For example, defining the location of a SIP service.
-
-### Set SIP User Authentication
-
-You can authenticate a customer using IP-to-IP or User / Password.
-
-Use Session Initiation Protocol (SIP) for call establishment and management. It enables secure authentication and centralizes VoIP communication using a unique number to link all a customer's devices to one address.
-
-Below are the steps to add a SIP extension:
-
-1. Select the customer to authenticate.
-2. Click on the Auth menu item.
-3. Under SIP User Authentication, click on the `+` icon.
-4. Enter a username and password, then press the `Save` button.
-
-### Payments
-
-You can create multiple payment records to cover a customer's invoices and receipts.
-
-For example, the deposit they used to join ConnexCS.
-
-1. Select the customer.
-2. Click on the Payment menu item.
-3. Click on the `+` icon.
-4. Enter a Description and Total amount and select `Completed` from the drop-down menu, if the payment is made.
-5. Click `Save`.
-
-___
-
-## Carrier Setup
-
-**Carriers** are your VoIP route providers.
-
-Below, we include only the required fields to set up a carrier.
-
-For detailed instructions on carrier setup, see [**Carrier**](https://docs.connexcs.com/carrier/).
-
-1. Navigate to **Management :material-menu-right: Carrier**:
-2. Click on the `+` icon.
-3. Enter the Carrier Name.
-4. Select the Carrier's currency type, for example: dollars, pounds, or euros.
-5. Click `Save`
-6. Select **Auth** from the Carrier screen.
-7. Click `+` under IP Authentication.
-8. Enter the termination IP address. **Note: We also support SRV records & domains.**
-9. Click `Save`
-
-    ![alt text][carrier-auth-2]
-
-## Rate Cards
-
-**Rate Cards** are an important ConnexCS feature because they organise the majority of information.
-
-1. Before getting started, we recommend you review **[Building Rate Cards](https://docs.connexcs.com/rate-card-building/)**. You can also watch our **[Rate Card Setup video](https://docs.connexcs.com/video-guide/#rate-card-setup)**.
-2. Setup the [**Provider Rate Cards**](https://docs.connexcs.com/provider-ratecard/) as customer cards will build off those.
-3. Build the [**Customer Rate Cards**](https://docs.connexcs.com/customer-ratecard/) as needed.  
-
-___
-
-## Ingress Routing
-
-To manage **Ingress Routing**,
-
-1. Navigate to **Management :material-menu-right: Customer**:
-2. Click on the customer's name.
-3. Select **Routing**.
-4. Click `+` under **Ingress Routing**.
-5. Select the **Rate Card**.
-6. Click `Save`.
-
-For detailed routing configuration, see [**Routing**](https://docs.connexcs.com/customer/routing/).
-
-___
-
-## Deploy Servers
-
-**Deploy Servers** using these instructions.
-
-1. Navigate to **Setup :material-menu-right: Settings :material-menu-right: Servers**:
-2. Select **Deploy a Server**.
-3. Choose a server location.
-4. Enter a server name.
-5. Check the confirmation box and deploy the server.
-6. The server's IP address is emailed to your registered email address. You can also find it in the server list section.
-
-For detailed server configuration, see **[Servers](https://docs.connexcs.com/setup/settings/servers/)**.
+    Click the blue `Edit` button to manage your email subscriptions.
 
 [verify-email-1]: /getting-started/img/1.png "Verify Contact"
 [verify-email-2]: /getting-started/img/verify-email.png "Verify Email"
@@ -230,6 +284,3 @@ For detailed server configuration, see **[Servers](https://docs.connexcs.com/set
 [warning-icon]: /getting-started/img/warning-icon.png "Warning Icon"
 [customer-save-new]: /getting-started/img/6.png "New Customer"
 [carrier-auth-2]: /getting-started/img/16.png "Carrier Setup"
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxMTA1Mjg3XX0=
--->

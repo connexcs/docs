@@ -27,4 +27,6 @@ Click on each name to view the details.
 
     Contract Revisions are also available here.
 
+!!! Danger "Customers are restricted from making calls until their contract is reviewed and approved."
+
 [customer-contracts]: /customer/img/customer-contracts.png "Customer Contracts"

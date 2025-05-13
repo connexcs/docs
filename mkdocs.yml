@@ -59,8 +59,8 @@ markdown_extensions:
 nav:
   - Cloudswitch:
     - Home: index.md
-    - Getting Started: getting-started.md
     - Customer Support: reporting-problems.md
+    - Getting Started: getting-started.md
     - Dashboard : dashboard.md
 
     - Customer:
@@ -143,6 +143,8 @@ nav:
             - Advance Field: developers/pages/advance-field.md
             - Layout: developers/pages/layout.md
            
+    - Data Suite: datasuite.md
+
     - Setup:
         - AnyEdge: anyedge/anyedge.md
         - App Store: setup/appstore.md
@@ -227,6 +229,7 @@ nav:
         - General Data Protection Regulation: guides/gdpr.md
         - Call Detail Record Retention: guides/cdr-retention.md
         - Spam Protection Features: guides/spam-callsblock.md
+        - Channel Limitation Settings: guides/channel-limitations.md
         - Some Interesting Features: makecall.md
     
     - Troubleshooting: 
