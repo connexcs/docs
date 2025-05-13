@@ -2,23 +2,54 @@
 
 **Setup :material-menu-right: Integrations :material-menu-right: API**
 
-Configure **API Integrations** to let ConnexCS     connect to external services.
+Configure **API Integrations** to let ConnexCS connect to external services. It provides seamless connectivity to external systems and payment processors.
 
 For inbound APIs, please see the [**API**](https://docs.connexcs.com/api/) in the Architecture documentation.
+
+!!! note "These integrations are custom written, offering similar capabilities as drivers."
 
 ## Available Integrations
 
 + **PayPal Express Checkout**: Lets you do online checkout via the customer portal using a [**PayPal**](https://www.paypal.com) Account.
+    + **Configuration Options**:
+        + Mode: Choose between live or test.
+        + Details: Enter all required PayPal account details.
+        + Fee Management: Option to automatically deduct PayPal fees.
+        + Save & Activate: Once configured, the system is enabled to accept PayPal payments.
+  + **Key Benefits**:
+      + Simplified payment processing.
+      + Flexible fee management.
 
 + **PayPal IPN**: Enable Instant Payment Notification (IPN) to use MassPay or to send money from the PayPal portal without using your site.
 
-    This also notifies the system of incoming PayPal payments, and we can top up based on that notification.  
+    This also notifies the system of incoming PayPal payments, and we can top up based on that notification.
 
-+ **Stripe**: Possibly the world's best credit card processor, [**Stripe**](https://www.stripe.com); we can help with its availability on the portal.
+    + **Functionality**:
+        + Operates in the reverse direction compared to Express Checkout.
+        + Requires you to log into your PayPal account and enter a specific detail.
+
+    + **Notification Workflow**:
+        + When a customer makes a payment (via mass pay or send money), PayPal sends a request to the server.
+        + The system then logs back into PayPal to verify the transaction.
+  
+  + **Additional Settings**:
+      + Specify which currencies to accept.
+      + Option to deduct PayPal fees.
+      + Automatically top up the customer’s account when funds are received.
+
+  + **Key Benefits**:
+      + Real-time payment verification.
+      + Increased security and accuracy in transaction processing.
+
++ **Stripe**: Possibly the world's best credit card processor, [**Stripe**](https://www.stripe.com); we can help with its availability on the portal. It enables streamlined credit card processing
 
 + **Duo Security**: [**Duo Security**](https://duo.com/) provides 2FA (2 Factor Authentication) via an out-of-band push notification to your mobile device to approve login.
 
     It also provides fingerprint authentication for extra security.
+
+    + **Functionality**:
+        + Sends push notifications to mobile devices.
+        + Deployable for individual sites to secure customer accounts.
 
 + **Moneris**: [**Moneris**](https://www.moneris.com/) is  a Canadian Credit Card Processing service.
 
@@ -35,7 +66,6 @@ For inbound APIs, please see the [**API**](https://docs.connexcs.com/api/) in th
 + **NOWPayments**: With the support for auto coin conversion and the ability to take payments in over 75+ cryptocurrencies, [**NOWPayments**](https://nowpayments.io/) is a non-custodial cryptocurrency payment gateway enabling users to accept payments in any coin they choose.
 
 + **Emetec**: [**Emetec**](https://www.linkedin.com/company/emetec/) provides Merchant services, Payments processing, eCommerce Payment Gateway,  Real-Time-Payments, Online Transfers.
-
 
 ## Enable API Integration
 
@@ -179,6 +209,15 @@ Link Moneris to ConnexCS:
 <img src= "/setup/img/api5.png" width="350">
 
 ## Scriptforge Integration
+
+**Usage**:
++ Allows selection of a company from the list of carriers
++ Facilitates linking integrations to DID drivers.
++ Supports connection to an individual ScriptForge instance (e.g., as a DID provider).
+
+**Key Benefit**:
++ Streamlines the process of linking carrier information for DID driver functionality.
+
 
 1. Select **`Add`**, and then select **Scriptforge**.
 2. **Company**: Select the customer to integrate.
