@@ -169,6 +169,9 @@ To change Revision status:
 |**Single Rate**|0.0007|Usually a UK Landline|1|
 |**IntER/IntRA**|1 (NPANXX)|Refers to Interstate and Intrastate calling for USA dialing|2|
 |**IntER/IntRA/Indeterminate**|1 (NPANXX)|Indeterminate indicates that call is between a USA number and another country|3|
+|**EEA**|If a call originates from a CLI starting with '33' (France) and the destination number starts with '43' (Austria)| When a call originates from one European Economic Area country and terminates in another EEA country|3|
+|**Local Rates**|If a call originates from a CLI starting with '43' and the destination number also starts with '43'| Both the originating CLI and destination number start with the same country code, specifically '43' for Austria||
+|**International Rates**| If a call originates from a CLI starting with '33' (France) and the destination number starts with '444' (UK)|Any call not meeting the Local or EEA criteria falls under this category|
 
 + **Dialing**: Select whether to bill based on the carrier of the Dialed Number or using an LRN Database (US-only).
 
@@ -212,6 +215,8 @@ To change Revision status:
 + **Default RTP**: If set and the customer adds the route themselves, then it deploys the Default RTP. Otherwise, this is an unused setting.
   
 + **Contract**: Specify a default contract that applies to a specific rate card. This only applies if the customer selects the rate card from the Customer Portal, not when it's added using the Dashboard.
+
+!!! Warning "When a contract is linked to a specific rate card, customer approval is mandatory. Failure to approve the contract will result in the customer being unable to use the associated rate card."
 
 + **Manual Ordering**: Allow granular ordering of specific prefixes and which carriers to use. See [**Manual Ordering**](https://docs.connexcs.com/customer-ratecard/#manual-ordering-tab) below for details.
   

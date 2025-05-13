@@ -325,8 +325,8 @@ An existing call is transferred to a different destination using the `Dial` ver
 
 |**Attribute**|**Description**|**Options**|**Default Method**|
 |-------------|---------------|-----------|-------|
-|`callerID`|Caller ID that must be a valid E.164 format number|
-|`fromDisplayName`|The fromDisplayName string to be used as the caller id name (SIP From Display Name) presented to the destination. The string should have a maximum of 128 characters, containing only letters, numbers, spaces, and -_~!.+ special characters. If omitted, the display name will be the same as the number in the callerId field|
+|`callerId`|Caller ID that must be a valid E.164 format number|
+|`fromDisplayName`|The fromDisplayName string to be used as the caller ID name (SIP From Display Name) presented to the destination. The string should have a maximum of 128 characters, containing only letters, numbers, spaces, and -_~!.+ special characters. If omitted, the display name will be the same as the number in the callerId field|
 |`hangupOnStar`|By tapping the `*` key on their phone, the initial caller can hang up on the called party using the hangupOnStar attribute. It doesn't apply for `Conference` noun|`true`, `false`| `false`|
 |`ringTone`|The ringback tone played back to the caller|`at`,`au`,`bg`,`br`,<br>`be`,`ch`,`cl`,`cn`,`cz`,</br>`de`,`dk`,`ee`,`es`,`fi`,<br>`fr`,`gr`,`hu`,`il`,`in`,<br>`it`,`lt`,`jp`,`mx`,`my`,<br>`nl`,`no`,`nz`,`ph`,`pl`,<br>`pt`,`ru`,`se`,`sg`,<br>`th`,`uk`,`us`,`us-old`,`tw`,<br>`ve`,`za`|`us`|
 |`timeout`|timeout in <Dial> lets you specify the maximum waiting time in seconds for the dialed party to answer|||
@@ -357,7 +357,7 @@ An existing call is transferred to a different destination using the `Dial` ver
     1. `Conference` is similar to how the `Number` noun lets you connect to another phone number.
 
 !!! example
-    1. **callerID**
+    1. **callerId**
     ``` xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
@@ -590,7 +590,18 @@ It helps to define on which leg of the call the DTMF will work. For example, `dt
 
 |**Noun**|**Description**|  
 |--------|---------------|
-|`Transfer`|Transfers the call to the given extension given|
+|`Transfer (Blind)`|Transfers the call to the given extension given immediately without verifying whether the recipient is available or willing to take the call|
+|`Attended Transfer`|The transferring party confirms the recipient's availability before completing the transfer.|
+
+!!! Example "Example Attended Transfer"
+    ``` xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+        <Transfer attended="true">
+        +1234567890
+        </Transfer>
+    </Response>
+    ```
 
 ### Before
 
