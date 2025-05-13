@@ -10,32 +10,7 @@ This enables efficient call routing and management by dynamically modifying numb
 
 By leveraging aliases, users can achieve optimized and seamless call routing within the ConnexCS system.
 
-!!! question "How it works?"
-    **Aliases modify dialed numbers by**:
-
-    * Adding or removing prefixes and suffixes.
-    
-    * Replacing specific digits.
-    
-    * Using regular expressions for complex rewrites
-
-    !!! Example "If a user dials 100, the system can rewrite it to 456100 based on an alias rule. The transformed number then proceeds through the system for further processing."
-    
-    ```mermaid
-    graph TD
-    A[User Dials Number] --> B{Alias Rule Applied}
-    B --> C[Add or Remove Prefixes and Suffixes]
-    B --> D[Replace Specific Digits]
-    B --> E[Use Regular Expressions for Complex Rewrites]
-    C --> F[Transformed Number]
-    D --> F
-    E --> F
-    F --> G[Proceed Through System for Further Processing]
-
-    %% Adding a note separately
-    B ---|Example: If user dials 100, rewrite to 456100| Note1
-    Note1[Note]
-    ```
+Alias will re-write the destination number.
 
 ## Alias Configuration Methods
 
