@@ -12,6 +12,44 @@ The dialer supports **Auto Dialer**, **Preview Dialer** and **Broadcast Dialer (
 
 Here, we've three types of dialers at your disposal.
 
+### Preview Dialer
+
+A Preview Dialer is an outbound dialing system, where the agent has detailed information about the customer before dialing.
+
+The agent gets enough time to review and decide whether to call the person and hit the call button to initiate the call.
+
+**Pros**:
+
++ Personalization, higher quality interactions.
++ Agents feel more in control, less rushed.
++ Agents align calls to customer needs.
+
+**Cons**:
+
++ Slower pace.
++ Fewer calls per hour as compared to Auto Dialer.
++ Skips Lead Automation.
++ More agent involvement leads to inconsistent flow.
+
+!!! question "How it works?"
+    ```mermaid
+    flowchart TD
+        style A fill:#E1F5FE,stroke:#0277BD,stroke-width:2,rx:10,ry:10
+        style B fill:#FFF3E0,stroke:#EF6C00,stroke-width:2,rx:10,ry:10
+        style C fill:#F3E5F5,stroke:#6A1B9A,stroke-width:2,rx:10,ry:10
+        style D fill:#E8F5E9,stroke:#2E7D32,stroke-width:2,rx:10,ry:10
+        style E fill:#FFEBEE,stroke:#C62828,stroke-width:2,rx:10,ry:10
+        style F fill:#E0F2F1,stroke:#00796B,stroke-width:2,rx:10,ry:10
+
+        A(["👩‍💼 Agent becomes available<br/>🟢 Marks as 'Ready'"]) --> B(["📋 System selects next contact<br/>🔍 Displays profile:<br/>- First/Last Name<br/>- Address, Contact<br/>- City, Gender<br/>- Call Count, Email<br/>- Comments"])
+        B --> C(["🧠 Agent reviews info:<br/>📜 Assess script<br/>🎯 Prepare pitch<br/>⏭️ Decide to dial or skip"])
+        C --> D(["📞 Agent clicks 'Dial'<br/>(Manual Mode)"])
+        D --> E(["📝 Call ends<br/>Agent adds:<br/>- Notes<br/>- Tags<br/>- Disposition"])
+        E --> F(["🔄 Next preview pops up"])
+        F --> B
+    ```
+Best for: Complex or high-value calls where agents need context (e.g., sales or support follow-ups).
+
 ### **Auto Dialers**
 
  Its an outbound dialing system that automatically dials numbers from a contact list and connects answered calls to available agents in real-time.
@@ -58,44 +96,6 @@ This auto dialer dials one number per available agent only after they finish the
         F --> B
         E --> A
     ```
-
-### Preview Dialer
-
-A Preview Dialer is an outbound dialing system, where the agent has detailed information about the customer before dialing.
-
-The agent gets enough time to review and decide whether to call the person and hit the call button to initiate the call.
-
-**Pros**:
-
-+ Personalization, higher quality interactions.
-+ Agents feel more in control, less rushed.
-+ Agents align calls to customer needs.
-
-**Cons**:
-
-+ Slower pace.
-+ Fewer calls per hour as compared to Auto Dialer.
-+ Skips Lead Automation.
-+ More agent involvement leads to inconsistent flow.
-
-!!! question "How it works?"
-    ```mermaid
-    flowchart TD
-        style A fill:#E1F5FE,stroke:#0277BD,stroke-width:2,rx:10,ry:10
-        style B fill:#FFF3E0,stroke:#EF6C00,stroke-width:2,rx:10,ry:10
-        style C fill:#F3E5F5,stroke:#6A1B9A,stroke-width:2,rx:10,ry:10
-        style D fill:#E8F5E9,stroke:#2E7D32,stroke-width:2,rx:10,ry:10
-        style E fill:#FFEBEE,stroke:#C62828,stroke-width:2,rx:10,ry:10
-        style F fill:#E0F2F1,stroke:#00796B,stroke-width:2,rx:10,ry:10
-
-        A(["👩‍💼 Agent becomes available<br/>🟢 Marks as 'Ready'"]) --> B(["📋 System selects next contact<br/>🔍 Displays profile:<br/>- First/Last Name<br/>- Address, Contact<br/>- City, Gender<br/>- Call Count, Email<br/>- Comments"])
-        B --> C(["🧠 Agent reviews info:<br/>📜 Assess script<br/>🎯 Prepare pitch<br/>⏭️ Decide to dial or skip"])
-        C --> D(["📞 Agent clicks 'Dial'<br/>(Manual Mode)"])
-        D --> E(["📝 Call ends<br/>Agent adds:<br/>- Notes<br/>- Tags<br/>- Disposition"])
-        E --> F(["🔄 Next preview pops up"])
-        F --> B
-    ```
-Best for: Complex or high-value calls where agents need context (e.g., sales or support follow-ups).
 
 ### Broadcast Dialer (AI Agent)
 

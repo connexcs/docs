@@ -30,32 +30,32 @@ We will also walk through configuring the **Preview Dialer** and demonstrate how
 
     Summarizes ongoing campaigns, including parameters like status, campaign type, source status, CPS, Channels etc. You also have an option to **Add Campaign**.
 
-    <img src= "/customer-portal/img/cc10new.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+    <img src= "/customer-portal/img/10ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 === "Agents"
 
     Summarizes ongoing agent activity, displaying parameters like status, SIP profile, protocol, bandwidth, CPS, channels, dial pattern, and other SIP metrics.
     You can also upload agents in bulk using **Create Bulk Agents**.
 
-    <img src= "/customer-portal/img/cc11new.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+    <img src= "/customer-portal/img/11ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 === "Script"
 
     Displays all the created scripts in the Contact Center. You can also **Add a New Script**. 
 
-      <img src= "/customer-portal/img/cc12new.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+      <img src= "/customer-portal/img/12ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 === "Leadset"
 
     Manages leadsets for outbound campaigns, showing parameters like name, associated campaign, status, and description.
     You can also create new leadsets individually or upload them in bulk using **Create Leadset**.
 
-      <img src= "/customer-portal/img/cc13new.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+      <img src= "/customer-portal/img/13ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Setting Up Your Preview Dialer
 
 1. Navigate to **Customer Portal :material-menu-right: Contact Center**.
-2. In the `Campaign` tab, click `Add Campaign`. <br><img src= "/customer-portal/img/cc14.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+2. In the `Campaign` tab, click `Add Campaign`. <br><img src= "/customer-portal/img/14ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 3. A Window will pop-up with two sections:
       1. **Basic Info**:
          1. **Name**: Enter the Campaign name.
@@ -67,7 +67,7 @@ We will also walk through configuring the **Preview Dialer** and demonstrate how
          1. **Caller ID**: The `CLI` used for this campaign.
          2. **Source Status**: Select `Ready`/`New` or Custom Source Status for call origination. If no status is selected the calls won't be sent.
          3. **Outbound Multiplier**: It controls how many outbound calls your system (or agent/reseller) can make at the same time.
-         4. **Custom Disposition**: A user-defined set of call outcome labels that agents are required to select after each call, enabling structured tracking, systematic reporting, and optimized follow-up workflows. <br><img src= "/customer-portal/img/cc15new1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+         4. **Custom Disposition**: A user-defined set of call outcome labels that agents are required to select after each call, enabling structured tracking, systematic reporting, and optimized follow-up workflows. <br><img src= "/customer-portal/img/cc15new1.png" style="border: 2px solid #4472C4; border-radius: 8px; padding: 20px;"></br>
             1. `Agent Unavailable`: Call was made but hung up due to agent being busy (mostly in auto dialers).
             2. `Answered`: Call is connected.
             3. `Connection Error`: Originate method failed to work.
@@ -88,7 +88,7 @@ We will also walk through configuring the **Preview Dialer** and demonstrate how
 
 5.Click on `See More` in the `Details` column.
 
-6.A `Campaign Overview` will open. This interface is used for real-time monitoring of campaigns, lead stats, agent statuses, and calling activity. <br><img src= "/customer-portal/img/cc45new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+6.A `Campaign Overview` will open. This interface is used for real-time monitoring of campaigns, lead stats, agent statuses, and calling activity. <br><img src= "/customer-portal/img/45ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
    1. `State`: Whether the campaign is `Active` or `Inactive`.
    2. `Edit Campaign`: Open the campaign settings for editing.
@@ -101,9 +101,9 @@ We will also walk through configuring the **Preview Dialer** and demonstrate how
          1. `Call Active`: How many agents are currently on a call.
          2. `Agent Waiting`: How many agents are idle (ready and waiting for a call).
 
-   5.`Campaign Agents`: List of agents assigned to the campaign. <br>`Manage Agents`: Allows you to add/remove agents from the campaign from the drop-down menu. Click `Confirm`.</br> <br><img src= "/customer-portal/img/cc34new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+   5.`Campaign Agents`: List of agents assigned to the campaign. <br>`Manage Agents`: Allows you to add/remove agents from the campaign from the drop-down menu. Click `Confirm`.</br> <br><img src= "/customer-portal/img/34ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-   </br>For example: The select agents will be added.<img src= "/customer-portal/img/cc35.png"></br>
+   </br>For example: The select agents will be added.<img src= "/customer-portal/img/35ccnew.png"></br>
 
    <br>`Refresh Button`: To update agent statuses.</br>
 
@@ -117,25 +117,25 @@ We will also walk through configuring the **Preview Dialer** and demonstrate how
    + `Dropped Calls`: Calls that got disconnected unexpectedly.
    + `Agents in Queue`: Displays a list of agents who are waiting for a call or are ready to be assigned a call in the campaign.
 
-7.**Agents**: This section has information on the agents. You can also `Create Bulk Agents` . <br><img src= "/customer-portal/img/cc16new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+7.**Agents**: This section has information on the agents. You can also `Create Bulk Agents` . <br><img src= "/customer-portal/img/16ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
    1. Select a `SIP Profile`.
 
    2. Add the `Number of Agents` for participation in this campaign.
 
-   3. Click on `Create`. <br><img src= "/customer-portal/img/cc17new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+   3. Click on `Create`. <br><img src= "/customer-portal/img/17ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 8.**Script**: The Script section enables you to create structured call scripts for agents to follow during customer interactions.
 
-   1. Click on `Add a new Script`. <br><img src= "/customer-portal/img/cc18new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+   1. Click on `Add a new Script`. <br><img src= "/customer-portal/img/18ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
    2. Enter the `Script Name` and `Script`.
 
-   3. Click `Confirm` to save the script. <br><img src= "/customer-portal/img/cc19new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+   3. Click `Confirm` to save the script. <br><img src= "/customer-portal/img/19ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-   4. The created script will be displayed in the window; click on `Preview` to view the script. <br><img src= "/customer-portal/img/cc20.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+   4. The created script will be displayed in the window; click on `Preview` to view the script. <br><img src= "/customer-portal/img/20ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-9.**Leadset**: This section has information on the Leadsets. You can also `Create Leadset` . <br><img src= "/customer-portal/img/cc21new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+9.**Leadset**: This section has information on the Leadsets. You can also `Create Leadset` . <br><img src= "/customer-portal/img/21ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 10.A new window will appear, prompting you to enter the required information:
 
@@ -147,7 +147,7 @@ We will also walk through configuring the **Preview Dialer** and demonstrate how
 
    4. **State**: Configure the leadset’s operational status by setting it to either Active (available for assignment and dialing) or Inactive (disabled or paused).
 
-   5. Click on `Confirm` to create the leadset. <br><img src= "/customer-portal/img/cc22new1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+   5. Click on `Confirm` to create the leadset. <br><img src= "/customer-portal/img/22ccnew1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 11.Click on `See More` in the `Details` column. <br><img src= "/customer-portal/img/cc23new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
