@@ -149,7 +149,7 @@ We will also walk through configuring the **Preview Dialer** and demonstrate how
 
    5. Click on `Confirm` to create the leadset. <br><img src= "/customer-portal/img/22ccnew1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-11.Click on `See More` in the `Details` column. <br><img src= "/customer-portal/img/cc23new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+11.Click on `See More` in the `Details` column. <br><img src= "/customer-portal/img/cc23new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br> CONTINUE FROM HERE
 
 12.A **Leadset Dashboard** monitoring window will appear, displaying the leadset metrics. (**Note: This image does not represent the dashboard after it has fully loaded**). <br><img src= "/customer-portal/img/cc24.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
