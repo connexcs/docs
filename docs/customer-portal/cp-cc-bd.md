@@ -115,43 +115,43 @@ We will also walk through configuring the **Broadcast Dialer** and demonstrate h
          4. `Call Status`: The current state (e.g., Ringing, Connected, In Progress, Completed, Failed).
 
 8. **Script**: The Script section enables you to create structured call scripts for agents to follow during customer interactions.
-    1. Click on `Add a new Script`. <br><img src= "/customer-portal/img/cc18new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+    1. Click on `Add a new Script`. <br><img src= "/customer-portal/img/18ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
     2. Enter the `Script Name` and `Script`.
-    3. Click `Confirm` to save the script. <br><img src= "/customer-portal/img/cc64.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-    4. The created script will be displayed in the window; click on `Preview` to view the script. <br><img src= "/customer-portal/img/cc65.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+    3. Click `Confirm` to save the script. <br><img src= "/customer-portal/img/64cc.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+    4. The created script will be displayed in the window; click on `Preview` to view the script. <br><img src= "/customer-portal/img/65cc.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-9. **Leadset**: This section has information on the Leadsets. You can also `Create Leadset` . <br><img src= "/customer-portal/img/cc21new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+9. **Leadset**: This section has information on the Leadsets. You can also `Create Leadset` . <br><img src= "/customer-portal/img/21ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 10. A new window will appear, prompting you to enter the required information:
     1. Enter the leadset `Name`.
     2. Pen-down any required `Description`.
     3. Select the `Campaign` from the drop-down for which you wish to associate the leadset.
     4. **State**: Configure the leadset’s operational status by setting it to either Active (available for assignment and dialing) or Inactive (disabled or paused).
-    5. Click on `Confirm` to create the leadset. <br><img src= "/customer-portal/img/cc67new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+    5. Click on `Confirm` to create the leadset. <br><img src= "/customer-portal/img/67ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-11. Click on `See More` in the `Details` column.
+11. Click on `See More` in the `Details` column. <br><img src= "/customer-portal/img/69ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-12. **A Leadset Dashboard** monitoring window will appear which displays the metrics of the leadset. <br><img src= "/customer-portal/img/cc69new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+12. **A Leadset Dashboard** monitoring window will appear which displays the metrics of the leadset. <br><img src= "/customer-portal/img/bd1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 13. Description of the fields in the stats window:
     1. `Status`: Set the leadset to `Active` or `Inactive` state.
     2. Refresh your leadset parameters using `Refresh Lead Stats`.
-    3. Click on `Leadset Data` to view the leadset data. <br><img src= "/customer-portal/img/cc68new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+    3. Click on `Leadset Data` to view the leadset data. 
     4. Click on `Upload Leads` to upload the leadset data.
     5. Upload your data via `File`, `URL` or by entering the `Text`.
-          1. **File**: Drag and Drop a file or click to upload the `.csv`. <br><img src= "/customer-portal/img/cc70new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-             1. A new window will open where two actions must be completed to create the leadset. <br><img src="/customer-portal/img/cc71new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-             2. `Set row`: To indicate where the upload should start. `Right-click` on the row to want to start the uploading and click on `Set Start Row`. <br><img src="/customer-portal/img/cc72new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-             3. `Map Table Columns`: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. `Right-click` on the column you wish to be mapped, click on `Map Column` then `Phone` and `Status`. Click on `Upload`. This will upload the leadset data to the server. <br><img src="/customer-portal/img/cc73new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br> <img src="/customer-portal/img/cc74new.png" style="border: 2px solid #4472C4; border-radius: 8px;">
-             4. The leadset gets uploaded successfully. <br><img src="/customer-portal/img/cc75new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-             5. The leadset dasboard displays the total uploaded leads and dialable leads as well. <br><img src="/customer-portal/img/cc76.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+          1. **File**: Drag and Drop a file or click to upload the `.csv`. <br><img src= "/customer-portal/img/70ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+             1. A new window will open where two actions must be completed to create the leadset. <br><img src="/customer-portal/img/71ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+             2. `Set row`: To indicate where the upload should start. `Right-click` on the row to want to start the uploading and click on `Set Start Row`. <br><img src="/customer-portal/img/72ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+             3. `Map Table Columns`: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. `Right-click` on the column you wish to be mapped, click on `Map Column` then `Phone` (required field) and `Status` (required field). Click on `Upload`. This will upload the leadset data to the server. <br><img src="/customer-portal/img/73ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br> <img src="/customer-portal/img/74ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+             4. The leadset gets uploaded successfully. <br><img src="/customer-portal/img/75ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+             5. The leadset dashboard displays the total uploaded leads and dialable leads as well. <br><img src="/customer-portal/img/76cc.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-         1. **Uploading via URL**: Enter the URL in the CSV format and hit the Upload button. <br><img src="/customer-portal/img/cc77new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+         1. **Uploading via URL**: Enter the URL in the CSV format and hit the Upload button. <br><img src="/customer-portal/img/77ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
             1. A new window will open where two actions must be completed to create the leadset. <br><img src="/customer-portal/img/cc71new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-            2. `Set row`: To indicate where the uploaad should start. `Right-click` on the row to want to start the uploading and click on `Set Start Row`. <br><img src="/customer-portal/img/cc72new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-            3. `Map Table Columns`: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. `Right-click` on the column you wish to be mapped, click on `Map Column` then `Phone` and `Status`. Click on `Upload`. This will upload the leadset data to the server. <br><img src="/customer-portal/img/cc73new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br> <img src="/customer-portal/img/cc74new.png" style="border: 2px solid #4472C4; border-radius: 8px;">
-            4. The leadset gets uploaded successfully. <br><img src="/customer-portal/img/cc75new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-            5. The leadset dashboard now displays total uploaded leads and dialable leads as well. <br><img src="/customer-portal/img/cc76.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+            2. `Set row`: To indicate where the upload should start. `Right-click` on the row to want to start the uploading and click on `Set Start Row`. <br><img src="/customer-portal/img/72ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+            3. `Map Table Columns`: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. `Right-click` on the column you wish to be mapped, click on `Map Column` then `Phone` and `Status`. Click on `Upload`. This will upload the leadset data to the server. <br><img src="/customer-portal/img/73ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br> <img src="/customer-portal/img/74ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+            4. The leadset gets uploaded successfully. <br><img src="/customer-portal/img/75ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+            5. The leadset dashboard now displays total uploaded leads and dialable leads as well. <br><img src="/customer-portal/img/76cc.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
          2. **Uploading via Text**:
             1. Enter the text in the following format:
@@ -161,18 +161,18 @@ We will also walk through configuring the **Broadcast Dialer** and demonstrate h
                10800, New
                10801, New
                ```
-            2. Click on `Upload`. <br><img src="/customer-portal/img/cc77new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+            2. Click on `Upload`. <br><img src="/customer-portal/img/bd2.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
             3. A new window will open where two actions must be completed to create the leadset. <br><img src="/customer-portal/img/cc71new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-            4. `Set row`: To indicate where the upload should start. `Right-click` on the row to want to start the uploading and click on `Set Start Row`. <br><img src="/customer-portal/img/cc72new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-            5. `Map Table Columns`: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. `Right-click` on the column you wish to be mapped, click on `Map Column` then `Phone` and `Status`. Click on `Upload`. This will upload the leadset data to the server. <br><img src="/customer-portal/img/cc73new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br> <img src="/customer-portal/img/cc74new.png" style="border: 2px solid #4472C4; border-radius: 8px;">
-            6. The successful upload can be seen in the image. <br><img src="/customer-portal/img/cc75new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-            7. The leadset dashboard now displays total uploaded leads and dialable leads as well. <br><img src="/customer-portal/img/cc76.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+            4. `Set row`: To indicate where the upload should start. `Right-click` on the row to want to start the uploading and click on `Set Start Row`. <br><img src="/customer-portal/img/72ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+            5. `Map Table Columns`: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. `Right-click` on the column you wish to be mapped, click on `Map Column` then `Phone` and `Status`. Click on `Upload`. This will upload the leadset data to the server. <br><img src="/customer-portal/img/73ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br> <img src="/customer-portal/img/74ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+            6. The successful upload can be seen in the image. <br><img src="/customer-portal/img/75ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+            7. The leadset dashboard now displays total uploaded leads and dialable leads as well. <br><img src="/customer-portal/img/76cc.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 14. **Continue to Modify**: If you click here, it will redirect to the Data Sure. [Click here](https://docs.connexcs.com/datasuite/) to know more.
 
 15. **Edit Leadset**: Modify the details of an existing Leadset. The system will present the same interface as `Create Leadset`.
 
-16. **Add Lead (Form)**: Manually add a lead via a form. <br><img src="/customer-portal/img/cc31.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+16. **Add Lead (Form)**: Manually add a lead via a form. <br><img src="/customer-portal/img/31cc.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 17. **Lead Status**: Displays whether a lead is available, being worked on, needs follow-up, or is no longer active
     1. `Total Leads`: The total number of leads uploaded or assigned to the campaign or leadset.

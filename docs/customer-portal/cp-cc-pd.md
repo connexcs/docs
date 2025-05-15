@@ -77,7 +77,7 @@ We will also walk through configuring the **Preview Dialer** and demonstrate how
             7. `Ringing`: AI-initiated call is ringing.
             8. `In Progress`: Call data is being allocated.
          5. **Flags**: Select `Transfer` flag to activate the option of call transfer in Preview Dialer.
-         6. **Agents**: Select human agents or AI agents for the Preview Dialer.
+         6. **Agents**: Select agents for the Preview Dialer.
 
 4. Click on the `Confirm` button.
 

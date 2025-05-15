@@ -76,6 +76,7 @@ We will also walk through configuring the **Auto Dialer** and demonstrate how to
             6. `Rejected`: Call ended without pickup (user or server may have hung up).
             7. `Ringing`: AI-initiated call is ringing.
             8. `In Progress`: Call data is being allocated.
+         5. **Agents**: Select agents for the Auto Dialer.
 
 4. Click on the `Confirm` button.
 
