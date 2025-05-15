@@ -4,27 +4,11 @@
 
 ## Overview
 
-Ingress Routing in ConnexCS is a crucial component for managing and authenticating inbound traffic efficiently.
+Ingress Routing is the process that allocates an incoming call (dialed by our customers) based on the assigned Customer Rate Card, which then Egresses the call to a specified provider. This makes it possible to deploy several rate cards both with and without a prefix.
 
- It enables customers to define how incoming calls are handled based on various authentication methods and routing rules.
-
- By leveraging Ingress Routing, customers can ensure efficient, secure, and customized handling of inbound call traffic, optimizing their overall VoIP operations.
-
-### Key Features and Benefits
-
-+ **Customizable and Enhanced Routing Rules**: Users can define rules based on different parameters such as source IP, username, and number prefixes.
-
-+ **Enhanced Security**: Ensures only authenticated traffic is allowed, preventing unauthorized access.
-
-+ **Efficient Traffic Handling**: Optimizes call routing for seamless operations.
-
-+ **Operational Efficiency**: Reduces manual intervention with automated routing.
-
-+ **Scalability**: Supports high-volume traffic with optimized performance.
+First, it checks the longest prefix, then it checks the shortest prefix for a match. If no prefix gets matched, it matches the rate cards with mutually exclusive destinations. If there are several rate cards with the same prefix, you must set up a dial plan with a Tech Prefix to identify the correct card.
 
 !!! question "How it works?"
-    **Ingress Routing** is the process that allocates an incoming call (dialed by our customers) based on the assigned Customer Rate Card, which then Egresses the call to a specified provider. This makes it possible to deploy several rate cards both with and without a prefix.
-    First, it checks the longest prefix, then it checks the shortest prefix for a match. If no prefix gets matched, it matches the rate cards with mutually exclusive destinations. If there are several rate cards with the same prefix, you must set up a dial plan with a Tech Prefix to identify the correct card.
     ```mermaid
     graph TD
     A[Incoming Call from Customer] --> B{Check Longest Prefix Match}
@@ -69,7 +53,7 @@ graph TD
   
   C -- Apply Routing Rules --> E[Call Processing]
   
-  E -- Forward Call --> F[Designated Destination]
+  E -- Forward Call --> F[Provider]
   E -- Update --> G[Billing & Reporting]
 ```
 
