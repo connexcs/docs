@@ -16,7 +16,7 @@ Data related to Session Initiation Protocol (SIP) signalling and call completion
 |----------|----------------|
 | **Channels**| Details of historic channel usage|
 | **ACD**| You can view Average Call Duration as a Total, or you can isolate traffic on a per-carrier basis (click on a customer to remove / add it from the graph).<br>If ACD is lower on one carrier, that's indicative of potential line quality issues</br>|
-| **ASR**| You can view Answer Seizure Ratio as a Total, or you can isolate traffic on a per-carrier basis (click on a customer to remove / add it from the graph).<br>If some carriers are lower than others, this may create an issue.</br>|
+| **ASR**| You can view Answer Seizure Ratio as a Total, or you can isolate traffic on a per-carrier basis (click on a customer to remove / add it from the graph).|
 | **Attempts**| It's helpful to compare total connected calls to total attempted calls (which correlates to CPS below)|
 | **Balance**| Balance over time|
 | **CPS**| Calls per Second over time|
