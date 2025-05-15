@@ -24,39 +24,39 @@ We will also walk through configuring the **Broadcast Dialer** and demonstrate h
       2. `AI Calls Ringing`, `AI Calls Active`: These stats are only for **Broadcast Dialer**.
       3. `Agents Logged In`, `Agents Paused`, `Data Remaining` for **all three dialers**.
 
-<img src= "/customer-portal/img/cc9.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+<img src= "/customer-portal/img/9cc.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 === "Campaigns"
 
     Summarizes ongoing campaigns, including parameters like status, campaign type, source status, CPS, Channels etc. You also have an option to **Add Campaign**.
 
-    <img src= "/customer-portal/img/cc10new.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+    <img src= "/customer-portal/img/10ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 === "Agents"
 
     Summarizes ongoing agent activity, displaying parameters like status, SIP profile, protocol, bandwidth, CPS, channels, dial pattern, and other SIP metrics.
     You can also upload agents in bulk using **Create Bulk Agents**.
 
-    <img src= "/customer-portal/img/cc11new.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+    <img src= "/customer-portal/img/11ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 === "Script"
 
     Displays all the created scripts in the Contact Center. You can also **Add a New Script**. 
 
-      <img src= "/customer-portal/img/cc12new.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+      <img src= "/customer-portal/img/12ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 === "Leadset"
 
     Manages leadsets for outbound campaigns, showing parameters like name, associated campaign, status, and description.
     You can also create new leadsets individually or upload them in bulk using **Create Leadset**.
 
-      <img src= "/customer-portal/img/cc13new.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+      <img src= "/customer-portal/img/13ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Setting Up Your Broadcast Dialer
 
 1. [Click here](https://docs.connexcs.com/class5/ai-agent/#steps-to-create-ai-agent) to create an AI Agent.
 2. Navigate to **Customer Portal :material-menu-right: Contact Center**.
-3. In the `Campaign` tab, click `Add Campaign`. <br><img src= "/customer-portal/img/cc88.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+3. In the `Campaign` tab, click `Add Campaign`. <br><img src= "/customer-portal/img/88cc.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 4. A Window will pop-up with two sections:
       1. **Basic Info**:
          1. **Name**: Enter the Campaign name.
@@ -70,11 +70,11 @@ We will also walk through configuring the **Broadcast Dialer** and demonstrate h
          3. **Source Status**: Select `Ready`/`New` or Custom Source Status for call origination. If no status is selected the calls won't be sent.
          4. **Internal Destination**: Select your AI Agent from the drop-down menu.
 
-5. Click on the `Confirm` button. <br><img src= "/customer-portal/img/cc66new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+5. Click on the `Confirm` button. <br><img src= "/customer-portal/img/66ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 6. Click on `See More` in the `Details` column.
 
-7. A `Campaign Overview` will open. This interface is used for real-time monitoring of campaigns, lead stats, agent statuses, and calling activity. <br><img src= "/customer-portal/img/cc88new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+7. A `Campaign Overview` will open. This interface is used for real-time monitoring of campaigns, lead stats, agent statuses, and calling activity. <br><img src= "/customer-portal/img/88cc.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
       1. `State`: Whether the campaign is `Active` or `Inactive`.
 

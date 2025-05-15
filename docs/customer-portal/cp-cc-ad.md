@@ -24,38 +24,38 @@ We will also walk through configuring the **Auto Dialer** and demonstrate how to
       2. `AI Calls Ringing`, `AI Calls Active`: These stats are only for **Broadcast Dialer**.
       3. `Agents Logged In`, `Agents Paused`, `Data Remaining` for **all three dialers**.
 
-<img src= "/customer-portal/img/cc9.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/customer-portal/img/9cc.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 === "Campaigns"
 
     Summarizes ongoing campaigns, including parameters like status, campaign type, source status, CPS, Channels etc. You also have an option to **Add Campaign**.
 
-    <img src= "/customer-portal/img/cc10new.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+    <img src= "/customer-portal/img/10ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 === "Agents"
 
     Summarizes ongoing agent activity, displaying parameters like status, SIP profile, protocol, bandwidth, CPS, channels, dial pattern, and other SIP metrics.
     You can also upload agents in bulk using **Create Bulk Agents**.
 
-    <img src= "/customer-portal/img/cc11new.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+    <img src= "/customer-portal/img/11ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 === "Script"
 
     Displays all the created scripts in the Contact Center. You can also **Add a New Script**. 
 
-      <img src= "/customer-portal/img/cc12new.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+      <img src= "/customer-portal/img/12ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 === "Leadset"
 
     Manages leadsets for outbound campaigns, showing parameters like name, associated campaign, status, and description.
     You can also create new leadsets individually or upload them in bulk using **Create Leadset**.
 
-      <img src= "/customer-portal/img/cc13new.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+      <img src= "/customer-portal/img/13ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Setting Up Your Auto Dialer
 
 1. Navigate to **Customer Portal :material-menu-right: Contact Center**.
-2. In the `Campaign` tab, click `Add Campaign`. <br><img src= "/customer-portal/img/cc14new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+2. In the `Campaign` tab, click `Add Campaign`. <br><img src= "/customer-portal/img/14ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 3. A Window will pop-up with two sections:
       1. **Basic Info**:
          1. **Name**: Enter the Campaign name.
@@ -67,7 +67,7 @@ We will also walk through configuring the **Auto Dialer** and demonstrate how to
          1. **Caller ID**: The `CLI` used for this campaign.
          2. **Source Status**: Select `Ready`/`New` or Custom Source Status for call origination. If no status is selected the calls won't be sent.
          3. **Outbound Multiplier**: It controls how many outbound calls your system (or agent/reseller) can make at the same time.
-         4. **Custom Disposition**: A user-defined set of call outcome labels that agents are required to select after each call, enabling structured tracking, systematic reporting, and optimized follow-up workflows. <br><img src= "/customer-portal/img/cc44new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+         4. **Custom Disposition**: A user-defined set of call outcome labels that agents are required to select after each call, enabling structured tracking, systematic reporting, and optimized follow-up workflows. <br><img src= "/customer-portal/img/44ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
             1. `Agent Unavailable`: Call was made but hung up due to agent being busy (mostly in auto dialers).
             2. `Answered`: Call is connected.
             3. `Connection Error`: Originate method failed to work.
@@ -86,7 +86,7 @@ We will also walk through configuring the **Auto Dialer** and demonstrate how to
 
 5.Click on `See More` in the `Details` column.
 
-6.A `Campaign Overview` will open. This interface is used for real-time monitoring of campaigns, lead statistics, agent statuses, and calling activity. <br><img src="/customer-portal/img/cc89new.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+6.A `Campaign Overview` window will open. This interface is used for real-time monitoring of campaigns, lead statistics, agent statuses, and calling activity. <br><img src="/customer-portal/img/89ccnew.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
    1. `State`: Whether the campaign is `Active` or `Inactive`.
 
@@ -110,8 +110,8 @@ We will also walk through configuring the **Auto Dialer** and demonstrate how to
 
    5. `Campaign Agents`: List of agents assigned to the campaign.
 
-      1. `Manage Agents`: Allows you to add/remove agents from the campaign from the drop-down menu. Click `Confirm`. <br><img src= "/customer-portal/img/cc34new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-             For example: The select agents will be added. <br><img src= "/customer-portal/img/cc35.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+      1. `Manage Agents`: Allows you to add/remove agents from the campaign from the drop-down menu. Click `Confirm`. <br><img src= "/customer-portal/img/34ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+             For example: The select agents will be added. <br><img src= "/customer-portal/img/35cc.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
       2. `Refresh Button`: To update agent statuses.
 
@@ -131,25 +131,25 @@ We will also walk through configuring the **Auto Dialer** and demonstrate how to
 
       7. `Agents in Queue`: Displays a list of agents who are waiting for a call or are ready to be assigned a call in the campaign.
 
-7.**Agents**: This section has information on the agents. You can also `Create Bulk Agents`. <br><img src= "/customer-portal/img/cc16new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+7.**Agents**: This section has information on the agents. You can also `Create Bulk Agents`. <br><img src= "/customer-portal/img/16ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
    1. Select a `SIP Profile`.
 
    2. Add the `Number of Agents` for participation in this campaign.
 
-   3. Click on `Create`. <br><img src= "/customer-portal/img/cc17new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+   3. Click on `Create`. <br><img src= "/customer-portal/img/17ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 8.**Script**: The Script section enables you to create structured call scripts for agents to follow during customer interactions.
 
-   1. Click on `Add a new Script`. <br><img src= "/customer-portal/img/cc18new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+   1. Click on `Add a new Script`. <br><img src= "/customer-portal/img/18ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
    2. Enter the `Script Name` and `Script`.
 
-   3. Click `Confirm` to save the script. <br><img src= "/customer-portal/img/cc46new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+   3. Click `Confirm` to save the script. <br><img src= "/customer-portal/img/46ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-   4. The created script will be displayed in the window; click on `Preview` to view the script. <br><img src= "/customer-portal/img/cc47.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+   4. The created script will be displayed in the window; click on `Preview` to view the script. <br><img src= "/customer-portal/img/47cc.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-9.**Leadset**: This section has information on the Leadsets. You can also `Create Leadset`. <br><img src= "/customer-portal/img/cc21new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+9.**Leadset**: This section has information on the Leadsets. You can also `Create Leadset`. <br><img src= "/customer-portal/img/21ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 10.A new window will appear, prompting you to enter the required information:
 
@@ -161,11 +161,11 @@ We will also walk through configuring the **Auto Dialer** and demonstrate how to
 
    4. **State**: Configure the leadset’s operational status by setting it to either Active (available for assignment and dialing) or Inactive (disabled or paused).
 
-   5. Click on `Confirm` to create the leadset. <br><img src= "/customer-portal/img/cc48new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+   5. Click on `Confirm` to create the leadset. <br><img src= "/customer-portal/img/48ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
    6. Click on `See More` in the `Details` column.
 
-11.**A Leadset Dashboard** monitoring window will appear which displays the metrics of the leadset. <br><img src= "/customer-portal/img/cc49.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+11.**A Leadset Dashboard** monitoring window will appear which displays the metrics of the leadset. <br><img src= "/customer-portal/img/49cc.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 12.Description of the fields in the stats window:
 
@@ -175,26 +175,26 @@ We will also walk through configuring the **Auto Dialer** and demonstrate how to
 
    3. Click on `Leadset Data` to view the leadset data.
 
-   4. Click on `Upload Leads` to upload the leadset data. <br><img src= "/customer-portal/img/cc50new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+   4. Click on `Upload Leads` to upload the leadset data. <br><img src= "/customer-portal/img/50ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
    5. Upload your data via `File`, `URL` or by entering the `Text`.
 
-      1. **File**: Drag and Drop a file or click to upload the `.csv`. <br><img src= "/customer-portal/img/cc51new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+      1. **File**: Drag and Drop a file or click to upload the `.csv`. <br><img src= "/customer-portal/img/51ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-         1. A new window will open where two actions must be completed to create the leadset. <br><img src="/customer-portal/img/cc52new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+         1. A new window will open where two actions must be completed to create the leadset. <br><img src="/customer-portal/img/52ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-         2. `Set row`: To indicate where the upload should start. `Right-click` on the row to want to start the uploading and click on `Set Start Row`. <br><img src="/customer-portal/img/cc27new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+         2. `Set row`: To indicate where the upload should start. `Right-click` on the row to want to start the uploading and click on `Set Start Row`. <br><img src="/customer-portal/img/27ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-         3. `Map Table Columns`: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. `Right-click` on the column you wish to be mapped, click on `Map Column` then `Phone` and `Status`. Click on `Upload`. This will upload the leadset data to the server. <br><img src="/customer-portal/img/cc28new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br> <img src="/customer-portal/img/cc29new.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+         3. `Map Table Columns`: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. `Right-click` on the column you wish to be mapped, click on `Map Column` then `Phone` and `Status`. Click on `Upload`. This will upload the leadset data to the server. <br><img src="/customer-portal/img/28ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br> <img src="/customer-portal/img/29ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-         4. Upon successful upload, the leadset will appear as shown below. <br><img src="/customer-portal/img/cc56new.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+         4. Upon successful upload, the leadset will appear as shown below. <br><img src="/customer-portal/img/56ccnew.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-      2. **Uploading via URL**: Enter the URL in the CSV format and hit the Upload button. <br><img src="/customer-portal/img/cc57new.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-         1. A new window will open where two actions must be completed to create the leadset. <br><img src="/customer-portal/img/cc52new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-         2. `Set row`: To indicate where the upload should start. `Right-click` on the row to want to start the uploading and click on `Set Start Row`. <br><img src="/customer-portal/img/cc27new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-         3. `Map Table Columns`: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. `Right-click` on the column you wish to be mapped, click on `Map Column` then `Phone` and `Status`. Click on `Upload`. This will upload the leadset data to the server. <br><img src="/customer-portal/img/cc28new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br> <img src="/customer-portal/img/cc29new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-         4. The successful upload can be seen in the image. <br><img src="/customer-portal/img/cc56.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-         5. The updated `Leadset Dashboard` can be seen as. <br><img src="/customer-portal/img/cc87.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+      2. **Uploading via URL**: Enter the URL in the CSV format and hit the Upload button. <br><img src="/customer-portal/img/57ccnew.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+         1. A new window will open where two actions must be completed to create the leadset. <br><img src="/customer-portal/img/52ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+         2. `Set row`: To indicate where the upload should start. `Right-click` on the row to want to start the uploading and click on `Set Start Row`. <br><img src="/customer-portal/img/27ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+         3. `Map Table Columns`: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. `Right-click` on the column you wish to be mapped, click on `Map Column` then `Phone` and `Status`. Click on `Upload`. This will upload the leadset data to the server. <br><img src="/customer-portal/img/28ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br> <img src="/customer-portal/img/29ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+         4. The successful upload can be seen in the image. <br><img src="/customer-portal/img/56ccnew.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+         5. The updated `Leadset Dashboard` can be seen as. <br><img src="/customer-portal/img/87cc.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
       3. **Uploading via Text**:
          1. Enter the text in the following format:
@@ -206,18 +206,18 @@ We will also walk through configuring the **Auto Dialer** and demonstrate how to
                44118, Ready
                44119, Ready
             ```
-         2. Click on `Upload`. <br><img src="/customer-portal/img/cc58.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-         3. A new window will open where two actions must be completed to create the leadset. <br><img src="/customer-portal/img/cc52new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-         4. `Set row`: To indicate where the upload should start. `Right-click` on the row to want to start the uploading and click on `Set Start Row`. <br><img src="/customer-portal/img/cc27new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-         5. `Map Table Columns`: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. `Right-click` on the column you wish to be mapped, click on `Map Column` then `Phone` and `Status`. Click on `Upload`. This will upload the leadset data to the server. <br><img src="/customer-portal/img/cc28new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br> <img src="/customer-portal/img/cc29new.png" style="border: 2px solid #4472C4; border-radius: 8px;">
-         6. The successful upload can be seen in the image. <br><img src="/customer-portal/img/cc56.png" widht= "800" style="border: 2px solid #4472C4; border-radius: 8px;">
-         7. The updated `Leadset Dashboard` can be seen as. <br><img src="/customer-portal/img/cc87.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+         2. Click on `Upload`. <br><img src="/customer-portal/img/58cc.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+         3. A new window will open where two actions must be completed to create the leadset. <br><img src="/customer-portal/img/52newcc.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+         4. `Set row`: To indicate where the upload should start. `Right-click` on the row to want to start the uploading and click on `Set Start Row`. <br><img src="/customer-portal/img/ad1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+         5. `Map Table Columns`: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. `Right-click` on the column you wish to be mapped, click on `Map Column` then `Phone` and `Status`. Click on `Upload`. This will upload the leadset data to the server. <br><img src="/customer-portal/img/c3c.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br> <img src="/customer-portal/img/c4c.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+         6. The successful upload can be seen in the image. <br><img src="/customer-portal/img/ad2.png" widht= "800" style="border: 2px solid #4472C4; border-radius: 8px;">
+         7. The updated `Leadset Dashboard` can be seen as. <br><img src="/customer-portal/img/ad3.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 13.**Continue to Modify**: If you click here, it will redirect to the Data Sure. [Click here](https://docs.connexcs.com/datasuite/) to know more.
 
 14.**Edit Leadset**: Modify the details of an existing Leadset. The system will present the same interface as `Create Leadset`.
 
-15.**Add Lead (Form)**: Manually add a lead via a form. <br><img src="/customer-portal/img/cc31.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+15.**Add Lead (Form)**: Manually add a lead via a form. <br><img src="/customer-portal/img/31cc.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 16.**Lead Status**: Displays whether a lead is available, being worked on, needs follow-up, or is no longer active.
 
@@ -235,17 +235,17 @@ We will also walk through configuring the **Auto Dialer** and demonstrate how to
 
 ### Agent Dialer Guide
 
-1. Enter the domain as entered in the **IDE** in [Step-I](add link). The screen will prompt the agent to enter the `Username` and `Password`. Click on `Login`. <br><img src="/customer-portal/img/cc37.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-2. Select the campaign `Auto Dialer` from the drop-down menu and click `Confirm`. <br><img src="/customer-portal/img/cc59new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+1. Enter the domain as entered in the **IDE** in [Step-I](add link). The screen will prompt the agent to enter the `Username` and `Password`. Click on `Login`. <br><img src="/customer-portal/img/37cc.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+2. Select the campaign `Auto Dialer` from the drop-down menu and click `Confirm`. <br><img src="/customer-portal/img/59ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 3. An Agent Dialer interface with the following fields will appear:
       1. `Agent Status` toggle: Make sure its `enabled (green)`, meaning the agent is active and ready to take calls
       2. `Selected Campgain` from the drop-down menu.
       3. `Keypad` for dialing the numbers.
       4. `Script`: Displays the call script the agent should follow.
-      5. `Logout` for the agent to log off from the system. <br><img src="/customer-portal/img/cc60new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+      5. `Logout` for the agent to log off from the system. <br><img src="/customer-portal/img/60ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
       6. `Contact information` of the customer sourced from the **uploaded Leadset** or entered manually via the **Lead Form**. The contact information of the customer will be updated after the agent receives the call.
       7. As soon as the `Agent Status` is enabled, the agent starts getting calls.
-      8. A `Live Call` window will appear. <br><img src="/customer-portal/img/cc61new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+      8. A `Live Call` window will appear. <br><img src="/customer-portal/img/61ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
           1. `Hold`: Allows your agent to place the call on hold.
           2. `Transfer`: Transfer call to another agent or manager.
           3. `Mute`: Allows your agent to mute your call.
@@ -253,11 +253,11 @@ We will also walk through configuring the **Auto Dialer** and demonstrate how to
           5. `Conference`: **Currently *NOT IN USE***.
           6. `Keypad`: Displays the number keypad.
           7. `End`: Allows your agent to disconnect the call.
-4. After the call ends, your agent can either `Submit` the disposition and get ready for the next call or `Submit & Go On Pause`. <br><img src="/customer-portal/img/cc62new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+4. After the call ends, your agent can either `Submit` the disposition and get ready for the next call or `Submit & Go On Pause`. <br><img src="/customer-portal/img/62ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 5. `Invalid Details`: Lets the agent flag the lead if information is incorrect or incomplete.
-6. Your agents can also the updte the customer details using the `Edit` button.
-7. The updated `Campaign Overview` can be seen. <br><img src="/customer-portal/img/cc851new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-8. The updated `Leadset Overview` can be seen. <br><img src="/customer-portal/img/cc8511new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+6. Your agents can also the update the customer details using the `Edit` button.
+7. The updated `Campaign Overview` can be seen. <br><img src="/customer-portal/img/851ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+8. The updated `Leadset Overview` can be seen. <br><img src="/customer-portal/img/8511ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 !!! Note
     The next call will go through after **30 seconds**.

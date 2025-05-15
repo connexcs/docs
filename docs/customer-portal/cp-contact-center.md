@@ -41,7 +41,7 @@ The agent gets enough time to review and decide whether to call the person and h
         style E fill:#FFEBEE,stroke:#C62828,stroke-width:2,rx:10,ry:10
         style F fill:#E0F2F1,stroke:#00796B,stroke-width:2,rx:10,ry:10
 
-        A(["👩‍💼 Agent becomes available<br/>🟢 Marks as 'Ready'"]) --> B(["📋 System selects next contact<br/>🔍 Displays profile:<br/>- First/Last Name<br/>- Address, Contact<br/>- City, Gender<br/>- Call Count, Email<br/>- Comments"])
+        A(["👩‍💼 Agent becomes available<br/>🟢 Marks as 'Ready'"]) --> B(["📋 System selects next contact<br/>🔍 Displays profile:<br/>- First/Last Name<br/>- Address, Contact<br/>- City, Gender<br/>- Email<br/>- Comments"])
         B --> C(["🧠 Agent reviews info:<br/>📜 Assess script<br/>🎯 Prepare pitch<br/>⏭️ Decide to dial or skip"])
         C --> D(["📞 Agent clicks 'Dial'<br/>(Manual Mode)"])
         D --> E(["📝 Call ends<br/>Agent adds:<br/>- Notes<br/>- Tags<br/>- Disposition"])
