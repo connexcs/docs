@@ -6,9 +6,11 @@
 
 The **Audit Log**, or Audit Trail, is a chronological set of records that shows all changes (activities) performed on a system, software, or device, or both customers and carriers. It even displays **timestamps** and **IP addresses**.
 
+It displays when the customer was created, all changes made, either directly by users or through the API. This includes all activity on the Control Panel and in the Customer Portal.
+
 Displays HTTP verbs (PUT, POST, GET, DELETE) for actions taken.
 
-Enables viewing differences between previous and current configurations.
+Enables **viewing differences** between previous and current configurations.
 
 It displays all changes made, either directly by users or through the API. This includes all activity on the Control Panel and in the Customer Portal.
 
@@ -39,13 +41,13 @@ You can search using Account ID, Ingress ID, etc.
 | Column Name | Description|
 |-------------|------------|
 | **User** | User responsible for the events. An entry will display 'Portal' if you make a change there; all others were directly made in the Control Panel|
-| **IP** | IP address of the computer which performed the action|
+| **IP** | IP address of the computer which performed the action (from where the IP was modified)|
 | **Date / Time** | Date / Time when the User made the change|
 | **Primary Key** | Unique ID of the record in the database that the User modified with this action|
 | **Action** | The action type performed: CREATE, DELETE, GENERATE, LOGIN, POST, PUBLISH, PUT, SEND, or UPDATE|
 | **Table**| The table in the database that the User modified|
 | **Message**| A simple message that defines what the user did|
-| **Data**| A before and after record of the change|
+| **Data**| Click `View Difference` to see the fields changed, plus previous and current values. (Data displayed in JSON format.)|
 
 ## View Difference
 
