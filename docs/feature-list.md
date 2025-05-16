@@ -224,7 +224,8 @@ The following is a comprehensive list of features included in the latest stable 
 * Custom Permissions (30+ Options)
 * [Call Reporting](https://docs.connexcs.com/customer-portal/cp-breakout/)
 * Customizable CDR Downloads
-* [Email & Mobile Verification](https://docs.connexcs.com/getting-started/#verify-contact-details)
+* [Email Verification](https://docs.connexcs.com/getting-started/#email-verification)
+* [Mobile Verification](https://docs.connexcs.com/getting-started/#mobile-verification)
 * Self CLI Verification (via callback)
 * Full API Support
 * Upload your own Logo

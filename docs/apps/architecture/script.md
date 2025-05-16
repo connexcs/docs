@@ -102,7 +102,7 @@ function main (data = {}) {
 }
 ```
 
-### Export/Import
+### Driver
 
 + **Export**: You can `export` functions, objects, or primitives from a module so they can be used in other modules.
 
