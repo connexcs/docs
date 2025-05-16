@@ -2,35 +2,9 @@
 
 **Management :material-menu-right: Customer**
 
-<<<<<<< HEAD
 The **Customer**  section will help you navigate the key functionalities of our system, from adding customers to configuring settings, managing invoices, and understanding audit logs.
 
 Follow the sections below to get started.
-=======
-## Platform Intelligence
-
-Before setting up your customers, let's take a moment to understand the powerful intelligence built into the ConnexCS platform.
-
-ConnexCS stands out as an intelligent platform in the telecommunications domain through the integration of several sophisticated features.
-
-At the core lies **[ASR+](https://docs.connexcs.com/customer/routing/#answer-seizure-ratio-plus-details)**, a technology that continuously analyzes call data to identify and filter out known bad numbers.
-By learning from real-time call outcomes, ASR+ proactively prevents calls to unreachable destinations, minimizing wasted resources and significantly improving call success rates.
-
-[ConnexCS AnyEdge](https://docs.connexcs.com/anyedge/anyedge/) acts as a **high-performance load balancer and traffic dispatcher**. This intelligent component distributes traffic seamlessly across multiple SIP servers, ensuring optimal resource utilization and minimizing latency.
-AnyEdge also offers customizable call distribution rules, allowing businesses to prioritize critical calls and optimize routing for specific customer segments.
-
-ConnexCS incorporates **[Spam Scout Scoring](https://docs.connexcs.com/guides/spam-callsblock/#64-using-spam-scout-scoring)**. By providing options to block calls based on spam score. Spam Scout effectively reduces the impact of spam calls on network resources and enhances the user experience.
-
-Complementing Spam Scout is **[IPQS](https://www.ipqualityscore.com/)**. It also blocks the calls based on the spam score. The spam score is provided by a third party IPQS.
-
-By proactively managing traffic, enhancing call quality, and improving network security, ConnexCS empowers businesses to optimize their telecommunications operations, reduce costs, and deliver a superior customer experience.
-
-The combination of intelligent capabilities positions ConnexCS as a leading-edge solution in the telecommunications industry, providing businesses with a competitive advantage in today's dynamic market.
-
-## Customer functions
-
-You can organize ConnexCS **Customers** through customer cards.
->>>>>>> aacc0445e2fa3852a071fa1dfc2dba476f721438
 
 !!! question "How many customers can I add?"
     You can add unlimited customers, and we won't charge per customer, only on their individual usage.
@@ -122,22 +96,15 @@ The following sections will appear when you click on the `blue +` sign.
         + **Required**: PAID must be present. If PAID is missing, the call will not proceed.PAID is mandatory for call routing.
 
     + **Portal Access:** It allows you to **Show** and **Hide** parameters like Balance, CDR, Breakout etc on your customer portal. 
-<<<<<<< HEAD
     + **Tags**: Use this to add meta-data identifiers to a customer. If a customer routing is created using a template from [**Global Routing**](https://docs.connexcs.com/global-routing/), this will be the tag configured in the template. Used to apply global routing rules to customers.
     + Vars<sup>[**TOML**](https://en.wikipedia.org/wiki/TOML)</sup>: This is a data storage mechanism for configuration, similar to INI files. It allows you to create advanced customization to set values, etc, for Script Forge to reference later. 
     + **Reseller**: Allows customers to manage sub-accounts and grant controlled access to their resellers.
     This ensures proper call routing, access restrictions, and rate card management.
-    Associate the customer to a preset Reseller Group (see [**Create Groups**](https://docs.connexcs.com/setup/
-    settings/users/#create-groups) for more details.)
+    Associate the customer to a preset Reseller Group (see [**Create Groups**](https://docs.connexcs.com/setup/settings/users/#groups) for more details.)
         + The reseller can manage multiple customers under their account.
         + Resellers can have controlled access to rate cards, customer accounts, and billing.
         + Each reseller sees only the customers and rate cards assigned to them.
         + Resellers can sell traffic to their own customers and manage billing.
-=======
-    + **Tags**: Use this to add meta-data identifiers to a customer. If a customer routing is created using a template from [**Global Routing**](https://docs.connexcs.com/global-routing/), this will be the tag configured in the template.
-    + [**TOML**](https://en.wikipedia.org/wiki/TOML): This is a data storage mechanism for configuration, similar to INI files. It allows you to create advanced customization to set values, etc, for Script Forge to reference later. 
-    + **Reseller**: Associate the customer to a preset Reseller Group (see [**Create Groups**](https://docs.connexcs.com/setup/settings/users/#groups) for more details.)
->>>>>>> aacc0445e2fa3852a071fa1dfc2dba476f721438
     + **Account Manager**: Designating the control of this account to a specific user.
     + **Invoice Schedule**: Specify frequency for invoice generation like Daily, Weekly or Monthly.
     + **Flags**: Select the **Create Invoice on Payment** flag and if payment done then invoice will be generated.
