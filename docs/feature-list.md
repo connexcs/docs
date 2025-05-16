@@ -131,7 +131,7 @@ The following is a comprehensive list of features included in the latest stable 
 * [Channel and CPS Limitations](https://docs.connexcs.com/guides/channel-limitations/)
 * Assign Package to DID
 * Tags
-* [DID Driver Support (Connect Any Provider API)](https://docs.connexcs.com/apps/architecture/script/#driver)
+* [DID Driver Support (Connect Any Provider API)](https://docs.connexcs.com/apps/architecture/script/#export)
 
 ### Caller Line Identification Management
 
