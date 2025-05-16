@@ -8,6 +8,11 @@ See [**Customer CDR**](https://docs.connexcs.com/customer/cdr/#recalculate-cdr) 
 
 The **CDR** tab displays call drop rates. Use **`Recalc CDR`** when CDR records aren't accurate.
 
+<<<<<<< HEAD
+=======
+See [**Customer CDR**](https://bani-ankmeg--connexcs-docs.netlify.app/customer/cdr/#recalculate-call-detail-record) for details.
+
+>>>>>>> aacc0445e2fa3852a071fa1dfc2dba476f721438
 !!! danger "Rerating CDRs"
     If you select either "Rerate" option when recalculating CDRs, this will change your CDRs and isn't reversible. You can revise Original call durations according to the criteria selected.
 

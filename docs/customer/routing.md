@@ -58,7 +58,73 @@ View and configure existing routes on the Routing tab in the Customer card. To c
   **For example**, for customers with flat rate accounts, which allows to dial all UK numbers but premium numbers, you would set the Provider Capped Rate at 0.01, so any call that the provider might charge over that amount wouldn't get completed.
 
 + **Profit Assurance**: When `Enabled`, only calls that are profitable pass-through; any call that costs more than the retail rate aren't allowed to complete. This is particularly useful for A-Z routes or NPA-NXX [rate cards](https://docs.connexcs.com/rate-card-building/).
-  Keep in mind that enabling it adds an extra Post-dial delay (PDD) to the call.
+  
+!!! Tip "When Profit Assurance Fails to Operate"
+    **A. Profit Assurance may appear to fail, often due to:**
+
+    1.**Incorrect Billing Configurations**:
+    
+    Billing increments (e.g., 6/6, 30/6, or 60/60) play a significant role in profitability. A mismatch between the billing increments of your carrier and customer rates can lead to unexpected losses.
+    
+    **For example**:
+        If you buy at 30/6 and sell at 6/6, you lose money on shorter-duration calls because of rounding discrepancies.
+    
+    2.**Profit Assurance Enabled but Losses Persist**:
+    
+    Even with Profit Assurance enabled, losses may occur due to:
+    
+    * Specific call durations where rounding favors the carrier.
+    * Variability in customer usage patterns that do not align with your billing increment assumptions.
+    
+    3.**Misunderstanding Call Connection Logic**:
+    
+    Profit Assurance does not retroactively check call profitability during ongoing calls. If the buy rate is temporarily higher than the sell rate due to duration or rounding, calls may still connect.
+
+
+    **B. Diagnosing the Issue**
+
+    **Step 1: Analyze Breakout Reports**
+    
+    Use the Breakout Report to identify calls with negative margins: 
+    
+       * Navigate to **Management :material-menu-right: Reports :material-menu-right: Breakout Report**.
+     
+       * Filter by destination, carrier, or time period to pinpoint unprofitable calls.
+    
+    **Step 2: Compare Billing Increments**
+    
+    Verify the billing increments set for your carrier and customer:
+    
+      * Carrier increments define how you are charged (e.g., 30/6).
+    
+      * Customer increments define how you bill your customers (e.g., 6/6).
+    
+      * Mismatched increments often lead to losses, especially on shorter calls.
+
+    **Step 3: Review Sell and Buy Rates**:
+       
+    Ensure that your sell rates are consistently higher than your buy rates:
+       
+       + Check rate sheets for discrepancies.
+       
+       + Adjust rates to maintain a positive margin.
+
+
+    **C. Resolving the Issue**
+    
+    a. Adjust Configuration:
+    
+    * Align carrier and customer billing increments to minimize rounding discrepancies.
+    
+    * Update rate sheets to ensure sell rates always exceed buy rates.
+  
+    b. Enable Profit Assurance (if not already enabled):
+        
+    + This will block calls where the sell rate is lower than the buy rate.
+  
+    c. Identify and Address specific calls causing losses using the Breakout Report:
+        
+    + Analyze their durations and verify if the billing increments contributed to the issue.
 
 + **Block Connect Cost**: Block any call that has a connection fee.
 
@@ -102,7 +168,7 @@ View and configure existing routes on the Routing tab in the Customer card. To c
     
     Changing the CPS Buffering value only affects calls that exceed the CPS. The delay will show as increased PDD on the call, each second the system will emit a 100 Trying (High CPS, Buffering) response to show the status/progress of the call.
 
-+ **ASR Plus** assists capacity management by helping you define how to handle connections for known failed numbers. For information on the ASR Plus options, see [**ASR Plus Details**](https://docs.connexcs.com/customer/routing/#asr-answer-seizure-ratio-plus-details) below.
++ **ASR Plus** assists capacity management by helping you define how to handle connections for known failed numbers. For information on the ASR Plus options, see [**ASR Plus Details**](https://docs.connexcs.com/customer/routing/#answer-seizure-ratio-plus-details) below.
 
 + **Balance Disconnect** this feature checks the balance every 60 seconds. It will disconnect the call when the **balance plus the debit limit** is below $0.
 
@@ -265,11 +331,12 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 
 + **Call Recording**: This allows you to record and store calls, which are then found in:
 
-* **Logging**
-* **Management:material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: CDR**
-* **Management :material-menu-right: File :material-menu-right: Recording**
+    * **Logging**
+    * **Management:material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: CDR**
+    * **Management :material-menu-right: File :material-menu-right: Recording**
   
-An extra charge per recorded call of $0.003 gets added to existing fees or charges, so choose carefully how many calls to record:
+!!! Info
+    An extra charge per recorded call of **$0.003** gets added to existing fees or charges, so choose carefully how many calls to record:
 
 :material-menu-right: `Disabled`- no calls get recorded.
 
@@ -283,6 +350,8 @@ An extra charge per recorded call of $0.003 gets added to existing fees or charg
 + **Block DTMF:** This option allows you to either `pass` or `block` DTMF through your calls.
 
 !!! note "Make sure your carrier supports the DTMF feature."
+
++ **Flags (Active RTCP Generation)**: Enabling this feature generates RTCP packets, while disabling it allows them to pass through undisturbed.
 
 + **RTP Codec**: This fields allows you to have more specific control over the Codecs you choose for your system. After the selection you can assign various **Permissions** to the Codecs you select.
 
@@ -419,3 +488,35 @@ ASR (Answer Seizure Ratio) is the number of connected calls divided by the total
 [ingress-routing]: /customer/img/ingress-routing.png "Ingress Routing"
 [routing-disabled]: /customer/img/routing-disabled.png "Disabled Routing"
 [techprefix-usecase]: /customer/img/techprefix-usecase.png "Tech Prefix Use Case"
+
+## Strategic Routing
+
+Strategic Routing feature allows creating a Routing Strategy that, when applied, will route calls to specific provider rate cards, completely bypassing any routing configured in the customer rate card.
+
+### Steps for implementation
+
+1. **Create a Routing Strategy**:
+
+   + Navigate to **Management :material-menu-right: Routing Strategy :material-menu-right: blue `+` icon** .
+   + A window will pop-up to create a new strategy.
+   + Fill in the following details:
+       + **Name** of the strategy
+       + Select the **Strategy** from the drop-down menu.
+       + Enable the **Override Routing** option.
+   + Select a **Rate Card** from the drop-down menu.
+   + Click `Save`.
+
+<img src= "/customer/img/rs.png" width="800">
+
+2.**Apply the Strategy to a Customer**:
+
++ Navigate to **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Routing :material-menu-right: Ingress Routing :material-menu-right: blue `+` icon :material-menu-right: Strategy :material-menu-right: blue `+` icon**.
++ Select the **Prefix Set** or enter the **Prefix**.
++ Select the newly created **Routing Strategy** for the customer.
++ Click `Save`.
+
+<img src= "/customer/img/rs1.png">
+
+!!! Info "Routing Behaviour"
+    Once applied, calls from the customer will now route based on the provider rate cards specified in the strategy.
+    **Important**: This will completely ignore the routing set up in the customer rate card.

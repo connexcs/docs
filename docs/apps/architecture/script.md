@@ -102,27 +102,33 @@ function main (data = {}) {
 }
 ```
 
-### Driver
+### Export/Import
 
-A driver is a module export that may contain several pre-defined functions dependent on the integration; flow is an example for a DID Driver.
++ **Export**: You can `export` functions, objects, or primitives from a module so they can be used in other modules.
 
-``` js
-module.export = {
- search: async function ({number}) {
-  // Returns Array of Objects, e.g [{did:'1234'}]
- },
- allocate: async function ({did}) {
-  // The information returned by this function will be passed to 
-  // https://api-docs.connexcs.com/#api-Did-Create
- },
- release: async function ({did}) {
-  // Returns True / False
- },
- list: async function () {
-  // Returns Array of Objects, e.g [{did:'1234'}]
- }
-}
-```
+!!! Note "Important Note"
+    The filename from which the function is exported must be in **lowercase** and must **not contain any spaces or special characters**.
+
+!!! Example "Export module example"
+    ```js
+    function run () {
+        return 4 + 10
+
+    }
+    module.exports = {run}
+    ```
+
+
++ **Import**: Use `import` to bring in code from other modules.
+  
+!!! Example "Import module example"
+    ```js
+    const { run } = require('fileName')
+
+    function main() {
+        return run() // result is 14
+    }
+    ```
 
 ## Configuration
 
@@ -261,3 +267,12 @@ function main(data) {
 
 [s2]: /developers/img/176.png "s2"
 [s8]: /developers/img/183.png "s8"
+
+## Script Forge Background Job Queue Support
+
+You can access and view background jobs running through Script Forge.
+
+1. You can view the jobs under Global :material-menu-right: Queue. <img src= "/apps/img/job1.png">
+2. Click on the job `Name`  to view the status.
+
+<img src= "/apps/img/job2.png" width= "200">

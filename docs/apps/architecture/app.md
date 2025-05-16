@@ -40,4 +40,4 @@ You can create your own App and publish it to the **ConnexCS App Store**. Also, 
 
 !!! warning
 
-    If you intend to remove an App, you must also remove all the data associated with it, including that found in Buttons, ScriptForge, Variables, Pages, and Templates.
+    If you intend to remove an App, you must also remove all the data associated with it, including those in Buttons, ScriptForge, Variables, Pages, and Templates.
