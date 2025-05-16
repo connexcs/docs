@@ -26,14 +26,12 @@ The combination of intelligent capabilities positions ConnexCS as a leading-edge
 
 You can organize ConnexCS **Customers** through customer cards.
 
-![alt text][customers]
-
 !!! question "How many customers can I add?"
     You can add unlimited customers, and we won't charge per customer, only on their individual usage.
 
 On the **Customers** page, you can perform several management operations.
 
-By clicking on `+` button we can add customer (see [**Create Customers**](https://docs.connexcs.com/customer/customer/#create-customers) below for details.)
+By clicking on `+` button we can add customer (see [**Create Customers**](https://docs.connexcs.com/customer/customer/#create-customer) below for details.)
 
 **Refresh**: Refreshing the page, helpful when making edits or looking at real-time changes. This page is built as a web app, so some information will update automatically.
 
@@ -120,7 +118,7 @@ By clicking on `+` button we can add customer (see [**Create Customers**](https:
     + **Portal Access:** It allows you to **Show** and **Hide** parameters like Balance, CDR, Breakout etc on your customer portal. 
     + **Tags**: Use this to add meta-data identifiers to a customer. If a customer routing is created using a template from [**Global Routing**](https://docs.connexcs.com/global-routing/), this will be the tag configured in the template.
     + [**TOML**](https://en.wikipedia.org/wiki/TOML): This is a data storage mechanism for configuration, similar to INI files. It allows you to create advanced customization to set values, etc, for Script Forge to reference later. 
-    + **Reseller**: Associate the customer to a preset Reseller Group (see [**Create Groups**](https://docs.connexcs.com/setup/settings/users/#create-groups) for more details.)
+    + **Reseller**: Associate the customer to a preset Reseller Group (see [**Create Groups**](https://docs.connexcs.com/setup/settings/users/#groups) for more details.)
     + **Account Manager**: Designating the control of this account to a specific user.
     + **Invoice Schedule**: Specify frequency for invoice generation like Daily, Weekly or Monthly.
     + **Flags**: Select the **Create Invoice on Payment** flag and if payment done then invoice will be generated.

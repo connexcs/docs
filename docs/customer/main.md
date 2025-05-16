@@ -18,7 +18,7 @@ It offers a comprehensive set of tools to manage customer accounts, including th
 
 ![alt text][cust-main]
 
-!!! note "By clicking the dropdown next to the             customer's   name, you will be redirected to the selected customer's portal. For more information, see [Access Customer Panel](https://docs.connexcs.com/customer/main/#access-customer-portal)."
+!!! note "By clicking the dropdown next to the customer's name, you will be redirected to the selected customer's portal. For more information, see [Access Customer Portal](https://docs.connexcs.com/customer-portal/cp-dashboard/)."
 
 ## Contacts
 

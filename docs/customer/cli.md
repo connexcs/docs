@@ -40,7 +40,7 @@ The **B-number, or B-leg**, is the **dialed number**, representing the **outgoin
 
 1. **Default Behaviour**
 
-By default, a customer account will pass all calls, even with no configured CLI records. To change this behavior, navigate to Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Edit :material-menu-right: Verification and enable [**Approved CLI's Only**](https://docs.connexcs.com/customer/cli/#allow-customers-to-add-their-own-caller-line-identification).
+By default, a customer account will pass all calls, even with no configured CLI records. To change this behavior, navigate to Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Edit :material-menu-right: Verification and enable [**Approved CLI's Only**](https://docs.connexcs.com/customer/cli/#allow-customers-to-add-their-own-cli).
 
 !!! warning "Approve CLI override"
     Once you enter the first CLI rule, the behaviour changes to block all, regardless of the "Approved CLI's Only" setting.
