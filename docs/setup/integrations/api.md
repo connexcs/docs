@@ -4,7 +4,7 @@
 
 Configure **API Integrations** to let ConnexCS connect to external services. It provides seamless connectivity to external systems and payment processors.
 
-For inbound APIs, please see the [**API**](https://docs.connexcs.com/api/) in the Architecture documentation.
+For inbound APIs, please see the [**API**](https://api-docs.connexcs.com/) in the Architecture documentation.
 
 !!! note "These integrations are custom written, offering similar capabilities as drivers."
 
@@ -150,7 +150,7 @@ Steps to configure IPN:
 
 **Step 2: Identify your IPN listener to PayPal**
 
-After you have configured ConnexCS, add it to your PayPal account (taken from PayPal support [**here**](https://developer.paypal.com/docs/api-basics/notifications/ipn/IPNSetup/#)).
+After you have configured ConnexCS, add it to your PayPal account (taken from PayPal support [**here**](https://developer.paypal.com/docs/api-basics/notifications/ipn/IPNSetup/)).
 
 1. Login to a PayPal Business Account (must be a Business account, not a regular PayPal account).
 2. Navigate to **Settings :material-menu-right: Account Settings :material-menu-right: Notifications**.

@@ -165,7 +165,7 @@ An LRN dip will correct any pricing discrepancies between the original and new c
 
     No charges for using this service, so customers have unlimited dips into the database.
 
-+ **ASR+**: Filter known failed, non-existent / working numbers. See [**ASR Plus Details**](https://docs.connexcs.com/customer/routing/#asr-answer-seizure-ratio-plus-details) for additional information.
++ **ASR+**: Filter known failed, non-existent / working numbers. See [**ASR Plus Details**](https://docs.connexcs.com/customer/routing/#answer-seizure-ratio-plus-details) for additional information.
 
 #### Advanced
 
@@ -185,7 +185,7 @@ An LRN dip will correct any pricing discrepancies between the original and new c
 + **CLI Restrict**: Enable Call Line Identification (CLI) restriction(s) using regular expressions to set valid number formats.
 See [**CLI**](/customer/cli/) for additional details.
 + **PAID Restrict**: Enable Pre-Asserted-Identity (PAID) restriction(s) using regular expressions to set valid number formats.
-See [**Filter PAID by Number or Pattern**](/customer/cli/#filter-paid-by-number-or-pattern) for additional details.
+See [**Filter PAID by Number or Pattern**](https://docs.connexcs.com/customer/cli/#filter-p-asserted-identity-by-number-or-pattern) for additional details.
 + **SMS URL**: *not in use*
 
 + **Default RTP**: If set and the customer adds the route themselves, then it deploys the Default RTP. Otherwise, this is an unused setting.

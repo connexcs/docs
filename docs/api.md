@@ -16,7 +16,7 @@ The switch API provides **full administrative capabilities**.
 
 This means that every function accomplished through our web interface is available through our API.
 
-You can find the API specification here: **<https://docs.connexcs.com/cp-api>**
+You can find the API specification here: **<https://api-docs.connexcs.com/#tag/alert>**
 
 You can find the API specification (new version) here: **<https://app.connexcs.com/api/api-spec/v3>**
 

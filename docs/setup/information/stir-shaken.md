@@ -4,7 +4,7 @@
 
 *(***STIR***: Secure Telephone Identity Revisited, ***SHAKEN***: Signature-based Handling of Asserted Information Using toKENs)*
 
-The [**STIR / SHAKEN Cert**](https://docs.connexcs.com/setup/information/stir-shaken/#add-stirshaken-cert) is a necessary prerequisite step for call origination providers to adopt to authenticate telephone calls in the future.
+The [**STIR / SHAKEN Cert**](https://docs.connexcs.com/setup/information/stir-shaken/#add-stir-shaken-cert) is a necessary prerequisite step for call origination providers to adopt to authenticate telephone calls in the future.
 
 The adoption of this standard helps to mitigate spoofing, robocalling, scam calls, etc.
 

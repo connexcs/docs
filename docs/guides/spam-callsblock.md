@@ -173,7 +173,7 @@ The firewall blocks the IP Addresses along with the attackers.
 1. Go to **Management > Customer > Customer [Name] > Routing > CLI**.
 2. You can enter a number that the callers are allowed to use.
 
-[**Click here**](https://docs.connexcs.com/customer/cli/#manipulate-caller-line-identification) to learn more about Regex Patterns.
+[**Click here**](https://docs.connexcs.com/customer/cli/#manipulate-cli) to learn more about Regex Patterns.
 
 ### 10.2 CLI- Allow Type
 
