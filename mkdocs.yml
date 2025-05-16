@@ -88,36 +88,7 @@ nav:
         - Tags: customer/tags.md
         - Circuit Test: circuit-test.md
 
-<<<<<<< HEAD
         - Report: report.md  
-=======
-    - Carrier: 
-        - Carrier Overview: carrier.md
-        - Main: carrier/carrier-main.md
-        - Reply Management: carrier/carrier-reply-management.md
-        - Auth: carrier/carrier-auth.md 
-        - Failover: carrier/carrier-failover.md
-        - Latest Calls: carrier/carrier-latest-calls.md
-        - Payment: carrier/carrier-payment.md
-        - Stats: carrier/carrier-stats.md
-        - Alerts: carrier/carrier-alerts.md
-        - DID: carrier/carrier-did.md
-        - DID Inventory: carrier/carrier-did-inventory.md
-        - CDR: carrier/carrier-cdr.md
-    
-    - Rate Cards:
-        - Rate Card Overview: rate-card-building.md
-        - Provider Rate Card: provider-ratecard.md
-        - Customer Rate Card: customer-ratecard.md 
-    
-    - Routing:
-        - Routing Overview: routing.md
-        - Routing Strategy: routing-strategy.md
-        - Routing Global: global-routing.md
-        - USA Routing: routing-usa.md
-    
-    - Tags: tag.md
->>>>>>> aacc0445e2fa3852a071fa1dfc2dba476f721438
 
     - Report: report.md  
 
@@ -126,11 +97,7 @@ nav:
         - Transcription: transcription.md
     
     - Class 5:
-<<<<<<< HEAD
         - Introduction: class5/class5-intro.md
-=======
-        - AI Agent: class5/ai-agent.md
->>>>>>> aacc0445e2fa3852a071fa1dfc2dba476f721438
         - Apps: class5/apps.md
         - Conference: class5/creating-conference.md
         - Call Center: class5/call-center.md
@@ -238,11 +205,6 @@ nav:
         - General Data Protection Regulation: guides/gdpr.md
         - Call Detail Record Retention: guides/cdr-retention.md
         - Spam Protection Features: guides/spam-callsblock.md
-<<<<<<< HEAD
-=======
-        - Channel Limitation Settings: guides/channel-limitations.md
-        - Some Interesting Features: makecall.md
->>>>>>> aacc0445e2fa3852a071fa1dfc2dba476f721438
     
     - Troubleshooting: 
             - Call Connection/Signaling Issues: guides/tshoot-signal.md
