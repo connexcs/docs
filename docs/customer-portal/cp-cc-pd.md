@@ -103,7 +103,7 @@ We will also walk through configuring the **Preview Dialer** and demonstrate how
 
    5.`Campaign Agents`: List of agents assigned to the campaign. <br>`Manage Agents`: Allows you to add/remove agents from the campaign from the drop-down menu. Click `Confirm`.</br> <br><img src= "/customer-portal/img/34ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-   </br>For example: The select agents will be added.<img src= "/customer-portal/img/35ccnew.png"></br>
+   </br>For example: The select agents will be added.<img src= "/customer-portal/img/35ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
    <br>`Refresh Button`: To update agent statuses.</br>
 
@@ -167,7 +167,7 @@ We will also walk through configuring the **Preview Dialer** and demonstrate how
 
          1. **File**: Drag and Drop a file or click to upload the `.csv`. <br><img src= "/customer-portal/img/25ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-            1. A new window will open where two actions must be completed to create the leadset. <br><img src="/customer-portal/img/26ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+            1. A new window will open where two actions must be completed to create the leadset. <br><img src="/customer-portal/img/newcc26.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
             2. `Set row`: To indicate where the upload should start. `Right-click` on the row to want to start the uploading and click on `Set Start Row`. <br><img src="/customer-portal/img/27ccnew.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
@@ -207,7 +207,7 @@ We will also walk through configuring the **Preview Dialer** and demonstrate how
 
             4. `Set row`: To indicate where the upload should start. `Right-click` on the row to want to start the uploading and click on `Set Start Row`. <br><img src="/customer-portal/img/c2c.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-            5. `Map Table Columns`: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. `Right-click` on the column you wish to be mapped, click on `Map Column` then `Phone` and `Status`. Click on `Upload`. This will upload the leadset data to the server. <br><img src="/customer-portal/img/c3c.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br> <img src="/customer-portal/img/c4c.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;">
+            5. `Map Table Columns`: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. `Right-click` on the column you wish to be mapped, click on `Map Column` then `Phone` (required field) and `Status` (required field). Click on `Upload`. This will upload the leadset data to the server. <br><img src="/customer-portal/img/c3c.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br> <img src="/customer-portal/img/c4c.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;">
 
             6. The successful upload can be seen in the image. <br><img src="/customer-portal/img/c5c.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
@@ -233,7 +233,7 @@ We will also walk through configuring the **Preview Dialer** and demonstrate how
 
 ### Agent Dialer Guide
 
-1. Enter the domain as entered in the **IDE** in [Step-I](add link). The screen will prompt the agent to enter the `Username` and `Password`. Click on `Login`. <br><img src="/customer-portal/img/37cc.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+1. Enter your domain. The screen will prompt the agent to enter the `Username` and `Password`. Click on `Login`. <br><img src="/customer-portal/img/37cc.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 2. Select the campaign `Preview Dialler` from the drop-down menu and click `Confirm`. <br><img src="/customer-portal/img/38cc.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 3. An Agent Dialer interface with the following fields will appear:
       1. `Selected Campgain` from the drop-down menu.

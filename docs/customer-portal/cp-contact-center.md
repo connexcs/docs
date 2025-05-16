@@ -103,7 +103,7 @@ A Broadcast Dialer is an automated outbound calling system where an AI Agent ini
 
 Once activated, the system starts dialing contacts in bulk. The AI Agent engages with each person using natural conversation, guided by a predefined script and logic.
 
-You can create your own personal AI Agent. [Click here](https://docs.d.com/class5/ai-agent/) to know more.
+You can create your own personal AI Agent. [Click here](https://docs.connexcs.com/class5/ai-agent/) to know more.
 
 **Pros**:
 
@@ -133,6 +133,6 @@ You can create your own personal AI Agent. [Click here](https://docs.d.com/class
         E --> B
     ``` 
 
-From this point forward, we move into the next section [Setting up and using the Contact Center](add link).
+From this point forward, we move into the next section [Setting up and using the Contact Center]([add link](https://bani-contact-center--connexcs-docs.netlify.app/customer-portal/cp-cc-install/).
 
 The steps outlined here are common to all three dialer types and form the baseline configuration required for effective operation.

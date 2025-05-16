@@ -112,7 +112,7 @@ We will also walk through configuring the **Auto Dialer** and demonstrate how to
    5. `Campaign Agents`: List of agents assigned to the campaign.
 
       1. `Manage Agents`: Allows you to add/remove agents from the campaign from the drop-down menu. Click `Confirm`. <br><img src= "/customer-portal/img/34ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-             For example: The select agents will be added. <br><img src= "/customer-portal/img/35cc.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+             For example: The select agents will be added. <br><img src= "/customer-portal/img/35ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
       2. `Refresh Button`: To update agent statuses.
 
@@ -186,14 +186,14 @@ We will also walk through configuring the **Auto Dialer** and demonstrate how to
 
          2. `Set row`: To indicate where the upload should start. `Right-click` on the row to want to start the uploading and click on `Set Start Row`. <br><img src="/customer-portal/img/27ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-         3. `Map Table Columns`: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. `Right-click` on the column you wish to be mapped, click on `Map Column` then `Phone` and `Status`. Click on `Upload`. This will upload the leadset data to the server. <br><img src="/customer-portal/img/28ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br> <img src="/customer-portal/img/29ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+         3. `Map Table Columns`: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. `Right-click` on the column you wish to be mapped, click on `Map Column` then `Phone` (required field) and `Status` (required field). Click on `Upload`. This will upload the leadset data to the server. <br><img src="/customer-portal/img/28ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br> <img src="/customer-portal/img/29ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
          4. Upon successful upload, the leadset will appear as shown below. <br><img src="/customer-portal/img/56ccnew.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
       2. **Uploading via URL**: Enter the URL in the CSV format and hit the Upload button. <br><img src="/customer-portal/img/57ccnew.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
          1. A new window will open where two actions must be completed to create the leadset. <br><img src="/customer-portal/img/52ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
          2. `Set row`: To indicate where the upload should start. `Right-click` on the row to want to start the uploading and click on `Set Start Row`. <br><img src="/customer-portal/img/27ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-         3. `Map Table Columns`: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. `Right-click` on the column you wish to be mapped, click on `Map Column` then `Phone` and `Status`. Click on `Upload`. This will upload the leadset data to the server. <br><img src="/customer-portal/img/28ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br> <img src="/customer-portal/img/29ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+         3. `Map Table Columns`: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. `Right-click` on the column you wish to be mapped, click on `Map Column` then `Phone` (required field) and `Status` (required field). Click on `Upload`. This will upload the leadset data to the server. <br><img src="/customer-portal/img/28ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br> <img src="/customer-portal/img/29ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
          4. The successful upload can be seen in the image. <br><img src="/customer-portal/img/56ccnew.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
          5. The updated `Leadset Dashboard` can be seen as. <br><img src="/customer-portal/img/87cc.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
@@ -207,10 +207,10 @@ We will also walk through configuring the **Auto Dialer** and demonstrate how to
                44118, Ready
                44119, Ready
             ```
-         2. Click on `Upload`. <br><img src="/customer-portal/img/58cc.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-         3. A new window will open where two actions must be completed to create the leadset. <br><img src="/customer-portal/img/52newcc.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-         4. `Set row`: To indicate where the upload should start. `Right-click` on the row to want to start the uploading and click on `Set Start Row`. <br><img src="/customer-portal/img/ad1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-         5. `Map Table Columns`: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. `Right-click` on the column you wish to be mapped, click on `Map Column` then `Phone` and `Status`. Click on `Upload`. This will upload the leadset data to the server. <br><img src="/customer-portal/img/c3c.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br> <img src="/customer-portal/img/c4c.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+         2. Click on `Upload`. <br><img src="/customer-portal/img/1ad.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+         3. A new window will open where two actions must be completed to create the leadset. <br><img src="/customer-portal/img/58ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+         4. `Set row`: To indicate where the upload should start. `Right-click` on the row to want to start the uploading and click on `Set Start Row`. <br><img src="/customer-portal/img/adsetrow.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+         5. `Map Table Columns`: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. `Right-click` on the column you wish to be mapped, click on `Map Column` then `Phone` (required field) and `Status` (required field). Click on `Upload`. This will upload the leadset data to the server. <br><img src="/customer-portal/img/adphone.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br> <img src="/customer-portal/img/adstatus.png" style="border: 2px solid #4472C4; border-radius: 8px;">
          6. The successful upload can be seen in the image. <br><img src="/customer-portal/img/ad2.png" widht= "800" style="border: 2px solid #4472C4; border-radius: 8px;">
          7. The updated `Leadset Dashboard` can be seen as. <br><img src="/customer-portal/img/ad3.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 

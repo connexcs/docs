@@ -31,6 +31,8 @@ Next, we proceed to review the Contact Center application's setup process and un
 
 You can **Rename** or **Reposition** the Contact Center button in the portal.
 
-Click here for [Preview Dialer](add link).
-Click here for [Auto Dialer](add link).
-Click here for [Broadcast Dialer](add link).
+Click here for [Preview Dialer](https://bani-contact-center--connexcs-docs.netlify.app/customer-portal/cp-cc-pd/).
+
+Click here for [Auto Dialer](https://bani-contact-center--connexcs-docs.netlify.app/customer-portal/cp-cc-ad/).
+
+Click here for [Broadcast Dialer](https://bani-contact-center--connexcs-docs.netlify.app/customer-portal/cp-cc-bd/).
