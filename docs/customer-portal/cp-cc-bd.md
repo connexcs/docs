@@ -168,7 +168,7 @@ We will also walk through configuring the **Broadcast Dialer** and demonstrate h
             6. The successful upload can be seen in the image. <br><img src="/customer-portal/img/75ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
             7. The leadset dashboard now displays total uploaded leads and dialable leads as well. <br><img src="/customer-portal/img/76cc.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-14. **Continue to Modify**: If you click here, it will redirect to the Data Sure. [Click here](https://docs.connexcs.com/datasuite/) to know more.
+14. **Continue to Modify**: If you click here, it will redirect to the Data Suite. [Click here](https://docs.connexcs.com/datasuite/) to know more.
 
 15. **Edit Leadset**: Modify the details of an existing Leadset. The system will present the same interface as `Create Leadset`.
 

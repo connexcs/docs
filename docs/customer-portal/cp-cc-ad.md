@@ -164,9 +164,9 @@ We will also walk through configuring the **Auto Dialer** and demonstrate how to
 
    5. Click on `Confirm` to create the leadset. <br><img src= "/customer-portal/img/48ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-   6. Click on `See More` in the `Details` column.
+   6. Click on `See More` in the `Details` column. <br><img src= "/customer-portal/img/49cc.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-11.**A Leadset Dashboard** monitoring window will appear which displays the metrics of the leadset. <br><img src= "/customer-portal/img/49cc.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+11.**A Leadset Dashboard** monitoring window will appear which displays the metrics of the leadset. <br><img src= "/customer-portal/img/50ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 12.Description of the fields in the stats window:
 
@@ -176,7 +176,7 @@ We will also walk through configuring the **Auto Dialer** and demonstrate how to
 
    3. Click on `Leadset Data` to view the leadset data.
 
-   4. Click on `Upload Leads` to upload the leadset data. <br><img src= "/customer-portal/img/50ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+   4. Click on `Upload Leads` to upload the leadset data. 
 
    5. Upload your data via `File`, `URL` or by entering the `Text`.
 
@@ -208,13 +208,13 @@ We will also walk through configuring the **Auto Dialer** and demonstrate how to
                44119, Ready
             ```
          2. Click on `Upload`. <br><img src="/customer-portal/img/1ad.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-         3. A new window will open where two actions must be completed to create the leadset. <br><img src="/customer-portal/img/58ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+         3. A new window will open where two actions must be completed to create the leadset. <br><img src="/customer-portal/img/adnew1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
          4. `Set row`: To indicate where the upload should start. `Right-click` on the row to want to start the uploading and click on `Set Start Row`. <br><img src="/customer-portal/img/adsetrow.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
          5. `Map Table Columns`: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. `Right-click` on the column you wish to be mapped, click on `Map Column` then `Phone` (required field) and `Status` (required field). Click on `Upload`. This will upload the leadset data to the server. <br><img src="/customer-portal/img/adphone.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br> <img src="/customer-portal/img/adstatus.png" style="border: 2px solid #4472C4; border-radius: 8px;">
          6. The successful upload can be seen in the image. <br><img src="/customer-portal/img/ad2.png" widht= "800" style="border: 2px solid #4472C4; border-radius: 8px;">
          7. The updated `Leadset Dashboard` can be seen as. <br><img src="/customer-portal/img/ad3.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-13.**Continue to Modify**: If you click here, it will redirect to the Data Sure. [Click here](https://docs.connexcs.com/datasuite/) to know more.
+13.**Continue to Modify**: If you click here, it will redirect to the Data Suite. [Click here](https://docs.connexcs.com/datasuite/) to know more.
 
 14.**Edit Leadset**: Modify the details of an existing Leadset. The system will present the same interface as `Create Leadset`.
 
@@ -236,7 +236,7 @@ We will also walk through configuring the **Auto Dialer** and demonstrate how to
 
 ### Agent Dialer Guide
 
-1. Enter the domain as entered in the **IDE** in [Step-I](add link). The screen will prompt the agent to enter the `Username` and `Password`. Click on `Login`. <br><img src="/customer-portal/img/37cc.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+1. Enter your domain. The screen will prompt the agent to enter the `Username` and `Password`. Click on `Login`. <br><img src="/customer-portal/img/37cc.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 2. Select the campaign `Auto Dialer` from the drop-down menu and click `Confirm`. <br><img src="/customer-portal/img/59ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 3. An Agent Dialer interface with the following fields will appear:
       1. `Agent Status` toggle: Make sure its `enabled (green)`, meaning the agent is active and ready to take calls

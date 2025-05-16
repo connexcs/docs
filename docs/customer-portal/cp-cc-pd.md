@@ -167,7 +167,7 @@ We will also walk through configuring the **Preview Dialer** and demonstrate how
 
          1. **File**: Drag and Drop a file or click to upload the `.csv`. <br><img src= "/customer-portal/img/25ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-            1. A new window will open where two actions must be completed to create the leadset. <br><img src="/customer-portal/img/newcc26.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+            1. A new window will open where two actions must be completed to create the leadset. <br><img src="/customer-portal/img/26ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
             2. `Set row`: To indicate where the upload should start. `Right-click` on the row to want to start the uploading and click on `Set Start Row`. <br><img src="/customer-portal/img/27ccnew.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
@@ -203,7 +203,7 @@ We will also walk through configuring the **Preview Dialer** and demonstrate how
 
             2. Click on `Upload`. <br><img src="/customer-portal/img/32cc.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-            3. A new window will open where two actions must be completed to create the leadset. <br><img src="/customer-portal/img/c1c.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+            3. A new window will open where two actions must be completed to create the leadset. <br><img src="/customer-portal/img/pdnew1.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
             4. `Set row`: To indicate where the upload should start. `Right-click` on the row to want to start the uploading and click on `Set Start Row`. <br><img src="/customer-portal/img/c2c.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
@@ -213,7 +213,7 @@ We will also walk through configuring the **Preview Dialer** and demonstrate how
 
             7. The `Leadset Dashboard` is also modified. <br><img src="/customer-portal/img/c6c.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-13.**Continue to Modify**: If you click here, it will redirect to the Data Sure. [Click here](https://docs.connexcs.com/datasuite/) to know more.
+13.**Continue to Modify**: If you click here, it will redirect to the Data Suite. [Click here](https://docs.connexcs.com/datasuite/) to know more.
 
 14.**Edit Leadset**: Modify the details of an existing Leadset. The system will present the same interface as `Create Leadset`.
 
