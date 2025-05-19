@@ -53,7 +53,7 @@ B --> C{Script Forge}
 
 ## Script Example
 
-``` javascript
+``` javascript linenums="1"
 function myCustomFunction () {
 	return 'Hello from My Custom Function`;
 }
