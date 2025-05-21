@@ -2,9 +2,60 @@
 
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Routing**
 
-**Ingress Routing** is the process that allocates an incoming call (dialed by our customers) based on the assigned Customer Rate Card, which then Egresses the call to a specified provider. This makes it possible to deploy several rate cards both with and without a prefix.
+## Overview
+
+Ingress Routing is the process that allocates an incoming call (dialed by our customers) based on the assigned Customer Rate Card, which then Egresses the call to a specified provider. This makes it possible to deploy several rate cards both with and without a prefix.
 
 First, it checks the longest prefix, then it checks the shortest prefix for a match. If no prefix gets matched, it matches the rate cards with mutually exclusive destinations. If there are several rate cards with the same prefix, you must set up a dial plan with a Tech Prefix to identify the correct card.
+
+!!! question "How it works?"
+    ```mermaid
+    graph TD
+    A[Incoming Call from Customer] --> B{Check Longest Prefix Match}
+    B -->|Yes| C[Longest Prefix Matched] --> D[Egress Call to Specified Provider]
+    B -->|No| E[No Longest Prefix Match] --> F{Check Shortest Prefix}
+    F -->|Yes| G[Shortest Prefix Matched] --> D
+    F -->|No| H[No Shortest Prefix Match] --> I{Check Mutually Exclusive Destinations}
+    I -->|Yes| J[Mutually Exclusive Destination Matched] --> D
+    I -->|No| K[Multiple Rate Cards with Same Prefix] --> L[Set Up Dial Plan with Tech Prefix] --> M[Identify Correct Rate Card] --> D
+
+    %% Adding notes as separate nodes instead of inline
+    N1[Check for longest prefix match in Customer Rate Card] -->|Note| B
+    N2[If no longest prefix, check for shortest prefix match] -->|Note| F
+    N3[If no prefix match, check for mutually exclusive destinations] -->|Note| I
+    N4[If multiple rate cards have the same prefix, use Tech Prefix] -->|Note| K
+
+    %% Styling nodes
+    classDef highlight fill:#f9f,stroke:#333,stroke-width:2px;
+    class A,B,C,D,E,F,G,H,I,J,K,L,M highlight;
+    ```
+
+### Ingress Routing Process
+
+1. **Traffic Entry**: Incoming call traffic enters ConnexCS
+2. **Authentication Check**:
+      1. The system verifies the call based on the defined authentication method.
+      2. If authentication fails, the call is rejected.
+3. **Routing Decision**:
+      1. Calls are routed based on predefined rules.
+      2. Parameters such as prefixes, customer preferences, and load balancing may influence routing decisions.
+
+4.  **Call Processing**:
+    1.  Successfully authenticated calls proceed to the designated destination.
+    2.  Billing and reporting data are updated accordingly.
+
+```mermaid
+graph TD
+  A[Traffic Entry] --> B[Authentication Check]
+  
+  B -- Authentication Passed --> C[Routing Decision]
+  B -- Authentication Failed --> D[Call Rejected]
+  
+  C -- Apply Routing Rules --> E[Call Processing]
+  
+  E -- Forward Call --> F[Provider]
+  E -- Update --> G[Billing & Reporting]
+```
 
 !!! info "Routing Templates and more"
     Create templates for customer routing in [**Routing Global**](https://docs.connexcs.com/global-routing/).
@@ -178,17 +229,31 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 ### ScriptForge
 
 + **ScriptForge**: Set a custom JavaScript to run from within the ConnexCS platform in-line with the call. Some example operations could be checking a Do Not Call list or forcing a CLI.
+  It allows running JavaScript scripts inline with call processing, enabling real-time modifications and checks.
+
   For more information about setup and operation, see the [**ScriptForge**](https://docs.connexcs.com/developers/scriptforge/) page.
 
+#### Key Features and Benefits
+
++ **Custom Call Handling**: Modify CLI, check block lists, enforce specific caller IDs, or track call frequencies.
++ **Integration with Data Storage**: Uses TOML for configuration and variable storage.
++ **Carrier-Level Routing Controls**: Includes include (whitelist) and exclude (blacklist) carrier options.
++ **Timeout Settings**: Defines the duration a script is allowed to run before termination.
 + **Timeout**: Set how long the script may run.
 + **Timeout Action**: This option lets you decide the action when the timeout occurs.
 + **VARS [(TOML)](https://en.wikipedia.org/wiki/TOML)**: Select the variables you want pass into the ScriptForge script.
 
 ### Locks
 
-Used for troubleshooting, you can remove carriers from a route and run a quick test.  
+Used for troubleshooting, you can remove carriers from a route and run a quick test.
 
-+ **Lock** (Allow): One or more rate cards from the list of available providers.
+The Lock feature allows administrators to define routing restrictions by specifying allowed or excluded carriers.
+
+!!! Info "Benefits"
+    1. Improves call reliability by dynamically managing carrier performance.
+    2. Prevents routing issues from affecting end-user experience.
+
++ **Lock** (Allow): One or more rate cards from the list of available providers. Ensures calls are only routed through specified carriers. Blocks specific carriers from being used.
 + **Exclude** (Deny): Exclude access to one or more rate cards in the list of available providers.
 + **Redial Max Count**: This a smart limitation feature that allows the carrier to restrict the maximum number of times their customers can redial. After reaching this limit, customers must wait for a certain amount of time defined by the **Redial Max Period**. For example, you select 5 for this field, it means your customer can dial only 5 times.
 + **Redial Max Period**: It refers to the duration of time during which a customer is restricted from making further redial attempts to the same number after reaching the maximum redial count.
@@ -226,8 +291,7 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 
  You can set a **Max Daily Quantity** for your customer's lookups. This restricts them to using only the specific number you allocate, ensuring controlled usage.
 
-!!! Note
-    We don't charge you again if you repeat your lookup within 24-hours of time-span.
+!!! Note "We don't charge you again if you repeat your lookup within 24-hours of time-span."
 
 **Flags**:
 
@@ -251,33 +315,129 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 
 ### Media
 
-+ **Transcoding**: Enter the number  of channels allowed for transcoding. This is a limited option. The best use case is for customers in low-bandwidth areas that want to use G.729.
-  Be aware that if you don't have enough transcoding capacity, calls will fail.
-+ **SIP Ping**: Send regular pings to ensure both sides of a call are still up. `Enabled` is the recommended setting.
+**Transcoding**: Transcoding manages different audio codecs to ensure compatibility between the calling and receiving systems.
 
-    |Option| Result|
-    |------|:------|
-    |**Disabled**| No SIP pings will be sent |
-    |**Enabled Both Sides**| SIP pings sent in both directions |
-    |**Enabled (Downstream Only)**| SIP Pings sent to the location where the call originated |
-    |**Enabled (Upstream Only)**| SIP Pings sent towards where the call is TO (terminated) |
+Enter the number  of channels allowed for transcoding. This is a limited option. The best use case is for customers in low-bandwidth areas that want to use G.729.
+
+!!! Danger "Be aware that if you don't have enough transcoding capacity, calls will fail."
+
+!!! Info "Key Features and Benefits"
+    **Key Features**:
+       
+       1. **Supported Codecs**:
+          
+          1. **G.711**: uncompressed, high-quality, available in ULaw & ALaw.
+          
+          2. **G.729**: Compressed, Bandwidth-efficient.
+          
+          3. **G.722, G.723** (Wideband codecs) for better sound quality.
+          
+          4. **Opus, Speex**: WebRTC-compatible codecs.
+       
+       2. **Transcoding Channels**: Limits the number of simultaneous transcoding operations.
+       
+       3. **Performance Considerations**: Transcoding is resource-intensive; default limits ensure scalability.
+
+    **Benefits**:
+       
+       1. Enables seamless communication between different network endpoints.
+       
+       2. Optimizes bandwidth usage for high-quality VoIP calls.
+
++ **SIP Ping**: SIP Ping ensures call stability by periodically verifying call connection status.
+  Send regular pings to ensure both sides of a call are still up. `Enabled` is the recommended setting.
+
+!!! Info "Key Features and Benefits"
+    **Key Features**:
+
+    1. **Upstream & Downstream Ping**:
+       
+       1. **Upstream**: Verifies connection to the receiving carrier.
+       
+       2. **Downstream**: Checks connection from the caller's side.
+    
+    2. **Prevention of Long-Duration Calls (LDCs)**: Automatically disconnects calls where endpoints fail to signal disconnection.
+    
+    3. **Customizable Intervals**: Default interval of 30 seconds for continuous monitoring.
+
+    **Benefits**:
+       
+       1. Prevents ghost calls.
+       
+       2. Ensures real-time call session awareness.
+
+|Option| Result|
+|------|:------|
+|**Disabled**| No SIP pings will be sent |
+|**Enabled Both Sides**| SIP pings sent in both directions |
+|**Enabled (Downstream Only)**| SIP Pings sent to the location where the call originated |
+|**Enabled (Upstream Only)**| SIP Pings sent towards where the call is TO (terminated) |
 
 + **SIP Session Timer (SST)**: SST is Passive by Default, but **Enabled** is the recommended setting.
   When enabled, SST ensures there is no ghost or long-duration calls get billed when one or both sides have hung up. A timer activates when the call starts and refreshes the call every X number of seconds by sending a RE-INVITE.
   SST has surpassed SIP Ping Timeout as the best way to prevent long-duration calls. Note that any SST shorter than sixty (60) seconds gets rejected.
 
-    |SST Option| Result|
-    |----------|:------|
-    | **Default**| Passive SST, No headers gets changed and no SST gets engaged, all RE-INVITES will propagate through the system enables|
-    | **Enabled Both** | ConnexCS will send SIP Session Timers to both legs of the call|
-    | **Enabled (Upstream)** | ConnexCS will use SST with the carrier|
-    | **Enabled (Downstream)**| ConnexCS will use SST with the customer|
-    | **Suggest**| Session-Expire headers and Min-SE gets added to packets sent to the carrier encouraging the use of SST|
-    | **Disabled**| All ```timer``` headers are removed|
+  Session Timers periodically revalidate call sessions to ensure continued connectivity.
+
+!!! Info "Key Features and Benefits"
+    **Key Features**:
+
+      * **Re-INVITE Mechanism**: Sends a re-invite message every 5 minutes to refresh session state.
+      
+      * **Selective Activation**:
+      
+        * Can be enabled for upstream, downstream, or both directions.
+      
+        * Only relevant at call-originating and terminating endpoints.
+    
+    * **Timer Management**:
+    
+        * **Suggest Timer**: Encourages the use of timers with an additional session expiration header.
+    
+        * **Remove Timer**: Strips out the timer header for compatibility with non-compliant carriers.
+
+    **Benefits**:
+    
+    1. Reduces call drops due to session timeouts.
+
+    2. Ensures carriers properly manage long-duration calls.
+
+|SST Option| Result|
+|----------|:------|
+| **Default**| Passive SST, No headers gets changed and no SST gets engaged, all RE-INVITES will propagate through the system enables|
+| **Enabled Both** | ConnexCS will send SIP Session Timers to both legs of the call|
+| **Enabled (Upstream)** | ConnexCS will use SST with the carrier|
+| **Enabled (Downstream)**| ConnexCS will use SST with the customer|
+| **Suggest**| Session-Expire headers and Min-SE gets added to packets sent to the carrier encouraging the use of SST|
+| **Disabled**| All ```timer``` headers are removed|
 
 + **RTP Media Proxy**: This defaults to Auto, but selecting a zone (by continent) is the current recommendation. The following options allow you to set where RTP media server for this route for this customer:
 
+!!! Info "Functionality and Benefits"
+    **Functionality**:
+
+      + Ensures media flows through the most efficient route.
+      
+      + Reduces audio latency by keeping media within the same geographical region as the customer and carrier.
+
+    **Benefits**:
+        
+    + Minimizes delay in audio transmission.
+    + Enhances call quality by reducing packet loss.
+    + Prevents "hello-hello" delays and interruptions.
+
    :material-menu-right: `Direct RTP (no proxy)`- Bypass ConnexCS, so media flows directly between the customer and carrier. If the customer is using a firewall or other NAT device incorrectly, then media may not flow between the carrier and the customer. Using this setting also means that if there are audio issues, the issue can't be ConnexCS. Since it isn't likely to be the carrier, the issue would typically exist on the customer's end.
+
+!!! Warning "Disadvantages & Risks"
+    1. **Leaks Carrier Information**: Direct RTP reveals the carrier’s SDP address.
+    2. **Risk of Disintermediation**: Customers can bypass ConnexCS and deal with carriers directly.
+    3. **NAT Issues**:
+        + Incorrect SIP address rewriting can cause one-way audio.
+        + If foreign NAT traversal is needed, ConnexCS cannot assist in media correction.
+  
+!!! Tip "Best Practice"
+    1. Always inform customers about the risks associated with Direct RTP.
+    2. Recommend using RTP Proxy when confidentiality and NAT traversal support are needed.
 
    :material-menu-right: `Zone`- Choose any of the regional servers, but it's recommended that you select a location close to a provider or your customer. Temporarily selecting a different region to route media traffic can be helpful in diagnosing call problems.
 
@@ -286,13 +446,14 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 !!! warning
     **SIP Ping** and **SIP Session Timers** can't be enabled at the same time.
 
-+ **RTP Proxy Mode**: If a connection via our service fails and you have selected relaxed, it will automatically fail over to the backup.
++ **RTP Proxy Mode**: Routes media optimally while keeping signaling intact.
+If a connection via our service fails and you have selected relaxed, it will automatically fail over to the backup.
 
-   :material-menu-right: `Strict`- This will enforce the proxy engagement. If the proxy can't engage with the call, the call won't get established.
+   :material-menu-right: `Strict`- This will enforce the proxy engagement. If the proxy can't engage with the call, the call won't get established. If a selected proxy server fails, the call is dropped.
 
 !!! note "Free accounts are limited to how many RTP Proxy channels get enabled, this may prevent calls from connecting if you have more channels than our free accounts allow you to have."
 
-   :material-menu-right: `Relaxed`- This will make the best efforts to engage the RTP Proxy; if it can't get engaged because of either network errors, or because you don't have enough RTP capacity, the calls will connect directly.
+   :material-menu-right: `Relaxed`- This will make the best efforts to engage the RTP Proxy; if it can't get engaged because of either network errors, or because you don't have enough RTP capacity, the calls will connect directly. •	If the selected proxy server fails, the call is routed directly to the carrier.
 
 !!! success "When should I use RTP Proxy?"
     Use an RTP Proxy if you don't want your customers to know your providers.
@@ -335,8 +496,8 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
     * **Management:material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: CDR**
     * **Management :material-menu-right: File :material-menu-right: Recording**
   
-!!! Info
-    An extra charge per recorded call of **$0.003** gets added to existing fees or charges, so choose carefully how many calls to record:
+  !!! Note "Additional Charge"
+    An extra charge per recorded call of $0.003 gets added to existing fees or charges, so choose carefully how many calls to record:
 
 :material-menu-right: `Disabled`- no calls get recorded.
 
@@ -460,12 +621,28 @@ Using Tech Prefix with SIP User "Parameter Rewrites" allows for significant gran
     B[Customer A Prefix: 001]-- Prefix 001* will be stripped  before passing the call to the destination number 123456789 --- Destination
     ```
 
-
 ## Answer Seizure Ratio Plus Details
 
 ASR (Answer Seizure Ratio) is the number of connected calls divided by the total number of calls (represented as a %).
 
-**ASR Plus** is a proprietary ConnexCS technology that filters known failed, non-existent / working numbers between the customer and the terminating, or destination, carrier. This is useful with larger call volumes. Unless it's turned off or customized otherwise, ASR+ is active for 90% of calls, which grants the opportunity for the database replenishment.
+**ASR Plus** is a proprietary ConnexCS technology that filters known failed, non-existent / working numbers between the customer and the terminating, or destination, carrier.
+
+It's useful with larger call volumes.
+
+Unless it's turned off or customized otherwise, ASR+ is active for 90% of calls, which grants the opportunity for the database replenishment.
+
+It enhances call routing by tracking the validity of dialed numbers over a 30-day period. It improves efficiency by blocking known invalid numbers and allowing successful calls to proceed.
+
+### Key Features
+
+1. **Call History Tracking**: The system remembers if a number was successfully connected or failed in the last 30 days
+2. **Automated Call Blocking**:
+      + If a number failed previously with a 404 error, it is automatically blocked for future attempts.
+      + If a number has never been seen, it is allowed through.
+      + If a number is connected successfully, it continues to be allowed.
+
+3. **Customizable Configurations**: Users can tweak settings to define how ASR+ handles call failures and successes.
+4. **Carrier Load Optimization**: Reduces unnecessary call attempts, preventing high call-per-second rates to invalid numbers.
 
 | Value| Description|
 |-----|-------------|
@@ -477,10 +654,13 @@ ASR (Answer Seizure Ratio) is the number of connected calls divided by the total
 |**ASR++**|Only known connected calls pass-through (not used frequently because it's typically overly strict)|
 
 !!! success "Advantages of ASR"
-    + Quick failure of known bad numbers.
+    + Prevents excessive failed call attempts from impacting service quality.
     + Reduces response time for your customers.
     + Improves the ASR of the traffic that your upstream carrier sees.
-    + Highly effective for call centre traffic.  
+    + Highly effective for call centre traffic.
+    + Enhances call completion rates.
+    + Reduces wasted carrier resources and associated costs.
+
 !!! failure "Disadvantages of ASR"
     + Marginal impact on your NER due to false positive matches. This is usually kept within tolerances of < 0.1%.
     + Doesn't offer improvements for all destinations.
