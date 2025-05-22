@@ -78,7 +78,7 @@ You can provide several domains for your customers through different brands, and
     |**Customer ACD**|View Average Call Duration as a total or per-carrier basis. [Click here to know more.](https://docs.connexcs.com/customer/stats/)|
     |**Customer ASR**|View Average Call Duration as a total or per-carrier basis. [Click here to know more.](https://docs.connexcs.com/customer/stats/)|
     |**Customer CPS**|View calls per second over time. [Click here to know more](https://docs.connexcs.com/customer/stats/)|
-    |**Customer Channels**|View ccustomer channels. [Click here to know more.](https://docs.connexcs.com/dashboard/#dashboard-graph-tabs)|
+    |**Customer Channels**|View ccustomer channels. [Click here to know more.](https://docs.connexcs.com/dashboard/#channels)|
     |**Customer DTMF**|View DTMF percentages of each carrier. [Click here to know more.](https://docs.connexcs.com/customer/stats/#customer-carrier)|
     |**Carrier CPS**|View carrier's calls per second. [Click here to know more.](https://docs.connexcs.com/customer/stats/#customer-carrier)|
     |**Carrier Channels**|View carrier's channels. [Click here to know more.](https://docs.connexcs.com/customer/stats/#main)|
