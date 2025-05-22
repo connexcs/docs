@@ -173,7 +173,7 @@ The following is a comprehensive list of features included in the latest stable 
 ## Circuit Test
 
 * [Add your own Origination & Termination](https://docs.connexcs.com/circuit-test/)
-* [Manual or Automated Circuit Tests](https://bani-ankmeg--connexcs-docs.netlify.app/circuit-test/#run-circuit-test)
+* [Manual or Automated Circuit Tests](https://docs.connexcs.com/circuit-test/#run-circuit-test)
 * Measure:
     * CLI
     * PDD
