@@ -330,6 +330,7 @@ An existing call is transferred to a different destination using the `Dial` ver
 |`hangupOnStar`|By tapping the `*` key on their phone, the initial caller can hang up on the called party using the hangupOnStar attribute. It doesn't apply for `Conference` noun|`true`, `false`| `false`|
 |`ringTone`|The ringback tone played back to the caller|`at`,`au`,`bg`,`br`,<br>`be`,`ch`,`cl`,`cn`,`cz`,</br>`de`,`dk`,`ee`,`es`,`fi`,<br>`fr`,`gr`,`hu`,`il`,`in`,<br>`it`,`lt`,`jp`,`mx`,`my`,<br>`nl`,`no`,`nz`,`ph`,`pl`,<br>`pt`,`ru`,`se`,`sg`,<br>`th`,`uk`,`us`,`us-old`,`tw`,<br>`ve`,`za`|`us`|
 |`timeout`|timeout in <Dial> lets you specify the maximum waiting time in seconds for the dialed party to answer|||
+|`hangupOnStarContext`|Hangs up on `*` only in the **specified context**|
 
 |**Noun**|**Description**|**Default Method**|
 |--------|---------------|------------------|
@@ -537,6 +538,17 @@ An existing call is transferred to a different destination using the `Dial` ver
             </Dial>
         </Response>
         ```
+    19. **hangupOnStarContext**
+        ``` xml
+        <?xml version="1.0" encoding="UTF-8"?>
+        <Response>
+            <Context name="ivr-menu" hangupOnStarContext="true">
+                <Say>Welcome to the IVR menu. Press 1 for sales, 2 for support. Press star to exit.</Say>
+                <Gather numDigits="1" action="/handle-keypress" method="POST" />
+            </Context>
+            <Say>This message plays only if the caller does not press star.</Say>
+        </Response>
+        ```
 
 #### Dynamic Dial
 
@@ -725,6 +737,32 @@ It's an effective and quicker way to check a customer's audio quality and call p
 
     6. If the **Set elements** don't include `header="true"`, they will only set the variables and not as headers in the SIP INVITE.
 
+### Enter
+
+ The `Enter` command tells the phone system to switch to a different menu or section (called a context or realm) during a call.
+
+|**Noun**|**Description**|**Example**|
+|--------|---------------|-----------|
+|`context`|Enables the same DTMF input to perform different actions depending on the current state of the call.|Pressing `1` in the **Main Menu context** might play the `user’s account balance`, *while* pressing `1` in the **Transfer Funds context** might confirm the `transfer`|
+
+!!! Example "Example 2"
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+        <Enter>B</Enter>
+        <Press digit="2" context="A">
+            <Play=user/adam.wav</Play>
+        </Press>
+        <Press digit="2" context="B">
+            <Hangup/>
+        </Press>
+        <Press digit="1" context="B">
+            <Enter>A</Enter>
+        </Press>
+    </Response>
+    ```
+    `Digit 2` can be used to `Play` an **audio file** if you are in `context A` Or can be used to `hangup` if you are in `context B`.
+
 |**Verbs/Attributes/Nouns**|**ConnexCS (ConneXML)**|**Twilio<sup>TM</sup> (TwiML)[^1]**|**Telnyx (TeXML)[^2]**|
 |----------------------------|------------|--------------|------------|
 |**Play**|✅|✅|✅|
@@ -743,6 +781,7 @@ It's an effective and quicker way to check a customer's audio quality and call p
 |➡️callerId|✅|✅|✅|
 |➡️fromDisplayName|✅|✅|✅|
 |➡️hangupOnStar|✅|✅|✅|
+|➡️hangupOnStarContext|✅|❌|❌|
 |➡️ringTone|✅|✅|✅|
 |➡️Number|✅|✅|✅|
 |➡️Queue|✅|✅|✅|
@@ -788,6 +827,8 @@ It's an effective and quicker way to check a customer's audio quality and call p
 |**Before**|✅|❌|❌|
 |**Set**|✅|❌|❌|
 |**Echo**|✅|❌|❌|
+|**Enter**|✅|❌|✅|
+|🟦context|✅|✅|✅|
 
 [^1]:  https://www.twilio.com/docs/voice/twiml
 [^2]:  https://developers.telnyx.com/docs/v2/voice/programmable_voice/texml/texml-translator/texml_translator/
