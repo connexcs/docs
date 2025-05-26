@@ -78,7 +78,7 @@ We will also walk through configuring the **Preview Dialer** and demonstrate how
             8. `In Progress`: Call data is being allocated.
          5. **Flags**: Select `Transfer` flag to activate the option of call transfer in Preview Dialer.
          6. **Agents**: Select agents for the Preview Dialer.
-         <br><img src= "/customer-portal/img/cc15new1.png" style="border: 2px solid #4472C4; border-radius: 8px; padding: 20px;"></br>
+         <img src= "/customer-portal/img/cc15new1.png" style="border: 2px solid #4472C4; border-radius: 8px; padding: 20px;">
 
 4. Click on the `Confirm` button.
 
