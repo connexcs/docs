@@ -67,7 +67,7 @@ We will also walk through configuring the **Preview Dialer** and demonstrate how
          1. **Caller ID**: The `CLI` used for this campaign.
          2. **Source Status**: Select `Ready`/`New` or Custom Source Status for call origination. If no status is selected the calls won't be sent.
          3. **Outbound Multiplier**: It controls how many outbound calls your system (or agent/reseller) can make at the same time.
-         4. **Custom Disposition**: A user-defined set of call outcome labels that agents are required to select after each call, enabling structured tracking, systematic reporting, and optimized follow-up workflows. <br><img src= "/customer-portal/img/cc15new1.png" style="border: 2px solid #4472C4; border-radius: 8px; padding: 20px;"></br>
+         4. **Custom Disposition**: A user-defined set of call outcome labels that agents are required to select after each call, enabling structured tracking, systematic reporting, and optimized follow-up workflows.
             1. `Agent Unavailable`: Call was made but hung up due to agent being busy (mostly in auto dialers).
             2. `Answered`: Call is connected.
             3. `Connection Error`: Originate method failed to work.
@@ -78,6 +78,7 @@ We will also walk through configuring the **Preview Dialer** and demonstrate how
             8. `In Progress`: Call data is being allocated.
          5. **Flags**: Select `Transfer` flag to activate the option of call transfer in Preview Dialer.
          6. **Agents**: Select agents for the Preview Dialer.
+         <br><img src= "/customer-portal/img/cc15new1.png" style="border: 2px solid #4472C4; border-radius: 8px; padding: 20px;"></br>
 
 4. Click on the `Confirm` button.
 
@@ -237,7 +238,7 @@ We will also walk through configuring the **Preview Dialer** and demonstrate how
 2. Select the campaign `Preview Dialler` from the drop-down menu and click `Confirm`. <br><img src="/customer-portal/img/38cc.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 3. An Agent Dialer interface with the following fields will appear:
       1. `Selected Campgain` from the drop-down menu.
-      2. `Keypad` for dialing the numbers.
+      2. `Keypad`: The keypad is normally used for transfers, but to dial a number, the user needs to click on "Call".
       3. `Script`: Displays the call script the agent should follow.
       4. `Logout` for the agent to log off from the system. <br><img src="/customer-portal/img/39ccnew.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
       5. `Contact information` of the customer sourced from the **uploaded Leadset** or entered manually via the **Lead Form**.

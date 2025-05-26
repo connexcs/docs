@@ -133,6 +133,6 @@ You can create your own personal AI Agent. [Click here](https://docs.connexcs.co
         E --> B
     ``` 
 
-From this point forward, we move into the next section [Setting up and using the Contact Center]([add link](https://bani-contact-center--connexcs-docs.netlify.app/customer-portal/cp-cc-install/).
+From this point forward, we move into the next section [Setting up and using the Contact Center](https://bani-contact-center--connexcs-docs.netlify.app/customer-portal/cp-cc-install/).
 
 The steps outlined here are common to all three dialer types and form the baseline configuration required for effective operation.
