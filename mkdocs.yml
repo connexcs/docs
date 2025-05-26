@@ -4,7 +4,8 @@ site_description: Connex Cloud Softswitch
 site_author: ConnexCS Team
 google_analytics: ['UA-155210453-1', 'docs.connexcs.com']
 theme:
-  name: material 
+  name: material
+  font: false 
   features:
     - navigation.instant
     - navigation.tabs
@@ -59,8 +60,8 @@ markdown_extensions:
 nav:
   - Cloudswitch:
     - Home: index.md
-    - Getting Started: getting-started.md
     - Customer Support: reporting-problems.md
+    - Getting Started: getting-started.md
     - Dashboard : dashboard.md
 
     - Customer:
