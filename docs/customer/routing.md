@@ -6,56 +6,34 @@
 
 Ingress Routing is the process that allocates an incoming call (dialed by our customers) based on the assigned Customer Rate Card, which then Egresses the call to a specified provider. This makes it possible to deploy several rate cards both with and without a prefix.
 
-First, it checks the longest prefix, then it checks the shortest prefix for a match. If no prefix gets matched, it matches the rate cards with mutually exclusive destinations. If there are several rate cards with the same prefix, you must set up a dial plan with a Tech Prefix to identify the correct card.
-
-!!! question "How it works?"
-    ```mermaid
-    graph TD
-    A[Incoming Call from Customer] --> B{Check Longest Prefix Match}
-    B -->|Yes| C[Longest Prefix Matched] --> D[Egress Call to Specified Provider]
-    B -->|No| E[No Longest Prefix Match] --> F{Check Shortest Prefix}
-    F -->|Yes| G[Shortest Prefix Matched] --> D
-    F -->|No| H[No Shortest Prefix Match] --> I{Check Mutually Exclusive Destinations}
-    I -->|Yes| J[Mutually Exclusive Destination Matched] --> D
-    I -->|No| K[Multiple Rate Cards with Same Prefix] --> L[Set Up Dial Plan with Tech Prefix] --> M[Identify Correct Rate Card] --> D
-
-    %% Adding notes as separate nodes instead of inline
-    N1[Check for longest prefix match in Customer Rate Card] -->|Note| B
-    N2[If no longest prefix, check for shortest prefix match] -->|Note| F
-    N3[If no prefix match, check for mutually exclusive destinations] -->|Note| I
-    N4[If multiple rate cards have the same prefix, use Tech Prefix] -->|Note| K
-
-    %% Styling nodes
-    classDef highlight fill:#f9f,stroke:#333,stroke-width:2px;
-    class A,B,C,D,E,F,G,H,I,J,K,L,M highlight;
-    ```
-
 ### Ingress Routing Process
 
 1. **Traffic Entry**: Incoming call traffic enters ConnexCS
 2. **Authentication Check**:
-      1. The system verifies the call based on the defined authentication method.
+      1. The system verifies the call (outbound) based on the defined authentication method.
       2. If authentication fails, the call is rejected.
 3. **Routing Decision**:
-      1. Calls are routed based on predefined rules.
+      1. Calls are routed based on predefined rules,Tech Prefix or Dial Strings.
       2. Parameters such as prefixes, customer preferences, and load balancing may influence routing decisions.
+4. **Call Processing**:
+    1. Successfully authenticated calls proceed to the designated destination.
+    2. Billing and reporting data are updated accordingly.
 
-4.  **Call Processing**:
-    1.  Successfully authenticated calls proceed to the designated destination.
-    2.  Billing and reporting data are updated accordingly.
+!!! question "How it works?"
+    ```mermaid
+    graph TD
+    A[Traffic Entry] --> B[Authentication Check]
+  
+    B -- Authentication Passed --> C[Routing Decision]
+    B -- Authentication Failed --> D[Call Rejected]
+  
+    C -- Apply Routing Rules --> E[Call Processing]
+  
+    E -- Forward Call --> F[Provider]
+    E -- Update --> G[Billing & Reporting]
+    ```
 
-```mermaid
-graph TD
-  A[Traffic Entry] --> B[Authentication Check]
-  
-  B -- Authentication Passed --> C[Routing Decision]
-  B -- Authentication Failed --> D[Call Rejected]
-  
-  C -- Apply Routing Rules --> E[Call Processing]
-  
-  E -- Forward Call --> F[Provider]
-  E -- Update --> G[Billing & Reporting]
-```
+!!! Info "The multiple routes can be differentiated on the basis of _Tech Prefix_ or _Dial Strings_."
 
 !!! info "Routing Templates and more"
     Create templates for customer routing in [**Routing Global**](https://docs.connexcs.com/global-routing/).
