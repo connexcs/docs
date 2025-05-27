@@ -9,3 +9,9 @@ from = "/cp-api"
 to = "https://api-docs.connexcs.com/"
 status = 301
 force = true
+
+[[plugins]]
+package = "@netlify/plugin-sitemap"
+
+[[plugins]]
+package = "netlify-plugin-checklinks"
