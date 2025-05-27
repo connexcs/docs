@@ -67,7 +67,7 @@ We will also walk through configuring the **Auto Dialer** and demonstrate how to
          1. **Caller ID**: The `CLI` used for this campaign.
          2. **Source Status**: Select `Ready`/`New` or Custom Source Status for call origination. If no status is selected the calls won't be sent.
          3. **Outbound Multiplier**: It controls how many outbound calls your system (or agent/reseller) can make at the same time.
-         4. **Custom Disposition**: A user-defined set of call outcome labels that agents are required to select after each call, enabling structured tracking, systematic reporting, and optimized follow-up workflows. <br><img src= "/customer-portal/img/44ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+         4. **Custom Disposition**: A user-defined set of call outcome labels that agents are required to select after each call, enabling structured tracking, systematic reporting, and optimized follow-up workflows.
             1. `Agent Unavailable`: Call was made but hung up due to agent being busy (mostly in auto dialers).
             2. `Answered`: Call is connected.
             3. `Connection Error`: Originate method failed to work.
@@ -76,7 +76,7 @@ We will also walk through configuring the **Auto Dialer** and demonstrate how to
             6. `Rejected`: Call ended without pickup (user or server may have hung up).
             7. `Ringing`: AI-initiated call is ringing.
             8. `In Progress`: Call data is being allocated.
-         5. **Agents**: Select agents for the Auto Dialer.
+         5. **Agents**: Select agents for the Auto Dialer. <br><img src= "/customer-portal/img/adcampaign.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 4. Click on the `Confirm` button.
 
