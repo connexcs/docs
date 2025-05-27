@@ -39,7 +39,7 @@ Click **`Save`** and the new conference room is available for use.
 !!! tip "Conference calls for external callers"
     Only customers internal to ConnexCS can use the standard Conference configuration.
 
-    To allow external numbers to dial into the conference, set up a [**Customer DID**](https://docs.connexcs.com/customer/did/#configure-did) and set the **Destination** to "Internal" (set the internal destination as the extension number of the conference), and then select the available pre-configured conference.
+    To allow external numbers to dial into the conference, set up a [**Customer DID**](https://docs.connexcs.com/customer/did/#configure-direct-inward-call) and set the **Destination** to "Internal" (set the internal destination as the extension number of the conference), and then select the available pre-configured conference.
 
 ## Conference Call Keypad Options
 
