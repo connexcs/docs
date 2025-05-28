@@ -12,3 +12,5 @@ force = true
 
 [[plugins]]
 package = "@netlify/plugin-sitemap"
+
+
