@@ -89,7 +89,7 @@ We will also walk through configuring the **Preview Dialer** and demonstrate how
 
 5.Click on `See More` in the `Details` column.
 
-6.A `Campaign Overview` will open. This interface is used for real-time monitoring of campaigns, lead stats, agent statuses, and calling activity. <br><img src= "/customer-portal/img/pdcampaign.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+6.A `Campaign Overview` will open. This interface is used for real-time monitoring of campaigns, lead stats, agent statuses, and calling activity. <br><img src= "/customer-portal/img/pdcampaign1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
    1. `State`: Whether the campaign is `Active` or `Inactive`.
    2. `Edit Campaign`: Open the campaign settings for editing.
