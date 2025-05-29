@@ -65,7 +65,7 @@ With AI-driven automation, businesses can enhance customer experience while sign
 
 === "Transcriber"
 
-    + **Transcriber**: Select the transcriber service to convert audio to text. You can select the transcriber depending on the selected platform.
+    + **Transcriber**: Select single or multiple transcriber for converting audio to text. You can select the transcriber depending on the selected platform.
     + **Answer Machine Detection Keywords**: If the AI Agent detects a phrase (any phrase entered by the user) like "Please leave a message" at the start of the call, it will automatically disconnect.
     + **Transcriber Timeout**: It defines the maximum time the system waits for a response during speech-to-text transcription before terminating the process. If no speech is detected within this period, the transcriber stops listening and times out. On timeout `<SILENT_TIMEOUT>` will be sent to the LLM.
     + **Transcriber Silence Threshold (sec)**: Specify the duration of silence to wait before finalizing ASR processing. 
@@ -98,7 +98,6 @@ With AI-driven automation, businesses can enhance customer experience while sign
           + **Vad Start Interrupt**: A VAD Start Interrupt is triggered when the system detects the onset of voice activity, indicating that speech has begun.
           + **Complete Word on Interrupt**: If the AI is interrupted, it will complete the current word before stopping execution.
           + **Async First Greeting**: When `enabled`, only the first message of the main prompt will be executed before proceeding directly to the first task. When `disabled`, the system will follow the default behavior and execute the entire main prompt sequence.
-          + **LLM Failover**: When an LLM model fails, the system dynamically shifts to a secondary model for uninterrupted operation.
     
     + **Precache Phrases** are predefined phrases that the system processes in advance to enable faster and more efficient playback or response when required.
     
@@ -108,7 +107,7 @@ With AI-driven automation, businesses can enhance customer experience while sign
         + **Low temperature (close to 0)** makes the model's responses more predictable by selecting the most probable words.
         + **High temperature (closer to 1 or above)** increases randomness, leading to more diverse and creative but potentially less coherent responses.
     
-    + **First Task**: 
+    + **First Task**: Select the list of pre-created tasks, so that your AI will perform this task as the first task and rest prompts after this task.    
     
     + **Vars**<sup>TOML</sup>:  Select the variables you want pass into the ScriptForge script.
     
