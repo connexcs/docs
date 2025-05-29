@@ -113,7 +113,6 @@ With AI-driven automation, businesses can enhance customer experience while sign
     
     + Click `Save`.
         <img src= "/class5/img/aiagent7new1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
-    
 
 !!! Example "Example Prompt"
     **Introduction:**  
