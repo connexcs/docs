@@ -46,7 +46,7 @@ With AI-driven automation, businesses can enhance customer experience while sign
     + **Platform**: Use either **ConnexCS Converse** or **ConnexCS Converse Direct** to model the AI Agent.
     + **Host**: It's the hosting server where your AI Agent runs and processes interactions.
     + Click `Save`.
-         <img src= "/class5/img/aiagent3new.png" border: 2px solid #4472C4; border-radius: 8px;>
+         <img src= "/class5/img/aiagent3new.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 === "Model"
 
@@ -61,7 +61,7 @@ With AI-driven automation, businesses can enhance customer experience while sign
     + **End Call Phrases**: Phrases or messages used to conclude a call or interaction with a customer.
     + **Prompt**: The prompt field allows you to enter the set of instructions to guide the AI Agent to perform certain tasks. It provides as the foundation for the AI to comprehend the context, interpret the user's purpose, and generate relevant results.
     + Click `Save`.
-        <img src= "/class5/img/aiagent4new.png" border: 2px solid #4472C4; border-radius: 8px;>
+        <img src= "/class5/img/aiagent4new.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 === "Transcriber"
 
@@ -70,7 +70,7 @@ With AI-driven automation, businesses can enhance customer experience while sign
     + **Transcriber Timeout**: It defines the maximum time the system waits for a response during speech-to-text transcription before terminating the process. If no speech is detected within this period, the transcriber stops listening and times out. On timeout `<SILENT_TIMEOUT>` will be sent to the LLM.
     + **Transcriber Silence Threshold (sec)**: Specify the duration of silence to wait before finalizing ASR processing. 
     + Click `Save`.
-      <img src= "/class5/img/aiagent5new.png" border: 2px solid #4472C4; border-radius: 8px;> 
+      <img src= "/class5/img/aiagent5new.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 === "Voice"
 
@@ -80,7 +80,7 @@ With AI-driven automation, businesses can enhance customer experience while sign
     + **Min Filler Word Delay (sec)**: If the AI Agent fails to respond within the predefined time frame, the system will insert the selected filler words to maintain engagement with the customer.
     + **Interrupt Delay (sec)**: Refers to the time taken by the AI Agent to pause its current operation or response generation when interrupted by a user.
     + Click `Save`.
-        <img src= "/class5/img/aiagent6new.png" border: 2px solid #4472C4; border-radius: 8px;>
+        <img src= "/class5/img/aiagent6new.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 === "Advanced"
 
@@ -112,7 +112,7 @@ With AI-driven automation, businesses can enhance customer experience while sign
     + **Vars**<sup>TOML</sup>:  Select the variables you want pass into the ScriptForge script.
     
     + Click `Save`.
-        <img src= "/class5/img/aiagent7new.png" border: 2px solid #4472C4; border-radius: 8px;> 
+        <img src= "/class5/img/aiagent7new1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
     
 
 !!! Example "Example Prompt"
