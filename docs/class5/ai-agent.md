@@ -39,14 +39,14 @@ With AI-driven automation, businesses can enhance customer experience while sign
 === "Basic"
 
     + **Name**: Give a name to your AI Agent.
-    + **App**: Associate the AI Agent with the [Application](https://docs.connexcs.com/apps/architecture/app/) that you have created in the IDE.
-    + **Host**: It's the hosting server where your AI Agent runs and processes interactions.
     + **Destination**: Enter the Extension for the callers to call (essentially, the dial-in number).
     + **Company**: Associate the AI Agent with a customer.
+    + **App**: Associate the AI Agent with the [Application](https://docs.connexcs.com/apps/architecture/app/) that you have created in the IDE.
     + **PBX Server**: Select the PBX Server from the drop-down.
     + **Platform**: Use either **ConnexCS Converse** or **ConnexCS Converse Direct** to model the AI Agent.
+    + **Host**: It's the hosting server where your AI Agent runs and processes interactions.
     + Click `Save`.
-         <img src= "/class5/img/aiagent3.png">
+         <img src= "/class5/img/aiagent3new.png" border: 2px solid #4472C4; border-radius: 8px;>
 
 === "Model"
 
@@ -58,28 +58,29 @@ With AI-driven automation, businesses can enhance customer experience while sign
     + **First Message**: The initial message spoken by the agent. For example, when the agent begins the conversation.
     + **LLM Timeout (sec)**: Refers to the predefined time-frame during which an LLM is granted permission to process a request.
     + **LLM Retries**: Number of attempts the LLM makes in performing back-end tasks.
+    + **End Call Phrases**: Phrases or messages used to conclude a call or interaction with a customer.
     + **Prompt**: The prompt field allows you to enter the set of instructions to guide the AI Agent to perform certain tasks. It provides as the foundation for the AI to comprehend the context, interpret the user's purpose, and generate relevant results.
     + Click `Save`.
-        <img src= "/class5/img/aiagent4.png">
+        <img src= "/class5/img/aiagent4new.png" border: 2px solid #4472C4; border-radius: 8px;>
 
 === "Transcriber"
 
     + **Transcriber**: Select the transcriber service to convert audio to text. You can select the transcriber depending on the selected platform.
     + **Answer Machine Detection Keywords**: If the AI Agent detects a phrase (any phrase entered by the user) like "Please leave a message" at the start of the call, it will automatically disconnect.
     + **Transcriber Timeout**: It defines the maximum time the system waits for a response during speech-to-text transcription before terminating the process. If no speech is detected within this period, the transcriber stops listening and times out. On timeout `<SILENT_TIMEOUT>` will be sent to the LLM.
-    + **End Call Phrases**: Phrases or messages used to conclude a call or interaction with a customer.
+    + **Transcriber Silence Threshold (sec)**: Specify the duration of silence to wait before finalizing ASR processing. 
     + Click `Save`.
-      <img src= "/class5/img/aiagent5.png"> 
+      <img src= "/class5/img/aiagent5new.png" border: 2px solid #4472C4; border-radius: 8px;> 
 
 === "Voice"
 
-    + **Voice**: Select the voice for the text-to-speech service.
-    + **Filler Words**: These are extra words people say in conversations that don’t add meaning but give them time to think. Examples include "um," "uh," "like," "you know," and "well." Select multiple filler words.
     + **Text To Speech(TTS)**: Select from various TTS models to convert your text into audio. You can select the transcriber depending on the selected platform.
+    + **Filler Words**: These are extra words people say in conversations that don’t add meaning but give them time to think. Examples include "um," "uh," "like," "you know," and "well." Select multiple filler words.
+    + **Voice**: Select the voice for the text-to-speech service.
     + **Min Filler Word Delay (sec)**: If the AI Agent fails to respond within the predefined time frame, the system will insert the selected filler words to maintain engagement with the customer.
     + **Interrupt Delay (sec)**: Refers to the time taken by the AI Agent to pause its current operation or response generation when interrupted by a user.
     + Click `Save`.
-        <img src= "/class5/img/aiagent6.png">
+        <img src= "/class5/img/aiagent6new.png" border: 2px solid #4472C4; border-radius: 8px;>
 
 === "Advanced"
 
@@ -91,19 +92,28 @@ With AI-driven automation, businesses can enhance customer experience while sign
     + **Guard Rails**: Choose from multiple Guard Rails options to define constraints for your AI Agent.
     + **Flags**: Select from various flags:
           + **Async Guard Rails**: *Currently not in use*.
-          + **Local Voice Activity Detection**: It optimizes VoIP performance by identifying speech in real-time at the user’s device. 
-          + **LLM Failover**: When an LLM model fails, the system dynamically shifts to a secondary model for uninterrupted operation.
-          + **Disable ScriptForge**: Disables Scriptforge completely.
+          + **Local Voice Activity Detection**: It optimizes VoIP performance by identifying speech in real-time at the user’s device.
+          + **Disable ScriptForge**: Disables Scriptforge completely. Enabling this flag will deactivate the Tool Call Support functionality.
           + **Listen First**: Enabling this flag ensures the LLM prioritizes listening to the user before responding.
+          + **Vad Start Interrupt**: A VAD Start Interrupt is triggered when the system detects the onset of voice activity, indicating that speech has begun.
+          + **Complete Word on Interrupt**: If the AI is interrupted, it will complete the current word before stopping execution.
+          + **Async First Greeting**: When `enabled`, only the first message of the main prompt will be executed before proceeding directly to the first task. When `disabled`, the system will follow the default behavior and execute the entire main prompt sequence.
+          + **LLM Failover**: When an LLM model fails, the system dynamically shifts to a secondary model for uninterrupted operation.
+    
+    + **Precache Phrases** are predefined phrases that the system processes in advance to enable faster and more efficient playback or response when required.
+    
     + **Office Background Volume**: This feature enables the playback of background office sounds.
+    
     + **Temperature**: Refers to a parameter that controls the creativity of the model's output.
         + **Low temperature (close to 0)** makes the model's responses more predictable by selecting the most probable words.
         + **High temperature (closer to 1 or above)** increases randomness, leading to more diverse and creative but potentially less coherent responses.
     
+    + **First Task**: 
+    
     + **Vars**<sup>TOML</sup>:  Select the variables you want pass into the ScriptForge script.
     
     + Click `Save`.
-        <img src= "/class5/img/aiagent7.png"> 
+        <img src= "/class5/img/aiagent7new.png" border: 2px solid #4472C4; border-radius: 8px;> 
     
 
 !!! Example "Example Prompt"
@@ -136,14 +146,22 @@ With AI-driven automation, businesses can enhance customer experience while sign
       - Avoid abbreviations and ensure clarity.  
 
     !!! Tip "Note: You have NOT YET collected any customer  information, ignore any pre-set variables"
-        Add this in the prompt to tell your LLM that no customer information has been gathered so far, and any variables or configurations that might have been pre-set should be disregarded at this stage. This ensures that the process begins with a clean slate, without relying on or being influenced by previously defined or assumed data.  
+        Add this in the prompt to tell your LLM that no customer information has been gathered so far, and any variables or configurations that might have been pre-set should be disregarded at this stage. This ensures that the process begins with a clean slate, without relying on or being influenced by previously defined or assumed data.
+
+!!! Note "Variables via JSON"
+    You can pass variables using JSON in the prompt section to configure or initialize them.
+
+    Make sure you select `SetVariable` under **Advanced :material-menu-right: Built-in Functions :material-menu-right: Set Variable**
+
+    !!! Example "Example Use Case"
+        Store the caller's name by calling the setVariable function with `name=name` and `value=[The customers name]`. 
 
 ### AI Platforms, Models, Voices, TTS, Transcribers
 
 |Platform|Model|Transcriber|Text To Speech (TTS)|Voice|
 |--------|-----|-----------|--------------------|-----|
-|**ConnexCS Converse**|Gemma 2 9bn, Gemma 7bn, Lamma 3 Tools 70bn, Lamma 3 Tools 8bn, Lamma 3.1 Tools 70bn, Lamma 3.1 Tools 8bn, Mixtral 8x7bn||Rime AI, Neets, Azure|Select from multiple options|
-|**ConnexCS Converse Direct**|Select from the multiple options|ConnexCS Internal|Google|
+|**ConnexCS Converse**|Gemma 2 9bn, Gemma 7bn, Lamma 3 Tools 70bn, Lamma 3 Tools 8bn, Lamma 3.1 Tools 70bn, Lamma 3.1 Tools 8bn, Mixtral 8x7bn||Rime AI, Neets, Azure, PlayHT|Select from multiple options|
+|**ConnexCS Converse Direct**|Select from the multiple options|ConnexCS Internal|Google, PlayHT|
 
 !!! Note "While accessing the **ConnexCS Converse Direct** Platform, you will notice that models in the drop-down menu are labeled with **"(Tools)"**. Selecting a model without the (Tools) designation will prevent you from accessing **ScriptForge** and performing behind-the-scenes tasks."
 
