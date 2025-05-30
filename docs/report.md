@@ -46,7 +46,7 @@ Click **`Numbers`** to search for several numbers.
 
 Set a Schedule to email the Breakout Report at designated intervals. To schedule a breakout report, click :material-plus:.
 
-<img src="/reports/img/schedulereport.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src="/reports/img/schedulereport.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 + **Name:** The report schedule.
 + **Email:** The report recipient.
@@ -68,4 +68,4 @@ A rate center represents a specific geographic region for telecommunications bil
 
 The report gives information of the Prefix, Rate Center (region), Total Customer Charge, Total Provider Charge, and Total Calls.
 
-<img src="/reports/img/usacenter.png" widht= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src="/reports/img/usacenter.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;">
