@@ -58,8 +58,6 @@ Set a Schedule to email the Breakout Report at designated intervals. To schedule
 
 Click **`Save`** to schedule the Report.
 
-[schedulereport]:  "Schedule Reports"
-
 ## USA Rate Center
 
 In the United States, different states (or regions) have varying call rates.
@@ -68,4 +66,4 @@ A rate center represents a specific geographic region for telecommunications bil
 
 The report gives information of the Prefix, Rate Center (region), Total Customer Charge, Total Provider Charge, and Total Calls.
 
-<img src="/reports/img/usacenter.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src="/reports/img/usacenter.png" width= "1000" style="border: 2px solid #4472C4; border-radius: 8px;">
