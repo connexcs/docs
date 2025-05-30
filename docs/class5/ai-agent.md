@@ -107,7 +107,7 @@ With AI-driven automation, businesses can enhance customer experience while sign
         + **Low temperature (close to 0)** makes the model's responses more predictable by selecting the most probable words.
         + **High temperature (closer to 1 or above)** increases randomness, leading to more diverse and creative but potentially less coherent responses.
     
-    + **First Task**: Select the list of pre-created tasks, so that your AI will perform this task as the first task and rest prompts after this task.    
+    + **First Task**: Select the list of pre-created tasks, so that your AI will perform this task as the first task and rest prompts after this task. [Click here](https://bani-aiagenttask--connexcs-docs.netlify.app/class5/ai-agent/#task) to know more about tasks.
     
     + **Vars**<sup>TOML</sup>:  Select the variables you want pass into the ScriptForge script.
     
@@ -268,10 +268,10 @@ Calls can be routed to another agent through two different transfer options.
                 return { action: 'transfer', destination: 'input phone number' }
             }
             ```
-       
-    4. Navigate to **Class 5 :material-menu-right: AI Agent**.
-    5. In the **Basic** tab select the created transfer application from the dropdown in the **App** field.
-    6. Navigate to the **Advanced** tab and select the created `transfer function` in the **Tool Call Allow List**.    
+
+      4. Navigate to **Class 5 :material-menu-right: AI Agent**.
+      5. In the **Basic** tab select the created transfer application from the dropdown in the **App** field.
+      6. Navigate to the **Advanced** tab and select the created `transfer function` in the **Tool Call Allow List**.
 
 ## How to Enable Reseller Billing for AI Agent Services?
 
