@@ -46,7 +46,7 @@ Click **`Numbers`** to search for several numbers.
 
 Set a Schedule to email the Breakout Report at designated intervals. To schedule a breakout report, click :material-plus:.
 
-&emsp;![alt text][schedulereport]
+<img src="/reports/img/schedulereport1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 + **Name:** The report schedule.
 + **Email:** The report recipient.
@@ -58,7 +58,7 @@ Set a Schedule to email the Breakout Report at designated intervals. To schedule
 
 Click **`Save`** to schedule the Report.
 
-[schedulereport]: /reports/img/schedulereport1.png "Schedule Reports"
+[schedulereport]:  "Schedule Reports"
 
 ## USA Rate Center
 
