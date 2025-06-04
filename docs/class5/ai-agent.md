@@ -136,7 +136,84 @@ With AI-driven automation, businesses can enhance customer experience while sign
       - Avoid abbreviations and ensure clarity.  
 
     !!! Tip "Note: You have NOT YET collected any customer  information, ignore any pre-set variables"
-        Add this in the prompt to tell your LLM that no customer information has been gathered so far, and any variables or configurations that might have been pre-set should be disregarded at this stage. This ensures that the process begins with a clean slate, without relying on or being influenced by previously defined or assumed data.  
+        Add this in the prompt to tell your LLM that no customer information has been gathered so far, and any variables or configurations that might have been pre-set should be disregarded at this stage. This ensures that the process begins with a clean slate, without relying on or being influenced by previously defined or assumed data.
+
+### Task
+
+A **Task** refers to a specific goal or objective that the agent is designed to accomplish.
+
+It usually involves processing inputs, making decisions, and taking actions to achieve the desired outcome.
+
+#### Steps to Create a Task
+
+1. Log in to your account.
+2. Navigate to **Class 5 :material-menu-right: AI Agent**.
+3. Click on **Task**.
+4. Click on the blue `+` sign. <img src= "/class5/img/task1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+5. Fill in the following fields to setup the task for your AI Agent:
+
+=== "Basic"
+
+    + **Name**: Enter the name of your task.
+    + Click `Save`.
+         <img src= "/class5/img/task2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+=== "Model"
+
+    + **Model**: Select a model for the selected platform. A model is a specific version or configuration of an AI system to perform tasks like text generation, real-time interactions, etc.
+
+        !!! Info
+            Different platforms offer specific models suited to their capabilities.
+    
+    + **First Message**: The initial message spoken by the agent. For example, when the agent begins the conversation.
+    + **Prompt**: The prompt field allows you to enter a set of instructions to guide the AI Agent to perform certain tasks. It provides the foundation for the AI to comprehend the context, interpret the user's purpose, and generate relevant results.
+    + Click `Save`.
+        <img src= "/class5/img/task3.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+=== "Transcriber"
+
+    + **Transcriber**: Select a single or multiple transcribers for converting audio to text. You can select the transcriber depending on the selected platform.
+    + Click `Save`.
+      <img src= "/class5/img/task4.png" style="border: 2px solid #4472C4; border-radius: 8px;"> 
+
+=== "Advanced"
+
+    + **Built-in Functions**:
+        + **Hangup**: Use this flag to terminate the call. You can include a prompt such as, "When call ended, hangup.".
+        + **Set Variable**: Set variables locally. Set variables locally. For example, in a prompt, you could ask, "What's your name?" and save the response to the variable `name`.
+        + **Transfer**: Allows transferring calls to another agent.
+    + **Tool Call Allow List**: Select from a list of `functions` available in **Apps** in **IDE**. 
+    + **Guard Rails**: Choose from multiple Guard Rails options to define constraints for your AI Agent.
+    + **Flags**: Select from various flags:
+          + **Async Guard Rails**: *Currently not in use*.
+          + **Local Voice Activity Detection**: Optimizes VoIP performance by identifying speech in real time at the user’s device. 
+          + **Disable ScriptForge**: Disables ScriptForge completely. Enabling this flag will deactivate the Tool Call Support functionality.
+          + **Listen First**: Enabling this flag ensures the LLM prioritizes listening to the user before responding.
+          + **Vad Start Interrupt**: A  VAD Start Interrupt is triggered when the system detects the onset of voice activity, indicating that speech has begun.
+          + **Complete Word on Interrupt**:  If the AI is interrupted, it will complete the current word before stopping execution.
+          + **Async First Greeting**: When enabled, only the first message of the main prompt will be executed before proceeding directly to the first task. When disabled, the system will follow the default behavior and execute the entire main prompt sequence.
+          + **Include Primary Chat History**: Includes the full conversation history from the primary session, allowing the AI to access prior interactions for better context and continuity.
+          + **Include Primary Prompt**: Appends the initial prompt from the primary task to the current session, ensuring the AI has visibility into the original instruction or objective.
+          + **Sync Primary Chat History**: Enables real-time synchronization with the primary chat session, so updates and responses are reflected across both the original and current contexts.
+          + **Summarize History on Exit**: Generates a concise summary of the conversation when the task concludes.
+          + **Bill Task Separately**: Marks this task to be billed independently from the rest of the session
+    
+    + **Office Background Volume**: This feature enables the playback of background office sounds.
+    
+    + **Temperature**: Refers to a parameter that controls the creativity of the model's output.
+        + **Low temperature (close to 0)** makes the model's responses more predictable by selecting the most probable words.
+        + **High temperature (closer to 1 or above)** increases randomness, leading to more diverse and creative but potentially less coherent responses.
+    
+    + **Vars**<sup>TOML</sup>:  Select the variables you want pass into the ScriptForge script.
+    
+    + Click `Save`.
+        <img src= "/class5/img/task5.png" style="border: 2px solid #4472C4; border-radius: 8px;"> 
+    
+    + To use this created task select it under [Advanced :material-menu-right:First Task](https://bani-aiagent1--connexcs-docs.netlify.app/class5/ai-agent/#__tabbed_1_5).
+    
+    !!! Note
+        1. If `Include Primary Chat History` is `checked`, `Include Primary Prompt` will be ticked automatically.
+        2. If `Sync Primary Chat History` is `checked`, `Include Primary Chat History` and `Include Primary Prompt` will be ticked automatically.
 
 ### AI Platforms, Models, Voices, TTS, Transcribers
 
@@ -146,6 +223,34 @@ With AI-driven automation, businesses can enhance customer experience while sign
 |**ConnexCS Converse Direct**|Select from the multiple options|ConnexCS Internal|Google|
 
 !!! Note "While accessing the **ConnexCS Converse Direct** Platform, you will notice that models in the drop-down menu are labeled with **"(Tools)"**. Selecting a model without the (Tools) designation will prevent you from accessing **ScriptForge** and performing behind-the-scenes tasks."
+
+## Chat
+
+The **Chat** interface will provide responses based on the prompts you submit. Each reply will be tailored specifically to the content and context of your input, ensuring relevant and accurate information is delivered efficiently.
+
+To improve the relevance and accuracy of the AI's replies, you can use the **Add Context** feature.
+
+Before starting, choose a model mode—Standard for fast results (default) or Expert for deeper reasoning with longer response times
+
+#### How to access the Chat feature?
+
+1. Login to your account.
+2. Navigate to **Class 5 :material-menu-right: AI Agent**.
+3. Click on **Chat**.
+4. Click on **Start Chat**.
+<img src= "/class5/img/chat1.png" style="border: 2px solid #4472C4; border-radius: 8px;"> 
+1. Before initiating interaction with the AI chatbot, you must configure a few initial settings: <img src= "/class5/img/chat2.png" style="border: 2px solid #4472C4; border-radius: 8px;"> 
+   1. `Add Context` (optional field): Allows you to provide additional information to the AI before or during a conversation so it can give more accurate, relevant, and helpful responses. You can either add `Text Input` or upload text files using `File Upload` option. <img src= "/class5/img/chat3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"><img src= "/class5/img/chat4.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">. <br>Click `Add to Chat`.</br>
+   2. Select the mode of the model:
+      1. `Standard` (default): A fast model focused on quick results.
+      2. `Expert`: A reasoning model, takes longer to respond.
+   3. `Toggle` for fullscreen.
+
+!!! Example "Example for Standard Mode"
+    <img src= "/class5/img/chat5.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+!!! Example "Example for Expert Mode"
+    <img src= "/class5/img/chat6.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## How to use Functions for the Large Language Models (LLMs)?
 
@@ -162,17 +267,17 @@ To grant access to functions for an AI agent, follow these steps:
 3. **Define the Function**:
       1. Within the Script Forge, add the function you want the AI agent to access.
 
-   !!! Example "Example Function"
-        ```js
-        /**
-          * Transfer
-          * @param {Object} param - Param Object
-          * @param {string} param.name - The name of the person who you wish to transfer the call to.
+        !!! Example "Example Function"
+            ```js
+            /**
+            * Transfer
+            * @param {Object} param - Param Object
+            * @param {string} param.name - The name of the person who you wish to transfer the call to.
             */
-        function transfer() {
-            return { action: 'transfer', destination: '160' }
-        }
-        ```
+            function transfer() {
+                return { action: 'transfer', destination: '160' }
+            }    
+            ```
 
 4. **Assign the App to the AI Agent**:
       1. Navigate to your AI agent that you have previously created.
@@ -252,10 +357,10 @@ Calls can be routed to another agent through two different transfer options.
                 return { action: 'transfer', destination: 'input phone number' }
             }
             ```
-       
-    4. Navigate to **Class 5 :material-menu-right: AI Agent**.
-    5. In the **Basic** tab select the created transfer application from the dropdown in the **App** field.
-    6. Navigate to the **Advanced** tab and select the created `transfer function` in the **Tool Call Allow List**.    
+
+       4. Navigate to **Class 5 :material-menu-right: AI Agent**.
+       5. In the **Basic** tab select the created transfer application from the dropdown in the **App** field.
+       6. Navigate to the **Advanced** tab and select the created `transfer function` in the **Tool Call Allow List**.
 
 ## How to Enable Reseller Billing for AI Agent Services?
 
