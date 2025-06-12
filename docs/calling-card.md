@@ -8,7 +8,7 @@ While not a native feature of ConnexCS, you can add this functionality to your a
 
 **Step 1: [Create a new script in ScriptForge](https://docs.connexcs.com/apps/architecture/script/#build-script) with the following code**
 
-```javascript
+```javascript linenums="1"
 /*
   This function will allow a call that comes in on a "shared", CLI to be sent to the Class 5 system
   impersonating a different customer. The customer will be chosen based upon a pre-entered CLI.

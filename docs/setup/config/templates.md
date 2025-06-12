@@ -113,7 +113,7 @@ This example can be used to provide a custom page in the [**WebPhone**](https://
 
 **ScriptForge**
 
-```javascript
+```javascript linenums="1"
 const rssParser = require('rss-parser');
 const parser = new rssParser();
 function main (vars) {

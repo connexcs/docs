@@ -50,7 +50,7 @@ Follow the following format; [SIP code] :space: [Error Message], for throwing er
 
 **For example**, to throw a 404 Not Found, you can use the following
 
-``` js
+``` js linenums="1"
 throw new Error('404 Not Found');
 ```
 
@@ -62,7 +62,7 @@ After the routing engine has executed its main function, the system will run the
 
 This presents data as the output to the routing engine and expects the same object structure.
 
-``` js
+``` js linenums="1"
 function main (data = {}) {
  // data.routing contains the same data you will find in the Logs
  // in the Raw Data Section
@@ -80,7 +80,7 @@ See the [**ConnexCS ScriptForge documents**](https://scriptforge-docs.connexcs.c
 
 Second parameter is a ctx object
 
-``` js
+``` js linenums="1"
 function main (data = {}, ctx) {
  // ctx contains class 5 ctx object 
 }
@@ -96,7 +96,7 @@ Used to receive data from Form Builder in ConnexCS.
 
 You can view it in the control panel or customer portal.
 
-``` js
+``` js linenums="1"
 function main (data = {}) {
  // data contains object containing key/value pairs from the form. 
 }
