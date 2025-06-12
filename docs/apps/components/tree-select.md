@@ -50,6 +50,12 @@ Unlike a standard dropdown menu with a flat list of options, a tree-select organ
 |`this.disable`| Disable tree-select field from user interaction|`(fields: String`&#124;`String[])`|
 |`this.enable`| Enable tree-select field from user interaction|`(fields: String`&#124;`String[])`|
 |`this.setData`|Set the data in the field. The Value object should be of type { componentId: componentValue }|`(Value: Object)`|
+|`this.getValue`|Get A Value From a component|`(fieldName: String)`|
+|`this.getValues`|Gets the current values of all fields|`() : Object`|
+|`this.removeClassName`|Remove style class from a form item|`(fields: String`&#124;`String[], className: String)`|
+|`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String) : Object`|
+|`this.hide`|Hides the field|`(fields: String`&#124;`String[])`|
+|`this.refreshFieldDataSource`|Refresh the datasource data bound to the whole page|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of the tree-select component in response to user input.
@@ -106,6 +112,33 @@ Unlike a standard dropdown menu with a flat list of options, a tree-select organ
         this.setData(
         {"treeselect_4xgiru3n": "Option 2",})
         ```
+    
+    7. `this.getValue('fieldName')`
+        ```js
+        var fields = this.getValue('treeselect_4xgiru3n');
+        console.log('getValue', fields);
+        ```
+    
+    10. `this.getValues()`
+        ```js
+        var data = this.getValues();
+        console.log(data);
+        ```
+    
+    11. `this.removeClassName(fields, className)`
+        ```js
+        this.removeClassName('treeselect_4xgiru3n', 'abc')
+        ```
+    
+    12. `this.getComponent('component_ID')`
+        ```js
+        var fields = this.getComponent('treeselect_4xgiru3n');
+        console.log('getComponent', fields);
+        ```
+    
+    13. `this.refreshFieldDataSource`
+        
+        `make the function or data as dynamic`
 
 ## Config
 
@@ -124,8 +157,9 @@ Unlike a standard dropdown menu with a flat list of options, a tree-select organ
 |**Optional any Node**|users can choose any node from any level within the tree, including child nodes|<img src= "/apps/components/img/treeselect_optional.png">|
 |**Option**|Choose either **Static** or **Dynamic** way of adding data to the options of the Tree Select <br><br>**Static data** refers to a fixed set of options that are pre-defined and loaded into the Tree Select at the time of initialization</br></br> **Dynamic data** are options fetched as needed from sources like databases or APIs. The Tree Select updates choices based on user selections. You select from **Data source** which refers to the origin of the data; **Function** which refers to the code that manipulates the data, and **Assigned Value** which refers to the specific value stored or associated with a data element|<img src= "/apps/components/img/checkbox_static.png"> <img src= "/apps/components/img/checkbox_dynamic.png">|
 |**Default Value**| The default value which is filled in the field before the user changes it|<img src= "/apps/components/img/treeselect_default.png">|
-|**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
+|**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://docs.connexcs.com/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** action to hide the field. <br> Enable **Disabled** action to make the field unusable. <br>Enable **Show Clear button** action to make the clear button visible.|<img src= "/apps/components/img/treeselect_attributionaction.png">|
+|**Action Settings**|Click on the drop-down to select the pre-defined methods you wish to apply to your component. In this case, you can choose either **mounted** or **refresh** for `onChange`, `onFocus`, or `onBlur`|<img src= "/apps/components/img/input_ac.png">|
 
 ## First time User?
 

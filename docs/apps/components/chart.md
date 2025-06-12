@@ -101,29 +101,24 @@ The 5 types of Charts we use are:
         this.show(fields)
         ```
     
-    7. `this.disable(['fields'])`
-        ```js
-        this.disable(['echarts_moy2lbor'])
-        ```
-    
-    8. `this.enable(['fields'])`
+    7. `this.enable(['fields'])`
         ```js
         this.enable(['echarts_moy2lbor'])
         ```
 
-    9.  `this.getValue('fieldName')`
+    8.  `this.getValue('fieldName')`
         ```js
         var chartname = this.getValue('echarts_moy2lbor');
         console.log('getValue', chartname);
         ```
     
-    10. `this.getComponent('component_ID')`
+    9.  `this.getComponent('component_ID')`
         ```js
         var chartname = this.getComponent('echarts_moy2lbor');
         console.log('getComponent', chartname);
         ```
     
-    11. `this.setData(Value)`
+    10. `this.setData(Value)`
         ```js
         this.setData(
         {
@@ -149,7 +144,7 @@ The 5 types of Charts we use are:
 |**Width**| [**Optional**] Width of the field|<img src= "/apps/components/img/input_width.png">|
 |**Height**| [**Optional**] Height of the field|<img src= "/apps/components/charts_height.png">|
 |**Default**| Default data for the charts|<img src= "/apps/components/charts_default.png">|
-|**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
+|**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://docs.connexcs.com/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Data Binding** to connect the data to UI|<img src= "/apps/components/charts_attributeaction.png">|
 
 ### Chart Config

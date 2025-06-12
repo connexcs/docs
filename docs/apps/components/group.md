@@ -43,6 +43,8 @@ Examples may include:
 |`this.getValue`|Get A Value From a component|`(fieldName: String)`|
 |`this.hide`|Hides the field|`(fields: String`&#124;`String[])`|
 |`this.show`|Displays the field|`(fields: String`&#124;`String[])`|
+|`this.setData`|Set the data in the field. The Value object should be of type { componentId: componentValue }|`(Value: Object)`|
+|`this.getValues`|Gets the current values of all fields|`() : Object`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of the group in response to user input.
@@ -98,6 +100,21 @@ Examples may include:
         var groupname = this.getComponent('group_j9o3pb2i');
         console.log('getComponent', groupname);
         ```
+    
+    7. `this.setData(Value)`
+        ```js
+        this.setData({
+        group : {
+        input: 'hello'
+        }
+        })
+        ```
+
+    8. `this.getValues()`
+        ```js
+        var data = this.getValues();
+        console.log(data);
+        ``` 
 
 !!! info Add multiple classes
     Use the following syntax to add multiple classes to a component:
@@ -116,7 +133,7 @@ Examples may include:
 |**Label Wrap**| If the label is longer than the allowed width the text will continue on another line|<img src= "/apps/components/img/input_labelwrap1.png">|
 |**Hide Label**| Hides the label on the form|<img src= "/apps/components/img/input_hidelabel.png">|
 |**Text Prompt**| A description to aid the user when completing the field|<img src= "/apps/components/img/input_textprompt.png">|
-|**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
+|**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://docs.connexcs.com/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** action to hide the field.|<img src= "/apps/components/img/group_attributionaction.png">|
 
 ### Validation

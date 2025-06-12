@@ -88,29 +88,19 @@ Users can type text, numbers, or symbols into the designated field, providing es
         this.show(fields)
         ```
     
-    6. `this.disable(['fields'])`
-        ```js
-        this.disable(['text_t1fhz5vb'])
-        ```
-    
-    7. `this.enable(['fields'])`
-        ```js
-        this.enable(['text_t1fhz5vb'])
-        ```
-    
-    8.  `this.getValue('fieldName')`
+    6.  `this.getValue('fieldName')`
         ```js
         var textname = this.getValue('text_t1fhz5vb');
         console.log('getValue', textname);
         ```
     
-    9.  `this.setData(Value)`
+    7.  `this.setData(Value)`
         ```js
         this.setData(
          {"text_t1fhz5vb": "This is the Text",});
         ```
     
-    10.  `this.getComponent('component_ID')`
+    8.  `this.getComponent('component_ID')`
         ```js
         var textname = this.getComponent('text_t1fhz5vb');
         console.log('getComponent', textname);
@@ -129,8 +119,9 @@ Users can type text, numbers, or symbols into the designated field, providing es
 |**Placeholder**| The short hint is displayed in the input field before the user enters a value|<img src= "/apps/components/img/input_placeholder.png">|
 |**Text Prompt**| A description to aid the user when completing the field|<img src= "/apps/components/img/input_textprompt.png">|
 |**Default Value**| The default value which is filled in the field before the user changes it|<img src= "/apps/components/img/input_defaultvalue.png">|
-|**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
+|**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://docs.connexcs.com/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** action to hide the field.|<img src= "/apps/components/img/text_attributeaction.png">|
+|**Action Settings**|Click on the drop-down to select the pre-defined methods you wish to apply to your component. In this case, you can choose either **mounted** or **refresh** for `onChange`|<img src= "/apps/components/img/radio_ac.png">|
 
 ### Validation
 

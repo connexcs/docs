@@ -15,20 +15,10 @@ Delivery is within 5 minutes.
 !!! note "Available Balance needed for server deployment"
     To deploy a server, you must have $20 (+ $20 X other servers in your account) available balance.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-!!! warning "Impact to services"
-    If you are a serious carrier *Never let your account run out of credit*. It should go without saying, but if your account runs out of credit, service is impacted, it may not instantly be restored either. We won't consider any reactivation problems critical, if you persistently top-up only enough credit to cover you for the next day.
-
-=======
-
-=======
->>>>>>> e1d162be69d165b879af178d95d0ba3cc7474e97
 !!! warning "Impact on services"
     If you are a serious carrier *Never let your account run out of credit*. It should go without saying, but if your account runs out of credit, it impacts the service and it's restoration may not be instant.
 
     It's difficult for us to consider any reactivation problems critical if you persistently top-up only enough credit to cover you for the next day.
->>>>>>> 0edcf7cc80529152fdd3e8730ca7238575d359ad
 
 ## Server List
 
@@ -147,7 +137,7 @@ For example, if the CPS or Channels limits have reached, capacity failover will 
 
 Select certificates to apply to a server.
 
-<img src= "/setup/img/server1.png" width= "300">
+<img src= "/setup/img/server1.png" width= "800">
 
 To add a Certificate to a sever,
 
@@ -191,6 +181,22 @@ This only needs to run when the system indicates "There's a pending update on th
 
 &emsp;![alt text][server-update]
 
+## Network Tools
+
+You can use **Ping** and **MTR**  to test network connectivity and performance.
+
+1. Navigate to **Setup :material-menu-right: Settings :material-menu-right: Servers**.
+2. Click on ![alt text](image.png) icon next to your IP address.
+3. A window will pop-up where you enter the Hostname or IP Address.
+
+<img src="/setup/img/server1.png">
+
+4.Click **Run** to see the results.
+
+<img src="/setup/img/ping.png">
+
+<img src="/setup/img/mtr.png">
+
 ## Server Clustering and User Location Registration
 
 ### User Location Registration
@@ -213,6 +219,16 @@ When a user endpoint registers with UDP via NAT, it creates a port mapping. Thus
     Due to design constraints that occur with multiple servers in an array, NAT Keep Alive Pings can be quite intensive. You could use *Disable UAC Ping* from the server page, upgrade to a cluster, or use a single registration server to solve this.
 
     We can help with more intricate measures on a case-by-case basis.
+
+## APIBAN Integration
+
+APIBAN integration with ConnexCS is a third-party system provided by [apiban.org](https://www.apiban.org/).
+
+It automatically blocks malicious traffic to your servers. 
+
+APIBAN proactively prevents unwanted SIP traffic by identifying and blocking IP addresses of known bad actors before they can target your system.
+
+These bad actors are identified through globally deployed honeypots and curated by APIBAN to ensure comprehensive protection.
 
 [rtpserver]: /setup/img/rtpservers.png "RTP Server"
 [server-update]: /setup/img/server-update.png "Update Server"

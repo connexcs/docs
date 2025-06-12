@@ -46,6 +46,8 @@ The **Text-Area** element allows users to write freely across multiple lines, id
 |`this.disable`| Disable text-area field from user interaction|`(fields: String`&#124;`String[])`|
 |`this.enable`| Enable text-area field from user interaction|`(fields: String`&#124;`String[])`|
 |`this.setData`|Set the data in the field. The Value object should be of type { componentId: componentValue }|`(Value: Object)`|
+|`this.getValue`|Get A Value From a component|`(fieldName: String)`|
+|`this.getValues`|Gets the current values of all fields|`() : Object`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of a text-area in response to user input.
@@ -113,6 +115,18 @@ The **Text-Area** element allows users to write freely across multiple lines, id
         var textareaname = this.getComponent('textarea_hl6emwsb');
         console.log('getComponent', textareaname);
         ```
+    
+    9. `this.getValue('fieldName')`
+        ```js
+        var textareanamename = this.getValue('textarea_hl6emwsb');
+        console.log('getValue', textareaname);
+        ```
+    
+    10. `this.getValues()`
+        ```js
+        var data = this.getValues();
+        console.log(data);
+        ```
 
 ## Config
 
@@ -130,8 +144,9 @@ The **Text-Area** element allows users to write freely across multiple lines, id
 |**Rows**|Add more rows for additional information|<img src= "/apps/components/img/textarea_rows.png">|
 |**Autosize**| Enable autosize to automatically adjust the element's height to fit the content it holds|<img src= "/apps/components/img/textarea_autosize.png">|
 |**Default Value**| The default value which is filled in the field before the user changes it|<img src= "/apps/components/img/input_defaultvalue.png">|
-|**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
+|**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://docs.connexcs.com/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** action to hide the field. <br> Enable **Disabled** action to make the field unusable. <br>Enable **Show Clear button** action to make the clear button visible.<br>Enable **Show word count** action make the word count visible|<img src= "/apps/components/img/textarea_attributeaction.png">|
+|**Action Settings**|Click on the drop-down to select the pre-defined methods you wish to apply to your component. In this case, you can choose either **mounted** or **refresh** for `onChange`, `onFocus`, or `onBlur`|<img src= "/apps/components/img/input_ac.png">|
 
 ### Validation
 

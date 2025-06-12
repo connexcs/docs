@@ -56,6 +56,10 @@ It typically provides a self-contained interface for collecting additional infor
 |`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String) : Object`|
 |`this.getValue`|Get A Value From a component|`(fieldName: String)`|
 |`myDialog.open()`|Opens the dialog box on the page|
+|`this.getValues`|Gets the current values of all fields|`() : Object`|
+|`myDialog.close()`|Closes the dialog box on the page|
+|`this.$('dailogID.othercomponentID').disable()`|Disable dialog from user interaction|`(fields: String`&#124;`String[])`|
+|`this.$('dailogID.othercomponentID').enable()`|Enable dialog from user interaction|`(fields: String`&#124;`String[])`|
 
 #### Steps to use the methods for the Page Builder components
 
@@ -84,6 +88,17 @@ It typically provides a self-contained interface for collecting additional infor
         var myDialog = this.getComponent('dialog_icubvv8x')
         myDialog.open()
         ```
+        
+    4. `this.getValues()`
+        ```js
+        var data = this.getValues();
+        console.log(data);
+    
+    5. `myDialog.close()`
+        ```js
+        var myDialog = this.getComponent('dialog_icubvv8x')
+        myDialog.close()
+        ```
 
 ## Config
 
@@ -98,8 +113,9 @@ It typically provides a self-contained interface for collecting additional infor
 |**Show Cancel Button**| Enable this option for displaying the Cancel button (the button name is editable)|<img src= "/apps/components/img/dialog_showcancelbuttonpng.png">|
 |**Show Confirm Button**| Enable this option for displaying the confirm button (the button name is editable)<br>Enable **Loading** option to show the user that the dialog is busy. It prevents the user from interacting with the dialog until the operation is complete|<img src= "/apps/components/img/dialog_showconfirmbutton.png">|
 |**Margin Top**|It defines the position of the dialog box from the top of the screen|<img src= "/apps/components/img/dialog_magintop.png">|
-|**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
+|**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://docs.connexcs.com/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Data Binding** to connect the data to UI|<img src= "/apps/components/img/dialog_attributeaction.png">|
+|**Action Settings**|Click on the drop-down to select the pre-defined methods you wish to apply to your component. In this case, you can choose either **mounted** or **refresh** for `onCancel` or `onConfirm`|<img src= "/apps/components/img/dialog_ac.png">|
 
 ## First time User?
 

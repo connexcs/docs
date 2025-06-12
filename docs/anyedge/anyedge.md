@@ -8,6 +8,18 @@ It's a next-generation solution for the Edge Session Initiation Protocol (SIP).
 
 It provides high-reliability and custom Call Distribution algorithms (Weights and Priorities).
 
+!!! Info "Global Redundancy"
+    Global redundancy in AnyEdge ensures high availability by distributing traffic across multiple edge servers located in different geographical regions.
+    This minimizes downtime and provides seamless service continuity even during outages or failures in any single location.
+
+Each customer benefits from a unique, dedicated IP address through AnyEdge
+
+Calls are routed to the nearest AnyEdge server for optimal performance and reduced latency.
+
+!!! Info "AnyEdge Features"
+    1. We provide 10,000+ CPS to all customers for optimal scalability and performance.
+    2. All our customers benefit from 100Gbps DDoS protection.
+    
 ## AnyEdge Setup
 
 ### Configure AnyEdge
@@ -53,6 +65,12 @@ Click the :material-plus: button to set the following:
 
 <img src= "/anyedge/anyedge12.png">
 
+!!! Note "Increase AnyEdge Ports"
+    1. Login to your account.
+    2. Navigate to **Setup :material-menu-right: AnyEdge :material-menu-right: blue `+` icon :material-menu-right: modify CPS limit**.
+
+    <img src= "/anyedge/any45.png">
+
 ### AnyEdge Domain
 
 After AnyEdge configuration is complete, click **:material-plus:** next to **Domains** to configure a specific domain with the same settings as Configure AnyEdge.
@@ -65,15 +83,23 @@ It can provide added **Transport Layer Security (TLS)/ Secure Sockets Layer (SSL
 
 <img src= "/anyedge/anyedge13.png">
 
+!!! Info "Custom TLS Ciphers & Curves"
+     ConnexCS AnyEdge supports custom TLS ciphers, cryptographic algorithms and elliptic curves, allowing administrators to precisely configure security protocols and ensure compatibility with specific client or server requirements.
+
 ### AnyEdge Destinations
 
 Click :material-plus: button to specify the Destination IP, and one or more Limit (Primary) and Backup (Secondary) Zones.
 
 * **Destination**: Enter the Customer's server's IP address.
-* **Limit Zones**:  Limit Zones control access to specific servers within a load balancer. By defining limit zones, you restrict access to certain servers from designated zones. For example, if Sydney is not added to the limit zone configuration, individuals from Sydney will be unable to access this designated server within the load balancer.
+* **Weight**: You can allocate the weight to the server that permits the highest traffic or call volume through that server. This means the server with the highest weight will handle more traffic or calls compared to other servers.
+
+!!! Note
+    You can now set weight up to 50 now for server under Anyedge.
+
+* **Limit Zones**:  Limit Zones control access to specific servers within a load balancer. By defining limit zones, you restrict access to certain servers from designated zones. For example, if Sydney isn't added to the limit zone configuration, individuals from Sydney will be unable to access this designated server within the load balancer.
 * **Backup Zones**: Whenever the server of the main zone fails, the traffic will route to the zone selected in the Backup Zones field.
 
-<img src= "/anyedge/anyedge6.png" width="1000">
+<img src= "/anyedge/anyed1.png">
 
 ## Capabilities
 

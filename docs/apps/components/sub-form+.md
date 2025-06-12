@@ -151,8 +151,9 @@ Complex layout Sub-Form component for list (array) type form data, supporting ne
 |**Page Size**| Displays the number of entries per page|<img src= "/apps/components/img/subform_pagesize.png">|
 |**Show Control**|Displays control button|<img src= "/apps/components/img/subform_showcontrol.png">|
 |**Default Value**| The default value which is filled in the field before the user changes it|<img src= "/apps/components/img/input_defaultvalue.png">|
-|**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
+|**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://docs.connexcs.com/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** action to hide the field. <br> Enable **Disabled** action to make the field unusable. <br>Enable **Deletable** to delete the row in the sub-form. <br> Enable **Addible** to add a row in the sub-form.|<img src= "/apps/components/img/subform_aa.png">|
+|**Action Settings**|Click on the drop-down to select the pre-defined methods you wish to apply to your component. In this case, you can choose either **mounted** or **refresh** for `onChange`, `onRowAdd`, `onRowRemove`, `onPageChange`|<img src= "/apps/components/img/subform_ac.png">|
 
 ## First time User?
 

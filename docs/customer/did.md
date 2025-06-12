@@ -2,19 +2,39 @@
 
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: DID**
 
-A **Direct Inward Dial (DID)** number is one that exists on the public telephone network.
+## Overview
 
-When you dial the number, the carrier delivers the call to ConnexCS.
+A **Direct Inward Dial (DID)** number is one that exists on the public telephone network. It enables customers to receive calls from the public telephone network.
 
-ConnexCS then passes it to the customer based on the configured settings. It allows inbound calls to bypass a PBX (Private Branch Exchange) or another routing to connect directly to the destination number.
+!!! question "How it works?"
+    When you dial the number, the carrier delivers the call to ConnexCS. ConnexCS then passes it to the customer based on the configured settings.
+    It allows inbound calls to bypass a PBX (Private Branch Exchange) or another routing to connect directly to the destination number.
 
-Create and edit **DID parameters** within the individual customer cards. You can either use Bulk Upload or manually **Configure DID** as shown below.
-
-!!! tip "Stats Button"
-    Use **`Stats`** to view the **Per Number Report** of DIDs.
+    ```mermaid
+    graph TD
+    A[Dialed Number] --> B[Carrier Delivers Call to ConnexCS]
+    B --> C[ConnexCS Processes Call]
+    C --> D{Check Routing Rules}
+    
+    D -- Direct Routing --> E[Forward Call to Customer]
+    D -- PBX Bypass --> F[Connect Directly to Destination Number]
+    
+    E --> G[Call Successfully Connected]
+    F --> G[Call Successfully Connected]
+    ```
 
 !!! note "Global DID"
     You can also configure and manage a DID for specific Customers or Carriers in **Global :material-menu-right: DID**, which displays all configured DID.
+
+## Key Features
+
++ **Inbound Call Routing**: Calls from the public network are directed to customer systems.
++ **Custom Destination Management**: Calls can be forwarded to SIP URIs, external numbers, or internal extensions.
++ **Retain Display Name Option**: Configurable settings to preserve caller name information. By default, the display name is stripped to prevent unnecessary data exposure.
++ **Capacity Limits**: Manage call flow with channel restrictions.
++ **Media and Call Recording Settings**: Control media proxy modes and enable call recording.
++ **Billing Packages**: Assign recurring cost structures to DIDs.
++ **ScriptForge Integration**: Custom script-based call handling.
 
 ## Configure Direct Inward Call
 
@@ -38,27 +58,27 @@ To configure individual DIDs, click :material-plus:
 Select the destination to deliver incoming calls for the DID:
 
 + **URI**: Set the Destination DID (number or extension) and IP to forward calls to a specific SIP URI (Session Initiation Protocol, Uniform Resource Identifier).
-+ **External**: To send the call back out to the internet, use a prefix (defined in Customer :material-menu-right: Routing ) to select the outbound route, then the number to send the call to.
++ **External**: To send the call back out to the internet(public network) through a different carrier.
+Use a prefix (defined in Customer :material-menu-right: Routing ) to select the outbound route, then the number to send the call to.
 + **Internal**: Send internally to an extension, a Class5 feature, or even to another customer.
-+ **Circuit Test**: *in progress*.
++ **Circuit Test**: Enables users to verify the integrity and performance of call routing. By pointing a Direct Inward Dialing (DID) number back to the Circuit Test system, users can evaluate critical metrics such as MOS, DTMF, and Caller ID consistency. This process ensures that the purchased routes meet expected standards.
++ **ConneXML**: The incoming call is routed to a ConneXML script, which defines the subsequent call behavior.
 
-#### Add ConneXML Tab to DID
-
-1. Login to your Control Panel.
-2. Navigate to Management :material-menu-right: Customer :material-menu-right: Customer[Name] :material-menu-right: DID :material-menu-right: blue `+` button.
-<img src= "/customer/img/did1.png">
-
-3.In the **Basic** tab select your customer.
-<img src= "/customer/img/did2.png">
-
-4.The **Destination** tab will automatically appear, click on **Edit** and then **ConneXML** and insert the link.
-<img src= "/customer/img/did3.png">
-
-5.Click `Save`.
+!!! question "How it works?"
+    ```mermaid
+    graph TD
+        A[Call Initiated through Carrier] --> B[Call Enters through Assigned DID]
+        B --> C[System Identifies Call as Part of Circuit Test]
+        C --> D[Call Redirected back to Circuit Test System]
+        D --> E[System Evaluates and Logs Key Quality Parameters]
+    ```
 
 ### Capacity Limits
 
 Set the maximum number of INBOUND concurrent calls in **Channels**, and Calls Per Second (CPS) in **Flow Speed**.
+
+It Defines channel restrictions for inbound calls.
+This feature also controls the rate at which calls enter the system.
 
 ### Media
 
@@ -76,26 +96,51 @@ For more details on these fields, see [**Media in Customer Routing**](https://do
 
     :material-menu-right: `Zone (recommended)`- Select any of the regional servers.
 
++ **Call Recording**: Its an optional feature for compliance and quality monitoring.
+Select the % of calls to record for this customer:
     + Disabled- never record calls
     + 1% Sampling
     + 5% Sampling
     + 25% Sampling
     + 50% Sampling
     + Enabled (Always On)
-  
-+ **Timeout**: Set various options to help with call timeout for missed BYEs.
 
-+ **Call Recording**: Select the % of calls to record for this customer:
-    + Disabled- never record calls
-    + 1% Sampling
-    + 5% Sampling
-    + 25% Sampling
-    + 50% Sampling
-    + Enabled (Always On)
++ **Timeout**: Set various options to help with call timeout for missed BYEs.
 
 + **Max Duration**: Set the maximum amount of time (in seconds) to allow the call to exist before it's terminated, typically in case of a missed BYE.
 
 + **Transcoding**: Enter the number of channels allowed for transcoding. This is a limited option. The best use case is for customers in low-bandwidth areas that want to use G.729. If you don't have enough transcoding capacity, calls might start failing.
+
++ **Flags**: Enable this option if you want to remove STIR/SHAKEN information from an inbound call before forwarding it to the destination.
+
++ **RTP Codec**: This fields allows you to have more specific control over the Codecs you choose for your system. After the selection you can assign various **Permissions** to the Codecs you select.
+
+    + **Types of Permissions include**:
+        + **Except**: This permission allows you to block all the codecs apart from the ones in the Whitelist. Codecs that weren't included in the carrier's initial codec list won't be taken into consideration.
+        +  **Offer**: Offer also blocks the codecs apart from the ones in the whitelist and provides flexibility to change the order of the codecs in the list as well. Thus, the first codec in the list is treated as the primary codec (at the output) even if it was the last codec in the list.
+        +  **Consume**: Identical to mask but enables the transcoding engine even if no other transcoding related options are given.
+        +  **Transcode**: Allows the addition of codecs in the offered codec list even if the codecs weren't included in the original list of codecs. Here, transcoding engine will be engaged meaning  behind-the-scenes translation process is happening to ensure communication.<br> You can only add those codecs which are supported by your device for both encoding and decoding process. <br>One limitation of using this option is that it will strip-off all the unsupported codecs. Note that using this option doesn't necessarily always engage the transcoding engine. If all codecs given in the transcode list were present in the original list of offered codecs, then no transcoding will be done.<br> When you use this permission it enables you to mark/modify the Ptime.
+        +  **Strip**: This permission allows you to remove the selected codecs or RTP Payload types from the SDP. Codecs removed using this option behaves as if they never existed in the SDP.
+  
+        |Strip|Transcode|Explanation|
+        |-----|---------|-----------|
+        |G729A|Opus|G729A is unavailable for transcoding|
+
+        +  **Mask**: This option allows you to filter-out the selected codec from the output. Mask works well in combination with **Transcode** option. For example,
+
+        |Input/Offering side|Mask|Transcode|Output/Outgoing Offer|Explanation|
+        |-------------------|-----|---------|--------------------|-----------|
+        |G729A|G729A|Opus|Opus|Transcoding happens between G729A and Opus but output is Opus, G729A is filtered out from outgoing offer|
+        |G729A||Opus|G729A and Opus| Transcoding happens between G729A and Opus but outputs are both Opus and G729A since G729A wasn't filtered out|
+
+         + **Accept**: This option is similar to **Strip** and **Mask** but it isn't removed from the codecs offered list. When you select this option, the selected codec is offered to the remote peer (output/outgoing offer), if the remote peer rejects the offered (incoming) codec it will be used for transcoding and is accepted by the input/offering side.
+        In short, Accept permission allows your device to use codecs offered by the remote peer even if they weren't your initial choice.
+
+        |Input/Offering side|Accept|Transcode|Output/Outgoing Offer|Explanation|
+        |-------------------|------|---------|---------------------|-----------|
+        |G729A|G729A|Opus|Reject|Transcoding still happens between G729A and Opus|
+
+    + **Ptime(ms)**: This value determines the length of time each box (RTP packet) can hold. A higher ptime means each packet carries a longer chunk of audio/video data (bigger box), while a lower ptime means shorter chunks (smaller boxes).
 
 ### Billing
 
@@ -105,13 +150,30 @@ For each Package there is an associated **Minimum Days** the package is valid fo
 
 ### Advanced
 
-+ **Tags**: Add these for informational purposes.
++ **Stir Shaken Min Attest**: It enables the selection of STIR/SHAKEN attestation levels for validating incoming calls. Users can configure the system to permit only calls that meet specific attestation standards. The available validation levels are as follows:
+    + **A**: Permits only calls with attestation level A, the highest level of trust. Calls with attestation levels B or C will be blocked.
+    + **A + B**: Restricts incoming calls to only those with attestation levels A or B. Calls with attestation level C will be blocked.
+    + **A + B + C**: Allows calls with any attestation level (A, B, or C) to pass through.
+!!! Note
+    In all cases, calls without attestation will also be blocked.
+
++ **Tags**: Tags allow users to categorize DIDs for reference (e.g., High Capacity, Failure). Add these for informational purposes.
 
 + **P-Asserted-ID**: Either `Remove` the P-Asserted-ID so it doesn't reach the customer, or leave it `Default` to preserve it.
+
++ **IP Quality Score (IPQS)**: IP Quality Score (IPQS) blocks calls based on CLIs. It prevents CLIs with a specific spam score that you've selected from passing through the system. For more information on IPQS, [click here](https://www.ipqualityscore.com/).
+
+    !!! Warning
+        The **IPQS** feature requires a paid subscription. To enable this feature navigate to **Setup :material-menu-right: Settings :material-menu-right: Account** and enable this feature.
+        The **cost** for a single lookup is **$0.0040**.
+
+    You can set a **Max Daily Quantity** for your customer's lookups. This restricts them to using only the specific number you allocate, ensuring controlled usage.
 
 ### Script Forge
 
 Run a custom script on calls to the DID to perform actions such as routing based on the time of day or if specific users or numbers are active.
+
+Use ScriptForge for **Dynamic Call Management**.
 
 + **Script Forge**: Select the script you wish to run for the **DID**.
 + **Timeout**: Select the time for how long your script should.

@@ -36,6 +36,7 @@ Examples may include:
 |`this.getComponent`|Returns a component whose id has been passed as a parameter|`(component_ID: String) : Object)`|
 |`this.hide`|Hides the field|`(fields: String`&#124;`String[])`|
 |`this.show`|Displays the field|`(fields: String`&#124;`String[])`|
+|`this.getValues`|Gets the current values of all fields|`() : Object`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of the grid in response to user input.
@@ -87,6 +88,12 @@ Examples may include:
         var gridname = this.getComponent('grid_th1wozzk');
         console.log('getComponent', gridname);
         ```
+    
+    6.  `this.getValues()`
+        ```js
+        var data = this.getValues();
+        console.log(data);
+        ``` 
 
 !!! info Add multiple classes
     Use the following syntax to add multiple classes to a component:
@@ -103,7 +110,7 @@ Examples may include:
 |**Flex Layout**| [**Optional**] Allows flexibility to arrange the various components inside the grid|<img src= "/apps/components/img/grid_flexlayout.png">|
 |**Horizontal Arrangement**|Select from various options **Start**, **End**, **Center**, **Space Around**, **Space Between** for horizontal arrangement of the components inside the grid|<img src= "/apps/components/img/grid_horizontal.png">|
 |**Vertical Arrangement**|Select from various options **Top**, **Middle**, **Bottom** for vertical arrangement of the components inside the grid|<img src= "/apps/components/img/grid_vertical4.png">|
-|**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
+|**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://docs.connexcs.com/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Hidden** action to hide the field|<img src= "/apps/components/img/alert_arrtibuteaction.png">|
 
 ## First time User?

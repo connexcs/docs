@@ -1,6 +1,6 @@
 # Transcription
 
-Global :material-menu-right: Transcription
+**Global :material-menu-right: Transcription**
 
 ## Introduction
 
@@ -14,9 +14,92 @@ Depending on the needs of customers, you can define individual prices. You can a
 
 ### Enable Transcription
 
-To enable the Transcription feature on your account, navigate to Setup :material-menu-right: Settings :material-menu-right: Account and click the "Enable Transcription" button.
+To enable the Transcription feature on your account, navigate to **Setup :material-menu-right: Settings :material-menu-right: Account** and click the **Enable Transcription** button.
 
 <img src="/transcription/img/transcription-enable-transcriptions.png" enable transcription="package" width="100"/>
+
+!!! Note
+    The Transcription service fee is **$0.0003** USD per minute.
+
+!!! Warning
+    If you are unable to find the **Enable Transcription** option, please contact us for assistance in enabling the transcription service.
+
+!!! Info
+    Please take note that there is **no fee** for **silence**.
+
+    It implies that if a call lasts for 50 seconds and no audio is exchanged for 20 seconds, we will make every effort to cut out the silence from the audio and bill you for 30 seconds of transcribing service.
+
+### Add Transcription Service for your Customer
+
+Once this service has been enabled on your account, you can follow the steps below to enable this for your customers:
+
+1. Navigate to **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Routing :material-menu-right: Ingress Routing  :material-menu-right: Media :material-menu-right: Transcribe**.
+2. From the drop-down you can select from multiple options like **Disabled**, **1% Sampling**, **5% Sampling**, **25% Sampling**, **50% Sampling** and **Enabled (Always On)**.
+
+!!! Info
+    Out of all the calls that are accessible, **% Sampling** indicates the proportion of calls that will be transcribed.
+
+<img src="/transcription/img/trans1.png" alt="enable" width="900"/>
+
+3.**Transcription Duration**: You can set a maximum transcription time (in seconds) for your transcription service per call. Please note, the transcription will stop at the specified time, even if it is mid-sentence.
+
+#### Confirm your Transcription Service Status
+
+1. Navigate to **Global :material-menu-right: Transcription**. You will be able to see the screen as shown below.
+
+<img src="/transcription/img/trans2.png"/>
+
+2.You will see 3 options:
+
+* **Select**: You can select a particular query profile built using the [Transcription Query Profile](https://bani-transcription--connexcs-docs.netlify.app/transcription/#transcription-query-profile).
+* **Search**: Allows you to search things like the **Call ID**, **Phrases** etc. [Click here](https://docs.connexcs.com/transcription/#search-transcriptions) to know more.
+* [Transcription Query Profile](https://bani-transcription--connexcs-docs.netlify.app/transcription/#transcription-query-profile).
+
+3.Description of Transcription fields:
+
+* **Call ID**: Particular Call ID.
+* **Date**: Date of the call.
+* **Customer Name**: Name of the customer whose transcription is displayed.
+* **Text**: Sentences of the transcribed call.
+* **Leg**: Assigns `0` value to caller, `1` to the callie.
+* **Score**: While searching for the relevance of a document, the system rates it and assigns a score; this helps return the documents that best match the search criteria.
+
+#### Transcription Query Profile
+
+A Transcription Query Profile is a configuration that defines how transcription services should handle if a certain word or phrase is spoken during the call.
+
+To create the query list, please follow the steps below:
+
+1. Click on the `Transcription Query Profile` button followed by the blue `+` icon.
+2. Enter the **Name** of your query list.
+3. Write your query in the **Query** tab, for example "I am calling from the UFO".
+4. Select the customer for whom you want to apply this particular query from the **Customer Name** drop-down.
+5. Form the **Visibility** drop-down you can either select **Public** or **Private**. Its a privacy setting that allows you to decide if you want your customers to be able to see (and use) the query that you have saved. **Public** will allow your customers to see this; **Private** will keep it hidden from them.
+
+    For example, you can choose **Customer Name** : **None** and **Visibility** as **Public** if you want every one of your customers to see the list.
+
+6. **Action**: Allows you to either [**Trigger Alert**](https://docs.connexcs.com/transcription/#transcription-alerts) when the phrase is detected or **Hangup** the call if that particular phrase is detected in the call.
+
+7. Click `Save`.
+
+<img src="/transcription/img/trans3.png" width= "400"/>
+
+##### Transcription Alerts
+
+You can navigate to a specific customer's account and add a Saved Query as an alert.
+
+You will either receive a call, text, or e-mail saying that the system has detected a particular word or phrase for a specific call.
+
+Please follow the below steps to add the Alerts:
+
+1. Navigate to **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Alert**.
+2. Enter the **Title** of the alert.
+3. Enter the **E-mail/Phone Number** you wish to receive the alert message.
+4. Select the **Area** as **Transcription**. For example, this alert can be used to inform Customer1 that their account has been disabled.
+5. You can also select the **Penalty** as soon as the alert triggers. This option will disable the customer's account for **1 minute**, **5 minutes**, **15 minutes**, **1 Hour**, **1 Day**, **1 Year** or just use the **Disabled** option for not using the penalty option.
+6. You can also select the **Template** from the drop-down.
+
+<img src="/transcription/img/trans4.png" alt="transcription" width="900"/>
 
 ### Create a Transcription Package
 
@@ -26,31 +109,11 @@ Select your **Retail Cost** and click on <img src="/transcription/img/transcript
 
 <img src="/transcription/img/transcription-package.png" alt="package" width="500"/>
 
-### Automated Transcriptions
-
-Add Package to Customers Account, assign the **Quantity**, and also assign a **Start Date** and **End date** to the package. At the End Date, the package will automatically stop working.
-
-<img src="/transcription/img/transcriptions-automated-transcriptions.png" alt="automated transcript" width="400"/>
-
-Click on <img src="/transcription/img/transcriptions-save.png" alt="save" width="120"/>, and the package will be available with the customer.
-
-In Routing :material-menu-right: Media, you can enable or disable this service.
-
-<img src="/transcription/img/transcription-enable-disable.png" alt="enable" width="900"/>
-
-### Manual Transcriptions
-
-Navigate to the **Logging Page** to access the transcribed calls.
-
 ## Search Transcriptions
 
-Once the system performs the call transcription process, it's placed into a full-text search engine, available only to you and, (in the future) your customer.
+Once the system performs the call transcription process, it's kept into a full-text search engine, available only to you and, (in the future) your customer.
 
-Go to Global :material-menu-right: Transcription to search for the transcribed calls.
-
-![search](/transcription/img/transcription-search-transcriptions.png)
-
-To search for transcriptions, we will be sending a query to the server, which, based on your search criteria, will return results with a score. We can use search modifiers to help us achieve this.
+To search for transcriptions, we will be sending a query to the server, which, based on your search criteria, will return results with a score.
 
 ### Search Modifiers
 
@@ -66,14 +129,12 @@ It helps in receiving appropriate results.
 
 For example,
 
-1. runs, running, and ran are all forms of the word **run**
-2. builds, building, or built are all forms of the word **build.**
+1. Runs, running, and ran are all forms of the word **run**
+2. Builds, building, or built are all forms of the word **build.**
 
 ### Ad-hoc Queries
 
-To view existing transcriptions, you can enter `*` and choose the required date range, and it will return all the results.
-
-You can further refine your search using query [Search Modifiers](https://bani--connexcs-docs.netlify.app/transcription/#search-modifiers)
+To view all existing transcriptions, you can enter `*` and choose the required date range.
 
 ### Saved Queries
 
@@ -83,24 +144,26 @@ The **Transcription Query Profile** enables you to construct a query list and sa
 
 You can search the created query list for the transcribed calls.
 
-### Score
+### Boolean Search
 
-While searching for the relevance of a document, the system rates it and assigns a score; this helps return the documents that best match the search criteria.
+You can use various Operators to refine your research:
 
-### Transcription Tab
+|**Operator**|**Explanation**|**Example**|
+|------------|---------------|-----------|
+|`AND`|Includes entries that contain all the keywords provided in a list, separated by `AND/&/and`|`call AND connect AND echo` \| `call and connect and echo` \| `call & connect & echo` |
+|`OR`|Include entries that contain at least one keyword from the provided list, separated by `OR/or`|`call or connect or echo` \| `call OR connect OR echo`|
+|`NOT`| This is the NOT operator it won't include the keywords prefixed by`-` symbol|`-call -connect -echo`|
 
-Click on **View Transcription** to view the full transcribed call.
+!!! Example
 
-!!! note "You can only have Transcriptions for the recorded calls."
+    1. `AND` Operator
+    <img src="/transcription/img/and.png" width= "800">
 
-#### Visibility
+    2. `OR` Operator
+    <img src="/transcription/img/or.png" width= "800">
 
-Visibility is a privacy setting that allows you to decide if you want your customers to be able to see (and use) the query that you have saved. **Public** will allow your customers to see this; **Private** will keep it hidden from them.
+    3. `NOT` Operator
+    <img src="/transcription/img/not.png" width= "800">
 
-You should choose **Customer Name** : **None** and **Visibility** as **Public** if you want every one of your customers to see the list.
-
-### Transcription Alerts
-
-You can navigate to a specific customer's account and add a Saved Query as an alert.
-
-You will either receive a call, text, or e-mail saying that the system has detected a particular word or phrase for a specific call.
+!!! Tip
+    By using **multiple search operators together**, you can create more specific search queries that helps you find the most relevant entries quicker.

@@ -90,6 +90,8 @@ To know more about Handlebars [click here](https://handlebarsjs.com/guide/#html-
 |---------|----------------|--------------|
 |`this.hide`|Hides the field|`(fields: String`&#124;`String[])`|
 |`this.show`|Displays the field|`(fields: String`&#124;`String[])`|
+|`this.getValues`|Gets the current values of all fields|`() : Object`|
+|`this.setData`|Set the data in the field. The Value object should be of type { componentId: componentValue }|`(Value: Object)`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of an HTML component in response to user input.
@@ -117,6 +119,16 @@ To know more about Handlebars [click here](https://handlebarsjs.com/guide/#html-
         var fields= ['html_0h6cj3iv']
         this.show(fields)
         ```
+    3. `this.getValues()`
+        ```js
+        var data = this.getValues();
+        console.log(data);
+        ``` 
+    4. `this.setData(Value)`
+        ```js
+        this.setData({
+        html: "<b style=\"color: red;\">\n\tThis is a HTML5\n</b>" })
+        ```
 
 ## Config
 
@@ -130,6 +142,7 @@ To know more about Handlebars [click here](https://handlebarsjs.com/guide/#html-
 |**Hide Label**| Hides the label on the form|<img src= "/apps/components/img/input_hidelabel.png">|
 |**Text Prompt**| A description to aid the user when completing the field|<img src= "/apps/components/img/input_textprompt.png">|
 |**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** action to hide the field|<img src= "/apps/components/img/group_attributionaction.png">|
+|**Action Settings**|Click on the drop-down to select the pre-defined methods you wish to apply to your component. In this case, you can choose either **mounted** or **refresh** for `onChange`|<img src= "/apps/components/img/radio_ac.png">|
 
 ## First time User?
 

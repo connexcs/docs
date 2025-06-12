@@ -2,18 +2,36 @@
 
 **Management :material-menu-right: Customer**
 
-You can organize ConnexCS **Customers** through customer cards.
+## Platform Intelligence
 
-![alt text][customers]
+Before setting up your customers, let's take a moment to understand the powerful intelligence built into the ConnexCS platform.
+
+ConnexCS stands out as an intelligent platform in the telecommunications domain through the integration of several sophisticated features.
+
+At the core lies **[ASR+](https://docs.connexcs.com/customer/routing/#answer-seizure-ratio-plus-details)**, a technology that continuously analyzes call data to identify and filter out known bad numbers.
+By learning from real-time call outcomes, ASR+ proactively prevents calls to unreachable destinations, minimizing wasted resources and significantly improving call success rates.
+
+[ConnexCS AnyEdge](https://docs.connexcs.com/anyedge/anyedge/) acts as a **high-performance load balancer and traffic dispatcher**. This intelligent component distributes traffic seamlessly across multiple SIP servers, ensuring optimal resource utilization and minimizing latency.
+AnyEdge also offers customizable call distribution rules, allowing businesses to prioritize critical calls and optimize routing for specific customer segments.
+
+ConnexCS incorporates **[Spam Scout Scoring](https://docs.connexcs.com/guides/spam-callsblock/#64-using-spam-scout-scoring)**. By providing options to block calls based on spam score. Spam Scout effectively reduces the impact of spam calls on network resources and enhances the user experience.
+
+Complementing Spam Scout is **[IPQS](https://www.ipqualityscore.com/)**. It also blocks the calls based on the spam score. The spam score is provided by a third party IPQS.
+
+By proactively managing traffic, enhancing call quality, and improving network security, ConnexCS empowers businesses to optimize their telecommunications operations, reduce costs, and deliver a superior customer experience.
+
+The combination of intelligent capabilities positions ConnexCS as a leading-edge solution in the telecommunications industry, providing businesses with a competitive advantage in today's dynamic market.
+
+## Customer functions
+
+You can organize ConnexCS **Customers** through customer cards.
 
 !!! question "How many customers can I add?"
     You can add unlimited customers, and we won't charge per customer, only on their individual usage.
 
-## Customer functions
-
 On the **Customers** page, you can perform several management operations.
 
-By clicking on `+` button we can add customer (see [**Create Customers**](https://docs.connexcs.com/customer/customer/#create-customers) below for details.)
+By clicking on `+` button we can add customer (see [**Create Customers**](https://docs.connexcs.com/customer/customer/#create-customer) below for details.)
 
 **Refresh**: Refreshing the page, helpful when making edits or looking at real-time changes. This page is built as a web app, so some information will update automatically.
 
@@ -100,9 +118,10 @@ By clicking on `+` button we can add customer (see [**Create Customers**](https:
     + **Portal Access:** It allows you to **Show** and **Hide** parameters like Balance, CDR, Breakout etc on your customer portal. 
     + **Tags**: Use this to add meta-data identifiers to a customer. If a customer routing is created using a template from [**Global Routing**](https://docs.connexcs.com/global-routing/), this will be the tag configured in the template.
     + [**TOML**](https://en.wikipedia.org/wiki/TOML): This is a data storage mechanism for configuration, similar to INI files. It allows you to create advanced customization to set values, etc, for Script Forge to reference later. 
-    + **Reseller**: Associate the customer to a preset Reseller Group (see [**Create Groups**](https://docs.connexcs.com/setup/settings/users/#create-groups) for more details.)
+    + **Reseller**: Associate the customer to a preset Reseller Group (see [**Create Groups**](https://docs.connexcs.com/setup/settings/users/#groups) for more details.)
     + **Account Manager**: Designating the control of this account to a specific user.
-    + **Invoice Schedule**: Specify frequency for invoice generation. 
+    + **Invoice Schedule**: Specify frequency for invoice generation like Daily, Weekly or Monthly.
+    + **Flags**: Select the **Create Invoice on Payment** flag and if payment done then invoice will be generated.
     + **Invoice Due Days**: Set the allowed number of days past the due date that the invoice can go unpaid. 
     + **Invoice Template**: Select from a list of existing Templates found in **Setup :material-menu-right: Config :material-menu-right: [Templates](/setup/config/templates/)**
     + **Ext.Accounting ID**: This is used to fill in work an external accounting field to correlate between Connexcs and the external accountancy system.
@@ -110,9 +129,7 @@ By clicking on `+` button we can add customer (see [**Create Customers**](https:
     + **Call Recording Retention Days**: How long the customer wants to keep the recorded calls.
     + **Domain**: You can select the [domain](https://docs.connexcs.com/setup/integrations/portal/#configuration-options) you wish wish to access from the drop-down menu. A customer can sign into the various domains available in the system.Each domain can have different price points, support levels, features, etc.
     + **Daily Spend Limit**: The maximum limit for a customer for making calls in their chosen currency. Once the limit is reached it won't allow any new calls to connect.
-
-    !!! note
-        The daily spend day is defined from 00:00 UTC to 00:00 UTC.
+    + **Default STIR Shaken Attestation**: The attestation level you select here is the same attestation level that will be applied to the CLIs that your customer adds from customer portal.
 
 === "Address"
 
@@ -152,6 +169,9 @@ By clicking on `+` button we can add customer (see [**Create Customers**](https:
 
         <img src= "/customer/img/restrict.png" width="400">
 
+!!! note
+    The daily spend day is defined from 00:00 UTC to 00:00 UTC.
+
 !!! note "Note that you won't be able to change the account currency once you create the account."
 
 ## Configure Customers
@@ -166,13 +186,17 @@ ___
 
 Click an existing customer name from the Customer section, then click **`Edit`**. For all field details, see **[Create Customers](https://docs.connexcs.com/customer/customer/#create-customer)** above.
 
-[customers]: /customer/img/customers.png "Customer Dashboard"
+!!! question "How many customers can I add?"
+    You can add unlimited customers, and we won't charge per customer, only on their individual usage.
+
+## White-Labeling Solutions
+
+At ConnexCS Pvt. Ltd., we offer comprehensive white-labeling solutions, enabling our partners to re-brand and deliver our cutting-edge services as their own.
+
+With full customization of branding, user interfaces, and features, we ensure a seamless integration into your existing offerings.
+
+Our flexible platform supports easy API integration and scalable infrastructure, allowing you to provide reliable, fully branded services to your customers without the need for in-house development.
+
+
 [customer-status]: /customer/img/39.png "Customer Status"
 [customersubs]: /customer/img/customersubs.png "Customer Sub-Sections"
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzMwMzMwMDAsNDM4MjQ3ODQ2LDExMz
-UxNTg2OTksMzg1MTAxMjIsLTcyODExODg4MywtMTIyNDM0MTE4
-OCwxMzg1MzU3MTk2LC01NzU1NjUwMjgsLTQwMDQ2ODc1NSwtMT
-U1NjMxNDQzMl19
--->

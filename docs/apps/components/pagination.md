@@ -26,6 +26,7 @@ Imagine you have a form with hundreds of items to choose from, like products in 
 |---------|----------------|
 | `onChange (element)`| The onChange event occurs when the value of a field is changed|
 
+
 ### Methods
 
 | **Name**| **Description**|**Parameters**|
@@ -38,6 +39,8 @@ Imagine you have a form with hundreds of items to choose from, like products in 
 |`this.disable`| Disable pagination field from user interaction|`(fields: String`&#124;`String[])`|
 |`this.enable`| Enable pagination field from user interaction|`(fields: String`&#124;`String[])`|
 |`this.getValue`|Get A Value From a component|`(fieldName: String)`|
+|`this.getValues`|Gets the current values of all fields|`() : Object`|
+|`this.setData`|Set the data in the field. The Value object should be of type { componentId: componentValue }|`(Value: Object)`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of the pagination component in response to user input.
@@ -106,6 +109,18 @@ Imagine you have a form with hundreds of items to choose from, like products in 
         console.log('getComponent', pagename);
         ```
 
+    9. `this.getValues()`
+        ```js
+        var data = this.getValues();
+        console.log(data);
+        ```
+
+    10. `this.setData(Value)`
+        ```js
+        this.setData({
+        pagination: 3
+        });
+        ```
 ## Config
 
 | **Name**|**Description**|**Icon**|
@@ -119,8 +134,9 @@ Imagine you have a form with hundreds of items to choose from, like products in 
 |**Pager Count**| Refers to the total number of visible page numbers displayed at once|<img src= "/apps/components/img/pagination_pagercount.png">|
 |**Total**| Total number of pages you wish to keep for navigation|<img src= "/apps/components/img/pagination_total.png">|
 |**Background**|Enable this option to add backdrop to the pages while navigating|<img src= "/apps/components/img/pagination_background.png">|
-|**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
+|**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://docs.connexcs.com/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** action to hide the field. <br> Enable **Disabled** action to make the field unusable|<img src= "/apps/components/img/checkbox_attributeaction.png">|
+|**Action Settings**|Click on the drop-down to select the pre-defined methods you wish to apply to your component. In this case, you can choose either **mounted** or **refresh** for `onChange`|<img src= "/apps/components/img/radio_ac.png">|
 
 ## First time User?
 

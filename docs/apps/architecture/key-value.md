@@ -17,7 +17,7 @@ Think of it like a dictionary entry with a word (key) and its definition (value)
 
 2. Navigate to **IDE** :material-menu-right: `+` sign :material-menu-right: **Key Value Store**.
 
-<img src= "/apps/img/key1.png">
+<img src= "/apps/img/key1.png" width="500">
 
 3.Enter the **Key**, **Value** and click on `Save`.
 

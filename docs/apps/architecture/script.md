@@ -106,21 +106,21 @@ function main (data = {}) {
 
 A driver is a module export that may contain several pre-defined functions dependent on the integration; flow is an example for a DID Driver.
 
-``` js linenums="1"
+``` js
 module.export = {
-    search: async function ({number}) {
-    // Returns Array of Objects, e.g [{did:'1234'}]
-    },
-    allocate: async function ({did}) {
-    // The information returned by this function will be passed to 
-    // https://api-docs.connexcs.com/#api-Did-Create
-    },
-    release: async function ({did}) {
-    // Returns True / False
-    },
-    list: async function () {
-    // Returns Array of Objects, e.g [{did:'1234'}]
-    }
+ search: async function ({number}) {
+  // Returns Array of Objects, e.g [{did:'1234'}]
+ },
+ allocate: async function ({did}) {
+  // The information returned by this function will be passed to 
+  // https://api-docs.connexcs.com/#api-Did-Create
+ },
+ release: async function ({did}) {
+  // Returns True / False
+ },
+ list: async function () {
+  // Returns Array of Objects, e.g [{did:'1234'}]
+ }
 }
 ```
 
@@ -166,9 +166,9 @@ module.export = {
 
     <img src= "/apps/img/app_scriptforge7.png" width= "550">
 
-    12.You can **Toggle Console**, **Preview (errors)**, or **Edit and Set Vars** using Settings.
+    12.You can `Run` and `Save` the code, `Toggle Console`, `Preview (errors)`, `Request Cancellation` for cancelling any ongoing requests, for example taking longer to execute, `Settings` you can edit, Set Vars, Copy file ID, Copy UUID using Settings.
 
-    <img src= "/apps/img/app_scriptforge.png" width= "275">
+    <img src= "/apps/img/sc.png" width= "275">
 
     !!! note
         Global Routing Priority means the script will run for every single call. You have 3 options to choose from:
@@ -187,6 +187,18 @@ If script shows an error, add this and then run the script again:
 ```
 {"routing":{}}
 ```
+
+!!! Note
+    A **File ID** serves as the unique identifier for a file, while a **UUID** is used to expose a **ScriptForge File** to external systems.
+
+#### Some In-Built Environmental Variables in ScriptForge
+
+* **SCRIPTFORGE_ID**: File ID of the ScriptForge file.
+* **SCRIPTFORGE_NAME**: Name of the ScriptForge file.
+* **APP_ID**: ID of the application.
+* **EXEC_HOST**: Host name of the server executing the script.
+
+You can get the environmental variables using `process.env`.
 
 ### Assign the Script to a Customer
 
@@ -249,3 +261,12 @@ function main(data) {
 
 [s2]: /developers/img/176.png "s2"
 [s8]: /developers/img/183.png "s8"
+
+## Script Forge Background Job Queue Support
+
+You can access and view background jobs running through Script Forge.
+
+1. You can view the jobs under Global :material-menu-right: Queue. <img src= "/apps/img/job1.png">
+2. Click on the job `Name`  to view the status.
+
+<img src= "/apps/img/job2.png" width= "200">

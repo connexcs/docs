@@ -19,7 +19,7 @@ It provides a user-friendly interface with drag-and-drop functionality and vario
 
 1. Login to your account.
 
-2. Navigate to **IDE** :material-menu-right: `+` sign :material-menu-right: **Page Builder**.
+2. Navigate to **IDE** :material-menu-right: `+` icon :material-menu-right: **Page Builder**.
 
 <img src= "/apps/img/pageb1.png">
 
@@ -31,7 +31,10 @@ It provides a user-friendly interface with drag-and-drop functionality and vario
 
 <img src= "/apps/img/pageb3.png">
 
-<img src= "/apps/img/pageb4.png" width="1000">
+<img src= "/apps/img/pb1.png" width="1000">
+
+!!! Tip
+    Use the **Search Components** feature to find the components in the **Layout**, **Collection**, **Basic Fields** or **Advance Fields**.
 
 ## Component Attribute
 
@@ -41,7 +44,7 @@ It serves as a way to customize the component's behavior, appearance, or functio
 
 Components in a Page Builder include Alert, Buttons, Sub-Form, Sub-Form+, Table etc.
 
-We've explained the **Component Attribute** for each component individually in the [**Components section**](https://bani-appsection--connexcs-docs.netlify.app/apps/components/alert/).
+We've explained the **Component Attribute** for each component individually in the [**Components section**](https://docs.connexcs.com/apps/components/alert/).
 
 ## Form Attribute
 
@@ -75,7 +78,7 @@ The Form attribute helps you specify values for the following parameters for all
 
 {{ external_markdown('https://cdn.cnxcdn.com/cnxapp/docs/api.md', '') }}
 
-!!! Info 
+!!! Info
     Form Attribute :material-menu-right: Datasource :material-menu-right: ScriptForge :material-menu-right: Websocket
     WebSocket enables you to create and manage WebSocket connections within your application. WebSockets are a powerful technology for establishing persistent, two-way communication channels between a web browser and a server, enabling real-time data exchange without the need for constant polling.
 
@@ -203,4 +206,4 @@ Drag & Drop Admin Interface Builder, using the following components.
 
 6.Click on the created page builder, it shows with page builder sections where you can **Drag and Drop** the components from the left navigation (Layout).
 
-<img src= "/apps/img/page4.png">
+<img src= "/apps/img/pb2.png">

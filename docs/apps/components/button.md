@@ -62,6 +62,8 @@ Here are some examples of how interactivity can be implemented for **Button** co
 |`this.show`|Displays the field|`(fields: String`&#124;`String[])`|
 |`this.disable`| Disable button from user interaction|`(fields: String`&#124;`String[])`|
 |`this.enable`| Enable button from user interaction|`(fields: String`&#124;`String[])`|
+|`this.$('agentStatus').disable()`|Disable button from user interaction|`(fields: String`&#124;`String[])`|
+|`this.$('agentStatus').enable()`| Enable button from user interaction|`(fields: String`&#124;`String[])`|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of the button in response to user input.
@@ -150,8 +152,9 @@ Here are some examples of how interactivity can be implemented for **Button** co
 |**Button Size**| Select the size of the button from 3 choices; **Large**, **Default** or **Small**|<img src= "/apps/components/img/button_buttonsize.png">|
 |**Button Type**| Select the type of button from: **Default**, **Primary**, **Success**, **Warning**, **Danger**, **Info**, **Text**, or **Link**|<img src= "/apps/components/img/button_buttontype.png">|
 |**Determine whether it's**|You may select the shape of the button as **plain**, **round** or **circle**|<img src= "/apps/components/img/button_shape.png">|
-|**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://bani-appsection--connexcs-docs.netlify.app/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
+|**Custom Class**| An HTML class attribute which allows further customisation [See Form Attribute > Style Sheets](https://docs.connexcs.com/apps/page-builder/#form-attribute)|<img src= "/apps/components/img/input_customclass.png">|
 |**Attribute Action**|Enable **Hidden** action to hide the field <br>Enable **Disabled** action to make the field unusable</br>|<img src= "/apps/components/img/button_attributeaction.png">|
+|**Action Settings**|Click on the drop-down to select the pre-defined methods you wish to apply to your component. In this case, you can choose either **mounted** or **refresh** for `onClick`|<img src= "/apps/components/img/button_ac.png">|
 
 ## First time User?
 

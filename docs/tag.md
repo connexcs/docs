@@ -2,7 +2,6 @@
 
 **Management :material-menu-right: Tags**
 
-
 A **Tag** refers to a label or keyword used to categorize or identify something.
 
 With the help of tags, you may generate global Alerts, Routing, and CLI information. Following the creation of the Tags, you can tag your clients in the Alert, Routing, or CLI Strategy.
@@ -72,13 +71,90 @@ Routing Tag helps you strategize the Routing options for your customer. You can 
 
 #### Price Limits
 
-1. **Capped Rate and Provider Capped Rate**: Set the maximum cost of a call. Calls that exceed the set rate won't get connected. For example, for customers with flat rate accounts, which allows to dial all UK numbers but premium numbers, you would set the Provider Capped Rate at 0.01, so any call that the provider might charge over that amount wouldn't get completed.
-2. **Profit Assurance**: When Enabled, only calls that are profitable pass-through; any call that costs more than the retail rate aren't allowed to complete. This is particularly useful for A-Z routes or NPA-NXX rate cards. Keep in mind that enabling it adds an extra Post-dial delay (PDD) to the call.
-3. **Block Connect Cost**: Block any call that has a connection fee.
-4. **FTC DNC Report ANI Block (USA)**: When Enabled, ConnexCS will take a copy of FTC data (using the FCC's Do Not Call (DNC) Reported Calls Data API) and add it to the system. We can then block callers from known spammer CLI / ANI's.
-5. **DNO**: [Click here](https://docs.connexcs.com/dnc/#do-not-originate-dno-list-blocking) to know more about it.
++ **Capped Rate and Provider Capped Rate**: Set the maximum cost of a call. Calls that exceed the set rate won't get connected. For example, for customers with flat rate accounts, which allows to dial all UK numbers but premium numbers, you would set the Provider Capped Rate at 0.01, so any call that the provider might charge over that amount wouldn't get completed.
 
-<img src= "/misc/img/t3.png">
++ **Profit Assurance**: When Enabled, only calls that are profitable pass-through; any call that costs more than the retail rate aren't allowed to complete. This is particularly useful for A-Z routes or NPA-NXX rate cards.
+
+!!! Tip "When Profit Assurance Fails to Operate"
+    **A. Profit Assurance may appear to fail, often due to:**
+
+    1.**Incorrect Billing Configurations**:
+    
+    Billing increments (e.g., 6/6, 30/6, or 60/60) play a significant role in profitability. A mismatch between the billing increments of your carrier and customer rates can lead to unexpected losses.
+    
+    **For example**:
+        If you buy at 30/6 and sell at 6/6, you lose money on shorter-duration calls because of rounding discrepancies.
+    
+    2.**Profit Assurance Enabled but Losses Persist**:
+    
+    Even with Profit Assurance enabled, losses may occur due to:
+    
+    * Specific call durations where rounding favors the carrier.
+    * Variability in customer usage patterns that do not align with your billing increment assumptions.
+    
+    3.**Misunderstanding Call Connection Logic**:
+    
+    Profit Assurance does not retroactively check call profitability during ongoing calls. If the buy rate is temporarily higher than the sell rate due to duration or rounding, calls may still connect.
+
+
+    **B. Diagnosing the Issue**
+
+    **Step 1: Analyze Breakout Reports**
+    
+    Use the Breakout Report to identify calls with negative margins: 
+    
+       * Navigate to **Management :material-menu-right: Reports :material-menu-right: Breakout Report**.
+     
+       * Filter by destination, carrier, or time period to pinpoint unprofitable calls.
+    
+    **Step 2: Compare Billing Increments**
+    
+    Verify the billing increments set for your carrier and customer:
+    
+      * Carrier increments define how you are charged (e.g., 30/6).
+    
+      * Customer increments define how you bill your customers (e.g., 6/6).
+    
+      * Mismatched increments often lead to losses, especially on shorter calls.
+
+    **Step 3: Review Sell and Buy Rates**:
+       
+    Ensure that your sell rates are consistently higher than your buy rates:
+       
+       + Check rate sheets for discrepancies.
+       
+       + Adjust rates to maintain a positive margin.
+
+
+    **C. Resolving the Issue**
+    
+    a. Adjust Configuration:
+    
+    * Align carrier and customer billing increments to minimize rounding discrepancies.
+    
+    * Update rate sheets to ensure sell rates always exceed buy rates.
+  
+    b. Enable Profit Assurance (if not already enabled):
+        
+    + This will block calls where the sell rate is lower than the buy rate.
+  
+    c. Identify and Address specific calls causing losses using the Breakout Report:
+        
+    + Analyze their durations and verify if the billing increments contributed to the issue.
+      
++ **Block Connect Cost**: Block any call that has a connection fee.
+
++ **FTC DNC Report ANI Block (USA)**: When Enabled, ConnexCS will take a copy of FTC data (using the FCC's Do Not Call (DNC) Reported Calls Data API) and add it to the system. We can then block callers from known spammer CLI / ANI's.
+
++ **DNO**: [Click here](https://docs.connexcs.com/dnc/#do-not-originate-dno-list-blocking) to know more about it.
+
++ **Stir Shaken Min Attest**: It enables the selection of STIR/SHAKEN attestation levels for validating incoming calls. Users can configure the system to permit only calls that meet specific attestation standards. The available validation levels are as follows:
+    + **A**: Permits only calls with attestation level A, the highest level of trust. Calls with attestation levels B or C will be blocked.
+    + **A + B**: Restricts incoming calls to only those with attestation levels A or B. Calls with attestation level C will be blocked.
+    + **A + B + C**: Allows calls with any attestation level (A, B, or C) to pass through.
+
+!!! Note
+    In all cases, calls without attestation will also be blocked.
 
 #### Capacity Limits
 
@@ -107,7 +183,7 @@ Routing Tag helps you strategize the Routing options for your customer. You can 
     
     Changing the CPS Buffering value only affects calls that exceed the CPS. The delay will show as increased PDD on the call, each second the system will emit a 100 Trying (High CPS, Buffering) response to show the status/progress of the call.
 
-5.**ASR Plus** assists capacity management by helping you define how to handle connections for known failed numbers. For information on the ASR Plus options, see [**ASR Plus Details**](https://docs.connexcs.com/customer/routing/#asr-answer-seizure-ratio-plus-details) here.
+5.**ASR Plus** assists capacity management by helping you define how to handle connections for known failed numbers. For information on the ASR Plus options, see [**ASR Plus Details**](https://docs.connexcs.com/customer/routing/#answer-seizure-ratio-plus-details) here.
 
 6.**Balance Disconnect** this feature checks the balance every 60 seconds. It will disconnect the call when the **balance plus the debit limit** is below $0.
 
@@ -142,6 +218,25 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
     If a customer reports an issue with a carrier or route, you can come here and set the carrier / route to Exclude and **`Save`**, then come back and remove it, and do a **`Delay and Save`** for a later date.
 
 <img src= "/misc/img/t6.png">
+
+6.**Flags**:
+
+   + **TCPA  Litigator DNC**: Enabling this flag blocks outbound calls to known TCPA Litigators.
+   + **On Net Call Routing**: Enabling this flag determines if a call should be routed internally  between customers to DID's.
+
+    !!! Info "Call Routing Process"
+        ```mermaid
+            graph LR
+            A[Customer A makes a call using the route with the ON NET CALLING flag] --> B{Syatem checks the dialed number and compares it against DIDs added to the account across all customers}
+            B -- Yes: If the dialed number matches any DID in the account--> C{Route call internally to the matching DID}
+            B -- No: If the dialed number doesnt match any DID in the account--> D{Route call externally via carrier as configured}
+        ```
+
+!!! Note "Enabling TCPA  Litigator DNC flag and On Net Call Routing flag"
+    1. **Navigate to Management :material-menu-right: Tags :material-menu-right: Routing :material-menu-right: Locks :material-menu-right: TCPA  Litigator DNC/On Net Call Routing**.
+    2. Click on the checkbox to enable the required flags.
+    3. Click on `Save`.
+    <img src= "/customer/img/tcpa2.png">
 
 #### Media
 
@@ -296,6 +391,11 @@ The **P-Asserted-ID** manipulation uses the same syntax as the Replace CLI.
 
     + **STIR / SHAKEN Attestation:** This is the level of a certification you can select from 3 levels `A`, `B`, or `C`.
 
-16. Click **`Save`** to complete the CLI configuration.
+16. **Flags**:
+    + *Performance CLI Selection*: When you select Forced as Yes and select a Database, you get an option to select a flag which is Performance CLI Selection. The Performance CLI Selection chooses the CLI with the best ASR.
+    + *Stir Shaken Required*: Choose this option when no certificate is selected.
+    + *Stir Shaken Replace*: Choose this option when you wish to apply your Stir-shaken certificate instead of which is  already applied (for a call).
 
-<img src= "/misc/img/t10.png">
+17.Click **`Save`** to complete the CLI configuration.
+
+<img src= "/customer/img/tagcli.png">

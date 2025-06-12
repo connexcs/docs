@@ -36,6 +36,8 @@ You can create your own App and publish it to the **ConnexCS App Store**. Also, 
 
 6.Click `Refresh` ↻ to refresh the Apps or Files.
 
+7.You also have the `Search` field, which allows you to search a file by its ID. For example, you can search a Query, ScriptForge, Database, Page Builder etc.
+
 !!! warning
 
-    If you intend to remove an App, you must also remove all the data associated with it, including that found in Buttons, ScriptForge, Variables, Pages, and Templates.
+    If you intend to remove an App, you must also remove all the data associated with it, including those in Buttons, ScriptForge, Variables, Pages, and Templates.

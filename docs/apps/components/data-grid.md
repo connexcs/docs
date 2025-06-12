@@ -38,6 +38,9 @@
 |`this.getValues`|Gets the current values of all fields|`() : Object`|
 |`this.getValue`|Get A Value From a component|`(fieldName: String)`|
 |`this.setData`|Set the data in the field. The Value object should be of type { componentId: componentValue }|`(Value: Object)`|
+|`this.hide`|Hides the field|`(fields: String`&#124;`String[])`|
+|`this.show`|Displays the field|`(fields: String`&#124;`String[])`|
+|`this.refreshFieldDataSource`|Refresh the datasource data bound to the whole page|
 
 !!! Info
     1. The show() and hide() methods can also be used to control the visibility of the datagrid in response to user input.
@@ -93,6 +96,20 @@
         }
         )
         ```
+    5. `this.hide(fields)`
+        ```js
+        var fields= ['aggrid_nd93m43c']
+        this.hide(fields)
+        ```
+    
+    6. `this.show(fields)`
+        ```js
+        var fields= ['aggrid_nd93m43c']
+        this.show(fields)
+        ```
+    7. `this.refreshFieldDataSource`
+        
+        `make the function or data as dynamic`
 
 !!! info Add multiple classes
     Use the following syntax to add multiple classes to a component:
@@ -112,6 +129,7 @@
 |**Suppress Context Menu**|When disabled, it disables the mouse right-click feature which has custom options like export into `.CSV` file or Excel, copy or copy with headers, etc. and instead the browser default and generic right-click options become available|<img src= "/apps/components/img/datagrid_suppress.png">|
 |**Context Menu**|You can select from various options to add to your context menu. This option is ONLY effective if suppress Context Menu is Disabled|<img src= "/apps/components/img/datagrid_contextmenu.png">|
 |**Attribute Action**|Enable **Data Binding** to connect the data to UI. <br> Enable **Hidden** action to hide the field|<img src= "/apps/components/img/datagrid_attributeaction.png">|
+|**Action Settings**|Click on the drop-down to select the pre-defined methods you wish to apply to your component. In this case, you can choose either **mounted** or **refresh** for `onCellClicked`, or `onLinkClicked`|<img src= "/apps/components/img/datagrid_ac.png">|
 
 We're talking about **Column Config** separately as it's a comprehensive component. Click on `+` to add a new column.
 
