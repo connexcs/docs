@@ -97,8 +97,6 @@ In this section, we will walk through configuring the **Preview Dialer** and dem
 
    5.`Campaign Agents`: List of agents assigned to the campaign. <br>`Manage Agents`: Allows you to add/remove agents from the campaign from the drop-down menu. Click `Confirm`.</br> <br><img src= "/customer-portal/img/34ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-   </br>For example: The selected agents will be added.<img src= "/customer-portal/img/35ccnew.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-
    <br>`Refresh Button`: To update agent statuses.</br>
 
    6.`Lead Stats`: It shows you the total number of leads loaded into the campaign and what stage they're currently at during the calling process.
@@ -121,7 +119,7 @@ This section has information on the agents. You can also `Create Bulk Agents`. <
 
 3. Click on `Create`. <br><img src= "/customer-portal/img/17ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-## Creating Scripts
+### Creating Scripts
 
 The Script section enables you to create structured call scripts for agents to follow during customer interactions.
 
@@ -165,7 +163,7 @@ This section has information on the Leadsets. You can also `Create Leadset` . <b
 
    5. Upload your data via `File`, `URL` or by entering the `Text`.
 
-#### File
+#### Uploading a File
 
 1. Drag and Drop a file or click to upload the `.csv`. <br><img src= "/customer-portal/img/25ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
@@ -273,7 +271,7 @@ This section has information on the Leadsets. You can also `Create Leadset` . <b
 
 ## Agent Dialer Guide
 
-1. Enter your domain. The screen will prompt the agent to enter the `Username` and `Password`. Click on `Login`. <br><img src="/customer-portal/img/37cc.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+1. Enter your domain. The screen will prompt the agent to enter the `Username` and `Password`. Click on `Login`. <br><img src="/customer-portal/img/37cc.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 2. Select the campaign `Preview Dialler` from the drop-down menu and click `Confirm`. <br><img src="/customer-portal/img/38cc.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 3. An Agent Dialer interface with the following fields will appear:
       1. `Selected Campgain` from the drop-down menu.

@@ -15,8 +15,8 @@ This section will guide you to install the Contact Center application for your c
 
 2. A window will pop-up where you need to select the `User API`, `Class 5 Server` and `Class 4 Server` and hit the `Next Step` button. <br><img src= "/customer-portal/img/5ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-        !!! Note "Important Note"
-            Make sure to select a **Class 4 server** where **WebRTC** and **TLS** are enabled.
+    !!! Note "Important Note"
+        Make sure to select a **Class 4 server** where **WebRTC** and **TLS** are enabled.
 
 3. The user must select a database using the dropdown, or they can click on `New Database` to create and select a new one. Click `Confirm`. <br><img src= "/customer-portal/img/6ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
@@ -32,7 +32,7 @@ This section will guide you to install the Contact Center application for your c
 
 !!! Note "An internal number block range is required to create agents."
 
-After following the above step, we've successfully installed the Contact Center application.
+After following the above steps, we've successfully installed the Contact Center application.
 
 Next, we proceed to review the Contact Center application's setup process and understand its operational workflow.
 

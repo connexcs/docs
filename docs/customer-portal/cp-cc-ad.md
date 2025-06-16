@@ -190,7 +190,7 @@ This section has information on the Leadsets. You can also `Create Leadset`. <br
 
    5. Upload your data via `File`, `URL` or by entering the `Text`.
 
-#### File
+#### Uploading a File
 
 1. Drag and Drop a file or click to upload the `.csv`. <br><img src= "/customer-portal/img/51ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 

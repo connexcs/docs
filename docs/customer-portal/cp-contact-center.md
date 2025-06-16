@@ -12,9 +12,9 @@ The dialer supports **Auto Dialer**, **Preview Dialer** and **Broadcast Dialer (
 
 Here, we've three types of dialers at your disposal.
 
-**1. Preview Dialer
-2. Auto Dialer
-3. Broadcast Dialer**
+**1. Preview Dialer**
+**2. Auto Dialer**
+**3. Broadcast Dialer****
 
 ### Preview Dialer
 
@@ -65,7 +65,7 @@ This auto dialer dials one number per available agent only after they finish the
         E --> F(["🤝 Connect call<br/>to the available agent immediately"])
         D -- "❌ No" --> G(["⏭️ Skip to next number"])
         G --> B
-        E --> A
+        F --> A
     ```
 
 ### Broadcast Dialer (AI Agent)

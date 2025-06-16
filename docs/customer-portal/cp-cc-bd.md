@@ -78,43 +78,42 @@ We will also walk through configuring the **Broadcast Dialer** and demonstrate h
 
 2. A `Campaign Overview` will open. This interface is used for real-time monitoring of campaigns, lead stats, agent statuses, and calling activity. <br><img src= "/customer-portal/img/88cc.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-      1. `State`: Whether the campaign is `Active` or `Inactive`.
+3. `State`: Whether the campaign is `Active` or `Inactive`.
 
-      2. `Edit Campaign`: Open the campaign settings for editing.
+4. `Edit Campaign`: Open the campaign settings for editing.
 
-      3. `Back`: Return to the previous page.
+5. `Back`: Return to the previous page.
 
-      4. `Campaign Stats`: Provides real-time visual insights into the current status of the campaign's calling activities and agent activities.
+6. `Campaign Stats`: Provides real-time visual insights into the current status of the campaign's calling activities and agent activities.
 
-         1. `Callers Chart`: Shows the current distribution of calls:
-            1. `Call In Progress`: How many calls are actively happening (agents talking to leads).
-            2. `Call Waiting`: How many calls are waiting to be connected.
+      1. `Callers Chart`: Shows the current distribution of calls:
+      2. `Call In Progress`: How many calls are actively happening (agents talking to leads).
+      3. `Call Waiting`: How many calls are waiting to be connected.
+      4. `Refresh Button`: To update agent statuses.
 
-      5. `Refresh Button`: To update agent statuses.
+7. `Lead Stats`: It shows you the total number of leads loaded into the campaign and what stage they're currently at during the calling process.
 
-      6. `Lead Stats`: It shows you the total number of leads loaded into the campaign and what stage they're currently at during the calling process.
+      1. `Total Leads`: Everyone you plan to call.
 
-         1. `Total Leads`: Everyone you plan to call.
+      2. `Dialable Leads`: How many you still can call.
 
-         2. `Dialable Leads`: How many you still can call.
+      3. `In Progress`: Live calls happening now.
 
-         3. `In Progress`: Live calls happening now.
+      4. `Call Answered`: People who actually picked up.
 
-         4. `Call Answered`: People who actually picked up.
+      5. `Failed Calls`: Calls that couldn't connect.
 
-         5. `Failed Calls`: Calls that couldn't connect.
+      6. `Dropped Calls`: Calls that got disconnected unexpectedly.
 
-         6. `Dropped Calls`: Calls that got disconnected unexpectedly.
+8. `Campaign Active Calls`: Allows you to monitor real-time performance and volume.
 
-      7. `Campaign Active Calls`: Allows you to monitor real-time performance and volume.
+      1. `Phone`: The phone number being called.
 
-         1. `Phone`: The phone number being called.
+      2. `Start Time`: When the call began.
 
-         2. `Start Time`: When the call began.
+      3. `Call ID`: A unique identifier for tracking or logging the call.
 
-         3. `Call ID`: A unique identifier for tracking or logging the call.
-
-         4. `Call Status`: The current state (e.g., Ringing, Connected, In Progress, Completed, Failed).
+      4. `Call Status`: The current state (e.g., Ringing, Connected, In Progress, Completed, Failed).
 
 ### Creating Scripts
 
@@ -147,7 +146,7 @@ This section has information on the Leadsets. You can also `Create Leadset` . <b
     4. Click on `Upload Leads` to upload the leadset data.
     5. Upload your data via `File`, `URL` or by entering the `Text`.
 
-#### File
+#### Uploading a File
 
 1. Drag and Drop a file or click to upload the `.csv`. <br><img src= "/customer-portal/img/70ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 2. A new window will open where two actions must be completed to create the leadset. <br><img src="/customer-portal/img/71ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
@@ -185,7 +184,7 @@ With your Campaign, Agents, Agent Script, and Leadset configured, the next step 
 #### Uploading via URL
 
 1. Enter the URL in the CSV format and hit the Upload button. <br><img src="/customer-portal/img/77ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-2. A new window will open where two actions must be completed to create the leadset. <br><img src="/customer-portal/img/cc71new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+2. A new window will open where two actions must be completed to create the leadset. <br><img src="/customer-portal/img/71ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 3. `Set row`: To indicate where the upload should start. `Right-click` on the row to want to start the uploading and click on `Set Start Row`. <br><img src="/customer-portal/img/72ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 4. `Map Table Columns`: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. `Right-click` on the column you wish to be mapped, click on `Map Column` then `Phone` (required field) and `Status` (required field). Click on `Upload`. This will upload the leadset data to the server. <br><img src="/customer-portal/img/73ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br> <img src="/customer-portal/img/74ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 5. The leadset gets uploaded successfully. <br><img src="/customer-portal/img/75ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
@@ -228,7 +227,7 @@ With your Campaign, Agents, Agent Script, and Leadset configured, the next step 
       ```
 
 2. Click on `Upload`. <br><img src="/customer-portal/img/bd2.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-3. A new window will open where two actions must be completed to create the leadset. <br><img src="/customer-portal/img/cc71new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+3. A new window will open where two actions must be completed to create the leadset. <br><img src="/customer-portal/img/71ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 4. `Set row`: To indicate where the upload should start. `Right-click` on the row to want to start the uploading and click on `Set Start Row`. <br><img src="/customer-portal/img/72ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 5. `Map Table Columns`: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. `Right-click` on the column you wish to be mapped, click on `Map Column` then `Phone` (required field) and `Status` (required field). Click on `Upload`. This will upload the leadset data to the server. <br><img src="/customer-portal/img/73ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br> <img src="/customer-portal/img/74ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 6. The successful upload can be seen in the image. <br><img src="/customer-portal/img/75ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
@@ -264,8 +263,8 @@ With your Campaign, Agents, Agent Script, and Leadset configured, the next step 
 
 1. Login to your webphone (eg: webphone.cnx.page).
 2. Enter the `Username` and `Password`.
-3. Select the `Server` from the drop-down menu. Hit `Login` button. <br><img src="/customer-portal/img/cc79.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-4. Once logged in, the system will begin receiving calls automatically. <br><img src="/customer-portal/img/cc80.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-5. The call is live. <br><img src="/customer-portal/img/cc81.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+3. Select the `Server` from the drop-down menu. Hit `Login` button. <br><img src="/customer-portal/img/broadcast1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+4. Once logged in, the system will begin receiving calls automatically. <br><img src="/customer-portal/img/broadcast2.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+5. The call is live. <br><img src="/customer-portal/img/broadcast3.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 6. Here, the person has asked the virtual assistant to change the `status` to **The sale has been made**. The change can be seen as in the `Broadcast Leadset`. <br><img src="/customer-portal/img/cc83new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-7. The `Braodcast Campaign Overview` display is also updated. <br><img src="/customer-portal/img/cc831new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+7. The `Braodcast Campaign Overview` display is also updated. <br><img src="/customer-portal/img/broadcast4.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
