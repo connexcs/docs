@@ -12,24 +12,15 @@ The dialer supports **Auto Dialer**, **Preview Dialer** and **Broadcast Dialer (
 
 Here, we've three types of dialers at your disposal.
 
+**1. Preview Dialer
+2. Auto Dialer
+3. Broadcast Dialer**
+
 ### Preview Dialer
 
 A Preview Dialer is an outbound dialing system, where the agent has detailed information about the customer before dialing.
 
 The agent gets enough time to review and decide whether to call the person and hit the call button to initiate the call.
-
-**Pros**:
-
-+ Personalization, higher quality interactions.
-+ Agents feel more in control, less rushed.
-+ Agents align calls to customer needs.
-
-**Cons**:
-
-+ Slower pace.
-+ Fewer calls per hour as compared to Auto Dialer.
-+ Skips Lead Automation.
-+ More agent involvement leads to inconsistent flow.
 
 !!! question "How it works?"
     ```mermaid
@@ -41,42 +32,21 @@ The agent gets enough time to review and decide whether to call the person and h
         style E fill:#FFEBEE,stroke:#C62828,stroke-width:2,rx:10,ry:10
         style F fill:#E0F2F1,stroke:#00796B,stroke-width:2,rx:10,ry:10
 
-        A(["👩‍💼 Agent becomes available<br/>🟢 Marks as 'Ready'"]) --> B(["📋 System selects next contact<br/>🔍 Displays profile:<br/>- First/Last Name<br/>- Address, Contact<br/>- City, Gender<br/>- Email<br/>- Comments"])
-        B --> C(["🧠 Agent reviews info:<br/>📜 Assess script<br/>🎯 Prepare pitch<br/>⏭️ Decide to dial or skip"])
-        C --> D(["📞 Agent clicks 'Dial'<br/>(Manual Mode)"])
+        A(["👩‍💼 Agent becomes available<br/>🟢 Marks as 'Ready'"]) --> B(["📋 System selects the contact<br/>🔍 Displays profile:<br/>- First/Last Name<br/>- Address, Contact<br/>- City, Gender<br/>- Email<br/>- Comments"])
+        B --> C(["🧠 Agent reviews info:<br/>📜 Assess script<br/>🎯 Prepare pitch<br/>🤳 Decide to dial"])
+        B --> G(["🧠 Agent reviews info: <br> ❌ Decides to skip"</br>])
+        G --> B
+        C --> D(["📞 Agent clicks 'Dial'<br/>"])
         D --> E(["📝 Call ends<br/>Agent adds:<br/>- Notes<br/>- Tags<br/>- Disposition"])
         E --> F(["🔄 Next preview pops up"])
         F --> B
     ```
-Best for: Complex or high-value calls where agents need context (e.g., sales or support follow-ups).
 
 ### **Auto Dialers**
 
  Its an outbound dialing system that automatically dials numbers from a contact list and connects answered calls to available agents in real-time.
 
 This auto dialer dials one number per available agent only after they finish their current call. It’s safer but a bit slower.
-
-**Pros**:
-
-+ **Accuracy**: Reduction in dropped calls as calls are made only when agent is available.
-+ **Better agent control**: Agents aren't overwhelmed with back-to-back calls.
-+ **Improved call quality**: Agents get better to prepare between calls.
-+ **Easier integration and implementation**
-
-**Cons**:
-
-+ **Reduced Call Efficiency**: Auto dialers may not always optimize call routing, leading to lower actual call connection rates despite high dialing volumes.
-
-+ **Increased Call Abandonment**: Over-dialing can result in more calls being dropped if not enough agents are available to answer, negatively impacting customer experience.
-
-+ **Limited Preparation Time**: Agents often have little to no time to review customer details before the call connects, which can reduce the quality of interactions.
-
-+ **Agent Burnout Risk**: Continuous back-to-back calls with minimal breaks can lead to fatigue, decreased morale, and higher agent turnover.
-  
-**Key Features**:
-
-+ 1:1 dialing ratio is one call per agent.
-+ No calls are made unless the agents are available/ready.
 
 !!! question "How it works?"
     ```mermaid
@@ -91,9 +61,10 @@ This auto dialer dials one number per available agent only after they finish the
         A(["👩‍💼 Agent finishes call<br/>🔄 Marks as 'Ready'"]) --> B(["📋 System pulls<br/>next number from list"])
         B --> C(["📞 System auto-dials<br/>the contact"])
         C --> D{"📲 Call Answered?"}
-        D -- "✅ Yes" --> E(["🤝 Connect call<br/>to agent immediately"])
-        D -- "❌ No<br/>(Busy / Voicemail / No Answer)" --> F(["⏭️ Skip to next number"])
-        F --> B
+        D -- "✅ Yes" --> E(["Call enters the queue"])
+        E --> F(["🤝 Connect call<br/>to the available agent immediately"])
+        D -- "❌ No" --> G(["⏭️ Skip to next number"])
+        G --> B
         E --> A
     ```
 
@@ -111,12 +82,6 @@ You can create your own personal AI Agent. [Click here](https://docs.connexcs.co
 + Consistent, 24/7 availability.
 + Reduced cost due to no human involvement.
 
-**Cons**:
-
-+ Limited to structured or semi-structured conversations.
-+ May not handle highly emotional or unpredictable interactions as well as a human.
-+ Requires upfront setup and testing for smooth operation.
-
 !!! question "How it works?"
     ```mermaid
     flowchart TD
@@ -128,11 +93,9 @@ You can create your own personal AI Agent. [Click here](https://docs.connexcs.co
 
         A(["🤖 AI Agent becomes active<br/>🟢 Starts broadcast campaign"]) --> B(["📞 System auto-dials next contact"])
         B --> C(["🧠 AI Agent interacts:<br/>- Uses custom script<br/>- Detects intents<br/>- Responds in real-time"])
-        C --> D(["📝 AI logs outcome:<br/>- Call summary<br/>- Sentiment<br/>- Disposition<br/>- Optional transcription"])
+        C --> D(["📝 AI logs outcome:<br/>- Call summary<br/<br/>- Disposition<br/>- Optional transcription"])
         D --> E(["🔄 Moves to next contact automatically"])
         E --> B
     ``` 
 
 From this point forward, we move into the next section [Setting up and using the Contact Center](https://bani-contact-center--connexcs-docs.netlify.app/customer-portal/cp-cc-install/).
-
-The steps outlined here are common to all three dialer types and form the baseline configuration required for effective operation.
