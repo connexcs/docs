@@ -231,13 +231,13 @@ This section has information on the Leadsets. You can also `Create Leadset` . <b
 
 1. Enter the text in the following format:
    ```bash
-      Column 1,Column 2,
-      Phone, Status
-      44116, Ready
-      44117, Ready
-      44118, Ready
-      44119, Ready
-      ```
+   Column 1,Column 2,
+   Phone, Status
+   44116, Ready
+   44117, Ready
+   44118, Ready
+   44119, Ready
+   ```
 
 2. Click on `Upload`. <br><img src="/customer-portal/img/32cc.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 

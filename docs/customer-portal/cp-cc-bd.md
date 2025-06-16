@@ -178,7 +178,7 @@ With your Campaign, Agents, Agent Script, and Leadset configured, the next step 
 
 !!! Example "Example Prompt"
       Your first task is to ask the status: "What's your status?", as you don't currently know the status.
-      Once the status has been provided, store it in the variable name. Don't store the variable unless you have been given it by the customer. don't save anything until the customer gives you 
+      Once the status has been provided, store it in the variable name. Don't store the variable unless you have been given it by the customer. don't save anything until the customer gives you instructions.
       Don't proceed with anything else until you have successfully collected and stored the status by calling the setVariable function with `name`=`status` and `value`=`[status]`.
 
 #### Uploading via URL
@@ -213,7 +213,7 @@ With your Campaign, Agents, Agent Script, and Leadset configured, the next step 
 
 !!! Example "Example Prompt"
       Your first task is to ask the status: "What's your status?", as you don't currently know the status.
-      Once the status has been provided, store it in the variable name. Don't store the variable unless you have been given it by the customer. don't save anything until the customer gives you 
+      Once the status has been provided, store it in the variable name. Don't store the variable unless you have been given it by the customer. don't save anything until the customer gives you instructions.
       Don't proceed with anything else until you have successfully collected and stored the status by calling the setVariable function with `name`=`status` and `value`=`[status]`.
 
 #### Uploading via Text
@@ -256,7 +256,7 @@ With your Campaign, Agents, Agent Script, and Leadset configured, the next step 
 
 !!! Example "Example Prompt"
       Your first task is to ask the status: "What's your status?", as you don't currently know the status.
-      Once the status has been provided, store it in the variable name. Don't store the variable unless you have been given it by the customer. don't save anything until the customer gives you 
+      Once the status has been provided, store it in the variable name. Don't store the variable unless you have been given it by the customer. don't save anything until the customer gives you instructions.
       Don't proceed with anything else until you have successfully collected and stored the status by calling the setVariable function with `name`=`status` and `value`=`[status]`.
 
 ## Dialer Guide

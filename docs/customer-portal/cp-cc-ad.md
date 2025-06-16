@@ -287,7 +287,7 @@ This section has information on the Leadsets. You can also `Create Leadset`. <br
 
 ## Agent Dialer Guide
 
-1. Enter your domain. The screen will prompt the agent to enter the `Username` and `Password`. Click on `Login`. <br><img src="/customer-portal/img/37cc.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+1. Enter your domain. The screen will prompt the agent to enter the `Username` and `Password`. Click on `Login`. <br><img src="/customer-portal/img/37cc.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 2. Select the campaign `Auto Dialer` from the drop-down menu and click `Confirm`. <br><img src="/customer-portal/img/59ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 3. An Agent Dialer interface with the following fields will appear:
       1. `Agent Status` toggle: Make sure its `enabled (green)`, meaning the agent is active and ready to take calls

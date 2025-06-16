@@ -13,8 +13,10 @@ The dialer supports **Auto Dialer**, **Preview Dialer** and **Broadcast Dialer (
 Here, we've three types of dialers at your disposal.
 
 **1. Preview Dialer**
+
 **2. Auto Dialer**
-**3. Broadcast Dialer****
+
+**3. Broadcast Dialer**
 
 ### Preview Dialer
 
