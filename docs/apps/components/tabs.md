@@ -10,7 +10,7 @@ Tabs visually categorize different sections of a form, preventing users from bei
 
 Each tab acts as a dedicated space for specific information, guiding users through the form step-by-step and preventing them from getting lost in a maze of fields.
 
-<img src= "/apps/components/img/tabs.png">
+<img src= "/apps/components/img/tabs.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Use Case
 
@@ -63,7 +63,7 @@ Each tab acts as a dedicated space for specific information, guiding users throu
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/tabs2.png">
+<img src= "/apps/components/img/tabs2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Example
     1. `this.addClassName(fields, className)`

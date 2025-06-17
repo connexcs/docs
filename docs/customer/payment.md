@@ -41,4 +41,4 @@ To add a new payment
 !!! warning "Negative Payments"
     If a customer has made any kind of purchase on the account, it's shown as a negative amount on the main **Payments** page > **Total** section.
 
-[payments-tab]: /customer/img/53.png "Payment Tab"
+[payments-tab]: /customer/img/53.png "Payment Tab" style="border: 2px solid #4472C4; border-radius: 8px;"

@@ -6,7 +6,7 @@ The **Select** component is a dropdown menu that allows users to choose one opti
 
 It's a versatile tool for collecting user input in situations where there are multiple, but not limitless, choices.
 
-<img src= "/apps/components/img/select.png">
+<img src= "/apps/components/img/select.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Use Case
 
@@ -71,7 +71,7 @@ It's a versatile tool for collecting user input in situations where there are mu
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/select2.png">
+<img src= "/apps/components/img/select2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Example
     1. `this.addClassName(fields, className)`
@@ -178,7 +178,7 @@ Form validation can be performed using a variety of methods, including:
 ||**value**: Value of the current field|
 ||**callback**: Callback function (must be called) upon completion of validation; **callback('Error message')/ callback(new Error('Error message'))**. These are two ways to return an error message|
 
-<img src= "/apps/components/img/input_validation.png">
+<img src= "/apps/components/img/input_validation.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Info
     1. The **callback() function** is also called to verify success in the custom validation method.

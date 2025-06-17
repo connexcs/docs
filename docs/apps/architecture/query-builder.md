@@ -14,30 +14,30 @@ Common use cases include: Database Administration Tools, Web Application, Report
 
 2. Navigate to **IDE** :material-menu-right: `+` sign :material-menu-right: **Query Builder**.
 
-<img src= "/apps/img/query1.png">
+<img src= "/apps/img/query1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 3.Select the App and enter the domain where the App will be visible and accessible.
 4.Click `Save`.
 
-<img src= "/apps/img/query21.png" width="350">
+<img src= "/apps/img/query21.png" width="350" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 5.The created Query will be visible on the IDE panel under **Query Builder** tab.
 
 6.Click on your created **Query**.
 
-<img src= "/apps/img/query3.png" width="350">
+<img src= "/apps/img/query3.png" width="350" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 7.Enter the SQL query code.
 
-<img src= "/apps/img/query4.png">
+<img src= "/apps/img/query4.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 8.Click on `Save` and then `Run`. It will display a query output.
 
-<img src= "/apps/img/query5.png">
+<img src= "/apps/img/query5.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 9.You can `Run` and `Save` the code, `Toggle Console`, `Preview (errors)`, `Request Cancellation` for cancelling any ongoing requests, for example taking longer to execute, `Settings` you can edit, Set Vars, Copy file ID, Copy UUID using Settings.
 
-<img src= "/apps/img/sc.png" width= "275">
+<img src= "/apps/img/sc.png" width= "275" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ### G3 Query Builder
 
@@ -73,6 +73,6 @@ start_date: :start_date // making it a variable using Set Vars
 
 You can put any value in the Vars field, it will be treated as a default value when you use the above code.
 
-<img src= "/apps/img/g31.png" width="250">
+<img src= "/apps/img/g31.png" width="250" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-<img src= "/apps/img/g32.png">
+<img src= "/apps/img/g32.png" style="border: 2px solid #4472C4; border-radius: 8px;">

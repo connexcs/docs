@@ -125,4 +125,4 @@ When the scheduled test run, the results are visible on the "Log" tab.
 !!! note "Multiple selections allowed"
     Most fields under Schedule allow for multiple selections. For example, you can schedule the test for multiple days of the week.
 
-[circuit-test]: /misc/img/circuit-test.png "Run Circuit Test"
+[circuit-test]: /misc/img/circuit-test.png "Run Circuit Test" style="border: 2px solid #4472C4; border-radius: 8px;"

@@ -18,13 +18,13 @@ Click on the Group name, then click **`Edit`** to revise the following:
 
       **Note:** Rings all members, even if they're already on a call.
 
-    ![alt text][parallel]
+    <img src= "/customer-portal/img/parallel.png"  style="border: 2px solid #4472C4; border-radius: 8px;">
 
     + **Sequential**: Routes a call in a sequential order based on the order under Group Members. By default, the  call routes to the member whose extension number has the highest value (for example, 5021).
       + If the member with the second-highest extension number doesn't respond, the call gets routed to the extension with the third-highest value (for example, 4097).
       + If the member with second highest extension number doesn't respond, the call gets routed to the extension with the third highest value (for example, 4095). This process continues until a member receives the call.
 
-    ![alt text][sequential]
+    <img src= "/customer-portal/img/sequential.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
     + **Queue**: The **Queue**, same as Groups, allows you to create a team of people in a call queue. The caller is then routed to the next available member (who waits for the longest to receive a call).
 
@@ -35,9 +35,8 @@ Click on the Group name, then click **`Edit`** to revise the following:
 
         To leave the group, they dial another number from their phone. This means that a group that uses a Queue routing strategy doesn't necessarily have a fixed number of members.
 
-        ![alt text][queue]
+        <img src= "/customer-portal/img/queue.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-      
       **Edit Existing Queue**
 
       Click on the **Queue** name to edit the following:
@@ -53,11 +52,6 @@ Click on the Group name, then click **`Edit`** to revise the following:
       + **Agent Logout Destination:** The extension number an individual must dial to quit the group.
       + **Agent Offhook Destination:** An extension number an individual must dial to receive calls instantly after joining the group.
 
-      [queue]: /customer-portal/img/queue.png "Call Queue"
-
 + **Destination**: Click :material-plus:, then click `Edit` to enter the Destination (External number or Internal extension, SIP User, group, DID, etc.), and Ring Timeout (maximum amount of time for a call to ring before moving to next group member).
 
 (**SIP:** Session Initiation Protocol; **DID:** Direct Inward Dialing)
-
-[parallel]: /customer-portal/img/parallel.png "Parallel Group"
-[sequential]: /customer-portal/img/sequential.png "Sequential Group"

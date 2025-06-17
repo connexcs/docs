@@ -6,7 +6,7 @@ A **Button** can be used to trigger an event when it's clicked.
 
 Buttons are typically used to submit forms, navigate between pages, or perform other actions.
 
-<img src= "/apps/components/img/button.png">
+<img src= "/apps/components/img/button.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Use Case
 
@@ -77,7 +77,7 @@ Here are some examples of how interactivity can be implemented for **Button** co
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/button2.png">
+<img src= "/apps/components/img/button2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Example
     1. `this.addClassName(fields, className)`
@@ -159,4 +159,3 @@ Here are some examples of how interactivity can be implemented for **Button** co
 ## First time User?
 
 If you are using the Page Builder components on the ConnexCS platform for the first time, we request you to use our guide on <a href="https://docs.connexcs.com/apps/page-builder/#steps-to-use-components-in-the-page-builder" target="_blank">steps to use the Components</a>.
-

@@ -39,4 +39,4 @@ Complete the following steps before configuring the IVR.
     :material-menu-right: `Internal`: A number or resource on the ConnexCS platform.
         For example, extension numbers, IVRs, conference bridges, and groups.
 
-[ivr]: /class5/img/ivr.png "IVR Setup"
+[ivr]: /class5/img/ivr.png "IVR Setup" style="border: 2px solid #4472C4; border-radius: 8px;"

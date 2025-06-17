@@ -10,7 +10,7 @@ The ConnexCS **Dashboard** provides a real-time overview of active customers, ch
 
 + For detailed account activities, use the **Menu** System on the left.
 
-<img src= "/misc/img/dash1.png">
+<img src= "/misc/img/dash1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ### Channels
 
@@ -34,23 +34,23 @@ With this new feature, you can view parameters:
 
 === "Channels"
 
-    <img src= "/misc/img/dash2.png">
+    <img src= "/misc/img/dash2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 === "CPS"
 
-    <img src= "/misc/img/dash3.png">
+    <img src= "/misc/img/dash3.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 === "Customer/Provider Spend"
 
-    <img src= "/misc/img/dash4.png">
+    <img src= "/misc/img/dash4.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 === "Profit"
 
-    <img src= "/misc/img/dash5.png">
+    <img src= "/misc/img/dash5.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 === "Registration Count"
 
-    <img src= "/misc/img/dash6.png">
+    <img src= "/misc/img/dash6.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Customization
 
@@ -63,7 +63,7 @@ With this new feature, you can view parameters:
 This structured dashboard guide ensures customers can effectively monitor system performance, analyze data, and customize their experience with ConnexCS.
 !!! Info " Download Control Panel Application"
     To download our Control Panel Application. Click ![alt text](image-4.png) on your browser while you are logged into your account and hit Install.
-    <img src= "/customer/img/controlpanelapp.png">
+    <img src= "/customer/img/controlpanelapp.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 [top of page]: /misc/img/topofpage.png "Top of Page"
 [dashboard]: /misc/img/dashboard.png "Dashboard"

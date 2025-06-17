@@ -4,7 +4,7 @@
 
 The **Inline** layout approach allows for a more compact and organized form layout, making it easier for users to navigate and interact with the form elements.
 
-<img src= "/apps/components/img/inline.png">
+<img src= "/apps/components/img/inline.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Use Case
 
@@ -40,7 +40,7 @@ The **Inline** layout approach allows for a more compact and organized form layo
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/inline2.png">
+<img src= "/apps/components/img/inline2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Example
     1. `this.addClassName(fields, className)`

@@ -6,7 +6,7 @@
 
 This feature is often used to organize lengthy or complex forms, making them easier to navigate and reducing visual clutter.
 
-<img src= "/apps/components/img/collapse12.png" width="2000">
+<img src= "/apps/components/img/collapse12.png" width="2000" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Use Case
 
@@ -58,7 +58,7 @@ Some of the most common methods include:
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/collapse4.png">
+<img src= "/apps/components/img/collapse4.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Example
     1. `this.addClassName(fields, className)`

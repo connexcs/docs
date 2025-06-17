@@ -222,7 +222,7 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 !!! Warning
     The **IPQS** feature requires a paid subscription. To enable this feature navigate to **Setup :material-menu-right: Settings :material-menu-right: Account** and enable this feature.
 
-    The **cost** for a single lookup is **$0.0040**.
+    Check the [Pricing](https://connexcs.com/pricing) for a single lookup here.
 
  You can set a **Max Daily Quantity** for your customer's lookups. This restricts them to using only the specific number you allocate, ensuring controlled usage.
 
@@ -247,7 +247,7 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
     1. **Navigate to Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Routing :material-menu-right: Locks :material-menu-right: TCPA  Litigator DNC/On Net Call Routing**.
     2. Click on the checkbox to enable the required flags.
     3. Click on `Save`.
-    <img src= "/customer/img/tcpa.png">
+    <img src= "/customer/img/tcpa.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ### Media
 
@@ -336,7 +336,7 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
     * **Management :material-menu-right: File :material-menu-right: Recording**
   
 !!! Info
-    An extra charge per recorded call of **$0.003** gets added to existing fees or charges, so choose carefully how many calls to record:
+    An extra charge per recorded call gets added to existing fees or charges, so choose carefully how many calls to record. Check [Pricing](https://connexcs.com/pricing):
 
 :material-menu-right: `Disabled`- no calls get recorded.
 
@@ -411,7 +411,7 @@ Routes highlighted in red on the customer Routing page gets disabled. Open the r
 ## Tech Prefix
 
 **1. What is Tech Prefix?**
-   
+
 A Tech Prefix is a string of numbers, added to the dialed number (DNIS) before sending the call.
 
 **2. Purpose of Tech Prefix:**
@@ -445,7 +445,7 @@ Using Tech Prefix with SIP User "Parameter Rewrites" allows for significant gran
 
 1. Use Parameter Rewrite on the SIP User (found in **Customer :material-menu-right: Auth :material-menu-right: SIP User :material-menu-right: Parameter Rewrite**) to add a number for calls from this SIP User:
 
-    <img src= "/customer/img/regex1.png">
+    <img src= "/customer/img/regex1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 2. Add a Tech Prefix for that user in Routing. In this example, it would be 1234.
 3. Set how you want those calls routed: Internal to Class5, out to a provider, etc.
@@ -459,7 +459,6 @@ Using Tech Prefix with SIP User "Parameter Rewrites" allows for significant gran
     end
     B[Customer A Prefix: 001]-- Prefix 001* will be stripped  before passing the call to the destination number 123456789 --- Destination
     ```
-
 
 ## Answer Seizure Ratio Plus Details
 
@@ -485,9 +484,9 @@ ASR (Answer Seizure Ratio) is the number of connected calls divided by the total
     + Marginal impact on your NER due to false positive matches. This is usually kept within tolerances of < 0.1%.
     + Doesn't offer improvements for all destinations.
 
-[ingress-routing]: /customer/img/ingress-routing.png "Ingress Routing"
-[routing-disabled]: /customer/img/routing-disabled.png "Disabled Routing"
-[techprefix-usecase]: /customer/img/techprefix-usecase.png "Tech Prefix Use Case"
+[ingress-routing]: /customer/img/ingress-routing.png "Ingress Routing" style="border: 2px solid #4472C4; border-radius: 8px;"
+[routing-disabled]: /customer/img/routing-disabled.png "Disabled Routing" style="border: 2px solid #4472C4; border-radius: 8px;"
+[techprefix-usecase]: /customer/img/techprefix-usecase.png "Tech Prefix Use Case" style="border: 2px solid #4472C4; border-radius: 8px;"
 
 ## Strategic Routing
 
@@ -506,7 +505,7 @@ Strategic Routing feature allows creating a Routing Strategy that, when applied,
    + Select a **Rate Card** from the drop-down menu.
    + Click `Save`.
 
-<img src= "/customer/img/rs.png" width="800">
+<img src= "/customer/img/rs.png" width="800" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 2.**Apply the Strategy to a Customer**:
 
@@ -515,7 +514,7 @@ Strategic Routing feature allows creating a Routing Strategy that, when applied,
 + Select the newly created **Routing Strategy** for the customer.
 + Click `Save`.
 
-<img src= "/customer/img/rs1.png">
+<img src= "/customer/img/rs1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Info "Routing Behaviour"
     Once applied, calls from the customer will now route based on the provider rate cards specified in the strategy.

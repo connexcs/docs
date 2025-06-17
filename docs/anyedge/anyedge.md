@@ -19,7 +19,7 @@ Calls are routed to the nearest AnyEdge server for optimal performance and reduc
 !!! Info "AnyEdge Features"
     1. We provide 10,000+ CPS to all customers for optimal scalability and performance.
     2. All our customers benefit from 100Gbps DDoS protection.
-    
+
 ## AnyEdge Setup
 
 ### Configure AnyEdge
@@ -175,7 +175,7 @@ The reasons why a packet fails to validate are:
 * No SIP message
 * Header Parsing error
 * No "Call-ID" header
-* No "Content-Length" header for transports that require it (for example, TCP
+* No "Content-Length" header for transports that require it (for example, TCP)
 * Invalid Content-Length, different from the size of the actual body
 * SDP body parsing error
 * No "Cseq" header

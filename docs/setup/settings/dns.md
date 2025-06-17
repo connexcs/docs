@@ -95,4 +95,4 @@ It's possible to set up something like your customer on larger deployments where
 
 While this may be more work, it will allow you to shape your customers traffic distribution, perform A-B testing, etc.
 
-[dns]: /setup/img/dns.png "DNS load-balance"
+[dns]: /setup/img/dns.png "DNS load-balance" style="border: 2px solid #4472C4; border-radius: 8px;"

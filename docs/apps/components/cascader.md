@@ -6,7 +6,7 @@ A **Cascader**, also known as a **Cascade Select** or **Dependent Drop-down**, i
 
 It enables users to navigate through a hierarchical structure of options, narrowing down their choices as they progress through the page.
 
-<img src= "/apps/components/img/cascader.png">
+<img src= "/apps/components/img/cascader.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Use Case
 
@@ -104,7 +104,7 @@ Here's a general approach to integrating interactivity:
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/cascader2.png">
+<img src= "/apps/components/img/cascader2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Example
     1. `this.addClassName(fields, className)`
@@ -210,7 +210,7 @@ Form validation can be performed using a variety of methods, including:
 ||**value**: Value of the current field|
 ||**callback**: Callback function (must be called) upon completion of validation; **callback('Error message')/ callback(new Error('Error message'))**. These are two ways to return an error message.|
 
-<img src= "/apps/components/img/cascader_validation.png">
+<img src= "/apps/components/img/cascader_validation.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Info
     1. The **callback() function** is also called to verify success in the custom validation method.

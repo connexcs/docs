@@ -11,7 +11,7 @@ View the list of all **Payments** made to date.
 + **Description**: Name of the payment.
 
 !!! info "Bulk Payment Download"
-    If you wish to download all the Payment details click on <img src= "/customer-portal/img/bd.png"> on the extreme right side and a **.csv** file will be downloaded to your system.
+    If you wish to download all the Payment details click on <img src= "/customer-portal/img/bd.png" style="border: 2px solid #4472C4; border-radius: 8px;"> on the extreme right side and a **.csv** file will be downloaded to your system.
 
 ## Make payment
 

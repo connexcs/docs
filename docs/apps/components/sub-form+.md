@@ -4,7 +4,7 @@
 
 Complex layout Sub-Form component for list (array) type form data, supporting nesting of complex layouts.
 
-<img src= "/apps/components/img/subformplus.png">
+<img src= "/apps/components/img/subformplus.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Use Case
 
@@ -72,7 +72,7 @@ Complex layout Sub-Form component for list (array) type form data, supporting ne
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/subformplus2.png">
+<img src= "/apps/components/img/subformplus2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Example
     1. `this.addClassName(fields, className)`

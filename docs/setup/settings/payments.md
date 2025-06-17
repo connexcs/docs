@@ -14,4 +14,4 @@ Use the **Payments** view to manage payments to ConnexCS and other related funct
 
 &emsp;![alt text][payments]
 
-[payments]: /setup/img/payments.png "Payment Screen"
+[payments]: /setup/img/payments.png "Payment Screen" style="border: 2px solid #4472C4; border-radius: 8px;"

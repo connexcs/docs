@@ -21,17 +21,17 @@ It provides a user-friendly interface with drag-and-drop functionality and vario
 
 2. Navigate to **IDE** :material-menu-right: `+` icon :material-menu-right: **Page Builder**.
 
-<img src= "/apps/img/pageb1.png">
+<img src= "/apps/img/pageb1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 3.Enter the **Name** and **Title** of your Page. From the **App** drop-down you can select the application for which you wish to create for the page for and click on **Save and Continue**.
 
-<img src= "/apps/img/pageb2.png" width="600">
+<img src= "/apps/img/pageb2.png" width="600" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 4.The created **Page** will be visible on the IDE panel under **Page Builder**. Click on the created blank page to create your customize form/page.
 
-<img src= "/apps/img/pageb3.png">
+<img src= "/apps/img/pageb3.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-<img src= "/apps/img/pb1.png" width="1000">
+<img src= "/apps/img/pb1.png" width="1000" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Tip
     Use the **Search Components** feature to find the components in the **Layout**, **Collection**, **Basic Fields** or **Advance Fields**.
@@ -127,19 +127,18 @@ The Form attribute helps you specify values for the following parameters for all
     ```js
     window.cx().ctx.$('echarts').loading // Charts component is loading
     ```
-    <img src= "/apps/img/pageb6.png" width="300">
+    <img src= "/apps/img/pageb6.png" width="300" style="border: 2px solid #4472C4; border-radius: 8px;">
 
     ```js
     window.cx().ctx.$('echarts').loading(false) // Charts component is not loading
     ```
-    <img src= "/apps/img/pageb7.png" width="300">
+    <img src= "/apps/img/pageb7.png" width="300" style="border: 2px solid #4472C4; border-radius: 8px;">
     
     2.**Example 2**: Set the Log Level
     ```js
     window.cx().ctx.setLogLevel(`debug`) // Setting log level to debug
     ```
-    <img src= "/apps/img/pageb6.png" width="300">
-
+    <img src= "/apps/img/pageb6.png" width="300" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Platform Features
 
@@ -194,16 +193,16 @@ Drag & Drop Admin Interface Builder, using the following components.
 
 3. After selecting the app it shows a `+` on the right side which is a drop down list, select Page Builder.
 
-<img src= "/apps/img/page1.png" width="400">
+<img src= "/apps/img/page1.png" width="400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 4.Enter the **Name** and **Title** of the Page Builder. Select the **App** for the Page Builder. Click `Save`.
 
-<img src= "/apps/img/page2.png" width="300">
+<img src= "/apps/img/page2.png" width="300" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 5.The created **Page Builder** will be visible on the IDE panel under **Page Builder**. Click on the created Page Builder (test12).
 
-<img src= "/apps/img/page3.png" width="300">
+<img src= "/apps/img/page3.png" width="300" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 6.Click on the created page builder, it shows with page builder sections where you can **Drag and Drop** the components from the left navigation (Layout).
 
-<img src= "/apps/img/pb2.png">
+<img src= "/apps/img/pb2.png" style="border: 2px solid #4472C4; border-radius: 8px;">

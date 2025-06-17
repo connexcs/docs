@@ -14,6 +14,6 @@ You can set up 3-digit dialling in several ways. This is a basic setup for quick
 
     ![alt text][3dig-2]
 
-[3dig-1]: /guides/img/3dig-1.png "Internal Number Block"
-[3dig-2]: /guides/img/3dig-2.png "Alias"
-[3dig-3]: /guides/img/3dig-3.png "Phonebook"
+[3dig-1]: /guides/img/3dig-1.png "Internal Number Block" style="border: 2px solid #4472C4; border-radius: 8px;"
+[3dig-2]: /guides/img/3dig-2.png "Alias" style="border: 2px solid #4472C4; border-radius: 8px;"
+[3dig-3]: /guides/img/3dig-3.png "Phonebook" style="border: 2px solid #4472C4; border-radius: 8px;"

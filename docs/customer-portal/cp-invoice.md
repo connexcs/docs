@@ -9,4 +9,4 @@ The following functions are available:
 
 ![alt text][cp-invoice]
 
-[cp-invoice]: img/cp-invoice.png "Invoice"
+[cp-invoice]: img/cp-invoice.png "Invoice" style="border: 2px solid #4472C4; border-radius: 8px;"

@@ -95,6 +95,6 @@ Click the SIP Username, then replace the password and click **`Save`**.
 
 To delete an IP or SIP User Authentication, select the box next to the IP Address or Username, and then click the Trash Can icon for that section.
 
-[cp-ipauth-basic]: /customer-portal/img/cp-ipauth-basic.png "Edit IP Auth Basic"
-[407-trace]: /customer-portal/img/407-trace.png "SIP Trace Error 407"
-[cp-sipauth]: /customer-portal/img/cp-sipauth.png "SIP Auth"
+[cp-ipauth-basic]: /customer-portal/img/cp-ipauth-basic.png "Edit IP Auth Basic" style="border: 2px solid #4472C4; border-radius: 8px;"
+[407-trace]: /customer-portal/img/407-trace.png "SIP Trace Error 407" style="border: 2px solid #4472C4; border-radius: 8px;"
+[cp-sipauth]: /customer-portal/img/cp-sipauth.png "SIP Auth" style="border: 2px solid #4472C4; border-radius: 8px;"

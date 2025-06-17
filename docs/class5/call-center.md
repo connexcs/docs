@@ -16,17 +16,14 @@ It utilizes the first-in, first-out (FIFO) queuing system. The mod_fifo makes ma
 
 ## Steps to Create a Call-Center
 
-1. Go to Class 5 :material-menu-right: Call-Center and you will see a window with various fields as shown in the figure below.![callcenter](/class5/img/callcenter.jpg)
+1. Go to Class 5 :material-menu-right: Call-Center and you will see a window with various fields as shown in the figure below. <img src= "/class5/img/callcenter.jpg" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-2. Configure the Call-Center by filling in the fields.
+2. Configure the Call-Center by filling in the fields
+   1. **Name**: Enter the name you want for the cal-center.
+   2. **Customer**: You can enter one or more customers who wish to use this feature.
+   3. **System Name**: It has a list of servers dedicated to the customers. Once a server is dedicated to the customer, the PBX Server will be handling that call.
 
-    2.1 **Name**: Enter the name you want for the cal-center.
-
-    2.2 **Customer**: You can enter one or more customers who wish to use this feature.
-
-    2.3 **System Name**: It has a list of servers dedicated to the customers. Once a server is dedicated to the customer, the PBX Server will be handling that call.
-
-    2.4 **PBX Server**: Select the PBX Server for the call. The Distributed (Default) server will assign you a server near your location.
+    2.4 **szPBX Server**: Select the PBX Server for the call. The Distributed (Default) server will assign you a server near your location.
 
     2.5 **Time base Score**: When a caller enters a queue, the total number of seconds they have been in the system can be added to the base value. This score enables a specific customer to move forward with respect to other customers. The time base score parameter in a queue can be set as a queue when the base score counts only the time the caller is in this queue or as the system when the base score accounts for the total time of the call.
 

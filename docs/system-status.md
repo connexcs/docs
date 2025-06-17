@@ -37,5 +37,5 @@ Follow these steps to configure outage reporting on Customer Portals:
 3. Under **User Access Area**, enable **`Status`**.
 4. Click **`Save`**.
 
-[system-status-2]: /misc/img/264.png "system-status-2"
-[system-status-3]: /misc/img/265.png "system-status-3"
+[system-status-2]: /misc/img/264.png "system-status-2" style="border: 2px solid #4472C4; border-radius: 8px;"
+[system-status-3]: /misc/img/265.png "system-status-3" style="border: 2px solid #4472C4; border-radius: 8px;"

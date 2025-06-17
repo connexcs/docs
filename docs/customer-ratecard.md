@@ -233,10 +233,10 @@ This tab is only available if you enable "Manual Ordering" in **Properties :mate
 
 For each Prefix you can manually order the Provider Rate Cards for a high degree of control over the routing of calls.
 
-[compile1]: /card/img/compile1.png "Paused"
-[compile2]: /card/img/compile2.png "Synced"
+[compile1]: /card/img/compile1.png "Paused" style="border: 2px solid #4472C4; border-radius: 8px;"
+[compile2]: /card/img/compile2.png "Synced" style="border: 2px solid #4472C4; border-radius: 8px;"
 
-[prc-func]: /card/img/prc-func.png "Functions"
-[crc-func]: /card/img/crc-func.png "Customer Functions"
+[prc-func]: /card/img/prc-func.png "Functions" style="border: 2px solid #4472C4; border-radius: 8px;"
+[crc-func]: /card/img/crc-func.png "Customer Functions" style="border: 2px solid #4472C4; border-radius: 8px;"
 
-[profit]: /card/img/profit.png "Edit Profits"
+[profit]: /card/img/profit.png "Edit Profits" style="border: 2px solid #4472C4; border-radius: 8px;"

@@ -69,7 +69,7 @@ By clicking on `+` button we can add customer (see [**Create Customers**](https:
         + Write the Body of the referral.
         + Click on `Send`.
   
-<img src= "/customer/img/referral.png">
+<img src= "/customer/img/referral.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! note "Custom Email Servers"
     Change the outbound Email Server and SMS origination number in **Setup :material-menu-right: Settings**.
@@ -197,6 +197,5 @@ With full customization of branding, user interfaces, and features, we ensure a 
 
 Our flexible platform supports easy API integration and scalable infrastructure, allowing you to provide reliable, fully branded services to your customers without the need for in-house development.
 
-
-[customer-status]: /customer/img/39.png "Customer Status"
-[customersubs]: /customer/img/customersubs.png "Customer Sub-Sections"
+[customer-status]: /customer/img/39.png "Customer Status" style="border: 2px solid #4472C4; border-radius: 8px;"
+[customersubs]: /customer/img/customersubs.png "Customer Sub-Sections" style="border: 2px solid #4472C4; border-radius: 8px;"

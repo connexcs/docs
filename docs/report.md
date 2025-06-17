@@ -58,8 +58,4 @@ Set a Schedule to email the Breakout Report at designated intervals. To schedule
 
 Click **`Save`** to schedule the Report.
 
-[schedulereport]: /reports/img/schedulereport1.png "Schedule Reports"
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzNTczMDg4NCw3MzMxNTg1MTcsMjA5Nj
-Y5MjkyM119
--->
+[schedulereport]: /reports/img/schedulereport1.png "Schedule Reports" style="border: 2px solid #4472C4; border-radius: 8px;"

@@ -71,5 +71,5 @@ Create advanced filters using any fields of the record. Select either Originatio
 
 You can view the rated CDR's stored in UTC; day-to-day totals are also calculated in UTC. You can change the time zone of individual CDR records viewed from the time zone selector, but downloads will always be in UTC.
 
-[querybuilder]: /customer/img/querybuilder.png "Query Builder"
-[recalc]: /customer/img/recalc.png "Recalculate and Rerate"
+[querybuilder]: /customer/img/querybuilder.png "Query Builder" style="border: 2px solid #4472C4; border-radius: 8px;"
+[recalc]: /customer/img/recalc.png "Recalculate and Rerate" style="border: 2px solid #4472C4; border-radius: 8px;"

@@ -29,7 +29,7 @@ Use **Packages** to offer predefined products and services to each customer.
 3. You may enter the **Destination**. Its an optional field.
 4. Click on `Save` to build your package.
 
-<img src= "/customer/img/free1.png">
+<img src= "/customer/img/free1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 #### Assign Free Minutes Package
 
@@ -39,7 +39,7 @@ Use **Packages** to offer predefined products and services to each customer.
 4. Enter the number of free minutes to be allocated to the customer.
 5. Click on `Save`.
 
-<img src= "/customer/img/free2.png"> 
+<img src= "/customer/img/free2.png" style="border: 2px solid #4472C4; border-radius: 8px;"> 
 
 ## Run Package
 
@@ -49,6 +49,6 @@ It allows you to simulate making a charge against the package:
 2. **Simulate:** You can select `yes` (it will generate a report) if you want to the run the package or `no` (it will again charge for the package).
 3. **Date:** You can select the date on which you want to simulate the package.
 
-![runpackage](/misc/img/runpackage.jpg)
+<img src= "/misc/img/runpackage.jpg" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-[customer-packages]: /customer/img/customer-packages.png "Customer Packages"
+[customer-packages]: /customer/img/customer-packages.png "Customer Packages" style="border: 2px solid #4472C4; border-radius: 8px;"

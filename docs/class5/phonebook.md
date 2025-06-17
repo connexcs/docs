@@ -27,5 +27,5 @@ For individual customers, navigate to **Management :material-menu-right: Custome
 !!! note "Phonebook and WebPhone"
     Phonebook is also used in the [**Web Phone**](https://docs.connexcs.com/webphone/) configuration.
 
-[phonebook0]: /class5/img/phonebook0.png "Phonebook Entry"
-[phonebook]: /class5/img/phonebook.png "Phonebook Add Numbers"
+[phonebook0]: /class5/img/phonebook0.png "Phonebook Entry" style="border: 2px solid #4472C4; border-radius: 8px;"
+[phonebook]: /class5/img/phonebook.png "Phonebook Add Numbers" style="border: 2px solid #4472C4; border-radius: 8px;"

@@ -6,7 +6,7 @@ A **Divider** in a page builder is a visual element that separates different sec
 
 It can be used to improve the readability and usability of forms by making it easier for users to scan the form and identify where different sections begin and end.
 
-<img src= "/apps/components/img/divider.png" width="800">
+<img src= "/apps/components/img/divider.png" width="800" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Use Case
 
@@ -36,7 +36,7 @@ It can be used to improve the readability and usability of forms by making it ea
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/divider2.png">
+<img src= "/apps/components/img/divider2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Example
     1. `this.hide(fields)`

@@ -25,4 +25,4 @@ The **Contracts** section lists contracts associated with the customer.
 
 !!! Danger "Customers are restricted from making calls until their contract is reviewed and approved."
 
-[customer-contracts]: /customer/img/customer-contracts.png "Customer Contracts"
+[customer-contracts]: /customer/img/customer-contracts.png "Customer Contracts" style="border: 2px solid #4472C4; border-radius: 8px;"

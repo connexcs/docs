@@ -51,7 +51,7 @@ Since the threshold represents the most numeric traits related to VoIP, it can f
 
 To add a customized alert, click :material-plus:.
 
-<img src= "/customer/alert_main.png">
+<img src= "/customer/alert_main.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 Field details:
 
@@ -162,7 +162,7 @@ Well it’s good news..!!! You can integrate Pushover notifications with the Con
 2. Install the Pushover app on your mobile devices and optionally the desktop app on your computer.
 3. Click on **Pushover** on the top left.
 
-<img src= "/customer/img/pushover1.png ">
+<img src= "/customer/img/pushover1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 4.Select the **Device**, **Sound**, and **Priority** of the notification.
 
@@ -172,11 +172,11 @@ Well it’s good news..!!! You can integrate Pushover notifications with the Con
 
 7.You will see the following message on the top **Your message has been queued for delivery**.
 
-<img src= "/customer/img/pushover2.png ">
+<img src= "/customer/img/pushover2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 8.Received the message on https://client.pushover.net/ .
 
-<img src= "/customer/img/pushover3.png ">
+<img src= "/customer/img/pushover3.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 9.You now have Push message on the device.
 
@@ -192,8 +192,8 @@ Well it’s good news..!!! You can integrate Pushover notifications with the Con
 
 15.You will receive the pushover notification on your device.
 
-<img src= "/customer/img/pushover4.png ">
+<img src= "/customer/img/pushover4.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-[alerts-sample1]: /customer/img/alerts-sample1.png "Alert Sample 1"
-[alerts-sample2]: /customer/img/alerts-sample2.png "Alert Sample 2"
-[alerts-sample3]: /customer/img/alerts-sample3.png "Alert Sample 3"
+[alerts-sample1]: /customer/img/alerts-sample1.png "Alert Sample 1" style="border: 2px solid #4472C4; border-radius: 8px;"
+[alerts-sample2]: /customer/img/alerts-sample2.png "Alert Sample 2" style="border: 2px solid #4472C4; border-radius: 8px;"
+[alerts-sample3]: /customer/img/alerts-sample3.png "Alert Sample 3" style="border: 2px solid #4472C4; border-radius: 8px;"

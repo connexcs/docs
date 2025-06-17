@@ -8,7 +8,7 @@ It typically consists of a set of rows and columns, each containing a specific d
 
 Grid components are commonly used to present structured data in a clear and organized manner, making it easier for users to understand and interact with the form.
 
-<img src= "/apps/components/img/grid.png">
+<img src= "/apps/components/img/grid.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Use Case
 
@@ -50,7 +50,7 @@ Examples may include:
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/grid2.png">
+<img src= "/apps/components/img/grid2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Example
     1. `this.addClassName(fields, className)`

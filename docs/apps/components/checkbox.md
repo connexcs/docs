@@ -6,7 +6,7 @@ A checkbox is a type of input field in a form builder that allows users to selec
 
 Checkboxes are typically used to collect data about user preferences or choices.
 
-<img src= "/apps/components/img/checkbox.png">
+<img src= "/apps/components/img/checkbox.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Use Case
 
@@ -81,7 +81,7 @@ Some of the most common methods include:
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/check1.png">
+<img src= "/apps/components/img/check1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Example
     1. `this.addClassName(fields, className)`
@@ -188,7 +188,7 @@ Form validation can be performed using a variety of methods, including:
 !!! Info
     1. The **callback() function** is also called to verify success in the custom validation method.
 
-<img src= "/apps/components/img/cascader_validation.png">
+<img src= "/apps/components/img/cascader_validation.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## First time User?
 

@@ -40,5 +40,5 @@ For example, set 50 to give them $50, with or without a spend of their own, base
 
 Select **`Save`**, and the system will generate the vouchers.
 
-[voucher-grid]: /misc/img/voucher-grid.png "Voucher Grid"
-[voucher-add]: /misc/img/voucher-add.png "Add Voucher"
+[voucher-grid]: /misc/img/voucher-grid.png "Voucher Grid" style="border: 2px solid #4472C4; border-radius: 8px;"
+[voucher-add]: /misc/img/voucher-add.png "Add Voucher" style="border: 2px solid #4472C4; border-radius: 8px;"

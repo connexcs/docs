@@ -137,7 +137,7 @@ For example, if the CPS or Channels limits have reached, capacity failover will 
 
 Select certificates to apply to a server.
 
-<img src= "/setup/img/server1.png" width= "800">
+<img src= "/setup/img/server1.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 To add a Certificate to a sever,
 
@@ -189,13 +189,13 @@ You can use **Ping** and **MTR**  to test network connectivity and performance.
 2. Click on ![alt text](image.png) icon next to your IP address.
 3. A window will pop-up where you enter the Hostname or IP Address.
 
-<img src="/setup/img/server1.png">
+<img src="/setup/img/server1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 4.Click **Run** to see the results.
 
-<img src="/setup/img/ping.png">
+<img src="/setup/img/ping.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-<img src="/setup/img/mtr.png">
+<img src="/setup/img/mtr.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Server Clustering and User Location Registration
 
@@ -230,7 +230,7 @@ APIBAN proactively prevents unwanted SIP traffic by identifying and blocking IP 
 
 These bad actors are identified through globally deployed honeypots and curated by APIBAN to ensure comprehensive protection.
 
-[rtpserver]: /setup/img/rtpservers.png "RTP Server"
-[server-update]: /setup/img/server-update.png "Update Server"
-[server-cert1]: /setup/img/server-cert1.png "Server Certificates"
-[server-6]: /setup/img/reactivateserver.png "Reactivate Server"
+[rtpserver]: /setup/img/rtpservers.png "RTP Server" style="border: 2px solid #4472C4; border-radius: 8px;"
+[server-update]: /setup/img/server-update.png "Update Server" style="border: 2px solid #4472C4; border-radius: 8px;"
+[server-cert1]: /setup/img/server-cert1.png "Server Certificates" style="border: 2px solid #4472C4; border-radius: 8px;"
+[server-6]: /setup/img/reactivateserver.png "Reactivate Server" style="border: 2px solid #4472C4; border-radius: 8px;"

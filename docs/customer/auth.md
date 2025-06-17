@@ -73,7 +73,7 @@ To enable, click **:material-plus:** next to IP Authentication:
     + **Flags**: Check **CLI Authentication** flag for situations where Accounts are unable to use [**Tech Prefix**](https://docs.connexcs.com/customer/routing/#basic) to differentiate customers using the same IP.
         Check **Disable NAT** flag to disable NAT settings.
   
-        <img src= "/customer/img/advanced.png" width= "600">
+        <img src= "/customer/img/advanced.png" width= "600" style="border: 2px solid #4472C4; border-radius: 8px;">
     
         + **CLI Authentication**: Select this flag to distinguish between multiple customers sharing the same IP address by using CLI Authentication instead of Tech Prefix.
             
@@ -94,7 +94,7 @@ To enable, click **:material-plus:** next to IP Authentication:
                         
                         3. This step ensures that the system will use CLI Authentication to differentiate customers with the same IP address.
 
-        <img src= "/customer/img/cliauth1.png" width="1000">
+        <img src= "/customer/img/cliauth1.png" width="1000" style="border: 2px solid #4472C4; border-radius: 8px;">
         
             
         + **Setting Up CLIs or Regular Expressions**:
@@ -123,7 +123,7 @@ To enable, click **:material-plus:** next to IP Authentication:
 
     All Codecs are supported unless specifically set as **`Restricted`** here.
 
-    <img src= "/customer/img/codecs.png" width= "600"> 
+    <img src= "/customer/img/codecs.png" width= "600" style="border: 2px solid #4472C4; border-radius: 8px;"> 
 
 === "Parameter Rewrite"
 
@@ -154,7 +154,7 @@ To enable, click **:material-plus:** next to IP Authentication:
     !!! Example
         International calls coming in with a + should be replaced with a specific country code.
 
-    <img src= "/customer/img/regex.png">
+    <img src= "/customer/img/regex.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Note
     [Click here](https://cidr.xyz/) to view an interactive IP address and CIDR range visualizer.
@@ -394,20 +394,20 @@ To enable, click **:material-plus:** next to SIP User Authentication:
                 !!! Note "Important Note"
                     An additional charge of $0.003 per call applies to use the Smart Extension capability.
 
-    <img src= "/customer/img/sip1.png" width= "500">
+    <img src= "/customer/img/sip1.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 === "Codecs"
 
     All Codecs are supported for the SIP user unless specifically set as "Restricted" here. 
     
-    <img src= "/customer/img/codecs.png" width= "600">
+    <img src= "/customer/img/codecs.png" width= "600" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 === "Parameter Rewrite"
 
     The **Parameter Rewrite** tab is used to manipulate data as it comes into the system. It is most useful when you need to create automatic replacements for destination numbers or CLI, so a number is formatted in the appropriate [**E164 format**](https://en.wikipedia.org/wiki/E.164). 
 
     1. Click **`+`**.
-    <img src= "/customer/img/regex.png">
+    <img src= "/customer/img/regex.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
     2. **Type**: Select the parameter to modify.
     3. **Current**: Enter the prefix for the destination number, or the CLI. You also have the option to generate a regular expression using `AI Generate Regular Expression`.
@@ -457,20 +457,16 @@ It efficiently manages channel resources across multiple SIP users, ensuring the
 #### How It Works?
 
 1. **Channel Allocation in Control Panel**:
-
-   + Each customer account is assigned a maximum number of channels via the control panel.
-   + The total channel allocation is the upper limit for all SIP users within the account.
+   1. Each customer account is assigned a maximum number of channels via the control panel.
+   2. The total channel allocation is the upper limit for all SIP users within the account.
 
 2. **Channel Assignment for SIP Users**:
-
-   + Customers can create multiple SIP users through the customer portal.
-    During setup, the customer allocates a specific number of channels to each SIP user.
-   + The sum of channels assigned to all SIP users can't exceed the account’s total channel capacity.
+   1. Customers can create multiple SIP users through the customer portal. During setup, the customer allocates a specific number of channels to each SIP user.
+   2. The sum of channels assigned to all SIP users can't exceed the account’s total channel capacity.
 
 3. **Error Notification**:
-
-   + When the customer attempts to allocate more channels than their account limit allows, they will receive an error message: **"No channel capacity available for your account."**
-   + This message indicates that the requested channel allocation for the SIP user exceeds the remaining available channels in the account.
+   1. When the customer attempts to allocate more channels than their account limit allows, they will receive an error message: **"No channel capacity available for your account."**
+   2. This message indicates that the requested channel allocation for the SIP user exceeds the remaining available channels in the account.
 
 ```mermaid
 flowchart TD

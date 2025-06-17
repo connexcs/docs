@@ -30,4 +30,4 @@ To change your password:
 !!! info "Password change confirmation email"
     You will also receive an email confirming that your password has changed.
 
-[change-your-password]: /misc/img/change-your-password.jpg "change-your-password"
+[change-your-password]: /misc/img/change-your-password.jpg "change-your-password" style="border: 2px solid #4472C4; border-radius: 8px;"

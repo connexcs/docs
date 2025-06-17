@@ -6,7 +6,7 @@ The **Text** element allows you to display any information.
 
 Users can type text, numbers, or symbols into the designated field, providing essential information for the form's purpose.
 
-<img src= "/apps/components/img/text.png">
+<img src= "/apps/components/img/text.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Use Case
 
@@ -50,7 +50,7 @@ Users can type text, numbers, or symbols into the designated field, providing es
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/text2.png">
+<img src= "/apps/components/img/text2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Example
     1. `this.addClassName(fields, className)`
@@ -135,7 +135,7 @@ Form validation can be performed using a variety of methods, including:
 |---------|----------------|
 |**Required**|If enabled, then the field value can't be empty, otherwise an error message is emitted|
 
-<img src= "/apps/components/img/text_validation.png">
+<img src= "/apps/components/img/text_validation.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## First time User?
 

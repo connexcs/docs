@@ -169,7 +169,7 @@ You can create Multiple Reseller Groups and edit each group to match your busine
 !!! warning "Alpha Feature"
     The Default Reseller feature is still an Alpha Feature in testing; please use it with caution.
 
-[user]: /setup/img/user.png "Add User"
-[add-group-perm]: /setup/img/add-group-perm.png "Add Group Permissions"
-[group-perm]: /setup/img/group-perm.png "Group Permission"
-[password-rules]: /setup/img/password-rules.png "password-rules"
+[user]: /setup/img/user.png "Add User" style="border: 2px solid #4472C4; border-radius: 8px;"
+[add-group-perm]: /setup/img/add-group-perm.png "Add Group Permissions" style="border: 2px solid #4472C4; border-radius: 8px;"
+[group-perm]: /setup/img/group-perm.png "Group Permission" style="border: 2px solid #4472C4; border-radius: 8px;"
+[password-rules]: /setup/img/password-rules.png "password-rules" style="border: 2px solid #4472C4; border-radius: 8px;"

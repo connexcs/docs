@@ -80,7 +80,7 @@ If the solution doesn't work, please reopen the ticket.
 
 Once, the problem has occurred and fixed, the last step is to close the ticket.
 
-<img src= "/misc/img/tl1.png" width= "550">
+<img src= "/misc/img/tl1.png" width= "550" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 
 #### Enable Support Tickets on Control Panel
@@ -90,10 +90,10 @@ Once, the problem has occurred and fixed, the last step is to close the ticket.
 3. Verify your **e-mail**.
 4. After verifying your e-mail, you will be able to see the raised tickets and any updates on them.
 
-<img src= "/misc/img/st1.png" width= "850">
+<img src= "/misc/img/st1.png" width= "850" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! note
-    If an Admin has raised a ticket and wants their customer(s) to view the tickets then the Admin can grant access to the customers by going to **Setup > Settings > Users > Customer [Name] > Shared Ticket > Yes**. Click on `**Save**`
+    If an Admin has raised a ticket and wants their customer(s) to view the tickets then the Admin can grant access to the customers by going to **Setup :material-menu-right: Settings :material-menu-right: Users :material-menu-right: Customer [Name] :material-menu-right: Shared Ticket :material-menu-right: Yes**. Click on **`Save`**
 
     <img src= "/misc/img/st2.png" width= "550">
 
@@ -142,7 +142,7 @@ With that said, we can now define the framework of an ideal customer support fun
 
 You should handle this issue within your organization first through a Support level 1 executive.
 
-<img src= "/misc/img/pe1.png" width= "400">
+<img src= "/misc/img/pe1.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 **1st Line Support Executive**
 
@@ -202,7 +202,7 @@ Any of our customers can request a ConnexCS-certified expert NOC Engineer. The N
 
 NOC's are responsible for operating and maintaining all your systems, handling and assisting customers with any difficulties they might face.
 
-This ad-on service would cost you $500 a month for each NOC Engineer you may wish to secure the services of.
+This ad-on service comes with an additional cost a month for each NOC Engineer you may wish to secure the services of. Check [Pricing](https://connexcs.com/pricing).
 
 ### How to confirm an issue has occurred?
 
@@ -442,9 +442,9 @@ It's a good practice to update the ticket status after a successful resolution.
 
 Once, the incident or problem gets fixed the next step is to report or document the issue for further reference.
 
-<img src= "/misc/img/fix1.png" width= "550"> 
+<img src= "/misc/img/fix1.png" width= "550" style="border: 2px solid #4472C4; border-radius: 8px;"> 
 
-<img src= "/misc/img/fix2.png" width= "300">
+<img src= "/misc/img/fix2.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## How to Handle a Customer Complaint
 

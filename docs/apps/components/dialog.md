@@ -6,7 +6,7 @@ A **Dialog** component in a page builder is a specialized element that allows yo
 
 It typically provides a self-contained interface for collecting additional information or displaying contextual details without disrupting the main form flow.
 
-<img src= "/apps/components/img/dialog.png">
+<img src= "/apps/components/img/dialog.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Use Case
 
@@ -68,7 +68,7 @@ It typically provides a self-contained interface for collecting additional infor
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/dialog2.png">
+<img src= "/apps/components/img/dialog2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Example
     1. `this.getComponent('component_ID')`

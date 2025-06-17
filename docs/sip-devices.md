@@ -42,4 +42,4 @@ Allows you to view and edit device information, including the addition of device
 
 To delete a device from the list, select any row and click the trash bin icon.
 
-[sip-device]: /misc/img/sip-device.png "Edit SIP Devices"
+[sip-device]: /misc/img/sip-device.png "Edit SIP Devices" style="border: 2px solid #4472C4; border-radius: 8px;"

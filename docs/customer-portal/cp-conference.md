@@ -29,7 +29,7 @@ In this section, view all the configured **Conference** groups:
   
      **Note**: The preset of '0' Max Members allows an unlimited number of callers to join the conference.
 
-    ![alt text][conference]
+    <img src= "/class5/img/conference.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 2. Click **`Save`** to keep the new settings.
 
@@ -59,4 +59,3 @@ Callers can use the keypad to control the audio on the conference call.
 |**\***|Deaf/mute|Mute your speakers and the microphone in one action|
 |**#**|Hang up|Disconnect the call and leave the conference|
 
-[conference]: /class5/img/conference.png "Add Conference"

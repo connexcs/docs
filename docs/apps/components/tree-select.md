@@ -6,7 +6,7 @@
 
 Unlike a standard dropdown menu with a flat list of options, a tree-select organizes options into parent-child relationships, letting users navigate through nested categories to find the specific choice they need.
 
-<img src= "/apps/components/img/treeselect.png">
+<img src= "/apps/components/img/treeselect.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Use Case
 
@@ -70,7 +70,7 @@ Unlike a standard dropdown menu with a flat list of options, a tree-select organ
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/treeselect2.png">
+<img src= "/apps/components/img/treeselect2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Example
     1. `this.addClassName(fields, className)`

@@ -20,7 +20,7 @@ Use the **Documents** section to collect various files from the customer, as par
 !!! note "Document Examples"
     You might need to ask your customer for documents like CLI verification, the terms of condition with a contract signed via ConnexCS, copy of a phone bill, or a passport to verify their identity.
 
-[document]: /customer/img/document.png "Add Document"
+[document]: /customer/img/document.png "Add Document" style="border: 2px solid #4472C4; border-radius: 8px;"
 
 !!! note
     We've KYC for our customers and soon we'll be making it available for our customer's customers.

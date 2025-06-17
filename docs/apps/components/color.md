@@ -6,7 +6,7 @@ A **Color** component is a form element that allows users to select a color from
 
 This type of component is commonly used for forms that require users to specify colors for design elements, text formatting, or other visual aspects.
 
-<img src= "/apps/components/img/color.png">
+<img src= "/apps/components/img/color.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Use Case
 
@@ -87,7 +87,7 @@ Some of the most common methods include:
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/color2.png">
+<img src= "/apps/components/img/color2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Example
     1. `this.addClassName(fields, className)`
@@ -187,7 +187,7 @@ Form validation can be performed using a variety of methods, including:
 ||**value**: Value of the current field|
 ||**callback**: Callback function (must be called) upon completion of validation; **callback('Error message')/ callback(new Error('Error message'))**. These are two ways to return an error message.|
 
-<img src= "/apps/components/img/cascader_validation.png">
+<img src= "/apps/components/img/cascader_validation.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Info
     1. The **callback() function** is also called to verify success in the custom validation method.

@@ -148,7 +148,7 @@ You can perform the following functions with this data:
 !!! tip "Data used for billing"
     The data found in the Customer Summary section is considered valid for billing purposes. The same data may be found in other parts of the system, but you shouldn't use it for billing.
 
-[cust-main]: /customer/img/cust-main.png "Customer Main"
-[audit-log]: /customer/img/audit-log.png "Audit Log"
-[reset-password]: /customer/img/reset-password.png "Reset Password"
-[main-tab]: /customer/img/41.png "Contact Details"
+[cust-main]: /customer/img/cust-main.png "Customer Main" style="border: 2px solid #4472C4; border-radius: 8px;"
+[audit-log]: /customer/img/audit-log.png "Audit Log"style="border: 2px solid #4472C4; border-radius: 8px;"
+[reset-password]: /customer/img/reset-password.png "Reset Password" style="border: 2px solid #4472C4; border-radius: 8px;"
+[main-tab]: /customer/img/41.png "Contact Details" style="border: 2px solid #4472C4; border-radius: 8px;"

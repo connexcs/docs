@@ -38,7 +38,7 @@ Click ![alt text][invoice-edit] to change the date, then click **`Edit Invoice I
 1. Login to your account.
 2. Navigate to **Management :material-menu-right: Customer :material-menu-right: Customer [Name] :material-menu-right: Main :material-menu-right: Summary :material-menu-right: Daily, Weekly or Monthly :material-menu-right: Download Invoice** (csv format).
 
-<img src= "/misc/img/in1.png">
+<img src= "/misc/img/in1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Allocate Payment
 
@@ -56,10 +56,7 @@ You can also generate an invoice through **Schedule Report**.
 
 [Click here](https://docs.connexcs.com/report/#schedule-report) to check the process for creating the invoice.
 
-[invoice-8]: /misc/img/229.png "Invoice-8"
+[invoice-8]: /misc/img/229.png "Invoice-8" style="border: 2px solid #4472C4; border-radius: 8px;"
 
-[invoice-pdf]: /misc/img/invoice-pdf.png "Invoice PDF"
-[invoice-edit]: /misc/img/invoice-edit.png "Edit Invoice"
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzNjY4NTkzMl19
--->
+[invoice-pdf]: /misc/img/invoice-pdf.png "Invoice PDF" style="border: 2px solid #4472C4; border-radius: 8px;"
+[invoice-edit]: /misc/img/invoice-edit.png "Edit Invoice" style="border: 2px solid #4472C4; border-radius: 8px;"

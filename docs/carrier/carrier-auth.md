@@ -2,7 +2,7 @@
 
 **Management :material-menu-right: Carrier :material-menu-right: Auth**
 
-<img src= "/carrier/img/carrierauth.png">
+<img src= "/carrier/img/carrierauth.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Introduction
 
