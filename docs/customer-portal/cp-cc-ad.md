@@ -114,9 +114,7 @@ In this section, we will walk through configuring the **Auto Dialer** and demons
    5. `Campaign Agents`: List of agents assigned to the campaign.
 
       1. `Manage Agents`: Allows you to add/remove agents from the campaign from the drop-down menu. Click `Confirm`. <br><img src= "/customer-portal/img/34ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-             For example: The selected agents will be added. 
-
-             <br><img src= "/customer-portal/img/35ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+             For example: The selected agents will be added. <br><img src= "/customer-portal/img/35ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
       2. `Refresh Button`: To update agent statuses.
 
