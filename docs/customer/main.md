@@ -16,7 +16,7 @@ It offers a comprehensive set of tools to manage customer accounts, including th
           2. Allows multiple logins with unique credentials for each contact.
           3. Provides authentication and password management options to secure customer access.
 
-![alt text][cust-main]
+<img src= "/customer/img/cust-main.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! note "By clicking the dropdown next to the customer's name, you will be redirected to the selected customer's portal. For more information, see [Access Customer Portal](https://docs.connexcs.com/customer-portal/cp-dashboard/)."
 
@@ -54,7 +54,7 @@ Click **:material-plus:** to the right of **Contacts**.
 
 * **Mobile Verified** and **Email Verified**: Manually set the status for each. Check in the Customer Details to confirm if the Mobile and Email are verified. Alternatively, the customer can do this in the Customer Portal.
 
-    ![contact details](/customer/img/maincontactdetails.jpg)
+    <img src= "/customer/img/maincontactdetails.jpg" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 Click **`Save`** to add the Contact.
 
@@ -72,7 +72,7 @@ Follow these steps to reset a Contact password:
 
 1. Click the down arrow to the right of the Contact
 
-    ![alt text][reset-password]
+    <img src= "/customer/img/reset-password.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 2. Select `Change Password`.
 3. Select `Auto Generate & Email Password` to email the random password to the contact's email address, or deselect it and enter the password manually. **If auto-generate is disabled, an administrator must manually set a password.**
@@ -86,7 +86,7 @@ To access the Customer Portal:
 
 1. Click the down arrow to the right of the Contact
 
-    ![alt text][reset-password]
+    <img src= "/customer/img/reset-password.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 2. Choose `Portal Login`.
 
@@ -148,7 +148,6 @@ You can perform the following functions with this data:
 !!! tip "Data used for billing"
     The data found in the Customer Summary section is considered valid for billing purposes. The same data may be found in other parts of the system, but you shouldn't use it for billing.
 
-[cust-main]: /customer/img/cust-main.png "Customer Main" style="border: 2px solid #4472C4; border-radius: 8px;"
 [audit-log]: /customer/img/audit-log.png "Audit Log"style="border: 2px solid #4472C4; border-radius: 8px;"
-[reset-password]: /customer/img/reset-password.png "Reset Password" style="border: 2px solid #4472C4; border-radius: 8px;"
+
 [main-tab]: /customer/img/41.png "Contact Details" style="border: 2px solid #4472C4; border-radius: 8px;"

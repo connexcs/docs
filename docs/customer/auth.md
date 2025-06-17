@@ -43,7 +43,7 @@ To enable, click **:material-plus:** next to IP Authentication:
     + **Channels**: Set the maximum number of concurrent calls for this switch. 
     + **Flow Speed**: Set the Calls Per Second (CPS) (0 = unlimited calls).
     
-        <img src="/customer/img/basic12.png">
+        <img src="/customer/img/basic12.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 === "Advanced"
 
@@ -102,7 +102,7 @@ To enable, click **:material-plus:** next to IP Authentication:
             + Enter the specific CLIs, or Regular expressions associated with the customer.
             + This configuration allows the system to match incoming call CLIs with the defined patterns.
 
-        <img src= "/customer/img/cliauth2.png" width= "1000">
+        <img src= "/customer/img/cliauth2.png" width= "1000" style="border: 2px solid #4472C4; border-radius: 8px;">
     
     !!! Info
         You can Use DID for CLI Authentication
@@ -416,7 +416,7 @@ To enable, click **:material-plus:** next to SIP User Authentication:
     6. Click **`Save`** when done. 
     7. If a parameter rewrite is already created, you will have the ability to test it from the main tab. 
 
-    &emsp;![alt text][test-rewrite]
+    <img src= "/customer/img/test-rewrite.png", style="border: 2px solid #4472C4; border-radius: 8px;">
 
 === "Voice Mail"
 

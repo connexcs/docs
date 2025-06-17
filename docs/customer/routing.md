@@ -17,7 +17,7 @@ First, it checks the longest prefix, then it checks the shortest prefix for a ma
 
 View and configure existing routes on the Routing tab in the Customer card. To create a new route, click `+` in **Ingress Routing**.
 
-   ![alt text][ingress-routing]
+   <img src= "/customer/img/ingress-routing.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ### Basic
 
@@ -336,7 +336,7 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
     * **Management :material-menu-right: File :material-menu-right: Recording**
   
 !!! Info
-    An extra charge per recorded call gets added to existing fees or charges, so choose carefully how many calls to record. Check [Pricing](https://connexcs.com/pricing):
+    An extra charge per recorded call gets added to existing fees or charges, so choose carefully how many calls to record. Check [Pricing](https://connexcs.com/pricing) here.
 
 :material-menu-right: `Disabled`- no calls get recorded.
 
@@ -406,7 +406,7 @@ For advanced routing, click :material-plus: to select a [**Prefix Set**](https:/
 
 Routes highlighted in red on the customer Routing page gets disabled. Open the route, click **Enabled**, and then **`Save`** to enable them
 
-&emsp; ![alt text][routing-disabled]
+<img src= "/customer/img/routing-disabled.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Tech Prefix
 
@@ -484,8 +484,7 @@ ASR (Answer Seizure Ratio) is the number of connected calls divided by the total
     + Marginal impact on your NER due to false positive matches. This is usually kept within tolerances of < 0.1%.
     + Doesn't offer improvements for all destinations.
 
-[ingress-routing]: /customer/img/ingress-routing.png "Ingress Routing" style="border: 2px solid #4472C4; border-radius: 8px;"
-[routing-disabled]: /customer/img/routing-disabled.png "Disabled Routing" style="border: 2px solid #4472C4; border-radius: 8px;"
+
 [techprefix-usecase]: /customer/img/techprefix-usecase.png "Tech Prefix Use Case" style="border: 2px solid #4472C4; border-radius: 8px;"
 
 ## Strategic Routing

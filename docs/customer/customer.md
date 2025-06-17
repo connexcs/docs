@@ -76,7 +76,7 @@ By clicking on `+` button we can add customer (see [**Create Customers**](https:
 
 **Active**: Filter customer(s) based on account status. Results on the page will automatically arrange themselves according to the filter.
 
-&emsp; ![alt text][customer-status]
+<img src= "/customer/img/39.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Customer View Modification
 
@@ -178,7 +178,7 @@ By clicking on `+` button we can add customer (see [**Create Customers**](https:
 
 Once you create a customer, click on the customer name to view details and provide additional configuration. For documentation on that configuration, navigate to the sub-section on the left:
 
-&emsp; ![alt text][customersubs]
+<img src= "/customer/img/customersubs.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ___
 
@@ -196,6 +196,3 @@ At ConnexCS Pvt. Ltd., we offer comprehensive white-labeling solutions, enabling
 With full customization of branding, user interfaces, and features, we ensure a seamless integration into your existing offerings.
 
 Our flexible platform supports easy API integration and scalable infrastructure, allowing you to provide reliable, fully branded services to your customers without the need for in-house development.
-
-[customer-status]: /customer/img/39.png "Customer Status" style="border: 2px solid #4472C4; border-radius: 8px;"
-[customersubs]: /customer/img/customersubs.png "Customer Sub-Sections" style="border: 2px solid #4472C4; border-radius: 8px;"

@@ -22,7 +22,7 @@ The **B-number, or B-leg**, is the **dialed number**, representing the **outgoin
     
     It's where the call originates. The call is then terminated at the Dialed Number, the "B-Leg" or "B-Number."
 
-&emsp;![alt text][cli]
+<img src= "/customer/img/cli.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ### Key Features & Benefits
 
@@ -139,7 +139,7 @@ Navigate to **Management :material-menu-right: Customer :material-menu-right: [C
 
 The customer can then go to the Customer Portal CLI section and add numbers there.  
 
-&emsp;![alt text][approvedcli]
+<img src= "/customer/img/approvedcli.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Advanced CLI Match and Manipulation
 
@@ -480,8 +480,7 @@ ConnexCS is GC6 compliant for end users, which:
 
 To set the "P-Asserted-ID" per customer, see [**Configure CLI**](https://docs.connexcs.com/customer/cli/#creating-a-record) above.
 
-[cli]: /customer/img/cli.png "CLI Main" style="border: 2px solid #4472C4; border-radius: 8px;"
-[approvedcli]: /customer/img/approvedcli.png "Approved CLI Only" style="border: 2px solid #4472C4; border-radius: 8px;"
+
 [cli1]: /customer/img/cli1.png "Edit CLI" style="border: 2px solid #4472C4; border-radius: 8px;"
 
 ## CLI and PAID Responsibilities

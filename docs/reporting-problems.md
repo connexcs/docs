@@ -202,7 +202,7 @@ Any of our customers can request a ConnexCS-certified expert NOC Engineer. The N
 
 NOC's are responsible for operating and maintaining all your systems, handling and assisting customers with any difficulties they might face.
 
-This ad-on service comes with an additional cost a month for each NOC Engineer you may wish to secure the services of. Check [Pricing](https://connexcs.com/pricing).
+This ad-on service comes with an additional cost a month for each NOC Engineer you may wish to secure the services of. Check [Pricing](https://connexcs.com/pricing) here.
 
 ### How to confirm an issue has occurred?
 

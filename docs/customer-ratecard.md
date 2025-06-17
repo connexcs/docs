@@ -105,13 +105,13 @@ Click **`Email`**, enter the email address and click **`Send`**.
 + **Delete Revision**: Select a revision to delete.
 + **Download**: Download a CSV file of the Rate Card.
 
-    ![alt text][crc-func]
+    <img src= "/card/img/crc-func.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 + **Parent Cards** are the Provider Rate Cards associated to this card.
 + **Customers** lists the specific Customers using this card.
 + **Profits** lets you configure profit rules. This is most useful on cards with a high number of rules.
 
-    ![alt text][profit]
+    <img src= "/card/img/profit.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 **Click each tab for configuration details**
 
@@ -237,6 +237,4 @@ For each Prefix you can manually order the Provider Rate Cards for a high degree
 [compile2]: /card/img/compile2.png "Synced" style="border: 2px solid #4472C4; border-radius: 8px;"
 
 [prc-func]: /card/img/prc-func.png "Functions" style="border: 2px solid #4472C4; border-radius: 8px;"
-[crc-func]: /card/img/crc-func.png "Customer Functions" style="border: 2px solid #4472C4; border-radius: 8px;"
 
-[profit]: /card/img/profit.png "Edit Profits" style="border: 2px solid #4472C4; border-radius: 8px;"

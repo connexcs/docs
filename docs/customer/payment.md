@@ -29,7 +29,7 @@ To add a new payment
         +  **Completed**: Marked as an active payments.
     + **Email Confirmation**: If enabled, once you save the Payment, an email is generated to all Contacts configured on the customer informing them that the payment has been received and applied to the account.
 
-    ![alt text][payments-tab]
+    <img src= "/customer/img/53.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 2. Click **`Save`**.
 
@@ -40,5 +40,3 @@ To add a new payment
 
 !!! warning "Negative Payments"
     If a customer has made any kind of purchase on the account, it's shown as a negative amount on the main **Payments** page > **Total** section.
-
-[payments-tab]: /customer/img/53.png "Payment Tab" style="border: 2px solid #4472C4; border-radius: 8px;"

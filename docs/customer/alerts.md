@@ -83,7 +83,7 @@ This will email the customer with a custom template, whenever their ASR (Answer 
 
 If it goes above 31%, then the Alert is reset.
 
-&emsp;![alt text][alerts-sample1]
+<img src= "/customer/img/alerts-sample1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 **ASR Penalty** Similarly, you could set the ASR Threshold to 15, and enable a penalty of 1 hour. This would disable the customer for 1 hour whenever their completed calls drop below 15% of total calls.
 
@@ -119,7 +119,7 @@ If it goes above 31%, then the Alert is reset.
     2. Protects the network from non-connecting calls.
     3. Automatically re-enables calling after the penalty duration.
 
-&emsp;![alt text][alerts-sample2]
+<img src= "/customer/img/alerts-sample2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 **Daily Balance** For customers who run close to their balance on a regular basis.
 
@@ -131,7 +131,7 @@ Can be scheduled to provide daily updates on key metrics:
 + PDD alerts
 + ScriptForge alerts
 
-&emsp;![alt text][alerts-sample3]
+<img src= "/customer/img/alerts-sample3.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 **Script Forge Alerts**  When you set the Area to "Script Forge," it will bypass all the other Alerts fields and allow you to select an existing Script Forge script.
 
@@ -193,7 +193,3 @@ Well it’s good news..!!! You can integrate Pushover notifications with the Con
 15.You will receive the pushover notification on your device.
 
 <img src= "/customer/img/pushover4.png" style="border: 2px solid #4472C4; border-radius: 8px;">
-
-[alerts-sample1]: /customer/img/alerts-sample1.png "Alert Sample 1" style="border: 2px solid #4472C4; border-radius: 8px;"
-[alerts-sample2]: /customer/img/alerts-sample2.png "Alert Sample 2" style="border: 2px solid #4472C4; border-radius: 8px;"
-[alerts-sample3]: /customer/img/alerts-sample3.png "Alert Sample 3" style="border: 2px solid #4472C4; border-radius: 8px;"

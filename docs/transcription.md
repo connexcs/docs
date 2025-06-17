@@ -103,9 +103,9 @@ Please follow the below steps to add the Alerts:
 
 ### Create a Transcription Package
 
-To create a package to resell to your customers, go to Config :material-menu-right: [Packages](https://docs.connexcs.com/customer/package/). Click on <img src="/transcription/img/transcription-add.png" alt="add" width="50" style="border: 2px solid #4472C4; border-radius: 8px;"> and choose your Transcription Package from **ConnexCS Package**.
+To create a package to resell to your customers, go to Config :material-menu-right: [Packages](https://docs.connexcs.com/customer/package/). Click on <img src="/transcription/img/transcription-add.png" alt="add" width="50"> and choose your Transcription Package from **ConnexCS Package**.
 
-Select your **Retail Cost** and click on <img src="/transcription/img/transcriptions-save.png" alt="save" width="120" style="border: 2px solid #4472C4; border-radius: 8px;"> and choose your Transcription Package from **ConnexCS Package**.
+Select your **Retail Cost** and click on <img src="/transcription/img/transcriptions-save.png" alt="save" width="120"> and choose your Transcription Package from **ConnexCS Package**.
 
 <img src="/transcription/img/transcription-package.png" alt="package" width="500" style="border: 2px solid #4472C4; border-radius: 8px;">
 

@@ -15,7 +15,7 @@ Use **Packages** to offer predefined products and services to each customer.
 
 2. Click **`Save`**.
 
-&emsp; ![alt text][customer-packages]
+<img src= "/customer/img/customer-packages.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! info "Managing Packages"
     You can create and manage **Packages** in **Setup :material-menu-right: Config :material-menu-right: Packages**. See **[Packages](https://docs.connexcs.com/setup/config/packages/)** for more information.
@@ -51,4 +51,3 @@ It allows you to simulate making a charge against the package:
 
 <img src= "/misc/img/runpackage.jpg" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-[customer-packages]: /customer/img/customer-packages.png "Customer Packages" style="border: 2px solid #4472C4; border-radius: 8px;"

@@ -100,13 +100,13 @@ Four options are available: **New Workspace**, **Load Workspace**, **Bulk Upload
 
 2.**Drag & Drop a .csv file here or Browse**:
 
-<img src= "/misc/img/ds4.png">
+<img src= "/misc/img/ds4.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 3.**Explore Tables**:
 
 1. **Local**: <br><img src= "/misc/img/dms10.png" width= "400"></br>
     + **Database**: Add a new table to an existing workspace. [Click here to know more.](https://bani-41024--connexcs-docs.netlify.app/datasuite/#upload-data-from-local-or-remote-databases).
-        + **Map Table Columns**: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. A window will appear as follows. <img src= "/misc/img/dms17.png">
+        + **Map Table Columns**: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. A window will appear as follows. <img src= "/misc/img/dms17.png" style="border: 2px solid #4472C4; border-radius: 8px;">
               + **Mapping Target Table**: You can select the destination (**CLI**, **Contact**, **Customer**, **DID**, **SIP User Auth**) to upload the selected data.
               + **Refresh** any changed or modified entries inside the table.
               + **Upload** saves the table entries or modified table entries to the server.
@@ -119,14 +119,14 @@ Four options are available: **New Workspace**, **Load Workspace**, **Bulk Upload
         + Click `Add`.
         + A **Query Editor** window will appear. It's an interface where you can  write, edit, and execute queries against a database or data source. It's typically part of a larger data management or analytics platform, and it allows you to interact with data by writing commands in query languages.
 
-        <img src= "/misc/img/dms12.png">
+        <img src= "/misc/img/dms12.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
       + **Other options**:
           + **Run**: Allows you to execute the query.
           + **Toggle Console**: Allows you to open or close the console window.
           + **Query History**: It allows you to view log or record of previously executed queries.
 
-            <img src= "/misc/img/ds7.png" width="300">
+            <img src= "/misc/img/ds7.png" width="300" style="border: 2px solid #4472C4; border-radius: 8px;">
 
           + **Settings**: <br><img src= "/misc/img/ds8.png" width="200"></br>
 
@@ -163,7 +163,7 @@ Four options are available: **New Workspace**, **Load Workspace**, **Bulk Upload
 
        + Click on `Upload`. A window will appear as shown below. <img src= "/misc/img/dms8.png">
 
-2. **Map Table Columns**: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. A window will appear as follows. <img src= "/misc/img/dms17.png">
+2. **Map Table Columns**: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. A window will appear as follows. <img src= "/misc/img/dms17.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
       + **Mapping Target Table**: You can select the destination (**CLI**, **Contact**, **Customer**, **DID**, **SIP User Auth**) to upload the selected data.
       + **Refresh** any changed or modified entries inside the table.
@@ -175,9 +175,9 @@ Four options are available: **New Workspace**, **Load Workspace**, **Bulk Upload
 !!! Example "Query Examples"
     |**Query Name**|**Query Syntax**|**Output**|
     |--------------|----------------|----------|
-    |**Select**|```SELECT * FROM 'Example'```|<img src= "/misc/img/ds15.png">|
-    |**Update**|```UPDATE 'Example' SET Col2 = '4' WHERE Col2 = '97405'```|<img src= "/misc/img/ds16.png">
-    |**Delete**|```DELETE FROM 'Example' WHERE Col2 = '4'```|<img src= "/misc/img/ds17.png">|
+    |**Select**|```SELECT * FROM 'Example'```|<img src= "/misc/img/ds15.png" style="border: 2px solid #4472C4; border-radius: 8px;">|
+    |**Update**|```UPDATE 'Example' SET Col2 = '4' WHERE Col2 = '97405'```|<img src= "/misc/img/ds16.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+    |**Delete**|```DELETE FROM 'Example' WHERE Col2 = '4'```|<img src= "/misc/img/ds17.png" style="border: 2px solid #4472C4; border-radius: 8px;">|
 
 ### Remote Query
 
