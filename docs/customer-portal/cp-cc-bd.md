@@ -258,13 +258,3 @@ With your Campaign, Agents, Agent Script, and Leadset configured, the next step 
       Your first task is to ask the status: "What's your status?", as you don't currently know the status.
       Once the status has been provided, store it in the variable name. Don't store the variable unless you have been given it by the customer. don't save anything until the customer gives you instructions.
       Don't proceed with anything else until you have successfully collected and stored the status by calling the setVariable function with `name`=`status` and `value`=`[status]`.
-
-## Dialer Guide
-
-1. Login to your webphone (eg: webphone.cnx.page).
-2. Enter the `Username` and `Password`.
-3. Select the `Server` from the drop-down menu. Hit `Login` button. <br><img src="/customer-portal/img/broadcast1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-4. Once logged in, the system will begin receiving calls automatically. <br><img src="/customer-portal/img/broadcast2.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-5. The call is live. <br><img src="/customer-portal/img/broadcast3.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-6. Here, the person has asked the virtual assistant to change the `status` to **The sale has been made**. The change can be seen as in the `Broadcast Leadset`. <br><img src="/customer-portal/img/cc83new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-7. The `Braodcast Campaign Overview` display is also updated. <br><img src="/customer-portal/img/broadcast4.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>

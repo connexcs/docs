@@ -48,8 +48,6 @@ The agent gets enough time to review and decide whether to call the person and h
 
  Its an outbound dialing system that automatically dials numbers from a contact list and connects answered calls to available agents in real-time.
 
-This auto dialer dials one number per available agent only after they finish their current call. It’s safer but a bit slower.
-
 !!! question "How it works?"
     ```mermaid
     flowchart TD
