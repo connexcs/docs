@@ -199,8 +199,8 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 
 <img src= "/customer/img/tcpa.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-    !!! Info "Call Routing Process"
-        ```mermaid
+!!! Info "Call Routing Process"
+    ```mermaid
         graph LR
         A[Customer A makes a call using the route with the ON NET CALLING flag] --> B{Syatem checks the dialed number and compares it against DIDs added to the account across all customers}
         B -- Yes: If the dialed number matches any DID in the account--> C{Route call internally to the matching DID}
@@ -324,8 +324,8 @@ Enter the number  of channels allowed for transcoding. This is a limited option.
     * **Management:material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: CDR**
     * **Management :material-menu-right: File :material-menu-right: Recording**
   
-  !!! Note "Additional Charge"
-        An extra charge per recorded call gets added to existing fees or charges, so choose carefully how many calls to record.Check [Pricing](https://connexcs.com/pricing) here.
+!!! Note "Additional Charge"
+    An extra charge per recorded call gets added to existing fees or charges, so choose carefully how many calls to record.Check [Pricing](https://connexcs.com/pricing) here.
 
 :material-menu-right: `Disabled`- no calls get recorded.
 
