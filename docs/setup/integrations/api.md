@@ -72,7 +72,7 @@ For inbound APIs, please see the [**API**](https://api-docs.connexcs.com/) in th
 1. Click **`Add`**.
 2. Select the required service from the list.
 
-    ![alt text][api]
+    <img src= "/setup/img/api12.png" style= "border: 2px solid #4472C4; border-radius: 8px;"> 
 
 3. Complete the available fields (see individual API integrations below for details for each provider).
 4. Click **`Save`**.
@@ -288,4 +288,4 @@ Configure the Emetec settings in ConnexCS:
 <img src= "/setup/img/api11.png" width="350" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 [paypal-9]: /setup/img/paypal-9.png "Paypal-9" style="border: 2px solid #4472C4; border-radius: 8px;"
-[api]: /setup/img/api.png "API Integration" style="border: 2px solid #4472C4; border-radius: 8px;"
+

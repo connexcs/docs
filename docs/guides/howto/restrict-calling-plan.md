@@ -22,12 +22,9 @@ Go to **Customer :material-menu-right: Auth**, select **IP Auth** or **SIP User 
 
 Go to **Customer :material-menu-right: Routing :material-menu-right: Ingress Routing**, select the desired plan, then on the **Basic** tab, assign the Tech Prefix:
 
-&emsp;![alt text][restrictcalling2]
+<img src= "/guides/howto/img/restrictcalling21.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 **Results:**
 When a customer dials a number, the user registers with ConnexCS.
 
 Based on the Tech Prefix assigned in IP or SIP User Auth, the call is then directed to the Ingress Routing plan associated with that Tech Prefix. Calls are then routed based on the Rate Card(s), as well as Dial Strings and any other parameters configured in the routing instance.
-
-[restrictcalling1]: /guides/howto/img/restrictcalling1.png "Tech Prefix in Auth" style="border: 2px solid #4472C4; border-radius: 8px;"
-[restrictcalling2]: /guides/howto/img/restrictcalling2.png "Tech Prefix in Routing" style="border: 2px solid #4472C4; border-radius: 8px;"

@@ -10,18 +10,11 @@ Use Script Forge to manage these calls by adding the numbers to the system. If y
 
 **Step 1: Setup the Database**
 
-1. Navigate to **Developer :material-menu-right: Database**.
-2. Click **:material-plus:**.
-3. Enter the **Name**.
-4. Select the **Customer**.
-5. Select **Dataset Type**.
-6. Click **Save**.
-
-    ![alt text][dnc-3]
+[Click here](https://docs.connexcs.com/apps/architecture/database/) to know the processof Database creation.
 
 **Step 2: Configure Script Forge**
 
-1. Navigate to **Developer :material-menu-right: Script Forge**
+1. Navigate to **IDE :material-menu-right: Script Forge**
 2. Add the Script **Name**.
 3. Select `App` for the **Type**.
 4. Click **Save**.
@@ -30,7 +23,7 @@ Use Script Forge to manage these calls by adding the numbers to the system. If y
 7. Click the green arrow to `Save and Run`.
 
 !!! info "More on Script Forge"
-    See [**Script Forge**](https://docs.connexcs.com/developers/scriptforge/) in our documentation for more details on using Script Forge.
+    See [**Script Forge**](https://docs.connexcs.com/apps/architecture/script/#configuration) in our documentation for more details on using Script Forge.
 
 **Step 3: Add script to Customer**
 

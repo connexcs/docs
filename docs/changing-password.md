@@ -25,9 +25,7 @@ To change your password:
 4. Click **`Update`**.
 5. ConnexCS Control Panel confirms that it has changed your password.
 
-    ![alt text][change-your-password]
+    <img src= "/misc/img/change-your-password1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! info "Password change confirmation email"
     You will also receive an email confirming that your password has changed.
-
-[change-your-password]: /misc/img/change-your-password.jpg "change-your-password" style="border: 2px solid #4472C4; border-radius: 8px;"

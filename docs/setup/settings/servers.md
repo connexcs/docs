@@ -67,7 +67,7 @@ To view RTP Servers:
 
 2. Click **`Refresh`** to reload the page to show the most current changes, if any.
 
-    ![alt text][rtpserver]
+    <img src= "/setup/img/serverrtp.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Tip "Media Server Selection"
     You should choose a media server that adds the least latency to the call.
@@ -179,7 +179,7 @@ Use this to update the Channels for the selected server. The update will be acti
 
 This only needs to run when the system indicates "There's a pending update on the server" at the top of the server details.
 
-&emsp;![alt text][server-update]
+<img src= "/setup/img/serverrtp1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Network Tools
 
@@ -230,7 +230,6 @@ APIBAN proactively prevents unwanted SIP traffic by identifying and blocking IP 
 
 These bad actors are identified through globally deployed honeypots and curated by APIBAN to ensure comprehensive protection.
 
-[rtpserver]: /setup/img/rtpservers.png "RTP Server" style="border: 2px solid #4472C4; border-radius: 8px;"
 [server-update]: /setup/img/server-update.png "Update Server" style="border: 2px solid #4472C4; border-radius: 8px;"
 [server-cert1]: /setup/img/server-cert1.png "Server Certificates" style="border: 2px solid #4472C4; border-radius: 8px;"
 [server-6]: /setup/img/reactivateserver.png "Reactivate Server" style="border: 2px solid #4472C4; border-radius: 8px;"

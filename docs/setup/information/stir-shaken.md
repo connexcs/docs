@@ -32,6 +32,4 @@ To add a certificate:
 2. Complete the **Name (indicated as "Alpha" in Control Panel)**, **Certificate**, and **Key** fields from the certificate provided by the issuing authority.
 3. Click **`Save`**.
 
-&emsp;![alt text][stirshaken]
-
-[stirshaken]: /setup/img/stirshaken.png "Add Stir-Shaken Cert"
+<img src= "/setup/img/stirshaken12.png" style="border: 2px solid #4472C4; border-radius: 8px;">

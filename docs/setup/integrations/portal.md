@@ -40,7 +40,7 @@ You can provide several domains for your customers through different brands, and
 !!! note
     You should expose your Customer Portal via a `CNAME` that you setup. This won't work with `A` records or by pointing directly.
 
-    ![alt text][portal]
+    <img src= "/setup/img/portal12.png"style="border: 2px solid #4472C4; border-radius: 8px;"
 
 ## Configuration Options
 
@@ -218,8 +218,6 @@ You can provide several domains for your customers through different brands, and
 To configure Users to access the Customer Portal, follow the steps to [**Add Contact**](https://docs.connexcs.com/customer/main/#contacts).
 
 Any Contact configured on the account can login to the Customer Portal.
-
-[portal]: /setup/img/portal.png "Portal" style="border: 2px solid #4472C4; border-radius: 8px;"
 
 ## Multi Brand Support
 
