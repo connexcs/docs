@@ -4,7 +4,7 @@
 
 Use **Packages** to offer predefined products and services to each customer.
 
-Packages allow customers to define specific service limits and recurring charges, including spend limits and automatic credit deductions
+Packages allow customers to define  recurring charges, including spend limits and automatic credit deductions.
 
 ## Key Features
 
@@ -18,9 +18,6 @@ Packages allow customers to define specific service limits and recurring charges
 
 + **Auto Decrement Credit**:
     + Automatically deducts a specified amount from the customer's credit at a set frequency (e.g., daily deductions).
-
-+ **Autonomous Billing**:
-  + Ensures seamless recurring charges without manual intervention.
 
 ## Assign Packages
 

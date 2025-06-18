@@ -19,17 +19,6 @@ The tool is another way to end gaps in communication between providers and custo
 + **Exports**:
     + Download invoices as PDFs for external sharing and for offline use.
 
-+ **Payments & Reconciliation**:
-    + Add and allocate payments against invoices.
-    + Displays outstanding balances and payment history.
-
-+ **External Accounting System Integration**:
-    + Supports export to **ClearBooks**, **Xero**, and **FreshBooks** for enhanced tax, depreciation, and discount management.
-    + Export invoices to ClearBooks via API.
-
-!!! Tip "ConnexCS Invoice Philosophy"
-    While invoices can be managed within ConnexCS, external accounting systems are recommended for advanced financial tracking.
-
 ## Add new Invoices
 
 To add a new invoice:

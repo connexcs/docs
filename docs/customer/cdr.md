@@ -8,9 +8,7 @@ The **CDR (Call Detail Record)** is an extensive set of information that's colle
 
 CDRs provide comprehensive call data, essential for billing and analytics.
 
-ConnexCS customers generate millions of calls daily, making it crucial to have an efficient and structured way to access and filter data.
-
-## Key Features:
+## Key Features
 
 + **Comprehensive Data**: Stores millions of call records efficiently.
 + **Customizable Display**: Users can add extra fields like source IP, reorder fields, and filter data based on parameters.
@@ -21,7 +19,6 @@ ConnexCS customers generate millions of calls daily, making it crucial to have a
 + **Server-Side Sorting**: Ensures optimal performance when dealing with large datasets.
 + **Data Export**: Download call data as CSV for further analysis.
 + **Recalculation Feature**: Adjusts CDR-based calculations when needed.
-+ **Long-Term Storage**: CDRs are stored indefinitely unless customers request deletion.
 + **Debugging Methodology**:
     + Unlike other systems, ConnexCS doesn't use CDRs for debugging.
     + Debugging is done via the logging section, which retains logs for 14 days.
@@ -29,7 +26,6 @@ ConnexCS customers generate millions of calls daily, making it crucial to have a
     + Call logs are linked via call IDs for quick access to debugging information.
 + **Billing & Retention**:
     + CDRs are the foundation for billing calculations.
-    + Retained indefinitely unless the customer requests deletion.
 
 !!! note "Global CDR"
     View CDRs for all Customers and Carriers in **Global :material-menu-right: CDR**.
