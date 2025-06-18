@@ -18,13 +18,6 @@ The system's goal is to identify suspicious calls and depending on how it's conf
 * A prefix and a date / time range define a rule.
 * A call is eligible for fraud detection if the fraud profile gets enabled on the call (by setting it in routing) and if the prefix matches.
 
-## Benefits
-
-+ Prevents unauthorized call activities, especially during non-business hours.
-+ Minimizes financial losses due to fraud.
-+ Ensures account security and service continuity.
-
-
 ## Detection Parameters and Limits
 
 You can use the following 5 parameters for monitoring fraud detection:
