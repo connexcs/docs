@@ -115,15 +115,6 @@ We will also walk through configuring the **Broadcast Dialer** and demonstrate h
 
       4. `Call Status`: The current state (e.g., Ringing, Connected, In Progress, Completed, Failed).
 
-### Creating Scripts
-
-The Script section enables you to create structured call scripts for agents to follow during customer interactions.
-
-1. Click on `Add a new Script`. <br><img src= "/customer-portal/img/18ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-2. Enter the `Script Name` and `Script`.
-3. Click `Confirm` to save the script. <br><img src= "/customer-portal/img/64cc.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-4. The created script will be displayed in the window; click on `Preview` to view the script. <br><img src= "/customer-portal/img/65cc.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-
 ### Creating Leadsets
 
 This section has information on the Leadsets. You can also `Create Leadset` . <br><img src= "/customer-portal/img/21ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
