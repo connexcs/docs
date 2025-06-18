@@ -205,7 +205,7 @@ View and configure existing routes on the Routing tab in the Customer card. To c
         A[Customer A makes a call using the route with the ON NET CALLING flag] --> B{Syatem checks the dialed number and compares it against DIDs added to the account across all customers}
         B -- Yes: If the dialed number matches any DID in the account--> C{Route call internally to the matching DID}
         B -- No: If the dialed number doesnt match any DID in the account--> D{Route call externally via carrier as configured}
-        ```
+    ```
 
 ### Media
 
@@ -298,7 +298,7 @@ Enter the number  of channels allowed for transcoding. This is a limited option.
 |**Latency**|Low|Lowest|
 |**Information Leakage**|No|Yes*|
 
-*While it's doubtful that any information will get logged in the customer / providers switch when the audio gets engaged, it's possible for an engineer to learn this information from a SIP trace, PCAP, or by looking at transit locations. DTMF Detection ONLY works when RTP Proxy mode gets enabled.
+*While it's doubtful that any information will get logged in the customer / providers switch when the audio gets engaged, it's possible for an engineer to learn this information from a SIP trace, PCAP, or by looking at transit locations. DTMF Detection ONLY works when RTP Proxy mode gets enabled.*
 
 !!! info "Private RTP Server"
     We provide deployment of the Private RTP Server (Media) to our customers, which is liable to some cost.
@@ -325,7 +325,7 @@ Enter the number  of channels allowed for transcoding. This is a limited option.
     * **Management :material-menu-right: File :material-menu-right: Recording**
   
 !!! Note "Additional Charge"
-    An extra charge per recorded call gets added to existing fees or charges, so choose carefully how many calls to record.Check [Pricing](https://connexcs.com/pricing) here.
+    An extra charge per recorded call gets added to existing fees or charges, so choose carefully how many calls to record. Check [Pricing](https://connexcs.com/pricing) here.
 
 :material-menu-right: `Disabled`- no calls get recorded.
 
