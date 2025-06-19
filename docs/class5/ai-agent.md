@@ -144,6 +144,30 @@ A **Task** refers to a specific goal or objective that the agent is designed to 
 
 It usually involves processing inputs, making decisions, and taking actions to achieve the desired outcome.
 
+!!! question "How it works?"
+    ```mermaid
+    flowchart TB
+    A([📝 Create Initial Task]) --> B([⚙️ Go to Advanced Settings])
+    B --> C([📌 Set as First Task])
+    C --> D([🔧 Configure Task Settings])
+    D --> E([➕ Add Next AI Agent Task])
+    E --> F{🧠 Is Condition Met?}
+
+    F -- ✅ Yes --> G([➡️ Proceed to Next Task])
+    F -- ❌ No --> H([⏸️ Stop or Await Input])
+
+    G --> I([🔁 Repeat for Next Task])
+    I --> E
+
+    H --> Z([🏁 End or Trigger Fallback Action])
+
+    %% Styling
+    classDef step fill:#E0F7FA,stroke:#00ACC1,stroke-width:2px,color:#004D40;
+    classDef decision fill:#FFF3E0,stroke:#FB8C00,stroke-width:2px,color:#E65100;
+    class A,B,C,D,E,G,I,Z step;
+    class F,H decision;
+    ```
+
 #### Steps to Create a Task
 
 1. Log in to your account.
