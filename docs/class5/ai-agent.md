@@ -68,7 +68,7 @@ With AI-driven automation, businesses can enhance customer experience while sign
     + **Transcriber**: Select single or multiple transcriber for converting audio to text. You can select the transcriber depending on the selected platform.
     + **Answer Machine Detection Keywords**: If the AI Agent detects a phrase (any phrase entered by the user) like "Please leave a message" at the start of the call, it will automatically disconnect.
     + **Transcriber Timeout**: It defines the maximum time the system waits for a response during speech-to-text transcription before terminating the process. If no speech is detected within this period, the transcriber stops listening and times out. On timeout `<SILENT_TIMEOUT>` will be sent to the LLM.
-    + **Transcriber Silence Threshold (sec)**: Specify the duration of silence to wait before finalizing ASR processing. 
+    + **Transcriber Silence Threshold (sec)**: efines the maximum duration (in seconds) the system will wait for a response from the ASR (Automatic Speech Recognition) engine. If no transcription is received within this threshold, the transcriber will stop waiting and proceed accordingly. 
     + Click `Save`.
       <img src= "/class5/img/aiagent5new.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
@@ -158,7 +158,6 @@ With AI-driven automation, businesses can enhance customer experience while sign
 
 |Platform|Model|Transcriber|Text To Speech (TTS)|Voice|
 |--------|-----|-----------|--------------------|-----|
-|**ConnexCS Converse**|Gemma 2 9bn, Gemma 7bn, Lamma 3 Tools 70bn, Lamma 3 Tools 8bn, Lamma 3.1 Tools 70bn, Lamma 3.1 Tools 8bn, Mixtral 8x7bn||Rime AI, Neets, Azure, PlayHT|Select from multiple options|
 |**ConnexCS Converse Direct**|Select from the multiple options|ConnexCS Internal|Google, PlayHT|
 
 !!! Note "While accessing the **ConnexCS Converse Direct** Platform, you will notice that models in the drop-down menu are labeled with **"(Tools)"**. Selecting a model without the (Tools) designation will prevent you from accessing **ScriptForge** and performing behind-the-scenes tasks."
