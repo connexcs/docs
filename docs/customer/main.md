@@ -16,7 +16,7 @@ It offers a comprehensive set of tools to manage customer accounts, including th
           2. Allows multiple logins with unique credentials for each contact.
           3. Provides authentication and password management options to secure customer access.
 
-<img src= "/customer/img/cust-main.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/customer/img/cust-main1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! note "By clicking the dropdown next to the customer's name, you will be redirected to the selected customer's portal. For more information, see [Access Customer Portal](https://docs.connexcs.com/customer-portal/cp-dashboard/)."
 
@@ -70,10 +70,7 @@ Click **`Save`** to add the Contact.
 
 Follow these steps to reset a Contact password:
 
-1. Click the down arrow to the right of the Contact
-
-    <img src= "/customer/img/reset-password.png" style="border: 2px solid #4472C4; border-radius: 8px;">
-
+1. Click the blue `down arrow` to the right of the **Contact**.
 2. Select `Change Password`.
 3. Select `Auto Generate & Email Password` to email the random password to the contact's email address, or deselect it and enter the password manually. **If auto-generate is disabled, an administrator must manually set a password.**
 4. **`Save`**.
@@ -84,9 +81,7 @@ It's necessary to view the Customer Portal for issues or questions they may have
 
 To access the Customer Portal:
 
-1. Click the down arrow to the right of the Contact
-
-    <img src= "/customer/img/reset-password.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+1. Click the blue `down arrow` to the right of the **Contact**.
 
 2. Choose `Portal Login`.
 

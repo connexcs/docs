@@ -12,7 +12,7 @@ The 5 types of Charts we use are:
 4. **Pie charts**: Show the proportion of each category in a data set as slices of a pie. Useful for highlighting the relative size of different parts of a whole.
 5. **Sankey Charts**: The Sankey diagram encodes each node of the raw data into a small rectangle. Different nodes are presented in different colors as far as possible.
 
-<img src= "/apps/components/charts.png"  style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/apps/components/charts.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Use Case
 
@@ -195,7 +195,7 @@ The 5 types of Charts we use are:
 
     Sankey charts are handy for understanding and visualizing how resources or information move through complex systems. They're used in various fields to make it easier to see and analyze these flows.
 
-    <img src= "/apps/img/charts_sankey.png">
+    <img src= "/apps/img/charts_sankey.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 3.**X-Axis**: To change the settings for X-Axis.
 
@@ -220,7 +220,7 @@ The 5 types of Charts we use are:
 * **Width**: Change the width of the chart using the slider.
 * **Height**: Change the height of the chart using the slider.
 
-<img src= "/apps/components/img/charts_grid1.png" width="400">
+<img src= "/apps/components/img/charts_grid1.png" width="600" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## First time User?
 

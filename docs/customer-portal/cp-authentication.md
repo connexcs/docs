@@ -26,7 +26,7 @@ To enable, click :material-plus: next to IP Authentication:
     + **Channels**: Set the maximum number of concurrent calls for this switch. 
     + **Flow Speed**: Set the Calls Per Second (CPS) (0 = unlimited calls).   
     
-    ![alt text][cp-ipauth-basic]
+    <img src= "/customer-portal/img/cp-ipauth-basic1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 === "Advanced"
 
@@ -43,6 +43,8 @@ To enable, click :material-plus: next to IP Authentication:
         :material-menu-right: `Ingress`: This switch *receives* calls from ConnexCS.
         
         :material-menu-right: `Egress`: This switch *sends* calls to ConnexCS.    
+
+        <img src= "/customer-portal/img/cp-ipauth-adv.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ___
 
@@ -85,7 +87,7 @@ To enable, click :material-plus: next to SIP User Authentication:
 + **Codecs:** The SIP user can use any codec as long as it isn't expressly specified as "Restricted" here.
 + **IP Whitelist:** Enter specific IPs, or use CIDR notation to specify an entire sub-net.
 
-![alt text][cp-sipauth]
+<img src= "/customer-portal/img/cp-sipauth1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ### Reset Session Initiation Protocol Password
 
@@ -95,6 +97,6 @@ Click the SIP Username, then replace the password and click **`Save`**.
 
 To delete an IP or SIP User Authentication, select the box next to the IP Address or Username, and then click the Trash Can icon for that section.
 
-[cp-ipauth-basic]: /customer-portal/img/cp-ipauth-basic.png "Edit IP Auth Basic" style="border: 2px solid #4472C4; border-radius: 8px;"
+
 [407-trace]: /customer-portal/img/407-trace.png "SIP Trace Error 407" style="border: 2px solid #4472C4; border-radius: 8px;"
 [cp-sipauth]: /customer-portal/img/cp-sipauth.png "SIP Auth" style="border: 2px solid #4472C4; border-radius: 8px;"

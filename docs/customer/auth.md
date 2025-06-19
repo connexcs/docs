@@ -416,7 +416,7 @@ To enable, click **:material-plus:** next to SIP User Authentication:
     6. Click **`Save`** when done. 
     7. If a parameter rewrite is already created, you will have the ability to test it from the main tab. 
 
-    <img src= "/customer/img/test-rewrite.png", style="border: 2px solid #4472C4; border-radius: 8px;">
+    <img src= "/customer/img/test-rewrite1.png", style="border: 2px solid #4472C4; border-radius: 8px;">
 
 === "Voice Mail"
 

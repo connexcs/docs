@@ -137,7 +137,7 @@ function main (data = {}) {
 === "Basic"
 
     1. To add a script, login to your Control Panel. Click on IDE :material-menu-right: +, and select `Scriptforge`.
-    <img src= "/apps/img/app_scriptforge1.png" width= "400">
+    <img src= "/apps/img/app_scriptforge1.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">>
 
     2. Specify the script **Name**.
 
@@ -211,9 +211,9 @@ You can get the environmental variables using `process.env`.
 1. Select **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Routing**
 2. Select a Rate Card from Ingress Routing.
 
-    ![alt text][s8]  
+    <img src= "/customer/img/ingress-routing1.png" style="border: 2px solid #4472C4; border-radius: 8px;">  
 
-3. Go to **ScriptForge**
+3. Go to **ScriptForge**.
 4. Select the script.
 5. Set the **Timeout** to specify the duration you want it to run before it times out.
 6. Enter the **Timeout Action** manually and format it as **`[sip response code] [sip response message]`**.

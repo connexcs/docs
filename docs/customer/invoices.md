@@ -16,7 +16,7 @@ To add a new invoice:
 3. Set an Invoice Date in the bottom right.
 4. Click **`Edit Invoice Item`**.
 
-    <img src= "/misc/img/229.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+    <img src= "/misc/img/2291.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 5. The selected **Package** will autocomplete the Quantity, Unit Price, and Tax. You can revise these parameters as needed.
 6. Set a date range.

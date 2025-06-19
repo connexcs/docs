@@ -116,7 +116,7 @@ Enter your PayPal account information.
     + Select **Request API signature**, and then click **`Agree and Submit`**.
 4. Copy the **API Username**, **API Password**, and **Signature** credentials from this page into the open PayPal form in ConnexCS.
 
-    ![alt text][paypal-9]
+    <img src= "setup/img/paypal-91.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 5. **Currency**: Select one or more currencies that you will accept.
 6. **Deduct Payment Fees**: Set whether you will deduct the fees or not.

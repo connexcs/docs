@@ -34,7 +34,7 @@ Upon creating your account, you’ll need to complete a few key steps to ensure 
 
 Use the **Alerts** icon at the top left of the screen to view all outstanding items:
 
-<img src= "/getting-started/img/1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/getting-started/img/getting-started1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ### Email Verification
 
@@ -50,7 +50,7 @@ To verify your email address:
 3. Click the link in the email or copy & paste the code into the Verification Code field in the Verify Email pop-up
 4. Click `Verify`.
 
-    <img src= "/getting-started/img/verify-email.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+    <img src= "/getting-started/img/verify-email1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ### Mobile Verification
 
@@ -71,7 +71,7 @@ To verify a mobile number:
 4. Enter the code into the Verification Code field in the Verify Mobile pop-up.
 5. Click `Verify`.
 
-    <img src= "/getting-started/img/verify-mobile.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+    <img src= "/getting-started/img/verify-mobile1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ### Other Fields to be verified
 
@@ -81,6 +81,7 @@ To verify a mobile number:
 + Country
 + Address
 + VAT Registration ID
++ Share holder certificate
 
 ### Customer-Carrier Billing Setup
 
@@ -104,7 +105,7 @@ For detailed instructions on carrier setup, see [**Carrier**](https://docs.conne
 8. Enter the termination IP address.
 9. Click `Save`
 
-    <img src= "/getting-started/img/16.png" style="border: 2px solid #4472C4; border-radius: 8px;">>
+    <img src= "/getting-started/img/116.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 [Click here for video playback.](https://www.youtube.com/watch?v=7cDHJCEJDjI&t=3)
 
@@ -128,14 +129,13 @@ For detailed instructions on carrier setup, see [**Carrier**](https://docs.conne
 4. Add a tax percentage, which is calculated for each added payment.
 5. Click `Save`.
 
-      <img src= "/getting-started/img/6.png" style="border: 2px solid #4472C4; border-radius: 8px;">>
-
+      <img src= "/getting-started/img/61.png" style="border: 2px solid #4472C4; border-radius: 8px;">>
 
 !!! Note "To view outstanding actions on a customer, hover over the **Warning icon**."
 
-    In the example below, you can see that routing hasn't been set. In that case, click on the customer's name to update their routing details.
+    In the example below, you can see that routing and authentication hasn't been set. In that case, click on the customer's name to update their routing details.
 
-<img src= "/getting-started/img/warning-icon.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/getting-started/img/warning-icon1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ##### Set IP Authentication
 
@@ -272,10 +272,8 @@ To find this, click your name in the upper right corner and select `Profile`.
 
     The interesting thing is that you get these options on your browser using the [**Windows Hello application**](https://support.microsoft.com/en-us/windows/learn-about-windows-hello-and-set-it-up-dae28983-8242-bb2a-d3d1-87c9d265a5f0).
     
-    <img src= "/getting-started/img/2fa.png" width= "350">
+    <img src= "/getting-started/img/2fa.png" width= "350" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 === "Advanced"
 
     Click the blue `Edit` button to manage your email subscriptions.
-
-

@@ -30,7 +30,7 @@ To Simulate Calls:
 
 Click **`Simulate`** either from the **Logging** screen or from within a specific **Call ID**:
 
-&emsp;![alt text][logging-4]
+<img src= "/misc/img/logging-41.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 + **Dialed Number**: Where the call will end (destination).
 + **CLI/ANI**: Where the call will originate from (configured on ConnexCS).
@@ -299,7 +299,6 @@ You can have take a look at the various SIP Timers in the table below:
 <font size="2">*Table source*: [**IBM**](https://www.ibm.com/docs/en/was/8.5.5?topic=timers-sip-timer-summary); *Original Ref*: [**RFC 3261**](https://www.ietf.org/rfc/rfc3261.txt)</font size>
 
 [logging-sip]: /misc/img/logging-sip.png "SIP Traces" style="border: 2px solid #4472C4; border-radius: 8px;"
-[logging-4]: /misc/img/236.png "logging-4" style="border: 2px solid #4472C4; border-radius: 8px;"
 
 ### Decode Identity header in SIP Trace
 

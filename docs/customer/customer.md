@@ -76,7 +76,7 @@ By clicking on `+` button we can add customer (see [**Create Customers**](https:
 
 **Active**: Filter customer(s) based on account status. Results on the page will automatically arrange themselves according to the filter.
 
-<img src= "/customer/img/39.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/customer/img/391.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Customer View Modification
 
@@ -178,7 +178,7 @@ By clicking on `+` button we can add customer (see [**Create Customers**](https:
 
 Once you create a customer, click on the customer name to view details and provide additional configuration. For documentation on that configuration, navigate to the sub-section on the left:
 
-<img src= "/customer/img/customersubs.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/customer/img/customersubs1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ___
 

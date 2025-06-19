@@ -15,7 +15,7 @@ Use **Packages** to offer predefined products and services to each customer.
 
 2. Click **`Save`**.
 
-<img src= "/customer/img/customer-packages.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/customer/img/customer-packages1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! info "Managing Packages"
     You can create and manage **Packages** in **Setup :material-menu-right: Config :material-menu-right: Packages**. See **[Packages](https://docs.connexcs.com/setup/config/packages/)** for more information.

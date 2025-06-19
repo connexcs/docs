@@ -98,7 +98,7 @@ To create a *one-time Circuit Test*, go to **Management :material-menu-right: Ci
 
     See [**Customer DID**](https://docs.connexcs.com/customer/did/) for configuration.
 
-    <img src= "/misc/img/circuit-test.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+    <img src= "/misc/img/circuit-test1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Schedule
 

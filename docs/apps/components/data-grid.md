@@ -165,7 +165,7 @@ Value format in a data-grid is a feature that controls how raw data values are d
 
 It allows you to customize the appearance of data to improve readability, highlight specific information, and ensure consistency across the grid.
 
-<img src= "/apps/components/img/datagrid_valueformat.png" width="400">
+<img src= "/apps/components/img/datagrid_valueformat.png" width="400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 4.**Display format**
 

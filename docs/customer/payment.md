@@ -29,7 +29,7 @@ To add a new payment
         +  **Completed**: Marked as an active payments.
     + **Email Confirmation**: If enabled, once you save the Payment, an email is generated to all Contacts configured on the customer informing them that the payment has been received and applied to the account.
 
-    <img src= "/customer/img/53.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+    <img src= "/customer/img/531.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 2. Click **`Save`**.
 

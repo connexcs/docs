@@ -166,7 +166,7 @@ Form validation can be performed using a variety of methods, including:
 ||**value**: Value of the current field|
 ||**callback**: Callback function (must be called) upon completion of validation; **callback('Error message')/ callback(new Error('Error message'))**. These are two ways to return an error message|
 
-<img src= "/apps/components/img/cascader_validation.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/apps/components/img/cascader_validation.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Info
     1. The **callback() function** is also called to verify success in the custom validation method.

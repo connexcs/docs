@@ -119,7 +119,7 @@ Four options are available: **New Workspace**, **Load Workspace**, **Bulk Upload
         + Click `Add`.
         + A **Query Editor** window will appear. It's an interface where you can  write, edit, and execute queries against a database or data source. It's typically part of a larger data management or analytics platform, and it allows you to interact with data by writing commands in query languages.
 
-        <img src= "/misc/img/dms12.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+        <img src= "/misc/img/dms12.png">
 
       + **Other options**:
           + **Run**: Allows you to execute the query.

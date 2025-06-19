@@ -17,7 +17,7 @@ First, it checks the longest prefix, then it checks the shortest prefix for a ma
 
 View and configure existing routes on the Routing tab in the Customer card. To create a new route, click `+` in **Ingress Routing**.
 
-   <img src= "/customer/img/ingress-routing.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+   <img src= "/customer/img/ingress-routing1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ### Basic
 
@@ -406,7 +406,7 @@ For advanced routing, click :material-plus: to select a [**Prefix Set**](https:/
 
 Routes highlighted in red on the customer Routing page gets disabled. Open the route, click **Enabled**, and then **`Save`** to enable them
 
-<img src= "/customer/img/routing-disabled.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/customer/img/routing-disabled1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Tech Prefix
 

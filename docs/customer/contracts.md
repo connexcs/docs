@@ -16,7 +16,7 @@ The **Contracts** section lists contracts associated with the customer.
 
 2. Click **`Save`** to assign the contact to the customer.
 
-<img src= "/customer/img/customer-contracts.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/customer/img/customer-contracts1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! tip "How to create a Contract"
     For details on Contract setup, see **Setup :material-menu-right: Config :material-menu-right: [Contracts](https://docs.connexcs.com/setup/config/contracts/)**.

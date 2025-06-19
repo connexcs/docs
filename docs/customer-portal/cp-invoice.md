@@ -7,6 +7,4 @@ The following functions are available:
 + **View Invoice:** Click here to display the invoice on a webpage.
 + **Download as a PDF:** To save a copy of the invoice to your computer, click this link.
 
-![alt text][cp-invoice]
-
-[cp-invoice]: img/cp-invoice.png "Invoice" style="border: 2px solid #4472C4; border-radius: 8px;"
+<img src= "img/cp-invoice1.png" style="border: 2px solid #4472C4; border-radius: 8px;">

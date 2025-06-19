@@ -22,7 +22,7 @@ Set up **DNS** to load balance multiple Session Initiation Protocol (SIP) server
 
 1. Click :material-plus:.
 
-    <img src= "/setup/img/dns12.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+    <img src= "/setup/img/dns1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 2. Enter the **Domain** for your company.
 3. Use The **(TLD) Top Level Domain** `sip.direct` to create the full URL.

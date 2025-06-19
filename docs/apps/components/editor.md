@@ -162,7 +162,7 @@ Form validation can be performed using a variety of methods, including:
 ||**value**: Value of the current field|
 ||**callback**: Callback function (must be called) upon completion of validation; **callback('Error message')/ callback(new Error('Error message'))**. These are two ways to return an error message|
 
-<img src= "/apps/components/img/input_validation.png">
+<img src= "/apps/components/img/input_validation.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Info
     1. **Regular expressions** should be wrapped with //, as in:/^1[3456789]\d{9}$/"

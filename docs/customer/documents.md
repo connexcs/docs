@@ -11,7 +11,7 @@ Use the **Documents** section to collect various files from the customer, as par
         + **Customer Notes**: Updates when the customer leaves notes via their portal about the document.
     + Click **`Save`**.
 
-    <img src= "/customer/img/document.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+    <img src= "/customer/img/document1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 2. When you create the document, the customer receives a notice in their Customer Portal about the requested document.
 3. The customer selects "Upload A File" and leaves notes in the request.

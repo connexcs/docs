@@ -22,7 +22,7 @@ The **B-number, or B-leg**, is the **dialed number**, representing the **outgoin
     
     It's where the call originates. The call is then terminated at the Dialed Number, the "B-Leg" or "B-Number."
 
-<img src= "/customer/img/cli.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/customer/img/1cli.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ### Key Features & Benefits
 
@@ -139,7 +139,7 @@ Navigate to **Management :material-menu-right: Customer :material-menu-right: [C
 
 The customer can then go to the Customer Portal CLI section and add numbers there.  
 
-<img src= "/customer/img/approvedcli.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/customer/img/approvedcli1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Advanced CLI Match and Manipulation
 
