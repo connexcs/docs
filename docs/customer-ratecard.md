@@ -105,7 +105,7 @@ Click **`Email`**, enter the email address and click **`Send`**.
 + **Delete Revision**: Select a revision to delete.
 + **Download**: Download a CSV file of the Rate Card.
 
-    <img src= "/card/img/crc-func1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+    <img src= "/card/img/crc-func12.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 + **Parent Cards** are the Provider Rate Cards associated to this card.
 + **Customers** lists the specific Customers using this card.

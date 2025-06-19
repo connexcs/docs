@@ -90,7 +90,7 @@ You must first upload the audio files to the system if you wish to use them for 
 
 To create a new Group, click :material-plus:.
 
-<img src= "/class5/img/group12.jpg" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/class5/img/group12.jpg" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 + **Name:** Enter the name for the group.
 + **Customer:** (Available only when you add the Group from Class5, not when in the Customer management area): From the drop-down list, select the customer to whom the group applies.
@@ -114,7 +114,7 @@ To create a new Group, click :material-plus:.
         + `Agent Logout Destination`: The extension number an individual must dial to quit the group.
         + `Agent Offhook Destination`: An extension number an individual must dial to receive calls soon after joining the group.
 
-        <img src= "/class5/img/gp2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+        <img src= "/class5/img/gp2.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 + **PBX Server**: Select the desired regional server. (PBX: Private Branch Exchange)
 

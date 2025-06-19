@@ -95,7 +95,7 @@ Once, the problem has occurred and fixed, the last step is to close the ticket.
 !!! note
     If an Admin has raised a ticket and wants their customer(s) to view the tickets then the Admin can grant access to the customers by going to **Setup :material-menu-right: Settings :material-menu-right: Users :material-menu-right: Customer [Name] :material-menu-right: Shared Ticket :material-menu-right: Yes**. Click on **`Save`**
 
-    <img src= "/misc/img/st2.png" width= "550">
+    <img src= "/misc/img/st2.png" width= "550" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ### Phone
 

@@ -22,7 +22,7 @@ For individual customers, navigate to **Management :material-menu-right: Custome
 
     Below is an example of how you can choose to organize this information.
 
-    <img src= "/class5/img/pb2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+    <img src= "/class5/img/pb2.png" width= "700" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! note "Phonebook and WebPhone"
     Phonebook is also used in the [**Web Phone**](https://docs.connexcs.com/webphone/) configuration.

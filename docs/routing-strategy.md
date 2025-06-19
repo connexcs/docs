@@ -63,4 +63,4 @@ You can also block a call using routing strategy. To block a call,
 4. Add the number to block and then select **Drop** as the Strategy.
 5. Click **`Save`**.
 
-<img src= "docs/misc/img/routingdrop.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/misc/img/routingdrop.png" style="border: 2px solid #4472C4; border-radius: 8px;">

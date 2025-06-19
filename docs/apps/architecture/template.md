@@ -34,14 +34,14 @@ ConnexCS **Templates** use the mustash-compatible template language [**Handlebar
 
 <img src= "/apps/img/template3.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-7.**Preview**![prev1](image-6.png) is available on the right side of the screen. Click here to open the preview section.
+7.**Preview** ![prev1](image-6.png) is available on the right side of the screen. Click here to open the preview section.
 Click on this arrow ![arr](image-5.png) to maximize the preview screen.
 
-<img src= "/apps/img/template4.png" width="500" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/apps/img/template4.png" width="400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 8.You can `Run` and `Save` the code, `Toggle Console`, `Preview (errors)`, `Request Cancellation` for cancelling any ongoing requests, for example taking longer to execute, `Settings` you can edit, Set Vars, Copy file ID, Copy UUID using Settings.
 
-<img src= "/apps/img/sc.png" width= "275" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/apps/img/sc.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Note
     A **File ID** serves as the unique identifier for a file, while a **UUID** is used to expose a **ScriptForge File** to external systems.

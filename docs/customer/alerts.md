@@ -83,7 +83,7 @@ This will email the customer with a custom template, whenever their ASR (Answer 
 
 If it goes above 31%, then the Alert is reset.
 
-<img src= "/customer/img/alerts-sample31.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/customer/img/alerts-sample31.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 **ASR Penalty** Similarly, you could set the ASR Threshold to 15, and enable a penalty of 1 hour. This would disable the customer for 1 hour whenever their completed calls drop below 15% of total calls.
 
@@ -119,7 +119,7 @@ If it goes above 31%, then the Alert is reset.
     2. Protects the network from non-connecting calls.
     3. Automatically re-enables calling after the penalty duration.
 
-<img src= "/customer/img/alerts-sample32.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/customer/img/alerts-sample32.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 **Daily Balance** For customers who run close to their balance on a regular basis.
 
@@ -131,7 +131,7 @@ Can be scheduled to provide daily updates on key metrics:
 + PDD alerts
 + ScriptForge alerts
 
-<img src= "/customer/img/alerts-sample33.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/customer/img/alerts-sample33.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 **Script Forge Alerts**  When you set the Area to "Script Forge," it will bypass all the other Alerts fields and allow you to select an existing Script Forge script.
 

@@ -179,7 +179,7 @@ Use this to update the Channels for the selected server. The update will be acti
 
 This only needs to run when the system indicates "There's a pending update on the server" at the top of the server details.
 
-<img src= "/setup/img/serverrtp1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/setup/img/serverrtp1.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Network Tools
 

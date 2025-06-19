@@ -2,7 +2,7 @@
 
 **Setup :material-menu-right: Settings :material-menu-right: Account**
 
-The **Account** overview allows you to edit Company and General Information, set Simple Mail Transfer Protocol (STMP) Details, view Packages and the Service Agreement.
+The **Account** overview allows you to edit Company and General Information, set Simple Mail Transfer Protocol (SMTP) Details, view Packages and the Service Agreement.
 
 ## Edit Account Details
 
@@ -24,7 +24,7 @@ Under General Information, you can check the following:
 + Contact Information for the account: You can edit this field.
 + Address
 
-    <img src="/setup/img/accountprofile1.png" style="border: 2px solid #4472C4; border-radius: 8px;>
+    <img src= "/setup/img/accountprofile1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! note "Additional Configuration"
     To change any other settings, please contact Technical Support.

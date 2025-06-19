@@ -139,7 +139,7 @@ Navigate to **Management :material-menu-right: Customer :material-menu-right: [C
 
 The customer can then go to the Customer Portal CLI section and add numbers there.  
 
-<img src= "/customer/img/approvedcli1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/customer/img/approvedcli1.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Advanced CLI Match and Manipulation
 

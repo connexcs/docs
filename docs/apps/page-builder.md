@@ -124,21 +124,22 @@ The Form attribute helps you specify values for the following parameters for all
     For example, using the below code you can interact with the Page Builder from the Console.
 
     1. **Example 1**
+    
     ```js
     window.cx().ctx.$('echarts').loading // Charts component is loading
     ```
-    <img src= "/apps/img/pageb6.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+    <img src= "/apps/img/pageb6.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;">
 
     ```js
     window.cx().ctx.$('echarts').loading(false) // Charts component is not loading
     ```
-    <img src= "/apps/img/pageb7.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+    <img src= "/apps/img/pageb7.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;">
     
     2.**Example 2**: Set the Log Level
     ```js
     window.cx().ctx.setLogLevel(`debug`) // Setting log level to debug
     ```
-    <img src= "/apps/img/pageb6.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+    <img src= "/apps/img/pageb6.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Platform Features
 

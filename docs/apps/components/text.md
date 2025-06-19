@@ -135,7 +135,7 @@ Form validation can be performed using a variety of methods, including:
 |---------|----------------|
 |**Required**|If enabled, then the field value can't be empty, otherwise an error message is emitted|
 
-<img src= "/apps/components/img/text_validation.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/apps/components/img/text_validation.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## First time User?
 

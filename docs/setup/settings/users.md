@@ -52,7 +52,7 @@ To add a new ConnexCS **User**, click :material-plus: in the **Users** section o
 
 After entering the information, click **`Save`**.
 
-<img src= "/setup/img/users1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/setup/img/users1.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Note
     [Click here](https://cidr.xyz/) to view an interactive IP address and CIDR range visualizer.
@@ -131,7 +131,7 @@ Typically, you create user groups to assign permissions depending on the roles t
 
 3. Make sure you **`Save`** the Group with the new permissions.
 
-    <img src= "/setup/img/grp2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+    <img src= "/setup/img/grp2.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! tip "Group Permission Access Exceptions"
     The permissions for the **Analytics** and **CDR** Areas are always `Access Denied` (no other permissions allowed).

@@ -29,7 +29,7 @@ Complete the following steps before configuring the IVR.
 
 6. You can select from the list of available **PBX Servers**.
 
-    <img src= "/class5/img/ivr1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+    <img src= "/class5/img/ivr1.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 7. After the completion of the above fields, **`Edit`** becomes available for each key- numbers 0 to 9, '\*' (asterisk) and '#' (hash) - to configure the Destination (what happens when the caller selects the key).
 

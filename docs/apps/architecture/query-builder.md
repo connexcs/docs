@@ -14,7 +14,7 @@ Common use cases include: Database Administration Tools, Web Application, Report
 
 2. Navigate to **IDE** :material-menu-right: `+` sign :material-menu-right: **Query Builder**.
 
-<img src= "/apps/img/query1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/apps/img/query1.png" width ="500" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 3.Select the App and enter the domain where the App will be visible and accessible.
 4.Click `Save`.
@@ -37,7 +37,7 @@ Common use cases include: Database Administration Tools, Web Application, Report
 
 9.You can `Run` and `Save` the code, `Toggle Console`, `Preview (errors)`, `Request Cancellation` for cancelling any ongoing requests, for example taking longer to execute, `Settings` you can edit, Set Vars, Copy file ID, Copy UUID using Settings.
 
-<img src= "/apps/img/sc.png" width= "275" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/apps/img/sc.png" width= "350" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ### G3 Query Builder
 

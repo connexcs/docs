@@ -34,7 +34,7 @@ Upon creating your account, you’ll need to complete a few key steps to ensure 
 
 Use the **Alerts** icon at the top left of the screen to view all outstanding items:
 
-<img src= "/getting-started/img/getting-started1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/getting-started/img/getting-started1.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ### Email Verification
 
@@ -50,7 +50,7 @@ To verify your email address:
 3. Click the link in the email or copy & paste the code into the Verification Code field in the Verify Email pop-up
 4. Click `Verify`.
 
-    <img src= "/getting-started/img/verify-email1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+    <img src= "/getting-started/img/verify-email1.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ### Mobile Verification
 
@@ -71,7 +71,7 @@ To verify a mobile number:
 4. Enter the code into the Verification Code field in the Verify Mobile pop-up.
 5. Click `Verify`.
 
-    <img src= "/getting-started/img/verify-mobile1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+    <img src= "/getting-started/img/verify-mobile1.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ### Other Fields to be verified
 
@@ -135,7 +135,7 @@ For detailed instructions on carrier setup, see [**Carrier**](https://docs.conne
 
     In the example below, you can see that routing and authentication hasn't been set. In that case, click on the customer's name to update their routing details.
 
-<img src= "/getting-started/img/warning-icon1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/getting-started/img/warning-icon1.png" width= "200" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ##### Set IP Authentication
 
