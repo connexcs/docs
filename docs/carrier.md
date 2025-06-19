@@ -159,14 +159,14 @@ When the Carrier requires information on the headers sent from the UAC, you can 
 3. Consider an example here: **Example of how to retain X-ng199 but remove all other X-headers**
 4. Enter the code in the Vars<sup>TOML</sup> section.
 
-```js
+```js linenums="1" linenums="1"
 [headers] // configuration for headers
 remove_regex="^X-(?:(?!(ng911)).)*" // only retain X-ng199 but remove all other X-headers
 ```
 
 The **Default Setting** is:
 
-```js
+```js linenums="1" linenums="1"
 [headers]
 remove_regex="^X-.*"
 ```

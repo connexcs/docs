@@ -73,53 +73,53 @@ The 5 types of Charts we use are:
             ```
 
     2. `this.removeClassName(fields, className)`
-        ```js
+        ```js linenums="1"
         this.removeClassName('echarts_moy2lbor', 'abc')
         ```
     
     3. `this.getValue(fieldName)`
-        ```js
+        ```js linenums="1"
         var chartname = this.getValue('echarts_moy2lbor');
         console.log('getValue', chartname);
         ```
     
     4. `this.getValues()`
-        ```js
+        ```js linenums="1"
         var data = this.getValues();
         console.log(data);
         ```
     
     5. `this.hide(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['echarts_moy2lbor']
         this.hide(fields)
         ```
     
     6. `this.show(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['echarts_moy2lbor']
         this.show(fields)
         ```
     
     7. `this.enable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.enable(['echarts_moy2lbor'])
         ```
 
     8.  `this.getValue('fieldName')`
-        ```js
+        ```js linenums="1"
         var chartname = this.getValue('echarts_moy2lbor');
         console.log('getValue', chartname);
         ```
     
     9.  `this.getComponent('component_ID')`
-        ```js
+        ```js linenums="1"
         var chartname = this.getComponent('echarts_moy2lbor');
         console.log('getComponent', chartname);
         ```
     
     10. `this.setData(Value)`
-        ```js
+        ```js linenums="1"
         this.setData(
         {
         "echarts_moy2lbor":[

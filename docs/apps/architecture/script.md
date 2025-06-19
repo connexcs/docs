@@ -110,7 +110,7 @@ function main (data = {}) {
     The filename from which the function is exported must be in **lowercase** and must **not contain any spaces or special characters**.
 
 !!! Example "Export module example"
-    ```js
+    ```js linenums="1"
     function run () {
         return 4 + 10
 
@@ -122,7 +122,7 @@ function main (data = {}) {
 + **Import**: Use `import` to bring in code from other modules.
   
 !!! Example "Import module example"
-    ```js
+    ```js linenums="1"
     const { run } = require('fileName')
 
     function main() {

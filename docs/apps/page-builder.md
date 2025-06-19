@@ -83,7 +83,7 @@ The Form attribute helps you specify values for the following parameters for all
     WebSocket enables you to create and manage WebSocket connections within your application. WebSockets are a powerful technology for establishing persistent, two-way communication channels between a web browser and a server, enabling real-time data exchange without the need for constant polling.
 
     **Example**:
-    ```js
+    ```js linenums="1" linenums="1"
     const socket = this.scriptForge('myScriptForge')//creates a new WebSocket connection using the scriptForge function
     socket.send({hello: 'World'}) // sending a message
     socket.on('error', console.log) // handling errors
@@ -124,18 +124,18 @@ The Form attribute helps you specify values for the following parameters for all
     For example, using the below code you can interact with the Page Builder from the Console.
 
     1. **Example 1**
-    ```js
+    ```js linenums="1" linenums="1"
     window.cx().ctx.$('echarts').loading // Charts component is loading
     ```
     <img src= "/apps/img/pageb6.png" width="300">
 
-    ```js
+    ```js linenums="1" linenums="1"
     window.cx().ctx.$('echarts').loading(false) // Charts component is not loading
     ```
     <img src= "/apps/img/pageb7.png" width="300">
     
     2.**Example 2**: Set the Log Level
-    ```js
+    ``` js linenums="1"
     window.cx().ctx.setLogLevel(`debug`) // Setting log level to debug
     ```
     <img src= "/apps/img/pageb6.png" width="300">

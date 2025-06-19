@@ -4,7 +4,7 @@
 
 When we initiate **makeCall** we pass a number that we're dialing, for example:
 
-```js
+```js linenums="1" linenums="1"
 this.makeCall('200')
   .then(res => {
     res.$on('onStatusChanged', status => {
@@ -37,17 +37,19 @@ getProv feature return some specific information or **Promise**.
 
 For example, `this.getProv().then` returns the user's provision information such as their user name.
 
-```js
+```js linenums="1" linenums="1"
 this.getData().then(async data => {
-      this.getProv().then(prov => { 
-                  data.agentId = prov.sipUser.username;
+    this.getProv().then(prov => { 
+        data.agentId = prov.sipUser.username;
+    })
+})
 ```
 
 To sum up we can say, getProv gets data from the servers after provisioning a user.
 
 For example you can get the following information on the Webphone when you use the getProv feature:
 
-```js
+```js linenums="1" linenums="1"
  "prov": {
         "brandName": "Cacious WebPhone",
         "menu": [

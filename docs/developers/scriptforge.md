@@ -237,7 +237,7 @@ flowchart TD
 
 8. Enter the below code:
 
-```js
+```js linenums="1"
 /* This ConnexCS Library makes it easy to place a call */
 const originate = require('cxOriginate');
 /*

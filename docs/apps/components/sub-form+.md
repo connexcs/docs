@@ -88,52 +88,52 @@ Complex layout Sub-Form component for list (array) type form data, supporting ne
             ```
 
     2. `this.removeClassName(fields, className)`
-        ```js
+        ```js linenums="1"
         this.removeClassName('subform_e4cjz3nf', 'abc')
         ```
 
     3. `this.hide(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['subform_e4cjz3nf']
         this.hide(fields)
         ```
     
     4. `this.show(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['subform_e4cjz3nf']
         this.show(fields)
         ```
     
     5. `this.disable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.disable(['subform_e4cjz3nf'])
         ```
     
     6. `this.enable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.enable(['subform_e4cjz3nf'])
         ```
 
     7.  `this.getComponent('component_ID')`
-        ```js
+        ```js linenums="1"
         var subname = this.getComponent('subform_e4cjz3nf');
         console.log('getComponent', subname);
         ```
 
     8. `this.getValues()`
-        ```js
+        ```js linenums="1"
         var data = this.getValues();
         console.log(data);
         ```
     
     9. `this.getValue('fieldName')`
-        ```js
+        ```js linenums="1"
         var subname = this.getValue('subform_e4cjz3nf');
         console.log('getValue', subname);
         ```
     
     10. `this.setData(Value)`
-        ```js
+        ```js linenums="1"
         this.setData({ subform_e4cjz3nf: [ { inputId: '1234', inputId2: 'value2' } ] })
         ```
 

@@ -103,54 +103,54 @@ Some of the most common methods include:
             ```
 
     2. `this.removeClassName(fields, className)`
-        ```js
+        ```js linenums="1"
         this.removeClassName('color_zxqxhwlh', 'abc')
         ```
     
     3. `this.getValues()`
-        ```js
+        ```js linenums="1"
         var data = this.getValues();
         console.log(data);
         ```
     
     4. `this.hide(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['color_zxqxhwlh']
         this.hide(fields)
         ```
     
     5. `this.show(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['color_zxqxhwlh']
         this.show(fields)
         ```
     
     6. `this.disable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.disable(['color_zxqxhwlh'])
         ```
     
     7. `this.getValue('fieldName')`
-        ```js
+        ```js linenums="1"
         var colorname = this.getValue('color_zxqxhwlh');
         console.log('getValue', colorname);
         ```
     
     8. `this.getComponent('component_ID')`
-        ```js
+        ```js linenums="1"
         var colorname = this.getComponent('color_zxqxhwlh');
         console.log('getComponent', colorname);
         ```
     
     9. `this.setData(Value)`
-        ```js
+        ```js linenums="1"
         this.setData(
          {""color_o1cfjhoq": "#AEE710",});
         ```
 
 !!! info Add multiple classes
     Use the following syntax to add multiple classes to a component:
-    ```js
+    ```js linenums="1"
     this.addClassName('componentID', 'class1', 'class2')
     ```
 

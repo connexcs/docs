@@ -14,12 +14,12 @@ You can save the variables via 2 methods as follows:
 2. Add Environmental Variables through **ScriptForge**: `setEnvVar('key_name', 'value')`
    
       * If type of **value** is **String** then use the below specified format:
-	    ```js
+	    ```js linenums="1"
 		    setEnvVar('key_name', 'value')
         ```
 
       * If the type of **value** is an **object** then use the below specified format:
-        ```js
+        ```js linenums="1"
 		    setEnvVar('key_name', JSON.stringify(value))
         ```
 
