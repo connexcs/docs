@@ -46,7 +46,7 @@ Click **`Numbers`** to search for several numbers.
 
 Set a Schedule to email the Breakout Report at designated intervals. To schedule a breakout report, click :material-plus:.
 
-&emsp;![alt text][schedulereport]
+<img src="/reports/img/schedulereport.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 + **Name:** The report schedule.
 + **Email:** The report recipient.
@@ -58,8 +58,12 @@ Set a Schedule to email the Breakout Report at designated intervals. To schedule
 
 Click **`Save`** to schedule the Report.
 
-[schedulereport]: /reports/img/schedulereport1.png "Schedule Reports"
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzNTczMDg4NCw3MzMxNTg1MTcsMjA5Nj
-Y5MjkyM119
--->
+## USA Rate Center
+
+In the United States, different states (or regions) have varying call rates.
+This report provides insights into the volume of calls originating from each rate center.
+A rate center represents a specific geographic region for telecommunications billing and routing purposes.
+
+The report gives information of the Prefix, Rate Center (region), Total Customer Charge, Total Provider Charge, and Total Calls.
+
+<img src="/reports/img/usacenter.png" width= "1000" style="border: 2px solid #4472C4; border-radius: 8px;">

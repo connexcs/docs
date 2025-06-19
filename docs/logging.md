@@ -20,7 +20,7 @@ To view calls that are having issues registering, click **`Register Logging`**, 
 
 ## Fraud Logging
 
-View the log of Fraud events. See [**Setup Fraud Detection**](https://docs.connexcs.com/setup/advanced/fraud/#setup-a-fraud-detection) for configuration.
+View the log of Fraud events. See [**Setup Fraud Detection**](https://docs.connexcs.com/setup/advanced/fraud/#setup-fraud-detection) for configuration.
 
 ## Simulate
 
