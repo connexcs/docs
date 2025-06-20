@@ -66,42 +66,42 @@ Users can type text, numbers, or symbols into the designated field, providing es
             ```
 
     2. `this.removeClassName(fields, className)`
-        ```js
+        ```js linenums="1"
         this.removeClassName('text_t1fhz5vb', 'abc')
         ```
     
     3. `this.getValues()`
-        ```js
+        ```js linenums="1"
         var data = this.getValues();
         console.log(data);
         ```
     
     4. `this.hide(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['text_t1fhz5vb']
         this.hide(fields)
         ```
     
     5. `this.show(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['text_t1fhz5vb']
         this.show(fields)
         ```
     
     6.  `this.getValue('fieldName')`
-        ```js
+        ```js linenums="1"
         var textname = this.getValue('text_t1fhz5vb');
         console.log('getValue', textname);
         ```
     
     7.  `this.setData(Value)`
-        ```js
+        ```js linenums="1"
         this.setData(
          {"text_t1fhz5vb": "This is the Text",});
         ```
     
     8.  `this.getComponent('component_ID')`
-        ```js
+        ```js linenums="1"
         var textname = this.getComponent('text_t1fhz5vb');
         console.log('getComponent', textname);
         ```

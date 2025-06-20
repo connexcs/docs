@@ -63,11 +63,11 @@ You can also put a default value of the `start_date` by making it a variable usi
 
 For example,
 
-```js
+```js linenums="1"
 start_date: 7 days ago // G3 query
 ```
 
-```js
+```js linenums="1"
 start_date: :start_date // making it a variable using Set Vars
 ```
 

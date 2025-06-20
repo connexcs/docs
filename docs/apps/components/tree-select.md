@@ -86,52 +86,52 @@ Unlike a standard dropdown menu with a flat list of options, a tree-select organ
             ```
 
     2. `this.hide(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['treeselect_4xgiru3n']
         this.hide(fields)
         ```
     
     3. `this.show(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['treeselect_4xgiru3n']
         this.show(fields)
         ```
     
     4. `this.disable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.disable(['treeselect_4xgiru3n'])
         ```
     
     5. `this.enable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.enable(['treeselect_4xgiru3n'])
         ```
     
     6. `this.setData(Value)`
-        ```js
+        ```js linenums="1"
         this.setData(
         {"treeselect_4xgiru3n": "Option 2",})
         ```
     
     7. `this.getValue('fieldName')`
-        ```js
+        ```js linenums="1"
         var fields = this.getValue('treeselect_4xgiru3n');
         console.log('getValue', fields);
         ```
     
     10. `this.getValues()`
-        ```js
+        ```js linenums="1"
         var data = this.getValues();
         console.log(data);
         ```
     
     11. `this.removeClassName(fields, className)`
-        ```js
+        ```js linenums="1"
         this.removeClassName('treeselect_4xgiru3n', 'abc')
         ```
     
     12. `this.getComponent('component_ID')`
-        ```js
+        ```js linenums="1"
         var fields = this.getComponent('treeselect_4xgiru3n');
         console.log('getComponent', fields);
         ```

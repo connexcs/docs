@@ -64,35 +64,35 @@ Tables provide a structured format for organizing related data within a form. Us
             ```
 
     2. `this.removeClassName(fields, className)`
-        ```js
+        ```js linenums="1"
         this.removeClassName('report_eahnplzw', 'abc')
         ```
     
     3. `this.hide(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['report_eahnplzw']
         this.hide(fields)
         ```
     
     4. `this.show(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['report_eahnplzw']
         this.show(fields)
         ```
     
     5. `this.enable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.enable(['report_eahnplzw'])
         ```
 
     6.  `this.getComponent('component_ID')`
-        ```js
+        ```js linenums="1"
         var reportname = this.getComponent('report_eahnplzw');
         console.log('getComponent', reportname);
         ```
     
     7.  `this.getValues()`
-        ```js
+        ```js linenums="1"
         var data = this.getValues();
         console.log(data);
         ```

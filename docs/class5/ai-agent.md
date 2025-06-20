@@ -163,7 +163,7 @@ To grant access to functions for an AI agent, follow these steps:
       1. Within the Script Forge, add the function you want the AI agent to access.
 
    !!! Example "Example Function"
-        ```js
+        ```js linenums="1"
         /**
           * Transfer
           * @param {Object} param - Param Object
@@ -184,7 +184,7 @@ To grant access to functions for an AI agent, follow these steps:
 Following these steps ensures that the AI agent has the necessary permissions to interact with the designated function.
 
 !!! Example "Example Script"
-    ```js
+    ```js linenums="1"
     /**
     * update the database with user details. 
     * @param {Object} param - Param Object
@@ -242,7 +242,7 @@ Calls can be routed to another agent through two different transfer options.
       1. Login to you account.
       2. Navigate to **IDE :material-menu-right: ScriptForge**.
       3. The script is as follows:
-            ```js
+            ```js linenums="1"
             /**
              * Transfer
              * @param {Object} param - Param Object
