@@ -135,7 +135,7 @@ To view the SIP Trace of a call:
 1. Click a **Call ID** to view its SIP traces.
 2. Click **`SIP traces`** to view the SIP trace.
 
-      ![alt text][logging-sip]
+      <img src= "/misc/img/logging-sip1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 3. Toggle between Relative Time and Absolute Time for a specific time of day.
 4. Options to download as Text or an Image.
@@ -297,8 +297,6 @@ You can have take a look at the various SIP Timers in the table below:
 | **Timer K** | T4 for UDP| 17.1.2.2| Wait time for response retransmissions|
 
 <font size="2">*Table source*: [**IBM**](https://www.ibm.com/docs/en/was/8.5.5?topic=timers-sip-timer-summary); *Original Ref*: [**RFC 3261**](https://www.ietf.org/rfc/rfc3261.txt)</font size>
-
-[logging-sip]: /misc/img/logging-sip.png "SIP Traces" style="border: 2px solid #4472C4; border-radius: 8px;"
 
 ### Decode Identity header in SIP Trace
 
