@@ -406,7 +406,7 @@ For advanced routing, click :material-plus: to select a [**Prefix Set**](https:/
 
 Routes highlighted in red on the customer Routing page gets disabled. Open the route, click **Enabled**, and then **`Save`** to enable them
 
-<img src= "/customer/img/routing-disabled1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/customer/img/routing-disabled1.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Tech Prefix
 

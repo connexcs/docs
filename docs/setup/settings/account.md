@@ -41,7 +41,7 @@ To add or edit SMTP information, click the blue pencil icon:
 
 **`Test Email`** or **`Test SMS`** buttons send test messages via each method. You can find the buttons on the far right of the SMTP details window.
 
-<img src= "/setup/img/smtp1.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;>
+<img src= "/setup/img/smtp1.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! tip "TLS SMTP"
     To use TLS SMTP, set the Server format as "mail.yourdomain.com:465."
@@ -54,7 +54,7 @@ You can see below the Company information, a list of the applied ConnexCS packag
 
 Click **Enable Call Recording** to add the feature to the Account. First, you need to enable this on individual accounts under **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Routing :material-menu-right: Ingress routing :material-menu-right: [Media](https://docs.connexcs.com/customer/routing/#media)**.
 
-<img src= "/setup/img/callrec.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;>
+<img src= "/setup/img/callrec.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## ConnexCS Service Agreement
 

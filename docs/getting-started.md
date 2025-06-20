@@ -34,7 +34,7 @@ Upon creating your account, you’ll need to complete a few key steps to ensure 
 
 Use the **Alerts** icon at the top left of the screen to view all outstanding items:
 
-<img src= "/getting-started/img/getting-started1.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/getting-started/img/getting-started1.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ### Email Verification
 

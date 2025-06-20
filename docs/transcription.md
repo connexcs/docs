@@ -157,13 +157,13 @@ You can use various Operators to refine your research:
 !!! Example
 
     1. `AND` Operator
-    <img src="/transcription/img/and.png" width= "800">
+    <img src="/transcription/img/and.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;">
 
     2. `OR` Operator
-    <img src="/transcription/img/or.png" width= "800">
+    <img src="/transcription/img/or.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;">
 
     3. `NOT` Operator
-    <img src="/transcription/img/not.png" width= "800">
+    <img src="/transcription/img/not.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Tip
     By using **multiple search operators together**, you can create more specific search queries that helps you find the most relevant entries quicker.

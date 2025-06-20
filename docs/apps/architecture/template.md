@@ -37,7 +37,7 @@ ConnexCS **Templates** use the mustash-compatible template language [**Handlebar
 7.**Preview** ![prev1](image-6.png) is available on the right side of the screen. Click here to open the preview section.
 Click on this arrow ![arr](image-5.png) to maximize the preview screen.
 
-<img src= "/apps/img/template4.png" width="400" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/apps/img/template4.png" width="300" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 8.You can `Run` and `Save` the code, `Toggle Console`, `Preview (errors)`, `Request Cancellation` for cancelling any ongoing requests, for example taking longer to execute, `Settings` you can edit, Set Vars, Copy file ID, Copy UUID using Settings.
 

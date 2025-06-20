@@ -174,7 +174,7 @@ function main (data = {}) {
 
     12.You can `Run` and `Save` the code, `Toggle Console`, `Preview (errors)`, `Request Cancellation` for cancelling any ongoing requests, for example taking longer to execute, `Settings` you can edit, Set Vars, Copy file ID, Copy UUID using Settings.
 
-    <img src= "/apps/img/sc.png" width= "275" style="border: 2px solid #4472C4; border-radius: 8px;">
+    <img src= "/apps/img/sc.png" width= "320" style="border: 2px solid #4472C4; border-radius: 8px;">
 
     !!! note
         Global Routing Priority means the script will run for every single call. You have 3 options to choose from:

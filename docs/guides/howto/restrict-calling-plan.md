@@ -22,7 +22,7 @@ Go to **Customer :material-menu-right: Auth**, select **IP Auth** or **SIP User 
 
 Go to **Customer :material-menu-right: Routing :material-menu-right: Ingress Routing**, select the desired plan, then on the **Basic** tab, assign the Tech Prefix:
 
-<img src= "/guides/howto/img/restrictcallking21.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/guides/howto/restrictcallking21.png" style="border: 2px solid #4472C4; border-radius: 8px;"> 
 
 **Results:**
 When a customer dials a number, the user registers with ConnexCS.
