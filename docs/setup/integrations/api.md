@@ -72,7 +72,7 @@ For inbound APIs, please see the [**API**](https://api-docs.connexcs.com/) in th
 1. Click **`Add`**.
 2. Select the required service from the list.
 
-    <img src= "/setup/img/api12.png" width= "300" style= "border: 2px solid #4472C4; border-radius: 8px;"> 
+    <img src= "/setup/img/api12.png" width= "100" style= "border: 2px solid #4472C4; border-radius: 8px;"> 
 
 3. Complete the available fields (see individual API integrations below for details for each provider).
 4. Click **`Save`**.
@@ -116,7 +116,7 @@ Enter your PayPal account information.
     + Select **Request API signature**, and then click **`Agree and Submit`**.
 4. Copy the **API Username**, **API Password**, and **Signature** credentials from this page into the open PayPal form in ConnexCS.
 
-    <img src= "docs/setup/img/paypal-91.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+    <img src= "/setup/img/paypal-91.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 5. **Currency**: Select one or more currencies that you will accept.
 6. **Deduct Payment Fees**: Set whether you will deduct the fees or not.

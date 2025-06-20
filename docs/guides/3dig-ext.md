@@ -12,4 +12,4 @@ You can set up 3-digit dialling in several ways. This is a basic setup for quick
 
 3. Document internal extensions in the [**Phonebook**](/class5/phonebook/) (this step isn't so much functional as a reference).
 
-    <img src= "/class5/img/pb2.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;"> 
+    <img src= "/class5/img/pb2.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"> 
