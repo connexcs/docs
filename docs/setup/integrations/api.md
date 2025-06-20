@@ -72,7 +72,7 @@ For inbound APIs, please see the [**API**](https://api-docs.connexcs.com/) in th
 1. Click **`Add`**.
 2. Select the required service from the list.
 
-    <img src= "/setup/img/api12.png" width= "100" style= "border: 2px solid #4472C4; border-radius: 8px;"> 
+    <img src= "/setup/img/api12.png" width= "250" style= "border: 2px solid #4472C4; border-radius: 8px;"> 
 
 3. Complete the available fields (see individual API integrations below for details for each provider).
 4. Click **`Save`**.

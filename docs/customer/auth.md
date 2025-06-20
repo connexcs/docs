@@ -390,9 +390,6 @@ To enable, click **:material-plus:** next to SIP User Authentication:
                     I1 --> |Note:| N1["Seamless Transfer"]:::normal
                     I2 --> |Note:| N2["Complexity and Potential Failures"]:::normal
                     ```
-    
-                !!! Note "Important Note"
-                    An additional charge of $0.003 per call applies to use the Smart Extension capability.
 
     <img src= "/customer/img/sip1.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
 
