@@ -542,11 +542,16 @@ An existing call is transferred to a different destination using the `Dial` ver
         ``` xml
         <?xml version="1.0" encoding="UTF-8"?>
         <Response>
-            <Context name="ivr-menu" hangupOnStarContext="true">
-                <Say>Welcome to the IVR menu. Press 1 for sales, 2 for support. Press star to exit.</Say>
-                <Gather numDigits="1" action="/handle-keypress" method="POST" />
-            </Context>
-            <Say>This message plays only if the caller does not press star.</Say>
+            <Enter>A</Enter>
+
+            <Press dtmf_leg="a" digit="#0" context="A">
+    
+                <Dial hangupOnStar="true" callerId="+441615241418">441202158714</Dial>
+
+            </Press>
+            <Dial hangupOnStar="true" hangupOnStarContext ="A">2890</Dial>
+            <Enter>A</Enter>
+            <Say>This is after hangup.</Say>
         </Response>
         ```
 
