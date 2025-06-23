@@ -40,13 +40,13 @@ It can be used to improve the readability and usability of forms by making it ea
 
 !!! Example
     1. `this.hide(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['divider_xjmcv33p']
         this.hide(fields)
         ```
 
     2. `this.show(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['divider_xjmcv33p']
         this.show(fields)
         ```

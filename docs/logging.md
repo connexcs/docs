@@ -32,6 +32,8 @@ Click **`Simulate`** either from the **Logging** screen or from within a specifi
 
 <img src= "/misc/img/logging-41.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
+<img src= "/misc/img/2361.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
 + **Dialed Number**: Where the call will end (destination).
 + **CLI/ANI**: Where the call will originate from (configured on ConnexCS).
 + **Switch IP**: Where the call will traverse.
@@ -297,6 +299,9 @@ You can have take a look at the various SIP Timers in the table below:
 | **Timer K** | T4 for UDP| 17.1.2.2| Wait time for response retransmissions|
 
 <font size="2">*Table source*: [**IBM**](https://www.ibm.com/docs/en/was/8.5.5?topic=timers-sip-timer-summary); *Original Ref*: [**RFC 3261**](https://www.ietf.org/rfc/rfc3261.txt)</font size>
+
+
+[logging-sip]: /misc/img/logging-sip.png "SIP Traces"
 
 ### Decode Identity header in SIP Trace
 

@@ -77,52 +77,52 @@ A **Rate** component allows users to express their level of satisfaction, prefer
             ```
 
     2. `this.removeClassName(fields, className)`
-        ```js
+        ```js linenums="1"
         this.removeClassName('rate_2n2vy8wj', 'abc')
         ```
     
     3. `this.getValues()`
-        ```js
+        ```js linenums="1"
         var data = this.getValues();
         console.log(data);
         ```
     
     4. `this.hide(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['rate_2n2vy8wj']
         this.hide(fields)
         ```
     
     5. `this.show(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['rate_2n2vy8wj']
         this.show(fields)
         ```
     
     6. `this.disable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.disable(['rate_2n2vy8wj'])
         ```
     
     7. `this.enable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.enable(['rate_2n2vy8wj'])
         ```
     
     8.  `this.getValue('fieldName')`
-        ```js
+        ```js linenums="1"
         var ratename = this.getValue('rate_2n2vy8wj');
         console.log('getValue', ratename);
         ```
     
     9. `this.getComponent('component_ID')`
-        ```js
+        ```js linenums="1"
         var ratename = this.getComponent('rate_2n2vy8wj');
         console.log('getComponent', ratename);
         ```
     
     10. `this.setData(Value)`
-        ```js
+        ```js linenums="1"
         this.setData({
         "tabs": 4.5
         });

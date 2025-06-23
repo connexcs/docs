@@ -92,58 +92,58 @@ Sub-form component, for list (array) type form data, uses Table layout, doesn't 
             ```
 
     2. `this.removeClassName(fields, className)`
-        ```js
+        ```js linenums="1"
         this.removeClassName('table_n7rs950l', 'abc')
         ```
 
     3. `this.hide(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['table_n7rs950l']
         this.hide(fields)
         ```
     
     4. `this.show(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['table_n7rs950l']
         this.show(fields)
         ```
     
     5. `this.disable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.disable(['table_n7rs950l'])
         ```
     
     6. `this.enable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.enable(['table_n7rs950l'])
         ```
 
     7.  `this.getComponent('component_ID')`
-        ```js
+        ```js linenums="1"
         var subname = this.getComponent('table_n7rs950l');
         console.log('getComponent', subname);
         ```
     
     8. `this.getValues()`
-        ```js
+        ```js linenums="1"
         var data = this.getValues();
         console.log(data);
         ```
     
     9. `this.getValue('fieldName')`
-        ```js
+        ```js linenums="1"
         var subname = this.getValue('table_n7rs950l');
         console.log('getValue', subname);
         ```
     
     10. `this.setData(Value)`
-        ```js
+        ```js linenums="1"
         this.setData({ table_n7rs950l: [ { inputId: '1234', inputId2: 'value2' } ] })
         ```
 
 !!! info Add multiple classes
     Use the following syntax to add multiple classes to a component:
-    ```js
+    ```js linenums="1"
     this.addClassName('componentID', 'class1', 'class2')
     ```
 

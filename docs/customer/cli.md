@@ -351,7 +351,7 @@ The CLI selection is TIME DETERMINISTIC. It means that the system chooses a CLI 
 
 5.Navigate to **Management :material-menu-right: Customer :material-menu-right: Customer [Name] :material-menu-right: Edit :material-menu-right: Config :material-menu-right: Vars<sup>TOML</sup>** and write the below code:
 
-```js
+```js linenums="1"
 [cli]
 persist=600 //value is in seconds
 ```

@@ -97,52 +97,52 @@ Some of the most common methods include:
             ```
 
     2. `this.removeClassName(fields, className)`
-        ```js
+        ```js linenums="1"
         this.removeClassName('checkbox_g0x4pt54z', 'abc')
         ```
     
     3. `this.getValues()`
-        ```js
+        ```js linenums="1"
         var data = this.getValues();
         console.log(data);
         ```
     
     4. `this.hide(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['checkbox_g0x4pt54z']
         this.hide(fields)
         ```
     
     5. `this.show(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['checkbox_g0x4pt54z']
         this.show(fields)
         ```
     
     6. `this.disable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.disable(['checkbox_g0x4pt54z'])
         ```
     
     7. `this.enable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.enable(['checkbox_g0x4pt54z'])
         ```
     
     8. `this.getValue('fieldName')`
-        ```js
+        ```js linenums="1"
         var checkname = this.getValue('checkbox_g0x4pt54z');
         console.log('getValue', checkname);
         ```
     
     9. `this.getComponent('component_ID')`
-        ```js
+        ```js linenums="1"
         var checkname = this.getComponent('checkbox_g0x4pt54z');
         console.log('getComponent', checkname);
         ```
     
     10. `this.setData(Value)`
-        ```js
+        ```js linenums="1"
         this.setData(
          {
          "checkbox_g0x4pt54z": "Option 1", "Option 2",}

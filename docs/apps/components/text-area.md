@@ -78,52 +78,52 @@ The **Text-Area** element allows users to write freely across multiple lines, id
             ```
 
     2. `this.removeClassName(fields, className)`
-        ```js
+        ```js linenums="1"
         this.removeClassName('textarea_hl6emwsb', 'abc')
         ```
     
     3. `this.hide(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['textarea_hl6emwsb']
         this.hide(fields)
         ```
     
     4. `this.show(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['textarea_hl6emwsbi']
         this.show(fields)
         ```
     
     5. `this.disable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.disable(['textarea_hl6emwsb'])
         ```
     
     6. `this.enable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.enable(['textarea_hl6emwsb'])
         ```
         
     7.  `this.setData(Value)`
-        ```js
+        ```js linenums="1"
         this.setData(
          {"textarea_hl6emwsb": "Hi...I am Joe",});
         ```
     
     8.  `this.getComponent('component_ID')`
-        ```js
+        ```js linenums="1"
         var textareaname = this.getComponent('textarea_hl6emwsb');
         console.log('getComponent', textareaname);
         ```
     
     9. `this.getValue('fieldName')`
-        ```js
+        ```js linenums="1"
         var textareanamename = this.getValue('textarea_hl6emwsb');
         console.log('getValue', textareaname);
         ```
     
     10. `this.getValues()`
-        ```js
+        ```js linenums="1"
         var data = this.getValues();
         console.log(data);
         ```

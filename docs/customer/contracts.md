@@ -4,7 +4,11 @@
 
 The **Contracts** section lists contracts associated with the customer.
 
-**Contracts** are useful when you want new customers to agree to certain conditions before they can dial. Click on each name to view the details.
+**Contracts** are useful when you want new customers to agree to certain conditions before they can dial.
+
+Ensures compliance and security through contractual agreements and identity verification.
+
+Click on each name to view the details.
 
 ## Assign Contracts
 

@@ -59,25 +59,25 @@
 !!! Example
 
     1. `this.getValue(fieldName)`
-        ```js
+        ```js linenums="1"
         var dataname = this.getValue('aggrid_nd93m43c');
         console.log('getValue', dataname);
         ```
     
     2. `this.getValues()`
-        ```js
+        ```js linenums="1"
         var data = this.getValues();
         console.log(data);
         ```
     
     3. `this.getComponent('component_ID')`
-        ```js
+        ```js linenums="1"
         var dataname = this.getComponent('aggrid_nd93m43c');
         console.log('getComponent', dataname);
         ```
     
     4. `this.setData`
-        ```js
+        ```js linenums="1"
         this.setData(
         {
     	"grid_qwer": [
@@ -97,13 +97,13 @@
         )
         ```
     5. `this.hide(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['aggrid_nd93m43c']
         this.hide(fields)
         ```
     
     6. `this.show(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['aggrid_nd93m43c']
         this.show(fields)
         ```
@@ -113,7 +113,7 @@
 
 !!! info Add multiple classes
     Use the following syntax to add multiple classes to a component:
-    ```js
+    ```js linenums="1"
     this.addClassName('componentID', 'class1', 'class2')
     ```
 
@@ -255,7 +255,7 @@ This is achieved through the following mechanisms:
 
 * In the **Data Processing field :material-menu-right: Before sending the request**, write the following code which will only load finite number of rows (as you want) as you scroll, but won't load the whole dataset.
 
-```js
+```js linenums="1"
 args.off = args.startRow
 args.pager = args.startRow - args.endRow
 return config;

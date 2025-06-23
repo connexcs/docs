@@ -87,58 +87,58 @@ It's a versatile tool for collecting user input in situations where there are mu
             ```
 
     2. `this.removeClassName(fields, className)`
-        ```js
+        ```js linenums="1"
         this.removeClassName('select_rzaltclo', 'abc')
         ```
     
     3. `this.getValues()`
-        ```js
+        ```js linenums="1"
         var data = this.getValues();
         console.log(data);
         ```
     
     4. `this.hide(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['select_rzaltclo']
         this.hide(fields)
         ```
     
     5. `this.show(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['select_rzaltclo']
         this.show(fields)
         ```
     
     6. `this.disable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.disable(['select_rzaltclo'])
         ```
     
     7. `this.enable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.enable(['select_rzaltclo'])
         ```
     
     8.  `this.getValue('fieldName')`
-        ```js
+        ```js linenums="1"
         var selectname = this.getValue('select_rzaltclo');
         console.log('getValue', selectname);
         ```
       
     9.  `this.getComponent('component_ID')`
-        ```js
+        ```js linenums="1"
         var selectname = this.getComponent('select_rzaltclo');
         console.log('getComponent', selectname);
         ```
 
     10.  `this.setData(Value)`
-        ```js
+        ```js linenums="1"
         this.setData(
          {"select_rzaltclo": "Option 2",});
         ```
     
     11. `this.refreshFieldDataSource(datasource)`
-        ```js
+        ```js linenums="1"
         const dataSource = 'Name Of The Data Source Function'
         this.refreshFieldDataSource(dataSource)
         ```

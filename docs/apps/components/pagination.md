@@ -71,52 +71,52 @@ Imagine you have a form with hundreds of items to choose from, like products in 
             ```
 
     2. `this.removeClassName(fields, className)`
-        ```js
+        ```js linenums="1"
         this.removeClassName('pagination_oet28hkk', 'abc')
          ```
     
     3. `this.hide(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['pagination_oet28hkk']
         this.hide(fields)
         ```
     
     4. `this.show(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['pagination_oet28hkk']
         this.show(fields)
         ```
     
     5. `this.disable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.disable(['pagination_oet28hkk'])
         ```
     
     6. `this.enable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.enable(['pagination_oet28hkk'])
         ```
     
     7.  `this.getValue('fieldName')`
-        ```js
+        ```js linenums="1"
         var pagename = this.getValue('pagination_oet28hkk');
         console.log('getValue', pagename);
         ```
     
     8.  `this.getComponent('component_ID')`
-        ```js
+        ```js linenums="1"
         var pagename = this.getComponent('pagination_oet28hkk');
         console.log('getComponent', pagename);
         ```
 
     9. `this.getValues()`
-        ```js
+        ```js linenums="1"
         var data = this.getValues();
         console.log(data);
         ```
 
     10. `this.setData(Value)`
-        ```js
+        ```js linenums="1"
         this.setData({
         pagination: 3
         });

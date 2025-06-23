@@ -84,52 +84,52 @@ It offers a clear and efficient way for users to select one of two mutually excl
             ```
 
     2. `this.removeClassName(fields, className)`
-        ```js
+        ```js linenums="1"
         this.removeClassName('switch_ornfn03c', 'abc')
         ```
     
     3. `this.getValues()`
-        ```js
+        ```js linenums="1"
         var data = this.getValues();
         console.log(data);
         ```
     
     4. `this.hide(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['switch_ornfn03c']
         this.hide(fields)
         ```
 
     5. `this.show(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['switch_ornfn03c']
         this.show(fields)
         ```
         
     6. `this.disable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.disable(['switch_ornfn03c'])
         ```
     
     7. `this.enable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.enable(['switch_ornfn03c'])
         ```
 
     8.  `this.getValue('fieldName')`
-        ```js
+        ```js linenums="1"
         var switchname = this.getValue('switch_ornfn03c');
         console.log('getValue', switchname);
         ```
 
     9.  `this.getComponent('component_ID')`
-        ```js
+        ```js linenums="1"
         var switchname = this.getComponent('switch_ornfn03c');
         console.log('getComponent', switchname);
         ```
     
     10. `this.setData(Value)`
-        ```js
+        ```js linenums="1"
         this.setData(
          {
          "switch_ornfn03c": true,}

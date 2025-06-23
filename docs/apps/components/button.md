@@ -93,47 +93,47 @@ Here are some examples of how interactivity can be implemented for **Button** co
             ```
 
     2. `this.removeClassName(fields, className)`
-        ```js
+        ```js linenums="1"
         this.removeClassName('button_815t5dfs', 'abc')
         ```
     
     3. `this.getValues()`
-        ```js
+        ```js linenums="1"
         var data = this.getValues();
         console.log(data);
         ```
     
     4. `this.hide(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['button_815t5dfs']
         this.hide(fields)
         ```
     
     5. `this.show(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['button_815t5dfs']
         this.show(fields)
         ```
     
     6. `this.disable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.disable(['button_6ytj0ne9'])
         ```
     
     7. `this.getComponent('component_ID')`
-        ```js
+        ```js linenums="1"
         var butonname = this.getComponent('button_815t5dfs');
         console.log('getComponent', buttonname);
         ```
     
     8. `this.enable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.enable(['button_6ytj0ne9'])
         ```
 
 !!! info Add multiple classes
     Use the following syntax to add multiple classes to a component:
-    ```js
+    ```js linenums="1"
     this.addClassName('componentID', 'class1', 'class2')
     ```
 

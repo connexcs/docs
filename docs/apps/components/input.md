@@ -90,59 +90,59 @@ You can use focus and blur events to perform a variety of actions, such as:
             ```
 
     2. `this.removeClassName(fields, className)`
-        ```js
+        ```js linenums="1"
         this.removeClassName('input_h633hysc', 'abc')
         ```
     
     3. `this.getValue(fieldName)`
-        ```js
+        ```js linenums="1"
         var inputname = this.getValue('input_h633hysc');
         console.log('getValue', inputname);
         ```
     
     4. `this.getValues()`
-        ```js
+        ```js linenums="1"
         var data = this.getValues();
         console.log(data);
         ```
     
     5. `this.hide(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['input_h633hysc']
         this.hide(fields)
         ```
     
     6. `this.show(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['input_h633hysc']
         this.show(fields)
         ```
     
     7. `this.disable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.disable(['input_h633hysc'])
         ```
     
     8. `this.enable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.enable(['input_h633hysc'])
         ```
     
     9.  `this.setData(Value)`
-        ```js
+        ```js linenums="1"
         this.setData(
          {"input_h633hysc": "Hello",});
         ```
     
     10.  `this.getComponent('component_ID')`
-        ```js
+        ```js linenums="1"
         var inputname = this.getComponent('input_h633hysc');
         console.log('getComponent', inputname);
         ```
 
 !!! info Add multiple classes
     Use the following syntax to add multiple classes to a component:
-    ```js
+    ```js linenums="1"
     this.addClassName('componentID', 'class1', 'class2')
     ```
 

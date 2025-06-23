@@ -81,52 +81,52 @@ Some of the most common methods include:
             ```
 
     2. `this.removeClassName(fields, className)`
-        ```js
+        ```js linenums="1"
         this.removeClassName('statistic_15bwvfwi', 'abc')
         ```
     
     3. `this.getValue(fieldName)`
-        ```js
+        ```js linenums="1"
         var statname = this.getValue('statistic_15bwvfwi');
         console.log('getValue', statname);
         ```
     
     4. `this.getValues()`
-        ```js
+        ```js linenums="1"
         var data = this.getValues();
         console.log(data);
         ```
     
     5. `this.hide(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['statistic_15bwvfwi']
         this.hide(fields)
         ```
     
     6. `this.show(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['statistic_15bwvfwi']
         this.show(fields)
         ```
     
     7. `this.disable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.disable(['statistic_15bwvfwi'])
         ```
     
     8. `this.enable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.enable(['statistic_15bwvfwi'])
         ```
     
     9.  `this.setData(Value)`
-        ```js
+        ```js linenums="1"
         this.setData(
          {"statistic_15bwvfwi": "1234",});
         ```
     
     10. `this.getComponent('component_ID')`
-        ```js
+        ```js linenums="1"
         var statname = this.getComponent('statistic_15bwvfwi');
         console.log('getComponent', statname);
         ```

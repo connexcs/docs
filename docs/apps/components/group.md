@@ -74,35 +74,35 @@ Examples may include:
             ```
 
     2. `this.removeClassName(fields, className)`
-        ```js
+        ```js linenums="1"
         this.removeClassName('group_j9o3pb2i', 'abc')
         ```
     
     3. `this.getValue(fieldName)`
-        ```js
+        ```js linenums="1"
         var groupname = this.getValue('group_j9o3pb2i');
         console.log('getValue', groupname);
         ```
 
     4. `this.hide(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['group_j9o3pb2i']
         this.hide(fields)
         ```
     5. `this.show(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['group_j9o3pb2i']
         this.show(fields)
         ```
    
     6.  `this.getComponent('component_ID')`
-        ```js
+        ```js linenums="1"
         var groupname = this.getComponent('group_j9o3pb2i');
         console.log('getComponent', groupname);
         ```
     
     7. `this.setData(Value)`
-        ```js
+        ```js linenums="1"
         this.setData({
         group : {
         input: 'hello'
@@ -111,14 +111,14 @@ Examples may include:
         ```
 
     8. `this.getValues()`
-        ```js
+        ```js linenums="1"
         var data = this.getValues();
         console.log(data);
         ``` 
 
 !!! info Add multiple classes
     Use the following syntax to add multiple classes to a component:
-    ```js
+    ```js linenums="1"
     this.addClassName('componentID', 'class1', 'class2')
     ```
 

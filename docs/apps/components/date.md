@@ -131,46 +131,46 @@ Examples may include:
             ```
 
     2. `this.removeClassName(fields, className)`
-        ```js
+        ```js linenums="1"
         this.removeClassName('date_0gprgpvi', 'abc')
         ```
     
     3. `this.getValues()`
-        ```js
+        ```js linenums="1"
         var data = this.getValues();
         console.log(data);
         ```
     
     4. `this.hide(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['date_0gprgpvi']
         this.hide(fields)
         ```
     
     5. `this.show(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['date_0gprgpvi']
         this.show(fields)
         ```
     
     6. `this.disable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.disable(['date_0gprgpvi'])
         ```
     
     7. `this.enable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.enable(['date_0gprgpvi'])
         ```
 
     8. `this.getValue('fieldName')`
-        ```js
+        ```js linenums="1"
         var datename = this.getValue('date_0gprgpvi');
         console.log('getValue', datename);
         ```
     
     9.  `this.setData(Value)`
-        ```js
+        ```js linenums="1"
         this.setData(
          {
          "date_0gprgpvi": "2023-11-30",}
@@ -178,14 +178,14 @@ Examples may include:
         ```
     
     10.  `this.getComponent('component_ID')`
-        ```js
+        ```js linenums="1"
         var datename = this.getComponent('date_0gprgpvi');
         console.log('getComponent', datename);
         ```
 
 !!! info Add multiple classes
     Use the following syntax to add multiple classes to a component:
-    ```js
+    ```js linenums="1"
     this.addClassName('componentID', 'class1', 'class2')
     ```
 

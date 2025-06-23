@@ -72,30 +72,30 @@ It typically provides a self-contained interface for collecting additional infor
 
 !!! Example
     1. `this.getComponent('component_ID')`
-        ```js
+        ```js linenums="1"
         var dialogname = this.getComponent('dialog_icubvv8x');
         console.log('getComponent', dialogname);
         ```
 
     2.  `this.getValue('fieldName')`
-        ```js
+        ```js linenums="1"
         var dialogname = this.getValue('dialog_icubvv8x');
         console.log('getValue', dialogname);
         ```
     
     3. `myDialog.open()`
-        ```js
+        ```js linenums="1"
         var myDialog = this.getComponent('dialog_icubvv8x')
         myDialog.open()
         ```
         
     4. `this.getValues()`
-        ```js
+        ```js linenums="1"
         var data = this.getValues();
         console.log(data);
     
     5. `myDialog.close()`
-        ```js
+        ```js linenums="1"
         var myDialog = this.getComponent('dialog_icubvv8x')
         myDialog.close()
         ```

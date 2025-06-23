@@ -55,13 +55,13 @@ You would need to make a custom alert element and include event listeners in it 
 
 !!! Example
     1. `this.hide(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['alert_ilqsq5xq']
         this.hide(fields)
         ```
 
     2. `this.show(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['alert_ilqsq5xq']
         this.show(fields)
         ```
