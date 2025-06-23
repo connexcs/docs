@@ -32,8 +32,6 @@ Click **`Simulate`** either from the **Logging** screen or from within a specifi
 
 <img src= "/misc/img/logging-41.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-<img src= "/misc/img/2361.png" style="border: 2px solid #4472C4; border-radius: 8px;">
-
 + **Dialed Number**: Where the call will end (destination).
 + **CLI/ANI**: Where the call will originate from (configured on ConnexCS).
 + **Switch IP**: Where the call will traverse.

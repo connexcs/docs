@@ -232,12 +232,6 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
             B -- No: If the dialed number doesnt match any DID in the account--> D{Route call externally via carrier as configured}
         ```
 
-!!! Note "Enabling TCPA  Litigator DNC flag and On Net Call Routing flag"
-    1. **Navigate to Management :material-menu-right: Tags :material-menu-right: Routing :material-menu-right: Locks :material-menu-right: TCPA  Litigator DNC/On Net Call Routing**.
-    2. Click on the checkbox to enable the required flags.
-    3. Click on `Save`.
-    <img src= "/customer/img/tcpa2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
-
 #### Media
 
 1. **Transcoding**: Enter the number  of channels allowed for transcoding. This is a limited option. The best use case is for customers in low-bandwidth areas that want to use G.729.

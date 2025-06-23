@@ -152,10 +152,6 @@ function main (data = {}) {
 
     <img src= "/apps/img/app_scriptforge2.png" width= "350" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-    <img src= "/apps/img/app_scriptforge3.png" width= "350" style="border: 2px solid #4472C4; border-radius: 8px;">
-
-    <img src= "/apps/img/app_scriptforge5.png" width= "350" style="border: 2px solid #4472C4; border-radius: 8px;">
-
     6.Your saved Script becomes available on the main IDE section.
 
     7.Click on ScriptForge.

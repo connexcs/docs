@@ -92,11 +92,6 @@ Click :material-plus: to configure the following fields:
     {"customer_id":"@companyId"}
     ```
 
-=== "RTP" (Real-Time Transport Protocol)"
-
-```
- {"customer_id":"@companyId", "is_provider":0"}
-```
 === "RTP (Real-Time Transport Protocol)"
 
     ```

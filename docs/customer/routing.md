@@ -205,7 +205,8 @@ View and configure existing routes on the Routing tab in the Customer card. To c
         A[Customer A makes a call using the route with the ON NET CALLING flag] --> B{Syatem checks the dialed number and compares it against DIDs added to the account across all customers}
         B -- Yes: If the dialed number matches any DID in the account--> C{Route call internally to the matching DID}
         B -- No: If the dialed number doesnt match any DID in the account--> D{Route call externally via carrier as configured}
-     ```
+    ```
+
 ### Media
 
 **Transcoding**: Transcoding manages different audio codecs to ensure compatibility between the calling and receiving systems.
