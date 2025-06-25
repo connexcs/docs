@@ -746,9 +746,9 @@ It's an effective and quicker way to check a customer's audio quality and call p
 
 |**Noun**|**Description**|**Example**|
 |--------|---------------|-----------|
-|`context`|Enables the same DTMF input to perform different actions depending on the current state of the call.|Pressing `1` in the **Main Menu context** might play the `user’s account balance`, *while* pressing `1` in the **Transfer Funds context** might confirm the `transfer`|
+|`context`|Enables the same DTMF input to perform different actions depending on the current state of the call.|Call starts in `context B`, pressing `1` switches to `context A`, pressing `2` **hangs up** (in B) or **plays a sound** (in A)|
 
-!!! Example "Example 2"
+!!! Example "Example 1"
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
