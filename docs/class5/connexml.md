@@ -550,8 +550,6 @@ An existing call is transferred to a different destination using the `Dial` ver
 
             </Press>
             <Dial hangupOnStar="true" hangupOnStarContext ="A">2919</Dial>
-            <Enter>A</Enter>
-            <Say>This is after hangup.</Say>
         </Response>
         ```
 
