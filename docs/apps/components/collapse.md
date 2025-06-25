@@ -74,24 +74,24 @@ Some of the most common methods include:
             ```
 
     2. `this.removeClassName(fields, className)`
-        ```js
+        ```js linenums="1"
         this.removeClassName('collapse_itxbeisp', 'abc')
         ```
     
     3. `this.hide(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['collapse_itxbeisp']
         this.hide(fields)
         ```
     
     4. `this.show(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['collapse_itxbeisp']
         this.show(fields)
         ```
     
     5. `this.getComponent('component_ID')`
-        ```js
+        ```js linenums="1"
         var collapsename = this.getComponent('collapse_itxbeisp');
         console.log('getComponent', collapsename);
         ```

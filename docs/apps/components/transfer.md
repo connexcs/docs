@@ -71,45 +71,45 @@ It's commonly used to create interactive selections, manage data assignments, or
             ```
 
     2. `this.removeClassName(fields, className)`
-        ```js
+        ```js linenums="1"
         this.removeClassName('transfer_jhg5bttj', 'abc')
         ```
     
     3. `this.hide(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['transfer_jhg5bttj']
         this.hide(fields)
         ```
     
     4. `this.show(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['transfer_jhg5bttj']
         this.show(fields)
         ```
     
     5. `this.disable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.disable(['transfer_jhg5bttj'])
         ```
     
     6. `this.enable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.enable(['transfer_jhg5bttj'])
         ```
     
     7. `this.getValue(fieldName)`
-        ```js
+        ```js linenums="1"
         var fields = this.getValue('transfer_jhg5bttj');
         console.log('getValue', fields);
         ```
     
     8. `this.getValues()`
-        ```js
+        ```js linenums="1"
         var data = this.getValues();
         console.log(data);
         ```
     9. `this.setData()`
-        ```js
+        ```js linenums="1"
         this.setData({
 	    "transfer_8pd5pfng": [
 		"2",

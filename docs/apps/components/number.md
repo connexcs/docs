@@ -90,52 +90,52 @@ Examples mat include:
             ```
 
     2. `this.removeClassName(fields, className)`
-        ```js
+        ```js linenums="1"
         this.removeClassName('number_kzdn0gvb', 'abc')
         ```
     
     3. `this.getValues()`
-        ```js
+        ```js linenums="1"
         var data = this.getValues();
         console.log(data);
         ```
     
     4. `this.hide(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['number_kzdn0gvb']
         this.hide(fields)
         ```
     
     5. `this.show(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['number_kzdn0gvb']
         this.show(fields)
         ```
     
     6. `this.disable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.disable(['number_kzdn0gvb'])
         ```
     
     7. `this.enable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.enable(['number_kzdn0gvb'])
         ```
     
     8.  `this.getValue('fieldName')`
-        ```js
+        ```js linenums="1"
         var numbername = this.getValue('number_kzdn0gvb');
         console.log('getValue', numbername);
         ```
     
     9.  `this.setData(Value)`
-        ```js
+        ```js linenums="1"
         this.setData(
          {"number_kzdn0gvb": "2024",});
         ```
     
     10.  `this.getComponent('component_ID')`
-        ```js
+        ```js linenums="1"
         var numbername = this.getComponent('number_kzdn0gvb');
         console.log('getComponent', numbername);
         ```

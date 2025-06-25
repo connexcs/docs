@@ -56,25 +56,25 @@ The **Inline** layout approach allows for a more compact and organized form layo
             ```
 
     2. `this.removeClassName(fields, className)`
-        ```js
+        ```js linenums="1"
         this.removeClassName('inline_1lm561y7', 'abc')
         ```
     
     3. `this.hide(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['inline_1lm561y7']
         this.hide(fields)
         ```
     
     4. `this.show(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['inline_1lm561y7']
         this.show(fields)
         ```
 
 !!! info Add multiple classes
     Use the following syntax to add multiple classes to a component:
-    ```js
+    ```js linenums="1"
     this.addClassName('componentID', 'class1', 'class2')
     ```
 

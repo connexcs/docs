@@ -79,40 +79,40 @@ Each tab acts as a dedicated space for specific information, guiding users throu
             ```
 
     2. `this.removeClassName(fields, className)`
-        ```js
+        ```js linenums="1"
         this.removeClassName('tabs_8r5c1t2n, 'abc')
         ```
     
     3. `this.hide(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['tabs_8r5c1t2n']
         this.hide(fields)
         ```
     
     4. `this.show(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['tabs_8r5c1t2n']
         this.show(fields)
         ```
     
     5. `this.disable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.disable(['tabs_8r5c1t2n'])
         ```
     
     6. `this.enable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.enable(['tabs_8r5c1t2n'])
         ```
     
     7. `this.getValues()`
-        ```js
+        ```js linenums="1"
         var data = this.getValues();
         console.log(data);
         ```
     
     8.  `this.getComponent('component_ID')`
-        ```js
+        ```js linenums="1"
         var tabsname = this.getComponent('tabs_8r5c1t2n');
         console.log('getComponent', tabsname);
         ```

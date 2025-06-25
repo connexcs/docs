@@ -85,39 +85,39 @@ Some examples of how card components can be made interactive include:
             ```
 
     2. `this.removeClassName(fields, className)`
-        ```js
+        ```js linenums="1"
         this.removeClassName('card_khlorb9y', 'abc')
         ```
     
     3. `this.getValue(fieldName)`
-        ```js
+        ```js linenums="1"
         var cardname = this.getValue('card_khlorb9y');
         console.log('getValue', cardname);
         ```
     4. `this.getValues()`
-        ```js
+        ```js linenums="1"
         var data = this.getValues();
         console.log(data);
         ```
     5. `this.hide(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['card_khlorb9y']
         this.hide(fields)
         ```
     6. `this.show(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['card_khlorb9y']
         this.show(fields)
         ```
     7. `this.getComponent('component_ID')`
-        ```js
+        ```js linenums="1"
         var cardname = this.getComponent('card_khlorb9y');
         console.log('getComponent', cardname);
         ```
 
 !!! info Add multiple classes
     Use the following syntax to add multiple classes to a component:
-    ```js
+    ```js linenums="1"
     this.addClassName('componentID', 'class1', 'class2')
     ```
 
