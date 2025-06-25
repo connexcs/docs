@@ -865,7 +865,7 @@ graph TD
 !!! Example "Example: XML Integration (App Script Method)"
     **App Script Example (within the IDE):**
 
-    ```js
+    ```js linenums="1"
         const llm = require('cxLLM');
         // Retrieves the current day of the week
         function dayOfWeek() {

@@ -78,49 +78,49 @@
             ```
 
     2. `this.removeClassName(fields, className)`
-        ```js
+        ```js linenums="1"
         this.removeClassName('time_16of90m8', 'abc')
         ```
     
     3. `this.hide(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['time_16of90m8']
         this.hide(fields)
         ```
     
     4. `this.show(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['time_16of90m8']
         this.show(fields)
         ```
     
     5. `this.disable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.disable(['time_16of90m8'])
         ```
     
     6. `this.enable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.enable(['time_16of90m8'])
         ```
     
     7. `this.getValue('fieldName')`
-        ```js
+        ```js linenums="1"
         var timename = this.getValue('time_16of90m8');
         console.log('getValue', timename);
         ```
     8. `this.getValues()`
-        ```js
+        ```js linenums="1"
         var data = this.getValues();
         console.log(data);
         ```
     9. `this.getComponent('component_ID')`
-        ```js
+        ```js linenums="1"
         var timename = this.getComponent('time_16of90m8');
         console.log('getComponent', timename);
         ```
     10. `this.setData(Value)`
-        ```js
+        ```js linenums="1"
         this.setData(
          {
          "time_16of90m8": "10",}

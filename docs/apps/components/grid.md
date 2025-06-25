@@ -66,38 +66,38 @@ Examples may include:
             ```
 
     2. `this.removeClassName(fields, className)`
-        ```js
+        ```js linenums="1"
         this.removeClassName('grid_th1wozzk', 'abc')
         
         ```
     
     3. `this.hide(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['grid_th1wozzk']
         this.hide(fields)
         ```
     
     4. `this.show(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['grid_th1wozzk']
         this.show(fields)
         ```
     
     5. `this.getComponent('component_ID')`
-        ```js
+        ```js linenums="1"
         var gridname = this.getComponent('grid_th1wozzk');
         console.log('getComponent', gridname);
         ```
     
     6.  `this.getValues()`
-        ```js
+        ```js linenums="1"
         var data = this.getValues();
         console.log(data);
         ``` 
 
 !!! info Add multiple classes
     Use the following syntax to add multiple classes to a component:
-    ```js
+    ```js linenums="1"
     this.addClassName('componentID', 'class1', 'class2')
     ```
 

@@ -120,46 +120,46 @@ Here's a general approach to integrating interactivity:
             ```
 
     2. `this.removeClassName(fields, className)`
-        ```js
+        ```js linenums="1"
         this.removeClassName('cascader_ccj8m3in', 'abc')
         ```
     
     3. `this.getValues(fieldName)`
-        ```js
+        ```js linenums="1"
         var data = this.getValues();
         console.log(data);
         ```
     
     4. `this.hide(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['cascader_ccj8m3in']
         this.hide(fields)
         ```
     
     5. `this.show(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['cascader_ccj8m3in']
         this.show(fields)
         ```
     
     6. `this.disable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.disable(['cascader_ccj8m3in'])
         ```
     
     7. `this.enable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.enable(['cascader_ccj8m3in'])
         ```
     
     8. `this.getComponent('component_ID')`
-        ```js
+        ```js linenums="1"
         var cascadername = this.getComponent('cascader_ccj8m3in');
         console.log('getComponent', cascadername);
         ```
     
     9. `this.setData(Value)`
-        ```js
+        ```js linenums="1"
             this.setData(
             {
 	            "cascader_oe6xkjqr": [

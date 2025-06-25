@@ -9,6 +9,7 @@ theme:
   features:
     - navigation.instant
     - navigation.tabs
+    - content.code.copy
   palette:
     - scheme: default
       toggle:
@@ -335,5 +336,11 @@ nav:
         - Transfer: apps/components/transfer.md
         - Tree Select: apps/components/tree-select.md
         - Webphone: apps/components/webphone.md
+    - Contact Center:
+        - Introduction: customer-portal/cp-contact-center.md
+        - Contact Center Setup & Usage Guide: customer-portal/cp-cc-install.md
+        - Preview Dialer: customer-portal/cp-cc-pd.md
+        - Auto Dialer: customer-portal/cp-cc-ad.md
+        - Broadcast Dialer: customer-portal/cp-cc-bd.md
 
     
