@@ -304,19 +304,19 @@ To grant access to functions for an AI agent, follow these steps:
       1. Under the newly created app, add a Script Forge. [Click here](https://docs.connexcs.com/apps/architecture/script/) to know the steps.
 
 3. **Define the Function**:
-      1. Within the Script Forge, add the function you want the AI agent to access.
+    Within the Script Forge, add the function you want the AI agent to access.
 
-   !!! Example "Example Function"
-        ```js linenums="1"
-        /**
-          * Transfer
-          * @param {Object} param - Param Object
-          * @param {string} param.name - The name of the person who you wish to transfer the call to.
+    !!! Example "Example Function"
+           ```js linenums="1"
+            /**
+             * Transfer
+             * @param {Object} param - Param Object
+             * @param {string} param.name - The name of the person who you wish to transfer the call to.
             */
             function transfer() {
                 return { action: 'transfer', destination: '160' }
             }    
-         ```
+            ```
 
 4. **Assign the App to the AI Agent**:
       1. Navigate to your AI agent that you have previously created.
