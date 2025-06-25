@@ -6,7 +6,7 @@ Pagination is a mechanism for presenting and navigating through large chunks of 
 
 Imagine you have a form with hundreds of items to choose from, like products in a catalog. Without pagination, users would have to scroll through an endless list, making it incredibly time-consuming and frustrating.
 
-<img src= "/apps/components/img/pagination.png">
+<img src= "/apps/components/img/pagination.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Use Case
 
@@ -55,7 +55,7 @@ Imagine you have a form with hundreds of items to choose from, like products in 
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/pagination2.png">
+<img src= "/apps/components/img/pagination2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Example
     1. `this.addClassName(fields, className)`

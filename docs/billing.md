@@ -32,4 +32,4 @@ In per-minute billing, the number of seconds you use gets tallied daily. Its com
 
 ## Minimum Charges
 
-All accounts must spend a minimum of $20 per-month / per-server to remain active. This helps to prevent incurring losses from stagnant accounts.
+All accounts must spend a minimum cost per-server to remain active. Check [Pricing](https://connexcs.com/pricing) here. This helps to prevent incurring losses from stagnant accounts.

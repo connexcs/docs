@@ -39,13 +39,13 @@ Find below the definitions for the most relevant telephony terms, along with som
 |**Dialog**|n/a| A Dialog is a single call.|
 
 !!! info
-```mermaid
+    ```mermaid
     graph TD
     A[ACD Calculation] -->B[Correct Method]
     A[ACD Calculation] -->C[Incorrect Method]
     B -->D[Total Duration- answered calls /  Total Connected-answered calls]
     C -->E[Total Duration / Total Calls]
-```
+    ```
 
 !!! Info
     | S.No | ASR Score     | Inference          |

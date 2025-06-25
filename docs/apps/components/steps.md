@@ -6,7 +6,7 @@ The **Steps** component, guides users through a complex process by breaking it d
 
 It serves as a visual and functional indicator of progress, improving user experience and data collection.
 
-<img src= "/apps/components/img/steps1.png">
+<img src= "/apps/components/img/steps1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Use Case
 
@@ -54,7 +54,7 @@ It serves as a visual and functional indicator of progress, improving user exper
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/steps22.png">
+<img src= "/apps/components/img/steps22.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Example
     1. `this.addClassName(fields, className)`

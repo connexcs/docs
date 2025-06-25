@@ -20,7 +20,7 @@ Click on each name to view the details.
 
 2. Click **`Save`** to assign the contact to the customer.
 
-&emsp;![alt text][customer-contracts]
+<img src= "/customer/img/customer-contracts1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! tip "How to create a Contract"
     For details on Contract setup, see **Setup :material-menu-right: Config :material-menu-right: [Contracts](https://docs.connexcs.com/setup/config/contracts/)**.
@@ -28,5 +28,3 @@ Click on each name to view the details.
     Contract Revisions are also available here.
 
 !!! Danger "Customers are restricted from making calls until their contract is reviewed and approved."
-
-[customer-contracts]: /customer/img/customer-contracts.png "Customer Contracts"

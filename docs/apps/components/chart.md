@@ -12,7 +12,7 @@ The 5 types of Charts we use are:
 4. **Pie charts**: Show the proportion of each category in a data set as slices of a pie. Useful for highlighting the relative size of different parts of a whole.
 5. **Sankey Charts**: The Sankey diagram encodes each node of the raw data into a small rectangle. Different nodes are presented in different colors as far as possible.
 
-<img src= "/apps/components/charts.png">
+<img src= "/apps/components/charts.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Use Case
 
@@ -57,7 +57,7 @@ The 5 types of Charts we use are:
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/chart2.png">
+<img src= "/apps/components/img/chart2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Example
     1. `this.addClassName(fields, className)`
@@ -163,7 +163,7 @@ The 5 types of Charts we use are:
 
    * Enable **Toolbox** to get options like **Zoom** and **Zoom Reset**.
 
-<img src= "/apps/components/img/charts_basic1.png" width="500">
+<img src= "/apps/components/img/charts_basic1.png" width="500" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 2.**Series**: When you have more than 2 charts in a single chart.
 
@@ -179,7 +179,7 @@ The 5 types of Charts we use are:
    * **Encode X**: The X-axis index in a graph refers to the numerical values or categories displayed along the bottom horizontal axis.
    * **Encode Y**: The Y-axis index in a graph refers to the numerical values displayed along the vertical axis.
 
-<img src= "/apps/components/img/charts_series1.png" width="400">
+<img src= "/apps/components/img/charts_series1.png" width="400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Info Line Charts
     When you select **Line Charts** some additional fields are displayed:<br>
@@ -195,7 +195,7 @@ The 5 types of Charts we use are:
 
     Sankey charts are handy for understanding and visualizing how resources or information move through complex systems. They're used in various fields to make it easier to see and analyze these flows.
 
-    <img src= "/apps/img/charts_sankey.png">
+    <img src= "/apps/img/charts_sankey.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 3.**X-Axis**: To change the settings for X-Axis.
 
@@ -203,7 +203,7 @@ The 5 types of Charts we use are:
   * **Name**: Enter the name of the X-Axis.
   * **Formatter**: Select the value you want to display on X-axis like **Duration**, **Millisecond**, **Decimal**, **Percent**, **Bytes**.
 
-<img src= "/apps/components/img/charts_xaxis1.png" width="400">
+<img src= "/apps/components/img/charts_xaxis1.png" width="400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 4.**Y-Axis**: To change the settings for Y-Axis.
 
@@ -211,7 +211,7 @@ The 5 types of Charts we use are:
 * **Name**: Enter the name of the Y-Axis.
 * **Formatter**: Select the value you want to display on X-axis like **Duration**, **Millisecond**, **Decimal**, **Percent**, **Bytes**.
 
-<img src= "/apps/components/img/charts_yaxis1.png" width="400">
+<img src= "/apps/components/img/charts_yaxis1.png" width="400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 4.**Grid**: To change the settings for Grid when we've multiple charts.
 
@@ -220,9 +220,8 @@ The 5 types of Charts we use are:
 * **Width**: Change the width of the chart using the slider.
 * **Height**: Change the height of the chart using the slider.
 
-<img src= "/apps/components/img/charts_grid1.png" width="400">
+<img src= "/apps/components/img/charts_grid1.png" width="600" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## First time User?
 
 If you are using the Page Builder components on the ConnexCS platform for the first time, we request you to use our guide on <a href="https://docs.connexcs.com/apps/page-builder/#steps-to-use-components-in-the-page-builder"target="_blank">steps to use the Components</a>.
-

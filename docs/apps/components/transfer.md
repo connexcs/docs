@@ -6,7 +6,7 @@ A **Transfer** component in a form is a user interface element that allows users
 
 It's commonly used to create interactive selections, manage data assignments, or filter content.
 
-<img src= "/apps/components/img/transfer.png">
+<img src= "/apps/components/img/transfer.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Use Case
 
@@ -55,7 +55,7 @@ It's commonly used to create interactive selections, manage data assignments, or
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/transfer2.png">
+<img src= "/apps/components/img/transfer2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Example
     1. `this.addClassName(fields, className)`
@@ -155,7 +155,7 @@ Form validation can be performed using a variety of methods, including:
 ||**value**: Value of the current field|
 ||**callback**: Callback function (must be called) upon completion of validation; **callback('Error message')/ callback(new Error('Error message'))**. These are two ways to return an error message|
 
-<img src= "/apps/components/img/cascader_validation.png">
+<img src= "/apps/components/img/cascader_validation.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Info
     1. The **callback() function** is also called to verify success in the custom validation method.

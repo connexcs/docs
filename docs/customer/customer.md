@@ -69,14 +69,14 @@ By clicking on `+` button we can add customer (see [**Create Customers**](https:
         + Write the Body of the referral.
         + Click on `Send`.
   
-<img src= "/customer/img/referral.png">
+<img src= "/customer/img/referral.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! note "Custom Email Servers"
     Change the outbound Email Server and SMS origination number in **Setup :material-menu-right: Settings**.
 
 **Active**: Filter customer(s) based on account status. Results on the page will automatically arrange themselves according to the filter.
 
-&emsp; ![alt text][customer-status]
+<img src= "/customer/img/391.png" width= "200" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Customer View Modification
 
@@ -167,7 +167,7 @@ By clicking on `+` button we can add customer (see [**Create Customers**](https:
     !!! Example
         In the image below you can see the time slider starts from 12:00 AM till 8:00 AM, this means your customers are only allowed to dial between 12:00 AM and 8:00 AM. After 8:00 AM your customers won't be able to call. The rest of the slots (grey color) are restricted slots.
 
-        <img src= "/customer/img/restrict.png" width="400">
+        <img src= "/customer/img/restrict.png" width="400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! note
     The daily spend day is defined from 00:00 UTC to 00:00 UTC.
@@ -178,7 +178,7 @@ By clicking on `+` button we can add customer (see [**Create Customers**](https:
 
 Once you create a customer, click on the customer name to view details and provide additional configuration. For documentation on that configuration, navigate to the sub-section on the left:
 
-&emsp; ![alt text][customersubs]
+<img src= "/customer/img/customersubs1.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ___
 
@@ -196,7 +196,3 @@ At ConnexCS Pvt. Ltd., we offer comprehensive white-labeling solutions, enabling
 With full customization of branding, user interfaces, and features, we ensure a seamless integration into your existing offerings.
 
 Our flexible platform supports easy API integration and scalable infrastructure, allowing you to provide reliable, fully branded services to your customers without the need for in-house development.
-
-
-[customer-status]: /customer/img/39.png "Customer Status"
-[customersubs]: /customer/img/customersubs.png "Customer Sub-Sections"

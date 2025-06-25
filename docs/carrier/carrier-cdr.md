@@ -2,7 +2,7 @@
 
 **Management :material-menu-right: Carrier :material-menu-right: CDR**
 
-<img src= "/carrier/img/carriercdr.png">
+<img src= "/carrier/img/carriercdr.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 The **CDR** tab displays call drop rates. Use **`Recalc CDR`** when CDR records aren't accurate.
 

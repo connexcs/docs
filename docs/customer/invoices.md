@@ -28,7 +28,7 @@ To add a new invoice:
 3. Set an Invoice Date in the bottom right.
 4. Click **`Edit Invoice Item`**.
 
-    ![alt text][invoice-8]
+    <img src= "/misc/img/2291.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 5. The selected **Package** will autocomplete the Quantity, Unit Price, and Tax. You can revise these parameters as needed.
 6. Set a date range.
@@ -50,7 +50,7 @@ Click ![alt text][invoice-edit] to change the date, then click **`Edit Invoice I
 1. Login to your account.
 2. Navigate to **Management :material-menu-right: Customer :material-menu-right: Customer [Name] :material-menu-right: Main :material-menu-right: Summary :material-menu-right: Daily, Weekly or Monthly :material-menu-right: Download Invoice** (csv format).
 
-<img src= "/misc/img/in1.png">
+<img src= "/misc/img/in1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Allocate Payment
 
@@ -67,11 +67,7 @@ To allocate customer payments to a specific invoice:
 You can also generate an invoice through **Schedule Report**.
 
 [Click here](https://docs.connexcs.com/report/#schedule-report) to check the process for creating the invoice.
+ 
 
-[invoice-8]: /misc/img/229.png "Invoice-8"
-
-[invoice-pdf]: /misc/img/invoice-pdf.png "Invoice PDF"
-[invoice-edit]: /misc/img/invoice-edit.png "Edit Invoice"
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzNjY4NTkzMl19
--->
+[invoice-pdf]: /misc/img/invoice-pdf.png "Invoice PDF" style="border: 2px solid #4472C4; border-radius: 8px;"
+[invoice-edit]: /misc/img/invoice-edit.png "Edit Invoice" style="border: 2px solid #4472C4; border-radius: 8px;"

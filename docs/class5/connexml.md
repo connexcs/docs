@@ -14,15 +14,15 @@ In the DID section you can allocate the calls at different places. Click on Call
 
 1.**URI**: Its points to a client's server. You can send the call either to the Destination DID or an IP address.
 
-<img src= "/class5/img/ml2.png"  width="400">
+<img src= "/class5/img/ml2.png"  width="400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 2.**External**: Allows you to re-direct the call out back again to the network.
 
-<img src= "/class5/img/ml3.png" width="400">
+<img src= "/class5/img/ml3.png" width="400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 3.**Internal**: Allows you to route the call internally like a SIP user or a Queue.
 
-<img src= "/class5/img/ml4.png" width="400">
+<img src= "/class5/img/ml4.png" width="400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 Later, the Class5 Applications makes an HTTP request to the URL endpoint you configured for that number. The endpoint will contain instructions telling ConnexML what to do next with the call.
 
@@ -47,7 +47,7 @@ In case it hits the `ConneXML` application, `ConneXML` can as to direct it (Rout
 
 ConneXML uses the standard [`.xml` markup](https://en.wikipedia.org/wiki/XML) language.
 
-.<img src= "/class5/img/ml11.png">
+.<img src= "/class5/img/ml11.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ### How to reach and code the ConneXML Editor?
 
@@ -57,11 +57,11 @@ To get ConneXML working you will need to:
 2. On the top right click on blue `+` sign.
 3. Add new and make sure you choose App Type = ConneXML. The destination can be alpha-numeric and contains an endpoint, for example "customer_a_connexml".
 
-<img src= "/class5/img/ml5.png">
+<img src= "/class5/img/ml5.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 4.After saving the above information. Click on `Go to App` to enter the ConneXML editor. Write your code and click `Save`.
 
-<img src= "/class5/img/ml6.png">
+<img src= "/class5/img/ml6.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 5.If you initially want this to hit a customers server same as before, you can use something like this in the XML field.
 
@@ -76,7 +76,7 @@ To get ConneXML working you will need to:
 
 7.**Select Code Snippet**: Enables you to choose pre-made ConneXML codes for faster and more convenient use. You choose from multiple available options.
 
-<img src= "/class5/img/codesnippet.png">
+<img src= "/class5/img/codesnippet.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ### ConneXML Components
 

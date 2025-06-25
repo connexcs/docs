@@ -8,7 +8,7 @@ Think of it as a smaller form placed within the larger form, providing additiona
 
 Sub-form component, for list (array) type form data, uses Table layout, doesn't support layout nesting.
 
-<img src= "/apps/components/img/subform.png">
+<img src= "/apps/components/img/subform.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Use Case
 
@@ -76,7 +76,7 @@ Sub-form component, for list (array) type form data, uses Table layout, doesn't 
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/subform3.png">
+<img src= "/apps/components/img/subform3.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Example
     1. `this.addClassName(fields, className)`

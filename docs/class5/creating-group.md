@@ -88,9 +88,9 @@ You must first upload the audio files to the system if you wish to use them for 
 
 ## Create a Group
 
-To create a new Group, click :material-plus:. 
+To create a new Group, click :material-plus:.
 
-![group12](/class5/img/group12.jpg)
+<img src= "/class5/img/group12.jpg" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 + **Name:** Enter the name for the group.
 + **Customer:** (Available only when you add the Group from Class5, not when in the Customer management area): From the drop-down list, select the customer to whom the group applies.
@@ -103,7 +103,7 @@ To create a new Group, click :material-plus:.
         + `Destination`: Click **`Edit`** to enter the Destination as either an External number or Internal (ConnexCS) extension, Session Initiation Protocol (SIP) User, group, Direct Inward Dialing (DID), etc.
         + `Ring Timeout`: This helps when calling mobile numbers, as you can cancel the call before it hits voicemail, allowing it to roll to the next Group Member.
 
-        ![alt text][group1]
+        <img src= "/class5/img/gp1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
     + **Queue** strategy requires extra fields (no **Group Members** tab available):
         + `On Hold Music`: The audio file to play to the member and caller when the call is on hold.
@@ -114,11 +114,11 @@ To create a new Group, click :material-plus:.
         + `Agent Logout Destination`: The extension number an individual must dial to quit the group.
         + `Agent Offhook Destination`: An extension number an individual must dial to receive calls soon after joining the group.
 
-        ![alt text][group2]
+        <img src= "/class5/img/gp2.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 + **PBX Server**: Select the desired regional server. (PBX: Private Branch Exchange)
 
 Select **`Save`** after making all necessary changes.
 
-[group1]: /class5/img/group1.png "Group Members Configuration"
-[group2]: /class5/img/group2.png "Group Queue Configuration"
+[group1]: /class5/img/group1.png "Group Members Configuration" style="border: 2px solid #4472C4; border-radius: 8px;"
+[group2]: /class5/img/group2.png "Group Queue Configuration" style="border: 2px solid #4472C4; border-radius: 8px;"

@@ -178,7 +178,7 @@ To grant access to functions for an AI agent, follow these steps:
       1. Within the Script Forge, add the function you want the AI agent to access.
 
    !!! Example "Example Function"
-        ```js linenums="1"
+       ```js linenums="1"
         /**
           * Transfer
           * @param {Object} param - Param Object
@@ -187,7 +187,7 @@ To grant access to functions for an AI agent, follow these steps:
         function transfer() {
             return { action: 'transfer', destination: '160' }
         }
-        ```
+       ```
 
 4. **Assign the App to the AI Agent**:
       1. Navigate to your AI agent that you have previously created.
@@ -195,6 +195,18 @@ To grant access to functions for an AI agent, follow these steps:
 
 5. **Allow Function Access**:
       1. Navigate to **Advanced** tab (in AI Agent), then select the created function in the **Tool Call Allow List** and grant access from the list.
+
+!!! Example "Example Function"
+    ```js
+    /**
+    * Transfer
+    * @param {Object} param - Param Object
+    * @param {string} param.name - The name of the person who you wish to transfer the call to.
+    */
+    function transfer() {
+    return { action: 'transfer', destination: '160' }
+    }
+    ```
 
 Following these steps ensures that the AI agent has the necessary permissions to interact with the designated function.
 

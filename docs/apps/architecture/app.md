@@ -16,17 +16,17 @@ You can create your own App and publish it to the **ConnexCS App Store**. Also, 
 
 4. Click on **Save**.
 
-<img src= "/apps/img/app1.png">
+<img src= "/apps/img/app1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 4.The created application will be visible on the App interface.
 
-<img src= "/apps/img/app2.png" width="215">
+<img src= "/apps/img/app2.png" width="215" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 5.You have the option to **Publish** it using the `Settings`⚙️ button and provide a **Version** to it as well.
 
-<img src= "/apps/img/app3.png" width="250">
+<img src= "/apps/img/app3.png" width="250" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-<img src= "/apps/img/app4.png" width="250">
+<img src= "/apps/img/app4.png" width="250" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Example
 
