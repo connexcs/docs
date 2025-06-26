@@ -30,7 +30,7 @@ Each component in the Page Builder has their own modules.
 |----|-----------|------|-------|---|
 |`getID()`|Returns the ID of the current UI component|`this.$('componentID').getID();`|`console.log(this.$('button').getID());`|button_7uueb2rm|
 |`hide()`|Hides the selected component from the user interface|`this.$('componentID).hide();`|`if (customer balance > 100) { this.$('button').hide();`|Hide the button if balance is above 100|
-|`show()`|Displays a previously hidden component|`this.$('componentID').show();`|```if ($customer.balance < 100) { this.$('button').show();```|Show the button if balance is below 100|
+|`show()`|Displays a previously hidden component|`this.$('componentID').show();`|```if (customer balance < 100) { this.$('button').show();```|Show the button if balance is below 100|
 |`loading(true/false)`|Performs the logic of showing or hiding a loading spinner|`this.$('componentID').setloading(!0);`|`this.$('button').setloading(!0);`|This triggers the loading animation on the button component|
 |`setButtonLabel()`|Sets the label (**visible text**) on that button.|`this.$('componentID').setLabel('variable')`|`this.$('button').setLabel('hello')`|
 
@@ -40,7 +40,7 @@ Each component in the Page Builder has their own modules.
 |----|-----------|------|-------|---|
 |`getID()`|Returns the ID of the current UI component|`this.$('componentID').getID();`|`console.log(this.$('card').getID());`|card_2j40vlrh|
 |`hide()`|Hides the selected component from the user interface|`this.$('componentID).hide();`|`if (customer balance > 100) { this.$('card').hide();`|Hide the card if balance is above 100|
-|`show()`|Displays a previously hidden component|`this.$('componentID').show();`|```if ($customer.balance < 100) { this.$('card').show();```|Show the card if balance is below 100|
+|`show()`|Displays a previously hidden component|`this.$('componentID').show();`|```if (customer balance < 100) { this.$('card').show();```|Show the card if balance is below 100|
 
 ### Cascader
 
@@ -64,7 +64,7 @@ Each component in the Page Builder has their own modules.
 |`getWidth()`|Returns width of the chart in `pixels`|`this.$('componentID').getWidth();`|`console.log(this.$('chart').getWidth());`|Returns an integer width value, e.g.,`600`|
 |`hide()`|Hides the chart component from the UI|`this.$('componentID').hide();`|`this.$('chart').hide();`|Chart disappears from the view but is not removed|
 |`show()`|Displays the chart if it was previously hidden|`this.$('componentID').show();`|`this.$('chart').show();`|Makes the chart visible again|
-|`loading(true/false)`|Shows or hides the chart’s loading spinner|`this.$('componentID').setloading(true/false);`|`this.$('chart').setloading(true);`|Shows loading animation|
+|`loading(true/false)`|Shows or hides the chart’s loading spinner|`this.$('componentID').setloading(true/false);`|`this.$('chart').setloading(!0);`|Shows loading animation|
 |`push()`|Dynamically pushes the chart into view |`this.$('componentID').push();`|`this.$('chart').push();`|Makes the component visible or adds it to the layout dynamically|
 |`refresh()`| Refreshes or reloads the chart's data or visuals|`this.$('componentID').refresh();`|`this.$('chart').refresh();`|Re-renders the chart, often used after updating data|
 |`resize()`|Adjusts the chart’s dimensions based on container or viewport|`this.$('componentID').resize();`|`this.$('chart').resize();`| Ensures chart fits the current layout responsively|
@@ -84,17 +84,17 @@ Each component in the Page Builder has their own modules.
 |Method name|Description|Syntax|Example|Explanation/Output|
 |----|-----------|------|-------|---|
 |`getID()`|Returns the ID of the current UI component|`this.$('componentID').getID();`|`console.log(this.$('collapse').getID());`|collapse_8phtdr17|
-|`hide()`|Hides the selected component from the user interface|`this.$('componentID).hide();`|```if (!this.$('showDetails').getValue()) this.$('collapse').hide();```|Hides the collapse section` if showDetails checkbox is not checked|
+|`hide()`|Hides the selected component from the user interface|`this.$('componentID).hide();`|```if (!this.$('showDetails').getValue()) this.$('collapse').hide();```|Hides the collapse section if `showDetails` checkbox is not checked|
 |`show()`|Displays a previously hidden component|`this.$('componentID').show();`|```if (this.$('userRole').getValue() === 'manager') this.$('collapse').show();```|Shows the collapse section if the user role is manager|
 |`loading(true/false)`|Performs the logic of showing or hiding a loading spinner|`this.$('componentID').setloading(!0);`|`this.$('collapse').setloading(!0);`|Displays a loading spinner on the collapse section (e.g., while fetching data)|
-|`setActive()`|Programmatically expands a specific panel (by index or key)|`this.$('componentID').setActive(indexOrKey);`|`this.$('collapse').setActive('orderDetails');`|Automatically open the "orderDetails" panel after selecting an order|
+|`setActive()`|Programmatically expands a specific panel (by index or key)|`this.$('componentID').setActive(indexOrKey);`|`this.$('collapse').setActive('orderDetails');`|Automatically open the `orderDetails` panel after selecting an order|
 
 ### Color
 
 |Method name|Description|Syntax|Example|Explanation/Output|
 |----|-----------|------|-------|---|
 |`getID()`|Returns the ID of the current UI component|`this.$('componentID').getID();`|`console.log(this.$('color').getID());`|color_7twlgxqb|
-|`hide()`|Hides the selected component from the user interface|`this.$('componentID).hide();`|```if (!this.$('useCustomColor').getValue()) this.$('color').hide();```|Hides the color picker if the "useCustomColor" checkbox is not checked.|
+|`hide()`|Hides the selected component from the user interface|`this.$('componentID).hide();`|```if (!this.$('useCustomColor').getValue()) this.$('color').hide();```|Hides the color picker if the `useCustomColor` checkbox is not checked.|
 |`show()`|Displays a previously hidden component|`this.$('componentID').show();`|```if (this.$('themeOption').getValue() === 'custom') this.$('color').show();```|Shows the color picker only if the selected theme option is `custom`|
 |`loading(true/false)`|Performs the logic of showing or hiding a loading spinner|`this.$('componentID').setloading(!0);`|`	if (!this.$('themeColors').getValue()) this.$('cascader').setloading(!0);`|Shows loading spinner if no theme colors are loaded yet|
 
@@ -114,17 +114,17 @@ Each component in the Page Builder has their own modules.
 |Method name|Description|Syntax|Example|Explanation/Output|
 |----|-----------|------|-------|---|
 |`getID()`|Returns the ID of the current UI component|`this.$('componentID').getID();`|`console.log(this.$('date').getID());`|date_pdik5uqa|
-|`hide()`|Hides the selected component from the user interface|`this.$('componentID).hide();`|```if (!this.$('isScheduled').getValue()) this.$('date').hide();```|Hides the date field if the user did not select `Scheduled`|
-|`show()`|Displays a previously hidden component|`this.$('componentID').show();`|```if (this.$('deliveryOption').getValue() === 'later') this.$('date').show();```|Shows the date picker only if `Deliver Later` option is selected|
+|`hide()`|Hides the selected component from the user interface|`this.$('componentID).hide();`|```if (!this.$('isScheduled').getValue()) this.$('date').hide();```|Hides the date field if the user did not select `isScheduled`|
+|`show()`|Displays a previously hidden component|`this.$('componentID').show();`|```if (this.$('deliveryOption').getValue() === 'later') this.$('date').show();```|Shows the date picker only if "Deliver Later" option is selected|
 |`loading(true/false)`|Performs the logic of showing or hiding a loading spinner|`this.$('componentID').setloading(!0);`|`this.$('date').setloading(!0);`|Displays a spinner on the date picker (e.g., while validating or loading preset dates)|
 
 ### Dialog
 
 |Method name|Description|Syntax|Example|Explanation/Output|
 |----|-----------|------|-------|---|
-|`clickClick()`|Simulates a click on the confirm (OK) button inside the dialog|`this.$('componentID').clickClick();`|`const { email, name } = this.$('dialog').getValues(); if (email && name) this.$('dialog').clickClick();`|Automatically clicks the `Confirm` button in the dialog if both email and name fields are filled|
+|`clickClick()`|Simulates a click on the confirm (OK) button inside the dialog|`this.$('componentID').clickClick();`|`const { email, name } = this.$('userDialog').getValues(); if (email && name) this.$('dialog').clickClick();`|Automatically clicks the `Confirm` button in the dialog if both email and name fields are filled|
 |`close()`|Closes the dialog box|`this.$('componentID').close();`|```this.$('userDialog').close();```|Closes the dialog when user clicks cancel or after saving|
-|`confirmLLoading()`|Shows a loading spinner on the confirm (OK) button|`this.$('componentID').confirmLoading(true);`|`this.$('componentID').confirmLoading(true);`|Shows a loading spinner while saving form data|
+|`confirmLLoading()`|Shows a loading spinner on the confirm (OK) button|`this.$('componentID').confirmLoading(true);`|`this.$('userDialog').confirmLoading(true);`|Shows a loading spinner while saving form data|
 |`getValues()`|Retrieves all input values from fields inside the dialog|`this.$('componentID').getValues();`|`const formData = this.$('userDialog').getValues();`|Gets the current form data inside the dialog — for validation or API calls|
 |`open()`|Opens (shows) the dialog box|`this.$('componentID').open();`|`this.$('dialog').open();`|Opens the dialog — e.g., to edit a user's details|
 |`setData()`|Pre-fills dialog fields with provided data|`this.$('componentID').setData(data);`|`this.$('dialog').setData(this.$('selectedUser').getValue());`|Loads selected user data into the dialog for editing|
@@ -171,7 +171,7 @@ Each component in the Page Builder has their own modules.
 |----|-----------|------|-------|---|
 |`getID()`|Returns the ID of the current UI component|`this.$('componentID').getID();`|`console.log(this.$('html').getID());`|html_xon9lq1k|
 |`hide()`|Hides the selected component from the user interface|`this.$('componentID).hide();`|```if (!this.$('userLoggedIn').getValue()) this.$('html').hide();```|Hide HTML if the user is not logged in|
-|`show()`|Displays a previously hidden component|`this.$('componentID').show();`|```if (this.$('showMoreInfo').getValue()) this.$('html').show();```|Show HTML content when the `moreInfo` button is clicked|
+|`show()`|Displays a previously hidden component|`this.$('componentID').show();`|```if (this.$('showMoreInfo').getValue()) this.$('html').show();```|Show HTML content when the `showMoreInfo` button is clicked|
 |`loading(true/false)`|Performs the logic of showing or hiding a loading spinner|`this.$('componentID').setloading(!0);`|`this.$('html').setloading(!0);`|Shows a loading spinner while the HTML content loads|
 
 ### IFrame
@@ -190,7 +190,7 @@ Each component in the Page Builder has their own modules.
 |`getID()`|Returns the ID of the current UI component|`this.$('componentID').getID();`|`console.log(this.$('inline').getID());`|inline_vuse49xr|
 |`hide()`|Hides the selected component from the user interface|`this.$('componentID).hide();`|```if (!this.$('toggleSearch').getValue()) this.$('inline').hide();```|Hides the inline search bar when the user disables search|
 |`show()`|Displays a previously hidden component|`this.$('componentID').show();`|```if (this.$('toggleSearch').getValue()) this.$('inline').show();```|Displays the inline search bar when user toggles it on|
-|`loading(true/false)`|Toggles a loading spinner over the inline layout area|`this.$('componentID').setloading(!0);`|`this.$('inline').setloading(true);`| Shows a spinner while user form fields (like name & email) are loading|
+|`loading(true/false)`|Toggles a loading spinner over the inline layout area|`this.$('componentID').setloading(!0);`|`this.$('inline').setloading(!0);`| Shows a spinner while user form fields (like name & email) are loading|
 
 ### Input
 
@@ -198,7 +198,7 @@ Each component in the Page Builder has their own modules.
 |----|-----------|------|-------|---|
 |`getID()`|Returns the ID of the current UI component|`this.$('componentID').getID();`|`console.log(this.$('input').getID());`|input_amrpraqw|
 |`hide()`|Hides the selected component from the user interface|`this.$('componentID).hide();`|```this.$('emailInput').hide();```|Hide the email field when not needed|
-|`show()`|Displays a previously hidden component|`this.$('componentID').show();`|`this.$('phoneInput').show();`|Show phone input when user selects `Add phone`|
+|`show()`|Displays a previously hidden component|`this.$('componentID').show();`|```if (this.$('addPhoneCheckbox').getValue()) this.$('phoneInput').show();'``|shows the `phoneInput` field only if the `addPhoneCheckbox` is checked|
 |`loading(true/false)`|Performs the logic of showing or hiding a loading spinner|`this.$('componentID').setloading(!0);`|`this.$('usernameInput').setloading(!0);`|Show spinner while validating username|
 
 ### Link
@@ -215,8 +215,8 @@ Each component in the Page Builder has their own modules.
 |Method name|Description|Syntax|Example|Explanation/Output|
 |----|-----------|------|-------|---|
 |`getID()`|Returns the ID of the current UI component|`this.$('componentID').getID();`|`console.log(this.$('number').getID());`|number_8g52wzxh|
-|`hide()`|Hides the selected component from the user interface|`this.$('componentID).hide();`|```this.$('ageInput').hide();```|Hides the age field if user selects "Under 13"|
-|`show()`|Displays a previously hidden component|`this.$('componentID').show();`|```this.$('priceInput').show();```|Shows the price field when the user enables `Custom pricing`|
+|`hide()`|Hides the selected component from the user interface|`this.$('componentID).hide();`|```if (this.$('ageGroup').getValue() === 'Under 13') this.$('ageInput').hide();```|Hides the age input if the user selects "Under 13" from the `ageGroup` dropdown|
+|`show()`|Displays a previously hidden component|`this.$('componentID').show();`|```if (this.$('customPricingToggle').getValue()) this.$('priceInput').show();```|Shows the price field when the user enables Custom Pricing using a toggle or checkbox|
 |`loading(true/false)`|Performs the logic of showing or hiding a loading spinner|`this.$('componentID').setloading(!0);`|`this.$('quantityInput').setloading(!0);`|Displays a spinner while updating stock availability|
 
 ### Page Layout
@@ -312,7 +312,7 @@ Each component in the Page Builder has their own modules.
 |`getID()`|Returns the ID of the current UI component|`this.$('componentID').getID();`|`console.log(this.$('switch').getID());`|switch_lvbm1m19|
 |`hide()`|Hides the selected component from the user interface|`this.$('componentID).hide();`|```if (user.isSubscribed) this.$('newsletterSwitch').hide();```|Hide the newsletter if the user has already subscribed|
 |`show()`|Displays a previously hidden component|`this.$('componentID').show();`|```if (!user.isSubscribed) this.$('newsletterSwitch').show();```|Show the newsletter if the user hasn't already subscribed|
-|`loading(true/false)`|Performs the logic of showing or hiding a loading spinner|`this.$('componentID').setloading(!0);`|`this.$('newsletterSwitch').setloading(!0);`|Shows shows a loading spinner on the newsletterSwitch, e.g., while saving or checking subscription status|
+|`loading(true/false)`|Performs the logic of showing or hiding a loading spinner|`this.$('componentID').setloading(!0);`|`this.$('newsletterSwitch').setloading(!0);`|Shows shows a loading spinner on the `newsletterSwitch`, e.g., while saving or checking subscription status|
 
 ### Table
 
@@ -338,7 +338,7 @@ Each component in the Page Builder has their own modules.
 |----|-----------|------|-------|---|
 |`getID()`|Returns the ID of the current UI component|`this.$('componentID').getID();`|`console.log(this.$('textarea').getID());`|textarea_cy7wd7ki|
 |`hide()`|Hides the selected component from the user interface|`this.$('componentID).hide();`|```if (!user.wantsFeedback) { this.$('feedbackBox').hide(); }```|Hides the feedback box if the user opts out|
-|`show()`|Displays a previously hidden component|`this.$('componentID').show();`|```if (form.submitted) { this.$('thankYouText').hide(); }```|Shows the feedback textarea only if the user wants to give feedback|
+|`show()`|Displays a previously hidden component|`this.$('componentID').show();`|```if (user.wantsFeedback) this.$('feedbackTextarea').show();```|Shows the feedback textarea only if the user wants to give feedback|
 |`loading(true/false)`|Performs the logic of showing or hiding a loading spinner|`this.$('componentID').setloading(!0);`|`if (isSavingFeedback) { this.$('feedbackBox').setloading(!0); }`|Displays a loading spinner inside the textarea while feedback is being saved|
 
 ### Text
