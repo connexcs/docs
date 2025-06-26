@@ -287,7 +287,9 @@ nav:
         - Databases: apps/architecture/database.md
         - Domain: apps/architecture/domain.md
         - Key Value Store: apps/architecture/key-value.md
-        - Page Builder: apps/page-builder.md
+        - Page Builder:
+            - Page Builder: apps/page-builder.md
+            - Dynamic Content Module: apps/architecture/dcm.md
         - Script Forge: apps/architecture/script.md
         - Template: apps/architecture/template.md
         - Query Builder: apps/architecture/query-builder.md
