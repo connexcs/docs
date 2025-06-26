@@ -19,7 +19,7 @@ Each component in the Page Builder has their own modules.
 
 |Method name|Description|Syntax|Example|Explanation/Output|
 |----|-----------|------|-------|---|
-|`getID()`|Returns the ID of the current UI component|`this.$('componentID').getID();`|`console.log(this.$('alert_nbsalvtp').getID());`|alert_nbsalvtp|
+|`getID()`|Returns the ID of the current UI component|`this.$('componentID').getID();`|`console.log(this.$('alert').getID());`|alert_nbsalvtp|
 |`hide()`|Hides the selected component from the user interface|`this.$('componentID).hide();`|`if (customer balance > 100) { this.$('alert').hide();`|Hide the alert if balance is above 100|
 |`show()`|Displays a previously hidden component|`this.$('componentID').show();`|```if (customer balance < 100) { this.$('alert').show();```|Show the alert if balance is below 100|
 |`loading(true/false)`|Performs the logic of showing or hiding a loading spinner|`this.$('componentID').setloading(!0);`|`this.$('alert').setloading(!0);`|This triggers the loading animation on the Alert component|
@@ -28,7 +28,7 @@ Each component in the Page Builder has their own modules.
 
 |Method name|Description|Syntax|Example|Explanation/Output|
 |----|-----------|------|-------|---|
-|`getID()`|Returns the ID of the current UI component|`this.$('componentID').getID();`|`console.log(this.$('button_7uueb2rm').getID());`|button_7uueb2rm|
+|`getID()`|Returns the ID of the current UI component|`this.$('componentID').getID();`|`console.log(this.$('button').getID());`|button_7uueb2rm|
 |`hide()`|Hides the selected component from the user interface|`this.$('componentID).hide();`|`if (customer balance > 100) { this.$('button').hide();`|Hide the button if balance is above 100|
 |`show()`|Displays a previously hidden component|`this.$('componentID').show();`|```if ($customer.balance < 100) { this.$('button').show();```|Show the button if balance is below 100|
 |`loading(true/false)`|Performs the logic of showing or hiding a loading spinner|`this.$('componentID').setloading(!0);`|`this.$('button').setloading(!0);`|This triggers the loading animation on the button component|
@@ -38,7 +38,7 @@ Each component in the Page Builder has their own modules.
 
 |Method name|Description|Syntax|Example|Explanation/Output|
 |----|-----------|------|-------|---|
-|`getID()`|Returns the ID of the current UI component|`this.$('componentID').getID();`|`console.log(this.$('card_2j40vlrh').getID());`|card_2j40vlrh|
+|`getID()`|Returns the ID of the current UI component|`this.$('componentID').getID();`|`console.log(this.$('card').getID());`|card_2j40vlrh|
 |`hide()`|Hides the selected component from the user interface|`this.$('componentID).hide();`|`if (customer balance > 100) { this.$('card').hide();`|Hide the card if balance is above 100|
 |`show()`|Displays a previously hidden component|`this.$('componentID').show();`|```if ($customer.balance < 100) { this.$('card').show();```|Show the card if balance is below 100|
 
@@ -76,7 +76,7 @@ Each component in the Page Builder has their own modules.
 |----|-----------|------|-------|---|
 |`getID()`|Returns the ID of the current UI component|`this.$('componentID').getID();`|`console.log(this.$('checkbox').getID());`|checkbox_e5hw7ssn|
 |`hide()`|Hides the selected component from the user interface|`this.$('componentID).hide();`|```if (this.$('userType').getValue() === 'admin') this.$('checkbox').hide();```|Hides the checkbox if the user type is `admin`|
-|`show()`|Displays a previously hidden component|`this.$('componentID').show();`|```if (this.$('hasConsent').getValue()) this.$('checkbox').show();```|Shows the checkbox if the "hasConsent" checkbox is checked|
+|`show()`|Displays a previously hidden component|`this.$('componentID').show();`|```if (this.$('hasConsent').getValue()) this.$('checkbox').show();```|Shows the checkbox if the `hasConsent` checkbox is checked|
 |`loading(true/false)`|Performs the logic of showing or hiding a loading spinner|`this.$('componentID').setloading(!0);`|`this.$('checkbox').setloading(!0);`|Shows a loading spinner on the checkbox|
 
 ### Collapse
@@ -84,8 +84,8 @@ Each component in the Page Builder has their own modules.
 |Method name|Description|Syntax|Example|Explanation/Output|
 |----|-----------|------|-------|---|
 |`getID()`|Returns the ID of the current UI component|`this.$('componentID').getID();`|`console.log(this.$('collapse').getID());`|collapse_8phtdr17|
-|`hide()`|Hides the selected component from the user interface|`this.$('componentID).hide();`|```if (!this.$('showDetails').getValue()) this.$('collapse').hide();```|Hides the collapseSection if showDetails checkbox is not checked|
-|`show()`|Displays a previously hidden component|`this.$('componentID').show();`|```if (this.$('userRole').getValue() === 'manager') this.$('collapse').show();```|Shows the collapseSection if the user role is manager|
+|`hide()`|Hides the selected component from the user interface|`this.$('componentID).hide();`|```if (!this.$('showDetails').getValue()) this.$('collapse').hide();```|Hides the collapse section` if showDetails checkbox is not checked|
+|`show()`|Displays a previously hidden component|`this.$('componentID').show();`|```if (this.$('userRole').getValue() === 'manager') this.$('collapse').show();```|Shows the collapse section if the user role is manager|
 |`loading(true/false)`|Performs the logic of showing or hiding a loading spinner|`this.$('componentID').setloading(!0);`|`this.$('collapse').setloading(!0);`|Displays a loading spinner on the collapse section (e.g., while fetching data)|
 |`setActive()`|Programmatically expands a specific panel (by index or key)|`this.$('componentID').setActive(indexOrKey);`|`this.$('collapse').setActive('orderDetails');`|Automatically open the "orderDetails" panel after selecting an order|
 
@@ -94,7 +94,7 @@ Each component in the Page Builder has their own modules.
 |Method name|Description|Syntax|Example|Explanation/Output|
 |----|-----------|------|-------|---|
 |`getID()`|Returns the ID of the current UI component|`this.$('componentID').getID();`|`console.log(this.$('color').getID());`|color_7twlgxqb|
-|`hide()`|Hides the selected component from the user interface|`this.$('componentID).hide();`|```if (!this.$('useCustomColor').getValue()) this.$('color').hide();```|Hides the color picker if the "Use Custom Color" checkbox is not checked.|
+|`hide()`|Hides the selected component from the user interface|`this.$('componentID).hide();`|```if (!this.$('useCustomColor').getValue()) this.$('color').hide();```|Hides the color picker if the "useCustomColor" checkbox is not checked.|
 |`show()`|Displays a previously hidden component|`this.$('componentID').show();`|```if (this.$('themeOption').getValue() === 'custom') this.$('color').show();```|Shows the color picker only if the selected theme option is `custom`|
 |`loading(true/false)`|Performs the logic of showing or hiding a loading spinner|`this.$('componentID').setloading(!0);`|`	if (!this.$('themeColors').getValue()) this.$('cascader').setloading(!0);`|Shows loading spinner if no theme colors are loaded yet|
 
@@ -103,7 +103,7 @@ Each component in the Page Builder has their own modules.
 |Method name|Description|Syntax|Example|Explanation/Output|
 |----|-----------|------|-------|---|
 |`getID()`|Returns the ID of the current UI component|`this.$('componentID').getID();`|`console.log(this.$('aggrid').getID());`|aggrid_y09a12fh|
-|`hide()`|Hides the selected component from the user interface|`this.$('componentID).hide();`|```if (!this.$('showResults').getValue()) this.$('aggrid').hide();```|Hides the grid if the `Show Results` toggle is off|
+|`hide()`|Hides the selected component from the user interface|`this.$('componentID).hide();`|```if (!this.$('showResults').getValue()) this.$('aggrid').hide();```|Hides the grid if the `showResults` toggle is off|
 |`show()`|Displays a previously hidden component|`this.$('componentID').show();`|```if (this.$('searchInput').getValue()) this.$('aggrid').show();```|Shows the grid when there’s something in the search input|
 |`loading(true/false)`|Performs the logic of showing or hiding a loading spinner|`this.$('componentID').setloading(!0);`|`this.$('aggrid').setloading(!0);`|Displays loading animation while data is being loaded|
 |`getSelectedRows()`|Gets currently selected rows as an array of objects|`this.$('componentID').getSelectedRows();`|```const selected = this.$('customerGrid').getSelectedRows();```|Stores the selected rows in a variable for further use (e.g., delete or export)|
@@ -122,7 +122,7 @@ Each component in the Page Builder has their own modules.
 
 |Method name|Description|Syntax|Example|Explanation/Output|
 |----|-----------|------|-------|---|
-|`clickClick()`|Simulates a click on the confirm (OK) button inside the dialog|`this.$('componentID').clickClick();`|`const { email, name } = this.$('dialog').getValues(); if (email && name) this.$('dialog').clickClick();`|Automatically clicks the "Confirm" button in the dialog if both email and name fields are filled|
+|`clickClick()`|Simulates a click on the confirm (OK) button inside the dialog|`this.$('componentID').clickClick();`|`const { email, name } = this.$('dialog').getValues(); if (email && name) this.$('dialog').clickClick();`|Automatically clicks the `Confirm` button in the dialog if both email and name fields are filled|
 |`close()`|Closes the dialog box|`this.$('componentID').close();`|```this.$('userDialog').close();```|Closes the dialog when user clicks cancel or after saving|
 |`confirmLLoading()`|Shows a loading spinner on the confirm (OK) button|`this.$('componentID').confirmLoading(true);`|`this.$('componentID').confirmLoading(true);`|Shows a loading spinner while saving form data|
 |`getValues()`|Retrieves all input values from fields inside the dialog|`this.$('componentID').getValues();`|`const formData = this.$('userDialog').getValues();`|Gets the current form data inside the dialog — for validation or API calls|
@@ -135,7 +135,7 @@ Each component in the Page Builder has their own modules.
 |----|-----------|------|-------|---|
 |`getID()`|Returns the ID of the current UI component|`this.$('componentID').getID();`|`console.log(this.$('divider').getID());`|divider_v4ey5q0l|
 |`hide()`|Hides the selected component from the user interface|`this.$('componentID).hide();`|```if (!this.$('showDivider').getValue()) this.$('divider').hide();```|Hides the divider if the "Show Advanced" toggle is off|
-|`show()`|Displays a previously hidden component|`this.$('componentID').show();`|```if (this.$('showDetails').getValue()) this.$('divider').show();```|Shows the divider only if the user checks a `Show Details` checkbox|
+|`show()`|Displays a previously hidden component|`this.$('componentID').show();`|```if (this.$('showDetails').getValue()) this.$('divider').show();```|Shows the divider only if the user checks a `showDetails` checkbox|
 |`loading(true/false)`|Performs the logic of showing or hiding a loading spinner|`this.$('componentID').setloading(!0);`|`this.$('cascader').setloading(!0);`|Shows a loading spinner on the divider — useful if the layout is temporarily updating|
 
 ### Editor
@@ -152,8 +152,8 @@ Each component in the Page Builder has their own modules.
 |Method name|Description|Syntax|Example|Explanation/Output|
 |----|-----------|------|-------|---|
 |`getID()`|Returns the ID of the current UI component|`this.$('componentID').getID();`|`console.log(this.$('grid').getID());`|grid_k5y3127h|
-|`hide()`|Hides the selected component from the user interface|`this.$('componentID).hide();`|```if (!this.$('showGrid').getValue()) this.$('grid').hide();```|Hides the grid when the `Show Grid` checkbox is unchecked|
-|`show()`|Displays a previously hidden component|`this.$('componentID').show();`|```if (this.$('showGrid').getValue()) this.$('grid').show();```|Shows the grid when the user enables `Show Grid`|
+|`hide()`|Hides the selected component from the user interface|`this.$('componentID).hide();`|```if (!this.$('showGrid').getValue()) this.$('grid').hide();```|Hides the grid when the `showGrid` checkbox is unchecked|
+|`show()`|Displays a previously hidden component|`this.$('componentID').show();`|```if (this.$('showGrid').getValue()) this.$('grid').show();```|Shows the grid when the user enables `showGrid`|
 |`loading(true/false)`|Performs the logic of showing or hiding a loading spinner|`this.$('componentID').setloading(!0);`|`this.$('grid').setloading(!0);`|Displays a loading spinner — e.g., while fetching settings or initializing content|
 
 ### Group
@@ -171,7 +171,7 @@ Each component in the Page Builder has their own modules.
 |----|-----------|------|-------|---|
 |`getID()`|Returns the ID of the current UI component|`this.$('componentID').getID();`|`console.log(this.$('html').getID());`|html_xon9lq1k|
 |`hide()`|Hides the selected component from the user interface|`this.$('componentID).hide();`|```if (!this.$('userLoggedIn').getValue()) this.$('html').hide();```|Hide HTML if the user is not logged in|
-|`show()`|Displays a previously hidden component|`this.$('componentID').show();`|```if (this.$('showMoreInfo').getValue()) this.$('html').show();```|Show HTML content when the `More Info` button is clicked|
+|`show()`|Displays a previously hidden component|`this.$('componentID').show();`|```if (this.$('showMoreInfo').getValue()) this.$('html').show();```|Show HTML content when the `moreInfo` button is clicked|
 |`loading(true/false)`|Performs the logic of showing or hiding a loading spinner|`this.$('componentID').setloading(!0);`|`this.$('html').setloading(!0);`|Shows a loading spinner while the HTML content loads|
 
 ### IFrame
@@ -206,8 +206,8 @@ Each component in the Page Builder has their own modules.
 |Method name|Description|Syntax|Example|Explanation/Output|
 |----|-----------|------|-------|---|
 |`getID()`|Returns the ID of the current UI component|`this.$('componentID').getID();`|`console.log(this.$('link').getID());`|link_l312yjzl|
-|`hide()`|Hides the selected component from the user interface|`this.$('componentID).hide();`|```this.$('termsLink').hide();```|Hides the "Terms & Conditions" link when not relevant|
-|`show()`|Displays a previously hidden component|`this.$('componentID').show();`|```this.$('privacyLink').show();```|Shows the "Privacy Policy" link after user logs in|
+|`hide()`|Hides the selected component from the user interface|`this.$('componentID).hide();`|```this.$('termsLink').hide();```|Hides the `Terms & Conditions` link when not relevant|
+|`show()`|Displays a previously hidden component|`this.$('componentID').show();`|```this.$('privacyLink').show();```|Shows the `Privacy Policy` link after user logs in|
 |`loading(true/false)`|Performs the logic of showing or hiding a loading spinner|`this.$('componentID').setloading(!0);`|`this.$('downloadLink').setloading(!0);`|Displays spinner while the download link is being prepared|
 
 ### Number
@@ -216,7 +216,7 @@ Each component in the Page Builder has their own modules.
 |----|-----------|------|-------|---|
 |`getID()`|Returns the ID of the current UI component|`this.$('componentID').getID();`|`console.log(this.$('number').getID());`|number_8g52wzxh|
 |`hide()`|Hides the selected component from the user interface|`this.$('componentID).hide();`|```this.$('ageInput').hide();```|Hides the age field if user selects "Under 13"|
-|`show()`|Displays a previously hidden component|`this.$('componentID').show();`|```this.$('priceInput').show();```|Shows the price field when the user enables "Custom pricing"|
+|`show()`|Displays a previously hidden component|`this.$('componentID').show();`|```this.$('priceInput').show();```|Shows the price field when the user enables `Custom pricing`|
 |`loading(true/false)`|Performs the logic of showing or hiding a loading spinner|`this.$('componentID').setloading(!0);`|`this.$('quantityInput').setloading(!0);`|Displays a spinner while updating stock availability|
 
 ### Page Layout
@@ -243,7 +243,7 @@ Each component in the Page Builder has their own modules.
 |----|-----------|------|-------|---|
 |`getID()`|Returns the ID of the current UI component|`this.$('componentID').getID();`|`console.log(this.$('radio').getID());`|radio_fikucxql|
 |`hide()`|Hides the selected component from the user interface|`this.$('componentID).hide();`|```this.$('genderRadio').hide();```|Hides gender selection when not required|
-|`show()`|Displays a previously hidden component|`this.$('componentID').show();`|```this.$('checkoutBtn').onClick(() => { this.$('paymentMethodRadio').show();});```|Shows payment method options if user clicks “Proceed to checkout” button|
+|`show()`|Displays a previously hidden component|`this.$('componentID').show();`|```this.$('checkoutBtn').onClick(() => { this.$('paymentMethodRadio').show();});```|Shows payment method options if user clicks `Proceed to checkout` button|
 |`loading(true/false)`|Performs the logic of showing or hiding a loading spinner|`this.$('componentID').setloading(!0);`|`this.$('shippingOptionRadio').setloading(!0);`|Shows a spinner while fetching available shipping methods|
 
 ### Rate
@@ -251,8 +251,8 @@ Each component in the Page Builder has their own modules.
 |Method name|Description|Syntax|Example|Explanation/Output|
 |----|-----------|------|-------|---|
 |`getID()`|Returns the ID of the current UI component|`this.$('componentID').getID();`|`console.log(this.$('rate').getID());`|rate_9qqkjfni|
-|`hide()`|Hides the selected component from the user interface|`this.$('componentID).hide();`|```this.$('rateChoice').onChange(v => { if (v !== 'yes') this.$('feedbackRating').hide(); });```|Hide feedback rating when user selects "Rate Choice"|
-|`show()`|Displays a previously hidden component|`this.$('componentID').show();`|```this.$('rateChoice').onChange(v => { if (v === 'yes') this.$('feedbackRating').show(); });```|Show feedback rating when user selects "Rate Choice"|
+|`hide()`|Hides the selected component from the user interface|`this.$('componentID).hide();`|```this.$('rateChoice').onChange(v => { if (v !== 'yes') this.$('feedbackRating').hide(); });```|Hide feedback rating when user selects `rateChoice`|
+|`show()`|Displays a previously hidden component|`this.$('componentID').show();`|```this.$('rateChoice').onChange(v => { if (v === 'yes') this.$('feedbackRating').show(); });```|Show feedback rating when user selects `rateChoice`|
 |`loading(true/false)`|Performs the logic of showing or hiding a loading spinner|`this.$('componentID').setloading(!0);`|`this.$('cascader').setloading(!0);`|Shows the spinner or disables interaction while data loads|
 
 ### Select
