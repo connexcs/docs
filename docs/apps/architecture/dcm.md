@@ -1,4 +1,4 @@
-# Dynamic Content Module (DCM)
+# Document Component Model (DCM)
 
 ## Introduction
 
