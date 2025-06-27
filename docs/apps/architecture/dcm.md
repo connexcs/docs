@@ -58,7 +58,7 @@ Each component in the Page Builder has their own modules.
 |`clear()`|Clears the chart’s data and visuals| `this.$('componentID').clear();`| `this.$('chart').clear();`|Removes all data and resets the chart to a blank state|
 |`dump()`|Outputs debug info about the chart to the console| `this.$('componentID').dump();`| `this.$('chart').dump();`|Logs internal chart data/configuration for debugging|
 |`getConnectedDataURL()`|Returns data URL (base64) of connected charts|`this.$('componentID').getConnectedDataURL();`|`console.log(this.$('chart').getConnectedDataURL());`|Useful for exporting connected chart images|
-|`getDataURL()`|Returns chart image as base64-encoded `png`|`this.$('componentID').getDataURL();`| `console.log(this.$('Chart').getDataURL());`|Allows downloading or exporting chart as an image|
+|`getDataURL()`|Returns chart image as base64-encoded `png`|`this.$('componentID').getDataURL();`| `console.log(this.$('chart').getDataURL());`|Allows downloading or exporting chart as an image|
 |`getHeight()`|Returns height of the chart in `pixels`|`this.$('componentID').getHeight();`| `console.log(this.$('chart').getHeight());`| Returns an integer height value, e.g., `400`|
 |`getID()`|Returns the component’s unique ID|`this.$('componentID').getID();`| `console.log(this.$('chart').getID());`|echarts_p64dgi2b|
 |`getWidth()`|Returns width of the chart in `pixels`|`this.$('componentID').getWidth();`|`console.log(this.$('chart').getWidth());`|Returns an integer width value, e.g.,`600`|
