@@ -19,43 +19,43 @@ Each component in the Page Builder has their own modules.
 
 1. **Description**: Returns the ID of the current UI component.
 2. **Syntax**: `this.$('componentID').getId();`
-3. Page Builder Components:
-      1. Alert
-      2. Button
-      3. Card
-      4. Cascader
-      5. Checkbox
-      6. Collapse
-      7. Color
-      8. Data Grid
-      9. Date
-      10. Divider
-      11. Editor
-      12. Grid
-      13. Group
-      14. HTML
-      15. IFrame
-      16. Inline
-      17. Input
-      18. Link
-      19. Number
-      20. Page Layout
-      21. Pagenation
-      22. Radio
-      23. Rate
-      24. Select
-      25. Slider
-      26. Statistic
-      27. Steps
-      28. Switch
-      29. Table
-      30. Tabs
-      31. Textarea
-      32. Text
-      33. Time
-      34. Transfer
-      35. Treeselect
-      36. Webphone
+3. Components that support this method:
+   + Alert
+   + Button
+   + Card
+   + Cascader
+   + Checkbox
+   + Collapse
+   + Color
+   + Data Grid
+   + Date
+   + Divider
+   + Editor
+   + Grid
+   + Group
+   + HTML
+   + IFrame
+   + Inline
+   + Input
+   + Link
+   + Number
+   + Page Layout
+   + Pagenation
+   + Radio
+   + Rate
+   + Select
+   + Slider
+   + Statistic
+   + Steps
+   + Switch
+   + Table
+   + Tabs
+   + Textarea
+   + Text
+   + Time
+   + Transfer
+   + Treeselect
+   + Webphone
 
 !!! Example "How to use?"
     1. Login to your account.
