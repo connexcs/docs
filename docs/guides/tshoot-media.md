@@ -43,27 +43,27 @@ Common issues related to the media stream can include choppy or robotic voice, e
 
 ## Standard Media Troubleshooting
 
-**Check the SIP Headers and SDP Body** If you have one-way audio, check the SDP (Session Description Protocol) body for compatible codecs and Network Address Translation (NAT) which may be causing problems.
+1. **Check the SIP Headers and SDP Body** If you have one-way audio, check the SDP (Session Description Protocol) body for compatible codecs and Network Address Translation (NAT) which may be causing problems.
 
-**Check Firewalls** Check to see if there are any firewalls in place that's blocking the calls. It's important to remember that your media doesn't flow through the same server as your SIP.
+2. **Check Firewalls** Check to see if there are any firewalls in place that's blocking the calls. It's important to remember that your media doesn't flow through the same server as your SIP.
 
-**Ensure you have the best media zone** Ensure a media server that's close to your customer or carrier.
+3. **Ensure you have the best media zone** Ensure a media server that's close to your customer or carrier.
 
-**Change the media zone** It's possible that there are latent / lossy connections between your customer and the media servers. Try changing the media server (Customer :material-menu-right: Routing :material-menu-right: Media :material-menu-right: Media Proxy).
+4. **Change the media zone** It's possible that there are latent / lossy connections between your customer and the media servers. Try changing the media server (Customer :material-menu-right: Routing :material-menu-right: Media :material-menu-right: Media Proxy).
 
-**Try sending the media direct**  Set the media server as direct to let your media flow from your customer directly to your carrier, bypassing ConnexCS. If the issue persists, it's with either the customer, the carrier, or the far end.
+5. **Try sending the media direct**  Set the media server as direct to let your media flow from your customer directly to your carrier, bypassing ConnexCS. If the issue persists, it's with either the customer, the carrier, or the far end.
+
+6. **RTCP Metrics** If you enable RTCP on your customer and carrier, meta data about the RTP stream (packet counters, round trip time) gets exchanged. This information is available on the logging page of the call. These graphs can help to identify the problems.
+
+7. **User Latency** If the UAC is connecting by SIP Auth directly to ConnexCS, it's possible to view latency graphs.
+
+For this, make sure to enable the SIP Ping from Customer :material-menu-right: Auth :material-menu-right: NAT / SIP Ping :material-menu-right: Enabled. Also, ensure to deselect the "Disable UAC Ping" in your Server.
 
 !!! Warning
     If your customer (or carrier) is behind a NAT (and you change the media to Direct), ConnexCS won't be able to correctly perform Far-End-NAT Traversal, making the problem worse.
 
 !!! Danger
     If the SIP packets and / or RTP endpoints get investigated, sending media direct exposes your carrier's identity to your customer and vice versa.
-
-**RTCP Metrics** If you enable RTCP on your customer and carrier, meta data about the RTP stream (packet counters, round trip time) gets exchanged. This information is available on the logging page of the call. These graphs can help to identify the problems.
-
-**User Latency** If the UAC is connecting by SIP Auth directly to ConnexCS, it's possible to view latency graphs.
-
-For this, make sure to enable the SIP Ping from Customer :material-menu-right: Auth :material-menu-right: NAT / SIP Ping :material-menu-right: Enabled. Also, ensure to deselect the "Disable UAC Ping" in your Server.
 
 ## Advanced Media Troubleshooting
 
@@ -90,17 +90,6 @@ Plenty of SaaS ping monitoring systems, such as Pingdom also exist.
 
 **Call Recording / Packet Capture** Enable call recording on ConnexCS. It also captures packets on the customer's or the carrier's end. Compare the results.
 
-## Direct Media (Proxy ByPass)
-
-Basically, you may browse local websites and material without connecting to the outside internet when you utilise a local server to access the internet.
-Without proxy servers, which connect you to default IPs, or the outside world, these may be accessible instantly.
-Some addresses will be opened as no proxy if you enter them in the bypass proxy field.
-
-The easiest way to describe bypassing a proxy is that your device or browser won't need to search for a DNS server or connect when connecting to an address.
-
-For example, your workplace has a website with the address 172.31.163.8 or something similar.
-Simply enter 172.31.*.* in your bypass proxy box to instantly access these websites even if your internet connection from your ISP is unavailable.
-
 ### Understanding SIP and RTP
 
 The SIP protocol can be, and usually is, routed through one or more SIP proxy servers before reaching its destination. It's similar to how email gets transmitted, in that several email servers are usually involved in the delivery process, each forwarding the message in its original form. Each email server adds a Received header to the message, to track the route the message has taken. SIP uses a Via header to track the SIP proxies that the message has passed through to get to its destination.
@@ -108,13 +97,7 @@ SIP uses a similar message format to HTTP. These are both human-readable, and us
 
 Now while SIP traffic passes from one server to the next to get to its destination, RTP sessions sets up directly between SIP clients.
 
-Now SIP is a good protocol, but things kind of break down when NAT gets involved. SIP packets themselves tend to move about without too much trouble, as they 'hop' from one server to another. RTP sessions are somewhat more troublesome. Either both clients need to be aware they're behind a NAT, and substitute their local IP addresses for their public IPs in their Session Description messages and open the appropriate firewall ports, or something has to modify the SIP packets en route. Thus, Products known as Back-to-Back User Agents, can actually proxy RTP traffic.
-
-```mermaid
-sequenceDiagram
-    SIP Client (Caller)->>+SIP User Agent: RTP Audio/ Video
-    SIP Client (Destination)->>+SIP User Agent: RTP Audio / Video
-```
+Now SIP is a good protocol, but things kind of break down when NAT gets involved. SIP packets themselves tend to move about without too much trouble, as they 'hop' from one server to another. RTP sessions are somewhat more troublesome. Either both clients need to be aware they're behind a NAT, and substitute their local IP addresses for their public IPs in their Session Description messages and open the appropriate firewall ports, or something has to modify the SIP packets en route.
 
 User Agent can modify SIP packets to direct the caller and destination to establish an RTP session with itself, rather than with each other. This is useful in situations where two SIP clients may not have direct access to each other, most commonly, when one or both of the SIP clients are behind a NAT.
 It's important to note that User Agent only proxy's RTP traffic when it has to, and when configured to do so. If both clients are on the same local network segment, User Agent doesn't need to play a part in the RTP session, and it will proxy only the SIP traffic.
