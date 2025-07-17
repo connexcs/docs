@@ -102,7 +102,7 @@ function main (data = {}) {
 }
 ```
 
-### Driver
+### Export/Import
 
 A driver is a module export that may contain several pre-defined functions dependent on the integration; flow is an example for a DID Driver.
 
