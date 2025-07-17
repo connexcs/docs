@@ -127,7 +127,7 @@ With AI-driven automation, businesses can enhance customer experience while sign
     + **Vars**<sup>TOML</sup>:  Select the variables you want pass into the ScriptForge script.
     
     + Click `Save`.
-        <img src= "/class5/img/aiagent7new17.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+        <img src= "/class5/img/aiagent7new17new.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Example "Example Prompt"
     **Introduction:**  
