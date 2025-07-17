@@ -183,63 +183,65 @@ It usually involves processing inputs, making decisions, and taking actions to a
 5. Click on the blue `+` sign (**Add next node**). It will update the first task. <img src= "/class5/img/task1new.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 6. Fill in the following fields to setup the task for your AI Agent:
 
-   1. **Basic**:
-      + **Name**: Enter the name of your task.
-         <img src= "/class5/img/task2new.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+      1. **Basic**:
+         + **Name**: Enter the name of your task.
+            <img src= "/class5/img/task2new.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-   2. **Model**:
+      2. **Model**:
 
-       + **Model**: Select a model for the selected platform. A model is a specific version or configuration of an AI system to perform tasks like text generation, real-time interactions, etc.
+          + **Model**: Select a model for the selected platform. A model is a specific version or configuration of an AI system to perform tasks like text generation, real-time interactions, etc.
 
-        !!! Info
-            Different platforms offer specific models suited to their capabilities.
+            !!! Info
+                Different platforms offer specific models suited to their capabilities.
 
-       + **First Message**: The initial message spoken by the agent. For example, when the agent begins the conversation.
-       + **Prompt**: The prompt field allows you to enter a set of instructions to guide the AI Agent to perform certain tasks. It provides the foundation for the AI to comprehend the context, interpret the user's purpose, and generate relevant results.
+          + **First Message**: The initial message spoken by the agent. For example, when the agent begins the conversation.
+          + **Prompt**: The prompt field allows you to enter a set of instructions to guide the AI Agent to perform certain tasks. It provides the foundation for the AI to comprehend the context, interpret the user's purpose, and generate relevant results.
 
-        <img src= "/class5/img/task3new.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+            <img src= "/class5/img/task3new.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-   3. **Transcriber**
+      3. **Transcriber**
 
-       + **Transcriber**: Select a single or multiple transcribers for converting audio to text. You can select the transcriber depending on the selected platform.
+          + **Transcriber**: Select a single or multiple transcribers for converting audio to text. You can select the transcriber depending on the selected platform.
 
-      <img src= "/class5/img/task4new.png" style="border: 2px solid #4472C4; border-radius: 8px;"> 
+            <img src= "/class5/img/task4new.png" style="border: 2px solid #4472C4; border-radius: 8px;"> 
 
-=== "Advanced"
+      4. **Advanced**
 
-    + **Built-in Functions**:
-        + **Hangup**: Use this flag to terminate the call. You can include a prompt such as, "When call ended, hangup.".
-        + **Set Variable**: Set variables locally. Set variables locally. For example, in a prompt, you could ask, "What's your name?" and save the response to the variable `name`.
-        + **Transfer**: Allows transferring calls to another agent.
-    + **Tool Call Allow List**: Select from a list of `functions` available in **Apps** in **IDE**. 
-    + **Guard Rails**: Choose from multiple Guard Rails options to define constraints for your AI Agent.
-    + **Flags**: Select from various flags:
-          + **Async Guard Rails**: *Currently not in use*.
-          + **Local Voice Activity Detection**: Optimizes VoIP performance by identifying speech in real time at the user’s device. 
-          + **Disable ScriptForge**: Disables ScriptForge completely. Enabling this flag will deactivate the Tool Call Support functionality.
-          + **Listen First**: Enabling this flag ensures the LLM prioritizes listening to the user before responding.
-          + **Vad Start Interrupt**: A  VAD Start Interrupt is triggered when the system detects the onset of voice activity, indicating that speech has begun.
-          + **Complete Word on Interrupt**:  If the AI is interrupted, it will complete the current word before stopping execution.
-          + **Async First Greeting**: When enabled, only the first message of the main prompt will be executed before proceeding directly to the first task. When disabled, the system will follow the default behavior and execute the entire main prompt sequence.
-          + **Include Primary Chat History**: Includes the full conversation history from the primary session, allowing the AI to access prior interactions for better context and continuity.
-          + **Include Primary Prompt**: Appends the initial prompt from the primary task to the current session, ensuring the AI has visibility into the original instruction or objective.
-          + **Sync Primary Chat History**: Enables real-time synchronization with the primary chat session, so updates and responses are reflected across both the original and current contexts.
-          + **Summarize History on Exit**: Generates a concise summary of the conversation when the task concludes.
-          + **Bill Task Separately**: Marks this task to be billed independently from the rest of the session
-    
-    + **Office Background Volume**: This feature enables the playback of background office sounds.
-    
-    + **Temperature**: Refers to a parameter that controls the creativity of the model's output.
-        + **Low temperature (close to 0)** makes the model's responses more predictable by selecting the most probable words.
-        + **High temperature (closer to 1 or above)** increases randomness, leading to more diverse and creative but potentially less coherent responses.
-    
-    + **Vars**<sup>TOML</sup>:  Select the variables you want pass into the ScriptForge script.
-    
+          + **Built-in Functions**:
+              + **Hangup**: Use this flag to terminate the call. You can include a prompt such as, "When call ended, hangup.".
+             + **Set Variable**: Set variables locally. Set variables locally. For example, in a prompt, you could ask, "What's your name?" and save the response to the variable `name`.
+             + **Transfer**: Allows transferring calls to another agent.
+          + **Tool Call Allow List**: Select from a list of `functions` available in **Apps** in **IDE**.
+       
+          + **Guard Rails**: Choose from multiple Guard Rails options to define constraints for your AI Agent.
+       
+          + **Flags**: Select from various flags:
+              + **Async Guard Rails**: *Currently not in use*.
+              + **Local Voice Activity Detection**: Optimizes VoIP performance by identifying speech in real time at the user’s device. 
+              + **Disable ScriptForge**: Disables ScriptForge completely. Enabling this flag will deactivate the Tool Call Support functionality.
+              + **Listen First**: Enabling this flag ensures the LLM prioritizes listening to the user before responding.
+              + **Vad Start Interrupt**: A  VAD Start Interrupt is triggered when the system detects the onset of voice activity, indicating that speech has begun.
+              + **Complete Word on Interrupt**:  If the AI is interrupted, it will complete the current word before stopping execution.
+              + **Async First Greeting**: When enabled, only the first message of the main prompt will be executed before proceeding directly to the first task. When disabled, the system will follow the default behavior and execute the entire main prompt sequence.
+              + **Include Primary Chat History**: Includes the full conversation history from the primary session, allowing the AI to access prior interactions for better context and continuity.
+              + **Include Primary Prompt**: Appends the initial prompt from the primary task to the current session, ensuring the AI has visibility into the original instruction or objective.
+              + **Sync Primary Chat History**: Enables real-time synchronization with the primary chat session, so updates and responses are reflected across both the original and current contexts.
+              + **Summarize History on Exit**: Generates a concise summary of the conversation when the task concludes.
+              + **Bill Task Separately**: Marks this task to be billed independently from the rest of the session
+
+          + **Office Background Volume**: This feature enables the playback of background office sounds.
+
+          + **Temperature**: Refers to a parameter that controls the creativity of the model's output.
+          + **Low temperature (close to 0)** makes the model's responses more predictable by selecting the most probable words.
+          + **High temperature (closer to 1 or above)** increases randomness, leading to more diverse and creative but potentially less coherent responses.
+
+          + **Vars**<sup>TOML</sup>:  Select the variables you want pass into the ScriptForge script.
+
     + Click `Save`.
         <img src= "/class5/img/task5new.png" style="border: 2px solid #4472C4; border-radius: 8px;"> 
-    
+
     + To use this created task select it under [Advanced :material-menu-right:First Task](https://bani-aiagent1--connexcs-docs.netlify.app/class5/ai-agent/#__tabbed_1_5).
-    
+
     !!! Note
         1. If `Include Primary Chat History` is `checked`, `Include Primary Prompt` will be ticked automatically.
         2. If `Sync Primary Chat History` is `checked`, `Include Primary Chat History` and `Include Primary Prompt` will be ticked automatically.
