@@ -162,12 +162,10 @@ It usually involves processing inputs, making decisions, and taking actions to a
     E --> F{🧠 Is Condition Met?}
 
     F -- ✅ Yes --> G([➡️ Proceed to Next Task])
-    F -- ❌ No --> H([⏸️ Stop or Await Input])
+    F -- ❌ No --> H([⏸️ Stop])
 
     G --> I([🔁 Repeat for Next Task])
     I --> E
-
-    H --> Z([🏁 End or Trigger Fallback Action])
 
     %% Styling
     classDef step fill:#E0F7FA,stroke:#00ACC1,stroke-width:2px,color:#004D40;
@@ -182,31 +180,30 @@ It usually involves processing inputs, making decisions, and taking actions to a
 2. Navigate to **Class 5 :material-menu-right: AI Agent**.
 3. Click on **Task**.
 4. Click on the blue `+` sign. <img src= "/class5/img/task1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
-5. Fill in the following fields to setup the task for your AI Agent:
+5. Click on the blue `+` sign (**Add next node**). It will update the first task. <img src= "/class5/img/task1new.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+6. Fill in the following fields to setup the task for your AI Agent:
 
-=== "Basic"
+   1. **Basic**:
+      + **Name**: Enter the name of your task.
+         <img src= "/class5/img/task2new.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-    + **Name**: Enter the name of your task.
-    + Click `Save`.
-         <img src= "/class5/img/task2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+   2. **Model**:
 
-=== "Model"
-
-    + **Model**: Select a model for the selected platform. A model is a specific version or configuration of an AI system to perform tasks like text generation, real-time interactions, etc.
+       + **Model**: Select a model for the selected platform. A model is a specific version or configuration of an AI system to perform tasks like text generation, real-time interactions, etc.
 
         !!! Info
             Different platforms offer specific models suited to their capabilities.
-    
-    + **First Message**: The initial message spoken by the agent. For example, when the agent begins the conversation.
-    + **Prompt**: The prompt field allows you to enter a set of instructions to guide the AI Agent to perform certain tasks. It provides the foundation for the AI to comprehend the context, interpret the user's purpose, and generate relevant results.
-    + Click `Save`.
-        <img src= "/class5/img/task3.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-=== "Transcriber"
+       + **First Message**: The initial message spoken by the agent. For example, when the agent begins the conversation.
+       + **Prompt**: The prompt field allows you to enter a set of instructions to guide the AI Agent to perform certain tasks. It provides the foundation for the AI to comprehend the context, interpret the user's purpose, and generate relevant results.
 
-    + **Transcriber**: Select a single or multiple transcribers for converting audio to text. You can select the transcriber depending on the selected platform.
-    + Click `Save`.
-      <img src= "/class5/img/task4.png" style="border: 2px solid #4472C4; border-radius: 8px;"> 
+        <img src= "/class5/img/task3new.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+   3. **Transcriber**
+
+       + **Transcriber**: Select a single or multiple transcribers for converting audio to text. You can select the transcriber depending on the selected platform.
+
+      <img src= "/class5/img/task4new.png" style="border: 2px solid #4472C4; border-radius: 8px;"> 
 
 === "Advanced"
 
@@ -239,7 +236,7 @@ It usually involves processing inputs, making decisions, and taking actions to a
     + **Vars**<sup>TOML</sup>:  Select the variables you want pass into the ScriptForge script.
     
     + Click `Save`.
-        <img src= "/class5/img/task5.png" style="border: 2px solid #4472C4; border-radius: 8px;"> 
+        <img src= "/class5/img/task5new.png" style="border: 2px solid #4472C4; border-radius: 8px;"> 
     
     + To use this created task select it under [Advanced :material-menu-right:First Task](https://bani-aiagent1--connexcs-docs.netlify.app/class5/ai-agent/#__tabbed_1_5).
     
@@ -247,12 +244,13 @@ It usually involves processing inputs, making decisions, and taking actions to a
         1. If `Include Primary Chat History` is `checked`, `Include Primary Prompt` will be ticked automatically.
         2. If `Sync Primary Chat History` is `checked`, `Include Primary Chat History` and `Include Primary Prompt` will be ticked automatically.
 
-!!! Note "Variables via JSON"
-    You can pass variables using JSON in the prompt section to configure or initialize them.
+### Variables via JSON
 
-    Make sure you select `SetVariable` under **Advanced :material-menu-right: Built-in Functions :material-menu-right: Set Variable**
+You can pass variables using JSON in the prompt section to configure or initialize them.
 
-    !!! Example "Example Use Case"
+Make sure you select `SetVariable` under **Advanced :material-menu-right: Built-in Functions :material-menu-right: Set Variable**
+
+!!! Example "Example Use Case"
         Store the caller's name by calling the setVariable function with `name=name` and `value=[The customers name]`. 
 
 ### AI Platforms, Models, Voices, TTS, Transcribers
