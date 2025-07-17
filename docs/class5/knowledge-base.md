@@ -49,8 +49,11 @@ Indexed documents go through a batch processing phase and are made searchable vi
     It provides the following information about the knowledge base:
 
     `Status`: Current state of the indexing job for the document you added to the knowledge base.
+
     `Created`: When the source was added.
+
     `Index Started At`: When indexing began.
+
     `Index Finished At`: When indexing completed.
 
 8. If you wish to add another URL, click on the blue `+` sign, enter the `URL` and click `Save`.
