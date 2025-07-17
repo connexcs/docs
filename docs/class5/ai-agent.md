@@ -100,6 +100,7 @@ With AI-driven automation, businesses can enhance customer experience while sign
         + **Hangup**: Use this flag to terminate the call. You can include a prompt such as, "When call ended, hangup.
         + **Set Variable**: Set variables locally. For example, in a prompt, you could ask, "What's your name?" and save the response to the variable `name`.
         + **Transfer**: Allows transfering calls to another agent.
+        + **Search Knowledge Base**: Allows the AI to query indexed documents in the Knowledge Base and return relevant information in response to a user's question. 
     + **Tool Call Allow List**: Select from a list of `functions` available in Apps in IDE. 
     + **Guard Rails**: Choose from multiple Guard Rails options to define constraints for your AI Agent.
     + **Flags**: Select from various flags:
@@ -121,10 +122,12 @@ With AI-driven automation, businesses can enhance customer experience while sign
     
     + **First Task**: Select the list of pre-created tasks, so that your AI will perform this task as the first task and rest prompts after this task. [Click here](https://bani-aiagenttask--connexcs-docs.netlify.app/class5/ai-agent/#task) to know more about tasks.
     
+    + **Knowledge Base**: Allows you to select which indexed documents an AI Agent can reference when answering user queries. 
+    
     + **Vars**<sup>TOML</sup>:  Select the variables you want pass into the ScriptForge script.
     
     + Click `Save`.
-        <img src= "/class5/img/aiagent7new1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+        <img src= "/class5/img/aiagent7new17.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Example "Example Prompt"
     **Introduction:**  
