@@ -144,7 +144,7 @@ You can create an application called **Echo Test** and provide a specific call t
 1. **Performing an Echo Test in ConnexCS**:
 
       + Navigate to **Management :material-menu-right: Customer :material-menu-right: Customer [Name] :material-menu-right: Ingress Routing :material-menu-right: Basic :material-menu-right: Rate Card :material-menu-right: [Internal]**.
-      + Assign a digit for the echo test.
+      + Assign the dial string on this internal route same as the destination of the echo test you have created.
       + Dial the assigned digit from the account to compare the transmitted and received audio.
 
 ```mermaid
@@ -154,23 +154,6 @@ graph TD
     C --> D[Assign a digit for the echo test]
     D --> E[Dial the assigned digit from the account]
     E --> F[Compare transmitted and received audio]
-```
-
-2. **Performing an External Echo Test**:
-
-      + Log into ConnexCS from your location.
-      + Dial the Echo Test to measure latency and packet loss audibly.
-      + Call through the customer's dialer (if accessible) and then dial the Echo Test.
-      + This helps compare direct and indirect routing paths.
-
-```mermaid
-graph TD
-    A[Start] --> B[Log into ConnexCS from your location]
-    B --> C[Dial the Echo Test to measure latency and packet loss audibly]
-    C --> D[Call through the customer's dialer if accessible]
-        D --> E1[Dial the customer's dialer]
-        E1 --> E2[Dial the Echo Test]
-    E2 --> F[Compare direct and indirect routing paths]
 ```
 
 ### Multi-Point Testing Approach
