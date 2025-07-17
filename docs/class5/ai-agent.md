@@ -250,7 +250,7 @@ You can pass variables using JSON in the prompt section to configure or initiali
 
 Make sure you select `SetVariable` under **Advanced :material-menu-right: Built-in Functions :material-menu-right: Set Variable**
 
-!!! Example "Example Use Case"
+    !!! Example "Example Use Case"
         Store the caller's name by calling the setVariable function with `name=name` and `value=[The customers name]`. 
 
 ### AI Platforms, Models, Voices, TTS, Transcribers
@@ -275,8 +275,10 @@ Before starting, choose a model mode—Standard for fast results (default) or Ex
 2. Navigate to **Class 5 :material-menu-right: AI Agent**.
 3. Click on **Chat**.
 4. Click on **Start Chat**.
-<img src= "/class5/img/chat1.png" style="border: 2px solid #4472C4; border-radius: 8px;"> 
-1. Before initiating interaction with the AI chatbot, you must configure a few initial settings: <img src= "/class5/img/chat2.png" style="border: 2px solid #4472C4; border-radius: 8px;"> 
+
+    <img src= "/class5/img/chat1.png" style="border: 2px solid #4472C4; border-radius: 8px;"> 
+
+5. Before initiating interaction with the AI chatbot, you must configure a few initial settings: <img src= "/class5/img/chat2.png" style="border: 2px solid #4472C4; border-radius: 8px;"> 
    1. `Add Context` (optional field): Allows you to provide additional information to the AI before or during a conversation so it can give more accurate, relevant, and helpful responses. You can either add `Text Input` or upload text files using `File Upload` option. <img src= "/class5/img/chat3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"><img src= "/class5/img/chat4.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">. <br>Click `Add to Chat`.</br>
    2. Select the mode of the model:
       1. `Standard` (default): A fast model focused on quick results.
