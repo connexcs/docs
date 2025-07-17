@@ -250,8 +250,8 @@ You can pass variables using JSON in the prompt section to configure or initiali
 
 Make sure you select `SetVariable` under **Advanced :material-menu-right: Built-in Functions :material-menu-right: Set Variable**
 
-    !!! Example "Example Use Case"
-        Store the caller's name by calling the setVariable function with `name=name` and `value=[The customers name]`. 
+!!! Example "Example Use Case"
+    Store the caller's name by calling the setVariable function with `name=name` and `value=[The customers name]`.
 
 ### AI Platforms, Models, Voices, TTS, Transcribers
 
