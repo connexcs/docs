@@ -67,8 +67,8 @@ With AI-driven automation, businesses can enhance customer experience while sign
 
     + **Transcriber**: Select single or multiple transcriber for converting audio to text. You can select the transcriber depending on the selected platform.
     + **Answer Machine Detection Keywords**: If the AI Agent detects a phrase (any phrase entered by the user) like "Please leave a message" at the start of the call, it will automatically disconnect.
-        !!! Note
-            Enter multiple keywords, each on a new line (**use Enter to separate**). 
+            !!! Note
+                Enter multiple keywords, each on a new line (**use Enter to separate**). 
     + **Transcriber Timeout**: It defines the maximum time the system waits for a response during speech-to-text transcription before terminating the process. If no speech is detected within this period, the transcriber stops listening and times out. On timeout `<SILENT_TIMEOUT>` will be sent to the LLM.
     + **Transcriber Silence Threshold (sec)**: Defines the maximum duration (in seconds) the system will wait for a response from the ASR (Automatic Speech Recognition) engine. If no transcription is received within this threshold, the transcriber will stop waiting and proceed accordingly.
     
@@ -189,19 +189,7 @@ To grant access to functions for an AI agent, follow these steps:
       1. Under the newly created app, add a Script Forge. [Click here](https://docs.connexcs.com/apps/architecture/script/) to know the steps.
 
 3. **Define the Function**:
-      1. Within the Script Forge, add the function you want the AI agent to access.
-
-   !!! Example "Example Function"
-       ```js linenums="1"
-        /**
-          * Transfer
-          * @param {Object} param - Param Object
-          * @param {string} param.name - The name of the person who you wish to transfer the call to.
-            */
-        function transfer() {
-            return { action: 'transfer', destination: '160' }
-        }
-       ```
+      1. Within the Script Forge, add the function you want the AI agent to access. See example (**Example Function**) below.
 
 4. **Assign the App to the AI Agent**:
       1. Navigate to your AI agent that you have previously created.
@@ -211,7 +199,7 @@ To grant access to functions for an AI agent, follow these steps:
       1. Navigate to **Advanced** tab (in AI Agent), then select the created function in the **Tool Call Allow List** and grant access from the list.
 
 !!! Example "Example Function"
-    ```js
+    ```js linenums="1"
     /**
     * Transfer
     * @param {Object} param - Param Object
@@ -316,8 +304,8 @@ Our AI Agent comes equipped with robust reseller capabilities. For instance, if 
 
 1. [Create your AI Agent](https://docs.connexcs.com/class5/ai-agent/#steps-to-create-ai-agent).
 2. A few more adjustments are needed:
-   1. Select `Search Knowledge Base` from the `Built-in Functions` option
-   2. Select your `Knowlegde Base` from the `Knowledge Base` drop-down.
+      1. Select `Search Knowledge Base` from the `Built-in Functions` option
+      2. Select your `Knowlegde Base` from the `Knowledge Base` drop-down.
 3. Click `Save`.
 
 <img src= "/class5/img/aiagent10.png" style="border: 2px solid #4472C4; border-radius: 8px;">

@@ -12,9 +12,9 @@ Indexed documents go through a batch processing phase and are made searchable vi
 
 ### Use Cases
 
-+ **AI-Powered Support Bots**
-+ **Internal Knowledge Retrieval**
-+ **Compliance and Technical Reference**
++ AI-Powered Support Bots
++ Internal Knowledge Retrieval
++ Compliance and Technical Reference
 
 ### Benefits
 
