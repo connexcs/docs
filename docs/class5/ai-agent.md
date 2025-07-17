@@ -238,6 +238,7 @@ It usually involves processing inputs, making decisions, and taking actions to a
           + **Vars**<sup>TOML</sup>:  Select the variables you want pass into the ScriptForge script.
 
     + Click `Save`.
+
         <img src= "/class5/img/task5new.png" style="border: 2px solid #4472C4; border-radius: 8px;"> 
 
     + To use this created task select it under [Advanced :material-menu-right:First Task](https://bani-aiagent1--connexcs-docs.netlify.app/class5/ai-agent/#__tabbed_1_5).
