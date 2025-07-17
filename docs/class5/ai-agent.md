@@ -67,10 +67,24 @@ With AI-driven automation, businesses can enhance customer experience while sign
 
     + **Transcriber**: Select single or multiple transcriber for converting audio to text. You can select the transcriber depending on the selected platform.
     + **Answer Machine Detection Keywords**: If the AI Agent detects a phrase (any phrase entered by the user) like "Please leave a message" at the start of the call, it will automatically disconnect.
+        !!! Note
+            Enter multiple keywords, each on a new line (**use Enter to separate**). 
     + **Transcriber Timeout**: It defines the maximum time the system waits for a response during speech-to-text transcription before terminating the process. If no speech is detected within this period, the transcriber stops listening and times out. On timeout `<SILENT_TIMEOUT>` will be sent to the LLM.
-    + **Transcriber Silence Threshold (sec)**: Defines the maximum duration (in seconds) the system will wait for a response from the ASR (Automatic Speech Recognition) engine. If no transcription is received within this threshold, the transcriber will stop waiting and proceed accordingly. 
+    + **Transcriber Silence Threshold (sec)**: Defines the maximum duration (in seconds) the system will wait for a response from the ASR (Automatic Speech Recognition) engine. If no transcription is received within this threshold, the transcriber will stop waiting and proceed accordingly.
+    
+    + **End Turn Threshold**: A sidecar classifier that detects the probability the user has finished speaking.
+        + When the classifier gives a **low value**, it means the system thinks the person is still speaking — maybe just taking a **short pause**.
+        + A **high value** means the system thinks the person has **finished talking**.
+
+    |Value|Description|
+    |-----|-----------|
+    |0|Will never evaluate, will always assume end of speech
+    |0.1|Mainly assume that the speech has ended|
+    |0.9|main assume that the speech will continue|
+    |1|Always Assume that there is more speech to come|
+
     + Click `Save`.
-      <img src= "/class5/img/aiagent5new.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+      <img src= "/class5/img/aiagent5new1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 === "Voice"
 
@@ -297,3 +311,15 @@ Our AI Agent comes equipped with robust reseller capabilities. For instance, if 
     6. Then Navigate to **Management :material-menu-right: Customer :material-menu-right: Customer [Name] :material-menu-right: Packages**. Click on the blue `+` sign.
     7. Select the **Package** (`Test123` in this example), **Quantity**, **Start Date**, always enable **Auto Decrement Credit**.
     8. Click `Save`. <img src= "/class5/img/aiagent9.png">
+
+## Integrating Knowledge Base into Your AI Agent
+
+1. [Create your AI Agent](https://docs.connexcs.com/class5/ai-agent/#steps-to-create-ai-agent).
+2. A few more adjustments are needed:
+   1. Select `Search Knowledge Base` from the `Built-in Functions` option
+   2. Select your `Knowlegde Base` from the `Knowledge Base` drop-down.
+3. Click `Save`.
+
+<img src= "/class5/img/aiagent10.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+<img src= "/class5/img/aiagent11.png" style="border: 2px solid #4472C4; border-radius: 8px;">
