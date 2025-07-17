@@ -4,7 +4,7 @@
 
 **ScriptForge** is a powerful scripting engine that allows users to extend and customize the functionality of ConnexCS.
 
-It provides a JavaScript-based environment where users can develop scripts, applications, drivers, and debugging tools to interact with internal and external data sources.
+It provides a JavaScript-based environment where users can develop scripts and applications.
 
 Use ConnexCS **ScriptForge** to write ECMAScript 2015 (ES6) (aka JavaScript) and execute it in a secure sandbox on the server. It's designed to have low latency and high throughput.
 
@@ -13,49 +13,6 @@ It's made for scripts and small applications. Any larger applications are best e
 A fair-usage policy applies, and if there is unnecessary resource use or if there are any attempts to break the sandbox, your script may not function as expected.
 
 It's designed to work as **FaaS** (Functions as a Service), and our redundant infrastructure handles your application's auto scaling needs.
-
-### Key Features
-
-+ **Custom JavaScript Applications**: Write scripts that pull data from external sources like Forex data, CRMs, or customer top-ups.
-
-+ **Multi-dimensional Querying**: Retrieve and manipulate large datasets with collation options like source IP or CLI.
-
-+ **Integration with ConnexCS API**: Query internal APIs for enhanced data access and operations.
-
-+ **Performance Optimized**: Designed for high-speed execution, handling thousands of requests per second.
-
-+ **Extensive Library Support**: Use predefined libraries for external communication and automation.
-
-+ **Introspection API**: Retrieve real-time system insights.
-
-+ **Flexible Scripting Types**:
-
-    + **Scripts**: Fast execution, ideal for internal logic.
-    + **Apps**: Designed for asynchronous tasks like external communication and email automation.
-    + **Drivers**: Interact with external systems, e.g., provisioning a DID from a third party.
-    + **Debug Mode**: Available for administrators to troubleshoot and optimize scripts.
-
-!!! Example "Examples"
-    1.  **Querying Recent CLI Data**:
-         + Retrieve the last seen CLIs.
-         + Filter results by time range.
-         + Collate data by source IP for deeper analysis.
-    2.  **Developing a DIDX Driver**:
-         + A ScriptForge driver can communicate with external DID providers to fetch and provision numbers dynamically.
-         + Provisioning DIDs from a third-party provider.
-    3.  **Advanced Call Management**:
-        + Answer calls
-        + Play text-to-speech messages
-        + Send calls externally
-        + Capture and validate user inputs
-        + Set and retrieve special variables
-    4. **Call Logging & Data Processing**:
-          + Captures logs of Class 5 calls for monitoring.
-          + Displays logs to track call progress.
-    5. **Security & Payment Integration**:
-          + Ability to securely capture and process credit card payments.
-          + Blocks DTMF signals from reaching the other side.
-          + Ensures high security in real-time payment processing.
 
 ## Developer Documentation
 
@@ -159,7 +116,7 @@ function main (data = {}) {
 }
 ```
 
-### Driver
+### Export/Import
 
 A driver is a module export that may contain several pre-defined functions dependent on the integration; flow is an example for a DID Driver.
 
@@ -178,30 +135,6 @@ module.export = {
  list: async function () {
   // Returns Array of Objects, e.g [{did:'1234'}]
  }
-}
-```
-
-### Compliance & Call Restrictions
-
-Ensures regulatory compliance and prevents spam.
-
-A script limiting outbound calls per number to two within 24 hours:
-
-```js
-if (callCount >= 2) {
-    blockCall();
-}
-```
-
-### Building a Class 5 Application for secure Payments
-
-Process payments securely using ScriptForge.
-
-Validate credit card details and restrict invalid entries in real-time.
-
-```js
-if (!validateCardNumber(vars.cardNumber)) {
-    return "Invalid card number. Try again.";
 }
 ```
 

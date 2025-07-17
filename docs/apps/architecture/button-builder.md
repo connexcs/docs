@@ -15,13 +15,7 @@
 
 + **Customizable Buttons**: Set button name, icon, and color.
 
-+ **Dropdown Selection**: Assign specific user groups for targeted actions.
-
 + **ScriptForge Integration**: Trigger scripts upon button click.
-
-+ **Conditional Execution**: Define min/max selections for enabling/disabling buttons.
-
-+ **Automated Workflows**: Send emails, update CRMs, or process customer actions with a single click.
 
 ## Create new button
 
