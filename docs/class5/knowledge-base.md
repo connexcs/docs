@@ -35,16 +35,16 @@ Indexed documents go through a batch processing phase and are made searchable vi
     + **URL** (*required field*): Enter the URL of the document you want to index.
 5. Click `Save`.
 
-    <img src= "/class5/img/kb1.png">
+    <img src= "/class5/img/kb1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 6. The following screen will appear:
 
-    <img src= "/class5/img/kb2.png">
+    <img src= "/class5/img/kb2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
     Click `Edit` to modify the knowledge base `Name` or the `Customer`.
 
 7. When you click on the name of a knowledge base entry, a detailed view screen will open:
-   <img src= "/class5/img/kb3.png">
+   <img src= "/class5/img/kb3.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
     It provides the following information about the knowledge base:
 
@@ -55,6 +55,6 @@ Indexed documents go through a batch processing phase and are made searchable vi
 
 8. If you wish to add another URL, click on the blue `+` sign, enter the `URL` and click `Save`.
 
-<img src= "/class5/img/kb4.png">
+<img src= "/class5/img/kb4.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-<img src= "/class5/img/kb5.png">
+<img src= "/class5/img/kb5.png" style="border: 2px solid #4472C4; border-radius: 8px;">
