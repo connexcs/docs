@@ -312,3 +312,12 @@ Our AI Agent comes equipped with robust reseller capabilities. For instance, if 
 <img src= "/class5/img/aiagent10.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 <img src= "/class5/img/aiagent11.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+!!! Info "Info"
+    For the most accurate and helpful results from the integrated knowledge base, try phrasing your prompt like this:
+    ```js
+    Instructions 
+    You can call the knowledge base only when you are required to and search for info that you require only 
+    Only do one 1 lookup per human interaction.
+    Keep your replies short
+    ```

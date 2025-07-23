@@ -4,25 +4,13 @@
 
 ## Overview
 
-The **Knowledge Base** allows you to upload and index documents. The documents may include RFCs, technical manuals, or support guides so that AI agents and internal systems can reference them in real time.
+The **Knowledge Base** allows you to upload and index documents.
 
-It enhances automated support and search functionalities, enabling fast, accurate responses based on reliable source material.
+The documents may include RFCs, technical manuals, or support guides so that AI agents and internal systems can reference them in real time.
 
-Indexed documents go through a batch processing phase and are made searchable via structured metadata, making them valuable for internal teams, chatbots, or customer-facing tools.
-
-### Use Cases
+### Use Case
 
 + AI-Powered Support Bots
-+ Internal Knowledge Retrieval
-+ Compliance and Technical Reference
-
-### Benefits
-
-+ Centralized, searchable document repository
-+ Supports AI chat integration
-+ Automatic indexing of structured data
-+ Works with public URLs and internal files
-+ Tracks indexing status and history
 
 ## Steps to create the Knowledge Base
 
