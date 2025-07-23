@@ -151,7 +151,7 @@ You can create an application called **Echo Test** and provide a specific call t
 graph TD
     A[Start] --> B[Select Customer]
     B --> C[Select Ingress Routing --> Basic --> Rate Card --> Internal]
-    C --> D[Assign a digit for the echo test]
+    C --> D[Set dial string same as Echo Test destination]
     D --> E[Dial the assigned digit from the account]
     E --> F[Compare transmitted and received audio]
 ```
