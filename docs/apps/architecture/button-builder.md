@@ -4,13 +4,6 @@
 
 **Button Builder** allows users to create and customize action buttons in ConnexCS that trigger forms, execute scripts, and interact with system data.
 
-!!! example "Example use"
-    Create the ability to select one or more customers / DIDs (Direct Inward Dialing)
-
-    1.  Supplement with additional information from a form.
-    
-    2.  Then, run Script Forge to send that data outside the system or perform bulk operations that may require repetition.
-
 ### Key Features
 
 + **Customizable Buttons**: Set button name, icon, and color.
