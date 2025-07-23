@@ -6,7 +6,7 @@ The **Select** component is a dropdown menu that allows users to choose one opti
 
 It's a versatile tool for collecting user input in situations where there are multiple, but not limitless, choices.
 
-<img src= "/apps/components/img/select.png">
+<img src= "/apps/components/img/select.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Use Case
 
@@ -71,7 +71,7 @@ It's a versatile tool for collecting user input in situations where there are mu
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/select2.png">
+<img src= "/apps/components/img/select2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Example
     1. `this.addClassName(fields, className)`
@@ -87,58 +87,58 @@ It's a versatile tool for collecting user input in situations where there are mu
             ```
 
     2. `this.removeClassName(fields, className)`
-        ```js
+        ```js linenums="1"
         this.removeClassName('select_rzaltclo', 'abc')
         ```
     
     3. `this.getValues()`
-        ```js
+        ```js linenums="1"
         var data = this.getValues();
         console.log(data);
         ```
     
     4. `this.hide(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['select_rzaltclo']
         this.hide(fields)
         ```
     
     5. `this.show(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['select_rzaltclo']
         this.show(fields)
         ```
     
     6. `this.disable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.disable(['select_rzaltclo'])
         ```
     
     7. `this.enable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.enable(['select_rzaltclo'])
         ```
     
     8.  `this.getValue('fieldName')`
-        ```js
+        ```js linenums="1"
         var selectname = this.getValue('select_rzaltclo');
         console.log('getValue', selectname);
         ```
       
     9.  `this.getComponent('component_ID')`
-        ```js
+        ```js linenums="1"
         var selectname = this.getComponent('select_rzaltclo');
         console.log('getComponent', selectname);
         ```
 
     10.  `this.setData(Value)`
-        ```js
+        ```js linenums="1"
         this.setData(
          {"select_rzaltclo": "Option 2",});
         ```
     
     11. `this.refreshFieldDataSource(datasource)`
-        ```js
+        ```js linenums="1"
         const dataSource = 'Name Of The Data Source Function'
         this.refreshFieldDataSource(dataSource)
         ```
@@ -178,7 +178,7 @@ Form validation can be performed using a variety of methods, including:
 ||**value**: Value of the current field|
 ||**callback**: Callback function (must be called) upon completion of validation; **callback('Error message')/ callback(new Error('Error message'))**. These are two ways to return an error message|
 
-<img src= "/apps/components/img/input_validation.png">
+<img src= "/apps/components/img/input_validation.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Info
     1. The **callback() function** is also called to verify success in the custom validation method.

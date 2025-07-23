@@ -147,6 +147,9 @@ To change Revision status:
 |**Single Rate**|0.0007|Usually a UK Landline|1|
 |**IntER/IntRA**|1 (NPANXX)|Refers to Interstate and Intrastate calling for USA dialing|2|
 |**IntER/IntRA/Indeterminate**|1 (NPANXX)|Indeterminate indicates that call is between a USA number and another country|3|
+|**EEA (Local Rates)**|If a call originates from a CLI starting with '43' and the destination number also starts with '43'| Both the originating CLI and destination number start with the same country code, specifically '43' for Austria||
+|**EEA(EEA Rates)**|If a call originates from a CLI starting with '33' (France) and the destination number starts with '43' (Austria)| When a call originates from one European Economic Area country and terminates in another EEA country|3|
+|**EEA(International Rates)**| If a call originates from a CLI starting with '33' (France) and the destination number starts with '444' (UK)|Any call not meeting the Local or EEA criteria falls under this category|
 
 + **Dialing**: Select whether to bill based on the carrier of the Dialed Number or using an LRN Database (US-only).  
 
@@ -162,7 +165,7 @@ An LRN dip will correct any pricing discrepancies between the original and new c
 
     No charges for using this service, so customers have unlimited dips into the database.
 
-+ **ASR+**: Filter known failed, non-existent / working numbers. See [**ASR Plus Details**](https://docs.connexcs.com/customer/routing/#asr-answer-seizure-ratio-plus-details) for additional information.
++ **ASR+**: Filter known failed, non-existent / working numbers. See [**ASR Plus Details**](https://docs.connexcs.com/customer/routing/#answer-seizure-ratio-plus-details) for additional information.
 
 #### Advanced
 
@@ -182,7 +185,7 @@ An LRN dip will correct any pricing discrepancies between the original and new c
 + **CLI Restrict**: Enable Call Line Identification (CLI) restriction(s) using regular expressions to set valid number formats.
 See [**CLI**](/customer/cli/) for additional details.
 + **PAID Restrict**: Enable Pre-Asserted-Identity (PAID) restriction(s) using regular expressions to set valid number formats.
-See [**Filter PAID by Number or Pattern**](/customer/cli/#filter-paid-by-number-or-pattern) for additional details.
+See [**Filter PAID by Number or Pattern**](https://docs.connexcs.com/customer/cli/#filter-p-asserted-identity-by-number-or-pattern) for additional details.
 + **SMS URL**: *not in use*
 
 + **Default RTP**: If set and the customer adds the route themselves, then it deploys the Default RTP. Otherwise, this is an unused setting.

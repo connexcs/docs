@@ -12,7 +12,7 @@ The **Routing Strategy** screen, located under **Management**, displays existing
 
 With ConnexCS, you can use several types of routing strategies:
 
-| Strategy  | Description     |
+| Strategy  | Description|
 |----------|-------------|
 | **LCR** |    Least Cost Routing (LCR) configures parameters to the lowest cost-per-call. |
 | **Random** |    Routing calls to any random route without any sequence, though you can add weighting. |
@@ -33,7 +33,7 @@ Once you create a new **Routing Strategy**, assign it to a customer account.
 3. Select the Strategy type (as defined in Types of Routing Strategies section).
 4. Click **`Save`**.
 
-![weights](/misc/img/weights.jpg)
+<img src= "/misc/img/weights.jpg" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 **Step 2: Assign Routing Strategy to a Customer**
 
@@ -63,4 +63,4 @@ You can also block a call using routing strategy. To block a call,
 4. Add the number to block and then select **Drop** as the Strategy.
 5. Click **`Save`**.
 
-![Alt text](misc/img/routing-drop.png)
+<img src= "/misc/img/routingdrop.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">

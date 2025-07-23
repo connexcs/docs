@@ -1,6 +1,6 @@
 # Troubleshoot Media
 
-Media refers to the actual audio payload part of a call. For more information about ConnexCS media servers, see [**RTP Servers**](https://docs.connexcs.com/setup/settings/servers/#rtp-servers).
+Media refers to the actual audio payload part of a call. For more information about ConnexCS media servers, see [**RTP Servers**](https://docs.connexcs.com/setup/settings/servers/#real-time-transport-protocol-servers).
 
 **RTP (Real-time Transport Protocol)**, operating on top of User Datagram Protocol (UDP), is a data transport protocol. A signaling protocol, such as Session Initiation Protocol (SIP), initiates the RTP session. Once established, the audio gets streamed across the network.
 
@@ -129,12 +129,12 @@ You can create an application called **Echo Test** and provide a specific call t
 
 1. Login to your account.
 2. Go to Class5 :material-menu-right: Apps and click `+`.
-3. You will see a Dialog box as shown below. ![echo test](/guides/img/echotest.jpg)
+3. You will see a Dialog box as shown below. <img src= "(/guides/img/echotest.jpg" style="border: 2px solid #4472C4; border-radius: 8px;"?
 4. Write the **Name** of your Echo test.
 5. Enter the **Destination** number for your Echo Test.
 6. Select the **PBX Server** for the call. The **Distributed (Default)** server will assign you the server near to your location.
-7. Click on `Save`. ![echo test1](/guides/img/echotest1.jpg)
-8. Click on `Go to App` which is right next to the echo test you've created. You will see a screen as shown in the figure below. ![echo test2](/guides/img/echotest2.jpg)
+7. Click on `Save`. <img src= "/guides/img/echotest1.jpg" style="border: 2px solid #4472C4; border-radius: 8px;">
+8. Click on `Go to App` which is right next to the echo test you've created. You will see a screen as shown in the figure below. <img src= "/guides/img/echotest2.jpg" style="border: 2px solid #4472C4; border-radius: 8px;">
 9. Then from components drag the `echo` component and connect it with your created echo test.
 10. Click on the dot on the right-side of your created echo test (Echo Test in this case) and join it with the `echo component` on the right-side.![echo test3](/guides/img/echotest3.jpg)
 11. Then use your softfone to check for the echo test.
