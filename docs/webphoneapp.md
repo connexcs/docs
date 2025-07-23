@@ -94,11 +94,11 @@ PKI ensures end-point integrity, so you can be confident that the endpoint you c
 ### Step 1: Installing
 
 1. Login to your account.
-2. Navigate to **Setup** :material-menu-right: **App Store**. <img src= "/setup/img/wp1.png">
-3. Click on **WebPhone**. <img src= "/setup/img/wp2.png">
+2. Navigate to **Setup** :material-menu-right: **App Store**. <img src= "/setup/img/wp1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+3. Click on **WebPhone**. <img src= "/setup/img/wp2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 4. Click **Install**.
-5. After hitting the Install button. A window appears which has 2 fields, **App Name** and **Version**. We shall keep the default App name and the suggested version of the App.<br><img src= "/setup/img/wp3.png" width="600"></br>
-6. Click on **Install** and the App will be installed on your user account. <img src= "/setup/img/wp4.png">
+5. After hitting the Install button. A window appears which has 2 fields, **App Name** and **Version**. We shall keep the default App name and the suggested version of the App.<br><img src= "/setup/img/wp3.png" width="600" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+6. Click on **Install** and the App will be installed on your user account. <img src= "/setup/img/wp4.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ### Step 2: Publishing
 
@@ -106,7 +106,7 @@ PKI ensures end-point integrity, so you can be confident that the endpoint you c
 2. Click on the **Domain**, and press the blue plus sign to add the domain of your WebPhone.
 3. To keep things simple, we will use a top-level domain provider by ConnexCS.
 4. Enter your unique name in the first part of the domain and we will deploy this for you on the **.cnx.page** domain.
-5. Click on **Save**. <img src= "/setup/img/wp5.png">
+5. Click on **Save**. <img src= "/setup/img/wp5.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Note
     Please note you can change this later if you want to deploy this on your own domain.
@@ -158,15 +158,15 @@ To setup WebRTC on a server:
 4. For selecting **Flags** [click here](https://docs.connexcs.com/apps/architecture/environmental-variables/#steps-for-configuring-the-variables).
 5. Click on **Save**.
 
-<img src= "/setup/img/wp10.png">
+<img src= "/setup/img/wp10.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ### Step 6: Login
 
 1. Now let's have a look at the deployed domain.
 2. Enter in the domain name in the URL e.g., webphone1.cnx.page.
 3. Enter the **Username** and **Password**.
-4. Select the **Server** from the dropdown. If you don’t want the customer to type-in the server, you can add the servers in the drop-down in the next step which is **Configuration**. You won't have the drop-down if you don’t fill out the information of the servers in the environmental variables.<br><img src= "/setup/img/wp7.png" width="600"></br>
-5. After logging in you can dial from your WebPhone.<br><img src= "/setup/img/wp8.png" width="300"></br>
+4. Select the **Server** from the dropdown. If you don’t want the customer to type-in the server, you can add the servers in the drop-down in the next step which is **Configuration**. You won't have the drop-down if you don’t fill out the information of the servers in the environmental variables.<br><img src= "/setup/img/wp7.png" width="600" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+5. After logging in you can dial from your WebPhone.<br><img src= "/setup/img/wp8.png" width="300" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 ### Navigation
 
@@ -178,4 +178,4 @@ To setup WebRTC on a server:
 6. **Log Out** (top-right): Click on this button to sign out of the Webphone.
 7. **Current Call Time**: Displays the duration of the ongoing call.
 
-<img src= "/setup/img/wp9.png" width="300">
+<img src= "/setup/img/wp9.png" width="300" style="border: 2px solid #4472C4; border-radius: 8px;">

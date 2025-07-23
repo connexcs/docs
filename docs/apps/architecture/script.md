@@ -50,7 +50,7 @@ Follow the following format; [SIP code] :space: [Error Message], for throwing er
 
 **For example**, to throw a 404 Not Found, you can use the following
 
-``` js
+``` js linenums="1"
 throw new Error('404 Not Found');
 ```
 
@@ -62,7 +62,7 @@ After the routing engine has executed its main function, the system will run the
 
 This presents data as the output to the routing engine and expects the same object structure.
 
-``` js
+``` js linenums="1"
 function main (data = {}) {
  // data.routing contains the same data you will find in the Logs
  // in the Raw Data Section
@@ -80,7 +80,7 @@ See the [**ConnexCS ScriptForge documents**](https://scriptforge-docs.connexcs.c
 
 Second parameter is a ctx object
 
-``` js
+``` js linenums="1"
 function main (data = {}, ctx) {
  // ctx contains class 5 ctx object 
 }
@@ -96,7 +96,7 @@ Used to receive data from Form Builder in ConnexCS.
 
 You can view it in the control panel or customer portal.
 
-``` js
+``` js linenums="1"
 function main (data = {}) {
  // data contains object containing key/value pairs from the form. 
 }
@@ -110,7 +110,7 @@ function main (data = {}) {
     The filename from which the function is exported must be in **lowercase** and must **not contain any spaces or special characters**.
 
 !!! Example "Export module example"
-    ```js
+    ```js linenums="1"
     function run () {
         return 4 + 10
 
@@ -122,7 +122,7 @@ function main (data = {}) {
 + **Import**: Use `import` to bring in code from other modules.
   
 !!! Example "Import module example"
-    ```js
+    ```js linenums="1"
     const { run } = require('fileName')
 
     function main() {
@@ -137,7 +137,7 @@ function main (data = {}) {
 === "Basic"
 
     1. To add a script, login to your Control Panel. Click on IDE :material-menu-right: +, and select `Scriptforge`.
-    <img src= "/apps/img/app_scriptforge1.png" width= "400">
+    <img src= "/apps/img/app_scriptforge1.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">>
 
     2. Specify the script **Name**.
 
@@ -150,11 +150,7 @@ function main (data = {}) {
 
     5. Click `Save`.
 
-    <img src= "/apps/img/app_scriptforge2.png" width= "350">
-
-    <img src= "/apps/img/app_scriptforge3.png" width= "350">
-
-    <img src= "/apps/img/app_scriptforge5.png" width= "350">
+    <img src= "/apps/img/app_scriptforge2.png" width= "350" style="border: 2px solid #4472C4; border-radius: 8px;">
 
     6.Your saved Script becomes available on the main IDE section.
 
@@ -162,7 +158,7 @@ function main (data = {}) {
 
     8.Select your script from the list.
 
-    <img src= "/apps/img/app_scriptforge6.png" width= "250">
+    <img src= "/apps/img/app_scriptforge6.png" width= "250" style="border: 2px solid #4472C4; border-radius: 8px;">
     
     9.Enter the code of your script.
 
@@ -170,11 +166,11 @@ function main (data = {}) {
 
     11.You can view the results onscreen.
 
-    <img src= "/apps/img/app_scriptforge7.png" width= "550">
+    <img src= "/apps/img/app_scriptforge7.png" width= "550" style="border: 2px solid #4472C4; border-radius: 8px;">
 
     12.You can `Run` and `Save` the code, `Toggle Console`, `Preview (errors)`, `Request Cancellation` for cancelling any ongoing requests, for example taking longer to execute, `Settings` you can edit, Set Vars, Copy file ID, Copy UUID using Settings.
 
-    <img src= "/apps/img/sc.png" width= "275">
+    <img src= "/apps/img/sc.png" width= "320" style="border: 2px solid #4472C4; border-radius: 8px;">
 
     !!! note
         Global Routing Priority means the script will run for every single call. You have 3 options to choose from:
@@ -186,7 +182,7 @@ function main (data = {}) {
 
     The **Schedule** option allows to you run your Script Forge based on pre-determined **dates in month**, **days of a week** and you can even select the time by selecting the values of **minutes** and **hours** from the drop-down menu.
 
-    <img src= "/developers/img/sf2.png" width= "400">
+    <img src= "/developers/img/sf2.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 If script shows an error, add this and then run the script again:
 
@@ -211,9 +207,9 @@ You can get the environmental variables using `process.env`.
 1. Select **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Routing**
 2. Select a Rate Card from Ingress Routing.
 
-    ![alt text][s8]  
+    <img src= "/customer/img/ingress-routing1.png" style="border: 2px solid #4472C4; border-radius: 8px;">  
 
-3. Go to **ScriptForge**
+3. Go to **ScriptForge**.
 4. Select the script.
 5. Set the **Timeout** to specify the duration you want it to run before it times out.
 6. Enter the **Timeout Action** manually and format it as **`[sip response code] [sip response message]`**.
@@ -265,14 +261,14 @@ function main(data) {
 }
 ```
 
-[s2]: /developers/img/176.png "s2"
+[s2]: /developers/img/176.png "s2" 
 [s8]: /developers/img/183.png "s8"
 
 ## Script Forge Background Job Queue Support
 
 You can access and view background jobs running through Script Forge.
 
-1. You can view the jobs under Global :material-menu-right: Queue. <img src= "/apps/img/job1.png">
+1. You can view the jobs under Global :material-menu-right: Queue. <img src= "/apps/img/job1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 2. Click on the job `Name`  to view the status.
 
-<img src= "/apps/img/job2.png" width= "200">
+<img src= "/apps/img/job2.png" width= "200" style="border: 2px solid #4472C4; border-radius: 8px;">

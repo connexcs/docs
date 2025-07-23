@@ -13,7 +13,7 @@ You may apply the tags to as many customers you wish.**Management :material-menu
 1. You can go to **Management :material-menu-right: Customer :material-menu-right: Config :material-menu-right: Tags**.
 2. Click on the dropdown next to Tags and assign it to your customer.
 
-![tags](/customer/img/tags.png)
+<img src= "/customer/img/tags.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 Tags help reduce the time and effort required in creating an Alert or Routing Strategy for each individual customer. Alerts will be sent to all the emails that are added to the contact of that customer.
 
@@ -41,7 +41,7 @@ The purpose is two-fold: to allow the threshold function to have a range type in
 12. Form the **Notice Level** dropdown you can either select the alert status as **None**, **Warning**, and **Error**.
 13. Click `Save`, and it creates a new alert.
 
-<img src= "/misc/img/t1.png">
+<img src= "/misc/img/t1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Info
     Whenever you select the **Area** as **Change** from menu, there are 2 options in **Table Change**, **SIP User** and **Switch** (you can either SIP User or Switch or you can select both.). An alert will be issued and sent to the customer's email address that there has been a change recorded in the IP list if you make any changes to the IP Authentication field after saving the settings, such as changing the IP Address etc.
@@ -67,7 +67,7 @@ Routing Tag helps you strategize the Routing options for your customer. You can 
 5. **Dial String**: Only allows a dialled number to pass through if it matches the defined dial string (or "dial pattern"). (If you customer enters nothing, it matches everything and attempts to send all calls).
 6. Check **Enabled** to make the fields active.
 
-<img src= "/misc/img/t2.png">
+<img src= "/misc/img/t2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 #### Price Limits
 
@@ -190,7 +190,7 @@ Routing Tag helps you strategize the Routing options for your customer. You can 
 !!! note
     Balance Disconnect only takes into account the **completed calls**; it excludes any **active calls**.
 
-<img src= "/misc/img/t4.png">
+<img src= "/misc/img/t4.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 #### ScriptForge
 
@@ -200,7 +200,7 @@ For more information about setup and operation, see the [**ScriptForge**](https:
 3. **Timeout Action**: This option lets you decide the action when the timeout occurs.
 4. **VARS [(TOML)](https://en.wikipedia.org/wiki/TOML)**: Select the variables you want pass into the ScriptForge script.
 
-<img src= "/misc/img/t5.png">
+<img src= "/misc/img/t5.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 #### Locks
 
@@ -217,7 +217,7 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 !!! tip "Exclude Use Case"
     If a customer reports an issue with a carrier or route, you can come here and set the carrier / route to Exclude and **`Save`**, then come back and remove it, and do a **`Delay and Save`** for a later date.
 
-<img src= "/misc/img/t6.png">
+<img src= "/misc/img/t6.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 6.**Flags**:
 
@@ -232,31 +232,25 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
             B -- No: If the dialed number doesnt match any DID in the account--> D{Route call externally via carrier as configured}
         ```
 
-!!! Note "Enabling TCPA  Litigator DNC flag and On Net Call Routing flag"
-    1. **Navigate to Management :material-menu-right: Tags :material-menu-right: Routing :material-menu-right: Locks :material-menu-right: TCPA  Litigator DNC/On Net Call Routing**.
-    2. Click on the checkbox to enable the required flags.
-    3. Click on `Save`.
-    <img src= "/customer/img/tcpa2.png">
-
 #### Media
 
 1. **Transcoding**: Enter the number  of channels allowed for transcoding. This is a limited option. The best use case is for customers in low-bandwidth areas that want to use G.729.
   Be aware that if you don't have enough transcoding capacity, calls will fail.
 2. **SIP Ping**: Send regular pings to ensure both sides of a call are still up. `Enabled` is the recommended setting.
 
-    |Option                          | Result                                            |
-    |--------------------------------|:--------------------------------------------------|
-    | **Disabled**                   | No SIP pings will be sent                        |
-    | **Enabled Both Sides**         | SIP pings sent in both directions        |
-    | **Enabled (Downstream Only)**  | SIP Pings sent to the location where the call originated |
-    | **Enabled (Upstream Only)**    | SIP Pings sent towards where the call is TO (terminated) |
+    |Option|Result|
+    |------|:-----|
+    | **Disabled**| No SIP pings will be sent|
+    | **Enabled Both Sides**| SIP pings sent in both directions|
+    | **Enabled (Downstream Only)**| SIP Pings sent to the location where the call originated|
+    | **Enabled (Upstream Only)**| SIP Pings sent towards where the call is TO (terminated)|
 
 3. **SIP Session Timer (SST)**: SST is Passive by Default, but **Enabled** is the recommended setting.
   When enabled, SST ensures there is no ghost or long-duration calls get billed when one or both sides have hung up. A timer activates when the call starts and refreshes the call every X number of seconds by sending a RE-INVITE.
   SST has surpassed SIP Ping Timeout as the best way to prevent long-duration calls. Note that any SST shorter than sixty (60) seconds gets rejected.
 
     |SST Option| Result|
-    |-------------------------|:------------------------------------------------------------------------------------------------|
+    |----------|:------|
     | **Default**| Passive SST, No headers gets changed and no SST gets engaged, all RE-INVITES will propagate through the system enables|
     | **Enabled Both** | ConnexCS will send SIP Session Timers to both legs of the call|
     | **Enabled (Upstream)** | ConnexCS will use SST with the carrier|
@@ -288,12 +282,12 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 
 !!! info "RTP Proxy distinctions"
     When a call gets established between the customer and the provider, audio can be setup in one of two ways:
-|                         | **With RTP Proxy** | **Without RTP Proxy** |
-|-------------------------|:------------------:|----------------------:|
-| **Audio Path**          |      Indirect      |                Direct |
-| **Audio Quality**       |      Excellent     |            Unbeatable |
-| **Latency**             |         Low        |                Lowest |
-| **Information Leakage** |         No         |                  Yes* |
+| | **With RTP Proxy** | **Without RTP Proxy** |
+|-|:------------------:|----------------------:|
+| **Audio Path**|Indirect|Direct|
+| **Audio Quality**|Excellent|Unbeatable|
+| **Latency**|Low|Lowest |
+| **Information Leakage** |No|Yes|
 
 * While it's doubtful that any information will get logged in the customer / providers switch when the audio gets engaged, it's possible for an engineer to learn this information from a SIP trace, PCAP, or by looking at transit locations. DTMF Detection ONLY works when RTP Proxy mode gets enabled.
 
@@ -306,7 +300,7 @@ CDR**
 
 * **Management ::material-menu-right: File :material-menu-right: Recording**
 
-An extra charge per recorded call of $0.003 gets added to existing fees or charges, so choose carefully how many calls to record:
+An extra [charge](https://connexcs.com/pricing) per recorded call gets added to existing fees or charges, so choose carefully how many calls to record:
 
 :material-menu-right: `Disabled`- no calls get recorded
 
@@ -321,20 +315,20 @@ An extra charge per recorded call of $0.003 gets added to existing fees or charg
 
 !!! note "Make sure your carrier supports the DTMF feature."
 
-<img src= "/misc/img/t7.png">
+<img src= "/misc/img/t7.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 #### Strategy
 
 For advanced routing, click :material-plus: to select a [**Prefix Set**](https://docs.connexcs.com/setup/advanced/prefix-set/) and assign a [**Routing Strategy**](https://docs.connexcs.com/routing-strategy/). This gives you greater control over how routes get selected for a given customer.
 
-<img src= "/misc/img/t8.png">
+<img src= "/misc/img/t8.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 #### Notes
 
 1. **Public Notes**: Notes entered here get displayed on the Customer Portal when logged in.
 2. **Private Notes**: These will get displayed to the customer in the Control Panel.
 
-<img src= "/misc/img/t9.png">
+<img src= "/misc/img/t9.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## CLI Tag
 
@@ -398,4 +392,4 @@ The **P-Asserted-ID** manipulation uses the same syntax as the Replace CLI.
 
 17.Click **`Save`** to complete the CLI configuration.
 
-<img src= "/customer/img/tagcli.png">
+<img src= "/customer/img/tagcli.png" style="border: 2px solid #4472C4; border-radius: 8px;">

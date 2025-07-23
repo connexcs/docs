@@ -165,7 +165,7 @@ For each Package there is an associated **Minimum Days** the package is valid fo
 
     !!! Warning
         The **IPQS** feature requires a paid subscription. To enable this feature navigate to **Setup :material-menu-right: Settings :material-menu-right: Account** and enable this feature.
-        The **cost** for a single lookup is **$0.0040**.
+        Check [Pricing](https://connexcs.com/pricing) here.
 
     You can set a **Max Daily Quantity** for your customer's lookups. This restricts them to using only the specific number you allocate, ensuring controlled usage.
 
@@ -250,13 +250,13 @@ See [**Script Forge**](https://docs.connexcs.com/developers/scriptforge/) for mo
 
 Following are the steps to configure the Range Holder cards.
 
-1. We create a new **Carrier** which is basically a **Range Holder**. This is a pseudo-carrier. This carrier (Range Holder) isn't going to send any calls and we need not provide it with any **Authentication**.![RH1](/customer/img/RH1.jpg)
+1. We create a new **Carrier** which is basically a **Range Holder**. This is a pseudo-carrier. This carrier (Range Holder) isn't going to send any calls and we need not provide it with any **Authentication**.<img src= "/customer/img/RH1.jpg" style="border: 2px solid #4472C4; border-radius: 8px;">
 2. Next, we build a **Provider Rate Card** for the Range Holder.
 3. Under the **Provider Rate Card** we've **Tier 1 Interconnect** and **Tier 2 Interconnect** for different providers.
-4. Then you go to the **Carrier** click on **Edit** and then click on **Range Holder** and select **Provider Rate Card** and click on `Save`. This gives them access to the whole range of numbers.<img src= "/customer/img/RH2.jpg" width="1300"> ![RH3](/customer/img/RH3.jpg)
+4. Then you go to the **Carrier** click on **Edit** and then click on **Range Holder** and select **Provider Rate Card** and click on `Save`. This gives them access to the whole range of numbers.<img src= "/customer/img/RH2.jpg" width="1300" style="border: 2px solid #4472C4; border-radius: 8px;"> <img src= "/customer/img/RH3.jpg" style="border: 2px solid #4472C4; border-radius: 8px;">
 5. Then go to **Management :material-menu-right: Global :material-menu-right: DID**.
 6. Select the number.
 7. In **Basic** select your **Customer**.
 8. From the **Provider** drop-down select **None/Range Holder** and the **Provider Rate card** disappears.
 9. Click on `Save` and you can see the updated card.
-   <img src= "/customer/img/RH4.jpg" width="1300">
+   <img src= "/customer/img/RH4.jpg" width="1300" style="border: 2px solid #4472C4; border-radius: 8px;">

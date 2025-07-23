@@ -6,7 +6,7 @@ The **Steps** component, guides users through a complex process by breaking it d
 
 It serves as a visual and functional indicator of progress, improving user experience and data collection.
 
-<img src= "/apps/components/img/steps1.png">
+<img src= "/apps/components/img/steps1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Use Case
 
@@ -54,7 +54,7 @@ It serves as a visual and functional indicator of progress, improving user exper
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/steps22.png">
+<img src= "/apps/components/img/steps22.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Example
     1. `this.addClassName(fields, className)`
@@ -70,46 +70,46 @@ It serves as a visual and functional indicator of progress, improving user exper
             ```
 
     2. `this.removeClassName(fields, className)`
-        ```js
+        ```js linenums="1"
         this.removeClassName('steps_2bpjtc5m', 'abc')
         ```
     
     3. `this.getValues()`
-        ```js
+        ```js linenums="1"
         var data = this.getValues();
         console.log(data);
         ```
     
     4. `this.hide(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['steps_2bpjtc5m']
         this.hide(fields)
         ```
     
     5. `this.show(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['steps_2bpjtc5m']
         this.show(fields)
         ```
     
     6. `this.disable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.disable(['steps_2bpjtc5m'])
         ```
     
     7. `this.enable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.enable(['steps_2bpjtc5m'])
         ```
     
     8.  `this.getValue('fieldName')`
-        ```js
+        ```js linenums="1"
         var stepname = this.getValue('steps_2bpjtc5m');
         console.log('getValue', stepname);
         ```
     
     9.  `this.setData(Value)`
-        ```js
+        ```js linenums="1"
         this.setData(
          {
          "steps_2bpjtc5m": "2023-11-30",}
@@ -117,7 +117,7 @@ It serves as a visual and functional indicator of progress, improving user exper
         ```
     
     10.  `this.getComponent('component_ID')`
-        ```js
+        ```js linenums="1"
         var stepname = this.getComponent('steps_2bpjtc5m');
         console.log('getComponent', stepname);
         ```

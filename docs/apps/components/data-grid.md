@@ -4,7 +4,7 @@
 
 **Data Grid** is a tabular data display component. It enables you to add different functionalities.
 
-<img src= "/apps/components/img/datagrid.png">
+<img src= "/apps/components/img/datagrid.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Use Case
 
@@ -54,30 +54,30 @@
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/datagrid12.png">
+<img src= "/apps/components/img/datagrid12.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Example
 
     1. `this.getValue(fieldName)`
-        ```js
+        ```js linenums="1"
         var dataname = this.getValue('aggrid_nd93m43c');
         console.log('getValue', dataname);
         ```
     
     2. `this.getValues()`
-        ```js
+        ```js linenums="1"
         var data = this.getValues();
         console.log(data);
         ```
     
     3. `this.getComponent('component_ID')`
-        ```js
+        ```js linenums="1"
         var dataname = this.getComponent('aggrid_nd93m43c');
         console.log('getComponent', dataname);
         ```
     
     4. `this.setData`
-        ```js
+        ```js linenums="1"
         this.setData(
         {
     	"grid_qwer": [
@@ -97,13 +97,13 @@
         )
         ```
     5. `this.hide(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['aggrid_nd93m43c']
         this.hide(fields)
         ```
     
     6. `this.show(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['aggrid_nd93m43c']
         this.show(fields)
         ```
@@ -113,7 +113,7 @@
 
 !!! info Add multiple classes
     Use the following syntax to add multiple classes to a component:
-    ```js
+    ```js linenums="1"
     this.addClassName('componentID', 'class1', 'class2')
     ```
 
@@ -146,7 +146,7 @@ We're talking about **Column Config** separately as it's a comprehensive compone
       * **Lock Position**: Set the Lock Position to either **Left**, **Right** or **None**.
       * **Suppress Movable**: It locks the grid's layout, preventing manual reordering and ensuring consistent data presentation.
 
-<img src= "/apps/components/img/datagrid_basic.png" width="400">
+<img src= "/apps/components/img/datagrid_basic.png" width="400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 2.**Width**
 
@@ -158,14 +158,14 @@ We're talking about **Column Config** separately as it's a comprehensive compone
   
    * **Re-sizable**: Enable to resize the column width.
 
-<img src= "/apps/components/img/datagrid_width.png" width="400">
+<img src= "/apps/components/img/datagrid_width.png" width="400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 3.**Value Format**
 Value format in a data-grid is a feature that controls how raw data values are displayed within individual cells.
 
 It allows you to customize the appearance of data to improve readability, highlight specific information, and ensure consistency across the grid.
 
-<img src= "/apps/components/img/datagrid_valueformat.png" width="400">
+<img src= "/apps/components/img/datagrid_valueformat.png" width="400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 4.**Display format**
 
@@ -173,7 +173,7 @@ It allows you to customize the appearance of data to improve readability, highli
 
    * **Link**:This property is used to turn the values in the column into links that emit the onLinkClicked event.
 
-<img src= "/apps/components/img/datagrid_displayformat.png" width="400">
+<img src= "/apps/components/img/datagrid_displayformat.png" width="400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 5.**Header**
 
@@ -181,7 +181,7 @@ It allows you to customize the appearance of data to improve readability, highli
 
    * **Wrap Header Text**:Allows the text in header cells to automatically wrap onto multiple lines if it exceeds the available space.
 
-<img src= "/apps/components/img/datagrid_header.png" width="400">
+<img src= "/apps/components/img/datagrid_header.png" width="400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 6.**Pivot**
 
@@ -189,7 +189,7 @@ It allows you to customize the appearance of data to improve readability, highli
 
    * **Enable Pivot**: Enable/Disable pivot mode.
 
-<img src= "/apps/components/img/datagrid_header.png" width="400">
+<img src= "/apps/components/img/datagrid_header.png" width="400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 7.**Charts**
 
@@ -206,7 +206,7 @@ It allows you to customize the appearance of data to improve readability, highli
 
        * Time: Data in columns marked as "time" represent temporal information, often used for time-series charts that track trends or changes over time.
 
-<img src= "/apps/components/img/datagrid_charts.png" width="400">
+<img src= "/apps/components/img/datagrid_charts.png" width="400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Pagination
 
@@ -228,34 +228,34 @@ This is achieved through the following mechanisms:
 
 1. **Infinite Scrolling**
       * [Click here](https://docs.connexcs.com/apps/page-builder/#steps-to-use-components-in-the-page-builder) to add the Data Grid component.
-        <img src= "/apps/pag1.png">
+        <img src= "/apps/pag1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
       * Click on **Form Attribute :material-menu-right: Data source (Setting) :material-menu-right: Add data source**.
-        <img src= "/apps/pag2.png" width= "250">
+        <img src= "/apps/pag2.png" width= "250" style="border: 2px solid #4472C4; border-radius: 8px;">
       * Select form the various data sources like ScriptForge, Stores, Database, Saved Query, External. Make sure you have enabled `Whether the form is initialized to send the request` (for auto-loading the data source). Click on `Save`.
-        <img src= "/apps/pag3.png">
+        <img src= "/apps/pag3.png" style="border: 2px solid #4472C4; border-radius: 8px;">
       * Click on **Component Attribute**, select the saved **Data source** and enable the **Server Side Row Model**.
 
-        <img src= "/apps/pag4.png" width= "250">
+        <img src= "/apps/pag4.png" width= "250" style="border: 2px solid #4472C4; border-radius: 8px;">
 
       * Click on `Preview`. You will see that all the data has been auto-loaded in one go (10,000 rows of data). This type of loading is the **Infinite scrolling**.
 
-        <img src= "/apps/pag5.png" width= "2000">
+        <img src= "/apps/pag5.png" width= "2000" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 2.**Lazy-loading of data in groups**
 
 * [Click here](https://docs.connexcs.com/apps/page-builder/#steps-to-use-components-in-the-page-builder) to add the Data Grid component.
 
-<img src= "/apps/pag1.png">
+<img src= "/apps/pag1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 * Click on **Form Attribute :material-menu-right: Data source (Setting) :material-menu-right: Add data source**.
 
-<img src= "/apps/pag2.png" width= "250">
+<img src= "/apps/pag2.png" width= "250" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 * Select form the various data sources like ScriptForge, Stores, Database, Saved Query, External. Make sure `Whether the form is initialized to send the request` is **disabled**.
 
 * In the **Data Processing field :material-menu-right: Before sending the request**, write the following code which will only load finite number of rows (as you want) as you scroll, but won't load the whole dataset.
 
-```js
+```js linenums="1"
 args.off = args.startRow
 args.pager = args.startRow - args.endRow
 return config;
@@ -263,17 +263,16 @@ return config;
 
 * Click on `Save`.
 
-<img src= "/apps/img/pag61.png">
+<img src= "/apps/img/pag61.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 * Click on **Component Attribute**, select the saved **Data source** and enable the **Server Side Row Model**.
 
-<img src= "/apps/pag4.png" width= "250">
+<img src= "/apps/pag4.png" width= "250" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 * Click on `Preview`. You will see that all the data hasn't been auto-loaded instead only 100 rows of data is loading at a time. This type of loading is the **Lazy-loading in groups**.
   
-<img src= "/apps/pag7.png" width= "2000">
+<img src= "/apps/pag7.png" width= "2000" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## First time User?
 
 If you are using the Page Builder components on the ConnexCS platform for the first time, we request you to use our guide on <a href="https://docs.connexcs.com/apps/page-builder/#steps-to-use-components-in-the-page-builder" target="_blank">steps to use the Components</a>.
-

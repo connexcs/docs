@@ -19,7 +19,7 @@ To create a new App:
     + **PBX Server**: Select the relevant server for your customer.
 4. Click **`Save`**.
 
-<img src= "/class5/img/apps1.png"> 
+<img src= "/class5/img/apps1.png" style="border: 2px solid #4472C4; border-radius: 8px;"> 
 
 ## Advanced Applications
 

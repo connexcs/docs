@@ -20,7 +20,7 @@ Use the **Carrier** section in **ConnexCS** for simplified Carrier management wh
 !!! Tip "Key Considerations"
     The system doesn't display the "Auto-generate invoice" option in this section.
 
-<img src= "/carrier/img/carriermain.png">
+<img src= "/carrier/img/carriermain.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Carrier Functions
 
@@ -47,7 +47,7 @@ From the **Carriers** page, you can perform several management operations.
     + Write the Body of the referral.
     + Click on `Send`.
   
-<img src= "/carrier/img/carrier_referral.png">
+<img src= "/carrier/img/carrier_referral.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 + **Active**: Used to sort Carriers based on the selected status. Results on the page will automatically arrange themselves according to the filter.
 
@@ -145,8 +145,8 @@ From the **Carriers** page, you can perform several management operations.
 
 To ensure compatibility, set the switch manufacturer to `bandwidth.com`.
 
-[carriers-main]: /carrier/img/carriers-main.png "Carriers"
-[carrier]: /carrier/img/carrier.png "Carrier Main"
+[carriers-main]: /carrier/img/carriers-main.png "Carriers" style="border: 2px solid #4472C4; border-radius: 8px;"
+[carrier]: /carrier/img/carrier.png "Carrier Main" style="border: 2px solid #4472C4; border-radius: 8px;"
 
 ## Headers from Customers to Providers
 
@@ -159,14 +159,14 @@ When the Carrier requires information on the headers sent from the UAC, you can 
 3. Consider an example here: **Example of how to retain X-ng199 but remove all other X-headers**
 4. Enter the code in the Vars<sup>TOML</sup> section.
 
-```js
+```js linenums="1"
 [headers] // configuration for headers
 remove_regex="^X-(?:(?!(ng911)).)*" // only retain X-ng199 but remove all other X-headers
 ```
 
 The **Default Setting** is:
 
-```js
+```js linenums="1"
 [headers]
 remove_regex="^X-.*"
 ```
@@ -176,8 +176,4 @@ remove_regex="^X-.*"
 !!! Danger Note
     Please note you can use the regex pattern according to your requirement.
 
-<img src= "/carrier/img/regex.png">
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwMTM2NjQxM119
--->
+<img src= "/carrier/img/regex.png" style="border: 2px solid #4472C4; border-radius: 8px;">

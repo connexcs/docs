@@ -30,7 +30,7 @@ To Simulate Calls:
 
 Click **`Simulate`** either from the **Logging** screen or from within a specific **Call ID**:
 
-&emsp;![alt text][logging-4]
+<img src= "/misc/img/logging-41.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 + **Dialed Number**: Where the call will end (destination).
 + **CLI/ANI**: Where the call will originate from (configured on ConnexCS).
@@ -59,11 +59,11 @@ It's particularly useful for troubleshooting by highlighting discrepancies betwe
 
 1. Login to your **Control Panel**.
 2. Navigate to **:material-menu-right: Logging**.
-3. Right click on the Call-IDs and click `Add to Compare`. <img src="/logging/comp11.png" width= "800">
-4. You also have the option to `Remove from Compare` to deselect the Call IDs.<img src="/logging/comp4.png" width= "800">
-5. A **Compare** field will appear on the right corner. <img src="/logging/comp22.png">
-6. Click `Compare`, a widow will appear where you need to select the Call IDs for comparison. <img src="/logging/comp3.png">
-7. Check `View only difference lines` to view only the parameters of call logs that differ between two Call IDs. <img src="/logging/comp5.png">
+3. Right click on the Call-IDs and click `Add to Compare`. <img src="/logging/comp11.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;">
+4. You also have the option to `Remove from Compare` to deselect the Call IDs.<img src="/logging/comp4.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;">
+5. A **Compare** field will appear on the right corner. <img src="/logging/comp22.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+6. Click `Compare`, a widow will appear where you need to select the Call IDs for comparison. <img src="/logging/comp3.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+7. Check `View only difference lines` to view only the parameters of call logs that differ between two Call IDs. <img src="/logging/comp5.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 8. Once the comparison is complete, you can `Clear Compare` to reset all the Call IDs comparisons.
 
 ## Searching the Logs
@@ -135,7 +135,7 @@ To view the SIP Trace of a call:
 1. Click a **Call ID** to view its SIP traces.
 2. Click **`SIP traces`** to view the SIP trace.
 
-      ![alt text][logging-sip]
+      <img src= "/misc/img/logging-sip1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 3. Toggle between Relative Time and Absolute Time for a specific time of day.
 4. Options to download as Text or an Image.
@@ -298,8 +298,8 @@ You can have take a look at the various SIP Timers in the table below:
 
 <font size="2">*Table source*: [**IBM**](https://www.ibm.com/docs/en/was/8.5.5?topic=timers-sip-timer-summary); *Original Ref*: [**RFC 3261**](https://www.ietf.org/rfc/rfc3261.txt)</font size>
 
+
 [logging-sip]: /misc/img/logging-sip.png "SIP Traces"
-[logging-4]: /misc/img/236.png "logging-4"
 
 ### Decode Identity header in SIP Trace
 
@@ -307,7 +307,7 @@ You can have take a look at the various SIP Timers in the table below:
 2. A window will appear with **Raw** and **Shaken** tabs. Only if you are signing calls using **Shaken** certificate.
 3. The **Shaken** tab will have the decoded information from the **Raw** tab like **Algorithm**, **Public Certificate URL**, **Attestation Level**, **Dialled Number**, **CLI**, **Unique Customer ID**, **Timestamp**.
 
-<img src= "/logging/shaken.png">
+<img src= "/logging/shaken.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Call Release Reasons
 

@@ -8,7 +8,7 @@ Customers can use **Reply Management** to customize responses based on the SIP m
 
 You can use this for customers who have switches that require certain SIP code responses.
 
-<img src= "/carrier/img/carrierreply.png">
+<img src= "/carrier/img/carrierreply.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 See the [**Wikipedia List of SIP response codes**](https://en.wikipedia.org/wiki/List_of_SIP_response_codes) for extra details about each code.
 

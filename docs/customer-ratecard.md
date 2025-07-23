@@ -105,13 +105,14 @@ Click **`Email`**, enter the email address and click **`Send`**.
 + **Delete Revision**: Select a revision to delete.
 + **Download**: Download a CSV file of the Rate Card.
 
-    ![alt text][crc-func]
+    <img src= "/card/img/crc-func12.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 + **Parent Cards** are the Provider Rate Cards associated to this card.
 + **Customers** lists the specific Customers using this card.
 + **Profits** lets you configure profit rules. This is most useful on cards with a high number of rules.
 
-    ![alt text][profit]
+    <img src= "/card/img/profit_basic.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+    <img src= "/card/img/profit_config.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 **Click each tab for configuration details**
 
@@ -233,10 +234,8 @@ This tab is only available if you enable "Manual Ordering" in **Properties :mate
 
 For each Prefix you can manually order the Provider Rate Cards for a high degree of control over the routing of calls.
 
-[compile1]: /card/img/compile1.png "Paused"
-[compile2]: /card/img/compile2.png "Synced"
+[compile1]: /card/img/compile1.png "Paused" style="border: 2px solid #4472C4; border-radius: 8px;"
+[compile2]: /card/img/compile2.png "Synced" style="border: 2px solid #4472C4; border-radius: 8px;"
 
-[prc-func]: /card/img/prc-func.png "Functions"
-[crc-func]: /card/img/crc-func.png "Customer Functions"
+[prc-func]: /card/img/prc-func.png "Functions" style="border: 2px solid #4472C4; border-radius: 8px;"
 
-[profit]: /card/img/profit.png "Edit Profits"

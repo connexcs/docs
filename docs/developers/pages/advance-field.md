@@ -48,7 +48,7 @@ You can create data with effective visual effects by using options like Graphs a
 7. The first thing is that the data should load when we click the `Preview` button.
 8. Click on **Form Attribute > Action Panel > Setting > Function refresh**. Then add the code.
 
-```js
+```js linenums="1"
     this.setData({
 	aggrid: [
 		{ make: 'Toyota', model: 'Celica', price: 35000 },
@@ -58,7 +58,7 @@ You can create data with effective visual effects by using options like Graphs a
     });
 ```
 9. Create a new function `viewButton`. For this function, when we click the it will show you some details in the `Console Log`.
-    ```js
+    ```js linenums="1"
     console.log('Starting Arguments');
 
     // Declare and define the variables (You might want to replace the values with actual data)
