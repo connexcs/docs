@@ -179,12 +179,12 @@ It usually involves processing inputs, making decisions, and taking actions to a
 1. Log in to your account.
 2. Navigate to **Class 5 :material-menu-right: AI Agent**.
 3. Click on **Task**.
-4. Click on the blue `+` sign. <img src= "/class5/img/task1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
-5. Click on the blue `+` sign (**Add next node**). It will update the first task. <img src= "/class5/img/task1new.png" style="border: 2px solid #4472C4; border-radius: 8px;">
-6. Fill in the following fields to setup the task for your AI Agent:
+4. Click on the blue `+` sign (**Add next node**). It will update the first task. <img src= "/class5/img/task1new.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+5. Fill in the following fields to setup the task for your AI Agent:
 
       1. **Basic**:
          + **Name**: Enter the name of your task.
+
             <img src= "/class5/img/task2new.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
       2. **Model**:
@@ -196,6 +196,7 @@ It usually involves processing inputs, making decisions, and taking actions to a
 
           + **First Message**: The initial message spoken by the agent. For example, when the agent begins the conversation.
           + **Prompt**: The prompt field allows you to enter a set of instructions to guide the AI Agent to perform certain tasks. It provides the foundation for the AI to comprehend the context, interpret the user's purpose, and generate relevant results.
+
 
             <img src= "/class5/img/task3new.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
@@ -239,6 +240,7 @@ It usually involves processing inputs, making decisions, and taking actions to a
 
     + Click `Save`.
 
+
         <img src= "/class5/img/task5new.png" style="border: 2px solid #4472C4; border-radius: 8px;"> 
 
     + To use this created task select it under [Advanced :material-menu-right:First Task](https://bani-aiagent1--connexcs-docs.netlify.app/class5/ai-agent/#__tabbed_1_5).
@@ -281,8 +283,16 @@ Before starting, choose a model mode—Standard for fast results (default) or Ex
 
     <img src= "/class5/img/chat1.png" style="border: 2px solid #4472C4; border-radius: 8px;"> 
 
-5. Before initiating interaction with the AI chatbot, you must configure a few initial settings: <img src= "/class5/img/chat2.png" style="border: 2px solid #4472C4; border-radius: 8px;"> 
-   1. `Add Context` (optional field): Allows you to provide additional information to the AI before or during a conversation so it can give more accurate, relevant, and helpful responses. You can either add `Text Input` or upload text files using `File Upload` option. <img src= "/class5/img/chat3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"><img src= "/class5/img/chat4.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">. <br>Click `Add to Chat`.</br>
+5. Before initiating interaction with the AI chatbot, you must configure a few initial settings:
+
+   <img src= "/class5/img/chat2.png" style="border: 2px solid #4472C4; border-radius: 8px;"> 
+
+   1. `Add Context` (optional field): Allows you to provide additional information to the AI before or during a conversation so it can give more accurate, relevant, and helpful responses. You can either add `Text Input` or upload text files using `File Upload` option.
+
+        <img src= "/class5/img/chat3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+        <img src= "/class5/img/chat4.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">. <br>Click `Add to Chat`.</br>
+
    2. Select the mode of the model:
       1. `Standard` (default): A fast model focused on quick results.
       2. `Expert`: A reasoning model, takes longer to respond.
