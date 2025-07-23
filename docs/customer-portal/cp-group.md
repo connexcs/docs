@@ -18,13 +18,35 @@ Click on the Group name, then click **`Edit`** to revise the following:
 
       **Note:** Rings all members, even if they're already on a call.
 
-    ![alt text][parallel]
+      ```mermaid
+      graph TD
+      A[Customer] -->|ring| B[Agent 1 is available]
+      A[Customer] -->|ring| C[Agent 2 is available]
+      A[Customer] -->|ring| D[Agent 3 is busy]
+      A[Customer] -->|ring| E[Agent 4 is available]
+      style A fill:#ECEFF1,stroke:#4051b5,stroke-width:2px
+      style B fill:#ECEFF1,stroke:#16C440,stroke-width:2px
+      style C fill:#ECEFF1,stroke:#16C440,stroke-width:2px
+      style D fill:#ECEFF1,stroke:#C70039,stroke-width:2px
+      style E fill:#ECEFF1,stroke:#16C440,stroke-width:2px
+      ```
 
     + **Sequential**: Routes a call in a sequential order based on the order under Group Members. By default, the  call routes to the member whose extension number has the highest value (for example, 5021).
       + If the member with the second-highest extension number doesn't respond, the call gets routed to the extension with the third-highest value (for example, 4097).
       + If the member with second highest extension number doesn't respond, the call gets routed to the extension with the third highest value (for example, 4095). This process continues until a member receives the call.
 
-    ![alt text][sequential]
+    ```mermaid
+    graph LR
+    A[Customer] ---|try 1st| B[Agent 1 is busy]
+    B ---|next| C[Agent 2 doesn't answer]
+    C ==>|next| D[Agent 3 is available]
+    D -->E[Call answered]
+    style A fill:#ECEFF1,stroke:#4051b5,stroke-width:2px
+    style B fill:#ECEFF1,stroke:#C70039,stroke-width:2px
+    style C fill:#ECEFF1,stroke:#C70039,stroke-width:2px
+    style D fill:#ECEFF1,stroke:#C70039,stroke-width:2px
+    style E fill:#ECEFF1,stroke:#16C440,stroke-width:2px
+    ```
 
     + **Queue**: The **Queue**, same as Groups, allows you to create a team of people in a call queue. The caller is then routed to the next available member (who waits for the longest to receive a call).
 
@@ -35,9 +57,19 @@ Click on the Group name, then click **`Edit`** to revise the following:
 
         To leave the group, they dial another number from their phone. This means that a group that uses a Queue routing strategy doesn't necessarily have a fixed number of members.
 
-        ![alt text][queue]
+        ```mermaid
+        graph TD
+        A[Customer] --- B[Agent 1- idle 30 seconds]
+        A[Customer] --- C[Agent 2- idle 15 seconds]
+        A[Customer] --- D[Agent 3- idle 45 seconds]
+        A ==> E[Agent 4- idle 5 seconds]
+        style A fill:#ECEFF1,stroke:#4051b5,stroke-width:2px
+        style B fill:#ECEFF1,stroke:#C70039,stroke-width:2px
+        style C fill:#ECEFF1,stroke:#C70039,stroke-width:2px
+        style D fill:#ECEFF1,stroke:#C70039,stroke-width:2px
+        style E fill:#ECEFF1,stroke:#16C440,stroke-width:2px
+        ```
 
-      
       **Edit Existing Queue**
 
       Click on the **Queue** name to edit the following:
@@ -53,11 +85,6 @@ Click on the Group name, then click **`Edit`** to revise the following:
       + **Agent Logout Destination:** The extension number an individual must dial to quit the group.
       + **Agent Offhook Destination:** An extension number an individual must dial to receive calls instantly after joining the group.
 
-      [queue]: /customer-portal/img/queue.png "Call Queue"
-
 + **Destination**: Click :material-plus:, then click `Edit` to enter the Destination (External number or Internal extension, SIP User, group, DID, etc.), and Ring Timeout (maximum amount of time for a call to ring before moving to next group member).
 
 (**SIP:** Session Initiation Protocol; **DID:** Direct Inward Dialing)
-
-[parallel]: /customer-portal/img/parallel.png "Parallel Group"
-[sequential]: /customer-portal/img/sequential.png "Sequential Group"

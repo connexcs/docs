@@ -18,6 +18,7 @@ You can provide several domains for your customers through different brands, and
 2. Locate the page for updating your domain's DNS (Domain Name System) records.
 
     You can refer the page to as DNS Management, Name Server Management, or Advanced Settings.
+
 3. Locate the `CNAME` records for your domain.
 
 4. Add a new domain record (such as `portal.yourdomain.com`, where `yourdomain.com` is the domain that you own).
@@ -39,7 +40,7 @@ You can provide several domains for your customers through different brands, and
 !!! note
     You should expose your Customer Portal via a `CNAME` that you setup. This won't work with `A` records or by pointing directly.
 
-    ![alt text][portal]
+    <img src= "/setup/img/portal12.png"style="border: 2px solid #4472C4; border-radius: 8px;"
 
 ## Configuration Options
 
@@ -64,6 +65,67 @@ You can provide several domains for your customers through different brands, and
 === "User Access Area"
 
     Select the sections/features displayed to your customers (see "Override Options" below). Individual settings can be customized per customer.
+
+    **Common**
+
+    |Feature|Description|
+    |-------|-----------|
+    |**Balance**|Customer's current account balance|
+    |**Call Detail Record (CDR)**| Displays detailed information of each call like call details, destination etc. [Click here to know more.](https://docs.connexcs.com/customer/cdr/)|
+    |**Breakout**|Offers billing-accurate CDR insights, including customer profits, costs, billed amounts, ASR, and ACD. [Click here to know more.](https://docs.connexcs.com/customer-portal/cp-breakout/)
+    |**Latest Calls**|Provides records of recent incoming and outgoing calls, their SIP traces, and run simulated calls. [Click here to know more.](https://docs.connexcs.com/customer/latest-calls/)|
+    |**CLI**|Displays the number of an incoming call. [Click here to know more.](https://docs.connexcs.com/customer-portal/cp-cli/#steps-to-add-approved-clis)|
+    |**Customer ACD**|View Average Call Duration as a total or per-carrier basis. [Click here to know more.](https://docs.connexcs.com/customer/stats/)|
+    |**Customer ASR**|View Average Call Duration as a total or per-carrier basis. [Click here to know more.](https://docs.connexcs.com/customer/stats/)|
+    |**Customer CPS**|View calls per second over time. [Click here to know more](https://docs.connexcs.com/customer/stats/)|
+    |**Customer Channels**|View ccustomer channels. [Click here to know more.](https://docs.connexcs.com/dashboard/#channels)|
+    |**Customer DTMF**|View DTMF percentages of each carrier. [Click here to know more.](https://docs.connexcs.com/customer/stats/#customer-carrier)|
+    |**Carrier CPS**|View carrier's calls per second. [Click here to know more.](https://docs.connexcs.com/customer/stats/#customer-carrier)|
+    |**Carrier Channels**|View carrier's channels. [Click here to know more.](https://docs.connexcs.com/customer/stats/#main)|
+    |**Carrier DTMF**|View DTMF percentages of each carrier. [Click here to know more.](https://docs.connexcs.com/customer/stats/#customer-carrier)|
+    |**Carrier Portal**|Allow portal access to your carrier, just like customer portal.|
+    |**Rate Cards**|View Customer Rate Cards and Provider Rate Cards of your customer. [Click here to know more](https://docs.connexcs.com/rate-card-building/).|
+    |**DID**|View the list of DIDs. [Click here to know more.](https://docs.connexcs.com/customer/did/)|
+    |**DID (Editable)**|Allows customer to edit the DIDs.|
+    |**DID Destination Lock**|Locks DID Destination so that it cannot be changed (in url destination).|
+    |**DID Tags**|Add tags for informational purposes. [Click here to know more.](https://docs.connexcs.com/customer/did/#advanced)|
+    |**IP Auth (Editable)**|Allows your customer to edit the IP Auth settings. [Click here to know more.](https://docs.connexcs.com/customer/auth/#ip-authentication)|
+    |**SIP Auth (Editable)**|Allows your customer to edit the SIP Auth settings. [Click here to know more.](https://docs.connexcs.com/customer/auth/#sip-user-authentication)|
+    |**User Registration**|View active registrations. [Click here to know more.](https://docs.connexcs.com/customer-portal/cp-user-reg/)|
+    |**Queue**|The **Queue**, like **Groups**, routes calls to the longest-idle agent in a team-based call queue. [Click here to know more.](https://docs.connexcs.com/customer-portal/cp-queue/)|
+    |**Audio**|Allow your customer to upload and store audios for IVR or Queue PBX functions. [Click here to know more.](https://docs.connexcs.com/customer-portal/cp-audio/)|
+    |**Interconnect Info**|Information on termination and origination address. [Click here to know more.](https://docs.connexcs.com/customer-portal/interconnect/)|
+    |**Packages**|Packages to offer predefined products and services. [Click here to know more.](https://docs.connexcs.com/customer/package/)|
+    |**Show RTP Servers**|It will display the RTP Servers used by your customers.|
+    |**Routes (Editable)**|View, configure and edit Routing options for customers. [Click here to know more.](https://docs.connexcs.com/customer/routing/#configure-routing)|
+    |**Summary**|Display the summaries of live calls (last 24 hours), Daily, Monthly. This data updates every hour. [Click here to know more.](https://docs.connexcs.com/customer-portal/cp-dashboard/#summary)|
+    |**Data Management (Data Suite)**|Allows customers to create custom persistent data storage. [Click here to know more.](https://docs.connexcs.com/customer-portal/cp-data-management/)|
+    |**Allow Route Public Note**|Notes entered here get displayed on the Customer Portal when logged in. [Click here to know more.](https://docs.connexcs.com/customer/routing/#notes)|
+    |**Recording**|The Recording area allows you to listen to recorded calls, provided this feature is available on your account. [Click here to know more.](https://docs.connexcs.com/customer-portal/cp-recording/)|
+    |**Download Recording**|Allows your customer to download call recordings. [Click here to know more.](https://docs.connexcs.com/customer-portal/cp-recording/)|
+    |**Invoice**|Allows customers to generation invoices. [Click here to know more.](https://docs.connexcs.com/customer/invoices/)|
+    |**Status**|Use **Status** to create customer-facing status pages, automating outage and downtime notifications. [Click here to know more.](https://docs.connexcs.com/system-status/)|
+    |**Public Status**|Make the status visibility as public.|
+    |**Alert**|Allows your customers to apply Alerts for Balance, ASR, ACD, CDR etc. [Click here to know more.](https://docs.connexcs.com/customer/alerts/)|
+    |**Editable Balance Alert**|Allows your customers to edit Blalance alert threshold. [Click here to know more.](https://docs.connexcs.com/customer/alerts/)|
+    |**Payments**| Displays various payment modes. [Click here to know more.](https://docs.connexcs.com/customer/payment/)|
+    |**Pending Bank Payments**| Displays any pending bank payments.|
+    |**Block PayPal**|Allows your customers to block PayPal payment mode.|
+    |**Block Stripe**|Allows your customers to block Stripe payment mode.|
+    |**Voucher**|Enable pre-generated codes with monetary value to be used for account top-ups. [Click here to know more](https://docs.connexcs.com/voucher/)|
+    |**Dialog**|Display the status of current active calls on the account. [Click here to know more.](https://docs.connexcs.com/customer/dialogs/)|
+
+    
+    **Class 5 Access**
+
+    |Feature|Description|
+    |-------|-----------|
+    |**AI Agent**|It replaces AI Call Center Agents.|
+    |**App**| It helps to create small drag and drop applications. Use [ConneXML](https://docs.connexcs.com/class5/connexml/) here. [Click here to know more.](https://docs.connexcs.com/class5/apps/).|
+    |**Conference**|Allows multiple participants to interact simultaenuously. [Click here to know more.](https://docs.connexcs.com/class5/creating-conference/)|
+    |**IVR**|An anutomated telephone system that allows customers to interact with the system via keypad inputs or voice. [Click here to know more.](https://docs.connexcs.com/class5/creating-ivr/)|
+    |**Group**|route calls to a designated team based on your configured strategy. [Click here to know more.](https://docs.connexcs.com/class5/creating-group/)|
+    
 
 === "Breakout"
 
@@ -124,7 +186,7 @@ You can provide several domains for your customers through different brands, and
 
 **Steps to create a new Domain**:
 
-1. Go to **Setup :material-menu-right: Integrations :material-menu-right: Portal**. ![smtp2](/setup/img/smtp2.jpg)
+1. Go to **Setup :material-menu-right: Integrations :material-menu-right: Portal**. <img src= "/setup/img/smtp2.jpg" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 2. Click on `+` button and click on the **SMTP** tab.
 
@@ -145,7 +207,7 @@ You can provide several domains for your customers through different brands, and
 3. Click on **`Edit`.**
 4. Click on **`Config`** and in the **Domain** field you can select the domain from the dropdown menu.
 5. Click on `Save` and the customer will be associated with that particular Domain/ Brand.
-![smtp1](/setup/img/smtp1.jpg)
+<img src= "/setup/img/smtp1.jpg" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Note
     1. Multiple customers can be associated with one domain.
@@ -157,4 +219,45 @@ To configure Users to access the Customer Portal, follow the steps to [**Add Con
 
 Any Contact configured on the account can login to the Customer Portal.
 
-[portal]: /setup/img/portal.png "Portal"
+## Multi Brand Support
+
+By leveraging a single ConnexCS account, customers can seamlessly run multiple brands, each with its own distinct identity and customer base.
+
+It's achieved by deploying independent customer portals tailored to the specific needs and preferences of each target market.
+
+### **Key Benefits**
+
++ **Enhanced Market Penetration**:
+
+Effectively reach and engage customers across various market segments, such as residential, business, wholesale, and international, with tailored offerings and pricing strategies for each.
+
+Enter new markets and capture new customer bases without the overhead of managing separate infrastructure or systems.
+
++ **Improved Customer Segmentation**:
+
+Maintain clear separation between customer groups, ensuring data privacy and preventing cross-contamination of services.
+
+Deliver personalized experiences to each customer segment with customized features, pricing plans, and support channels within their dedicated portal.
+
++ **Increased Profitability**:
+
+Develop and implement distinct pricing and service packages for each brand, maximizing revenue generation from each customer segment.
+
+Reduce operational costs and improve efficiency by managing multiple brands from a single, centralized platform.
+
++ **Enhanced Brand Differentiation**:
+
+Preserve the unique identity and brand image of each brand within the ConnexCS ecosystem.
+
+Foster stronger customer loyalty by providing a seamless and personalized experience for each brand's customer base.
+
+### ConnexCS Multi-Brand Management empowers businesses to:
+
++ **Operate on all levels of the market**:
+  From SMBs to enterprises and wholesale, effectively serve diverse customer needs with tailored offerings.
+
++ **Maximize revenue potential**:
+  Capture a larger market share and increase profitability by effectively targeting and serving distinct customer segments.
+
++ **Gain a competitive edge**:
+  Differentiate themselves in the market by offering a unique and personalized experience to each customer segment.
