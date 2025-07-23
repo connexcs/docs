@@ -22,16 +22,22 @@ By proactively managing traffic, enhancing call quality, and improving network s
 
 The combination of intelligent capabilities positions ConnexCS as a leading-edge solution in the telecommunications industry, providing businesses with a competitive advantage in today's dynamic market.
 
-## Customer functions
+## Customer Functions
+
+### Customer
+
+The Customer section allows you to add new customers to your account. It provides options to configure customer settings, manage KYC, handle billing, and perform various account management operations
 
 You can organize ConnexCS **Customers** through customer cards.
 
 !!! question "How many customers can I add?"
     You can add unlimited customers, and we won't charge per customer, only on their individual usage.
 
-On the **Customers** page, you can perform several management operations.
+### Customer Dashboard
 
-By clicking on `+` button we can add customer (see [**Create Customers**](https://docs.connexcs.com/customer/customer/#create-customer) below for details.)
+Before creating a new customer, let's review the elements available on the Customer Dashboard.
+
+**`+`**: By clicking on `+` button we can add customer (see [**Create Customers**](https://docs.connexcs.com/customer/customer/#create-customer) below for details.)
 
 **Refresh**: Refreshing the page, helpful when making edits or looking at real-time changes. This page is built as a web app, so some information will update automatically.
 
@@ -55,7 +61,7 @@ By clicking on `+` button we can add customer (see [**Create Customers**](https:
 
 **?**: Link to the documentation of the current page.
 
-**Send**: ConnexCS includes email and SMS support for your customers.
+**Send**: ConnexCS includes email and SMS support for your customers. Also send ConnexCS Referrals.
 
 1. Select several customers using the tick-box selector on the left side of each row. (Customers aren't visible to each other in the sent message.)
 2. Click on "Send" at the top right then choose email or SMS.
@@ -78,13 +84,13 @@ By clicking on `+` button we can add customer (see [**Create Customers**](https:
 
 <img src= "/customer/img/391.png" width= "200" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-## Customer View Modification
+#### Customer View Modification
 
 + **Columns** pop out on the right and allows you to add /  remove options, and change column order, for some cases you can create row groups and total values for pivot functionality.
 + **Filters** pop out on the right and allows you to filter your customers.
 + Adjust Column ordering
 
-## Create Customer
+### Create Customer
 
 The following sections will appear when you click on the `blue +` sign.
 
@@ -109,12 +115,16 @@ The following sections will appear when you click on the `blue +` sign.
 === "Config"
 
     + **PayPal Email:** The email address associated with the customer's PayPal account. (This is relevant when using the IPN API which lets customers make payments directly through PayPal instead of using the Customer Portal. See our API documentation for details on [**PayPal IPN**](https://docs.connexcs.com/setup/integrations/api/#paypal-ipn-integration). It enables mass payments without requiring customer login.
-    + **Website:** The customer's website address.
-    + **P-Asserted-ID: **PAID is a feature that determines how calls are routed based on predefined rules. The behavior of PAID varies depending on whether it is set to **Default**, **Remove**, **If Available**, or **Required**.
-        + **Default**: If there is any PAID or CLI rule, then the call will proceed; if not the call will still proceed. Any attempt to modify PAID, including parameter rewrite rules, CLI section changes, or PAID changes, will not take effect. No modifications are allowed to PAID.
-        + **Remove**: Strips PA-ID before passing the call to the provider.
-        + **If Available**: The rule applies only when PAID is available. If PAID is present, it can be modified using rewrite rules. If it is missing, the call proceeds without PAID. Allows rewriting of PAID using rules.
-        + **Required**: PAID must be present. If PAID is missing, the call will not proceed to any carrier or customer. PAID is mandatory for call routing.
+    + **Website:** Add the customer's official website.
+    + **P-Asserted-ID:** Consider a network level identifier, you can select how calls to the provider is handled based on the PA-ID:
+    
+        :material-menu-right: `Default`: Call passed to the provider (no manipulation).
+        
+        :material-menu-right: `Remove`: Strips PA-ID before passing the call to the provider.
+        
+        :material-menu-right: `If Available`: It will add PA-ID if one has been provided, otherwise the call will still be allowed.
+        
+        :material-menu-right: `Required`: Call won't be delivered to the provider without the PA-ID.
 
     + **Portal Access:** It allows you to **Show** and **Hide** parameters like Balance, CDR, Breakout etc on your customer portal. 
     + **Tags**: Use this to add meta-data identifiers to a customer. If a customer routing is created using a template from [**Global Routing**](https://docs.connexcs.com/global-routing/), this will be the tag configured in the template. Used to apply global routing rules to customers.
@@ -138,7 +148,7 @@ The following sections will appear when you click on the `blue +` sign.
 
 === "Verification"
 
-    + **Approved CLI's Only**: Allows the customer to add numbers in the [**Customer Portal CLI**](/customer-portal/cp-cli/) section. This generates a test call with a code that the customer must enter in the portal. Once complete, their CLI will be added to the system. It basically, r  restricts calls to pre-approved caller IDs.
+    + **Approved CLI's Only**: Allows the customer to add numbers in the [**Customer Portal CLI**](/customer-portal/cp-cli/) section. This generates a test call with a code that the customer must enter in the portal. Once complete, their CLI will be added to the system. It basically restricts calls to pre-approved caller IDs.
     + **Email Verification** and/or **Mobile Verification**: Used to force the customer to go to the portal for verification. (This is important to select when you create a customer manually.) If the customer doesn't verify these, they won't be able to dial. 
 
     !!! attention
@@ -177,7 +187,7 @@ The following sections will appear when you click on the `blue +` sign.
     1. **Customer Level**: Applied when a call originates from the customer.
     2. **Carrier Level**: Applied when a call is forwarded to a carrier.
 
-## Configure Customers
+### Configure Customers
 
 Once you create a customer, click on the customer name to view details and provide additional configuration. For documentation on that configuration, navigate to the sub-section on the left:
 
@@ -185,7 +195,7 @@ Once you create a customer, click on the customer name to view details and provi
 
 ___
 
-## Edit Customers
+### Edit Customers
 
 Click an existing customer name from the Customer section, then click **`Edit`**. For all field details, see **[Create Customers](https://docs.connexcs.com/customer/customer/#create-customer)** above.
 
@@ -199,9 +209,6 @@ At ConnexCS Pvt. Ltd., we offer comprehensive white-labeling solutions, enabling
 With full customization of branding, user interfaces, and features, we ensure a seamless integration into your existing offerings.
 
 Our flexible platform supports easy API integration and scalable infrastructure, allowing you to provide reliable, fully branded services to your customers without the need for in-house development.
-<<<<<<< HEAD
 
 [customer-status]: /customer/img/39.png "Customer Status"
 [customersubs]: /customer/img/customersubs.png "Customer Sub-Sections"
-=======
->>>>>>> 0b3cfbf69c6400769385b621ec666463d4dd41ba
