@@ -4,7 +4,7 @@
 
 ## Overview
 
-The **Audit Log**, or Audit Trail, is a chronological set of records that shows all changes performed on a system, software, or device including **timestamps** and **IP addresses**.
+The **Audit Log**, or Audit Trail, is a chronological set of records that shows all changes performed on system including **timestamps** and **IP addresses**.
 
 ### Use Cases
 
