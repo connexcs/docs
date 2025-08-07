@@ -164,8 +164,6 @@ This is helpful when callers obscure their CLI / FROM information, as the networ
     + *Stir Shaken Required*: Choose this option when no certificate is selected.
     + *Stir Shaken Replace*: Choose this option when you wish to apply your Stir-shaken certificate instead of which is  already applied (for a call).
 
-<img src= "/customer/img/cli_global.png" style="border: 2px solid #4472C4; border-radius: 8px;">
-
 + Click **`Save`** to complete the CLI configuration.
 
 ## Direct Inward Dial
