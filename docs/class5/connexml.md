@@ -159,6 +159,9 @@ Text to speech is enabled for any application by using the `Say` verb, which spe
     </Response>
     ```
 
+!!! warning "Note"
+    The **Text to Speech** package needs to be added to your account for this feature to work.
+
 ### Reject
 
 This verb rejects the current call.
@@ -188,7 +191,7 @@ This verb rejects the current call.
 
 ### Play
 
-The `Play` verb allows you to play back to the caller an MP3 or WAV audio file.
+The `Play` verb allows you to play back to the caller a WAV audio file.
 
 You can use `Play` as a verb  standalone or as a noun nested inside `Gather` to play audio while you wait for DTMF tones.
 
