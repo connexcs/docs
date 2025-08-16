@@ -4,23 +4,15 @@
 
 The **Global Section** in the ConnexCS Control Panel provides an account-wide overview of many of the same sections found under **Management :material-menu-right: Customer** or **Management :material-menu-right: Carrier**.
 
-Its an essential tool for system-wide management, offering key functionalities that allow for streamlined troubleshooting, efficient DID and routing lookup, and centralized authentication and logging.
-
-Whether managing Class 4 call routing or expanding developer capabilities, the Global Section enhances efficiency and oversight across all customer accounts.
+The Global section enhances efficiency and oversight across all customer accounts.
 
 ### What the Global Section Offers?
 
 + **Increased Efficiency**: Access and manage multiple customer settings in one place.
 
-+ **Faster Troubleshooting**: Quickly identify and resolve system-wide issues.
-
 + **Better Visibility**: Provides a complete overview of routing, authentication, and logging.
 
 + **Simplified DID Management**: Locate and manage DIDs without navigating through multiple customer profiles.
-
-+ **Enhanced Debugging**: Real-time logging and debugging tools help streamline issue resolution.
-
-+ **Scalability**: Supports large-scale operations by offering a holistic view of system-wide configurations.
 
 ## Alerts
 
