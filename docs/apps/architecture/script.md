@@ -2,6 +2,10 @@
 
 ## Introduction
 
+**ScriptForge** is a powerful scripting engine that allows users to extend and customize the functionality of ConnexCS.
+
+It provides a JavaScript-based environment where users can develop scripts and applications.
+
 Use ConnexCS **ScriptForge** to write ECMAScript 2015 (ES6) (aka JavaScript) and execute it in a secure sandbox on the server. It's designed to have low latency and high throughput.
 
 It's made for scripts and small applications. Any larger applications are best executed on external hardware through ScriptForge.
@@ -43,6 +47,16 @@ You can find sample scripts in our GitHub repository > [**example applications**
 ## Coding Basics
 
 Scripts and Apps typically start in the `main()` function and expect to return a promise. The first parameter is typically an object called `data`.
+
+### Creating a Basic Script
+
+This script takes an input variable name and returns a greeting message.
+
+```js
+function main(vars) {
+    return "Hello, " + vars.name;
+}
+```
 
 ### Throwing Errors (Class 4)
 
