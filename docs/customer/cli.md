@@ -1,4 +1,4 @@
-# Caller Line Identification
+# Caller Line Identification (CLI)
 
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Routing**
 
@@ -294,7 +294,7 @@ This example shows how to pick a DID already associated with the customer at ran
 
 You may wish to perform CLI Localization.
 
-For example, if you have various DIDs (in this case, `123456`, `123567`, and `123789`) and are placing a call to `1234987654`, the system will find the longest match (in this case, `123456)` to use as the CLI.
+For example, if you have various DIDs (in this case, `123456`, `123567`, and `123789`) and are placing a call to `1234987654`, the system will find the longest match (in this case, `123456)`) to use as the CLI.
 
 | CLI| P-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID | Userspace DB |
 |----------------|-----------------|-------------|-----------------------|--------|--------------|--------------|

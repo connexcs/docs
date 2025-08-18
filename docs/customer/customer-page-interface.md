@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Customer Page Interface provides a comprehensive, customizable grid system to manage customer data efficiently. 
+The Customer Page Interface provides a comprehensive, customizable grid system to manage customer data efficiently.
 
 This system ensures up-to-date customer information and facilitates quick actions like filtering, editing, and notifying customers in bulk.
 

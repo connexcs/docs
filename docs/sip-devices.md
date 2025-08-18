@@ -41,4 +41,3 @@ Allows you to view and edit device information, including the addition of device
 ## Delete Device
 
 To delete a device from the list, select any row and click the trash bin icon.
-
