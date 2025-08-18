@@ -1,7 +1,7 @@
 ---
 title: "Caller Line Identification (CLI) | Routing Rules & Caller ID | ConnexCS"
 description: "Learn how Caller Line Identification (CLI) works in ConnexCS. Configure routing rules, manage caller IDs, and ensure reliable call delivery."
-canonical_url: "https://docs.connexcs.com/customer/cli/"
+canonical_url: "https://docs.connexcs.com/customer/cli/#cli-routing-rules"
 ---
 
 # Caller Line Identification (CLI)
