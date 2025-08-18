@@ -88,13 +88,13 @@ Alternate location(s):
 
 * Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Routing :material-menu-right: CLI.
 
-### Creating a Record
+**Creating a Record**
 
 Click :material-plus: under **CLI**.
 
 _Field details:_
 
-+ **Company**: Select the comapny from the drop-down.
++ **Company**: Select the company from the drop-down.
 
 + **CLI**: To allow the required CLIs, enter the required number or a regular expression (to match and replace).
 
@@ -143,7 +143,7 @@ This is helpful when callers obscure their CLI / FROM information, as the networ
 + **Database** (To add CLI and PAID from a database):
 
     1. Upload a list of numbers you choose as CLI or PAID under **Developer > Database**.
-    2. Go to **Customer > Routing > CLI** add the same database under database field. Under rewrite PAID field add this database.
+    2. Go to **Global > CLI** add the same database under database field . Under rewrite PAID field add this database.
 
     !!! note
         Make sure you select  the **Forced** option as **Yes**.
@@ -165,6 +165,8 @@ This is helpful when callers obscure their CLI / FROM information, as the networ
     + *Stir Shaken Replace*: Choose this option when you wish to apply your Stir-shaken certificate instead of which is  already applied (for a call).
 
 + Click **`Save`** to complete the CLI configuration.
+
+<img src="/misc/img/globalcli.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Direct Inward Dial
 
