@@ -82,7 +82,6 @@ Once, the problem has occurred and fixed, the last step is to close the ticket.
 
 <img src= "/misc/img/tl1.png" width= "550" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-
 #### Enable Support Tickets on Control Panel
 
 1. Login to your account.

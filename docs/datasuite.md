@@ -95,7 +95,7 @@ Four options are available: **New Workspace**, **Load Workspace**, **Bulk Upload
 + **New Remote Query**: Executes a database query on a remote server, enabling data retrieval or manipulation over a network.
     + New Query: Start a new SQL query.
     + Load Query: Apply a previously defined SQL query.
-+ **Import Local Table**:  allows you to transfer a table from a local database or file into the system. [Click here to know more.](https://bani-41024--connexcs-docs.netlify.app/datasuite/#upload-data-from-local-or-remote-databases)
++ **Import Local Table**:  allows you to transfer a table from a local database or file into the system. [Click here to know more.](https://docs.connexcs.com/datasuite/)
 + **Download Workspace**: Allows you to download the workspace in the `json` format.
 
 2.**Drag & Drop a .csv file here or Browse**:
@@ -136,7 +136,7 @@ Four options are available: **New Workspace**, **Load Workspace**, **Bulk Upload
             * **Export Query Results to Parquet**
 
 2. **Remote**: <br><img src= "/misc/img/dms13.png" width= "300"></br>
-    + **Databases**: Add a new table to an existing database. [Click here to know more.](https://bani-41024--connexcs-docs.netlify.app/datasuite/#upload-data-from-local-or-remote-databases)
+    + **Databases**: Add a new table to an existing database. [Click here to know more.](https://docs.connexcs.com/datasuite/#upload-data-from-local-or-remote-databases)
     + **Queries**:
         + Click the **`+`** icon, which functions as the **Add Query** button, within the **Queries** section. A window will appear as follows: <img src= "/misc/img/dms15.png"> <img src= "/misc/img/dms16.png">
         + Select `New Query` or `Load Query`.
@@ -165,7 +165,7 @@ Four options are available: **New Workspace**, **Load Workspace**, **Bulk Upload
 
 2. **Map Table Columns**: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. A window will appear as follows. <img src= "/misc/img/dms17.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-      + **Mapping Target Table**: You can select the destination (**CLI**, **Contact**, **Customer**, **DID**, **SIP User Auth**) to upload the selected data.
+      + **Mapping Target Table**: You can select the destination (**[CLI](https://docs.connexcs.com/customer/cli/#cli-routing-rules)**, **Contact**, **Customer**, **DID**, **SIP User Auth**) to upload the selected data.
       + **Refresh** any changed or modified entries inside the table.
       + **Upload** saves the table entries or modified table entries to the server.
       + **Continue To Modify**: Allows to edit/modify the table values via queries.

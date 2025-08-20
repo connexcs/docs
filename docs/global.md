@@ -82,7 +82,7 @@ Alternate location(s):
 
 View CLIs for all the customers.
 
-*See [**CLI**](https://docs.connexcs.com/customer/cli/) for more details.*
+*See [**CLI**](https://docs.connexcs.com/customer/cli/#cli-routing-rules) for more details.*
 
 Alternate location(s):
 
