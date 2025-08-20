@@ -15,7 +15,7 @@ The **ASR per Route Report** provides detailed visibility into the **Answer-Seiz
 
 Instead of viewing ASR at the carrier level, this report breaks down performance per provider_card_id, making it easier to identify high-performing and low-performing routes.
 
-The report consists the following field:
+The report consists the following key fields:
 
 1. **Date_time** represents the reporting period or timestamp for which the call statistics are generated. This allows you to analyze ASR and ACD trends over specific time ranges, such as hourly, daily, or monthly.
 
