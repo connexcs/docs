@@ -251,7 +251,7 @@ nav:
     - Authentication: customer-portal/cp-authentication.md
     - DID: customer-portal/cp-did.md
     - Invoice: customer-portal/cp-invoice.md
-    - CLI: customer-portal/cp-cli.md
+    - Customer Portal CLI: customer-portal/cp-cli.md
     - Latest Calls: customer-portal/cp-latest-calls.md
     - Dialogs: customer-portal/cp-dialogs.md
     - User Registration: customer-portal/cp-user-reg.md
