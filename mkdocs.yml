@@ -76,6 +76,7 @@ nav:
         - Payment: customer/payment.md
         - Stats: customer/stats.md
         - Route Stats: customer/route-stats.md
+        - Custom Reports: customer/custom-reports.md
         - Latest Calls: customer/latest-calls.md
         - Dialogs: customer/dialogs.md
         - Alerts: customer/alerts.md

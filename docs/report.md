@@ -84,7 +84,7 @@ The report helps carriers and customers separate traffic usage by regulatory cat
 
 Now lets go through the USA Calls report dashboard:
 
-<img src="/reports/img/usacenter.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src="/reports/img/usacalls.png" width= "1000" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 1. **Type**: Select type of report as `State` or `LATA`.
    1. **State**: It determines regulatory jurisdiction (Intrastate vs. Interstate).
