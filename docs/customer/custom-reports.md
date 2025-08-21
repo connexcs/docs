@@ -10,92 +10,92 @@ These reports go beyond standard CDRs, giving you targeted insights into areas s
 
 ### Types of Reports
 
-1. **DTMF Report**
+1.**DTMF Report**
 
-   It tracks DTMF (keypad input) signals sent during calls.
+It tracks DTMF (keypad input) signals sent during calls.
 
-   Its useful for troubleshooting IVR input or verifying whether key presses are being captured correctly.
+Its useful for troubleshooting IVR input or verifying whether key presses are being captured correctly.
 
-   The report includes the following key fields:
+The report includes the following key fields:
 
-   + **dt**: Takes the date-time (dt) field from the Call Detail Record (CDR) and rounds it down to the start of the hour. This allows all calls within the same hour to be grouped together for reporting.
++ **dt**: Takes the date-time (dt) field from the Call Detail Record (CDR) and rounds it down to the start of the hour. This allows all calls within the same hour to be grouped together for reporting.
 
-   + **provider_id**: The unique identifier of the provider handling the call. Used to track DTMF activity per provider.
++ **provider_id**: The unique identifier of the provider handling the call. Used to track DTMF activity per provider.
 
-   + **customer_charge**: Total charges billed to customers for all calls in the selected period.
++ **customer_charge**: Total charges billed to customers for all calls in the selected period.
 
-   + **provider_charge**: Total charges incurred from providers for the same calls.
++ **provider_charge**: Total charges incurred from providers for the same calls.
 
-   + **dtmf_count**:Counts the number of calls where DTMF tones were detected.
++ **dtmf_count**:Counts the number of calls where DTMF tones were detected.
 
    <img src="customrep5.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-2. **USA Rate Center Report**
+2.**USA Rate Center Report**
 
-   The USA Rate Center Report breaks down call activity based on the originating or terminating rate centers within the United States.
+The USA Rate Center Report breaks down call activity based on the originating or terminating rate centers within the United States.
 
-   It's especially useful for customers who need visibility into call routing, billing, and usage patterns across different regions.
+It's especially useful for customers who need visibility into call routing, billing, and usage patterns across different regions.
 
-   The report includes the following key fields:
+The report includes the following key fields:
 
-   + **Prefix**: The dialed number prefix associated with the call.
++ **Prefix**: The dialed number prefix associated with the call.
 
-   + **RC (Rate Center)**: The specific geographic rate center in the U.S. tied to the prefix.
++ **RC (Rate Center)**: The specific geographic rate center in the U.S. tied to the prefix.
 
-   + **Total Customer Charge**: The total amount billed to the customer for calls in that rate center.
++ **Total Customer Charge**: The total amount billed to the customer for calls in that rate center.
 
-   + **Total Provider Charge**: The total cost charged by the upstream provider for those calls.
++ **Total Provider Charge**: The total cost charged by the upstream provider for those calls.
 
-   + **Call Count**: The number of calls associated with that rate center.
++ **Call Count**: The number of calls associated with that rate center.
 
-   This report helps compare **Customer Charges** and **Provider Costs** at a regional level, ensuring accurate billing and visibility into traffic distribution.
+This report helps compare **Customer Charges** and **Provider Costs** at a regional level, ensuring accurate billing and visibility into traffic distribution.
 
-   <img src="customrep1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src="customrep1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-3. **DID As CLI**
+3.**DID As CLI**
 
-   The DID as CLI Report displays all DIDs in the system that have been used as Caller Line Identification (CLI) within a specified month.
+The DID as CLI Report displays all DIDs in the system that have been used as Caller Line Identification (CLI) within a specified month.
 
-   The results are automatically grouped by account. This makes  it easy to track usage, verify compliance, and analyze account-level activity.
+The results are automatically grouped by account. This makes  it easy to track usage, verify compliance, and analyze account-level activity.
 
-   The report includes the following key fields:
+The report includes the following key fields:
 
-   + **Dest_cli**: It shows the phone number (DID) that has been used as the outgoing caller ID in calls. Essentially, it helps track which DIDs from your system were presented as CLI to the called party.
++ **Dest_cli**: It shows the phone number (DID) that has been used as the outgoing caller ID in calls. Essentially, it helps track which DIDs from your system were presented as CLI to the called party.
 
-   + **Count(0)**: It represents the total number of times each DID (shown in `Dest_cli`) was used as a CLI within the selected reporting period. It counts the occurrences of calls where that DID appeared as the caller ID.
++ **Count(0)**: It represents the total number of times each DID (shown in `Dest_cli`) was used as a CLI within the selected reporting period. It counts the occurrences of calls where that DID appeared as the caller ID.
 
-   <img src="customrep2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src="customrep2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-4. **Group By Tech Prefix**:
+4.**Group By Tech Prefix**:
 
-   The Group by Tech Prefix Report provides a breakdown of call statistics based on routing technical prefixes.
+The Group by Tech Prefix Report provides a breakdown of call statistics based on routing technical prefixes.
 
-   It automatically calculates performance metrics such as:
+It automatically calculates performance metrics such as:
 
-   + **ASR (Answer-Seizure Ratio)**: The percentage of successfully connected calls.
++ **ASR (Answer-Seizure Ratio)**: The percentage of successfully connected calls.
 
-   + **ACD (Average Call Duration)**: The average length of answered calls.
++ **ACD (Average Call Duration)**: The average length of answered calls.
 
-   This eliminates the need to calculate these values manually, saving time and reducing errors.
+This eliminates the need to calculate these values manually, saving time and reducing errors.
 
 !!! question "When to Use?"
     1. Monitor call quality across different routing prefixes.
     2. Identify underperforming routes or providers.
     3. Optimize routing strategies for better efficiency and reliability.
 
-   The report includes the following fields:
+The report includes the following fields:
 
-   + **Tech_prefix**: The technical prefix used to identify a specific routing path or trunk.
++ **Tech_prefix**: The technical prefix used to identify a specific routing path or trunk.
 
-   + **ASR (Answer-Seizure Ratio)** : ercentage of successfully connected calls versus total attempts, measuring call success rate.
++ **ASR (Answer-Seizure Ratio)** : ercentage of successfully connected calls versus total attempts, measuring call success rate.
 
-   + **ACD (Average Call Duration)**: The average duration of connected calls, used to evaluate call quality and customer engagement.
++ **ACD (Average Call Duration)**: The average duration of connected calls, used to evaluate call quality and customer engagement.
 
-   + **Answered_calls**: The total number of calls that were successfully answered.
++ **Answered_calls**: The total number of calls that were successfully answered.
 
-   + **Total**: The total number of call attempts made through the prefix (answered + unanswered).
++ **Total**: The total number of call attempts made through the prefix (answered + unanswered).
 
-      <img src="customrep3.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src="customrep3.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 |**Report Type**|**Purpose**|**Use Case**|
 | --------------|-----------|-------------|
