@@ -14,15 +14,15 @@ Its useful for troubleshooting IVR input or verifying whether key presses are be
 
    The report includes the following key fields:
 
-      + **dt**: Takes the date-time (dt) field from the Call Detail Record (CDR) and rounds it down to the start of the hour. This allows all calls within the same hour to be grouped together for reporting.
+   + **dt**: Takes the date-time (dt) field from the Call Detail Record (CDR) and rounds it down to the start of the hour. This allows all calls within the same hour to be grouped together for reporting.
 
-      + **provider_id**: The unique identifier of the provider handling the call. Used to track DTMF activity per provider.
+   + **provider_id**: The unique identifier of the provider handling the call. Used to track DTMF activity per provider.
 
-      + **customer_charge**: Total charges billed to customers for all calls in the selected period.
+   + **customer_charge**: Total charges billed to customers for all calls in the selected period.
 
-      + **provider_charge**: Total charges incurred from providers for the same calls.
+   + **provider_charge**: Total charges incurred from providers for the same calls.
 
-      + **dtmf_count**:Counts the number of calls where DTMF tones were detected.
+   + **dtmf_count**:Counts the number of calls where DTMF tones were detected.
 
 2. **USA Rate Center Report**
 
@@ -42,7 +42,7 @@ The report includes the following key fields:
 
    + **Call Count**: The number of calls associated with that rate center.
 
-This report helps compare **Customer Charges** and **Provider Costs** at a regional level, ensuring accurate billing and visibility into traffic distribution.
+   This report helps compare **Customer Charges** and **Provider Costs** at a regional level, ensuring accurate billing and visibility into traffic distribution.
 
    <img src="customrep1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
