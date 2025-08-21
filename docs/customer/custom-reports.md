@@ -10,7 +10,10 @@ These reports go beyond standard CDRs, giving you targeted insights into areas s
 
 ### Types of Reports
 
-1. **DTMF Report**: It tracks DTMF (keypad input) signals sent during calls.
+1. **DTMF Report**
+
+It tracks DTMF (keypad input) signals sent during calls.
+
 Its useful for troubleshooting IVR input or verifying whether key presses are being captured correctly.
 
 The report includes the following key fields:
@@ -26,7 +29,6 @@ The report includes the following key fields:
 + **dtmf_count**:Counts the number of calls where DTMF tones were detected.
 
 <img src="customrep5.png" style="border: 2px solid #4472C4; border-radius: 8px;">
-
 
 2. **USA Rate Center Report**
 
@@ -77,7 +79,6 @@ It automatically calculates performance metrics such as:
 This eliminates the need to calculate these values manually, saving time and reducing errors.
 
 !!! question "When to Use?"
-    **Use this report to**:
     1. Monitor call quality across different routing prefixes.
     2. Identify underperforming routes or providers.
     3. Optimize routing strategies for better efficiency and reliability.
