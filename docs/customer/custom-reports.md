@@ -28,7 +28,7 @@ These reports go beyond standard CDRs, giving you targeted insights into areas s
 
    + **dtmf_count**:Counts the number of calls where DTMF tones were detected.
 
-      <img src="customrep5.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+   <img src="customrep5.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 2. **USA Rate Center Report**
 
@@ -50,7 +50,7 @@ These reports go beyond standard CDRs, giving you targeted insights into areas s
 
    This report helps compare **Customer Charges** and **Provider Costs** at a regional level, ensuring accurate billing and visibility into traffic distribution.
 
-      <img src="customrep1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+   <img src="customrep1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 3. **DID As CLI**
 
@@ -64,7 +64,7 @@ These reports go beyond standard CDRs, giving you targeted insights into areas s
 
    + **Count(0)**: It represents the total number of times each DID (shown in `Dest_cli`) was used as a CLI within the selected reporting period. It counts the occurrences of calls where that DID appeared as the caller ID.
 
-      <img src="customrep2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+   <img src="customrep2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 4. **Group By Tech Prefix**:
 
