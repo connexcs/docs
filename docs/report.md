@@ -88,16 +88,16 @@ Now lets go through the USA Calls report dashboard:
 
 1. **Type**: Select type of report as `State` or `LATA`.
    1. **State**: It determines regulatory jurisdiction (Intrastate vs. Interstate).
-   2. **LATA (Local Access and Transport Area)**: Itdetermines carrier responsibility (local exchange vs. long-distance carrier).
+   2. **LATA (Local Access and Transport Area)**: It determines carrier responsibility (local exchange vs. long-distance carrier).
 2. **Select Customers**, **Select Providers** from the selector drop-down.
-3. Use the date selector to define the specific date range for which the report should be generated.
+3. Use the **date selector** to define the specific date range for which the report should be generated.
 4. The report consists the following key fields:
-   1. **Intrastate**: Total number of calls placed within the same U.S. state (origin and destination are in the same state).
-   2. **Interstate**: Total number of calls placed between different U.S. states (origin in one state, destination in another).
-   3. **Indeterminate**: Total number of calls where the system cannot definitively classify the call as Intrastate or Interstate (e.g., missing or ambiguous caller/callee location data).
-   4. **Intrastate_connected**: Number of successfully connected calls within the same state.
-   5. **Interstate_connected**: Number of successfully connected calls between different states.
-   6. **Indeterminate_connected**: Number of successfully connected calls where the call classification is unclear.
-   7. **Intrastate_duration**: Total duration (in minutes or seconds, depending on system configuration) of connected Intrastate calls.
-   8. **Interstate_duration**: Total duration of connected Interstate calls.
-   9. **Indeterminate_duration**: Total duration of connected Indeterminate calls.
+      1. **Intrastate**: Total number of calls placed within the same U.S. state (origin and destination are in the same state).
+      2. **Interstate**: Total number of calls placed between different U.S. states (origin in one state, destination in another).
+      3. **Indeterminate**: Total number of calls where the system cannot definitively classify the call as Intrastate or Interstate (e.g., missing or ambiguous caller/callee location data).
+      4. **Intrastate_connected**: Number of successfully connected calls within the same state.
+      5. **Interstate_connected**: Number of successfully connected calls between different states.
+      6. **Indeterminate_connected**: Number of successfully connected calls where the call classification is unclear.
+      7. **Intrastate_duration**: Total duration (in minutes or seconds, depending on system configuration) of connected Intrastate calls.
+      8. **Interstate_duration**: Total duration of connected Interstate calls.
+      9. **Indeterminate_duration**: Total duration of connected Indeterminate calls.

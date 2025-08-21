@@ -24,6 +24,8 @@ Its useful for troubleshooting IVR input or verifying whether key presses are be
 
    + **dtmf_count**:Counts the number of calls where DTMF tones were detected.
 
+      <img src="customrep5.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
 2. **USA Rate Center Report**
 
 The USA Rate Center Report breaks down call activity based on the originating or terminating rate centers within the United States.
@@ -44,7 +46,7 @@ The report includes the following key fields:
 
    This report helps compare **Customer Charges** and **Provider Costs** at a regional level, ensuring accurate billing and visibility into traffic distribution.
 
-   <img src="customrep1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+      <img src="customrep1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 3. **DID As CLI**
 
@@ -58,7 +60,7 @@ The report includes the following key fields:
 
    + **Count(0)**: It represents the total number of times each DID (shown in `Dest_cli`) was used as a CLI within the selected reporting period. It counts the occurrences of calls where that DID appeared as the caller ID.
 
-   <img src="customrep2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+      <img src="customrep2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 4. **Group By Tech Prefix**:
 
@@ -80,17 +82,17 @@ This eliminates the need to calculate these values manually, saving time and red
 
 The report includes the following fields:
 
-+ **Tech_prefix**: The technical prefix used to identify a specific routing path or trunk.
+   + **Tech_prefix**: The technical prefix used to identify a specific routing path or trunk.
 
-+ **ASR (Answer-Seizure Ratio)** : ercentage of successfully connected calls versus total attempts, measuring call success rate.
+   + **ASR (Answer-Seizure Ratio)** : ercentage of successfully connected calls versus total attempts, measuring call success rate.
 
-+ **ACD (Average Call Duration)**: The average duration of connected calls, used to evaluate call quality and customer engagement.
+   + **ACD (Average Call Duration)**: The average duration of connected calls, used to evaluate call quality and customer engagement.
 
-+ **Answered_calls**: The total number of calls that were successfully answered.
+   + **Answered_calls**: The total number of calls that were successfully answered.
 
-+ **Total**: The total number of call attempts made through the prefix (answered + unanswered).
+   + **Total**: The total number of call attempts made through the prefix (answered + unanswered).
 
-<img src="customrep3.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+      <img src="customrep3.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 |**Report Type**|**Purpose**|**Use Case**|
 | --------------|-----------|-------------|
