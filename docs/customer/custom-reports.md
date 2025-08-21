@@ -12,17 +12,17 @@ These reports go beyond standard CDRs, giving you targeted insights into areas s
 1. **DTMF Report**: It tracks DTMF (keypad input) signals sent during calls.
 Its useful for troubleshooting IVR input or verifying whether key presses are being captured correctly.
 
-The report includes the following key fields:
+   The report includes the following key fields:
 
-   + **dt**: Takes the date-time (dt) field from the Call Detail Record (CDR) and rounds it down to the start of the hour. This allows all calls within the same hour to be grouped together for reporting.
+      + **dt**: Takes the date-time (dt) field from the Call Detail Record (CDR) and rounds it down to the start of the hour. This allows all calls within the same hour to be grouped together for reporting.
 
-   + **provider_id**: The unique identifier of the provider handling the call. Used to track DTMF activity per provider.
+      + **provider_id**: The unique identifier of the provider handling the call. Used to track DTMF activity per provider.
 
-   + **customer_charge**: Total charges billed to customers for all calls in the selected period.
+      + **customer_charge**: Total charges billed to customers for all calls in the selected period.
 
-   + **provider_charge**: Total charges incurred from providers for the same calls.
+      + **provider_charge**: Total charges incurred from providers for the same calls.
 
-   + **dtmf_count**:Counts the number of calls where DTMF tones were detected.
+      + **dtmf_count**:Counts the number of calls where DTMF tones were detected.
 
 2. **USA Rate Center Report**
 
@@ -44,7 +44,7 @@ The report includes the following key fields:
 
 This report helps compare **Customer Charges** and **Provider Costs** at a regional level, ensuring accurate billing and visibility into traffic distribution.
 
-<img src="customrep1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+   <img src="customrep1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 3. **DID As CLI**
 
@@ -58,7 +58,7 @@ The report includes the following key fields:
 
    + **Count(0)**: It represents the total number of times each DID (shown in `Dest_cli`) was used as a CLI within the selected reporting period. It counts the occurrences of calls where that DID appeared as the caller ID.
 
-<img src="customrep2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+   <img src="customrep2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 4. **Group By Tech Prefix**:
 
@@ -95,7 +95,7 @@ The report includes the following fields:
 |**Report Type**|**Purpose**|**Use Case**|
 | --------------|-----------|-------------|
 |**DTMF Report**| Tracks DTMF (Dual-Tone Multi-Frequency) signals sent during calls.| Useful for troubleshooting IVR issues, missed key presses, or validating customer interactions.|
-|**USA Rate Center**| Groups calls by U.S. rate centers to analyze charges and call volume. | Helps compare customer billing vs. provider costs, identify high-volume rate centers, and margin analysis.|
+|**USA Rate Center**| Groups calls by U.S. rate centers to analyze charges and call volume.| Helps compare customer billing vs. provider costs, identify high-volume rate centers, and margin analysis.|
 |**DID as CLI Report**| Shows calls where DIDs are used as Caller Line Identification (CLI).| Useful for compliance and ensuring proper CLI presentation per regulations or business rules.|
 |**Group by Tech Prefix** | Breaks down call statistics by routing **technical prefixes**.| Optimizes routing by analyzing quality/performance across prefixes. Helps detect failing routes.|
 
