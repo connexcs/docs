@@ -28,7 +28,17 @@ To add a new payment, select **`Make Payment`**.
 
 2. Click **`Pay`**.
 
-<img src= "/customer-portal/img/payment2.png">
+<img src= "/customer-portal/img/payment2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! warning "Negative Payments"
     If you make some kind of purchase on the account, it will appear as a negative amount under **Total**.
+
+### Pay With Paynamics
+
+**Paynamics** is a payment application that enables transactions in **Philippine currency** through multiple supported gateways.
+
+<img src= "/customer-portal/img/paynamics.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+1. **Pay via**: Choose from various payment gateways from the drop-down menu.
+2. Enter the **Amount**.
+3. Click on the `Confirm` button to make the payment.
