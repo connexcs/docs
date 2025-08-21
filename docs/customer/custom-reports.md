@@ -10,7 +10,7 @@ These reports go beyond standard CDRs, giving you targeted insights into areas s
 
 ### Types of Reports
 
-1.**DTMF Report**
+1. **DTMF Report**
 
 It tracks DTMF (keypad input) signals sent during calls.
 
@@ -30,7 +30,7 @@ The report includes the following key fields:
 
    <img src="customrep5.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-2.**USA Rate Center Report**
+2. **USA Rate Center Report**
 
 The USA Rate Center Report breaks down call activity based on the originating or terminating rate centers within the United States.
 
@@ -52,7 +52,7 @@ This report helps compare **Customer Charges** and **Provider Costs** at a regio
 
 <img src="customrep1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-3.**DID As CLI**
+3. **DID As CLI**
 
 The DID as CLI Report displays all DIDs in the system that have been used as Caller Line Identification (CLI) within a specified month.
 
@@ -66,7 +66,7 @@ The report includes the following key fields:
 
 <img src="customrep2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-4.**Group By Tech Prefix**:
+4. **Group By Tech Prefix**:
 
 The Group by Tech Prefix Report provides a breakdown of call statistics based on routing technical prefixes.
 
