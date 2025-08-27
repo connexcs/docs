@@ -6,6 +6,20 @@ Use the DID Purchase application to search for and acquire one or more DIDs (pho
 
 Each DID is associated with different subscription plans, including options for monthly, weekly, daily, and other flexible billing cycles.
 
+### DID Pricing in the Customer Portal
+
+Each DID in the Customer Portal has a cost, which is determined by the pricing package assigned to it. The portal displays this package cost when a DID is purchased.
+
+### DID Visibility in the Customer Portal
+
+By default, the Customer Portal displays all DIDs available in the **carrier’s inventory.**
+
+This application is both a usable tool and a proof of concept, as carriers may sell DIDs in different ways:
+
+1. **Range Holder Carriers**: A range holder is a carrier that has acquired DID ranges directly from the regulatory authority or government body responsible for number allocation. These DIDs are then maintained in the carrier’s inventory and made available for resale or assignment.
+
+2. **Other Providers**: Instead of storing DIDs in inventory, the portal can be extended to fetch DIDs dynamically from a provider’s API. Customers can search, view, and order DIDs through this remote lookup process.
+
 ## Steps to Purchase the DID(s)
 
 1. Login to your account.
