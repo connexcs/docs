@@ -117,24 +117,14 @@ There are 2 ways to create a certificate:
 
 2. Use your own domain.
 
-      1. **Web Server (Domain A):** This location hosts the phone, and the customers receives the URL. Create a CNAME on your domain, such as `webphone.yourdomain.com`, and point it to our web server at `webphone.connexcs.com` (responsible for web services, and yes, this is the same as the customer portal).
-      2. **SIP Switch (Domain B):** Create the WebRTC domain and it's CNAME should point towards the [DNS you create](https://docs.connexcs.com/setup/settings/dns/).
+      1. **SIP Switch (Domain B):** Create the WebRTC domain and it's CNAME should point towards the [DNS you create](https://docs.connexcs.com/setup/settings/dns/).
 
-        1. Navigate to **Setup :material-menu-right: Settings :material-menu-right: DNS :material-menu-right:** to create your DNS.
+           1. Navigate to **Setup :material-menu-right: Settings :material-menu-right: DNS :material-menu-right:** to create your DNS.
 
-        2. Enter the domain (ex: test1), then select the checkbox for the A record for the IP of the server you want to use.
+           2. Enter the domain (ex: test1), then select the checkbox for the A record for the IP of the server you want to use.
+           3. Setup a DNS (Domain Name System) record within ConnexCS, then point a `CNAME` on your domain to the ConnexCS setup domain.
 
-        This is the SIP signaling domain (WebRTC) and attached to your server. Navigate to **Setup :material-menu-right: Settings :material-menu-right: DNS :material-menu-right:**. Enter the domain (ex: test1), then select the checkbox for the A record for the IP of the server you want to use.
-
-        It's recommended to setup a DNS (Domain Name System) record within ConnexCS, then point a CNAME on your domain to the ConnexCS setup domain.
-
-      3. After you configure the domains, verify the certificates in **Setup :material-menu-right: Information :material-menu-right: Certificates**.  
-      4. If the domain isn't listed, click on `Add Certificate` and provide your domain name (for example: yourservername.host.connexcs.net).
-      5. If the certificates get listed but they don't have an issue or expiry date, click on "Refresh Certificates." This may take up to 10 minutes to complete.
-      6. After you configure the domains, verify the certificates in **Setup :material-menu-right: Information :material-menu-right: Certificates**:
-
-         * If the domain isn't listed, click on `Add Certificate` and provide your domain name.
-         * If the certificates get listed but they don't have an issue or expiry date, click on "Refresh Certificates." This may take up to 10 minutes to complete.
+      2. After you configure the domains, verify the certificates in **Setup :material-menu-right: Information :material-menu-right: Certificates**.
 
 <img src= "/setup/img/webphone78.png">
 
