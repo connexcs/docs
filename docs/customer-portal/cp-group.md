@@ -7,6 +7,18 @@ For example, create a number that customers can call that routes them to a team 
 + **Name:** Enter the name of the group (for example, Sale, Customer Support, Office, or Garage).
 + **Extension:** The number / extension callers use to connect to this group.
 
+## Key Features
+
+1. Assign the group to a customer.
+2. Specify an extension for group calls.
+3. Configure timeouts to prevent voicemail interruptions.
+4. Allow external and internal numbers as group members.
+
+!!! question "Why use the Group feature?"
+    + Ensures quick response times by distributing calls efficiently.
+    + Reduces missed calls by routing to multiple agents.
+    + Allows businesses to manage call traffic effectively.
+
 ## Edit Existing Group
 
 Click on the Group name, then click **`Edit`** to revise the following:
