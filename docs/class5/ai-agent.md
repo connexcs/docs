@@ -67,10 +67,11 @@ With AI-driven automation, businesses can enhance customer experience while sign
 
     + **Transcriber**: Select single or multiple transcriber for converting audio to text. You can select the transcriber depending on the selected platform.
     + **Answer Machine Detection Keywords**: If the AI Agent detects a phrase (any phrase entered by the user) like "Please leave a message" at the start of the call, it will automatically disconnect.
+    + **Transcriber Language**: The spoken language the AI Agent listens for when converting speech into text.
     + **Transcriber Timeout**: It defines the maximum time the system waits for a response during speech-to-text transcription before terminating the process. If no speech is detected within this period, the transcriber stops listening and times out. On timeout `<SILENT_TIMEOUT>` will be sent to the LLM.
     + **Transcriber Silence Threshold (sec)**: Defines the maximum duration (in seconds) the system will wait for a response from the ASR (Automatic Speech Recognition) engine. If no transcription is received within this threshold, the transcriber will stop waiting and proceed accordingly. 
     + Click `Save`.
-      <img src= "/class5/img/aiagent5new.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+      <img src= "/class5/img/trans1234.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 === "Voice"
 
@@ -249,6 +250,58 @@ It usually involves processing inputs, making decisions, and taking actions to a
         1. If `Include Primary Chat History` is `checked`, `Include Primary Prompt` will be ticked automatically.
         2. If `Sync Primary Chat History` is `checked`, `Include Primary Chat History` and `Include Primary Prompt` will be ticked automatically.
 
+##### AI Agent Task Conditions
+
+In the AI Agent Task configuration, the **Condition field** defines the rule that determines when a specific task should be executed.
+
+It allows you to control the flow of conversation by linking one task to another based on user input, recognized entities, or system logic.
+
+* **Field Description**
+
+  * **Condition**: The logic that triggers an AI Agent Task. If the condition evaluates as true, the defined task will run.
+
+  * **AI Agent Task**: The current task that will be executed if the condition is met.
+
+  * **Next AI Agent Task**: The task that follows once the current task is completed successfully.
+
+* **Types of Conditions**
+
+* **Default**: Executes when no other specific condition is met.
+
+  * **Example**: If the caller has not given a recognizable input, the AI Agent moves forward with the default task.
+
+* **Custom Conditions**: Allows branching based on input or context.
+
+  * **Common use cases**:
+
+    * **User Input**: If the caller says “yes” or “no.”
+
+    * **Entity Recognition**: If the system has captured an email address, phone number, or name.
+
+    * **System Variables**: If a variable (e.g., customerID) exists or matches a value.
+
+* **Example Use Case**:
+
+  * **Condition** = default
+
+    * **AI Agent Task** = Get First Name
+
+    * **Next AI Agent Task** = Ask for Last Name
+
+  * **Condition** = if user says ‘cancel’
+
+    * **AI Agent Task** = End Conversation
+
+* **Benefits of Using Conditions**
+
+  * Enables dynamic branching in AI conversations.
+
+  * Improves user experience by adapting responses to input.
+
+  * Provides greater control over workflow design.
+
+<img src= "/class5/img/condition.png" style="border: 2px solid #4472C4; border-radius: 8px;"> 
+
 ### Variables via JSON
 
 You can pass variables using JSON in the prompt section to configure or initialize them.
@@ -289,9 +342,9 @@ Before starting, choose a model mode—Standard for fast results (default) or Ex
 
    1. `Add Context` (optional field): Allows you to provide additional information to the AI before or during a conversation so it can give more accurate, relevant, and helpful responses. You can either add `Text Input` or upload text files using `File Upload` option.
 
-        <img src= "/class5/img/chat3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
+      <img src= "/class5/img/chat3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-        <img src= "/class5/img/chat4.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">. <br>Click `Add to Chat`.</br>
+      <img src= "/class5/img/chat4.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">. <br>Click `Add to Chat`.</br>
 
    2. Select the mode of the model:
       1. `Standard` (default): A fast model focused on quick results.
