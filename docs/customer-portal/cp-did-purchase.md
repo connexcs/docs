@@ -14,7 +14,7 @@ Each DID in the Customer Portal has a cost, which is determined by the pricing p
 
 By default, the Customer Portal displays all DIDs available in the **carrier’s inventory.**
 
-This application is both a usable tool and a proof of concept, as carriers may sell DIDs in different ways:
+This application is both a usable tool and a proof of concept, as carriers may sell DIDs as follows:
 
 1. **Range Holder Carriers**: A range holder is a carrier that has acquired DID ranges directly from the regulatory authority or government body responsible for number allocation. These DIDs are then maintained in the carrier’s inventory and made available for resale or assignment.
 
