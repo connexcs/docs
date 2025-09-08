@@ -1,5 +1,7 @@
 # IDE
 
+## Overview
+
 The **ConnexCS IDE** is a centralized workspace that enables you to build, customize, and manage applications within the ConnexCS platform.
 
 It provides developers and administrators with all the tools required to create workflows, integrate services, and automate processes—without needing to switch between multiple systems.
@@ -30,7 +32,7 @@ Store configuration parameters or dynamic values in a key-value format. [Click h
 
 ### Page Builder
 
-Build custom web pages and interfaces with a visual editor. [Click here](https://docs.connexcs.com/apps/architecture/page-builder/) for more information. for more information.
+Build custom web pages and interfaces with a visual editor. [Click here](https://docs.connexcs.com/apps/page-builder/) for more information. for more information.
 
 Various [drag and drop components](https://docs.connexcs.com/apps/components/alert/) of the page builder help you build the UI.
 
