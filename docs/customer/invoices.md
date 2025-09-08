@@ -64,10 +64,14 @@ To allocate customer payments to a specific invoice:
 
 ## Automatic Invoice Generation
 
-You can also generate an invoice through **Schedule Report**.
+To generate invoices atomatically:
 
-[Click here](https://docs.connexcs.com/report/#schedule-report) to check the process for creating the invoice.
- 
+1. Login to your **Control Panel**.
+2. Navigate to **Management :material-menu-right: Customer :material-menu-right: Customer [Name] :material-menu-right: `Edit` :material-menu-right: Config :material-menu-right: Invoice Schedule**.
+3. Select `Daily`, `Weekly`, or `Monthly` for the Invoice Schedule for automatic invoice generation.
+4. Once enabled, the option to auto-generate an invoice will appear under **Customer :material-menu-right: Main :material-menu-right: Auto Generate Invoice**. Click this option to generate the invoice.
 
-[invoice-pdf]: /misc/img/invoice-pdf.png "Invoice PDF" style="border: 2px solid #4472C4; border-radius: 8px;"
-[invoice-edit]: /misc/img/invoice-edit.png "Edit Invoice" style="border: 2px solid #4472C4; border-radius: 8px;"
+[invoice-8]: /misc/img/229.png "Invoice-8"
+
+[invoice-pdf]: /misc/img/invoice-pdf.png "Invoice PDF"
+[invoice-edit]: /misc/img/invoice-edit.png "Edit Invoice"

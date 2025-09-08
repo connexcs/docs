@@ -104,7 +104,7 @@ From the **Carriers** page, you can perform several management operations.
 
     * **PayPal Email:** Enter the PayPal e-mail associated with the carrier's account.
     * **Website:** Add the carrier's official website.
-    * **P-Asserted-ID:** Considered a network level identifier, you can select how calls to the provider is handled based on the PA-ID:
+    * **P-Asserted-ID:** Consider a network level identifier, you can select how calls to the provider is handled based on the PA-ID:
     
         :material-menu-right: `Default`: Call passed to the provider (no manipulation).
         
