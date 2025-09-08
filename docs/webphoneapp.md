@@ -3,7 +3,7 @@
 !!! Warning
     We advise users to switch to this new [App Platform](https://docs.connexcs.com/apps/introduction/) (WebPhone App) as the previous WebPhone development has been put on hold.
 
-# Introduction
+## Introduction
 
 The ConnexCS WebPhone Application is fully customizable. It replaces the old legacy Web Phone Application.
 
