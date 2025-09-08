@@ -128,7 +128,7 @@ There are 2 ways to create a certificate:
 
       2. After you configure the domains, verify the certificates in **Setup :material-menu-right: Information :material-menu-right: Certificates**.
 
-<img src= "/setup/img/webphone78.png">
+<img src= "/setup/img/webphone78.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ### Step 4: Add WebRTC to server
 
