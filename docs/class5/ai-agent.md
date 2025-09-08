@@ -274,47 +274,47 @@ It allows you to control the flow of conversation by linking one task to another
 
 * **Field Description**
 
-  * **Condition**: The logic that triggers an AI Agent Task. If the condition evaluates as true, the defined task will run.
+    * **Condition**: The logic that triggers an AI Agent Task. If the condition evaluates as true, the defined task will run.
 
-  * **AI Agent Task**: The current task that will be executed if the condition is met.
+    * **AI Agent Task**: The current task that will be executed if the condition is met.
 
-  * **Next AI Agent Task**: The task that follows once the current task is completed successfully.
+    * **Next AI Agent Task**: The task that follows once the current task is completed successfully.
 
 * **Types of Conditions**
 
-* **Default**: Executes when no other specific condition is met.
+    * **Default**: Executes when no other specific condition is met.
 
-  * **Example**: If the caller has not given a recognizable input, the AI Agent moves forward with the default task.
+      * **Example**: If the caller has not given a recognizable input, the AI Agent moves forward with the default task.
 
-* **Custom Conditions**: Allows branching based on input or context.
+  * **Custom Conditions**: Allows branching based on input or context.
 
-  * **Common use cases**:
+    * **Common use cases**:
 
-    * **User Input**: If the caller says “yes” or “no.”
+      * **User Input**: If the caller says “yes” or “no.”
 
-    * **Entity Recognition**: If the system has captured an email address, phone number, or name.
+      * **Entity Recognition**: If the system has captured an email address, phone number, or name.
 
-    * **System Variables**: If a variable (e.g., customerID) exists or matches a value.
+      * **System Variables**: If a variable (e.g., customerID) exists or matches a value.
 
 * **Example Use Case**:
 
-  * **Condition** = default
+    * **Condition** = default
 
-    * **AI Agent Task** = Get First Name
+      * **AI Agent Task** = Get First Name
 
-    * **Next AI Agent Task** = Ask for Last Name
+      * **Next AI Agent Task** = Ask for Last Name
 
-  * **Condition** = if user says ‘cancel’
+    * **Condition** = if user says ‘cancel’
 
-    * **AI Agent Task** = End Conversation
+      * **AI Agent Task** = End Conversation
 
 * **Benefits of Using Conditions**
 
-  * Enables dynamic branching in AI conversations.
+    * Enables dynamic branching in AI conversations.
 
-  * Improves user experience by adapting responses to input.
+    * Improves user experience by adapting responses to input.
 
-  * Provides greater control over workflow design.
+    * Provides greater control over workflow design.
 
 <img src= "/class5/img/condition.png" style="border: 2px solid #4472C4; border-radius: 8px;"> 
 
