@@ -136,5 +136,44 @@ You can create an application called **Echo Test** and provide a specific call t
 7. Click on `Save`. <img src= "/guides/img/echotest1.jpg" style="border: 2px solid #4472C4; border-radius: 8px;">
 8. Click on `Go to App` which is right next to the echo test you've created. You will see a screen as shown in the figure below. <img src= "/guides/img/echotest2.jpg" style="border: 2px solid #4472C4; border-radius: 8px;">
 9. Then from components drag the `echo` component and connect it with your created echo test.
-10. Click on the dot on the right-side of your created echo test (Echo Test in this case) and join it with the `echo component` on the right-side. <img src= "/guides/img/echotest3.jpg" style="border: 2px solid #4472C4; border-radius: 8px;">
+10. Click on the dot on the right-side of your created echo test (Echo Test in this case) and join it with the `echo component` on the right-side.![echo test3](/guides/img/echotest3.jpg)
 11. Then use your softfone to check for the echo test.
+
+### How Echo Test Works?
+
+1. **Performing an Echo Test in ConnexCS**:
+
+      + Navigate to **Management :material-menu-right: Customer :material-menu-right: Customer [Name] :material-menu-right: Ingress Routing :material-menu-right: Basic :material-menu-right: Rate Card :material-menu-right: [Internal]**.
+      + Assign the dial string on this internal route same as the destination of the echo test you have created.
+      + Dial the assigned digit from the account to compare the transmitted and received audio.
+
+```mermaid
+graph TD
+    A[Start] --> B[Select Customer]
+    B --> C[Select Ingress Routing --> Basic --> Rate Card --> Internal]
+    C --> D[Set dial string same as Echo Test destination]
+    D --> E[Dial the assigned digit from the account]
+    E --> F[Compare transmitted and received audio]
+```
+
+### Multi-Point Testing Approach
+
+For more accurate diagnostics, it is recommended to test from different endpoints:
+
+**Point 1**: Your location :material-menu-right: Direct Echo Test on ConnexCS.
+
+**Point 2**: Customer dialer :material-menu-right: Echo Test on ConnexCS.
+
+**Point 3**: Dialer :material-menu-right: ConnexCS :material-menu-right: Echo Test.
+
+This method helps simulate real-world call scenarios and test routing efficiency.
+
+### Benefits
+
+1. **Latency and Packet Loss Detection**: Users can audibly assess delay and packet loss by comparing the echoed voice.
+
+2. **Dialer Functionality Verification**: Installing an Echo Test on a dialer allows instant verification of its working condition.
+
+3. **Call Recording for Proof**: Recording an Echo Test call helps document connectivity and troubleshooting efforts.
+
+4. **Independent Testing for ConnexCS and Dialers**: Users can test both ConnexCS connectivity and individual dialer performance separately.
