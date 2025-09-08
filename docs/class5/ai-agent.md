@@ -300,13 +300,13 @@ It allows you to control the flow of conversation by linking one task to another
 
     * **Condition** = default
 
-      * **AI Agent Task** = Get First Name
+        * **AI Agent Task** = Get First Name
 
-      * **Next AI Agent Task** = Ask for Last Name
+        * **Next AI Agent Task** = Ask for Last Name
 
     * **Condition** = if user says ‘cancel’
 
-      * **AI Agent Task** = End Conversation
+        * **AI Agent Task** = End Conversation
 
 * **Benefits of Using Conditions**
 
