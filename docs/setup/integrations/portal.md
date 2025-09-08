@@ -18,6 +18,7 @@ You can provide several domains for your customers through different brands, and
 2. Locate the page for updating your domain's DNS (Domain Name System) records.
 
     You can refer the page to as DNS Management, Name Server Management, or Advanced Settings.
+
 3. Locate the `CNAME` records for your domain.
 
 4. Add a new domain record (such as `portal.yourdomain.com`, where `yourdomain.com` is the domain that you own).
@@ -39,7 +40,7 @@ You can provide several domains for your customers through different brands, and
 !!! note
     You should expose your Customer Portal via a `CNAME` that you setup. This won't work with `A` records or by pointing directly.
 
-    ![alt text][portal]
+    <img src= "/setup/img/portal12.png"style="border: 2px solid #4472C4; border-radius: 8px;"
 
 ## Configuration Options
 
@@ -77,7 +78,7 @@ You can provide several domains for your customers through different brands, and
     |**Customer ACD**|View Average Call Duration as a total or per-carrier basis. [Click here to know more.](https://docs.connexcs.com/customer/stats/)|
     |**Customer ASR**|View Average Call Duration as a total or per-carrier basis. [Click here to know more.](https://docs.connexcs.com/customer/stats/)|
     |**Customer CPS**|View calls per second over time. [Click here to know more](https://docs.connexcs.com/customer/stats/)|
-    |**Customer Channels**|View ccustomer channels. [Click here to know more.](https://docs.connexcs.com/dashboard/#dashboard-graph-tabs)|
+    |**Customer Channels**|View ccustomer channels. [Click here to know more.](https://docs.connexcs.com/dashboard/#channels)|
     |**Customer DTMF**|View DTMF percentages of each carrier. [Click here to know more.](https://docs.connexcs.com/customer/stats/#customer-carrier)|
     |**Carrier CPS**|View carrier's calls per second. [Click here to know more.](https://docs.connexcs.com/customer/stats/#customer-carrier)|
     |**Carrier Channels**|View carrier's channels. [Click here to know more.](https://docs.connexcs.com/customer/stats/#main)|
@@ -185,7 +186,7 @@ You can provide several domains for your customers through different brands, and
 
 **Steps to create a new Domain**:
 
-1. Go to **Setup :material-menu-right: Integrations :material-menu-right: Portal**. ![smtp2](/setup/img/smtp2.jpg)
+1. Go to **Setup :material-menu-right: Integrations :material-menu-right: Portal**. <img src= "/setup/img/smtp2.jpg" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 2. Click on `+` button and click on the **SMTP** tab.
 
@@ -206,7 +207,7 @@ You can provide several domains for your customers through different brands, and
 3. Click on **`Edit`.**
 4. Click on **`Config`** and in the **Domain** field you can select the domain from the dropdown menu.
 5. Click on `Save` and the customer will be associated with that particular Domain/ Brand.
-![smtp1](/setup/img/smtp1.jpg)
+<img src= "/setup/img/smtp1.jpg" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Note
     1. Multiple customers can be associated with one domain.
@@ -218,4 +219,45 @@ To configure Users to access the Customer Portal, follow the steps to [**Add Con
 
 Any Contact configured on the account can login to the Customer Portal.
 
-[portal]: /setup/img/portal.png "Portal"
+## Multi Brand Support
+
+By leveraging a single ConnexCS account, customers can seamlessly run multiple brands, each with its own distinct identity and customer base.
+
+It's achieved by deploying independent customer portals tailored to the specific needs and preferences of each target market.
+
+### **Key Benefits**
+
++ **Enhanced Market Penetration**:
+
+Effectively reach and engage customers across various market segments, such as residential, business, wholesale, and international, with tailored offerings and pricing strategies for each.
+
+Enter new markets and capture new customer bases without the overhead of managing separate infrastructure or systems.
+
++ **Improved Customer Segmentation**:
+
+Maintain clear separation between customer groups, ensuring data privacy and preventing cross-contamination of services.
+
+Deliver personalized experiences to each customer segment with customized features, pricing plans, and support channels within their dedicated portal.
+
++ **Increased Profitability**:
+
+Develop and implement distinct pricing and service packages for each brand, maximizing revenue generation from each customer segment.
+
+Reduce operational costs and improve efficiency by managing multiple brands from a single, centralized platform.
+
++ **Enhanced Brand Differentiation**:
+
+Preserve the unique identity and brand image of each brand within the ConnexCS ecosystem.
+
+Foster stronger customer loyalty by providing a seamless and personalized experience for each brand's customer base.
+
+### ConnexCS Multi-Brand Management empowers businesses to:
+
++ **Operate on all levels of the market**:
+  From SMBs to enterprises and wholesale, effectively serve diverse customer needs with tailored offerings.
+
++ **Maximize revenue potential**:
+  Capture a larger market share and increase profitability by effectively targeting and serving distinct customer segments.
+
++ **Gain a competitive edge**:
+  Differentiate themselves in the market by offering a unique and personalized experience to each customer segment.

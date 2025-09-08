@@ -14,15 +14,15 @@ In the DID section you can allocate the calls at different places. Click on Call
 
 1.**URI**: Its points to a client's server. You can send the call either to the Destination DID or an IP address.
 
-<img src= "/class5/img/ml2.png"  width="400">
+<img src= "/class5/img/ml2.png"  width="400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 2.**External**: Allows you to re-direct the call out back again to the network.
 
-<img src= "/class5/img/ml3.png" width="400">
+<img src= "/class5/img/ml3.png" width="400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 3.**Internal**: Allows you to route the call internally like a SIP user or a Queue.
 
-<img src= "/class5/img/ml4.png" width="400">
+<img src= "/class5/img/ml4.png" width="400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 Later, the Class5 Applications makes an HTTP request to the URL endpoint you configured for that number. The endpoint will contain instructions telling ConnexML what to do next with the call.
 
@@ -47,7 +47,7 @@ In case it hits the `ConneXML` application, `ConneXML` can as to direct it (Rout
 
 ConneXML uses the standard [`.xml` markup](https://en.wikipedia.org/wiki/XML) language.
 
-.<img src= "/class5/img/ml11.png">
+.<img src= "/class5/img/ml11.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ### How to reach and code the ConneXML Editor?
 
@@ -57,11 +57,11 @@ To get ConneXML working you will need to:
 2. On the top right click on blue `+` sign.
 3. Add new and make sure you choose App Type = ConneXML. The destination can be alpha-numeric and contains an endpoint, for example "customer_a_connexml".
 
-<img src= "/class5/img/ml5.png">
+<img src= "/class5/img/ml5.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 4.After saving the above information. Click on `Go to App` to enter the ConneXML editor. Write your code and click `Save`.
 
-<img src= "/class5/img/ml6.png">
+<img src= "/class5/img/ml6.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 5.If you initially want this to hit a customers server same as before, you can use something like this in the XML field.
 
@@ -76,7 +76,7 @@ To get ConneXML working you will need to:
 
 7.**Select Code Snippet**: Enables you to choose pre-made ConneXML codes for faster and more convenient use. You choose from multiple available options.
 
-<img src= "/class5/img/codesnippet.png">
+<img src= "/class5/img/codesnippet.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ### ConneXML Components
 
@@ -159,6 +159,9 @@ Text to speech is enabled for any application by using the `Say` verb, which spe
     </Response>
     ```
 
+!!! warning "Note"
+    The **Text to Speech** package needs to be added to your account for this feature to work.
+
 ### Reject
 
 This verb rejects the current call.
@@ -188,7 +191,7 @@ This verb rejects the current call.
 
 ### Play
 
-The `Play` verb allows you to play back to the caller an MP3 or WAV audio file.
+The `Play` verb allows you to play back to the caller a WAV audio file.
 
 You can use `Play` as a verb  standalone or as a noun nested inside `Gather` to play audio while you wait for DTMF tones.
 
@@ -325,11 +328,12 @@ An existing call is transferred to a different destination using the `Dial` ver
 
 |**Attribute**|**Description**|**Options**|**Default Method**|
 |-------------|---------------|-----------|-------|
-|`callerID`|Caller ID that must be a valid E.164 format number|
-|`fromDisplayName`|The fromDisplayName string to be used as the caller id name (SIP From Display Name) presented to the destination. The string should have a maximum of 128 characters, containing only letters, numbers, spaces, and -_~!.+ special characters. If omitted, the display name will be the same as the number in the callerId field|
+|`callerId`|Caller ID that must be a valid E.164 format number|
+|`fromDisplayName`|The fromDisplayName string to be used as the caller ID name (SIP From Display Name) presented to the destination. The string should have a maximum of 128 characters, containing only letters, numbers, spaces, and -_~!.+ special characters. If omitted, the display name will be the same as the number in the callerId field|
 |`hangupOnStar`|By tapping the `*` key on their phone, the initial caller can hang up on the called party using the hangupOnStar attribute. It doesn't apply for `Conference` noun|`true`, `false`| `false`|
 |`ringTone`|The ringback tone played back to the caller|`at`,`au`,`bg`,`br`,<br>`be`,`ch`,`cl`,`cn`,`cz`,</br>`de`,`dk`,`ee`,`es`,`fi`,<br>`fr`,`gr`,`hu`,`il`,`in`,<br>`it`,`lt`,`jp`,`mx`,`my`,<br>`nl`,`no`,`nz`,`ph`,`pl`,<br>`pt`,`ru`,`se`,`sg`,<br>`th`,`uk`,`us`,`us-old`,`tw`,<br>`ve`,`za`|`us`|
 |`timeout`|timeout in <Dial> lets you specify the maximum waiting time in seconds for the dialed party to answer|||
+|`hangupOnStarContext`|Hangs up on `*` only in the **specified context**|
 
 |**Noun**|**Description**|**Default Method**|
 |--------|---------------|------------------|
@@ -357,7 +361,7 @@ An existing call is transferred to a different destination using the `Dial` ver
     1. `Conference` is similar to how the `Number` noun lets you connect to another phone number.
 
 !!! example
-    1. **callerID**
+    1. **callerId**
     ``` xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
@@ -537,6 +541,20 @@ An existing call is transferred to a different destination using the `Dial` ver
             </Dial>
         </Response>
         ```
+    19. **hangupOnStarContext**
+        ``` xml
+        <?xml version="1.0" encoding="UTF-8"?>
+        <Response>
+            <Enter>A</Enter>
+
+            <Press dtmf_leg="a" digit="#0" context="A">
+    
+                <Dial hangupOnStar="true" callerId="+44123">4421927526</Dial>
+
+            </Press>
+            <Dial hangupOnStar="true" hangupOnStarContext ="A">2919</Dial>
+        </Response>
+        ```
 
 #### Dynamic Dial
 
@@ -578,7 +596,7 @@ Dynamically dial a phone number based on a `substring` of a variable named `Exte
 It helps to define on which leg of the call the DTMF will work. For example, `dtmf_leg ='a'` or `dtmf_leg ='b'`.
 
 !!! Example
-   When the digit `3` is pressed on the call leg `b` within the specified context `A`, the call will be transferred to `test4`.
+    When the digit `3` is pressed on the call leg `b` within the specified context `A`, the call will be transferred to `test4`.
     ``` xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
@@ -598,7 +616,7 @@ It helps to define on which leg of the call the DTMF will work. For example, `dt
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
         <Transfer attended="true">
-            <Target>+1234567890</Target>
+        +1234567890
         </Transfer>
     </Response>
     ```
@@ -725,6 +743,32 @@ It's an effective and quicker way to check a customer's audio quality and call p
 
     6. If the **Set elements** don't include `header="true"`, they will only set the variables and not as headers in the SIP INVITE.
 
+### Enter
+
+ The `Enter` command tells the phone system to switch to a different menu or section (called a context or realm) during a call.
+
+|**Noun**|**Description**|**Example**|
+|--------|---------------|-----------|
+|`context`|Enables the same DTMF input to perform different actions depending on the current state of the call.|Call starts in `context B`, pressing `1` switches to `context A`, pressing `2` **hangs up** (in B) or **plays a sound** (in A)|
+
+!!! Example "Example 1"
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+        <Enter>B</Enter>
+        <Press digit="2" context="A">
+            <Play=user/adam.wav</Play>
+        </Press>
+        <Press digit="2" context="B">
+            <Hangup/>
+        </Press>
+        <Press digit="1" context="B">
+            <Enter>A</Enter>
+        </Press>
+    </Response>
+    ```
+    `Digit 2` can be used to `Play` an **audio file** if you are in `context A` Or can be used to `hangup` if you are in `context B`.
+
 |**Verbs/Attributes/Nouns**|**ConnexCS (ConneXML)**|**Twilio<sup>TM</sup> (TwiML)[^1]**|**Telnyx (TeXML)[^2]**|
 |----------------------------|------------|--------------|------------|
 |**Play**|✅|✅|✅|
@@ -743,6 +787,7 @@ It's an effective and quicker way to check a customer's audio quality and call p
 |➡️callerId|✅|✅|✅|
 |➡️fromDisplayName|✅|✅|✅|
 |➡️hangupOnStar|✅|✅|✅|
+|➡️hangupOnStarContext|✅|❌|❌|
 |➡️ringTone|✅|✅|✅|
 |➡️Number|✅|✅|✅|
 |➡️Queue|✅|✅|✅|
@@ -788,6 +833,8 @@ It's an effective and quicker way to check a customer's audio quality and call p
 |**Before**|✅|❌|❌|
 |**Set**|✅|❌|❌|
 |**Echo**|✅|❌|❌|
+|**Enter**|✅|❌|✅|
+|🟦context|✅|✅|✅|
 
 [^1]:  https://www.twilio.com/docs/voice/twiml
 [^2]:  https://developers.telnyx.com/docs/v2/voice/programmable_voice/texml/texml-translator/texml_translator/
@@ -865,7 +912,7 @@ graph TD
 !!! Example "Example: XML Integration (App Script Method)"
     **App Script Example (within the IDE):**
 
-    ```js
+    ```js linenums="1"
         const llm = require('cxLLM');
         // Retrieves the current day of the week
         function dayOfWeek() {

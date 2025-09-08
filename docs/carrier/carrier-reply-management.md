@@ -2,15 +2,25 @@
 
 **Management :material-menu-right: Carrier :material-menu-right: Reply Management**
 
-<img src= "/carrier/img/carrierreply.png">
+## Overview
 
 Customers can use **Reply Management** to customize responses based on the SIP message (100 to 606) received from the carrier. This allows for more efficient messaging and system responses.
 
 You can use this for customers who have switches that require certain SIP code responses.
 
+<img src= "/carrier/img/carrierreply.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
 See the [**Wikipedia List of SIP response codes**](https://en.wikipedia.org/wiki/List_of_SIP_response_codes) for extra details about each code.
 
-To edit Reply Codes:
+### Key Features
+
++ **Response Code Modification**:
+    + Allows replacement of SIP responses (e.g., replacing 183 with 180 when required by specific switches).
+
++ **Failover Management**:
+    + Allows rewriting response codes for better compatibility.
+
+## To edit Reply Codes
 
 1. Select **`Edit`** on the right of the code.
 2. Select the action:

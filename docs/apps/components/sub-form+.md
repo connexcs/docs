@@ -4,7 +4,7 @@
 
 Complex layout Sub-Form component for list (array) type form data, supporting nesting of complex layouts.
 
-<img src= "/apps/components/img/subformplus.png">
+<img src= "/apps/components/img/subformplus.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Use Case
 
@@ -72,7 +72,7 @@ Complex layout Sub-Form component for list (array) type form data, supporting ne
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/subformplus2.png">
+<img src= "/apps/components/img/subformplus2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Example
     1. `this.addClassName(fields, className)`
@@ -88,52 +88,52 @@ Complex layout Sub-Form component for list (array) type form data, supporting ne
             ```
 
     2. `this.removeClassName(fields, className)`
-        ```js
+        ```js linenums="1"
         this.removeClassName('subform_e4cjz3nf', 'abc')
         ```
 
     3. `this.hide(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['subform_e4cjz3nf']
         this.hide(fields)
         ```
     
     4. `this.show(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['subform_e4cjz3nf']
         this.show(fields)
         ```
     
     5. `this.disable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.disable(['subform_e4cjz3nf'])
         ```
     
     6. `this.enable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.enable(['subform_e4cjz3nf'])
         ```
 
     7.  `this.getComponent('component_ID')`
-        ```js
+        ```js linenums="1"
         var subname = this.getComponent('subform_e4cjz3nf');
         console.log('getComponent', subname);
         ```
 
     8. `this.getValues()`
-        ```js
+        ```js linenums="1"
         var data = this.getValues();
         console.log(data);
         ```
     
     9. `this.getValue('fieldName')`
-        ```js
+        ```js linenums="1"
         var subname = this.getValue('subform_e4cjz3nf');
         console.log('getValue', subname);
         ```
     
     10. `this.setData(Value)`
-        ```js
+        ```js linenums="1"
         this.setData({ subform_e4cjz3nf: [ { inputId: '1234', inputId2: 'value2' } ] })
         ```
 

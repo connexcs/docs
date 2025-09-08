@@ -38,19 +38,19 @@ You can find All Carrier Monitoring in **Management :material-menu-right: Carrie
 **:material-menu-right: Consecutive Failures**
 
 > **Consecutive Failures** (found on the main Carrier tab) is a straightforward way to assess a carrier's ability to connect calls.
-> Click [**here**](https://docs.connexcs.com/carrier/#consecutive-failures) for more details.
+> Click [**here**](https://docs.connexcs.com/carrier/carrier-main/#configure-carrier) for more details.
 
 **:material-menu-right: Failover**
 
 > **Failover** simplistic way to measure a carrier's ability to connect calls.
-> Click [**here**](https://docs.connexcs.com/carrier/#failover) for more details.
+> Click [**here**](https://docs.connexcs.com/carrier/carrier-failover/) for more details.
 
 **:material-menu-right: Stats**
 
 > On the **Stats** tab, view carrier-related statistics.
-> Click [**here**](https://docs.connexcs.com/carrier/#stats) for more details.
+> Click [**here**](https://docs.connexcs.com/carrier/carrier-stats/) for more details.
 
 **:material-menu-right: Alerts**
 
 > View **Alerts** tied to Consecutive Failures.
-> Click [**here**](https://docs.connexcs.com/carrier/#alerts) for more details.
+> Click [**here**](https://docs.connexcs.com/carrier/carrier-alerts/) for more details.

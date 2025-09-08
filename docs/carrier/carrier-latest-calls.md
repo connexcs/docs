@@ -2,7 +2,7 @@
 
 **Management :material-menu-right: Carrier :material-menu-right: Latest Calls**
 
-<img src= "/carrier/img/carrierlatest.png">
+<img src= "/carrier/img/carrierlatest.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 The **Latest Calls** tab displays the most recent calls to pass through a given system. View recent calls and their SIP traces and run simulated calls.
 
