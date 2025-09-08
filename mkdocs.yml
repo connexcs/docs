@@ -134,17 +134,7 @@ nav:
         - Phonebook: class5/phonebook.md
         - ConneXML: class5/connexml.md        
        
-    - Developer:
-        - Analytics: developers/analytics.md
-        - Button Builder: developers/button-builder.md
-        - Database: developers/database.md
-        - ScriptForge: developers/scriptforge.md
-        - Templates: setup/config/templates.md
-        - Pages:
-            - Introduction: developers/pages/introduction.md
-            - Basic Field: developers/pages/basic-field.md
-            - Advance Field: developers/pages/advance-field.md
-            - Layout: developers/pages/layout.md
+    - IDE: ide.md
            
     - Data Suite: datasuite.md
 
@@ -251,6 +241,7 @@ nav:
     - Breakout: customer-portal/cp-breakout.md
     - Authentication: customer-portal/cp-authentication.md
     - DID: customer-portal/cp-did.md
+    - DID Purchase: customer-portal/cp-did-purchase.md
     - Invoice: customer-portal/cp-invoice.md
     - Customer Portal CLI: customer-portal/cp-cli.md
     - Latest Calls: customer-portal/cp-latest-calls.md
