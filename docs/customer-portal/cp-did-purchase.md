@@ -18,8 +18,6 @@ This application is both a usable tool and a proof of concept, as carriers may s
 
 1. **Range Holder Carriers**: A range holder is a carrier that has acquired DID ranges directly from the regulatory authority or government body responsible for number allocation. These DIDs are then maintained in the carrier’s inventory and made available for resale or assignment.
 
-2. **Other Providers**: Instead of storing DIDs in inventory, the portal can be extended to fetch DIDs dynamically from a provider’s API. Customers can search, view, and order DIDs through this remote lookup process.
-
 ## Steps to Purchase the DID(s)
 
 1. Login to your account.
