@@ -10,7 +10,7 @@ Think of it like the floor plan of a house. Just like how a house layout arrange
 
 You can arrange elements as **Header**, **Aside**, **Footer** or in the **Main** body.
 
-<img src= "/apps/components/img/pagelayout.png">
+<img src= "/apps/components/img/pagelayout.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Use Case
 

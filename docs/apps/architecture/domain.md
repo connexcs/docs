@@ -13,13 +13,13 @@ You can also use any custom domain.
 1. Login to your account.
 2. Navigate to **IDE** :material-menu-right: Select an App/Create an App `+` sign :material-menu-right: **Domain**.
 
-<img src= "/apps/img/domain1.png" width= "350">
+<img src= "/apps/img/domain1.png" width= "350" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 3.A window will pop-up as shown below.
 
 Enter the domain name where your app will be displayed. You also have the option to use your own [Custom Domain](https://bani-customdomian--connexcs-docs.netlify.app/apps/architecture/domain/#custom-domain)
 
-<img src= "/apps/img/domain2.png" width= "350">
+<img src= "/apps/img/domain2.png" width= "350" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 3.Click `Save`.
 

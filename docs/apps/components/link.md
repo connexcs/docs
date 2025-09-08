@@ -4,7 +4,7 @@
 
 **Link** components can be used in forms to provide additional functionality, such as opening external resources, navigating to different sections of the form, or triggering specific actions.
 
-<img src= "/apps/components/img/link.png">
+<img src= "/apps/components/img/link.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Use Case
 
@@ -53,7 +53,7 @@
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/link2.png">
+<img src= "/apps/components/img/link2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Example
     1. `this.addClassName(fields, className)`

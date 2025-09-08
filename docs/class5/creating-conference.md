@@ -34,7 +34,7 @@ To create a Conference room, click :material-plus:.
 
 Click **`Save`** and the new conference room is available for use.
 
-<img src= "/class5/img/conference1.png" width= "400">
+<img src= "/class5/img/conference1.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! tip "Conference calls for external callers"
     Only customers internal to ConnexCS can use the standard Conference configuration.

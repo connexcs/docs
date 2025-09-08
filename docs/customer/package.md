@@ -30,7 +30,7 @@ Packages allow customers to define  recurring charges, including spend limits an
 
 2. Click **`Save`**.
 
-&emsp; ![alt text][customer-packages]
+<img src= "/customer/img/customer-packages1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! info "Managing Packages"
     You can create and manage **Packages** in **Setup :material-menu-right: Config :material-menu-right: Packages**. See **[Packages](https://docs.connexcs.com/setup/config/packages/)** for more information.
@@ -44,7 +44,7 @@ Packages allow customers to define  recurring charges, including spend limits an
 3. You may enter the **Destination**. Its an optional field.
 4. Click on `Save` to build your package.
 
-<img src= "/customer/img/free1.png">
+<img src= "/customer/img/free1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 #### Assign Free Minutes Package
 
@@ -54,7 +54,7 @@ Packages allow customers to define  recurring charges, including spend limits an
 4. Enter the number of free minutes to be allocated to the customer.
 5. Click on `Save`.
 
-<img src= "/customer/img/free2.png"> 
+<img src= "/customer/img/free2.png" style="border: 2px solid #4472C4; border-radius: 8px;"> 
 
 ## Run Package
 
@@ -64,6 +64,5 @@ It allows you to simulate making a charge against the package:
 2. **Simulate:** You can select `yes` (it will generate a report) if you want to the run the package or `no` (it will again charge for the package).
 3. **Date:** You can select the date on which you want to simulate the package.
 
-![runpackage](/misc/img/runpackage.jpg)
+<img src= "/misc/img/runpackage.jpg" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-[customer-packages]: /customer/img/customer-packages.png "Customer Packages"

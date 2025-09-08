@@ -13,7 +13,7 @@ With 4.6 billion robocalls a month in the U.S. alone, this activity impacts ever
 To address this issue, the U.S. FCC (Federal Communications Commission) has mandated to block the calls that aren't registered with a tracking database.
 
 !!! note "Legitimate vs. Illegal Robocalls"
-          Robocalling isn't considered illegal or necessarily bad.
+    Robocalling isn't considered illegal or necessarily bad.
 
 Legitimate examples of a robocall would be from:
     + Telephone campaigns (telemarketing or political)
@@ -228,4 +228,4 @@ ConnexCS will perform:
 
 Presently, we're researching an effective solution.
 
-[pa]: /misc/img/trust-triangle.png "Trust Triangle"
+[pa]: /misc/img/trust-triangle.png "Trust Triangle" style="border: 2px solid #4472C4; border-radius: 8px;"

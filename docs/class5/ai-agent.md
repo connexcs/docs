@@ -68,8 +68,21 @@ With AI-driven automation, businesses can enhance customer experience while sign
     + **Transcriber**: Select single or multiple transcriber for converting audio to text. You can select the transcriber depending on the selected platform.
     + **Answer Machine Detection Keywords**: If the AI Agent detects a phrase (any phrase entered by the user) like "Please leave a message" at the start of the call, it will automatically disconnect.
     + **Transcriber Language**: The spoken language the AI Agent listens for when converting speech into text.
+    + **Answer Machine Detection Keywords**: If the AI Agent detects a phrase (any phrase entered by the user) like "Please leave a message" at the start of the call, it will automatically disconnect. **Enter multiple keywords, each on a new line (*use Enter to separate*)**. 
     + **Transcriber Timeout**: It defines the maximum time the system waits for a response during speech-to-text transcription before terminating the process. If no speech is detected within this period, the transcriber stops listening and times out. On timeout `<SILENT_TIMEOUT>` will be sent to the LLM.
-    + **Transcriber Silence Threshold (sec)**: Defines the maximum duration (in seconds) the system will wait for a response from the ASR (Automatic Speech Recognition) engine. If no transcription is received within this threshold, the transcriber will stop waiting and proceed accordingly. 
+    + **Transcriber Silence Threshold (sec)**: Defines the maximum duration (in seconds) the system will wait for a response from the ASR (Automatic Speech Recognition) engine. If no transcription is received within this threshold, the transcriber will stop waiting and proceed accordingly.
+    
+    + **End Turn Threshold**: A sidecar classifier that detects the probability the user has finished speaking.
+        + When the classifier gives a **low value**, it means the system thinks the person is still speaking — maybe just taking a **short pause**.
+        + A **high value** means the system thinks the person has **finished talking**.
+
+    |Value|Description|
+    |-----|-----------|
+    |0|Will never evaluate, will always assume end of speech
+    |0.1|Mainly assume that the speech has ended|
+    |0.9|main assume that the speech will continue|
+    |1|Always Assume that there is more speech to come|
+
     + Click `Save`.
       <img src= "/class5/img/trans1234.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
@@ -89,6 +102,7 @@ With AI-driven automation, businesses can enhance customer experience while sign
         + **Hangup**: Use this flag to terminate the call. You can include a prompt such as, "When call ended, hangup.
         + **Set Variable**: Set variables locally. For example, in a prompt, you could ask, "What's your name?" and save the response to the variable `name`.
         + **Transfer**: Allows transfering calls to another agent.
+        + **Search Knowledge Base**: Allows the AI to query indexed documents in the Knowledge Base and return relevant information in response to a user's question. 
     + **Tool Call Allow List**: Select from a list of `functions` available in Apps in IDE. 
     + **Guard Rails**: Choose from multiple Guard Rails options to define constraints for your AI Agent.
     + **Flags**: Select from various flags:
@@ -110,10 +124,12 @@ With AI-driven automation, businesses can enhance customer experience while sign
     
     + **First Task**: Select the list of pre-created tasks, so that your AI will perform this task as the first task and rest prompts after this task. [Click here](https://bani-aiagenttask--connexcs-docs.netlify.app/class5/ai-agent/#task) to know more about tasks.
     
+    + **Knowledge Base**: Allows you to select which indexed documents an AI Agent can reference when answering user queries. 
+    
     + **Vars**<sup>TOML</sup>:  Select the variables you want pass into the ScriptForge script.
     
     + Click `Save`.
-        <img src= "/class5/img/aiagent7new1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+        <img src= "/class5/img/aiagent7new17new.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Example "Example Prompt"
     **Introduction:**  
@@ -392,6 +408,18 @@ To grant access to functions for an AI agent, follow these steps:
 5. **Allow Function Access**:
       1. Navigate to **Advanced** tab (in AI Agent), then select the created function in the **Tool Call Allow List** and grant access from the list.
 
+!!! Example "Example Function"
+    ```js linenums="1"
+    /**
+    * Transfer
+    * @param {Object} param - Param Object
+    * @param {string} param.name - The name of the person who you wish to transfer the call to.
+    */
+    function transfer() {
+    return { action: 'transfer', destination: '160' }
+    }
+    ```
+
 Following these steps ensures that the AI agent has the necessary permissions to interact with the designated function.
 
 !!! Example "Example Script"
@@ -480,3 +508,24 @@ Our AI Agent comes equipped with robust reseller capabilities. For instance, if 
     6. Then Navigate to **Management :material-menu-right: Customer :material-menu-right: Customer [Name] :material-menu-right: Packages**. Click on the blue `+` sign.
     7. Select the **Package** (`Test123` in this example), **Quantity**, **Start Date**, always enable **Auto Decrement Credit**.
     8. Click `Save`. <img src= "/class5/img/aiagent9.png">
+
+## Integrating Knowledge Base into Your AI Agent
+
+1. [Create your AI Agent](https://docs.connexcs.com/class5/ai-agent/#steps-to-create-ai-agent).
+2. A few more adjustments are needed:
+      1. Select `Search Knowledge Base` from the `Built-in Functions` option
+      2. Select your `Knowlegde Base` from the `Knowledge Base` drop-down.
+3. Click `Save`.
+
+<img src= "/class5/img/aiagent10.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+<img src= "/class5/img/aiagent11.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+!!! Info "Info"
+    For the most accurate and helpful results from the integrated knowledge base, try phrasing your prompt like this:
+    ```js
+    Instructions 
+    You can call the knowledge base only when you are required to and search for info that you require only 
+    Only do one 1 lookup per human interaction.
+    Keep your replies short
+    ```

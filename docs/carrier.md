@@ -20,7 +20,7 @@ Use the **Carrier** section in **ConnexCS** for simplified Carrier management wh
 !!! Tip "Key Considerations"
     The system doesn't display the "Auto-generate invoice" option in this section.
 
-<img src= "/carrier/img/carriermain.png">
+<img src= "/carrier/img/carriermain.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Carrier Functions
 
@@ -47,7 +47,7 @@ From the **Carriers** page, you can perform several management operations.
     + Write the Body of the referral.
     + Click on `Send`.
   
-<img src= "/carrier/img/carrier_referral.png">
+<img src= "/carrier/img/carrier_referral.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 + **Active**: Used to sort Carriers based on the selected status. Results on the page will automatically arrange themselves according to the filter.
 
@@ -104,7 +104,7 @@ From the **Carriers** page, you can perform several management operations.
 
     * **PayPal Email:** Enter the PayPal e-mail associated with the carrier's account.
     * **Website:** Add the carrier's official website.
-    * **P-Asserted-ID:** Considered a network level identifier, you can select how calls to the provider is handled based on the PA-ID:
+    * **P-Asserted-ID:** Consider a network level identifier, you can select how calls to the provider is handled based on the PA-ID:
     
         :material-menu-right: `Default`: Call passed to the provider (no manipulation).
         
@@ -145,8 +145,8 @@ From the **Carriers** page, you can perform several management operations.
 
 To ensure compatibility, set the switch manufacturer to `bandwidth.com`.
 
-[carriers-main]: /carrier/img/carriers-main.png "Carriers"
-[carrier]: /carrier/img/carrier.png "Carrier Main"
+[carriers-main]: /carrier/img/carriers-main.png "Carriers" style="border: 2px solid #4472C4; border-radius: 8px;"
+[carrier]: /carrier/img/carrier.png "Carrier Main" style="border: 2px solid #4472C4; border-radius: 8px;"
 
 ## Headers from Customers to Providers
 
@@ -176,8 +176,4 @@ remove_regex="^X-.*"
 !!! Danger Note
     Please note you can use the regex pattern according to your requirement.
 
-<img src= "/carrier/img/regex.png">
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwMTM2NjQxM119
--->
+<img src= "/carrier/img/regex.png" style="border: 2px solid #4472C4; border-radius: 8px;">
