@@ -288,7 +288,6 @@ You can access and view background jobs running through Script Forge.
 <img src="/apps/img/queuejs.png" 
      alt="QueueJS Diagram" 
      style="width: 100%; 
-            max-width: 400px; 
             border: 2px solid #4472C4; 
             border-radius: 8px; 
             padding: 12px; 
