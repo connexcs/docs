@@ -27,8 +27,11 @@ The report consists the following key fields:
 
 !!! question "When to Use?"
     Use this report to:
+
     1. Monitor the quality of individual routes within a carrier.
+    
     2. Compare ASR performance across multiple routes.
+    
     3. Identify and prioritize routes that deliver the best call completion rates.
 
 ## Steps to Generate Custom Reports
