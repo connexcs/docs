@@ -26,8 +26,6 @@ The report consists the following key fields:
 4. **ACD (Average Call Duration)** indicates the average length of successfully answered calls on a route. It helps evaluate the quality of the call experience.
 
 !!! question "When to Use?"
-    Use this report to:
-
     1. Monitor the quality of individual routes within a carrier.
     
     2. Compare ASR performance across multiple routes.
