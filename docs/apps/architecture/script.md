@@ -14,10 +14,6 @@ A fair-usage policy applies, and if there is unnecessary resource use or if ther
 
 It's designed to work as **FaaS** (Functions as a Service), and our redundant infrastructure handles your application's auto scaling needs.
 
-## Developer Documentation
-
-ConnexCS offers several libraries specifically for use with ConnexCS. [**Developer API Documentation is available here**](https://page-builder-api-docs.connexcs.com/).
-
 ### Available Modules
 
 You can include some more modules (from npm), available for applications and drivers only.
