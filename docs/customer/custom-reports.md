@@ -8,9 +8,9 @@ The **Custom Reports** section provides advanced reporting options for analyzing
 
 These reports go beyond standard CDRs, giving you targeted insights into areas such as DTMF input, Rate Center distribution, and Technical Routing Prefixes.
 
-### Types of Reports
+## Types of Reports
 
-A. **DTMF Report**
+### DTMF Report
 
 It tracks DTMF (keypad input) signals sent during calls.
 
@@ -28,7 +28,7 @@ The report includes the following key fields:
 
 + **dtmf_count**:Counts the number of calls where DTMF tones were detected.
 
-B. **USA Rate Center Report**
+### USA Rate Center Report
 
 The USA Rate Center Report breaks down call activity based on the originating or terminating rate centers within the United States.
 
@@ -48,9 +48,9 @@ The report includes the following key fields:
 
 This report helps compare **Customer Charges** and **Provider Costs** at a regional level, ensuring accurate billing and visibility into traffic distribution.
 
-<img src="customrep1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src="/customer/img/customrep1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-C. **DID As CLI**
+### DID As CLI
 
 The DID as CLI Report displays all DIDs in the system that have been used as Caller Line Identification (CLI) within a specified month.
 
@@ -62,9 +62,9 @@ The report includes the following key fields:
 
 + **Count(0)**: It represents the total number of times each DID (shown in `Dest_cli`) was used as a CLI within the selected reporting period. It counts the occurrences of calls where that DID appeared as the caller ID.
 
-<img src="customrep2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src="/customer/img/customrep2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-D. **Group By Tech Prefix**:
+### Group By Tech Prefix
 
 The Group by Tech Prefix Report provides a breakdown of call statistics based on routing technical prefixes.
 
@@ -93,7 +93,7 @@ The report includes the following fields:
 
 + **Total**: The total number of call attempts made through the prefix (answered + unanswered).
 
-<img src="customrep3.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src="/customer/img/customrep3.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 |**Report Type**|**Purpose**|**Use Case**|
 | --------------|-----------|-------------|
@@ -109,4 +109,4 @@ The report includes the following fields:
 3. Use the report selector to choose the desired report type, then click **Generate Report** to create it.
 4. Use the date selector to define the specific date range for which the report should be generated.
 
-<img src="customrep4.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src="/customer/img/customrep4.png" style="border: 2px solid #4472C4; border-radius: 8px;">

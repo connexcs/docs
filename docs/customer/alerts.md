@@ -51,7 +51,7 @@ Since the threshold represents the most numeric traits related to VoIP, it can f
 
 To add a customized alert, click :material-plus:.
 
-<img src= "/customer/customeralert.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/customer/img/customeralert.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 Field details:
 
