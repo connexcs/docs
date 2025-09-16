@@ -285,4 +285,11 @@ You can access and view background jobs running through Script Forge.
 1. You can view the jobs under Global :material-menu-right: Queue. <img src= "/apps/img/job1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 2. Click on the job `Name`  to view the status.
 
-<img src="/apps/img/queuejs.png" alt="QueueJS Diagram" style="width: 100%; max-width: 400px; border: 2px solid #4472C4; border-radius: 8px;" />
+<img src="/apps/img/queuejs.png" 
+     alt="QueueJS Diagram" 
+     style="width: 100%; 
+            max-width: 400px; 
+            border: 2px solid #4472C4; 
+            border-radius: 8px; 
+            padding: 12px; 
+            background-color: #fff;" />
