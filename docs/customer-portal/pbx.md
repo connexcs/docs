@@ -1,4 +1,5 @@
 # Private Branch Exchange (PBX)
+
 In **PBX**, you will find several useful features to help manage calls and interactions.
 
 ## Conference
@@ -32,15 +33,15 @@ Click on the existing Conference name to edit the following fields:
 
     ![alt text][conference]
 
-Click **`Save`** to retain thew new settings. 
+Click **`Save`** to retain thew new settings.
 
 !!! tip "Conference calls for external callers"
-    Only internal callers can use the above mentioned standard Conference configuration. To allow external numbers to dial into the conference, setup a [**Customer DID**](/customer-portal/did/) and set the Destination to Internal, and then select the available pre-configured conference. 
+    Only internal callers can use the above mentioned standard Conference configuration. To allow external numbers to dial into the conference, setup a [**Customer DID**](/customer-portal/did/) and set the Destination to Internal, and then select the available pre-configured conference.
 
 *(DID: Direct Inward Dialing)
 
 ### Conference Call keypad options
-Callers can use the keypad to control the audio on the conference call. 
+Callers can use the keypad to control the audio on the conference call.
 
 |Key|Result|Description|
 |-------|------|------|

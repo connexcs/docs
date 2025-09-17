@@ -7,7 +7,7 @@ The **Portal** lets you add domains and sub-domains to the Control Panel, which 
 You can provide several domains for your customers through different brands, and each domain can have different permissions, currencies, default, etc.
 
 !!! Note "Deployment"
-    Customers are instructed to point a CNAME record to portal.connectcs.com; secure certificates are deployed automatically upon configuration.
+    Customers are instructed to point a CNAME record to portal.connexcs.com; secure certificates are deployed automatically upon configuration.
 
 ## Portal Setup
 
