@@ -76,6 +76,7 @@ nav:
         - Payment: customer/payment.md
         - Stats: customer/stats.md
         - Route Stats: customer/route-stats.md
+        - Custom Reports: customer/custom-reports.md
         - Latest Calls: customer/latest-calls.md
         - Dialogs: customer/dialogs.md
         - Alerts: customer/alerts.md
@@ -98,6 +99,7 @@ nav:
         - Latest Calls: carrier/carrier-latest-calls.md
         - Payment: carrier/carrier-payment.md
         - Stats: carrier/carrier-stats.md
+        - Custom Reports: carrier/carrier-custom-reports.md
         - Alerts: carrier/carrier-alerts.md
         - DID: carrier/carrier-did.md
         - DID Inventory: carrier/carrier-did-inventory.md
