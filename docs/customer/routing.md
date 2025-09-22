@@ -57,102 +57,33 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 
 + **Tech Prefix**: This lets you distinguish a route from an inbound party.
   When several customers share the same IP address, each customer needs an individual Tech Prefix so the switch can route calls correctly.
-  It enables service providers to differentiate between several rate cards.
+  It enables service providers to differentiate between several rate cards. You also have an option to generate a random number in one click.
 + **Dial String Prefix Set**: Helpful for commonly used sets of prefixes. Rather than entering a complete list of prefixes for the UK, for example, you can create a predefined Prefix Set (defined under **Setup :material-menu-right: Advanced :material-menu-right:** [**Prefix Set**](/setup/advanced/prefix-set/)) and then select it here for appropriate customers.
 + **Dial String**: Only allows a dialled number to pass through if it matches the defined dial string (or "dial pattern"). (If you customer enters nothing, it matches everything and attempts to send all calls).
 
 + **Enabled**: You can enable and [disable](https://docs.connexcs.com/customer/routing/#disabled-routes) the routes here.
 
-### Price Limits
+<img src= "/customer/img/rbasic.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-+ **Capped Rate** and **Provider Capped Rate**: Set the maximum cost of a call. Calls that exceed the set rate won't get connected.
-  **For example**, for customers with flat rate accounts, which allows to dial all UK numbers but premium numbers, you would set the Provider Capped Rate at 0.01, so any call that the provider might charge over that amount wouldn't get completed.
+### Advanced
 
-+ **Profit Assurance**: When `Enabled`, only calls that are profitable pass-through; any call that costs more than the retail rate aren't allowed to complete. This is particularly useful for A-Z routes or NPA-NXX [rate cards](https://docs.connexcs.com/rate-card-building/).
-  
-!!! Tip "When Profit Assurance Fails to Operate"
-    **A. Profit Assurance may appear to fail, often due to:**
-
-    1.**Incorrect Billing Configurations**:
-    
-    Billing increments (e.g., 6/6, 30/6, or 60/60) play a significant role in profitability. A mismatch between the billing increments of your carrier and customer rates can lead to unexpected losses.
-    
-    **For example**:
-        If you buy at 30/6 and sell at 6/6, you lose money on shorter-duration calls because of rounding discrepancies.
-    
-    2.**Profit Assurance Enabled but Losses Persist**:
-    
-    Even with Profit Assurance enabled, losses may occur due to:
-    
-    * Specific call durations where rounding favors the carrier.
-    
-    3.**Misunderstanding Call Connection Logic**:
-    
-    Profit Assurance does not retroactively check call profitability during ongoing calls. If the buy rate is temporarily higher than the sell rate due to duration or rounding, calls may still connect.
-
-+ **Block Connect Cost**: Block any call that has a connection fee.
-
-+ **FTC DNC Report ANI Block (USA)**: When `Enabled`, ConnexCS will take a copy of FTC data (using the [FCC's **Do Not Call (DNC) Reported Calls Data API**](https://www.ftc.gov/developer/api/v0/endpoints/do-not-call-dnc-reported-calls-data-api)) and add it to the system. We can then block callers from known spammer CLI / ANI's.
-
-+ **DNO**: [Click here](https://docs.connexcs.com/dnc/#do-not-originate-dno-list-blocking) to know more about it.
-
-+ **Stir Shaken Min Attest**: It enables the selection of STIR/SHAKEN attestation levels for validating incoming calls. Users can configure the system to permit only calls that meet specific attestation standards. The available validation levels are as follows:
-    + **A**: Permits only calls with attestation level A, the highest level of trust. Calls with attestation levels B or C will be blocked.
-    + **A + B**: Restricts incoming calls to only those with attestation levels A or B. Calls with attestation level C will be blocked.
-    + **A + B + C**: Allows calls with any attestation level (A, B, or C) to pass through.
-
-!!! Note
-    In all cases, calls without attestation will also be blocked.  
-
-### Capacity Limits
-
-+ **Channels**: Set the maximum number of channels/live calls allowed for this route.
-
-+ **Max Duration**: Set the maximum amount of time (in seconds) that the call gets to exist before getting terminated, typically for the case of a missed `BYE`.
-
-!!! info "Call Timeouts"
-    A VoIP call is stateful, even though its protocol is stateless. This means that both the sides should be informed on finishing of the call. They do this with a BYE message. If the BYE message goes missing, the call will continue forever.
-
-    **Max Duration** is a method for setting up **Missing BYE Protection**. Another approach is to use a **SIP Ping** to determine when the connection has timed out. This sends a SIP packet to the remote end of the conversation every 30 seconds. This checks to see if the other side is still aware of an ongoing conversation. If it does'nt receive a response or informed that the conversation is not active, it disconnects the call.
-    
-    **RTP Time-out:** This is another way to check for an active call based on whether audio is passing. If there is no audio passing for a pre-set interval, our Real-time Transport Protocol (RTP) array will notify the switch and instruct it to end the call. This won't work if RTP Mode is set to direct.
-
-!!! warning "Asterisk pings"
-    Asterisk doesn't have SIP Ping (OPTIONS) enabled by default. If your customer / carrier is using Asterisk, you may need to disable this if they don't have it enabled on their side, as calls will typically disconnect after 30 seconds.
-
-+ **Flow Speed (CPS)**: Limits the calls per second. You should set this for each customer card assigned to the customer account.
-
-+ **CPS Spike Buffer**: Limit a spike of calls by spreading them over a longer period of time. This essentially manages a large volume of calls over a short period of time.
-  Once the buffer limit reaches its threshold, the calls per second kicks in, distributing the spike of calls.
-
-+ **ASR Plus** assists capacity management by helping you define how to handle connections for known failed numbers. For information on the ASR Plus options, see [**ASR Plus Details**](https://docs.connexcs.com/customer/routing/#answer-seizure-ratio-plus-details) below.
-
-+ **Balance Disconnect** this feature checks the balance every 60 seconds. It will disconnect the call when the **balance plus the debit limit** is below $0.
-
-!!! note
-    Balance Disconnect only takes into account the **completed calls**; it excludes any **active calls**.
-
-### ScriptForge
-
-+ **ScriptForge**: Set a custom JavaScript to run from within the ConnexCS platform in-line with the call. Some example operations could be checking a Do Not Call list or forcing a CLI.
-  It allows running JavaScript scripts inline with call processing, enabling real-time modifications and checks.
-
-  For more information about setup and operation, see the [**ScriptForge**](https://docs.connexcs.com/developers/scriptforge/) page.
-
-#### Key Features and Benefits
-
-+ **Custom Call Handling**: Modify CLI, check block lists, enforce specific caller IDs, or track call frequencies.
-+ **Integration with Data Storage**: Uses TOML for configuration and variable storage.
-+ **Carrier-Level Routing Controls**: Includes include (whitelist) and exclude (blacklist) carrier options.
-+ **Timeout Settings**: Defines the duration a script is allowed to run before termination.
-+ **Timeout**: Set how long the script may run.
-+ **Timeout Action**: This option lets you decide the action when the timeout occurs.
-+ **VARS [(TOML)](https://en.wikipedia.org/wiki/TOML)**: Select the variables you want pass into the ScriptForge script.
-
-### Locks
-
++ **On Net Call Routing**: Enabling this flag determines if a call should be routed internally  between customers to DID's.
 + **Lock** (Allow): Ensures calls are only routed through specified carriers.
 + **Exclude** (Deny): Exclude access to one or more rate cards in the list of available providers.
+
+<img src= "/customer/img/radvanced.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+### Security & Controls
+
++ **Fraud Profile**: Apply one of the Fraud Profiles configured under **Setup :material-menu-right: Advanced :material-menu-right: [Fraud Profile](https://docs.connexcs.com/setup/advanced/fraud/#setup-fraud-detection)**.
++ **Fraud Mode**: Specify how the profile will gets into application, this is dependent on the [**Fraud Mode Thresholds**](https://docs.connexcs.com/setup/advanced/fraud/#fraud-mode) configured in the Profile.
+
+    :material-menu-right: `Disabled`
+
+    :material-menu-right: `Low - Alert or Block Calls`
+
+    :material-menu-right: `High - Block Calls or Account`
+
 + **Redial Max Count**: This a smart limitation feature that allows the carrier to restrict the maximum number of times their customers can redial. After reaching this limit, customers must wait for a certain amount of time defined by the **Redial Max Period**. For example, you select 5 for this field, it means your customer can dial only 5 times.
 + **Redial Max Period**: It refers to the duration of time during which a customer is restricted from making further redial attempts to the same number after reaching the maximum redial count.
 + **DNC (Do Not Call) List**: The customer won't be able to able to dial the numbers in the specified DNC list. You can add the list of numbers in the [**Database**](https://docs.connexcs.com/developers/database/).
@@ -191,9 +122,109 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 
 !!! Note "We don't charge you again if you repeat your lookup within 24-hours of time-span."
 
++ **FTC DNC Report ANI Block (USA)**: When `Enabled`, ConnexCS will take a copy of FTC data (using the [FCC's **Do Not Call (DNC) Reported Calls Data API**](https://www.ftc.gov/developer/api/v0/endpoints/do-not-call-dnc-reported-calls-data-api)) and add it to the system. We can then block callers from known spammer CLI / ANI's.
+
++ **DNO**: [Click here](https://docs.connexcs.com/dnc/#do-not-originate-dno-list-blocking) to know more about it.
+
++ **Stir Shaken Min Attest**: It enables the selection of STIR/SHAKEN attestation levels for validating incoming calls. Users can configure the system to permit only calls that meet specific attestation standards. The available validation levels are as follows:
+    + **A**: Permits only calls with attestation level A, the highest level of trust. Calls with attestation levels B or C will be blocked.
+    + **A + B**: Restricts incoming calls to only those with attestation levels A or B. Calls with attestation level C will be blocked.
+    + **A + B + C**: Allows calls with any attestation level (A, B, or C) to pass through.
+
+!!! Note
+    In all cases, calls without attestation will also be blocked.
+
++ **TCPA  Litigator DNC**: Enabling this flag blocks outbound calls to known TCPA Litigators.
+
+### Capacity & Quality Control
+
++ **Channels**: Set the maximum number of channels/live calls allowed for this route.
+
++ **Max Duration**: Set the maximum amount of time (in seconds) that the call gets to exist before getting terminated, typically for the case of a missed `BYE`.
+
+!!! info "Call Timeouts"
+    A VoIP call is stateful, even though its protocol is stateless. This means that both the sides should be informed on finishing of the call. They do this with a BYE message. If the BYE message goes missing, the call will continue forever.
+
+    **Max Duration** is a method for setting up **Missing BYE Protection**. Another approach is to use a **SIP Ping** to determine when the connection has timed out. This sends a SIP packet to the remote end of the conversation every 30 seconds. This checks to see if the other side is still aware of an ongoing conversation. If it does'nt receive a response or informed that the conversation is not active, it disconnects the call.
+    
+    **RTP Time-out:** This is another way to check for an active call based on whether audio is passing. If there is no audio passing for a pre-set interval, our Real-time Transport Protocol (RTP) array will notify the switch and instruct it to end the call. This won't work if RTP Mode is set to direct.
+
+!!! warning "Asterisk pings"
+    Asterisk doesn't have SIP Ping (OPTIONS) enabled by default. If your customer / carrier is using Asterisk, you may need to disable this if they don't have it enabled on their side, as calls will typically disconnect after 30 seconds.
+
++ **Flow Speed (CPS)**: Limits the calls per second. You should set this for each customer card assigned to the customer account.
+
++ **CPS Spike Buffer**: Limit a spike of calls by spreading them over a longer period of time. This essentially manages a large volume of calls over a short period of time.
+  Once the buffer limit reaches its threshold, the calls per second kicks in, distributing the spike of calls.
+
++ **ASR Plus** assists capacity management by helping you define how to handle connections for known failed numbers. For information on the ASR Plus options, see [**ASR Plus Details**](https://docs.connexcs.com/customer/routing/#answer-seizure-ratio-plus-details) below.
+
+<img src= "/customer/img/rcapacity.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+### Price Limits
+
++ **Capped Rate** and **Provider Capped Rate**: Set the maximum cost of a call. Calls that exceed the set rate won't get connected.
+  **For example**, for customers with flat rate accounts, which allows to dial all UK numbers but premium numbers, you would set the Provider Capped Rate at 0.01, so any call that the provider might charge over that amount wouldn't get completed.
+
++ **Profit Assurance**: When `Enabled`, only calls that are profitable pass-through; any call that costs more than the retail rate aren't allowed to complete. This is particularly useful for A-Z routes or NPA-NXX [rate cards](https://docs.connexcs.com/rate-card-building/).
+  
+!!! Tip "When Profit Assurance Fails to Operate"
+    **A. Profit Assurance may appear to fail, often due to:**
+
+    1.**Incorrect Billing Configurations**:
+    
+    Billing increments (e.g., 6/6, 30/6, or 60/60) play a significant role in profitability. A mismatch between the billing increments of your carrier and customer rates can lead to unexpected losses.
+    
+    **For example**:
+        If you buy at 30/6 and sell at 6/6, you lose money on shorter-duration calls because of rounding discrepancies.
+    
+    2.**Profit Assurance Enabled but Losses Persist**:
+    
+    Even with Profit Assurance enabled, losses may occur due to:
+    
+    * Specific call durations where rounding favors the carrier.
+    
+    3.**Misunderstanding Call Connection Logic**:
+    
+    Profit Assurance does not retroactively check call profitability during ongoing calls. If the buy rate is temporarily higher than the sell rate due to duration or rounding, calls may still connect.
+
++ **Block Connect Cost**: Block any call that has a connection fee.  
+
+### Capacity Limits
+
+
+
++ **Balance Disconnect** this feature checks the balance every 60 seconds. It will disconnect the call when the **balance plus the debit limit** is below $0.
+
+!!! note
+    Balance Disconnect only takes into account the **completed calls**; it excludes any **active calls**.
+
+### ScriptForge
+
++ **ScriptForge**: Set a custom JavaScript to run from within the ConnexCS platform in-line with the call. Some example operations could be checking a Do Not Call list or forcing a CLI.
+  It allows running JavaScript scripts inline with call processing, enabling real-time modifications and checks.
+
+  For more information about setup and operation, see the [**ScriptForge**](https://docs.connexcs.com/developers/scriptforge/) page.
+
+#### Key Features and Benefits
+
++ **Custom Call Handling**: Modify CLI, check block lists, enforce specific caller IDs, or track call frequencies.
++ **Integration with Data Storage**: Uses TOML for configuration and variable storage.
++ **Carrier-Level Routing Controls**: Includes include (whitelist) and exclude (blacklist) carrier options.
++ **Timeout Settings**: Defines the duration a script is allowed to run before termination.
++ **Timeout**: Set how long the script may run.
++ **Timeout Action**: This option lets you decide the action when the timeout occurs.
++ **VARS [(TOML)](https://en.wikipedia.org/wiki/TOML)**: Select the variables you want pass into the ScriptForge script.
+
+### Locks
+
++ **Lock** (Allow): Ensures calls are only routed through specified carriers.
++ **Exclude** (Deny): Exclude access to one or more rate cards in the list of available providers.
+
+
 **Flags**:
 
-  + **TCPA  Litigator DNC**: Enabling this flag blocks outbound calls to known TCPA Litigators.
+
 
   + **On Net Call Routing**: Enabling this flag determines if a call should be routed internally  between customers to DID's.
 
@@ -379,17 +410,6 @@ For advanced routing, click :material-plus: to select a [**Prefix Set**](https:/
 
 + **Public Notes**: Notes entered here get displayed on the Customer Portal when logged in.
 + **Private Notes**: These will get displayed to the customer in the Control Panel.
-
-### Fraud
-
-+ **Fraud Profile**: Apply one of the Fraud Profiles configured under **Setup :material-menu-right: Advanced :material-menu-right: [Fraud Profile](https://docs.connexcs.com/setup/advanced/fraud/#setup-fraud-detection)**.
-+ **Fraud Mode**: Specify how the profile will gets into application, this is dependent on the [**Fraud Mode Thresholds**](https://docs.connexcs.com/setup/advanced/fraud/#fraud-mode) configured in the Profile.
-
-    :material-menu-right: `Disabled`
-
-    :material-menu-right: `Low - Alert or Block Calls`
-
-    :material-menu-right: `High - Block Calls or Account`
 
 ## Disabled Routes
 
