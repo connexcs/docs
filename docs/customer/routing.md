@@ -71,6 +71,14 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 + **Lock** (Allow): Ensures calls are only routed through specified carriers.
 + **Exclude** (Deny): Exclude access to one or more rate cards in the list of available providers.
 
+!!! Info "Call Routing Process"
+    ```mermaid
+        graph LR
+        A[Customer A makes a call using the route with the ON NET CALLING flag] --> B{Syatem checks the dialed number and compares it against DIDs added to the account across all customers}
+        B -- Yes: If the dialed number matches any DID in the account--> C{Route call internally to the matching DID}
+        B -- No: If the dialed number doesnt match any DID in the account--> D{Route call externally via carrier as configured}
+    ```
+
 <img src= "/customer/img/radvanced.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ### Security & Controls
@@ -86,17 +94,6 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 
 + **Redial Max Count**: This a smart limitation feature that allows the carrier to restrict the maximum number of times their customers can redial. After reaching this limit, customers must wait for a certain amount of time defined by the **Redial Max Period**. For example, you select 5 for this field, it means your customer can dial only 5 times.
 + **Redial Max Period**: It refers to the duration of time during which a customer is restricted from making further redial attempts to the same number after reaching the maximum redial count.
-+ **DNC (Do Not Call) List**: The customer won't be able to able to dial the numbers in the specified DNC list. You can add the list of numbers in the [**Database**](https://docs.connexcs.com/developers/database/).
-
-    Apart from your own DNC list you can also choose [**United States Federal DNC**](https://www.donotcall.gov/). Choosing not to accept telemarketing calls is possible because of the National Do Not Call Registry.
-
-+ **Block Destination Type**: You can select and block the calls to various destinations (carriers) like Mobile, Fixed, Paging, etc.
-
-+ **Spam Scout Scoring**: It blocks Spam calls based on the CLIs.
-  You can either Block All, Allow All, Block Most Spam, or Block Least Spam.
-
-!!! tip "Exclude Use Case"
-    If a customer reports an issue with a carrier or route, you can come here and set the carrier / route to Exclude and **`Save`**, then come back and remove it, and do a **`Delay and Save`** for a later date.
 
 !!! Example "Example: Redial Max Count and Redial Max Period"
     For example, if you have set Redial Max Count (maximum redials in a given time period) as 4 and Redial Max Period as 24 hours for your customer, then your customer can **resume redialling after 24 hours after the last call "starts"/last call was placed**.
@@ -110,6 +107,18 @@ View and configure existing routes on the Routing tab in the Customer card. To c
     |Redial number 4|08:00 PM|
 
     The last(4<sup>th</sup> call) redial call was placed at 08:00 PM, so the customer can start redialing at 08:00 PM the next day.
+
++ **DNC (Do Not Call) List**: The customer won't be able to able to dial the numbers in the specified DNC list. You can add the list of numbers in the [**Database**](https://docs.connexcs.com/developers/database/).
+
+    Apart from your own DNC list you can also choose [**United States Federal DNC**](https://www.donotcall.gov/). Choosing not to accept telemarketing calls is possible because of the National Do Not Call Registry.
+
++ **Block Destination Type**: You can select and block the calls to various destinations (carriers) like Mobile, Fixed, Paging, etc.
+
++ **Spam Scout Scoring**: It blocks Spam calls based on the CLIs.
+  You can either Block All, Allow All, Block Most Spam, or Block Least Spam.
+
+!!! tip "Exclude Use Case"
+    If a customer reports an issue with a carrier or route, you can come here and set the carrier / route to Exclude and **`Save`**, then come back and remove it, and do a **`Delay and Save`** for a later date.
 
  **IP Quality Score (IPQS)**: It blocks spam calls based on CLIs. It won't allow the CLIs of having a specific spam score that you've selected to pass through the system. For more information on IPQS, [click here](https://www.ipqualityscore.com/).
 
@@ -161,86 +170,9 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 
 <img src= "/customer/img/rcapacity.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-### Price Limits
+### Media & Session Control
 
-+ **Capped Rate** and **Provider Capped Rate**: Set the maximum cost of a call. Calls that exceed the set rate won't get connected.
-  **For example**, for customers with flat rate accounts, which allows to dial all UK numbers but premium numbers, you would set the Provider Capped Rate at 0.01, so any call that the provider might charge over that amount wouldn't get completed.
-
-+ **Profit Assurance**: When `Enabled`, only calls that are profitable pass-through; any call that costs more than the retail rate aren't allowed to complete. This is particularly useful for A-Z routes or NPA-NXX [rate cards](https://docs.connexcs.com/rate-card-building/).
-  
-!!! Tip "When Profit Assurance Fails to Operate"
-    **A. Profit Assurance may appear to fail, often due to:**
-
-    1.**Incorrect Billing Configurations**:
-    
-    Billing increments (e.g., 6/6, 30/6, or 60/60) play a significant role in profitability. A mismatch between the billing increments of your carrier and customer rates can lead to unexpected losses.
-    
-    **For example**:
-        If you buy at 30/6 and sell at 6/6, you lose money on shorter-duration calls because of rounding discrepancies.
-    
-    2.**Profit Assurance Enabled but Losses Persist**:
-    
-    Even with Profit Assurance enabled, losses may occur due to:
-    
-    * Specific call durations where rounding favors the carrier.
-    
-    3.**Misunderstanding Call Connection Logic**:
-    
-    Profit Assurance does not retroactively check call profitability during ongoing calls. If the buy rate is temporarily higher than the sell rate due to duration or rounding, calls may still connect.
-
-+ **Block Connect Cost**: Block any call that has a connection fee.  
-
-### Capacity Limits
-
-
-
-+ **Balance Disconnect** this feature checks the balance every 60 seconds. It will disconnect the call when the **balance plus the debit limit** is below $0.
-
-!!! note
-    Balance Disconnect only takes into account the **completed calls**; it excludes any **active calls**.
-
-### ScriptForge
-
-+ **ScriptForge**: Set a custom JavaScript to run from within the ConnexCS platform in-line with the call. Some example operations could be checking a Do Not Call list or forcing a CLI.
-  It allows running JavaScript scripts inline with call processing, enabling real-time modifications and checks.
-
-  For more information about setup and operation, see the [**ScriptForge**](https://docs.connexcs.com/developers/scriptforge/) page.
-
-#### Key Features and Benefits
-
-+ **Custom Call Handling**: Modify CLI, check block lists, enforce specific caller IDs, or track call frequencies.
-+ **Integration with Data Storage**: Uses TOML for configuration and variable storage.
-+ **Carrier-Level Routing Controls**: Includes include (whitelist) and exclude (blacklist) carrier options.
-+ **Timeout Settings**: Defines the duration a script is allowed to run before termination.
-+ **Timeout**: Set how long the script may run.
-+ **Timeout Action**: This option lets you decide the action when the timeout occurs.
-+ **VARS [(TOML)](https://en.wikipedia.org/wiki/TOML)**: Select the variables you want pass into the ScriptForge script.
-
-### Locks
-
-+ **Lock** (Allow): Ensures calls are only routed through specified carriers.
-+ **Exclude** (Deny): Exclude access to one or more rate cards in the list of available providers.
-
-
-**Flags**:
-
-
-
-  + **On Net Call Routing**: Enabling this flag determines if a call should be routed internally  between customers to DID's.
-
-<img src= "/customer/img/tcpa.png" style="border: 2px solid #4472C4; border-radius: 8px;">
-
-!!! Info "Call Routing Process"
-    ```mermaid
-        graph LR
-        A[Customer A makes a call using the route with the ON NET CALLING flag] --> B{Syatem checks the dialed number and compares it against DIDs added to the account across all customers}
-        B -- Yes: If the dialed number matches any DID in the account--> C{Route call internally to the matching DID}
-        B -- No: If the dialed number doesnt match any DID in the account--> D{Route call externally via carrier as configured}
-    ```
-
-### Media
-
-**Transcoding**: Transcoding manages different audio codecs to ensure compatibility between the calling and receiving systems.
++ **Transcoding**: Transcoding manages different audio codecs to ensure compatibility between the calling and receiving systems.
 
 Enter the number  of channels allowed for transcoding. This is a limited option. The best use case is for customers in low-bandwidth areas that want to use G.729.
 
@@ -323,7 +255,7 @@ Enter the number  of channels allowed for transcoding. This is a limited option.
 !!! info "RTP Proxy distinctions"
     When a call gets established between the customer and the provider, audio can be setup in one of two ways:
 |              |**With RTP Proxy**|**Without RTP Proxy**|
-|--------------|:------------------:|----------------------:|
+|--------------|:----------------:|--------------------:|
 |**Audio Path**|Indirect|Direct|
 |**Audio Quality**|Excellent|Unbeatable |
 |**Latency**|Low|Lowest|
@@ -367,13 +299,15 @@ Enter the number  of channels allowed for transcoding. This is a limited option.
 !!! tip "The Call Recording setting is disabled"
     You need to enable the feature first on the account in **Setup :material-menu-right: Settings :material-menu-right: [Packages](https://docs.connexcs.com/setup/settings/account/#packages)** before it gets enabled here for individual customers.
 
++ **Transcribe:** Its a voice to text conversion feature. [Click here](https://docs.connexcs.com/transcription/#introduction) to know more about this service.
+
 + **Block DTMF:** This option allows you to either `pass` or `block` DTMF through your calls.
 
 !!! note "Make sure your carrier supports the DTMF feature."
 
-+ **Flags (Active RTCP Generation)**: Enabling this feature generates RTCP packets, while disabling it allows them to pass through undisturbed.
++ **Generate RTCP**: Enabling this feature generates RTCP packets, while disabling it allows them to pass through undisturbed.
 
-+ **RTP Codec**: This fields allows you to have more specific control over the Codecs you choose for your system. After the selection you can assign various **Permissions** to the Codecs you select.
++ + **RTP Codec**: This fields allows you to have more specific control over the Codecs you choose for your system. After the selection you can assign various **Permissions** to the Codecs you select.
 
     + **Types of Permissions include**:
         + **Except**: This permission allows you to block all the codecs apart from the ones in the Whitelist. Codecs that weren't included in the carrier's initial codec list won't be taken into consideration.
@@ -402,14 +336,76 @@ Enter the number  of channels allowed for transcoding. This is a limited option.
 
     + **Ptime(ms)**: This value determines the length of time each box (RTP packet) can hold. A higher ptime means each packet carries a longer chunk of audio/video data (bigger box), while a lower ptime means shorter chunks (smaller boxes).
 
+<img src= "/customer/img/rmedia.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+### ScriptForge
+
++ **ScriptForge**: Set a custom JavaScript to run from within the ConnexCS platform in-line with the call. Some example operations could be checking a Do Not Call list or forcing a CLI.
+  It allows running JavaScript scripts inline with call processing, enabling real-time modifications and checks.
+
+  For more information about setup and operation, see the [**ScriptForge**](https://docs.connexcs.com/developers/scriptforge/) page.
+
++ **Timeout**: Set how long the script may run.
++ **Timeout Action**: This option lets you decide the action when the timeout occurs.
++ **VARS [(TOML)](https://en.wikipedia.org/wiki/TOML)**: Select the variables you want pass into the ScriptForge script.
+
+#### Key Features and Benefits
+
++ **Custom Call Handling**: Modify CLI, check block lists, enforce specific caller IDs, or track call frequencies.
++ **Integration with Data Storage**: Uses TOML for configuration and variable storage.
++ **Carrier-Level Routing Controls**: Includes include (whitelist) and exclude (blacklist) carrier options.
++ **Timeout Settings**: Defines the duration a script is allowed to run before termination.
+
+<img src= "/customer/img/rscript.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+### Price Management
+
++ **Capped Rate** and **Provider Capped Rate**: Set the maximum cost of a call. Calls that exceed the set rate won't get connected.
+  **For example**, for customers with flat rate accounts, which allows to dial all UK numbers but premium numbers, you would set the Provider Capped Rate at 0.01, so any call that the provider might charge over that amount wouldn't get completed.
+
++ **Profit Assurance**: When `Enabled`, only calls that are profitable pass-through; any call that costs more than the retail rate aren't allowed to complete. This is particularly useful for A-Z routes or NPA-NXX [rate cards](https://docs.connexcs.com/rate-card-building/).
+  
+!!! Tip "When Profit Assurance Fails to Operate"
+    **A. Profit Assurance may appear to fail, often due to:**
+
+    1.**Incorrect Billing Configurations**:
+    
+    Billing increments (e.g., 6/6, 30/6, or 60/60) play a significant role in profitability. A mismatch between the billing increments of your carrier and customer rates can lead to unexpected losses.
+    
+    **For example**:
+        If you buy at 30/6 and sell at 6/6, you lose money on shorter-duration calls because of rounding discrepancies.
+    
+    2.**Profit Assurance Enabled but Losses Persist**:
+    
+    Even with Profit Assurance enabled, losses may occur due to:
+    
+    * Specific call durations where rounding favors the carrier.
+    
+    3.**Misunderstanding Call Connection Logic**:
+    
+    Profit Assurance does not retroactively check call profitability during ongoing calls. If the buy rate is temporarily higher than the sell rate due to duration or rounding, calls may still connect.
+
++ **Block Connect Cost**: Block any call that has a connection fee.  
+
++ **Balance Disconnect** this feature checks the balance every 60 seconds. It will disconnect the call when the **balance plus the debit limit** is below $0.
+
+!!! note
+    Balance Disconnect only takes into account the **completed calls**; it excludes any **active calls**.
+
+<img src= "/customer/img/rprice.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
 ### Strategy
 
 For advanced routing, click :material-plus: to select a [**Prefix Set**](https://docs.connexcs.com/setup/advanced/prefix-set/) and assign a [**Routing Strategy**](https://docs.connexcs.com/routing-strategy/). This gives you greater control over how routes get selected for a given customer.
+
+<img src= "/customer/img/rstrategy.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ### Notes
 
 + **Public Notes**: Notes entered here get displayed on the Customer Portal when logged in.
 + **Private Notes**: These will get displayed to the customer in the Control Panel.
+
+<img src= "/customer/img/rnotes.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Disabled Routes
 
