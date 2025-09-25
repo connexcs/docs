@@ -346,7 +346,7 @@ An existing call is transferred to a different destination using the `Dial` ver
 
 |**Noun**|**Attribute**|**Description**|**Options**|**Default Method**|
 |--------|--------|-----|-----------|------------------|
-|`Voicemail`|`Voicemail Inbox`| It sends you to the inbox to leave a message|
+|`Voicemail`|`Inbox`| It sends you to the inbox to leave a message|
 ||`user`|The user attribute specifies the SIP user|
 |`Barge`| `whisper`|If enabled, allows you to speak privately to one or both legs of the call without the other party hearing.|`a`(aleg), `b`(bleg), `ab`(both legs)|`ab`|
 ||`bridge`|Allows an eavesdropper to listen in on a call without being an active participant. The eavesdropper can monitor the conversation on one or both legs of the call|`a`(aleg), `b`(bleg),`ab` (both legs)|`ab`|
@@ -451,12 +451,12 @@ An existing call is transferred to a different destination using the `Dial` ver
         </Response>
         ```
     
-    11. **Voicemail Inbox**
+    11. **Inbox**
         ``` xml
         <?xml version="1.0" encoding="UTF-8"?>
         <Response>
             <Dial>
-                <Voicemail inbox="true">
+                <inbox="true">
                  <Voicemail/>
             </Dial>
         </Response>
@@ -536,7 +536,7 @@ An existing call is transferred to a different destination using the `Dial` ver
         <?xml version="1.0" encoding="UTF-8"?>
         <Response>
             <Dial>
-                <Voicemail inbox="true" user="2890">
+                <inbox="true" user="2890">
                 </Voicemail>
             </Dial>
         </Response>
@@ -796,7 +796,7 @@ It's an effective and quicker way to check a customer's audio quality and call p
 |🟦statusCallback|✅|✅|✅|
 |🟦statusCallbackMethod|✅|✅|✅|
 |➡️Voicemail|✅|❌|❌|
-|🟦Voicemail Inbox|✅|❌|❌|
+|🟦Inbox|✅|❌|❌|
 |➡️Barge|✅|❌|❌|
 |🟦whisper|✅|❌|❌|
 |🟦bridge|✅|❌|❌|
