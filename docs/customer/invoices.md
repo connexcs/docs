@@ -69,7 +69,7 @@ To generate invoices atomatically:
 1. Login to your **Control Panel**.
 2. Navigate to **Management :material-menu-right: Customer :material-menu-right: Customer [Name] :material-menu-right: `Edit` :material-menu-right: Config :material-menu-right: Invoice Schedule**.
 3. Select `Daily`, `Weekly`, or `Monthly` for the Invoice Schedule for automatic invoice generation.
-4. Once enabled, the option to auto-generate an invoice will appear under **Customer :material-menu-right: Main :material-menu-right: Auto Generate Invoice**. Click this option to generate the invoice.
+4. Once enabled, the option to auto-generate an invoice will appear under **Customer :material-menu-right: Main :material-menu-right: Auto Generate Invoice**. Click this option to generate the invoice.
 
 [invoice-8]: /misc/img/229.png "Invoice-8"
 

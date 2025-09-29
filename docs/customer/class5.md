@@ -20,10 +20,10 @@ You can configure this in Class5 :material-menu-right: Apps.
 + [**IVR**](/class5/creating-ivr/): Automated response system. Presents callers with a menu and options for call routing.
 
 + [**Groups**](/class5/creating-group/): Allow you to distribute inbound calls to a predefined team.
-  + Calls can be directed to multiple recipients:
-    + **Parallel Ringing**: All recipients are rung simultaneously.
-    + **Sequential Ringing**: Calls are tried one-by-one until answered.
-    + **Call Center Queues**: Calls are systematically distributed.
+    + Calls can be directed to multiple recipients:
+      + **Parallel Ringing**: All recipients are rung simultaneously.
+      + **Sequential Ringing**: Calls are tried one-by-one until answered.
+      + **Call Center Queues**: Calls are systematically distributed.
 
 + [**Voicemail**](/class5/voicemail/): Managed under specific customers or in a bulk view under Class5 :material-menu-right: Voicemail.
 

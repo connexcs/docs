@@ -7,6 +7,8 @@ For example, create a number that customers can call that routes them to a team 
 + **Name:** Enter the name of the group (for example, Sale, Customer Support, Office, or Garage).
 + **Extension:** The number / extension callers use to connect to this group.
 
+For detailed information on Groups and their types, please [click here](https://docs.connexcs.com/class5/creating-group/).
+
 ## Edit Existing Group
 
 Click on the Group name, then click **`Edit`** to revise the following:

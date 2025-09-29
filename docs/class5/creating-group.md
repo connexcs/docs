@@ -14,7 +14,9 @@ For individual customers, navigate to **Management :material-menu-right: Custome
 
 The routing strategy set up for each group controls the routing of the calls to group members:
 
-**Parallel:** Rings a call to all members of the group simultaneously. The member's extensions ring for the length of time you specify.
+### Parallel (Hunt Gropu)
+
+Rings a call to all members of the group simultaneously. The member's extensions ring for the length of time you specify.
 
 You can assign unique timeout timers for individual members.
 
@@ -33,7 +35,9 @@ style D fill:#ECEFF1,stroke:#C70039,stroke-width:2px
 style E fill:#ECEFF1,stroke:#16C440,stroke-width:2px
 ```
 
-**Sequential:** Routes a call in a sequential order based on the order under Group Members.
+### Sequential
+
+Routes a call in a sequential order based on the order under Group Members.
 
 By default, a call routes to the member whose extension number has the highest value. **For example**, 5021.
 
@@ -53,7 +57,9 @@ style D fill:#ECEFF1,stroke:#C70039,stroke-width:2px
 style E fill:#ECEFF1,stroke:#16C440,stroke-width:2px
 ```
 
-**Queue:** Places the caller in a call queue before routing the call to the next available member (whoever has been waiting for the longest to receive a call).
+### Queue
+
+Places the caller in a call queue before routing the call to the next available member (whoever has been waiting for the longest to receive a call).
 
 If you use this routing strategy:
 

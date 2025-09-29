@@ -10,7 +10,7 @@ Find below the definitions for the most relevant telephony terms, along with som
 |**ASR**|*Answer-Seisure Ratio*|The call answer rates as a percentage (connected calls divided by total calls).|  
 |**Channel**|n/a|An ongoing live call on the system. |
 |**CLI**|*Calling Line Identification*|Identifies the caller's telephone number, which is often displayed to the call recipient in the form of Caller-ID.|
-|**CPS**|*Calls Per Second*|The volume of calls, referred to the number of calls handled per second, rather than the number of calls a system can receive.|
+|**CPS (Flow Speed)**|*Calls Per Second*|The volume of calls, referred to the number of calls handled per second, rather than the number of calls a system can receive.|
 |**CDR**|*Call Detail Records*|In-depth information about calls that pass through a VoIP exchange. CDRs are a source data for billing and consumer tracking.|
 |**Codec**|*Coder-Decoder*|Encodes and decodes data between analog and digital signals, with some form of compression.|
 |**DID**|*Direct Inward Dial*|By assigning a public number to an internal location, outside callers can reach a destination without going through a PBX.|
@@ -37,7 +37,58 @@ Find below the definitions for the most relevant telephony terms, along with som
 |**Transcoding**|n/a|Converts file from one format to another. In ConnexCS, this refers to the process of converting audio from one codec to another, often when there is low-bandwidth.|
 |**Channel**|n/a| Channels are analogous to dialogs. Channels are counted even if the call wasn't connected or even ringing hasn't begun. It's counted even if the call geeing setup. For example, if 100 channels exist, it means 100 active calls exist.|
 |**Dialog**|n/a| A Dialog is a single call.|
+|**2FA/TFA**|Two-Factor Authentication|A login method requiring two types of verification, usually a password plus a code or approval from a device. This adds an extra security layer beyond just a password.|
+|**Web Auth N / FIDO2**|Web Authentication / Fast Identity Online 2|A modern authentication standard that allows secure, passwordless logins using methods like security keys, biometrics, or device-based credentials. It reduces reliance on passwords and strengthens protection against phishing|
+|**ASR+**|Answer Seizure Ratio+|ASR Plus is a proprietary ConnexCS technology that filters known failed, non-existent / working numbers between the customer and the terminating, or destination, carrier.|
+|**AnyEdge**|n/a| It balances the traffic between the SIP servers and the customers.|
+|**Spam Scout Scoring**|n/a| It blocks Spam calls based on the CLIs.|
+|**IPQS**|IP Quality Score|Tt blocks the calls based on the spam score. The spam score is provided by a third party IPQS.|
+|**PAID**|P-Asserted-ID|It is the caller’s address, taken from the “From” header, which may vary if the caller uses multiple identities.|
+|**RTP Firewall**|n/a|It will bypass the media Firewall.|
+|**STIR/Shaken**|**STIR**: Secure Telephone Identity Revisited. <br>**SHAKEN**: Signature-based Handling of Asserted Information Using toKENs</br>|required step for call origination providers to authenticate and validate caller identities.|
+|**CIDR**|Classless Inter-Domain Routing|A method of allocating IP addresses and routing that replaces the older class-based system. It uses a suffix (e.g., /24) to show how many bits define the network portion of the address. For example, 192.168.1.0/24 represents 256 IP addresses from 192.168.1.0 to 192.168.1.255.|
+|**STUN**| Session Traversal Utilities for NAT|Clients can use STUN to determine their external IP address and update SIP packets accordingly.|
+|**ALG**|Application Layer Gateway|NAT devices can rewrite SIP packets to use external IP addresses, though this method is unreliable.|
+|Far-end NAT Traversal|n/a| The system can detect and adjust for NAT by checking IP headers and assuming the correct external IP address.|
+|**UAC**|User Agent Client|Acts as a client, typically used when sending calls out.|
+|**UAS**|User Agent Server| Acts as a server, typically used when receiving calls.|
+|**Tech Prefix**|n/a|a unique code assigned to each customer sharing an IP, enabling the switch to identify the route, correctly route calls, and distinguish between different rate cards.|
+|**Dial String**|n/a| Restricts outgoing calls to numbers matching the defined dial string or pattern. If left blank, all calls are allowed|
+|**Dial String Prefix Set**|n/a| A collection of commonly used prefixes (e.g., for the UK) that can be selected for customers, avoiding the need to enter each prefix individually.|
+|**FTC DNC Report ANI Block (USA)**| |Blocks known spam numbers.|
+| **DNO** | Do Not Originate| Blocks numbers that should never be used for outgoing calls, including spoofed, unassigned, unallocated, or inbound-only numbers. Helps prevent illegal, fraudulent, or malicious traffic.|
+|**DNC**|Do Not Call| The customer won't be able to able to dial the numbers in the specified DNC list.|
+|**TCPA Litigator DNC**|**TCPA**: Telephone Consumer Protection Act. <br>**DNC**: Do Not Call |Prevents calls to phone numbers reported as TCPA litigators, reducing the risk of legal action under the Telephone Consumer Protection Act (TCPA).|
+|**SST**|SIP Session Timer|Prevents ghost or long-duration calls.|
+|**Active RTCP Generation** |na|Controls RTCP packet generation|
+|**RTP Codec**|na|Manages audio/video codecs|
+|**Ptime(ms)**|Packetization Time|Sets how much audio/video data each RTP packet carries; higher values = longer chunks, lower = shorter.|
+|**ASR+ (Low)**|Answer Seizure Ratio+ Low|Active on 30% of calls|
+|**ASR?**||When ASR+ gets enabled on the provider card
+|**ASR+?**||When ASR+ gets enabled on the provider card, only known connected calls pass-through specific providers
+|**ASR++**||Only known connected calls pass-through|
+|**Channel Breach**||This will identify instances when customers have exceeded your preset thresholds.|
+|**404 Hits**||It indicates the number of times an unavailable URL on your website has been accessed.|
+|**200 Hits**||It indicates the number of successful requests.|
+|**No Matches**||It indicates the number of misses.|
+|**FTC Block**||It indicates the number of calls blocked by the FTC Block.|
+|**CPS Breach**||When a customer is passing more calls per second than permitted.|
+|**KYC**|Know Your Customer|A process used to verify the identity of customers to prevent fraud, money laundering, or other illegal activities.|
+|**Circuit Test**|n/a|For trouleshooting purposes.|
+| **First Reply Timeout** |n/a|*Carrier initial response time* |
+|**PDD Timeout**|Post-dial delay limit|Time for the carrier to respond to the call before trying another.|
+|**Ring Timeout**||Time the call rings after carrier selection.|
+|**Code Consistency**|| Identifies route quality and detect carriers who may misrepresent call outcomes.|
+|**Failover**|n/a|Lists calls that failed with this carrier but succeeded with another, helping troubleshoot carrier issues and identify FAS.|
+|**Reverse LCR**||First, it selects the most expensive route.|
+|**Tier**|| Distributes calls across rate cards based on assigned weights.|
+|**LCR Performance**||Chooses lowest-cost carriers, prioritizing those with better performance.|
+|**Max Duration**|| Ends calls after a set time or via SIP Ping checks if the other side is still active.|
+|**RTP Timeout**|| Ends calls if no RTP (audio) is detected for a set interval; not effective in direct RTP mode.|
+|**CPS Spike Buffer**|| Spreads sudden spikes of calls over time by buffering, then releasing them at the set calls-per-second rate.|
+|**Balance Disconnect**|| Checks balance every 60s and disconnects calls if balance plus debit limit drops below $0.|
 
+CONTINUE FROM **GLOBAL**.
 !!! info
     ```mermaid
     graph TD
