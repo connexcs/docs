@@ -208,12 +208,25 @@ If script shows an error, add this and then run the script again:
 
 #### Some In-Built Environmental Variables in ScriptForge
 
-* **SCRIPTFORGE_ID**: File ID of the ScriptForge file.
-* **SCRIPTFORGE_NAME**: Name of the ScriptForge file.
-* **APP_ID**: ID of the application.
-* **EXEC_HOST**: Host name of the server executing the script.
+* **SCRIPTFORGE_ID**: File ID of the ScriptForge file. `process.env.SCRIPTFORGE_ID`
+* **SCRIPTFORGE_UUID**: UUID of the ScriptForge file. `process.env.SCRIPTFORGE_UUID`
+* **SCRIPTFORGE_NAME**: Name of the ScriptForge file. `process.env.SCRIPTFORGE_NAME`
+* **APP_ID**: ID of the application. `process.env.APP_ID`
+* **EXEC_HOST**: Host name of the server executing the script. `process.env.EXEC_HOST`
 
 You can get the environmental variables using `process.env`.
+
+!!! Example
+
+    1. Navigate to **IDE :material-menu-right: Script Forge**.
+    2. Use the following code to get the **UUID** of the file.
+
+    ```js
+    async function main () {
+    return process.env.SCRIPTFORGE_UUID
+    }
+    ```
+    <img src= "/apps/img/sf2.png" width= "800" style= "border: 2px solid #4472C4; border-radius: 8px;">
 
 ### Assign the Script to a Customer
 

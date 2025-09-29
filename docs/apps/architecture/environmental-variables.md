@@ -74,4 +74,4 @@ You can get the environmental variables using `process.env`.
     return process.env.SCRIPTFORGE_UUID
     }
     ```
-  <img src= "/apps/img/sf2.png" width= "300" style= "border: 2px solid #4472C4; border-radius: 8px;">
+    <img src= "/apps/img/sf2.png" width= "800" style= "border: 2px solid #4472C4; border-radius: 8px;">
