@@ -223,10 +223,10 @@ You can get the environmental variables using `process.env`.
 
     ```js
     async function main () {
-    return process.env.SCRIPTFORGE_UUID
+     return process.env.SCRIPTFORGE_UUID
     }
     ```
-    <img src= "/apps/img/sf2.png" width= "800" style= "border: 2px solid #4472C4; border-radius: 8px;">
+    <img src= "/apps/img/sf21.png" width= "600" style= "border: 2px solid #4472C4; border-radius: 8px;">
 
 ### Assign the Script to a Customer
 
