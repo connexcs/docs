@@ -14,7 +14,7 @@ Find below the definitions for the most relevant telephony terms, along with som
 |**CDR**|*Call Detail Records*|In-depth information about calls that pass through a VoIP exchange. CDRs are a source data for billing and consumer tracking.|
 |**Codec**|*Coder-Decoder*|Encodes and decodes data between analog and digital signals, with some form of compression.|
 |**DID**|*Direct Inward Dial*|By assigning a public number to an internal location, outside callers can reach a destination without going through a PBX.|
-|**DTMF**|*Dual-Tone Multi-Frequency*|A signalling system that connects points in the telephony network, typically between telephone equipment, communications devices, and switching centers. See [**Wikipedia DTMF**](https://en.wikipedia.org/wiki/Dual-tone_multi-frequency_signaling) for more details.|
+|**DTMF/MF4/Touch-Tone**|*Dual-Tone Multi-Frequency*|A signalling system that connects points in the telephony network, typically between telephone equipment, communications devices, and switching centers. See [**Wikipedia DTMF**](https://en.wikipedia.org/wiki/Dual-tone_multi-frequency_signaling) for more details.|
 |**E.123**|*Specific Number Format*|A standard that includes a number format beginning with a + followed by a country code and subscriber number.|
 |**E.164**|*Specific Number Format*|As described by the ITU, the E.164 general format must contain only digits split as follows: Country code (1 to 3 digits) Subscriber number (max 12 digits).|
 |**FAS**|*False Answer Supervision*|A kind of billing fraud, it bills a call for a length of time that was longer than the actual call duration.|
@@ -49,7 +49,7 @@ Find below the definitions for the most relevant telephony terms, along with som
 |**CIDR**|Classless Inter-Domain Routing|A method of allocating IP addresses and routing that replaces the older class-based system. It uses a suffix (e.g., /24) to show how many bits define the network portion of the address. For example, 192.168.1.0/24 represents 256 IP addresses from 192.168.1.0 to 192.168.1.255.|
 |**STUN**| Session Traversal Utilities for NAT|Clients can use STUN to determine their external IP address and update SIP packets accordingly.|
 |**ALG**|Application Layer Gateway|NAT devices can rewrite SIP packets to use external IP addresses, though this method is unreliable.|
-|Far-end NAT Traversal|n/a| The system can detect and adjust for NAT by checking IP headers and assuming the correct external IP address.|
+|**Far-end NAT Traversal**|n/a| The system can detect and adjust for NAT by checking IP headers and assuming the correct external IP address.|
 |**UAC**|User Agent Client|Acts as a client, typically used when sending calls out.|
 |**UAS**|User Agent Server| Acts as a server, typically used when receiving calls.|
 |**Tech Prefix**|n/a|a unique code assigned to each customer sharing an IP, enabling the switch to identify the route, correctly route calls, and distinguish between different rate cards.|
@@ -87,9 +87,73 @@ Find below the definitions for the most relevant telephony terms, along with som
 |**RTP Timeout**|| Ends calls if no RTP (audio) is detected for a set interval; not effective in direct RTP mode.|
 |**CPS Spike Buffer**|| Spreads sudden spikes of calls over time by buffering, then releasing them at the set calls-per-second rate.|
 |**Balance Disconnect**|| Checks balance every 60s and disconnects calls if balance plus debit limit drops below $0.|
+|**TTS**|Text-to-Speech|Converts your text intto audio.|
+|**OCN**|Operating Company Number||
+|**FRN**|Firm Registration Number||
+|**SMTP**|Simple Mail Transfer Protocol|Standard protocol used to send, relay, and route emails between mail servers and clients.|
+|**Cluster**|n/a| Group servers to share information such as dialogues and throughput.|
+|**UAC Auth**|n/a|Enables ConnexCS to register as a UAC (rather than a UAS) with upstream providers with a username and password.|
+|**WebRTC**|Web Real Time Communication|Enables real-time voice, video, and data sharing directly in web browsers without plugins.|
+|**TLS**|Transport Layer Security|Secures communication over networks by encrypting data and ensuring privacy and integrity.|
+|**TCP**|Transmission Control Protocol| Ensures reliable data delivery with error checking, acknowledgments, and retransmissions.|
+|**UDP**|**User Datagram Protocol**|Faster but unreliable; sends data without guaranteeing delivery or order, commonly used for streaming and VoIP.|
+|**DNS**|Domain Name System|Converts domain names into IP addresses so computers can find each other on a network.|
+|**TTL**|Time To Live|Specifies how long data (like DNS records or IP packets) remains valid before being discarded or refreshed.|
+|**A Record**|Address record|Maps a domain name to an IPv4 address.|
+|**SRV Record**|Service record|Specifies the host and port for specific services (e.g., SIP, XMPP) within a domain.|
+|**SPOF**|Single Point Of Failure|A component whose failure would stop the entire system from working, making it a risk for reliability.|
+|**MRC**|Monthly Recurring Charges|A fixed monthly fee charged for a service.|
+|**SIP Profile**|n/a|Groups users who share the same features and services when logging in via SIP.|
+|**Barge Group**|n/a| Allows a user to listen in on conversations of a specified group using the Barge feature.|
+|**Reseller Account**|n/a|Allows carriers to sell their services through resellers or agents.|
+|**CPM**|Calls Per Minute|The amount of calls sent in any single minute.|
+|Parallel|
+|Sequential|
+|**AKey**|Application Key|It's a secret key that's used to authenticate your application with Duo Security.|
+|**PWA**|Progressive Web Application|A type of web app that can be installed on a device as a standalone application.|
+|**Dial Code/Destination**|n/a|Allows quick lookup of country codes, number types (mobile/landline), and sometimes the provider.|
+|**PKI**|Public Key Infrastructure|For authentication of calls.|
+|**ATIS**|Alliance for Telecommunications Industry Solutions||
+|**CAs**|Certificate Authorities|Provide SHAKEN certificates|
+|**STI-PA**|Secure Telephone Identity – Policy Administrator|Manages and enforces STIR/SHAKEN policies to verify caller identity and reduce fraudulent or spoofed calls.|
+|**SPC**|Service Provider Code|A unique code used to identify a service provider within telecom networks.|
+|**NCEA**|National Exchange Carrier Association|Provides services, numbering resources, and regulatory support to telecom carriers in the U.S.|
+|**Restful JSON**|n/a|Uses REST principles to exchange data in JSON (JavaScript Object Notation) format between clients and servers.|
+|**CRUD**|Create, Read, Update, Delete|
+|**SSL**|Secure Sockets Layer Certificates|Digital certificates that encrypt data between a web server and browser and verify the server’s identity.|
+|**HSTS**|HTTP Strict Transport Security|Instructs browsers to only connect to a website using HTTPS, preventing insecure HTTP connections.|
+|**OCSP Stapling**|Online Certificate Status Protocol|Server provides certificate status to browsers, reducing separate OCSP requests.|
+|**PHC**|Password Hashing Competition|Competition to identify strong, secure password hashing algorithms.|
+|**TOTP**|Time-Based One-Time Password, RFC 6238| Generates short-lived, time-based passwords for two-factor authentication.|
+|**ICMP Ping**|Internet Control Message Protocol|Sends packets to check if a host is reachable and measure response time.|
+|**MTR**|My Traceroute|Tools to trace the route and measure latency between source and destination.|
+|**IDS / IPS**|Intrusion Detection/Prevention System| Monitors network traffic to detect (IDS) or block (IPS) malicious activity.|
+|**SSML**|Speech Synthesis Markup Language|Allows controlling pronunciation, pauses, formatting of acronyms, dates, times, and censoring in TTS audio output.|
+|**Internal Number Block**|n/a|Ensures number allocations are managed efficiently.|
+|**Alias**|n/a|Rewrites the destination number partially or completely before further processing.|
+|**MAC**|Media Access Control|A unique hardware address assigned to a network interface for communications on a local network.|
+|**IMEI**| International Mobile Equipment Identity| A unique number assigned to mobile devices to identify them on cellular networks.|
+|**UUID**|Universally Unique Identifier| A 128-bit identifier used to uniquely identify objects or information in computer systems.|
+|**Network Latency**|n/a|Measures data travel delay.|
+|**Application Latency**|n/a|Primarily server-side processing delay, independent of network transmission times.|
+|**SIP Ping Latency**|n/a|Combines network latency and SIP server processing delays.|
+|**VoIP Latency**|n/a|The time it takes for a voice packet to travel from sender to receiver in a VoIP call.|
+|**Ofcom**|Office of Communications, UK|Independent authority regulating and enforcing UK communication laws, setting rules, and protecting public interest.|
+|**TRAI**|Telecom Regulatory Authority of India| Independent authority regulating India’s telecom sector, enforcing laws, capping tariffs, and promoting pricing transparency.|
+|**ACMA**|Australian Communications and Media Authority| Independent authority regulating communications and media services, managing airwaves, licensing, and enforcing rules in Australia.|
+|**MIIT**|Ministry of Industry and Information Technology, China|Governs China’s telecommunications sector, sets and enforces regulations, and handles licensing for electronic, digital, and satellite communications.|
+|**GDPR**|General Data Protection Regulation|Legal framework governing the collection, processing, and storage of personal data of EU residents, with strict enforcement and heavy penalties for violations.|
+|**RTCP**|RTP Control Protocol|Does not carry media itself but reports delivery and quality statistics for
+|**Smokeping / Long-Running Pings**|Sets continuous pings to track long-term trends in customer or carrier latency.|
+|**Call Recording / Packet Capture**|Records calls and captures packets on customer or carrier ends for analysis and comparison.|
+|**MI Termination**|Ends calls when no audio is detected or when the dialog is closed, sending BYE messages to both parties.|
+|**Ping Timeout**|Ends calls if the originator or receiver fails to acknowledge periodic SIP OPTION packets, preventing long-duration inactive calls.|
+|**SRTP**|Secure Real-Time transport| Encrypts and authenticates real-time audio and video streams, ensuring secure voice and video communications over IP.|
+|**SMPP**|Short Message Peer-to-Peer| Protocol for exchanging SMS messages between Short Message Service Centers (SMSC) and external entities like applications.|
+|**SMS**|Short Message Service|Standard service for sending text messages between mobile devices.|
 
-CONTINUE FROM **GLOBAL**.
-!!! info
+## ACD Calculation Method
+
     ```mermaid
     graph TD
     A[ACD Calculation] -->B[Correct Method]
@@ -98,35 +162,38 @@ CONTINUE FROM **GLOBAL**.
     C -->E[Total Duration / Total Calls]
     ```
 
-!!! Info
+## ASR Inference
+
     | S.No | ASR Score     | Inference          |
     |------|---------------|--------------------|
     | 1.   | 60% and above | Exceptionally good |
     | 2.   | 40% to 50%    | Acceptable         |
     | 3.   | Less than 40% | Poor               |
 
-!!! Note
+## ASR Calculations
 
-    1. **ASR Calculation**
-    Total Connected / Total Calls
-    
-    2. **Strict ASR (Removing NER) Calculation**
-    Total Connected / Non-carrier failure
+1. **ASR Calculation** = Total Connected / Total Calls
 
-    3. **NER Calculation**
-    Client Side Response Codes / Client + Server Codes
-    4. **Channels** = CPS * ACD
+2. **Strict ASR (Removing NER) Calculation** = Total Connected / Non-carrier failure
 
-!!! note "CLI vs PAID"
-    **PAID** is the address of the person who placed the call. This is same as the address in the "From" header, but it may change if the caller uses several identities and needs to represent the one that applies to the destination.
+3. **NER Calculation** = Client Side Response Codes / Client + Server Codes
 
-    For example, consider a call from alice@sip.com to the PSTN, where the P-Asserted-Identity field can be changed to the "alice" phone number.
+4. **Channels** = CPS * ACD
 
-    **CLI** gives the calling phone's number to the party receiving the call. CLI is used to determine the caller or the place where a call originated.
+## CLI vs PAID
 
-    The P-Asserted-Identity contains the caller id information for the call on the INVITE SIP packet. P-asserted-ID header may contain either Tel URI or SIP URI. For CLI identification purposes multiple P-Asserted-ID headers should not be used unless there is a P-asserted-ID containing Tel URI and/or a P-asserted-ID containing SIP URI and user=phone. In this case both type of URIs must contain the same phone number. If none of the above exist and contain a valid E.164 number, CLI will not be considered valid.
+**PAID** is the address of the person who placed the call. This is same as the address in the "From" header, but it may change if the caller uses several identities and needs to represent the one that applies to the destination.
 
-!!! note "Missed Call Traffic"
-    Missed Call Traffic is placing calls which DONT connect and / or have a VERY SHORT duration.
-    It's not advisable not to have large volumes of Missed Call Traffic.
+!!! Example
+    Consider a call from alice@sip.com to the PSTN, where the P-Asserted-Identity field can be changed to the "alice" phone number.
+
+**CLI** gives the calling phone's number to the party receiving the call. CLI is used to determine the caller or the place where a call originated.
+
+The P-Asserted-Identity contains the caller id information for the call on the INVITE SIP packet. P-asserted-ID header may contain either Tel URI or SIP URI. For CLI identification purposes multiple P-Asserted-ID headers should not be used unless there is a P-asserted-ID containing Tel URI and/or a P-asserted-ID containing SIP URI and user=phone. In this case both type of URIs must contain the same phone number. If none of the above exist and contain a valid E.164 number, CLI will not be considered valid.
+
+## Missed Call Traffic
+
+Missed Call Traffic is placing calls which DONT connect and / or have a VERY SHORT duration.
+
+It's not advisable not to have large volumes of Missed Call Traffic.
   
