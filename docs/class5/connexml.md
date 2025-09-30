@@ -451,12 +451,12 @@ An existing call is transferred to a different destination using the `Dial` ver
         </Response>
         ```
     
-    11. **Inbox**
+    11. **Voicemail Inbox**
         ``` xml
         <?xml version="1.0" encoding="UTF-8"?>
         <Response>
             <Dial>
-                <inbox="true">
+                <Voicemail inbox="true">
                  <Voicemail/>
             </Dial>
         </Response>
@@ -536,7 +536,7 @@ An existing call is transferred to a different destination using the `Dial` ver
         <?xml version="1.0" encoding="UTF-8"?>
         <Response>
             <Dial>
-                <inbox="true" user="2890">
+                <Voicemail inbox="true" user="2890">
                 </Voicemail>
             </Dial>
         </Response>
