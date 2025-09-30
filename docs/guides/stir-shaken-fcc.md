@@ -17,11 +17,11 @@ To address this issue, the U.S. FCC (Federal Communications Commission) has mand
 
 Legitimate examples of a robocall would be from:
 
-    + Telephone campaigns (telemarketing or political)
-    
-    + Public-service (from your child's school)
-    
-    + Emergency announcements (Amber Alert or Weather Advisory)
++ Telephone campaigns (telemarketing or political)
+
++ Public-service (from your child's school)
+
++ Emergency announcements (Amber Alert or Weather Advisory)
 
 When robocalling uses spoofed numbers or illegal methods to reach end users, considered as illegal. Examples include bypassing Do Not Call lists. These calls are typically associated with some sort of added fraud or scam.
 

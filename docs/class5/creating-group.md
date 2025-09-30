@@ -14,7 +14,7 @@ For individual customers, navigate to **Management :material-menu-right: Custome
 
 The routing strategy set up for each group controls the routing of the calls to group members:
 
-### Parallel (Hunt Gropu)
+### Parallel (Hunt Group)
 
 Rings a call to all members of the group simultaneously. The member's extensions ring for the length of time you specify.
 

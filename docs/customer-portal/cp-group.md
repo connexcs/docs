@@ -1,5 +1,7 @@
 # Group
 
+## Overview
+
 A **Group** allows you to create a team of individuals to receive calls placed to a specified number or extension based on the routing strategy you configure.
 
 For example, create a number that customers can call that routes them to a team of Technical Support Specialists who can fix the technical issues or to a Sales group.of
@@ -16,7 +18,7 @@ Click on the Group name, then click **`Edit`** to revise the following:
 + **Name:** The Group Name. You can mention the group name for easy reference.
 + **Extensions:** Not available for editing; please contact support.
 + **Group Type:** Each Group type uses a different routing strategy to determine how the calls route to the specified members.
-    + **Parallel:** Rings a call to all members of the group simultaneously. The members' extensions ring for the length of time specified. Individual members can have unique timeout timers.
+    + **Parallel(Hunt Groups):** Rings a call to all members of the group simultaneously. The members' extensions ring for the length of time specified. Individual members can have unique timeout timers.
 
       **Note:** Rings all members, even if they're already on a call.
 
