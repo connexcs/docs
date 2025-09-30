@@ -74,7 +74,7 @@ Click on the Group name, then click **`Edit`** to revise the following:
         style E fill:#ECEFF1,stroke:#16C440,stroke-width:2px
         ```
 
-      **Edit Existing Queue**
+      ### Edit Existing Queue
 
       Click on the **Queue** name to edit the following:
 

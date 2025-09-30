@@ -43,20 +43,20 @@ Find below the definitions for the most relevant telephony terms, along with som
 |**IPQS**|*IP Quality Score*|Tt blocks the calls based on the spam score. The spam score is provided by a third party IPQS.|
 |**PAID**|*P-Asserted-ID*|A header field in the SIP INVITE that has the identity of the caller (typically used for caller-ID / network identifier). It shouldn't be delivered to the end-user.|
 |**RTP Firewall**|n/a|It will bypass the media Firewall.|
-|**STIR/Shaken**|***STIR**: Secure Telephone Identity Revisited* <br>***SHAKEN**: Signature-based Handling of Asserted Information Using toKENs*</br>|required step for call origination providers to authenticate and validate caller identities.|
+|**STIR/Shaken**|*STIR*: Secure Telephone Identity Revisited* <br>*SHAKEN*: Signature-based Handling of Asserted Information Using toKENs*</br>|Required step for call origination providers to authenticate and validate caller identities.|
 |**CIDR**|*Classless Inter-Domain Routing*|A method of allocating IP addresses and routing that replaces the older class-based system. It uses a suffix (e.g., /24) to show how many bits define the network portion of the address. For example, 192.168.1.0/24 represents 256 IP addresses from 192.168.1.0 to 192.168.1.255.|
 |**STUN**| *Session Traversal Utilities for NAT*|Clients can use STUN to determine their external IP address and update SIP packets accordingly.|
 |**ALG**|*Application Layer Gateway*|NAT devices can rewrite SIP packets to use external IP addresses, though this method is unreliable.|
 |**Far-end NAT Traversal**|n/a| The system can detect and adjust for NAT by checking IP headers and assuming the correct external IP address.|
 |**UAC**|*User Agent Client*|Acts as a client, typically used when sending calls out.|
 |**UAS**|*User Agent Server*| Acts as a server, typically used when receiving calls.|
-|**Tech Prefix**|n/a|a unique code assigned to each customer sharing an IP, enabling the switch to identify the route, correctly route calls, and distinguish between different rate cards.|
+|**Tech Prefix**|n/a|A unique code assigned to each customer sharing an IP, enabling the switch to identify the route, correctly route calls, and distinguish between different rate cards.|
 |**Dial String**|n/a| Restricts outgoing calls to numbers matching the defined dial string or pattern. If left blank, all calls are allowed|
 |**Dial String Prefix Set**|n/a| A collection of commonly used prefixes (e.g., for the UK) that can be selected for customers, avoiding the need to enter each prefix individually.|
-|**FTC DNC Report ANI Block (USA)**| |Blocks known spam numbers.|
+|**FTC DNC Report ANI Block (USA)**|n/a|Blocks known spam numbers.|
 | **DNO** |*Do Not Originate*| Blocks numbers that should never be used for outgoing calls, including spoofed, unassigned, unallocated, or inbound-only numbers. Helps prevent illegal, fraudulent, or malicious traffic.|
 |**DNC**|Do Not Call| The customer won't be able to able to dial the numbers in the specified DNC list.|
-|**TCPA Litigator DNC**|***TCPA**: Telephone Consumer Protection Act*. <br>***DNC**: Do Not Call*|Prevents calls to phone numbers reported as TCPA litigators, reducing the risk of legal action under the Telephone Consumer Protection Act (TCPA).|
+|**TCPA Litigator DNC**|*TCPA*: Telephone Consumer Protection Act*. <br>*DNC: Do Not Call*|Prevents calls to phone numbers reported as TCPA litigators, reducing the risk of legal action under the Telephone Consumer Protection Act (TCPA).|
 |**SST**|*SIP Session Timer*|Prevents ghost or long-duration calls.|
 |**Active RTCP Generation** |n/a|Controls RTCP packet generation|
 |**RTP Codec**|n/a|Manages audio/video codecs|
@@ -105,8 +105,8 @@ Find below the definitions for the most relevant telephony terms, along with som
 |**Barge Group**|n/a| Allows a user to listen in on conversations of a specified group using the Barge feature.|
 |**Reseller Account**|n/a|Allows carriers to sell their services through resellers or agents.|
 |**CPM**|*Calls Per Minute*|The amount of calls sent in any single minute.|
-|**Parallel (Hunt Groups)**||Rings a call to all members of the group simultaneously.|
-|**Sequential**||Routes a call in a sequential order based on the order under Group Members.|
+|**Parallel (Hunt Groups)**|n/a|Rings a call to all members of the group simultaneously.|
+|**Sequential**|n/a|Routes a call in a sequential order based on the order under Group Members.|
 |**AKey**|*Application Key*|It's a secret key that's used to authenticate your application with Duo Security.|
 |**PWA**|*Progressive Web Application*|A type of web app that can be installed on a device as a standalone application.|
 |**Dial Code/Destination**|n/a|Allows quick lookup of country codes, number types (mobile/landline), and sometimes the provider.|
@@ -117,7 +117,7 @@ Find below the definitions for the most relevant telephony terms, along with som
 |**SPC**|*Service Provider Code*|A unique code used to identify a service provider within telecom networks.|
 |**NCEA**|*National Exchange Carrier Association*|Provides services, numbering resources, and regulatory support to telecom carriers in the U.S.|
 |**Restful JSON**|n/a|Uses REST principles to exchange data in JSON (JavaScript Object Notation) format between clients and servers.|
-|**CRUD**|*Create, Read, Update, Delete*|
+|**CRUD**|*Create, Read, Update, Delete*|The four basic operations of persistent storage in databases and applications.|
 |**SSL**|*Secure Sockets Layer Certificates*|Digital certificates that encrypt data between a web server and browser and verify the server’s identity.|
 |**HSTS**|*HTTP Strict Transport Security*|Instructs browsers to only connect to a website using HTTPS, preventing insecure HTTP connections.|
 |**OCSP Stapling**|*Online Certificate Status Protocol*|Server provides certificate status to browsers, reducing separate OCSP requests.|
@@ -142,10 +142,10 @@ Find below the definitions for the most relevant telephony terms, along with som
 |**MIIT**|*Ministry of Industry and Information Technology, China*|Governs China’s telecommunications sector, sets and enforces regulations, and handles licensing for electronic, digital, and satellite communications.|
 |**GDPR**|*General Data Protection Regulation*|Legal framework governing the collection, processing, and storage of personal data of EU residents, with strict enforcement and heavy penalties for violations.|
 |**RTCP**|*RTP Control Protocol*|Does not carry media itself but reports delivery and quality statistics for
-|**Smokeping / Long-Running Pings**||Sets continuous pings to track long-term trends in customer or carrier latency.|
-|**Call Recording / Packet Capture**||Records calls and captures packets on customer or carrier ends for analysis and comparison.|
-|**MI Termination**||Ends calls when no audio is detected or when the dialog is closed, sending BYE messages to both parties.|
-|**Ping Timeout**||Ends calls if the originator or receiver fails to acknowledge periodic SIP OPTION packets, preventing long-duration inactive calls.|
+|**Smokeping / Long-Running Pings**|n/a|Sets continuous pings to track long-term trends in customer or carrier latency.|
+|**Call Recording / Packet Capture**|n/a|Records calls and captures packets on customer or carrier ends for analysis and comparison.|
+|**MI Termination**|n/a|Ends calls when no audio is detected or when the dialog is closed, sending BYE messages to both parties.|
+|**Ping Timeout**|n/a|Ends calls if the originator or receiver fails to acknowledge periodic SIP OPTION packets, preventing long-duration inactive calls.|
 |**SRTP**|*Secure Real-Time transport*| Encrypts and authenticates real-time audio and video streams, ensuring secure voice and video communications over IP.|
 |**SMPP**|*Short Message Peer-to-Peer*| Protocol for exchanging SMS messages between Short Message Service Centers (SMSC) and external entities like applications.|
 |**SMS**|*Short Message Service*|Standard service for sending text messages between mobile devices.|
