@@ -149,6 +149,9 @@ Find below the definitions for the most relevant telephony terms, along with som
 |**SRTP**|*Secure Real-Time transport*| Encrypts and authenticates real-time audio and video streams, ensuring secure voice and video communications over IP.|
 |**SMPP**|*Short Message Peer-to-Peer*| Protocol for exchanging SMS messages between Short Message Service Centers (SMSC) and external entities like applications.|
 |**SMS**|*Short Message Service*|Standard service for sending text messages between mobile devices.|
+|**Guard Rails**|n/a|In AI, guardrails are rules or constraints that guide the model’s behavior to ensure safe, reliable, and context-appropriate outputs.|
+|**LATA**| *Local Access and Transport Area*|Calls rated based on Local Access and Transport Area boundaries.|
+|**RC**|*Rate Center*|The specific geographic rate center in the U.S. tied to the prefix.|
 
 ## ACD Calculation Method
 
