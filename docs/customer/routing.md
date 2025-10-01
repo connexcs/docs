@@ -145,6 +145,8 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 
 + **TCPA  Litigator DNC**: Enabling this flag blocks outbound calls to known TCPA Litigators.
 
+<img src= "/customer/img/rsecurity.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
 ### Capacity & Quality Control
 
 + **Channels**: Set the maximum number of channels/live calls allowed for this route.
