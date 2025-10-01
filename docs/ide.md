@@ -42,11 +42,11 @@ Write and manage scripts to add advanced logic, automation, and integrations. [C
 
 ### Template
 
-Create reusable templates for user interfaces, scripts, or configurations. [Click here](https://docs.connexcs.com/apps/architecture/template/) for more information.
+Create reusable templates. [Click here](https://docs.connexcs.com/apps/architecture/template/) for more information.
 
 ### Query Builder
 
-Design and execute database queries without writing manual SQL code. [Click here](https://docs.connexcs.com/apps/architecture/query-builder/) for more information.
+This tool helps developers construct database queries. [Click here](https://docs.connexcs.com/apps/architecture/query-builder/) for more information.
 
 ### Project
 
