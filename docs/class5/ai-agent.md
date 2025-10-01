@@ -305,7 +305,7 @@ It allows you to control the flow of conversation by linking one task to another
 
     * Provides greater control over workflow design.
 
-<img src= "/class5/img/condition.png" style="border: 2px solid #4472C4; border-radius: 8px;"> <img src= "/class5/img/nondefaultcondition.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/class5/img/condition.png" style="border: 2px solid #4472C4; border-radius: 8px;"> <img src= "/class5/img/nondefaultcondition.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ### Variables via JSON
 
