@@ -14,11 +14,9 @@ See the [**Wikipedia List of SIP response codes**](https://en.wikipedia.org/wiki
 
 ### Key Features
 
-+ **Response Code Modification**:
-    + Allows replacement of SIP responses (e.g., replacing 183 with 180 when required by specific switches).
++ **Response Code Modification**: Allows replacement of SIP responses (e.g., replacing 183 with 180 when required by specific switches).
 
-+ **Failover Management**:
-    + Allows rewriting response codes for better compatibility.
++ **Failover Management**: Allows rewriting response codes for better compatibility.
 
 ## To edit Reply Codes
 

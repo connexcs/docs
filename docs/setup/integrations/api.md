@@ -211,13 +211,16 @@ Link Moneris to ConnexCS:
 ## Scriptforge Integration
 
 **Usage**:
+
 + Allows selection of a company from the list of carriers
+
 + Facilitates linking integrations to DID drivers.
+
 + Supports connection to an individual ScriptForge instance (e.g., as a DID provider).
 
 **Key Benefit**:
-+ Streamlines the process of linking carrier information for DID driver functionality.
 
++ Streamlines the process of linking carrier information for DID driver functionality.
 
 1. Select **`Add`**, and then select **Scriptforge**.
 2. **Company**: Select the customer to integrate.
