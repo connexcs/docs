@@ -8,25 +8,7 @@ The **Custom Reports** section provides advanced reporting options for analyzing
 
 These reports go beyond standard CDRs, giving you targeted insights into areas such as DTMF input, Rate Center distribution, and Technical Routing Prefixes.
 
-## Types of Reports
-
-### DTMF Report
-
-It tracks DTMF (keypad input) signals sent during calls.
-
-Its useful for troubleshooting IVR input or verifying whether key presses are being captured correctly.
-
-The report includes the following key fields:
-
-+ **dt**: Takes the date-time (dt) field from the Call Detail Record (CDR) and rounds it down to the start of the hour. This allows all calls within the same hour to be grouped together for reporting.
-
-+ **provider_id**: The unique identifier of the provider handling the call. Used to track DTMF activity per provider.
-
-+ **customer_charge**: Total charges billed to customers for all calls in the selected period.
-
-+ **provider_charge**: Total charges incurred from providers for the same calls.
-
-+ **dtmf_count**:Counts the number of calls where DTMF tones were detected.
+## Types of Report
 
 ### USA Rate Center Report
 
@@ -52,7 +34,7 @@ This report helps compare **Customer Charges** and **Provider Costs** at a regio
 
 ### DID As CLI
 
-The DID as CLI Report displays all DIDs in the system that have been used as Caller Line Identification (CLI) within a specified month.
+The DID as CLI Report displays all DIDs in the system that have been used as Caller Line Identification (CLI).
 
 The results are automatically grouped by account. This makes  it easy to track usage, verify compliance, and analyze account-level activity.
 
@@ -85,7 +67,7 @@ The report includes the following fields:
 
 + **Tech_prefix**: The technical prefix used to identify a specific routing path or trunk.
 
-+ **ASR (Answer-Seizure Ratio)** : ercentage of successfully connected calls versus total attempts, measuring call success rate.
++ **ASR (Answer-Seizure Ratio)** : Percentage of successfully connected calls versus total attempts, measuring call success rate.
 
 + **ACD (Average Call Duration)**: The average duration of connected calls, used to evaluate call quality and customer engagement.
 
@@ -96,8 +78,7 @@ The report includes the following fields:
 <img src="/customer/img/customrep3.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 |**Report Type**|**Purpose**|**Use Case**|
-| --------------|-----------|-------------|
-|**DTMF Report**| Tracks DTMF (Dual-Tone Multi-Frequency) signals sent during calls.| Useful for troubleshooting IVR issues, missed key presses, or validating customer interactions.|
+| --------------|-----------|------------|
 |**USA Rate Center**| Groups calls by U.S. rate centers to analyze charges and call volume.| Helps compare customer billing vs. provider costs, identify high-volume rate centers, and margin analysis.|
 |**DID as CLI Report**| Shows calls where DIDs are used as Caller Line Identification (CLI).| Useful for compliance and ensuring proper CLI presentation per regulations or business rules.|
 |**Group by Tech Prefix** | Breaks down call statistics by routing **technical prefixes**.| Optimizes routing by analyzing quality/performance across prefixes. Helps detect failing routes.|

@@ -87,8 +87,8 @@ Now lets go through the USA Calls report dashboard:
 <img src="/reports/img/usacalls.png" width= "1000" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 1. **Type**: Select type of report as `State` or `LATA`.
-   1. **State**: It determines regulatory jurisdiction (Intrastate vs. Interstate).
-   2. **LATA (Local Access and Transport Area)**: It determines carrier responsibility (local exchange vs. long-distance carrier).
+      1. **State**: Calls rated based on the state where they originate or terminate.
+      2. **LATA (Local Access and Transport Area)**: Calls rated based on Local Access and Transport Area boundaries.
 2. **Select Customers**, **Select Providers** from the selector drop-down.
 3. Use the **date selector** to define the specific date range for which the report should be generated.
 4. The report consists the following key fields:
