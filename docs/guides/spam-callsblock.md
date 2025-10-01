@@ -98,7 +98,7 @@ Blocking calls with DNC Lists is a **User Database** based blocking.
 1. Go to **Management > Customer > Customer [Name] > Routing > Locks > DNC List**.
 2. Click on the dropdown menu to select from the available DNC lists.
 
-[**Click here**](https://docs.connexcs.com/dnc/#do-not-call-check) to follow the steps for creating a DNC List.
+[**Click here**](https://docs.connexcs.com/customer/routing/#locks) to follow the steps for creating a DNC List.
 
 ### 6.3 Using Block Destination Type
 
