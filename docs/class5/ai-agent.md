@@ -279,7 +279,7 @@ It allows you to control the flow of conversation by linking one task to another
 
     * **AI Agent Task**: Its the current task.
 
-    * **Next AI Agent Task**: This task will be executed executed if the condition is met.
+    * **Next AI Agent Task**: This task will be executed if the condition is met.
 
 * **Types of Conditions**
 
@@ -305,7 +305,7 @@ It allows you to control the flow of conversation by linking one task to another
 
     * Provides greater control over workflow design.
 
-<img src= "/class5/img/condition.png" style="border: 2px solid #4472C4; border-radius: 8px;"> 
+<img src= "/class5/img/condition.png" style="border: 2px solid #4472C4; border-radius: 8px;"> <img src= "/class5/img/nondefaultcondition.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ### Variables via JSON
 
@@ -323,706 +323,6 @@ Make sure you select `SetVariable` under **Advanced :material-menu-right: Built-
 |**ConnexCS Converse Direct**|Select from the multiple options|ConnexCS Internal|Google, PlayHT|
 
 !!! Note "While accessing the **ConnexCS Converse Direct** Platform, you will notice that models in the drop-down menu are labeled with **"(Tools)"**. Selecting a model without the (Tools) designation will prevent you from accessing **ScriptForge** and performing behind-the-scenes tasks."
-
-### List of available LLMs
-
-#### 01.AI
-
-- 01.AI: Yi Large
-- 01.AI: Yi Large FC
-- 01.AI: Yi Large Turbo
-- 01.AI: Yi Vision
-
-#### AI21
-
-- AI21: Jamba Large 1.7(Tools)
-- AI21: Jamba Mini 1.7(Tools)
-- AI21: Jamba 1.5 Large
-- AI21: Jamba 1.5 Mini
-- AI21: Jamba 1.6 Large
-- AI21: Jamba Instruct
-- AI21: Jamba Mini 1.6
-
-#### Aetherwiing
-
-- Aetherwiing: Starcannon 12B
-
-#### Agentica
-
-- Agentica: Deepcoder 14B Preview
-- Agentica: Deepcoder 14B Preview (free)
-
-#### AionLabs
-
-- AionLabs: Aion-1.0
-- AionLabs: Aion-1.0-Mini
-- AionLabs: Aion-RP 1.0 (8B)
-
-#### AlfredPros
-
-- AlfredPros: CodeLLaMa 7B Instruct Solidity
-
-#### AllenAI
-
-- AllenAI: Molmo 7B D
-- AllenAI: Olmo 2 32B Instruct
-
-#### Amazon
-
-- Amazon: Nova Lite 1.0(Tools)
-- Amazon: Nova Micro 1.0(Tools)
-- Amazon: Nova Pro 1.0(Tools)
-
-#### Anthropic
-
-- Anthropic: Claude 3 Haiku(Tools)
-- Anthropic: Claude 3 Opus(Tools)
-- Anthropic: Claude 3.5 Haiku(Tools)
-- Anthropic: Claude 3.5 Haiku (2024-10-22)(Tools)
-- Anthropic: Claude 3.5 Sonnet(Tools)
-- Anthropic: Claude 3.5 Sonnet (2024-06-20)(Tools)
-- Anthropic: Claude 3.7 Sonnet(Tools)
-- Anthropic: Claude 3.7 Sonnet (thinking)(Tools)
-- Anthropic: Claude Opus 4(Tools)
-- Anthropic: Claude Opus 4.1(Tools)
-- Anthropic: Claude Sonnet 4(Tools)
-- Anthropic: Claude 3 Sonnet
-- Anthropic: Claude Instant v1
-- Anthropic: Claude Instant v1.0
-- Anthropic: Claude Instant v1.1
-- Anthropic: Claude v1
-- Anthropic: Claude v1.2
-- Anthropic: Claude v2
-- Anthropic: Claude v2.0
-- Anthropic: Claude v2.1
-
-#### Arcee AI
-
-- Arcee AI: Virtuoso Large(Tools)
-- Arcee AI: Arcee Blitz
-- Arcee AI: Caller Large
-- Arcee AI: Coder Large
-- Arcee AI: Maestro Reasoning
-- Arcee AI: Spotlight
-- Arcee AI: Virtuoso Medium V2
-
-#### ArliAI
-
-- ArliAI: QwQ 32B RpR v1
-- ArliAI: QwQ 32B RpR v1 (free)
-
-#### Baidu
-
-- Baidu: ERNIE 4.5 21B A3B
-- Baidu: ERNIE 4.5 300B A47B
-- Baidu: ERNIE 4.5 VL 28B A3B
-- Baidu: ERNIE 4.5 VL 424B A47B
-
-#### Bytedance
-
-- Bytedance: UI-TARS 72B
-- Bytedance: UI-TARS 7B
-
-#### Cohere
-
-- Cohere: Command R(Tools)
-- Cohere: Command R (03-2024)(Tools)
-- Cohere: Command R (08-2024)(Tools)
-- Cohere: Command R+(Tools)
-- Cohere: Command R+ (04-2024)(Tools)
-- Cohere: Command R+ (08-2024)(Tools)
-- Cohere: Command
-- Cohere: Command A
-- Cohere: Command R7B (12-2024)
-
-#### DI
-
-- DI / Llama-3.3-70B-Instruct-Turbo(Tools)
-- DI / Phi4 Multi-Modal Instruct(Tools)
-
-#### Databricks
-
-- Databricks: DBRX 132B Instruct
-
-#### DeepSeek
-
-- DeepSeek: DeepSeek V3 0324(Tools)
-- DeepSeek: DeepSeek V3 0324 (free)(Tools)
-- DeepSeek: DeepSeek V3.1(Tools)
-- DeepSeek: DeepSeek Prover V2
-- DeepSeek: Deepseek R1 0528 Qwen3 8B
-- DeepSeek: Deepseek R1 0528 Qwen3 8B (free)
-- DeepSeek: DeepSeek R1 Zero
-- DeepSeek: DeepSeek V3
-- DeepSeek: DeepSeek V3 Base
-- DeepSeek: DeepSeek V3.1 (free)
-- DeepSeek: DeepSeek V3.1 Base
-- DeepSeek: R1
-- DeepSeek: R1 (free)
-- DeepSeek: R1 0528
-- DeepSeek: R1 0528 (free)
-- DeepSeek: R1 Distill Llama 70B
-- DeepSeek: R1 Distill Llama 70B (free)
-- DeepSeek: R1 Distill Llama 8B
-- DeepSeek: R1 Distill Qwen 1.5B
-- DeepSeek: R1 Distill Qwen 14B
-- DeepSeek: R1 Distill Qwen 14B (free)
-- DeepSeek: R1 Distill Qwen 32B
-- DeepSeek: R1 Distill Qwen 7B
-
-#### EleutherAI
-
-- EleutherAI: Llemma 7b
-
-#### Fireworks
-
-- Fireworks: FireLLaVA 13B
-
-#### G
-
-- G / Llama 3.3 70b versatile(Tools)
-- G / Meta llama/llama prompt guard 2 22m
-- G / Qwen/qwen3 32b
-- G / Allam 2 7b
-- G / Moonshotai/kimi k2 instruct 0905
-- G / Meta llama/llama 4 maverick 17b 128e instruct
-- G / Llama 3.1 8b instant
-- G / Whisper large v3 turbo
-- G / Meta llama/llama prompt guard 2 86m
-- G / Playai tts arabic
-- G / Deepseek r1 distill llama 70b
-- G / Openai/gpt oss 20b
-- G / Gemma2 9b it
-- G / Fast/compound mini
-- G / Fast/compound
-- G / Moonshotai/kimi k2 instruct
-- G / Playai tts
-- G / Whisper large v3
-- G / Meta llama/llama 4 scout 17b 16e instruct
-- G / Meta llama/llama guard 4 12b
-- G / Openai/gpt oss 120b
-
-#### Google
-
-- Google: Gemini 1.5 Flash(Tools)
-- Google: Gemini 1.5 Flash 8B(Tools)
-- Google: Gemini 1.5 Pro(Tools)
-- Google: Gemini 2.0 Flash(Tools)
-- Google: Gemini 2.0 Flash Experimental (free)(Tools)
-- Google: Gemini 2.0 Flash Lite(Tools)
-- Google: Gemini 2.5 Flash(Tools)
-- Google: Gemini 2.5 Flash Lite(Tools)
-- Google: Gemini 2.5 Flash Lite Preview 06-17(Tools)
-- Google: Gemini 2.5 Pro(Tools)
-- Google: Gemini 2.5 Pro Experimental(Tools)
-- Google: Gemini 2.5 Pro Preview 05-06(Tools)
-- Google: Gemini 2.5 Pro Preview 06-05(Tools)
-- Google: Gemini 1.5 Flash Experimental
-- Google: Gemini 1.5 Pro Experimental
-- Google: Gemini 2.5 Flash Image Preview
-- Google: Gemini 2.5 Flash Image Preview (free)
-- Google: Gemini 2.5 Flash Preview 04-17
-- Google: Gemini 2.5 Flash Preview 05-20
-- Google: Gemini Experimental 1114
-- Google: Gemini Experimental 1121
-- Google: Gemma 1 2B
-- Google: Gemma 2 27B
-- Google: Gemma 2 9B
-- Google: Gemma 2 9B (free)
-- Google: Gemma 3 12B
-- Google: Gemma 3 12B (free)
-- Google: Gemma 3 1B
-- Google: Gemma 3 27B
-- Google: Gemma 3 27B (free)
-- Google: Gemma 3 4B
-- Google: Gemma 3 4B (free)
-- Google: Gemma 3n 2B (free)
-- Google: Gemma 3n 4B
-- Google: Gemma 3n 4B (free)
-- Google: Gemma 7B
-- Google: PaLM 2 Chat
-- Google: PaLM 2 Chat 32k
-- Google: PaLM 2 Code Chat
-- Google: PaLM 2 Code Chat 32k
-
-#### Hugging Face
-
-- Hugging Face: Zephyr 7B
-
-#### Inception
-
-- Inception: Mercury(Tools)
-- Inception: Mercury Coder(Tools)
-
-#### Infermatic
-
-- Infermatic: Mistral Nemo Inferor 12B
-
-#### Inflatebot
-
-- Inflatebot: Mag Mell R1 12B
-
-#### Inflection
-
-- Inflection: Inflection 3 Pi
-- Inflection: Inflection 3 Productivity
-
-#### LatitudeGames
-
-- LatitudeGames: Wayfarer Large 70B Llama 3.3
-
-#### Liquid
-
-- Liquid: LFM 3B
-- Liquid: LFM 40B MoE
-- Liquid: LFM 7B
-
-#### Lynn
-
-- Lynn: Llama 3 Soliloquy 7B v3 32K
-- Lynn: Llama 3 Soliloquy 8B v2
-
-#### Mancer
-
-- Mancer: Weaver (alpha)
-
-#### Meta
-
-- Meta: Llama 3 70B Instruct(Tools)
-- Meta: Llama 3 8B Instruct(Tools)
-- Meta: Llama 3.1 405B Instruct(Tools)
-- Meta: Llama 3.1 70B Instruct(Tools)
-- Meta: Llama 3.1 8B Instruct(Tools)
-- Meta: Llama 3.3 70B Instruct(Tools)
-- Meta: Llama 3.3 70B Instruct (free)(Tools)
-- Meta: Llama 3.3 8B Instruct (free)(Tools)
-- Meta: Llama 4 Maverick (free)(Tools)
-- Meta: Llama 4 Scout(Tools)
-- Meta: Llama 4 Scout (free)(Tools)
-- Meta: CodeLlama 34B Instruct
-- Meta: CodeLlama 70B Instruct
-- Meta: Llama 2 13B Chat
-- Meta: Llama 2 70B Chat
-- Meta: Llama 3 70B (Base)
-- Meta: Llama 3 8B (Base)
-- Meta: Llama 3.1 405B (base)
-- Meta: Llama 3.1 405B Instruct (free)
-- Meta: Llama 3.2 11B Vision Instruct
-- Meta: Llama 3.2 1B Instruct
-- Meta: Llama 3.2 3B Instruct
-- Meta: Llama 3.2 3B Instruct (free)
-- Meta: Llama 3.2 90B Vision Instruct
-- Meta: Llama 4 Maverick
-- Meta: Llama Guard 4 12B
-- Meta: LlamaGuard 2 8B
-
-#### Microsoft
-
-- Microsoft: Phi-3 Medium 128K Instruct(Tools)
-- Microsoft: Phi-3 Mini 128K Instruct(Tools)
-- Microsoft: Phi-3.5 Mini 128K Instruct(Tools)
-- Microsoft: MAI DS R1
-- Microsoft: MAI DS R1 (free)
-- Microsoft: Phi 4
-- Microsoft: Phi 4 Multimodal Instruct
-- Microsoft: Phi 4 Reasoning
-- Microsoft: Phi 4 Reasoning Plus
-- Microsoft: Phi-3 Medium 4K Instruct
-
-#### MiniMax
-
-- MiniMax: MiniMax M1
-- MiniMax: MiniMax-01
-
-#### Mistral
-
-- Mistral: Codestral 2501(Tools)
-- Mistral: Codestral 2508(Tools)
-- Mistral: Devstral Medium(Tools)
-- Mistral: Devstral Small 2505(Tools)
-- Mistral: Devstral Small 2505 (free)(Tools)
-- Mistral: Magistral Medium 2506(Tools)
-- Mistral: Magistral Medium 2506 (thinking)(Tools)
-- Mistral: Magistral Small 2506(Tools)
-- Mistral: Ministral 8B(Tools)
-- Mistral: Mistral 7B Instruct(Tools)
-- Mistral: Mistral 7B Instruct (free)(Tools)
-- Mistral: Mistral 7B Instruct v0.3(Tools)
-- Mistral: Mistral Medium 3(Tools)
-- Mistral: Mistral Medium 3.1(Tools)
-- Mistral: Mistral Small 3.1 24B(Tools)
-- Mistral: Mistral Small 3.1 24B (free)(Tools)
-- Mistral: Mistral Small 3.2 24B (free)(Tools)
-- Mistral: Mixtral 8x22B Instruct(Tools)
-- Mistral: Mixtral 8x7B Instruct(Tools)
-- Mistral: Pixtral Large 2411(Tools)
-- Mistral: Saba(Tools)
-- Mistral: Codestral Mamba
-- Mistral: Devstral Small 1.1
-- Mistral: Ministral 3B
-- Mistral: Mistral 7B Instruct v0.1
-- Mistral: Mistral 7B Instruct v0.2
-- Mistral: Mistral Nemo
-- Mistral: Mistral Nemo (free)
-- Mistral: Mistral Small 3
-- Mistral: Mistral Small 3 (free)
-- Mistral: Mistral Small 3.2 24B
-- Mistral: Mixtral 8x22B (base)
-- Mistral: Pixtral 12B
-
-#### MoonshotAI
-
-- MoonshotAI: Kimi K2 (free)(Tools)
-- MoonshotAI: Kimi Dev 72B
-- MoonshotAI: Kimi Dev 72B (free)
-- MoonshotAI: Kimi K2
-- MoonshotAI: Kimi VL A3B Thinking
-- MoonshotAI: Kimi VL A3B Thinking (free)
-- MoonshotAI: Moonlight 16B A3B Instruct
-
-#### Morph
-
-- Morph: Fast Apply
-- Morph: Morph V3 Fast
-- Morph: Morph V3 Large
-
-#### NVIDIA
-
-- NVIDIA: Llama 3.1 Nemotron 70B Instruct(Tools)
-- NVIDIA: Llama 3.1 Nemotron Nano 8B v1
-- NVIDIA: Llama 3.1 Nemotron Ultra 253B v1
-- NVIDIA: Llama 3.1 Nemotron Ultra 253B v1 (free)
-- NVIDIA: Llama 3.3 Nemotron Super 49B v1
-- NVIDIA: Nemotron-4 340B Instruct
-
-#### NeverSleep
-
-- NeverSleep: Llama 3 Lumimaid 70B
-- NeverSleep: Llama 3 Lumimaid 8B
-- NeverSleep: Lumimaid v0.2 70B
-- NeverSleep: Lumimaid v0.2 8B
-
-#### Nous
-
-- Nous: Hermes 4 405B(Tools)
-- Nous: Hermes 4 70B(Tools)
-- Nous: Capybara 34B
-- Nous: Capybara 7B
-- Nous: DeepHermes 3 Llama 3 8B Preview (free)
-- Nous: DeepHermes 3 Mistral 24B Preview
-- Nous: Hermes 13B
-- Nous: Hermes 2 Mistral 7B DPO
-- Nous: Hermes 2 Mixtral 8x7B DPO
-- Nous: Hermes 2 Mixtral 8x7B SFT
-- Nous: Hermes 2 Theta 8B
-- Nous: Hermes 2 Vision 7B (alpha)
-- Nous: Hermes 2 Yi 34B
-- Nous: Hermes 3 405B Instruct
-- Nous: Hermes 3 70B Instruct
-- Nous: Hermes 70B
-
-#### NousResearch
-
-- NousResearch: Hermes 2 Pro - Llama-3 8B
-
-#### OpenAI
-
-- OpenAI: Codex Mini(Tools)
-- OpenAI: GPT-3.5 Turbo(Tools)
-- OpenAI: GPT-3.5 Turbo (older v0613)(Tools)
-- OpenAI: GPT-3.5 Turbo 16k(Tools)
-- OpenAI: GPT-4(Tools)
-- OpenAI: GPT-4 (older v0314)(Tools)
-- OpenAI: GPT-4 Turbo(Tools)
-- OpenAI: GPT-4 Turbo (older v1106)(Tools)
-- OpenAI: GPT-4 Turbo Preview(Tools)
-- OpenAI: GPT-4.1(Tools)
-- OpenAI: GPT-4.1 Mini(Tools)
-- OpenAI: GPT-4.1 Nano(Tools)
-- OpenAI: GPT-4o(Tools)
-- OpenAI: GPT-4o (2024-05-13)(Tools)
-- OpenAI: GPT-4o (2024-08-06)(Tools)
-- OpenAI: GPT-4o (2024-11-20)(Tools)
-- OpenAI: GPT-4o (extended)(Tools)
-- OpenAI: GPT-4o Audio(Tools)
-- OpenAI: GPT-4o-mini(Tools)
-- OpenAI: GPT-4o-mini (2024-07-18)(Tools)
-- OpenAI: GPT-5(Tools)
-- OpenAI: GPT-5 Mini(Tools)
-- OpenAI: GPT-5 Nano(Tools)
-- OpenAI: o1(Tools)
-- OpenAI: o3(Tools)
-- OpenAI: o3 Mini(Tools)
-- OpenAI: o3 Mini High(Tools)
-- OpenAI: o3 Pro(Tools)
-- OpenAI: o4 Mini(Tools)
-- OpenAI: o4 Mini High(Tools)
-- OpenAI: ChatGPT-4o
-- OpenAI: GPT-3.5 Turbo (older v0301)
-- OpenAI: GPT-3.5 Turbo 16k
-- OpenAI: GPT-3.5 Turbo 16k (older v1106)
-- OpenAI: GPT-3.5 Turbo Instruct
-- OpenAI: GPT-4 32k
-- OpenAI: GPT-4 32k (older v0314)
-- OpenAI: GPT-4 Vision
-- OpenAI: GPT-4.5 (Preview)
-- OpenAI: GPT-4o Search Preview
-- OpenAI: GPT-4o-mini Search Preview
-- OpenAI: GPT-5 Chat
-- OpenAI: gpt-oss-120b
-- OpenAI: gpt-oss-120b (free)
-- OpenAI: gpt-oss-20b
-- OpenAI: gpt-oss-20b (free)
-- OpenAI: o1-mini
-- OpenAI: o1-mini (2024-09-12)
-- OpenAI: o1-preview
-- OpenAI: o1-preview (2024-09-12)
-- OpenAI: o1-pro
-
-#### OpenGVLab
-
-- OpenGVLab: InternVL3 14B
-- OpenGVLab: InternVL3 2B
-
-#### Other
-
-- Mistral Large(Tools)
-- Mistral Large 2407(Tools)
-- Mistral Large 2411(Tools)
-- Mistral Small(Tools)
-- Mistral Tiny(Tools)
-- No Tools
-- Airoboros 70B
-- Auto Router
-- Bagel 34B v0.2
-- Chronos Hermes 13B v2
-- Cinematika 7B (alpha)
-- Cypher Alpha
-- DeepSeek V2.5
-- Dolphin 2.6 Mixtral 8x7B 🐬
-- Dolphin 2.9.2 Mixtral 8x22B 🐬
-- Dolphin Llama 3 70B 🐬
-- Dolphin3.0 Mistral 24B
-- Dolphin3.0 Mistral 24B (free)
-- Dolphin3.0 R1 Mistral 24B
-- Dolphin3.0 R1 Mistral 24B (free)
-- EVA Llama 3.33 70B
-- EVA Qwen2.5 14B
-- EVA Qwen2.5 32B
-- EVA Qwen2.5 72B
-- Fimbulvetr 11B v2
-- Goliath 120B
-- Horizon Alpha
-- Horizon Beta
-- Llama 3.1 Tulu 3 405B
-- Llama Guard 3 8B
-- LLaVA 13B
-- LLaVA v1.6 34B
-- lzlv 70B
-- Magnum 72B
-- Magnum v2 72B
-- Magnum v4 72B
-- Midnight Rose 70B
-- Mistral Medium
-- Mistral Nemo 12B Celeste
-- Mistral OpenOrca 7B
-- MythoMax 13B
-- MythoMist 7B
-- Neural Chat 7B v3.1
-- Noromaid 20B
-- Noromaid Mixtral 8x7B Instruct
-- OLMo 7B Instruct
-- OlympicCoder 32B
-- OpenChat 3.5 7B
-- OpenChat 3.6 8B
-- OpenHands LM 32B V0.1
-- OpenHermes 2 Mistral 7B
-- OpenHermes 2.5 Mistral 7B
-- Optimus Alpha
-- Psyfighter 13B
-- Psyfighter v2 13B
-- Qrwkv 72B
-- Quasar Alpha
-- Qwen 1.5 110B Chat
-- Qwen 1.5 14B Chat
-- Qwen 1.5 32B Chat
-- Qwen 1.5 4B Chat
-- Qwen 1.5 72B Chat
-- Qwen 1.5 7B Chat
-- Qwen 2 72B Instruct
-- Qwen 2 7B Instruct
-- Qwen2.5 72B Instruct
-- Qwen2.5 72B Instruct (free)
-- Qwen2.5 7B Instruct
-- Qwen2.5 Coder 32B Instruct
-- Qwen2.5 Coder 32B Instruct (free)
-- Reflection 70B
-- ReMM SLERP 13B
-- RWKV v5 3B AI Town
-- RWKV v5 World 3B
-- SorcererLM 8x22B
-- StarCoder2 15B Instruct
-- StripedHyena Hessian 7B (base)
-- StripedHyena Nous 7B
-- Switchpoint Router
-- Synthia 70B
-- Toppy M 7B
-- Typhoon2 70B Instruct
-- Typhoon2 8B Instruct
-- WizardLM-2 7B
-- WizardLM-2 8x22B
-- Xwin 70B
-- Yi 1.5 34B Chat
-- Yi 34B (base)
-- Yi 34B 200K
-- Yi 34B Chat
-- Yi 6B (base)
-- Zephyr 141B-A35B
-
-#### Perplexity
-- Perplexity: Llama 3.1 Sonar 70B Online
-- Perplexity: Llama 3.1 Sonar 8B Online
-- Perplexity: Llama3 Sonar 70B
-- Perplexity: Llama3 Sonar 70B Online
-- Perplexity: Llama3 Sonar 8B
-- Perplexity: Llama3 Sonar 8B Online
-- Perplexity: R1 1776
-- Perplexity: Sonar
-- Perplexity: Sonar Deep Research
-- Perplexity: Sonar Pro
-- Perplexity: Sonar Reasoning
-- Perplexity: Sonar Reasoning Pro
-
-#### Phind
-- Phind: CodeLlama 34B v2
-
-#### Pygmalion
-- Pygmalion: Mythalion 13B
-
-#### Qwen
-- Qwen: Qwen-Max(Tools)
-- Qwen: Qwen-Plus(Tools)
-- Qwen: Qwen-Turbo(Tools)
-- Qwen: Qwen3 14B(Tools)
-- Qwen: Qwen3 235B A22B(Tools)
-- Qwen: Qwen3 235B A22B (free)(Tools)
-- Qwen: Qwen3 235B A22B Thinking 2507(Tools)
-- Qwen: Qwen3 30B A3B Instruct 2507(Tools)
-- Qwen: Qwen3 30B A3B Thinking 2507(Tools)
-- Qwen: Qwen3 4B (free)(Tools)
-- Qwen: Qwen3 Coder 30B A3B Instruct(Tools)
-- Qwen: Qwen3 Coder 480B A35B(Tools)
-- Qwen: Qwen3 Coder 480B A35B (free)(Tools)
-- Qwen: Qwen VL Max
-- Qwen: Qwen VL Plus
-- Qwen: Qwen2.5 32B Instruct
-- Qwen: Qwen2.5 Coder 7B Instruct
-- Qwen: Qwen2.5 VL 32B Instruct
-- Qwen: Qwen2.5 VL 32B Instruct (free)
-- Qwen: Qwen2.5 VL 3B Instruct
-- Qwen: Qwen2.5 VL 72B Instruct
-- Qwen: Qwen2.5 VL 72B Instruct (free)
-- Qwen: Qwen2.5-VL 7B Instruct
-- Qwen: Qwen3 0.6B
-- Qwen: Qwen3 1.7B
-- Qwen: Qwen3 14B (free)
-- Qwen: Qwen3 235B A22B Instruct 2507
-- Qwen: Qwen3 30B A3B
-- Qwen: Qwen3 30B A3B (free)
-- Qwen: Qwen3 32B
-- Qwen: Qwen3 8B
-- Qwen: Qwen3 8B (free)
-- Qwen: QwQ 32B
-- Qwen: QwQ 32B (free)
-- Qwen: QwQ 32B Preview
-
-#### RWKV v5
-- RWKV v5: Eagle 7B
-
-#### Reka
-- Reka: Flash 3 (free)
-
-#### SW
-- SW / Llama 3.3 70b Instruct(Tools)
-
-#### Sao10K
-- Sao10K: Llama 3 8B Lunaris
-- Sao10K: Llama 3 Stheno 8B v3.3 32K
-- Sao10K: Llama 3.1 70B Hanami x1
-- Sao10K: Llama 3.1 Euryale 70B v2.2
-- Sao10K: Llama 3.3 Euryale 70B
-
-#### Sao10k
-- Sao10k: Llama 3 Euryale 70B v2.1
-
-#### Sarvam AI
-- Sarvam AI: Sarvam-M
-
-#### SentientAGI
-- SentientAGI: Dobby Mini Plus Llama 3.1 8B
-
-#### Shisa AI
-- Shisa AI: Shisa V2 Llama 3.3 70B
-- Shisa AI: Shisa V2 Llama 3.3 70B (free)
-
-#### Snowflake
-- Snowflake: Arctic Instruct
-
-#### SteelSkull
-- SteelSkull: L3.3 Electra R1 70B
-
-#### Swallow
-- Swallow: Llama 3.1 Swallow 8B Instruct V0.3
-
-#### THUDM
-- THUDM: GLM 4 32B
-- THUDM: GLM 4 9B
-- THUDM: GLM 4.1V 9B Thinking
-- THUDM: GLM Z1 32B
-- THUDM: GLM Z1 9B
-- THUDM: GLM Z1 Rumination 32B
-
-#### TNG
-- TNG: DeepSeek R1T Chimera
-- TNG: DeepSeek R1T Chimera (free)
-- TNG: DeepSeek R1T2 Chimera (free)
-
-#### Tencent
-- Tencent: Hunyuan A13B Instruct
-- Tencent: Hunyuan A13B Instruct (free)
-
-#### TheDrummer
-- TheDrummer: Rocinante 12B(Tools)
-- TheDrummer: UnslopNemo 12B(Tools)
-- TheDrummer: Anubis 70B V1.1
-- TheDrummer: Anubis Pro 105B V1
-- TheDrummer: Skyfall 36B V2
-- TheDrummer: Valkyrie 49B V1
-
-#### Venice
-- Venice: Uncensored (free)
-
-#### Z.AI
-- Z.AI: GLM 4 32B(Tools)
-- Z.AI: GLM 4.5(Tools)
-- Z.AI: GLM 4.5 Air(Tools)
-- Z.AI: GLM 4.5V(Tools)
-- Z.AI: GLM 4.5 Air (free)
-
-#### xAI
-- xAI: Grok 2 1212(Tools)
-- xAI: Grok 3(Tools)
-- xAI: Grok 3 Beta(Tools)
-- xAI: Grok 3 Mini(Tools)
-- xAI: Grok 3 Mini Beta(Tools)
-- xAI: Grok 4(Tools)
-- xAI: Grok Code Fast 1(Tools)
-- xAI: Grok 2
-- xAI: Grok 2 mini
-- xAI: Grok 2 Vision 1212
-- xAI: Grok Beta
-- xAI: Grok Vision Beta
-
 
 ## Chat
 
@@ -1218,3 +518,702 @@ Our AI Agent comes equipped with robust reseller capabilities. For instance, if 
     Only do one 1 lookup per human interaction.
     Keep your replies short
     ```
+
+## List of available LLMs
+
+### 01.AI
+
+- 01.AI: Yi Large
+- 01.AI: Yi Large FC
+- 01.AI: Yi Large Turbo
+- 01.AI: Yi Vision
+
+### AI21
+
+- AI21: Jamba Large 1.7(Tools)
+- AI21: Jamba Mini 1.7(Tools)
+- AI21: Jamba 1.5 Large
+- AI21: Jamba 1.5 Mini
+- AI21: Jamba 1.6 Large
+- AI21: Jamba Instruct
+- AI21: Jamba Mini 1.6
+
+### Aetherwiing
+
+- Aetherwiing: Starcannon 12B
+
+### Agentica
+
+- Agentica: Deepcoder 14B Preview
+- Agentica: Deepcoder 14B Preview (free)
+
+### AionLabs
+
+- AionLabs: Aion-1.0
+- AionLabs: Aion-1.0-Mini
+- AionLabs: Aion-RP 1.0 (8B)
+
+### AlfredPros
+
+- AlfredPros: CodeLLaMa 7B Instruct Solidity
+
+### AllenAI
+
+- AllenAI: Molmo 7B D
+- AllenAI: Olmo 2 32B Instruct
+
+### Amazon
+
+- Amazon: Nova Lite 1.0(Tools)
+- Amazon: Nova Micro 1.0(Tools)
+- Amazon: Nova Pro 1.0(Tools)
+
+### Anthropic
+
+- Anthropic: Claude 3 Haiku(Tools)
+- Anthropic: Claude 3 Opus(Tools)
+- Anthropic: Claude 3.5 Haiku(Tools)
+- Anthropic: Claude 3.5 Haiku (2024-10-22)(Tools)
+- Anthropic: Claude 3.5 Sonnet(Tools)
+- Anthropic: Claude 3.5 Sonnet (2024-06-20)(Tools)
+- Anthropic: Claude 3.7 Sonnet(Tools)
+- Anthropic: Claude 3.7 Sonnet (thinking)(Tools)
+- Anthropic: Claude Opus 4(Tools)
+- Anthropic: Claude Opus 4.1(Tools)
+- Anthropic: Claude Sonnet 4(Tools)
+- Anthropic: Claude 3 Sonnet
+- Anthropic: Claude Instant v1
+- Anthropic: Claude Instant v1.0
+- Anthropic: Claude Instant v1.1
+- Anthropic: Claude v1
+- Anthropic: Claude v1.2
+- Anthropic: Claude v2
+- Anthropic: Claude v2.0
+- Anthropic: Claude v2.1
+
+### Arcee AI
+
+- Arcee AI: Virtuoso Large(Tools)
+- Arcee AI: Arcee Blitz
+- Arcee AI: Caller Large
+- Arcee AI: Coder Large
+- Arcee AI: Maestro Reasoning
+- Arcee AI: Spotlight
+- Arcee AI: Virtuoso Medium V2
+
+### ArliAI
+
+- ArliAI: QwQ 32B RpR v1
+- ArliAI: QwQ 32B RpR v1 (free)
+
+### Baidu
+
+- Baidu: ERNIE 4.5 21B A3B
+- Baidu: ERNIE 4.5 300B A47B
+- Baidu: ERNIE 4.5 VL 28B A3B
+- Baidu: ERNIE 4.5 VL 424B A47B
+
+### Bytedance
+
+- Bytedance: UI-TARS 72B
+- Bytedance: UI-TARS 7B
+
+### Cohere
+
+- Cohere: Command R(Tools)
+- Cohere: Command R (03-2024)(Tools)
+- Cohere: Command R (08-2024)(Tools)
+- Cohere: Command R+(Tools)
+- Cohere: Command R+ (04-2024)(Tools)
+- Cohere: Command R+ (08-2024)(Tools)
+- Cohere: Command
+- Cohere: Command A
+- Cohere: Command R7B (12-2024)
+
+### DI
+
+- DI / Llama-3.3-70B-Instruct-Turbo(Tools)
+- DI / Phi4 Multi-Modal Instruct(Tools)
+
+### Databricks
+
+- Databricks: DBRX 132B Instruct
+
+### DeepSeek
+
+- DeepSeek: DeepSeek V3 0324(Tools)
+- DeepSeek: DeepSeek V3 0324 (free)(Tools)
+- DeepSeek: DeepSeek V3.1(Tools)
+- DeepSeek: DeepSeek Prover V2
+- DeepSeek: Deepseek R1 0528 Qwen3 8B
+- DeepSeek: Deepseek R1 0528 Qwen3 8B (free)
+- DeepSeek: DeepSeek R1 Zero
+- DeepSeek: DeepSeek V3
+- DeepSeek: DeepSeek V3 Base
+- DeepSeek: DeepSeek V3.1 (free)
+- DeepSeek: DeepSeek V3.1 Base
+- DeepSeek: R1
+- DeepSeek: R1 (free)
+- DeepSeek: R1 0528
+- DeepSeek: R1 0528 (free)
+- DeepSeek: R1 Distill Llama 70B
+- DeepSeek: R1 Distill Llama 70B (free)
+- DeepSeek: R1 Distill Llama 8B
+- DeepSeek: R1 Distill Qwen 1.5B
+- DeepSeek: R1 Distill Qwen 14B
+- DeepSeek: R1 Distill Qwen 14B (free)
+- DeepSeek: R1 Distill Qwen 32B
+- DeepSeek: R1 Distill Qwen 7B
+
+### EleutherAI
+
+- EleutherAI: Llemma 7b
+
+### Fireworks
+
+- Fireworks: FireLLaVA 13B
+
+### G
+
+- G / Llama 3.3 70b versatile(Tools)
+- G / Meta llama/llama prompt guard 2 22m
+- G / Qwen/qwen3 32b
+- G / Allam 2 7b
+- G / Moonshotai/kimi k2 instruct 0905
+- G / Meta llama/llama 4 maverick 17b 128e instruct
+- G / Llama 3.1 8b instant
+- G / Whisper large v3 turbo
+- G / Meta llama/llama prompt guard 2 86m
+- G / Playai tts arabic
+- G / Deepseek r1 distill llama 70b
+- G / Openai/gpt oss 20b
+- G / Gemma2 9b it
+- G / Fast/compound mini
+- G / Fast/compound
+- G / Moonshotai/kimi k2 instruct
+- G / Playai tts
+- G / Whisper large v3
+- G / Meta llama/llama 4 scout 17b 16e instruct
+- G / Meta llama/llama guard 4 12b
+- G / Openai/gpt oss 120b
+
+### Google
+
+- Google: Gemini 1.5 Flash(Tools)
+- Google: Gemini 1.5 Flash 8B(Tools)
+- Google: Gemini 1.5 Pro(Tools)
+- Google: Gemini 2.0 Flash(Tools)
+- Google: Gemini 2.0 Flash Experimental (free)(Tools)
+- Google: Gemini 2.0 Flash Lite(Tools)
+- Google: Gemini 2.5 Flash(Tools)
+- Google: Gemini 2.5 Flash Lite(Tools)
+- Google: Gemini 2.5 Flash Lite Preview 06-17(Tools)
+- Google: Gemini 2.5 Pro(Tools)
+- Google: Gemini 2.5 Pro Experimental(Tools)
+- Google: Gemini 2.5 Pro Preview 05-06(Tools)
+- Google: Gemini 2.5 Pro Preview 06-05(Tools)
+- Google: Gemini 1.5 Flash Experimental
+- Google: Gemini 1.5 Pro Experimental
+- Google: Gemini 2.5 Flash Image Preview
+- Google: Gemini 2.5 Flash Image Preview (free)
+- Google: Gemini 2.5 Flash Preview 04-17
+- Google: Gemini 2.5 Flash Preview 05-20
+- Google: Gemini Experimental 1114
+- Google: Gemini Experimental 1121
+- Google: Gemma 1 2B
+- Google: Gemma 2 27B
+- Google: Gemma 2 9B
+- Google: Gemma 2 9B (free)
+- Google: Gemma 3 12B
+- Google: Gemma 3 12B (free)
+- Google: Gemma 3 1B
+- Google: Gemma 3 27B
+- Google: Gemma 3 27B (free)
+- Google: Gemma 3 4B
+- Google: Gemma 3 4B (free)
+- Google: Gemma 3n 2B (free)
+- Google: Gemma 3n 4B
+- Google: Gemma 3n 4B (free)
+- Google: Gemma 7B
+- Google: PaLM 2 Chat
+- Google: PaLM 2 Chat 32k
+- Google: PaLM 2 Code Chat
+- Google: PaLM 2 Code Chat 32k
+
+### Hugging Face
+
+- Hugging Face: Zephyr 7B
+
+### Inception
+
+- Inception: Mercury(Tools)
+- Inception: Mercury Coder(Tools)
+
+### Infermatic
+
+- Infermatic: Mistral Nemo Inferor 12B
+
+### Inflatebot
+
+- Inflatebot: Mag Mell R1 12B
+
+### Inflection
+
+- Inflection: Inflection 3 Pi
+- Inflection: Inflection 3 Productivity
+
+### LatitudeGames
+
+- LatitudeGames: Wayfarer Large 70B Llama 3.3
+
+### Liquid
+
+- Liquid: LFM 3B
+- Liquid: LFM 40B MoE
+- Liquid: LFM 7B
+
+### Lynn
+
+- Lynn: Llama 3 Soliloquy 7B v3 32K
+- Lynn: Llama 3 Soliloquy 8B v2
+
+### Mancer
+
+- Mancer: Weaver (alpha)
+
+### Meta
+
+- Meta: Llama 3 70B Instruct(Tools)
+- Meta: Llama 3 8B Instruct(Tools)
+- Meta: Llama 3.1 405B Instruct(Tools)
+- Meta: Llama 3.1 70B Instruct(Tools)
+- Meta: Llama 3.1 8B Instruct(Tools)
+- Meta: Llama 3.3 70B Instruct(Tools)
+- Meta: Llama 3.3 70B Instruct (free)(Tools)
+- Meta: Llama 3.3 8B Instruct (free)(Tools)
+- Meta: Llama 4 Maverick (free)(Tools)
+- Meta: Llama 4 Scout(Tools)
+- Meta: Llama 4 Scout (free)(Tools)
+- Meta: CodeLlama 34B Instruct
+- Meta: CodeLlama 70B Instruct
+- Meta: Llama 2 13B Chat
+- Meta: Llama 2 70B Chat
+- Meta: Llama 3 70B (Base)
+- Meta: Llama 3 8B (Base)
+- Meta: Llama 3.1 405B (base)
+- Meta: Llama 3.1 405B Instruct (free)
+- Meta: Llama 3.2 11B Vision Instruct
+- Meta: Llama 3.2 1B Instruct
+- Meta: Llama 3.2 3B Instruct
+- Meta: Llama 3.2 3B Instruct (free)
+- Meta: Llama 3.2 90B Vision Instruct
+- Meta: Llama 4 Maverick
+- Meta: Llama Guard 4 12B
+- Meta: LlamaGuard 2 8B
+
+### Microsoft
+
+- Microsoft: Phi-3 Medium 128K Instruct(Tools)
+- Microsoft: Phi-3 Mini 128K Instruct(Tools)
+- Microsoft: Phi-3.5 Mini 128K Instruct(Tools)
+- Microsoft: MAI DS R1
+- Microsoft: MAI DS R1 (free)
+- Microsoft: Phi 4
+- Microsoft: Phi 4 Multimodal Instruct
+- Microsoft: Phi 4 Reasoning
+- Microsoft: Phi 4 Reasoning Plus
+- Microsoft: Phi-3 Medium 4K Instruct
+
+### MiniMax
+
+- MiniMax: MiniMax M1
+- MiniMax: MiniMax-01
+
+### Mistral
+
+- Mistral: Codestral 2501(Tools)
+- Mistral: Codestral 2508(Tools)
+- Mistral: Devstral Medium(Tools)
+- Mistral: Devstral Small 2505(Tools)
+- Mistral: Devstral Small 2505 (free)(Tools)
+- Mistral: Magistral Medium 2506(Tools)
+- Mistral: Magistral Medium 2506 (thinking)(Tools)
+- Mistral: Magistral Small 2506(Tools)
+- Mistral: Ministral 8B(Tools)
+- Mistral: Mistral 7B Instruct(Tools)
+- Mistral: Mistral 7B Instruct (free)(Tools)
+- Mistral: Mistral 7B Instruct v0.3(Tools)
+- Mistral: Mistral Medium 3(Tools)
+- Mistral: Mistral Medium 3.1(Tools)
+- Mistral: Mistral Small 3.1 24B(Tools)
+- Mistral: Mistral Small 3.1 24B (free)(Tools)
+- Mistral: Mistral Small 3.2 24B (free)(Tools)
+- Mistral: Mixtral 8x22B Instruct(Tools)
+- Mistral: Mixtral 8x7B Instruct(Tools)
+- Mistral: Pixtral Large 2411(Tools)
+- Mistral: Saba(Tools)
+- Mistral: Codestral Mamba
+- Mistral: Devstral Small 1.1
+- Mistral: Ministral 3B
+- Mistral: Mistral 7B Instruct v0.1
+- Mistral: Mistral 7B Instruct v0.2
+- Mistral: Mistral Nemo
+- Mistral: Mistral Nemo (free)
+- Mistral: Mistral Small 3
+- Mistral: Mistral Small 3 (free)
+- Mistral: Mistral Small 3.2 24B
+- Mistral: Mixtral 8x22B (base)
+- Mistral: Pixtral 12B
+
+### MoonshotAI
+
+- MoonshotAI: Kimi K2 (free)(Tools)
+- MoonshotAI: Kimi Dev 72B
+- MoonshotAI: Kimi Dev 72B (free)
+- MoonshotAI: Kimi K2
+- MoonshotAI: Kimi VL A3B Thinking
+- MoonshotAI: Kimi VL A3B Thinking (free)
+- MoonshotAI: Moonlight 16B A3B Instruct
+
+### Morph
+
+- Morph: Fast Apply
+- Morph: Morph V3 Fast
+- Morph: Morph V3 Large
+
+### NVIDIA
+
+- NVIDIA: Llama 3.1 Nemotron 70B Instruct(Tools)
+- NVIDIA: Llama 3.1 Nemotron Nano 8B v1
+- NVIDIA: Llama 3.1 Nemotron Ultra 253B v1
+- NVIDIA: Llama 3.1 Nemotron Ultra 253B v1 (free)
+- NVIDIA: Llama 3.3 Nemotron Super 49B v1
+- NVIDIA: Nemotron-4 340B Instruct
+
+### NeverSleep
+
+- NeverSleep: Llama 3 Lumimaid 70B
+- NeverSleep: Llama 3 Lumimaid 8B
+- NeverSleep: Lumimaid v0.2 70B
+- NeverSleep: Lumimaid v0.2 8B
+
+### Nous
+
+- Nous: Hermes 4 405B(Tools)
+- Nous: Hermes 4 70B(Tools)
+- Nous: Capybara 34B
+- Nous: Capybara 7B
+- Nous: DeepHermes 3 Llama 3 8B Preview (free)
+- Nous: DeepHermes 3 Mistral 24B Preview
+- Nous: Hermes 13B
+- Nous: Hermes 2 Mistral 7B DPO
+- Nous: Hermes 2 Mixtral 8x7B DPO
+- Nous: Hermes 2 Mixtral 8x7B SFT
+- Nous: Hermes 2 Theta 8B
+- Nous: Hermes 2 Vision 7B (alpha)
+- Nous: Hermes 2 Yi 34B
+- Nous: Hermes 3 405B Instruct
+- Nous: Hermes 3 70B Instruct
+- Nous: Hermes 70B
+
+### NousResearch
+
+- NousResearch: Hermes 2 Pro - Llama-3 8B
+
+### OpenAI
+
+- OpenAI: Codex Mini(Tools)
+- OpenAI: GPT-3.5 Turbo(Tools)
+- OpenAI: GPT-3.5 Turbo (older v0613)(Tools)
+- OpenAI: GPT-3.5 Turbo 16k(Tools)
+- OpenAI: GPT-4(Tools)
+- OpenAI: GPT-4 (older v0314)(Tools)
+- OpenAI: GPT-4 Turbo(Tools)
+- OpenAI: GPT-4 Turbo (older v1106)(Tools)
+- OpenAI: GPT-4 Turbo Preview(Tools)
+- OpenAI: GPT-4.1(Tools)
+- OpenAI: GPT-4.1 Mini(Tools)
+- OpenAI: GPT-4.1 Nano(Tools)
+- OpenAI: GPT-4o(Tools)
+- OpenAI: GPT-4o (2024-05-13)(Tools)
+- OpenAI: GPT-4o (2024-08-06)(Tools)
+- OpenAI: GPT-4o (2024-11-20)(Tools)
+- OpenAI: GPT-4o (extended)(Tools)
+- OpenAI: GPT-4o Audio(Tools)
+- OpenAI: GPT-4o-mini(Tools)
+- OpenAI: GPT-4o-mini (2024-07-18)(Tools)
+- OpenAI: GPT-5(Tools)
+- OpenAI: GPT-5 Mini(Tools)
+- OpenAI: GPT-5 Nano(Tools)
+- OpenAI: o1(Tools)
+- OpenAI: o3(Tools)
+- OpenAI: o3 Mini(Tools)
+- OpenAI: o3 Mini High(Tools)
+- OpenAI: o3 Pro(Tools)
+- OpenAI: o4 Mini(Tools)
+- OpenAI: o4 Mini High(Tools)
+- OpenAI: ChatGPT-4o
+- OpenAI: GPT-3.5 Turbo (older v0301)
+- OpenAI: GPT-3.5 Turbo 16k
+- OpenAI: GPT-3.5 Turbo 16k (older v1106)
+- OpenAI: GPT-3.5 Turbo Instruct
+- OpenAI: GPT-4 32k
+- OpenAI: GPT-4 32k (older v0314)
+- OpenAI: GPT-4 Vision
+- OpenAI: GPT-4.5 (Preview)
+- OpenAI: GPT-4o Search Preview
+- OpenAI: GPT-4o-mini Search Preview
+- OpenAI: GPT-5 Chat
+- OpenAI: gpt-oss-120b
+- OpenAI: gpt-oss-120b (free)
+- OpenAI: gpt-oss-20b
+- OpenAI: gpt-oss-20b (free)
+- OpenAI: o1-mini
+- OpenAI: o1-mini (2024-09-12)
+- OpenAI: o1-preview
+- OpenAI: o1-preview (2024-09-12)
+- OpenAI: o1-pro
+
+### OpenGVLab
+
+- OpenGVLab: InternVL3 14B
+- OpenGVLab: InternVL3 2B
+
+### Other
+
+- Mistral Large(Tools)
+- Mistral Large 2407(Tools)
+- Mistral Large 2411(Tools)
+- Mistral Small(Tools)
+- Mistral Tiny(Tools)
+- No Tools
+- Airoboros 70B
+- Auto Router
+- Bagel 34B v0.2
+- Chronos Hermes 13B v2
+- Cinematika 7B (alpha)
+- Cypher Alpha
+- DeepSeek V2.5
+- Dolphin 2.6 Mixtral 8x7B 🐬
+- Dolphin 2.9.2 Mixtral 8x22B 🐬
+- Dolphin Llama 3 70B 🐬
+- Dolphin3.0 Mistral 24B
+- Dolphin3.0 Mistral 24B (free)
+- Dolphin3.0 R1 Mistral 24B
+- Dolphin3.0 R1 Mistral 24B (free)
+- EVA Llama 3.33 70B
+- EVA Qwen2.5 14B
+- EVA Qwen2.5 32B
+- EVA Qwen2.5 72B
+- Fimbulvetr 11B v2
+- Goliath 120B
+- Horizon Alpha
+- Horizon Beta
+- Llama 3.1 Tulu 3 405B
+- Llama Guard 3 8B
+- LLaVA 13B
+- LLaVA v1.6 34B
+- lzlv 70B
+- Magnum 72B
+- Magnum v2 72B
+- Magnum v4 72B
+- Midnight Rose 70B
+- Mistral Medium
+- Mistral Nemo 12B Celeste
+- Mistral OpenOrca 7B
+- MythoMax 13B
+- MythoMist 7B
+- Neural Chat 7B v3.1
+- Noromaid 20B
+- Noromaid Mixtral 8x7B Instruct
+- OLMo 7B Instruct
+- OlympicCoder 32B
+- OpenChat 3.5 7B
+- OpenChat 3.6 8B
+- OpenHands LM 32B V0.1
+- OpenHermes 2 Mistral 7B
+- OpenHermes 2.5 Mistral 7B
+- Optimus Alpha
+- Psyfighter 13B
+- Psyfighter v2 13B
+- Qrwkv 72B
+- Quasar Alpha
+- Qwen 1.5 110B Chat
+- Qwen 1.5 14B Chat
+- Qwen 1.5 32B Chat
+- Qwen 1.5 4B Chat
+- Qwen 1.5 72B Chat
+- Qwen 1.5 7B Chat
+- Qwen 2 72B Instruct
+- Qwen 2 7B Instruct
+- Qwen2.5 72B Instruct
+- Qwen2.5 72B Instruct (free)
+- Qwen2.5 7B Instruct
+- Qwen2.5 Coder 32B Instruct
+- Qwen2.5 Coder 32B Instruct (free)
+- Reflection 70B
+- ReMM SLERP 13B
+- RWKV v5 3B AI Town
+- RWKV v5 World 3B
+- SorcererLM 8x22B
+- StarCoder2 15B Instruct
+- StripedHyena Hessian 7B (base)
+- StripedHyena Nous 7B
+- Switchpoint Router
+- Synthia 70B
+- Toppy M 7B
+- Typhoon2 70B Instruct
+- Typhoon2 8B Instruct
+- WizardLM-2 7B
+- WizardLM-2 8x22B
+- Xwin 70B
+- Yi 1.5 34B Chat
+- Yi 34B (base)
+- Yi 34B 200K
+- Yi 34B Chat
+- Yi 6B (base)
+- Zephyr 141B-A35B
+
+### Perplexity
+- Perplexity: Llama 3.1 Sonar 70B Online
+- Perplexity: Llama 3.1 Sonar 8B Online
+- Perplexity: Llama3 Sonar 70B
+- Perplexity: Llama3 Sonar 70B Online
+- Perplexity: Llama3 Sonar 8B
+- Perplexity: Llama3 Sonar 8B Online
+- Perplexity: R1 1776
+- Perplexity: Sonar
+- Perplexity: Sonar Deep Research
+- Perplexity: Sonar Pro
+- Perplexity: Sonar Reasoning
+- Perplexity: Sonar Reasoning Pro
+
+### Phind
+- Phind: CodeLlama 34B v2
+
+### Pygmalion
+- Pygmalion: Mythalion 13B
+
+### Qwen
+- Qwen: Qwen-Max(Tools)
+- Qwen: Qwen-Plus(Tools)
+- Qwen: Qwen-Turbo(Tools)
+- Qwen: Qwen3 14B(Tools)
+- Qwen: Qwen3 235B A22B(Tools)
+- Qwen: Qwen3 235B A22B (free)(Tools)
+- Qwen: Qwen3 235B A22B Thinking 2507(Tools)
+- Qwen: Qwen3 30B A3B Instruct 2507(Tools)
+- Qwen: Qwen3 30B A3B Thinking 2507(Tools)
+- Qwen: Qwen3 4B (free)(Tools)
+- Qwen: Qwen3 Coder 30B A3B Instruct(Tools)
+- Qwen: Qwen3 Coder 480B A35B(Tools)
+- Qwen: Qwen3 Coder 480B A35B (free)(Tools)
+- Qwen: Qwen VL Max
+- Qwen: Qwen VL Plus
+- Qwen: Qwen2.5 32B Instruct
+- Qwen: Qwen2.5 Coder 7B Instruct
+- Qwen: Qwen2.5 VL 32B Instruct
+- Qwen: Qwen2.5 VL 32B Instruct (free)
+- Qwen: Qwen2.5 VL 3B Instruct
+- Qwen: Qwen2.5 VL 72B Instruct
+- Qwen: Qwen2.5 VL 72B Instruct (free)
+- Qwen: Qwen2.5-VL 7B Instruct
+- Qwen: Qwen3 0.6B
+- Qwen: Qwen3 1.7B
+- Qwen: Qwen3 14B (free)
+- Qwen: Qwen3 235B A22B Instruct 2507
+- Qwen: Qwen3 30B A3B
+- Qwen: Qwen3 30B A3B (free)
+- Qwen: Qwen3 32B
+- Qwen: Qwen3 8B
+- Qwen: Qwen3 8B (free)
+- Qwen: QwQ 32B
+- Qwen: QwQ 32B (free)
+- Qwen: QwQ 32B Preview
+
+### RWKV v5
+- RWKV v5: Eagle 7B
+
+### Reka
+- Reka: Flash 3 (free)
+
+### SW
+- SW / Llama 3.3 70b Instruct(Tools)
+
+### Sao10K
+- Sao10K: Llama 3 8B Lunaris
+- Sao10K: Llama 3 Stheno 8B v3.3 32K
+- Sao10K: Llama 3.1 70B Hanami x1
+- Sao10K: Llama 3.1 Euryale 70B v2.2
+- Sao10K: Llama 3.3 Euryale 70B
+
+### Sao10k
+- Sao10k: Llama 3 Euryale 70B v2.1
+
+### Sarvam AI
+- Sarvam AI: Sarvam-M
+
+### SentientAGI
+- SentientAGI: Dobby Mini Plus Llama 3.1 8B
+
+### Shisa AI
+- Shisa AI: Shisa V2 Llama 3.3 70B
+- Shisa AI: Shisa V2 Llama 3.3 70B (free)
+
+### Snowflake
+- Snowflake: Arctic Instruct
+
+### SteelSkull
+- SteelSkull: L3.3 Electra R1 70B
+
+### Swallow
+- Swallow: Llama 3.1 Swallow 8B Instruct V0.3
+
+### THUDM
+- THUDM: GLM 4 32B
+- THUDM: GLM 4 9B
+- THUDM: GLM 4.1V 9B Thinking
+- THUDM: GLM Z1 32B
+- THUDM: GLM Z1 9B
+- THUDM: GLM Z1 Rumination 32B
+
+### TNG
+- TNG: DeepSeek R1T Chimera
+- TNG: DeepSeek R1T Chimera (free)
+- TNG: DeepSeek R1T2 Chimera (free)
+
+### Tencent
+- Tencent: Hunyuan A13B Instruct
+- Tencent: Hunyuan A13B Instruct (free)
+
+### TheDrummer
+- TheDrummer: Rocinante 12B(Tools)
+- TheDrummer: UnslopNemo 12B(Tools)
+- TheDrummer: Anubis 70B V1.1
+- TheDrummer: Anubis Pro 105B V1
+- TheDrummer: Skyfall 36B V2
+- TheDrummer: Valkyrie 49B V1
+
+### Venice
+- Venice: Uncensored (free)
+
+### Z.AI
+- Z.AI: GLM 4 32B(Tools)
+- Z.AI: GLM 4.5(Tools)
+- Z.AI: GLM 4.5 Air(Tools)
+- Z.AI: GLM 4.5V(Tools)
+- Z.AI: GLM 4.5 Air (free)
+
+### xAI
+- xAI: Grok 2 1212(Tools)
+- xAI: Grok 3(Tools)
+- xAI: Grok 3 Beta(Tools)
+- xAI: Grok 3 Mini(Tools)
+- xAI: Grok 3 Mini Beta(Tools)
+- xAI: Grok 4(Tools)
+- xAI: Grok Code Fast 1(Tools)
+- xAI: Grok 2
+- xAI: Grok 2 mini
+- xAI: Grok 2 Vision 1212
+- xAI: Grok Beta
+- xAI: Grok Vision Beta
