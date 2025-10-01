@@ -68,9 +68,8 @@ With AI-driven automation, businesses can enhance customer experience while sign
 === "Transcriber"
 
     + **Transcriber**: Select single or multiple transcriber for converting audio to text. You can select the transcriber depending on the selected platform.
-    + **Answer Machine Detection Keywords**: If the AI Agent detects a phrase (any phrase entered by the user) like "Please leave a message" at the start of the call, it will automatically disconnect.
+    + **Answer Machine Detection Keywords**: If the AI Agent detects a phrase (any phrase entered by the user) like "Please leave a message" at the start of the call, it will automatically disconnect. **Enter multiple keywords, each on a new line (*use `Enter` to separate*)**. 
     + **Transcriber Language**: The spoken language the AI Agent listens for when converting speech into text.
-    + **Answer Machine Detection Keywords**: If the AI Agent detects a phrase (any phrase entered by the user) like "Please leave a message" at the start of the call, it will automatically disconnect. **Enter multiple keywords, each on a new line (*use Enter to separate*)**. 
     + **Transcriber Timeout**: It defines the maximum time the system waits for a response during speech-to-text transcription before terminating the process. If no speech is detected within this period, the transcriber stops listening and times out. On timeout `<SILENT_TIMEOUT>` will be sent to the LLM.
     + **Transcriber Silence Threshold (sec)**: Defines the maximum duration (in seconds) the system will wait for a response from the ASR (Automatic Speech Recognition) engine. If no transcription is received within this threshold, the transcriber will stop waiting and proceed accordingly.
     
@@ -278,9 +277,9 @@ It allows you to control the flow of conversation by linking one task to another
 
     * **Condition**: The logic that triggers an AI Agent Task. If the condition evaluates as true, the defined task will run.
 
-    * **AI Agent Task**: The current task that will be executed if the condition is met.
+    * **AI Agent Task**: Its the current task.
 
-    * **Next AI Agent Task**: The task that follows once the current task is completed successfully.
+    * **Next AI Agent Task**: This task will be executed executed if the condition is met.
 
 * **Types of Conditions**
 
@@ -297,18 +296,6 @@ It allows you to control the flow of conversation by linking one task to another
       * **Entity Recognition**: If the system has captured an email address, phone number, or name.
 
       * **System Variables**: If a variable (e.g., customerID) exists or matches a value.
-
-* **Example Use Case**:
-
-    * **Condition** = default
-
-        * **AI Agent Task** = Get First Name
-
-        * **Next AI Agent Task** = Ask for Last Name
-
-    * **Condition** = if user says ‘cancel’
-
-        * **AI Agent Task** = End Conversation
 
 * **Benefits of Using Conditions**
 
