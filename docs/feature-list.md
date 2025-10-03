@@ -1,5 +1,7 @@
 # Detailed Features
 
+Please [click here](https://connexcs.com/feature-list) to have look at our comprehensive feature list.
+
 The following is a comprehensive list of features included in the latest stable version of ConnexCS.
 
 ## Customers
