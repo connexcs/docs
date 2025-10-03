@@ -22,9 +22,9 @@ See the [**Wikipedia List of SIP response codes**](https://en.wikipedia.org/wiki
 
 1. Select **`Add New Code`** on the right of the code.
 2. Select the action:
-    + `Default`: The Default action applies the system’s standard predefined behavior for the selected code without any custom modifications. <img src= "/carrier/img/reply2man.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;">
-    + `Failover` (only available for some codes): Allows the call to try the next carrier. <img src= "/carrier/img/reply3man.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
-    + `Replace`: Enter the **New Code** and **New Reason**. <img src= "/carrier/img/reply4man.png" width= "350" style="border: 2px solid #4472C4; border-radius: 8px;">
+    + `Default`: The Default action applies the system’s standard predefined behavior for the selected code without any custom modifications. <img src= "/carrier/img/reply2man.png" width= "450" style="border: 2px solid #4472C4; border-radius: 8px;">
+    + `Failover` (only available for some codes): Allows the call to try the next carrier. <img src= "/carrier/img/reply3man.png" width= "450" style="border: 2px solid #4472C4; border-radius: 8px;">
+    + `Replace`: Enter the **New Code** and **New Reason**. <img src= "/carrier/img/reply4man.png" width= "450" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! example "Code Replace use case"
     The customer switch expects a SIP 180 response (ringing) but only receives a 183 response (session in progress).The 180 (with SDP) instructs the SIP phone to generate ringing locally (the audio is clear because it's local), whereas the 183 (without SDP) generates ringing at the network (this may play different ringing, possibly for the local country). In this case, the modified code 180 replaces the 183 code in `Replace` (Reply Management).
