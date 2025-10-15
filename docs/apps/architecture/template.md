@@ -2,6 +2,8 @@
 
 ## Introduction
 
+ConnexCS offers a powerful templating system for automating communication.
+
 Create your own **Templates** to customise the content displayed on outbound emails/SMS, the Customer Portal, and WebPhone.
 
 ConnexCS **Templates** use the mustash-compatible template language [**Handlebars**](https://handlebarsjs.com/guide/).
