@@ -3,7 +3,7 @@
 !!! Warning
     We advise users to switch to this new [App Platform](https://docs.connexcs.com/apps/introduction/) (WebPhone App) as the previous WebPhone development has been put on hold.
 
-# Introduction
+## Introduction
 
 The ConnexCS WebPhone Application is fully customizable. It replaces the old legacy Web Phone Application.
 
@@ -113,9 +113,22 @@ PKI ensures end-point integrity, so you can be confident that the endpoint you c
 
 ### Step 3: Create Certificates
 
-1. After you configure the domains, verify the certificates in **Setup :material-menu-right: Information :material-menu-right: Certificates:
-2. If the domain isn't listed, click on `Add Certificate` and provide your domain name (for example: yourservername.host.connexcs.net).
-3. If the certificates get listed but they don't have an issue or expiry date, click on "Refresh Certificates." This may take up to 10 minutes to complete.
+There are 2 ways to create a certificate:
+
+1. Use ConnexCS's domain, for example `yourservername.host.connexcs.net`.
+
+2. Use your own domain.
+
+      1. **SIP Switch (Domain B):** Create the WebRTC domain and it's CNAME should point towards the [DNS you create](https://docs.connexcs.com/setup/settings/dns/).
+
+           1. Navigate to **Setup :material-menu-right: Settings :material-menu-right: DNS :material-menu-right:** to create your DNS.
+
+           2. Enter the domain (ex: test1), then select the checkbox for the A record for the IP of the server you want to use.
+           3. Setup a DNS (Domain Name System) record within ConnexCS, then point a `CNAME` on your domain to the ConnexCS setup domain.
+
+      2. After you configure the domains, verify the certificates in **Setup :material-menu-right: Information :material-menu-right: Certificates**.
+
+<img src= "/setup/img/webphone78.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ### Step 4: Add WebRTC to server
 
