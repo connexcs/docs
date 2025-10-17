@@ -150,8 +150,8 @@ You can use various Operators to refine your research:
 
 |**Operator**|**Explanation**|**Example**|
 |------------|---------------|-----------|
-|`AND`|Includes entries that contain all the keywords provided in a list, separated by `AND/&/and`|`call AND connect AND echo` \| `call and connect and echo` \| `call & connect & echo` |
-|`OR`|Include entries that contain at least one keyword from the provided list, separated by `OR/or`|`call or connect or echo` \| `call OR connect OR echo`|
+|`AND`|Includes entries that contain all the keywords provided in a list, separated by `AND/&/and`|`call AND connect AND echo`;<br> `call and connect and echo` </br>;<br>`call & connect & echo`</br> |
+|`OR`|Include entries that contain at least one keyword from the provided list, separated by `OR/or`|`call or connect or echo`; <br> `call OR connect OR echo`</br>|
 |`NOT`| This is the NOT operator it won't include the keywords prefixed by`-` symbol|`-call -connect -echo`|
 
 !!! Example
