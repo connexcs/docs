@@ -11,7 +11,7 @@ Use the **Documents** section to collect various files from the customer, as par
         + **Customer Notes**: Updates when the customer leaves notes via their portal about the document.
     + Click **`Save`**.
 
-    ![alt text][document]
+    <img src= "/customer/img/document1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 2. When you create the document, the customer receives a notice in their Customer Portal about the requested document.
 3. The customer selects "Upload A File" and leaves notes in the request.
@@ -20,7 +20,4 @@ Use the **Documents** section to collect various files from the customer, as par
 !!! note "Document Examples"
     You might need to ask your customer for documents like CLI verification, the terms of condition with a contract signed via ConnexCS, copy of a phone bill, or a passport to verify their identity.
 
-[document]: /customer/img/document.png "Add Document"
-
-!!! note
-    We've KYC for our customers and soon we'll be making it available for our customer's customers.
+!!! Info "We've KYC for our customers and soon we'll be making it available for our customer's customers."

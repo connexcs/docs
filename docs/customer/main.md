@@ -2,31 +2,29 @@
 
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name]**
 
-The first tab in a Customer account is **Main**. It displays a summary of the Status, Balance, Debit Limit, and current Channels in use.
+The first tab in a Customer account is **Main**.
 
-You can manage contacts, block internal numbers, and view call summaries.
+As the name suggests it allows you to manage the critical customer functions.
 
-![alt text][cust-main]
+It offers a comprehensive set of tools to manage customer accounts, including the addition of customer contacts, invoice generation, summary reporting, and internal number allocation.
 
-!!! note "By clicking the dropdown next to the             customer's   name, you will be redirected to the selected customer's portal. For more information, see [Access Customer Panel](https://docs.connexcs.com/customer/main/#access-customer-portal)."
+!!! Question "Why and When do we need the **Main** section?"
+    1. **User-Friendly & Flexible System**:
+          1. Offers customizable options such as number blocks and verification.
+    2. **Improved Organization & Accountability**:
+          1. It helps in managing customer's contacts.
+          2. Allows multiple logins with unique credentials for each contact.
+          3. Provides authentication and password management options to secure customer access.
 
-## Audit Log
+<img src= "/customer/img/cust-main1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-![alt text][audit-log]
-
-Select **View Audit Log** to see when the customer was created and to view any modifications that are made to the account.
-
-* **User**: The user that made the change.
-* **IP**: From where IP was changed.
-* **Date Time**: When the change was made.
-* **Action**: Uses HTTP verbs (Put, Post, Get, Delete) to describe the action taken.
-* **Table**: Part of the table that was updated.
-* **Message**: What was done (Update, New, etc.)
-* **Data**: Click `View Difference` to see the fields changed, plus previous and current values. (Data displayed in JSON format.)
+!!! note "By clicking the dropdown next to the customer's name, you will be redirected to the selected customer's portal. For more information, see [Access Customer Portal](https://docs.connexcs.com/customer-portal/cp-dashboard/)."
 
 ## Contacts
 
-The **Contacts** section shows an overview of the contacts associated with the Customer. Each Customer may have an unlimited number of Contacts.  
+The **Contacts** section allows you to manage individuals associated with a customer account.
+
+Each customer can have multiple contacts, providing better visibility and accountability within an organization.
 
 !!! note "Global Contacts"
     Contacts can also be modified in **Global :material-menu-right: Contacts**, which displays all Customer Contacts.
@@ -39,19 +37,24 @@ Click **:material-plus:** to the right of **Contacts**.
 
 * **Email**: This is the contact's login and a means to contact them.
 
-* **Phone** or **Mobile**: To contact the contact.
+* **Phone** or **Mobile**: To communicate with the contact.
 
 * **Contact Type**: This field is only used for informational and organizational purposes; there is no additional function for it.
 
 * **Auto Generate Password**: Select this to have a password generated online and sent via email. Deselect the box to enter a password manually.
 
-* **Public Notes**: Display on the Customer Portal.
+    !!! Info "Login and Access Controls"
+        1. Each contact can have their own login credentials.
+        2. Actions taken by a contact are logged for accountability.
+        3. Multiple logins help track system changes by different individuals.
 
-* **Private Notes**: Display in the Control Panel.
+* **Public Notes**: Display on the Customer Portal and is  visible to customers.
+
+* **Private Notes**: Display in the Control Panel and its internal-only for administrative purposes.
 
 * **Mobile Verified** and **Email Verified**: Manually set the status for each. Check in the Customer Details to confirm if the Mobile and Email are verified. Alternatively, the customer can do this in the Customer Portal.
 
-    ![contact details](/customer/img/maincontactdetails.jpg)
+    <img src= "/customer/img/maincontactdetails.jpg" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 Click **`Save`** to add the Contact.
 
@@ -67,12 +70,9 @@ Click **`Save`** to add the Contact.
 
 Follow these steps to reset a Contact password:
 
-1. Click the down arrow to the right of the Contact
-
-    ![alt text][reset-password]
-
+1. Click the blue `down arrow` to the right of the **Contact**.
 2. Select `Change Password`.
-3. Select `Auto Generate & Email Password` to email the random password to the contact's email address, or deselect it and enter the password manually.
+3. Select `Auto Generate & Email Password` to email the random password to the contact's email address, or deselect it and enter the password manually. **If auto-generate is disabled, an administrator must manually set a password.**
 4. **`Save`**.
 
 ### Access the Customer Portal
@@ -81,9 +81,7 @@ It's necessary to view the Customer Portal for issues or questions they may have
 
 To access the Customer Portal:
 
-1. Click the down arrow to the right of the Contact
-
-    ![alt text][reset-password]
+1. Click the blue `down arrow` to the right of the **Contact**.
 
 2. Choose `Portal Login`.
 
@@ -93,31 +91,48 @@ To access the Customer Portal:
 
 Assign an **Internal Number Block** to define the range of numbers a Customer can use for setting up SIP Extensions (see [**SIP Authentication**](https://docs.connexcs.com/customer/auth/#sip-user-authentication) for configuration details).
 
-1. Click **:material-plus:** next to **Internal Number Block**.
+The Internal Number Block ensures number allocations are managed efficiently.
+
+### Key Features/Benefits
+
+1. **Namespace and Extension Management**:
+
+      1. Each customer operates within a unique namespace.
+      2. Duplicate extensions across multiple customers are prevented.
+
+2. **Number Allocation**:
+
+      1. **Without a Number Block**: Any extension can be added without restrictions.
+      2. **With a Number Block**: Extensions must be chosen from a predefined range.
+      3. Administrators can assign number blocks to specific users.
+
+### Steps to implement Internal Number Block
+
+1. Click **:material-plus:** next to **Internal Number Block**
 2. The next available **Number Block** is assigned.
 3. Numbers from the assigned range is then available in **Customer :material-menu-right: [Auth](/customer/auth/) for IP or SIP users**, and in **Class5 :material-menu-right: [Conference](/class5/creating-conference/)**.
 
 !!! info "Why Define Internal Number Blocks?"
-    Within each Account are multiple Customers, each will likely have more than one Contact.
+    1. Within each Account are multiple Customers, each will likely have more than one Contact.
 
-    SIP Extensions are unique for the Account, not for individual Customers. 
+    2. SIP Extensions are unique for the Account, not for individual Customers. 
     
-    Without defined Internal Number Blocks, there is the risk of a Contact attempting to use an extension that's already in use by another Customer or Contact. 
+    3. Without defined Internal Number Blocks, there is the risk of a Contact attempting to use an extension that's already in use by another Customer or Contact. 
     
-    With Internal Number Blocks defined, each Customer will have a predetermined list of Usernames to select for SIP Authentication.
+    4. With Internal Number Blocks defined, each Customer will have a predetermined list of Usernames to select for SIP Authentication.
 
 !!! note "Number Range parameters"
     The Number Range Start and Block Size must be defined under [**Settings :material-menu-right: Options**](https://docs.connexcs.com/setup/settings/options/) before an Internal Number Block can be assigned.
 
 ## Summary
 
-Displays the Summaries of calls in Live (last 24 hours), Daily, and Monthly formats in 24-hour UTC. This data is updated hourly.
+Displays the Summaries of calls in **24 hours**, **Daily**, **Weekly**, and **Monthly** formats in 24-hour UTC. **This data is updated hourly**.
 
 You can perform the following functions with this data:
 
 * **Sum and Average**: Select multiple cells in a column to get sum and average values (not a true average, but an average of averages).
 
-* **Export Data**: Select data from multiple columns and rows, then right-click to `Copy`, `Copy with Headers`, or `Export`.
+* **Export Data**: Select data from multiple columns and rows, then right-click to `Copy`, `Copy with Headers`, `Copy with Group Headers` or `Export`.
 
 * **Generate Invoice**: Select one or more checkboxes under Action, and then select **`Generate Invoice`** in the upper right corner. This will create the invoice based on the Summary time frame (Daily, Weekly, Monthly) which can then be queried by a billing system.
 
@@ -128,11 +143,6 @@ You can perform the following functions with this data:
 !!! tip "Data used for billing"
     The data found in the Customer Summary section is considered valid for billing purposes. The same data may be found in other parts of the system, but you shouldn't use it for billing.
 
-[cust-main]: /customer/img/cust-main.png "Customer Main"
-[audit-log]: /customer/img/audit-log.png "Audit Log"
-[reset-password]: /customer/img/reset-password.png "Reset Password"
-[main-tab]: /customer/img/41.png "Contact Details"
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMjM5MDM2ODAsNDk1MDY1MjcwLC0xMjk4NT
-Q0OTM1LC0xNDk0ODc3NzMzXX0=
--->
+[audit-log]: /customer/img/audit-log.png "Audit Log"style="border: 2px solid #4472C4; border-radius: 8px;"
+
+[main-tab]: /customer/img/41.png "Contact Details" style="border: 2px solid #4472C4; border-radius: 8px;"

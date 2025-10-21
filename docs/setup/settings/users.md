@@ -52,7 +52,7 @@ To add a new ConnexCS **User**, click :material-plus: in the **Users** section o
 
 After entering the information, click **`Save`**.
 
-&emsp;![alt text][user]
+<img src= "/setup/img/users1.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Note
     [Click here](https://cidr.xyz/) to view an interactive IP address and CIDR range visualizer.
@@ -83,7 +83,7 @@ To change a user's password:
 
 !!! Tip "Hover over the New Password text box to see the password requirements."
 
-![alt text][password-rules]
+<img src= "/setup/img/chpass.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! question "How should I inform the user about the password change?"
     When you change a user's password, ConnexCS doesn't send the new password to the user. You must email or text the new password to the user.
@@ -122,7 +122,7 @@ Typically, you create user groups to assign permissions depending on the roles t
     + Set as many Area / Access permissions as needed.
     + Once finished, select **`Save`**.
 
-    ![alt text][add-group-perm]
+    <img src= "/setup/img/grp1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 2. The new permissions are visible in the Add Group Permission table, with the following fields:
     + `Path`: the path to the functional Area's API.
@@ -131,7 +131,7 @@ Typically, you create user groups to assign permissions depending on the roles t
 
 3. Make sure you **`Save`** the Group with the new permissions.
 
-    ![alt-text][group-perm]
+    <img src= "/setup/img/grp2.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! tip "Group Permission Access Exceptions"
     The permissions for the **Analytics** and **CDR** Areas are always `Access Denied` (no other permissions allowed).
@@ -169,7 +169,6 @@ You can create Multiple Reseller Groups and edit each group to match your busine
 !!! warning "Alpha Feature"
     The Default Reseller feature is still an Alpha Feature in testing; please use it with caution.
 
-[user]: /setup/img/user.png "Add User"
-[add-group-perm]: /setup/img/add-group-perm.png "Add Group Permissions"
-[group-perm]: /setup/img/group-perm.png "Group Permission"
-[password-rules]: /setup/img/password-rules.png "password-rules"
+[user]: /setup/img/user.png "Add User" style="border: 2px solid #4472C4; border-radius: 8px;"
+[group-perm]: /setup/img/group-perm.png "Group Permission" style="border: 2px solid #4472C4; border-radius: 8px;"
+[password-rules]: /setup/img/password-rules.png "password-rules" style="border: 2px solid #4472C4; border-radius: 8px;"
