@@ -2,17 +2,33 @@
 
 **:material-menu-right: Logging**
 
+## Overview
+
 The **Logging** function checks real-time call attempts, Session Initiation Protocol (SIP) traces, routing status, and simulates a call.
+
+It provides a detailed record of system activities, enabling efficient troubleshooting and call analysis.
+The logs capture critical data points, ensuring transparency and accuracy for debugging and auditing purposes.
 
 As soon as a call hits the ConnexCS system, it will display in the Logging area. The majority of issue debugging takes place in the Logging section.
 
-**Why do need a Logging Section?**
+### Key Features
 
 + **Efficient Debugging**: Helps identify and resolve system issues quickly.
 + **Call Flow Analysis**: Tracks call routing and detects irregularities.
 + **Security Monitoring**: Logs unauthorized access attempts and suspicious activities.
 + **Performance Optimization**: Provides insights into system performance and helps with fine-tuning configurations.
 + **Regulatory Compliance**: Maintains records for audits and compliance requirements
++ **Real-time Monitoring**: View logs in real-time to track ongoing activities.
++ **Detailed Call Data**: Logs include key details such as timestamps, call status, and error codes.
++ **Search and Filtering**: Easily find specific logs using filters based on time, call ID, or other parameters.
++ **Error Tracking**: Identify and resolve issues with comprehensive error messages and call flow analysis.
++ **Export Options**: Download logs for external analysis and record-keeping.
+
+!!! question "Why do need Logging Section?"
+    + Enhanced **troubleshooting** by providing insights into call failures.
+    + Improved **transparency** in operations and debugging.
+    + Efficient **audit trails** for compliance and reporting.
+    + Quicker **issue resolution** with real-time access to logs.
 
 ## Register Logging
 
