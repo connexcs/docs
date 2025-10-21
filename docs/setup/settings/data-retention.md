@@ -24,6 +24,6 @@ You can download the data from this page.
     
     It's the customer's responsibility to abide by all the laws of your country and jurisdiction with regards to retaining or purging data. 
     
-    If you want us to remove data from the archive, please open a **[Support Ticket](https://docs.connexcs.com/reporting-problems/#tickets)** and we will assist you.
+    If you want us to remove data from the archive, please open a **[Support Ticket](https://docs.connexcs.com/reporting-problems/#support-tickets)** and we will assist you.
 
 [data-retention]: /setup/img/data-retention.png "Data Retention"
