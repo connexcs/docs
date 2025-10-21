@@ -77,7 +77,7 @@ To view RTP Servers:
 
 2. Click **`Refresh`** to reload the page to show the most current changes, if any.
 
-    ![alt text][rtpserver]
+    <img src= "/setup/img/serverrtp.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Tip "Media Server Selection"
     You should choose a media server that adds the least latency to the call.
@@ -147,7 +147,7 @@ For example, if the CPS or Channels limits have reached, capacity failover will 
 
 Select certificates to apply to a server.
 
-<img src= "/setup/img/server1.png" width= "800">
+<img src= "/setup/img/server1.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 To add a Certificate to a sever,
 
@@ -189,7 +189,7 @@ Use this to update the Channels for the selected server. The update will be acti
 
 This only needs to run when the system indicates "There's a pending update on the server" at the top of the server details.
 
-&emsp;![alt text][server-update]
+<img src= "/setup/img/serverrtp1.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Network Tools
 
@@ -199,13 +199,13 @@ You can use **Ping** and **MTR**  to test network connectivity and performance.
 2. Click on ![alt text](image.png) icon next to your IP address.
 3. A window will pop-up where you enter the Hostname or IP Address.
 
-<img src="/setup/img/server1.png">
+<img src="/setup/img/server1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 4.Click **Run** to see the results.
 
-<img src="/setup/img/ping.png">
+<img src="/setup/img/ping.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-<img src="/setup/img/mtr.png">
+<img src="/setup/img/mtr.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Server Clustering and User Location Registration
 
@@ -230,7 +230,16 @@ When a user endpoint registers with UDP via NAT, it creates a port mapping. Thus
 
     We can help with more intricate measures on a case-by-case basis.
 
-[rtpserver]: /setup/img/rtpservers.png "RTP Server"
-[server-update]: /setup/img/server-update.png "Update Server"
-[server-cert1]: /setup/img/server-cert1.png "Server Certificates"
-[server-6]: /setup/img/reactivateserver.png "Reactivate Server"
+## APIBAN Integration
+
+APIBAN integration with ConnexCS is a third-party system provided by [apiban.org](https://www.apiban.org/).
+
+It automatically blocks malicious traffic to your servers. 
+
+APIBAN proactively prevents unwanted SIP traffic by identifying and blocking IP addresses of known bad actors before they can target your system.
+
+These bad actors are identified through globally deployed honeypots and curated by APIBAN to ensure comprehensive protection.
+
+[server-update]: /setup/img/server-update.png "Update Server" style="border: 2px solid #4472C4; border-radius: 8px;"
+[server-cert1]: /setup/img/server-cert1.png "Server Certificates" style="border: 2px solid #4472C4; border-radius: 8px;"
+[server-6]: /setup/img/reactivateserver.png "Reactivate Server" style="border: 2px solid #4472C4; border-radius: 8px;"

@@ -11,7 +11,7 @@ You can go to **Management :material-menu-right: Customer :material-menu-right: 
 1. You can go to **Management :material-menu-right: Customer :material-menu-right: Config :material-menu-right: Tags**.
 2. Click on the dropdown next to Tags and assign it to your customer.
 
-![tags](/customer/img/tags.png)
+<img src= "/customer/img/tags.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 Tags help reduce the time and effort required in creating an Alert or Routing Strategy for each individual customer.
 

@@ -2,9 +2,7 @@
 
 **Setup :material-menu-right: Settings :material-menu-right: Account**
 
-The Account section allows users to manage specific account details while certain fields remain restricted.
-
-The **Account** overview allows you to edit Company and General Information, set Simple Mail Transfer Protocol (STMP) Details, view Packages and the Service Agreement.
+The **Account** overview allows you to edit Company and General Information, set Simple Mail Transfer Protocol (SMTP) Details, view Packages and the Service Agreement.
 
 ## Edit Account Details
 
@@ -32,7 +30,8 @@ Under **Address** section can only verify the address and can't modify it.
 
 Under **Contact Information** section can only verify and edit the contact details.
 
-<img src="/setup/img/accountprofile1.png">
+
+    <img src= "/setup/img/accountprofile1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! note "Additional Configuration"
     To change any other settings, please contact Technical Support.
@@ -56,7 +55,7 @@ To add or edit SMTP information, click the blue pencil icon:
 
 **`Test Email`** or **`Test SMS`** buttons send test messages via each method. You can find the buttons on the far right of the SMTP details window.
 
-&emsp;![alt text][smtp]
+<img src= "/setup/img/smtp1.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! tip "TLS SMTP"
     To use TLS SMTP, set the Server format as "mail.yourdomain.com:465."
@@ -69,7 +68,7 @@ You can see below the Company information, a list of the applied ConnexCS packag
 
 Click **Enable Call Recording** to add the feature to the Account. First, you need to enable this on individual accounts under **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Routing :material-menu-right: Ingress routing :material-menu-right: [Media](https://docs.connexcs.com/customer/routing/#media)**.
 
-&emsp;![alt text][call-recording]
+<img src= "/setup/img/callrec.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## ConnexCS Service Agreement
 
@@ -77,7 +76,4 @@ To view the full ConnexCS Service Agreement, click on the below link:
 
 [ConnexCS Service Agreement](https://cdn.cnxcdn.com/ConnexCS%20Service%20Agreement.pdf)
 
-[accountprofile]: /setup/img/accountprofile1.png "Account Profile"
-[smtp]: /setup/img/smtp.png "SMTP"
-[call-recording]: /setup/img/call-recording.png "Call Recording"
 [service-agreement]: /setup/img/service-agreement.png "Service Agreement"

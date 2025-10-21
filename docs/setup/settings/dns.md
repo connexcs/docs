@@ -44,7 +44,7 @@ Set up **DNS** to load balance multiple Session Initiation Protocol (SIP) server
 
 1. Click :material-plus:.
 
-    ![alt text][dns]
+    <img src= "/setup/img/dns1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 2. Enter the **Domain** for your company.
 3. Use The **(TLD) Top Level Domain** `sip.direct` to create the full URL.
@@ -136,4 +136,3 @@ It's possible to set up something like your customer on larger deployments where
 
 While this may be more work, it will allow you to shape your customers traffic distribution, perform A-B testing, etc.
 
-[dns]: /setup/img/dns.png "DNS load-balance"

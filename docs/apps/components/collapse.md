@@ -6,7 +6,7 @@
 
 This feature is often used to organize lengthy or complex forms, making them easier to navigate and reducing visual clutter.
 
-<img src= "/apps/components/img/collapse12.png" width="2000">
+<img src= "/apps/components/img/collapse12.png" width="2000" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Use Case
 
@@ -58,7 +58,7 @@ Some of the most common methods include:
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/collapse4.png">
+<img src= "/apps/components/img/collapse4.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Example
     1. `this.addClassName(fields, className)`
@@ -74,24 +74,24 @@ Some of the most common methods include:
             ```
 
     2. `this.removeClassName(fields, className)`
-        ```js
+        ```js linenums="1"
         this.removeClassName('collapse_itxbeisp', 'abc')
         ```
     
     3. `this.hide(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['collapse_itxbeisp']
         this.hide(fields)
         ```
     
     4. `this.show(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['collapse_itxbeisp']
         this.show(fields)
         ```
     
     5. `this.getComponent('component_ID')`
-        ```js
+        ```js linenums="1"
         var collapsename = this.getComponent('collapse_itxbeisp');
         console.log('getComponent', collapsename);
         ```

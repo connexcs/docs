@@ -53,6 +53,5 @@ These options allow you to customize the behavior, security, and display details
 
     Click on the `Save` button to apply the changes to your account.
 
-    <img src="/setup/img/siprewrite.png">
-
 !!! Note "Payment details and descriptions are solely for display purposes."
+    <img src="/setup/img/siprewrite.png" style="border: 2px solid #4472C4; border-radius: 8px;">
