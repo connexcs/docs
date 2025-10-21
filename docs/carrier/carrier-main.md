@@ -6,7 +6,7 @@
 
 To configure a **Carrier**, select the Carrier from the list, then configure the following areas:
 
-<img src= "/carrier/img/carriermain.png">
+<img src= "/carrier/img/carriermain.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 + **Contacts**: Helpful for keeping track of Support contacts for individual carriers.
 + **Rates Grid**: Associated rate cards for this provider. See [**Provider Rate Cards**](https://docs.connexcs.com/provider-ratecard/) for configuration.

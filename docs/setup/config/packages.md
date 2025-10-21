@@ -12,7 +12,7 @@ Each package may include incentives for Monthly Recurring Charges (MRC) like Dir
 
 Click the :material-plus: button.
 
-<img src= "/setup/img/free.png">
+<img src= "/setup/img/free.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 + **Name:** The name of the package.
 + **Cost:** The recurring price which you (the provider) pay for this package (based on Frequency set below).

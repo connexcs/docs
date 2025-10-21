@@ -8,7 +8,7 @@ Cards are typically used to create a more organized and visually appealing form 
 
 They can also help to improve the user experience by making it easier for users to scan the form and find the information they need.
 
-<img src= "/apps/components/img/card.png">
+<img src= "/apps/components/img/card.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Use Case
 
@@ -68,7 +68,7 @@ Some examples of how card components can be made interactive include:
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/card2.png">
+<img src= "/apps/components/img/card2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Example
     1. `this.addClassName(fields, className)`
@@ -85,39 +85,39 @@ Some examples of how card components can be made interactive include:
             ```
 
     2. `this.removeClassName(fields, className)`
-        ```js
+        ```js linenums="1"
         this.removeClassName('card_khlorb9y', 'abc')
         ```
     
     3. `this.getValue(fieldName)`
-        ```js
+        ```js linenums="1"
         var cardname = this.getValue('card_khlorb9y');
         console.log('getValue', cardname);
         ```
     4. `this.getValues()`
-        ```js
+        ```js linenums="1"
         var data = this.getValues();
         console.log(data);
         ```
     5. `this.hide(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['card_khlorb9y']
         this.hide(fields)
         ```
     6. `this.show(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['card_khlorb9y']
         this.show(fields)
         ```
     7. `this.getComponent('component_ID')`
-        ```js
+        ```js linenums="1"
         var cardname = this.getComponent('card_khlorb9y');
         console.log('getComponent', cardname);
         ```
 
 !!! info Add multiple classes
     Use the following syntax to add multiple classes to a component:
-    ```js
+    ```js linenums="1"
     this.addClassName('componentID', 'class1', 'class2')
     ```
 
