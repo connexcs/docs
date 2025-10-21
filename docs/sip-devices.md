@@ -98,7 +98,7 @@ To add a new SIP device:
 
 5. Click **`Save`**.
 
-    ![alt text][sip-device]
+    <img src= "/misc/img/sip-device1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! info "Advanced provisioning"
     Use the **Vars** field to configure custom parameters such as shared line extensions and customer Phonebook.
@@ -113,5 +113,3 @@ Allows you to view and edit device information, including the addition of device
 ## Delete Device
 
 To delete a device from the list, select any row and click the trash bin icon.
-
-[sip-device]: /misc/img/sip-device.png "Edit SIP Devices"

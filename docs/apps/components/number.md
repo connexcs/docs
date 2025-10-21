@@ -6,7 +6,7 @@
 
 It's commonly used for collecting quantitative data, such as age, quantity, price, or measurement values.
 
-<img src= "/apps/components/img/number.png">
+<img src= "/apps/components/img/number.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Use Case
 
@@ -74,7 +74,7 @@ Examples mat include:
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/num1.png">
+<img src= "/apps/components/img/num1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Example
     1. `this.addClassName(fields, className)`
@@ -90,52 +90,52 @@ Examples mat include:
             ```
 
     2. `this.removeClassName(fields, className)`
-        ```js
+        ```js linenums="1"
         this.removeClassName('number_kzdn0gvb', 'abc')
         ```
     
     3. `this.getValues()`
-        ```js
+        ```js linenums="1"
         var data = this.getValues();
         console.log(data);
         ```
     
     4. `this.hide(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['number_kzdn0gvb']
         this.hide(fields)
         ```
     
     5. `this.show(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['number_kzdn0gvb']
         this.show(fields)
         ```
     
     6. `this.disable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.disable(['number_kzdn0gvb'])
         ```
     
     7. `this.enable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.enable(['number_kzdn0gvb'])
         ```
     
     8.  `this.getValue('fieldName')`
-        ```js
+        ```js linenums="1"
         var numbername = this.getValue('number_kzdn0gvb');
         console.log('getValue', numbername);
         ```
     
     9.  `this.setData(Value)`
-        ```js
+        ```js linenums="1"
         this.setData(
          {"number_kzdn0gvb": "2024",});
         ```
     
     10.  `this.getComponent('component_ID')`
-        ```js
+        ```js linenums="1"
         var numbername = this.getComponent('number_kzdn0gvb');
         console.log('getComponent', numbername);
         ```
@@ -178,7 +178,7 @@ Form validation can be performed using a variety of methods, including:
 ||**value**: Value of the current field|
 ||**callback**: Callback function (must be called) upon completion of validation; **callback('Error message')/ callback(new Error('Error message'))**. These are two ways to return an error message|
 
-<img src= "/apps/components/img/cascader_validation.png">
+<img src= "/apps/components/img/cascader_validation.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Info
     1. The **callback() function** is also called to verify success in the custom validation method.
