@@ -132,7 +132,7 @@ To create a *one-time Circuit Test*, go to **Management :material-menu-right: Ci
 
     See [**Customer DID**](https://docs.connexcs.com/customer/did/) for configuration.
 
-    ![alt text][circuit-test]
+    <img src= "/misc/img/circuit-test1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Schedule
 
@@ -166,4 +166,3 @@ When the scheduled test run, the results are visible on the "Log" tab.
 !!! note "Multiple selections allowed"
     Most fields under Schedule allow for multiple selections. For example, you can schedule the test for multiple days of the week.
 
-[circuit-test]: /misc/img/circuit-test.png "Run Circuit Test"

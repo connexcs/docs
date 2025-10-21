@@ -51,7 +51,7 @@ You can issue Vouchers in one of the following 3 forms:
 * **Multiplier Credit:** For example, Credit doubled for a top-up of $50 or more.
 * **Additional Credit:** For example, $50 free credit for top-up of $100 or more.
 
-&emsp;![alt text][voucher-grid]
+<img src= "/misc/img/voucher1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Voucher Setup
 
@@ -82,7 +82,7 @@ Click **`Add`**
 
 * **Currency Selector:** Select the desired currency.
 
-&emsp;![alt text][voucher-add]
+<img src= "/misc/img/voucher2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 Select **`Save`**, and the system will generate the vouchers.
 

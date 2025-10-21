@@ -27,7 +27,7 @@ Follow these steps to configure outage reporting on Customer Portals:
 1. Click :material-plus: under **Status Component**.
 2. Enter a **Title** and optional **Description**.
 
-    ![alt text][system-status-2]
+    <img src= "/misc/img/systemstatus1.png "system-status-2" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 3. Click **`Save`**.
 
@@ -35,7 +35,7 @@ Follow these steps to configure outage reporting on Customer Portals:
 
 1. Click :material-plus: under **Report History**.
 
-    ![alt text][system-status-3]
+    <img src= "/misc/img/systemstatus2.png "system-status-2" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 2. Enter the **Title** of the Report.
 3. Select the **Status** based on the issue like **Fixed**, **Watching**, **Identified**, and **Investigating**.
@@ -56,6 +56,7 @@ Follow these steps to configure outage reporting on Customer Portals:
 3. Under **User Access Area**, enable **`Status`**.
 4. Click **`Save`**.
 
+
       + **Customer Communication on Customer Portal**
         + **Portal Display**: Customers logging into the portal can view live status updates.
         + **Email Notifications**: Users can send bulk notifications to customers about service status.
@@ -69,3 +70,4 @@ Follow these steps to configure outage reporting on Customer Portals:
 
 [system-status-2]: /misc/img/264.png "system-status-2"
 [system-status-3]: /misc/img/265.png "system-status-3"
+

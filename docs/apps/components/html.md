@@ -6,7 +6,7 @@ The <html> tag represents the root of an HTML document.
 
 The <html> tag is the container for all other HTML elements (except for the <!DOCTYPE> tag).
 
-<img src= "/apps/components/img/html.png">
+<img src= "/apps/components/img/html.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Use Case
 
@@ -23,7 +23,7 @@ This capability injects variable into a template.
 !!! Example
     HTML Code:
     {% raw %}
-    ```js
+    ```js linenums="1"
     <b style="color: red;">
         Hi my name is {{name}} //{{}}➡️templating language
     </b>
@@ -36,7 +36,7 @@ This capability injects variable into a template.
     {% endraw %}
 
     setHTML Code:
-    ```js
+    ```js linenums="1"
     this.setData({html: I don't need no template})
     ```
     
@@ -57,7 +57,7 @@ This capability will override the entire HTML text.
 !!! Example
     HTML Code:
     {% raw %}
-    ```js
+    ```js linenums="1"
     <b style="color: red;">
         Hi my name is {{name}} //{{}}➡️templating language
     </b>
@@ -70,7 +70,7 @@ This capability will override the entire HTML text.
     {% endraw %}
 
     set Template Code:
-    ```js
+    ```js linenums="1"
     this.setData({html: {name: `Alice`}}) // in the HTML field setting an object here
     ```
     
@@ -105,27 +105,27 @@ To know more about Handlebars [click here](https://handlebarsjs.com/guide/#html-
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/html2.png">
+<img src= "/apps/components/img/html2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Example
 
     1. `this.hide(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['html_0h6cj3iv']
         this.hide(fields)
         ```
     2. `this.show(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['html_0h6cj3iv']
         this.show(fields)
         ```
     3. `this.getValues()`
-        ```js
+        ```js linenums="1"
         var data = this.getValues();
         console.log(data);
         ``` 
     4. `this.setData(Value)`
-        ```js
+        ```js linenums="1"
         this.setData({
         html: "<b style=\"color: red;\">\n\tThis is a HTML5\n</b>" })
         ```
