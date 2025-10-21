@@ -82,27 +82,27 @@ Click :material-plus: to configure the following fields:
 
 === "g3"
 
-```
-["account.channel.company.@companyId"]
-```
+    ```
+    ["account.channel.company.@companyId"]
+    ```
 
 === "Analytics / Breakout"
 
-```
- {"customer_id":"@companyId"}
-```
+    ```
+    {"customer_id":"@companyId"}
+    ```
 
-=== "RTP" (Real-Time Transport Protocol)
+=== "RTP (Real-Time Transport Protocol)"
 
-```
-{"customer_id":"@companyId", "is_provider":0}
-```
+    ```
+    {"customer_id":"@companyId", "is_provider":0}
+    ```
 
 === "ScriptForge"
 
-```
-{"customer_id":"@companyId"}
-```
+    ```
+    {"customer_id":"@companyId"}
+    ```
 
 !!! tip
 	If you want to render a graph in this view for testing, you may need to temporarily hard-code a customer or carrier ID to make it work.

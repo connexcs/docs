@@ -18,8 +18,8 @@ To enable the Transcription feature on your account, navigate to **Setup :materi
 
 <img src="/transcription/img/transcription-enable-transcriptions.png" enable transcription="package" width="100"/>
 
-!!! Note
-    The Transcription service fee is **$0.0003** USD per minute.
+!!! Warning "Pricing"
+    Check [Pricing](https://connexcs.com/pricing) here.
 
 !!! Warning
     If you are unable to find the **Enable Transcription** option, please contact us for assistance in enabling the transcription service.
@@ -39,7 +39,7 @@ Once this service has been enabled on your account, you can follow the steps bel
 !!! Info
     Out of all the calls that are accessible, **% Sampling** indicates the proportion of calls that will be transcribed.
 
-<img src="/transcription/img/trans1.png" alt="enable" width="900"/>
+<img src="/transcription/img/trans1.png" alt="enable" width="900" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 3.**Transcription Duration**: You can set a maximum transcription time (in seconds) for your transcription service per call. Please note, the transcription will stop at the specified time, even if it is mid-sentence.
 
@@ -47,7 +47,7 @@ Once this service has been enabled on your account, you can follow the steps bel
 
 1. Navigate to **Global :material-menu-right: Transcription**. You will be able to see the screen as shown below.
 
-<img src="/transcription/img/trans2.png"/>
+<img src="/transcription/img/trans2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 2.You will see 3 options:
 
@@ -82,7 +82,7 @@ To create the query list, please follow the steps below:
 
 7. Click `Save`.
 
-<img src="/transcription/img/trans3.png" width= "400"/>
+<img src="/transcription/img/trans3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ##### Transcription Alerts
 
@@ -99,15 +99,15 @@ Please follow the below steps to add the Alerts:
 5. You can also select the **Penalty** as soon as the alert triggers. This option will disable the customer's account for **1 minute**, **5 minutes**, **15 minutes**, **1 Hour**, **1 Day**, **1 Year** or just use the **Disabled** option for not using the penalty option.
 6. You can also select the **Template** from the drop-down.
 
-<img src="/transcription/img/trans4.png" alt="transcription" width="900"/>
+<img src="/transcription/img/trans4.png" alt="transcription" width="900" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ### Create a Transcription Package
 
-To create a package to resell to your customers, go to Config :material-menu-right: [Packages](https://docs.connexcs.com/customer/package/). Click on <img src="/transcription/img/transcription-add.png" alt="add" width="50"/> and choose your Transcription Package from **ConnexCS Package**.
+To create a package to resell to your customers, go to Config :material-menu-right: [Packages](https://docs.connexcs.com/customer/package/). Click on <img src="/transcription/img/transcription-add.png" alt="add" width="50"> and choose your Transcription Package from **ConnexCS Package**.
 
-Select your **Retail Cost** and click on <img src="/transcription/img/transcriptions-save.png" alt="save" width="120"/> and choose your Transcription Package from **ConnexCS Package**.
+Select your **Retail Cost** and click on <img src="/transcription/img/transcriptions-save.png" alt="save" width="120"> and choose your Transcription Package from **ConnexCS Package**.
 
-<img src="/transcription/img/transcription-package.png" alt="package" width="500"/>
+<img src="/transcription/img/transcription-package.png" alt="package" width="500" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Search Transcriptions
 
@@ -150,20 +150,20 @@ You can use various Operators to refine your research:
 
 |**Operator**|**Explanation**|**Example**|
 |------------|---------------|-----------|
-|`AND`|Includes entries that contain all the keywords provided in a list, separated by `AND/&/and`|`call AND connect AND echo` \| `call and connect and echo` \| `call & connect & echo` |
-|`OR`|Include entries that contain at least one keyword from the provided list, separated by `OR/or`|`call or connect or echo` \| `call OR connect OR echo`|
+|`AND`|Includes entries that contain all the keywords provided in a list, separated by `AND/&/and`|1. `call AND connect AND echo`<br>2. `call and connect and echo`</br>3. `call & connect & echo`|
+|`OR`|Include entries that contain at least one keyword from the provided list, separated by `OR/or`|1. `call or connect or echo` <br> 2. `call OR connect OR echo`</br>|
 |`NOT`| This is the NOT operator it won't include the keywords prefixed by`-` symbol|`-call -connect -echo`|
 
 !!! Example
 
     1. `AND` Operator
-    <img src="/transcription/img/and.png" width= "800">
+    <img src="/transcription/img/and.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;">
 
     2. `OR` Operator
-    <img src="/transcription/img/or.png" width= "800">
+    <img src="/transcription/img/or.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;">
 
     3. `NOT` Operator
-    <img src="/transcription/img/not.png" width= "800">
+    <img src="/transcription/img/not.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Tip
     By using **multiple search operators together**, you can create more specific search queries that helps you find the most relevant entries quicker.

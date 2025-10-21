@@ -10,7 +10,7 @@ A **Pub/Sub** bus, short for **Publish/Subscribe** bus, is a messaging system th
 
 We explain an example of Pub/Sub bus which is a **Server Side Chat Application**.
 
-```js
+```js linenums="1"
     function main(_, ws) { // defines main function
 	const ws = this.scriptForge('myScriptForge')//ScriptForge integration
 	const {publish, subscribe} = require('cxPubSub');//Pub/Sub Messaging:
