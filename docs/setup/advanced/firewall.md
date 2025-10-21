@@ -2,7 +2,7 @@
 
 **Setup :material-menu-right: Advanced :material-menu-right: Firewall**
 
-The ConnexCS **Firewall** to enhance system security by dynamically managing traffic based on threat detection to blacklist attackers.
+The ConnexCS **Firewall** is used to enhance system security by dynamically managing traffic based on threat detection to blacklist attackers.
 
 ## Configure Firewall
 
@@ -86,3 +86,4 @@ It's important that calls such as these are visible for two reasons:
 
 1. If we block an IP address too soon, this may be a customer who is trying to connect with you. Once blocked, you lose the ability to view debugging information since the packets get dropped before logging.
 2. If we block an IP address too soon, we lose the ability to identify attack patterns and profile an attack. Having some data allows us to see progressive attacks spanning several IP addresses.
+
