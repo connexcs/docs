@@ -40,7 +40,7 @@ ConnexCS provides two primary types of databases:
 2. Click on **IDE** :material menu-right: +.
 3. Select **Database**.
 
-<img src= "/apps/img/app_database.png" width= "400">
+<img src= "/apps/img/app_database.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 4.Under the **Basic** Tab Write the **Name** of the database you wish to create.
 
@@ -51,11 +51,11 @@ ConnexCS provides two primary types of databases:
 + **Key / Value** - Contains a basic Key / Value Storage.
 + **Lead Set** - Contains the most common fields when using a data store for customer / campaign data which you can use with dialers.
 
-<img src="/developers/img/db2.png" width="300">
+<img src="/developers/img/db2.png" width="300" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 7.Next to the **Basic** Tab is the **SQL Table Schema**. This allows you to add additional fields apart from the **Leadset**. You can also select it's **Type** like integer, string, double, float etc.
 
-<img src="/developers/img/db3.png" width="400">
+<img src="/developers/img/db3.png" width="400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 8.Click on `Save` to finally create the database.
 
@@ -82,4 +82,4 @@ SQL is currently available in 3 parts of the system:
 + CDR (Server)
 + Userspace Database (Server)
 
-<img src="/developers/img/db4.png">
+<img src="/developers/img/db4.png" width="500" style="border: 2px solid #4472C4; border-radius: 8px;">
