@@ -2,11 +2,24 @@
 
 **Setup :material-menu-right: Config :material-menu-right: Packages**
 
+## Overview
+
 A **Package** represents a product or service offered to customers, often as a recurring charge based on goods delivered at a required interval.
 
 ConnexCS **Packages** are global entities allocated to each customer according to their needs.
 
-Each package may include incentives for Monthly Recurring Charges (MRC) like Direct Inward Dialing (DID), phone system rentals, or other hardware.
+Each package may include incentives for Monthly Recurring Charges (MRC) with flexible billing options, Direct Inward Dialing (DID), phone system rentals, or other hardware.
+
+!!! question "When to use this feature?"
+    Add and configure packages that include cost structures, billing frequencies, and additional features.
+
+### Benefits
+
+1. **Revenue Assurance**: The minimum spend feature guarantees that customers spend at least the required amount.
+
+2. **Flexible Billing**: Multiple billing frequency options cater to various business needs.
+
+3. **Sales Enablement**: The Connect package feature facilitates reselling premium products like the Preview Dialer.
 
 ## Add Package
 
@@ -27,7 +40,10 @@ Click the :material-plus: button.
 
     For example, to bill bi-monthly, set the **Frequency** to "Monthly," and then **Frequency Match** to 15 and 31 to bill on those days of the month.
 
-+ **ConnexCS Package**:  If you have a ConnexCS service that you revamp and sell to your customers, you must select it here to enable that feature on the customer account.
++ **ConnexCS Package**:  If you have a ConnexCS service that you revamp and sell to your customers, you must select it here to enable that feature on the customer account. Basically it enables the reselling of a ConnexCS provided product.
+
+!!! Example
+    To sell Connex's Preview Dialer, simply tick the corresponding box. (**Note**: Other options like the root tester are available but may not be ideal.)
 
 + **Description**: Describe the product provided in this package.
 
@@ -37,10 +53,14 @@ Click the :material-plus: button.
 
 + **Destination**: Selecting the **Type** will unlock the **Destination** tab. This tab allows you to specify the regions where the Free Minutes bundle will be applicable.For example, if you are offering free minutes only in the UK, India, and the USA, add the destination as ^44|^91|^1.
   
-+ **Minimum Spend**: This calculates the customer spend for the billing period.
++ **Minimum Spend**: This calculates the customer spend for the billing period. It ensures customers meet a predefined spending threshold.
 
-    If spend is below the Retail amount configured above, the spend get subtracted from Retail, and that charge adds to their account.
+!!! question "How it works?"
+    If the customer’s spend is below the set minimum at month’s end, an additional charge will be applied.
 
+If spend is below the Retail amount configured above, the spend get subtracted from Retail, and that charge adds to their account.
+
+!!! Example
     For example, Retail value is to 50, but customer only spends 25, an extra charge of 25 applies for that billing cycle.
 
 Click **`Save`** to make the Package available to assign to customer accounts.
