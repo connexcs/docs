@@ -105,13 +105,13 @@ ping 1.2.3.4 -s 160 -t 200 -i 0.02 -f
 
 **Traceroute**: Traceroute is a diagnostic tool used to map the path data takes from a source to a destination. It identifies all intermediary hops between the two points.
 
-+ **Key Features**
++ **Key Features**:
 
     1. Displays the network path packets take.
     2. Measures hop-by-hop latency.
     3. Identifies dynamic routing changes.
 
-+ **Benefits**
++ **Benefits**:
 
     1. Useful for detecting network congestion and rerouting issues.
     2. Helps diagnose routing inefficiencies.
