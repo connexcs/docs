@@ -12,12 +12,12 @@ Each package may include incentives for Monthly Recurring Charges (MRC) like Dir
 
 Click the :material-plus: button.
 
-<img src= "/setup/img/free.png">
+<img src= "/setup/img/free.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 + **Name:** The name of the package.
 + **Cost:** The recurring price which you (the provider) pay for this package (based on Frequency set below).
 + **Retail:** The recurring price that you charge to your customer (based on Frequency set below).
-+ **Setup Cost:**: One-time cost of this item that you (the provider) pay when you use the package.
++ **Setup Cost:** One-time cost of this item that you (the provider) pay when you use the package.
 + **Setup Retail**: One-time price you (the provider) charge to your customer when you setup the package.
 + **Frequency** and **Frequency Match**: Use this when the package charge repeats.
 

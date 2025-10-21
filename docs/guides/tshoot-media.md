@@ -1,6 +1,6 @@
 # Troubleshoot Media
 
-Media refers to the actual audio payload part of a call. For more information about ConnexCS media servers, see [**RTP Servers**](https://docs.connexcs.com/setup/settings/servers/#rtp-servers).
+Media refers to the actual audio payload part of a call. For more information about ConnexCS media servers, see [**RTP Servers**](https://docs.connexcs.com/setup/settings/servers/#real-time-transport-protocol-servers).
 
 **RTP (Real-time Transport Protocol)**, operating on top of User Datagram Protocol (UDP), is a data transport protocol. A signaling protocol, such as Session Initiation Protocol (SIP), initiates the RTP session. Once established, the audio gets streamed across the network.
 
@@ -10,6 +10,10 @@ By using UDP, data gets transmitted at higher rates, some loss will occur and ca
     For a detailed description of RTP, see the [**Wikipedia Real-time Transport Protocol article**](https://en.wikipedia.org/wiki/Real-time_Transport_Protocol).
 
 **RTCP (RTP Control Protocol)** doesn't carry any actual data payload but helps with delivery. Use RTCP to report on media quality statistics after call completion.
+
+!!! Info
+    1. We support ZRTP and video pass-through functionalities, enabling seamless transmission from customers to carriers.
+    2. Our platform provides comprehensive support for both IPv4 and IPv6 address protocols.
 
 ## ConnexCS Media Servers
 
@@ -54,24 +58,6 @@ Common issues related to the media stream can include choppy or robotic voice, e
 
 !!! Danger
     If the SIP packets and / or RTP endpoints get investigated, sending media direct exposes your carrier's identity to your customer and vice versa.
-
-**Echo Test** Use our class 5 features to set up an Echo Test. When dialed, all audio spoken gets echoed back. Basically, it will repeat the media straight back to you. This can be a quick way of checking a customer's audio quality.
-
-You can create an application called **Echo Test** and provide a specific call to the Echo test. Then you can check audio quality of the call when the customer complains. You can ask the customer to dial 160 and you can get the Echo test and analyse the call.
-
-**Setting up an Echo Test:**
-
-1. Login to your account.
-2. Go to Class5 :material-menu-right: Apps and click `+`.
-3. You will see a Dialog box as shown below. ![echo test](/guides/img/echotest.jpg)
-4. Write the **Name** of your Echo test.
-5. Enter the **Destination** number for your Echo Test.
-6. Select the **PBX Server** for the call. The **Distributed (Default)** server will assign you the server near to your location.
-7. Click on `Save`. ![echo test1](/guides/img/echotest1.jpg)
-8. Click on `Go to App` which is right next to the echo test you've created. You will see a screen as shown in the figure below. ![echo test2](/guides/img/echotest2.jpg)
-9. Then from components drag the `echo` component and connect it with your created echo test.
-10. Click on the dot on the right-side of your created echo test (Echo Test in this case) and join it with the `echo component` on the right-side.![echo test3](/guides/img/echotest3.jpg)
-11. Then use your softfone to check for the echo test.
 
 **RTCP Metrics** If you enable RTCP on your customer and carrier, meta data about the RTP stream (packet counters, round trip time) gets exchanged. This information is available on the logging page of the call. These graphs can help to identify the problems.
 
@@ -132,3 +118,62 @@ sequenceDiagram
 
 User Agent can modify SIP packets to direct the caller and destination to establish an RTP session with itself, rather than with each other. This is useful in situations where two SIP clients may not have direct access to each other, most commonly, when one or both of the SIP clients are behind a NAT.
 It's important to note that User Agent only proxy's RTP traffic when it has to, and when configured to do so. If both clients are on the same local network segment, User Agent doesn't need to play a part in the RTP session, and it will proxy only the SIP traffic.
+
+## Echo Test
+
+Use our class 5 features to set up an Echo Test. When dialed, all audio spoken gets echoed back. Basically, it will repeat the media straight back to you. This can be a quick way of checking a customer's audio quality.
+
+You can create an application called **Echo Test** and provide a specific call to the Echo test. Then you can check audio quality of the call when the customer complains. You can ask the customer to dial 160 and you can get the Echo test and analyse the call.
+
+**Setting up an Echo Test:**
+
+1. Login to your account.
+2. Go to Class5 :material-menu-right: Apps and click `+`.
+3. You will see a Dialog box as shown below. <img src= "(/guides/img/echotest.jpg" style="border: 2px solid #4472C4; border-radius: 8px;"?
+4. Write the **Name** of your Echo test.
+5. Enter the **Destination** number for your Echo Test.
+6. Select the **PBX Server** for the call. The **Distributed (Default)** server will assign you the server near to your location.
+7. Click on `Save`. <img src= "/guides/img/echotest1.jpg" style="border: 2px solid #4472C4; border-radius: 8px;">
+8. Click on `Go to App` which is right next to the echo test you've created. You will see a screen as shown in the figure below. <img src= "/guides/img/echotest2.jpg" style="border: 2px solid #4472C4; border-radius: 8px;">
+9. Then from components drag the `echo` component and connect it with your created echo test.
+10. Click on the dot on the right-side of your created echo test (Echo Test in this case) and join it with the `echo component` on the right-side.![echo test3](/guides/img/echotest3.jpg)
+11. Then use your softfone to check for the echo test.
+
+### How Echo Test Works?
+
+1. **Performing an Echo Test in ConnexCS**:
+
+      + Navigate to **Management :material-menu-right: Customer :material-menu-right: Customer [Name] :material-menu-right: Ingress Routing :material-menu-right: Basic :material-menu-right: Rate Card :material-menu-right: [Internal]**.
+      + Assign the dial string on this internal route same as the destination of the echo test you have created.
+      + Dial the assigned digit from the account to compare the transmitted and received audio.
+
+```mermaid
+graph TD
+    A[Start] --> B[Select Customer]
+    B --> C[Select Ingress Routing --> Basic --> Rate Card --> Internal]
+    C --> D[Set dial string same as Echo Test destination]
+    D --> E[Dial the assigned digit from the account]
+    E --> F[Compare transmitted and received audio]
+```
+
+### Multi-Point Testing Approach
+
+For more accurate diagnostics, it is recommended to test from different endpoints:
+
+**Point 1**: Your location :material-menu-right: Direct Echo Test on ConnexCS.
+
+**Point 2**: Customer dialer :material-menu-right: Echo Test on ConnexCS.
+
+**Point 3**: Dialer :material-menu-right: ConnexCS :material-menu-right: Echo Test.
+
+This method helps simulate real-world call scenarios and test routing efficiency.
+
+### Benefits
+
+1. **Latency and Packet Loss Detection**: Users can audibly assess delay and packet loss by comparing the echoed voice.
+
+2. **Dialer Functionality Verification**: Installing an Echo Test on a dialer allows instant verification of its working condition.
+
+3. **Call Recording for Proof**: Recording an Echo Test call helps document connectivity and troubleshooting efforts.
+
+4. **Independent Testing for ConnexCS and Dialers**: Users can test both ConnexCS connectivity and individual dialer performance separately.

@@ -2,10 +2,22 @@
 
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Invoice**
 
-ConnexCS allows for straightforward **Invoice** generation for all providers. The tool is another way to end gaps in communication between providers and customers.
+The invoice system allows for seamless customer billing and payment tracking.
+
+The tool is another way to end gaps in communication between providers and customers.
 
 !!! note "Global Invoices"
     You can also manage Invoices in **Global :material-menu-right: Invoices**.
+
+**Key Features**:
+
++ **Invoice Generation**:
+    + **View**, **select**, and **manage** invoices within the portal.
+    + **Modify** invoice details, including line items, tax descriptions, and unit prices.
+    + **Generate** invoices based on defined packages and usage.
+
++ **Exports**:
+    + Download invoices as PDFs for external sharing and for offline use.
 
 ## Add new Invoices
 
@@ -16,7 +28,7 @@ To add a new invoice:
 3. Set an Invoice Date in the bottom right.
 4. Click **`Edit Invoice Item`**.
 
-    ![alt text][invoice-8]
+    <img src= "/misc/img/2291.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 5. The selected **Package** will autocomplete the Quantity, Unit Price, and Tax. You can revise these parameters as needed.
 6. Set a date range.
@@ -33,6 +45,13 @@ Click ![alt text][invoice-edit] to change the date, then click **`Edit Invoice I
 !!! note "Invoice Line Grouping"
     Use Invoice Line Grouping to group the invoice based on the destination or day. You can set this in **My Account** > **Settings**.
 
+## Download Invoices
+
+1. Login to your account.
+2. Navigate to **Management :material-menu-right: Customer :material-menu-right: Customer [Name] :material-menu-right: Main :material-menu-right: Summary :material-menu-right: Daily, Weekly or Monthly :material-menu-right: Download Invoice** (csv format).
+
+<img src= "/misc/img/in1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
 ## Allocate Payment
 
 To allocate customer payments to a specific invoice:
@@ -45,14 +64,14 @@ To allocate customer payments to a specific invoice:
 
 ## Automatic Invoice Generation
 
-You can also generate an invoice through **Schedule Report**.
+To generate invoices atomatically:
 
-[Click here](https://docs.connexcs.com/report/#schedule-report) to check the process for creating the invoice.
+1. Login to your **Control Panel**.
+2. Navigate to **Management :material-menu-right: Customer :material-menu-right: Customer [Name] :material-menu-right: `Edit` :material-menu-right: Config :material-menu-right: Invoice Schedule**.
+3. Select `Daily`, `Weekly`, or `Monthly` for the Invoice Schedule for automatic invoice generation.
+4. Once enabled, the option to auto-generate an invoice will appear under **Customer :material-menu-right: Main :material-menu-right: Auto Generate Invoice**. Click this option to generate the invoice.
 
 [invoice-8]: /misc/img/229.png "Invoice-8"
 
 [invoice-pdf]: /misc/img/invoice-pdf.png "Invoice PDF"
 [invoice-edit]: /misc/img/invoice-edit.png "Edit Invoice"
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzNjY4NTkzMl19
--->

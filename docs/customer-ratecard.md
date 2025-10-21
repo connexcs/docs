@@ -105,13 +105,14 @@ Click **`Email`**, enter the email address and click **`Send`**.
 + **Delete Revision**: Select a revision to delete.
 + **Download**: Download a CSV file of the Rate Card.
 
-    ![alt text][crc-func]
+    <img src= "/card/img/crc-func12.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 + **Parent Cards** are the Provider Rate Cards associated to this card.
 + **Customers** lists the specific Customers using this card.
 + **Profits** lets you configure profit rules. This is most useful on cards with a high number of rules.
 
-    ![alt text][profit]
+    <img src= "/card/img/profit_basic.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+    <img src= "/card/img/profit_config.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 **Click each tab for configuration details**
 
@@ -169,6 +170,9 @@ To change Revision status:
 |**Single Rate**|0.0007|Usually a UK Landline|1|
 |**IntER/IntRA**|1 (NPANXX)|Refers to Interstate and Intrastate calling for USA dialing|2|
 |**IntER/IntRA/Indeterminate**|1 (NPANXX)|Indeterminate indicates that call is between a USA number and another country|3|
+|**EEA**|If a call originates from a CLI starting with '33' (France) and the destination number starts with '43' (Austria)| When a call originates from one European Economic Area country and terminates in another EEA country|3|
+|**Local Rates**|If a call originates from a CLI starting with '43' and the destination number also starts with '43'| Both the originating CLI and destination number start with the same country code, specifically '43' for Austria||
+|**International Rates**| If a call originates from a CLI starting with '33' (France) and the destination number starts with '444' (UK)|Any call not meeting the Local or EEA criteria falls under this category|
 
 + **Dialing**: Select whether to bill based on the carrier of the Dialed Number or using an LRN Database (US-only).
 
@@ -213,6 +217,8 @@ To change Revision status:
   
 + **Contract**: Specify a default contract that applies to a specific rate card. This only applies if the customer selects the rate card from the Customer Portal, not when it's added using the Dashboard.
 
+!!! Warning "When a contract is linked to a specific rate card, customer approval is mandatory. Failure to approve the contract will result in the customer being unable to use the associated rate card."
+
 + **Manual Ordering**: Allow granular ordering of specific prefixes and which carriers to use. See [**Manual Ordering**](https://docs.connexcs.com/customer-ratecard/#manual-ordering-tab) below for details.
   
 + **Reseller**: Select Resellers to associate with this card. When the Reseller logs into the Portal, they see the settings from the perspective of a Provider Card, even though they're configured as a Customer Card.
@@ -228,10 +234,8 @@ This tab is only available if you enable "Manual Ordering" in **Properties :mate
 
 For each Prefix you can manually order the Provider Rate Cards for a high degree of control over the routing of calls.
 
-[compile1]: /card/img/compile1.png "Paused"
-[compile2]: /card/img/compile2.png "Synced"
+[compile1]: /card/img/compile1.png "Paused" style="border: 2px solid #4472C4; border-radius: 8px;"
+[compile2]: /card/img/compile2.png "Synced" style="border: 2px solid #4472C4; border-radius: 8px;"
 
-[prc-func]: /card/img/prc-func.png "Functions"
-[crc-func]: /card/img/crc-func.png "Customer Functions"
+[prc-func]: /card/img/prc-func.png "Functions" style="border: 2px solid #4472C4; border-radius: 8px;"
 
-[profit]: /card/img/profit.png "Edit Profits"

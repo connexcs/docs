@@ -6,7 +6,7 @@ A **Dialog** component in a page builder is a specialized element that allows yo
 
 It typically provides a self-contained interface for collecting additional information or displaying contextual details without disrupting the main form flow.
 
-<img src= "/apps/components/img/dialog.png">
+<img src= "/apps/components/img/dialog.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Use Case
 
@@ -58,6 +58,8 @@ It typically provides a self-contained interface for collecting additional infor
 |`myDialog.open()`|Opens the dialog box on the page|
 |`this.getValues`|Gets the current values of all fields|`() : Object`|
 |`myDialog.close()`|Closes the dialog box on the page|
+|`this.$('dailogID.othercomponentID').disable()`|Disable dialog from user interaction|`(fields: String`&#124;`String[])`|
+|`this.$('dailogID.othercomponentID').enable()`|Enable dialog from user interaction|`(fields: String`&#124;`String[])`|
 
 #### Steps to use the methods for the Page Builder components
 
@@ -66,34 +68,34 @@ It typically provides a self-contained interface for collecting additional infor
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/dialog2.png">
+<img src= "/apps/components/img/dialog2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Example
     1. `this.getComponent('component_ID')`
-        ```js
+        ```js linenums="1"
         var dialogname = this.getComponent('dialog_icubvv8x');
         console.log('getComponent', dialogname);
         ```
 
     2.  `this.getValue('fieldName')`
-        ```js
+        ```js linenums="1"
         var dialogname = this.getValue('dialog_icubvv8x');
         console.log('getValue', dialogname);
         ```
     
     3. `myDialog.open()`
-        ```js
+        ```js linenums="1"
         var myDialog = this.getComponent('dialog_icubvv8x')
         myDialog.open()
         ```
         
     4. `this.getValues()`
-        ```js
+        ```js linenums="1"
         var data = this.getValues();
         console.log(data);
     
     5. `myDialog.close()`
-        ```js
+        ```js linenums="1"
         var myDialog = this.getComponent('dialog_icubvv8x')
         myDialog.close()
         ```
