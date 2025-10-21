@@ -2,9 +2,25 @@
 
 **Management :material-menu-right: Carrier**
 
+## Overview
+
+The Carrier Interface in ConnexCS provides functionalities for managing carrier settings, credit, authentication, and response handling.
+
 Use the **Carrier** section in **ConnexCS** for simplified Carrier management where you can add, configure, and delete Carriers.
 
-<img src= "/carrier/img/carriermain.png">
+### Key Features
+
+1. **Call Completion**:
+      1. A call may not complete if a customer lacks credit.
+
+      2. Calls will still connect if a carrier doesn't have credit; the carrier credit field is informational and doesn't prevent calls.
+
+2. **Carrier Rate Card Structure**: Every carrier has one or more rate cards. Each rate card contains the charges imposed by the carrier.
+
+!!! Tip "Key Considerations"
+    The system doesn't display the "Auto-generate invoice" option in this section.
+
+<img src= "/carrier/img/carriermain.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Carrier Functions
 
@@ -31,7 +47,7 @@ From the **Carriers** page, you can perform several management operations.
     + Write the Body of the referral.
     + Click on `Send`.
   
-<img src= "/carrier/img/carrier_referral.png">
+<img src= "/carrier/img/carrier_referral.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 + **Active**: Used to sort Carriers based on the selected status. Results on the page will automatically arrange themselves according to the filter.
 
@@ -88,17 +104,22 @@ From the **Carriers** page, you can perform several management operations.
 
     * **PayPal Email:** Enter the PayPal e-mail associated with the carrier's account.
     * **Website:** Add the carrier's official website.
-    * **P-Asserted-ID:** Considered a network level identifier, you can select how calls to the provider is handled based on the PA-ID:
+    * **P-Asserted-ID:** Consider a network level identifier, you can select how calls to the provider is handled based on the PA-ID:
     
-        :material-menu-right: `Default`- call passed to the provider (no manipulation)
+        :material-menu-right: `Default`: Call passed to the provider (no manipulation).
         
-        :material-menu-right: `Remove`- strips PA-ID before passing the call to the provider
+        :material-menu-right: `Remove`: Strips PA-ID before passing the call to the provider.
         
-        :material-menu-right: `If Available`- will add PA-ID if one has been provided, otherwise the call will still be allowed
+        :material-menu-right: `If Available`: It will add PA-ID if one has been provided, otherwise the call will still be allowed.
         
-        :material-menu-right: `Required`- call won't be delivered to the provider without the PA-ID
+        :material-menu-right: `Required`: Call won't be delivered to the provider without the PA-ID.
     
-    * **Consec Fail Backoff:** When Enabled, if a carrier goes down, only a fraction of calls will be sent to the carrier until the start to complete again (calls aren't completely disabled otherwise there is no way to know when the carrier is back up again). The First Reply Timeout is skipped.  
+    * **Consec Fail Backoff:** When Enabled, if a carrier goes down, only a fraction of calls will be sent to the carrier until the start to complete again (calls aren't completely disabled otherwise there is no way to know when the carrier is back up again). The First Reply Timeout is skipped.
+        * **Purpose**: Helps determine if a route is down.
+        * **Functionality**:
+            * Counts the number of consecutive failed calls.
+            * Resets to zero when a call successfully connects.
+            * If 10,000 consecutive calls fail, it indicates a route is likely down.
     * **Tags** and **TOML:** Not applicable to carriers.
     * **Ext.Accounting ID:** This is used to fill in work in an external accounting field to correlate between Connexcs and the external accountancy system.
     * **Call Recording Retention Days:** How long the customer wants to keep the recorded calls.
@@ -117,126 +138,14 @@ From the **Carriers** page, you can perform several management operations.
 
     * **Propagate Username:** Enable this to retain the display name of the FROM field in the SIP header (ex: Company Name, Username).
 
-## Configure Carrier
-
-To configure a **Carrier**, select the Carrier from the list, then configure the following areas:
-
-### Main
-
-![alt text][carrier]
-
-+ **Contacts**: Helpful for keeping track of Support contacts for individual carriers.
-+ **Rates Grid**: Associated rate cards for this provider. See [**Provider Rate Cards**](https://docs.connexcs.com/provider-ratecard/) for configuration.
-+ **Code Consistency**: The purpose is to assess carrier reliability by comparing SIP 200 (OK) and 404 (Not Found) response codes. Consistent response codes help identify route quality and detect carriers who may misrepresent call outcomes.
-    * **Analyzing Inconsistencies**: 200 vs. 404 Comparison: Our primary measure of code consistency. A clear distinction between 404 and 200 responses helps identify whether a provider is connecting calls inappropriately or mislabeling the status of a non-existent number.
-This provider should have returned a 404 at least once for reliable data.
-+ **Consecutive Failure**: Shows a count of failed calls based on specific SIP failure responses.  
-  The counter doesn't include SIP 200 responses for connected calls.
-  This simplistic measurement can measure a carrier's ability to connect calls or a particular route: a connected call resets the counter, a failed call increments the counter by one.
-Some Fails aren't alarming, but be on the lookout for higher numbers in the thousands.
-
-!!! note "Consec fails and false positives"
-    This mechanism can show false positives if the customer sends missed call traffic or calls wrong numbers.
-
-    The counter is a quick way to see if a route is failing, but you shouldn't use it as a comprehensive success monitor.
-
-+ **Summary**: Display All calls through this carrier, whether in Live (last 24 hours), Daily, or Monthly formats are in 24-hour UTC. This data updates every hour.
-
-!!! warning "Auto Generate Invoice"
-    Don't use "Auto Generate Invoice" under the Carrier. You should manage invoices via the [**Customer Invoice**](https://docs.connexcs.com/customer/invoices/) section.  
-
-### Reply Management
-
-Customers can use **Reply Management** to customize responses based on the SIP message (100 to 606) received from the carrier. This allows for more efficient messaging and system responses.
-
-You can use this for customers who have switches that require certain SIP code responses.
-
-See the [**Wikipedia List of SIP response codes**](https://en.wikipedia.org/wiki/List_of_SIP_response_codes) for extra details about each code.
-
-To edit Reply Codes:
-
-1. Select **`Edit`** on the right of the code.
-2. Select the action:
-    + Failover (only available for some codes)- allows the call to try the next carrier
-    + Replace- enter the New Code and New Reason
-
-!!! example "Code Replace use case"
-    The customer switch expects a SIP 180 response (ringing) but only receives a 183 response (session in progress).The 180 (with SDP) instructs the SIP phone to generate ringing locally (the audio is clear because it's local), whereas the 183 (without SDP) generates ringing at the network (this may play different ringing, possibly for the local country). In this case, the modified code 180 replaces the 183 code in `Replace` (Reply Management).
-
-!!! example "Code Failover use case"
-    In some situations, carriers may not return SIP failure codes accurately. If the carrier sends a 404 (client-side error) the customer equipment may not failover to the next carrier automatically. Set 404 to `Failover` to the next carrier using Reply Management.
-
-### Auth
-
-1. Carrier **IP Authentication**: This uses IP addresses to allow or disallow attempts to access service.
-   To add authorized IP address(es), click :material-plus: on the right. These fields are the same as in [**Customer Auth**](https://docs.connexcs.com/customer/auth/) except that they pertain to Carriers. The only exceptions are:
-
-    + **User name and Password**: These are for the call to connect out to the carrier, if server is acting as a User Account Control (UAC).
-    + **Outbound Proxy** (only for Ingress switches): Enter the IP address of a proxy server to which calls should be routed before being sent to the carrier. This rewrites the UAC IP in the VIA field of the SIP header.  
-    This reduces management overhead as a customer only needs to approve the single IP. Also, several addresses can be load balanced using the AnyEdge system.
-    + **Weights**: When the configuration of several switches takes place in IP Authentication, this field sets weighting to find which servers are most preferred, essentially doing outbound distribution to a single carrier, but through several gateways to that carrier.
-
-1. Carrier **SIP User Authentication** is only used to allow a carrier to connect to the system, not for outbound connections.
-[**Customer Auth**](https://docs.connexcs.com/customer/auth/) gives information on the field details.  
-
-### Failover
-
-The **Failover** tab lists calls that failed with this carrier but connected with another carrier. This typically helps to troubleshoot an issue with the carrier that's failing the calls. You can also use this to identify FAS (False Answer Supervision) billing fraud.
-
-!!! info "ConnexCS will halt routing on the following codes"
-    - `3XX` (Re-write to 503)
-    - `486`
-    - `480`
-    - `404`
-
-### Latest Calls
-
-The **Latest Calls** tab displays the most recent calls to pass through a given system. View recent calls and their SIP traces and run simulated calls.
-
-See [**Logging**](https://docs.connexcs.com/logging/) section for details on these functions. To view Latest Calls for all customers, go to the Logging section in ConnexCS.
-
-To simulate a call:
-
-1. Click on the `Call ID`.
-2. Click **`Simulate`**.
-3. Complete details for **Dialed Number, CLI/ANI, Switch IP** etc.
-4. Click **`Simulate`**.
-
-### Payment
-
-The **Payment** tab shows payments made to the carrier. To add a new payment, click :material-plus:, fill in the payment information, and then click **`Save`**.
-
-### Stats
-
-Click **Stats** tab to view carrier-related statistics. You can find the descriptions for each of these graphs in [**Customer Stats**](https://docs.connexcs.com/customer/stats/).
-
-### Alerts
-
-Use Carrier **Alerts** to contact a selected email address when `Consecutive Failovers` reach a predetermined limit. See [**Customer Alerts**](https://docs.connexcs.com/customer/alerts/) for configuration details.
-
-### Direct Inward Dial
-
-The **DID** tab displays a list of DIDs that belong to that carrier. You can add new entries with the :material-plus: on the left.
-
-See [**Customer DID**](https://docs.connexcs.com/customer/did/) for configuration details.
-
-### Call Detail Record
-
-The **CDR** tab displays call drop rates. Use **`Recalc CDR`** when CDR records aren't accurate.
-
-See [**Customer CDR**](https://docs.connexcs.com/customer/cdr/#recalculate-cdr) for details.
-
-!!! danger "Rerating CDRs"
-    If you select either "Rerate" option when recalculating CDRs, this will change your CDRs and isn't reversible. You can revise Original call durations according to the criteria selected.
-
 ## Special Considerations
 
 [**Bandwidth.com**](https://www.bandwidth.com/) has diverged from the SIP spec and exposed an internal IP address required for sequential requests.
 
 To ensure compatibility, set the switch manufacturer to `bandwidth.com`.
 
-[carriers-main]: /carrier/img/carriers-main.png "Carriers"
-[carrier]: /carrier/img/carrier.png "Carrier Main"
+[carriers-main]: /carrier/img/carriers-main.png "Carriers" style="border: 2px solid #4472C4; border-radius: 8px;"
+[carrier]: /carrier/img/carrier.png "Carrier Main" style="border: 2px solid #4472C4; border-radius: 8px;"
 
 ## Headers from Customers to Providers
 
@@ -249,14 +158,14 @@ When the Carrier requires information on the headers sent from the UAC, you can 
 3. Consider an example here: **Example of how to retain X-ng199 but remove all other X-headers**
 4. Enter the code in the Vars<sup>TOML</sup> section.
 
-```js
+```js linenums="1"
 [headers] // configuration for headers
 remove_regex="^X-(?:(?!(ng911)).)*" // only retain X-ng199 but remove all other X-headers
 ```
 
 The **Default Setting** is:
 
-```js
+```js linenums="1"
 [headers]
 remove_regex="^X-.*"
 ```
@@ -266,8 +175,4 @@ remove_regex="^X-.*"
 !!! Danger Note
     Please note you can use the regex pattern according to your requirement.
 
-<img src= "/carrier/img/regex.png">
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwMTM2NjQxM119
--->
+<img src= "/carrier/img/regex.png" style="border: 2px solid #4472C4; border-radius: 8px;">

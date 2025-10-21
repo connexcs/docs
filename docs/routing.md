@@ -53,8 +53,6 @@ graph LR
 
 **Egress** refers to outbound calls. **Egress Routing** section isn't available. The Customer Rate Card includes the Egress routing, which contains 1 or more Carriers, and, optionally, a routing strategy (such as Default LCR).
 
-UA -> Customer > Customer Rate Card > Carrier Rate Card -> Carrier -> PSTN -> Far-End
-
 ```mermaid
 graph LR
     A(UA) --> B[Customer]
@@ -103,7 +101,3 @@ If your Session Initiation Protocol (SIP) Trace shows that an INVITE packet was 
     When making changes, although we try to synchronise all endpoints instantly, as this is a distributed system, it can take up to 60 seconds for any changes to take effect.
 
 [call-flow]: /misc/img/call-flow.jpg "Call Flow"
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDI5OTY5MzJdfQ==
--->

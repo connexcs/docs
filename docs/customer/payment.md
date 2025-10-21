@@ -2,7 +2,7 @@
 
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Payments**
 
- View a complete list of all previous **Payments**.
+The Payments section enables users to efficiently add, track, and manage transactions, including a complete history of previous payments.
 
 !!! note "Global Payments"
     You can also manage Payments under **Global :material-menu-right: Payments**, which displays all Payments across the account.
@@ -15,7 +15,7 @@ To add a new payment
     + **Description** is the name of the payment.
 
         If you wish to hide any information on the customer portal, use **#** followed by the text to hide.
-        
+
         !!! Example
             PayPal 87878787744XXX #payment from the demo.
         !!! Note
@@ -23,20 +23,20 @@ To add a new payment
 
     + **Total** is the amount of the payment.
     + **Payment Fee (Ref Only)** For payments made through PayPal or another external payment system, the Payment Fee field is automatically filled.
-    + **Status** allows you to set the Payment to **Pending, Cancelled or Completed**.
-    Pending and Cancelled payments are not included in the balance calculation.
+    + **Status** allows you to set the Payment to:
+        + **Pending**: Not included in balance calculations
+        + **Cancelled**: Ignored in balance calculations.
+        +  **Completed**: Marked as an active payments.
     + **Email Confirmation**: If enabled, once you save the Payment, an email is generated to all Contacts configured on the customer informing them that the payment has been received and applied to the account.
 
-    ![alt text][payments-tab]
+    <img src= "/customer/img/531.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 2. Click **`Save`**.
 
 !!! tip "Pending Payments"
-    When a customer places a payment through their bank, it shows **Pending** status.
-
-    To accept the payment, set it to **Completed** and click **`Save`**.
+    1. When a customer places a payment through their bank, it shows **Pending** status.
+    2. The customer can manually update the status from **Pending** to **Completed** after confirming the bank transfer.
+    3. Ensures accurate tracking and verification of bank payments before they reflect in the system.
 
 !!! warning "Negative Payments"
-    If a customer has made any kind of purchase on the account, it is shown as a negative amount on the main **Payments** page > **Total** section.
-
-[payments-tab]: /customer/img/53.png "Payment Tab"
+    If a customer has made any kind of purchase on the account, it's shown as a negative amount on the main **Payments** page > **Total** section.
