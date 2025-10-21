@@ -1,6 +1,19 @@
+---
+title: "Caller Line Identification (CLI) | Routing Rules & Caller ID | ConnexCS"
+description: "Learn how Caller Line Identification (CLI) works in ConnexCS. Configure routing rules, manage caller IDs, and ensure reliable call delivery."
+canonical_url: "https://docs.connexcs.com/customer/cli/#cli-routing-rules"
+---
+
+# Caller Line Identification (CLI)
+
+This page explains CLI Routing Rules...
+
 # Caller Line Identification
 
 ## Overview
+For a complete guide to Caller Line Identification (CLI), including routing rules, see [CLI Documentation](https://docs.connexcs.com/customer/cli/#cli-routing-rules).
+
+**CLI (Caller Line Identification)** (or "Automatic Number Identification") refers to the *From* header in Session Initiation Protocol (SIP) and represents the senders number in an outgoing telephone call. It's the technical term for the Caller ID mechanism.
 
 CLI (Caller Line Identification), aka ANI (Automatic Number Identification), is the From header in SIP. It represents the sender's number in a telephone call. It's the technical term for the mechanism we know as Caller ID.
 
@@ -47,14 +60,14 @@ Depending on how you want to route the calls, toggle a CLI between `Forced` and 
 4. Enter the phone number with the country prefix.
 5. Click on **Next Step**.
 
-<img src= "/customer-portal/img/cli1.png">
+<img src= "/customer-portal/img/cli1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 6.You will receive a call for the **Verification Code**.
 
 7.Enter the verification code and the click **Verify Code**.
 
-<img src= "/customer-portal/img/cli2.png">
+<img src= "/customer-portal/img/cli2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 8.The CLI will be added as **Whitelist**. **Forced** CLI appears when the customer has forced a particular CLI in their account.
 
-<img src= "/customer-portal/img/cli3.png">
+<img src= "/customer-portal/img/cli3.png" style="border: 2px solid #4472C4; border-radius: 8px;">

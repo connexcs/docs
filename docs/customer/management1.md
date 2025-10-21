@@ -8,19 +8,11 @@ This section centralizes operations related to customers, carriers, rate cards, 
 
 With the Management section, you can efficiently handle account setups, optimize call routing, and track system performance.
 
-Its an essential tool for businesses to streamline operations, improve efficiency, and maintain quality of service.
-
 ## Benefits of the Management Section
 
 **Centralized Control**: Manage all aspects of customer, carrier, and routing configurations from one interface.
 
-**Efficiency & Automation**: Automate key processes such as bulk SIP user uploads and voucher generation.
-
-**Real-time Monitoring**: Track system performance, reports, and circuit tests to maintain service quality.
-
 **Customizable Operations:** Define and apply routing strategies, rate cards, and tagging for streamlined operations.
-
-**Improved Billing Accuracy**: Ensure accurate rate application and account management to prevent revenue loss.
 
 ## Various Sections
 
@@ -34,7 +26,7 @@ Its an essential tool for businesses to streamline operations, improve efficienc
 
 5. **Routing Strategy**: Enables call routing configurations
 
-6. **Tags**: Applying tags to streamline reporting, filtering and enhancing searchability.
+6. **Tags**: It's a dynamic label which links Routes, Alerts, CLI rules to customers by automatically applying tagged configuration when the same tag is assigned to a customer.
 
 7. **SIP Devices**: Ability for providers to make SIP Phones.
 

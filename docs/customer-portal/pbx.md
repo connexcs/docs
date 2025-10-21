@@ -1,7 +1,9 @@
 # Private Branch Exchange (PBX)
-In **PBX**, you will find several useful features to help manage calls and interactions. 
+
+In **PBX**, you will find several useful features to help manage calls and interactions.
 
 ## Conference
+
 Use the **Conference** feature (also known as a Conference Call or Bridge) to allow multiple callers to communicate with each other over a voice call. Once created, Callers join the call and Moderator presides.
 
 In this section, view all the configured **Conference** groups:
@@ -11,6 +13,7 @@ In this section, view all the configured **Conference** groups:
 + **Active Participants**: All callers who have joined the Conference
 
 ### Edit Existing Conference
+
 Click on the existing Conference name to edit the following fields:
 
 *Field details:*
@@ -30,15 +33,15 @@ Click on the existing Conference name to edit the following fields:
 
     ![alt text][conference]
 
-Click **`Save`** to retain thew new settings. 
+Click **`Save`** to retain thew new settings.
 
 !!! tip "Conference calls for external callers"
-    Only internal callers can use the above mentioned standard Conference configuration. To allow external numbers to dial into the conference, setup a [**Customer DID**](/customer-portal/did/) and set the Destination to Internal, and then select the available pre-configured conference. 
+    Only internal callers can use the above mentioned standard Conference configuration. To allow external numbers to dial into the conference, setup a [**Customer DID**](/customer-portal/did/) and set the Destination to Internal, and then select the available pre-configured conference.
 
 *(DID: Direct Inward Dialing)
 
 ### Conference Call keypad options
-Callers can use the keypad to control the audio on the conference call. 
+Callers can use the keypad to control the audio on the conference call.
 
 |Key|Result|Description|
 |-------|------|------|
@@ -58,9 +61,11 @@ Callers can use the keypad to control the audio on the conference call.
 [conference]: /class5/img/conference.png "Add Conference"
 
 ## IVR
+
 The **IVR (Interactive Voice Response)** (or Phone Tree) presents callers with a menu and options for call routing. Callers dial-in and select an option on the number pad which is mapped to an extension for a specific department or group within the company. These extensions are routed to different Session Initiation Protocol (SIP) addresses, Public Switched Telephone Network (PSTN) numbers, internal extension numbers, other IVRs, conference bridges, groups, and Class 5 applications. When you create an IVR, you specify a 1:1 mapping for all the possible keys on the keypad.
 
 ### Edit Existing IVR
+
 Click on the **IVR** name to edit the following fields:
 
 + **Name**: The name of the IVR.
@@ -80,8 +85,8 @@ A **Group** allows you to create a team of individuals to receive calls placed t
 + **Name**: Enter the name for the group (ex: Sale, Customer Support, Office, or Garage).
 + **Extension**: The number/extension callers use to connect to this group.
 
-
 ### Edit Existing Group
+
 Click on the Group name, and then click **`Edit`** to modify the following:
 
 + **Name**: The Group Name (The group type can be mentioned for easy reference).
@@ -102,6 +107,7 @@ Click on the Group name, and then click **`Edit`** to modify the following:
 *(SIP: Session Initiation Protocol, DID: Direct Inward Dialing)
 
 ## Queue
+
 The **Queue**, similar to Groups, allows you to create a team of people into a call queue. The caller is then routed to the next available member(who waits the longest to receive a call). If you use this routing strategy:
 
 + You can upload audio files that greet the caller and play music when the caller or the member puts the call on hold.
@@ -110,6 +116,7 @@ The **Queue**, similar to Groups, allows you to create a team of people into a c
     ![alt text][queue]
 
 ## Edit Existing Queue
+
 Click on the **Queue** name to edit the following:
 
 + **Name**: Enter the name for the queue.

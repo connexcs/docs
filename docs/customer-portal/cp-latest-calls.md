@@ -20,6 +20,4 @@ See Logging section for details on these functions. To view Latest Calls for all
       2. Refresh call logs.
       3. View raw call data.
 
-![alt text][latestcalls]
-
-[latestcalls]: img/cp-latestcalls.png "Latest Calls"
+<img src= "/customer-portal/img/latestcalls1.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;"> 

@@ -2,9 +2,25 @@
 
 **Management :material-menu-right: Carrier**
 
+## Overview
+
+The Carrier Interface in ConnexCS provides functionalities for managing carrier settings, credit, authentication, and response handling.
+
 Use the **Carrier** section in **ConnexCS** for simplified Carrier management where you can add, configure, and delete Carriers.
 
-<img src= "/carrier/img/carriermain.png">
+### Key Features
+
+1. **Call Completion**:
+      1. A call may not complete if a customer lacks credit.
+
+      2. Calls will still connect if a carrier doesn't have credit; the carrier credit field is informational and doesn't prevent calls.
+
+2. **Carrier Rate Card Structure**: Every carrier has one or more rate cards. Each rate card contains the charges imposed by the carrier.
+
+!!! Tip "Key Considerations"
+    The system doesn't display the "Auto-generate invoice" option in this section.
+
+<img src= "/carrier/img/carriermain.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Carrier Functions
 
@@ -31,7 +47,7 @@ From the **Carriers** page, you can perform several management operations.
     + Write the Body of the referral.
     + Click on `Send`.
   
-<img src= "/carrier/img/carrier_referral.png">
+<img src= "/carrier/img/carrier_referral.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 + **Active**: Used to sort Carriers based on the selected status. Results on the page will automatically arrange themselves according to the filter.
 
@@ -88,17 +104,22 @@ From the **Carriers** page, you can perform several management operations.
 
     * **PayPal Email:** Enter the PayPal e-mail associated with the carrier's account.
     * **Website:** Add the carrier's official website.
-    * **P-Asserted-ID:** Considered a network level identifier, you can select how calls to the provider is handled based on the PA-ID:
+    * **P-Asserted-ID:** Consider a network level identifier, you can select how calls to the provider is handled based on the PA-ID:
     
-        :material-menu-right: `Default`- call passed to the provider (no manipulation)
+        :material-menu-right: `Default`: Call passed to the provider (no manipulation).
         
-        :material-menu-right: `Remove`- strips PA-ID before passing the call to the provider
+        :material-menu-right: `Remove`: Strips PA-ID before passing the call to the provider.
         
-        :material-menu-right: `If Available`- will add PA-ID if one has been provided, otherwise the call will still be allowed
+        :material-menu-right: `If Available`: It will add PA-ID if one has been provided, otherwise the call will still be allowed.
         
-        :material-menu-right: `Required`- call won't be delivered to the provider without the PA-ID
+        :material-menu-right: `Required`: Call won't be delivered to the provider without the PA-ID.
     
-    * **Consec Fail Backoff:** When Enabled, if a carrier goes down, only a fraction of calls will be sent to the carrier until the start to complete again (calls aren't completely disabled otherwise there is no way to know when the carrier is back up again). The First Reply Timeout is skipped.  
+    * **Consec Fail Backoff:** When Enabled, if a carrier goes down, only a fraction of calls will be sent to the carrier until the start to complete again (calls aren't completely disabled otherwise there is no way to know when the carrier is back up again). The First Reply Timeout is skipped.
+        * **Purpose**: Helps determine if a route is down.
+        * **Functionality**:
+            * Counts the number of consecutive failed calls.
+            * Resets to zero when a call successfully connects.
+            * If 10,000 consecutive calls fail, it indicates a route is likely down.
     * **Tags** and **TOML:** Not applicable to carriers.
     * **Ext.Accounting ID:** This is used to fill in work in an external accounting field to correlate between Connexcs and the external accountancy system.
     * **Call Recording Retention Days:** How long the customer wants to keep the recorded calls.
@@ -123,8 +144,8 @@ From the **Carriers** page, you can perform several management operations.
 
 To ensure compatibility, set the switch manufacturer to `bandwidth.com`.
 
-[carriers-main]: /carrier/img/carriers-main.png "Carriers"
-[carrier]: /carrier/img/carrier.png "Carrier Main"
+[carriers-main]: /carrier/img/carriers-main.png "Carriers" style="border: 2px solid #4472C4; border-radius: 8px;"
+[carrier]: /carrier/img/carrier.png "Carrier Main" style="border: 2px solid #4472C4; border-radius: 8px;"
 
 ## Headers from Customers to Providers
 
@@ -137,14 +158,14 @@ When the Carrier requires information on the headers sent from the UAC, you can 
 3. Consider an example here: **Example of how to retain X-ng199 but remove all other X-headers**
 4. Enter the code in the Vars<sup>TOML</sup> section.
 
-```js
+```js linenums="1"
 [headers] // configuration for headers
 remove_regex="^X-(?:(?!(ng911)).)*" // only retain X-ng199 but remove all other X-headers
 ```
 
 The **Default Setting** is:
 
-```js
+```js linenums="1"
 [headers]
 remove_regex="^X-.*"
 ```
@@ -154,8 +175,4 @@ remove_regex="^X-.*"
 !!! Danger Note
     Please note you can use the regex pattern according to your requirement.
 
-<img src= "/carrier/img/regex.png">
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwMTM2NjQxM119
--->
+<img src= "/carrier/img/regex.png" style="border: 2px solid #4472C4; border-radius: 8px;">
