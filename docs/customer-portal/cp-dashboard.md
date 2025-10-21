@@ -1,6 +1,14 @@
 # Dashboard
 
-The **Customer Portal** provides access to configurations, real-time testing and stats, and more information about your account. The **Dashboard** provides an overview of Call Stats and Summaries.
+The **Customer Portal** provides access to configurations, real-time testing and stats, and more information about your account.
+
+The Dashboard provides a real-time overview of `Balance`, `Channels`, and key system metrics. It includes interactive elements for monitoring traffic, analyzing trends, and customizing data displays.
+
+## Overview
+
++ Displays a summary of Live Channels, Active Customers, Carriers, and Rate Cards.
++ Quick access to essential functions.
++ For detailed account activities, use the Menu System on the left.
 
 ## Top of Page Functions
 
@@ -12,7 +20,7 @@ The **Customer Portal** provides access to configurations, real-time testing and
 
 + **Channel Count** Total Live Channels presently in use and total configured Channels.
 
-+ **Account Balance** Displays the current account balance and a link to make a payment using a credit card or PayPal. [Click here](https://docs.connexcs.com/customer-portal/cp-payment/) to know more about **Payments**.
++ **Balance** Displays the current account balance and a link to make a payment using a credit card or PayPal. [Click here](https://docs.connexcs.com/customer-portal/cp-payment/) to know more about **Payments**.
 
 + **Account** Use this to view your Company Profile, view and update your personal Profile, Change Password or Language, or Log Out.
 
@@ -36,7 +44,7 @@ Below is the Current Customer account usage on four default **Graphs**.
 
 |Graph|Description |
 |:----|:-----------|
-|**Live Channels**|Details of active channel usage|
+|**Live Channels**|Details of active channel usage. Diaplays the number of active channels in real time through a Graph. Option to view the maximum channel value across all servers.|
 |**ASR**|You can view Answer Seizure Ratio as a Total, or isolate traffic on a per-carrier basis. If some carriers are lower than others, this may create an issue|
 |**ACD**|You can view the total average call duration or isolate traffic by carrier, A lower ACD on one carrier is indicative of potential line quality issues|
 |**DTMF**|DTMF (Dual Tone Modulated Frequency) percentages|
