@@ -10,7 +10,7 @@ Enable Pivot Mode (check box at the top of Columns) to setup Row Groups and Valu
     The information here is from a processed Call Detail Record (CDR) and is thus considered "billing accurate." You can use this data to bill your customers.
 
  Toggle **Group Destination** to show calls based on the destination number.
-
+ 
  Use the **`Date`** and **`Select Destination`** fields at the top of the page to filter results.
 
  The **Select Destination** allows you to filter out the calls made to a particular destination.

@@ -6,7 +6,7 @@ A checkbox is a type of input field in a form builder that allows users to selec
 
 Checkboxes are typically used to collect data about user preferences or choices.
 
-<img src= "/apps/components/img/checkbox.png">
+<img src= "/apps/components/img/checkbox.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Use Case
 
@@ -81,7 +81,7 @@ Some of the most common methods include:
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/check1.png">
+<img src= "/apps/components/img/check1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Example
     1. `this.addClassName(fields, className)`
@@ -97,52 +97,52 @@ Some of the most common methods include:
             ```
 
     2. `this.removeClassName(fields, className)`
-        ```js
+        ```js linenums="1"
         this.removeClassName('checkbox_g0x4pt54z', 'abc')
         ```
     
     3. `this.getValues()`
-        ```js
+        ```js linenums="1"
         var data = this.getValues();
         console.log(data);
         ```
     
     4. `this.hide(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['checkbox_g0x4pt54z']
         this.hide(fields)
         ```
     
     5. `this.show(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['checkbox_g0x4pt54z']
         this.show(fields)
         ```
     
     6. `this.disable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.disable(['checkbox_g0x4pt54z'])
         ```
     
     7. `this.enable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.enable(['checkbox_g0x4pt54z'])
         ```
     
     8. `this.getValue('fieldName')`
-        ```js
+        ```js linenums="1"
         var checkname = this.getValue('checkbox_g0x4pt54z');
         console.log('getValue', checkname);
         ```
     
     9. `this.getComponent('component_ID')`
-        ```js
+        ```js linenums="1"
         var checkname = this.getComponent('checkbox_g0x4pt54z');
         console.log('getComponent', checkname);
         ```
     
     10. `this.setData(Value)`
-        ```js
+        ```js linenums="1"
         this.setData(
          {
          "checkbox_g0x4pt54z": "Option 1", "Option 2",}
@@ -188,7 +188,7 @@ Form validation can be performed using a variety of methods, including:
 !!! Info
     1. The **callback() function** is also called to verify success in the custom validation method.
 
-<img src= "/apps/components/img/cascader_validation.png">
+<img src= "/apps/components/img/cascader_validation.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## First time User?
 

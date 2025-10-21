@@ -6,7 +6,7 @@ An iframe component, short for "inline frame", is an HTML element that embeds an
 
 In the context of forms, iframe components can be used to integrate third-party content, such as maps, calendars, or payment gateways, into a form without disrupting the form's layout or functionality.
 
-<img src= "/apps/components/img/iframe.png">
+<img src= "/apps/components/img/iframe.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Use Case
 
