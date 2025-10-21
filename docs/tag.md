@@ -2,9 +2,9 @@
 
 **Management :material-menu-right: Tags**
 
-A **Tag** refers to a label or keyword used to categorize or identify something.
+It's a dynamic label which links Routes, Alerts, CLI rules to customers by automatically applying tagged configuration when the same tag is assigned to a customer.
 
-With the help of tags, you may generate global Alerts, Routing, and CLI information. Following the creation of the Tags, you can tag your clients in the Alert, Routing, or CLI Strategy.
+With the help of tags, you may generate global [Alerts](https://docs.connexcs.com/customer/alerts/), [Routing](https://docs.connexcs.com/routing/), and [CLI information](https://docs.connexcs.com/customer/cli/#cli-routing-rules). Following the creation of the Tags, you can tag your clients in the Alert, Routing, or CLI Strategy.
 
 By using tags, you may create an Alert, Routing or CLI Strategy for each specific customer with less time and effort.
 
@@ -13,7 +13,7 @@ You may apply the tags to as many customers you wish.**Management :material-menu
 1. You can go to **Management :material-menu-right: Customer :material-menu-right: Config :material-menu-right: Tags**.
 2. Click on the dropdown next to Tags and assign it to your customer.
 
-![tags](/customer/img/tags.png)
+<img src= "/customer/img/tags.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 Tags help reduce the time and effort required in creating an Alert or Routing Strategy for each individual customer. Alerts will be sent to all the emails that are added to the contact of that customer.
 
@@ -41,7 +41,7 @@ The purpose is two-fold: to allow the threshold function to have a range type in
 12. Form the **Notice Level** dropdown you can either select the alert status as **None**, **Warning**, and **Error**.
 13. Click `Save`, and it creates a new alert.
 
-<img src= "/misc/img/t1.png">
+<img src= "/misc/img/t1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Info
     Whenever you select the **Area** as **Change** from menu, there are 2 options in **Table Change**, **SIP User** and **Switch** (you can either SIP User or Switch or you can select both.). An alert will be issued and sent to the customer's email address that there has been a change recorded in the IP list if you make any changes to the IP Authentication field after saving the settings, such as changing the IP Address etc.
@@ -67,16 +67,88 @@ Routing Tag helps you strategize the Routing options for your customer. You can 
 5. **Dial String**: Only allows a dialled number to pass through if it matches the defined dial string (or "dial pattern"). (If you customer enters nothing, it matches everything and attempts to send all calls).
 6. Check **Enabled** to make the fields active.
 
-<img src= "/misc/img/t2.png">
+<img src= "/misc/img/t2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 #### Price Limits
 
-1. **Capped Rate and Provider Capped Rate**: Set the maximum cost of a call. Calls that exceed the set rate won't get connected. For example, for customers with flat rate accounts, which allows to dial all UK numbers but premium numbers, you would set the Provider Capped Rate at 0.01, so any call that the provider might charge over that amount wouldn't get completed.
-2. **Profit Assurance**: When Enabled, only calls that are profitable pass-through; any call that costs more than the retail rate aren't allowed to complete. This is particularly useful for A-Z routes or NPA-NXX rate cards. Keep in mind that enabling it adds an extra Post-dial delay (PDD) to the call.
-3. **Block Connect Cost**: Block any call that has a connection fee.
-4. **FTC DNC Report ANI Block (USA)**: When Enabled, ConnexCS will take a copy of FTC data (using the FCC's Do Not Call (DNC) Reported Calls Data API) and add it to the system. We can then block callers from known spammer CLI / ANI's.
-5. **DNO**: [Click here](https://docs.connexcs.com/dnc/#do-not-originate-dno-list-blocking) to know more about it.
-6. **Stir Shaken Min Attest**: It enables the selection of STIR/SHAKEN attestation levels for validating incoming calls. Users can configure the system to permit only calls that meet specific attestation standards. The available validation levels are as follows:
++ **Capped Rate and Provider Capped Rate**: Set the maximum cost of a call. Calls that exceed the set rate won't get connected. For example, for customers with flat rate accounts, which allows to dial all UK numbers but premium numbers, you would set the Provider Capped Rate at 0.01, so any call that the provider might charge over that amount wouldn't get completed.
+
++ **Profit Assurance**: When Enabled, only calls that are profitable pass-through; any call that costs more than the retail rate aren't allowed to complete. This is particularly useful for A-Z routes or NPA-NXX rate cards.
+
+!!! Tip "When Profit Assurance Fails to Operate"
+    **A. Profit Assurance may appear to fail, often due to:**
+
+    1.**Incorrect Billing Configurations**:
+    
+    Billing increments (e.g., 6/6, 30/6, or 60/60) play a significant role in profitability. A mismatch between the billing increments of your carrier and customer rates can lead to unexpected losses.
+    
+    **For example**:
+        If you buy at 30/6 and sell at 6/6, you lose money on shorter-duration calls because of rounding discrepancies.
+    
+    2.**Profit Assurance Enabled but Losses Persist**:
+    
+    Even with Profit Assurance enabled, losses may occur due to:
+    
+    * Specific call durations where rounding favors the carrier.
+    * Variability in customer usage patterns that do not align with your billing increment assumptions.
+    
+    3.**Misunderstanding Call Connection Logic**:
+    
+    Profit Assurance does not retroactively check call profitability during ongoing calls. If the buy rate is temporarily higher than the sell rate due to duration or rounding, calls may still connect.
+
+
+    **B. Diagnosing the Issue**
+
+    **Step 1: Analyze Breakout Reports**
+    
+    Use the Breakout Report to identify calls with negative margins: 
+    
+       * Navigate to **Management :material-menu-right: Reports :material-menu-right: Breakout Report**.
+     
+       * Filter by destination, carrier, or time period to pinpoint unprofitable calls.
+    
+    **Step 2: Compare Billing Increments**
+    
+    Verify the billing increments set for your carrier and customer:
+    
+      * Carrier increments define how you are charged (e.g., 30/6).
+    
+      * Customer increments define how you bill your customers (e.g., 6/6).
+    
+      * Mismatched increments often lead to losses, especially on shorter calls.
+
+    **Step 3: Review Sell and Buy Rates**:
+       
+    Ensure that your sell rates are consistently higher than your buy rates:
+       
+       + Check rate sheets for discrepancies.
+       
+       + Adjust rates to maintain a positive margin.
+
+
+    **C. Resolving the Issue**
+    
+    a. Adjust Configuration:
+    
+    * Align carrier and customer billing increments to minimize rounding discrepancies.
+    
+    * Update rate sheets to ensure sell rates always exceed buy rates.
+  
+    b. Enable Profit Assurance (if not already enabled):
+        
+    + This will block calls where the sell rate is lower than the buy rate.
+  
+    c. Identify and Address specific calls causing losses using the Breakout Report:
+        
+    + Analyze their durations and verify if the billing increments contributed to the issue.
+      
++ **Block Connect Cost**: Block any call that has a connection fee.
+
++ **FTC DNC Report ANI Block (USA)**: When Enabled, ConnexCS will take a copy of FTC data (using the FCC's Do Not Call (DNC) Reported Calls Data API) and add it to the system. We can then block callers from known spammer CLI / ANI's.
+
++ **DNO**: [Click here](https://docs.connexcs.com/dnc/#do-not-originate-dno-list-blocking) to know more about it.
+
++ **Stir Shaken Min Attest**: It enables the selection of STIR/SHAKEN attestation levels for validating incoming calls. Users can configure the system to permit only calls that meet specific attestation standards. The available validation levels are as follows:
     + **A**: Permits only calls with attestation level A, the highest level of trust. Calls with attestation levels B or C will be blocked.
     + **A + B**: Restricts incoming calls to only those with attestation levels A or B. Calls with attestation level C will be blocked.
     + **A + B + C**: Allows calls with any attestation level (A, B, or C) to pass through.
@@ -111,14 +183,14 @@ Routing Tag helps you strategize the Routing options for your customer. You can 
     
     Changing the CPS Buffering value only affects calls that exceed the CPS. The delay will show as increased PDD on the call, each second the system will emit a 100 Trying (High CPS, Buffering) response to show the status/progress of the call.
 
-5.**ASR Plus** assists capacity management by helping you define how to handle connections for known failed numbers. For information on the ASR Plus options, see [**ASR Plus Details**](https://docs.connexcs.com/customer/routing/#asr-answer-seizure-ratio-plus-details) here.
+5.**ASR Plus** assists capacity management by helping you define how to handle connections for known failed numbers. For information on the ASR Plus options, see [**ASR Plus Details**](https://docs.connexcs.com/customer/routing/#answer-seizure-ratio-plus-details) here.
 
 6.**Balance Disconnect** this feature checks the balance every 60 seconds. It will disconnect the call when the **balance plus the debit limit** is below $0.
 
 !!! note
     Balance Disconnect only takes into account the **completed calls**; it excludes any **active calls**.
 
-<img src= "/misc/img/t4.png">
+<img src= "/misc/img/t4.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 #### ScriptForge
 
@@ -128,7 +200,7 @@ For more information about setup and operation, see the [**ScriptForge**](https:
 3. **Timeout Action**: This option lets you decide the action when the timeout occurs.
 4. **VARS [(TOML)](https://en.wikipedia.org/wiki/TOML)**: Select the variables you want pass into the ScriptForge script.
 
-<img src= "/misc/img/t5.png">
+<img src= "/misc/img/t5.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 #### Locks
 
@@ -145,7 +217,7 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 !!! tip "Exclude Use Case"
     If a customer reports an issue with a carrier or route, you can come here and set the carrier / route to Exclude and **`Save`**, then come back and remove it, and do a **`Delay and Save`** for a later date.
 
-<img src= "/misc/img/t6.png">
+<img src= "/misc/img/t6.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 6.**Flags**:
 
@@ -160,31 +232,25 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
             B -- No: If the dialed number doesnt match any DID in the account--> D{Route call externally via carrier as configured}
         ```
 
-!!! Note "Enabling TCPA  Litigator DNC flag and On Net Call Routing flag"
-    1. **Navigate to Management :material-menu-right: Tags :material-menu-right: Routing :material-menu-right: Locks :material-menu-right: TCPA  Litigator DNC/On Net Call Routing**.
-    2. Click on the checkbox to enable the required flags.
-    3. Click on `Save`.
-    <img src= "/customer/img/tcpa2.png">
-
 #### Media
 
 1. **Transcoding**: Enter the number  of channels allowed for transcoding. This is a limited option. The best use case is for customers in low-bandwidth areas that want to use G.729.
   Be aware that if you don't have enough transcoding capacity, calls will fail.
 2. **SIP Ping**: Send regular pings to ensure both sides of a call are still up. `Enabled` is the recommended setting.
 
-    |Option                          | Result                                            |
-    |--------------------------------|:--------------------------------------------------|
-    | **Disabled**                   | No SIP pings will be sent                        |
-    | **Enabled Both Sides**         | SIP pings sent in both directions        |
-    | **Enabled (Downstream Only)**  | SIP Pings sent to the location where the call originated |
-    | **Enabled (Upstream Only)**    | SIP Pings sent towards where the call is TO (terminated) |
+    |Option|Result|
+    |------|:-----|
+    | **Disabled**| No SIP pings will be sent|
+    | **Enabled Both Sides**| SIP pings sent in both directions|
+    | **Enabled (Downstream Only)**| SIP Pings sent to the location where the call originated|
+    | **Enabled (Upstream Only)**| SIP Pings sent towards where the call is TO (terminated)|
 
 3. **SIP Session Timer (SST)**: SST is Passive by Default, but **Enabled** is the recommended setting.
   When enabled, SST ensures there is no ghost or long-duration calls get billed when one or both sides have hung up. A timer activates when the call starts and refreshes the call every X number of seconds by sending a RE-INVITE.
   SST has surpassed SIP Ping Timeout as the best way to prevent long-duration calls. Note that any SST shorter than sixty (60) seconds gets rejected.
 
     |SST Option| Result|
-    |-------------------------|:------------------------------------------------------------------------------------------------|
+    |----------|:------|
     | **Default**| Passive SST, No headers gets changed and no SST gets engaged, all RE-INVITES will propagate through the system enables|
     | **Enabled Both** | ConnexCS will send SIP Session Timers to both legs of the call|
     | **Enabled (Upstream)** | ConnexCS will use SST with the carrier|
@@ -216,12 +282,12 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 
 !!! info "RTP Proxy distinctions"
     When a call gets established between the customer and the provider, audio can be setup in one of two ways:
-|                         | **With RTP Proxy** | **Without RTP Proxy** |
-|-------------------------|:------------------:|----------------------:|
-| **Audio Path**          |      Indirect      |                Direct |
-| **Audio Quality**       |      Excellent     |            Unbeatable |
-| **Latency**             |         Low        |                Lowest |
-| **Information Leakage** |         No         |                  Yes* |
+| | **With RTP Proxy** | **Without RTP Proxy** |
+|-|:------------------:|----------------------:|
+| **Audio Path**|Indirect|Direct|
+| **Audio Quality**|Excellent|Unbeatable|
+| **Latency**|Low|Lowest |
+| **Information Leakage** |No|Yes|
 
 * While it's doubtful that any information will get logged in the customer / providers switch when the audio gets engaged, it's possible for an engineer to learn this information from a SIP trace, PCAP, or by looking at transit locations. DTMF Detection ONLY works when RTP Proxy mode gets enabled.
 
@@ -234,7 +300,7 @@ CDR**
 
 * **Management ::material-menu-right: File :material-menu-right: Recording**
 
-An extra charge per recorded call of $0.003 gets added to existing fees or charges, so choose carefully how many calls to record:
+An extra [charge](https://connexcs.com/pricing) per recorded call gets added to existing fees or charges, so choose carefully how many calls to record:
 
 :material-menu-right: `Disabled`- no calls get recorded
 
@@ -249,20 +315,20 @@ An extra charge per recorded call of $0.003 gets added to existing fees or charg
 
 !!! note "Make sure your carrier supports the DTMF feature."
 
-<img src= "/misc/img/t7.png">
+<img src= "/misc/img/t7.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 #### Strategy
 
 For advanced routing, click :material-plus: to select a [**Prefix Set**](https://docs.connexcs.com/setup/advanced/prefix-set/) and assign a [**Routing Strategy**](https://docs.connexcs.com/routing-strategy/). This gives you greater control over how routes get selected for a given customer.
 
-<img src= "/misc/img/t8.png">
+<img src= "/misc/img/t8.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 #### Notes
 
 1. **Public Notes**: Notes entered here get displayed on the Customer Portal when logged in.
 2. **Private Notes**: These will get displayed to the customer in the Control Panel.
 
-<img src= "/misc/img/t9.png">
+<img src= "/misc/img/t9.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## CLI Tag
 
@@ -274,7 +340,7 @@ You can apply the created **CLI Tags** to various customers.
 2. Click on the blue `+` button on the top-right.
 3. Mention the **Tag** name here. It's a mandatory field.
 4. **CLI**: To allow the required CLIs, enter the required number or a regular expression (to match and replace). It's a required field.
-5. **Rewrite CLI**: A CLI can be rewritten. For example, you can add `123456789` in the CLI box and then rewrite by adding `987654321` in the rewrite CLI box. (For more advanced CLI manipulation, see [**Advanced CLI Match & Manipulation**](https://docs.connexcs.com/customer/cli/#advanced-cli-match-and-manipulation) below.
+5. **Rewrite CLI**: A CLI can be rewritten. For example, you can add `123456789` in the CLI box and then rewrite by adding `987654321` in the rewrite CLI box. (For more advanced CLI manipulation, see [**Advanced CLI Match & Manipulation**](https://docs.connexcs.com/customer/cli/#advanced-cli-match-and-manipulation) below).
 6. **Pre-Asserted-ID (PAID)**: To allow the required PAID, enter the required number or a regular expression to match or replace.
 7. **Rewrite P-Asserted-ID**: This is a SIP Header almost same as the FROM header but classified as a private, or network-level identifier.
 Telephone companies use it to identify call originators. As it's stripped at the call server, the client end-points only see the FROM field.
@@ -326,4 +392,4 @@ The **P-Asserted-ID** manipulation uses the same syntax as the Replace CLI.
 
 17.Click **`Save`** to complete the CLI configuration.
 
-<img src= "/customer/img/tagcli.png">
+<img src= "/customer/img/tagcli.png" style="border: 2px solid #4472C4; border-radius: 8px;">

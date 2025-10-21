@@ -28,7 +28,9 @@ For individual customers, navigate to **Management :material-menu-right: Custome
 
 The routing strategy set up for each group controls the routing of the calls to group members:
 
-**Parallel:** Rings a call to all members of the group simultaneously. The member's extensions ring for the length of time you specify.
+### Parallel (Hunt Group)
+
+Rings a call to all members of the group simultaneously. The member's extensions ring for the length of time you specify.
 
 You can assign unique timeout timers for individual members.
 
@@ -47,7 +49,9 @@ style D fill:#ECEFF1,stroke:#C70039,stroke-width:2px
 style E fill:#ECEFF1,stroke:#16C440,stroke-width:2px
 ```
 
-**Sequential:** Routes a call in a sequential order based on the order under Group Members.
+### Sequential
+
+Routes a call in a sequential order based on the order under Group Members.
 
 By default, a call routes to the member whose extension number has the highest value. **For example**, 5021.
 
@@ -67,7 +71,7 @@ style D fill:#ECEFF1,stroke:#C70039,stroke-width:2px
 style E fill:#ECEFF1,stroke:#16C440,stroke-width:2px
 ```
 
-**Queue:** A queue system manages high-volume inbound calls by placing them in a queue and distributing them to available agents.
+### Queue
 
 Places the caller in a call queue before routing the call to the next available member (whoever has been waiting for the longest to receive a call).
 
@@ -109,9 +113,9 @@ You must first upload the audio files to the system if you wish to use them for 
 
 ## Create a Group
 
-To create a new Group, click :material-plus:. 
+To create a new Group, click :material-plus:.
 
-![group12](/class5/img/group12.jpg)
+<img src= "/class5/img/group12.jpg" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 + **Name:** Enter the name for the group.
 + **Customer:** (Available only when you add the Group from Class5, not when in the Customer management area): From the drop-down list, select the customer to whom the group applies.
@@ -124,7 +128,7 @@ To create a new Group, click :material-plus:.
         + `Destination`: Click **`Edit`** to enter the Destination as either an External number or Internal (ConnexCS) extension, Session Initiation Protocol (SIP) User, group, Direct Inward Dialing (DID), etc.
         + `Ring Timeout`: This helps when calling mobile numbers, as you can cancel the call before it hits voicemail, allowing it to roll to the next Group Member.
 
-        ![alt text][group1]
+        <img src= "/class5/img/gp1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
     + **Queue** strategy requires extra fields (no **Group Members** tab available):
         + `On Hold Music`: The audio file to play to the member and caller when the call is on hold.
@@ -135,7 +139,7 @@ To create a new Group, click :material-plus:.
         + `Agent Logout Destination`: The extension number an individual must dial to quit the group.
         + `Agent Offhook Destination`: An extension number an individual must dial to receive calls soon after joining the group.
 
-        ![alt text][group2]
+        <img src= "/class5/img/gp2.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Info "On-hook and Off-hook Modes"
     1. **On-Hook Mode**:
@@ -151,5 +155,5 @@ To create a new Group, click :material-plus:.
 
 Select **`Save`** after making all necessary changes.
 
-[group1]: /class5/img/group1.png "Group Members Configuration"
-[group2]: /class5/img/group2.png "Group Queue Configuration"
+[group1]: /class5/img/group1.png "Group Members Configuration" style="border: 2px solid #4472C4; border-radius: 8px;"
+[group2]: /class5/img/group2.png "Group Queue Configuration" style="border: 2px solid #4472C4; border-radius: 8px;"
