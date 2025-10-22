@@ -44,7 +44,7 @@ With AI-driven automation, businesses can enhance customer experience while sign
     + **Platform**: Use either **ConnexCS Converse** or **ConnexCS Converse Direct** to model the AI Agent.
     + **Host**: It's the hosting server where your AI Agent runs and processes interactions.
     + Click `Save`.
-         <img src= "docs/class5/img/aiagent3new.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+         <img src= "/class5/img/aiagent3new.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 === "Model"
 
