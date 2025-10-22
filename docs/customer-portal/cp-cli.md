@@ -6,10 +6,6 @@ canonical_url: "https://docs.connexcs.com/customer/cli/#cli-routing-rules"
 
 # Caller Line Identification (CLI)
 
-This page explains CLI Routing Rules...
-
-# Caller Line Identification
-
 ## Overview
 For a complete guide to Caller Line Identification (CLI), including routing rules, see [CLI Documentation](https://docs.connexcs.com/customer/cli/#cli-routing-rules).
 
