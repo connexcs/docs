@@ -4,7 +4,7 @@
 
 **Link** components can be used in forms to provide additional functionality, such as opening external resources, navigating to different sections of the form, or triggering specific actions.
 
-<img src= "/apps/components/img/link.png">
+<img src= "/apps/components/img/link.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Use Case
 
@@ -53,7 +53,7 @@
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/link2.png">
+<img src= "/apps/components/img/link2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Example
     1. `this.addClassName(fields, className)`
@@ -69,34 +69,34 @@
             ```
 
     2. `this.removeClassName(fields, className)`
-        ```js
+        ```js linenums="1"
         this.removeClassName('link_0t4yixc3', 'abc')
         ```
     
     3. `this.hide(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['link_0t4yixc3']
         this.hide(fields)
         ```
     
     4. `this.show(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['link_0t4yixc3']
         this.show(fields)
         ```
     
     5. `this.disable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.disable(['link_0t4yixc3'])
         ```
     
     6. `this.enable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.enable(['link_0t4yixc3'])
         ```
     
     7. `this.getValues()`
-        ```js
+        ```js linenums="1"
         var data = this.getValues();
         console.log(data);
         ```

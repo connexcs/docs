@@ -6,7 +6,7 @@ A **Switch** component in a form is a visual and interactive element that users 
 
 It offers a clear and efficient way for users to select one of two mutually exclusive options within a form field.
 
-<img src= "/apps/components/img/switch.png">
+<img src= "/apps/components/img/switch.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Use Case
 
@@ -68,7 +68,7 @@ It offers a clear and efficient way for users to select one of two mutually excl
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/switch2.png">
+<img src= "/apps/components/img/switch2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Example
     1. `this.addClassName(fields, className)`
@@ -84,52 +84,52 @@ It offers a clear and efficient way for users to select one of two mutually excl
             ```
 
     2. `this.removeClassName(fields, className)`
-        ```js
+        ```js linenums="1"
         this.removeClassName('switch_ornfn03c', 'abc')
         ```
     
     3. `this.getValues()`
-        ```js
+        ```js linenums="1"
         var data = this.getValues();
         console.log(data);
         ```
     
     4. `this.hide(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['switch_ornfn03c']
         this.hide(fields)
         ```
 
     5. `this.show(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['switch_ornfn03c']
         this.show(fields)
         ```
         
     6. `this.disable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.disable(['switch_ornfn03c'])
         ```
     
     7. `this.enable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.enable(['switch_ornfn03c'])
         ```
 
     8.  `this.getValue('fieldName')`
-        ```js
+        ```js linenums="1"
         var switchname = this.getValue('switch_ornfn03c');
         console.log('getValue', switchname);
         ```
 
     9.  `this.getComponent('component_ID')`
-        ```js
+        ```js linenums="1"
         var switchname = this.getComponent('switch_ornfn03c');
         console.log('getComponent', switchname);
         ```
     
     10. `this.setData(Value)`
-        ```js
+        ```js linenums="1"
         this.setData(
          {
          "switch_ornfn03c": true,}
@@ -167,7 +167,7 @@ Form validation can be performed using a variety of methods, including:
 ||**value**: Value of the current field|
 ||**callback**: Callback function (must be called) upon completion of validation; **callback('Error message')/ callback(new Error('Error message'))**. These are two ways to return an error message|
 
-<img src= "/apps/components/img/cascader_validation.png">
+<img src= "/apps/components/img/cascader_validation.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Info
     1. The **callback() function** is also called to verify success in the custom validation method.

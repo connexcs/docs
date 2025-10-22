@@ -4,7 +4,7 @@
 
 The **Text-Area** element allows users to write freely across multiple lines, ideal for capturing extensive information or detailed responses.
 
-<img src= "/apps/components/img/textarea.png">
+<img src= "/apps/components/img/textarea.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Use Case
 
@@ -62,7 +62,7 @@ The **Text-Area** element allows users to write freely across multiple lines, id
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/textarea2.png">
+<img src= "/apps/components/img/textarea2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Example
     1. `this.addClassName(fields, className)`
@@ -78,52 +78,52 @@ The **Text-Area** element allows users to write freely across multiple lines, id
             ```
 
     2. `this.removeClassName(fields, className)`
-        ```js
+        ```js linenums="1"
         this.removeClassName('textarea_hl6emwsb', 'abc')
         ```
     
     3. `this.hide(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['textarea_hl6emwsb']
         this.hide(fields)
         ```
     
     4. `this.show(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['textarea_hl6emwsbi']
         this.show(fields)
         ```
     
     5. `this.disable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.disable(['textarea_hl6emwsb'])
         ```
     
     6. `this.enable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.enable(['textarea_hl6emwsb'])
         ```
         
     7.  `this.setData(Value)`
-        ```js
+        ```js linenums="1"
         this.setData(
          {"textarea_hl6emwsb": "Hi...I am Joe",});
         ```
     
     8.  `this.getComponent('component_ID')`
-        ```js
+        ```js linenums="1"
         var textareaname = this.getComponent('textarea_hl6emwsb');
         console.log('getComponent', textareaname);
         ```
     
     9. `this.getValue('fieldName')`
-        ```js
+        ```js linenums="1"
         var textareanamename = this.getValue('textarea_hl6emwsb');
         console.log('getValue', textareaname);
         ```
     
     10. `this.getValues()`
-        ```js
+        ```js linenums="1"
         var data = this.getValues();
         console.log(data);
         ```
@@ -165,7 +165,7 @@ Form validation can be performed using a variety of methods, including:
 ||**value**: Value of the current field|
 ||**callback**: Callback function (must be called) upon completion of validation; **callback('Error message')/ callback(new Error('Error message'))**. These are two ways to return an error message|
 
-<img src= "/apps/components/img/textarea_validation.png">
+<img src= "/apps/components/img/textarea_validation.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Info
     1. **Regular expressions** should be wrapped with //, as in:/^1[3456789]\d{9}$/"

@@ -5,9 +5,8 @@
   
 The **Latest Calls** tab provides records of incoming and outgoing calls. View recent calls and their Session Initiation Protocol (SIP) traces, and run simulated calls. See [**Logging**](https://docs.connexcs.com/logging/ ) section for details on these functions. To view Latest Calls for all customers, go to the Logging section in ConnexCS.
   
-##  Simulate Calls
-  
-  
+## Simulate Calls
+
 To simulate a call:
   
 1. Click on the `Call ID`.
@@ -28,6 +27,3 @@ To simulate a call:
      2. To know more about Billing [click here](https://docs.connexcs.com/billing/ ).
      3. To know more about Logs [click here](https://docs.connexcs.com/logging/#searching-the-logs ).
      4. To know more about Graphs [click here](https://docs.connexcs.com/customer-portal/cp-dashboard/#graphs ).
-  
-  
-  

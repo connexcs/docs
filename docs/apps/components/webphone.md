@@ -25,7 +25,7 @@ Add Audio/Video Bi-directional communication for use in:
 5. Embedded Applications
 6. Conference Applications
 
-<img src= "/apps/components/img/webphone.png" width="300">
+<img src= "/apps/components/img/webphone.png" width="300" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ### Interactivity
 
