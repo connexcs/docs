@@ -13,19 +13,19 @@ To edit **DID (Direct Inward Dial)**:
 
 3. Click **`Save`**.
 
-<img src= "/customer-portal/img/did1.png">
+<img src= "/customer-portal/img/did1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-<img src= "/customer-portal/img/did2.png">
+<img src= "/customer-portal/img/did2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 You have another filed here, **Tags**, it's a **label** which helps you to describe and help organize information.
 
-<img src= "/customer-portal/img/did3.png">
+<img src= "/customer-portal/img/did3.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 4.For multiple DIDs, select multiple DIDs, then click on **Bulk Edit**.
 5.Click on **Edit** (beside Destination)
 
-<img src= "/customer-portal/img/did4.png">
+<img src= "/customer-portal/img/did4.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 6.Enter the values for various fields like **URI**, **External**, or **Internal**.
 
-<img src= "/customer-portal/img/did5.png">
+<img src= "/customer-portal/img/did5.png" style="border: 2px solid #4472C4; border-radius: 8px;">
