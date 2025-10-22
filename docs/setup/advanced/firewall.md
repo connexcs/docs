@@ -11,7 +11,7 @@ The ConnexCS **Firewall** is used to enhance system security by dynamically mana
 3. Select **Block** from the **Action** dropdown menu.
 4. You can add additional information in the **Notes** section.
 
-<img src= "/setup/img/firewall1.png" width= "400">
+<img src= "/setup/img/firewall1.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Threat Detection System
 
@@ -86,4 +86,5 @@ It's important that calls such as these are visible for two reasons:
 
 1. If we block an IP address too soon, this may be a customer who is trying to connect with you. Once blocked, you lose the ability to view debugging information since the packets get dropped before logging.
 2. If we block an IP address too soon, we lose the ability to identify attack patterns and profile an attack. Having some data allows us to see progressive attacks spanning several IP addresses.
+
 
