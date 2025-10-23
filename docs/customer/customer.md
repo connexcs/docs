@@ -2,7 +2,7 @@
 
 **Management :material-menu-right: Customer**
 
-## Platform Intelligence
+The **Customer**  section will help you navigate the key functionalities of our system, from adding customers to configuring settings, managing invoices, and understanding audit logs.
 
 Before setting up your customers, let's take a moment to understand the powerful intelligence built into the ConnexCS platform.
 
@@ -94,6 +94,8 @@ Before creating a new customer, let's review the elements available on the Custo
 
 The following sections will appear when you click on the `blue +` sign.
 
+The following sections will appear when you click on the `blue +` sign.
+
 *Click each tab for field explanations:*
 
 === "Basic"
@@ -114,22 +116,28 @@ The following sections will appear when you click on the `blue +` sign.
 
 === "Config"
 
-    + **PayPal Email:** The email address associated with the customer's PayPal account. (This is relevant when using the IPN API which lets customers make payments directly through PayPal instead of using the Customer Portal). See our API documentation for details on [**PayPal IPN**](https://docs.connexcs.com/setup/integrations/api/#paypal-ipn-integration). It enables mass payments without requiring customer login.
-    + **Website:** Add the customer's official website.
-    + **P-Asserted-ID:** Consider a network level identifier, you can select how calls to the provider is handled based on the PA-ID:
+    + **PayPal Email:** The email address associated with the customer's PayPal account. (This is relevant when using the IPN API which lets customers make payments directly through PayPal instead of using the Customer Portal. See our API documentation for details on [**PayPal IPN**](https://docs.connexcs.com/setup/integrations/api/#paypal-ipn-integration). It enables mass payments without requiring customer login.
+    + **Website:** The customer's official website address.  
+    + **P-Asserted-ID:** Consider a network level identifier, you can select how calls to the customer is handled based on the PA-ID:
     
-        :material-menu-right: `Default`: Call passed to the provider (no manipulation).
+        :material-menu-right: `Default`: Call passed to the customer (no manipulation).
         
-        :material-menu-right: `Remove`: Strips PA-ID before passing the call to the provider.
+        :material-menu-right: `Remove`: Strips PA-ID before passing the call to the customer.
         
         :material-menu-right: `If Available`: It will add PA-ID if one has been provided, otherwise the call will still be allowed.
         
-        :material-menu-right: `Required`: Call won't be delivered to the provider without the PA-ID.
+        :material-menu-right: `Required`: Call won't be delivered to the customer without the PA-ID.
 
     + **Portal Access:** It allows you to **Show** and **Hide** parameters like Balance, CDR, Breakout etc on your customer portal. 
     + **Tags**: Use this to add meta-data identifiers to a customer. If a customer routing is created using a template from [**Global Routing**](https://docs.connexcs.com/global-routing/), this will be the tag configured in the template. Used to apply global routing rules to customers.
     + Vars<sup>[**TOML**](https://en.wikipedia.org/wiki/TOML)</sup>: This is a data storage mechanism for configuration, similar to INI files. It allows you to create advanced customization to set values, etc, for Script Forge to reference later.  
-    + **Reseller**: Associate the customer to a preset Reseller Group (see [**Create Groups**](https://docs.connexcs.com/setup/settings/users/#groups) for more details.)
+    + **Reseller**: Allows customers to manage sub-accounts and grant controlled access to their resellers.
+    This ensures proper call routing, access restrictions, and rate card management.
+    Associate the customer to a preset Reseller Group (see [**Create Groups**](https://docs.connexcs.com/setup/settings/users/#groups) for more details.)
+        + The reseller can manage multiple customers under their account.
+        + Resellers can have controlled access to rate cards, customer accounts, and billing.
+        + Each reseller sees only the customers and rate cards assigned to them.
+        + Resellers can sell traffic to their own customers and manage billing.
     + **Account Manager**: Designating the control of this account to a specific user.
     + **Invoice Schedule**: Specify frequency for invoice generation like Daily, Weekly or Monthly.
     + **Flags**: Select the **Create Invoice on Payment** flag and if payment done then invoice will be generated.
@@ -179,6 +187,7 @@ The following sections will appear when you click on the `blue +` sign.
     The daily spend day is defined from 00:00 UTC to 00:00 UTC.
 
 !!! note "Note that you won't be able to change the account currency once you create the account."
+
 
 !!! info "PAID Configuration"
 

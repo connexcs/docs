@@ -2,7 +2,27 @@
 
 **Setup :material-menu-right: Information :material-menu-right: Job**
 
+## Overview
+
 **Jobs** is an interesting feature that lets you check the status of tasks created or initiated for you.
+
+ It manages background tasks and automated processes that keep the system operating efficiently.
+
+Jobs coordinates with various integrations to process and update system data.
+
+### Key Features & Benefits
+
++ **Automated Task Processing**:
+    + Handles routine processes such as payment verification, certificate provisioning, and account replication.
+    + Ensures that new registrations and updates are processed without manual intervention.
+
++ **Integration Coordination**:
+    + Works seamlessly with payment gateways, portal settings, and WebRTC phone features.
+    + Supports real-time updates (e.g., auto-answer for incoming calls) and backend operations.
+
++ **Customizable Execution**:
+    + Job settings can be adjusted through advanced portal options.
+    + Allows dynamic content to be loaded and executed via custom JavaScript and CSS, ensuring flexibility in job management.
 
 ## Types of Status
 
