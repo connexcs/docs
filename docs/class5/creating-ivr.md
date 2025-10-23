@@ -29,7 +29,7 @@ Complete the following steps before configuring the IVR.
 
 6. You can select from the list of available **PBX Servers**.
 
-    ![alt text][ivr]
+    <img src= "/class5/img/ivr1.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 7. After the completion of the above fields, **`Edit`** becomes available for each key- numbers 0 to 9, '\*' (asterisk) and '#' (hash) - to configure the Destination (what happens when the caller selects the key).
 
@@ -38,5 +38,3 @@ Complete the following steps before configuring the IVR.
 
     :material-menu-right: `Internal`: A number or resource on the ConnexCS platform.
         For example, extension numbers, IVRs, conference bridges, and groups.
-
-[ivr]: /class5/img/ivr.png "IVR Setup"

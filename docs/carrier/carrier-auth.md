@@ -2,7 +2,7 @@
 
 **Management :material-menu-right: Carrier :material-menu-right: Auth**
 
-<img src= "/carrier/img/carrierauth.png">
+<img src= "/carrier/img/carrierauth.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Introduction
 
@@ -17,8 +17,9 @@
     + **Weights**: When the configuration of several switches takes place in IP Authentication, this field sets weighting to find which servers are most preferred, essentially doing outbound distribution to a single carrier, but through several gateways to that carrier.
         + Allows traffic distribution between multiple carrier gateways.
         + Useful for load balancing and traffic optimization
-            !!! Example
-                Assigning weights of 10 and 1 results in 10 out of 11 calls going to the first gateway and 1 out of 11 to the second.
+
+    !!! Example
+        Assigning weights of 10 and 1 results in 10 out of 11 calls going to the first gateway and 1 out of 11 to the second.
   
 2. Carrier **SIP User Authentication** is only used to allow a carrier to connect to the system, not for outbound connections.
 [**Customer Auth**](https://docs.connexcs.com/customer/auth/) gives information on the field details.

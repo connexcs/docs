@@ -4,7 +4,7 @@
 
 The **Editor** allows you to create web content quickly and effortlessly.
 
-<img src= "/apps/components/img/editor.png">
+<img src= "/apps/components/img/editor.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Use Case
 
@@ -64,7 +64,7 @@ Some of the most common methods include:
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/editor1.png">
+<img src= "/apps/components/img/editor1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Example
     1. `this.addClassName(fields, className)`
@@ -80,52 +80,52 @@ Some of the most common methods include:
             ```
 
     2. `this.removeClassName(fields, className)`
-        ```js
+        ```js linenums="1"
         this.removeClassName('editor_x1lbj1il', 'abc')
         ```
     
     3. `this.getValue(fieldName)`
-        ```js
+        ```js linenums="1"
         var editorname = this.getValue('editor_x1lbj1il');
         console.log('getValue', editorname);
         ```
     
     4. `this.getValues()`
-        ```js
+        ```js linenums="1"
         var data = this.getValues();
         console.log(data);
         ```
     
     5. `this.hide(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['editor_x1lbj1il']
         this.hide(fields)
         ```
     
     6. `this.show(fields)`
-        ```js
+        ```js linenums="1"
         var fields= ['editor_x1lbj1il']
         this.show(fields)
         ```
     
     7. `this.disable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.disable(['editor_x1lbj1il'])
         ```
     
     8. `this.enable(['fields'])`
-        ```js
+        ```js linenums="1"
         this.enable(['editor_x1lbj1il'])
         ```
     
     9.  `this.setData(Value)`
-        ```js
+        ```js linenums="1"
         this.setData(
          {"editor_x1lbj1il": "Hello",});
         ```
     
     10. `this.getComponent('component_ID')`
-        ```js
+        ```js linenums="1"
         var editorname = this.getComponent('editor_x1lbj1il');
         console.log('getComponent', editorname);
         ```
@@ -162,7 +162,7 @@ Form validation can be performed using a variety of methods, including:
 ||**value**: Value of the current field|
 ||**callback**: Callback function (must be called) upon completion of validation; **callback('Error message')/ callback(new Error('Error message'))**. These are two ways to return an error message|
 
-<img src= "/apps/components/img/input_validation.png">
+<img src= "/apps/components/img/input_validation.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Info
     1. **Regular expressions** should be wrapped with //, as in:/^1[3456789]\d{9}$/"

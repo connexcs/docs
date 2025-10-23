@@ -4,14 +4,40 @@
 
 The **Customer**  section will help you navigate the key functionalities of our system, from adding customers to configuring settings, managing invoices, and understanding audit logs.
 
-Follow the sections below to get started.
+Before setting up your customers, let's take a moment to understand the powerful intelligence built into the ConnexCS platform.
+
+ConnexCS stands out as an intelligent platform in the telecommunications domain through the integration of several sophisticated features.
+
+At the core lies **[ASR+](https://docs.connexcs.com/customer/routing/#answer-seizure-ratio-plus-details)**, a technology that continuously analyzes call data to identify and filter out known bad numbers.
+By learning from real-time call outcomes, ASR+ proactively prevents calls to unreachable destinations, minimizing wasted resources and significantly improving call success rates.
+
+[ConnexCS AnyEdge](https://docs.connexcs.com/anyedge/anyedge/) acts as a **high-performance load balancer and traffic dispatcher**. This intelligent component distributes traffic seamlessly across multiple SIP servers, ensuring optimal resource utilization and minimizing latency.
+AnyEdge also offers customizable call distribution rules, allowing businesses to prioritize critical calls and optimize routing for specific customer segments.
+
+ConnexCS incorporates **[Spam Scout Scoring](https://docs.connexcs.com/guides/spam-callsblock/#64-using-spam-scout-scoring)**. By providing options to block calls based on spam score. Spam Scout effectively reduces the impact of spam calls on network resources and enhances the user experience.
+
+Complementing Spam Scout is **[IPQS](https://www.ipqualityscore.com/)**. It also blocks the calls based on the spam score. The spam score is provided by a third party IPQS.
+
+By proactively managing traffic, enhancing call quality, and improving network security, ConnexCS empowers businesses to optimize their telecommunications operations, reduce costs, and deliver a superior customer experience.
+
+The combination of intelligent capabilities positions ConnexCS as a leading-edge solution in the telecommunications industry, providing businesses with a competitive advantage in today's dynamic market.
+
+## Customer Functions
+
+### Customer
+
+The Customer section allows you to add new customers to your account. It provides options to configure customer settings, manage KYC, handle billing, and perform various account management operations
+
+You can organize ConnexCS **Customers** through customer cards.
 
 !!! question "How many customers can I add?"
     You can add unlimited customers, and we won't charge per customer, only on their individual usage.
 
-On the **Customers** page, you can perform several management operations.
+### Customer Dashboard
 
-By clicking on `+` button we can add customer (see [**Create Customers**](https://docs.connexcs.com/customer/customer/#create-customer) below for details.)
+Before creating a new customer, let's review the elements available on the Customer Dashboard.
+
+**`+`**: By clicking on `+` button we can add customer (see [**Create Customers**](https://docs.connexcs.com/customer/customer/#create-customer) below for details.)
 
 **Refresh**: Refreshing the page, helpful when making edits or looking at real-time changes. This page is built as a web app, so some information will update automatically.
 
@@ -35,7 +61,7 @@ By clicking on `+` button we can add customer (see [**Create Customers**](https:
 
 **?**: Link to the documentation of the current page.
 
-**Send**: ConnexCS includes email and SMS support for your customers.
+**Send**: ConnexCS includes email and SMS support for your customers. Also send ConnexCS Referrals.
 
 1. Select several customers using the tick-box selector on the left side of each row. (Customers aren't visible to each other in the sent message.)
 2. Click on "Send" at the top right then choose email or SMS.
@@ -49,22 +75,24 @@ By clicking on `+` button we can add customer (see [**Create Customers**](https:
         + Write the Body of the referral.
         + Click on `Send`.
   
-<img src= "/customer/img/referral.png">
+<img src= "/customer/img/referral.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! note "Custom Email Servers"
     Change the outbound Email Server and SMS origination number in **Setup :material-menu-right: Settings**.
 
 **Active**: Filter customer(s) based on account status. Results on the page will automatically arrange themselves according to the filter.
 
-&emsp; ![alt text][customer-status]
+<img src= "/customer/img/391.png" width= "200" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-## Customer View Modification
+#### Customer View Modification
 
 + **Columns** pop out on the right and allows you to add /  remove options, and change column order, for some cases you can create row groups and total values for pivot functionality.
 + **Filters** pop out on the right and allows you to filter your customers.
 + Adjust Column ordering
 
-## Create Customer
+### Create Customer
+
+The following sections will appear when you click on the `blue +` sign.
 
 The following sections will appear when you click on the `blue +` sign.
 
@@ -89,15 +117,20 @@ The following sections will appear when you click on the `blue +` sign.
 === "Config"
 
     + **PayPal Email:** The email address associated with the customer's PayPal account. (This is relevant when using the IPN API which lets customers make payments directly through PayPal instead of using the Customer Portal. See our API documentation for details on [**PayPal IPN**](https://docs.connexcs.com/setup/integrations/api/#paypal-ipn-integration). It enables mass payments without requiring customer login.
-    + **Website:** The customer's website address.
-    + **P-Asserted-ID:**PAID is a feature that determines how calls are routed based on predefined rules. The behavior of PAID varies depending on whether it is set to **Default**, **If Available**, or **Required**.
-        + **Default**: If there is any PAID or CLI rule, then the call will proceed if not the call will still proceed. Any attempt to modify PAID, including parameter rewrite rules, CLI section changes, or PAID changes, will not take effect. No modifications are allowed to PAID.
-        + **If Available**: The rule applies only when PAID is available. If PAID is present, it can be modified using rewrite rules. If it is missing, the call proceeds without PAID. Allows rewriting of PAID using rules.
-        + **Required**: PAID must be present. If PAID is missing, the call will not proceed.PAID is mandatory for call routing.
+    + **Website:** The customer's official website address.  
+    + **P-Asserted-ID:** Consider a network level identifier, you can select how calls to the customer is handled based on the PA-ID:
+    
+        :material-menu-right: `Default`: Call passed to the customer (no manipulation).
+        
+        :material-menu-right: `Remove`: Strips PA-ID before passing the call to the customer.
+        
+        :material-menu-right: `If Available`: It will add PA-ID if one has been provided, otherwise the call will still be allowed.
+        
+        :material-menu-right: `Required`: Call won't be delivered to the customer without the PA-ID.
 
     + **Portal Access:** It allows you to **Show** and **Hide** parameters like Balance, CDR, Breakout etc on your customer portal. 
     + **Tags**: Use this to add meta-data identifiers to a customer. If a customer routing is created using a template from [**Global Routing**](https://docs.connexcs.com/global-routing/), this will be the tag configured in the template. Used to apply global routing rules to customers.
-    + Vars<sup>[**TOML**](https://en.wikipedia.org/wiki/TOML)</sup>: This is a data storage mechanism for configuration, similar to INI files. It allows you to create advanced customization to set values, etc, for Script Forge to reference later. 
+    + Vars<sup>[**TOML**](https://en.wikipedia.org/wiki/TOML)</sup>: This is a data storage mechanism for configuration, similar to INI files. It allows you to create advanced customization to set values, etc, for Script Forge to reference later.  
     + **Reseller**: Allows customers to manage sub-accounts and grant controlled access to their resellers.
     This ensures proper call routing, access restrictions, and rate card management.
     Associate the customer to a preset Reseller Group (see [**Create Groups**](https://docs.connexcs.com/setup/settings/users/#groups) for more details.)
@@ -123,7 +156,7 @@ The following sections will appear when you click on the `blue +` sign.
 
 === "Verification"
 
-    + **Approved CLI's Only**: Allows the customer to add numbers in the [**Customer Portal CLI**](/customer-portal/cp-cli/) section. This generates a test call with a code that the customer must enter in the portal. Once complete, their CLI will be added to the system. It basically, r  restricts calls to pre-approved caller IDs.
+    + **Approved CLI's Only**: Allows the customer to add numbers in the [**Customer Portal CLI**](/customer-portal/cp-cli/) section. This generates a test call with a code that the customer must enter in the portal. Once complete, their CLI will be added to the system. It basically restricts calls to pre-approved caller IDs.
     + **Email Verification** and/or **Mobile Verification**: Used to force the customer to go to the portal for verification. (This is important to select when you create a customer manually.) If the customer doesn't verify these, they won't be able to dial. 
 
     !!! attention
@@ -148,29 +181,30 @@ The following sections will appear when you click on the `blue +` sign.
     !!! Example
         In the image below you can see the time slider starts from 12:00 AM till 8:00 AM, this means your customers are only allowed to dial between 12:00 AM and 8:00 AM. After 8:00 AM your customers won't be able to call. The rest of the slots (grey color) are restricted slots.
 
-        <img src= "/customer/img/restrict.png" width="400">
+        <img src= "/customer/img/restrict.png" width="400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! note
     The daily spend day is defined from 00:00 UTC to 00:00 UTC.
 
 !!! note "Note that you won't be able to change the account currency once you create the account."
 
-!!! info "PAID Configuration
+
+!!! info "PAID Configuration"
 
     PAID can be set in two places:
 
     1. **Customer Level**: Applied when a call originates from the customer.
     2. **Carrier Level**: Applied when a call is forwarded to a carrier.
 
-## Configure Customers
+### Configure Customers
 
 Once you create a customer, click on the customer name to view details and provide additional configuration. For documentation on that configuration, navigate to the sub-section on the left:
 
-&emsp; ![alt text][customersubs]
+<img src= "/customer/img/customersubs1.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ___
 
-## Edit Customers
+### Edit Customers
 
 Click an existing customer name from the Customer section, then click **`Edit`**. For all field details, see **[Create Customers](https://docs.connexcs.com/customer/customer/#create-customer)** above.
 

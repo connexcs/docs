@@ -2,7 +2,30 @@
 
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: CDR**
 
+## Overview
+
 The **CDR (Call Detail Record)** is an extensive set of information that's collected and stored for each call. This is primarily used for billing purposes as it contains details such as call duration and destination number.
+
+CDRs provide comprehensive call data, essential for billing and analytics.
+
+## Key Features
+
++ **Comprehensive Data**: Stores millions of call records efficiently.
++ **Customizable Display**: Users can add extra fields like source IP, reorder fields, and filter data based on parameters.
++ **Filtering & Querying**:
+    + Apply filters (e.g., termination, origination).
+    + Advanced query builder allows multi-parameter searching (e.g., calls longer than 10 seconds and PDD less than 5 milliseconds).
+    + Grouping of query results is limited due to large data sets.
++ **Server-Side Sorting**: Ensures optimal performance when dealing with large datasets.
++ **Data Export**: Download call data as CSV for further analysis.
++ **Recalculation Feature**: Adjusts CDR-based calculations when needed.
++ **Debugging Methodology**:
+    + Unlike other systems, ConnexCS doesn't use CDRs for debugging.
+    + Debugging is done via the logging section, which retains logs for 14 days.
+    + CDRs are used primarily for billing and reporting.
+    + Call logs are linked via call IDs for quick access to debugging information.
++ **Billing & Retention**:
+    + CDRs are the foundation for billing calculations.
 
 !!! note "Global CDR"
     View CDRs for all Customers and Carriers in **Global :material-menu-right: CDR**.
@@ -42,7 +65,7 @@ When viewing CDRs for a specific customer, use the **`Recalc CDR`** button to re
     |3600(minimum duration)|0.0001|0.36|
     |60(new duration)|0.0001|0.006|
 
-![alt text][recalc]
+<img src= "/customer/img/recalc1png.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! danger "Rerating CDRs"
     If you select either "Rerate" options when recalculating CDRs, this will change your CDRs and isn't reversible.
@@ -58,7 +81,7 @@ Create advanced filters using any fields of the record. Select either Originatio
 * Select **Add Rule** to select extra fields and parameters to include in the custom query.
 * Use **Add Group** to group sets of queries into a series of groups, creating complex, compound, and multi-vector queries.
 
-    ![alt text][querybuilder]
+    <img src= "/customer/img/querybuilder1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! warning "Using Query Builder with large amounts of data"
     It's recommended not to run detailed and complex queries on large amounts of data. It's better to write more compact and pared down queries to retrieve this data.
@@ -70,6 +93,3 @@ Create advanced filters using any fields of the record. Select either Originatio
 ## Call Detail Record Time Zone
 
 You can view the rated CDR's stored in UTC; day-to-day totals are also calculated in UTC. You can change the time zone of individual CDR records viewed from the time zone selector, but downloads will always be in UTC.
-
-[querybuilder]: /customer/img/querybuilder.png "Query Builder"
-[recalc]: /customer/img/recalc.png "Recalculate and Rerate"

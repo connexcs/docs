@@ -34,12 +34,12 @@ To create a Conference room, click :material-plus:.
 
 Click **`Save`** and the new conference room is available for use.
 
-<img src= "/class5/img/conference1.png" width= "400">
+<img src= "/class5/img/conference1.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! tip "Conference calls for external callers"
     Only customers internal to ConnexCS can use the standard Conference configuration.
 
-    To allow external numbers to dial into the conference, set up a [**Customer DID**](https://bani-ankmeg--connexcs-docs.netlify.app/customer/did/#configure-direct-inward-call) and set the **Destination** to "Internal" (set the internal destination as the extension number of the conference), and then select the available pre-configured conference.
+    To allow external numbers to dial into the conference, set up a [**Customer DID**](https://docs.connexcs.com/customer/did/#configure-direct-inward-call) and set the **Destination** to "Internal" (set the internal destination as the extension number of the conference), and then select the available pre-configured conference.
 
 ## Conference Call Keypad Options
 

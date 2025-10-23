@@ -7,7 +7,7 @@ The **Portal** lets you add domains and sub-domains to the Control Panel, which 
 You can provide several domains for your customers through different brands, and each domain can have different permissions, currencies, default, etc.
 
 !!! Note "Deployment"
-    Customers are instructed to point a CNAME record to portal.connectcs.com; secure certificates are deployed automatically upon configuration.
+    Customers are instructed to point a CNAME record to portal.connexcs.com; secure certificates are deployed automatically upon configuration.
 
 ## Portal Setup
 
@@ -40,7 +40,7 @@ You can provide several domains for your customers through different brands, and
 !!! note
     You should expose your Customer Portal via a `CNAME` that you setup. This won't work with `A` records or by pointing directly.
 
-    ![alt text][portal]
+    <img src= "/setup/img/portal12.png"style="border: 2px solid #4472C4; border-radius: 8px;"
 
 ## Configuration Options
 
@@ -186,7 +186,7 @@ You can provide several domains for your customers through different brands, and
 
 **Steps to create a new Domain**:
 
-1. Go to **Setup :material-menu-right: Integrations :material-menu-right: Portal**. ![smtp2](/setup/img/smtp2.jpg)
+1. Go to **Setup :material-menu-right: Integrations :material-menu-right: Portal**. <img src= "/setup/img/smtp2.jpg" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 2. Click on `+` button and click on the **SMTP** tab.
 
@@ -207,7 +207,7 @@ You can provide several domains for your customers through different brands, and
 3. Click on **`Edit`.**
 4. Click on **`Config`** and in the **Domain** field you can select the domain from the dropdown menu.
 5. Click on `Save` and the customer will be associated with that particular Domain/ Brand.
-![smtp1](/setup/img/smtp1.jpg)
+<img src= "/setup/img/smtp1.jpg" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Note
     1. Multiple customers can be associated with one domain.
@@ -219,15 +219,13 @@ To configure Users to access the Customer Portal, follow the steps to [**Add Con
 
 Any Contact configured on the account can login to the Customer Portal.
 
-[portal]: /setup/img/portal.png "Portal"
-
 ## Multi Brand Support
 
 By leveraging a single ConnexCS account, customers can seamlessly run multiple brands, each with its own distinct identity and customer base.
 
 It's achieved by deploying independent customer portals tailored to the specific needs and preferences of each target market.
 
-### **Key Benefits**:
+### **Key Benefits**
 
 + **Enhanced Market Penetration**:
 

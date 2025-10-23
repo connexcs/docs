@@ -12,15 +12,17 @@ Displays HTTP verbs (PUT, POST, GET, DELETE) for actions taken.
 
 Enables **viewing differences** between previous and current configurations.
 
-It displays all changes made, either directly by users or through the API. This includes all activity on the Control Panel and in the Customer Portal.
+The **Audit Log**, or Audit Trail, is a chronological set of records that shows all changes performed on system including **timestamps** and **IP addresses**.
 
-You can search using Account ID, Ingress ID, etc.
+### Use Cases
+
+1. Enables viewing differences between previous and current configurations.
+2. It displays all changes made, either directly by users or through the API. This includes all activity on the Control Panel and in the Customer Portal.
+3. You can search using Account ID, Ingress ID, etc.
 
 !!!question "Why and when do you need to see audit logs"
-    1. Audit logs can offer rich insights about what caused downtime, loss of performance, and other unexpected issues.
-    2. An audit log is a primary source of information to investigate the causes of issues.
-    3. Provides proof of customer changes.
-    4. Prevents disputes about unauthorized setting modifications.
+    1. Provides proof of customer changes.
+    2. Prevents disputes about unauthorized setting modifications.
 
 ### Key Features & Benefits
 
@@ -35,6 +37,7 @@ You can search using Account ID, Ingress ID, etc.
 + **Enhanced Oversight**:
     + Tracks changes made in portal settings (e.g., custom JavaScript, CSS, logos, and footer details).
     + Helps maintain a detailed history of system interactions and modifications.
+
 
 ## Columns
 

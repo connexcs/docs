@@ -9,6 +9,7 @@ theme:
   features:
     - navigation.instant
     - navigation.tabs
+    - content.code.copy
   palette:
     - scheme: default
       toggle:
@@ -75,6 +76,7 @@ nav:
         - Payment: customer/payment.md
         - Stats: customer/stats.md
         - Route Stats: customer/route-stats.md
+        - Custom Reports: customer/custom-reports.md
         - Latest Calls: customer/latest-calls.md
         - Dialogs: customer/dialogs.md
         - Alerts: customer/alerts.md
@@ -88,7 +90,33 @@ nav:
         - Tags: customer/tags.md
         - Circuit Test: circuit-test.md
 
-        - Report: report.md  
+    - Carrier: 
+        - Carrier Overview: carrier.md
+        - Main: carrier/carrier-main.md
+        - Reply Management: carrier/carrier-reply-management.md
+        - Auth: carrier/carrier-auth.md 
+        - Failover: carrier/carrier-failover.md
+        - Latest Calls: carrier/carrier-latest-calls.md
+        - Payment: carrier/carrier-payment.md
+        - Stats: carrier/carrier-stats.md
+        - Custom Reports: carrier/carrier-custom-reports.md
+        - Alerts: carrier/carrier-alerts.md
+        - DID: carrier/carrier-did.md
+        - DID Inventory: carrier/carrier-did-inventory.md
+        - CDR: carrier/carrier-cdr.md
+    
+    - Rate Cards:
+        - Rate Card Overview: rate-card-building.md
+        - Provider Rate Card: provider-ratecard.md
+        - Customer Rate Card: customer-ratecard.md 
+    
+    - Routing:
+        - Routing Overview: routing.md
+        - Routing Strategy: routing-strategy.md
+        - Routing Global: global-routing.md
+        - USA Routing: routing-usa.md
+    
+    - Tags: tag.md
 
     - Report: report.md  
 
@@ -97,7 +125,8 @@ nav:
         - Transcription: transcription.md
     
     - Class 5:
-        - Introduction: class5/class5-intro.md
+        - AI Agent: class5/ai-agent.md
+        - Knowledge Base: class5/knowledge-base.md
         - Apps: class5/apps.md
         - Conference: class5/creating-conference.md
         - Call Center: class5/call-center.md
@@ -107,17 +136,7 @@ nav:
         - Phonebook: class5/phonebook.md
         - ConneXML: class5/connexml.md        
        
-    - Developer:
-        - Analytics: developers/analytics.md
-        - Button Builder: developers/button-builder.md
-        - Database: developers/database.md
-        - ScriptForge: developers/scriptforge.md
-        - Templates: setup/config/templates.md
-        - Pages:
-            - Introduction: developers/pages/introduction.md
-            - Basic Field: developers/pages/basic-field.md
-            - Advance Field: developers/pages/advance-field.md
-            - Layout: developers/pages/layout.md
+    - IDE: ide.md
            
     - Data Suite: datasuite.md
 
@@ -223,8 +242,9 @@ nav:
     - Breakout: customer-portal/cp-breakout.md
     - Authentication: customer-portal/cp-authentication.md
     - DID: customer-portal/cp-did.md
+    - DID Purchase: customer-portal/cp-did-purchase.md
     - Invoice: customer-portal/cp-invoice.md
-    - CLI: customer-portal/cp-cli.md
+    - Customer Portal CLI: customer-portal/cp-cli.md
     - Latest Calls: customer-portal/cp-latest-calls.md
     - Dialogs: customer-portal/cp-dialogs.md
     - User Registration: customer-portal/cp-user-reg.md
@@ -309,3 +329,11 @@ nav:
         - Transfer: apps/components/transfer.md
         - Tree Select: apps/components/tree-select.md
         - Webphone: apps/components/webphone.md
+    - Contact Center:
+        - Introduction: customer-portal/cp-contact-center.md
+        - Contact Center Setup & Usage Guide: customer-portal/cp-cc-install.md
+        - Preview Dialer: customer-portal/cp-cc-pd.md
+        - Auto Dialer: customer-portal/cp-cc-ad.md
+        - Broadcast Dialer: customer-portal/cp-cc-bd.md
+
+    

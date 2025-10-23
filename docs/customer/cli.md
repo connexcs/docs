@@ -1,4 +1,10 @@
-# Caller Line Identification
+---
+title: "Caller Line Identification (CLI) | Routing Rules & Caller ID | ConnexCS"
+search:
+  boost: 3
+---
+
+# Caller Line Identification (CLI)
 
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Routing**
 
@@ -22,7 +28,7 @@ The **B-number, or B-leg**, is the **dialed number**, representing the **outgoin
     
     It's where the call originates. The call is then terminated at the Dialed Number, the "B-Leg" or "B-Number."
 
-&emsp;![alt text][cli]
+<img src= "/customer/img/1cli.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ### Key Features & Benefits
 
@@ -129,7 +135,7 @@ The **P-Asserted-ID** manipulation uses the same syntax as the Replace CLI.
     + *Stir Shaken Required*: Choose this option when no certificate is selected.
     + *Stir Shaken Replace*: Choose this option when you wish to apply your Stir-shaken certificate instead of which is  already applied (for a call).
 
-<img src= "/customer/img/cli_new.png">
+<img src= "/customer/img/cli_new.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 + Click **`Save`** to complete the CLI configuration.
 
@@ -139,7 +145,7 @@ Navigate to **Management :material-menu-right: Customer :material-menu-right: [C
 
 The customer can then go to the Customer Portal CLI section and add numbers there.  
 
-&emsp;![alt text][approvedcli]
+<img src= "/customer/img/approvedcli1.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Advanced CLI Match and Manipulation
 
@@ -294,7 +300,7 @@ This example shows how to pick a DID already associated with the customer at ran
 
 You may wish to perform CLI Localization.
 
-For example, if you have various DIDs (in this case, `123456`, `123567`, and `123789`) and are placing a call to `1234987654`, the system will find the longest match (in this case, `123456)` to use as the CLI.
+For example, if you have various DIDs (in this case, `123456`, `123567`, and `123789`) and are placing a call to `1234987654`, the system will find the longest match (in this case, `123456)`) to use as the CLI.
 
 | CLI| P-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID | Userspace DB |
 |----------------|-----------------|-------------|-----------------------|--------|--------------|--------------|
@@ -331,7 +337,7 @@ This feature's objective is to allow customers to utilise the best performing CL
 7. **Performance Ban Time**: How long a used DID is paused for. You can choose the value from the dropdown with minimum value being 5 minutes and maximum value being 90 days. The value is stored in **seconds**.
 8. Click `Save`.
 
-<img src= "/customer/img/performancecli2.png"> 
+<img src= "/customer/img/performancecli2.png" style="border: 2px solid #4472C4; border-radius: 8px;"> 
 
 ##### Deterministic Sequential CLI Persistence
 
@@ -345,13 +351,13 @@ The CLI selection is TIME DETERMINISTIC. It means that the system chooses a CLI 
 2. Select **Yes** from drop-down menu for the **Forced** field.
 3. Select the Database you wish to choose the CLI from. It will then automatically pull in numbers from the database and forces it to set as CLIs. (This feature already exists).
 
-<img src= "/customer/img/cli_1.png">
+<img src= "/customer/img/cli_1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 4.Follow steps 1 and 2.
 
 5.Navigate to **Management :material-menu-right: Customer :material-menu-right: Customer [Name] :material-menu-right: Edit :material-menu-right: Config :material-menu-right: Vars<sup>TOML</sup>** and write the below code:
 
-```js
+```js linenums="1"
 [cli]
 persist=600 //value is in seconds
 ```
@@ -359,7 +365,7 @@ persist=600 //value is in seconds
 !!! Note
     You can keep the value of CLI persist according to your requirements. For example, if you require CLI to be used of 10 minutes then keep the persist value as 600.
 
-<img src= "/customer/img/cli_2.png">
+<img src= "/customer/img/cli_2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Example
     Envision a scenario with a database containing 10 CLIs, where the customer specifies that each CLI should remain active for precisely 10 minutes. By setting the persist value to 600 seconds (10 minutes), the system will follow this sequential pattern:
@@ -480,9 +486,8 @@ ConnexCS is GC6 compliant for end users, which:
 
 To set the "P-Asserted-ID" per customer, see [**Configure CLI**](https://docs.connexcs.com/customer/cli/#creating-a-record) above.
 
-[cli]: /customer/img/cli.png "CLI Main"
-[approvedcli]: /customer/img/approvedcli.png "Approved CLI Only"
-[cli1]: /customer/img/cli1.png "Edit CLI"
+
+[cli1]: /customer/img/cli1.png "Edit CLI" style="border: 2px solid #4472C4; border-radius: 8px;"
 
 ## CLI and PAID Responsibilities
 

@@ -14,15 +14,15 @@ In the DID section you can allocate the calls at different places. Click on Call
 
 1.**URI**: Its points to a client's server. You can send the call either to the Destination DID or an IP address.
 
-<img src= "/class5/img/ml2.png"  width="400">
+<img src= "/class5/img/ml2.png"  width="400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 2.**External**: Allows you to re-direct the call out back again to the network.
 
-<img src= "/class5/img/ml3.png" width="400">
+<img src= "/class5/img/ml3.png" width="400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 3.**Internal**: Allows you to route the call internally like a SIP user or a Queue.
 
-<img src= "/class5/img/ml4.png" width="400">
+<img src= "/class5/img/ml4.png" width="400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 Later, the Class5 Applications makes an HTTP request to the URL endpoint you configured for that number. The endpoint will contain instructions telling ConnexML what to do next with the call.
 
@@ -47,7 +47,7 @@ In case it hits the `ConneXML` application, `ConneXML` can as to direct it (Rout
 
 ConneXML uses the standard [`.xml` markup](https://en.wikipedia.org/wiki/XML) language.
 
-.<img src= "/class5/img/ml11.png">
+.<img src= "/class5/img/ml11.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ### How to reach and code the ConneXML Editor?
 
@@ -57,11 +57,11 @@ To get ConneXML working you will need to:
 2. On the top right click on blue `+` sign.
 3. Add new and make sure you choose App Type = ConneXML. The destination can be alpha-numeric and contains an endpoint, for example "customer_a_connexml".
 
-<img src= "/class5/img/ml5.png">
+<img src= "/class5/img/ml5.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 4.After saving the above information. Click on `Go to App` to enter the ConneXML editor. Write your code and click `Save`.
 
-<img src= "/class5/img/ml6.png">
+<img src= "/class5/img/ml6.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 5.If you initially want this to hit a customers server same as before, you can use something like this in the XML field.
 
@@ -76,7 +76,7 @@ To get ConneXML working you will need to:
 
 7.**Select Code Snippet**: Enables you to choose pre-made ConneXML codes for faster and more convenient use. You choose from multiple available options.
 
-<img src= "/class5/img/codesnippet.png">
+<img src= "/class5/img/codesnippet.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ### ConneXML Components
 
@@ -159,6 +159,9 @@ Text to speech is enabled for any application by using the `Say` verb, which spe
     </Response>
     ```
 
+!!! warning "Note"
+    The **Text to Speech** package needs to be added to your account for this feature to work.
+
 ### Reject
 
 This verb rejects the current call.
@@ -188,7 +191,7 @@ This verb rejects the current call.
 
 ### Play
 
-The `Play` verb allows you to play back to the caller an MP3 or WAV audio file.
+The `Play` verb allows you to play back to the caller a WAV audio file.
 
 You can use `Play` as a verb  standalone or as a noun nested inside `Gather` to play audio while you wait for DTMF tones.
 
@@ -330,6 +333,7 @@ An existing call is transferred to a different destination using the `Dial` ver
 |`hangupOnStar`|By tapping the `*` key on their phone, the initial caller can hang up on the called party using the hangupOnStar attribute. It doesn't apply for `Conference` noun|`true`, `false`| `false`|
 |`ringTone`|The ringback tone played back to the caller|`at`,`au`,`bg`,`br`,<br>`be`,`ch`,`cl`,`cn`,`cz`,</br>`de`,`dk`,`ee`,`es`,`fi`,<br>`fr`,`gr`,`hu`,`il`,`in`,<br>`it`,`lt`,`jp`,`mx`,`my`,<br>`nl`,`no`,`nz`,`ph`,`pl`,<br>`pt`,`ru`,`se`,`sg`,<br>`th`,`uk`,`us`,`us-old`,`tw`,<br>`ve`,`za`|`us`|
 |`timeout`|timeout in <Dial> lets you specify the maximum waiting time in seconds for the dialed party to answer|||
+|`hangupOnStarContext`|Hangs up on `*` only in the **specified context**|
 
 |**Noun**|**Description**|**Default Method**|
 |--------|---------------|------------------|
@@ -342,7 +346,7 @@ An existing call is transferred to a different destination using the `Dial` ver
 
 |**Noun**|**Attribute**|**Description**|**Options**|**Default Method**|
 |--------|--------|-----|-----------|------------------|
-|`Voicemail`|`Voicemail Inbox`| It sends you to the inbox to leave a message|
+|`Voicemail`|`Inbox`| It sends you to the inbox to leave a message|
 ||`user`|The user attribute specifies the SIP user|
 |`Barge`| `whisper`|If enabled, allows you to speak privately to one or both legs of the call without the other party hearing.|`a`(aleg), `b`(bleg), `ab`(both legs)|`ab`|
 ||`bridge`|Allows an eavesdropper to listen in on a call without being an active participant. The eavesdropper can monitor the conversation on one or both legs of the call|`a`(aleg), `b`(bleg),`ab` (both legs)|`ab`|
@@ -453,7 +457,7 @@ An existing call is transferred to a different destination using the `Dial` ver
         <Response>
             <Dial>
                 <Voicemail inbox="true">
-                 <Voicemail/>
+                 </Voicemail>
             </Dial>
         </Response>
         ```
@@ -499,7 +503,7 @@ An existing call is transferred to a different destination using the `Dial` ver
             <Dial>
                 <Client
                 statusCallbackEvent="initiated ringing answered completed"
-                statusCallback="https://api.example.com/compile?rateCompact=true&ids=101,202,303"
+                statusCallback="https://api.example.com/compile?rateCompact=true&ampids=101,202,303"
                 statusCallbackMethod="POST">
                 7900
                 </Client>
@@ -537,6 +541,21 @@ An existing call is transferred to a different destination using the `Dial` ver
             </Dial>
         </Response>
         ```
+    19. **hangupOnStarContext**
+        ``` xml
+        <?xml version="1.0" encoding="UTF-8"?>
+        <Response>
+            <Enter>A</Enter>
+
+            <Press dtmf_leg="a" digit="#0" context="A">
+    
+                <Dial hangupOnStar="true" callerId="+44123">4421927526</Dial>
+
+            </Press>
+            <Dial hangupOnStar="true" hangupOnStarContext ="A">2919</Dial>
+        </Response>
+        ```
+!!! Warning "In ConneXML, use `&amp`; in place of `&` when specifying the `AND` operator."
 
 #### Dynamic Dial
 
@@ -725,6 +744,32 @@ It's an effective and quicker way to check a customer's audio quality and call p
 
     6. If the **Set elements** don't include `header="true"`, they will only set the variables and not as headers in the SIP INVITE.
 
+### Enter
+
+ The `Enter` command tells the phone system to switch to a different menu or section (called a context or realm) during a call.
+
+|**Noun**|**Description**|**Example**|
+|--------|---------------|-----------|
+|`context`|Enables the same DTMF input to perform different actions depending on the current state of the call.|Call starts in `context B`, pressing `1` switches to `context A`, pressing `2` **hangs up** (in B) or **plays a sound** (in A)|
+
+!!! Example "Example 1"
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <Response>
+        <Enter>B</Enter>
+        <Press digit="2" context="A">
+            <Play>user/adam.wav</Play>
+        </Press>
+        <Press digit="2" context="B">
+            <Hangup/>
+        </Press>
+        <Press digit="1" context="B">
+            <Enter>A</Enter>
+        </Press>
+    </Response>
+    ```
+    `Digit 2` can be used to `Play` an **audio file** if you are in `context A` Or can be used to `hangup` if you are in `context B`.
+
 |**Verbs/Attributes/Nouns**|**ConnexCS (ConneXML)**|**Twilio<sup>TM</sup> (TwiML)[^1]**|**Telnyx (TeXML)[^2]**|
 |----------------------------|------------|--------------|------------|
 |**Play**|✅|✅|✅|
@@ -743,6 +788,7 @@ It's an effective and quicker way to check a customer's audio quality and call p
 |➡️callerId|✅|✅|✅|
 |➡️fromDisplayName|✅|✅|✅|
 |➡️hangupOnStar|✅|✅|✅|
+|➡️hangupOnStarContext|✅|❌|❌|
 |➡️ringTone|✅|✅|✅|
 |➡️Number|✅|✅|✅|
 |➡️Queue|✅|✅|✅|
@@ -751,7 +797,7 @@ It's an effective and quicker way to check a customer's audio quality and call p
 |🟦statusCallback|✅|✅|✅|
 |🟦statusCallbackMethod|✅|✅|✅|
 |➡️Voicemail|✅|❌|❌|
-|🟦Voicemail Inbox|✅|❌|❌|
+|🟦Inbox|✅|❌|❌|
 |➡️Barge|✅|❌|❌|
 |🟦whisper|✅|❌|❌|
 |🟦bridge|✅|❌|❌|
@@ -788,6 +834,8 @@ It's an effective and quicker way to check a customer's audio quality and call p
 |**Before**|✅|❌|❌|
 |**Set**|✅|❌|❌|
 |**Echo**|✅|❌|❌|
+|**Enter**|✅|❌|✅|
+|🟦context|✅|✅|✅|
 
 [^1]:  https://www.twilio.com/docs/voice/twiml
 [^2]:  https://developers.telnyx.com/docs/v2/voice/programmable_voice/texml/texml-translator/texml_translator/
@@ -865,7 +913,7 @@ graph TD
 !!! Example "Example: XML Integration (App Script Method)"
     **App Script Example (within the IDE):**
 
-    ```js
+    ```js linenums="1"
         const llm = require('cxLLM');
         // Retrieves the current day of the week
         function dayOfWeek() {
@@ -961,9 +1009,9 @@ These variables are typically set dynamically by previous operations or user inp
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
-        <condition year="2024">
+        <Condition year="2024">
             <Say>Welcome to the events of 2024!</Say>
-        </condition>
+        </Condition>
     </Response>
     ```
 
@@ -974,9 +1022,9 @@ These variables are typically set dynamically by previous operations or user inp
         <!-- Welcome Message -->
         <Say>Welcome to the system. Checking the day of the year.</Say>
         <!-- Condition to check the value of yday -->
-        <condition yday="1">
+        <Condition yday="1">
             <Say>It's the first day of the year!</Say>
-        </condition>
+        </Condition>
     </Response>
     ```
 
@@ -984,9 +1032,9 @@ These variables are typically set dynamically by previous operations or user inp
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
-        <condition day="mon">
-            <Say>Welcome! It's Monday, starting the week strong!</Say>
-        </condition>
+        <Condition mon="1">
+            <Say>Welcome! It's January, starting the month strong!</Say>
+        </Condition>
     </Response>
     ```
 
@@ -994,9 +1042,9 @@ These variables are typically set dynamically by previous operations or user inp
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
-        <condition mday="1">
+        <Condition mday="1">
             <Say>Welcome! It's the first day of the month.</Say>
-        </condition>
+        </Condition>
     </Response>
     ```
 
@@ -1004,9 +1052,9 @@ These variables are typically set dynamically by previous operations or user inp
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
-        <condition week="1">
+        <Condition week="1">
             <Say>Welcome to Week 1 activities.</Say>
-        </condition>
+        </Condition>
     </Response>
     ```
 
@@ -1014,9 +1062,9 @@ These variables are typically set dynamically by previous operations or user inp
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
-        <condition mweek="2">
+        <Condition mweek="2">
             <Say>Welcome to the second week of the month. Stay tuned for updates.</Say>
-        </condition>
+        </Condition>
     </Response>
     ```
 
@@ -1024,9 +1072,9 @@ These variables are typically set dynamically by previous operations or user inp
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
-        <condition wday="3">
+        <Condition wday="3">
             <Say>Today is Tuesday. Keep going!</Say>
-        </condition>
+        </Condition>
     </Response>
     ```
 
@@ -1034,9 +1082,9 @@ These variables are typically set dynamically by previous operations or user inp
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
-        <condition sunmontuewedthufrisat="mon,tue,wed,thu,fri">
+        <Condition sunmontuewedthufrisat="mon,tue,wed,thu,fri">
             <Say>It's a weekday. Let's get to work!</Say>
-        </condition>
+        </Condition>
     </Response>
     ```
     
@@ -1044,9 +1092,9 @@ These variables are typically set dynamically by previous operations or user inp
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
-        <condition hour="12">
+        <Condition hour="12">
             <Say>Good afternoon! You are connecting at noon.</Say>
-        </condition>
+        </Condition>
     </Response>
     ```
 
@@ -1054,9 +1102,9 @@ These variables are typically set dynamically by previous operations or user inp
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
-        <condition minute="30">
+        <Condition minute="30">
             <Say>It's 30 minutes past the hour, proceeding with the action.</Say>
-        </condition>
+        </Condition>
     </Response>
     ```
 
@@ -1065,9 +1113,9 @@ These variables are typically set dynamically by previous operations or user inp
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
     <!-- Check if the time is before noon (720 minutes) -->
-        <condition minute-of-day="720">
+        <Condition minute-of-day="720">
             <Say>The time is before noon. Connecting you to morning services.</Say>
-        </condition>
+        </Condition>
     </Response>
     ```
     
@@ -1076,9 +1124,9 @@ These variables are typically set dynamically by previous operations or user inp
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
         <!-- Check time of day and respond accordingly -->
-        <condition time-of-day="09:00-17:00">
+        <Condition time-of-day="09:00-17:00">
             <Say>Good day! Our office hours are from 9 AM to 5 PM.</Say>
-        </condition>
+        </Condition>
     </Response>
     ```
 
@@ -1087,9 +1135,9 @@ These variables are typically set dynamically by previous operations or user inp
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
         <!-- Check time range -->
-        <condition time-of-day="09:00:00-17:00:00">
+        <Condition time-of-day="09:00:00-17:00:00">
             <Say>Welcome! You are accessing the system during business hours.</Say>
-        </condition>
+        </Condition>
     </Response>
     ```
 
@@ -1098,9 +1146,9 @@ These variables are typically set dynamically by previous operations or user inp
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
         <!-- Evaluate date-time range -->
-        <condition date-time="2024-11-22 10:00**~**2024-11-22 14:00">
+        <Condition date-time="2024-11-22 10:00**~**2024-11-22 14:00">
             <Say>The current time is within the specified range.</Say>
-        </condition>
+        </Condition>
     </Response>
     ```
 
@@ -1108,12 +1156,12 @@ These variables are typically set dynamically by previous operations or user inp
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
-        <condition date_time="2024-11-22 14:00:00**~**2024-11-22 16:00:00">
+        <Condition date_time="2024-11-22 14:00:00**~**2024-11-22 16:00:00">
             <Say>The date-time is within the specified range. Proceeding with the action.</Say>
             <Dial>
                 <Number>+123456789</Number>
             </Dial>
-        </condition>
+        </Condition>
         <Say>The date-time is outside the specified range. Please try again later.</Say>
     </Response>
     ```
@@ -1127,23 +1175,16 @@ A wrap-around condition allows a range of time or dates to seamlessly cross a na
 !!! Example "Wrap Around Condition Examples"
     1. **Time Range (Crossing Midnight)**
     ```xml
-    <condition time="22:00-06:00">
+    <Condition time="22:00-06:00">
     <!-- Handles times from 10 PM to 6 AM (crossing midnight) -->
-    </condition>
+    </Condition>
     ```
 
     2. **Month Range (Crossing Year End)**
     ```xml
-    <condition mon="10-2">
+    <Condition mon="10-2">
     <!-- From October to February -->
-    </condition>
-    ```
-
-    3. **Day Range (Crossing Week)**
-    ```xml
-    <condition day="Friday-Sunday">
-    <!-- From Friday to Sunday -->
-    </condition>
+    </Condition>
     ```
 
 #### Blocks

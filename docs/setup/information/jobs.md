@@ -47,4 +47,4 @@ Jobs coordinates with various integrations to process and update system data.
 !!! Note
     You can see the information like **ID**, **Attempts made/Attempts**, **Start Latency**, **Run Time**, **Started At**, **Finished At** and **Failed Reason** for all the statuses discussed above.
 
-<img src= "/setup/img/job1.png">
+<img src= "/setup/img/job1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
