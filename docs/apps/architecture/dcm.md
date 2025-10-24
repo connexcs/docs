@@ -15,26 +15,25 @@ Each component in the Page Builder has their own modules.
 
 Use these methods across most Page Builder components. Reference them from component tables (component tables should only include component-specific methods).
 
-| Method name | Description | Syntax | Example | Notes |
-|-------------|-------------|--------|---------|-------|
-| `getID()` | Returns the component's unique ID | `this.$('componentID').getID();` | `console.log(this.$('button').getID());` | Common to all components |
-| `hide()` | Hides the component from the UI | `this.$('componentID').hide();` | `this.$('alert').hide();` | Use to toggle visibility client-side |
-| `show()` | Shows a previously hidden component | `this.$('componentID').show();` | `this.$('alert').show();` | Use to restore visibility |
-| `setloading(true/false)` | Toggles loading spinner / state on the component | `this.$('componentID').setloading(true);` | `this.$('button').setloading(!0);` | Components may implement spinner visuals |
+| Method name | Description | Syntax |
+|-------------|-------------|--------|
+| `getID()` | Returns the component's unique ID | `this.$('componentID').getID();` |
+| `hide()` | Hides the component from the UI | `this.$('componentID').hide();` |
+| `show()` | Shows a previously hidden component | `this.$('componentID').show();` || `setloading(true/false)` | Toggles loading spinner / state on the component | `this.$('componentID').setloading(true);` |
 
 ### Alert
 
-|Method name|Description|Syntax|Example|Explanation/Output|
-|----|-----------|------|-------|---|
-|`setLabel()`|Set visible label|`this.$('componentID').setLabel('text')`|`this.$('alert').setLabel('Low balance')`|Sets alert label|
+|Method name|Description|Syntax|
+|-----------|-----------|------|
+|`setLabel()`|Set visible label|`this.$('componentID').setLabel('text')`|
 
 See [Common Methods](#common-methods) for **`getID`/`hide`/`show`/`setloading`** usage.
 
 ### Button
 
-|Method name|Description|Syntax|Example|Explanation/Output|
-|----|-----------|------|-------|---|
-|`setButtonLabel()`|Sets the label (**visible text**) on that button.|`this.$('componentID').setLabel('variable')`|`this.$('button').setLabel('hello')`|
+|Method name|Description|Syntax|
+|-----------|-----------|------|
+|`setButtonLabel()`|Sets the label (**visible text**) on that button.|`this.$('componentID').setLabel('variable')`|
 
 See [Common Methods](#common-methods) for **`getID`/`hide`/`show`/`setloading`** usage.
 
@@ -48,18 +47,18 @@ See [Common Methods](#common-methods) for **`getID`/`hide`/`show`/`setloading`**
 
 ### Chart
 
-|Method name|Description|Syntax|Example|Explanation/Output|
-|----|-----------|------|-------|---|
-|`clear()`|Clears the chart’s data and visuals| `this.$('componentID').clear();`| `this.$('chart').clear();`|Removes all data and resets the chart to a blank state|
-|`dump()`|Outputs debug info about the chart to the console| `this.$('componentID').dump();`| `this.$('chart').dump();`|Logs internal chart data/configuration for debugging|
-|`getConnectedDataURL()`|Returns data URL (base64) of connected charts|`this.$('componentID').getConnectedDataURL();`|`console.log(this.$('chart').getConnectedDataURL());`|Useful for exporting connected chart images|
-|`getDataURL()`|Returns chart image as base64-encoded `png`|`this.$('componentID').getDataURL();`| `console.log(this.$('chart').getDataURL());`|Allows downloading or exporting chart as an image|
-|`getHeight()`|Returns height of the chart in `pixels`|`this.$('componentID').getHeight();`| `console.log(this.$('chart').getHeight());`| Returns an integer height value, e.g., `400`|
-|`getWidth()`|Returns width of the chart in `pixels`|`this.$('componentID').getWidth();`|`console.log(this.$('chart').getWidth());`|Returns an integer width value, e.g.,`600`|
-|`push()`|Dynamically pushes the chart into view |`this.$('componentID').push();`|`this.$('chart').push();`|Makes the component visible or adds it to the layout dynamically|
-|`refresh()`| Refreshes or reloads the chart's data or visuals|`this.$('componentID').refresh();`|`this.$('chart').refresh();`|Re-renders the chart, often used after updating data|
-|`resize()`|Adjusts the chart’s dimensions based on container or viewport|`this.$('componentID').resize();`|`this.$('chart').resize();`| Ensures chart fits the current layout responsively|
-|`setData()`|Injects new data into the chart programmatically|`this.$('componentID').setData(dataObject);`|`this.$('Chart').setData({ xAxis: { data: ['A', 'B', 'C'] }, yAxis: {}, series: [{ type: 'bar', data: [10, 20, 30] }] });`|Updates the chart with new data (usually JSON format)|
+|Method name|Description|Syntax|
+|----|-----------|------|
+|`clear()`|Removes all data and resets the chart to a blank state| `this.$('componentID').clear();`|
+|`dump()`|Outputs debug info about the chart to the console| `this.$('componentID').dump();`|Logs internal chart data/configuration for debugging|
+|`getConnectedDataURL()`|Returns data URL (base64) of connected charts|`this.$('componentID').getConnectedDataURL();`|Useful for exporting connected chart images|
+|`getDataURL()`|Returns chart image as base64-encoded `png`|`this.$('componentID').getDataURL();`|Allows downloading or exporting chart as an image|
+|`getHeight()`|Returns height of the chart in `pixels`|`this.$('componentID').getHeight();`| Returns an integer height value, e.g., `400`|
+|`getWidth()`|Returns width of the chart in `pixels`|`this.$('componentID').getWidth();`|Returns an integer width value, e.g.,`600`|
+|`push()`|Dynamically pushes the chart into view |`this.$('componentID').push();`|Makes the component visible or adds it to the layout dynamically|
+|`refresh()`| Refreshes or reloads the chart's data or visuals|`this.$('componentID').refresh();`|Re-renders the chart, often used after updating data|
+|`resize()`|Adjusts the chart’s dimensions based on container or viewport|`this.$('componentID').resize();`| Ensures chart fits the current layout responsively|
+|`setData()`|Injects new data into the chart programmatically|`this.$('componentID').setData(dataObject);`|Updates the chart with new data (usually JSON format)|
 
 See [Common Methods](#common-methods) for **`getID`/`hide`/`show`/`setloading`** usage.
 
@@ -69,9 +68,9 @@ See [Common Methods](#common-methods) for **`getID`/`hide`/`show`/`setloading`**
 
 ### Collapse
 
-|Method name|Description|Syntax|Example|Explanation/Output|
-|----|-----------|------|-------|---|
-|`setActive()`|Programmatically expands a specific panel (by index or key)|`this.$('componentID').setActive(indexOrKey);`|`this.$('collapse').setActive('orderDetails');`|Automatically open the `orderDetails` panel after selecting an order|
+|Method name|Description|Syntax|
+|----|-----------|------|
+|`setActive()`|Programmatically expands a specific panel (by index or key)|`this.$('componentID').setActive(indexOrKey);`|
 
 See [Common Methods](#common-methods) for **`getID`/`hide`/`show`/`setloading`** usage.
 
@@ -81,10 +80,10 @@ See [Common Methods](#common-methods) for **`getID`/`hide`/`show`/`setloading`**
 
 ### Data Grid
 
-|Method name|Description|Syntax|Example|Explanation/Output|
-|----|-----------|------|-------|---|
-|`getSelectedRows()`|Gets currently selected rows as an array of objects|`this.$('componentID').getSelectedRows();`|```const selected = this.$('customerGrid').getSelectedRows();```|Stores the selected rows in a variable for further use (e.g., delete or export)|
-|`setData`|Sets new data into the grid|`this.$('componentID').setData(dataArray);`|```this.$('customerGrid').setData(this.$('filteredCustomers').getValue());```|Loads filtered customer data from another component into the grid|
+|Method name|Description|Syntax|
+|----|-----------|------|
+|`getSelectedRows()`|Gets currently selected rows as an array of objects|`this.$('componentID').getSelectedRows();`|
+|`setData`|Sets new data into the grid|`this.$('componentID').setData(dataArray);`|
 
 See [Common Methods](#common-methods) for **`getID`/`hide`/`show`/`setloading`** usage.
 
@@ -93,14 +92,14 @@ See [Common Methods](#common-methods) for **`getID`/`hide`/`show`/`setloading`**
 See [Common Methods](#common-methods) for **`getID`/`hide`/`show`/`setloading`** usage.
 ### Dialog
 
-|Method name|Description|Syntax|Example|Explanation/Output|
-|----|-----------|------|-------|---|
-|`clickClick()`|Simulates a click on the confirm (OK) button inside the dialog|`this.$('componentID').clickClick();`|`const { email, name } = this.$('userDialog').getValues(); if (email && name) this.$('dialog').clickClick();`|Automatically clicks the `Confirm` button in the dialog if both email and name fields are filled|
-|`close()`|Closes the dialog box|`this.$('componentID').close();`|```this.$('userDialog').close();```|Closes the dialog when user clicks cancel or after saving|
-|`confirmLLoading()`|Shows a loading spinner on the confirm (OK) button|`this.$('componentID').confirmLoading(true);`|`this.$('userDialog').confirmLoading(true);`|Shows a loading spinner while saving form data|
-|`getValues()`|Retrieves all input values from fields inside the dialog|`this.$('componentID').getValues();`|`const formData = this.$('userDialog').getValues();`|Gets the current form data inside the dialog — for validation or API calls|
-|`open()`|Opens (shows) the dialog box|`this.$('componentID').open();`|`this.$('dialog').open();`|Opens the dialog — e.g., to edit a user's details|
-|`setData()`|Pre-fills dialog fields with provided data|`this.$('componentID').setData(data);`|`this.$('dialog').setData(this.$('selectedUser').getValue());`|Loads selected user data into the dialog for editing|
+|Method name|Description|Syntax|
+|----|-----------|------|
+|`clickClick()`|Simulates a click on the confirm (OK) button inside the dialog|`this.$('componentID').clickClick();`|
+|`close()`|Closes the dialog box|`this.$('componentID').close();`|
+|`confirmLLoading()`|Shows a loading spinner on the confirm (OK) button|`this.$('componentID').confirmLoading(true);`|
+|`getValues()`|Retrieves all input values from fields inside the dialog|`this.$('componentID').getValues();`|
+|`open()`|Opens (shows) the dialog box|`this.$('componentID').open();`|
+|`setData()`|Pre-fills dialog fields with provided data|`this.$('componentID').setData(data);`|
 
 ### Divider
 See [Common Methods](#common-methods) for **`getID`/`hide`/`show`/`setloading`** usage.
@@ -175,17 +174,17 @@ See [Common Methods](#common-methods) for **`getID`/`hide`/`show`/`setloading`**
 
 ### Subform
 
-|Method name|Description|Syntax|Example|Explanation/Output|
-|----|-----------|------|-------|---|
-|`enable()`|Makes the Sub-Form editable|`this.$('componentID').enable();`|`this.$('addressList').enable();`|Enables the address list sub-form for editing|
-|`disable()`|Makes the Sub-Form read-only|`this.$('componentID').disable();`|```this.$('employeeRecords').disable();```|Disables editing in the employee records sub-form after submission|
+|Method name|Description|Syntax|
+|----|-----------|------|
+|`enable()`|Makes the Sub-Form editable|`this.$('componentID').enable();`|
+|`disable()`|Makes the Sub-Form read-only|`this.$('componentID').disable();`|
 
 ### Subform+
 
-|Method name|Description|Syntax|Example|Explanation/Output|
-|----|-----------|------|-------|---|
-|`enable()`|Makes the entire Subform+ editable|`this.$('componentID').getID();`|`this.$('addressesForm').enable();`|Allows the user to edit the list of addresses|
-|`disable()`|Disables the Subform+ making it read-only|`this.$('componentID').disable();`|```this.$('educationForm').disable();```|Prevents users from modifying education history after submission|
+|Method name|Description|Syntax|
+|----|-----------|------|
+|`enable()`|Makes the entire Subform+ editable|`this.$('componentID').getID();`|
+|`disable()`|Disables the Subform+ making it read-only|`this.$('componentID').disable();`|
 
 ### Switch
 
