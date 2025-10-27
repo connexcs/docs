@@ -68,7 +68,7 @@ This helps measure:
 
 ---
 
-## **Interactive Visualization**
+## Interactive Visualization
 
 * Hovering over any **zone (green dot)** highlights the corresponding record in the **grid panel** on the right.
 * The grid displays zone names, ping times, and additional connection details.
