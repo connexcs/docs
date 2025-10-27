@@ -123,6 +123,7 @@ nav:
     - Global:
         - Global: global.md
         - Transcription: transcription.md
+        - Alias: global-alias.md 
     
     - Class 5:
         - AI Agent: class5/ai-agent.md
@@ -179,6 +180,7 @@ nav:
             - Certificate: setup/information/certificate.md
             - STIR/SHAKEN Cert: setup/information/stir-shaken.md
             - Jobs: setup/information/jobs.md
+        - Network Ping: setup/network-ping.md
 
     - Architecture:
         - API: api.md
