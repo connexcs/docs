@@ -2,21 +2,25 @@
 
 ## Overview
 
-Use the DID Purchase application to search for and acquire one or more DIDs (phone numbers).
+The DID Purchase application allows customers to browse and acquire DIDs (phone numbers) that are made available by their carrier through the ConnexCS platform.
 
-Each DID is associated with different subscription plans, including options for monthly, weekly, daily, and other flexible billing cycles.
+ConnexCS does not sell or resell DIDs directly — instead, it provides the infrastructure for carriers to list, manage, and distribute their own DID inventories to their customers.
+
+Each DID may have a different subscription plan, which can include flexible billing options such as monthly, weekly, or daily cycles, depending on how the carrier has configured its offerings.
 
 ### DID Pricing in the Customer Portal
 
-Each DID in the Customer Portal has a cost, which is determined by the pricing package assigned to it. The portal displays this package cost when a DID is purchased.
+Each DID displayed in the Customer Portal includes a price that is defined by the carrier’s pricing package.
+
+This price is visible to customers during the DID purchase process.
 
 ### DID Visibility in the Customer Portal
 
-By default, the Customer Portal displays all DIDs available in the **carrier’s inventory.**
+By default, the Customer Portal displays all DIDs that the carrier has made available for purchase from its inventory.
 
-This application is both a usable tool and a proof of concept, as carriers may sell DIDs as follows:
+This feature demonstrates the capability of the ConnexCS platform to integrate with carrier inventories, where:
 
-1. **Range Holder Carriers**: A range holder is a carrier that has acquired DID ranges directly from the regulatory authority or government body responsible for number allocation. These DIDs are then maintained in the carrier’s inventory and made available for resale or assignment.
++ **Range Holder Carriers**: These are carriers that own DID ranges allocated by regulatory authorities or government bodies. They can upload and manage these DIDs within their ConnexCS account to make them available to their customers.
 
 ## Steps to Purchase the DID(s)
 
