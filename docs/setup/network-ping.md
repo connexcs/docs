@@ -32,9 +32,9 @@ Network Ping helps administrators quickly:
 
 ## How to Use
 
-1. Navigate to **Setup :material-menu-right: Network Ping**.<br><img src="docs/img/nwping1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+1. Navigate to **Setup :material-menu-right: Network Ping**.<br><img src="/misc/img/nwping1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 2. Enter the **IP Address**. Click on Search button.
-3. The results are displayed as shown below. <br><img src="docs/img/nwping2.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+3. The results are displayed as shown below. <br><img src="/misc/img/nwping2.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 ## How It Works
 

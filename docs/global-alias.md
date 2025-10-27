@@ -17,7 +17,7 @@ Alias will re-write the destination number.
     + **New**: Set to another number or script (regex).
 3. Click **`Save`**.
 
-<img src="docs/img/globalalias.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src="/misc/img/globalalias.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Processing Order
 
