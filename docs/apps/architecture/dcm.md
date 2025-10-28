@@ -20,6 +20,7 @@ Use these methods across most Page Builder components. Reference them from compo
 | `getID()` | Returns the component's unique ID | `this.$('componentID').getID();` |
 | `hide()` | Hides the component from the UI | `this.$('componentID').hide();` |
 | `show()` | Shows a previously hidden component | `this.$('componentID').show();` || `setloading(true/false)` | Toggles loading spinner / state on the component | `this.$('componentID').setloading(true);` |
+|`loading(true/false)`|Performs the logic of showing or hiding a loading spinner|`this.$('componentID').setloading(!0);`|`this.$('alert').setloading(!0);`|This triggers the loading animation on the Alert component|
 
 ### Alert
 
