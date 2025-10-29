@@ -292,5 +292,132 @@ Configure the Emetec settings in ConnexCS:
 
 [paypal-9]: /setup/img/paypal-9.png "Paypal-9" style="border: 2px solid #4472C4; border-radius: 8px;"
 
-
 [paypal-9]: /setup/img/paypal-9.png "Paypal-9"
+
+## Service-Based Authentication System
+
+### Introduction
+
+A Service-Based Authentication System ensures that the right identities are authenticated across all services, applications, and APIs.
+
+This architecture allows for centralized authentication services that can be leveraged across microservices or distributed environments.
+
+* **Centralized Authentication**: Authentication is handled centrally, allowing multiple services to use the same method for validating user identities (either via Basic Auth or JWT).
+* **Flexibility**: Both Basic Auth and JWT will be supported during the transition period.
+* **Scalable Authentication**: As the system grows, using JWTs will allow for stateless, secure, and efficient management of user authentication across distributed systems.
+
+This section explains the two main authentication methods employed by our service-based authentication system:
+
+1. **Basic Authentication (Basic Auth)**
+2. **JSON Web Tokens (JWT)**
+
+### Basic Authentication (Basic Auth)
+
+#### How Basic Authentication Works?
+
+Basic Authentication is one of the simplest forms of HTTP authentication. Here's how it operates:
+
+1. The client sends a request to the server with an `Authorization` header that contains a **Base64-encoded string**. This string is a combination of the username and password, separated by a colon.
+
+   For example:
+
+   ```js
+   Authorization: Basic base64encodedString
+   ```
+
+2. The server decodes the `Base64` string and compares the provided credentials with the stored ones. If they match, the server grants access.
+
+#### Why Use Basic Auth?
+
+**Basic Auth** is simple to implement and widely supported, making it a practical solution for internal services or low-traffic environments where security is less of a concern.
+
+#### Limitations of Basic Auth
+
+* **Security Risk Over HTTP**: If Basic Auth is used over plain HTTP, the credentials are sent as plaintext and can be intercepted. This is a significant security risk, which is why Basic Auth should always be used with **HTTPS** to encrypt the connection.
+* **Repetitive Credential Transmission**: Credentials are sent with each HTTP request, increasing the chances of interception or leakage.
+* **Storage in Logs**: Because the credentials are sent with every request, they may get logged by proxy servers, which could create security vulnerabilities.
+
+#### Current Use in ConnexCS
+
+Currently, ConnexCS uses Basic Auth for many internal services and APIs, especially for simple, low-traffic machine-to-machine communication.
+
+We ensure that Basic Auth is used over HTTPS to prevent exposure of credentials.
+
+---
+
+### JSON Web Tokens (JWT)
+
+#### **How JWT Works**
+
+**JSON Web Tokens (JWTs)** are a more advanced authentication method that is gaining popularity due to their **self-contained** nature.
+
+Here's how JWTs work:
+
+1. **Token Structure**: A JWT consists of three parts:
+
+   * **Header**: Specifies the signing algorithm and type of token (e.g., JWT).
+   * **Payload**: Contains the claims (data) such as user ID, roles, and expiration time. It is **Base64 encoded**, but **not encrypted**. This means anyone with the token can decode and view the data.
+   * **Signature**: A cryptographic signature that ensures the integrity of the token. The server generates this signature using the payload and a secret key.
+
+   A typical JWT looks like:
+
+   ```
+   Header.Payload.Signature
+   ```
+
+2. **Authorization Flow**:
+
+   * The client sends their credentials to the server.
+   * The server verifies the credentials and creates a JWT that contains the user’s identity and other claims.
+   * The client receives the JWT and stores it (usually in local storage or HTTP-only cookies).
+   * With each subsequent request, the client sends the JWT in the `Authorization` header as a **Bearer token**:
+
+     ```
+     Authorization: Bearer token
+     ```
+   * The server verifies the signature and grants access if the token is valid.
+
+```mermaid
+flowchart TD
+    A[Client sends credentials to server] --> B[Server verifies credentials]
+    B --> C[Server creates JWT with user's identity and claims]
+    C --> D[Client stores JWT in local storage or HTTP-only cookies]
+    D --> E[Client sends JWT in Authorization header]
+    E --> F[Authorization header: Bearer token]
+    F --> G[Server verifies JWT signature]
+    G --> H[Server grants access if token is valid]
+```
+
+#### Advantages of JWT
+
+* **Stateless**: The server does not need to maintain a session. Each JWT contains all the data required for authentication, which improves performance and scalability.
+* **No Password Resend**: Unlike Basic Auth, JWT does not require sending the user’s password with every request. The user’s identity is verified with the JWT itself.
+* **Fast**: JWT verification is faster compared to querying a database on each request, as it does not require server-side session lookups.
+* **Built for Scalability**: JWTs allow for a distributed architecture where different services can independently verify the tokens without needing to share session state.
+
+#### Limitations of JWT
+
+* **Exposure of Claims**: While the signature prevents modification, anyone with access to the JWT can decode the payload and see its claims. Sensitive information like passwords or personal data should never be included in the payload.
+* **Token Revocation**: JWTs are stateless, meaning that once issued, they cannot be revoked until they expire. This presents a challenge in managing security, especially if a token is compromised before its expiration.
+
+---
+
+### **Conclusion**
+
+|Aspect|Basic Authentication|JWT Authentication|
+|------|--------------------|------------------| 
+|**Authentication Type**| Sends username and password with each request Sends a self-contained token (JWT) with each request|
+|**Security**| Credentials (username and password) sent with every request | Credentials are not sent repeatedly, only the JWT is sent|
+|**Transmission**| Uses Base64 encoding for username and password| Uses a cryptographic signature for the payload|
+|**Storage**| No token storage, just username/password on each request| JWT is stored on the client (local storage or HTTP-only cookies)|
+|**Statefulness**| Stateful, requires server to track sessions| Stateless, server does not need to store session information|
+|**Performance**| Slower due to repeated credential transmission| Faster, no need for server to look up session on each request|
+|**Revocation**| Credentials can be revoked at any time| JWT revocation is more complex (requires additional infrastructure)|
+|**Use Case** | Best for simple applications or internal tools| Ideal for scalable APIs and microservices|
+|**Security Considerations** | Vulnerable if sent over HTTP (use HTTPS)| Token can be decoded (but not tampered with) if not encrypted|
+|**Scalability**| Requires a session store (like Redis) for multiple servers| Does not require session storage, each server can validate the JWT independently|
+|**Token Expiration**| No token expiration, uses session timeout| Tokens can have expiration times, enhancing security|
+|**Complexity**|Simple to implement|More complex, requires managing tokens and signatures|
+
+---
+.
