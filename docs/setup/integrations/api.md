@@ -319,11 +319,11 @@ Basic Authentication is one of the simplest forms of HTTP authentication. Here's
 
 1. The client sends a request to the server with an `Authorization` header that contains a **Base64-encoded string**. This string is a combination of the username and password, separated by a colon.
 
-   For example:
+    For example:
 
-   ```js
-   Authorization: Basic base64encodedString
-   ```
+    ```js
+    Authorization: Basic base64encodedString
+    ```
 
 2. The server decodes the `Base64` string and compares the provided credentials with the stored ones. If they match, the server grants access.
 
@@ -347,7 +347,7 @@ We ensure that Basic Auth is used over HTTPS to prevent exposure of credentials.
 
 ### JSON Web Tokens (JWT)
 
-#### **How JWT Works**
+#### How JWT Works?
 
 **JSON Web Tokens (JWTs)** are a more advanced authentication method that is gaining popularity due to their **self-contained** nature.
 
@@ -402,7 +402,7 @@ flowchart TD
 
 ---
 
-### **Conclusion**
+### Conclusion
 
 |Aspect|Basic Authentication|JWT Authentication|
 |------|--------------------|------------------| 
