@@ -21,8 +21,8 @@ Use these methods across most Page Builder components. Reference them from compo
 |-------------|-------------|--------|
 | `getID()` | Returns the component's unique ID | `this.$('componentID').getID();` |
 | `hide()` | Hides the component from the UI | `this.$('componentID').hide();` |
-| `show()` | Shows a previously hidden component | `this.$('componentID').show();` || `setloading(true/false)` | Toggles loading spinner / state on the component | `this.$('componentID').setloading(true);` |
-|`loading(true/false)`|Performs the logic of showing or hiding a loading spinner|`this.$('componentID').setloading(!0);`|`this.$('button').setloading(!0);`|This triggers the loading animation on the `button` component|
+| `show()` | Shows a previously hidden component | `this.$('componentID').show();` |
+| `loading(true/false)`| Toggles loading spinner / state on the component | `this.$('componentID').loading(true);` |
 
 ## Components
 
@@ -40,11 +40,11 @@ See [Common Methods](#common-methods) for **`getID`/`hide`/`show`** usage.
 |-----------|-----------|------|
 |`setButtonLabel()`|Sets the label (**visible text**) on that button.|`this.$('componentID').setLabel('variable')`|
 
-See [Common Methods](#common-methods) for **`getID`/`hide`/`show`/`setloading`** usage.
+See [Common Methods](#common-methods) for **`getID`/`hide`/`show`/`loading`** usage.
 
 ### Card
 
-See [Common Methods](#common-methods) for **`getID`/`hide`/`show`/`setloading`** usage.
+See [Common Methods](#common-methods) for **`getID`/`hide`/`show`/`loading`** usage.
 
 ### Cascader
 
@@ -65,7 +65,7 @@ See [Common Methods](#common-methods) for **`getID`/`hide`/`show`** usage.
 |`resize()`|Adjusts the chart’s dimensions based on container or viewport|`this.$('componentID').resize();`| Ensures chart fits the current layout responsively|
 |`setData()`|Injects new data into the chart programmatically|`this.$('componentID').setData(dataObject);`|Updates the chart with new data (usually JSON format)|
 
-See [Common Methods](#common-methods) for **`getID`/`hide`/`show`/`setloading`** usage.
+See [Common Methods](#common-methods) for **`getID`/`hide`/`show`/`loading`** usage.
 
 ### Checkbox
 
@@ -77,7 +77,7 @@ See [Common Methods](#common-methods) for **`getID`/`hide`/`show`** usage.
 |----|-----------|------|
 |`setActive()`|Programmatically expands a specific panel (by index or key)|`this.$('componentID').setActive(indexOrKey);`|
 
-See [Common Methods](#common-methods) for **`getID`/`hide`/`show`/`setloading`** usage.
+See [Common Methods](#common-methods) for **`getID`/`hide`/`show`/`loading`** usage.
 
 ### Color
 
@@ -102,11 +102,10 @@ See [Common Methods](#common-methods) for **`getID`/`hide`/`show`** usage.
 |----|-----------|------|
 |`clickClick()`|Simulates a click on the confirm (OK) button inside the dialog|`this.$('componentID').clickClick();`|
 |`close()`|Closes the dialog box|`this.$('componentID').close();`|
-|`confirmLLoading()`|Shows a loading spinner on the confirm (OK) button|`this.$('componentID').confirmLoading(true);`|
+|`confirmLoading()`|Shows a loading spinner on the confirm (OK) button|`this.$('componentID').confirmLoading(true);`|
 |`getValues()`|Retrieves all input values from fields inside the dialog|`this.$('componentID').getValues();`|
 |`open()`|Opens (shows) the dialog box|`this.$('componentID').open();`|
 |`setData()`|Pre-fills dialog fields with provided data|`this.$('componentID').setData(data);`|
-|`confirmLoading()`|Performs the logic of showing or hiding a loading spinner|`this.$('componentID).confirmloading(!0);`|This triggers the loading animation on the `button` component|
 
 ### Divider
 
@@ -118,7 +117,7 @@ See [Common Methods](#common-methods) for **`getID`/`hide`/`show`** usage.
 
 ### Grid
 
-See [Common Methods](#common-methods) for **`getID`/`hide`/`show`/`setloading`** usage.
+See [Common Methods](#common-methods) for **`getID`/`hide`/`show`/`loading`** usage.
 
 ### Group
 
@@ -126,7 +125,7 @@ See [Common Methods](#common-methods) for **`getID`/`hide`/`show`** usage.
 
 ### HTML
 
-See [Common Methods](#common-methods) for **`getID`/`hide`/`show`/`setloading`** usage.
+See [Common Methods](#common-methods) for **`getID`/`hide`/`show`/`loading`** usage.
 
 ### IFrame
 
@@ -134,11 +133,11 @@ See [Common Methods](#common-methods) for **`getID`/`hide`/`show`** usage.
 
 ### Inline
 
-See [Common Methods](#common-methods) for **`getID`/`hide`/`show`/`setloading`** usage.
+See [Common Methods](#common-methods) for **`getID`/`hide`/`show`/`loading`** usage.
 
 ### Input
 
-See [Common Methods](#common-methods) for **`getID`/`hide`/`show`/`setloading`** usage.
+See [Common Methods](#common-methods) for **`getID`/`hide`/`show`/`loading`** usage.
 
 ### Link
 
@@ -150,7 +149,7 @@ See [Common Methods](#common-methods) for **`getID`/`hide`/`show`** usage.
 
 ### Page Layout
 
-See [Common Methods](#common-methods) for **`getID`/`hide`/`show`/`setloading`** usage.
+See [Common Methods](#common-methods) for **`getID`/`hide`/`show`/`loading`** usage.
 
 ### Pagination
 
@@ -174,11 +173,11 @@ See [Common Methods](#common-methods) for **`getID`/`hide`/`show`** usage.
 
 ### Statistic
 
-See [Common Methods](#common-methods) for **`getID`/`hide`/`show`/`setloading`** usage.
+See [Common Methods](#common-methods) for **`getID`/`hide`/`show`/`loading`** usage.
 
 ### Steps
 
-See [Common Methods](#common-methods) for **`getID`/`hide`/`show`/`setloading`** usage.
+See [Common Methods](#common-methods) for **`getID`/`hide`/`show`/`loading`** usage.
 
 ### Subform
 
@@ -200,11 +199,11 @@ See [Common Methods](#common-methods) for **`getID`/`hide`/`show`** usage.
 
 ### Table
 
-See [Common Methods](#common-methods) for **`getID`/`hide`/`show`/`setloading`** usage.
+See [Common Methods](#common-methods) for **`getID`/`hide`/`show`/`loading`** usage.
 
 ### Tabs
 
-See [Common Methods](#common-methods) for **`getID`/`hide`/`show`/`setloading`** usage.
+See [Common Methods](#common-methods) for **`getID`/`hide`/`show`/`loading`** usage.
 
 ### Textarea
 
