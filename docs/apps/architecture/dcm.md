@@ -1,4 +1,4 @@
-# Document Content Model (DCM) 
+# Document Content Model (DCM)
 
 ## Introduction
 
