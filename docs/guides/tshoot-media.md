@@ -112,7 +112,7 @@ You can create an application called **Echo Test** and provide a specific call t
 
 1. Login to your account.
 2. Go to Class5 :material-menu-right: Apps and click `+`.
-3. You will see a Dialog box as shown below. <img src= "(/guides/img/echotest.jpg" style="border: 2px solid #4472C4; border-radius: 8px;"?
+3. You will see a Dialog box as shown below. <img src= "/guides/img/echotest.jpg" style="border: 2px solid #4472C4; border-radius: 8px;">
 4. Write the **Name** of your Echo test.
 5. Enter the **Destination** number for your Echo Test.
 6. Select the **PBX Server** for the call. The **Distributed (Default)** server will assign you the server near to your location.
