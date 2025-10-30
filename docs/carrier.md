@@ -104,7 +104,7 @@ From the **Carriers** page, you can perform several management operations.
 
     * **PayPal Email:** Enter the PayPal e-mail associated with the carrier's account.
     * **Website:** Add the carrier's official website.
-    * **P-Asserted-ID:** Considered a network level identifier, you can select how calls to the provider is handled based on the PA-ID:
+    * **P-Asserted-ID:** Consider a network level identifier, you can select how calls to the provider is handled based on the PA-ID:
     
         :material-menu-right: `Default`: Call passed to the provider (no manipulation).
         
@@ -115,8 +115,7 @@ From the **Carriers** page, you can perform several management operations.
         :material-menu-right: `Required`: Call won't be delivered to the provider without the PA-ID.
     
     * **Consec Fail Backoff:** When Enabled, if a carrier goes down, only a fraction of calls will be sent to the carrier until the start to complete again (calls aren't completely disabled otherwise there is no way to know when the carrier is back up again). The First Reply Timeout is skipped.
-        * **Purpose**:
-            * Helps determine if a route is down.
+        * **Purpose**: Helps determine if a route is down.
         * **Functionality**:
             * Counts the number of consecutive failed calls.
             * Resets to zero when a call successfully connects.

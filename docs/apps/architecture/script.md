@@ -2,6 +2,10 @@
 
 ## Introduction
 
+**ScriptForge** is a powerful scripting engine that allows users to extend and customize the functionality of ConnexCS.
+
+It provides a JavaScript-based environment where users can develop scripts and applications.
+
 Use ConnexCS **ScriptForge** to write ECMAScript 2015 (ES6) (aka JavaScript) and execute it in a secure sandbox on the server. It's designed to have low latency and high throughput.
 
 It's made for scripts and small applications. Any larger applications are best executed on external hardware through ScriptForge.
@@ -12,7 +16,7 @@ It's designed to work as **FaaS** (Functions as a Service), and our redundant in
 
 ## Developer Documentation
 
-ConnexCS offers several libraries specifically for use with ConnexCS. [**Developer API Documentation is available here**](https://page-builder-api-docs.connexcs.com/).
+ConnexCS offers several libraries specifically for use with ConnexCS. Developer API Documentation is available here : <https://api-docs.connexcs.com/>
 
 ### Available Modules
 
@@ -43,6 +47,16 @@ You can find sample scripts in our GitHub repository > [**example applications**
 ## Coding Basics
 
 Scripts and Apps typically start in the `main()` function and expect to return a promise. The first parameter is typically an object called `data`.
+
+### Creating a Basic Script
+
+This script takes an input variable name and returns a greeting message.
+
+```js
+function main(vars) {
+    return "Hello, " + vars.name;
+}
+```
 
 ### Throwing Errors (Class 4)
 
@@ -117,7 +131,6 @@ function main (data = {}) {
     }
     module.exports = {run}
     ```
-
 
 + **Import**: Use `import` to bring in code from other modules.
   
@@ -195,12 +208,25 @@ If script shows an error, add this and then run the script again:
 
 #### Some In-Built Environmental Variables in ScriptForge
 
-* **SCRIPTFORGE_ID**: File ID of the ScriptForge file.
-* **SCRIPTFORGE_NAME**: Name of the ScriptForge file.
-* **APP_ID**: ID of the application.
-* **EXEC_HOST**: Host name of the server executing the script.
+* **SCRIPTFORGE_ID**: File ID of the ScriptForge file. `process.env.SCRIPTFORGE_ID`
+* **SCRIPTFORGE_UUID**: UUID of the ScriptForge file. `process.env.SCRIPTFORGE_UUID`
+* **SCRIPTFORGE_NAME**: Name of the ScriptForge file. `process.env.SCRIPTFORGE_NAME`
+* **APP_ID**: ID of the application. `process.env.APP_ID`
+* **EXEC_HOST**: Host name of the server executing the script. `process.env.EXEC_HOST`
 
 You can get the environmental variables using `process.env`.
+
+!!! Example
+
+    1. Navigate to **IDE :material-menu-right: Script Forge**.
+    2. Use the following code to get the **UUID** of the file.
+
+    ```js
+    async function main () {
+     return process.env.SCRIPTFORGE_UUID
+    }
+    ```
+    <img src= "/apps/img/sf22.png" style= "border: 2px solid #4472C4; border-radius: 8px;">
 
 ### Assign the Script to a Customer
 
@@ -268,7 +294,5 @@ function main(data) {
 
 You can access and view background jobs running through Script Forge.
 
-1. You can view the jobs under Global :material-menu-right: Queue. <img src= "/apps/img/job1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
-2. Click on the job `Name`  to view the status.
-
-<img src= "/apps/img/job2.png" width= "200" style="border: 2px solid #4472C4; border-radius: 8px;">
+1. You can view the jobs under Global :material-menu-right: Queue. <img src= "/apps/img/job1.png" width= "900" style="border: 2px solid #4472C4; border-radius: 8px;">
+2. Click on the job `Name`  to view the status. <img src= "/apps/img/queuejs2.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;">

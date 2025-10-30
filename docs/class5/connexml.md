@@ -159,6 +159,9 @@ Text to speech is enabled for any application by using the `Say` verb, which spe
     </Response>
     ```
 
+!!! warning "Note"
+    The **Text to Speech** package needs to be added to your account for this feature to work.
+
 ### Reject
 
 This verb rejects the current call.
@@ -188,7 +191,7 @@ This verb rejects the current call.
 
 ### Play
 
-The `Play` verb allows you to play back to the caller an MP3 or WAV audio file.
+The `Play` verb allows you to play back to the caller a WAV audio file.
 
 You can use `Play` as a verb  standalone or as a noun nested inside `Gather` to play audio while you wait for DTMF tones.
 
@@ -343,7 +346,7 @@ An existing call is transferred to a different destination using the `Dial` ver
 
 |**Noun**|**Attribute**|**Description**|**Options**|**Default Method**|
 |--------|--------|-----|-----------|------------------|
-|`Voicemail`|`Voicemail Inbox`| It sends you to the inbox to leave a message|
+|`Voicemail`|`Inbox`| It sends you to the inbox to leave a message|
 ||`user`|The user attribute specifies the SIP user|
 |`Barge`| `whisper`|If enabled, allows you to speak privately to one or both legs of the call without the other party hearing.|`a`(aleg), `b`(bleg), `ab`(both legs)|`ab`|
 ||`bridge`|Allows an eavesdropper to listen in on a call without being an active participant. The eavesdropper can monitor the conversation on one or both legs of the call|`a`(aleg), `b`(bleg),`ab` (both legs)|`ab`|
@@ -454,7 +457,7 @@ An existing call is transferred to a different destination using the `Dial` ver
         <Response>
             <Dial>
                 <Voicemail inbox="true">
-                 <Voicemail/>
+                 </Voicemail>
             </Dial>
         </Response>
         ```
@@ -500,7 +503,7 @@ An existing call is transferred to a different destination using the `Dial` ver
             <Dial>
                 <Client
                 statusCallbackEvent="initiated ringing answered completed"
-                statusCallback="https://api.example.com/compile?rateCompact=true&ids=101,202,303"
+                statusCallback="https://api.example.com/compile?rateCompact=true&ampids=101,202,303"
                 statusCallbackMethod="POST">
                 7900
                 </Client>
@@ -552,6 +555,7 @@ An existing call is transferred to a different destination using the `Dial` ver
             <Dial hangupOnStar="true" hangupOnStarContext ="A">2919</Dial>
         </Response>
         ```
+!!! Warning "In ConneXML, use `&amp`; in place of `&` when specifying the `AND` operator."
 
 #### Dynamic Dial
 
@@ -754,7 +758,7 @@ It's an effective and quicker way to check a customer's audio quality and call p
     <Response>
         <Enter>B</Enter>
         <Press digit="2" context="A">
-            <Play=user/adam.wav</Play>
+            <Play>user/adam.wav</Play>
         </Press>
         <Press digit="2" context="B">
             <Hangup/>
@@ -793,7 +797,7 @@ It's an effective and quicker way to check a customer's audio quality and call p
 |🟦statusCallback|✅|✅|✅|
 |🟦statusCallbackMethod|✅|✅|✅|
 |➡️Voicemail|✅|❌|❌|
-|🟦Voicemail Inbox|✅|❌|❌|
+|🟦Inbox|✅|❌|❌|
 |➡️Barge|✅|❌|❌|
 |🟦whisper|✅|❌|❌|
 |🟦bridge|✅|❌|❌|
@@ -952,7 +956,7 @@ It functions as a decision-making component that determines a system's flow or b
 		    <Play>https://samplelib.com/lib/preview/wav/sample-12s.wav</Play>
 	    </Gather>
 	    <!-- Logic for conference -->
-	    <Condition field="gather_result" expression="1">
+	    <Condition field="${gather_result}" expression="1">
 		    <Say>You have pushed 1, which was the correct digit and connecting to the conference.</Say>
 		    <Dial>
 			    <Conference>MyConferenceRoom</Conference>
@@ -967,8 +971,8 @@ It functions as a decision-making component that determines a system's flow or b
     A `Gather` tag collects the user's input, allowing up to 120 seconds for a response.
 
     **Processing the Input:**
-    The `Condition` tag evaluates a specific field (`field="gather_result"`) against a condition (`expression="1"`).
-    `Field`: `gather_result` refers to the value collected from the user's input (via the `Gather` tag).
+    The `Condition` tag evaluates a specific field (`field="${gather_result}"`) against a condition (`expression="1"`).
+    `Field`: `${gather_result}` refers to the value collected from the user's input (via the `Gather` tag).
     `Expression: "1"` specifies the required value for the condition to be true
     
     **Handling Valid and Invalid Inputs**:
@@ -1005,9 +1009,9 @@ These variables are typically set dynamically by previous operations or user inp
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
-        <condition year="2024">
+        <Condition year="2024">
             <Say>Welcome to the events of 2024!</Say>
-        </condition>
+        </Condition>
     </Response>
     ```
 
@@ -1018,9 +1022,9 @@ These variables are typically set dynamically by previous operations or user inp
         <!-- Welcome Message -->
         <Say>Welcome to the system. Checking the day of the year.</Say>
         <!-- Condition to check the value of yday -->
-        <condition yday="1">
+        <Condition yday="1">
             <Say>It's the first day of the year!</Say>
-        </condition>
+        </Condition>
     </Response>
     ```
 
@@ -1028,9 +1032,9 @@ These variables are typically set dynamically by previous operations or user inp
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
-        <condition day="mon">
-            <Say>Welcome! It's Monday, starting the week strong!</Say>
-        </condition>
+        <Condition mon="1">
+            <Say>Welcome! It's January, starting the month strong!</Say>
+        </Condition>
     </Response>
     ```
 
@@ -1038,9 +1042,9 @@ These variables are typically set dynamically by previous operations or user inp
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
-        <condition mday="1">
+        <Condition mday="1">
             <Say>Welcome! It's the first day of the month.</Say>
-        </condition>
+        </Condition>
     </Response>
     ```
 
@@ -1048,9 +1052,9 @@ These variables are typically set dynamically by previous operations or user inp
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
-        <condition week="1">
+        <Condition week="1">
             <Say>Welcome to Week 1 activities.</Say>
-        </condition>
+        </Condition>
     </Response>
     ```
 
@@ -1058,9 +1062,9 @@ These variables are typically set dynamically by previous operations or user inp
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
-        <condition mweek="2">
+        <Condition mweek="2">
             <Say>Welcome to the second week of the month. Stay tuned for updates.</Say>
-        </condition>
+        </Condition>
     </Response>
     ```
 
@@ -1068,9 +1072,9 @@ These variables are typically set dynamically by previous operations or user inp
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
-        <condition wday="3">
+        <Condition wday="3">
             <Say>Today is Tuesday. Keep going!</Say>
-        </condition>
+        </Condition>
     </Response>
     ```
 
@@ -1078,9 +1082,9 @@ These variables are typically set dynamically by previous operations or user inp
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
-        <condition sunmontuewedthufrisat="mon,tue,wed,thu,fri">
+        <Condition sunmontuewedthufrisat="mon,tue,wed,thu,fri">
             <Say>It's a weekday. Let's get to work!</Say>
-        </condition>
+        </Condition>
     </Response>
     ```
     
@@ -1088,9 +1092,9 @@ These variables are typically set dynamically by previous operations or user inp
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
-        <condition hour="12">
+        <Condition hour="12">
             <Say>Good afternoon! You are connecting at noon.</Say>
-        </condition>
+        </Condition>
     </Response>
     ```
 
@@ -1098,9 +1102,9 @@ These variables are typically set dynamically by previous operations or user inp
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
-        <condition minute="30">
+        <Condition minute="30">
             <Say>It's 30 minutes past the hour, proceeding with the action.</Say>
-        </condition>
+        </Condition>
     </Response>
     ```
 
@@ -1109,9 +1113,9 @@ These variables are typically set dynamically by previous operations or user inp
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
     <!-- Check if the time is before noon (720 minutes) -->
-        <condition minute-of-day="720">
+        <Condition minute-of-day="720">
             <Say>The time is before noon. Connecting you to morning services.</Say>
-        </condition>
+        </Condition>
     </Response>
     ```
     
@@ -1120,9 +1124,9 @@ These variables are typically set dynamically by previous operations or user inp
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
         <!-- Check time of day and respond accordingly -->
-        <condition time-of-day="09:00-17:00">
+        <Condition time-of-day="09:00-17:00">
             <Say>Good day! Our office hours are from 9 AM to 5 PM.</Say>
-        </condition>
+        </Condition>
     </Response>
     ```
 
@@ -1131,9 +1135,9 @@ These variables are typically set dynamically by previous operations or user inp
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
         <!-- Check time range -->
-        <condition time-of-day="09:00:00-17:00:00">
+        <Condition time-of-day="09:00:00-17:00:00">
             <Say>Welcome! You are accessing the system during business hours.</Say>
-        </condition>
+        </Condition>
     </Response>
     ```
 
@@ -1142,9 +1146,9 @@ These variables are typically set dynamically by previous operations or user inp
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
         <!-- Evaluate date-time range -->
-        <condition date-time="2024-11-22 10:00**~**2024-11-22 14:00">
+        <Condition date-time="2024-11-22 10:00**~**2024-11-22 14:00">
             <Say>The current time is within the specified range.</Say>
-        </condition>
+        </Condition>
     </Response>
     ```
 
@@ -1152,12 +1156,12 @@ These variables are typically set dynamically by previous operations or user inp
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
-        <condition date_time="2024-11-22 14:00:00**~**2024-11-22 16:00:00">
+        <Condition date_time="2024-11-22 14:00:00**~**2024-11-22 16:00:00">
             <Say>The date-time is within the specified range. Proceeding with the action.</Say>
             <Dial>
                 <Number>+123456789</Number>
             </Dial>
-        </condition>
+        </Condition>
         <Say>The date-time is outside the specified range. Please try again later.</Say>
     </Response>
     ```
@@ -1171,23 +1175,16 @@ A wrap-around condition allows a range of time or dates to seamlessly cross a na
 !!! Example "Wrap Around Condition Examples"
     1. **Time Range (Crossing Midnight)**
     ```xml
-    <condition time="22:00-06:00">
+    <Condition time="22:00-06:00">
     <!-- Handles times from 10 PM to 6 AM (crossing midnight) -->
-    </condition>
+    </Condition>
     ```
 
     2. **Month Range (Crossing Year End)**
     ```xml
-    <condition mon="10-2">
+    <Condition mon="10-2">
     <!-- From October to February -->
-    </condition>
-    ```
-
-    3. **Day Range (Crossing Week)**
-    ```xml
-    <condition day="Friday-Sunday">
-    <!-- From Friday to Sunday -->
-    </condition>
+    </Condition>
     ```
 
 #### Blocks

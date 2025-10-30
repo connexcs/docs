@@ -2,9 +2,9 @@
 
 **Management :material-menu-right: Tags**
 
-A **Tag** refers to a label or keyword used to categorize or identify something.
+It's a dynamic label which links Routes, Alerts, CLI rules to customers by automatically applying tagged configuration when the same tag is assigned to a customer.
 
-With the help of tags, you may generate global Alerts, Routing, and CLI information. Following the creation of the Tags, you can tag your clients in the Alert, Routing, or CLI Strategy.
+With the help of tags, you may generate global [Alerts](https://docs.connexcs.com/customer/alerts/), [Routing](https://docs.connexcs.com/routing/), and [CLI information](https://docs.connexcs.com/customer/cli/#cli-routing-rules). Following the creation of the Tags, you can tag your clients in the Alert, Routing, or CLI Strategy.
 
 By using tags, you may create an Alert, Routing or CLI Strategy for each specific customer with less time and effort.
 
@@ -340,7 +340,7 @@ You can apply the created **CLI Tags** to various customers.
 2. Click on the blue `+` button on the top-right.
 3. Mention the **Tag** name here. It's a mandatory field.
 4. **CLI**: To allow the required CLIs, enter the required number or a regular expression (to match and replace). It's a required field.
-5. **Rewrite CLI**: A CLI can be rewritten. For example, you can add `123456789` in the CLI box and then rewrite by adding `987654321` in the rewrite CLI box. (For more advanced CLI manipulation, see [**Advanced CLI Match & Manipulation**](https://docs.connexcs.com/customer/cli/#advanced-cli-match-and-manipulation) below.
+5. **Rewrite CLI**: A CLI can be rewritten. For example, you can add `123456789` in the CLI box and then rewrite by adding `987654321` in the rewrite CLI box. (For more advanced CLI manipulation, see [**Advanced CLI Match & Manipulation**](https://docs.connexcs.com/customer/cli/#advanced-cli-match-and-manipulation) below).
 6. **Pre-Asserted-ID (PAID)**: To allow the required PAID, enter the required number or a regular expression to match or replace.
 7. **Rewrite P-Asserted-ID**: This is a SIP Header almost same as the FROM header but classified as a private, or network-level identifier.
 Telephone companies use it to identify call originators. As it's stripped at the call server, the client end-points only see the FROM field.

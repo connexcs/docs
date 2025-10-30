@@ -1,5 +1,7 @@
 # Detailed Features
 
+Please [click here](https://connexcs.com/feature-list) to have look at our comprehensive feature list.
+
 The following is a comprehensive list of features included in the latest stable version of ConnexCS.
 
 ## Customers
@@ -204,7 +206,6 @@ The following is a comprehensive list of features included in the latest stable 
 * Microsoft / Google HMAC OTP
 * YubiKey Hardware Security Token (WebAuthN)
 * [Duo Security](https://docs.connexcs.com/security/#user-enhanced-security)
-* [Full API Support](https://portal-api-docs.connexcs.com/)
 * High Quality Data Tables with custom collations & data piviot
 * Bulk Import
 * [Bulk Edit / Delete](https://docs.connexcs.com/video-guide/#bulk-edit)
@@ -227,7 +228,6 @@ The following is a comprehensive list of features included in the latest stable 
 * [Email Verification](https://docs.connexcs.com/getting-started/#email-verification)
 * [Mobile Verification](https://docs.connexcs.com/getting-started/#mobile-verification)
 * Self CLI Verification (via callback)
-* Full API Support
 * Upload your own Logo
 * [Customise your Portal](https://docs.connexcs.com/setup/integrations/portal/)
 * Custom Forms

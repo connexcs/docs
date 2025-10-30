@@ -33,7 +33,7 @@ Click **`Simulate`** either from the **Logging** screen or from within a specifi
 <img src= "/misc/img/logging-41.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 + **Dialed Number**: Where the call will end (destination).
-+ **CLI/ANI**: Where the call will originate from (configured on ConnexCS).
++ **CLI/ANI**: Where the call will originate from (configured on ConnexCS). [Click here to know more](https://docs.connexcs.com/customer/cli/#cli-routing-rules)
 + **Switch IP**: Where the call will traverse.
 + **Customer IP**: The ConnexCS Customer IP address is where the call will originate.
 + **Registered User**: (Optional) Enter a SIP extension user.
@@ -305,7 +305,7 @@ You can have take a look at the various SIP Timers in the table below:
 
 1. Click on the **INVITE** packet in the SIP Trace.
 2. A window will appear with **Raw** and **Shaken** tabs. Only if you are signing calls using **Shaken** certificate.
-3. The **Shaken** tab will have the decoded information from the **Raw** tab like **Algorithm**, **Public Certificate URL**, **Attestation Level**, **Dialled Number**, **CLI**, **Unique Customer ID**, **Timestamp**.
+3. The **Shaken** tab will have the decoded information from the **Raw** tab like **Algorithm**, **Public Certificate URL**, **Attestation Level**, **Dialled Number**, **[CLI](https://docs.connexcs.com/customer/cli/#cli-routing-rules)**, **Unique Customer ID**, **Timestamp**.
 
 <img src= "/logging/shaken.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 

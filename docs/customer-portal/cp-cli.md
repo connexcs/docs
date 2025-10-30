@@ -1,4 +1,16 @@
+---
+title: "Caller Line Identification (CLI) | Routing Rules & Caller ID | ConnexCS"
+description: "Learn how Caller Line Identification (CLI) works in ConnexCS. Configure routing rules, manage caller IDs, and ensure reliable call delivery."
+canonical_url: "https://docs.connexcs.com/customer/cli/#cli-routing-rules"
+---
+
+# Caller Line Identification (CLI)
+
+This page explains CLI Routing Rules...
+
 # Caller Line Identification
+
+For a complete guide to Caller Line Identification (CLI), including routing rules, see [CLI Documentation](https://docs.connexcs.com/customer/cli/#cli-routing-rules).
 
 **CLI (Caller Line Identification)** (or "Automatic Number Identification") refers to the *From* header in Session Initiation Protocol (SIP) and represents the senders number in an outgoing telephone call. It's the technical term for the Caller ID mechanism.
 
