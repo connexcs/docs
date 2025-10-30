@@ -290,7 +290,6 @@ nav:
         - Page Builder:
             - Page Builder: apps/page-builder.md
             - Document Content Model: apps/architecture/dcm.md
-            - Document Content Model2: apps/architecture/dcm1.md
         - Script Forge: apps/architecture/script.md
         - Template: apps/architecture/template.md
         - Query Builder: apps/architecture/query-builder.md
@@ -345,5 +344,3 @@ nav:
         - Preview Dialer: customer-portal/cp-cc-pd.md
         - Auto Dialer: customer-portal/cp-cc-ad.md
         - Broadcast Dialer: customer-portal/cp-cc-bd.md
-
-    
