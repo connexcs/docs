@@ -24,6 +24,8 @@ Use these methods across most Page Builder components. Reference them from compo
 | `show()` | Shows a previously hidden component | `this.$('componentID').show();` || `setloading(true/false)` | Toggles loading spinner / state on the component | `this.$('componentID').setloading(true);` |
 |`loading(true/false)`|Performs the logic of showing or hiding a loading spinner|`this.$('componentID').setloading(!0);`|`this.$('button').setloading(!0);`|This triggers the loading animation on the `button` component|
 
+## Components
+
 ### Alert
 
 |Method name|Description|Syntax|
