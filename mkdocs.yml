@@ -168,6 +168,7 @@ nav:
             - RTP Block: setup/advanced/rtp-block.md
         - Integrations:
             - API: setup/integrations/api.md
+            - JWT Refresh Keys: setup/integrations/jwt.md
             - Portal: setup/integrations/portal.md
             - WebPhone: webphone.md
         - Information:

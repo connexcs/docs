@@ -1,131 +1,58 @@
-# Service-Based Authentication System
+# JWT Refresh Keys
+
+**Setup :material-menu-right: Integrations :material-menu-right: JWT Refresh Keys**
 
 ## Introduction
 
-A Service-Based Authentication System ensures that the right identities are authenticated across all services, applications, and APIs.
+**JSON Web Tokens (JWT)** are widely used in modern web applications for securely transmitting information between client and server.
 
-This architecture allows for centralized authentication services that can be leveraged across microservices or distributed environments.
+One of the core elements of JWT is the **Refresh Token**, which plays a key role in ensuring seamless user sessions while improving security. 
 
-* **Centralized Authentication**: Authentication is handled centrally, allowing multiple services to use the same method for validating user identities (either via Basic Auth or JWT).
-* **Flexibility**: Both Basic Auth and JWT will be supported during the transition period.
-* **Scalable Authentication**: As the system grows, using JWTs will allow for stateless, secure, and efficient management of user authentication across distributed systems.
+## What is JWT Refresh Keys?
 
-This section explains the two main authentication methods employed by our service-based authentication system:
+**JWT Refresh Keys** are used to extend the validity of a user session without requiring the user to re-enter credentials.
 
-1. **Basic Authentication (Basic Auth)**
-2. **JSON Web Tokens (JWT)**
+This process involves two tokens:
 
-## Basic Authentication (Basic Auth)
+1. **Access Token**: This token is generated after a user successfully logs in and is used to authenticate requests. It has a **short expiration time** (e.g., 30 minutes or 1 hour).
 
-### How Basic Authentication Works?
+2. **Refresh Token**: This token is used to request a new access token after the previous one expires, allowing the user to stay logged in for a longer period. The refresh token has a **longer expiration time** (e.g., 30 days).
 
-Basic Authentication is one of the simplest forms of HTTP authentication, used to verify a user’s identity before granting access to a protected resource or API endpoint.
+## How JWT Refresh Tokens Work?
 
-**Here’s how it operates**:
+1. **User Login**:
+    a. The user enters **credentials**. For example, the username and password.
+    b. The system generates an **Access Token** and a **Refresh Token**.
+    c. The Access Token is **short-lived** and used to **authenticate API requests**.
 
-1. **User Credentials (Email and Password):**
-The client (such as a web browser or API client) collects the user’s email and password.
-These credentials are combined into a single string using the following format:
+2. **Token Expiry**:
+    a. When the Acess Token expires, the client can send the Refresh Token to request a **new Access Token**.
+    b. The system validates the Refresh Token and, if valid, generates a new Access Token.
 
-    ```js
-    email:password
-    ```
+3. **Revoke Token**: If necessary, the Refresh Token can be revoked to prevent further use. This is typically done in cases where the user logs out, or the system detects a security issue.
 
-2. **Encoding Credentials:**
-This string is then **Base64-encoded** to obfuscate it during transmission (though it’s not true encryption).
-The encoded value is included in the HTTP request header under the Authorization field, like so:
+4. **Security Considerations**:
 
-    ```js
-    Authorization: Basic base64encoded(email:password)
-    ```
+a. **HTTPS (TLS/SSL)** should always be used to protect tokens in transit.
 
-3. **Server Validation**:
+b. Refresh Tokens should be stored securely.
 
-When the server receives the request, it:
+## How to Use JWT Refresh Keys?
 
-Decodes the Base64 string back to the original email and password.
-
-Verifies these credentials against the stored user records (usually within a secure user database).
-
-If the credentials match, the server grants access to the requested resource.
-
-If not, it returns an HTTP 401 Unauthorized response.
-
-.4. **Session Scope:**
-Since Basic Auth sends the credentials with every request, it does not maintain session state. Each request must include the Authorization header.
-
-###@ Important Notes
-
-1. Basic Authentication should always be used over HTTPS (TLS/SSL) to prevent exposure of credentials in transit.
-
-2. Email and password are stored securely on the server side (hashed and salted, not in plain text).
-
-3. For improved security and scalability, token-based authentication (e.g., JWT) is often preferred for modern systems.
-
-### Why Use Basic Auth?
-
-**Basic Auth** is simple to implement and widely supported, making it a practical solution for internal services or low-traffic environments where security is less of a concern.
-
-### Limitations of Basic Auth
-
-* **Repetitive Credential Transmission**: Credentials are sent with each HTTP request, increasing the chances of interception or leakage.
-* **Storage in Logs**: Because the credentials are sent with every request, they may get logged by proxy servers, which could create security vulnerabilities.
-
----
-
-## JSON Web Tokens (JWT)
-
-### How JWT Works?
-
-**JSON Web Tokens (JWTs)** are a more advanced authentication method that is gaining popularity due to their **self-contained** nature.
-
-Here's how JWTs work:
-
-1. **Token Structure**: A JWT consists of three parts:
-
-   * **Header**: Specifies the signing algorithm and type of token (e.g., JWT).
-   * **Payload**: Contains the claims (data) such as user ID, roles, and expiration time. It is **Base64 encoded**, but **not encrypted**. This means anyone with the token can decode and view the data.
-   * **Signature**: A cryptographic signature that ensures the integrity of the token. The server generates this signature using the payload and a secret key.
-
-   A typical JWT looks like:
-
-   ```
-   Header.Payload.Signature
-   ```
-
-2. **Authorization Flow**:
-
-   * The client sends their credentials to the server.
-   * The server verifies the credentials and creates a JWT that contains the user’s identity and other claims.
-   * The client receives the JWT and stores it (usually in local storage or HTTP-only cookies).
-   * With each subsequent request, the client sends the JWT in the `Authorization` header as a **Bearer token**:
-
-     ```
-     Authorization: Bearer token
-     ```
-   * The server verifies the signature and grants access if the token is valid.
-
-```mermaid
-flowchart TD
-    A[Client sends credentials to server] --> B[Server verifies credentials]
-    B --> C[Server creates JWT with user's identity and claims]
-    C --> D[Client stores JWT in local storage or HTTP-only cookies]
-    D --> E[Client sends JWT in Authorization header]
-    E --> F[Authorization header: Bearer token]
-    F --> G[Server verifies JWT signature]
-    G --> H[Server grants access if token is valid]
-```
-
-### Advantages of JWT
-
-* **Stateless**: The server does not need to maintain a session. Each JWT contains all the data required for authentication, which improves performance and scalability.
-* **No Password Resend**: Unlike Basic Auth, JWT does not require sending the user’s password with every request. The user’s identity is verified with the JWT itself.
-* **Fast**: JWT verification is faster compared to querying a database on each request, as it does not require server-side session lookups.
-* **Built for Scalability**: JWTs allow for a distributed architecture where different services can independently verify the tokens without needing to share session state.
-
-### Limitations of JWT
-
-* **Exposure of Claims**: While the signature prevents modification, anyone with access to the JWT can decode the payload and see its claims. Sensitive information like passwords or personal data should never be included in the payload.
-* **Token Revocation**: JWTs are stateless, meaning that once issued, they cannot be revoked until they expire. This presents a challenge in managing security, especially if a token is compromised before its expiration.
+1. Login to your account.
+2. Navigate to **Setup :material-menu-right: Integrations :material-menu-right: JWT Refresh Keys**.<img src="<br><img src= "/setup/img/jw1.png" style="border: 2px solid #4472C4; border-radius: 8px;"><br>" style="border: 2px solid #4472C4; border-radius: 8px;">
+3. Click on the blue `+` button. Fill in the following fields:
+   1. **Audience**: Specifies the intended recipient of the token, ensuring it is used only by the designated service/application/API.
+   2. **Lifetime**: Specifies how long the token will remain active before it expires.
+4. Click `Save`. <img src="<br><img src= "/setup/img/jwt2.png" style="border: 2px solid #4472C4; border-radius: 8px;"><br>" style="border: 2px solid #4472C4; border-radius: 8px;">
+5. **Other fields**:
+   1. **Expires At**: Sets the expiration date and time of the token, after which it will no longer be valid.
+   2. **Created At**: Shows the timestamp when the refresh token was issued, helping track the token’s lifespan.
+   3. **Revoked At**: Records the time when the token was invalidated, meaning it can no longer be used.
+   4. **Last Used**: Indicates the most recent time the token was used for authentication or action, helping track token activity.
+   5. **Content field**: It contains the payload of the JWT, which includes user data or claims (e.g., email: "rnu@domain.com") embedded in the token.
+   6. **Token Hash**: A unique identifier for the JWT, helping track and manage tokens securely.
+   7. **JTI (JWT ID)**: Its a unique identifier for each JWT, ensuring that each token is distinguishable and can be tracked or revoked individually.
+   8. **Device Info**: Stores details about the device used for token authentication. For example browser, OS, or device ID, aiding security and auditing.
 
 ---
