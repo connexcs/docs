@@ -172,6 +172,7 @@ nav:
             - WebPhone: webphone.md
         - Information:
             - Change Log: setup/information/change-log.md
+            - Feature Requests: setup/information/feature-requests.md
             - Statement: setup/information/statements.md
             - Dial Code / Destination: setup/information/dial-code-destination.md
             - Payment Log: setup/information/payment-log.md

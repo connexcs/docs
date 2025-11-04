@@ -133,8 +133,8 @@ The following sections will appear when you click on the `blue +` sign.
     + **Account Manager**: Designating the control of this account to a specific user.
     + **Invoice Schedule**: Specify frequency for invoice generation like Daily, Weekly or Monthly.
     + **Flags**: 
-      + Select the **Create Invoice on Payment** flag and if payment done then invoice will be generated.
-      + **Allow inbound calls with zero balance**: If **DID calls** are received and the customer's balance is zero or negative, the calls will be allowed to pass through, provided the customer has enabled this flag.
+        + Select the **Create Invoice on Payment** flag and if payment done then invoice will be generated.
+        + **Allow inbound calls with zero balance**: If **DID calls** are received and the customer's balance is zero or negative, the calls will be allowed to pass through, provided the customer has enabled this flag.
     + **Invoice Due Days**: Set the allowed number of days past the due date that the invoice can go unpaid. 
     + **Invoice Template**: Select from a list of existing Templates found in **Setup :material-menu-right: Config :material-menu-right: [Templates](/setup/config/templates/)**
     + **Ext.Accounting ID**: This is used to fill in work an external accounting field to correlate between Connexcs and the external accountancy system.
