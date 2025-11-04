@@ -13,11 +13,11 @@ In our system, feature requests are categorized and managed to ensure that the m
 ## Feature Request Submission
 
 1. Login to your account.
-2. Navigate to  **Setup :material-menu-right: Information :material-menu-right: Feature Request**. <br><img src="fr1" style="border: 2px solid #4472C4; border-radius: 8px;"><br>
+2. Navigate to  **Setup :material-menu-right: Information :material-menu-right: Feature Request**. <br><img src="/setup/img/fr1.png" style="border: 2px solid #4472C4; border-radius: 8px;"><br>
 3. Click on the blue `+` button. When submitting a request, users need to provide:
    1. **Title**: A brief, descriptive name for the feature request.
-   2. **Description**: A detailed explanation of the feature request, including its purpose and how it will benefit users or improve the system. <br><br><img src="fr2" style="border: 2px solid #4472C4; border-radius: 8px;"><br>
-4. Let’s now take a closer look at the key features of this integration: <br><br><img src="fr3" style="border: 2px solid #4472C4; border-radius: 8px;"><br>
+   2. **Description**: A detailed explanation of the feature request, including its purpose and how it will benefit users or improve the system. <br><br><img src="/setup/img/fr2.png" style="border: 2px solid #4472C4; border-radius: 8px;"><br>
+4. Let’s now take a closer look at the key features of this integration: <br><br><img src="/setup/img/fr3.png" style="border: 2px solid #4472C4; border-radius: 8px;"><br>
    1. **Search Bar**: Allows users to search for specific feature requests by name or description. This makes it easier to find relevant requests from a large pool.
    2. **Filter**: Help users efficiently organize and view tasks or feature requests based on specific criteria:
       1. **Task Filter**: Choose from **All Tasks**, **My Tasks**, or **Other Tasks** to focus on specific task sets.
