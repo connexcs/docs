@@ -45,11 +45,11 @@ b. Refresh Tokens should be stored securely.
 ## How to Use JWT Refresh Keys?
 
 1. Login to your account.
-2. Navigate to **Setup :material-menu-right: Integrations :material-menu-right: JWT Refresh Keys**.<br><img src="<img src= "/setup/img/jw1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>" style="border: 2px solid #4472C4; border-radius: 8px;">
+2. Navigate to **Setup :material-menu-right: Integrations :material-menu-right: JWT Refresh Keys**. <br><img src="<img src= "/setup/img/jwt1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 3. Click on the blue `+` button. Fill in the following fields:
       1. **Audience**: Specifies the intended recipient of the token, ensuring it is used only by the designated service/application/API.
       2. **Lifetime**: Specifies how long the token will remain active before it expires.
-4. Click `Save`. <br><img src="<img src= "/setup/img/jwt2.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>" style="border: 2px solid #4472C4; border-radius: 8px;">
+4. Click `Save`. <br><img src="<img src= "/setup/img/jwt2.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 5. **Other fields**:
       1. **Expires At**: Sets the expiration date and time of the token, after which it will no longer be valid.
       2. **Created At**: Shows the timestamp when the refresh token was issued, helping track the token’s lifespan.
