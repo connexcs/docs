@@ -19,7 +19,7 @@ Use these methods across most Page Builder components. Reference them from compo
 
 | Method name | Description | Syntax |
 |-------------|-------------|--------|
-| `getID()` | Returns the component's unique ID | `this.$('componentID').getID();` |
+| `getId()` | Returns the component's unique ID | `this.$('componentID').getId();` |
 | `hide()` | Hides the component from the UI | `this.$('componentID').hide();` |
 | `show()` | Shows a previously hidden component | `this.$('componentID').show();` |
 | `loading(true/false)`| Toggles loading spinner / state on the component | `this.$('componentID').loading(true);` |
@@ -32,7 +32,7 @@ Use these methods across most Page Builder components. Reference them from compo
 |-----------|-----------|------|
 |`setLabel()`|Set visible label|`this.$('componentID').setLabel('text')`|
 
-See [Common Methods](#common-methods) for **`getID`/`hide`/`show`** usage.
+See [Common Methods](#common-methods) for **`getId`/`hide`/`show`** usage.
 
 ### Button
 
@@ -40,15 +40,15 @@ See [Common Methods](#common-methods) for **`getID`/`hide`/`show`** usage.
 |-----------|-----------|------|
 |`setButtonLabel()`|Sets the label (**visible text**) on that button.|`this.$('componentID').setLabel('variable')`|
 
-See [Common Methods](#common-methods) for **`getID`/`hide`/`show`/`loading`** usage.
+See [Common Methods](#common-methods) for **`getId`/`hide`/`show`/`loading`** usage.
 
 ### Card
 
-See [Common Methods](#common-methods) for **`getID`/`hide`/`show`/`loading`** usage.
+See [Common Methods](#common-methods) for **`getId`/`hide`/`show`/`loading`** usage.
 
 ### Cascader
 
-See [Common Methods](#common-methods) for **`getID`/`hide`/`show`** usage.
+See [Common Methods](#common-methods) for **`getId`/`hide`/`show`** usage.
 
 ### Chart
 
@@ -65,11 +65,11 @@ See [Common Methods](#common-methods) for **`getID`/`hide`/`show`** usage.
 |`resize()`|Adjusts the chart’s dimensions based on container or viewport|`this.$('componentID').resize();`| Ensures chart fits the current layout responsively|
 |`setData()`|Injects new data into the chart programmatically|`this.$('componentID').setData(dataObject);`|Updates the chart with new data (usually JSON format)|
 
-See [Common Methods](#common-methods) for **`getID`/`hide`/`show`/`loading`** usage.
+See [Common Methods](#common-methods) for **`getId`/`hide`/`show`/`loading`** usage.
 
 ### Checkbox
 
-See [Common Methods](#common-methods) for **`getID`/`hide`/`show`** usage.
+See [Common Methods](#common-methods) for **`getId`/`hide`/`show`** usage.
 
 ### Collapse
 
@@ -77,11 +77,11 @@ See [Common Methods](#common-methods) for **`getID`/`hide`/`show`** usage.
 |----|-----------|------|
 |`setActive()`|Programmatically expands a specific panel (by index or key)|`this.$('componentID').setActive(indexOrKey);`|
 
-See [Common Methods](#common-methods) for **`getID`/`hide`/`show`/`loading`** usage.
+See [Common Methods](#common-methods) for **`getId`/`hide`/`show`/`loading`** usage.
 
 ### Color
 
-See [Common Methods](#common-methods) for **`getID`/`hide`/`show`** usage.
+See [Common Methods](#common-methods) for **`getId`/`hide`/`show`** usage.
 
 ### Data Grid
 
@@ -90,11 +90,11 @@ See [Common Methods](#common-methods) for **`getID`/`hide`/`show`** usage.
 |`getSelectedRows()`|Gets currently selected rows as an array of objects|`this.$('componentID').getSelectedRows();`|
 |`setData`|Sets new data into the grid|`this.$('componentID').setData(dataArray);`|
 
-See [Common Methods](#common-methods) for **`getID`/`hide`/`show`** usage.
+See [Common Methods](#common-methods) for **`getId`/`hide`/`show`** usage.
 
 ### Date
 
-See [Common Methods](#common-methods) for **`getID`/`hide`/`show`** usage.
+See [Common Methods](#common-methods) for **`getId`/`hide`/`show`** usage.
 
 ### Dialog
 
@@ -109,75 +109,75 @@ See [Common Methods](#common-methods) for **`getID`/`hide`/`show`** usage.
 
 ### Divider
 
-See [Common Methods](#common-methods) for **`getID`/`hide`/`show`** usage.
+See [Common Methods](#common-methods) for **`getId`/`hide`/`show`** usage.
 
 ### Editor
 
-See [Common Methods](#common-methods) for **`getID`/`hide`/`show`** usage.
+See [Common Methods](#common-methods) for **`getId`/`hide`/`show`** usage.
 
 ### Grid
 
-See [Common Methods](#common-methods) for **`getID`/`hide`/`show`/`loading`** usage.
+See [Common Methods](#common-methods) for **`getId`/`hide`/`show`/`loading`** usage.
 
 ### Group
 
-See [Common Methods](#common-methods) for **`getID`/`hide`/`show`** usage.
+See [Common Methods](#common-methods) for **`getId`/`hide`/`show`** usage.
 
 ### HTML
 
-See [Common Methods](#common-methods) for **`getID`/`hide`/`show`/`loading`** usage.
+See [Common Methods](#common-methods) for **`getId`/`hide`/`show`/`loading`** usage.
 
 ### IFrame
 
-See [Common Methods](#common-methods) for **`getID`/`hide`/`show`** usage.
+See [Common Methods](#common-methods) for **`getId`/`hide`/`show`** usage.
 
 ### Inline
 
-See [Common Methods](#common-methods) for **`getID`/`hide`/`show`/`loading`** usage.
+See [Common Methods](#common-methods) for **`getId`/`hide`/`show`/`loading`** usage.
 
 ### Input
 
-See [Common Methods](#common-methods) for **`getID`/`hide`/`show`/`loading`** usage.
+See [Common Methods](#common-methods) for **`getId`/`hide`/`show`/`loading`** usage.
 
 ### Link
 
-See [Common Methods](#common-methods) for **`getID`/`hide`/`show`** usage.
+See [Common Methods](#common-methods) for **`getId`/`hide`/`show`** usage.
 
 ### Number
 
-See [Common Methods](#common-methods) for **`getID`/`hide`/`show`** usage.
+See [Common Methods](#common-methods) for **`getId`/`hide`/`show`** usage.
 
 ### Page Layout
 
-See [Common Methods](#common-methods) for **`getID`/`hide`/`show`/`loading`** usage.
+See [Common Methods](#common-methods) for **`getId`/`hide`/`show`/`loading`** usage.
 
 ### Pagination
 
-See [Common Methods](#common-methods) for **`getID`/`hide`/`show`** usage.
+See [Common Methods](#common-methods) for **`getId`/`hide`/`show`** usage.
 
 ### Radio
 
-See [Common Methods](#common-methods) for **`getID`/`hide`/`show`** usage.
+See [Common Methods](#common-methods) for **`getId`/`hide`/`show`** usage.
 
 ### Rate
 
-See [Common Methods](#common-methods) for **`getID`/`hide`/`show`** usage.
+See [Common Methods](#common-methods) for **`getId`/`hide`/`show`** usage.
 
 ### Select
 
-See [Common Methods](#common-methods) for **`getID`/`hide`/`show`** usage.
+See [Common Methods](#common-methods) for **`getId`/`hide`/`show`** usage.
 
 ### Slider
 
-See [Common Methods](#common-methods) for **`getID`/`hide`/`show`** usage.
+See [Common Methods](#common-methods) for **`getId`/`hide`/`show`** usage.
 
 ### Statistic
 
-See [Common Methods](#common-methods) for **`getID`/`hide`/`show`/`loading`** usage.
+See [Common Methods](#common-methods) for **`getId`/`hide`/`show`/`loading`** usage.
 
 ### Steps
 
-See [Common Methods](#common-methods) for **`getID`/`hide`/`show`/`loading`** usage.
+See [Common Methods](#common-methods) for **`getId`/`hide`/`show`/`loading`** usage.
 
 ### Subform
 
@@ -190,41 +190,41 @@ See [Common Methods](#common-methods) for **`getID`/`hide`/`show`/`loading`** us
 
 |Method name|Description|Syntax|
 |----|-----------|------|
-|`enable()`|Makes the entire Subform+ editable|`this.$('componentID').getID();`|
+|`enable()`|Makes the entire Subform+ editable|`this.$('componentID').enable();`|
 |`disable()`|Disables the Subform+ making it read-only|`this.$('componentID').disable();`|
 
 ### Switch
 
-See [Common Methods](#common-methods) for **`getID`/`hide`/`show`** usage.
+See [Common Methods](#common-methods) for **`getId`/`hide`/`show`** usage.
 
 ### Table
 
-See [Common Methods](#common-methods) for **`getID`/`hide`/`show`/`loading`** usage.
+See [Common Methods](#common-methods) for **`getId`/`hide`/`show`/`loading`** usage.
 
 ### Tabs
 
-See [Common Methods](#common-methods) for **`getID`/`hide`/`show`/`loading`** usage.
+See [Common Methods](#common-methods) for **`getId`/`hide`/`show`/`loading`** usage.
 
 ### Textarea
 
-See [Common Methods](#common-methods) for **`getID`/`hide`/`show`** usage.
+See [Common Methods](#common-methods) for **`getId`/`hide`/`show`** usage.
 
 ### Text
 
-See [Common Methods](#common-methods) for **`getID`/`hide`/`show`** usage.
+See [Common Methods](#common-methods) for **`getId`/`hide`/`show`** usage.
 
 ### Time
 
-See [Common Methods](#common-methods) for **`getID`/`hide`/`show`** usage.
+See [Common Methods](#common-methods) for **`getId`/`hide`/`show`** usage.
 
 ### Transfer
 
-See [Common Methods](#common-methods) for **`getID`/`hide`/`show`** usage.
+See [Common Methods](#common-methods) for **`getId`/`hide`/`show`** usage.
 
 ### Treeselect
 
-See [Common Methods](#common-methods) for **`getID`/`hide`/`show`** usage.
+See [Common Methods](#common-methods) for **`getId`/`hide`/`show`** usage.
 
 ### Webphone
 
-See [Common Methods](#common-methods) for **`getID`/`hide`/`show`** usage.
+See [Common Methods](#common-methods) for **`getId`/`hide`/`show`** usage.
