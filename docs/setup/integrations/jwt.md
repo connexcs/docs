@@ -6,7 +6,9 @@
 
 **JSON Web Tokens (JWT)** are widely used in modern web applications for securely transmitting information between client and server.
 
-One of the core elements of JWT is the **Refresh Token**, which plays a key role in ensuring seamless user sessions while improving security. 
+One of the core elements of JWT is the **Refresh Token**, which plays a key role in ensuring seamless user sessions while improving security.
+
+[Click here](https://en.wikipedia.org/wiki/JSON_Web_Token) for more information on JWT.
 
 ## What is JWT Refresh Keys?
 
@@ -38,18 +40,18 @@ This process involves two tokens:
 
 4. **Security Considerations**:
 
-a. **HTTPS (TLS/SSL)** should always be used to protect tokens in transit.
+    a. **HTTPS (TLS/SSL)** should always be used to protect tokens in transit.
 
-b. Refresh Tokens should be stored securely.
+    b. Refresh Tokens should be stored securely.
 
-## How to Use JWT Refresh Keys?
+## How to Add the JWT Keys?
 
 1. Login to your account.
-2. Navigate to **Setup :material-menu-right: Integrations :material-menu-right: JWT Refresh Keys**. <br><img src= "/setup/img/jwt1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+2. Navigate to **Setup :material-menu-right: Integrations :material-menu-right: JWT Refresh Keys**. <br><img src= "/setup/img/jwt1.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 3. Click on the blue `+` button. Fill in the following fields:
       1. **Audience**: Specifies the intended recipient of the token, ensuring it is used only by the designated service/application/API.
       2. **Lifetime**: Specifies how long the token will remain active before it expires.
-4. Click `Save`. <br><img src= "/setup/img/jwt2.png" style= "border: 2px solid #4472C4; border-radius: 8px;"></br>
+4. Click `Save`. <br><img src= "/setup/img/jwt2.png" width= "500" style= "border: 2px solid #4472C4; border-radius: 8px;"></br>
 5. **Other fields**:
       1. **Expires At**: Sets the expiration date and time of the token, after which it will no longer be valid.
       2. **Created At**: Shows the timestamp when the refresh token was issued, helping track the token’s lifespan.
