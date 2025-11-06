@@ -238,7 +238,7 @@ nav:
             - Remote Testing: guides/remote-testing.md
             
     - Video Guide: video-guide.md
-    - CX-Tools: cx-tools.md
+    - CX-Tools: cxtools.md
 
   - Customer Portal:
     - Dashboard: customer-portal/cp-dashboard.md
