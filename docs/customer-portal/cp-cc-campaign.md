@@ -1,4 +1,10 @@
-# Campaign Configuration
+# Campaign Creation
+
+## Overiew
+
+Campaign is designed to efficiently manage and monitor calling activities, agent performance, and lead engagement. It involves configuring various elements to optimize outreach, customer service, or sales efforts.
+
+## Steps to create teh Campaign
 
 1. Click on `See More` in the `Details` column.
 
@@ -23,7 +29,7 @@
 8. `Campaign Agents`: List of agents assigned to the campaign. <br>`Manage Agents`: Allows you to add/remove agents from the campaign from the drop-down menu. Click `Confirm`.</br> <br><img src= "/customer-portal/img/34ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "/customer-portal/img/34ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 For example: The selected agents will be added. <br><img src= "/customer-portal/img/35ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-9. `Lead Stats`: It shows you the total number of leads loaded into the campaign and what stage they're currently at during the calling process.
+1. `Lead Stats`: It shows you the total number of leads loaded into the campaign and what stage they're currently at during the calling process.
 
       1. `Total Leads`: Everyone you plan to call.
 
@@ -37,7 +43,7 @@ For example: The selected agents will be added. <br><img src= "/customer-portal/
 
       6. `Dropped Calls`: Calls that got disconnected unexpectedly.
       7. `Agents in Queue` (*Only for Auto/Preview Dialler*): Displays a list of agents who are waiting for a call or are ready to be assigned a call in the campaign.
-10. `Campaign Active Calls` (*Only for Broadcast Dialler*): Allows you to monitor real-time performance and volume.
+2.  `Campaign Active Calls` (*Only for Broadcast Dialler*): Allows you to monitor real-time performance and volume.
 
       1. `Phone`: The phone number being called.
 

@@ -44,7 +44,7 @@ The agent gets enough time to review and decide whether to call the person and h
         F --> B
     ```
 
-### **Auto Dialers**
+### Auto Dialers
 
  Its an outbound dialing system that automatically dials numbers from a contact list and connects answered calls to available agents in real-time.
 
