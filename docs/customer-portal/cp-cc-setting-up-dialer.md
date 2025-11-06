@@ -12,7 +12,7 @@ In this section, we will walk through configuring the Dialers and demonstrate ho
 4. A Window will pop-up with two sections:
       1. **Basic Info**:
          1. **Name**: Enter the Campaign name.
-         2. **Campaign Type**: From the drop-down select `Auto Dialler/Preiew Dialler/Broadcast`.
+         2. **Campaign Type**: From the drop-down select `Auto Dialer/Preiew Dialer/Broadcast`.
          3. **Agent Script**: Select a pre-configured script for agents to deliver during customer interactions.
          4. **State**: Configure the campaign's operational status by setting it to either `Active` (currently available for use) or `Inactive` (disabled or paused).
          5. **Notes**: An optional field to pen down any important information.
@@ -31,8 +31,10 @@ In this section, we will walk through configuring the Dialers and demonstrate ho
             7. `Ringing`: AI-initiated call is ringing.
             8. `In Progress`: Call data is being allocated.
          
-         5.**Flags** (*Only in Preview Dialler*): Select `Transfer` flag to activate the option of call transfer in Preview Dialer.
-         6.**Internal Destination** (*Only in Broadcast Dialler*): Select your AI Agent from the drop-down menu.
+         5.**Flags** **(*Only in Preview Dialer*)**: Select `Transfer` flag to activate the option of call transfer in Preview Dialer.
+         
+         6.**Internal Destination** **(*Only in Broadcast Dialer*)**: Select your AI Agent from the drop-down menu.
+         
          7. **Agents**: Select agents for the Auto Dialer. <br><img src= "/customer-portal/img/adcampaign1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br> <br><img src= "/customer-portal/img/cc15new1.png" style="border: 2px solid #4472C4; border-radius: 8px; padding: 20px;"></br><br><img src= "/customer-portal/img/66ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 5. Click on the `Confirm` button.

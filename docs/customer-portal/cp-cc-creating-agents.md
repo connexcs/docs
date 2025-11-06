@@ -1,5 +1,13 @@
 # Creating Agents
 
+## Overview
+
+**Agent creation** is the process of setting up the agents who will be part of a call center campaign.
+
+You can specify how many agents will be assigned to the campaign and add them to the system.
+
+Additionally, bulk agent creation allows you to quickly set up multiple agents at once.
+
 !!! warning "Creating Agents is only for Auto Dialler and Preview Dialler"
 
 This section has information on the agents. You can also `Create Bulk Agents`. <br><img src= "/customer-portal/img/16ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>

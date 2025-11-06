@@ -98,4 +98,4 @@ You can create your own personal AI Agent. [Click here](https://docs.connexcs.co
         E --> B
     ``` 
 
-From this point forward, we move into the next section [Setting up and using the Contact Center](https://bani-contact-center--connexcs-docs.netlify.app/customer-portal/cp-cc-install/).
+From this point forward, we move into the next section [Setting up and using the Contact Center](https://docs.connexcs.com/customer-portal/cp-cc-install/).
