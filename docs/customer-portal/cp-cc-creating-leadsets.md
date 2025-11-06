@@ -2,9 +2,13 @@
 
 ## Overview
 
-Leadset creation involves adding and organizing the list of contacts that will be used in a call center campaign. A leadset defines the group of leads (customers or prospects) that agents will call during the campaign.
+Leadset creation involves adding and organizing the list of contacts that will be used in a call center campaign.
 
-During this process, you can upload lead data, review the information for accuracy, and assign the leadset to a specific campaign. Properly configured leadsets ensure that calls are made to the right audience, improve connection rates, and help in tracking campaign performance effectively.
+A leadset defines the group of leads (customers or prospects) that agents will call during the campaign.
+
+During this process, you can upload lead data, review the information for accuracy, and assign the leadset to a specific campaign.
+
+Properly configured leadsets ensure that calls are made to the right audience, improve connection rates, and help in tracking campaign performance effectively.
 
 ## Steps for creating Leadsets
 
