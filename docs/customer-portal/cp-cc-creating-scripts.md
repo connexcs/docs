@@ -1,8 +1,12 @@
 # Creating Scripts
 
-!!! warning "Creating Scripts is only for Auto Dialler and Preview Dialler"
+!!! warning "Creating Scripts is **ONLY** for **Auto Dialer** and **Preview Dialer**"
+
+## Overview
 
 The Script section enables you to create structured call scripts for agents to follow during customer interactions.
+
+## Steps to create the Scripts
 
 1. Click on `Add a new Script`. <br><img src= "/customer-portal/img/18ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
