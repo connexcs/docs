@@ -38,12 +38,6 @@ This process involves two tokens:
 
 3. **Revoke Token**: If necessary, the Refresh Token can be revoked to prevent further use. This is typically done in cases where the user logs out, or the system detects a security issue.
 
-4. **Security Considerations**:
-
-    a. **HTTPS (TLS/SSL)** should always be used to protect tokens in transit.
-
-    b. Refresh Tokens should be stored securely.
-
 ## How to Add the JWT Keys?
 
 1. Login to your account.
