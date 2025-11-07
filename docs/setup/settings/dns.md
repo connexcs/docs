@@ -11,13 +11,18 @@ We provide a white-labeled `.sip.direct` domain name which you can use directly 
 
     This means at any point in the future, if you deploy a new server, scale up / down, migrate toward or away, there will be little to no disruption to customer service.
 
+!!! Info "Key Capabilities of DNS"
+    1. **Free subdomains** are included with our service offerings.
+    2. Efficiently **handles large-scale DNS queries** with high availability and fast response times.
+    3. **Low latency DNS changes** optimize configurations to reduce query resolution time.
+
 ## Domain Name System Setup
 
 Set up **DNS** to load balance multiple Session Initiation Protocol (SIP) servers without a load-balancer.
 
 1. Click :material-plus:.
 
-    ![alt text][dns]
+    <img src= "/setup/img/dns1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 2. Enter the **Domain** for your company.
 3. Use The **(TLD) Top Level Domain** `sip.direct` to create the full URL.
@@ -38,6 +43,7 @@ For example:
 + **A records**: The `A` record (pointing a domain such as `abc.com` to `13.224.230.90`) is the most common record in DNS.
 
     Select several `A` records to setup a round-robin DNS query. This is the simplest form of load-balancing.
+
 + **SRV records**: Unlike `A` records, `SRV` records send (mirror) data for the SIP client.
 
     The SIP client can then make an informed decision about which the servers to try and in what order.
@@ -88,4 +94,3 @@ It's possible to set up something like your customer on larger deployments where
 
 While this may be more work, it will allow you to shape your customers traffic distribution, perform A-B testing, etc.
 
-[dns]: /setup/img/dns.png "DNS load-balance"

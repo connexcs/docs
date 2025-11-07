@@ -43,9 +43,9 @@ The Warning limit must always be lower than the Critical limit. When one of the 
 Selecting Low or High mode defines the action taken when it reaches a Warning or Critical threshold.
 
 | Mode | Warning | Critical|
-|------|------------------------------------|--------------------------------------|
-| **Low**  | Call continues, shows in log only. | Calls blocked.                     |
-| **High** | Calls blocked.                   | Calls and account blocked. |
+|------|---------|---------|
+|**Low**|Call continues, shows in log only. Sends an alert.| Calls blocked.|
+|**High**|Calls blocked.| Calls and account blocked (manual intervention required).|
 
 ## Setup Fraud Detection
 

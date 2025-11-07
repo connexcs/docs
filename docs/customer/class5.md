@@ -6,6 +6,8 @@
 
 The customers can configure several functionalities in this area to enhance the user experience.
 
+Class 5 functionalities include various telephony and call-handling capabilities.
+
 + [**Directory**](https://docs.connexcs.com/class5/phonebook/): A list of all endpoints which a customer can dial.
 
 + [**Apps**](/class5/apps/): Allow customers to configure various features such as Pinless Calling or DNC (Do Not Call) lists. It includes the full functionality of Script Forge.
@@ -15,13 +17,13 @@ You can configure this in Class5 :material-menu-right: Apps.
 
 + [**Call Center**](https://docs.connexcs.com/class5/call-center/): The Call-Center feature uses a score-based approach to distribute calls, increasing a caller's score by 1 for every second they wait.
 
-+ [**IVR**](/class5/creating-ivr/): Presents callers with a menu and options for call routing.
++ [**IVR**](/class5/creating-ivr/): Automated response system. Presents callers with a menu and options for call routing.
 
-+ [**Groups**](/class5/creating-group/): Allow you to distribute inbound calls to a predefined team.
++ [**Groups**](/class5/creating-group/): Allow you to distribute inbound calls to a predefined team. Calls can be directed to multiple recipients:
+      + **Parallel Ringing**: All recipients are rung simultaneously.
+      + **Sequential Ringing**: Calls are tried one-by-one until answered.
+      + **Call Center Queues**: Calls are systematically distributed.
 
 + [**Voicemail**](/class5/voicemail/): Managed under specific customers or in a bulk view under Class5 :material-menu-right: Voicemail.
 
-+ [**Phonebook**](/class5/phonebook/): Allow all users to receive the same list of numbers within the customer, essentially a company directory.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjg5MjkxNjZdfQ==
--->
++ [**Phonebook**](/class5/phonebook/): Allow all users to receive the same list of numbers within the customer, essentially a company directory. It stores contact details for customers within their respective accounts. Accessible through the web phone interface.

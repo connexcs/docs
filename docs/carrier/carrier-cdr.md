@@ -4,7 +4,7 @@
 
 <img src= "/carrier/img/carriercdr.png">
 
-The **CDR (Call Detail Record)** is an extensive set of information that's collected and stored for each call. 
+The **CDR (Call Detail Record)** is an extensive set of information that's collected and stored for each call.
 This is primarily used for billing purposes as it contains details such as call duration and destination number.
 
 !!! note "Global CDR"
@@ -46,6 +46,8 @@ When viewing CDRs for a specific customer, use the **`Recalc CDR`** button to re
     |60(new duration)|0.0001|0.006|
 
 ![alt text][recalc]
+
+See [**Customer CDR**](https://docs.connexcs.com/customer/cdr/#recalculate-call-detail-record) for details.
 
 !!! danger "Rerating CDRs"
     If you select either "Rerate" options when recalculating CDRs, this will change your CDRs and isn't reversible.

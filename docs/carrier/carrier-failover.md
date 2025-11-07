@@ -2,6 +2,7 @@
 
 **Management :material-menu-right: Carrier :material-menu-right: Failover**
 
+
 ## Overview
 
 The **Failover** tab lists calls that failed with this carrier but connected with another carrier.
@@ -12,7 +13,8 @@ You can also use this to identify FAS (False Answer Supervision) billing fraud.
 
 Failover is a powerful feature that enables seamless call routing between multiple carriers to ensure connectivity and optimize performance.
 
-<img src= "/carrier/img/carrierfailover.png">
+
+<img src= "/carrier/img/carrierfailover.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! question "How Failover works?"
     1. Calls are initially routed through a primary carrier (e.g., Carrier B).

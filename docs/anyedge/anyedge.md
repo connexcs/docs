@@ -8,6 +8,18 @@ It's a next-generation solution for the Edge Session Initiation Protocol (SIP).
 
 It provides high-reliability and custom Call Distribution algorithms (Weights and Priorities).
 
+!!! Info "Global Redundancy"
+    Global redundancy in AnyEdge ensures high availability by distributing traffic across multiple edge servers located in different geographical regions.
+    This minimizes downtime and provides seamless service continuity even during outages or failures in any single location.
+
+Each customer benefits from a unique, dedicated IP address through AnyEdge
+
+Calls are routed to the nearest AnyEdge server for optimal performance and reduced latency.
+
+!!! Info "AnyEdge Features"
+    1. We provide 10,000+ CPS to all customers for optimal scalability and performance.
+    2. All our customers benefit from 100Gbps DDoS protection.
+
 ## AnyEdge Setup
 
 ### Configure AnyEdge
@@ -51,7 +63,13 @@ Click the :material-plus: button to set the following:
   
 * **Secondary Attempts**: (not useful for less than 3 servers) Set the number of attempts before going to a third zone.
 
-<img src= "/anyedge/anyedge12.png">
+<img src= "/anyedge/anyedge12.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+!!! Note "Increase AnyEdge Ports"
+    1. Login to your account.
+    2. Navigate to **Setup :material-menu-right: AnyEdge :material-menu-right: blue `+` icon :material-menu-right: modify CPS limit**.
+
+    <img src= "/anyedge/any45.png">
 
 ### AnyEdge Domain
 
@@ -63,7 +81,10 @@ It can provide added **Transport Layer Security (TLS)/ Secure Sockets Layer (SSL
 2. If you enable the **Verify Certificate** option, then it will verify the client's certificate.
 3. If you enable the **Require Certificate** option, it means the client should have the certificate.
 
-<img src= "/anyedge/anyedge13.png">
+<img src= "/anyedge/anyedge13.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+!!! Info "Custom TLS Ciphers & Curves"
+     ConnexCS AnyEdge supports custom TLS ciphers, cryptographic algorithms and elliptic curves, allowing administrators to precisely configure security protocols and ensure compatibility with specific client or server requirements.
 
 ### AnyEdge Destinations
 
@@ -78,7 +99,7 @@ Click :material-plus: button to specify the Destination IP, and one or more Limi
 * **Limit Zones**:  Limit Zones control access to specific servers within a load balancer. By defining limit zones, you restrict access to certain servers from designated zones. For example, if Sydney isn't added to the limit zone configuration, individuals from Sydney will be unable to access this designated server within the load balancer.
 * **Backup Zones**: Whenever the server of the main zone fails, the traffic will route to the zone selected in the Backup Zones field.
 
-<img src= "/anyedge/anyed1.png">
+<img src= "/anyedge/anyed1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Capabilities
 
@@ -154,7 +175,7 @@ The reasons why a packet fails to validate are:
 * No SIP message
 * Header Parsing error
 * No "Call-ID" header
-* No "Content-Length" header for transports that require it (for example, TCP
+* No "Content-Length" header for transports that require it (for example, TCP)
 * Invalid Content-Length, different from the size of the actual body
 * SDP body parsing error
 * No "Cseq" header
@@ -229,7 +250,7 @@ If you have a pool of several servers, you can proxy your communications via **A
 
 The UAS is pinging the AnyEdge Loadbalancer and further, the Loadbalancer passes the pings to the Opensips Servers. Further, the Opensips Servers reply to the Laodbalancer, and then the ping gets to the UAS. In case, any of the SIP servers are slow, it slows down the AnyEdge Loadbalancer as well. Thus, introducing Latency in the system.
 
-![any3](/anyedge/any3.jpg)
+<img src= "/anyedge/any3.jpg" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 Therefore, the AnyEdge SIP Ping Replies feature will help fix this issue. This feature will allow the AnyEdge Loadbalancer to reply to the UAS ping messages without passing them to the Opensips Server. This feature will fix the latency issue, and the application latency will be closer match to what we expect.
 
@@ -239,6 +260,6 @@ According to RFC 3261, there is a proper header Timestamp available. We include 
 
 ### How to Enable AnyEdge SIP Ping Replies
 
-1. Go to Setup :material-menu-right: AnyEdge and click on the `Edit` button.![any1](/anyedge/any1.jpg)
-2. You will a window, select the **AnyEdge SIP Ping Replies** from the dropdown in **Flags** to enable this feature.![any2](/anyedge/any2.jpg)
+1. Go to Setup :material-menu-right: AnyEdge and click on the `Edit` button. <img src= "/anyedge/any1.jpg" style="border: 2px solid #4472C4; border-radius: 8px;">
+2. You will a window, select the **AnyEdge SIP Ping Replies** from the dropdown in **Flags** to enable this feature. <img src= "/anyedge/any2.jpg" style="border: 2px solid #4472C4; border-radius: 8px;">
 3. Click on `Save`.
