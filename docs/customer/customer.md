@@ -132,7 +132,9 @@ The following sections will appear when you click on the `blue +` sign.
     + **Reseller**: Associate the customer to a preset Reseller Group (see [**Create Groups**](https://docs.connexcs.com/setup/settings/users/#groups) for more details.)
     + **Account Manager**: Designating the control of this account to a specific user.
     + **Invoice Schedule**: Specify frequency for invoice generation like Daily, Weekly or Monthly.
-    + **Flags**: Select the **Create Invoice on Payment** flag and if payment done then invoice will be generated.
+    + **Flags**: 
+        + Select the **Create Invoice on Payment** flag, and if the payment is made, an invoice will be generated automatically.
+        + **Allow inbound calls with zero balance**: When enabled, inbound calls will be allowed even if the customer’s balance is insufficient to make calls.
     + **Invoice Due Days**: Set the allowed number of days past the due date that the invoice can go unpaid. 
     + **Invoice Template**: Select from a list of existing Templates found in **Setup :material-menu-right: Config :material-menu-right: [Templates](/setup/config/templates/)**
     + **Ext.Accounting ID**: This is used to fill in work an external accounting field to correlate between Connexcs and the external accountancy system.
