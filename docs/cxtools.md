@@ -8,7 +8,10 @@ It is aimed at **developers**, **system administrators**, and **power users** wh
 
 CX-Tools exposes common operational tasks like script management, SQL queries, key‑value store access, deployments, and application management via a single, extensible CLI.
 
----
+!!! Info
+    Currently, CX-Tools is primarily targeted at development workflows. The CLI is functionally language-agnostic in how it interacts with ConnexCS services, however it requires the Node.js runtime because the tooling itself is implemented in **Node.js**.
+
+[Click here](https://www.npmjs.com/package/connexcs-tools) for more comprehensive documentation.
 
 ## Who is this for?
 
@@ -22,7 +25,8 @@ CX-Tools exposes common operational tasks like script management, SQL queries, k
 
 * **Installable via npm**: `npm install -g connecxcs-tools` (CLI binary: `cx`)
 * **Authentication via JWT + refresh token** (server issues 30‑day JWT; CX fetches short‑lived access tokens for requests)
-* **Script management**: `cx pull`, `cx push`, `cx run`
+* **To check all the available tools**: `cx run`
+* **Script management**: `cx pull`, `cx push`
 * **SQL query runner**: `cx sql "SELECT ..."
 * **Key‑Value store**: `cx kv:list`
 * **Output formatting options**:`CX_REFRESH_TOKEN="your_refresh_token_here"`
@@ -78,5 +82,68 @@ cx run 17194
 # hypothetical command once implemented
 cx api did upload --file my_dids.csv
 ```
+
+## Use Case: Debugging and Updating Cached Records via Key–Value Store
+
+* **Scenario:**
+A developer has implemented a custom number caching system that temporarily stores call-related data or lead information using the ConnexCS Key–Value (KV) store. Each dialed number is cached along with associated metadata (e.g., timestamp, lead details, or processing status).
+
+* **Objective:**
+To debug and inspect cached entries, verify stored values, and programmatically update specific records directly from the command line.
+
+* **Steps:**
+
+1. **List existing records**
+   Use the `cx kv:list` command to view all stored records.
+
+   ```bash
+   cx kv:list
+   ```
+
+   > ⚠️ This may return a large dataset; use filtering to narrow down results as needed.
+
+2. **Retrieve a specific record**
+   To inspect a particular record (for example, a cached number or lead ID):
+
+   ```bash
+   cx kv:get record
+   ```
+
+   **Example output**:
+
+   ```json
+   {
+     "message": "hello world",
+     "last_updated": "2025-11-07T10:20:00Z"
+   }
+   ```
+
+3. **Update the record value**
+   Modify a record programmatically by setting a new value:
+
+   ```bash
+   cx kv:set record -v "hello everyone"
+   ```
+
+   The system returns a confirmation indicating that the update request was processed successfully.
+
+4. **Verify the update**
+   Retrieve the record again to confirm the change:
+
+   ```bash
+   cx kv:get record
+   ```
+
+   **Expected result**:
+
+   ```json
+   {
+     "message": "hello everyone",
+     "last_updated": "2025-11-07T10:21:00Z"
+   }
+   ```
+
+* **Outcome:**
+Developers can efficiently inspect and update cached records from within the command-line interface without accessing the ConnexCS web UI. This enables rapid debugging, validation, and fine-tuning of applications that depend on temporary KV storage (such as number caches or lead capture systems).
 
 ---
