@@ -292,5 +292,6 @@ Configure the Emetec settings in ConnexCS:
 
 [paypal-9]: /setup/img/paypal-9.png "Paypal-9" style="border: 2px solid #4472C4; border-radius: 8px;"
 
-
 [paypal-9]: /setup/img/paypal-9.png "Paypal-9"
+
+.
