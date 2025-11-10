@@ -77,7 +77,7 @@ It involves configuring various elements to optimize outreach, customer service,
       3. `Agents Chart` **(*Only for Preview/Auto Dialer*)**: Shows the status of agents:
          1. `Call Active`: How many agents are currently on a call.
          2. `Agent Waiting`: How many agents are idle (ready and waiting for a call).
-         3. `Campaign Agents` **(*Only for Preview/Auto Dialer*)**: List of agents assigned to the campaign. <br>`Manage Agents` **(*Only for Preview/Auto Dialer*)**: Allows you to add/remove agents from the campaign from the drop-down menu. Click `Confirm`.</br> <br><img src= "/customer-portal/img/34ccnew.png" width = "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br> For example: The selected agents will be added. <br><img src= "/customer-portal/img/35ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+         3. `Campaign Agents` **(*Only for Preview/Auto Dialer*)**: List of agents assigned to the campaign. <br>`Manage Agents` **(*Only for Preview/Auto Dialer*)**: Allows you to add/remove agents from the campaign from the drop-down menu. Click `Confirm`.</br> <br><img src= "/customer-portal/img/34ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br> For example: The selected agents will be added. <br><img src= "/customer-portal/img/35ccnew.png" width = "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
          4. `Lead Stats`: It shows you the total number of leads loaded into the campaign and what stage they're currently at during the calling process.
          5. `Total Leads`: Everyone you plan to call.
          6. `Dialable Leads`: How many you still can call.

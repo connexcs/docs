@@ -8,7 +8,8 @@ You can specify how many agents will be assigned to the campaign and add them to
 
 Additionally, bulk agent creation allows you to quickly set up multiple agents at once.
 
-!!! warning "Creating Agents is **ONLY** for **Auto Dialer** and **Preview Dialer**".
+!!! warning "Please Note"
+      Creating Agents is **ONLY** for **Auto Dialer** and **Preview Dialer**".
 
 ## Steps to add the Agent
 
