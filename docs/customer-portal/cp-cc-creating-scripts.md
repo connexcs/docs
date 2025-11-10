@@ -1,10 +1,10 @@
 # Creating Scripts
 
-!!! warning "Creating Scripts is **ONLY** for **Auto Dialer** and **Preview Dialer**".
-
 ## Overview
 
 The Script section enables you to create structured call scripts for agents to follow during customer interactions.
+
+!!! warning "Creating Scripts is **ONLY** for **Auto Dialer** and **Preview Dialer**".
 
 ## Steps to create the Scripts
 

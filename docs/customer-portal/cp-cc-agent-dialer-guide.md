@@ -32,7 +32,7 @@ Both dialer types allow agents to manage live calls with features like hold, tra
          <img src="/customer-portal/img/60ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px; width: 100%;" alt="Auto Dialer">
          </div><div style="background-color: #f5f5f5a1; padding: 15px; border-radius: 8px; margin: 10px 0;">
          <h4 style="margin-top: 0; margin-bottom: 10px;">Preview Dialer</h4>
-         <img src="/customer-portal/img/39ccnre.png" style="border: 2px solid #4472C4; border-radius: 8px; width: 100%;" alt="Preview Dialer">
+         <img src="/customer-portal/img/39ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px; width: 100%;" alt="Preview Dialer">
          </div>
       6. `Contact information` of the customer sourced from the **uploaded Leadset** or entered manually via the **Lead Form**. The contact information of the customer will be updated after the agent receives the call.
       7. `Lead Preview` **(*Only for Preview Dialer*)**: Opens lead details for the agent.
