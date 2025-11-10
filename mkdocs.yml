@@ -285,7 +285,9 @@ nav:
         - Databases: apps/architecture/database.md
         - Domain: apps/architecture/domain.md
         - Key Value Store: apps/architecture/key-value.md
-        - Page Builder: apps/page-builder.md
+        - Page Builder:
+            - Page Builder: apps/page-builder.md
+            - Document Content Model: apps/architecture/dcm.md
         - Script Forge: apps/architecture/script.md
         - Template: apps/architecture/template.md
         - Query Builder: apps/architecture/query-builder.md
@@ -340,5 +342,3 @@ nav:
         - Preview Dialer: customer-portal/cp-cc-pd.md
         - Auto Dialer: customer-portal/cp-cc-ad.md
         - Broadcast Dialer: customer-portal/cp-cc-bd.md
-
-    
