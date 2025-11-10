@@ -42,7 +42,7 @@ It involves configuring various elements to optimize outreach, customer service,
 
          8. **Internal Destination** **(*Only for Broadcast Dialer*)**: Select your AI Agent from the drop-down menu.
 
-         9. **Agents** **(*Only for Preview/Auto Dialer*)**: Select agents for the Auto/Preview Dialer. <br><img src= "/customer-portal/img/adcampaign1.png" style="border: 2px solid #4472C4; border-radius: 8px;"><figcaption><b>Figure 1:</b> Auto Dialer Campaign</figcaption></br> <br><img src= "/customer-portal/img/cc15new1.png" style="border: 2px solid #4472C4; border-radius: 8px; padding: 20px;"></br><br><img src= "/customer-portal/img/66ccnew1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+         9. **Agents** **(*Only for Preview/Auto Dialer*)**: Select agents for the Auto/Preview Dialer. <br><img src= "/customer-portal/img/adcampaign1.png" style="border: 2px solid #4472C4; border-radius: 8px;"><figcaption>Figure 1: Auto Dialer Campaign</figcaption></br> <br><img src= "/customer-portal/img/cc15new1.png" style="border: 2px solid #4472C4; border-radius: 8px; padding: 20px;"></br><br><img src= "/customer-portal/img/66ccnew1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 5. Click on the `Confirm` button.
 
