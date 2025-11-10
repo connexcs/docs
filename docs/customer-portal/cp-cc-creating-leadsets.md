@@ -34,11 +34,11 @@ This section has information on the Leadsets. You can also `Create Leadset` . <b
 
 ### Uploading a File
 
-1. Drag and Drop a file or click to upload the `.csv`. <br><img src= "/customer-portal/img/70ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "/customer-portal/img/51ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "/customer-portal/img/25ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-2. A new window will open where two actions must be completed to create the leadset. <br><img src="/customer-portal/img/71ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src="/customer-portal/img/26ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src="/customer-portal/img/52ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-3. `Set row`: To indicate where the upload should start. `Right-click` on the row to want to start the uploading and click on `Set Start Row`. <br><img src="/customer-portal/img/72ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src="/customer-portal/img/27ccnew.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-4. `Map Table Columns`: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. `Right-click` on the column you wish to be mapped, click on `Map Column` then `Phone` (required field) and `Status` (required field). Click on `Upload`. This will upload the leadset data to the server. <br><img src="/customer-portal/img/73ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br> <img src="/customer-portal/img/74ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"><br><img src="/customer-portal/img/28ccnew.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br> <img src="/customer-portal/img/29ccnew.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;">
-5. The leadset gets uploaded successfully. <br><img src="/customer-portal/img/75ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src="/customer-portal/img/36ccnew.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src="/customer-portal/img/56ccnew.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+1. Drag and Drop a file or click to upload the `.csv`. <br><img src= "/customer-portal/img/70ccnew1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+2. A new window will open where two actions must be completed to create the leadset. <br><img src="/customer-portal/img/71ccnew1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+3. `Set row`: To indicate where the upload should start. `Right-click` on the row to want to start the uploading and click on `Set Start Row`.
+4. `Map Table Columns`: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. `Right-click` on the column you wish to be mapped, click on `Map Column` then `Phone` (required field) and `Status` (required field). Click on `Upload`. This will upload the leadset data to the server. <br><img src="/customer-portal/img/72ccnew1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br> <br><img src="/customer-portal/img/73ccnew1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+5. The leadset gets uploaded successfully. <br><img src="/customer-portal/img/75ccnew1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 6. The leadset dashboard now displays total uploaded leads and dialable leads as well. <br><img src="/customer-portal/img/76cc.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src="/customer-portal/img/37ccnew.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src="/customer-portal/img/87cc.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 7. **Continue to Modify**: If you click here, it will redirect to the Data Suite. [Click here](https://docs.connexcs.com/datasuite/) to know more.
 8. **Edit Leadset**: Modify the details of an existing Leadset. The system will present the same interface as `Create Leadset`.
@@ -70,7 +70,7 @@ This section has information on the Leadsets. You can also `Create Leadset` . <b
 
 ### Uploading via URL
 
-1. Enter the URL in the CSV format and hit the Upload button. <br><img src="/customer-portal/img/77ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src="/customer-portal/img/29cc.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src="/customer-portal/img/57ccnew.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+1. Enter the URL in the CSV format and hit the Upload button. <br><img src="/customer-portal/img/77ccnew1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 2. Follow the same process as described in the **Upload via File** section, starting from **Step 2** through to the final step.
 
 ### Uploading via Text
@@ -85,7 +85,7 @@ This section has information on the Leadsets. You can also `Create Leadset` . <b
         10801, New
         ```
 
-    2. Click on `Upload`. <br><img src="/customer-portal/img/bd2.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+    2. Click on `Upload`. <br><img src="/customer-portal/img/bd21.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
     
     3. Follow the same process as described in the **Upload via File/Upload via URL** section, starting from **Step 2** through to the final step.
 
@@ -101,6 +101,6 @@ This section has information on the Leadsets. You can also `Create Leadset` . <b
         44119, Ready
         ```
 
-    2. Click on `Upload`. <br><img src="/customer-portal/img/32cc.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br><img src="/customer-portal/img/1ad.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+    2. Click on `Upload`. </br><img src="/customer-portal/img/1ad1.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
     3. Follow the same process as described in the **Upload via File/Upload via URL** section, starting from **Step 2** through to the final step.

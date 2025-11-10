@@ -337,11 +337,11 @@ nav:
         - Contact Center Setup & Usage Guide: customer-portal/cp-cc-install.md
         - Dialer Dashboard: customer-portal/cp-cc-dialer-dashboard.md
         - Setting Up the Dialer: customer-portal/cp-cc-setting-up-dialer.md
-        - Campaign Creation: customer-portal/cp-cc-campaign.md
-        - Agent Creation: customer-portal/cp-cc-creating-agents.md
-        - Script Creation: customer-portal/cp-cc-creating-scripts.md
-        - Leadset Creation: customer-portal/cp-cc-creating-leadsets.md
-        - Agent Dialer Guide: customer-portal/cp-cc-agent-dialer-guide.md
+            - Campaign Creation: customer-portal/cp-cc-campaign.md
+            - Agent Creation: customer-portal/cp-cc-creating-agents.md
+            - Script Creation: customer-portal/cp-cc-creating-scripts.md
+            - Leadset Creation: customer-portal/cp-cc-creating-leadsets.md
+            - Agent Dialer Guide: customer-portal/cp-cc-agent-dialer-guide.md
 
 
     

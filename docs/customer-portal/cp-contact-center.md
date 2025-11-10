@@ -70,9 +70,11 @@ The agent gets enough time to review and decide whether to call the person and h
 
 ### Broadcast Dialer (AI Agent)
 
-A Broadcast Dialer is an automated outbound calling system where an AI Agent initiates and handles the entire interaction with the customer. This dialer involves no human intervention.
+A Broadcast Dialer is an automated outbound calling system where an AI Agent initiates and manages the entire interaction with the customer — without any human intervention.
 
 Once activated, the system starts dialing contacts in bulk. The AI Agent engages with each person using natural conversation, guided by a predefined script and logic.
+
+In addition to AI-driven interactions, the Broadcast Dialer also supports **IVR (Interactive Voice Response)**, allowing customers to respond to prompts (e.g., by pressing keypad numbers) for routing, surveys, confirmations, or other automated workflows.
 
 You can create your own personal AI Agent. [Click here](https://docs.connexcs.com/class5/ai-agent/) to know more.
 
