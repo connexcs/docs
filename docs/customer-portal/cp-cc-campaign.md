@@ -42,32 +42,44 @@ It involves configuring various elements to optimize outreach, customer service,
 
          8. **Internal Destination** **(*Only for Broadcast Dialer*)**: Select your AI Agent from the drop-down menu.
 
-         9. **Agents** **(*Only for Preview/Auto Dialer*)**: Select agents for the Auto/Preview Dialer. <br><img src= "/customer-portal/img/adcampaign1.png" style="border: 2px solid #4472C4; border-radius: 8px;"><figcaption>Figure 1: Auto Dialer Campaign</figcaption></br> <br><img src= "/customer-portal/img/cc15new1.png" style="border: 2px solid #4472C4; border-radius: 8px; padding: 20px;"></br><br><img src= "/customer-portal/img/66ccnew1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+         9. **Agents** **(*Only for Preview/Auto Dialer*)**: Select agents for the Auto/Preview Dialer. <div style="background-color: #f5f5f5a1; padding: 15px; border-radius: 8px; margin: 10px 0;">
+         <h4 style="margin-top: 0; margin-bottom: 10px;">Auto Dialer Campaign</h4>
+         <img src="/customer-portal/img/adcampaign1.png" style="border: 2px solid #4472C4; border-radius: 8px; width: 100%;" alt="Auto Dialer Campaign Configuration">
+         </div> <div style="background-color: #f5f5f5a1; padding: 15px; border-radius: 8px; margin: 10px 0;">
+         <h4 style="margin-top: 0; margin-bottom: 10px;">Preview Dialer Campaign</h4>
+         <img src="/customer-portal/img/cc15new1.png" style="border: 2px solid #4472C4; border-radius: 8px; width: 100%;" alt="Preview Dialer Campaign Setup">
+         </div><div style="background-color: #f5f5f5a1; padding: 15px; border-radius: 8px; margin: 10px 0;">
+         <h4 style="margin-top: 0; margin-bottom: 10px;">Broadcast Dialer Campaign</h4>
+         <img src="/customer-portal/img/66ccnew1.png" style="border: 2px solid #4472C4; border-radius: 8px; width: 100%;" alt="Broadcast Dialer Campaign Interface">
+         </div>
 
 5. Click on the `Confirm` button.
-
-!!! Info "Custom Disposition Information"
-      `DO NOT CALL`, `NOT INTERESTED`, `SALE MADE`, `CALL TRANSFERRED`, `BUSY`, `CALL BACK`, `DISCONNECTED NUMBER`, `DECLINED SALE`, `WRONG DETAILS` — Predefined Disposition Statuses.
-
-      Users can create custom source statuses and dispositions while creating or updating campaigns.
-
 6. Click on `See More` in the `Details` column.
-7. A `Campaign Overview` will open. This interface is used for real-time monitoring of campaigns, lead stats, agent statuses, and calling activity. <br><img src= "/customer-portal/img/88cc.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br> <br><img src="/customer-portal/img/89ccnew.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "/customer-portal/img/pdcampaign1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+7. A `Campaign Overview` will open. This interface is used for real-time monitoring of campaigns, lead stats, agent statuses, and calling activity.<div style="background-color: #f5f5f5a1; padding: 15px; border-radius: 8px; margin: 10px 0;">
+         <h4 style="margin-top: 0; margin-bottom: 10px;">Auto Dialer Campaign</h4>
+         <img src="/customer-portal/img/88cc.png" style="border: 2px solid #4472C4; border-radius: 8px; width: 100%;" alt="Auto Dialer Campaign Configuration">
+         </div> <div style="background-color: #f5f5f5a1; padding: 15px; border-radius: 8px; margin: 10px 0;">
+         <h4 style="margin-top: 0; margin-bottom: 10px;">Preview Dialer Campaign</h4>
+         <img src="/customer-portal/img/89ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px; width: 100%;" alt="Preview Dialer Campaign Setup">
+         </div><div style="background-color: #f5f5f5a1; padding: 15px; border-radius: 8px; margin: 10px 0;">
+         <h4 style="margin-top: 0; margin-bottom: 10px;">Broadcast Dialer Campaign</h4>
+         <img src="/customer-portal/img/pdcampaign1.png" style="border: 2px solid #4472C4; border-radius: 8px; width: 100%;" alt="Broadcast Dialer Campaign Interface">
+         </div>
 8. `State`: Whether the campaign is `Active` or `Inactive`.
-9. `Edit Campaign`: Open the campaign settings for editing.
+9.  `Edit Campaign`: Open the campaign settings for editing.
 `Back`: Return to the previous page.
-10. `Campaign Stats`: Provides real-time visual insights into the current status of the campaign's calling activities and agent activities.
+1.  `Campaign Stats`: Provides real-time visual insights into the current status of the campaign's calling activities and agent activities.
 
       1. `Callers Chart`: Shows the current distribution of calls:
          1. `Call In Progress`: How many calls are actively happening (agents talking to leads).
          2. `Call Waiting`: How many calls are waiting to be connected.
       2. `Refresh Button`: To update agent statuses.
-11. `Agents Chart` **(*Only for Preview/Auto Dialer*)**: Shows the status of agents:
+2.  `Agents Chart` **(*Only for Preview/Auto Dialer*)**: Shows the status of agents:
          1. `Call Active`: How many agents are currently on a call.
          2. `Agent Waiting`: How many agents are idle (ready and waiting for a call).
-12. `Campaign Agents` **(*Only for Preview/Auto Dialer*)**: List of agents assigned to the campaign. <br>`Manage Agents` **(*Only for Preview/Auto Dialer*)**: Allows you to add/remove agents from the campaign from the drop-down menu. Click `Confirm`.</br> <br><img src= "/customer-portal/img/34ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+3.  `Campaign Agents` **(*Only for Preview/Auto Dialer*)**: List of agents assigned to the campaign. <br>`Manage Agents` **(*Only for Preview/Auto Dialer*)**: Allows you to add/remove agents from the campaign from the drop-down menu. Click `Confirm`.</br> <br><img src= "/customer-portal/img/34ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 For example: The selected agents will be added. <br><img src= "/customer-portal/img/35ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-13. `Lead Stats`: It shows you the total number of leads loaded into the campaign and what stage they're currently at during the calling process.
+1.  `Lead Stats`: It shows you the total number of leads loaded into the campaign and what stage they're currently at during the calling process.
 
       1. `Total Leads`: Everyone you plan to call.
 
@@ -81,7 +93,7 @@ For example: The selected agents will be added. <br><img src= "/customer-portal/
 
       6. `Dropped Calls`: Calls that got disconnected unexpectedly.
       7. `Agents in Queue` **(*Only for Auto/Preview Dialer*)**: Displays a list of agents who are waiting for a call or are ready to be assigned a call in the campaign.
-14.  `Campaign Active Calls` **(*Only for Broadcast Dialer*)**: Allows you to monitor real-time performance and volume.
+2.   `Campaign Active Calls` **(*Only for Broadcast Dialer*)**: Allows you to monitor real-time performance and volume.
 
       1. `Phone`: The phone number being called.
 
@@ -90,3 +102,7 @@ For example: The selected agents will be added. <br><img src= "/customer-portal/
       3. `Call ID`: A unique identifier for tracking or logging the call.
 
       4. `Call Status`: The current state (e.g., Ringing, Connected, In Progress, Completed, Failed).
+
+!!! Info "Custom Disposition Information"
+      `DO NOT CALL`, `NOT INTERESTED`, `SALE MADE`, `CALL TRANSFERRED`, `BUSY`, `CALL BACK`, `DISCONNECTED NUMBER`, `DECLINED SALE`, `WRONG DETAILS` — Predefined Disposition Statuses.
+      Users can create custom source statuses and dispositions while creating or updating campaigns.

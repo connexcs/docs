@@ -19,11 +19,24 @@ This section has information on the Leadsets. You can also `Create Leadset` . <b
     2. Pen-down any required `Description`.
     3. Select the `Campaign` from the drop-down for which you wish to associate the leadset.
     4. **State**: Configure the leadset’s operational status by setting it to either Active (available for assignment and dialing) or Inactive (disabled or paused).
-    5. Click on `Confirm` to create the leadset. <br><img src= "/customer-portal/img/67ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "/customer-portal/img/48ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "/customer-portal/img/22ccnew1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+    5. Click on `Confirm` to create the leadset. <div style="background-color: #f5f5f5a1; padding: 15px; border-radius: 8px; margin: 10px 0;">
+         <h4 style="margin-top: 0; margin-bottom: 10px;">Broadcast Dialer Leadset Configuration</h4>
+         <img src="/customer-portal/img/67ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px; width: 100%;" alt="Broadcast Dialer Leadset Configuration">
+         </div>
+
+         <div style="background-color: #f5f5f5a1; padding: 15px; border-radius: 8px; margin: 10px 0;">
+         <h4 style="margin-top: 0; margin-bottom: 10px;">Auto Dialer Leadset Configuration</h4>
+         <img src="/customer-portal/img/48ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px; width: 100%;" alt="Auto Dialer Leadset Configuration">
+         </div>
+
+         <div style="background-color: #f5f5f5a1; padding: 15px; border-radius: 8px; margin: 10px 0;">
+         <h4 style="margin-top: 0; margin-bottom: 10px;">Preview Dialer Leadset Configuration</h4>
+         <img src="/customer-portal/img/22ccnew1.png" style="border: 2px solid #4472C4; border-radius: 8px; width: 100%;" alt="Preview Dialer Leadset Configuration">
+         </div>
 
 2. Click on `See More` in the `Details` column. <br><img src= "/customer-portal/img/69ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-3. **A Leadset Dashboard** monitoring window will appear which displays the metrics of the leadset.(**Note: This image does not represent the dashboard after it has fully loaded**). <br><img src= "/customer-portal/img/24cc.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br> <br><img src= "/customer-portal/img/bd1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "/customer-portal/img/50ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+3. **A Leadset Dashboard** monitoring window will appear which displays the metrics of the leadset.(**Note: This image does not represent the dashboard after it has fully loaded**). <br><img src= "/customer-portal/img/24ccnew12.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 4. Description of the fields in the stats window:
        1. `Status`: Set the leadset to `Active` or `Inactive` state.
@@ -75,32 +88,14 @@ This section has information on the Leadsets. You can also `Create Leadset` . <b
 
 ### Uploading via Text
 
-=== "Broadcast Dialer"
+1. Enter the text in the following format:
+    ```bash
+    Column 1,Column 2,   
+    Phone, Status
+    10800, New
+    10801, New
+     ```
 
-    1. Enter the text in the following format:
-        ```bash
-        Column 1,Column 2,   
-        Phone, Status
-        10800, New
-        10801, New
-        ```
+2. Click on `Upload`. <br><img src="/customer-portal/img/bd21new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-    2. Click on `Upload`. <br><img src="/customer-portal/img/bd21.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-    
-    3. Follow the same process as described in the **Upload via File/Upload via URL** section, starting from **Step 2** through to the final step.
-
-=== "Preview/Auto Dialer"
-
-    1. Enter the text in the following format:
-        ```bash
-        Column 1,Column 2,
-        Phone, Status
-        44116, Ready
-        44117, Ready
-        44118, Ready
-        44119, Ready
-        ```
-
-    2. Click on `Upload`. </br><img src="/customer-portal/img/1ad1.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-
-    3. Follow the same process as described in the **Upload via File/Upload via URL** section, starting from **Step 2** through to the final step.
+3. Follow the same process as described in the **Upload via File/Upload via URL** section, starting from **Step 2** through to the final step.
