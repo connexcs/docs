@@ -1,6 +1,6 @@
 # Creating Scripts
 
-!!! warning "Creating Scripts is **ONLY** for **Auto Dialer** and **Preview Dialer**"
+!!! warning "Creating Scripts is **ONLY** for **Auto Dialer** and **Preview Dialer**".
 
 ## Overview
 
