@@ -18,10 +18,8 @@ Both dialer types allow agents to manage live calls with features like hold, tra
 2. Select the campaign `Auto Dialer/Preview Dialer` from the drop-down menu and click `Confirm`. <div style="background-color: #f5f5f5a1; padding: 15px; border-radius: 8px; margin: 10px 0;">
          <h4 style="margin-top: 0; margin-bottom: 10px;">Auto Dialer</h4>
          <img src="/customer-portal/img/59ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px; width: 100%;" alt="Auto Dialer Campaign Configuration">
-         </div><div style="background-color: #f5f5f5a1; padding: 15px; border-radius: 8px; margin: 10px 0;">
-         <h4 style="margin-top: 0; margin-bottom: 10px;">Preview Dialer</h4>
-         <img src="/customer-portal/img/38cc.png" style="border: 2px solid #4472C4; border-radius: 8px; width: 100%;" alt="Auto Dialer Campaign Configuration">
          </div>
+
 3. An Agent Dialer interface with the following fields will appear:
       1. `Agent Status` toggle **(*Only for Auto Dialer*)**: Make sure its `enabled (green)`, meaning the agent is active and ready to take calls
       2. `Selected Campgain` from the drop-down menu.

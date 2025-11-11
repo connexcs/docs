@@ -24,15 +24,8 @@ This section has information on the Leadsets. You can also `Create Leadset` . <b
          <img src="/customer-portal/img/67ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px; width: 100%;" alt="Broadcast Dialer Leadset Configuration">
          </div>
 
-         <div style="background-color: #f5f5f5a1; padding: 15px; border-radius: 8px; margin: 10px 0;">
-         <h4 style="margin-top: 0; margin-bottom: 10px;">Auto Dialer Leadset Configuration</h4>
-         <img src="/customer-portal/img/48ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px; width: 100%;" alt="Auto Dialer Leadset Configuration">
-         </div>
-
-         <div style="background-color: #f5f5f5a1; padding: 15px; border-radius: 8px; margin: 10px 0;">
-         <h4 style="margin-top: 0; margin-bottom: 10px;">Preview Dialer Leadset Configuration</h4>
-         <img src="/customer-portal/img/22ccnew1.png" style="border: 2px solid #4472C4; border-radius: 8px; width: 100%;" alt="Preview Dialer Leadset Configuration">
-         </div>
+         !!! Note
+             Please note for `Auto` or `Preview` Dialer, select their respective `Campaigns`.  
 
 2. Click on `See More` in the `Details` column. <br><img src= "/customer-portal/img/69ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
