@@ -61,6 +61,8 @@ markdown_extensions:
 nav:
   - Cloudswitch:
     - Home: index.md
+    - LLM Index: llm-index.md
+    - Common Workflows: workflows-guide.md
     - Customer Support: reporting-problems.md
     - Getting Started: getting-started.md
     - Dashboard : dashboard.md
