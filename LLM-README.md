@@ -82,6 +82,20 @@ This documentation repository has been enhanced with structured metadata, relati
 
 **Usage:** Provides quick context about each document's purpose, audience, and relationships.
 
+### 5. **docs/llm-editing-reference.md** - LLM Editing Reference Guide
+
+**Purpose:** Enforce consistency and quality across all LLM-driven edits
+
+**Contains:**
+
+- Core editing principles and tone guidelines
+- Structural standards and metadata template
+- Cross-linking and glossary rules
+- Fact-checking hierarchy and ambiguity handling
+- Commit/PR conventions and a pre-merge quality checklist
+
+**Usage:** LLMs and contributors MUST follow this when creating or modifying documentation. Reference before proposing large refactors.
+
 ## Existing Enhanced Files
 
 ### **docs/acronyms-and-definitions.md** - Comprehensive Glossary

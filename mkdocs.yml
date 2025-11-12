@@ -62,6 +62,7 @@ nav:
   - Cloudswitch:
     - Home: index.md
     - LLM Index: llm-index.md
+    - LLM Editing Reference: llm-editing-reference.md
     - Common Workflows: workflows-guide.md
     - Customer Support: reporting-problems.md
     - Getting Started: getting-started.md
