@@ -1,0 +1,48 @@
+# ConnexCS Documentation LLM Index (Machine Readable)
+version: 2025-11-13
+format: v1
+source: moved-from-.well-known
+
+[files]
+llm_editing_reference: docs/llm-editing-reference.md
+relationships: doc-relationships.yml
+glossary: docs/acronyms-and-definitions.md
+workflows: docs/workflows-guide.md
+style_guide: doc-style-guide.md
+
+[classification]
+setup: ["docs/getting-started.md", "docs/setup/settings/account.md"]
+routing: ["docs/routing.md", "docs/routing-strategy.md", "docs/global-routing.md", "docs/routing-usa.md"]
+billing: ["docs/billing.md", "docs/credit-control.md", "docs/billing-basics.md"]
+api: ["docs/api.md"]
+troubleshooting: ["docs/reporting-problems.md", "docs/guides/tshoot-signal.md", "docs/guides/tshoot-media.md"]
+class5: ["docs/class5/class5-intro.md", "docs/class5/creating-ivr.md", "docs/class5/voicemail.md"]
+security: ["docs/security.md"]
+scaling: ["docs/scaling-load-balancing.md"]
+compliance: ["docs/setup/information/stir-shaken.md", "docs/guides/gdpr.md"]
+
+[workflows]
+initial_setup: "workflows-guide.md#initial-platform-setup"
+api_integration: "workflows-guide.md#api-integration-setup"
+ivr_setup: "workflows-guide.md#configuring-ivr"
+fraud_prevention: "workflows-guide.md#setting-up-fraud-prevention"
+troubleshoot_call_connection: "workflows-guide.md#troubleshooting-call-connection-issues"
+
+[rules]
+rule_1: "Verify user role before deep technical answer."
+rule_2: "Cite section anchors for procedural steps."
+rule_3: "Offer next-step doc based on relationships mapping."
+rule_4: "Never fabricate feature; flag uncertainty."
+rule_5: "Use glossary for terminology; do not redefine."
+rule_6: "Check prerequisites before suggesting advanced doc."
+rule_7: "Return estimated difficulty/time if metadata present."
+
+[metadata_fields]
+fields: ["category", "audience", "difficulty", "time_required", "prerequisites", "related", "next_steps", "last_reviewed", "llm_validation"]
+
+[maintenance]
+update_sequence: ["add_doc", "update_llm_index", "update_relationships", "add_metadata", "validate_links", "quality_check"]
+quality_checklist_ref: "docs/llm-editing-reference.md#13-llm-quality-checklist-apply-before-marking-complete"
+
+[notes]
+contact: "Documentation Team"

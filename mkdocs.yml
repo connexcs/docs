@@ -1,5 +1,5 @@
 site_name: ConnexCS Documentation
-site_url: https://www.connexcs.com
+site_url: https://docs.connexcs.com
 site_description: Connex Cloud Softswitch
 site_author: ConnexCS Team
 google_analytics: ['UA-155210453-1', 'docs.connexcs.com']
@@ -61,8 +61,6 @@ markdown_extensions:
 nav:
   - Cloudswitch:
     - Home: index.md
-    - LLM Index: llm-index.md
-    - LLM Editing Reference: llm-editing-reference.md
     - Common Workflows: workflows-guide.md
     - Customer Support: reporting-problems.md
     - Getting Started: getting-started.md

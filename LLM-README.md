@@ -11,19 +11,16 @@ This documentation repository has been enhanced with structured metadata, relati
 
 ## New Files Added
 
-### 1. **docs/llm-index.md** - Master Documentation Index
-**Purpose:** Comprehensive navigation guide for LLMs
+### 1. Machine Index (`/.well-known/llms.txt`)
+**Purpose:** Single machine-readable entry point (replaces removed `llm-index.md`).
 
-**Contains:**
-- Quick navigation by user intent
-- Document hierarchy by category
-- Common use cases with mapped workflows
-- Search keywords mapped to relevant documents
-- Technical concepts and terminology
-- Document relationships and dependencies
-- Platform section breakdown
+**Contains (consolidated):**
+- File path map (editing reference, relationships, glossary, workflows, style guide)
+- Category → document arrays
+- Workflow anchor references
+- Response rules and metadata field list
 
-**Usage:** LLMs should reference this first when users ask general questions about the platform or when trying to locate specific documentation.
+**Usage:** Fetch this file first for routing user intent. Eliminating the separate Markdown index reduces public surface area.
 
 ### 2. **doc-relationships.yml** - Document Dependency Mapping
 **Purpose:** Machine-readable relationship data
@@ -82,9 +79,9 @@ This documentation repository has been enhanced with structured metadata, relati
 
 **Usage:** Provides quick context about each document's purpose, audience, and relationships.
 
-### 5. **docs/llm-editing-reference.md** - LLM Editing Reference Guide
+### 4. **docs/llm-editing-reference.md** - LLM Editing Reference Guide (Hidden)
 
-**Purpose:** Enforce consistency and quality across all LLM-driven edits
+**Purpose:** Enforce consistency and quality across all LLM-driven edits (not in public nav)
 
 **Contains:**
 
@@ -94,7 +91,7 @@ This documentation repository has been enhanced with structured metadata, relati
 - Fact-checking hierarchy and ambiguity handling
 - Commit/PR conventions and a pre-merge quality checklist
 
-**Usage:** LLMs and contributors MUST follow this when creating or modifying documentation. Reference before proposing large refactors.
+**Usage:** MUST be followed for any automated or assisted edit. Discoverable via machine index; excluded from human navigation.
 
 ## Existing Enhanced Files
 
@@ -107,8 +104,8 @@ Already exists and contains extensive terminology. LLMs should reference this fo
 
 ## How LLMs Should Use These Files
 
-### For General Questions:
-1. Check **llm-index.md** for topic location
+### For General Questions (Use Machine Index):
+1. Consult `/.well-known/llms.txt` for category mapping
 2. Review relevant document category
 3. Check **doc-relationships.yml** for context
 4. Reference **acronyms-and-definitions.md** for terminology
@@ -124,8 +121,8 @@ Already exists and contains extensive terminology. LLMs should reference this fo
 2. Check document metadata for context
 3. Provide examples from relevant documents
 
-### For Navigation Help:
-1. Use **llm-index.md** search keywords section
+### For Navigation Help (Machine Index):
+1. Use `/.well-known/llms.txt` category and workflow listings
 2. Match user intent to document categories
 3. Check difficulty level in **doc-relationships.yml**
 4. Suggest appropriate starting point
@@ -302,3 +299,21 @@ Potential improvements to consider:
 ---
 
 **Note:** These improvements are designed to be transparent to human readers while providing enhanced context for AI systems. They do not change the core documentation content or user experience.
+
+## Machine-Readable Index
+
+The canonical machine-readable entry point for LLM tooling is served at `/.well-known/llms.txt` (source file: `docs/well-known/llms.txt` with Netlify redirect). It contains:
+
+- Path map for index, relationships, glossary, workflows, style & editing reference
+- Category-to-document arrays
+- Workflow anchor references
+- Core response rules
+- Expected metadata field names
+
+Update sequence for major additions:
+1. Add or modify doc
+2. Update `docs/llm-index.md`
+3. Update `doc-relationships.yml`
+4. Amend `docs/well-known/llms.txt`
+5. Run link & anchor validation
+6. Apply quality checklist

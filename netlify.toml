@@ -1,3 +1,4 @@
+## Deprecated Netlify configuration retained only for history. Redirects now handled by Cloudflare Pages `_redirects` file.
 [[redirects]]
 from = "/en/latest*"
 to = "/"
