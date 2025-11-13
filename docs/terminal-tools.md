@@ -1,8 +1,8 @@
-# CX-Tools
+# Terminal Tools
 
 ## Overview
 
-**CX-Tools ("cx")** is the official ConnexCS **Command‑Line Interface (CLI)** that provides a compact, scriptable, and developer‑friendly modality to interact with ConnexCS services.
+**CX-Tools ("cx")/Terminal Tools**is the official ConnexCS **Command‑Line Interface (CLI)** that provides a compact, scriptable, and developer‑friendly modality to interact with ConnexCS services.
 
 It is aimed at **developers**, **system administrators**, and **power users** who prefer working in terminal environments.
 

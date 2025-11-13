@@ -14,12 +14,16 @@ To create a new App:
 3. Fill in the following details for the application.
     + **Name**: Enter the name of the application.
     + **Customer**: Select the customer from the drop-down list. By default, the app is available to all the customers.
-    + **App Type**: Select the type of app you want to create from the drop-down Call Flow or ConneXML.
+    + **App Type**: Select the type of app you want to create from the drop-down **Call Flow** or **ConneXML**.
     + **Destination**: Enter the Extension for the callers to call (essentially, the dial-in number).
     + **PBX Server**: Select the relevant server for your customer.
 4. Click **`Save`**.
 
-<img src= "/class5/img/apps1.png" style="border: 2px solid #4472C4; border-radius: 8px;"> 
+<img src= "/class5/img/apps1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+## Call Flow
+
+
 
 ## Advanced Applications
 
