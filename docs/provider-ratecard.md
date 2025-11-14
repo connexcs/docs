@@ -24,11 +24,11 @@ Before configuring Provider Rate Cards, we suggest you review [**Rate Card Overv
 
 ## Provider Rate Card Grid
 
-### Available Options
-
 When you open the **Provider Rate Card** section, the initial screen presents a grid listing all the provider rate cards you’ve created.
 
 This serves as your primary management dashboard, allowing you to quickly search, review, edit, or delete any existing rate card.
+
+### Available Options
 
 + **Create New**: Click the `+` icon to create a new provider rate card.
 
@@ -69,24 +69,27 @@ Once created, you can either add rows manually or upload an existing file for th
 1. **Step 1**
 
 a. When you click the `+` icon, a `Create New` Provider Rate Card window appears.
+
 b. This window is divided into three sections **Basic**, **Config**, and **Advanced** where you define the core properties of the card.
+
 c. You only need to complete a few key fields to get started.
+
 d. Once the card is saved, you can explore detailed configuration options in the next section which is the [Properties Section](https://docs.connexcs.com/provider-ratecard/#properties-tab).
 
-    **Required fields**:
+e. **Required fields**:
 
-    |Field|Description|Example|
-    |-----|-----------|-------|
-    |**Name (Private)**| Internal label used to identify the rate card| Carrier-XYZ_Nov2025|
-    |**Provider / Carrier**|Select your upstream provider| Carrier XYZ Ltd|
+|Field|Description|Example|
+|-----|-----------|-------|
+|**Name (Private)**| Internal label used to identify the rate card| Carrier-XYZ_Nov2025|
+|**Provider / Carrier**|Select your upstream provider| Carrier XYZ Ltd|
 
-e. Click on `Save`. (Once it’s saved, new configuration sections will appear.)
+f. Click on `Save`. (Once it’s saved, new configuration sections will appear.)
 
-f. At this stage, your rate card is created but not yet functional it doesn’t have any rate data.
+g. At this stage, your rate card is created but not yet functional it doesn’t have any rate data.
 
-g. Once saved, the interface will expand to show additional tabs such as **Bulk Upload**, **Create draft** , **Revisions**, and **Properties**.
+h. Once saved, the interface will expand to show additional tabs such as **Bulk Upload**, **Create draft** , **Revisions**, and **Properties**.
 
-    **This next stage is where you’ll add rate data and complete the configuration.**
+**This next stage is where you’ll add rate data and complete the configuration.**
 
 2. **Step 2**
 
@@ -99,18 +102,24 @@ b. Two primary options are now visible:
    + **Manual Create**: Add prefixes and rates one by one directly in the interface.
 
 c. **Bulk Upload**: The preferred method for adding a Rate Card is to import/upload it:
+
    1. Click **`Bulk Upload`**, then **`Upload`**.
+
    2. Select the file, typically sent by the Provider in CSV format (if not provided as CSV, conversion required before proceeding).
+
    3. Right-click on the first row of data and select "Set Start Row."
+
    4. Right-click and map the columns. It's important to map all fields based on the Rate Card columns. For example:
-       + Col 1 - Prefix
-       + Col 2 - Name
-       + Col 3 - Cost
+      1. Col 1 - Prefix
+      2. Col 2 - Name
+      3. Col 3 - Cost
+
    5. Choose **`Upload to Sever`** and confirm the upload.
+
    6. Select whether to make this active instantly.
 
-        !!! danger "Manually generated cards"
-            When users create Provider Rate Card CSV files manually in Excel (rather than generating them from a rate card management system), they may introduce errors such as empty rows or duplicate prefixes, which could cause the file upload to error.
+    !!! danger "Manually generated cards"
+        When users create Provider Rate Card CSV files manually in Excel (rather than generating them from a rate card management system), they may introduce errors such as empty rows or duplicate prefixes, which could cause the file upload to error.
 
 d. **Manual add**: To manually add Rate Card rows, select **`Create Draft`** and then add / modify / delete required rows.
 
