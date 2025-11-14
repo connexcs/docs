@@ -66,7 +66,7 @@ This serves as your primary management dashboard, allowing you to quickly search
 
 Once created, you can either add rows manually or upload an existing file for the new **Provider Rate Cards**.
 
-1. **Step 1**
+I. **Step 1**
 
 a. When you click the `+` icon, a `Create New` Provider Rate Card window appears.
 
@@ -89,9 +89,7 @@ g. At this stage, your rate card is created but not yet functional it doesn’t 
 
 h. Once saved, the interface will expand to show additional tabs such as **Bulk Upload**, **Create draft** , **Revisions**, and **Properties**.
 
-**This next stage is where you’ll add rate data and complete the configuration.**
-
-2. **Step 2**
+II.     **Step 2**
 
 a. After saving, you must define your rates either by uploading a rate sheet or manually adding prefixes.
 This is what makes the rate card operational for billing and routing.
