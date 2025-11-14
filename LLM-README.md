@@ -12,7 +12,7 @@ This documentation repository has been enhanced with structured metadata, relati
 ## New Files Added
 
 ### 1. Machine Index (`/.well-known/llms.txt`)
-**Purpose:** Single machine-readable entry point (replaces removed `llm-index.md`).
+**Purpose:** Single machine-readable entry point.
 
 **Contains (consolidated):**
 - File path map (editing reference, relationships, glossary, workflows, style guide)
@@ -232,7 +232,7 @@ Technical specifications, regulations, standards
 ## Maintenance
 
 ### When Adding New Documents:
-1. Add entry to **llm-index.md** under appropriate category
+1. Add entry to **llms.txt** under appropriate category
 2. Update **doc-relationships.yml** with relationships
 3. Consider adding to **workflows-guide.md** if procedural
 4. Add metadata block if it's a major document
@@ -254,7 +254,7 @@ Technical specifications, regulations, standards
 ```
 /workspaces/docs/
 ├── docs/
-│   ├── llm-index.md              # Master index (NEW)
+│   ├── llm.txt.md                  # Master index for LLMs
 │   ├── workflows-guide.md         # Task workflows (NEW)
 │   ├── acronyms-and-definitions.md # Glossary (EXISTING)
 │   ├── getting-started.md         # Enhanced with metadata
@@ -312,8 +312,7 @@ The canonical machine-readable entry point for LLM tooling is served at `/.well-
 
 Update sequence for major additions:
 1. Add or modify doc
-2. Update `docs/llm-index.md`
-3. Update `doc-relationships.yml`
-4. Amend `docs/well-known/llms.txt`
-5. Run link & anchor validation
-6. Apply quality checklist
+2. Update `doc-relationships.yml`
+3. Amend `docs/well-known/llms.txt`
+4. Run link & anchor validation
+5. Apply quality checklist

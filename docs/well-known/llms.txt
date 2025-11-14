@@ -1,7 +1,6 @@
 # ConnexCS Documentation LLM Index (Machine Readable)
-version: 2025-11-13
-format: v1
-source: moved-from-.well-known
+version: 2025-11-14
+format: v2
 
 [files]
 llm_editing_reference: docs/llm-editing-reference.md
@@ -21,12 +20,338 @@ security: ["docs/security.md"]
 scaling: ["docs/scaling-load-balancing.md"]
 compliance: ["docs/setup/information/stir-shaken.md", "docs/guides/gdpr.md"]
 
+[sections]
+
+# Cloudswitch > top-level pages (in nav order)
+cloudswitch_home: [
+	"docs/index.md",
+	"docs/workflows-guide.md",
+	"docs/reporting-problems.md",
+	"docs/getting-started.md",
+	"docs/dashboard.md"
+]
+
+cloudswitch_customer: [
+	"docs/customer/customer.md",
+	"docs/customer/main.md",
+	"docs/customer/auth.md",
+	"docs/customer/alias.md",
+	"docs/customer/routing.md",
+	"docs/customer/cli.md",
+	"docs/customer/payment.md",
+	"docs/customer/stats.md",
+	"docs/customer/route-stats.md",
+	"docs/customer/custom-reports.md",
+	"docs/customer/latest-calls.md",
+	"docs/customer/dialogs.md",
+	"docs/customer/alerts.md",
+	"docs/customer/did.md",
+	"docs/customer/cdr.md",
+	"docs/customer/package.md",
+	"docs/customer/invoices.md",
+	"docs/customer/contracts.md",
+	"docs/customer/documents.md",
+	"docs/customer/class5.md",
+	"docs/customer/tags.md",
+	"docs/circuit-test.md"
+]
+
+cloudswitch_carrier: [
+	"docs/carrier.md",
+	"docs/carrier/carrier-main.md",
+	"docs/carrier/carrier-reply-management.md",
+	"docs/carrier/carrier-auth.md",
+	"docs/carrier/carrier-failover.md",
+	"docs/carrier/carrier-latest-calls.md",
+	"docs/carrier/carrier-payment.md",
+	"docs/carrier/carrier-stats.md",
+	"docs/carrier/carrier-custom-reports.md",
+	"docs/carrier/carrier-alerts.md",
+	"docs/carrier/carrier-did.md",
+	"docs/carrier/carrier-did-inventory.md",
+	"docs/carrier/carrier-cdr.md"
+]
+
+cloudswitch_rate_cards: [
+	"docs/rate-card-building.md",
+	"docs/provider-ratecard.md",
+	"docs/customer-ratecard.md"
+]
+
+cloudswitch_routing: [
+	"docs/routing.md",
+	"docs/routing-strategy.md",
+	"docs/global-routing.md",
+	"docs/routing-usa.md"
+]
+
+cloudswitch_tags: ["docs/tag.md"]
+
+cloudswitch_report: ["docs/report.md"]
+
+cloudswitch_global: [
+	"docs/global.md",
+	"docs/transcription.md",
+	"docs/global-alias.md"
+]
+
+cloudswitch_class5: [
+	"docs/class5/ai-agent.md",
+	"docs/class5/knowledge-base.md",
+	"docs/class5/apps.md",
+	"docs/class5/creating-conference.md",
+	"docs/class5/call-center.md",
+	"docs/class5/creating-ivr.md",
+	"docs/class5/creating-group.md",
+	"docs/class5/voicemail.md",
+	"docs/class5/phonebook.md",
+	"docs/class5/connexml.md"
+]
+
+cloudswitch_ide: ["docs/ide.md"]
+
+cloudswitch_data_suite: ["docs/datasuite.md"]
+
+cloudswitch_setup: [
+	"docs/anyedge/anyedge.md",
+	"docs/setup/appstore.md",
+	"docs/setup/settings/account.md",
+	"docs/setup/settings/payments.md",
+	"docs/setup/settings/servers.md",
+	"docs/setup/settings/rtp-zones.md",
+	"docs/setup/settings/dns.md",
+	"docs/setup/settings/users.md",
+	"docs/setup/settings/options.md",
+	"docs/setup/settings/data-retention.md",
+	"docs/setup/config/contracts.md",
+	"docs/setup/config/packages.md",
+	"docs/setup/config/sip-profile.md",
+	"docs/setup/account-manager/commission.md",
+	"docs/setup/account-manager/payment.md",
+	"docs/setup/advanced/language.md",
+	"docs/setup/advanced/firewall.md",
+	"docs/setup/advanced/prefix-set.md",
+	"docs/setup/advanced/reseller.md",
+	"docs/setup/advanced/fraud.md",
+	"docs/setup/advanced/rtp-block.md",
+	"docs/setup/integrations/api.md",
+	"docs/setup/integrations/jwt.md",
+	"docs/setup/integrations/portal.md",
+	"docs/webphone.md",
+	"docs/setup/information/change-log.md",
+	"docs/setup/information/feature-request.md",
+	"docs/setup/information/statements.md",
+	"docs/setup/information/dial-code-destination.md",
+	"docs/setup/information/payment-log.md",
+	"docs/setup/information/audit-log.md",
+	"docs/setup/information/certificate.md",
+	"docs/setup/information/stir-shaken.md",
+	"docs/setup/information/jobs.md",
+	"docs/setup/network-ping.md"
+]
+
+cloudswitch_architecture: [
+	"docs/api.md",
+	"docs/far-end-nat-traversal.md",
+	"docs/security.md",
+	"docs/scaling-load-balancing.md",
+	"docs/spec.md"
+]
+
+cloudswitch_topical_guides: [
+	"docs/guides/stir-shaken-fcc.md",
+	"docs/guides/capacity-planning.md",
+	"docs/guides/billing-guide.md",
+	"docs/billing-basics.md",
+	"docs/billing.md",
+	"docs/credit-control.md",
+	"docs/voucher.md",
+	"docs/acronyms-and-definitions.md",
+	"docs/changing-language.md",
+	"docs/changing-password.md",
+	"docs/logging-out.md",
+	"docs/number-manipulation.md",
+	"docs/guides/sip-traces.md",
+	"docs/guides/doc-guide.md",
+	"docs/files.md",
+	"docs/guides/3dig-ext.md",
+	"docs/dnc.md",
+	"docs/calling-card.md",
+	"docs/limiting-cps.md",
+	"docs/feature-list.md",
+	"docs/guides/howto/callid.md",
+	"docs/guides/howto/restrict-calling-plan.md",
+	"docs/guides/monitoring.md",
+	"docs/sip-devices.md",
+	"docs/system-status.md",
+	"docs/guides/osi-model.md",
+	"docs/guides/major-telecom-regulatory-authorities.md",
+	"docs/guides/gdpr.md",
+	"docs/guides/cdr-retention.md",
+	"docs/guides/spam-callsblock.md",
+	"docs/guides/channel-limitations.md",
+	"docs/makecall.md"
+]
+
+cloudswitch_troubleshooting: [
+	"docs/guides/tshoot-signal.md",
+	"docs/guides/tshoot-media.md",
+	"docs/guides/call-disconnection-reasons.md",
+	"docs/guides/debugging.md",
+	"docs/logging.md",
+	"docs/guides/remote-testing.md"
+]
+
+cloudswitch_video_guide: ["docs/video-guide.md"]
+
+# Customer Portal nav (second top-level group)
+customer_portal_nav: [
+	"docs/customer-portal/cp-dashboard.md",
+	"docs/customer-portal/cp-cdr.md",
+	"docs/customer-portal/cp-breakout.md",
+	"docs/customer-portal/cp-authentication.md",
+	"docs/customer-portal/cp-did.md",
+	"docs/customer-portal/cp-did-purchase.md",
+	"docs/customer-portal/cp-invoice.md",
+	"docs/customer-portal/cp-cli.md",
+	"docs/customer-portal/cp-latest-calls.md",
+	"docs/customer-portal/cp-dialogs.md",
+	"docs/customer-portal/cp-user-reg.md",
+	"docs/customer-portal/cp-conference.md",
+	"docs/customer-portal/cp-ivr.md",
+	"docs/customer-portal/cp-group.md",
+	"docs/customer-portal/cp-audio.md",
+	"docs/customer-portal/cp-alert.md",
+	"docs/customer-portal/cp-contracts.md",
+	"docs/customer-portal/cp-documents.md",
+	"docs/customer-portal/cp-data-management.md",
+	"docs/customer-portal/cp-payment.md",
+	"docs/customer-portal/cp-package.md",
+	"docs/customer-portal/cp-routes.md",
+	"docs/customer-portal/cp-recording.md",
+	"docs/customer-portal/status.md",
+	"docs/customer-portal/interconnect.md"
+]
+
+# WebPhone nav
+webphone_nav: [
+	"docs/webphoneapp.md",
+	"docs/webphone.md"
+]
+
+# Apps Platform nav
+apps_platform_nav: [
+	"docs/apps/introduction.md",
+	"docs/apps/use-case.md",
+	"docs/apps/features.md",
+	"docs/apps/architecture/architecture.md",
+	"docs/apps/architecture/app.md",
+	"docs/apps/architecture/button-builder.md",
+	"docs/apps/architecture/database.md",
+	"docs/apps/architecture/domain.md",
+	"docs/apps/architecture/key-value.md",
+	"docs/apps/page-builder.md",
+	"docs/apps/architecture/script.md",
+	"docs/apps/architecture/template.md",
+	"docs/apps/architecture/query-builder.md",
+	"docs/apps/architecture/project.md",
+	"docs/apps/architecture/pub-sub.md",
+	"docs/apps/architecture/environmental-variables.md",
+	"docs/apps/components/alert.md",
+	"docs/apps/components/button.md",
+	"docs/apps/components/card.md",
+	"docs/apps/components/cascader.md",
+	"docs/apps/components/chart.md",
+	"docs/apps/components/checkbox.md",
+	"docs/apps/components/collapse.md",
+	"docs/apps/components/color.md",
+	"docs/apps/components/data-grid.md",
+	"docs/apps/components/date.md",
+	"docs/apps/components/dialog.md",
+	"docs/apps/components/divider.md",
+	"docs/apps/components/editor.md",
+	"docs/apps/components/grid.md",
+	"docs/apps/components/group.md",
+	"docs/apps/components/html.md",
+	"docs/apps/components/iframe.md",
+	"docs/apps/components/inline.md",
+	"docs/apps/components/input.md",
+	"docs/apps/components/link.md",
+	"docs/apps/components/number.md",
+	"docs/apps/components/page-layout.md",
+	"docs/apps/components/pagination.md",
+	"docs/apps/components/portal.md",
+	"docs/apps/components/radio.md",
+	"docs/apps/components/rate.md",
+	"docs/apps/components/select.md",
+	"docs/apps/components/slider.md",
+	"docs/apps/components/statistic.md",
+	"docs/apps/components/steps.md",
+	"docs/apps/components/sub-form.md",
+	"docs/apps/components/sub-form+.md",
+	"docs/apps/components/switch.md",
+	"docs/apps/components/table.md",
+	"docs/apps/components/tabs.md",
+	"docs/apps/components/text.md",
+	"docs/apps/components/text-area.md",
+	"docs/apps/components/time.md",
+	"docs/apps/components/transfer.md",
+	"docs/apps/components/tree-select.md",
+	"docs/apps/components/webphone.md",
+	"docs/apps/components/img/img.md"
+]
+
 [workflows]
 initial_setup: "workflows-guide.md#initial-platform-setup"
 api_integration: "workflows-guide.md#api-integration-setup"
 ivr_setup: "workflows-guide.md#configuring-ivr"
 fraud_prevention: "workflows-guide.md#setting-up-fraud-prevention"
 troubleshoot_call_connection: "workflows-guide.md#troubleshooting-call-connection-issues"
+
+# Workflows derived from docs/llm.txt
+initial_system_setup:
+	prerequisites: ["docs/getting-started.md", "docs/carrier.md", "docs/customer/customer.md"]
+	steps: [
+		"docs/getting-started.md",
+		"docs/carrier.md",
+		"docs/provider-ratecard.md",
+		"docs/customer/customer.md",
+		"docs/customer-ratecard.md",
+		"docs/customer/routing.md",
+		"docs/circuit-test.md"
+	]
+
+call_routing_configuration:
+	prerequisites: ["docs/carrier.md", "docs/customer/customer.md"]
+	related_docs: ["docs/routing.md", "docs/routing-strategy.md", "docs/customer/routing.md"]
+
+billing_invoicing_setup:
+	prerequisites: ["docs/rate-card-building.md", "docs/provider-ratecard.md", "docs/customer-ratecard.md"]
+	related_docs: ["docs/billing-basics.md", "docs/credit-control.md", "docs/customer/invoices.md"]
+
+troubleshooting_call_issues:
+	prerequisites: ["docs/guides/tshoot-signal.md", "docs/guides/tshoot-media.md", "docs/logging.md"]
+	related_docs: ["docs/guides/tshoot-signal.md", "docs/guides/tshoot-media.md", "docs/logging.md"]
+
+class5_setup:
+	prerequisites: ["docs/customer/customer.md", "docs/class5/class5-intro.md"]
+	related_docs: [
+		"docs/class5/class5-intro.md",
+		"docs/class5/creating-ivr.md",
+		"docs/class5/creating-conference.md"
+	]
+
+api_integration_flow:
+	prerequisites: ["docs/api.md", "docs/setup/integrations/api.md", "docs/ide.md"]
+	related_docs: ["docs/api.md", "docs/setup/integrations/api.md", "docs/ide.md"]
+
+custom_app_development:
+	prerequisites: ["docs/apps/introduction.md"]
+	related_docs: [
+		"docs/apps/introduction.md",
+		"docs/apps/page-builder.md",
+		"docs/apps/architecture/script.md"
+	]
 
 [rules]
 rule_1: "Verify user role before deep technical answer."
@@ -39,6 +364,25 @@ rule_7: "Return estimated difficulty/time if metadata present."
 
 [metadata_fields]
 fields: ["category", "audience", "difficulty", "time_required", "prerequisites", "related", "next_steps", "last_reviewed", "llm_validation"]
+
+[keywords]
+setting_up_customers: ["docs/customer/customer.md", "docs/getting-started.md"]
+call_quality_problems: ["docs/guides/tshoot-media.md", "docs/logging.md"]
+call_wont_connect: ["docs/guides/tshoot-signal.md", "docs/customer/auth.md"]
+billing_customers: ["docs/billing.md", "docs/customer-ratecard.md", "docs/customer/invoices.md"]
+rate_cards: ["docs/rate-card-building.md", "docs/provider-ratecard.md", "docs/customer-ratecard.md"]
+routing_calls: ["docs/routing.md", "docs/routing-strategy.md", "docs/customer/routing.md"]
+api_integration_topic: ["docs/api.md", "docs/setup/integrations/api.md"]
+ivr_setup_topic: ["docs/class5/creating-ivr.md", "docs/class5/connexml.md"]
+fraud_prevention_topic: ["docs/setup/advanced/fraud.md", "docs/security.md"]
+call_logs_topic: ["docs/customer/cdr.md", "docs/customer/latest-calls.md"]
+phone_numbers_topic: ["docs/customer/did.md", "docs/carrier/carrier-did.md"]
+authentication_issues: ["docs/customer/auth.md", "docs/carrier/carrier-auth.md"]
+pricing_configuration: ["docs/provider-ratecard.md", "docs/customer-ratecard.md"]
+conference_calls_topic: ["docs/class5/creating-conference.md"]
+voicemail_setup_topic: ["docs/class5/voicemail.md"]
+custom_reports_topic: ["docs/customer/custom-reports.md", "docs/report.md"]
+ai_features_topic: ["docs/class5/ai-agent.md", "docs/class5/knowledge-base.md"]
 
 [maintenance]
 update_sequence: ["add_doc", "update_llm_index", "update_relationships", "add_metadata", "validate_links", "quality_check"]

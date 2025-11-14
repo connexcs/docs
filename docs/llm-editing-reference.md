@@ -219,7 +219,7 @@ After:
 3. Populate sections with sourced content only.
 4. Insert appropriate cross-links (prerequisites & next steps).
 5. Add glossary entries if truly new terminology.
-6. Update `llm-index.md` and `doc-relationships.yml`.
+6. Update `llm.txt` and `doc-relationships.yml`.
 7. Run Quality Checklist.
 
 ## 16. Handling Large Refactors
