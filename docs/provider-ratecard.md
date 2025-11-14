@@ -2,11 +2,11 @@
 
 **Management :material-menu-right: Provider Rate Cards**
 
-## Overview
+## Introduction
 
-Rate cards in ConnexCS help manage pricing structures for telecom services by defining how calls are billed, charged, and tracked.
+A **Provider Rate Card** outlines the pricing structure applied by a carrier for call termination or origination.
 
-The rate card system includes various attributes that determine the cost and billing increments for each call.
+It defines per-minute rates, billing increments, rounding rules, connection charges, and associated routing parameters. This information serves as the core reference for your billing logic, routing decisions, cost analysis, and margin calculations.
 
 Before configuring Provider Rate Cards, we suggest you review [**Rate Card Overview**](https://docs.connexcs.com/rate-card-building/) then [**Rate Card Setup**](https://docs.connexcs.com/video-guide/#rate-card-setup) in the ConnexCS Video Guide.
 
@@ -22,69 +22,97 @@ Before configuring Provider Rate Cards, we suggest you review [**Rate Card Overv
 
 5. **Zero-cost LRN Lookups**: Free DIPs reduce operational costs compared to third-party LRN providers.
 
-## Provider Rate Card Functions
+## Provider Rate Card Grid
 
-+ **Bulk Edit**: Allows users to make batch modifications to rate cards. Select one or more Provider Cards and click **`Bulk Edit`** to revise multiple cards for settings such as Force Presentation, Dialing, Direction, and Billing Precision.
+### Available Options
 
-+ **Delete**: To delete a Provider rate card, select its name from the list and then click the trash bin icon.
+When you open the **Provider Rate Card** section, the initial screen presents a grid listing all the provider rate cards you’ve created.
+
+This serves as your primary management dashboard, allowing you to quickly search, review, edit, or delete any existing rate card.
+
++ **Create New**: Click the `+` icon to create a new provider rate card.
+
++ **Bulk Edit**: Select multiple cards to adjust shared properties such as direction or currency.
+
++ **Delete**: Remove one or more cards (only possible when all revisions are inactive).
+
++ **View / Edit**: Click a card name to open its details and manage prefixes, rates, and settings.
 
 !!! warning "Before deleting a Provider Rate Card"
     Before deleting a Provider Rate Card, we need to delete the [**Active Revision**](/provider-ratecard/#revisions-tab).
 
-## Provider Interface Overview
-
-+ **Name**: Its the identifier of the Rate Card. Click the name of the provider to see an individual rate card and management options. If a Rate Card name shows a yellow warning or red alert, these will show details about the card. It may be stale (if changes are made, but the rate card is not updated,) or have some sort of error.
-
-+ **Direction**: Cards are either *Termination* (calling out to the PSTN) or *Origination* (DID numbers receiving calls from the PSTN). **Termination is the most common card type used by ConnexCS customers**.
-
-+ **Company**: Refers to the Provider, or Carrier, for using the configured card. It assigns the rate card to a provider (carrier).
-
 !!! Note "In ConnexCS, the terms provider and carrier are used interchangeably."
 
-+ **Currency**: The currency for the provider's region (typically USD, EUR, or GBP).
-
-+ **?**: Lists dependent Child (or Customer) Rate Cards. The changes made on the parent impact the lists.
-Click on the [**Child Card**](https://docs.connexcs.com/customer-ratecard/) to view the configuration.
+|Column|Description|
+|------|-----------|
+|**Name**|  The name of the provider rate card. Click the name of the provider to see an individual rate card and management options. If a Rate Card name shows a yellow warning or red alert, these will show details about the card. It may be stale (if changes are made, but the rate card is not updated,) or have some sort of error.|
+|**Force Presentation**| [Click here](https://docs.connexcs.com/provider-ratecard/#config) to know more.|
+|**Direction**|Cards are either *Termination* (calling out to the PSTN) or *Origination* (DID numbers receiving calls from the PSTN). **Termination is the most common card type used by ConnexCS customers**.|
+|**Company**|Refers to the Provider, or Carrier, for using the configured card. It assigns the rate card to a provider (carrier).|
+|**Currency**| The billing currency in use.|
+|**?**|Lists dependent Child (or Customer) Rate Cards. The changes made on the parent impact the lists.<br>Click on the [**Child Card**](https://docs.connexcs.com/customer-ratecard/) to view the configuration.</br>|
+|**ID**|A system identifier that acts as a placeholder and prevents confusion between similarly named items.|
+|**Rule Count**|Displays the total number of rows (rules) within a rate card. Also determines the various conditions and charges applied to calls.|
+|**Public Options**|Choose what you can do with the card information: view it via HTML (on a web page), download CSV (a spreadsheet), and whether to list the rate card in the customer portal (allows customers to view rate cards that aren't in their account and add them). (**Note: API Querying is no longer available.**)|
+|**Active Revision**|Only one active revision at a time. Previous revisions can be archived and reactivated if needed.|
+|**Max Revision**|Its the latest revision. Additional currencies can be added upon request, but this is rare.|
 
 !!! Note "Parent-Child Rate Card Relationship"
     1. Provider Rate Cards are parent rate cards.
     2. Customer Rate Cards are child rate cards derived from provider rate cards.
     3. Users can check dependent (child) rate cards linked to a provider rate card.
 
-+ **ID**: A system identifier that acts as a placeholder and prevents confusion between similarly named items.
-
-+ **Rule Count**: Displays the total number of rows (rules) within a rate card. Also determines the various conditions and charges applied to calls.
-+ **Public Options**: Choose what you can do with the card information: view it via HTML (on a web page), download CSV (a spreadsheet), and whether to list the rate card in the customer portal (allows customers to view rate cards that aren't in their account and add them). (**Note: API Querying is no longer available.**)
-+ **Active Revision**: Only one active revision at a time. Previous revisions can be archived and reactivated if needed.
-+ **Max Revision**: Its the latest revision. Additional currencies can be added upon request, but this is rare.
-
 ## Create Provider Rate Cards
 
 Once created, you can either add rows manually or upload an existing file for the new **Provider Rate Cards**.
 
-1. Click :material-plus:.
-2. Complete the required fields. (For details, see [**Configure Provider Rate Card**](https://docs.connexcs.com/provider-ratecard/#configure-provider-rate-card) below.)
-3. Click **`Save`**.
-4. From here, you may add the Provider Rate Card manually or perform a Bulk Upload. Bulk upload allows you to upload large rate cards via CSV.
+1. **Step 1**
 
-**Option 1: Manual add**
-To manually add Rate Card rows, select **`Create Draft`** and then add / modify / delete required rows.
+a. When you click the `+` icon, a `Create New` Provider Rate Card window appears.
+b. This window is divided into three sections **Basic**, **Config**, and **Advanced** where you define the core properties of the card.
+c. You only need to complete a few key fields to get started.
+d. Once the card is saved, you can explore detailed configuration options in the next section which is the [Properties Section](https://docs.connexcs.com/provider-ratecard/#properties-tab).
 
-**Option 2: Bulk Upload**
-The preferred method for adding a Rate Card is to import/upload it:
+    **Required fields**:
 
-1. Click **`Bulk Upload`**, then **`Upload`**.
-2. Select the file, typically sent by the Provider in CSV format (if not provided as CSV, conversion required before proceeding).
-3. Right-click on the first row of data and select "Set Start Row."
-4. Right-click and map the columns. It's important to map all fields based on the Rate Card columns. For example:
-    + Col 1 - Prefix
-    + Col 2 - Name
-    + Col 3 - Cost
-5. Choose **`Upload to Sever`** and confirm the upload.
-6. Select whether to make this active instantly.
+    |Field|Description|Example|
+    |-----|-----------|-------|
+    |**Name (Private)**| Internal label used to identify the rate card| Carrier-XYZ_Nov2025|
+    |**Provider / Carrier**|Select your upstream provider| Carrier XYZ Ltd|
 
-!!! danger "Manually generated cards"
-    When users create Provider Rate Card CSV files manually in Excel (rather than generating them from a rate card management system), they may introduce errors such as empty rows or duplicate prefixes, which could cause the file upload to error.
+e. Click on `Save`. (Once it’s saved, new configuration sections will appear.)
+
+f. At this stage, your rate card is created but not yet functional it doesn’t have any rate data.
+
+g. Once saved, the interface will expand to show additional tabs such as **Bulk Upload**, **Create draft** , **Revisions**, and **Properties**.
+
+    **This next stage is where you’ll add rate data and complete the configuration.**
+
+2. **Step 2**
+
+a. After saving, you must define your rates either by uploading a rate sheet or manually adding prefixes.
+This is what makes the rate card operational for billing and routing.
+
+b. Two primary options are now visible:
+
+   + **Bulk Upload**: Import rates via a CSV file (recommended for full rate sheets).
+   + **Manual Create**: Add prefixes and rates one by one directly in the interface.
+
+c. **Bulk Upload**: The preferred method for adding a Rate Card is to import/upload it:
+   1. Click **`Bulk Upload`**, then **`Upload`**.
+   2. Select the file, typically sent by the Provider in CSV format (if not provided as CSV, conversion required before proceeding).
+   3. Right-click on the first row of data and select "Set Start Row."
+   4. Right-click and map the columns. It's important to map all fields based on the Rate Card columns. For example:
+       + Col 1 - Prefix
+       + Col 2 - Name
+       + Col 3 - Cost
+   5. Choose **`Upload to Sever`** and confirm the upload.
+   6. Select whether to make this active instantly.
+
+        !!! danger "Manually generated cards"
+            When users create Provider Rate Card CSV files manually in Excel (rather than generating them from a rate card management system), they may introduce errors such as empty rows or duplicate prefixes, which could cause the file upload to error.
+
+d. **Manual add**: To manually add Rate Card rows, select **`Create Draft`** and then add / modify / delete required rows.
 
 ## Configure Provider Rate Card
 
