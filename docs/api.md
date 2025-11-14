@@ -1,5 +1,17 @@
 # Application Programming Interface
 
+---
+**Document Metadata**  
+**Category:** Development & Integration  
+**Audience:** Developers, System Integrators  
+**Difficulty:** Intermediate  
+**Time Required:** 1-2 hours (initial setup)  
+**Prerequisites:** [Getting Started](getting-started.md), Developer knowledge  
+**Related Topics:** [IDE](ide.md), [API Integration](setup/integrations/api.md), [JWT Keys](setup/integrations/jwt.md)  
+**Next Steps:** [API Integration Setup](setup/integrations/api.md), [Apps Platform](apps/introduction.md)
+
+---
+
 An **API (Application Programming Interface)** allows for more intricate control over your system. It's either through customization or the use of third-party applications.
 
 ConnexCS has two distinct APIs. Each is accessible through a different URL, but both follow the same specifications.

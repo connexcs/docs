@@ -1,15 +1,31 @@
 # Getting Started
 
-Welcome to ConnexCS! Your Guide to Getting Started
-We're excited to have you on board. This guide will walk you through the key features and settings you’ll need as you begin your journey with ConnexCS.
+---
+**Document Metadata**  
+**Category:** Setup & Configuration  
+**Audience:** New Users, Administrators  
+**Difficulty:** Beginner  
+**Time Required:** 2-4 hours  
+**Prerequisites:** ConnexCS account created  
+**Related Topics:** [Dashboard](dashboard.md), [Carrier Setup](carrier.md), [Customer Setup](customer/customer.md)  
+**Next Steps:** [Carrier Configuration](carrier.md), [Rate Card Setup](rate-card-building.md)
 
-Our platform is designed to streamline your communication and billing processes, making it easier for you to manage your customers, carriers, and rate cards.
+---
 
-The initial setup in ConnexCS will configure a single carrier, a single customer, and a single rate card.
+## Welcome to ConnexCS!
 
-To get started, the initial setup in ConnexCS will configure a single carrier, a single customer, and a single rate card, providing you with a base configuration that you can expand as needed.
+We're excited to have you on board. This guide will walk you through the key features and settings you'll need to begin your journey with ConnexCS.
 
-Whether you’re managing a few or scaling to an unlimited number of customers and recipients, ConnexCS supports seamless growth, offering flexibility and robust features to meet your business requirements.
+Our platform is designed to streamline your communication and billing processes, making it easier to manage your customers, carriers, and rate cards.
+
+### Initial Setup Overview
+
+The initial setup in ConnexCS will configure:
+* A single carrier
+* A single customer  
+* A single rate card
+
+This provides you with a base configuration that you can expand as needed. Whether you're managing a few customers or scaling to handle unlimited connections, ConnexCS supports seamless growth with flexible and robust features to meet your business requirements.
 
 Ready to begin? Let's walk through the steps to set up and customize your ConnexCS environment!
 
@@ -24,9 +40,11 @@ Ready to begin? Let's walk through the steps to set up and customize your Connex
 
 ## Prerequisites
 
-* You have a modern web browser such as Google Chrome, Firefox, Safari, or their equivalent.
-* You have a basic understanding of Telecoms--customers, providers, and rates.
-* You have created an account with [ConnexCS](https://app.connexcs.com/#/register).
+Before you begin, ensure you have:
+
+* A modern web browser such as Google Chrome, Firefox, Safari, or equivalent
+* A basic understanding of telecommunications concepts (customers, providers, and rates)
+* A ConnexCS account (register at [ConnexCS](https://app.connexcs.com/#/register) if you haven't already)
 
 ## Account Setup and Verification
 
@@ -38,72 +56,67 @@ Use the **Alerts** icon at the top left of the screen to view all outstanding it
 
 ### Email Verification
 
-You’ll receive a verification email. Click the link in the email to verify your account. ConnexCS determines if an email address is genuine.
-
-It's a measure against unauthorized users accessing customer accounts. It works similarly to most email verification mechanisms.
-The system sends a verification code to the user's email, which is verified when the user enters the code back into the verification.
+You'll receive a verification email after account creation. This is a security measure to prevent unauthorized access to customer accounts and works similarly to standard email verification mechanisms.
 
 To verify your email address:
 
-1. Select `Verify Email`. The Personal Profile Screen pops up.
-2. Click the orange `!` next to Email, this generates a code and sends it to the email address.
-3. Click the link in the email or copy & paste the code into the Verification Code field in the Verify Email pop-up
+1. Select `Verify Email`. The Personal Profile screen will appear.
+2. Click the orange `!` icon next to Email. This generates a verification code and sends it to your email address.
+3. Either click the link in the email or copy and paste the code into the Verification Code field in the Verify Email pop-up.
 4. Click `Verify`.
 
     <img src= "/getting-started/img/verify-email1.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ### Mobile Verification
 
-**Mobile Verification** is the process by which we verify mobile phone numbers to ensure that they're genuine, and is an extension of **Email Verification**.
+**Mobile Verification** ensures that all mobile phone numbers associated with your account are genuine. This is an extension of email verification and adds an additional security layer.
 
-Mobile Verification ensures all mobile devices associated with your account are genuine.
-
-Before verifying a mobile number, make sure the information is correct.
+Before starting, ensure your mobile number information is correct.
 
 !!! note "Number Format"
-    The number must be in E.164 format. E.164 numbers are formatted [+] [country code] [subscriber number including area code] and have a maximum of fifteen digits.
+    The number must be in E.164 format: [+] [country code] [subscriber number including area code]. E.164 numbers have a maximum of fifteen digits.
 
 To verify a mobile number:
 
-1. Select `Verify Mobile`. The Personal Profile Screen pops-up.
-2. Make sure the number is correct and in E.164 format: [+] [country code] [subscriber number including area code] with maximum of fifteen digits.
-3. Click the orange `!` next to Mobile, this will generate a code and send it to mobile number.
+1. Select `Verify Mobile`. The Personal Profile screen will appear.
+2. Confirm the number is correct and in E.164 format: [+] [country code] [subscriber number including area code] with a maximum of fifteen digits.
+3. Click the orange `!` icon next to Mobile. This will generate a verification code and send it to your mobile number.
 4. Enter the code into the Verification Code field in the Verify Mobile pop-up.
 5. Click `Verify`.
 
     <img src= "/getting-started/img/verify-mobile1.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-### Other Fields to be verified
+### Additional Verification Fields
 
-+ Company Registration
-+ Company Details
-+ Company Registration ID
-+ Country
-+ Address
-+ VAT Registration ID
-+ Share holder certificate
+You may also need to verify the following information:
+
+* Company Registration
+* Company Details
+* Company Registration ID
+* Country
+* Address
+* VAT Registration ID
+* Shareholder Certificate
 
 ### Customer-Carrier Billing Setup
 
-Follow the below steps to setup routing and billing.
+Follow these steps to set up routing and billing.
 
 #### Carrier Setup
 
-**Carriers** are your VoIP route providers.
+**Carriers** are your VoIP route providers. Below are the required fields for basic carrier setup.
 
-Below, we include only the required fields to set up a carrier.
+For detailed instructions, see [**Carrier**](https://docs.connexcs.com/carrier/).
 
-For detailed instructions on carrier setup, see [**Carrier**](https://docs.connexcs.com/carrier/).
-
-1. Navigate to **Management :material-menu-right: Carrier**:
-2. Click on the `+` icon.
+1. Navigate to **Management :material-menu-right: Carrier**.
+2. Click the `+` icon.
 3. Enter the Carrier Name.
-4. Select the Carrier's currency type, for example: dollars, pounds, or euros.
-5. Click `Save`
+4. Select the carrier's currency type (for example: USD, GBP, or EUR).
+5. Click `Save`.
 6. Select **Auth** from the Carrier screen.
 7. Click `+` under IP Authentication.
 8. Enter the termination IP address.
-9. Click `Save`
+9. Click `Save`.
 
     <img src= "/getting-started/img/116.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
@@ -111,79 +124,78 @@ For detailed instructions on carrier setup, see [**Carrier**](https://docs.conne
 
 #### Rate Cards
 
-**Rate Cards** are structured pricing tables that specify the cost associated with terminating voice traffic to different global destinations.
+**Rate Cards** are structured pricing tables that specify the costs associated with terminating voice traffic to different global destinations.
 
-1. Before getting started, we recommend you review **[Building Rate Cards](https://docs.connexcs.com/rate-card-building/)**. You can also watch our **[Rate Card Setup video](https://docs.connexcs.com/video-guide/#rate-card-setup)**.
-2. Setup the [**Provider Rate Cards**](https://docs.connexcs.com/provider-ratecard/) as customer cards will build off those.
+1. Before getting started, we recommend reviewing **[Building Rate Cards](https://docs.connexcs.com/rate-card-building/)**. You can also watch our **[Rate Card Setup video](https://docs.connexcs.com/video-guide/#rate-card-setup)**.
+2. Set up the [**Provider Rate Cards**](https://docs.connexcs.com/provider-ratecard/) first, as customer cards will build upon these.
 3. Build the [**Customer Rate Cards**](https://docs.connexcs.com/customer-ratecard/) as needed.  
 
 [Click here for video playback for Provider Rate Card.](https://www.youtube.com/watch?v=NYL6cNGGuaw)
 
 [Click here for video playback for Customer Rate Card.](https://www.youtube.com/watch?v=i7vSzIuUAL4&t=31s)
 
-#### Create a new Customer
+#### Create a New Customer
 
-1. Click on the `+` icon.
-2. Enter the Customer's Name.
-3. Select the currency to use for this account. **Please note that you can't change this later**.
-4. Add a tax percentage, which is calculated for each added payment.
+1. Click the `+` icon.
+2. Enter the customer's name.
+3. Select the currency to use for this account. **Note: You cannot change this later.**
+4. Add a tax percentage, which will be calculated for each payment.
 5. Click `Save`.
 
-      <img src= "/getting-started/img/61.png" style="border: 2px solid #4472C4; border-radius: 8px;">>
+      <img src= "/getting-started/img/61.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-!!! Note "To view outstanding actions on a customer, hover over the **Warning icon**."
-
-    In the example below, you can see that routing and authentication hasn't been set. In that case, click on the customer's name to update their routing details.
+!!! Note "Viewing Outstanding Actions"
+    To view outstanding actions on a customer, hover over the **Warning icon**. In the example below, you can see that routing and authentication haven't been set. Click the customer's name to update their routing details.
 
 <img src= "/getting-started/img/warning-icon1.png" width= "200" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ##### Set IP Authentication
 
 1. Select the customer to authenticate.
-2. Click on the Auth menu item.
-3. Under IP Authentication, click on the `+` icon.
-4. Enter the Origination/Customer IP address.
+2. Click the **Auth** menu item.
+3. Under IP Authentication, click the `+` icon.
+4. Enter the origination/customer IP address.
 5. Click **Save**.
 
 !!! note "Additional Authentication Support"
-    We support SRV (service) records & domains.
+    We support SRV (service) records and domains.
 
 [Click here for video playback.](https://www.youtube.com/watch?v=U0lnj0Iu-Pw)
 
 ##### Set SIP User Authentication
 
-You can authenticate a customer using SIP Username and Password.
+You can authenticate a customer using a SIP username and password.
 
-Below are the steps to create a SIP user:
+Steps to create a SIP user:
 
 1. Select the customer to authenticate.
-2. Click on the Auth menu item.
-3. Under SIP User Authentication, click on the `+` icon.
-4. Enter a username and password, then press the `Save` button.
+2. Click the **Auth** menu item.
+3. Under SIP User Authentication, click the `+` icon.
+4. Enter a username and password, then click the `Save` button.
 
-!!! Warning
-    We block IP addresses upon SIP authentication failures to enhance security.
+!!! Warning "Security Notice"
+    We block IP addresses after SIP authentication failures to enhance security.
 
 ##### Payments
 
-You can add balance to a customer.
+You can add balance to a customer account.
 
-Follow the steps to add Payments:
+Steps to add payments:
 
 1. Select the customer.
-2. Click on the Payment menu item.
-3. Click on the `+` icon.
-4. Enter a Description and Total amount and select `Completed` from the drop-down menu, if the payment is made.
+2. Click the **Payment** menu item.
+3. Click the `+` icon.
+4. Enter a description and total amount. Select `Completed` from the drop-down menu if the payment has been made.
 5. Click `Save`.
 
 [Click here for video playback.](https://www.youtube.com/watch?v=gm3enkq5VSo)
 
 ##### Ingress Routing
 
-To manage **Ingress Routing**,
+To configure ingress routing:
 
-1. Navigate to **Management :material-menu-right: Customer**:
-2. Click on the customer's name.
+1. Navigate to **Management :material-menu-right: Customer**.
+2. Click the customer's name.
 3. Select **Routing**.
 4. Click `+` under **Ingress Routing**.
 5. Select the **Rate Card**.
@@ -191,38 +203,40 @@ To manage **Ingress Routing**,
 
 For detailed routing configuration, see [**Routing**](https://docs.connexcs.com/customer/routing/).
 
-**Summary**
+### Setup Summary
 
-**Step 1**: Create a Carrier.
+The complete setup process follows these steps:
 
-**Step 2**: Create a Provider Rate Card.
+**Step 1:** Create a carrier
 
-**Step 3**: Create a Customer Rate Card and link it to the previously created provider rate card.
+**Step 2:** Create a provider rate card
 
-**Step 4**: Create a Customer.
+**Step 3:** Create a customer rate card and link it to the provider rate card
 
-**Step 5**: Assign the newly created Customer Rate Card to the routing configuration for the new customer.
+**Step 4:** Create a customer
+
+**Step 5:** Assign the customer rate card to the routing configuration
 
 ```mermaid
 graph TD
     A[Step 1: Create a Carrier] --> B[Step 2: Create a Provider Rate Card]
-    B --> C[Step 3: Create a Customer             Rate Card and link            it to Provider Rate Card]
+    B --> C[Step 3: Create a Customer Rate Card<br/>and link it to Provider Rate Card]
     C --> D[Step 4: Create a Customer]
-    D --> E[Step 5: Assign Customer              Rate Card to Routing Configuration]
+    D --> E[Step 5: Assign Customer Rate Card<br/>to Routing Configuration]
 ```
 
 #### Deploy Servers
 
-**Deploy Servers** using these instructions.
+Follow these instructions to deploy servers:
 
 1. Navigate to **Setup :material-menu-right: Settings :material-menu-right: Servers**.
 2. Select **Deploy a Server**.
 3. Choose a server location.
 4. Enter a server name.
 5. Check the confirmation box and deploy the server.
-6. The server's IP address is emailed to your registered email address. You can also find it in the server list section.
+6. The server's IP address will be emailed to your registered email address. You can also find it in the server list section.
 
-For detailed server configuration, see **[Servers](https://docs.connexcs.com/setup/settings/servers/)**.
+For detailed server configuration, see [**Servers**](https://docs.connexcs.com/setup/settings/servers/).
 
 [Click here for video playback.](https://www.youtube.com/watch?v=QSagrJ1redI)
 
@@ -230,47 +244,45 @@ For detailed server configuration, see **[Servers](https://docs.connexcs.com/set
 
 ### Timezone Settings
 
-**Change Timezone**: You can set your local time zone by clicking on the “Time Top” option in the settings. This will affect the time format across the entire site.
+You can set your local time zone by clicking the "Time Top" option in the settings. This will affect the time format across the entire platform.
 
-Click **`Update`** to apply changes.
+Click **`Update`** to apply your changes.
 
 ### Help and Documentation
 
-+ **Help Buttons**: Throughout the platform, you'll find question mark icons. Click on them to access relevant documentation that can guide you.
+Throughout the platform, you'll find question mark icons. Click them to access relevant documentation and guidance.
 
 ### Account Balance
 
-**View Balance**: Your current account balance is displayed here.
-To make a payment, click on the balance, and you’ll have the option to pay via `PayPal` or `credit card`.
-Ensure your account balance stays positive to avoid any issues.
+Your current account balance is displayed in the dashboard. To make a payment, click on the balance for options to pay via PayPal or credit card. Ensure your account balance stays positive to avoid service interruptions.
 
-### Setup Personal Profile
+### Set Up Personal Profile
 
-Logged-In User: The current user’s name and role are visible. You can change your password, language settings, and other preferences.
+Your username and role are visible in the upper right corner. You can change your password, language settings, and other preferences from your profile.
 
-While it's not necessary to configure your Personal Profile to complete basic setup, this is a good time to get it done.
+While configuring your Personal Profile isn't required for basic setup, it's a good time to complete it.
 
-To find this, click your name in the upper right corner and select `Profile`.
+To access your profile, click your name in the upper right corner and select `Profile`.
 
 === "Basic"
 
-    View account details such as Name, Role, Email and Mobile. 
+    View account details such as name, role, email, and mobile number. 
     
-    **You can only edit the Mobile field. To change email or name, contact ConnexCS Support.**
+    **Note: You can only edit the Mobile field. To change your email or name, contact ConnexCS Support.**
     
-    **Two Factor Authentication**: This adds additional security against password guessing and theft, including brute force attacks (details [**here**](https://www.ncsc.gov.uk/guidance/multi-factor-authentication-online-services)). 
+    **Two-Factor Authentication (2FA):** This adds additional security against password guessing and theft, including brute force attacks (details [**here**](https://www.ncsc.gov.uk/guidance/multi-factor-authentication-online-services)). 
     
-    To configure this on ConnexCS, click `Enable` and follow prompts for QR code. You must install a 2FA/TFA app on your phone. 
+    To configure 2FA on ConnexCS, click `Enable` and follow the prompts to scan the QR code. You must install a 2FA/TFA app on your phone. 
     
-    **Web Auth N / FIDO2**: This lets you to enable hardware security keys/tokens, which is more secure that basic password protection (details [**here**](https://www.ncsc.gov.uk/collection/mobile-device-guidance/enterprise-authentication-policy)). 
+    **Web Authentication (WebAuthN) / FIDO2:** This allows you to enable hardware security keys/tokens, which is more secure than basic password protection (details [**here**](https://www.ncsc.gov.uk/collection/mobile-device-guidance/enterprise-authentication-policy)). 
     
-    To configure this on ConnexCS, click `Enroll`. Once it's setup, there is a special button to click/tap upon login to the ConnexCS portal. 
+    To configure this on ConnexCS, click `Enroll`. Once set up, there will be a special button to click/tap when logging in to the ConnexCS portal. 
 
-    You can also add **Biometric Security** by using **Face Verification**.
+    You can also add **Biometric Security** using **Face Verification**.
 
-    Other options include **PIN** and **Security**.
+    Other options include **PIN** and **Security Key**.
 
-    The interesting thing is that you get these options on your browser using the [**Windows Hello application**](https://support.microsoft.com/en-us/windows/learn-about-windows-hello-and-set-it-up-dae28983-8242-bb2a-d3d1-87c9d265a5f0).
+    These security options are available in your browser through the [**Windows Hello application**](https://support.microsoft.com/en-us/windows/learn-about-windows-hello-and-set-it-up-dae28983-8242-bb2a-d3d1-87c9d265a5f0).
     
     <img src= "/getting-started/img/2fa.png" width= "350" style="border: 2px solid #4472C4; border-radius: 8px;">
 
