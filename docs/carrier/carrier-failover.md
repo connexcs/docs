@@ -10,11 +10,9 @@ This typically helps to troubleshoot an issue with the carrier that's failing th
 
 You can also use this to identify FAS (False Answer Supervision) billing fraud.
 
-Failover is a powerful feature that enables seamless call routing between multiple carriers to ensure connectivity and optimize performance.
-
 <img src= "/carrier/img/carrierfailover.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-## Exception: False Answer Supervision (FAS)
+## False Answer Supervision (FAS)
 
 **1. What is FAS?**
 

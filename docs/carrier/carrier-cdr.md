@@ -12,24 +12,24 @@ This is primarily used for billing purposes as it contains details such as call 
 
     Download and recalculate selected CDRs across several customers.
 
-## Manage displayed Call Detail Records
+## Available Options
 
 The Carrier **CDR** tab lists Call Detail Records associated with the selected account. Select the entries to display more detailed information. The created queries on the server get displayed on the portal.
 
-* **Columns**: You can enable more CDR fields on the Columns tab on the right.
-* **Column filter/sort**: Click the header of each column to filter and sort the displayed entries. Since each call generates a CDR, this function is specifically useful for carriers with high call volumes.
-* **Download**: Press **`Download`** to save the record to your hard drive in CSV format. You can also select the columns to include in the download.
-* The **SQL Query** option allows you to run a query.
+* **Columns**: Customize your view by enabling or disabling additional CDR fields from the Columns panel on the right. This allows you to display only the information relevant to your analysis.
+* **Filtering and Sorting**: Click a column header to filter or sort the displayed records. Since each call generates a separate CDR, this feature is especially useful for customers handling high call volumes, helping you quickly locate specific calls or trends.
+* **Download**: Click Download to export the CDRs in CSV format.
+* **SQL Query**: Use the SQL Query option to execute custom queries directly within the portal. This enables advanced data filtering, reporting, and analytics tailored to your requirements.
   
 ## Recalculate Call Detail Record
 
-When viewing CDRs for a specific customer, use the **`Recalc CDR`** button to refresh CDR data that may be inaccurate. Each Operation displays different fields.
+When viewing CDRs for a specific carrier, use the **`Recalc CDR`** button to refresh CDR data that may be inaccurate. Each Operation displays different fields.
 
 * **Operations**
-  * Refresh Credit (recalculates balances)
-  * Refresh Summaries & Credit
-  * Re-rate Calls, and Refresh Summaries & Credit
-  * Adjust Call Duration, Re-rate Calls, and Refresh Summaries and Credit
+    * Refresh Credit (recalculates balances)
+    * Refresh Summaries & Credit
+    * Re-rate Calls, and Refresh Summaries & Credit
+    * Adjust Call Duration, Re-rate Calls, and Refresh Summaries and Credit
 
 * **Date (UTC)** (for Refresh operations)
 
