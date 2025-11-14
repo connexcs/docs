@@ -22,4 +22,4 @@ The Payment feature lets you record the information of the payment you've made t
     2.4 **Description**: You can add any information about the payment in this field.
 
 3. Click `Save` to save the payment information.
-![acc3](/setup/img/acc3.jpg)
+<img src= "/setup/img/acc3.jpg" style="border: 2px solid #4472C4; border-radius: 8px;">
