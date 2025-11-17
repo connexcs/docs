@@ -1,0 +1,3 @@
+# Cloudflare Pages redirects — simplified mapping
+# Only map the specific old page to the new canonical page.
+/apps/architecture/script.md    /apps/architecture/scriptforge.md    301
