@@ -59,7 +59,7 @@ By linking nodes together, you can design automated call handling, IVRs, announc
       3. **App Type** (*required*): Select `Call Flow` from the drop-down.
       4. **Destination** (*required*): Extension or dial-in number callers will dial.
       5. **PBX Server** (*required*): Choose the PBX server (Distributed server selects the closest one automatically).
-      6. Click on `Save`. <br><img src= "/class5/img/callflow1.png" width= "600" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+      6. Click on `Save`. <br><img src= "/class5/img/callflow1.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 5. After saving, the **Call Flow Editor** appears. This editor provides a canvas with draggable nodes you can connect to build your application logic.
 6. The **black icon** on the canvas represents the **incoming call entry point**. When a caller dials the configured **Destination** `1234`, the system begins executing the nodes connected to this point.
 7. **Example: Creating a Simple Call Flow**
