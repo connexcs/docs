@@ -35,7 +35,6 @@ plugins:
     - search
     - mermaid2
     - external-markdown
-    - redirects
 
 markdown_extensions:
   - admonition
@@ -288,9 +287,7 @@ nav:
         - Domain: apps/architecture/domain.md
         - Key Value Store: apps/architecture/key-value.md
         - Page Builder: apps/page-builder.md
-        - ScriptForge:
-            - Overview: apps/architecture/scriptforge/index.md
-            - Migration Guide: apps/architecture/scriptforge/scriptforge-migration.md
+        - ScriptForge: apps/architecture/script.md
         - Template: apps/architecture/template.md
         - Query Builder: apps/architecture/query-builder.md
         - Project: apps/architecture/project.md

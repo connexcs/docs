@@ -6,7 +6,7 @@ This guide shows developers what changes they need to make to scripts written fo
 
 ---
 
-## Section 1: Class 4 Routing (Routes & DID)
+## Class 4 Routing (Routes & DID)
 
 **Old Pattern:**
 
@@ -29,7 +29,7 @@ export function main(data = {}) {
 
 ---
 
-## Section 2: Class 5 Programmable Voice
+## Class 5 Programmable Voice
 
 **Old Pattern:**
 
@@ -58,7 +58,7 @@ export async function main(data) {
 
 ---
 
-## Section 3: C4 Call Control (C4)
+## C4 Call Control (C4)
 
 **Old Pattern:**
 
@@ -87,7 +87,7 @@ export async function main() {
 
 ---
 
-## Section 4: C5 Call Control (C5)
+## C5 Call Control (C5)
 
 **Old Pattern:**
 
@@ -115,7 +115,7 @@ export async function main() {
 
 ---
 
-## Section 5: AI Call Control (AI)
+## AI Call Control (AI)
 
 **Old Pattern:**
 
@@ -143,7 +143,7 @@ export async function main() {
 
 ---
 
-## Section 6: cxJob Background Jobs
+## cxJob Background Jobs
 
 **Old Pattern:**
 
@@ -176,7 +176,7 @@ export async function processJob(data) {
 
 ---
 
-## Section 7: cxUserspace Data Storage
+## cxUserspace Data Storage
 
 **Old Pattern:**
 
@@ -203,7 +203,7 @@ export async function main() {
 
 ---
 
-## Section 10: cxPubSub Messaging
+## cxPubSub Messaging
 
 **Old Pattern:**
 
@@ -230,7 +230,7 @@ export async function main() {
 
 ---
 
-## Section 11: cxRest API Calls
+## cxRest API Calls
 
 **Old Pattern:**
 
@@ -260,7 +260,7 @@ export async function main() {
 
 ---
 
-## Section 12: cxKV Key-Value Storage
+## cxKV Key-Value Storage
 
 **Old Pattern:**
 
@@ -287,7 +287,7 @@ export async function main(data) {
 
 ---
 
-## Section 13: cxSend (Email & SMS)
+## cxSend (Email & SMS)
 
 **Old Pattern:**
 
@@ -314,7 +314,7 @@ export async function main(data) {
 
 ---
 
-## Section 14: Knex Database Queries
+## Knex Database Queries
 
 **Old Pattern:**
 
@@ -345,7 +345,7 @@ export async function main() {
 
 ---
 
-## Section 15: External Libraries (dayjs)
+## External Libraries (dayjs)
 
 **New Pattern:**
 
@@ -359,7 +359,7 @@ export function main() {
 
 ---
 
-## Section 16: Event Polling
+## Event Polling
 
 **Old Pattern:**
 

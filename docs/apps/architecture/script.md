@@ -1,8 +1,5 @@
 # ScriptForge
-
-## Introduction
-
-**ScriptForge** is a powerful scripting engine that allows users to extend and customize the functionality of ConnexCS.
+ 
 
 It provides a JavaScript-based environment where users can develop scripts and applications.
 
@@ -23,14 +20,4 @@ The platform automatically handles scaling, isolation, and the lifecycle of each
 - **Short-lived executions**: Functions are intended for quick tasks and low-latency processing.
 - **Managed scaling**: The platform transparently scales concurrent executions.
 - **Resource limits**: Fair-usage limits apply; long-running or resource-intensive workloads should be hosted externally.
----
-title: "ScriptForge (moved)"
----
-
-<meta http-equiv="refresh" content="0; url=/apps/architecture/scriptforge/">
-<script>window.location.replace('/apps/architecture/scriptforge/');</script>
-
-If you are not redirected automatically, follow this link: <a href="/apps/architecture/scriptforge/">ScriptForge (F-A-A-S)</a>
-
-<!-- canonical -->
-<link rel="canonical" href="/apps/architecture/scriptforge/">
+ 

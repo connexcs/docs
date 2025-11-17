@@ -1,13 +1,5 @@
----
-redirect_from:
-    - /apps/architecture/script/
-    - /apps/architecture/script.md
-    - /apps/architecture/script-forge/
-    - /apps/architecture/script-forge
----
-
 # ScriptForge (F-A-A-S)
-````markdown
+
 # ScriptForge
 
 ## Introduction
@@ -86,7 +78,7 @@ Follow the following format; [SIP code] :space: [Error Message], for throwing er
 
 **For example**, to throw a 404 Not Found, you can use the following
 
-``` js linenums="1"
+```js
 throw new Error('404 Not Found');
 ```
 
@@ -98,7 +90,7 @@ After the routing engine has executed its main function, the system will run the
 
 This presents data as the output to the routing engine and expects the same object structure.
 
-``` js linenums="1"
+```js
 function main (data = {}) {
  // data.routing contains the same data you will find in the Logs
  // in the Raw Data Section
@@ -116,7 +108,7 @@ See the [**ConnexCS ScriptForge documents**](https://scriptforge-docs.connexcs.c
 
 Second parameter is a ctx object
 
-``` js linenums="1"
+```js
 function main (data = {}, ctx) {
  // ctx contains class 5 ctx object 
 }
@@ -132,7 +124,7 @@ Used to receive data from Form Builder in ConnexCS.
 
 You can view it in the control panel or customer portal.
 
-``` js linenums="1"
+```js
 function main (data = {}) {
  // data contains object containing key/value pairs from the form. 
 }
@@ -146,7 +138,7 @@ function main (data = {}) {
     The filename from which the function is exported must be in **lowercase** and must **not contain any spaces or special characters**.
 
 !!! Example "Export module example"
-    ```js linenums="1"
+    ```js
     function run () {
         return 4 + 10
 
@@ -157,7 +149,7 @@ function main (data = {}) {
 + **Import**: Use `import` to bring in code from other modules.
   
 !!! Example "Import module example"
-    ```js linenums="1"
+    ```js
     const { run } = require('fileName')
 
     function main() {
