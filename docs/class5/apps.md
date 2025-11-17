@@ -54,26 +54,25 @@ By linking nodes together, you can design automated call handling, IVRs, announc
 2. Navigate to **Class 5 :material-menu-right: Apps**.
 3. Click on blue `+` button.
 4. A window will appear and prompt you to fill in the following fields:
-   1. **Name** (required): Name of the Call Flow App.
-   2. **Customer** (optional): Assign the app to a specific customer.
-   3. **App Type**: Select `Call Flow` from the drop-down.
-   4. **Destination**: Extension or dial-in number callers will dial.
-   5. **PBX Server**: Choose the PBX server (Distributed server selects the closest one automatically).
-   6. Click on `Save`. <br><img src= "/class5/img/callflow1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+      1. **Name** (required): Name of the Call Flow App.
+      2. **Customer** (optional): Assign the app to a specific customer.
+      3. **App Type** (required): Select `Call Flow` from the drop-down.
+      4. **Destination** (required): Extension or dial-in number callers will dial.
+      5. **PBX Server** (required): Choose the PBX server (Distributed server selects the closest one automatically).
+      6. Click on `Save`. <br><img src= "/class5/img/callflow1.png" width= "600" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 5. After saving, the **Call Flow Editor** appears. This editor provides a canvas with draggable nodes you can connect to build your application logic.
 6. The **black icon** on the canvas represents the **incoming call entry point**. When a caller dials the configured **Destination** `1234`, the system begins executing the nodes connected to this point.
 7. **Example: Creating a Simple Call Flow**
-   1. Drag the `TTS` node onto the canvas.
-   2. Configure its `Text` field with the message you want the system to speak.
-   3. Connect the TTS node to the incoming call entry point.
-   4. Once connected, any inbound call will first hear the text spoken via TTS. <br><img src= "/class5/img/callflow2.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-   5. Drag the `Echo` node onto the canvas.
-   6. Connect the Echo node to the TTS node.
-   7. After the system speaks the TTS message, the call flows into the Echo node.
-   8. Callers will hear their own voice repeated back, making it ideal for audio path testing. <br><img src= "/class5/img/callflow3.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-8. Additional Options: br><img src= "/class5/img/callflow4.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+      1. Drag the `TTS` node onto the canvas.
+      2. Configure its `Text` field with the message you want the system to speak.
+      3. Connect the TTS node to the incoming call entry point.
+      4. Once connected, any inbound call will first hear the text spoken via TTS. <br><img src= "/class5/img/callflow2.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+      5. Drag the `Echo` node onto the canvas.
+      6. Connect the Echo node to the TTS node.
+      7. After the system speaks the TTS message, the call flows into the Echo node.
+      8. Callers will hear their own voice repeated back, making it ideal for audio path testing. <br><img src= "/class5/img/callflow3.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+8. Additional Options: <br><img src= "/class5/img/callflow4.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-## ConneXML
+### ConneXML
 
 [Click here](https://docs.connexcs.com/class5/connexml/) to view the comprehensive guide on ConneXML.
-
