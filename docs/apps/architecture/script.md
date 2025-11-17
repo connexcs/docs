@@ -1,3 +1,9 @@
+---
+redirect: /new/path/scriptforge.md
+---
+
+
+
 # Script Forge
 
 ## Introduction
