@@ -133,14 +133,14 @@ Can be scheduled to provide daily updates on key metrics:
 
 <img src= "/customer/img/alerts-sample33.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-**Script Forge Alerts**  When you set the Area to "Script Forge," it will bypass all the other Alerts fields and allow you to select an existing Script Forge script.
+**ScriptForge (F-A-A-S) Alerts**  When you set the Area to "ScriptForge (F-A-A-S)," it will bypass all the other Alerts fields and allow you to select an existing ScriptForge script.
 
 For example, a script could check locked CLIs by a carrier and then send a regular report with that information.
 
 + Advanced alerting using JavaScript.
 + Allows holistic monitoring, such as tracking CLI-based call blocks.
 
-[**Click here**](https://docs.connexcs.com/developers/scriptforge/) for details on Script Forge.
+[**Click here**](https://docs.connexcs.com/developers/scriptforge/) for details on ScriptForge (F-A-A-S).
 
 ## Test and Alert
 

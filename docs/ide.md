@@ -36,9 +36,9 @@ Build custom web pages and interfaces with a visual editor. [Click here](https:/
 
 Various [drag and drop components](https://docs.connexcs.com/apps/components/alert/) of the page builder help you build the UI.
 
-### Script Forge
+### ScriptForge (F-A-A-S)
 
-Write and manage scripts to add advanced logic, automation, and integrations. [Click here](https://docs.connexcs.com/apps/architecture/script/) for more information.
+Write and manage scripts to add advanced logic, automation, and integrations. [Click here](https://docs.connexcs.com/apps/architecture/scriptforge/) for more information.
 
 ### Template
 

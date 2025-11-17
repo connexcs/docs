@@ -12,9 +12,9 @@ Use Script Forge to manage these calls by adding the numbers to the system. If y
 
 [Click here](https://docs.connexcs.com/apps/architecture/database/) to know the processof Database creation.
 
-**Step 2: Configure Script Forge**
+**Step 2: Configure ScriptForge (F-A-A-S)**
 
-1. Navigate to **IDE :material-menu-right: Script Forge**
+1. Navigate to **IDE :material-menu-right: ScriptForge (F-A-A-S)**
 2. Add the Script **Name**.
 3. Select `App` for the **Type**.
 4. Click **Save**.
@@ -23,7 +23,7 @@ Use Script Forge to manage these calls by adding the numbers to the system. If y
 7. Click the green arrow to `Save and Run`.
 
 !!! info "More on Script Forge"
-    See [**Script Forge**](https://docs.connexcs.com/apps/architecture/script/#configuration) in our documentation for more details on using Script Forge.
+    See [**Script Forge**](https://docs.connexcs.com/apps/architecture/scriptforge/#configuration) in our documentation for more details on using Script Forge.
 
 **Step 3: Add script to Customer**
 

@@ -9,7 +9,7 @@ Use **Button Builder** in combination with [**Pages**](https://docs.connexcs.com
 
     1.  Supplement with additional information from a form.
     
-    2.  Then, run Script Forge to send that data outside the system or perform bulk operations that may require repetition.
+    2.  Then, run ScriptForge (F-A-A-S) to send that data outside the system or perform bulk operations that may require repetition.
 
 ## Create new button
 
@@ -22,7 +22,7 @@ Click :material-plus: and complete the following fields:
 + **Area:** You can select the region where you place your button like *Control Panel*, *Customer Portal* or *Webphone*.
 + **Placement:** This selection will display the button at the top of the Customers list, Carriers list, or Invoices.
 + **Company**: Select the company from the drop-down.
-+ **ScriptForge:** When you click the button, select Script Forge (if any) to launch.
++ **ScriptForge:** When you click the button, select ScriptForge (F-A-A-S) (if any) to launch.
 + + **Function:** It has 2 uses:
   + The selected function will executes when you select ScriptForge.
   + When using services like the Webphone, the function can perform additional tasks on the page, like placing or terminating a call.

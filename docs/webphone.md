@@ -262,7 +262,7 @@ The action to run is dependent on the following configurations. Button Builder c
 }
 ```
 
-### Script-Forge Response
+### ScriptForge Response
 
 Below is the Actions Namespace that describes how actions should run. YOu can use it to start an action or respond to one. This object follows the same rules whether returned by a button or a form.
 
