@@ -35,9 +35,9 @@ plugins:
     - search
     - mermaid2
     - external-markdown
-    - redirects:
-        redirect_maps:
-            apps/architecture/script.md: apps/architecture/scriptforge.md 
+    # - redirects:
+    #     redirect_maps:
+    #         apps/architecture/script.md: apps/architecture/scriptforge.md 
 
 markdown_extensions:
   - admonition
