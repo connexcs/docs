@@ -38,7 +38,7 @@ Various [drag and drop components](https://docs.connexcs.com/apps/components/ale
 
 ### Script Forge
 
-Write and manage scripts to add advanced logic, automation, and integrations. [Click here](https://docs.connexcs.com/apps/architecture/script/) for more information.
+Write and manage scripts to add advanced logic, automation, and integrations. [Click here](https://docs.connexcs.com/apps/architecture/scriptforge/) for more information.
 
 ### Template
 
