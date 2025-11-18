@@ -174,7 +174,7 @@ The Telephone Preference Service (TPS) is the UK national opt‑out register for
 
 ConnexCS supports TPS lookups as a commercial/optional cleansing data source that can be enabled for customers.
 
-##### Compliance and reporting obligations
+##### Compliance and Reporting Obligations
 
 1. **TPS** is overseen by the [DMA (Direct Marketing Association)](https://dma.org.uk/) and regulated by the [ICO(Information Commissioner's Office](https://ico.org.uk/).
 2. Organizations that perform TPS cleansing on behalf of customers must follow the TPS rules and any reporting requirements associated with commercial cleansing services.
@@ -182,6 +182,7 @@ ConnexCS supports TPS lookups as a commercial/optional cleansing data source tha
 4. Using TPS does not remove other legal obligations (for example, TCPA‑like rules do not apply in the UK, but other consumer protection and marketing laws do).
 5. Customers remain responsible for campaign compliance; advise customers to seek legal guidance when in doubt.
 6. **Admins must associate the TPS package with customer accounts before TPS can be enabled for that account**.
+7. **ConnexCS will also be reporting the lookups by the customer's customer to the DMA**.
 
 ##### How to use TPS?
 
