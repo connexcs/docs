@@ -287,8 +287,9 @@ nav:
         - Domain: apps/architecture/domain.md
         - Key Value Store: apps/architecture/key-value.md
         - Page Builder: apps/page-builder.md
-        - ScriptForge: apps/architecture/scriptforge.md
-        - ScriptForge Migration Guide: apps/architecture/scriptforge-migration.md
+        - ScriptForge: 
+            - Introduction: apps/architecture/script.md
+            - ScriptForge Migration Guide: apps/architecture/scriptforge-migration.md
         - Template: apps/architecture/template.md
         - Query Builder: apps/architecture/query-builder.md
         - Project: apps/architecture/project.md
