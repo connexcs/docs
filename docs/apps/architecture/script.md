@@ -1,4 +1,4 @@
-# ScriptForge
+# ScriptForge (F-A-A-S)
 
 ## Introduction
 
@@ -12,7 +12,20 @@ It's made for scripts and small applications. Any larger applications are best e
 
 A fair-usage policy applies, and if there is unnecessary resource use or if there are any attempts to break the sandbox, your script may not function as expected.
 
-It's designed to work as **FaaS** (Functions as a Service), and our redundant infrastructure handles your application's auto scaling needs.
+
+## F-A-A-S (Function-as-a-Service)
+
+ScriptForge functions as a managed Function‑as‑a‑Service platform.
+
+You deploy small, single-purpose JavaScript functions that execute on-demand inside a secure, ephemeral sandbox.
+
+The platform handles scaling, isolation, and lifecycle so developers can focus on application logic rather than infrastructure.
+
+- **When to use:** short-lived tasks, low-latency processing, event-driven code, and operations that benefit from rapid deployment.
+- **Limitations:** long-running or highly CPU/IO-intensive workloads should be hosted externally; fair-usage policies apply.
+- **Benefits:** automatic scaling, managed isolation, reduced operational overhead.
+
+**See the [ScriptForge Migration Guide](scriptforge-migration.md) for migration patterns and examples when updating older scripts to the current platform model.**
 
 ## Developer Documentation
 
