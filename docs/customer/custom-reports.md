@@ -1,5 +1,17 @@
 # Custom Reports
 
+---
+**Document Metadata**
+**Category**: Customer Analytics & Monitoring / Reporting
+**Audience**: Administrators, Engineers, Support Team
+**Difficulty**: Intermediate
+**Time Required**: Approximately 30–60 minutes
+**Prerequisites**: Active ConnexCS account with access to the Customer module, familiarity with call-detail records (CDRs) and basic reporting metrics
+**Related Topics**: [Customer – Stats](https://docs.connexcs.com/customer/stats/), [Developer Analytics & Custom Reports](https://docs.connexcs.com/report/)
+**Next Steps**: [Generate a Custom Report](https://docs.connexcs.com/customer/custom-reports/#steps-to-generate-custom-reports), [Select Report Type: USA Rate Center / DID as CLI / Group by Tech Prefix](https://docs.connexcs.com/customer/custom-reports/#types-of-report)
+
+---
+
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Custom Reports**
 
 ## Overview

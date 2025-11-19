@@ -1,5 +1,17 @@
 # Payments
 
+---
+**Document Metadata**
+**Category**: Customer Account Management / Payments & Billing
+**Audience**: Administrators, Engineers, Support Team
+**Difficulty**: Intermediate
+**Time Required**: Approximately 30–60 minutes
+**Prerequisites**: Active ConnexCS account with Customer-module permissions; ability to manage customer accounts and access payment / top-up functions.
+**Related Topics**: [Billing Overview](https://docs.connexcs.com/billing/), [API / Payment Integrations](https://docs.connexcs.com/setup/integrations/api/)
+**Next Steps**: [Add & Manage Payments for a Customer](https://docs.connexcs.com/customer/payment/#add-payment), [Configure Global Payments and Integration with Processors](https://docs.connexcs.com/setup/integrations/api/#payments)
+
+---
+
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Payments**
 
 The Payments section enables users to efficiently add, track, and manage transactions, including a complete history of previous payments.

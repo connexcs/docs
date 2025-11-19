@@ -1,5 +1,17 @@
 # Stats
 
+---
+**Document Metadata**
+**Category**: Customer Account Management / Analytics & Monitoring
+**Audience**: Administrators, Engineers, Support Teams
+**Difficulty**: Intermediate
+**Time Required**: Approximately 30–60 minutes
+**Prerequisites**: Active ConnexCS account with access to the Customer → Stats module; basic understanding of VoIP signalling, call-quality metrics and service-level indicators.
+**Related Topics**: [Customer – Routing](https://docs.connexcs.com/customer/routing/), [Developer Analytics](https://docs.connexcs.com/developers/analytics/)
+**Next Steps**: [Customer – Route Stats](https://docs.connexcs.com/customer/route-stats/), [Customer – Custom Reports](https://docs.connexcs.com/customer/custom-reports/)
+
+---
+
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Stats**
 
 Use **Stats** to view graphs related to calling and call quality statistics and reports.

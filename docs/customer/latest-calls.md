@@ -1,5 +1,17 @@
 # Latest Calls
 
+---
+**Document Metadata**
+**Category**: Customer Analytics & Monitoring / Real-Time Call Tracking
+**Audience**: Administrators, Engineers, Support Team
+**Difficulty**: Beginner to Intermediate
+**Time Required**: Approximately 15–30 minutes
+**Prerequisites**: Active ConnexCS account with Customer Portal access and permission to view call logs.
+**Related Topics**: [Customer → CDR](https://docs.connexcs.com/customer/cdr/), [Customer → Dialogs](https://docs.connexcs.com/customer/dialogs/)
+**Next Steps**: Use this section to monitor incoming and outgoing calls, then export or drill into records using the CDR section.
+
+---
+
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Latest Calls**
 
 ## Overview

@@ -1,5 +1,17 @@
 # Invoice
 
+---
+**Document Metadata**
+**Category**: Customer Account Management / Invoices & Billing Documents
+**Audience**: Administrators, Engineers, Billing & Finance Teams
+**Difficulty**: Intermediate
+**Time Required**: Approximately 30 – 60 minutes
+**Prerequisites**: Active ConnexCS account with Customer module access; user permissions to view/generate invoices
+**Related Topics**: [Customer → Main](https://docs.connexcs.com/customer/main/), [Document Guide – Invoices](https://docs.connexcs.com/guides/doc-guide/)
+**Next Steps**: [Configure Invoice Schedule & Template](https://docs.connexcs.com/customer/customer/#invoice-schedule), [Download or View Generated Invoices](https://docs.connexcs.com/customer-portal/cp-invoice/)
+
+---
+
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Invoice**
 
 The invoice system allows for seamless customer billing and payment tracking.

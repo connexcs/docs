@@ -1,4 +1,16 @@
-# Tags  
+# Tags
+
+---
+**Document Metadata**
+**Category**: Customer Account Management / Tags & Template-Rules
+**Audience**: Administrators, Engineers, Support Team
+**Difficulty**: Intermediate
+**Time Required**: Approximately 30–45 minutes
+**Prerequisites**: Active ConnexCS account with access to the Customer module and ability to edit Tags configuration
+**Related Topics**: [Alerts for Customers](https://docs.connexcs.com/customer/alerts/), [Routing Strategy Templates](https://docs.connexcs.com/global-routing/)
+**Next Steps**: Create your tag list (e.g., “High-Capacity”, “Premium”, “Trial”), apply to customers in `Customer → Config → Tags`, then assign global alerts or routing templates that reference those tags
+
+---
 
 **Management :material-menu-right: Customer :material-menu-right: Tags**
 

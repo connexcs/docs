@@ -1,5 +1,17 @@
 # Direct Inward Dial (DID)
 
+---
+**Document Metadata**
+**Category**: Customer Account Management / Direct Inward Dial (DID)
+**Audience**: Administrators, Engineers, Account Managers
+**Difficulty**: Intermediate to Advanced
+**Time Required**: Approximately 45-90 minutes
+**Prerequisites**: Active ConnexCS account, knowledge of DID / inbound routing, customer- and carrier-rate-card setup
+**Related Topics**: [Customer – Routing](https://docs.connexcs.com/customer/routing/), [Global DID Management](https://docs.connexcs.com/customer/did/#range-holders)
+**Next Steps**: [Bulk DID Upload](https://docs.connexcs.com/customer/did/#bulk-upload), [Advanced DID Features: ScriptForge, STIR/SHAKEN settings](https://docs.connexcs.com/customer/did/#advanced)
+
+---
+
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: DID**
 
 ## Overview

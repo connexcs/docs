@@ -1,5 +1,17 @@
 # AnyEdge
 
+---
+**Document Metadata**
+**Category**: Setup & Configuration
+**Audience**: Administrators, Engineers
+**Difficulty**: Intermediate
+**Time Required**: Approximately 1-2 hours
+**Prerequisites**: Active ConnexCS account, access to AnyEdge configuration permissions
+**Related Topics**: [AnyEdge Setup](anyedge.md#anyedge-setup), [AnyEdge Domain](anyedge.md#anyedge-domain), [AnyEdge Destinations](anyedge.md#anyedge-destinations)
+**Next Steps**: [Capabilities of AnyEdge](anyedge.md#capabilities), [Inbound Proxy / Dispatcher / Load Balancer](anyedge.md#inbound-proxy--dispatcher--load-balancer)
+
+---
+
 **Setup :material-menu-right: AnyEdge**
 
 ConnexCS **AnyEdge** acts as a load-balancer / dispatcher. It balances the traffic between the SIP servers and the customers.

@@ -1,5 +1,17 @@
 # Ingress Routing
 
+---
+**Document Metadata**
+**Category**: Customer Account Management / Call Flow Configuration
+**Audience**: Administrators, Engineers, Support Team
+**Difficulty**: Intermediate to Advanced
+**Time Required**: Approximately 1–2 hours
+**Prerequisites**: Active ConnexCS account with “Customer” module access, a configured Customer Rate Card, basic understanding of SIP/VoIP call routing and authentication.
+**Related Topics**: [Routing Overview](https://docs.connexcs.com/routing/), [Customer – Auth](https://docs.connexcs.com/customer/auth/)
+**Next Steps**: [Create & Apply Routing Strategies](https://docs.connexcs.com/routing-strategy/), [Ingress Routing Best Practices & Security Controls](https://docs.connexcs.com/customer/routing/#security-controls)
+
+---
+
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Routing**
 
 ## Overview

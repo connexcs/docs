@@ -1,5 +1,17 @@
 # Call Detail Record
 
+---
+**Document Metadata**
+**Category**: Customer Analytics & Monitoring / Call-Detail Records (CDR)
+**Audience**: Administrators, Engineers, Billing & Finance Teams
+**Difficulty**: Intermediate
+**Time Required**: Approximately 30–60 minutes
+**Prerequisites**: An active ConnexCS account with access to the Customer Portal and permission to view CDRs; familiarity with call-detail records, billing concepts, and SQL-style querying.
+**Related Topics**: [Customer – Stats](https://docs.connexcs.com/customer/stats/), [Customer – Latest Calls](https://docs.connexcs.com/customer/latest-calls/)
+**Next Steps**: [Use Query Builder in CDR](https://docs.connexcs.com/customer/cdr/#query-builder), [Recalculate CDRs](https://docs.connexcs.com/customer/cdr/#recalculate-call-detail-record)
+
+---
+
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: CDR**
 
 ## Overview

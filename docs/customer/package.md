@@ -1,5 +1,17 @@
 # Packages
 
+---
+**Document Metadata**
+**Category**: Customer Account Management / Packages & Service Products
+**Audience**: Administrators, Engineers, Billing & Finance Teams
+**Difficulty**: Intermediate
+**Time Required**: Approximately 45–90 minutes
+**Prerequisites**: Active ConnexCS account with access to the “Customer → Package” module; understanding of recurring billing, product provisioning in the system.
+**Related Topics**: [Setup → Packages (global config)](https://docs.connexcs.com/setup/config/packages/),  [Customer → Payment](https://docs.connexcs.com/customer/payment/)
+**Next Steps**: Assign a package to a customer or DID, and configure billing frequency, free-minutes bundles, minimum spend rules. See the [Assign Package](https://docs.connexcs.com/customer/package/#assign-packages) section in the Packages guide.
+
+---
+
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Packages**
 
 Use **Packages** to offer predefined products and services to each customer.
