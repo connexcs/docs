@@ -108,9 +108,11 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 
     The last(4<sup>th</sup> call) redial call was placed at 08:00 PM, so the customer can start redialing at 08:00 PM the next day.
 
-+ **DNC (Do Not Call) List**: The customer won't be able to able to dial the numbers in the specified DNC list. You can add the list of numbers in the [**Database**](https://docs.connexcs.com/developers/database/). 
++ **DNC (Do Not Call) List**: The customer won't be able to able to dial the numbers in the specified DNC list. You can add the list of numbers in the [**Database**](https://docs.connexcs.com/developers/database/).
 
     Apart from your own DNC list you can also choose [**United States Federal DNC**](https://www.donotcall.gov/) or [**United Kingdom TPS**](https://www.tpsonline.org.uk/). Choosing not to accept telemarketing calls is possible because of the National Do Not Call Registry.
+
+    **Explore the details inside ConnexCS: [USA Federal DNC](/customer/routing/#united-states-federal-do-not-call-dnc)| [UK TPS](/customer/routing/#united-kingdom-telephone-preference-service-tps)**
 
 + **Block Destination Type**: You can select and block the calls to various destinations (carriers) like Mobile, Fixed, Paging, etc.
 
@@ -157,8 +159,8 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 
 2. **Key points**
 
-- **What it is**: The **National Do Not Call Registry** (commonly called the **“Federal DNC**”) is a central list of telephone numbers registered by U.S. consumers who do not wish to receive most telemarketing calls.
-- **Scale**: The registry contains on the order of hundreds of millions of numbers (**approximately 250 million** at the time of this note).
+   - **What it is**: The **National Do Not Call Registry** (commonly called the **“Federal DNC**”) is a central list of telephone numbers registered by U.S. consumers who do not wish to receive most telemarketing calls.
+   - **Scale**: The registry contains on the order of hundreds of millions of numbers (**approximately 250 million** at the time of this note).
 
 ##### How ConnexCS uses the Federal DNC
 
@@ -170,7 +172,7 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 
 1. **Overview**
 
-The Telephone Preference Service (TPS) is the UK national opt‑out register for consumers who do not wish to receive unsolicited marketing calls.
+The **Telephone Preference Service (TPS)** is the UK national opt‑out register for consumers who do not wish to receive unsolicited marketing calls.
 
 ConnexCS supports TPS lookups as a commercial/optional cleansing data source that can be enabled for customers.
 
@@ -201,7 +203,9 @@ To enable TPS for a customer account:
 
 ##### Reporting and attribution (reseller / white‑label scenarios)
 
-If a customer r**esells TPS lookups** (for example, by creating a package and selling lookup access to their customers), reporting obligations may still apply. The reporting system typically records which account performed the lookups and ConnexCS will report totals attributed to the account that performed the queries.
+If a customer **resells TPS lookups** (for example, by creating a package and selling lookup access to their customers), reporting obligations may still apply.
+
+The reporting system typically records which account performed the lookups and ConnexCS will report totals attributed to the account that performed the queries.
 
 ### Capacity & Quality Control
 
