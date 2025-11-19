@@ -2,12 +2,19 @@
 
 ---
 **Document Metadata**
+
 **Category**: Customer Support & Troubleshooting
+
 **Audience**: Administrators, Engineers, Support Team
+
 **Difficulty**: Intermediate
+
 **Time Required**: Approximately 30–60 minutes
+
 **Prerequisites**: Access to the ConnexCS Platform (customer portal or admin interface), capability to collect call logs / basic problem-data
+
 **Related Topics**: [Debugging Basics](https://docs.connexcs.com/guides/debugging/), [Call Connection/Signalling Issues](https://docs.connexcs.com/guides/tshoot-signal/), [Call Quality/Media Issues](https://docs.connexcs.com/guides/tshoot-media/)
+
 **Next Steps**: [Root Cause Analysis & Fix Confirmation](https://docs.connexcs.com/reporting-problems/#confirming-a-fix), [Issue Classification & Response Times](https://docs.connexcs.com/reporting-problems/#issue-classification-and-response-times)
 
 ---
