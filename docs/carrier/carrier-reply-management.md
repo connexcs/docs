@@ -1,5 +1,18 @@
 # Reply Management
 
+---
+
+**Document Metadata**
+<br>**Category**: Carrier Management / SIP Response & Routing Control</br>
+**Audience**: Administrators, Engineers, Support Team
+<br>**Difficulty**: Intermediate to Advanced</br>
+**Time Required**: Approximately 1–1.5 hours
+<br>**Prerequisites**: Active ConnexCS account with Carrier-module access; understanding of SIP response codes (100-606), carrier fail-over strategies, and routing logic.</br>
+**Related Topics**: [Carrier Main Configuration](https://docs.connexcs.com/carrier/carrier-main/), [Carrier Failover Settings](https://docs.connexcs.com/carrier/carrier-failover/)
+<br>**Next Steps**: Define and customise SIP reply code mappings for carriers, implement fail-over behaviours based on specific SIP responses, test end-to-end routing and monitor for correct response handling and fail-over activation.</br>
+
+---
+
 **Management :material-menu-right: Carrier :material-menu-right: Reply Management**
 
 ## Overview
