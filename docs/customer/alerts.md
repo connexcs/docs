@@ -3,11 +3,11 @@
 ---
 **Document Metadata**
 <br>**Category**: Customer Analytics & Monitoring / Alerts & Thresholds</br>
-**Audience**: Administrators, Engineers, Support Team
+<br>**Audience**: Administrators, Engineers, Support Team</br>
 <br>**Difficulty**: Intermediate</br>
-**Time Required**: Approximately 30–45 minutes
+<br>**Time Required**: Approximately 30–45 minutes</br>
 <br>**Prerequisites**: Active ConnexCS account with access to the Customer module and ability to define alert thresholds (e-mail recipients, metrics)</br>
-**Related Topics**: [Customer – Stats](https://docs.connexcs.com/customer/stats/), [Customer – Route Stats](https://docs.connexcs.com/customer/route-stats/)
+<br>**Related Topics**: [Customer – Stats](https://docs.connexcs.com/customer/stats/), [Customer – Route Stats](https://docs.connexcs.com/customer/route-stats/)</br>
 <br>**Next Steps**: After setting up alerts, review [Global Alerts overview](https://docs.connexcs.com/customer/alerts/#global-alerts) and integrate push-notifications via [Pushover Notifications](https://docs.connexcs.com/customer/alerts/#pushover-notifications)</br>
 
 ---
