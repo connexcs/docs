@@ -30,9 +30,7 @@ The process is seamless and secure.
 
 ## Limitation Identified
 
-Some tools used inside ConnexCS do not support OAuth.
-
-Because OAuth cannot be used:
+In cases where a third-party application does not support OAuth, the system responds as follows:
 
 1. The system cannot complete an external login flow.
 
