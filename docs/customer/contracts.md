@@ -3,11 +3,11 @@
 ---
 **Document Metadata**
 <br>**Category**: Customer Account Management / Contracts & Compliance</br>
-<br>**Audience**: Administrators, Engineers, Legal / Compliance Teams</br>
+**Audience**: Administrators, Engineers, Legal / Compliance Teams
 <br>**Difficulty**: Intermediate</br>
-<br>**Time Required**: Approximately 30-60 minutes</br>
+**Time Required**: Approximately 30-60 minutes
 <br>**Prerequisites**: Active ConnexCS (ConnexCS) account with access to the Customer module and permission to manage contracts.</br>
-<br>**Related Topics**: [Setup → Config → Contracts](https://docs.connexcs.com/setup/config/contracts/), [Documents (KYC & Upload)](https://docs.connexcs.com/customer/documents/)</br>
+**Related Topics**: [Setup → Config → Contracts](https://docs.connexcs.com/setup/config/contracts/), [Documents (KYC & Upload)](https://docs.connexcs.com/customer/documents/)
 <br>**Next Steps**: [Assigning Contracts to Customers](https://docs.connexcs.com/customer/contracts/#assign-contracts), [Viewing and Approving Contracts via Customer Portal](https://docs.connexcs.com/customer-portal/cp-contracts/)</br>
 
 ---

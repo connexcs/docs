@@ -3,11 +3,11 @@
 ---
 **Document Metadata**
 <br>**Category**: Customer Account Management / Analytics & Monitoring</br>
-<br>**Audience**: Administrators, Engineers, Support Teams</br>
+**Audience**: Administrators, Engineers, Support Teams
 <br>**Difficulty**: Intermediate</br>
-<br>**Time Required**: Approximately 30–60 minutes</br>
+**Time Required**: Approximately 30–60 minutes
 <br>**Prerequisites**: Active ConnexCS account with access to the Customer → Stats module; basic understanding of VoIP signalling, call-quality metrics and service-level indicators.</br>
-<br>**Related Topics**: [Customer – Routing](https://docs.connexcs.com/customer/routing/), [Developer Analytics](https://docs.connexcs.com/developers/analytics/)</br>
+**Related Topics**: [Customer – Routing](https://docs.connexcs.com/customer/routing/), [Developer Analytics](https://docs.connexcs.com/developers/analytics/)
 <br>**Next Steps**: [Customer – Route Stats](https://docs.connexcs.com/customer/route-stats/), [Customer – Custom Reports](https://docs.connexcs.com/customer/custom-reports/)</br>
 
 ---

@@ -3,11 +3,11 @@
 ---
 **Document Metadata**
 <br>**Category**: Customer Account Management / Invoices & Billing Documents</br>
-<br>**Audience**: Administrators, Engineers, Billing & Finance Teams</br>
+**Audience**: Administrators, Engineers, Billing & Finance Teams
 <br>**Difficulty**: Intermediate</br>
-<br>**Time Required**: Approximately 30 – 60 minutes</br>
+**Time Required**: Approximately 30 – 60 minutes
 <br>**Prerequisites**: Active ConnexCS account with Customer module access; user permissions to view/generate invoices</br>
-<br>**Related Topics**: [Customer → Main](https://docs.connexcs.com/customer/main/), [Document Guide – Invoices](https://docs.connexcs.com/guides/doc-guide/)</br>
+**Related Topics**: [Customer → Main](https://docs.connexcs.com/customer/main/), [Document Guide – Invoices](https://docs.connexcs.com/guides/doc-guide/)
 <br>**Next Steps**: [Configure Invoice Schedule & Template](https://docs.connexcs.com/customer/customer/#invoice-schedule), [Download or View Generated Invoices](https://docs.connexcs.com/customer-portal/cp-invoice/)</br>
 
 ---

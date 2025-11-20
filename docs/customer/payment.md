@@ -3,11 +3,11 @@
 ---
 **Document Metadata**
 <br>**Category**: Customer Account Management / Payments & Billing</br>
-<br>**Audience**: Administrators, Engineers, Support Team</br>
+**Audience**: Administrators, Engineers, Support Team
 <br>**Difficulty**: Intermediate</br>
-<br>**Time Required**: Approximately 30–60 minutes</br>
+**Time Required**: Approximately 30–60 minutes
 <br>**Prerequisites**: Active ConnexCS account with Customer-module permissions; ability to manage customer accounts and access payment / top-up functions.</br>
-<br>**Related Topics**: [Billing Overview](https://docs.connexcs.com/billing/), [API / Payment Integrations](https://docs.connexcs.com/setup/integrations/api/)</br>
+**Related Topics**: [Billing Overview](https://docs.connexcs.com/billing/), [API / Payment Integrations](https://docs.connexcs.com/setup/integrations/api/)
 <br>**Next Steps**: [Add & Manage Payments for a Customer](https://docs.connexcs.com/customer/payment/#add-payment), [Configure Global Payments and Integration with Processors](https://docs.connexcs.com/setup/integrations/api/#payments)</br>
 
 ---
