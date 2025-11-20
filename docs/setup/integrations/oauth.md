@@ -30,7 +30,7 @@ The process is seamless and secure.
 
 ## Limitation Identified
 
-In cases where a third-party application does not support OAuth, the system responds as follows:
+If a third-party application does not support OAuth, it's due following reasons:
 
 1. The system cannot complete an external login flow.
 
