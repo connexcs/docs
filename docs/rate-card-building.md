@@ -1,5 +1,18 @@
 # Rate Card Overview
 
+---
+
+**Document Metadata**
+**Category**: Rate Card Management / Building & Compilation
+**Audience**: Administrators, Engineers, Billing & Product Teams
+**Difficulty**: Intermediate to Advanced
+**Time Required**: Approximately 1–2 hours
+**Prerequisites**: Active ConnexCS account; understanding of prefix routing (NPA-NXX), cost billing structures, and relationship between customer and provider rate cards.
+**Related Topics**: [Provider Rate Card](https://docs.connexcs.com/provider-ratecard/), [Customer Rate Card](https://docs.connexcs.com/customer-ratecard/)
+**Next Steps**: Import or upload provider rate cards, compile/build customer rate cards using the engine, apply profit rules, test prefix matching and cost accuracy, then link rate cards to routing configurations.
+
+---
+
 **Rate Cards** are an important ConnexCS feature because they organise the majority of the information.
 
 Rate Cards define both the routing and billing of customer calls.
