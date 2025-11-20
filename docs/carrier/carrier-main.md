@@ -8,7 +8,7 @@
 <br>**Difficulty**: Intermediate to Advanced</br>
 **Time Required**: Approximately 1–2 hours
 <br>**Prerequisites**: Active ConnexCS account with Carrier-module access; understanding of SIP trunking, termination/origination flows, and provider configuration fundamentals.</br>
-**Related Topics**: [Carrier Rate Cards](https://docs.connexcs.com/rate-card/), [Routing Overview](https://docs.connexcs.com/routing/), [Provider Registration](https://docs.connexcs.com/carrier/registration/)
+**Related Topics**: [Carrier Rate Cards](https://docs.connexcs.com/rate-card-building/), [Routing Overview](https://docs.connexcs.com/routing/)
 <br>**Next Steps**: Add and configure carrier accounts, set up authentication (IP/SIP credentials), define channel/CPS limits, connect rate cards, and validate behaviour through Routing Tools, Logs, and Circuit Test.</br>
 
 ---

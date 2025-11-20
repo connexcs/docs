@@ -8,7 +8,7 @@
 <br>**Difficulty**: Intermediate to Advanced</br>
 **Time Required**: Approximately 1–2 hours
 <br>**Prerequisites**: Active ConnexCS account with routing permissions; basic configuration of rate cards and carrier/customer routing; understanding of call flows and routing logic.</br>
-**Related Topics**: [Routing Overview](https://docs.connexcs.com/routing/), [Routing Global](https://docs.connexcs.com/routing-global/)
+**Related Topics**: [Routing Overview](https://docs.connexcs.com/routing/), [Routing Global](https://docs.connexcs.com/global-routing/)
 <br>**Next Steps**: Choose your routing strategy type (e.g., LCR, Round Robin, Tiered), create the strategy, assign it to a customer or route, configure weights or sequence as needed, and monitor performance for optimal call completion.</br>
 
 ---
