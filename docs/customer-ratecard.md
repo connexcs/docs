@@ -3,13 +3,13 @@
 ---
 
 **Document Metadata**
-**Category**: Rate Card Management / Customer Rate Card Setup & Configuration
+<br>**Category**: Rate Card Management / Customer Rate Card Setup & Configuration</br>
 **Audience**: Administrators, Engineers, Billing & Product Teams
-**Difficulty**: Intermediate to Advanced
+<br>**Difficulty**: Intermediate to Advanced</br>
 **Time Required**: Approximately 1–2 hours
-**Prerequisites**: Active ConnexCS account with Rate Cards access; at least one Provider Rate Card configured and a basic understanding of prefix routing, cost-billing, and profit margin rules.
+<br>**Prerequisites**: Active ConnexCS account with Rate Cards access; at least one Provider Rate Card configured and a basic understanding of prefix routing, cost-billing, and profit margin rules.</br>
 **Related Topics**: [Provider Rate Card](https://docs.connexcs.com/provider-ratecard/), [Rate Card Overview](https://docs.connexcs.com/rate-card-building/)
-**Next Steps**: Create a new Customer Rate Card, link it to the appropriate Provider Card(s), configure profit and billing settings, build/compile the card, then assign it to customer accounts and validate routing and billing accuracy.
+<br>**Next Steps**: Create a new Customer Rate Card, link it to the appropriate Provider Card(s), configure profit and billing settings, build/compile the card, then assign it to customer accounts and validate routing and billing accuracy.</br>
 
 ---
 
