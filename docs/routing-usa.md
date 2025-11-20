@@ -1,5 +1,18 @@
 # USA Routing
 
+---
+
+**Document Metadata**
+<br>**Category**: Routing / USA Number Routing (NPA-NXX & LRN)</br>
+**Audience**: Administrators, Engineers, Network & Ops Team
+<br>**Difficulty**: Intermediate to Advanced</br>
+**Time Required**: Approximately 1–2 hours
+<br>**Prerequisites**: Active ConnexCS account with routing permissions; understanding of North American Numbering Plan (NPA-NXX), Local Number Portability (LNP), and routing logic for interstate/intrastate calls.</br>
+**Related Topics**: [Routing Overview](https://docs.connexcs.com/routing/), [Rate Card Building](https://docs.connexcs.com/rate-card-building/)
+<br>**Next Steps**: Segregate USA calls by NPA-NXX prefix, enable LRN/LNP settings if required, configure appropriate interstate/intrastate routing and pricing, then test routing using live traffic and DIP logic.</br>
+
+---
+
 **USA Routing** is more complicated than international routing. If you are unfamiliar with conventional (international) routing in ConnexCS, please see our page about [**Routing**](https://docs.connexcs.com/routing/) first.
 
 ## NPA-NXX

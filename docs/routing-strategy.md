@@ -1,5 +1,18 @@
 # Routing Strategy
 
+---
+
+**Document Metadata**
+<br>**Category**: Routing / Routing Strategy Configuration</br>
+**Audience**: Administrators, Engineers, Network & Operations Team
+<br>**Difficulty**: Intermediate to Advanced</br>
+**Time Required**: Approximately 1–2 hours
+<br>**Prerequisites**: Active ConnexCS account with routing permissions; basic configuration of rate cards and carrier/customer routing; understanding of call flows and routing logic.</br>
+**Related Topics**: [Routing Overview](https://docs.connexcs.com/routing/), [Routing Global](https://docs.connexcs.com/routing-global/)
+<br>**Next Steps**: Choose your routing strategy type (e.g., LCR, Round Robin, Tiered), create the strategy, assign it to a customer or route, configure weights or sequence as needed, and monitor performance for optimal call completion.</br>
+
+---
+
 **Management :material-menu-right: Routing Strategy**
 
 A **Routing Strategy** lets you route calls for different providers through the routing engine using a specified set of rules.
@@ -14,13 +27,13 @@ With ConnexCS, you can use several types of routing strategies:
 
 | Strategy  | Description|
 |----------|-------------|
-| **LCR** |    Least Cost Routing (LCR) configures parameters to the lowest cost-per-call. |
-| **Random** |    Routing calls to any random route without any sequence, though you can add weighting. |
-| **Round Robin** |    System will pick a call route according to a predetermined sequence. |
-| **Manual** |    Route calls manually as decided.|
-| **Reverse LCR** |   First, it selects the most expensive route. |
-| **Tier** |    Tiers in routing strategy allows distribution of calls. You can add as many cards for a customer. The calls get distributed corresponding to the weights assigned to them. It will try one carrier from each rate card.|
-|**LCR Performance**|  The carrier with the lowest cost gets selected, and out of those carriers with the best performance (connecting to the maximum calls), is given priority. Here, the carrier with the best performance will get used even if its cost is higher than other low-cost carriers.|
+|**LCR**|Least Cost Routing (LCR) configures parameters to the lowest cost-per-call. |
+|**Random**|Routing calls to any random route without any sequence, though you can add weighting. |
+|**Round Robin**|System will pick a call route according to a predetermined sequence. |
+|**Manual** |Route calls manually as decided.|
+|**Reverse LCR**|First, it selects the most expensive route. |
+|**Tier**|Tiers in routing strategy allows distribution of calls. You can add as many cards for a customer. The calls get distributed corresponding to the weights assigned to them. It will try one carrier from each rate card.|
+|**LCR Performance**| The carrier with the lowest cost gets selected, and out of those carriers with the best performance (connecting to the maximum calls), is given priority. Here, the carrier with the best performance will get used even if its cost is higher than other low-cost carriers.|
 
 ## Configure Routing Strategy
 
