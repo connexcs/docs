@@ -21,8 +21,11 @@ Our platform is designed to streamline your communication and billing processes,
 ### Initial Setup Overview
 
 The initial setup in ConnexCS will configure:
+
 * A single carrier
+
 * A single customer  
+
 * A single rate card
 
 This provides you with a base configuration that you can expand as needed. Whether you're managing a few customers or scaling to handle unlimited connections, ConnexCS supports seamless growth with flexible and robust features to meet your business requirements.

@@ -1,13 +1,13 @@
 # Dashboard
 
 ---
-<br>**Document Metadata**</br>
+**Document Metadata**
 <br>**Category**: Dashboard & Monitoring</br>
-<br>**Audience**: Administrators, Engineers, Support Team</br>
+**Audience**: Administrators, Engineers, Support Team
 <br>**Difficulty**: Beginner to Intermediate</br>
-<br>**Time Required**: Approximately 30–45 minutes</br>
+**Time Required**: Approximately 30–45 minutes
 <br>**Prerequisites**: Active ConnexCS Platform account with access to the Customer Portal</br>
-<br>**Related Topics**: [Customer Portal Overview](https://docs.connexcs.com/customer-portal/cp-dashboard/), [Logging & Call Trace](https://docs.connexcs.com/logging/), [Analytics & Reporting](https://docs.connexcs.com/developers/analytics/)</br>
+**Related Topics**: [Customer Portal Overview](https://docs.connexcs.com/customer-portal/cp-dashboard/), [Logging & Call Trace](https://docs.connexcs.com/logging/), [Analytics & Reporting](https://docs.connexcs.com/developers/analytics/)
 <br>**Next Steps**: [Configuring Alerts & Balance Notifications](https://docs.connexcs.com/customer/alerts/), [Detailed Call Stats](https://docs.connexcs.com/customer/stats/), [CDR Export](https://docs.connexcs.com/customer/cdr/)</br>
 
 ---
