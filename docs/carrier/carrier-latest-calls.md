@@ -3,13 +3,13 @@
 ---
 
 **Document Metadata**
-**Category**: Carrier Management / Monitoring & Call-Detail Insights
+<br>**Category**: Carrier Management / Monitoring & Call-Detail Insights</br>
 **Audience**: Administrators, Engineers, Support Team
-**Difficulty**: Intermediate
+<br>**Difficulty**: Intermediate</br>
 **Time Required**: Approximately 30–45 minutes
-**Prerequisites**: Active ConnexCS account with Carrier-module access; overview of call flow monitoring, carrier performance metrics.
+<br>**Prerequisites**: Active ConnexCS account with Carrier-module access; overview of call flow monitoring, carrier performance metrics.</br>
 **Related Topics**: [Carrier Main Configuration](https://docs.connexcs.com/carrier/carrier-main/), [Carrier Stats](https://docs.connexcs.com/carrier/carrier-stats/)
-**Next Steps**: Review the “Latest Calls” table for the carrier, filter by time-window (Live/Last 24 h/Daily/Monthly), export if needed, and use insights to validate routing, detect anomalies (e.g., false answer supervision, high failure counts), or trigger further investigation via CDR/Logging.
+<br>**Next Steps**: Review the “Latest Calls” table for the carrier, filter by time-window (Live/Last 24 h/Daily/Monthly), export if needed, and use insights to validate routing, detect anomalies (e.g., false answer supervision, high failure counts), or trigger further investigation via CDR/Logging.</br>
 
 ---
 

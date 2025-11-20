@@ -3,13 +3,13 @@
 ---
 
 **Document Metadata**
-**Category**: Carrier Management / Alerts & Thresholds
+<br>**Category**: Carrier Management / Alerts & Thresholds</br>
 **Audience**: Administrators, Engineers, Support Team
-**Difficulty**: Intermediate
+<br>**Difficulty**: Intermediate</br>
 **Time Required**: Approximately 30–45 minutes
-**Prerequisites**: Active ConnexCS account with Carrier-module access; understanding of call-flow metrics (e.g., fail-over counts, CPS, channel usage) and email-based notification workflows.
+<br>**Prerequisites**: Active ConnexCS account with Carrier-module access; understanding of call-flow metrics (e.g., fail-over counts, CPS, channel usage) and email-based notification workflows.</br>
 **Related Topics**: [Carrier Stats](https://docs.connexcs.com/carrier/carrier-stats/), [Carrier Reply Management](https://docs.connexcs.com/carrier/carrier-reply-management/)
-**Next Steps**: Define alert thresholds (e.g., consecutive fail-over limit), assign recipient email(s), test alert execution and ensure fail-over monitoring is operational.
+<br>**Next Steps**: Define alert thresholds (e.g., consecutive fail-over limit), assign recipient email(s), test alert execution and ensure fail-over monitoring is operational.</br>
 
 ---
 

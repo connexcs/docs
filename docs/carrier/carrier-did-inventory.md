@@ -3,13 +3,13 @@
 ---
 
 **Document Metadata**
-**Category**: Carrier Management / DID Inventory & Number Management
+<br>**Category**: Carrier Management / DID Inventory & Number Management</br>
 **Audience**: Administrators, Engineers, Support Team
-**Difficulty**: Intermediate
+<br>**Difficulty**: Intermediate</br>
 **Time Required**: Approximately 1 hour
-**Prerequisites**: Active ConnexCS account with Carrier-module access; understanding of DID (Direct Inward Dial) provisioning, range-holder workflows and number-pool management.
+<br>**Prerequisites**: Active ConnexCS account with Carrier-module access; understanding of DID (Direct Inward Dial) provisioning, range-holder workflows and number-pool management.</br>
 **Related Topics**: [Carrier DID](https://docs.connexcs.com/carrier/carrier-did/), [Customer DID](https://docs.connexcs.com/customer/did/)
-**Next Steps**: Review the un-assigned DID inventory for the carrier, upload new DIDs or ranges via bulk upload, assign DIDs to customers or ranges, configure routing and billing settings for each DID.
+<br>**Next Steps**: Review the un-assigned DID inventory for the carrier, upload new DIDs or ranges via bulk upload, assign DIDs to customers or ranges, configure routing and billing settings for each DID.</br>
 
 ---
 

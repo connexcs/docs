@@ -3,13 +3,13 @@
 ---
 
 **Document Metadata**
-**Category**: Carrier Management / Call-Detail Records (CDR) & Reporting
+<br>**Category**: Carrier Management / Call-Detail Records (CDR) & Reporting</br>
 **Audience**: Administrators, Engineers, Support & Analytics Teams
-**Difficulty**: Intermediate
+<br>**Difficulty**: Intermediate</br>
 **Time Required**: Approximately 30–45 minutes
-**Prerequisites**: Active ConnexCS account with Carrier-module access; familiarity with call detail records (CDRs), routing analytics and reporting workflows.
+<br>**Prerequisites**: Active ConnexCS account with Carrier-module access; familiarity with call detail records (CDRs), routing analytics and reporting workflows.</br>
 **Related Topics**: [Carrier Stats](https://docs.connexcs.com/carrier/carrier-stats/), [Carrier Latest Calls](https://docs.connexcs.com/carrier/carrier-latest-calls/)
-**Next Steps**: Navigate to the `Carrier → CDR` tab, review and download call detail records for the carrier, use the Recalc function when data appears incorrect (note: rerating is irreversible).
+<br>**Next Steps**: Navigate to the `Carrier → CDR` tab, review and download call detail records for the carrier, use the Recalc function when data appears incorrect (note: rerating is irreversible).</br>
 
 ---
 

@@ -3,13 +3,13 @@
 ---
 
 **Document Metadata**
-**Category**: Carrier Management / Analytics & Monitoring
+<br>**Category**: Carrier Management / Analytics & Monitoring</br>
 **Audience**: Administrators, Engineers, Support Team
-**Difficulty**: Intermediate
+<br>**Difficulty**: Intermediate</br>
 **Time Required**: Approximately 30–45 minutes
-**Prerequisites**: Active ConnexCS account with Carrier-module access; familiarity with traffic metrics such as Channels, CPS, ASR, ACD and SIP signalling.
+<br>**Prerequisites**: Active ConnexCS account with Carrier-module access; familiarity with traffic metrics such as Channels, CPS, ASR, ACD and SIP signalling.</br>
 **Related Topics**: [Carrier Main Configuration](https://docs.connexcs.com/carrier/carrier-main/), [Customer Stats](https://docs.connexcs.com/customer/stats/)
-**Next Steps**: Navigate to the Stats tab for a carrier, review key performance graphs (e.g., Channels, ACD, ASR), filter by time period, identify under-performing routes or carriers, then generate alerts or take corrective actions as required.
+<br>**Next Steps**: Navigate to the Stats tab for a carrier, review key performance graphs (e.g., Channels, ACD, ASR), filter by time period, identify under-performing routes or carriers, then generate alerts or take corrective actions as required.</br>
 
 ---
 

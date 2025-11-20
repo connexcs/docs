@@ -3,13 +3,13 @@
 ---
 
 **Document Metadata**
-**Category**: Carrier Management / Analytics & Custom Reporting
+<br>**Category**: Carrier Management / Analytics & Custom Reporting</br>
 **Audience**: Administrators, Engineers, Support Team
-**Difficulty**: Intermediate
+<br>**Difficulty**: Intermediate</br>
 **Time Required**: Approximately 30-45 minutes
-**Prerequisites**: Active ConnexCS account with Carrier-module access; basic understanding of call traffic metrics (ASR, ACD) and routing prefixes.
+<br>**Prerequisites**: Active ConnexCS account with Carrier-module access; basic understanding of call traffic metrics (ASR, ACD) and routing prefixes.</br>
 **Related Topics**: [Carrier Stats](https://docs.connexcs.com/carrier/carrier-stats/), [Global Custom Reports](https://docs.connexcs.com/report/)
-**Next Steps**: Navigate to the `Carrier → Custom Reports` screen, select the desired report type (e.g., ASR per Route), specify your date range, generate the report and export results for carrier performance analysis.
+<br>**Next Steps**: Navigate to the `Carrier → Custom Reports` screen, select the desired report type (e.g., ASR per Route), specify your date range, generate the report and export results for carrier performance analysis.</br>
 
 ---
 

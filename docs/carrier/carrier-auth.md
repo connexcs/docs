@@ -3,13 +3,13 @@
 ---
 
 **Document Metadata**
-**Category**: Carrier Management / Authentication & Gateway Setup
+<br>**Category**: Carrier Management / Authentication & Gateway Setup</br>
 **Audience**: Administrators, Engineers, Support Team
-**Difficulty**: Intermediate to Advanced
+<br>**Difficulty**: Intermediate to Advanced</br>
 **Time Required**: Approximately 1–2 hours
-**Prerequisites**: Active ConnexCS account with Carrier-module access; familiarity with SIP/IP authentication, gateway routing, and capacity limiting concepts.
+<br>**Prerequisites**: Active ConnexCS account with Carrier-module access; familiarity with SIP/IP authentication, gateway routing, and capacity limiting concepts.</br>
 **Related Topics**: [Carrier Main Configuration](https://docs.connexcs.com/carrier/carrier-main/), [Capacity Limiting (CPS & Channels)](https://docs.connexcs.com/limiting-cps/)
-**Next Steps**: Define carrier IP authentication entries (including CIDR ranges, weights, proxy settings), configure SIP User authentication if required, set capacity limits per-gateway, and validate with test traffic.
+<br>**Next Steps**: Define carrier IP authentication entries (including CIDR ranges, weights, proxy settings), configure SIP User authentication if required, set capacity limits per-gateway, and validate with test traffic.</br>
 
 ---
 
