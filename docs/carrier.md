@@ -2,6 +2,12 @@
 
 **Management :material-menu-right: Carrier**
 
+---
+
+**Document Metadata** <br>**Category**: Carrier Management / Termination & Origination Configuration</br>**Audience**: Administrators, Engineers, Support Team<br>**Difficulty**: Intermediate to Advanced</br>**Time Required**: Approximately 1–2 hours<br>**Prerequisites**: Active ConnexCS account with Carrier-module access; understanding of SIP trunking, termination/origination routing, and rate-card setup.</br>**Related Topics**: [Carrier Rate Cards](https://docs.connexcs.com/rate-card/), [Routing Overview](https://docs.connexcs.com/routing/)<br>**Next Steps**: Configure carrier authentication & endpoints, build provider routing strategies, and validate routing behaviour using Logs, Circuit Test, or Debugging Tools.</br>
+
+---
+
 ## Overview
 
 The Carrier Interface in ConnexCS provides functionalities for managing carrier settings, credit, authentication, and response handling.
