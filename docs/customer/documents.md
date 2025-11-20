@@ -2,13 +2,13 @@
 
 ---
 **Document Metadata**
-**Category**: Customer Account Management / Documents & KYC
-**Audience**: Administrators, Engineers, Compliance Teams
-**Difficulty**: Intermediate
-**Time Required**: Approximately 15–30 minutes
-**Prerequisites**: Active ConnexCS account with “Customer” module access; basic understanding of KYC / document collection workflows
-**Related Topics**: [Guide to Customer Documents](https://docs.connexcs.com/guides/doc-guide/), [Customer → Contracts](https://docs.connexcs.com/customer/contracts/)
-**Next Steps**: After creating a document request, instruct the customer to upload their file via the Customer Portal; monitor the upload and review it for approval.
+<br>**Category**: Customer Account Management / Documents & KYC</br>
+<br>**Audience**: Administrators, Engineers, Compliance Teams</br>
+<br>**Difficulty**: Intermediate</br>
+<br>**Time Required**: Approximately 15–30 minutes</br>
+<br>**Prerequisites**: Active ConnexCS account with “Customer” module access; basic understanding of KYC / document collection workflows</br>
+<br>**Related Topics**: [Guide to Customer Documents](https://docs.connexcs.com/guides/doc-guide/), [Customer → Contracts](https://docs.connexcs.com/customer/contracts/)</br>
+<br>**Next Steps**: After creating a document request, instruct the customer to upload their file via the Customer Portal; monitor the upload and review it for approval.</br>
 
 ---
 

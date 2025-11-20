@@ -2,13 +2,13 @@
 
 ---
 **Document Metadata**
-**Category**: Monitoring & Troubleshooting
-**Audience**: Administrators, Engineers, Support Team
-**Difficulty**: Intermediate
-**Time Required**: Approximately 30–60 minutes
-**Prerequisites**: Access to the ConnexCS Switch control-panel, knowledge of carrier/termination routing, and basic metrics such as MOS, jitter, packet loss.
-**Related Topics**: [Call Quality/Media Issues](https://docs.connexcs.com/guides/tshoot-media/)
-**Next Steps**: [Run a Circuit Test](https://docs.connexcs.com/circuit-test/#run-circuit-test), [Schedule Recurring Tests](https://docs.connexcs.com/circuit-test/#schedule)
+<br>**Category**: Monitoring & Troubleshooting</br>
+<br>**Audience**: Administrators, Engineers, Support Team</br>
+<br>**Difficulty**: Intermediate</br>
+<br>**Time Required**: Approximately 30–60 minutes</br>
+<br>**Prerequisites**: Access to the ConnexCS Switch control-panel, knowledge of carrier/termination routing, and basic metrics such as MOS, jitter, packet loss.</br>
+<br>**Related Topics**: [Call Quality/Media Issues](https://docs.connexcs.com/guides/tshoot-media/)</br>
+<br>**Next Steps**: [Run a Circuit Test](https://docs.connexcs.com/circuit-test/#run-circuit-test), [Schedule Recurring Tests](https://docs.connexcs.com/circuit-test/#schedule)</br>
 
 ---
 

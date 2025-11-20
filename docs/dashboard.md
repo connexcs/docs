@@ -1,14 +1,14 @@
 # Dashboard
 
 ---
-**Document Metadata**
-**Category**: Dashboard & Monitoring
-**Audience**: Administrators, Engineers, Support Team
-**Difficulty**: Beginner to Intermediate
-**Time Required**: Approximately 30–45 minutes
-**Prerequisites**: Active ConnexCS Platform account with access to the Customer Portal
-**Related Topics**: [Customer Portal Overview](https://docs.connexcs.com/customer-portal/cp-dashboard/), [Logging & Call Trace](https://docs.connexcs.com/logging/), [Analytics & Reporting](https://docs.connexcs.com/developers/analytics/)
-**Next Steps**: [Configuring Alerts & Balance Notifications](https://docs.connexcs.com/customer/alerts/), [Detailed Call Stats](https://docs.connexcs.com/customer/stats/), [CDR Export](https://docs.connexcs.com/customer/cdr/)
+<br>**Document Metadata**</br>
+<br>**Category**: Dashboard & Monitoring</br>
+<br>**Audience**: Administrators, Engineers, Support Team</br>
+<br>**Difficulty**: Beginner to Intermediate</br>
+<br>**Time Required**: Approximately 30–45 minutes</br>
+<br>**Prerequisites**: Active ConnexCS Platform account with access to the Customer Portal</br>
+<br>**Related Topics**: [Customer Portal Overview](https://docs.connexcs.com/customer-portal/cp-dashboard/), [Logging & Call Trace](https://docs.connexcs.com/logging/), [Analytics & Reporting](https://docs.connexcs.com/developers/analytics/)</br>
+<br>**Next Steps**: [Configuring Alerts & Balance Notifications](https://docs.connexcs.com/customer/alerts/), [Detailed Call Stats](https://docs.connexcs.com/customer/stats/), [CDR Export](https://docs.connexcs.com/customer/cdr/)</br>
 
 ---
 

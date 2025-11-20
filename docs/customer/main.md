@@ -2,13 +2,13 @@
 
 ---
 **Document Metadata**
-**Category**: Customer Account Management
-**Audience**: Administrators, Engineers, Support Team
-**Difficulty**: Intermediate
-**Time Required**: Approximately 30–60 minutes
-**Prerequisites**: Active ConnexCS Control Panel account, permission to edit customer-account settings
-**Related Topics**: [Customer – Create & Configure](https://docs.connexcs.com/customer/customer/), [Documents (KYC & File Upload)](https://docs.connexcs.com/customer/documents/)
-**Next Steps**: [Contacts — Add & Manage Customer Contacts](https://docs.connexcs.com/customer/main/#contacts), [Internal Number Block — Setting Extension Ranges](https://docs.connexcs.com/customer-portal/cp-dashboard/#internal-number-block)
+<br>**Category**: Customer Account Management</br>
+<br>**Audience**: Administrators, Engineers, Support Team</br>
+<br>**Difficulty**: Intermediate</br>
+<br>**Time Required**: Approximately 30–60 minutes</br>
+<br>**Prerequisites**: Active ConnexCS Control Panel account, permission to edit customer-account settings</br>
+<br>**Related Topics**: [Customer – Create & Configure](https://docs.connexcs.com/customer/customer/), [Documents (KYC & File Upload)](https://docs.connexcs.com/customer/documents/)</br>
+<br>**Next Steps**: [Contacts — Add & Manage Customer Contacts](https://docs.connexcs.com/customer/main/#contacts), [Internal Number Block — Setting Extension Ranges](https://docs.connexcs.com/customer-portal/cp-dashboard/#internal-number-block)</br>
 
 ---
 
