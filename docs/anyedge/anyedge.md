@@ -2,6 +2,10 @@
 
 **Setup :material-menu-right: AnyEdge**
 
+## Overview
+
+AnyEdge is a dynamic, distributed solution designed to optimize call distribution and load balancing across multiple regions. It enhances redundancy, improves call routing efficiency, and ensures high availability for VoIP traffic.
+
 ConnexCS **AnyEdge** acts as a load-balancer / dispatcher. It balances the traffic between the SIP servers and the customers.
 
 It's a next-generation solution for the Edge Session Initiation Protocol (SIP).
@@ -20,6 +24,40 @@ Calls are routed to the nearest AnyEdge server for optimal performance and reduc
     1. We provide 10,000+ CPS to all customers for optimal scalability and performance.
     2. All our customers benefit from 100Gbps DDoS protection.
 
+### Key Features
+
++ **Global Load Balancing**: Routes calls intelligently based on region and performance.
++ **Failover Protection**: Ensures seamless call routing in case of outages.
+**Auto-Scaling**: Dynamically adjusts resources based on demand.
++ **Optimized Call Distribution**: Distributes traffic efficiently to reduce latency.
++ **Flexible Configuration**: Supports various routing policies and priority settings.
+
+### Benefits
+
++ **Improved Redundancy**: Avoids downtime by automatically rerouting calls.
++ **Optimized Call Routing**: Ensures better call quality and lower latency.
++ **Cost Efficiency**: Uses LCR to minimize operational costs.
++ **Scalability**: Adapts to traffic spikes dynamically.
+
+### Load Balancer
+
+The load balancer is a core feature from the beginning, designed to manage call routing and provide failover mechanisms in your deployment.
+
+There are two primary methods for handling call distribution:
+
++ **Call Routing via a Load Balancer**:
+    + **Mechanism**: Calls are sent from point A to point C via an intermediary (B), where B acts as the load balancer.
+    + **Key Benefit**: Provides a scalable method to distribute call traffic across servers, ensuring that no single server is overloaded.
+
++ **302 Redirect as a Fallback**:
+    + **Mechanism**: Instead of directly routing through B, point A sends a call to B. B replies with a 302 redirect (temporary) pointing to C, which results in point A ultimately sending the call directly to C.
+    + **Considerations**: This “poor man’s redirect” offers basic call failover but lacks the granular control required for full dispatcher functionality.
+
++ **Capacity Failover**:
+    + **Scenario**: If a server exceeds its capacity (e.g., over 10 calls per second or 20 channels), the call is blocked by default.
+    + **Solution**: The system can automatically redirect overflow calls to another server in the cluster—be it server two or a hybrid hosted solution.
+    + **Key Benefit**: Ensures high availability by distributing excess load to servers with available capacity, acting as an effective failsafe.
+
 ## AnyEdge Setup
 
 ### Configure AnyEdge
@@ -33,6 +71,7 @@ Click the :material-plus: button to set the following:
 * **Algorithm**: How to distribute calls.
 
     See [**Inbound Proxy / Dispatcher / Load Balancer**](https://docs.connexcs.com/anyedge/anyedge/#inbound-proxy-dispatcher-load-balancer) for details.
+
 * **Cyber-Physical System(CPS)**: Total calls per second allowed.
 
     See [**Metrics**](https://docs.connexcs.com/anyedge/anyedge/#metrics) for details
