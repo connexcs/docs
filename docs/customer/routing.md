@@ -190,12 +190,14 @@ ConnexCS supports TPS lookups as a commercial/optional cleansing data source tha
 
 To enable TPS for a customer account:
 
-1. Log in to the Control Panel as an administrator.
-2. Navigate to: **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Package**.
-3. Add or assign the TPS cleansing package to the customer's account.
-4. Click **Add** and select the **TPS package**. Configure any package-specific billing or start dates as required.
-5. Go to **Routing :material-menu-right: Security & Controls :material-menu-right: DNC list**.
-6. Enable **United Kingdom TPS** in the DNC selections for the customer.
+1. Contact **Support Team** to add the TPS Package.
+2. Log in to the **Control Panel** as an administrator.
+3. Navigate to: **Setup :material-menu-right: Config :material-menu-right: [Customer Name] :material-menu-right: Package**. [Click here](https://docs.connexcs.com/setup/config/packages/) for detailed steps.
+4. Navigate to: **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Package**.
+5. Add or assign the TPS cleansing package to the customer's account.
+6. Click **Add** and select the **TPS package**. Configure any package-specific billing or start dates as required.
+7. Go to **Routing :material-menu-right: Security & Controls :material-menu-right: DNC list**.
+8. Enable **United Kingdom TPS** in the DNC selections for the customer.
 
 !!! Note
     1. The **TPS package is a prerequisite**. The TPS option will not appear in the account DNC selections until the package is assigned by an administrator.
