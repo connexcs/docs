@@ -4,11 +4,11 @@
 
 **Document Metadata**
 <br>**Category**: Platform Administration / Global Configuration</br>
-<br>**Audience**: Administrators, Engineers, Operations Team
+<br>**Audience**: Administrators, Engineers, Operations Team</br>
 <br>**Difficulty**: Intermediate to Advanced</br>
-<br>**Time Required**: Approximately 1–1.5 hours</br>
+**Time Required**: Approximately 1–1.5 hours
 <br>**Prerequisites**: Active ConnexCS account with admin access; familiarity with system-wide configuration, global settings, and multi-domain management.</br>
-<br>**Related Topics**: [Getting Started](https://docs.connexcs.com/getting-started/), [Servers & Infrastructure](https://docs.connexcs.com/setup/settings/servers/)</br>
+**Related Topics**: [Getting Started](https://docs.connexcs.com/getting-started/), [Servers & Infrastructure](https://docs.connexcs.com/setup/settings/servers/)
 <br>**Next Steps**: Review and modify global settings (language, time-zone, domains), manage global aliases and global transcription settings, implement naming and template conventions, then audit global logs and permissions.</br>
 
 ---
