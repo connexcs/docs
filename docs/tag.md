@@ -5,7 +5,7 @@
 **Document Metadata**
 <br>**Category**: Routing / Tag-Based Templates & Configuration</br>
 <br>**Audience**: Administrators, Engineers, Support Team</br>
-<br>**Difficulty**: Intermediate<br>
+<br>**Difficulty**: Intermediate</br>
 <br>**Time Required**: Approximately 30–45 minutes</br>
 <br>**Prerequisites**: Active ConnexCS account with management permissions; understanding of customer and routing configuration workflows.</br>
 <br>**Related Topics**: [Alerts](https://docs.connexcs.com/customer/alerts/), [Routing Strategy](https://docs.connexcs.com/routing-strategy/)</br>
