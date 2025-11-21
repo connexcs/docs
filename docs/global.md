@@ -7,7 +7,7 @@
 **Audience**: Administrators, Engineers, Operations Team<
 <br>**Difficulty**: Intermediate to Advanced</br>
 **Time Required**: Approximately 1–1.5 hours
-**Prerequisites**: Active ConnexCS account with admin access; familiarity with system-wide configuration, global settings, and multi-domain management.
+<br>**Prerequisites**: Active ConnexCS account with admin access; familiarity with system-wide configuration, global settings, and multi-domain management.</br>
 **Related Topics**: [Getting Started](https://docs.connexcs.com/getting-started/), [Servers & Infrastructure](https://docs.connexcs.com/setup/settings/servers/)
 <br>**Next Steps**: Review and modify global settings (language, time-zone, domains), manage global aliases and global transcription settings, implement naming and template conventions, then audit global logs and permissions.</br>
 
