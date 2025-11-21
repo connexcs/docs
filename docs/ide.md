@@ -1,5 +1,18 @@
 # IDE
 
+---
+
+**Document Metadata**
+<br>**Category**: Developer & Application Platform / IDE (Integrated Development Environment)</br>
+**Audience**: Administrators, Engineers, Developers
+<br>**Difficulty**: Intermediate to Advanced</br>
+**Time Required**: Approximately 1–2 hours
+<br>**Prerequisites**: Active ConnexCS account with platform-access; familiarity with application scripting, UI components, database concepts, and workflow logic.</br>
+**Related Topics**: [Apps Platform Architecture](https://docs.connexcs.com/apps/architecture/), [Template System](https://docs.connexcs.com/apps/architecture/template/)
+<br>**Next Steps**: Navigate to the IDE module, explore key components (Applications, Page Builder, Script Forge, Query Builder, etc.), start a new Project, define environment variables and data sources, then build and deploy your workflow or application within the ConnexCS ecosystem.</br>
+
+---
+
 ## Overview
 
 The **ConnexCS IDE** is a centralized workspace that enables you to build, customize, and manage applications within the ConnexCS platform.

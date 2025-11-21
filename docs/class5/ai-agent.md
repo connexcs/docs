@@ -6,7 +6,7 @@
 <br>**Category**: Class 5 Services / AI Agent Configuration</br>
 <br>**Audience**: Administrators, Engineers, Support Team</br>
 <br>**Difficulty**: Intermediate to Advanced</br>
-</br>**Time Required**: Approximately 1–2 hours</br>
+<br>**Time Required**: Approximately 1–2 hours</br>
 <br>**Prerequisites**: Active ConnexCS account with Class 5 module access; familiarity with conversational AI concepts, IVR flows, and application scripting.</br>
 <br>**Related Topics**: [Class 5 Apps & Workflows](https://docs.connexcs.com/class5/apps/), [ConneXML Call Flow Integration](https://docs.connexcs.com/class5/connexml/)</br>
 <br>**Next Steps**: Create your AI Agent with name, destination extension, model/platform settings; configure transcriber, TTS, built-in functions; integrate your agent into a call flow and enable knowledge-base or function calls.</br>
