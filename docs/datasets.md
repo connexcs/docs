@@ -10,7 +10,7 @@ This page provides a consolidated overview of all databases available within Con
 
 ---
 
-## **Data Set Overview**
+## Data Set Overview
 
 Below is a consolidated table of all supported data sets.
 
