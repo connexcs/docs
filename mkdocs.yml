@@ -193,7 +193,8 @@ nav:
         - NAT Traversal: far-end-nat-traversal.md
         - Security: security.md
         - Scaling and Load Balancing: scaling-load-balancing.md
-        - Specifications: spec.md        
+        - Specifications: spec.md
+        - ConnexCS Refernece Datasets: datasets.md        
 
     - Topical Guides:
         - NEW FCC Regulations on STIR/SHAKEN : guides/stir-shaken-fcc.md
