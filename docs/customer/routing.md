@@ -180,10 +180,9 @@ ConnexCS supports TPS lookups as an optional commercial data cleansing source th
 
 1. **TPS** is overseen by the [DMA (Direct Marketing Association)](https://dma.org.uk/) and regulated by the [ICO (Information Commissioner's Office)](https://ico.org.uk/).
 2. Organizations that perform TPS cleansing on behalf of customers must follow TPS rules and any reporting requirements associated with commercial cleansing services.
-3. ConnexCS (or third-party cleansers) **are required** to submit monthly lookup totals or other metrics to the DMA/ICO.
-4. Using TPS does not remove other legal obligations under UK consumer protection and marketing laws.
-5. Customers remain responsible for campaign compliance and should seek legal guidance when in doubt.
-6. ConnexCS are obliged to submit monthly lookup totals to the DMA.
+3. Using TPS does not remove other legal obligations under UK consumer protection and marketing laws.
+4. Customers remain responsible for campaign compliance and should seek legal guidance when in doubt.
+5. ConnexCS are obliged to submit monthly lookup totals to the DMA.
 
 ##### How to use TPS
 
