@@ -1,5 +1,18 @@
 # Knowledge Base
 
+---
+
+**Document Metadata**
+<br>**Category**: Class 5 Services / Knowledge Base Configuration</br>
+**Audience**: Administrators, Engineers, Support Team
+<br>**Difficulty**: Intermediate</br>
+**Time Required**: Approximately 30–45 minutes
+<br>**Prerequisites**: Active ConnexCS account with Class 5 module access; familiarity with conversational AI workflows and document indexing.</br>
+**Related Topics**: [AI Agent](https://docs.connexcs.com/class5/ai-agent/), [Apps (Call Flows)](https://docs.connexcs.com/class5/apps/)
+<br>**Next Steps**: Navigate to `Class 5 → Knowledge Base`, click “+” to add a new indexable document (URL), enter Name and Optional Customer scope, wait for indexing to complete in the Knowledge Base Status column, then reference the base within an AI Agent or call-flow for real-time retrieval of support content.</br>
+
+---
+
 **Class 5 :material-menu-right: Knowledge Base**
 
 ## Overview
