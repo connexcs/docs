@@ -18,8 +18,8 @@ Below is a consolidated table of all supported data sets.
 |----|-----------|------|
 |**DNO (Do not Originate)**|A **DNO list** is a database of unassigned, inbound-only, or spoofed numbers that should never originate calls, used to automatically block fraudulent or invalid outbound traffic.
 [Click here](https://docs.connexcs.com/dnc/#do-not-originate-dno-list-blocking) for more information| **Included**|
-|**US Federal DNC**| U.S. national Do Not Call registry for compliance filtering. [Click here](https://www.donotcall.gov/) for more information|**Included** |
-|**UK TPS**|UK Do Not Call database for consumer marketing restrictions|**Included**|
+|**US Federal DNC**| U.S. national Do Not Call registry for compliance filtering. [Click here]([https://www.donotcall.gov/)](https://docs.connexcs.com/customer/routing/#united-states-federal-do-not-call-dnc) for more information|**Included** |
+|**UK TPS**|UK Do Not Call database for consumer marketing restrictions. [Click here](https://docs.connexcs.com/customer/routing/#united-kingdom-telephone-preference-service-tps) for more information.|**Included**|
 |**LRN**|**LRN** is a U.S. number-porting method where the receiving carrier assigns a new routing number, allowing call charges to differ from the original NPA-NXX rate based on the resolved LRN. [Click here]([https://docs.connexcs.com/dnc/#do-not-originate-dno-list-blocking](https://docs.connexcs.com/routing-usa/#local-routing-number-local-number-portability)) for more information
 | **Included**|
 |**International Number Plans**|The **Dial Code / Destination** database provides quick lookup of international numbering plans by country and prefix.
