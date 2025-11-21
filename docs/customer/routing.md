@@ -172,41 +172,39 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 
 1. **Overview**
 
-The **Telephone Preference Service (TPS)** is the UK national opt‑out register for consumers who do not wish to receive unsolicited marketing calls.
+The **Telephone Preference Service (TPS)** is the UK national opt-out register for consumers who do not wish to receive unsolicited marketing calls.
 
-ConnexCS supports TPS lookups as a commercial/optional cleansing data source that can be enabled for customers.
+ConnexCS supports TPS lookups as an optional commercial data cleansing source that can be enabled for customers.
 
 ##### Compliance and Reporting Obligations
 
-1. **TPS** is overseen by the [DMA (Direct Marketing Association)](https://dma.org.uk/) and regulated by the [ICO(Information Commissioner's Office](https://ico.org.uk/).
-2. Organizations that perform TPS cleansing on behalf of customers must follow the TPS rules and any reporting requirements associated with commercial cleansing services.
-3. ConnexCS (or third‑party cleansers) may be required to submit monthly lookup totals or other metrics to the DMA/ICO.
-4. Using TPS does not remove other legal obligations (for example, TCPA‑like rules do not apply in the UK, but other consumer protection and marketing laws do).
-5. Customers remain responsible for campaign compliance; advise customers to seek legal guidance when in doubt.
-6. **Admins must associate the TPS package with customer accounts before TPS can be enabled for that account**.
-7. **ConnexCS will also be reporting the lookups by the customer's customer to the DMA**.
+1. **TPS** is overseen by the [DMA (Direct Marketing Association)](https://dma.org.uk/) and regulated by the [ICO (Information Commissioner's Office)](https://ico.org.uk/).
+2. Organizations that perform TPS cleansing on behalf of customers must follow TPS rules and any reporting requirements associated with commercial cleansing services.
+3. Using TPS does not remove other legal obligations under UK consumer protection and marketing laws.
+4. Customers remain responsible for campaign compliance and should seek legal guidance when in doubt.
+5. ConnexCS are obliged to submit monthly lookup totals to the DMA.
 
-##### How to use TPS?
+##### How to use TPS
 
 To enable TPS for a customer account:
 
 1. Contact **Support Team** to add the TPS Package.
 2. Log in to the **Control Panel** as an administrator.
-3. Navigate to **Setup :material-menu-right: Config :material-menu-right: Package** then create a package. While creating the package select **ConnexCS Package** as **UK TPS Lookup**.
-4. Then navigate to **Management :material-menu-right: Customer:material-menu-right: [Customer Name] :material-menu-right: Package [TPS cleansing package]** to assign the package to the customer's account. 
+3. Navigate to **Setup :material-menu-right: Config :material-menu-right: Package** then create a package. While creating the package, select **UK TPS Lookup** as the **ConnexCS Package type**.
+4. Navigate to **Management :material-menu-right: Customer:material-menu-right: [Customer Name] :material-menu-right: Package [TPS cleansing package]** to assign the package to the customer's account. 
 5. Go to **Routing :material-menu-right: Security & Controls :material-menu-right: DNC list**.
 6. Enable **United Kingdom TPS** in the DNC selections for the customer.
+7. ConnexCS are obliged submit monthly lookups to the DMA.
 
 !!! Note
     1. The **TPS package is a prerequisite**. The TPS option will not appear in the account DNC selections until the package is assigned by an administrator.
     2. Once enabled, the platform will apply TPS checks as part of the customer's outbound DNC matching logic.
     3. TPS Package is **free-of-charge**.
 
-##### Reporting and attribution (reseller / white‑label scenarios)
+##### Reporting and Attribution (Reseller/White-Label Scenarios)
+If a customer resells TPS lookups (for example, by creating a package and selling lookup access to their customers), reporting obligations may still apply. 
 
-If a customer **resells TPS lookups** (for example, by creating a package and selling lookup access to their customers), reporting obligations may still apply.
-
-The reporting system typically records which account performed the lookups and ConnexCS will report totals attributed to the account that performed the queries.
+The reporting system typically records which account performed the lookups, and ConnexCS will report totals attributed to the account that performed the queries.
 
 ### Capacity & Quality Control
 
