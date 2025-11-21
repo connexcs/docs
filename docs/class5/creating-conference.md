@@ -1,7 +1,6 @@
 # Conference Calls
 
 ---
----
 
 **Document Metadata**
 <br>**Category**: Class 5 Services / Conference Bridge Setup</br>
