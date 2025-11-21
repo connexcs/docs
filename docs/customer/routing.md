@@ -192,16 +192,16 @@ To enable TPS for a customer account:
 
 1. Contact **Support Team** to add the TPS Package.
 2. Log in to the **Control Panel** as an administrator.
-3. Navigate to: **Setup :material-menu-right: Config :material-menu-right: [Customer Name] :material-menu-right: Package**. [Click here](https://docs.connexcs.com/setup/config/packages/) for detailed steps.
-4. Navigate to: **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Package**.
-5. Add or assign the TPS cleansing package to the customer's account.
-6. Click **Add** and select the **TPS package**. Configure any package-specific billing or start dates as required.
+3. Navigate to **Setup :material-menu-right: Config :material-menu-right: Package** then create a package. While creating select **ConnexCS Package** as **UK TPS Lookup**.
+4. Then navigate to **Management :material-menu-right: Customer:material-menu-right: [Customer Name]: material-menu-right: Package [TPS cleansing package]** to the customer's account. 
+5. Click **Add** and select the **TPS package**. Configure any package-specific billing or start dates as required.
 7. Go to **Routing :material-menu-right: Security & Controls :material-menu-right: DNC list**.
 8. Enable **United Kingdom TPS** in the DNC selections for the customer.
 
 !!! Note
     1. The **TPS package is a prerequisite**. The TPS option will not appear in the account DNC selections until the package is assigned by an administrator.
     2. Once enabled, the platform will apply TPS checks as part of the customer's outbound DNC matching logic.
+    3. TPS Package is **free-of-charge**.
 
 ##### Reporting and attribution (reseller / white‑label scenarios)
 
