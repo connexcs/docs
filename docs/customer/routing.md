@@ -110,7 +110,9 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 
 + **DNC (Do Not Call) List**: The customer won't be able to able to dial the numbers in the specified DNC list. You can add the list of numbers in the [**Database**](https://docs.connexcs.com/developers/database/).
 
-    Apart from your own DNC list you can also choose [**United States Federal DNC**](https://www.donotcall.gov/). Choosing not to accept telemarketing calls is possible because of the National Do Not Call Registry.
+    Apart from your own DNC list you can also choose [**United States Federal DNC**](https://www.donotcall.gov/) or [**United Kingdom TPS**](https://www.tpsonline.org.uk/). Choosing not to accept telemarketing calls is possible because of the National Do Not Call Registry.
+
+    **Explore the details inside ConnexCS: [USA Federal DNC](/customer/routing/#united-states-federal-do-not-call-dnc)| [UK TPS](/customer/routing/#united-kingdom-telephone-preference-service-tps)**
 
 + **Block Destination Type**: You can select and block the calls to various destinations (carriers) like Mobile, Fixed, Paging, etc.
 
@@ -146,6 +148,65 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 + **TCPA  Litigator DNC**: Enabling this flag blocks outbound calls to known TCPA Litigators.
 
 <img src= "/customer/img/rsecurity.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+#### United States Federal Do Not Call (DNC)
+
+1. **Overview**
+
+    ConnexCS integrates the [United States Federal Do Not Call (DNC) registry](https://www.donotcall.gov/) into the platform to provide real‑time cleansing of outbound calling lists and to help customers meet regulatory obligations.
+
+    ConnexCS makes the Federal DNC available to customers at **no additional charge** as a standard data source for DNC checking.
+
+2. **Key points**
+
+   - **What it is**: The **National Do Not Call Registry** (commonly called the **“Federal DNC**”) is a central list of telephone numbers registered by U.S. consumers who do not wish to receive most telemarketing calls.
+   - **Scale**: The registry contains on the order of hundreds of millions of numbers (**approximately 250 million** at the time of this note).
+
+##### How ConnexCS uses the Federal DNC
+
+1. **Real‑time cleansing**: Outbound diallers and routing rules can query ConnexCS DNC sources (including the Federal DNC) at call time to block or flag numbers that appear on the registry.
+2. **DNC lists in the Control Panel (Routing)**: Administrators can enable the `United States Federal DNC` option for a customer account so that the platform will apply the registry to outbound calls originating from that account.
+3. **FTC / reported ANI feeds**: ConnexCS can optionally ingest FTC reported‑calls / ANI block feeds to help block known spammer CLIs in addition to standard DNC matching.
+
+#### United Kingdom Telephone Preference Service (TPS)
+
+1. **Overview**
+
+The **Telephone Preference Service (TPS)** is the UK national opt‑out register for consumers who do not wish to receive unsolicited marketing calls.
+
+ConnexCS supports TPS lookups as a commercial/optional cleansing data source that can be enabled for customers.
+
+##### Compliance and Reporting Obligations
+
+1. **TPS** is overseen by the [DMA (Direct Marketing Association)](https://dma.org.uk/) and regulated by the [ICO(Information Commissioner's Office](https://ico.org.uk/).
+2. Organizations that perform TPS cleansing on behalf of customers must follow the TPS rules and any reporting requirements associated with commercial cleansing services.
+3. ConnexCS (or third‑party cleansers) may be required to submit monthly lookup totals or other metrics to the DMA/ICO.
+4. Using TPS does not remove other legal obligations (for example, TCPA‑like rules do not apply in the UK, but other consumer protection and marketing laws do).
+5. Customers remain responsible for campaign compliance; advise customers to seek legal guidance when in doubt.
+6. **Admins must associate the TPS package with customer accounts before TPS can be enabled for that account**.
+7. **ConnexCS will also be reporting the lookups by the customer's customer to the DMA**.
+
+##### How to use TPS?
+
+To enable TPS for a customer account:
+
+1. Contact **Support Team** to add the TPS Package.
+2. Log in to the **Control Panel** as an administrator.
+3. Navigate to **Setup :material-menu-right: Config :material-menu-right: Package** then create a package. While creating the package select **ConnexCS Package** as **UK TPS Lookup**.
+4. Then navigate to **Management :material-menu-right: Customer:material-menu-right: [Customer Name] :material-menu-right: Package [TPS cleansing package]** to assign the package to the customer's account. 
+5. Go to **Routing :material-menu-right: Security & Controls :material-menu-right: DNC list**.
+6. Enable **United Kingdom TPS** in the DNC selections for the customer.
+
+!!! Note
+    1. The **TPS package is a prerequisite**. The TPS option will not appear in the account DNC selections until the package is assigned by an administrator.
+    2. Once enabled, the platform will apply TPS checks as part of the customer's outbound DNC matching logic.
+    3. TPS Package is **free-of-charge**.
+
+##### Reporting and attribution (reseller / white‑label scenarios)
+
+If a customer **resells TPS lookups** (for example, by creating a package and selling lookup access to their customers), reporting obligations may still apply.
+
+The reporting system typically records which account performed the lookups and ConnexCS will report totals attributed to the account that performed the queries.
 
 ### Capacity & Quality Control
 

@@ -2,28 +2,40 @@
 
 ## Illegal Robocalling
 
-In recent years, **Illegal Robocalling** is one of the most problematic activities for telecommunication providers. In these calls, callers mask their identity or spoof the number of a legitimate entity.
+Illegal robocalling refers to automated or bulk outbound calling activity that employs techniques to obscure or falsify caller identity, evade call‑filtering and Do‑Not‑Call (DNC) protections, or otherwise deliver unsolicited or fraudulent communications at scale.
 
-With 4.6 billion robocalls a month in the U.S. alone, this activity impacts everyone in different ways:
+### Common methods observed in illegal robocalling
 
-1. Estimated value of Lost time from unwanted Robocalls for customers and consumers is around $3 billion / year. It doesn't include losses related to fraud.
-2. Service providers are handling and manage constant service calls from customers. It also manages the extra traffic on the networks.
-3. Businesses can't reach customers, since no one wants to answer the phone.
+- **Caller ID spoofing**: Forging the originating number to impersonate legitimate entities.
+- **Automated dialing platforms**: Predictive or auto‑dialers that generate high call volumes.
+- **Transit or intermediary chaining**: Routing calls through multiple carriers to obscure source.
+- Reused or repurposed numbers and SIM farms to maintain volume and persistence.
 
-To address this issue, the U.S. FCC (Federal Communications Commission) has mandated to block the calls that aren't registered with a tracking database.
+### Operational impacts for providers
+
+- Increased signaling and media load on routing and switching infrastructure.
+- Elevated fraud and social‑engineering risks for subscribers.
+- Additional operational overhead for customer support, investigations, and remediation.
+- Regulatory and financial exposure where DNC obligations or mitigation requirements are not met.
+
+## Regulatory Position (U.S. FCC)
+
+**The FCC mandates that service providers**:
+
+- Block traffic that originates from unregistered, unverifiable, or non-authenticated sources.
+
+- Verify caller identity using registered calling numbers and approved frameworks (e.g., STIR/SHAKEN).
+
+- Maintain compliance with federal consumer protection rules, including Do Not Call (DNC) regulations.
+
+- These requirements are designed to reduce illegal spoofing, fraud, and non-compliant robocall traffic.
+
+## Scale and measurement
+
+Industry reports (e.g., FCC analyses) indicate robocall volumes in the billions per month in the U.S.; providers should assume high prevalence and provision mitigation accordingly.
 
 !!! note "Legitimate vs. Illegal Robocalls"
-    Robocalling isn't considered illegal or necessarily bad.
-
-Legitimate examples of a robocall would be from:
-
-+ Telephone campaigns (telemarketing or political)
-
-+ Public-service (from your child's school)
-
-+ Emergency announcements (Amber Alert or Weather Advisory)
-
-When robocalling uses spoofed numbers or illegal methods to reach end users, considered as illegal. Examples include bypassing Do Not Call lists. These calls are typically associated with some sort of added fraud or scam.
+    Not all automated calls are illegal. Examples of legitimate automated calls include emergency notifications, transactional alerts, and other messages delivered with customer consent or a prior relationship. Illegal robocalls use spoofing, deception, or non‑consensual dialing to evade protections and enact fraud.
 
 ## TRACED Act
 
