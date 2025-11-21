@@ -1,5 +1,18 @@
 # Alias
 
+---
+
+**Document Metadata**
+<br>**Category**: Platform Administration / Number Manipulation & Global Aliases</br>
+**Audience**: Administrators, Engineers, Support Team
+<br>**Difficulty**: Intermediate</br>
+**Time Required**: Approximately 30–45 minutes
+<br>**Prerequisites**: Active ConnexCS account with Global configuration permissions; understanding of call routing flows and number-rewriting concepts.</br>
+**Related Topics**: [Routing Overview](https://docs.connexcs.com/routing/), [Customer Alias Configuration](https://docs.connexcs.com/customer/alias/)
+<br>**Next Steps**: Navigate to `Global → Alias`, define or edit alias rules (prefix or regex based), select applicable country/company context, validate rewriting logic by test calls, and ensure old calls route correctly through modified numbers.</br>
+
+---
+
 **Global :material-menu-right: Alias**
 
 ## Overview

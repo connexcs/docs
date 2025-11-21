@@ -1,5 +1,17 @@
 # Routing
 
+---
+**Document Metadata**  
+**Category:** Routing & Call Control  
+**Audience:** Administrators, Support Engineers  
+**Difficulty:** Intermediate  
+**Time Required:** 1-2 hours  
+**Prerequisites:** [Carrier Setup](carrier.md), [Customer Setup](customer/customer.md), [Rate Cards](rate-card-building.md)  
+**Related Topics:** [Routing Strategy](routing-strategy.md), [Global Routing](global-routing.md), [Customer Routing](customer/routing.md)  
+**Next Steps:** [Routing Strategy](routing-strategy.md), [Circuit Test](circuit-test.md)
+
+---
+
 ## Route Path
 
 ```mermaid

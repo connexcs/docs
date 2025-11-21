@@ -1,5 +1,18 @@
 # Voicemail
 
+---
+
+**Document Metadata**
+<br>**Category**: Class 5 Services / Voicemail Configuration & Management</br>
+**Audience**: Administrators, Engineers, Support Team
+<br>**Difficulty**: Intermediate</br>
+**Time Required**: Approximately 30–60 minutes
+<br>**Prerequisites**: Active ConnexCS account with Class 5 module access; knowledge of PBX extensions and voicemail user workflows.</br>
+**Related Topics**: [Class 5 Group & Queue Setup](https://docs.connexcs.com/class5/creating-group/), [Class 5 IVR Configuration](https://docs.connexcs.com/class5/creating-ivr/)
+<br>**Next Steps**: Navigate to `Class 5 → Voicemail`, configure default greeting, manage user inboxes, customise dial-pad navigation options, test voicemail by dialing *1, then integrate voicemail into IVR or call-flow apps as required.</br>
+
+---
+
 **Class 5 :material-menu-right: Voicemail**
 
 Displays all **Voicemail** on the system (unlike the other Class5 modules).

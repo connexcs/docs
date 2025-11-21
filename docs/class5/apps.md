@@ -1,5 +1,18 @@
 # Apps
 
+---
+
+**Document Metadata**
+**Category**: Class 5 Services / Apps & Workflow Builder
+<br>**Audience**: Administrators, Engineers, Support Team</br>
+**Difficulty**: Intermediate to Advanced
+<br>**Time Required**: Approximately 1–2 hours</br>
+**Prerequisites**: Active ConnexCS account with Class 5 module access; familiarity with IVR, call flow logic, and optional scripting (for ConneXML or ScriptForge)
+<br>**Related Topics**: [AI Agent](https://docs.connexcs.com/class5/ai-agent/), [Knowledge Base](https://docs.connexcs.com/class5/knowledge-base/), [ConneXML](https://docs.connexcs.com/class5/connexml/)
+<br>**Next Steps**: Navigate to `Class 5 → Apps`, click `+` to build a new App (select Call Flow or ConneXML), define destination and server, drag-and-drop nodes (for Call Flow) or write XML logic (for ConneXML) to build your telephony application.
+
+---
+
 **Class 5 :material-menu-right: Apps**
 
 The ConnexCS **Apps** feature allows providers to create small, simple, drag-and-drop applications and [ConneXML applications](https://docs.connexcs.com/class5/connexml/).
