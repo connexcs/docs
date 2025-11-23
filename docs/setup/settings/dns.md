@@ -1,5 +1,18 @@
 # Domain Name System
 
+---
+
+**Document Metadata**
+<br>**Category**: Setup / Settings / DNS</br>
+<br>**Audience**: Administrators, Network Engineers, Operations Team</br>
+<br>**Difficulty**: Intermediate</br>
+<br>**Time Required**: Approximately 30–45 minutes
+<br>**Prerequisites**: Active ConnexCS account with Setup-Settings access; basic understanding of DNS records (A, SRV, CNAME), SIP signalling domains, and high-availability deployment concepts.</br>
+<br>**Related Topics**: [Servers – Deployment & Configuration](https://docs.connexcs.com/setup/settings/servers/), [Scaling & Load Balancing – DNS Strategy](https://docs.connexcs.com/scaling-load-balancing/)
+<br>**Next Steps**: Navigate to `Setup → Settings → DNS`, enter your company domain (e.g., `sip.mycompany.com`), configure DNS records using the provided `*.sip.direct` service (A, SRV, CNAME), enable AnyEdge mirroring if applicable, assign low TTL for rapid failover, and test resolution across your SIP signalling endpoints.</br>
+
+---
+
 **Setup :material-menu-right: Settings :material-menu-right: DNS**
 
 ConnexCS provides a managed **DNS (Domain Name System)** platform geared towards VoIP delivery, so low TTL's (Time to live) won't overload your DNS provider.
