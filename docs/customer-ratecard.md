@@ -95,7 +95,7 @@ This serves as your primary management dashboard, allowing you to quickly search
 |**Force Presentation**|[Click here](/customer-ratecard/#config) to know more|
 |**Direction**|Cards are either *Termination* (calling out to PSTN) or *Origination* (DID numbers receiving calls from the PSTN). Termination is the most common card used by ConnexCS customers|
 |**Currency**|The currency for the provider's region (typically USD, EUR, or GBP)|
-|**?**|Lists the upstream providers (parent cards) as well as the total number of customers associated with the card (as specified in Customer :material-menu-right: routing). Any changes made to this card will impact the customers associated with the card. Click on the Provider ID or Customer Name to view the configuration|
+|**?**|Lists the upstream providers (parent cards) as well as the total number of customers associated with the card (as specified in Customer :material-menu-right: Routing). Any changes made to this card will impact the customers associated with the card. Click on the Provider ID or Customer Name to view the configuration|
 |**ID**| A system identifier that acts as a placeholder and prevents confusion between similarly named items|
 |**Rule Count**|The number of rows in the Rate Card|
 |**Compile**|Displays the upstream provider cards associated with the customer card. <br>a. Shows total customers using a specific card.</br> b. Allows users to track which customers are subscribed to a particular card|
@@ -152,11 +152,8 @@ II. **Step 2**
 a. After saving, you must define your rates either by uploading a rate sheet or manually adding prefixes. This is what makes the rate card operational for billing and routing.
 
 b. Three primary options are now visible:
-
     i. **Build from Provider Card**: This is the preferred method and requires you to select a Provider Rate Card in Properties :material-menu-right: Basic.
-    
     ii. **Bulk Upload**: Import rates via a CSV file (recommended for full rate sheets).
-    
     iii. **Manual Add**: Add prefixes and rates one by one directly in the interface.
 
 c. **Bulk Upload**: The preferred method for adding a Rate Card is to import/upload it:
@@ -185,10 +182,8 @@ c. **Bulk Upload**: The preferred method for adding a Rate Card is to import/upl
 d. **Manual Add**: To manually add Rate Card rows, select Create Draft and then add / modify / delete required rows."
 
 e. **Build from Provider Card**:
-
-    1. Click **`Build`** and confirm.
-    
-    2. A notification will tell you if the build was successful. You may need to refresh the card to see the new settings.
+  1. Click **`Build`** and confirm.
+  2. A notification will tell you if the build was successful. You may need to refresh the card to see the new settings.
 
 !!! Info "Generated vs. Manual Cards"
     + **Generated Cards**: Created automatically from provider cards, ensuring the latest rate updates.
