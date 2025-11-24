@@ -1,7 +1,5 @@
 # Scaling and Load Balancing
 
-Here is the metadata for the **ConnexCS Platform : Scaling and Load Balancing** document:
-
 ---
 
 **Document Metadata** <br>**Category**: Setup → Architecture → Scaling and Load Balancing</br>
