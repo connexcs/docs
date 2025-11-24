@@ -1,5 +1,18 @@
 # SIP Profile
 
+---
+
+**Document Metadata**
+<br>**Category**: Setup / Configuration / SIP Profile</br>
+**Audience**: Administrators, Engineers, Telecom/VoIP Operations Teams
+<br>**Difficulty**: Intermediate</br>
+**Time Required**: Approximately 30–45 minutes
+<br>**Prerequisites**: Active ConnexCS account with Setup-Config permissions; understanding of SIP user authentication and profile grouping logic.</br>
+**Related Topics**: [Customer Auth (IP & SIP Authentication)](https://docs.connexcs.com/customer/auth/)
+<br>**Next Steps**: Navigate to `Setup → Config → SIP Profile` click the “+” button to create a new profile, specify a **Name**, define **Profile Capacity**, assign a set of **Flags** (features the profile supports), optionally assign a **Barge Group**, save the profile and then link it to the appropriate SIP Users or endpoints.</br>
+
+---
+
 **Setup :material-menu-right: Config :material-menu-right: SIP Profile**
 
 ## Introduction
