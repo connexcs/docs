@@ -2,13 +2,84 @@
 
 **Management :material-menu-right: Customer Rate Cards**
 
+## Introduction
+
 **Customer Rate Cards** let you manage the rates for customers, edit customer profiles, and view important information.
 
-Before configuring, we suggest you review [**Rate Card Overview**](https://docs.connexcs.com/rate-card-building/) then [**Rate Card Setup**](https://docs.connexcs.com/video-guide/#rate-card-setup) in the ConnexCS Video Guide.
+Customer Rate Cards are designed to streamline the process of managing rates for customers. These cards can be generated from provider rate cards, allowing for efficient rate management and minimizing manual errors.
 
-You will also want to have at least one [**Provider Rate Card**](https://docs.connexcs.com/provider-ratecard/) configured.
+!!! tip
+    Before configuring, we suggest you review [**Rate Card Overview**](https://docs.connexcs.com/rate-card-building/) then [**Rate Card Setup**](https://docs.connexcs.com/video-guide/#rate-card-setup) in the ConnexCS Video Guide.
 
-## Customer Rate Card Functions
+!!! note "Important Note"
+    You will also want to have at least one [**Provider Rate Card**](https://docs.connexcs.com/provider-ratecard/) configured.
+
+### Rate Definition Properties
+
+These fields define individual rates within the rate card.
+
++ **Destination Prefix**: The numerical prefix used to match destinations (e.g., 44 for the UK).
+
++ **Rate per Minute**: The cost applied for each minute of a call.
+
++ **Billing Interval**: Defines how calls are charged, typically in seconds (e.g., 30/6 means the first 30 seconds are charged fully, followed by 6-second increments).
+
++ **Min Charge Duration**: The minimum call duration before charging begins.
+
++ **Connection Charge**: A one-time fee applied when a call is connected.
+
++ **Grace Period**: A short duration (e.g., 2 seconds) before billing starts.
+
+## Key Features
+
++ **Automatic Rate Generation**: Customer rate cards can be built from provider rate cards.
+
++ **Manual and Automated Control**: Users can choose between auto-generated or manually edited cards.
+
++ **Customizable Naming**: Allows internal naming for clarity while presenting a different name to customers.
+
++ **Subscription-Based Usage**: Customers subscribe to a rate card when it's assigned to their route. This is done via the customer section by adding the customer card to a route.
+
++ **Dynamic Routing Compatibility**: Allows for flexible and optimized routing.
+
++ **Flexible Pricing Structure**: Assign different rates based on customer agreements.
+
++ **Automated Billing Accuracy**: Ensures correct pricing without manual intervention.
+
++ **Customizable Rules**: Set up rate-specific properties tailored to business needs.
+
++ **Real-Time Updates**: Modify and apply changes dynamically without service disruption.
+
++ **Enhanced Revenue Management**: Optimize pricing strategies for different customers.
+
+!!! Note "Multiple Carrier Rate Cards"
+    + A single customer rate card can have multiple carrier rate cards.
+    + The system allows the selection of different strategies:
+        + Random
+        + Round Robin
+        + Reverse RCR
+        + LCR (Least Cost Routing)
+    + The default strategy is overridden if a routing strategy is set.
+
+## Benefits
+
++ **Improved Efficiency**: Automating rate card generation reduces manual effort and errors.
++ **Enhanced Customization**: Manual overrides and dynamic routing provide flexibility.
++ **Reseller-Friendly**: Ensures sensitive provider details are not exposed to resellers.
++ **Optimized Routing**: Supports various routing strategies for cost and quality optimization.
++ **Contract Compliance**: Ensures legal and business compliance through contract enforcement.
+
+## Customer Rate Card Grid
+
+When you open the Customer Rate Card section, the initial screen presents a grid listing all the customer rate cards you’ve created.
+
+This serves as your primary management dashboard, allowing you to quickly search, review, edit, or delete any existing rate card.
+
+### Available Options
+
++ `+`: Add a new customer card.
+
++ **Refresh**:Reloads the entire page.
 
 + **Bulk Build**: Select multiple cards to perform the build. This is usually done after you've set up your properties and profit, or when you need to gather several customers after a rate change.
 
@@ -16,28 +87,26 @@ You will also want to have at least one [**Provider Rate Card**](https://docs.co
 
 + **Delete**: Delete a customer rate card by selecting its name from the list and then clicking the trash bin icon.
 
-## Overview
++ `?`(Help): Link to the documentation.
 
-+ **Name**: Click the name of the provider to see an individual rate card and management options.
-     If a Rate Card name shows a yellow warning or red alert, these will show details about the card. It may be stale or have some sort of error.
+|Name|Description|
+|----|-----------|
+|**Name**|Click the name of the provider to see an individual rate card and management options. If a Rate Card name shows a yellow warning or red alert, these will show details about the card. It may be stale or have some sort of error|
+|****Force Presentation**|[Click here](/customer-ratecard/#config) to know more|
+|**Direction**|Cards are either *Termination* (calling out to PSTN) or *Origination* (DID numbers receiving calls from the PSTN). Termination is the most common card used by ConnexCS customers|
+|**Currency**|The currency for the provider's region (typically USD, EUR, or GBP)|
+|**?**|Lists the upstream providers (parent cards) as well as the total number of customers associated with the card (as specified in Customer: material-menu-right: routing). Any changes made to this card will impact the customers associated with the card. Click on the Provider ID or Customer Name to view the configuration|
+|**ID**| A system identifier that acts as a placeholder and prevents confusion between similarly named items|
+|**Rule Count**|The number of rows in the Rate Card|
+|**Compile**|Displays the upstream provider cards associated with the customer card. <br>a. Shows total customers using a specific card.</br> b.Allows users to track which customers are subscribed to a particular card|
+|**Public Options**| Choose what you can do with the card information: view it via HTML (on a web page), download CSV (a spreadsheet), and whether to list the rate card in the customer portal (customers can view cards not presently on their account and select them for use). (**Note: API Querying is no longer available.**)|
+|**Dynamic Routing**|Manually created cards (added via upload or edited in-browser) have the option to use Dynamic Routing to select routes for the card, essentially changing the routing without creating new cards|
+|**Active Revision**|Only one active revision at a time. Previous revisions can be archived and reactivated if needed|
+|**Max Revision**|Its the latest revision. Additional currencies can be added upon request, but this is rare|
 
-+ **Direction**: Cards are either *Termination* (calling out to PSTN) or *Origination* (DID numbers receiving calls from the PSTN). Termination is the most common card used by ConnexCS customers.
-
-+ **Currency**: The currency for the provider's region (typically USD, EUR, or GBP).
-
-+ **?**: Lists the upstream providers (parent cards) as well as the total number of customers associated with the card (as specified in Customer: material-menu-right: routing). Any changes made to this card will impact the customers associated with the card.
-
-    Click on the Provider ID or Customer Name to view the configuration.
-
-+ **ID**: A system identifier that acts as a placeholder and prevents confusion between similarly named items.
-
-+ **Rule Count**: The number of rows in the Rate Card.
-
-+ **Compile**: Displays which Customer Rate Cards are in sync with the Provider Rate Cards.
-
-&emsp; ![alt text][compile1] Stale (needs compilation)
-
-&emsp; ![alt text][compile2] In sync
+!!! Info "Extra info on Compile"
+    &emsp; ![alt text][compile1] Stale (needs compilation)
+    &emsp; ![alt text][compile2] In sync
 
 !!! tip "Reasons a card marked as Stale"
     You can refer to a Rate Card as **Stale** when the information presented isn't the same as the live / active revision.
@@ -51,48 +120,79 @@ You will also want to have at least one [**Provider Rate Card**](https://docs.co
 
     All associated customer cards will be out of sync (orange pause icon). To correct this, select all stale cards, then click **`Bulk Build`** to update the new rates and routes.
 
+!!! Note "Parent-Child Rate Card Relationship"
+    1. Provider Rate Cards are parent rate cards.
+    2. Customer Rate Cards are child rate cards derived from provider rate cards.
+    3. Users can check dependent (child) rate cards linked to a provider rate card.
+
 ## Create a Customer Rate Card
 
-Once created, there are several options to complete the card.
+Once created, you can either add rows manually or upload an existing file for the new Customer Rate Cards.
 
-1. Click :material-plus:.
-2. Complete the required fields. (For details, see [**Configure Customer Rate Card**](https://docs.connexcs.com/customer-ratecard/#create-a-customer-rate-card) below.)
-3. Click **`Save`**.
-4. In the new card, select **Profits** and then click :material-plus:. (For details, see [**Profits**](https://docs.connexcs.com/customer-ratecard/#customer-rate-card-functions) under Functions below).
+I. **Step 1**
 
-**Option 1: Build from Provider Card**
-This is the preferred method and requires you to select a Provider Rate Card in Properties > Basic.
+a. When you click the + icon, a Create New Customer Rate Card window appears.
 
-Click **`Build`** and confirm.
+b. This window is divided into three sections **Basic**, **Config**, and **Advanced** where you define the core properties of the card.
 
-A notification will tell you if the build was successful. You may need to refresh the card to see the new settings.
+c. You only need to complete a few key fields to get started. (For details, see [**Configure Customer Rate Card**](https://docs.connexcs.com/customer-ratecard/#create-a-customer-rate-card) below.)
 
-**Option 2: Manual Add**
-To manually add Rate Card rows, select **`Create Draft`** and then add / modify / delete required rows from the browser.
+d. Once the card is saved, you can explore detailed configuration options in the next section which is the [Properties Section](https://docs.connexcs.com/customer-ratecard/#properties-tab).
 
-**Option 2: Bulk Upload**
-The final method for configuring a Customer Rate Card is to import/upload it:
+e. **Required field**: **Name (Private)**: Internal label used to identify the rate card.
 
-1. Click **Bulk Upload** > **Upload**.
-2. Select the file and click `Open`.
-3. Right-click the first row of data (not headers) and select `Set Start Row`.
-4. Right-click and map the columns. It's important to map all fields based on the Rate Card columns. For example:
-    + Col 1 - Prefix
-    + Col 2 - Name
-    + Col 3 - Cost
-5. Select **Upload to Sever** and confirm.
-6. Select **Yes** to make this active instantly.
-7. Once complete, the new card will display the Provider rules and the Profit rules.
+f. Click on `Save`. (Once it’s saved, new configuration sections will appear.)
+
+g. At this stage, your rate card is created but not yet functional it doesn’t have any rate data.
+
+h. Once saved, the interface will expand to show additional tabs such as **Bulk Upload**, **Create draft** , **Revisions**, and **Properties**.
+
+II. **Step 2**
+
+a. After saving, you must define your rates either by uploading a rate sheet or manually adding prefixes. This is what makes the rate card operational for billing and routing.
+
+b. Three primary options are now visible:
+    i. **Build from Provider Card**: This is the preferred method and requires you to select a Provider Rate Card in Properties :material-menu-right: Basic.
+    ii. **Bulk Upload**: Import rates via a CSV file (recommended for full rate sheets).
+    ii. **Manual Add**: Add prefixes and rates one by one directly in the interface.
+
+c. **Bulk Upload**: The preferred method for adding a Rate Card is to import/upload it:
+    1. Click `Bulk Upload`, then `Upload`.
+    2. Select the file, typically sent by the Provider in CSV format (if not provided as CSV, conversion required before proceeding).
+    3. Right-click on the first row of data and select "Set Start Row."
+    4. Right-click and map the columns. It's important to map all fields based on the Rate Card columns. For example:
+       1. Col 1 - Prefix
+       2. Col 2 - Name
+       3. Col 3 - Cost
+    5.  Choose Upload to Sever and confirm the upload.
+    6.  Select whether to make this active instantly.
+
+        !!! Danger "Manually generated cards"
+            When users create Provider Rate Card CSV files manually in Excel (rather than generating them from a rate card management system), they may introduce errors such as empty rows or duplicate prefixes, which could cause the file upload to error.
+
+d. **Manual Add**: To manually add Rate Card rows, select Create Draft and then add / modify / delete required rows."
+
+e. **Build from Provider Card**:
+    a.Click **`Build`** and confirm.
+    A notification will tell you if the build was successful. You may need to refresh the card to see the new settings.
+
+!!! Info "Generated vs. Manual Cards"
+    + **Generated Cards**: Created automatically from provider cards, ensuring the latest rate updates.
+    + **Manual Cards**: Created or edited manually, allowing for custom rate configurations.
 
 ## Configure the Customer Rate Card
 
 ### Main tab
+
+**Bulk Upload**: [Click here](https://docs.connexcs.com/customer-ratecard/#create-a-customer-rate-card) and see "Option 3".
 
 **Email**: This feature allows providers to email rate cards to customers as an attachment.
 
 It's a convenient way to send customers official information relevant to their accounts.
 
 Click **`Email`**, enter the email address and click **`Send`**.
+
+**Clone Card**: Create an exact copy of an existing Rate Card.
 
 **Audit Log**: Review any changes made to the card settings.
 
@@ -210,18 +310,31 @@ To change Revision status:
 + **Duration Rounding**: The same rounding options, but for the call duration.
 + **Public Options**: Choose what you can do with the card information: view it via HTML (on a web page), download CSV (a spreadsheet), and whether to list the rate card in the customer portal (customers can view cards not presently on their account and select them for use). (**Note: API Querying is no longer available.**)
 + **Dynamic Routing**: Manually created cards (added via upload or edited in-browser) have the option to use Dynamic Routing to select routes for the card, essentially changing the routing without creating new cards.
+    + Used when an automatically generated card is not preferred.
+    + Allows users to add extra routes without modifying the existing rate card.
+    + Ensures flexible routing by enabling on-the-fly adjustments without regenerating cards.
 
    Customer Cards generated from the Provider card use predetermined LCR (Least Cost Routing) based on the Parent card.
 
 + **Default RTP**: If set and the customer adds the route themselves, then it deploys the Default RTP. Otherwise, this is an unused setting.
   
-+ **Contract**: Specify a default contract that applies to a specific rate card. This only applies if the customer selects the rate card from the Customer Portal, not when it's added using the Dashboard.
++ **Contract**: Specify a default contract that applies to a specific rate card. This only applies if the customer selects the rate card from the Customer Portal, not when it's added using the Dashboard. 
+    + Contracts can be linked to rate cards for customer approval.
+    + If a customer adds a route via the customer portal, they must approve the contract before activation.
+    + If an administrator adds a route manually, no contract approval is required.
+
+!!! Warning "If you don't approve the contract, the rate card will not work that specific route"
 
 !!! Warning "When a contract is linked to a specific rate card, customer approval is mandatory. Failure to approve the contract will result in the customer being unable to use the associated rate card."
 
 + **Manual Ordering**: Allow granular ordering of specific prefixes and which carriers to use. See [**Manual Ordering**](https://docs.connexcs.com/customer-ratecard/#manual-ordering-tab) below for details.
-  
+    + Allows precise rule-based manual control over route selection.
+    + Rarely used but provides in-depth customization for advanced users.
+
 + **Reseller**: Select Resellers to associate with this card. When the Reseller logs into the Portal, they see the settings from the perspective of a Provider Card, even though they're configured as a Customer Card.
+    + In a reseller model, the provider and customer cards are bifurcated.
+    + Resellers don't see actual provider details; they only see the cards assigned to them.
+    + The provider card in the reseller’s account behaves as a customer card.
 
 #### Notes
 
@@ -239,3 +352,17 @@ For each Prefix you can manually order the Provider Rate Cards for a high degree
 
 [prc-func]: /card/img/prc-func.png "Functions" style="border: 2px solid #4472C4; border-radius: 8px;"
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5d22377fa876b34e25580a537f054fff97f15112
+[profit]: /card/img/profit.png "Edit Profits"
+
+!!! tip "**Rate Compact**, **Collapse Using**, and **Force Presentation**."
+    + These properties relate to profit calculation and rate structure presentation.
+    + Ensures rate structure efficiency while providing profit visibility.
+<<<<<<< HEAD
+=======
+>>>>>>> 8577b1122ce2b1063567dffbbefab52e1eef3356
+=======
+>>>>>>> 5d22377fa876b34e25580a537f054fff97f15112
