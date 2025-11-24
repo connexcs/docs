@@ -5,7 +5,7 @@
 **Document Metadata** <br>**Category**: Setup & Configuration → Advanced Settings → Fraud</br>
 **Audience**: Administrators, Engineers, Support Team <br>**Difficulty**: Intermediate</br>
 **Time Required**: 10–15 minutes <br>**Prerequisites**: ConnexCS account with access to the Setup → Advanced section <br>**Related Topics**: [Security Settings](https://docs.connexcs.com/security/), [Call Traffic Monitoring](https://docs.connexcs.com/carrier/carrier-custom-reports/), [Alerting & Notifications](https://docs.connexcs.com/customer/alerts/)</br>
-**Next Steps**: [IP Authentication](https://docs.connexcs.com/setup/authentication/ip-authentication/)
+**Next Steps**: [IP Authentication](https://docs.connexcs.com/customer/auth/#ip-authentication)
 
 ---
 

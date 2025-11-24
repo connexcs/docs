@@ -5,8 +5,8 @@
 **Document Metadata** <br>**Category**: Setup & Configuration → Advanced Settings → Prefix Set</br>
 **Audience**: Administrators, Engineers, Support Team <br>**Difficulty**: Intermediate</br>
 **Time Required**: 10–15 minutes <br>**Prerequisites**: ConnexCS account with access to the Setup → Advanced section</br>
-**Related Topics**: [Dial-Plan Rules](https://docs.connexcs.com/guides/howto/restrict-calling-plan/) [Routing](https://docs.connexcs.com/setup/routing/)</br>
-**Next Steps**: [Routing](https://docs.connexcs.com/setup/routing/), [Dial-Plan Rules](https://docs.connexcs.com/guides/howto/restrict-calling-plan/)</br>
+**Related Topics**: [Dial-Plan Rules](https://docs.connexcs.com/guides/howto/restrict-calling-plan/), [Routing](https://docs.connexcs.com/customer/routing/)</br>
+**Next Steps**: [Routing](https://docs.connexcs.com/customer/routing/), [Dial-Plan Rules](https://docs.connexcs.com/guides/howto/restrict-calling-plan/)</br>
 
 ---
 
