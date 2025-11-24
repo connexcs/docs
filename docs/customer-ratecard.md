@@ -152,41 +152,29 @@ II. **Step 2**
 a. After saving, you must define your rates either by uploading a rate sheet or manually adding prefixes. This is what makes the rate card operational for billing and routing.
 
 b. Three primary options are now visible:
-
     i. **Build from Provider Card**: This is the preferred method and requires you to select a Provider Rate Card in Properties :material-menu-right: Basic.
-    
     ii. **Bulk Upload**: Import rates via a CSV file (recommended for full rate sheets).
-    
-    ii. **Manual Add**: Add prefixes and rates one by one directly in the interface.
+    iii. **Manual Add**: Add prefixes and rates one by one directly in the interface.
 
 c. **Bulk Upload**: The preferred method for adding a Rate Card is to import/upload it:
+  1. Click `Bulk Upload`, then `Upload`.
+  2. Select the file, typically sent by the Provider in CSV format (if not provided as CSV, conversion required before proceeding).
+  3. Right-click on the first row of data and select "Set Start Row."
+  4. Right-click and map the columns. It's important to map all fields based on the Rate Card columns. For example:
+     1. Col 1 - Prefix
+     2. Col 2 - Name
+     3. Col 3 - Cost
+  5. Choose Upload to Sever and confirm the upload.
+  6. Select whether to make this active instantly.
 
-    1. Click `Bulk Upload`, then `Upload`.
-    
-    2. Select the file, typically sent by the Provider in CSV format (if not provided as CSV, conversion required before proceeding).
-    
-    3. Right-click on the first row of data and select "Set Start Row."
-    
-    4. Right-click and map the columns. It's important to map all fields based on the Rate Card columns. For example:
-       
-       1. Col 1 - Prefix
-       
-       2. Col 2 - Name
-       
-       3. Col 3 - Cost
-    
-    5.  Choose Upload to Sever and confirm the upload.
-    
-    6.  Select whether to make this active instantly.
-
-    !!! Danger "Manually generated cards"
-        When users create Provider Rate Card CSV files manually in Excel (rather than generating them from a rate card management system), they may introduce errors such as empty rows or duplicate prefixes, which could cause the file upload to error.
+!!! Danger "Manually generated cards"
+    When users create Provider Rate Card CSV files manually in Excel (rather than generating them from a rate card management system), they may introduce errors such as empty rows or duplicate prefixes, which could cause the file upload to error.
 
 d. **Manual Add**: To manually add Rate Card rows, select Create Draft and then add / modify / delete required rows."
 
 e. **Build from Provider Card**:
-    a.Click **`Build`** and confirm.
-    A notification will tell you if the build was successful. You may need to refresh the card to see the new settings.
+    1. Click **`Build`** and confirm.
+    2. A notification will tell you if the build was successful. You may need to refresh the card to see the new settings.
 
 !!! Info "Generated vs. Manual Cards"
     + **Generated Cards**: Created automatically from provider cards, ensuring the latest rate updates.
@@ -368,17 +356,9 @@ For each Prefix you can manually order the Provider Rate Cards for a high degree
 
 [prc-func]: /card/img/prc-func.png "Functions" style="border: 2px solid #4472C4; border-radius: 8px;"
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 5d22377fa876b34e25580a537f054fff97f15112
 [profit]: /card/img/profit.png "Edit Profits"
 
 !!! tip "**Rate Compact**, **Collapse Using**, and **Force Presentation**."
     + These properties relate to profit calculation and rate structure presentation.
     + Ensures rate structure efficiency while providing profit visibility.
-<<<<<<< HEAD
-=======
->>>>>>> 8577b1122ce2b1063567dffbbefab52e1eef3356
-=======
->>>>>>> 5d22377fa876b34e25580a537f054fff97f15112
+
