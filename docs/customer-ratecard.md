@@ -153,7 +153,7 @@ a. After saving, you must define your rates either by uploading a rate sheet or 
 
 b. Three primary options are now visible:
     <br>i. **Build from Provider Card**: This is the preferred method and requires you to select a Provider Rate Card in Properties :material-menu-right: Basic.</br>
-    <br>ii. **Bulk Upload**: Import rates via a CSV file (recommended for full rate sheets).</br>
+    ii. **Bulk Upload**: Import rates via a CSV file (recommended for full rate sheets).
     iii. **Manual Add**: Add prefixes and rates one by one directly in the interface.
 
 c. **Bulk Upload**: The preferred method for adding a Rate Card is to import/upload it:
