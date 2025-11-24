@@ -4,11 +4,11 @@
 
 **Document Metadata**
 <br>**Category**: Setup / Settings / Servers</br>
-<br>**Audience**: Administrators, Network Engineers, Operations Team</br>
+**Audience**: Administrators, Network Engineers, Operations Team
 <br>**Difficulty**: Intermediate to Advanced</br>
-<br>**Time Required**: Approximately 1–2 hours</br>
+**Time Required**: Approximately 1–2 hours
 <br>**Prerequisites**: Active ConnexCS account with Setup-Settings access; familiarity with SIP server architecture, load balancing, clustering, and media (RTP) servers.</br>
-<br>**Related Topics**: [Getting Started – Deploying Servers](https://docs.connexcs.com/getting-started/), [Setup / Settings / RTP Zones](https://docs.connexcs.com/setup/settings/rtp-zones/)</br>
+**Related Topics**: [Getting Started – Deploying Servers](https://docs.connexcs.com/getting-started/), [Setup / Settings / RTP Zones](https://docs.connexcs.com/setup/settings/rtp-zones/)
 <br>**Next Steps**: Deploy your first server in the appropriate zone, configure cluster membership and capacity limits (Channels, CPS), set up media (RTP) servers if needed, apply certificates and security settings, and monitor real-time server metrics such as status, latency and load.</br>
 
 ---

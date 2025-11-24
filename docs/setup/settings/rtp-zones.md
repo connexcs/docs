@@ -4,11 +4,11 @@
 
 **Document Metadata**
 <br>**Category**: Setup / Settings / RTP Zones</br>
-<br>**Audience**: Administrators, Network Engineers, Operations Team</br>
+**Audience**: Administrators, Network Engineers, Operations Team
 <br>**Difficulty**: Intermediate</br>
-<br>**Time Required**: Approximately 30–45 minutes</br>
+**Time Required**: Approximately 30–45 minutes
 <br>**Prerequisites**: Active ConnexCS account with Setup-Settings access; understanding of RTP (Real-Time Transport Protocol) media paths, geographic media proxy zones, and call-quality issues.</br>
-<br>**Related Topics**: [Servers – Deploying & Managing](https://docs.connexcs.com/setup/settings/servers/), [Call Quality / Media Issues](https://docs.connexcs.com/guides/tshoot-media/)</br>
+**Related Topics**: [Servers – Deploying & Managing](https://docs.connexcs.com/setup/settings/servers/), [Call Quality / Media Issues](https://docs.connexcs.com/guides/tshoot-media/)
 <br>**Next Steps**: Navigate to `Setup → Settings → RTP Zones`, click `+` to create a new zone or edit an existing one, assign it the closest or optimal media proxy server based on geography, update call-flows or routing to use the zone, then monitor latency and packet-loss metrics to validate call-quality.</br>
 
 ---

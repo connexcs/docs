@@ -4,11 +4,11 @@
 
 **Document Metadata**
 <br>**Category**: Setup / Settings / Users</br>
-<br>**Audience**: Administrators, Engineers, Security & Operations Teams</br>
+**Audience**: Administrators, Engineers, Security & Operations Teams
 <br>**Difficulty**: Intermediate</br>
-<br>**Time Required**: Approximately 30–45 minutes</br>
+**Time Required**: Approximately 30–45 minutes
 <br>**Prerequisites**: Active ConnexCS account with Setup-Settings access; familiarity with role-based access control, user group permissions, and secure account management.</br>
-<br>**Related Topics**: [Setup / Settings / Groups](https://docs.connexcs.com/setup/settings/users/#groups), [Audit Log & Security Best Practices](https://docs.connexcs.com/setup/information/audit-log/)</br>
+**Related Topics**: [Setup / Settings / Groups](https://docs.connexcs.com/setup/settings/users/#groups), [Audit Log & Security Best Practices](https://docs.connexcs.com/setup/information/audit-log/)
 <br>**Next Steps**: Create a new User, assign them to the appropriate Group(s) to define permissions, optionally restrict login by IP address, then define or adjust Group permissions to align with your organisation’s access-control policy.</br>
 
 ---
