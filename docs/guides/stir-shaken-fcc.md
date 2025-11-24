@@ -1,5 +1,18 @@
 # Federal Communication Commission Regulations on Secure Telephony Identity Revisited / SHAKEN
 
+---
+
+**Document Metadata** <br>**Category**: Setup → Guides → STIR/SHAKEN (FCC Regulations)</br>
+**Audience**: Administrators, Engineers, Compliance Teams, VoIP/Carrier Origins <br>**Difficulty**: Intermediate to Advanced <br>**Time Required**: 15–30 minutes <br>**Prerequisites**:
+
+* Understanding of VoIP/SIP networks and number origination.
+* Knowledge of certificates (public key), attestation levels (A/B/C).
+* Knowledge of U.S. regulations for telecom carriers. 
+
+<br>**Related Topics**: [STIR/SHAKEN Cert Upload](https://docs.connexcs.com/setup/information/stir-shaken/) — certificate prerequisite. <br>**Next Steps**: Acquire SPC Token & certificate from an authorised CA, upload to your system, configure attestation routing in the switch.
+
+---
+
 ## Illegal Robocalling
 
 In recent years, **Illegal Robocalling** is one of the most problematic activities for telecommunication providers. In these calls, callers mask their identity or spoof the number of a legitimate entity.

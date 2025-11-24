@@ -1,5 +1,12 @@
 # Class 4 Softswitch
 
+---
+
+**Document Metadata** <br>**Category**: Setup → Architecture → Specifications</br>
+**Audience**: Administrators, Engineers, Architects, Integrators <br>**Difficulty**: Intermediate to Advanced <br>**Time Required**: 15–30 minutes <br>**Prerequisites**: Familiarity with telecom/VoIP terminology and switching architecture—specifically Class 4 softswitch concepts. <br>**Related Topics**: [Scaling & Load Balancing](https://docs.connexcs.com/scaling-load-balancing/) (for deployment architecture), [Security](https://docs.connexcs.com/security/) (for compliance and design boundaries) <br>**Next Steps**: Review the Switch Administration or API Specification sections to align implementation details with the architectural overview.
+
+---
+
 **ConnexCS** is a Class 4 Cloud-based Softswitch (software switch).
 
 This means the call never terminates with the **ConnexCS** system.

@@ -1,5 +1,13 @@
 # Far-End Network Address Translation Traversal
 
+---
+
+**Document Metadata** <br>**Category**: Setup → Networking → Far-End NAT Traversal</br>
+**Audience**: Administrators, Network Engineers, Support Team <br>**Difficulty**: Intermediate to Advanced</br>
+**Time Required**: 10–20 minutes <br>**Prerequisites**: Understanding of SIP signalling, media negotiations (SDP/UDP), and NAT/firewall fundamentals <br>**Related Topics**: [AnyEdge Setup](https://docs.connexcs.com/anyedge/anyedge/) (includes NAT detection capabilities), [Troubleshooting Media/Audio Issues](https://docs.connexcs.com/guides/tshoot-media/) (NAT often causes one-way audio) <br>**Next Steps**: After reviewing Far-End NAT Traversal, proceed to configure NAT/SIP Pings or AnyEdge NAT options in your SIP profile or network settings.
+
+---
+
 **NAT** (Network Address Translation) is the process that associates your private local IP address with an external IP address that routes on the internet.
 
 See [**Network Address Translation**](https://en.wikipedia.org/wiki/Network_address_translation) for a detailed description of NAT.
