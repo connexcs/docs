@@ -1,5 +1,21 @@
 # WebPhone App
 
+---
+
+**Document Metadata** <br>**Category**: Setup & Configuration → Integrations → WebPhone</br>
+**Audience**: Administrators, Engineers, Support Team <br>**Difficulty**: Intermediate</br>
+**Time Required**: 20–30 minutes</br>
+**Prerequisites**: ConnexCS account with WebRTC-capable server setup (TLS, WebSocket, DNS) <br>**Related Topics**: [API & SDK Integrations](https://docs.connexcs.com/setup/integrations/api/) (for embedding WebPhone), [Certificates & Domain Setup](https://docs.connexcs.com/setup/information/certificate/) <br>**Next Steps**: [WebPhone App Platform](https://docs.connexcs.com/webphoneapp/)
+
+---
+
+If you like, I can also extract **Key Concepts**, **Use Cases**, and **Best Practices** from the WebPhone docs.
+
+[1]: https://docs.connexcs.com/webphone/?utm_source=chatgpt.com "WebPhone"
+[2]: https://webphone-sdk.connexcs.com/?utm_source=chatgpt.com "ConnexCS Webphone Docs: Home"
+[3]: https://docs.connexcs.com/webphoneapp/?utm_source=chatgpt.com "WebPhone App"
+
+
 !!! Warning
     We advise users to switch to this new [App Platform](https://docs.connexcs.com/apps/introduction/) (WebPhone App) as the previous WebPhone development has been put on hold.
 

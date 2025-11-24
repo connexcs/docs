@@ -1,4 +1,11 @@
 # Portal
+---
+
+**Document Metadata** <br>**Category**: Setup & Configuration → Integrations → Portal</br>
+**Audience**: Administrators, Engineers, Support Team <br>**Difficulty**: Intermediate</br>
+**Time Required**: 10–20 minutes <br>**Prerequisites**: ConnexCS account with Integrations and Branding permissions, custom domain / CNAME record access <br>**Related Topics**: [API Integrations](https://docs.connexcs.com/setup/integrations/api/), [Multi-Brand Support](https://docs.connexcs.com/setup/integrations/portal/#multi-brand-support) <br>**Next Steps**: [API Integrations](https://docs.connexcs.com/setup/integrations/api/), [JWT Keys / Tokens](https://docs.connexcs.com/setup/integrations/jwt/)
+
+---
 
 **Setup :material-menu-right: Integrations :material-menu-right: Portal**
 
@@ -225,7 +232,7 @@ By leveraging a single ConnexCS account, customers can seamlessly run multiple b
 
 It's achieved by deploying independent customer portals tailored to the specific needs and preferences of each target market.
 
-### **Key Benefits**
+### Key Benefits
 
 + **Enhanced Market Penetration**:
 

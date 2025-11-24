@@ -1,5 +1,18 @@
 # JWT Refresh Keys
 
+---
+
+**Document Metadata** <br>**Category**: Setup & Configuration → Integrations → JWT Keys/Tokens</br>
+**Audience**: Administrators, Engineers, Support Team <br>**Difficulty**: Intermediate to Advanced</br>
+**Time Required**: 15–30 minutes <br>**Prerequisites**: ConnexCS account with Integrations permissions, Understanding of JSON Web Tokens (JWT) <br>**Related Topics**: [API Integrations](https://docs.connexcs.com/setup/integrations/api/) (for token usage), [OAuth Session](https://docs.connexcs.com/setup/integrations/oauth/) (JWT as part of token flows)<br>**Next Steps**: [OAuth Session](https://docs.connexcs.com/setup/integrations/oauth/), [API Usage Guide](https://docs.connexcs.com/api/)
+
+---
+
+If you like, I can pull out more specific **Prerequisites** or **Key Concepts** (e.g., signing keys, token rotation) from the document for inclusion.
+
+[1]: https://docs.connexcs.com/setup/integrations/api/?utm_source=chatgpt.com "Integrations - API"
+[2]: https://docs.connexcs.com/setup/integrations/oauth/?utm_source=chatgpt.com "OAuth Session"
+
 **Setup :material-menu-right: Integrations :material-menu-right: JWT Refresh Keys**
 
 ## Introduction
