@@ -4,7 +4,7 @@
 
 **Document Metadata** <br>**Category**: Setup & Configuration → Information → Change Log</br>
 **Audience**: Administrators, Engineers, Support Team <br>**Difficulty**: Beginner</br>
-**Time Required**: 5–10 minutes <br>**Prerequisites**: Access to the ConnexCS documentation portal <br>
+**Time Required**: 5–10 minutes <br>**Prerequisites**: Access to the ConnexCS Control Panel</br>
 
 ---
 

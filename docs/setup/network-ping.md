@@ -1,5 +1,13 @@
 # Network Ping
 
+---
+
+**Document Metadata** <br>**Category**: Setup → Network → Network Ping</br>
+**Audience**: Administrators, Engineers, Support Team <br>**Difficulty**: Beginner to Intermediate</br>
+**Time Required**: 5–10 minutes <br>**Prerequisites**: ConnexCS account with access to the Setup section; Access to the Network Ping tool dashboard. <br>**Related Topics**: [Server Settings – Ping/MTR](https://docs.connexcs.com/setup/settings/servers/) (for server-based latency tools), [Security – ICMP Pings](https://docs.connexcs.com/security/) (network troubleshooting & reachability) <br>**Next Steps**: Use the Network Ping results to validate routing/latency and then proceed to: [Server Settings](https://docs.connexcs.com/setup/settings/servers/) or [AnyEdge Configuration](https://docs.connexcs.com/anyedge/anyedge/#configure-anyedge) for performance optimisation.
+
+---
+
 !!! Danger  " The Network Ping tool is currently in Alpha mode. Functionality, data accuracy, and visual behavior may change as the feature is still under active development and testing."
 
 **Setup :material-menu-right: Network Ping**
