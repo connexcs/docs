@@ -8,11 +8,6 @@
 
 ---
 
-If you like, I can pull out more specific **Prerequisites** or **Key Concepts** (e.g., signing keys, token rotation) from the document for inclusion.
-
-[1]: https://docs.connexcs.com/setup/integrations/api/?utm_source=chatgpt.com "Integrations - API"
-[2]: https://docs.connexcs.com/setup/integrations/oauth/?utm_source=chatgpt.com "OAuth Session"
-
 **Setup :material-menu-right: Integrations :material-menu-right: JWT Refresh Keys**
 
 ## Introduction

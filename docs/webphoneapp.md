@@ -9,13 +9,6 @@
 
 ---
 
-If you like, I can also extract **Key Concepts**, **Use Cases**, and **Best Practices** from the WebPhone docs.
-
-[1]: https://docs.connexcs.com/webphone/?utm_source=chatgpt.com "WebPhone"
-[2]: https://webphone-sdk.connexcs.com/?utm_source=chatgpt.com "ConnexCS Webphone Docs: Home"
-[3]: https://docs.connexcs.com/webphoneapp/?utm_source=chatgpt.com "WebPhone App"
-
-
 !!! Warning
     We advise users to switch to this new [App Platform](https://docs.connexcs.com/apps/introduction/) (WebPhone App) as the previous WebPhone development has been put on hold.
 
