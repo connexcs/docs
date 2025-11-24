@@ -1,5 +1,19 @@
 # Language
 
+---
+
+**Document Metadata**
+<br>**Category**: Setup & Configuration → Advanced Settings → Language</br>
+**Audience**: Administrators, Engineers, Support Team
+<br>**Difficulty**: Beginner</br>
+**Time Required**: 5–10 minutes
+<br>**Prerequisites**: ConnexCS account with access to the Setup → Advanced section</br>
+**Related Topics**: [TTS Settings](https://docs.connexcs.com/setup/advanced/tts/), [Audio Files](https://docs.connexcs.com/setup/advanced/audio/), [Call Flow](https://docs.connexcs.com/setup/callflow/)s
+<br>**Next Steps**: [Configuring TTS Voices](https://docs.connexcs.com/setup/advanced/tts/), [Managing Prompts](https://docs.connexcs.com/setup/advanced/audio/), [IVR Setup](https://docs.connexcs.com/setup/callflow/ivr/)
+</br>
+
+---
+
 **Setup :material-menu-right: Advanced :material-menu-right: Language**
 
 Use the **Language** interface to customize your selected interface language.
