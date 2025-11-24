@@ -1,0 +1,3 @@
+/.well-known/llms.txt /well-known/llms.txt 200
+/en/latest* / 301
+/cp-api https://api-docs.connexcs.com/ 301

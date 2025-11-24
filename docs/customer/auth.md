@@ -1,5 +1,17 @@
 # Auth
 
+---
+**Document Metadata**
+<br>**Category**: Customer Account Management / Authentication</br>
+<br>**Audience**: Administrators, Engineers, Security Team</br>
+<br>**Difficulty**: Intermediate to Advanced</br>
+<br>**Time Required**: Approximately 45-90 minutes</br>
+<br>**Prerequisites**: An active ConnexCS account with “Customer” module access; knowledge of SIP and/or IP authentication concepts.</br>
+<br>**Related Topics**: [Customer – Main](https://docs.connexcs.com/customer/main/), [Customer – Customer](https://docs.connexcs.com/customer/customer/)</br>
+<br >**Next Steps**: [Customer – Auth: IP / SIP User Authentication](https://docs.connexcs.com/customer/auth/), [Customer – Routing & Authentication Best Practices](https://docs.connexcs.com/customer/customer/#platform-intelligence)</br>
+
+---
+
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Auth**
 
 Use the **Auth** tab to configure IP or SIP (Username / Password) Authentication for users.

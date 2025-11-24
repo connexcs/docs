@@ -1,0 +1,768 @@
+# Document Relationships and Dependencies
+# This file maps document prerequisites, related content, and suggested next steps
+# for improved LLM understanding of documentation flow
+
+# Core Setup Flow
+getting-started:
+  category: setup
+  prerequisites: []
+  related:
+    - dashboard
+    - carrier
+    - customer/customer
+    - rate-card-building
+  next_steps:
+    - carrier
+    - provider-ratecard
+    - customer/customer
+  common_followup:
+    - routing
+    - billing
+  audience: new_user
+  difficulty: beginner
+
+# Carrier Configuration
+carrier:
+  category: configuration
+  prerequisites:
+    - getting-started
+  related:
+    - carrier/carrier-main
+    - carrier/carrier-auth
+    - provider-ratecard
+    - routing
+  next_steps:
+    - provider-ratecard
+    - carrier/carrier-auth
+    - carrier/carrier-failover
+  common_followup:
+    - customer/customer
+    - routing
+  audience: administrator
+  difficulty: intermediate
+
+provider-ratecard:
+  category: billing
+  prerequisites:
+    - carrier
+    - rate-card-building
+  related:
+    - customer-ratecard
+    - billing
+    - rate-card-building
+  next_steps:
+    - customer-ratecard
+    - routing
+  common_followup:
+    - billing-basics
+    - credit-control
+  audience: administrator
+  difficulty: intermediate
+
+# Customer Configuration
+customer/customer:
+  category: configuration
+  prerequisites:
+    - getting-started
+    - carrier
+  related:
+    - customer/main
+    - customer/auth
+    - customer/routing
+    - customer-ratecard
+  next_steps:
+    - customer/main
+    - customer/auth
+    - customer-ratecard
+    - customer/routing
+  common_followup:
+    - customer/cdr
+    - customer/invoices
+  audience: administrator
+  difficulty: intermediate
+
+customer-ratecard:
+  category: billing
+  prerequisites:
+    - provider-ratecard
+    - customer/customer
+  related:
+    - rate-card-building
+    - billing
+    - customer/routing
+  next_steps:
+    - customer/routing
+    - billing-basics
+  common_followup:
+    - credit-control
+    - customer/invoices
+  audience: administrator
+  difficulty: intermediate
+
+customer/routing:
+  category: routing
+  prerequisites:
+    - customer/customer
+    - customer-ratecard
+    - carrier
+  related:
+    - routing
+    - routing-strategy
+    - global-routing
+  next_steps:
+    - circuit-test
+    - customer/latest-calls
+  common_followup:
+    - guides/tshoot-signal
+    - logging
+  audience: administrator
+  difficulty: intermediate
+
+# Routing
+routing:
+  category: routing
+  prerequisites:
+    - carrier
+    - customer/customer
+  related:
+    - routing-strategy
+    - global-routing
+    - customer/routing
+    - routing-usa
+  next_steps:
+    - routing-strategy
+    - circuit-test
+  common_followup:
+    - guides/tshoot-signal
+    - customer/latest-calls
+  audience: administrator
+  difficulty: intermediate
+
+routing-strategy:
+  category: routing
+  prerequisites:
+    - routing
+  related:
+    - routing
+    - global-routing
+    - customer/routing
+  next_steps:
+    - circuit-test
+  common_followup:
+    - customer/route-stats
+  audience: administrator
+  difficulty: advanced
+
+# Billing & Financial
+billing:
+  category: billing
+  prerequisites:
+    - customer-ratecard
+    - provider-ratecard
+  related:
+    - billing-basics
+    - credit-control
+    - customer/invoices
+    - customer/payment
+  next_steps:
+    - customer/invoices
+    - credit-control
+  common_followup:
+    - customer/cdr
+    - report
+  audience: administrator
+  difficulty: intermediate
+
+billing-basics:
+  category: billing
+  prerequisites: []
+  related:
+    - billing
+    - credit-control
+    - customer/invoices
+  next_steps:
+    - billing
+    - customer-ratecard
+  common_followup:
+    - customer/payment
+  audience: new_user
+  difficulty: beginner
+
+credit-control:
+  category: billing
+  prerequisites:
+    - billing-basics
+    - customer/customer
+  related:
+    - billing
+    - customer/payment
+    - customer/alerts
+  next_steps:
+    - customer/alerts
+  common_followup:
+    - customer/invoices
+  audience: administrator
+  difficulty: intermediate
+
+customer/invoices:
+  category: billing
+  prerequisites:
+    - customer/customer
+    - customer-ratecard
+    - billing
+  related:
+    - customer/payment
+    - customer/contracts
+    - customer/cdr
+  next_steps:
+    - customer/payment
+  common_followup:
+    - report
+  audience: administrator
+  difficulty: intermediate
+
+# Authentication
+customer/auth:
+  category: security
+  prerequisites:
+    - customer/customer
+  related:
+    - carrier/carrier-auth
+    - security
+    - customer/routing
+  next_steps:
+    - customer/routing
+    - circuit-test
+  common_followup:
+    - guides/tshoot-signal
+  audience: administrator
+  difficulty: intermediate
+
+carrier/carrier-auth:
+  category: security
+  prerequisites:
+    - carrier
+  related:
+    - customer/auth
+    - security
+  next_steps:
+    - carrier/carrier-failover
+  common_followup:
+    - carrier/carrier-latest-calls
+  audience: administrator
+  difficulty: intermediate
+
+# Class 5 Features
+class5/creating-ivr:
+  category: class5
+  prerequisites:
+    - customer/customer
+    - customer/class5
+  related:
+    - class5/connexml
+    - class5/creating-conference
+    - class5/voicemail
+    - class5/creating-group
+  next_steps:
+    - class5/connexml
+    - customer/did
+  common_followup:
+    - class5/apps
+  audience: administrator
+  difficulty: advanced
+
+class5/ai-agent:
+  category: class5
+  prerequisites:
+    - class5/knowledge-base
+    - customer/class5
+  related:
+    - class5/knowledge-base
+    - class5/creating-ivr
+    - class5/connexml
+  next_steps:
+    - class5/knowledge-base
+    - class5/creating-ivr
+  common_followup:
+    - class5/apps
+  audience: administrator
+  difficulty: advanced
+
+class5/connexml:
+  category: class5
+  prerequisites:
+    - class5/creating-ivr
+  related:
+    - class5/creating-ivr
+    - class5/voicemail
+    - class5/creating-conference
+    - ide
+  next_steps:
+    - ide
+  common_followup:
+    - apps/introduction
+  audience: developer
+  difficulty: advanced
+
+# API & Development
+api:
+  category: development
+  prerequisites:
+    - getting-started
+  related:
+    - setup/integrations/api
+    - ide
+    - apps/introduction
+  next_steps:
+    - setup/integrations/api
+    - setup/integrations/jwt
+  common_followup:
+    - ide
+    - apps/introduction
+  audience: developer
+  difficulty: intermediate
+
+ide:
+  category: development
+  prerequisites:
+    - api
+  related:
+    - apps/introduction
+    - class5/connexml
+    - apps/architecture/script
+  next_steps:
+    - apps/introduction
+    - apps/architecture/script
+  common_followup:
+    - apps/page-builder
+  audience: developer
+  difficulty: advanced
+
+apps/introduction:
+  category: development
+  prerequisites:
+    - ide
+  related:
+    - apps/page-builder
+    - apps/architecture/script
+    - apps/architecture/database
+  next_steps:
+    - apps/page-builder
+    - apps/architecture/app
+  common_followup:
+    - apps/architecture/script
+  audience: developer
+  difficulty: advanced
+
+# Monitoring & Troubleshooting
+customer/latest-calls:
+  category: monitoring
+  prerequisites:
+    - customer/customer
+  related:
+    - customer/cdr
+    - customer/dialogs
+    - logging
+  next_steps:
+    - logging
+    - guides/tshoot-signal
+  common_followup:
+    - customer/cdr
+  audience: administrator
+  difficulty: beginner
+
+customer/cdr:
+  category: monitoring
+  prerequisites:
+    - customer/customer
+  related:
+    - customer/latest-calls
+    - carrier/carrier-cdr
+    - billing
+  next_steps:
+    - report
+    - customer/custom-reports
+  common_followup:
+    - customer/invoices
+  audience: administrator
+  difficulty: intermediate
+
+logging:
+  category: troubleshooting
+  prerequisites:
+    - getting-started
+  related:
+    - guides/debugging
+    - guides/tshoot-signal
+    - guides/tshoot-media
+  next_steps:
+    - guides/debugging
+  common_followup:
+    - guides/tshoot-signal
+    - guides/tshoot-media
+  audience: administrator
+  difficulty: intermediate
+
+guides/tshoot-signal:
+  category: troubleshooting
+  prerequisites:
+    - routing
+    - customer/auth
+  related:
+    - guides/tshoot-media
+    - logging
+    - guides/debugging
+    - customer/latest-calls
+  next_steps:
+    - logging
+    - guides/debugging
+  common_followup:
+    - reporting-problems
+  audience: administrator
+  difficulty: intermediate
+
+guides/tshoot-media:
+  category: troubleshooting
+  prerequisites:
+    - routing
+  related:
+    - guides/tshoot-signal
+    - logging
+    - setup/settings/rtp-zones
+  next_steps:
+    - logging
+    - setup/settings/rtp-zones
+  common_followup:
+    - reporting-problems
+  audience: administrator
+  difficulty: intermediate
+
+circuit-test:
+  category: troubleshooting
+  prerequisites:
+    - customer/routing
+    - carrier
+  related:
+    - customer/latest-calls
+    - guides/remote-testing
+  next_steps:
+    - customer/latest-calls
+  common_followup:
+    - guides/tshoot-signal
+  audience: administrator
+  difficulty: beginner
+
+# System Setup
+setup/settings/account:
+  category: setup
+  prerequisites:
+    - getting-started
+  related:
+    - setup/settings/users
+    - setup/settings/servers
+    - setup/settings/payments
+  next_steps:
+    - setup/settings/users
+    - setup/settings/servers
+  common_followup:
+    - carrier
+  audience: administrator
+  difficulty: beginner
+
+setup/settings/servers:
+  category: setup
+  prerequisites:
+    - setup/settings/account
+  related:
+    - setup/settings/rtp-zones
+    - scaling-load-balancing
+    - anyedge/anyedge
+  next_steps:
+    - setup/settings/rtp-zones
+  common_followup:
+    - carrier
+  audience: administrator
+  difficulty: intermediate
+
+setup/advanced/firewall:
+  category: security
+  prerequisites:
+    - setup/settings/servers
+  related:
+    - security
+    - customer/auth
+    - carrier/carrier-auth
+  next_steps:
+    - security
+  common_followup:
+    - setup/advanced/fraud
+  audience: administrator
+  difficulty: advanced
+
+setup/advanced/fraud:
+  category: security
+  prerequisites:
+    - credit-control
+  related:
+    - security
+    - customer/alerts
+    - setup/advanced/firewall
+  next_steps:
+    - customer/alerts
+  common_followup:
+    - guides/spam-callsblock
+  audience: administrator
+  difficulty: advanced
+
+# Customer Portal
+customer-portal/cp-dashboard:
+  category: customer_portal
+  prerequisites:
+    - customer/customer
+    - setup/integrations/portal
+  related:
+    - customer-portal/cp-cdr
+    - customer-portal/cp-authentication
+    - customer-portal/cp-routes
+  next_steps:
+    - customer-portal/cp-authentication
+  common_followup:
+    - customer-portal/cp-cdr
+  audience: end_user
+  difficulty: beginner
+
+customer-portal/cp-authentication:
+  category: customer_portal
+  prerequisites:
+    - customer-portal/cp-dashboard
+  related:
+    - customer-portal/cp-user-reg
+    - customer/auth
+  next_steps:
+    - customer-portal/cp-routes
+  common_followup:
+    - customer-portal/cp-cdr
+  audience: end_user
+  difficulty: beginner
+
+# DID Management
+customer/did:
+  category: configuration
+  prerequisites:
+    - customer/customer
+  related:
+    - carrier/carrier-did
+    - customer-portal/cp-did
+    - customer/routing
+  next_steps:
+    - customer/routing
+  common_followup:
+    - class5/creating-ivr
+  audience: administrator
+  difficulty: intermediate
+
+carrier/carrier-did:
+  category: configuration
+  prerequisites:
+    - carrier
+  related:
+    - customer/did
+    - carrier/carrier-did-inventory
+  next_steps:
+    - customer/did
+  common_followup:
+    - carrier/carrier-did-inventory
+  audience: administrator
+  difficulty: intermediate
+
+# Reports
+report:
+  category: reporting
+  prerequisites:
+    - customer/cdr
+  related:
+    - customer/custom-reports
+    - datasuite
+    - customer/stats
+  next_steps:
+    - customer/custom-reports
+    - datasuite
+  common_followup:
+    - customer/invoices
+  audience: administrator
+  difficulty: intermediate
+
+datasuite:
+  category: reporting
+  prerequisites:
+    - report
+  related:
+    - customer/custom-reports
+    - report
+  next_steps:
+    - customer/custom-reports
+  common_followup: []
+  audience: administrator
+  difficulty: advanced
+
+# WebPhone
+webphone:
+  category: communication
+  prerequisites:
+    - customer/customer
+    - setup/integrations/portal
+  related:
+    - webphoneapp
+    - setup/integrations/portal
+    - customer-portal/cp-dashboard
+  next_steps:
+    - customer-portal/cp-dashboard
+  common_followup:
+    - sip-devices
+  audience: end_user
+  difficulty: beginner
+
+# Security & Compliance
+security:
+  category: security
+  prerequisites:
+    - getting-started
+  related:
+    - setup/advanced/firewall
+    - setup/advanced/fraud
+    - customer/auth
+    - carrier/carrier-auth
+  next_steps:
+    - setup/advanced/firewall
+    - setup/advanced/fraud
+  common_followup:
+    - guides/gdpr
+  audience: administrator
+  difficulty: advanced
+
+setup/information/stir-shaken:
+  category: compliance
+  prerequisites:
+    - customer/cli
+  related:
+    - guides/stir-shaken-fcc
+    - setup/information/certificate
+  next_steps:
+    - guides/stir-shaken-fcc
+  common_followup:
+    - customer/cli
+  audience: administrator
+  difficulty: advanced
+
+# Workflow Categories
+workflows:
+  initial_setup:
+    steps:
+      - getting-started
+      - carrier
+      - provider-ratecard
+      - customer/customer
+      - customer-ratecard
+      - customer/routing
+      - circuit-test
+    estimated_time: "2-4 hours"
+    
+  troubleshoot_call:
+    steps:
+      - customer/latest-calls
+      - logging
+      - guides/tshoot-signal
+      - guides/tshoot-media
+    estimated_time: "15-30 minutes"
+    
+  setup_billing:
+    steps:
+      - billing-basics
+      - provider-ratecard
+      - customer-ratecard
+      - billing
+      - credit-control
+      - customer/invoices
+    estimated_time: "1-2 hours"
+    
+  configure_ivr:
+    steps:
+      - customer/class5
+      - customer/did
+      - class5/creating-ivr
+      - class5/connexml
+    estimated_time: "1-2 hours"
+    
+  api_integration:
+    steps:
+      - api
+      - setup/integrations/api
+      - setup/integrations/jwt
+      - ide
+    estimated_time: "2-4 hours"
+    
+  custom_app_development:
+    steps:
+      - ide
+      - apps/introduction
+      - apps/architecture/app
+      - apps/page-builder
+      - apps/architecture/script
+    estimated_time: "4-8 hours"
+
+# Audience Mapping
+audiences:
+  new_user:
+    - getting-started
+    - dashboard
+    - billing-basics
+    - customer/latest-calls
+    
+  administrator:
+    - customer/customer
+    - carrier
+    - routing
+    - billing
+    - setup/settings/account
+    
+  developer:
+    - api
+    - ide
+    - apps/introduction
+    - class5/connexml
+    
+  end_user:
+    - customer-portal/cp-dashboard
+    - customer-portal/cp-cdr
+    - webphone
+    
+  support_engineer:
+    - logging
+    - guides/tshoot-signal
+    - guides/tshoot-media
+    - guides/debugging
+
+# Difficulty Levels
+difficulty_mapping:
+  beginner:
+    - getting-started
+    - billing-basics
+    - customer/latest-calls
+    - circuit-test
+    - dashboard
+    
+  intermediate:
+    - carrier
+    - customer/customer
+    - routing
+    - billing
+    - api
+    - customer/cdr
+    
+  advanced:
+    - routing-strategy
+    - class5/connexml
+    - apps/introduction
+    - datasuite
+    - setup/advanced/fraud
+    - security

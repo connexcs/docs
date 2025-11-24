@@ -1,5 +1,18 @@
 # Interactive Voice Response
 
+---
+
+**Document Metadata**
+<br>**Category**: Class 5 Services / IVR & Interactive Voice Menu Configuration</br>
+**Audience**: Administrators, Engineers, Support Team
+<br>**Difficulty**: Intermediate to Advanced</br>
+**Time Required**: Approximately 1–2 hours
+<br>**Prerequisites**: Active ConnexCS account with Class 5 module access; familiarity with telephony IVR concepts, DTMF routing, and audio file preparation.</br>
+**Related Topics**: [Class 5 Apps & Workflow Builder](https://docs.connexcs.com/class5/apps/),  [Class 5 Call Center](https://docs.connexcs.com/class5/call-center/)
+<br>**Next Steps**: Prepare audio prompt, configure IVR for a customer (name, extension, greeting), map keypad options (0–9, *, #) to destinations (SIP URI, external number, internal extension), test the IVR, monitor call routing, and refine as needed.</br>
+
+---
+
 **Class 5 :material-menu-right: IVR**
 
 An **Interactive Voice Response (IVR)**, or phone tree, allows callers to dial in and select an extension for a specific department or group within the company.

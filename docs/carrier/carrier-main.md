@@ -1,5 +1,18 @@
 # Main
 
+---
+
+**Document Metadata**
+<br>**Category**: Carrier Management / Termination & Origination</br> Configuration</br>
+**Audience**: Administrators, Engineers, Support Team
+<br>**Difficulty**: Intermediate to Advanced</br>
+**Time Required**: Approximately 1–2 hours
+<br>**Prerequisites**: Active ConnexCS account with Carrier-module access; understanding of SIP trunking, termination/origination flows, and provider configuration fundamentals.</br>
+**Related Topics**: [Carrier Rate Cards](https://docs.connexcs.com/rate-card-building/), [Routing Overview](https://docs.connexcs.com/routing/)
+<br>**Next Steps**: Add and configure carrier accounts, set up authentication (IP/SIP credentials), define channel/CPS limits, connect rate cards, and validate behaviour through Routing Tools, Logs, and Circuit Test.</br>
+
+---
+
 **Management :material-menu-right: Carrier :material-menu-right: Main**
 
 ## Configure Carrier

@@ -1,5 +1,18 @@
 # Contracts
 
+---
+
+**Document Metadata**
+**Category**: Setup / Configuration / Contracts
+<br>**Audience**: Administrators, Engineers, Legal & Compliance Teams</br>
+**Difficulty**: Intermediate to Advanced
+<br>**Time Required**: Approximately 30–60 minutes
+**Prerequisites**: Active ConnexCS account with Setup-Config access; understanding of customer onboarding workflows, contract revision management, and compliance requirements.</br>
+**Related Topics**: [Customer Contracts](https://docs.connexcs.com/customer/contracts/)
+<br>**Next Steps**: Create a new contract template (name and revision), author the contract text, make it immutable via revision control, then assign the contract to specific customers with grace period and required status.</br>
+
+---
+
 **Setup :material-menu-right: Config :material-menu-right: Contracts**
 
 Manage **Contracts** using ConnexCS to increase integration and compliance.

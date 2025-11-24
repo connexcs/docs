@@ -1,5 +1,17 @@
 # Customer Support
 
+---
+**Document Metadata**
+<br>**Category**: Customer Support & Troubleshooting</br>
+<br>**Audience**: Administrators, Engineers, Support Team</br>
+<br>**Difficulty**: Intermediate</br>
+<br>**Time Required**: Approximately 30–60 minutes</br>
+<br>**Prerequisites**: Access to the ConnexCS Platform (customer portal or admin interface), capability to collect call logs / basic problem-data</br>
+<br>**Related Topics**: [Debugging Basics](https://docs.connexcs.com/guides/debugging/), [Call Connection/Signalling Issues](https://docs.connexcs.com/guides/tshoot-signal/), [Call Quality/Media Issues](https://docs.connexcs.com/guides/tshoot-media)</br>
+<br>**Next Steps**: [Root Cause Analysis & Fix Confirmation](https://docs.connexcs.com/reporting-problems/#confirming-a-fix), [Issue Classification & Response Times](https://docs.connexcs.com/reporting-problems/#issue-classification-and-response-times)</br>
+
+---
+
 ConnexCS doesn't charge for support, but there is a reasonable level of expectation from both parties involved. (Unless you are paying for dedicated support NOC (Network Operations Center) on Demand).
 
 ## Expectations

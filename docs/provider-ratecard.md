@@ -1,5 +1,18 @@
 # Provider Rate Cards
 
+---
+
+**Document Metadata**
+<br>**Category**: Rate Card Management / Provider Rate Card Setup & Configuration</br>
+**Audience**: Administrators, Engineers, Billing & Product Teams
+<br>**Difficulty**: Intermediate to Advanced</br>
+**Time Required**: Approximately 1–2 hours
+<br>**Prerequisites**: Active ConnexCS account with access to Rate Cards; understanding of prefix routing, cost billing structures, and provider termination/origination relationships.</br>
+**Related Topics**: [Rate Card Overview](https://docs.connexcs.com/rate-card-building/), [Customer Rate Card](https://docs.connexcs.com/customer-ratecard/)
+<br>**Next Steps**: Create a new provider rate card, upload or import cost rows (prefixes and charges), configure properties (billing units, direction, currency), manage revisions, and then link the provider card to customer cards or routing strategies.</br>
+
+---
+
 **Management :material-menu-right: Provider Rate Cards**
 
 **Provider Rate Cards** determine the routing and billing for calls made by customers. Before configuring Provider Rate Cards, we suggest you review [**Rate Card Overview**](https://docs.connexcs.com/rate-card-building/) then [**Rate Card Setup**](https://docs.connexcs.com/video-guide/#rate-card-setup) in the ConnexCS Video Guide.

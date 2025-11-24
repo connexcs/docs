@@ -1,5 +1,18 @@
 # Payment
 
+---
+
+**Document Metadata**
+<br>**Category**: Setup / Account Manager / Payment</br>
+**Audience**: Administrators, Revenue & Finance Teams
+<br>**Difficulty**: Beginner to Intermediate</br>
+**Time Required**: Approximately 15–30 minutes
+<br>**Prerequisites**: Active ConnexCS account with `Setup → Account Manager` access; basic understanding of account manager roles and payment tracking.</br>
+**Related Topics**: [Account Manager – Commission](https://docs.connexcs.com/setup/account-manager/commission/)
+<br>**Next Steps**: Navigate to `Setup → Account Manager → Payment`, click the `+` button to record a new payment, select the relevant user (account manager), enter amount, currency and description, then save the payment record.</br>
+
+---
+
 **Setup :material-menu-right: Account Manager :material-menu-right: Payment**
 
 !!! danger "This feature is presently in the Alpha Version. We're working on it. Please contact us for any queries."

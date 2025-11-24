@@ -1,5 +1,19 @@
 # Language
 
+---
+
+**Document Metadata**
+<br>**Category**: Setup & Configuration → Advanced Settings → Language</br>
+**Audience**: Administrators, Engineers, Support Team
+<br>**Difficulty**: Beginner</br>
+**Time Required**: 5–10 minutes
+<br>**Prerequisites**: ConnexCS account with access to the Setup → Advanced section</br>
+**Related Topics**: [TTS Settings](https://docs.connexcs.com/class5/apps/#build-your-call-flow-app), [Audio Files](https://docs.connexcs.com/customer-portal/cp-audio/), [Call Flow](https://docs.connexcs.com/class5/apps/#build-your-call-flow-app)
+<br>**Next Steps**: [IVR Setup](https://docs.connexcs.com/customer-portal/pbx/#ivr)
+</br>
+
+---
+
 **Setup :material-menu-right: Advanced :material-menu-right: Language**
 
 Use the **Language** interface to customize your selected interface language.

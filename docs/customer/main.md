@@ -1,5 +1,17 @@
 # Main
 
+---
+**Document Metadata**
+<br>**Category**: Customer Account Management</br>
+**Audience**: Administrators, Engineers, Support Team
+<br>**Difficulty**: Intermediate</br>
+**Time Required**: Approximately 30–60 minutes
+<br>**Prerequisites**: Active ConnexCS Control Panel account, permission to edit customer-account settings</br>
+**Related Topics**: [Customer – Create & Configure](https://docs.connexcs.com/customer/customer/), [Documents (KYC & File Upload)](https://docs.connexcs.com/customer/documents/)
+<br>**Next Steps**: [Contacts — Add & Manage Customer Contacts](https://docs.connexcs.com/customer/main/#contacts), [Internal Number Block — Setting Extension Ranges](https://docs.connexcs.com/customer-portal/cp-dashboard/#internal-number-block)</br>
+
+---
+
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name]**
 
 The first tab in a Customer account is **Main**.
