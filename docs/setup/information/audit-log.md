@@ -1,5 +1,17 @@
 # Audit Log
 
+---
+**Document Metadata** <br>**Category**: Setup & Configuration → Information → Audit Log</br>
+**Audience**: Administrators, Engineers, Support Team <br>**Difficulty**: Intermediate</br>
+**Time Required**: 5–10 minutes <br>**Prerequisites**: Access to the Setup → Information section of the ConnexCS control panel and permission to view audit entries. <br>**Related Topics**: [Change Log](https://docs.connexcs.com/setup/information/change-log/) (for version history), [Authentication Audit Log](https://docs.connexcs.com/customer-portal/cp-authentication/) (specific to IP/SIP auth) <br>**Next Steps**: Export or filter the Audit Log for compliance reporting, use in internal investigations or security reviews.
+
+---
+
+If you like, I can also pull out the **Key Columns & Definitions** (User, IP, Action, etc.) and a short “How to interpret” section for your documentation.
+
+[1]: https://docs.connexcs.com/setup/information/audit-log/?utm_source=chatgpt.com "Audit Log"
+
+
 **Setup :material-menu-right: Information :material-menu-right: Audit Log**
 
 ## Overview

@@ -1,5 +1,13 @@
 # Certificate
 
+---
+
+**Document Metadata** <br>**Category**: Setup & Configuration → Information → Certificate</br>
+**Audience**: Administrators, Engineers, Support Team <br>**Difficulty**: Intermediate</br>
+**Time Required**: 10–15 minutes <br>**Prerequisites**: Access to the Setup → Information section of your ConnexCS Platform control panel; basic knowledge of TLS/SSL certificates and DNS domain configuration. <br>**Related Topics**: [WebPhone Domain Setup](https://docs.connexcs.com/webphone/) (requires certificate installation), [Server Configuration – Certificates](https://docs.connexcs.com/setup/settings/servers/) (apply certificate to servers) <br>**Next Steps**: Apply selected certificate to an appropriate server or Web domain after adding it—see Server Configuration or Domain Deployment sections.
+
+---
+
 **Setup :material-menu-right: Information :material-menu-right: Certificate**
 
 **Certificate** management for public-key cryptography, such as:

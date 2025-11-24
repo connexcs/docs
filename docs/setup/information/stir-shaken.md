@@ -1,5 +1,18 @@
 # STIR / SHAKEN Cert
 
+---
+
+**Document Metadata** <br>**Category**: Setup & Configuration → Information → STIR/SHAKEN Cert</br>
+**Audience**: Administrators, Engineers, Carrier / VoIP Originators <br>**Difficulty**: Intermediate to Advanced</br>
+**Time Required**: 15–30 minutes <br>**Prerequisites**:
+
+* A valid STIR/SHAKEN certificate issued by a recognised authority (e.g., Iconectiv as STI-PA in the U.S.)
+* Operating Company Number (OCN), FCC Form 499-A registration (for U.S.), and access to the certificate key/CSR process
+* Access to the Connex Carrier Services (ConnexCS) control panel in the “Information → STIR/SHAKEN Cert” section to upload certificate and key.
+<br>**Related Topics**: [Caller Line Identification (CLI)](https://docs.connexcs.com/customer/cli/) (integration of attestation and CLI rules), [New FCC Regulations on STIR/SHAKEN](https://docs.connexcs.com/guides/stir-shaken-fcc/)  <br>**Next Steps**: Configure STI/SHAKEN routing and attestation levels for your CLIs in “Customer → CLI” settings after certificate upload.
+
+---
+
 **Setup :material-menu-right: Information :material-menu-right: STIR/SHAKEN Cert**
 
 *(***STIR***: Secure Telephone Identity Revisited, ***SHAKEN***: Signature-based Handling of Asserted Information Using toKENs)*

@@ -1,5 +1,13 @@
 # Introduction
 
+---
+
+**Document Metadata** <br>**Category**: Setup & Configuration → Information → Change Log</br>
+**Audience**: Administrators, Engineers, Support Team <br>**Difficulty**: Beginner</br>
+**Time Required**: 5–10 minutes <br>**Prerequisites**: Access to the ConnexCS documentation portal <br>
+
+---
+
 **Setup :material-menu-right: Information :material-menu-right: Change Log**
 
 A changelog is a chronological record of notable changes made to a project, software, or document.

@@ -1,5 +1,14 @@
 # Statement
 
+---
+
+**Document Metadata** <br>**Category**: Setup & Configuration → Information → Statements</br>
+**Audience**: Administrators, Engineers, Finance Team <br>**Difficulty**: Beginner to Intermediate</br>
+**Time Required**: 5–10 minutes <br>**Prerequisites**: Access to the Setup → Information section of the ConnexCS control panel, Basic understanding of billing and cost-reporting</br>
+**Related Topics**: [Change Log](https://docs.connexcs.com/setup/information/change-log/), [Feature Requests](https://docs.connexcs.com/setup/information/feature-request/), [Payment Log](https://docs.connexcs.com/setup/information/payment-log/) <br>**Next Steps**: Download the statement grid, export for analysis, follow up with detailed cost-breakdown queries</br>
+
+---
+
 **Setup :material-menu-right: Information :material-menu-right: Statement**
 
 **Statement** displays daily spending on your ConnexCS account, typically used when a customer has questions about billing.

@@ -1,5 +1,13 @@
 # Jobs
 
+---
+
+**Document Metadata** <br>**Category**: Setup & Configuration → Information → Jobs</br>
+**Audience**: Administrators, Engineers, Support Team <br>**Difficulty**: Intermediate</br>
+**Time Required**: 5–10 minutes <br>**Prerequisites**: Access to the Setup → Information section of the ConnexCS control panel; Permissions to view system jobs/queues. <br>**Related Topics**: [Audit Log](https://docs.connexcs.com/setup/information/audit-log/), [Change Log](https://docs.connexcs.com/setup/information/change-log/) <br>**Next Steps**: Review job results and export logs for job-monitoring or troubleshooting.
+
+---
+
 **Setup :material-menu-right: Information :material-menu-right: Job**
 
 **Jobs** is an interesting feature that lets you check the status of tasks created or initiated for you.
