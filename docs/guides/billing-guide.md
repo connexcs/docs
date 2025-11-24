@@ -9,10 +9,6 @@
 
 ---
 
-See [**Connex Billing**](/billing) for details on Per Channel and Per Minute models.
-
-See [**Credit Control**](/credit-control) for tips on managing customer credit.
-
 ## Call Detail Records
 
 **Call Detail Records (CDRs)** are historical records of all calls in a given period. These are billable and are the suggested data set for referring to questions about billing and invoices.

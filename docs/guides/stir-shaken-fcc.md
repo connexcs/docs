@@ -10,7 +10,6 @@
 * Knowledge of U.S. regulations for telecom carriers. 
 
 **Related Topics**: [STIR/SHAKEN Cert Upload](https://docs.connexcs.com/setup/information/stir-shaken/) — certificate prerequisite.
-
 **Next Steps**: Acquire SPC Token & certificate from an authorised CA, upload to your system, configure attestation routing in the switch.
 
 ---
