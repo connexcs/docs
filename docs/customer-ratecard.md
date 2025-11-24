@@ -153,7 +153,7 @@ a. After saving, you must define your rates either by uploading a rate sheet or 
 
 b. Three primary options are now visible:
     i. **Build from Provider Card**: This is the preferred method and requires you to select a Provider Rate Card in Properties :material-menu-right: Basic.
-    ii. **Bulk Upload**: Import rates via a CSV file (recommended for full rate sheets).
+    <br>ii. **Bulk Upload**: Import rates via a CSV file (recommended for full rate sheets).</br>
     iii. **Manual Add**: Add prefixes and rates one by one directly in the interface.
 
 c. **Bulk Upload**: The preferred method for adding a Rate Card is to import/upload it:
@@ -162,7 +162,7 @@ c. **Bulk Upload**: The preferred method for adding a Rate Card is to import/upl
   
   2. Select the file, typically sent by the Provider in CSV format (if not provided as CSV, conversion required before proceeding).
   
-  3. Right-click on the first row of data and select "Set Start Row."
+  3. Right-click on the first row of data and select `Set Start Row.`
   
   4. Right-click and map the columns. It's important to map all fields based on the Rate Card columns. For example:
 
@@ -179,10 +179,10 @@ c. **Bulk Upload**: The preferred method for adding a Rate Card is to import/upl
 !!! Danger "Manually generated cards"
     When users create Provider Rate Card CSV files manually in Excel (rather than generating them from a rate card management system), they may introduce errors such as empty rows or duplicate prefixes, which could cause the file upload to error.
 
-d. **Manual Add**: To manually add Rate Card rows, select Create Draft and then add / modify / delete required rows."
+d. **Manual Add**: To manually add Rate Card rows, select Create Draft and then add / modify / delete required rows.
 
 e. **Build from Provider Card**:
-  1. Click **`Build`** and confirm.
+  <br>1. Click **`Build`** and confirm.</br>
   2. A notification will tell you if the build was successful. You may need to refresh the card to see the new settings.
 
 !!! Info "Generated vs. Manual Cards"
