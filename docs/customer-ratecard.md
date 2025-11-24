@@ -152,7 +152,7 @@ II. **Step 2**
 a. After saving, you must define your rates either by uploading a rate sheet or manually adding prefixes. This is what makes the rate card operational for billing and routing.
 
 b. Three primary options are now visible:
-    i. **Build from Provider Card**: This is the preferred method and requires you to select a Provider Rate Card in Properties :material-menu-right: Basic.
+    <br>i. **Build from Provider Card**: This is the preferred method and requires you to select a Provider Rate Card in Properties :material-menu-right: Basic.</br>
     <br>ii. **Bulk Upload**: Import rates via a CSV file (recommended for full rate sheets).</br>
     iii. **Manual Add**: Add prefixes and rates one by one directly in the interface.
 
