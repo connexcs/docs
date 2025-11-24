@@ -334,10 +334,16 @@ For each Prefix you can manually order the Provider Rate Cards for a high degree
 [prc-func]: /card/img/prc-func.png "Functions" style="border: 2px solid #4472C4; border-radius: 8px;"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5d22377fa876b34e25580a537f054fff97f15112
 [profit]: /card/img/profit.png "Edit Profits"
 
 !!! tip "**Rate Compact**, **Collapse Using**, and **Force Presentation**."
     + These properties relate to profit calculation and rate structure presentation.
     + Ensures rate structure efficiency while providing profit visibility.
+<<<<<<< HEAD
 =======
 >>>>>>> 8577b1122ce2b1063567dffbbefab52e1eef3356
+=======
+>>>>>>> 5d22377fa876b34e25580a537f054fff97f15112
