@@ -77,9 +77,9 @@ This serves as your primary management dashboard, allowing you to quickly search
 
 ### Available Options
 
-+ `+`: Add a new customer card.
++ **`+`**: Add a new customer card.
 
-+ **Refresh**:Reloads the entire page.
++ **Refresh**: Reloads the entire page.
 
 + **Bulk Build**: Select multiple cards to perform the build. This is usually done after you've set up your properties and profit, or when you need to gather several customers after a rate change.
 
@@ -87,18 +87,18 @@ This serves as your primary management dashboard, allowing you to quickly search
 
 + **Delete**: Delete a customer rate card by selecting its name from the list and then clicking the trash bin icon.
 
-+ `?`(Help): Link to the documentation.
++ **`?`(Help)**: Link to the documentation.
 
 |Name|Description|
 |----|-----------|
 |**Name**|Click the name of the provider to see an individual rate card and management options. If a Rate Card name shows a yellow warning or red alert, these will show details about the card. It may be stale or have some sort of error|
-|****Force Presentation**|[Click here](/customer-ratecard/#config) to know more|
+|**Force Presentation**|[Click here](/customer-ratecard/#config) to know more|
 |**Direction**|Cards are either *Termination* (calling out to PSTN) or *Origination* (DID numbers receiving calls from the PSTN). Termination is the most common card used by ConnexCS customers|
 |**Currency**|The currency for the provider's region (typically USD, EUR, or GBP)|
 |**?**|Lists the upstream providers (parent cards) as well as the total number of customers associated with the card (as specified in Customer: material-menu-right: routing). Any changes made to this card will impact the customers associated with the card. Click on the Provider ID or Customer Name to view the configuration|
 |**ID**| A system identifier that acts as a placeholder and prevents confusion between similarly named items|
 |**Rule Count**|The number of rows in the Rate Card|
-|**Compile**|Displays the upstream provider cards associated with the customer card. <br>a. Shows total customers using a specific card.</br> b.Allows users to track which customers are subscribed to a particular card|
+|**Compile**|Displays the upstream provider cards associated with the customer card. <br>a. Shows total customers using a specific card.</br> b. Allows users to track which customers are subscribed to a particular card|
 |**Public Options**| Choose what you can do with the card information: view it via HTML (on a web page), download CSV (a spreadsheet), and whether to list the rate card in the customer portal (customers can view cards not presently on their account and select them for use). (**Note: API Querying is no longer available.**)|
 |**Dynamic Routing**|Manually created cards (added via upload or edited in-browser) have the option to use Dynamic Routing to select routes for the card, essentially changing the routing without creating new cards|
 |**Active Revision**|Only one active revision at a time. Previous revisions can be archived and reactivated if needed|
@@ -152,23 +152,35 @@ II. **Step 2**
 a. After saving, you must define your rates either by uploading a rate sheet or manually adding prefixes. This is what makes the rate card operational for billing and routing.
 
 b. Three primary options are now visible:
+
     i. **Build from Provider Card**: This is the preferred method and requires you to select a Provider Rate Card in Properties :material-menu-right: Basic.
+    
     ii. **Bulk Upload**: Import rates via a CSV file (recommended for full rate sheets).
+    
     ii. **Manual Add**: Add prefixes and rates one by one directly in the interface.
 
 c. **Bulk Upload**: The preferred method for adding a Rate Card is to import/upload it:
+
     1. Click `Bulk Upload`, then `Upload`.
+    
     2. Select the file, typically sent by the Provider in CSV format (if not provided as CSV, conversion required before proceeding).
+    
     3. Right-click on the first row of data and select "Set Start Row."
+    
     4. Right-click and map the columns. It's important to map all fields based on the Rate Card columns. For example:
+       
        1. Col 1 - Prefix
+       
        2. Col 2 - Name
+       
        3. Col 3 - Cost
+    
     5.  Choose Upload to Sever and confirm the upload.
+    
     6.  Select whether to make this active instantly.
 
-        !!! Danger "Manually generated cards"
-            When users create Provider Rate Card CSV files manually in Excel (rather than generating them from a rate card management system), they may introduce errors such as empty rows or duplicate prefixes, which could cause the file upload to error.
+    !!! Danger "Manually generated cards"
+        When users create Provider Rate Card CSV files manually in Excel (rather than generating them from a rate card management system), they may introduce errors such as empty rows or duplicate prefixes, which could cause the file upload to error.
 
 d. **Manual Add**: To manually add Rate Card rows, select Create Draft and then add / modify / delete required rows."
 
@@ -193,6 +205,10 @@ It's a convenient way to send customers official information relevant to their a
 Click **`Email`**, enter the email address and click **`Send`**.
 
 **Clone Card**: Create an exact copy of an existing Rate Card.
+
+**Refresh**: Reloads the screen.
+
+**Help**: Link to the documentation.
 
 **Audit Log**: Review any changes made to the card settings.
 
