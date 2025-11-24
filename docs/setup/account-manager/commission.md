@@ -1,4 +1,17 @@
 # Commission
+---
+
+**Document Metadata**
+<br>**Category**: Setup / Account Manager / Commission</br>
+**Audience**: Administrators, Revenue & Sales Managers, Support Team
+<br>**Difficulty**: Beginner to Intermediate</br>
+**Time Required**: Approximately 30-45 minutes
+<br>**Prerequisites**: Active ConnexCS account with `Setup → Account Manager` access; familiarity with sales account management and commission percentage workflows.</br>
+**Related Topics**: [Account Manager – Payment](https://docs.connexcs.com/setup/account-manager/payment/)
+<br>**Next Steps**: Define commission records for account managers (select user, start date, end date, % value), link account managers to customers via the `Management → Customer` screen, test that commissions correctly attribute and report.
+
+---
+
 
 **Setup :material-menu-right: Account Manager :material-menu-right: Commission**
 
