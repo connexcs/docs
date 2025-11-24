@@ -1,5 +1,15 @@
 # Reseller Account
 
+---
+
+**Document Metadata** <br>**Category**: Setup & Configuration → Advanced Settings → Reseller</br>
+**Audience**: Administrators, Engineers, Support Team <br>**Difficulty**: Intermediate</br>
+**Time Required**: 10–15 minutes <br>**Prerequisites**: ConnexCS account with access to the Setup → Advanced section <br>**Related Topics**: [Billing & Plans](https://docs.connexcs.com/billing/)</br>
+**Next Steps**: Partner Onboarding
+
+---
+
+
 **Setup :material-menu-right: Advanced :material-menu-right: Reseller Account**
 
 ConnexCS offers the **Reseller Account** functionality for you as a carrier to resell your services via a reseller or agent.

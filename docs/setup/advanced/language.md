@@ -8,8 +8,8 @@
 <br>**Difficulty**: Beginner</br>
 **Time Required**: 5–10 minutes
 <br>**Prerequisites**: ConnexCS account with access to the Setup → Advanced section</br>
-**Related Topics**: [TTS Settings](https://docs.connexcs.com/setup/advanced/tts/), [Audio Files](https://docs.connexcs.com/setup/advanced/audio/), [Call Flow](https://docs.connexcs.com/setup/callflow/)s
-<br>**Next Steps**: [Configuring TTS Voices](https://docs.connexcs.com/setup/advanced/tts/), [Managing Prompts](https://docs.connexcs.com/setup/advanced/audio/), [IVR Setup](https://docs.connexcs.com/setup/callflow/ivr/)
+**Related Topics**: [TTS Settings](https://docs.connexcs.com/class5/apps/#build-your-call-flow-app), [Audio Files](https://docs.connexcs.com/customer-portal/cp-audio/), [Call Flow](https://docs.connexcs.com/class5/apps/#build-your-call-flow-app)
+<br>**Next Steps**: [IVR Setup](https://docs.connexcs.com/customer-portal/pbx/#ivr)
 </br>
 
 ---

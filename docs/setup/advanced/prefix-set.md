@@ -1,5 +1,15 @@
 # Prefix Sets
 
+---
+
+**Document Metadata** <br>**Category**: Setup & Configuration → Advanced Settings → Prefix Set</br>
+**Audience**: Administrators, Engineers, Support Team <br>**Difficulty**: Intermediate</br>
+**Time Required**: 10–15 minutes <br>**Prerequisites**: ConnexCS account with access to the Setup → Advanced section</br>
+**Related Topics**: [Dial-Plan Rules](https://docs.connexcs.com/guides/howto/restrict-calling-plan/) [Routing](https://docs.connexcs.com/setup/routing/)</br>
+**Next Steps**: [Routing](https://docs.connexcs.com/setup/routing/), [Dial-Plan Rules](https://docs.connexcs.com/guides/howto/restrict-calling-plan/)</br>
+
+---
+
 **Setup :material-menu-right: Advanced :material-menu-right: Prefix Set**
 
 A **Prefix Set** groups containing one or more prefixes together. You can then apply this set to a Customer or Route.
