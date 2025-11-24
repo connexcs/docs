@@ -2,6 +2,8 @@
 
 ## Introduction
 
+ConnexCS offers a powerful templating system for automating communication.
+
 Create your own **Templates** to customise the content displayed on outbound emails/SMS, the Customer Portal, and WebPhone.
 
 ConnexCS **Templates** use the mustash-compatible template language [**Handlebars**](https://handlebarsjs.com/guide/).
@@ -15,7 +17,7 @@ ConnexCS **Templates** use the mustash-compatible template language [**Handlebar
 
 2. Navigate to **IDE** :material-menu-right: `+` icon :material-menu-right: **Template**.
 
-<img src= "/apps/img/template12.png">
+<img src= "/apps/img/template12.png" width="500" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 3.Fill out the following details:
 
@@ -24,7 +26,7 @@ ConnexCS **Templates** use the mustash-compatible template language [**Handlebar
    * Fill out the template **Subject** for the **e-mail** communication (supports variables).
    * The **SMS** field doesn't actually send the SMS, but it's usable when other parts of the system have SMS set.
 
-<img src= "/apps/img/template21.png" width="300">
+<img src= "/apps/img/template21.png" width="300" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 4.Click on `Save`.
 
@@ -32,16 +34,16 @@ ConnexCS **Templates** use the mustash-compatible template language [**Handlebar
 
 6.Enter the HTML code. Click on `Save` and `Run`.
 
-<img src= "/apps/img/template3.png">
+<img src= "/apps/img/template3.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-7.**Preview**![prev1](image-6.png) is available on the right side of the screen. Click here to open the preview section.
+7.**Preview** ![prev1](image-6.png) is available on the right side of the screen. Click here to open the preview section.
 Click on this arrow ![arr](image-5.png) to maximize the preview screen.
 
-<img src= "/apps/img/template4.png">
+<img src= "/apps/img/template4.png" width="300" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 8.You can `Run` and `Save` the code, `Toggle Console`, `Preview (errors)`, `Request Cancellation` for cancelling any ongoing requests, for example taking longer to execute, `Settings` you can edit, Set Vars, Copy file ID, Copy UUID using Settings.
 
-<img src= "/apps/img/sc.png" width= "275">
+<img src= "/apps/img/sc.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Note
     A **File ID** serves as the unique identifier for a file, while a **UUID** is used to expose a **ScriptForge File** to external systems.
@@ -52,5 +54,5 @@ Click on this arrow ![arr](image-5.png) to maximize the preview screen.
 
     * Follow the instructions above to add documentation for a specific built application, however note that **template name** should actually be **app_documentation**.
 
-<img src= "/apps/img/appdoc.png">
-<img src= "/apps/img/appdoc1.png">
+<img src= "/apps/img/appdoc.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/apps/img/appdoc1.png" style="border: 2px solid #4472C4; border-radius: 8px;">

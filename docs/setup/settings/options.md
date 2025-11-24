@@ -38,5 +38,4 @@ Configure **Options** to set key default behaviors for the system. Click **`Edit
 
     Click on the `Save` button to apply the changes to your account.
 
-    <img src="/setup/img/siprewrite.png">
-
+    <img src="/setup/img/siprewrite.png" style="border: 2px solid #4472C4; border-radius: 8px;">

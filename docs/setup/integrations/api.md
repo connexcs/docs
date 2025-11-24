@@ -2,23 +2,54 @@
 
 **Setup :material-menu-right: Integrations :material-menu-right: API**
 
-Configure **API Integrations** to let ConnexCS     connect to external services.
+Configure **API Integrations** to let ConnexCS connect to external services. It provides seamless connectivity to external systems and payment processors.
 
-For inbound APIs, please see the [**API**](https://docs.connexcs.com/api/) in the Architecture documentation.
+For inbound APIs, please see the [**API**](https://api-docs.connexcs.com/) in the Architecture documentation.
+
+!!! note "These integrations are custom written, offering similar capabilities as drivers."
 
 ## Available Integrations
 
 + **PayPal Express Checkout**: Lets you do online checkout via the customer portal using a [**PayPal**](https://www.paypal.com) Account.
+    + **Configuration Options**:
+        + Mode: Choose between live or test.
+        + Details: Enter all required PayPal account details.
+        + Fee Management: Option to automatically deduct PayPal fees.
+        + Save & Activate: Once configured, the system is enabled to accept PayPal payments.
+  + **Key Benefits**:
+      + Simplified payment processing.
+      + Flexible fee management.
 
 + **PayPal IPN**: Enable Instant Payment Notification (IPN) to use MassPay or to send money from the PayPal portal without using your site.
 
-    This also notifies the system of incoming PayPal payments, and we can top up based on that notification.  
+    This also notifies the system of incoming PayPal payments, and we can top up based on that notification.
 
-+ **Stripe**: Possibly the world's best credit card processor, [**Stripe**](https://www.stripe.com); we can help with its availability on the portal.
+    + **Functionality**:
+        + Operates in the reverse direction compared to Express Checkout.
+        + Requires you to log into your PayPal account and enter a specific detail.
+
+    + **Notification Workflow**:
+        + When a customer makes a payment (via mass pay or send money), PayPal sends a request to the server.
+        + The system then logs back into PayPal to verify the transaction.
+  
+  + **Additional Settings**:
+      + Specify which currencies to accept.
+      + Option to deduct PayPal fees.
+      + Automatically top up the customer’s account when funds are received.
+
+  + **Key Benefits**:
+      + Real-time payment verification.
+      + Increased security and accuracy in transaction processing.
+
++ **Stripe**: Possibly the world's best credit card processor, [**Stripe**](https://www.stripe.com); we can help with its availability on the portal. It enables streamlined credit card processing
 
 + **Duo Security**: [**Duo Security**](https://duo.com/) provides 2FA (2 Factor Authentication) via an out-of-band push notification to your mobile device to approve login.
 
     It also provides fingerprint authentication for extra security.
+
+    + **Functionality**:
+        + Sends push notifications to mobile devices.
+        + Deployable for individual sites to secure customer accounts.
 
 + **Moneris**: [**Moneris**](https://www.moneris.com/) is  a Canadian Credit Card Processing service.
 
@@ -36,13 +67,12 @@ For inbound APIs, please see the [**API**](https://docs.connexcs.com/api/) in th
 
 + **Emetec**: [**Emetec**](https://www.linkedin.com/company/emetec/) provides Merchant services, Payments processing, eCommerce Payment Gateway,  Real-Time-Payments, Online Transfers.
 
-
 ## Enable API Integration
 
 1. Click **`Add`**.
 2. Select the required service from the list.
 
-    ![alt text][api]
+    <img src= "/setup/img/api12.png" width= "175" style= "border: 2px solid #4472C4; border-radius: 8px;"> 
 
 3. Complete the available fields (see individual API integrations below for details for each provider).
 4. Click **`Save`**.
@@ -86,7 +116,7 @@ Enter your PayPal account information.
     + Select **Request API signature**, and then click **`Agree and Submit`**.
 4. Copy the **API Username**, **API Password**, and **Signature** credentials from this page into the open PayPal form in ConnexCS.
 
-    ![alt text][paypal-9]
+    <img src= "/setup/img/paypal-91.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 5. **Currency**: Select one or more currencies that you will accept.
 6. **Deduct Payment Fees**: Set whether you will deduct the fees or not.
@@ -120,7 +150,7 @@ Steps to configure IPN:
 
 **Step 2: Identify your IPN listener to PayPal**
 
-After you have configured ConnexCS, add it to your PayPal account (taken from PayPal support [**here**](https://developer.paypal.com/docs/api-basics/notifications/ipn/IPNSetup/#)).
+After you have configured ConnexCS, add it to your PayPal account (taken from PayPal support [**here**](https://developer.paypal.com/docs/api-basics/notifications/ipn/IPNSetup/)).
 
 1. Login to a PayPal Business Account (must be a Business account, not a regular PayPal account).
 2. Navigate to **Settings :material-menu-right: Account Settings :material-menu-right: Notifications**.
@@ -143,7 +173,7 @@ The following are instructions on how to add a PayPal Email address to a ConnexC
 
 You can view these payments under **Setup :material-menu-right: Information :material-menu-right: Payment Log**.
 
-<img src= "/setup/img/api2.png" width="350">
+<img src= "/setup/img/api2.png" width="350" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Stripe Integration
 
@@ -156,7 +186,7 @@ Configure the Stripe API Keys in ConnexCS:
 5. **Surcharge**: Amount charged for each transaction.
 6. **Surcharge Precent**:It's the percentage of the total charge that's added as an extra fee.
 
-<img src= "/setup/img/api3.png" width="350">
+<img src= "/setup/img/api3.png" width="350" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Duo Security Integration
 
@@ -166,7 +196,7 @@ Configure Duo Security Settings in ConnexCS:
 2. **Integration Key**, **Secret**, and **Host**: Access the [**Duo Admin Panel**](https://admin.duosecurity.com/), locate the **`Auth API`**, click `Protect` (from [**Duo Auth support**](https://duo.com/docs/authapi)). Find the **Integration Key**, **Secret Key**, and **API Hostname** to complete setup in ConnexCS.
 3. **AKey (Application Key)**: It's a secret key that's used to authenticate your application with Duo Security. You will need to provide the AKey to Duo Security when you configure your application to use Duo Security.
 
-<img src= "/setup/img/api4.png" width="350">
+<img src= "/setup/img/api4.png" width="350" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Moneris Integration
 
@@ -176,15 +206,27 @@ Link Moneris to ConnexCS:
 2. **Store ID**: You can find this in the MRC Welcome emails (contact [**Moneris**](https://www.moneris.com/) for help finding it).
 3. **Signature**: It's used to verify the identity of the cardholder to prevent frauds.
 
-<img src= "/setup/img/api5.png" width="350">
+<img src= "/setup/img/api5.png" width="350" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Scriptforge Integration
+
+**Usage**:
+
++ Allows selection of a company from the list of carriers
+
++ Facilitates linking integrations to DID drivers.
+
++ Supports connection to an individual ScriptForge instance (e.g., as a DID provider).
+
+**Key Benefit**:
+
++ Streamlines the process of linking carrier information for DID driver functionality.
 
 1. Select **`Add`**, and then select **Scriptforge**.
 2. **Company**: Select the customer to integrate.
 3. **Script Forge**: Select the predefined script (details found under [**Developer :material-menu-right: Scriptforge**](/developers/scriptforge/).
 
-<img src= "/setup/img/api6.png" width="350">
+<img src= "/setup/img/api6.png" width="350" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Razor Pay Integration
 
@@ -196,7 +238,7 @@ Enter Razorpay settings into ConnexCS:
 4. **Currency**: Select one or more currencies that you will accept.
 5. **Deduct Payment Fees**: Set whether you will deduct the fees or not.
 
-<img src= "/setup/img/api7.png" width="350">
+<img src= "/setup/img/api7.png" width="350" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Xero Integration
 
@@ -211,7 +253,7 @@ Configure the Paystack Payment settings in ConnexCS:
 3. **Public Key (Publishable) and Private Key (Secret)**: Access the [Paystack Support Link](https://support.paystack.com/hc/en-us/articles/360009881600-Paystack-Test-Keys-Live-Keys-and-Webhooks) to access the Test keys and Live keys.
 4. **Currencies**: Select one or more currencies that you will accept.
 
-<img src= "/setup/img/api8.png" width="350">
+<img src= "/setup/img/api8.png" width="350" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## PayMongo Integration
 
@@ -222,7 +264,7 @@ Configure the PayMongo Payment settings in ConnexCS:
 3. **Public Key (Publishable) and Private Key (Secret)**: Access the [PayMongo API Reference Guide](https://developers.paymongo.com/reference/getting-started-with-your-api) to retrieve the Secret keys.
 4. **Currencies**: Select PHP (Philippine Peso) as the currency.
 
-<img src= "/setup/img/api9.png" width="350">
+<img src= "/setup/img/api9.png" width="350" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## NOWPayments  Integration
 
@@ -234,7 +276,7 @@ Configure the NOWPayments settings in ConnexCS:
 4. **IPN Key**: Access the [IPN Key guide](https://nowpayments.io/help/what-is/what-is-ipn).
 5. **Currencies**: You have several curriencies to choose from.
 
-<img src= "/setup/img/api10.png" width="350">
+<img src= "/setup/img/api10.png" width="350" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Emetec Integration
 
@@ -246,7 +288,10 @@ Configure the Emetec settings in ConnexCS:
 4. **Authorization**: It;s a process of determining whether a user has permission to access a resource. In Emtec, authorization depends on roles and permissions.
 5. **Currencies**: Select USD as the currency.
 
-<img src= "/setup/img/api11.png" width="350">
+<img src= "/setup/img/api11.png" width="350" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+[paypal-9]: /setup/img/paypal-9.png "Paypal-9" style="border: 2px solid #4472C4; border-radius: 8px;"
 
 [paypal-9]: /setup/img/paypal-9.png "Paypal-9"
-[api]: /setup/img/api.png "API Integration"
+
+.

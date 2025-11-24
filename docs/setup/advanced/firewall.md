@@ -11,7 +11,7 @@ The ConnexCS **Firewall** uses a threat detection system to blacklist attackers.
 3. Select **Block** from the **Action** dropdown menu.
 4. You can add additional information in the **Notes** section.
 
-<img src= "/setup/img/firewall1.png" width= "400">
+<img src= "/setup/img/firewall1.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Threat Detection System
 
