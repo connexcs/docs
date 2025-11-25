@@ -13,7 +13,7 @@
 * Access to your usage data or CDRs to understand how charges are incurred
 
 **Related Topics**: Billing Basics (detailed billing increments, rounding), Billing Guide (overall billing models), Rate Card Overview (since rate cards tie into billing)
-**Next Steps**: Review which billing model your plan uses (per‐minute or per‐channel), verify your minimum charges and ensure alignment with your traffic patterns.
+<br>**Next Steps**: Review which billing model your plan uses (per‐minute or per‐channel), verify your minimum charges and ensure alignment with your traffic patterns.</br>
 
 ---
 

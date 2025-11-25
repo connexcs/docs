@@ -1,5 +1,14 @@
 # SIP Traces, Pings and Messages
 
+---
+
+**Document Metadata** <br>**Category**: ConnexCS Basics → Number Manipulation</br>
+**Audience**: Administrators, Engineers, Support Team <br>**Difficulty**: Intermediate</br>
+**Time Required**: 5–10 minutes</br>
+**Prerequisites**: Understanding of number formatting and call-routing prefixes; access to customer routing or CLI configuration sections. <br>**Related Topics**: [Prefix Set](https://docs.connexcs.com/setup/advanced/prefix-set/) (for prefix rules) , [CLI / Number Rewrite Rules](https://docs.connexcs.com/customer/cli/) (for CLI manipulation) <br>**Next Steps**: Define your number formatting rules (e.g., strip leading zeros, add country code) then test routing flows to confirm correct number presentation.
+
+---
+
 ## SIP Traces
 
 **SIP Tracing** is a diagnostic tool for phone systems using SIP (Session Initiation Protocol) for interactions across trunks and between endpoints. Traces give detailed information about calls and call attempts while debugging and troubleshooting.

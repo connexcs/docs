@@ -1,8 +1,12 @@
 # Acronyms and Definitions
 
-ConnexCS uses standard telephony terminology in our Control Panel and documentation.
+---
 
-Find below the definitions for the most relevant telephony terms, along with some general networking terms and ConnexCS specific terms.
+**Document Metadata** <br>**Category**: Acronyms & Definitions</br>
+**Audience**: Administrators, Engineers, Support Team <br>**Difficulty**: Beginner</br>
+**Time Required**: 5–10 minutes <br>**Prerequisites**: Access to the documentation portal; basic familiarity with telecom/VoIP terms <br>**Related Topics**: [Dial Code / Destination](https://docs.connexcs.com/setup/information/dial-code-destination/) (for number-format definitions), [Billing Basics](https://docs.connexcs.com/billing-basics/) (uses many of the same metrics) <br>**Next Steps**: Use the acronym list to align your internal documentation + glossary; ensure all team members use consistent terminology.
+
+---
 
 |Term|Definition|Explanation|
 |---|---|---|
