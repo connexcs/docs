@@ -2,7 +2,7 @@
 
 ---
 
-**Document Metadata** <br>**Category**: Analytics & Observability / Monitoring & Alerts</br> **Audience**: Administrators, Engineers, Support Team **Difficulty**: Intermediate
+**Document Metadata** <br>**Category**: Analytics & Observability / Monitoring & Alerts</br> **Audience**: Administrators, Engineers, Support Team <br>**Difficulty**: Intermediate</br>
  **Time Required**: Approximately 30–40 minutes <br>**Prerequisites**: Active ConnexCS account with access to the Monitoring module and privileges to view metrics and configure alerts</br> **Related Topics**: [Customer – Stats](https://docs.connexcs.com/customer/stats/), [Alerts & Thresholds](https://docs.connexcs.com/customer/alerts/#global-alerts) <br>**Next Steps**: After reviewing the Monitoring overview, set up customized dashboards for key KPIs (e.g., call volumes, CPS, errors) and link them to automated alerts for proactive issue detection.</br>
 
 ---

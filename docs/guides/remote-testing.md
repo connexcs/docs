@@ -1,5 +1,15 @@
 # Remote Testing
 
+---
+
+**Document Metadata** <br>**Category**: Troubleshooting & Diagnostics / Remote Testing</br>
+**Audience**: Administrators, Engineers, Support Team <br>**Difficulty**: Intermediate</br>
+**Time Required**: Approximately 20–30 minutes <br>**Prerequisites**: Active ConnexCS account with access to the Global → Weylon section (or equivalent remote-testing tool), and ability to ask the customer to install and run the testing agent on a reachable host</br>
+**Related Topics**: [Troubleshooting – Signalling](https.//docs.connexcs.com/guides/tshoot-signal/) , [Troubleshooting – Media](https.//docs.connexcs.com/guides/tshoot-media/) , [Logging & Audit Trails](https.//docs.connexcs.com/logging/)
+<br>**Next Steps**: After provisioning a remote-test configuration and having the customer run the agent, review the test output in the Control Panel, correlate the results with the customer issue (e.g., latency spikes, packet loss, trace-route anomalies), document any findings, and update your internal run-book for future remote-testing workflows.</br>
+
+---
+
 **Remote Testing** using the Weylon application allows for increased visibility into customer issues. The process consists of three steps.
 
 !!! note "Testing Results"

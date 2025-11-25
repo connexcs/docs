@@ -1,5 +1,12 @@
 # Troubleshoot Media
 
+---
+
+**Document Metadata** <br>**Category**: Troubleshooting & Diagnostics / Media Troubleshooting</br> **Audience**: Administrators, Engineers, Support Team <br>**Difficulty**: Intermediate to Advanced</br> **Time Required**: Approximately 30–45 minutes <br>**Prerequisites**: Active ConnexCS account with access to media-logs, RTP/RTCP analytics, and network tracing tools (e.g., Wireshark or sngrep) </br> **Related Topics**: [SIP Signalling Troubleshooting](https://docs.connexcs.com/guides/tshoot-signal/), [OSI Model – Networking Fundamentals](https://docs.connexcs.com/guides/osi-model/) <br>**Next Steps**: After reviewing the media troubleshooting guide, capture a problematic call’s RTP/RTCP streams, examine jitter, packet loss and codec mismatches, correlate with system logs, and then document mitigation steps (NAT, firewall settings, SDP errors) and schedule a review of your media-path health for ongoing optimization.</br>
+
+---
+
+
 Media refers to the actual audio payload part of a call. For more information about ConnexCS media servers, see [**RTP Servers**](https://docs.connexcs.com/setup/settings/servers/#real-time-transport-protocol-servers).
 
 **RTP (Real-time Transport Protocol)**, operating on top of User Datagram Protocol (UDP), is a data transport protocol. A signaling protocol, such as Session Initiation Protocol (SIP), initiates the RTP session. Once established, the audio gets streamed across the network.
