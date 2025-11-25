@@ -2,7 +2,7 @@
 
 ---
 
-**Document Metadata** <br>**Category**: Customer Portal / Data Management**</br> **Audience**: Administrators, Data Engineers, Support Team <br>**Difficulty**: Intermediate</br> **Time Required**: Approximately 30–40 minutes <br>**Prerequisites**: Active ConnexCS Customer Portal account with access to the Data Management / Datasuite tools, basic familiarity with data upload/import processes and table/query operations</br> **Related Topics**: [Data Suite – Data Management Platform](https://docs.connexcs.com/datasuite/), [Customer Page Interface – Bulk Upload & Data Grid](https://docs.connexcs.com/customer/customer-page-interface/) <br>**Next Steps**: Create or load a workspace, import a dataset (e.g., via CSV drag-&-drop or URL).
+**Document Metadata** <br>**Category**: Customer Portal / Data Management**</br> **Audience**: Administrators, Data Engineers, Support Team <br>**Difficulty**: Intermediate</br> **Time Required**: Approximately 30–40 minutes <br>**Prerequisites**: Active ConnexCS Customer Portal account with access to the Data Management / Datasuite tools, basic familiarity with data upload/import processes and table/query operations</br> **Related Topics**: [Data Suite – Data Management Platform](https://docs.connexcs.com/datasuite/), [Customer Page Interface – Bulk Upload & Data Grid](https://docs.connexcs.com/customer/customer-page-interface/) <br>**Next Steps**: Create or load a workspace, import a dataset (e.g., via CSV drag-&-drop or URL).</br  >
 
 ---
 
