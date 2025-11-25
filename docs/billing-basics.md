@@ -8,11 +8,6 @@
 
 ---
 
-If you like, I can **extract key sections** from this document (like Billing Increments, Duration Rounding, Investigating Balance Mismatch) and produce a short summary sheet for internal reference.
-
-[1]: https://docs.connexcs.com/billing-basics/?utm_source=chatgpt.com "Billing Basics"
-
-
 ## Balance Refresh Interval
 
 The ConnexCS balance gets updated every 60 seconds.

@@ -7,16 +7,15 @@
 <br>**Difficulty**: Intermediate</br>
 **Time Required**: 10–20 minutes
 <br>**Prerequisites**:
+
 * A working understanding of your account’s billing model (per-minute vs. per-channel)
+
 * Access to your usage data or CDRs to understand how charges are incurred
 
 **Related Topics**: Billing Basics (detailed billing increments, rounding), Billing Guide (overall billing models), Rate Card Overview (since rate cards tie into billing)
-
 **Next Steps**: Review which billing model your plan uses (per‐minute or per‐channel), verify your minimum charges and ensure alignment with your traffic patterns.
 
 ---
-
-A ConnexCS subscription comes with two main tariffs used for billing: **per minute** and **per channel**.
 
 ## ConnexCS Billing Per Channel
 

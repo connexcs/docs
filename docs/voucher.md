@@ -4,7 +4,7 @@
 
 **Document Metadata** <br>**Category**: Billing → Voucher</br>
 **Audience**: Administrators, Finance Team, Support Team <br>**Difficulty**: Intermediate</br>
-**Time Required**: 10–20 minutes <br>**Prerequisites**: Understanding of account top-ups, prepaid credit models, and access to voucher configuration in the platform <br>**Related Topics**: [Credit Control](https://docs.connexcs.com/credit-control/) (setting voucher usage limits and credit) , [Payments](https://docs.connexcs.com/setup/settings/payments/) (applying voucher codes during payment) <br>**Next Steps**: Configure voucher types and setup, then integrate voucher code redemption into your payment and account top-up workflows.
+**Time Required**: 10–20 minutes <br>**Prerequisites**: Understanding of account top-ups, prepaid credit models, and access to voucher configuration in the platform</br> <br>**Related Topics**: [Credit Control](https://docs.connexcs.com/credit-control/) (setting voucher usage limits and credit) , [Payments](https://docs.connexcs.com/setup/settings/payments/) (applying voucher codes during payment) <br>**Next Steps**: Configure voucher types and setup, then integrate voucher code redemption into your payment and account top-up workflows.
 
 ---
 

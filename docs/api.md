@@ -7,7 +7,7 @@
 **Difficulty:** Intermediate  
 **Time Required:** 1-2 hours (initial setup)  
 **Prerequisites:** [Getting Started](getting-started.md), [Developer knowledge ](https://docs.connexcs.com/ide/)
-**Related Topics:** [IDE](ide.md), [API Integration](setup/integrations/api.md), [JWT Keys](setup/integrations/jwt.md)
+<br>**Related Topics:** [IDE](ide.md), [API Integration](setup/integrations/api.md), [JWT Keys](setup/integrations/jwt.md)</br>
 **Next Steps:** [API Integration Setup](setup/integrations/api.md), [Apps Platform](apps/introduction.md)
 
 ---

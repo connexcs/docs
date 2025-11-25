@@ -8,12 +8,6 @@
 
 ---
 
-Capacity planning is a way to extend our services in an advisory capacity.
-
-It helps our customers choose the setup that works best for their business.
-
-Shifting usage and the growing demands for scalability are always a consideration. But there is also the active management of changing traffic.
-
 ## Some Basic Capacity Planning Questions
 
 **CAPACITY REQUIREMENTS**
