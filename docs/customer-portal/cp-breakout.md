@@ -7,7 +7,8 @@
 <br>**Difficulty**: Intermediate</br>
 **Time Required**: Approximately 20–30 minutes <br>**Prerequisites**: Active ConnexCS account with access to the Customer Portal and permission to view Breakout reports</br>
 **Related Topics**: [Customer Portal – Dashboard](https://docs.connexcs.com/customer-portal/cp-dashboard/) , [Customer Portal – CDR Viewer](https://docs.connexcs.com/customer-portal/cp-cdr/) , [Reporting – Breakout & DTMF Reports](https://docs.connexcs.com/report/)
-**Next Steps**: After reviewing the Breakout Report guide, filter the report by date and destination, review per-customer profitability metrics (Revenue vs Cost, ASR, ACD), identify under-performing routes or customers, and schedule a monthly review of Breakout metrics to optimise routing and customer billing.
+
+<br>**Next Steps**: After reviewing the Breakout Report guide, filter the report by date and destination, review per-customer profitability metrics (Revenue vs Cost, ASR, ACD), identify under-performing routes or customers, and schedule a monthly review of Breakout metrics to optimise routing and customer billing.</br>
 
 ---
 

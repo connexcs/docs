@@ -6,7 +6,7 @@
 <br>**Difficulty**: Intermediate </br>
 **Time Required**: Approximately 15–20 minutes <br>**Prerequisites**: Active  Customer Portal account with permissions to view live-call (dialog) statistics </br>
 **Related Topics**: [Customer Portal – Latest Calls](https://docs.connexcs.com/customer-portal/cp-latest-calls/), [Customer Portal – CDR Viewer](https://docs.connexcs.com/customer-portal/cp-cdr/)
-**Next Steps**: After reviewing the Dialogs guide, log in to the Customer Portal → Dialogs, click the **Refresh** button to view up-to-date active calls, locate any sessions with abnormal status (e.g., “Ended” status lingering), then correlate those sessions with your logging/trace tools to identify any failed tear-down or RTP shutdown issues.
+<br>**Next Steps**: After reviewing the Dialogs guide, log in to the Customer Portal → Dialogs, click the **Refresh** button to view up-to-date active calls, locate any sessions with abnormal status (e.g., “Ended” status lingering), then correlate those sessions with your logging/trace tools to identify any failed tear-down or RTP shutdown issues.</br>
 
 ---
 
