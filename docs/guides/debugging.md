@@ -3,9 +3,9 @@
 ---
 
 **Document Metadata** <br>**Category**: Troubleshooting & Diagnostics / Debugging Guide</br>
-**Audience**: Administrators, Engineers, Support Team
+<br>**Audience**: Administrators, Engineers, Support Team</br>
 <br>**Difficulty**: Intermediate to Advanced</br>
-**Time Required**: Approximately 40–60 minutes <br>**Prerequisites**: Active ConnexCS account with access to system logs, call traces, and debugging tools; familiarity with network & VoIP fundamentals</br> **Related Topics**: [Call Disconnection Reasons](https://docs.connexcs.com/guides/call-disconnection-reasons/), [Troubleshooting – Signaling](https://docs.connexcs.com/guides/tshoot-signal/), [Troubleshooting – Media](https://docs.connexcs.com/guides/tshoot-media/)
+<br>**Time Required**: Approximately 40–60 minutes</br> <br>**Prerequisites**: Active ConnexCS account with access to system logs, call traces, and debugging tools; familiarity with network & VoIP fundamentals</br> <br>**Related Topics**: [Call Disconnection Reasons](https://docs.connexcs.com/guides/call-disconnection-reasons/), [Troubleshooting – Signaling](https://docs.connexcs.com/guides/tshoot-signal/), [Troubleshooting – Media](https://docs.connexcs.com/guides/tshoot-media/)</br>
 <br>**Next Steps**: After reviewing the debugging guide, select a recent incident with repeatable symptoms, gather SIP/Media logs, apply the step-by-step methodology outlined in the document (hypothesis → reproduce → isolate → fix), and document your findings and resolution in your internal incident-tracking system.</br>
 
 ---

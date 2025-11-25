@@ -2,7 +2,8 @@
 
 ---
 
-**Document Metadata** <br>**Category**: Troubleshooting & Diagnostics / Media Troubleshooting</br> **Audience**: Administrators, Engineers, Support Team <br>**Difficulty**: Intermediate to Advanced</br> **Time Required**: Approximately 30–45 minutes <br>**Prerequisites**: Active ConnexCS account with access to media-logs, RTP/RTCP analytics, and network tracing tools (e.g., Wireshark or sngrep) </br> **Related Topics**: [SIP Signalling Troubleshooting](https://docs.connexcs.com/guides/tshoot-signal/), [OSI Model – Networking Fundamentals](https://docs.connexcs.com/guides/osi-model/) <br>**Next Steps**: After reviewing the media troubleshooting guide, capture a problematic call’s RTP/RTCP streams, examine jitter, packet loss and codec mismatches, correlate with system logs, and then document mitigation steps (NAT, firewall settings, SDP errors) and schedule a review of your media-path health for ongoing optimization.</br>
+**Document Metadata** <br>**Category**: Troubleshooting & Diagnostics / Media Troubleshooting</br>
+<br>**Audience**: Administrators, Engineers, Support Team</br> <br>**Difficulty**: Intermediate to Advanced</br> <br>**Time Required**: Approximately 30–45 minutes</br> <br>**Prerequisites**: Active ConnexCS account with access to media-logs, RTP/RTCP analytics, and network tracing tools (e.g., Wireshark or sngrep) </br> <br>**Related Topics**: [SIP Signalling Troubleshooting](https://docs.connexcs.com/guides/tshoot-signal/), [OSI Model – Networking Fundamentals](https://docs.connexcs.com/guides/osi-model/)</br> <br>**Next Steps**: After reviewing the media troubleshooting guide, capture a problematic call’s RTP/RTCP streams, examine jitter, packet loss and codec mismatches, correlate with system logs, and then document mitigation steps (NAT, firewall settings, SDP errors) and schedule a review of your media-path health for ongoing optimization.</br>
 
 ---
 

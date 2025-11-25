@@ -2,9 +2,9 @@
 
 ---
 
-**Document Metadata** <br>**Category**: Troubleshooting & Diagnostics / Call Disconnection Reasons</br> **Audience**: Administrators, Engineers, Support Team <br>**Difficulty**: Intermediate to Advanced</br>
-**Time Required**: Approximately 30–40 minutes <br>**Prerequisites**: Active ConnexCS Platform account with access to the Logging module (Call IDs, SIP traces) and familiarity with SIP/VoIP fundamentals</br> 
-**Related Topics**: [Logging & SIP Traces](https://docs.connexcs.com/logging/) , [Call Connection/Signalling Issues](https://docs.connexcs.com/guides/tshoot-signal/)  <br>**Next Steps**: After reviewing the disconnection-reasons guide, locate affected Call IDs in the Logging panel, map the cause of disconnection (e.g., ping timeout, BYE message, no ACK) and implement corrective measures (enable SIP-Ping, check media path, verify re-INVITE timers) to reduce premature call drop-outs.</br>
+**Document Metadata** <br>**Category**: Troubleshooting & Diagnostics / Call Disconnection Reasons</br> <br>**Audience**: Administrators, Engineers, Support Team</br> <br>**Difficulty**: Intermediate to Advanced</br>
+<br>**Time Required**: Approximately 30–40 minutes</br> <br>**Prerequisites**: Active ConnexCS Platform account with access to the Logging module (Call IDs, SIP traces) and familiarity with SIP/VoIP fundamentals</br> 
+</br>**Related Topics**: [Logging & SIP Traces](https://docs.connexcs.com/logging/) , [Call Connection/Signalling Issues](https://docs.connexcs.com/guides/tshoot-signal/)</br>  <br>**Next Steps**: After reviewing the disconnection-reasons guide, locate affected Call IDs in the Logging panel, map the cause of disconnection (e.g., ping timeout, BYE message, no ACK) and implement corrective measures (enable SIP-Ping, check media path, verify re-INVITE timers) to reduce premature call drop-outs.</br>
 
 ---
 
