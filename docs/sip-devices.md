@@ -1,5 +1,11 @@
 # Session Initiation Protocol Devices
 
+---
+
+**Document Metadata** <br>**Category**: Infrastructure & Connectivity / SIP Devices</br> **Audience**: Network Engineers, Administrators, Support Team <br>**Difficulty**: Intermediate to Advanced</br> **Time Required**: Approximately 30–45 minutes <br>**Prerequisites**: Active ConnexCS account with permissions to manage SIP devices (DIDs, gateways, SIP-endpoints) and access to Device Configuration modules</br> <br>**Related Topics**: [SIP Device](https://docs.connexcs.com/sip-devices/) </br> <br>**Next Steps**: After configuring your SIP devices, perform end-to-end call tests (inbound/outbound), monitor device registration and usage in the Reporting module, and schedule regular review of firmware/firmware settings for security compliance.</br>
+
+---
+
 !!! danger "This feature is currently in Alpha Version. We're working on it. Please contact us for any queries."
 
 **Management :material-menu-right: SIP Devices**

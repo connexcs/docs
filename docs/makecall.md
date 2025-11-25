@@ -1,5 +1,10 @@
 # Some Interesting Features
 
+---
+**Document Metadata** <br>**Category**: Call Control & API / Make Call (API Reference), GetProv</br> **Audience**: Engineers, Developers, Integration Teams <br>**Difficulty**: Intermediate to Advanced</br> **Time Required**: Approximately 30–45 minutes <br>**Prerequisites**: Access to the ConnexCS API documentation, an active API key/credentials, and familiarity with REST or WebSocket API usage</br> **Related Topics**: [ScriptForge](https://docs.connexcs.com/api/call-control/), <br>**Next Steps**: After reviewing the Make Call endpoint, write a quick test integration that initiates a call, inspect the response codes and call-leg data, and implement error-handling logic for failure scenarios (e.g., no DID, invalid credentials, rate limits).</br>
+
+---
+
 ## makeCall Feature
 
 When we initiate **makeCall** we pass a number that we're dialing, for example:

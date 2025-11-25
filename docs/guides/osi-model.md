@@ -1,5 +1,11 @@
 # Open Systems Interconnections Model
 
+---
+
+**Document Metadata** <br>**Category**: Infrastructure & Transport / Networking Fundamentals (OSI Model)</br> **Audience**: Administrators, Network Engineers, Support Team <br>**Difficulty**: Intermediate (networking knowledge recommended)</br> **Time Required**: Approximately 20–30 minutes <br>**Prerequisites**: Basic understanding of network layers, familiarity with VoIP signaling & media flows</br> **Related Topics**: OSI Model Layers Overview, [Latency Types in VoIP Context](https://docs.connexcs.com/guides/osi-model/#network-latency-application-latency-and-sip-latency) <br>**Next Steps**: After reviewing the OSI model and how it applies to call-signaling and media flows, map your system architecture against each layer (Physical → Application) to identify potential fault locations and set up monitoring/alerts at relevant layers (for example, link latency at Layer 1/2, routing issues at Layer 3/4, SIP signaling at Layer 5/7) using the monitoring tools in the platform. </br>
+
+---
+
 Computer systems interact via networks using 7 layers, as described by the OSI model.
 
 In the 1980s, all significant computer and telecommunications companies accepted it. It's the first industry standard for network communications.
