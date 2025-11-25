@@ -1,5 +1,15 @@
 # DID Purchase
 
+---
+**Document Metadata** <br>**Category**: Customer Portal / DID Purchase</br>
+**Audience**: Administrators, Customer Success Team, Sales & Billing Staff
+<br>**Difficulty**: Intermediate</br>
+**Time Required**: Approximately 20–30 minutes <br>**Prerequisites**: Active ConnexCS Customer Portal account with permission to purchase or allocate Direct Inward Dial (DID) numbers</br>
+**Related Topics**: [Customer Portal – DID Management](https://docs.connexcs.com/customer-portal/cp-did/) , [Billing & Invoices](https://docs.connexcs.com/customer-portal/cp-invoice/) </br>
+<br>**Next Steps**: After reviewing the DID Purchase guide, review available DID inventories by country, select required numbers, complete the purchase workflow (allocation + billing), update your routing assignments for the new DIDs, and schedule a periodic audit of DID usage and costs to ensure efficiency and compliance.</br>
+
+---
+
 ## Overview
 
 The DID Purchase application allows customers to browse and acquire DIDs (phone numbers) that are made available by their carrier through the ConnexCS platform.

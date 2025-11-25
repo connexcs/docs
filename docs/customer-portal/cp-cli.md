@@ -6,9 +6,15 @@ canonical_url: "https://docs.connexcs.com/customer/cli/#cli-routing-rules"
 
 # Caller Line Identification (CLI)
 
-This page explains CLI Routing Rules...
+---
 
-# Caller Line Identification
+**Document Metadata** <br>**Category**: Customer Portal / CLI (Caller Line Identification) Management</br> **Audience**: Administrators, Customer Success Team, Support Team
+<br>**Difficulty**: Intermediate</br>
+**Time Required**: Approximately 20–30 minutes <br>**Prerequisites**: Active ConnexCS Customer Portal account with permissions to manage CLI numbers and route settings</br>
+**Related Topics**: [Customer Portal – DID Management](https://docs.connexcs.com/customer-portal/cp-did/), [Customer Portal – Dashboard Overview](https://docs.connexcs.com/customer-portal/cp-dashboard/)
+<br>**Next Steps**: After reviewing the CLI Management guide, audit your current CLI assignments for accuracy and compliance, update any changed customer CLIs or route aliases, set up notifications for unauthorized CLI changes, and integrate CLI usage reviews into your monthly operational review process.</br>
+
+---
 
 For a complete guide to Caller Line Identification (CLI), including routing rules, see [CLI Documentation](https://docs.connexcs.com/customer/cli/#cli-routing-rules).
 

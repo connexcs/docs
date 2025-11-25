@@ -1,5 +1,16 @@
 # Direct Inward Dial
 
+----
+
+**Document Metadata** <br>**Category**: Customer Portal / DID Management</br>
+**Audience**: Administrators, Customer Success Team, Support Team
+<br>**Difficulty**: Intermediate</br>
+**Time Required**: Approximately 20–30 minutes <br>**Prerequisites**: Active ConnexCS Customer Portal account with permissions to manage Direct Inward Dialing (DID) resources</br>
+**Related Topics**: [Customer Portal – Dashboard Overview](https://docs.connexcs.com/customer-portal/cp-dashboard/), [Customer Portal – CDR](https://docs.connexcs.com/customer-portal/cp-cdr/)
+<br>**Next Steps**: After reviewing the DID Management guide, review your current DID inventory in the portal, ensure each DID is correctly assigned (or blocked), update any routing aliases if needed, and schedule a periodic audit of DID usage and assignments for compliance and optimisation.</br>
+
+---
+
 A **DID** number is one that exists on the public telephone network. When dialed, the carrier delivers through the platform and to you, based on the settings configured here. This allows inbound calls to bypass a Private Branch Exchange (PBX) or another routing to connect directly to the destination number.
 
 To edit **DID (Direct Inward Dial)**:

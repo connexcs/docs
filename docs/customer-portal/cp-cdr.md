@@ -1,5 +1,16 @@
 # Call Detail Record
 
+---
+
+**Document Metadata** <br>**Category**: Customer Portal / CDR (Call Detail Record) Viewer**</br>
+**Audience**: Administrators, Customer Success Team, Support Team
+<br>**Difficulty**: Intermediate</br>
+**Time Required**: Approximately 20–30 minutes <br>**Prerequisites**: Active ConnexCS Customer Portal account with permissions to access CDR data and export logs</br>
+<br>**Related Topics**: [Customer Portal – Dashboard Overview](https://docs.connexcs.com/customer-portal/cp-dashboard/), [Logging & Audit Trails](https://docs.connexcs.com/logging/)</br>
+**Next Steps**: After reviewing the CDR Viewer guide, navigate to the CDR section in the portal, apply filters (date, customer, DID/CLI), export data as needed, and schedule recurring exports or reports to monitor usage trends and identify anomalies.
+
+---
+
 The **CDR (Call Detail Record)** is an extensive set of information collected and stored for each call.
 
 It's primarily used for billing purposes, as it contains details such as call duration and destination number.

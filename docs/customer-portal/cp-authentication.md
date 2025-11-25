@@ -1,5 +1,15 @@
 # Authentication (Auth)
 
+---
+**Document Metadata** <br>**Category**: Customer Portal / Authentication & Access Control</br>
+**Audience**: Administrators, Customer Success, Support Team
+<br>**Difficulty**: Beginner to Intermediate</br>
+**Time Required**: Approximately 15–20 minutes <br>**Prerequisites**: Active ConnexCS Customer Portal account and sufficient administrative privileges to manage authentication settings</br>
+**Related Topics**: [Customer Portal – Dashboard Overview](https://docs.connexcs.com/customer-portal/cp-dashboard/), [Customer Portal – CDR Viewer](https://docs.connexcs.com/customer-portal/cp-cdr/)
+<br>**Next Steps**: After reviewing the authentication guide, verify all user accounts, enforce strong password policies or two-factor authentication (if available), audit user-access logs for recent sign-ins, and update your internal user-management checklist accordingly.</br>
+
+---
+
 Use the **Auth** tab to configure IP or SIP (Username / Password) Authentication.
 
 ## Internet Protocol Authentication
