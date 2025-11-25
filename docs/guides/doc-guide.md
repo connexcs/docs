@@ -3,8 +3,8 @@
 ---
 
 **Document Metadata** <br>**Category**: Guides → Document Guide</br>
-<br>**Audience**: Administrators, Support Team, Customer-Account Managers</br> <br>**Difficulty**: Beginner to Intermediate</br>
-<br>**Time Required**: 5–10 minutes</br><br>**Prerequisites**: Access to the platform’s customer account area and basic familiarity with <br>**Documents/Files** within the system.</br> <br>**Related Topics**: [Invoices](https://docs.connexcs.com/guides/doc-guide/#invoices) (managing billing docs), [Contracts](https://docs.connexcs.com/guides/doc-guide/#contracts) (provider contracts)</br> <br>**Next Steps**: Go to the customer’s Documents / Files section to upload or manage relevant documents, then review your process for document retention & version-control.</br>
+**Audience**: Administrators, Support Team, Customer-Account Managers<br>**Difficulty**: Beginner to Intermediate</br>
+**Time Required**: 5–10 minutes <br>**Prerequisites**: Access to the platform’s customer account area and basic familiarity with **Documents/Files** within the system.</br>**Related Topics**: [Invoices](https://docs.connexcs.com/guides/doc-guide/#invoices) (managing billing docs), [Contracts](https://docs.connexcs.com/guides/doc-guide/#contracts) (provider contracts)<br>**Next Steps**: Go to the customer’s Documents / Files section to upload or manage relevant documents, then review your process for document retention & version-control.</br>
 
 ---
 
