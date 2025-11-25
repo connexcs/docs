@@ -2,7 +2,7 @@
 
 ---
 
-**Document Metadata** <br>**Category**: Compliance & Call Filtering / DNC Management</br> <br>**Audience**: Administrators, Compliance Teams, Support Engineers</br> <br>**Difficulty**: Beginner to Intermediate</br> <br>**Time Required**: Approximately 20–30 minutes</br> <br>**Prerequisites**: Active ConnexCS account with access to Compliance Tools, and permission to manage DNC lists</br> <br>**Related Topics**: [DNO](https://docs.connexcs.com/dnc/dno/), [Federal DNC](https://docs.connexcs.com/dnc/federal-dnc/), [TPS](https://docs.connexcs.com/dnc/tps/)</br> <br>**Next Steps**: After configuring your DNC settings, set up automated lookups via Routing → Routing Table filters and review additional compliance datasets under **Compliance Tools**</br>
+**Document Metadata** <br>**Category**: Compliance & Call Filtering / DNC Management</br>**Audience**: Administrators, Compliance Teams, Support Engineers</br> <br>**Difficulty**: Beginner to Intermediate</br> **Time Required**: Approximately 20–30 minutes <br>**Prerequisites**: Active ConnexCS account with access to Compliance Tools, and permission to manage DNC lists</br> **Related Topics**: [DNO](https://docs.connexcs.com/dnc/#us-dno-requirements-in-connexcs), [Federal DNC](https://docs.connexcs.com/customer/routing/#united-states-federal-do-not-call-dnc), [TPS](https://docs.connexcs.com/customer/routing/#united-kingdom-telephone-preference-service-tps) <br>**Next Steps**: After configuring your DNC settings, set up automated lookups via Routing → Routing Table filters and review additional compliance datasets under **Compliance Tools**</br>
 
 ---
 

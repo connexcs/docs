@@ -9,8 +9,8 @@
 * Access to the account or customer portal for your PBX/Switch.
 * Ability to define internal number blocks and alias assignments.
 
-<br>**Related Topics**: [Internal Number Block configuration](https://docs.connexcs.com/setup/advanced/internal-number-block/) (for defining extension ranges)
-, [Alias creation](https://docs.connexcs.com/setup/advanced/alias/) (for mapping extensions to user lines)</br> **Next Steps**: Configure the number block → Create aliases for each extension → Document internal extensions in the phonebook for reference.
+**Related Topics**: [Internal Number Block configuration](https://docs.connexcs.com/customer/main/#steps-to-implement-internal-number-block) (for defining extension ranges)
+, [Alias creation](https://docs.connexcs.com/customer/alias/) (for mapping extensions to user lines)<br>**Next Steps**: Configure the number block → Create aliases for each extension → Document internal extensions in the phonebook for reference.</br>
 
 ---
 
