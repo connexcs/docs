@@ -1,5 +1,11 @@
 # Capacity Limiting
 
+---
+
+**Document Metadata** <br>**Category**: Traffic & Call-Routing Management / Call Rate Limiting (CPS)</br> **Audience**: Administrators, Network Engineers, Support Team <br>**Difficulty**: Intermediate to Advanced</br> **Time Required**: Approximately 30–45 minutes <br>**Prerequisites**: Active ConnexCS account, access to Routing and Traffic Management modules, knowledge of CPS (Calls Per Second) concepts</br> **Related Topics**: [Routing](https://docs.connexcs.com/routing/), [Traffic Metrics](https://docs.connexcs.com/customer/custom-reports/) <br>**Next Steps**: After setting CPS limits, monitor actual traffic via the Reporting module and configure alert thresholds so you get notified when usage approaches limits.</br>
+
+---
+
 ## Limiting Calls per Second and Channels
 
 The ability to Limit CPS (Flow Speed) and Channels allows providers to place caps on specific services.
