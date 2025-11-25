@@ -1,5 +1,10 @@
 # Contracts
 
+---
+
+**Document Metadata** <br>**Category**: Customer Portal / Contracts Management</br> **Audience**: Administrators, Legal & Compliance Teams, Support Staff <br>**Difficulty**: Intermediate</br> **Time Required**: Approximately 15–20 minutes <br>**Prerequisites**: Active ConnexCS Customer Portal account with permission to view and approve contracts</br>**Related Topics**: [Customer Portal – Documents](https://docs.connexcs.com/customer-portal/cp-documents/) <br>**Next Steps**: After reviewing the Contracts management guide, navigate in the portal to Setup → Contracts, scan for any “Unapproved” contracts (check the “Grace Period” column), click either the contract name or the “Approve” button to open it, review the contract text, enter the approver name, toggle “I Agree”, click “I Approve”, and finally document your internal contract-approval workflow and schedule periodic audits of outstanding contracts.
+
+---
 View all **Contracts** associated with your account.
 
 !!! tip "Unapproved Contracts"

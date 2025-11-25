@@ -1,5 +1,12 @@
 # Payments
 
+---
+
+**Document Metadata** <br>**Category**: Customer Portal / Payment Methods & Billing Setup</br> **Audience**: Administrators, Finance & Billing Staff, Support Team <br>**Difficulty**: Beginner to Intermediate </br> **Time Required**: Approximately 15–20 minutes <br>**Prerequisites**: Active ConnexCS Customer Portal account with permissions to view and update payment methods and billing information</br> **Related Topics**: [Customer Portal – Invoice & Billing Documents](https://docs.connexcs.com/customer-portal/cp-invoice/), [Customer Portal – Dashboard Overview](https://docs.connexcs.com/customer-portal/cp-dashboard/) <br>**Next Steps**:  Verify current payment method and billing address, update/change payment method if required (e.g., credit-card, bank-transfer, direct debit), download or schedule notifications for upcoming invoices, and document your internal billing & payment verification process.</br>
+
+---
+
+
 View the list of all **Payments** made to date.
 
 + **Date / Time**: When the selected payment gets completed.

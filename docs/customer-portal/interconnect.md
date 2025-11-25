@@ -1,5 +1,11 @@
 # Interconnect
 
+---
+
+**Document Metadata** <br>**Category**: Customer Portal / Interconnect Setup</br> **Audience**: Administrators, Wholesale Engineers, Support Team <br>**Difficulty**: Intermediate to Advanced </br> **Time Required**: Approximately 30–40 minutes <br>**Prerequisites**: Active ConnexCS account with carrier/wholesale permissions, knowledge of SIP trunking and interconnect protocols </br>**Related Topics**: [Portal – Setup & Domains](https://docs.connexcs.com/setup/integrations/portal/), [Routing Overview](https://docs.connexcs.com/customer/routing/)
+
+---
+
 **Interconnect** provides information on:
 
 1. **Termination address:** This is the address you send calls to.

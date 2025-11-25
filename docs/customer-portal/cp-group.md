@@ -1,5 +1,10 @@
 # Group
 
+---
+**Document Metadata** <br>**Category**: Customer Portal / Groups (Hunt Groups & Queues)</br> **Audience**: Administrators, Telecom Engineers, Support & Service Teams <br>**Difficulty**: Intermediate</br> **Time Required**: Approximately 25-30 minutes <br>**Prerequisites**: Active ConnexCS Customer Portal account with permission to manage PBX Groups (Hunt Groups, Call Queues), and knowledge of call-flow routing rules</br> **Related Topics**: [Customer Portal – IVR Configuration](https://docs.connexcs.com/customer-portal/cp-ivr/), [Customer Portal – Conference Rooms](https://docs.connexcs.com/customer-portal/cp-conference/) <br>**Next Steps**: After reviewing the Groups guide, navigate to the portal → PBX → Groups, define a new hunt-group or queue (assign extensions/agents, set ring strategy, overflow rules), test group call handling (incoming/outbound), monitor group statistics for performance (wait times, abandoned calls) and document your group-routing policy for future audits.</br>
+
+---
+
 ## Overview
 
 A **Group** allows you to create a team of individuals to receive calls placed to a specified number or extension based on the routing strategy you configure.
