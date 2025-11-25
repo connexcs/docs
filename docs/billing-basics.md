@@ -2,7 +2,7 @@
 
 ---
 
-**Document Metadata** <br>**Category**: Setup → Guides → Billing Basics</br>
+**Document Metadata** <br>**Category**: Billing Basics</br>
 <br>**Audience**: Administrators, Engineers, Finance/Accounting Team </br><br>**Difficulty**: Intermediate</br>
 <br>**Time Required**: 10–20 minutes</br><br>**Prerequisites**: Understanding of telecom billing fundamentals (CDRs, call durations, rate slopes), access to usage data and CDRs <br>**Related Topics**: [Billing Guide](https://docs.connexcs.com/guides/billing-guide/) (for broader context) , [ConnexCS Billing](https://docs.connexcs.com/billing/) (tariff models) <br>**Next Steps**: Review your current billing increments and rounding strategies; apply the rules when configuring rate-cards or reconciling bills
 

@@ -2,7 +2,7 @@
 
 ---
 
-**Document Metadata** <br>**Category**: Setup → Architecture → Specifications</br>
+**Document Metadata** <br>**Category**: Class 4 and Class 5 Specifications</br>
 **Audience**: Administrators, Engineers, Architects, Integrators <br>**Difficulty**: Intermediate to Advanced <br>**Time Required**: 15–30 minutes <br>**Prerequisites**: Familiarity with telecom/VoIP terminology and switching architecture—specifically Class 4 softswitch concepts. <br>**Related Topics**: [Scaling & Load Balancing](https://docs.connexcs.com/scaling-load-balancing/) (for deployment architecture), [Security](https://docs.connexcs.com/security/) (for compliance and design boundaries) <br>**Next Steps**: Review the Switch Administration or API Specification sections to align implementation details with the architectural overview.
 
 ---

@@ -2,7 +2,7 @@
 
 ---
 
-**Document Metadata** <br>**Category**: Setup → Guides → Billing Guide</br>
+**Document Metadata** <br>**Category**: Billing Guide</br>
 **Audience**: Administrators, Engineers, Finance Team <br>**Difficulty**: Intermediate</br>
 **Time Required**: 15–30 minutes <br>**Prerequisites**: Understanding of how billing works in the platform (e.g., CDRs, rate cards, per-minute vs per-channel billing) <br>**Related Topics**: [Billing Basics](https://docs.connexcs.com/billing-basics/) — details on increments and rounding.
 [ConnexCS Billing](https://docs.connexcs.com/billing/) — overview of billing models (per-minute, per-channel). <br>**Next Steps**: Review your account’s billing setup, ensure rate-cards and billing increments are properly configured, then monitor actual costs vs budget.

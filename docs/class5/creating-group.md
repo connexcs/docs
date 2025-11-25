@@ -4,11 +4,11 @@
 
 **Document Metadata**
 <br>**Category**: Class 5 Services / Group & Team Routing Configuration</br>
-**Audience**: Administrators, Engineers, Support Team
+<br>**Audience**: Administrators, Engineers, Support Team</br>
 <br>**Difficulty**: Intermediate</br>
-**Time Required**: Approximately 30–60 minutes
+<br>**Time Required**: Approximately 30–60 minutes</br>
 <br>**Prerequisites**: Active ConnexCS account with Class 5 module access; understanding of call-queue logic, hunt groups and team routing strategies.</br>
-**Related Topics**: [Class 5 IVR](https://docs.connexcs.com/class5/creating-ivr/), [Class 5 Apps & Workflow Builder](https://docs.connexcs.com/class5/apps/)
+<br>**Related Topics**: [Class 5 IVR](https://docs.connexcs.com/class5/creating-ivr/), [Class 5 Apps & Workflow Builder](https://docs.connexcs.com/class5/apps/)</br>
 <br>**Next Steps**: Upload audio files for greetings and hold music, create your Group (select routing strategy: Parallel, Sequential or Queue), add group members or configure queue parameters (join/logout extensions, music/chime), assign PBX server and extension, and test inbound routing behavior.</br>
 
 ---

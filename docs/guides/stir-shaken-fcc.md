@@ -2,7 +2,7 @@
 
 ---
 
-**Document Metadata** <br>**Category**: Setup → Guides → STIR/SHAKEN (FCC Regulations)</br>
+**Document Metadata** <br>**Category**: STIR/SHAKEN (FCC Regulations)</br>
 **Audience**: Administrators, Engineers, Compliance Teams, VoIP/Carrier Origins <br>**Difficulty**: Intermediate to Advanced <br>**Time Required**: 15–30 minutes <br>**Prerequisites**:
 
 * Understanding of VoIP/SIP networks and number origination.
