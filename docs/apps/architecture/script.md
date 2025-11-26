@@ -7,7 +7,7 @@
 <br>**Difficulty**: Intermediate to Advanced</br>
 **Time Required**: Approximately 30–60 minutes
 <br>**Prerequisites**: Active ConnexCS account, access to the Applications / Developer module, familiarity with scripting basics and ConnexCS architecture concepts</br>
-**Related Topics**: [ConnexCS Applications Overview](https://docs.connexcs.com/apps/architecture/), [ScriptForge Scripting Reference](https://docs.connexcs.com/apps/architecture/scriptforge/), [Database Integration](https://docs.connexcs.com/apps/architecture/database/)
+**Related Topics**: [ConnexCS Applications Overview](https://docs.connexcs.com/apps/architecture/architecture), [ScriptForge Scripting Reference](https://docs.connexcs.com/apps/architecture/scriptforge/), [Database Integration](https://docs.connexcs.com/apps/architecture/database/)
 <br>**Next Steps**: Review the ScriptForge architecture documentation; plan how scripts will integrate with your application logic or data flows; experiment with example scripts; validate integration with existing modules.</br>
 
 
