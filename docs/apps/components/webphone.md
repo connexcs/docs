@@ -7,7 +7,7 @@
 </br>**Difficulty**: Intermediate</br>
 **Time Required**: Approximately 30–60 minutes
 <br>**Prerequisites**: Active ConnexCS account, access to the **Applications** module, SIP/WebRTC configuration completed in **Setup → Integrations → WebPhone**, and valid domains/TLS certificates for WebRTC</br>
-**Related Topics**: [Page Layout Component](https://docs.connexcs.com/apps/components/page-layout/), [Input Component](https://docs.connexcs.com/apps/components/input/), [WebRTC Setup Guide](https://docs.connexcs.com/setup/integrations/webphone/), [Server Settings](https://docs.connexcs.com/setup/settings/servers/)
+**Related Topics**: [Page Layout Component](https://docs.connexcs.com/apps/components/page-layout/), [Input Component](https://docs.connexcs.com/apps/components/input/), [WebRTC Setup Guide](https://docs.connexcs.com/setup/webphone/), [Server Settings](https://docs.connexcs.com/setup/settings/servers/)
 <br>**Next Steps**: Embed WebPhone into an application page, test call flows, verify browser permissions (mic), configure domains, and validate WebRTC signalling and media connectivity</br>
 
 ---

@@ -9,7 +9,6 @@
 **Time Required**: Approximately 20–30 minutes (to read and understand Pub/Sub usage in ConnexCS)
 <br>**Prerequisites**: Access to the ConnexCS Apps Platform, familiarity with asynchronous/event-driven programming concepts (e.g. publish/subscribe pattern), and basic JavaScript/ScriptForge knowledge for integration.</br>
 **Related Topics**: Apps Architecture – Overview of App Platform, ScriptForge (Custom Logic), Page-Builder & UI Components
-
 <br>Next Steps: Identify use cases for async event messaging (chat, notifications, state updates) → import cxPubSub module and use publish(topic, payload) / subscribe(topic, callback) → design topic naming strategy </br>
 
 ---

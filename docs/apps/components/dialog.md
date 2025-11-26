@@ -1,14 +1,14 @@
 # Dialog
 
 ---
-Document Metadata
-<br>Category: Applications Platform / UI Components — Dialog Component</br>
-Audience: Developers, Engineers, UI/UX Designers, Support Team
-<br>Difficulty: Intermediate</br>
-Time Required: Approximately 15–25 minutes</br>
-<br>Prerequisites: Access to the ConnexCS Apps Platform IDE (Page Builder), basic understanding of UI flows and user-interaction patterns (forms, modals)</br>
-**Related Topics**: Page Builder / UI Components Overview, Alert Component, Button & Form Components.
-<br>Next Steps: Add Dialog → configure attributes/content → wire triggers → test behavior and accessibility.
+**Document Metadata**
+<br>**Category**: Applications Platform / UI Components — Dialog Component</br>
+**Audience**: Developers, Engineers, UI/UX Designers, Support Team
+<br>**Difficulty**: Intermediate</br>
+**Time Required**: Approximately 15–25 minutes</br>
+<br>**Prerequisites**: Access to the ConnexCS Apps Platform IDE (Page Builder), basic understanding of UI flows and user-interaction patterns (forms, modals)</br>
+**Related Topics**: [Page Builder / UI Components Overview](https://docs.connexcs.com/apps/page-builder/)
+<br>**Next Steps**: Add Dialog → configure attributes/content → wire triggers → test behavior and accessibility.</br>
 
 ---
 

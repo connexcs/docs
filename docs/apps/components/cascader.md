@@ -4,7 +4,7 @@
 **Document Metadata** <br>**Category**: Applications Platform / UI Components — Cascader Component</br> **Audience**: Developers, Engineers, UI/UX Designers, Support Team
 <br>**Difficulty**: Intermediate</br>
 **Time Required**: Approximately 15–20 minutes <br>**Prerequisites**: Access to the ConnexCS Apps Platform IDE (Page Builder), basic understanding of forms and hierarchical data structures (e.g. country/state/city, category/sub-category lists) </br>
-**Related Topics**: [Page Builder / UI Components Overview](https://docs.connexcs.com/apps/page-builder/), [Other UI Components: Card, Select, Tree Select, Button, etc.](https://docs.connexcs.com/apps/components/) <br>**Next Steps**: Add Cascader → configure hierarchical data (JSON) → set properties and events → test selection flows and responsiveness.</br>
+**Related Topics**: [Page Builder / UI Components Overview](https://docs.connexcs.com/apps/page-builder/) <br>**Next Steps**: Add Cascader → configure hierarchical data (JSON) → set properties and events → test selection flows and responsiveness.</br>
 
 ---
 

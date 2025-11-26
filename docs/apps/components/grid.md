@@ -7,8 +7,7 @@
 <br>**Difficulty**: Intermediate</br>
 **Time Required**: Approximately 15–25 minutes
 <br>**Prerequisites**: Access to the ConnexCS Apps IDE → Page Builder, familiarity with form & UI design, basic understanding of tabular data and form-based layouts</br>
-**Related Topics**: Page Builder – Layout & Component Usage, Data Grid component (for data-driven tables)
-
+**Related Topics**: [Page Builder – Layout & Component Usage](https://docs.connexcs.com/apps/page-builder/)
 <br>**Next Steps**: Add Grid for layout → configure rows/columns with components → use API for dynamic control → test responsiveness.</br>
 
 ---

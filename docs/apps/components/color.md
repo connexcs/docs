@@ -6,7 +6,7 @@
 **Audience**: Developers, Engineers, UI/UX Designers, Support Team
 <br>**Difficulty**: Beginner to Intermediate</br>
 **Time Required**: Approximately 10–15 minutes <br>**Prerequisites**: Access to the ConnexCS Apps Platform IDE (Page Builder or component config), basic understanding of UI theming or configuration of colour-sensitive elements (e.g. labels, tags, backgrounds) </br>
-**Related Topics**: [Page Builder / UI Components Overview](https://docs.connexcs.com/apps/page-builder/), [Other UI Components: Button, Card, Alert, etc.](https://docs.connexcs.com/apps/components/)
+**Related Topics**: [Page Builder / UI Components Overview](https://docs.connexcs.com/apps/page-builder/), Other UI Components
 <br>**Next Steps**: Add Color picker → set defaults or user selection → bind to component properties → test contrast/themes.</br>
 
 ---

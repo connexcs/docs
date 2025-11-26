@@ -7,7 +7,7 @@
 <br>**Difficulty**: Beginner to Intermediate</br>
 **Time Required**: Approximately 15–30 minutes
 <br>**Prerequisites**: Active ConnexCS account, access to the Applications module, basic understanding of UI component configuration and form composition / nested-form concepts</br>
-**Related Topics**: [Form Component](https://docs.connexcs.com/apps/components/form/), [Input Component](https://docs.connexcs.com/apps/components/input/), [Grid Component](https://docs.connexcs.com/apps/components/grid/), [Page Layout Component](https://docs.connexcs.com/apps/components/page-layout/)
+**Related Topics**: [Input Component](https://docs.connexcs.com/apps/components/input/), [Grid Component](https://docs.connexcs.com/apps/components/grid/), [Page Layout Component](https://docs.connexcs.com/apps/components/page-layout/)
 <br>**Next Steps**: Create a composite form using Sub-Form+, embedding multiple input fields or sub-sections; configure data binding and validation within nested forms; test nested-form behaviour when saving or submitting data.</br>
 
 ---

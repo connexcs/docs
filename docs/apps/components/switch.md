@@ -6,7 +6,7 @@
 <br>**Difficulty**: Beginner to Intermediate</br>
 **Time Required**: Approximately 15–30 minutes
 </br>**Prerequisites**: Active ConnexCS account, access to the Applications module, basic understanding of UI component configuration and toggle/switch-type inputs</br>
-**Related Topics**: [Input Component](https://docs.connexcs.com/apps/components/input/), [Select Component](https://docs.connexcs.com/apps/components/select/), [Radio Component](https://docs.connexcs.com/apps/components/radio/), [Form or Sub-Form components](https://docs.connexcs.com/apps/components/form/) 
+**Related Topics**: [Input Component](https://docs.connexcs.com/apps/components/input/), [Select Component](https://docs.connexcs.com/apps/components/select/), [Radio Component](https://docs.connexcs.com/apps/components/radio/), [Sub-Form components](https://docs.connexcs.com/apps/components/sub-form/)
 <br>**Next Steps**: Build a sample form or UI that uses the Switch component for boolean/toggle settings; test toggling behavior, default states, and data binding for on/off states.</br>
 
 ---

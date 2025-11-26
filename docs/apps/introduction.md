@@ -7,8 +7,8 @@
 **Difficulty:** Beginner  
 **Time Required:** 10-30 minutes  
 **Prerequisites:** ConnexCS account and platform access  
-**Related Topics:** [Use Case](use-case.md), [ScriptForge](script.md), [Database](datbase.md), [Key Value](key-value.md), [Project](project.md), [Pub Sub Bus](pub-sub.md), [Query Builder](query-builder.md), [Template](template.md)
-**Next Steps:** [Use Case](use-case.md), [ScriptForge](script.md), [Database](datbase.md), [Key Value](key-value.md), [Project](project.md), [Pub Sub Bus](pub-sub.md), [Query Builder](query-builder.md), [Template](template.md)
+**Related Topics:** [Use Case](use-case.md), [ScriptForge](scriptforge.md), [Database](apps/architecture/database/), [Key Value](apps/architecture/key-value/), [Project](apps/architecture/project/), [Pub Sub Bus](apps/architecture/pub-sub/), [Query Builder](apps/architecture/query-builder/), [Template](apps/architecture/template/)
+<br>**Next Steps:** **Related Topics:** [Use Case](use-case.md), [ScriptForge](scriptforge.md), [Database](apps/architecture/database/), [Key Value](apps/architecture/key-value/), [Project](apps/architecture/project/), [Pub Sub Bus](apps/architecture/pub-sub/), [Query Builder](apps/architecture/query-builder/), [Template](apps/architecture/template/)</br>
 
 ---
 

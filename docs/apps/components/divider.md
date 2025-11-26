@@ -7,7 +7,7 @@
 <br>**Difficulty**: Beginner</br>
 **Time Required**: Approximately 5–10 minutes
 <br>**Prerequisites**: Access to the ConnexCS Apps Platform IDE (Page Builder), familiarity with UI layout and page structure principles.</br>
-<br>**Related Topics**: Page Builder / Layout Components Overview, other UI Components like Card, Section, Dialog.</br>
+**Related Topics**: [Page Builder / Layout Components Overview, other UI Components like Card, Section, Dialog](https://docs.connexcs.com/apps/page-builder/)
 
 ---
 

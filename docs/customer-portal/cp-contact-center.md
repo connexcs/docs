@@ -3,11 +3,11 @@
 ---
 
 **Document Metadata** <br>**Category**: Customer Portal / Contact Center</br>
-**Audience**: Administrators, Support Team, Engineers
+</br>**Audience**: Administrators, Support Team, Engineers</br>
 <br>**Difficulty**: Intermediate</br>
-**Time Required**: Approximately 20–40 minutes
+<br>**Time Required**: Approximately 20–40 minutes</br>
 <br>**Prerequisites**: Active ConnexCS account, access to the Customer Portal module, basic understanding of contact-center workflows and portal navigation</br>
-**Related Topics**: [Customer Portal Overview](https://docs.connexcs.com/customer-portal/), [Contacts Management](https://docs.connexcs.com/customer/main/#contacts), [Customer Dashboard](https://docs.connexcs.com/customer/customer/#customer-dashboard), [Portal Access Configuration](https://docs.connexcs.com/setup/integrations/portal/)
+<br>**Related Topics**: Customer Portal Overview,  [Contacts Management](https://docs.connexcs.com/customer/main/#contacts), [Customer Dashboard](https://docs.connexcs.com/customer/customer/#customer-dashboard), [Portal Access Configuration](https://docs.connexcs.com/setup/integrations/portal/)</br>
 <br>**Next Steps**: Review portal permissions for contact-center access; configure roles and workflows; test portal login and contact-center operations; integrate with customer account & contacts data</br>
 
 ---

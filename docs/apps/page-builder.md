@@ -2,7 +2,7 @@
 
 ---
 
-**Document Metadata** <br>**Category**: Applications Platform / Page Builder
+**Document Metadata** <br>**Category**: Applications Platform / Page Builder</br>
 **Audience**: Engineers, Developers, Platform Integrators
 <br>**Difficulty**: Intermediate</br>
 **Time Required**: Approximately 25–35 minutes <br>**Prerequisites**: Access to the ConnexCS Apps Platform IDE, familiarity with basic web application UI design and event/data-binding concepts. </br>

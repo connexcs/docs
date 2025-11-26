@@ -6,7 +6,6 @@
 <br>**Difficulty**: Intermediate to Advanced</br>
 **Time Required**: Approximately 20–30 minutes <br>**Prerequisites**: Access to the ConnexCS Apps Platform IDE (Page Builder), familiarity with data-driven UI and basic concepts of charting (data series, axes, labels) </br>
 **Related Topics**: [Page Builder / UI Components Overview](https://docs.connexcs.com/apps/page-builder/), [Database](https://docs.connexcs.com/apps/architecture/database/), [Query Builder](https://docs.connexcs.com/apps/architecture/query-builder/)
-
 <br>**Next Steps**: Add Chart → configure data source → set type/axes/styling → bind dynamic data → test across devices and data scenarios.</br>
 
 ---

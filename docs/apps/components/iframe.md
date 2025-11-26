@@ -6,7 +6,7 @@
 **Audience**: Developers, Engineers, UI Integrators, Support Team
 <br>**Difficulty**: Intermediate</br>
 **Time Required**: Approximately 15–25 minutes to review and integrate into an app
-<br>**Prerequisites**: Access to ConnexCS Apps IDE(PageBuilder), basic understanding of HTML/web embedding, familiarity with security and cross-origin constraints.</br>
+<br>**Prerequisites**: Access to ConnexCS Apps IDE (PageBuilder), basic understanding of HTML/web embedding, familiarity with security and cross-origin constraints.</br>
 
 ---
 

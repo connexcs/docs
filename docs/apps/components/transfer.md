@@ -6,7 +6,7 @@
 <br>**Difficulty**: Beginner to Intermediate</br>
 **Time Required**: Approximately 15–30 minutes
 <br>**Prerequisites**: Active ConnexCS account, access to the Applications module, basic understanding of UI component configuration and list-transfer / dual-list controls (moving items between lists) </br>
-**Related Topics**: [Select Component](https://docs.connexcs.com/apps/components/select/), [Grid / Table Component](https://docs.connexcs.com/apps/components/table/), [Form / Sub-Form Components](https://docs.connexcs.com/apps/components/form/), [Page Layout Component](https://docs.connexcs.com/apps/components/page-layout/)
+**Related Topics**: [Select Component](https://docs.connexcs.com/apps/components/select/), [Grid / Table Component](https://docs.connexcs.com/apps/components/table/), [Sub-Form Components](https://docs.connexcs.com/apps/components/sub-form/), [Page Layout Component](https://docs.connexcs.com/apps/components/page-layout/)
 <br>**Next Steps**: Build a sample UI using the Transfer component — e.g., assign/unassign items or users, configure a dual-list selection workflow; test moving items between lists, data binding, and correct persistence or submission of chosen values.</br>
 
 ---

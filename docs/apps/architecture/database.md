@@ -7,7 +7,7 @@
 **Time Required**: Approximately 30–35 minutes
 <br>**Prerequisites**: Access to the ConnexCS Apps Platform (IDE), permission to create and manage databases and dataset schema, familiarity with basic data modelling concepts</br>
 **Related Topics**: [Apps Architecture Overview](https://docs.connexcs.com/apps/architecture/architecture/) — covers high-level platform structure.
-<br>**Next Steps**: Create Database in IDE → choose type (Key-Value/Lead-Set) → define schema → upload/verify data → integrate in app → document conventions and maintenance.</br>  
+<br>**Next Steps**: Create Database in IDE → choose type (Key-Value/Lead-Set) → define schema → upload/verify data → integrate in app.</br>  
 
 ---
 
