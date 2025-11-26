@@ -3,7 +3,7 @@
 ---
 
 **Document Metadata** <br>**Category**: Customer Portal / Contact Center</br>
-</br>**Audience**: Administrators, Support Team, Engineers</br>
+</br>**Audience**: Administrators, Support Team, Engineers<br>
 <br>**Difficulty**: Intermediate</br>
 <br>**Time Required**: Approximately 20–40 minutes</br>
 <br>**Prerequisites**: Active ConnexCS account, access to the Customer Portal module, basic understanding of contact-center workflows and portal navigation</br>

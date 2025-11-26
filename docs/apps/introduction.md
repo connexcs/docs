@@ -7,8 +7,8 @@
 **Difficulty:** Beginner  
 **Time Required:** 10-30 minutes  
 **Prerequisites:** ConnexCS account and platform access  
-**Related Topics:** [Use Case](use-case.md), [ScriptForge](scriptforge.md), [Database](apps/architecture/database/), [Key Value](apps/architecture/key-value/), [Project](apps/architecture/project/), [Pub Sub Bus](apps/architecture/pub-sub/), [Query Builder](apps/architecture/query-builder/), [Template](apps/architecture/template/)
-<br>**Next Steps:** **Related Topics:** [Use Case](use-case.md), [ScriptForge](scriptforge.md), [Database](apps/architecture/database/), [Key Value](apps/architecture/key-value/), [Project](apps/architecture/project/), [Pub Sub Bus](apps/architecture/pub-sub/), [Query Builder](apps/architecture/query-builder/), [Template](apps/architecture/template/)</br>
+**Related Topics:** [Use Case](use-case.md), [ScriptForge](https://docs.connexcs.com/apps/architecture/scriptforge/), [Database](https://docs.connexcs.com/apps/architecture/database/), [Key Value](https://docs.connexcs.com/apps/architecture/key-value/) [Project](https://docs.connexcs.com/apps/architecture/project/) [Pub Sub Bus](https://docs.connexcs.com/apps/architecture/pub-sub/), [Query Builder](https://docs.connexcs.com/apps/architecture/query-builder/), [Template](https://docs.connexcs.com/apps/architecture/template/)
+<br>**Next Steps:** [Use Case](use-case.md), [ScriptForge](https://docs.connexcs.com/apps/architecture/scriptforge/), [Database](https://docs.connexcs.com/apps/architecture/database/), [Key Value](https://docs.connexcs.com/apps/architecture/key-value/) [Project](https://docs.connexcs.com/apps/architecture/project/) [Pub Sub Bus](https://docs.connexcs.com/apps/architecture/pub-sub/), [Query Builder](https://docs.connexcs.com/apps/architecture/query-builder/), [Template](https://docs.connexcs.com/apps/architecture/template/)</br>
 
 ---
 
