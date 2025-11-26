@@ -1,5 +1,17 @@
 # Tree-Select
 
+---
+
+**Document Metadata** <br>**Category**: Applications & Components</br>
+**Audience**: Administrators, Engineers, App Developers
+<br>**Difficulty**: Beginner to Intermediate</br>
+**Time Required**: Approximately 15–30 minutes
+<br>**Prerequisites**: Active ConnexCS account, access to the Applications module, basic understanding of UI component configuration and hierarchical / tree-structured selection controls (nested dropdowns or tree-select inputs)</br>
+**Related Topics**: [Select Component](https://docs.connexcs.com/apps/components/select/), [Transfer Component](https://docs.connexcs.com/apps/components/transfer/), [Grid / Table Component](https://docs.connexcs.com/apps/components/table/), [Form / Sub-Form Components](https://docs.connexcs.com/apps/components/form/)
+<br>**Next Steps**: Build a UI or form using the Tree-Select component — e.g., for choosing from nested categories, sub-items, or hierarchical data; test selection behavior (single/multiple), default values, and data binding for hierarchical structures.</br>
+
+---
+
 ## Description
 
 **Tree-select** refers to a special type of dropdown menu element used in forms, presenting information in a hierarchical, tree-like structure.

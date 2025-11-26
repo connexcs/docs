@@ -1,5 +1,19 @@
 # Pub/Sub Bus
 
+---
+
+**Document Metadata**
+<br>**Category**: Applications Platform / Architecture – Pub-Sub Messaging </br>
+**Audience**: Engineers, Developers, Platform Integrators, System Architects
+<br>**Difficulty**: Intermediate to Advanced</br>
+**Time Required**: Approximately 20–30 minutes (to read and understand Pub/Sub usage in ConnexCS)
+<br>**Prerequisites**: Access to the ConnexCS Apps Platform, familiarity with asynchronous/event-driven programming concepts (e.g. publish/subscribe pattern), and basic JavaScript/ScriptForge knowledge for integration.</br>
+**Related Topics**: Apps Architecture – Overview of App Platform, ScriptForge (Custom Logic), Page-Builder & UI Components
+
+<br>Next Steps: Identify use cases for async event messaging (chat, notifications, state updates) → import cxPubSub module and use publish(topic, payload) / subscribe(topic, callback) → design topic naming strategy </br>
+
+---
+
 ## Introduction
 
 A **Pub/Sub** bus, short for **Publish/Subscribe** bus, is a messaging system that enables asynchronous communication between different parts of an application or system. It functions like a central communication hub where:

@@ -1,5 +1,13 @@
 # Link
 
+---
+**Document Metadata** <br>**Category**: Applications & Components</br>
+**Audience**: Administrators, Engineers, App Developers</br>
+**Difficulty**: Beginner to Intermediate</br>
+**Time Required**: Approximately 15–30 minutes</br> <br>**Prerequisites**: Active ConnexCS account, access to the Applications module, basic familiarity with UI component configuration</br>
+**Related Topics**: [Input Component](https://docs.connexcs.com/apps/components/input/), [Inline Component](https://docs.connexcs.com/apps/components/inline/), [Grid Component](https://docs.connexcs.com/apps/components/grid/), [Dialog Component](https://docs.connexcs.com/apps/components/dialog/)</br>
+**Next Steps**: Create a UI prototype using the Link component; test navigation and linking between app screens/pages</br>
+
 ## Description
 
 **Link** components can be used in forms to provide additional functionality, such as opening external resources, navigating to different sections of the form, or triggering specific actions.

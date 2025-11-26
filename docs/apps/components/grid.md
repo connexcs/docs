@@ -1,5 +1,18 @@
 # Grid
 
+---
+**Document Metadata**
+<br>**Category**: Applications Platform / UI Components — Grid Component</br>
+**Audience**: Developers, Engineers, UI Designers, Data & Form Builders
+<br>**Difficulty**: Intermediate</br>
+**Time Required**: Approximately 15–25 minutes
+<br>**Prerequisites**: Access to the ConnexCS Apps IDE → Page Builder, familiarity with form & UI design, basic understanding of tabular data and form-based layouts</br>
+**Related Topics**: Page Builder – Layout & Component Usage, Data Grid component (for data-driven tables)
+
+<br>**Next Steps**: Add Grid for layout → configure rows/columns with components → use API for dynamic control → test responsiveness.</br>
+
+---
+
 ## Description
 
 A **Grid** component in a form is a UI element that allows you to display and organize data in a tabular format within a form.

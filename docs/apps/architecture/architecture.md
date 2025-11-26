@@ -1,5 +1,14 @@
 # Architecture
 
+---
+
+**Document Metadata** <br>**Category**: Applications Platform / Apps Architecture</br>
+**Audience**: Engineers, Developers, Technical Leads <br>**Difficulty**: Advanced</br>
+**Time Required**: Approximately 35-45 minutes</br>
+<br>**Prerequisites**: An active ConnexCS account with the Apps platform enabled, basic understanding of web application architecture and backend services</br> **Related Topics**: [Apps – Introduction](https://docs.connexcs.com/apps/introduction/) , [Apps – Use-Case Examples](https://docs.connexcs.com/apps/use-case/) <br>**Next Steps**: Map your app to architecture layers (UI, business-logic, data-services), assign components to hosting platforms (Page Builder, ScriptForge, REST), and update standards accordingly.</br>
+
+---
+
 ## Introduction
 
 The Application Platform is distributed over global, stateless web servers that includes the sessions.

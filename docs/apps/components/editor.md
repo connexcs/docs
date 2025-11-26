@@ -1,5 +1,17 @@
 # Editor
 
+---
+
+**Document Metadata** <br>**Category**: Applications Platform / UI Components — Editor Component </br>
+**Audience**: Developers, Engineers, UI/UX Designers, Content Managers
+<br>**Difficulty**: Intermediate</br>
+**Time Required**: Approximately 15–25 minutes
+<br>**Prerequisites**: Access to ConnexCS Apps IDE → Page Builder; familiarity with web-content editing, form layouts, basic front-end logic (optional for interactivity)</br>
+**Related Topics**: [Page Builder – Overview & Workflow](https://docs.connexcs.com/apps/page-builder/), [ScriptForge – custom logic & event handling](https://docs.connexcs.com/apps/architecture/scriptforge/), UI Components (e.g. Text Area, Form Inputs)
+<br>**Next Steps**: Add Editor → configure attributes → use methods for dynamic content → combine with other components → test functionality and validation.</br>
+
+---
+
 ## Description
 
 The **Editor** allows you to create web content quickly and effortlessly.

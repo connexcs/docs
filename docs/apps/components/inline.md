@@ -1,5 +1,14 @@
 # Inline
 
+---
+
+**Document Metadata** <br>**Category**: Applications & Components</br>
+**Audience**: Administrators, Engineers, App Developers <br>**Difficulty**: Beginner to Intermediate</br>
+**Time Required**: Approximately 15–30 minutes <br>**Prerequisites**: Active ConnexCS account, access to the **Applications** module, basic understanding of UI component configuration</br>
+**Related Topics**: [HTML Component](https://docs.connexcs.com/apps/components/html/), [Editor Component](https://docs.connexcs.com/apps/components/editor/), [Grid Component](https://docs.connexcs.com/apps/components/grid/), [Dialog Component](https://docs.connexcs.com/apps/components/dialog/) <br>**Next Steps**: Explore additional UI components in the Applications module, build a sample form or interactive UI using Inline components</br>
+
+---
+
 ## Description
 
 The **Inline** layout approach allows for a more compact and organized form layout, making it easier for users to navigate and interact with the form elements.

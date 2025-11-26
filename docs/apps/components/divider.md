@@ -1,5 +1,16 @@
 # Divider
 
+---
+**Document Metadata**
+<br>**Category**: Applications Platform / UI Components — Divider Component</br>
+**Audience**: Developers, Engineers, UI/UX Designers, Support Team
+<br>**Difficulty**: Beginner</br>
+**Time Required**: Approximately 5–10 minutes
+<br>**Prerequisites**: Access to the ConnexCS Apps Platform IDE (Page Builder), familiarity with UI layout and page structure principles.</br>
+<br>**Related Topics**: Page Builder / Layout Components Overview, other UI Components like Card, Section, Dialog.</br>
+
+---
+
 ## Description
 
 A **Divider** in a page builder is a visual element that separates different sections of a page.

@@ -1,5 +1,16 @@
 # Radio
 
+---
+
+**Document Metadata** <br>**Category**: Applications & Components</br>
+**Audience**: Administrators, Engineers, App Developers</br>
+**Difficulty**: Beginner to Intermediate</br>
+**Time Required**: Approximately 15–30 minutes</br>
+**Prerequisites**: Active ConnexCS account, access to the Applications module, basic familiarity with UI component configuration and form-input components</br>
+**Related Topics**: [Input Component](https://docs.connexcs.com/apps/components/input/), [Number Component](https://docs.connexcs.com/apps/components/number/), [Link Component](https://docs.connexcs.com/apps/components/link/), [Grid Component](https://docs.connexcs.com/apps/components/grid/) <br>**Next Steps**: Build a sample form or UI using the Radio component to capture single-choice input; test different radio group configurations and default value settings</br>
+
+---
+
 ## Description
 
 A **Radio** component refers to a group of circular buttons where users can choose only one option at a time.

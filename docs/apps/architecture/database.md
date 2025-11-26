@@ -1,5 +1,16 @@
 # Database
 
+---
+
+**Document Metadata** <br>**Category**: Applications Platform / UI Components (Database Module)</br> **Audience**: Engineers, Developers, Data Engineers
+<br>**Difficulty**: Intermediate to Advanced</br>
+**Time Required**: Approximately 30–35 minutes
+<br>**Prerequisites**: Access to the ConnexCS Apps Platform (IDE), permission to create and manage databases and dataset schema, familiarity with basic data modelling concepts</br>
+**Related Topics**: [Apps Architecture Overview](https://docs.connexcs.com/apps/architecture/architecture/) — covers high-level platform structure.
+<br>**Next Steps**: Create Database in IDE → choose type (Key-Value/Lead-Set) → define schema → upload/verify data → integrate in app → document conventions and maintenance.</br>  
+
+---
+
 ## Introduction
 
 The **Database** allows you to create custom persistent data storage. A data store can be specific to a single customer or global (used with any customer).

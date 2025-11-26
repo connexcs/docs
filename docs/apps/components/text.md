@@ -1,8 +1,20 @@
 # Text
 
+---
+
+**Document Metadata** <br>**Category**: Applications & Components</br>
+**Audience**: Administrators, Engineers, App Developers
+<br>**Difficulty**: Beginner to Intermediate</br>
+**Time Required**: Approximately 15–30 minutes
+<br>**Prerequisites**: Active ConnexCS account, access to the Applications module, basic understanding of UI component configuration and content display elements (static or dynamic text fields)</br>
+**Related Topics**: [Input Component](https://docs.connexcs.com/apps/components/input/), [Page Layout Component](https://docs.connexcs.com/apps/components/page-layout/), [Tabs Component](https://docs.connexcs.com/apps/components/tabs/), [Table Component](https://docs.connexcs.com/apps/components/table/)
+<br>**Next Steps**: Add Text components to a sample app UI to display static or dynamic information (labels, instructions, data values); combine Text with other components for layout and user interaction; test rendering with different text lengths and dynamic bindings.</br>
+
+---
+
 ## Description
 
-The **Text** element allows you to display any information. 
+The **Text** element allows you to display any information.
 
 Users can type text, numbers, or symbols into the designated field, providing essential information for the form's purpose.
 

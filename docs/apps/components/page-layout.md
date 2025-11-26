@@ -1,5 +1,17 @@
 # Page Layout
 
+---
+
+**Document Metadata** <br>**Category**: Applications & Components</br>
+**Audience**: Administrators, Engineers, App Developers</br>
+**Difficulty**: Beginner to Intermediate</br>
+**Time Required**: Approximately 15–30 minutes</br>
+**Prerequisites**: Active ConnexCS account, access to the Applications module, basic understanding of UI component configuration and layout concepts (e.g. sections, containers, panels)</br>
+**Related Topics**: [Input Component](https://docs.connexcs.com/apps/components/input/), [Link Component](https://docs.connexcs.com/apps/components/link/), [Inline Component](https://docs.connexcs.com/apps/components/inline/), [Grid Component](https://docs.connexcs.com/apps/components/grid/)</br>
+**Next Steps**: Design a sample app page using the Page Layout component; define overall structure (header, sections, panels), integrate other UI components within layout containers</br>
+
+---
+
 ## Description
 
 **Page Layout** helps to the overall arrangeme and organize different form elements on a single page or screen.

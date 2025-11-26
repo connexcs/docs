@@ -1,5 +1,15 @@
 # Alert
 
+---
+**Document Metadata** <br>**Category**: Applications Platform / UI Components — Alert Component</br> **Audience**: Developers, Engineers, UI/UX Designers, Support Team
+<br>**Difficulty**: Intermediate </br>
+**Time Required**: Approximately 15–20 minutes
+<br>**Prerequisites**: Access to the ConnexCS Apps Platform IDE and familiarity with basic UI component configuration (via Page Builder or custom code)</br>
+**Related Topics**: [Page Builder / UI Components Overview](https://docs.connexcs.com/apps/page-builder/), [ScriptForge / App Logic Layer](https://docs.connexcs.com/apps/architecture/scriptforge/)
+<br>**Next Steps**: Add Alert component → configure type/message/styling → trigger via app logic → test scenarios and accessibility.</br>
+
+---
+
 ## Description
 
 The **Alert** component can be used to display success, warning, information or error-type boxes.

@@ -1,5 +1,17 @@
 # Select
 
+---
+
+**Document Metadata** <br>**Category**: Applications & Components</br>
+**Audience**: Administrators, Engineers, App Developers
+</br>**Difficulty**: Beginner to Intermediate</br>
+**Time Required**: Approximately 15–30 minutes
+</br>**Prerequisites**: Active ConnexCS account, access to the Applications module, basic understanding of UI component configuration and form input components (dropdown/select behavior)</br>
+**Related Topics**: [Input Component](https://docs.connexcs.com/apps/components/input/), [Number Component](https://docs.connexcs.com/apps/components/number/), [Radio Component](https://docs.connexcs.com/apps/components/radio/), [Grid Component](https://docs.connexcs.com/apps/components/grid/)
+<br>**Next Steps**: Build a sample form or UI using the Select component to present dropdown options; test selection behavior and data binding (single / multiple select, default value, option loading) for different use-cases.</br>
+
+---
+
 ## Description
 
 The **Select** component is a dropdown menu that allows users to choose one option from a predefined list.

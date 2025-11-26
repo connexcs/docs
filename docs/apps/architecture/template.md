@@ -1,5 +1,14 @@
 # Template
 
+---
+
+**Document Metadata** <br>**Category**: Applications Platform / Scripting & Custom Logic (ScriptForge)</br>
+**Audience**: Developers, Engineers, Integrators <br>**Difficulty**: Advanced </br>
+**Time Required**: Approximately 30–40 minutes <br>**Prerequisites**: Access to the ScriptForge IDE within the ConnexCS Apps Platform, familiarity with JavaScript (ES6) and basic SIP/telecom call-flows </br>
+**Related Topics**: [Apps Architecture Overview](https://docs.connexcs.com/apps/architecture/architecture/), [Apps – Use Cases](https://docs.connexcs.com/apps/use-case/) <br>**Next Steps**: Create ScriptForge script → write logic with main(data, ctx) and modules → assign to routing/DID/app → test and monitor.</br>
+
+---
+
 ## Introduction
 
 ConnexCS offers a powerful templating system for automating communication.

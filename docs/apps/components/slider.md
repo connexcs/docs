@@ -1,5 +1,17 @@
 # Slider
 
+---
+
+**Document Metadata** <br>**Category**: Applications & Components</br>
+**Audience**: Administrators, Engineers, App Developers
+<br>**Difficulty**: Beginner to Intermediate</br>
+**Time Required**: Approximately 15–30 minutes
+<br>**Prerequisites**: Active ConnexCS account, access to the Applications module, basic understanding of UI component configuration and form-input components (slider/range inputs)</br>
+**Related Topics**: [Input Component](https://docs.connexcs.com/apps/components/input/), [Number Component](https://docs.connexcs.com/apps/components/number/), [Select Component](https://docs.connexcs.com/apps/components/select/), [Grid Component](https://docs.connexcs.com/apps/components/grid/)
+<br>**Next Steps**: Build a sample UI or form using the Slider component — e.g., for capturing numeric ranges or ratings; test slider behavior for different value ranges, defaults, and boundary conditions.</br>
+
+---
+
 ## Description
 
  A **Slider** component allows users to visually select a numerical value within a predefined range.

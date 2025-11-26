@@ -1,5 +1,16 @@
 # Page Builder
 
+---
+
+**Document Metadata** <br>**Category**: Applications Platform / Page Builder
+**Audience**: Engineers, Developers, Platform Integrators
+<br>**Difficulty**: Intermediate</br>
+**Time Required**: Approximately 25–35 minutes <br>**Prerequisites**: Access to the ConnexCS Apps Platform IDE, familiarity with basic web application UI design and event/data-binding concepts. </br>
+**Related Topics**: [Apps Platform – Introduction](https://docs.connexcs.com/apps/introduction/) (covers drag-&-drop and architecture), [Apps Platform – Button Builder](https://docs.connexcs.com/apps/architecture/button-builder/) (for action buttons)
+<br>**Next Steps**: Create page → add components → configure attributes and data sources → implement events/API methods → test across devices → publish.
+
+---
+
 ## Introduction
 
 Our **Page Builder** allows users to easily create and design forms/pages without needing or minimalist requirement to write code.

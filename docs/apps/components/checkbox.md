@@ -1,5 +1,14 @@
 # Checkbox
 
+---
+**Document Metadata** <br>**Category**: Applications Platform / UI Components — Checkbox Component</br> **Audience**: Developers, Engineers, UI/UX Designers, Support Team
+<br>**Difficulty**: Beginner to Intermediate</br>
+**Time Required**: Approximately 10–15 minutes <br>**Prerequisites**: Access to the ConnexCS Apps Platform IDE, familiarity with basic form controls and user-input handling (forms, event logic) </br>
+**Related Topics**: [Page Builder / UI Components Overview](https://docs.connexcs.com/apps/page-builder/) , [Other UI Components: Button, Card, Select, etc.](https://docs.connexcs.com/apps/components/)
+<br>**Next Steps**: Add Checkbox → configure label/state/grouping → read value in logic for conditional behavior → test scenarios.</br>
+
+---
+
 ## Description
 
 A checkbox is a type of input field in a form builder that allows users to select multiple options from a set of choices.

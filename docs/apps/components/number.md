@@ -1,5 +1,17 @@
 # Number
 
+---
+
+**Document Metadata** <br>**Category**: Applications & Components</br>
+**Audience**: Administrators, Engineers, App Developers</br>
+**Difficulty**: Beginner to Intermediate</br>
+**Time Required**: Approximately 15–30 minutes</br>
+**Prerequisites**: Active ConnexCS account, access to the Applications module, basic understanding of UI component configuration</br>
+**Related Topics**: [Input Component](https://docs.connexcs.com/apps/components/input/), [Link Component](https://docs.connexcs.com/apps/components/link/), [Inline Component](https://docs.connexcs.com/apps/components/inline/), [Grid Component](https://docs.connexcs.com/apps/components/grid/)</br>
+**Next Steps**: Build a form or UI that uses the Number component to capture numerical data; test the component with different number formats or validation rules</br>
+
+---
+
 ## Description
 
 **Number** component is a UI element that allows users to input and manipulate numerical values within a form.

@@ -1,5 +1,13 @@
 # Collapse
 
+---
+**Document Metadata** <br>**Category**: Applications Platform / UI Components — Collapse Component</br>
+**Audience**: Developers, Engineers, UI/UX Designers, Support Team
+<br>**Difficulty**: Beginner to Intermediate</br>
+**Time Required**: Approximately 10–15 minutes <br>**Prerequisites**: Access to the ConnexCS Apps Platform IDE (Page Builder), basic knowledge of UI layout and form design. </br>**Related Topics**: [Page Builder / Layout Components](https://docs.connexcs.com/apps/page-builder/), Other UI Components</br>
+
+---
+
 ## Description
 
 **Collapse** helps to hide or conceal a section of a form, typically by minimizing or folding it into a smaller, more compact view.

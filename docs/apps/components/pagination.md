@@ -1,5 +1,17 @@
 # Pagination
 
+---
+
+**Document Metadata** <br>**Category**: Applications & Components</br>
+**Audience**: Administrators, Engineers, App Developers</br>
+**Difficulty**: Beginner to Intermediate</br>
+**Time Required**: Approximately 15–30 minutes</br>
+**Prerequisites**: Active ConnexCS account, access to the Applications module, basic understanding of UI component configuration and data-driven components (lists, tables, pagination concepts)</br>
+**Related Topics**: [Grid Component](https://docs.connexcs.com/apps/components/grid/), [Input Component](https://docs.connexcs.com/apps/components/input/), [Number Component](https://docs.connexcs.com/apps/components/number/), [Page Layout Component](https://docs.connexcs.com/apps/components/page-layout/)</br>
+**Next Steps**: Create a sample data-listing (e.g. table or list) using Pagination component; test behavior with varying dataset sizes; integrate navigation controls to browse pages of data</br>
+
+---
+
 ## Description
 
 Pagination is a mechanism for presenting and navigating through large chunks of information within a form in a structured way.

@@ -1,5 +1,16 @@
 # Data Grid
 
+---
+**Document Metadata** <br>**Category**: Applications Platform / UI Components — Data Grid Component</br>
+**Audience**: Developers, Engineers, Data Analysts, UI/UX Designers, Support Team
+<br>**Difficulty**: Intermediate to Advanced</br>
+**Time Required**: Approximately 20–30 minutes <br>**Prerequisites**: Access to the ConnexCS Apps Platform IDE (Page Builder), familiarity with tabular data representation, and a dataset (from internal database, API or Query Builder) to feed into the grid component. </br>
+**Related Topics**: [Page Builder Overview](https://docs.connexcs.com/apps/page-builder/), [Database / Query Builder for data retrieval](https://docs.connexcs.com/apps/architecture/database/), [UI Components – Card / Table / Chart for layout & data presentation](https://docs.connexcs.com/apps/components/)
+
+<br>**Next Steps**: Add Data Grid → set data source → configure columns and sorting/filtering → enable pagination → add actions if needed → test across data sizes/devices.</br>
+
+---
+
 ## Description
 
 **Data Grid** is a tabular data display component. It enables you to add different functionalities.

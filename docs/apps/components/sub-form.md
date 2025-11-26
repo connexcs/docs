@@ -1,5 +1,17 @@
 # Sub-Form
 
+---
+
+**Document Metadata** <br>**Category**: Applications & Components</br>
+**Audience**: Administrators, Engineers, App Developers
+<br>**Difficulty**: Beginner to Intermediate</br>
+**Time Required**: Approximately 15–30 minutes
+<br>**Prerequisites**: Active ConnexCS account, access to the Applications module, basic understanding of UI component configuration and form-building concepts</br>
+**Related Topics**: [Form Component](https://docs.connexcs.com/apps/components/form/), [Input Component](https://docs.connexcs.com/apps/components/input/), [Page Layout Component](https://docs.connexcs.com/apps/components/page-layout/), [Table / Grid Components](https://docs.connexcs.com/apps/components/grid/)
+<br>**Next Steps**: Create a UI form using the Sub-Form component to group related input fields or sections, configure data binding for nested data structures, test form submission and data validation for nested fields.</br>
+
+---
+
 ## Description
 
 A **Sub-Form**, is a powerful tool in form creation that allows you to embed one form within another.

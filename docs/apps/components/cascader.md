@@ -1,5 +1,13 @@
 # Cascader
 
+---
+**Document Metadata** <br>**Category**: Applications Platform / UI Components — Cascader Component</br> **Audience**: Developers, Engineers, UI/UX Designers, Support Team
+<br>**Difficulty**: Intermediate</br>
+**Time Required**: Approximately 15–20 minutes <br>**Prerequisites**: Access to the ConnexCS Apps Platform IDE (Page Builder), basic understanding of forms and hierarchical data structures (e.g. country/state/city, category/sub-category lists) </br>
+**Related Topics**: [Page Builder / UI Components Overview](https://docs.connexcs.com/apps/page-builder/), [Other UI Components: Card, Select, Tree Select, Button, etc.](https://docs.connexcs.com/apps/components/) <br>**Next Steps**: Add Cascader → configure hierarchical data (JSON) → set properties and events → test selection flows and responsiveness.</br>
+
+---
+
 ## Description
 
 A **Cascader**, also known as a **Cascade Select** or **Dependent Drop-down**, is a type of input field in a page builder that allows users to select options dynamically based on their previous selections in other fields.

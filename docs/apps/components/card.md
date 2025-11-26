@@ -1,5 +1,12 @@
 # Card
 
+---
+**Document Metadata** <br>**Category**: Applications Platform / UI Components — Card Component</br> **Audience**: Developers, Engineers, UI/UX Designers, Support Team<br>**Difficulty**: Intermediate</br> **Time Required**: Approximately 15–20 minutes <br>**Prerequisites**: Access to the ConnexCS Apps Platform IDE and familiarity with basic UI component configuration (via Page Builder or custom code) </br>
+**Related Topics**: [Page Builder / UI Components Overview](https://docs.connexcs.com/apps/page-builder/) , [Button Component](https://docs.connexcs.com/apps/components/button/), [Alert Component](https://docs.connexcs.com/apps/components/alert/) (for mixing components)
+<br>**Next Steps**: Add Card → configure title/content/styling → populate dynamically → combine with other components → test across devices.</br>
+
+---
+
 ## Description
 
 A **Card** in a page builder is a type of container that can be used to group related form fields together.

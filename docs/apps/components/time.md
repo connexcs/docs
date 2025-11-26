@@ -1,5 +1,17 @@
 # Time
 
+---
+
+**Document Metadata** <br>**Category**: Applications & Components</br>
+**Audience**: Administrators, Engineers, App Developers
+<br>**Difficulty**: Beginner to Intermediate</br>
+**Time Required**: Approximately 15–30 minutes
+<br>**Prerequisites**: Active ConnexCS account, access to the Applications module, basic understanding of UI component configuration and time-input controls</br>
+**Related Topics**: [Input Component](https://docs.connexcs.com/apps/components/input/), [Number Component](https://docs.connexcs.com/apps/components/number/), [Date Component (if available)](https://docs.connexcs.com/apps/components/), [Form / Sub-Form Components](https://docs.connexcs.com/apps/components/form/)
+<br>**Next Steps**: Build a UI or form that uses the Time component to capture time values (e.g. scheduling or timestamp inputs); test with different time formats, default values, and validate user input correctness.</br>
+
+---
+
 ## Description
 
 **Time** element allows you to input the time in HH: mm :ss format.
