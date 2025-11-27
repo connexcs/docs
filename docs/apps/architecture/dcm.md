@@ -28,10 +28,6 @@ Use these methods across most Page Builder components. Reference them from compo
 
 ### Alert
 
-|Method name|Description|Syntax|
-|-----------|-----------|------|
-|`setLabel()`|Set visible label|`this.$('componentID').setLabel('text')`|
-
 See [Common Methods](#common-methods) for **`getId`/`hide`/`show`** usage.
 
 ### Button
@@ -73,10 +69,6 @@ See [Common Methods](#common-methods) for **`getId`/`hide`/`show`** usage.
 
 ### Collapse
 
-|Method name|Description|Syntax|
-|----|-----------|------|
-|`setActive()`|Programmatically expands a specific panel (by index or key)|`this.$('componentID').setActive(indexOrKey);`|
-
 See [Common Methods](#common-methods) for **`getId`/`hide`/`show`/`loading`** usage.
 
 ### Color
@@ -100,7 +92,7 @@ See [Common Methods](#common-methods) for **`getId`/`hide`/`show`** usage.
 
 |Method name|Description|Syntax|
 |----|-----------|------|
-|`clickClick()`|Simulates a click on the confirm (OK) button inside the dialog|`this.$('componentID').clickClick();`|
+|`clickConfirm()`|Simulates a click on the confirm (OK) button inside the dialog|`this.$('componentID').clickClick();`|
 |`close()`|Closes the dialog box|`this.$('componentID').close();`|
 |`confirmLoading()`|Shows a loading spinner on the confirm (OK) button|`this.$('componentID').confirmLoading(true);`|
 |`getValues()`|Retrieves all input values from fields inside the dialog|`this.$('componentID').getValues();`|
