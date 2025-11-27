@@ -8,7 +8,7 @@
 **Time Required**: Approximately 10–20 minutes
 <br>**Prerequisites**: Active ConnexCS account</br>
 **Related Topics**: Company Settings, Security Settings, Users & Roles, Notifications, Billing & Subscription
-<<br>**Next Steps**: Review and update account-level information, then verify that changes reflect across billing, user access, and system defaults.</br>
+<br>**Next Steps**: Review and update account-level information, then verify that changes reflect across billing, user access, and system defaults.</br>
 
 ---
 
