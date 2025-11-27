@@ -10,18 +10,11 @@ Use Script Forge to manage these calls by adding the numbers to the system. If y
 
 **Step 1: Setup the Database**
 
-1. Navigate to **Developer :material-menu-right: Database**.
-2. Click **:material-plus:**.
-3. Enter the **Name**.
-4. Select the **Customer**.
-5. Select **Dataset Type**.
-6. Click **Save**.
-
-    ![alt text][dnc-3]
+[Click here](https://docs.connexcs.com/apps/architecture/database/) to know the processof Database creation.
 
 **Step 2: Configure Script Forge**
 
-1. Navigate to **Developer :material-menu-right: Script Forge**
+1. Navigate to **IDE :material-menu-right: Script Forge**
 2. Add the Script **Name**.
 3. Select `App` for the **Type**.
 4. Click **Save**.
@@ -30,7 +23,7 @@ Use Script Forge to manage these calls by adding the numbers to the system. If y
 7. Click the green arrow to `Save and Run`.
 
 !!! info "More on Script Forge"
-    See [**Script Forge**](https://docs.connexcs.com/developers/scriptforge/) in our documentation for more details on using Script Forge.
+    See [**Script Forge**](https://docs.connexcs.com/apps/architecture/scriptforge/#configuration) in our documentation for more details on using Script Forge.
 
 **Step 3: Add script to Customer**
 
@@ -73,7 +66,7 @@ Following are the steps to enable the DNO list.
 3. The DNO does two things when its enabled. First, it blocks the DNO numbers from the Federal Government and second, it blocks the numbers we know which don't exist.
 4. You should enable the **FTC DNC Report ANI Block (USA)** option. This blocks the calls which have been reported as originating invalid numbers.
 5. Click on `Save`.
-![dno](/guides/img/dno.jpg)
+<img src= "/guides/img/dno.jpg" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ### US DNO Requirements in ConnexCS
 
@@ -85,4 +78,4 @@ According to [Federal Register Vol. 87, No. 222](https://www.govinfo.gov/content
 
 The [FCC](https://www.ftc.gov/news-events/topics/do-not-call-registry) decided against requiring the use of a particular list but will still let gateway providers use any DNO list as long as it's reasonable.
 
-[dnc-3]: /misc/img/dnc-3.png "DNC-3"
+[dnc-3]: /misc/img/dnc-3.png "DNC-3" style="border: 2px solid #4472C4; border-radius: 8px;"

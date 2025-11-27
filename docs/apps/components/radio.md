@@ -6,7 +6,7 @@ A **Radio** component refers to a group of circular buttons where users can choo
 
 It's like a set of switches where only one can be "on" at any given moment.
 
-<img src= "/apps/components/img/radio.png">
+<img src= "/apps/components/img/radio.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Use Case
 
@@ -61,7 +61,7 @@ It's like a set of switches where only one can be "on" at any given moment.
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/radio2.png">
+<img src= "/apps/components/img/radio2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Example
     1. `this.addClassName(fields, className)`
@@ -166,7 +166,7 @@ Form validation can be performed using a variety of methods, including:
 ||**value**: Value of the current field|
 ||**callback**: Callback function (must be called) upon completion of validation; **callback('Error message')/ callback(new Error('Error message'))**. These are two ways to return an error message|
 
-<img src= "/apps/components/img/cascader_validation.png">
+<img src= "/apps/components/img/cascader_validation.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Info
     1. The **callback() function** is also called to verify success in the custom validation method.

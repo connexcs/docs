@@ -4,7 +4,7 @@
 
 A **Rate** component allows users to express their level of satisfaction, preference, or opinion on something using a visual scale.
 
-<img src= "/apps/components/img/rate.png">
+<img src= "/apps/components/img/rate.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Use Case
 
@@ -61,7 +61,7 @@ A **Rate** component allows users to express their level of satisfaction, prefer
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/rate2.png">
+<img src= "/apps/components/img/rate2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Example
     1. `this.addClassName(fields, className)`
@@ -128,7 +128,6 @@ A **Rate** component allows users to express their level of satisfaction, prefer
         });
         ```
 
-
 ## Config
 
 | **Name**|**Description**|**Icon**|
@@ -162,7 +161,7 @@ Form validation can be performed using a variety of methods, including:
 ||**value**: Value of the current field|
 ||**callback**: Callback function (must be called) upon completion of validation; **callback('Error message')/ callback(new Error('Error message'))**. These are two ways to return an error message|
 
-<img src= "/apps/components/img/cascader_validation.png">
+<img src= "/apps/components/img/cascader_validation.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Info
     1. The **callback() function** is also called to verify success in the custom checkup method.

@@ -8,7 +8,7 @@ It can be a powerful tool for enhancing user experience, streamlining data entry
 
 Tables provide a structured format for organizing related data within a form. Users can easily scan information, compare options, and make informed choices.
 
-<img src= "/apps/components/img/table.png">
+<img src= "/apps/components/img/table.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Use Case
 
@@ -48,7 +48,7 @@ Tables provide a structured format for organizing related data within a form. Us
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/table2.png">
+<img src= "/apps/components/img/table2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Example
     1. `this.addClassName(fields, className)`

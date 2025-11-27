@@ -16,14 +16,12 @@ The switch API provides **full administrative capabilities**.
 
 This means that every function accomplished through our web interface is available through our API.
 
-You can find the API specification here: **<https://api-docs.connexcs.com/#tag/alert>**
-
-You can find the API specification (new version) here: **<https://app.connexcs.com/api/api-spec/v3>**
+You can find API Specification here: <https://api-docs.connexcs.com/>
 
 ## Customer Administration
 
 The API lets you perform customer-facing operations like communicating with the switch, information about current balances, and managing Call Detail Records (CDRs).  
 
-You can find the specifications for the customer-facing API operations [here](https://portal-api-docs.connexcs.com/).
+You can find the specifications for the customer-facing API operations here: <https://portal.test.connexcs.com/api/docs/>
 
 To view supported integrations, go to [**API Integrations**](https://docs.connexcs.com/setup/integrations/api/).

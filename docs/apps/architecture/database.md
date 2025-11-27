@@ -6,13 +6,41 @@ The **Database** allows you to create custom persistent data storage. A data sto
 
 You can use **Database** for activities like checking list of numbers, caching external lookup, or creating stateful applications that provide users a set number of free minutes per month.
 
+### Types of Databases
+
+ConnexCS provides two primary types of databases:
+
+1. **Key-Value Store**
+
+      + A custom-built database.
+      + Can be used for maintaining Do Not Call (DNC) lists.
+
+      + **Features**:
+
+        + Allows adding phone numbers.
+        + Option to create a database per customer.
+        + Customers can access their database via the customer portal.
+        + Ability to upload, modify, and remove data.
+
+2. **Lead Set**
+
+      + Designed for handling complex data structures.
+      + Primarily used for dialers.
+
+      + **Features**:
+
+        + Supports multiple fields for more detailed records.
+        + Integrates with dialer systems.
+        + Bulk data operations: Import and Export
+        + Customer-level data association and management.
+
 ## Steps to create a Database
 
 1. Login to your account.
 2. Click on **IDE** :material menu-right: +.
 3. Select **Database**.
 
-<img src= "/apps/img/app_database.png" width= "400">
+<img src= "/apps/img/app_database.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 4.Under the **Basic** Tab Write the **Name** of the database you wish to create.
 
@@ -23,11 +51,11 @@ You can use **Database** for activities like checking list of numbers, caching e
 + **Key / Value** - Contains a basic Key / Value Storage.
 + **Lead Set** - Contains the most common fields when using a data store for customer / campaign data which you can use with dialers.
 
-<img src="/developers/img/db2.png" width="300">
+<img src="/developers/img/db2.png" width="300" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 7.Next to the **Basic** Tab is the **SQL Table Schema**. This allows you to add additional fields apart from the **Leadset**. You can also select it's **Type** like integer, string, double, float etc.
 
-<img src="/developers/img/db3.png" width="400">
+<img src="/developers/img/db3.png" width="400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 8.Click on `Save` to finally create the database.
 
@@ -54,4 +82,4 @@ SQL is currently available in 3 parts of the system:
 + CDR (Server)
 + Userspace Database (Server)
 
-<img src="/developers/img/db4.png" width="500">
+<img src="/developers/img/db4.png" width="500" style="border: 2px solid #4472C4; border-radius: 8px;">

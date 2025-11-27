@@ -6,7 +6,7 @@ A **Group** component in form making is a UI element that allows you to logicall
 
 It provides a visual and organizational structure to the form, making it easier for users to understand the relationships between different fields and navigate through the form.
 
-<img src= "/apps/components/img/group.png">
+<img src= "/apps/components/img/group.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Use Case
 
@@ -58,7 +58,7 @@ Examples may include:
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/group2.png">
+<img src= "/apps/components/img/group2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Example
     1. `this.addClassName(fields, className)`
@@ -149,7 +149,7 @@ Form validation can be performed using a variety of methods, including:
 |**Custom Validation Rules**|(rule, value, callback) => {|
 ||**rule**: Verification rule, you can view the verification configuration information through this parameter; **rule.field** can get the field identifier of the current verification|
 
-<img src= "/apps/components/img/group_validation.png">
+<img src= "/apps/components/img/group_validation.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## First time User?
 

@@ -4,7 +4,7 @@
 
 The **Alert** component can be used to display success, warning, information or error-type boxes.
 
-<img src= "/apps/components/img/alert.png">
+<img src= "/apps/components/img/alert.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Use Case
 
@@ -51,7 +51,7 @@ You would need to make a custom alert element and include event listeners in it 
 3. Click on `Save`.
 4. On the main screen click on `Save` again.
 5. Click on `Preview` to see the code in action.
-<img src= "/apps/components/img/alert2.png">
+<img src= "/apps/components/img/alert2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Example
     1. `this.hide(fields)`

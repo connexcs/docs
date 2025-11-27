@@ -183,7 +183,7 @@ An LRN dip will correct any pricing discrepancies between the original and new c
 + **Duration Rounding**: The same rounding options, but for the call duration.
 + **Public Options**: Choose what you can do with the card information: view it via HTML (on a web page), download CSV (a spreadsheet), and whether to list the rate card in the customer portal (customers can view cards not currently on their account and select them for use). (**Note: API Querying is no longer available.**)
 + **CLI Restrict**: Enable Call Line Identification (CLI) restriction(s) using regular expressions to set valid number formats.
-See [**CLI**](/customer/cli/) for additional details.
+See [**CLI**](https://docs.connexcs.com/customer/cli/#cli-routing-rules) for additional details.
 + **PAID Restrict**: Enable Pre-Asserted-Identity (PAID) restriction(s) using regular expressions to set valid number formats.
 See [**Filter PAID by Number or Pattern**](https://docs.connexcs.com/customer/cli/#filter-p-asserted-identity-by-number-or-pattern) for additional details.
 + **SMS URL**: *not in use*

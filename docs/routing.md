@@ -53,8 +53,6 @@ graph LR
 
 **Egress** refers to outbound calls. **Egress Routing** section isn't available. The Customer Rate Card includes the Egress routing, which contains 1 or more Carriers, and, optionally, a routing strategy (such as Default LCR).
 
-UA -> Customer > Customer Rate Card > Carrier Rate Card -> Carrier -> PSTN -> Far-End
-
 ```mermaid
 graph LR
     A(UA) --> B[Customer]

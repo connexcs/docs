@@ -45,7 +45,7 @@ Ingress Routing is the process that allocates an incoming call (dialed by our cu
 
 View and configure existing routes on the Routing tab in the Customer card. To create a new route, click `+` in **Ingress Routing**.
 
-   ![alt text][ingress-routing]
+   <img src= "/customer/img/ingress-routing1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ### Basic
 
@@ -57,40 +57,81 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 
 + **Tech Prefix**: This lets you distinguish a route from an inbound party.
   When several customers share the same IP address, each customer needs an individual Tech Prefix so the switch can route calls correctly.
-  It enables service providers to differentiate between several rate cards.
+  It enables service providers to differentiate between several rate cards. You also have an option to generate a random number in one click.
 + **Dial String Prefix Set**: Helpful for commonly used sets of prefixes. Rather than entering a complete list of prefixes for the UK, for example, you can create a predefined Prefix Set (defined under **Setup :material-menu-right: Advanced :material-menu-right:** [**Prefix Set**](/setup/advanced/prefix-set/)) and then select it here for appropriate customers.
 + **Dial String**: Only allows a dialled number to pass through if it matches the defined dial string (or "dial pattern"). (If you customer enters nothing, it matches everything and attempts to send all calls).
 
 + **Enabled**: You can enable and [disable](https://docs.connexcs.com/customer/routing/#disabled-routes) the routes here.
 
-### Price Limits
+<img src= "/customer/img/rbasic.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-+ **Capped Rate** and **Provider Capped Rate**: Set the maximum cost of a call. Calls that exceed the set rate won't get connected.
-  **For example**, for customers with flat rate accounts, which allows to dial all UK numbers but premium numbers, you would set the Provider Capped Rate at 0.01, so any call that the provider might charge over that amount wouldn't get completed.
+### Advanced
 
-+ **Profit Assurance**: When `Enabled`, only calls that are profitable pass-through; any call that costs more than the retail rate aren't allowed to complete. This is particularly useful for A-Z routes or NPA-NXX [rate cards](https://docs.connexcs.com/rate-card-building/).
-  
-!!! Tip "When Profit Assurance Fails to Operate"
-    **A. Profit Assurance may appear to fail, often due to:**
++ **On Net Call Routing**: Enabling this flag determines if a call should be routed internally  between customers to DID's.
++ **Lock** (Allow): Ensures calls are only routed through specified carriers.
++ **Exclude** (Deny): Exclude access to one or more rate cards in the list of available providers.
 
-    1.**Incorrect Billing Configurations**:
-    
-    Billing increments (e.g., 6/6, 30/6, or 60/60) play a significant role in profitability. A mismatch between the billing increments of your carrier and customer rates can lead to unexpected losses.
-    
-    **For example**:
-        If you buy at 30/6 and sell at 6/6, you lose money on shorter-duration calls because of rounding discrepancies.
-    
-    2.**Profit Assurance Enabled but Losses Persist**:
-    
-    Even with Profit Assurance enabled, losses may occur due to:
-    
-    * Specific call durations where rounding favors the carrier.
-    
-    3.**Misunderstanding Call Connection Logic**:
-    
-    Profit Assurance does not retroactively check call profitability during ongoing calls. If the buy rate is temporarily higher than the sell rate due to duration or rounding, calls may still connect.
+!!! Info "Call Routing Process"
+    ```mermaid
+        graph LR
+        A[Customer A makes a call using the route with the ON NET CALLING flag] --> B{Syatem checks the dialed number and compares it against DIDs added to the account across all customers}
+        B -- Yes: If the dialed number matches any DID in the account--> C{Route call internally to the matching DID}
+        B -- No: If the dialed number doesnt match any DID in the account--> D{Route call externally via carrier as configured}
+    ```
 
-+ **Block Connect Cost**: Block any call that has a connection fee.
+<img src= "/customer/img/radvanced.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+### Security & Controls
+
++ **Fraud Profile**: Apply one of the Fraud Profiles configured under **Setup :material-menu-right: Advanced :material-menu-right: [Fraud Profile](https://docs.connexcs.com/setup/advanced/fraud/#setup-fraud-detection)**.
++ **Fraud Mode**: Specify how the profile will gets into application, this is dependent on the [**Fraud Mode Thresholds**](https://docs.connexcs.com/setup/advanced/fraud/#fraud-mode) configured in the Profile.
+
+    :material-menu-right: `Disabled`
+
+    :material-menu-right: `Low - Alert or Block Calls`
+
+    :material-menu-right: `High - Block Calls or Account`
+
++ **Redial Max Count**: This a smart limitation feature that allows the carrier to restrict the maximum number of times their customers can redial. After reaching this limit, customers must wait for a certain amount of time defined by the **Redial Max Period**. For example, you select 5 for this field, it means your customer can dial only 5 times.
++ **Redial Max Period**: It refers to the duration of time during which a customer is restricted from making further redial attempts to the same number after reaching the maximum redial count.
+
+!!! Example "Example: Redial Max Count and Redial Max Period"
+    For example, if you have set Redial Max Count (maximum redials in a given time period) as 4 and Redial Max Period as 24 hours for your customer, then your customer can **resume redialling after 24 hours after the last call "starts"/last call was placed**.
+    For instance, 4 Redials in 24 hours (Time starts from 9:00 AM)
+
+    |Redial number  |Time    |
+    |---------------|--------|
+    |Redial number 1|10:00 AM|
+    |Redial number 2|01:00 PM|
+    |Redial number 3|04:00 PM|
+    |Redial number 4|08:00 PM|
+
+    The last(4<sup>th</sup> call) redial call was placed at 08:00 PM, so the customer can start redialing at 08:00 PM the next day.
+
++ **DNC (Do Not Call) List**: The customer won't be able to able to dial the numbers in the specified DNC list. You can add the list of numbers in the [**Database**](https://docs.connexcs.com/developers/database/).
+
+    Apart from your own DNC list you can also choose [**United States Federal DNC**](https://www.donotcall.gov/) or [**United Kingdom TPS**](https://www.tpsonline.org.uk/). Choosing not to accept telemarketing calls is possible because of the National Do Not Call Registry.
+
+    **Explore the details inside ConnexCS: [USA Federal DNC](/customer/routing/#united-states-federal-do-not-call-dnc)| [UK TPS](/customer/routing/#united-kingdom-telephone-preference-service-tps)**
+
++ **Block Destination Type**: You can select and block the calls to various destinations (carriers) like Mobile, Fixed, Paging, etc.
+
++ **Spam Scout Scoring**: It blocks Spam calls based on the CLIs.
+  You can either Block All, Allow All, Block Most Spam, or Block Least Spam.
+
+!!! tip "Exclude Use Case"
+    If a customer reports an issue with a carrier or route, you can come here and set the carrier / route to Exclude and **`Save`**, then come back and remove it, and do a **`Delay and Save`** for a later date.
+
+ **IP Quality Score (IPQS)**: It blocks spam calls based on CLIs. It won't allow the CLIs of having a specific spam score that you've selected to pass through the system. For more information on IPQS, [click here](https://www.ipqualityscore.com/).
+
+!!! Warning
+    The **IPQS** feature requires a paid subscription. To enable this feature navigate to **Setup :material-menu-right: Settings :material-menu-right: Account** and enable this feature.
+
+    Check [Pricing](https://connexcs.com/pricing) here for a single lookup.
+
+ You can set a **Max Daily Quantity** for your customer's lookups. This restricts them to using only the specific number you allocate, ensuring controlled usage.
+
+!!! Note "We don't charge you again if you repeat your lookup within 24-hours of time-span."
 
 + **FTC DNC Report ANI Block (USA)**: When `Enabled`, ConnexCS will take a copy of FTC data (using the [FCC's **Do Not Call (DNC) Reported Calls Data API**](https://www.ftc.gov/developer/api/v0/endpoints/do-not-call-dnc-reported-calls-data-api)) and add it to the system. We can then block callers from known spammer CLI / ANI's.
 
@@ -102,9 +143,70 @@ View and configure existing routes on the Routing tab in the Customer card. To c
     + **A + B + C**: Allows calls with any attestation level (A, B, or C) to pass through.
 
 !!! Note
-    In all cases, calls without attestation will also be blocked.  
+    In all cases, calls without attestation will also be blocked.
 
-### Capacity Limits
++ **TCPA  Litigator DNC**: Enabling this flag blocks outbound calls to known TCPA Litigators.
+
+<img src= "/customer/img/rsecurity.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+#### United States Federal Do Not Call (DNC)
+
+1. **Overview**
+
+    ConnexCS integrates the [United States Federal Do Not Call (DNC) registry](https://www.donotcall.gov/) into the platform to provide real‑time cleansing of outbound calling lists and to help customers meet regulatory obligations.
+
+    ConnexCS makes the Federal DNC available to customers at **no additional charge** as a standard data source for DNC checking.
+
+2. **Key points**
+
+   - **What it is**: The **National Do Not Call Registry** (commonly called the **“Federal DNC**”) is a central list of telephone numbers registered by U.S. consumers who do not wish to receive most telemarketing calls.
+   - **Scale**: The registry contains on the order of hundreds of millions of numbers (**approximately 250 million** at the time of this note).
+
+##### How ConnexCS uses the Federal DNC
+
+1. **Real‑time cleansing**: Outbound diallers and routing rules can query ConnexCS DNC sources (including the Federal DNC) at call time to block or flag numbers that appear on the registry.
+2. **DNC lists in the Control Panel (Routing)**: Administrators can enable the `United States Federal DNC` option for a customer account so that the platform will apply the registry to outbound calls originating from that account.
+3. **FTC / reported ANI feeds**: ConnexCS can optionally ingest FTC reported‑calls / ANI block feeds to help block known spammer CLIs in addition to standard DNC matching.
+
+#### United Kingdom Telephone Preference Service (TPS)
+
+1. **Overview**
+
+The **Telephone Preference Service (TPS)** is the UK national opt-out register for consumers who do not wish to receive unsolicited marketing calls.
+
+ConnexCS supports TPS lookups as an optional commercial data cleansing source that can be enabled for customers.
+
+##### Compliance and Reporting Obligations
+
+1. **TPS** is overseen by the [DMA (Direct Marketing Association)](https://dma.org.uk/) and regulated by the [ICO (Information Commissioner's Office)](https://ico.org.uk/).
+2. Organizations that perform TPS cleansing on behalf of customers must follow TPS rules and any reporting requirements associated with commercial cleansing services.
+3. Using TPS does not remove other legal obligations under UK consumer protection and marketing laws.
+4. Customers remain responsible for campaign compliance and should seek legal guidance when in doubt.
+5. ConnexCS are obliged to submit monthly lookup totals to the DMA.
+
+##### How to use TPS
+
+To enable TPS for a customer account:
+
+1. Contact **Support Team** to add the TPS Package.
+2. Log in to the **Control Panel** as an administrator.
+3. Navigate to **Setup :material-menu-right: Config :material-menu-right: Package** then create a package. While creating the package, select **UK TPS Lookup** as the **ConnexCS Package type**.
+4. Navigate to **Management :material-menu-right: Customer:material-menu-right: [Customer Name] :material-menu-right: Package [TPS cleansing package]** to assign the package to the customer's account. 
+5. Go to **Routing :material-menu-right: Security & Controls :material-menu-right: DNC list**.
+6. Enable **United Kingdom TPS** in the DNC selections for the customer.
+7. ConnexCS are obliged submit monthly lookups to the DMA.
+
+!!! Note
+    1. The **TPS package is a prerequisite**. The TPS option will not appear in the account DNC selections until the package is assigned by an administrator.
+    2. Once enabled, the platform will apply TPS checks as part of the customer's outbound DNC matching logic.
+    3. TPS Package is **free-of-charge**.
+
+##### Reporting and Attribution (Reseller/White-Label Scenarios)
+If a customer resells TPS lookups (for example, by creating a package and selling lookup access to their customers), reporting obligations may still apply. 
+
+The reporting system typically records which account performed the lookups, and ConnexCS will report totals attributed to the account that performed the queries.
+
+### Capacity & Quality Control
 
 + **Channels**: Set the maximum number of channels/live calls allowed for this route.
 
@@ -127,89 +229,11 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 
 + **ASR Plus** assists capacity management by helping you define how to handle connections for known failed numbers. For information on the ASR Plus options, see [**ASR Plus Details**](https://docs.connexcs.com/customer/routing/#answer-seizure-ratio-plus-details) below.
 
-+ **Balance Disconnect** this feature checks the balance every 60 seconds. It will disconnect the call when the **balance plus the debit limit** is below $0.
+<img src= "/customer/img/rcapacity.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-!!! note
-    Balance Disconnect only takes into account the **completed calls**; it excludes any **active calls**.
+### Media & Session Control
 
-### ScriptForge
-
-+ **ScriptForge**: Set a custom JavaScript to run from within the ConnexCS platform in-line with the call. Some example operations could be checking a Do Not Call list or forcing a CLI.
-  It allows running JavaScript scripts inline with call processing, enabling real-time modifications and checks.
-
-  For more information about setup and operation, see the [**ScriptForge**](https://docs.connexcs.com/developers/scriptforge/) page.
-
-#### Key Features and Benefits
-
-+ **Custom Call Handling**: Modify CLI, check block lists, enforce specific caller IDs, or track call frequencies.
-+ **Integration with Data Storage**: Uses TOML for configuration and variable storage.
-+ **Carrier-Level Routing Controls**: Includes include (whitelist) and exclude (blacklist) carrier options.
-+ **Timeout Settings**: Defines the duration a script is allowed to run before termination.
-+ **Timeout**: Set how long the script may run.
-+ **Timeout Action**: This option lets you decide the action when the timeout occurs.
-+ **VARS [(TOML)](https://en.wikipedia.org/wiki/TOML)**: Select the variables you want pass into the ScriptForge script.
-
-### Locks
-
-+ **Lock** (Allow): Ensures calls are only routed through specified carriers.
-+ **Exclude** (Deny): Exclude access to one or more rate cards in the list of available providers.
-+ **Redial Max Count**: This a smart limitation feature that allows the carrier to restrict the maximum number of times their customers can redial. After reaching this limit, customers must wait for a certain amount of time defined by the **Redial Max Period**. For example, you select 5 for this field, it means your customer can dial only 5 times.
-+ **Redial Max Period**: It refers to the duration of time during which a customer is restricted from making further redial attempts to the same number after reaching the maximum redial count.
-+ **DNC (Do Not Call) List**: The customer won't be able to able to dial the numbers in the specified DNC list. You can add the list of numbers in the [**Database**](https://docs.connexcs.com/developers/database/).
-
-    Apart from your own DNC list you can also choose [**United States Federal DNC**](https://www.donotcall.gov/). Choosing not to accept telemarketing calls is possible because of the National Do Not Call Registry.
-
-+ **Block Destination Type**: You can select and block the calls to various destinations (carriers) like Mobile, Fixed, Paging, etc.
-
-+ **Spam Scout Scoring**: It blocks Spam calls based on the CLIs.
-  You can either Block All, Allow All, Block Most Spam, or Block Least Spam.
-
-!!! tip "Exclude Use Case"
-    If a customer reports an issue with a carrier or route, you can come here and set the carrier / route to Exclude and **`Save`**, then come back and remove it, and do a **`Delay and Save`** for a later date.
-
-!!! Example "Example: Redial Max Count and Redial Max Period"
-    For example, if you have set Redial Max Count (maximum redials in a given time period) as 4 and Redial Max Period as 24 hours for your customer, then your customer can **resume redialling after 24 hours after the last call "starts"/last call was placed**.
-    For instance, 4 Redials in 24 hours (Time starts from 9:00 AM)
-
-    |Redial number  |Time    |
-    |---------------|--------|
-    |Redial number 1|10:00 AM|
-    |Redial number 2|01:00 PM|
-    |Redial number 3|04:00 PM|
-    |Redial number 4|08:00 PM|
-
-    The last(4<sup>th</sup> call) redial call was placed at 08:00 PM, so the customer can start redialing at 08:00 PM the next day.
-
- **IP Quality Score (IPQS)**: It blocks spam calls based on CLIs. It won't allow the CLIs of having a specific spam score that you've selected to pass through the system. For more information on IPQS, [click here](https://www.ipqualityscore.com/).
-
-!!! Warning
-    The **IPQS** feature requires a paid subscription. To enable this feature navigate to **Setup :material-menu-right: Settings :material-menu-right: Account** and enable this feature.
-
-    Check[Pricing](https://connexcs.com/pricing) here for a single lookup.
-
- You can set a **Max Daily Quantity** for your customer's lookups. This restricts them to using only the specific number you allocate, ensuring controlled usage.
-
-!!! Note "We don't charge you again if you repeat your lookup within 24-hours of time-span."
-
-**Flags**:
-
-  + **TCPA  Litigator DNC**: Enabling this flag blocks outbound calls to known TCPA Litigators.
-
-  + **On Net Call Routing**: Enabling this flag determines if a call should be routed internally  between customers to DID's.
-
-<img src= "/customer/img/tcpa.png" style="border: 2px solid #4472C4; border-radius: 8px;">
-
-!!! Info "Call Routing Process"
-    ```mermaid
-        graph LR
-        A[Customer A makes a call using the route with the ON NET CALLING flag] --> B{Syatem checks the dialed number and compares it against DIDs added to the account across all customers}
-        B -- Yes: If the dialed number matches any DID in the account--> C{Route call internally to the matching DID}
-        B -- No: If the dialed number doesnt match any DID in the account--> D{Route call externally via carrier as configured}
-    ```
-
-### Media
-
-**Transcoding**: Transcoding manages different audio codecs to ensure compatibility between the calling and receiving systems.
++ **Transcoding**: Transcoding manages different audio codecs to ensure compatibility between the calling and receiving systems.
 
 Enter the number  of channels allowed for transcoding. This is a limited option. The best use case is for customers in low-bandwidth areas that want to use G.729.
 
@@ -230,7 +254,9 @@ Enter the number  of channels allowed for transcoding. This is a limited option.
 |**Enabled (Upstream Only)**| SIP Pings sent towards where the call is TO (terminated) |
 
 + **SIP Session Timer (SST)**: SST is Passive by Default, but **Enabled** is the recommended setting.
+  
   When enabled, SST ensures there is no ghost or long-duration calls get billed when one or both sides have hung up. A timer activates when the call starts and refreshes the call every X number of seconds by sending a RE-INVITE.
+  
   SST has surpassed SIP Ping Timeout as the best way to prevent long-duration calls. Note that any SST shorter than sixty (60) seconds gets rejected.
 
   Session Timers periodically revalidate call sessions to ensure continued connectivity.
@@ -292,7 +318,7 @@ Enter the number  of channels allowed for transcoding. This is a limited option.
 !!! info "RTP Proxy distinctions"
     When a call gets established between the customer and the provider, audio can be setup in one of two ways:
 |              |**With RTP Proxy**|**Without RTP Proxy**|
-|--------------|:------------------:|----------------------:|
+|--------------|:----------------:|--------------------:|
 |**Audio Path**|Indirect|Direct|
 |**Audio Quality**|Excellent|Unbeatable |
 |**Latency**|Low|Lowest|
@@ -323,7 +349,7 @@ Enter the number  of channels allowed for transcoding. This is a limited option.
     * **Logging**
     * **Management:material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: CDR**
     * **Management :material-menu-right: File :material-menu-right: Recording**
-  
+
 !!! Note "Additional Charge"
     An extra charge per recorded call gets added to existing fees or charges, so choose carefully how many calls to record. Check [Pricing](https://connexcs.com/pricing) here.
 
@@ -336,19 +362,25 @@ Enter the number  of channels allowed for transcoding. This is a limited option.
 !!! tip "The Call Recording setting is disabled"
     You need to enable the feature first on the account in **Setup :material-menu-right: Settings :material-menu-right: [Packages](https://docs.connexcs.com/setup/settings/account/#packages)** before it gets enabled here for individual customers.
 
++ **Transcribe:** Its a voice to text conversion feature. [Click here](https://docs.connexcs.com/transcription/#introduction) to know more about this service.
+
 + **Block DTMF:** This option allows you to either `pass` or `block` DTMF through your calls.
 
 !!! note "Make sure your carrier supports the DTMF feature."
 
-+ **Flags (Active RTCP Generation)**: Enabling this feature generates RTCP packets, while disabling it allows them to pass through undisturbed.
++ **Generate RTCP**: Enabling this feature generates RTCP packets, while disabling it allows them to pass through undisturbed.
 
-+ **RTP Codec**: This fields allows you to have more specific control over the Codecs you choose for your system. After the selection you can assign various **Permissions** to the Codecs you select.
++ + **RTP Codec**: This fields allows you to have more specific control over the Codecs you choose for your system. After the selection you can assign various **Permissions** to the Codecs you select.
 
     + **Types of Permissions include**:
         + **Except**: This permission allows you to block all the codecs apart from the ones in the Whitelist. Codecs that weren't included in the carrier's initial codec list won't be taken into consideration.
         +  **Offer**: Offer also blocks the codecs apart from the ones in the whitelist and provides flexibility to change the order of the codecs in the list as well. Thus, the first codec in the list is treated as the primary codec (at the output) even if it was the last codec in the list.
         +  **Consume**: Identical to mask but enables the transcoding engine even if no other transcoding related options are given.
-        +  **Transcode**: Allows the addition of codecs in the offered codec list even if the codecs weren't included in the original list of codecs. Here, transcoding engine will be engaged meaning  behind-the-scenes translation process is happening to ensure communication.<br> You can only add those codecs which are supported by your device for both encoding and decoding process. <br>One limitation of using this option is that it will strip-off all the unsupported codecs. Note that using this option doesn't necessarily always engage the transcoding engine. If all codecs given in the transcode list were present in the original list of offered codecs, then no transcoding will be done.<br> When you use this permission it enables you to mark/modify the Ptime.
+        +  **Transcode**: Transcoding manages different audio codecs to ensure compatibility between the calling and receiving systems.<br>Enter the number  of channels allowed for transcoding. This is a limited option. The best use case is for customers in low-bandwidth areas that want to use G.729.</br>
+        Allows the addition of codecs in the offered codec list even if the codecs weren't included in the original list of codecs. Here, transcoding engine will be engaged meaning  behind-the-scenes translation process is happening to ensure communication.<br> You can only add those codecs which are supported by your device for both encoding and decoding process. <br>One limitation of using this option is that it will strip-off all the unsupported codecs. Note that using this option doesn't necessarily always engage the transcoding engine. If all codecs given in the transcode list were present in the original list of offered codecs, then no transcoding will be done.<br> When you use this permission it enables you to mark/modify the Ptime.
+
+        !!! Danger "Be aware that if you don't have enough transcoding capacity, calls will fail."
+
         +  **Strip**: This permission allows you to remove the selected codecs or RTP Payload types from the SDP. Codecs removed using this option behaves as if they never existed in the SDP.
   
         |Strip|Transcode|Explanation|
@@ -371,31 +403,82 @@ Enter the number  of channels allowed for transcoding. This is a limited option.
 
     + **Ptime(ms)**: This value determines the length of time each box (RTP packet) can hold. A higher ptime means each packet carries a longer chunk of audio/video data (bigger box), while a lower ptime means shorter chunks (smaller boxes).
 
+<img src= "/customer/img/rmedia.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+### ScriptForge
+
++ **ScriptForge**: Set a custom JavaScript to run from within the ConnexCS platform in-line with the call. Some example operations could be checking a Do Not Call list or forcing a CLI.
+  It allows running JavaScript scripts inline with call processing, enabling real-time modifications and checks.
+
+  For more information about setup and operation, see the [**ScriptForge**](https://docs.connexcs.com/developers/scriptforge/) page.
+
++ **Timeout**: Set how long the script may run.
++ **Timeout Action**: This option lets you decide the action when the timeout occurs.
++ **VARS [(TOML)](https://en.wikipedia.org/wiki/TOML)**: Select the variables you want pass into the ScriptForge script.
+
+#### Key Features and Benefits
+
++ **Custom Call Handling**: Modify CLI, check block lists, enforce specific caller IDs, or track call frequencies.
++ **Integration with Data Storage**: Uses TOML for configuration and variable storage.
++ **Carrier-Level Routing Controls**: Includes include (whitelist) and exclude (blacklist) carrier options.
++ **Timeout Settings**: Defines the duration a script is allowed to run before termination.
+
+<img src= "/customer/img/rscript.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+### Price Management
+
++ **Capped Rate** and **Provider Capped Rate**: Set the maximum cost of a call. Calls that exceed the set rate won't get connected.
+  **For example**, for customers with flat rate accounts, which allows to dial all UK numbers but premium numbers, you would set the Provider Capped Rate at 0.01, so any call that the provider might charge over that amount wouldn't get completed.
+
++ **Profit Assurance**: When `Enabled`, only calls that are profitable pass-through; any call that costs more than the retail rate aren't allowed to complete. This is particularly useful for A-Z routes or NPA-NXX [rate cards](https://docs.connexcs.com/rate-card-building/).
+  
+!!! Tip "When Profit Assurance Fails to Operate"
+    **A. Profit Assurance may appear to fail, often due to:**
+
+    1.**Incorrect Billing Configurations**:
+    
+    Billing increments (e.g., 6/6, 30/6, or 60/60) play a significant role in profitability. A mismatch between the billing increments of your carrier and customer rates can lead to unexpected losses.
+    
+    **For example**:
+        If you buy at 30/6 and sell at 6/6, you lose money on shorter-duration calls because of rounding discrepancies.
+    
+    2.**Profit Assurance Enabled but Losses Persist**:
+    
+    Even with Profit Assurance enabled, losses may occur due to:
+    
+    * Specific call durations where rounding favors the carrier.
+    
+    3.**Misunderstanding Call Connection Logic**:
+    
+    Profit Assurance does not retroactively check call profitability during ongoing calls. If the buy rate is temporarily higher than the sell rate due to duration or rounding, calls may still connect.
+
++ **Block Connect Cost**: Block any call that has a connection fee.  
+
++ **Balance Disconnect** this feature checks the balance every 60 seconds. It will disconnect the call when the **balance plus the debit limit** is below $0.
+
+!!! note
+    Balance Disconnect only takes into account the **completed calls**; it excludes any **active calls**.
+
+<img src= "/customer/img/rprice.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
 ### Strategy
 
 For advanced routing, click :material-plus: to select a [**Prefix Set**](https://docs.connexcs.com/setup/advanced/prefix-set/) and assign a [**Routing Strategy**](https://docs.connexcs.com/routing-strategy/). This gives you greater control over how routes get selected for a given customer.
+
+<img src= "/customer/img/rstrategy.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ### Notes
 
 + **Public Notes**: Notes entered here get displayed on the Customer Portal when logged in.
 + **Private Notes**: These will get displayed to the customer in the Control Panel.
 
-### Fraud
-
-+ **Fraud Profile**: Apply one of the Fraud Profiles configured under **Setup :material-menu-right: Advanced :material-menu-right: [Fraud Profile](https://docs.connexcs.com/setup/advanced/fraud/#setup-fraud-detection)**.
-+ **Fraud Mode**: Specify how the profile will gets into application, this is dependent on the [**Fraud Mode Thresholds**](https://docs.connexcs.com/setup/advanced/fraud/#fraud-mode) configured in the Profile.
-
-    :material-menu-right: `Disabled`
-
-    :material-menu-right: `Low - Alert or Block Calls`
-
-    :material-menu-right: `High - Block Calls or Account`
+<img src= "/customer/img/rnotes.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Disabled Routes
 
 Routes highlighted in red on the customer Routing page gets disabled. Open the route, click **Enabled**, and then **`Save`** to enable them
 
-&emsp; ![alt text][routing-disabled]
+<img src= "/customer/img/routing-disabled1.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Tech Prefix
 
@@ -482,9 +565,8 @@ It enhances call routing by tracking the validity of dialed numbers over a 30-da
     + Marginal impact on your NER due to false positive matches. This is usually kept within tolerances of < 0.1%.
     + Doesn't offer improvements for all destinations.
 
-[ingress-routing]: /customer/img/ingress-routing.png "Ingress Routing"
-[routing-disabled]: /customer/img/routing-disabled.png "Disabled Routing"
-[techprefix-usecase]: /customer/img/techprefix-usecase.png "Tech Prefix Use Case"
+
+[techprefix-usecase]: /customer/img/techprefix-usecase.png "Tech Prefix Use Case" style="border: 2px solid #4472C4; border-radius: 8px;"
 
 ## Strategic Routing
 
@@ -503,7 +585,7 @@ Strategic Routing feature allows creating a Routing Strategy that, when applied,
    + Select a **Rate Card** from the drop-down menu.
    + Click `Save`.
 
-<img src= "/customer/img/rs.png" width="799">
+<img src= "/customer/img/rs.png" width="800" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 2.**Apply the Strategy to a Customer**:
 
@@ -512,7 +594,7 @@ Strategic Routing feature allows creating a Routing Strategy that, when applied,
 + Select the newly created **Routing Strategy** for the customer.
 + Click `Save`.
 
-<img src= "/customer/img/rs1.png">
+<img src= "/customer/img/rs1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Info "Routing Behaviour"
     Once applied, calls from the customer will now route based on the provider rate cards specified in the strategy.
