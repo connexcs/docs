@@ -4,7 +4,7 @@
 
 **Document Metadata**
 <br>**Category**: Platform Administration / Global Configuration</br>
-**Audience**: Administrators, Engineers, Operations Team<
+**Audience**: Administrators, Engineers, Operations Team
 <br>**Difficulty**: Intermediate to Advanced</br>
 **Time Required**: Approximately 1–1.5 hours
 <br>**Prerequisites**: Active ConnexCS account with admin access; familiarity with system-wide configuration, global settings, and multi-domain management.</br>

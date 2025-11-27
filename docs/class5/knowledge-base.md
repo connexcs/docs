@@ -9,7 +9,7 @@
 **Time Required**: Approximately 30–45 minutes
 <br>**Prerequisites**: Active ConnexCS account with Class 5 module access; familiarity with conversational AI workflows and document indexing.</br>
 **Related Topics**: [AI Agent](https://docs.connexcs.com/class5/ai-agent/), [Apps (Call Flows)](https://docs.connexcs.com/class5/apps/#call-flow_1)
-<br>**Next Steps**: Navigate to `Class 5 → Knowledge Base`, click “+” to add a new indexable document (URL), enter Name and Optional Customer scope, wait for indexing to complete in the Knowledge Base Status column, then reference the base within an AI Agent or call-flow for real-time retrieval of support content.</br>
+<br>**Next Steps**: Add a new document in `Class 5 → Knowledge Base`, next step is indexing, and then link that knowledge base to an AI Agent or call-flow for real-time retrieval..</br>
 
 ---
 

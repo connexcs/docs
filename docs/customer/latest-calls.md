@@ -8,7 +8,7 @@
 **Time Required**: Approximately 15–30 minutes
 <br>**Prerequisites**: Active ConnexCS account with Customer Portal access and permission to view call logs.</br>
 **Related Topics**: [Customer → CDR](https://docs.connexcs.com/customer/cdr/), [Customer → Dialogs](https://docs.connexcs.com/customer/dialogs/)
-<br>**Next Steps**: Use this section to monitor incoming and outgoing calls, then export or drill into records using the CDR section.</br>
+<br>**Next Steps**: After checking real-time call activity, drill into individual call details, export the list if needed, or continue to CDR and Dialogs for deeper analysis.</br>
 
 ---
 

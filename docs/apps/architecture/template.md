@@ -2,10 +2,13 @@
 
 ---
 
-**Document Metadata** <br>**Category**: Applications Platform / Scripting & Custom Logic (ScriptForge)</br>
-**Audience**: Developers, Engineers, Integrators <br>**Difficulty**: Advanced </br>
-**Time Required**: Approximately 30–40 minutes <br>**Prerequisites**: Access to the ScriptForge IDE within the ConnexCS Apps Platform, familiarity with JavaScript (ES6) and basic SIP/telecom call-flows </br>
-**Related Topics**: [Apps Architecture Overview](https://docs.connexcs.com/apps/architecture/architecture/), [Apps – Use Cases](https://docs.connexcs.com/apps/use-case/) <br>**Next Steps**: Create ScriptForge script → write logic with main(data, ctx) and modules → assign to routing/DID/app → test and monitor.</br>
+**Document Metadata** <br>**Category**: Applications Architecture / Template System</br>
+**Audience**: Developers, Engineers, App Builders</br>
+**Difficulty**: Intermediate</br>
+**Time Required**: Approximately 20–40 minutes</br>
+**Prerequisites**: Active ConnexCS account with access to the Applications module; familiarity with the Apps platform, component structure, and JSON-based configuration</br>
+**Related Topics**: [Applications Architecture – App Structure](https://docs.connexcs.com/apps/architecture/app/), [ScriptForge](https://docs.connexcs.com/apps/architecture/scriptforge/), [Page Builder/Components](https://docs.connexcs.com/apps/page-builder/)
+**Next Steps**: Review how templates define reusable UI and logic patterns, then create or modify a template to standardize layouts or behaviors across your applications.</br>
 
 ---
 

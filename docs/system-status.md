@@ -2,7 +2,7 @@
 
 ---
 
-**Document Metadata** <br>**Category**: System Operations / System Status & Health</br> **Audience**: Administrators, Engineers, Support Team <br>**Difficulty**: Beginner to Intermediate</br> **Time Required**: Approximately 10–15 minutes <br>**Prerequisites**: Active ConnexCS account with access to the status portal or system-health dashboard </br>**Related Topics**: [Monitoring Overview](https://docs.connexcs.com/guides/monitoring/), [Alerts & Thresholds](https://docs.connexcs.com/customer/alerts/#global-alerts)<br> **Next Steps**: After reviewing the system-status page, set up a bookmark or monitor for the page, subscribe to status updates or RSS feed (if available), and incorporate system-health checks into your incident-response workflow.</br>
+**Document Metadata** <br>**Category**: System Operations / System Status & Health</br> **Audience**: Administrators, Engineers, Support Team <br>**Difficulty**: Beginner to Intermediate</br> **Time Required**: Approximately 10–15 minutes <br>**Prerequisites**: Active ConnexCS account with access to the status portal or system-health dashboard </br>**Related Topics**: [Monitoring Overview](https://docs.connexcs.com/guides/monitoring/), [Alerts & Thresholds](https://docs.connexcs.com/customer/alerts/#global-alerts)<br> **Next Steps**: Keep checking for any new developments.</br>
 
 ---
 

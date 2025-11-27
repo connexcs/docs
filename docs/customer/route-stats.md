@@ -7,7 +7,7 @@
 <br>**Difficulty**: Intermediate</br>
 **Time Required**: Approximately 30–60 minutes
 <br>**Prerequisites**: An active ConnexCS account with access to the Customer module and routing configuration for the relevant customer.</br>
-**Related Topics**: [Customer – Stats](https://docs.connexcs.com/customer/stats/), [Developer Analytics](https://docs.connexcs.com/developers/analytics/)
+**Related Topics**: [Customer – Stats](https://docs.connexcs.com/customer/stats/)
 <br>**Next Steps**: Review per-route performance graphs and breach alerts under `Route Stats` section.</br>
 
 ---

@@ -6,7 +6,7 @@
 **Audience**: Administrators, Engineers, Billing & Finance Teams
 <br>**Difficulty**: Intermediate</br>
 **Time Required**: Approximately 45–90 minutes
-<br>**Prerequisites**: Active ConnexCS account with access to the “Customer → Package” module; understanding of recurring billing, product provisioning in the system.</br>
+<br>**Prerequisites**: Active ConnexCS account with access to the `Customer → Package` module; understanding of recurring billing, product provisioning in the system.</br>
 **Related Topics**: [Setup → Packages (global config)](https://docs.connexcs.com/setup/config/packages/),  [Customer → Payment](https://docs.connexcs.com/customer/payment/)
 <br>**Next Steps**: Assign a package to a customer or DID, and configure billing frequency, free-minutes bundles, minimum spend rules. See the [Assign Package](https://docs.connexcs.com/customer/package/#assign-packages) section in the Packages guide.</br>
 

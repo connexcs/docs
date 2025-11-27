@@ -8,7 +8,7 @@
 <br>**Difficulty**: Intermediate</br>
 **Time Required**: Approximately 30–45 minutes
 <br>**Prerequisites**: Active ConnexCS account with Carrier-module access; familiarity with carrier billing workflows and payment tracking.</br>
-**Related Topics**: [Carrier Main Configuration](https://docs.connexcs.com/carrier/carrier-main/), [Carrier Stats & Reporting](https://docs.connexcs.com/carrier/carrier-stats/)
+**Related Topics**: [Customer Payment](https://docs.connexcs.com/customer/payment/)
 <br>**Next Steps**: Review existing payments to the carrier, record new payments via the Payment tab, update payment statuses (Completed, Pending, Cancelled), and reconcile with your financial records.</br>
 
 ---

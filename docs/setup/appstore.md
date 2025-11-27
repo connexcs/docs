@@ -9,7 +9,7 @@
 **Time Required**: Approximately 30–60 minutes
 <br>**Prerequisites**: Active ConnexCS account with Setup privileges; basic understanding of the Apps platform and deployment process.</br>
 **Related Topics**: [Apps Platform – Applications](https://docs.connexcs.com/apps/architecture/app/)
-<br>**Next Steps**: Navigate to `Setup → App Store`, search for the desired application (e.g., Contact Center or WebPhone) and click **Install**. Then configure the app (`App Name, version`), undertake post-install setup (such as connecting APIs, selecting servers, creating domain entries) and test the application in your environment.</br>
+<br>**Next Steps**: Install the required app from Setup → App Store, complete its basic configuration, and then verify it works correctly in your environment.</br>
 
 ---
 
