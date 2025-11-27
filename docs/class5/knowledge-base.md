@@ -2,14 +2,15 @@
 
 <details>
   <summary><strong>Document Metadata</strong></summary>
+  <br>
 
-<strong>Category</strong>: Class 5 Services / Knowledge Base Configuration  
-<strong>Audience</strong>: Administrators, Engineers, Support Team  
-<strong>Difficulty</strong>: Intermediate  
-<strong>Time Required</strong>: Approximately 30–45 minutes  
-<strong>Prerequisites</strong>: Active ConnexCS account with Class 5 module access; familiarity with conversational AI workflows and document indexing.  
-<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/class5/ai-agent/">AI Agent</a>, <a href="https://docs.connexcs.com/class5/apps/#call-flow_1">Apps (Call Flows)</a>  
-<strong>Next Steps</strong>: Add a new document in <code>Class 5 → Knowledge Base</code>, wait for indexing, and then link it to an AI Agent or call-flow for real-time retrieval.
+<strong>Category</strong>: Class 5 Services / Knowledge Base Configuration<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 30–45 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with Class 5 module access; familiarity with conversational AI workflows and document indexing.<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/class5/ai-agent/">AI Agent</a>, <a href="https://docs.connexcs.com/class5/apps/#call-flow_1">Apps (Call Flows)</a><br>
+<strong>Next Steps</strong>: Add a new document in <code>Class 5 → Knowledge Base</code>, wait for indexing, and then link it to an AI Agent or call-flow for real-time retrieval.<br>
 
 </details>
 
