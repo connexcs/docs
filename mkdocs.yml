@@ -291,7 +291,9 @@ nav:
         - Databases: apps/architecture/database.md
         - Domain: apps/architecture/domain.md
         - Key Value Store: apps/architecture/key-value.md
-        - Page Builder: apps/page-builder.md
+        - Page Builder:
+            - Page Builder: apps/page-builder.md
+            - Document Content Model: apps/architecture/dcm.md
         - ScriptForge: 
             Introduction: apps/architecture/scriptforge.md
             ScriptForge Migration Guide: apps/architecture/scriptforge-migration.md
