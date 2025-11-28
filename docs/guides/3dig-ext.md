@@ -1,21 +1,20 @@
 # 3-Digit Extension Dialling
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata** <br>**Category**: Guides → 3-Digit Extension Dialling</br>
-**Audience**: Administrators, Engineers, Telephone Systems/IT Support Teams <br>**Difficulty**: Beginner to Intermediate</br>
-**Time Required**: 5–10 minutes <br>**Prerequisites**:
+<strong>Category</strong>: Guides → 3-Digit Extension Dialling<br>
+<strong>Audience</strong>: Administrators, Engineers, Telephone Systems/IT Support Teams<br>
+<strong>Difficulty</strong>: Beginner to Intermediate<br>
+<strong>Time Required</strong>: 5–10 minutes<br>
+<strong>Prerequisites</strong>:<br>
+<ul>
+<li>Access to the account or customer portal for your PBX/Switch.</li>
+<li>Ability to define internal number blocks and alias assignments.</li>
+</ul>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer/main/#steps-to-implement-internal-number-block">Internal Number Block configuration</a> (for defining extension ranges), <a href="https://docs.connexcs.com/customer/alias/">Alias creation</a> (for mapping extensions to user lines)<br>
+<strong>Next Steps</strong>: Configure the number block → Create aliases for each extension → Document internal extensions in the phonebook for reference.<br>
 
-* Access to the account or customer portal for your PBX/Switch.
-* Ability to define internal number blocks and alias assignments.
-
-**Related Topics**: [Internal Number Block configuration](https://docs.connexcs.com/customer/main/#steps-to-implement-internal-number-block) (for defining extension ranges)
-, [Alias creation](https://docs.connexcs.com/customer/alias/) (for mapping extensions to user lines)<br>**Next Steps**: Configure the number block → Create aliases for each extension → Document internal extensions in the phonebook for reference.</br>
-
----
-
-If you like, I can pull out **step-by-step instructions**, example screenshots, and a quick checklist from the guide.
-
+</details>
 
 You can set up 3-digit dialling in several ways. This is a basic setup for quick deployment.
 

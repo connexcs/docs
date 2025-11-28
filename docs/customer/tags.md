@@ -1,16 +1,16 @@
 # Tags
 
----
-**Document Metadata**
-<br>**Category**: Customer Account Management / Tags & Template-Rules</br>
-**Audience**: Administrators, Engineers, Support Team
-<br>**Difficulty**: Intermediate</br>
-**Time Required**: Approximately 30–45 minutes
-<br>**Prerequisites**: Active ConnexCS account with access to the Customer module and ability to edit Tags configuration</br>
-**Related Topics**: [Alerts for Customers](https://docs.connexcs.com/customer/alerts/), [Routing Strategy Templates](https://docs.connexcs.com/global-routing/)
-<br>**Next Steps**: Create your tag list (e.g., “High-Capacity”, “Premium”, “Trial”), apply to customers in `Customer → Config → Tags`, then assign global alerts or routing templates that reference those tags</br>
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
----
+<strong>Category</strong>: Customer Account Management / Tags & Template-Rules<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 30–45 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with access to the Customer module and ability to edit Tags configuration<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer/alerts/">Alerts for Customers</a>, <a href="https://docs.connexcs.com/global-routing/">Routing Strategy Templates</a><br>
+<strong>Next Steps</strong>: Create your tag list (e.g., “High-Capacity”, “Premium”, “Trial”), apply to customers via <code>Customer → Config → Tags</code>, then assign global alerts or routing templates that reference those tags<br>
+
+</details>
 
 **Management :material-menu-right: Customer :material-menu-right: Tags**
 

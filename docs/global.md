@@ -1,17 +1,16 @@
 # Global
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata**
-<br>**Category**: Platform Administration / Global Configuration</br>
-**Audience**: Administrators, Engineers, Operations Team
-<br>**Difficulty**: Intermediate to Advanced</br>
-**Time Required**: Approximately 1–1.5 hours
-<br>**Prerequisites**: Active ConnexCS account with admin access; familiarity with system-wide configuration, global settings, and multi-domain management.</br>
-**Related Topics**: [Getting Started](https://docs.connexcs.com/getting-started/), [Servers & Infrastructure](https://docs.connexcs.com/setup/settings/servers/)
-<br>**Next Steps**: Review and modify global settings (language, time-zone, domains), manage global aliases and global transcription settings, implement naming and template conventions, then audit global logs and permissions.</br>
+<strong>Category</strong>: Platform Administration / Global Configuration<br>
+<strong>Audience</strong>: Administrators, Engineers, Operations Team<br>
+<strong>Difficulty</strong>: Intermediate to Advanced<br>
+<strong>Time Required</strong>: Approximately 1–1.5 hours<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with admin access; familiarity with system-wide configuration, global settings, and multi-domain management.<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/getting-started/">Getting Started</a>, <a href="https://docs.connexcs.com/setup/settings/servers/">Servers & Infrastructure</a><br>
+<strong>Next Steps</strong>: Review and modify global settings (language, time-zone, domains), manage global aliases and global transcription settings, implement naming and template conventions, then audit global logs and permissions.<br>
 
----
+</details>
 
 ## Overview
 

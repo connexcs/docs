@@ -1,12 +1,16 @@
 # Link
 
----
-**Document Metadata** <br>**Category**: Applications & Components</br>
-**Audience**: Administrators, Engineers, App Developers</br>
-**Difficulty**: Beginner to Intermediate</br>
-**Time Required**: Approximately 15–30 minutes <br>**Prerequisites**: Active ConnexCS account, access to the Applications module, basic familiarity with UI component configuration</br>
-**Related Topics**: [Input Component](https://docs.connexcs.com/apps/components/input/), [Inline Component](https://docs.connexcs.com/apps/components/inline/), [Grid Component](https://docs.connexcs.com/apps/components/grid/), [Dialog Component](https://docs.connexcs.com/apps/components/dialog/)</br>
-**Next Steps**: Create a UI prototype using the Link component; test navigation and linking between app screens/pages</br>
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Applications & Components<br>
+<strong>Audience</strong>: Administrators, Engineers, App Developers<br>
+<strong>Difficulty</strong>: Beginner to Intermediate<br>
+<strong>Time Required</strong>: Approximately 15–30 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account, access to the Applications module, basic familiarity with UI component configuration<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/components/input/">Input Component</a>, <a href="https://docs.connexcs.com/apps/components/inline/">Inline Component</a>, <a href="https://docs.connexcs.com/apps/components/grid/">Grid Component</a>, <a href="https://docs.connexcs.com/apps/components/dialog/">Dialog Component</a><br>
+<strong>Next Steps</strong>: Create a UI prototype using the Link component; test navigation and linking between app screens/pages<br>
+
+</details>
 
 ## Description
 

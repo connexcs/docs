@@ -1,13 +1,16 @@
 # Statement
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata** <br>**Category**: Setup & Configuration → Information → Statements</br>
-**Audience**: Administrators, Engineers, Finance Team <br>**Difficulty**: Beginner to Intermediate</br>
-**Time Required**: 5–10 minutes <br>**Prerequisites**: Access to the Setup → Information section of the ConnexCS control panel, Basic understanding of billing and cost-reporting</br>
-**Related Topics**: [Change Log](https://docs.connexcs.com/setup/information/change-log/), [Feature Requests](https://docs.connexcs.com/setup/information/feature-request/), [Payment Log](https://docs.connexcs.com/setup/information/payment-log/) <br>**Next Steps**: Download the statement grid, export for analysis, follow up with detailed cost-breakdown queries</br>
+<strong>Category</strong>: Setup & Configuration → Information → Statements<br>
+<strong>Audience</strong>: Administrators, Engineers, Finance Team<br>
+<strong>Difficulty</strong>: Beginner to Intermediate<br>
+<strong>Time Required</strong>: 5–10 minutes<br>
+<strong>Prerequisites</strong>: Access to the Setup → Information section of the ConnexCS control panel, basic understanding of billing and cost-reporting<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/setup/information/change-log/">Change Log</a>, <a href="https://docs.connexcs.com/setup/information/feature-request/">Feature Requests</a>, <a href="https://docs.connexcs.com/setup/information/payment-log/">Payment Log</a><br>
+<strong>Next Steps</strong>: Download the statement grid, export for analysis, follow up with detailed cost-breakdown queries<br>
 
----
+</details>
 
 **Setup :material-menu-right: Information :material-menu-right: Statement**
 

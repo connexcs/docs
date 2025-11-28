@@ -1,14 +1,16 @@
 # Reseller Account
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata** <br>**Category**: Setup & Configuration → Advanced Settings → Reseller</br>
-**Audience**: Administrators, Engineers, Support Team <br>**Difficulty**: Intermediate</br>
-**Time Required**: 10–15 minutes <br>**Prerequisites**: ConnexCS account with access to the Setup → Advanced section <br>**Related Topics**: [Billing & Plans](https://docs.connexcs.com/billing/)</br>
-**Next Steps**: Partner Onboarding
+<strong>Category</strong>: Setup & Configuration → Advanced Settings → Reseller<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: 10–15 minutes<br>
+<strong>Prerequisites</strong>: ConnexCS account with access to the Setup → Advanced section<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/billing/">Billing & Plans</a><br>
+<strong>Next Steps</strong>: Partner Onboarding<br>
 
----
-
+</details>
 
 **Setup :material-menu-right: Advanced :material-menu-right: Reseller Account**
 

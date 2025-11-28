@@ -1,17 +1,16 @@
 # Domain Name System
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata**
-<br>**Category**: Setup / Settings / DNS</br>
-**Audience**: Administrators, Network Engineers, Operations Team
-<br>**Difficulty**: Intermediate</br>
-**Time Required**: Approximately 30–45 minutes
-<br>**Prerequisites**: Active ConnexCS account with Setup-Settings access; basic understanding of DNS records (A, SRV, CNAME), SIP signalling domains, and high-availability deployment concepts.</br>
-**Related Topics**: [Servers – Deployment & Configuration](https://docs.connexcs.com/setup/settings/servers/), [Scaling & Load Balancing – DNS Strategy](https://docs.connexcs.com/scaling-load-balancing/)
-<br>**Next Steps**: Navigate to `Setup → Settings → DNS`, enter your company domain (e.g., `sip.mycompany.com`), configure DNS records using the provided `*.sip.direct` service (A, SRV, CNAME), enable AnyEdge mirroring if applicable, assign low TTL for rapid failover, and test resolution across your SIP signalling endpoints.</br>
+<strong>Category</strong>: Setup / Settings / DNS<br>
+<strong>Audience</strong>: Administrators, Network Engineers, Operations Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 30–45 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with Setup-Settings access; basic understanding of DNS records (A, SRV, CNAME), SIP signalling domains, and high-availability deployment concepts.<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/setup/settings/servers/">Servers – Deployment & Configuration</a>, <a href="https://docs.connexcs.com/scaling-load-balancing/">Scaling & Load Balancing – DNS Strategy</a><br>
+<strong>Next Steps</strong>: Navigate to <code>Setup → Settings → DNS</code>, enter your company domain (e.g., <code>sip.mycompany.com</code>), configure DNS records using the provided <code>*.sip.direct</code> service (A, SRV, CNAME), enable AnyEdge mirroring if applicable, assign low TTL for rapid failover, and test resolution across your SIP signalling endpoints.<br>
 
----
+</details>
 
 **Setup :material-menu-right: Settings :material-menu-right: DNS**
 

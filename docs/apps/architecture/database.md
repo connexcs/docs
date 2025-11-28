@@ -1,15 +1,16 @@
 # Database
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata** <br>**Category**: Applications Platform / UI Components (Database Module)</br> **Audience**: Engineers, Developers, Data Engineers
-<br>**Difficulty**: Intermediate to Advanced</br>
-**Time Required**: Approximately 30–35 minutes
-<br>**Prerequisites**: Access to the ConnexCS Apps Platform (IDE), permission to create and manage databases and dataset schema, familiarity with basic data modelling concepts</br>
-**Related Topics**: [Apps Architecture Overview](https://docs.connexcs.com/apps/architecture/architecture/) — covers high-level platform structure.
-<br>**Next Steps**: Create Database in IDE → choose type (Key-Value/Lead-Set) → define schema → upload/verify data → integrate in app.</br>  
+<strong>Category</strong>: Applications Platform / UI Components (Database Module)<br>
+<strong>Audience</strong>: Engineers, Developers, Data Engineers<br>
+<strong>Difficulty</strong>: Intermediate to Advanced<br>
+<strong>Time Required</strong>: Approximately 30–35 minutes<br>
+<strong>Prerequisites</strong>: Access to the ConnexCS Apps Platform (IDE), permission to create and manage databases and dataset schema, familiarity with basic data modelling concepts<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/architecture/architecture/">Apps Architecture Overview</a> — covers high-level platform structure<br>
+<strong>Next Steps</strong>: Create database in IDE → choose type (Key-Value/Lead-Set) → define schema → upload/verify data → integrate in app<br>
 
----
+</details>
 
 ## Introduction
 

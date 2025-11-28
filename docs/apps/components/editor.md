@@ -1,16 +1,16 @@
 # Editor
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata** <br>**Category**: Applications Platform / UI Components — Editor Component </br>
-**Audience**: Developers, Engineers, UI/UX Designers, Content Managers
-<br>**Difficulty**: Intermediate</br>
-**Time Required**: Approximately 15–25 minutes
-<br>**Prerequisites**: Access to ConnexCS Apps IDE → Page Builder; familiarity with web-content editing, form layouts, basic front-end logic (optional for interactivity)</br>
-**Related Topics**: [Page Builder – Overview & Workflow](https://docs.connexcs.com/apps/page-builder/), [ScriptForge – custom logic & event handling](https://docs.connexcs.com/apps/architecture/scriptforge/), UI Components (e.g. Text Area, Form Inputs)
-<br>**Next Steps**: Add Editor → configure attributes → use methods for dynamic content → combine with other components → test functionality and validation.</br>
+<strong>Category</strong>: Applications Platform / UI Components — Editor Component<br>
+<strong>Audience</strong>: Developers, Engineers, UI/UX Designers, Content Managers<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 15–25 minutes<br>
+<strong>Prerequisites</strong>: Access to ConnexCS Apps IDE → Page Builder; familiarity with web-content editing, form layouts, basic front-end logic (optional for interactivity)<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/page-builder/">Page Builder – Overview & Workflow</a>, <a href="https://docs.connexcs.com/apps/architecture/scriptforge/">ScriptForge – custom logic & event handling</a>, UI Components (e.g., Text Area, Form Inputs)<br>
+<strong>Next Steps</strong>: Add Editor → configure attributes → use methods for dynamic content → combine with other components → test functionality and validation<br>
 
----
+</details>
 
 ## Description
 

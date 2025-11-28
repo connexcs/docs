@@ -1,10 +1,16 @@
 # Conference
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata** <br>**Category**: Customer Portal / Conference (PBX Feature) </br> **Audience**: Administrators, Telecom Engineers, Support & Service Teams <br>**Difficulty**: Intermediate </br> **Time Required**: Approximately 20–30 minutes <br>**Prerequisites**: Active ConnexCS Customer Portal account with PBX (Class 5) rights to create or edit conference rooms </br> **Related Topics**: [IVR (Interactive Voice Response)](https://docs.connexcs.com/customer-portal/cp-ivr/), [Groups (Hunt-Groups & Queues)](https://docs.connexcs.com/customer-portal/cp-group/) <br>**Next Steps**: Create a new conference room with required dial-in extension and PINs, test joining both internal and external callers.</br>
+<strong>Category</strong>: Customer Portal / Conference (PBX Feature)<br>
+<strong>Audience</strong>: Administrators, Telecom Engineers, Support & Service Teams<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 20–30 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS Customer Portal account with PBX (Class 5) rights to create or edit conference rooms<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer-portal/cp-ivr/">IVR (Interactive Voice Response)</a>, <a href="https://docs.connexcs.com/customer-portal/cp-group/">Groups (Hunt-Groups & Queues)</a><br>
+<strong>Next Steps</strong>: Create a new conference room with the required dial-in extension and PINs, then test joining from both internal and external callers<br>
 
----
+</details>
 
 Use the **Conference** feature (also known as a Conference Call or Bridge) to allow several callers to communicate with each other over a voice call. Once created, callers join the call, and the moderator presides.
 

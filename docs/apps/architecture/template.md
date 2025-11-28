@@ -1,16 +1,16 @@
 # Template
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata** <br>**Category**: Applications Architecture / Template System</br>
-**Audience**: Developers, Engineers, App Builders</br>
-**Difficulty**: Intermediate</br>
-**Time Required**: Approximately 20–40 minutes</br>
-**Prerequisites**: Active ConnexCS account with access to the Applications module; familiarity with the Apps platform, component structure, and JSON-based configuration</br>
-**Related Topics**: [Applications Architecture – App Structure](https://docs.connexcs.com/apps/architecture/app/), [ScriptForge](https://docs.connexcs.com/apps/architecture/scriptforge/), [Page Builder/Components](https://docs.connexcs.com/apps/page-builder/)
-**Next Steps**: Review how templates define reusable UI and logic patterns, then create or modify a template to standardize layouts or behaviors across your applications.</br>
+<strong>Category</strong>: Applications Architecture / Template System<br>
+<strong>Audience</strong>: Developers, Engineers, App Builders<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 20–40 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with access to the Applications module; familiarity with the Apps platform, component structure, and JSON-based configuration<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/architecture/app/">Applications Architecture – App Structure</a>, <a href="https://docs.connexcs.com/apps/architecture/scriptforge/">ScriptForge</a>, <a href="https://docs.connexcs.com/apps/page-builder/">Page Builder / Components</a><br>
+<strong>Next Steps</strong>: Review how templates define reusable UI and logic patterns, then create or modify a template to standardize layouts or behaviors across your applications<br>
 
----
+</details>
 
 ## Introduction
 

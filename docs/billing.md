@@ -1,21 +1,20 @@
 # Billing
 
----
-**Document Metadata**
-<br>**Category**: Setup → Billing</br>
-**Audience**: Administrators, Engineers, Finance Team
-<br>**Difficulty**: Intermediate</br>
-**Time Required**: 10–20 minutes
-<br>**Prerequisites**:
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-* A working understanding of your account’s billing model (per-minute vs. per-channel)
+<strong>Category</strong>: Setup → Billing<br>
+<strong>Audience</strong>: Administrators, Engineers, Finance Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: 10–20 minutes<br>
+<strong>Prerequisites</strong>:<br>
+<ul>
+<li>A working understanding of your account’s billing model (per-minute vs. per-channel)</li>
+<li>Access to your usage data or CDRs to understand how charges are incurred</li>
+</ul>
+<strong>Related Topics</strong>: Billing Basics (detailed billing increments, rounding), Billing Guide (overall billing models), Rate Card Overview (since rate cards tie into billing)<br>
+<strong>Next Steps</strong>: Review which billing model your plan uses (per-minute or per-channel), verify your minimum charges and ensure alignment with your traffic patterns.<br>
 
-* Access to your usage data or CDRs to understand how charges are incurred
-
-**Related Topics**: Billing Basics (detailed billing increments, rounding), Billing Guide (overall billing models), Rate Card Overview (since rate cards tie into billing)
-<br>**Next Steps**: Review which billing model your plan uses (per‐minute or per‐channel), verify your minimum charges and ensure alignment with your traffic patterns.</br>
-
----
+</details>
 
 ## ConnexCS Billing Per Channel
 

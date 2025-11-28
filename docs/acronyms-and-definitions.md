@@ -1,12 +1,16 @@
 # Acronyms and Definitions
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata** <br>**Category**: Acronyms & Definitions</br>
-<br>**Audience**: Administrators, Engineers, Support Team</br> <br>**Difficulty**: Beginner</br>
-<br>**Time Required**: 5–10 minutes</br><br>**Prerequisites**: Access to the documentation portal; basic familiarity with telecom/VoIP terms <br>**Related Topics**: [Dial Code / Destination](https://docs.connexcs.com/setup/information/dial-code-destination/) (for number-format definitions), [Billing Basics](https://docs.connexcs.com/billing-basics/) (uses many of the same metrics)</br><br>**Next Steps**: Use the acronym list to align your internal documentation + glossary; ensure all team members use consistent terminology.</br>
+<strong>Category</strong>: Acronyms & Definitions<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Beginner<br>
+<strong>Time Required</strong>: 5–10 minutes<br>
+<strong>Prerequisites</strong>: Access to the documentation portal; basic familiarity with telecom/VoIP terms<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/setup/information/dial-code-destination/">Dial Code / Destination</a> (for number-format definitions), <a href="https://docs.connexcs.com/billing-basics/">Billing Basics</a> (uses many of the same metrics)<br>
+<strong>Next Steps</strong>: Use the acronym list to align your internal documentation + glossary; ensure all team members use consistent terminology.<br>
 
----
+</details>
 
 |Term|Definition|Explanation|
 |---|---|---|

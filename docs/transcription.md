@@ -1,17 +1,17 @@
 # Transcription
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata**
-<br>**Category**: Features / Call Transcription</br>
-**Audience**: Administrators, Engineers, Analytics & Compliance Teams
-<br>**Difficulty**: Intermediate</br>
-**Time Required**: Approximately 30–60 minutes
-<br>**Prerequisites**: Active ConnexCS account; call recording must be enabled and storage set up.</br>
-**Related Topics**: [Recording](https://docs.connexcs.com/customer-portal/cp-recording/)
-<br>**Next Steps**: Enable transcription service for selected calls, configure keyword search/reporting workflows, and integrate transcripts into analytics or compliance workflows.</br>
+<strong>Category</strong>: Features / Call Transcription<br>
+<strong>Audience</strong>: Administrators, Engineers, Analytics & Compliance Teams<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 30–60 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account; call recording must be enabled and storage set up.<br>
+<strong>Related Topics</strong>:
+<a href="https://docs.connexcs.com/customer-portal/cp-recording/">Recording</a><br>
+<strong>Next Steps</strong>: Enable transcription service for selected calls, configure keyword search/reporting workflows, and integrate transcripts into analytics or compliance workflows.<br>
 
----
+</details>
 
 **Global :material-menu-right: Transcription**
 

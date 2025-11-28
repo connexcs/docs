@@ -1,16 +1,16 @@
 # Application Programming Interface
 
----
-**Document Metadata**  
-**Category:** Development & Integration  
-**Audience:** Developers, System Integrators  
-**Difficulty:** Intermediate  
-**Time Required:** 1-2 hours (initial setup)  
-**Prerequisites:** [Getting Started](getting-started.md), [Developer knowledge ](https://docs.connexcs.com/ide/)
-<br>**Related Topics:** [IDE](ide.md), [API Integration](setup/integrations/api.md), [JWT Keys](setup/integrations/jwt.md)</br>
-**Next Steps:** [API Integration Setup](setup/integrations/api.md), [Apps Platform](apps/introduction.md)
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
----
+<strong>Category</strong>: Development & Integration<br>
+<strong>Audience</strong>: Developers, System Integrators<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: 1–2 hours (initial setup)<br>
+<strong>Prerequisites</strong>: <a href="getting-started.md">Getting Started</a>, <a href="https://docs.connexcs.com/ide/">Developer knowledge</a><br>
+<strong>Related Topics</strong>: <a href="ide.md">IDE</a>, <a href="setup/integrations/api.md">API Integration</a>, <a href="setup/integrations/jwt.md">JWT Keys</a><br>
+<strong>Next Steps</strong>: <a href="setup/integrations/api.md">API Integration Setup</a>, <a href="apps/introduction.md">Apps Platform</a><br>
+
+</details>
 
 An **API (Application Programming Interface)** allows for more intricate control over your system. It's either through customization or the use of third-party applications.
 

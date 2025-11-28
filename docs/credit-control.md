@@ -1,12 +1,16 @@
 # Credit Control
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata** <br>**Category**: Credit Control</br>
-**Audience**: Administrators, Engineers, Finance Team <br>**Difficulty**: Intermediate</br>
-**Time Required**: 10–15 minutes <br>**Prerequisites**: Understanding of customer account balances, payment processes, post-paid vs pre-paid billing modes <br>**Related Topics**: [Billing Basics](https://docs.connexcs.com/billing-basics/) (for billing increments & rounding), [Voucher](https://docs.connexcs.com/voucher/) (for pre-paid voucher flows) <br>**Next Steps**: Configure customer debit limits, minimum payments, and spend limits to align with your credit-policy
+<strong>Category</strong>: Credit Control<br>
+<strong>Audience</strong>: Administrators, Engineers, Finance Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: 10–15 minutes<br>
+<strong>Prerequisites</strong>: Understanding of customer account balances, payment processes, post-paid vs pre-paid billing modes<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/billing-basics/">Billing Basics</a> (for billing increments & rounding), <a href="https://docs.connexcs.com/voucher/">Voucher</a> (for pre-paid voucher flows)<br>
+<strong>Next Steps</strong>: Configure customer debit limits, minimum payments, and spend limits to align with your credit-policy<br>
 
----
+</details>
 
 ## Pre-pay / Post-Pay
 

@@ -1,15 +1,16 @@
 # Project
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata** <br>**Category**: Applications Platform / Project Management & Organization</br>
-**Audience**: Engineers, Developers, DevOps & Integration Teams
-<br>**Difficulty**: Beginner to Intermediate </br>
-**Time Required**: Approximately 15–20 minutes (to create a new Project and understand workflow) <br>**Prerequisites**: Access to ConnexCS Apps IDE, account privileges to create Projects and Applications </br>
-**Related Topics**: [Applications – App Structure & Creation](https://docs.connexcs.com/apps/architecture/app/), [Apps Architecture Overview](https://docs.connexcs.com/apps/architecture/architecture/) , [Versioning & Deployment Workflow](https://docs.connexcs.com/apps/architecture/architecture/#version-locking-vs-continuous-integration)
-<br>**Next Steps**: After creating a Project, add one or more Applications under it; define versioning/branching strategy; for each app, configure environment variables, Pub/Sub channels, and associate components (pages, scripts, databases) — then publish and track under the Project umbrella.</br>
+<strong>Category</strong>: Applications Platform / Project Management & Organization<br>
+<strong>Audience</strong>: Engineers, Developers, DevOps & Integration Teams<br>
+<strong>Difficulty</strong>: Beginner to Intermediate<br>
+<strong>Time Required</strong>: Approximately 15–20 minutes (to create a new Project and understand workflow)<br>
+<strong>Prerequisites</strong>: Access to ConnexCS Apps IDE, account privileges to create Projects and Applications<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/architecture/app/">Applications – App Structure & Creation</a>, <a href="https://docs.connexcs.com/apps/architecture/architecture/">Apps Architecture Overview</a>, <a href="https://docs.connexcs.com/apps/architecture/architecture/#version-locking-vs-continuous-integration">Versioning & Deployment Workflow</a><br>
+<strong>Next Steps</strong>: After creating a Project, add one or more applications under it; define versioning/branching strategy; for each app, configure environment variables, Pub/Sub channels, and associate components (pages, scripts, databases) — then publish and track under the Project umbrella<br>
 
----
+</details>
 
 ## Introduction
 

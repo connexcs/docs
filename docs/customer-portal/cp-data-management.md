@@ -1,16 +1,16 @@
 # Database
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata**
-<br>**Category**: Customer Portal / Data Management</br>
-**Audience**: Administrators, Data Engineers, Support Team
-<br>**Difficulty**: Intermediate</br>
-**Time Required**: Approximately 30–40 minutes <br>**Prerequisites**: Active ConnexCS Customer Portal account with access to the Data Management / Datasuite tools, basic familiarity with data upload/import processes and table/query operations</br>
-**Related Topics**: [Data Suite – Data Management Platform](https://docs.connexcs.com/datasuite/), [Customer Page Interface – Bulk Upload & Data Grid](https://docs.connexcs.com/customer/customer-page-interface/)
-<br>**Next Steps**: Create or load a workspace, import a dataset (e.g., via CSV drag-&-drop or URL).</br>
+<strong>Category</strong>: Customer Portal / Data Management<br>
+<strong>Audience</strong>: Administrators, Data Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 30–40 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS Customer Portal account with access to the Data Management / DataSuite tools; basic familiarity with data upload/import processes and table/query operations<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/datasuite/">Data Suite – Data Management Platform</a>, <a href="https://docs.connexcs.com/customer/customer-page-interface/">Customer Page Interface – Bulk Upload & Data Grid</a><br>
+<strong>Next Steps</strong>: Create or load a workspace, import a dataset (e.g., via CSV drag-and-drop or URL)<br>
 
----
+</details>
 
 The **Database** allows you to create custom persistent data storage.
 

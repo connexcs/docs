@@ -1,17 +1,16 @@
 # Data Suite
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata**
-<br>**Category**: Data Management / Data Suite</br>
-**Audience**: Administrators, Engineers, Data Analysts
-<br>**Difficulty**: Intermediate</br>
-**Time Required**: Approximately 30–60 minutes
-<br>**Prerequisites**: Active ConnexCS account with Data Suite access; familiarity with structured data formats (CSV, JSON), SQL queries, and basic data import/export workflows.</br>
-**Related Topics**: [Database (Developers)](https://docs.connexcs.com/apps/architecture/database/), [Customer Portal – Data Management](https://docs.connexcs.com/customer-portal/cp-data-management/)
-<br>**Next Steps**: Log in to the Data Suite module, create or load a Workspace, upload your data (CSV file or remote database), perform bulk edits or remote queries, map the data to target tables (e.g., DID, CLI, Customer), and integrate the data into your reporting or workflow pipelines.</br>
+<strong>Category</strong>: Data Management / Data Suite<br>
+<strong>Audience</strong>: Administrators, Engineers, Data Analysts<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 30–60 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with Data Suite access; familiarity with structured data formats (CSV, JSON), SQL queries, and basic data import/export workflows.<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/architecture/database/">Database (Developers)</a>, <a href="https://docs.connexcs.com/customer-portal/cp-data-management/">Customer Portal – Data Management</a><br>
+<strong>Next Steps</strong>: Log in to the Data Suite module, create or load a Workspace, upload your data (CSV file or remote database), perform bulk edits or remote queries, map the data to target tables (e.g., DID, CLI, Customer), and integrate the data into your reporting or workflow pipelines.<br>
 
----
+</details>
 
 ConnexCS's Data Management Suite helps you manage, organize, and optimize your data throughout its lifecycle.
 

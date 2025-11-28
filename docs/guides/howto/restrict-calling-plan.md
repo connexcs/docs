@@ -1,10 +1,16 @@
 # Restricting individual customers to specific calling plans
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata** <br>**Category**: Customer Access & Payment Controls / Calling Plan Restrictions</br> **Audience**: Administrators, Product Managers, Support Team <br>**Difficulty**: Intermediate</br> **Time Required**: Approximately 25–35 minutes <br>**Prerequisites**: Active ConnexCS account, access to Customer Module and Billing or Plan controls, permissions to edit calling plan settings</br> **Related Topics**: [RBAC](https://docs.connexcs.com/setup/settings/users/#users) <br>**Next Steps**: After applying restrictions to a calling plan, verify the effect by placing test calls under the plan, and then set up usage alerts so you’re notified if a customer hits the restricted limits.</br>
+<strong>Category</strong>: Customer Access & Payment Controls / Calling Plan Restrictions<br>
+<strong>Audience</strong>: Administrators, Product Managers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 25–35 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account, access to Customer Module and Billing or Plan controls, permissions to edit calling plan settings<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/setup/settings/users/#users">RBAC</a><br>
+<strong>Next Steps</strong>: After applying restrictions to a calling plan, verify the effect by placing test calls under the plan, and then set up usage alerts so you’re notified if a customer hits the restricted limits.<br>
 
----
+</details>
 
 Sometimes a provider has multiple call plans and would like to restrict certain customers to specific plans.
 

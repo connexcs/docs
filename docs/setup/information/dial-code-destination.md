@@ -1,12 +1,16 @@
 # Dial Code / Destination
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata** <br>**Category**: Setup & Configuration → Information → Dial Code / Destination</br>
-**Audience**: Administrators, Engineers, Support Team <br>**Difficulty**: Beginner</br>
-**Time Required**: 5–10 minutes <br>**Prerequisites**: Access to the ConnexCS documentation portal with permission to view reference datasets <br>**Related Topics**: [International Routing Reference](https://docs.connexcs.com/routing-usa/) (for U.S. number format example) <br>**Next Steps**: Use-the database to verify number types before configuring routing or rate cards
+<strong>Category</strong>: Setup & Configuration → Information → Dial Code / Destination<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Beginner<br>
+<strong>Time Required</strong>: 5–10 minutes<br>
+<strong>Prerequisites</strong>: Access to the ConnexCS documentation portal with permission to view reference datasets<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/routing-usa/">International Routing Reference</a> (for U.S. number format example)<br>
+<strong>Next Steps</strong>: Use the database to verify number types before configuring routing or rate cards<br>
 
----
+</details>
 
 **Setup :material-menu-right: Information :material-menu-right: Dial Code / Destination**
 

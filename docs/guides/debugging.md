@@ -1,14 +1,16 @@
 # Debugging Basics
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata** <br>**Category**: Troubleshooting & Diagnostics / Debugging Guide</br>
-<br>**Audience**: Administrators, Engineers, Support Team</br>
-<br>**Difficulty**: Intermediate to Advanced</br>
-<br>**Time Required**: Approximately 40–60 minutes</br> <br>**Prerequisites**: Active ConnexCS account with access to system logs, call traces, and debugging tools; familiarity with network & VoIP fundamentals</br> <br>**Related Topics**: [Call Disconnection Reasons](https://docs.connexcs.com/guides/call-disconnection-reasons/), [Troubleshooting – Signaling](https://docs.connexcs.com/guides/tshoot-signal/), [Troubleshooting – Media](https://docs.connexcs.com/guides/tshoot-media/)</br>
-<br>**Next Steps**: After reviewing the debugging guide, select a recent incident with repeatable symptoms, gather SIP/Media logs, apply the step-by-step methodology outlined in the document (hypothesis → reproduce → isolate → fix), and document your findings and resolution in your internal incident-tracking system.</br>
+<strong>Category</strong>: Troubleshooting & Diagnostics / Debugging Guide<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate to Advanced<br>
+<strong>Time Required</strong>: Approximately 40–60 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with access to system logs, call traces, and debugging tools; familiarity with network & VoIP fundamentals<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/guides/call-disconnection-reasons/">Call Disconnection Reasons</a>, <a href="https://docs.connexcs.com/guides/tshoot-signal/">Troubleshooting – Signaling</a>, <a href="https://docs.connexcs.com/guides/tshoot-media/">Troubleshooting – Media</a><br>
+<strong>Next Steps</strong>: After reviewing the debugging guide, select a recent incident with repeatable symptoms, gather SIP/Media logs, apply the step-by-step methodology outlined in the document (hypothesis → reproduce → isolate → fix), and document your findings and resolution in your internal incident-tracking system.<br>
 
----
+</details>
 
 Debugging (identifying call problems) is an essential skill for maintaining a Voice Platform. A single character or a 10ms delay in the wrong place could cause issues in VoIP / SIP communication because it has several components and a wide range of possible configurations.
 

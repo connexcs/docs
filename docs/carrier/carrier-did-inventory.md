@@ -1,17 +1,16 @@
 # DID Inventory
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata**
-<br>**Category**: Carrier Management / DID Inventory & Number Management</br>
-**Audience**: Administrators, Engineers, Support Team
-<br>**Difficulty**: Intermediate</br>
-**Time Required**: Approximately 1 hour
-<br>**Prerequisites**: Active ConnexCS account with Carrier-module access; understanding of DID (Direct Inward Dial) provisioning, range-holder workflows and number-pool management.</br>
-**Related Topics**: [Carrier DID](https://docs.connexcs.com/carrier/carrier-did/), [Customer DID](https://docs.connexcs.com/customer/did/)
-<br>**Next Steps**: Review the un-assigned DID inventory for the carrier, upload new DIDs or ranges via bulk upload, assign DIDs to customers or ranges, configure routing and billing settings for each DID.</br>
+<strong>Category</strong>: Carrier Management / DID Inventory & Number Management<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 1 hour<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with Carrier-module access; understanding of DID (Direct Inward Dial) provisioning, range-holder workflows, and number-pool management<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/carrier/carrier-did/">Carrier DID</a>, <a href="https://docs.connexcs.com/customer/did/">Customer DID</a><br>
+<strong>Next Steps</strong>: Review the unassigned DID inventory for the carrier, upload new DIDs or ranges via bulk upload, assign DIDs to customers or ranges, and configure routing and billing settings for each DID<br>
 
----
+</details>
 
 **Management :material-menu-right: Carrier :material-menu-right: DID Inventory**
 

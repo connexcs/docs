@@ -1,16 +1,16 @@
 # Customer
 
----
-**Document Metadata**
-<br>**Category**: Customer Account Management</br>
-**Audience**: Administrators, Engineers, Support Team
-<br>**Difficulty**: Intermediate</br>
-**Time Required**: Approximately 45–90 minutes
-<br>**Prerequisites**: Active ConnexCS account, appropriate “Customer” module access in the Control Panel</br>
-**Related Topics**: [Customer Dashboard](https://docs.connexcs.com/customer/customer/#customer-dashboard), [Contacts](https://docs.connexcs.com/customer/main/#contacts), [Portal Access](https://docs.connexcs.com/setup/integrations/portal/), [Documents / KYC](https://docs.connexcs.com/customer/documents/)
-<br>**Next Steps**: [Create & Configure Customer](https://docs.connexcs.com/customer/customer/#create-customer), [Bulk Customer Upload & Edit](https://docs.connexcs.com/customer/customer/#customer-view-modification)</br>
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
----
+<strong>Category</strong>: Customer Account Management<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 45–90 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with appropriate “Customer” module access in the Control Panel<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer/customer/#customer-dashboard">Customer Dashboard</a>, <a href="https://docs.connexcs.com/customer/main/#contacts">Contacts</a>, <a href="https://docs.connexcs.com/setup/integrations/portal/">Portal Access</a>, <a href="https://docs.connexcs.com/customer/documents/">Documents / KYC</a><br>
+<strong>Next Steps</strong>: <a href="https://docs.connexcs.com/customer/customer/#create-customer">Create & Configure Customer</a>, <a href="https://docs.connexcs.com/customer/customer/#customer-view-modification">Bulk Customer Upload & Edit</a><br>
+
+</details>
 
 **Management :material-menu-right: Customer**
 

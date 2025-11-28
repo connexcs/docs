@@ -1,12 +1,14 @@
 # Introduction
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata** <br>**Category**: Setup & Configuration → Information → Change Log</br>
-**Audience**: Administrators, Engineers, Support Team <br>**Difficulty**: Beginner</br>
-**Time Required**: 5–10 minutes <br>**Prerequisites**: Access to the ConnexCS Control Panel</br>
+<strong>Category</strong>: Setup & Configuration → Information → Change Log<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Beginner<br>
+<strong>Time Required</strong>: 5–10 minutes<br>
+<strong>Prerequisites</strong>: Access to the ConnexCS Control Panel<br>
 
----
+</details>
 
 **Setup :material-menu-right: Information :material-menu-right: Change Log**
 

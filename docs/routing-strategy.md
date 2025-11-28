@@ -1,17 +1,18 @@
 # Routing Strategy
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata**
-<br>**Category**: Routing / Routing Strategy Configuration</br>
-**Audience**: Administrators, Engineers, Network & Operations Team
-<br>**Difficulty**: Intermediate to Advanced</br>
-**Time Required**: Approximately 1–2 hours
-<br>**Prerequisites**: Active ConnexCS account with routing permissions; basic configuration of rate cards and carrier/customer routing; understanding of call flows and routing logic.</br>
-**Related Topics**: [Routing Overview](https://docs.connexcs.com/routing/), [Routing Global](https://docs.connexcs.com/global-routing/)
-<br>**Next Steps**: Choose your routing strategy type (e.g., LCR, Round Robin, Tiered), create the strategy, assign it to a customer or route, configure weights or sequence as needed, and monitor performance for optimal call completion.</br>
+<strong>Category</strong>: Routing / Routing Strategy Configuration<br>
+<strong>Audience</strong>: Administrators, Engineers, Network & Operations Team<br>
+<strong>Difficulty</strong>: Intermediate to Advanced<br>
+<strong>Time Required</strong>: Approximately 1–2 hours<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with routing permissions; basic configuration of rate cards and carrier/customer routing; understanding of call flows and routing logic.<br>
+<strong>Related Topics</strong>: 
+<a href="https://docs.connexcs.com/routing/">Routing Overview</a>, 
+<a href="https://docs.connexcs.com/global-routing/">Routing Global</a><br>
+<strong>Next Steps</strong>: Choose your routing strategy type (e.g., LCR, Round Robin, Tiered), create the strategy, assign it to a customer or route, configure weights or sequence as needed, and monitor performance for optimal call completion.<br>
 
----
+</details>
 
 **Management :material-menu-right: Routing Strategy**
 

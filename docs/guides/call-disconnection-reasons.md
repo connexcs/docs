@@ -1,12 +1,16 @@
 # Call Disconnection Reasons and Premature Call Disconnection
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata** <br>**Category**: Troubleshooting & Diagnostics / Call Disconnection Reasons</br> <br>**Audience**: Administrators, Engineers, Support Team</br> <br>**Difficulty**: Intermediate to Advanced</br>
-<br>**Time Required**: Approximately 30–40 minutes</br> <br>**Prerequisites**: Active ConnexCS Platform account with access to the Logging module (Call IDs, SIP traces) and familiarity with SIP/VoIP fundamentals</br> 
-<br>**Related Topics**: [Logging & SIP Traces](https://docs.connexcs.com/logging/) , [Call Connection/Signalling Issues](https://docs.connexcs.com/guides/tshoot-signal/)</br>  <br>**Next Steps**: After reviewing the disconnection-reasons guide, locate affected Call IDs in the Logging panel, map the cause of disconnection (e.g., ping timeout, BYE message, no ACK) and implement corrective measures (enable SIP-Ping, check media path, verify re-INVITE timers) to reduce premature call drop-outs.</br>
+<strong>Category</strong>: Troubleshooting & Diagnostics / Call Disconnection Reasons<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate to Advanced<br>
+<strong>Time Required</strong>: Approximately 30–40 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS Platform account with access to the Logging module (Call IDs, SIP traces) and familiarity with SIP/VoIP fundamentals<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/logging/">Logging & SIP Traces</a>, <a href="https://docs.connexcs.com/guides/tshoot-signal/">Call Connection/Signalling Issues</a><br>
+<strong>Next Steps</strong>: After reviewing the disconnection-reasons guide, locate affected Call IDs in the Logging panel, map the cause of disconnection (e.g., ping timeout, BYE message, no ACK), and implement corrective measures (enable SIP-Ping, check media path, verify re-INVITE timers) to reduce premature call drop-outs.<br>
 
----
+</details>
 
 ## Main Reasons for Call Disconnection
 

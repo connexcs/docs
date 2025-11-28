@@ -1,12 +1,16 @@
 # JWT Refresh Keys
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata** <br>**Category**: Setup & Configuration → Integrations → JWT Keys/Tokens</br>
-**Audience**: Administrators, Engineers, Support Team <br>**Difficulty**: Intermediate to Advanced</br>
-**Time Required**: 15–30 minutes <br>**Prerequisites**: ConnexCS account with Integrations permissions, Understanding of JSON Web Tokens (JWT) <br>**Related Topics**: [API Integrations](https://docs.connexcs.com/setup/integrations/api/) (for token usage), [OAuth Session](https://docs.connexcs.com/setup/integrations/oauth/) (JWT as part of token flows)<br>**Next Steps**: [OAuth Session](https://docs.connexcs.com/setup/integrations/oauth/), [API Usage Guide](https://docs.connexcs.com/api/)
+<strong>Category</strong>: Setup & Configuration → Integrations → JWT Keys/Tokens<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate to Advanced<br>
+<strong>Time Required</strong>: 15–30 minutes<br>
+<strong>Prerequisites</strong>: ConnexCS account with Integrations permissions, understanding of JSON Web Tokens (JWT)<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/setup/integrations/api/">API Integrations</a> (for token usage), <a href="https://docs.connexcs.com/setup/integrations/oauth/">OAuth Session</a> (JWT as part of token flows)<br>
+<strong>Next Steps</strong>: <a href="https://docs.connexcs.com/setup/integrations/oauth/">OAuth Session</a>, <a href="https://docs.connexcs.com/api/">API Usage Guide</a><br>
 
----
+</details>
 
 **Setup :material-menu-right: Integrations :material-menu-right: JWT Refresh Keys**
 

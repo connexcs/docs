@@ -1,16 +1,16 @@
 # Audit Log
 
----
-**Document Metadata** <br>**Category**: Setup & Configuration → Information → Audit Log</br>
-**Audience**: Administrators, Engineers, Support Team <br>**Difficulty**: Intermediate</br>
-**Time Required**: 5–10 minutes <br>**Prerequisites**: Access to the Setup → Information section of the ConnexCS control panel and permission to view audit entries. <br>**Related Topics**: [Change Log](https://docs.connexcs.com/setup/information/change-log/) (for version history), [Authentication Audit Log](https://docs.connexcs.com/customer-portal/cp-authentication/) (specific to IP/SIP auth) <br>**Next Steps**: Export or filter the Audit Log for compliance reporting, use in internal investigations or security reviews.
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
----
+<strong>Category</strong>: Setup & Configuration → Information → Audit Log<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: 5–10 minutes<br>
+<strong>Prerequisites</strong>: Access to the Setup → Information section of the ConnexCS control panel and permission to view audit entries.<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/setup/information/change-log/">Change Log</a> (for version history), <a href="https://docs.connexcs.com/customer-portal/cp-authentication/">Authentication Audit Log</a> (specific to IP/SIP auth)<br>
+<strong>Next Steps</strong>: Export or filter the Audit Log for compliance reporting, use in internal investigations or security reviews.<br>
 
-If you like, I can also pull out the **Key Columns & Definitions** (User, IP, Action, etc.) and a short “How to interpret” section for your documentation.
-
-[1]: https://docs.connexcs.com/setup/information/audit-log/?utm_source=chatgpt.com "Audit Log"
-
+</details>
 
 **Setup :material-menu-right: Information :material-menu-right: Audit Log**
 

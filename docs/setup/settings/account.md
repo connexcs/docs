@@ -1,16 +1,16 @@
 # Account
 
-**Document Metadata**
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-<br>**Category**: Setup / Account Configuration</br>
-**Audience**: Administrators, Engineers, Support Team
-</br>**Difficulty**: Beginner to Intermediate</br>
-**Time Required**: Approximately 10–20 minutes
-<br>**Prerequisites**: Active ConnexCS account</br>
-**Related Topics**: Company Settings, Security Settings, Users & Roles, Notifications, Billing & Subscription
-<br>**Next Steps**: Review and update account-level information, then verify that changes reflect across billing, user access, and system defaults.</br>
+<strong>Category</strong>: Setup / Account Configuration<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Beginner to Intermediate<br>
+<strong>Time Required</strong>: Approximately 10–20 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account<br>
+<strong>Related Topics</strong>: Company Settings, Security Settings, Users & Roles, Notifications, Billing & Subscription<br>
+<strong>Next Steps</strong>: Review and update account-level information, then verify that changes reflect across billing, user access, and system defaults.<br>
 
----
+</details>
 
 **Setup :material-menu-right: Settings :material-menu-right: Account**
 

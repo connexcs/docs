@@ -1,16 +1,16 @@
 # Main
 
----
-**Document Metadata**
-<br>**Category**: Customer Account Management</br>
-**Audience**: Administrators, Engineers, Support Team
-<br>**Difficulty**: Intermediate</br>
-**Time Required**: Approximately 30–60 minutes
-<br>**Prerequisites**: Active ConnexCS Control Panel account, permission to edit customer-account settings</br>
-**Related Topics**: [Customer – Create & Configure](https://docs.connexcs.com/customer/customer/), [Documents (KYC & File Upload)](https://docs.connexcs.com/customer/documents/)
-<br>**Next Steps**: [Contacts — Add & Manage Customer Contacts](https://docs.connexcs.com/customer/main/#contacts), [Internal Number Block — Setting Extension Ranges](https://docs.connexcs.com/customer-portal/cp-dashboard/#internal-number-block)</br>
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
----
+<strong>Category</strong>: Customer Account Management<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 30–60 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS Control Panel account with permission to edit customer-account settings<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer/customer/">Customer – Create & Configure</a>, <a href="https://docs.connexcs.com/customer/documents/">Documents (KYC & File Upload)</a><br>
+<strong>Next Steps</strong>: <a href="https://docs.connexcs.com/customer/main/#contacts">Contacts — Add & Manage Customer Contacts</a>, <a href="https://docs.connexcs.com/customer-portal/cp-dashboard/#internal-number-block">Internal Number Block — Setting Extension Ranges</a><br>
+
+</details>
 
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name]**
 

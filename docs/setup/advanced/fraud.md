@@ -1,13 +1,16 @@
 # Fraud Profile
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata** <br>**Category**: Setup & Configuration → Advanced Settings → Fraud</br>
-**Audience**: Administrators, Engineers, Support Team <br>**Difficulty**: Intermediate</br>
-**Time Required**: 10–15 minutes <br>**Prerequisites**: ConnexCS account with access to the Setup → Advanced section <br>**Related Topics**: [Security Settings](https://docs.connexcs.com/security/), [Call Traffic Monitoring](https://docs.connexcs.com/carrier/carrier-custom-reports/), [Alerting & Notifications](https://docs.connexcs.com/customer/alerts/)</br>
-**Next Steps**: [IP Authentication](https://docs.connexcs.com/customer/auth/#ip-authentication)
+<strong>Category</strong>: Setup & Configuration → Advanced Settings → Fraud<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: 10–15 minutes<br>
+<strong>Prerequisites</strong>: ConnexCS account with access to the Setup → Advanced section<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/security/">Security Settings</a>, <a href="https://docs.connexcs.com/carrier/carrier-custom-reports/">Call Traffic Monitoring</a>, <a href="https://docs.connexcs.com/customer/alerts/">Alerting & Notifications</a><br>
+<strong>Next Steps</strong>: <a href="https://docs.connexcs.com/customer/auth/#ip-authentication">IP Authentication</a><br>
 
----
+</details>
 
 **Setup :material-menu-right: Advanced :material-menu-right: Fraud Profile**
 

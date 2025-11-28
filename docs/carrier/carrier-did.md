@@ -1,17 +1,16 @@
 # Direct Inward Dial
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata**
-<br>**Category**: Carrier Management / DID & Number Inventory</br>
-**Audience**: Administrators, Engineers, Support Team
-<br>**Difficulty**: Intermediate to Advanced</br>
-**Time Required**: Approximately 1-2 hours
-<br>**Prerequisites**: Active ConnexCS account with Carrier-module access; knowledge of DID provisioning, inbound routing and number inventory management.</br>
-**Related Topics**: [Carrier Main Configuration](https://docs.connexcs.com/carrier/carrier-main/), [DID Inventory](https://docs.connexcs.com/carrier/carrier-did-inventory/)
-<br>**Next Steps**: Review and manage the carrier’s DID list, add new DIDs, assign them to customers or ranges, and configure routing/destination settings for inbound calls.</br>
+<strong>Category</strong>: Carrier Management / DID & Number Inventory<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate to Advanced<br>
+<strong>Time Required</strong>: Approximately 1–2 hours<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with Carrier-module access; knowledge of DID provisioning, inbound routing, and number inventory management<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/carrier/carrier-main/">Carrier Main Configuration</a>, <a href="https://docs.connexcs.com/carrier/carrier-did-inventory/">DID Inventory</a><br>
+<strong>Next Steps</strong>: Review and manage the carrier’s DID list, add new DIDs, assign them to customers or ranges, and configure routing/destination settings for inbound calls<br>
 
----
+</details>
 
 **Management :material-menu-right: Carrier :material-menu-right: DID**
 

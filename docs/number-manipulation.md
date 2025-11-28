@@ -1,13 +1,16 @@
 # Number Manipulation
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata** <br>**Category**: ConnexCS Basics → Number Manipulation</br>
-<br>**Audience**: Administrators, Engineers, Support Team</br> <br>**Difficulty**: Intermediate</br>
-<br>**Time Required**: 5–10 minutes</br>
-<br>**Prerequisites**: Understanding of number formatting and call-routing prefixes; access to customer routing or CLI configuration sections. </br><br>**Related Topics**: [Prefix Set](https://docs.connexcs.com/setup/advanced/prefix-set/) (for prefix rules) , [CLI / Number Rewrite Rules](https://docs.connexcs.com/customer/cli/) (for CLI manipulation)</br> <br>**Next Steps**: Define your number formatting rules (e.g., strip leading zeros, add country code) then test routing flows to confirm correct number presentation.</br>
+<strong>Category</strong>: ConnexCS Basics → Number Manipulation<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: 5–10 minutes<br>
+<strong>Prerequisites</strong>: Understanding of number formatting and call-routing prefixes; access to customer routing or CLI configuration sections.<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/setup/advanced/prefix-set/">Prefix Set</a> (for prefix rules), <a href="https://docs.connexcs.com/customer/cli/">CLI / Number Rewrite Rules</a> (for CLI manipulation)<br>
+<strong>Next Steps</strong>: Define your number formatting rules (e.g., strip leading zeros, add country code), then test routing flows to confirm correct number presentation.<br>
 
----
+</details>
 
 ConnexCS offers several methods for number manipulation.
 

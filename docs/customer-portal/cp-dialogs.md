@@ -1,14 +1,16 @@
 # Dialogs
 
----
-**Document Metadata** <br>**Category**: Customer Portal / Dialogs (Active Call View) </br>
-**Audience**: Administrators, Support Engineers, Customer Success Team
-<br>**Difficulty**: Intermediate </br>
-**Time Required**: Approximately 15–20 minutes <br>**Prerequisites**: Active  Customer Portal account with permissions to view live-call (dialog) statistics </br>
-**Related Topics**: [Customer Portal – Latest Calls](https://docs.connexcs.com/customer-portal/cp-latest-calls/), [Customer Portal – CDR Viewer](https://docs.connexcs.com/customer-portal/cp-cdr/)
-<br>**Next Steps**: After reviewing the Dialogs guide, log in to the Customer Portal → Dialogs, click the **Refresh** button to view up-to-date active calls, locate any sessions with abnormal status (e.g., “Ended” status lingering), then correlate those sessions with your logging/trace tools to identify any failed tear-down or RTP shutdown issues.</br>
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
----
+<strong>Category</strong>: Customer Portal / Dialogs (Active Call View)<br>
+<strong>Audience</strong>: Administrators, Support Engineers, Customer Success Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 15–20 minutes<br>
+<strong>Prerequisites</strong>: Active Customer Portal account with permissions to view live-call (dialog) statistics<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer-portal/cp-latest-calls/">Customer Portal – Latest Calls</a>, <a href="https://docs.connexcs.com/customer-portal/cp-cdr/">Customer Portal – CDR Viewer</a><br>
+<strong>Next Steps</strong>: Log in to the Customer Portal → Dialogs, click Refresh to view current active calls, identify any sessions with abnormal statuses (e.g., lingering “Ended”), and correlate with logging/trace tools to diagnose tear-down or RTP shutdown issues.<br>
+
+</details>
 
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Dialogs**
 

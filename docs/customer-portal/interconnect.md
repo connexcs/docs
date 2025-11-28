@@ -1,10 +1,15 @@
 # Interconnect
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata** <br>**Category**: Customer Portal / Interconnect Setup</br> **Audience**: Administrators, Wholesale Engineers, Support Team <br>**Difficulty**: Intermediate to Advanced </br> **Time Required**: Approximately 30–40 minutes <br>**Prerequisites**: Active ConnexCS account with carrier/wholesale permissions, knowledge of SIP trunking and interconnect protocols </br>**Related Topics**: [Portal – Setup & Domains](https://docs.connexcs.com/setup/integrations/portal/), [Routing Overview](https://docs.connexcs.com/customer/routing/)
+<strong>Category</strong>: Customer Portal / Interconnect Setup<br>
+<strong>Audience</strong>: Administrators, Wholesale Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate to Advanced<br>
+<strong>Time Required</strong>: Approximately 30–40 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with carrier/wholesale permissions, knowledge of SIP trunking and interconnect protocols<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/setup/integrations/portal/">Portal – Setup & Domains</a>, <a href="https://docs.connexcs.com/customer/routing/">Routing Overview</a><br>
 
----
+</details>
 
 **Interconnect** provides information on:
 

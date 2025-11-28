@@ -1,14 +1,16 @@
 # Key Value Store
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata** <br>**Category**: Applications Platform / Key-Value Store</br>
-**Audience**: Engineers, Developers, Platform Integrators <br>**Difficulty**: Intermediate</br>
-**Time Required**: Approximately 15–20 minutes <br>**Prerequisites**: Access to the ConnexCS Apps Platform IDE, familiarity with basic data-storage concepts (key-value pairs) and how your application will use lightweight state or lookup tables</br>
-**Related Topics**: [Databases – Types & Usage](https://docs.connexcs.com/apps/architecture/database/), [ScriptForge](https://docs.connexcs.com/apps/architecture/scriptforge/)
-<br>**Next Steps**: Identify key-value data → create Store in IDE → define keys/values → access in app logic → document naming and retention rules.</br>
+<strong>Category</strong>: Applications Platform / Key-Value Store<br>
+<strong>Audience</strong>: Engineers, Developers, Platform Integrators<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 15–20 minutes<br>
+<strong>Prerequisites</strong>: Access to the ConnexCS Apps Platform IDE, familiarity with basic data-storage concepts (key-value pairs) and how your application will use lightweight state or lookup tables<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/architecture/database/">Databases – Types & Usage</a>, <a href="https://docs.connexcs.com/apps/architecture/scriptforge/">ScriptForge</a><br>
+<strong>Next Steps</strong>: Identify key-value data → create Store in IDE → define keys/values → access in app logic → document naming and retention rules<br>
 
----
+</details>
 
 ## Introduction
 

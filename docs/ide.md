@@ -1,17 +1,16 @@
 # IDE
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata**
-<br>**Category**: Developer & Application Platform / IDE (Integrated Development Environment)</br>
-**Audience**: Administrators, Engineers, Developers
-<br>**Difficulty**: Intermediate to Advanced</br>
-**Time Required**: Approximately 1–2 hours
-<br>**Prerequisites**: Active ConnexCS account with platform-access; familiarity with application scripting, UI components, database concepts, and workflow logic.</br>
-**Related Topics**: [Apps Platform Architecture](https://docs.connexcs.com/apps/architecture/architecture/), [Template System](https://docs.connexcs.com/apps/architecture/template/)
-<br>**Next Steps**: Navigate to the IDE module, explore key components (Applications, Page Builder, Script Forge, Query Builder, etc.), start a new Project, define environment variables and data sources, then build and deploy your workflow or application within the ConnexCS ecosystem.</br>
+<strong>Category</strong>: Developer & Application Platform / IDE (Integrated Development Environment)<br>
+<strong>Audience</strong>: Administrators, Engineers, Developers<br>
+<strong>Difficulty</strong>: Intermediate to Advanced<br>
+<strong>Time Required</strong>: Approximately 1–2 hours<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with platform-access; familiarity with application scripting, UI components, database concepts, and workflow logic.<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/architecture/architecture/">Apps Platform Architecture</a>, <a href="https://docs.connexcs.com/apps/architecture/template/">Template System</a><br>
+<strong>Next Steps</strong>: Navigate to the IDE module, explore key components (Applications, Page Builder, Script Forge, Query Builder, etc.), start a new Project, define environment variables and data sources, then build and deploy your workflow or application within the ConnexCS ecosystem.<br>
 
----
+</details>
 
 ## Overview
 

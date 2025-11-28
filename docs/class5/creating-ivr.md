@@ -1,17 +1,16 @@
 # Interactive Voice Response
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata**
-<br>**Category**: Class 5 Services / IVR & Interactive Voice Menu Configuration</br>
-**Audience**: Administrators, Engineers, Support Team
-<br>**Difficulty**: Intermediate to Advanced</br>
-**Time Required**: Approximately 1–2 hours
-<br>**Prerequisites**: Active ConnexCS account with Class 5 module access; familiarity with telephony IVR concepts, DTMF routing, and audio file preparation.</br>
-**Related Topics**: [Class 5 Apps & Workflow Builder](https://docs.connexcs.com/class5/apps/),  [Class 5 Call Center](https://docs.connexcs.com/class5/call-center/)
-<br>**Next Steps**: Prepare audio prompt, configure IVR for a customer (name, extension, greeting), map keypad options (0–9, *, #) to destinations (SIP URI, external number, internal extension), test the IVR, monitor call routing, and refine as needed.</br>
+<strong>Category</strong>: Class 5 Services / IVR & Interactive Voice Menu Configuration<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate to Advanced<br>
+<strong>Time Required</strong>: Approximately 1–2 hours<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with Class 5 module access; familiarity with telephony IVR concepts, DTMF routing, and audio file preparation<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/class5/apps/">Class 5 Apps & Workflow Builder</a>, <a href="https://docs.connexcs.com/class5/call-center/">Class 5 Call Center</a><br>
+<strong>Next Steps</strong>: Prepare an audio prompt, configure IVR for a customer (name, extension, greeting), map keypad options (0–9, *, #) to destinations (SIP URI, external number, internal extension), test the IVR, monitor call routing, and refine as needed<br>
 
----
+</details>
 
 **Class 5 :material-menu-right: IVR**
 

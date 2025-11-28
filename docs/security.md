@@ -1,12 +1,19 @@
 # Security
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata** <br>**Category**: Setup & Configuration → Security</br>
-**Audience**: Administrators, Engineers, Security Team <br>**Difficulty**: Intermediate to Advanced</br>
-**Time Required**: 15–30 minutes <br>**Prerequisites**: Access to the ConnexCS account with security configuration privileges, Basic knowledge of network security (firewalls, NAT, encryption) <br>**Related Topics**: [Firewall](https://docs.connexcs.com/setup/advanced/firewall/), [Audit Log](https://docs.connexcs.com/setup/information/audit-log/), [Far-End NAT Traversal](https://docs.connexcs.com/far-end-nat-traversal/) <br>**Next Steps**: Implement recommended security controls, audit current configuration, monitor for irregularities.
+<strong>Category</strong>: Setup & Configuration → Security<br>
+<strong>Audience</strong>: Administrators, Engineers, Security Team<br>
+<strong>Difficulty</strong>: Intermediate to Advanced<br>
+<strong>Time Required</strong>: 15–30 minutes<br>
+<strong>Prerequisites</strong>: Access to the ConnexCS account with security-configuration privileges; basic knowledge of network security (firewalls, NAT, encryption).<br>
+<strong>Related Topics</strong>: 
+<a href="https://docs.connexcs.com/setup/advanced/firewall/">Firewall</a>, 
+<a href="https://docs.connexcs.com/setup/information/audit-log/">Audit Log</a>, 
+<a href="https://docs.connexcs.com/far-end-nat-traversal/">Far-End NAT Traversal</a><br>
+<strong>Next Steps</strong>: Implement recommended security controls, audit current configuration, and monitor for irregularities.<br>
 
----
+</details>
 
 ConnexCS considers **Security** its top priority. We incorporate industry best practices into all our policies and procedures.
 

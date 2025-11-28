@@ -1,17 +1,16 @@
 # Failover
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata**
-<br>**Category**: Carrier Management / Fail-over & Redundancy Configuration</br>
-**Audience**: Administrators, Engineers, Support Team
-<br>**Difficulty**: Intermediate to Advanced</br>
-**Time Required**: Approximately 1–2 hours
-<br>**Prerequisites**: Active ConnexCS account with Carrier-module access; understanding of SIP routing, carrier-failover strategies, and rate-card sequencing.</br>
-**Related Topics**: [Carrier Main Configuration](https://docs.connexcs.com/carrier/carrier-main/), [Reply Management](https://docs.connexcs.com/carrier/carrier-reply-management/)
-<br>**Next Steps**: Define fail-over settings for carriers (including alternative IPs or backup carriers), configure sequential fail-over logic per SIP response codes, test fail-over via real-call scenarios and monitor using fail-over logs.</br>
+<strong>Category</strong>: Carrier Management / Fail-over & Redundancy Configuration<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate to Advanced<br>
+<strong>Time Required</strong>: Approximately 1–2 hours<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with Carrier-module access; understanding of SIP routing, carrier fail-over strategies, and rate-card sequencing<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/carrier/carrier-main/">Carrier Main Configuration</a>, <a href="https://docs.connexcs.com/carrier/carrier-reply-management/">Reply Management</a><br>
+<strong>Next Steps</strong>: Define fail-over settings for carriers (including alternative IPs or backup carriers), configure sequential fail-over logic per SIP response codes, test fail-over via real-call scenarios, and monitor using fail-over logs<br>
 
----
+</details>
 
 **Management :material-menu-right: Carrier :material-menu-right: Failover**
 

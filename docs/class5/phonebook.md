@@ -1,17 +1,16 @@
 # Phonebook
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata**
-<br>**Category**: Class 5 Services / Phonebook (Internal Directory)</br>
-**Audience**: Administrators, Engineers, Support Team
-<br>**Difficulty**: Beginner to Intermediate</br>
-**Time Required**: Approximately 15–30 minutes
-<br>**Prerequisites**: Active ConnexCS account with Class 5 module access; understanding of user extensions and contact directory management.</br>
-**Related Topics**: [Class 5 WebPhone – Contacts Directory](https://docs.connexcs.com/webphone/)
-<br>**Next Steps**: Navigate to `Management → Customer → [Customer Name] → Class 5 → Phonebook`, click `+` to create a new entry (name, optional fields), save, then add associated phone number(s) for that entry.</br>
+<strong>Category</strong>: Class 5 Services / Phonebook (Internal Directory)<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Beginner to Intermediate<br>
+<strong>Time Required</strong>: Approximately 15–30 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with Class 5 module access; understanding of user extensions and contact directory management<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/webphone/">Class 5 WebPhone – Contacts Directory</a><br>
+<strong>Next Steps</strong>: Navigate to <code>Management → Customer → [Customer Name] → Class 5 → Phonebook</code>, click <code>+</code> to create a new entry (name, optional fields), save, then add associated phone number(s) for that entry<br>
 
----
+</details>
 
 **Class 5 :material-menu-right: Phonebook**
 

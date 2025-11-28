@@ -1,9 +1,16 @@
 # Group
 
----
-**Document Metadata** <br>**Category**: Customer Portal / Groups (Hunt Groups & Queues)</br> <br>**Audience**: Administrators, Telecom Engineers, Support & Service Teams</br> <br>**Difficulty**: Intermediate</br> <br>**Time Required**: Approximately 25-30 minutes</br> <br>**Prerequisites**: Active ConnexCS Customer Portal account with permission to manage PBX Groups (Hunt Groups, Call Queues), and knowledge of call-flow routing rules</br> <br>**Related Topics**: [Customer Portal – IVR Configuration](https://docs.connexcs.com/customer-portal/cp-ivr/), [Customer Portal – Conference Rooms](https://docs.connexcs.com/customer-portal/cp-conference/)</br> <br>**Next Steps**: Define a new hunt-group or queue (assign extensions/agents, set ring strategy, overflow rules), test group call handling (incoming/outbound), monitor group statistics for performance (wait times, abandoned calls).</br>
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
----
+<strong>Category</strong>: Customer Portal / Groups (Hunt Groups & Queues)<br>
+<strong>Audience</strong>: Administrators, Telecom Engineers, Support & Service Teams<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 25–30 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS Customer Portal account with permission to manage PBX Groups (Hunt Groups, Call Queues), and knowledge of call-flow routing rules<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer-portal/cp-ivr/">Customer Portal – IVR Configuration</a>, <a href="https://docs.connexcs.com/customer-portal/cp-conference/">Customer Portal – Conference Rooms</a><br>
+<strong>Next Steps</strong>: Define a new hunt-group or queue (assign extensions/agents, set ring strategy, overflow rules), test group call handling (incoming/outbound), monitor group statistics for performance (wait times, abandoned calls).<br>
+
+</details>
 
 ## Overview
 

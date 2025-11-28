@@ -1,17 +1,16 @@
 # Latest Calls
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata**
-<br>**Category**: Carrier Management / Monitoring & Call-Detail Insights</br>
-**Audience**: Administrators, Engineers, Support Team
-<br>**Difficulty**: Intermediate</br>
-**Time Required**: Approximately 30–45 minutes
-<br>**Prerequisites**: Active ConnexCS account with Carrier-module access; overview of call flow monitoring, carrier performance metrics.</br>
-**Related Topics**: [Carrier Main Configuration](https://docs.connexcs.com/carrier/carrier-main/), [Carrier Stats](https://docs.connexcs.com/carrier/carrier-stats/)
-<br>**Next Steps**: Review the “Latest Calls” table for the carrier, filter by time-window (Live/Last 24 h/Daily/Monthly), export if needed, and use insights to validate routing, detect anomalies (e.g., false answer supervision, high failure counts), or trigger further investigation via CDR/Logging.</br>
+<strong>Category</strong>: Carrier Management / Monitoring & Call-Detail Insights<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 30–45 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with Carrier-module access; overview of call-flow monitoring and carrier performance metrics<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/carrier/carrier-main/">Carrier Main Configuration</a>, <a href="https://docs.connexcs.com/carrier/carrier-stats/">Carrier Stats</a><br>
+<strong>Next Steps</strong>: Review the “Latest Calls” table for the carrier, filter by time-window (Live/Last 24h/Daily/Monthly), export if needed, and use insights to validate routing, detect anomalies (e.g., false answer supervision, high failure counts), or trigger deeper investigation via CDR or logging<br>
 
----
+</details>
 
 **Management :material-menu-right: Carrier :material-menu-right: Latest Calls**
 

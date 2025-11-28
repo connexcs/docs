@@ -1,14 +1,16 @@
 # Logging
 
----
-**Document Metadata** <br>**Category**: Monitoring & Diagnostics / Logging & Audit Trails</br>
-<br>**Audience**: Administrators, Engineers, Support Team</br>
-<br>**Difficulty**: Intermediate </br>
-<br>**Time Required**: Approximately 25–35 minutes</br> <br>**Prerequisites**: Active ConnexCS account with access to the Logging module, ability to navigate call-records and SIP trace logs</br>
-<br>**Related Topics**: [Troubleshooting – Signaling](https://docs.connexcs.com/guides/tshoot-signal/), [Call Disconnection Reasons](https://docs.connexcs.com/guides/call-disconnection-reasons/)</br>
-<br>**Next Steps**: After reviewing the logging guide, locate a set of recent call-records, filter for problem calls (errors, drops), export SIP traces for deeper analysis, and set up a routine review of log alerts (e.g., elevation in error codes) to proactively track system health.</br>
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
----
+<strong>Category</strong>: Monitoring & Diagnostics / Logging & Audit Trails<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 25–35 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with access to the Logging module, ability to navigate call-records and SIP trace logs<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/guides/tshoot-signal/">Troubleshooting – Signaling</a>, <a href="https://docs.connexcs.com/guides/call-disconnection-reasons/">Call Disconnection Reasons</a><br>
+<strong>Next Steps</strong>: After reviewing the logging guide, locate a set of recent call-records, filter for problem calls (errors, drops), export SIP traces for deeper analysis, and set up a routine review of log alerts (e.g., elevation in error codes) to proactively track system health.<br>
+
+</details>
 
 **:material-menu-right: Logging**
 

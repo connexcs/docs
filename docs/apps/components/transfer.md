@@ -1,15 +1,16 @@
 # Transfer
 
----
-**Document Metadata** <br>**Category**: Applications & Components</br>
-**Audience**: Administrators, Engineers, App Developers
-<br>**Difficulty**: Beginner to Intermediate</br>
-**Time Required**: Approximately 15–30 minutes
-<br>**Prerequisites**: Active ConnexCS account, access to the Applications module, basic understanding of UI component configuration and list-transfer / dual-list controls (moving items between lists) </br>
-**Related Topics**: [Select Component](https://docs.connexcs.com/apps/components/select/), [Grid / Table Component](https://docs.connexcs.com/apps/components/table/), [Sub-Form Components](https://docs.connexcs.com/apps/components/sub-form/), [Page Layout Component](https://docs.connexcs.com/apps/components/page-layout/)
-<br>**Next Steps**: Build a sample UI using the Transfer component — e.g., assign/unassign items or users, configure a dual-list selection workflow; test moving items between lists, data binding, and correct persistence or submission of chosen values.</br>
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
----
+<strong>Category</strong>: Applications & Components<br>
+<strong>Audience</strong>: Administrators, Engineers, App Developers<br>
+<strong>Difficulty</strong>: Beginner to Intermediate<br>
+<strong>Time Required</strong>: Approximately 15–30 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account, access to the Applications module, basic understanding of UI component configuration and list-transfer / dual-list controls (moving items between lists)<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/components/select/">Select Component</a>, <a href="https://docs.connexcs.com/apps/components/table/">Grid / Table Component</a>, <a href="https://docs.connexcs.com/apps/components/sub-form/">Sub-Form Components</a>, <a href="https://docs.connexcs.com/apps/components/page-layout/">Page Layout Component</a><br>
+<strong>Next Steps</strong>: Build a sample UI using the Transfer component — e.g., assign/unassign items or users; configure a dual-list selection workflow; test moving items between lists, data binding, and correct persistence or submission of chosen values<br>
+
+</details>
 
 ## Description
 

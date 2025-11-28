@@ -1,11 +1,16 @@
 # Troubleshoot Signaling
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata** <br>**Category**: Troubleshooting & Diagnostics / SIP Signaling Troubleshooting</br> <br>**Audience**: Administrators, Engineers, Support Team</br> <br>**Difficulty**: Intermediate to Advanced</br> <br>**Time Required**: Approximately 30–40 minutes</br> <br>**Prerequisites**: Active ConnexCS account with access to SIP logs, tracing tools, and the ability to capture signaling traces on your network or device</br> <br>**Related Topics**: [OSI Model – Networking Fundamentals](https://docs.connexcs.com/guides/osi-model/) , [Make Call – API Reference](https://docs.connexcs.com/makecall/) , [Monitoring & Alerts – Overview](https://docs.connexcs.com/guides/monitoring/)</br> <br>**Next Steps**: After reviewing the signaling troubleshooting guide, capture a failed call’s SIP trace, identify anomalies (e.g., missing INVITE, BYE not received, authentication error), use the guide’s recommended checks (SIP headers, media negotiation, NAT issues), and document your findings for future reference or support escalation.</br>
+<strong>Category</strong>: Troubleshooting & Diagnostics / SIP Signaling Troubleshooting<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate to Advanced<br>
+<strong>Time Required</strong>: Approximately 30–40 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with access to SIP logs, tracing tools, and the ability to capture signaling traces on your network or device<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/guides/osi-model/">OSI Model – Networking Fundamentals</a>, <a href="https://docs.connexcs.com/makecall/">Make Call – API Reference</a>, <a href="https://docs.connexcs.com/guides/monitoring/">Monitoring & Alerts – Overview</a><br>
+<strong>Next Steps</strong>: After reviewing the signaling troubleshooting guide, capture a failed call’s SIP trace, identify anomalies (e.g., missing INVITE, BYE not received, authentication error), use the guide’s recommended checks (SIP headers, media negotiation, NAT issues), and document your findings for future reference or support escalation.<br>
 
----
-
+</details>
 
 Signaling is the process telephony systems use to establish a connection across a network or the internet. This includes functions such as device registration, setup, maintenance, and tear-down of calls.
 

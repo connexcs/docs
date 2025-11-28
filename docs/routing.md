@@ -1,16 +1,24 @@
 # Routing
 
----
-**Document Metadata**  
-**Category:** Routing & Call Control  
-**Audience:** Administrators, Support Engineers  
-**Difficulty:** Intermediate  
-**Time Required:** 1-2 hours  
-**Prerequisites:** [Carrier Setup](carrier.md), [Customer Setup](customer/customer.md), [Rate Cards](rate-card-building.md)  
-**Related Topics:** [Routing Strategy](routing-strategy.md), [Global Routing](global-routing.md), [Customer Routing](customer/routing.md)  
-**Next Steps:** [Routing Strategy](routing-strategy.md), [Circuit Test](circuit-test.md)
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
----
+<strong>Category</strong>: Routing & Call Control<br>
+<strong>Audience</strong>: Administrators, Support Engineers<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: 1–2 hours<br>
+<strong>Prerequisites</strong>: 
+<a href="carrier.md">Carrier Setup</a>, 
+<a href="customer/customer.md">Customer Setup</a>, 
+<a href="rate-card-building.md">Rate Cards</a><br>
+<strong>Related Topics</strong>: 
+<a href="routing-strategy.md">Routing Strategy</a>, 
+<a href="global-routing.md">Global Routing</a>, 
+<a href="customer/routing.md">Customer Routing</a><br>
+<strong>Next Steps</strong>: 
+<a href="routing-strategy.md">Routing Strategy</a>, 
+<a href="circuit-test.md">Circuit Test</a><br>
+
+</details>
 
 ## Route Path
 

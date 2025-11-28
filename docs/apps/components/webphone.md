@@ -1,16 +1,16 @@
 # Webphone
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata** <br>**Category**: Applications & Components</br>
-**Audience**: Administrators, Engineers, App Developers
-</br>**Difficulty**: Intermediate</br>
-**Time Required**: Approximately 30–60 minutes
-<br>**Prerequisites**: Active ConnexCS account, access to the **Applications** module, SIP/WebRTC configuration completed in **Setup → Integrations → WebPhone**, and valid domains/TLS certificates for WebRTC</br>
-**Related Topics**: [Page Layout Component](https://docs.connexcs.com/apps/components/page-layout/), [Input Component](https://docs.connexcs.com/apps/components/input/), [Server Settings](https://docs.connexcs.com/setup/settings/servers/)
-<br>**Next Steps**: Embed WebPhone into an application page, test call flows, verify browser permissions (mic), configure domains, and validate WebRTC signalling and media connectivity</br>
+<strong>Category</strong>: Applications & Components<br>
+<strong>Audience</strong>: Administrators, Engineers, App Developers<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 30–60 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account, access to the <strong>Applications</strong> module, SIP/WebRTC configuration completed in <strong>Setup → Integrations → WebPhone</strong>, and valid domains/TLS certificates for WebRTC<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/components/page-layout/">Page Layout Component</a>, <a href="https://docs.connexcs.com/apps/components/input/">Input Component</a>, <a href="https://docs.connexcs.com/setup/settings/servers/">Server Settings</a><br>
+<strong>Next Steps</strong>: Embed WebPhone into an application page, test call flows, verify browser permissions (mic), configure domains, and validate WebRTC signalling and media connectivity<br>
 
----
+</details>
 
 ## Description
 

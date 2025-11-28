@@ -1,14 +1,16 @@
 # Query Builder
 
----
-**Document Metadata** <br>**Category**: Applications Platform / Query Builder</br>
-**Audience**: Developers, Data Engineers, Technical Integrators
-<br>**Difficulty**: Intermediate to Advanced</br>
-**Time Required**: Approximately 20–30 minutes <br>**Prerequisites**: Access to the ConnexCS Apps Platform IDE with permission to create Query Builder jobs, basic familiarity with SQL or structured query logic, understanding of your data-schema (database/table names, fields) </br>
-**Related Topics**: [Apps Architecture – App Structure](https://docs.connexcs.com/apps/architecture/app/) , [Databases – Custom Persistent Storage](https://docs.connexcs.com/apps/architecture/database/)
-<br>**Next Steps**: Create Query in IDE → select App/visibility → write and test SQL → use G3 for time-series data → save/share. </br>
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
----
+<strong>Category</strong>: Applications Platform / Query Builder<br>
+<strong>Audience</strong>: Developers, Data Engineers, Technical Integrators<br>
+<strong>Difficulty</strong>: Intermediate to Advanced<br>
+<strong>Time Required</strong>: Approximately 20–30 minutes<br>
+<strong>Prerequisites</strong>: Access to the ConnexCS Apps Platform IDE with permission to create Query Builder jobs, basic familiarity with SQL or structured query logic, understanding of your data-schema (database/table names, fields)<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/architecture/app/">Apps Architecture – App Structure</a>, <a href="https://docs.connexcs.com/apps/architecture/database/">Databases – Custom Persistent Storage</a><br>
+<strong>Next Steps</strong>: Create query in IDE → select App/visibility → write and test SQL → use G3 for time-series data → save/share<br>
+
+</details>
 
 ## Introduction
 

@@ -1,17 +1,16 @@
 # Packages
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata**
-<br>**Category**: Setup / Configuration / Packages</br>
-**Audience**: Administrators, Engineers, Product & Billing Teams
-<br>**Difficulty**: Intermediate</br>
-**Time Required**: Approximately 45–90 minutes
-<br>**Prerequisites**: Active ConnexCS account with Setup-Config access; understanding of service products, recurring billing models and account-level provisioning.</br>
-**Related Topics**: [`Customer → Packages`](https://docs.connexcs.com/customer/package/)
-<br>**Next Steps**: Navigate to `Setup → Config → Packages`, click **Add Package** to define product name, recurring retail cost, billing frequency and any one-time setup charge, then **Assign Package** to customers or direct to a DID/DID block and verify billing & portal visibility.</br>
+<strong>Category</strong>: Setup / Configuration / Packages<br>
+<strong>Audience</strong>: Administrators, Engineers, Product & Billing Teams<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 45–90 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with Setup-Config access; understanding of service products, recurring billing models and account-level provisioning.<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer/package/">Customer → Packages</a><br>
+<strong>Next Steps</strong>: Navigate to <code>Setup → Config → Packages</code>, click <strong>Add Package</strong> to define product name, recurring retail cost, billing frequency and any one-time setup charge, then <strong>Assign Package</strong> to customers or direct to a DID/DID block and verify billing & portal visibility.<br>
 
----
+</details>
 
 **Setup :material-menu-right: Config :material-menu-right: Packages**
 

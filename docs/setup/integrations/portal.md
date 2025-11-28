@@ -1,12 +1,16 @@
 # Portal
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata** <br>**Category**: Setup & Configuration → Integrations → Portal</br>
-**Audience**: Administrators, Engineers, Support Team <br>**Difficulty**: Intermediate</br>
-**Time Required**: 10–20 minutes <br>**Prerequisites**: ConnexCS account with Integrations and Branding permissions, custom domain / CNAME record access <br>**Related Topics**: [API Integrations](https://docs.connexcs.com/setup/integrations/api/), [Multi-Brand Support](https://docs.connexcs.com/setup/integrations/portal/#multi-brand-support) <br>**Next Steps**: [API Integrations](https://docs.connexcs.com/setup/integrations/api/), [JWT Keys / Tokens](https://docs.connexcs.com/setup/integrations/jwt/)
+<strong>Category</strong>: Setup & Configuration → Integrations → Portal<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: 10–20 minutes<br>
+<strong>Prerequisites</strong>: ConnexCS account with Integrations and Branding permissions, custom domain / CNAME record access<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/setup/integrations/api/">API Integrations</a>, <a href="https://docs.connexcs.com/setup/integrations/portal/#multi-brand-support">Multi-Brand Support</a><br>
+<strong>Next Steps</strong>: <a href="https://docs.connexcs.com/setup/integrations/api/">API Integrations</a>, <a href="https://docs.connexcs.com/setup/integrations/jwt/">JWT Keys / Tokens</a><br>
 
----
+</details>
 
 **Setup :material-menu-right: Integrations :material-menu-right: Portal**
 

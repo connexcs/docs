@@ -1,17 +1,16 @@
 # Servers
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata**
-<br>**Category**: Setup / Settings / Servers</br>
-**Audience**: Administrators, Network Engineers, Operations Team
-<br>**Difficulty**: Intermediate to Advanced</br>
-**Time Required**: Approximately 1–2 hours
-<br>**Prerequisites**: Active ConnexCS account with Setup-Settings access; familiarity with SIP server architecture, load balancing, clustering, and media (RTP) servers.</br>
-**Related Topics**: [Getting Started – Deploying Servers](https://docs.connexcs.com/getting-started/), [Setup / Settings / RTP Zones](https://docs.connexcs.com/setup/settings/rtp-zones/)
-<br>**Next Steps**: Deploy your first server in the appropriate zone, configure cluster membership and capacity limits (Channels, CPS), set up media (RTP) servers if needed, apply certificates and security settings, and monitor real-time server metrics such as status, latency and load.</br>
+<strong>Category</strong>: Setup / Settings / Servers<br>
+<strong>Audience</strong>: Administrators, Network Engineers, Operations Team<br>
+<strong>Difficulty</strong>: Intermediate to Advanced<br>
+<strong>Time Required</strong>: Approximately 1–2 hours<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with Setup-Settings access; familiarity with SIP server architecture, load balancing, clustering, and media (RTP) servers.<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/getting-started/">Getting Started – Deploying Servers</a>, <a href="https://docs.connexcs.com/setup/settings/rtp-zones/">Setup / Settings / RTP Zones</a><br>
+<strong>Next Steps</strong>: Deploy your first server in the appropriate zone, configure cluster membership and capacity limits (Channels, CPS), set up media (RTP) servers if needed, apply certificates and security settings, and monitor real-time server metrics such as status, latency and load.<br>
 
----
+</details>
 
 **Setup :material-menu-right: Settings :material-menu-right: Servers**
 

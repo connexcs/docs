@@ -1,15 +1,16 @@
 # Script Forge
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata** <br>**Category**: Applications Architecture / Scripting Engine</br>
-**Audience**: Engineers, Developers, Architects
-<br>**Difficulty**: Intermediate to Advanced</br>
-**Time Required**: Approximately 30–60 minutes
-<br>**Prerequisites**: Active ConnexCS account, access to the Applications / Developer module, familiarity with scripting basics and ConnexCS architecture concepts</br>
-**Related Topics**: [ConnexCS Applications Overview](https://docs.connexcs.com/apps/architecture/architecture), [ScriptForge Scripting Reference](https://docs.connexcs.com/apps/architecture/scriptforge/), [Database Integration](https://docs.connexcs.com/apps/architecture/database/)
-<br>**Next Steps**: Review the ScriptForge architecture documentation; plan how scripts will integrate with your application logic or data flows; experiment with example scripts; validate integration with existing modules.</br>
+<strong>Category</strong>: Applications Architecture / Scripting Engine<br>
+<strong>Audience</strong>: Engineers, Developers, Architects<br>
+<strong>Difficulty</strong>: Intermediate to Advanced<br>
+<strong>Time Required</strong>: Approximately 30–60 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account, access to the Applications / Developer module, familiarity with scripting basics and ConnexCS architecture concepts<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/architecture/architecture">ConnexCS Applications Overview</a>, <a href="https://docs.connexcs.com/apps/architecture/scriptforge/">ScriptForge Scripting Reference</a>, <a href="https://docs.connexcs.com/apps/architecture/database/">Database Integration</a><br>
+<strong>Next Steps</strong>: Review the ScriptForge architecture documentation; plan how scripts will integrate with your application logic or data flows; experiment with example scripts; validate integration with existing modules<br>
 
+</details>
 
 ## Introduction
 

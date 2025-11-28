@@ -1,16 +1,16 @@
 # Grid
 
----
-**Document Metadata**
-<br>**Category**: Applications Platform / UI Components — Grid Component</br>
-**Audience**: Developers, Engineers, UI Designers, Data & Form Builders
-<br>**Difficulty**: Intermediate</br>
-**Time Required**: Approximately 15–25 minutes
-<br>**Prerequisites**: Access to the ConnexCS Apps IDE → Page Builder, familiarity with form & UI design, basic understanding of tabular data and form-based layouts</br>
-**Related Topics**: [Page Builder – Layout & Component Usage](https://docs.connexcs.com/apps/page-builder/)
-<br>**Next Steps**: Add Grid for layout → configure rows/columns with components → use API for dynamic control → test responsiveness.</br>
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
----
+<strong>Category</strong>: Applications Platform / UI Components — Grid Component<br>
+<strong>Audience</strong>: Developers, Engineers, UI Designers, Data & Form Builders<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 15–25 minutes<br>
+<strong>Prerequisites</strong>: Access to the ConnexCS Apps IDE → Page Builder, familiarity with form & UI design, basic understanding of tabular data and form-based layouts<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/page-builder/">Page Builder – Layout & Component Usage</a><br>
+<strong>Next Steps</strong>: Add Grid for layout → configure rows/columns with components → use API for dynamic control → test responsiveness<br>
+
+</details>
 
 ## Description
 

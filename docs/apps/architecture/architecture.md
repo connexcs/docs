@@ -1,13 +1,16 @@
 # Architecture
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata** <br>**Category**: Applications Platform / Apps Architecture</br>
-**Audience**: Engineers, Developers, Technical Leads <br>**Difficulty**: Advanced</br>
-**Time Required**: Approximately 35-45 minutes
-<br>**Prerequisites**: An active ConnexCS account with the Apps platform enabled, basic understanding of web application architecture and backend services</br> **Related Topics**: [Apps – Introduction](https://docs.connexcs.com/apps/introduction/) , [Apps – Use-Case Examples](https://docs.connexcs.com/apps/use-case/) <br>**Next Steps**: Map your app to architecture layers (UI, business-logic, data-services), assign components to hosting platforms (Page Builder, ScriptForge, REST), and update standards accordingly.</br>
+<strong>Category</strong>: Applications Platform / Apps Architecture<br>
+<strong>Audience</strong>: Engineers, Developers, Technical Leads<br>
+<strong>Difficulty</strong>: Advanced<br>
+<strong>Time Required</strong>: Approximately 35–45 minutes<br>
+<strong>Prerequisites</strong>: An active ConnexCS account with the Apps Platform enabled, basic understanding of web application architecture and backend services<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/introduction/">Apps – Introduction</a>, <a href="https://docs.connexcs.com/apps/use-case/">Apps – Use-Case Examples</a><br>
+<strong>Next Steps</strong>: Map your app to architecture layers (UI, business-logic, data-services), assign components to hosting platforms (Page Builder, ScriptForge, REST), and update standards accordingly<br>
 
----
+</details>
 
 ## Introduction
 

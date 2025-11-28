@@ -1,12 +1,16 @@
 # File
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata** <br>**Category**: Customer / Information → Files / Documents</br>
-**Audience**: Administrators, Support Team, Customer Account Managers<br>**Difficulty**: Beginner to Intermediate</br>
-**Time Required**: 5–10 minutes<br>**Prerequisites**: Access to the ConnexCS control panel under a customer account; appropriate permissions to upload or manage customer files <br>**Related Topics**: [Document Guide](https://docs.connexcs.com/guides/doc-guide/) — overview of document types, [Customer Portal Documents](https://docs.connexcs.com/customer-portal/cp-documents/) — how customers view files.</br>**Next Steps**: Use the Files section to upload required documents (e.g. contracts, proof-of-identity, invoices), then manage or request additional customer documents via the customer account interface.
+<strong>Category</strong>: Customer / Information → Files / Documents<br>
+<strong>Audience</strong>: Administrators, Support Team, Customer Account Managers<br>
+<strong>Difficulty</strong>: Beginner to Intermediate<br>
+<strong>Time Required</strong>: 5–10 minutes<br>
+<strong>Prerequisites</strong>: Access to the ConnexCS control panel under a customer account; appropriate permissions to upload or manage customer files<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/guides/doc-guide/">Document Guide</a> — overview of document types, <a href="https://docs.connexcs.com/customer-portal/cp-documents/">Customer Portal Documents</a> — how customers view files.<br>
+<strong>Next Steps</strong>: Use the Files section to upload required documents (e.g., contracts, proof-of-identity, invoices), then manage or request additional customer documents via the customer account interface.<br>
 
----
+</details>
 
 **Management :material-menu-right: File**
 

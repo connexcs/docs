@@ -1,17 +1,16 @@
 # Commission
----
 
-**Document Metadata**
-<br>**Category**: Setup / Account Manager / Commission</br>
-**Audience**: Administrators, Revenue & Sales Managers, Support Team
-<br>**Difficulty**: Beginner to Intermediate</br>
-**Time Required**: Approximately 30-45 minutes
-<br>**Prerequisites**: Active ConnexCS account with `Setup → Account Manager` access; familiarity with sales account management and commission percentage workflows.</br>
-**Related Topics**: [Account Manager – Payment](https://docs.connexcs.com/setup/account-manager/payment/)
-<br>**Next Steps**: Define commission records for account managers (select user, start date, end date, % value), link account managers to customers via the `Management → Customer` screen, test that commissions correctly attribute and report.
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
----
+<strong>Category</strong>: Setup / Account Manager / Commission<br>
+<strong>Audience</strong>: Administrators, Revenue & Sales Managers, Support Team<br>
+<strong>Difficulty</strong>: Beginner to Intermediate<br>
+<strong>Time Required</strong>: Approximately 30–45 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with <code>Setup → Account Manager</code> access; familiarity with sales account management and commission percentage workflows.<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/setup/account-manager/payment/">Account Manager – Payment</a><br>
+<strong>Next Steps</strong>: Define commission records for account managers (select user, start date, end date, % value), link account managers to customers via the <code>Management → Customer</code> screen, test that commissions correctly attribute and report.<br>
 
+</details>
 
 **Setup :material-menu-right: Account Manager :material-menu-right: Commission**
 

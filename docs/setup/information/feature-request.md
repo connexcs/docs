@@ -1,12 +1,16 @@
 # Feature Request
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata** <br>**Category**: Setup & Configuration → Information → Feature Requests</br>
-**Audience**: Administrators, Engineers, Support Team <br>**Difficulty**: Beginner to Intermediate</br>
-**Time Required**: 5–10 minutes <br>**Prerequisites**: Active ConnexCS account with access to the Setup → Information section and user permission to submit feedback. <br>**Related Topics**: [Change Log](https://docs.connexcs.com/setup/information/change-log/)<br>**Next Steps**: Review current open requests and up-vote your priorities in the Feature Request list.
+<strong>Category</strong>: Setup & Configuration → Information → Feature Requests<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Beginner to Intermediate<br>
+<strong>Time Required</strong>: 5–10 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with access to the Setup → Information section and user permission to submit feedback.<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/setup/information/change-log/">Change Log</a><br>
+<strong>Next Steps</strong>: Review current open requests and up-vote your priorities in the Feature Request list.<br>
 
----
+</details>
 
 **Setup :material-menu-right: Information :material-menu-right: Feature Request**
 

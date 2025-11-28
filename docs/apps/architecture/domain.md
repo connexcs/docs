@@ -1,13 +1,16 @@
 # Domain
 
----
-**Document Metadata** <br>**Category**: Applications Platform / Domain Configuration</br>
-**Audience**: Developers, Platform Engineers, DevOps Team <br>**Difficulty**: Intermediate </br>
-**Time Required**: Approximately 20–30 minutes <br>**Prerequisites**: Access to the ConnexCS Apps Platform IDE, ability to manage DNS records (CNAME) for custom domains, and permissions to deploy apps via the platform</br>
-**Related Topics**: [Apps Architecture – Applications Overview](https://docs.connexcs.com/apps/architecture/app/), [Apps Architecture – Domain Setup Steps](https://docs.connexcs.com/apps/architecture/domain/)
-<br>**Next Steps**: Configure domain: use `.cnx.page` subdomain or add custom domain (CNAME → `cnx.page`) → name entry page "index" → verify access → document conventions and update release process.</br>
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
----
+<strong>Category</strong>: Applications Platform / Domain Configuration<br>
+<strong>Audience</strong>: Developers, Platform Engineers, DevOps Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 20–30 minutes<br>
+<strong>Prerequisites</strong>: Access to the ConnexCS Apps Platform IDE, ability to manage DNS records (CNAME) for custom domains, and permissions to deploy apps via the platform<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/architecture/app/">Apps Architecture – Applications Overview</a>, <a href="https://docs.connexcs.com/apps/architecture/domain/">Apps Architecture – Domain Setup Steps</a><br>
+<strong>Next Steps</strong>: Configure domain: use <code>.cnx.page</code> subdomain or add custom domain (CNAME → <code>cnx.page</code>) → name entry page "index" → verify access → document conventions and update release process<br>
+
+</details>
 
 ## Introduction
 

@@ -1,16 +1,16 @@
 # Sub-Form
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata** <br>**Category**: Applications & Components</br>
-**Audience**: Administrators, Engineers, App Developers
-<br>**Difficulty**: Beginner to Intermediate</br>
-**Time Required**: Approximately 15–30 minutes
-<br>**Prerequisites**: Active ConnexCS account, access to the Applications module, basic understanding of UI component configuration and form-building concepts</br>
-**Related Topics**: [Input Component](https://docs.connexcs.com/apps/components/input/), [Page Layout Component](https://docs.connexcs.com/apps/components/page-layout/), [Table / Grid Components](https://docs.connexcs.com/apps/components/grid/)
-<br>**Next Steps**: Create a UI form using the Sub-Form component to group related input fields or sections, configure data binding for nested data structures, test form submission and data validation for nested fields.</br>
+<strong>Category</strong>: Applications & Components<br>
+<strong>Audience</strong>: Administrators, Engineers, App Developers<br>
+<strong>Difficulty</strong>: Beginner to Intermediate<br>
+<strong>Time Required</strong>: Approximately 15–30 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account, access to the Applications module, basic understanding of UI component configuration and form-building concepts<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/components/input/">Input Component</a>, <a href="https://docs.connexcs.com/apps/components/page-layout/">Page Layout Component</a>, <a href="https://docs.connexcs.com/apps/components/grid/">Table / Grid Components</a><br>
+<strong>Next Steps</strong>: Create a UI form using the Sub-Form component to group related input fields or sections, configure data binding for nested data structures, and test form submission and data validation for nested fields<br>
 
----
+</details>
 
 ## Description
 

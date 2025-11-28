@@ -1,16 +1,16 @@
 # Getting Started
 
----
-**Document Metadata**  
-**Category:** Setup & Configuration  
-**Audience:** New Users, Administrators  
-**Difficulty:** Beginner  
-**Time Required:** 2-4 hours  
-**Prerequisites:** ConnexCS account created  
-**Related Topics:** [Dashboard](dashboard.md), [Carrier Setup](carrier.md), [Customer Setup](customer/customer.md)  
-**Next Steps:** [Carrier Configuration](carrier.md), [Rate Card Setup](rate-card-building.md)
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
----
+<strong>Category</strong>: Setup & Configuration<br>
+<strong>Audience</strong>: New Users, Administrators<br>
+<strong>Difficulty</strong>: Beginner<br>
+<strong>Time Required</strong>: 2–4 hours<br>
+<strong>Prerequisites</strong>: ConnexCS account created<br>
+<strong>Related Topics</strong>: <a href="dashboard.md">Dashboard</a>, <a href="carrier.md">Carrier Setup</a>, <a href="customer/customer.md">Customer Setup</a><br>
+<strong>Next Steps</strong>: <a href="carrier.md">Carrier Configuration</a>, <a href="rate-card-building.md">Rate Card Setup</a><br>
+
+</details>
 
 ## Welcome to ConnexCS!
 

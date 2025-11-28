@@ -1,12 +1,16 @@
 # Monitoring Guide
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata** <br>**Category**: Analytics & Observability / Monitoring & Alerts</br> **Audience**: Administrators, Engineers, Support Team <br>**Difficulty**: Intermediate</br>
- **Time Required**: Approximately 30–40 minutes <br>**Prerequisites**: Active ConnexCS account with access to the Monitoring module and privileges to view metrics and configure alerts</br> **Related Topics**: [Customer – Stats](https://docs.connexcs.com/customer/stats/), [Alerts & Thresholds](https://docs.connexcs.com/customer/alerts/#global-alerts) <br>**Next Steps**: After reviewing the Monitoring overview, set up customized dashboards for key KPIs (e.g., call volumes, CPS, errors) and link them to automated alerts for proactive issue detection.</br>
+<strong>Category</strong>: Analytics & Observability / Monitoring & Alerts<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 30–40 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with access to the Monitoring module and privileges to view metrics and configure alerts<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer/stats/">Customer – Stats</a>, <a href="https://docs.connexcs.com/customer/alerts/#global-alerts">Alerts & Thresholds</a><br>
+<strong>Next Steps</strong>: After reviewing the Monitoring overview, set up customized dashboards for key KPIs (e.g., call volumes, CPS, errors) and link them to automated alerts for proactive issue detection.<br>
 
----
-
+</details>
 
 ConnexCS offers several tools for monitoring Customers and Carriers to help plan, bill, and troubleshoot.
 

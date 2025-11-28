@@ -1,17 +1,16 @@
 # ConneXML
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata**
-<br>**Category**: Class 5 Services / ConneXML Scripting & Application Control</br>
-<br>**Audience**: Administrators, Engineers, Support Team</br>
-<br>**Difficulty**: Intermediate to Advanced</br>
-<br>**Time Required**: Approximately 1–2 hours</br>
-<br>**Prerequisites**: Active ConnexCS account with Class 5 module access; familiarity with XML scripting, IVR logic, and call-flow constructs.</br>
-<br>**Related Topics**: [Class 5 Apps & Workflow Builder](https://docs.connexcs.com/class5/apps/), [Class 5 IVR Configuration](https://docs.connexcs.com/class5/creating-ivr/)</br>
-<br>**Next Steps**: Create a new ConneXML application, author XML logic using supported verbs (e.g., `<Play>`, `<Gather>`, `<Dial>`), test with sample calls, then attach the application to a DID or inbound route for real-time execution.</br>
+<strong>Category</strong>: Class 5 Services / ConneXML Scripting & Application Control<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate to Advanced<br>
+<strong>Time Required</strong>: Approximately 1–2 hours<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with Class 5 module access; familiarity with XML scripting, IVR logic, and call-flow constructs<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/class5/apps/">Class 5 Apps & Workflow Builder</a>, <a href="https://docs.connexcs.com/class5/creating-ivr/">Class 5 IVR Configuration</a><br>
+<strong>Next Steps</strong>: Create a new ConneXML application, author XML logic using supported verbs (e.g., <code><Play></code>, <code><Gather></code>, <code><Dial></code>), test with sample calls, then attach the application to a DID or inbound route for real-time execution<br>
 
----
+</details>
 
 **Class 5 :material-menu-right: ConneXML**
 

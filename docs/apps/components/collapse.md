@@ -1,12 +1,15 @@
 # Collapse
 
----
-**Document Metadata** <br>**Category**: Applications Platform / UI Components — Collapse Component</br>
-**Audience**: Developers, Engineers, UI/UX Designers, Support Team
-<br>**Difficulty**: Beginner to Intermediate</br>
-**Time Required**: Approximately 10–15 minutes <br>**Prerequisites**: Access to the ConnexCS Apps Platform IDE (Page Builder), basic knowledge of UI layout and form design. </br>**Related Topics**: [Page Builder / Layout Components](https://docs.connexcs.com/apps/page-builder/), Other UI Components</br>
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
----
+<strong>Category</strong>: Applications Platform / UI Components — Collapse Component<br>
+<strong>Audience</strong>: Developers, Engineers, UI/UX Designers, Support Team<br>
+<strong>Difficulty</strong>: Beginner to Intermediate<br>
+<strong>Time Required</strong>: Approximately 10–15 minutes<br>
+<strong>Prerequisites</strong>: Access to the ConnexCS Apps Platform IDE (Page Builder), basic knowledge of UI layout and form design<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/page-builder/">Page Builder / Layout Components</a>, Other UI Components<br>
+
+</details>
 
 ## Description
 

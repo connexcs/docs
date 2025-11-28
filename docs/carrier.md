@@ -2,11 +2,17 @@
 
 **Management :material-menu-right: Carrier**
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata** <br>**Category**: Carrier Management / Termination & Origination Configuration</br>**Audience**: Administrators, Engineers, Support Team<br>**Difficulty**: Intermediate to Advanced</br>**Time Required**: Approximately 1–2 hours<br>**Prerequisites**: Active ConnexCS account with Carrier-module access; understanding of SIP trunking, termination/origination routing, and rate-card setup.</br>**Related Topics**: [Carrier Rate Cards](https://docs.connexcs.com/rate-card-building/), [Routing Overview](https://docs.connexcs.com/routing/)<br>**Next Steps**: Configure carrier authentication & endpoints, build provider routing strategies, and validate routing behaviour using Logs, Circuit Test, or Debugging Tools.</br>
+<strong>Category</strong>: Carrier Management / Termination & Origination Configuration<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate to Advanced<br>
+<strong>Time Required</strong>: Approximately 1–2 hours<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with Carrier-module access; understanding of SIP trunking, termination/origination routing, and rate-card setup.<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/rate-card-building/">Carrier Rate Cards</a>, <a href="https://docs.connexcs.com/routing/">Routing Overview</a><br>
+<strong>Next Steps</strong>: Configure carrier authentication & endpoints, build provider routing strategies, and validate routing behaviour using Logs, Circuit Test, or Debugging Tools.<br>
 
----
+</details>
 
 ## Overview
 

@@ -1,15 +1,15 @@
 # Divider
 
----
-**Document Metadata**
-<br>**Category**: Applications Platform / UI Components — Divider Component</br>
-**Audience**: Developers, Engineers, UI/UX Designers, Support Team
-<br>**Difficulty**: Beginner</br>
-**Time Required**: Approximately 5–10 minutes
-<br>**Prerequisites**: Access to the ConnexCS Apps Platform IDE (Page Builder), familiarity with UI layout and page structure principles.</br>
-**Related Topics**: [Page Builder / Layout Components Overview](https://docs.connexcs.com/apps/page-builder/)
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
----
+<strong>Category</strong>: Applications Platform / UI Components — Divider Component<br>
+<strong>Audience</strong>: Developers, Engineers, UI/UX Designers, Support Team<br>
+<strong>Difficulty</strong>: Beginner<br>
+<strong>Time Required</strong>: Approximately 5–10 minutes<br>
+<strong>Prerequisites</strong>: Access to the ConnexCS Apps Platform IDE (Page Builder), familiarity with UI layout and page structure principles<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/page-builder/">Page Builder / Layout Components Overview</a><br>
+
+</details>
 
 ## Description
 

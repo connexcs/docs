@@ -2,9 +2,17 @@
 
 ---
 
-**Document Metadata** <br>**Category**: Setup & Configuration → Information → Payment Log</br>
-**Audience**: Administrators, Engineers, Finance Team <br>**Difficulty**: Beginner</br>
-**Time Required**: 5–10 minutes <br>**Prerequisites**: Access to the Setup → Information section of the ConnexCS control panel; payments made via the customer portal or via supported processors such as PayPal IPN. <br>**Related Topics**: [API Integrations](https://docs.connexcs.com/setup/integrations/api/) (for payment processor setup), [Statements](https://docs.connexcs.com/setup/information/statements/) (billing overview) <br>**Next Steps**: Review and reconcile payment records, export for auditing or import into financial systems
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Setup & Configuration → Information → Payment Log<br>
+<strong>Audience</strong>: Administrators, Engineers, Finance Team<br>
+<strong>Difficulty</strong>: Beginner<br>
+<strong>Time Required</strong>: 5–10 minutes<br>
+<strong>Prerequisites</strong>: Access to the Setup → Information section of the ConnexCS control panel; payments made via the customer portal or via supported processors such as PayPal IPN.<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/setup/integrations/api/">API Integrations</a> (for payment processor setup), <a href="https://docs.connexcs.com/setup/information/statements/">Statements</a> (billing overview)<br>
+<strong>Next Steps</strong>: Review and reconcile payment records, export for auditing or import into financial systems<br>
+
+</details>
 
 ---
 

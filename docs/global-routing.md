@@ -1,17 +1,16 @@
 # Routing Global
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata**
-<br>**Category**: Routing / Global Routing Templates</br>
-**Audience**: Administrators, Engineers, Network & Operations Team
-<br>**Difficulty**: Intermediate to Advanced</br>
-**Time Required**: Approximately 1–2 hours
-<br>**Prerequisites**: Active ConnexCS account with Routing permissions; foundational knowledge of customer routing, tags, and routing strategies.</br>
-**Related Topics**: [Routing Strategy](https://docs.connexcs.com/routing-strategy/), [Routing Overview](https://docs.connexcs.com/routing/)
-<br>**Next Steps**: Create a global routing template, assign a unique Tag to the template, apply the template to relevant customers using the Tag field in their customer Config, then monitor routing behavior and make template modifications as required.</br>
+<strong>Category</strong>: Routing / Global Routing Templates<br>
+<strong>Audience</strong>: Administrators, Engineers, Network & Operations Team<br>
+<strong>Difficulty</strong>: Intermediate to Advanced<br>
+<strong>Time Required</strong>: Approximately 1–2 hours<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with Routing permissions; foundational knowledge of customer routing, tags, and routing strategies.<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/routing-strategy/">Routing Strategy</a>, <a href="https://docs.connexcs.com/routing/">Routing Overview</a><br>
+<strong>Next Steps</strong>: Create a global routing template, assign a unique Tag to the template, apply the template to relevant customers using the Tag field in their customer Config, then monitor routing behavior and make template modifications as required.<br>
 
----
+</details>
 
 **Management :material-menu-right: Routing Global**
 

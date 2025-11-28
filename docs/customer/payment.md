@@ -1,16 +1,16 @@
 # Payments
 
----
-**Document Metadata**
-<br>**Category**: Customer Account Management / Payments & Billing</br>
-**Audience**: Administrators, Engineers, Support Team
-<br>**Difficulty**: Intermediate</br>
-**Time Required**: Approximately 30–60 minutes
-<br>**Prerequisites**: Active ConnexCS account with Customer-module permissions; ability to manage customer accounts and access payment / top-up functions.</br>
-**Related Topics**: [Billing Overview](https://docs.connexcs.com/billing/), [API / Payment Integrations](https://docs.connexcs.com/setup/integrations/api/)
-<br>**Next Steps**: [Add & Manage Payments for a Customer](https://docs.connexcs.com/customer/payment/#add-payment), [Configure Global Payments and Integration with Processors](https://docs.connexcs.com/setup/integrations/api/#payments)</br>
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
----
+<strong>Category</strong>: Customer Account Management / Payments & Billing<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 30–60 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with Customer-module permissions; ability to manage customer accounts and access payment/top-up functions<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/billing/">Billing Overview</a>, <a href="https://docs.connexcs.com/setup/integrations/api/">API / Payment Integrations</a><br>
+<strong>Next Steps</strong>: <a href="https://docs.connexcs.com/customer/payment/#add-payment">Add & Manage Payments for a Customer</a>, <a href="https://docs.connexcs.com/setup/integrations/api/#payments">Configure Global Payments and Integration with Processors</a><br>
+
+</details>
 
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Payments**
 

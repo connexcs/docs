@@ -1,16 +1,16 @@
 # Direct Inward Dial (DID)
 
----
-**Document Metadata**
-<br>**Category**: Customer Account Management / Direct Inward Dial (DID)</br>
-<br>**Audience**: Administrators, Engineers, Account Managers</br>
-<br>**Difficulty**: Intermediate to Advanced</br>
-<br>**Time Required**: Approximately 45-90 minutes</br>
-<br>**Prerequisites**: Active ConnexCS account, knowledge of DID / inbound routing, customer- and carrier-rate-card setup</br>
-<br>**Related Topics**: [Customer – Routing](https://docs.connexcs.com/customer/routing/), [Global DID Management](https://docs.connexcs.com/customer/did/#range-holders)</br>
-<br>**Next Steps**: [Bulk DID Upload](https://docs.connexcs.com/customer/did/#bulk-upload), [Advanced DID Features: ScriptForge, STIR/SHAKEN settings](https://docs.connexcs.com/customer/did/#advanced)</br>
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
----
+<strong>Category</strong>: Customer Account Management / Direct Inward Dial (DID)<br>
+<strong>Audience</strong>: Administrators, Engineers, Account Managers<br>
+<strong>Difficulty</strong>: Intermediate to Advanced<br>
+<strong>Time Required</strong>: Approximately 45–90 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account; knowledge of DID / inbound routing, customer- and carrier-rate-card setup<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer/routing/">Customer – Routing</a>, <a href="https://docs.connexcs.com/customer/did/#range-holders">Global DID Management</a><br>
+<strong>Next Steps</strong>: <a href="https://docs.connexcs.com/customer/did/#bulk-upload">Bulk DID Upload</a>, <a href="https://docs.connexcs.com/customer/did/#advanced">Advanced DID Features: ScriptForge, STIR/SHAKEN settings</a><br>
+
+</details>
 
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: DID**
 

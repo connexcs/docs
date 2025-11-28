@@ -1,12 +1,17 @@
 
 # What's a Call-ID?
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata** <br>**Category**: Troubleshooting & Call Logging / Call-ID Locating</br> **Audience**: Administrators, Engineers, Support Team <br>**Difficulty**: Intermediate</br> **Time Required**: Approximately 15–20 minutes <br>**Prerequisites**: Active ConnexCS account with access to the Logging module and ability to capture SIP traces or device logs</br> **Related Topics**: [Logging – Call ID Details](https://docs.connexcs.com/logging/#call-id-details) , [How to / Locate Call-ID](https://docs.connexcs.com/guides/howto/callid/) <br>**Next Steps**: After locating the Call-ID for a problematic call, use it to open a support ticket or compare against successful calls in the Logging “Compare (Call IDs)” tool to diagnose differences.</br>
+<strong>Category</strong>: Troubleshooting & Call Logging / Call-ID Locating<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 15–20 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with access to the Logging module and ability to capture SIP traces or device logs<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/logging/#call-id-details">Logging – Call ID Details</a>, <a href="https://docs.connexcs.com/guides/howto/callid/">How to / Locate Call-ID</a><br>
+<strong>Next Steps</strong>: After locating the Call-ID for a problematic call, use it to open a support ticket or compare against successful calls in the Logging “Compare (Call IDs)” tool to diagnose differences.<br>
 
----
-
+</details>
 
 A **Call-ID** is a unique identifier that's automatically generated for every call.
 

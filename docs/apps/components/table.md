@@ -1,14 +1,16 @@
 # Table
 
----
-**Document Metadata** <br>**Category**: Applications & Components</br>
-**Audience**: Administrators, Engineers, App Developers
-<br>**Difficulty**: Beginner to Intermediate</br>
-**Time Required**: Approximately 15–30 minutes
-<br>**Prerequisites**: Active ConnexCS account, access to the Applications module, basic understanding of UI component configuration and data‐driven components (tables, lists, data binding) </br>
-**Related Topics**: [Grid Component](https://docs.connexcs.com/apps/components/grid/), [Pagination Component](https://docs.connexcs.com/apps/components/pagination/), [Input Component](https://docs.connexcs.com/apps/components/input/), [Page Layout Component](https://docs.connexcs.com/apps/components/page-layout/) <br>**Next Steps**: Create a sample table using the Table component to display data sets; test column configuration, sorting/filtering (if supported), data binding and integration with backend data sources; combine with Pagination or other components if listing large data sets.</br>
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
----
+<strong>Category</strong>: Applications & Components<br>
+<strong>Audience</strong>: Administrators, Engineers, App Developers<br>
+<strong>Difficulty</strong>: Beginner to Intermediate<br>
+<strong>Time Required</strong>: Approximately 15–30 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account, access to the Applications module, basic understanding of UI component configuration and data-driven components (tables, lists, data binding)<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/components/grid/">Grid Component</a>, <a href="https://docs.connexcs.com/apps/components/pagination/">Pagination Component</a>, <a href="https://docs.connexcs.com/apps/components/input/">Input Component</a>, <a href="https://docs.connexcs.com/apps/components/page-layout/">Page Layout Component</a><br>
+<strong>Next Steps</strong>: Create a sample table using the Table component to display data sets; test column configuration, sorting/filtering (if supported), data binding and integration with backend data sources; combine with Pagination or other components for large data sets<br>
+
+</details>
 
 ## Description
 

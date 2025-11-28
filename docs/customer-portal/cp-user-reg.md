@@ -1,13 +1,16 @@
 # User registration
 
----
-**Document Metadata** <br>**Category**: Customer Portal / User Registration (Active SIP Registrations)</br> **Audience**: Administrators, Compliance Teams, Support Engineers
-<br>**Difficulty**: Beginner to Intermediate </br>
-**Time Required**: Approximately 15–20 minutes <br>**Prerequisites**: Active ConnexCS Customer Portal account with permission to view user registration/endpoint information </br>
-**Related Topics**: [Authentication & Access Control](https://docs.connexcs.com/customer-portal/cp-authentication/) , [Logging & Audit Trails](https://docs.connexcs.com/logging/)
-<br>**Next Steps**: After reviewing the User Registration guide, access the User Registration tab, review currently active SIP user registrations (Username, IP, Protocol, NAT flags, TTL, last modified time), verify that all active registrations correspond to authorized devices/users, flag any unknown registrations, and schedule a periodic audit to ensure registration hygiene.</br>
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
----
+<strong>Category</strong>: Customer Portal / User Registration (Active SIP Registrations)<br>
+<strong>Audience</strong>: Administrators, Compliance Teams, Support Engineers<br>
+<strong>Difficulty</strong>: Beginner to Intermediate<br>
+<strong>Time Required</strong>: Approximately 15–20 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS Customer Portal account with permission to view user registration/endpoint information<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer-portal/cp-authentication/">Authentication & Access Control</a>, <a href="https://docs.connexcs.com/logging/">Logging & Audit Trails</a><br>
+<strong>Next Steps</strong>: After reviewing the User Registration guide, access the User Registration tab, review currently active SIP user registrations (Username, IP, Protocol, NAT flags, TTL, last modified time), verify that all active registrations correspond to authorized devices/users, flag any unknown registrations, and schedule a periodic audit to ensure registration hygiene.<br>
+
+</details>
 
 View active registrations (live calls):
 

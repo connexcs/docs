@@ -1,16 +1,16 @@
 # Route Stats
 
----
-**Document Metadata**
-<br>**Category**: Customer Analytics & Monitoring</br>
-**Audience**: Administrators, Engineers, Support Team
-<br>**Difficulty**: Intermediate</br>
-**Time Required**: Approximately 30–60 minutes
-<br>**Prerequisites**: An active ConnexCS account with access to the Customer module and routing configuration for the relevant customer.</br>
-**Related Topics**: [Customer – Stats](https://docs.connexcs.com/customer/stats/)
-<br>**Next Steps**: Review per-route performance graphs and breach alerts under `Route Stats` section.</br>
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
----
+<strong>Category</strong>: Customer Analytics & Monitoring<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 30–60 minutes<br>
+<strong>Prerequisites</strong>: An active ConnexCS account with access to the Customer module and routing configuration for the relevant customer<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer/stats/">Customer – Stats</a><br>
+<strong>Next Steps</strong>: Review per-route performance graphs and breach alerts under the <code>Route Stats</code> section<br>
+
+</details>
 
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Route Stats**
 

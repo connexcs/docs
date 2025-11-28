@@ -1,10 +1,16 @@
 # Do Not Call Lists
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata** <br>**Category**: Compliance & Call Filtering / DNC Management</br>**Audience**: Administrators, Compliance Teams, Support Engineers <br>**Difficulty**: Beginner to Intermediate</br> **Time Required**: Approximately 20–30 minutes <br>**Prerequisites**: Active ConnexCS account with access to Compliance Tools, and permission to manage DNC lists</br> **Related Topics**: [DNO](https://docs.connexcs.com/dnc/#us-dno-requirements-in-connexcs), [Federal DNC](https://docs.connexcs.com/customer/routing/#united-states-federal-do-not-call-dnc), [TPS](https://docs.connexcs.com/customer/routing/#united-kingdom-telephone-preference-service-tps) <br>**Next Steps**: After configuring your DNC settings, set up automated lookups via Routing → Routing Table filters and review additional compliance datasets under **Compliance Tools**</br>
+<strong>Category</strong>: Compliance & Call Filtering / DNC Management<br>
+<strong>Audience</strong>: Administrators, Compliance Teams, Support Engineers<br>
+<strong>Difficulty</strong>: Beginner to Intermediate<br>
+<strong>Time Required</strong>: Approximately 20–30 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with access to Compliance Tools, and permission to manage DNC lists<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/dnc/#us-dno-requirements-in-connexcs">DNO</a>, <a href="https://docs.connexcs.com/customer/routing/#united-states-federal-do-not-call-dnc">Federal DNC</a>, <a href="https://docs.connexcs.com/customer/routing/#united-kingdom-telephone-preference-service-tps">TPS</a><br>
+<strong>Next Steps</strong>: After configuring your DNC settings, set up automated lookups via <code>Routing → Routing Table</code> filters and review additional compliance datasets under <strong>Compliance Tools</strong>.<br>
 
----
+</details>
 
 In today's society, all modern call carriers should recognise and honor **Do Not Call Lists (DNC).**
 

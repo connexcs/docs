@@ -1,18 +1,21 @@
 # STIR / SHAKEN Cert
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata** <br>**Category**: Setup & Configuration → Information → STIR/SHAKEN Cert</br>
-**Audience**: Administrators, Engineers, Carrier / VoIP Originators <br>**Difficulty**: Intermediate to Advanced</br>
-**Time Required**: 15–30 minutes <br>**Prerequisites**:
+<strong>Category</strong>: Setup & Configuration → Information → STIR/SHAKEN Cert<br>
+<strong>Audience</strong>: Administrators, Engineers, Carrier / VoIP Originators<br>
+<strong>Difficulty</strong>: Intermediate to Advanced<br>
+<strong>Time Required</strong>: 15–30 minutes<br>
+<strong>Prerequisites</strong>:<br>
+<ul>
+<li>A valid STIR/SHAKEN certificate issued by a recognised authority (e.g., Iconectiv as STI-PA in the U.S.).</li>
+<li>Operating Company Number (OCN), FCC Form 499-A registration (for U.S.), and access to the certificate key/CSR process.</li>
+<li>Access to the Connex Carrier Services (ConnexCS) control panel in the “Information → STIR/SHAKEN Cert” section to upload certificate and key.</li>
+</ul>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer/cli/">Caller Line Identification (CLI)</a> (integration of attestation and CLI rules), <a href="https://docs.connexcs.com/guides/stir-shaken-fcc/">New FCC Regulations on STIR/SHAKEN</a><br>
+<strong>Next Steps</strong>: Configure STI/SHAKEN routing and attestation levels for your CLIs in <code>Customer → CLI</code> settings after certificate upload.<br>
 
-* A valid STIR/SHAKEN certificate issued by a recognised authority (e.g., Iconectiv as STI-PA in the U.S.)
-* Operating Company Number (OCN), FCC Form 499-A registration (for U.S.), and access to the certificate key/CSR process
-* Access to the Connex Carrier Services (ConnexCS) control panel in the “Information → STIR/SHAKEN Cert” section to upload certificate and key.
-
-<br>**Related Topics**: [Caller Line Identification (CLI)](https://docs.connexcs.com/customer/cli/) (integration of attestation and CLI rules), [New FCC Regulations on STIR/SHAKEN](https://docs.connexcs.com/guides/stir-shaken-fcc/)  <br>**Next Steps**: Configure STI/SHAKEN routing and attestation levels for your CLIs in `Customer → CLI` settings after certificate upload.
-
----
+</details>
 
 **Setup :material-menu-right: Information :material-menu-right: STIR/SHAKEN Cert**
 

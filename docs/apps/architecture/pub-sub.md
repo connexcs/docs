@@ -1,17 +1,16 @@
 # Pub/Sub Bus
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata**
-<br>**Category**: Applications Platform / Architecture – Pub-Sub Messaging </br>
-**Audience**: Engineers, Developers, Platform Integrators, System Architects
-<br>**Difficulty**: Intermediate to Advanced</br>
-**Time Required**: Approximately 20–30 minutes (to read and understand Pub/Sub usage in ConnexCS)
-<br>**Prerequisites**: Access to the ConnexCS Apps Platform, familiarity with asynchronous/event-driven programming concepts (e.g. publish/subscribe pattern), and basic JavaScript/ScriptForge knowledge for integration.</br>
-**Related Topics**: Apps Architecture – Overview of App Platform, ScriptForge (Custom Logic), Page-Builder & UI Components
-<br>**Next Steps**: Identify use cases for async event messaging (chat, notifications, state updates) → import cxPubSub module and use publish(topic, payload) / subscribe(topic, callback) → design topic naming strategy </br>
+<strong>Category</strong>: Applications Platform / Project Management & Organization<br>
+<strong>Audience</strong>: Engineers, Developers, DevOps & Integration Teams<br>
+<strong>Difficulty</strong>: Beginner to Intermediate<br>
+<strong>Time Required</strong>: Approximately 15–20 minutes (to create a new Project and understand workflow)<br>
+<strong>Prerequisites</strong>: Access to ConnexCS Apps IDE, account privileges to create Projects and Applications<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/architecture/app/">Applications – App Structure & Creation</a>, <a href="https://docs.connexcs.com/apps/architecture/architecture/">Apps Architecture Overview</a>, <a href="https://docs.connexcs.com/apps/architecture/architecture/#version-locking-vs-continuous-integration">Versioning & Deployment Workflow</a><br>
+<strong>Next Steps</strong>: After creating a Project, add one or more applications under it; define versioning/branching strategy; for each app, configure environment variables, Pub/Sub channels, and associate components (pages, scripts, databases) — then publish and track under the Project umbrella<br>
 
----
+</details>
 
 ## Introduction
 

@@ -1,18 +1,16 @@
 # AI Agent
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata**
-<br>**Category**: Class 5 Services / AI Agent Configuration</br>
-<br>**Audience**: Administrators, Engineers, Support Team</br>
-<br>**Difficulty**: Intermediate to Advanced</br>
-<br>**Time Required**: Approximately 1–2 hours</br>
-<br>**Prerequisites**: Active ConnexCS account with Class 5 module access; familiarity with conversational AI concepts, IVR flows, and application scripting.</br>
-<br>**Related Topics**: [Class 5 Apps & Workflows](https://docs.connexcs.com/class5/apps/), [ConneXML Call Flow Integration](https://docs.connexcs.com/class5/connexml/)</br>
-<br>**Next Steps**: Create your AI Agent with name, destination extension, model/platform settings; configure transcriber, TTS, built-in functions; integrate your agent into a call flow and enable knowledge-base or function calls.</br>
+<strong>Category</strong>: Carrier Management / Analytics & Monitoring<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 30–45 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with Carrier-module access; familiarity with traffic metrics such as Channels, CPS, ASR, ACD, and SIP signalling<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/carrier/carrier-main/">Carrier Main Configuration</a>, <a href="https://docs.connexcs.com/customer/stats/">Customer Stats</a><br>
+<strong>Next Steps</strong>: Navigate to the Stats tab for a carrier, review key performance graphs (e.g., Channels, ACD, ASR), filter by time period, identify under-performing routes or carriers, then generate alerts or take corrective actions as required<br>
 
----
-
+</details>
 
 **Class 5 :material-menu-right: AI Agent**
 

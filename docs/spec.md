@@ -1,11 +1,17 @@
 # Class 4 Softswitch
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata** <br>**Category**: Class 4 and Class 5 Specifications</br>
-**Audience**: Administrators, Engineers, Architects, Integrators <br>**Difficulty**: Intermediate to Advanced <br>**Time Required**: 15–30 minutes <br>**Prerequisites**: Familiarity with telecom/VoIP terminology and switching architecture—specifically Class 4 softswitch concepts. <br>**Related Topics**: [Scaling & Load Balancing](https://docs.connexcs.com/scaling-load-balancing/) (for deployment architecture), [Security](https://docs.connexcs.com/security/) (for compliance and design boundaries) <br>**Next Steps**: Review the Switch Administration or API Specification sections to align implementation details with the architectural overview.
+<strong>Category</strong>: Infrastructure & Connectivity / SIP Devices<br>
+<strong>Audience</strong>: Network Engineers, Administrators, Support Team<br>
+<strong>Difficulty</strong>: Intermediate to Advanced<br>
+<strong>Time Required</strong>: Approximately 30–45 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with permissions to manage SIP devices (DIDs, gateways, SIP endpoints) and access to Device Configuration modules.<br>
+<strong>Related Topics</strong>: 
+<a href="https://docs.connexcs.com/sip-devices/">SIP Device</a><br>
+<strong>Next Steps</strong>: After configuring your SIP devices, perform end-to-end call tests (inbound/outbound), monitor device registration and usage in the Reporting module, and schedule regular review of firmware and configuration settings for security compliance.<br>
 
----
+</details>
 
 **ConnexCS** is a Class 4 Cloud-based Softswitch (software switch).
 

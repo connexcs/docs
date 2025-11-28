@@ -1,14 +1,16 @@
 # Prefix Sets
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata** <br>**Category**: Setup & Configuration → Advanced Settings → Prefix Set</br>
-**Audience**: Administrators, Engineers, Support Team <br>**Difficulty**: Intermediate</br>
-**Time Required**: 10–15 minutes <br>**Prerequisites**: ConnexCS account with access to the Setup → Advanced section</br>
-**Related Topics**: [Dial-Plan Rules](https://docs.connexcs.com/guides/howto/restrict-calling-plan/), [Routing](https://docs.connexcs.com/customer/routing/)</br>
-**Next Steps**: [Routing](https://docs.connexcs.com/customer/routing/), [Dial-Plan Rules](https://docs.connexcs.com/guides/howto/restrict-calling-plan/)</br>
+<strong>Category</strong>: Setup & Configuration → Advanced Settings → Prefix Set<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: 10–15 minutes<br>
+<strong>Prerequisites</strong>: ConnexCS account with access to the Setup → Advanced section<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/guides/howto/restrict-calling-plan/">Dial-Plan Rules</a>, <a href="https://docs.connexcs.com/customer/routing/">Routing</a><br>
+<strong>Next Steps</strong>: <a href="https://docs.connexcs.com/customer/routing/">Routing</a>, <a href="https://docs.connexcs.com/guides/howto/restrict-calling-plan/">Dial-Plan Rules</a><br>
 
----
+</details>
 
 **Setup :material-menu-right: Advanced :material-menu-right: Prefix Set**
 

@@ -1,16 +1,16 @@
 # Alerts
 
----
-**Document Metadata**
-<br>**Category**: Customer Analytics & Monitoring / Alerts & Thresholds</br>
-<br>**Audience**: Administrators, Engineers, Support Team</br>
-<br>**Difficulty**: Intermediate</br>
-<br>**Time Required**: Approximately 30–45 minutes</br>
-<br>**Prerequisites**: Active ConnexCS account with access to the Customer module and ability to define alert thresholds (e-mail recipients, metrics)</br>
-<br>**Related Topics**: [Customer – Stats](https://docs.connexcs.com/customer/stats/), [Customer – Route Stats](https://docs.connexcs.com/customer/route-stats/)</br>
-<br>**Next Steps**: After setting up alerts, review [Global Alerts overview](https://docs.connexcs.com/customer/alerts/#global-alerts) and integrate push-notifications via [Pushover Notifications](https://docs.connexcs.com/customer/alerts/#pushover-notifications)</br>
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
----
+<strong>Category</strong>: Customer Analytics & Monitoring / Alerts & Thresholds<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 30–45 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with access to the Customer module and ability to define alert thresholds (email recipients, metrics)<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer/stats/">Customer – Stats</a>, <a href="https://docs.connexcs.com/customer/route-stats/">Customer – Route Stats</a><br>
+<strong>Next Steps</strong>: After setting up alerts, review the <a href="https://docs.connexcs.com/customer/alerts/#global-alerts">Global Alerts overview</a> and integrate push notifications via <a href="https://docs.connexcs.com/customer/alerts/#pushover-notifications">Pushover Notifications</a><br>
+
+</details>
 
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Alerts**
 

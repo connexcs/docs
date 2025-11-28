@@ -1,16 +1,16 @@
 # Call Detail Record
 
----
-**Document Metadata**
-<br>**Category**: Customer Analytics & Monitoring / Call-Detail Records (CDR)</br>
-**Audience**: Administrators, Engineers, Billing & Finance Teams
-<br>**Difficulty**: Intermediate</br>
-**Time Required**: Approximately 30–60 minutes
-<br>**Prerequisites**: An active ConnexCS account with access to the Customer Portal and permission to view CDRs; familiarity with call-detail records, billing concepts, and SQL-style querying.</br>
-**Related Topics**: [Customer – Stats](https://docs.connexcs.com/customer/stats/), [Customer – Latest Calls](https://docs.connexcs.com/customer/latest-calls/)
-<br>**Next Steps**: [Use Query Builder in CDR](https://docs.connexcs.com/customer/cdr/#query-builder), [Recalculate CDRs](https://docs.connexcs.com/customer/cdr/#recalculate-call-detail-record)</br>
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
----
+<strong>Category</strong>: Customer Analytics & Monitoring / Call-Detail Records (CDR)<br>
+<strong>Audience</strong>: Administrators, Engineers, Billing & Finance Teams<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 30–60 minutes<br>
+<strong>Prerequisites</strong>: An active ConnexCS account with access to the Customer Portal and permission to view CDRs; familiarity with call-detail records, billing concepts, and SQL-style querying<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer/stats/">Customer – Stats</a>, <a href="https://docs.connexcs.com/customer/latest-calls/">Customer – Latest Calls</a><br>
+<strong>Next Steps</strong>: <a href="https://docs.connexcs.com/customer/cdr/#query-builder">Use Query Builder in CDR</a>, <a href="https://docs.connexcs.com/customer/cdr/#recalculate-call-detail-record">Recalculate CDRs</a><br>
+
+</details>
 
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: CDR**
 

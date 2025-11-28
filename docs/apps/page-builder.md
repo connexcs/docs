@@ -1,15 +1,16 @@
 # Page Builder
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata** <br>**Category**: Applications Platform / Page Builder</br>
-**Audience**: Engineers, Developers, Platform Integrators
-<br>**Difficulty**: Intermediate</br>
-**Time Required**: Approximately 25–35 minutes <br>**Prerequisites**: Access to the ConnexCS Apps Platform IDE, familiarity with basic web application UI design and event/data-binding concepts. </br>
-**Related Topics**: [Apps Platform – Introduction](https://docs.connexcs.com/apps/introduction/) (covers drag-&-drop and architecture), [Apps Platform – Button Builder](https://docs.connexcs.com/apps/architecture/button-builder/) (for action buttons)
-<br>**Next Steps**: Create page → add components → configure attributes and data sources → implement events/API methods → test across devices → publish.
+<strong>Category</strong>: Applications Platform / Page Builder<br>
+<strong>Audience</strong>: Engineers, Developers, Platform Integrators<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 25–35 minutes<br>
+<strong>Prerequisites</strong>: Access to the ConnexCS Apps Platform IDE, familiarity with basic web application UI design and event/data-binding concepts<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/introduction/">Apps Platform – Introduction</a>, <a href="https://docs.connexcs.com/apps/architecture/button-builder/">Apps Platform – Button Builder</a><br>
+<strong>Next Steps</strong>: Create page → add components → configure attributes and data sources → implement events/API methods → test across devices → publish<br>
 
----
+</details>
 
 ## Introduction
 

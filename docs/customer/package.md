@@ -1,16 +1,16 @@
 # Packages
 
----
-**Document Metadata**
-<br>**Category**: Customer Account Management / Packages & Service Products</br>
-**Audience**: Administrators, Engineers, Billing & Finance Teams
-<br>**Difficulty**: Intermediate</br>
-**Time Required**: Approximately 45–90 minutes
-<br>**Prerequisites**: Active ConnexCS account with access to the `Customer → Package` module; understanding of recurring billing, product provisioning in the system.</br>
-**Related Topics**: [Setup → Packages (global config)](https://docs.connexcs.com/setup/config/packages/),  [Customer → Payment](https://docs.connexcs.com/customer/payment/)
-<br>**Next Steps**: Assign a package to a customer or DID, and configure billing frequency, free-minutes bundles, minimum spend rules. See the [Assign Package](https://docs.connexcs.com/customer/package/#assign-packages) section in the Packages guide.</br>
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
----
+<strong>Category</strong>: Customer Account Management / Packages & Service Products<br>
+<strong>Audience</strong>: Administrators, Engineers, Billing & Finance Teams<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 45–90 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with access to the <code>Customer → Package</code> module; understanding of recurring billing and product provisioning<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/setup/config/packages/">Setup → Packages (global config)</a>, <a href="https://docs.connexcs.com/customer/payment/">Customer → Payment</a><br>
+<strong>Next Steps</strong>: Assign a package to a customer or DID, configure billing frequency, free-minutes bundles, and minimum-spend rules. Refer to <a href="https://docs.connexcs.com/customer/package/#assign-packages">Assign Package</a> in the Packages guide<br>
+
+</details>
 
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Packages**
 

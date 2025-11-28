@@ -1,10 +1,17 @@
 # Contracts
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata** <br>**Category**: Customer Portal / Contracts Management</br> **Audience**: Administrators, Legal & Compliance Teams, Support Staff <br>**Difficulty**: Intermediate</br> **Time Required**: Approximately 15–20 minutes <br>**Prerequisites**: Active ConnexCS Customer Portal account with permission to view and approve contracts</br>**Related Topics**: [Customer Portal – Documents](https://docs.connexcs.com/customer-portal/cp-documents/) <br>**Next Steps**: Scan for any “Unapproved” contracts, Check the “Grace Period” column, click either the contract name or the “Approve” button to open it, review the contract text, enter the approver name, toggle “I Agree”, click “I Approve”.</br>
+<strong>Category</strong>: Customer Portal / Contracts Management<br>
+<strong>Audience</strong>: Administrators, Legal & Compliance Teams, Support Staff<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 15–20 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS Customer Portal account with permission to view and approve contracts<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer-portal/cp-documents/">Customer Portal – Documents</a><br>
+<strong>Next Steps</strong>: Scan for any “Unapproved” contracts, check the “Grace Period” column, click the contract name or the “Approve” button to open it, review the contract text, enter the approver name, toggle “I Agree”, then click “I Approve”<br>
 
----
+</details>
+
 View all **Contracts** associated with your account.
 
 !!! tip "Unapproved Contracts"

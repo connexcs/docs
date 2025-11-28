@@ -1,16 +1,16 @@
 # Time
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata** <br>**Category**: Applications & Components</br>
-**Audience**: Administrators, Engineers, App Developers
-<br>**Difficulty**: Beginner to Intermediate</br>
-**Time Required**: Approximately 15–30 minutes
-<br>**Prerequisites**: Active ConnexCS account, access to the Applications module, basic understanding of UI component configuration and time-input controls</br>
-**Related Topics**: [Input Component](https://docs.connexcs.com/apps/components/input/), [Number Component](https://docs.connexcs.com/apps/components/number/), [Date Component](https://docs.connexcs.com/apps/components/date/), [Sub-Form Components](https://docs.connexcs.com/apps/components/sub-form/)
-<br>**Next Steps**: Build a UI or form that uses the Time component to capture time values (e.g. scheduling or timestamp inputs); test with different time formats, default values, and validate user input correctness.</br>
+<strong>Category</strong>: Applications & Components<br>
+<strong>Audience</strong>: Administrators, Engineers, App Developers<br>
+<strong>Difficulty</strong>: Beginner to Intermediate<br>
+<strong>Time Required</strong>: Approximately 15–30 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account, access to the Applications module, basic understanding of UI component configuration and time-input controls<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/components/input/">Input Component</a>, <a href="https://docs.connexcs.com/apps/components/number/">Number Component</a>, <a href="https://docs.connexcs.com/apps/components/date/">Date Component</a>, <a href="https://docs.connexcs.com/apps/components/sub-form/">Sub-Form Components</a><br>
+<strong>Next Steps</strong>: Build a UI or form that uses the Time component to capture time values (e.g., scheduling or timestamp inputs); test with different time formats, default values, and validate user input correctness<br>
 
----
+</details>
 
 ## Description
 

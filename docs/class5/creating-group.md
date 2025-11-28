@@ -1,17 +1,16 @@
 # Groups
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata**
-<br>**Category**: Class 5 Services / Group & Team Routing Configuration</br>
-<br>**Audience**: Administrators, Engineers, Support Team</br>
-<br>**Difficulty**: Intermediate</br>
-<br>**Time Required**: Approximately 30–60 minutes</br>
-<br>**Prerequisites**: Active ConnexCS account with Class 5 module access; understanding of call-queue logic, hunt groups and team routing strategies.</br>
-<br>**Related Topics**: [Class 5 IVR](https://docs.connexcs.com/class5/creating-ivr/), [Class 5 Apps & Workflow Builder](https://docs.connexcs.com/class5/apps/)</br>
-<br>**Next Steps**: Upload audio files for greetings and hold music, create your Group (select routing strategy: Parallel, Sequential or Queue), add group members or configure queue parameters (join/logout extensions, music/chime), assign PBX server and extension, and test inbound routing behavior.</br>
+<strong>Category</strong>: Class 5 Services / Group & Team Routing Configuration<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 30–60 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with Class 5 module access; understanding of call-queue logic, hunt groups, and team routing strategies<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/class5/creating-ivr/">Class 5 IVR</a>, <a href="https://docs.connexcs.com/class5/apps/">Class 5 Apps & Workflow Builder</a><br>
+<strong>Next Steps</strong>: Upload audio files for greetings and hold music, create your Group (choose routing strategy: Parallel, Sequential, or Queue), add group members or configure queue parameters (join/logout extensions, music/chime), assign a PBX server and extension, and test inbound routing behaviour<br>
 
----
+</details>
 
 **Class 5 :material-menu-right: Group**
 

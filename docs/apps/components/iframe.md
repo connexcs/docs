@@ -1,14 +1,14 @@
 # I-Frame
 
----
-**Document Metadata**
-<br>**Category**: Applications Platform / UI Components — IFrame Component</br>
-**Audience**: Developers, Engineers, UI Integrators, Support Team
-<br>**Difficulty**: Intermediate</br>
-**Time Required**: Approximately 15–25 minutes to review and integrate into an app
-<br>**Prerequisites**: Access to ConnexCS Apps IDE (PageBuilder), basic understanding of HTML/web embedding, familiarity with security and cross-origin constraints.</br>
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
----
+<strong>Category</strong>: Applications Platform / UI Components — IFrame Component<br>
+<strong>Audience</strong>: Developers, Engineers, UI Integrators, Support Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 15–25 minutes to review and integrate into an app<br>
+<strong>Prerequisites</strong>: Access to ConnexCS Apps IDE (Page Builder), basic understanding of HTML/web embedding, familiarity with security and cross-origin constraints<br>
+
+</details>
 
 ## Description
 

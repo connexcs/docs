@@ -1,10 +1,18 @@
 # Status
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata** <br>**Category**: System Operations / System Status & Health</br> **Audience**: Administrators, Engineers, Support Team <br>**Difficulty**: Beginner to Intermediate</br> **Time Required**: Approximately 10–15 minutes <br>**Prerequisites**: Active ConnexCS account with access to the status portal or system-health dashboard </br>**Related Topics**: [Monitoring Overview](https://docs.connexcs.com/guides/monitoring/), [Alerts & Thresholds](https://docs.connexcs.com/customer/alerts/#global-alerts)<br> **Next Steps**: Keep checking for any new developments.</br>
+<strong>Category</strong>: System Operations / System Status & Health<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Beginner to Intermediate<br>
+<strong>Time Required</strong>: Approximately 10–15 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with access to the status portal or system-health dashboard<br>
+<strong>Related Topics</strong>:
+<a href="https://docs.connexcs.com/guides/monitoring/">Monitoring Overview</a>,
+<a href="https://docs.connexcs.com/customer/alerts/#global-alerts">Alerts & Thresholds</a><br>
+<strong>Next Steps</strong>: Keep checking for any new developments.<br>
 
----
+</details>
 
 **Management :material-menu-right: Status**
 

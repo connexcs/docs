@@ -1,11 +1,16 @@
 # App
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata** <br>**Category**: Applications Platform / App Structure & Best Practices </br> **Audience**: Engineers, Developers, Technical Leads <br>**Difficulty**: Advanced </br> 
-**Time Required**: Approximately 30–40 minutes <br>**Prerequisites**: Access to the ConnexCS Apps Platform (Page Builder, ScriptForge, Data Services), understanding of modular web-app architecture </br> **Related Topics**: [Apps Architecture Overview](https://docs.connexcs.com/apps/architecture/architecture/) , [App Use-Cases](https://docs.connexcs.com/apps/use-case/) <br>**Next Steps**: Define modules → build UI (Page Builder) → add logic (ScriptForge) → connect data → test → document and version.
+<strong>Category</strong>: Applications Platform / App Structure & Best Practices<br>
+<strong>Audience</strong>: Engineers, Developers, Technical Leads<br>
+<strong>Difficulty</strong>: Advanced<br>
+<strong>Time Required</strong>: Approximately 30–40 minutes<br>
+<strong>Prerequisites</strong>: Access to the ConnexCS Apps Platform (Page Builder, ScriptForge, Data Services), understanding of modular web-app architecture<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/architecture/architecture/">Apps Architecture Overview</a>, <a href="https://docs.connexcs.com/apps/use-case/">App Use-Cases</a><br>
+<strong>Next Steps</strong>: Define modules → build UI (Page Builder) → add logic (ScriptForge) → connect data → test → document and version<br>
 
----
+</details>
 
 ## Introduction
 

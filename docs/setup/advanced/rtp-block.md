@@ -1,14 +1,16 @@
 # RTP Block
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata** <br>**Category**: Setup & Configuration → Advanced Settings → RTP Block</br>
-**Audience**: Administrators, Engineers, Support Team <br>**Difficulty**: Intermediate</br>
-**Time Required**: 10–15 minutes <br>**Prerequisites**: ConnexCS account with access to the Setup → Advanced section <br>**Related Topics**: [Security Settings](https://docs.connexcs.com/security/), [Firewall](https://docs.connexcs.com/setup/advanced/firewall/), [Fraud Detection](https://docs.connexcs.com/setup/advanced/fraud/)</br>
-**Next Steps**: [Dial-Plan Rules](https://docs.connexcs.com/guides/howto/restrict-calling-plan/)
+<strong>Category</strong>: Setup & Configuration → Advanced Settings → RTP Block<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: 10–15 minutes<br>
+<strong>Prerequisites</strong>: ConnexCS account with access to the Setup → Advanced section<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/security/">Security Settings</a>, <a href="https://docs.connexcs.com/setup/advanced/firewall/">Firewall</a>, <a href="https://docs.connexcs.com/setup/advanced/fraud/">Fraud Detection</a><br>
+<strong>Next Steps</strong>: <a href="https://docs.connexcs.com/guides/howto/restrict-calling-plan/">Dial-Plan Rules</a><br>
 
----
-
+</details>
 
 **Setup :material-menu-right: Advanced :material-menu-right: RTP Block**
 

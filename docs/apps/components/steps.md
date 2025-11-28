@@ -1,16 +1,16 @@
 # Steps
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata** <br>**Category**: Applications & Components</br>
-**Audience**: Administrators, Engineers, App Developers
-<br>**Difficulty**: Beginner to Intermediate</br>
-**Time Required**: Approximately 15–30 minutes
-<br>**Prerequisites**: Active ConnexCS account, access to the Applications module, basic familiarity with UI component configuration and workflow‑step or wizard‑style UI patterns (multi‑step flows)</br>
-**Related Topics**: [Input Component](https://docs.connexcs.com/apps/components/input/), [Select Component](https://docs.connexcs.com/apps/components/select/), [Page Layout Component](https://docs.connexcs.com/apps/components/page-layout/), [Grid Component](https://docs.connexcs.com/apps/components/grid/)
-<br>**Next Steps**: Build a multi‑step form or wizard UI using the Steps component — e.g., for multi-stage data entry or onboarding flows; test navigation across steps, validation at each step, and state persistence across steps.</br>
+<strong>Category</strong>: Applications & Components<br>
+<strong>Audience</strong>: Administrators, Engineers, App Developers<br>
+<strong>Difficulty</strong>: Beginner to Intermediate<br>
+<strong>Time Required</strong>: Approximately 15–30 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account, access to the Applications module, basic familiarity with UI component configuration and workflow-step or wizard-style UI patterns (multi-step flows)<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/components/input/">Input Component</a>, <a href="https://docs.connexcs.com/apps/components/select/">Select Component</a>, <a href="https://docs.connexcs.com/apps/components/page-layout/">Page Layout Component</a>, <a href="https://docs.connexcs.com/apps/components/grid/">Grid Component</a><br>
+<strong>Next Steps</strong>: Build a multi-step form or wizard UI using the Steps component — e.g., for multi-stage data entry or onboarding flows; test navigation across steps, validation at each step, and state persistence across steps<br>
 
----
+</details>
 
 ## Description
 

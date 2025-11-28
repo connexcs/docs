@@ -1,12 +1,16 @@
 # Certificate
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata** <br>**Category**: Setup & Configuration → Information → Certificate</br>
-**Audience**: Administrators, Engineers, Support Team <br>**Difficulty**: Intermediate</br>
-**Time Required**: 10–15 minutes <br>**Prerequisites**: Access to the Setup → Information section of your ConnexCS Platform control panel; basic knowledge of TLS/SSL certificates and DNS domain configuration. <br>**Related Topics**: [WebPhone Domain Setup](https://docs.connexcs.com/webphone/) (requires certificate installation), [Server Configuration – Certificates](https://docs.connexcs.com/setup/settings/servers/) (apply certificate to servers) <br>**Next Steps**: Apply selected certificate to an appropriate server or Web domain after adding it—see Server Configuration or Domain Deployment sections.
+<strong>Category</strong>: Setup & Configuration → Information → Certificate<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: 10–15 minutes<br>
+<strong>Prerequisites</strong>: Access to the Setup → Information section of your ConnexCS Platform control panel; basic knowledge of TLS/SSL certificates and DNS domain configuration.<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/webphone/">WebPhone Domain Setup</a> (requires certificate installation), <a href="https://docs.connexcs.com/setup/settings/servers/">Server Configuration – Certificates</a> (apply certificate to servers)<br>
+<strong>Next Steps</strong>: Apply selected certificate to an appropriate server or Web domain after adding it — see Server Configuration or Domain Deployment sections.<br>
 
----
+</details>
 
 **Setup :material-menu-right: Information :material-menu-right: Certificate**
 

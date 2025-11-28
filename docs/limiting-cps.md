@@ -1,10 +1,16 @@
 # Capacity Limiting
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata** <br>**Category**: Traffic & Call-Routing Management / Call Rate Limiting (CPS)</br> **Audience**: Administrators, Network Engineers, Support Team <br>**Difficulty**: Intermediate to Advanced</br> **Time Required**: Approximately 30–45 minutes <br>**Prerequisites**: Active ConnexCS account, access to Routing and Traffic Management modules, knowledge of CPS (Calls Per Second) concepts</br> **Related Topics**: [Routing](https://docs.connexcs.com/routing/), [Traffic Metrics](https://docs.connexcs.com/customer/custom-reports/) <br>**Next Steps**: After setting CPS limits, monitor actual traffic via the Reporting module and configure alert thresholds so you get notified when usage approaches limits.</br>
+<strong>Category</strong>: Traffic & Call-Routing Management / Call Rate Limiting (CPS)<br>
+<strong>Audience</strong>: Administrators, Network Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate to Advanced<br>
+<strong>Time Required</strong>: Approximately 30–45 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account, access to Routing and Traffic Management modules, knowledge of CPS (Calls Per Second) concepts<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/routing/">Routing</a>, <a href="https://docs.connexcs.com/customer/custom-reports/">Traffic Metrics</a><br>
+<strong>Next Steps</strong>: After setting CPS limits, monitor actual traffic via the Reporting module and configure alert thresholds so you get notified when usage approaches limits.<br>
 
----
+</details>
 
 ## Limiting Calls per Second and Channels
 

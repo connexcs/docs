@@ -1,16 +1,16 @@
 # Pagination
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata** <br>**Category**: Applications & Components</br>
-**Audience**: Administrators, Engineers, App Developers</br>
-**Difficulty**: Beginner to Intermediate</br>
-**Time Required**: Approximately 15–30 minutes</br>
-**Prerequisites**: Active ConnexCS account, access to the Applications module, basic understanding of UI component configuration and data-driven components (lists, tables, pagination concepts)</br>
-**Related Topics**: [Grid Component](https://docs.connexcs.com/apps/components/grid/), [Input Component](https://docs.connexcs.com/apps/components/input/), [Number Component](https://docs.connexcs.com/apps/components/number/), [Page Layout Component](https://docs.connexcs.com/apps/components/page-layout/)</br>
-**Next Steps**: Create a sample data-listing (e.g. table or list) using Pagination component; test behavior with varying dataset sizes; integrate navigation controls to browse pages of data</br>
+<strong>Category</strong>: Applications & Components<br>
+<strong>Audience</strong>: Administrators, Engineers, App Developers<br>
+<strong>Difficulty</strong>: Beginner to Intermediate<br>
+<strong>Time Required</strong>: Approximately 15–30 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account, access to the Applications module, basic understanding of UI component configuration and data-driven components (lists, tables, pagination concepts)<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/components/grid/">Grid Component</a>, <a href="https://docs.connexcs.com/apps/components/input/">Input Component</a>, <a href="https://docs.connexcs.com/apps/components/number/">Number Component</a>, <a href="https://docs.connexcs.com/apps/components/page-layout/">Page Layout Component</a><br>
+<strong>Next Steps</strong>: Create a sample data-listing (e.g., table or list) using the Pagination component; test behavior with varying dataset sizes; integrate navigation controls to browse pages of data<br>
 
----
+</details>
 
 ## Description
 

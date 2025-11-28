@@ -1,17 +1,16 @@
 # Main
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata**
-<br>**Category**: Carrier Management / Termination & Origination</br> Configuration</br>
-**Audience**: Administrators, Engineers, Support Team
-<br>**Difficulty**: Intermediate to Advanced</br>
-**Time Required**: Approximately 1–2 hours
-<br>**Prerequisites**: Active ConnexCS account with Carrier-module access; understanding of SIP trunking, termination/origination flows, and provider configuration fundamentals.</br>
-**Related Topics**: [Carrier Rate Cards](https://docs.connexcs.com/rate-card-building/), [Routing Overview](https://docs.connexcs.com/routing/)
-<br>**Next Steps**: Add and configure carrier accounts, set up authentication (IP/SIP credentials), define channel/CPS limits, connect rate cards, and validate behaviour through Routing Tools, Logs, and Circuit Test.</br>
+<strong>Category</strong>: Carrier Management / Monitoring & Call-Detail Insights<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 30–45 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with Carrier-module access; overview of call-flow monitoring and carrier performance metrics<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/carrier/carrier-main/">Carrier Main Configuration</a>, <a href="https://docs.connexcs.com/carrier/carrier-stats/">Carrier Stats</a><br>
+<strong>Next Steps</strong>: Review the “Latest Calls” table for the carrier, filter by time-window (Live/Last 24h/Daily/Monthly), export if needed, and use insights to validate routing, detect anomalies (e.g., false answer supervision, high failure counts), or trigger deeper investigation via CDR or logging<br>
 
----
+</details>
 
 **Management :material-menu-right: Carrier :material-menu-right: Main**
 

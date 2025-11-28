@@ -1,16 +1,16 @@
 # Contact Center Setup & Usage Guide
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata** <br>**Category**: Customer Portal / Contact Center Installation</br>
-**Audience**: Administrators, Engineers, Support Team
-<br>**Difficulty**: Intermediate</br>
-**Time Required**: Approximately 20–40 minutes
-<br>**Prerequisites**: Active ConnexCS account, administrative access to the Customer Portal module, required permissions for installation and configuration of contact-center features in the portal</br>
-**Related Topics**: [Customer Portal – Contact Center Overview](https://docs.connexcs.com/customer-portal/cp-contact-center/), [Portal Access Configuration](https://docs.connexcs.com/setup/integrations/portal/), [Customer Dashboard](https://docs.connexcs.com/customer/customer/#customer-dashboard), [Contacts Management](https://docs.connexcs.com/customer/main/#contacts)
-<br>**Next Steps**: Follow installation steps to enable contact-center features in Customer Portal; assign roles and permissions; test portal login and functionality; verify integration with existing customer and contact data.</br>
+<strong>Category</strong>: Customer Portal / Contact Center Installation<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 20–40 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account, administrative access to the Customer Portal module, and required permissions to install and configure contact-center features in the portal<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer-portal/cp-contact-center/">Customer Portal – Contact Center Overview</a>, <a href="https://docs.connexcs.com/setup/integrations/portal/">Portal Access Configuration</a>, <a href="https://docs.connexcs.com/customer/customer/#customer-dashboard">Customer Dashboard</a>, <a href="https://docs.connexcs.com/customer/main/#contacts">Contacts Management</a><br>
+<strong>Next Steps</strong>: Follow installation steps to enable contact-center features in the Customer Portal, assign roles and permissions, test portal login and functionality, and verify integration with existing customer and contact data<br>
 
----
+</details>
 
 ## Install Contact Center App
 

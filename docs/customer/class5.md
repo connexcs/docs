@@ -1,16 +1,16 @@
 # Class5
 
----
-**Document Metadata**
-<br>**Category**: Customer Account Management / Class 5 Services & Features</br>
-**Audience**: Administrators, Engineers, Support Team
-<br>**Difficulty**: Intermediate to Advanced</br>
-**Time Required**: Approximately 1–2 hours
-<br>**Prerequisites**: Active ConnexCS account with access to the Class 5 module (customer-side), familiarity with VoIP/softswitch (Class 5) concepts.</br>
-**Related Topics**: [Class 5 – Introduction](https://docs.connexcs.com/class5/class5-intro/), [Class 5 – Call Center](https://docs.connexcs.com/class5/call-center/)
-<br>**Next Steps**: [Class 5 – Apps (Build/Configure Apps)](https://docs.connexcs.com/class5/apps/), [Class 5 – IVR / Groups / ConneXML](https://docs.connexcs.com/class5/creating-group/)</br>
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
----
+<strong>Category</strong>: Customer Account Management / Class 5 Services & Features<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate to Advanced<br>
+<strong>Time Required</strong>: Approximately 1–2 hours<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with access to the Class 5 module (customer-side); familiarity with VoIP/softswitch (Class 5) concepts<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/class5/class5-intro/">Class 5 – Introduction</a>, <a href="https://docs.connexcs.com/class5/call-center/">Class 5 – Call Center</a><br>
+<strong>Next Steps</strong>: <a href="https://docs.connexcs.com/class5/apps/">Class 5 – Apps (Build/Configure Apps)</a>, <a href="https://docs.connexcs.com/class5/creating-group/">Class 5 – IVR / Groups / ConneXML</a><br>
+
+</details>
 
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Class5**
 

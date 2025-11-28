@@ -1,10 +1,16 @@
 # Alerts
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata** <br>**Category**: Customer Portal / Alerts & Notifications</br> **Audience**: Administrators, Support Team, Customer Success Team <br>**Difficulty**: Intermediate</br> **Time Required**: Approximately 20–30 minutes <br>**Prerequisites**: Active ConnexCS Customer Portal account with permissions to view and configure alert settings</br> **Related Topics**: [Customer Portal – Dashboard](https://docs.connexcs.com/customer-portal/cp-dashboard/), [Customer Portal – Latest Calls](https://docs.connexcs.com/customer-portal/cp-latest-calls/) <br>**Next Steps**: Define which event types you want to be notified about, Configure the recipient list (email addresses or SMS gateways), Test an alert.</br>
+<strong>Category</strong>: Customer Portal / Alerts & Notifications<br>
+<strong>Audience</strong>: Administrators, Support Team, Customer Success Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 20–30 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS Customer Portal account with permissions to view and configure alert settings<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer-portal/cp-dashboard/">Customer Portal – Dashboard</a>, <a href="https://docs.connexcs.com/customer-portal/cp-latest-calls/">Customer Portal – Latest Calls</a><br>
+<strong>Next Steps</strong>: Define which event types you want to be notified about, configure the recipient list (email addresses or SMS gateways), and test an alert<br>
 
----
+</details>
 
 **Alerts** allow you to check various aspects of your account. This includes tracking when your balance falls below a certain threshold or if a specific usage parameter, such as Calls per Second (CPS) or Channels, becomes high.
 

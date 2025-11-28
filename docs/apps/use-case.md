@@ -1,14 +1,16 @@
 # Use Cases
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata** <br>**Category**: Applications Platform / Use Cases</br>
-**Audience**: Engineers, Developers, Product Integrators <br>**Difficulty**: Intermediate </br>
-**Time Required**: Approximately 20-30 minutes <br>**Prerequisites**: Access to the ConnexCS Apps Platform (via your ConnexCS account), familiarity with drag-&-drop app building (Button-Builder, Page-Builder, ScriptForge) or willingness to learn them</br>
-**Related Topics**: [Apps Platform – Introduction](https://docs.connexcs.com/apps/introduction/), [App Store – Install & Publish](https://docs.connexcs.com/setup/appstore/)
-<br>**Next Steps**: Start a new application, select the appropriate components (e.g., Data Grid, Card, Webphone), configure your logic via ScriptForge and Page Builder, then test and iterate.</br>
+<strong>Category</strong>: Applications Platform / Page Builder<br>
+<strong>Audience</strong>: Engineers, Developers, Platform Integrators<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 25–35 minutes<br>
+<strong>Prerequisites</strong>: Access to the ConnexCS Apps Platform IDE, familiarity with basic web application UI design and event/data-binding concepts<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/introduction/">Apps Platform – Introduction</a>, <a href="https://docs.connexcs.com/apps/architecture/button-builder/">Apps Platform – Button Builder</a><br>
+<strong>Next Steps</strong>: Create page → add components → configure attributes and data sources → implement events/API methods → test across devices → publish<br>
 
----
+</details>
 
 ## Introduction
 

@@ -1,17 +1,16 @@
 # Payment
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata**
-<br>**Category**: Carrier Management / Payments & Billing</br>
-**Audience**: Administrators, Engineers, Finance & Support Team
-<br>**Difficulty**: Intermediate</br>
-**Time Required**: Approximately 30–45 minutes
-<br>**Prerequisites**: Active ConnexCS account with Carrier-module access; familiarity with carrier billing workflows and payment tracking.</br>
-**Related Topics**: [Customer Payment](https://docs.connexcs.com/customer/payment/)
-<br>**Next Steps**: Review existing payments to the carrier, record new payments via the Payment tab, update payment statuses (Completed, Pending, Cancelled), and reconcile with your financial records.</br>
+<strong>Category</strong>: Carrier Management / Payments & Billing<br>
+<strong>Audience</strong>: Administrators, Engineers, Finance & Support Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 30–45 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with Carrier-module access; familiarity with carrier billing workflows and payment tracking<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer/payment/">Customer Payment</a><br>
+<strong>Next Steps</strong>: Review existing payments to the carrier, record new payments via the Payment tab, update payment statuses (Completed, Pending, Cancelled), and reconcile with your financial records<br>
 
----
+</details>
 
 **Management :material-menu-right: Carrier :material-menu-right: Payment**
 

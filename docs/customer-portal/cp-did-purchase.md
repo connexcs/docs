@@ -1,14 +1,16 @@
 # DID Purchase
 
----
-**Document Metadata** <br>**Category**: Customer Portal / DID Purchase</br>
-**Audience**: Administrators, Customer Success Team, Sales & Billing Staff
-<br>**Difficulty**: Intermediate</br>
-**Time Required**: Approximately 20–30 minutes <br>**Prerequisites**: Active ConnexCS Customer Portal account with permission to purchase or allocate Direct Inward Dial (DID) numbers</br>
-**Related Topics**: [Customer Portal – DID Management](https://docs.connexcs.com/customer-portal/cp-did/) , [Billing & Invoices](https://docs.connexcs.com/customer-portal/cp-invoice/) </br>
-**Next Steps**: After reviewing the DID Purchase guide, review available DID inventories by country, select required numbers, complete the purchase workflow (allocation + billing), update your routing assignments for the new DIDs, and schedule a periodic audit of DID usage and costs to ensure efficiency and compliance.
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
----
+<strong>Category</strong>: Customer Portal / DID Purchase<br>
+<strong>Audience</strong>: Administrators, Customer Success Team, Sales & Billing Staff<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 20–30 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS Customer Portal account with permission to purchase or allocate Direct Inward Dial (DID) numbers<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer-portal/cp-did/">Customer Portal – DID Management</a>, <a href="https://docs.connexcs.com/customer-portal/cp-invoice/">Billing & Invoices</a><br>
+<strong>Next Steps</strong>: Review available DID inventories by country, select required numbers, complete the purchase workflow (allocation + billing), update routing assignments for newly added DIDs, and schedule periodic audits to monitor DID usage and associated costs.<br>
+
+</details>
 
 ## Overview
 

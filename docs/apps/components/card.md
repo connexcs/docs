@@ -1,11 +1,16 @@
 # Card
 
----
-**Document Metadata** <br>**Category**: Applications Platform / UI Components — Card Component</br> **Audience**: Developers, Engineers, UI/UX Designers, Support Team<br>**Difficulty**: Intermediate</br> **Time Required**: Approximately 15–20 minutes <br>**Prerequisites**: Access to the ConnexCS Apps Platform IDE and familiarity with basic UI component configuration (via Page Builder or custom code) </br>
-**Related Topics**: [Page Builder / UI Components Overview](https://docs.connexcs.com/apps/page-builder/) , [Button Component](https://docs.connexcs.com/apps/components/button/), [Alert Component](https://docs.connexcs.com/apps/components/alert/) (for mixing components)
-<br>**Next Steps**: Add Card → configure title/content/styling → populate dynamically → combine with other components → test across devices.</br>
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
----
+<strong>Category</strong>: Applications Platform / UI Components — Card Component<br>
+<strong>Audience</strong>: Developers, Engineers, UI/UX Designers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 15–20 minutes<br>
+<strong>Prerequisites</strong>: Access to the ConnexCS Apps Platform IDE and familiarity with basic UI component configuration (via Page Builder or custom code)<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/page-builder/">Page Builder / UI Components Overview</a>, <a href="https://docs.connexcs.com/apps/components/button/">Button Component</a>, <a href="https://docs.connexcs.com/apps/components/alert/">Alert Component</a> (for mixing components)<br>
+<strong>Next Steps</strong>: Add Card → configure title/content/styling → populate dynamically → combine with other components → test across devices<br>
+
+</details>
 
 ## Description
 

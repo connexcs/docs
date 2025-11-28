@@ -1,14 +1,16 @@
 # Button Builder
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata** <br>**Category**: Applications Platform / UI Components (Button Builder) </br> **Audience**: Developers, Engineers, UI/UX Designers <br>**Difficulty**: Intermediate</br>
-**Time Required**: Approximately 20–30 minutes <br>**Prerequisites**: Access to the ConnexCS Apps Platform (Page Builder) with Button Builder enabled, basic understanding of UI component creation and event-handling</br>
-**Related Topics**: [App Structure & Best Practices](https://docs.connexcs.com/apps/architecture/app/), [Modular UI Components Overview](https://docs.connexcs.com/apps/architecture/architecture/)
-<br>**Next Steps**: Create a new button component (label/icon/colour/style), Configure event handlers (onClick → ScriptForge action or external API call), Ensure accessibility.</br>
+<strong>Category</strong>: Applications Platform / UI Components (Button Builder)<br>
+<strong>Audience</strong>: Developers, Engineers, UI/UX Designers<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 20–30 minutes<br>
+<strong>Prerequisites</strong>: Access to the ConnexCS Apps Platform (Page Builder) with Button Builder enabled, basic understanding of UI component creation and event-handling<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/architecture/app/">App Structure & Best Practices</a>, <a href="https://docs.connexcs.com/apps/architecture/architecture/">Modular UI Components Overview</a><br>
+<strong>Next Steps</strong>: Create a new button component (label/icon/colour/style), configure event handlers (onClick → ScriptForge action or external API call), ensure accessibility<br>
 
----
-
+</details>
 
 ## Introduction
 

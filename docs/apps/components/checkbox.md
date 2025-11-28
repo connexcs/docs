@@ -1,13 +1,16 @@
 # Checkbox
 
----
-**Document Metadata** <br>**Category**: Applications Platform / UI Components — Checkbox Component</br> **Audience**: Developers, Engineers, UI/UX Designers, Support Team
-<br>**Difficulty**: Beginner to Intermediate</br>
-**Time Required**: Approximately 10–15 minutes <br>**Prerequisites**: Access to the ConnexCS Apps Platform IDE, familiarity with basic form controls and user-input handling (forms, event logic) </br>
-**Related Topics**: [Page Builder / UI Components Overview](https://docs.connexcs.com/apps/page-builder/)
-<br>**Next Steps**: Add Checkbox → configure label/state/grouping → read value in logic for conditional behavior → test scenarios.</br>
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
----
+<strong>Category</strong>: Applications Platform / UI Components — Checkbox Component<br>
+<strong>Audience</strong>: Developers, Engineers, UI/UX Designers, Support Team<br>
+<strong>Difficulty</strong>: Beginner to Intermediate<br>
+<strong>Time Required</strong>: Approximately 10–15 minutes<br>
+<strong>Prerequisites</strong>: Access to the ConnexCS Apps Platform IDE, familiarity with basic form controls and user-input handling (forms, event logic)<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/page-builder/">Page Builder / UI Components Overview</a><br>
+<strong>Next Steps</strong>: Add Checkbox → configure label/state/grouping → read value in logic for conditional behavior → test scenarios<br>
+
+</details>
 
 ## Description
 

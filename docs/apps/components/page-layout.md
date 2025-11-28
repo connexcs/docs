@@ -1,16 +1,16 @@
 # Page Layout
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata** <br>**Category**: Applications & Components</br>
-**Audience**: Administrators, Engineers, App Developers</br>
-**Difficulty**: Beginner to Intermediate</br>
-**Time Required**: Approximately 15–30 minutes</br>
-**Prerequisites**: Active ConnexCS account, access to the Applications module, basic understanding of UI component configuration and layout concepts (e.g. sections, containers, panels)</br>
-**Related Topics**: [Input Component](https://docs.connexcs.com/apps/components/input/), [Link Component](https://docs.connexcs.com/apps/components/link/), [Inline Component](https://docs.connexcs.com/apps/components/inline/), [Grid Component](https://docs.connexcs.com/apps/components/grid/)</br>
-**Next Steps**: Design a sample app page using the Page Layout component; define overall structure (header, sections, panels), integrate other UI components within layout containers</br>
+<strong>Category</strong>: Applications & Components<br>
+<strong>Audience</strong>: Administrators, Engineers, App Developers<br>
+<strong>Difficulty</strong>: Beginner to Intermediate<br>
+<strong>Time Required</strong>: Approximately 15–30 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account, access to the Applications module, basic understanding of UI component configuration and layout concepts (e.g., sections, containers, panels)<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/components/input/">Input Component</a>, <a href="https://docs.connexcs.com/apps/components/link/">Link Component</a>, <a href="https://docs.connexcs.com/apps/components/inline/">Inline Component</a>, <a href="https://docs.connexcs.com/apps/components/grid/">Grid Component</a><br>
+<strong>Next Steps</strong>: Design a sample app page using the Page Layout component; define overall structure (header, sections, panels), integrate other UI components within layout containers<br>
 
----
+</details>
 
 ## Description
 

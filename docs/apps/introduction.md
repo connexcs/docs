@@ -1,16 +1,33 @@
 # Introduction
 
----
-**Document Metadata**
-**Category:** Apps  
-**Audience:** New Users, Developers, Administrators  
-**Difficulty:** Beginner  
-**Time Required:** 10-30 minutes  
-**Prerequisites:** ConnexCS account and platform access  
-**Related Topics:** [Use Case](use-case.md), [ScriptForge](https://docs.connexcs.com/apps/architecture/scriptforge/), [Database](https://docs.connexcs.com/apps/architecture/database/), [Key Value](https://docs.connexcs.com/apps/architecture/key-value/), [Project](https://docs.connexcs.com/apps/architecture/project/), [Pub Sub Bus](https://docs.connexcs.com/apps/architecture/pub-sub/), [Query Builder](https://docs.connexcs.com/apps/architecture/query-builder/), [Template](https://docs.connexcs.com/apps/architecture/template/)
-<br>**Next Steps:** [Use Case](use-case.md), [ScriptForge](https://docs.connexcs.com/apps/architecture/scriptforge/), [Database](https://docs.connexcs.com/apps/architecture/database/), [Key Value](https://docs.connexcs.com/apps/architecture/key-value/), [Project](https://docs.connexcs.com/apps/architecture/project/), [Pub Sub Bus](https://docs.connexcs.com/apps/architecture/pub-sub/), [Query Builder](https://docs.connexcs.com/apps/architecture/query-builder/), [Template](https://docs.connexcs.com/apps/architecture/template/)</br>
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
----
+<strong>Category</strong>: Apps<br>
+<strong>Audience</strong>: New Users, Developers, Administrators<br>
+<strong>Difficulty</strong>: Beginner<br>
+<strong>Time Required</strong>: 10–30 minutes<br>
+<strong>Prerequisites</strong>: ConnexCS account and platform access<br>
+<strong>Related Topics</strong>:
+<a href="use-case.md">Use Case</a>,
+<a href="https://docs.connexcs.com/apps/architecture/scriptforge/">ScriptForge</a>,
+<a href="https://docs.connexcs.com/apps/architecture/database/">Database</a>,
+<a href="https://docs.connexcs.com/apps/architecture/key-value/">Key Value</a>,
+<a href="https://docs.connexcs.com/apps/architecture/project/">Project</a>,
+<a href="https://docs.connexcs.com/apps/architecture/pub-sub/">Pub Sub Bus</a>,
+<a href="https://docs.connexcs.com/apps/architecture/query-builder/">Query Builder</a>,
+<a href="https://docs.connexcs.com/apps/architecture/template/">Template</a><br>
+
+<strong>Next Steps</strong>:
+<a href="use-case.md">Use Case</a>,
+<a href="https://docs.connexcs.com/apps/architecture/scriptforge/">ScriptForge</a>,
+<a href="https://docs.connexcs.com/apps/architecture/database/">Database</a>,
+<a href="https://docs.connexcs.com/apps/architecture/key-value/">Key Value</a>,
+<a href="https://docs.connexcs.com/apps/architecture/project/">Project</a>,
+<a href="https://docs.connexcs.com/apps/architecture/pub-sub/">Pub Sub Bus</a>,
+<a href="https.com/apps/architecture/query-builder/">Query Builder</a>,
+<a href="https://docs.connexcs.com/apps/architecture/template/">Template</a><br>
+
+</details>
 
 ConnexCS is a comprehensive telecommunications platform that offers services encompassing call routing, billing, security, and analytics.
 

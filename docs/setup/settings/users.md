@@ -1,17 +1,16 @@
 # User
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata**
-<br>**Category**: Setup / Settings / Users</br>
-**Audience**: Administrators, Engineers, Security & Operations Teams
-<br>**Difficulty**: Intermediate</br>
-**Time Required**: Approximately 30–45 minutes
-<br>**Prerequisites**: Active ConnexCS account with Setup-Settings access; familiarity with role-based access control, user group permissions, and secure account management.</br>
-**Related Topics**: [Setup / Settings / Groups](https://docs.connexcs.com/setup/settings/users/#groups), [Audit Log & Security Best Practices](https://docs.connexcs.com/setup/information/audit-log/)
-<br>**Next Steps**: Create a new User, assign them to the appropriate Group(s) to define permissions, optionally restrict login by IP address, then define or adjust Group permissions to align with your organisation’s access-control policy.</br>
+<strong>Category</strong>: Setup / Settings / Users<br>
+<strong>Audience</strong>: Administrators, Engineers, Security & Operations Teams<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 30–45 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with Setup-Settings access; familiarity with role-based access control, user group permissions, and secure account management.<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/setup/settings/users/#groups">Setup / Settings / Groups</a>, <a href="https://docs.connexcs.com/setup/information/audit-log/">Audit Log & Security Best Practices</a><br>
+<strong>Next Steps</strong>: Create a new User, assign them to the appropriate Group(s) to define permissions, optionally restrict login by IP address, then define or adjust Group permissions to align with your organisation’s access-control policy.<br>
 
----
+</details>
 
 **Setup :material-menu-right: Settings :material-menu-right: User**
 

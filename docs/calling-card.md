@@ -1,11 +1,16 @@
 # Pinless Calling Cards
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata** <br>**Category**: Customer Services / Calling Card Systems</br> **Audience**: Administrators, Engineers, Services Team <br>**Difficulty**: Intermediate</br> **Time Required**: Approximately 30–40 minutes <br>**Prerequisites**: Active ConnexCS account with access to the Apps Platform (Script Forge) and DID routing setup</br> **Related Topics**: [Calling Card Feature List](https://docs.connexcs.com/feature-list/#calling-cards), [ScriptForge Programming Guide](https://docs.connexcs.com/apps/architecture/scriptforge/)
-<br>**Next Steps**: After implementing the pinless calling-card flow, review DID configuration for customer access and integrate reporting via the Customer Stats module for usage tracking.</br>
+<strong>Category</strong>: Customer Services / Calling Card Systems<br>
+<strong>Audience</strong>: Administrators, Engineers, Services Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 30–40 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with access to the Apps Platform (Script Forge) and DID routing setup<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/feature-list/#calling-cards">Calling Card Feature List</a>, <a href="https://docs.connexcs.com/apps/architecture/scriptforge/">ScriptForge Programming Guide</a><br>
+<strong>Next Steps</strong>: After implementing the pinless calling-card flow, review DID configuration for customer access and integrate reporting via the Customer Stats module for usage tracking.<br>
 
----
+</details>
 
 A **Pinless Calling Card** system allows the user to dial in through a Direct Inward Dial (DID).
 

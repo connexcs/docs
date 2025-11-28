@@ -1,16 +1,16 @@
 # AnyEdge
 
----
-**Document Metadata**
-<br>**Category**: Setup & Configuration</br>
-**Audience**: Administrators, Engineers
-<br>**Difficulty**: Intermediate</br>
-**Time Required**: Approximately 1-2 hours
-<br>**Prerequisites**: Active ConnexCS account, access to AnyEdge configuration permissions</br>
-**Related Topics**: [AnyEdge Setup](anyedge.md#anyedge-setup), [AnyEdge Domain](anyedge.md#anyedge-domain), [AnyEdge Destinations](anyedge.md#anyedge-destinations)
-<br>**Next Steps**: [Capabilities of AnyEdge](anyedge.md#capabilities), [Inbound Proxy / Dispatcher / Load Balancer](https://docs.connexcs.com/anyedge/anyedge/#inbound-proxy-dispatcher-load-balancer)</br>
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
----
+<strong>Category</strong>: Setup & Configuration<br>
+<strong>Audience</strong>: Administrators, Engineers<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 1–2 hours<br>
+<strong>Prerequisites</strong>: Active ConnexCS account, access to AnyEdge configuration permissions<br>
+<strong>Related Topics</strong>: <a href="anyedge.md#anyedge-setup">AnyEdge Setup</a>, <a href="anyedge.md#anyedge-domain">AnyEdge Domain</a>, <a href="anyedge.md#anyedge-destinations">AnyEdge Destinations</a><br>
+<strong>Next Steps</strong>: <a href="anyedge.md#capabilities">Capabilities of AnyEdge</a>, <a href="https://docs.connexcs.com/anyedge/anyedge/#inbound-proxy-dispatcher-load-balancer">Inbound Proxy / Dispatcher / Load Balancer</a><br>
+
+</details>
 
 **Setup :material-menu-right: AnyEdge**
 

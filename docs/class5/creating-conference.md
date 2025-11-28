@@ -1,17 +1,16 @@
 # Conference Calls
 
----
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-**Document Metadata**
-<br>**Category**: Class 5 Services / Conference Bridge Setup</br>
-**Audience**: Administrators, Engineers, Support Team
-<br>**Difficulty**: Intermediate</br>
-**Time Required**: Approximately 30–60 minutes
-<br>**Prerequisites**: Active ConnexCS account with Class 5 module access; familiarity with PBX configuration and multi-party audio bridging.</br>
-**Related Topics**: [Class 5 Apps & Workflow Builder](https://docs.connexcs.com/class5/apps/), [Class 5 IVR Setup](https://docs.connexcs.com/class5/creating-ivr/)
-<br>**Next Steps**: Create a conference room (name, extension, PINs, quality, max members), assign PBX server, configure routing to allow external callers if needed, and test the bridge including keypad controls.</br>
+<strong>Category</strong>: Class 5 Services / Conference Bridge Setup<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 30–60 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with Class 5 module access; familiarity with PBX configuration and multi-party audio bridging<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/class5/apps/">Class 5 Apps & Workflow Builder</a>, <a href="https://docs.connexcs.com/class5/creating-ivr/">Class 5 IVR Setup</a><br>
+<strong>Next Steps</strong>: Create a conference room (name, extension, PINs, quality, max members), assign a PBX server, configure routing to allow external callers if needed, and test the bridge including keypad controls<br>
 
----
+</details>
 
 **Class 5 :material-menu-right: Conference**
 
