@@ -6,9 +6,9 @@
 <strong>Audience</strong>: Developers, System Integrators<br>
 <strong>Difficulty</strong>: Intermediate<br>
 <strong>Time Required</strong>: 1–2 hours (initial setup)<br>
-<strong>Prerequisites</strong>: <a href="getting-started.md">Getting Started</a>, <a href="https://docs.connexcs.com/ide/">Developer knowledge</a><br>
-<strong>Related Topics</strong>: <a href="ide.md">IDE</a>, <a href="setup/integrations/api.md">API Integration</a>, <a href="setup/integrations/jwt.md">JWT Keys</a><br>
-<strong>Next Steps</strong>: <a href="setup/integrations/api.md">API Integration Setup</a>, <a href="apps/introduction.md">Apps Platform</a><br>
+<strong>Prerequisites</strong>: <a href="https://docs.connexcs.com/getting-started/">Getting Started</a>, <a href="https://docs.connexcs.com/ide/">Developer knowledge</a><br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/ide/">IDE</a>, <a href="https://docs.connexcs.com/setup/integrations/api/">API Integration</a>, <a href="https://docs.connexcs.com/setup/integrations/jwt/">JWT Keys</a><br>
+<strong>Next Steps</strong>: <a href="https://docs.connexcs.com/setup/integrations/api/">API Integration Setup</a>, <a href="https://docs.connexcs.com/apps/introduction/">Apps Platform</a><br>
 
 </details>
 

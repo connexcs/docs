@@ -8,8 +8,8 @@
 <strong>Time Required</strong>: Approximately 30–60 minutes<br>
 <strong>Prerequisites</strong>: Active ConnexCS account with Reports access; familiarity with call metrics (ASR, ACD), traffic segmentation, and prefix/rate-center concepts.<br>
 <strong>Related Topics</strong>: 
-<a href="https://docs.connexcs.com/rate-card-building/">Rate Card Overview</a>, 
-<a href="https://docs.connexcs.com/developers/analytics/">Analytics & Custom Reports</a><br>
+<a href="https://docs.connexcs.com/rate-card-building/">Rate Card Overview</a>,
+<a href="https://docs.connexcs.com/customer/custom-reports/">Analytics & Custom Reports</a><br>
 <strong>Next Steps</strong>: Navigate to the Report module, select the appropriate report type (e.g., Breakout, USA Calls, Per Number), apply filters (date range, customers, providers), generate the report, then use exports or schedule email delivery for continuous monitoring.<br>
 
 </details>

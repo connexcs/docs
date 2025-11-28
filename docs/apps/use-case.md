@@ -7,7 +7,7 @@
 <strong>Difficulty</strong>: Intermediate<br>
 <strong>Time Required</strong>: Approximately 25–35 minutes<br>
 <strong>Prerequisites</strong>: Access to the ConnexCS Apps Platform IDE, familiarity with basic web application UI design and event/data-binding concepts<br>
-<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/introduction/">Apps Platform – Introduction</a>, <a href="https://docs.connexcs.com/apps/architecture/button-builder/">Apps Platform – Button Builder</a><br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/introduction/">Apps Platform – Introduction</a><br>
 <strong>Next Steps</strong>: Create page → add components → configure attributes and data sources → implement events/API methods → test across devices → publish<br>
 
 </details>

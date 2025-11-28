@@ -7,7 +7,7 @@
 <strong>Difficulty</strong>: Intermediate<br>
 <strong>Time Required</strong>: Approximately 25–35 minutes<br>
 <strong>Prerequisites</strong>: Active ConnexCS account, access to Customer Module and Billing or Plan controls, permissions to edit calling plan settings<br>
-<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/setup/settings/users/#users">RBAC</a><br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/setup/settings/users/#permissions-model">RBAC</a><br>
 <strong>Next Steps</strong>: After applying restrictions to a calling plan, verify the effect by placing test calls under the plan, and then set up usage alerts so you’re notified if a customer hits the restricted limits.<br>
 
 </details>

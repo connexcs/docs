@@ -8,7 +8,7 @@
 <strong>Time Required</strong>: Approximately 30–60 minutes<br>
 <strong>Prerequisites</strong>: Active ConnexCS account with Customer module access; user permissions to view/generate invoices<br>
 <strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer/main/">Customer → Main</a>, <a href="https://docs.connexcs.com/guides/doc-guide/">Document Guide – Invoices</a><br>
-<strong>Next Steps</strong>: <a href="https://docs.connexcs.com/customer/invoices/#automatic-invoice-generation">Configure Invoice Schedule & Template</a>, <a href="https://docs.connexcs.com/customerr/invoices/#download-invoices">Download or View Generated Invoices</a><br>
+<strong>Next Steps</strong>: <a href="https://docs.connexcs.com/customer/invoices/#automatic-invoice-generation">Configure Invoice Schedule & Template</a>, <a href="https://docs.connexcs.com/customer/invoices/#download-invoices">Download or View Generated Invoices</a><br>
 
 </details>
 

@@ -7,7 +7,7 @@
 <strong>Difficulty</strong>: Intermediate to Advanced<br>
 <strong>Time Required</strong>: Approximately 30–45 minutes<br>
 <strong>Prerequisites</strong>: Access to the ConnexCS API documentation, an active API key/credentials, and familiarity with REST or WebSocket API usage<br>
-<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/api/call-control/">ScriptForge</a><br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/architecture/scriptforge/">ScriptForge</a><br>
 <strong>Next Steps</strong>: After reviewing the Make Call endpoint, write a quick test integration that initiates a call, inspect the response codes and call-leg data, and implement error-handling logic for failure scenarios (e.g., no DID, invalid credentials, rate limits).<br>
 
 </details>

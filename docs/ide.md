@@ -7,7 +7,7 @@
 <strong>Difficulty</strong>: Intermediate to Advanced<br>
 <strong>Time Required</strong>: Approximately 1–2 hours<br>
 <strong>Prerequisites</strong>: Active ConnexCS account with platform-access; familiarity with application scripting, UI components, database concepts, and workflow logic.<br>
-<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/architecture/architecture/">Apps Platform Architecture</a>, <a href="https://docs.connexcs.com/apps/architecture/template/">Template System</a><br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/architecture/architecture/">Apps Platform Architecture</a><br>
 <strong>Next Steps</strong>: Navigate to the IDE module, explore key components (Applications, Page Builder, Script Forge, Query Builder, etc.), start a new Project, define environment variables and data sources, then build and deploy your workflow or application within the ConnexCS ecosystem.<br>
 
 </details>

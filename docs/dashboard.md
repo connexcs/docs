@@ -7,7 +7,7 @@
 <strong>Difficulty</strong>: Beginner to Intermediate<br>
 <strong>Time Required</strong>: Approximately 30–45 minutes<br>
 <strong>Prerequisites</strong>: Active ConnexCS Platform account with access to the Customer Portal<br>
-<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer-portal/cp-dashboard/">Customer Portal Overview</a>, <a href="https://docs.connexcs.com/logging/">Logging & Call Trace</a>, <a href="https://docs.connexcs.com/developers/analytics/">Analytics & Reporting</a><br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer-portal/cp-dashboard/">Customer Portal Overview</a>, <a href="https://docs.connexcs.com/logging/">Logging & Call Trace</a>, <a href="https://docs.connexcs.com/report/">Analytics & Reporting</a><br>
 <strong>Next Steps</strong>: <a href="https://docs.connexcs.com/customer/alerts/">Configuring Alerts & Balance Notifications</a>, <a href="https://docs.connexcs.com/customer/stats/">Detailed Call Stats</a>, <a href="https://docs.connexcs.com/customer/cdr/">CDR Export</a><br>
 
 </details>

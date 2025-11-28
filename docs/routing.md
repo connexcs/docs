@@ -6,17 +6,17 @@
 <strong>Audience</strong>: Administrators, Support Engineers<br>
 <strong>Difficulty</strong>: Intermediate<br>
 <strong>Time Required</strong>: 1–2 hours<br>
-<strong>Prerequisites</strong>: 
-<a href="carrier.md">Carrier Setup</a>, 
-<a href="customer/customer.md">Customer Setup</a>, 
-<a href="rate-card-building.md">Rate Cards</a><br>
-<strong>Related Topics</strong>: 
-<a href="routing-strategy.md">Routing Strategy</a>, 
-<a href="global-routing.md">Global Routing</a>, 
-<a href="customer/routing.md">Customer Routing</a><br>
-<strong>Next Steps</strong>: 
-<a href="routing-strategy.md">Routing Strategy</a>, 
-<a href="circuit-test.md">Circuit Test</a><br>
+<strong>Prerequisites</strong>:
+<a href="https://docs.connexcs.com/carrier/#create-carrier">Carrier Setup</a>,
+<a href="https://docs.connexcs.com/customer/customer/#create-customer">Customer Setup</a>,
+<a href="https://docs.connexcs.com/rate-card-building/">Rate Cards</a><br>
+<strong>Related Topics</strong>:
+<a href="https://docs.connexcs.com/routing-strategy/">Routing Strategy</a>,
+<a href="[global-routing.md](https://docs.connexcs.com/global-routing/)">Global Routing</a>,
+<a href="[customer/routing.md](https://docs.connexcs.com/customer/routing/)">Customer Routing</a><br>
+<strong>Next Steps</strong>:
+<a href="https://docs.connexcs.com/routing-strategy/">Routing Strategy</a>,
+<a href="https://docs.connexcs.com/circuit-test/">Circuit Test</a><br>
 
 </details>
 

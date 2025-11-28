@@ -7,8 +7,8 @@
 <strong>Difficulty</strong>: Beginner<br>
 <strong>Time Required</strong>: 2–4 hours<br>
 <strong>Prerequisites</strong>: ConnexCS account created<br>
-<strong>Related Topics</strong>: <a href="dashboard.md">Dashboard</a>, <a href="carrier.md">Carrier Setup</a>, <a href="customer/customer.md">Customer Setup</a><br>
-<strong>Next Steps</strong>: <a href="carrier.md">Carrier Configuration</a>, <a href="rate-card-building.md">Rate Card Setup</a><br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/dashboard/">Dashboard</a>, <a href="https://docs.connexcs.com/carrier/">Carrier Setup</a>, <a href="https://docs.connexcs.com/customer/customer/">Customer Setup</a><br>
+<strong>Next Steps</strong>: <a href="https://docs.connexcs.com/carrier/#create-carrier">Carrier Configuration</a>, <a href="https://docs.connexcs.com/rate-card-building/">Rate Card Setup</a><br>
 
 </details>
 

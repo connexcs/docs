@@ -7,8 +7,8 @@
 <strong>Difficulty</strong>: Intermediate<br>
 <strong>Time Required</strong>: Approximately 1–2 hours<br>
 <strong>Prerequisites</strong>: Active ConnexCS account, access to AnyEdge configuration permissions<br>
-<strong>Related Topics</strong>: <a href="anyedge.md#anyedge-setup">AnyEdge Setup</a>, <a href="anyedge.md#anyedge-domain">AnyEdge Domain</a>, <a href="anyedge.md#anyedge-destinations">AnyEdge Destinations</a><br>
-<strong>Next Steps</strong>: <a href="anyedge.md#capabilities">Capabilities of AnyEdge</a>, <a href="https://docs.connexcs.com/anyedge/anyedge/#inbound-proxy-dispatcher-load-balancer">Inbound Proxy / Dispatcher / Load Balancer</a><br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/anyedge/anyedge/#anyedge-setup">AnyEdge Setup</a>, <a href="https://docs.connexcs.com/anyedge/anyedge/#anyedge-domain">AnyEdge Domain</a>, <a href="https://docs.connexcs.com/anyedge/anyedge/#anyedge-destinations">AnyEdge Destinations</a><br>
+<strong>Next Steps</strong>: <a href="https://docs.connexcs.com/anyedge/anyedge/#capabilities">Capabilities of AnyEdge</a>, <a href="https://docs.connexcs.com/anyedge/anyedge/#inbound-proxy-dispatcher-load-balancer">Inbound Proxy / Dispatcher / Load Balancer</a><br>
 
 </details>
 
