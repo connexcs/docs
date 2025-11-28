@@ -12,8 +12,8 @@
 <a href="https://docs.connexcs.com/rate-card-building/">Rate Cards</a><br>
 <strong>Related Topics</strong>:
 <a href="https://docs.connexcs.com/routing-strategy/">Routing Strategy</a>,
-<a href="[global-routing.md](https://docs.connexcs.com/global-routing/)">Global Routing</a>,
-<a href="[customer/routing.md](https://docs.connexcs.com/customer/routing/)">Customer Routing</a><br>
+<a href="https://docs.connexcs.com/global-routing/">Global Routing</a>,
+<a href="https://docs.connexcs.com/customer/routing/">Customer Routing</a><br>
 <strong>Next Steps</strong>:
 <a href="https://docs.connexcs.com/routing-strategy/">Routing Strategy</a>,
 <a href="https://docs.connexcs.com/circuit-test/">Circuit Test</a><br>
