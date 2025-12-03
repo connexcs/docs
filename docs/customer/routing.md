@@ -114,7 +114,7 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 
     **Explore the details inside ConnexCS: [USA Federal DNC](/customer/routing/#united-states-federal-do-not-call-dnc)| [UK TPS](/customer/routing/#united-kingdom-telephone-preference-service-tps)**
 
-+ **Block Destination Type**: You can select and block the calls to various destinations (carriers) like Mobile, Fixed, Paging, etc.
++ **Block Destination Type**: You can select and block the calls to various destinations (carriers) like Mobile, Fixed, Paging, etc. [Click here to know about Destination Type Lookup & Fallback Logic — USA and International]()
 
 + **Spam Scout Scoring**: It blocks Spam calls based on the CLIs.
   You can either Block All, Allow All, Block Most Spam, or Block Least Spam.
@@ -148,6 +148,84 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 + **TCPA  Litigator DNC**: Enabling this flag blocks outbound calls to known TCPA Litigators.
 
 <img src= "/customer/img/rsecurity.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+#### Destination Type Lookup & Fallback Logic — USA and International
+
+1. **Overview**
+
+    ConnexCS uses a multi-layered lookup mechanism to determine the destination type for any given phone number.
+    This enables accurate routing, blocking, and classification across both **USA (NANPA)** numbers and **International numbers**.
+
+    The logic uses the following hierarchical sources of truth:
+
+    i. **LRN / Line-Type Database** (granular, per-number accuracy)
+
+    ii. **USA Range Type** (NANPA prefix blocks)
+
+    iii. **International Number Plan** (for non-USA destinations only)
+
+    This hierarchy ensures the most accurate classification possible, even when individual numbers are ported between carriers.
+
+2. **Lookup Hierarchy for USA Numbers (NANPA)**
+
+    When evaluating a USA number, ConnexCS performs the following steps:
+
+    **Step 1 — Line-Type Lookup (LRN Database)**
+
+    i. The system checks the LRN/line-type database for the exact phone number.
+
+    ii. If the number exists, the classification returned here is treated as the primary and most accurate source.
+
+    **Output will be one of: Mobile / Fixed / VoIP**.
+
+    !!! Example
+
+        201-555-0198 → Found in LRN → Fixed
+        Result is final; no further fallback is needed.
+
+    **Step 2 — USA Range Type (NANPA Prefix Blocks)**
+
+    If the number does not exist in the line-type database, the system falls back to the USA Range Type:
+
+    i. Uses the NANPA number block (e.g., 201-2019) to determine its type.
+    ii. This is less granular but covers entire assigned ranges.
+    iii. Range metadata includes assignment date, carrier, and designated type (Mobile / Fixed / VoIP).
+
+    !!! Example
+        201-2019-XXXX → Range is assigned as Mobile → Output: Mobile
+
+3. **Lookup Logic for International Numbers**
+
+    * **For non-USA destinations**:
+
+        i. The system **does not** use LRN or NANPA.
+        ii. The system directly uses the **International Number Plan**.
+
+    * **The International Number Plan contains**:
+
+        i. Country-level numbering rules
+        ii. Mobile VS fixed patterns
+        ii. Regulator-published allocations
+
+    !!! Example
+        i. +91 98XXXXXXX → Identified as Mobile via India number plan.
+        ii. +971 4 XXX XXXX → Identified as Fixed via UAE number plan.
+
+4. **Application in Block Destination Type**
+
+    When a rule uses Block Destination Type, the lookup follows this logic:
+
+    * **For USA numbers**:
+
+    i. Perform Line-Type Check (LRN database).
+    ii. If not found → perform USA Range Type check.
+    iii. Apply the result to the block rule.
+
+    * **For International numbers**:
+
+    i. Directly apply the International Number Plan classification.
+
+This ensures blocking behaves consistently and accurately, even when numbers are ported or ranges evolve.
 
 #### United States Federal Do Not Call (DNC)
 
