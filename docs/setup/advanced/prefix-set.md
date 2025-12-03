@@ -47,6 +47,8 @@ Use Flags to create a *Global CLI Blacklist* or a *Global Dialled Number Blackli
 
     If you want to manage a DNC list, please review our [**Do Not Call (DNC)**](https://docs.connexcs.com/dnc/) setup.
 
+* **Global CLI Allow**: When a CLI is blocked in the DID section—either due to `Block Source Type` rules or `Spam Scout scoring`— enabling this flag allows the CLI to bypass these restrictions and allows the CLIs to pass through the system.
+
 ## Example Dial Strings for Prefix sets
 
 Prefix Sets and all Dial String fields accept plain text or regular expressions. List only one prefix per line. Here are 3 samples using plain text, regex, or a mix:
