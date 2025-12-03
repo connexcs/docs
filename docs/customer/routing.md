@@ -114,7 +114,7 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 
     **Explore the details inside ConnexCS: [USA Federal DNC](/customer/routing/#united-states-federal-do-not-call-dnc)| [UK TPS](/customer/routing/#united-kingdom-telephone-preference-service-tps)**
 
-+ **Block Destination Type**: You can select and block the calls to various destinations (carriers) like Mobile, Fixed, Paging, etc. [Click here to know about Destination Type Lookup & Fallback Logic — USA and International]()
++ **Block Destination Type**: You can select and block the calls to various destinations (carriers) like Mobile, Fixed, Paging, etc. [Click here to know about Destination Type Lookup & Fallback Logic — USA and International](/customer/routing/#destination-type-lookup-fallback-logic-usa-and-international)
 
 + **Spam Scout Scoring**: It blocks Spam calls based on the CLIs.
   You can either Block All, Allow All, Block Most Spam, or Block Least Spam.
@@ -188,7 +188,9 @@ View and configure existing routes on the Routing tab in the Customer card. To c
     If the number does not exist in the line-type database, the system falls back to the USA Range Type:
 
     i. Uses the NANPA number block (e.g., 201-2019) to determine its type.
+
     ii. This is less granular but covers entire assigned ranges.
+
     iii. Range metadata includes assignment date, carrier, and designated type (Mobile / Fixed / VoIP).
 
     !!! Example
@@ -199,16 +201,20 @@ View and configure existing routes on the Routing tab in the Customer card. To c
     * **For non-USA destinations**:
 
         i. The system **does not** use LRN or NANPA.
+
         ii. The system directly uses the **International Number Plan**.
 
     * **The International Number Plan contains**:
 
         i. Country-level numbering rules
+
         ii. Mobile VS fixed patterns
-        ii. Regulator-published allocations
+
+        iii. Regulator-published allocations
 
     !!! Example
         i. +91 98XXXXXXX → Identified as Mobile via India number plan.
+
         ii. +971 4 XXX XXXX → Identified as Fixed via UAE number plan.
 
 4. **Application in Block Destination Type**
@@ -218,7 +224,9 @@ View and configure existing routes on the Routing tab in the Customer card. To c
     * **For USA numbers**:
 
     i. Perform Line-Type Check (LRN database).
+
     ii. If not found → perform USA Range Type check.
+
     iii. Apply the result to the block rule.
 
     * **For International numbers**:
