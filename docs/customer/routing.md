@@ -114,7 +114,7 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 
     **Explore the details inside ConnexCS: [USA Federal DNC](/customer/routing/#united-states-federal-do-not-call-dnc)| [UK TPS](/customer/routing/#united-kingdom-telephone-preference-service-tps)**
 
-+ **Block Destination Type**: You can select and block the calls to various destinations (carriers) like Mobile, Fixed, Paging, etc. [Click here to know about Destination Type Lookup & Fallback Logic — USA and International](/customer/routing/#destination-type-lookup-fallback-logic-usa-and-international)
++ **Block Destination Type**: You can select and block the calls to various destinations (carriers) like Mobile, Fixed, Paging, etc. [Click here to know about Destination Type Lookup & Fallback Logic — USA and International](/customer/routing/#destination-type-lookup-fallback-logic-usa-and-international).
 
 + **Spam Scout Scoring**: It blocks Spam calls based on the CLIs.
   You can either Block All, Allow All, Block Most Spam, or Block Least Spam.

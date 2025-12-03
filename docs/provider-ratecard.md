@@ -199,7 +199,7 @@ See [**Filter PAID by Number or Pattern**](https://docs.connexcs.com/customer/cl
     |**Closest (To ConnexCS) Server**|Media will use the server geographically closest to ConnexCS|
     |**Closest (Elastic) Server**|This will allow traffic to traverse new deployed servers. Would only cause issues if the customer runs a firewall, in which case the servers aren't authorized.|
 
-+ **Block Destination Type**: Block calls to one or more types of destination (example: Mobile, Paging, or Satellite) using SIP Message `403 Destination Blocked'.
++ **Block Destination Type**: Block calls to one or more types of destination (example: Mobile, Paging, or Satellite) using SIP Message `403 Destination Blocked'. [Click here to know about Destination Type Lookup & Fallback Logic — USA and International](/customer/routing/#destination-type-lookup-fallback-logic-usa-and-international).
 + **Block Connect Cost**: Disable / enable the per-call connection cost across the carrier.
 + **P-Time**: Packetization time, or P-Time, refers to the length of an SDP packet based on the media time in milliseconds.
     + Default: Use the default setting in the end-device's firmware (don't change what's sent.)
