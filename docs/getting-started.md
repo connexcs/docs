@@ -352,7 +352,7 @@ To find this, click your name in the upper right corner and select `Profile`.
 
     Click the blue `Edit` button to manage your email subscriptions.
 
-    <img src= "/getting-started/img/pp2.png" width= "200" style="border: 2px solid #4472C4; border-radius: 8px;">
+    <img src= "/getting-started/img/pp2.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 === "KYC"
 
@@ -361,9 +361,9 @@ To find this, click your name in the upper right corner and select `Profile`.
 
     As part of the KYC procedure, users are required to:
 
-    1. Click on `verify`. <img src= "/getting-started/img/pp3_new.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
-    2. You will get a window where you need to agree to the terms and conditions.<img src= "/getting-started/img/pp3_1.png" width= "200" style="border: 2px solid #4472C4; border-radius: 8px;">
-    3. Scan the QR Code. <img src= "/getting-started/img/pp3_2.png" width= "200" style="border: 2px solid #4472C4; border-radius: 8px;">
+    1. Click on `verify`. <br><img src= "/getting-started/img/pp3_new.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+    2. You will get a window where you need to agree to the terms and conditions.<br><img src= "/getting-started/img/pp3_1.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+    3. Scan the QR Code. <br><img src= "/getting-started/img/pp3_2.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
     4. Capture and submit a live photo of themselves while holding the verification document.
     5. Upload a clear image of the verification document used for identity confirmation.
     6. These submissions are used to validate the customer’s identity and ensure compliance with regulatory requirements.
