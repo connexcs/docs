@@ -103,7 +103,7 @@ The **P-Asserted-ID** manipulation uses the same syntax as the Replace CLI.
         1. Create a permitted list that exclusively allows calls to or from the same country.
         2. Only allow incoming calls with a CLI starting with 44 (UK numbers).
 
-+ **Allow Type**: You can select from various options like Mobile, Paging, VoIP, Satellite etc to allow the CLIs.
++ **Allow Type**: You can select from various options like Mobile, Paging, VoIP, Satellite etc to allow the CLIs. [Click here to know about Destination Type Lookup & Fallback Logic — USA and International](/customer/routing/#destination-type-lookup-fallback-logic-usa-and-international)
 
 + **Use DID**: Pull in DIDs from the customer's account to use either as a Filter or as a Replacement.  
 

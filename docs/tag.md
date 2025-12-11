@@ -210,7 +210,7 @@ Used for troubleshooting, you can remove carriers from a route and run a quick t
 2. **Exclude** (Deny): Exclude access to one or more rate cards in the list of available providers.
 3. **DNC (Do Not Call) List**: The customer won't be able to able to dial the numbers in the specified DNC list.
   You can add the list of numbers in the [**Database**](https://docs.connexcs.com/developers/database/).
-4. **Block Destination Type**: You can select and block the calls to various destinations (carriers) like Mobile, Fixed, Paging, etc.
+4. **Block Destination Type**: You can select and block the calls to various destinations (carriers) like Mobile, Fixed, Paging, etc. [Click here to know about Destination Type Lookup & Fallback Logic — USA and International](/customer/routing/#destination-type-lookup-fallback-logic-usa-and-international).
 5. **Spam Scout Scoring**: It blocks Spam calls based on the CLIs.
   You can either Block All, Allow All, Block Most Spam, or Block Least Spam.
 
