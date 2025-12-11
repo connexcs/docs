@@ -262,18 +262,95 @@ To find this, click your name in the upper right corner and select `Profile`.
     
     To configure this on ConnexCS, click `Enable` and follow prompts for QR code. You must install a 2FA/TFA app on your phone. 
     
-    **Web Auth N / FIDO2**: This lets you to enable hardware security keys/tokens, which is more secure that basic password protection (details [**here**](https://www.ncsc.gov.uk/collection/mobile-device-guidance/enterprise-authentication-policy)). 
+    ** Passkey (Web Auth N) / FIDO2**: 
+    ConnexCS has restored and enhanced full support for WebAuthN, enabling modern passwordless authentication mechanisms including Passkeys, hardware security keys, and biometric verification. This update resolves previous issues where biometric authentication failed on both iPhone and Android devices (details [**here**](https://www.ncsc.gov.uk/collection/mobile-device-guidance/enterprise-authentication-policy)).
+
+    The result is a more secure, user-friendly, and standards-compliant authentication experience across devices and browsers.
+
+    **1. Summary of Change**
+
+        Although this work was categorized as a feature fix, the underlying solution required significant refactoring:
+
+        Removal of six deprecated server-side WebAuthN libraries
+
+        Integration of one modern, fully compliant server-side library
+
+        Addition of one new client-side WebAuthN library to improve browser compatibility
+
+        Streamlined authentication flow and improved error handling
+
+        This refactoring reduces technical debt while improving security and long-term maintainability.
+
+    **2. New & Restored Authentication Capabilities**
+    **2.1 Hardware Security Keys / Tokens**
+
+    ConnexCS now fully supports hardware-based authentication using WebAuthN-compliant devices such as:
+
+    * YubiKey
+    * Titan Security Key
+    * FIDO2 hardware tokens
+
+    These provide significantly higher security than passwords alone, as authentication requires physical possession of the device.
+
+    After configuration, users can authenticate via:
+
+    * USB security keys
+    * NFC tokens
+    * Bluetooth-enabled authenticators
+
+    **2.2 Biometric Authentication**
+
+    Users may now enable biometric login methods, including:
     
-    To configure this on ConnexCS, click `Enroll`. Once it's setup, there is a special button to click/tap upon login to the ConnexCS portal. 
+    * Face Verification
+    * Face ID / Touch ID (iOS)
+    * Android Biometrics (fingerprint, facial)
 
-    You can also add **Biometric Security** by using **Face Verification**.
+    Biometric authentication works through the native WebAuthN API and is fully restored for both iPhone and Android.
 
-    Other options include **PIN** and **Security**.
+    **2.3 Additional Authentication Options**
 
-    The interesting thing is that you get these options on your browser using the [**Windows Hello application**](https://support.microsoft.com/en-us/windows/learn-about-windows-hello-and-set-it-up-dae28983-8242-bb2a-d3d1-87c9d265a5f0).
+    ConnexCS also supports:
+
+    * PIN-based verification
+    * Device Security / Screen Unlock mechanisms (e.g., Windows Hello PIN, fingerprint, or camera)
+
+    These alternative factors provide a layered security approach depending on the user’s device, browser, and platform capabilities.
+
+    **2.4 Windows Hello Integration**
+
+    A key enhancement is that browsers on Windows devices can now leverage Windows Hello, enabling authentication using:
+
+    * Windows Hello PIN
+    * Biometric Facial Recognition
+    * Fingerprint Sensor
+
+    This allows seamless WebAuthN authentication supported directly within the browser environment without additional plugins.
+
+  **3. Enrolment & Configuration**
+
+    Users can configure WebAuthN authentication directly within the ConnexCS Portal.
+
+    **Steps**:
+
+    1. Navigate to the Security section.
+    2. Click Enroll under WebAuthN / Passkeys.
+    3. Choose the authentication method to register:
+        * Hardware key
+        * Biometric authenticator
+        * PIN or device security
+    4. Complete setup following browser prompts.
+
+    Once enrolled, a special login button appears on the ConnexCS login screen to initiate WebAuthN-based passwordless authentication.
     
-    <img src= "/getting-started/img/2fa.png" width= "350" style="border: 2px solid #4472C4; border-radius: 8px;">
+    <img src= "/getting-started/img/pp1.png" width= "350" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 === "Advanced"
 
     Click the blue `Edit` button to manage your email subscriptions.
+
+    <img src= "/getting-started/img/pp2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+=== "KYC"
+
+    This is the Know Your Customer tab where you can 
