@@ -329,24 +329,24 @@ To find this, click your name in the upper right corner and select `Profile`.
 
   **3. Enrolment & Configuration**
 
-Users can configure WebAuthN authentication directly within the ConnexCS Portal.
+    Users can configure WebAuthN authentication directly within the ConnexCS Portal.
 
-**Steps**:
+    **Steps**:
 
-1. Navigate to the Security section.
+  1. Navigate to the Security section.
 
-2. Click Enroll under WebAuthN / Passkeys.
+  2. Click Enroll under WebAuthN / Passkeys.
 
-3. Choose the authentication method to register:
+  3. Choose the authentication method to register:
     * Hardware key
     * Biometric authenticator
     * PIN or device security
 
-4. Complete setup following browser prompts.
+  4. Complete setup following browser prompts.
 
-Once enrolled, a special login button appears on the ConnexCS login screen to initiate WebAuthN-based passwordless authentication.
+    Once enrolled, a special login button appears on the ConnexCS login screen to initiate WebAuthN-based passwordless authentication.
 
-<img src= "/getting-started/img/pp1.png" width= "350" style="border: 2px solid #4472C4; border-radius: 8px;">
+    <img src= "/getting-started/img/pp1.png" width= "350" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 === "Advanced"
 
