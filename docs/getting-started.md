@@ -352,7 +352,7 @@ To find this, click your name in the upper right corner and select `Profile`.
 
     Click the blue `Edit` button to manage your email subscriptions.
 
-    <img src= "/getting-started/img/pp2.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;">
+    <img src= "/getting-started/img/pp2.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 === "KYC"
 
