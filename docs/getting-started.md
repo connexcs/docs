@@ -269,17 +269,17 @@ To find this, click your name in the upper right corner and select `Profile`.
 
     **1. Summary of Change**
 
-        Although this work was categorized as a feature fix, the underlying solution required significant refactoring:
+    Although this work was categorized as a feature fix, the underlying solution required significant refactoring:
 
-        Removal of six deprecated server-side WebAuthN libraries
+    Removal of six deprecated server-side WebAuthN libraries
 
-        Integration of one modern, fully compliant server-side library
+    Integration of one modern, fully compliant server-side library
 
-        Addition of one new client-side WebAuthN library to improve browser compatibility
+    Addition of one new client-side WebAuthN library to improve browser compatibility
 
-        Streamlined authentication flow and improved error handling
+    Streamlined authentication flow and improved error handling
 
-        This refactoring reduces technical debt while improving security and long-term maintainability.
+    This refactoring reduces technical debt while improving security and long-term maintainability.
 
     **2. New & Restored Authentication Capabilities**
     **2.1 Hardware Security Keys / Tokens**
@@ -329,21 +329,24 @@ To find this, click your name in the upper right corner and select `Profile`.
 
   **3. Enrolment & Configuration**
 
-    Users can configure WebAuthN authentication directly within the ConnexCS Portal.
+Users can configure WebAuthN authentication directly within the ConnexCS Portal.
 
-    **Steps**:
+**Steps**:
 
-    1. Navigate to the Security section.
-    2. Click Enroll under WebAuthN / Passkeys.
-    3. Choose the authentication method to register:
-        * Hardware key
-        * Biometric authenticator
-        * PIN or device security
-    4. Complete setup following browser prompts.
+1. Navigate to the Security section.
 
-    Once enrolled, a special login button appears on the ConnexCS login screen to initiate WebAuthN-based passwordless authentication.
-    
-    <img src= "/getting-started/img/pp1.png" width= "350" style="border: 2px solid #4472C4; border-radius: 8px;">
+2. Click Enroll under WebAuthN / Passkeys.
+
+3. Choose the authentication method to register:
+    * Hardware key
+    * Biometric authenticator
+    * PIN or device security
+
+4. Complete setup following browser prompts.
+
+Once enrolled, a special login button appears on the ConnexCS login screen to initiate WebAuthN-based passwordless authentication.
+
+<img src= "/getting-started/img/pp1.png" width= "350" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 === "Advanced"
 
