@@ -342,9 +342,15 @@ nav:
         - Webphone: apps/components/webphone.md
     - Contact Center:
         - Introduction: customer-portal/cp-contact-center.md
-        - Contact Center Setup & Usage Guide: customer-portal/cp-cc-install.md
-        - Preview Dialer: customer-portal/cp-cc-pd.md
-        - Auto Dialer: customer-portal/cp-cc-ad.md
-        - Broadcast Dialer: customer-portal/cp-cc-bd.md
+        - Contact Center Setup and Usage Guide: customer-portal/cp-cc-install.md
+        - Dialer Dashboard: customer-portal/cp-cc-dialer-dashboard.md
+        - Setting Up the Dialer:
+            - Introduction: customer-portal/cp-cc-setting-up-dialer.md
+            - Campaign Creation: customer-portal/cp-cc-campaign.md
+            - Agent Creation: customer-portal/cp-cc-creating-agents.md
+            - Script Creation: customer-portal/cp-cc-creating-scripts.md
+            - Leadset Creation: customer-portal/cp-cc-creating-leadsets.md
+            - Agent Dialer Guide: customer-portal/cp-cc-agent-dialer-guide.md
+
 
     
