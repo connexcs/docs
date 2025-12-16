@@ -35,7 +35,7 @@ Use Script Forge to manage these calls by adding the numbers to the system. If y
 7. Click the green arrow to `Save and Run`.
 
 !!! info "More on Script Forge"
-    See [**Script Forge**](https://docs.connexcs.com/apps/architecture/script/#configuration) in our documentation for more details on using Script Forge.
+    See [**Script Forge**](https://docs.connexcs.com/apps/architecture/scriptforge/#configuration) in our documentation for more details on using Script Forge.
 
 **Step 3: Add script to Customer**
 

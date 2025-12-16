@@ -383,7 +383,7 @@ To grant access to functions for an AI agent, follow these steps:
       3. Create a new App. [Click here](https://docs.connexcs.com/apps/architecture/app/) to follow the steps.
 
 2. **Add a Script Forge**:
-    Under the newly created app, add a Script Forge. [Click here](https://docs.connexcs.com/apps/architecture/script/) to know the steps.
+    Under the newly created app, add a Script Forge. [Click here](https://docs.connexcs.com/apps/architecture/scriptforge/) to know the steps.
 
 3. **Define the Function**:
     Within the Script Forge, add the function you want the AI agent to access.

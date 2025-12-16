@@ -18,7 +18,7 @@ Verification depends on their CLI (Caller Line Identification), so a Personal Id
 
 While not a native feature of ConnexCS, you can add this functionality to your account using the following 3 steps.
 
-**Step 1: [Create a new script in ScriptForge](https://docs.connexcs.com/apps/architecture/script/#build-script) with the following code**
+**Step 1: [Create a new script in ScriptForge](https://docs.connexcs.com/apps/architecture/scriptforge/#build-script) with the following code**
 
 ```javascript linenums="1"
 /*
