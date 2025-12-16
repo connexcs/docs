@@ -1,12 +1,31 @@
 # ConnexCS Reference Data Sets
 
+---
+
 <details> <summary><strong>Document Metadata</strong></summary> <br>
 
-<strong>Category</strong>: Architecture → Datasets <br> <strong>Audience</strong>: Administrators, Engineers, Data Analysts<br> <strong>Difficulty</strong>: Intermediate<br> <strong>Time Required</strong>: 10–20 minutes<br> <strong>Prerequisites</strong>: Access to the ConnexCS documentation portal; basic understanding of data sets and how they relate to telephony/switching platforms.<br> <strong>Related Topics</strong>: <a href="https://docs.connexcs.com/developers/database/">Database (User Data Storage)</a> — explains how custom data stores are defined and used.<br> <strong>Next Steps</strong>: Review the dataset types, explore how to upload or query dataset tables, and integrate dataset usage into your routing, reporting, or analytics workflows.<br>
+<strong>Category</strong>: Setup → Information → Datasets<br>
+
+<strong>Audience</strong>: Administrators, Engineers, Data Analysts, Compliance Teams<br>
+
+<strong>Difficulty</strong>: Intermediate<br>
+
+<strong>Time Required</strong>: Approximately 20–40 minutes<br>
+
+<strong>Prerequisites</strong>: Access to the ConnexCS platform with dataset visibility enabled; understanding of telecom numbering, compliance filtering, and routing behaviors; optional API access for automated dataset lookups.<br>
+
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/developers/database/">Database (User Data Storage)</a>, <a href="https://docs.connexcs.com/routing-strategy/">Routing Strategy</a>, <a href="https://docs.connexcs.com/security/">Security & Fraud Prevention</a><br>
+
+<strong>Next Steps</strong>: Review available dataset types, understand their charging models, integrate datasets into routing or compliance flows, and test lookups (e.g., LRN, IP intelligence, DNC checks, spam filtering) to validate expected call-handling behavior.<br>
 
 </details>
 
 ---
+
+If you'd like, I can also generate a **formatted table** for the dataset list or convert each dataset into individual documentation blocks.
+
+
+## Overview
 
 ConnexCS Data Sets are curated collections of external or internal regulatory, routing, fraud-prevention, and compliance-related information that enhance call processing, verification, and decision-making.
 
@@ -18,7 +37,7 @@ This page provides a consolidated overview of all databases available within Con
 
 ---
 
-## Data Set Overview
+## Supported Datasets
 
 Below is a consolidated table of all supported data sets.
 

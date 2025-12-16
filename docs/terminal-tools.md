@@ -2,9 +2,27 @@
 
 ---
 
+Here is a **Document Metadata** block tailored specifically for **ConnexCS Terminal Tools (CX-Tools)**, matching the same style and formatting as your previous metadata sections:
+
+---
+
 <details> <summary><strong>Document Metadata</strong></summary> <br>
 
-<strong>Category</strong>: Tools & Utilities / Terminal Tools<br> <strong>Audience</strong>: Network Engineers, Administrators, Support Team<br> <strong>Difficulty</strong>: Intermediate to Advanced<br> <strong>Time Required</strong>: Approximately 20–30 minutes<br> <strong>Prerequisites</strong>: Access to command-line interface on relevant systems (e.g., Linux gateway, firewall, SBC) and permissions to run diagnostic utilities.<br> <strong>Related Topics</strong>: <a href="https://docs.connexcs.com/guides/tshoot-signal/">Troubleshooting – Signalling</a>, <a href="https://docs.connexcs.com/guides/tshoot-media/">Troubleshooting – Media</a>, <a href="https://docs.connexcs.com/guides/debugging/">Debugging Guide</a><br> <strong>Next Steps</strong>: After reviewing the terminal-tools guide, pick one of the utility tools (e.g., packet capture, SIP trace, network latency checker), practice running it in a lab environment, document the command syntax and output format, and add it to your incident response checklist for future use.<br>
+<strong>Category</strong>: Tools & Utilities / Terminal Tools (CX-Tools)<br>
+
+<strong>Audience</strong>: Developers, System Administrators, Operators, SREs, Power Users<br>
+
+<strong>Difficulty</strong>: Intermediate to Advanced<br>
+
+<strong>Time Required</strong>: Approximately 20–40 minutes<br>
+
+<strong>Prerequisites</strong>:
+Node.js runtime installed (CX-Tools requires Node.js), access to a ConnexCS account, permissions to run operational tasks (SQL queries, script management, key-value operations, deployments), and ability to authenticate via CX tokens or environment variables.<br>
+
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/guides/debugging/">Debugging Guide</a>, <a href="https://docs.connexcs.com/developers/scriptforge/">ScriptForge</a>, <a href="https://docs.connexcs.com/guides/tshoot-signal/">Troubleshooting – Signalling</a>, <a href="https://docs.connexcs.com/guides/tshoot-media/">Troubleshooting – Media</a><br>
+
+<strong>Next Steps</strong>:
+Install and configure CX-Tools, authenticate using `cx configure` or environment variables, explore core commands (scripts, SQL queries, KV store, deployments), integrate CLI usage into your development or operational workflows, and automate recurring tasks via scripts or CI pipelines.<br>
 
 </details>
 
