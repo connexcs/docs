@@ -2,10 +2,6 @@
 
 ---
 
-Here is a **Document Metadata** block tailored specifically for **ConnexCS Terminal Tools (CX-Tools)**, matching the same style and formatting as your previous metadata sections:
-
----
-
 <details> <summary><strong>Document Metadata</strong></summary> <br>
 
 <strong>Category</strong>: Tools & Utilities / Terminal Tools (CX-Tools)<br>

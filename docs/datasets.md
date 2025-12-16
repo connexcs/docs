@@ -4,7 +4,7 @@
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>
 
-<strong>Category</strong>: Setup → Information → Datasets<br>
+<strong>Category</strong>: Architecture → Datasets<br>
 
 <strong>Audience</strong>: Administrators, Engineers, Data Analysts, Compliance Teams<br>
 
@@ -21,9 +21,6 @@
 </details>
 
 ---
-
-If you'd like, I can also generate a **formatted table** for the dataset list or convert each dataset into individual documentation blocks.
-
 
 ## Overview
 
