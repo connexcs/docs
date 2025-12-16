@@ -1,5 +1,15 @@
 # Terminal Tools
 
+---
+
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Tools & Utilities / Terminal Tools<br> <strong>Audience</strong>: Network Engineers, Administrators, Support Team<br> <strong>Difficulty</strong>: Intermediate to Advanced<br> <strong>Time Required</strong>: Approximately 20–30 minutes<br> <strong>Prerequisites</strong>: Access to command-line interface on relevant systems (e.g., Linux gateway, firewall, SBC) and permissions to run diagnostic utilities.<br> <strong>Related Topics</strong>: <a href="https://docs.connexcs.com/guides/tshoot-signal/">Troubleshooting – Signalling</a>, <a href="https://docs.connexcs.com/guides/tshoot-media/">Troubleshooting – Media</a>, <a href="https://docs.connexcs.com/guides/debugging/">Debugging Guide</a><br> <strong>Next Steps</strong>: After reviewing the terminal-tools guide, pick one of the utility tools (e.g., packet capture, SIP trace, network latency checker), practice running it in a lab environment, document the command syntax and output format, and add it to your incident response checklist for future use.<br>
+
+</details>
+
+---
+
 ## Overview
 
 **CX-Tools ("cx")/Terminal Tools**is the official ConnexCS **Command‑Line Interface (CLI)** that provides a compact, scriptable, and developer‑friendly modality to interact with ConnexCS services.

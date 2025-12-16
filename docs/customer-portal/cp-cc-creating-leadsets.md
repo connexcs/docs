@@ -1,5 +1,15 @@
 # Creating Leadsets
 
+---
+
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Customer Portal / Contact Center – Leadset Management<br> <strong>Audience</strong>: Administrators, Engineers, Support Team<br> <strong>Difficulty</strong>: Intermediate<br> <strong>Time Required</strong>: Approximately 15–25 minutes<br> <strong>Prerequisites</strong>: Active ConnexCS account, Customer Portal module enabled, Contact Center and Dialer configured, and permissions to create or import leadsets in the Contact Center module.<br> <strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer-portal/cp-contact-center/">Contact Center Overview</a>, <a href="https://docs.connexcs.com/customer-portal/cp-cc-creating-agents/">Creating Agents</a>, <a href="https://docs.connexcs.com/customer-portal/cp-cc-campaign/">Campaign Management</a>, <a href="https://docs.connexcs.com/customer-portal/cp-cc-setting-up-dialer/">Dialer Setup</a><br> <strong>Next Steps</strong>: Build or upload leadsets (lists of leads/contacts), associate leadsets with specific campaigns, assign leads to agents, test lead distribution and calling workflows, and verify lead assignment and call logging.<br>
+
+</details>
+
+---
+
 ## Overview
 
 Leadset creation involves adding and organizing the list of contacts that will be used in a call center campaign.

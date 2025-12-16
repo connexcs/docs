@@ -1,5 +1,19 @@
 # Dialer Dashboard: Features and Functions
 
+---
+
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Customer Portal / Contact Center Dashboard<br> <strong>Audience</strong>: Administrators, Engineers, Support Team<br> <strong>Difficulty</strong>: Intermediate<br> <strong>Time Required</strong>: Approximately 20–40 minutes<br> <strong>Prerequisites</strong>: Active ConnexCS account, Customer Portal module enabled, Contact Center feature installed and configured in portal dialer settings, and relevant user permissions for dashboard access.<br> <strong>Related Topics</strong>:
+Customer Portal – Contact Center Installation<br>
+Customer Portal – Contact Center Overview<br>
+Contacts Management<br>
+Customer Dashboard<br> <strong>Next Steps</strong>: Log in to the portal as a Dialer-Dashboard user, review dashboard metrics and controls, test outbound/inbound call workflows, monitor call logs and performance metrics, and integrate with customer & contact data for workflow validation.<br>
+
+</details>
+
+---
+
 ## Introduction
 
 In this section, we will cover the **Dialer Dashboard**, which provides real-time insights into ongoing campaigns.

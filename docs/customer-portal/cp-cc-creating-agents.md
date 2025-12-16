@@ -1,5 +1,15 @@
 # Creating Agents
 
+---
+
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Customer Portal / Contact Center – Agent Management<br> <strong>Audience</strong>: Administrators, Engineers, Support Team<br> <strong>Difficulty</strong>: Intermediate<br> <strong>Time Required</strong>: Approximately 15–25 minutes<br> <strong>Prerequisites</strong>: Active ConnexCS account, Customer Portal module enabled, Contact Center and Dialer configured, and appropriate administrative permissions to create and manage agents in the portal.<br> <strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer-portal/cp-contact-center/">Customer Portal – Contact Center Overview</a>, <a href="https://docs.connexcs.com/customer-portal/cp-cc-setting-up-dialer/">Dialer Setup</a>, <a href="https://docs.connexcs.com/customer-portal/cp-cc-campaign/">Campaign Management</a>, <a href="https://docs.connexcs.com/customer-portal/cp-cc-dialer-dashboard/">Dialer Dashboard</a><br> <strong>Next Steps</strong>: Add or import agent user accounts, assign appropriate roles and permissions, verify agent login to the Customer Portal, and test agent-specific call workflows (dialer access, call handling, agent reporting).<br>
+
+</details>
+
+---
+
 !!! warning "Creating Agents is **ONLY** for **Auto Dialer** and **Preview Dialer**."
 
 ## Overview

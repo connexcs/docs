@@ -1,5 +1,13 @@
 # ConnexCS Reference Data Sets
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Architecture → Datasets <br> <strong>Audience</strong>: Administrators, Engineers, Data Analysts<br> <strong>Difficulty</strong>: Intermediate<br> <strong>Time Required</strong>: 10–20 minutes<br> <strong>Prerequisites</strong>: Access to the ConnexCS documentation portal; basic understanding of data sets and how they relate to telephony/switching platforms.<br> <strong>Related Topics</strong>: <a href="https://docs.connexcs.com/developers/database/">Database (User Data Storage)</a> — explains how custom data stores are defined and used.<br> <strong>Next Steps</strong>: Review the dataset types, explore how to upload or query dataset tables, and integrate dataset usage into your routing, reporting, or analytics workflows.<br>
+
+</details>
+
+---
+
 ConnexCS Data Sets are curated collections of external or internal regulatory, routing, fraud-prevention, and compliance-related information that enhance call processing, verification, and decision-making.
 
 These Data Sets allow the platform to validate phone numbers, check compliance restrictions, identify high‑risk traffic, assess IP reputation, and support intelligent routing — all in real time.

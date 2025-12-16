@@ -1,5 +1,15 @@
 # Agent Dialer Guide
 
+---
+
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Customer Portal / Contact Center – Agent Guide<br> <strong>Audience</strong>: Agents, Support Team, Administrators<br> <strong>Difficulty</strong>: Beginner to Intermediate<br> <strong>Time Required</strong>: Approximately 15–25 minutes<br> <strong>Prerequisites</strong>: Active ConnexCS account, Customer Portal module enabled, Contact Center and Dialer configured, and agent account credentials with dialer permissions.<br> <strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer-portal/cp-cc-creating-agents/">Creating Agents</a>, <a href="https://docs.connexcs.com/customer-portal/cp-cc-setting-up-dialer/">Dialer Setup</a>, <a href="https://docs.connexcs.com/customer-portal/cp-cc-dialer-dashboard/">Dialer Dashboard</a>, <a href="https://docs.connexcs.com/customer-portal/cp-cc-campaign/">Campaign & Leadset Management</a><br> <strong>Next Steps</strong>: Log in as an agent via the Customer Portal, access the dialer interface, review calling workflows, make/receive campaign-assigned calls, log outcomes as per script or process guidelines, and report any issues for follow-up.<br>
+
+</details>
+
+---
+
 ## Overview
 
 !!! warning "This section applies **only to Auto Dialer and Preview Dialer** campaigns."
