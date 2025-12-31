@@ -1,5 +1,17 @@
 # Contact Center
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Customer Portal / Contact Center<br>
+<strong>Audience</strong>: Administrators, Support Team, Engineers<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 20–40 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account, access to the Customer Portal module, basic understanding of contact-center workflows and portal navigation<br>
+<strong>Related Topics</strong>: Customer Portal Overview, <a href="https://docs.connexcs.com/customer/main/#contacts">Contacts Management</a>, <a href="https://docs.connexcs.com/customer/customer/#customer-dashboard">Customer Dashboard</a>, <a href="https://docs.connexcs.com/setup/integrations/portal/">Portal Access Configuration</a><br>
+<strong>Next Steps</strong>: Review portal permissions for contact-center access, configure roles and workflows, test portal login and contact-center operations, and integrate with customer account & contacts data<br>
+
+</details>
+
 ## Overview
 
 Our Dialer is a comprehensive contact center solution designed to streamline outbound and inbound campaigns.

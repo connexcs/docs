@@ -1,5 +1,17 @@
 # Breakout
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Customer Portal / Breakout Report<br>
+<strong>Audience</strong>: Administrators, Customer Success Team, Finance & Billing Staff<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 20–30 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with access to the Customer Portal and permission to view Breakout reports<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer-portal/cp-dashboard/">Customer Portal – Dashboard</a>, <a href="https://docs.connexcs.com/customer-portal/cp-cdr/">Customer Portal – CDR Viewer</a>, <a href="https://docs.connexcs.com/report/">Reporting – Breakout & DTMF Reports</a><br>
+<strong>Next Steps</strong>: After reviewing the Breakout Report guide, filter the report by date and destination, review per-customer profitability metrics (Revenue vs Cost, ASR, ACD), identify under-performing routes or customers, and schedule a monthly review of Breakout metrics to optimise routing and customer billing<br>
+
+</details>
+
 The **Breakout** report lists account customers with the following:
 
 * associated profits, and

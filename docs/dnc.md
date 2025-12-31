@@ -1,5 +1,17 @@
 # Do Not Call Lists
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Compliance & Call Filtering / DNC Management<br>
+<strong>Audience</strong>: Administrators, Compliance Teams, Support Engineers<br>
+<strong>Difficulty</strong>: Beginner to Intermediate<br>
+<strong>Time Required</strong>: Approximately 20–30 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with access to Compliance Tools, and permission to manage DNC lists<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/dnc/#us-dno-requirements-in-connexcs">DNO</a>, <a href="https://docs.connexcs.com/customer/routing/#united-states-federal-do-not-call-dnc">Federal DNC</a>, <a href="https://docs.connexcs.com/customer/routing/#united-kingdom-telephone-preference-service-tps">TPS</a><br>
+<strong>Next Steps</strong>: After configuring your DNC settings, set up automated lookups via <code>Routing → Routing Table</code> filters and review additional compliance datasets under <strong>Compliance Tools</strong>.<br>
+
+</details>
+
 In today's society, all modern call carriers should recognise and honor **Do Not Call Lists (DNC).**
 
 Calling numbers on these lists can result in costly fines and prosecutions.

@@ -1,5 +1,17 @@
 # Group
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Applications Platform / UI Components — Group Component<br>
+<strong>Audience</strong>: Developers, Engineers, UI/UX Designers<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 10–15 minutes<br>
+<strong>Prerequisites</strong>: Access to ConnexCS Apps Platform IDE (Page Builder), basic understanding of UI layout and form grouping concepts<br>
+<strong>Related Topics</strong>: Layout-related components (Grid, Divider, Card, Collapse) — <a href="https://docs.connexcs.com/apps/components/grid/">Grid Component</a>, <a href="https://docs.connexcs.com/apps/components/divider/">Divider Component</a><br>
+<strong>Next Steps</strong>: Add Group container → bundle related elements → configure title/styling/collapsible → test layout and responsiveness<br>
+
+</details>
+
 ## Description
 
 A **Group** component in form making is a UI element that allows you to logically group related form fields together.

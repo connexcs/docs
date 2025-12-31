@@ -1,5 +1,25 @@
 # Routing
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Routing & Call Control<br>
+<strong>Audience</strong>: Administrators, Support Engineers<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: 1–2 hours<br>
+<strong>Prerequisites</strong>:
+<a href="https://docs.connexcs.com/carrier/#create-carrier">Carrier Setup</a>,
+<a href="https://docs.connexcs.com/customer/customer/#create-customer">Customer Setup</a>,
+<a href="https://docs.connexcs.com/rate-card-building/">Rate Cards</a><br>
+<strong>Related Topics</strong>:
+<a href="https://docs.connexcs.com/routing-strategy/">Routing Strategy</a>,
+<a href="https://docs.connexcs.com/global-routing/">Global Routing</a>,
+<a href="https://docs.connexcs.com/customer/routing/">Customer Routing</a><br>
+<strong>Next Steps</strong>:
+<a href="https://docs.connexcs.com/routing-strategy/">Routing Strategy</a>,
+<a href="https://docs.connexcs.com/circuit-test/">Circuit Test</a><br>
+
+</details>
+
 ## Route Path
 
 ```mermaid

@@ -1,5 +1,17 @@
 # Dialogs
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Customer Analytics & Monitoring / Real-Time Call Tracking<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Beginner to Intermediate<br>
+<strong>Time Required</strong>: Approximately 15–30 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with access to the Customer Portal and permission to view the “Dialogs” module<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer/latest-calls/">Customer – Latest Calls</a>, <a href="https://docs.connexcs.com/logging/">Logging & Call Detail Records (CDR)</a><br>
+<strong>Next Steps</strong>: After using the “Dialogs” view, proceed to exporting or drilling into the call records via the CDR or Logging modules to analyze call details and troubleshoot issues<br>
+
+</details>
+
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Dialogs**
 
 ## Overview

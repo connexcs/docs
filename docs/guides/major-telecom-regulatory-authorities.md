@@ -1,5 +1,17 @@
 # Governing Bodies
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Compliance & Regulatory / Major Telecom Regulatory Authorities<br>
+<strong>Audience</strong>: Administrators, Compliance Teams, Legal & Regulatory Staff<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 20–30 minutes<br>
+<strong>Prerequisites</strong>: Familiarity with international telecom regulation, awareness of your operational geographies and regulatory obligations<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/guides/stir-shaken-fcc/">NEW Federal Communications Commission (USA) Regulations on STIR/SHAKEN</a>, <a href="https://www.trai.gov.in/">Telecom Regulatory Authority of India (TRAI)</a>, <a href="https://www.ofcom.org.uk/">Office of Communications (Ofcom, UK)</a><br>
+<strong>Next Steps</strong>: After reviewing this overview of major regulatory authorities, map your business operations to all relevant jurisdictions, verify license/registration requirements in each region, and update your compliance checklist accordingly (for example: US, UK, India, Australia, China).<br>
+
+</details>
+
 Every country has a designated authority that governs all types of telecom and communication providers. As a VoIP service provider, you're required to know about the governing bodies, and the rules and regulations you need to comply with.
 
 Internationally, the majority of telecom rules and regulations are standardized. However, each country and its telecom regulatory authority have their own set of unique rules and regulations that you need to be aware of.

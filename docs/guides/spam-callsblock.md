@@ -1,5 +1,17 @@
 # Enabling Spam Protection Features
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Fraud Mitigation & Call Filtering / Spam Calls & Call-Blocking<br>
+<strong>Audience</strong>: Administrators, Engineers, Compliance & Support Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 30–40 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with access to Routing and Security modules, and permissions to define blocking rules (prefix sets, CLIs, fraud profiles)<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer/routing/#security-controls">Routing – Ingress Routing</a><br>
+<strong>Next Steps</strong>: After reviewing the spam-calls blocking guide, implement key blocking rules (e.g., prefix sets, CLI scoring, DNO lists), test using real traffic, monitor for false positives/legitimate-call impacts, and schedule periodic reviews of fraud-and-spam patterns for ongoing adjustment.<br>
+
+</details>
+
 In the telecommunications sector, spam calls have been a recurrent problem that annoys customers and poses a risk of harm.
 
 These undesirable calls frequently entail fraud and schemes that intend to trick victims into divulging personal information like credit card numbers, Social Security numbers.

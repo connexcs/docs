@@ -1,5 +1,17 @@
 # Date
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Applications Platform / UI Components — Date Picker / Date Component<br>
+<strong>Audience</strong>: Developers, Engineers, UI/UX Designers, Support Team<br>
+<strong>Difficulty</strong>: Beginner to Intermediate<br>
+<strong>Time Required</strong>: Approximately 10–15 minutes<br>
+<strong>Prerequisites</strong>: Access to the ConnexCS Apps Platform IDE (Page Builder), and familiarity with form design including date-input controls<br>
+<strong>Related Topics</strong>: Other form input components (e.g., checkbox, select)<br>
+<strong>Next Steps</strong>: Add Date component → configure format/constraints → bind to logic → handle timezone/validation → test interactions<br>
+
+</details>
+
 ## Description
 
 **Date** is a specialized input field designed to collect date information from users.

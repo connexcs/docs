@@ -1,5 +1,17 @@
 # Changing your Password
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: ConnexCS Basics → Changing Password<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Beginner<br>
+<strong>Time Required</strong>: 2–5 minutes<br>
+<strong>Prerequisites</strong>: Access to the ConnexCS Control Panel with permission to change user credentials.<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/changing-language/">Changing Language</a> (for UI preference updates), <a href="https://docs.connexcs.com/setup/settings/users/">User Settings</a> (user account management)<br>
+<strong>Next Steps</strong>: After resetting your password, log out and log back in to confirm the change, then update any saved login credentials you use.<br>
+
+</details>
+
 You can **Change the Password** for your ConnexCS Control Panel login, either when your current password gets compromised or if you want to use a new password.
 
 !!! info "What do you need to change your password"

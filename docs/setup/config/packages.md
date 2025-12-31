@@ -1,5 +1,17 @@
 # Packages
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Setup / Configuration / Packages<br>
+<strong>Audience</strong>: Administrators, Engineers, Product & Billing Teams<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 45–90 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with Setup-Config access; understanding of service products, recurring billing models and account-level provisioning.<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer/package/">Customer → Packages</a><br>
+<strong>Next Steps</strong>: Navigate to <code>Setup → Config → Packages</code>, click <strong>Add Package</strong> to define product name, recurring retail cost, billing frequency and any one-time setup charge, then <strong>Assign Package</strong> to customers or direct to a DID/DID block and verify billing & portal visibility.<br>
+
+</details>
+
 **Setup :material-menu-right: Config :material-menu-right: Packages**
 
 A **Package** represents a product or service offered to customers, often as a recurring charge based on goods delivered at a required interval.

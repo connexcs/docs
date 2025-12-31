@@ -1,5 +1,17 @@
 # Dashboard
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Dashboard & Monitoring<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Beginner to Intermediate<br>
+<strong>Time Required</strong>: Approximately 30–45 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS Platform account with access to the Customer Portal<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer-portal/cp-dashboard/">Customer Portal Overview</a>, <a href="https://docs.connexcs.com/logging/">Logging & Call Trace</a>, <a href="https://docs.connexcs.com/report/">Analytics & Reporting</a><br>
+<strong>Next Steps</strong>: <a href="https://docs.connexcs.com/customer/alerts/">Configuring Alerts & Balance Notifications</a>, <a href="https://docs.connexcs.com/customer/stats/">Detailed Call Stats</a>, <a href="https://docs.connexcs.com/customer/cdr/">CDR Export</a><br>
+
+</details>
+
 The ConnexCS **Dashboard** provides a real-time overview of active customers, channels, and key system metrics. It includes interactive elements for monitoring traffic, analyzing trends, and customizing data displays.
 
 ## Overview

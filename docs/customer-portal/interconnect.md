@@ -1,5 +1,16 @@
 # Interconnect
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Customer Portal / Interconnect Setup<br>
+<strong>Audience</strong>: Administrators, Wholesale Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate to Advanced<br>
+<strong>Time Required</strong>: Approximately 30–40 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with carrier/wholesale permissions, knowledge of SIP trunking and interconnect protocols<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/setup/integrations/portal/">Portal – Setup & Domains</a>, <a href="https://docs.connexcs.com/customer/routing/">Routing Overview</a><br>
+
+</details>
+
 **Interconnect** provides information on:
 
 1. **Termination address:** This is the address you send calls to.

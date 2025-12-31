@@ -1,5 +1,21 @@
 # 3-Digit Extension Dialling
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Guides → 3-Digit Extension Dialling<br>
+<strong>Audience</strong>: Administrators, Engineers, Telephone Systems/IT Support Teams<br>
+<strong>Difficulty</strong>: Beginner to Intermediate<br>
+<strong>Time Required</strong>: 5–10 minutes<br>
+<strong>Prerequisites</strong>:<br>
+<ul>
+<li>Access to the account or customer portal for your PBX/Switch.</li>
+<li>Ability to define internal number blocks and alias assignments.</li>
+</ul>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer/main/#steps-to-implement-internal-number-block">Internal Number Block configuration</a> (for defining extension ranges), <a href="https://docs.connexcs.com/customer/alias/">Alias creation</a> (for mapping extensions to user lines)<br>
+<strong>Next Steps</strong>: Configure the number block → Create aliases for each extension → Document internal extensions in the phonebook for reference.<br>
+
+</details>
+
 You can set up 3-digit dialling in several ways. This is a basic setup for quick deployment.
 
 1. Set up an [**Internal Number Block**](/customer/main/#internal-number-block) for the customer.

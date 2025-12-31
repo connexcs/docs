@@ -1,5 +1,17 @@
 # Options
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Setup / Settings / Options<br>
+<strong>Audience</strong>: Administrators, Engineers, Operations Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 30–45 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with Setup-Settings access; familiarity with system-wide default behaviours, portal configuration, billing triggers and control panel customisation.<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/setup/settings/users/">Setup → Settings → Users</a>, <a href="https://docs.connexcs.com/setup/settings/servers/">Setup → Settings → Servers</a><br>
+<strong>Next Steps</strong>: Navigate to <code>Setup → Settings → Options</code>, review and edit each key global setting (e.g., “Customer Origination Instructions Page”, “Profit Assurance Default”, “Auto Logout”), adjust portal messages, lifecycle defaults and system behaviours, then save and audit in the <code>Setup → Information → Audit Log</code>.<br>
+
+</details>
+
 **Setup :material-menu-right: Settings :material-menu-right: Options**
 
 Configure **Options** to set key default behaviors for the system. Click **`Edit`** to the right of a setting to revise it.

@@ -1,6 +1,16 @@
 # Contact Center Setup & Usage Guide
 
-This section will guide you to install the Contact Center application for your customers.
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Customer Portal / Contact Center Installation<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 20–40 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account, administrative access to the Customer Portal module, and required permissions to install and configure contact-center features in the portal<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer-portal/cp-contact-center/">Customer Portal – Contact Center Overview</a>, <a href="https://docs.connexcs.com/setup/integrations/portal/">Portal Access Configuration</a>, <a href="https://docs.connexcs.com/customer/customer/#customer-dashboard">Customer Dashboard</a>, <a href="https://docs.connexcs.com/customer/main/#contacts">Contacts Management</a><br>
+<strong>Next Steps</strong>: Follow installation steps to enable contact-center features in the Customer Portal, assign roles and permissions, test portal login and functionality, and verify integration with existing customer and contact data<br>
+
+</details>
 
 ## Install Contact Center App
 

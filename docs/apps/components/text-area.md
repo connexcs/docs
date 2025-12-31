@@ -1,5 +1,17 @@
 # Text Area
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Applications & Components<br>
+<strong>Audience</strong>: Administrators, Engineers, App Developers<br>
+<strong>Difficulty</strong>: Beginner to Intermediate<br>
+<strong>Time Required</strong>: Approximately 15–30 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account, access to the Applications module, basic understanding of UI component configuration and multiline text / large-input behaviors<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/components/input/">Input Component</a>, <a href="https://docs.connexcs.com/apps/components/text/">Text Component</a>, <a href="https://docs.connexcs.com/apps/components/page-layout/">Page Layout Component</a>, <a href="https://docs.connexcs.com/apps/components/sub-form/">Sub-Form Components</a><br>
+<strong>Next Steps</strong>: Design a form or UI screen that uses the Text-Area component for long-form input (comments, descriptions, notes); test the component with varying input lengths and behaviors (wrapping, validation, data binding)<br>
+
+</details>
+
 ## Description
 
 The **Text-Area** element allows users to write freely across multiple lines, ideal for capturing extensive information or detailed responses.

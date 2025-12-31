@@ -1,5 +1,15 @@
 # Campaign Creation
 
+---
+
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Customer Portal / Contact Center – Campaign Management<br> <strong>Audience</strong>: Administrators, Engineers, Support Team<br> <strong>Difficulty</strong>: Intermediate<br> <strong>Time Required</strong>: Approximately 20–40 minutes<br> <strong>Prerequisites</strong>: Active ConnexCS account, Customer Portal module enabled with Contact Center and Dialer configured, and permissions to manage campaigns and access contact/customer data.<br> <strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer-portal/cp-contact-center/">Customer Portal – Contact Center Overview</a>, <a href="https://docs.connexcs.com/customer-portal/cp-cc-setting-up-dialer/">Dialer Setup</a>, <a href="https://docs.connexcs.com/customer-portal/cp-cc-dialer-dashboard/">Dialer Dashboard</a>, <a href="https://docs.connexcs.com/customer/main/#contacts">Contacts Management</a><br> <strong>Next Steps</strong>: Create a new campaign, configure target customer/contact lists, assign agents, schedule call sequences, monitor campaign progress via dashboard, and verify call logging and reporting.<br>
+
+</details>
+
+---
+
 ## Overview
 
 Campaign is designed to efficiently manage and monitor calling activities, agent performance, and lead engagement.

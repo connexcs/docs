@@ -1,3 +1,17 @@
+# App
+
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Applications Platform / App Structure & Best Practices<br>
+<strong>Audience</strong>: Engineers, Developers, Technical Leads<br>
+<strong>Difficulty</strong>: Advanced<br>
+<strong>Time Required</strong>: Approximately 30–40 minutes<br>
+<strong>Prerequisites</strong>: Access to the ConnexCS Apps Platform (Page Builder, ScriptForge, Data Services), understanding of modular web-app architecture<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/architecture/architecture/">Apps Architecture Overview</a>, <a href="https://docs.connexcs.com/apps/use-case/">App Use-Cases</a><br>
+<strong>Next Steps</strong>: Define modules → build UI (Page Builder) → add logic (ScriptForge) → connect data → test → document and version<br>
+
+</details>
+
 ## Introduction
 
 The **App** feature is like an umbrella, which holds the features like **Button Builder**, **Database**, **Domain**, **Key Value Store**, **Page Builder**, **ScriptForge**, **Templates**, and **Query Builder**.

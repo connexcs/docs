@@ -1,5 +1,17 @@
 # Transfer
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Applications & Components<br>
+<strong>Audience</strong>: Administrators, Engineers, App Developers<br>
+<strong>Difficulty</strong>: Beginner to Intermediate<br>
+<strong>Time Required</strong>: Approximately 15–30 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account, access to the Applications module, basic understanding of UI component configuration and list-transfer / dual-list controls (moving items between lists)<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/components/select/">Select Component</a>, <a href="https://docs.connexcs.com/apps/components/table/">Grid / Table Component</a>, <a href="https://docs.connexcs.com/apps/components/sub-form/">Sub-Form Components</a>, <a href="https://docs.connexcs.com/apps/components/page-layout/">Page Layout Component</a><br>
+<strong>Next Steps</strong>: Build a sample UI using the Transfer component — e.g., assign/unassign items or users; configure a dual-list selection workflow; test moving items between lists, data binding, and correct persistence or submission of chosen values<br>
+
+</details>
+
 ## Description
 
 A **Transfer** component in a form is a user interface element that allows users to move items between two lists or collections.

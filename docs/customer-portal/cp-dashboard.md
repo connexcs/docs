@@ -1,5 +1,17 @@
 # Dashboard
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Customer Portal / Dashboard Overview<br>
+<strong>Audience</strong>: Administrators, Customer Success, Support Team<br>
+<strong>Difficulty</strong>: Beginner to Intermediate<br>
+<strong>Time Required</strong>: Approximately 15–20 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS Customer Portal account with access rights to view the Dashboard module<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer-portal/cp-alert/">Customer Portal — Alerts & Notifications</a><br>
+<strong>Next Steps</strong>: After reviewing the portal dashboard, customise dashboard widgets (key metrics, active sessions, usage trends), bookmark the portal for daily monitoring, and schedule a weekly review of user-access logs and alerts to stay ahead of anomalies<br>
+
+</details>
+
 The **Customer Portal** provides access to configurations, real-time testing and stats, and more information about your account. The **Dashboard** provides an overview of Call Stats and Summaries.
 
 ## Top of Page Functions

@@ -1,5 +1,17 @@
 # Fraud Profile
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Setup & Configuration → Advanced Settings → Fraud<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: 10–15 minutes<br>
+<strong>Prerequisites</strong>: ConnexCS account with access to the Setup → Advanced section<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/security/">Security Settings</a>, <a href="https://docs.connexcs.com/carrier/carrier-custom-reports/">Call Traffic Monitoring</a>, <a href="https://docs.connexcs.com/customer/alerts/">Alerting & Notifications</a><br>
+<strong>Next Steps</strong>: <a href="https://docs.connexcs.com/customer/auth/#ip-authentication">IP Authentication</a><br>
+
+</details>
+
 **Setup :material-menu-right: Advanced :material-menu-right: Fraud Profile**
 
 The ConnexCS **Fraud Profile** provides rule-based Fraud Detection with a high degree of flexibility.

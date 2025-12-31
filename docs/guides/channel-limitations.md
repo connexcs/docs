@@ -1,5 +1,17 @@
 # Channel Limitation Settings
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Traffic & Call-Routing Management / Channel Limitations<br>
+<strong>Audience</strong>: Administrators, Network Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 25–30 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with access to Routing/Capacity modules, and the ability to view or configure channel limits (trunks, gateways, DID blocks)<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/limiting-cps/">Limiting CPS (Calls Per Second)</a>, <a href="https://docs.connexcs.com/guides/monitoring/">Monitoring & Alerts</a><br>
+<strong>Next Steps</strong>: After reviewing the channel-limitations guide, map your key trunks and gateways, document current channel limits, set threshold alerts for approaching capacity, and schedule a periodic review of trend behaviour and channel-utilisation trends.<br>
+
+</details>
+
 The ConnexCS platform allows you to apply channel limitations in multiple ways.
 
 You can configure these limitations from the following locations:

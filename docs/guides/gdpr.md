@@ -1,5 +1,17 @@
 # Understanding General Data Protection Regulation
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Compliance & Data Privacy / GDPR<br>
+<strong>Audience</strong>: Administrators, Legal & Compliance Teams, Support Engineers<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 25–35 minutes<br>
+<strong>Prerequisites</strong>: Understanding of personal data handling, access to audit logs and system architecture of the ConnexCS platform, awareness of GDPR applicability in your operating jurisdictions<br>
+<strong>Related Topics</strong>: <a href="https://connexcs.com/company-policies/data-privacy-policy/">Data Privacy Policy</a>, <a href="https://connexcs.com/company-policies/data-security-policy">Data Security Policy</a>, International Data Transfers<br>
+<strong>Next Steps</strong>: After reviewing the GDPR guide, identify which processing activities in your use of the ConnexCS platform involve EU data subjects, map those activities to lawful bases, update your internal Data Processing Addendum (DPA), and schedule periodic reviews of data-retention settings and user-consent mechanisms.<br>
+
+</details>
+
 As carriers and VoIP operators, the EU market is a lucrative one to operate in. However, most non-EU operators stray away from this market owing to the various regulations they would have to comply with.
 
 Rules and regulations are in place to protect the users and by extension, even the operators and service providers. GDPR is one such regulation that governs how personal information about users get collected, processed and stored.

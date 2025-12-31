@@ -1,5 +1,17 @@
 # Data Retention
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Setup / Settings / Data Retention<br>
+<strong>Audience</strong>: Administrators, Engineers, Compliance & Operations Teams<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 30–45 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with Setup-Settings access; understanding of regulatory data retention requirements for telecom metadata.<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/guides/cdr-retention/">Call Detail Record Retention</a><br>
+<strong>Next Steps</strong>: Navigate to <code>Setup → Settings → Data Retention</code>, review archived data sizes by month, understand archival versus live data scope (note: queries cannot span live + archive datasets), decide on internal purge policy or submit a support ticket if you require external-archive deletion.<br>
+
+</details>
+
 **Setup :material-menu-right: Settings :material-menu-right: Data Retention**
 
 The **Data Retention** page displays presently stored data in the archive on a monthly basis.

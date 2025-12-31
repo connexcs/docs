@@ -1,5 +1,17 @@
 # User Interface Display Language
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: ConnexCS Basics → Changing Language<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team, End-Users who customise UI language<br>
+<strong>Difficulty</strong>: Beginner<br>
+<strong>Time Required</strong>: 2–5 minutes<br>
+<strong>Prerequisites</strong>: Access to the Control Panel of the ConnexCS Platform with UI permissions.<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/setup/advanced/language/">Language Settings</a> (for full translation/customisation), <a href="https://docs.connexcs.com/getting-started/">Getting Started</a> (initial setup includes changing display language)<br>
+<strong>Next Steps</strong>: After selecting a UI display language, optionally go to <code>Setup → Advanced → Language</code> to edit or add translations for missing terms.<br>
+
+</details>
+
 The ConnexCS User Interface (UI) allows for the configuration of several languages.
 
 |Language|English Translation|

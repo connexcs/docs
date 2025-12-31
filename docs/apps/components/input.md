@@ -1,5 +1,17 @@
 # Input
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Applications & Components<br>
+<strong>Audience</strong>: Administrators, Engineers, App Developers<br>
+<strong>Difficulty</strong>: Beginner to Intermediate<br>
+<strong>Time Required</strong>: Approximately 15–30 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account, access to the Applications module, basic understanding of UI component configuration<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/components/inline/">Inline Component</a>, <a href="https://docs.connexcs.com/apps/components/html/">HTML Component</a>, <a href="https://docs.connexcs.com/apps/components/editor/">Editor Component</a>, <a href="https://docs.connexcs.com/apps/components/grid/">Grid Component</a><br>
+<strong>Next Steps</strong>: Try creating a form using various input types; test validation and data binding using the Input component in a sample app<br>
+
+</details>
+
 ## Description
 
 The **Input** box specifies an input field where the user can enter data.

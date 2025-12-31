@@ -1,5 +1,17 @@
 # Portal
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Setup & Configuration → Integrations → Portal<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: 10–20 minutes<br>
+<strong>Prerequisites</strong>: ConnexCS account with Integrations and Branding permissions, custom domain / CNAME record access<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/setup/integrations/api/">API Integrations</a>, <a href="https://docs.connexcs.com/setup/integrations/portal/#multi-brand-support">Multi-Brand Support</a><br>
+<strong>Next Steps</strong>: <a href="https://docs.connexcs.com/setup/integrations/api/">API Integrations</a>, <a href="https://docs.connexcs.com/setup/integrations/jwt/">JWT Keys / Tokens</a><br>
+
+</details>
+
 **Setup :material-menu-right: Integrations :material-menu-right: Portal**
 
 The **Portal** lets you add domains and sub-domains to the Control Panel, which the customer can access through the **Customer Portal**.
@@ -225,7 +237,7 @@ By leveraging a single ConnexCS account, customers can seamlessly run multiple b
 
 It's achieved by deploying independent customer portals tailored to the specific needs and preferences of each target market.
 
-### **Key Benefits**
+### Key Benefits
 
 + **Enhanced Market Penetration**:
 

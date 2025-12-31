@@ -1,5 +1,17 @@
 # Language
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Setup & Configuration → Advanced Settings → Language<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Beginner<br>
+<strong>Time Required</strong>: 5–10 minutes<br>
+<strong>Prerequisites</strong>: ConnexCS account with access to the Setup → Advanced section<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer-portal/cp-audio/">Audio Files</a>, <a href="https://docs.connexcs.com/class5/apps/#build-your-call-flow-app">Call Flow</a><br>
+<strong>Next Steps</strong>: <a href="https://docs.connexcs.com/customer-portal/pbx/#ivr">IVR Setup</a><br>
+
+</details>
+
 **Setup :material-menu-right: Advanced :material-menu-right: Language**
 
 Use the **Language** interface to customize your selected interface language.

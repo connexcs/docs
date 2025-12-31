@@ -1,5 +1,17 @@
 # Switch
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Applications & Components<br>
+<strong>Audience</strong>: Administrators, Engineers, App Developers<br>
+<strong>Difficulty</strong>: Beginner to Intermediate<br>
+<strong>Time Required</strong>: Approximately 15–30 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account, access to the Applications module, basic understanding of UI component configuration and toggle/switch-type inputs<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/components/input/">Input Component</a>, <a href="https://docs.connexcs.com/apps/components/select/">Select Component</a>, <a href="https://docs.connexcs.com/apps/components/radio/">Radio Component</a>, <a href="https://docs.connexcs.com/apps/components/sub-form/">Sub-Form components</a><br>
+<strong>Next Steps</strong>: Build a sample form or UI that uses the Switch component for boolean/toggle settings; test toggling behavior, default states, and data binding for on/off states<br>
+
+</details>
+
 ## Description
 
 A **Switch** component in a form is a visual and interactive element that users can toggle between two distinct states, typically labeled **on** and **off**.

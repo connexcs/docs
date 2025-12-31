@@ -1,5 +1,17 @@
 # Firewall
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Setup & Configuration → Advanced Settings → Firewall<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: 10–15 minutes<br>
+<strong>Prerequisites</strong>: ConnexCS account with access to the Setup → Advanced section<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/security/">Security</a>, <a href="https://docs.connexcs.com/customer/auth/#ip-authentication">IP Authentication</a>, <a href="https://docs.connexcs.com/setup/settings/servers/">Servers</a><br>
+<strong>Next Steps</strong>: Access Control<br>
+
+</details>
+
 **Setup :material-menu-right: Advanced :material-menu-right: Firewall**
 
 The ConnexCS **Firewall** uses a threat detection system to blacklist attackers.

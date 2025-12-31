@@ -1,5 +1,17 @@
 # Domain
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Applications Platform / Domain Configuration<br>
+<strong>Audience</strong>: Developers, Platform Engineers, DevOps Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 20–30 minutes<br>
+<strong>Prerequisites</strong>: Access to the ConnexCS Apps Platform IDE, ability to manage DNS records (CNAME) for custom domains, and permissions to deploy apps via the platform<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/architecture/app/">Apps Architecture – Applications Overview</a>, <a href="https://docs.connexcs.com/apps/architecture/domain/#steps-for-setting-up-the-domain">Apps Architecture – Domain Setup Steps</a><br>
+<strong>Next Steps</strong>: Configure domain: use <code>.cnx.page</code> subdomain or add custom domain (CNAME → <code>cnx.page</code>) → name entry page "index" → verify access → document conventions and update release process<br>
+
+</details>
+
 ## Introduction
 
 You can set the **Domain** where your applications will be visible and publicly accessible.

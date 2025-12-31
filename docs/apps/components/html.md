@@ -1,5 +1,17 @@
 # HTML
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Applications Platform / UI Components — HTML Component<br>
+<strong>Audience</strong>: Developers, Engineers, UI/UX Designers, Content Managers<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 15–20 minutes<br>
+<strong>Prerequisites</strong>: Access to ConnexCS Apps Platform → Page Builder; basic knowledge of HTML (and optionally template syntax), awareness of content-security considerations (if embedding HTML)<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/page-builder/">Page Builder – Overview & Workflow</a>, <a href="https://docs.connexcs.com/apps/architecture/template/">Template System</a>, <a href="https://docs.connexcs.com/apps/architecture/scriptforge/">ScriptForge / Dynamic Data Binding</a><br>
+<strong>Next Steps</strong>: Add HTML component → set static/template HTML → use API for dynamic updates → supply data for placeholders → test rendering and safety<br>
+
+</details>
+
 ## Description
 
 The <html> tag represents the root of an HTML document.

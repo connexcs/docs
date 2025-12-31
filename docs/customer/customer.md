@@ -1,5 +1,17 @@
 # Customer
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Customer Account Management<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 45–90 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with appropriate “Customer” module access in the Control Panel<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer/customer/#customer-dashboard">Customer Dashboard</a>, <a href="https://docs.connexcs.com/customer/main/#contacts">Contacts</a>, <a href="https://docs.connexcs.com/setup/integrations/portal/">Portal Access</a>, <a href="https://docs.connexcs.com/customer/documents/">Documents / KYC</a><br>
+<strong>Next Steps</strong>: <a href="https://docs.connexcs.com/customer/customer/#create-customer">Create & Configure Customer</a>, <a href="https://docs.connexcs.com/customer/customer/#customer-view-modification">Bulk Customer Upload & Edit</a><br>
+
+</details>
+
 **Management :material-menu-right: Customer**
 
 ## Platform Intelligence

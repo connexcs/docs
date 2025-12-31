@@ -1,5 +1,17 @@
 # Query Builder
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Applications Platform / Query Builder<br>
+<strong>Audience</strong>: Developers, Data Engineers, Technical Integrators<br>
+<strong>Difficulty</strong>: Intermediate to Advanced<br>
+<strong>Time Required</strong>: Approximately 20–30 minutes<br>
+<strong>Prerequisites</strong>: Access to the ConnexCS Apps Platform IDE with permission to create Query Builder jobs, basic familiarity with SQL or structured query logic, understanding of your data-schema (database/table names, fields)<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/architecture/app/">Apps Architecture – App Structure</a>, <a href="https://docs.connexcs.com/apps/architecture/database/">Databases – Custom Persistent Storage</a><br>
+<strong>Next Steps</strong>: Create query in IDE → select App/visibility → write and test SQL → use G3 for time-series data → save/share<br>
+
+</details>
+
 ## Introduction
 
 A **Query builder** is a tool or library that helps developers construct database queries in a more intuitive and structured way, often without requiring direct knowledge of the query language (like SQL).

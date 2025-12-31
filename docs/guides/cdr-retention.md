@@ -1,5 +1,17 @@
 # Call Detail Record Retention
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Compliance & Data Retention / CDR (Call Detail Record) Retention Policies<br>
+<strong>Audience</strong>: Administrators, Compliance Teams, Support Engineers<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 20–30 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with access to the reporting/archiving modules, understanding of CDR formats and retention regulations in your operating jurisdiction<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/guides/cdr-retention/#how-long-should-you-keep-your-cdr-data">Data Retention & Archiving Policy</a>, <a href="https://docs.connexcs.com/logging/">Logging & Audit Trails</a>, <a href="https://docs.connexcs.com/guides/gdpr/">Privacy & Data Protection – GDPR</a><br>
+<strong>Next Steps</strong>: After reviewing the CDR retention guide, map your internal retention periods to regulatory requirements (e.g., 6 months, 12 months, 7 years), configure archival/storage policies in the ConnexCS system, and schedule periodic purging/cleanup jobs while ensuring safe backup of any data needed for audits or investigations.<br>
+
+</details>
+
 A call Detail Record (CDR) is a detailed record of all telephonic calls that pass through a telephone exchange, telecom equipment or communication platform in a given period.
 
 A CDR contains information such as time, duration, number of the caller, destination number, call completion status, etc. about the call.

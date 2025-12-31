@@ -1,5 +1,17 @@
 # Billing Basics
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Billing Basics<br>
+<strong>Audience</strong>: Administrators, Engineers, Finance/Accounting Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: 10–20 minutes<br>
+<strong>Prerequisites</strong>: Understanding of telecom billing fundamentals (CDRs, call durations, rate slopes), access to usage data and CDRs<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/guides/billing-guide/">Billing Guide</a> (for broader context), <a href="https://docs.connexcs.com/billing/">ConnexCS Billing</a> (tariff models)<br>
+<strong>Next Steps</strong>: Review your current billing increments and rounding strategies; apply the rules when configuring rate-cards or reconciling bills<br>
+
+</details>
+
 ## Balance Refresh Interval
 
 The ConnexCS balance gets updated every 60 seconds.

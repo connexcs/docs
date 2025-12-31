@@ -1,5 +1,17 @@
 # App Store
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Setup / Application Store & App Deployment<br>
+<strong>Audience</strong>: Administrators, Engineers, Product Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 30–60 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with Setup privileges; basic understanding of the Apps platform and deployment process.<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/architecture/app/">Apps Platform – Applications</a><br>
+<strong>Next Steps</strong>: Install the required app from <code>Setup → App Store</code>, complete its basic configuration, and then verify it works correctly in your environment.<br>
+
+</details>
+
 **Setup :material-menu-right: App Store**
 
 The **ConnexCS App Store** lets you discover, download, and install applications on your user account.

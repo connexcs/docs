@@ -1,5 +1,19 @@
 # WebPhone App
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Setup & Configuration → Integrations → WebPhone<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: 20–30 minutes<br>
+<strong>Prerequisites</strong>: ConnexCS account with WebRTC-capable server setup (TLS, WebSocket, DNS)<br>
+<strong>Related Topics</strong>:
+<a href="https://docs.connexcs.com/setup/integrations/api/">API & SDK Integrations</a> (for embedding WebPhone),
+<a href="https://docs.connexcs.com/setup/information/certificate/">Certificates & Domain Setup</a><br>
+<strong>Next Steps</strong>: <a href="https://docs.connexcs.com/webphoneapp/">WebPhone App Platform</a><br>
+
+</details>
+
 !!! Warning
     We advise users to switch to this new [App Platform](https://docs.connexcs.com/apps/introduction/) (WebPhone App) as the previous WebPhone development has been put on hold.
 

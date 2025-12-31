@@ -1,5 +1,17 @@
 # Logging
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Monitoring & Diagnostics / Logging & Audit Trails<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 25–35 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with access to the Logging module, ability to navigate call-records and SIP trace logs<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/guides/tshoot-signal/">Troubleshooting – Signaling</a>, <a href="https://docs.connexcs.com/guides/call-disconnection-reasons/">Call Disconnection Reasons</a><br>
+<strong>Next Steps</strong>: After reviewing the logging guide, locate a set of recent call-records, filter for problem calls (errors, drops), export SIP traces for deeper analysis, and set up a routine review of log alerts (e.g., elevation in error codes) to proactively track system health.<br>
+
+</details>
+
 **:material-menu-right: Logging**
 
 The **Logging** function checks real-time call attempts, Session Initiation Protocol (SIP) traces, routing status, and simulates a call.
