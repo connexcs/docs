@@ -277,7 +277,7 @@ To find this, click your name in the upper right corner and select `Profile`.
     2. Click on your [**Name**] then **Profile**.
     3. Click `Enroll` under **Passkey/FIDO2**. <br><img src= "/getting-started/img/passkey1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
     4. Enter the name of the **authenticator device**, click on `ok`. <br><img src= "/getting-started/img/passkey2.png" width = "350" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-    5. Logout and Login again. Enter your `email` (ConnexCS). Click on `Login With Passkey`. <br><img src= "/getting-started/img/passkey3.png" width = "550" style="border: 2px solid #4472C4; border-radius: 8px;"></br> 
+    5. Logout and Login again. Enter your `email` (ConnexCS). Click on `Login With Passkey`. <br><img src= "/getting-started/img/passkey3.png" width = "350" style="border: 2px solid #4472C4; border-radius: 8px;"></br> 
     6. Once enrolled, a special login button appears on the ConnexCS login screen to initiate WebAuthN-based passwordless authentication.
 
     7. Choose the authentication method:
