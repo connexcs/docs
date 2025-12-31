@@ -277,18 +277,44 @@ To access your profile, click your name in the upper right corner and select `Pr
     
     To configure 2FA on ConnexCS, click `Enable` and follow the prompts to scan the QR code. You must install a 2FA/TFA app on your phone. 
     
-    **Web Authentication (WebAuthN) / FIDO2:** This allows you to enable hardware security keys/tokens, which is more secure than basic password protection (details [**here**](https://www.ncsc.gov.uk/collection/mobile-device-guidance/enterprise-authentication-policy)). 
-    
-    To configure this on ConnexCS, click `Enroll`. Once set up, there will be a special button to click/tap when logging in to the ConnexCS portal. 
+    **Passkey (Web Auth N) / FIDO2**: 
+    ConnexCS has full support for WebAuthN, enabling modern passwordless authentication mechanisms including Passkeys, hardware security keys, and biometric verification. [**Click here**](https://www.ncsc.gov.uk/collection/mobile-device-guidance/enterprise-authentication-policy) for more details.
 
-    You can also add **Biometric Security** using **Face Verification**.
+    The result is a more secure, user-friendly, and standards-compliant authentication experience across devices and browsers.
 
-    Other options include **PIN** and **Security Key**.
+    **1. Enrolment & Configuration**
 
-    These security options are available in your browser through the [**Windows Hello application**](https://support.microsoft.com/en-us/windows/learn-about-windows-hello-and-set-it-up-dae28983-8242-bb2a-d3d1-87c9d265a5f0).
-    
-    <img src= "/getting-started/img/2fa.png" width= "350" style="border: 2px solid #4472C4; border-radius: 8px;">
+    Users can configure WebAuthN authentication directly within the ConnexCS Portal.
+
+    **Steps**:
+
+    1. Login to your **Control Panel**.
+    2. Click on your [**Name**] then **Profile**.
+    3. Click `Enroll` under **Passkey/FIDO2**. <br><img src= "/getting-started/img/passkey1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+    4. Enter the name of the **authenticator device**, click on `ok`. <br><img src= "/getting-started/img/passkey2.png" width = "350" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+    5. Logout and Login again. Enter your `email` (ConnexCS). Click on `Login With Passkey`. <br><img src= "/getting-started/img/passkey3.png" width = "350" style="border: 2px solid #4472C4; border-radius: 8px;"></br> 
+    6. Once enrolled, a special login button appears on the ConnexCS login screen to initiate WebAuthN-based passwordless authentication.
+
+    7. Choose the authentication method:
+          * iPhone, iPad, or Android Device
+          * Security <br><img src= "/getting-started/img/passkey4.png" width = "350" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 === "Advanced"
 
     Click the blue `Edit` button to manage your email subscriptions.
+
+    <img src= "/getting-started/img/pp2.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+=== "KYC"
+
+    The Know Your Customer (KYC) tab provides access to the customer identity verification workflow. When KYC verification is enabled from the backend, users can complete the verification process directly within this section.
+
+
+    As part of the KYC procedure, users are required to:
+
+    1. Click on `verify`. <br><img src= "/getting-started/img/pp3_new.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+    2. You will get a window where you need to agree to the terms and conditions.<br><img src= "/getting-started/img/pp3_1.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+    3. Scan the QR Code. <br><img src= "/getting-started/img/pp3_2.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+    4. Capture and submit a live photo of themselves while holding the verification document.
+    5. Upload a clear image of the verification document used for identity confirmation.
+    6. These submissions are used to validate the customer’s identity and ensure compliance with regulatory requirements.
