@@ -1,5 +1,16 @@
 # Status
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Customer Portal / System Status & Health<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Beginner to Intermediate<br>
+<strong>Time Required</strong>: Approximately 10–15 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS Customer Portal account and permission to access the Status page<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/guides/monitoring/">Monitoring & Alerts</a>, <a href="https://docs.connexcs.com/customer-portal/cp-dashboard/">Customer Portal – Dashboard</a><br>
+
+</details>
+
 A status page is a dedicated page  that provides real-time information about the status of a service, application, or system.
 
 It's a crucial tool for both service providers and users to stay informed about any disruptions, outages, or maintenance activities.

@@ -1,5 +1,17 @@
 # Routes
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Customer Portal / Routes Management<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 25–35 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS Customer Portal account with routing permissions and familiarity with rate-cards, prefix sets, and call routing logic.<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/routing/">Routing Overview</a>, <a href="https://docs.connexcs.com/guides/howto/restrict-calling-plan/">Restricting Calling Plans</a><br>
+<strong>Next Steps</strong>: Identify the route you wish to edit, update settings such as Channels (max live calls), Max Duration (to cut calls missing BYE), Flow Speed (CPS limit), enable/adjust SIP Ping mode, review Tech Prefix and Dial String rules, then monitor call behavior (ASR/ACD) for any unintended blocking or routing issues.<br>
+
+</details>
+
 All **Termination Routes** or **Outbound Calls** can be viewed. You can also access the **Rate Card** associated with **Termination Routes**."
 
 ## Edit a Route

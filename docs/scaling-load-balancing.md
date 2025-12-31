@@ -1,5 +1,20 @@
 # Scaling and Load Balancing
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Architecture → Scaling and Load Balancing<br>
+<strong>Audience</strong>: Administrators, Engineers, Network & Infrastructure Teams<br>
+<strong>Difficulty</strong>: Intermediate to Advanced<br>
+<strong>Time Required</strong>: 15–30 minutes<br>
+<strong>Prerequisites</strong>: Understanding of basic VoIP/SIP infrastructure, load-balancing concepts (CPS, channels, zones), and access to the system’s server-deployment settings.<br>
+<strong>Related Topics</strong>: 
+<a href="https://docs.connexcs.com/setup/settings/servers/">Servers</a> (setting up servers, load-balancer config), 
+<a href="https://docs.connexcs.com/anyedge/anyedge/">AnyEdge Load Balancer</a> (global traffic distribution), 
+<a href="https://docs.connexcs.com/limiting-cps/">Capacity Limiting</a> (CPS & channel caps)<br>
+<strong>Next Steps</strong>: Implement multi-server or multi-zone configuration according to scaling needs, monitor CPS & channel usage, and plan for geographic zones.<br>
+
+</details>
+
 The ConnexCS platform is highly scalable in Channels, CPS (Calls Per Second), and single or several zones.
 
 All configurations are available through a single control panel, no matter how many servers or zones are present.

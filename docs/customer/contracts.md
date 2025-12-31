@@ -1,5 +1,17 @@
 # Contract
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Customer Account Management / Contracts & Compliance<br>
+<strong>Audience</strong>: Administrators, Engineers, Legal / Compliance Teams<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 30–60 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with access to the Customer module and permission to manage contracts<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/setup/config/contracts/">Setup → Config → Contracts</a>, <a href="https://docs.connexcs.com/customer/documents/">Documents (KYC & Upload)</a><br>
+<strong>Next Steps</strong>: <a href="https://docs.connexcs.com/customer/contracts/#assign-contracts">Assigning Contracts to Customers</a>, <a href="https://docs.connexcs.com/customer-portal/cp-contracts/">Viewing and Approving Contracts via Customer Portal</a><br>
+
+</details>
+
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Contract**
 
 The **Contracts** section lists contracts associated with the customer.

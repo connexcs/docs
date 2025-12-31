@@ -1,5 +1,17 @@
 # Circuit Test
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Monitoring & Troubleshooting<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 30–60 minutes<br>
+<strong>Prerequisites</strong>: Access to the ConnexCS Switch control-panel, knowledge of carrier/termination routing, and basic metrics such as MOS, jitter, packet loss.<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/guides/tshoot-media/">Call Quality / Media Issues</a><br>
+<strong>Next Steps</strong>: <a href="https://docs.connexcs.com/circuit-test/#run-circuit-test">Run a Circuit Test</a>, <a href="https://docs.connexcs.com/circuit-test/#schedule">Schedule Recurring Tests</a><br>
+
+</details>
+
 **Management :material-menu-right: Circuit Test**
 
 A **Circuit Test** can aid troubleshooting by providing details such as False Answer Supervision (FAS), Real-time Transport Protocol (RTP) quality, Mean Opinion Score (MOS), release reason, jitter, packet loss percentage, and answer delay measurement. The test initiates a call on the switch, which routes out to a termination provider through the PSTN network. It's then routed to an origination provider, which routes the call back to ConnexCS and a specific DID provision on the system. Its considered active testing (the call is actively placed on the network) as opposed to passive testing such as [**Stats**](https://docs.connexcs.com/customer/stats/) and [**Reports**](https://docs.connexcs.com/report/).

@@ -1,5 +1,17 @@
 # Chart
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Applications Platform / UI Components — Chart Component<br>
+<strong>Audience</strong>: Developers, Engineers, Data Analysts, UI/UX Designers<br>
+<strong>Difficulty</strong>: Intermediate to Advanced<br>
+<strong>Time Required</strong>: Approximately 20–30 minutes<br>
+<strong>Prerequisites</strong>: Access to the ConnexCS Apps Platform IDE (Page Builder), familiarity with data-driven UI and basic charting concepts (data series, axes, labels)<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/page-builder/">Page Builder / UI Components Overview</a>, <a href="https://docs.connexcs.com/apps/architecture/database/">Database</a>, <a href="https://docs.connexcs.com/apps/architecture/query-builder/">Query Builder</a><br>
+<strong>Next Steps</strong>: Add Chart → configure data source → set type/axes/styling → bind dynamic data → test across devices and data scenarios<br>
+
+</details>
+
 ## Description
 
 **Charts** are visual representations of data that use symbols, colors, and shapes to communicate information clearly and efficiently.

@@ -1,5 +1,17 @@
 # Use Cases
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Applications Platform / Page Builder<br>
+<strong>Audience</strong>: Engineers, Developers, Platform Integrators<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 25–35 minutes<br>
+<strong>Prerequisites</strong>: Access to the ConnexCS Apps Platform IDE, familiarity with basic web application UI design and event/data-binding concepts<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/introduction/">Apps Platform – Introduction</a><br>
+<strong>Next Steps</strong>: Create page → add components → configure attributes and data sources → implement events/API methods → test across devices → publish<br>
+
+</details>
+
 ## Introduction
 
 With our amazing **App Platform** you can perform activities:

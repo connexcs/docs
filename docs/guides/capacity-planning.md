@@ -1,10 +1,16 @@
 # Capacity Planning
 
-Capacity planning is a way to extend our services in an advisory capacity.
+<details> <summary><strong>Document Metadata</strong></summary> <br>
 
-It helps our customers choose the setup that works best for their business.
+<strong>Category</strong>: Capacity Planning<br>
+<strong>Audience</strong>: Administrators, Engineers, Infrastructure/Network Teams<br>
+<strong>Difficulty</strong>: Intermediate to Advanced<br>
+<strong>Time Required</strong>: 15–30 minutes<br>
+<strong>Prerequisites</strong>: Understanding of VoIP/SIP traffic metrics (channels, CPS), existing traffic volumes and growth forecasts, basic infrastructure sizing knowledge<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/limiting-cps/">Capacity Limiting</a> (for controlling CPS & channels), <a href="https://docs.connexcs.com/scaling-load-balancing/">Scaling & Load Balancing</a> (for multi-server/zone scaling)<br>
+<strong>Next Steps</strong>: Collect your current usage metrics (calls per second, active channels, topologies), then model future growth and work with infrastructure/hosting to size accordingly.<br>
 
-Shifting usage and the growing demands for scalability are always a consideration. But there is also the active management of changing traffic.
+</details>
 
 ## Some Basic Capacity Planning Questions
 

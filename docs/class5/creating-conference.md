@@ -1,5 +1,17 @@
 # Conference Calls
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Class 5 Services / Conference Bridge Setup<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 30–60 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with Class 5 module access; familiarity with PBX configuration and multi-party audio bridging<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/class5/apps/">Class 5 Apps & Workflow Builder</a>, <a href="https://docs.connexcs.com/class5/creating-ivr/">Class 5 IVR Setup</a><br>
+<strong>Next Steps</strong>: Create a conference room (name, extension, PINs, quality, max members), assign a PBX server, configure routing to allow external callers if needed, and test the bridge including keypad controls<br>
+
+</details>
+
 **Class 5 :material-menu-right: Conference**
 
 Use this feature to allow several callers to communicate with each other over a voice call. Once it's created, callers join the call, and the moderator presides.

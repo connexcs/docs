@@ -1,5 +1,17 @@
 # Color
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Applications Platform / UI Components — Color Picker & Color Configuration<br>
+<strong>Audience</strong>: Developers, Engineers, UI/UX Designers, Support Team<br>
+<strong>Difficulty</strong>: Beginner to Intermediate<br>
+<strong>Time Required</strong>: Approximately 10–15 minutes<br>
+<strong>Prerequisites</strong>: Access to the ConnexCS Apps Platform IDE (Page Builder or component config), basic understanding of UI theming or configuration of colour-sensitive elements (e.g., labels, tags, backgrounds)<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/page-builder/">Page Builder / UI Components Overview</a>, Other UI Components<br>
+<strong>Next Steps</strong>: Add Color Picker → set defaults or user selection → bind to component properties → test contrast/themes<br>
+
+</details>
+
 ## Description
 
 A **Color** component is a form element that allows users to select a color from a palette or input a color code.

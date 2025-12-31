@@ -1,5 +1,17 @@
 # Key Value Store
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Applications Platform / Key-Value Store<br>
+<strong>Audience</strong>: Engineers, Developers, Platform Integrators<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 15–20 minutes<br>
+<strong>Prerequisites</strong>: Access to the ConnexCS Apps Platform IDE, familiarity with basic data-storage concepts (key-value pairs) and how your application will use lightweight state or lookup tables<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/architecture/database/">Databases – Types & Usage</a>, <a href="https://docs.connexcs.com/apps/architecture/scriptforge/">ScriptForge</a><br>
+<strong>Next Steps</strong>: Identify key-value data → create Store in IDE → define keys/values → access in app logic → document naming and retention rules<br>
+
+</details>
+
 ## Introduction
 
 A **Key-Value Store**, also known as a key-value database, is a simple and efficient type of database that uses a "key-value" pair format to store data.

@@ -1,5 +1,15 @@
 # Setting Up the Dialer
 
+---
+
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Customer Portal / Contact Center – Dialer Setup<br> <strong>Audience</strong>: Administrators, Engineers, Support Team<br> <strong>Difficulty</strong>: Intermediate<br> <strong>Time Required</strong>: Approximately 20–40 minutes<br> <strong>Prerequisites</strong>: Active ConnexCS account, Customer Portal module enabled, Contact Center feature installed, and appropriate administrative permissions to configure dialer settings in the Portal.<br> <strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer-portal/cp-contact-center/">Customer Portal – Contact Center Overview</a>, <a href="https://docs.connexcs.com/customer-portal/cp-cc-dialer-dashboard/">Dialer Dashboard</a>, <a href="https://docs.connexcs.com/customer-portal/cp-cc-install/">Customer Portal – Contact Center Installation</a>, <a href="https://docs.connexcs.com/customer/main/#contacts">Contacts Management</a><br> <strong>Next Steps</strong>: Define dialer configuration parameters (call settings, user permissions, call routing), assign roles, integrate customer/contact data, test outbound and inbound call flows via dialer, and verify dialer behavior under different scenarios.<br>
+
+</details>
+
+---
+
 ## Overview
 
 The **Dialer** module automates outbound calling and helps streamline campaigns, agent operations, and customer interactions.

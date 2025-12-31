@@ -1,5 +1,17 @@
 # Documents
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Customer Account Management / Documents & KYC<br>
+<strong>Audience</strong>: Administrators, Engineers, Compliance Teams<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 15–30 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with “Customer” module access; basic understanding of KYC / document collection workflows<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/guides/doc-guide/">Guide to Customer Documents</a>, <a href="https://docs.connexcs.com/customer/contracts/">Customer → Contracts</a><br>
+<strong>Next Steps</strong>: After creating a document request, instruct the customer to upload their file via the Customer Portal; monitor the upload and review it for approval<br>
+
+</details>
+
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Documents**
 
 Use the **Documents** section to collect various files from the customer, as part of [Know Your Customer (KYC)](https://en.wikipedia.org/wiki/Know_your_customer).

@@ -1,5 +1,17 @@
 # Environmental Variables
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Applications Platform / Configuration — Environmental Variables<br>
+<strong>Audience</strong>: Engineers, Developers, DevOps & Integration Teams<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 15–20 minutes<br>
+<strong>Prerequisites</strong>: Access to the ConnexCS Apps Platform IDE, familiarity with application configuration and secure storage of credentials or configuration data<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/architecture/architecture/">Apps Architecture Overview</a>, <a href="https://docs.connexcs.com/apps/architecture/database/">Database / Key-Value Store</a>, <a href="https://docs.connexcs.com/apps/architecture/scriptforge/">ScriptForge / Code Logic</a><br>
+<strong>Next Steps</strong>: Define environment variables (secrets, URLs, flags) → use in code via <code>process.env</code> → document naming conventions → maintain secure reference → separate variables per environment with access controls<br>
+
+</details>
+
 ## Introduction
 
 Your variables can be placed inside the env.

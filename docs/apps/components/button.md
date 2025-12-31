@@ -1,5 +1,17 @@
 # Button
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Applications Platform / UI Components — Button Component<br>
+<strong>Audience</strong>: Developers, Engineers, UI/UX Designers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 15–20 minutes<br>
+<strong>Prerequisites</strong>: Access to the ConnexCS Apps Platform IDE and familiarity with basic UI component configuration (via Page Builder or custom code)<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/page-builder/">Page Builder / UI Components Overview</a>, <a href="https://docs.connexcs.com/apps/architecture/scriptforge/">ScriptForge / App Logic Layer</a><br>
+<strong>Next Steps</strong>: Add Button → configure label/style/icon → assign action → test across devices and accessibility<br>
+
+</details>
+
 ## Description
 
 A **Button** can be used to trigger an event when it's clicked.

@@ -1,5 +1,17 @@
 # Call Center
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Class 5 Services / Call-Center Queuing & Agent Management<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 45–90 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with Class 5 module access; familiarity with call-queue concepts, agent grouping, and telephony queuing logic<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/class5/apps/">Class 5 Apps & Workflow Builder</a>, <a href="https://docs.connexcs.com/class5/creating-conference/">Class 5 Conference Bridge Setup</a><br>
+<strong>Next Steps</strong>: Navigate to <code>Class 5 → Call-Center</code>, define queue parameters (name, server, time-base scoring, tiers), assign customers and agents, set maximum wait times and abandoned-call handling; test with live calls and monitor queue behaviour and agent metrics<br>
+
+</details>
+
 **Class 5 :material-menu-right: Call-Center**
 
 !!! danger "This feature is presently in Alpha Version. We're working on it. Please contact us for any queries. At present this feature is non-configurable."

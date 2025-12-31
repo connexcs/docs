@@ -1,5 +1,17 @@
 # Application Programming Interface Integrations
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Setup & Configuration → Integrations → API<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate to Advanced<br>
+<strong>Time Required</strong>: 15–30 minutes<br>
+<strong>Prerequisites</strong>: ConnexCS account with API access enabled, basic knowledge of REST APIs and authentication<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/ide/">Developer Guide</a>, <a href="https://docs.connexcs.com/setup/settings/users/#users">Permissions & Roles</a><br>
+<strong>Next Steps</strong>: <a href="https://docs.connexcs.com/webphone/">WebPhone Integrations</a><br>
+
+</details>
+
 **Setup :material-menu-right: Integrations :material-menu-right: API**
 
 Configure **API Integrations** to let ConnexCS connect to external services. It provides seamless connectivity to external systems and payment processors.

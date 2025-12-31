@@ -1,5 +1,17 @@
 # Template
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Applications Architecture / Template System<br>
+<strong>Audience</strong>: Developers, Engineers, App Builders<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 20–40 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with access to the Applications module; familiarity with the Apps platform, component structure, and JSON-based configuration<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/architecture/app/">Applications Architecture – App Structure</a>, <a href="https://docs.connexcs.com/apps/architecture/scriptforge/">ScriptForge</a>, <a href="https://docs.connexcs.com/apps/page-builder/">Page Builder / Components</a><br>
+<strong>Next Steps</strong>: Review how templates define reusable UI and logic patterns, then create or modify a template to standardize layouts or behaviors across your applications<br>
+
+</details>
+
 ## Introduction
 
 ConnexCS offers a powerful templating system for automating communication.

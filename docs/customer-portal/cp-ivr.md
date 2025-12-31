@@ -1,5 +1,17 @@
 # Interactive Voice Response
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Customer Portal / IVR (Interactive Voice Response) Configuration<br>
+<strong>Audience</strong>: Administrators, Telecom Engineers, Support & Service Teams<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 25–35 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS Customer Portal account with PBX- or IVR-authoring permissions, and access to upload or record audio prompts<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer-portal/cp-conference/">Conference Rooms</a>, <a href="https://docs.connexcs.com/customer-portal/cp-group/">Hunt Groups & Queues</a>, <a href="https://docs.connexcs.com/customer-portal/cp-did/">DID Management</a><br>
+<strong>Next Steps</strong>: Create or upload your introductory greeting, define menu options (e.g., “Press 1 for Sales, 2 for Support”), map each option to the appropriate destination (extension, queue, voicemail), test calls through the menu to ensure correct routing.<br>
+
+</details>
+
 The **IVR (Interactive Voice Response)** (or Phone Tree) provides callers with a menu and options for call routing.
 
 Callers dial-in and select an option on the number pad that maps to an extension for a specific department or group within the company.

@@ -1,5 +1,19 @@
 # Tags
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Routing / Tag-Based Templates & Configuration<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 30–45 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with management permissions; understanding of customer and routing configuration workflows.<br>
+<strong>Related Topics</strong>:
+<a href="https://docs.connexcs.com/customer/alerts/">Alerts</a>,
+<a href="https://docs.connexcs.com/routing-strategy/">Routing Strategy</a><br>
+<strong>Next Steps</strong>: Create a tag (via <code>Management → Tags</code>), apply it to one or more customers, then assign routing strategies, alerts or CLI rules that reference the tag — enabling consistent configuration across all tagged customers.<br>
+
+</details>
+
 **Management :material-menu-right: Tags**
 
 It's a dynamic label which links Routes, Alerts, CLI rules to customers by automatically applying tagged configuration when the same tag is assigned to a customer.

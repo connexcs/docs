@@ -1,5 +1,16 @@
 # Recording
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Customer Portal / Call Recording Management<br>
+<strong>Audience</strong>: Administrators, Compliance & Legal Teams, Support Staff<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 20–30 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS Customer Portal account with permissions to access the Recording module and familiarity with your organization’s recording retention policies<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/logging/">Logging & Audit Trails</a>, <a href="https://docs.connexcs.com/guides/cdr-retention/">CDR Retention Policies</a><br>
+
+</details>
+
 The **Recording** area allows you to listen to recorded calls, provided this feature is available on your account.
 
 1. Under **Path**, select the date (YYYY-MM-DD format) to inspect.

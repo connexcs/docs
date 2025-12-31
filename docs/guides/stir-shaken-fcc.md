@@ -1,5 +1,22 @@
 # Federal Communication Commission Regulations on Secure Telephony Identity Revisited / SHAKEN
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: STIR/SHAKEN (FCC Regulations)<br>
+<strong>Audience</strong>: Administrators, Engineers, Compliance Teams, VoIP/Carrier Origins<br>
+<strong>Difficulty</strong>: Intermediate to Advanced<br>
+<strong>Time Required</strong>: 15–30 minutes<br>
+<strong>Prerequisites</strong>:<br>
+<ul>
+<li>Understanding of VoIP/SIP networks and number origination.</li>
+<li>Knowledge of certificates (public key), attestation levels (A/B/C).</li>
+<li>Knowledge of U.S. regulations for telecom carriers.</li>
+</ul>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/setup/information/stir-shaken/">STIR/SHAKEN Cert Upload</a> — certificate prerequisite.<br>
+<strong>Next Steps</strong>: Acquire SPC Token & certificate from an authorised CA, upload to your system, configure attestation routing in the switch.<br>
+
+</details>
+
 ## Illegal Robocalling
 
 Illegal robocalling refers to automated or bulk outbound calling activity that employs techniques to obscure or falsify caller identity, evade call‑filtering and Do‑Not‑Call (DNC) protections, or otherwise deliver unsolicited or fraudulent communications at scale.

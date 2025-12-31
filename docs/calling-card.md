@@ -1,5 +1,17 @@
 # Pinless Calling Cards
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Customer Services / Calling Card Systems<br>
+<strong>Audience</strong>: Administrators, Engineers, Services Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 30–40 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with access to the Apps Platform (Script Forge) and DID routing setup<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/feature-list/#calling-cards">Calling Card Feature List</a>, <a href="https://docs.connexcs.com/apps/architecture/scriptforge/">ScriptForge Programming Guide</a><br>
+<strong>Next Steps</strong>: After implementing the pinless calling-card flow, review DID configuration for customer access and integrate reporting via the Customer Stats module for usage tracking.<br>
+
+</details>
+
 A **Pinless Calling Card** system allows the user to dial in through a Direct Inward Dial (DID).
 
 Verification depends on their CLI (Caller Line Identification), so a Personal Identification Number (PIN) isn't required. The caller is then presented with an Interactive Voice Response (IVR) message requesting the destination number, and the call is then routed out through their account.

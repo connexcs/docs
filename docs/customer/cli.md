@@ -6,6 +6,18 @@ search:
 
 # Caller Line Identification (CLI)
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Customer Account Management / CLI (Caller Line Identification) Configuration<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate to Advanced<br>
+<strong>Time Required</strong>: Approximately 45–90 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with access to the <code>Customer → Routing → CLI</code> section (or equivalent) and basic understanding of SIP headers (From, P-Asserted-Identity) and regular expressions<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer/routing/">Customer – Routing</a>, <a href="https://docs.connexcs.com/customer/cli/#overview">CLI & ANI Concepts for VoIP</a><br>
+<strong>Next Steps</strong>: <a href="https://docs.connexcs.com/customer/cli/#allow-customers-to-add-their-own-cli">Allow Customers to Add Their Own CLI</a>, <a href="https://docs.connexcs.com/customer/cli/#advanced-cli-match-and-manipulation">Advanced CLI Match & Manipulation</a><br>
+
+</details>
+
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Routing**
 
 ## Overview

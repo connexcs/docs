@@ -1,5 +1,29 @@
 # Terminal Tools
 
+---
+
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Tools & Utilities / Terminal Tools (CX-Tools)<br>
+
+<strong>Audience</strong>: Developers, System Administrators, Operators, SREs, Power Users<br>
+
+<strong>Difficulty</strong>: Intermediate to Advanced<br>
+
+<strong>Time Required</strong>: Approximately 20–40 minutes<br>
+
+<strong>Prerequisites</strong>:
+Node.js runtime installed (CX-Tools requires Node.js), access to a ConnexCS account, permissions to run operational tasks (SQL queries, script management, key-value operations, deployments), and ability to authenticate via CX tokens or environment variables.<br>
+
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/guides/debugging/">Debugging Guide</a>, <a href="https://docs.connexcs.com/developers/scriptforge/">ScriptForge</a>, <a href="https://docs.connexcs.com/guides/tshoot-signal/">Troubleshooting – Signalling</a>, <a href="https://docs.connexcs.com/guides/tshoot-media/">Troubleshooting – Media</a><br>
+
+<strong>Next Steps</strong>:
+Install and configure CX-Tools, authenticate using `cx configure` or environment variables, explore core commands (scripts, SQL queries, KV store, deployments), integrate CLI usage into your development or operational workflows, and automate recurring tasks via scripts or CI pipelines.<br>
+
+</details>
+
+---
+
 ## Overview
 
 **CX-Tools ("cx")/Terminal Tools**is the official ConnexCS **Command‑Line Interface (CLI)** that provides a compact, scriptable, and developer‑friendly modality to interact with ConnexCS services.

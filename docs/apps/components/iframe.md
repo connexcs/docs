@@ -1,5 +1,15 @@
 # I-Frame
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Applications Platform / UI Components — IFrame Component<br>
+<strong>Audience</strong>: Developers, Engineers, UI Integrators, Support Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 15–25 minutes to review and integrate into an app<br>
+<strong>Prerequisites</strong>: Access to ConnexCS Apps IDE (Page Builder), basic understanding of HTML/web embedding, familiarity with security and cross-origin constraints<br>
+
+</details>
+
 ## Description
 
 An iframe component, short for "inline frame", is an HTML element that embeds an external web page within another web page.

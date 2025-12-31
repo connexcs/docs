@@ -1,5 +1,20 @@
 # Security
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Setup & Configuration → Security<br>
+<strong>Audience</strong>: Administrators, Engineers, Security Team<br>
+<strong>Difficulty</strong>: Intermediate to Advanced<br>
+<strong>Time Required</strong>: 15–30 minutes<br>
+<strong>Prerequisites</strong>: Access to the ConnexCS account with security-configuration privileges; basic knowledge of network security (firewalls, NAT, encryption).<br>
+<strong>Related Topics</strong>: 
+<a href="https://docs.connexcs.com/setup/advanced/firewall/">Firewall</a>, 
+<a href="https://docs.connexcs.com/setup/information/audit-log/">Audit Log</a>, 
+<a href="https://docs.connexcs.com/far-end-nat-traversal/">Far-End NAT Traversal</a><br>
+<strong>Next Steps</strong>: Implement recommended security controls, audit current configuration, and monitor for irregularities.<br>
+
+</details>
+
 ConnexCS considers **Security** its top priority. We incorporate industry best practices into all our policies and procedures.
 
 We use proven technology and the latest ideas to keep your systems safe from external and internal threats.

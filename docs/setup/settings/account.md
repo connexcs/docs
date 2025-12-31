@@ -1,5 +1,17 @@
 # Account
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Setup / Account Configuration<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Beginner to Intermediate<br>
+<strong>Time Required</strong>: Approximately 10–20 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account<br>
+<strong>Related Topics</strong>: Company Settings, Security Settings, Users & Roles, Notifications, Billing & Subscription<br>
+<strong>Next Steps</strong>: Review and update account-level information, then verify that changes reflect across billing, user access, and system defaults.<br>
+
+</details>
+
 **Setup :material-menu-right: Settings :material-menu-right: Account**
 
 The **Account** overview allows you to edit Company and General Information, set Simple Mail Transfer Protocol (SMTP) Details, view Packages and the Service Agreement.

@@ -1,5 +1,17 @@
 # Class5
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Customer Account Management / Class 5 Services & Features<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate to Advanced<br>
+<strong>Time Required</strong>: Approximately 1–2 hours<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with access to the Class 5 module (customer-side); familiarity with VoIP/softswitch (Class 5) concepts<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/class5/class5-intro/">Class 5 – Introduction</a>, <a href="https://docs.connexcs.com/class5/call-center/">Class 5 – Call Center</a><br>
+<strong>Next Steps</strong>: <a href="https://docs.connexcs.com/class5/apps/">Class 5 – Apps (Build/Configure Apps)</a>, <a href="https://docs.connexcs.com/class5/creating-group/">Class 5 – IVR / Groups / ConneXML</a><br>
+
+</details>
+
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Class5**
 
 **Class5** features include the ConnexCS Unified Communications Service (UCS) package. While Class4 routing is the major focus of the ConnexCS system.

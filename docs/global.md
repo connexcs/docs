@@ -1,5 +1,17 @@
 # Global
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Platform Administration / Global Configuration<br>
+<strong>Audience</strong>: Administrators, Engineers, Operations Team<br>
+<strong>Difficulty</strong>: Intermediate to Advanced<br>
+<strong>Time Required</strong>: Approximately 1–1.5 hours<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with admin access; familiarity with system-wide configuration, global settings, and multi-domain management.<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/getting-started/">Getting Started</a>, <a href="https://docs.connexcs.com/setup/settings/servers/">Servers & Infrastructure</a><br>
+<strong>Next Steps</strong>: Review and modify global settings (language, time-zone, domains), manage global aliases and global transcription settings, implement naming and template conventions, then audit global logs and permissions.<br>
+
+</details>
+
 ## Overview
 
 The **Global Section** in the ConnexCS Control Panel provides an account-wide overview of many of the same sections found under **Management :material-menu-right: Customer** or **Management :material-menu-right: Carrier**.

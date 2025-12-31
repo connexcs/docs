@@ -1,5 +1,17 @@
 # Audit Log
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Setup & Configuration → Information → Audit Log<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: 5–10 minutes<br>
+<strong>Prerequisites</strong>: Access to the Setup → Information section of the ConnexCS control panel and permission to view audit entries.<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/setup/information/change-log/">Change Log</a> (for version history), <a href="https://docs.connexcs.com/customer-portal/cp-authentication/">Authentication Audit Log</a> (specific to IP/SIP auth)<br>
+<strong>Next Steps</strong>: Export or filter the Audit Log for compliance reporting, use in internal investigations or security reviews.<br>
+
+</details>
+
 **Setup :material-menu-right: Information :material-menu-right: Audit Log**
 
 ## Overview

@@ -1,5 +1,17 @@
 # Alias
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Customer Account Management / Routing Configuration<br>
+<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 30–60 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account, permission to edit customer alias rules (number rewriting)<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer/auth/">Customer – Auth</a>, <a href="https://docs.connexcs.com/number-manipulation/">Number Manipulation Basics</a><br>
+<strong>Next Steps</strong>: <a href="https://docs.connexcs.com/routing/">Configure Routing Rules after Alias</a><br>
+
+</details>
+
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Alias**
 
 ## Overview

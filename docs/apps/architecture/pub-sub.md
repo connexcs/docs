@@ -1,5 +1,17 @@
 # Pub/Sub Bus
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Applications Platform / Project Management & Organization<br>
+<strong>Audience</strong>: Engineers, Developers, DevOps & Integration Teams<br>
+<strong>Difficulty</strong>: Beginner to Intermediate<br>
+<strong>Time Required</strong>: Approximately 15–20 minutes (to create a new Project and understand workflow)<br>
+<strong>Prerequisites</strong>: Access to ConnexCS Apps IDE, account privileges to create Projects and Applications<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/architecture/app/">Applications – App Structure & Creation</a>, <a href="https://docs.connexcs.com/apps/architecture/architecture/">Apps Architecture Overview</a>, <a href="https://docs.connexcs.com/apps/architecture/architecture/#version-locking-vs-continuous-integration">Versioning & Deployment Workflow</a><br>
+<strong>Next Steps</strong>: After creating a Project, add one or more applications under it; define versioning/branching strategy; for each app, configure environment variables, Pub/Sub channels, and associate components (pages, scripts, databases) — then publish and track under the Project umbrella<br>
+
+</details>
+
 ## Introduction
 
 A **Pub/Sub** bus, short for **Publish/Subscribe** bus, is a messaging system that enables asynchronous communication between different parts of an application or system. It functions like a central communication hub where:

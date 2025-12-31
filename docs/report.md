@@ -1,5 +1,19 @@
 # Report
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Reporting & Analytics / Standard Reports<br>
+<strong>Audience</strong>: Administrators, Engineers, Billing & Product Teams<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 30–60 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with Reports access; familiarity with call metrics (ASR, ACD), traffic segmentation, and prefix/rate-center concepts.<br>
+<strong>Related Topics</strong>: 
+<a href="https://docs.connexcs.com/rate-card-building/">Rate Card Overview</a>,
+<a href="https://docs.connexcs.com/customer/custom-reports/">Analytics & Custom Reports</a><br>
+<strong>Next Steps</strong>: Navigate to the Report module, select the appropriate report type (e.g., Breakout, USA Calls, Per Number), apply filters (date range, customers, providers), generate the report, then use exports or schedule email delivery for continuous monitoring.<br>
+
+</details>
+
 **Management :material-menu-right: Report**
 
 View and Download **Reports** that provides extensive insights on historical data such as by Customers or Provider routes, [Dual-Tone Multi-Frequency (DTMF)](https://docs.connexcs.com/report/#dual-tone-multi-frequency) Cost, and [Per Number](https://docs.connexcs.com/report/#per-number) metrics.
