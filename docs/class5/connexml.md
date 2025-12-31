@@ -956,7 +956,7 @@ It functions as a decision-making component that determines a system's flow or b
 		    <Play>https://samplelib.com/lib/preview/wav/sample-12s.wav</Play>
 	    </Gather>
 	    <!-- Logic for conference -->
-	    <Condition field="gather_result" expression="1">
+	    <Condition field="${gather_result}" expression="1">
 		    <Say>You have pushed 1, which was the correct digit and connecting to the conference.</Say>
 		    <Dial>
 			    <Conference>MyConferenceRoom</Conference>
@@ -971,8 +971,8 @@ It functions as a decision-making component that determines a system's flow or b
     A `Gather` tag collects the user's input, allowing up to 120 seconds for a response.
 
     **Processing the Input:**
-    The `Condition` tag evaluates a specific field (`field="gather_result"`) against a condition (`expression="1"`).
-    `Field`: `gather_result` refers to the value collected from the user's input (via the `Gather` tag).
+    The `Condition` tag evaluates a specific field (`field="${gather_result}"`) against a condition (`expression="1"`).
+    `Field`: `${gather_result}` refers to the value collected from the user's input (via the `Gather` tag).
     `Expression: "1"` specifies the required value for the condition to be true
     
     **Handling Valid and Invalid Inputs**:

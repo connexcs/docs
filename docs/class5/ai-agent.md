@@ -125,6 +125,34 @@ With AI-driven automation, businesses can enhance customer experience while sign
     ```js
     const llm = require('cxLLM'); // imports a module named `cxLLM` used for interacting with the LLM
     const moment = require('moment'); // imports the `moment` library used for  working with dates and times
+=======
+1. **Create an App from IDE**:
+      1. Login to your account
+      2. Navigate to **IDE :material-menu-right: Application**.
+      3. Create a new App. [Click here](https://docs.connexcs.com/apps/architecture/app/) to follow the steps.
+
+2. **Add a Script Forge**:
+    Under the newly created app, add a Script Forge. [Click here](https://docs.connexcs.com/apps/architecture/scriptforge/) to know the steps.
+
+3. **Define the Function**:
+    Within the Script Forge, add the function you want the AI agent to access.
+
+    !!! Example "Example Function"
+        ```js linenums="1"
+        /**
+        * Transfer
+        * @param {Object} param - Param Object
+        * @param {string} param.name - The name of the person who you wish to transfer the call to.
+        */
+        function transfer() {
+            console.log(`We are going to transfer the call`)
+            return { action: 'transfer', destination: '4423456526787365' }
+        }
+        ```
+
+4. **Assign the App to the AI Agent**:
+      1. Navigate to your AI agent that you have previously created.
+      2. Under the **Basic** in the **App** field app, choose the created App.
 
     function main () {
         return llm.listFunctions(); //its an introspection capability; it parses the information and returns it as an object

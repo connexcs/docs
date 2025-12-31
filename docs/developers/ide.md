@@ -52,5 +52,5 @@ With an intuitive interface and a wide range of features, the IDE enables seamle
 5. **Domain**: Create Domains where your applications will be visible. [Click here to know more.](https://docs.connexcs.com/apps/architecture/domain/)
 6. **Page Builder**: Drag and Drop components to create pages, forms etc. [Click here to know more](https://docs.connexcs.com/apps/page-builder/).
 7. **Query Builder**: Use SQL queries to communicate with databases. [Click here to know more.](https://docs.connexcs.com/apps/architecture/query-builder/)
-8. **Script Forge**: Create and deploy customize scripts to automate tasks. [Click here to know more.](https://docs.connexcs.com/apps/architecture/script/)
+8. **Script Forge**: Create and deploy customize scripts to automate tasks. [Click here to know more.](https://docs.connexcs.com/apps/architecture/scriptforge/)
 9. **Template**: Create customize templates for outbound SMS/Calls for informing customers about balance, invoice etc. [Click her to know more.](https://docs.connexcs.com/apps/architecture/template/)

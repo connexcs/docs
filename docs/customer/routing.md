@@ -110,9 +110,11 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 
 + **DNC (Do Not Call) List**: The customer won't be able to able to dial the numbers in the specified DNC list. You can add the list of numbers in the [**Database**](https://docs.connexcs.com/developers/database/).
 
-    Apart from your own DNC list you can also choose [**United States Federal DNC**](https://www.donotcall.gov/). Choosing not to accept telemarketing calls is possible because of the National Do Not Call Registry.
+    Apart from your own DNC list you can also choose [**United States Federal DNC**](https://www.donotcall.gov/) or [**United Kingdom TPS**](https://www.tpsonline.org.uk/). Choosing not to accept telemarketing calls is possible because of the National Do Not Call Registry.
 
-+ **Block Destination Type**: You can select and block the calls to various destinations (carriers) like Mobile, Fixed, Paging, etc.
+    **Explore the details inside ConnexCS: [USA Federal DNC](/customer/routing/#united-states-federal-do-not-call-dnc)| [UK TPS](/customer/routing/#united-kingdom-telephone-preference-service-tps)**
+
++ **Block Destination Type**: You can select and block the calls to various destinations (carriers) like Mobile, Fixed, Paging, etc. [Click here to know about Destination Type Lookup & Fallback Logic — USA and International](/customer/routing/#destination-type-lookup-fallback-logic-usa-and-international).
 
 + **Spam Scout Scoring**: It blocks Spam calls based on the CLIs.
   You can either Block All, Allow All, Block Most Spam, or Block Least Spam.
@@ -146,6 +148,149 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 + **TCPA  Litigator DNC**: Enabling this flag blocks outbound calls to known TCPA Litigators.
 
 <img src= "/customer/img/rsecurity.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+#### Destination Type Lookup & Fallback Logic — USA and International
+
+1. **Overview**
+
+    ConnexCS uses a multi-layered lookup mechanism to determine the destination type for any given phone number.
+    This enables accurate routing, blocking, and classification across both **USA (NANPA)** numbers and **International numbers**.
+
+    The logic uses the following hierarchical sources of truth:
+
+    i. **LRN / Line-Type Database** (granular, per-number accuracy)
+
+    ii. **USA Range Type** (NANPA prefix blocks)
+
+    iii. **International Number Plan** (for non-USA destinations only)
+
+    This hierarchy ensures the most accurate classification possible, even when individual numbers are ported between carriers.
+
+2. **Lookup Hierarchy for USA Numbers (NANPA)**
+
+    When evaluating a USA number, ConnexCS performs the following steps:
+
+    **Step 1 — Line-Type Lookup (LRN Database)**
+
+    i. The system checks the LRN/line-type database for the exact phone number.
+
+    ii. If the number exists, the classification returned here is treated as the primary and most accurate source.
+
+    **Output will be one of: Mobile / Fixed / VoIP**.
+
+    !!! Example
+
+        201-555-0198 → Found in LRN → Fixed
+        Result is final; no further fallback is needed.
+
+    **Step 2 — USA Range Type (NANPA Prefix Blocks)**
+
+    If the number does not exist in the line-type database, the system falls back to the USA Range Type:
+
+    i. Uses the NANPA number block (e.g., 201-2019) to determine its type.
+
+    ii. This is less granular but covers entire assigned ranges.
+
+    iii. Range metadata includes assignment date, carrier, and designated type (Mobile / Fixed / VoIP).
+
+    !!! Example
+        201-2019-XXXX → Range is assigned as Mobile → Output: Mobile
+
+3. **Lookup Logic for International Numbers**
+
+    * **For non-USA destinations**:
+
+        i. The system **does not** use LRN or NANPA.
+
+        ii. The system directly uses the **International Number Plan**.
+
+    * **The International Number Plan contains**:
+
+        i. Country-level numbering rules
+
+        ii. Mobile VS fixed patterns
+
+        iii. Regulator-published allocations
+
+    !!! Example
+        i. +91 98XXXXXXX → Identified as Mobile via India number plan.
+
+        ii. +971 4 XXX XXXX → Identified as Fixed via UAE number plan.
+
+4. **Application in Block Destination Type**
+
+    When a rule uses Block Destination Type, the lookup follows this logic:
+
+    * **For USA numbers**:
+
+    i. Perform Line-Type Check (LRN database).
+
+    ii. If not found → perform USA Range Type check.
+
+    iii. Apply the result to the block rule.
+
+    * **For International numbers**:
+
+    i. Directly apply the International Number Plan classification.
+
+This ensures blocking behaves consistently and accurately, even when numbers are ported or ranges evolve.
+
+#### United States Federal Do Not Call (DNC)
+
+1. **Overview**
+
+    ConnexCS integrates the [United States Federal Do Not Call (DNC) registry](https://www.donotcall.gov/) into the platform to provide real‑time cleansing of outbound calling lists and to help customers meet regulatory obligations.
+
+    ConnexCS makes the Federal DNC available to customers at **no additional charge** as a standard data source for DNC checking.
+
+2. **Key points**
+
+   - **What it is**: The **National Do Not Call Registry** (commonly called the **“Federal DNC**”) is a central list of telephone numbers registered by U.S. consumers who do not wish to receive most telemarketing calls.
+   - **Scale**: The registry contains on the order of hundreds of millions of numbers (**approximately 250 million** at the time of this note).
+
+##### How ConnexCS uses the Federal DNC
+
+1. **Real‑time cleansing**: Outbound diallers and routing rules can query ConnexCS DNC sources (including the Federal DNC) at call time to block or flag numbers that appear on the registry.
+2. **DNC lists in the Control Panel (Routing)**: Administrators can enable the `United States Federal DNC` option for a customer account so that the platform will apply the registry to outbound calls originating from that account.
+3. **FTC / reported ANI feeds**: ConnexCS can optionally ingest FTC reported‑calls / ANI block feeds to help block known spammer CLIs in addition to standard DNC matching.
+
+#### United Kingdom Telephone Preference Service (TPS)
+
+1. **Overview**
+
+The **Telephone Preference Service (TPS)** is the UK national opt-out register for consumers who do not wish to receive unsolicited marketing calls.
+
+ConnexCS supports TPS lookups as an optional commercial data cleansing source that can be enabled for customers.
+
+##### Compliance and Reporting Obligations
+
+1. **TPS** is overseen by the [DMA (Direct Marketing Association)](https://dma.org.uk/) and regulated by the [ICO (Information Commissioner's Office)](https://ico.org.uk/).
+2. Organizations that perform TPS cleansing on behalf of customers must follow TPS rules and any reporting requirements associated with commercial cleansing services.
+3. Using TPS does not remove other legal obligations under UK consumer protection and marketing laws.
+4. Customers remain responsible for campaign compliance and should seek legal guidance when in doubt.
+5. ConnexCS are obliged to submit monthly lookup totals to the DMA.
+
+##### How to use TPS
+
+To enable TPS for a customer account:
+
+1. Contact **Support Team** to add the TPS Package.
+2. Log in to the **Control Panel** as an administrator.
+3. Navigate to **Setup :material-menu-right: Config :material-menu-right: Package** then create a package. While creating the package, select **UK TPS Lookup** as the **ConnexCS Package type**.
+4. Navigate to **Management :material-menu-right: Customer:material-menu-right: [Customer Name] :material-menu-right: Package [TPS cleansing package]** to assign the package to the customer's account. 
+5. Go to **Routing :material-menu-right: Security & Controls :material-menu-right: DNC list**.
+6. Enable **United Kingdom TPS** in the DNC selections for the customer.
+7. ConnexCS are obliged submit monthly lookups to the DMA.
+
+!!! Note
+    1. The **TPS package is a prerequisite**. The TPS option will not appear in the account DNC selections until the package is assigned by an administrator.
+    2. Once enabled, the platform will apply TPS checks as part of the customer's outbound DNC matching logic.
+    3. TPS Package is **free-of-charge**.
+
+##### Reporting and Attribution (Reseller/White-Label Scenarios)
+If a customer resells TPS lookups (for example, by creating a package and selling lookup access to their customers), reporting obligations may still apply. 
+
+The reporting system typically records which account performed the lookups, and ConnexCS will report totals attributed to the account that performed the queries.
 
 ### Capacity & Quality Control
 
@@ -195,7 +340,9 @@ Enter the number  of channels allowed for transcoding. This is a limited option.
 |**Enabled (Upstream Only)**| SIP Pings sent towards where the call is TO (terminated) |
 
 + **SIP Session Timer (SST)**: SST is Passive by Default, but **Enabled** is the recommended setting.
+  
   When enabled, SST ensures there is no ghost or long-duration calls get billed when one or both sides have hung up. A timer activates when the call starts and refreshes the call every X number of seconds by sending a RE-INVITE.
+  
   SST has surpassed SIP Ping Timeout as the best way to prevent long-duration calls. Note that any SST shorter than sixty (60) seconds gets rejected.
 
   Session Timers periodically revalidate call sessions to ensure continued connectivity.
@@ -315,7 +462,11 @@ Enter the number  of channels allowed for transcoding. This is a limited option.
         + **Except**: This permission allows you to block all the codecs apart from the ones in the Whitelist. Codecs that weren't included in the carrier's initial codec list won't be taken into consideration.
         +  **Offer**: Offer also blocks the codecs apart from the ones in the whitelist and provides flexibility to change the order of the codecs in the list as well. Thus, the first codec in the list is treated as the primary codec (at the output) even if it was the last codec in the list.
         +  **Consume**: Identical to mask but enables the transcoding engine even if no other transcoding related options are given.
-        +  **Transcode**: Allows the addition of codecs in the offered codec list even if the codecs weren't included in the original list of codecs. Here, transcoding engine will be engaged meaning  behind-the-scenes translation process is happening to ensure communication.<br> You can only add those codecs which are supported by your device for both encoding and decoding process. <br>One limitation of using this option is that it will strip-off all the unsupported codecs. Note that using this option doesn't necessarily always engage the transcoding engine. If all codecs given in the transcode list were present in the original list of offered codecs, then no transcoding will be done.<br> When you use this permission it enables you to mark/modify the Ptime.
+        +  **Transcode**: Transcoding manages different audio codecs to ensure compatibility between the calling and receiving systems.<br>Enter the number  of channels allowed for transcoding. This is a limited option. The best use case is for customers in low-bandwidth areas that want to use G.729.</br>
+        Allows the addition of codecs in the offered codec list even if the codecs weren't included in the original list of codecs. Here, transcoding engine will be engaged meaning  behind-the-scenes translation process is happening to ensure communication.<br> You can only add those codecs which are supported by your device for both encoding and decoding process. <br>One limitation of using this option is that it will strip-off all the unsupported codecs. Note that using this option doesn't necessarily always engage the transcoding engine. If all codecs given in the transcode list were present in the original list of offered codecs, then no transcoding will be done.<br> When you use this permission it enables you to mark/modify the Ptime.
+
+        !!! Danger "Be aware that if you don't have enough transcoding capacity, calls will fail."
+
         +  **Strip**: This permission allows you to remove the selected codecs or RTP Payload types from the SDP. Codecs removed using this option behaves as if they never existed in the SDP.
   
         |Strip|Transcode|Explanation|
