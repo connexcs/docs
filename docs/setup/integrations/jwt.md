@@ -1,4 +1,4 @@
-# JWT Refresh Keys
+# JWT Keys
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>
 
@@ -12,7 +12,8 @@
 
 </details>
 
-**Setup :material-menu-right: Integrations :material-menu-right: JWT Refresh Keys**
+
+**Setup :material-menu-right: Integrations :material-menu-right: JWT Keys**
 
 ## Introduction
 
@@ -22,9 +23,9 @@ One of the core elements of JWT is the **Refresh Token**, which plays a key role
 
 [Click here](https://en.wikipedia.org/wiki/JSON_Web_Token) for more information on JWT.
 
-## What is JWT Refresh Keys?
+## What are JWT Keys?
 
-**JWT Refresh Keys** are used to extend the validity of a user session without requiring the user to re-enter credentials.
+**JWT Keys** are used to extend the validity of a user session without requiring the user to re-enter credentials.
 
 This process involves two tokens:
 
@@ -32,13 +33,13 @@ This process involves two tokens:
 
 2. **Refresh Token**: This token is used to request a new access token after the previous one expires, allowing the user to stay logged in for a longer period. The refresh token has a **longer expiration time** (e.g., 30 days).
 
-## How JWT Refresh Tokens Work?
+## How JWT Works?
 
 1. **User Login**:
 
     a. The user enters **credentials**. For example, the username and password.
 
-    b. The system generates an **Access Token** and a **Refresh Token**.
+    b. The system generates an **Access Token** and a **Refresh Token**. **You can now issue access tokens**.
 
     c. The Access Token is **short-lived** and used to **authenticate API requests**.
 
@@ -53,7 +54,7 @@ This process involves two tokens:
 ## How to Add the JWT Keys?
 
 1. Login to your account.
-2. Navigate to **Setup :material-menu-right: Integrations :material-menu-right: JWT Refresh Keys**. <br><img src= "/setup/img/jwt1.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+2. Navigate to **Setup :material-menu-right: Integrations :material-menu-right: JWT Keys**. <br><img src= "/setup/img/jwt1.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 3. Click on the blue `+` button. Fill in the following fields:
       1. **Audience**: Specifies the intended recipient of the token, ensuring it is used only by the designated service/application/API.
       2. **Lifetime**: Specifies how long the token will remain active before it expires.
