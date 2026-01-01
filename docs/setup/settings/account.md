@@ -32,7 +32,7 @@ Under **Address** section can only verify the address and can't modify it.
 
 Under **Contact Information** section can only verify and edit the contact details.
 
-<img src="/setup/img/accountprofile1.png">
+<img src= "/setup/img/accountprofile1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! note "Additional Configuration"
     To change any other settings, please contact Technical Support.
