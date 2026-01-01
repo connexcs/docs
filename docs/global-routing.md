@@ -50,3 +50,29 @@ For each customer that needs the new template:
     You can't use Routing Global templates to set routing details with ScriptForge (Vars box).
 
     With appropriate design, you can configure this directly under Customer Routing.
+
+### Tags in Routing
+
+Tags are labels applied to both routes and customers to simplify bulk administration.
+
++ **Key Functions**:
+
+    + **Route Management**: A single route can be assigned to multiple customers by using tags.
+
+    + **Customer Grouping**: Customers with the same tag will share the same global routing settings.
+
++ **Implementation**:
+
+    + Tags are assigned in the rate card configuration.
+
+    + Removing a tag from a route makes it unavailable for associated customers.
+
++ **Benefits**
+
+    + **Simplifies Bulk Administration**: Manage multiple customers with a single routing configuration.
+
+    + **Scalability**: Supports large-scale routing needs without individual customer setups.
+
+    + **Consistency**: Ensures uniform pricing and routing logic across similar customer groups.
+
+    + **Flexibility**: Tags allow quick modifications without altering individual customer settings.
