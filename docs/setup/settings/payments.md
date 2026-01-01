@@ -52,6 +52,4 @@ Use the **Payments** view to manage payments to ConnexCS and other related funct
 
 + **Comprehensive Service Agreement**: Provides clarity on ConnexCS services and policies.
 
-&emsp;![alt text][payments]
-
 <img src="/setup/img/paymentcards.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;">
