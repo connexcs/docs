@@ -63,13 +63,23 @@ When you deploy a new server, there is an option to select one of the configured
 
 ## Real-Time Transport Protocol Servers
 
-Real-Time Transport Protocol (RTP) Servers handle streaming media.
+Real-Time Transport Protocol (RTP) Servers handle streaming media for calls and are an integral part of the global deployment.
 
 ConnexCS allows you to route your media through a global array of dedicated media servers.
 
 These servers operate independently of your server.
 
 If your server is in London, you can choose to run your media in New York (if you have customers there). Each regional zone encompasses multiple servers to provide high availability.
+
+### Key Features
+
++ **Geographical Distribution**: Multiple media servers are deployed in different locations to manage media streams efficiently.
+
++ **Capacity Overview**: Each server displays its current capacity, allowing for real-time monitoring of resources.
+
++ **IP Address Information**: Complete lists of media server IP addresses are available, ensuring transparency and easy network management.
+
++ **IPv6 Availability**: RTP servers include IPv6 support. We dont support IPv6 with SIP yet.
 
 To view RTP Servers:
 
@@ -79,7 +89,7 @@ To view RTP Servers:
 
 2. Click **`Refresh`** to reload the page to show the most current changes, if any.
 
-    <img src= "/setup/img/serverrtp.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+    ![alt text][rtpserver]
 
 !!! Tip "Media Server Selection"
     You should choose a media server that adds the least latency to the call.
@@ -149,7 +159,7 @@ For example, if the CPS or Channels limits have reached, capacity failover will 
 
 Select certificates to apply to a server.
 
-<img src= "/setup/img/server1.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/setup/img/server1.png" width= "800">
 
 To add a Certificate to a sever,
 
@@ -191,7 +201,7 @@ Use this to update the Channels for the selected server. The update will be acti
 
 This only needs to run when the system indicates "There's a pending update on the server" at the top of the server details.
 
-<img src= "/setup/img/serverrtp1.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
+&emsp;![alt text][server-update]
 
 ## Network Tools
 
@@ -201,13 +211,13 @@ You can use **Ping** and **MTR**  to test network connectivity and performance.
 2. Click on ![alt text](image.png) icon next to your IP address.
 3. A window will pop-up where you enter the Hostname or IP Address.
 
-<img src="/setup/img/server1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src="/setup/img/server1.png">
 
 4.Click **Run** to see the results.
 
-<img src="/setup/img/ping.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src="/setup/img/ping.png">
 
-<img src="/setup/img/mtr.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src="/setup/img/mtr.png">
 
 ## Server Clustering and User Location Registration
 
@@ -232,16 +242,7 @@ When a user endpoint registers with UDP via NAT, it creates a port mapping. Thus
 
     We can help with more intricate measures on a case-by-case basis.
 
-## APIBAN Integration
-
-APIBAN integration with ConnexCS is a third-party system provided by [apiban.org](https://www.apiban.org/).
-
-It automatically blocks malicious traffic to your servers. 
-
-APIBAN proactively prevents unwanted SIP traffic by identifying and blocking IP addresses of known bad actors before they can target your system.
-
-These bad actors are identified through globally deployed honeypots and curated by APIBAN to ensure comprehensive protection.
-
-[server-update]: /setup/img/server-update.png "Update Server" style="border: 2px solid #4472C4; border-radius: 8px;"
-[server-cert1]: /setup/img/server-cert1.png "Server Certificates" style="border: 2px solid #4472C4; border-radius: 8px;"
-[server-6]: /setup/img/reactivateserver.png "Reactivate Server" style="border: 2px solid #4472C4; border-radius: 8px;"
+[rtpserver]: /setup/img/rtpservers.png "RTP Server"
+[server-update]: /setup/img/server-update.png "Update Server"
+[server-cert1]: /setup/img/server-cert1.png "Server Certificates"
+[server-6]: /setup/img/reactivateserver.png "Reactivate Server"

@@ -14,9 +14,21 @@
 
 **Setup :material-menu-right: Settings :material-menu-right: User**
 
+## Overview
+
+ConnexCS provides a robust, granular permissions system through users and groups, ensuring secure and flexible account management.
+
 For more efficient management of access to the ConnexCS Control Panel, Create and assign **Users** and **Groups** based on various levels of permission.
 
 Groups manage the Permissions, and at a Granular level for every endpoint in the system.
+
+### Key Features
+
++ User Management and Security:
+    + **Automatic User Creation**: Every login automatically creates a user entry with a full audit trail.
+    + **Audit Trail and Change Management**:  Changes to settings (e.g., credit adjustments, contract updates) are recorded.
+        + **Best Practice**:  Report any accidental changes immediately to ensure quick resolution.
+
 
 ## Users
 
@@ -28,15 +40,25 @@ To add a new ConnexCS **User**, click :material-plus: in the **Users** section o
   
 + **Groups (optional):**  Select one or more Group(s) to assign to the new user. This will define their permission levels.
 
-    It's additive, meaning that if a User is in a Read-Only Group as well as a Group that has Edit permissions for a specific area, they will be able to make edits in that area.
+    It's additive, meaning that if a User is in a Read-Only Group as well as a Group that has Edit permissions for a specific area, they will be able to make edits in that area. So, When a user belongs to multiple groups, permissions are cumulative.
+
+    !!! warning "Caution"
+        Adding conflicting groups may override restrictions; typically, one group per user is recommended.
 
     While a user can belong to multiple groups, managing a user with only one group is easier.
 
-    See details below on creating Groups.
+    **Custom Permissions**:
+    + Additional permissions can be added to groups, including:
+      + Analytics access.
+      + Contracts (e.g., create and read but no updates).
+      + CLI editing.
+      + Payments (e.g., create/read without delete).
 
-+ **Reseller Account (optional):** Used to restrict Resellers with several logins to an account.
+**See details below on creating Groups**.
 
-    See below for details on creating Default Resellers.
++ **Reseller Account (optional):** Used to restrict Resellers with several logins to an account. Supports multiple logins under a single reseller account, allowing designation as either a user or an administrator.
+
+    **See below for details on creating Default Resellers**.
   
 + **Password:** Enter the password they will use to access the Control Panel.
 
@@ -48,11 +70,13 @@ To add a new ConnexCS **User**, click :material-plus: in the **Users** section o
   
 + **Email:** The user's email address. It's recommended to use a used email address.
 
-    **Note:** As a security measure, if you change the email address, it won't save the original password.
+    !!! Note "Email and Password Bundling"
+        As a security measure, changing an email address will also update the password as a security measure to prevent password or hash copying.
   
 + **Time Zone:** Select the User's time zone.
   
 + **IP Whitelist:** Specify the IP or range of IPs this user can use to connect to the ConnexCS Control Panel.
+        Users can restrict login access to specific IP addresses (with support for CIDR notation such as /24 or /8).
 
     They won't be able to log in from any other IP, so be careful with this setup. Specify IPs as follows:
 
@@ -60,11 +84,13 @@ To add a new ConnexCS **User**, click :material-plus: in the **Users** section o
     + Wildcard for IP addresses: **For example**, 1.1.1
     + Range of IP addresses in CIDR (Classless Inter-Domain Routing) format: **For example**, 1.1.1.0/31
 
-+ **Shared Ticket:** If enabled, all Users in the account can view tickets created by this user based on the email address of this User.
++ **Shared Ticket:** A ticketing system allows users to raise tickets.
+
+If enabled, all Users in the account can view tickets created by this user based on the email address of this User for facilitating collaborative troubleshooting.
 
 After entering the information, click **`Save`**.
 
-<img src= "/setup/img/users1.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
+&emsp;![alt text][user]
 
 !!! Note
     [Click here](https://cidr.xyz/) to view an interactive IP address and CIDR range visualizer.
@@ -95,7 +121,7 @@ To change a user's password:
 
 !!! Tip "Hover over the New Password text box to see the password requirements."
 
-<img src= "/setup/img/chpass.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+![alt text][password-rules]
 
 !!! question "How should I inform the user about the password change?"
     When you change a user's password, ConnexCS doesn't send the new password to the user. You must email or text the new password to the user.
@@ -134,7 +160,7 @@ Typically, you create user groups to assign permissions depending on the roles t
     + Set as many Area / Access permissions as needed.
     + Once finished, select **`Save`**.
 
-    <img src= "/setup/img/grp1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+    ![alt text][add-group-perm]
 
 2. The new permissions are visible in the Add Group Permission table, with the following fields:
     + `Path`: the path to the functional Area's API.
@@ -143,7 +169,7 @@ Typically, you create user groups to assign permissions depending on the roles t
 
 3. Make sure you **`Save`** the Group with the new permissions.
 
-    <img src= "/setup/img/grp2.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
+    ![alt-text][group-perm]
 
 !!! tip "Group Permission Access Exceptions"
     The permissions for the **Analytics** and **CDR** Areas are always `Access Denied` (no other permissions allowed).
@@ -181,6 +207,7 @@ You can create Multiple Reseller Groups and edit each group to match your busine
 !!! warning "Alpha Feature"
     The Default Reseller feature is still an Alpha Feature in testing; please use it with caution.
 
-[user]: /setup/img/user.png "Add User" style="border: 2px solid #4472C4; border-radius: 8px;"
-[group-perm]: /setup/img/group-perm.png "Group Permission" style="border: 2px solid #4472C4; border-radius: 8px;"
-[password-rules]: /setup/img/password-rules.png "password-rules" style="border: 2px solid #4472C4; border-radius: 8px;"
+[user]: /setup/img/user.png "Add User"
+[add-group-perm]: /setup/img/add-group-perm.png "Add Group Permissions"
+[group-perm]: /setup/img/group-perm.png "Group Permission"
+[password-rules]: /setup/img/password-rules.png "password-rules"

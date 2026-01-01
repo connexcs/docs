@@ -14,23 +14,53 @@
 
 **Setup :material-menu-right: AnyEdge**
 
+## Overview
+
+AnyEdge is a dynamic, distributed solution designed to optimize call distribution and load balancing across multiple regions. It enhances redundancy, improves call routing efficiency, and ensures high availability for VoIP traffic.
+
 ConnexCS **AnyEdge** acts as a load-balancer / dispatcher. It balances the traffic between the SIP servers and the customers.
 
 It's a next-generation solution for the Edge Session Initiation Protocol (SIP).
 
 It provides high-reliability and custom Call Distribution algorithms (Weights and Priorities).
 
-!!! Info "Global Redundancy"
-    Global redundancy in AnyEdge ensures high availability by distributing traffic across multiple edge servers located in different geographical regions.
-    This minimizes downtime and provides seamless service continuity even during outages or failures in any single location.
-
-Each customer benefits from a unique, dedicated IP address through AnyEdge
-
-Calls are routed to the nearest AnyEdge server for optimal performance and reduced latency.
-
 !!! Info "AnyEdge Features"
     1. We provide 10,000+ CPS to all customers for optimal scalability and performance.
     2. All our customers benefit from 100Gbps DDoS protection.
+
+### Key Features
+
++ **Global Load Balancing**: Routes calls intelligently based on region and performance.
++ **Failover Protection**: Ensures seamless call routing in case of outages.
+**Auto-Scaling**: Dynamically adjusts resources based on demand.
++ **Optimized Call Distribution**: Distributes traffic efficiently to reduce latency.
++ **Flexible Configuration**: Supports various routing policies and priority settings.
+
+### Benefits
+
++ **Improved Redundancy**: Avoids downtime by automatically rerouting calls.
++ **Optimized Call Routing**: Ensures better call quality and lower latency.
++ **Cost Efficiency**: Uses LCR to minimize operational costs.
++ **Scalability**: Adapts to traffic spikes dynamically.
+
+### Load Balancer
+
+The load balancer is a core feature from the beginning, designed to manage call routing and provide failover mechanisms in your deployment.
+
+There are two primary methods for handling call distribution:
+
++ **Call Routing via a Load Balancer**:
+    + **Mechanism**: Calls are sent from point A to point C via an intermediary (B), where B acts as the load balancer.
+    + **Key Benefit**: Provides a scalable method to distribute call traffic across servers, ensuring that no single server is overloaded.
+
++ **302 Redirect as a Fallback**:
+    + **Mechanism**: Instead of directly routing through B, point A sends a call to B. B replies with a 302 redirect (temporary) pointing to C, which results in point A ultimately sending the call directly to C.
+    + **Considerations**: This “poor man’s redirect” offers basic call failover but lacks the granular control required for full dispatcher functionality.
+
++ **Capacity Failover**:
+    + **Scenario**: If a server exceeds its capacity (e.g., over 10 calls per second or 20 channels), the call is blocked by default.
+    + **Solution**: The system can automatically redirect overflow calls to another server in the cluster—be it server two or a hybrid hosted solution.
+    + **Key Benefit**: Ensures high availability by distributing excess load to servers with available capacity, acting as an effective failsafe.
 
 ## AnyEdge Setup
 
@@ -45,6 +75,7 @@ Click the :material-plus: button to set the following:
 * **Algorithm**: How to distribute calls.
 
     See [**Inbound Proxy / Dispatcher / Load Balancer**](https://docs.connexcs.com/anyedge/anyedge/#inbound-proxy-dispatcher-load-balancer) for details.
+
 * **Cyber-Physical System(CPS)**: Total calls per second allowed.
 
     See [**Metrics**](https://docs.connexcs.com/anyedge/anyedge/#metrics) for details
@@ -75,7 +106,7 @@ Click the :material-plus: button to set the following:
   
 * **Secondary Attempts**: (not useful for less than 3 servers) Set the number of attempts before going to a third zone.
 
-<img src= "/anyedge/anyedge12.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/anyedge/anyedge12.png">
 
 !!! Note "Increase AnyEdge Ports"
     1. Login to your account.
@@ -93,10 +124,7 @@ It can provide added **Transport Layer Security (TLS)/ Secure Sockets Layer (SSL
 2. If you enable the **Verify Certificate** option, then it will verify the client's certificate.
 3. If you enable the **Require Certificate** option, it means the client should have the certificate.
 
-<img src= "/anyedge/anyedge13.png" style="border: 2px solid #4472C4; border-radius: 8px;">
-
-!!! Info "Custom TLS Ciphers & Curves"
-     ConnexCS AnyEdge supports custom TLS ciphers, cryptographic algorithms and elliptic curves, allowing administrators to precisely configure security protocols and ensure compatibility with specific client or server requirements.
+<img src= "/anyedge/anyedge13.png">
 
 ### AnyEdge Destinations
 
@@ -111,7 +139,7 @@ Click :material-plus: button to specify the Destination IP, and one or more Limi
 * **Limit Zones**:  Limit Zones control access to specific servers within a load balancer. By defining limit zones, you restrict access to certain servers from designated zones. For example, if Sydney isn't added to the limit zone configuration, individuals from Sydney will be unable to access this designated server within the load balancer.
 * **Backup Zones**: Whenever the server of the main zone fails, the traffic will route to the zone selected in the Backup Zones field.
 
-<img src= "/anyedge/anyed1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/anyedge/anyed1.png">
 
 ## Capabilities
 
@@ -187,7 +215,7 @@ The reasons why a packet fails to validate are:
 * No SIP message
 * Header Parsing error
 * No "Call-ID" header
-* No "Content-Length" header for transports that require it (for example, TCP)
+* No "Content-Length" header for transports that require it (for example, TCP
 * Invalid Content-Length, different from the size of the actual body
 * SDP body parsing error
 * No "Cseq" header
@@ -262,7 +290,7 @@ If you have a pool of several servers, you can proxy your communications via **A
 
 The UAS is pinging the AnyEdge Loadbalancer and further, the Loadbalancer passes the pings to the Opensips Servers. Further, the Opensips Servers reply to the Laodbalancer, and then the ping gets to the UAS. In case, any of the SIP servers are slow, it slows down the AnyEdge Loadbalancer as well. Thus, introducing Latency in the system.
 
-<img src= "/anyedge/any3.jpg" style="border: 2px solid #4472C4; border-radius: 8px;">
+![any3](/anyedge/any3.jpg)
 
 Therefore, the AnyEdge SIP Ping Replies feature will help fix this issue. This feature will allow the AnyEdge Loadbalancer to reply to the UAS ping messages without passing them to the Opensips Server. This feature will fix the latency issue, and the application latency will be closer match to what we expect.
 
@@ -272,6 +300,6 @@ According to RFC 3261, there is a proper header Timestamp available. We include 
 
 ### How to Enable AnyEdge SIP Ping Replies
 
-1. Go to Setup :material-menu-right: AnyEdge and click on the `Edit` button. <img src= "/anyedge/any1.jpg" style="border: 2px solid #4472C4; border-radius: 8px;">
-2. You will a window, select the **AnyEdge SIP Ping Replies** from the dropdown in **Flags** to enable this feature. <img src= "/anyedge/any2.jpg" style="border: 2px solid #4472C4; border-radius: 8px;">
+1. Go to Setup :material-menu-right: AnyEdge and click on the `Edit` button.![any1](/anyedge/any1.jpg)
+2. You will a window, select the **AnyEdge SIP Ping Replies** from the dropdown in **Flags** to enable this feature.![any2](/anyedge/any2.jpg)
 3. Click on `Save`.
