@@ -14,31 +14,63 @@
 
 **Management :material-menu-right: Circuit Test**
 
-A **Circuit Test** can aid troubleshooting by providing details such as False Answer Supervision (FAS), Real-time Transport Protocol (RTP) quality, Mean Opinion Score (MOS), release reason, jitter, packet loss percentage, and answer delay measurement. The test initiates a call on the switch, which routes out to a termination provider through the PSTN network. It's then routed to an origination provider, which routes the call back to ConnexCS and a specific DID provision on the system. Its considered active testing (the call is actively placed on the network) as opposed to passive testing such as [**Stats**](https://docs.connexcs.com/customer/stats/) and [**Reports**](https://docs.connexcs.com/report/).
+The Circuit Test feature in ConnexCS allows users to initiate test calls to verify call routing, audio quality, and provider reliability.
+
+This feature creates a full loop by sending a call out through one provider and receiving it back through another, enabling detailed analysis and troubleshooting.
+
+A **Circuit Test** can aid troubleshooting by providing details such as False Answer Supervision (FAS), Real-time Transport Protocol (RTP) quality, Mean Opinion Score (MOS), release reason, jitter, packet loss percentage, and answer delay measurement.
+
+The test initiates a call on the switch, which routes out to a termination provider through the PSTN network. It's then routed to an origination provider, which routes the call back to ConnexCS and a specific DID provision on the system.
+
+Its considered active testing (the call is actively placed on the network) as opposed to passive testing such as [**Stats**](https://docs.connexcs.com/customer/stats/) and [**Reports**](https://docs.connexcs.com/report/).
+
+### Key Features
+
++ **Full Circuit Testing**: Calls are sent out and returned to ConnexCS for end-to-end verification.
++ **Provider Testing**: Primarily used for termination provider evaluation.
++ **Detailed Logging**: Comprehensive call logs with key metrics.
++ **False Answer Supervision (FAS) Detection**: Identifies cases of incorrect billing due to premature call connection signals.
++ **Audio Quality Analysis**: Measures MOS score and engagement delay.
++ **Customizable Call Scheduling**: Allows automated periodic testing.
++ **Active vs. Passive Testing**: Differentiates between live testing and passive data collection.
+
+#### Additional Features
+
++ **Carrier Settings**:
+    + **Carrier Portal Information**: Stores credentials for easy login access.
+      + **Consecutive Fail Back-Off**:
+        + Reduces call attempts to failing providers to prevent call delays.
+        + Gradual restoration of calls when the provider resumes service.
+
+    + **Peer-Asserted ID (PAID)**:
+        + **Default**: Passes the PAID through.
+        + **Remove**: Strips PAID data.
+        + **If Available**: Adds PAID if provided.
+        + **Required**: Blocks calls without PAID.
+
+    + **Propagate Username**:
+        + Retains username information in the From header.
+        + Useful for regulatory CLI identification requirements.
+
+#### Testing Capabilities
+
++ Verifies that the CLI (Caller Line Identification) remains intact.
++ Measures Post-Dial Delay (PDD) and Ring Time.
++ Detects FAS (False Answer Supervision).
++ Checks for Audio Engagement Delay (time taken for two-way audio to establish).
++ Confirms that the Codecs used are as expected.
++ Records release reasons and answer/release delay metrics.
+
+### How it works?
 
 **Circuit Test Traffic Flow**
 
 ```mermaid
-graph LR
-A[ConnexCS] --> B(Carrier) 
-B --> C(PSTN) 
-C --> D(FarEnd) 
-D --> C(PSTN) 
-C --> B(Carrier) 
-B --> A(ConnexCS) 
-A --> E(DID)
-style A fill:#ECEFF1,stroke:#red,stroke-width:3px
-style B fill:#ECEFF1,stroke:#red,stroke-width:3px
-style C fill:#ECEFF1,stroke:#red,stroke-width:3px
-style D fill:#ECEFF1,stroke:#red,stroke-width:3px
-style E fill:#ECEFF1,stroke:#red,stroke-width:3px
-linkStyle 0 stroke:red
-linkStyle 1 stroke:red
-linkStyle 2 stroke:red
-linkStyle 3 stroke:blue
-linkStyle 4 stroke:blue
-linkStyle 5 stroke:blue
-linkStyle 6 stroke:blue
+graph TD;
+    A[Call Initiation - ConnexCS] -->|Send Call| B[Provider A - Termination Provider];
+    B -->|Route via PSTN| C[PSTN Network];
+    C -->|Deliver Call| D[Provider B - Origination / DIDs Provider];
+    D -->|Return Call| E[ConnexCS - Call Analysis];
 ```
 
 ## Circuit Test Log
@@ -114,6 +146,13 @@ To create a *one-time Circuit Test*, go to **Management :material-menu-right: Ci
 
 ## Schedule
 
++ **Scheduling & Automation**:
+    + Users can set up automated scheduled tests at predefined times.
+    + Calls can be programmed for specific days and hours.
+    + Logs are generated for scheduled test calls.
+    + Active Testing: Actual test calls placed on the network.
+    + Passive Monitoring: Collects call data without initiating new calls.
+
 To schedule *recurring Circuit Test*, go to **Management :material-menu-right: Circuit Test :material-menu-right: Schedule**, Click :material-plus:.
 
 ***Click each tab to view the configuration details:***
@@ -136,4 +175,3 @@ When the scheduled test run, the results are visible on the "Log" tab.
 
 !!! note "Multiple selections allowed"
     Most fields under Schedule allow for multiple selections. For example, you can schedule the test for multiple days of the week.
-
