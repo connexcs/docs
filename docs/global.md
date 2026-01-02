@@ -18,13 +18,7 @@ The **Global Section** in the ConnexCS Control Panel provides an account-wide ov
 
 It provides a centralized view of all customer-related data. Instead of accessing individual customer records, this section allows users to see and manage all data across accounts in one place.
 
-Whether managing Class 4 call routing, the Global Section enhances efficiency and oversight across all customer accounts.
-It serves as a comprehensive control center for ConnexCS users.
-
-Its an essential tool for system-wide management, offering key functionalities that allow for streamlined troubleshooting, efficient DID and routing lookup, and centralized authentication and logging.
-
-Whether managing Class 4 call routing or expanding developer capabilities, the Global Section enhances efficiency and oversight across all customer accounts.
-The Global section enhances efficiency and oversight across all customer accounts.
+When managing Class 4 call routing capabilities, the Global Section enhances efficiency and oversight across all customer accounts.
 
 ### What the Global Section Offers?
 
