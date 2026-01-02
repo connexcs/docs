@@ -16,6 +16,14 @@
 
 The **Global Section** in the ConnexCS Control Panel provides an account-wide overview of many of the same sections found under **Management :material-menu-right: Customer** or **Management :material-menu-right: Carrier**.
 
+It provides a centralized view of all customer-related data. Instead of accessing individual customer records, this section allows users to see and manage all data across accounts in one place.
+
+Whether managing Class 4 call routing, the Global Section enhances efficiency and oversight across all customer accounts.
+It serves as a comprehensive control center for ConnexCS users.
+
+Its an essential tool for system-wide management, offering key functionalities that allow for streamlined troubleshooting, efficient DID and routing lookup, and centralized authentication and logging.
+
+Whether managing Class 4 call routing or expanding developer capabilities, the Global Section enhances efficiency and oversight across all customer accounts.
 The Global section enhances efficiency and oversight across all customer accounts.
 
 ### What the Global Section Offers?
@@ -42,7 +50,11 @@ Alternate location(s):
 
 ## Contacts
 
-View all Customer Contacts. When creating a Contact from Global, you will need to select the Company where the Contact exists.
+Views all contacts across customer accounts.
+
+Provides easy access for quick lookup and management.
+
+When creating a Contact from Global, you will need to select the Company where the Contact exists.
 
 *See [**Contacts**](https://docs.connexcs.com/customer/main/#contacts) for configuration details.*
 
@@ -53,9 +65,11 @@ Alternate location(s):
 
 ## Call Detail Record
 
-View CDRs (Call Detail Record) for all Customers. The Global CDR view also allows you to select specific CDRs for Recalculation.
++ Displays all call records in the system.
 
-*See [**CDR**](https://docs.connexcs.com/customer/cdr) for configuration details.*
+!!! Note
+    Queries may take longer if a customer has a large number of calls.
+    *See [**CDR**](https://docs.connexcs.com/customer/cdr) for configuration details.*
 
 Alternate location(s):
 
@@ -64,7 +78,8 @@ Alternate location(s):
 
 ## Dialog
 
-View all active calls across the entire account.
++ View all active calls across the entire account.
++ Clicking on a Call ID REDIRECTS users to the Logging section.
 
 *See [**Dialogs**](https://docs.connexcs.com/customer/dialogs) for configuration details.*
 
@@ -174,7 +189,28 @@ This is helpful when callers obscure their CLI / FROM information, as the networ
 
 ## Direct Inward Dial
 
-View a list of all DIDs (Direct Inward Dialing) and configure and edit them.
+View a list of all DIDs (Direct Inward Dialing) and their statuses. You can also configure and edit them.
+
++ **DID Sections**
+
+  + **Assigned Numbers**: Displays all numbers assigned to customer accounts.
+  + **Inventory**: Lists unassigned numbers available for allocation.
+  + **Provisioning**: Allows provisioning of new numbers from external providers using Drivers.
+  + **Bulk Operations**:
+    + Bulk upload of numbers.
+    + Bulk editing capabilities.
+
++ **DID Drivers and Provisioning**:
+    + ConnexCS uses a driver system to integrate with external DID providers.
+    + Drivers act as a middleware layer between external DID systems and ConnexCS, enabling:
+        + Number lookup and purchase automation.
+        + Real-time number provisioning.
+        + Seamless integration with multiple DID providers (e.g., DIDX, DIDWW, VoxBone, etc.).
+
+  + **Call Flow Management**:
+    + Numbers are routed through multiple layers: **`Provider → ConnexCS → Customer`**.
+    + The system supports automatic destination updates for external providers.
+    + Bulk destination updates are available.
 
 *See [**DID**](https://docs.connexcs.com/customer/did) for configuration details, including Bulk Upload.*
 
@@ -192,7 +228,9 @@ Unlike the Customer DID section the Global DID sections groups numbers as follow
 
 ## IP Authentication
 
-View all configured IP Authentication.
++ View all configured IP Authentication across the system.
++ Search function enables lookup of an IP address at the customer level.
++ Identifies whether an IP belongs to both a carrier and a customer.
 
 *See [**IP Authentication**](https://docs.connexcs.com/customer/auth/#ip-authentication) for configuration details.*
 
@@ -205,6 +243,11 @@ Alternate location(s):
 
 View all Invoices, access basic invoice functions (such as date range, unit price, tax), and assign payments.
 
+**Features include**:
+
++ Invoice generation and download in PDF format.
++ Payment allocation to invoices.
+
 *See [**Invoices**](https://docs.connexcs.com/customer/invoices) for configuration details.*
 
 Alternate location(s):
@@ -213,7 +256,9 @@ Alternate location(s):
 
 ## Payment
 
-All Payments across the account.
++ Displays all payments made across customer accounts.
+
++ Allows tracking of test and live transactions.
 
 *See [**Payment**](https://docs.connexcs.com/customer/payment) for configuration details.*
 
@@ -227,27 +272,50 @@ View the current list of registered SIP users.
 
 *SIP Registration has no supplementary documentation or configuration options.*
 
-**Inbound Registrations**
+**Inbound SIP Registrations**
 
-View active registrations (live calls) of desk phones into ConnexCS.
+View all active SIP registrations (live calls) of desk phones into ConnexCS.
 
-* Username: Registered user.
-* IP: Current IP.
-* Protocol: The protocol from which it's registered.
-* NAT: Indicates that far-end NAT traversal has modified the entry.
-* TTL: Time since the request came in.
-* Send: Click `Message` to send a note (select several entries if required).
+* **Username:** Registered user.
+* **IP**: Current IP.
+* **Via**: The SIP Via header value used for transaction routing. This reflects the transport address and branch parameter added by the registering device or intermediary.
+* **Received**: The actual IP address and port observed by ConnexCS for the registration request.
+This is commonly populated when the Via header contains a private or non-routable address (e.g., behind NAT).
+* **Protocol**: The protocol from which it's registered (UDP, TCP, TLS).
+* **Socket**: The local ConnexCS socket (IP:port) on which the registration was received and is being maintained.
+* **NAT** status: Indicates that far-end NAT traversal has modified the entry.
+* **Contact**: The SIP `Contact` URI provided by the endpoint, indicating where incoming calls should be delivered.
+* **TTL**: It is the time to live of this registration.
+* **Last Modified**: Timestamp of the most recent successful REGISTER request that updated this registration entry.
+* **User Agent**: The SIP User-Agent string identifying the device, softphone, or PBX software (e.g., model, firmware, or client name).
+* **Expires**: The absolute expiration time (or remaining seconds) after which the registration will be removed if not renewed.
+* **Q**: The SIP `q` value (priority weight) associated with the contact. Used when multiple contacts are registered for the same user to determine call preference
+* **CSeq**: The SIP command sequence number from the last REGISTER request, used to ensure proper request ordering.
+* **Flags**: Internal ConnexCS registration flags indicating state, behaviour, or processing attributes.
+* **Path**: The SIP `Path` header values used for routing inbound requests through intermediate proxies when applicable.
+* **Methods**: The SIP methods supported by the registered endpoint as advertised during registration.
+* **SIP Instance**: The `+sip.instance` identifier (RFC 5626) that uniquely identifies the physical or logical SIP device across reboots or IP changes.
+* **KV Store**: Reference to the internal ConnexCS key-value store entry where this registration state and metadata are maintained.
+* **Attr**: Additional registration attributes or metadata associated with the endpoint, including internal tags, capabilities, or platform-specific extensions.
 
 **Outbound Registrations**
 
-View active registrations (live calls) from ConnexCS out.
+View active registrations (live calls) from ConnexCS external SIP endpoints.
 
-* ADR: The username and address the ConnexCS switch has connected with.
-* Expires: Time until expiry date.
-* State: Current call status.
-* Cx Server: Server responsible for the outbound connection.
-* Last Register Sent: When was the Last registration sent.
-* Register Timeout: Expected timeout of the call.
+* **AOR (Address of Record)**: The username and address the ConnexCS switch has connected with.
+* **Registrar**: The remote SIP registrar server to which ConnexCS sends REGISTER requests. Typically expressed as a hostname or IP address (and port, if non-default).
+* **Binding**: The active SIP contact binding created by ConnexCS on the remote registrar. This represents the contact URI where inbound requests from the registrar will be sent.  
+* **Expires**: Time until expiry date.
+* **State**: Current call status.
+* **Enabled**: Indicates whether this outbound registration is administratively enabled in ConnexCS. Disabled entries will not attempt to register or refresh.
+* **Proxy**: The outbound SIP proxy through which registration traffic is routed, if configured. This may differ from the registrar address.
+* **Destination IP**: The resolved destination IP address of the remote registrar or proxy currently in use.
+* **IP**: The source IP address used by ConnexCS when sending REGISTER requests to the remote endpoint.
+* **Cx Server**: Server responsible for the outbound connection.
+* **Last Register Sent**: When was the Last registration sent.
+* **Register Timeout**: Expected timeout of the call.
+
+!!! Info "These records are temporary and disappear when unregistered."
 
 !!! note "Global View Only"
     This section doesn't have a corresponding view from within individual Customers.
@@ -267,6 +335,8 @@ Alternate location(s):
 
 A transcription service translates voice communication, whether live or recorded, into text.
 
+*See [**Transcription**](https://docs.connexcs.com/transcription/) for configuration details.*
+
 * Customer :material-menu-right: [Customer Name] :material-menu-right: Transcription
 
 ## Weylon
@@ -276,7 +346,3 @@ A transcription service translates voice communication, whether live or recorded
 The Control Panel receives results for review.
 
 For setup information, see [**Remote Testing**](/guides/remote-testing) under Troubleshooting.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTMzMTIyMTIsMTczNjQxNTczMV19
--->
