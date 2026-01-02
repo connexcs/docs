@@ -14,8 +14,30 @@
 
 **Class 5 :material-menu-right: Apps**
 
+## Overview
+
 The ConnexCS **Apps** feature allows providers to create small, simple, drag-and-drop applications and [ConneXML applications](https://docs.connexcs.com/class5/connexml/).
 Some examples are Echo Tests, Conference, IVR setup.
+
+### Key Features
+
+* Simple interface for building call flows.
+
+* Includes text-to-speech functionality.
+
+* Allows playing of pre-recorded audio messages.
+
+* Supports IVR integration.
+
+* Configurable key inputs and validation.
+
+* Supports simple condition-based call routing.
+
+* Allows transferring calls to external numbers based on input.
+
+!!! question "Why use Apps?"
+    + Allows businesses to create custom call flows easily.
+    + Simplifies integration with IVR and other features.
 
 ## Build App
 
@@ -32,10 +54,6 @@ To create a new App:
 4. Click **`Save`**.
 
 <img src= "/class5/img/apps1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
-
-## Call Flow
-
-
 
 ## Advanced Applications
 

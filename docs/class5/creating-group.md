@@ -14,6 +14,8 @@
 
 **Class 5 :material-menu-right: Group**
 
+## Overview
+
 Use **Group** or **Call Queue** to construct a team of individuals to receive calls placed to a specified number or extension based on the routing strategy you configure.
 
 A **Group** in our system mapped to a **Queue** is exactly same as the FIFO (First In First Out).
@@ -21,6 +23,17 @@ A **Group** in our system mapped to a **Queue** is exactly same as the FIFO (Fir
 For example, create a number that customers can call that routes them to a team of Technical Support Specialists who can fix the technical issues with their laptops.
 
 For individual customers, navigate to **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Class5 :material-menu-right: Groups**
+
+### Key Features
+
++ Assign the group to a customer.
++ Specify an extension for group calls.
++ Allow external and internal numbers as group members.
+
+!!! question "Why use the Group feature?"
+    + Ensures quick response times by distributing calls efficiently.
+    + Reduces missed calls by routing to multiple agents.
+    + Allows businesses to manage call traffic effectively.
 
 ## Group call routing strategies
 
@@ -32,7 +45,7 @@ Rings a call to all members of the group simultaneously. The member's extensions
 
 You can assign unique timeout timers for individual members.
 
-**Note:** This rings all members, even if they're already on a call.
+!!! Note "This rings all members, even if they're already on a call."
 
 ```mermaid
 graph TD
@@ -96,6 +109,11 @@ style C fill:#ECEFF1,stroke:#C70039,stroke-width:2px
 style D fill:#ECEFF1,stroke:#C70039,stroke-width:2px
 style E fill:#ECEFF1,stroke:#16C440,stroke-width:2px
 ```
+
+!!! question "Why use Queue?"
+    + Enhances call handling for customer service teams.
+    + Reduces wait times and caller frustration.
+    + Automates call distribution for efficiency.
 
 ## Group planning
 
