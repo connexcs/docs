@@ -119,10 +119,10 @@ Here is the ConnexCS recommended setup for HA:
 2. Use the ConnexCS AnyEdge system.
 3. Setup DNS records with a domain such as `sip.mycompany.sip.direct` (TTL = 60 seconds).
 4. Set the ConnexCS DNS configuration to:
-   + 'A Record' pointing to AnyEdge
-   + 'SRV Primary' pointing to AnyEdge
-   + 'SRV Secondary' set under AnyEdge Mirroring
-   + Depending on whether your servers are manually configured, `SRV Tertiary` will record all or some of them.
+      + 'A Record' pointing to AnyEdge
+      + 'SRV Primary' pointing to AnyEdge
+      + 'SRV Secondary' set under AnyEdge Mirroring
+      + Depending on whether your servers are manually configured, `SRV Tertiary` will record all or some of them.
 
 5. Setup `sip.yourdomain.com` as a `CNAME` for `sip.mycompany.sip.direct` (TTL = 3600+)
 6. If you are deploying in multi-zones or larger in deployments, you can segment things further as needed.

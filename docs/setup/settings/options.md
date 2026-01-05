@@ -14,6 +14,8 @@
 
 **Setup :material-menu-right: Settings :material-menu-right: Options**
 
+## Overview
+
 Configure **Options** to set key default behaviors for the system. Click **`Edit`** to the right of a setting to revise it.
 
 This section outlines the various configurable options available in the **ConnexCS Customer Portal**.
@@ -47,7 +49,7 @@ These options allow you to customize the behavior, security, and display details
     ||**Benefit**: Allows early access to new features while balancing reliability.|
     |**Invoice Line Grouping**|Customizes how invoice lines are grouped when generating invoices (e.g., for the last seven days). The benefits include flexibility in invoice layout to match customer needs.|
     ||**Grouping Options**:<br>1. **Per Day**: Each line represents a day (e.g., Monday, Tuesday, etc.).</br><br>2. **Per Customer Destination**: Each line represents a specific destination (e.g., UK landline, India Mobile, India Talna, etc.).</br>|
-    |**Internal Number Range Start and Block Size**|Set the system-wide default start and range of private number blocks, which are then assigned to customers (per configuration instructions **[here](https://docs.connexcs.com/customer/main/#internal-number-block)**). For example, you can set the Start field to 1000, and the Size to 1000. The first number block assigned to a customer ranges from 1000–1999. The next customer receives the range 2000–2999, etc. IT allocates numbers in customizable blocks (e.g., 10 digits per customer or larger blocks as needed).|
+    |**Internal Number Range Start and Block Size**|Set the system-wide default start and range of private number blocks, which are then assigned to customers (per configuration instructions **[here](https://docs.connexcs.com/customer/main/#internal-number-block)**). For example, you can set the Start field to 1000, and the Size to 1000. The first number block assigned to a customer ranges from 1000–1999. The next customer receives the range 2000–2999, etc. It allocates numbers in customizable blocks (e.g., 10 digits per customer or larger blocks as needed).|
     |**Server Maximum Auth Failures**|The maximum number of authentication tries for a system. When a user tries more than this Max Auth limit authentication failure error occurs. Here, you can choose the number of times the failure can occur.|
     |**Auto Logout**|Automatically logs out users after a period of inactivity (typically five or ten minutes).<br>**Usage Note**: Not enabled by default but can be activated based on user preference.</br>|
     ||**Security Benefits**: Enhances system security by preventing unauthorized access when the user is idle.|
@@ -67,5 +69,6 @@ These options allow you to customize the behavior, security, and display details
     Click on the `Save` button to apply the changes to your account.
 
     <img src="/setup/img/siprewrite.png">
+
 
 !!! Note "Payment details and descriptions are solely for display purposes."

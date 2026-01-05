@@ -1,5 +1,8 @@
 # User
 
+!!! danger "Alpha Feature"
+    The Default Reseller feature is still an Alpha Feature in testing; please use it with caution.
+
 <details> <summary><strong>Document Metadata</strong></summary> <br>
 
 <strong>Category</strong>: Setup / Settings / Users<br>
@@ -24,11 +27,10 @@ Groups manage the Permissions, and at a Granular level for every endpoint in the
 
 ### Key Features
 
-+ User Management and Security:
-    + **Automatic User Creation**: Every login automatically creates a user entry with a full audit trail.
-    + **Audit Trail and Change Management**:  Changes to settings (e.g., credit adjustments, contract updates) are recorded.
-        + **Best Practice**:  Report any accidental changes immediately to ensure quick resolution.
-
++ **User Management and Security**:
+    + Automatic User Creation: Every login automatically creates a user entry with a full audit trail.
+    + Audit Trail and Change Management:  Changes to settings (e.g., credit adjustments, contract updates) are recorded.
+        + Best Practice:  Report any accidental changes immediately to ensure quick resolution.
 
 ## Users
 
@@ -48,10 +50,15 @@ To add a new ConnexCS **User**, click :material-plus: in the **Users** section o
     While a user can belong to multiple groups, managing a user with only one group is easier.
 
     **Custom Permissions**:
+
     + Additional permissions can be added to groups, including:
+
       + Analytics access.
+
       + Contracts (e.g., create and read but no updates).
+
       + CLI editing.
+
       + Payments (e.g., create/read without delete).
 
 **See details below on creating Groups**.
@@ -203,9 +210,6 @@ This feature allows you to create a quick default set of permissions suitable fo
 Click on the **`Create Default Reseller`** to create a new Reseller Group.
 
 You can create Multiple Reseller Groups and edit each group to match your business needs.  
-
-!!! warning "Alpha Feature"
-    The Default Reseller feature is still an Alpha Feature in testing; please use it with caution.
 
 [user]: /setup/img/user.png "Add User"
 [add-group-perm]: /setup/img/add-group-perm.png "Add Group Permissions"

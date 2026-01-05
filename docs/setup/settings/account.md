@@ -71,7 +71,7 @@ To add or edit SMTP information, click the blue pencil icon:
 &emsp;![alt text][smtp]
 
 !!! tip "TLS SMTP"
-    To use TLS SMTP, set the Server format as "mail.yourdomain.com:465."
+    To use TLS SMTP, set the Server format as `mail.yourdomain.com:465`.
 
     If not specified, the system will use the default SMTP port 25.
 

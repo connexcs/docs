@@ -235,12 +235,22 @@ When a user endpoint registers with UDP via NAT, it creates a port mapping. Thus
 2. **Server Array**: For multiple servers, decide whether users registered with *Server A* can call users on *Server B*. If so, set the **UAC Location Array Sharing** option (found under [**Server Config**](https://docs.connexcs.com/setup/settings/servers/#server-config)) for the servers that will make the registrations.
 3. **Server Cluster**: Servers in a cluster share all user location registrations. This is the best solution for scaling to thousands of registrations.
 
-    Recommendation: You won't be able to route calls to users registered against any servers outside the cluster.
+    **Recommendation**: You won't be able to route calls to users registered against any servers outside the cluster.
 
 !!! tip "Ping Overhead"
     Due to design constraints that occur with multiple servers in an array, NAT Keep Alive Pings can be quite intensive. You could use *Disable UAC Ping* from the server page, upgrade to a cluster, or use a single registration server to solve this.
 
     We can help with more intricate measures on a case-by-case basis.
+
+## APIBAN Integration
+
+APIBAN integration with ConnexCS is a third-party system provided by apiban.org.
+
+It automatically blocks malicious traffic to your servers.
+
+APIBAN proactively prevents unwanted SIP traffic by identifying and blocking IP addresses of known bad actors before they can target your system.
+
+These bad actors are identified through globally deployed honeypots and curated by APIBAN to ensure comprehensive protection.
 
 [rtpserver]: /setup/img/rtpservers.png "RTP Server"
 [server-update]: /setup/img/server-update.png "Update Server"
