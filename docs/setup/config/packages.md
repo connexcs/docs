@@ -32,7 +32,7 @@ Each package may include incentives for Monthly Recurring Charges (MRC) like Dir
 3. This calculates the customer spend for the billing period. It ensures customers meet a predefined spending threshold.
 
 !!! question "How it works?"
-    If the customer’s spend is below the set minimum at month’s end, an additional charge will be applied.If the customer’s spend is below the set minimum at month’s end, an additional charge will be applied.If the customer’s spend is below the set minimum at month’s end, an additional charge will be applied.-radius: 8px;">
+    If the customer’s spend is below the set minimum at month’s end, an additional charge will be applied.If the customer’s spend is below the set minimum at month’s end, an additional charge will be applied.If the customer’s spend is below the set minimum at month’s end, an additional charge will be applied.
 
 + **Name:** The name of the package.
 + **Cost:** The recurring price which you (the provider) pay for this package (based on Frequency set below).

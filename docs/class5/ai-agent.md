@@ -47,7 +47,7 @@ With AI-driven automation, businesses can enhance customer experience while sign
 3. Click on the blue `+` icon.
 <img src= "/class5/img/aiagent1.png">
 4. A window will open up where you can create your customizable AI Agent for your customers.
-<img src= "/class5/img/aiagent2_new.png">
+<img src= "/class5/img/aiagent2_new.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 5. Fill in the following fields to setup your AI Agent:
 
 === "Basic"
@@ -159,8 +159,8 @@ With AI-driven automation, businesses can enhance customer experience while sign
     **STIR/SHAKEN Compliance** – Secure, authenticated VoIP calls.  
     **Carrier-Grade SIP Switching** – High-volume global VoIP.  
     **Call Recording & Transcription** – Compliance & insights.  
-    **Anycast Load Balancing** – Prevents service disruptions.  
-
+    **Anycast Load Balancing** – Prevents service disruptions.
+    
     **Billing Plans:**  
     **Per Channel**: `$1`per channel/month  
     **Per Minute**: `$0.0003/min` (usage-based allocation)  

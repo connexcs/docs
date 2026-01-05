@@ -26,25 +26,25 @@ ConnexCS **Templates** use the mustash-compatible template language [**Handlebar
 ### Key Features
 
 + **Supports**:
-  + Sending emails
-  + Sending text messages
+    + Sending emails
+    + Sending text messages
 
 + **Utilizes CXREST API for system communication**:
 
-  + Create, delete, read, and update customer records.
+    + Create, delete, read, and update customer records.
 
 + **Template Literals & Variables**:
-  + Placeholders within the template (template literals/variables) are dynamically replaced with actual data.
+    + Placeholders within the template (template literals/variables) are dynamically replaced with actual data.
 
 + **Pre-Built Templates**:
 
-  + **Reset Password Template**: Provides a ready-to-use layout when customers reset their passwords.
-  + **Voicemail Notification**: A simple message indicating “you have a new voicemail.”
+    + **Reset Password Template**: Provides a ready-to-use layout when customers reset their passwords.
+    + **Voicemail Notification**: A simple message indicating “you have a new voicemail.”
 
 + **Customization**:
-  + Modify layouts and content to suit various use cases (e.g., complex scenarios like web phone interactions).
-  + Can be used to customize the customer control panel.
-  + Ability to create custom pages within the ConnexCS platform.
+    + Modify layouts and content to suit various use cases (e.g., complex scenarios like web phone interactions).
+    + Can be used to customize the customer control panel.
+    + Ability to create custom pages within the ConnexCS platform.
 
 ### Benefits
 
@@ -63,8 +63,8 @@ ConnexCS **Templates** use the mustash-compatible template language [**Handlebar
 
 + **Editable Alert Templates**:
 
-  + Modify the default alert appearance as needed.
-  + Supports multiple alert templates to cover different scenarios.
+    + Modify the default alert appearance as needed.
+    + Supports multiple alert templates to cover different scenarios.
 
 + **Adding New Templates**: You can add custom templates that don’t already exist.
 
@@ -72,9 +72,9 @@ ConnexCS **Templates** use the mustash-compatible template language [**Handlebar
 
 + **ScriptForge Integration**:
 
-  + **Custom Variables Injection**: Execute ScriptForge to inject custom variables into the global space.
+    + **Custom Variables Injection**: Execute ScriptForge to inject custom variables into the global space.
 
-!!! How it works?
+!!! question "How it works?"
     Although ScriptForge runs asynchronously (which might delay processing), its output is merged into the global space for synchronous template variable execution. This method bridges the gap between asynchronous processing (ScriptForge) and synchronous template variable replacement, ensuring seamless functionality.
 
 ## How to Add a Template
