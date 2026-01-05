@@ -14,6 +14,10 @@
 
 **Management :material-menu-right: Carrier :material-menu-right: CDR**
 
+## Overview
+
+The CDR tab displays call drop rates. Use `Recalc` CDR when CDR records aren't accurate.
+
 <img src= "/carrier/img/carriercdr.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 The **CDR (Call Detail Record)** is an extensive set of information that's collected and stored for each call.
@@ -70,7 +74,7 @@ See [**Customer CDR**](https://docs.connexcs.com/customer/cdr/#recalculate-call-
 
 Create advanced filters using any fields of the record. Select either Origination or Termination, or use the Query Builder to customize the data view.
 
-* Match Type: Select "All" or "Any" calls to match.
+* **Match Type**: Select "All" or "Any" calls to match.
 * Select the CDR field from the drop-down, then "Add Rule" to define parameters to match.
 * Select **Add Rule** to select extra fields and parameters to include in the custom query.
 * Use **Add Group** to group sets of queries into a series of groups, creating complex, compound, and multi-vector queries.
