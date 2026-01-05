@@ -36,10 +36,19 @@
 2. Carrier **SIP User Authentication** is only used to allow a carrier to connect to the system, not for outbound connections.
 [**Customer Auth**](https://docs.connexcs.com/customer/auth/) gives information on the field details.
 
+Used to route calls through a proxy before reaching the final carrier destination. Works similarly to an HTTP proxy but for SIP traffic.
+
+   + **Weights**: When the configuration of several switches takes place in IP Authentication, this field sets weighting to find which servers are most preferred, essentially doing outbound distribution to a single carrier, but through several gateways to that carrier.
+     + Allows traffic distribution between multiple carrier gateways.
+     + Useful for load balancing and traffic optimization.
+
+!!! Example
+    Assigning weights of 10 and 1 results in 10 out of 11 calls going to the first gateway and 1 out of 11 to the second.
+
 ## Key Features & Benefits
 
 + **Comprehensive Credit Management**: Helps track and manage carrier credit effectively.
-+ **Automated Failure Detection**: Identifies route failures without relying on manual monitoring
++ **Automated Failure Detection**: Identifies route failures without relying on manual monitoring.
 + **Flexible SIP Response Handling**: Customizes responses to ensure compatibility with different carriers.
 + **Enhanced Security & Authentication**: Supports multiple authentication methods for secure carrier interactions.
 + **Optimized Routing & Load Balancing**: Enables intelligent traffic distribution across carrier gateways.

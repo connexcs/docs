@@ -14,6 +14,8 @@
 
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Packages**
 
+## Overview
+
 Use **Packages** to offer predefined products and services to each customer.
 
 Packages allow customers to define  recurring charges, including spend limits and automatic credit deductions.
@@ -60,7 +62,7 @@ Packages allow customers to define  recurring charges, including spend limits an
 
 #### Assign Free Minutes Package
 
-1. Navigate to Management :material-menu-right: Customer :material-menu-right: Customer[Name] :material-menu-right: Packages :material-menu-right: Click on blue `+` icon
+1. Navigate to Management :material-menu-right: Customer :material-menu-right: Customer[Name] :material-menu-right: Packages :material-menu-right: Click on blue `+` icon.
 2. Select the Package created for allocating free minutes.
 3. Fill out the required fields.
 4. Enter the number of free minutes to be allocated to the customer.
@@ -77,4 +79,3 @@ It allows you to simulate making a charge against the package:
 3. **Date:** You can select the date on which you want to simulate the package.
 
 <img src= "/misc/img/runpackage.jpg" style="border: 2px solid #4472C4; border-radius: 8px;">
-

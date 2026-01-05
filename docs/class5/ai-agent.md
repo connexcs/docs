@@ -47,7 +47,7 @@ With AI-driven automation, businesses can enhance customer experience while sign
 3. Click on the blue `+` icon.
 <img src= "/class5/img/aiagent1.png">
 4. A window will open up where you can create your customizable AI Agent for your customers.
-<img src= "/class5/img/aiagent2.png">
+<img src= "/class5/img/aiagent2_new.png">
 5. Fill in the following fields to setup your AI Agent:
 
 === "Basic"
@@ -55,12 +55,11 @@ With AI-driven automation, businesses can enhance customer experience while sign
     + **Name**: Give a name to your AI Agent.
     + **Destination**: Enter the Extension for the callers to call (essentially, the dial-in number).
     + **Company**: Associate the AI Agent with a customer.
-    + **App**: Associate the AI Agent with the [Application](https://docs.connexcs.com/apps/architecture/app/) that you have created in the IDE.
     + **PBX Server**: Select the PBX Server from the drop-down.
     + **Platform**: Use either **ConnexCS Converse** or **ConnexCS Converse Direct** to model the AI Agent.
     + **Host**: It's the hosting server where your AI Agent runs and processes interactions.
     + Click `Save`.
-         <img src= "/class5/img/aiagent3new.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+         <img src= "/class5/img/aiagent3new1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 === "Model"
 
@@ -111,6 +110,7 @@ With AI-driven automation, businesses can enhance customer experience while sign
 
 === "Advanced"
 
+    + **App**: Associate the AI Agent with the Application that you have created in the IDE.
     + **Built-in Functions**:
         + **Hangup**: Use this flag to terminate the call. You can include a prompt such as, "When call ended, hangup.
         + **Set Variable**: Set variables locally. For example, in a prompt, you could ask, "What's your name?" and save the response to the variable `name`.
@@ -142,7 +142,7 @@ With AI-driven automation, businesses can enhance customer experience while sign
     + **Vars**<sup>TOML</sup>:  Select the variables you want pass into the ScriptForge script.
     
     + Click `Save`.
-        <img src= "/class5/img/aiagent7new17new.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+        <img src= "/class5/img/aiagent7_new.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Example "Example Prompt"
     **Introduction:**  

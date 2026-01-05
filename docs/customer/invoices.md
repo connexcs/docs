@@ -14,6 +14,8 @@
 
 **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Invoice**
 
+## Overview
+
 The invoice system allows for seamless customer billing and payment tracking.
 
 The tool is another way to end gaps in communication between providers and customers.
@@ -55,7 +57,7 @@ To download a PDF version of an Invoice, select ![alt text][invoice-pdf].
 Click ![alt text][invoice-edit] to change the date, then click **`Edit Invoice Item`** to revise additional parameters.
 
 !!! note "Invoice Line Grouping"
-    Use Invoice Line Grouping to group the invoice based on the destination or day. You can set this in **My Account** > **Settings**.
+    Use Invoice Line Grouping to group the invoice based on the destination or day. You can set this in **My Account** :material-menu-right: **Settings**.
 
 ## Download Invoices
 
