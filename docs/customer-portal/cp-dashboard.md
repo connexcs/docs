@@ -48,7 +48,7 @@ To setup, click your name in the upper right corner and select `My Profile`. You
 
      To configure this on ConnexCS, click `Enable` and follow prompts for QR code. You must install a 2FA/TFA app on your phone.
 
-<img src= "/customer-portal/img/profile1.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/customer-portal/img/profile1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Graphs
 
