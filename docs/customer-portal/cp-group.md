@@ -16,10 +16,22 @@
 
 A **Group** allows you to create a team of individuals to receive calls placed to a specified number or extension based on the routing strategy you configure.
 
-For example, create a number that customers can call that routes them to a team of Technical Support Specialists who can fix the technical issues or to a Sales group.of
+For example, create a number that customers can call that routes them to a team of Technical Support Specialists who can fix the technical issues.
 
 + **Name:** Enter the name of the group (for example, Sale, Customer Support, Office, or Garage).
 + **Extension:** The number / extension callers use to connect to this group.
+
+### Key Features
+
+1. Assign the group to a customer.
+2. Specify an extension for group calls.
+3. Configure timeouts to prevent voicemail interruptions.
+4. Allow external and internal numbers as group members.
+
+!!! question "Why use the Group feature?"
+    + Ensures quick response times by distributing calls efficiently.
+    + Reduces missed calls by routing to multiple agents.
+    + Allows businesses to manage call traffic effectively.
 
 For detailed information on Groups and their types, please [click here](https://docs.connexcs.com/class5/creating-group/).
 
@@ -28,7 +40,7 @@ For detailed information on Groups and their types, please [click here](https://
 Click on the Group name, then click **`Edit`** to revise the following:
 
 + **Name:** The Group Name. You can mention the group name for easy reference.
-+ **Extensions:** Not available for editing; please contact support.
++ **Extensions:** *Not available for editing; please contact support*.
 + **Group Type:** Each Group type uses a different routing strategy to determine how the calls route to the specified members.
     + **Parallel(Hunt Groups):** Rings a call to all members of the group simultaneously. The members' extensions ring for the length of time specified. Individual members can have unique timeout timers.
 
