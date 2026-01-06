@@ -26,15 +26,15 @@ The Dashboard provides a real-time overview of `Balance`, `Channels`, and key sy
 
 ![alt text][cp-dash]
 
-+ **Checklist** A Quick view of the outstanding Alerts on the account. Upon initial setup, verification of email and mobile for the account made through Alerts, and a reminder is put across to create customers and setup carriers.
++ **Checklist**: A Quick view of the outstanding Alerts on the account. Upon initial setup, verification of email and mobile for the account made through Alerts, and a reminder is put across to create customers and setup carriers.
 
-+ **Time Zone** Click on the Date/Time box to select the Time Zone for your site.
++ **Time Zone**: Click on the Date/Time box to select the Time Zone for your site.
 
-+ **Channel Count** Total Live Channels presently in use and total configured Channels.
++ **Channel Count**: Total Live Channels presently in use and total configured Channels.
 
-+ **Balance** Displays the current account balance and a link to make a payment using a credit card or PayPal. [Click here](https://docs.connexcs.com/customer-portal/cp-payment/) to know more about **Payments**.
++ **Balance**: Displays the current account balance and a link to make a payment using a credit card or PayPal. [Click here](https://docs.connexcs.com/customer-portal/cp-payment/) to know more about **Payments**.
 
-+ **Account** Use this to view your Company Profile, view and update your personal Profile, Change Password or Language, or Log Out.
++ **Account**: Use this to view your Company Profile, view and update your personal Profile, Change Password or Language, or Log Out.
 
 ### Setup Personal Profile
 
@@ -44,9 +44,9 @@ To setup, click your name in the upper right corner and select `My Profile`. You
 
 2. **My Profile**: View account details such as Name, Email, Department, Phone, and Mobile. <br>You can only edit the Name, Phone, and Mobile fields. To change email or name, contact ConnexCS Support.</br>
 
-**Two Factor Authentication**: This adds additional security against password guessing and theft, including brute force attacks (details [**here**](https://www.ncsc.gov.uk/guidance/multi-factor-authentication-online-services)).
+     **Two Factor Authentication**: This adds additional security against password guessing and theft, including brute force attacks (details [**here**](https://www.ncsc.gov.uk/guidance/multi-factor-authentication-online-services)).
 
-To configure this on ConnexCS, click `Enable` and follow prompts for QR code. You must install a 2FA/TFA app on your phone.
+     To configure this on ConnexCS, click `Enable` and follow prompts for QR code. You must install a 2FA/TFA app on your phone.
 
 <img src= "/customer-portal/img/profile1.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
 
