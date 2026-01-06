@@ -12,23 +12,38 @@
 
 </details>
 
+## Overview
+
 The **Breakout** report lists account customers with the following:
 
 * associated profits, and
 * relevant data such as cost per customer, amount billed, Aggregation Services Router (ASR), and Automatic Call Distribution Service (ACD).
+* use the Columns and Filters to manage data presentation. Enable Pivot Mode (check box at the top of Columns) to setup Row Groups and Values for additional report customization.
 
-    The information here is from a processed Call Detail Record (CDR) and is thus considered "billing accurate." You can use this data to bill your customers.
- 
- Use the **`Date`** and **`Select Destination`** fields at the top of the page to filter results.
+The information here is from a processed Call Detail Record (CDR) and is thus considered "billing accurate." You can use this data to bill your customers.
 
- The **Select Destination** allows you to filter out the calls made to a particular destination.
+Toggle **Group Destination** to show calls based on the destination number.
+
+Use the **`Date`** and **`Select Destination`** fields at the top of the page to filter results.
+
+The **Select Destination** allows you to filter out the calls made to a particular destination.
+
+### Benefits
+
++ Helps in identifying profitability per customer.
++ Provides granular visibility into call routing and carrier distribution.
++ Enables better cost management by optimizing carrier selection
 
 ## Manage Displayed Fields
 
 The Columns display data for each call
 
 |Column|Description |
-|:------------|:-------------------------------------------------|
+|:-----|------------|
+|**Group**|The displayed data hierarchy is determined by the configuration set under the "Row Groups" section|
+|**Call Time**|When a call hits our switch, when we receive an INVITE from customer server|
+|**Customer**|Your customer|
+|**Customer Destination Name**|Refers to the endpoint to which calls are ultimately routed for termination|
 |**Destination**|The destination number of the call|
 |**Attempts**|The number of retries|
 |**Connected**|Final status of the call|
