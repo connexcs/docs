@@ -45,7 +45,7 @@ To add a new payment, select **`Make Payment`**.
 
 **Paynamics** is a payment application that enables transactions in **Philippine currency** through multiple supported gateways.
 
-<img src= "/customer-portal/img/paynamics.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "docs/customer-portal/img/paynamics1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 1. **Pay via**: Choose from various payment gateways from the drop-down menu.
 2. Enter the **Amount**.
