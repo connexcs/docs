@@ -160,6 +160,11 @@
 |**Guard Rails**|n/a|In AI, guardrails are rules or constraints that guide the model’s behavior to ensure safe, reliable, and context-appropriate outputs.|
 |**LATA**| *Local Access and Transport Area*|Calls rated based on Local Access and Transport Area boundaries.|
 |**RC**|*Rate Center*|The specific geographic rate center in the U.S. tied to the prefix.|
+|**JWT**|*Json Web Tokens*|Securely transmits information between client and server.|
+|**Refresh Tokens**|n/a|Ensure seamless user sessions while improving security.|
+|**Token Hash**| A unique identifier for the JWT, helping track and manage tokens securely.|
+|**JTI (JWT ID)**| Its a unique identifier for each JWT, ensuring that each token is distinguishable and can be tracked or revoked individually|
+
 
 ## ACD Calculation Method
 
