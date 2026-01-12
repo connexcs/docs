@@ -18,10 +18,6 @@ Each server is uniquely configured, offering extensive customization to ensure o
 
 + **Efficient Resource Management**: Stateless server design allows quick re-imaging and rapid recovery from issues.
 
-+ **Optimized Data Handling**: Local processing of CDR data reduces latency and mitigates the risk of global network bottlenecks.
-
-+ **Simplified Troubleshooting**: Rather than relying on restarts, the ability to re-image ensures that servers always operate from a consistent state.
-
 ### Server Listing & Monitoring
 
 1. **Unique IP Addresses**: Every deployed server has its own unique IP address.
@@ -33,11 +29,7 @@ A successful ping shows connectivity; a cross icon indicates a failed ping (refr
 
 + **Clusters**: Putting multiple servers together if in a load-balancing configuration. [Click here to know more](https://docs.connexcs.com/setup/settings/servers/#clusters)
 
-+ **Aliases**:
-    + Unique names assigned per server.
-    + Utilized for managing channel limits and various server configurations.
-    + Displays test phase expiry information.
-    + Indicates server status (active, expired, or inactive) based on customer credit.
++ **Aliases**: Unique names assigned per server.
 
 ## Deploy a Server
 
@@ -90,26 +82,10 @@ Although you can technically create as many clusters as needed, in most real-lif
 
 !!! question "When to use the Cluster feature?"
     1. If you have multiple servers in a load-balancing configuration, we recommend putting them into a Cluster.
-    2. Clusters combine servers to enforce limits (such as calls per second or channels) consistently across the system.
-    3. They enable coordinated handling of traffic and resource sharing between different zones (e.g., US and UK).
-
-### Key Benefits and Features
-
-+ **Consistent Rate Limiting**: Its used to control the number of requests that can be made to a system within a given time frame. It ensures that the rate limiting is applied consistently across all servers or nodes in a distributed system. The goal is to prevent any single user from exceeding their allowed rate, even if they distribute their requests across multiple servers.
+    2. They enable coordinated handling of traffic between different servers.
 
 !!! Example "Customer Example"
     If customer Joe is allowed 10 calls per second, without clustering, Server A and Server B would each permit 10 calls per second, potentially doubling the limit to 20 CPS if both servers are used. **This would violate the intended rate limit of 10 CPS for Joe**.
-
-+ **Upstream Carrier Management**: Similarly, upstream carriers that are limited to 10 CPS might inadvertently receive 20 CPS if traffic isn't synchronized.
-
-+ **Shared Resources**:
-
-    + **Channels**: Clusters share channels across servers, ensuring a unified channel limitation.
-
-    + **User Location Information**: Registration data and user location information are shared among servers within the cluster, facilitating seamless call routing.
-    
-    + **Zone Flexibility**: You can set up different clusters for different geographical zones (e.g., one for the US and another for the UK) and even allow cross-communication between them if required.
-
 
 To create a **Cluster**, click **`Cluster`**, and then click **:material-plus:** to enter the name.
 
@@ -121,26 +97,6 @@ When you deploy a new server, there is an option to select one of the configured
     2. **Shared User Location Information:** Un-Clustered servers will have difficulty sharing registration information. It's possible to select "UAC Location Sharing" for each of the un-clustered servers to share this information.
 
         But, this isn't recommended as it requires supplementary  communications (and increases overhead) for each server to connect to the User Account Control (UAC) every second to check for new/changed registrations.
-
-### Considerations and Best Practices
-
-1. **Network Topology**: Every server in a cluster communicates with every other server, forming a mesh network.
-
-2. **Scalability**: As the cluster grows, the number of connections increases significantly. Monitor the network load and manage cluster size accordingly.
-
-3. **User Registration Sharing (for non-clustered servers)**: 
-    + **Default Behavior**:
-        + In a single server setup, registration data is stored locally.
-        + With multiple servers that aren't clustered, registration information isn't shared, leading to potential call routing issues.
-   + **Redis Integration**: An option is available to share the user registration table across servers via Redis (by ticking the UAC location array sharing).
-
-    !!! note "Performance Note"
-        When enabled, servers will query the Redis server every second regardless of traffic volume, which can introduce additional load.
-
-4. **Recommendation**:
-
-      + To avoid the constant overhead of Redis checks, either maintain a single server or use a clustered setup.
-      + If you must use separate clusters and require cross-communication, enabling user location sharing remains a viable option.
 
 ## Real-Time Transport Protocol Servers
 
@@ -218,8 +174,6 @@ For example, if the CPS or Channels limits have reached, capacity failover will 
 
 + **Auto Upgrade:** When your server is ready for an upgrade, select this box to allow it to perform when your server is at zero channels.
     + System automatically applies updates during periods of no traffic.
-    + Updates are applied after taking the server offline briefly.
-    + Typically enabled by default (except on testing/demo accounts).
   
 + **UAC Ping & Performance**
     + **Purpose**: Maintains NAT mappings on firewalls using periodic pings.
@@ -285,7 +239,6 @@ Select certificates to apply to a server.
 **Certificate Provisioning**:
 
 + Certificates are provided **free of charge**.
-+ Must be issued by **Let’s Encrypt**.
 + Provisioning is handled by ConnexCS (sometimes requires manual intervention).
 
 <img src= "/setup/img/server1.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;">
@@ -323,7 +276,6 @@ Click **`Actions`** to open the **Server Actions Menu**. The following actions a
 
 + Servers are deployed using consistent images.
 + Minimal state retention (no CDR data, persistent databases, or direct user interface access).
-+ Facilitates rapid re-imaging when issues occur, following the "cattle, not pets" approach.
 
 ### Resize Capacity
 
@@ -331,12 +283,6 @@ Use this to update the Channels for the selected server. The update will be acti
 
 !!! warning "Impact on services"
     If you increase Channels to 1001 or more, the server will reboot as soon as you click **`Save`**. All calls will stop, and the server can take up to 10 minutes to finish rebooting and begin services again.
-
-**Channel Limit Management:**
-
-+ Customers can adjust the number of channels on a server.
-+ Increasing capacity past certain thresholds (e.g., moving from 999 to 1000 channels) may require a server stop and restart.
-+ Interface notes indicate that threshold display should ideally begin at 1001 channels.
 
 ### Run Server Update
 
