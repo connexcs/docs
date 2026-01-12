@@ -26,6 +26,4 @@ Use the **Payments** view to manage payments to ConnexCS and other related funct
 
 5. **Invoices:** Displays a list of all invoices associated with the account.
 
-&emsp;![alt text][payments]
-
-[payments]: /setup/img/payments.png "Payment Screen"
+<img src="/setup/img/paymentcards.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;">

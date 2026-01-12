@@ -1,7 +1,7 @@
 # Delay Log
 **Setup :material-menu-right: Information :material-menu-right: Delay Log**
 
-The **Delay Log** shows all the save-events that are delayed and when they are expected to execute. These events are created when you use the **`Delay Save`** option when saving settings. 
+The **Delay Log** shows all the save-events that are delayed and when they are expected to execute. These events are created when you use the **`Delay Save`** option when saving settings.
 
 ## Save Options
 
