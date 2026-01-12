@@ -24,21 +24,7 @@ Use the **Payments** view to manage payments to ConnexCS and other related funct
 
 4. **Make Payment:** Users can make a new payment by selecting the relevant option **Credit Card/PayPal**.
 
-5. **Invoices:**
-      + Displays a list of all invoices associated with the account.
-      + If no invoices appear, it may indicate an issue (to be resolved by ConnexCS support).
-
-### Benefits
-
-+ **User Control**: Users can manage certain aspects of their profile without admin intervention.
-
-+ **Secure & Flexible Billing**: Prevents billing exploits while offering a structured change policy.
-
-+ **Easy Payment Management**: Enables seamless transactions with multiple payment options.
-
-+ **Enhanced Security**: Stored payment details can be removed at the user’s discretion.
-
-+ **Comprehensive Service Agreement**: Provides clarity on ConnexCS services and policies.
+5. **Invoices:** Displays a list of all invoices associated with the account.
 
 &emsp;![alt text][payments]
 

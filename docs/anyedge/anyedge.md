@@ -20,7 +20,6 @@ It provides high-reliability and custom Call Distribution algorithms (Weights an
 
 + **Global Load Balancing**: Routes calls intelligently based on region and performance.
 + **Failover Protection**: Ensures seamless call routing in case of outages.
-**Auto-Scaling**: Dynamically adjusts resources based on demand.
 + **Optimized Call Distribution**: Distributes traffic efficiently to reduce latency.
 + **Flexible Configuration**: Supports various routing policies and priority settings.
 
@@ -28,8 +27,6 @@ It provides high-reliability and custom Call Distribution algorithms (Weights an
 
 + **Improved Redundancy**: Avoids downtime by automatically rerouting calls.
 + **Optimized Call Routing**: Ensures better call quality and lower latency.
-+ **Cost Efficiency**: Uses LCR to minimize operational costs.
-+ **Scalability**: Adapts to traffic spikes dynamically.
 
 ## AnyEdge Setup
 
