@@ -27,9 +27,9 @@ A successful ping shows connectivity; a cross icon indicates a failed ping (refr
 
 3. **Server Clusters & Aliases**:
 
-   + **Clusters**: Putting multiple servers together if in a load-balancing configuration. [Click here to know more](https://docs.connexcs.com/setup/settings/servers/#clusters)
+      + **Clusters**: Putting multiple servers together if in a load-balancing configuration. [Click here to know more](https://docs.connexcs.com/setup/settings/servers/#clusters)
 
-   + **Aliases**: Unique names assigned per server.
+      + **Aliases**: Unique names assigned per server.
 
 ## Deploy a Server
 
