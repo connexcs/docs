@@ -163,7 +163,7 @@
 |**JWT**|*JSON Web Tokens*|It ensures verifiability of a payload.|
 |**Refresh Tokens**|n/a|Ensure seamless user sessions while improving security.|
 |**Token Hash**|n/a|A unique identifier for the JWT, helping track and manage tokens securely.|
-|**JTI**|*JWT ID*|Its a unique identifier for each JWT, ensuring that each token is distinguishable and can be tracked or revoked individually|
+|**JTI**|*JWT ID*|It's a unique identifier for each JWT, ensuring that each token is distinguishable and can be tracked or revoked individually.|
 |**TPS**|*Telephone Preference Service*|UK national opt-out register for consumers who do not wish to receive unsolicited marketing calls.|
 |**DMA**|*Direct Marketing Association*|DMA in the UK is the leading trade body for the data and marketing industry.|
 |**ICO**|*Information Commissioner's Office*|UK's independent authority upholding information rights, enforcing data protection (like GDPR) and Freedom of Information laws, investigating breaches, issuing fines, and ensuring data privacy and public openness for individuals and organizations.|
