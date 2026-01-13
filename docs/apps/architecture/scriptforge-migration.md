@@ -422,7 +422,7 @@ async function main() {
 **Export**
 
 ```js
-// get_customer_record.js
+// get_customer_record
 export function getCustomerRecord() {
   // your logic here
 }
@@ -431,7 +431,7 @@ export function getCustomerRecord() {
 **Import**
 
 ```js
-import { getCustomerRecord } from './get_customer_record.js';
+import { getCustomerRecord } from './get_customer_record';
 
 export async function main() {
   return getCustomerRecord();
