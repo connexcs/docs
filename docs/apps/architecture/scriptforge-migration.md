@@ -439,11 +439,10 @@ export async function main() {
 ```
 
 **Changes Required**:
-- **Add the `export` keyword** in the fucntion.
 
- Replace `require` with `import` and use './' in starting of file name - Use ES module `import` instead of require.
-
-- Remove `module.exports` and export functions directly.
+* **Add the `export` keyword** in the fucntion.
+* Replace `require` with `import` and use './' in starting of file name - Use ES module `import` instead of require.
+* Remove `module.exports` and export functions directly.
 
 > Notes
 > - These patterns focus on the most common migration changes: switching to ES module imports, adding `export` to entry functions, and initializing services inside the function (instead of receiving context objects).<br>
