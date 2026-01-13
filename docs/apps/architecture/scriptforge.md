@@ -12,24 +12,4 @@
 
 </details>
 
-## Introduction
-
-**ScriptForge** is a powerful scripting engine that allows users to extend and customize the functionality of ConnexCS.
-
-It provides a JavaScript-based environment where users can develop scripts and applications.
-
-Use ConnexCS **ScriptForge** to write ECMAScript 2015 (ES6) (aka JavaScript) and execute it in a secure sandbox on the server. It's designed to have low latency and high throughput.
-
-It's made for scripts and small applications. Any larger applications are best executed on external hardware through ScriptForge.
-
-A fair-usage policy applies, and if there is unnecessary resource use or if there are any attempts to break the sandbox, your script may not function as expected.
-
-It's designed to work as **FaaS** (Functions as a Service), and our redundant infrastructure handles your application's auto scaling needs.
-
-## ScriptForge as FaaS (Functions-as-a-Service)
-
-ScriptForge operates as a **FaaS (Functions-as-a-Service)** platform within ConnexCS. This means scripts are executed on-demand in a secure, auto‑scaling, server-side environment. Each execution runs in an isolated sandbox, ensuring low latency, high throughput, and efficient resource usage.
-
-This FaaS model aligns ScriptForge closely with modern serverless architectures, enabling developers to extend ConnexCS functionality without managing servers or runtime environments.
-
 {{ external_markdown('https://cdn.cnxcdn.com/scriptforge-api-docs/api/README.md', '') }}
