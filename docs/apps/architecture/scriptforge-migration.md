@@ -465,17 +465,8 @@ Click on `Edit Changes` if you notice anything incorrect or unexpected in your c
 
 An **AI Assistant** chat window will appear with the following options:
 
-+ **Add context**: Lets you provide additional information (text or files) to give more background to the system or AI.
++ **Add context**: Lets you provide additional information to give more background to the AI.
 This context is used to generate more accurate, relevant, and informed responses without changing the main content.
-
-+ **Tools** are built-in functions you can call while working in ConnexCS to perform specific tasks automatically.
-
-    Tools help automate actions, reduce manual effort, and improve accuracy while working in the interface.
-
-    !!! Example "Examples"
-        * **get_current_time** – Returns the current date and time.
-        * **calculator** – Performs basic mathematical calculations.
-        * **retrieve_scriptforge_code** – Fetches the current ScriptForge code for review or modification.
 
 + **Mode**: Select `Standard` for quicker results or `Expert` for more in-depth analysis.
 
