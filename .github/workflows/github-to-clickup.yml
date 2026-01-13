@@ -11,6 +11,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Sync placeholder
+      - name: Create ClickUp task when issue is opened
+        if: github.event.action == 'opened'
         run: |
-          echo "GitHub Issue event detected"
+          curl -X POST https://api.clickup.com/api/v2/list/${{ secrets.CLICKUP_LIST_ID }}/task \
+          -H "Authorization: ${{ secrets.CLICKUP_API_TOKEN }}" \
+          -H "Content-Type: application/json" \
+          -d '{
+            "name": "'"${{ github.event.issue.title }}"'",
+            "description": "'"${{ github.event.issue.body }}"'",
+            "custom_fields": [
+              {
+                "name": "GitHub Issue ID",
+                "value": "'"${{ github.event.issue.number }}"'"
+              }
+            ]
+          }'
