@@ -12,7 +12,9 @@
 
 </details>
 
-All **Termination Routes** or **Outbound Calls** can be viewed. You can also access the **Rate Card** associated with **Termination Routes**."
+## Overview
+
+All **Termination Routes** or **Outbound Calls** can be viewed. You can also access the **Rate Card** associated with **Termination Routes**.
 
 ## Edit a Route
 
@@ -31,7 +33,7 @@ Click on either the Route **`Name`** or **`Prefix`** to view and change the foll
 
     If the BYE message goes missing, the call will continue forever. Max Duration is a method for setting up Missing BYE Protection.
     
-    Another method is to usel a Session Initiation Protocol (SIP) Ping to find when the connection has timed out.
+    Another method is to use a Session Initiation Protocol (SIP) Ping to find when the connection has timed out.
     
     See **SIP Ping** below.
 
@@ -44,11 +46,11 @@ Click on either the Route **`Name`** or **`Prefix`** to view and change the foll
     The call gets terminated if it doesn't receive back, or told that the conversation isn't active.
 
     |Option| Result|
-    |--------------------------------|:--------------------------------------------------|
-    | **Disabled**| No SIP pings sent.|
-    | **Enabled (Both Sides)**| SIP pings sent in both directions.|
-    | **Enabled (Downstream Only)**| SIP Pings sent towards where the call is FROM (originated).|
-    | **Enabled (Upstream Only)**| SIP Pings sent towards where the call is TO (terminated).|
+    |------|-------|
+    | **Disabled**|No SIP pings sent|
+    | **Enabled (Both Sides)**|SIP pings sent in both directions|
+    | **Enabled (Downstream Only)**|SIP Pings sent towards where the call is FROM (originated)|
+    | **Enabled (Upstream Only)**|SIP Pings sent towards where the call is TO (terminated)|
 
 !!! warning "Asterisk pings"
      By default, Asterisk doesn't have SIP Ping (OPTIONS) enabled.
@@ -87,6 +89,8 @@ Select this option to view prefix and billing details:
     |**35 sec**|met|6|36 sec|
     |**36 sec**|met|6|36 sec|
     |**37 sec**|met|6|42 sec|
+
++ **Rate Connect**: One-time (per call) charge for connecting the call, triggered upon SIP 200OK and ACK.
 
 ## Card Info
 
