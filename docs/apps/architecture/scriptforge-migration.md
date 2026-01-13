@@ -400,7 +400,7 @@ export async function main() {
 **Previous  syntax to export function**
 
 ```js
-// get_customer_record.js
+// get_customer_record
 function getCustomerRecord() {
   // your logic here
 }
