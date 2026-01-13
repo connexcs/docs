@@ -160,7 +160,7 @@
 |**Guard Rails**|n/a|In AI, guardrails are rules or constraints that guide the model’s behavior to ensure safe, reliable, and context-appropriate outputs.|
 |**LATA**| *Local Access and Transport Area*|Calls rated based on Local Access and Transport Area boundaries.|
 |**RC**|*Rate Center*|The specific geographic rate center in the U.S. tied to the prefix.|
-|**JWT**|*Json Web Tokens*|Securely transmits information between client and server.|
+|**JWT**|*JSON Web Tokens*|It ensures verifiability of a payload.|
 |**Refresh Tokens**|n/a|Ensure seamless user sessions while improving security.|
 |**Token Hash**|n/a|A unique identifier for the JWT, helping track and manage tokens securely.|
 |**JTI**|*JWT ID*|Its a unique identifier for each JWT, ensuring that each token is distinguishable and can be tracked or revoked individually|
@@ -168,7 +168,7 @@
 |**DMA**|*Direct Marketing Association*|DMA in the UK is the leading trade body for the data and marketing industry.|
 |**ICO**|*Information Commissioner's Office*|UK's independent authority upholding information rights, enforcing data protection (like GDPR) and Freedom of Information laws, investigating breaches, issuing fines, and ensuring data privacy and public openness for individuals and organizations.|
 |**DCM**|*Document Content Module*|DCM uses $ placeholders in ConnexCS Page Builder that are replaced with real data to personalize pages dynamically.|
-|** USA NANPA**|*North American Numbering Plan Administrator*|Manages area codes and prefixes for the U.S., Canada, and parts of the Caribbean under FCC oversight.|
+|**USA NANPA**|*North American Numbering Plan Administrator*|Manages area codes and prefixes for the U.S., Canada, and parts of the Caribbean under FCC oversight.|
 
 
 ## ACD Calculation Method
