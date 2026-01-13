@@ -1,4 +1,4 @@
-# ScriptForge (F-A-A-S)
+# ScriptForge (FaaS)
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>
 
@@ -31,135 +31,6 @@ It's designed to work as **FaaS** (Functions as a Service), and our redundant in
 ScriptForge operates as a **FaaS (Functions-as-a-Service)** platform within ConnexCS. This means scripts are executed on-demand in a secure, auto‑scaling, server-side environment. Each execution runs in an isolated sandbox, ensuring low latency, high throughput, and efficient resource usage.
 
 This FaaS model aligns ScriptForge closely with modern serverless architectures, enabling developers to extend ConnexCS functionality without managing servers or runtime environments.
-
-## Developer Documentation
-
-ConnexCS offers several libraries specifically for use with ConnexCS. Developer API Documentation is available here : <https://api-docs.connexcs.com/>
-
-### Available Modules
-
-You can include some more modules (from npm), available for applications and drivers only.
-
-The purpose is to keep the sandbox lightweight and include only the necessary modules:
-
-|Modules||||
-|-------|-|-|-|
-|**axios**|axios-cookiejar-support|card-validator|csv-parse/lib/sync|
-|**data-forge**|decompress-zip|elasticemail-webapiclient|fast-csv|
-|**fast-toml**|ftp|helpscout-2.0|moment|
-|**rss-parser**|soap|stripe|tough-cookie|
-
-### Sample Scripts
-
-You can find sample scripts in our GitHub repository > [**example applications**](https://github.com/connexcs/scriptforge-examples/). Below is a list of some use cases. But with a Turing Complete language, the possibilities are endless.
-
-* Do Not Call Lists
-* Custom Fraud Detection
-* Internal Automation
-* Capture and process the Control Panel and Customer Portal forms
-* Inbound and Outbound Call Filtering
-* Class 5 Programmable Voice Applications
-* DID Drivers
-* Time of Day Restrictions
-
-## Coding Basics
-
-Scripts and Apps typically start in the `main()` function and expect to return a promise. The first parameter is typically an object called `data`.
-
-### Creating a Basic Script
-
-This script takes an input variable name and returns a greeting message.
-
-```js
-function main(vars) {
-    return "Hello, " + vars.name;
-}
-```
-
-### Throwing Errors (Class 4)
-
-Follow the following format; [SIP code] :space: [Error Message], for throwing errors.
-
-**For example**, to throw a 404 Not Found, you can use the following
-
-``` js linenums="1"
-throw new Error('404 Not Found');
-```
-
-*(**SIP:** Session Initiation Protocol, **DID:** Direct Inward Dialing)
-
-### Class 4 Routing (Routes and Direct Inward Dial)
-
-After the routing engine has executed its main function, the system will run the custom ScriptForge script.
-
-This presents data as the output to the routing engine and expects the same object structure.
-
-``` js linenums="1"
-function main (data = {}) {
- // data.routing contains the same data you will find in the Logs
- // in the Raw Data Section
- return data;
-}
-```
-
-### Class 5 Programmable Voice
-
-You can use Programmable Voice to write smart voice applications controlled in modern JavaScript.
-
-The call and the Programmable Voice script are both executed simultaneously, simplifying the entire process. This means that (for example) you would initially run an `await answer()`, it would not progress to the next line until the platform has finished executing the operation.
-
-See the [**ConnexCS ScriptForge documents**](https://scriptforge-docs.connexcs.com/ctx.html) for more JavaScript examples.
-
-Second parameter is a ctx object
-
-``` js linenums="1"
-function main (data = {}, ctx) {
- // ctx contains class 5 ctx object 
-}
-```
-
-!!! warning "Potential Sync Issues"
-    To avoid the system losing synchronisation with your script and the connection crashing, execute ALL async functions with `await`.
-	If it isn't implemented correctly, it affects that billing and call stability.
-
-### Form Submission
-
-Used to receive data from Form Builder in ConnexCS.
-
-You can view it in the control panel or customer portal.
-
-``` js linenums="1"
-function main (data = {}) {
- // data contains object containing key/value pairs from the form. 
-}
-```
-
-### Export/Import
-
-+ **Export**: You can `export` functions, objects, or primitives from a module so they can be used in other modules.
-
-!!! Note "Important Note"
-    The filename from which the function is exported must be in **lowercase** and must **not contain any spaces or special characters**.
-
-!!! Example "Export module example"
-    ```js linenums="1"
-    function run () {
-        return 4 + 10
-
-    }
-    module.exports = {run}
-    ```
-
-+ **Import**: Use `import` to bring in code from other modules.
-  
-!!! Example "Import module example"
-    ```js linenums="1"
-    const { run } = require('fileName')
-
-    function main() {
-        return run() // result is 14
-    }
-    ```
 
 ## Configuration
 
@@ -308,9 +179,4 @@ function main(data) {
 [s2]: /developers/img/176.png "s2" 
 [s8]: /developers/img/183.png "s8"
 
-## Script Forge Background Job Queue Support
-
-You can access and view background jobs running through Script Forge.
-
-1. You can view the jobs under Global :material-menu-right: Queue. <img src= "/apps/img/job1.png" width= "900" style="border: 2px solid #4472C4; border-radius: 8px;">
-2. Click on the job `Name`  to view the status. <img src= "/apps/img/queuejs2.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;">
+{{ external_markdown('https://cdn.cnxcdn.com/scriptforge-api-docs/api/README.md', '') }}
