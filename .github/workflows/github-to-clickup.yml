@@ -1,16 +1,3 @@
-name: GitHub to ClickUp Sync
-
-on:
-  issues:
-    types: [opened, edited, closed]
-  issue_comment:
-    types: [created]
-
-jobs:
-  sync:
-    runs-on: ubuntu-latest
-
-    steps:
       - name: Create ClickUp task when issue is opened
         if: github.event.action == 'opened'
         run: |
@@ -22,7 +9,7 @@ jobs:
             "description": "'"${{ github.event.issue.body }}"'",
             "custom_fields": [
               {
-                "name": "GitHub Issue ID",
+                "id": "'"${{ secrets.CLICKUP_GITHUB_ISSUE_FIELD_ID }}"'",
                 "value": "'"${{ github.event.issue.number }}"'"
               }
             ]
