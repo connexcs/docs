@@ -440,12 +440,14 @@ export async function main() {
 
 **Changes Required**:
 - **Add the `export` keyword** in the fucntion.
-- Replace `require` with `import` and use './' in starting of file name - Use ES module `import` instead of require.
+
+ Replace `require` with `import` and use './' in starting of file name - Use ES module `import` instead of require.
+
 - Remove `module.exports` and export functions directly.
 
 > Notes
-> - These patterns focus on the most common migration changes: switching to ES module imports, adding `export` to entry functions, and initializing services inside the function (instead of receiving context objects).
-> - When adding `import` statements that reference environment-provided libraries, follow the same exact import path used by the platform's runtime (case-sensitive).
+> - These patterns focus on the most common migration changes: switching to ES module imports, adding `export` to entry functions, and initializing services inside the function (instead of receiving context objects).<br>
+> - When adding `import` statements that reference environment-provided libraries, follow the same exact import path used by the platform's runtime (case-sensitive).</br>
 > - Test each script in a staging environment before promoting to production.
 
 ## AI-Assisted ScriptForge Migration
@@ -456,9 +458,9 @@ When clicked, the button generates AI suggestions that guide and simplify the mi
 
 All AI-generated changes **must be reviewed and confirmed by the user** before acceptance to ensure correctness, security, and intended behavior.
 
-<img src= "/apps/img/scmigrationbtnd.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/apps/img/scmigrationbtn.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-Click `Accept Changes` if the yu are satisfied with the result.
+Click `Accept Changes` if the you are satisfied with the result.
 
 Click on `Edit Changes` if you notice anything incorrect or unexpected in your code, please review and update it accordingly.
 
@@ -469,12 +471,12 @@ This context is used to generate more accurate, relevant, and informed responses
 
 + **Tools** are built-in functions you can call while working in ConnexCS to perform specific tasks automatically.
 
+    Tools help automate actions, reduce manual effort, and improve accuracy while working in the interface.
+
     !!! Example "Examples"
         * **get_current_time** – Returns the current date and time.
-        * * **calculator** – Performs basic mathematical calculations.
-        * * **retrieve_scriptforge_code** – Fetches the current ScriptForge code for review or modification.
-
-Tools help automate actions, reduce manual effort, and improve accuracy while working in the interface.
+        * **calculator** – Performs basic mathematical calculations.
+        * **retrieve_scriptforge_code** – Fetches the current ScriptForge code for review or modification.
 
 + **Mode**: Select `Standard` for quicker results or `Expert` for more in-depth analysis.
 
