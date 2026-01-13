@@ -1,0 +1,16 @@
+name: GitHub to ClickUp Sync
+
+on:
+  issues:
+    types: [opened, edited, closed]
+  issue_comment:
+    types: [created]
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Sync placeholder
+        run: |
+          echo "GitHub Issue event detected"
