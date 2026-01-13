@@ -18,7 +18,7 @@ The **Account** overview allows you to edit Company and General Information, set
 
 ## Edit Account Details
 
-To add or edit Company information, click the blue pencil icon. This allows you to edit:
+To add or edit **Company information**, click the blue pencil icon. This allows you to edit:
 
 + Name
 + Email
@@ -28,13 +28,19 @@ To add or edit Company information, click the blue pencil icon. This allows you 
 + FRN: It's the Firm Registration Number
 + VAT Registration ID
 
-Under General Information, you can check the following:
+Under **General Information**, you can check the following:
 
 + Currency
 + Account Balance
-+ Billing Method (Click on the blue text to toggle between **per channel** and **per-minute** billing; it changes once every 30 days)
-+ Contact Information for the account: You can edit this field.
-+ Address
++ Billing Method (Click on the blue text to toggle between **per channel** and **per-minute** billing; it changes once every 30 days).
+    + Users can switch between billing methods; however:
+        + Once changed, it cannot be modified again for 30 days.
+        + This restriction prevents users from strategically altering their billing method to avoid charges.
+        + Admins can override this in the backend but generally don't.
+
+Under **Address** section can only verify the address and can't modify it.
+
+Under **Contact Information** section can only verify and edit the contact details.
 
     <img src= "/setup/img/accountprofile1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
@@ -43,11 +49,18 @@ Under General Information, you can check the following:
 
 ## SMTP Details
 
+SMTP section is used to configure outgoing email settings.
+
 To add or edit SMTP information, click the blue pencil icon:
 
 + **From Address** is the email address that will receive the details.
 + **Username** and **Password** should match your server configuration.
 + **Server** is your server domain.
+
+!!! Tip
+    By **default**, the system attempts to connect over port **25**.
+    If **TLS** is required, users should update the port to **465**.
+
 + **SMS From** is the mobile number that sends SMS messages.
 + Click **`Save`**.
 
