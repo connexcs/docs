@@ -14,7 +14,34 @@
 
 **Setup :material-menu-right: Settings :material-menu-right: Servers**
 
-The **Servers** section displays current servers and allows providers to configure servers, including functions such as load balancing.
+## Overview
+
+The **Servers** section displays server infrastructure available on your ConnexCS account, including monitoring, configuration, authentication, load balancing, and management features.
+
+Each server is uniquely configured, offering extensive customization to ensure optimal performance and security.
+
+### Key Benefits & Takeaways
+
++ **Robust Monitoring**: Real-time latency and ping metrics help ensure optimal server performance.
+
++ **Flexible & Scalable Configuration**: Adaptable channel capacity and multi-region deployments cater to diverse customer needs.
+
++ **Enhanced Security**: Integrated support for TLS certificates and secure WebRTC communication.
+
++ **Efficient Resource Management**: Stateless server design allows quick re-imaging and rapid recovery from issues.
+
+### Server Listing & Monitoring
+
+1. **Unique IP Addresses**: Every deployed server has its own unique IP address.
+
+2. **Latency & Ping Information**: Displays real-time ping time and ICMP latency.
+A successful ping shows connectivity; a cross icon indicates a failed ping (refresh may be needed).
+
+3. **Server Clusters & Aliases**:
+
+      + **Clusters**: Putting multiple servers together if in a load-balancing configuration. [Click here to know more](https://docs.connexcs.com/setup/settings/servers/#clusters)
+
+      + **Aliases**: Unique names assigned per server.
 
 ## Deploy a Server
 
@@ -32,6 +59,17 @@ Delivery is within 5 minutes.
 
     It's difficult for us to consider any reactivation problems critical if you persistently top-up only enough credit to cover you for the next day.
 
+### Server Zone & Data Routing
+
++ **Deployment Zones**:
+
+    + Servers can be deployed in multiple regions (US, EU, UK, etc.).
+    + Manual selection allows prioritization of local backends (e.g., US servers for local AMQP server routing).
+
++ **CDR Data Handling**:
+    + Local emission of Call Detail Record (CDR) data minimizes latency.
+    + Helps avoid cross-continent network bottlenecks, ensuring reliable data transmission.
+
 ## Server List
 
 The **Servers** section provides an overview of deployed servers:
@@ -48,7 +86,18 @@ The **Servers** section provides an overview of deployed servers:
 
 ## Clusters
 
-If you have multiple servers in a load-balancing configuration, we recommend putting them into a Cluster.
+### Overview
+
+The **Cluster** feature is designed to join servers together, ensuring that rate limits and resource sharing are synchronized across your infrastructure.
+
+Although you can technically create as many clusters as needed, in most real-life scenarios a single, well-managed cluster is sufficient.
+
+!!! question "When to use the Cluster feature?"
+    1. If you have multiple servers in a load-balancing configuration, we recommend putting them into a Cluster.
+    2. They enable coordinated handling of traffic between different servers.
+
+!!! Example "Customer Example"
+    If customer Joe is allowed 10 calls per second, without clustering, Server A and Server B would each permit 10 calls per second, potentially doubling the limit to 20 CPS if both servers are used. **This would violate the intended rate limit of 10 CPS for Joe**.
 
 To create a **Cluster**, click **`Cluster`**, and then click **:material-plus:** to enter the name.
 
@@ -108,8 +157,16 @@ For example, if the CPS or Channels limits have reached, capacity failover will 
     For example, if you set CPS to 10, clustered servers will allow 10 CPS and un-clustered servers will allow 10 CPS per server.
   
 + **Interconnect:** Where the server is in the visible routing.
+    + **Portal Page Visibility**:
+        + Determines server presence in the portal for:
+          + Termination (ingress/egress)
+          + Origination (ingress/egress)
 
 + **UAC Auth:** Enables ConnexCS to register as a UAC (rather than a UAS) with upstream providers with a username and password.
+    + **Core Functionality**:
+        + Implements standard SIP registration (UAC sends a register to UAS).
+        + Also supports scenarios where a UAS connects to another UAS (effectively switching roles to UAC).
+        + Enables registration with upstream providers.
 
 + **WebRTC and TLS**: Enabled when the FQDN sets live.
 
@@ -117,9 +174,21 @@ For example, if the CPS or Channels limits have reached, capacity failover will 
 
     They're required for [**WebPhone**](https://docs.connexcs.com/webphone/).
 
+!!! Tip "FQDN Usage"
+    + Specifically used for provisioning TLS certificates.
+
+  + **WebRTC Integration**:
+    + **Key Feature**: Allows SIP functionality within a web browser, enables calling directly from the browser.
+    + **Requirements**:
+        + A fully qualified domain name.
+        + A valid TLS certificate for secure WebRTC communication.
+
 + **Auto Upgrade:** When your server is ready for an upgrade, select this box to allow it to perform when your server is at zero channels.
+    + System automatically applies updates during periods of no traffic.
   
-+ **Disable UAC Ping:** UAC Ping automatically sends out ping messages every second to registered UACs, retaining open NAT ports. Select this box to disable that functionality.
++ **UAC Ping & Performance**
+    + **Purpose**: Maintains NAT mappings on firewalls using periodic pings.
+    + **Performance Option**: `Disable UAC Ping` can provide slight performance improvements by reducing ping frequency. It automatically sends out ping messages every second to registered UACs, retaining open NAT ports. Select this box to disable that functionality.
   
 + **UAC Location Array Sharing:** By sharing registration information with servers, not in the cluster, calls connect between two ConnexCS servers.
 
@@ -128,26 +197,60 @@ For example, if the CPS or Channels limits have reached, capacity failover will 
     If you use this setting, you can disable UAC Ping above to gain some minor performance enhancements.
   
 + **TLS Internals:** The routing engine consists of the Requests made to the Transport Layer Security (TLS), useful for high security (TLS) environments.
-  
-+ **Restrict Direct:** AnyEdge-enabled servers require routing through AnyEdge to communicate with one another.
+    + **Security enhancements**:
+        + Manages booting engine requests over TLS.
+        + Disabled by default as most traffic is non-TLS, minimizing extra routing benefits.
+
++ **Restrict Direct:** Prevents calls from being sent directly to a server. AnyEdge-enabled servers require routing through AnyEdge to communicate with one another thus avoiding direct access errors.
   
 + **TCP SIP Trace:** If you want to ensure that ALL your Session Initiation Protocol (SIP) Traces get captured, you can use Transmission Control Protocol (TCP) instead of User Datagram Protocol (UDP).
 
     While providing higher reliability, in high-traffic scenarios there may be a decrease in packet processing time.
+
+    **Capture Servers**:
+
+    + SIP trace data is relayed to external capture servers.
+    + Heavy load on capture servers can cause TCP back pressure issues.
+
+!!! Note "UDP vs TCP"
+    **UDP (Default):**
+
+       + Implements a “send and forget” method ensuring rapid message dispatch.
+       
+       + Reduces risk of call event delays during high server load.
+
+    **TCP:**
+      
+      + Ensures delivery through back pressure and acknowledgments.
+      
+      + May result in message buildup if the remote server is unavailable.
   
-+ **Use AnyReg Server:** This is an experimental platform SIP Registrar; use only if you are confident. When used in conjunction with AnyEdge, the AnyEdge server will take the registration information and pass it to AnyReg, avoiding the need to check customer equipment for registration. This negates the need for the UAC options above.
++ **Use AnyReg Server:** This is an experimental platform SIP Registrar; use only if you are confident. When used in conjunction with AnyEdge, the AnyEdge server will take the registration information and pass it to AnyReg, avoiding the need to check customer equipment for registration. This negates the need for the UAC options above. It reduces load on customer infrastructure, ensuring quick and global registration response times (e.g., community nodes in Australia).
   
 + **US, EU:** Servers in the US zone will process data (ex: CDRs, routing engines) at local servers rather than in some remote zone, avoiding server capacity issues due to longer data transit times.
   
 + **UDP, TCP, TLS Ports:** Specify port(s) for each protocol with the protocol default.
+  + **Port Defaults**:
+    + **Standard Port Assignments**:
+        + SIP (UDP): Port 5060
+        + TCP & TLS: Port 5061
+  + **Custom Port Options**:
+      + Alternative ports can be configured for TCP to bypass local ISP firewall restrictions.
+      + TLS can be enabled on different ports as required.
 
-    For example, to avoid firewall rules or ISP restrictions.
+
+    !!! Example "For example, to avoid firewall rules or ISP restrictions."
 
 !!! note "Whenever any of the above settings get modified, it's recommended to hit the Install Server."
 
 ### Certificates
 
 Select certificates to apply to a server.
+
+**Certificate Provisioning**:
+
++ Certificates are provided **free of charge**.
++ Provisioning is handled by ConnexCS (sometimes requires manual intervention).
 
 <img src= "/setup/img/server1.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;">
 
@@ -163,10 +266,10 @@ To add a Certificate to a sever,
 
 Click **`Actions`** to open the **Server Actions Menu**. The following actions are available:
 
-+ **Install Server**: Installs the latest script on your server.
-+ **Start Server**: Activates the server.
-+ **Stop Server**: Deactivates the server
-+ **Restart Server**: Reboots the server.
++ **Install Server**: Installs the latest script on your server. Re-image the server to restore a consistent state.
++ **Start Server**: Activates the server (bring the server online).
++ **Stop Server**: Deactivates the server Take the server offline.
++ **Restart Server**: Reboots the server. Generally not recommended for troubleshooting due to the stateless nature of the system.
 + **OS Cycle**: Shuts down the server using the operating system's mechanisms.
 + **Power Cycle**: Shuts down the server using a hard reset (emulating pressing the power button).
 
@@ -180,6 +283,11 @@ Click **`Actions`** to open the **Server Actions Menu**. The following actions a
     
     The only exception to this is the use of **Install Server**, which is used for a clean installation from a standard image.
 
+**Stateless Architecture**:
+
++ Servers are deployed using consistent images.
++ Minimal state retention (no CDR data, persistent databases, or direct user interface access).
+
 ### Resize Capacity
 
 Use this to update the Channels for the selected server. The update will be active in 15 minutes.  
@@ -189,7 +297,13 @@ Use this to update the Channels for the selected server. The update will be acti
 
 ### Run Server Update
 
-This only needs to run when the system indicates "There's a pending update on the server" at the top of the server details.
+**Update Mechanism**:
+
+When an update is pending, the service is flagged as **stale**. The system automatically applies updates once the account is idle.
+
+It ensures that servers remain current with minimal manual intervention.
+
+!!! Warning "This only needs to run when the system indicates "There's a pending update on the server" at the top of the server details.""
 
 <img src= "/setup/img/serverrtp1.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
