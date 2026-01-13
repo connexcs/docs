@@ -393,7 +393,81 @@ export async function main() {
 
 ---
 
+## Importing a Function From a Different File inside same App
+
+**Old Pattern:**
+
+**Previous  syntax to export function**
+
+```js
+// get_customer_record
+function getCustomerRecord() {
+  // your logic here
+}
+module.exports = { getCustomerRecord };
+```
+
+**Previous  syntax to import function**
+
+```js
+const { getCustomerRecord } = require('get_customer_record');
+
+async function main() {
+  return getCustomerRecord();
+}
+```
+
+**New Pattern**
+
+**Export**
+
+```js
+// get_customer_record
+export function getCustomerRecord() {
+  // your logic here
+}
+```
+
+**Import**
+
+```js
+import { getCustomerRecord } from './get_customer_record';
+
+export async function main() {
+  return getCustomerRecord();
+}
+```
+
+**Changes Required**:
+
+* **Add the `export` keyword** in the fucntion.
+* Replace `require` with `import` and use './' in starting of file name - Use ES module `import` instead of require.
+* Remove `module.exports` and export functions directly.
+
 > Notes
-> - These patterns focus on the most common migration changes: switching to ES module imports, adding `export` to entry functions, and initializing services inside the function (instead of receiving context objects).
-> - When adding `import` statements that reference environment-provided libraries, follow the same exact import path used by the platform's runtime (case-sensitive).
+> - These patterns focus on the most common migration changes: switching to ES module imports, adding `export` to entry functions, and initializing services inside the function (instead of receiving context objects).<br>
+> - When adding `import` statements that reference environment-provided libraries, follow the same exact import path used by the platform's runtime (case-sensitive).</br>
 > - Test each script in a staging environment before promoting to production.
+
+## AI-Assisted ScriptForge Migration
+
+ConnexCS provides an AI-powered migration button to help convert code written in the legacy ScriptForge format into the new ScriptForge format.
+
+When clicked, the button generates AI suggestions that guide and simplify the migration process by proposing updated syntax and structure based on the new format. This serves as an assistive tool, not an automatic conversion.
+
+All AI-generated changes **must be reviewed and confirmed by the user** before acceptance to ensure correctness, security, and intended behavior.
+
+<img src= "/apps/img/scmigrationbtn.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+Click `Accept Changes` if the you are satisfied with the result.
+
+Click on `Edit Changes` if you notice anything incorrect or unexpected in your code, please review and update it accordingly.
+
+An **AI Assistant** chat window will appear with the following options:
+
++ **Add context**: Lets you provide additional information to give more background to the AI.
+This context is used to generate more accurate, relevant, and informed responses without changing the main content.
+
++ **Mode**: Select `Standard` for quicker results or `Expert` for more in-depth analysis.
+
+<img src= "/apps/img/editwindow.png" style="border: 2px solid #4472C4; border-radius: 8px;">
