@@ -296,9 +296,9 @@ nav:
             - Page Builder: apps/page-builder.md
             - Document Content Model: apps/architecture/dcm.md
         - ScriptForge: 
-            Introduction: apps/architecture/scriptforge.md
-            ScriptForge Migration Guide: apps/architecture/scriptforge-migration.md
-            ScriptForge API Reference:
+            - Introduction: apps/architecture/scriptforge.md
+            - ScriptForge Migration Guide: apps/architecture/scriptforge-migration.md
+            - ScriptForge API Reference:
                 - cxC5Server: apps/architecture/cxC5Server.md
                 - cxCallControl: apps/architecture/cxCallControl.md
                 - cxJob: apps/architecture/cxJob.md
