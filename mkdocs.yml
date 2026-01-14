@@ -297,7 +297,7 @@ nav:
             - Document Content Model: apps/architecture/dcm.md
         - ScriptForge: 
             Introduction: apps/architecture/scriptforge.md
-            cxC5Server: apps/architecture/scriptforge/cxC5Server.md
+            cxC5Server: apps/architecture/script-forge/cxC5Server.md
             ScriptForge Migration Guide: apps/architecture/scriptforge-migration.md
         - Template: apps/architecture/template.md
         - Query Builder: apps/architecture/query-builder.md
