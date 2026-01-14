@@ -299,7 +299,7 @@ nav:
             Introduction: apps/architecture/scriptforge.md
             ScriptForge Migration Guide: apps/architecture/scriptforge-migration.md
             ScriptForge API Reference:
-                - cxC5Server: apps/architecture/cxC5Server.md
+                cxC5Server: apps/architecture/cxC5Server.md
         - Template: apps/architecture/template.md
         - Query Builder: apps/architecture/query-builder.md
         - Project: apps/architecture/project.md
