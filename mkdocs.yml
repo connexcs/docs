@@ -298,11 +298,23 @@ nav:
         - ScriptForge: 
             Introduction: apps/architecture/scriptforge.md
             ScriptForge Migration Guide: apps/architecture/scriptforge-migration.md
+            ScriptForge API Reference:
+                - cxC5Server: apps/architecture/cxC5Server.md
+                - cxCallControl: apps/architecture/cxCallControl.md
+                - cxJob: apps/architecture/cxJob.md
+                - cxKV: apps/architecture/cxKV.md
+                - cxKysely: apps/architecture/cxKysely.md
+                - cxPubSub: apps/architecture/cxPubSub.md
+                - cxRest: apps/architecture/cxRest.md
+                - cxSend: apps/architecture/cxSend.md
+                - cxUserspace: apps/architecture/cxUserspace.md
+                - cxWebSocket: apps/architecture/cxWebSocket.md
+
         - Template: apps/architecture/template.md
         - Query Builder: apps/architecture/query-builder.md
         - Project: apps/architecture/project.md
         - Pub / Sub Bus: apps/architecture/pub-sub.md
-        - Environmental Variables: apps//architecture/environmental-variables.md
+        - Environmental Variables: apps/architecture/environmental-variables.md
     - Components:
         - Alert: apps/components/alert.md
         - Button: apps/components/button.md
