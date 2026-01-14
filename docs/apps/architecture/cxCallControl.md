@@ -1,1 +1,1 @@
-{{ external_markdown('https://cdn.cnxcdn.com/scriptforge-api-docs/api/cxCallCenter.md', '') }}
+{{ external_markdown('https://cdn.cnxcdn.com/scriptforge-api-docs/api/cxCallControl.md', '') }}
