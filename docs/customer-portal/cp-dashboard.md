@@ -14,19 +14,18 @@
 
 ## Overview
 
-The **Customer Portal** provides access to configurations, real-time testing and stats, and more information about your account.
+The Dashboard provides a real-time overview of `Balance`, `Channels`, and `Key System Metrics`.
 
-The Dashboard provides a real-time overview of `Balance`, `Channels`, and key system metrics. It includes interactive elements for monitoring traffic, analyzing trends, and customizing data displays.
-
-+ Displays a summary of Live Channels, Active Customers, Carriers, and Rate Cards.
-+ Quick access to essential functions.
-+ For detailed account activities, use the Menu System on the left.
+It includes the following:
+a. iInteractive elements for monitoring traffic and analyzing trends.
+b. Displays a summary of Live Channels, Active Customers, Carriers, and Rate Cards.
+c. Quick access to essential functions.
 
 ## Top of Page Functions
 
 ![alt text][cp-dash]
 
-+ **Checklist**: A Quick view of the outstanding Alerts on the account. Upon initial setup, verification of email and mobile for the account made through Alerts, and a reminder is put across to create customers and setup carriers.
++ **Checklist**: A Quick view of the outstanding Alerts on the account. Upon initial set up, verification of email and mobile for the account made through Alerts, and a reminder is put across to create customers and set up carriers.
 
 + **Time Zone**: Click on the Date/Time box to select the Time Zone for your site.
 
@@ -38,7 +37,7 @@ The Dashboard provides a real-time overview of `Balance`, `Channels`, and key sy
 
 ### Setup Personal Profile
 
-To setup, click your name in the upper right corner and select `My Profile`. You can see 2 windows:
+To set up, click your name in the upper right corner and select `My Profile`. You can see 2 windows:
 
 1. **Company Profile**: This whole window is not editable. It includes Company Name, Contact Name, Currency, Debit Limit, Tax and Paypal.
 
@@ -82,3 +81,4 @@ Internal Number Block to define the range of numbers a Customer can use for sett
 Without defined Internal Number Blocks, there is the risk of a Contact attempting to use an extension that's already in use by another Customer or Contact.
 
 With Internal Number Blocks defined, each Customer will have a predetermined list of Usernames to select for SIP Authentication.
+
