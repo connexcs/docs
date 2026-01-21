@@ -17,8 +17,11 @@
 The Dashboard provides a real-time overview of `Balance`, `Channels`, and `Key System Metrics`.
 
 It includes the following:
+
 a. iInteractive elements for monitoring traffic and analyzing trends.
+
 b. Displays a summary of Live Channels, Active Customers, Carriers, and Rate Cards.
+
 c. Quick access to essential functions.
 
 ## Top of Page Functions
@@ -81,4 +84,5 @@ Internal Number Block to define the range of numbers a Customer can use for sett
 Without defined Internal Number Blocks, there is the risk of a Contact attempting to use an extension that's already in use by another Customer or Contact.
 
 With Internal Number Blocks defined, each Customer will have a predetermined list of Usernames to select for SIP Authentication.
+
 
