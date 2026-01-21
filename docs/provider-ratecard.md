@@ -324,10 +324,7 @@ Both lists must be populated for the configuration to be valid.
 * One or more countries must be defined
 * Empty lists are not permitted
 
-- **Destination EEA Countries**
-
-**Description**
-Defines the set of countries to which a call must terminate to be considered for EEA billing.
+**b. Destination EEA Countries**: Defines the set of countries to which a call must terminate to be considered for EEA billing.
 
 **Evaluation Source**
 
@@ -345,12 +342,10 @@ Defines the set of countries to which a call must terminate to be considered for
 * Configuration cannot be saved if either list is empty
 * Validation occurs at configuration save time
 
-- **Call Classification Logic**
+- **Call Classification Logic**: A call is classified as an **EEA Origin Billing call** if and only if **both** of the following conditions are met:
 
-A call is classified as an **EEA Origin Billing call** if and only if **both** of the following conditions are met:
-
-1. Source country ∈ Source EEA Countries
-2. Destination country ∈ Destination EEA Countries
+    1. Source country ∈ Source EEA Countries
+    2. Destination country ∈ Destination EEA Countries
 
 If either condition evaluates to false, the call is **excluded from EEA billing**.
 
@@ -358,19 +353,14 @@ This logic is evaluated independently for each call.
 
 - **Call Evaluation Flow**
 
-1. Call is received by the platform
-2. System resolves:
-
-   * Source country from CLI
-   * Destination country from called number
-3. System evaluates Source EEA match
-4. System evaluates Destination EEA match
-5. If both matches succeed:
-
-   * EEA Origin Billing rules are applied
-6. Otherwise:
-
-   * Non-EEA billing rules apply
+    1. Call is received by the platform
+    2. System resolves:
+     * Source country from CLI
+     * Destination country from called number
+    3. System evaluates Source EEA match
+    4. System evaluates Destination EEA match
+    5. If both matches succeed: EEA Origin Billing rules are applied.
+    6. Otherwise: Non-EEA billing rules apply
 
 - **Example Configuration**
 
@@ -387,6 +377,7 @@ This logic is evaluated independently for each call.
 * United States
 
 !!! "Example" Example Call Scenarios
+
     | Source Country| Destination Country|EEA Billing Applied|Reason|
     |------|--------|--------|----------- |
     |India|United States|Yes| Source and destination both match|
