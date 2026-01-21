@@ -319,6 +319,122 @@ To change Revision status:
 
     For a description of each Strategy and configuration for a comprehensive Routing Strategy, see [**Routing Strategy**](https://docs.connexcs.com/routing-strategy/).
 
+#### Origin Billing
+
+**Origin Billing** is a billing mechanism in which call rating is determined using both the **originating country** and the **destination country** of a call.
+
+Unlike destination-only billing models, Origin Billing allows differentiated billing behavior based on where a call **starts** and where it **terminates**.
+
+- **Definition of EEA in Origin Billing**
+
+Within Origin Billing, **EEA** represents a **customer-defined country group** used for billing classification.
+
+* EEA is a **logical label**, not a fixed geographic region
+* Countries included in EEA are **fully configurable by the customer**
+* EEA is **not restricted to Europe**
+* The label “EEA” may be renamed in the future without changing the underlying logic
+
+- **Configuration Scope**
+
+EEA-based Origin Billing is configured at the **Origin Billing** level and applies during call rating.
+
+The configuration consists of **two mandatory country lists**:
+
+1. Source EEA Countries
+2. Destination EEA Countries
+
+Both lists must be populated for the configuration to be valid.
+
+- **Configuration Fields**
+
+**a. Source EEA Countries**: Defines the set of countries from which a call must originate to be considered for EEA billing.
+
+**Evaluation Source**
+
+* Determined from the **CLI (Calling Line Identification)**
+* Country is resolved using standard country detection logic
+
+**Constraints**
+
+* One or more countries must be defined
+* Empty lists are not permitted
+
+- **Destination EEA Countries**
+
+**Description**
+Defines the set of countries to which a call must terminate to be considered for EEA billing.
+
+**Evaluation Source**
+
+* Determined from the **destination number**
+* Country is resolved using standard destination analysis
+
+**Constraints**
+
+* One or more countries must be defined
+* Empty lists are not permitted
+
+- **Mandatory Validation Rules**
+
+* Both Source EEA Countries and Destination EEA Countries are **required**
+* Configuration cannot be saved if either list is empty
+* Validation occurs at configuration save time
+
+- **Call Classification Logic**
+
+A call is classified as an **EEA Origin Billing call** if and only if **both** of the following conditions are met:
+
+1. Source country ∈ Source EEA Countries
+2. Destination country ∈ Destination EEA Countries
+
+If either condition evaluates to false, the call is **excluded from EEA billing**.
+
+This logic is evaluated independently for each call.
+
+- **Call Evaluation Flow**
+
+1. Call is received by the platform
+2. System resolves:
+
+   * Source country from CLI
+   * Destination country from called number
+3. System evaluates Source EEA match
+4. System evaluates Destination EEA match
+5. If both matches succeed:
+
+   * EEA Origin Billing rules are applied
+6. Otherwise:
+
+   * Non-EEA billing rules apply
+
+- **Example Configuration**
+
+**a. Source EEA Countries**
+
+* United Kingdom
+* India
+* United States
+
+**b. Destination EEA Countries**
+
+* Afghanistan
+* India
+* United States
+
+!!! "Example" Example Call Scenarios
+    | Source Country| Destination Country|EEA Billing Applied|Reason|
+    |------|--------|--------|----------- |
+    |India|United States|Yes| Source and destination both match|
+    |United Kingdom | India| Yes| Source and destination both match|
+    |India|United Kingdom| No| Destination not in Destination EEA list |
+    |Afghanistan| India| No| Source not in Source EEA list|
+
+**Impact Considerations**
+
+* Modifying EEA country lists directly affects billing outcomes.
+* Customers should review rate plans before making changes.
+* Changes apply to all calls processed after configuration is saved.
+
 #### Advanced
 
 + **Direction**: Configure the card to be either Termination (calling out to the PSTN) or Origination (DID numbers receiving PSTN calls). Termination is the most common card.
