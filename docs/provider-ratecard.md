@@ -294,12 +294,12 @@ Unlike destination-only billing models, Origin Billing allows differentiated bil
 
 Within Origin Billing, **EEA** represents a **customer-defined country group** used for billing classification.
 
-* EEA is a **logical label**, not a fixed geographic region
-* Countries included in EEA are **fully configurable by the customer**
-* EEA is **not restricted to Europe**
-* The label “EEA” may be renamed in the future without changing the underlying logic
+  1. EEA is a **logical label**, not a fixed geographic region
+  2. Countries included in EEA are **fully configurable by the customer**
+  3. EEA is **not restricted to Europe**
+  4. The label “EEA” may be renamed in the future without changing the underlying logic
 
-- **Configuration Scope – EEA-Based Origin Billing**
+<br>- **Configuration Scope – EEA-Based Origin Billing**</br>
 
 | Item | Description|
 | -----|------------|
@@ -317,18 +317,18 @@ Within Origin Billing, **EEA** represents a **customer-defined country group** u
 | **Destination EEA Countries** | Defines the set of countries to which a call must terminate to qualify for EEA billing | Destination number| Country is resolved using standard destination country analysis| One or more countries must be defined; empty lists are not permitted |
 
 - **Mandatory Validation Rules**:
-  - Both Source EEA Countries and Destination EEA Countries are **required**
-  * Configuration cannot be saved if either list is empty
-  * Validation occurs at configuration save time
+    - Both Source EEA Countries and Destination EEA Countries are **required**
+    * Configuration cannot be saved if either list is empty
+    * Validation occurs at configuration save time
 
 - **Call Classification Logic**: A call is classified as an **EEA Origin Billing call** if and only if **both** of the following conditions are met:
 
     1. Source country ∈ Source EEA Countries
     2. Destination country ∈ Destination EEA Countries
 
-If either condition evaluates to false, the call is **excluded from EEA billing**.
+    If either condition evaluates to false, the call is **excluded from EEA billing**.
 
-This logic is evaluated independently for each call.
+    This logic is evaluated independently for each call.
 
 - **Call Evaluation Flow**
 
@@ -341,19 +341,10 @@ This logic is evaluated independently for each call.
     5. If both matches succeed: EEA Origin Billing rules are applied.
     6. Otherwise: Non-EEA billing rules apply
 
-- **Example Configuration**
-
-**a. Source EEA Countries**
-
-* United Kingdom
-* India
-* United States
-
-**b. Destination EEA Countries**
-
-* Afghanistan
-* India
-* United States
+!!! Example "Example Configuration"
+    |Source EEA Countries|Destination EEA Countries|
+    |--------------------|-------------------------|
+    |United Kingdom <br>India</br>United States|Afghanistan<br>India</br>United States|
 
 !!! Example "Example Call Scenarios"
     | Source Country| Destination Country|EEA Billing Applied|Reason|
