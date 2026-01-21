@@ -299,48 +299,27 @@ Within Origin Billing, **EEA** represents a **customer-defined country group** u
 * EEA is **not restricted to Europe**
 * The label “EEA” may be renamed in the future without changing the underlying logic
 
-- **Configuration Scope**
+- **Configuration Scope – EEA-Based Origin Billing**
 
-EEA-based Origin Billing is configured at the **Origin Billing** level and applies during call rating.
+| Item | Description|
+| -----|------------|
+| **Configuration Level**| Origin Billing|
+| **Applicability**| Applied during call rating|
+| **Required Configuration** | Two mandatory country lists|
+| **Mandatory Fields** | Source EEA Countries, Destination EEA Countries|
+| **Validation Rule** | Both lists must be populated for the configuration to be valid |
 
-The configuration consists of **two mandatory country lists**:
+* **Configuration Fields**
 
-1. Source EEA Countries
-2. Destination EEA Countries
+| Field| Purpose| Evaluation Source| Resolution Logic| Constraints |
+| -----|--------|------|---------- |----|
+| **Source EEA Countries** | Defines the set of countries from which a call must originate to qualify for EEA billing | CLI (Calling Line Identification) | Country is resolved using standard source country detection logic | One or more countries must be defined; empty lists are not permitted |
+| **Destination EEA Countries** | Defines the set of countries to which a call must terminate to qualify for EEA billing | Destination number| Country is resolved using standard destination country analysis| One or more countries must be defined; empty lists are not permitted |
 
-Both lists must be populated for the configuration to be valid.
-
-- **Configuration Fields**
-
-**a. Source EEA Countries**: Defines the set of countries from which a call must originate to be considered for EEA billing.
-
-**Evaluation Source**
-
-* Determined from the **CLI (Calling Line Identification)**
-* Country is resolved using standard country detection logic
-
-**Constraints**
-
-* One or more countries must be defined
-* Empty lists are not permitted
-
-**b. Destination EEA Countries**: Defines the set of countries to which a call must terminate to be considered for EEA billing.
-
-**Evaluation Source**
-
-* Determined from the **destination number**
-* Country is resolved using standard destination analysis
-
-**Constraints**
-
-* One or more countries must be defined
-* Empty lists are not permitted
-
-- **Mandatory Validation Rules**
-
-* Both Source EEA Countries and Destination EEA Countries are **required**
-* Configuration cannot be saved if either list is empty
-* Validation occurs at configuration save time
+- **Mandatory Validation Rules**:
+  - Both Source EEA Countries and Destination EEA Countries are **required**
+  * Configuration cannot be saved if either list is empty
+  * Validation occurs at configuration save time
 
 - **Call Classification Logic**: A call is classified as an **EEA Origin Billing call** if and only if **both** of the following conditions are met:
 
@@ -355,8 +334,8 @@ This logic is evaluated independently for each call.
 
     1. Call is received by the platform
     2. System resolves:
-     * Source country from CLI
-     * Destination country from called number
+        * Source country from CLI
+        * Destination country from called number
     3. System evaluates Source EEA match
     4. System evaluates Destination EEA match
     5. If both matches succeed: EEA Origin Billing rules are applied.
@@ -376,8 +355,7 @@ This logic is evaluated independently for each call.
 * India
 * United States
 
-!!! "Example" Example Call Scenarios
-
+!!! Example "Example Call Scenarios"
     | Source Country| Destination Country|EEA Billing Applied|Reason|
     |------|--------|--------|----------- |
     |India|United States|Yes| Source and destination both match|
