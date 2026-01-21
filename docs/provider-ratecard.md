@@ -344,7 +344,7 @@ Within Origin Billing, **EEA** represents a **customer-defined country group** u
 !!! Example "Example Configuration"
     |Source EEA Countries|Destination EEA Countries|
     |--------------------|-------------------------|
-    |United Kingdom <br>India</br>United States|Afghanistan<br>India</br>United States|
+    |United Kingdom<br>India</br><br>United States</br>|Afghanistan<br>India</br><br>United States</br>|
 
 !!! Example "Example Call Scenarios"
     | Source Country| Destination Country|EEA Billing Applied|Reason|
