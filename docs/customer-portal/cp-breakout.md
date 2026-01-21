@@ -18,21 +18,13 @@ The **Breakout** report lists account customers with the following:
 
 * associated profits, and
 * relevant data such as cost per customer, amount billed, Aggregation Services Router (ASR), and Automatic Call Distribution Service (ACD).
-* use the Columns and Filters to manage data presentation. Enable Pivot Mode (check box at the top of Columns) to setup Row Groups and Values for additional report customization.
-
-The information here is from a processed Call Detail Record (CDR) and is thus considered "billing accurate." You can use this data to bill your customers.
+* the ability to use the Columns and Filters to manage data presentation. Enable Pivot Mode (check box at the top of Columns) to set up Row Groups and Values for additional report customization.
 
 Toggle **Group Destination** to show calls based on the destination number.
 
 Use the **`Date`** and **`Select Destination`** fields at the top of the page to filter results.
 
 The **Select Destination** allows you to filter out the calls made to a particular destination.
-
-### Benefits
-
-+ Helps in identifying profitability per customer.
-+ Provides granular visibility into call routing and carrier distribution.
-+ Enables better cost management by optimizing carrier selection
 
 ## Manage Displayed Fields
 
@@ -59,3 +51,4 @@ The Columns display data for each call
     Remember to click **Refresh** each time parameters change to ensure you see the most recent selections onscreen.
 
     When refreshing the list (typically done after modifying the filtering parameters), use the Report Refresh (by the date filter) and not the Browser Refresh button.
+
