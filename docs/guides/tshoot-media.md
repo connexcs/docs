@@ -12,6 +12,8 @@
 
 </details>
 
+## Overview
+
 Media refers to the actual audio payload part of a call. For more information about ConnexCS media servers, see [**RTP Servers**](https://docs.connexcs.com/setup/settings/servers/#real-time-transport-protocol-servers).
 
 **RTP (Real-time Transport Protocol)**, operating on top of User Datagram Protocol (UDP), is a data transport protocol. A signaling protocol, such as Session Initiation Protocol (SIP), initiates the RTP session. Once established, the audio gets streamed across the network.
@@ -112,6 +114,7 @@ Now while SIP traffic passes from one server to the next to get to its destinati
 Now SIP is a good protocol, but things kind of break down when NAT gets involved. SIP packets themselves tend to move about without too much trouble, as they 'hop' from one server to another. RTP sessions are somewhat more troublesome. Either both clients need to be aware they're behind a NAT, and substitute their local IP addresses for their public IPs in their Session Description messages and open the appropriate firewall ports, or something has to modify the SIP packets en route.
 
 User Agent can modify SIP packets to direct the caller and destination to establish an RTP session with itself, rather than with each other. This is useful in situations where two SIP clients may not have direct access to each other, most commonly, when one or both of the SIP clients are behind a NAT.
+
 It's important to note that User Agent only proxy's RTP traffic when it has to, and when configured to do so. If both clients are on the same local network segment, User Agent doesn't need to play a part in the RTP session, and it will proxy only the SIP traffic.
 
 ## Echo Test
