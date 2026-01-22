@@ -14,9 +14,26 @@
 
 **Class 5 :material-menu-right: Conference**
 
+## Overview
+
 Use this feature to allow several callers to communicate with each other over a voice call. Once it's created, callers join the call, and the moderator presides.
 
-For individual customers, navigate to **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Class5 :material-menu-right: Conference**
+For individual customers, navigate to **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Class5 :material-menu-right: Conference**.
+
+### Key Features
+
++ Assign a unique conference name.
++ Associate the conference with a specific customer.
++ Use internal extension numbers for customers.
++ Set a PIN for security.
++ Select the audio quality (Narrowband - G711, Wideband, Ultra-Wideband).
++ Define the maximum number of participants.
++ Link a Direct Inward Dialing (DID) number to the conference.
+
+!!! question "Why use the Conference feature?"
+    + Secure access through PIN.
+    + High-quality audio options for better clarity.
+    + Easy routing setup for internal and external participants.
 
 ## Create a Conference Call
 
@@ -39,8 +56,7 @@ To create a Conference room, click :material-plus:.
 
 * **Max Members** limits the number of concurrent callers allowed in the conference.
 
-!!! note
-    The preset of '0' Max Members allows an unlimited number of callers to join the conference.
+!!! note "Setting Max Members to 0 allows unlimited callers to join the conference."
 
 * **PBX Server** You can select from the list of available servers.
 
