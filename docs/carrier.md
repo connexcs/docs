@@ -184,7 +184,7 @@ remove_regex="^X-.*"
 
 5.Click `Save`.
 
-!!! Danger Note
-    Please note you can use the regex pattern according to your requirement.
+!!! Warning
+    Misconfigured regular expressions may remove essential SIP headers and **break SIP protocol behaviour**, leading to call failures or service disruption. This is an advanced configuration and must be used with care.
 
 <img src= "/carrier/img/regex.png" style="border: 2px solid #4472C4; border-radius: 8px;">

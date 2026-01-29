@@ -290,14 +290,14 @@ To change Revision status:
 + **Collapse Using**: Select how you want to merge rate data from the carrier cards.
 + **Force Presentation**: Find the number of rows to display for rates; this is visible to the customer:
 
-|Option|Example|Usage|# of Rows in table|
-| --- | --- | --- |---|
-|**Single Rate**|0.0007|Usually a UK Landline|1|
-|**IntER/IntRA**|1 (NPANXX)|Refers to Interstate and Intrastate calling for USA dialing|2|
-|**IntER/IntRA/Indeterminate**|1 (NPANXX)|Indeterminate indicates that call is between a USA number and another country|3|
-|**EEA**|If a call originates from a CLI starting with '33' (France) and the destination number starts with '43' (Austria)| When a call originates from one European Economic Area country and terminates in another EEA country|3|
-|**Local Rates**|If a call originates from a CLI starting with '43' and the destination number also starts with '43'| Both the originating CLI and destination number start with the same country code, specifically '43' for Austria||
-|**International Rates**| If a call originates from a CLI starting with '33' (France) and the destination number starts with '444' (UK)|Any call not meeting the Local or EEA criteria falls under this category|
+|Option|Example|Usage|
+|------|-------|-----|
+|**Single Rate**|0.0007|Usually a UK Landline|
+|**IntER/IntRA**|1 (NPANXX)|Refers to Interstate and Intrastate calling for USA dialing|
+|**IntER/IntRA/Indeterminate**|1 (NPANXX)|Indeterminate indicates that call is between a USA number and another country|
+|**EEA**| If a call originates from a CLI starting with ‘33’ (France) and the destination number starts with ‘43’ (Austria)| When a call originates from any country worldwide and terminates in any country, not limited to EEA. This depends on the configuration defined in the Origin Billing section|
+|**Local Rates**|If a call originates from a CLI starting with '43' and the destination number also starts with '43'| Both the originating CLI and destination number start with the same country code, specifically '43' for Austria|
+|**International Rates**| If a call originates from a CLI starting with '33' (France) and the destination number starts with '44' (UK)|Any call not meeting the Local or EEA criteria falls under this category. The behavior is determined by what is configured in the Origin Billing section|
 
 + **Dialing**: Select whether to bill based on the carrier of the Dialed Number or using an LRN Database (US-only).
 
@@ -331,8 +331,7 @@ Within Origin Billing, **EEA** represents a **customer-defined country group** u
 
   1. EEA is a **logical label**, not a fixed geographic region
   2. Countries included in EEA are **fully configurable by the customer**
-  3. EEA is **not restricted to Europe**
-  4. The label “EEA” may be renamed in the future without changing the underlying logic
+  3. EEA is not confined to Europe and includes all countries globally.
 
 <br>- **Configuration Scope – EEA-Based Origin Billing**</br>
 
