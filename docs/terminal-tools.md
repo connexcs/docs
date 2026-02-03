@@ -11,14 +11,14 @@ CX-Tools exposes common operational tasks like script management, SQL queries, k
 CX-Tools is distributed as an npm package:
 
 👉 @connexcs/tools  
-https://www.npmjs.com/package/@connexcs/tools
+[https://www.npmjs.com/package/@connexcs/tools](https://www.npmjs.com/package/@connexcs/tools)
 
 
 !!! Info
     Currently, CX-Tools is primarily targeted at development workflows. The CLI is functionally language-agnostic in how it interacts with ConnexCS services, however it requires the Node.js runtime because the tooling itself is implemented in **Node.js**.
 
 For installation instructions, usage examples, and version details, see the npm package:
-https://www.npmjs.com/package/@connexcs/tools
+[https://www.npmjs.com/package/@connexcs/tools](https://www.npmjs.com/package/@connexcs/tools)
 
 ## Who is this for?
 
