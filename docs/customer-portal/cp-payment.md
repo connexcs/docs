@@ -37,6 +37,8 @@ To add a new payment, select **`Make Payment`**.
     + **Pay Stack**: You can select the Payment Amount and Currency.
     + **Now Payments**: You can select the Payment Amount and Currency.
 
+!!! note "Deprecated payment methods"
+    The following payment options previously available in the **Pay via** list are no longer supported in the Customer Portal: **Bank Transfer**, **Razor Pay**, and **Voucher**. If your account was configured to use any of these methods, please contact ConnexCS Support or your account manager to review and update your payment configuration.
 2. Enter the **Amount** (required).
 3. Select the **Currency** (USD or GBP).
 4. Click **`Pay`**.
