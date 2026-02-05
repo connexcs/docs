@@ -26,7 +26,7 @@ It helps automate monitoring and notifications based on key performance metrics.
 
 Alerts are primarily communicated via email to designated recipients.
 
-!!! Example
+!!! example
     The mechanism used to send Alerts when a customer's balance gets below a certain threshold. To send Alerts when a specified usage parameter gets too high.
 
     ```mermaid
