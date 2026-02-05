@@ -26,8 +26,6 @@ It helps automate monitoring and notifications based on key performance metrics.
 
 Alerts are primarily communicated via email to designated recipients.
 
-The automated process also gives you real-time insight into your account status.
-
 !!! Example
     The mechanism used to send Alerts when a customer's balance gets below a certain threshold. To send Alerts when a specified usage parameter gets too high.
 
