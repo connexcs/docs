@@ -69,8 +69,8 @@ Since the threshold represents the most numeric traits related to VoIP, it can f
       1. Enter the `Title` of the alert you wish to create.
       2. Enter the contact details like `Email` or `Phone Number`.
       3. `Area`: The section of the system where the alert was created.
-      4. `Threshold`: This is the triggering value in the alert sequence.
-        How your system responds to the value depends on the operator used, but the alert itself will trigger whenever the governing conditions are true.
+      4. `Threshold`: This is the numeric value that your chosen metric is compared against to decide when the alert should fire.
+        For example, if you choose the `<` operator, the alert triggers when the metric falls below the threshold; with `>` it triggers when the metric rises above the threshold; and with `=` it triggers when the metric is exactly equal to the threshold. The governing conditions are the combination of metric, operator, and threshold (and, where applicable, the sample period); whenever that condition evaluates to true, the alert is triggered.
 3. Click `Save`.
 
 !!! warning "Balance Alert"
