@@ -18,7 +18,7 @@
 
 The automated process also gives you real-time insight into your account status.
 
-Create Alerts to contact customers when specific occurrences occur.
+Create Alerts to notify customers when specific events happen.
 
 Alerts are a useful way to track transaction information, mainly when your customer lists fill up.
 
