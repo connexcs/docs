@@ -92,6 +92,260 @@ Click on a specific Call ID to view details and run call tools.
 
     + **Graphs**: It will display parameters like Re=ound Trip Time, MOS, Jitter, and Packet Loss, only if the call experiences any of these issues.
 
++ **RTCP Reports**: It provides a complete view of **call quality, network performance, media direction, and detected issues**.
+
+1. **Quality Metrics**: Provides a high-level summary of perceived and technical call quality derived from RTCP reports.
+
+2. **Metrics Displayed**:
+
+|Parameter|Description|
+|---------|-----------|
+|**MOS (Mean Opinion Score)**|Calculated score representing perceived audio quality on a scale from 1.0 (Poor) to 5.0 (Excellent).|
+|**R-Factor**|Technical quality score (0–100) used internally to derive MOS.|
+|**Packet Loss (%)**|Percentage of RTP packets lost during transmission.|
+|**Jitter (ms)**|Variation in RTP packet arrival time.|
+|**Duration**| Time period over which RTCP data was collected, including the number of RTCP reports received.
+
+3. **Statistical Breakdown**: Each metric includes:
+
+* Mean
+* Median
+* Minimum
+* Maximum
+* Standard Deviation
+
+These values allow identification of both overall call quality and short-term degradation.
+
++ **Network Statistics**: Provides detailed RTCP network-level measurements observed during the call.
+
+1. **Purpose**:
+
+* Network troubleshooting
+* Identifying congestion or instability
+* Correlating quality issues with transport behaviour
+
+2. **Typical Information**:
+
+* Packet transmission statistics
+* Packet loss trends
+* Timing and delivery variation
+* Network consistency over the call duration
+
+This data helps determine whether issues are caused by **network conditions rather than application or routing logic**.
+
++ **Sender Information**
+
+The **Sender Information** tab displays RTCP data related to the RTP stream sender.
+
+1. **Purpose**
+
+* Which endpoint transmitted the media
+* Transmission characteristics of the sender
+* Potential sender-side quality issues
+
+This information is useful when diagnosing asymmetric or one-directional quality problems.
+
++ **Direction Analysis**: It separates RTCP metrics by media direction.
+
+1. **Description**: RTCP data is analysed independently for:
+
+* Caller → Callee
+* Callee → Caller
+
+2. Use Cases
+
+* Identifying one-way audio issues
+* Diagnosing direction-specific packet loss or jitter
+* Determining whether degradation is isolated to a single media path
+
+This view is critical for troubleshooting issues that do not affect both parties equally.
+
++ **SSRC Details**: Provides per-stream RTCP statistics using SSRC (Synchronization Source) identifiers.
+
+1. **Description**: Each RTP media stream is identified by a unique SSRC. This tab allows inspection of:
+
+* Individual RTP streams
+* Stream-specific packet loss and jitter
+* Media behaviour across multiple streams in a call
+
+2. Use Cases:
+
+* Debugging multi-stream calls
+* Advanced RTP and media analysis
+* Identifying problematic streams in complex call scenarios
+
++ **Alerts**: It highlights RTCP-detected anomalies identified during the call.
+
+1. **Typical Alerts**:
+
+* Packet loss spikes
+* Excessive jitter
+* Sudden MOS degradation
+* One-way audio indicators
+* Network instability events
+
+Alerts provide rapid visibility into issues without requiring manual inspection of raw RTCP metrics.
+
++ **Operational Use**:
+
+a. Investigate call quality complaints
+b. Validate carrier or network performance
+c. Identify routing or ISP-related problems
+d. Support SLA verification and dispute resolution
+e. Correlate quality changes with routing or configuration updates
+
++ **RTCP Reports**
+
+**Overview**
+
+RTCP (Real-Time Control Protocol) Reports provide detailed media quality and network performance metrics for VoIP calls. RTCP operates alongside RTP and periodically exchanges statistical information between call endpoints during an active call.
+
+ConnexCS captures and visualises RTCP data to enable:
+
+* Call quality assessment
+* Network and media troubleshooting
+* Carrier and routing performance validation
+* Post-call forensic analysis
+
+---
+
+## 2. RTCP Data Collection
+
+RTCP reports are generated at regular intervals throughout the call. Each report represents a snapshot of call quality and network conditions at that moment in time.
+
+ConnexCS aggregates all received RTCP reports and presents:
+
+* Summary statistics
+* Time-based trend visualisations
+* Directional and stream-level insights
+
+---
+
+## 3. RTCP Stats Summary
+
+The RTCP Stats header provides a high-level overview of call quality.
+
+### Metrics Displayed
+
+* **Total Reports**
+  Number of RTCP reports received during the call.
+
+* **Average MOS**
+  Mean Opinion Score averaged across all RTCP reports.
+
+* **Average Packet Loss (%)**
+  Average percentage of RTP packets lost during transmission.
+
+* **Average Jitter (ms)**
+  Average RTP packet arrival variation.
+
+These values provide a quick assessment of overall call quality.
+
+---
+
+## 4. Quality Metrics Over Time
+
+This chart displays **MOS and R-Factor** values plotted across the call duration.
+
+### Purpose
+
+* Visualises call quality stability
+* Identifies transient degradation not visible in averages
+* Supports correlation with routing, network, or configuration events
+
+### Interpretation
+
+* Stable lines indicate consistent call quality
+* Drops or spikes indicate momentary quality issues
+
+---
+
+## 5. MOS Score Trend
+
+Displays MOS values per RTCP reporting interval.
+
+### Purpose
+
+* Highlights short-lived quality fluctuations
+* Useful when users report brief audio issues during otherwise good calls
+
+---
+
+## 6. Packet Loss and Jitter
+
+This chart displays packet loss percentage and jitter over time.
+
+### Purpose
+
+* Identifies network instability
+* Correlates jitter increases with packet loss events
+
+### Interpretation
+
+* Rising jitter often precedes packet loss
+* Sustained elevation indicates network congestion or instability
+
+---
+
+## 7. Codec Distribution
+
+Displays the codecs observed in RTCP reports during the call.
+
+### Purpose
+
+* Confirms codec usage
+* Identifies codec changes or unexpected codec negotiation
+
+### Use Cases
+
+* Validating expected codec selection
+* Troubleshooting codec-related quality issues
+
+---
+
+## 8. Traffic by Direction
+
+Displays RTP traffic flow between call endpoints.
+
+### Purpose
+
+* Confirms bidirectional media flow
+* Assists in identifying one-way or asymmetric audio conditions
+
+---
+
+## 9. Bitrate and Packet Count
+
+Displays RTP bitrate and packet volume over time.
+
+### Purpose
+
+* Verifies continuity of media transmission
+* Identifies gaps, drops, or interruptions in RTP flow
+
+### Interpretation
+
+* Consistent bitrate and packet count indicate stable media delivery
+* Drops correlate with packet loss, jitter spikes, or audio disruption
+
+---
+
+## 10. Operational Use
+
+RTCP Reports and RTCP Stats can be used to:
+
+* Investigate call quality complaints
+* Diagnose network-related media issues
+* Validate carrier or routing performance
+* Identify direction-specific or stream-specific problems
+* Support SLA verification and dispute resolution
+
+---
+
+## 11. Summary
+
+RTCP Reports in ConnexCS provide a comprehensive, time-based view of call quality and media performance. By combining aggregated metrics with detailed visual trends—including MOS, R-Factor, packet loss, jitter, codec usage, and bitrate—operators can accurately assess call behaviour and efficiently identify the root cause of quality issues.
+
 + **Raw Data**: Underlying data that populates the call.
   
 + **SIP Trace**: Visual representation of SIP communications, see details in **SIP Traces**.
