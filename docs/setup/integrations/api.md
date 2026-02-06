@@ -243,6 +243,8 @@ Link Moneris to ConnexCS:
 
 + Streamlines the process of linking carrier information for DID driver functionality.
 
+Configure Scriptforge Settings in ConnexCS:
+
 1. Click `Integrate` under the **Scriptforge** option. A window will appear prompting you to complete the various fields.
 2. **Mode**: Use `Test` for testing connections or `Live` for an active account.
 3. **Company**: Select the customer to integrate.
@@ -262,7 +264,7 @@ Enter Razorpay settings into ConnexCS:
 6. **Surcharge**: A fixed amount added to the invoice total for Razor Pay transactions.
 8. **Surcharge Percent**: A percentage-based amount added to the invoice total for Razor Pay transactions.
 
-<img src= "/setup/img/razorpay.png" width="350" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/setup/img/razorpay.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Xero Integration
 
@@ -305,6 +307,8 @@ Configure the NOWPayments settings in ConnexCS:
 [paypal-9]: /setup/img/paypal-9.png "Paypal-9" style="border: 2px solid #4472C4; border-radius: 8px;"
 
 [paypal-9]: /setup/img/paypal-9.png "Paypal-9"
+
+## Installed Integrations
 
 The `Integrated` APIs can be seen under the **My Installed Integrations** tab.
 
