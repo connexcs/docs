@@ -12,6 +12,8 @@
 
 </details>
 
+## Introduction
+
 **Setup :material-menu-right: Integrations :material-menu-right: API**
 
 Configure **API Integrations** to let ConnexCS connect to external services. It provides seamless connectivity to external systems and payment processors.
@@ -81,13 +83,14 @@ For inbound APIs, please see the [**API**](https://api-docs.connexcs.com/) in th
 
 ## Enable API Integration
 
-1. Click **`Add`**.
-2. Select the required service from the list.
+1. Login to your Control Panel.
+2. Navigate to **Setup :material-menu-right: Integrations :material-menu-right: API**.
+3. Select the required service from the available options.
 
-    <img src= "/setup/img/api12.png" width= "175" style= "border: 2px solid #4472C4; border-radius: 8px;"> 
+    <img src= "/setup/img/api1new.png" style= "border: 2px solid #4472C4; border-radius: 8px;"> 
 
-3. Complete the available fields (see individual API integrations below for details for each provider).
-4. Click **`Save`**.
+4. Complete the available fields (see individual API integrations below for details for each provider).
+5. Click **`Save`**.
 
 !!! info "API Service details"
     Each service requires different details.
@@ -116,7 +119,7 @@ Use this comparison chart to decide between Mass Pay and Express Checkout with P
 
 Enter your PayPal account information.
 
-1. Select **`Add`** and then select **PayPal**.
+1. Click `Integrate` under the **PayPal** option. A window will appear prompting you to complete the various fields.
 2. **Mode**: Use `Test` for testing connections or `Live` for an active account.
 3. To find your **Username**, **Password**, and **Signature**:
     + Access your PayPal account and navigate to **Settings :material-menu-right: Account Settings :material-menu-right: Account Access**.
@@ -132,7 +135,11 @@ Enter your PayPal account information.
 
 5. **Currency**: Select one or more currencies that you will accept.
 6. **Deduct Payment Fees**: Set whether you will deduct the fees or not.
-7. Click **`Save`**.
+7. **Surcharge**: A fixed amount added to the invoice total for PayPal transactions.
+8. **Surcharge Percent**: A percentage-based amount added to the invoice total for PayPal transactions.
+9. Click **`Save`**.
+
+<img src= "/setup/img/paypalnew.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## PayPal IPN Integration
 
@@ -150,15 +157,17 @@ Steps to configure IPN:
 
 **Step 1: Configure ConnexCS**
 
-1. Select **`Add`**, and then select **PayPal IPN**.
-2. Update the following:
+1. Click `Integrate` under the **PayPal IPN** option. A window will appear prompting you to complete the various fields.
+1. Update the following:
     + **IPN URL:** You should never revise this; it's required later to complete the integration.
     + **Payment Type:** Select "Mass Pay" (described above) or "Send Money" (fees may apply).
     + **Verify Transaction:** If selected, ConnexCS will check with PayPal to make sure the transaction is correct.
     + **Currency:** Select one or more currencies that you will accept.
     + **Deduct Payment Fees:** Set whether you will deduct the fees or not.
-3. Click **`Save`**.
-4. To find the IPN URL (needed later in configuration), open the **`paypal_ipn`** now listed in API.
+2. Click **`Save`**.
+3. To find the IPN URL (needed later in configuration), open the **`paypal_ipn`** now listed in API.
+
+<img src= "/setup/img/paypalipnnew.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 **Step 2: Identify your IPN listener to PayPal**
 
@@ -191,12 +200,12 @@ You can view these payments under **Setup :material-menu-right: Information :mat
 
 Configure the Stripe API Keys in ConnexCS:
 
-1. Select **`Add`**, and then select **Stripe**.
+1. Click `Integrate` under the **Stripe** option. A window will appear prompting you to complete the various fields.
 2. **Mode**: Use `Test` for testing connections or `Live` for an active account.
 3. **Public Key** (Publishable) and **Private Key** (Secret): Access the [**Stripe Dashboard**](https://dashboard.stripe.com/account/apikeys) (login if necessary) to access your keys (from [**Stripe Support**](https://stripe.com/docs/keys); `Test` keys are also found in that link).
 4. **Currencies**: Select one or more currencies that you will accept.
 5. **Surcharge**: Amount charged for each transaction.
-6. **Surcharge Precent**:It's the percentage of the total charge that's added as an extra fee.
+6. **Surcharge Precent**: It's the percentage of the total charge that's added as an extra fee.
 
 <img src= "/setup/img/api3.png" width="350" style="border: 2px solid #4472C4; border-radius: 8px;">
 
@@ -204,7 +213,7 @@ Configure the Stripe API Keys in ConnexCS:
 
 Configure Duo Security Settings in ConnexCS:
 
-1. Select **`Add`**, and then select **Duo Security**.
+1. Click `Integrate` under the **Duo Security** option. A window will appear prompting you to complete the various fields.
 2. **Integration Key**, **Secret**, and **Host**: Access the [**Duo Admin Panel**](https://admin.duosecurity.com/), locate the **`Auth API`**, click `Protect` (from [**Duo Auth support**](https://duo.com/docs/authapi)). Find the **Integration Key**, **Secret Key**, and **API Hostname** to complete setup in ConnexCS.
 3. **AKey (Application Key)**: It's a secret key that's used to authenticate your application with Duo Security. You will need to provide the AKey to Duo Security when you configure your application to use Duo Security.
 
@@ -214,7 +223,7 @@ Configure Duo Security Settings in ConnexCS:
 
 Link Moneris to ConnexCS:
 
-1. Select **`Add`**, and then select **Moneris**.
+1. Click `Integrate` under the **Moneris** option. A window will appear prompting you to complete the various fields.
 2. **Store ID**: You can find this in the MRC Welcome emails (contact [**Moneris**](https://www.moneris.com/) for help finding it).
 3. **Signature**: It's used to verify the identity of the cardholder to prevent frauds.
 
@@ -234,9 +243,10 @@ Link Moneris to ConnexCS:
 
 + Streamlines the process of linking carrier information for DID driver functionality.
 
-1. Select **`Add`**, and then select **Scriptforge**.
-2. **Company**: Select the customer to integrate.
-3. **Script Forge**: Select the predefined script (details found under [**Developer :material-menu-right: Scriptforge**](/developers/scriptforge/).
+1. Click `Integrate` under the **Scriptforge** option. A window will appear prompting you to complete the various fields.
+2. **Mode**: Use `Test` for testing connections or `Live` for an active account.
+3. **Company**: Select the customer to integrate.
+4. **Script Forge**: Select the predefined script (details found under [**Developer :material-menu-right: Scriptforge**](/developers/scriptforge/)).
 
 <img src= "/setup/img/api6.png" width="350" style="border: 2px solid #4472C4; border-radius: 8px;">
 
@@ -244,13 +254,15 @@ Link Moneris to ConnexCS:
 
 Enter Razorpay settings into ConnexCS:
 
-1. Select **`Add`**, and then select **Razorpay**.
+1. Click `Integrate` under the **Razor Pay** option. A window will appear prompting you to complete the various fields.
 2. **Mode**: Use `Test` for testing connections or `Live` for an active account.
 3. **Key ID** and **Key Secret**: Access the [**Razorpay Dashboard**](http://dashboard.razorpay.com/), go to Settings and Generate Test Key (from [**Razorpay support**](https://razorpay.com/docs/payments/dashboard/support/))
 4. **Currency**: Select one or more currencies that you will accept.
 5. **Deduct Payment Fees**: Set whether you will deduct the fees or not.
+6. **Surcharge**: A fixed amount added to the invoice total for Razor Pay transactions.
+8. **Surcharge Percent**: A percentage-based amount added to the invoice total for Razor Pay transactions.
 
-<img src= "/setup/img/api7.png" width="350" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/setup/img/razorpay.png" width="350" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Xero Integration
 
@@ -260,7 +272,7 @@ Enter Razorpay settings into ConnexCS:
 
 Configure the Paystack Payment settings in ConnexCS:
 
-1. Select **Add**, and then select Paystack.
+1. Click `Integrate` under the **Paystack** option. A window will appear prompting you to complete the various fields.
 2. **Mode**: Use Test for testing connections or Live for an active account.
 3. **Public Key (Publishable) and Private Key (Secret)**: Access the [Paystack Support Link](https://support.paystack.com/hc/en-us/articles/360009881600-Paystack-Test-Keys-Live-Keys-and-Webhooks) to access the Test keys and Live keys.
 4. **Currencies**: Select one or more currencies that you will accept.
@@ -271,7 +283,7 @@ Configure the Paystack Payment settings in ConnexCS:
 
 Configure the PayMongo Payment settings in ConnexCS:
 
-1. Select **Add**, and then select PayMongo.
+1. Click `Integrate` under the **PayMongo** option. A window will appear prompting you to complete the various fields.
 2. **Mode**: Use Test for testing connections or Live for an active account.
 3. **Public Key (Publishable) and Private Key (Secret)**: Access the [PayMongo API Reference Guide](https://developers.paymongo.com/reference/getting-started-with-your-api) to retrieve the Secret keys.
 4. **Currencies**: Select PHP (Philippine Peso) as the currency.
@@ -282,7 +294,7 @@ Configure the PayMongo Payment settings in ConnexCS:
 
 Configure the NOWPayments settings in ConnexCS:
 
-1. Select **Add**, and then select NOWPayments.
+1. Click `Integrate` under the **NOWPayments** option. A window will appear prompting you to complete the various fields.
 2. **Mode**: Use Test for testing connections or Live for an active account.
 3. **API Key**: Access the [NOWPAyments API Reference Guide](https://nowpayments.io/help/dashboard/how-to-create-an-api-key) to retrieve the Secret keys.
 4. **IPN Key**: Access the [IPN Key guide](https://nowpayments.io/help/what-is/what-is-ipn).
@@ -306,4 +318,6 @@ Configure the Emetec settings in ConnexCS:
 
 [paypal-9]: /setup/img/paypal-9.png "Paypal-9"
 
-.
+The `Integrated` APIs can be seen under the **My Installed Integrations** tab.
+
+<img src= "/setup/img/myintegrations.png" style="border: 2px solid #4472C4; border-radius: 8px;">
