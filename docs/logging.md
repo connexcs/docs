@@ -131,11 +131,11 @@ Click on a specific Call ID to view details and run call tools.
     | **Std Dev**| Degree of variation in network quality.|
     | **Assessment** | Quality classification based on R-Factor thresholds. |
 
-            **Relationship Between MOS and R-Factor**: 
+        **Relationship Between MOS and R-Factor**: 
 
-            * **R-Factor** measures **network performance**
-            * **MOS** represents **user-perceived audio quality**
-            * ConnexCS derives **MOS** from **R-Factor** and** RTCP statistics**.
+        * **R-Factor** measures **network performance**
+        * **MOS** represents **user-perceived audio quality**
+        * ConnexCS derives **MOS** from **R-Factor** and** RTCP statistics**.
 
     6. **Network Statistics**: It represents **RTCP-derived network performance metrics** for the RTP media stream. These metrics describe the **health and stability of the network path** between the source and destination during the call.
     
@@ -168,10 +168,12 @@ Click on a specific Call ID to view details and run call tools.
 
     7. **Sender Information**: It summarizes **RTCP Sender Report (SR)** data for the RTP media stream. It describes the **media characteristics and transmission behavior** of the sending endpoint during the call. <be>This data is used to:</br>
 
-       * Validate codec and bitrate usage
-       * Confirm media continuity
-       * Correlate media duration with signaling
-       * Support quality and capacity analysis <br>****Sender Metrics****</br>
+          * Validate codec and bitrate usage
+          * Confirm media continuity
+          * Correlate media duration with signaling
+          * Support quality and capacity analysis 
+        
+        <br>**Sender Metrics**</br>
     
         |**Field**|**Description**|
         |---------|---------------|
@@ -188,7 +190,7 @@ Click on a specific Call ID to view details and run call tools.
 
     9. **SSRC Details**: SSRC (Synchronization Source Identifier) is a unique identifier used in RTP and RTCP to distinguish individual media streams within a session. <br>In ConnexCS, SSRC details are used to track, correlate, and analyze media streams across RTCP reports.</br>
     
-    10. **Alerts**:It highlights **RTCP anomalies or protocol-level conditions** detected during media analysis. <br>Alerts do **not always indicate poor call quality**—they are intended to surface **diagnostic or signaling irregularities** that may require investigation.</br>
+    10.  **Alerts**:It highlights **RTCP anomalies or protocol-level conditions** detected during media analysis. <br>Alerts do **not always indicate poor call quality**—they are intended to surface **diagnostic or signaling irregularities** that may require investigation.</br>
 
 === "RTCP Stats"
 
