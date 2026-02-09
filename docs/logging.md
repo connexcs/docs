@@ -137,8 +137,8 @@ Click on a specific Call ID to view details and run call tools.
     * **MOS** represents **user-perceived audio quality**
     * ConnexCS derives **MOS** from **R-Factor** and** RTCP statistics**.
 
-    6. **Network Statistics**: It represents **RTCP-derived network performance metrics** for the RTP media stream. These metrics describe the **health and stability of the network path** between the source and destination during the call.
-    
+   6. **Network Statistics**: It represents **RTCP-derived network performance metrics** for the RTP media stream. These metrics describe the **health and stability of the network path** between the source and destination during the call.
+
           1. **Packet Loss Statistics**: It indicates RTP packets that were **not successfully received**. Even small loss can cause audio gaps or distortion. <br>**Fields Explained**</br>
 
             | Field| Description|
@@ -190,7 +190,7 @@ Click on a specific Call ID to view details and run call tools.
 
     9. **SSRC Details**: SSRC (Synchronization Source Identifier) is a unique identifier used in RTP and RTCP to distinguish individual media streams within a session. <br>In ConnexCS, SSRC details are used to track, correlate, and analyze media streams across RTCP reports.</br>
     
-    10.  **Alerts**:It highlights **RTCP anomalies or protocol-level conditions** detected during media analysis. <br>Alerts do **not always indicate poor call quality**—they are intended to surface **diagnostic or signaling irregularities** that may require investigation.</br>
+    10. **Alerts**:It highlights **RTCP anomalies or protocol-level conditions** detected during media analysis. <br>Alerts do **not always indicate poor call quality**—they are intended to surface **diagnostic or signaling irregularities** that may require investigation.</br>
 
 === "RTCP Stats"
 
