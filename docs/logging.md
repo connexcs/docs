@@ -104,10 +104,14 @@ Click on a specific Call ID to view details and run call tools.
     
     In ConnexCS, RTCP data is aggregated hookup by call and presented to help **NOC, QA, and engineering teams** assess call quality, diagnose issues, and validate SLA compliance.
     
-    +. **Duration**: Indicates the total time span of media activity that RTCP (control protocol) data covers for a call or media session.
-    +. **MOS Score (Mean Opinion Score)**: Its a numerical representation of perceived voice quality, modeled to approximate what a human listener would rate the call. <br>**Scale**</br><br>1.0 → Poor (unusable)</br><br>3.0 → Fair (noticeable issues)</br><br>4.0+ → Good to Excellent</br><br>5.0 → Ideal (theoretical maximum)</br>
-    +. **Packet Loss**: It easures the percentage of RTP media packets that were sent but not received.
-    +. **Jitter**: It measures the variation in arrival time of RTP packets, not the delay itself.
+    + **Duration**: Indicates the total time span of media activity that RTCP (control protocol) data covers for a call or media session.
+    
+    + **MOS Score (Mean Opinion Score)**: Its a numerical representation of perceived voice quality, modeled to approximate what a human listener would rate the call. <br>**Scale**</br><br>1.0 → Poor (unusable)</br><br>3.0 → Fair (noticeable issues)</br><br>4.0+ → Good to Excellent</br><br>5.0 → Ideal (theoretical maximum)</br>
+    
+    + **Packet Loss**: It easures the percentage of RTP media packets that were sent but not received.
+    
+    + **Jitter**: It measures the variation in arrival time of RTP packets, not the delay itself.
+    
     + **Quality Metrics Section**: It summarizes **voice quality performance** calculated from RTCP data over the duration of the call. These metrics reflect how the call would be perceived by an end user. <br> 1. **MOS (Mean Opinion Score)**: It represents **perceived audio quality** on a scale from **1.0 (poor)** to **5.0 (excellent)**. <br>**Fields Explained**</br>
     
     | **Field**|**Description**|
@@ -130,8 +134,7 @@ Click on a specific Call ID to view details and run call tools.
     | **Std Dev**| Degree of variation in network quality.|
     | **Assessment** | Quality classification based on R-Factor thresholds. |
 
-        **Relationship Between MOS and R-Factor**: 
-
+    !!! info "Relationship Between MOS and R-Factor" 
         * **R-Factor** measures **network performance**
         * **MOS** represents **user-perceived audio quality**
         * ConnexCS derives **MOS** from **R-Factor** and** RTCP statistics**.
