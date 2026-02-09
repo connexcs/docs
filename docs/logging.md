@@ -67,6 +67,172 @@ This comparison helps in diagnosing issues by examining factors such as switch, 
 
 It's particularly useful for troubleshooting by highlighting discrepancies between successful and failed calls.
 
+*Click each tab for field explanations:*
+
+=== "SIP Trace"
+
+    Visual representation of SIP communications, see details in SIP Traces.
+
+=== "RTCP Reports"
+
+    RTCP (Real-time Transport Control Protocol) reports provide **real-time voice quality and network performance metrics** for RTP media streams. In ConnexCS, RTCP data is aggregated hookup by call and presented to help **NOC, QA, and engineering teams** assess call quality, diagnose issues, and validate SLA compliance.
+    
+    1. **Duration**: Indicates the total time span of media activity that RTCP (control protocol) data covers for a call or media session.
+    2. **MOS Score (Mean Opinion Score)**: Its a numerical representation of perceived voice quality, modeled to approximate what a human listener would rate the call. <br>Scale</br>1.0 → Poor (unusable)<br>3.0 → Fair (noticeable issues)</br><br>4.0+ → Good to Excellent</br><br>5.0 → Ideal (theoretical maximum)</br>
+    3. **Packet Loss**: It easures the percentage of RTP media packets that were sent but not received.
+    4. **Jitter**: It measures the variation in arrival time of RTP packets, not the delay itself.
+
+    + **Quality Metrics Section**: It summarizes **voice quality performance** calculated from RTCP data over the duration of the call. These metrics reflect how the call would be perceived by an end user. <br> 1. **MOS (Mean Opinion Score)**: It represents **perceived audio quality** on a scale from **1.0 (poor)** to **5.0 (excellent)**. <br>Fields Explained</br>
+    | **Field**|**Description**|
+    | ---------|---------------|
+    | **Mean** | Average MOS calculated across all RTCP reports received during the call.|
+    | **Median**| Middle MOS value when all samples are ordered. Useful for identifying skewed results. |
+    | **Min**| Lowest MOS observed during the call.|
+    | **Max**| Highest MOS observed during the call.|
+    | **Std Dev**| Variability of MOS values across the call.|
+    | **Assessment** | Quality classification derived from MOS thresholds.|
+    <br>2. **R-Factor**: Its a network quality score derived using the **ITU-T E-Model (G.107)**. It reflects the combined impact of **latency, jitter, packet loss, and codec behavior**. <br>* Scale: **0 to 100**</br><br>* Higher values indicate better call quality.</br> <br>Fields Explained</br>
+    | Field| Description|
+    | -----|------------|
+    | **Mean**| Average R-Factor across all RTCP samples.|
+    | **Median**| Middle R-Factor value.|
+    | **Min**| Lowest R-Factor observed.|
+    | **Max**| Highest R-Factor observed.|
+    | **Std Dev**| Degree of variation in network quality.|
+    | **Assessment** | Quality classification based on R-Factor thresholds. |
+
+    **Relationship Between MOS and R-Factor**: 
+
+    * **R-Factor** measures **network performance**
+    * **MOS** represents **user-perceived audio quality**
+    * ConnexCS derives MOS from R-Factor and RTCP statistics
+
+    + Below is a **clear, ConnexCS-style technical explanation** of the **Network Statistics** section shown in the image. This is written so it can be **directly used in product documentation or NOC guides**.
+
+    + **Network Statistics**: It represents **RTCP-derived network performance metrics** for the RTP media stream. These metrics describe the **health and stability of the network path** between the source and destination during the call.
+    
+    1. **Packet Loss Statistics**: It indicates RTP packets that were **not successfully received**. Even small loss can cause audio gaps or distortion. <br>**Fields Explained**</br>
+
+    | Field| Description|
+    |------|------------| 
+    | **Mean**| Average packet loss percentage across all RTCP reports.|
+    | **Median**| Middle packet loss value, useful for identifying spikes.|
+    | **Min**| Lowest observed packet loss during the call.|
+    | **Max**| Highest observed packet loss during the call.|
+    | **95th Percentile** | Packet loss level below which 95% of samples fall. Highlights worst-case behavior. |
+    | **Cumulative Lost** | Total number of RTP packets lost over the call duration.|
+
+    2. **Jitter Statistics**: It measures the **variation in packet arrival time**. High jitter can cause buffering, delay, or choppy audio. <br>**Fields Explained**</br>
+
+    | Field| Description|
+    | -----|------------|
+    | **Mean**| Average jitter across all RTCP samples (milliseconds). |
+    | **Median**  | Middle jitter value.|
+    | **Min**| Lowest jitter observed.|
+    | **Max**| Highest jitter observed.|
+    | **95th Percentile** | Jitter value below which 95% of samples fall.|
+    | **Std Dev**| Degree of jitter variation over time.|
+
+    + **Network Endpoints**: This section identifies the **media endpoints** involved in the RTP stream.
+
+    1. **Source Endpoint**: It represents the **originating RTP media source** (IP address and UDP port).
+    2. **Destination Endpoint**: It represents the **receiving RTP media endpoint**.
+
+    + **Sender Information**: It summarizes **RTCP Sender Report (SR)** data for the RTP media stream. It describes the **media characteristics and transmission behavior** of the sending endpoint during the call. <be>This data is used to:</br>
+
+    * Validate codec and bitrate usage
+    * Confirm media continuity
+    * Correlate media duration with signaling
+    * Support quality and capacity analysis <br>**Sender Metrics**</br>
+    |**Field**|**Description**|
+    |---------|---------------|
+    |**Report Count**|Number of RTCP Sender Reports received from the sending endpoint.<br> A single report indicates a **short-duration call** or limited reporting interval.</br>|
+    |**Total Packets**|Total RTP packets transmitted by the sender during the reported duration.|
+    |**Total Data**|Total media payload size sent over RTP.|
+    |**Primary Codec**|Codec used by the sender for media encoding.|
+    |**Bitrate (Mean)**|Average RTP payload bitrate sent during the call.|
+    |**Bitrate (Range)**| Minimum and maximum bitrate observed. <br>Identical values indicate **stable transmission with no bitrate fluctuation**.</br>||**Total Duration**|Total media transmission time reported by the sender.|
+    |**Duration (Mean)**|Average duration per RTCP report.<br>Matches total duration due to a single report.<br>|
+    |**Codec Distribution**|describes the set of audio or video codecs used during a media session and how frequently each codec appears over time.|
+
+    + **Direction Analysis**: Its the process of analyzing RTP/RTCP media metrics independently for inbound (RX) and outbound (TX) streams to identify directional call quality and network performance issues.
+    
+    + **SSRC Details**: SSRC (Synchronization Source Identifier) is a unique identifier used in RTP and RTCP to distinguish individual media streams within a session. <br>In ConnexCS, SSRC details are used to track, correlate, and analyze media streams across RTCP reports.</br>
+    
+    + **Alerts**:It highlights **RTCP anomalies or protocol-level conditions** detected during media analysis. <br>Alerts do **not always indicate poor call quality**—they are intended to surface **diagnostic or signaling irregularities** that may require investigation.</br>
+
+=== "RTCP Stats"
+
+    |**Section**|**Parameter**| **Description**|
+    | ----------|-------------|--------------- |
+    | **Summary** | **Total Reports**| Total number of RTCP reports received during the call. Indicates how many quality samples were collected over time. |
+    |             | **Avg MOS**| Average Mean Opinion Score across all RTCP reports, representing overall perceived audio quality.|
+    |             | **Avg Packet Loss** | Average percentage of RTP packets lost across all reports. |
+    |             | **Avg Jitter**| Average variation in packet arrival time across the call, measured in milliseconds.|
+
+    1. **Quality Metrics Over Time**
+
+    | Parameter| Description|
+    | ---------|------------|
+    | **MOS (Time Series)**| MOS values plotted over time to show consistency or variation in perceived audio quality during the call. |
+    | **R-Factor (Time Series)** | R-Factor values plotted over time, representing network quality as calculated by the E-Model. |
+    | **Time Axis**| Timestamp of each RTCP report sample, showing when metrics were recorded.|
+
+    2. **MOS Score Trend**
+
+    | Parameter| Description|
+    | ---------|------------|
+    | **MOS Bar Value** | Individual MOS score reported at each RTCP interval.|
+    | **Consistency**| Identical values indicate stable perceived audio quality throughout the call. |
+
+    3. **Packet Loss & Jitter**
+
+    | Parameter| Description|
+    | ---------|----------- |
+    | **Packet Loss %** | Percentage of RTP packets lost at each RTCP interval.|
+    | **Jitter (ms)** | Packet arrival time variation at each RTCP interval.|
+    | **Dual Axis**| Loss and jitter are plotted together to correlate timing instability with packet loss. |
+
+    4. **Codec Distribution**
+
+    | Parameter| Description|
+    | ---------|------------|
+    |**Codec Name**| Audio codec used in RTP media transmission (e.g., G.711).|
+    |**Report Count per Codec** | Number of RTCP reports associated with each codec.|
+    |**Unknown Codec**| Reports where codec information was not available in RTCP data.|
+    |**Distribution Chart**| Visual breakdown showing codec usage proportions during the call. |
+
+    5. **Traffic by Direction**
+
+    | Parameter| Description|
+    |----------|------------|
+    | **Source → Destination**| RTP traffic flow direction represented by source IP:port to destination IP:port. |
+    |**Directional Traffic Share** | Visual representation of how much media traffic flowed in each direction.|
+    |**Directional Analysis**| Helps identify asymmetric or one-way media behavior.|
+
+    6. **Bitrate & Packet Count**
+
+    | Parameter| Description|
+    | ---------|------------|
+    | **Bitrate (kbps)**| RTP payload bitrate over time, indicating bandwidth usage by the codec.|
+    | **Packet Count**| Number of RTP packets transmitted during each RTCP interval.|
+    | **Correlation Curve** | Shows relationship between bitrate and packet volume over time.|
+    | **Peak Bitrate**| Maximum observed bitrate during the call.|
+
+=== "Logs"
+
+    Provides a chronological trace of call setup processing, showing how the system evaluated an incoming call against CLI policies, destination rules, recording configuration, and routing logic before allowing or rejecting the call. <br>Each entry in the log reflects a policy check or routing decision executed by the platform, confirming that the call was validated against all applicable controls before proceeding.</br><br>It captures the decision flow applied at call time, including:</br>
+
+    1. Whether the incoming destination number or CLI was rewritten.
+    2. Whether the CLI matched any configured rules.
+    3. Whether call recording was applied.
+    4. Which routing mode and selection strategy were used.
+    5. Whether the destination number (DN) was evaluated against global blocklists and allow lists.
+    6. Whether the CLI (ANI) was evaluated against global and custom blocklists.
+
+=== "Raw Data"
+    Underlying data that populates the call.
+
 ### How to use?
 
 1. Login to your **Control Panel**.
@@ -91,273 +257,6 @@ Click on a specific Call ID to view details and run call tools.
     At the bottom, view the Providers, Billing details, Graphs, and Logs of the respective call.
 
     + **Graphs**: It will display parameters like Re=ound Trip Time, MOS, Jitter, and Packet Loss, only if the call experiences any of these issues.
-
-+ **RTCP Reports**: It provides a complete view of **call quality, network performance, media direction, and detected issues**.
-
-1. **Quality Metrics**: Provides a high-level summary of perceived and technical call quality derived from RTCP reports.
-
-2. **Metrics Displayed**:
-
-|Parameter|Description|
-|---------|-----------|
-|**MOS (Mean Opinion Score)**|Calculated score representing perceived audio quality on a scale from 1.0 (Poor) to 5.0 (Excellent).|
-|**R-Factor**|Technical quality score (0–100) used internally to derive MOS.|
-|**Packet Loss (%)**|Percentage of RTP packets lost during transmission.|
-|**Jitter (ms)**|Variation in RTP packet arrival time.|
-|**Duration**| Time period over which RTCP data was collected, including the number of RTCP reports received.
-
-3. **Statistical Breakdown**: Each metric includes:
-
-* Mean
-* Median
-* Minimum
-* Maximum
-* Standard Deviation
-
-These values allow identification of both overall call quality and short-term degradation.
-
-+ **Network Statistics**: Provides detailed RTCP network-level measurements observed during the call.
-
-1. **Purpose**:
-
-* Network troubleshooting
-* Identifying congestion or instability
-* Correlating quality issues with transport behaviour
-
-2. **Typical Information**:
-
-* Packet transmission statistics
-* Packet loss trends
-* Timing and delivery variation
-* Network consistency over the call duration
-
-This data helps determine whether issues are caused by **network conditions rather than application or routing logic**.
-
-+ **Sender Information**
-
-The **Sender Information** tab displays RTCP data related to the RTP stream sender.
-
-1. **Purpose**
-
-* Which endpoint transmitted the media
-* Transmission characteristics of the sender
-* Potential sender-side quality issues
-
-This information is useful when diagnosing asymmetric or one-directional quality problems.
-
-+ **Direction Analysis**: It separates RTCP metrics by media direction.
-
-1. **Description**: RTCP data is analysed independently for:
-
-* Caller → Callee
-* Callee → Caller
-
-2. Use Cases
-
-* Identifying one-way audio issues
-* Diagnosing direction-specific packet loss or jitter
-* Determining whether degradation is isolated to a single media path
-
-This view is critical for troubleshooting issues that do not affect both parties equally.
-
-+ **SSRC Details**: Provides per-stream RTCP statistics using SSRC (Synchronization Source) identifiers.
-
-1. **Description**: Each RTP media stream is identified by a unique SSRC. This tab allows inspection of:
-
-* Individual RTP streams
-* Stream-specific packet loss and jitter
-* Media behaviour across multiple streams in a call
-
-2. Use Cases:
-
-* Debugging multi-stream calls
-* Advanced RTP and media analysis
-* Identifying problematic streams in complex call scenarios
-
-+ **Alerts**: It highlights RTCP-detected anomalies identified during the call.
-
-1. **Typical Alerts**:
-
-* Packet loss spikes
-* Excessive jitter
-* Sudden MOS degradation
-* One-way audio indicators
-* Network instability events
-
-Alerts provide rapid visibility into issues without requiring manual inspection of raw RTCP metrics.
-
-+ **Operational Use**:
-
-a. Investigate call quality complaints
-b. Validate carrier or network performance
-c. Identify routing or ISP-related problems
-d. Support SLA verification and dispute resolution
-e. Correlate quality changes with routing or configuration updates
-
-+ **RTCP Reports**
-
-**Overview**
-
-RTCP (Real-Time Control Protocol) Reports provide detailed media quality and network performance metrics for VoIP calls. RTCP operates alongside RTP and periodically exchanges statistical information between call endpoints during an active call.
-
-ConnexCS captures and visualises RTCP data to enable:
-
-* Call quality assessment
-* Network and media troubleshooting
-* Carrier and routing performance validation
-* Post-call forensic analysis
-
----
-
-## 2. RTCP Data Collection
-
-RTCP reports are generated at regular intervals throughout the call. Each report represents a snapshot of call quality and network conditions at that moment in time.
-
-ConnexCS aggregates all received RTCP reports and presents:
-
-* Summary statistics
-* Time-based trend visualisations
-* Directional and stream-level insights
-
----
-
-## 3. RTCP Stats Summary
-
-The RTCP Stats header provides a high-level overview of call quality.
-
-### Metrics Displayed
-
-* **Total Reports**
-  Number of RTCP reports received during the call.
-
-* **Average MOS**
-  Mean Opinion Score averaged across all RTCP reports.
-
-* **Average Packet Loss (%)**
-  Average percentage of RTP packets lost during transmission.
-
-* **Average Jitter (ms)**
-  Average RTP packet arrival variation.
-
-These values provide a quick assessment of overall call quality.
-
----
-
-## 4. Quality Metrics Over Time
-
-This chart displays **MOS and R-Factor** values plotted across the call duration.
-
-### Purpose
-
-* Visualises call quality stability
-* Identifies transient degradation not visible in averages
-* Supports correlation with routing, network, or configuration events
-
-### Interpretation
-
-* Stable lines indicate consistent call quality
-* Drops or spikes indicate momentary quality issues
-
----
-
-## 5. MOS Score Trend
-
-Displays MOS values per RTCP reporting interval.
-
-### Purpose
-
-* Highlights short-lived quality fluctuations
-* Useful when users report brief audio issues during otherwise good calls
-
----
-
-## 6. Packet Loss and Jitter
-
-This chart displays packet loss percentage and jitter over time.
-
-### Purpose
-
-* Identifies network instability
-* Correlates jitter increases with packet loss events
-
-### Interpretation
-
-* Rising jitter often precedes packet loss
-* Sustained elevation indicates network congestion or instability
-
----
-
-## 7. Codec Distribution
-
-Displays the codecs observed in RTCP reports during the call.
-
-### Purpose
-
-* Confirms codec usage
-* Identifies codec changes or unexpected codec negotiation
-
-### Use Cases
-
-* Validating expected codec selection
-* Troubleshooting codec-related quality issues
-
----
-
-## 8. Traffic by Direction
-
-Displays RTP traffic flow between call endpoints.
-
-### Purpose
-
-* Confirms bidirectional media flow
-* Assists in identifying one-way or asymmetric audio conditions
-
----
-
-## 9. Bitrate and Packet Count
-
-Displays RTP bitrate and packet volume over time.
-
-### Purpose
-
-* Verifies continuity of media transmission
-* Identifies gaps, drops, or interruptions in RTP flow
-
-### Interpretation
-
-* Consistent bitrate and packet count indicate stable media delivery
-* Drops correlate with packet loss, jitter spikes, or audio disruption
-
----
-
-## 10. Operational Use
-
-RTCP Reports and RTCP Stats can be used to:
-
-* Investigate call quality complaints
-* Diagnose network-related media issues
-* Validate carrier or routing performance
-* Identify direction-specific or stream-specific problems
-* Support SLA verification and dispute resolution
-
----
-
-## 11. Summary
-
-RTCP Reports in ConnexCS provide a comprehensive, time-based view of call quality and media performance. By combining aggregated metrics with detailed visual trends—including MOS, R-Factor, packet loss, jitter, codec usage, and bitrate—operators can accurately assess call behaviour and efficiently identify the root cause of quality issues.
-
-+ **Raw Data**: Underlying data that populates the call.
-  
-+ **SIP Trace**: Visual representation of SIP communications, see details in **SIP Traces**.
-  
-+ **Simulate**: See details above for **Simulating Calls**.
-  
-+ **Class5**: If you use the Class5 system, there will be some extra information, such as Request Parameters.
-  
-+ **Refresh**: For Live calls, use **`Refresh`** to reload the logs to show the most recent changes. This is necessary, as some data processing happens through the CDR before it's displayed.
-
-!!! Tip "More on Call-IDs"
-    See [**Call-ID**](/guides/howto/callid) for further information and troubleshooting.
 
 ### SIP Traces
 
@@ -563,7 +462,6 @@ You can have take a look at the various SIP Timers in the table below:
 | **Timer K** | T4 for UDP| 17.1.2.2| Wait time for response retransmissions|
 
 <font size="2">*Table source*: [**IBM**](https://www.ibm.com/docs/en/was/8.5.5?topic=timers-sip-timer-summary); *Original Ref*: [**RFC 3261**](https://www.ietf.org/rfc/rfc3261.txt)</font size>
-
 
 [logging-sip]: /misc/img/logging-sip.png "SIP Traces"
 
