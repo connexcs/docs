@@ -131,11 +131,11 @@ Click on a specific Call ID to view details and run call tools.
     | **Std Dev**| Degree of variation in network quality.|
     | **Assessment** | Quality classification based on R-Factor thresholds. |
 
-        **Relationship Between MOS and R-Factor**: 
+    **Relationship Between MOS and R-Factor**: 
 
-        * **R-Factor** measures **network performance**
-        * **MOS** represents **user-perceived audio quality**
-        * ConnexCS derives **MOS** from **R-Factor** and** RTCP statistics**.
+    * **R-Factor** measures **network performance**
+    * **MOS** represents **user-perceived audio quality**
+    * ConnexCS derives **MOS** from **R-Factor** and** RTCP statistics**.
 
     6. **Network Statistics**: It represents **RTCP-derived network performance metrics** for the RTP media stream. These metrics describe the **health and stability of the network path** between the source and destination during the call.
     
