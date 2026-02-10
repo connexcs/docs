@@ -44,3 +44,19 @@ To add a new payment, select **`Make Payment`**.
 
 !!! warning "Negative Payments"
     If you make some kind of purchase on the account, it will appear as a negative amount under **Total**.
+
+## Yoco Payment
+
+### Overview
+
+**Yoco Payments** is a payment processing service that enables applications and customer portals to **initiate, authorise, and complete payment transactions** through a secure, hosted checkout provided by Yoco.
+
+Yoco manages the full payment lifecycle, including transaction authorisation, validation, and settlement, while the platform initiating the payment remains out of scope for handling sensitive payment data.
+
+<img src= "/customer-portal/img/yococp.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
++ **Amount**: Enter the amount to be paid. The amount must be greater than ZAR 2.
+
+    !!! Note "Any configured **surcharge** (fixed or percentage) is applied automatically."
+
++ **Currency**: Displays the currency in which the payment will be processed. **Currency is fixed to ZAR (South African Rand)**.
