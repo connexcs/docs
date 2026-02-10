@@ -153,7 +153,7 @@ This key determines which Yoco account the API requests are executed against and
 
 2. A window will appear, select the version of the app and hit `Install` again. <br><img src= "/apps/img/yoco2.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-3. Go to the `Installed Versions` tab, then hover over the `Config` (settings) button. <br><img src= "/apps/img/yoco3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+3. Go to the `Installed Versions` tab, then hover on `settings` icon and click on `Config`. <br><img src= "/apps/img/yoco3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 4. A window will open, prompting you to enter the following details:
       + `API User`: The selected API user represents the authenticated entity making API requests.
