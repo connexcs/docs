@@ -52,7 +52,7 @@ The Apps can be created by other customers or developers and used by ConnexCS's 
 
 ### DID Spam Score
 
-#### **Overview**
+#### Overview
 
 This application will help you update the Spam Score of your DIDs and send a report to the provided email ID.
 
@@ -78,7 +78,7 @@ Before using the app, ensure that the [**Spam Score package**](https://docs.conn
 
 ### Autonomous Calling
 
-#### **Overview**
+#### Overview
 
 This application allows autonomous dialling of numbers from an uploaded list.
 
@@ -101,7 +101,7 @@ This application allows autonomous dialling of numbers from an uploaded list.
 
 ### Click-2-Dial (Programmatic API Calling)
 
-#### **Overview**
+#### Overview
 
 **Click-to-Dial API** enables applications, websites, or software systems to initiate phone calls with a single click or programmatic command.
 
@@ -151,14 +151,13 @@ This key determines which Yoco account the API requests are executed against and
 
 1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: Yoco** and click `Install`.<img src= "/apps/img/yoco1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-2. A window will appear, select the version of the app and hit `Install` again. <img src= "/apps/img/yoco2.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
+2. A window will appear, select the version of the app and hit `Install` again. <br><img src= "/apps/img/yoco2.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-3. In the `Installed Versions` tab click `Config`.
-   <img src= "/apps/img/yoco3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
+3. Go to the `Installed Versions` tab, then hover over the `Config` (settings) button. <br><img src= "/apps/img/yoco3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 4. A window will open, prompting you to enter the following details:
       + `API User`: The selected API user represents the authenticated entity making API requests.
-      + Enter the `Secret Key`. This key is required for authentication. Follow the steps [here]() to generate and retrieve the API key. **ConnexCS uses this key to securely authenticate and authorise all payment-related API requests**.
+      + Enter the `Secret Key`. This key is required for authentication. Follow the steps [here](/setup/appstore/#where-to-obtain-the-api-secret-key) to generate and retrieve the API key. **ConnexCS uses this key to securely authenticate and authorise all payment-related API requests**.
       + `Surcharge`: Configure an additional charge to be applied to payments.You can choose one of the following options:
         + **Amount (ZAR)**: Applies a fixed surcharge in South African Rand (ZAR).
         + **Percent**: Applies a percentage-based surcharge on the transaction amount. <img src= "/apps/img/yoco4.png" style="border: 2px solid #4472C4; border-radius: 8px;">
