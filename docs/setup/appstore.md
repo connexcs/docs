@@ -124,18 +124,18 @@ Instead of manually dialing a phone number, users or systems can trigger a call 
 
 ### Yoco Payment
 
-#### **Overview**
+#### Overview
 
 **Yoco** is a payment gateway and merchant services platform that enables businesses to accept, process, and manage digital payments securely through APIs and hosted payment flows.
 
 Instead of handling payment processing, card security, and transaction compliance internally, applications and platforms can integrate with Yoco to initiate charges, collect customer payments, and track transactions programmatically, making payment collection faster, more reliable, and secure.
 
-### How it works?
+#### How it works?
 
 To enable payment-related operations via Yoco, the system requires authentication using a `Secret API Key`.
 This key determines which Yoco account the API requests are executed against and ensures secure access to subscribed services.
 
-### Where to Obtain the API Secret Key?
+#### Where to Obtain the API Secret Key?
 
 1. The customer logs in to the `Yoco App` / `Yoco Control Panel`.
 
