@@ -102,13 +102,11 @@ Click on a specific Call ID to view details and run call tools.
 
     RTCP (Real-time Transport Control Protocol) reports provide **real-time voice quality and network performance metrics** for RTP media streams.
     
-    In ConnexCS, RTCP data is aggregated hookup by call and presented to help **NOC, QA, and engineering teams** assess call quality, diagnose issues, and validate SLA compliance.
-    
     + **Duration**: Indicates the total time span of media activity that RTCP (control protocol) data covers for a call or media session.
     
-    + **MOS Score (Mean Opinion Score)**: Its a numerical representation of perceived voice quality, modeled to approximate what a human listener would rate the call. <br>**Scale**</br><br>1.0 → Poor (unusable)</br><br>3.0 → Fair (noticeable issues)</br><br>4.0+ → Good to Excellent</br><br>5.0 → Ideal (theoretical maximum)</br>
+    + **MOS (Mean Opinion Score)**: Its a numerical representation of perceived voice quality, modeled to approximate what a human listener would rate the call. <br>**Scale**</br><br>1.0 → Poor (unusable)</br><br>3.0 → Fair (noticeable issues)</br><br>4.0+ → Good to Excellent</br><br>5.0 → Ideal (theoretical maximum)</br>
     
-    + **Packet Loss**: It easures the percentage of RTP media packets that were sent but not received.
+    + **Packet Loss**: It measures the percentage of RTP media packets that were sent but never received at the destination.
     
     + **Jitter**: It measures the variation in arrival time of RTP packets, not the delay itself.
     
@@ -137,7 +135,6 @@ Click on a specific Call ID to view details and run call tools.
     !!! info "Relationship Between MOS and R-Factor" 
         * **R-Factor** measures **network performance**
         * **MOS** represents **user-perceived audio quality**
-        * ConnexCS derives **MOS** from **R-Factor** and** RTCP statistics**.
 
     * **Network Statistics**: It represents **RTCP-derived network performance metrics** for the RTP media stream. These metrics describe the **health and stability of the network path** between the source and destination during the call.
     
@@ -165,7 +162,7 @@ Click on a specific Call ID to view details and run call tools.
 
           3. **Network Endpoints**: This section identifies the **media endpoints** involved in the RTP stream.
 
-             1. **Source Endpoint**: It represents the **originating RTP media source** (IP address and UDP port).
+             1. **Source Endpoint**: It represents the **originating RTP media source** (IP address).
              2. **Destination Endpoint**: It represents the **receiving RTP media endpoint**.
 
     + **Sender Information**: It summarizes **RTCP Sender Report (SR)** data for the RTP media stream. It describes the **media characteristics and transmission behavior** of the sending endpoint during the call. <be>This data is used to:</br>
@@ -186,11 +183,11 @@ Click on a specific Call ID to view details and run call tools.
         |**Bitrate (Mean)**|Average RTP payload bitrate sent during the call.|
         |**Bitrate (Range)**| Minimum and maximum bitrate observed. <br>Identical values indicate **stable transmission with no bitrate fluctuation**.</br>||**Total Duration**|Total media transmission time reported by the sender.|
         |**Duration (Mean)**|Average duration per RTCP report.<br>Matches total duration due to a single report.<br>|
-        |**Codec Distribution**|describes the set of audio or video codecs used during a media session and how frequently each codec appears over time.|
+        |**Codec Distribution**|Describes the set of audio or video codecs used during a media session|
 
-    + **Direction Analysis**: Its the process of analyzing RTP/RTCP media metrics independently for inbound (RX) and outbound (TX) streams to identify directional call quality and network performance issues.
+    + **Direction Analysis**: It evaluates RTP media quality separately for each call direction, measuring packet loss and jitter between specific source and destination `IP:port pairs`. You can click on a direction IP to see the details on this particular direction only.
 
-    + **SSRC Details**: SSRC (Synchronization Source Identifier) is a unique identifier used in RTP and RTCP to distinguish individual media streams within a session. <br>In ConnexCS, SSRC details are used to track, correlate, and analyze media streams across RTCP reports.</br>
+    + **SSRC Details**: SSRC (Synchronization Source Identifier) is a unique identifier used in RTP and RTCP to distinguish individual media streams within a session. <br>In ConnexCS, SSRC details are used to track, correlate, and analyze media streams across RTCP reports.</br> You can click on a ssrc to check the details of a specific media stream within a session.
 
     + **Alerts**:It highlights **RTCP anomalies or protocol-level conditions** detected during media analysis. <br>Alerts do **not always indicate poor call quality**—they are intended to surface **diagnostic or signaling irregularities** that may require investigation.</br>
 
@@ -211,11 +208,11 @@ Click on a specific Call ID to view details and run call tools.
     | **R-Factor (Time Series)** | R-Factor values plotted over time, representing network quality as calculated by the E-Model. |
     | **Time Axis**| Timestamp of each RTCP report sample, showing when metrics were recorded.|
 
-    **MOS Score Trend**
+    **MOS Trend**
 
     | Parameter| Description|
     | ---------|------------|
-    | **MOS Bar Value** | Individual MOS score reported at each RTCP interval.|
+    | **MOS Bar Value** | Individual MOS reported at each RTCP interval.|
     | **Consistency**| Identical values indicate stable perceived audio quality throughout the call. |
 
     **Packet Loss & Jitter**
