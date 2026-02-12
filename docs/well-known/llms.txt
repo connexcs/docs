@@ -251,7 +251,7 @@ apps_platform_nav: [
 	"docs/apps/architecture/domain.md",
 	"docs/apps/architecture/key-value.md",
 	"docs/apps/page-builder.md",
-	"docs/apps/architecture/script.md",
+	"docs/apps/architecture/scriptforge.md",
 	"docs/apps/architecture/template.md",
 	"docs/apps/architecture/query-builder.md",
 	"docs/apps/architecture/project.md",
@@ -350,7 +350,7 @@ custom_app_development:
 	related_docs: [
 		"docs/apps/introduction.md",
 		"docs/apps/page-builder.md",
-		"docs/apps/architecture/script.md"
+		"docs/apps/architecture/scriptforge.md"
 	]
 
 [rules]

@@ -2,7 +2,6 @@ site_name: ConnexCS Documentation
 site_url: https://docs.connexcs.com
 site_description: Connex Cloud Softswitch
 site_author: ConnexCS Team
-google_analytics: ['UA-155210453-1', 'docs.connexcs.com']
 theme:
   name: material
   font: false 
@@ -36,8 +35,9 @@ plugins:
     - mermaid2
     - external-markdown
     - redirects:
-        redirect_maps:
-            apps/architecture/script.md: apps/architecture/scriptforge.md 
+        redirect_maps: {}
+    - google_analytics:
+        gaID: UA-155210453-1
 
 markdown_extensions:
   - admonition
@@ -56,8 +56,8 @@ markdown_extensions:
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - def_list
   - footnotes
 
@@ -296,9 +296,9 @@ nav:
             - Page Builder: apps/page-builder.md
             - Document Content Model: apps/architecture/dcm.md
         - ScriptForge: 
-            Introduction: apps/architecture/scriptforge.md
-            ScriptForge Migration Guide: apps/architecture/scriptforge-migration.md
-            ScriptForge API Reference:
+            - Introduction: apps/architecture/scriptforge.md
+            - ScriptForge Migration Guide: apps/architecture/scriptforge-migration.md
+            - ScriptForge API Reference:
                 - cxC5Server: apps/architecture/cxC5Server.md
                 - cxCallControl: apps/architecture/cxCallControl.md
                 - cxJob: apps/architecture/cxJob.md

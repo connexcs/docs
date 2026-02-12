@@ -427,7 +427,7 @@
    - Set up queries
    - Connect to UI components
 
-6. **Write Business Logic** ([Script Forge](apps/architecture/script.md))
+6. **Write Business Logic** ([Script Forge](apps/architecture/scriptforge.md))
    - Create JavaScript functions
    - Handle form submissions
    - Process data
