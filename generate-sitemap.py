@@ -24,6 +24,7 @@ BASE_URL = f"https://raw.githubusercontent.com/{REPO_OWNER}/{REPO_NAME}/refs/hea
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 OUTPUT_FILE = os.path.join(SCRIPT_DIR, "github-sitemap.xml")
+HTML_OUTPUT_FILE = os.path.join(SCRIPT_DIR, "github-sitemap.html")
 
 
 def get_md_files(root_dir):
@@ -86,6 +87,50 @@ def pretty_xml(element):
     return parsed.toprettyxml(indent="  ", encoding=None)
 
 
+def build_html_index(md_files):
+    """Build an HTML page with a simple list of links to each raw .md file.
+
+    Each link's visible text is the full relative path (e.g.
+    docs/anyedge/anyedge.md) so that crawlers / indexers that derive
+    the item name from the link text will retain the complete path
+    context.
+    """
+    lines = [
+        "<!DOCTYPE html>",
+        "<html lang=\"en\">",
+        "<head>",
+        "  <meta charset=\"utf-8\">",
+        "  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
+        "  <title>ConnexCS Documentation – File Index</title>",
+        "  <style>",
+        "    body { font-family: system-ui, -apple-system, sans-serif;",
+        "           max-width: 960px; margin: 2rem auto; padding: 0 1rem;",
+        "           color: #222; }",
+        "    h1   { border-bottom: 2px solid #0969da; padding-bottom: .4rem; }",
+        "    ul   { list-style: none; padding: 0; }",
+        "    li   { padding: .25rem 0; }",
+        "    a    { color: #0969da; text-decoration: none; }",
+        "    a:hover { text-decoration: underline; }",
+        "    .count { color: #666; font-size: .9rem; }",
+        "  </style>",
+        "</head>",
+        "<body>",
+        "  <h1>ConnexCS Documentation – File Index</h1>",
+        f"  <p class=\"count\">{len(md_files)} documents</p>",
+        "  <ul>",
+    ]
+    for rel_path in md_files:
+        url_path = rel_path.replace(os.sep, "/")
+        href = f"{BASE_URL}/{url_path}"
+        lines.append(f"    <li><a href=\"{href}\">{url_path}</a></li>")
+    lines += [
+        "  </ul>",
+        "</body>",
+        "</html>",
+    ]
+    return "\n".join(lines) + "\n"
+
+
 def main():
     print(f"Scanning for .md files in: {SCRIPT_DIR}")
     md_files = get_md_files(SCRIPT_DIR)
@@ -99,8 +144,19 @@ def main():
         f.write(xml_str)
 
     print(f"Sitemap written to: {OUTPUT_FILE}")
+
+    # ── HTML index ──────────────────────────────────────────────────
+    print("Building HTML index...")
+    html_str = build_html_index(md_files)
+    with open(HTML_OUTPUT_FILE, "w", encoding="utf-8") as f:
+        f.write(html_str)
+
+    print(f"HTML index written to: {HTML_OUTPUT_FILE}")
     print(
         f"Raw URL: https://raw.githubusercontent.com/{REPO_OWNER}/{REPO_NAME}/{BRANCH}/github-sitemap.xml"
+    )
+    print(
+        f"HTML URL: https://raw.githubusercontent.com/{REPO_OWNER}/{REPO_NAME}/{BRANCH}/github-sitemap.html"
     )
 
 
