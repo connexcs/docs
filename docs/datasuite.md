@@ -117,7 +117,7 @@ Four options are available: **New Workspace**, **Load Workspace**, **Bulk Upload
 3.**Explore Tables**:
 
 1. **Local**: <br><img src= "/misc/img/dms10.png" width= "400"></br>
-    + **Database**: Add a new table to an existing workspace. [Click here to know more.](https://bani-41024--connexcs-docs.netlify.app/datasuite/#upload-data-from-local-or-remote-databases).
+    + **Database**: Add a new table to an existing workspace. [Click here to know more.](/datasuite/#upload-data-from-local-or-remote-databases).
         + **Map Table Columns**: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. A window will appear as follows. <img src= "/misc/img/dms17.png" style="border: 2px solid #4472C4; border-radius: 8px;">
               + **Mapping Target Table**: You can select the destination (**CLI**, **Contact**, **Customer**, **DID**, **SIP User Auth**) to upload the selected data.
               + **Refresh** any changed or modified entries inside the table.
@@ -193,7 +193,7 @@ Four options are available: **New Workspace**, **Load Workspace**, **Bulk Upload
 
 ### Remote Query
 
-Upload your data follow the steps mentioned in [Step 3](https://bani-41024--connexcs-docs.netlify.app/datasuite/#step-3-upload-data)
+Upload your data follow the steps mentioned in [Step 3](/datasuite/#step-3-upload-data)
 
   A remote query is a request that you send to a database server to fetch or process information directly on the server.
   Instead of doing the work (like filtering or calculating data) on your own computer or app (the "client"), you let the powerful server handle it. Once the server finishes, it sends you back only the results you need.

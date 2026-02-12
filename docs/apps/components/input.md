@@ -24,7 +24,7 @@ The Input field also support client-side validation.
 
 The input box is a core component in allow information to be entered into the system, as well as displaying existing information.
 
-The input box can also be dragged into other components including: [**Sub-Form**](https://bani-appsection--connexcs-docs.netlify.app/apps/components/sub-form/) and [**Sub-Form+**](https://bani-appsection--connexcs-docs.netlify.app/apps/components/sub-form%2B/).
+The input box can also be dragged into other components including: [**Sub-Form**](/apps/components/sub-form/) and [**Sub-Form+**](/apps/components/sub-form%2B/).
 
 ### Interactivity
 

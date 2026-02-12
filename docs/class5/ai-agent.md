@@ -135,7 +135,7 @@ With AI-driven automation, businesses can enhance customer experience while sign
         + **Low temperature (close to 0)** makes the model's responses more predictable by selecting the most probable words.
         + **High temperature (closer to 1 or above)** increases randomness, leading to more diverse and creative but potentially less coherent responses.
     
-    + **First Task**: Select the list of pre-created tasks, so that your AI will perform this task as the first task and rest prompts after this task. [Click here](https://bani-aiagenttask--connexcs-docs.netlify.app/class5/ai-agent/#task) to know more about tasks.
+    + **First Task**: Select the list of pre-created tasks, so that your AI will perform this task as the first task and rest prompts after this task. [Click here](/app/class5/ai-agent/#task) to know more about tasks.
     
     + **Knowledge Base**: Allows you to select which indexed documents an AI Agent can reference when answering user queries. 
     
@@ -273,7 +273,7 @@ It usually involves processing inputs, making decisions, and taking actions to a
 
         <img src= "/class5/img/task5new.png" style="border: 2px solid #4472C4; border-radius: 8px;"> 
 
-    + To use this created task select it under [Advanced :material-menu-right:First Task](https://bani-aiagent1--connexcs-docs.netlify.app/class5/ai-agent/#__tabbed_1_5).
+    + To use this created task select it under [Advanced :material-menu-right:First Task](/class5/ai-agent/#__tabbed_1_5).
 
     !!! Note
         1. If `Include Primary Chat History` is `checked`, `Include Primary Prompt` will be ticked automatically.

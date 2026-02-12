@@ -200,7 +200,7 @@ Drag & Drop Admin Interface Builder, using the following components.
 
 ### Steps to use Components in the Page Builder
 
-1. Create an Application. [Click here](https://bani-appsection--connexcs-docs.netlify.app/apps/architecture/app/#step-to-create-an-app) for creating an Application.
+1. Create an Application. [Click here](/apps/architecture/app/#step-to-create-an-app) for creating an Application.
 
 2. Select the created application from the dropdown.
 
