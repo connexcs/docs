@@ -53,9 +53,19 @@ def get_md_files(root_dir):
 def flat_name(rel_path):
     """Convert a relative path to a flat filename.
 
-    docs/anyedge/anyedge.md  →  docs--anyedge--anyedge.md
+    Strips the leading 'docs/' prefix (all files live under docs/)
+    before flattening.
+
+    docs/anyedge/anyedge.md  →  anyedge--anyedge.md
+    docs/api.md              →  api.md
     """
-    return rel_path.replace(os.sep, SEPARATOR).replace("/", SEPARATOR)
+    # Remove leading docs/ or docs\ prefix
+    stripped = rel_path
+    for prefix in ("docs/", "docs" + os.sep):
+        if stripped.startswith(prefix):
+            stripped = stripped[len(prefix):]
+            break
+    return stripped.replace(os.sep, SEPARATOR).replace("/", SEPARATOR)
 
 
 def get_last_modified(filepath):
