@@ -135,7 +135,7 @@ With AI-driven automation, businesses can enhance customer experience while sign
         + **Low temperature (close to 0)** makes the model's responses more predictable by selecting the most probable words.
         + **High temperature (closer to 1 or above)** increases randomness, leading to more diverse and creative but potentially less coherent responses.
     
-    + **First Task**: Select the list of pre-created tasks, so that your AI will perform this task as the first task and rest prompts after this task. [Click here](/app/class5/ai-agent/#task) to know more about tasks.
+    + **First Task**: Select the list of pre-created tasks, so that your AI will perform this task as the first task and rest prompts after this task. [Click here](/class5/ai-agent/#task) to know more about tasks.
     
     + **Knowledge Base**: Allows you to select which indexed documents an AI Agent can reference when answering user queries. 
     
