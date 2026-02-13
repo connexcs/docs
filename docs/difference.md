@@ -1,6 +1,6 @@
 # Table of Contents
 
-* [Difference](#Difference)
+* [Difference](#difference)
 
 # Difference
 

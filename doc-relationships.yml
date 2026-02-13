@@ -329,10 +329,10 @@ ide:
   related:
     - apps/introduction
     - class5/connexml
-    - apps/architecture/script
+    - apps/architecture/scriptforge
   next_steps:
     - apps/introduction
-    - apps/architecture/script
+    - apps/architecture/scriptforge
   common_followup:
     - apps/page-builder
   audience: developer
@@ -344,13 +344,13 @@ apps/introduction:
     - ide
   related:
     - apps/page-builder
-    - apps/architecture/script
+    - apps/architecture/scriptforge
     - apps/architecture/database
   next_steps:
     - apps/page-builder
     - apps/architecture/app
   common_followup:
-    - apps/architecture/script
+    - apps/architecture/scriptforge
   audience: developer
   difficulty: advanced
 
@@ -707,7 +707,7 @@ workflows:
       - apps/introduction
       - apps/architecture/app
       - apps/page-builder
-      - apps/architecture/script
+      - apps/architecture/scriptforge
     estimated_time: "4-8 hours"
 
 # Audience Mapping
