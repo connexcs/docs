@@ -30,14 +30,18 @@ extra_javascript:
 extra_css:
   - stylesheets/extra.css
 #  - https://unpkg.com/mermaid@7.1.2/dist/mermaid.css
+
+extra:
+  analytics:
+    provider: google
+    property: UA-155210453-1
+
 plugins:
     - search
     - mermaid2
     - external-markdown
     - redirects:
         redirect_maps: {}
-    - google_analytics:
-        gaID: UA-155210453-1
 
 markdown_extensions:
   - admonition
