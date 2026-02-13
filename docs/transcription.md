@@ -64,9 +64,9 @@ Once this service has been enabled on your account, you can follow the steps bel
 
 2.You will see 3 options:
 
-* **Select**: You can select a particular query profile built using the [Transcription Query Profile](https://bani-transcription--connexcs-docs.netlify.app/transcription/#transcription-query-profile).
+* **Select**: You can select a particular query profile built using the [Transcription Query Profile](/transcription/#transcription-query-profile).
 * **Search**: Allows you to search things like the **Call ID**, **Phrases** etc. [Click here](https://docs.connexcs.com/transcription/#search-transcriptions) to know more.
-* [Transcription Query Profile](https://bani-transcription--connexcs-docs.netlify.app/transcription/#transcription-query-profile).
+* [Transcription Query Profile](/transcription/#transcription-query-profile).
 
 3.Description of Transcription fields:
 

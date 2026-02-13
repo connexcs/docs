@@ -66,7 +66,7 @@ With this new feature, you can view parameters:
 
 ## Customization
 
-+ Fully Customizable using [Custom Pages](https://bani-ankmeg--connexcs-docs.netlify.app/setup/settings/options/)
++ Fully Customizable using [Custom Pages](/setup/settings/options/)
 
 + Users can modify and integrate analytics into the dashboard.
 

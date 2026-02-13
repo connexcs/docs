@@ -45,7 +45,7 @@ Click the :material-plus: button.
 
 + **Minimum Days**: When you choose a package with the minimum days, it means you won't be able to delete the package for the duration you have entered in the field.
 
-+ **Type**: Our system offers a **Free Minutes** option (select from the drop-down menu). This allows you to allocate complimentary calling minutes to your customers. For more details, please [click here](https://bani-minutes--connexcs-docs.netlify.app/customer/package/#free-minutes-package).
++ **Type**: Our system offers a **Free Minutes** option (select from the drop-down menu). This allows you to allocate complimentary calling minutes to your customers. For more details, please [click here](/customer/package/#free-minutes-package).
 
 + **Destination**: Selecting the **Type** will unlock the **Destination** tab. This tab allows you to specify the regions where the Free Minutes bundle will be applicable.For example, if you are offering free minutes only in the UK, India, and the USA, add the destination as ^44|^91|^1.
   
