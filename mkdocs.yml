@@ -133,6 +133,8 @@ nav:
         - Transcription: transcription.md
         - Alias: global-alias.md 
     
+    - Logging: logging.md
+    
     - Class 5:
         - AI Agent: class5/ai-agent.md
         - Knowledge Base: class5/knowledge-base.md
@@ -246,7 +248,6 @@ nav:
             - Call Quality/Media Issues: guides/tshoot-media.md
             - Call Disconnection Reasons and Premature Call Disconnection: guides/call-disconnection-reasons.md
             - Debugging: guides/debugging.md
-            - Logging: logging.md
             - Remote Testing: guides/remote-testing.md
             
     - Video Guide: video-guide.md
