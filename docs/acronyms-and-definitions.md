@@ -169,6 +169,7 @@
 |**ICO**|*Information Commissioner's Office*|UK's independent authority upholding information rights, enforcing data protection (like GDPR) and Freedom of Information laws, investigating breaches, issuing fines, and ensuring data privacy and public openness for individuals and organizations.|
 |**DCM**|*Document Content Module*|DCM uses $ placeholders in ConnexCS Page Builder that are replaced with real data to personalize pages dynamically.|
 |**USA NANPA**|*North American Numbering Plan Administrator*|Manages area codes and prefixes for the U.S., Canada, and parts of the Caribbean under FCC oversight.|
+|**R-Factor**|n/a|A network quality score (0–100) derived from the ITU-T E-Model (G.107) that measures the combined impact of latency, jitter, packet loss, and codec behavior on call quality.|
 
 
 ## ACD Calculation Method
