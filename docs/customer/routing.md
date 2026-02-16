@@ -196,7 +196,7 @@ View and configure existing routes on the Routing tab in the Customer card. To c
     !!! Example
         201-2019-XXXX → Range is assigned as Mobile → Output: Mobile
 
-3. **Lookup Logic for International Numbers**
+4. **Lookup Logic for International Numbers**
 
     * **For non-USA destinations**:
 
@@ -217,7 +217,7 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 
         ii. +971 4 XXX XXXX → Identified as Fixed via UAE number plan.
 
-4. **Application in Block Destination Type**
+5. **Application in Block Destination Type**
 
     When a rule uses Block Destination Type, the lookup follows this logic:
 
