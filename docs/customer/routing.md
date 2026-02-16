@@ -176,7 +176,7 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 
     ii. If the number exists, the classification returned here is treated as the primary and most accurate source.
 
-    **Output will be one of: Mobile / Fixed / VoIP**.
+    **Output will be one of: Mobile / Fixed / VoIP / Other**.
 
     !!! Example
 
@@ -196,7 +196,7 @@ View and configure existing routes on the Routing tab in the Customer card. To c
     !!! Example
         201-2019-XXXX → Range is assigned as Mobile → Output: Mobile
 
-3. **Lookup Logic for International Numbers**
+4. **Lookup Logic for International Numbers**
 
     * **For non-USA destinations**:
 
@@ -217,7 +217,7 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 
         ii. +971 4 XXX XXXX → Identified as Fixed via UAE number plan.
 
-4. **Application in Block Destination Type**
+5. **Application in Block Destination Type**
 
     When a rule uses Block Destination Type, the lookup follows this logic:
 
@@ -229,11 +229,15 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 
     iii. Apply the result to the block rule.
 
+      **Output will be one of: CAP / CLEC / GENERAL / ICO / IPES / L RESELLER / PCS / RBOC / ULEC / UNKNOWN / W RESELLER / WIRELESS**.
+
     * **For International numbers**:
 
     i. Directly apply the International Number Plan classification.
 
 This ensures blocking behaves consistently and accurately, even when numbers are ported or ranges evolve.
+
+**Output will be one of: COUNTRY CODE / FIXED / MOBILE / MOBILE/FIXED / MOBILE/PAGING / PAGING / SATELLITE / SUPPLEMENTARY SERVICES**.
 
 #### United States Federal Do Not Call (DNC)
 
