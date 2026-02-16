@@ -32,7 +32,7 @@ We expect the following from you as a customer:
 * For initial investigation of the problem, first-line support should be internal to your company.
 * Problem Isolation (See [**Debugging guide**](/guides/debugging/))
 
-### Customer Contact Information Verification Policy
+#### Customer Contact Information Verification Policy
 
 **Purpose**
 
@@ -71,6 +71,7 @@ ConnexCS reserves the right to conduct periodic verification of registered conta
 + **Re-Verification Cycle**:
 
 a. Contact details will be subject to mandatory re-verification every **three (3) months**.
+
 b. Verification will be conducted via SMS to the registered mobile number.
 
 + **Verification Requirement**: Customers must complete verification within **seven (7) calendar days** of receiving the verification request.
