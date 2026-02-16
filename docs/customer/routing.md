@@ -188,7 +188,7 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 
     ii. If the number exists, the classification returned here is treated as the primary and most accurate source.
 
-    **Output will be one of: Mobile / Fixed / VoIP**.
+    **Output will be one of: Mobile / Fixed / VoIP / Others**.
 
     !!! Example
 
@@ -241,9 +241,13 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 
     iii. Apply the result to the block rule.
 
+    **Output will be one of: CAP/ CLEC / GENERAL / ICO / IPES / L RESELLER / PCS / RBOC / ULEC / UNKNOWN / W RESELLER /  WIRELESS**.
+
     * **For International numbers**:
 
     i. Directly apply the International Number Plan classification.
+
+    **Output will be one of: COUNTRY CODE/ FIXED / MOBILE /  MOBILE/FIXED / MOBILE/PAGING / PAGING / SATELLITE /  SUPPLEMENTARY SERVICES**.
 
 This ensures blocking behaves consistently and accurately, even when numbers are ported or ranges evolve.
 
