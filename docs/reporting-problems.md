@@ -32,6 +32,103 @@ We expect the following from you as a customer:
 * For initial investigation of the problem, first-line support should be internal to your company.
 * Problem Isolation (See [**Debugging guide**](/guides/debugging/))
 
+### Customer Contact Information Verification Policy
+
+**Purpose**
+
+The purpose of this policy is to ensure that ConnexCS maintains accurate and reliable contact information for all customers to support operational communication, compliance notifications, billing alerts, security matters, and service-related updates.
+
+Maintaining **valid contact** information is a mandatory customer obligation.
+
+---
+
+**Scope**
+
+This policy applies to:
+
+* All active ConnexCS customers
+* All account holders and authorised representatives
+* All accounts with active services
+
+---
+
+**Customer Obligation**
+
+Customers are required to:
+
+1. Maintain **accurate and valid contact information** at all times.
+2. Provide a **working mobile telephone number** capable of receiving SMS messages (where supported).
+3. Ensure that contact information remains up to date if personnel or roles change within their organisation.
+
+**Failure to maintain valid contact information may impact service continuity**.
+
+---
+
+**Periodic Contact Verification**
+
+ConnexCS reserves the right to conduct periodic verification of registered contact details.
+
++ **Re-Verification Cycle**:
+
+a. Contact details will be subject to mandatory re-verification every **three (3) months**.
+b. Verification will be conducted via SMS to the registered mobile number.
+
++ **Verification Requirement**: Customers must complete verification within **seven (7) calendar days** of receiving the verification request.
+
+---
+
+**Grace Period**
+
+A **seven (7) day** grace period will be provided from the date the verification request is issued.
+
+During this period:
+
+* Services will remain active.
+* Customers may update or correct their contact details if necessary.
+
+---
+
+**Enforcement**
+
+If contact verification is not completed within the seven (7) day grace period:
+
+* The customer account may be **temporarily suspended**.
+* Access to services may be restricted.
+* Service restoration will occur once verification is successfully completed.
+
+Suspension under this policy does not waive any ongoing billing obligations.
+
+---
+
+**Exceptions**
+
+ConnexCS may apply reasonable exceptions in circumstances including but not limited to:
+
+* Technical SMS routing limitations in certain jurisdictions.
+* Temporary carrier-level delivery issues.
+* Alternative verification methods approved by ConnexCS.
+
+ConnexCS reserves discretion in determining appropriate alternative verification mechanisms where required.
+
+---
+
+**Restoration of Service**
+
+Where an account has been suspended under this policy:
+
+* The customer must complete contact verification.
+* Upon successful verification, service access will be restored.
+
+---
+
+**Right to Amend**
+
+ConnexCS reserves the right to amend this policy at its discretion. Updates will be published in accordance with standard policy update procedures.
+
+---
+
+!!! warning "Customers must maintain accurate and valid contact information at all times. ConnexCS may require periodic verification of registered contact details. Failure to verify contact information within the specified timeframe may result in temporary suspension of services until verification is completed."
+
 ## Support Channels
 
 Several methods of contacting ConnexCS for guidance are:
