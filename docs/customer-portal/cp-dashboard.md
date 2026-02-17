@@ -12,6 +12,8 @@
 
 </details>
 
+## Overview
+
 The **Customer Portal** provides access to configurations, real-time testing and stats, and more information about your account. The **Dashboard** provides an overview of Call Stats and Summaries.
 
 ## Top of Page Functions
@@ -30,11 +32,11 @@ The **Customer Portal** provides access to configurations, real-time testing and
 
 ### Setup Personal Profile
 
-To setup, click your name in the upper right corner and select `My Profile`.
+To setup, click your name in the upper right corner and select `Profile`.
 
-View account details such as Name, Role, Email, Department, Phone, Mobile and Skype.
+View `Company Profile` details such as Company Name, Contact Name, Currency,  Debit Limit, Tax, Paypal.
 
-You can only edit the Name, Phone, Mobile, Skype fields. To change email or name, contact ConnexCS Support.
+View `My Profile` details. You can only edit the Name, Department, Phone, Mobile, Skype fields. To change email or name, contact ConnexCS Support.
 
 **Two Factor Authentication**: This adds additional security against password guessing and theft, including brute force attacks (details [**here**](https://www.ncsc.gov.uk/guidance/multi-factor-authentication-online-services)).
 
@@ -66,11 +68,3 @@ You can perform the following Functions with this data:
      For billing purposes, consider the data found in the Customer Summary section as valid. Although the same information might be at other locations, you shouldn't use it for billing.
 
 [cp-dash]: /customer-portal/img/cp-dash.png "Top of Page"
-
-## Internal Number Block
-
-Internal Number Block to define the range of numbers a Customer can use for setting up SIP Extensions.
-
-Without defined Internal Number Blocks, there is the risk of a Contact attempting to use an extension that's already in use by another Customer or Contact.
-
-With Internal Number Blocks defined, each Customer will have a predetermined list of Usernames to select for SIP Authentication.
