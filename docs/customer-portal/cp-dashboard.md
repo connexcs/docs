@@ -41,9 +41,9 @@ The page is divided into two main sections:
 1. Company Profile (Account-level information)
 2. My Profile (User-level information)
 
-+ View `Company Profile` details such as Company Name, Contact Name, Currency,  Debit Limit, Tax, Paypal.
+   + View `Company Profile` details such as Company Name, Contact Name, Currency,  Debit Limit, Tax, Paypal.
 
-+ View `My Profile` details. You can only edit the Name, Email, Department, Phone, Mobile fields. To change email or name, contact ConnexCS Support.
+   + View `My Profile` details. You can only edit the Name, Email, Department, Phone, Mobile fields. To change email or name, contact ConnexCS Support.
 
 **Two Factor Authentication**: This adds additional security against password guessing and theft, including brute force attacks (details [**here**](https://www.ncsc.gov.uk/guidance/multi-factor-authentication-online-services)).
 
