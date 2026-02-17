@@ -14,19 +14,19 @@
 
 ## Overview
 
-The **Customer Portal** provides access to configurations, real-time testing and stats, and more information about your account. The **Dashboard** provides an overview of Call Stats and Summaries.
+The **Customer Portal** provides access to configurations, real-time testing and stats, and more information about your account. The **Dashboard** is designed to give you a quick overview of your account activity and call statistics.
 
 ## Top of Page Functions
 
 ![alt text][cp-dash]
 
-+ **Checklist** A Quick view of the outstanding Alerts on the account. Upon initial setup, verification of email and mobile for the account made through Alerts, and a reminder is put across to create customers and setup carriers.
++ **Checklist** a quick view of outstanding alerts (e.g., email/mobile verification reminders). Upon initial setup, verification of email and mobile for the account made through Alerts, and a reminder is put across to create customers and setup carriers.
 
 + **Time Zone** Click on the Date/Time box to select the Time Zone for your site.
 
 + **Channel Count** Total Live Channels presently in use and total configured Channels.
 
-+ **Account Balance** Displays the current account balance and a link to make a payment using a credit card or PayPal. [Click here](https://docs.connexcs.com/customer-portal/cp-payment/) to know more about **Payments**.
++ **Account Balance** Displays the current account balance and a link to make a payment. [Click here](https://docs.connexcs.com/customer-portal/cp-payment/) to know more about **Payments**.
 
 + **Account** Use this to view your Company Profile, view and update your personal Profile, Change Password or Language, or Log Out.
 
@@ -34,9 +34,13 @@ The **Customer Portal** provides access to configurations, real-time testing and
 
 To setup, click your name in the upper right corner and select `Profile`.
 
-View `Company Profile` details such as Company Name, Contact Name, Currency,  Debit Limit, Tax, Paypal.
+The page is divided into two main sections:
+1. **Company Profile** (Account-level information)
+2. **My Profile** (User-level information)
 
-View `My Profile` details. You can only edit the Name, Department, Phone, Mobile, Skype fields. To change email or name, contact ConnexCS Support.
++ View `Company Profile` details such as Company Name, Contact Name, Currency,  Debit Limit, Tax, Paypal.
+
++ View `My Profile` details. You can only edit the Name, Department, Phone, Mobile, Skype fields. To change email or name, contact ConnexCS Support.
 
 **Two Factor Authentication**: This adds additional security against password guessing and theft, including brute force attacks (details [**here**](https://www.ncsc.gov.uk/guidance/multi-factor-authentication-online-services)).
 
@@ -50,10 +54,10 @@ Below is the Current Customer account usage on four default **Graphs**.
 
 |Graph|Description |
 |:----|:-----------|
-|**Live Channels**|Details of active channel usage|
-|**ASR**|You can view Answer Seizure Ratio as a Total, or isolate traffic on a per-carrier basis. If some carriers are lower than others, this may create an issue|
-|**ACD**|You can view the total average call duration or isolate traffic by carrier, A lower ACD on one carrier is indicative of potential line quality issues|
-|**DTMF**|DTMF (Dual Tone Modulated Frequency) percentages|
+|**Live Channels**|Displays the number of active concurrent calls over time|
+|**ASR (Answer Seizure Ratio)**|Displays the percentage of successfully connected calls over time|
+|**ACD**|Shows the average duration of connected calls over time|
+|**DTMF**|The DTMF graph shows the volume or percentage of DTMF (keypad tone) activity during calls over time|
 
 ## Summary
 
@@ -67,4 +71,13 @@ You can perform the following Functions with this data:
 !!! tip "Data used for billing"
      For billing purposes, consider the data found in the Customer Summary section as valid. Although the same information might be at other locations, you shouldn't use it for billing.
 
+## Internal Number Block
+
+Internal Number Block to define the range of numbers a Customer can use for setting up SIP Extensions.
+
+Without defined Internal Number Blocks, there is the risk of a Contact attempting to use an extension that's already in use by another Customer or Contact.
+
+With Internal Number Blocks defined, each Customer will have a predetermined list of Usernames to select for SIP Authentication.
+
 [cp-dash]: /customer-portal/img/cp-dash.png "Top of Page"
+
