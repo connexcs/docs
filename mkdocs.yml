@@ -118,8 +118,7 @@ nav:
             - Provider Rate Card: provider-ratecard.md
             - Customer Rate Card: customer-ratecard.md
 
-        - Voucher:
-            - Voucher: voucher.md
+        - Voucher: voucher.md
     
         - Routing Strategy:
             - Routing Overview: routing.md
@@ -127,17 +126,17 @@ nav:
             - Routing Global: global-routing.md
             - USA Routing: routing-usa.md
     
-    - Tags: tag.md
+        - Tags: tag.md
 
-    - SIP Devices: sip-devices.md
+        - SIP Devices: sip-devices.md
 
-    - File: files.md
+        - File: files.md
 
-    - Circuit Test: circuit-test.md
+        - Circuit Test: circuit-test.md
 
-    - Report: report.md
+        - Report: report.md
 
-    - Status: system-status.md  
+        - Status: system-status.md  
 
     - Global:
         - Global: global.md
