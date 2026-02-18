@@ -22,7 +22,7 @@ The **Dashboard** is designed to give you a quick overview of your account activ
 
 ![alt text][cp-dash]
 
-+ **Checklist** Quick view of outstanding alerts (e.g., email/mobile verification reminders). Upon initial setup, verification of email and mobile for the account made through Alerts, and a reminder is put across to create customers and setup carriers.
++ **Checklist** Quick view of outstanding alerts (e.g., email/mobile verification reminders).
 
 + **Time Zone** Click on the Date/Time box to select the Time Zone for your site.
 
@@ -43,11 +43,11 @@ The page is divided into two main sections:
 
       + View `Company Profile` details such as Company Name, Contact Name, Currency,  Debit Limit, Tax, Paypal.
 
-      + View `My Profile` details. You can only edit the Name, Email, Department, Phone, Mobile fields. To change email or name, contact ConnexCS Support.
+      + View `My Profile` details. You can only edit the Name, Email, Department, Phone, Mobile fields.
 
 **Two Factor Authentication**: This adds additional security against password guessing and theft, including brute force attacks (details [**here**](https://www.ncsc.gov.uk/guidance/multi-factor-authentication-online-services)).
 
-To configure this on ConnexCS, click `Enable` and follow prompts for QR code. You must install a 2FA/TFA app on your phone.
+To configure this, click `Enable` and follow prompts for QR code. You must install a 2FA/TFA app on your phone.
 
 <img src= "/customer-portal/img/profile.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
 
@@ -79,7 +79,5 @@ You can perform the following Functions with this data:
 Internal Number Block to define the range of numbers a Customer can use for setting up SIP Extensions.
 
 Without defined Internal Number Blocks, there is the risk of a Contact attempting to use an extension that's already in use by another Customer or Contact.
-
-With Internal Number Blocks defined, each Customer will have a predetermined list of Usernames to select for SIP Authentication.
-
 [cp-dash]: /customer-portal/img/cp-dash.png "Top of Page"
+
