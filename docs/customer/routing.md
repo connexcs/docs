@@ -173,22 +173,21 @@ View and configure existing routes on the Routing tab in the Customer card. To c
       a. **Line-Type Lookup (LRN Database)**: The system first checks the LRN line-type database for the exact number. <br> The system checks the LRN/line-type database for the exact phone number. </br> If the number exists, the classification returned here is treated as the primary and most accurate source.
  
 !!! Example "Example 1"
-    `201-555-0198` → Found in LRN → Fixed
-    If the number is not present in LRN, the system falls back to the NANPA prefix (range type).
+    `201-555-0198` → Found in LRN → Fixed. <br>If the number is not present in LRN, the system falls back to the NANPA prefix (range type)</br>.
  
 !!! Example "Example 2"
     `201-2019-XXXX` → Block assigned as Mobile → Result: Mobile
  
 
-      b. **Prefix Type Check (Checked against the NPANXX(X) Range Holder)**: If the number does not exist in the line-type database, the system falls back to the USA Range Type: LRN is not used for this check.
+b. **Prefix Type Check (Checked against the NPANXX(X) Range Holder)**: If the number does not exist in the line-type database, the system falls back to the USA Range Type: LRN is not used for this check.
 
 !!! Example "Example"
     `212-XXX-XXXX`  → RBOC
  
-      c. For **non-USA numbers**, NANPA and LRN do not apply. <br>The system directly uses the International Number Plan, which classifies numbers based on country numbering rules and regulator allocations.</br>
+c. For **non-USA numbers**, NANPA and LRN do not apply. <br>The system directly uses the International Number Plan, which classifies numbers based on country numbering rules and regulator allocations.</br>
  
- !!! Example "Examples"
-     a. `+91 98XXXXXXX` → Mobile <br> b. `+971 4XXXXXXX` → Fixed </br>
+ !!! Example "Example"
+    a. `+91 98XXXXXXX` → Mobile <br> b. `+971 4XXXXXXX` → Fixed </br>
 
 3. **Use in Block Destination Type**
 
