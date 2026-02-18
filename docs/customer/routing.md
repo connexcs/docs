@@ -170,29 +170,29 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 
 2. **USA Number Lookup**
  
-a. **Line-Type Lookup (LRN Database)**: The system first checks the LRN line-type database for the exact number. <br> The system checks the LRN/line-type database for the exact phone number. </br> If the number exists, the classification returned here is treated as the primary and most accurate source.
+      a. **Line-Type Lookup (LRN Database)**: The system first checks the LRN line-type database for the exact number. <br> The system checks the LRN/line-type database for the exact phone number. </br> If the number exists, the classification returned here is treated as the primary and most accurate source.
  
 !!! Example "Example 1"
     `201-555-0198` → Found in LRN → Fixed
     If the number is not present in LRN, the system falls back to the NANPA prefix (range type).
  
 !!! Example "Example 2"
-    201-2019-XXXX → Block assigned as Mobile → Result: Mobile
+    `201-2019-XXXX` → Block assigned as Mobile → Result: Mobile
  
-b. **Prefix Type Check (Checked against the NPANXX(X) Range Holder)**: If the number does not exist in the line-type database, the system falls back to the USA Range Type: LRN is not used for this check.
+      b. **Prefix Type Check (Checked against the NPANXX(X) Range Holder)**: If the number does not exist in the line-type database, the system falls back to the USA Range Type: LRN is not used for this check.
  
- !!! example "Example"
-     212-XXX-XXXX  → RBOC
+ !!! Example "Example"
+     `212-XXX-XXXX`  → RBOC
  
-c. For **non-USA numbers**, NANPA and LRN do not apply. <br>The system directly uses the International Number Plan, which classifies numbers based on country numbering rules and regulator allocations.</br>
+c.       For **non-USA numbers**, NANPA and LRN do not apply. <br>The system directly uses the International Number Plan, which classifies numbers based on country numbering rules and regulator allocations.</br>
  
- !!! example "Examples"
-      1. +91 98XXXXXXX → Mobile
-      2. +971 4XXXXXXX → Fixed
+ !!! Example "Examples"
+      1. `+91 98XXXXXXX` → Mobile
+      2. `+971 4XXXXXXX` → Fixed
 
 3. **Use in Block Destination Type**
 
-a. **USA Numbers**
+      a. **USA Numbers**
  
 i. **LRN Number type check**: Perform Line-Type Check (LRN database). <br>If not found → NANPA range type is used.</br>
  
