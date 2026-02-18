@@ -187,7 +187,7 @@ b. **Prefix Type Check (Checked against the NPANXX(X) Range Holder)**: If the nu
 c. For **non-USA numbers**, NANPA and LRN do not apply. <br>The system directly uses the International Number Plan, which classifies numbers based on country numbering rules and regulator allocations.</br>
  
  !!! Example "Example"
-    a. `+91 98XXXXXXX` → Mobile <br> b. `+971 4XXXXXXX` → Fixed </br>
+     a. `+91 98XXXXXXX` → Mobile <br> b. `+971 4XXXXXXX` → Fixed </br>
 
 3. **Use in Block Destination Type**
 
