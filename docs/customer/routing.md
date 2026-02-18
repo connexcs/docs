@@ -179,31 +179,39 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 !!! Example "Example 2"
     `201-2019-XXXX` → Block assigned as Mobile → Result: Mobile
  
+
       b. **Prefix Type Check (Checked against the NPANXX(X) Range Holder)**: If the number does not exist in the line-type database, the system falls back to the USA Range Type: LRN is not used for this check.
+
+!!! Example "Example"
+    `212-XXX-XXXX`  → RBOC
  
- !!! Example "Example"
-     `212-XXX-XXXX`  → RBOC
- 
-c.       For **non-USA numbers**, NANPA and LRN do not apply. <br>The system directly uses the International Number Plan, which classifies numbers based on country numbering rules and regulator allocations.</br>
+      c. For **non-USA numbers**, NANPA and LRN do not apply. <br>The system directly uses the International Number Plan, which classifies numbers based on country numbering rules and regulator allocations.</br>
  
  !!! Example "Examples"
-      1. `+91 98XXXXXXX` → Mobile
-      2. `+971 4XXXXXXX` → Fixed
+     a. `+91 98XXXXXXX` → Mobile <br> b. `+971 4XXXXXXX` → Fixed </br>
 
 3. **Use in Block Destination Type**
 
       a. **USA Numbers**
  
-i. **LRN Number type check**: Perform Line-Type Check (LRN database). <br>If not found → NANPA range type is used.</br>
+i. **LRN Number type check**:
+
+Perform Line-Type Check (LRN database).
+
+If not found → NANPA range type is used.
  
 **Output Destination Type:- (Mobile / Fixed / VoIP/OTHER)**
  
  
-ii. **Prefix type check**: Perform USA Range Type check
+ii. **Prefix type check**:
+
+Perform USA Range Type check.
  
 **Output Destination type :- CAP/ CLEC / GENERAL / ICO / IPES / L RESELLER / PCS / RBOC / ULEC / UNKNOWN / W RESELLER / WIRELESS**.
  
-iii. **For International Numbers**: Directly apply the International Number Plan classification.
+iii. **For International Numbers**:
+
+Directly apply the International Number Plan classification.
  
 **Output Destination Type (FIXED / MOBILE / MOBILE/FIXED / MOBILE/PAGING / PAGING / SATELLITE / SUPPLEMENTARY SERVICES)**
 
