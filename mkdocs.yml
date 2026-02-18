@@ -73,60 +73,71 @@ nav:
     - Getting Started: getting-started.md
     - Dashboard : dashboard.md
 
-    - Customer:
-        - Customer: customer/customer.md
-        - Main: customer/main.md
-        - Auth: customer/auth.md
-        - Alias: customer/alias.md
-        - Routing: 
-            - Ingress Routing: customer/routing.md
-            - CLI: customer/cli.md
-        - Payment: customer/payment.md
-        - Stats: customer/stats.md
-        - Route Stats: customer/route-stats.md
-        - Custom Reports: customer/custom-reports.md
-        - Latest Calls: customer/latest-calls.md
-        - Dialogs: customer/dialogs.md
-        - Alerts: customer/alerts.md
-        - DID: customer/did.md
-        - CDR: customer/cdr.md
-        - Packages: customer/package.md
-        - Invoices: customer/invoices.md
-        - Contracts: customer/contracts.md
-        - Documents: customer/documents.md
-        - Class5: customer/class5.md
-        - Tags: customer/tags.md
-        - Circuit Test: circuit-test.md
+    - Management:
+        - Customer:
+            - Customer: customer/customer.md
+            - Main: customer/main.md
+            - Auth: customer/auth.md
+            - Alias: customer/alias.md
+            - Routing: 
+                - Ingress Routing: customer/routing.md
+                - CLI: customer/cli.md
+            - Payment: customer/payment.md
+            - Stats: customer/stats.md
+            - Route Stats: customer/route-stats.md
+            - Custom Reports: customer/custom-reports.md
+            - Latest Calls: customer/latest-calls.md
+            - Dialogs: customer/dialogs.md
+            - Alerts: customer/alerts.md
+            - DID: customer/did.md
+            - CDR: customer/cdr.md
+            - Packages: customer/package.md
+            - Transcription: customer/transcriptions.md
+            - Invoices: customer/invoices.md
+            - Contracts: customer/contracts.md
+            - Documents: customer/documents.md
+            - Class5: customer/class5.md
 
-    - Carrier: 
-        - Carrier Overview: carrier.md
-        - Main: carrier/carrier-main.md
-        - Reply Management: carrier/carrier-reply-management.md
-        - Auth: carrier/carrier-auth.md 
-        - Failover: carrier/carrier-failover.md
-        - Latest Calls: carrier/carrier-latest-calls.md
-        - Payment: carrier/carrier-payment.md
-        - Stats: carrier/carrier-stats.md
-        - Custom Reports: carrier/carrier-custom-reports.md
-        - Alerts: carrier/carrier-alerts.md
-        - DID: carrier/carrier-did.md
-        - DID Inventory: carrier/carrier-did-inventory.md
-        - CDR: carrier/carrier-cdr.md
+        - Carrier: 
+            - Carrier Overview: carrier.md
+            - Main: carrier/carrier-main.md
+            - Reply Management: carrier/carrier-reply-management.md
+            - Auth: carrier/carrier-auth.md 
+            - Failover: carrier/carrier-failover.md
+            - Latest Calls: carrier/carrier-latest-calls.md
+            - Payment: carrier/carrier-payment.md
+            - Stats: carrier/carrier-stats.md
+            - Custom Reports: carrier/carrier-custom-reports.md
+            - Alerts: carrier/carrier-alerts.md
+            - DID: carrier/carrier-did.md
+            - DID Inventory: carrier/carrier-did-inventory.md
+            - CDR: carrier/carrier-cdr.md
     
-    - Rate Cards:
-        - Rate Card Overview: rate-card-building.md
-        - Provider Rate Card: provider-ratecard.md
-        - Customer Rate Card: customer-ratecard.md 
+        - Rate Cards:
+            - Rate Card Overview: rate-card-building.md
+            - Provider Rate Card: provider-ratecard.md
+            - Customer Rate Card: customer-ratecard.md
+
+        - Voucher:
+            - Voucher: voucher.md
     
-    - Routing:
-        - Routing Overview: routing.md
-        - Routing Strategy: routing-strategy.md
-        - Routing Global: global-routing.md
-        - USA Routing: routing-usa.md
+        - Routing Strategy:
+            - Routing Overview: routing.md
+            - Routing Strategy: routing-strategy.md
+            - Routing Global: global-routing.md
+            - USA Routing: routing-usa.md
     
     - Tags: tag.md
 
-    - Report: report.md  
+    - SIP Devices: sip-devices.md
+
+    - File: files.md
+
+    - Circuit Test: circuit-test.md
+
+    - Report: report.md
+
+    - Status: system-status.md  
 
     - Global:
         - Global: global.md
@@ -139,13 +150,13 @@ nav:
         - AI Agent: class5/ai-agent.md
         - Knowledge Base: class5/knowledge-base.md
         - Apps: class5/apps.md
+        - ConneXML: class5/connexml.md
         - Conference: class5/creating-conference.md
         - Call Center: class5/call-center.md
         - IVR: class5/creating-ivr.md
         - Groups: class5/creating-group.md
         - Voicemail: class5/voicemail.md
-        - Phonebook: class5/phonebook.md
-        - ConneXML: class5/connexml.md        
+        - Phonebook: class5/phonebook.md        
        
     - IDE: ide.md
            
@@ -162,7 +173,6 @@ nav:
             - DNS: setup/settings/dns.md
             - User: setup/settings/users.md
             - Options: setup/settings/options.md
-            - Data Retention: setup/settings/data-retention.md
         - Config:
             - Contracts: setup/config/contracts.md
             - Packages: setup/config/packages.md
@@ -174,15 +184,15 @@ nav:
             - Language: setup/advanced/language.md
             - Firewall: setup/advanced/firewall.md
             - Prefix Set: setup/advanced/prefix-set.md
+            - RTP Block: setup/advanced/rtp-block.md
             - Reseller Account: setup/advanced/reseller.md
             - Fraud Profile: setup/advanced/fraud.md
-            - RTP Block: setup/advanced/rtp-block.md
         - Integrations:
             - API: setup/integrations/api.md
-            - JWT Keys: setup/integrations/jwt.md
-            - OAuth Session: setup/integrations/oauth.md
             - Portal: setup/integrations/portal.md
             - WebPhone: webphone.md
+            - JWT Keys: setup/integrations/jwt.md
+            - OAuth Session: setup/integrations/oauth.md
         - Information:
             - Change Log: setup/information/change-log.md
             - Feature Requests: setup/information/feature-request.md
@@ -220,9 +230,8 @@ nav:
             - Number Manipulation: number-manipulation.md
         
         - SIP Traces, Pings and Messages: guides/sip-traces.md
-        - Documents and Files: 
-            - Document Guide: guides/doc-guide.md
-            - File: files.md
+        - Documents Guide: guides/doc-guide.md
+
         - Features:
             - 3-Digit Dialing: guides/3dig-ext.md
             - Do Not Call lists: dnc.md
@@ -233,8 +242,6 @@ nav:
             - Locate Call-ID: guides/howto/callid.md
             - Restrict Users to Specific Countries/Routing: guides/howto/restrict-calling-plan.md
         - Monitoring: guides/monitoring.md
-        - SIP Devices: sip-devices.md
-        - Status Page (for Customer Portals): system-status.md
         - OSI Model: guides/osi-model.md
         - Major Telecom Regulatory Authorities: guides/major-telecom-regulatory-authorities.md
         - General Data Protection Regulation: guides/gdpr.md
