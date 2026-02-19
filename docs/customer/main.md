@@ -66,7 +66,7 @@ Click **:material-plus:** to the right of **Contacts**.
 
 * **Mobile Verified** and **Email Verified**: Manually set the status for each. Check in the Customer Details to confirm if the Mobile and Email are verified. Alternatively, the customer can do this in the Customer Portal.
 
-* **IP Whitelist:** **IP Whitelist:** Specify the IP or range of IPs this user can use to connect to the ConnexCS Control Panel. <br>They won't be able to log in from any other IP, so be careful with this setup. Specify IPs as follows:</br>
+* **IP Whitelist**: Specify the IP or range of IPs this user can use to connect to the ConnexCS Control Panel. <br>They won't be able to log in from any other IP, so be careful with this setup. Specify IPs as follows:</br>
 
     + Single IP address: **For example**, 1.1.1.1
     + Wildcard for IP addresses: **For example**, 1.1.1
