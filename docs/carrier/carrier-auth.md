@@ -37,7 +37,9 @@
         `dr_gw_status` indicates the operational status of the Dialing Rule–Gateway mapped to the Carrier under IP Authentication.
 
         **Flag Meaning:**
+        
         * 🟢 **Green** – Gateway is active and available for routing.
+        
         * 🔴 **Red** – Gateway is inactive, unreachable, or failing health checks.
         
         **Impact:** Determines whether traffic can route through the assigned gateway.
