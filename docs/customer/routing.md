@@ -168,84 +168,51 @@ View and configure existing routes on the Routing tab in the Customer card. To c
     ConnexCS uses a multi-layered lookup mechanism to determine the destination type for any given phone number.
     This enables accurate routing, blocking, and classification across both **USA (NANPA)** numbers and **International numbers**.
 
-    The logic uses the following hierarchical sources of truth:
+2. **USA Number Lookup**
+ 
+      a. **Line-Type Lookup (LRN Database)**: The system first checks the LRN line-type database for the exact number. <br> The system checks the LRN/line-type database for the exact phone number. </br> If the number exists, the classification returned here is treated as the primary and most accurate source.
+ 
+!!! Example "Example 1"
+    `201-555-0198` → Found in LRN → Fixed. <br>If the number is not present in LRN, the system falls back to the NANPA prefix (range type)</br>.
+ 
+!!! Example "Example 2"
+    `201-2019-XXXX` → Block assigned as Mobile → Result: Mobile
+ 
 
-    i. **LRN / Line-Type Database** (granular, per-number accuracy)
+b. **Prefix Type Check (Checked against the NPANXX(X) Range Holder)**: If the number does not exist in the line-type database, the system falls back to the USA Range Type: LRN is not used for this check.
 
-    ii. **USA Range Type** (NANPA prefix blocks)
+!!! Example "Example"
+    `212-XXX-XXXX`  → RBOC
+ 
+c. For **non-USA numbers**, NANPA and LRN do not apply. <br>The system directly uses the International Number Plan, which classifies numbers based on country numbering rules and regulator allocations.</br>
 
-    iii. **International Number Plan** (for non-USA destinations only)
+!!! Example "Example 1"
+    a. `+91 98XXXXXXX` → Mobile <br>b. `+971 4XXXXXXX` → Fixed</br>
 
-    This hierarchy ensures the most accurate classification possible, even when individual numbers are ported between carriers.
+3. **Use in Block Destination Type**
 
-2. **Lookup Hierarchy for USA Numbers (NANPA)**
+      a. **USA Numbers**
+ 
+i. **LRN Number type check**:
 
-    When evaluating a USA number, ConnexCS performs the following steps:
+Perform Line-Type Check (LRN database).
 
-    **Step 1 — Line-Type Lookup (LRN Database)**
+If not found → NANPA range type is used.
+ 
+**Output Destination Type:- (Mobile / Fixed / VoIP/OTHER)**
+ 
+ 
+ii. **Prefix type check**:
 
-    i. The system checks the LRN/line-type database for the exact phone number.
+Perform USA Range Type check.
+ 
+**Output Destination type :- CAP/ CLEC / GENERAL / ICO / IPES / L RESELLER / PCS / RBOC / ULEC / UNKNOWN / W RESELLER / WIRELESS**.
+ 
+iii. **For International Numbers**:
 
-    ii. If the number exists, the classification returned here is treated as the primary and most accurate source.
-
-    **Output will be one of: Mobile / Fixed / VoIP**.
-
-    !!! Example
-
-        201-555-0198 → Found in LRN → Fixed
-        Result is final; no further fallback is needed.
-
-    **Step 2 — USA Range Type (NANPA Prefix Blocks)**
-
-    If the number does not exist in the line-type database, the system falls back to the USA Range Type:
-
-    i. Uses the NANPA number block (e.g., 201-2019) to determine its type.
-
-    ii. This is less granular but covers entire assigned ranges.
-
-    iii. Range metadata includes assignment date, carrier, and designated type (Mobile / Fixed / VoIP).
-
-    !!! Example
-        201-2019-XXXX → Range is assigned as Mobile → Output: Mobile
-
-3. **Lookup Logic for International Numbers**
-
-    * **For non-USA destinations**:
-
-        i. The system **does not** use LRN or NANPA.
-
-        ii. The system directly uses the **International Number Plan**.
-
-    * **The International Number Plan contains**:
-
-        i. Country-level numbering rules
-
-        ii. Mobile VS fixed patterns
-
-        iii. Regulator-published allocations
-
-    !!! Example
-        i. +91 98XXXXXXX → Identified as Mobile via India number plan.
-
-        ii. +971 4 XXX XXXX → Identified as Fixed via UAE number plan.
-
-4. **Application in Block Destination Type**
-
-    When a rule uses Block Destination Type, the lookup follows this logic:
-
-    * **For USA numbers**:
-
-    i. Perform Line-Type Check (LRN database).
-
-    ii. If not found → perform USA Range Type check.
-
-    iii. Apply the result to the block rule.
-
-    * **For International numbers**:
-
-    i. Directly apply the International Number Plan classification.
-
-This ensures blocking behaves consistently and accurately, even when numbers are ported or ranges evolve.
+Directly apply the International Number Plan classification.
+ 
+**Output Destination Type (FIXED / MOBILE / MOBILE/FIXED / MOBILE/PAGING / PAGING / SATELLITE / SUPPLEMENTARY SERVICES)**
 
 #### United States Federal Do Not Call (DNC)
 
