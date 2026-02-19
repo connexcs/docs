@@ -71,7 +71,7 @@ Click **:material-plus:** to the right of **Contacts**.
     + Single IP address: **For example**, 1.1.1.1
     + Wildcard for IP addresses: **For example**, 1.1.1
     + Range of IP addresses in CIDR (Classless Inter-Domain Routing) format: **For example**, 1.1.1.0/31
-    + You may now select one or more countries to allow access from all IP addresses originating within those geographic locations.
+    + You may now select one or more countries to allow access from all IP addresses originating within those geographic locations
 
 + **NAT/SIP Ping**: Set behavior of pings sent from ConnexCS back to the customer through their firewall to their UAC. This helps when there are remote agents connecting to the switch. NAT/SIP Ping is used to keep the network address translation (NAT) open, ensuring calls can be received.
 
