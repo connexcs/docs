@@ -59,6 +59,7 @@ To add a new ConnexCS **User**, click :material-plus: in the **Users** section o
     + Single IP address: **For example**, 1.1.1.1
     + Wildcard for IP addresses: **For example**, 1.1.1
     + Range of IP addresses in CIDR (Classless Inter-Domain Routing) format: **For example**, 1.1.1.0/31
+    + You may now select one or more countries to allow access from all IP addresses originating within those geographic locations.
 
 + **Shared Ticket:** If enabled, all Users in the account can view tickets created by this user based on the email address of this User.
 

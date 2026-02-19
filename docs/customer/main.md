@@ -66,7 +66,16 @@ Click **:material-plus:** to the right of **Contacts**.
 
 * **Mobile Verified** and **Email Verified**: Manually set the status for each. Check in the Customer Details to confirm if the Mobile and Email are verified. Alternatively, the customer can do this in the Customer Portal.
 
-    <img src= "/customer/img/maincontactdetails.jpg" style="border: 2px solid #4472C4; border-radius: 8px;">
+* **IP Whitelist:** **IP Whitelist:** Specify the IP or range of IPs this user can use to connect to the ConnexCS Control Panel. <br>They won't be able to log in from any other IP, so be careful with this setup. Specify IPs as follows:</br>
+
+    + Single IP address: **For example**, 1.1.1.1
+    + Wildcard for IP addresses: **For example**, 1.1.1
+    + Range of IP addresses in CIDR (Classless Inter-Domain Routing) format: **For example**, 1.1.1.0/31
+    + You may now select one or more countries to allow access from all IP addresses originating within those geographic locations.
+
++ **NAT/SIP Ping**: Set behavior of pings sent from ConnexCS back to the customer through their firewall to their UAC. This helps when there are remote agents connecting to the switch. NAT/SIP Ping is used to keep the network address translation (NAT) open, ensuring calls can be received.
+
+<img src= "/customer/img/maincontactdetailsnew.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 Click **`Save`** to add the Contact.
 
