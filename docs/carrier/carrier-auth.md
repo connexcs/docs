@@ -28,10 +28,19 @@
     Works similarly to an HTTP proxy but for SIP traffic.
     + **Weights**: When the configuration of several switches takes place in IP Authentication, this field sets weighting to find which servers are most preferred, essentially doing outbound distribution to a single carrier, but through several gateways to that carrier.
         + Allows traffic distribution between multiple carrier gateways.
-        + Useful for load balancing and traffic optimization
+        + Useful for load balancing and traffic optimization.
 
     !!! Example
         Assigning weights of 10 and 1 results in 10 out of 11 calls going to the first gateway and 1 out of 11 to the second.
+
+    !!! Note "dr_gw_status"
+        `dr_gw_status` indicates the operational status of the Dialing Rule–Gateway mapped to the Carrier under IP Authentication.
+
+        **Flag Meaning:**
+        * 🟢 **Green** – Gateway is active and available for routing.
+        * 🔴 **Red** – Gateway is inactive, unreachable, or failing health checks.
+        
+        **Impact:** Determines whether traffic can route through the assigned gateway.
   
 2. Carrier **SIP User Authentication** is only used to allow a carrier to connect to the system, not for outbound connections.
 [**Customer Auth**](https://docs.connexcs.com/customer/auth/) gives information on the field details.
