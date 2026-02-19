@@ -118,11 +118,11 @@ When handling control panel issues:
 1. Confirm and log the Version.
 2. Compare against the latest stable deployment.
 3. If outdated:
-   - Confirm upgrade schedule.
-   - Check if issue is resolved in a newer release.
+   1. Confirm upgrade schedule.
+   2. Check if issue is resolved in a newer release.
 4. If on latest version:
-   - Escalate as potential new defect.
-   - Include Version in engineering report.
+   1. Escalate as potential new defect.
+   2. Include Version in engineering report.
 
 **Version must always be logged in technical escalations**
 
