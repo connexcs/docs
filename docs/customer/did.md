@@ -173,6 +173,10 @@ For each Package there is an associated **Minimum Days** the package is valid fo
 
 + **P-Asserted-ID**: Either `Remove` the P-Asserted-ID so it doesn't reach the customer, or leave it `Default` to preserve it.
 
++ **Block Source Type**: You can select and block the calls to various destinations (carriers) like Mobile, Fixed, Paging, etc. [Click here to know about Destination Type Lookup & Fallback Logic — USA and International](/customer/routing/#destination-type-lookup-fallback-logic-usa-and-international).
+
++ **Spam Scout Scoring**: It blocks Spam calls based on the CLIs. You can either Block All, Allow All, Block Most Spam, or Block Least Spam.
+
 + **IP Quality Score (IPQS)**: IP Quality Score (IPQS) blocks calls based on CLIs. It prevents CLIs with a specific spam score that you've selected from passing through the system. For more information on IPQS, [click here](https://www.ipqualityscore.com/).
 
     !!! Warning
