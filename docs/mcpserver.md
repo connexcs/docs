@@ -69,8 +69,8 @@ Configure:
 
 | Variable    | Required | Description|
 | ----------- | --------| ----------- |
-| `USERNAME`  | Yes| Email of a valid ConnexCS user|
-| `API_TOKEN` | Yes| JWT Access Token|
+| `API_USERNAME`  | Yes| Email of a valid ConnexCS user|
+| `cx_api_user` | Yes| JWT Access Token|
 | `VERBOSE`   | No| Enables verbose logging for tests |
 
 ---
@@ -113,14 +113,42 @@ Develop directly in:
 IDE → ScriptForge Files
 ```
 
-All JavaScript files live under:
+Understood — here is a **concise technical version** without unnecessary verbosity:
 
-```
-/source
-```
+---
 
-Only `.js` files are executed.
-TypeScript files may exist for testing but are not currently supported in production.
+# ScriptForge Tool Development Standard
+
+## Location
+
+Navigate in the IDE:
+
+**IDE → Cx MCP → scriptforge**
+
+The `scriptforge` folder contains all executable MCP tool scripts.
+All tool logic must reside in this directory.
+
+---
+
+### Creating a New MCP Tool
+
+1. **Create a new `.js` file** inside the `scriptforge` folder.
+
+   * Use a clear, descriptive filename.
+   * Example: `createCustomer.js`
+
+2. **Implement the tool logic** inside the file.
+
+   * Export the function using the existing ScriptForge tool pattern.
+   * Follow the same execution structure as other tools in the folder.
+
+3. **Register the tool in the MCP configuration.**
+
+   * Add the new file to the MCP configuration so MCP can recognize it.
+
+4. **Reload / Restart MCP** (if required).
+
+Once registered and reloaded, the tool becomes available to the AI Agent.
 
 ---
 
@@ -129,7 +157,7 @@ TypeScript files may exist for testing but are not currently supported in produc
 ConnexCS provides a CLI tool:
 
 ```
-@connexcs/tools
+[https://www.npmjs.com/package/@connexcs/tools](https://www.npmjs.com/package/@connexcs/tools)
 ```
 
 Key commands:
@@ -156,7 +184,7 @@ cx run <file_id>
 
 The MCP template repository includes:
 
-* GitHub Actions workflow
+* GitHub Actions workflow [https://github.com/connexcs/app-cx-mcp](https://github.com/connexcs/app-cx-mcp)
 * Automated test execution
 * Pull Request validation
 * 24 automated tests (example)
@@ -200,27 +228,28 @@ Each MCP tool consists of:
 ### Example
 
 ```javascript
-server.tool(
-  "search_call_logs",
-  {
-    description: "Search ConnexCS call logs",
-    parameters: {
-      search: {
-        type: "string",
-        description: "Phone number, Call ID, or IP address",
-        required: true
-      },
-      start_date: {
-        type: "string",
-        description: "UTC start date",
-        required: true
-      }
-    }
-  },
-  searchCallLogsHandler
-);
-```
+Pattern : 
+mcp.addTool(
+  toolName,           // 👈 tool name
+  toolDescription,    // 👈 description
+  handlerFunction     // 👈 handler
+)
+  .addParameter(
+    paramName,        // 👈 name
+    paramType,        // 👈 type
+    paramDescription, // 👈 description
+    isRequired        // 👈 required
+  )
 
+Example: 
+mcp.addTool(
+  'getSipTrace',
+  'Fetch and analyze SIP trace for a call. Returns full SIP flow with timing, auth, NAT detection, codecs, and identified issues. PRIMARY debugging tool — every call has trace data (7 days retention). Use this first when debugging any call. Endpoint: log/trace',
+  getSipTraceHandler
+)
+  .addParameter('callid', 'string', 'SIP Call-ID (required, non-empty, max 255 chars)', true)
+  .addParameter('callidb', 'string', 'Internal call identifier (optional)', false)
+```
 ---
 
 ## 10. Tool Execution Flow
@@ -244,7 +273,7 @@ getAPI()
 
 Authentication occurs using:
 
-* `USERNAME`
+* `API_USERNAME`
 * `API_TOKEN`
 
 Without valid token → request fails.
@@ -269,15 +298,10 @@ Example:
 
 ```json
 {
-  "servers": {
-    "cx-mcp": {
-      "url": "https://your-instance-url",
-      "scriptForgeId": "838362",
-      "jwt": "YOUR_ACCESS_TOKEN"
-    }
-  }
-}
+{ "servers": { "connexcs-call-debug": { "url": "https://fr1dev1.connexcs.net/api/cp/scriptforge/[your_scriptforge_mcp_file_id]/run", "type": "http", "headers": { "Authorization": "Bearer YourJWTTokenHere" } } }, "inputs": [] }
 ```
+!!! Note "How to get the file ID?"
+    Navigate to IDE :material-menu-right: Click on the MCP server app :material-menu-right: Settings button :material-menu-right: Copy File URL (share). The `last four` digits are the file ID. <br><img src= "/misc/img/mcp.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 ### Required Values
 
@@ -299,9 +323,9 @@ User asks:
 
 AI calls:
 
-* `search_call_logs`
-* `search_documentation`
-* `investigate_call`
+* `searchCallLogs`
+* `searchDocumentation`
+* `investigateCall`
 
 Returns:
 
@@ -321,7 +345,7 @@ User:
 
 AI calls:
 
-* `investigate_call`
+* `investigateCall`
 
 Returns:
 
@@ -350,10 +374,10 @@ The AI agent can:
 
 | Category           | Examples                  |
 | ------------------ | ------------------------- |
-| CDR Analysis       | search_call_logs          |
-| Documentation      | search_documentation      |
-| C-Trace            | get_ctrace                |
-| Call Investigation | investigate_call          |
+| CDR Analysis       | searchCallLogs            |
+| Documentation      | searchDocumentation       |
+| C-Trace            | getCTrace                |
+| Call Investigation | investigateCall           |
 | Switch Health      | Analytics queries         |
 | Customer Data      | Customer management tools |
 
