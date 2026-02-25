@@ -100,6 +100,9 @@ Environment Variables → API_TOKEN
 
 There are **two supported development approaches**.
 
+!!! Note "Please Note"
+    ScriptForge files are JavaScript in both environments. In the ConnexCS IDE, file extensions are not displayed. In cx-tools development, files are located in the `/src` directory and use the `.js` extension.
+
 ---
 
 ### Direct IDE Development (Inside ConnexCS)
@@ -127,10 +130,7 @@ All tool logic must reside in this directory.
 
 #### Creating a New MCP Tool
 
-1. **Create a new `.js` file** inside the `scriptforge` folder.
-
-   * Use a clear, descriptive filename.
-   * Example: `createCustomer.js`
+1. Create a new `JavaScript` file.
 
 2. **Implement the tool logic** inside the file.
 
@@ -177,7 +177,9 @@ cx run <file_id>
 
 The MCP template repository includes:
 
-* GitHub Actions workflow [https://github.com/connexcs/app-cx-mcp](https://github.com/connexcs/app-cx-mcp)
+[https://github.com/connexcs/app-cx-mcp](https://github.com/connexcs/app-cx-mcp)
+
+* GitHub Actions workflow
 * Automated test execution
 * Pull Request validation
 * 24 automated tests (example)
@@ -221,27 +223,27 @@ Each MCP tool consists of:
 ### Example
 
 ```js
-Pattern : 
-mcp.addTool(
-  toolName,           // 👈 tool name
-  toolDescription,    // 👈 description
-  handlerFunction     // 👈 handler
-)
-  .addParameter(
-    paramName,        // 👈 name
-    paramType,        // 👈 type
-    paramDescription, // 👈 description
-    isRequired        // 👈 required
-  )
+	Pattern: 
+	mcp.addTool(
+	  toolName,           // 👈 tool name
+	  toolDescription,    // 👈 description
+	  handlerFunction     // 👈 handler
+	)
+	  .addParameter(
+	    paramName,        // 👈 name
+	    paramType,        // 👈 type
+	    paramDescription, // 👈 description
+	    isRequired        // 👈 required
+	  )
 
-Example: 
-mcp.addTool(
-  'getSipTrace',
-  'Fetch and analyze SIP trace for a call. Returns full SIP flow with timing, auth, NAT detection, codecs, and identified issues. PRIMARY debugging tool — every call has trace data (7 days retention). Use this first when debugging any call. Endpoint: log/trace',
-  getSipTraceHandler
-)
-  .addParameter('callid', 'string', 'SIP Call-ID (required, non-empty, max 255 chars)', true)
-  .addParameter('callidb', 'string', 'Internal call identifier (optional)', false)
+	Example: 
+	mcp.addTool(
+	  'getSipTrace',
+	  'Fetch and analyze SIP trace for a call. Returns full SIP flow with timing, auth, NAT detection, codecs, and identified issues. PRIMARY debugging tool — every call has trace data (7 days retention). Use this first when debugging any call. Endpoint: log/trace',
+	  getSipTraceHandler
+	)
+	  .addParameter('callid', 'string', 'SIP Call-ID (required, non-empty, max 255 chars)', true)
+	  .addParameter('callidb', 'string', 'Internal call identifier (optional)', false)
 ```
 
 ---
@@ -290,7 +292,7 @@ mcp.json
 
 Example:
 
-```json
+```js
 { "servers": { "connexcs-call-debug": { "url": "https://fr1dev1.connexcs.net/api/cp/scriptforge/[your_scriptforge_mcp_file_id]/run", "type": "http", "headers": { "Authorization": "Bearer YourJWTTokenHere" } } }, "inputs": [] }
 ```
 
@@ -301,7 +303,7 @@ Example:
 
 | Field         | Source                |
 | ------------- | --------------------- |
-| **url**           | ConnexCS instance URL |
+| **url**           | ConnexCS instance URL [https://fr1dev1.connexcs.net/api/cp/scriptforge/[your_scriptforge_mcp_file_id]/run](https://fr1dev1.connexcs.net/api/cp/scriptforge/[your_scriptforge_mcp_file_id]/run)|
 | **scriptForgeId** | ID of MCP file        |
 | **jwt**           | Access Token          |
 
