@@ -115,9 +115,9 @@ Understood — here is a **concise technical version** without unnecessary verbo
 
 ---
 
-# ScriptForge Tool Development Standard
+## ScriptForge Tool Development Standard
 
-## Location
+### Location
 
 Navigate in the IDE:
 
@@ -128,7 +128,7 @@ All tool logic must reside in this directory.
 
 ---
 
-### Creating a New MCP Tool
+#### Creating a New MCP Tool
 
 1. **Create a new `.js` file** inside the `scriptforge` folder.
 
@@ -150,7 +150,7 @@ Once registered and reloaded, the tool becomes available to the AI Agent.
 
 ---
 
-### Local Development via CX Tool (Recommended)
+#### Local Development via CX Tool (Recommended)
 
 ConnexCS provides a CLI tool:
 
@@ -166,7 +166,7 @@ cx configure app
 cx run <file_id>
 ```
 
-### Benefits
+#### Benefits
 
 * Work from VS Code or preferred IDE
 * GitHub integration
@@ -299,6 +299,7 @@ Example:
 {
 { "servers": { "connexcs-call-debug": { "url": "https://fr1dev1.connexcs.net/api/cp/scriptforge/[your_scriptforge_mcp_file_id]/run", "type": "http", "headers": { "Authorization": "Bearer YourJWTTokenHere" } } }, "inputs": [] }
 ```
+
 !!! Note "How to get the file ID?"
     Navigate to IDE :material-menu-right: Click on the MCP server app :material-menu-right: Settings button :material-menu-right: Copy File URL (share). The `last four` digits are the file ID. <br><img src= "/misc/img/mcp.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
