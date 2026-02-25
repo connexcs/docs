@@ -1,6 +1,6 @@
 # ConnexCS MCP App – Technical Documentation
 
-## 1. Overview
+## Overview
 
 The **CX MCP App** is an extendable **Model Context Protocol (MCP) Server** built for the ConnexCS platform.
 
@@ -18,7 +18,7 @@ The MCP app acts as a secure bridge between:
 
 ---
 
-## 2. High-Level Architecture
+## High-Level Architecture
 
 ```mermaid
 flowchart LR
@@ -40,7 +40,7 @@ flowchart LR
 
 ---
 
-## 3. Installation & Initial Setup
+## Installation & Initial Setup
 
 ### Step 1: Install the MCP App
 
@@ -57,7 +57,7 @@ CX MCP
 
 ---
 
-## 4. Environment Configuration
+### Step 2: Environment Configuration
 
 Navigate to:
 
@@ -75,15 +75,13 @@ Configure:
 
 ---
 
-## 5. Creating JWT Access Token
+### Step 3: Creating JWT Access Token
 
 Navigate to:
 
 ```
 Setup → Integrations → JWT Tokens
 ```
-
-### Steps:
 
 1. Click **Create Token**
 2. Select **Access Token**
@@ -99,13 +97,13 @@ Environment Variables → API_TOKEN
 
 ---
 
-## 6. Working Modes
+## Working Modes
 
 There are **two supported development approaches**.
 
 ---
 
-### 6.1 Direct IDE Development (Inside ConnexCS)
+### Direct IDE Development (Inside ConnexCS)
 
 Develop directly in:
 
@@ -124,7 +122,7 @@ TypeScript files may exist for testing but are not currently supported in produc
 
 ---
 
-### 6.2 Local Development via CX Tool (Recommended)
+### Local Development via CX Tool (Recommended)
 
 ConnexCS provides a CLI tool:
 
@@ -152,7 +150,7 @@ cx run <file_id>
 
 ---
 
-## 7. CI/CD Integration
+## CI/CD Integration
 
 The MCP template repository includes:
 
@@ -169,7 +167,7 @@ When a PR is submitted:
 
 ---
 
-## 8. MCP Server Implementation
+## MCP Server Implementation
 
 ### Core File
 
@@ -188,7 +186,7 @@ This file:
 
 ---
 
-## 9. Tool Definition Structure
+## Tool Definition Structure
 
 Each MCP tool consists of:
 
@@ -199,31 +197,34 @@ Each MCP tool consists of:
 
 ### Example
 
-```javascript
-server.tool(
-  "search_call_logs",
-  {
-    description: "Search ConnexCS call logs",
-    parameters: {
-      search: {
-        type: "string",
-        description: "Phone number, Call ID, or IP address",
-        required: true
-      },
-      start_date: {
-        type: "string",
-        description: "UTC start date",
-        required: true
-      }
-    }
-  },
-  searchCallLogsHandler
-);
+```js
+
+Pattern : 
+mcp.addTool(
+  toolName,           // 👈 tool name
+  toolDescription,    // 👈 description
+  handlerFunction     // 👈 handler
+)
+  .addParameter(
+    paramName,        // 👈 name
+    paramType,        // 👈 type
+    paramDescription, // 👈 description
+    isRequired        // 👈 required
+  )
+
+Example: 
+mcp.addTool(
+  'getSipTrace',
+  'Fetch and analyze SIP trace for a call. Returns full SIP flow with timing, auth, NAT detection, codecs, and identified issues. PRIMARY debugging tool — every call has trace data (7 days retention). Use this first when debugging any call. Endpoint: log/trace',
+  getSipTraceHandler
+)
+  .addParameter('callid', 'string', 'SIP Call-ID (required, non-empty, max 255 chars)', true)
+  .addParameter('callidb', 'string', 'Internal call identifier (optional)', false)
 ```
 
 ---
 
-## 10. Tool Execution Flow
+## Tool Execution Flow
 
 1. AI decides which tool to call
 2. Parameters validated
@@ -234,24 +235,24 @@ server.tool(
 
 ---
 
-## 11. Authentication Flow
+## Authentication Flow
 
-All tools call:
+**All tools call**:
 
 ```javascript
 getAPI()
 ```
 
-Authentication occurs using:
+**Authentication occurs using**:
 
 * `USERNAME`
 * `API_TOKEN`
 
-Without valid token → request fails.
+**Without valid token → request fails**.
 
 ---
 
-## 12. VS Code MCP Client Setup
+## VS Code MCP Client Setup
 
 Create folder:
 
@@ -289,9 +290,9 @@ Example:
 
 ---
 
-## 13. Example Tool Calls
+## Example Tool Calls
 
-### 13.1 Call Analytics
+### Call Analytics
 
 User asks:
 
@@ -313,7 +314,7 @@ Returns:
 
 ---
 
-### 13.2 C-Trace Investigation
+### C-Trace Investigation
 
 User:
 
@@ -334,7 +335,7 @@ Returns:
 
 ---
 
-## 14. Example Diagnostic Output
+## Example Diagnostic Output
 
 The AI agent can:
 
@@ -346,7 +347,7 @@ The AI agent can:
 
 ---
 
-## 15. Available Tool Categories
+## Available Tool Categories
 
 | Category           | Examples                  |
 | ------------------ | ------------------------- |
@@ -359,7 +360,7 @@ The AI agent can:
 
 ---
 
-## 16. AI Model Flexibility
+## AI Model Flexibility
 
 Users may use:
 
@@ -378,7 +379,7 @@ Better models provide:
 
 ---
 
-## 17. Security Considerations
+## Security Considerations
 
 * JWT Access Tokens required
 * Tokens should be stored securely
@@ -388,7 +389,7 @@ Better models provide:
 
 ---
 
-## 18. Benefits to Customers
+## Benefits to Customers
 
 ### Operational Benefits
 
@@ -408,7 +409,7 @@ Better models provide:
 
 ---
 
-## 19. Use Cases
+## Use Cases
 
 1. Monthly switch health report
 2. CDR analysis by customer name
@@ -419,7 +420,7 @@ Better models provide:
 
 ---
 
-## 20. Summary
+## Summary
 
 The ConnexCS MCP App provides:
 
