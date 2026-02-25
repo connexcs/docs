@@ -1,4 +1,4 @@
-# ConnexCS MCP App – Technical Documentation
+# ConnexCS MCP Server App
 
 ## Overview
 
@@ -88,8 +88,7 @@ Setup → Integrations → JWT Tokens
 3. Choose expiration period
 4. Save
 5. Copy token (displayed once)
-
-Paste this into:
+6. Paste this into:
 
 ```
 Environment Variables → API_TOKEN
@@ -111,13 +110,11 @@ Develop directly in:
 IDE → ScriptForge Files
 ```
 
-Understood — here is a **concise technical version** without unnecessary verbosity:
-
 ---
 
 ### ScriptForge Tool Development Standard
 
-### Location
+#### Location
 
 Navigate in the IDE:
 
