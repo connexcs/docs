@@ -115,13 +115,13 @@ Understood — here is a **concise technical version** without unnecessary verbo
 
 ---
 
-## ScriptForge Tool Development Standard
+### ScriptForge Tool Development Standard
 
 ### Location
 
 Navigate in the IDE:
 
-**IDE → Cx MCP → scriptforge**
+**IDE → Cx MCP → Scriptforge**
 
 The `scriptforge` folder contains all executable MCP tool scripts.
 All tool logic must reside in this directory.
@@ -154,9 +154,7 @@ Once registered and reloaded, the tool becomes available to the AI Agent.
 
 ConnexCS provides a CLI tool:
 
-```
 [https://www.npmjs.com/package/@connexcs/tools](https://www.npmjs.com/package/@connexcs/tools)
-```
 
 Key commands:
 
@@ -296,7 +294,6 @@ mcp.json
 Example:
 
 ```json
-{
 { "servers": { "connexcs-call-debug": { "url": "https://fr1dev1.connexcs.net/api/cp/scriptforge/[your_scriptforge_mcp_file_id]/run", "type": "http", "headers": { "Authorization": "Bearer YourJWTTokenHere" } } }, "inputs": [] }
 ```
 
@@ -307,9 +304,9 @@ Example:
 
 | Field         | Source                |
 | ------------- | --------------------- |
-| url           | ConnexCS instance URL |
-| scriptForgeId | ID of MCP file        |
-| jwt           | Access Token          |
+| **url**           | ConnexCS instance URL |
+| **scriptForgeId** | ID of MCP file        |
+| **jwt**           | Access Token          |
 
 ---
 
@@ -374,12 +371,12 @@ The AI agent can:
 
 | Category           | Examples                  |
 | ------------------ | ------------------------- |
-| CDR Analysis       | searchCallLogs            |
-| Documentation      | searchDocumentation       |
-| C-Trace            | getCTrace                |
-| Call Investigation | investigateCall           |
-| Switch Health      | Analytics queries         |
-| Customer Data      | Customer management tools |
+| **CDR Analysis**| searchCallLogs|
+| **Documentation**| searchDocumentation|
+| **C-Trace**| getCTrace|
+| **Call Investigation** | investigateCall|
+| **Switch Health**| Analytics queries|
+| **Customer Data**| Customer management tools |
 
 ---
 
