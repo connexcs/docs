@@ -34,7 +34,7 @@
         Assigning weights of 10 and 1 results in 10 out of 11 calls going to the first gateway and 1 out of 11 to the second.
 
     !!! Note "dr_gw_status"
-        `dr_gw_status` indicates the operational status of the Dialing Rule–Gateway mapped to the Carrier under IP Authentication.
+        `dr_gw_status` indicates the operational status of the Gateway assigned to a Carrier under IP Authentication..
 
         **Flag Meaning:**
         
