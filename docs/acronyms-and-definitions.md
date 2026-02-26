@@ -160,6 +160,17 @@
 |**Guard Rails**|n/a|In AI, guardrails are rules or constraints that guide the model’s behavior to ensure safe, reliable, and context-appropriate outputs.|
 |**LATA**| *Local Access and Transport Area*|Calls rated based on Local Access and Transport Area boundaries.|
 |**RC**|*Rate Center*|The specific geographic rate center in the U.S. tied to the prefix.|
+|**JWT**|*JSON Web Tokens*|It ensures verifiability of a payload.|
+|**Refresh Tokens**|n/a|Ensure seamless user sessions while improving security.|
+|**Token Hash**|n/a|A unique identifier for the JWT, helping track and manage tokens securely.|
+|**JTI**|*JWT ID*|It's a unique identifier for each JWT, ensuring that each token is distinguishable and can be tracked or revoked individually.|
+|**TPS**|*Telephone Preference Service*|UK national opt-out register for consumers who do not wish to receive unsolicited marketing calls.|
+|**DMA**|*Direct Marketing Association*|DMA in the UK is the leading trade body for the data and marketing industry.|
+|**ICO**|*Information Commissioner's Office*|UK's independent authority upholding information rights, enforcing data protection (like GDPR) and Freedom of Information laws, investigating breaches, issuing fines, and ensuring data privacy and public openness for individuals and organizations.|
+|**DCM**|*Document Content Module*|DCM uses $ placeholders in ConnexCS Page Builder that are replaced with real data to personalize pages dynamically.|
+|**USA NANPA**|*North American Numbering Plan Administrator*|Manages area codes and prefixes for the U.S., Canada, and parts of the Caribbean under FCC oversight.|
+|**R-Factor**|n/a|A network quality score (0–100) derived from the ITU-T E-Model (G.107) that measures the combined impact of latency, jitter, packet loss, and codec behavior on call quality.|
+
 
 ## ACD Calculation Method
 
