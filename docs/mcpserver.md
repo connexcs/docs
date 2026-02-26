@@ -293,7 +293,7 @@ mcp.json
 Example:
 
 ```js
-{ "servers": { "connexcs-call-debug": { "url": "https://fr1dev1.connexcs.net/api/cp/scriptforge/[your_scriptforge_mcp_file_id]/run", "type": "http", "headers": { "Authorization": "Bearer YourJWTTokenHere" } } }, "inputs": [] }
+{ "servers": { "connexcs-call-debug": { "url": "https://app.connexcs.com/api/cp/mcp/", "type": "http", "headers": { "Authorization": "Bearer YourJWTTokenHere" } } }, "inputs": [] }
 ```
 
 !!! Note "How to get the file ID?"
@@ -303,7 +303,7 @@ Example:
 
 | Field         | Source                |
 | ------------- | --------------------- |
-| **url**           | ConnexCS instance URL [https://fr1dev1.connexcs.net/api/cp/scriptforge/[your_scriptforge_mcp_file_id]/run](https://fr1dev1.connexcs.net/api/cp/scriptforge/[your_scriptforge_mcp_file_id]/run)|
+| **url**           | ConnexCS instance URL [https://app.connexcs.com/api/cp/mcp/](https://app.connexcs.com/api/cp/mcp/)|
 | **scriptForgeId** | ID of MCP file        |
 | **jwt**           | Access Token          |
 
