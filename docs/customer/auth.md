@@ -242,8 +242,8 @@ To enable, click **:material-plus:** next to SIP User Authentication:
 
     + **IP Whitelist:** Applies to SIP Users used for sending or receiving call traffic.
         + **If IP whitelisting is configured**:
-          + The SIP user may send calls only from the whitelisted IP address(es).
-          + Calls originating from non-whitelisted IP addresses will be rejected by ConnexCS.
+            + The SIP user may send calls only from the whitelisted IP address(es).
+            + Calls originating from non-whitelisted IP addresses will be rejected by ConnexCS.
         + **If no IP restriction is configured**: Calls may be accepted from any IP address, subject to other authentication mechanisms.
         + **Purpose**: This restriction protects against unauthorized traffic injection and fraud.
     

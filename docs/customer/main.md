@@ -68,8 +68,8 @@ Click **:material-plus:** to the right of **Contacts**.
 
 * **IP Whitelist**: Applies to Contacts accessing the Customer Portal.
     * **If IP whitelisting is configured**:
-      * The contact may log in only from the whitelisted IP address(es).
-      * Login attempts from non-whitelisted IP addresses will be denied.
+        * The contact may log in only from the whitelisted IP address(es).
+        * Login attempts from non-whitelisted IP addresses will be denied.
     * **If no IP restriction is configured**: The contact may log in from any IP address.
     * **Purpose**: This restriction secures customer-level access to the portal.
 
