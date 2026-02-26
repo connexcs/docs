@@ -52,13 +52,12 @@ To add a new ConnexCS **User**, click :material-plus: in the **Users** section o
   
 + **Time Zone:** Select the User's time zone.
   
-+ **IP Whitelist:** Specify the IP or range of IPs this user can use to connect to the ConnexCS Control Panel.
-
-    They won't be able to log in from any other IP, so be careful with this setup. Specify IPs as follows:
-
-    + Single IP address: **For example**, 1.1.1.1
-    + Wildcard for IP addresses: **For example**, 1.1.1
-    + Range of IP addresses in CIDR (Classless Inter-Domain Routing) format: **For example**, 1.1.1.0/31
++ **IP Whitelist:** Applies to users logging into the `ConnexCS Control Panel`.
+    + **If one or more IP addresses are configured in the whitelist**:
+        + The user may authenticate only from the whitelisted IP address(es).
+        + Login attempts from non-whitelisted IP addresses will be denied.
+    + **If no IP addresses are configured**: The user may log in from any IP address.
+    + **Purpose**: This restriction protects administrative access to the platform.
 
 + **Shared Ticket:** If enabled, all Users in the account can view tickets created by this user based on the email address of this User.
 

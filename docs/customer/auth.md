@@ -240,7 +240,13 @@ To enable, click **:material-plus:** next to SIP User Authentication:
         
         :material-menu-right: **`SMPP`**: SMPP, for SMS, is currently not supported.
 
-    + **IP Allow list**: Enter specific IPs or use CIDR notation to specify an entire subnet.
+    + **IP Whitelist:** Applies to SIP Users used for sending or receiving call traffic.
+        + **If IP whitelisting is configured**:
+            + The SIP user may send calls only from the whitelisted IP address(es).
+            + Calls originating from non-whitelisted IP addresses will be rejected by ConnexCS.
+        + **If no IP restriction is configured**: Calls may be accepted from any IP address, subject to other authentication mechanisms.
+        + **Purpose**: This restriction protects against unauthorized traffic injection and fraud.
+    
     + **NAT/SIP Ping**: Set behavior of pings sent from ConnexCS back to the customer through their firewall to their UAC. This helps when there are remote agents connecting to the switch. NAT/SIP Ping is used to keep the network address translation (NAT) open, ensuring calls can be received.
         
         :material-menu-right: **`Disabled`**: No pings are sent
