@@ -101,7 +101,7 @@ Environment Variables → API_TOKEN
 There are **two supported development approaches**.
 
 !!! Note "Please Note"
-    ScriptForge files are JavaScript in both environments. In the ConnexCS IDE, file extensions are not displayed. In cx-tools development, files are located in the `/src` directory and use the `.js` extension.
+	Navigate to **Setup :material-menu-right: Settings :material-menu-right: Option**. In the `General` tab, select the created **MCP app** from the `Custom MCP Endpoint` drop-down menu. Selecting the correct MCP endpoint ensures requests are executed in the intended environment; without it, tools may fail, authenticate incorrectly, or return data from the wrong system.  
 
 ---
 
