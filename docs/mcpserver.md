@@ -55,8 +55,9 @@ flowchart LR
 	CX MCP
 	```
 
-5. Navigate to **Setup :material-menu-right: Settings :material-menu-right: Option**. In the `General` tab, select the created **MCP app** from the `Custom MCP Endpoint` drop-down menu. <br>Selecting the correct MCP endpoint ensures requests are executed in the intended environment; without it, tools may fail, authenticate incorrectly, or return data from the wrong system.</br> 
+5. Navigate to **Setup :material-menu-right: Settings :material-menu-right: Option**. In the `General` tab, select the created **MCP app** from the `Custom MCP Endpoint` drop-down menu. <br>Selecting the correct MCP endpoint ensures requests are executed in the intended environment; without it, tools may fail, authenticate incorrectly, or return data from the wrong system.</br>
 
+<img src="/misc/img/mcp1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 ---
 
 ### Step 2: Environment Configuration
