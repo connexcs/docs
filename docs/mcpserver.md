@@ -55,7 +55,7 @@ After installation, the app appears inside the IDE under:
 CX MCP
 ```
 
-5. Navigate to Setup :material-menu-right: Settings :material-menu-right: Option. In the `General` tab, select the created `MCP app` from the `Custom MCP Endpoint` drop-down menu.
+5. Navigate to **Setup :material-menu-right: Settings :material-menu-right: Option**. In the `General` tab, select the created **MCP app** from the `Custom MCP Endpoint` drop-down menu. <br>Selecting the correct MCP endpoint ensures requests are executed in the intended environment; without it, tools may fail, authenticate incorrectly, or return data from the wrong system.</br> 
 ---
 
 ### Step 2: Environment Configuration
@@ -293,17 +293,14 @@ mcp.json
 Example:
 
 ```js
-{ "servers": { "connexcs-call-debug": { "url": "https://fr1dev1.connexcs.net/api/cp/scriptforge/[your_scriptforge_mcp_file_id]/run", "type": "http", "headers": { "Authorization": "Bearer YourJWTTokenHere" } } }, "inputs": [] }
+{ "servers": { "connexcs-call-debug": { "url": "https://app.connexcs.com/api/cp/mcp/", "type": "http", "headers": { "Authorization": "Bearer YourJWTTokenHere" } } }, "inputs": [] }
 ```
-
-!!! Note "How to get the file ID?"
-    Navigate to IDE :material-menu-right: Click on the MCP server app :material-menu-right: Settings button :material-menu-right: Copy File URL (share). The `last four` digits are the file ID. <br><img src= "/misc/img/mcp.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 ### Required Values
 
 | Field         | Source                |
 | ------------- | --------------------- |
-| **url**           | ConnexCS instance URL [https://fr1dev1.connexcs.net/api/cp/scriptforge/[your_scriptforge_mcp_file_id]/run](https://fr1dev1.connexcs.net/api/cp/scriptforge/[your_scriptforge_mcp_file_id]/run)|
+| **url**           | ConnexCS instance URL [https://app.connexcs.com/api/cp/mcp/](https://app.connexcs.com/api/cp/mcp/)|
 | **scriptForgeId** | ID of MCP file        |
 | **jwt**           | Access Token          |
 
