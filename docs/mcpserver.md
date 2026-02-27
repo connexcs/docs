@@ -31,12 +31,12 @@ flowchart LR
 ### Components
 
 |Component|Description|
-| --------|-----------| 
-| **AI Agent** | LLM-powered assistant (VS Code, Claude, etc.)  |
-| **MCP Client**| Local configuration connecting agent to server |
+| --------|-----------|
+| **AI Agent** | LLM-powered assistant (VS Code, Claude, etc.)|
+| **MCP Client**| Local configuration connecting agent to server|
 | **MCP Server**| CX MCP App running inside ConnexCS|
-| **ScriptForge**| Server-side function layer |
-| **ConnexCS APIs** | Core platform services |
+| **ScriptForge**| Server-side function layer|
+| **ConnexCS APIs** | Core platform services|
 
 ---
 
