@@ -49,11 +49,11 @@ flowchart LR
 3. Click **Install**
 4. Select version and confirm
 
-After installation, the app appears inside the IDE under:
+	After installation, the app appears inside the IDE under:
 
-```
-CX MCP
-```
+	```
+	CX MCP
+	```
 
 5. Navigate to **Setup :material-menu-right: Settings :material-menu-right: Option**. In the `General` tab, select the created **MCP app** from the `Custom MCP Endpoint` drop-down menu. <br>Selecting the correct MCP endpoint ensures requests are executed in the intended environment; without it, tools may fail, authenticate incorrectly, or return data from the wrong system.</br> 
 
@@ -102,7 +102,7 @@ Environment Variables → API_TOKEN
 
 There are **two supported development approaches**.
 
-!!! Note "ScriptForge files are JavaScript in both environments. <br>In the ConnexCS IDE, file extensions are not displayed.</br> In cx-tools development, files are located in the `/src` directory and use the `.js` extension."
+!!! Note "ScriptForge files are JavaScript in both environments. <br>In the ConnexCS IDE, file extensions are not displayed.</br> <br>In cx-tools development, files are located in the `/src` directory and use the `.js` extension.</br>"
 
 ---
 
