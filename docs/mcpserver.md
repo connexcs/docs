@@ -55,7 +55,9 @@ flowchart LR
 	CX MCP
 	```
 
-5. Navigate to **Setup :material-menu-right: Settings :material-menu-right: Option**. In the `General` tab, select the created **MCP app** from the `Custom MCP Endpoint` drop-down menu. <br>Selecting the correct MCP endpoint ensures requests are executed in the intended environment; without it, tools may fail, authenticate incorrectly, or return data from the wrong system.</br> 
+5. Navigate to **Setup :material-menu-right: Settings :material-menu-right: Option**. In the `General` tab, select the created **MCP app** from the `Custom MCP Endpoint` drop-down menu. <br>Selecting the correct MCP endpoint ensures requests are executed in the intended environment; without it, tools may fail, authenticate incorrectly, or return data from the wrong system.</br>
+
+<img src= "mcp1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ---
 
@@ -71,7 +73,7 @@ Configure:
 
 | Variable    | Required | Description|
 | ----------- | --------| ----------- |
-| `API_USERNAME`  | Yes| Email of a valid ConnexCS user|
+| `API_USERNAME`  | Yes| Email of a valid ConnexCS user -> **Connexcs Email**|
 | `cx_api_user` | Yes| JWT Access Token|
 | `VERBOSE`   | No| Enables verbose logging for tests |
 
@@ -293,7 +295,7 @@ mcp.json
 
 Example:
 
-```js
+```bash
 { "servers": { "connexcs-call-debug": { "url": "https://app.connexcs.com/api/cp/mcp/", "type": "http", "headers": { "Authorization": "Bearer YourJWTTokenHere" } } }, "inputs": [] }
 ```
 
@@ -302,7 +304,6 @@ Example:
 | Field         | Source                |
 | ------------- | --------------------- |
 | **url**           | ConnexCS instance URL [https://app.connexcs.com/api/cp/mcp/](https://app.connexcs.com/api/cp/mcp/)|
-| **scriptForgeId** | ID of MCP file        |
 | **jwt**           | Access Token          |
 
 ---
