@@ -163,3 +163,219 @@ This key determines which Yoco account the API requests are executed against and
         + **Percent**: Applies a percentage-based surcharge on the transaction amount. <img src= "/apps/img/yoco4.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 5. Click `Save`.
+
+### Neutrafix
+
+#### Overview
+
+**Neutrafix** is a **technology platform** designed to enable companies to:
+
+* Register and onboard as customers
+* Access routing services
+* Purchase telecom routes
+* Manage prefixes and rate cards
+* Authenticate via Portal or API access
+
+The platform integrates with the **ConnexCS Control Panel** and provides a structured workflow from **company registration → authentication → route purchase → billing execution**.
+
+---
+
+#### System Purpose
+
+The Neutrafix application provides:
+
+* Customer onboarding automation
+* Route marketplace access
+* Prefix-based routing configuration
+* Seller-specific rate card assignment
+* API and portal-based access control
+
+---
+
+#### User Onboarding Flow
+
+1. **Sign-Up Process**
+
+Users register through the Neutrafix application interface.
+
+**Steps**:
+
+1. User clicks **Sign Up**.
+2. One-click registration flow begins.
+3. Company verification documents must be submitted:
+
+   * Company Registration Documents
+   * Shareholder Documentation
+
+**Validation**:
+
+* Registration remains pending until documents are verified.
+* Incomplete documentation prevents account activation.
+
+---
+
+2. **Account Activation**
+
+After verification:
+
+* Customer account is created.
+* Login credentials are generated.
+* API authentication credentials are enabled.
+
+Users can then:
+
+* Log into the platform UI
+* Authenticate via API password
+
+---
+
+#### Authentication Methods
+
+| Method       | Description                                       |
+| ------------ | ------------------------------------------------- |
+| **Portal Login** | Standard username/password access                 |
+| **API Login**    | Programmatic authentication using API credentials |
+
+---
+
+#### Platform Components
+
+1. **Control Panel Integration**
+
+Neutrafix connects directly with the **ConnexCS Control Panel**, where operational configurations are managed.
+
+Functions available:
+
+* Prefix creation
+* Route purchasing
+* Carrier assignment
+* Rate card mapping
+
+2. **Prefix Management**
+
+Users can:
+
+* Create routing prefixes
+* Search prefixes anytime
+* Associate prefixes with purchased routes
+
+Prefixes determine routing behavior and billing mapping.
+
+---
+
+#### Route Purchase Workflow
+
+**Step 1 — Route Selection**
+
+Users browse available routes within the platform.
+
+**Step 2 — Purchase Route**
+
+Selected routes are purchased through the Control Panel.
+
+**Step 3 — Carrier Creation**
+
+**Upon login or purchase**:
+
+* A **Neutrafix carrier** is automatically created.
+
+---
+
+#### Rate Card Assignment
+
+Each company receives **seller-specific rate cards**.
+
+**Behavior**:
+
+* Different sellers → different rate cards
+* Pricing varies per company configuration
+* Purchased routes inherit assigned rate card automatically
+
+---
+
+### Example Logic
+
+| Scenario                      | Result                            |
+| ----------------------------- | --------------------------------- |
+| Seller A purchases route      | Seller A rate card applied        |
+| Seller B purchases same route | Different pricing applied         |
+| Prefix added                  | Linked to purchased route billing |
+
+---
+
+#### Billing Operation
+
+After purchase:
+
+1. Prefix is attached to route.
+2. Billing rules are applied automatically.
+3. Charges follow assigned rate card.
+4. Traffic is billed according to routing configuration.
+
+Billing operates transparently once configuration is completed.
+
+---
+
+#### High-Level System Flow
+
+```
+User Signup
+     ↓
+Document Verification
+     ↓
+Account Creation
+     ↓
+Portal/API Login
+     ↓
+Route Purchase
+     ↓
+Carrier Creation
+     ↓
+Prefix Assignment
+     ↓
+Rate Card Applied
+     ↓
+Billing & Traffic Processing
+```
+
+#### Steps to Use the App
+
+1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: NeuTrafix** and click `Install`.<img src= "/apps/img/nt1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+2. A window will appear, select the version of the app and hit `Install` again. <img src= "/apps/img/nt2.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
+3. Click on `Config` (**settings button**) to assign the `API User` click `Confirm`. <img src= "/apps/img/nt3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"> <br> <img src= "/apps/img/nt4.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"> </br>
+4. Click on the `NeuTrafix` app on the sidebar. Complete the `Signup` process if you are a new customer. <img src= "/apps/img/nt5.png" width= "600" style="border: 2px solid #4472C4; border-radius: 8px;">
+5. If you are already a customer, click on `Login`. A window will prompt you to enter the `API Login` and `API Key`. Click on `Login`. <img src= "/apps/img/nt6.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+      !!! Note "You can get the `API Login` and `API Key` from the NeuTrafix `Dashboard`."
+
+6. A window will appear with the following fields: <br><img src= "/apps/img/nt7.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+   1. **Market View** allows users to `See Purchased Routes`. Opens list of routes already purchased by the user.
+   2. **Filter** Section:
+
+      | Field| Description| Usage|
+      | -----|------------|------|
+      | **Prefix** |Destination dialing prefix| Used to search routes for a specific number range (e.g., 91, 44, 1)|
+      | **Country**| Destination country| Filters routes available for a country|
+      | **Route Type**|Route classification | Filters route quality/type (e.g., CLI, Non-CLI, Premium, etc.)|
+      | **Seller**| Route provider/company| Shows routes offered by a specific seller|
+      | **Seller Route**| Seller-specific route category | Filters routes within seller inventory|
+      | **Route (Voice / SMS)** | Traffic type| Select whether searching Voice routes or SMS routes|
+      | **Minimum Price**|Lower price limit| Filters routes above specified price|
+      | **Maximum Price**| Upper price limit| Filters routes below specified price|
+      | **Order By**| Sorting criteria| Sort results (price, prefix, seller, etc.)|
+
+   3. **Search Result Section**: Displays routes matching the filter criteria.
+
+   4. **Result Table** Columns
+
+      | Column| Description| Technical Meaning |
+      | ------|-------------|------------------ |
+      | **Prefix**| Destination prefix | Dialing code covered by the route|
+      | **Price (USD)**| Route rate| Cost per minute/message offered by seller|
+      | **Seller**| Route provider| Company offering termination service|
+      | **Type**| Route type| Traffic category (Voice/SMS or quality classification)  |
+      | **Destination**| Destination name| Country or operator served|
+      | **Route Information** | Route details| Technical information about route quality/configuration |
+      | **Purchase Route**| Action column| Button to buy/select the route|
+
+7. A `NeuTrafix` carrier is created each time the user logins to the app. In the carrier there are various Rate Cards associated with the sellers, jab bhi woh purchase out karta hai uske jitne bhi prefix hota hai woh uss seller mai add ho jaate hai and it behaves like a normal rate card.
