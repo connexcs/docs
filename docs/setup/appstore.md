@@ -120,6 +120,7 @@ Instead of manually dialing a phone number, users or systems can trigger a call 
       + Select the `Customer` for the drop-down.
       + Enter the `API Key`. It acts as a gate-keeper in maintaining the security, reliability, and integrity of API-based interactions. API Keys are generated randomly for each customer as soon as you press `+Add`.
       + Enter the `Extension`. It specifies the number you are using to initiate the call.<img src= "/apps/img/cd4.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
 5. Click `Save`.
 
 ### Yoco Payment
@@ -196,23 +197,16 @@ The Neutrafix application provides:
 
 1. **Sign-Up Process**
 
-Users register through the Neutrafix application interface.
+     Users register through the Neutrafix application interface.
 
-**Steps**:
+     **Steps**:
 
-1. User clicks **Sign Up**.
-2. One-click registration flow begins.
-3. Company verification documents must be submitted:
-
-   * Company Registration Documents
-   * Shareholder Documentation
-
-**Validation**:
-
-* Registration remains pending until documents are verified.
-* Incomplete documentation prevents account activation.
-
----
+     a. User clicks **Sign Up**.
+     b. One-click registration flow begins.
+     c. Company verification documents must be submitted.
+     d. **Validation**:
+      * Registration remains pending until documents are verified.
+      * Incomplete documentation prevents account activation.
 
 2. **Account Activation**
 
@@ -246,18 +240,14 @@ Neutrafix connects directly with the **ConnexCS Control Panel**, where operation
 
 Functions available:
 
-* Prefix creation
-* Route purchasing
-* Carrier assignment
-* Rate card mapping
-
-2. **Prefix Management**
-
-Users can:
-
-* Create routing prefixes
-* Search prefixes anytime
-* Associate prefixes with purchased routes
+1. Prefix creation
+2. Route purchasing
+3. Carrier assignment
+4. Rate card mapping
+5. Prefix Management: **Users can**:
+   1. Create routing prefixes
+   2. Search prefixes anytime
+   3. Associate prefixes with purchased routes
 
 Prefixes determine routing behavior and billing mapping.
 
@@ -275,9 +265,7 @@ Selected routes are purchased through the Control Panel.
 
 **Step 3 — Carrier Creation**
 
-**Upon login or purchase**:
-
-* A **Neutrafix carrier** is automatically created.
+Upon login or purchase: **Neutrafix carrier** is automatically created.
 
 ---
 
@@ -346,36 +334,38 @@ Billing & Traffic Processing
 4. Click on the `NeuTrafix` app on the sidebar. Complete the `Signup` process if you are a new customer. <img src= "/apps/img/nt5.png" width= "600" style="border: 2px solid #4472C4; border-radius: 8px;">
 5. If you are already a customer, click on `Login`. A window will prompt you to enter the `API Login` and `API Key`. Click on `Login`. <img src= "/apps/img/nt6.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-      !!! Note "You can get the `API Login` and `API Key` from the NeuTrafix `Dashboard`."
+     !!! Note "You can get the `API Login` and `API Key` from the NeuTrafix `Dashboard`."
 
 6. A window will appear with the following fields: <br><img src= "/apps/img/nt7.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-   1. **Market View** allows users to `See Purchased Routes`. Opens list of routes already purchased by the user.
-   2. **Filter** Section:
 
-      | Field| Description| Usage|
-      | -----|------------|------|
-      | **Prefix** |Destination dialing prefix| Used to search routes for a specific number range (e.g., 91, 44, 1)|
-      | **Country**| Destination country| Filters routes available for a country|
-      | **Route Type**|Route classification | Filters route quality/type (e.g., CLI, Non-CLI, Premium, etc.)|
-      | **Seller**| Route provider/company| Shows routes offered by a specific seller|
-      | **Seller Route**| Seller-specific route category | Filters routes within seller inventory|
-      | **Route (Voice / SMS)** | Traffic type| Select whether searching Voice routes or SMS routes|
-      | **Minimum Price**|Lower price limit| Filters routes above specified price|
-      | **Maximum Price**| Upper price limit| Filters routes below specified price|
-      | **Order By**| Sorting criteria| Sort results (price, prefix, seller, etc.)|
+      1. **Market View** allows users to `See Purchased Routes`. Opens list of routes already purchased by the user.
 
-   3. **Search Result Section**: Displays routes matching the filter criteria.
+      2. **Filter** Section:
 
-   4. **Result Table** Columns
+          | Field| Description| Usage|
+          | -----|------------|------|
+          | **Prefix** |Destination dialing prefix| Used to search routes for a specific number range (e.g., 91, 44, 1)|
+          | **Country**| Destination country| Filters routes available for a country|
+          | **Route Type**|Route classification | Filters route quality/type (e.g., CLI, Non-CLI, Premium, etc.)|
+          | **Seller**| Route provider/company| Shows routes offered by a specific seller|
+          | **Seller Route**| Seller-specific route category | Filters routes within seller inventory|
+          | **Route (Voice / SMS)** | Traffic type| Select whether searching Voice routes or SMS routes|
+          | **Minimum Price**|Lower price limit| Filters routes above specified price|
+          | **Maximum Price**| Upper price limit| Filters routes below specified price|
+          | **Order By**| Sorting criteria| Sort results (price, prefix, seller, etc.)|
 
-      | Column| Description| Technical Meaning |
-      | ------|-------------|------------------ |
-      | **Prefix**| Destination prefix | Dialing code covered by the route|
-      | **Price (USD)**| Route rate| Cost per minute/message offered by seller|
-      | **Seller**| Route provider| Company offering termination service|
-      | **Type**| Route type| Traffic category (Voice/SMS or quality classification)  |
-      | **Destination**| Destination name| Country or operator served|
-      | **Route Information** | Route details| Technical information about route quality/configuration |
-      | **Purchase Route**| Action column| Button to buy/select the route|
+      3. **Search Result Section**: Displays routes matching the filter criteria.
 
-7. A `NeuTrafix` carrier is created each time the user logins to the app. In the carrier there are various Rate Cards associated with the sellers, jab bhi woh purchase out karta hai uske jitne bhi prefix hota hai woh uss seller mai add ho jaate hai and it behaves like a normal rate card.
+      4. **Result Table** Columns
+
+          | Column| Description| Technical Meaning |
+          | ------|-------------|------------------ |
+          | **Prefix**| Destination prefix | Dialing code covered by the route|
+          | **Price (USD)**| Route rate| Cost per minute/message offered by seller|
+          | **Seller**| Route provider| Company offering termination service|
+          | **Type**| Route type| Traffic category (Voice/SMS or quality classification)  |
+          | **Destination**| Destination name| Country or operator served|
+          | **Route Information** | Route details| Technical information about route quality/configuration |
+          | **Purchase Route**| Action column| Button to buy/select the route|
+
+      5. A `NeuTrafix` carrier is automatically created each time a user logs into the application. Within this carrier, multiple seller-specific rate cards are associated. Whenever a user purchases a route, all corresponding prefixes linked to that purchase are automatically added under the respective seller’s rate card, after which they function as a standard rate card within the system.
