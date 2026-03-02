@@ -4,7 +4,7 @@
 
 The **CX MCP App** is an extendable **Model Context Protocol (MCP) Server** built for the ConnexCS platform.
 
-It enables AI agents (e.g., VS Code AI, Claude Desktop, etc.) to:
+It enables AI-powered MCP clients (e.g., VS Code and Claude Desktop) to access tools and functionality via the MCP protocol to:
 
 * Access ConnexCS platform data
 * Execute backend ScriptForge functions
@@ -14,7 +14,7 @@ It enables AI agents (e.g., VS Code AI, Claude Desktop, etc.) to:
 
 The MCP app acts as a secure bridge between:
 
-> AI Agent ↔ MCP Server ↔ ScriptForge ↔ ConnexCS Backend APIs
+> MCP Client ↔ AI Agent ↔ MCP Server ↔ ScriptForge ↔ ConnexCS Backend APIs
 
 ---
 
@@ -22,21 +22,28 @@ The MCP app acts as a secure bridge between:
 
 ```mermaid
 flowchart LR
-    A["AI Agent - VS Code or Claude"] --> B["MCP Client Config - mcp.json"]
-    B --> C["MCP Server - CX MCP App"]
-    C --> D["ScriptForge Functions"]
-    D --> E["ConnexCS APIs / Backend"]
+    A["AI Model / Agent (e.g., Claude Sonnet 4.6)"]
+    --> B["MCP Client (VS Code / Claude Desktop / Claude Code)"]
+
+    B --> C["MCP Client Configuration (mcp.json)"]
+
+    C --> D["Local MCP Server - CX MCP App"]
+
+    D --> E["ScriptForge Functions"]
+
+    E --> F["ConnexCS APIs / Backend"]
 ```
 
 ### Components
 
-|Component|Description|
-| --------|-----------|
-| **AI Agent** | LLM-powered assistant (VS Code, Claude, etc.)|
-| **MCP Client**| Local configuration connecting agent to server|
-| **MCP Server**| CX MCP App running inside ConnexCS|
-| **ScriptForge**| Server-side function layer|
-| **ConnexCS APIs** | Core platform services|
+| Component| Description|
+| ---------|------------|
+| **AI Model / Agent**| The LLM that performs reasoning and generates actions (e.g., Claude Opus, Claude Sonnet, GPT-5). The model acts as the AI agent.|
+| **MCP Client** | An application that hosts or connects to AI models and communicates with MCP servers. MCP clients can run locally or as web-based applications (e.g., VS Code, Claude Desktop, Claude Code). |
+| **MCP Client Configuration** | Local configuration file (e.g., `mcp.json`) that defines available MCP servers and connection settings.|
+| **MCP Server**| The CX MCP application running locally within the MCP client environment, exposing tools and capabilities via the MCP protocol. |
+| **ScriptForge**| Server-side execution layer providing callable functions/tools exposed through the MCP server. |
+| **ConnexCS APIs** | Core ConnexCS platform services accessed by ScriptForge to perform operations and retrieve data. |
 
 ---
 
@@ -51,7 +58,7 @@ flowchart LR
 
 	After installation, the app appears inside the IDE under:
 
-	```
+	```json
 	CX MCP
 	```
 
@@ -65,7 +72,7 @@ flowchart LR
 
 Navigate to:
 
-```
+```json
 App → Environment Variables
 ```
 
@@ -74,7 +81,6 @@ Configure:
 | Variable    | Required | Description|
 | ----------- | --------| ----------- |
 | `API_USERNAME`  | Yes| Email of a valid ConnexCS user -> **Connexcs Email**|
-| `cx_api_user` | Yes| JWT Access Token|
 | `VERBOSE`   | No| Enables verbose logging for tests |
 
 ---
@@ -95,7 +101,7 @@ Setup → Integrations → JWT Tokens
 6. Paste this into:
 
 ```
-Environment Variables → API_TOKEN
+Environment Variables → CONNEXCS_API_TOKEN
 ```
 
 ---
@@ -122,7 +128,7 @@ IDE → ScriptForge Files
 
 #### Location
 
-Navigate in the IDE:
+Navigate to the IDE:
 
 **IDE → Cx MCP → Scriptforge**
 
@@ -140,9 +146,11 @@ All tool logic must reside in this directory.
    * Export the function using the existing ScriptForge tool pattern.
    * Follow the same execution structure as other tools in the folder.
 
-3. **Register the tool in the MCP configuration.**
+3. **Register the tool in the MCP configuration**. Also,  registration happens in the `mcp javascript` file.
 
-   * Add the new file to the MCP configuration so MCP can recognize it.
+   * Tools must be registered within the MCP server configuration. If a tool is defined in a separate file, it must be exported from that file and imported into the MCP server where tool registration occurs.
+   * ```export function toolName () { // Tool logic```
+   * ```import { toolName} from './toolFile'```
 
 4. **Reload / Restart MCP** (if required).
 
@@ -158,10 +166,10 @@ ConnexCS provides a CLI tool:
 
 Key commands:
 
-```bash
+```json
 cx configure
 cx configure app
-cx run <file_id>
+cx run <file_name>
 ```
 
 #### Benefits
@@ -201,7 +209,7 @@ When a PR is submitted:
 
 The most important file:
 
-```
+```json
 mcp.js
 ```
 
@@ -267,15 +275,25 @@ Each MCP tool consists of:
 **All tools call**:
 
 ```javascript
-getAPI()
+export function getApi () {
+    const apiUsername = process.env.API_USERNAME
+   
+    if (!apiUsername || apiUsername.trim() === '') {
+        throw new Error(
+            'API_USERNAME environment variable is required but not set. ' +
+            'Please set API_USERNAME in your environment variables to authenticate with ConnexCS API.'
+        )
+    }
+   
+    return cxRest.auth(apiUsername)
+}
 ```
 
 **Authentication occurs using**:
 
 * `API_USERNAME`
-* `API_TOKEN`
 
-**Without valid token → request fails**.
+**Requests fail only when a valid API username is not available. The ConnexCS API token is optional and is used solely during MCP server configuration within the MCP client. If a token is not provided, authentication can occur via OAuth login.**.
 
 ---
 
@@ -283,20 +301,29 @@ getAPI()
 
 Create folder:
 
-```
+```json
 .vscode/
 ```
 
 Create file:
 
-```
+```json
 mcp.json
 ```
 
 Example:
 
-```bash
-{ "servers": { "connexcs-call-debug": { "url": "https://app.connexcs.com/api/cp/mcp/", "type": "http", "headers": { "Authorization": "Bearer YourJWTTokenHere" } } }, "inputs": [] }
+```js
+{ 
+   "servers": { 
+          "connexcs-call-debug": { 
+                   "url": "https://app.connexcs.com/api/cp/mcp/", 
+                     "type": "http", 
+                      "headers": { "Authorization": "Bearer YourJWTTokenHere" }
+          } 
+     }, 
+   "inputs": [] 
+}
 ```
 
 ### Required Values
