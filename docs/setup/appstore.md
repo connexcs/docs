@@ -195,45 +195,48 @@ The Neutrafix application provides:
 
 #### User Onboarding Flow
 
-1. **Sign-Up Process**
+Here’s a **cleanly edited version** of your documentation incorporating all the requested changes — wording polished, structure simplified, and comments properly integrated.
 
-     Users register through the Neutrafix application interface.
+---
 
-     **Steps**:
+## **1. Sign-Up Process**
 
-     a. User clicks **Sign Up**.
+Users register through the **Neutrafix** application interface.
 
-     b. One-click registration flow begins.
+### **Steps**
 
-     c. Company verification documents must be submitted.
+a. User clicks **Sign Up**.
 
-     d. **Validation**:
+b. One-click registration flow begins.
 
-      * Registration remains pending until documents are verified.
+c. Company verification documents must be submitted.
 
-      * Incomplete documentation prevents account activation.
+d. After completing sign-up, a **credentials dialog** is displayed containing:
 
-<br>2. **Account Activation**</br>
+* Username
+* Login Password
+* API Password
 
-**After verification**:
+⚠️ **Important:**
+Users must securely store these credentials, as they may not be shown again.
 
-* Customer account is created.
-* Login credentials are generated.
-* API authentication credentials are enabled.
+!!! Note "Note 1 — Account Creation & Verification"
+    * The account is **created immediately after sign-up**, and credentials are generated and shared with the user.
+    * Submitted company documents are sent to the **Neutrafix team for verification and review**.
+    * Users **cannot perform buying activities** until the document review process is successfully completed by Neutrafix.
 
-**Users can then**:
-
-* Log into the platform UI
-* Authenticate via API password
+!!! Note "Note 2 — Existing Neutrafix Users"
+    * Existing Neutrafix users can reuse their **API Username** and **API Password**.
+    * These credentials are available inside the **Profile section** of the platform.
+    * Standard login credentials should **not** be used for API authentication.
 
 ---
 
 #### Authentication Methods
 
-| Method       | Description                                       |
-| ------------ | ------------------------------------------------- |
-| **Portal Login** | Standard username/password access                 |
-| **API Login**    | Programmatic authentication using API credentials |
+| Method       | Description |
+| ------------ | ------------|
+| **API Login**| Programmatic authentication using API credentials |
 
 ---
 
@@ -334,10 +337,16 @@ Billing & Traffic Processing
 #### Steps to Use the App
 
 1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: NeuTrafix** and click `Install`.<img src= "/apps/img/nt1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
-2. A window will appear, select the version of the app and hit `Install` again. <img src= "/apps/img/nt2.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
-3. Click on `Config` (**settings button**) to assign the `API User` click `Confirm`. <img src= "/apps/img/nt3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"> <br> <img src= "/apps/img/nt4.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"> </br>
+2. A window will appear, select the version of the app and hit `Install` again. <br><img src= "/apps/img/nt2.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+3. Click on `Config` (**settings button**) to assign the `API User` click `Confirm`. <br><img src= "/apps/img/nt3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"> <br> <img src= "/apps/img/nt4.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"> </br>
 4. Click on the `NeuTrafix` app on the sidebar. Complete the `Signup` process if you are a new customer. <img src= "/apps/img/nt5.png" width= "600" style="border: 2px solid #4472C4; border-radius: 8px;">
 5. If you are already a customer, click on `Login`. A window will prompt you to enter the `API Login` and `API Key`. Click on `Login`. <img src= "/apps/img/nt6.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+     !!! Note "Note 2 — Existing Neutrafix Users"
+       * Existing Neutrafix users can reuse their **API Username** and **API Password**.
+       * These credentials are available inside the **Profile section** of the platform.
+       * Standard login credentials should **not** be used for API authentication.
+
 6. A window will appear with the following fields: <br><img src= "/apps/img/nt7.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
       1. **Market View** allows users to `See Purchased Routes`. Opens list of routes already purchased by the user.
@@ -364,11 +373,12 @@ Billing & Traffic Processing
           | ------|-------------|------------------ |
           | **Prefix**| Destination prefix | Dialing code covered by the route|
           | **Price (USD)**| Route rate| Cost per minute/message offered by seller|
-          | **Seller**| Route provider| Company offering termination service|
+          | **Seller**| When users click on a seller, they can view the seller’s profile details.|
           | **Type**| Route type| Traffic category (Voice/SMS or quality classification)  |
           | **Destination**| Destination name| Country or operator served|
           | **Route Information** | Route details| Technical information about route quality/configuration |
           | **Purchase Route**| Action column| Button to buy/select the route|
+          |**View More**|Available to display additional information|
 
       5. A `NeuTrafix` carrier is automatically created each time a user logs into the application. Within this carrier, multiple seller-specific rate cards are associated. Whenever a user purchases a route, all corresponding prefixes linked to that purchase are automatically added under the respective seller’s rate card, after which they function as a standard rate card within the system.
 
