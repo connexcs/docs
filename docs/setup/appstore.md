@@ -202,8 +202,11 @@ The Neutrafix application provides:
      **Steps**:
 
      a. User clicks **Sign Up**.
+
      b. One-click registration flow begins.
+
      c. Company verification documents must be submitted.
+
      d. **Validation**:
       * Registration remains pending until documents are verified.
       * Incomplete documentation prevents account activation.
@@ -245,9 +248,9 @@ Functions available:
 3. Carrier assignment
 4. Rate card mapping
 5. Prefix Management: **Users can**:
-   1. Create routing prefixes
-   2. Search prefixes anytime
-   3. Associate prefixes with purchased routes
+      1. Create routing prefixes
+      2. Search prefixes anytime
+      3. Associate prefixes with purchased routes
 
 Prefixes determine routing behavior and billing mapping.
 
@@ -332,9 +335,7 @@ Billing & Traffic Processing
 2. A window will appear, select the version of the app and hit `Install` again. <img src= "/apps/img/nt2.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
 3. Click on `Config` (**settings button**) to assign the `API User` click `Confirm`. <img src= "/apps/img/nt3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"> <br> <img src= "/apps/img/nt4.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"> </br>
 4. Click on the `NeuTrafix` app on the sidebar. Complete the `Signup` process if you are a new customer. <img src= "/apps/img/nt5.png" width= "600" style="border: 2px solid #4472C4; border-radius: 8px;">
-5. If you are already a customer, click on `Login`. A window will prompt you to enter the `API Login` and `API Key`. Click on `Login`. <img src= "/apps/img/nt6.png" style="border: 2px solid #4472C4; border-radius: 8px;">
-
-     !!! Note "You can get the `API Login` and `API Key` from the NeuTrafix `Dashboard`."
+5. If you are already a customer, click on `Login`. A window will prompt you to enter the `API Login` and `API Key`. Click on `Login`. <img src= "/apps/img/nt6.png" style="border: 2px solid #4472C4; border-radius: 8px;"><br>!!! Note "You can get the `API Login` and `API Key` from the NeuTrafix `Dashboard`."</br>
 
 6. A window will appear with the following fields: <br><img src= "/apps/img/nt7.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
@@ -356,7 +357,7 @@ Billing & Traffic Processing
 
       3. **Search Result Section**: Displays routes matching the filter criteria.
 
-      4. **Result Table** Columns
+      4. **Result Table** Columns:
 
           | Column| Description| Technical Meaning |
           | ------|-------------|------------------ |
