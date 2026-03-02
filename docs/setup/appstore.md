@@ -208,18 +208,20 @@ The Neutrafix application provides:
      c. Company verification documents must be submitted.
 
      d. **Validation**:
+
       * Registration remains pending until documents are verified.
+
       * Incomplete documentation prevents account activation.
 
-2. **Account Activation**
+<br>2. **Account Activation**</br>
 
-After verification:
+**After verification**:
 
 * Customer account is created.
 * Login credentials are generated.
 * API authentication credentials are enabled.
 
-Users can then:
+**Users can then**:
 
 * Log into the platform UI
 * Authenticate via API password
@@ -335,8 +337,7 @@ Billing & Traffic Processing
 2. A window will appear, select the version of the app and hit `Install` again. <img src= "/apps/img/nt2.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
 3. Click on `Config` (**settings button**) to assign the `API User` click `Confirm`. <img src= "/apps/img/nt3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"> <br> <img src= "/apps/img/nt4.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"> </br>
 4. Click on the `NeuTrafix` app on the sidebar. Complete the `Signup` process if you are a new customer. <img src= "/apps/img/nt5.png" width= "600" style="border: 2px solid #4472C4; border-radius: 8px;">
-5. If you are already a customer, click on `Login`. A window will prompt you to enter the `API Login` and `API Key`. Click on `Login`. <img src= "/apps/img/nt6.png" style="border: 2px solid #4472C4; border-radius: 8px;"><br>!!! Note "You can get the `API Login` and `API Key` from the NeuTrafix `Dashboard`."</br>
-
+5. If you are already a customer, click on `Login`. A window will prompt you to enter the `API Login` and `API Key`. Click on `Login`. <img src= "/apps/img/nt6.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 6. A window will appear with the following fields: <br><img src= "/apps/img/nt7.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
       1. **Market View** allows users to `See Purchased Routes`. Opens list of routes already purchased by the user.
@@ -370,3 +371,5 @@ Billing & Traffic Processing
           | **Purchase Route**| Action column| Button to buy/select the route|
 
       5. A `NeuTrafix` carrier is automatically created each time a user logs into the application. Within this carrier, multiple seller-specific rate cards are associated. Whenever a user purchases a route, all corresponding prefixes linked to that purchase are automatically added under the respective seller’s rate card, after which they function as a standard rate card within the system.
+
+!!! Note "You can get the `API Login` and `API Key` from the NeuTrafix `Dashboard`."
