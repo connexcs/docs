@@ -149,8 +149,8 @@ All tool logic must reside in this directory.
 3. **Register the tool in the MCP configuration**. Also,  registration happens in the `mcp javascript` file.
 
    * Tools must be registered within the MCP server configuration. If a tool is defined in a separate file, it must be exported from that file and imported into the MCP server where tool registration occurs.
-   * ```export function toolName () { // Tool logic```
-   * ```import { toolName} from './toolFile'```
+     * ```export function toolName () { // Tool logic```
+     * ```import { toolName} from './toolFile'```
 
 4. **Reload / Restart MCP** (if required).
 
