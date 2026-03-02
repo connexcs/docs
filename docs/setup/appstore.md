@@ -195,15 +195,11 @@ The Neutrafix application provides:
 
 #### User Onboarding Flow
 
-Here’s a **cleanly edited version** of your documentation incorporating all the requested changes — wording polished, structure simplified, and comments properly integrated.
-
----
-
-## **1. Sign-Up Process**
+**1. Sign-Up Process**
 
 Users register through the **Neutrafix** application interface.
 
-### **Steps**
+**Steps**
 
 a. User clicks **Sign Up**.
 
@@ -340,12 +336,7 @@ Billing & Traffic Processing
 2. A window will appear, select the version of the app and hit `Install` again. <br><img src= "/apps/img/nt2.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 3. Click on `Config` (**settings button**) to assign the `API User` click `Confirm`. <br><img src= "/apps/img/nt3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"> <br> <img src= "/apps/img/nt4.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"> </br>
 4. Click on the `NeuTrafix` app on the sidebar. Complete the `Signup` process if you are a new customer. <img src= "/apps/img/nt5.png" width= "600" style="border: 2px solid #4472C4; border-radius: 8px;">
-5. If you are already a customer, click on `Login`. A window will prompt you to enter the `API Login` and `API Key`. Click on `Login`. <img src= "/apps/img/nt6.png" style="border: 2px solid #4472C4; border-radius: 8px;">
-
-     !!! Note "Note 2 — Existing Neutrafix Users"
-       * Existing Neutrafix users can reuse their **API Username** and **API Password**.
-       * These credentials are available inside the **Profile section** of the platform.
-       * Standard login credentials should **not** be used for API authentication.
+5. If you are already a customer, click on `Login`. A window will prompt you to enter the `API Login` and `API Key`. Click on `Login`. <img src= "/apps/img/nt6.png" style="border: 2px solid #4472C4; border-radius: 8px;"><br> ⚠️ **Note:** Use your API Username and API Password from the Profile section for authentication; standard login credentials are not supported.</br>
 
 6. A window will appear with the following fields: <br><img src= "/apps/img/nt7.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
