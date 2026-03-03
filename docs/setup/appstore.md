@@ -171,17 +171,13 @@ This key determines which Yoco account the API requests are executed against and
 
 **Neutrafix** is a **telecom routes marketplace integrated within the ConnexCS platform**. It allows telecom companies to buy and sell voice routes through a structured, automated workflow.
 
-Using Neutrafix, companies can:
+**Using Neutrafix, companies can**:
 
-Register and onboard as marketplace participants
-
-Browse and purchase telecom routes
-
-Manage prefixes and rate cards
-
-Access routing services
-
-Authenticate via Portal or API
+* Register and onboard as marketplace participants
+* Browse and purchase telecom routes
+* Manage prefixes and rate cards
+* Access routing services
+* Authenticate via Portal or API
 
 Neutrafix connects directly with the **ConnexCS Control Panel**, enabling a seamless flow from **company registration → authentication → route selection → billing execution**.
 
@@ -232,113 +228,25 @@ Users must securely store these credentials, as they may not be shown again.
     * These credentials are available inside the **Profile section** of the platform.
     * Standard login credentials should **not** be used for API authentication.
 
-**2. Route Purchase Flow**
-
-When a user clicks **Purchase Route**, a confirmation dialog is displayed showing the selected route details and associated pricing. The user must review and confirm within this dialog to complete the purchase. Upon confirmation, the route is activated and linked to the user’s account for routing and billing.
-
 ---
 
 #### Authentication Methods
 
 | Method       | Description |
 | ------------ | ------------|
-| **API Login**| Programmatic authentication using API credentials |
-
----
-
-#### Platform Components
-
-1. **Control Panel Integration**
-
-Neutrafix connects directly with the **ConnexCS Control Panel**, where operational configurations are managed.
-
-Functions available:
-
-1. Prefix creation
-2. Route purchasing
-3. Carrier assignment
-4. Rate card mapping
-5. Prefix Management: **Users can**:
-      1. Create routing prefixes
-      2. Search prefixes anytime
-      3. Associate prefixes with purchased routes
-
-Prefixes determine routing behavior and billing mapping.
-
----
-
-#### Route Purchase Workflow
-
-**Step 1 — Route Selection**
-
-Users browse available routes within the platform.
-
-**Step 2 — Purchase Route**
-
-Selected routes are purchased through the Control Panel.
-
-**Step 3 — Carrier Creation**
-
-Upon login or purchase: **Neutrafix carrier** is automatically created.
-
----
-
-#### Rate Card Assignment
-
-Each company receives **seller-specific rate cards**.
-
-**Behavior**:
-
-* Different sellers → different rate cards
-* Pricing varies per company configuration
-* Purchased routes inherit assigned rate card automatically
+| **API Login**| Programmatic authentication using API credentials|
 
 ---
 
 ### Example Logic
 
-| Scenario                      | Result                            |
-| ----------------------------- | --------------------------------- |
-| Seller A purchases route      | Seller A rate card applied        |
-| Seller B purchases same route | Different pricing applied         |
-| Prefix added                  | Linked to purchased route billing |
+| Scenario| Result|
+| --------|-------|
+| Seller A purchases route| Seller A rate card applied|
+| Seller B purchases same route | Different pricing applied|
+| Prefix added| Linked to purchased route billing |
 
 ---
-
-#### Billing Operation
-
-After purchase:
-
-1. Prefix is attached to route.
-2. Billing rules are applied automatically.
-3. Charges follow assigned rate card.
-4. Traffic is billed according to routing configuration.
-
-Billing operates transparently once configuration is completed.
-
----
-
-#### High-Level System Flow
-
-```
-User Signup
-     ↓
-Document Verification
-     ↓
-Account Creation
-     ↓
-Portal/API Login
-     ↓
-Route Purchase
-     ↓
-Carrier Creation
-     ↓
-Prefix Assignment
-     ↓
-Rate Card Applied
-     ↓
-Billing & Traffic Processing
-```
 
 #### Steps to Use the App
 
@@ -346,7 +254,7 @@ Billing & Traffic Processing
 2. A window will appear, select the version of the app and hit `Install` again. <br><img src= "/apps/img/nt2.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 3. Click on `Config` (**settings button**) to assign the `API User` click `Confirm`. <br><img src= "/apps/img/nt3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"> <br> <img src= "/apps/img/nt4.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"> </br>
 4. Click on the `NeuTrafix` app on the sidebar. Complete the `Signup` process if you are a new customer. <img src= "/apps/img/nt5.png" width= "600" style="border: 2px solid #4472C4; border-radius: 8px;">
-5. If you are already a customer, click on `Login`. A window will prompt you to enter the `API Login` and `API Key`. Click on `Login`. <img src= "/apps/img/nt6.png" style="border: 2px solid #4472C4; border-radius: 8px;"><br> ⚠️ **Note:** Use your API Username and API Password from the Profile section for authentication; standard login credentials are not supported.</br>
+5. If you are already a customer, click on `Login`. A window will prompt you to enter the `API Login` and `API Key`. Click on `Login`. **You can get the `API Login` and `API Key` from the NeuTrafix `Dashboard`**.<img src= "/apps/img/nt6.png" style="border: 2px solid #4472C4; border-radius: 8px;"><br> ⚠️ **Note:** Use your API Username and API Password from the Profile section for authentication; standard login credentials are not supported.</br>
 
 6. A window will appear with the following fields: <br><img src= "/apps/img/nt7.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
@@ -379,8 +287,10 @@ Billing & Traffic Processing
           | **Destination**| Destination name| Country or operator served|
           | **Route Information** | Route details| Technical information about route quality/configuration |
           | **Purchase Route**| Action column| Button to buy/select the route|
-          |**View More**|Available to display additional information|
+          |**View More**|Additional information|Available to display additional information|
 
-      5. A `NeuTrafix` carrier is automatically created each time a user logs into the application. Within this carrier, multiple seller-specific rate cards are associated. Whenever a user purchases a route, all corresponding prefixes linked to that purchase are automatically added under the respective seller’s rate card, after which they function as a standard rate card within the system.
+      5. **Purchase Route**: When you wish to purchase a route, double-click on the `Purchase` in the `Purchase Route` column. A window will open where you need to select the `Account` and `Carrier`. By default the carrier is `Nuetrafix` but you can also choose the carrier from the drop-down. Click on `Confirm and Purchase Route`. <br><img src= "/apps/img/nt8.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+      6. **Rate Card Assignment**: Whenever a new seller is created, a rate card is automatically added.
 
-!!! Note "You can get the `API Login` and `API Key` from the NeuTrafix `Dashboard`."
+!!! Info
+     A `NeuTrafix` carrier is automatically created each time a user logs into the application. Within this carrier, multiple seller-specific rate cards are associated. Whenever a user purchases a route, all corresponding prefixes linked to that purchase are automatically added under the respective seller’s rate card, after which they function as a standard rate card within the system.
