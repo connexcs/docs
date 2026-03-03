@@ -169,15 +169,21 @@ This key determines which Yoco account the API requests are executed against and
 
 #### Overview
 
-**Neutrafix** is a **technology platform** designed to enable companies to:
+**Neutrafix** is a **telecom routes marketplace integrated within the ConnexCS platform**. It allows telecom companies to buy and sell voice routes through a structured, automated workflow.
 
-* Register and onboard as customers
-* Access routing services
-* Purchase telecom routes
-* Manage prefixes and rate cards
-* Authenticate via Portal or API access
+Using Neutrafix, companies can:
 
-The platform integrates with the **ConnexCS Control Panel** and provides a structured workflow from **company registration → authentication → route purchase → billing execution**.
+Register and onboard as marketplace participants
+
+Browse and purchase telecom routes
+
+Manage prefixes and rate cards
+
+Access routing services
+
+Authenticate via Portal or API
+
+Neutrafix connects directly with the **ConnexCS Control Panel**, enabling a seamless flow from **company registration → authentication → route selection → billing execution**.
 
 ---
 
@@ -225,6 +231,10 @@ Users must securely store these credentials, as they may not be shown again.
     * Existing Neutrafix users can reuse their **API Username** and **API Password**.
     * These credentials are available inside the **Profile section** of the platform.
     * Standard login credentials should **not** be used for API authentication.
+
+**2. Route Purchase Flow**
+
+When a user clicks **Purchase Route**”, a confirmation dialog is displayed showing the selected route details and associated pricing. The user must review and confirm within this dialog to complete the purchase. Upon confirmation, the route is activated and linked to the user’s account for routing and billing.
 
 ---
 
