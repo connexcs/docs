@@ -234,7 +234,7 @@ Users must securely store these credentials, as they may not be shown again.
 
 **2. Route Purchase Flow**
 
-When a user clicks **Purchase Route**”, a confirmation dialog is displayed showing the selected route details and associated pricing. The user must review and confirm within this dialog to complete the purchase. Upon confirmation, the route is activated and linked to the user’s account for routing and billing.
+When a user clicks **Purchase Route**, a confirmation dialog is displayed showing the selected route details and associated pricing. The user must review and confirm within this dialog to complete the purchase. Upon confirmation, the route is activated and linked to the user’s account for routing and billing.
 
 ---
 
