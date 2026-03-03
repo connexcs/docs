@@ -258,6 +258,7 @@ nav:
             
     - Video Guide: video-guide.md
     - Terminal Tools: terminal-tools.md
+    - MCP Server: mcpserver.md
 
   - Customer Portal:
     - Dashboard: customer-portal/cp-dashboard.md
