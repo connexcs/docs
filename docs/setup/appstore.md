@@ -120,6 +120,7 @@ Instead of manually dialing a phone number, users or systems can trigger a call 
       + Select the `Customer` for the drop-down.
       + Enter the `API Key`. It acts as a gate-keeper in maintaining the security, reliability, and integrity of API-based interactions. API Keys are generated randomly for each customer as soon as you press `+Add`.
       + Enter the `Extension`. It specifies the number you are using to initiate the call.<img src= "/apps/img/cd4.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
 5. Click `Save`.
 
 ### Yoco Payment
@@ -163,3 +164,111 @@ This key determines which Yoco account the API requests are executed against and
         + **Percent**: Applies a percentage-based surcharge on the transaction amount. <img src= "/apps/img/yoco4.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 5. Click `Save`.
+
+### Neutrafix
+
+#### Overview
+
+**Neutrafix** is a **telecom routes marketplace integrated within the ConnexCS platform**. It allows telecom companies to buy and sell voice routes through a structured, automated workflow.
+
+**Using Neutrafix, companies can**:
+
+* Browse and purchase telecom routes
+* Manage prefixes and rate cards
+
+Neutrafix connects directly with the **ConnexCS Control Panel**, enabling a seamless flow from **company registration → authentication → route selection → billing execution**.
+
+---
+
+#### System Purpose
+
+The Neutrafix application provides:
+
+* Route marketplace access
+* Prefix-based routing configuration
+* Seller-specific rate card assignment
+* API and portal-based access control
+
+---
+
+#### User Onboarding Flow
+
+**1. Sign-Up Process**
+
+Users register through the **Neutrafix** application interface.
+
+**Steps**
+
+a. User clicks **Sign Up**.
+
+b. One-click registration flow begins.
+
+c. Company verification documents must be submitted.
+
+d. After completing sign-up, a **credentials dialog** is displayed containing:
+
+* Username
+* Login Password
+* API Password
+
+⚠️ **Important:**
+Users must securely store these credentials, as they may not be shown again.
+
+!!! Note "Note 1 — Account Creation & Verification"
+    * The account is **created immediately after sign-up**, and credentials are generated and shared with the user.
+    * Submitted company documents are sent to the **Neutrafix team for verification and review**.
+    * Users **cannot perform buying activities** until the document review process is successfully completed by Neutrafix.
+
+!!! Note "Note 2 — Existing Neutrafix Users"
+    * Existing Neutrafix users can reuse their **API Username** and **API Password**.
+    * These credentials are available inside the **Profile section** of the platform.
+    * Standard login credentials should **not** be used for API authentication.
+
+---
+
+#### Steps to Use the App
+
+1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: NeuTrafix** and click `Install`.<img src= "/apps/img/nt1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+2. A window will appear, select the version of the app and hit `Install` again. <br><img src= "/apps/img/nt2.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+3. Click on `Config` (**settings button**) to assign the `API User` click `Confirm`. <br><img src= "/apps/img/nt3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"> <br> <img src= "/apps/img/nt4.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"> </br>
+4. Click on the `NeuTrafix` app on the sidebar. Complete the `Signup` process if you are a new customer. <img src= "/apps/img/nt5.png" width= "600" style="border: 2px solid #4472C4; border-radius: 8px;">
+5. If you are already a customer, click on `Login`. A window will prompt you to enter the `API Login` and `API Key`. Click on `Login`. **You can get the `API Login` and `API Key` from the NeuTrafix `Dashboard`**.<img src= "/apps/img/nt6.png" style="border: 2px solid #4472C4; border-radius: 8px;"><br> ⚠️ **Note:** Use your API Username and API Password from the Profile section for authentication; standard login credentials are not supported.</br>
+
+6. A window will appear with the following fields: <br><img src= "/apps/img/nt7.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+
+      1. **Market View** allows users to `See Purchased Routes`. Opens list of routes already purchased by the user.
+
+      2. **Filter** Section:
+
+          | Field| Description| Usage|
+          | -----|------------|------|
+          | **Prefix** |Destination dialing prefix| Used to search routes for a specific number range (e.g., 91, 44, 1)|
+          | **Country**| Destination country| Filters routes available for a country|
+          | **Route Type**|Route classification | Filters route quality/type (e.g., CLI, Non-CLI, Premium, etc.)|
+          | **Seller**| Route provider/company| Shows routes offered by a specific seller|
+          | **Seller Route**| Seller-specific route category | Filters routes within seller inventory|
+          | **Route (Voice / SMS)** | Traffic type| Select whether searching Voice routes or SMS routes|
+          | **Minimum Price**|Lower price limit| Filters routes above specified price|
+          | **Maximum Price**| Upper price limit| Filters routes below specified price|
+          | **Order By**| Sorting criteria| Sort results (price, prefix, seller, etc.)|
+
+      3. **Search Result Section**: Displays routes matching the filter criteria.
+
+      4. **Result Table** Columns:
+
+          | Column| Description| Technical Meaning |
+          | ------|-------------|------------------ |
+          | **Prefix**| Destination prefix | Dialing code covered by the route|
+          | **Price (USD)**| Route rate| Cost per minute/message offered by seller|
+          | **Seller**| When users click on a seller, they can view the seller’s profile details.|
+          | **Type**| Route type| Traffic category (Voice/SMS or quality classification)  |
+          | **Destination**| Destination name| Country or operator served|
+          | **Route Information** | Route details| Technical information about route quality/configuration |
+          | **Purchase Route**| Action column| Button to buy/select the route|
+          |**View More**|Additional information|Available to display additional information|
+
+      5. **Purchase Route**: When you wish to purchase a route, double-click on the `Purchase` in the `Purchase Route` column. A window will open where you need to select the `Account` and `Carrier`. By default the carrier is `Nuetrafix` but you can also choose the carrier from the drop-down. Click on `Confirm and Purchase Route`. <br><img src= "/apps/img/nt8.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+      6. **Rate Card Assignment**: Whenever a new seller is created, a rate card is automatically added.
+
+!!! Info
+     A `NeuTrafix` carrier is automatically created each time a user logs into the application. Within this carrier, multiple seller-specific rate cards are associated. Whenever a user purchases a route, all corresponding prefixes linked to that purchase are automatically added under the respective seller’s rate card, after which they function as a standard rate card within the system.
