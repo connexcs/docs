@@ -173,11 +173,8 @@ This key determines which Yoco account the API requests are executed against and
 
 **Using Neutrafix, companies can**:
 
-* Register and onboard as marketplace participants
 * Browse and purchase telecom routes
 * Manage prefixes and rate cards
-* Access routing services
-* Authenticate via Portal or API
 
 Neutrafix connects directly with the **ConnexCS Control Panel**, enabling a seamless flow from **company registration → authentication → route selection → billing execution**.
 
@@ -187,7 +184,6 @@ Neutrafix connects directly with the **ConnexCS Control Panel**, enabling a seam
 
 The Neutrafix application provides:
 
-* Customer onboarding automation
 * Route marketplace access
 * Prefix-based routing configuration
 * Seller-specific rate card assignment
