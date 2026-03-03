@@ -230,24 +230,6 @@ Users must securely store these credentials, as they may not be shown again.
 
 ---
 
-#### Authentication Methods
-
-| Method       | Description |
-| ------------ | ------------|
-| **API Login**| Programmatic authentication using API credentials|
-
----
-
-### Example Logic
-
-| Scenario| Result|
-| --------|-------|
-| Seller A purchases route| Seller A rate card applied|
-| Seller B purchases same route | Different pricing applied|
-| Prefix added| Linked to purchased route billing |
-
----
-
 #### Steps to Use the App
 
 1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: NeuTrafix** and click `Install`.<img src= "/apps/img/nt1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
