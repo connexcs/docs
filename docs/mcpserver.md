@@ -81,11 +81,11 @@ Your AI assistant is now connected to the ConnexCS MCP server.
 
 ---
 
-## Connect to VS Code
+### Connect to VS Code
 
 You can also connect MCP from **Visual Studio Code**.
 
-### Step 1
+#### Step 1
 
 Create the following folder:
 
@@ -93,7 +93,7 @@ Create the following folder:
 .vscode
 ```
 
-### Step 2
+#### Step 2
 
 Create a configuration file:
 
@@ -101,7 +101,7 @@ Create a configuration file:
 mcp.json
 ```
 
-### Step 3
+#### Step 3
 
 Add the following configuration:
 
