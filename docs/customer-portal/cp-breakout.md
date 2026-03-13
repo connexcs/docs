@@ -27,18 +27,22 @@ The **Breakout** report lists account customers with the following:
 
 The Columns display data for each call
 
-|Column|Description |
-|:------------|:-------------------------------------------------|
-|**Destination**|The destination number of the call|
-|**Attempts**|The number of retries|
-|**Connected**|Final status of the call|
-|**Total Provider Charge**|How much your provider is charging you|
-|**Total Customer Charge**|How much you are charging your customer|
-|**Duration**|Length of the call, in minutes and seconds|
-|**ASR (Answer Seizure Ratio)**|ASR is the number of connected calls divided by the total calls (represented as a %)|
-|**ACD**|Average Call Duration|
-|**DTMF**|Dual-Tone Multi-Frequency|
-|**Customer Charge**|Pending|
+| Column | Description |
+|------|-------------|
+| **Call Time** | The timestamp when the call was initiated in the system |
+| **Customer** | The customer account associated with the call |
+| **Customer Destination Number** | The destination number dialed by the customer |
+| **Attempts** | The number of retries |
+| **Connected** | Final status of the call |
+| **Customer Duration** | The billable duration of the call from the customer's perspective |
+| **Duration** | The total length of the connected call in minutes and seconds |
+| **Customer Charge** | The total amount charged to the customer for the call |
+| **ACD** | Average Call Duration |
+| **ASR** | Answer Seizure Ratio|
+| **DTMF** | Dual-Tone Multi-Frequency signals were detected during the call |
+| **DTMF Percent** | The percentage of calls where DTMF signals were detected |
+| **SDP** | Session Description Protocol information used for media negotiation during call setup |
+
 
 !!! info "Refreshing the Breakout Report"
     Remember to click **Refresh** each time parameters change to ensure you see the most recent selections onscreen.
