@@ -12,14 +12,33 @@
 
 </details>
 
-The **Breakout** report lists account customers with the following:
+## Overview
 
-* associated profits, and
-* relevant data such as cost per customer, amount billed, Aggregation Services Router (ASR), and Automatic Call Distribution Service (ACD).
+The **Breakout Report** shows customer activity based on processed CDR data.
 
-    The information here is from a processed Call Detail Record (CDR) and is thus considered "billing accurate." You can use this data to bill your customers.
+### Key Metrics
+
+* Cost per customer
+* Amount billed
+* ASR (Answer-Seizure Ratio)
+* ACD (Average Call Duration)
+
+> Note: This report does **not** include profit.
+
+### Data Accuracy
+
+All data is **billing-accurate** and matches what is used for customer billing.
+
+### Filters & Customization
+
+* Filter by **Customer, Provider, and Date Range**
+* Use **column filters** for quick data refinement
+* Manage fields via **Columns**
+* Enable **Pivot Mode** to group and summarize data
+
+The information here is from a processed Call Detail Record (CDR) and is thus considered "billing accurate." You can use this data to bill your customers.
  
- Use the **`Date`** and **`Select Destination`** fields at the top of the page to filter results.
+Use the **`Date`** and **`Select Destination`** fields at the top of the page to filter results.
 
  The **Select Destination** allows you to filter out the calls made to a particular destination.
 
@@ -42,7 +61,6 @@ The Columns display data for each call
 | **DTMF** | Dual-Tone Multi-Frequency signals were detected during the call |
 | **DTMF Percent** | The percentage of calls where DTMF signals were detected |
 | **SDP** | Session Description Protocol information used for media negotiation during call setup |
-
 
 !!! info "Refreshing the Breakout Report"
     Remember to click **Refresh** each time parameters change to ensure you see the most recent selections onscreen.
