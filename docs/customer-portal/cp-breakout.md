@@ -32,7 +32,7 @@ All data is **billing-accurate** and matches what is used for customer billing.
 * Manage fields via **Columns**
 * Enable **Pivot Mode** to group and summarize data
 
-Use the **`Date`** and **`Select Destination`** fields at the top of the page to filter results.
+Use the **`Date`** field at the top of the page to filter results.
 
 ## Manage Displayed Fields
 
