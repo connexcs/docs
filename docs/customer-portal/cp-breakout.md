@@ -18,12 +18,9 @@ The **Breakout Report** shows customer activity based on processed CDR data.
 
 ### Key Metrics
 
-* Cost per customer
 * Amount billed
 * ASR (Answer-Seizure Ratio)
 * ACD (Average Call Duration)
-
-> Note: This report does **not** include profit.
 
 ### Data Accuracy
 
@@ -31,16 +28,11 @@ All data is **billing-accurate** and matches what is used for customer billing.
 
 ### Filters & Customization
 
-* Filter by **Customer, Provider, and Date Range**
 * Use **column filters** for quick data refinement
 * Manage fields via **Columns**
 * Enable **Pivot Mode** to group and summarize data
 
-The information here is from a processed Call Detail Record (CDR) and is thus considered "billing accurate." You can use this data to bill your customers.
- 
 Use the **`Date`** and **`Select Destination`** fields at the top of the page to filter results.
-
- The **Select Destination** allows you to filter out the calls made to a particular destination.
 
 ## Manage Displayed Fields
 
@@ -50,9 +42,9 @@ The Columns display data for each call
 |------|-------------|
 | **Call Time** | The timestamp when the call was initiated in the system |
 | **Customer** | The customer account associated with the call |
-| **Customer Destination Number** | The destination number dialed by the customer |
-| **Attempts** | The number of retries |
-| **Connected** | Final status of the call |
+| **Customer Destination Name** | The destination number dialed by the customer |
+| **Attempts** | Total call attempts |
+| **Connected** | Successfully connected calls |
 | **Customer Duration** | The billable duration of the call from the customer's perspective |
 | **Duration** | The total length of the connected call in minutes and seconds |
 | **Customer Charge** | The total amount charged to the customer for the call |
