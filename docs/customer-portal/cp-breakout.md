@@ -42,7 +42,7 @@ The Columns display data for each call
 |------|-------------|
 | **Call Time** | The timestamp when the call was initiated in the system |
 | **Customer** | The customer account associated with the call |
-| **Customer Destination Name** | The destination number dialed by the customer |
+| **Customer Destination Name** | The destination name dialed by the customer |
 | **Attempts** | Total call attempts |
 | **Connected** | Successfully connected calls |
 | **Customer Duration** | The billable duration of the call from the customer's perspective |
