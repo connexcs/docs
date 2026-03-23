@@ -1,5 +1,17 @@
 # ConnexCS MCP Server
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Integrations → AI & Automation (MCP Server)<br>
+<strong>Audience</strong>: Developers, System Administrators, Operators, SREs, AI Integrators<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: 10–20 minutes<br>
+<strong>Prerequisites</strong>: ConnexCS account with appropriate permissions; MCP-compatible client (e.g., Claude Desktop, VS Code, ChatGPT); ability to authenticate using JWT, OAuth, or credentials; basic understanding of ConnexCS tools such as CDR, SIP Trace, and routing.<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/ai-agent/">AI Agent</a>, <a href="https://docs.connexcs.com/scriptforge/">ScriptForge</a>, <a href="https://docs.connexcs.com/troubleshooting/signalling/">Troubleshooting – Signalling</a>, <a href="https://docs.connexcs.com/troubleshooting/media/">Troubleshooting – Media</a>, <a href="https://docs.connexcs.com/developer/api/">API Integrations</a><br>
+<strong>Next Steps</strong>: Connect your MCP client to the ConnexCS MCP server, authenticate using JWT or OAuth, test example queries (call diagnostics, SIP trace, analytics), explore available tools via natural language prompts, and extend MCP functionality using custom endpoints or integrations.<br>
+
+</details>
+
 ## Overview
 
 The **ConnexCS MCP Server** allows AI assistants to securely access ConnexCS tools and platform data.
@@ -262,7 +274,7 @@ callidb: "internal-12345"
 
 ---
 
-### Customer Management Examples
+#### Customer Management Examples
 
 + **Search Customers**
 
@@ -328,7 +340,7 @@ customerId: "12345"
 
 ---
 
-### Analytics & Statistics Examples
+#### Analytics & Statistics Examples
 
 + **Get Customer Profitability**
 
@@ -406,7 +418,7 @@ limit: 50
 
 ---
 
-### Rate Card Examples
+#### Rate Card Examples
 
 + **Get Rate Card Details**
 
@@ -437,7 +449,7 @@ activeRev: "19"
 include_prefixes: false
 ```
 
-### Infrastructure Examples
+#### Infrastructure Examples
 
 + **Get RTP Server Groups**
 
@@ -464,7 +476,7 @@ server_id: 42
 alias: "rtpserver01.connexcs.com"
 ```
 
-### Documentation Examples
+#### Documentation Examples
 
 + **Search Documentation**
 
@@ -495,43 +507,43 @@ path: "api/rest"
 path: "routing/index"
 ```
 
-### Quick Reference - Parameter Types
+#### Quick Reference - Parameter Types
 
 1. **Date Parameters (Always UTC)**
 
-   - `start_date`: "2024-01-15" (YYYY-MM-DD)
-   - `end_date`: "2024-01-31" (YYYY-MM-DD)
-   - `date`: "2024-01-15" (YYYY-MM-DD)
+      - `start_date`: "2024-01-15" (YYYY-MM-DD)
+      - `end_date`: "2024-01-31" (YYYY-MM-DD)
+      - `date`: "2024-01-15" (YYYY-MM-DD)
 
 2. **ID Parameters**
 
-   - `customer_id`: "12345" or 12345
-   - `company_id`: "12345"
-   - `customerId`: "12345"
-   - `provider_id`: 12345
-   - `server_id`: 42
+      - `customer_id`: "12345" or 12345
+      - `company_id`: "12345"
+      - `customerId`: "12345"
+      - `provider_id`: 12345
+      - `server_id`: 42
 
 3. **Search Parameters**
-   - `search`: "+442071234567" or "CallID" or "IP"
-   - `query`: "search term"
-   - `cli`: "442071234567" (caller number)
-   - `dst`: "442071234567" (destination)
+      - `search`: "+442071234567" or "CallID" or "IP"
+      - `query`: "search term"
+      - `cli`: "442071234567" (caller number)
+      - `dst`: "442071234567" (destination)
 
 4. **Call Identifiers**
-   - `callid`: "abc123xyz@192.168.1.1" (SIP Call-ID)
-   - `callidb`: "internal-12345" (internal identifier)
+      - `callid`: "abc123xyz@192.168.1.1" (SIP Call-ID)
+      - `callidb`: "internal-12345" (internal identifier)
 
 5. **Filters & Options**
-   - `search_type`: "auto", "id", "name", "sip_user", "ips"
-   - `type`: "all", "recurring", "one-time", "free-minutes"
-   - `sort_by`: "total_profit", "profit_margin", "total_revenue", "total_cost"
-   - `sort_order`: "desc", "asc"
-   - `group_by`: "day", "week", "month"
+      - `search_type`: "auto", "id", "name", "sip_user", "ips"
+      - `type`: "all", "recurring", "one-time", "free-minutes"
+      - `sort_by`: "total_profit", "profit_margin", "total_revenue", "total_cost"
+      - `sort_order`: "desc", "asc"
+      - `group_by`: "day", "week", "month"
 
 6. **Limits & Pagination**
-   - `limit`: 10, 100, 1000, 5000
-   - `offset`: 0, 100, 1000
-   - `prefix_limit`: 1000, 5000, 10000
+      - `limit`: 10, 100, 1000, 5000
+      - `offset`: 0, 100, 1000
+      - `prefix_limit`: 1000, 5000, 10000
 
 ### Tips for Success
 
