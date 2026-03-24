@@ -117,9 +117,9 @@ When connecting to the MCP server, authentication is required.
 
 + **Supported Methods**
 
-  1. `JSON Web Token (JWT)` (recommended)
-  2. `OAuth` (if supported by the client)
-  3. `Username & Password`
+    1. `JSON Web Token (JWT)` (recommended)
+    2. `OAuth` (if supported by the client)
+    3. `Username & Password`
 
 **Recommended by Client**
 
@@ -193,8 +193,7 @@ If you want to customize or extend MCP functionality, the ConnexCS MCP framework
 
 The MCP implementation is **open source and fully customizable**, allowing you to build additional capabilities tailored to your workflows or integrate with your internal systems.
 
-**What You Can Customize**
-You can extend MCP to:
+**What You Can Customize?**
 
 + Add custom tools and actions
 + Integrate internal systems or third-party APIs
