@@ -161,7 +161,7 @@
 |**LATA**| *Local Access and Transport Area*|Calls rated based on Local Access and Transport Area boundaries.|
 |**RC**|*Rate Center*|The specific geographic rate center in the U.S. tied to the prefix.|
 |**JWT**|*JSON Web Tokens*|It ensures verifiability of a payload.|
-|**Refresh Tokens**|n/a|Ensure seamless user sessions while improving security.|
+|**Refresh Tokens**|n/a|Used to obtain new access tokens without requiring re-authentication, enabling secure session continuity while minimizing exposure of long-lived credentials.|
 |**Token Hash**|n/a|A unique identifier for the JWT, helping track and manage tokens securely.|
 |**JTI**|*JWT ID*|It's a unique identifier for each JWT, ensuring that each token is distinguishable and can be tracked or revoked individually.|
 |**TPS**|*Telephone Preference Service*|UK national opt-out register for consumers who do not wish to receive unsolicited marketing calls.|
