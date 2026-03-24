@@ -1,481 +1,210 @@
-# ConnexCS MCP Server App
+# ConnexCS MCP Server
+
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Integrations → AI & Automation (MCP Server)<br>
+<strong>Audience</strong>: Developers, System Administrators, Operators, SREs, AI Integrators<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: 10–20 minutes<br>
+<strong>Prerequisites</strong>: ConnexCS account with appropriate permissions; MCP-compatible client (e.g., Claude Desktop, VS Code, ChatGPT); ability to authenticate using JWT, OAuth, or credentials; basic understanding of ConnexCS tools such as CDR, SIP Trace, and routing.<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/ai-agent/">AI Agent</a>, <a href="https://docs.connexcs.com/scriptforge/">ScriptForge</a>, <a href="https://docs.connexcs.com/troubleshooting/signalling/">Troubleshooting – Signalling</a>, <a href="https://docs.connexcs.com/troubleshooting/media/">Troubleshooting – Media</a>, <a href="https://docs.connexcs.com/developer/api/">API Integrations</a><br>
+<strong>Next Steps</strong>: Connect your MCP client to the ConnexCS MCP server, authenticate using JWT or OAuth, test example queries (call diagnostics, SIP trace, analytics), explore available tools via natural language prompts, and extend MCP functionality using custom endpoints or integrations.<br>
+
+</details>
 
 ## Overview
 
-The **CX MCP App** is an extendable **Model Context Protocol (MCP) Server** built for the ConnexCS platform.
+The **ConnexCS MCP Server** allows AI assistants to securely access ConnexCS tools and platform data.
 
-It enables AI-powered MCP clients (e.g., VS Code and Claude Desktop) to access tools and functionality via the MCP protocol to:
+The **Model Context Protocol (MCP)** is a standardized framework that enables AI agents to interact with external systems using natural language.
 
-* Access ConnexCS platform data
-* Execute backend ScriptForge functions
-* Perform diagnostics (CDR analysis, C-Trace, routing checks)
-* Generate analytical reports
-* Assist customers interactively via natural language
+With the ConnexCS MCP server, your AI assistant can:
 
-The MCP app acts as a secure bridge between:
++ Retrieve platform data
++ Run diagnostics
++ Perform analysis
 
-> MCP Client ↔ AI Agent ↔ MCP Server ↔ ScriptForge ↔ ConnexCS Backend APIs
+— **all through conversational requests**.
 
 ---
 
-## High-Level Architecture
+## What You Can Do
 
-```mermaid
-flowchart LR
-    A["AI Model / Agent (e.g., Claude Sonnet 4.6)"]
-    --> B["MCP Client (VS Code / Claude Desktop / Claude Code)"]
+Once connected, your AI assistant can help with tasks such as:
 
-    B --> C["MCP Client Configuration (mcp.json)"]
+* Investigate failed calls
+* Run **SIP-Trace** diagnostics
+* Analyze **Call Detail Records (CDR)**
+* Generate call analytics reports
+* Identify routing failures
+* Retrieve customer usage information
 
-    C --> D["Local MCP Server - CX MCP App"]
-
-    D --> E["ScriptForge Functions"]
-
-    E --> F["ConnexCS APIs / Backend"]
-```
-
-### Components
-
-| Component| Description|
-| ---------|------------|
-| **AI Model / Agent**| The LLM that performs reasoning and generates actions (e.g., Claude Opus, Claude Sonnet, GPT-5). The model acts as the AI agent.|
-| **MCP Client** | An application that hosts or connects to AI models and communicates with MCP servers. MCP clients can run locally or as web-based applications (e.g., VS Code, Claude Desktop, Claude Code). |
-| **MCP Client Configuration** | Local configuration file (e.g., `mcp.json`) that defines available MCP servers and connection settings.|
-| **MCP Server**| The CX MCP application running locally within the MCP client environment, exposing tools and capabilities via the MCP protocol. |
-| **ScriptForge**| Server-side execution layer providing callable functions/tools exposed through the MCP server. |
-| **ConnexCS APIs** | Core ConnexCS platform services accessed by ScriptForge to perform operations and retrieve data. |
+This eliminates the need to manually navigate the UI for troubleshooting and analysis.
 
 ---
 
-## Installation & Initial Setup
+## Supported MCP Clients
 
-### Step 1: Install the MCP App
+The ConnexCS MCP server works with any MCP-compatible client, including:
 
-1. Navigate to **App Store**
-2. Search for **CXMCP**
-3. Click **Install**
-4. Select version and confirm
+* Claude Desktop
+* Claude Code
+* Visual Studio Code
+* Cursor (code editor)
+* ChatGPT
+* Custom MCP-compatible AI clients
 
-	After installation, the app appears inside the IDE under:
-
-	```json
-	CX MCP
-	```
-
-5. Navigate to **Setup :material-menu-right: Settings :material-menu-right: Option**. In the `General` tab, select the created **MCP app** from the `Custom MCP Endpoint` drop-down menu. <br>Selecting the correct MCP endpoint ensures requests are executed in the intended environment; without it, tools may fail, authenticate incorrectly, or return data from the wrong system.</br>
-
-<img src="/misc/img/mcp1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+Any client that implements the MCP specification can connect to the ConnexCS MCP server.
 
 ---
 
-### Step 2: Environment Configuration
+## Connect Your AI Assistant
 
-Navigate to:
+Below are setup instructions for some of the most common AI assistants.
+
+---
+
+### Connect to Claude
+
+1. Open **Claude Desktop**.
+
+2. Navigate to: **Settings :material-menu-right: Connectors**.
+
+3. Click **Add Connector**.
+
+4. Enter the following information:
+
+      + **Name**: ConnexCS
+      + **MCP Server URL**: `https://app.connexcs.com/api/cp/mcp/`
+
+5. Authenticate using **OAuth**.
+
+Your AI assistant is now connected to the ConnexCS MCP server.
+
+---
+
+### Connect to VS Code
+
+You can also connect MCP from **Visual Studio Code**.
+
+1. Create the following folder: `.vscode`
+
+2. Create a configuration file: `mcp.json`
+
+3. Add the following configuration:
 
 ```json
-App → Environment Variables
-```
-
-Configure:
-
-| Variable    | Required | Description|
-| ----------- | --------| ----------- |
-| `API_USERNAME`  | Yes| Email of a valid ConnexCS user -> **Connexcs Email**|
-| `VERBOSE`   | No| Enables verbose logging for tests |
-
----
-
-### Step 3: Creating JWT Access Token
-
-Navigate to:
-
-```
-Setup → Integrations → JWT Tokens
-```
-
-1. Click **Create Token**
-2. Select **Access Token**
-3. Choose expiration period
-4. Save
-5. Copy token (displayed once)
-6. Paste this into:
-
-```
-Environment Variables → CONNEXCS_API_TOKEN
-```
-
----
-
-## Working Modes
-
-There are **two supported development approaches**.
-
-!!! Note "ScriptForge files are JavaScript in both environments. <br>In the ConnexCS IDE, file extensions are not displayed.</br> <br>In cx-tools development, files are located in the `/src` directory and use the `.js` extension.</br>"
-
----
-
-### Direct IDE Development (Inside ConnexCS)
-
-Develop directly in:
-
-```
-IDE → ScriptForge Files
-```
-
----
-
-### ScriptForge Tool Development Standard
-
-#### Location
-
-Navigate to the IDE:
-
-**IDE → Cx MCP → Scriptforge**
-
-The `scriptforge` folder contains all executable MCP tool scripts.
-All tool logic must reside in this directory.
-
----
-
-#### Creating a New MCP Tool
-
-1. Create a new `JavaScript` file.
-
-2. **Implement the tool logic** inside the file.
-
-   * Export the function using the existing ScriptForge tool pattern.
-   * Follow the same execution structure as other tools in the folder.
-
-3. **Register the tool in the MCP configuration**. Also,  registration happens in the `mcp javascript` file.
-
-   * Tools must be registered within the MCP server configuration. If a tool is defined in a separate file, it must be exported from that file and imported into the MCP server where tool registration occurs.
-     * ```export function toolName () { // Tool }```
-     * ```import { toolName} from './toolFile'```
-
-4. **Reload / Restart MCP** (if required).
-
-Once registered and reloaded, the tool becomes available to the AI Agent.
-
----
-
-#### Local Development via CX Tool (Recommended)
-
-ConnexCS provides a CLI tool:
-
-[https://www.npmjs.com/package/@connexcs/tools](https://www.npmjs.com/package/@connexcs/tools)
-
-Key commands:
-
-```json
-cx configure
-cx configure app
-cx run <file_name>
-```
-
-#### Benefits
-
-* Work from VS Code or preferred IDE
-* GitHub integration
-* Version control
-* CI/CD via GitHub Actions
-* Backup protection
-* Automated testing
-* AI-assisted coding
-
----
-
-## CI/CD Integration
-
-The MCP template repository includes:
-
-[https://github.com/connexcs/app-cx-mcp](https://github.com/connexcs/app-cx-mcp)
-
-* GitHub Actions workflow
-* Automated test execution
-* Pull Request validation
-* 24 automated tests (example)
-
-When a PR is submitted:
-
-1. Tests run automatically
-2. Pass/Fail status returned
-3. Prevents broken deployments
-
----
-
-## MCP Server Implementation
-
-### Core File
-
-The most important file:
-
-```json
-mcp.js
-```
-
-This file:
-
-* Imports tools (functions)
-* Instantiates MCP server
-* Registers tools
-* Defines parameters & metadata
-
----
-
-## Tool Definition Structure
-
-Each MCP tool consists of:
-
-1. Name
-2. Description
-3. Handler function
-4. Parameter schema
-
-### Example
-
-```js
-	Pattern: 
-	mcp.addTool(
-	  toolName,           // 👈 tool name
-	  toolDescription,    // 👈 description
-	  handlerFunction     // 👈 handler
-	)
-	  .addParameter(
-	    paramName,        // 👈 name
-	    paramType,        // 👈 type
-	    paramDescription, // 👈 description
-	    isRequired        // 👈 required
-	  )
-
-	Example: 
-	mcp.addTool(
-	  'getSipTrace',
-	  'Fetch and analyze SIP trace for a call. Returns full SIP flow with timing, auth, NAT detection, codecs, and identified issues. PRIMARY debugging tool — every call has trace data (7 days retention). Use this first when debugging any call. Endpoint: log/trace',
-	  getSipTraceHandler
-	)
-	  .addParameter('callid', 'string', 'SIP Call-ID (required, non-empty, max 255 chars)', true)
-	  .addParameter('callidb', 'string', 'Internal call identifier (optional)', false)
-```
-
----
-
-## Tool Execution Flow
-
-1. AI decides which tool to call
-2. Parameters validated
-3. Handler function executes
-4. ScriptForge function runs
-5. Backend API queried
-6. Response returned to AI
-
----
-
-## Authentication Flow
-
-**All tools call**:
-
-```javascript
-export function getApi () {
-    const apiUsername = process.env.API_USERNAME
-   
-    if (!apiUsername || apiUsername.trim() === '') {
-        throw new Error(
-            'API_USERNAME environment variable is required but not set. ' +
-            'Please set API_USERNAME in your environment variables to authenticate with ConnexCS API.'
-        )
+{
+  "servers": {
+    "connexcs": {
+      "type": "http",
+      "url": "https://app.connexcs.com/api/cp/mcp/",
+      "headers": {
+        "Authorization": "Bearer YOUR_JWT_TOKEN"
+      }
     }
-   
-    return cxRest.auth(apiUsername)
+  }
 }
 ```
 
-**Authentication occurs using**:
-
-* `API_USERNAME`
-
-**Requests fail only when a valid API username is not available. The ConnexCS API token is optional and is used solely during MCP server configuration within the MCP client. If a token is not provided, authentication can occur via OAuth login.**.
+4.Restart VS Code after saving the file.
 
 ---
 
-## VS Code MCP Client Setup
+## Authentication
 
-Create folder:
+When connecting to the MCP server, authentication is required.
 
-```json
-.vscode/
-```
++ **Supported Methods**
 
-Create file:
+    1. `JSON Web Token (JWT)` (recommended)
+    2. `OAuth` (if supported by the client)
+    3. `Username & Password`
 
-```json
-mcp.json
-```
+**Recommended by Client**
 
-Example:
-
-```js
-{ 
-   "servers": { 
-          "cx-mcp-app": { 
-                   "url": "https://app.connexcs.com/api/cp/mcp/", 
-                     "type": "http", 
-                      "headers": { "Authorization": "Bearer YourJWTTokenHere" }
-          } 
-     }, 
-   "inputs": [] 
-}
-```
-
-### Required Values
-
-| Field         | Source                |
-| ------------- | --------------------- |
-| **url**           | ConnexCS instance URL [https://app.connexcs.com/api/cp/mcp/](https://app.connexcs.com/api/cp/mcp/)|
-| **jwt**           | Access Token          |
+|Client|Recommended Method|
+|-----|-------------------|
+|**Claude Desktop**|OAuth|
+|**VS Code**|JWT|
+|**Others**|Any supported method|
 
 ---
 
-## Example Tool Calls
+## How It Works
 
-### Call Analytics
+When you ask your AI assistant a question:
 
-User asks:
+1. The AI identifies the required ConnexCS tool.
+2. The request is sent to the MCP server.
+3. The server executes the tool.
+4. ConnexCS APIs return the requested data.
+5. The AI summarizes the results.
 
-> Give me a 30-day report
-
-AI calls:
-
-* `searchCallLogs`
-* `searchDocumentation`
-* `investigateCall`
-
-Returns:
-
-* Total calls
-* Talk time
-* Active customers
-* Routing failures
-* Revenue insights
+This allows complex diagnostics and analysis to be performed through simple conversational requests.
 
 ---
 
-### C-Trace Investigation
+## Examples
 
-User:
+You can interact with the system by simply describing what you need and providing any details you already have, such as a customer ID, phone number, or call ID. The system will understand your request and automatically perform the required actions.
 
-> Run C-trace on failed call
+1. If you want to check a customer’s balance, you can say:
 
-AI calls:
+    **Question**: `Get the balance for customer ID 12345.`
 
-* `investigateCall`
+    **Expected Output**: The system will use the provided customer ID to retrieve the current balance, including the available credit and debit limit.
 
-Returns:
+2. If you need to find a customer, you can say:
 
-* SIP Flow
-* 503 Errors
-* Routing diagnostics
-* Prefix errors
-* Provider issues
-* Recommendations
+    **Question**: `“Find customer Acme Corp.”` **or**, `if you already know the ID: “Get details for customer ID 12345.”`
 
----
+    **Expected Output**: The system will search and return the relevant customer information.
 
-## Example Diagnostic Output
+3. If you are investigating a call issue, you can include the call ID in your request, such as:
 
-The AI agent can:
+    **Question**: `“Investigate this call: abc123xyz@192.168.1.1.”`
 
-* Detect repeated 0-duration calls
-* Identify routing gaps
-* Detect dial prefix duplication
-* Identify SIP 503 "No route available"
-* Recommend corrective actions
+    **Expected Output**: The system will use the call ID to perform a full analysis, including SIP trace, call flow, and quality checks.
+
+4. You can also request reports by including filters like date range or customer ID. For example:
+
+    **Question**: `“Show call analytics for customer 12345 from 1st Jan to 31st Jan.”`
+
+    **Expected Output**: The system will analyze the data and provide insights such as successful vs failed calls and overall performance.
 
 ---
 
-## Available Tool Categories
+## Things You can Do
 
-| Category           | Examples                  |
-| ------------------ | ------------------------- |
-| **CDR Analysis**| searchCallLogs|
-| **Documentation**| searchDocumentation|
-| **C-Trace**| getCTrace|
-| **Call Investigation** | investigateCall|
-| **Switch Health**| Analytics queries|
-| **Customer Data**| Customer management tools |
-
----
-
-## AI Model Flexibility
-
-Users may use:
-
-* Free models
-* Paid models
-* High reasoning models
-
-Because MCP handles backend logic, even lower-cost models perform well.
-
-Better models provide:
-
-* Improved reasoning
-* Follow-up questioning
-* Better summarization
-* Stronger diagnostic insight
+| Workflow | Steps | Tools Used |
+|---|---|---|
+| **Debug Failed Call** | 1. Find the call<br>2. Full investigation<br>3. Check quality if needed | → `searchCallLogs`<br>→ `investigateCall`<br>→ `getCallQuality` |
+| **Check Customer Status** | 1. Find customer<br>2. Check balance<br>3. Review activity<br>4. Check payments | → `searchCustomers`<br>→ `getCustomerBalance`<br>→ `getCustomerCallStatistics`<br>→ `getLastTopup` |
+| **Analyze Call Quality** | 1. Get success rates<br>2. Find failed calls<br>3. Debug SIP issues<br>4. Check audio quality | → `getCallAnalytics`<br>→ `searchCallLogs`<br>→ `getSipTrace`<br>→ `getCallQuality` |
+| **Profitability Report** | 1. List top customers<br>2. Get specific details<br>3. See destinations | → `listCustomersByProfitability`<br>→ `getCustomerProfitability`<br>→ `getCustomerDestinationStatistics` |
+| **Rate Card Analysis** | 1. Get customer's cards<br>2. Get card details<br>3. Get pricing rules | → `getCustomerRateCards`<br>→ `getRateCardDetails`<br>→ `getRateCardRules` |
 
 ---
 
-## Security Considerations
+## Exending MCP
 
-* JWT Access Tokens required
-* Tokens should be stored securely
-* Never commit tokens to GitHub
-* Token expiration recommended
-* Access scope should be minimal
+If you want to customize or extend MCP functionality, the ConnexCS MCP framework is designed to be flexible and extensible.
 
----
+The MCP implementation is **open source and fully customizable**, allowing you to build additional capabilities tailored to your workflows or integrate with your internal systems.
 
-## Benefits to Customers
+**What You Can Customize?**
 
-### Operational Benefits
++ Add custom tools and actions
++ Integrate internal systems or third-party APIs
++ Modify how data is retrieved or processed
 
-* Faster troubleshooting
-* Guided onboarding
-* Automated diagnostics
-* Call analytics via chat
-* Reduced training dependency
+### Steps to Extend MCP
 
-### Development Benefits
+1. Install the `cxMCP App`
+2. **Point the MCP Server to Your App**: Navigate to **Setup :material-menu-right: Options :material-menu-right: General :material-menu-right: Custom MCP Endpoint**. Selct the app from the drop-down menu.
 
-* GitHub integration
-* CI/CD pipeline
-* Version control
-* IDE flexibility
-* Self-healing workflows
+<img src= "/misc/img/mcp_blog_custom.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
----
-
-## Use Cases
-
-1. Monthly switch health report
-2. CDR analysis by customer name
-3. Identify top revenue calls
-4. Detect repeated routing failures
-5. Debug AI agent calls
-6. Run C-Trace without UI navigation
-
----
-
-## Summary
-
-The ConnexCS MCP App provides:
-
-* AI-powered access to platform intelligence
-* Secure backend integration
-* Tool-based execution model
-* IDE and GitHub compatibility
-* CI/CD-ready development workflow
-* Enterprise-grade extensibility
-
-It transforms ConnexCS from a UI-driven platform into a programmable, AI-interactive system.
-
-[Click here](https://github.com/connexcs/app-cx-mcp) to get a more comprehensive toolkit.
+!!! Tip
+    Because MCP is **open source and extensible**, you can fully tailor it to match your operational needs—whether that’s advanced analytics, automated troubleshooting, or deeper system integrations.
