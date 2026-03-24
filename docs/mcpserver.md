@@ -127,43 +127,11 @@ You can authenticate using:
 
 |Client|Recommended Method|
 |-----|-------------------|
-|Claude Desktop|OAuth|
-|VS Code|JWT|
-|Others|Any supported method|
+|**Claude Desktop**|OAuth|
+|**VS Code**|JWT|
+|**Others**|Any supported method|
 
 ---
-
-## Examples
-
-You can interact with the system by simply describing what you need and providing any details you already have, such as a customer ID, phone number, or call ID. The system will understand your request and automatically perform the required actions.
-
-1. If you want to check a customer’s balance, you can say:
-
-**Prompt**: `Get the balance for customer ID 12345.`
-
-**Expected Output**: The system will use the provided customer ID to retrieve the current balance, including the available credit and debit limit.
-
-If you need to find a customer, you can say:
-
-“Find customer Acme Corp.”
-
-Or, if you already know the ID:
-
-“Get details for customer ID 12345.”
-
-The system will search and return the relevant customer information.
-
-If you are investigating a call issue, you can include the call ID in your request, such as:
-
-“Investigate this call: abc123xyz@192.168.1.1.”
-
-The system will use the call ID to perform a full analysis, including SIP trace, call flow, and quality checks.
-
-You can also request reports by including filters like date range or customer ID. For example:
-
-“Show call analytics for customer 12345 from 1st Jan to 31st Jan.”
-
-The system will analyze the data and provide insights such as successful vs failed calls and overall performance.
 
 ## How It Works
 
@@ -179,33 +147,45 @@ This allows complex diagnostics and analysis to be performed through simple conv
 
 ---
 
-## Security Best Practices
+## Examples
 
-1. MCP access uses the same permissions as your ConnexCS account.
-2. AI assistants can only access what your user account can
-Recommended Setup.
-3. Create a read-only user account for MCP integrations to limit risk.
-4. Store tokens securely.
-5. Do not commit tokens to repositories.
-6. Use short expiration periods.
-7. Rotate tokens regularly
+You can interact with the system by simply describing what you need and providing any details you already have, such as a customer ID, phone number, or call ID. The system will understand your request and automatically perform the required actions.
+
+1. If you want to check a customer’s balance, you can say:
+
+    **Question**: `Get the balance for customer ID 12345.`
+
+    **Expected Output**: The system will use the provided customer ID to retrieve the current balance, including the available credit and debit limit.
+
+2. If you need to find a customer, you can say:
+
+    **Question**: `“Find customer Acme Corp.”` **or**, `if you already know the ID: “Get details for customer ID 12345.”`
+
+    **Expected Output**: The system will search and return the relevant customer information.
+
+3. If you are investigating a call issue, you can include the call ID in your request, such as:
+
+    **Question**: `“Investigate this call: abc123xyz@192.168.1.1.”`
+
+    **Expected Output**: The system will use the call ID to perform a full analysis, including SIP trace, call flow, and quality checks.
+
+4. You can also request reports by including filters like date range or customer ID. For example:
+
+    **Question**: `“Show call analytics for customer 12345 from 1st Jan to 31st Jan.”`
+
+    **Expected Output**: The system will analyze the data and provide insights such as successful vs failed calls and overall performance.
 
 ---
 
-## Extending MCP
+## Things You can Do
 
-If you want to customize or extend MCP functionality, the ConnexCS MCP framework is designed to be flexible and extensible.
-
-The MCP implementation is **open source and fully customizable**, allowing you to build additional capabilities tailored to your workflows or integrate with your internal systems.
-
-### What You Can Customize
-
-You can extend MCP to:
-
-* Add custom tools and actions
-* Integrate internal systems or third-party APIs
-* Modify how data is retrieved or processed
-* Build domain-specific automation workflows
+| Workflow | Steps | Tools Used |
+|---|---|---|
+| **Debug Failed Call** | 1. Find the call<br>2. Full investigation<br>3. Check quality if needed | → `searchCallLogs`<br>→ `investigateCall`<br>→ `getCallQuality` |
+| **Check Customer Status** | 1. Find customer<br>2. Check balance<br>3. Review activity<br>4. Check payments | → `searchCustomers`<br>→ `getCustomerBalance`<br>→ `getCustomerCallStatistics`<br>→ `getLastTopup` |
+| **Analyze Call Quality** | 1. Get success rates<br>2. Find failed calls<br>3. Debug SIP issues<br>4. Check audio quality | → `getCallAnalytics`<br>→ `searchCallLogs`<br>→ `getSipTrace`<br>→ `getCallQuality` |
+| **Profitability Report** | 1. List top customers<br>2. Get specific details<br>3. See destinations | → `listCustomersByProfitability`<br>→ `getCustomerProfitability`<br>→ `getCustomerDestinationStatistics` |
+| **Rate Card Analysis** | 1. Get customer's cards<br>2. Get card details<br>3. Get pricing rules | → `getCustomerRateCards`<br>→ `getRateCardDetails`<br>→ `getRateCardRules` |
 
 ---
 
