@@ -355,9 +355,9 @@ Enable non-technical users to create applications using chat.
         <img src= "/misc/img/anvil5.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 8. Navigate to the `Src` folder. It contains all the application source files, including UI components and logic, which define how the application is built and behaves.
-      1. You can also create a new source file. <br><img src= "/misc/img/anvil11png.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>.
+      1. You can also create a new source file. <br><img src= "/misc/img/anvil11png.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;"></br>.
       2. Click on `Create File`. <br><img src= "/misc/img/anvil12.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>.
-      3. A new file will be created. This file can be deleted and is not necessary for Anvil execution. <br><img src= "/misc/img/anvil13.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>.
+      3. A new file will be created. This file can be deleted and is not necessary for Anvil execution. <br><img src= "/misc/img/anvil13.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;"></br>.
 
 9. The  `App.vue` file is the main application component that controls the overall UI structure, layout, and core functionality of the app. **This is a mandatory file to execute the Anvil App and cannot be deleted**. <img src= "/misc/img/anvil6.png" style="border: 2px solid #4472C4; border-radius: 8px;"> You can `edit` the code on this page as well.
 10. Click on `File History`. It provides version control for files (e.g., App.vue), allowing users to track changes and restore previous versions. <br>**Key Features**:</br>
@@ -377,7 +377,7 @@ Enable non-technical users to create applications using chat.
 
 13. **Domain Setup**: Configures a public URL to share the application externally.
     1. Create a `new domain` for the Anvil platform. Click on the `+` sign. <br><img src= "/misc/img/anvil15.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-    2. Enter the `Domain` and select the `Platform` as `Anvil`.
+    2. Enter the `Domain` and select the `Platform` as `Anvil`. <br><img src= "/misc/img/anvil16.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 14. **Rebuild and Version Control**
     - Make additional changes and run another build.
