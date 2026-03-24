@@ -68,14 +68,14 @@ Below are setup instructions for some of the most common AI assistants.
 
 1. Open **Claude Desktop**.
 
-2. Navigate to: Settings :material-menu-right: Connectors
+2. Navigate to: **Settings :material-menu-right: Connectors**.
 
 3. Click **Add Connector**.
 
 4. Enter the following information:
 
-   + **Name**: ConnexCS
-   + **MCP Server URL**: `https://app.connexcs.com/api/cp/mcp/`
+      + **Name**: ConnexCS
+      + **MCP Server URL**: `https://app.connexcs.com/api/cp/mcp/`
 
 5. Authenticate using **OAuth**.
 
@@ -117,11 +117,9 @@ When connecting to the MCP server, authentication is required.
 
 + **Supported Methods**
 
-You can authenticate using:
-
-1. `JSON Web Token (JWT)` (recommended)
-2. `OAuth` (if supported by the client)
-3. `Username & Password`
+  1. `JSON Web Token (JWT)` (recommended)
+  2. `OAuth` (if supported by the client)
+  3. `Username & Password`
 
 **Recommended by Client**
 
@@ -189,14 +187,14 @@ You can interact with the system by simply describing what you need and providin
 
 ---
 
-### Steps to Extend MCP
+## Steps to Extend MCP
 
 1. **Install the ConnexCS App**
    Set up your custom app within the ConnexCS platform.
 
 2. **Point the MCP Server to Your App**: Navigate to **Setup :material-menu-right: Options :material-menu-right: General :material-menu-right: Custom MCP Endpoint**. Selct the app from the drop-down menu.
 
-<img src= "/misc/img/mcp1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/misc/img/mcp_blog_custom.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Tip
     Because MCP is **open source and extensible**, you can fully tailor it to match your operational needs—whether that’s advanced analytics, automated troubleshooting, or deeper system integrations.
