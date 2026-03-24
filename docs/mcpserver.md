@@ -187,11 +187,22 @@ You can interact with the system by simply describing what you need and providin
 
 ---
 
-## Steps to Extend MCP
+## Exending MCP
 
-1. **Install the ConnexCS App**
-   Set up your custom app within the ConnexCS platform.
+If you want to customize or extend MCP functionality, the ConnexCS MCP framework is designed to be flexible and extensible.
 
+The MCP implementation is **open source and fully customizable**, allowing you to build additional capabilities tailored to your workflows or integrate with your internal systems.
+
+**What You Can Customize**
+You can extend MCP to:
+
++ Add custom tools and actions
++ Integrate internal systems or third-party APIs
++ Modify how data is retrieved or processed
+
+### Steps to Extend MCP
+
+1. Install the `cxMCP App`
 2. **Point the MCP Server to Your App**: Navigate to **Setup :material-menu-right: Options :material-menu-right: General :material-menu-right: Custom MCP Endpoint**. Selct the app from the drop-down menu.
 
 <img src= "/misc/img/mcp_blog_custom.png" style="border: 2px solid #4472C4; border-radius: 8px;">
