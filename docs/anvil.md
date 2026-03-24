@@ -331,21 +331,21 @@ Enable non-technical users to create applications using chat.
 1. Navigate to **IDE**.
 2. **Create** or **Select** an App: Start by either creating a new app or selecting an existing app.
 3. **Enable Anvil**:
-   - Hover over the `Settings` icon.
-   - `Enable Anvil` from the options. <br><img src= "/misc/img/anvil1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-   - Choose a starter **template** based on your needs.
-   - Click on `Enable Anvil.` <br><img src= "/misc/img/anvil2.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+      - Hover over the `Settings` icon.
+      - `Enable Anvil` from the options. <br><img src= "/misc/img/anvil1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+      - Choose a starter **template** based on your needs.
+      - Click on `Enable Anvil.` <br><img src= "/misc/img/anvil2.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 4. **Explore the Anvil Folder**
 
-   - After enabling Anvil, a new folder named `Anvil` will appear in your app.
-   - Open the `Preview` file inside the Anvil folder. <br><img src= "/misc/img/anvil3.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-   - Let's go through the buttons on the top-right (left to right):
-       - `Open in New Window`: Opens your application preview in a separate browser tab
-       - `Refresh`: Reloads the preview.
-       - `Open AI Chat`: Opens the Anvil chat interface for interactions.  
-       - `MCP Info`: Shows MCP-related information for the app.
-       - `Anvil App Info`: Displays application-level details
+      - After enabling Anvil, a new folder named `Anvil` will appear in your app.
+      - Open the `Preview` file inside the Anvil folder. <br><img src= "/misc/img/anvil3.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+      - Let's go through the buttons on the top-right (left to right):
+         - `Open in New Window`: Opens your application preview in a separate browser tab
+         - `Refresh`: Reloads the preview.
+         - `Open AI Chat`: Opens the Anvil chat interface for interactions.  
+         - `MCP Info`: Shows MCP-related information for the app.
+         - `Anvil App Info`: Displays application-level details
 
 5. Start Interacting with the UI: Click on the `Open AI Chat`.
 6. Click on `New Conversation`.
@@ -354,24 +354,24 @@ Enable non-technical users to create applications using chat.
     !!! Example "Example 2"
         <img src= "/misc/img/anvil5.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-8. Navigate to the `Src` folder. Itcontains all the application source files, including UI components and logic, which define how the application is built and behaves.
-   1. You can also create a new source file. <br><img src= "/misc/img/anvil11.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>.
-   2. Click on `Create File`. <br><img src= "/misc/img/anvil12.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>.
-   3. A new file will be created. This file can be deleted and is not necessary for Anvil execution. <br><img src= "/misc/img/anvil13.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>.
+8. Navigate to the `Src` folder. It contains all the application source files, including UI components and logic, which define how the application is built and behaves.
+      1. You can also create a new source file. <br><img src= "/misc/img/anvil11png.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>.
+      2. Click on `Create File`. <br><img src= "/misc/img/anvil12.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>.
+      3. A new file will be created. This file can be deleted and is not necessary for Anvil execution. <br><img src= "/misc/img/anvil13.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>.
 
-9. The  `App.vue` file is the main application component that controls the overall UI structure, layout, and core functionality of the app. **This is a mandatory file to execute the Anvil App and cannot be deleted**. <img src= "/misc/img/anvil6.png" style="border: 2px solid #4472C4; border-radius: 8px;">. You can `edit` the code on this page as well.
+9. The  `App.vue` file is the main application component that controls the overall UI structure, layout, and core functionality of the app. **This is a mandatory file to execute the Anvil App and cannot be deleted**. <img src= "/misc/img/anvil6.png" style="border: 2px solid #4472C4; border-radius: 8px;"> You can `edit` the code on this page as well.
 10. Click on `File History`. It provides version control for files (e.g., App.vue), allowing users to track changes and restore previous versions. <br>**Key Features**:</br>
     - Each change creates a **new version** (v1, v2, v3).
     - The latest version is marked as **Current**.
     - **Compare** allows viewing differences between versions.
     - **Rollback** restores a selected version as the active one. <br><img src= "/misc/img/anvil7.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-11. Build Process
+11. **Build Process**:
 
     - Hover over the Anvil folder and click on `Settings`.
     - Open the `Changes` section, where users can see all modifications. <br><img src= "/misc/img/anvil8.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-12. Build and Publish
+12. **Build and Publish**:
     - Go to `Build & Publish`. <br><img src= "/misc/img/anvil9.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
     - Run the build process and publish the app. <br><img src= "/misc/img/anvil10.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
