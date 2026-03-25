@@ -158,7 +158,7 @@ Vuetify implements Google's Material Design language — the same design system 
     - Hover over the Anvil folder and click on `Settings`.
     - Open the `Changes` section, where users can see all modifications. <br><img src= "/misc/img/anvil8new.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
     - Go to `Build & Publish`. <br><img src= "/misc/img/anvil9.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-    - Run the build process and publish the app. <br><img src= "/misc/img/anvil10.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+    - Run the build process and publish the app. <br><img src= "/misc/img/anvilchange.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 13. **Domain Setup**: Configures a public URL to share the application externally.
     1. Create a `new domain` for the Anvil platform. Click on the `+` sign. <br><img src= "/misc/img/anvil15.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
@@ -173,9 +173,9 @@ Vuetify implements Google's Material Design language — the same design system 
     - You can select and activate a previous build to revert changes.
     - You can set any version as `Active` or `Inactive` as needed. <br><img src= "/misc/img/anvil17.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-15. **Reset Anvil**: Resets the application to the original starter template, removing all current changes while keeping Anvil enabled.
+15. **Reset Anvil**: Resets the application to the original starter template, removing all current changes while keeping Anvil enabled.<br><img src= "/misc/img/resetanvil.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-16. **Delete Anvil**: Removes Anvil from the project entirely, disabling its features without deleting the overall project.
+16. **Delete Anvil**: Removes Anvil from the project entirely, disabling its features without deleting the overall project.<br><img src= "/misc/img/deleteanvil.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 ---
 
@@ -185,13 +185,13 @@ Starter templates give you a head start by providing pre-built foundations for c
 
 ### Available Starters
 
-| Template | Description | Best For |
-|----------|-------------|----------|
-| **Blank Project** | Minimal starting point | Building from scratch |
-| **Dashboard** | Admin interface with sidebar navigation, statistics cards, and user management | Business dashboards, admin panels |
-| **Landing Page** | Marketing layout with hero section, features, pricing, and call-to-action | Product launches, company websites |
-| **Form Application** | Data collection interface with validation | Contact forms, surveys, registrations |
-| **Data Table** | CRUD interface for managing lists of data | User management, inventory, records |
+| Template|  Description| Best For |
+| --------|--------------| -------- |
+| **Blank Project**| Minimal starting point | Building from scratch  |
+| **Dashboard** | Admin interface with sidebar navigation, statistics cards, and user management | Business dashboards, admin panels         |
+| **PrimeVue Dashboard** | Pre-built dashboard using PrimeVue components and styling | Modern UI dashboards with rich components |
+| **Vuetify Dashboard**  | Dashboard template using Vuetify framework with material design components | Material design-based applications        |
+| **Vuetify WebPhone**   | Web-based phone interface with calling features using Vuetify| VoIP apps, softphone interfaces |
 
 If you're not sure which to pick, start with **Blank Project** — you can always ask the AI to add features as you go.
 
