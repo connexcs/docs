@@ -34,6 +34,18 @@ With Anvil, you can:
 
 ---
 
+## Use Cases
+
+1. **Internal Tools**: Build dashboards, reporting tools, or admin panels quickly.
+
+2. **Rapid Prototyping**: Create MVPs or mock applications in minutes.
+
+3. **Customer-Facing Apps**: Develop simple web apps without full frontend development.
+
+4. **AI-Assisted Development**: Enable non-technical users to create applications using chat.
+
+---
+
 ## Key Features
 
 Anvil offers a comprehensive set of features designed to streamline web application development through AI assistance:
@@ -93,18 +105,6 @@ Vuetify implements Google's Material Design language — the same design system 
 
 ---
 
-## Use Cases
-
-1. **Internal Tools**: Build dashboards, reporting tools, or admin panels quickly.
-
-2. **Rapid Prototyping**: Create MVPs or mock applications in minutes.
-
-3. **Customer-Facing Apps**: Develop simple web apps without full frontend development.
-
-4. **AI-Assisted Development**: Enable non-technical users to create applications using chat.
-
----
-
 ## How to use Anvil?
 
 1. Navigate to **IDE**.
@@ -129,13 +129,13 @@ Vuetify implements Google's Material Design language — the same design system 
 5. Start Interacting with the UI: Click on the `Open AI Chat`.
 6. Click on `New Conversation`.
 7. Before initiating interaction with the AI chatbot, you must configure a few initial settings:
-   1. `Add Context` (optional field): Allows you to provide additional information to the AI before or during a conversation so it can give more accurate, relevant, and helpful responses. You can either add `Text Input` or upload text files using `File Upload` option. <br><img src= "/class5/img/chat3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "/class5/img/chat4.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">. <br>Click `Add to Chat`.</br>
-   2. Select the mode of the model:
-      1. `Standard` (default): A fast model focused on quick results.
-      2. `Expert`: A reasoning model, takes longer to respond.
-   3. `MCP Severs`: Allows you to select the MCP server the AI uses to access tools, data, and integrations for performing actions during the conversation.
-   4. `Toggle` for fullscreen.
-8. Start giving commands to the in the chat window. For example, I gave the prompt that "change "welcome to your application" to hello". <br><img src= "/misc/img/anvil4.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+      1. `Add Context` (optional field): Allows you to provide additional information to the AI before or during a conversation so it can give more accurate, relevant, and helpful responses. You can either add `Text Input` or upload text files using `File Upload` option. <br><img src= "/class5/img/chat3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "/class5/img/chat4.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">. <br>Click `Add to Chat`.</br>
+      2. Select the mode of the model:
+         1. `Standard` (default): A fast model focused on quick results.
+         2. `Expert`: A reasoning model, takes longer to respond.
+      3. `MCP Severs`: Allows you to select the MCP server the AI uses to access tools, data, and integrations for performing actions during the conversation.
+      4. `Toggle` for fullscreen.
+8. Start entering instructions into the chat window. For example, I used: `change "welcome to your application" to "hello"`. <br><img src= "/misc/img/anvil4.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
     !!! Example "Example"
         <img src= "/misc/img/anvil5.png" style="border: 2px solid #4472C4; border-radius: 8px;">
@@ -150,12 +150,12 @@ Vuetify implements Google's Material Design language — the same design system 
     - Each change creates a **new version** (v1, v2, v3).
     - The latest version is marked as **Current**.
     - **Compare** allows viewing differences between versions.
-    - **Rollback** restores a selected version as the active one. <br><img src= "/misc/img/anvil7.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+    - **Rollback** restores a selected version as the active one. <br><img src= "/misc/img/anvil7new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 12. **Build Process**:
 
     - Hover over the Anvil folder and click on `Settings`.
-    - Open the `Changes` section, where users can see all modifications. <br><img src= "/misc/img/anvil8.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+    - Open the `Changes` section, where users can see all modifications. <br><img src= "/misc/img/anvil8new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 13. **Build and Publish**:
     - Go to `Build & Publish`. <br><img src= "/misc/img/anvil9.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
