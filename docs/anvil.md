@@ -14,11 +14,12 @@
 
 ## Anvil User Guide
 
-Welcome to Anvil — an AI-powered interface builder that lets you create professional web applications using natural language. Simply describe what you want, and Anvil builds it for you.
+Welcome to Anvil — an AI-powered interface builder that lets you create professional web applications using natural language.
+Simply describe what you want, and Anvil builds it for you.
 
 Anvil is a platform that transforms your ideas into fully functional web interfaces. You communicate through a chat interface, describing what you'd like to build, and Anvil's AI assistant creates the application for you in real-time.
 
-**No coding knowledge required.** You describe what you want in plain English, and Anvil handles all the technical details.
+**No coding knowledge required**- You describe what you want in plain English, and Anvil handles all the technical details.
 
 ---
 
@@ -155,7 +156,7 @@ Vuetify implements Google's Material Design language — the same design system 
 12. **Build Process**:
 
     - Hover over the Anvil folder and click on `Settings`.
-    - Open the `Changes` section, where users can see all modifications. <br><img src= "/misc/img/anvil8new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+    - Open the `Changes` section, where users can see all modifications. <br><img src= "/misc/img/anvil8new.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 13. **Build and Publish**:
     - Go to `Build & Publish`. <br><img src= "/misc/img/anvil9.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
