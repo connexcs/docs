@@ -129,7 +129,7 @@ Vuetify implements Google's Material Design language — the same design system 
 
 5. Start Interacting with the UI: Click on the `Open AI Chat`.
 6. Click on `New Conversation`.
-7. Before initiating interaction with the AI chatbot, you must configure a few initial settings:
+7. Before initiating interaction with the AI chatbot, you can configure a few initial settings:
       1. `Add Context` (optional field): Allows you to provide additional information to the AI before or during a conversation so it can give more accurate, relevant, and helpful responses. You can either add `Text Input` or upload text files using `File Upload` option. <br><img src= "/class5/img/chat3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "/class5/img/chat4.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">. <br>Click `Add to Chat`.</br>
       2. Select the mode of the model:
          1. `Standard` (default): A fast model focused on quick results.
@@ -141,43 +141,41 @@ Vuetify implements Google's Material Design language — the same design system 
     !!! Example "Example"
         <img src= "/misc/img/anvil5.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-9.  Navigate to the `Src` folder. It contains all the application source files, including UI components and logic, which define how the application is built and behaves.
+9. Navigate to the `Src` folder. It contains all the application source files, including UI components and logic, which define how the application is built and behaves.
       1. You can also create a new source file. <br><img src= "/misc/img/anvil11png.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;"></br>.
       2. Click on `Create File`. <br><img src= "/misc/img/anvil12.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>.
       3. A new file will be created. This file can be deleted and is not necessary for Anvil execution. <br><img src= "/misc/img/anvil13.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;"></br>.
 
-10. The  `App.vue` file is the main application component that controls the overall UI structure, layout, and core functionality of the app. **This is a mandatory file to execute the Anvil App and cannot be deleted**. <img src= "/misc/img/anvil6.png" style="border: 2px solid #4472C4; border-radius: 8px;"> You can `edit` the code on this page as well.
+10. The  `App.vue` file is the main application file that controls the overall UI structure, layout, and core functionality of the app. **This is a mandatory file to execute the Anvil App and cannot be deleted**. <img src= "/misc/img/anvil6.png" style="border: 2px solid #4472C4; border-radius: 8px;"> You can `edit` the code on this page as well.
 11. Click on `File History`. It provides version control for files (e.g., App.vue), allowing users to track changes and restore previous versions. <br>**Key Features**:</br>
     - Each change creates a **new version** (v1, v2, v3).
     - The latest version is marked as **Current**.
     - **Compare** allows viewing differences between versions.
     - **Rollback** restores a selected version as the active one. <br><img src= "/misc/img/anvil7new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-12. **Build Process**:
+12. **View Changes**:
 
     - Hover over the Anvil folder and click on `Settings`.
     - Open the `Changes` section, where users can see all modifications. <br><img src= "/misc/img/anvil8new.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-
-13. **Build and Publish**:
     - Go to `Build & Publish`. <br><img src= "/misc/img/anvil9.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
     - Run the build process and publish the app. <br><img src= "/misc/img/anvil10.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-14. **Domain Setup**: Configures a public URL to share the application externally.
+13. **Domain Setup**: Configures a public URL to share the application externally.
     1. Create a `new domain` for the Anvil platform. Click on the `+` sign. <br><img src= "/misc/img/anvil15.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
     2. Enter the `Domain` and select the `Platform` as `Anvil`. <br><img src= "/misc/img/anvil16.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br> [Click here to know more about the **Development and Live Environments**](/anvil/#development-vs-live).
 
-15. **Rebuild and Version Control**
+14. **Rebuild and Version Control**
     - Make additional changes and run another build.
     - The **Build** section shows the currently active version.
     - If changes are pending, the **Publish** section will indicate updates to be deployed.
     - Click **Build & Publish** to create a new version.
     - **Build History** lists all previous builds.
     - You can select and activate a previous build to revert changes.
-    - You can set any version as `Active` or `Inactive` as needed. <br><img src= "/misc/img/anvil14.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+    - You can set any version as `Active` or `Inactive` as needed. <br><img src= "/misc/img/anvil17.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-16. **Reset Anvil**: Resets the application to the original starter template, removing all current changes while keeping Anvil enabled.
+15. **Reset Anvil**: Resets the application to the original starter template, removing all current changes while keeping Anvil enabled.
 
-17. **Delete Anvil**: Removes Anvil from the project entirely, disabling its features without deleting the overall project.
+16. **Delete Anvil**: Removes Anvil from the project entirely, disabling its features without deleting the overall project.
 
 ---
 
