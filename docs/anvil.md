@@ -187,11 +187,11 @@ Starter templates give you a head start by providing pre-built foundations for c
 
 | Template|  Description| Best For |
 | --------|--------------| -------- |
-| **Blank Project**| Minimal starting point | Building from scratch  |
-| **Dashboard** | Admin interface with sidebar navigation, statistics cards, and user management | Business dashboards, admin panels         |
+| **Blank Project**| Minimal starting point | Building from scratch|
+| **Dashboard** | Admin interface with sidebar navigation, statistics cards, and user management | Business dashboards, admin panels|
 | **PrimeVue Dashboard** | Pre-built dashboard using PrimeVue components and styling | Modern UI dashboards with rich components |
-| **Vuetify Dashboard**  | Dashboard template using Vuetify framework with material design components | Material design-based applications        |
-| **Vuetify WebPhone**   | Web-based phone interface with calling features using Vuetify| VoIP apps, softphone interfaces |
+| **Vuetify Dashboard**| Dashboard template using Vuetify framework with material design components | Material design-based applications |
+| **Vuetify WebPhone**| Web-based phone interface with calling features using Vuetify| VoIP apps, softphone interfaces |
 
 If you're not sure which to pick, start with **Blank Project** — you can always ask the AI to add features as you go.
 
