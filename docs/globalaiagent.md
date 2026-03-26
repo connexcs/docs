@@ -8,7 +8,7 @@
 
 ---
 
-## Global AI Agent Overview
+## Overview
 
 The **Global AI Agent** is a centralized conversational AI interface that allows users to interact with system data, tools, and workflows using natural language.
 
@@ -57,20 +57,20 @@ With the Global AI Agent, you can:
 
 3. **Contextual Intelligence**
 
-   * Understands system context and user intent
-   * Provides tailored recommendations
-   * Adapts based on previous interactions
+      * Understands system context and user intent
+      * Provides tailored recommendations
+      * Adapts based on previous interactions
 
 4. **MCP Server Integration**
 
-   * Connects to external tools and services
-   * Enables real-time actions and data retrieval
-   * Acts as an execution layer for AI-driven tasks
+      * Connects to external tools and services
+      * Enables real-time actions and data retrieval
+      * Acts as an execution layer for AI-driven tasks
 
 5. **Multi-Mode AI Processing**
 
-   * **Standard Mode**: Fast responses for general queries
-   * **Expert Mode**: Deeper reasoning for complex tasks
+      * **Standard Mode**: Fast responses for general queries
+      * **Expert Mode**: Deeper reasoning for complex tasks
 
 ---
 
@@ -78,48 +78,48 @@ With the Global AI Agent, you can:
 
 1. **Open AI Chat**
 
-   * Navigate to the **AI interface**.
-   * Click on **New Conversation (`+`)**. <br><img src= "/misc/img/gaa.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+      * Navigate to the **AI interface**.
+      * Click on **New Conversation (`+`)**. <br><img src= "/misc/img/gaa.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 2. **Configure Initial Settings**:
-   1. `Add Context` (optional field): Allows you to provide additional information to the AI before or during a conversation so it can give more accurate, relevant, and helpful responses. You can either add `Text Input` or upload text files using `File Upload` option. <br><img src= "/class5/img/chat3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "/class5/img/chat4.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"> <br>Click `Add to Chat`.</br>
-   2. Select the mode of the model:
-      1. `Standard` (default): A fast model focused on quick results.
-      2. `Expert`: A reasoning model, takes longer to respond.
-    3. `MCP Severs`: Allows you to select the MCP server the AI uses to access tools, data, and integrations for performing actions during the conversation.
-    4. `Toggle` for fullscreen.
+      1. `Add Context` (optional field): Allows you to provide additional information to the AI before or during a conversation so it can give more accurate, relevant, and helpful responses. You can either add `Text Input` or upload text files using `File Upload` option. <br><img src= "/class5/img/chat3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "/class5/img/chat4.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"> <br>Click `Add to Chat`.</br>
+      2. Select the mode of the model:
+         1. `Standard` (default): A fast model focused on quick results.
+         2. `Expert`: A reasoning model, takes longer to respond.
+       3. `MCP Severs`: Allows you to select the MCP server the AI uses to access tools, data, and integrations for performing actions during the conversation.
+       4. `Toggle` for fullscreen.
 
 3. **Start Interaction**
 
-   * Type your query in the chat box (e.g., *“Show me any issues in my account”*)
-   * AI responds with insights, actions, or recommendations <br><img src= "/misc/img/gaa1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+      * Type your query in the chat box (e.g., *“Show me any issues in my account”*)
+      * AI responds with insights, actions, or recommendations <br><img src= "/misc/img/gaa1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 ## Example Use Cases
 
-### 1. Account Monitoring
+1. **Account Monitoring**
 
-* Check system health and status
-* Identify misconfigurations
+   * Check system health and status
+   * Identify misconfigurations
 
-### 2. Issue Detection
+2. **Issue Detection**
 
-* Detect alerts or anomalies
-* Get proactive recommendations
+   * Detect alerts or anomalies
+   * Get proactive recommendations
 
-### 3. Optimization Guidance
+3. **Optimization Guidance**
 
-* Improve routing, performance, or setup
-* Receive AI-driven suggestions
+   * Improve routing, performance, or setup
+   * Receive AI-driven suggestions
 
-### 4. Feature Discovery
+4. **Feature Discovery**
 
-* Learn about unused capabilities
-* Explore additional modules
+   * Learn about unused capabilities
+   * Explore additional modules
 
-### 5. AI-Assisted Operations
+5. **AI-Assisted Operations**
 
-* Perform tasks using conversational commands
-* Reduce manual navigation
+   * Perform tasks using conversational commands
+   * Reduce manual navigation
 
 ---
 
@@ -137,18 +137,18 @@ With the Global AI Agent, you can:
 
 2. **Use Context When Needed**
 
-   * Upload relevant data or describe your setup
-   * Improves response accuracy
+      * Upload relevant data or describe your setup
+      * Improves response accuracy
 
 3. **Start Simple, Then Expand**
 
-   * Begin with basic queries
-   * Gradually move to complex workflows
+      * Begin with basic queries
+      * Gradually move to complex workflows
 
 4. **Leverage Suggestions**
 
-   * Use pre-built prompts for faster results
-   * Modify them as needed
+      * Use pre-built prompts for faster results
+      * Modify them as needed
 
 ## Tips for Better Results
 
