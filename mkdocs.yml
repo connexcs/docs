@@ -258,6 +258,7 @@ nav:
             
     - Video Guide: video-guide.md
     - Terminal Tools: terminal-tools.md
+    - Global AI Agent: globalaiagent.md
     - MCP Server: mcpserver.md
     - ANVIL: anvil.md
 
