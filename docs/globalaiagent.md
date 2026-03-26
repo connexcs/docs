@@ -98,28 +98,28 @@ With the Global AI Agent, you can:
 
 1. **Account Monitoring**
 
-   * Check system health and status
-   * Identify misconfigurations
+      * Check system health and status
+      * Identify misconfigurations
 
 2. **Issue Detection**
 
-   * Detect alerts or anomalies
-   * Get proactive recommendations
+      * Detect alerts or anomalies
+      * Get proactive recommendations
 
 3. **Optimization Guidance**
 
-   * Improve routing, performance, or setup
-   * Receive AI-driven suggestions
+      * Improve routing, performance, or setup
+      * Receive AI-driven suggestions
 
 4. **Feature Discovery**
 
-   * Learn about unused capabilities
-   * Explore additional modules
+      * Learn about unused capabilities
+      * Explore additional modules
 
 5. **AI-Assisted Operations**
 
-   * Perform tasks using conversational commands
-   * Reduce manual navigation
+      * Perform tasks using conversational commands
+      * Reduce manual navigation
 
 ---
 
