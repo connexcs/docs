@@ -12,15 +12,19 @@
 
 </details>
 
+## Overview
+
 A **DID** number is one that exists on the public telephone network.
 
 When dialed, the carrier delivers through the platform and to you, based on the settings configured here.
 This allows inbound calls to bypass a Private Branch Exchange (PBX) or another routing to connect directly to the destination number.
 
+## Steps to edit DID
+
 To edit **DID (Direct Inward Dial)**:
 
 1. Click on a DID number to select a single DID, or select multiple DIDs and click **`Bulk Edit`**.
-2. For a single DID, click the number, **enable the toggle**, and then click the **Edit** (beside Destination)button that appears. A new window will open displaying the following fields. <br><img src= "/customer-portal/img/did1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+2. For a single DID, click the number, **enable the toggle**, and then click the **Edit** (beside Destination) button that appears. A new window will open displaying the following fields. <br><img src= "/customer-portal/img/did1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
     + **URI:** Set the **Destination DID** (number or extension) and **Destination IP** to forward calls to, or a specific Session Initiation Protocol (SIP) Uniform Resource Identifier (URI).
     + **External:** Prefix sends the call back out to the internet and then the number to send the call to.
@@ -30,4 +34,4 @@ To edit **DID (Direct Inward Dial)**:
 
 3. Click **`Save`**. <br><img src= "/customer-portal/img/did2new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-4. You have another fields here, **Tags**, it's a **label** which helps you to describe and help organize information. <br><img src= "/customer-portal/img/did3.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+4. You have another fields here, **Tags**, it's a **label** which helps you to describe and help organize information. <br><img src= "/customer-portal/img/did4.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
