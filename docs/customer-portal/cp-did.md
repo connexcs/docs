@@ -12,32 +12,22 @@
 
 </details>
 
-A **DID** number is one that exists on the public telephone network. When dialed, the carrier delivers through the platform and to you, based on the settings configured here. This allows inbound calls to bypass a Private Branch Exchange (PBX) or another routing to connect directly to the destination number.
+A **DID** number is one that exists on the public telephone network.
+
+When dialed, the carrier delivers through the platform and to you, based on the settings configured here.
+This allows inbound calls to bypass a Private Branch Exchange (PBX) or another routing to connect directly to the destination number.
 
 To edit **DID (Direct Inward Dial)**:
 
-1. Select one DID by clicking on the number, or select multiple and then click **`Bulk Edit`**.
-2. For single DID, click on number, click on **Edit** (beside Destination) and you will see the following fields in a new window.
+1. Click on a DID number to select a single DID, or select multiple DIDs and click **`Bulk Edit`**.
+2. For a single DID, click the number, **enable the toggle**, and then click the **Edit** (beside Destination)button that appears. A new window will open displaying the following fields. <br><img src= "/customer-portal/img/did1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
     + **URI:** Set the **Destination DID** (number or extension) and **Destination IP** to forward calls to, or a specific Session Initiation Protocol (SIP) Uniform Resource Identifier (URI).
     + **External:** Prefix sends the call back out to the internet and then the number to send the call to.
     + **Internal:** Send internally to an extension, a Class5 feature, or even to another customer.
+    + **Circuit Test**: Enables users to verify the integrity and performance of call routing. By pointing a Direct Inward Dialing (DID) number back to the Circuit Test system, users can evaluate critical metrics such as MOS, DTMF, and Caller ID consistency. This process ensures that the purchased routes meet expected standards.
+    + **ConneXML**: The incoming call is routed to a ConneXML script, which defines the subsequent call behavior.
 
-3. Click **`Save`**.
+3. Click **`Save`**. <br><img src= "/customer-portal/img/did2new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-<img src= "/customer-portal/img/did1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
-
-<img src= "/customer-portal/img/did2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
-
-You have another filed here, **Tags**, it's a **label** which helps you to describe and help organize information.
-
-<img src= "/customer-portal/img/did3.png" style="border: 2px solid #4472C4; border-radius: 8px;">
-
-4.For multiple DIDs, select multiple DIDs, then click on **Bulk Edit**.
-5.Click on **Edit** (beside Destination)
-
-<img src= "/customer-portal/img/did4.png" style="border: 2px solid #4472C4; border-radius: 8px;">
-
-6.Enter the values for various fields like **URI**, **External**, or **Internal**.
-
-<img src= "/customer-portal/img/did5.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+4. You have another fields here, **Tags**, it's a **label** which helps you to describe and help organize information. <br><img src= "/customer-portal/img/did3.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
