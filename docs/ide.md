@@ -91,57 +91,58 @@ For detailed usage instructions and comprehensive guidance, please refer to our 
 3. Click on `App` and enter the `App Name`. Click on `Save and Continue`. <br><img src= "misc/img/ide2.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "misc/img/ide3.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 4. The application is created under `Unpublished Apps`. <br><img src= "misc/img/ide4.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 5. **Create a Config Button**: Create and configure a button that appears in your application UI and performs specific actions. <br><img src= "misc/img/ide5.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-   1. `Label`: The display name of the button.
-   2. `Icon`: The icon shown alongside the button label.
-   3. `Type (Color)`: Defines the button color/style.
-   4. `Tooltip`: A short description shown when users hover over the button.
-   5. `Area`: Determines where the button will appear in the UI.
-   6. `Page`: Specifies which page opens when the button is clicked.
-   7. `Min Select`: Minimum number of items a user must select before the button becomes active.
-   8. `Max Select`: Maximum number of items allowed for selection when using the button.
-   9. `Sort Order`: Controls the position of the button relative to other buttons.
-   10. `App`: Specifies which application this button belongs to.
+      1. `Label`: The display name of the button.
+      2. `Icon`: The icon shown alongside the button label.
+      3. `Type (Color)`: Defines the button color/style.
+      4. `Tooltip`: A short description shown when users hover over the button.
+      5. `Area`: Determines where the button will appear in the UI.
+      6. `Page`: Specifies which page opens when the button is clicked.
+      7. `Min Select`: Minimum number of items a user must select before the button becomes active.
+      8. `Max Select`: Maximum number of items allowed for selection when using the button.
+      9. `Sort Order`: Controls the position of the button relative to other buttons.
+      10. `App`: Specifies which application this button belongs to.
 6. **Create a Purchase DID Now Button**. <br><img src= "misc/img/ide6.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 7. **Create Environmental Variables**: This section is used to define configurable key–value pairs that can be used across the application for dynamic behavior and environment-specific settings.
-   1. `App`: Specifies the application where the variable is used.
-   2. `Key`: The name/identifier of the variable. Used in code or configuration to reference the value.
-   3. `Value`: The actual value assigned to the key.
-   4. `Flags`: These control how the variable behaves:
-      1. **Protected**: Prdevents accidental modification or deletion.
-      2. **Private**: Hides the value from general visibility (used for sensitive data like API keys).
-      3. **Locked**: Restricts editing completely.
-      4. `Default`: Marks this as the default value (used when no override is provided).
+      1. `App`: Specifies the application where the variable is used.
+      2. `Key`: The name/identifier of the variable. Used in code or configuration to reference the value.
+      3. `Value`: The actual value assigned to the key.
+      4. `Flags`: These control how the variable behaves:
+         1. **Protected**: Prevents accidental modification or deletion.
+         2. **Private**: Hides the value from general visibility (used for sensitive data like API keys).
+         3. **Locked**: Restricts editing completely.
+      5. `Default`: Marks this as the default value (used when no override is provided).
 8. Create `Environmental Variables` for the following:
-   1. The `currency` environmental variable is a configuration setting that defines which currency the application should use by default. <br><img src= "misc/img/ide7.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-   2. The`cx_api_user` environmental variable is used to store the username (or identifier) for API authentication within the application. <br><img src= "misc/img/ide8.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-   3. The `did_mask_size` environmental variable defines how many digits of a DID (phone number) should be masked/hidden.<br><img src= "misc/img/ide9.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+      1. The `currency` environmental variable is a configuration setting that defines which currency the application should use by default. <br><img src= "misc/img/ide7.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+      2. The`cx_api_user` environmental variable is used to store the username (or identifier) for API authentication within the application. <br><img src= "misc/img/ide8.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+      3. The `did_mask_size` environmental variable defines how many digits of a DID (phone number) should be masked/hidden.<br><img src= "misc/img/ide9.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+
 9. Next step is to build the `UI` using `Page Builder`. This is for `Environment Variables Config`. This UI is a **form built using Page Builder components** to allow users to **view and update environment variables** for the application.
 
-   1. **Container (env_card)**: A layout/card component that groups all fields together. Provides structure and visual separation.
-   2. **Field: API User**:
-      1. **Component Type:** Dropdown / Select
-      2. **Purpose:** Select the API user (`cx_api_user`). Dynamically populated from available users
-   3. **Field: Currency**:
-      1. **Component Type:** Text Input
-      2. **Purpose:** Set the default currency (`currency`)
+      1. **Container (env_card)**: A layout/card component that groups all fields together. Provides structure and visual separation.
+      2. **Field: API User**:
+         1. **Component Type:** Dropdown / Select
+         2. **Purpose:** Select the API user (`cx_api_user`). Dynamically populated from available users
+      3. **Field: Currency**:
+         1. **Component Type:** Text Input
+         2. **Purpose:** Set the default currency (`currency`)
 
-   4. **Field: DID Mask Size**:
-      1. **Component Type:** Number / Text Input
-      2. **Purpose:** Define how many digits to mask (`did_mask_size`)
+      4. **Field: DID Mask Size**:
+         1. **Component Type:** Number / Text Input
+         2. **Purpose:** Define how many digits to mask (`did_mask_size`)
 
-   5. **Actions**
+      5. **Actions**
 
          * **Confirm Button**: Saves updated values to environment variables.
          * **Cancel Button**: Closes the form without saving changes
 
-   6. **How It Works (Behind the Scenes)**
+      6. **How It Works (Behind the Scenes)**
 
          * Each field is **mapped to an environment variable key**
          * On **Confirm**, values are:
          * Stored in the **Environment Variables module**
          * Used dynamically across the app
 
-   7. **Dialog Component Attributes**
+      7. **Dialog Component Attributes**
 
          | Field|Description |
          |------|------------| 
@@ -198,89 +199,89 @@ For detailed usage instructions and comprehensive guidance, please refer to our 
 
 12. Next step is to configure the **Button component** using **Page Builder**. This button (`Start Purchasing DIDs`) is an **action trigger that allows users to **initiate the DID purchasing workflow** by executing the configured `onClick` action (`startPurchasingDids`).
 
-    1. **Dialog Component Attributes**
+**Dialog Component Attributes**
 
-         | Field | Description|
-         | ------|------------|
-         | **Type** | Defines the component type (here, a Dialog popup). |
-         | **ID** | Unique identifier used to reference this dialog in logic or actions (`env_config`). |
-         | **Title** | The heading displayed at the top of the dialog. |
-         | **Width** | Controls the width of the dialog (e.g., `35rem`). |
-         | **Visible**  | Toggles whether the dialog is shown or hidden. |
-         | **Center** | Aligns the dialog to the center of the screen if enabled. |
-         | **Show Close** | Displays a close (X) button on the dialog. |
-         | **Show Cancel Button** | Enables the Cancel button at the bottom. |
-         | **Button Text (Cancel)** | Defines the label for the Cancel button. |
-         | **Show Confirm Button** | Enables the Confirm button. |
-         | **Loading (Confirm)** | Shows a loading state on the Confirm button during processing. |
-         | **Margin Top**  | Adds spacing from the top of the screen (e.g., `15vh`). |
-         | **Prevent Escape Key Close** | Disables closing the dialog using the Escape key. |
-         | **Custom Class** | Allows applying custom CSS styling to the dialog.|
-         | **Attribute Action (Data Binding)** | Enables binding the dialog data dynamically to variables or state.|
-         |**Action Settings**|
-         | **Action**| **Description**|
-         | **onCancel**  | Defines what happens when the Cancel button is clicked (e.g., close dialog or reset state). |
-         | **onConfirm** | Defines what happens when the Confirm button is clicked (e.g., save environment variables). |
+   | Field | Description|
+   | ------|------------|
+   | **Type** | Defines the component type (here, a Dialog popup). |
+   |**ID** | Unique identifier used to reference this dialog in logic or actions (`env_config`). |
+   | **Title** | The heading displayed at the top of the dialog. |
+   | **Width** | Controls the width of the dialog (e.g., `35rem`). |
+   | **Visible**  | Toggles whether the dialog is shown or hidden. |
+   | **Center** | Aligns the dialog to the center of the screen if enabled. |
+   | **Show Close** | Displays a close (X) button on the dialog. |
+   | **Show Cancel Button** | Enables the Cancel button at the bottom. |
+   | **Button Text (Cancel)** | Defines the label for the Cancel button. |
+   | **Show Confirm Button** | Enables the Confirm button. |
+   | **Loading (Confirm)** | Shows a loading state on the Confirm button during processing. |
+   | **Margin Top**  | Adds spacing from the top of the screen (e.g., `15vh`). |
+   | **Prevent Escape Key Close** | Disables closing the dialog using the Escape key. |
+   | **Custom Class** | Allows applying custom CSS styling to the dialog.|
+   | **Attribute Action (Data Binding)** | Enables binding the dialog data dynamically to variables or state.|
+   |**Action Settings**|
+   | **Action**| **Description**|
+   | **onCancel**  | Defines what happens when the Cancel button is clicked (e.g., close dialog or reset state). |
+   | **onConfirm** | Defines what happens when the Confirm button is clicked (e.g., save environment variables). |
 
-    2. **Form Attributes**
+   **Form Attributes**
 
-      | **Parameter** | **Explanation** |
-      | --------------|-----------------|
-      | **UI (Element / Ant Design / Vuetify)** | Defines the UI framework used to render the form components and styling. |
-      | **Form Width** | Sets the overall width of the form container (e.g., `100%` for full width).|
-      | **Label Position**| Determines where labels appear relative to input fields (Left, Right, Top). |
-      | **Label Width** | Specifies the fixed width allocated to labels for alignment consistency. |
-      | **Label Suffix** | Adds a suffix (e.g., `:`) after each label when enabled. |
-      | **Size**  | Controls the size of all form components (Large, Default, Small). |
-      | **Style Sheets**  | Allows applying custom styles or themes to the form via configuration. |
-      | **Custom Class** | Assigns a custom CSS class for additional styling or overrides. |
-      | **Log Level** | Defines the logging level for form-related events (e.g., Warn, Info, Error).|
-      | **Data Source** | Configures how the form retrieves and submits data (e.g., binding to APIs or variables). |
-      | **Action Panel** | Defines available form actions such as submit, reset, or custom operations.|
-      | **Javascript CDN Library** | Enables inclusion of external JavaScript libraries via CDN for extended functionality.|
+   | **Parameter** | **Explanation** |
+   | --------------|-----------------|
+   | **UI (Element / Ant Design / Vuetify)** | Defines the UI framework used to render the form components and styling. |
+   | **Form Width** | Sets the overall width of the form container (e.g., `100%` for full width).|
+   | **Label Position**| Determines where labels appear relative to input fields (Left, Right, Top). |
+   | **Label Width** | Specifies the fixed width allocated to labels for alignment consistency. |
+   | **Label Suffix** | Adds a suffix (e.g., `:`) after each label when enabled. |
+   | **Size**  | Controls the size of all form components (Large, Default, Small). |
+   | **Style Sheets**  | Allows applying custom styles or themes to the form via configuration. |
+   | **Custom Class** | Assigns a custom CSS class for additional styling or overrides. |
+   | **Log Level** | Defines the logging level for form-related events (e.g., Warn, Info, Error).|
+   | **Data Source** | Configures how the form retrieves and submits data (e.g., binding to APIs or variables). |
+   | **Action Panel** | Defines available form actions such as submit, reset, or custom operations.|
+   | **Javascript CDN Library** | Enables inclusion of external JavaScript libraries via CDN for extended functionality.|
 
-    3. Define the `Data source settings` under `Form Attributes`.
-       1. `GET did`:<br><img src= "misc/img/ide20.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "misc/img/ide21.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "misc/img/ide22.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br></br><br><img src= "misc/img/ide23.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-       2. `GET isOrderAffordable`: <br><img src= "misc/img/ide24.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-       3. `GET checkout`: <br><img src= "misc/img/ide26.png" style="border: 2px solid #4472C4; border-radius: 8px;">
-       4. `Data Processing`: <br><img src= "misc/img/ide15.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+13. Define the `Data source settings` under `Form Attributes`.
+    1.  `GET did`:<br><img src= "misc/img/ide20.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "misc/img/ide21.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "misc/img/ide22.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br></br><br><img src= "misc/img/ide23.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+    2. `GET isOrderAffordable`: <br><img src= "misc/img/ide24.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+    3. `GET checkout`: <br><img src= "misc/img/ide26.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+    4. `Data Processing`: <br><img src= "misc/img/ide15.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-    4. Define the `Action Panel settings` under `Form Attributes`.
-       1. `Function mounted`:<br><img src= "misc/img/ide27.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-       2. `Function btnSearch`: <br><img src= "misc/img/ide28.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-       3. `Function proceedToCart`: <br><img src= "misc/img/ide29.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-       4. `Function addSelectedDidsToCart`:<br><img src= "misc/img/ide30.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-       5. `Function startPurchasingDids`:<br><img src= "misc/img/ide31.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+14. Define the `Action Panel settings` under `Form Attributes`.
+   1. `Function mounted`:<br><img src= "misc/img/ide27.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+   2. `Function btnSearch`: <br><img src= "misc/img/ide28.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+   3. `Function proceedToCart`: <br><img src= "misc/img/ide29.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+   4. `Function addSelectedDidsToCart`:<br><img src= "misc/img/ide30.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+   5. `Function startPurchasingDids`:<br><img src= "misc/img/ide31.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-13. Next step is to configure the **Cart Dialog UI**. <br><img src= "misc/img/ide32.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-    1. **Dialog Component Attributes**
+15. Next step is to configure the **Cart Dialog UI**. <br><img src= "misc/img/ide32.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+   **Dialog Component Attributes**
 
-         | Field | Description|
-         | ------|------------|
-         | **Type** | Defines the component type (here, a Dialog popup). |
-         | **ID** | Unique identifier used to reference this dialog in logic or actions (`env_config`). |
-         | **Title** | The heading displayed at the top of the dialog. |
-         | **Width** | Controls the width of the dialog (e.g., `35rem`). |
-         | **Visible**  | Toggles whether the dialog is shown or hidden. |
-         | **Center** | Aligns the dialog to the center of the screen if enabled. |
-         | **Show Close** | Displays a close (X) button on the dialog. |
-         | **Show Cancel Button** | Enables the Cancel button at the bottom. |
-         | **Button Text (Cancel)** | Defines the label for the Cancel button. |
-         | **Show Confirm Button** | Enables the Confirm button. |
-         | **Loading (Confirm)** | Shows a loading state on the Confirm button during processing. |
-         | **Margin Top**  | Adds spacing from the top of the screen (e.g., `15vh`). |
-         | **Prevent Escape Key Close** | Disables closing the dialog using the Escape key. |
-         | **Custom Class** | Allows applying custom CSS styling to the dialog.|
-         | **Attribute Action (Data Binding)** | Enables binding the dialog data dynamically to variables or state.|
-         |**Action Settings**|
-         | **Action**| **Description**|
-         | **onCancel**  | Defines what happens when the Cancel button is clicked (e.g., close dialog or reset state). |
-         | **onConfirm** | Defines what happens when the Confirm button is clicked (e.g., save environment variables). |
+      | Field | Description|
+      | ------|------------|
+      | **Type** | Defines the component type (here, a Dialog popup). |
+      | **ID** | Unique identifier used to reference this dialog in logic or actions (`env_config`). |
+      | **Title** | The heading displayed at the top of the dialog. |
+      | **Width** | Controls the width of the dialog (e.g., `35rem`). |
+      | **Visible**  | Toggles whether the dialog is shown or hidden. |
+      | **Center** | Aligns the dialog to the center of the screen if enabled. |
+      | **Show Close** | Displays a close (X) button on the dialog. |
+      | **Show Cancel Button** | Enables the Cancel button at the bottom. |
+      | **Button Text (Cancel)** | Defines the label for the Cancel button. |
+      | **Show Confirm Button** | Enables the Confirm button. |
+      | **Loading (Confirm)** | Shows a loading state on the Confirm button during processing. |
+      | **Margin Top**  | Adds spacing from the top of the screen (e.g., `15vh`). |
+      | **Prevent Escape Key Close** | Disables closing the dialog using the Escape key. |
+      | **Custom Class** | Allows applying custom CSS styling to the dialog.|
+      | **Attribute Action (Data Binding)** | Enables binding the dialog data dynamically to variables or state.|
+      |**Action Settings**|
+      | **Action**| **Description**|
+      | **onCancel**  | Defines what happens when the Cancel button is clicked (e.g., close dialog or reset state). |
+      | **onConfirm** | Defines what happens when the Confirm button is clicked (e.g., save environment variables). |
 
-         !!! Note "**Form Attributes**, **Data Soure Settings** and **Action Panel Settings** are same as **Button component** using **Page Builder** (point number 12)."
+16. **Form Attributes**, **Data Soure Settings** and **Action Panel Settings** are same as **Button component** using **Page Builder** (point number 12).
 
-14. Next step is to configure the **Card** (Text Component) inside the **Cart Dialog UI**. This component (`cart_text`) is used to **display informational text** within the dialog, helping users understand the purpose of the data shown (selected DIDs). <br><img src= "misc/img/ide33.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-    1. **Text Component Attributes**
+17. Next step is to configure the **Card** (Text Component) inside the **Cart Dialog UI**. This component (`cart_text`) is used to **display informational text** within the dialog, helping users understand the purpose of the data shown (selected DIDs). <br><img src= "misc/img/ide33.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+    **Text Component Attributes**
 
       | Field| Description|
       | -----|------------|
@@ -301,10 +302,10 @@ For detailed usage instructions and comprehensive guidance, please refer to our 
       | **Action** | **Description** |
       | **onChange** | Defines behavior when the text value changes (rarely used for static text components). |
 
-      !!! Note "**Form Attributes**, **Data Source Settings**, and **Action Panel Settings** are the same as the **Button component** using **Page Builder** (point number 12)."
+18. **Form Attributes**, **Data Source Settings**, and **Action Panel Settings** are the same as the **Button component** using **Page Builder** (point number 12).
 
-15. Next step is to configure the **Data Grid Component inside the Cart Dialog UI**. This component (`cart_grid`) is used to **display selected DIDs in a tabular format**, including pricing and billing details, enabling users to review items before checkout. <br><img src= "misc/img/ide34.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-    1. **Data Grid Component Attributes**
+19. Next step is to configure the **Data Grid Component inside the Cart Dialog UI**. This component (`cart_grid`) is used to **display selected DIDs in a tabular format**, including pricing and billing details, enabling users to review items before checkout. <br><img src= "misc/img/ide34.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+    **Data Grid Component Attributes**
 
       | Field | Description |
       | ------|-------------|
@@ -326,10 +327,11 @@ For detailed usage instructions and comprehensive guidance, please refer to our 
       |**Action Settings**|
       | **onCellClicked** | Defines behavior when a cell is clicked (e.g., select, trigger action). |
 
-      !!! Note "**Form Attributes**, **Data Source Settings**, and **Action Panel Settings** are the same as the **Button component** using **Page Builder** (point number 12)."
+20. **Form Attributes**, **Data Source Settings**, and **Action Panel Settings** are the same as the **Button component** using **Page Builder** (point number 12).
 
-16. Next step is to configure the **DID Ordering UI** using **Page Builder**. This interface is a **composite UI built using multiple Page Builder components** that allows users to **search, select, and add DIDs to cart, while handling validation (e.g., insufficient balance)**.<br><img src= "misc/img/ide36.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-    1. **Alert Component (Insufficient Balance)**
+21. Next step is to configure the **DID Ordering UI** using **Page Builder**. This interface is a **composite UI built using multiple Page Builder components** that allows users to **search, select, and add DIDs to cart, while handling validation (e.g., insufficient balance)**.<br><img src= "misc/img/ide36.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+
+    **Alert Component (Insufficient Balance)**
 
       | Field|Description|
       | -----|---------- | 
@@ -340,7 +342,7 @@ For detailed usage instructions and comprehensive guidance, please refer to our 
       | **Closable**| Allows user to dismiss the alert.|
       | **Visibility**  | Triggered dynamically based on balance validation. |
 
-    2. **Search Input + Button**
+    **Search Input + Button**
 
       | Field | Description |
       | ------|-------------|
@@ -349,7 +351,7 @@ For detailed usage instructions and comprehensive guidance, please refer to our 
       | **Search Button** | Triggers DID search action. |
       | **onClick (Search)** | Executes logic to fetch available DIDs.|
 
-    3. **Action Button (Add Selected DIDs to Cart)**
+    **Action Button (Add Selected DIDs to Cart)**
 
       | Field | Description |
       | ------|------------ |
@@ -358,7 +360,7 @@ For detailed usage instructions and comprehensive guidance, please refer to our 
       | **onClick** | Adds selected rows from grid to cart.|
       | **Functionality** | Updates cart state and selected DID count. |
 
-    4. **Selected Count Display**
+    **Selected Count Display**
 
       | Field | Description |
       | ------|------------ |
@@ -366,7 +368,7 @@ For detailed usage instructions and comprehensive guidance, please refer to our 
       | **Value** | Dynamically shows count (e.g., `0`). |
       | **Data Binding** | Updates based on grid selection.|
 
-    5. **Data Grid Component (Available DIDs)**
+    **Data Grid Component (Available DIDs)**
 
       | Field| Description |
       | -----|-------------|
@@ -386,9 +388,9 @@ For detailed usage instructions and comprehensive guidance, please refer to our 
       | **Add to Cart** | Adds selected DIDs to cart.|
       | **Validation**  | Checks balance before checkout and shows alert if insufficient.|
 
-      !!! Note "**Form Attributes**, **Data Source Settings**, and **Action Panel Settings** are consistent with other components configured using **Page Builder** (e.g., Button component in point 12)."
+22. **Form Attributes**, **Data Source Settings**, and **Action Panel Settings** are consistent with other components configured using **Page Builder** (e.g., Button component in point 12).
 
-17. **ScriptForge Settings: DID ENV Setup**
+23. **ScriptForge Settings: DID ENV Setup**
 
 ```js
 /**
@@ -431,7 +433,7 @@ async function loadEnvValues() {
 }
 ```
 
-18. **ScriptForge Settings: DID ENV Setup: DID Query**
+24. **ScriptForge Settings: DID ENV Setup: DID Query**
 
 ```js
 const cxRest = require('cxRest')
@@ -562,6 +564,6 @@ async function main () {
 }
 ```
 
-19. Click on `App Settings` and then `Publish` it. <br><img src= "misc/img/ide37.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+25. Click on `App Settings` and then `Publish` it. <br><img src= "misc/img/ide37.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-20. After publishing it will appear under **Setup :material-menu-right: Appstore**. You can install the app and use it at your own convenience.
+26. After publishing it will appear under **Setup :material-menu-right: Appstore**. You can install the app and use it at your own convenience.
